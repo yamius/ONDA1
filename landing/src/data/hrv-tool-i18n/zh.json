@@ -1,4 +1,5 @@
 {
+  "science": "背后的科学 → [RMSSD：这项 HRV 指标反映什么，又不反映什么](/science/concepts/rmssd) · [SDNN：这项 HRV 指标测量什么，又不测量什么](/science/concepts/sdnn) · [HRV 个人基线：为什么你自己的常态比任何常模都重要](/science/concepts/hrv-baseline) · [单个 HRV 数值能告诉你什么、不能告诉你什么](/science/concepts/interpreting-hrv)",
   "meta": {
     "title": "按年龄计算 HRV — 免费 HRV 正常范围对照表 | ONDA Life",
     "description": "免费 HRV 计算器：输入年龄和心率变异性（Oura、Whoop、Garmin 的 RMSSD 或 Apple Watch 的 SDNN），查看同龄百分位与 HRV 正常范围。",

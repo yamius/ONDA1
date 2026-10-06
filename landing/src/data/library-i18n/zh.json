@@ -25,7 +25,8 @@
     "relatedTopics": "相关主题",
     "allTopics": "全部主题",
     "hubTitleSuffix": "ONDA 知识库",
-    "hubMetaTitle": "{topic} — 指南与研究 | ONDA Library"
+    "hubMetaTitle": "{topic} — 指南与研究 | ONDA Library",
+    "scienceHeading": "本主题背后的科学"
   },
   "countries": {
     "Japan": "日本",
@@ -95,5 +96,153 @@
       "intro": "关于呼吸、睡眠和神经系统的许多最有趣的研究都来自英语世界之外。这个合集将它们汇聚在一起：日本关于森林浴和禅修的研究、印度的调息法试验、德国的时间生物学、荷兰关于 Wim Hof 呼吸法的研究，以及法国的心脏共振传统。",
       "imageAlt": "来自世界各地的科学——插图：一个深色地球仪，日本、印度、德国、荷兰和法国上有发光的点，彼此由细细的光弧相连。"
     }
+  },
+  "science": {
+    "meditation": [
+      {
+        "href": "/science/evidence/meditation-autonomic-nervous-system",
+        "label": "冥想与自主神经系统：证据显示了什么"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "内感受：大脑如何感知身体"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "自主神经系统：交感神经与副交感神经"
+      },
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "心脑互动：心脏与大脑如何相互“对话”"
+      }
+    ],
+    "breathing": [
+      {
+        "href": "/science/mechanisms/breathing-and-hrv",
+        "label": "呼吸如何改变HRV——以及慢呼吸为什么会让它升高"
+      },
+      {
+        "href": "/science/evidence/slow-breathing",
+        "label": "慢呼吸：证据显示了什么"
+      },
+      {
+        "href": "/science/concepts/respiratory-sinus-arrhythmia",
+        "label": "呼吸性窦性心律不齐：呼吸如何塑造你的心律"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "静息呼吸频率：它反映什么，又是如何测量的"
+      }
+    ],
+    "hrv-heart-rate": [
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "心率变异性：它是什么、反映什么、又不是什么"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "单个 HRV 数值能告诉你什么、不能告诉你什么"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "HRV 个人基线：为什么你自己的常态比任何常模都重要"
+      },
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "智能手表或指环测得的 HRV 可信吗？"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "静息心率：它反映什么，又是如何测量的"
+      }
+    ],
+    "stress-vagus": [
+      {
+        "href": "/science/concepts/vagus-nerve",
+        "label": "迷走神经：它做什么，哪些说法是误区"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "自主神经系统：交感神经与副交感神经"
+      },
+      {
+        "href": "/science/evidence/vagus-nerve-stimulation",
+        "label": "迷走神经刺激真的有效吗？证据显示了什么"
+      },
+      {
+        "href": "/science/evidence/hrv-biofeedback",
+        "label": "HRV生物反馈：证据显示了什么"
+      }
+    ],
+    "sleep-body-clock": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "HRV 为什么每天都在变化"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "静息心率：它反映什么，又是如何测量的"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "静息呼吸频率：它反映什么，又是如何测量的"
+      }
+    ],
+    "lifestyle": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "HRV 为什么每天都在变化"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "HRV 个人基线：为什么你自己的常态比任何常模都重要"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "单个 HRV 数值能告诉你什么、不能告诉你什么"
+      }
+    ],
+    "heart-fitness-metabolism": [
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "静息心率：它反映什么，又是如何测量的"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "心率变异性：它是什么、反映什么、又不是什么"
+      },
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "HRV 为什么每天都在变化"
+      }
+    ],
+    "brain-focus-aging": [
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "心脑互动：心脏与大脑如何相互“对话”"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "内感受：大脑如何感知身体"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "心率变异性：它是什么、反映什么、又不是什么"
+      }
+    ],
+    "doctors-your-data": [
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "智能手表或指环测得的 HRV 可信吗？"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "单个 HRV 数值能告诉你什么、不能告诉你什么"
+      },
+      {
+        "href": "/science/measurements/onda-method",
+        "label": "ONDA 如何测量和解读你的身体信号"
+      }
+    ]
   }
 }

@@ -53,11 +53,11 @@ This is a striking convergence: whatever the tradition, deep meditation produces
 
 Here's why this matters beyond the lab. The single biggest reason people abandon meditation is the feeling that nothing is changing. But the gamma research shows that something very real *is* changing, and it accumulates with practice. The problem is only that you can't feel your gamma waves.
 
-This is the case for [meditation with measurable feedback](/articles/measuring-meditation-progress). You won't hook yourself up to an EEG daily — but the same principle applies to accessible signals like heart rate variability (HRV), which also strengthens with meditation practice and reflects the autonomic side of the same trained calm. Seeing *any* objective marker climb with your practice provides the proof of progress that the gamma studies reveal is genuinely there — and that proof is what keeps people practicing long enough to build it.
+This is the case for [meditation with measurable feedback](/articles/measuring-meditation-progress). You won't hook yourself up to an EEG daily — but the same principle applies to accessible signals like [heart rate variability](/science/concepts/heart-rate-variability) (HRV), which also strengthens with meditation practice and reflects the autonomic side of the same trained calm. Seeing *any* objective marker climb with your practice provides the proof of progress that the gamma studies reveal is genuinely there — and that proof is what keeps people practicing long enough to build it.
 
 ## Track the progress you can measure
 
-You can't record your gamma waves at home, but you can track the autonomic signature of a trained nervous system. ONDA reads your resting heart rate and HRV from your Apple Watch (or your pulse from your phone camera) and shows how they respond to practice and trend over weeks. Just as gamma rises with meditation experience, your [HRV baseline tends to strengthen](/articles/how-to-raise-hrv-naturally) with consistent practice — giving you a visible, at-home version of the progress the brain research documents.
+You can't record your gamma waves at home, but you can track the autonomic signature of a trained nervous system. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from your Apple Watch (or your pulse from your phone camera) and shows how they respond to practice and trend over weeks. Just as gamma rises with meditation experience, your [HRV baseline tends to strengthen](/articles/how-to-raise-hrv-naturally) with consistent practice — giving you a visible, at-home version of the progress the brain research documents.
 `,
 }
 

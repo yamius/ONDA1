@@ -27,11 +27,11 @@ const article: Article = {
     linkText: 'What ONDA measures →',
   },
   content: `
-Breathing exercises and cold exposure do raise your heart rate variability (HRV) — but the effect is real and **temporary**, not a permanent upgrade to your nervous system. That's the honest picture, and it's more useful than the hype. A longer exhale than inhale triggers a reflex that briefly slows your heart, felt within a few breaths. Cold does something similar: a 2024 meta-analysis found a clear but short-lived HRV rise lasting roughly 15 minutes after [cold exposure](/articles/cold-exposure-vagus-nerve). These techniques give you a genuine moment of calm — not a rewired nervous system. Knowing the difference is what separates a useful practice from a false promise.
+Breathing exercises and cold exposure do raise your [heart rate variability](/science/concepts/heart-rate-variability) (HRV) — but the effect is real and **temporary**, not a permanent upgrade to your nervous system. That's the honest picture, and it's more useful than the hype. A longer exhale than inhale triggers a reflex that briefly slows your heart, felt within a few breaths. Cold does something similar: a 2024 meta-analysis found a clear but short-lived HRV rise lasting roughly 15 minutes after [cold exposure](/articles/cold-exposure-vagus-nerve). These techniques give you a genuine moment of calm — not a rewired nervous system. Knowing the difference is what separates a useful practice from a false promise.
 
 ## The hype vs the evidence
 
-The "train your vagus nerve" industry exploded once wearables let people watch their HRV jump after a cold shower or a breathing session. Suddenly there were ear clips promising electrical vagus stimulation, apps with exact breath counts, and supplements promising "vagal calm." Some of it traces to real clinical work — non-invasive vagus stimulation through the ear has been studied for chronic pain and migraine, with mixed but sometimes convincing results.
+The "train your [vagus nerve](/science/concepts/vagus-nerve)" industry exploded once wearables let people watch their HRV jump after a cold shower or a breathing session. Suddenly there were ear clips promising electrical vagus stimulation, apps with exact breath counts, and supplements promising "vagal calm." Some of it traces to real clinical work — non-invasive vagus stimulation through the ear has been studied for chronic pain and migraine, with mixed but sometimes convincing results.
 
 The problem is the selling. Where a neurologist talks about specific protocols for a specific patient group, an influencer promises that any breathing exercise will "reset your nervous system" in one go. The gap between those two claims is where the honesty gets lost — and where you end up disappointed when your HRV doesn't permanently transform.
 
@@ -41,7 +41,7 @@ Strip away the hype and a solid, modest core remains:
 
 - **A longer exhale than inhale** activates a reflex that briefly slows the heart. This is physiologically well-established and you feel it within a few breaths.
 - **Cold exposure** produces a clear but temporary HRV rise — about 15 minutes, per a 2024 meta-analysis — similar to what's seen with cold showers or dunking your face.
-- **Slow breathing at ~6 breaths per minute** reliably raises HRV in the moment by bringing heart and breath rhythms into [resonance](/articles/hrv-harmony-of-rhythms) — the same physiology behind [coherent breathing](/articles/coherent-breathing-guide).
+- **[Slow breathing](/science/evidence/slow-breathing) at ~6 breaths per minute** reliably raises HRV in the moment by bringing heart and breath rhythms into [resonance](/articles/hrv-harmony-of-rhythms) — the same physiology behind [coherent breathing](/articles/coherent-breathing-guide).
 
 All three are real. All three are **short-lived**. They buy you a window of calm and recovery, which is genuinely valuable — just not the same as a structural change.
 
@@ -49,7 +49,7 @@ All three are real. All three are **short-lived**. They buy you a window of calm
 
 Not automatically — a subtlety Dutch physiotherapy sources are careful about, and most wellness apps gloss over: **a high HRV during a breathing exercise doesn't automatically mean your nervous system has become structurally healthier.** Part of that spike simply comes from the breathing temporarily imposing rhythm on your heartbeat. It's a real effect, but it's the exercise doing it live — not necessarily proof of lasting change.
 
-There's an even finer point: the popular shorthand "HRV equals vagus activity" isn't fully justified. At slow breathing rates, the breakdown of acetylcholine (the vagal messenger) is more complete, which actually reduces its moment-to-moment effect on respiratory sinus arrhythmia — and the sympathetic system may influence the pattern more than the simple story suggests. HRV is a useful window into autonomic balance, but it's not a clean one-to-one readout of "vagus tone."
+There's an even finer point: the popular shorthand "HRV equals vagus activity" isn't fully justified. At slow breathing rates, the breakdown of acetylcholine (the vagal messenger) is more complete, which actually reduces its moment-to-moment effect on [respiratory sinus arrhythmia](/science/concepts/respiratory-sinus-arrhythmia) — and the sympathetic system may influence the pattern more than the simple story suggests. HRV is a useful window into autonomic balance, but it's not a clean one-to-one readout of "vagus tone."
 
 ## Is a higher HRV always better?
 

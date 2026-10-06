@@ -97,7 +97,7 @@ Train vascular elasticity by hitting both extremes: cold fraction for maximal va
 
 ## [ HARDWARE_VALIDATION ]
 
-METRIC: Heart Rate Variability (HRV) + Increase in load/endurance metrics.
+METRIC: Heart Rate Variability ([HRV](/science/concepts/heart-rate-variability)) + Increase in load/endurance metrics.
 
 STATUS: System pulled from stagnation. Adaptation protocols active.
 

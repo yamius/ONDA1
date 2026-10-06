@@ -26,11 +26,11 @@ const article: Article = {
     linkText: 'See it live →',
   },
   content: `
-Most apps treat heart rate variability (HRV) as a single recovery score — a number that's "good" or "bad" today. Chronobiology offers a richer view: HRV reflects how **harmoniously your body's many rhythms work together**. As the Austrian-German chronobiologist Maximilian Moser puts it, every organ system produces its own "sound" — from the fast rhythms of the nervous system, through the heartbeat and breath, down to the slow tempo of metabolism — spanning seconds to weeks. HRV is a window into whether these rhythms are playing in tune or out of sync. Seen this way, a high HRV isn't just "good recovery"; it's a sign your internal orchestra is well conducted.
+Most apps treat [heart rate variability](/science/concepts/heart-rate-variability) (HRV) as a single recovery score — a number that's "good" or "bad" today. Chronobiology offers a richer view: HRV reflects how **harmoniously your body's many rhythms work together**. As the Austrian-German chronobiologist Maximilian Moser puts it, every organ system produces its own "sound" — from the fast rhythms of the nervous system, through the heartbeat and breath, down to the slow tempo of metabolism — spanning seconds to weeks. HRV is a window into whether these rhythms are playing in tune or out of sync. Seen this way, a high HRV isn't just "good recovery"; it's a sign your internal orchestra is well conducted.
 
 ## Beyond the recovery score
 
-The Anglo-American wearable world flattened HRV into a morning readiness number. Useful, but it hides what HRV actually measures. Your heartbeat naturally speeds up as you inhale and slows as you exhale — a rhythm called respiratory sinus arrhythmia. That coupling between breath and heart is one small example of the body's rhythms coordinating. HRV quantifies the flexibility and coordination of these autonomic rhythms.
+The Anglo-American wearable world flattened HRV into a morning readiness number. Useful, but it hides what HRV actually measures. Your heartbeat naturally speeds up as you inhale and slows as you exhale — a rhythm called [respiratory sinus arrhythmia](/science/concepts/respiratory-sinus-arrhythmia). That coupling between breath and heart is one small example of the body's rhythms coordinating. HRV quantifies the flexibility and coordination of these autonomic rhythms.
 
 When your body is well-regulated, its rhythms nest and synchronize: breath modulates heartbeat, heartbeat aligns with blood-pressure waves, and daily circadian cycles set the backdrop. When you're stressed, sick, or living against your clock, this coordination breaks down — and HRV drops. So a falling HRV isn't just "you're tired"; it's "your rhythms are losing their harmony." (This is also why there's no single "good" number — see [normal HRV by age](/articles/normal-hrv-by-age).)
 
@@ -63,7 +63,7 @@ The same things that lower HRV are, in this framework, sources of rhythmic disor
 
 ## See your own harmony
 
-Because HRV reflects coordination, not a single value, it's most meaningful as your own pattern over time. ONDA reads your resting heart rate, HRV and breathing and shows your personal baseline — and, during a practice, lets you watch your pulse fall into rhythm with your breath in real time. Instead of a lone morning score, you see your rhythms actually synchronizing, which is what [raising HRV](/articles/how-to-raise-hrv-naturally) really means.
+Because HRV reflects coordination, not a single value, it's most meaningful as your own pattern over time. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate), HRV and breathing and shows your [personal baseline](/science/concepts/hrv-baseline) — and, during a practice, lets you watch your pulse fall into rhythm with your breath in real time. Instead of a lone morning score, you see your rhythms actually synchronizing, which is what [raising HRV](/articles/how-to-raise-hrv-naturally) really means.
 `,
 }
 

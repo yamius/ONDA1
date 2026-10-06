@@ -26,7 +26,7 @@ const article: Article = {
     linkText: 'See it live →',
   },
   content: `
-The physiological sigh is a breathing pattern of two inhales through the nose — a full breath, then a short second "top-up" — followed by one long, slow exhale through the mouth. It is one of the quickest ways to take the edge off acute stress, and many people feel calmer within one to three breaths. In a randomized Stanford study (Balban et al., 2023, *Cell Reports Medicine*), five minutes a day of "cyclic sighing" for a month improved mood more than mindfulness meditation and lowered resting breathing rate — though the differences between the breathing techniques themselves were small.
+The physiological sigh is a breathing pattern of two inhales through the nose — a full breath, then a short second "top-up" — followed by one long, slow exhale through the mouth. It is one of the quickest ways to take the edge off acute stress, and many people feel calmer within one to three breaths. In a randomized Stanford study (Balban et al., 2023, *Cell Reports Medicine*), five minutes a day of "cyclic sighing" for a month improved mood more than mindfulness meditation and lowered resting [breathing rate](/science/measurements/respiratory-rate) — though the differences between the breathing techniques themselves were small.
 
 ## How do you do a physiological sigh?
 
@@ -41,9 +41,9 @@ No equipment, counting, or special posture is needed — you can do it at a desk
 
 ## Why does the physiological sigh work?
 
-The most likely explanation is the long exhale: breathing out slowly engages the parasympathetic ("rest and digest") branch of the nervous system, which slows the heart. Your heart rate naturally dips on every exhale (respiratory sinus arrhythmia), so a long exhale stretches that slowing phase.
+The most likely explanation is the long exhale: breathing out slowly engages the parasympathetic ("rest and digest") branch of the nervous system, which slows the heart. Your heart rate naturally dips on every exhale ([respiratory sinus arrhythmia](/science/concepts/respiratory-sinus-arrhythmia)), so a long exhale stretches that slowing phase.
 
-The double inhale is thought to help re-open small air sacs (alveoli) that partly collapse during shallow breathing — spontaneous sighs serve this role in normal breathing — and a fuller exhale may help offload carbon dioxide. These mechanisms are physiologically plausible, but the Balban study measured mood, anxiety, breathing rate, and heart rate, not alveoli or vagal activity directly, and it did not find a meaningful change in heart rate variability (HRV). Treat the mechanism as a well-grounded explanation, not a proven one.
+The double inhale is thought to help re-open small air sacs (alveoli) that partly collapse during shallow breathing — spontaneous sighs serve this role in normal breathing — and a fuller exhale may help offload carbon dioxide. These mechanisms are physiologically plausible, but the Balban study measured mood, anxiety, breathing rate, and heart rate, not alveoli or vagal activity directly, and it did not find a meaningful change in [heart rate variability](/science/concepts/heart-rate-variability) (HRV). Treat the mechanism as a well-grounded explanation, not a proven one.
 
 ## What did the Stanford cyclic sighing study find?
 
@@ -79,7 +79,7 @@ Use it whenever stress spikes and you have seconds, not minutes:
 - Between tasks, to reset instead of carrying tension forward.
 - In bed when your mind won't slow down.
 
-For longer stretches of stress, pair it with slower practices such as [coherent breathing](/articles/coherent-breathing-guide) at around five to six breaths per minute. The sigh helps with the spike; regular slow breathing builds steadiness.
+For longer stretches of stress, pair it with slower practices such as [coherent breathing](/articles/coherent-breathing-guide) at around five to six breaths per minute. The sigh helps with the spike; regular [slow breathing](/science/evidence/slow-breathing) builds steadiness.
 
 ## Safety: when should you stop?
 

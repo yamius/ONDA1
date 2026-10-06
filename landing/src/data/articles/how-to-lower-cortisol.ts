@@ -54,7 +54,7 @@ No — there is no diet, juice or supplement shown to "flush" cortisol, and cort
 
 ## What actually lowers cortisol?
 
-The levers with the best support are sleep, meditation or slow breathing, balanced exercise and fewer chronic stressors.
+The levers with the best support are sleep, meditation or [slow breathing](/science/evidence/slow-breathing), balanced exercise and fewer chronic stressors.
 
 | Lever | What to do | Evidence |
 |---|---|---|

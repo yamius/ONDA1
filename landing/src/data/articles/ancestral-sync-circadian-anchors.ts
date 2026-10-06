@@ -98,7 +98,7 @@ When all three anchors are correctly set, the system converges:
 
 **Cognitive Flux:** Morning brain fog disappears because your cortisol peak finally aligns with your wake-up time. The lag between biological "dawn" and subjective wakefulness collapses.
 
-**System Stability:** Your HRV becomes predictable, adaptive, and resilient — not because you "relaxed more," but because the autonomic nervous system is receiving coherent timing signals from all three anchor systems simultaneously.
+**System Stability:** Your [HRV](/science/concepts/heart-rate-variability) becomes predictable, adaptive, and resilient — not because you "relaxed more," but because the [autonomic nervous system](/science/concepts/autonomic-nervous-system) is receiving coherent timing signals from all three anchor systems simultaneously.
 
 > [ ONDA_STATEMENT ]
 > "We don't change biology. We simply return the input data for which it was originally designed."

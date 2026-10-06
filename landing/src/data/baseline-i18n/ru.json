@@ -134,6 +134,10 @@
       {
         "label": "Пульс в покое по возрасту",
         "href": "/tools/resting-heart-rate"
+      },
+      {
+        "label": "Личная базовая линия HRV: почему ваша собственная норма важнее любых таблиц",
+        "href": "/science/concepts/hrv-baseline"
       }
     ]
   },

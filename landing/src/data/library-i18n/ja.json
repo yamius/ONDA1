@@ -25,7 +25,8 @@
     "relatedTopics": "関連トピック",
     "allTopics": "すべてのトピック",
     "hubTitleSuffix": "ONDAライブラリ",
-    "hubMetaTitle": "{topic} — ガイドと研究 | ONDA Library"
+    "hubMetaTitle": "{topic} — ガイドと研究 | ONDA Library",
+    "scienceHeading": "このテーマの背景にある科学"
   },
   "countries": {
     "Japan": "日本",
@@ -95,5 +96,153 @@
       "intro": "呼吸、睡眠、神経系に関する興味深い研究の多くは、英語圏の外で行われてきました。このコレクションでは、日本の森林浴や禅の研究、インドのプラーナーヤーマの臨床試験、ドイツの時間生物学、オランダのヴィム・ホフ・メソッド研究、そしてフランスの心拍コヒーレンスの伝統をまとめて紹介します。",
       "imageAlt": "世界の科学 — イラスト：日本、インド、ドイツ、オランダ、フランスに光る点が灯り、細い光の弧で結ばれた暗い地球儀。"
     }
+  },
+  "science": {
+    "meditation": [
+      {
+        "href": "/science/evidence/meditation-autonomic-nervous-system",
+        "label": "瞑想と自律神経系：エビデンスが示すこと"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "内受容感覚：脳はどのように体を感じ取るのか"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "自律神経系：交感神経と副交感神経"
+      },
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "心臓と脳の相互作用：心臓と脳はどのように情報を伝え合うのか"
+      }
+    ],
+    "breathing": [
+      {
+        "href": "/science/mechanisms/breathing-and-hrv",
+        "label": "呼吸はHRVをどう変えるのか：ゆっくりした呼吸でHRVが上がる理由"
+      },
+      {
+        "href": "/science/evidence/slow-breathing",
+        "label": "ゆっくりした呼吸：エビデンスが示すこと"
+      },
+      {
+        "href": "/science/concepts/respiratory-sinus-arrhythmia",
+        "label": "呼吸性洞性不整脈：呼吸が心拍のリズムをどう形づくるか"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "安静時の呼吸数：何を反映し、どのように測るのか"
+      }
+    ],
+    "hrv-heart-rate": [
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "心拍変動（HRV）とは：その正体、反映するもの、反映しないもの"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "HRVの一つの値からわかること、わからないこと"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "HRVの個人のベースライン：どんな基準値よりも、あなた自身の「いつも」が大切な理由"
+      },
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "スマートウォッチやリングのHRVは信頼できるのか？"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "安静時心拍数：何を反映し、どのように測るのか"
+      }
+    ],
+    "stress-vagus": [
+      {
+        "href": "/science/concepts/vagus-nerve",
+        "label": "迷走神経：本当の働きと、神話にすぎないこと"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "自律神経系：交感神経と副交感神経"
+      },
+      {
+        "href": "/science/evidence/vagus-nerve-stimulation",
+        "label": "迷走神経刺激は本当に効くのか？ エビデンスが示すこと"
+      },
+      {
+        "href": "/science/evidence/hrv-biofeedback",
+        "label": "HRVバイオフィードバック：エビデンスが示すこと"
+      }
+    ],
+    "sleep-body-clock": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "HRVが日によって変わる理由"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "安静時心拍数：何を反映し、どのように測るのか"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "安静時の呼吸数：何を反映し、どのように測るのか"
+      }
+    ],
+    "lifestyle": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "HRVが日によって変わる理由"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "HRVの個人のベースライン：どんな基準値よりも、あなた自身の「いつも」が大切な理由"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "HRVの一つの値からわかること、わからないこと"
+      }
+    ],
+    "heart-fitness-metabolism": [
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "安静時心拍数：何を反映し、どのように測るのか"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "心拍変動（HRV）とは：その正体、反映するもの、反映しないもの"
+      },
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "HRVが日によって変わる理由"
+      }
+    ],
+    "brain-focus-aging": [
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "心臓と脳の相互作用：心臓と脳はどのように情報を伝え合うのか"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "内受容感覚：脳はどのように体を感じ取るのか"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "心拍変動（HRV）とは：その正体、反映するもの、反映しないもの"
+      }
+    ],
+    "doctors-your-data": [
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "スマートウォッチやリングのHRVは信頼できるのか？"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "HRVの一つの値からわかること、わからないこと"
+      },
+      {
+        "href": "/science/measurements/onda-method",
+        "label": "ONDAは体の信号をどのように測り、どう読み解くのか"
+      }
+    ]
   }
 }

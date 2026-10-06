@@ -134,6 +134,10 @@
       {
         "label": "Frequência cardíaca em repouso por idade",
         "href": "/tools/resting-heart-rate"
+      },
+      {
+        "label": "Linha de base da HRV: por que o seu próprio normal importa mais do que qualquer norma",
+        "href": "/science/concepts/hrv-baseline"
       }
     ]
   },

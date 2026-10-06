@@ -40,7 +40,7 @@ const article: Article = {
 
 Put a fingertip over the rear camera and its lens, and the phone does **photoplethysmography (PPG)** — the same optical trick your Apple Watch uses. With each heartbeat, blood pulses through your fingertip and slightly changes how much light passes through the skin; the camera picks up that rhythmic change and turns it into a pulse signal. No chest strap, no ring, no Bluetooth pairing — just a finger and a lens.
 
-That's genuinely enough to read your **heart rate live**, and to estimate your **breathing rate** from the rhythm. Which means it's enough to run the core loop of a breathing practice: breathe slowly, and watch your pulse respond in real time.
+That's genuinely enough to read your **heart rate live**, and to estimate your **[breathing rate](/science/measurements/respiratory-rate)** from the rhythm. Which means it's enough to run the core loop of a breathing practice: breathe slowly, and watch your pulse respond in real time.
 
 ---
 

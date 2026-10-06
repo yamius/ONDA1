@@ -28,13 +28,13 @@ const article: Article = {
     linkText: 'What ONDA measures →',
   },
   content: `
-Eating a large meal close to bedtime can make sleep worse and keep your body working when it should be winding down — but the measured effect on heart rate and HRV is small and varies from person to person. In a polysomnography study, people who ate more of their food near sleep had poorer sleep quality (Crispim 2011), and in a controlled crossover trial a 10 p.m. meal raised the next morning’s cortisol awakening response without changing a short HRV recording (Uçar 2021). The practical takeaway: finish heavy meals a few hours before bed, and check your own overnight numbers to see whether late dinners cost you anything.
+Eating a large meal close to bedtime can make sleep worse and keep your body working when it should be winding down — but the measured effect on heart rate and [HRV](/science/concepts/heart-rate-variability) is small and varies from person to person. In a polysomnography study, people who ate more of their food near sleep had poorer sleep quality (Crispim 2011), and in a controlled crossover trial a 10 p.m. meal raised the next morning’s cortisol awakening response without changing a short HRV recording (Uçar 2021). The practical takeaway: finish heavy meals a few hours before bed, and check your own overnight numbers to see whether late dinners cost you anything.
 
 ---
 
 ## Why can a late meal disturb the night?
 
-A late meal can disturb the night because digestion is active work that overlaps with the hours your body uses to slow down. At night resting heart rate normally drifts toward its lowest point, [heart rate variability](/glossary/heart-rate-variability) tends to rise, and core temperature falls. Digesting a big meal redirects blood flow to the gut and produces heat (the thermic effect of food), a mild [sympathetic](/glossary/sympathetic-nervous-system) load at a time when [parasympathetic](/glossary/parasympathetic-nervous-system) recovery should dominate.
+A late meal can disturb the night because digestion is active work that overlaps with the hours your body uses to slow down. At night [resting heart rate](/science/measurements/resting-heart-rate) normally drifts toward its lowest point, [heart rate variability](/glossary/heart-rate-variability) tends to rise, and core temperature falls. Digesting a big meal redirects blood flow to the gut and produces heat (the thermic effect of food), a mild [sympathetic](/glossary/sympathetic-nervous-system) load at a time when [parasympathetic](/glossary/parasympathetic-nervous-system) recovery should dominate.
 
 The bigger and richer the meal, and the closer to sleep, the longer that overlap lasts.
 
@@ -68,10 +68,10 @@ You can test your response by comparing early-dinner nights with late-dinner nig
 1. **Keep everything else steady** for a week or two — similar bedtime, no alcohol, no late training.
 2. **Alternate dinner timing:** a few nights finishing 3+ hours before bed, a few nights eating within 1–2 hours of bed.
 3. **Log meal time and size** (a quick note is enough).
-4. **Compare overnight resting heart rate and HRV** on the two kinds of nights against your normal range, plus how you slept.
+4. **Compare overnight resting heart rate and HRV** on the two kinds of nights against [your normal range](/science/concepts/hrv-baseline), plus how you slept.
 5. **Look for a consistent pattern**, not one bad night — single nights are noisy.
 
-ONDA reads overnight heart rate, HRV and respiratory rate from Apple Health when you wear an Apple Watch, and holds a personal 14-day baseline, so a late, heavy dinner shows up as a departure from your own corridor rather than from a population average — [see what ONDA measures](/measurements). It is descriptive, not diagnostic: ONDA doesn’t diagnose reflux, metabolic conditions or anything else.
+ONDA reads overnight heart rate, HRV and [respiratory rate](/science/measurements/respiratory-rate) from Apple Health when you wear an Apple Watch, and holds a personal 14-day baseline, so a late, heavy dinner shows up as a departure from your own corridor rather than from a population average — [see what ONDA measures](/measurements). It is descriptive, not diagnostic: ONDA doesn’t diagnose reflux, metabolic conditions or anything else.
 
 ---
 

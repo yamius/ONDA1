@@ -78,7 +78,7 @@ Two honest specifics, because they matter:
 - The **live coherence score** — the polished "watch your rhythm lock in" number — unlocks with an **Apple Watch**; on the phone camera you still get live pulse and a breathing estimate, but coherence shows "--" until a Watch is connected.
 - ONDA is **free to start** (your first reading in about 90 seconds, first practices free), then it's a subscription. It's freemium *with* a paywall — not free forever — so you can try the feedback loop before deciding.
 
-What ONDA is *not* is a Headspace- or Calm-style content library. It's a feedback instrument with a structured practice program — see [ONDA vs Headspace](/compare/onda-vs-headspace) for the honest side-by-side. And because it reads your body, it doubles as a **body-awareness** trainer: the loop teaches interoception — feeling the internal shifts you're usually blind to — by showing them to you first.
+What ONDA is *not* is a Headspace- or Calm-style content library. It's a feedback instrument with a structured practice program — see [ONDA vs Headspace](/compare/onda-vs-headspace) for the honest side-by-side. And because it reads your body, it doubles as a **body-awareness** trainer: the loop teaches [interoception](/science/concepts/interoception) — feeling the internal shifts you're usually blind to — by showing them to you first.
 
 ---
 

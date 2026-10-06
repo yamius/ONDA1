@@ -25,7 +25,7 @@ const article: Article = {
     linkText: "Which doctor for what →",
   },
   content: `
-Look at a few months of your resting heart rate and HRV and you'll often see your job in it. Workdays look different from days off. Night shifts leave broken, restless nights behind them. A heavy project shows up as a slow slide, and a holiday as a recovery you may not have noticed you needed. That "work-week signature" is exactly what an occupational health doctor is trained to think about: how your work affects your health, and how to adjust work so you can stay well in it. Your data can't diagnose burnout or a sleep disorder. But it can show, in your own numbers, whether your body ever gets to recover.
+Look at a few months of your [resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/science/concepts/heart-rate-variability) and you'll often see your job in it. Workdays look different from days off. Night shifts leave broken, restless nights behind them. A heavy project shows up as a slow slide, and a holiday as a recovery you may not have noticed you needed. That "work-week signature" is exactly what an occupational health doctor is trained to think about: how your work affects your health, and how to adjust work so you can stay well in it. Your data can't diagnose burnout or a sleep disorder. But it can show, in your own numbers, whether your body ever gets to recover.
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
@@ -87,9 +87,9 @@ If work stress has left you feeling hopeless or thinking about harming yourself,
 
 ## Your work week, on one page
 
-ONDA builds your personal baseline for resting heart rate, HRV and breathing from your Apple Watch, marks the days you left your usual range, and lets you note shifts, deadlines and days off. You can export any period as a PDF — generated on your device and shared only by you — so you decide exactly what an occupational health doctor sees.
+ONDA builds your [personal baseline](/science/concepts/hrv-baseline) for resting heart rate, HRV and breathing from your Apple Watch, marks the days you left your usual range, and lets you note shifts, deadlines and days off. You can export any period as a PDF — generated on your device and shared only by you — so you decide exactly what an occupational health doctor sees.
 
-*ONDA is a breathing and HRV biofeedback app, not a medical device, and does not diagnose burnout or sleep disorders. This article is general information, not medical or legal advice. If you're in crisis, contact your local emergency number or a crisis line.*
+*ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device, and does not diagnose burnout or sleep disorders. This article is general information, not medical or legal advice. If you're in crisis, contact your local emergency number or a crisis line.*
 `,
 }
 

@@ -141,7 +141,7 @@ Only with a doctor, and only if you have symptoms. Low testosterone is diagnosed
 
 No. ONDA does not measure oxytocin, testosterone or social behaviour.
 
-With an Apple Watch, ONDA reads heart rate variability (HRV), resting heart rate and sleep data from Apple Health. Sleep is one of the strongest everyday influences on testosterone, so sleep trends are worth watching. ONDA also offers guided breathing practices that can help you calm down before a stressful conversation.
+With an Apple Watch, ONDA reads [heart rate variability](/science/concepts/heart-rate-variability) (HRV), [resting heart rate](/science/measurements/resting-heart-rate) and sleep data from Apple Health. Sleep is one of the strongest everyday influences on testosterone, so sleep trends are worth watching. ONDA also offers guided breathing practices that can help you calm down before a stressful conversation.
 
 ---
 

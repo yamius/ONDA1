@@ -47,6 +47,7 @@ export function ArticleTopicHubPage() {
     .filter((s) => hubAvailable(s, lang))
     .map((s) => getArticleTopicHub(s))
     .filter((h): h is NonNullable<typeof h> => !!h)
+  const science = copy.science?.[hub.slug] ?? []
   const faq = hubFaqFor(hub.slug as ArticleTopicSlug, lang)
   const titleOf = (a: Article) => t(`bodies.${a.slug}.title`, { defaultValue: a.title }) as string
   const descOf = (a: Article) => t(`bodies.${a.slug}.description`, { defaultValue: a.description }) as string
@@ -112,6 +113,21 @@ export function ArticleTopicHubPage() {
             {fillLib(ui.allGuides, { topic: name, n: rest.length + (startHere ? 1 : 0) })}
           </h2>
           <ArticleGrid items={rest} lang={lang} titleOf={titleOf} descOf={descOf} />
+        </section>
+      )}
+
+      {science.length > 0 && (
+        <section className="mt-16 border-t border-white/10 pt-10" aria-labelledby="hub-science">
+          <h2 id="hub-science" className="mb-4 font-mono text-xs uppercase tracking-widest text-terminal-cyan/70">{ui.scienceHeading}</h2>
+          <ul className="space-y-2 text-sm">
+            {science.map((l) => (
+              <li key={l.href}>
+                <Link to={langHref(l.href, lang)} className="text-terminal-green/80 hover:text-terminal-green hover:underline">
+                  {l.label} →
+                </Link>
+              </li>
+            ))}
+          </ul>
         </section>
       )}
 

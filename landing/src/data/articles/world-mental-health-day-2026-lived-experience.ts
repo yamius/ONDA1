@@ -64,7 +64,7 @@ As a Gestalt-trained therapist, I’ve seen again and again that people often kn
 
 **Write it down.** Writing about difficult experiences, even briefly, can help people make sense of them. You don’t need a perfect journal — a few honest lines on a hard day is enough.
 
-**Notice your body.** Stress often shows up physically before we admit it: shallow breathing, a racing heart, tight shoulders, poor sleep. Pausing to notice these signals is a form of listening too. A few minutes of slow breathing can help the nervous system [settle enough to think clearly](/articles/calm-your-nervous-system-down).
+**Notice your body.** Stress often shows up physically before we admit it: shallow breathing, a racing heart, tight shoulders, poor sleep. Pausing to notice these signals is a form of listening too. A few minutes of [slow breathing](/science/evidence/slow-breathing) can help the nervous system [settle enough to think clearly](/articles/calm-your-nervous-system-down).
 
 **Notice patterns, not just moments.** One bad day is human. A pattern — weeks of low mood, sleep that never restores, losing interest in things you used to enjoy — is worth taking seriously and talking about with someone you trust or a professional.
 
@@ -80,11 +80,11 @@ Listening to yourself also means recognising when it’s time to involve someone
 
 The 2026 theme is ultimately about people being heard by the systems meant to help them. You can support that in your own care too: write down what you’ve noticed before an appointment, describe your experience in your own words, and ask questions until things make sense. Your account of what’s happening to you is not secondary to tests and scores — it’s central. Our guide to [doctors and your data](/articles/doctors-and-your-data) covers how to share it.
 
-That’s also the idea behind ONDA’s journal: your notes sit next to your body’s data — resting heart rate, HRV, breathing — so your own account of a hard week isn’t lost. If you choose, you can bring that history to a therapist or doctor on one page — see [the ONDA report for your therapist or psychiatrist](/articles/onda-report-for-your-therapist-or-psychiatrist). It doesn’t replace care; it helps your voice arrive with you.
+That’s also the idea behind ONDA’s journal: your notes sit next to your body’s data — [resting heart rate](/science/measurements/resting-heart-rate), [HRV](/science/concepts/heart-rate-variability), breathing — so your own account of a hard week isn’t lost. If you choose, you can bring that history to a therapist or doctor on one page — see [the ONDA report for your therapist or psychiatrist](/articles/onda-report-for-your-therapist-or-psychiatrist). It doesn’t replace care; it helps your voice arrive with you.
 
 ---
 
-*ONDA is a breathing and HRV biofeedback app, not a medical device, and is not a substitute for professional mental health care. If you’re in crisis, contact your local emergency number or a crisis line.*
+*ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device, and is not a substitute for professional mental health care. If you’re in crisis, contact your local emergency number or a crisis line.*
 `,
 }
 

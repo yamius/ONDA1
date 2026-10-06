@@ -25,7 +25,7 @@ const article: Article = {
     linkText: "Which doctor for what →",
   },
   content: `
-How fast you breathe at rest is one of the quietest numbers your watch records — and one of the most telling. A typical adult breathes about 12 to 20 times a minute at rest, and your own night-time breathing rate tends to be remarkably stable. When it rises and stays up, that's often a sign your body is working harder: an infection starting, a flare of a lung condition, or breathing that has slipped into an inefficient pattern. A pulmonologist (lung specialist) can read your breathing-rate and heart-rate history alongside your symptoms — and confirm what's happening with lung tests your watch can't do. There's also a twist: lung medicine is one of the few areas where breathing exercises appear in official treatment guidelines.
+How fast you breathe at rest is one of the quietest numbers your watch records — and one of the most telling. A typical adult breathes about 12 to 20 times a minute at rest, and your own night-time [breathing rate](/science/measurements/respiratory-rate) tends to be remarkably stable. When it rises and stays up, that's often a sign your body is working harder: an infection starting, a flare of a lung condition, or breathing that has slipped into an inefficient pattern. A pulmonologist (lung specialist) can read your breathing-rate and heart-rate history alongside your symptoms — and confirm what's happening with lung tests your watch can't do. There's also a twist: lung medicine is one of the few areas where breathing exercises appear in official treatment guidelines.
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
@@ -37,11 +37,11 @@ Research using wearables has explored how a rise in resting breathing rate and h
 
 ## What can a pulmonologist learn from your breathing rate data?
 
-**Night-time breathing rate baseline and trend.** Your normal range, and any sustained rise above it. A single high night means little; several nights in a row, especially with symptoms, is worth noting.
+**Night-time breathing rate baseline and trend.** [Your normal range](/science/concepts/hrv-baseline), and any sustained rise above it. A single high night means little; several nights in a row, especially with symptoms, is worth noting.
 
-**Resting heart rate alongside.** Breathing rate and heart rate often rise together during illness or flares. Seeing both move at the same time strengthens the picture.
+**[Resting heart rate](/science/measurements/resting-heart-rate) alongside.** Breathing rate and heart rate often rise together during illness or flares. Seeing both move at the same time strengthens the picture.
 
-**HRV trend.** Supporting context — a drop can accompany illness or poor sleep, but it isn't a lung measurement.
+**[HRV](/science/concepts/heart-rate-variability) trend.** Supporting context — a drop can accompany illness or poor sleep, but it isn't a lung measurement.
 
 **Your notes.** For lung problems, context is everything: triggers (cold air, exercise, pollen, pets, smoke, colds), night-time symptoms like coughing or waking breathless, how often you used a reliever inhaler, and how long episodes lasted.
 

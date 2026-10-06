@@ -27,7 +27,8 @@
     "relatedTopics": "Схожі теми",
     "allTopics": "Усі теми",
     "hubTitleSuffix": "Бібліотека ONDA",
-    "hubMetaTitle": "{topic} — гайди та дослідження | Бібліотека ONDA"
+    "hubMetaTitle": "{topic} — гайди та дослідження | Бібліотека ONDA",
+    "scienceHeading": "Наукове підґрунтя теми"
   },
   "countries": {
     "Japan": "Японія",
@@ -97,5 +98,153 @@
       "intro": "Чимало найцікавіших досліджень дихання, сну та нервової системи проведено поза англомовним світом. Ця збірка об'єднує їх: японські дослідження лісових купань і дзену, індійські випробування пранаями, німецьку хронобіологію, нідерландські дослідження методу Віма Гофа та французьку традицію серцевої когерентності.",
       "imageAlt": "Наука з усього світу — ілюстрація: темний глобус зі сяючими точками на Японії, Індії, Німеччині, Нідерландах і Франції, з'єднаними тонкими дугами світла."
     }
+  },
+  "science": {
+    "meditation": [
+      {
+        "href": "/science/evidence/meditation-autonomic-nervous-system",
+        "label": "Медитація і вегетативна нервова система: що показують дослідження"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "Інтероцепція: як мозок відчуває тіло"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "Вегетативна нервова система: симпатична і парасимпатична гілки"
+      },
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "Взаємодія серця і мозку: як серце й мозок обмінюються сигналами"
+      }
+    ],
+    "breathing": [
+      {
+        "href": "/science/mechanisms/breathing-and-hrv",
+        "label": "Як дихання змінює HRV — і чому повільне дихання його підвищує"
+      },
+      {
+        "href": "/science/evidence/slow-breathing",
+        "label": "Повільне дихання: що показують дослідження"
+      },
+      {
+        "href": "/science/concepts/respiratory-sinus-arrhythmia",
+        "label": "Дихальна синусова аритмія: як дихання формує ритм серця"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "Частота дихання в спокої: що вона відображає і як її вимірюють"
+      }
+    ],
+    "hrv-heart-rate": [
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Варіабельність серцевого ритму: що це, що вона відображає і чим не є"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Що одне значення HRV може сказати, а чого — ні"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "Базова лінія HRV: чому ваша власна норма важливіша за будь-які нормативи"
+      },
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "Чи можна довіряти HRV зі смартгодинника або кільця?"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Пульс у спокої: що він відображає і як його вимірюють"
+      }
+    ],
+    "stress-vagus": [
+      {
+        "href": "/science/concepts/vagus-nerve",
+        "label": "Блукаючий нерв: що він робить, а що є міфом"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "Вегетативна нервова система: симпатична і парасимпатична гілки"
+      },
+      {
+        "href": "/science/evidence/vagus-nerve-stimulation",
+        "label": "Чи справді працює стимуляція блукаючого нерва? Що показують дослідження"
+      },
+      {
+        "href": "/science/evidence/hrv-biofeedback",
+        "label": "HRV-біофідбек: що показують дослідження"
+      }
+    ],
+    "sleep-body-clock": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Чому HRV змінюється з дня на день"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Пульс у спокої: що він відображає і як його вимірюють"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "Частота дихання в спокої: що вона відображає і як її вимірюють"
+      }
+    ],
+    "lifestyle": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Чому HRV змінюється з дня на день"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "Базова лінія HRV: чому ваша власна норма важливіша за будь-які нормативи"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Що одне значення HRV може сказати, а чого — ні"
+      }
+    ],
+    "heart-fitness-metabolism": [
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Пульс у спокої: що він відображає і як його вимірюють"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Варіабельність серцевого ритму: що це, що вона відображає і чим не є"
+      },
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Чому HRV змінюється з дня на день"
+      }
+    ],
+    "brain-focus-aging": [
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "Взаємодія серця і мозку: як серце й мозок обмінюються сигналами"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "Інтероцепція: як мозок відчуває тіло"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Варіабельність серцевого ритму: що це, що вона відображає і чим не є"
+      }
+    ],
+    "doctors-your-data": [
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "Чи можна довіряти HRV зі смартгодинника або кільця?"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Що одне значення HRV може сказати, а чого — ні"
+      },
+      {
+        "href": "/science/measurements/onda-method",
+        "label": "Як ONDA вимірює і тлумачить сигнали вашого тіла"
+      }
+    ]
   }
 }

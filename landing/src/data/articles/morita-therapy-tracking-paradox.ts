@@ -48,14 +48,14 @@ The shift is subtle but powerful: stop trying to make the feeling go away, stop 
 
 ## What this means for tracking your body
 
-Here's the honest application for anyone using an HRV app, a wearable, or any health tracker — including this one. If you check your numbers anxiously, refresh them repeatedly, and let a reading dictate your mood, you can create exactly the loop Morita described: watching your heart rate makes you anxious, which raises your heart rate, which you then watch more closely.
+Here's the honest application for anyone using an [HRV](/science/concepts/heart-rate-variability) app, a wearable, or any health tracker — including this one. If you check your numbers anxiously, refresh them repeatedly, and let a reading dictate your mood, you can create exactly the loop Morita described: watching your heart rate makes you anxious, which raises your heart rate, which you then watch more closely.
 
 The wiser use is *arugamama* applied to data:
 
 - **Look at trends, not every reading.** A single number isn't a verdict. Glance at the pattern, then get on with your life — HRV varies a lot from day to day (see [what's normal for your age](/articles/normal-hrv-by-age)).
 - **Don't chase or fight a number.** A low HRV day is information, not a failure to correct through worry. Accept it, and act constructively.
 - **Notice when tracking increases anxiety.** If checking your metrics makes you feel worse, that's the loop. Step back.
-- **Redirect toward action.** Instead of monitoring the number, do the thing that helps — a slow breathing session, a walk, sleep — and let the number follow (see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally)).
+- **Redirect toward action.** Instead of monitoring the number, do the thing that helps — a [slow breathing](/science/evidence/slow-breathing) session, a walk, sleep — and let the number follow (see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally)).
 
 It also helps to know what the numbers can't tell you — the [honest limits of HRV](/articles/hrv-breathing-cold-honest-limits) are a good antidote to over-reading them.
 
@@ -63,7 +63,7 @@ It also helps to know what the numbers can't tell you — the [honest limits of 
 
 ONDA shows your readings against your own baseline and trend, rather than asking you to chase a perfect daily score. The goal is *arugamama* with your own body: aware of your patterns, not captured by them — using the data to act, then letting it go.
 
-*ONDA is a breathing and HRV biofeedback app, not a medical device. This article is educational and draws on Japanese Morita therapy; it is not treatment advice. For an anxiety disorder, consult a qualified professional.*
+*ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device. This article is educational and draws on Japanese Morita therapy; it is not treatment advice. For an anxiety disorder, consult a qualified professional.*
 `,
 }
 

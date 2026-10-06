@@ -33,7 +33,7 @@ Not all breathwork calms you down — and confusing the two is a common mistake.
 Fast and slow pranayama — the two paces of yoga's breathing practices — have different autonomic effects. Indian physiology research consistently divides it by pace, because pace determines the autonomic effect:
 
 - **Fast pranayama** — rapid, forceful breathing. Includes **Kapalabhati** (rapid forceful exhalations), **Bhastrika** (bellows breath — see [what an fMRI trial found about Bhastrika and anxiety](/articles/bhastrika-pranayama-brain-anxiety)), and Kukkuriya. These raise heart rate, increase alertness, and shift you toward sympathetic activation and mild arousal. They're energizing, not sedating.
-- **Slow pranayama** — slow, deep, controlled breathing. Includes **Nadi Shodhana** ([alternate nostril](/articles/alternate-nostril-breathing)), **Bhramari** ([humming bee breath](/articles/humming-breath-vagus)), Pranava, and Savitri. These lower heart rate, are associated with higher vagally mediated HRV while you practise, and shift you toward parasympathetic dominance. They're the calming, recovery-oriented techniques.
+- **Slow pranayama** — slow, deep, controlled breathing. Includes **Nadi Shodhana** ([alternate nostril](/articles/alternate-nostril-breathing)), **Bhramari** ([humming bee breath](/articles/humming-breath-vagus)), Pranava, and Savitri. These lower heart rate, are associated with higher vagally mediated [HRV](/science/concepts/heart-rate-variability) while you practise, and shift you toward parasympathetic dominance. They're the calming, recovery-oriented techniques.
 
 The mistake many people make is treating "breathwork" as automatically relaxing. A vigorous Kapalabhati session before bed will wake you up, not settle you.
 
@@ -41,7 +41,7 @@ The mistake many people make is treating "breathwork" as automatically relaxing.
 
 Slow pranayama is better for the body's stress response: in an Indian comparison, both fast and slow pranayama reduced perceived stress, but the beneficial effects on cardiovascular parameters (heart rate, blood pressure) appeared **only after slow pranayama, not fast**. The slow techniques produced the parasympathetic shift; the fast ones produced arousal.
 
-The mechanism follows the breathing rate directly. Slow breathing — around six breaths per minute or fewer — lengthens the exhale and engages the baroreflex, raising heart rate variability (HRV), including its vagally mediated part (see [vagus nerve](/glossary/vagus-nerve)). Fast, forceful breathing does the reverse: it drives sympathetic activation, useful for waking up and energizing, but not for calming down. So the same word, "pranayama," covers two physiologically opposite tools.
+The mechanism follows the [breathing rate](/science/measurements/respiratory-rate) directly. [Slow breathing](/science/evidence/slow-breathing) — around six breaths per minute or fewer — lengthens the exhale and engages the baroreflex, raising heart rate variability (HRV), including its vagally mediated part (see [vagus nerve](/glossary/vagus-nerve)). Fast, forceful breathing does the reverse: it drives sympathetic activation, useful for waking up and energizing, but not for calming down. So the same word, "pranayama," covers two physiologically opposite tools.
 
 ## When should you use fast vs. slow pranayama?
 

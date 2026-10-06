@@ -114,7 +114,7 @@ This curbs 'Human Error'—the tendency to ignore biological signals in favor of
 ## [ HARDWARE_VALIDATION ]
 
 DEVICE: ONDA App (iPhone camera / Apple Watch / Apple Health).
-METRIC: Resting HR, HRV & Breathing Rate.
+METRIC: Resting HR, HRV & [Breathing Rate](/science/measurements/respiratory-rate).
 STATUS: Feedback Loop Closed. Optimization Continuous.
 
 ---

@@ -70,7 +70,7 @@ Intensive retreats are demanding. Some meditators report unpleasant experiences 
 
 ## Track the calm it builds
 
-Cortical thickness and gamma waves need a lab, but some of the body’s response to practice is [measurable at home](/articles/measuring-meditation-progress). ONDA reads your pulse and an estimated breathing rate from your iPhone camera, and with an Apple Watch adds HRV trends and a live coherence reading, so you can see how your body settles during and across sessions. These are feedback signals, not a measure of insight — but they make a quiet practice a little more visible.
+Cortical thickness and gamma waves need a lab, but some of the body’s response to practice is [measurable at home](/articles/measuring-meditation-progress). ONDA reads your pulse and an estimated [breathing rate](/science/measurements/respiratory-rate) from your iPhone camera, and with an Apple Watch adds [HRV](/science/concepts/heart-rate-variability) trends and a live coherence reading, so you can see how your body settles during and across sessions. These are feedback signals, not a measure of insight — but they make a quiet practice a little more visible.
 `,
 }
 

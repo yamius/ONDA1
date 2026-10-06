@@ -166,7 +166,7 @@ For the current state of hormone tracking, see [can you track cortisol continuou
 
 ## Section 7: Can body signals like HRV warn you about a bad day?
 
-Only weakly. Heart rate variability (HRV), resting heart rate and regular sleep reflect general stress load and recovery. They often dip after poor sleep, illness, alcohol or a hard week — which can also affect mood. But they are not mood measures and cannot tell you which hormone is involved.
+Only weakly. Heart rate variability ([HRV](/science/concepts/heart-rate-variability)), [resting heart rate](/science/measurements/resting-heart-rate) and regular sleep reflect general stress load and recovery. They often dip after poor sleep, illness, alcohol or a hard week — which can also affect mood. But they are not mood measures and cannot tell you which hormone is involved.
 
 ONDA does not measure hormones, neurotransmitters or mood. With an Apple Watch, it reads HRV, resting heart rate and sleep data from Apple Health, which you can use as indirect signs of stress load. It also offers guided breathing practices. Compare readings with your own usual range, and treat them as a hint to look after sleep and stress — not as a diagnosis.
 

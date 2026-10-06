@@ -77,7 +77,7 @@ const article: Article = {
 
 ## Section 1: Is there a wearable that measures cortisol today?
 
-No — not one that is validated and on sale to consumers. There is no cortisol equivalent of a continuous glucose monitor (CGM). Smartwatches and rings that mention "stress" estimate it from heart rate, heart rate variability (HRV), skin temperature or skin conductance. They do not measure any hormone.
+No — not one that is validated and on sale to consumers. There is no cortisol equivalent of a continuous glucose monitor (CGM). Smartwatches and rings that mention "stress" estimate it from heart rate, [heart rate variability](/science/concepts/heart-rate-variability) (HRV), skin temperature or skin conductance. They do not measure any hormone.
 
 What does exist is research-grade hardware. University groups have built sweat patches and a smartwatch prototype that detect cortisol on the skin and have tested them on small groups of volunteers (Parlak 2018; Torrente-Rodríguez 2020; Wang 2022). A 2025 prototype called Stressomic measured cortisol together with adrenaline (epinephrine) and noradrenaline (norepinephrine) in sweat and followed their changes during physical, mental and drug-induced stress (Tu 2025).
 
@@ -133,9 +133,9 @@ Cycle-tracking apps and rings that use skin or body temperature are useful, but 
 
 **When you need a real hormone number: lab tests.** For suspected cortisol excess (Cushing's syndrome), guidelines recommend validated tests such as 24-hour urine cortisol, **late-night salivary cortisol** or an overnight dexamethasone suppression test, with abnormal results confirmed by a second test and an endocrinologist (Nieman 2008). For suspected cortisol deficiency (adrenal insufficiency), the standard is a stimulation test, with morning blood cortisol and ACTH as a first screen (Bornstein 2016). Research studies of the awakening response use carefully timed saliva samples (Stalder 2016).
 
-**For everyday stress load: heart signals and sleep.** HRV and resting heart rate react to heavy stress, poor sleep, alcohol and illness. They are indirect signals of how much strain your body is carrying — not hormone readings.
+**For everyday stress load: heart signals and sleep.** HRV and [resting heart rate](/science/measurements/resting-heart-rate) react to heavy stress, poor sleep, alcohol and illness. They are indirect signals of how much strain your body is carrying — not hormone readings.
 
-ONDA does **not** measure cortisol or any other hormone. With the phone camera it shows your pulse and an estimate of your breathing rate; with an Apple Watch and Apple Health it adds HRV, resting heart rate and sleep regularity. A trend of lower HRV and higher resting heart rate than your usual is a reason to rest more or check in with yourself, not a cortisol result.
+ONDA does **not** measure cortisol or any other hormone. With the phone camera it shows your pulse and an estimate of your [breathing rate](/science/measurements/respiratory-rate); with an Apple Watch and Apple Health it adds HRV, resting heart rate and sleep regularity. A trend of lower HRV and higher resting heart rate than your usual is a reason to rest more or check in with yourself, not a cortisol result.
 
 **Your daily routine.** A regular wake time and daylight soon after waking support a regular daily rhythm — and cost nothing.
 

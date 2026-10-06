@@ -25,7 +25,7 @@ const article: Article = {
     linkText: "Which doctor for what →",
   },
   content: `
-Emotions don't stay in your head. A difficult conversation, a stressful week or a low stretch often shows up in your body first — a resting heart rate that won't settle, lower HRV, faster breathing, shorter sleep. A psychotherapist or psychiatrist can use that history in a way other doctors don't: not to diagnose, but to **connect what your body did with what was happening in your life**. It can help you notice triggers you'd missed, build awareness of your own body's signals, see progress in therapy, and — with a psychiatrist — keep an eye on how medication affects you. Used well, it's a mirror, not a verdict.
+Emotions don't stay in your head. A difficult conversation, a stressful week or a low stretch often shows up in your body first — a [resting heart rate](/science/measurements/resting-heart-rate) that won't settle, lower [HRV](/science/concepts/heart-rate-variability), faster breathing, shorter sleep. A psychotherapist or psychiatrist can use that history in a way other doctors don't: not to diagnose, but to **connect what your body did with what was happening in your life**. It can help you notice triggers you'd missed, build awareness of your own body's signals, see progress in therapy, and — with a psychiatrist — keep an eye on how medication affects you. Used well, it's a mirror, not a verdict.
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
@@ -49,9 +49,9 @@ As a Gestalt-trained therapist, I've long seen that people often know what their
 
 **Name and understand what you felt.** Putting a word to an emotion helps regulate it. Your notes and signals give a therapist a precise moment to explore: what happened, what you felt, what your body did.
 
-**See progress that's hard to feel.** Change in therapy is often gradual and easy to doubt. A slow return toward your baseline, fewer out-of-range days, or a quicker recovery after stressful events can be encouraging, visible evidence that the work is doing something.
+**See progress that's hard to feel.** Change in therapy is often gradual and easy to doubt. A slow return toward [your baseline](/science/concepts/hrv-baseline), fewer out-of-range days, or a quicker recovery after stressful events can be encouraging, visible evidence that the work is doing something.
 
-**Support breathing and regulation skills.** If your therapist teaches regulation techniques, slow breathing practice gives an immediate, observable response — your heart settling — which some people find more convincing than being told to "calm down." HRV biofeedback has been studied as a supportive tool for stress and anxiety, alongside therapy rather than instead of it.
+**Support breathing and regulation skills.** If your therapist teaches regulation techniques, slow breathing practice gives an immediate, observable response — your heart settling — which some people find more convincing than being told to "calm down." [HRV biofeedback](/science/evidence/hrv-biofeedback) has been studied as a supportive tool for stress and anxiety, alongside therapy rather than instead of it.
 
 ## How can a psychiatrist use your heart rate data?
 

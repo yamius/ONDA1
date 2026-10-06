@@ -25,7 +25,7 @@ const article: Article = {
     linkText: "How to talk to your doctor →",
   },
   content: `
-A sleep specialist rarely gets to see what actually happens across weeks of your nights — they see one appointment, a questionnaire, and your memory of how you slept. Your watch fills that gap. Nightly resting heart rate, HRV, breathing rate and sleep timing, recorded over weeks, show **patterns**: how regular your schedule really is, which nights your body didn't settle, and what you were doing beforehand. That history helps a sleep specialist decide what kind of sleep problem they're looking at and which test is worth doing. What it can't do is replace a proper sleep assessment — and there's one trap worth knowing about: tracking sleep too anxiously can make sleep worse.
+A sleep specialist rarely gets to see what actually happens across weeks of your nights — they see one appointment, a questionnaire, and your memory of how you slept. Your watch fills that gap. Nightly [resting heart rate](/science/measurements/resting-heart-rate), [HRV](/science/concepts/heart-rate-variability), [breathing rate](/science/measurements/respiratory-rate) and sleep timing, recorded over weeks, show **patterns**: how regular your schedule really is, which nights your body didn't settle, and what you were doing beforehand. That history helps a sleep specialist decide what kind of sleep problem they're looking at and which test is worth doing. What it can't do is replace a proper sleep assessment — and there's one trap worth knowing about: tracking sleep too anxiously can make sleep worse.
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
@@ -89,7 +89,7 @@ If you stop breathing during sleep according to a partner, wake up choking or ga
 
 ## Your nights, ready for a specialist
 
-ONDA builds your personal baseline for nightly resting heart rate, HRV and breathing from your Apple Watch, marks the nights you left your usual range, and lets you add notes on what happened. You can export any period as a PDF — generated on your device and shared only by you — so a sleep specialist sees weeks of your nights, not just one night's memory.
+ONDA builds your [personal baseline](/science/concepts/hrv-baseline) for nightly resting heart rate, HRV and breathing from your Apple Watch, marks the nights you left your usual range, and lets you add notes on what happened. You can export any period as a PDF — generated on your device and shared only by you — so a sleep specialist sees weeks of your nights, not just one night's memory.
 
 *ONDA is a breathing and HRV biofeedback app, not a medical device, and does not diagnose sleep disorders. This article is general information, not medical advice. If you have symptoms such as breathing pauses in sleep or dangerous daytime sleepiness, see a doctor promptly.*
 `,

@@ -149,6 +149,7 @@ export function RestingHeartRatePage() {
           </div>
         )}
         {!result && (age || rhr) && <p className="mt-4 font-mono text-xs text-white/40">{c.invalid}</p>}
+        <p className="mt-4 font-mono text-xs leading-relaxed text-white/50"><Rich text={c.science} lang={lang} /></p>
       </div>
 
       <p className="mb-10 font-mono text-[11px] leading-relaxed text-white/30">{c.disclaimer}</p>

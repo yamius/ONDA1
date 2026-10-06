@@ -249,6 +249,10 @@ export function MicBreathingPage() {
         ))}
       </div>
 
+      <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
+        The science behind this → <Link to={langHref('/science/measurements/respiratory-rate', lang)} className="text-terminal-green hover:underline">Resting Respiratory Rate: What It Reflects and How It's Measured</Link>
+      </p>
+
       <div className="font-mono text-xs text-white/40">
         Related: <Link to={langHref(`/tools/breathing`, lang)} className="text-terminal-green hover:underline">Breathing pacer</Link>
         {' · '}

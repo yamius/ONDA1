@@ -56,11 +56,11 @@ So the honest statement is: meditation shows real, repeated associations with a 
 
 Yes — even with the caveats, meditation is a low-cost, low-risk practice with well-established benefits — lower stress, better attention, improved emotional regulation — all of which independently support brain health as you age. Chronic stress is known to harm the brain; meditation reliably lowers it. So even setting aside the direct brain-preservation research, meditation supports healthy brain aging through its solid, proven effects — and [structural change starts sooner than most expect](/articles/meditation-brain-changes-how-fast).
 
-For older adults specifically, pairing it with gentle slow breathing is a natural fit — the calming lever still works at any age (see [breathing exercises for older adults](/articles/breathing-exercises-older-adults)).
+For older adults specifically, pairing it with gentle [slow breathing](/science/evidence/slow-breathing) is a natural fit — the calming lever still works at any age (see [breathing exercises for older adults](/articles/breathing-exercises-older-adults)).
 
 ## Track the calm that supports your brain
 
-The stress reduction that underlies much of meditation's brain benefit is measurable. ONDA reads your resting heart rate and HRV from your Apple Watch (or your pulse from your phone camera), so you can track how your practice lowers stress and strengthens your autonomic balance over weeks — the well-established foundation of healthy brain aging, visible in your own numbers, while the structural benefits accrue underneath.
+The stress reduction that underlies much of meditation's brain benefit is measurable. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/science/concepts/heart-rate-variability) from your Apple Watch (or your pulse from your phone camera), so you can track how your practice lowers stress and strengthens your autonomic balance over weeks — the well-established foundation of healthy brain aging, visible in your own numbers, while the structural benefits accrue underneath.
 `,
 }
 

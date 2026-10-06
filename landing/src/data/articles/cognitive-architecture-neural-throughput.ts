@@ -87,7 +87,7 @@ Light and nutrition both shape brain fog, starting with your eyes as data input 
 ## [ HARDWARE_VALIDATION ]
 
 VALIDATION_DEVICE: [Oura_Ring] / [Whoop]
-METRIC: HRV (Heart Rate Variability) & Deep Sleep Ratio.
+METRIC: [HRV](/science/concepts/heart-rate-variability) (Heart Rate Variability) & Deep Sleep Ratio.
 SECONDARY_DEVICE: [Muse_Headband] to detect Alpha-wave frequency during focus sessions.
 STATUS: Cognitive Architecture Stable. Interference Minimized.
 

@@ -25,7 +25,7 @@ const article: Article = {
     linkText: "How to talk to your doctor →",
   },
   content: `
-Your GP (family doctor) is usually the right first person to see your watch data. Not because they'll interpret every HRV value — most won't, and they don't need to — but because they can put a **change in your body** next to **your symptoms, history and medications**, and decide what, if anything, needs checking. A clear report showing your normal resting heart rate, breathing rate and HRV, what changed, and when, helps a GP separate everyday causes (a virus, a new medication, poor sleep, alcohol) from things worth testing, and refer you on only when it's needed.
+Your GP (family doctor) is usually the right first person to see your watch data. Not because they'll interpret every [HRV](/science/concepts/heart-rate-variability) value — most won't, and they don't need to — but because they can put a **change in your body** next to **your symptoms, history and medications**, and decide what, if anything, needs checking. A clear report showing your normal [resting heart rate](/science/measurements/resting-heart-rate), [breathing rate](/science/measurements/respiratory-rate) and HRV, what changed, and when, helps a GP separate everyday causes (a virus, a new medication, poor sleep, alcohol) from things worth testing, and refer you on only when it's needed.
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
@@ -39,7 +39,7 @@ They're also the gatekeeper for the next step. If your data and symptoms suggest
 
 A good report — like the PDF ONDA exports — has a few blocks. Here's what a GP can take from each.
 
-**Your baseline.** Your normal range for resting heart rate, HRV and breathing rate over a calm period, and how many nights of data it's built on. This matters most: it tells the doctor what's normal *for you*, rather than comparing you with a population chart.
+**[Your baseline](/science/concepts/hrv-baseline).** Your normal range for resting heart rate, HRV and breathing rate over a calm period, and how many nights of data it's built on. This matters most: it tells the doctor what's normal *for you*, rather than comparing you with a population chart.
 
 **The day-by-day timeline.** Values over the chosen period, with days marked where a measure left your usual range. A GP will look for the **shape**: a sudden jump, a slow drift, or scattered one-off days. A single odd night is rarely meaningful; a shift that lasts for days or weeks is.
 

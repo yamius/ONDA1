@@ -134,6 +134,10 @@
       {
         "label": "Hartslag in rust per leeftijd",
         "href": "/tools/resting-heart-rate"
+      },
+      {
+        "label": "HRV-baseline: waarom je eigen normaal meer zegt dan welke norm ook",
+        "href": "/science/concepts/hrv-baseline"
       }
     ]
   },

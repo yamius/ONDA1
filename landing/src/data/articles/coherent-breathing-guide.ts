@@ -39,7 +39,7 @@ const article: Article = {
 
 ## Section 1: Why breathe at about 6 breaths a minute?
 
-Around six breaths per minute (0.1 Hz) is the **resonance frequency** of the cardiovascular system. Breathe there and you maximally stimulate the baroreflex — the loop that buffers blood pressure — driving large, coherent heart-rate oscillations and shifting the balance toward the [parasympathetic](/glossary/parasympathetic-nervous-system) branch via the [vagus nerve](/glossary/vagus-nerve) (Lehrer 2003; Lehrer & Gevirtz 2014). This is the engine of HRV biofeedback.
+Around six breaths per minute (0.1 Hz) is the **[resonance frequency](/science/mechanisms/breathing-and-hrv)** of the cardiovascular system. Breathe there and you maximally stimulate the baroreflex — the loop that buffers blood pressure — driving large, coherent heart-rate oscillations and shifting the balance toward the [parasympathetic](/glossary/parasympathetic-nervous-system) branch via the [vagus nerve](/glossary/vagus-nerve) (Lehrer 2003; Lehrer & Gevirtz 2014). This is the engine of [HRV biofeedback](/science/evidence/hrv-biofeedback).
 
 It isn’t exactly six for everyone — personal resonance sits at about 4.5–7 breaths per minute. The [Resonance Breathing Finder](/tools/resonance-breathing) helps you home in on yours; if you just want a paced circle, the [Breathing Pacer](/tools/breathing) has a coherent preset.
 
@@ -47,7 +47,7 @@ It isn’t exactly six for everyone — personal resonance sits at about 4.5–7
 
 ## Section 2: What does coherent breathing do?
 
-A controlled study had people breathe at resonance frequency for 15 minutes; it raised HRV and improved mood versus sitting quietly (Steffen 2017). Acutely, coherent breathing reliably increases HRV and lowers arousal; practised regularly it’s associated with better stress resilience, blood pressure and emotional regulation. It is not a cure for anxiety disorders, but it’s one of the most evidence-grounded, zero-cost self-regulation tools there is.
+A controlled study had people breathe at resonance frequency for 15 minutes; it raised [HRV](/science/concepts/heart-rate-variability) and improved mood versus sitting quietly (Steffen 2017). Acutely, coherent breathing reliably increases HRV and lowers arousal; practised regularly it’s associated with better stress resilience, blood pressure and emotional regulation. It is not a cure for anxiety disorders, but it’s one of the most evidence-grounded, zero-cost self-regulation tools there is.
 
 Coherent breathing differs from [box breathing and 4-7-8](/articles/box-breathing-how-it-works): those use holds and are great for acute calm or sleep, while coherent is a smooth, hold-free rhythm optimised specifically for HRV — better for daily practice and biofeedback.
 

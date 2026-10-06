@@ -14,7 +14,7 @@
  *   npx tsx scripts/check-translations.ts            # all
  *   npx tsx scripts/check-translations.ts ru reviews # one language / collection
  */
-import { mkdirSync, readFileSync, writeFileSync } from 'fs'
+import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'fs'
 import { join } from 'path'
 import { TRANSLATION_SCHEMA, type FieldSpec, type TranslationCollection } from '../src/data/i18n-schema'
 import { enSource } from './lib/i18n-source'
@@ -52,6 +52,10 @@ function looksEnglish(s: string): boolean {
   const hits = new Set((plain.match(EN_WORDS) ?? []).map((w) => w.toLowerCase()))
   return hits.size >= 4 && !NOT_EN.test(plain)
 }
+// Published EN science pages (/science/<kind>/<slug>) — always valid link targets.
+const SCIENCE_DIR = join(process.cwd(), 'content', 'science')
+const SCIENCE_PATHS = new Set(readdirSync(SCIENCE_DIR, { withFileTypes: true }).filter((d) => d.isDirectory()).flatMap((d) => readdirSync(join(SCIENCE_DIR, d.name)).filter((f) => f.endsWith('.md')).map((f) => '/science/' + d.name + '/' + f.slice(0, -3))))
+
 // Page links only — in-page anchors (#…) legitimately change with translated headings.
 const links = (md: string) => new Set((md.match(/\]\(([^)\s]+)/g) ?? []).map((l) => l.slice(2)).filter((l) => !l.startsWith('#')))
 let stale: number[] = []
@@ -70,7 +74,9 @@ function checkField(spec: FieldSpec, v: unknown, en: unknown, where: (m: string)
       if (spec.kind === 'markdown' && typeof en === 'string') {
         const enLinks = links(en)
         const trLinks = links(v as string)
-        const bad = [...trLinks].filter((l) => !enLinks.has(l))
+        // A translation may link a science page at a spot the EN wording doesn't offer
+        // (loose translation) — allowed, as long as that science page exists.
+        const bad = [...trLinks].filter((l) => !enLinks.has(l) && !SCIENCE_PATHS.has(l))
         if (bad.length) where(`links not in EN (translated/garbled URL?): ${bad.slice(0, 3).join(', ')}`)
         const lost = [...enLinks].filter((l) => !trLinks.has(l)).length
         if (lost) stale.push(lost)

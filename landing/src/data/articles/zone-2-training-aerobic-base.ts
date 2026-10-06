@@ -46,7 +46,7 @@ At this intensity your cells preferentially burn fat, and the training stimulus 
 
 - **Mitochondrial density** — more [mitochondria](/glossary/mitochondria) per cell means more [ATP](/glossary/atp) capacity and a higher ceiling for everything aerobic.
 - **Fat oxidation** — you get better at running on fat, sparing glycogen. This is the core of [metabolic flexibility](/glossary/metabolic-flexibility).
-- **Capillary density & stroke volume** — more delivery pipes and a stronger pump, which lowers resting heart rate and tends to lift [heart-rate variability](/glossary/heart-rate-variability) over time.
+- **Capillary density & stroke volume** — more delivery pipes and a stronger pump, which lowers [resting heart rate](/science/measurements/resting-heart-rate) and tends to lift [heart-rate variability](/glossary/heart-rate-variability) over time.
 
 This is the layer elite endurance athletes spend ~80% of their volume building. It also happens to be longevity infrastructure: aerobic base is tightly linked to all-cause mortality.
 

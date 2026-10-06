@@ -71,7 +71,7 @@ ONDA works to improve that signal-to-noise — less static, clearer signal — t
 
 ### Inhibitory Tuning
 
-{{fact:claim.slowExhale}}. Slow breathing brings a calmer state in which neural noise tends to settle.
+{{fact:claim.slowExhale}}. [Slow breathing](/science/evidence/slow-breathing) brings a calmer state in which neural noise tends to settle.
 
 ### Sensory Gating
 

@@ -152,7 +152,7 @@ Holding your breath also does not trigger "fight or flight." It triggers the div
 
 You can time your own BOLT on dry land and watch how calm your everyday breathing feels. Treat the number as a personal note, not a diagnosis.
 
-ONDA does **not** measure CO₂, blood oxygen (SpO₂) or BOLT. With the phone camera it shows your pulse and an estimate of your breathing rate; with an Apple Watch it adds more signals such as HRV. If your resting breathing rate is often high or your breathing feels hurried, that is worth noticing — and worth a slower, quieter practice or a doctor's view.
+ONDA does **not** measure CO₂, blood oxygen (SpO₂) or BOLT. With the phone camera it shows your pulse and an estimate of your [breathing rate](/science/measurements/respiratory-rate); with an Apple Watch it adds more signals such as [HRV](/science/concepts/heart-rate-variability). If your resting breathing rate is often high or your breathing feels hurried, that is worth noticing — and worth a slower, quieter practice or a doctor's view.
 
 ---
 

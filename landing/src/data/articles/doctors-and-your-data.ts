@@ -25,7 +25,7 @@ const article: Article = {
     linkText: "Start here →",
   },
   content: `
-Your watch records something no doctor normally sees: weeks and months of your resting heart rate, HRV, breathing and sleep, night after night. Brought in the right form, that history helps a doctor understand what changed, when, and what else was happening — and decide what, if anything, needs checking. But different doctors use it for different things. A GP looks for everyday causes and decides on next steps; a cardiologist uses it to choose the right heart test; a sleep specialist reads your nights; a therapist connects your body with your life; a sports doctor reads your recovery — and neurologists, endocrinologists, gynecologists, lung specialists, occupational health doctors and rehabilitation teams each read it for their own questions. This guide shows who to see for what, and how to bring your data so it actually helps.
+Your watch records something no doctor normally sees: weeks and months of your [resting heart rate](/science/measurements/resting-heart-rate), [HRV](/science/concepts/heart-rate-variability), breathing and sleep, night after night. Brought in the right form, that history helps a doctor understand what changed, when, and what else was happening — and decide what, if anything, needs checking. But different doctors use it for different things. A GP looks for everyday causes and decides on next steps; a cardiologist uses it to choose the right heart test; a sleep specialist reads your nights; a therapist connects your body with your life; a sports doctor reads your recovery — and neurologists, endocrinologists, gynecologists, lung specialists, occupational health doctors and rehabilitation teams each read it for their own questions. This guide shows who to see for what, and how to bring your data so it actually helps.
 
 ## Start here
 
@@ -77,7 +77,7 @@ In most healthcare systems, the GP is the right first step: they see your whole 
 **Gynecologist.** Resting heart rate and HRV move with the menstrual cycle, through pregnancy and around menopause — your own rhythm matters more than any chart.
 → **[Your Cycle in Your Heart Rate](/articles/onda-report-for-your-gynecologist)**
 
-**Pulmonologist.** Night-time breathing rate is a quiet, honest signal — and lung medicine is one of the few fields where breathing retraining is in official guidelines.
+**Pulmonologist.** Night-time [breathing rate](/science/measurements/respiratory-rate) is a quiet, honest signal — and lung medicine is one of the few fields where breathing retraining is in official guidelines.
 → **[Your Breathing in Numbers](/articles/onda-report-for-your-pulmonologist)**
 
 **Occupational health doctor.** Your job leaves a signature in your heart rate: workdays versus days off, shift weeks, slow burnout. Plus what to know about confidentiality.
@@ -98,7 +98,7 @@ Whoever you see, the same rules make your data useful:
 
 ## Bring your data in a form doctors can read
 
-ONDA builds your personal baseline for resting heart rate, HRV and breathing from your Apple Watch history, marks the days you left your usual range, and lets you add notes when something happens. From the timeline you can export any period as a PDF — generated on your device and shared only by you. It's the one-page summary each of these doctors can read in a minute.
+ONDA builds your [personal baseline](/science/concepts/hrv-baseline) for resting heart rate, HRV and breathing from your Apple Watch history, marks the days you left your usual range, and lets you add notes when something happens. From the timeline you can export any period as a PDF — generated on your device and shared only by you. It's the one-page summary each of these doctors can read in a minute.
 
 *ONDA is a breathing and HRV biofeedback app, not a medical device. This guide is general information, not medical advice. If you have urgent symptoms, seek medical care immediately.*
 `,

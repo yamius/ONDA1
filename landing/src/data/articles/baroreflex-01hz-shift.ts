@@ -55,7 +55,7 @@ Breathing at around 0.1 Hz — about 5.5–6 breaths per minute — causes your 
 
 **The Alignment:** Your inhale assists the pressure rise. Your exhale assists the pressure drop. Both happen in perfect tandem with baroreflex automation — for the first time, the two systems are working *with* each other instead of fighting in parallel.
 
-**The Result:** This creates the maximum possible amplitude of HRV. The system stops "fighting" itself and enters Peak Operational Efficiency. HRV doesn't just increase — it surges, because the baroreflex oscillation is now fully expressed rather than partially cancelled by off-phase respiration.
+**The Result:** This creates the maximum possible amplitude of [HRV](/science/concepts/heart-rate-variability). The system stops "fighting" itself and enters Peak Operational Efficiency. HRV doesn't just increase — it surges, because the baroreflex oscillation is now fully expressed rather than partially cancelled by off-phase respiration.
 
 ---
 

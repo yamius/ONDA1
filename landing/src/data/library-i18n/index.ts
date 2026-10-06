@@ -27,6 +27,8 @@ export type LibraryCopy = {
   ui: typeof en.ui & { articlesFew?: string; articlesMany?: string }
   countries: Record<WorldCountry, string>
   hubs: Record<string, HubCopy>
+  /** "The science behind this topic" links per hub slug (bare /science/... paths). */
+  science?: Record<string, { href: string; label: string }[]>
 }
 
 const ALL = { en, es, ru, uk, zh, de, fr, it, nl, ja, pl, pt } as unknown as Record<Lang, LibraryCopy>

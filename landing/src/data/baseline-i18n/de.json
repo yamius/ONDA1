@@ -134,6 +134,10 @@
       {
         "label": "Ruhepuls nach Alter",
         "href": "/tools/resting-heart-rate"
+      },
+      {
+        "label": "HRV-Baseline: Warum dein eigenes Normal mehr zählt als jede Norm",
+        "href": "/science/concepts/hrv-baseline"
       }
     ]
   },

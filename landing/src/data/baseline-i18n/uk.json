@@ -134,6 +134,10 @@
       {
         "label": "Пульс у спокої за віком",
         "href": "/tools/resting-heart-rate"
+      },
+      {
+        "label": "Базова лінія HRV: чому ваша власна норма важливіша за будь-які нормативи",
+        "href": "/science/concepts/hrv-baseline"
       }
     ]
   },

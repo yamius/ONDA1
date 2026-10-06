@@ -25,7 +25,7 @@ const article: Article = {
     linkText: 'See it live →',
   },
   content: `
-Humming breath — Bhramari, or "bee breath" in yoga — is a technique where you exhale while making a steady humming sound. Researchers propose the vibration reaches the vagus nerve through the larynx, and the long, controlled exhale shifts you toward the parasympathetic "rest and digest" state. It's one of the few breathing methods with a proposed physical, mechanical link to the vagus nerve, which is why humming, chanting and singing are often grouped together. A few minutes lowers heart rate and eases tension — useful when you want calm plus a simple sensory anchor to keep your mind from wandering.
+Humming breath — Bhramari, or "bee breath" in yoga — is a technique where you exhale while making a steady humming sound. Researchers propose the vibration reaches the [vagus nerve](/science/concepts/vagus-nerve) through the larynx, and the long, controlled exhale shifts you toward the parasympathetic "rest and digest" state. It's one of the few breathing methods with a proposed physical, mechanical link to the vagus nerve, which is why humming, chanting and singing are often grouped together. A few minutes lowers heart rate and eases tension — useful when you want calm plus a simple sensory anchor to keep your mind from wandering.
 
 ## How to do humming breath
 
@@ -42,9 +42,9 @@ Repeat for five to ten breaths, or a few minutes. Some people gently rest their 
 
 Humming is thought to reach the vagus nerve through a more direct route that most breathing techniques lack — they reach it indirectly, through the pace of the breath: the vagus nerve has fibers running through the larynx and the muscles of the throat and soft palate. When you hum, chant or sing, the vibration is proposed to stimulate those fibers mechanically, on top of the long exhale. {{fact:claim.slowExhale}}.
 
-Indian clinical research supports this: randomized trials of Bhramari (the traditional name for humming breath) in hypertensive patients found significant reductions in blood pressure and heart rate, and studies in healthy adults found Bhramari raised vagally mediated HRV both immediately and after a few weeks of daily practice — meaning the benefit isn't only in the moment, it accumulates.
+Indian clinical research supports this: randomized trials of Bhramari (the traditional name for humming breath) in hypertensive patients found significant reductions in blood pressure and heart rate, and studies in healthy adults found Bhramari raised vagally mediated [HRV](/science/concepts/heart-rate-variability) both immediately and after a few weeks of daily practice — meaning the benefit isn't only in the moment, it accumulates.
 
-That's why humming shows up alongside slow breathing and cold-water exposure on nearly every list of vagus-nerve exercises. You get both effects at once: the extended exhale tips you toward "rest and digest," and the vibration is thought to give the vagus nerve a direct nudge. The result is a measurable calming shift — heart rate down, heart rate variability (HRV) up — often within a few breaths. For the full menu of methods, see [vagus nerve exercises](/articles/vagus-nerve-exercises). Chanting OM uses the same hum-plus-long-exhale mechanism, and it has brain-imaging work behind it — see [OM chanting and the brain](/articles/om-chanting-brain-vagus).
+That's why humming shows up alongside [slow breathing](/science/evidence/slow-breathing) and cold-water exposure on nearly every list of vagus-nerve exercises. You get both effects at once: the extended exhale tips you toward "rest and digest," and the vibration is thought to give the vagus nerve a direct nudge. The result is a measurable calming shift — heart rate down, heart rate variability (HRV) up — often within a few breaths. For the full menu of methods, see [vagus nerve exercises](/articles/vagus-nerve-exercises). Chanting OM uses the same hum-plus-long-exhale mechanism, and it has brain-imaging work behind it — see [OM chanting and the brain](/articles/om-chanting-brain-vagus).
 
 ## When should you use humming breath?
 

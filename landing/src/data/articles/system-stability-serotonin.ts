@@ -169,7 +169,7 @@ The best-supported habits help mood in many ways, including through serotonin:
 
 No. ONDA does not measure serotonin, other brain chemicals or mood — and no app or wearable can.
 
-With an Apple Watch, ONDA reads heart rate variability (HRV), resting heart rate and sleep data from Apple Health. These reflect general stress and recovery, which often change along with mood, but they are not a serotonin reading. ONDA also offers guided breathing practices that can help you calm down in the moment.
+With an Apple Watch, ONDA reads [heart rate variability](/science/concepts/heart-rate-variability) (HRV), [resting heart rate](/science/measurements/resting-heart-rate) and sleep data from Apple Health. These reflect general stress and recovery, which often change along with mood, but they are not a serotonin reading. ONDA also offers guided breathing practices that can help you calm down in the moment.
 
 ---
 

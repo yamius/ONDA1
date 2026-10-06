@@ -54,7 +54,7 @@ It also carries weight beyond the gym. A landmark study in the *New England Jour
 
 ## Section 3: Why it complements the other numbers
 
-Resting heart rate and [HRV](/glossary/heart-rate-variability) tell you about your baseline state at rest. Heart-rate recovery tells you about your system's *responsiveness* — how fast it can shift gears. Put together, they're a fuller picture than any one alone:
+[Resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/glossary/heart-rate-variability) tell you about [your baseline](/science/concepts/hrv-baseline) state at rest. Heart-rate recovery tells you about your system's *responsiveness* — how fast it can shift gears. Put together, they're a fuller picture than any one alone:
 
 - **Resting HR** — where your system idles.
 - **HRV** — how much variability, and recovery capacity, sits in the idle.

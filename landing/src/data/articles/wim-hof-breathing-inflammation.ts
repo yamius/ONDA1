@@ -28,7 +28,7 @@ const article: Article = {
     linkText: 'See it live →',
   },
   content: `
-The Wim Hof Method is famous for ice baths — but the science points to a surprising conclusion: the breathing, not the cold, is what calms inflammation. In landmark research at Radboud University in the Netherlands, trained practitioners were able to *voluntarily* activate their sympathetic nervous system and blunt their body's inflammatory response to an injected bacterial toxin — something long considered impossible, because the autonomic nervous system was assumed to be beyond conscious control. A later Radboud study separated the method's ingredients and found that [cold exposure](/articles/cold-exposure-vagus-nerve) alone did *not* significantly reduce inflammation, while the breathing technique did. If you care about the anti-inflammatory effect, the cold plunge is optional; the breath is the active component.
+The Wim Hof Method is famous for ice baths — but the science points to a surprising conclusion: the breathing, not the cold, is what calms inflammation. In landmark research at Radboud University in the Netherlands, trained practitioners were able to *voluntarily* activate their sympathetic nervous system and blunt their body's inflammatory response to an injected bacterial toxin — something long considered impossible, because the [autonomic nervous system](/science/concepts/autonomic-nervous-system) was assumed to be beyond conscious control. A later Radboud study separated the method's ingredients and found that [cold exposure](/articles/cold-exposure-vagus-nerve) alone did *not* significantly reduce inflammation, while the breathing technique did. If you care about the anti-inflammatory effect, the cold plunge is optional; the breath is the active component.
 
 ## The study that broke a dogma
 
@@ -59,7 +59,7 @@ Because it's an intense technique, it should be done seated or lying down, never
 
 ## See your own response
 
-The autonomic shifts behind this research show up in your heart rhythm. ONDA reads your pulse from your phone camera, or your HRV from your Apple Watch, so you can watch how intense breathing drives your heart rate up — the sympathetic activation these studies measured — versus how slow breathing settles it back down. Seeing the two opposite effects in your own numbers makes the difference between "priming" and "calming" breathwork concrete.
+The autonomic shifts behind this research show up in your heart rhythm. ONDA reads your pulse from your phone camera, or your [HRV](/science/concepts/heart-rate-variability) from your Apple Watch, so you can watch how intense breathing drives your heart rate up — the sympathetic activation these studies measured — versus how slow breathing settles it back down. Seeing the two opposite effects in your own numbers makes the difference between "priming" and "calming" breathwork concrete.
 `,
 }
 

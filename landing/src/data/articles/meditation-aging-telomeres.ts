@@ -47,7 +47,7 @@ Possibly, but the evidence is mixed, and honesty here matters more than hype:
 
 The grown-up interpretation is this: meditation is **not** a proven fountain of youth, and anyone claiming it definitively "reverses aging" is overstating the science. But there are real, if modest and inconsistent, signals that mind-body practice can support cellular-health markers, especially with committed, regular practice. The mechanism is plausible — meditation [lowers chronic stress and cortisol](/articles/breathing-lowers-stress-hormones), and chronic stress accelerates telomere shortening, so reducing it could protect telomeres.
 
-The practical takeaway isn't "meditate to live forever." It's that the well-established benefits of meditation — lower stress, better emotional regulation, improved HRV and cardiovascular health — are themselves linked to healthier aging, and the cellular research adds a tentative, practice-dependent layer on top. Meditate for the solid, measurable benefits; treat the anti-aging angle as a promising bonus, not a promise.
+The practical takeaway isn't "meditate to live forever." It's that the well-established benefits of meditation — lower stress, better emotional regulation, improved [HRV](/science/concepts/heart-rate-variability) and cardiovascular health — are themselves linked to healthier aging, and the cellular research adds a tentative, practice-dependent layer on top. Meditate for the solid, measurable benefits; treat the anti-aging angle as a promising bonus, not a promise.
 
 ## Does more meditation mean bigger cellular effects?
 
@@ -55,7 +55,7 @@ Across the studies, one signal recurs: the cellular effects, where present, scal
 
 ## Focus on what you can measure
 
-Telomere length isn't something you'll track at home, and its response to meditation is uncertain. What you *can* [track](/articles/measuring-meditation-progress) — and what reliably responds to practice — is your autonomic health. ONDA reads your resting heart rate and HRV from your Apple Watch (or your pulse from your phone camera), showing the stress-reducing, cardiovascular benefits that are both well-established and linked to healthier aging. Rather than chasing an uncertain cellular marker, you can watch the solid, measurable signs of a calmer, better-regulated system.
+Telomere length isn't something you'll track at home, and its response to meditation is uncertain. What you *can* [track](/articles/measuring-meditation-progress) — and what reliably responds to practice — is your autonomic health. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from your Apple Watch (or your pulse from your phone camera), showing the stress-reducing, cardiovascular benefits that are both well-established and linked to healthier aging. Rather than chasing an uncertain cellular marker, you can watch the solid, measurable signs of a calmer, better-regulated system.
 `,
 }
 

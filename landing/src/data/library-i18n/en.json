@@ -25,7 +25,8 @@
     "relatedTopics": "Related topics",
     "allTopics": "All topics",
     "hubTitleSuffix": "ONDA Library",
-    "hubMetaTitle": "{topic} — Guides & Research | ONDA Library"
+    "hubMetaTitle": "{topic} — Guides & Research | ONDA Library",
+    "scienceHeading": "The science behind this topic"
   },
   "countries": {
     "Japan": "Japan",
@@ -95,5 +96,153 @@
       "intro": "Much of the most interesting research on breathing, sleep and the nervous system was done outside the English-speaking world. This collection brings it together: Japanese studies on forest bathing and Zen, Indian pranayama trials, German chronobiology, Dutch research on the Wim Hof Method, and France's cardiac coherence tradition.",
       "imageAlt": "Science From Around the World — illustration: a dark globe with glowing points on Japan, India, Germany, the Netherlands and France, connected by thin arcs of light."
     }
+  },
+  "science": {
+    "meditation": [
+      {
+        "href": "/science/evidence/meditation-autonomic-nervous-system",
+        "label": "Meditation and the Autonomic Nervous System: What the Evidence Shows"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "Interoception: How the Brain Senses the Body"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "The Autonomic Nervous System: Sympathetic and Parasympathetic"
+      },
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "Heart–Brain Interaction: How the Heart and Brain Talk to Each Other"
+      }
+    ],
+    "breathing": [
+      {
+        "href": "/science/mechanisms/breathing-and-hrv",
+        "label": "How Breathing Changes HRV — and Why Slow Breathing Raises It"
+      },
+      {
+        "href": "/science/evidence/slow-breathing",
+        "label": "Slow Breathing: What the Evidence Shows"
+      },
+      {
+        "href": "/science/concepts/respiratory-sinus-arrhythmia",
+        "label": "Respiratory Sinus Arrhythmia: How Breathing Shapes Your Heart Rhythm"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "Resting Respiratory Rate: What It Reflects and How It's Measured"
+      }
+    ],
+    "hrv-heart-rate": [
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Heart Rate Variability: What It Is, What It Reflects, What It Isn't"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "What a Single HRV Value Can and Can't Tell You"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "HRV Baseline: Why Your Own Normal Matters More Than Any Norm"
+      },
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "Can You Trust HRV From a Smartwatch or Ring?"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Resting Heart Rate: What It Reflects and How It's Measured"
+      }
+    ],
+    "stress-vagus": [
+      {
+        "href": "/science/concepts/vagus-nerve",
+        "label": "The Vagus Nerve: What It Does, and What Is Myth"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "The Autonomic Nervous System: Sympathetic and Parasympathetic"
+      },
+      {
+        "href": "/science/evidence/vagus-nerve-stimulation",
+        "label": "Does Vagus Nerve Stimulation Really Work? What the Evidence Shows"
+      },
+      {
+        "href": "/science/evidence/hrv-biofeedback",
+        "label": "HRV Biofeedback: What the Evidence Shows"
+      }
+    ],
+    "sleep-body-clock": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Why HRV Changes From Day to Day"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Resting Heart Rate: What It Reflects and How It's Measured"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "Resting Respiratory Rate: What It Reflects and How It's Measured"
+      }
+    ],
+    "lifestyle": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Why HRV Changes From Day to Day"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "HRV Baseline: Why Your Own Normal Matters More Than Any Norm"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "What a Single HRV Value Can and Can't Tell You"
+      }
+    ],
+    "heart-fitness-metabolism": [
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Resting Heart Rate: What It Reflects and How It's Measured"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Heart Rate Variability: What It Is, What It Reflects, What It Isn't"
+      },
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Why HRV Changes From Day to Day"
+      }
+    ],
+    "brain-focus-aging": [
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "Heart–Brain Interaction: How the Heart and Brain Talk to Each Other"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "Interoception: How the Brain Senses the Body"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Heart Rate Variability: What It Is, What It Reflects, What It Isn't"
+      }
+    ],
+    "doctors-your-data": [
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "Can You Trust HRV From a Smartwatch or Ring?"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "What a Single HRV Value Can and Can't Tell You"
+      },
+      {
+        "href": "/science/measurements/onda-method",
+        "label": "How ONDA Measures and Interprets Your Body's Signals"
+      }
+    ]
   }
 }

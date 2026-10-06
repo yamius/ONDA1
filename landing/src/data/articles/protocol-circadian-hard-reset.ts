@@ -49,7 +49,7 @@ const article: Article = {
 
 ## Step 1: How do you know your body clock is off?
 
-Consistently low HRV on waking and midnight glucose spikes are the two primary signals — measure the scale of the desync before performing a Hard Reset. In the ONDA framework, we prioritize two primary signals:
+Consistently low [HRV](/science/concepts/heart-rate-variability) on waking and midnight glucose spikes are the two primary signals — measure the scale of the desync before performing a Hard Reset. In the ONDA framework, we prioritize two primary signals:
 
 **HRV as a Stress Indicator:** If your HRV is consistently low upon waking, your system failed to "reboot" overnight. Your clock is stuck in High Performance mode, never entering Recovery.
 
@@ -89,7 +89,7 @@ Post-reset, check your sleep regularity and duration in ONDA's Life Rhythm.
 
 **Target:** 15–20% increase in Deep Sleep phase within the first 3 nights.
 
-**Target:** Resting Heart Rate (RHR) stabilization within the first hour of sleep — a sign the parasympathetic system has taken command.
+**Target:** [Resting Heart Rate](/science/measurements/resting-heart-rate) (RHR) stabilization within the first hour of sleep — a sign the parasympathetic system has taken command.
 
 **Target:** Morning HRV trending upward by Night 3. This is the clearest confirmation that the SCN has re-established dominance over peripheral clocks.
 

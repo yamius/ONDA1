@@ -61,7 +61,7 @@ The same is true for the breath: a slow, deliberate minute resets the shallow br
 
 ## Section 4: Seeing your own idle
 
-You can't feel your HRV flattening over a sedentary afternoon — it's below perception, which is why it needs measuring. ONDA holds your [HRV](/glossary/heart-rate-variability) and resting heart rate against your **personal baseline**, so a pattern of low daytime variability, or an evening that never recovers, becomes visible rather than a vague afternoon sluggishness — [your own data](/measurements). Pair the numbers with the habit: if your down-signals cluster on your most sedentary days, that's the chair tax showing up in the ledger.
+You can't feel your HRV flattening over a sedentary afternoon — it's below perception, which is why it needs measuring. ONDA holds your [HRV](/glossary/heart-rate-variability) and [resting heart rate](/science/measurements/resting-heart-rate) against your **[personal baseline](/science/concepts/hrv-baseline)**, so a pattern of low daytime variability, or an evening that never recovers, becomes visible rather than a vague afternoon sluggishness — [your own data](/measurements). Pair the numbers with the habit: if your down-signals cluster on your most sedentary days, that's the chair tax showing up in the ledger.
 
 Firewall: this is descriptive, not medical. ONDA doesn't diagnose anything — it shows how a day's pattern moved your own signals.
 

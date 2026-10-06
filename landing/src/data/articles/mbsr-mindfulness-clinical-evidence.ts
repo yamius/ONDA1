@@ -51,7 +51,7 @@ MBSR's huge research base allows a genuinely evidence-based verdict, and honesty
 
 Here's what's most useful about MBSR beyond its evidence base: it's **structured and time-bound.** Eight weeks, defined practices, a clear arc. This solves one of meditation's biggest problems — the vagueness that makes progress invisible and adherence poor. With MBSR, you know what to do each week and can mark your progress through the program.
 
-This structure pairs naturally with objective measurement. Over an 8-week MBSR course, you can track not just your subjective stress scores (MBSR uses these) but [the physiological signs](/articles/measuring-meditation-progress) — HRV rising, resting heart rate settling — that show your nervous system adapting. A defined program plus objective feedback turns "am I getting anything out of this?" into a question you can actually answer.
+This structure pairs naturally with objective measurement. Over an 8-week MBSR course, you can track not just your subjective stress scores (MBSR uses these) but [the physiological signs](/articles/measuring-meditation-progress) — [HRV](/science/concepts/heart-rate-variability) rising, [resting heart rate](/science/measurements/resting-heart-rate) settling — that show your nervous system adapting. A defined program plus objective feedback turns "am I getting anything out of this?" into a question you can actually answer.
 
 ## Should you do MBSR?
 
@@ -59,7 +59,7 @@ MBSR is a strong, evidence-based entry point to meditation, especially if you va
 
 ## Track your MBSR progress
 
-Whether you follow full MBSR or a lighter practice, objective feedback keeps you honest and motivated. ONDA reads your resting heart rate and HRV from your Apple Watch (or your pulse from your phone camera) and shows how they trend over your practice weeks. Across an 8-week arc, you can watch your baseline strengthen — turning MBSR's structured timeline into visible, physiological progress alongside how you feel.
+Whether you follow full MBSR or a lighter practice, objective feedback keeps you honest and motivated. ONDA reads your resting heart rate and HRV from your Apple Watch (or your pulse from your phone camera) and shows how they trend over your practice weeks. Across an 8-week arc, you can watch [your baseline](/science/concepts/hrv-baseline) strengthen — turning MBSR's structured timeline into visible, physiological progress alongside how you feel.
 `,
 }
 

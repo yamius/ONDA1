@@ -25,13 +25,13 @@ const article: Article = {
     linkText: "Which doctor for what →",
   },
   content: `
-For many women, resting heart rate and HRV aren't steady numbers — they move with hormones. Across the menstrual cycle, resting heart rate tends to rise a few beats after ovulation and HRV tends to dip; in pregnancy, resting heart rate climbs steadily; around menopause, hot flashes and night sweats can show up as restless, elevated nights. That's why a flat "normal range" can be misleading, and why your own history is more useful than any chart. A gynecologist can read those patterns alongside your symptoms — to make sense of cycle-related changes, spot things worth testing, and talk through options in perimenopause. Your watch doesn't diagnose anything here, and it isn't a contraceptive or fertility tool. But it can turn "I feel different at certain times of the month" into a dated, visible pattern.
+For many women, [resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/science/concepts/heart-rate-variability) aren't steady numbers — they move with hormones. Across the menstrual cycle, resting heart rate tends to rise a few beats after ovulation and HRV tends to dip; in pregnancy, resting heart rate climbs steadily; around menopause, hot flashes and night sweats can show up as restless, elevated nights. That's why a flat "normal range" can be misleading, and why your own history is more useful than any chart. A gynecologist can read those patterns alongside your symptoms — to make sense of cycle-related changes, spot things worth testing, and talk through options in perimenopause. Your watch doesn't diagnose anything here, and it isn't a contraceptive or fertility tool. But it can turn "I feel different at certain times of the month" into a dated, visible pattern.
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
 ## Why do hormones change your heart rate and HRV?
 
-Sex hormones influence the autonomic nervous system and body temperature. After ovulation, rising progesterone raises body temperature slightly and, on average, resting heart rate goes up by a few beats while HRV goes down, until the next period begins. Studies using wearables have seen this rhythm clearly across large groups — though the size of the shift varies a lot between women, and some, especially on hormonal contraception, see little change.
+Sex hormones influence the [autonomic nervous system](/science/concepts/autonomic-nervous-system) and body temperature. After ovulation, rising progesterone raises body temperature slightly and, on average, resting heart rate goes up by a few beats while HRV goes down, until the next period begins. Studies using wearables have seen this rhythm clearly across large groups — though the size of the shift varies a lot between women, and some, especially on hormonal contraception, see little change.
 
 The practical lesson: if you menstruate, a higher resting heart rate or lower HRV in the second half of your cycle is often **normal for you**, not a sign that something's wrong. Your personal pattern over several cycles is the reference that matters.
 
@@ -50,7 +50,7 @@ Add cycle days and symptoms to your notes; that's what makes these patterns read
 
 In pregnancy, resting heart rate normally rises gradually as blood volume and the heart's workload increase, and HRV tends to fall. Seeing this on your watch is expected, not alarming in itself.
 
-Your data can be a calm, informative record to share with your midwife or obstetrician — especially notes on sleep, palpitations or dizziness. But it's **not a pregnancy monitoring tool.** Your prenatal checks, blood pressure measurements and tests are what keep you and your baby safe. If you want to practise breathing exercises, gentle slow breathing is usually well tolerated; ask your provider, and avoid breath-holding or forceful techniques.
+Your data can be a calm, informative record to share with your midwife or obstetrician — especially notes on sleep, palpitations or dizziness. But it's **not a pregnancy monitoring tool.** Your prenatal checks, blood pressure measurements and tests are what keep you and your baby safe. If you want to practise breathing exercises, gentle [slow breathing](/science/evidence/slow-breathing) is usually well tolerated; ask your provider, and avoid breath-holding or forceful techniques.
 
 Seek care promptly in pregnancy for chest pain, severe breathlessness, fainting, a severe headache or vision changes, bleeding, or anything that feels seriously wrong.
 

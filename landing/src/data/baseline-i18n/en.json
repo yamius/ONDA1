@@ -134,6 +134,10 @@
       {
         "label": "Resting heart rate by age",
         "href": "/tools/resting-heart-rate"
+      },
+      {
+        "label": "HRV Baseline: Why Your Own Normal Matters More Than Any Norm",
+        "href": "/science/concepts/hrv-baseline"
       }
     ]
   },

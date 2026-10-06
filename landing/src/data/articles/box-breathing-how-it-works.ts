@@ -50,7 +50,7 @@ Box breathing's equal 4-4-4-4 rhythm lands you near that rate, and the breath-ho
 Use box breathing for steady focus under pressure and 4-7-8 as a stronger off-switch for sleep.
 
 - **Box (4-4-4-4)** — steady focus under pressure. Best before a stressful event, or to settle without making yourself sleepy. The held breaths build composure.
-- **4-7-8** — a stronger off-switch for sleep. The long hold and even longer exhale push your breathing rate right down and emphasise the calming out-breath.
+- **4-7-8** — a stronger off-switch for sleep. The long hold and even longer exhale push your [breathing rate](/science/measurements/respiratory-rate) right down and emphasise the calming out-breath.
 - **Extended exhale (4-6)** — fastest everyday calm. A longer exhale than inhale slows the heart within each breath; an RCT found brief exhale-focused breathing improved mood and lowered arousal more than mindfulness (Balban 2023).
 
 Don't count in your head — let the [Breathing Pacer](/tools/breathing) run the rhythm so you can just follow the circle. For the personalised HRV sweet spot, see [resonance breathing](/tools/resonance-breathing).
@@ -69,7 +69,7 @@ Don't count in your head — let the [Breathing Pacer](/tools/breathing) run the
 
 > **The Hack:** Breathe through the nose into the belly (the [diaphragm](/glossary/diaphragm)), not the chest, and keep it silent and smooth.
 
-**The Logic:** Nasal, diaphragmatic breathing slows the rate naturally, and slow breathing is associated with higher vagally mediated HRV than shallow chest breathing. If you're audibly straining, ease off the counts.
+**The Logic:** Nasal, diaphragmatic breathing slows the rate naturally, and [slow breathing](/science/evidence/slow-breathing) is associated with higher vagally mediated HRV than shallow chest breathing. If you're audibly straining, ease off the counts.
 
 ### PROTOCOL 3: Shorten the Box if You're Light-Headed
 

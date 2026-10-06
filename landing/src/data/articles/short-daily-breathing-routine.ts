@@ -36,7 +36,7 @@ const article: Article = {
 
 ## Section 1: Is a short breathing session enough?
 
-Slow breathing shifts your autonomic balance toward the calm [parasympathetic](/glossary/parasympathetic-nervous-system) side within *minutes* — you don't need a long session to reach the state. A few minutes of paced, slow breathing raises [vagally](/glossary/vagus-nerve) mediated HRV and settles arousal on the spot. The acute effect is fast by design.
+[Slow breathing](/science/evidence/slow-breathing) shifts your autonomic balance toward the calm [parasympathetic](/glossary/parasympathetic-nervous-system) side within *minutes* — you don't need a long session to reach the state. A few minutes of paced, slow breathing raises [vagally](/glossary/vagus-nerve) mediated [HRV](/science/concepts/heart-rate-variability) and settles arousal on the spot. The acute effect is fast by design.
 
 And the training effect — a steadier baseline, a nervous system that returns to calm faster — comes from *repetition*, not from marathon sessions. Like any skill, it compounds with frequency. So a short daily rep isn't a compromise; it's the mechanism working the way it actually works.
 

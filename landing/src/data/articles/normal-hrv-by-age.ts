@@ -25,7 +25,7 @@ const article: Article = {
     linkText: 'What ONDA measures →',
   },
   content: `
-There is no universal "good" HRV number — it depends heavily on your age, and even more on your own baseline. As a guide, the median overnight HRV (measured as RMSSD by Oura, Whoop, Garmin and Polar) is about 58 ms at 18–29, 50 ms in your 30s, 42 ms in your 40s, 36 ms in your 50s, 30 ms in your 60s and 26 ms after 70. Apple Watch reports a different measure, SDNN, with its own norms (below). HRV naturally declines with age and varies a lot between devices, fitness levels, sleep and stress. The single most useful number isn't where you land against the population — it's whether your own HRV is trending up or down against your personal normal.
+There is no universal "good" [HRV](/science/concepts/heart-rate-variability) number — it depends heavily on your age, and even more on your own baseline. As a guide, the median overnight HRV (measured as [RMSSD](/science/concepts/rmssd) by Oura, Whoop, Garmin and Polar) is about 58 ms at 18–29, 50 ms in your 30s, 42 ms in your 40s, 36 ms in your 50s, 30 ms in your 60s and 26 ms after 70. Apple Watch reports a different measure, [SDNN](/science/concepts/sdnn), with its own norms (below). HRV naturally declines with age and varies a lot between devices, fitness levels, sleep and stress. The single most useful number isn't where you land against the population — it's whether your own HRV is trending up or down against your personal normal.
 
 **Check your number → [HRV Calculator by Age](/tools/hrv)** — enter your age and HRV to see your percentile.
 
@@ -74,7 +74,7 @@ A single low number is rarely a reason to worry. Check three things first:
 2. **Look at your 7-day average**, not one night. One bad night, a drink or a cold can drop HRV sharply.
 3. **Compare with your own baseline.** A sustained drop of more than about 10–20% below your usual range for a week or more is worth attention.
 
-See a doctor if a low HRV comes with symptoms such as chest pain, shortness of breath, fainting, a racing or irregular heartbeat, or unusual tiredness — or if your resting heart rate is also clearly higher than usual. HRV on its own is not a diagnosis.
+See a doctor if a low HRV comes with symptoms such as chest pain, shortness of breath, fainting, a racing or irregular heartbeat, or unusual tiredness — or if your [resting heart rate](/science/measurements/resting-heart-rate) is also clearly higher than usual. HRV on its own is not a diagnosis.
 ## Why does HRV drop with age?
 
 HRV drops with age because the flexibility of your autonomic nervous system — how nimbly it switches between "fight or flight" and "rest and digest" — gradually declines as the vagus nerve's influence on the heart weakens and the cardiovascular system stiffens. This is normal and expected; a 55-year-old with an HRV of 35 ms is not "worse off" than a 25-year-old at 70 ms. They're at different points on the same curve. The decline is also not fixed — fitness, sleep, and consistent [slow-breathing practice](/articles/how-to-raise-hrv-naturally) can slow it and even reverse short-term dips.

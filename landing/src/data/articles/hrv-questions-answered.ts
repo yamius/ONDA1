@@ -39,7 +39,7 @@ const article: Article = {
     linkText: 'See your two-week range →',
   },
   content: `
-Short, direct answers to the questions people actually ask about heart rate variability (HRV). Each answer starts with the answer, gives one figure or source where it matters, and links to a longer guide or a free calculator. This page is general information, not medical advice.
+Short, direct answers to the questions people actually ask about [heart rate variability](/science/concepts/heart-rate-variability) (HRV). Each answer starts with the answer, gives one figure or source where it matters, and links to a longer guide or a free calculator. This page is general information, not medical advice.
 
 ${toc}
 

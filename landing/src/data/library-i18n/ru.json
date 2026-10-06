@@ -27,7 +27,8 @@
     "relatedTopics": "Похожие темы",
     "allTopics": "Все темы",
     "hubTitleSuffix": "Библиотека ONDA",
-    "hubMetaTitle": "{topic} — материалы и исследования | ONDA Library"
+    "hubMetaTitle": "{topic} — материалы и исследования | ONDA Library",
+    "scienceHeading": "Научная основа темы"
   },
   "countries": {
     "Japan": "Япония",
@@ -97,5 +98,153 @@
       "intro": "Многие из самых интересных исследований дыхания, сна и нервной системы проведены за пределами англоязычного мира. Здесь они собраны вместе: японские работы о лесных ваннах и дзэн, индийские исследования пранаямы, немецкая хронобиология, нидерландские исследования метода Вима Хофа и французская традиция кардиокогерентности.",
       "imageAlt": "Наука со всего мира — иллюстрация: тёмный глобус со светящимися точками на Японии, Индии, Германии, Нидерландах и Франции, соединёнными тонкими дугами света."
     }
+  },
+  "science": {
+    "meditation": [
+      {
+        "href": "/science/evidence/meditation-autonomic-nervous-system",
+        "label": "Медитация и вегетативная нервная система: что показывают исследования"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "Интероцепция: как мозг ощущает тело"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "Вегетативная нервная система: симпатический и парасимпатический отделы"
+      },
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "Взаимодействие сердца и мозга: как они общаются друг с другом"
+      }
+    ],
+    "breathing": [
+      {
+        "href": "/science/mechanisms/breathing-and-hrv",
+        "label": "Как дыхание меняет HRV — и почему медленное дыхание его повышает"
+      },
+      {
+        "href": "/science/evidence/slow-breathing",
+        "label": "Медленное дыхание: что показывают исследования"
+      },
+      {
+        "href": "/science/concepts/respiratory-sinus-arrhythmia",
+        "label": "Дыхательная синусовая аритмия: как дыхание формирует ритм сердца"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "Частота дыхания в покое: что она отражает и как её измеряют"
+      }
+    ],
+    "hrv-heart-rate": [
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Вариабельность сердечного ритма: что это, что она отражает и чем не является"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Что одно значение HRV может и чего не может сказать"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "Личная базовая линия HRV: почему ваша собственная норма важнее любых таблиц"
+      },
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "Можно ли доверять HRV со смарт-часов или кольца?"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Пульс в покое: что он отражает и как его измеряют"
+      }
+    ],
+    "stress-vagus": [
+      {
+        "href": "/science/concepts/vagus-nerve",
+        "label": "Блуждающий нерв: что он делает и что о нём — миф"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "Вегетативная нервная система: симпатический и парасимпатический отделы"
+      },
+      {
+        "href": "/science/evidence/vagus-nerve-stimulation",
+        "label": "Работает ли стимуляция блуждающего нерва? Что показывают исследования"
+      },
+      {
+        "href": "/science/evidence/hrv-biofeedback",
+        "label": "HRV-биофидбек: что показывают исследования"
+      }
+    ],
+    "sleep-body-clock": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Почему HRV меняется изо дня в день"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Пульс в покое: что он отражает и как его измеряют"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "Частота дыхания в покое: что она отражает и как её измеряют"
+      }
+    ],
+    "lifestyle": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Почему HRV меняется изо дня в день"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "Личная базовая линия HRV: почему ваша собственная норма важнее любых таблиц"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Что одно значение HRV может и чего не может сказать"
+      }
+    ],
+    "heart-fitness-metabolism": [
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Пульс в покое: что он отражает и как его измеряют"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Вариабельность сердечного ритма: что это, что она отражает и чем не является"
+      },
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Почему HRV меняется изо дня в день"
+      }
+    ],
+    "brain-focus-aging": [
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "Взаимодействие сердца и мозга: как они общаются друг с другом"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "Интероцепция: как мозг ощущает тело"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Вариабельность сердечного ритма: что это, что она отражает и чем не является"
+      }
+    ],
+    "doctors-your-data": [
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "Можно ли доверять HRV со смарт-часов или кольца?"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Что одно значение HRV может и чего не может сказать"
+      },
+      {
+        "href": "/science/measurements/onda-method",
+        "label": "Как ONDA измеряет и интерпретирует сигналы вашего тела"
+      }
+    ]
   }
 }

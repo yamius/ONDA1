@@ -42,9 +42,9 @@ Indian comparative studies measured heart rate and blood pressure across differe
 
 **A single session lowers pressure briefly.** Crossover trials of a single flowing yoga session found systolic pressure lower shortly afterward than after sitting — but back to baseline within about an hour. A session gives a real, immediate dip; lasting change needs regular practice.
 
-**Different poses, different responses.** Comparative studies of asanas in healthy young volunteers found that relaxing poses and pranayama produced the most favorable responses (lower heart rate and pressure), distinct from more effortful postures. Relaxation poses paired with slow breathing gave the clearest calming effect.
+**Different poses, different responses.** Comparative studies of asanas in healthy young volunteers found that relaxing poses and pranayama produced the most favorable responses (lower heart rate and pressure), distinct from more effortful postures. Relaxation poses paired with [slow breathing](/science/evidence/slow-breathing) gave the clearest calming effect.
 
-**Regular practice shifts the baseline.** Beyond acute effects, structured yoga over weeks is associated with better HRV, baroreflex sensitivity, and resting cardiovascular measures — the adaptation that comes from consistency. Yoga programs have shown similar benefits in people with [type 2 diabetes](/articles/yoga-breathing-diabetes-blood-sugar).
+**Regular practice shifts the baseline.** Beyond acute effects, structured yoga over weeks is associated with better [HRV](/science/concepts/heart-rate-variability), baroreflex sensitivity, and resting cardiovascular measures — the adaptation that comes from consistency. Yoga programs have shown similar benefits in people with [type 2 diabetes](/articles/yoga-breathing-diabetes-blood-sugar).
 
 ## How to use poses deliberately
 
@@ -64,7 +64,7 @@ Indian comparative studies measured heart rate and blood pressure across differe
 
 Because different poses move your heart rate in different directions, you can watch it happen. ONDA reads your pulse from your phone camera or Apple Watch, and your HRV from Apple Watch, so you can see how a relaxation pose settles your heart versus how a vigorous sequence raises it — and track whether your [resting heart rate](/articles/resting-heart-rate-by-age) and HRV improve over weeks of practice.
 
-*ONDA is a breathing and HRV biofeedback app, not a medical device. This article draws on comparative research on yoga asanas and trials of single yoga sessions on blood pressure. It is not a substitute for medical care.*
+*ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device. This article draws on comparative research on yoga asanas and trials of single yoga sessions on blood pressure. It is not a substitute for medical care.*
 `,
 }
 

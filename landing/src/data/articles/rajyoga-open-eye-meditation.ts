@@ -45,7 +45,7 @@ Source-localization analysis showed the practice engaged specific brain networks
 
 ## The heart signature too
 
-The measurable effects aren't only in the brain. Research on the cardiorespiratory system found that Rajyoga meditation produces distinct autonomic signatures — recognizable patterns in the complexity of heart and breathing rhythms that distinguish the meditative state. This mirrors the broader finding that meditation shifts autonomic balance, and it means Rajyoga's effect can be tracked through heart rate variability (HRV), the same accessible signal you can [measure yourself](/articles/measuring-meditation-progress).
+The measurable effects aren't only in the brain. Research on the cardiorespiratory system found that Rajyoga meditation produces distinct autonomic signatures — recognizable patterns in the complexity of heart and breathing rhythms that distinguish the meditative state. This mirrors the broader finding that meditation shifts autonomic balance, and it means Rajyoga's effect can be tracked through [heart rate variability](/science/concepts/heart-rate-variability) (HRV), the same accessible signal you can [measure yourself](/articles/measuring-meditation-progress).
 
 Together, the brain and heart findings make Rajyoga a well-characterized practice: we can point to specific, measurable changes it produces, rather than relying only on practitioners' reports.
 

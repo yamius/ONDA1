@@ -25,7 +25,7 @@ const article: Article = {
     linkText: "Which doctor for what →",
   },
   content: `
-Your watch has recorded months of your heart rate, sleep and heart rate variability — far more than a doctor sees in a 15-minute appointment, where you get one blood pressure reading and one pulse. That data can genuinely help, but only if you bring it in a form a clinician can use. Doctors rarely want a raw export or a "readiness score." They want **trends, context and dates**: how your resting heart rate or sleep changed, when it changed, and what else was happening. A one-page summary, symptoms first and data second, turns "my app says my HRV is low" into a conversation your doctor can actually work with.
+Your watch has recorded months of your heart rate, sleep and [heart rate variability](/science/concepts/heart-rate-variability) — far more than a doctor sees in a 15-minute appointment, where you get one blood pressure reading and one pulse. That data can genuinely help, but only if you bring it in a form a clinician can use. Doctors rarely want a raw export or a "readiness score." They want **trends, context and dates**: how your [resting heart rate](/science/measurements/resting-heart-rate) or sleep changed, when it changed, and what else was happening. A one-page summary, symptoms first and data second, turns "my app says my HRV is low" into a conversation your doctor can actually work with.
 
 ## Why this conversation often goes badly
 
@@ -55,7 +55,7 @@ Not all watch data is equal in a clinical conversation.
 
 Before the appointment, spend twenty minutes turning your data into one page:
 
-1. **Your baseline.** What's normal for you — typical resting heart rate, usual sleep, your usual HRV range — over a calm period.
+1. **[Your baseline](/science/concepts/hrv-baseline).** What's normal for you — typical resting heart rate, usual sleep, your usual HRV range — over a calm period.
 2. **What changed, and when.** The trend that worries you, with start date and how long it lasted.
 3. **Two or three simple charts.** Four to eight weeks, trend lines only, clearly dated.
 4. **Context.** Illness, new medication, alcohol, travel, a stressful stretch, a change in training.
@@ -90,7 +90,7 @@ Two rules matter most: don't change or stop any medication based on watch data, 
 
 ONDA was built partly for this moment. It reads your resting heart rate, HRV and breathing from your Apple Watch, shows your personal baseline rather than a population average, and lets you add notes when something changes. You can export your timeline as a clean PDF — baseline, trends and your notes on one document, generated on your device and shared only by you. It's exactly the one-page summary a doctor can read in a minute.
 
-*ONDA is a breathing and HRV biofeedback app, not a medical device. This article is general information, not medical advice. If you have urgent symptoms, seek medical care immediately.*
+*ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device. This article is general information, not medical advice. If you have urgent symptoms, seek medical care immediately.*
 `,
 }
 

@@ -10,6 +10,7 @@
  * exists), so a /ru page never points at a /ru sibling that doesn't exist yet.
  */
 import { Link } from 'react-router-dom'
+import { langHref, type Lang } from '../i18n'
 
 const CORNERSTONES = ['hrv-biofeedback', 'resonance-breathing', 'hrv-vs-coherence', 'apple-watch-hrv-biofeedback'] as const
 type Cornerstone = (typeof CORNERSTONES)[number]
@@ -45,6 +46,243 @@ const COPY: Record<'en' | 'ru' | 'es', { heading: string; items: Record<Cornerst
   },
 }
 
+/** "The science behind this topic" — links to /science pages per cornerstone.
+ *  Labels are the science page titles in that language; paths are bare EN
+ *  /science/... paths localized by langHref. */
+const SCIENCE: Record<'en' | 'ru' | 'es', { heading: string; items: Record<Cornerstone, { href: string; label: string }[]> }> = {
+  "en": {
+    "heading": "The science behind this topic",
+    "items": {
+      "hrv-biofeedback": [
+        {
+          "href": "/science/evidence/hrv-biofeedback",
+          "label": "HRV Biofeedback: What the Evidence Shows"
+        },
+        {
+          "href": "/science/mechanisms/breathing-and-hrv",
+          "label": "How Breathing Changes HRV — and Why Slow Breathing Raises It"
+        },
+        {
+          "href": "/science/concepts/heart-rate-variability",
+          "label": "Heart Rate Variability: What It Is, What It Reflects, What It Isn't"
+        },
+        {
+          "href": "/science/evidence/slow-breathing",
+          "label": "Slow Breathing: What the Evidence Shows"
+        }
+      ],
+      "resonance-breathing": [
+        {
+          "href": "/science/mechanisms/breathing-and-hrv",
+          "label": "How Breathing Changes HRV — and Why Slow Breathing Raises It"
+        },
+        {
+          "href": "/science/concepts/respiratory-sinus-arrhythmia",
+          "label": "Respiratory Sinus Arrhythmia: How Breathing Shapes Your Heart Rhythm"
+        },
+        {
+          "href": "/science/evidence/slow-breathing",
+          "label": "Slow Breathing: What the Evidence Shows"
+        },
+        {
+          "href": "/science/evidence/hrv-biofeedback",
+          "label": "HRV Biofeedback: What the Evidence Shows"
+        }
+      ],
+      "hrv-vs-coherence": [
+        {
+          "href": "/science/concepts/heart-rate-variability",
+          "label": "Heart Rate Variability: What It Is, What It Reflects, What It Isn't"
+        },
+        {
+          "href": "/science/mechanisms/breathing-and-hrv",
+          "label": "How Breathing Changes HRV — and Why Slow Breathing Raises It"
+        },
+        {
+          "href": "/science/mechanisms/heart-brain-interaction",
+          "label": "Heart–Brain Interaction: How the Heart and Brain Talk to Each Other"
+        },
+        {
+          "href": "/science/concepts/interpreting-hrv",
+          "label": "What a Single HRV Value Can and Can't Tell You"
+        }
+      ],
+      "apple-watch-hrv-biofeedback": [
+        {
+          "href": "/science/measurements/heart-rate-variability",
+          "label": "Can You Trust HRV From a Smartwatch or Ring?"
+        },
+        {
+          "href": "/science/concepts/sdnn",
+          "label": "SDNN — What This HRV Metric Measures, and What It Doesn't"
+        },
+        {
+          "href": "/science/evidence/hrv-biofeedback",
+          "label": "HRV Biofeedback: What the Evidence Shows"
+        },
+        {
+          "href": "/science/measurements/onda-method",
+          "label": "How ONDA Measures and Interprets Your Body's Signals"
+        }
+      ]
+    }
+  },
+  "ru": {
+    "heading": "Научная основа темы",
+    "items": {
+      "hrv-biofeedback": [
+        {
+          "href": "/science/evidence/hrv-biofeedback",
+          "label": "HRV-биофидбек: что показывают исследования"
+        },
+        {
+          "href": "/science/mechanisms/breathing-and-hrv",
+          "label": "Как дыхание меняет HRV — и почему медленное дыхание его повышает"
+        },
+        {
+          "href": "/science/concepts/heart-rate-variability",
+          "label": "Вариабельность сердечного ритма: что это, что она отражает и чем не является"
+        },
+        {
+          "href": "/science/evidence/slow-breathing",
+          "label": "Медленное дыхание: что показывают исследования"
+        }
+      ],
+      "resonance-breathing": [
+        {
+          "href": "/science/mechanisms/breathing-and-hrv",
+          "label": "Как дыхание меняет HRV — и почему медленное дыхание его повышает"
+        },
+        {
+          "href": "/science/concepts/respiratory-sinus-arrhythmia",
+          "label": "Дыхательная синусовая аритмия: как дыхание формирует ритм сердца"
+        },
+        {
+          "href": "/science/evidence/slow-breathing",
+          "label": "Медленное дыхание: что показывают исследования"
+        },
+        {
+          "href": "/science/evidence/hrv-biofeedback",
+          "label": "HRV-биофидбек: что показывают исследования"
+        }
+      ],
+      "hrv-vs-coherence": [
+        {
+          "href": "/science/concepts/heart-rate-variability",
+          "label": "Вариабельность сердечного ритма: что это, что она отражает и чем не является"
+        },
+        {
+          "href": "/science/mechanisms/breathing-and-hrv",
+          "label": "Как дыхание меняет HRV — и почему медленное дыхание его повышает"
+        },
+        {
+          "href": "/science/mechanisms/heart-brain-interaction",
+          "label": "Взаимодействие сердца и мозга: как они общаются друг с другом"
+        },
+        {
+          "href": "/science/concepts/interpreting-hrv",
+          "label": "Что одно значение HRV может и чего не может сказать"
+        }
+      ],
+      "apple-watch-hrv-biofeedback": [
+        {
+          "href": "/science/measurements/heart-rate-variability",
+          "label": "Можно ли доверять HRV со смарт-часов или кольца?"
+        },
+        {
+          "href": "/science/concepts/sdnn",
+          "label": "SDNN: что измеряет этот показатель HRV, а что — нет"
+        },
+        {
+          "href": "/science/evidence/hrv-biofeedback",
+          "label": "HRV-биофидбек: что показывают исследования"
+        },
+        {
+          "href": "/science/measurements/onda-method",
+          "label": "Как ONDA измеряет и интерпретирует сигналы вашего тела"
+        }
+      ]
+    }
+  },
+  "es": {
+    "heading": "La ciencia detrás de este tema",
+    "items": {
+      "hrv-biofeedback": [
+        {
+          "href": "/science/evidence/hrv-biofeedback",
+          "label": "Biofeedback de HRV: qué muestra la evidencia"
+        },
+        {
+          "href": "/science/mechanisms/breathing-and-hrv",
+          "label": "Cómo la respiración cambia la HRV y por qué la respiración lenta la aumenta"
+        },
+        {
+          "href": "/science/concepts/heart-rate-variability",
+          "label": "Variabilidad de la frecuencia cardíaca: qué es, qué refleja y qué no es"
+        },
+        {
+          "href": "/science/evidence/slow-breathing",
+          "label": "Respiración lenta: qué muestra la evidencia"
+        }
+      ],
+      "resonance-breathing": [
+        {
+          "href": "/science/mechanisms/breathing-and-hrv",
+          "label": "Cómo la respiración cambia la HRV y por qué la respiración lenta la aumenta"
+        },
+        {
+          "href": "/science/concepts/respiratory-sinus-arrhythmia",
+          "label": "Arritmia sinusal respiratoria: cómo la respiración moldea el ritmo cardíaco"
+        },
+        {
+          "href": "/science/evidence/slow-breathing",
+          "label": "Respiración lenta: qué muestra la evidencia"
+        },
+        {
+          "href": "/science/evidence/hrv-biofeedback",
+          "label": "Biofeedback de HRV: qué muestra la evidencia"
+        }
+      ],
+      "hrv-vs-coherence": [
+        {
+          "href": "/science/concepts/heart-rate-variability",
+          "label": "Variabilidad de la frecuencia cardíaca: qué es, qué refleja y qué no es"
+        },
+        {
+          "href": "/science/mechanisms/breathing-and-hrv",
+          "label": "Cómo la respiración cambia la HRV y por qué la respiración lenta la aumenta"
+        },
+        {
+          "href": "/science/mechanisms/heart-brain-interaction",
+          "label": "Interacción corazón-cerebro: cómo se comunican el corazón y el cerebro"
+        },
+        {
+          "href": "/science/concepts/interpreting-hrv",
+          "label": "Lo que un solo valor de HRV puede y no puede decirte"
+        }
+      ],
+      "apple-watch-hrv-biofeedback": [
+        {
+          "href": "/science/measurements/heart-rate-variability",
+          "label": "¿Puedes fiarte de la HRV de un reloj o un anillo inteligente?"
+        },
+        {
+          "href": "/science/concepts/sdnn",
+          "label": "SDNN: qué mide esta métrica de HRV y qué no"
+        },
+        {
+          "href": "/science/evidence/hrv-biofeedback",
+          "label": "Biofeedback de HRV: qué muestra la evidencia"
+        },
+        {
+          "href": "/science/measurements/onda-method",
+          "label": "Cómo mide e interpreta ONDA las señales de tu cuerpo"
+        }
+      ]
+    }
+  }
+}
+
 /** Cornerstone slugs that have ru/es localized routes. Add a slug here when it
  *  is localized so the mesh can link within-language. */
 const LOCALIZED = new Set<string>(['hrv-biofeedback', 'resonance-breathing', 'hrv-vs-coherence', 'apple-watch-hrv-biofeedback'])
@@ -56,8 +294,23 @@ function prefixFor(lang: string): string {
 export function CornerstoneRelated({ current, lang = 'en' }: { current: string; lang?: string }) {
   const others = CORNERSTONES.filter((c) => c !== current)
   const prefix = prefixFor(lang)
-  const copy = COPY[lang === 'ru' || lang === 'es' ? lang : 'en']
+  const key = lang === 'ru' || lang === 'es' ? lang : 'en'
+  const copy = COPY[key]
+  const science = SCIENCE[key]
   return (
+    <>
+    <section className="mt-16 border-t border-white/10 pt-10">
+      <h2 className="mb-4 text-xl font-bold tracking-tight md:text-2xl">{science.heading}</h2>
+      <ul className="space-y-2 text-sm">
+        {science.items[current as Cornerstone]?.map((l) => (
+          <li key={l.href}>
+            <Link to={langHref(l.href, key as Lang)} className="text-terminal-green/80 hover:text-terminal-green hover:underline">
+              {l.label} →
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
     <section className="mt-16 border-t border-white/10 pt-10">
       <h2 className="mb-4 text-xl font-bold tracking-tight md:text-2xl">{copy.heading}</h2>
       <div className="grid gap-3 sm:grid-cols-2">
@@ -76,5 +329,6 @@ export function CornerstoneRelated({ current, lang = 'en' }: { current: string; 
         })}
       </div>
     </section>
+    </>
   )
 }

@@ -27,7 +27,7 @@ const article: Article = {
     linkText: 'What ONDA measures →',
   },
   content: `
-Most breathing research measures heart rate variability (HRV) as a proxy for calm. Japanese studies went further and measured the actual stress hormones in the body — and found that slow, conscious abdominal breathing significantly lowered [cortisol](/glossary/cortisol), adrenaline and noradrenaline. In one study of healthy women, urinary levels of all three stress hormones dropped significantly after abdominal breathing, while the parasympathetic "rest and digest" system became dominant. This is stronger evidence than HRV alone: it's not just that your heart rhythm looks calmer — the chemistry of stress in your body measurably falls. And it works without being a strain on the body itself.
+Most breathing research measures [heart rate variability](/science/concepts/heart-rate-variability) (HRV) as a proxy for calm. Japanese studies went further and measured the actual stress hormones in the body — and found that slow, conscious abdominal breathing significantly lowered [cortisol](/glossary/cortisol), adrenaline and noradrenaline. In one study of healthy women, urinary levels of all three stress hormones dropped significantly after abdominal breathing, while the parasympathetic "rest and digest" system became dominant. This is stronger evidence than HRV alone: it's not just that your heart rhythm looks calmer — the chemistry of stress in your body measurably falls. And it works without being a strain on the body itself.
 
 ## Beyond HRV: measuring the hormones directly
 

@@ -25,7 +25,7 @@ const article: Article = {
     linkText: "Which doctor for what →",
   },
   content: `
-Recovery after a serious illness, surgery, a heart event or a long bout of COVID rarely goes in a straight line. It moves in steps: a few good days, a setback, a plateau, then another step up. From the inside, that's hard to judge — a bad week can feel like going backwards when you're actually on track. Your resting heart rate, HRV and breathing, tracked over weeks, show the real shape of your recovery. A rehabilitation team — rehabilitation doctors, physiotherapists and cardiac or pulmonary rehab staff — can use that shape to pace your comeback: how fast to increase activity, when to hold back, and when a setback needs a closer look.
+Recovery after a serious illness, surgery, a heart event or a long bout of COVID rarely goes in a straight line. It moves in steps: a few good days, a setback, a plateau, then another step up. From the inside, that's hard to judge — a bad week can feel like going backwards when you're actually on track. Your [resting heart rate](/science/measurements/resting-heart-rate), [HRV](/science/concepts/heart-rate-variability) and breathing, tracked over weeks, show the real shape of your recovery. A rehabilitation team — rehabilitation doctors, physiotherapists and cardiac or pulmonary rehab staff — can use that shape to pace your comeback: how fast to increase activity, when to hold back, and when a setback needs a closer look.
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
@@ -47,7 +47,7 @@ A walk that felt fine can be followed by a night of elevated heart rate, low HRV
 
 **HRV trend.** A gradual rise often accompanies improving recovery and fitness. A sharp dip the day after a session is useful feedback on load.
 
-**Breathing rate.** For lung and post-COVID rehab especially, a stable night-time breathing rate is reassuring; a rising one alongside symptoms is worth flagging.
+**[Breathing rate](/science/measurements/respiratory-rate).** For lung and post-COVID rehab especially, a stable night-time breathing rate is reassuring; a rising one alongside symptoms is worth flagging.
 
 **Your notes — as a training diary.** What you did each day (walk length, sessions, stairs), how you felt during and after, sleep, and symptoms. Together with the numbers, this lets a physiotherapist see cause and effect.
 
@@ -84,7 +84,7 @@ Stop and seek urgent care for chest pain, fainting, severe breathlessness, a ver
 
 ## Your recovery, on one page
 
-ONDA builds your personal baseline for resting heart rate, HRV and breathing from your Apple Watch history, marks the days you left your usual range, and lets you log activity and symptoms. You can export any period as a PDF, generated on your device and shared only by you, so your rehabilitation team sees the real shape of your recovery.
+ONDA builds your [personal baseline](/science/concepts/hrv-baseline) for resting heart rate, HRV and breathing from your Apple Watch history, marks the days you left your usual range, and lets you log activity and symptoms. You can export any period as a PDF, generated on your device and shared only by you, so your rehabilitation team sees the real shape of your recovery.
 
 *ONDA is a breathing and HRV biofeedback app, not a medical device. This article is general information, not medical advice. Follow the targets set by your clinicians, and seek urgent care for chest pain, fainting or severe breathlessness.*
 `,

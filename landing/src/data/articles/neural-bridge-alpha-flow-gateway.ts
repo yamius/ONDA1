@@ -120,7 +120,7 @@ Yes for creativity — with caveats. For flow, the picture is mixed.
 
 There is no good evidence that alpha waves themselves lower cortisol.
 
-Some older articles claim that alpha "suppresses cortisol", "buffers" the stress system or blocks a "thermal runaway" of stress. We found no study showing that raising alpha causes lower cortisol. What is true is simpler: things that tend to go with more alpha — resting with your eyes closed, slow breathing, meditation, stepping away from constant input — can also help you feel calmer. Both changes may come from the same activity; one does not drive the other.
+Some older articles claim that alpha "suppresses cortisol", "buffers" the stress system or blocks a "thermal runaway" of stress. We found no study showing that raising alpha causes lower cortisol. What is true is simpler: things that tend to go with more alpha — resting with your eyes closed, [slow breathing](/science/evidence/slow-breathing), meditation, stepping away from constant input — can also help you feel calmer. Both changes may come from the same activity; one does not drive the other.
 
 If stress hormones are your concern, the evidence is about sleep, regular routines, exercise and social support, not brain rhythms. See [how to lower cortisol](/articles/how-to-lower-cortisol) for what actually works.
 
@@ -132,7 +132,7 @@ Closing your eyes: **yes, reliably** (Berger 1929; Barry 2007). It is the simple
 
 Meditation: **often, but not always**. A systematic review of 56 EEG studies of mindfulness meditation found that it was most commonly linked with more alpha and theta, but results were not consistent across studies (Lomas 2015).
 
-Slow breathing: **some evidence**. A systematic review of slow breathing (fewer than 10 breaths per minute) included only 15 studies. The EEG studies in it reported more alpha and less theta, alongside the better-established rise in heart rate variability (Zaccaro 2018). The studies were small, and there is no proven pathway by which a set breathing pace "switches" the brain into alpha within minutes. Breathe slowly because it is calming and good for heart rhythm; treat any alpha change as a possible bonus.
+Slow breathing: **some evidence**. A systematic review of slow breathing (fewer than 10 breaths per minute) included only 15 studies. The EEG studies in it reported more alpha and less theta, alongside the better-established rise in [heart rate variability](/science/concepts/heart-rate-variability) (Zaccaro 2018). The studies were small, and there is no proven pathway by which a set breathing pace "switches" the brain into alpha within minutes. Breathe slowly because it is calming and good for heart rhythm; treat any alpha change as a possible bonus.
 
 ---
 
@@ -153,7 +153,7 @@ Without an EEG, you cannot measure alpha waves. No phone camera, smartwatch or r
 What you *can* track are body signals that reflect how settled you are:
 
 - **Heart rate** and how it changes during a calm session.
-- **Breathing rate** — slower, steadier breathing during practice.
+- **[Breathing rate](/science/measurements/respiratory-rate)** — slower, steadier breathing during practice.
 - **Heart rate variability (HRV)** trends over weeks, from a watch.
 
 ONDA does **not** measure EEG or brain waves, and it does not "raise alpha". With the phone camera it shows your pulse and an estimate of your breathing rate; with an Apple Watch it adds HRV and a coherence reading. These tell you how your body responds to a practice — not what your brain rhythms are doing.

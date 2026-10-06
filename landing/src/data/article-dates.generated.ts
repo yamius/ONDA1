@@ -762,7 +762,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:primary-interoception": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-06T12:38:41.000Z"
   },
   "glossary:metabolism": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -874,7 +874,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:hrv-baseline": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-04T19:18:25.000Z"
+    "modified": "2026-10-06T12:38:41.000Z"
   },
   "glossary:central-pattern-generators": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1066,7 +1066,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:biofeedback": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-06T12:38:41.000Z"
   },
   "glossary:p300": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1446,11 +1446,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:biological-signature": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-06T12:38:41.000Z"
   },
   "glossary:micro-drift": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-06T12:38:41.000Z"
   },
   "glossary:telemetry": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-06T13:59:01+02:00"
+    "modified": "2026-10-06T14:24:34+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",

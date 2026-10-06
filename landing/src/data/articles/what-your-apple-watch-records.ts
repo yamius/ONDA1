@@ -34,7 +34,7 @@ const article: Article = {
 
 > "You don't have to do anything for an Apple Watch to build a record of you. While you sleep it samples your pulse, times the gaps between beats, and counts your breaths — night after night. Most people never look. The numbers are already there; the only trick is reading them back as a *range* instead of a single, lonely figure."
 
-**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age ([RMSSD](/science/concepts/rmssd) from Oura, Whoop, Garmin or [SDNN](/science/concepts/sdnn) from Apple Watch).
 
 ---
 
@@ -42,9 +42,9 @@ const article: Article = {
 
 Three signals do most of the work, and all three are collected while you sleep, when nothing you're doing is in the way:
 
-- **Resting heart rate** — how slow your pulse settles when your body has nothing to answer for. One number a night.
+- **[Resting heart rate](/science/measurements/resting-heart-rate)** — how slow your pulse settles when your body has nothing to answer for. One number a night.
 - **Heart-rate variability (HRV)** — the tiny, beat-to-beat differences in timing. It rises when your body is at ease and narrows when it is braced. See [heart-rate variability](/glossary/heart-rate-variability) for the mechanism.
-- **Respiratory rate** — how many breaths you take per minute, asleep, without ever deciding to.
+- **[Respiratory rate](/science/measurements/respiratory-rate)** — how many breaths you take per minute, asleep, without ever deciding to.
 
 None of these needs a workout or a chest strap. They are a by-product of wearing the watch to bed.
 

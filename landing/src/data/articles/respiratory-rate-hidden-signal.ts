@@ -40,7 +40,7 @@ const article: Article = {
 
 At rest, a typical adult breathes somewhere between about **12 and 20 times a minute** — but the population range isn't the point. Your own resting rate is remarkably stable: night after night, it settles into a narrow personal band. That stability is exactly what makes a *departure* meaningful. When your normal is 14 and you're suddenly running 17 overnight, that's not noise — it's a three-breath shift in one of your steadiest signals.
 
-Like resting heart rate and [HRV](/glossary/heart-rate-variability), respiratory rate carries information only relative to your own baseline. There is no universal "good" number — only your corridor and how far tonight has stepped outside it.
+Like [resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/glossary/heart-rate-variability), [respiratory rate](/science/measurements/respiratory-rate) carries information only relative to your own baseline. There is no universal "good" number — only your corridor and how far tonight has stepped outside it.
 
 ---
 
@@ -67,7 +67,7 @@ You will not feel your breathing rate rise by two overnight. That's the whole re
 
 ## Section 4: How ONDA reads it — honestly
 
-Respiratory rate is one of the three signals in ONDA's **personal baseline**, alongside resting heart rate and [HRV](/glossary/heart-rate-variability). ONDA learns your normal band and the spread around it, then treats a sustained departure — held across nights, past a meaningful floor — as a signal worth surfacing, not a single reading to react to. During a live practice it also shows your breathing rate directly, even from the phone camera, so you can watch it settle in real time. It's all [your data against your own normal](/measurements).
+Respiratory rate is one of the three signals in ONDA's **[personal baseline](/science/concepts/hrv-baseline)**, alongside resting heart rate and [HRV](/glossary/heart-rate-variability). ONDA learns your normal band and the spread around it, then treats a sustained departure — held across nights, past a meaningful floor — as a signal worth surfacing, not a single reading to react to. During a live practice it also shows your breathing rate directly, even from the phone camera, so you can watch it settle in real time. It's all [your data against your own normal](/measurements).
 
 The firewall, plainly: an elevated respiratory rate is **descriptive, not diagnostic**. ONDA does not name a condition or predict illness — it tells you your breathing has drifted from your baseline and stayed there. What that means is yours, and your clinician's, to interpret. A resting rate that stays high, or one paired with breathlessness or symptoms that worry you, is a reason to see a doctor, not to open an app.
 

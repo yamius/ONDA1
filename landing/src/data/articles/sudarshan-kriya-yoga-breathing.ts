@@ -34,7 +34,7 @@ Sudarshan Kriya Yoga (SKY) is a structured breathing practice that has been stud
 
 SKY is not a single breath but a structured sequence, taught over several days and then practiced regularly. It integrates several elements in a set order:
 
-- **Ujjayi** ("victorious breath") — very slow breathing with a slight constriction of the throat that adds airway resistance and lengthens each phase of the breath.
+- **Ujjayi** ("victorious breath") — very [slow breathing](/science/evidence/slow-breathing) with a slight constriction of the throat that adds airway resistance and lengthens each phase of the breath.
 - **Bhastrika** — the fast, forceful "bellows breath" that energizes (see [Bhastrika and the brain](/articles/bhastrika-pranayama-brain-anxiety)).
 - **The Sudarshan Kriya itself** — cyclical breathing in slow, medium, and fast rhythms.
 - **Om chanting** and guided attention.
@@ -57,7 +57,7 @@ This record deserves an honest frame. Systematic reviews conclude that while sev
 
 ## Why might Sudarshan Kriya work?
 
-Several mechanisms are proposed. The slow Ujjayi component shifts the body toward parasympathetic dominance, amplifying the normal breath-linked rise and fall of heart rate (respiratory sinus arrhythmia) — the same lever as [coherent breathing](/articles/coherent-breathing-guide). The rhythmic, high-ventilation cycling adds a strong activating contrast. And the reported drop in cortisol points to a genuine shift in stress chemistry, not just a feeling of relaxation (see [how to lower cortisol](/articles/how-to-lower-cortisol)).
+Several mechanisms are proposed. The slow Ujjayi component shifts the body toward parasympathetic dominance, amplifying the normal breath-linked rise and fall of heart rate ([respiratory sinus arrhythmia](/science/concepts/respiratory-sinus-arrhythmia)) — the same lever as [coherent breathing](/articles/coherent-breathing-guide). The rhythmic, high-ventilation cycling adds a strong activating contrast. And the reported drop in cortisol points to a genuine shift in stress chemistry, not just a feeling of relaxation (see [how to lower cortisol](/articles/how-to-lower-cortisol)).
 
 ## How do you learn Sudarshan Kriya?
 
@@ -65,7 +65,7 @@ SKY is unusual among the techniques on this site in that it's **taught, not self
 
 ## See your body respond
 
-The slow-breathing core of SKY is measurable. ONDA reads your pulse from your phone camera or Apple Watch, and your HRV from Apple Watch, so you can watch how slow Ujjayi-style breathing settles your heart and track whether your baseline shifts with regular practice.
+The slow-breathing core of SKY is measurable. ONDA reads your pulse from your phone camera or Apple Watch, and your [HRV](/science/concepts/heart-rate-variability) from Apple Watch, so you can watch how slow Ujjayi-style breathing settles your heart and track whether [your baseline](/science/concepts/hrv-baseline) shifts with regular practice.
 
 *Sources include Janakiramaiah et al., 2000 (Journal of Affective Disorders) and Seppälä et al., 2014 (Journal of Traumatic Stress). ONDA is a breathing and HRV biofeedback app, not a medical device. SKY is not a replacement for professional treatment of depression or PTSD.*
 `,

@@ -1,4 +1,5 @@
 {
+  "science": "この背景にある科学 → [RMSSD：このHRV指標が反映するもの、しないもの](/science/concepts/rmssd) · [SDNN：このHRV指標が測るもの、測らないもの](/science/concepts/sdnn) · [HRVの個人のベースライン：どんな基準値よりも、あなた自身の「いつも」が大切な理由](/science/concepts/hrv-baseline) · [HRVの一つの値からわかること、わからないこと](/science/concepts/interpreting-hrv)",
   "meta": {
     "title": "年齢別 HRV 計算ツール — 平均値と比較 | ONDA Life",
     "description": "年齢とHRV（Oura・Whoop・GarminのRMSSD、Apple WatchのSDNN）を入力するだけで、年齢別の平均値と比べたパーセンタイルがわかる無料ツール。",

@@ -34,7 +34,7 @@ const article: Article = {
 
 > "You wake up, you feel fine, you get on with the day. But your body has been keeping notes you never read — and sometimes those notes changed days ago.
 
-**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age ([RMSSD](/science/concepts/rmssd) from Oura, Whoop, Garmin or [SDNN](/science/concepts/sdnn) from Apple Watch).
 
 > The strange, well-documented truth of continuous physiology is this: your resting rhythm often drifts *before* you consciously feel anything. Not because a device is psychic. Because your autonomic nervous system reacts to load — a hard week, a short night, a coming cold — earlier and more honestly than your self-report does."
 
@@ -44,7 +44,7 @@ const article: Article = {
 
 Here is the single most misunderstood idea in wearable health: **a value on its own means almost nothing. The deviation from *your* normal means almost everything.**
 
-A resting heart rate of 72 is unremarkable — unless yours normally sits at 58. Then 72 is a fourteen-beat shout. The same logic runs through [heart-rate variability](/glossary/heart-rate-variability) and breathing rate: there is no universal "good" number, only your own corridor and how far today has stepped outside it.
+A [resting heart rate](/science/measurements/resting-heart-rate) of 72 is unremarkable — unless yours normally sits at 58. Then 72 is a fourteen-beat shout. The same logic runs through [heart-rate variability](/glossary/heart-rate-variability) and [breathing rate](/science/measurements/respiratory-rate): there is no universal "good" number, only your own corridor and how far today has stepped outside it.
 
 Every serious study of pre-symptomatic physiology lands on the same sentence. It is not the reading that carries the information; it is the departure from the personal baseline. Which is exactly why a device that only shows you today's number — with no memory of your normal — is showing you noise.
 

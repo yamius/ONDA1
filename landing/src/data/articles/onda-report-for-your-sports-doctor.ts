@@ -25,7 +25,7 @@ const article: Article = {
     linkText: "How to talk to your doctor →",
   },
   content: `
-For anyone who trains, resting heart rate and HRV are some of the most practical numbers a watch collects — because they show how your body is *absorbing* the training, not just how hard you trained. A sports medicine doctor can read those trends in context: telling normal hard-training fatigue apart from overreaching, looking for hidden causes when recovery stalls, and guiding a safe return after illness or injury. What they bring that your watch can't is the examination, the tests and the judgment about when a pattern is a training problem — and when it's a medical one.
+For anyone who trains, [resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/science/concepts/heart-rate-variability) are some of the most practical numbers a watch collects — because they show how your body is *absorbing* the training, not just how hard you trained. A sports medicine doctor can read those trends in context: telling normal hard-training fatigue apart from overreaching, looking for hidden causes when recovery stalls, and guiding a safe return after illness or injury. What they bring that your watch can't is the examination, the tests and the judgment about when a pattern is a training problem — and when it's a medical one.
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
@@ -46,7 +46,7 @@ Your data helps them answer the first two faster, and flags when the last two ma
 
 **HRV trend.** Many athletes use morning or overnight HRV as a recovery signal. A sustained drop below your usual range, especially together with rising resting heart rate and tiredness, fits a picture of insufficient recovery. A sports doctor will look at the **trend over days and weeks**, not single readings, which fluctuate with sleep, alcohol and stress.
 
-**Breathing rate at rest.** A resting breathing rate above your normal, together with other changes, can be one more hint that the body isn't recovering — or that an illness is developing.
+**[Breathing rate](/science/measurements/respiratory-rate) at rest.** A resting breathing rate above your normal, together with other changes, can be one more hint that the body isn't recovering — or that an illness is developing.
 
 **Signals and notes.** Dates when measures left your range, alongside your notes on training blocks, races, travel, illness and sleep, let a sports doctor line up the numbers with what you actually did.
 
@@ -56,7 +56,7 @@ Your data helps them answer the first two faster, and flags when the last two ma
 
 **Look for hidden causes of poor recovery.** When recovery stalls despite sensible training, a sports doctor may consider medical causes — for example iron deficiency, thyroid problems, or low energy availability (not eating enough for the training you do, sometimes called RED-S). These need examination and tests, not more data.
 
-**Guide a return after illness.** After a viral illness, resting heart rate is often elevated for a while. A trend returning to your normal range is one reassuring sign when planning a gradual comeback — together with feeling well and the doctor's own assessment. Returning too early is a common way to prolong illness.
+**Guide a return after illness.** After a viral illness, resting heart rate is often elevated for a while. A trend returning to [your normal range](/science/concepts/hrv-baseline) is one reassuring sign when planning a gradual comeback — together with feeling well and the doctor's own assessment. Returning too early is a common way to prolong illness.
 
 **Shape the training plan.** Some athletes adjust daily intensity using HRV trends; research on HRV-guided training suggests it can be a useful way to individualize load. A sports doctor or coach can help decide whether that suits you.
 

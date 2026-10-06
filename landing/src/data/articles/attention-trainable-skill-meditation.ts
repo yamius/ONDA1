@@ -63,7 +63,7 @@ This means anyone can improve, regardless of starting point. A scattered beginne
 
 ## Track the calm that comes with focus
 
-Trained attention and a calmer nervous system develop together. While gamma and cortical thickness need a lab, the autonomic calm of a more focused, less reactive mind is [measurable at home](/articles/measuring-meditation-progress). ONDA reads your resting heart rate and HRV from your Apple Watch (or your pulse from your phone camera), so you can track how consistent practice settles your system over weeks — an accessible reflection of the attention training the brain research documents.
+Trained attention and a calmer nervous system develop together. While gamma and cortical thickness need a lab, the autonomic calm of a more focused, less reactive mind is [measurable at home](/articles/measuring-meditation-progress). ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/science/concepts/heart-rate-variability) from your Apple Watch (or your pulse from your phone camera), so you can track how consistent practice settles your system over weeks — an accessible reflection of the attention training the brain research documents.
 `,
   howToSteps: [
     {

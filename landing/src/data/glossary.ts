@@ -287,6 +287,8 @@ Practices include:
 - Gut-feeling awareness scans
 - Temperature gradient sensing
 
+Read more, with the evidence → [Interoception on ONDA Science](/science/concepts/interoception)
+
 ---
 
 ## References
@@ -1028,7 +1030,7 @@ An **HRV baseline** is your personal normal range for [heart rate variability](/
 
 In the ONDA app the baseline is built over 14 days and needs at least 7 valid nights before any signal is read. Each night is compared with your own corridor — the average of your recent nights plus or minus one standard deviation — and flagged only when it is at least 1.5 standard deviations outside and has changed by a minimum amount. A single flagged night is a prompt to notice, not a diagnosis.
 
-**Read the science →** an ONDA Science page on personal baselines is in preparation; meanwhile see [RMSSD on ONDA Science](/science/concepts/rmssd), the [baseline tool](/tools/baseline) and [your baseline knows first](/articles/your-baseline-knows-first).`,
+**Read the science →** [Your HRV baseline: what it is and how to read it](/science/concepts/hrv-baseline), with sources. See also [RMSSD on ONDA Science](/science/concepts/rmssd), the [baseline tool](/tools/baseline) and [your baseline knows first](/articles/your-baseline-knows-first).`,
     relatedSlugs: ['heart-rate-variability', 'rmssd', 'sdnn'],
   },
   {
@@ -2497,7 +2499,9 @@ Part 7 "Sensorimotor Integration" develops deep processing of contours, shapes, 
 
 ## In ONDA Life
 
-Biofeedback principles underlie many ONDA practices. Connecting a fitness tracker or smartwatch provides real-time vitals during practice. Part 7 biomarkers (P300, saccadic stability, theta/alpha states) can be measured and trained through biofeedback approaches.`,
+Biofeedback principles underlie many ONDA practices. Connecting a fitness tracker or smartwatch provides real-time vitals during practice. Part 7 biomarkers (P300, saccadic stability, theta/alpha states) can be measured and trained through biofeedback approaches.
+
+Read more, with the evidence → [HRV biofeedback: what the research shows](/science/evidence/hrv-biofeedback)`,
   },
   {
     slug: 'p300',
@@ -5387,6 +5391,8 @@ A biological signature is measured by collecting several related signals and loo
 ## In ONDA Life
 
 The AI Biomarker Tracking article covers establishing a Biological Signature for predictive sync.
+
+What the evidence says → [your personal HRV baseline](/science/concepts/hrv-baseline)
 `,
     relatedSlugs: ['predictive-modeling', 'micro-drift', 'heart-rate-variability'],
   },
@@ -5409,6 +5415,8 @@ The AI Biomarker Tracking article covers establishing a Biological Signature for
 ## In ONDA Life
 
 The AI Biomarker Tracking article covers protocols for detecting micro-drift and predictive anomaly detection.
+
+Read more, with the evidence → [why HRV changes from day to day](/science/mechanisms/hrv-day-to-day)
 `,
     relatedSlugs: ['predictive-modeling', 'biological-signature', 'heart-rate-variability'],
   },

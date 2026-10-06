@@ -37,7 +37,7 @@ const article: Article = {
 
 ## Section 1: What "training your nervous system" actually means
 
-Your autonomic nervous system runs two branches: the [sympathetic](/glossary/sympathetic-nervous-system) "go" branch and the [parasympathetic](/glossary/parasympathetic-nervous-system) "settle" branch, carried mostly by the [vagus nerve](/articles/vagus-nerve-exercises). A well-regulated system spikes into "go" when it needs to and returns cleanly to "settle" when the pressure's off. A poorly-regulated one gets stuck in "go" — wired, reactive, slow to come down.
+Your [autonomic nervous system](/science/concepts/autonomic-nervous-system) runs two branches: the [sympathetic](/glossary/sympathetic-nervous-system) "go" branch and the [parasympathetic](/glossary/parasympathetic-nervous-system) "settle" branch, carried mostly by the [vagus nerve](/articles/vagus-nerve-exercises). A well-regulated system spikes into "go" when it needs to and returns cleanly to "settle" when the pressure's off. A poorly-regulated one gets stuck in "go" — wired, reactive, slow to come down.
 
 Training it means two concrete things: **strengthening the parasympathetic brake** so you can down-regulate on demand, and **speeding the return** so you bounce back faster after stress. Vagal tone cannot be measured directly; the readable signal of vagally mediated changes is [heart-rate variability](/articles/hrv-questions-answered) — which is why HRV is the scoreboard for this kind of training.
 

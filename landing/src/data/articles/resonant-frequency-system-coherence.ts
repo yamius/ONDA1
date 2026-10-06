@@ -64,19 +64,19 @@ Once identified, this frequency becomes your personal calibration protocol. It d
 
 ## The Protocol: Tuning the Instrument
 
-Three mechanisms activated by resonant frequency breathing:
+Three mechanisms activated by [resonant frequency](/science/mechanisms/breathing-and-hrv) breathing:
 
 ### Mechanism 1: The 0.1 Hz Shift
 
 > **Action:** Breathe at your identified resonant frequency for a minimum of 5 minutes. Use 5.5 seconds in, 5.5 seconds out (about 5.5 breaths per minute) as a starting point if your frequency has not been scanned yet.
 
-**Logic:** Most people resonate near 0.1 Hz. Breathing at this frequency engages the baroreflex — your body's built-in blood-pressure regulator. At resonance, the breath-driven rise and fall of heart rate (respiratory sinus arrhythmia) and the baroreflex response fall into step, producing a high-amplitude oscillation that pushes [HRV](/glossary/heart-rate-variability) toward its personal peak. Baroreceptor signals reach the [brainstem](/glossary/brainstem) with every beat; whether resonance breathing also shifts [prefrontal](/glossary/prefrontal-cortex) activity or [amygdala](/glossary/amygdala) reactivity is a hypothesis, supported so far only by small correlational studies.
+**Logic:** Most people resonate near 0.1 Hz. Breathing at this frequency engages the baroreflex — your body's built-in blood-pressure regulator. At resonance, the breath-driven rise and fall of heart rate ([respiratory sinus arrhythmia](/science/concepts/respiratory-sinus-arrhythmia)) and the baroreflex response fall into step, producing a high-amplitude oscillation that pushes [HRV](/glossary/heart-rate-variability) toward its personal peak. Baroreceptor signals reach the [brainstem](/glossary/brainstem) with every beat; whether resonance breathing also shifts [prefrontal](/glossary/prefrontal-cortex) activity or [amygdala](/glossary/amygdala) reactivity is a hypothesis, supported so far only by small correlational studies.
 
 ### Mechanism 2: Vagal Capture
 
 > **Action:** Maintain the resonant breathing rhythm for 10+ consecutive minutes without interruption. Avoid speaking, checking devices, or breaking the rhythm.
 
-**Logic:** At resonance, the breathing rhythm engages vagally mediated control of the heart. In ONDA's language, the [Vagus Nerve](/glossary/vagus-nerve) is the channel that carries a "safety" signal toward the heart, gut, lungs, and other systems: the environment is calm, recovery can be prioritised — an image, not a measurement. Studies of slow resonant breathing typically show vagally mediated HRV rising within a few minutes, though the exact timing varies from person to person. Vagal tone cannot be measured directly; HRV measures such as RMSSD reflect vagally mediated changes in heart rate.
+**Logic:** At resonance, the breathing rhythm engages vagally mediated control of the heart. In ONDA's language, the [Vagus Nerve](/glossary/vagus-nerve) is the channel that carries a "safety" signal toward the heart, gut, lungs, and other systems: the environment is calm, recovery can be prioritised — an image, not a measurement. Studies of slow resonant breathing typically show vagally mediated HRV rising within a few minutes, though the exact timing varies from person to person. Vagal tone cannot be measured directly; HRV measures such as [RMSSD](/science/concepts/rmssd) reflect vagally mediated changes in heart rate.
 
 ### Mechanism 3: Instant Reset
 

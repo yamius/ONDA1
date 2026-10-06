@@ -134,6 +134,10 @@
       {
         "label": "Tętno spoczynkowe według wieku",
         "href": "/tools/resting-heart-rate"
+      },
+      {
+        "label": "Linia bazowa HRV: dlaczego twoja własna norma znaczy więcej niż jakakolwiek tabela",
+        "href": "/science/concepts/hrv-baseline"
       }
     ]
   },

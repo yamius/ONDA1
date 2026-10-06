@@ -123,7 +123,7 @@ The thyroid gland determines the speed of neural transmission. An optimal TSH ra
 
 ## [ HARDWARE_VALIDATION ]
 
-METRIC: Free T3 / Free T4 (upper quartile) + Stable Resting Heart Rate.
+METRIC: Free T3 / Free T4 (upper quartile) + Stable [Resting Heart Rate](/science/measurements/resting-heart-rate).
 \`STATUS: Metabolic Voltage Calibrated. TSH in Optimal Range.\`
 
 ---

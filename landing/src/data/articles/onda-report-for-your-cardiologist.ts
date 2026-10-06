@@ -25,7 +25,7 @@ const article: Article = {
     linkText: "How to talk to your doctor →",
   },
   content: `
-A cardiologist is the specialist most at home with heart-rate data — but they read it differently from you, and differently from your GP. What interests them is **the pattern**: how your resting heart rate behaves over weeks, whether changes line up with symptoms like palpitations, breathlessness or dizziness, and how your body responds to treatment. Your watch data can't show the heart's electrical rhythm the way an ECG does, so it won't replace their tests. What it can do is give them a long, dated history they would otherwise never see — and help them decide which test will actually capture what's going on.
+A cardiologist is the specialist most at home with heart-rate data — but they read it differently from you, and differently from your GP. What interests them is **the pattern**: how your [resting heart rate](/science/measurements/resting-heart-rate) behaves over weeks, whether changes line up with symptoms like palpitations, breathlessness or dizziness, and how your body responds to treatment. Your watch data can't show the heart's electrical rhythm the way an ECG does, so it won't replace their tests. What it can do is give them a long, dated history they would otherwise never see — and help them decide which test will actually capture what's going on.
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
@@ -37,9 +37,9 @@ That changes what's useful. Your report is most valuable to a cardiologist as a 
 
 ## How a cardiologist can read each part of your report
 
-**Resting heart rate baseline and trend.** Resting heart rate is a well-understood measure in cardiology. A cardiologist will note your normal range and any sustained shift: a gradual rise over weeks, an abrupt change, or a new pattern after starting medication. Because it's built from many nights rather than one clinic reading, it avoids the "white coat" effect of a single measurement taken while you're anxious in the office.
+**Resting heart rate baseline and trend.** Resting heart rate is a well-understood measure in cardiology. A cardiologist will note [your normal range](/science/concepts/hrv-baseline) and any sustained shift: a gradual rise over weeks, an abrupt change, or a new pattern after starting medication. Because it's built from many nights rather than one clinic reading, it avoids the "white coat" effect of a single measurement taken while you're anxious in the office.
 
-**HRV trend.** In research, heart rate variability is linked to how well the autonomic nervous system regulates the heart, and reduced HRV is associated with poorer cardiovascular outcomes in some populations. In the clinic, though, consumer-watch HRV isn't used to diagnose anything. A cardiologist may treat it as supporting context — for example, a sustained drop alongside other changes — rather than a finding in itself.
+**[HRV](/science/concepts/heart-rate-variability) trend.** In research, heart rate variability is linked to how well the [autonomic nervous system](/science/concepts/autonomic-nervous-system) regulates the heart, and reduced HRV is associated with poorer cardiovascular outcomes in some populations. In the clinic, though, consumer-watch HRV isn't used to diagnose anything. A cardiologist may treat it as supporting context — for example, a sustained drop alongside other changes — rather than a finding in itself.
 
 **Breathing rate at rest.** A resting respiratory rate that stays higher than your normal can be relevant context, particularly alongside breathlessness or fatigue. On its own it points to a question, not an answer.
 

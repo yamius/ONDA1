@@ -31,7 +31,7 @@ const article: Article = {
 
 > "Your watch says your HRV is low this morning. Your stomach drops a little. Is something wrong? Should you cancel the workout? Panic?
 
-**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age ([RMSSD](/science/concepts/rmssd) from Oura, Whoop, Garmin or [SDNN](/science/concepts/sdnn) from Apple Watch).
 
 > Slow down. A single low [HRV](/glossary/heart-rate-variability) reading is one of the most over-interpreted numbers in consumer health. Most of the time it means very little — and when it does mean something, the right response is boring, physiological, and entirely in your hands."
 
@@ -41,13 +41,13 @@ const article: Article = {
 
 HRV is *gloriously* noisy. It swings with when you measured, your posture, last night's alcohol, a late meal, a stressful thought, even talking. A low reading on any given morning is, more often than not, just that day's noise — not a trend and not a diagnosis.
 
-The rule that matters: **a single value is nearly meaningless; the trend against your own baseline is the signal.** One low morning inside your normal range is nothing. Several low mornings in a row, drifting below your personal corridor, is worth attention — see [your baseline knows first](/articles/your-baseline-knows-first) and [how to measure HRV so it means something](/articles/how-to-measure-hrv-consistently). And don't compare across devices — [each one reads differently](/articles/hrv-different-every-device).
+The rule that matters: **a single value is nearly meaningless; the trend against your own baseline is the signal.** One low morning inside [your normal range](/science/concepts/hrv-baseline) is nothing. Several low mornings in a row, drifting below your personal corridor, is worth attention — see [your baseline knows first](/articles/your-baseline-knows-first) and [how to measure HRV so it means something](/articles/how-to-measure-hrv-consistently). And don't compare across devices — [each one reads differently](/articles/hrv-different-every-device).
 
 ---
 
 ## Section 2: What does a consistently low HRV mean?
 
-When your HRV really is depressed for a few days, it's your autonomic nervous system reporting **load** — not disease. The usual, honest suspects:
+When your HRV really is depressed for a few days, it's your [autonomic nervous system](/science/concepts/autonomic-nervous-system) reporting **load** — not disease. The usual, honest suspects:
 
 - **Poor or short sleep**, or an irregular bedtime.
 - **Alcohol** the night before — a reliable overnight suppressor.

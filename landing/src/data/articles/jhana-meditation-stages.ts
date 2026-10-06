@@ -63,7 +63,7 @@ For the rest of us, the accessible version of "measurable progress" isn't fMRI �
 
 ## Track your own progress
 
-While jhana research needs a 7 Tesla scanner, your everyday meditative progress is measurable at home. ONDA reads your resting heart rate and HRV from your Apple Watch (or your pulse from your phone camera), showing how your practice shifts your nervous system and how your baseline develops over weeks. It's the accessible end of the same principle the jhana neuroscience proves at the extreme: meditation is trackable, staged progress — not a leap of faith.
+While jhana research needs a 7 Tesla scanner, your everyday meditative progress is measurable at home. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/science/concepts/heart-rate-variability) from your Apple Watch (or your pulse from your phone camera), showing how your practice shifts your nervous system and how [your baseline](/science/concepts/hrv-baseline) develops over weeks. It's the accessible end of the same principle the jhana neuroscience proves at the extreme: meditation is trackable, staged progress — not a leap of faith.
 `,
 }
 

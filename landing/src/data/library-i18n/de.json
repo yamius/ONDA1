@@ -25,7 +25,8 @@
     "relatedTopics": "Verwandte Themen",
     "allTopics": "Alle Themen",
     "hubTitleSuffix": "ONDA Bibliothek",
-    "hubMetaTitle": "{topic} — Ratgeber & Forschung | ONDA Library"
+    "hubMetaTitle": "{topic} — Ratgeber & Forschung | ONDA Library",
+    "scienceHeading": "Die Wissenschaft hinter diesem Thema"
   },
   "countries": {
     "Japan": "Japan",
@@ -95,5 +96,153 @@
       "intro": "Ein Großteil der spannendsten Forschung zu Atmung, Schlaf und Nervensystem entstand außerhalb der englischsprachigen Welt. Diese Sammlung bringt sie zusammen: japanische Studien zum Waldbaden und zu Zen, indische Pranayama-Studien, deutsche Chronobiologie, niederländische Forschung zur Wim-Hof-Methode und Frankreichs Tradition der kardialen Kohärenz.",
       "imageAlt": "Wissenschaft aus aller Welt – Illustration: ein dunkler Globus mit leuchtenden Punkten auf Japan, Indien, Deutschland, den Niederlanden und Frankreich, verbunden durch feine Lichtbögen."
     }
+  },
+  "science": {
+    "meditation": [
+      {
+        "href": "/science/evidence/meditation-autonomic-nervous-system",
+        "label": "Meditation und das autonome Nervensystem: Was die Evidenz zeigt"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "Interozeption: Wie das Gehirn den Körper wahrnimmt"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "Das autonome Nervensystem: Sympathikus und Parasympathikus"
+      },
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "Herz-Hirn-Interaktion: Wie Herz und Gehirn miteinander kommunizieren"
+      }
+    ],
+    "breathing": [
+      {
+        "href": "/science/mechanisms/breathing-and-hrv",
+        "label": "Wie die Atmung die HRV verändert – und warum langsames Atmen sie erhöht"
+      },
+      {
+        "href": "/science/evidence/slow-breathing",
+        "label": "Langsames Atmen: Was die Evidenz zeigt"
+      },
+      {
+        "href": "/science/concepts/respiratory-sinus-arrhythmia",
+        "label": "Respiratorische Sinusarrhythmie: Wie die Atmung den Herzrhythmus prägt"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "Atemfrequenz in Ruhe: Was sie widerspiegelt und wie sie gemessen wird"
+      }
+    ],
+    "hrv-heart-rate": [
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Herzfrequenzvariabilität: was sie ist, was sie widerspiegelt und was nicht"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Was ein einzelner HRV-Wert verrät – und was nicht"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "HRV-Baseline: Warum dein eigenes Normal mehr zählt als jede Norm"
+      },
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "Kann man der HRV von Smartwatch oder Ring trauen?"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Ruhepuls: Was er widerspiegelt und wie er gemessen wird"
+      }
+    ],
+    "stress-vagus": [
+      {
+        "href": "/science/concepts/vagus-nerve",
+        "label": "Der Vagusnerv: was er tut und was Mythos ist"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "Das autonome Nervensystem: Sympathikus und Parasympathikus"
+      },
+      {
+        "href": "/science/evidence/vagus-nerve-stimulation",
+        "label": "Wirkt Vagusnervstimulation wirklich? Was die Evidenz zeigt"
+      },
+      {
+        "href": "/science/evidence/hrv-biofeedback",
+        "label": "HRV-Biofeedback: Was die Evidenz zeigt"
+      }
+    ],
+    "sleep-body-clock": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Warum sich die HRV von Tag zu Tag verändert"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Ruhepuls: Was er widerspiegelt und wie er gemessen wird"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "Atemfrequenz in Ruhe: Was sie widerspiegelt und wie sie gemessen wird"
+      }
+    ],
+    "lifestyle": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Warum sich die HRV von Tag zu Tag verändert"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "HRV-Baseline: Warum dein eigenes Normal mehr zählt als jede Norm"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Was ein einzelner HRV-Wert verrät – und was nicht"
+      }
+    ],
+    "heart-fitness-metabolism": [
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Ruhepuls: Was er widerspiegelt und wie er gemessen wird"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Herzfrequenzvariabilität: was sie ist, was sie widerspiegelt und was nicht"
+      },
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Warum sich die HRV von Tag zu Tag verändert"
+      }
+    ],
+    "brain-focus-aging": [
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "Herz-Hirn-Interaktion: Wie Herz und Gehirn miteinander kommunizieren"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "Interozeption: Wie das Gehirn den Körper wahrnimmt"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Herzfrequenzvariabilität: was sie ist, was sie widerspiegelt und was nicht"
+      }
+    ],
+    "doctors-your-data": [
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "Kann man der HRV von Smartwatch oder Ring trauen?"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Was ein einzelner HRV-Wert verrät – und was nicht"
+      },
+      {
+        "href": "/science/measurements/onda-method",
+        "label": "Wie ONDA die Signale deines Körpers misst und deutet"
+      }
+    ]
   }
 }

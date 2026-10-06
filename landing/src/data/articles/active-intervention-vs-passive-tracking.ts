@@ -41,7 +41,7 @@ const article: Article = {
 
 Passive tracking tells you how you recovered, while active intervention changes your physiological state in the moment — both are called "wearables," but they answer opposite questions:
 
-- **Passive tracking** — a ring, band or watch records [HRV](/glossary/heart-rate-variability), resting heart rate and sleep, usually overnight, and shows you trends. It tells you **how you recovered**. It is diagnostic: a mirror, not a lever.
+- **Passive tracking** — a ring, band or watch records [HRV](/glossary/heart-rate-variability), [resting heart rate](/science/measurements/resting-heart-rate) and sleep, usually overnight, and shows you trends. It tells you **how you recovered**. It is diagnostic: a mirror, not a lever.
 - **Active intervention** — a device or app that changes your physiological state in the moment: paced-breathing [HRV biofeedback](/hrv-biofeedback), vagus-nerve stimulation, light or acoustic entrainment. It gives you **something to do** about the state the tracker just described.
 
 Tracking is the thermometer. Intervention is the thermostat. Most people have bought a lot of thermometers.

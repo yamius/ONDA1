@@ -52,6 +52,8 @@ The evidence that meditation produces real, physical change is now substantial �
 
 **Protecting the aging brain.** Long-term meditators show better-preserved gray matter, and even 8 weeks of training has reorganized older adults' brain networks in a more efficient direction. Promising, not yet conclusive — and the stress-reduction pathway alone supports brain health as you age. → **[Does Meditation Slow Brain Aging?](/articles/meditation-brain-aging-protection)**
 
+**The science behind this topic:** what controlled studies show about [meditation and the autonomic nervous system](/science/evidence/meditation-autonomic-nervous-system) (HRV, blood pressure, cortisol), how the brain [senses the body through interoception](/science/concepts/interoception), and how the [heart and brain talk to each other](/science/mechanisms/heart-brain-interaction).
+
 ## Meditation has measurable stages — proven at the extreme
 
 If you want the clearest proof that meditation is staged, trackable progress, look at the **jhanas** — eight consecutive stages of deep meditative absorption, each a distinct state of consciousness. Harvard neuroscientists have used ultra-high-field 7 Tesla fMRI to map them, and found that deeper jhana stages produce measurably different brain activity — the neural change scaling with the depth of absorption. Here is meditation not as vague "getting better," but as an explicit ladder of states, each rung now visible on a brain scan. → **[The Jhanas: Meditation's Measurable Stages of Deep Absorption](/articles/jhana-meditation-stages)**
@@ -101,7 +103,7 @@ Meditation is safe and beneficial for most people — but not for everyone, and 
 
 ## See your meditation actually working
 
-This is what ONDA is built for. It reads your resting heart rate, HRV and breathing from your Apple Watch (or your pulse from your phone camera), establishes your personal baseline, and shows how your practice moves your numbers — in the moment and over weeks. Instead of meditating in the dark and hoping, you get the scoreboard meditation has always lacked: visible, objective progress reflecting your nervous system genuinely adapting. It's meditation you can see working — which is meditation you're far more likely to keep doing.
+This is what ONDA is built for. It reads your resting heart rate, HRV and breathing from your Apple Watch (or your pulse from your phone camera), establishes your [personal baseline](/science/concepts/hrv-baseline), and shows how your practice moves your numbers — in the moment and over weeks. Instead of meditating in the dark and hoping, you get the scoreboard meditation has always lacked: visible, objective progress reflecting your nervous system genuinely adapting. It's meditation you can see working — which is meditation you're far more likely to keep doing.
 
 *This guide summarizes research on meditation and is not medical advice; for a health condition, consult a qualified professional.*
 `,

@@ -25,7 +25,8 @@
     "relatedTopics": "Gerelateerde onderwerpen",
     "allTopics": "Alle onderwerpen",
     "hubTitleSuffix": "ONDA-bibliotheek",
-    "hubMetaTitle": "{topic} — Gidsen & onderzoek | ONDA Library"
+    "hubMetaTitle": "{topic} — Gidsen & onderzoek | ONDA Library",
+    "scienceHeading": "De wetenschap achter dit onderwerp"
   },
   "countries": {
     "Japan": "Japan",
@@ -95,5 +96,153 @@
       "intro": "Veel van het interessantste onderzoek naar ademhaling, slaap en het zenuwstelsel is gedaan buiten de Engelstalige wereld. Deze verzameling brengt het samen: Japanse studies naar bosbaden en zen, Indiase pranayama-trials, Duitse chronobiologie, Nederlands onderzoek naar de Wim Hof-methode en de Franse traditie van hartcoherentie.",
       "imageAlt": "Wetenschap van over de hele wereld — illustratie: een donkere wereldbol met gloeiende punten op Japan, India, Duitsland, Nederland en Frankrijk, verbonden door dunne lichtbogen."
     }
+  },
+  "science": {
+    "meditation": [
+      {
+        "href": "/science/evidence/meditation-autonomic-nervous-system",
+        "label": "Meditatie en het autonome zenuwstelsel: wat het bewijs laat zien"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "Interoceptie: hoe de hersenen het lichaam waarnemen"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "Het autonome zenuwstelsel: sympathicus en parasympathicus"
+      },
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "Interactie tussen hart en hersenen: hoe hart en brein met elkaar praten"
+      }
+    ],
+    "breathing": [
+      {
+        "href": "/science/mechanisms/breathing-and-hrv",
+        "label": "Hoe ademhaling HRV verandert — en waarom langzaam ademen die verhoogt"
+      },
+      {
+        "href": "/science/evidence/slow-breathing",
+        "label": "Langzaam ademen: wat het bewijs laat zien"
+      },
+      {
+        "href": "/science/concepts/respiratory-sinus-arrhythmia",
+        "label": "Respiratoire sinusaritmie: hoe je ademhaling je hartritme vormt"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "Ademfrequentie in rust: wat ze weerspiegelt en hoe je haar meet"
+      }
+    ],
+    "hrv-heart-rate": [
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Hartslagvariabiliteit: wat het is, wat het weerspiegelt en wat het niet is"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Wat één HRV-waarde je wel en niet kan vertellen"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "HRV-baseline: waarom je eigen normaal meer zegt dan welke norm ook"
+      },
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "Kun je HRV van een smartwatch of ring vertrouwen?"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Rusthartslag: wat hij weerspiegelt en hoe je hem meet"
+      }
+    ],
+    "stress-vagus": [
+      {
+        "href": "/science/concepts/vagus-nerve",
+        "label": "De nervus vagus: wat hij doet en wat een mythe is"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "Het autonome zenuwstelsel: sympathicus en parasympathicus"
+      },
+      {
+        "href": "/science/evidence/vagus-nerve-stimulation",
+        "label": "Werkt nervus-vagusstimulatie echt? Wat het bewijs laat zien"
+      },
+      {
+        "href": "/science/evidence/hrv-biofeedback",
+        "label": "HRV-biofeedback: wat het bewijs laat zien"
+      }
+    ],
+    "sleep-body-clock": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Waarom HRV van dag tot dag verandert"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Rusthartslag: wat hij weerspiegelt en hoe je hem meet"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "Ademfrequentie in rust: wat ze weerspiegelt en hoe je haar meet"
+      }
+    ],
+    "lifestyle": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Waarom HRV van dag tot dag verandert"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "HRV-baseline: waarom je eigen normaal meer zegt dan welke norm ook"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Wat één HRV-waarde je wel en niet kan vertellen"
+      }
+    ],
+    "heart-fitness-metabolism": [
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Rusthartslag: wat hij weerspiegelt en hoe je hem meet"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Hartslagvariabiliteit: wat het is, wat het weerspiegelt en wat het niet is"
+      },
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Waarom HRV van dag tot dag verandert"
+      }
+    ],
+    "brain-focus-aging": [
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "Interactie tussen hart en hersenen: hoe hart en brein met elkaar praten"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "Interoceptie: hoe de hersenen het lichaam waarnemen"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Hartslagvariabiliteit: wat het is, wat het weerspiegelt en wat het niet is"
+      }
+    ],
+    "doctors-your-data": [
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "Kun je HRV van een smartwatch of ring vertrouwen?"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Wat één HRV-waarde je wel en niet kan vertellen"
+      },
+      {
+        "href": "/science/measurements/onda-method",
+        "label": "Hoe ONDA de signalen van je lichaam meet en interpreteert"
+      }
+    ]
   }
 }

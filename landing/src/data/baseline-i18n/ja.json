@@ -134,6 +134,10 @@
       {
         "label": "年齢別の安静時心拍数",
         "href": "/tools/resting-heart-rate"
+      },
+      {
+        "label": "HRVの個人のベースライン：どんな基準値よりも、あなた自身の「いつも」が大切な理由",
+        "href": "/science/concepts/hrv-baseline"
       }
     ]
   },

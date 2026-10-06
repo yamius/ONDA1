@@ -26,7 +26,7 @@ const article: Article = {
     linkText: 'What ONDA measures →',
   },
   content: `
-The hardest part of meditation isn't doing it — it's believing it's working. Progress feels invisible, so most people quit before the benefits arrive. But meditation progress *is* measurable, through your body's own signals: heart rate variability (HRV), resting heart rate, and how quickly and deeply your nervous system settles during and after practice. As you train, your HRV tends to rise, your resting heart rate settles, and you shift into a calm state faster — objective signs that your nervous system is adapting. Instead of guessing whether you're improving, you can watch it happen, which turns meditation from a leap of faith into a trainable skill with a scoreboard.
+The hardest part of meditation isn't doing it — it's believing it's working. Progress feels invisible, so most people quit before the benefits arrive. But meditation progress *is* measurable, through your body's own signals: [heart rate variability](/science/concepts/heart-rate-variability) (HRV), [resting heart rate](/science/measurements/resting-heart-rate), and how quickly and deeply your nervous system settles during and after practice. As you train, your HRV tends to rise, your resting heart rate settles, and you shift into a calm state faster — objective signs that your nervous system is adapting. Instead of guessing whether you're improving, you can watch it happen, which turns meditation from a leap of faith into a trainable skill with a scoreboard.
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
@@ -38,7 +38,7 @@ This isn't a failure of willpower; it's a failure of feedback. The benefits are 
 
 ## What can you measure to track meditation progress?
 
-Your autonomic nervous system — the part meditation trains — leaves clear signals you can track:
+Your [autonomic nervous system](/science/concepts/autonomic-nervous-system) — the part meditation trains — leaves clear signals you can track:
 
 - **Heart rate variability (HRV).** The variation between heartbeats reflects the flexibility of your nervous system. Regular meditation and [slow breathing](/articles/how-to-raise-hrv-naturally) tend to raise HRV over weeks, reflecting stronger parasympathetic ("rest and digest") tone. A rising baseline HRV is one of the clearest objective signs your practice is working.
 - **Resting heart rate.** As your nervous system becomes better regulated and your cardiovascular fitness improves, your resting heart rate tends to drift down. A settling resting heart rate over weeks is a simple, trackable marker.
@@ -53,7 +53,7 @@ It also lets you experiment intelligently. You can see which practices shift you
 
 ## Is meditation progress linear?
 
-No — your numbers will bounce around day to day. HRV is sensitive to sleep, alcohol, stress and illness, so [a single low reading](/articles/how-to-measure-hrv-consistently) doesn't mean your practice failed — it usually means you slept badly or had a hard day. The signal is in the **trend over weeks**, not any single day. Chasing a perfect daily score is a trap (and can even become its own source of anxiety). The healthy way to measure progress is to watch the direction of your baseline over time, and otherwise let each session be what it is.
+No — your numbers will bounce around day to day. HRV is sensitive to sleep, alcohol, stress and illness, so [a single low reading](/articles/how-to-measure-hrv-consistently) doesn't mean your practice failed — it usually means you slept badly or had a hard day. The signal is in the **trend over weeks**, not any single day. Chasing a perfect daily score is a trap (and can even become its own source of anxiety). The healthy way to measure progress is to watch the direction of [your baseline](/science/concepts/hrv-baseline) over time, and otherwise let each session be what it is.
 
 ## How to track your progress
 

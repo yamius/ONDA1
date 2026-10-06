@@ -26,7 +26,7 @@ const article: Article = {
     linkText: 'See it live →',
   },
   content: `
-Nose breathing and mouth breathing affect your body differently — not just how much air you move, but your autonomic balance and your ability to concentrate. Japanese research comparing the two, in a randomized design, measured heart rate variability (HRV) and sustained attention under each condition, finding measurable differences in autonomic function between nose and mouth breathing. The short version: nasal breathing tends to support a calmer, more regulated autonomic state and steadier focus, while habitual mouth breathing is associated with a less favorable pattern. How you breathe — not just how deeply — shapes your nervous system.
+Nose breathing and mouth breathing affect your body differently — not just how much air you move, but your autonomic balance and your ability to concentrate. Japanese research comparing the two, in a randomized design, measured [heart rate variability](/science/concepts/heart-rate-variability) (HRV) and sustained attention under each condition, finding measurable differences in autonomic function between nose and mouth breathing. The short version: nasal breathing tends to support a calmer, more regulated autonomic state and steadier focus, while habitual mouth breathing is associated with a less favorable pattern. How you breathe — not just how deeply — shapes your nervous system.
 
 ## Does it matter if you breathe through your nose or mouth?
 
@@ -46,7 +46,7 @@ The research linked nasal breathing to steadier sustained attention — the part
 
 ## When should you breathe through your nose vs your mouth?
 
-- **Default to nose breathing** at rest, during focus work, and during slow breathing practice — it supports a calm, regulated state and steadier attention.
+- **Default to nose breathing** at rest, during focus work, and during [slow breathing](/science/evidence/slow-breathing) practice — it supports a calm, regulated state and steadier attention.
 - **Mouth breathing has its place** during hard physical exertion, when you need maximum airflow. That's appropriate; the concern is *habitual* mouth breathing at rest.
 - **Watch for mouth breathing at night** — it's common and can fragment sleep. Nasal breathing during sleep is generally more restorative.
 - **In slow-breathing practice**, inhale through the nose to get the natural pacing and nitric oxide benefit; a mouth exhale is fine for a long, controlled out-breath — the pattern [coherent breathing](/articles/coherent-breathing-guide) and the [physiological sigh](/articles/physiological-sigh) both use.

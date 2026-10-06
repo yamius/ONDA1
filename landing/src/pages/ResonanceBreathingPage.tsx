@@ -247,6 +247,8 @@ export function ResonanceBreathingPage() {
         sources={RESONANCE_SOURCES.map((src, i) => ({ ...src, contributes: c.sourcesContributes[i] ?? src.contributes }))}
       />
 
+      <p className="mb-4 font-mono text-xs leading-relaxed text-white/50"><Rich text={c.science} lang={lang} /></p>
+
       <div className="font-mono text-xs text-white/40">
         {c.related.label}:{' '}
         <Link to={langHref('/tools/breathing', lang)} className="text-terminal-green hover:underline">{c.related.timer}</Link>

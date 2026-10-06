@@ -70,7 +70,7 @@ Researchers took the obvious next step and tested it in the hardest population. 
 
 ## Section 4: What you can actually see
 
-This is where a tool like ONDA fits — and where honesty matters. ONDA is an [HRV biofeedback](/hrv-biofeedback) and guided-breathing app. It reads your heartbeat from the phone camera or an Apple Watch, guides slow breathing, and with an Apple Watch shows your own heart rhythm organising in real time as a live coherence score. Exactly [what it measures](/measurements) is spelled out, and [how it works](/how-it-works) too.
+This is where a tool like ONDA fits — and where honesty matters. ONDA is an [HRV biofeedback](/hrv-biofeedback) and guided-breathing app. It reads your heartbeat from the phone camera or an Apple Watch, guides [slow breathing](/science/evidence/slow-breathing), and with an Apple Watch shows your own heart rhythm organising in real time as a live coherence score. Exactly [what it measures](/measurements) is spelled out, and [how it works](/how-it-works) too.
 
 What that does, honestly, is let you *see and train the autonomic dimension* — the same HRV/parasympathetic axis the studies above track. What it does **not** do is diagnose or treat dysautonomia, POTS, or long Covid. It is a self-regulation trainer, not a medical device.
 

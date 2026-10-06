@@ -36,10 +36,10 @@ const article: Article = {
 
 ## Section 1: They measure different things
 
-"HRV" is not a single number. It's a family of metrics derived from the tiny variations between heartbeats, and devices surface different ones (Shaffer & Ginsberg, 2017):
+"[HRV](/science/concepts/heart-rate-variability)" is not a single number. It's a family of metrics derived from the tiny variations between heartbeats, and devices surface different ones (Shaffer & Ginsberg, 2017):
 
-- **RMSSD** — the beat-to-beat metric most consumer devices report as "HRV." It tracks fast, [parasympathetic](/glossary/parasympathetic-nervous-system) (vagal) activity. This is the number Oura, Whoop, Garmin and the others usually mean.
-- **SDNN** — a broader metric reflecting total variability over a window; larger and not interchangeable with RMSSD.
+- **[RMSSD](/science/concepts/rmssd)** — the beat-to-beat metric most consumer devices report as "HRV." It tracks fast, [parasympathetic](/glossary/parasympathetic-nervous-system) (vagal) activity. This is the number Oura, Whoop, Garmin and the others usually mean.
+- **[SDNN](/science/concepts/sdnn)** — a broader metric reflecting total variability over a window; larger and not interchangeable with RMSSD.
 - **Time window** — 24-hour, short-term (~5 min) and ultra-short (<1 min) recordings all produce different values for the *same* person. A 30-second spot check and an 8-hour overnight average are simply not the same measurement.
 
 So before blaming a device, check you're even comparing the same metric over the same window. Usually you aren't.

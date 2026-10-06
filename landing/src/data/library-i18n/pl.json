@@ -27,7 +27,8 @@
     "relatedTopics": "Powiązane tematy",
     "allTopics": "Wszystkie tematy",
     "hubTitleSuffix": "Biblioteka ONDA",
-    "hubMetaTitle": "{topic} — poradniki i badania | Biblioteka ONDA"
+    "hubMetaTitle": "{topic} — poradniki i badania | Biblioteka ONDA",
+    "scienceHeading": "Nauka stojąca za tym tematem"
   },
   "countries": {
     "Japan": "Japonia",
@@ -97,5 +98,153 @@
       "intro": "Wiele najciekawszych badań nad oddechem, snem i układem nerwowym powstało poza światem anglojęzycznym. Ten zbiór łączy je w jednym miejscu: japońskie badania nad kąpielami leśnymi i zen, indyjskie próby z pranajamą, niemiecką chronobiologię, holenderskie badania metody Wima Hofa i francuską tradycję koherencji sercowej.",
       "imageAlt": "Nauka z całego świata — ilustracja: ciemny glob ze świecącymi punktami na Japonii, Indiach, Niemczech, Holandii i Francji, połączonymi cienkimi łukami światła."
     }
+  },
+  "science": {
+    "meditation": [
+      {
+        "href": "/science/evidence/meditation-autonomic-nervous-system",
+        "label": "Medytacja a autonomiczny układ nerwowy: co pokazują badania"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "Interocepcja: jak mózg odczuwa ciało"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "Autonomiczny układ nerwowy: część współczulna i przywspółczulna"
+      },
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "Interakcja serca i mózgu: jak serce i mózg ze sobą rozmawiają"
+      }
+    ],
+    "breathing": [
+      {
+        "href": "/science/mechanisms/breathing-and-hrv",
+        "label": "Jak oddech zmienia HRV — i dlaczego wolny oddech je podnosi"
+      },
+      {
+        "href": "/science/evidence/slow-breathing",
+        "label": "Wolne oddychanie: co pokazują badania"
+      },
+      {
+        "href": "/science/concepts/respiratory-sinus-arrhythmia",
+        "label": "Oddechowa niemiarowość zatokowa: jak oddech kształtuje rytm serca"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "Spoczynkowa częstość oddechów: co odzwierciedla i jak się ją mierzy"
+      }
+    ],
+    "hrv-heart-rate": [
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Zmienność rytmu serca: czym jest, co odzwierciedla, a czym nie jest"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Co pojedyncza wartość HRV może, a czego nie może ci powiedzieć"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "Linia bazowa HRV: dlaczego twoja własna norma znaczy więcej niż jakakolwiek tabela"
+      },
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "Czy można ufać HRV ze smartwatcha lub pierścienia?"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Tętno spoczynkowe: co odzwierciedla i jak się je mierzy"
+      }
+    ],
+    "stress-vagus": [
+      {
+        "href": "/science/concepts/vagus-nerve",
+        "label": "Nerw błędny: co naprawdę robi, a co jest mitem"
+      },
+      {
+        "href": "/science/concepts/autonomic-nervous-system",
+        "label": "Autonomiczny układ nerwowy: część współczulna i przywspółczulna"
+      },
+      {
+        "href": "/science/evidence/vagus-nerve-stimulation",
+        "label": "Czy stymulacja nerwu błędnego naprawdę działa? Co pokazują badania"
+      },
+      {
+        "href": "/science/evidence/hrv-biofeedback",
+        "label": "Biofeedback HRV: co pokazują badania"
+      }
+    ],
+    "sleep-body-clock": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Dlaczego HRV zmienia się z dnia na dzień"
+      },
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Tętno spoczynkowe: co odzwierciedla i jak się je mierzy"
+      },
+      {
+        "href": "/science/measurements/respiratory-rate",
+        "label": "Spoczynkowa częstość oddechów: co odzwierciedla i jak się ją mierzy"
+      }
+    ],
+    "lifestyle": [
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Dlaczego HRV zmienia się z dnia na dzień"
+      },
+      {
+        "href": "/science/concepts/hrv-baseline",
+        "label": "Linia bazowa HRV: dlaczego twoja własna norma znaczy więcej niż jakakolwiek tabela"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Co pojedyncza wartość HRV może, a czego nie może ci powiedzieć"
+      }
+    ],
+    "heart-fitness-metabolism": [
+      {
+        "href": "/science/measurements/resting-heart-rate",
+        "label": "Tętno spoczynkowe: co odzwierciedla i jak się je mierzy"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Zmienność rytmu serca: czym jest, co odzwierciedla, a czym nie jest"
+      },
+      {
+        "href": "/science/mechanisms/hrv-day-to-day",
+        "label": "Dlaczego HRV zmienia się z dnia na dzień"
+      }
+    ],
+    "brain-focus-aging": [
+      {
+        "href": "/science/mechanisms/heart-brain-interaction",
+        "label": "Interakcja serca i mózgu: jak serce i mózg ze sobą rozmawiają"
+      },
+      {
+        "href": "/science/concepts/interoception",
+        "label": "Interocepcja: jak mózg odczuwa ciało"
+      },
+      {
+        "href": "/science/concepts/heart-rate-variability",
+        "label": "Zmienność rytmu serca: czym jest, co odzwierciedla, a czym nie jest"
+      }
+    ],
+    "doctors-your-data": [
+      {
+        "href": "/science/measurements/heart-rate-variability",
+        "label": "Czy można ufać HRV ze smartwatcha lub pierścienia?"
+      },
+      {
+        "href": "/science/concepts/interpreting-hrv",
+        "label": "Co pojedyncza wartość HRV może, a czego nie może ci powiedzieć"
+      },
+      {
+        "href": "/science/measurements/onda-method",
+        "label": "Jak ONDA mierzy i interpretuje sygnały twojego ciała"
+      }
+    ]
   }
 }

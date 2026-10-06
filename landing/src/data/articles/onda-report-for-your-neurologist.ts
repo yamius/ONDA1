@@ -25,7 +25,7 @@ const article: Article = {
     linkText: "Which doctor for what →",
   },
   content: `
-Your heart rate isn't only about your heart. Every beat is tuned by the autonomic nervous system — the part of the nervous system that runs without your control, speeding the heart up when you stand, slowing it when you rest. When that tuning goes wrong, as in POTS, other forms of dysautonomia, or after some viral illnesses including COVID, the heart often shows it first: racing when you get up, swinging through the day, never quite settling. A neurologist who works with the autonomic nervous system can use your heart-rate and HRV history to see those patterns over weeks — then confirm them with proper tests. Your watch can't diagnose dysautonomia. But it can bring months of evidence into a 20-minute appointment.
+Your heart rate isn't only about your heart. Every beat is tuned by the [autonomic nervous system](/science/concepts/autonomic-nervous-system) — the part of the nervous system that runs without your control, speeding the heart up when you stand, slowing it when you rest. When that tuning goes wrong, as in POTS, other forms of dysautonomia, or after some viral illnesses including COVID, the heart often shows it first: racing when you get up, swinging through the day, never quite settling. A neurologist who works with the autonomic nervous system can use your heart-rate and [HRV](/science/concepts/heart-rate-variability) history to see those patterns over weeks — then confirm them with proper tests. Your watch can't diagnose dysautonomia. But it can bring months of evidence into a 20-minute appointment.
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
@@ -44,9 +44,9 @@ Postural orthostatic tachycardia syndrome (POTS), one of the better-known forms,
 
 ## The clinic's test breathes at your pace
 
-Here's something few people know. One of the standard tests of autonomic function — the heart rate response to deep breathing — asks you to breathe slowly and evenly at about **six breaths per minute** while your heart is recorded. A healthy autonomic system makes the heart rate rise and fall strongly with each breath. When the vagus nerve's control of the heart is impaired, that rise and fall becomes smaller.
+Here's something few people know. One of the standard tests of autonomic function — the heart rate response to deep breathing — asks you to breathe slowly and evenly at about **six breaths per minute** while your heart is recorded. A healthy autonomic system makes the heart rate rise and fall strongly with each breath. When the [vagus nerve](/science/concepts/vagus-nerve)'s control of the heart is impaired, that rise and fall becomes smaller.
 
-Six breaths a minute is the same pace used in coherent or resonance breathing. In other words, the clinic uses slow breathing to *measure* how well your nervous system controls your heart — the same rhythm many people use to *train* it. Your watch or a breathing app can't perform this test for you, but it's a neat reminder that HRV and slow breathing sit at the centre of how neurology looks at the heart.
+Six breaths a minute is the same pace used in coherent or [resonance breathing](/science/mechanisms/breathing-and-hrv). In other words, the clinic uses slow breathing to *measure* how well your nervous system controls your heart — the same rhythm many people use to *train* it. Your watch or a breathing app can't perform this test for you, but it's a neat reminder that HRV and slow breathing sit at the centre of how neurology looks at the heart.
 
 ## What can a neurologist learn from your heart rate data?
 

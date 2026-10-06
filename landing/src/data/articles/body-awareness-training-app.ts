@@ -63,8 +63,8 @@ Then it closes the loop. You breathe slowly, and you watch the signal respond �
 
 Two honest specifics, because they change what you'll actually see:
 
-- The live **coherence** score — the polished "watch your rhythm lock in" number — unlocks with an **Apple Watch**. On the phone camera you still get live pulse and a breathing estimate, but [coherence](/glossary/coherence) shows "--" until a Watch is connected. And coherence is a proprietary rhythm score, **not** clinical [heart-rate variability](/glossary/heart-rate-variability) — a feedback metric, not a lab biomarker. Any live "HRV" tile is a heart-rate spread surrogate, not RMSSD. If that distinction matters to you, [HRV vs coherence](/hrv-vs-coherence) lays it out.
-- The breathing is genuinely **measured**, and the app guides you toward slow breathing — but there is no rigid metronome counting 4-7-8 at you. It is guided, reactive breathing, not a fixed pacer. See [what it measures](/measurements) for the full signal list.
+- The live **coherence** score — the polished "watch your rhythm lock in" number — unlocks with an **Apple Watch**. On the phone camera you still get live pulse and a breathing estimate, but [coherence](/glossary/coherence) shows "--" until a Watch is connected. And coherence is a proprietary rhythm score, **not** clinical [heart-rate variability](/glossary/heart-rate-variability) — a feedback metric, not a lab biomarker. Any live "HRV" tile is a heart-rate spread surrogate, not [RMSSD](/science/concepts/rmssd). If that distinction matters to you, [HRV vs coherence](/hrv-vs-coherence) lays it out.
+- The breathing is genuinely **measured**, and the app guides you toward [slow breathing](/science/evidence/slow-breathing) — but there is no rigid metronome counting 4-7-8 at you. It is guided, reactive breathing, not a fixed pacer. See [what it measures](/measurements) for the full signal list.
 
 ---
 

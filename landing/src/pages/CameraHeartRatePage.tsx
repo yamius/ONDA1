@@ -340,6 +340,8 @@ export function CameraHeartRatePage() {
         sources={CAMERA_HR_SOURCES.map((src, i) => ({ ...src, contributes: c.sourcesContributes[i] ?? src.contributes }))}
       />
 
+      <p className="mb-4 font-mono text-xs leading-relaxed text-white/50"><Rich text={c.science} lang={lang} /></p>
+
       <div className="font-mono text-xs text-white/40">
         {c.related.label}:{' '}
         <Link to={langHref('/tools/resting-heart-rate', lang)} className="text-terminal-green hover:underline">{c.related.rhr}</Link>

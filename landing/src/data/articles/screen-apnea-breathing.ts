@@ -63,7 +63,7 @@ That's why the 20% who *don't* get screen apnea are the trained breathers. They'
 
 ## Section 4: Making the invisible breath visible
 
-You can't fix a breath you can't feel — so the first move is to *see* it. ONDA reads your breathing rate live during a practice, even from the phone camera, and (with an Apple Watch) shows your heart rhythm organising into [coherence](/glossary/coherence) as you slow down. Watch your own [breathing](/measurements) on screen and the freeze becomes undeniable — and so does the recovery, in real time, in [HRV biofeedback](/hrv-biofeedback). A minute of measured breathing between tasks isn't a wellness nicety; it's a reset for a pattern you'd otherwise repeat all day without noticing.
+You can't fix a breath you can't feel — so the first move is to *see* it. ONDA reads your [breathing rate](/science/measurements/respiratory-rate) live during a practice, even from the phone camera, and (with an Apple Watch) shows your heart rhythm organising into [coherence](/glossary/coherence) as you slow down. Watch your own [breathing](/measurements) on screen and the freeze becomes undeniable — and so does the recovery, in real time, in [HRV biofeedback](/hrv-biofeedback). A minute of measured breathing between tasks isn't a wellness nicety; it's a reset for a pattern you'd otherwise repeat all day without noticing.
 
 Honest framing: this is a self-regulation practice, not a treatment for any breathing disorder, and ONDA is not a medical device. If you have real concerns about your breathing — especially during sleep — that's a conversation for a clinician.
 

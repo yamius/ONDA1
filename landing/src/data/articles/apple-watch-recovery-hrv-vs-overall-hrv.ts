@@ -37,7 +37,7 @@ const article: Article = {
 
 > "People opened the Health app in late September 2026 and found something new: their Apple Watch was suddenly reporting **two** heart-rate-variability numbers instead of one — 'Recovery HRV' and 'Overall HRV' — and they often didn't match.
 
-**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age ([RMSSD](/science/concepts/rmssd) from Oura, Whoop, Garmin or [SDNN](/science/concepts/sdnn) from Apple Watch).
 
 > This wasn't a bug. With the Apple Watch Series 12 and Ultra 4 on watchOS 27, Apple rebuilt how the watch measures HRV — it now reports two HRV variants, measures far more *often*, and gives each number a different job. If your HRV looks different, jumpier, or hard to compare to last month, here is exactly what happened."
 
@@ -49,7 +49,7 @@ The Series 12 and Ultra 4, announced in September 2026, ship with a new **Health
 
 1. **HRV is now sampled about every 5 minutes** — roughly 24× more often than before, where the watch captured HRV only about once every two hours (MacRumors; 9to5Mac, September 2026).
 2. **HRV split into two metrics.** The watch now surfaces **Recovery HRV** and **Overall HRV** as separate readings.
-3. **Overnight Vitals now analyses Recovery HRV against your personal baseline**, with a new toggle between overnight and daytime vitals.
+3. **Overnight Vitals now analyses Recovery HRV against your [personal baseline](/science/concepts/hrv-baseline)**, with a new toggle between overnight and daytime vitals.
 
 More frequent sampling of a noisy signal is why the number can look jumpier than the once-every-two-hours figure you were used to.
 

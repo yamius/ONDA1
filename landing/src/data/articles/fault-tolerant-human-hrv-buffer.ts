@@ -50,7 +50,7 @@ const article: Article = {
 
 ## What does HRV say about your resilience to stress?
 
-HRV is the visualization of your **Dynamic Buffer**. The higher your variability, the more adaptation scenarios are pre-programmed into your physiological software. Two systems, same external load — completely different outcomes:
+[HRV](/science/concepts/heart-rate-variability) is the visualization of your **Dynamic Buffer**. The higher your variability, the more adaptation scenarios are pre-programmed into your physiological software. Two systems, same external load — completely different outcomes:
 
 **The Low-Buffer System (Low HRV):**
 Running at max capacity just to maintain baseline. Any additional stress — a sleepless night, a difficult conversation, a pathogen — triggers **Cascade Failure**: burnout, illness, or cognitive paralysis. There is no headroom left. The system has no reserve to absorb the spike.

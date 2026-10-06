@@ -37,11 +37,11 @@ Yes — metabolic syndrome was once thought of as a middle-aged problem, but not
 
 Researchers screened young undergraduate medical students and selected those with a BMI of 25 or more and/or elevated blood pressure, then examined the effect of a pranayama program on clinical predictors of metabolic syndrome. The markers improved — supporting pranayama as a non-drug prevention strategy in a high-risk young group. It was a single, fairly small study, so treat it as encouraging rather than conclusive.
 
-It fits a broader pattern. Slow breathing lowers blood pressure through the baroreflex (see [slow breathing and blood pressure](/articles/high-blood-pressure-slow-breathing)); it lowers stress hormones like cortisol (see [how breathing lowers stress hormones](/articles/breathing-lowers-stress-hormones)); and structured yoga-and-pranayama programs have improved glucose, lipids and waist circumference in people at metabolic risk (see [yoga and breathing for type 2 diabetes](/articles/yoga-breathing-diabetes-blood-sugar)).
+It fits a broader pattern. [Slow breathing](/science/evidence/slow-breathing) lowers blood pressure through the baroreflex (see [slow breathing and blood pressure](/articles/high-blood-pressure-slow-breathing)); it lowers stress hormones like cortisol (see [how breathing lowers stress hormones](/articles/breathing-lowers-stress-hormones)); and structured yoga-and-pranayama programs have improved glucose, lipids and waist circumference in people at metabolic risk (see [yoga and breathing for type 2 diabetes](/articles/yoga-breathing-diabetes-blood-sugar)).
 
 ## How can breathing help metabolic syndrome?
 
-It sounds surprising that breathing could touch a metabolic condition, but the link runs through stress physiology. Chronic stress keeps cortisol and sympathetic activity elevated, which promotes abdominal fat storage, raises blood pressure and worsens insulin resistance — several components of metabolic syndrome at once. Slow breathing pushes back on that axis: it shifts you toward parasympathetic dominance, lowers blood pressure and supports healthier HRV. It won't replace diet and exercise — the foundations — but it targets the stress component that ties the cluster together.
+It sounds surprising that breathing could touch a metabolic condition, but the link runs through stress physiology. Chronic stress keeps cortisol and sympathetic activity elevated, which promotes abdominal fat storage, raises blood pressure and worsens insulin resistance — several components of metabolic syndrome at once. Slow breathing pushes back on that axis: it shifts you toward parasympathetic dominance, lowers blood pressure and supports healthier [HRV](/science/concepts/heart-rate-variability). It won't replace diet and exercise — the foundations — but it targets the stress component that ties the cluster together.
 
 ## How should you practice pranayama for metabolic health?
 
@@ -53,9 +53,9 @@ It sounds surprising that breathing could touch a metabolic condition, but the l
 
 ## See your autonomic balance
 
-The autonomic side of these benefits is measurable. ONDA reads your resting heart rate and HRV from your Apple Watch, so you can track whether your autonomic balance improves as you build a breathing habit alongside better diet and movement (see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally)). ONDA does not measure blood pressure, glucose or cholesterol — keep those with your doctor.
+The autonomic side of these benefits is measurable. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from your Apple Watch, so you can track whether your autonomic balance improves as you build a breathing habit alongside better diet and movement (see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally)). ONDA does not measure blood pressure, glucose or cholesterol — keep those with your doctor.
 
-*ONDA is a breathing and HRV biofeedback app, not a medical device. This article draws on Indian research on pranayama and metabolic-syndrome predictors in young adults. It complements, not replaces, medical care and lifestyle change.*
+*ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device. This article draws on Indian research on pranayama and metabolic-syndrome predictors in young adults. It complements, not replaces, medical care and lifestyle change.*
 `,
 }
 

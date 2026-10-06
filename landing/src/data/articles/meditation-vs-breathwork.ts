@@ -26,7 +26,7 @@ const article: Article = {
     linkText: 'See it live →',
   },
   content: `
-Meditation and breathwork both calm your mind and body, but they work through different doors — and knowing the difference helps you choose. **Breathwork** changes your physiology directly and quickly: [slow breathing at six breaths per minute](/articles/coherent-breathing-guide) is associated with higher vagally mediated heart rate variability (HRV) within minutes, and shifting you toward calm — a bottom-up, body-first approach. **Meditation** trains your attention and your relationship to your own mind, producing changes in brain structure and function over weeks — a top-down, mind-first approach. Breathwork is the faster lever for an acute state change; meditation is the deeper training for lasting traits. The best answer, for most people, isn't either/or — it's using breath to reach the calm state, then meditating from within it.
+Meditation and breathwork both calm your mind and body, but they work through different doors — and knowing the difference helps you choose. **Breathwork** changes your physiology directly and quickly: [slow breathing at six breaths per minute](/articles/coherent-breathing-guide) is associated with higher vagally mediated [heart rate variability](/science/concepts/heart-rate-variability) (HRV) within minutes, and shifting you toward calm — a bottom-up, body-first approach. **Meditation** trains your attention and your relationship to your own mind, producing changes in brain structure and function over weeks — a top-down, mind-first approach. Breathwork is the faster lever for an acute state change; meditation is the deeper training for lasting traits. The best answer, for most people, isn't either/or — it's using breath to reach the calm state, then meditating from within it.
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
@@ -79,7 +79,7 @@ It also solves meditation's adherence problem. Breathwork gives you immediate, f
 
 ## Measure either — or both
 
-Whichever door you choose, the underlying shift toward parasympathetic calm is measurable. ONDA reads your resting heart rate and HRV from your Apple Watch (or your pulse from your phone camera), so you can see breathwork's immediate effect in real time and track meditation's slower baseline improvement over weeks. Seeing both — the fast lever and the deep training — in your own numbers helps you use each for what it does best, and confirms the combined approach is working.
+Whichever door you choose, the underlying shift toward parasympathetic calm is measurable. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from your Apple Watch (or your pulse from your phone camera), so you can see breathwork's immediate effect in real time and track meditation's slower baseline improvement over weeks. Seeing both — the fast lever and the deep training — in your own numbers helps you use each for what it does best, and confirms the combined approach is working.
 `,
 }
 

@@ -30,7 +30,7 @@ const article: Article = {
     linkText: 'What ONDA measures →',
   },
   content: `
-Nicotine raises heart rate and blood pressure because it triggers the release of adrenaline-like stress chemicals, whether it comes from a cigarette, a vape or a pouch (Benowitz 2016). It also shifts the nervous system toward the [sympathetic](/glossary/sympathetic-nervous-system) "go" side: in a study of healthy young adults, habitual e-cigarette users had heart rate variability patterns showing more sympathetic and less vagal activity than non-users (Moheimani 2017). The calm many people feel from nicotine is largely relief from withdrawal and the ritual of a pause, not a calmer body.
+Nicotine raises heart rate and blood pressure because it triggers the release of adrenaline-like stress chemicals, whether it comes from a cigarette, a vape or a pouch (Benowitz 2016). It also shifts the nervous system toward the [sympathetic](/glossary/sympathetic-nervous-system) "go" side: in a study of healthy young adults, habitual e-cigarette users had [heart rate variability](/science/concepts/heart-rate-variability) patterns showing more sympathetic and less vagal activity than non-users (Moheimani 2017). The calm many people feel from nicotine is largely relief from withdrawal and the ritual of a pause, not a calmer body.
 
 ---
 
@@ -67,7 +67,7 @@ Vaping can make the pattern less visible: because it is easy to use continuously
 
 ## Can you see nicotine’s effect in your own numbers?
 
-You can often see it as a resting heart rate and HRV that sit worse on heavier-use days than on lighter ones. With an Apple Watch, ONDA reads resting heart rate and HRV from Apple Health and holds them against your **personal 14-day baseline**, so changes are compared with your own normal rather than a population average — [see what ONDA measures](/measurements). If you cut down or quit, the same baseline lets you watch your resting heart rate settle over the following weeks, which many people find motivating.
+You can often see it as a [resting heart rate](/science/measurements/resting-heart-rate) and HRV that sit worse on heavier-use days than on lighter ones. With an Apple Watch, ONDA reads resting heart rate and HRV from Apple Health and holds them against your **personal 14-day baseline**, so changes are compared with your own normal rather than a population average — [see what ONDA measures](/measurements). If you cut down or quit, the same baseline lets you watch your resting heart rate settle over the following weeks, which many people find motivating.
 
 ONDA is descriptive, not medical, and this is not medical advice. It can show you the physiology; it can’t treat the dependence.
 

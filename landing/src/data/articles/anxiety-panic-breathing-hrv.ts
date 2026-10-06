@@ -60,7 +60,7 @@ The mechanism runs through [heart-rate variability](/glossary/heart-rate-variabi
 
 Yes — this is not folk wisdom dressed up, and two threads of real evidence back it:
 
-- **HRV biofeedback for anxiety.** A meta-analysis pooling controlled trials of HRV-biofeedback breathing found a meaningful reduction in self-reported stress and anxiety across studies (Goessl 2017). The active ingredient is exactly the slow, paced, feedback-guided breathing described above.
+- **[HRV biofeedback](/science/evidence/hrv-biofeedback) for anxiety.** A meta-analysis pooling controlled trials of HRV-biofeedback breathing found a meaningful reduction in self-reported stress and anxiety across studies (Goessl 2017). The active ingredient is exactly the slow, paced, feedback-guided breathing described above.
 - **The exhale beats the mindfulness.** A 2023 randomised trial compared brief daily breathwork against mindfulness meditation and found that short, exhale-emphasised breathing ("cyclic sighing") improved mood and lowered physiological arousal *more* than the meditation control (Balban 2023). The out-breath, specifically, did the work.
 
 The headline: for acute arousal, a few minutes of slow, exhale-led breathing is one of the best-supported, lowest-risk self-regulation tools there is.
@@ -71,7 +71,7 @@ The headline: for acute arousal, a few minutes of slow, exhale-led breathing is 
 
 Knowing the breath is the lever is one thing; *feeling* it move the needle is another — and that's the gap a feedback loop closes.
 
-ONDA is an [HRV biofeedback](/hrv-biofeedback) app: it reads your heartbeat from the phone camera or an Apple Watch, guides slow breathing, and with an Apple Watch renders your own heart rhythm organising in real time as a coherence score. Instead of breathing blind and hoping, you watch the runaway loop actually settle — see [what it measures](/measurements) and [how it works](/how-it-works). That visible proof is oddly powerful mid-anxiety, when the brain insists nothing is helping.
+ONDA is an [HRV biofeedback](/hrv-biofeedback) app: it reads your heartbeat from the phone camera or an Apple Watch, guides [slow breathing](/science/evidence/slow-breathing), and with an Apple Watch renders your own heart rhythm organising in real time as a coherence score. Instead of breathing blind and hoping, you watch the runaway loop actually settle — see [what it measures](/measurements) and [how it works](/how-it-works). That visible proof is oddly powerful mid-anxiety, when the brain insists nothing is helping.
 
 Now the firewall, plainly: this is a **self-regulation practice, not a treatment for an anxiety disorder**. Breathing tools sit alongside therapy, medication and professional care — they don't replace them, and ONDA is not a medical device.
 

@@ -49,7 +49,7 @@ Most of these studies are modest in size and several are single-center, so the f
 
 ## How it likely works
 
-Several mechanisms overlap. Slow breathing and relaxation lower stress hormones like cortisol, which raise blood sugar — so calming the stress response can help glycemic control (see [how breathing lowers stress hormones](/articles/breathing-lowers-stress-hormones)). Improved HRV and baroreflex function restore autonomic balance, easing the cardiovascular strain diabetes causes — the same loop behind [slow breathing and blood pressure](/articles/high-blood-pressure-slow-breathing). Yoga postures add physical activity, which improves insulin sensitivity. It's a whole-system effect, which is why structured programs combining postures, breathing, and relaxation tend to outperform any single element.
+Several mechanisms overlap. [Slow breathing](/science/evidence/slow-breathing) and relaxation lower stress hormones like cortisol, which raise blood sugar — so calming the stress response can help glycemic control (see [how breathing lowers stress hormones](/articles/breathing-lowers-stress-hormones)). Improved HRV and baroreflex function restore autonomic balance, easing the cardiovascular strain diabetes causes — the same loop behind [slow breathing and blood pressure](/articles/high-blood-pressure-slow-breathing). Yoga postures add physical activity, which improves insulin sensitivity. It's a whole-system effect, which is why structured programs combining postures, breathing, and relaxation tend to outperform any single element.
 
 ## How can people with diabetes use yoga breathing safely?
 
@@ -63,7 +63,7 @@ Several mechanisms overlap. Slow breathing and relaxation lower stress hormones 
 
 One of the clearest benefits in the research — improved HRV and sympathovagal balance — is something ONDA measures. It reads your resting heart rate and HRV from your Apple Watch, so you can track whether your autonomic balance shifts as you build a regular breathing practice (see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally)). ONDA does not measure blood sugar; HRV reflects the autonomic side of the picture only.
 
-*ONDA is a breathing and HRV biofeedback app, not a medical device. This article draws on Indian randomized trials of yoga and pranayama in type 2 diabetes. It is not a substitute for diabetes care; consult your doctor.*
+*ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device. This article draws on Indian randomized trials of yoga and pranayama in type 2 diabetes. It is not a substitute for diabetes care; consult your doctor.*
 `,
 }
 

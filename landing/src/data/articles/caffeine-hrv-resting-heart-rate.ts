@@ -40,7 +40,7 @@ const article: Article = {
 
 ## Section 1: How long does caffeine stay in your body?
 
-Caffeine's half-life averages **five to six hours**. That is the number almost nobody accounts for. A coffee at 3 p.m. means roughly half its caffeine is still in you at 8 or 9 p.m., and a meaningful fraction past midnight. You don't feel it as a jolt anymore — tolerance blunts the *sensation* long before it clears the *effect* — but your autonomic nervous system is still reading it.
+Caffeine's half-life averages **five to six hours**. That is the number almost nobody accounts for. A coffee at 3 p.m. means roughly half its caffeine is still in you at 8 or 9 p.m., and a meaningful fraction past midnight. You don't feel it as a jolt anymore — tolerance blunts the *sensation* long before it clears the *effect* — but your [autonomic nervous system](/science/concepts/autonomic-nervous-system) is still reading it.
 
 Caffeine is a stimulant, so the result is a body kept a little more alert into the night, exactly when it should be winding down into rest and recovery.
 
@@ -50,8 +50,8 @@ Caffeine is a stimulant, so the result is a body kept a little more alert into t
 
 It can, though less predictably than the usual advice suggests. Here is what the evidence says about three things ONDA actually watches:
 
-- **Resting heart rate may tick up — or may not.** Caffeine can raise heart rate in some people, but its effect on resting heart rate is inconsistent across studies, and regular coffee drinkers develop tolerance. If it moves yours, it will show against your own corridor.
-- **Overnight HRV may dip, mostly through sleep.** The direct evidence is mixed: some studies find small changes in beat-to-beat [variability](/glossary/heart-rate-variability) after caffeine, others find none, and regular drinkers develop tolerance. The clearer link runs through sleep. Late caffeine can make sleep lighter and shorter, and a poorer night is one of the things that pulls overnight HRV down.
+- **[Resting heart rate](/science/measurements/resting-heart-rate) may tick up — or may not.** Caffeine can raise heart rate in some people, but its effect on resting heart rate is inconsistent across studies, and regular coffee drinkers develop tolerance. If it moves yours, it will show against your own corridor.
+- **Overnight [HRV](/science/concepts/heart-rate-variability) may dip, mostly through sleep.** The direct evidence is mixed: some studies find small changes in beat-to-beat [variability](/glossary/heart-rate-variability) after caffeine, others find none, and regular drinkers develop tolerance. The clearer link runs through sleep. Late caffeine can make sleep lighter and shorter, and a poorer night is one of the things that pulls overnight HRV down.
 - **Sleep thins.** Even when you fall asleep fine, caffeine can shave sleep quality and depth — and a poorer night drags the next day's baseline with it.
 
 None of this is dramatic on any single night. It is a *tax*, not a catastrophe — and taxes compound.
@@ -68,7 +68,7 @@ So a population rule is the wrong tool. The only cutoff that means anything is *
 
 ## Section 4: Finding your cutoff from your own data
 
-This is a measurement problem, and it's a solvable one. Build a **personal baseline** — your normal resting heart rate, variability and breathing rate — then watch what a late cup does to it. A night after a 4 p.m. coffee that reads with a higher resting pulse or a lower [HRV](/glossary/heart-rate-variability) than your corridor is your body drawing the line for you.
+This is a measurement problem, and it's a solvable one. Build a **[personal baseline](/science/concepts/hrv-baseline)** — your normal resting heart rate, variability and breathing rate — then watch what a late cup does to it. A night after a 4 p.m. coffee that reads with a higher resting pulse or a lower [HRV](/glossary/heart-rate-variability) than your corridor is your body drawing the line for you.
 
 ONDA reads those overnight signals from an Apple Watch (or your resting numbers from the phone camera) and holds your corridor, so a late-caffeine night shows up as a visible departure from *your* normal rather than an abstract worry — [your data, your line](/measurements). Move the cup earlier, watch the night come back into the corridor, and you've found your cutoff empirically instead of guessing.
 

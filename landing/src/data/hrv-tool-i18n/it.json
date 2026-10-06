@@ -1,4 +1,5 @@
 {
+  "science": "La scienza alla base → [RMSSD: cosa riflette questa metrica dell'HRV e cosa no](/science/concepts/rmssd) · [SDNN: cosa misura questa metrica dell'HRV e cosa no](/science/concepts/sdnn) · [Baseline dell'HRV: perché la tua normalità conta più di qualsiasi norma](/science/concepts/hrv-baseline) · [Cosa può e non può dirti un singolo valore di HRV](/science/concepts/interpreting-hrv)",
   "meta": {
     "title": "Calcolatore HRV per età — valori normali | ONDA Life",
     "description": "Calcolatore HRV gratuito: inserisci età e HRV (RMSSD da Oura, Whoop, Garmin o SDNN da Apple Watch) e scopri il tuo percentile e i valori normali per età.",

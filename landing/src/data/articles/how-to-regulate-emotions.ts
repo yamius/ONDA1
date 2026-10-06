@@ -70,7 +70,7 @@ This is where feedback earns its place — and it's what makes an app useful her
 
 ## Section 5: Using it in real life
 
-Deploy it where it counts. **Before a hard conversation**, take two minutes of slow breathing to enter regulated rather than already-activated. **At the first flicker** of a reaction, one long exhale before you respond. **After a conflict**, use the breath to bring yourself back down instead of stewing in the residue. And **train daily** when nothing's wrong, so the brake is strong when something is. Over time the gap between trigger and reaction stops being something you scramble for and becomes something you have.
+Deploy it where it counts. **Before a hard conversation**, take two minutes of [slow breathing](/science/evidence/slow-breathing) to enter regulated rather than already-activated. **At the first flicker** of a reaction, one long exhale before you respond. **After a conflict**, use the breath to bring yourself back down instead of stewing in the residue. And **train daily** when nothing's wrong, so the brake is strong when something is. Over time the gap between trigger and reaction stops being something you scramble for and becomes something you have.
 
 > **The Hack:** Don't try to control the feeling — buy the pause. At the first flicker of a reaction, take one slow breath with a long exhale and name what you feel. The breath damps the surge, the name lowers its volume, and together they re-open the gap where a chosen response lives. Train it daily and the gap widens on its own.
 

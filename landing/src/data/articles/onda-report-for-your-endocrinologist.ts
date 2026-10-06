@@ -25,7 +25,7 @@ const article: Article = {
     linkText: "Which doctor for what →",
   },
   content: `
-Your hormones set the pace your heart runs at. Thyroid hormone, in particular, works almost like a dial on your resting heart rate: too much and the heart speeds up, too little and it slows down. Diabetes works more quietly — over years it can damage the nerves that fine-tune the heart, and one of the early signs is lower heart rate variability. That makes your resting heart rate and HRV history surprisingly relevant to an endocrinologist. It can't replace a single blood test. But a clear trend — when your resting pulse started to climb, how it responded to treatment — gives the specialist a timeline that lab results alone don't show.
+Your hormones set the pace your heart runs at. Thyroid hormone, in particular, works almost like a dial on your [resting heart rate](/science/measurements/resting-heart-rate): too much and the heart speeds up, too little and it slows down. Diabetes works more quietly — over years it can damage the nerves that fine-tune the heart, and one of the early signs is lower [heart rate variability](/science/concepts/heart-rate-variability). That makes your resting heart rate and HRV history surprisingly relevant to an endocrinologist. It can't replace a single blood test. But a clear trend — when your resting pulse started to climb, how it responded to treatment — gives the specialist a timeline that lab results alone don't show.
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
@@ -88,9 +88,9 @@ Seek urgent care for a very fast or irregular heartbeat with feeling unwell, che
 
 ## Your heart's response to your hormones, on one page
 
-ONDA builds your personal baseline for resting heart rate, HRV and breathing from your Apple Watch, marks the days you left your usual range, and lets you add notes on symptoms and treatment. You can export any period as a PDF — generated on your device and shared only by you — so an endocrinologist sees how your body responded over weeks, alongside your lab results.
+ONDA builds your [personal baseline](/science/concepts/hrv-baseline) for resting heart rate, HRV and breathing from your Apple Watch, marks the days you left your usual range, and lets you add notes on symptoms and treatment. You can export any period as a PDF — generated on your device and shared only by you — so an endocrinologist sees how your body responded over weeks, alongside your lab results.
 
-*ONDA is a breathing and HRV biofeedback app, not a medical device, and does not measure hormones or blood sugar. This article is general information, not medical advice. If you have a very fast or irregular heartbeat with feeling unwell or symptoms of severe low or high blood sugar, seek urgent care.*
+*ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device, and does not measure hormones or blood sugar. This article is general information, not medical advice. If you have a very fast or irregular heartbeat with feeling unwell or symptoms of severe low or high blood sugar, seek urgent care.*
 `,
 }
 

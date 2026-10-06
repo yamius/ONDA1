@@ -22,14 +22,14 @@ const article: Article = {
     linkText: 'HRV by age calculator →',
   },
   content: `
-A low HRV number on your Apple Watch is usually less alarming than it looks. Apple Watch measures a different kind of HRV than most rings and bands, it takes short readings at random moments, and one value on its own says very little. Here is how to read it.
+A low [HRV](/science/concepts/heart-rate-variability) number on your Apple Watch is usually less alarming than it looks. Apple Watch measures a different kind of HRV than most rings and bands, it takes short readings at random moments, and one value on its own says very little. Here is how to read it.
 
 ## Apple Watch measures SDNN, not RMSSD
 
 Heart rate variability (HRV) is the small variation in time between heartbeats. Devices summarise it in different ways:
 
-- **Apple Watch** reports **SDNN** — the spread of beat-to-beat intervals — from short readings of about a minute, taken in the background a few times a day (older models; Series 12 and Ultra 4 on watchOS 27 measure as often as every five minutes) and during Breathe or Mindfulness sessions.
-- **Oura, Whoop and Garmin** report **RMSSD**, usually averaged over the night, when the body is most relaxed and HRV is at its highest.
+- **Apple Watch** reports **[SDNN](/science/concepts/sdnn)** — the spread of beat-to-beat intervals — from short readings of about a minute, taken in the background a few times a day (older models; Series 12 and Ultra 4 on watchOS 27 measure as often as every five minutes) and during Breathe or Mindfulness sessions.
+- **Oura, Whoop and Garmin** report **[RMSSD](/science/concepts/rmssd)**, usually averaged over the night, when the body is most relaxed and HRV is at its highest.
 
 Short daytime readings run lower than a night-time average, and SDNN and RMSSD are different numbers. So an Apple Watch HRV of 35 next to an Oura value of 55 does not mean one of them is wrong, or that your recovery is worse. [Why your HRV differs on every device](/articles/hrv-different-every-device) explains this in more detail. Newer watches also show a separate Recovery HRV; see [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv).
 
@@ -65,7 +65,7 @@ HRV also differs a lot between people of the same age. Some healthy people simpl
 - Look at the **weekly average** in the Health app, not single readings.
 - Wear the watch snugly, and wear it to sleep if you can, so more readings come from rest.
 - Compare like with like: the same device, at similar times.
-- If the trend is low, the usual levers are regular sleep, less alcohol, regular aerobic exercise and slow breathing — see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally).
+- If the trend is low, the usual levers are regular sleep, less alcohol, regular aerobic exercise and [slow breathing](/science/evidence/slow-breathing) — see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally).
 
 ## When to talk to a doctor
 

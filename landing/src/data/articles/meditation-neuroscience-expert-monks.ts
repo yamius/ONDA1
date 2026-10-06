@@ -56,7 +56,7 @@ This is deeply encouraging for anyone starting out. You are not stuck with the m
 
 ## Measure your own trajectory
 
-You won't match a monk's gamma synchrony, and you don't need to — but you can track your own progress along the same trainable path. ONDA reads your resting heart rate and HRV from your Apple Watch (or your pulse from your phone camera), showing how your practice shifts your nervous system and strengthens your baseline over weeks. It's the accessible, at-home reflection of what the expert research proves at the extreme: the mind is trainable, and the training is real and measurable.
+You won't match a monk's gamma synchrony, and you don't need to — but you can track your own progress along the same trainable path. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/science/concepts/heart-rate-variability) from your Apple Watch (or your pulse from your phone camera), showing how your practice shifts your nervous system and strengthens [your baseline](/science/concepts/hrv-baseline) over weeks. It's the accessible, at-home reflection of what the expert research proves at the extreme: the mind is trainable, and the training is real and measurable.
 `,
 }
 

@@ -32,7 +32,7 @@ const article: Article = {
 
 > "Everyone wants a higher HRV. Fewer people know what actually moves it — or that most of the advice online is just 'sleep well and relax,' which is true, slow, and unsatisfying.
 
-**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age ([RMSSD](/science/concepts/rmssd) from Oura, Whoop, Garmin or [SDNN](/science/concepts/sdnn) from Apple Watch).
 
 > Here's the honest version: your [heart-rate variability](/glossary/heart-rate-variability) is a readout of how adaptable your nervous system is, and it rises when you remove what's suppressing it and train what strengthens it. Some of those levers take weeks. One of them works in minutes — and it's the only one you can watch happen in real time."
 
@@ -72,7 +72,7 @@ The honest boundary: this trains the autonomic self-regulation dimension of HRV.
 
 ## Section 4: Why feedback makes the breathing lever work
 
-You can slow your breathing blind and it helps. But you learn far faster when you can *see* it working — which is the whole point of HRV biofeedback. An app that reads your pulse (from the [iPhone camera or an Apple Watch](/measurements)) and renders your heart rhythm live lets you find the exact pace and depth that maximises *your* swing, and confirms the practice is landing instead of hoping.
+You can slow your breathing blind and it helps. But you learn far faster when you can *see* it working — which is the whole point of [HRV biofeedback](/science/evidence/hrv-biofeedback). An app that reads your pulse (from the [iPhone camera or an Apple Watch](/measurements)) and renders your heart rhythm live lets you find the exact pace and depth that maximises *your* swing, and confirms the practice is landing instead of hoping.
 
 That's what ONDA is built for: it guides your breathing and shows your rhythm organising in real time — see [HRV biofeedback](/hrv-biofeedback). One honest note: the live **coherence score** unlocks with an Apple Watch; on the phone camera you still get live pulse and a breathing estimate. And measure your progress properly — HRV is noisy, so [track the trend, not a single reading](/articles/how-to-measure-hrv-consistently).
 

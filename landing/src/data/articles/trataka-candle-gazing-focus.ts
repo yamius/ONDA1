@@ -46,7 +46,7 @@ The evidence base is small, so trataka is best understood as a promising traditi
 
 Candle gazing calms and focuses the mind because it cuts down what your eyes and mind have to track. Fixing your gaze on one unmoving point reduces the flood of visual input and eye movement that normally keeps the mind scanning. With less to track, the mind quiets. And the discipline of returning your attention every time it wanders is how attentional control is built — repetitions for focus, the way you'd do repetitions for a muscle.
 
-That makes trataka a natural complement to breathing practice. Slow breathing calms the body through the vagus nerve; trataka steadies the mind through the eyes and attention. A few minutes of gazing settled by [slow coherent breathing](/articles/coherent-breathing-guide) — or used before a focus task alongside [breathing for focus](/articles/breathing-for-focus-and-attention) — reinforce each other.
+That makes trataka a natural complement to breathing practice. [Slow breathing](/science/evidence/slow-breathing) calms the body through the [vagus nerve](/science/concepts/vagus-nerve); trataka steadies the mind through the eyes and attention. A few minutes of gazing settled by [slow coherent breathing](/articles/coherent-breathing-guide) — or used before a focus task alongside [breathing for focus](/articles/breathing-for-focus-and-attention) — reinforce each other.
 
 ## How to practice trataka
 
@@ -61,9 +61,9 @@ If you have eye conditions, epilepsy, or any discomfort, skip the flame or check
 
 ## A companion to your breathing practice
 
-Trataka trains the attention that makes every other calming practice deeper. ONDA tracks the physical side: pair a session of gazing with slow breathing and you can watch your pulse steady — from your phone camera or Apple Watch — and, with an Apple Watch, see your HRV respond. The mind focuses while the body calms, and you can see the second half in your own numbers.
+Trataka trains the attention that makes every other calming practice deeper. ONDA tracks the physical side: pair a session of gazing with slow breathing and you can watch your pulse steady — from your phone camera or Apple Watch — and, with an Apple Watch, see your [HRV](/science/concepts/heart-rate-variability) respond. The mind focuses while the body calms, and you can see the second half in your own numbers.
 
-*ONDA is a breathing and HRV biofeedback app, not a medical device. This article draws on Indian research on trataka and cognitive function.*
+*ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device. This article draws on Indian research on trataka and cognitive function.*
 `,
 }
 

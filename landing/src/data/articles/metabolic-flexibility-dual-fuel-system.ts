@@ -144,7 +144,7 @@ The habits with the clearest evidence are ordinary and repeatable:
 - **Build aerobic fitness and keep your muscle.** This is the long-term lever on the fuel switch itself (Richter & Hargreaves 2013).
 - **Sleep enough and keep waist size in check.** Both are tied to [insulin sensitivity](/glossary/insulin-sensitivity), which sits underneath flexibility.
 
-What you can track: ONDA does **not** measure glucose, ketones, fuel use or metabolism. If you wear an Apple Watch, ONDA reads your resting heart rate and Apple's VO₂max estimate from Apple Health. They say nothing about which fuel you burn, but a falling resting heart rate and a rising VO₂max estimate over weeks are reasonable signs that the aerobic training above is taking hold. For your actual metabolic health, the numbers that matter come from a blood test.
+What you can track: ONDA does **not** measure glucose, ketones, fuel use or metabolism. If you wear an Apple Watch, ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and Apple's VO₂max estimate from Apple Health. They say nothing about which fuel you burn, but a falling resting heart rate and a rising VO₂max estimate over weeks are reasonable signs that the aerobic training above is taking hold. For your actual metabolic health, the numbers that matter come from a blood test.
 
 ---
 

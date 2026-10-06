@@ -41,7 +41,7 @@ const article: Article = {
 
 ## What role does the vagus nerve play in neuromodulation?
 
-The Vagus Nerve is the primary communication channel between your CPU (the brain) and the rest of the system (the organs). Modulating this nerve allows for an immediate system-wide shift from 'Emergency Mode' (Sympathetic) to 'System Recovery' (Parasympathetic). In 2026, this no longer requires implants; non-invasive wearable modules targeting the auricular branch or the neck are sufficient to bypass the standard hormonal lag.
+The [Vagus Nerve](/science/concepts/vagus-nerve) is the primary communication channel between your CPU (the brain) and the rest of the system (the organs). Modulating this nerve allows for an immediate system-wide shift from 'Emergency Mode' (Sympathetic) to 'System Recovery' (Parasympathetic). In 2026, this no longer requires implants; non-invasive wearable modules targeting the auricular branch or the neck are sufficient to bypass the standard hormonal lag.
 
 ---
 

@@ -49,7 +49,7 @@ Here's the quirk that makes it hackable. The baroreflex has a natural resonance 
 
 ## Section 2: Exercising the loop
 
-Why would swinging the baroreflex harder lower resting pressure? The working theory is that paced slow breathing acts like *training* for the reflex. Repeatedly driving it at resonance appears to improve **baroreflex sensitivity** — how sharply the system corrects a pressure change — and a more responsive baroreflex tends to sit at a lower, better-controlled operating point.
+Why would swinging the baroreflex harder lower resting pressure? The working theory is that paced [slow breathing](/science/evidence/slow-breathing) acts like *training* for the reflex. Repeatedly driving it at resonance appears to improve **baroreflex sensitivity** — how sharply the system corrects a pressure change — and a more responsive baroreflex tends to sit at a lower, better-controlled operating point.
 
 The cleaner experiments back the mechanism. Controlled work on slow breathing at six breaths per minute showed it raised baroreflex sensitivity and reduced sympathetic drive compared with normal-paced breathing (Joseph 2005). Broader reviews of slow-breathing techniques report consistent shifts toward parasympathetic dominance and improved autonomic balance (Zaccaro 2018).
 

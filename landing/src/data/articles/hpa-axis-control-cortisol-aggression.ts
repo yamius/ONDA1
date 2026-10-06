@@ -121,7 +121,7 @@ Aggression is a high-energy state. When managed correctly, it becomes the fuel f
 
 ## [ HARDWARE_VALIDATION ]
 
-METRIC: Morning Cortisol Levels + Heart Rate Variability (HRV).
+METRIC: Morning Cortisol Levels + Heart Rate Variability ([HRV](/science/concepts/heart-rate-variability)).
 \`STATUS: Stress Architecture Under Control. Reactivity Reduced.\`
 
 ---

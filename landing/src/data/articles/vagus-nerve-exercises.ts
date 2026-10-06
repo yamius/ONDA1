@@ -39,7 +39,7 @@ const article: Article = {
 
 ## What is the vagus nerve, in plain terms?
 
-The vagus nerve is the main nerve of the [parasympathetic](/glossary/parasympathetic-nervous-system) system, running from the brainstem to the heart, lungs and gut. Most of its traffic goes *up*, not down: roughly 80–90% of its fibres are sensory (afferent), carrying signals about the state of your organs to the brain, while the remaining 10–20% carry commands back to the body (Breit 2018). On the "down" side, vagal fibres release acetylcholine at the heart, which slows the heartbeat — that is the brake the exercises below lean on.
+The [vagus nerve](/science/concepts/vagus-nerve) is the main nerve of the [parasympathetic](/glossary/parasympathetic-nervous-system) system, running from the brainstem to the heart, lungs and gut. Most of its traffic goes *up*, not down: roughly 80–90% of its fibres are sensory (afferent), carrying signals about the state of your organs to the brain, while the remaining 10–20% carry commands back to the body (Breit 2018). On the "down" side, vagal fibres release acetylcholine at the heart, which slows the heartbeat — that is the brake the exercises below lean on.
 
 This two-way wiring is why breathing works as a lever: you can't will your heart to slow, but you can change your breathing, and the vagus relays the result in both directions.
 
@@ -47,13 +47,13 @@ This two-way wiring is why breathing works as a lever: you can't will your heart
 
 ## How do you know vagus nerve exercises are working?
 
-You know they're working when your HRV rises: vagal activity shows up in your [heart-rate variability](/glossary/heart-rate-variability) — higher vagal tone, higher HRV, and a faster return to calm after stress (Laborde 2017). The techniques below all converge on the same mechanism: more vagal output, less [sympathetic](/glossary/sympathetic-nervous-system) drive.
+You know they're working when your [HRV](/science/concepts/heart-rate-variability) rises: vagal activity shows up in your [heart-rate variability](/glossary/heart-rate-variability) — higher vagal tone, higher HRV, and a faster return to calm after stress (Laborde 2017). The techniques below all converge on the same mechanism: more vagal output, less [sympathetic](/glossary/sympathetic-nervous-system) drive.
 
 Not sure which state you're actually in? The [Nervous System State quiz](/tools/nervous-system) reads fight-or-flight vs shutdown vs regulated and gives you the matching protocol.
 
 ### How is vagal tone measured?
 
-Vagal tone can't be measured directly in everyday life; it is estimated from heart-rate variability. The usual indices are RMSSD (beat-to-beat variation), high-frequency HRV, and respiratory sinus arrhythmia — the heart speeding up slightly on the inhale and slowing on the exhale. These are indirect proxies, not a gold standard: breathing rate and depth, posture, time of day, caffeine, alcohol and illness all move them, which is why researchers recommend controlling or at least reporting breathing when HRV is used as a vagal marker (Laborde 2017).
+Vagal tone can't be measured directly in everyday life; it is estimated from heart-rate variability. The usual indices are [RMSSD](/science/concepts/rmssd) (beat-to-beat variation), high-frequency HRV, and [respiratory sinus arrhythmia](/science/concepts/respiratory-sinus-arrhythmia) — the heart speeding up slightly on the inhale and slowing on the exhale. These are indirect proxies, not a gold standard: breathing rate and depth, posture, time of day, caffeine, alcohol and illness all move them, which is why researchers recommend controlling or at least reporting breathing when HRV is used as a vagal marker (Laborde 2017).
 
 In practice, that means comparing like with like: a morning reading taken the same way each day, watched as a trend over weeks, tells you more than any single number. ONDA reads HRV from Apple Watch via Apple Health for exactly this kind of baseline.
 

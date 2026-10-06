@@ -27,7 +27,7 @@ const article: Article = {
     linkText: 'The 365 method →',
   },
   content: `
-In France, cardiac coherence — slow breathing that raises heart rate variability (HRV) — is used in clinical practice for chronic insomnia, and the logic is precise: insomnia is largely a state of nervous-system "hyperarousal," and cardiac coherence directly lowers that arousal. Rather than treating insomnia as simply "not sleepy enough," this approach treats it as too much activation — a sympathetic nervous system stuck in "on." Because HRV tracks that hyperarousal, and slow coherent breathing measurably shifts you toward parasympathetic calm, it targets the mechanism that keeps you awake instead of trying to force sleep.
+In France, cardiac coherence — [slow breathing](/science/evidence/slow-breathing) that raises [heart rate variability](/science/concepts/heart-rate-variability) (HRV) — is used in clinical practice for chronic insomnia, and the logic is precise: insomnia is largely a state of nervous-system "hyperarousal," and cardiac coherence directly lowers that arousal. Rather than treating insomnia as simply "not sleepy enough," this approach treats it as too much activation — a sympathetic nervous system stuck in "on." Because HRV tracks that hyperarousal, and slow coherent breathing measurably shifts you toward parasympathetic calm, it targets the mechanism that keeps you awake instead of trying to force sleep.
 
 ## Is insomnia really a problem of hyperarousal?
 
@@ -62,9 +62,9 @@ For persistent insomnia, pair it with good sleep habits — a consistent wake ti
 
 ## See your arousal come down
 
-Cardiac coherence targets a measurable state. ONDA reads your pulse from your phone camera or Apple Watch, so you can watch your heart rate settle during an evening session; with an Apple Watch it also reads HRV and a coherence score, so you can see the shift toward calm and track whether your baseline improves as the practice becomes a habit.
+Cardiac coherence targets a measurable state. ONDA reads your pulse from your phone camera or Apple Watch, so you can watch your heart rate settle during an evening session; with an Apple Watch it also reads HRV and a coherence score, so you can see the shift toward calm and track whether [your baseline](/science/concepts/hrv-baseline) improves as the practice becomes a habit.
 
-*ONDA is a breathing and HRV biofeedback app, not a medical device. This article draws on the French clinical tradition of cardiac coherence and HRV biofeedback for insomnia. For chronic insomnia, consult a qualified professional.*
+*ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device. This article draws on the French clinical tradition of cardiac coherence and HRV biofeedback for insomnia. For chronic insomnia, consult a qualified professional.*
 `,
 }
 

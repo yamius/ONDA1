@@ -32,7 +32,7 @@ const article: Article = {
 
 > "You trained harder this block than last. You got slower. The numbers know why.
 
-**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age ([RMSSD](/science/concepts/rmssd) from Oura, Whoop, Garmin or [SDNN](/science/concepts/sdnn) from Apple Watch).
 
 > The oldest mistake in training is treating the workout as the thing that makes you fitter. It isn't. The workout is the *stimulus* — a controlled dose of damage. The adaptation, the actual fitness, is built afterward, during recovery. Skip the recovery and you keep paying for stimulus you can't cash in. Do it long enough and your own physiology starts filing complaints."
 
@@ -48,7 +48,7 @@ This is why "more" is the wrong dial past a certain volume. The athletes who imp
 
 ## Section 2: What happens to resting heart rate and HRV when you overtrain?
 
-When load outruns recovery, resting heart rate creeps up and HRV drops — the autonomic nervous system tells on you before your performance fully collapses. Two signals move together:
+When load outruns recovery, [resting heart rate](/science/measurements/resting-heart-rate) creeps up and HRV drops — the [autonomic nervous system](/science/concepts/autonomic-nervous-system) tells on you before your performance fully collapses. Two signals move together:
 
 - **Resting heart rate creeps up.** An elevated morning pulse against your baseline is a classic marker of accumulated fatigue or an incomplete recovery — the body idling higher because it never fully stood down.
 - **HRV drops.** Reduced resting [variability](/glossary/heart-rate-variability) (RMSSD) is repeatedly associated with fatigue, overreaching and blunted performance. As training exceeds your adaptive capacity, variability falls and its night-to-night stability degrades.

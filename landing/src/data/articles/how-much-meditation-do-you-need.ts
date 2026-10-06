@@ -42,7 +42,7 @@ Modest, consistent practice is backed by real data:
 
 - **10–12 minutes a day** has been used in trials measuring stress hormones, cellular-aging markers, and cognitive and mood outcomes — with meaningful changes over 8 to 12 weeks.
 - **A cumulative 5–10 hours** of training (which is just 10–20 minutes a day over a few weeks) has produced measurable white and gray matter changes in brain-imaging studies.
-- **A few minutes of [slow breathing](/articles/how-to-raise-hrv-naturally)**, once or twice daily, reliably raises HRV and lowers blood pressure over 2 to 3 weeks of regular practice.
+- **A few minutes of [slow breathing](/articles/how-to-raise-hrv-naturally)**, once or twice daily, reliably raises [HRV](/science/concepts/heart-rate-variability) and lowers blood pressure over 2 to 3 weeks of regular practice.
 
 The message is encouraging: you don't need hour-long sessions or silent retreats to change your physiology. You need a short practice, most days, for a few weeks.
 
@@ -66,7 +66,7 @@ There's a reason "just meditate 10 minutes a day" is easy to say and hard to kee
 
 ## See your dose add up
 
-ONDA turns a daily practice into something you can watch accumulate. It reads your resting heart rate and HRV from your Apple Watch (or your pulse from your phone camera), showing how each session shifts your nervous system and how your baseline trends over weeks of consistent practice. Instead of wondering whether your 10 minutes a day is "enough," you see the dose-response in your own numbers — the feedback that makes a small, sustainable habit stick.
+ONDA turns a daily practice into something you can watch accumulate. It reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from your Apple Watch (or your pulse from your phone camera), showing how each session shifts your nervous system and how [your baseline](/science/concepts/hrv-baseline) trends over weeks of consistent practice. Instead of wondering whether your 10 minutes a day is "enough," you see the dose-response in your own numbers — the feedback that makes a small, sustainable habit stick.
 `,
   howToSteps: [
     {

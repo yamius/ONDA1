@@ -153,7 +153,7 @@ Mostly not enough to count on.
 
 ONDA does not measure hormones and does not treat menopause symptoms.
 
-With an Apple Watch, ONDA reads heart rate variability (HRV), resting heart rate and sleep data from Apple Health. Night sweats and poor sleep often show up as worse sleep and recovery signals, so these trends can help you describe your nights to a doctor. ONDA's guided breathing practices can help you calm down, for example when you wake at night — but they are not a treatment for hot flushes.
+With an Apple Watch, ONDA reads [heart rate variability](/science/concepts/heart-rate-variability) (HRV), [resting heart rate](/science/measurements/resting-heart-rate) and sleep data from Apple Health. Night sweats and poor sleep often show up as worse sleep and recovery signals, so these trends can help you describe your nights to a doctor. ONDA's guided breathing practices can help you calm down, for example when you wake at night — but they are not a treatment for hot flushes.
 
 ---
 

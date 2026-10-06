@@ -31,7 +31,7 @@ Forest bathing — *shinrin-yoku*, coined in Japan in the 1980s — is the pract
 
 ## From feeling to science
 
-For most of history, "a walk in the woods is good for you" was folk wisdom. What Japanese researchers did — led by figures like Yoshifumi Miyazaki and Qing Li at Nippon Medical School — was measure it: blood pressure, heart rate variability, salivary and blood cortisol, sympathetic and parasympathetic activity, and even immune markers, before and after forest exposure, compared against matched city walks. That shift from feeling to data is what made shinrin-yoku a serious research field and a recognized preventive-health practice in Japan.
+For most of history, "a walk in the woods is good for you" was folk wisdom. What Japanese researchers did — led by figures like Yoshifumi Miyazaki and Qing Li at Nippon Medical School — was measure it: blood pressure, [heart rate variability](/science/concepts/heart-rate-variability), salivary and blood cortisol, sympathetic and parasympathetic activity, and even immune markers, before and after forest exposure, compared against matched city walks. That shift from feeling to data is what made shinrin-yoku a serious research field and a recognized preventive-health practice in Japan.
 
 The design matters: by comparing a forest walk to an equivalent urban walk, these studies isolated the *environment's* effect from the exercise itself. The forest did something the city street didn't.
 
@@ -46,7 +46,7 @@ Together they show forest bathing shifting the whole system: nervous system towa
 
 ## What are phytoncides, and why do they matter in forest bathing?
 
-The most distinctive finding is that part of the effect comes from what you *breathe*, not just what you see. Trees release volatile compounds called **phytoncides** — terpenes and similar molecules that plants emit to defend against microbes. Japanese research proposes that inhaling phytoncides calms the brain through the olfactory (smell) pathway, helping balance the autonomic nervous system, suppress stress-hormone release, and boost NK-cell activity.
+The most distinctive finding is that part of the effect comes from what you *breathe*, not just what you see. Trees release volatile compounds called **phytoncides** — terpenes and similar molecules that plants emit to defend against microbes. Japanese research proposes that inhaling phytoncides calms the brain through the olfactory (smell) pathway, helping balance the [autonomic nervous system](/science/concepts/autonomic-nervous-system), suppress stress-hormone release, and boost NK-cell activity.
 
 This is why forest bathing isn't just "outdoor exercise." Air analysis in the studied forests measured these tree-derived compounds directly, linking the chemistry of the forest air to the measured drop in stress. You're not only moving and relaxing — you're breathing a subtly medicinal atmosphere.
 
@@ -64,7 +64,7 @@ You don't need a remote wilderness — a quiet park with real trees delivers muc
 
 ## See your own shift
 
-The calm that forest bathing produces is a measurable autonomic change — exactly the kind ONDA tracks. Read your resting heart rate from your phone camera, or your HRV from your Apple Watch, before and after time among trees, and you can watch your own parasympathetic shift: pulse settling, HRV rising. It turns "I feel better after the woods" into something you can actually see in your numbers.
+The calm that forest bathing produces is a measurable autonomic change — exactly the kind ONDA tracks. Read your [resting heart rate](/science/measurements/resting-heart-rate) from your phone camera, or your HRV from your Apple Watch, before and after time among trees, and you can watch your own parasympathetic shift: pulse settling, HRV rising. It turns "I feel better after the woods" into something you can actually see in your numbers.
 `,
   howToSteps: [
     {

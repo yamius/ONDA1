@@ -86,9 +86,9 @@ const article: Article = {
 
 ## Section 1: What does HRV actually measure?
 
-Heart rate variability (HRV) is the small, constant change in the time between one heartbeat and the next. A heart beating at 60 beats per minute does not beat exactly once a second; the gaps vary by tens of milliseconds. A healthy heart is not a metronome (Shaffer & Ginsberg 2017).
+Heart rate variability ([HRV](/science/concepts/heart-rate-variability)) is the small, constant change in the time between one heartbeat and the next. A heart beating at 60 beats per minute does not beat exactly once a second; the gaps vary by tens of milliseconds. A healthy heart is not a metronome (Shaffer & Ginsberg 2017).
 
-The most common short-term measure, RMSSD, and the high-frequency part of HRV mainly reflect **vagal activity** — how much the vagus nerve is slowing and adjusting the heart from beat to beat (Laborde 2017). Breathing drives much of this: the heart speeds up slightly when you breathe in and slows when you breathe out.
+The most common short-term measure, [RMSSD](/science/concepts/rmssd), and the high-frequency part of HRV mainly reflect **vagal activity** — how much the [vagus nerve](/science/concepts/vagus-nerve) is slowing and adjusting the heart from beat to beat (Laborde 2017). Breathing drives much of this: the heart speeds up slightly when you breathe in and slows when you breathe out.
 
 HRV is **not a delay or a speed**. It says nothing directly about how quickly signals travel along your nerves. And it is not a clean "gas vs brake" dial: the popular LF/HF ratio does not accurately measure the balance between the sympathetic and parasympathetic systems (Billman 2013). So "low HRV = stress mode, high HRV = calm mode" is an oversimplification.
 
@@ -112,7 +112,7 @@ The size matters. A meta-analysis of 26 studies found an average correlation bet
 
 ## Section 3: Why would the heart's rhythm relate to focus and self-control?
 
-The main explanation is the **neurovisceral integration model**. It proposes that the same brain networks — especially areas of the prefrontal cortex that help control attention and emotion — also help regulate the heart through the vagus nerve (Thayer & Lane 2000; Thayer & Lane 2009). If those networks work well, you might expect both better self-control and higher resting HRV.
+The main explanation is the **[neurovisceral integration](/science/mechanisms/heart-brain-interaction) model**. It proposes that the same brain networks — especially areas of the prefrontal cortex that help control attention and emotion — also help regulate the heart through the vagus nerve (Thayer & Lane 2000; Thayer & Lane 2009). If those networks work well, you might expect both better self-control and higher resting HRV.
 
 There is some support: a meta-analysis of brain-imaging studies found that HRV was associated with activity in regions such as the ventromedial prefrontal cortex and amygdala (Thayer 2012).
 

@@ -131,7 +131,7 @@ The levers with real evidence are ordinary ones.
 - **Control the cues.** Put the phone in another room during focused work, remove the apps that pull you in most, and keep tempting foods out of sight. Changing the environment works better than relying on willpower.
 - **One thing at a time.** Monotasking won't "protect your receptors," but it makes focused work easier to sustain.
 
-What you can track: ONDA does **not** measure dopamine, mood or motivation. What it offers is guided breathing and meditation practice, with your pulse and breathing rate shown during a session. A short, calm practice can be a deliberate pause between a scroll and the next piece of work — a small, honest tool, not a dopamine fix.
+What you can track: ONDA does **not** measure dopamine, mood or motivation. What it offers is guided breathing and meditation practice, with your pulse and [breathing rate](/science/measurements/respiratory-rate) shown during a session. A short, calm practice can be a deliberate pause between a scroll and the next piece of work — a small, honest tool, not a dopamine fix.
 
 ---
 

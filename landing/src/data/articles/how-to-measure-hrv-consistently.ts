@@ -32,7 +32,7 @@ const article: Article = {
 
 > "You check your HRV and it's 45. You check an hour later and it's 68. You panic, or you celebrate, and both are mistakes — because you just measured two different situations, not two different you's.
 
-**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age ([RMSSD](/science/concepts/rmssd) from Oura, Whoop, Garmin or [SDNN](/science/concepts/sdnn) from Apple Watch).
 
 > HRV is gloriously sensitive. That sensitivity is what makes it useful and what makes it useless — depending entirely on whether you control the conditions. Measured carelessly, it's noise. Measured consistently, it's one of the best signals you have."
 
@@ -40,7 +40,7 @@ const article: Article = {
 
 ## Section 1: Why does HRV change so much from reading to reading?
 
-[Heart-rate variability](/glossary/heart-rate-variability) moves so much because it reflects the moment-to-moment balance of your autonomic nervous system, and that balance shifts constantly. Time of day moves it — HRV follows a circadian curve. Posture moves it — lying, sitting and standing give different numbers. Your breathing moves it hardest of all — slow breathing inflates it, fast breathing deflates it. Recent caffeine, a recent meal, a recent workout, alcohol the night before, even talking or a stray stressful thought all shift the reading.
+[Heart-rate variability](/glossary/heart-rate-variability) moves so much because it reflects the moment-to-moment balance of your [autonomic nervous system](/science/concepts/autonomic-nervous-system), and that balance shifts constantly. Time of day moves it — HRV follows a circadian curve. Posture moves it — lying, sitting and standing give different numbers. Your breathing moves it hardest of all — [slow breathing](/science/evidence/slow-breathing) inflates it, fast breathing deflates it. Recent caffeine, a recent meal, a recent workout, alcohol the night before, even talking or a stray stressful thought all shift the reading.
 
 None of that is a malfunction. It's the metric doing its job — tracking a system that genuinely changes minute to minute. Which means an HRV number without its *context* tells you almost nothing.
 

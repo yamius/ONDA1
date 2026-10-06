@@ -53,7 +53,7 @@ This is the reach-in switch your thoughts can't find. You don't argue your nervo
 
 ## Section 3: How do you calm your nervous system down fast?
 
-When you're wired and need to come down, use slow breathing with a long exhale:
+When you're wired and need to come down, use [slow breathing](/science/evidence/slow-breathing) with a long exhale:
 
 - **Breathe low and slow, exhale-led.** Try in for 4, out for 6 (or any ratio where the exhale is clearly longer). Belly, not chest.
 - **Give it a few minutes.** The shift isn't instant — a minute or two of slow breathing is where the parasympathetic brake actually catches.
@@ -73,7 +73,7 @@ It also teaches faster: seeing which breathing actually moves your rhythm shows 
 
 ## Section 5: The deeper fix — an off-switch you can rebuild
 
-Coming down in the moment is the acute skill. The deeper issue, if you're wired *every* evening, is that the off-switch has stopped flipping — chronic stress holding HRV low into the night, the [nervous system that never clocks out](/articles/chronic-stress-nervous-system-never-off). The fix is the same lever practised *daily*, not just in crisis: a few minutes of slow, exhale-led breathing trains the parasympathetic return until landing after a hard day becomes automatic. Add real boundaries at work's end and protected sleep, and you rebuild the switch itself.
+Coming down in the moment is the acute skill. The deeper issue, if you're wired *every* evening, is that the off-switch has stopped flipping — chronic stress holding [HRV](/science/concepts/heart-rate-variability) low into the night, the [nervous system that never clocks out](/articles/chronic-stress-nervous-system-never-off). The fix is the same lever practised *daily*, not just in crisis: a few minutes of slow, exhale-led breathing trains the parasympathetic return until landing after a hard day becomes automatic. Add real boundaries at work's end and protected sleep, and you rebuild the switch itself.
 
 > **The Hack:** Don't tell yourself to relax — breathe yourself down. A couple of minutes of slow breathing, often with the exhale longer than the inhale, does what your thoughts can't, and the system follows. Do it daily, not just when you're wired, and the off-switch starts flipping on its own again.
 

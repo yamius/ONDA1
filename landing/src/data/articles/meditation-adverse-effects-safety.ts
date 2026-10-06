@@ -81,7 +81,7 @@ The point of naming meditation's dark side isn't to scare you off — it's respe
 
 ## Practice with awareness
 
-Part of practicing safely is noticing how you actually respond — not just assuming meditation "should" help. ONDA lets you [track how your body reacts](/articles/measuring-meditation-progress): reading your pulse from your phone camera, or your HRV from your Apple Watch, so you can see whether a practice genuinely calms you or, occasionally, agitates you. If your numbers and your felt experience both say a practice isn't settling you, that's useful, honest feedback — the opposite of forcing through.
+Part of practicing safely is noticing how you actually respond — not just assuming meditation "should" help. ONDA lets you [track how your body reacts](/articles/measuring-meditation-progress): reading your pulse from your phone camera, or your [HRV](/science/concepts/heart-rate-variability) from your Apple Watch, so you can see whether a practice genuinely calms you or, occasionally, agitates you. If your numbers and your felt experience both say a practice isn't settling you, that's useful, honest feedback — the opposite of forcing through.
 `,
   howToSteps: [
     {

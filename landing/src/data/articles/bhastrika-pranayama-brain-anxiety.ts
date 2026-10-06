@@ -44,7 +44,7 @@ It was one small trial in healthy volunteers, so treat it as an encouraging sign
 
 The amygdala is central to the anxiety response — when it's overactive, the world feels more threatening. The insula tracks internal bodily states; the anterior cingulate and prefrontal cortex help regulate and interpret emotion. Showing that a breathing practice modulates these regions offers a plausible mechanism for *why* breathwork eases anxiety: not just relaxation, but a change in how the emotional brain responds.
 
-It also fits a broader pattern. Slow pranayama calms through the vagus nerve and baroreflex; [humming breath](/articles/humming-breath-vagus) adds a vibration that researchers propose reaches the vagus mechanically; and here, Bhastrika appears to reshape emotional brain activity over weeks. Different techniques, different routes — converging on a calmer nervous system. Bhastrika is also one component of [Sudarshan Kriya Yoga](/articles/sudarshan-kriya-yoga-breathing), the most clinically studied breathing sequence.
+It also fits a broader pattern. Slow pranayama calms through the [vagus nerve](/science/concepts/vagus-nerve) and baroreflex; [humming breath](/articles/humming-breath-vagus) adds a vibration that researchers propose reaches the vagus mechanically; and here, Bhastrika appears to reshape emotional brain activity over weeks. Different techniques, different routes — converging on a calmer nervous system. Bhastrika is also one component of [Sudarshan Kriya Yoga](/articles/sudarshan-kriya-yoga-breathing), the most clinically studied breathing sequence.
 
 ## How do you practice Bhastrika safely?
 
@@ -60,7 +60,7 @@ Because it's energizing, Bhastrika suits mornings or moments you want alertness 
 
 ## See your body respond
 
-Bhastrika drives a strong, immediate autonomic response you can watch. ONDA reads your pulse from your phone camera or Apple Watch, and your HRV from Apple Watch, so you can see how vigorous breathing lifts your heart rate during practice — the sympathetic activation the research describes — versus how [slow coherent breathing](/articles/coherent-breathing-guide) settles it. Seeing both makes the difference between energizing and calming breathwork concrete.
+Bhastrika drives a strong, immediate autonomic response you can watch. ONDA reads your pulse from your phone camera or Apple Watch, and your [HRV](/science/concepts/heart-rate-variability) from Apple Watch, so you can see how vigorous breathing lifts your heart rate during practice — the sympathetic activation the research describes — versus how [slow coherent breathing](/articles/coherent-breathing-guide) settles it. Seeing both makes the difference between energizing and calming breathwork concrete.
 
 *Source: Novaes et al., 2020, Frontiers in Psychiatry — randomized controlled trial of Bhastrika pranayama with fMRI (DOI 10.3389/fpsyt.2020.00467). ONDA is not a medical device.*
 `,

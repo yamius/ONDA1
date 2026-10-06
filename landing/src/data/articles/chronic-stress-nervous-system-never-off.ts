@@ -41,13 +41,13 @@ const article: Article = {
 
 The stress response is a loop with an off-switch. A threat arrives, the [sympathetic](/glossary/sympathetic-nervous-system) branch fires, [cortisol](/glossary/cortisol) and heart rate climb, and then — when the threat passes — the [parasympathetic](/glossary/parasympathetic-nervous-system) branch brings you back down and [variability](/glossary/heart-rate-variability) returns. That recovery *is* health. A body that spikes and recovers cleanly is doing exactly what it should.
 
-Chronic stress breaks the off-switch. The plateau replaces the spike. And because the elevated state becomes your new normal, you stop noticing it — the frog-in-warming-water problem of the autonomic nervous system.
+Chronic stress breaks the off-switch. The plateau replaces the spike. And because the elevated state becomes your new normal, you stop noticing it — the frog-in-warming-water problem of the [autonomic nervous system](/science/concepts/autonomic-nervous-system).
 
 ---
 
 ## Section 2: How does chronic stress show up in your HRV?
 
-Studies of high-strain work — high effort, low reward — find **lower HRV not just during work, but through leisure and sleep, on work days and weekends alike.** A study of nurses under prolonged occupational stress found reduced high-frequency and low-frequency HRV power during work *and a lack of recovery in the non-working, resting periods.* The parasympathetic brake stayed off the clock.
+Studies of high-strain work — high effort, low reward — find **lower [HRV](/science/concepts/heart-rate-variability) not just during work, but through leisure and sleep, on work days and weekends alike.** A study of nurses under prolonged occupational stress found reduced high-frequency and low-frequency HRV power during work *and a lack of recovery in the non-working, resting periods.* The parasympathetic brake stayed off the clock.
 
 That's the signature that matters. Anyone's HRV drops under an acute stressor — that's normal. The chronic-stress fingerprint is **HRV that fails to rebound when the stressor is gone**: a flat evening, a shallow night, a baseline that has quietly settled lower and stopped coming back up.
 
@@ -55,7 +55,7 @@ That's the signature that matters. Anyone's HRV drops under an acute stressor �
 
 ## Section 3: Why can't you feel chronic stress?
 
-Chronic sympathetic tone isn't obvious to you because it's your reference point now. Interoception recalibrates to the plateau; "wired but tired," "can't switch off," "fine, just busy" all describe a nervous system stuck in mild activation that no longer registers as unusual. The felt sense adapts. The measured signal doesn't — which is exactly why it's worth measuring.
+Chronic sympathetic tone isn't obvious to you because it's your reference point now. [Interoception](/science/concepts/interoception) recalibrates to the plateau; "wired but tired," "can't switch off," "fine, just busy" all describe a nervous system stuck in mild activation that no longer registers as unusual. The felt sense adapts. The measured signal doesn't — which is exactly why it's worth measuring.
 
 ---
 
@@ -63,7 +63,7 @@ Chronic sympathetic tone isn't obvious to you because it's your reference point 
 
 The useful reframe: don't ask *how stressed was I today* — ask *did my body ever come back down.* That's a question your own [HRV](/glossary/heart-rate-variability) corridor can answer. An evening and overnight variability that sits below your normal, night after night, is the plateau showing itself. A baseline that's drifted lower over weeks is the off-switch quietly failing.
 
-ONDA holds that corridor — your resting heart rate, variability and breathing against your own normal — so a nervous system that never clocks out becomes something you can actually see rather than a vague sense of depletion. And it shows the *rebound*, too: because slow, paced breathing raises HRV within minutes, you can watch the brake re-engage in real time in [HRV biofeedback](/hrv-biofeedback) — proof the off-switch still works, even when it feels stuck.
+ONDA holds that corridor — your [resting heart rate](/science/measurements/resting-heart-rate), variability and breathing against your own normal — so a nervous system that never clocks out becomes something you can actually see rather than a vague sense of depletion. And it shows the *rebound*, too: because slow, paced breathing raises HRV within minutes, you can watch the brake re-engage in real time in [HRV biofeedback](/hrv-biofeedback) — proof the off-switch still works, even when it feels stuck.
 
 The firewall, plainly: this is a **self-regulation practice, not a treatment**. Breathing tools and better recovery habits sit alongside real rest, boundaries, and — when stress is running your life — professional care. ONDA is not a medical device and does not diagnose anything.
 

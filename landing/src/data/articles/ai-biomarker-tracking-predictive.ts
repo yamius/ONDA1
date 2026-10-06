@@ -26,7 +26,7 @@ const article: Article = {
   content: `
 ## [ ARTICLE: PREDICTIVE_BIOMETRICS // SYSTEM_STABILITY ]
 
-Most trackers tell you how you slept last night. Predictive Analytics tells you how you will perform three days from now. By feeding raw telemetry ([HRV](/glossary/heart-rate-variability), RHR, Skin Temp, Respiratory Rate) into specialized AI models, we move beyond static data points into System Stability Forecasting. We don't just track the crash; we calculate the probability of the "Biological Reboot" before it happens — the signature of accumulating [allostatic load](/glossary/allostatic-load) drifting your [biological signature](/glossary/biological-signature) out of [homeostasis](/glossary/homeostasis).
+Most trackers tell you how you slept last night. Predictive Analytics tells you how you will perform three days from now. By feeding raw telemetry ([HRV](/glossary/heart-rate-variability), RHR, Skin Temp, [Respiratory Rate](/science/measurements/respiratory-rate)) into specialized AI models, we move beyond static data points into System Stability Forecasting. We don't just track the crash; we calculate the probability of the "Biological Reboot" before it happens — the signature of accumulating [allostatic load](/glossary/allostatic-load) drifting your [biological signature](/glossary/biological-signature) out of [homeostasis](/glossary/homeostasis).
 
 ---
 
