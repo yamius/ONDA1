@@ -1,17 +1,17 @@
 /**
- * Diary storage — LOCAL-FIRST (retention step 3).
+ * Diary storage — ON-DEVICE ONLY (retention step 3; 1.9.3).
  *
- * The diary must work with no account: entries are written to localStorage the
- * instant they're saved. When (and only when) the user later signs in, the
- * un-synced local entries migrate into Supabase `diary_entries` (text + metadata;
- * voice audio stays base64-local until a Storage bucket exists — fast-follow).
+ * PRIVACY PROMISE (App Store description, privacy policy, App Privacy labels):
+ * the journal — text, voice and camera pulse checks — NEVER leaves the phone.
+ * There is NO server sync, signed in or not. Do not add one: it would make the
+ * public description and the privacy labels untrue. (Before 1.9.3, signed-in
+ * users' entry text was upserted to Supabase `diary_entries`; that sync was
+ * removed in 1.9.3.) The only way an entry leaves the device is the user's own
+ * explicit PDF/HTML export through the share sheet.
  *
- * Privacy canon: nothing here leaves the device before an explicit sign-in, and
- * no third-party tracker ever sees entry CONTENT. Analytics carry counts/flags only.
+ * No third-party tracker ever sees entry CONTENT; analytics carry counts/flags only.
  */
 import { Preferences } from '@capacitor/preferences';
-import { supabase } from './supabase';
-import { trackEvent } from '../services/AnalyticsService';
 
 /* ── Durable copy (1.9.3) ────────────────────────────────────────────────────
  * Diary entries are the person's own words — losing them hurts more than any
@@ -23,7 +23,7 @@ import { trackEvent } from '../services/AnalyticsService';
  *    launch = migration (local → Preferences); after a purge = restore.
  *  - Until hydration finishes, saves touch ONLY localStorage (a partial list can
  *    never overwrite the durable copy); hydration then unions both.
- *  - Deleted ids are kept as tombstones so a sign-in pull can't resurrect them.
+ *  - Deleted ids are kept as tombstones so the launch union can't resurrect them.
  * Voice/photo media stays in IndexedDB (too big for Preferences).
  */
 const PREF_KEY = 'onda_diary_entries';
@@ -80,7 +80,7 @@ export interface DiaryEntry {
   source: DiarySource;
   rhr?: number | null;     // resting-pulse snapshot for that day, if known (§5)
   // Anomaly provenance (step 4) — set when the note was created from a trigger.
-  // Feeds the future pattern model (§5); columns already exist in diary_entries.
+  // Feeds the future ON-DEVICE pattern model (§5); never uploaded.
   fromAnomaly?: boolean;
   anomalyMetric?: string;  // rhr | hrv | rr
   anomalyDelta?: number;   // signed deviation from the corridor mean
@@ -237,101 +237,3 @@ export function newDiaryId(): string {
   }
 }
 
-/**
- * Migrate un-synced local entries into Supabase. Idempotent: upserts on
- * (user_id, client_id) so re-running never duplicates. Audio is intentionally
- * NOT uploaded yet (base64 stays local until the Storage bucket lands with the
- * photo fast-follow). Returns how many rows were pushed.
- */
-export async function syncDiaryEntries(userId: string): Promise<number> {
-  // Never sync against a not-yet-restored list (e.g. right after an iOS purge).
-  try { await hydrateDiary(); } catch { /* noop */ }
-  const pushed = await pushDiaryEntries(userId);
-  const pulled = await pullDiaryEntries(userId);
-  return pushed + pulled;
-}
-
-/**
- * Bring back entries that exist in the account but not on this device (new
- * phone, reinstall, purge) — 1.9.3 sign-in merge. Union by id: a local copy
- * always wins (it may carry voice/photo flags the server doesn't have); ids
- * deleted on this device are skipped and removed from the server too.
- */
-async function pullDiaryEntries(userId: string): Promise<number> {
-  const { data, error } = await supabase
-    .from('diary_entries')
-    .select('client_id, text, source, event_time, rhr, anomaly_metric, anomaly_delta, anomaly_prompted, created_at')
-    .eq('user_id', userId);
-  if (error || !Array.isArray(data)) {
-    if (error) console.warn('[diary] pull failed:', error.message);
-    return 0;
-  }
-  const tomb = loadTombstones();
-  const current = loadDiaryEntries();
-  const have = new Set(current.map((e) => e.id));
-  const added: DiaryEntry[] = data
-    .filter((r) => r.client_id && !have.has(r.client_id) && !tomb.has(r.client_id))
-    .map((r) => ({
-      id: r.client_id,
-      created_at: r.created_at,
-      event_time: r.event_time || r.created_at,
-      text: r.text || '',
-      source: (r.source || 'text') as DiarySource,
-      rhr: r.rhr ?? null,
-      fromAnomaly: !!r.anomaly_prompted,
-      anomalyMetric: r.anomaly_metric ?? undefined,
-      anomalyDelta: r.anomaly_delta ?? undefined,
-      synced: true,
-    }));
-  if (added.length) saveDiaryEntries([...current, ...added]);
-  // Deleted here while signed out → delete on the server now.
-  data.filter((r) => r.client_id && tomb.has(r.client_id))
-    .forEach((r) => { deleteDiaryEntryRemote(userId, r.client_id); });
-  return added.length;
-}
-
-async function pushDiaryEntries(userId: string): Promise<number> {
-  const entries = loadDiaryEntries();
-  const pending = entries.filter((e) => !e.synced);
-  if (pending.length === 0) return 0;
-
-  const rows = pending.map((e) => ({
-    user_id: userId,
-    client_id: e.id,
-    text: e.text,
-    source: e.source,
-    event_time: e.event_time,
-    rhr: e.rhr ?? null,
-    anomaly_metric: e.anomalyMetric ?? null,
-    anomaly_delta: e.anomalyDelta ?? null,
-    anomaly_prompted: e.fromAnomaly ?? false,
-    created_at: e.created_at,
-    updated_at: new Date().toISOString(),
-  }));
-
-  const { error } = await supabase
-    .from('diary_entries')
-    .upsert(rows, { onConflict: 'user_id,client_id' });
-  if (error) {
-    console.warn('[diary] sync failed:', error.message);
-    return 0;
-  }
-
-  const syncedIds = new Set(pending.map((e) => e.id));
-  saveDiaryEntries(entries.map((e) => (syncedIds.has(e.id) ? { ...e, synced: true } : e)));
-  try {
-    trackEvent('diary_synced', { count: pending.length });
-  } catch {
-    /* analytics is best-effort */
-  }
-  return pending.length;
-}
-
-/** Remove a deleted entry from Supabase too (best-effort) while signed in. */
-export async function deleteDiaryEntryRemote(userId: string, clientId: string): Promise<void> {
-  try {
-    await supabase.from('diary_entries').delete().eq('user_id', userId).eq('client_id', clientId);
-  } catch (e) {
-    console.warn('[diary] remote delete failed:', e);
-  }
-}
