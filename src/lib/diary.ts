@@ -9,8 +9,62 @@
  * Privacy canon: nothing here leaves the device before an explicit sign-in, and
  * no third-party tracker ever sees entry CONTENT. Analytics carry counts/flags only.
  */
+import { Preferences } from '@capacitor/preferences';
 import { supabase } from './supabase';
 import { trackEvent } from '../services/AnalyticsService';
+
+/* ── Durable copy (1.9.3) ────────────────────────────────────────────────────
+ * Diary entries are the person's own words — losing them hurts more than any
+ * counter. localStorage lives inside the web view, which iOS may purge under
+ * disk pressure, so the DURABLE copy now lives in Capacitor Preferences (native
+ * UserDefaults). localStorage stays as a synchronous mirror so every existing
+ * reader (loadDiaryEntries) keeps working unchanged.
+ *  - Launch: hydrateDiary() unions Preferences + localStorage by id. First 1.9.3
+ *    launch = migration (local → Preferences); after a purge = restore.
+ *  - Until hydration finishes, saves touch ONLY localStorage (a partial list can
+ *    never overwrite the durable copy); hydration then unions both.
+ *  - Deleted ids are kept as tombstones so a sign-in pull can't resurrect them.
+ * Voice/photo media stays in IndexedDB (too big for Preferences).
+ */
+const PREF_KEY = 'onda_diary_entries';
+const TOMB_KEY = 'onda_diary_deleted';
+const TOMB_MAX = 500;
+let diaryHydrated = false;
+let hydratePromise: Promise<void> | null = null;
+
+function loadTombstones(): Set<string> {
+  try { const raw = localStorage.getItem(TOMB_KEY); return new Set(raw ? (JSON.parse(raw) as string[]) : []); } catch { return new Set(); }
+}
+function saveTombstones(ids: Set<string>): void {
+  const arr = Array.from(ids).slice(-TOMB_MAX);
+  const raw = JSON.stringify(arr);
+  try { localStorage.setItem(TOMB_KEY, raw); } catch { /* noop */ }
+  if (diaryHydrated) { Preferences.set({ key: TOMB_KEY, value: raw }).catch(() => undefined); }
+}
+/** Union by id — `primary` wins on conflict. */
+function unionById(primary: DiaryEntry[], secondary: DiaryEntry[]): DiaryEntry[] {
+  const seen = new Set(primary.map((e) => e.id));
+  return [...primary, ...secondary.filter((e) => e && e.id && !seen.has(e.id))];
+}
+
+/** Call once at app start. Idempotent; resolves when the diary is safe to sync. */
+export function hydrateDiary(): Promise<void> {
+  if (hydratePromise) return hydratePromise;
+  hydratePromise = (async () => {
+    const local = loadDiaryEntries();
+    let durable: DiaryEntry[] = [];
+    let durableTomb: string[] = [];
+    try { const { value } = await Preferences.get({ key: PREF_KEY }); if (value) { const a = JSON.parse(value); if (Array.isArray(a)) durable = a; } } catch { /* noop */ }
+    try { const { value } = await Preferences.get({ key: TOMB_KEY }); if (value) { const a = JSON.parse(value); if (Array.isArray(a)) durableTomb = a; } } catch { /* noop */ }
+    const tomb = loadTombstones();
+    durableTomb.forEach((id) => tomb.add(id));
+    const merged = unionById(local, durable).filter((e) => !tomb.has(e.id));
+    diaryHydrated = true;
+    saveTombstones(tomb);
+    saveDiaryEntries(merged); // writes both the mirror and the durable copy
+  })();
+  return hydratePromise;
+}
 
 export type DiarySource = 'text' | 'voice' | 'photo' | 'text_voice' | 'mixed' | 'camera_checkin';
 
@@ -154,11 +208,25 @@ export function loadDiaryEntries(): DiaryEntry[] {
 }
 
 export function saveDiaryEntries(entries: DiaryEntry[]): void {
+  // Entries that disappeared since the last save were deleted → tombstone them
+  // so a later Supabase pull can't bring them back.
   try {
-    localStorage.setItem(KEY, JSON.stringify(entries));
+    const next = new Set(entries.map((e) => e.id));
+    const removed = loadDiaryEntries().filter((e) => !next.has(e.id)).map((e) => e.id);
+    if (removed.length) {
+      const tomb = loadTombstones();
+      removed.forEach((id) => tomb.add(id));
+      saveTombstones(tomb);
+    }
+  } catch { /* noop */ }
+  const raw = JSON.stringify(entries);
+  try {
+    localStorage.setItem(KEY, raw);
   } catch {
     /* quota / private mode — the note is still in state for this session */
   }
+  // Durable native copy — only once hydrated (see hydrateDiary).
+  if (diaryHydrated) { Preferences.set({ key: PREF_KEY, value: raw }).catch(() => undefined); }
 }
 
 export function newDiaryId(): string {
@@ -176,6 +244,53 @@ export function newDiaryId(): string {
  * photo fast-follow). Returns how many rows were pushed.
  */
 export async function syncDiaryEntries(userId: string): Promise<number> {
+  // Never sync against a not-yet-restored list (e.g. right after an iOS purge).
+  try { await hydrateDiary(); } catch { /* noop */ }
+  const pushed = await pushDiaryEntries(userId);
+  const pulled = await pullDiaryEntries(userId);
+  return pushed + pulled;
+}
+
+/**
+ * Bring back entries that exist in the account but not on this device (new
+ * phone, reinstall, purge) — 1.9.3 sign-in merge. Union by id: a local copy
+ * always wins (it may carry voice/photo flags the server doesn't have); ids
+ * deleted on this device are skipped and removed from the server too.
+ */
+async function pullDiaryEntries(userId: string): Promise<number> {
+  const { data, error } = await supabase
+    .from('diary_entries')
+    .select('client_id, text, source, event_time, rhr, anomaly_metric, anomaly_delta, anomaly_prompted, created_at')
+    .eq('user_id', userId);
+  if (error || !Array.isArray(data)) {
+    if (error) console.warn('[diary] pull failed:', error.message);
+    return 0;
+  }
+  const tomb = loadTombstones();
+  const current = loadDiaryEntries();
+  const have = new Set(current.map((e) => e.id));
+  const added: DiaryEntry[] = data
+    .filter((r) => r.client_id && !have.has(r.client_id) && !tomb.has(r.client_id))
+    .map((r) => ({
+      id: r.client_id,
+      created_at: r.created_at,
+      event_time: r.event_time || r.created_at,
+      text: r.text || '',
+      source: (r.source || 'text') as DiarySource,
+      rhr: r.rhr ?? null,
+      fromAnomaly: !!r.anomaly_prompted,
+      anomalyMetric: r.anomaly_metric ?? undefined,
+      anomalyDelta: r.anomaly_delta ?? undefined,
+      synced: true,
+    }));
+  if (added.length) saveDiaryEntries([...current, ...added]);
+  // Deleted here while signed out → delete on the server now.
+  data.filter((r) => r.client_id && tomb.has(r.client_id))
+    .forEach((r) => { deleteDiaryEntryRemote(userId, r.client_id); });
+  return added.length;
+}
+
+async function pushDiaryEntries(userId: string): Promise<number> {
   const entries = loadDiaryEntries();
   const pending = entries.filter((e) => !e.synced);
   if (pending.length === 0) return 0;
