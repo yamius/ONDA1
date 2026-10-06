@@ -1690,11 +1690,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/measurements": {
     "published": "2026-09-06T17:37:13+02:00",
-    "modified": "2026-10-05T10:55:46+02:00"
+    "modified": "2026-10-06T11:56:43+02:00"
   },
   "page:/how-it-works": {
     "published": "2026-09-06T17:37:13+02:00",
-    "modified": "2026-10-05T10:55:46+02:00"
+    "modified": "2026-10-06T11:56:43+02:00"
   },
   "page:/product": {
     "published": "2026-09-06T18:55:14+02:00",

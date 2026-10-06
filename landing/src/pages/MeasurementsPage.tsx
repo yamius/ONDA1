@@ -37,6 +37,7 @@ function setMeta(name: string, content: string, isProperty = false) {
 
 const KIND_CLASS: Record<MKind, string> = {
   measured: 'text-terminal-green border-terminal-green/40',
+  health: 'text-emerald-200 border-emerald-200/40',
   derived: 'text-cyan-300 border-cyan-300/40',
   estimated: 'text-amber-300 border-amber-300/40',
 }
@@ -92,7 +93,7 @@ export function MeasurementsPage() {
     // WebPage + FAQPage JSON-LD + hreflang emitted statically by prerender/meta-inject.
   }, [copy, pageUrl])
 
-  const kinds: MKind[] = ['measured', 'derived', 'estimated']
+  const kinds: MKind[] = ['measured', 'health', 'derived', 'estimated']
 
   return (
     <main className="mx-auto max-w-4xl px-4 pb-24 md:px-6">

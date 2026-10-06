@@ -5,7 +5,7 @@
  * MeasurementsPage apply to every translation (coherence is derived, stress/
  * energy are estimates, ONDA is not a medical device).
  */
-export type MKind = 'measured' | 'derived' | 'estimated'
+export type MKind = 'measured' | 'health' | 'derived' | 'estimated'
 export interface MSignal {
   signal: string
   source: string
@@ -41,7 +41,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
     h1: 'What ONDA actually measures.',
     heroLead:
       'Words like HRV, coherence and your resting trend sit side by side in the app — but they are not the same kind of number. Some are measured directly from your heart and some are derived. Here is exactly which is which, so you (and any system citing us) never have to guess.',
-    kindLabels: { measured: 'Directly measured', derived: 'Derived', estimated: 'Estimated' },
+    kindLabels: { measured: 'Directly measured', health: 'Read from Apple Health', derived: 'Derived', estimated: 'Estimated' },
     tableHeaders: { signal: 'Signal', source: 'Source', type: 'Type', meaning: 'What it means' },
     signals: [
       {
@@ -53,7 +53,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       {
         signal: 'HRV (SDNN)',
         source: 'Read ready-made from Apple Health, where an Apple Watch (or another device) records it. ONDA does not compute HRV itself; the iPhone camera measures pulse only, not HRV',
-        kind: 'measured',
+        kind: 'health',
         meaning: 'Heart-rate variability — the variation between heartbeats, the core recovery/autonomic signal.',
       },
       {
@@ -66,13 +66,13 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       {
         signal: 'Resting heart rate, breathing rate',
         source: 'Read from Apple Health (nightly values recorded by an Apple Watch)',
-        kind: 'measured',
+        kind: 'health',
         meaning: 'Two of the three nightly signals in your baseline, alongside HRV.',
       },
       {
         signal: 'VO₂max, walking heart rate, 1-minute heart-rate recovery',
         source: 'Read from Apple Health (recorded by an Apple Watch)',
-        kind: 'measured',
+        kind: 'health',
         meaning: 'Fitness context shown around your baseline; ONDA does not compute these values itself.',
       },
       {
@@ -139,7 +139,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
     h1: 'Что ONDA на самом деле измеряет.',
     heroLead:
       'Слова вроде HRV, когерентности и тренда в покое стоят в приложении рядом — но это числа разного рода. Что-то измеряется напрямую с сердца, а что-то выводится. Вот что именно есть что, чтобы вам (и любой системе, которая нас цитирует) не приходилось гадать.',
-    kindLabels: { measured: 'Измеряется напрямую', derived: 'Выводится', estimated: 'Оценивается' },
+    kindLabels: { measured: 'Измеряется напрямую', health: 'Читается из Apple Health', derived: 'Выводится', estimated: 'Оценивается' },
     tableHeaders: { signal: 'Сигнал', source: 'Источник', type: 'Тип', meaning: 'Что означает' },
     signals: [
       {
@@ -151,7 +151,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       {
         signal: 'HRV (SDNN)',
         source: 'Берётся готовым из Apple Health, куда его записывают Apple Watch (или другое устройство). ONDA не вычисляет HRV сама; камера iPhone измеряет только пульс, не HRV',
-        kind: 'measured',
+        kind: 'health',
         meaning: 'Вариабельность сердечного ритма — вариация между ударами, ключевой сигнал восстановления/вегетатики.',
       },
       {
@@ -164,13 +164,13 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       {
         signal: 'Пульс в покое, частота дыхания',
         source: 'Считываются из Apple Health (ночные значения, записанные Apple Watch)',
-        kind: 'measured',
+        kind: 'health',
         meaning: 'Два из трёх ночных сигналов вашего базового уровня, вместе с HRV.',
       },
       {
         signal: 'VO₂max, пульс при ходьбе, восстановление пульса за 1 минуту',
         source: 'Считываются из Apple Health (записаны Apple Watch)',
-        kind: 'measured',
+        kind: 'health',
         meaning: 'Фитнес-контекст вокруг вашего базового уровня; ONDA не вычисляет эти значения сама.',
       },
       {
@@ -237,7 +237,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
     h1: 'Qué mide realmente ONDA.',
     heroLead:
       'Palabras como HRV, coherencia y tu tendencia en reposo conviven en la app — pero no son el mismo tipo de número. Algunos se miden directamente de tu corazón y otros se derivan. Aquí tienes exactamente cuál es cuál, para que tú (y cualquier sistema que nos cite) nunca tengas que adivinar.',
-    kindLabels: { measured: 'Medido directamente', derived: 'Derivado', estimated: 'Estimado' },
+    kindLabels: { measured: 'Medido directamente', health: 'Se lee de Apple Health', derived: 'Derivado', estimated: 'Estimado' },
     tableHeaders: { signal: 'Señal', source: 'Fuente', type: 'Tipo', meaning: 'Qué significa' },
     signals: [
       {
@@ -249,7 +249,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       {
         signal: 'HRV (SDNN)',
         source: 'Se lee ya calculada de Apple Salud, donde la registra un Apple Watch (u otro dispositivo). ONDA no calcula la HRV por sí misma; la cámara del iPhone solo mide el pulso, no la HRV',
-        kind: 'measured',
+        kind: 'health',
         meaning: 'Variabilidad de la frecuencia cardíaca — la variación entre latidos, la señal central de recuperación/autonómica.',
       },
       {
@@ -262,13 +262,13 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       {
         signal: 'Frecuencia cardíaca en reposo, frecuencia respiratoria',
         source: 'Se leen de Apple Salud (valores nocturnos registrados por un Apple Watch)',
-        kind: 'measured',
+        kind: 'health',
         meaning: 'Dos de las tres señales nocturnas de tu línea base, junto con la HRV.',
       },
       {
         signal: 'VO₂máx, frecuencia cardíaca al caminar, recuperación de la frecuencia cardíaca en 1 minuto',
         source: 'Se leen de Apple Salud (registrados por un Apple Watch)',
-        kind: 'measured',
+        kind: 'health',
         meaning: 'Contexto de forma física alrededor de tu línea base; ONDA no calcula estos valores por sí misma.',
       },
       {
