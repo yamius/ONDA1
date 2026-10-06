@@ -405,7 +405,7 @@ export function ArticlePage() {
     .slice(0, 5)
 
   const markdownComponents = {
-    h2: ({ children, id, ...props }: { children?: React.ReactNode; id?: string }) => {
+    h2: ({ children, id, node: _node, ...props }: { children?: React.ReactNode; id?: string; node?: unknown }) => {
       const text = typeof children === 'string' ? children : String(children)
       const isSystemStatus = text.includes('System Status') && article.slug === 'gut-brain-axis-data-link'
       const isCLIStatus = text.includes('CLI Active') && article.slug === 'breathwork-command-line-interface'
@@ -427,7 +427,7 @@ export function ArticlePage() {
         </h2>
       )
     },
-    h3: ({ children, id, ...props }: { children?: React.ReactNode; id?: string }) => {
+    h3: ({ children, id, node: _node, ...props }: { children?: React.ReactNode; id?: string; node?: unknown }) => {
       const text = typeof children === 'string' ? children : String(children)
       const isProtocol = text.startsWith('PROTOCOL ') || text.startsWith('PROTOCOL_')
       const isCognitiveNeuralProtocol = isProtocol && article.slug === 'cognitive-architecture-neural-throughput'

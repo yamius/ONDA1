@@ -290,7 +290,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
   ],
   "pranayama-metabolic-syndrome": [
     { question: "Can pranayama help metabolic syndrome?", answer: "As a complement to lifestyle change, research in young adults suggests it can. A study in medical students with raised BMI or blood pressure found pranayama improved clinical predictors of metabolic syndrome. It targets the stress and autonomic drivers of the syndrome alongside diet and exercise." },
-    { question: "How does breathing affect metabolic health?", answer: "Through stress physiology. Chronic stress raises cortisol and sympathetic activity, promoting abdominal fat, high blood pressure and insulin resistance. Slow breathing shifts you toward parasympathetic dominance, lowers blood pressure and supports healthier HRV." },
+    { question: "How does breathing affect metabolic health?", answer: "Through stress physiology. Chronic stress raises cortisol and sympathetic activity, promoting abdominal fat, high blood pressure and insulin resistance. Slow breathing can increase parasympathetic (vagal) activity, lowers blood pressure and supports healthier HRV." },
     { question: "Is breathing enough on its own for metabolic syndrome?", answer: "No. Diet, movement and less sitting are the foundations. Breathing is a low-cost complement that targets the stress component; together they work best." },
     { question: "How much breathing practice is needed?", answer: "A few minutes of slow, exhale-led breathing once or twice a day, practiced consistently over weeks. The benefit is in the regular habit, not occasional sessions." },
     { question: "Why study medical students?", answer: "Their demanding, sedentary, high-stress routine puts them at risk of raised BMI and blood pressure early, making them a useful high-risk group for testing prevention — and a warning for sedentary young adults generally." },
@@ -310,7 +310,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     { question: "Which poses energize rather than calm?", answer: "Sun salutations, standing poses and backbends raise heart rate and alertness. Use them earlier in the day, not before sleep or to calm anxiety." },
   ],
   "yoga-breathing-diabetes-blood-sugar": [
-    { question: "Can yoga and breathing help type 2 diabetes?", answer: "As a complement to medication, yes. Indian trials found structured yoga and pranayama added to standard drugs improved blood sugar, HRV, sympathovagal balance and cardiometabolic risk more than medication alone. It supports, not replaces, diabetes treatment." },
+    { question: "Can yoga and breathing help type 2 diabetes?", answer: "As a complement to medication, yes. Indian trials found structured yoga and pranayama added to standard drugs improved blood sugar, HRV and cardiometabolic risk more than medication alone. It supports, not replaces, diabetes treatment." },
     { question: "Does breathing lower blood sugar?", answer: "Indirectly and modestly. Slow breathing and relaxation lower stress hormones such as cortisol that raise blood sugar, and structured yoga-and-breathing programs improved glucose in trials. It works best alongside diet, activity and medication." },
     { question: "How long before yoga helps diabetes?", answer: "The trials used several weeks to three months of regular practice. Benefits build with consistency; a single session is not the point." },
     { question: "Can I stop diabetes medication if I do yoga?", answer: "No. The benefits appeared on top of medication. Never stop or change diabetes medication without your doctor, and monitor your blood sugar because your needs may change over time." },
@@ -1239,7 +1239,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'What is DFA alpha 1 and how is it used in the wind-down protocol?',
       answer:
-        'DFA alpha 1 (Detrended Fluctuation Analysis) measures the fractal correlation of heart rate, serving as a real-time indicator of autonomic balance. A value above 1.0 signals parasympathetic dominance and readiness for restorative sleep. In the ONDA Deep Reset protocol, if evening readings stay elevated, a slow guided breathing session (about 0.1 Hz) helps the transition within 8–12 minutes.',
+        'DFA alpha 1 (Detrended Fluctuation Analysis) is a research index of the fractal correlation of heart rate; it is not a direct reading of autonomic balance or parasympathetic dominance. In the ONDA Deep Reset protocol, if evening readings stay elevated, a slow guided breathing session (about 0.1 Hz) can help you settle; how fast it works varies.',
     },
   ],
   'ventral-tegmental-core-motivational-salience': [
@@ -2575,7 +2575,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Why does my HRV change so much during the day?",
       answer:
-        "Because HRV reflects your autonomic balance moment to moment, and that shifts constantly — with time of day, posture, breathing, recent caffeine, food, exercise, alcohol, even talking or a stray stressful thought. That's the metric doing its job, not a malfunction, which is why a reading taken without controlling the conditions tells you almost nothing.",
+        "Because HRV reflects moment-to-moment activity of your autonomic nervous system, and that activity shifts constantly — with time of day, posture, breathing, recent caffeine, food, exercise, alcohol, even talking or a stray stressful thought. That's the metric doing its job, not a malfunction, which is why a reading taken without controlling the conditions tells you almost nothing.",
     },
     {
       question: "When is the best time to measure HRV?",

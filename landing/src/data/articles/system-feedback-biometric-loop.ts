@@ -45,7 +45,7 @@ const article: Article = {
 
 ## What does HRV tell you about your nervous system's readiness?
 
-Heart Rate Variability (HRV) tells you how flexible and ready your nervous system is — it is our primary diagnostic tool for measuring System Latency. High HRV indicates that your nervous system is flexible and ready for high-bandwidth data processing. Low HRV signals that CPU resources are occupied by background processes (stress, inflammation, or under-recovery). In this state, any attempt to 'Overclock' the system will lead to thermal throttling.
+Heart Rate Variability (HRV) tells you how flexible and ready your nervous system is — it is our main signal for the "System Latency" image — an indirect, noisy marker, not a diagnostic tool. High HRV indicates that your nervous system is flexible and ready for high-bandwidth data processing. Low HRV signals that CPU resources are occupied by background processes (stress, inflammation, or under-recovery). In this state, any attempt to 'Overclock' the system will lead to thermal throttling.
 
 ---
 

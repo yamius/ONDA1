@@ -56,7 +56,7 @@ Your urge to breathe isn't driven by a lack of oxygen, but by the accumulation o
 
 ## Section 2: How does diaphragmatic breathing calm the nervous system?
 
-Deep diaphragmatic breathing calms you because the diaphragm acts as a mechanical pump for the Vagus Nerve. Deep, diaphragmatic breathing physically massages the vagal fibers, sending a 'System Clear' signal to the Autonomic Nervous System. Conversely, vertical (shoulder) breathing acts as an 'Emergency Interrupt,' signaling the brain that a threat is present.
+Slow diaphragmatic breathing can calm you, but not because the diaphragm "massages" the vagus nerve — that is an image, not physiology. Slow breathing shifts heart rhythm with each breath (respiratory sinus arrhythmia) and often feels calming, which you can think of as a 'System Clear' signal. See [how breathing affects HRV](/science/mechanisms/breathing-and-hrv). Conversely, vertical (shoulder) breathing acts as an 'Emergency Interrupt,' signaling the brain that a threat is present.
 
 ---
 

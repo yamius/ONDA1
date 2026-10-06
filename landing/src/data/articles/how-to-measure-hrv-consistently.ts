@@ -40,7 +40,7 @@ const article: Article = {
 
 ## Section 1: Why does HRV change so much from reading to reading?
 
-[Heart-rate variability](/glossary/heart-rate-variability) moves so much because it reflects the moment-to-moment balance of your [autonomic nervous system](/science/concepts/autonomic-nervous-system), and that balance shifts constantly. Time of day moves it — HRV follows a circadian curve. Posture moves it — lying, sitting and standing give different numbers. Your breathing moves it hardest of all — [slow breathing](/science/evidence/slow-breathing) inflates it, fast breathing deflates it. Recent caffeine, a recent meal, a recent workout, alcohol the night before, even talking or a stray stressful thought all shift the reading.
+[Heart-rate variability](/glossary/heart-rate-variability) moves so much because it reflects moment-to-moment activity of your [autonomic nervous system](/science/concepts/autonomic-nervous-system) — not a single "balance" dial — and that activity shifts constantly. Time of day moves it — HRV follows a circadian curve. Posture moves it — lying, sitting and standing give different numbers. Your breathing moves it hardest of all — [slow breathing](/science/evidence/slow-breathing) inflates it, fast breathing deflates it. Recent caffeine, a recent meal, a recent workout, alcohol the night before, even talking or a stray stressful thought all shift the reading.
 
 None of that is a malfunction. It's the metric doing its job — tracking a system that genuinely changes minute to minute. Which means an HRV number without its *context* tells you almost nothing.
 

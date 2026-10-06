@@ -54,7 +54,7 @@ const article: Article = {
 
 The brain clears waste through nightly glymphatic flushing, supported by autophagy and a cool brain temperature — not a single intervention but a layered system with three interdependent components:
 
-**Layer 1 — Clearance Efficiency:** The higher your glymphatic throughput at night, the less metabolic sediment remains by morning. This prevents the cumulative micro-damage effect: each cleared night resets the baseline, each dirty run adds to the debt. Clearance efficiency is controlled by HRV (arterial pump pressure), sleep stage architecture (N3 duration), and sleep position (lateral outflow optimization).
+**Layer 1 — Clearance Efficiency:** The higher your glymphatic throughput at night, the less metabolic sediment remains by morning. This prevents the cumulative micro-damage effect: each cleared night resets the baseline, each dirty run adds to the debt. Clearance efficiency is shaped by arterial pulsation (HRV is a heart-rhythm marker, not a measure of pump pressure), sleep stage architecture (N3 duration), and sleep position (lateral outflow optimization).
 
 **Layer 2 — Autophagic Integration:** Nocturnal glymphatic flushing is synchronized with intermittent fasting — finishing the last meal at least 4 hours before sleep. This timing window triggers autophagy: the cellular "self-eating" process that degrades and recycles damaged organelles, misfolded proteins, and dysfunctional mitochondria. Glymphatics clears extracellular waste. Autophagy clears intracellular waste. Running both simultaneously creates a dual-channel purge that no single-mechanism approach can replicate.
 
@@ -94,7 +94,7 @@ Three overrides improve overnight clearance — a 4-hour pre-sleep fast, a cool 
 
 > **Action:** 10–15 minutes of evening Vagus Nerve stimulation via slow resonance breathing (around 0.1 Hz, about 5.5–6 breaths per minute — e.g. 5.5 seconds in, 5.5 seconds out) or cold water throat gargling (30 seconds) 30–60 minutes before sleep.
 
-**Logic:** Evening VNS shifts the system from Sympathetic "Survival" mode into Parasympathetic "Deep Recovery" mode — opening the autonomic gates for cerebrospinal fluid circulation. Vagal activation reduces cortisol, lowers heart rate variability entropy, and stabilizes the arterial pulse wave that drives the glymphatic pump. The system enters sleep pre-configured for maximum purge throughput rather than requiring the first 1–2 sleep cycles to transition out of stress-activated state.
+**Logic:** Slow evening breathing is not vagus nerve stimulation (VNS) in the medical sense, but it can help you wind down before sleep. Think of "opening the gates" for cerebrospinal fluid as a useful image, not literal physiology: there is no direct evidence that a pre-sleep breathing session boosts glymphatic clearance or shortens the transition into deep sleep. See [vagus nerve stimulation: what the evidence shows](/science/evidence/vagus-nerve-stimulation).
 
 ---
 

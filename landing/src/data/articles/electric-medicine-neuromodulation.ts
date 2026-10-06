@@ -35,7 +35,7 @@ const article: Article = {
 
 > "The biological nervous system is a complex electrochemical network. Most traditional optimization methods—supplements, nutrition, lifestyle—operate through the slow chemical pathway. Neuromodulation is a direct access point to your brain's 'Command Line.'
 >
-> In the ONDA model, we view the Vagus Nerve and the Cerebral Cortex as data buses. By utilizing targeted, low-frequency electrical impulses, we can forcibly suppress 'System Noise' (stress), reboot sleep cycles, or instantaneously trigger a state of Deep Focus. This is not medicine in the classical sense—it is the direct management of your consciousness's Hardware."
+> In the ONDA model, we view the Vagus Nerve and the Cerebral Cortex as data buses. By utilizing targeted, low-frequency electrical impulses, researchers are testing whether they can reduce 'System Noise' (stress), support sleep, or sharpen focus — effects that so far are modest, inconsistent and not instant. This is not medicine in the classical sense—it is the direct management of your consciousness's Hardware."
 
 ---
 

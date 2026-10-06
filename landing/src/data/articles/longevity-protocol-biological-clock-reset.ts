@@ -77,9 +77,9 @@ To move beyond basic alignment and into Age Deceleration, implement the three-la
 
 ### Protocol 3: Data-Driven Wind Down
 
-> **Action:** Watch your pulse and breathing settle via the ONDA app during the evening (DFA alpha 1, a heart-rate fractal-correlation index, needs a dedicated HRV tool). Deploy VNS if sympathetic tone remains elevated past the target window.
+> **Action:** Watch your pulse and breathing settle via the ONDA app during the evening (DFA alpha 1, a heart-rate fractal-correlation index, needs a dedicated HRV tool). Add a slow-breathing session if you still feel wound up past the target window.
 
-**Logic:** DFA alpha 1 is one of the most sensitive early indicators of autonomic balance. A value above 1.0 signals parasympathetic dominance and readiness for restorative sleep. We ensure the nervous system has fully transitioned from High-Load to Rest before sleep onset. If the data shows persistent sympathetic tone, a targeted VNS (Vagus Nerve Stimulation) patch — slow paced breathing at 0.1 Hz — forces the transition within 8–12 minutes.
+**Logic:** DFA alpha 1 is a research index of heart-rate patterns; it is not a direct reading of "autonomic balance" or parasympathetic dominance. We ensure the nervous system has fully transitioned from High-Load to Rest before sleep onset. If you still feel wound up, 8–12 minutes of slow paced breathing at 0.1 Hz can help you settle — think of it as a "patch" image; slow breathing is not vagus nerve stimulation (VNS), and how fast it works varies.
 
 ---
 
@@ -87,7 +87,7 @@ To move beyond basic alignment and into Age Deceleration, implement the three-la
 
 By tightening circadian alignment, you're not just sleeping better — you're targeting the same methylation machinery the Horvath Clock reads. Whether that shifts measured biological age is still an open research question; what you can track yourself is the upstream signal.
 
-**Short-term:** Many people report more Deep Sleep and an easier morning cortisol curve within the first week, with [HRV](/science/concepts/heart-rate-variability) often trending upward over a few nights. Individual results vary — use your own data, not these numbers, as the benchmark.
+**Short-term:** Many people report more Deep Sleep and an easier morning cortisol curve within the first week, while effects on [HRV](/science/concepts/heart-rate-variability) are modest, inconsistent and not guaranteed on any timeline. Individual results vary — use your own data, not these numbers, as the benchmark.
 
 **Long-term:** The kind of circadian and metabolic alignment that research associates with healthier aging markers over time. (We don't promise specific telomere, methylation-clock, or sirtuin changes — those are research directions, not guaranteed outcomes.)
 
@@ -121,7 +121,7 @@ Red-light protocols are part of most longevity stacks. The panels that actually 
     },
     {
       name: 'Data-Driven Wind Down',
-      text: 'Monitor heart rate recovery (DFA alpha 1) in the evening. If sympathetic tone is elevated, apply VNS via slow paced breathing at 0.1 Hz for 8–12 minutes.',
+      text: 'Monitor heart rate recovery (DFA alpha 1) in the evening. If you still feel wound up, do slow paced breathing at 0.1 Hz for 8–12 minutes (slow breathing, not vagus nerve stimulation).',
       protocolId: 'longevity_protocol_03_wind_down',
     },
   ],

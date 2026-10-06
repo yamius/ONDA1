@@ -40,7 +40,7 @@ That's one round. Repeat for four rounds to start. Weil's original guidance is t
 
 ## Why the long exhale calms you
 
-Your breathing is directly wired to your [autonomic nervous system](/science/concepts/autonomic-nervous-system). When you inhale, your heart rate speeds up slightly; when you exhale, it slows. Make the exhale longer than the inhale and you tip the balance toward the parasympathetic "rest and digest" branch, lowering heart rate and blood pressure, and signalling safety to the brain.
+Your breathing is directly wired to your [autonomic nervous system](/science/concepts/autonomic-nervous-system). When you inhale, your heart rate speeds up slightly; when you exhale, it slows. Make the exhale longer than the inhale and you favour the parasympathetic "rest and digest" branch during the breath, which can lower heart rate, and signalling safety to the brain.
 
 The 7-second hold adds a second effect: a brief, gentle rise in carbon dioxide, which at low levels has a calming, vasodilating influence and helps interrupt the fast, shallow breathing of a stressed state. Together, the hold and the extended exhale are what make 4-7-8 a wind-down tool rather than an energizing one. This is measurable — as you settle into the pattern, [heart rate variability](/science/concepts/heart-rate-variability) (HRV) rises, reflecting the shift toward calm.
 

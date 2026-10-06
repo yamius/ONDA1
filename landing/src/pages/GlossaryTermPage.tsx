@@ -231,12 +231,12 @@ export function GlossaryTermPage() {
         <Markdown
           rehypePlugins={[rehypeSlug]}
           components={{
-            h2: ({ children, id, ...props }) => (
+            h2: ({ children, id, node: _node, ...props }) => (
               <h2 id={id} className="mb-4 mt-10 text-2xl font-bold tracking-tight first:mt-0 scroll-mt-24" {...props}>
                 {children}
               </h2>
             ),
-            h3: ({ children, id, ...props }) => (
+            h3: ({ children, id, node: _node, ...props }) => (
               <h3 id={id} className="mb-3 mt-8 text-lg font-semibold text-white/90 scroll-mt-24" {...props}>
                 {children}
               </h3>

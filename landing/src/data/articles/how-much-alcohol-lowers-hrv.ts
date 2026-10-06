@@ -47,7 +47,7 @@ The pattern is unambiguous: more alcohol means lower HRV and higher heart rate t
 
 ## Why does alcohol wreck recovery even when you sleep?
 
-It's counterintuitive: alcohol is a depressant, so it should calm you. But its effect on your autonomic nervous system is stimulatory, not calming. As your body metabolizes ethanol and its by-product acetaldehyde, it treats them as toxins and mounts a physiological stress response. This shifts your autonomic balance toward the sympathetic branch and away from the parasympathetic "rest and digest" activity that HRV depends on.
+It's counterintuitive: alcohol is a depressant, so it should calm you. But its effect on your autonomic nervous system is stimulatory, not calming. As your body metabolizes ethanol and its by-product acetaldehyde, it treats them as toxins and mounts a physiological stress response. This raises sympathetic activity and suppresses the parasympathetic "rest and digest" activity that HRV depends on.
 
 The result is a night where your heart never fully downshifts. Peer-reviewed smartwatch research found that even moderate drinking (in that study, about 3–4 or more standard drinks) raised nocturnal resting heart rate significantly (from about 63.6 to 66.6 bpm) — and notably, this happened *without* changing sleep architecture. In other words, your sleep stages can look normal while your cardiovascular system works overtime all night. That gap is why you can "sleep fine" and still feel drained: your body was busy, and your numbers show it even when your sleep tracker doesn't. For how long the alcohol itself lingers, see [how long alcohol stays in your system](/articles/how-long-does-alcohol-stay-in-your-system).
 

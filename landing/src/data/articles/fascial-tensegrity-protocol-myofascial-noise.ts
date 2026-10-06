@@ -47,7 +47,7 @@ Remove the mechanical constriction, release the myofascial tension, and activate
 
 This protocol pairs localized myofascial release with vagal nerve activation to switch the system into a [ SYSTEM_COOLING: ACTIVE ] state.
 
-\`[RELEASE] ---> Tissue Release (Clear Tension) ---> Vagus Activation (Parasympathetic Shift)\`
+\`[RELEASE] ---> Tissue Release (Clear Tension) ---> Slow Exhale (Calming Shift)\`
 
 ### Step A: Tissue Release (Trapezius and Neck Decompression)
 
@@ -59,7 +59,7 @@ This step relieves structural compression around the major vascular pathways sup
 
 ### Step B: Vagus Activation (Down-regulating System Noise)
 
-This step lowers the system Jitter and shifts the body from a "fight-or-flight" state into an optimal recovery state.
+This step uses a slow exhale to help lower the system Jitter. "Vagus activation" here is an image: neither tissue release nor humming has been shown to activate the vagus nerve directly. See [slow breathing: the evidence](/science/evidence/slow-breathing).
 
 > **The Hack:** Inhale smoothly and deeply through the nose over 4 seconds. Exhale slowly over 8 to 10 seconds while making a low-frequency, resonant humming sound (or a long, controlled exhalation through pursed lips). Repeat for 5 full cycles.
 

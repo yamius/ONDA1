@@ -79,7 +79,7 @@ Reset it with 72-hour strict adherence to three primary **Zeitgebers** (time-giv
 
 > **Action:** Vagus Nerve Stimulation (VNS) 2 hours before target sleep time.
 
-**Logic:** We manually force the system from Sympathetic (Alert) to Parasympathetic (Rest) mode. Think of this as "Safely Remove Hardware" before cutting the power. Practical methods: slow diaphragmatic breathing (4-7-8 pattern), cold water face immersion, or low-frequency humming — all engage the afferent vagal pathway and shift you toward the parasympathetic state that helps lower stress-hormone load.
+**Logic:** We help the body settle from alert toward rest — a useful image, since the two branches work together rather than as an on/off mode switch. Think of this as "Safely Remove Hardware" before cutting the power. Practical methods: slow diaphragmatic breathing (4-7-8 pattern), cold water face immersion, or low-frequency humming — all can help you shift toward the calmer, more parasympathetic-leaning state that helps lower stress-hormone load.
 
 ---
 

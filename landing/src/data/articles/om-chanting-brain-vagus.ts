@@ -37,7 +37,7 @@ The control condition is what makes it interesting. Saying "ssss" — similar ef
 
 ## Does OM chanting stimulate the vagus nerve?
 
-Possibly — the [vagus nerve](/science/concepts/vagus-nerve) is the leading hypothesis for why humming a syllable would quiet the amygdala. OM produces a strong vibration in the throat and is felt in the ears. The vagus nerve has a branch in the larynx and an auricular branch in the ear, and the authors proposed that OM's vibration stimulates these branches — shifting autonomic balance toward parasympathetic "rest and digest" and quieting the limbic system. That is why they compared the pattern with clinical vagus nerve stimulation (VNS). The comparison is a hypothesis about mechanism, not proof that chanting equals a medical device.
+Possibly — the [vagus nerve](/science/concepts/vagus-nerve) is the leading hypothesis for why humming a syllable would quiet the amygdala. OM produces a strong vibration in the throat and is felt in the ears. The vagus nerve has a branch in the larynx and an auricular branch in the ear, and the authors proposed that OM's vibration stimulates these branches — increasing parasympathetic "rest and digest" activity and quieting the limbic system. That is why they compared the pattern with clinical vagus nerve stimulation (VNS). The comparison is a hypothesis about mechanism, not proof that chanting equals a medical device.
 
 Heart-rhythm research fits the picture: studies of OM chanting and humming report increases in high-frequency [HRV](/science/concepts/heart-rate-variability), the marker associated with vagal (parasympathetic) activity.
 

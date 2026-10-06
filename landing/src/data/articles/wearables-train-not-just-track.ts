@@ -38,7 +38,7 @@ const article: Article = {
 
 ## Section 1: Tracking is half a loop
 
-The quantified-self promise was measure-then-improve. The measuring got solved brilliantly — rings, watches and straps now capture HRV, sleep and recovery with real precision. The *improve* half quietly went missing. You get told your recovery is low, your HRV dropped, your sleep was poor — and then the tool falls silent, leaving the entire "so what do I do" to you.
+The quantified-self promise was measure-then-improve. The measuring got solved brilliantly — rings, watches and straps now estimate HRV, sleep and recovery well enough to track trends — with measurement error, and less accuracy from cameras. The *improve* half quietly went missing. You get told your recovery is low, your HRV dropped, your sleep was poor — and then the tool falls silent, leaving the entire "so what do I do" to you.
 
 That's passive tracking: a dashboard of the past. It's genuinely useful for spotting trends, but a number you don't act on is just expensive anxiety. The value was never in knowing the number — it was in what the number should *trigger*. This is the whole gap between [passive tracking and active intervention](/articles/active-intervention-vs-passive-tracking).
 

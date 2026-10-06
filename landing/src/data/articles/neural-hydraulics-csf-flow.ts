@@ -51,7 +51,7 @@ const article: Article = {
 
 Three technical parameters determine how efficiently CSF flows through your internal hydraulics:
 
-**Arterial Power (Pulsatility):** Your heart rate and vascular elasticity directly impact the power of the pump. Low HRV and stiff, calcified vessels reduce the amplitude of arterial pulsations — slowing CSF flow velocity and leaving metabolic byproducts in deeper tissue layers. High HRV + elastic arteries = maximum piston stroke = maximum clearance throughput.
+**Arterial Power (Pulsatility):** Arterial pulsations are thought to help drive CSF flow, and stiff vessels may weaken them. HRV is a different thing — a marker of beat-to-beat heart rhythm, not of pulse strength — so "high HRV = maximum piston stroke" is an image, not physiology. See [what HRV measures](/science/concepts/heart-rate-variability).
 
 **Vascular Space (Intercellular Gap):** During Deep Sleep, brain cells (astrocytes) shrink via the AQP4 aquaporin channel system, opening the intercellular space by up to 60%. This expansion is the prerequisite for hydraulic flow — without it, resistance is too high for CSF to penetrate the tissue at clearance-effective velocity. Any factor that prevents Stage N3 entry (cortisol, alcohol, fragmented sleep) keeps this channel closed.
 

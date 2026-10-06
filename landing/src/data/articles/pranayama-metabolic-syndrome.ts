@@ -31,7 +31,7 @@ Metabolic syndrome — the cluster of raised blood pressure, high blood sugar, e
 
 ## Can young people get metabolic syndrome?
 
-Yes — metabolic syndrome was once thought of as a middle-aged problem, but not anymore. Sedentary lifestyles, poor diets, chronic stress and screen-bound days are pushing it into younger people — including students. Medical students were studied precisely because their demanding, sedentary, high-stress routine puts them at risk of raised BMI and blood pressure early. Because the syndrome is driven partly by chronic stress and autonomic imbalance — not only by diet — practices that calm the nervous system have a plausible role alongside the obvious fixes.
+Yes — metabolic syndrome was once thought of as a middle-aged problem, but not anymore. Sedentary lifestyles, poor diets, chronic stress and screen-bound days are pushing it into younger people — including students. Medical students were studied precisely because their demanding, sedentary, high-stress routine puts them at risk of raised BMI and blood pressure early. Because the syndrome is driven partly by chronic stress and disturbed autonomic regulation — not only by diet — practices that calm the nervous system have a plausible role alongside the obvious fixes.
 
 ## What the research found
 
@@ -41,7 +41,7 @@ It fits a broader pattern. [Slow breathing](/science/evidence/slow-breathing) lo
 
 ## How can breathing help metabolic syndrome?
 
-It sounds surprising that breathing could touch a metabolic condition, but the link runs through stress physiology. Chronic stress keeps cortisol and sympathetic activity elevated, which promotes abdominal fat storage, raises blood pressure and worsens insulin resistance — several components of metabolic syndrome at once. Slow breathing pushes back on that axis: it shifts you toward parasympathetic dominance, lowers blood pressure and supports healthier [HRV](/science/concepts/heart-rate-variability). It won't replace diet and exercise — the foundations — but it targets the stress component that ties the cluster together.
+It sounds surprising that breathing could touch a metabolic condition, but the link runs through stress physiology. Chronic stress keeps cortisol and sympathetic activity elevated, which promotes abdominal fat storage, raises blood pressure and worsens insulin resistance — several components of metabolic syndrome at once. Slow breathing pushes back on that axis: it can increase parasympathetic (vagal) activity, lowers blood pressure and supports healthier [HRV](/science/concepts/heart-rate-variability). It won't replace diet and exercise — the foundations — but it targets the stress component that ties the cluster together.
 
 ## How should you practice pranayama for metabolic health?
 
@@ -51,9 +51,9 @@ It sounds surprising that breathing could touch a metabolic condition, but the l
 - **Be consistent.** Benefits come from regular practice over weeks, not occasional sessions.
 - **Track the numbers that matter.** Blood pressure, waist and weight tell you whether the whole package is working; review them with your doctor.
 
-## See your autonomic balance
+## Track the autonomic side
 
-The autonomic side of these benefits is measurable. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from your Apple Watch, so you can track whether your autonomic balance improves as you build a breathing habit alongside better diet and movement (see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally)). ONDA does not measure blood pressure, glucose or cholesterol — keep those with your doctor.
+The autonomic side of these benefits is measurable. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from your Apple Watch, so you can track how these markers change as you build a breathing habit alongside better diet and movement (see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally)). ONDA does not measure blood pressure, glucose or cholesterol — keep those with your doctor.
 
 *ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device. This article draws on Indian research on pranayama and metabolic-syndrome predictors in young adults. It complements, not replaces, medical care and lifestyle change.*
 `,

@@ -44,7 +44,7 @@ const article: Article = {
 
 ## [ SYSTEM STATUS: DATA LINK ACTIVE ]
 
-Your gut-brain axis is online. The bidirectional communication between your microbiome and your brain via the Vagus Nerve determines your mental clarity, emotional stability, and immune resilience.
+Your gut-brain axis is online. The bidirectional communication between your microbiome and your brain — partly via the Vagus Nerve, partly via immune and chemical signals — is one of many influences on mood and immune function; much of the evidence still comes from animal studies. See [the vagus nerve](/science/concepts/vagus-nerve).
 
 ---
 

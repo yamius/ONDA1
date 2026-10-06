@@ -688,7 +688,7 @@ The main objective of Part 1 ("I Am") is the activation of proto-consciousness a
 | Rhythm | Frequency | Function |
 |--------|-----------|----------|
 | **Cardiac** | ~1 Hz | Heartbeat, circulation |
-| **Respiratory** | 0.2–0.3 Hz | Gas exchange, vagal tone |
+| **Respiratory** | 0.2–0.3 Hz | Gas exchange, breath-linked heart-rate changes |
 | **Gastric** | 0.05 Hz | Digestion, peristalsis |
 | **Circadian** | 1/24 hr | Sleep-wake, hormones |
 | **Ultradian** | 90–120 min | Attention cycles, rest |
@@ -781,7 +781,7 @@ The **diaphragm** is the main muscle of respiration — a dome-shaped sheet that
 - **Breathing** — primary driver of inhalation
 - **Pressure regulation** — creates pressure gradient for venous return
 - **Core stability** — part of the inner unit
-- **Vagal stimulation** — mechanical massage of the vagus nerve with each breath
+- **Breathing and heart rhythm** — slow breathing changes heart-rate patterns via respiratory sinus arrhythmia (breathing does not "massage" the vagus nerve)
 
 ## In ONDA Life
 
@@ -975,7 +975,7 @@ Built on: [HRV & vagal tone](https://pubmed.ncbi.nlm.nih.gov/18771686/) (Thayer 
 
 ## In ONDA Life
 
-Increased HRV is a biological marker of Part 1 ("I Am") and Part 2 ("I Move") progress. Part 1 practices activate the parasympathetic system, raising baseline HRV. Part 2 "Rhythmic Coherence" further increases HRV by synchronizing axial movements with the respiratory cycle.
+Increased HRV is a biological marker of Part 1 ("I Am") and Part 2 ("I Move") progress. Part 1 practices aim to support the parasympathetic system; effects on baseline HRV are modest and not guaranteed. Part 2 "Rhythmic Coherence" synchronizes axial movements with the respiratory cycle, which can raise HRV during the practice itself.
 
 **Read the science →** [Heart rate variability on ONDA Science](/science/concepts/heart-rate-variability) — what HRV is, what it reflects and what it doesn't, with sources. The metrics in depth: [RMSSD](/science/concepts/rmssd) and [SDNN](/science/concepts/sdnn); wearable accuracy: [can you trust HRV from a smartwatch or ring?](/science/measurements/heart-rate-variability)
 
@@ -2034,7 +2034,7 @@ The **autonomic nervous system** (ANS) controls involuntary bodily functions: he
 
 ## Polyvagal Refinement
 
-Stephen Porges' Polyvagal Theory further divides the parasympathetic into ventral vagal (social engagement, safety) and dorsal vagal (freeze, shutdown). The ANS can be trained toward "smart parasympathetic" — calm alertness.
+Stephen Porges' Polyvagal Theory — a debated model, not established physiology — proposes dividing the parasympathetic into ventral vagal (social engagement, safety) and dorsal vagal (freeze, shutdown). Many physiologists dispute these premises; see [the autonomic nervous system](/science/concepts/autonomic-nervous-system).
 
 ## In ONDA Life
 

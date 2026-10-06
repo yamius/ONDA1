@@ -61,7 +61,7 @@ Breathing at around 0.1 Hz — about 5.5–6 breaths per minute — causes your 
 
 ## What are the benefits of 0.1 Hz resonance breathing?
 
-The three benefits are blood-pressure leveling, stronger vagal tone, and brain-heart coherence.
+The three proposed benefits are blood-pressure leveling, a calmer parasympathetic state, and brain-heart coherence.
 
 ### Benefit 1 — Blood Pressure Auto-Leveling
 
@@ -69,13 +69,13 @@ The three benefits are blood-pressure leveling, stronger vagal tone, and brain-h
 
 **Mechanism:** Resonating at 0.1 Hz is the fastest non-pharmacological way to lower systemic blood pressure. The repeated synchronization "trains" arterial baroreceptors to detect pressure changes with higher sensitivity and respond faster. Over weeks, the vessels become more elastic and adaptive to load — resting blood pressure drops, and the recovery speed after stress spikes accelerates.
 
-Clinical data: consistent 0.1 Hz biofeedback training produces systolic reductions of 7–15 mmHg in hypertensive individuals within 4–8 weeks, without pharmacological intervention.
+Clinical data: some studies of consistent slow-breathing and HRV-biofeedback training report modest blood-pressure reductions, but results are inconsistent and it is not a substitute for medical treatment ([evidence](/science/evidence/slow-breathing)).
 
 ### Benefit 2 — Vagal Tone Injection (The Parasympathetic Patch)
 
 > **Protocol:** 5 minutes of 0.1 Hz breathing immediately after acute stress — meeting, conflict, physical load.
 
-**Mechanism:** The baroreflex is the front door to the Vagus Nerve. By hijacking it via 0.1 Hz breathing, you force the system into Rest & Digest mode within 90 seconds, clearing the background noise of chronic sympathetic activation. The vagal efferent signal — normally suppressed by stress — is allowed to broadcast again at full amplitude. Cortisol begins dropping. Gut motility resumes. Immune surveillance re-engages.
+**Mechanism:** The baroreflex is the front door to the Vagus Nerve. By engaging it via 0.1 Hz breathing, you can nudge the system toward Rest & Digest (a useful image, not a switch with a timer), easing the background noise of chronic sympathetic activation. The vagal efferent signal — normally suppressed by stress — is allowed to broadcast again at full amplitude. Cortisol begins dropping. Gut motility resumes. Immune surveillance re-engages.
 
 ### Benefit 3 — Brain-Heart Phase Lock (Coherence)
 
@@ -134,7 +134,7 @@ Catching the 0.1 Hz shift cleanly requires an HRV device with enough sampling fi
     },
     {
       name: 'Acute Stress Reset (Parasympathetic Patch)',
-      text: 'Immediately after acute stress — meeting, conflict, physical load — apply 5 minutes of 0.1 Hz breathing. Vagal capture initiates within 90 seconds. Cortisol drops, cognitive noise clears.',
+      text: 'Immediately after acute stress — meeting, conflict, physical load — apply 5 minutes of 0.1 Hz breathing. Many people feel calmer within minutes; the effect varies from person to person.',
       protocolId: 'baroreflex-acute-patch',
     },
     {
