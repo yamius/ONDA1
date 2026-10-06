@@ -209,7 +209,7 @@ evidenceMap:
     class: established
     claimType: other
     quote: "Ten years on, via NEWS/NEWS2, the NHS is the first healthcare system globally with a 'common language' of illness severity and a standardised early warning system for acute clinical illness and deterioration"
-    limitation: "A review by the chair of the development group; the abstract does not list the score's components. That respiratory rate is one of them is supported here by S2 (track-and-trigger systems) — see open question in the report."
+    limitation: "A review by the chair of the development group; the abstract does not list the score's components. That respiratory rate is one of them is supported here by S2 (track-and-trigger systems)."
   - claim: "In one wearable study, a model based on changes in night-time respiratory rate identified a minority of COVID cases before symptoms and most by the third day of symptoms."
     sources: [S11]
     class: emerging
