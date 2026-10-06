@@ -2356,6 +2356,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1920,
     "height": 820
   },
+  "/images/science/evidence-meditation-autonomic-nervous-system.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/evidence-meditation-autonomic-nervous-system.png": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/evidence-meditation-autonomic-nervous-system.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/science/evidence-slow-breathing.avif": {
     "width": 1920,
     "height": 820

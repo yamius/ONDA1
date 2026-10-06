@@ -980,6 +980,16 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/bs.pbr.2018.10.020": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The neuroscience of meditation: classification, phenomenology, correlates, and mechanisms",
+   "authors": [],
+   "year": 2019,
+   "journal": "Progress in Brain Research",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
   "doi:10.1016/j.biopsych.2015.06.016": {
    "kind": "doi",
    "valid": true,
@@ -1369,6 +1379,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.ctim.2017.07.008": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Transcendental meditation for lowering blood pressure: An overview of systematic reviews and meta-analyses",
+   "firstAuthor": "Ooi",
+   "authors": [
+    "Ooi",
+    "Giovino",
+    "Pak"
+   ],
+   "year": 2017,
+   "journal": "Complementary Therapies in Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
   "doi:10.1016/j.ctim.2019.03.005": {
    "kind": "doi",
    "valid": true,
@@ -1538,6 +1563,24 @@
    "firstAuthor": "Heathers",
    "authors": [
     "Heathers"
+   ],
+   "year": 2013,
+   "journal": "International Journal of Psychophysiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.ijpsycho.2013.06.017": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Mindfulness meditation, well-being, and heart rate variability: A preliminary investigation into the impact of intensive Vipassana meditation",
+   "firstAuthor": "Krygier",
+   "authors": [
+    "Krygier",
+    "Heathers",
+    "Shahrestani",
+    "Abbott",
+    "Gross",
+    "Kemp"
    ],
    "year": 2013,
    "journal": "International Journal of Psychophysiology",
@@ -2872,6 +2915,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/s0167-5273(99)00066-2": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Exaggerated heart rate oscillations during two meditation techniques",
+   "firstAuthor": "Peng",
+   "authors": [
+    "Peng",
+    "Mietus",
+    "Liu",
+    "Khalsa",
+    "Douglas",
+    "Benson",
+    "Goldberger"
+   ],
+   "year": 1999,
+   "journal": "International Journal of Cardiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
   "doi:10.1016/s0167-8760(03)00073-4": {
    "kind": "doi",
    "valid": true,
@@ -3284,6 +3346,28 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1038/s41371-018-0130-6": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Benefits of mindfulness meditation in reducing blood pressure and stress in patients with arterial hypertension",
+   "firstAuthor": "Ponte Márquez",
+   "authors": [
+    "Ponte Márquez",
+    "Feliu-Soler",
+    "Solé-Villa",
+    "Matas-Pericas",
+    "Filella-Agullo",
+    "Ruiz-Herrerias",
+    "Soler-Ribaudi",
+    "Roca-Cusachs Coll",
+    "Arroyo-Díaz"
+   ],
+   "year": 2018,
+   "yearAlt": 2019,
+   "journal": "Journal of Human Hypertension",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
   "doi:10.1038/s41380-022-01661-0": {
    "kind": "doi",
    "valid": true,
@@ -3543,6 +3627,23 @@
     "Cavanagh"
    ],
    "year": 2023,
+   "journal": "Scientific Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1038/s41598-026-44902-w": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A digital mindfulness intervention improves sleep efficiency and heart rate variability in healthy adults",
+   "firstAuthor": "Kirk",
+   "authors": [
+    "Kirk",
+    "Hovgaard",
+    "Persiani",
+    "Romagnoli",
+    "Staiano"
+   ],
+   "year": 2026,
    "journal": "Scientific Reports",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
@@ -4043,6 +4144,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1080/17437199.2020.1760727": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Meditation interventions efficiently reduce cortisol levels of at-risk samples: a meta-analysis",
+   "firstAuthor": "Koncz",
+   "authors": [
+    "Koncz",
+    "Demetrovics",
+    "Takacs"
+   ],
+   "year": 2020,
+   "yearAlt": 2021,
+   "journal": "Health Psychology Review",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
   "doi:10.1080/22423982.2022.2111789": {
    "kind": "doi",
    "valid": true,
@@ -4334,6 +4451,24 @@
    ],
    "year": 2012,
    "journal": "Menopause",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1097/hjh.0000000000001217": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Meditation and blood pressure",
+   "firstAuthor": "Shi",
+   "authors": [
+    "Shi",
+    "Zhang",
+    "Wang",
+    "Zhuang",
+    "Cook",
+    "Chen"
+   ],
+   "year": 2017,
+   "journal": "Journal of Hypertension",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
@@ -5106,6 +5241,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1136/bmj.323.7327.1446": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effect of rosary prayer and yoga mantras on autonomic cardiovascular rhythms: comparative study",
+   "firstAuthor": "Bernardi",
+   "authors": [
+    "Bernardi",
+    "Sleight",
+    "Bandinelli",
+    "Cencetti",
+    "Fattorini",
+    "Wdowczyc-Szulc",
+    "Lagi"
+   ],
+   "year": 2001,
+   "journal": "BMJ",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
   "doi:10.1136/bmjopen-2019-031142": {
    "kind": "doi",
    "valid": true,
@@ -5455,6 +5609,56 @@
    ],
    "year": 2026,
    "journal": "Circulation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1161/hyp.0b013e318293645f": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Beyond Medications and Diet: Alternative Approaches to Lowering Blood Pressure",
+   "firstAuthor": "Brook",
+   "authors": [
+    "Brook",
+    "Appel",
+    "Rubenfire",
+    "Ogedegbe",
+    "Bisognano",
+    "Elliott",
+    "Fuchs",
+    "Hughes",
+    "Lackland",
+    "Staffileno",
+    "Townsend",
+    "Rajagopalan"
+   ],
+   "year": 2013,
+   "journal": "Hypertension",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1161/jaha.117.002218": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Meditation and Cardiovascular Risk Reduction",
+   "firstAuthor": "Levine",
+   "authors": [
+    "Levine",
+    "Lange",
+    "Bairey‐Merz",
+    "Davidson",
+    "Jamerson",
+    "Mehta",
+    "Michos",
+    "Norris",
+    "Ray",
+    "Saban",
+    "Shah",
+    "Stein",
+    "Smith",
+    "the American Heart Association Council on Clinical Cardiology; Council on Cardiovascular and Stroke Nursing; and Council on Hypertension"
+   ],
+   "year": 2017,
+   "journal": "Journal of the American Heart Association",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
@@ -5832,6 +6036,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1207/s15324796abm3203_9": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Short-term autonomic and cardiovascular effects of mindfulness body scan meditation",
+   "firstAuthor": "Ditto",
+   "authors": [
+    "Ditto",
+    "Eclache",
+    "Goldman"
+   ],
+   "year": 2006,
+   "journal": "Annals of Behavioral Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
   "doi:10.1210/jc.2008-0125": {
    "kind": "doi",
    "valid": true,
@@ -6206,6 +6425,20 @@
     "Wisløff"
    ],
    "year": 2013,
+   "journal": "PLoS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1371/journal.pone.0102990": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Arousal vs. Relaxation: A Comparison of the Neurophysiological and Cognitive Correlates of Vajrayana and Theravada Meditative Practices",
+   "firstAuthor": "Amihai",
+   "authors": [
+    "Amihai",
+    "Kozhevnikov"
+   ],
+   "year": 2014,
    "journal": "PLoS ONE",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
@@ -6721,6 +6954,22 @@
    ],
    "year": 2012,
    "journal": "Chronobiology International",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3389/fcvm.2019.00062": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Changes in Heart Rate Variability During Heartfulness Meditation: A Power Spectral Analysis Including the Residual Spectrum",
+   "firstAuthor": "Léonard",
+   "authors": [
+    "Léonard",
+    "Clément",
+    "Kuo",
+    "Manto"
+   ],
+   "year": 2019,
+   "journal": "Frontiers in Cardiovascular Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
@@ -7293,6 +7542,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3390/jcm8101638": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A Systematic Review and Meta-Analysis of the Impact of Mindfulness Based Interventions on Heart Rate Variability and Inflammatory Markers",
+   "firstAuthor": "Rådmark",
+   "authors": [
+    "Rådmark",
+    "Sidorchuk",
+    "Osika",
+    "Niemi"
+   ],
+   "year": 2019,
+   "journal": "Journal of Clinical Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-05"
+  },
   "doi:10.3390/jcm8111946": {
    "kind": "doi",
    "valid": true,
@@ -7719,6 +7984,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:10454297": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Exaggerated heart rate oscillations during two meditation techniques.",
+   "firstAuthor": "Peng",
+   "authors": [
+    "Peng",
+    "Mietus",
+    "Liu",
+    "Khalsa",
+    "Douglas",
+    "Benson",
+    "Goldberger"
+   ],
+   "year": 1999,
+   "journal": "Int J Cardiol",
+   "doi": "10.1016/s0167-5273(99)00066-2",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
   "pmid:10486419": {
    "kind": "pmid",
    "valid": true,
@@ -7937,6 +8222,26 @@
    "year": 2001,
    "journal": "Curr Biol",
    "doi": "10.1016/s0960-9822(01)00581-4",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
+  "pmid:11751348": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effect of rosary prayer and yoga mantras on autonomic cardiovascular rhythms: comparative study.",
+   "firstAuthor": "Bernardi",
+   "authors": [
+    "Bernardi",
+    "Sleight",
+    "Bandinelli",
+    "Cencetti",
+    "Fattorini",
+    "Wdowczyc-Szulc",
+    "Lagi"
+   ],
+   "year": 2001,
+   "journal": "BMJ",
+   "doi": "10.1136/bmj.323.7327.1446",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
@@ -8523,6 +8828,22 @@
    "yearAlt": 2006,
    "journal": "Biol Psychol",
    "doi": "10.1016/j.biopsycho.2005.11.014",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
+  "pmid:17107296": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Short-term autonomic and cardiovascular effects of mindfulness body scan meditation.",
+   "firstAuthor": "Ditto",
+   "authors": [
+    "Ditto",
+    "Eclache",
+    "Goldman"
+   ],
+   "year": 2006,
+   "journal": "Ann Behav Med",
+   "doi": "10.1207/s15324796abm3203_9",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
@@ -9722,6 +10043,31 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:23608661": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Beyond medications and diet: alternative approaches to lowering blood pressure: a scientific statement from the american heart association.",
+   "firstAuthor": "Brook",
+   "authors": [
+    "Brook",
+    "Appel",
+    "Rubenfire",
+    "Ogedegbe",
+    "Bisognano",
+    "Elliott",
+    "Fuchs",
+    "Hughes",
+    "Lackland",
+    "Staffileno",
+    "Townsend",
+    "Rajagopalan"
+   ],
+   "year": 2013,
+   "journal": "Hypertension",
+   "doi": "10.1161/HYP.0b013e318293645f",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
   "pmid:23738149": {
    "kind": "pmid",
    "valid": true,
@@ -9752,6 +10098,25 @@
    "year": 2013,
    "journal": "Int J Psychophysiol",
    "doi": "10.1016/j.ijpsycho.2013.05.017",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
+  "pmid:23797150": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Mindfulness meditation, well-being, and heart rate variability: a preliminary investigation into the impact of intensive Vipassana meditation.",
+   "firstAuthor": "Krygier",
+   "authors": [
+    "Krygier",
+    "Heathers",
+    "Shahrestani",
+    "Abbott",
+    "Gross",
+    "Kemp"
+   ],
+   "year": 2013,
+   "journal": "Int J Psychophysiol",
+   "doi": "10.1016/j.ijpsycho.2013.06.017",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
@@ -10043,6 +10408,21 @@
    "year": 2014,
    "journal": "Int J Yoga",
    "doi": "10.4103/0973-6131.133872",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
+  "pmid:25051268": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Arousal vs. relaxation: a comparison of the neurophysiological and cognitive correlates of Vajrayana and Theravada meditative practices.",
+   "firstAuthor": "Amihai",
+   "authors": [
+    "Amihai",
+    "Kozhevnikov"
+   ],
+   "year": 2014,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0102990",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
@@ -10612,6 +10992,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:28033127": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Meditation and blood pressure: a meta-analysis of randomized clinical trials.",
+   "firstAuthor": "Shi",
+   "authors": [
+    "Shi",
+    "Zhang",
+    "Wang",
+    "Zhuang",
+    "Cook",
+    "Chen"
+   ],
+   "year": 2017,
+   "journal": "J Hypertens",
+   "doi": "10.1097/HJH.0000000000001217",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
   "pmid:28057463": {
    "kind": "pmid",
    "valid": true,
@@ -10909,6 +11308,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:28863392": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Mindfulness mediates the physiological markers of stress: Systematic review and meta-analysis.",
+   "firstAuthor": "Pascoe",
+   "authors": [
+    "Pascoe",
+    "Thompson",
+    "Jenkins",
+    "Ski"
+   ],
+   "year": 2017,
+   "journal": "J Psychiatr Res",
+   "doi": "10.1016/j.jpsychires.2017.08.004",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
   "pmid:28890890": {
    "kind": "pmid",
    "valid": true,
@@ -10926,6 +11342,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:28917372": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Transcendental meditation for lowering blood pressure: An overview of systematic reviews and meta-analyses.",
+   "firstAuthor": "Ooi",
+   "authors": [
+    "Ooi",
+    "Giovino",
+    "Pak"
+   ],
+   "year": 2017,
+   "journal": "Complement Ther Med",
+   "doi": "10.1016/j.ctim.2017.07.008",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
   "pmid:28950976": {
    "kind": "pmid",
    "valid": true,
@@ -10938,6 +11370,32 @@
    "year": 2017,
    "journal": "Curr Opin Psychol",
    "doi": "10.1016/j.copsyc.2017.04.020",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
+  "pmid:28963100": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Meditation and Cardiovascular Risk Reduction: A Scientific Statement From the American Heart Association.",
+   "firstAuthor": "Levine",
+   "authors": [
+    "Levine",
+    "Lange",
+    "Bairey-Merz",
+    "Davidson",
+    "Jamerson",
+    "Mehta",
+    "Michos",
+    "Norris",
+    "Ray",
+    "Saban",
+    "Shah",
+    "Stein",
+    "Smith SC Jr"
+   ],
+   "year": 2017,
+   "journal": "J Am Heart Assoc",
+   "doi": "10.1161/JAHA.117.002218",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
@@ -11315,6 +11773,29 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:30425326": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Benefits of mindfulness meditation in reducing blood pressure and stress in patients with arterial hypertension.",
+   "firstAuthor": "Ponte Márquez",
+   "authors": [
+    "Ponte Márquez",
+    "Feliu-Soler",
+    "Solé-Villa",
+    "Matas-Pericas",
+    "Filella-Agullo",
+    "Ruiz-Herrerias",
+    "Soler-Ribaudi",
+    "Roca-Cusachs Coll",
+    "Arroyo-Díaz"
+   ],
+   "year": 2019,
+   "yearAlt": 2018,
+   "journal": "J Hum Hypertens",
+   "doi": "10.1038/s41371-018-0130-6",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
   "pmid:30513777": {
    "kind": "pmid",
    "valid": true,
@@ -11370,6 +11851,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:30732832": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The neuroscience of meditation: classification, phenomenology, correlates, and mechanisms.",
+   "firstAuthor": "Brandmeyer",
+   "authors": [
+    "Brandmeyer",
+    "Delorme",
+    "Wahbeh"
+   ],
+   "year": 2019,
+   "journal": "Prog Brain Res",
+   "doi": "10.1016/bs.pbr.2018.10.020",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
   "pmid:30804536": {
    "kind": "pmid",
    "valid": true,
@@ -11387,6 +11884,23 @@
    "year": 2019,
    "journal": "Nat Biotechnol",
    "doi": "10.1038/s41587-019-0040-3",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
+  "pmid:31139634": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Changes in Heart Rate Variability During Heartfulness Meditation: A Power Spectral Analysis Including the Residual Spectrum.",
+   "firstAuthor": "Léonard",
+   "authors": [
+    "Léonard",
+    "Clément",
+    "Kuo",
+    "Manto"
+   ],
+   "year": 2019,
+   "journal": "Front Cardiovasc Med",
+   "doi": "10.3389/fcvm.2019.00062",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
@@ -11539,6 +12053,23 @@
    "yearAlt": 2019,
    "journal": "Psychophysiology",
    "doi": "10.1111/psyp.13479",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
+  "pmid:31591316": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A Systematic Review and Meta-Analysis of the Impact of Mindfulness Based Interventions on Heart Rate Variability and Inflammatory Markers.",
+   "firstAuthor": "Rådmark",
+   "authors": [
+    "Rådmark",
+    "Sidorchuk",
+    "Osika",
+    "Niemi"
+   ],
+   "year": 2019,
+   "journal": "J Clin Med",
+   "doi": "10.3390/jcm8101638",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
@@ -11755,6 +12286,23 @@
    "yearAlt": 2020,
    "journal": "Explore (NY)",
    "doi": "10.1016/j.explore.2020.03.009",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
+  "pmid:32635830": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Meditation interventions efficiently reduce cortisol levels of at-risk samples: a meta-analysis.",
+   "firstAuthor": "Koncz",
+   "authors": [
+    "Koncz",
+    "Demetrovics",
+    "Takacs"
+   ],
+   "year": 2021,
+   "yearAlt": 2020,
+   "journal": "Health Psychol Rev",
+   "doi": "10.1080/17437199.2020.1760727",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
@@ -13085,6 +13633,24 @@
    "year": 2026,
    "journal": "J Sports Med Phys Fitness",
    "doi": "10.23736/S0022-4707.26.17774-3",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-05"
+  },
+  "pmid:41862627": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A digital mindfulness intervention improves sleep efficiency and heart rate variability in healthy adults.",
+   "firstAuthor": "Kirk",
+   "authors": [
+    "Kirk",
+    "Hovgaard",
+    "Persiani",
+    "Romagnoli",
+    "Staiano"
+   ],
+   "year": 2026,
+   "journal": "Sci Rep",
+   "doi": "10.1038/s41598-026-44902-w",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },

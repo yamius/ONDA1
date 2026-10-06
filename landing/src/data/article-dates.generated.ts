@@ -118,7 +118,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "caffeine-hrv-resting-heart-rate": {
     "published": "2026-09-18T14:42:44+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-05T21:58:43+02:00"
   },
   "calm-your-nervous-system-down": {
     "published": "2026-09-19T01:18:42+02:00",
@@ -486,7 +486,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "normal-hrv-by-age": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-10-04T17:20:27+02:00"
+    "modified": "2026-10-05T20:27:30+02:00"
   },
   "nose-vs-mouth-breathing": {
     "published": "2026-09-22T08:22:18+02:00",
@@ -582,7 +582,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "resting-heart-rate-by-age": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-10-04T17:50:16+02:00"
+    "modified": "2026-10-05T20:27:30+02:00"
   },
   "rhythmic-entrainment-system-frequencies": {
     "published": "2026-03-31T22:29:31Z",
@@ -730,19 +730,19 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-10-05T09:26:25+02:00"
+    "modified": "2026-10-05T23:25:12+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:firmware-update": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:psycho-neural-network": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:molecular-psychology": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -750,11 +750,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:interoception": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:ond-tokens": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:homeostasis": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -762,11 +762,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:primary-interoception": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:metabolism": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:metabolic-flexibility": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -802,15 +802,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:brain": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:mind": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:vagus-nerve": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T07:26:25.000Z"
+    "modified": "2026-10-05T16:43:38.000Z"
   },
   "glossary:mammalian-dive-reflex": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -818,15 +818,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:thalamus": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:proto-consciousness": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:physiological-rhythms": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:hypothalamus": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -838,19 +838,19 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:diaphragm": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T20:40:44.000Z"
   },
   "glossary:parasympathetic-nervous-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T14:56:07.000Z"
   },
   "glossary:sympathetic-nervous-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T14:56:07.000Z"
   },
   "glossary:insula": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:34:14.000Z"
+    "modified": "2026-10-05T20:40:44.000Z"
   },
   "glossary:cortisol": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -858,11 +858,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:peristalsis": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:heart-rate-variability": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-04T22:57:01.000Z"
+    "modified": "2026-10-05T20:40:44.000Z"
   },
   "glossary:rmssd": {
     "published": "2026-10-04T19:18:25.000Z",
@@ -878,55 +878,55 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:central-pattern-generators": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:vestibulo-ocular-reflex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:vestibular-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:cerebellum": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:fascia": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:neurophysiology": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:reticular-formation": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:sensorimotor-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:locomotion": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:body-armor": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:11:15.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:polyvagal-theory": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-04T18:29:31.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:neuroception": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:neuroplasticity": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:bdnf": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -938,31 +938,31 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:hpa-axis": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:proprioception": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:lymphatic-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:motor-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:neurobiology": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:cognitive-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:neuroendocrinology": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:pituitary": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -970,15 +970,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:adrenal": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:adrenaline": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:lymphology": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:dhea": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -990,7 +990,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:thymus": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:basal-ganglia": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1006,31 +1006,31 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:autonomic-nervous-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-04T18:29:31.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:ventral-vagus": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-04T18:29:31.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:quantum-biology": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:coherence": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:biophotonics": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:limbic-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:mirror-neurons": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:oxytocin": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1038,7 +1038,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:anterior-cingulate-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:emotional-osmosis": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1046,67 +1046,67 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:social-sensing": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:11:15.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:norepinephrine": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:prefrontal-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:dorsolateral-prefrontal-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:visual-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:biofeedback": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:p300": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:saccades": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:theta-state": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:alpha-state": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:cognitive-gap": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:11:15.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:default-mode-network": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:dorsal-attention-network": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:acetylcholine": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:locus-coeruleus": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:dopamine": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:ventral-tegmental-area": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1118,171 +1118,171 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:ultradian-rhythm": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:gamma-binding": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:cholinergic-modulation": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:neurotransmitters": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:10:02.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:beta-rhythm": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:frontal-lobes": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:hippocampus": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:predictive-coding": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T20:40:44.000Z"
   },
   "glossary:posterior-parietal-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:reticular-activating-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:galvanic-skin-response": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:flow-state": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:hormones": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:occipital-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:gamma-synchronization": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:medial-prefrontal-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:proactive-programming": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:neural-reframing": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:synaptic-connections": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:brocas-area": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-04T18:29:31.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:wernickes-area": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:amygdala": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:thyroid-gland": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:cognitive-reappraisal": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:theory-of-mind": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:orbitofrontal-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-04T18:29:31.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:right-temporoparietal-junction": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:vasopressin": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:inter-brain-synchrony": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:interference": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:feelings": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:emotions": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:thoughts": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:sensations": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:11:15.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:pelvic-diaphragm": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:joint-attention": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:endorphins": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:neural-coupling": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:synchronization": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:oxytocin-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:inter-brain-coherence": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:circadian-rhythm": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:suprachiasmatic-nucleus": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1306,7 +1306,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:enteric-nervous-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-30T12:29:12.000Z"
+    "modified": "2026-10-05T21:25:12.000Z"
   },
   "glossary:serotonin": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-04T14:25:46+02:00"
+    "modified": "2026-10-05T23:25:12+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1630,19 +1630,19 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",
-    "modified": "2026-10-04T20:29:31+02:00"
+    "modified": "2026-10-05T23:51:56+02:00"
   },
   "page:/articles/topic/:topic": {
     "published": "2026-09-24T00:24:48+02:00",
-    "modified": "2026-10-05T09:26:25+02:00"
+    "modified": "2026-10-05T20:27:30+02:00"
   },
   "page:/part/:slug": {
     "published": "2026-02-24T15:51:07+01:00",
-    "modified": "2026-10-04T20:29:31+02:00"
+    "modified": "2026-10-05T23:51:56+02:00"
   },
   "page:/level/:number": {
     "published": "2026-02-26T01:46:23+01:00",
-    "modified": "2026-10-04T20:29:31+02:00"
+    "modified": "2026-10-05T23:51:56+02:00"
   },
   "page:/inner-spectrum": {
     "published": "2026-03-14T01:25:20Z",
@@ -1670,19 +1670,19 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/research": {
     "published": "2026-05-22T18:20:34+02:00",
-    "modified": "2026-09-29T12:26:39+02:00"
+    "modified": "2026-10-05T23:51:56+02:00"
   },
   "page:/science": {
     "published": "2026-10-04T21:18:25+02:00",
-    "modified": "2026-10-05T00:28:34+02:00"
+    "modified": "2026-10-05T13:59:50+02:00"
   },
   "page:/science/:kind": {
     "published": "2026-10-04T21:18:25+02:00",
-    "modified": "2026-10-05T00:28:34+02:00"
+    "modified": "2026-10-05T13:59:50+02:00"
   },
   "page:/science/:kind/:slug": {
     "published": "2026-10-04T21:18:25+02:00",
-    "modified": "2026-10-05T00:28:34+02:00"
+    "modified": "2026-10-05T13:59:50+02:00"
   },
   "page:/ai-apps": {
     "published": "2026-10-03T19:24:51+02:00",
@@ -1690,11 +1690,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/measurements": {
     "published": "2026-09-06T17:37:13+02:00",
-    "modified": "2026-10-05T10:11:22+02:00"
+    "modified": "2026-10-05T10:55:46+02:00"
   },
   "page:/how-it-works": {
     "published": "2026-09-06T17:37:13+02:00",
-    "modified": "2026-10-05T10:11:22+02:00"
+    "modified": "2026-10-05T10:55:46+02:00"
   },
   "page:/product": {
     "published": "2026-09-06T18:55:14+02:00",
@@ -1702,7 +1702,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/faq": {
     "published": "2026-09-06T19:08:55+02:00",
-    "modified": "2026-10-05T10:11:22+02:00"
+    "modified": "2026-10-05T10:55:46+02:00"
   },
   "page:/people/yakiv-bilenko": {
     "published": "2026-09-06T20:46:58+02:00",
@@ -1710,19 +1710,19 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/hrv-biofeedback": {
     "published": "2026-09-06T18:43:00+02:00",
-    "modified": "2026-10-05T10:11:22+02:00"
+    "modified": "2026-10-05T23:51:56+02:00"
   },
   "page:/resonance-breathing": {
     "published": "2026-09-06T18:43:00+02:00",
-    "modified": "2026-10-05T10:11:22+02:00"
+    "modified": "2026-10-05T23:51:56+02:00"
   },
   "page:/hrv-vs-coherence": {
     "published": "2026-09-07T20:12:03+02:00",
-    "modified": "2026-10-05T10:11:22+02:00"
+    "modified": "2026-10-05T10:55:46+02:00"
   },
   "page:/apple-watch-hrv-biofeedback": {
     "published": "2026-09-07T20:12:03+02:00",
-    "modified": "2026-10-05T10:11:22+02:00"
+    "modified": "2026-10-05T10:55:46+02:00"
   },
   "page:/compare": {
     "published": "2026-09-06T18:55:14+02:00",
@@ -1746,7 +1746,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-05T09:26:25+02:00"
+    "modified": "2026-10-05T23:51:56+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",
