@@ -2404,6 +2404,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/measurements-onda-method.avif": {
+    "width": 2688,
+    "height": 1152
+  },
+  "/images/science/measurements-onda-method.png": {
+    "width": 2688,
+    "height": 1152
+  },
+  "/images/science/measurements-onda-method.webp": {
+    "width": 2688,
+    "height": 1152
+  },
   "/images/science/measurements-respiratory-rate.avif": {
     "width": 1916,
     "height": 821

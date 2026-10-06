@@ -46,7 +46,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "anterior-cingulate-core-coherence-monitoring": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-06T13:59:01+02:00"
   },
   "anti-entropy-neural-architecture": {
     "published": "2026-03-30T20:35:54Z",
@@ -70,7 +70,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "baroreflex-01hz-shift": {
     "published": "2026-03-24T13:06:24Z",
-    "modified": "2026-10-05T09:26:25+02:00"
+    "modified": "2026-10-06T13:59:01+02:00"
   },
   "bhastrika-pranayama-brain-anxiety": {
     "published": "2026-09-24T12:08:14+02:00",
@@ -574,7 +574,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "resonant-frequency-system-coherence": {
     "published": "2026-03-24T13:00:58Z",
-    "modified": "2026-10-04T19:23:01+02:00"
+    "modified": "2026-10-06T13:59:01+02:00"
   },
   "respiratory-rate-hidden-signal": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -586,7 +586,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "rhythmic-entrainment-system-frequencies": {
     "published": "2026-03-31T22:29:31Z",
-    "modified": "2026-10-04T17:50:16+02:00"
+    "modified": "2026-10-06T13:59:01+02:00"
   },
   "screen-apnea-breathing": {
     "published": "2026-09-18T14:42:44+02:00",
@@ -730,7 +730,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-10-05T23:25:12+02:00"
+    "modified": "2026-10-06T13:59:01+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1014,15 +1014,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:quantum-biology": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T11:40:34.000Z"
+    "modified": "2026-10-06T11:59:01.000Z"
   },
   "glossary:coherence": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T11:40:34.000Z"
+    "modified": "2026-10-06T11:59:01.000Z"
   },
   "glossary:biophotonics": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T11:40:34.000Z"
+    "modified": "2026-10-06T11:59:01.000Z"
   },
   "glossary:limbic-system": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-06T11:25:40+02:00"
+    "modified": "2026-10-06T13:59:01+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",

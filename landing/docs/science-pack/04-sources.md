@@ -287,6 +287,7 @@ All checked against PubMed on 2026-10-06 (esummary, abstract, XML): no errata or
 |---|---|---|
 | Apple Newsroom, 9 Sep 2026 | https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/ | Recovery HRV and Overall HRV; measuring every five minutes (fact `applewatch.hrv.variants2026`) |
 | ONDA — What ONDA measures (type `product-documentation`, approved 2026-10-05) | https://onda-life.com/measurements | What the app reads and how it compares readings; scope (descriptive, not a medical assessment). Not evidence for any scientific claim |
+| ONDA — How ONDA works (type `product-documentation`, approved 2026-10-06) | https://onda-life.com/how-it-works | How the baseline is built from nightly Apple Health values; HRV read ready-made as SDNN; camera = pulse only. Aligned with the app code 2026-10-06. Not evidence for any scientific claim |
 | HealthKit heartRateVariabilitySDNN | https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilitysdnn | Apple Health stores HRV as SDNN |
 | HealthKit heartRateVariabilityRMSSD | https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilityrmssd | RMSSD type from iOS/watchOS 27 |
 | FDA De Novo DEN150048 | https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN150048.pdf | gammaCore: the cleared headache indication only |

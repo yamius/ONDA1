@@ -104,6 +104,9 @@ async function urlOpens(url: string): Promise<string | null> {
   } catch { return 'network' }
 }
 
+// "version 1.9.3" — an app release label (any language: the word before is not checked).
+const APP_VERSION = /\b\d+\.\d+\.\d+\b/g
+
 function stripAllowed(text: string): string {
   return text
     .replace(/\{\{(fact|proposed):[^}]+\}\}/g, ' ')
@@ -112,6 +115,7 @@ function stripAllowed(text: string): string {
     .replace(/\b[A-Z][A-Za-z’'\-]+(?: et al\.)? \((19|20)\d{2}\)/g, ' ') // Author (2021)
     .replace(/\]\([^)]*\)/g, ']') // link targets
     .replace(/\b(aged?|at ages?|ages?) \d{2}(?:[–-]\d{2}|\+)/gi, ' ') // age bands are labels, not data
+    .replace(APP_VERSION, ' ') // app version numbers are labels, not data
     .replace(/^#{1,6} .*$/gm, (h) => h.replace(/\b(19|20)\d{2}\b/g, ' '))
 }
 
@@ -249,7 +253,7 @@ async function main() {
     const stray = [...stripAllowed(body).matchAll(/[^\n]{0,30}\d[^\n]{0,30}/g)].map((x) => x[0].trim())
     for (const s of stray) err(rel, `number outside {{fact:}} / {{proposed:}}: “${s}”`)
     const fmText = [fm.title, fm.metaTitle, fm.metaDescription, fm.shortAnswer, ...(fm.keyPoints || [])].join(' ')
-    if (/\d/.test(String(fmText).replace(/\{\{(fact|proposed):[^}]+\}\}/g, ' '))) err(rel, 'digits in title/meta/shortAnswer/keyPoints — write numbers in words there')
+    if (/\d/.test(String(fmText).replace(/\{\{(fact|proposed):[^}]+\}\}/g, ' ').replace(APP_VERSION, ' '))) err(rel, 'digits in title/meta/shortAnswer/keyPoints — write numbers in words there')
 
     // 6. banned wording. A paragraph that starts with <!-- myth-debunk --> states a banned claim only to refute it: it is
     // exempt from the banned list, and every such paragraph is listed for the owner's manual review (use rarely).
