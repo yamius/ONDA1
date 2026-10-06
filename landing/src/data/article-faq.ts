@@ -1997,7 +1997,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Is it the cold or the breathing that reduces inflammation in the Wim Hof Method?",
       answer:
-        "The studies point mainly to the breathing. The best-known trial combined meditation, breathing and cold, so it cannot show the effect of cold alone; a 2022 Radboud study that separated the components found cold exposure alone did not significantly reduce inflammation, while the breathing technique did.",
+        "Mainly the breathing, with the cold as an add-on. The best-known trial combined meditation, breathing and cold. A 2022 Radboud pilot study in 48 healthy young men separated the components: cold training alone did not meaningfully change the inflammatory response, the breathing exercise did, and adding cold training strengthened its effect — the combination worked best. It is a laboratory model, not a treatment for inflammatory disease.",
     },
     {
       question: "Can you really control your immune system with breathing?",
@@ -2007,7 +2007,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Do I need ice baths to get the benefits of Wim Hof breathing?",
       answer:
-        "Not for the anti-inflammatory effect — the research points to the breathing as the active ingredient. Cold training has separate effects and appeal, but it isn't required for the immune result.",
+        "Not to get an effect: breathing alone changed the inflammatory response in the lab model, while cold alone did not. In a 2022 pilot study, adding cold training strengthened the breathing effect, so the combination worked best. If you do use cold water, read the cold-water safety guidance first.",
     },
     {
       question: "Is Wim Hof breathing calming like slow breathing?",

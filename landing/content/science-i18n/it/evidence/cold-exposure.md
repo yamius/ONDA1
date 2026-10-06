@@ -1,5 +1,5 @@
 ---
-sourceHash: "fec36fe7b321"
+sourceHash: "40724fd3796f"
 title: "Esposizione al freddo: che cosa mostrano le evidenze e dove diventa rischiosa"
 metaTitle: "Esposizione al freddo: evidenze e rischi"
 metaDescription: "Bagni e docce fredde, viso raffreddato: che cosa dicono gli studi su stress, malattia, recupero e metabolismo, cosa tacciono i miti sulla dopamina e i rischi."
@@ -53,6 +53,8 @@ evidenceMap:
     limitation: "Otto partecipanti, nessun gruppo di controllo, aria moderatamente fredda."
   - claim: "Una revisione conclude che l'immersione in acqua fredda sembra ridurre o trasformare il grasso corporeo e migliorare la sensibilità all'insulina, ma che il tema resta dibattuto."
     limitation: "Revisione narrativa di studi piccoli."
+  - claim: "In uno studio pilota che ha separato le componenti, l’allenamento al freddo da solo non ha modificato in modo rilevante la risposta infiammatoria, l’esercizio di respirazione sì, e aggiungere il freddo ne ha rafforzato l’effetto."
+    limitation: "Studio pilota su uomini giovani sani; modello di laboratorio con endotossina, non una malattia infiammatoria."
   - claim: "In uno studio che combinava meditazione, tecniche di respirazione ed esposizione al freddo, i volontari allenati hanno mostrato una risposta infiammatoria più debole all'endotossina iniettata."
     limitation: "Dodici persone per gruppo; l'effetto non può essere attribuito al solo freddo."
   - claim: "L'immersione in acqua fredda ha aumentato i marcatori dell'infiammazione subito dopo e a un'ora di distanza."
@@ -92,7 +94,7 @@ Molti studi sono piccoli, spesso includono solo uomini e usano temperature e tip
 
 **Metabolismo, grasso bruno e insulina: emergente.** Dieci giorni di acclimatazione a un freddo moderato hanno aumentato l'attività del grasso bruno e la produzione di calore in uno studio piccolo [S12], e un protocollo simile ha migliorato la sensibilità all'insulina in uno studio piccolo e non controllato su persone con diabete [S13]. Entrambi hanno usato aria moderatamente fredda per molte ore, non brevi bagni freddi. Una revisione degli studi sull'acqua fredda conclude che gli effetti sul grasso corporeo e sull'insulina sembrano promettenti, ma restano dibattuti [S2].
 
-**Immunità e infiammazione: emergente; non mescolare gli studi.** I marcatori dell'infiammazione aumentano subito dopo l'immersione in acqua fredda [S1]. Lo studio sull'immunità più noto ha allenato volontari a meditazione, tecniche di respirazione ed esposizione al freddo insieme, e poi ha trovato una risposta infiammatoria più debole a una tossina batterica iniettata [S14]. Poiché l'allenamento combinava tutti e tre gli elementi, l'effetto non può essere attribuito al solo freddo; in quello studio, praticare le tecniche apprese ha prodotto forti aumenti di adrenalina [S14].
+**Immunità e infiammazione: emergente; non mescolare gli studi.** I marcatori dell'infiammazione aumentano subito dopo l'immersione in acqua fredda [S1]. Lo studio sull'immunità più noto ha allenato volontari a meditazione, tecniche di respirazione ed esposizione al freddo insieme, e poi ha trovato una risposta infiammatoria più debole a una tossina batterica iniettata [S14]. Poiché l'allenamento combinava tutti e tre gli elementi, l'effetto non può essere attribuito al solo freddo; in quello studio, praticare le tecniche apprese ha prodotto forti aumenti di adrenalina [S14]. Uno studio pilota successivo dello stesso gruppo ha separato le componenti: l’allenamento al freddo da solo non ha modificato in modo rilevante la risposta infiammatoria, l’esercizio di respirazione sì, e aggiungere l’allenamento al freddo ne ha rafforzato l’effetto [S16].
 
 ### Un bagno freddo inonda il tuo cervello di dopamina?
 

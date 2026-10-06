@@ -26,7 +26,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "adaptation-hack-range-fractionation": {
     "published": "2026-03-14T12:57:50Z",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-06T20:41:29+02:00"
   },
   "adrenal-governor-thermal-runaway": {
     "published": "2026-04-01T13:38:29Z",
@@ -42,7 +42,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "ancestral-sync-circadian-anchors": {
     "published": "2026-03-24T09:54:24Z",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-06T20:41:29+02:00"
   },
   "anterior-cingulate-core-coherence-monitoring": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -174,7 +174,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "cold-exposure-vagus-nerve": {
     "published": "2026-09-18T16:27:42+02:00",
-    "modified": "2026-10-04T17:50:16+02:00"
+    "modified": "2026-10-06T20:41:29+02:00"
   },
   "consciousness-training-app": {
     "published": "2026-09-19T01:02:52+02:00",
@@ -234,7 +234,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "fault-tolerant-human-hrv-buffer": {
     "published": "2026-03-24T12:53:43Z",
-    "modified": "2026-10-06T15:15:46+02:00"
+    "modified": "2026-10-06T20:41:29+02:00"
   },
   "femtech-cyclical-architecture": {
     "published": "2026-03-04T21:35:50+01:00",
@@ -362,11 +362,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "longevity-hardware-cellular-cleanup": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-01T13:13:19+02:00"
+    "modified": "2026-10-06T20:41:29+02:00"
   },
   "longevity-protocol-biological-clock-reset": {
     "published": "2026-03-24T10:01:04Z",
-    "modified": "2026-10-06T15:15:46+02:00"
+    "modified": "2026-10-06T20:41:29+02:00"
   },
   "mbsr-mindfulness-clinical-evidence": {
     "published": "2026-09-23T20:27:09+02:00",
@@ -650,7 +650,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "vagus-nerve-exercises": {
     "published": "2026-06-04T14:36:55+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-06T20:41:29+02:00"
   },
   "vascular-tensegrity-microvascular-mechanics": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -658,7 +658,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "ventral-tegmental-core-motivational-salience": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-06T20:41:29+02:00"
   },
   "vipassana-meditation-attention-brain": {
     "published": "2026-09-23T17:17:09+02:00",
@@ -730,7 +730,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-10-06T17:10:58+02:00"
+    "modified": "2026-10-06T20:41:29+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -814,7 +814,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:mammalian-dive-reflex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T18:33:12.000Z"
+    "modified": "2026-10-06T18:41:29.000Z"
   },
   "glossary:thalamus": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1534,7 +1534,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:range-fractionation": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T18:33:12.000Z"
+    "modified": "2026-10-06T18:41:29.000Z"
   },
   "glossary:leptin": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1550,7 +1550,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:heat-shock-proteins": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T18:33:12.000Z"
+    "modified": "2026-10-06T18:41:29.000Z"
   },
   "glossary:antifragility": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1558,7 +1558,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:adiponectin": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T18:33:12.000Z"
+    "modified": "2026-10-06T18:41:29.000Z"
   },
   "glossary:ampk": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1574,7 +1574,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:hormesis": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T18:33:12.000Z"
+    "modified": "2026-10-06T18:41:29.000Z"
   },
   "glossary:cortex-stack": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-06T18:30:38+02:00"
+    "modified": "2026-10-06T20:41:29+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1746,7 +1746,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-06T17:26:17+02:00"
+    "modified": "2026-10-06T20:41:29+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

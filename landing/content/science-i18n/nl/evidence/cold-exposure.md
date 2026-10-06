@@ -1,5 +1,5 @@
 ---
-sourceHash: "fec36fe7b321"
+sourceHash: "40724fd3796f"
 title: "Blootstelling aan kou: wat het bewijs laat zien en waar het riskant wordt"
 metaTitle: "Blootstelling aan kou: bewijs en risico's"
 metaDescription: "IJsbaden, koude douches en gezichtskoeling: wat studies laten zien over stress, ziekte, herstel en stofwisseling, wat dopamineclaims weglaten en de risico's."
@@ -52,6 +52,8 @@ evidenceMap:
     limitation: "Acht deelnemers, geen controlegroep, milde koude lucht."
   - claim: "Een review concludeert dat onderdompeling in koud water lichaamsvet lijkt te verminderen of om te vormen en de insulinegevoeligheid lijkt te verbeteren, maar dat het onderwerp omstreden blijft."
     limitation: "Narratieve review van kleine studies."
+  - claim: "In een pilotstudie die de onderdelen scheidde, veranderde koudetraining alleen de ontstekingsreactie niet wezenlijk, de ademhalingsoefening wel, en kou erbij versterkte het effect."
+    limitation: "Pilotstudie bij gezonde jonge mannen; labmodel met endotoxine, geen ontstekingsziekte."
   - claim: "In een studie die meditatie, ademtechnieken en blootstelling aan kou combineerde, lieten getrainde vrijwilligers een zwakkere ontstekingsreactie op ingespoten endotoxine zien."
     limitation: "Twaalf per groep; het effect is niet alleen aan kou toe te schrijven."
   - claim: "Onderdompeling in koud water verhoogde ontstekingsmarkers direct en een uur daarna."
@@ -91,7 +93,7 @@ Veel studies zijn klein, hebben vaak alleen mannen als deelnemers en gebruiken v
 
 **Stofwisseling, bruin vet en insuline: opkomend.** Tien dagen acclimatisatie aan milde kou verhoogde in een kleine studie de activiteit van bruin vet en de warmteproductie [S12], en een vergelijkbaar protocol verbeterde de insulinegevoeligheid in een kleine studie zonder controlegroep bij mensen met diabetes [S13]. Beide gebruikten urenlang milde koude lucht, geen korte dompels. Een review van studies met koud water concludeert dat de effecten op lichaamsvet en insuline veelbelovend lijken, maar omstreden blijven [S2].
 
-**Afweer en ontsteking: opkomend; haal de studies niet door elkaar.** Ontstekingsmarkers stijgen direct na onderdompeling in koud water [S1]. De bekendste afweerstudie trainde vrijwilligers tegelijk in meditatie, ademtechnieken en blootstelling aan kou, en vond daarna een zwakkere ontstekingsreactie op een ingespoten bacterieel toxine [S14]. Omdat de training alle drie combineerde, is het effect niet alleen aan kou toe te schrijven; in die studie leidde het toepassen van de aangeleerde technieken tot grote stijgingen van adrenaline [S14].
+**Afweer en ontsteking: opkomend; haal de studies niet door elkaar.** Ontstekingsmarkers stijgen direct na onderdompeling in koud water [S1]. De bekendste afweerstudie trainde vrijwilligers tegelijk in meditatie, ademtechnieken en blootstelling aan kou, en vond daarna een zwakkere ontstekingsreactie op een ingespoten bacterieel toxine [S14]. Omdat de training alle drie combineerde, is het effect niet alleen aan kou toe te schrijven; in die studie leidde het toepassen van de aangeleerde technieken tot grote stijgingen van adrenaline [S14]. Een latere pilotstudie van dezelfde groep scheidde de onderdelen: koudetraining alleen veranderde de ontstekingsreactie niet wezenlijk, de ademhalingsoefening wel, en koudetraining erbij versterkte het effect daarvan [S16].
 
 ### Overspoelt een ijsbad je hersenen met dopamine?
 

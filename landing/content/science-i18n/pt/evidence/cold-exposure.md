@@ -1,5 +1,5 @@
 ---
-sourceHash: "fec36fe7b321"
+sourceHash: "40724fd3796f"
 title: "Exposição ao frio: o que mostram as evidências e onde está o risco"
 metaTitle: "Exposição ao frio: evidências e riscos"
 metaDescription: "Imersão fria, banho frio e frio no rosto: o que os estudos mostram sobre estresse, doença, recuperação e metabolismo, o que a dopamina omite e os riscos."
@@ -52,6 +52,8 @@ evidenceMap:
     limitation: "Oito participantes, sem grupo de controle, ar levemente frio."
   - claim: "Uma revisão conclui que a imersão em água fria parece reduzir ou transformar a gordura corporal e melhorar a sensibilidade à insulina, mas que o tema continua em debate."
     limitation: "Revisão narrativa de estudos pequenos."
+  - claim: "Num estudo-piloto que separou os componentes, o treino com frio sozinho não alterou de forma relevante a resposta inflamatória, o exercício respiratório alterou, e acrescentar o frio reforçou o seu efeito."
+    limitation: "Estudo-piloto em homens jovens saudáveis; modelo laboratorial com endotoxina, não doença inflamatória."
   - claim: "Em um ensaio que combinou meditação, técnicas respiratórias e exposição ao frio, os voluntários treinados mostraram uma resposta inflamatória mais fraca a uma endotoxina injetada."
     limitation: "Doze pessoas por grupo; o efeito não pode ser atribuído apenas ao frio."
   - claim: "A imersão em água fria aumentou os marcadores de inflamação imediatamente e uma hora depois."
@@ -91,7 +93,7 @@ Muitos estudos são pequenos, muitas vezes incluem apenas homens e usam temperat
 
 **Metabolismo, gordura marrom e insulina: emergente.** Dez dias de aclimatação a um frio leve aumentaram a atividade da gordura marrom e a produção de calor em um estudo pequeno [S12], e um protocolo semelhante melhorou a sensibilidade à insulina em um estudo pequeno e sem controle com pessoas com diabetes [S13]. Os dois usaram ar levemente frio durante muitas horas, e não mergulhos curtos. Uma revisão de estudos com água fria conclui que os efeitos sobre a gordura corporal e a insulina parecem promissores, mas continuam em debate [S2].
 
-**Imunidade e inflamação: emergente; não misture os estudos.** Os marcadores de inflamação sobem logo depois da imersão em água fria [S1]. O estudo imunológico mais conhecido treinou voluntários em meditação, técnicas respiratórias e exposição ao frio ao mesmo tempo e depois encontrou uma resposta inflamatória mais fraca a uma toxina bacteriana injetada [S14]. Como o treino combinou os três elementos, o efeito não pode ser atribuído apenas ao frio; nesse estudo, praticar as técnicas aprendidas produziu grandes aumentos de adrenalina [S14].
+**Imunidade e inflamação: emergente; não misture os estudos.** Os marcadores de inflamação sobem logo depois da imersão em água fria [S1]. O estudo imunológico mais conhecido treinou voluntários em meditação, técnicas respiratórias e exposição ao frio ao mesmo tempo e depois encontrou uma resposta inflamatória mais fraca a uma toxina bacteriana injetada [S14]. Como o treino combinou os três elementos, o efeito não pode ser atribuído apenas ao frio; nesse estudo, praticar as técnicas aprendidas produziu grandes aumentos de adrenalina [S14]. Um estudo-piloto posterior do mesmo grupo separou os componentes: o treino com frio sozinho não alterou de forma relevante a resposta inflamatória, o exercício respiratório alterou, e acrescentar o treino com frio reforçou o seu efeito [S16].
 
 ### Um mergulho no gelo inunda o seu cérebro de dopamina?
 

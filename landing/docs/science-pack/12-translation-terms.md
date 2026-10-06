@@ -17,3 +17,5 @@ Binding terminology for `content/science-i18n/<lang>/` and for any translated ar
 |---|---|---|
 | pl | orthostatic hypotension | **«hipotonia ortostatyczna»**; at the first mention add the everyday term in brackets: «hipotonia ortostatyczna (niedociśnienie ortostatyczne)». Not «hipotensja». (Owner decision 2026-10-06) |
 | zh | neuroception | 神经觉 with the English term in brackets at the first mentions: 神经觉（neuroception） (owner decision 2026-10-06) |
+| fr | cold shock response | **«réponse de choc au froid»** (or «choc dû au froid»); at the first body mention add the everyday French word: «(ce que l’on appelle couramment l’« hydrocution »)». Never «choc thermique» — in French it reads as heat stroke (owner decision 2026-10-06) |
+| fr | gasp (cold shock) | **«inspiration réflexe brutale (gasp)»**; not «hoquet inspiratoire» (owner decision 2026-10-06) |

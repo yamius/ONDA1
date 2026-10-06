@@ -1,26 +1,26 @@
 import type { Article } from './types'
 
 /**
- * Wim Hof Method + inflammation — the breath, NOT the cold, is the active anti-inflammatory ingredient.
+ * Wim Hof Method + inflammation — breathing alone works, cold alone does not; the combination works best (Zwaag 2022).
  * Grounded: Kox et al. 2014 (PNAS) endotoxin challenge — trained subjects voluntarily raised adrenaline,
- * activated sympathetic, halved inflammatory proteins; Zwaag et al. 2022 separated components → cold alone
+ * activated sympathetic, halved inflammatory proteins; Zwaag et al. 2022 (pilot) separated components → cold alone
  * did NOT reduce inflammation, breathing did. WHM breathing = controlled hyperventilation (sympathetic),
  * opposite of slow calming breathwork. AEO reference + FAQ. STRONG honesty firewall: temporary controlled
  * activation, NOT a cure/immunity; safety (never in water/driving). Camera=pulse, watch=HRV.
  */
 const article: Article = {
   slug: 'wim-hof-breathing-inflammation',
-  title: 'Wim Hof Breathing and Inflammation: It’s the Breath, Not the Cold',
-  seoTitle: 'Wim Hof Breathing & Inflammation: The Breath | ONDA Life',
+  title: 'Wim Hof Breathing and Inflammation: What the Breath and the Cold Each Do',
+  seoTitle: 'Wim Hof Breathing & Inflammation: Breath vs Cold | ONDA Life',
   description:
-    'Radboud University research showed people can voluntarily calm their immune response through breathing — and that the breathing, not the cold, is the active ingredient. What the science found.',
+    'Radboud University research showed people can voluntarily calm their immune response. Breathing alone did it, cold alone did not, and the combination worked best. What the science found.',
   category: 'ONDA Protocol',
   relatedSlugs: ['cold-exposure-vagus-nerve', 'physiological-sigh', 'hrv-breathing-cold-honest-limits', 'how-to-raise-hrv-naturally', 'breathing-altitude-acclimatization'],
   introStyle: 'indigo',
   image: '/images/articles/wim-hof-breathing-inflammation.jpg',
   imageAlt:
-    'Wim Hof Breathing: It\'s the Breath, Not the Cold — illustration: a silhouette breathing deeply with a bright breath glow in the foreground, while ice crystals fade softly into the background.',
-  imageTitle: 'Wim Hof Breathing: It\'s the Breath, Not the Cold',
+    'Wim Hof Breathing: the Breath and the Cold — illustration: a silhouette breathing deeply with a bright breath glow in the foreground, while ice crystals fade softly into the background.',
+  imageTitle: 'Wim Hof Breathing: the Breath and the Cold',
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Wim Hof breathing primes (sympathetic up); slow breathing calms (parasympathetic). Opposite tools — watch both in your own pulse.',
@@ -28,7 +28,7 @@ const article: Article = {
     linkText: 'See it live →',
   },
   content: `
-The Wim Hof Method is famous for ice baths — but the science points to a surprising conclusion: the breathing, not the cold, is what calms inflammation. In landmark research at Radboud University in the Netherlands, trained practitioners were able to *voluntarily* activate their sympathetic nervous system and blunt their body's inflammatory response to an injected bacterial toxin — something long considered impossible, because the [autonomic nervous system](/science/concepts/autonomic-nervous-system) was assumed to be beyond conscious control. A later Radboud study separated the method's ingredients and found that [cold exposure](/articles/cold-exposure-vagus-nerve) alone did *not* significantly reduce inflammation, while the breathing technique did. If you care about the anti-inflammatory effect, the cold plunge is optional; the breath is the active component.
+The Wim Hof Method is famous for ice baths — but the science points to a more nuanced conclusion: the breathing does the main work in calming inflammation, and the cold mainly adds to it. In landmark research at Radboud University in the Netherlands, trained practitioners were able to *voluntarily* activate their sympathetic nervous system and blunt their body's inflammatory response to an injected bacterial toxin — something long considered impossible, because the [autonomic nervous system](/science/concepts/autonomic-nervous-system) was assumed to be beyond conscious control. A later Radboud study separated the method's ingredients and found that [cold exposure](/articles/cold-exposure-vagus-nerve) alone did *not* meaningfully change inflammation, the breathing technique did, and adding cold training strengthened the breathing effect. The breath is the essential part; the cold is an add-on, not the source of the effect.
 
 ## The study that broke a dogma
 
@@ -38,15 +38,15 @@ In a 2014 study (Kox, Pickkers and colleagues, published in *PNAS*), 12 people t
 
 ## The follow-up that isolated the active ingredient
 
-A single dramatic study invites a fair question: which part of the method did it — the breathing, the cold, or the mindset? A 2022 Radboud study (Zwaag et al.) reproduced the original finding in a larger group and, crucially, separated the components.
+A single dramatic study invites a fair question: which part of the method did it — the breathing, the cold, or the mindset? A 2022 Radboud pilot study (Zwaag et al., 48 healthy young men) separated the components.
 
-The answer surprised many: **cold exposure alone did not significantly reduce inflammation. The breathing exercises did — powerfully.** The anti-inflammatory effect that made the Wim Hof Method famous traces to the *breathing technique*, not the ice baths that dominate its public image. Cold training has its own effects and appeal, but for the specific immune-calming result, breathing is the driver.
+**Cold exposure training alone did not meaningfully change the inflammatory response; the breathing exercise did; and adding cold training strengthened the breathing exercise's effect — the combination worked best.** The findings come from a laboratory model in healthy young men, not from people with inflammatory disease.
 
 ## Why this matters — and what it doesn't mean
 
 This is genuinely important, and it's easy to overstate, so here's the honest framing. It means:
 
-- **The breathing is the powerful part.** If the anti-inflammatory effect is what interests you, you don't need an ice bath to get it — the specific breathing pattern is the active ingredient.
+- **The breathing is the essential part.** Breathing alone changed the inflammatory response in the lab model; cold alone did not. Cold training added to the breathing effect, so the combination worked best — but the cold was not the source of the effect.
 - **Conscious influence over "automatic" systems is real, within limits.** Trained people measurably shifted their immune and autonomic response. That's remarkable and well-documented.
 
 It does *not* mean you become immune to disease, or that breathing cures inflammatory illness. As the researchers themselves are careful to note, this is a temporary, controlled activation — a proof that the lever exists, not a treatment. Overselling it ("breathe away your autoimmune disease") goes far beyond what the science supports — the same overclaiming trap covered in [the honest limits of breathing and cold](/articles/hrv-breathing-cold-honest-limits).

@@ -160,6 +160,15 @@ sources:
     pmid: 10751106
     type: other
     note: "Small laboratory study in young men"
+  - id: S16
+    cite: "Zwaag et al. (2022)"
+    title: "The effects of cold exposure training and a breathing exercise on the inflammatory response in humans: a pilot study"
+    journal: "Psychosomatic Medicine"
+    year: 2022
+    doi: "10.1097/PSY.0000000000001065"
+    pmid: 35213875
+    type: randomized-trial
+    note: "Pilot study in healthy young men from the group behind Kox 2014"
 evidenceMap:
   - claim: "Randomised trials of cold-water immersion in healthy adults used baths or showers at a range of temperatures and durations."
     sources: [S1]
@@ -251,6 +260,12 @@ evidenceMap:
     claimType: efficacy
     quote: "However, without further conclusive studies, the topic will continue to be a subject of debate."
     limitation: "Narrative review of small studies."
+  - claim: "In a pilot study that separated the components, cold training alone did not meaningfully change the inflammatory response, the breathing exercise did, and adding cold training strengthened the breathing effect."
+    sources: [S16]
+    class: emerging
+    claimType: efficacy
+    quote: "Cold exposure training alone did not relevantly modulate the LPS-induced inflammatory response (F(8,37) = 0.60, p = .77), whereas the breathing exercise led to significantly enhanced anti-inflammatory and attenuated proinflammatory cytokine levels"
+    limitation: "Pilot study in healthy young men; laboratory endotoxin model, not inflammatory disease."
   - claim: "In a trial combining meditation, breathing techniques and cold exposure, trained volunteers showed a weaker inflammatory response to injected endotoxin."
     sources: [S14]
     class: emerging
@@ -306,7 +321,7 @@ Many studies are small, often include only men, and use different temperatures a
 
 **Metabolism, brown fat and insulin. Emerging.** Ten days of mild cold acclimation increased brown fat activity and heat production in a small study [S12], and a similar protocol improved insulin sensitivity in a small, uncontrolled study of people with diabetes [S13]. Both used mild cold air over many hours, not short plunges. A review of cold-water studies concludes that effects on body fat and insulin look promising but remain debated [S2].
 
-**Immunity and inflammation. Emerging; do not mix the studies.** Inflammation markers rise immediately after cold-water immersion [S1]. The best-known immune study trained volunteers in meditation, breathing techniques and cold exposure together, then found a weaker inflammatory response to an injected bacterial toxin [S14]. Because the training combined all three, the effect cannot be attributed to cold alone; in that study, practising the learned techniques produced large adrenaline rises [S14].
+**Immunity and inflammation. Emerging; do not mix the studies.** Inflammation markers rise immediately after cold-water immersion [S1]. The best-known immune study trained volunteers in meditation, breathing techniques and cold exposure together, then found a weaker inflammatory response to an injected bacterial toxin [S14]. Because the training combined all three, the effect cannot be attributed to cold alone; in that study, practising the learned techniques produced large adrenaline rises [S14]. A later pilot study from the same group separated the components: cold training alone did not meaningfully change the inflammatory response, the breathing exercise did, and adding cold training strengthened its effect [S16].
 
 ### Does a cold plunge flood your brain with dopamine?
 

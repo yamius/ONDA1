@@ -1,12 +1,12 @@
 ---
-sourceHash: "fec36fe7b321"
+sourceHash: "40724fd3796f"
 title: "Exposition au froid : ce que montrent les données et où sont les risques"
 metaTitle: "Exposition au froid : données et risques"
 metaDescription: "Bain froid, douche froide, visage refroidi : ce que montrent les études sur le stress, les arrêts maladie, la récupération et le métabolisme, et les risques."
 shortAnswer: >
   L’exposition au froid recouvre des pratiques différentes : immersion en eau
   froide, douches froides, refroidissement du visage et cryothérapie corps
-  entier. Un froid soudain déclenche une réponse de choc thermique qui accélère
+  entier. Un froid soudain déclenche une réponse de choc au froid qui accélère
   la respiration et la fréquence cardiaque ; le froid sur le visage ralentit le
   cœur par l’intermédiaire du nerf vague. Les études suggèrent certains
   bénéfices sur le stress, les absences pour maladie et les courbatures après
@@ -15,21 +15,21 @@ shortAnswer: >
   être dangereuse, surtout en eau libre.
 keyPoints:
   - "L’immersion en eau froide, les douches froides, le refroidissement du visage et la cryothérapie sont des expositions différentes ; les résultats de l’une ne se transposent pas aux autres."
-  - "Une immersion soudaine déclenche la réponse de choc thermique : un hoquet inspiratoire, une respiration rapide et un bond de la fréquence cardiaque ; le froid sur le visage ralentit le cœur."
+  - "Une immersion soudaine déclenche la réponse de choc au froid : une inspiration réflexe brutale (gasp), une respiration rapide et un bond de la fréquence cardiaque ; le froid sur le visage ralentit le cœur."
   - "La HRV d’origine vagale augmente pendant les déclencheurs du réflexe de plongée, mais pas après."
   - "Un grand essai randomisé a montré que les douches froides réduisaient les absences pour maladie autodéclarées, mais pas les jours de maladie."
   - "L’immersion en eau froide réduit les courbatures après l’effort, mais son usage régulier après la musculation peut réduire les gains de force et de masse musculaire."
   - "Les chiffres de dopamine qui circulent proviennent d’une seule étude sur de longues immersions en eau froide ; ils ne décrivent pas un bain froid de courte durée."
-  - "La réponse de choc thermique est l’une des principales causes de décès en eau froide ; ne nagez jamais seul en eau libre froide, ni après avoir bu de l’alcool."
+  - "La réponse de choc au froid est l’une des principales causes de décès en eau froide ; ne nagez jamais seul en eau libre froide, ni après avoir bu de l’alcool."
 imageAlt: "Une ligne plate sur une grille se met à former des pics aigus quand commence une fenêtre de froid ombrée, puis se stabilise sur un tronçon plus bas surligné en vert et revient ensuite à son niveau de départ."
 evidenceMap:
   - claim: "Les essais randomisés d’immersion en eau froide chez des adultes en bonne santé ont utilisé des bains ou des douches à des températures et des durées variées."
     limitation: "Décrit les études, pas leurs résultats."
   - claim: "Les études sur l’immersion volontaire en eau froide sont limitées par de petits groupes, souvent d’un seul sexe, et par des températures différentes."
     limitation: "Revue narrative."
-  - claim: "L’immersion en eau froide provoque une réponse de choc thermique avec hyperventilation, arythmies et risque accru de noyade."
+  - claim: "L’immersion en eau froide provoque une réponse de choc au froid avec hyperventilation, arythmies et risque accru de noyade."
     limitation: "Données de laboratoire et de terrain ; les réponses varient d’une personne à l’autre."
-  - claim: "La réponse de choc thermique s’atténue par accoutumance avec des immersions répétées."
+  - claim: "La réponse de choc au froid s’atténue par accoutumance avec des immersions répétées."
     limitation: "L’accoutumance réduit la réponse mais ne la supprime pas."
   - claim: "Le réflexe de plongée ralentit le cœur par une stimulation parasympathique accrue du stimulateur cardiaque naturel."
     limitation: "Revue mécanistique."
@@ -53,13 +53,15 @@ evidenceMap:
     limitation: "Huit participants, pas de groupe témoin, air modérément froid."
   - claim: "Une revue conclut que l’immersion en eau froide semble réduire ou transformer la graisse corporelle et améliorer la sensibilité à l’insuline, mais que le sujet reste débattu."
     limitation: "Revue narrative de petites études."
+  - claim: "Dans une étude pilote séparant les composantes, l’entraînement au froid seul n’a pas modifié de façon notable la réponse inflammatoire, l’exercice respiratoire l’a fait, et l’ajout du froid a renforcé son effet."
+    limitation: "Étude pilote chez des hommes jeunes en bonne santé ; modèle de laboratoire à l’endotoxine, pas une maladie inflammatoire."
   - claim: "Dans un essai associant méditation, techniques de respiration et exposition au froid, les volontaires entraînés ont montré une réponse inflammatoire plus faible à l’injection d’endotoxine."
     limitation: "Douze personnes par groupe ; l’effet ne peut pas être attribué au froid seul."
   - claim: "L’immersion en eau froide a augmenté les marqueurs de l’inflammation immédiatement et une heure après."
     limitation: "Réponse aiguë ; signification à long terme incertaine."
   - claim: "Dans une étude de laboratoire, une longue immersion en eau froide jusqu’au cou a augmenté la noradrénaline et la dopamine plasmatiques."
     limitation: "Petit groupe de jeunes hommes ; immersion d’une heure ; taux plasmatiques, pas la dopamine cérébrale."
-  - claim: "La réponse de choc thermique peut entraîner la mort par inhalation d’eau, baisse du débit sanguin cérébral et arythmie avant que la température centrale ne baisse ; l’alcool modifie les risques."
+  - claim: "La réponse de choc au froid peut entraîner la mort par inhalation d’eau, baisse du débit sanguin cérébral et arythmie avant que la température centrale ne baisse ; l’alcool modifie les risques."
     limitation: "Revue narrative de la physiologie de la noyade."
 ---
 
@@ -76,7 +78,7 @@ Beaucoup d’études sont petites, n’incluent souvent que des hommes et utilis
 
 ## Que se passe-t-il dans le corps ?
 
-**Le choc thermique.** Une immersion soudaine en eau froide déclenche la réponse de choc thermique : un hoquet inspiratoire, une respiration rapide et incontrôlée et une hausse de la fréquence cardiaque. Elle peut provoquer des troubles du rythme cardiaque et augmente le risque de noyade, car il devient plus difficile d’agir en sécurité [S7]. Avec des immersions répétées, la réponse diminue [S7].
+**Le choc thermique.** Une immersion soudaine en eau froide déclenche la réponse de choc au froid (ce que l’on appelle couramment l’« hydrocution ») : une inspiration réflexe brutale (gasp), une respiration rapide et incontrôlée et une hausse de la fréquence cardiaque. Elle peut provoquer des troubles du rythme cardiaque et augmente le risque de noyade, car il devient plus difficile d’agir en sécurité [S7]. Avec des immersions répétées, la réponse diminue [S7].
 
 **Le réflexe de plongée.** L’eau froide sur le visage produit un effet différent : elle ralentit le cœur par une stimulation parasympathique venue du [nerf vague](/science/concepts/vagus-nerve) [S4]. Quand les deux réponses sont déclenchées en même temps, par exemple lorsque la tête passe sous l’eau froide, les deux branches du [système nerveux autonome](/science/concepts/autonomic-nervous-system) sont activées ensemble. Des chercheurs avancent que ce « conflit autonome » explique les troubles du rythme cardiaque observés lors de la submersion en eau froide [S5].
 
@@ -92,7 +94,7 @@ Beaucoup d’études sont petites, n’incluent souvent que des hommes et utilis
 
 **Métabolisme, graisse brune et insuline : émergent.** Dix jours d’acclimatation à un froid modéré ont augmenté l’activité de la graisse brune et la production de chaleur dans une petite étude [S12], et un protocole similaire a amélioré la sensibilité à l’insuline dans une petite étude non contrôlée chez des personnes diabétiques [S13]. Les deux utilisaient de l’air modérément froid pendant de nombreuses heures, pas de courts bains froids. Une revue des études sur l’eau froide conclut que les effets sur la graisse corporelle et l’insuline semblent prometteurs, mais restent débattus [S2].
 
-**Immunité et inflammation : émergent ; ne pas mélanger les études.** Les marqueurs de l’inflammation augmentent immédiatement après une immersion en eau froide [S1]. L’étude immunitaire la plus connue a entraîné des volontaires à la fois à la méditation, à des techniques de respiration et à l’exposition au froid, puis a observé une réponse inflammatoire plus faible à l’injection d’une toxine bactérienne [S14]. Comme l’entraînement associait les trois, l’effet ne peut pas être attribué au froid seul ; dans cette étude, la pratique des techniques apprises a produit de fortes hausses d’adrénaline [S14].
+**Immunité et inflammation : émergent ; ne pas mélanger les études.** Les marqueurs de l’inflammation augmentent immédiatement après une immersion en eau froide [S1]. L’étude immunitaire la plus connue a entraîné des volontaires à la fois à la méditation, à des techniques de respiration et à l’exposition au froid, puis a observé une réponse inflammatoire plus faible à l’injection d’une toxine bactérienne [S14]. Comme l’entraînement associait les trois, l’effet ne peut pas être attribué au froid seul ; dans cette étude, la pratique des techniques apprises a produit de fortes hausses d’adrénaline [S14]. Une étude pilote ultérieure de la même équipe a séparé les composantes : l’entraînement au froid seul n’a pas modifié de façon notable la réponse inflammatoire, l’exercice respiratoire l’a fait, et l’ajout de l’entraînement au froid a renforcé son effet [S16].
 
 ### Un bain froid inonde-t-il votre cerveau de dopamine ?
 
@@ -123,6 +125,6 @@ On entend souvent que les bains froids renforcent le tonus vagal. Ce que montren
 
 ## Dans ONDA
 
-ONDA ne mesure ni l’exposition au froid, ni le choc thermique, ni le réflexe de plongée. {{fact:onda.practice.livePulse}}. Si vous pratiquez l’exposition au froid, lisez votre HRV par rapport à votre propre référence plutôt que comme une valeur isolée.
+ONDA ne mesure ni l’exposition au froid, ni le choc dû au froid, ni le réflexe de plongée. {{fact:onda.practice.livePulse}}. Si vous pratiquez l’exposition au froid, lisez votre HRV par rapport à votre propre référence plutôt que comme une valeur isolée.
 
 > Information éducative, pas un diagnostic ni un traitement médical.

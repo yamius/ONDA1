@@ -1,5 +1,5 @@
 ---
-sourceHash: "fec36fe7b321"
+sourceHash: "40724fd3796f"
 title: "Kälteexposition: Was die Evidenz zeigt und wo es riskant wird"
 metaTitle: "Kälteexposition: Evidenz und Risiken"
 metaDescription: "Eisbad, kalte Dusche, Gesichtskühlung: was Studien zu Stress, Krankheit, Erholung und Stoffwechsel zeigen, was Dopamin-Mythen auslassen und wo Risiken liegen."
@@ -52,6 +52,8 @@ evidenceMap:
     limitation: "Acht Teilnehmende, keine Kontrollgruppe, milde kalte Luft."
   - claim: "Eine Übersicht kommt zu dem Schluss, dass Kaltwasserimmersion Körperfett zu verringern oder umzuwandeln und die Insulinsensitivität zu verbessern scheint, das Thema aber umstritten bleibt."
     limitation: "Narrative Übersicht kleiner Studien."
+  - claim: "In einer Pilotstudie, die die Bestandteile trennte, veränderte Kältetraining allein die Entzündungsreaktion nicht nennenswert, die Atemübung schon, und zusätzliche Kälte verstärkte ihre Wirkung."
+    limitation: "Pilotstudie an gesunden jungen Männern; Labormodell mit Endotoxin, keine entzündliche Erkrankung."
   - claim: "In einer Studie, die Meditation, Atemtechniken und Kälteexposition kombinierte, zeigten trainierte Freiwillige eine schwächere Entzündungsreaktion auf injiziertes Endotoxin."
     limitation: "Zwölf pro Gruppe; der Effekt lässt sich nicht allein der Kälte zuschreiben."
   - claim: "Kaltwasserimmersion erhöhte Entzündungsmarker unmittelbar danach und eine Stunde später."
@@ -91,7 +93,7 @@ Viele Studien sind klein, schließen oft nur Männer ein und verwenden unterschi
 
 **Stoffwechsel, braunes Fett und Insulin: vorläufig.** Zehn Tage milder Kälteakklimatisierung steigerten in einer kleinen Studie die Aktivität des braunen Fettgewebes und die Wärmebildung [S12], und ein ähnliches Protokoll verbesserte in einer kleinen, unkontrollierten Studie mit Menschen mit Diabetes die Insulinsensitivität [S13]. Beide nutzten milde kalte Luft über viele Stunden, keine kurzen Eisbäder. Eine Übersicht zu Kaltwasserstudien kommt zu dem Schluss, dass die Effekte auf Körperfett und Insulin vielversprechend aussehen, aber umstritten bleiben [S2].
 
-**Immunsystem und Entzündung: vorläufig; die Studien nicht vermischen.** Entzündungsmarker steigen unmittelbar nach der Kaltwasserimmersion an [S1]. Die bekannteste Immunstudie trainierte Freiwillige in Meditation, Atemtechniken und Kälteexposition zugleich und fand danach eine schwächere Entzündungsreaktion auf ein injiziertes Bakteriengift [S14]. Weil das Training alle drei kombinierte, lässt sich der Effekt nicht allein der Kälte zuschreiben; in dieser Studie führte das Üben der erlernten Techniken zu starken Adrenalinanstiegen [S14].
+**Immunsystem und Entzündung: vorläufig; die Studien nicht vermischen.** Entzündungsmarker steigen unmittelbar nach der Kaltwasserimmersion an [S1]. Die bekannteste Immunstudie trainierte Freiwillige in Meditation, Atemtechniken und Kälteexposition zugleich und fand danach eine schwächere Entzündungsreaktion auf ein injiziertes Bakteriengift [S14]. Weil das Training alle drei kombinierte, lässt sich der Effekt nicht allein der Kälte zuschreiben; in dieser Studie führte das Üben der erlernten Techniken zu starken Adrenalinanstiegen [S14]. Eine spätere Pilotstudie derselben Gruppe trennte die Bestandteile: Kältetraining allein veränderte die Entzündungsreaktion nicht nennenswert, die Atemübung schon, und zusätzliches Kältetraining verstärkte ihre Wirkung [S16].
 
 ### Flutet ein Eisbad dein Gehirn mit Dopamin?
 

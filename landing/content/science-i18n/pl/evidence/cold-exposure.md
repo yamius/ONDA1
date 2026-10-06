@@ -1,5 +1,5 @@
 ---
-sourceHash: "fec36fe7b321"
+sourceHash: "40724fd3796f"
 title: "Ekspozycja na zimno: co pokazują badania i gdzie zaczyna się ryzyko"
 metaTitle: "Ekspozycja na zimno: badania i ryzyko"
 metaDescription: "Zimne kąpiele, prysznic i chłodzenie twarzy: co badania mówią o stresie, chorobie, regeneracji i metabolizmie, co pomijają mity o dopaminie i jakie są ryzyka."
@@ -52,6 +52,8 @@ evidenceMap:
     limitation: "Ośmioro uczestników, brak grupy kontrolnej, łagodnie chłodne powietrze."
   - claim: "Przegląd stwierdza, że zanurzenie w zimnej wodzie wydaje się zmniejszać lub przekształcać tkankę tłuszczową i poprawiać wrażliwość na insulinę, ale temat pozostaje sporny."
     limitation: "Przegląd narracyjny małych badań."
+  - claim: "W badaniu pilotażowym, które rozdzieliło składniki, sam trening zimnem nie zmienił istotnie reakcji zapalnej, ćwiczenie oddechowe tak, a dodanie zimna wzmocniło jego efekt."
+    limitation: "Badanie pilotażowe u zdrowych młodych mężczyzn; laboratoryjny model z endotoksyną, a nie choroba zapalna."
   - claim: "W badaniu łączącym medytację, techniki oddechowe i ekspozycję na zimno wytrenowani ochotnicy wykazali słabszą reakcję zapalną na wstrzykniętą endotoksynę."
     limitation: "Dwanaście osób w grupie; efektu nie można przypisać samemu zimnu."
   - claim: "Zanurzenie w zimnej wodzie podnosiło markery stanu zapalnego od razu i godzinę później."
@@ -91,7 +93,7 @@ Wiele badań jest małych, często obejmuje tylko mężczyzn i stosuje różne t
 
 **Metabolizm, brunatna tkanka tłuszczowa i insulina: wstępne dane.** Dziesięć dni aklimatyzacji do łagodnego zimna zwiększyło w małym badaniu aktywność brunatnej tkanki tłuszczowej i wytwarzanie ciepła [S12], a podobny protokół poprawił wrażliwość na insulinę w małym badaniu bez grupy kontrolnej u osób z cukrzycą [S13]. W obu stosowano łagodnie chłodne powietrze przez wiele godzin, a nie krótkie zimne kąpiele. Przegląd badań z zimną wodą stwierdza, że wpływ na tkankę tłuszczową i insulinę wygląda obiecująco, ale pozostaje sporny [S2].
 
-**Odporność i stan zapalny: wstępne dane; nie mieszaj badań.** Markery stanu zapalnego rosną od razu po zanurzeniu w zimnej wodzie [S1]. Najbardziej znane badanie odporności szkoliło ochotników jednocześnie w medytacji, technikach oddechowych i ekspozycji na zimno, a potem wykazało u nich słabszą reakcję zapalną na wstrzykniętą toksynę bakteryjną [S14]. Ponieważ trening łączył wszystkie trzy elementy, efektu nie można przypisać samemu zimnu; w tym badaniu stosowanie wyuczonych technik powodowało duże wzrosty adrenaliny [S14].
+**Odporność i stan zapalny: wstępne dane; nie mieszaj badań.** Markery stanu zapalnego rosną od razu po zanurzeniu w zimnej wodzie [S1]. Najbardziej znane badanie odporności szkoliło ochotników jednocześnie w medytacji, technikach oddechowych i ekspozycji na zimno, a potem wykazało u nich słabszą reakcję zapalną na wstrzykniętą toksynę bakteryjną [S14]. Ponieważ trening łączył wszystkie trzy elementy, efektu nie można przypisać samemu zimnu; w tym badaniu stosowanie wyuczonych technik powodowało duże wzrosty adrenaliny [S14]. Późniejsze badanie pilotażowe tej samej grupy rozdzieliło składniki: sam trening zimnem nie zmienił istotnie reakcji zapalnej, ćwiczenie oddechowe tak, a dodanie treningu zimnem wzmocniło jego efekt [S16].
 
 ### Czy zimna kąpiel zalewa mózg dopaminą?
 
