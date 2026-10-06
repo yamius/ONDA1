@@ -29,10 +29,10 @@ const COPY: Record<'en' | 'ru' | 'es', { heading: string; items: Record<Cornerst
   ru: {
     heading: 'Связанные материалы',
     items: {
-      'hrv-biofeedback': { label: 'Биофидбек ВСР', blurb: 'Что это такое, как работает петля обратной связи и что говорят исследования.' },
-      'resonance-breathing': { label: 'Резонансное дыхание', blurb: 'Почему около 6 вдохов в минуту максимально повышают ВСР.' },
-      'hrv-vs-coherence': { label: 'ВСР и когерентность', blurb: 'Сама вариабельность — и насколько она плавная.' },
-      'apple-watch-hrv-biofeedback': { label: 'Биофидбек ВСР на Apple Watch', blurb: 'Что измеряют часы и как работает живая обратная связь.' },
+      'hrv-biofeedback': { label: 'HRV-биофидбек', blurb: 'Что это такое, как работает петля обратной связи и что говорят исследования.' },
+      'resonance-breathing': { label: 'Резонансное дыхание', blurb: 'Почему около 6 вдохов в минуту максимально повышают HRV.' },
+      'hrv-vs-coherence': { label: 'HRV и когерентность', blurb: 'Сама вариабельность — и насколько она плавная.' },
+      'apple-watch-hrv-biofeedback': { label: 'HRV-биофидбек на Apple Watch', blurb: 'Что измеряют часы и как работает живая обратная связь.' },
     },
   },
   es: {

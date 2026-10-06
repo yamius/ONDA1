@@ -30,8 +30,8 @@ const COPY: Record<Variant, Partial<Record<Lang, string>> & { en: string }> = {
   hrv: {
     en: 'Check your HRV right in Claude →',
     es: 'Consulta tu VFC directamente en Claude →',
-    ru: 'Проверьте ВСР прямо в Claude →',
-    uk: 'Перевірте ВСР просто в Claude →',
+    ru: 'Проверьте HRV прямо в Claude →',
+    uk: 'Перевірте HRV просто в Claude →',
     zh: '直接在 Claude 中查看你的 HRV →',
     de: 'Prüfe deine HRV direkt in Claude →',
     fr: 'Vérifiez votre VFC directement dans Claude →',
