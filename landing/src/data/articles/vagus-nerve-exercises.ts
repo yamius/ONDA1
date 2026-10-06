@@ -102,8 +102,8 @@ Start with the long exhale, add a hum when you want a quick reset, and keep the 
 
 > [ HARDWARE_VALIDATION ]
 > VALIDATION_DEVICE: HRV tracker (morning trend)
-> METRIC: Resting HRV trends up over weeks of daily practice
-> STATUS: HRV_RISING
+> METRIC: HRV rises during the face cooling; a higher resting HRV afterwards has not been shown
+> STATUS: HRV_UP_DURING_EXPOSURE
 `,
 }
 

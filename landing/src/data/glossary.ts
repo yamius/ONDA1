@@ -602,7 +602,7 @@ The **Mammalian Dive Reflex** is an automatic physiological response triggered w
 - **Bradycardia** — heart rate slows immediately
 - **Peripheral vasoconstriction** — blood shifts to core organs
 - **Vagal activation** — the parasympathetic system takes control
-- **Stress reset** — can interrupt sympathetic dominance
+- **Slower heart during exposure** — a lasting stress-reset effect has not been established
 
 ## Why does the mammalian dive reflex matter?
 
@@ -6080,7 +6080,7 @@ Instead of operating at one fixed point, Range Fractionation splits your stimulu
 ## Applications
 
 - **Mechanical (Training):** Fragment load across ultra-heavy (1–3 reps, CNS activation), moderate (8–12 reps, hypertrophy), and light/high-velocity (explosive power). All fiber types upgrade simultaneously.
-- **Thermal:** Alternate between cold (maximal vasoconstriction, norepinephrine surge) and heat (vasodilation, heat shock protein activation). Trains full vascular range.
+- **Thermal:** Alternate between cold (vessels narrow) and heat (vessels widen). "Training the full vascular range" is an image; a training effect has not been shown.
 - **Amplitude Shift:** Never run two identical days. High Load must be followed by Low Load/High Recovery — biological adaptation requires contrast.
 - **Micro-Fractionation:** Small daily stimulus doses + one massive weekly "Impact" session. Maintains baseline tone while delivering periodic deep structural resets.
 
@@ -6252,11 +6252,11 @@ HSPs act as **molecular chaperones**: they repair misfolded proteins, prevent ag
 
 ## In ONDA Life
 
-Heat Shock Proteins are a key outcome of the **Thermal Range Fractionation** protocol — hitting both temperature extremes in sequence maximizes HSP activation and trains the full vascular range simultaneously.
+Heat Shock Proteins are the idea behind the **Thermal Range Fractionation** protocol — hitting both temperature extremes in sequence. That this maximizes HSP activation or trains the vascular range has not been shown.
 
 ## Practical Signal
 
-Post-sauna or post-cold session: reduced muscle soreness, faster recovery, and improved training adaptation are downstream markers of HSP activity.
+Cold-water immersion after exercise may reduce muscle soreness. But in a trial, regular cold-water immersion after strength training reduced gains in strength and muscle (Roberts 2015) — so cold right after lifting is not a sign of better training adaptation.
 `,
     relatedSlugs: ['range-fractionation', 'autophagy', 'mitochondria'],
   },
@@ -6340,7 +6340,7 @@ Adiponectin functions as a "lubricant" for metabolic processes, streamlining the
 
 In ONDA protocols, we aim to maximize adiponectin levels to fortify the system:
 
-- **Cold Exposure:** Cold stress (ice baths, cryotherapy) is one of the most powerful triggers for adiponectin release. This activates "brown fat" and accelerates metabolic rate.
+- **Cold Exposure:** Effects of cold on brown fat and insulin sensitivity are emerging: small studies of mild cold air over several days increased brown fat activity and improved insulin sensitivity. Evidence for cryotherapy is of very low quality, and a link to adiponectin has not been shown.
 - **Visceral Fat Reduction:** Decreasing the volume of internal (visceral) fat automatically removes the inhibition of adiponectin synthesis.
 - **Monounsaturated Fats:** Incorporating olive oil and avocados into the nutritional protocol supports the natural secretion of this optimizer.`,
     relatedSlugs: ['insulin-sensitivity', 'allostatic-load', 'metabolic-flexibility'],
@@ -6506,7 +6506,7 @@ Hormesis functions by activating survival pathways that typically remain in a "d
 >
 > SIGNAL: Brief exposure to cold, physical exertion, or intermittent fasting.
 >
-> RESULT: Activation of [AMPK](/glossary/ampk) and Sirtuins (longevity genes). Enhanced cognitive function, a fortified immune system, and reduced systemic inflammation.
+> RESULT (hypothesis): Activation of [AMPK](/glossary/ampk) and Sirtuins (longevity genes), with better cognitive function, immunity and lower inflammation. This is a hypothesis, not an established effect; cold-water immersion, for example, raises inflammation markers acutely.
 
 > **STATUS: COMFORT_DEGRADATION (Hibernation)**
 >
@@ -6524,7 +6524,7 @@ Hormesis functions by activating survival pathways that typically remain in a "d
 
 In the ONDA framework, dosed stress is used to expand your adaptive bandwidth:
 
-- **Cold/Heat Shock:** Ice baths or saunas are classic examples of thermal hormesis that activate metabolic defense layers.
+- **Cold/Heat Shock:** Ice baths or saunas are often described as thermal hormesis — an idea, not an established health effect.
 - **Intermittent Fasting:** Hunger, acting as a hormetic stressor, triggers [Autophagy](/glossary/autophagy) (cellular cleanup).
 - **Hypoxic Training:** Brief breath-holding exercises train the brain's resilience to oxygen deficits and improve vascular health.
 - **Phytohormetins:** Consumption of specific plants (e.g., broccoli or turmeric) that contain low doses of "toxins" which stimulate our own internal antioxidant systems.`,

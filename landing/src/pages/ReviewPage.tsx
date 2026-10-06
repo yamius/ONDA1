@@ -11,6 +11,7 @@
 import { OtherLanguages } from '../components/OtherLanguages'
 import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
 import HrvContextBox from '../components/HrvContextBox'
+import ColdSafetyBlock from '../components/ColdSafetyBlock'
 import { storeCt } from '../lib/storeCt'
 import { useParams, useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -107,6 +108,8 @@ export function ReviewPage() {
           <span className="text-white/60">{tBestFor}</span>
         </p>
       </div>
+
+      {review.category === 'cold-plunge' && <ColdSafetyBlock lang={lang} />}
 
       {/* Branded score card — og:image + Product.image + visible hero (6.5).
           Falls back to the generated card when no explicit product photo. */}

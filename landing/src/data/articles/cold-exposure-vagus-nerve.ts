@@ -1,27 +1,27 @@
 import type { Article } from './types'
 
 /**
- * Cold exposure → sympathetic shock spike THEN parasympathetic/vagal rebound; breath is the control
+ * Cold exposure → sympathetic shock spike; cold on the face → diving-response vagal brake (HRV up DURING, not after); breath is the control
  * knob. Ties to ONDA practices + coherence/HRV + the cold-plunge reviews (physiology article the
  * review cluster lacks). Firewall: practice + safety (cold-shock/gasp, heart conditions → clinician).
- * Grounded: cold-water immersion increases vagal/parasympathetic activity; controlled breathing
+ * Grounded (science/evidence/cold-exposure): RMSSD rises during diving-response triggers, not post-exposure; controlled breathing
  * blunts the cold-shock response. No fabricated numbers.
  */
 const article: Article = {
   slug: 'cold-exposure-vagus-nerve',
   title: 'Cold and the Vagus Nerve: Why a Cold Shower Resets Your Nervous System',
-  seoTitle: 'Cold Exposure & the Vagus Nerve: The Rebound | ONDA Life',
+  seoTitle: 'Cold Exposure & the Vagus Nerve: What Happens | ONDA Life',
   description:
-    'A cold shower hits like an alarm — then leaves you strangely calm. The reason is a sympathetic spike followed by a parasympathetic rebound, and the breath is the knob that controls both. The physiology, and how to use it.',
+    'A cold shower hits like an alarm — then leaves you strangely calm. Cold on the skin triggers a sympathetic spike; cold on the face slows the heart through the vagus nerve, and the breath is the knob you control. The physiology, and how to use it.',
   category: 'OS States',
   relatedSlugs: ['vagus-nerve', 'heart-rate-variability', 'coherent-breathing-guide', 'co2-tolerance-expanding-oxygen-limit', 'anxiety-panic-breathing-hrv'],
   introStyle: 'blue',
   image: '/images/articles/cold-exposure-vagus-nerve.webp',
   imageAlt:
-    "Figure under a cold cascade with the vagus nerve lit down the spine, a sympathetic spike then a parasympathetic vagal rebound raising HRV.",
-  imageTitle: "Cold and the vagus nerve — sympathetic spike, then vagal rebound",
+    "Figure under a cold cascade with the vagus nerve lit down the spine, a sympathetic spike then the vagal brake of the diving response.",
+  imageTitle: "Cold and the vagus nerve — sympathetic spike, then vagal brake",
   imageCaption:
-    "Cold exposure and the vagus nerve — a sympathetic spike followed by a parasympathetic vagal rebound, and how the breath is the knob controlling both.",
+    "Cold exposure and the vagus nerve — a sympathetic spike, the vagal brake of the diving response, and how the breath is the knob controlling both.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Cold is a stressor you choose — and the breath is how you stay in charge of it. That’s the whole skill.',
@@ -47,15 +47,15 @@ This is real stress, deliberately chosen. Which is exactly what makes it trainab
 
 ## Section 2: How is cold exposure linked to the vagus nerve?
 
-After the spike, as you stay in the cold and especially once you come out, the body swings the other way: the [parasympathetic](/glossary/parasympathetic-nervous-system) branch re-engages, often strongly. Cold-water immersion has been shown to increase vagal, parasympathetic activity — the [vagus nerve](/glossary/vagus-nerve) reasserting control, heart rate settling, [variability](/glossary/heart-rate-variability) rising. That's the source of the clear-headed calm afterward: not the cold itself, but the vagal rebound the cold provokes.
+Cold on the face does something different from cold on the skin: it triggers the diving response, in which the [vagus nerve](/glossary/vagus-nerve) slows the heart through the [parasympathetic](/glossary/parasympathetic-nervous-system) branch. Across studies of these diving-response triggers, vagally mediated [heart rate variability](/glossary/heart-rate-variability) rose during the exposure but not afterwards ([what the evidence on cold exposure shows](/science/evidence/cold-exposure)). So a post-cold "vagal rebound" has not been shown: the calm many people feel afterwards is a real experience, but a higher reading in the cold does not mean your resting HRV has changed.
 
-You've essentially forced your nervous system through a full stress-and-recovery cycle in a few minutes — and every rep trains the recovery.
+Picture it as an image, not a measurement: a stress-and-settle cycle in a few minutes. That repeating it trains the vagus nerve or your recovery has not been shown.
 
 ---
 
 ## Section 3: How should you breathe during cold exposure?
 
-The whole practice hinges on one thing: **controlling the gasp.** The cold's power over you lives in that panicked first breath. If you can meet the water and keep your breathing slow and deliberate instead of gasping, you stay ahead of the cold-shock response — you keep the [sympathetic](/glossary/sympathetic-nervous-system) spike from bootstrapping into panic, and you steer straight toward the parasympathetic rebound.
+The whole practice hinges on one thing: **controlling the gasp.** The cold's power over you lives in that panicked first breath. If you can meet the water and keep your breathing slow and deliberate instead of gasping, you stay ahead of the cold-shock response — you keep the [sympathetic](/glossary/sympathetic-nervous-system) spike from bootstrapping into panic, and the breath stays under your control.
 
 This is the same skill as any breath-based regulation: a slow, controlled breath is the manual override on an autonomic alarm. Cold just turns the alarm way up, which makes it superb *training* for staying calm under a real stressor — see the acute version in [anxiety, panic and the breath](/articles/anxiety-panic-breathing-hrv), and the breathing tolerance it builds in [CO₂ tolerance](/articles/co2-tolerance-expanding-oxygen-limit).
 
@@ -63,7 +63,7 @@ This is the same skill as any breath-based regulation: a slow, controlled breath
 
 ## Section 4: Where ONDA fits — and the safety line
 
-ONDA doesn't run your cold shower, but it trains the exact skill the cold demands and lets you see the recovery. The [breathing practices](/hrv-biofeedback) build the slow, controlled breath that keeps you ahead of the gasp; with an Apple Watch, the live [coherence](/glossary/coherence) feedback shows your heart rhythm organising as you steady the breath — the same vagal control you're trying to hold in the water. Practice the calm breath warm, and it's there when the cold tries to take it.
+ONDA doesn't run your cold shower, but it trains the exact skill the cold demands and lets you watch your heart rhythm while you breathe. The [breathing practices](/hrv-biofeedback) build the slow, controlled breath that keeps you ahead of the gasp; with an Apple Watch, the live [coherence](/glossary/coherence) feedback shows your heart rhythm organising as you steady the breath — the same vagal control you're trying to hold in the water. Practice the calm breath warm, and it's there when the cold tries to take it.
 
 Now the safety line, and it's not optional. The cold-shock gasp is a genuine drowning risk in open water — never cold-plunge alone or in water you can't easily exit. Cold is a real cardiovascular stressor: **if you have a heart condition, high blood pressure, are pregnant, or have any medical concern, talk to a doctor before deliberate cold exposure.** ONDA is a self-regulation tool, not a medical device, and none of this is medical advice.
 
@@ -71,20 +71,20 @@ Now the safety line, and it's not optional. The cold-shock gasp is a genuine dro
 
 ## Section 5: Using it well
 
-Start small and end cold: thirty seconds at the end of a warm shower is a real dose. Meet the water with a long, slow exhale — decide your first breath before it hits — and keep the breathing deliberate rather than letting it run ragged. Come out and notice the rebound; that clear calm is the vagal system you just trained. Keep it brief, keep it regular, and keep the breath in charge the whole time.
+Start small and end cold: thirty seconds at the end of a warm shower is a real dose. Meet the water with a long, slow exhale — decide your first breath before it hits — and keep the breathing deliberate rather than letting it run ragged. Come out and notice how you feel, but treat any calm as your experience, not as proof that you have trained the vagus nerve. Keep it brief, keep it regular, and keep the breath in charge the whole time.
 
-> **The Hack:** The cold's grip is in the gasp. Meet the water with one long, slow exhale and refuse to let the breath go ragged — control that first breath and you turn a panic reflex into a trained stress-and-recovery rep, riding the sympathetic spike straight into the parasympathetic calm on the other side.
+> **The Hack:** The cold's grip is in the gasp. Meet the water with one long, slow exhale and refuse to let the breath go ragged — control that first breath and the panic reflex no longer runs the show. With repeated exposures, the cold-shock response itself becomes smaller.
 
 > [ SYSTEM_STATUS ]
 > SPIKE: cold-shock = sympathetic surge + involuntary gasp
-> REBOUND: parasympathetic / vagal overcorrection → calm, higher HRV
+> VAGAL BRAKE: cold on the face slows the heart; HRV rises during exposure, not after
 > KNOB: slow controlled breath governs the whole cycle
 > SAFETY: never alone in open water · heart condition → doctor first
 `,
   howToSteps: [
     {
       name: 'Understand the two phases',
-      text: 'Cold triggers a sympathetic spike (racing heart, involuntary gasp), then a parasympathetic rebound (the calm afterward). The calm comes from the vagal overcorrection the cold provokes, not the cold itself.',
+      text: 'Cold on the skin triggers a sympathetic spike (racing heart, involuntary gasp); cold on the face triggers the diving response, which slows the heart through the vagus nerve. Vagally mediated HRV rises during the exposure, not afterwards — a post-cold “vagal rebound” has not been shown.',
       protocolId: 'cold-phases',
     },
     {

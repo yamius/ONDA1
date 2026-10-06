@@ -72,7 +72,7 @@ In nature, temperature drops at night and rises during the day. A constant 22°C
 
 Brown adipose tissue (BAT), activated by cold exposure, is particularly sensitive to this signal. BAT thermogenesis is regulated by the [sympathetic nervous system](/glossary/sympathetic-nervous-system) — the same system that governs morning [cortisol](/glossary/cortisol) release. Cold in the morning sharpens the sympathetic spike. Heat in the evening mimics sunset and accelerates the [parasympathetic](/glossary/parasympathetic-nervous-system) transition.
 
-> **The Hack:** Use a cold shower in the morning (stimulating the sympathetic nervous system and brown fat) and a hot bath or sauna in the evening. The rapid cooling of the body after a hot bath mimics a natural sunset, signaling the [hypothalamus](/glossary/hypothalamus): Time to Sleep.
+> **The Hack:** Use a cold shower in the morning (stimulating the sympathetic nervous system) and a hot bath or sauna in the evening. The rapid cooling of the body after a hot bath mimics a natural sunset, signaling the [hypothalamus](/glossary/hypothalamus): Time to Sleep.
 
 ---
 

@@ -171,6 +171,7 @@ function setMeta(name: string, content: string, isProperty = false) {
 import { getProtocolUniqueId, PROTOCOL_STORAGE_PREFIX, ARTICLE_STORAGE_PREFIX } from '../data/protocol-ids'
 import { ArticleReactions, ArticleValidationArrows } from '../components/ArticleReactions'
 import AppStoreCTA from '../components/AppStoreCTA'
+import ColdSafetyBlock, { COLD_SAFETY_ARTICLE_SLUGS } from '../components/ColdSafetyBlock'
 import { UseInClaudeLink } from '../components/UseInClaudeLink'
 import { storeCt } from '../lib/storeCt'
 
@@ -922,6 +923,8 @@ export function ArticlePage() {
           </nav>
         )
       })()}
+
+      {COLD_SAFETY_ARTICLE_SLUGS.has(article.slug) && <ColdSafetyBlock lang={lang} />}
 
       <article className="prose-onda">
         {(() => {

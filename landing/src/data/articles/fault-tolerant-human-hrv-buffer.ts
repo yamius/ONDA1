@@ -72,9 +72,9 @@ Three interventions to stress-test the system and expand the HRV buffer:
 
 ### Protocol 1: Hormetic Stress Loading
 
-> **Action:** 2–3 sessions per week of controlled, short-duration stress spikes: cold exposure (≤15°C, 2–3 minutes), hypoxic breathing (CO₂ tolerance training), or HIIT intervals (80–90% max HR, ≤20 min).
+> **Action:** 2–3 sessions per week of controlled, short-duration stress spikes: brief cold exposure, hypoxic breathing (CO₂ tolerance training), or HIIT intervals (80–90% max HR, ≤20 min).
 
-**Logic:** Hormetic loading — stress below the damage threshold — forces the regulatory system to practice recovery. Each controlled spike followed by complete recovery trains the system to exit stress states faster. Over weeks, the HRV buffer expands: the baseline rises and the recovery slope steepens. The system doesn't just tolerate more — it recovers from more, faster. Distributing those spikes across extreme ranges — [range fractionation](/articles/adaptation-hack-range-fractionation) — keeps the adaptation from plateauing.
+**Logic:** Hormetic loading — stress below the damage threshold — forces the regulatory system to practice recovery. The idea is that each controlled spike followed by complete recovery trains the system to exit stress states faster, and that over weeks the HRV buffer expands. Treat this as an image, not a proven effect: for cold exposure, studies show HRV rising during the exposure, not a higher baseline afterwards. Distributing those spikes across extreme ranges — [range fractionation](/articles/adaptation-hack-range-fractionation) — keeps the adaptation from plateauing.
 
 ### Protocol 2: VNS Calibration
 
@@ -116,7 +116,7 @@ Reading the buffer requires a device that resolves beat-to-beat intervals reliab
   howToSteps: [
     {
       name: 'Hormetic Stress Loading',
-      text: 'Perform 2–3 sessions per week of controlled stress spikes: cold exposure at ≤15°C for 2–3 min, CO₂ tolerance training, or HIIT at 80–90% max HR for ≤20 min.',
+      text: 'Perform 2–3 sessions per week of controlled stress spikes: brief cold exposure, CO₂ tolerance training, or HIIT at 80–90% max HR for ≤20 min.',
       protocolId: 'hrv-buffer-hormetic-load',
     },
     {

@@ -321,6 +321,42 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1002/14651858.cd008262.pub2": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cold-water immersion (cryotherapy) for preventing and treating muscle soreness after exercise",
+   "firstAuthor": "Bleakley",
+   "authors": [
+    "Bleakley",
+    "McDonough",
+    "Gardner",
+    "Baxter",
+    "Hopkins",
+    "Davison"
+   ],
+   "year": 2012,
+   "journal": "Cochrane Database of Systematic Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1002/14651858.cd010789.pub2": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Whole-body cryotherapy (extreme cold air exposure) for preventing and treating muscle soreness after exercise in adults",
+   "firstAuthor": "Costello",
+   "authors": [
+    "Costello",
+    "Baker",
+    "Minett",
+    "Bieuzen",
+    "Stewart",
+    "Bleakley"
+   ],
+   "year": 2015,
+   "journal": "Cochrane Database of Systematic Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1002/cphy.c150037": {
    "kind": "doi",
    "valid": true,
@@ -3341,6 +3377,32 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1038/nm.3891": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Short-term cold acclimation improves insulin sensitivity in patients with type 2 diabetes mellitus",
+   "firstAuthor": "Hanssen",
+   "authors": [
+    "Hanssen",
+    "Hoeks",
+    "Brans",
+    "van der Lans",
+    "Schaart",
+    "van den Driessche",
+    "Jörgensen",
+    "Boekschoten",
+    "Hesselink",
+    "Havekes",
+    "Kersten",
+    "Mottaghy",
+    "van Marken Lichtenbelt",
+    "Schrauwen"
+   ],
+   "year": 2015,
+   "journal": "Nature Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1038/nm0495-370": {
    "kind": "doi",
    "valid": true,
@@ -5746,6 +5808,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1152/japplphysiol.00578.2026": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Beyond hypothermia: mechanisms of death, rescue, and prevention in cold water immersion",
+   "firstAuthor": "Leuci",
+   "authors": [
+    "Leuci",
+    "Melau",
+    "Messina",
+    "Tipton",
+    "Carenzo"
+   ],
+   "year": 2026,
+   "journal": "Journal of Applied Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1152/japplphysiol.90991.2008": {
    "kind": "doi",
    "valid": true,
@@ -6066,6 +6145,30 @@
    ],
    "year": 1988,
    "journal": "American Review of Respiratory Disease",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1172/jci68993": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cold acclimation recruits human brown fat and increases nonshivering thermogenesis",
+   "firstAuthor": "van der Lans",
+   "authors": [
+    "van der Lans",
+    "Hoeks",
+    "Brans",
+    "Vijgen",
+    "Visser",
+    "Vosselman",
+    "Hansen",
+    "Jörgensen",
+    "Wu",
+    "Mottaghy",
+    "Schrauwen",
+    "van Marken Lichtenbelt"
+   ],
+   "year": 2013,
+   "journal": "Journal of Clinical Investigation",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
@@ -6934,6 +7037,24 @@
    "journal": "PLOS ONE",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1371/journal.pone.0317615": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of cold-water immersion on health and wellbeing: A systematic review and meta-analysis",
+   "firstAuthor": "Cain",
+   "authors": [
+    "Cain",
+    "Brinsley",
+    "Bennett",
+    "Nelson",
+    "Maher",
+    "Singh"
+   ],
+   "year": 2025,
+   "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1378/chest.125.2.683": {
    "kind": "doi",
@@ -10354,6 +10475,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:22336838": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cold-water immersion (cryotherapy) for preventing and treating muscle soreness after exercise.",
+   "firstAuthor": "Bleakley",
+   "authors": [
+    "Bleakley",
+    "McDonough",
+    "Gardner",
+    "Baxter",
+    "Hopkins",
+    "Davison"
+   ],
+   "year": 2012,
+   "journal": "Cochrane Database Syst Rev",
+   "doi": "10.1002/14651858.CD008262.pub2",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:22392290": {
    "kind": "pmid",
    "valid": true,
@@ -10798,6 +10938,31 @@
    "doi": "10.1007/s40279-013-0071-8",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:23867626": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cold acclimation recruits human brown fat and increases nonshivering thermogenesis.",
+   "firstAuthor": "van der Lans",
+   "authors": [
+    "van der Lans",
+    "Hoeks",
+    "Brans",
+    "Vijgen",
+    "Visser",
+    "Vosselman",
+    "Hansen",
+    "Jörgensen",
+    "Wu",
+    "Mottaghy",
+    "Schrauwen",
+    "van Marken Lichtenbelt"
+   ],
+   "year": 2013,
+   "journal": "J Clin Invest",
+   "doi": "10.1172/JCI68993",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:23899560": {
    "kind": "pmid",
@@ -11405,6 +11570,55 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:26147760": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Short-term cold acclimation improves insulin sensitivity in patients with type 2 diabetes mellitus.",
+   "firstAuthor": "Hanssen",
+   "authors": [
+    "Hanssen",
+    "Hoeks",
+    "Brans",
+    "van der Lans",
+    "Schaart",
+    "van den Driessche",
+    "Jörgensen",
+    "Boekschoten",
+    "Hesselink",
+    "Havekes",
+    "Kersten",
+    "Mottaghy",
+    "van Marken Lichtenbelt",
+    "Schrauwen"
+   ],
+   "year": 2015,
+   "journal": "Nat Med",
+   "doi": "10.1038/nm.3891",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:26174323": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Post-exercise cold water immersion attenuates acute anabolic signalling and long-term adaptations in muscle to strength training.",
+   "firstAuthor": "Roberts",
+   "authors": [
+    "Roberts",
+    "Raastad",
+    "Markworth",
+    "Figueiredo",
+    "Egner",
+    "Shield",
+    "Cameron-Smith",
+    "Coombes",
+    "Peake"
+   ],
+   "year": 2015,
+   "journal": "J Physiol",
+   "doi": "10.1113/JP270570",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:26245965": {
    "kind": "pmid",
    "valid": true,
@@ -11520,6 +11734,25 @@
    "year": 2015,
    "journal": "N Engl J Med",
    "doi": "10.1056/NEJMoa1406761",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:26383887": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Whole-body cryotherapy (extreme cold air exposure) for preventing and treating muscle soreness after exercise in adults.",
+   "firstAuthor": "Costello",
+   "authors": [
+    "Costello",
+    "Baker",
+    "Minett",
+    "Bieuzen",
+    "Stewart",
+    "Bleakley"
+   ],
+   "year": 2015,
+   "journal": "Cochrane Database Syst Rev",
+   "doi": "10.1002/14651858.CD010789.pub2",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
@@ -11753,6 +11986,24 @@
    "doi": "10.1073/pnas.1605635113",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:27631616": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Effect of Cold Showering on Health and Work: A Randomized Controlled Trial.",
+   "firstAuthor": "Buijze",
+   "authors": [
+    "Buijze",
+    "Sierevelt",
+    "van der Heijden",
+    "Dijkgraaf",
+    "Frings-Dresen"
+   ],
+   "year": 2016,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0161749",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:27658566": {
    "kind": "pmid",
@@ -14039,6 +14290,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:36137565": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Health effects of voluntary exposure to cold water - a continuing subject of debate.",
+   "firstAuthor": "Esperland",
+   "authors": [
+    "Esperland",
+    "de Weerd",
+    "Mercer"
+   ],
+   "year": 2022,
+   "journal": "Int J Circumpolar Health",
+   "doi": "10.1080/22423982.2022.2111789",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:36146073": {
    "kind": "pmid",
    "valid": true,
@@ -14504,6 +14771,25 @@
    "doi": "10.1016/j.concog.2023.103590",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:39879231": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of cold-water immersion on health and wellbeing: A systematic review and meta-analysis.",
+   "firstAuthor": "Cain",
+   "authors": [
+    "Cain",
+    "Brinsley",
+    "Bennett",
+    "Nelson",
+    "Maher",
+    "Singh"
+   ],
+   "year": 2025,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0317615",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:40149675": {
    "kind": "pmid",
@@ -15066,6 +15352,24 @@
    "doi": "10.1080/13548506.2026.2708207",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:42532024": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Beyond hypothermia: mechanisms of death, rescue, and prevention in cold water immersion.",
+   "firstAuthor": "Leuci",
+   "authors": [
+    "Leuci",
+    "Melau",
+    "Messina",
+    "Tipton",
+    "Carenzo"
+   ],
+   "year": 2026,
+   "journal": "J Appl Physiol (1985)",
+   "doi": "10.1152/japplphysiol.00578.2026",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:42655500": {
    "kind": "pmid",

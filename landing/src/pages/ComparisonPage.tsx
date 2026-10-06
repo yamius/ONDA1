@@ -10,6 +10,7 @@
 import { OtherLanguages } from '../components/OtherLanguages'
 import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
+import ColdSafetyBlock from '../components/ColdSafetyBlock'
 import { useParams, useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
@@ -59,6 +60,7 @@ export function ComparisonPage() {
       <p className="mb-6 font-mono text-xs text-white/30">
         {tReviews('ui.updated')} {comparison.dateModified}
       </p>
+      {comparison.category === 'cold-plunge' && <ColdSafetyBlock lang={lang} />}
       {/* EN: answer-first summary built from the ranked picks — the direct
           answer to "what is the best …?" before the hero image (GEO). */}
       {lang === 'en' && (() => {

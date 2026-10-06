@@ -19,6 +19,9 @@ export interface FactTranslation {
 
 export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, FactTranslation>>> = {
   ru: {
+    'study.sramek2000.duration': { display: 'один час' },
+    'study.sramek2000.temp': { display: '14 °C' },
+    'study.sramek2000.catecholamines': { display: 'примерно на 530% (норадреналин) и на 250% (дофамин)' },
     'rhr.adult.normal': { display: '60–100 уд/мин' },
     'rhr.adult.normal.caveat': { display: "У тренированных людей пульс часто ниже, а в популяционных исследованиях более низкий пульс в покое связан с более низкой долгосрочной смертностью" },
     'rhr.trained': { display: "часто ниже 60 уд/мин, а у многих элитных спортсменов на выносливость в самой низкой точке суток он опускается до 40 уд/мин и ниже" },
@@ -76,6 +79,9 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'claim.hrvNotStress': { display: 'Одно низкое значение HRV само по себе не означает, что вы в стрессе или нездоровы' },
   },
   uk: {
+    'study.sramek2000.duration': { display: 'одну годину' },
+    'study.sramek2000.temp': { display: '14 °C' },
+    'study.sramek2000.catecholamines': { display: 'приблизно на 530% (норадреналін) і на 250% (дофамін)' },
     'rhr.adult.normal': { display: '60–100 уд/хв' },
     'rhr.adult.normal.caveat': { display: "У тренованих людей пульс часто нижчий, а в популяційних дослідженнях нижчий пульс у спокої пов’язаний із нижчою довгостроковою смертністю" },
     'rhr.trained': { display: "часто нижче 60 уд/хв, а в багатьох елітних спортсменів на витривалість у найнижчій точці доби він опускається до 40 уд/хв і нижче" },
@@ -133,6 +139,9 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'claim.hrvNotStress': { display: 'Одне низьке значення HRV саме по собі не означає, що ви в стресі чи нездорові' },
   },
   es: {
+    'study.sramek2000.duration': { display: 'una hora' },
+    'study.sramek2000.temp': { display: '14 °C' },
+    'study.sramek2000.catecholamines': { display: 'alrededor de un 530% (noradrenalina) y un 250% (dopamina)' },
     'rhr.adult.normal': { display: "60–100 lpm" },
     'rhr.adult.normal.caveat': { display: "las personas en forma suelen tener valores más bajos, y en estudios poblacionales una frecuencia cardíaca en reposo más baja se asocia con una menor mortalidad a largo plazo" },
     'rhr.trained': { display: "a menudo por debajo de 60 lpm, y muchos atletas de élite de resistencia llegan a 40 lpm o menos en el punto más bajo del día" },
@@ -184,6 +193,9 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'claim.hrvNotStress': { display: "Una sola lectura baja de HRV no significa por sí misma que estés estresado o enfermo" },
   },
   de: {
+    'study.sramek2000.duration': { display: 'eine Stunde' },
+    'study.sramek2000.temp': { display: '14 °C' },
+    'study.sramek2000.catecholamines': { display: 'um etwa 530 % (Noradrenalin) und 250 % (Dopamin)' },
     'rhr.adult.normal': { display: "60–100 S/min" },
     'rhr.adult.normal.caveat': { display: "Trainierte Menschen liegen oft darunter, und in Bevölkerungsstudien geht ein niedrigerer Ruhepuls mit einer geringeren langfristigen Sterblichkeit einher" },
     'rhr.trained': { display: "oft unter 60 S/min, und viele Ausdauer-Spitzensportler erreichen am tiefsten Punkt des Tages 40 S/min oder weniger" },
@@ -235,6 +247,9 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'claim.hrvNotStress': { display: "Ein einzelner niedriger HRV-Wert bedeutet für sich genommen nicht, dass du gestresst oder krank bist" },
   },
   fr: {
+    'study.sramek2000.duration': { display: 'une heure' },
+    'study.sramek2000.temp': { display: '14 °C' },
+    'study.sramek2000.catecholamines': { display: 'd’environ 530 % (noradrénaline) et 250 % (dopamine)' },
     'rhr.adult.normal': { display: "60–100 bpm" },
     'rhr.adult.normal.caveat': { display: "Les personnes en bonne forme se situent souvent plus bas, et dans les études de population une fréquence cardiaque au repos plus basse est associée à une mortalité à long terme plus faible" },
     'rhr.trained': { display: "souvent sous 60 bpm, et de nombreux athlètes d’endurance de haut niveau descendent à 40 bpm ou moins au point le plus bas de la journée" },
@@ -286,6 +301,9 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'claim.hrvNotStress': { display: "Une seule mesure basse de la HRV ne signifie pas à elle seule que vous êtes stressé ou malade" },
   },
   it: {
+    'study.sramek2000.duration': { display: 'un’ora' },
+    'study.sramek2000.temp': { display: '14 °C' },
+    'study.sramek2000.catecholamines': { display: 'di circa il 530% (noradrenalina) e il 250% (dopamina)' },
     'rhr.adult.normal': { display: "60–100 bpm" },
     'rhr.adult.normal.caveat': { display: "Le persone allenate spesso hanno valori più bassi, e negli studi di popolazione una frequenza cardiaca a riposo più bassa è associata a una minore mortalità a lungo termine" },
     'rhr.trained': { display: "spesso sotto i 60 bpm, e molti atleti d'élite di resistenza scendono a 40 bpm o meno nel punto più basso della giornata" },
@@ -337,6 +355,9 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'claim.hrvNotStress': { display: "Una singola lettura di HRV bassa non significa di per sé che tu sia stressato o non stia bene" },
   },
   pt: {
+    'study.sramek2000.duration': { display: 'uma hora' },
+    'study.sramek2000.temp': { display: '14 °C' },
+    'study.sramek2000.catecholamines': { display: 'cerca de 530% (noradrenalina) e 250% (dopamina)' },
     'rhr.adult.normal': { display: "60–100 bpm" },
     'rhr.adult.normal.caveat': { display: "pessoas condicionadas costumam ficar abaixo disso, e em estudos populacionais uma frequência cardíaca de repouso mais baixa está associada a menor mortalidade a longo prazo" },
     'rhr.trained': { display: "muitas vezes abaixo de 60 bpm, e muitos atletas de elite de resistência chegam a 40 bpm ou menos no ponto mais baixo do dia" },
@@ -388,6 +409,9 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'claim.hrvNotStress': { display: "Uma única leitura baixa de HRV não significa, por si só, que você esteja estressado ou doente" },
   },
   nl: {
+    'study.sramek2000.duration': { display: 'een uur' },
+    'study.sramek2000.temp': { display: '14 °C' },
+    'study.sramek2000.catecholamines': { display: 'met ongeveer 530% (noradrenaline) en 250% (dopamine)' },
     'rhr.adult.normal': { display: "60–100 bpm" },
     'rhr.adult.normal.caveat': { display: "Fitte mensen zitten vaak lager, en in bevolkingsonderzoek gaat een lagere rusthartslag samen met een lagere sterfte op de lange termijn" },
     'rhr.trained': { display: "vaak onder 60 bpm, en veel topsporters in duursport komen op het laagste punt van de dag op 40 bpm of minder" },
@@ -439,6 +463,9 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'claim.hrvNotStress': { display: "Eén lage HRV-meting betekent op zichzelf niet dat je gestrest of ziek bent" },
   },
   pl: {
+    'study.sramek2000.duration': { display: 'godzinę' },
+    'study.sramek2000.temp': { display: '14 °C' },
+    'study.sramek2000.catecholamines': { display: 'o około 530% (noradrenalina) i 250% (dopamina)' },
     'rhr.adult.normal': { display: "60–100 ud./min" },
     'rhr.adult.normal.caveat': { display: "osoby wytrenowane często mają niższe wartości, a w badaniach populacyjnych niższe tętno spoczynkowe wiąże się z niższą śmiertelnością w dłuższej perspektywie" },
     'rhr.trained': { display: "często poniżej 60 ud./min, a wielu wyczynowych sportowców wytrzymałościowych osiąga 40 ud./min lub mniej w najniższym punkcie doby" },
@@ -490,6 +517,9 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'claim.hrvNotStress': { display: "Pojedynczy niski odczyt HRV sam w sobie nie oznacza, że jesteś zestresowany lub chory" },
   },
   ja: {
+    'study.sramek2000.duration': { display: '1時間' },
+    'study.sramek2000.temp': { display: '14 °C' },
+    'study.sramek2000.catecholamines': { display: '約530%（ノルアドレナリン）と約250%（ドーパミン）' },
     'rhr.adult.normal': { display: "60–100拍/分" },
     'rhr.adult.normal.caveat': { display: "体力のある人はそれより低いことが多く、集団研究では安静時心拍数が低いほど長期的な死亡率が低いことと関連しています" },
     'rhr.trained': { display: "多くの場合60拍/分未満で、エリートの持久系アスリートの多くは1日のうち最も低い時点で40拍/分以下になります" },
@@ -541,6 +571,9 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'claim.hrvNotStress': { display: "HRVの低い測定値が一度出ただけでは、それだけでストレスや体調不良を意味するわけではありません" },
   },
   zh: {
+    'study.sramek2000.duration': { display: '一小时' },
+    'study.sramek2000.temp': { display: '14 °C' },
+    'study.sramek2000.catecholamines': { display: '约 530%（去甲肾上腺素）和 250%（多巴胺）' },
     'rhr.adult.normal': { display: "60–100 次/分" },
     'rhr.adult.normal.caveat': { display: "体能好的人通常更低；在人群研究中，较低的静息心率与较低的长期死亡率相关" },
     'rhr.trained': { display: "通常低于 60 次/分，许多精英耐力运动员在一天中最低时可降到 40 次/分或更低" },

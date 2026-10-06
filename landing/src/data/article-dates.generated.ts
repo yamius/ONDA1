@@ -814,7 +814,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:mammalian-dive-reflex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-04T15:50:16.000Z"
+    "modified": "2026-10-06T18:33:12.000Z"
   },
   "glossary:thalamus": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1534,7 +1534,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:range-fractionation": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-06T18:33:12.000Z"
   },
   "glossary:leptin": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1550,7 +1550,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:heat-shock-proteins": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-06T18:33:12.000Z"
   },
   "glossary:antifragility": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1558,7 +1558,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:adiponectin": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-06T18:33:12.000Z"
   },
   "glossary:ampk": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1574,7 +1574,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:hormesis": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-06T18:33:12.000Z"
   },
   "glossary:cortex-stack": {
     "published": "2026-09-29T18:09:37.000Z",

@@ -51,6 +51,7 @@ const HILLEBRAND_2013: FactSource = { label: 'Hillebrand 2013, Europace (HRV and
 const LOERUP_2019: FactSource = { label: 'Loerup 2019, BMC Med (blood pressure and heart rate in pregnancy, meta-analysis)', doi: '10.1186/s12916-019-1399-1', pmid: '31506067' }
 const VOSS_2015: FactSource = { label: 'Voss 2015, PLOS ONE', doi: '10.1371/journal.pone.0118308' }
 const NUNAN_2010: FactSource = { label: 'Nunan 2010, Pacing Clin Electrophysiol', doi: '10.1111/j.1540-8159.2010.02841.x' }
+const SRAMEK_2000: FactSource = { label: 'Šrámek 2000, Eur J Appl Physiol (cold-water immersion, catecholamines)', doi: '10.1007/s004210050065', pmid: '10751106' }
 const LEHRER_2003: FactSource = { label: 'Lehrer 2003, Psychosomatic Medicine', doi: '10.1097/01.psy.0000089200.81962.19' }
 const SHAFFER_2020: FactSource = { label: 'Shaffer & Meehan 2020, Front Neurosci', doi: '10.3389/fnins.2020.570400' }
 const BALBAN_2023: FactSource = { label: 'Balban 2023, Cell Reports Medicine', doi: '10.1016/j.xcrm.2022.100895' }
@@ -109,6 +110,9 @@ const FACTS_LIST: Fact[] = [
   { id: 'breath.resonance.typical', display: 'about 5.5–6 breaths per minute (around 0.1 Hz)', kind: 'range', scope: 'Typical resonance breathing rate in adults; the individual rate varies.', sources: [LEHRER_2003], status: 'approved', reviewed: R, note: 'Replaces “6/min = 5 s in / 5 s out” vs “5.5 s / 5.5 s” wording.' },
   { id: 'breath.resonance.pacer', display: '5.5 seconds in, 5.5 seconds out', kind: 'number', scope: 'Default slow-breathing pacer on onda-life.com tools (about 5.5 breaths per minute).', sources: [LEHRER_2003], status: 'approved', reviewed: R },
   { id: 'breath.resonance.individualRange', display: 'about 4.5–7 breaths per minute', kind: 'range', scope: 'Range of individual resonance frequencies in adults.', sources: [LEHRER_2003, SHAFFER_2020], status: 'approved', reviewed: R, note: 'Replaces 4.5–6.5 / 5–6 / 5–7 variants.' },
+  { id: 'study.sramek2000.duration', display: 'one hour', kind: 'number', scope: 'Duration of the head-out immersions in Šrámek 2000.', sources: [SRAMEK_2000], status: 'approved', reviewed: '2026-10-06', note: 'Approved by Yakiv 2026-10-06' },
+  { id: 'study.sramek2000.temp', display: '14 °C', kind: 'number', scope: 'Coldest water temperature in Šrámek 2000, the condition with the noradrenaline and dopamine rise.', sources: [SRAMEK_2000], status: 'approved', reviewed: '2026-10-06', note: 'Approved by Yakiv 2026-10-06' },
+  { id: 'study.sramek2000.catecholamines', display: 'about 530% (noradrenaline) and 250% (dopamine)', kind: 'number', scope: 'Rise in plasma noradrenaline and dopamine during one-hour head-out immersion at 14 °C in young men (Šrámek 2000).', sources: [SRAMEK_2000], status: 'approved', reviewed: '2026-10-06', note: 'Approved by Yakiv 2026-10-06' },
   { id: 'breath.cyclicSigh.dose', display: '5 minutes a day', kind: 'number', scope: 'Daily dose of exhale-focused breathing (cyclic sighing) in the Balban 2023 trial.', sources: [BALBAN_2023], status: 'approved', reviewed: R },
 
   // ── Baseline (ONDA definitions) ─────────────────────────────────────

@@ -2380,6 +2380,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 768
   },
+  "/images/science/evidence-cold-exposure.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-cold-exposure.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-cold-exposure.webp": {
+    "width": 1584,
+    "height": 672
+  },
   "/images/science/evidence-hrv-biofeedback.avif": {
     "width": 1920,
     "height": 820

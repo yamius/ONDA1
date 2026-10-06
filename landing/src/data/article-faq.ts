@@ -365,7 +365,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "How do I apply range fractionation in practice?",
       answer:
-        "Never run two identical days: follow high load with low load and high recovery. Alternate sauna and cold to train the full vascular range. Combine small daily stimulus doses with one large weekly session. Track HRV \u2014 rising HRV alongside rising performance means the protocol is working.",
+        "Never run two identical days: follow high load with low load and high recovery. Alternate sauna and cold if you enjoy it ('training the vascular range' is an image, not a proven effect). Combine small daily stimulus doses with one large weekly session. Track HRV \u2014 rising HRV alongside rising performance means the protocol is working.",
     },
   ],
   "ai-biomarker-tracking-predictive": [
@@ -986,7 +986,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'Can I do the Hard Reset without cold exposure?',
       answer:
-        'The thermal spike (cold exposure after morning light) is the second Zeitgeber in the stack. Skipping it reduces the reset speed significantly. A minimum of 60 seconds of face-and-neck cold-water immersion at ≤15°C is sufficient to trigger the norepinephrine pulse that signals "daytime" to the sympathetic nervous system.',
+        'The thermal spike (cold exposure after morning light) is the second Zeitgeber in the stack. In this protocol it is optional: a specific cold dose that resets the circadian clock has not been shown, so the morning light anchor matters more.',
     },
   ],
   'ancestral-sync-circadian-anchors': [
@@ -1195,7 +1195,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'What is hormetic stress loading and how does it expand the HRV buffer?',
       answer:
-        'Hormetic stress loading uses controlled, short-duration stress spikes — cold exposure (≤15°C, 2–3 min), CO₂ tolerance training, or HIIT at 80–90% max HR — to force the regulatory system to practice recovery. Each spike followed by complete recovery trains the system to exit stress states faster. Over 4–6 weeks, the HRV baseline rises and the recovery slope steepens, expanding the operational buffer.',
+        'Hormetic stress loading uses controlled, short-duration stress spikes — brief cold exposure, CO₂ tolerance training, or HIIT at 80–90% max HR — with the idea that practising recovery helps the system exit stress states faster. That this raises the HRV baseline is not proven: for cold exposure, studies show HRV rising during the exposure, not afterwards.',
     },
     {
       question: 'How can morning HRV predict illness 48 hours in advance?',
@@ -1997,7 +1997,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Is it the cold or the breathing that reduces inflammation in the Wim Hof Method?",
       answer:
-        "The breathing. A 2022 Radboud study separated the components and found cold exposure alone did not significantly reduce inflammation, while the breathing technique did. The anti-inflammatory effect traces to the breath, not the ice baths.",
+        "The studies point mainly to the breathing. The best-known trial combined meditation, breathing and cold, so it cannot show the effect of cold alone; a 2022 Radboud study that separated the components found cold exposure alone did not significantly reduce inflammation, while the breathing technique did.",
     },
     {
       question: "Can you really control your immune system with breathing?",
@@ -2475,12 +2475,12 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Why does a cold shower make you feel calm afterward?",
       answer:
-        "Cold triggers a sympathetic 'cold-shock' spike — racing heart, an involuntary gasp — and then, as you stay in and especially once you come out, a strong parasympathetic rebound. Cold-water immersion increases vagal activity, so the clear-headed calm afterward comes from that vagal overcorrection, not the cold itself. You've run a full stress-and-recovery cycle in minutes.",
+        "Cold on the skin triggers a sympathetic 'cold-shock' spike — racing heart, an involuntary gasp. Cold on the face triggers the diving response, which slows the heart through the vagus nerve. Vagally mediated HRV rises during the exposure but has not been shown to stay higher afterwards, so there is no proven post-cold 'vagal rebound'. The calm many people feel afterwards is a real experience, not evidence that the cold has trained the vagus nerve.",
     },
     {
       question: "How do I stay calm in cold water?",
       answer:
-        "Control the first breath. The cold's power lives in the involuntary gasp, so decide your first breath before the water hits and meet it with a long, slow exhale, keeping the breathing deliberate. That stops the sympathetic spike from bootstrapping into panic and steers you toward the parasympathetic rebound — the same breath skill you can practice warm first.",
+        "Control the first breath. The cold's power lives in the involuntary gasp, so decide your first breath before the water hits and meet it with a long, slow exhale, keeping the breathing deliberate. That stops the sympathetic spike from bootstrapping into panic and keeps the breath under your control — the same breath skill you can practice warm first.",
     },
     {
       question: "Is cold exposure safe?",

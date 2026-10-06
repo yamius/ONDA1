@@ -7,6 +7,7 @@
 import { OtherLanguages } from '../components/OtherLanguages'
 import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
 import HrvContextBox from '../components/HrvContextBox'
+import ColdSafetyBlock from '../components/ColdSafetyBlock'
 import { storeCt } from '../lib/storeCt'
 import { useLocation, useParams, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -88,6 +89,8 @@ export function HeadToHeadPage() {
         </p>
         <p className="text-sm leading-relaxed text-white/85">{tr('verdict', h2h.verdict)}</p>
       </section>
+
+      {a.category === 'cold-plunge' && <ColdSafetyBlock lang={lang} />}
 
       {/* Product cards — scores side by side. Renders 2 or 3 columns
           depending on whether the duel includes a third product. */}
