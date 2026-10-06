@@ -1156,17 +1156,17 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'What are Mayer Waves and why does 0.1 Hz breathing synchronize with them?',
       answer:
-        'Mayer Waves are slow oscillations in blood pressure with a natural frequency of approximately 0.1 Hz — one cycle every 10 seconds — produced by the baroreflex feedback loop as it regulates arterial pressure. Normally, breathing runs out of phase with this oscillation, causing partial cancellation of the HRV signal. When breathing frequency matches Mayer Wave frequency at around 0.1 Hz (about 5.5–6 breaths per minute), the respiratory and cardiovascular oscillations phase-lock, creating constructive resonance — HRV amplitude surges to its physiological ceiling and baroreflex sensitivity reaches its maximum.',
+        'Mayer Waves are slow oscillations in blood pressure at roughly 0.1 Hz — about one cycle every 10 seconds — linked to the baroreflex loop that regulates arterial pressure. When you breathe at around 0.1 Hz (about 5.5–6 breaths per minute), the breathing cycle lines up with the delay in the baroreflex loop, and heart rate and blood pressure swing much more widely. This resonance is what HRV biofeedback uses; how much of the breath-linked heart rhythm the baroreflex itself produces is still debated.',
     },
     {
-      question: 'How does 0.1 Hz breathing lower blood pressure without medication?',
+      question: 'Does 0.1 Hz breathing lower blood pressure without medication?',
       answer:
-        'Repeated sessions of 0.1 Hz baroreflex resonance training sensitize arterial baroreceptors — they become faster and more precise at detecting pressure deviations and commanding compensatory responses. Over 4–8 weeks of daily 10–20 minute sessions, this produces measurable increases in baroreflex sensitivity (BRS) and arterial elasticity, resulting in systolic blood pressure reductions of 7–15 mmHg in hypertensive individuals. The mechanism is neuroplastic: the brainstem cardiovascular control centers recalibrate their setpoint downward in response to the improved signal-to-noise ratio delivered by resonance breathing.',
+        'The evidence is narrower than popular claims. During a slow-breathing session, measured baroreflex sensitivity rises — a short-term effect. In one randomised study of healthy adults, a course of HRV biofeedback raised resting baroreflex sensitivity; whether this lasts or improves health has not been established. Some studies report modest blood-pressure reductions with regular slow breathing, but results are inconsistent, and it is not a substitute for medical treatment.',
     },
     {
-      question: 'How quickly does the 0.1 Hz baroreflex hook produce measurable effects?',
+      question: 'How quickly does 0.1 Hz breathing have an effect?',
       answer:
-        'The acute effects begin within 90 seconds of reaching resonance: vagal efferent output increases, heart rate variability rises, and cortisol begins dropping. A 5-minute session is the minimum effective dose for measurable parasympathetic activation and cognitive noise reduction. A full 20-minute session produces baroreflex sensitization that persists 4–6 hours post-session, making it practical as a pre-work or pre-decision protocol. Blood pressure reduction accumulates over 4–8 weeks of consistent daily practice.',
+        'Heart-rate oscillations grow during the practice itself, once your breathing settles near your resonance rate, and baroreflex sensitivity rises while you breathe slowly. Many people feel calmer within minutes; the effect varies from person to person. One session does not "reset" the baroreflex, and any longer-term changes depend on regular practice and are not well established.',
     },
   ],
   'resonant-frequency-system-coherence': [

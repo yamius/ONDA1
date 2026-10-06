@@ -1741,6 +1741,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.jacc.2015.06.1084": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Orthostatic Hypotension",
+   "firstAuthor": "Ricci",
+   "authors": [
+    "Ricci",
+    "De Caterina",
+    "Fedorowski"
+   ],
+   "year": 2015,
+   "journal": "Journal of the American College of Cardiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1016/j.jad.2011.01.011": {
    "kind": "doi",
    "valid": true,
@@ -5017,6 +5032,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1111/j.1542-474x.2008.00219.x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Baroreflex Sensitivity: Measurement and Clinical Implications",
+   "firstAuthor": "La Rovere",
+   "authors": [
+    "La Rovere",
+    "Pinna",
+    "Raczak"
+   ],
+   "year": 2008,
+   "journal": "Annals of Noninvasive Electrocardiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1111/j.1600-0838.2004.00418.x": {
    "kind": "doi",
    "valid": true,
@@ -5689,6 +5719,19 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1152/ajpregu.00031.2007": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effect of aging on baroreflex function in humans",
+   "firstAuthor": "Monahan",
+   "authors": [
+    "Monahan"
+   ],
+   "year": 2007,
+   "journal": "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1152/ajpregu.91008.2008": {
    "kind": "doi",
    "valid": true,
@@ -5935,6 +5978,28 @@
    "journal": "Circulation",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1161/hc0202.103311": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Slow Breathing Increases Arterial Baroreflex Sensitivity in Patients With Chronic Heart Failure",
+   "firstAuthor": "Bernardi",
+   "authors": [
+    "Bernardi",
+    "Porta",
+    "Spicuzza",
+    "Bellwon",
+    "Spadacini",
+    "Frey",
+    "Yeung",
+    "Sanderson",
+    "Pedretti",
+    "Tramarin"
+   ],
+   "year": 2002,
+   "journal": "Circulation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1161/hyp.0b013e318293645f": {
    "kind": "doi",
@@ -8724,6 +8789,29 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:11790690": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Slow breathing increases arterial baroreflex sensitivity in patients with chronic heart failure.",
+   "firstAuthor": "Bernardi",
+   "authors": [
+    "Bernardi",
+    "Porta",
+    "Spicuzza",
+    "Bellwon",
+    "Spadacini",
+    "Frey",
+    "Yeung",
+    "Sanderson",
+    "Pedretti",
+    "Tramarin"
+   ],
+   "year": 2002,
+   "journal": "Circulation",
+   "doi": "10.1161/hc0202.103311",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:11820330": {
    "kind": "pmid",
    "valid": true,
@@ -9367,6 +9455,20 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:17442786": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effect of aging on baroreflex function in humans.",
+   "firstAuthor": "Monahan",
+   "authors": [
+    "Monahan"
+   ],
+   "year": 2007,
+   "journal": "Am J Physiol Regul Integr Comp Physiol",
+   "doi": "10.1152/ajpregu.00031.2007",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:17576282": {
    "kind": "pmid",
    "valid": true,
@@ -9525,6 +9627,22 @@
    "doi": "10.1177/039463200802100113",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:18426445": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Baroreflex sensitivity: measurement and clinical implications.",
+   "firstAuthor": "La Rovere",
+   "authors": [
+    "La Rovere",
+    "Pinna",
+    "Raczak"
+   ],
+   "year": 2008,
+   "journal": "Ann Noninvasive Electrocardiol",
+   "doi": "10.1111/j.1542-474X.2008.00219.x",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:18503485": {
    "kind": "pmid",
@@ -11308,6 +11426,22 @@
    "doi": "10.1523/JNEUROSCI.1625-15.2015",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:26271068": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Orthostatic Hypotension: Epidemiology, Prognosis, and Treatment.",
+   "firstAuthor": "Ricci",
+   "authors": [
+    "Ricci",
+    "De Caterina",
+    "Fedorowski"
+   ],
+   "year": 2015,
+   "journal": "J Am Coll Cardiol",
+   "doi": "10.1016/j.jacc.2015.06.1084",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:26332547": {
    "kind": "pmid",

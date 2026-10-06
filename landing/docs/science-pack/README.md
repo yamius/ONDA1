@@ -31,7 +31,8 @@ If a rule changes, this pack changes. No rule lives anywhere else.
 | 9 | [09-acceptance-checklist.md](09-acceptance-checklist.md) | What Claude Code checks before publishing |
 | 10 | [10-image-style.md](10-image-style.md) | Hero image: light scientific style, `imageAlt` and `imagePrompt` with examples |
 | 11 | [11-lessons-first-page.md](11-lessons-first-page.md) | Lessons from `concepts/rmssd` — what needed fixing and the rules that now prevent it |
-| 12 | [ONDA_science_roadmap.md](ONDA_science_roadmap.md) | Page plan: done, remaining MVP order, phase 2, methodology, what we don’t do (owner’s plan, in Russian) |
+| 12 | [12-translation-terms.md](12-translation-terms.md) | Binding terminology for translations: HRV gender per language, local abbreviations, medical terms (owner decisions) |
+| 13 | [ONDA_science_roadmap.md](ONDA_science_roadmap.md) | Page plan: done, remaining MVP order, phase 2, methodology, what we don’t do (owner’s plan, in Russian) |
 
 **For Mistral: read one file — [`MISTRAL.md`](MISTRAL.md).** It contains this whole pack in one document (generated from the files below by `npx tsx scripts/science-pack-bundle.ts`; never edit it by hand). Published so far: `concepts/rmssd` (see [06-mvp-pages.md](06-mvp-pages.md)).
 

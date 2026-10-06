@@ -2272,6 +2272,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1920,
     "height": 820
   },
+  "/images/science/concepts-baroreflex.avif": {
+    "width": 1024,
+    "height": 768
+  },
+  "/images/science/concepts-baroreflex.jpg": {
+    "width": 1024,
+    "height": 768
+  },
+  "/images/science/concepts-baroreflex.webp": {
+    "width": 1024,
+    "height": 768
+  },
   "/images/science/concepts-coherence.avif": {
     "width": 1916,
     "height": 821
