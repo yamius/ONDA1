@@ -126,11 +126,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "cardiac-coherence-365-method": {
     "published": "2026-09-22T18:37:38+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-06T16:16:13+02:00"
   },
   "cardiac-coherence-insomnia-sleep": {
     "published": "2026-09-24T22:03:37+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-06T16:16:13+02:00"
   },
   "chm-continuous-hormone-monitoring": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -170,7 +170,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "coherent-breathing-guide": {
     "published": "2026-06-04T17:34:04+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-06T16:16:13+02:00"
   },
   "cold-exposure-vagus-nerve": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -574,7 +574,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "resonant-frequency-system-coherence": {
     "published": "2026-03-24T13:00:58Z",
-    "modified": "2026-10-06T15:53:15+02:00"
+    "modified": "2026-10-06T16:16:13+02:00"
   },
   "respiratory-rate-hidden-signal": {
     "published": "2026-09-18T16:27:42+02:00",
