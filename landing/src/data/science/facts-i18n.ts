@@ -494,7 +494,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'study.mahtani2012.trials': { display: "8件の試験（成人494人）、うち5件はメーカーが資金提供または関与したもの" },
     'study.fincham2023.trials': { display: "12件のランダム化比較試験（成人785人）" },
     'study.eide2026.studies': { display: "9件の研究（参加者457人）" },
-    'study.pascoe2017.trials': { display: "能動的な対照群を置いた45件のランダム化試験" },
+    'study.pascoe2017.trials': { display: "積極的な対照群を置いた45件のランダム化試験" },
     'vagus.fibres': { display: "線維の約80%は臓器から脳へ、約20%は脳から臓器へ信号を伝えます" },
     'claim.vagalTone': { display: "迷走神経緊張は直接測定することができません。RMSSDなどのHRV指標は、迷走神経を介した心拍数の変化を反映しています", short: "迷走神経緊張は直接測定することができません" },
     'claim.slowExhale': { display: "ゆっくりした呼吸は、迷走神経を介したHRVの上昇と関連しています。呼気を長くすることが呼吸を遅くする以上の効果をもたらすかどうかは、まだ議論されています", short: "ゆっくりした呼吸は、迷走神経を介したHRVの上昇と関連しています" },
