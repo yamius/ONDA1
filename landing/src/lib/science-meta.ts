@@ -88,7 +88,7 @@ export function scienceMeta(route: string, getPage: (lang: string, kind: string,
   }
   const p = getPage(lang, kind, slug)
   if (!p) return undefined
-  const editor = { '@type': 'Person', name: p.editor, url: `${SITE_URL}/about` }
+  const editor = { '@type': 'Person', name: p.editor, url: `${SITE_URL}/people/yakiv-bilenko` }
   const article: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': p.kind === 'concepts' ? 'Article' : 'TechArticle',
