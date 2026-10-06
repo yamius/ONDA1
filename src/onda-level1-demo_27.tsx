@@ -658,14 +658,16 @@ const OndaLevel1 = () => {
   // the web view's storage is purged the chart is rebuilt on the next launch.
   // Gated like the baseline auto-load (authorized / already-connected) — a read
   // never prompts, and nothing touches HealthKit for a brand-new install.
-  const hrvBackfilledRef = useRef(false);
+  // Re-runs when the watch baseline loads (baseline.source → 'watch'), which is
+  // the moment the user has just connected the watch in THIS session — the
+  // localStorage "watching" flag alone isn't reactive, so the first version
+  // only backfilled after the next full restart. mergeHistory is idempotent
+  // (fills empty days only), so re-running is safe.
   useEffect(() => {
-    if (hrvBackfilledRef.current) return;
     if (platform !== 'ios') return;
     let watching = false;
     try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
-    if (!healthKitData.isAuthorized && !watching) return;
-    hrvBackfilledRef.current = true;
+    if (!healthKitData.isAuthorized && !watching && baseline?.source !== 'watch') return;
     (async () => {
       try {
         const res = await HealthKitHeartRate.queryHrvHistory({ days: 14 });
@@ -673,7 +675,7 @@ const OndaLevel1 = () => {
       } catch (e) { console.warn('[hrv] history backfill failed', e); }
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [platform, healthKitData.isAuthorized]);
+  }, [platform, healthKitData.isAuthorized, baseline?.source]);
 
   // Notification Primer — показываем ПОСЛЕ 6 завершённых практик, не
   // на старте и не в онбординге. Логика: пуш о напоминаниях имеет смысл,
