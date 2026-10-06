@@ -2404,6 +2404,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/measurements-respiratory-rate.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/measurements-respiratory-rate.png": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/measurements-respiratory-rate.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/science/measurements-resting-heart-rate.avif": {
     "width": 1916,
     "height": 821

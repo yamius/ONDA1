@@ -990,6 +990,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.annemergmed.2004.06.016": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The vexatious vital: Neither clinical measurements by nurses nor an electronic monitor provides accurate measurements of respiratory rate in triage",
+   "firstAuthor": "Lovett",
+   "authors": [
+    "Lovett",
+    "Buchwald",
+    "Stürmann",
+    "Bijur"
+   ],
+   "year": 2005,
+   "journal": "Annals of Emergency Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1016/j.biopsych.2015.06.016": {
    "kind": "doi",
    "valid": true,
@@ -3687,6 +3703,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1038/s41746-020-00363-7": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Assessment of physiological signs associated with COVID-19 measured using wearable devices",
+   "firstAuthor": "Natarajan",
+   "authors": [
+    "Natarajan",
+    "Su",
+    "Heneghan"
+   ],
+   "year": 2020,
+   "journal": "npj Digital Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1053/j.gastro.2006.11.002": {
    "kind": "doi",
    "valid": true,
@@ -4417,6 +4448,47 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1097/aln.0b013e3181c38c25": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Incidence, Reversal, and Prevention of Opioid-induced Respiratory Depression",
+   "firstAuthor": "Dahan",
+   "authors": [
+    "Dahan",
+    "Aarts",
+    "Smith"
+   ],
+   "year": 2010,
+   "journal": "Anesthesiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1097/aog.0000000000003721": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Gestation-Specific Vital Sign Reference Ranges in Pregnancy",
+   "firstAuthor": "Green",
+   "authors": [
+    "Green",
+    "Mackillop",
+    "Salvi",
+    "Pullon",
+    "Loerup",
+    "Tarassenko",
+    "Mossop",
+    "Edwards",
+    "Gerry",
+    "Birks",
+    "Gauntlett",
+    "Harding",
+    "Chappell",
+    "Watkinson"
+   ],
+   "year": 2020,
+   "journal": "Obstetrics &amp; Gynecology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1097/gme.0000000000002028": {
    "kind": "doi",
    "valid": true,
@@ -4547,6 +4619,28 @@
    "journal": "Philosophical Transactions of the Royal Society B: Biological Sciences",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1109/rbme.2017.2763681": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Breathing Rate Estimation From the Electrocardiogram and Photoplethysmogram: A Review",
+   "firstAuthor": "Charlton",
+   "authors": [
+    "Charlton",
+    "Birrenkott",
+    "Bonnici",
+    "Pimentel",
+    "Johnson",
+    "Alastruey",
+    "Tarassenko",
+    "Watkinson",
+    "Beale",
+    "Clifton"
+   ],
+   "year": 2018,
+   "journal": "IEEE Reviews in Biomedical Engineering",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1111/1467-8721.ep10770953": {
    "kind": "doi",
@@ -4755,6 +4849,24 @@
    "journal": "Scandinavian Journal of Medicine &amp; Science in Sports",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1111/jan.14584": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Quantitative systematic review: Sources of inaccuracy in manually measured adult respiratory rate data",
+   "firstAuthor": "Kallioinen",
+   "authors": [
+    "Kallioinen",
+    "Hill",
+    "Christofidis",
+    "Horswill",
+    "Watson"
+   ],
+   "year": 2020,
+   "yearAlt": 2021,
+   "journal": "Journal of Advanced Nursing",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1111/joa.13122": {
    "kind": "doi",
@@ -5312,6 +5424,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1136/thx.37.11.840": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Respiration during sleep in normal man.",
+   "firstAuthor": "Douglas",
+   "authors": [
+    "Douglas",
+    "White",
+    "Pickett",
+    "Weil",
+    "Zwillich"
+   ],
+   "year": 1982,
+   "journal": "Thorax",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1152/ajpheart.00041.2026": {
    "kind": "doi",
    "valid": true,
@@ -5661,6 +5790,24 @@
    "journal": "Journal of the American Heart Association",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1164/ajrccm/138.4.874": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Breathing Pattern and Eye Movement Density during REM Sleep in Humans",
+   "firstAuthor": "Gould",
+   "authors": [
+    "Gould",
+    "Gugger",
+    "Molloy",
+    "Tsara",
+    "Shapiro",
+    "Douglas"
+   ],
+   "year": 1988,
+   "journal": "American Review of Respiratory Disease",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1176/appi.ajp.157.6.924": {
    "kind": "doi",
@@ -6493,6 +6640,25 @@
    "journal": "PLOS ONE",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1371/journal.pone.0243693": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Analyzing changes in respiratory rate to predict the risk of COVID-19 infection",
+   "firstAuthor": "Miller",
+   "authors": [
+    "Miller",
+    "Capodilupo",
+    "Lastella",
+    "Sargent",
+    "Roach",
+    "Lee",
+    "Capodilupo"
+   ],
+   "year": 2020,
+   "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1371/journal.pone.0286023": {
    "kind": "doi",
@@ -7826,6 +7992,30 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.5664/jcsm.8356": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effect of wearables on sleep in healthy individuals: a randomized crossover trial and validation study",
+   "firstAuthor": "Berryhill",
+   "authors": [
+    "Berryhill",
+    "Morton",
+    "Dean",
+    "Berryhill",
+    "Provencio-Dean",
+    "Patel",
+    "Estep",
+    "Combs",
+    "Mashaqi",
+    "Gerald",
+    "Krishnan",
+    "Parthasarathy"
+   ],
+   "year": 2020,
+   "journal": "Journal of Clinical Sleep Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.5665/sleep.3230": {
    "kind": "doi",
    "valid": true,
@@ -7920,6 +8110,19 @@
    "journal": "Annals of Internal Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.7861/clinmed.2022-news-concept": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The National Early Warning Score: from concept to NHS implementation",
+   "firstAuthor": "Williams",
+   "authors": [
+    "Williams"
+   ],
+   "year": 2022,
+   "journal": "Clinical Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "pmcid:PMC5654415": {
    "kind": "pmcid",
@@ -8549,6 +8752,23 @@
    "doi": "10.1371/journal.pmed.0010062",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:15635313": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The vexatious vital: neither clinical measurements by nurses nor an electronic monitor provides accurate measurements of respiratory rate in triage.",
+   "firstAuthor": "Lovett",
+   "authors": [
+    "Lovett",
+    "Buchwald",
+    "Stürmann",
+    "Bijur"
+   ],
+   "year": 2005,
+   "journal": "Ann Emerg Med",
+   "doi": "10.1016/j.annemergmed.2004.06.016",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:15800134": {
    "kind": "pmid",
@@ -9263,6 +9483,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:20010421": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Incidence, Reversal, and Prevention of Opioid-induced Respiratory Depression.",
+   "firstAuthor": "Dahan",
+   "authors": [
+    "Dahan",
+    "Aarts",
+    "Smith"
+   ],
+   "year": 2010,
+   "journal": "Anesthesiology",
+   "doi": "10.1097/ALN.0b013e3181c38c25",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:20204161": {
    "kind": "pmid",
    "valid": true,
@@ -9937,6 +10173,22 @@
    "doi": "10.1249/MSS.0b013e318279a10a",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:2330473": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Breathing during sleep in normal middle-aged subjects.",
+   "firstAuthor": "Krieger",
+   "authors": [
+    "Krieger",
+    "Maglasiu",
+    "Sforza",
+    "Kurtz"
+   ],
+   "year": 1990,
+   "journal": "Sleep",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:23347102": {
    "kind": "pmid",
@@ -11687,6 +11939,30 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:29990026": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Breathing Rate Estimation From the Electrocardiogram and Photoplethysmogram: A Review.",
+   "firstAuthor": "Charlton",
+   "authors": [
+    "Charlton",
+    "Birrenkott",
+    "Bonnici",
+    "Pimentel",
+    "Johnson",
+    "Alastruey",
+    "Tarassenko",
+    "Watkinson",
+    "Beale",
+    "Clifton"
+   ],
+   "year": 2018,
+   "yearAlt": 2017,
+   "journal": "IEEE Rev Biomed Eng",
+   "doi": "10.1109/RBME.2017.2763681",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:30035216": {
    "kind": "pmid",
    "valid": true,
@@ -12162,6 +12438,77 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:3202462": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Breathing pattern and eye movement density during REM sleep in humans.",
+   "firstAuthor": "Gould",
+   "authors": [
+    "Gould",
+    "Gugger",
+    "Molloy",
+    "Tsara",
+    "Shapiro",
+    "Douglas"
+   ],
+   "year": 1988,
+   "journal": "Am Rev Respir Dis",
+   "doi": "10.1164/ajrccm/138.4.874",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:32028507": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Gestation-Specific Vital Sign Reference Ranges in Pregnancy.",
+   "firstAuthor": "Green",
+   "authors": [
+    "Green",
+    "Mackillop",
+    "Salvi",
+    "Pullon",
+    "Loerup",
+    "Tarassenko",
+    "Mossop",
+    "Edwards",
+    "Gerry",
+    "Birks",
+    "Gauntlett",
+    "Harding",
+    "Chappell",
+    "Watkinson"
+   ],
+   "year": 2020,
+   "journal": "Obstet Gynecol",
+   "doi": "10.1097/AOG.0000000000003721",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:32043961": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effect of wearables on sleep in healthy individuals: a randomized crossover trial and validation study.",
+   "firstAuthor": "Berryhill",
+   "authors": [
+    "Berryhill",
+    "Morton",
+    "Dean",
+    "Berryhill",
+    "Provencio-Dean",
+    "Patel",
+    "Estep",
+    "Combs",
+    "Mashaqi",
+    "Gerald",
+    "Krishnan",
+    "Parthasarathy"
+   ],
+   "year": 2020,
+   "journal": "J Clin Sleep Med",
+   "doi": "10.5664/jcsm.8356",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:32212422": {
    "kind": "pmid",
    "valid": true,
@@ -12348,6 +12695,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:33038030": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Quantitative systematic review: Sources of inaccuracy in manually measured adult respiratory rate data.",
+   "firstAuthor": "Kallioinen",
+   "authors": [
+    "Kallioinen",
+    "Hill",
+    "Christofidis",
+    "Horswill",
+    "Watson"
+   ],
+   "year": 2021,
+   "yearAlt": 2020,
+   "journal": "J Adv Nurs",
+   "doi": "10.1111/jan.14584",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:33117119": {
    "kind": "pmid",
    "valid": true,
@@ -12396,6 +12762,42 @@
    "doi": "10.1038/s41551-020-00640-6",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:33299095": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Assessment of physiological signs associated with COVID-19 measured using wearable devices.",
+   "firstAuthor": "Natarajan",
+   "authors": [
+    "Natarajan",
+    "Su",
+    "Heneghan"
+   ],
+   "year": 2020,
+   "journal": "NPJ Digit Med",
+   "doi": "10.1038/s41746-020-00363-7",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:33301493": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Analyzing changes in respiratory rate to predict the risk of COVID-19 infection.",
+   "firstAuthor": "Miller",
+   "authors": [
+    "Miller",
+    "Capodilupo",
+    "Lastella",
+    "Sargent",
+    "Roach",
+    "Lee",
+    "Capodilupo"
+   ],
+   "year": 2020,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0243693",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:33334565": {
    "kind": "pmid",
@@ -12963,6 +13365,20 @@
    "doi": "10.1111/psyp.14183",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:36427887": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The National Early Warning Score: from concept to NHS implementation.",
+   "firstAuthor": "Williams",
+   "authors": [
+    "Williams"
+   ],
+   "year": 2022,
+   "journal": "Clin Med (Lond)",
+   "doi": "10.7861/clinmed.2022-news-concept",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:36600580": {
    "kind": "pmid",
@@ -13907,6 +14323,24 @@
    "doi": "10.1111/j.1440-1819.1966.tb02646.x",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:7164002": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Respiration during sleep in normal man.",
+   "firstAuthor": "Douglas",
+   "authors": [
+    "Douglas",
+    "White",
+    "Pickett",
+    "Weil",
+    "Zwillich"
+   ],
+   "year": 1982,
+   "journal": "Thorax",
+   "doi": "10.1136/thx.37.11.840",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:7315987": {
    "kind": "pmid",
