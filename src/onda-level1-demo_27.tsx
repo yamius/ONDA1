@@ -302,10 +302,12 @@ const OndaLevel1 = () => {
         rhr_days: res.rhr?.days ?? 0, rhr_has: res.rhr?.avg != null,
         hrv_days: res.hrv?.days ?? 0, hrv_has: res.hrv?.avg != null,
         rr_days: res.rr?.days ?? 0, rr_has: res.rr?.avg != null,
-        hrpeak: ex.hrpeak ?? null,
-        whr: ex.whr ?? null,
-        vo2: ex.vo2 ?? null,
-        hrr: ex.hrr ?? null,
+        // Presence only — the VALUES (peak HR, walking HR, VO2max, recovery)
+        // stay on the device (1.9.3, privacy).
+        hrpeak_has: ex.hrpeak != null,
+        whr_has: ex.whr != null,
+        vo2_has: ex.vo2 != null,
+        hrr_has: ex.hrr != null,
         extras_keys: Object.keys(ex).join(',') || 'none',
       });
 
@@ -385,8 +387,8 @@ const OndaLevel1 = () => {
             };
             saveDiaryEntries([...loadDiaryEntries(), entry]);
           } catch { /* noop */ }
-          const bucket = `${Math.floor(avgBpm / 10) * 10}-${Math.floor(avgBpm / 10) * 10 + 9}`;
-          try { track('camera_checkin_saved', { bpm_bucket: bucket }); } catch { /* noop */ }
+          // No pulse value or bucket in analytics (1.9.3) — just the fact.
+          try { track('camera_checkin_saved', {}); } catch { /* noop */ }
           setCheckinToast(t('camera.checkin_saved', { bpm: avgBpm, defaultValue: `Saved to journal · ${avgBpm} bpm` }));
           setCameraCheckinActive(false);
           window.setTimeout(() => setCheckinToast(null), 3500);
@@ -530,7 +532,7 @@ const OndaLevel1 = () => {
     if (watchHeartRate.heartRate && !hasTrackedWatchConnection.current) {
       hasTrackedWatchConnection.current = true;
       track('watch_connect_success', {
-        heart_rate: watchHeartRate.heartRate,
+        // heart_rate removed (1.9.3) — the pulse value stays on the device.
         is_connected: watchHeartRate.isConnected,
       });
     }
@@ -995,7 +997,8 @@ const OndaLevel1 = () => {
         const pending: PendingAnomaly = { ...anomaly, at, night, signalCount };
         saveAnomalyState({ lastSignalAt: at, signalCount, pending });
         setAnomalyPrompt(pending);
-        try { track('anomaly_detected', { metric: anomaly.metric, direction: anomaly.direction, magnitude_sd: anomaly.magnitudeSd }); } catch { /* noop */ }
+        // Only WHICH signal fired — no deviation size/direction (1.9.3, privacy).
+      try { track('anomaly_detected', { metric: anomaly.metric }); } catch { /* noop */ }
         try { track('anomaly_prompt_shown', { metric: anomaly.metric }); } catch { /* noop */ }
       }
       // Calm check-ins, Segment A (task 16) is decided + posted NATIVELY from the
@@ -3575,11 +3578,9 @@ const OndaLevel1 = () => {
       has_biometrics: hasRealMetricsAtFinish,
       is_valid_for_artifact: isValidForArtifact,
       is_new_record: shouldUpdate && !!existingPractice,
-      // No final_stress/final_energy — pulse-derived, removed from the product,
-      // kept on-device only. Coherence delta below is the honest effect signal.
-      coherence_baseline: coherenceBaseline,
-      coherence_peak: coherencePeak,
-      coherence_delta: coherenceDelta,
+      // No health values (privacy policy: pulse never leaves the device) — no
+      // final_stress/final_energy and, since 1.9.3, no coherence_baseline/peak/
+      // delta either (coherence is derived from the pulse rhythm). On-device only.
     });
 
     // Decoupled paywall arming (replaces the old valid-first_practice_complete
@@ -3623,8 +3624,7 @@ const OndaLevel1 = () => {
       metrics_source: metricsSource,
       time_percent: Math.round(timePercent * 100),
       result_state: resultState,
-      hr_start: resultHrStart ?? undefined,
-      hr_min: resultHrMin ?? undefined,
+      // hr_start / hr_min removed (1.9.3) — pulse values stay on the device.
       is_first: cameFromFirstRun,
     });
 

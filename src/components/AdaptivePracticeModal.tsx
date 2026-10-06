@@ -941,14 +941,13 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   // kept on-device only. Coherence delta is the honest signal.
                   has_real_metrics: hasRealMetrics,
                   ond_earned: ondReward.totalOnd,
-                  coherence_delta: coherenceDelta,
-                  coherence_peak: coherencePeak,
+                  // coherence values removed (1.9.3, privacy) — on-device only.
                 }
               : undefined,
           }
         );
         if (isValidForCompletion) {
-          track('practice_complete', { practice_type: 'adaptive', practice_id: practice.id, duration_seconds: practiceTime, ond_earned: ondReward.totalOnd, coherence_delta: coherenceDelta });
+          track('practice_complete', { practice_type: 'adaptive', practice_id: practice.id, duration_seconds: practiceTime, ond_earned: ondReward.totalOnd });
           const isFirst = trackTenjinFirstPracticeComplete(t(practice.name), { surface: 'adaptive' });
           if (isFirst) track('first_practice_complete', { practice_type: 'adaptive', practice_id: practice.id });
         } else {
@@ -1024,14 +1023,13 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
               // kept on-device only. Coherence delta is the honest signal.
               has_real_metrics: hasRealMetrics,
               ond_earned: ondReward.totalOnd,
-              coherence_delta: coherenceDelta,
-              coherence_peak: coherencePeak,
+                  // coherence values removed (1.9.3, privacy) — on-device only.
             }
           : undefined,
       }
     );
     if (isValidForCompletion) {
-      track('practice_complete', { practice_type: 'adaptive', practice_id: practice.id, duration_seconds: practiceTime, ond_earned: ondReward.totalOnd, coherence_delta: coherenceDelta });
+      track('practice_complete', { practice_type: 'adaptive', practice_id: practice.id, duration_seconds: practiceTime, ond_earned: ondReward.totalOnd });
       const isFirst = trackTenjinFirstPracticeComplete(t(practice.name), { surface: 'adaptive' });
       if (isFirst) track('first_practice_complete', { practice_type: 'adaptive', practice_id: practice.id });
     } else {
