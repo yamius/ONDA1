@@ -12,7 +12,7 @@
 import type { PublishEntry, PublishCollection } from './locale-publish'
 
 export const QUEUE_START = '2026-10-08'
-export const PER_BATCH = 10
+export const PER_BATCH = 20
 export const EVERY_DAYS = 2
 const LANG_ORDER = ['es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja']
 

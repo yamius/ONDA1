@@ -292,7 +292,7 @@ export const parts: Record<string, {
     title: 'I',
     titleHighlight: 'Maneuver',
     subtitle: 'Protocol: The Maneuverability of the \u201cSmall Mammal\u201d',
-    metaDescription: 'Part 4: Neuroception and polyvagal drift. Small mammal maneuverability — cortisol and adrenaline as fuel. ONDA Life.',
+    metaDescription: 'Part 4: Neuroception and polyvagal drift. Small mammal maneuverability — staying composed under pressure. ONDA Life.',
     image: '/images/parts/onda-part-4-i-maneuver-cognitive-strategy-matrix.png',
     imageAlt:
       'Cognitive maneuvering, strategic decision making biohacking, ONDA I MANEUVER, neural executive function visualized.',
@@ -313,7 +313,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Neuroendocrinology',
-          text: 'Directly impacting the HPA axis (hypothalamus-pituitary-adrenal). We teach the body to control the release of cortisol and adrenaline, turning them from poison into fuel for precision.',
+          text: 'Working with the felt experience of stress. We practise meeting pressure with steady, precise focus instead of being carried away by it.',
         },
         {
           name: 'Lymphology',
@@ -369,7 +369,7 @@ export const parts: Record<string, {
     title: 'I Guard',
     titleHighlight: 'the Territory',
     subtitle: 'Protocol: The Strength of the \u201cLarge Mammal\u201d',
-    metaDescription: 'Part 5: DHEA, ventral vagus, calm dominance. Large mammal strength — density of presence. ONDA Life.',
+    metaDescription: 'Part 5: Grounded calm, ventral vagus, calm dominance. Large mammal strength — density of presence. ONDA Life.',
     image: '/images/parts/onda-part-5-i-guard-territory-immune-security.png',
     imageAlt:
       'Immune system security, biological territory defense, ONDA I GUARD TERRITORY, microbiome integrity visualized.',
@@ -382,7 +382,7 @@ export const parts: Record<string, {
       items: [
         {
           name: 'Endocrine System (Dominance Hormonal Circuit)',
-          text: 'Over time, the stress system tends to lean less on emergency cortisol and more toward DHEA, supporting a grounded \u201cstatus calm\u201d rather than reactivity. The thymus supports the link between feeling socially safe and how the body recovers.',
+          text: 'Over time, practice builds a grounded \u201cstatus calm\u201d rather than reactivity \u2014 a felt sense of steadiness under social pressure. The thymus supports the link between feeling socially safe and how the body recovers.',
         },
         {
           name: 'Autonomic Nervous System (Smart Parasympathetic)',
@@ -769,7 +769,7 @@ export const parts: Record<string, {
       items: [
         {
           name: 'Hormonal Engineering',
-          text: '"Power posing" and breathing patterns to lower cortisol and increase testosterone.',
+          text: '"Power posing" and breathing patterns to practise a steadier, more grounded presence.',
         },
         {
           name: 'Vagal Stimulation',
@@ -815,7 +815,7 @@ export const parts: Record<string, {
       items: [
         'Sovereign Expression: Your voice gains weight, your words gain precision, and your self-expression becomes clear and authentic.',
         'Energy Transformation: You no longer fear being noticed; instead, you use attention as fuel for your manifestation.',
-        'Biological Markers: Optimized testosterone-to-cortisol ratio; changes in vocal timbre and amplitude.',
+        'Observable Markers: Changes in vocal timbre and amplitude.',
         'Resonant Presence: Removal of social filters and tuning the resonant sound of the personality. Absence of jaw tension and throat constriction.',
       ],
     },
@@ -1220,7 +1220,7 @@ export const parts: Record<string, {
         },
         {
           name: 'State Alchemy',
-          text: 'Transforming biological stress and tension into the energy of action and pleasure (converting cortisol-driven states into dopamine/endorphin flow).',
+          text: 'Transforming biological stress and tension into the energy of action and pleasure.',
         },
         {
           name: 'Conscious Ecstasy',
@@ -1245,7 +1245,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Biomarkers',
-          text: 'HRV coherence between partners; brainwave coupling (Alpha/Theta sync); oxytocin/cortisol ratio shift toward bonding biochemistry.',
+          text: 'HRV coherence between partners; brainwave coupling (Alpha/Theta sync).',
         },
       ],
     },
@@ -1322,7 +1322,7 @@ export const parts: Record<string, {
       {
         question: 'How to decouple the limbic response?',
         answer:
-          'Limbic Response Decoupling is trained by registering "charged" thoughts as dry data. The PFC learns to detect emotional triggers without releasing cortisol. Practices include tagging thoughts (planning, memory, criticism), sensory anchors to collapse internal dialogue, and maintaining meta-attention on the process of perception itself.',
+          'Limbic Response Decoupling is trained by registering "charged" thoughts as dry data. The PFC learns to detect emotional triggers without getting swept into a stress reaction. Practices include tagging thoughts (planning, memory, criticism), sensory anchors to collapse internal dialogue, and maintaining meta-attention on the process of perception itself.',
       },
     ],
     protocol: {
@@ -1343,7 +1343,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Limbic Response Decoupling',
-          text: 'Training the PFC to register "charged" thoughts as dry data, preventing the release of cortisol.',
+          text: 'Training the PFC to register "charged" thoughts as dry data, instead of reacting to them.',
         },
         {
           name: 'DMN Silence',

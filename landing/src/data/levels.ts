@@ -168,7 +168,7 @@ export const levelsData: Record<number, LevelData> = {
     subtitle: 'Energy Biochemistry: From Maneuverability to Social Power',
     theme: levelThemes[2],
     metaDescription:
-      'Level 2: Emotional mastery. HPA axis, DHEA, mirror neurons, social resonance — plus ideas from polyvagal theory, a debated model. From maneuverability to calm dominance.',
+      'Level 2: Emotional mastery. Stress response, calm presence, mirror neurons, social resonance — plus ideas from polyvagal theory, a debated model. From maneuverability to calm dominance.',
     intro:
       'Level 2 is the stage of mastering your emotional system as a high-tech reactor. We stop perceiving emotions as mere "moods" and begin treating them as biological protocols: with specific hormonal signatures, neuromotor patterns, and vegetative profiles.\n\nAt this level, we follow the path of mammalian evolution: from the instantaneous reactions of a small animal to the unshakable calm of a large predator and the complex resonance of a higher primate.',
     architecture: {
@@ -182,7 +182,7 @@ export const levelsData: Record<number, LevelData> = {
           protocol: 'Protocol: The Maneuverability of the "Small Mammal"',
           goal: 'Objective: Biological flexibility and instantaneous acceleration without paralyzing stress.',
           work:
-            'Mechanism: Inspired by polyvagal ideas (a debated model) — practising the felt sense of safety and threat that the model calls neuroception. We teach the system to "drift" smoothly between rest and action, turning cortisol and adrenaline from toxins into fuel for precision.',
+            'Mechanism: Inspired by polyvagal ideas (a debated model) — practising the felt sense of safety and threat that the model calls neuroception. We teach the system to "drift" smoothly between rest and action, staying composed and precise under pressure.',
         },
         {
           number: '05',
@@ -191,7 +191,7 @@ export const levelsData: Record<number, LevelData> = {
           protocol: 'Protocol: The Strength of the "Large Mammal"',
           goal: 'Objective: Status calm and density of presence.',
           work:
-            'Mechanism: Reconfiguring the endocrine system. We shift the adrenal glands from emergency cortisol release to the production of DHEA (the hormone of vitality). This is a state of "calm dominance," where your stability is sensed by others at a limbic level before you even speak.',
+            'Mechanism: Building a steady, grounded presence over time. This is a state of "calm dominance," where your stability is sensed by others at a limbic level before you even speak.',
         },
         {
           number: '06',
@@ -628,7 +628,7 @@ export const levelsData: Record<number, LevelData> = {
         },
         {
           name: 'Limbic Decoupling',
-          text: 'Training the PFC to register "charged" data without triggering cortisol release or the amygdala.',
+          text: 'Training the PFC to register "charged" data without getting pulled into a stress reaction.',
         },
       ],
     },
