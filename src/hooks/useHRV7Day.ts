@@ -36,6 +36,9 @@ export interface UseHRV7DayResult {
   hasEnoughData: boolean;
   /** Call when fresh HRV data is available. No-op if value is null/0/NaN. */
   recordSample: (hrvMs: number | null | undefined) => void;
+  /** Backfill PAST days from Apple Health history (1.9.3). Fills only days that
+   *  have no value yet — a live reading already stored for a day is kept. */
+  mergeHistory: (samples: { date: string; value: number }[]) => void;
 }
 
 function todayLocalKey(): string {
@@ -114,8 +117,26 @@ export function useHRV7Day(): UseHRV7DayResult {
     });
   }, []);
 
+  const mergeHistory = useCallback((history: { date: string; value: number }[]) => {
+    if (!Array.isArray(history) || history.length === 0) return;
+    setStore(prev => {
+      let changed = false;
+      const next = { ...prev };
+      for (const h of history) {
+        if (!h || !/^\d{4}-\d{2}-\d{2}$/.test(h.date)) continue;
+        if (!Number.isFinite(h.value) || h.value <= 0) continue;
+        if (next[h.date] != null) continue; // keep an existing (live) value
+        next[h.date] = h.value;
+        changed = true;
+      }
+      if (!changed) return prev;
+      writeStore(next);
+      return next;
+    });
+  }, []);
+
   const samples = useMemo(() => lastNDays(store, 7), [store]);
   const hasEnoughData = samples.length >= MIN_SAMPLES_FOR_TREND;
 
-  return { samples, hasEnoughData, recordSample };
+  return { samples, hasEnoughData, recordSample, mergeHistory };
 }

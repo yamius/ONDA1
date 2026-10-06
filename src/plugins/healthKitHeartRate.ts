@@ -122,6 +122,9 @@ export interface HealthKitHeartRatePlugin {
    *  numbers (those live in the in-app card); it varies by how many signals have
    *  fired: pushIntro for the first few, pushShort afterwards. */
   setAnomalyStrings(strings: { title: string; pushIntro: string; pushShort: string }): Promise<{ ok: boolean }>;
+  /** Dated daily mean HRV (SDNN, ms) for the last `days` from Apple Health — lets
+   *  the 7-day chart show past days on first launch (1.9.3). */
+  queryHrvHistory(options?: { days?: number }): Promise<{ samples: { date: string; value: number }[] }>;
   /** Calm check-ins Segment A (task 16): hand the native background evaluator the
    *  localized A1/A2/A3 templates (A1 uses {x} for the avg resting pulse), whether
    *  A3 is eligible right now (simple mode + install week 2), and the on/off toggle.

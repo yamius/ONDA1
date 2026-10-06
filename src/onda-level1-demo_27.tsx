@@ -12,6 +12,7 @@ import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { VoiceCheckModal } from './components/VoiceCheckModal';
 import DiaryModal from './components/DiaryModal';
 import { syncDiaryEntries, recordDailyMetric, recordBaselineSample, DAILY_STORES, loadDiaryEntries, saveDiaryEntries, newDiaryId } from './lib/diary';
+import { loadLocalProgress, saveLocalProgress, mergeProgress, type LocalProgress } from './lib/progressStore';
 import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, computeTrafficLight, type PendingAnomaly, type SignalInput, type TrafficState } from './lib/anomaly';
 import { SimpleHero, PulseBreathTiles, trafficCopy } from './components/SimpleHome';
 import { Coachmarks } from './components/Coachmarks';
@@ -650,6 +651,29 @@ const OndaLevel1 = () => {
     hrv7Day.recordSample(healthKitData.data?.vitals?.hrv);
   }, [healthKitData.data?.vitals?.hrv, hrv7Day.recordSample]);
 
+  // 1.9.3: backfill the HRV chart with PAST days from Apple Health (the same
+  // history the baseline reads), so a watch user sees a trend on day one instead
+  // of "day 1". Fills only empty days; Health is the source of truth, so even if
+  // the web view's storage is purged the chart is rebuilt on the next launch.
+  // Gated like the baseline auto-load (authorized / already-connected) — a read
+  // never prompts, and nothing touches HealthKit for a brand-new install.
+  const hrvBackfilledRef = useRef(false);
+  useEffect(() => {
+    if (hrvBackfilledRef.current) return;
+    if (platform !== 'ios') return;
+    let watching = false;
+    try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
+    if (!healthKitData.isAuthorized && !watching) return;
+    hrvBackfilledRef.current = true;
+    (async () => {
+      try {
+        const res = await HealthKitHeartRate.queryHrvHistory({ days: 14 });
+        hrv7Day.mergeHistory(res?.samples || []);
+      } catch (e) { console.warn('[hrv] history backfill failed', e); }
+    })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [platform, healthKitData.isAuthorized]);
+
   // Notification Primer — показываем ПОСЛЕ 6 завершённых практик, не
   // на старте и не в онбординге. Логика: пуш о напоминаниях имеет смысл,
   // когда юзер уже втянулся; ранний prompt = низкий opt-in + ощущение
@@ -1074,6 +1098,47 @@ const OndaLevel1 = () => {
   const [user, setUser] = useState<any>(null);
   const [userProfile, setUserProfile] = useState<UserProfileType | null>(null);
   const [gameProgress, setGameProgress] = useState<UserGameProgress | null>(null);
+
+  // ── On-device progress (1.9.3 retention fix) ──
+  // Progress used to live ONLY in Supabase for signed-in users, so an anonymous
+  // (even paying) user lost everything on every cold start. Hydrate from native
+  // storage for EVERYONE on launch; the account load below MERGES with it.
+  const [progressHydrated, setProgressHydrated] = useState(false);
+  const localProgressRef = useRef<Promise<LocalProgress | null> | null>(null);
+  if (localProgressRef.current === null) localProgressRef.current = loadLocalProgress();
+  useEffect(() => {
+    let alive = true;
+    localProgressRef.current!.then((p) => {
+      if (!alive) return;
+      if (p) {
+        setQnt(p.ond || 0);
+        setActiveCircuit(p.activeCircuit || 1);
+        setCompletedPractices(p.completedPractices || {});
+        setPracticeHistory(p.practiceHistory || []);
+        setArtifacts(p.artifacts || []);
+        setUnlockedAchievements(p.unlockedAchievements || []);
+        if (p.sleepTracking) setSleepTracking(p.sleepTracking);
+      }
+      setProgressHydrated(true);
+    });
+    return () => { alive = false; };
+  }, []);
+  // Write-through on every change — only AFTER hydration, so the empty initial
+  // state can never overwrite the saved progress.
+  useEffect(() => {
+    if (!progressHydrated) return;
+    saveLocalProgress({
+      ond: qnt,
+      activeCircuit,
+      completedPractices: completedPractices as LocalProgress['completedPractices'],
+      practiceHistory: practiceHistory as LocalProgress['practiceHistory'],
+      artifacts: artifacts as LocalProgress['artifacts'],
+      unlockedAchievements: unlockedAchievements as string[],
+      sleepTracking,
+      updatedAt: new Date().toISOString(),
+    });
+  }, [progressHydrated, qnt, activeCircuit, completedPractices, practiceHistory, artifacts, unlockedAchievements, sleepTracking]);
+
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [showProfileModal, setShowProfileModal] = useState(false);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
@@ -1768,14 +1833,29 @@ const OndaLevel1 = () => {
           setDebugInfo(`✅ OND: ${finalOnd} | Практик: ${practiceCount}`);
 
           setGameProgress(progress);
-          setQnt(finalOnd);
-          setActiveCircuit(progress.active_circuit || 1);
-          setCompletedPractices(progress.completed_practices || {});
-          setPracticeHistory(progress.practice_history || []);
           // Миграция: удаляем старый артефакт Territory Pulse (circuitId: 5) для пересоздания с новыми параметрами
           const migratedArtifacts = (progress.artifacts || []).filter((a: any) => a.circuitId !== 5);
-          setArtifacts(migratedArtifacts);
-          setUnlockedAchievements(progress.unlocked_achievements || []);
+          // MERGE the account's progress with what this device already has
+          // (1.9.3): practices done before signing in (or offline) are kept, and
+          // nothing is counted twice. The write-through + saveGameProgress effects
+          // then persist the merged result to the device AND to Supabase.
+          const deviceProgress = await (localProgressRef.current ?? Promise.resolve(null));
+          const merged = mergeProgress(deviceProgress, {
+            ond: finalOnd,
+            activeCircuit: progress.active_circuit || 1,
+            completedPractices: progress.completed_practices || {},
+            practiceHistory: progress.practice_history || [],
+            artifacts: migratedArtifacts,
+            unlockedAchievements: progress.unlocked_achievements || [],
+            sleepTracking: progress.sleep_tracking || null,
+          });
+          setQnt(merged.ond);
+          setActiveCircuit(merged.activeCircuit);
+          setCompletedPractices(merged.completedPractices);
+          setPracticeHistory(merged.practiceHistory);
+          setArtifacts(merged.artifacts);
+          setUnlockedAchievements(merged.unlockedAchievements);
+          if (merged.sleepTracking) setSleepTracking(merged.sleepTracking);
           setBioMetrics(progress.bio_metrics || {
             heartRate: 72,
             hrv: 45,
@@ -1783,7 +1863,7 @@ const OndaLevel1 = () => {
             temp: 36.6,
             stability: 100
           });
-          setSleepTracking(progress.sleep_tracking || { day: 0, lastCheck: null });
+          // sleepTracking already set from the merged progress above.
           // Restore the user's saved language. Earlier this branch
           // unconditionally set EN here, which was the second of two
           // force-English bugs (the first being src/i18n.ts wiping
