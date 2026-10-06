@@ -507,7 +507,14 @@ ONDA Life Team
 
 _(в ASC заполнена только локаль English (US); отдельной RU-локали для What's New нет.)_
 
-**Store listing (snapshot на сабмите 1.8.1, English US):**
+**Store listing — ТЕКУЩИЙ (snapshot с публичной страницы App Store, версия 1.9.2, снят 2026-10-06, English US):**
+- **App name:** ONDA: Live Coherence & HRV
+- **Subtitle:** Your baseline, watched for you
+- **What's New (1.9.2):** Calm check-ins — so a quiet app never feels like an empty one. • When your nights stay steady, ONDA now tells you: a short note after every 4 steady nights, with your resting pulse. No news can be good news — now you'll know. • No Apple Watch? Every iPhone camera pulse check is now saved to your journal and timeline, so your history builds up. Want a nudge? Turn on a gentle reminder every 3 days. • Calm check-ins can be turned on or off anytime in Settings.
+- **Description (кратко, по разделам):** «ONDA learns your baseline from Apple Watch and tells you when your body drifts» → Know Your Body's Normal (две недели истории Apple Watch → личный коридор; сигнал только когда есть что сказать) → Your baseline, opened in a day (Simple mode) → A quiet signal when it matters (один мягкий сигнал, не диагноз; заметки в дневнике; короткая заметка после нескольких ровных ночей) → Two timelines, one picture (дневник текстом/голосом рядом с данными) → Breathe back into range (resonance-frequency, slow paced, interoceptive; пульс вживую с камеры iPhone или Apple Watch) → Meditation that grows with you (8 levels, 24 parts, 300+ practices) → The science, not just the vibe → Everything stays on your device («Your journal — text, voice and camera pulse checks — never leaves your phone»; PDF строится локально) → Free, forever (3 практики + базлайн бесплатно; $14.99/мес или $64.99/год, пробный период) → Built for → Requirements (iOS 15+, Apple Watch для базлайна и сигналов, камера опционально, HealthKit только чтение).
+- **Расхождения с кодом, отмеченные при снятии снимка** (решаются в чате приложения): «camera pulse checks — never leaves your phone» vs событие аналитики `camera_checkin_saved` с диапазоном пульса (`bpm_bucket`) — см. M7 в `D:\_ONDA\_Sciense\026_methodology-onda_REPORT.md`.
+
+**Store listing (архивный snapshot на сабмите 1.8.1, English US):**
 - **App name:** ONDA: Live Coherence & HRV
 - **Promotional text:** Live heart-rhythm coherence from your Apple Watch. Watch it build in real time during 3-min breathing practices. Real data, not another after-session score.
 - **Description:** ведёт с «Live Coherence & HRV Biofeedback» (Apple Watch) — 3-мин протоколы (resonance-frequency, extended exhalation, slow paced, interoceptive), real-time stress/energy, resting-HRV trend (real SDNN), 3 практики free forever, 8 progressive levels, science-first. _Камера-пульс в заголовок листинга НЕ выводится — позиционирование держится на watch-coherence._

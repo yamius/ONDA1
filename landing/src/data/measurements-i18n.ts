@@ -36,7 +36,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
   en: {
     metaTitle: 'What ONDA Measures — HRV, Coherence & What’s Estimated | ONDA Life',
     metaDescription:
-      'Exactly what ONDA measures directly (heart rate, HRV), what it derives (coherence, resting-HRV trend) — plus what it does not measure. Honest, machine-verifiable.',
+      'Exactly what ONDA reads (heart rate, HRV from Apple Health), what it derives (coherence, your nightly baseline), how often it notifies you — and what it does not measure.',
     kicker: '[ WHAT ONDA MEASURES ]',
     h1: 'What ONDA actually measures.',
     heroLead:
@@ -51,24 +51,36 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
         meaning: 'Beats per minute, read live during a session and at rest.',
       },
       {
-        signal: 'HRV (RMSSD / SDNN)',
-        source: 'Beat-to-beat (RR) intervals from Apple Watch / Apple Health (not available from the camera)',
+        signal: 'HRV (SDNN)',
+        source: 'Read ready-made from Apple Health, where an Apple Watch (or another device) records it. ONDA does not compute HRV itself; the iPhone camera measures pulse only, not HRV',
         kind: 'measured',
         meaning: 'Heart-rate variability — the variation between heartbeats, the core recovery/autonomic signal.',
       },
       {
         signal: 'Coherence',
-        source: 'Cardiac rhythm + breathing pace during a paced-breathing session',
+        source: 'Heart rhythm + breathing during a practice (Apple Watch only)',
         kind: 'derived',
         meaning:
           'A synchronization score: how smoothly and rhythmically your heart rhythm oscillates with your breath. A feedback metric, not a clinical biomarker.',
       },
       {
-        signal: 'Resting-HRV trend',
-        source: 'Your own HRV readings aggregated over days and weeks',
+        signal: 'Resting heart rate, breathing rate',
+        source: 'Read from Apple Health (nightly values recorded by an Apple Watch)',
+        kind: 'measured',
+        meaning: 'Two of the three nightly signals in your baseline, alongside HRV.',
+      },
+      {
+        signal: 'VO₂max, walking heart rate, 1-minute heart-rate recovery',
+        source: 'Read from Apple Health (recorded by an Apple Watch)',
+        kind: 'measured',
+        meaning: 'Fitness context shown around your baseline; ONDA does not compute these values itself.',
+      },
+      {
+        signal: 'Personal baseline',
+        source: 'Nightly HRV, resting heart rate and breathing rate from Apple Health over the last 14 days',
         kind: 'derived',
         meaning:
-          'Your personal baseline and its direction over time — the long-term signal ONDA is designed to move.',
+          'Your own corridor — the average of your recent nights plus or minus one standard deviation. ONDA flags a night only when it is at least 1.5 standard deviations outside and has changed by a minimum amount.',
       },
     ],
     notMeasuredPre: 'What ONDA does ',
@@ -80,16 +92,16 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       'Blood glucose, cortisol, BDNF or any blood/hormone biomarker',
       'Brain activity (EEG), brain waves or "gamma coherence"',
       'Sleep stages or a readiness score — ONDA’s Life Rhythm shows sleep regularity, timing and duration from Apple Watch, not stage-by-stage sleep tracking',
-      'Steps, calories or workouts — ONDA does not read your fitness data',
+      'Steps, calories or workouts — ONDA does not read them (from fitness data it reads only VO₂max, walking heart rate and 1-minute heart-rate recovery)',
       'Any diagnostic or medical output — ONDA is not a medical device',
     ],
     computeBox:
-      'For the method behind each number — how HRV is computed from beat intervals, and how the coherence score is built — see {{howLink}}. For the evidence these signals rest on, see {{researchLink}}, and to read your own HRV against population norms, the {{hrvLink}}.',
+      'For the method behind each number — where HRV comes from, and how the coherence score is built — see {{howLink}}. For the evidence these signals rest on, see {{researchLink}}, and to read your own HRV against population norms, the {{hrvLink}}.',
     faqHeading: 'Questions',
     faq: [
       {
         q: 'What does ONDA actually measure?',
-        a: 'ONDA measures heart rate via an Apple Watch, Apple Health or the iPhone camera (PPG) at rest, and reads heart-rate variability (HRV, SDNN) from Apple Health — written there by an Apple Watch or by another device that syncs heart data to Apple Health. From those it derives your resting-HRV trend and, with an Apple Watch, a live coherence score. It does not measure blood biomarkers, brain activity or sleep stages.',
+        a: 'ONDA measures heart rate via an Apple Watch, Apple Health or the iPhone camera (PPG) at rest, and reads heart-rate variability (HRV, SDNN) ready-made from Apple Health — written there by an Apple Watch or by another device that syncs heart data to Apple Health; ONDA does not compute HRV itself. It also reads resting heart rate, breathing rate, VO₂max, walking heart rate and 1-minute heart-rate recovery from Apple Health. From nightly values it builds your personal baseline and, with an Apple Watch, shows a live coherence score. It does not measure blood biomarkers, brain activity or sleep stages.',
       },
       {
         q: 'Is ONDA’s coherence score a medical or clinical measurement?',
@@ -101,7 +113,11 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       },
       {
         q: 'Can ONDA measure HRV without an Apple Watch?',
-        a: 'Not yet — the iPhone camera measures your resting pulse and a breathing estimate; HRV appears once an Apple Watch (or another tracker writing HRV to Apple Health) is connected.',
+        a: 'Not yet — the iPhone camera measures your pulse (heart rate) only, not individual beats or HRV; HRV appears once an Apple Watch (or another tracker writing HRV to Apple Health) is connected.',
+      },
+      {
+        q: 'How often does ONDA send notifications?',
+        a: 'Rarely. ONDA sends at most one signal every two days. With watch data, it sends a calm check-in every four steady nights. Without watch data, a calm check-in comes about every three days, and is skipped if you practised or measured in the last 24 hours. There is at most one calm message a day, and never on a day with a signal.',
       },
       {
         q: 'Is ONDA a medical device?',
@@ -118,7 +134,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
   ru: {
     metaTitle: 'Что измеряет ONDA — HRV, когерентность и что оценивается | ONDA Life',
     metaDescription:
-      'Что именно ONDA измеряет напрямую (пульс, HRV), что выводит (когерентность, тренд HRV в покое) — и чего не измеряет. Честно и машиночитаемо.',
+      'Что именно ONDA считывает (пульс, HRV из Apple Health), что выводит (когерентность, ночной базовый уровень), как часто присылает уведомления — и чего не измеряет.',
     kicker: '[ ЧТО ИЗМЕРЯЕТ ONDA ]',
     h1: 'Что ONDA на самом деле измеряет.',
     heroLead:
@@ -133,24 +149,36 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
         meaning: 'Удары в минуту, считываются вживую во время сессии и в покое.',
       },
       {
-        signal: 'HRV (RMSSD / SDNN)',
-        source: 'Интервалы между ударами (RR) с Apple Watch / Apple Health (с камеры недоступно)',
+        signal: 'HRV (SDNN)',
+        source: 'Берётся готовым из Apple Health, куда его записывают Apple Watch (или другое устройство). ONDA не вычисляет HRV сама; камера iPhone измеряет только пульс, не HRV',
         kind: 'measured',
         meaning: 'Вариабельность сердечного ритма — вариация между ударами, ключевой сигнал восстановления/вегетатики.',
       },
       {
         signal: 'Когерентность',
-        source: 'Сердечный ритм + темп дыхания во время сессии размеренного дыхания',
+        source: 'Сердечный ритм + дыхание во время практики (только с Apple Watch)',
         kind: 'derived',
         meaning:
           'Показатель синхронизации: насколько гладко и ритмично ритм сердца колеблется вместе с дыханием. Метрика обратной связи, а не клинический биомаркер.',
       },
       {
-        signal: 'Тренд HRV в покое',
-        source: 'Ваши собственные замеры HRV, агрегированные за дни и недели',
+        signal: 'Пульс в покое, частота дыхания',
+        source: 'Считываются из Apple Health (ночные значения, записанные Apple Watch)',
+        kind: 'measured',
+        meaning: 'Два из трёх ночных сигналов вашего базового уровня, вместе с HRV.',
+      },
+      {
+        signal: 'VO₂max, пульс при ходьбе, восстановление пульса за 1 минуту',
+        source: 'Считываются из Apple Health (записаны Apple Watch)',
+        kind: 'measured',
+        meaning: 'Фитнес-контекст вокруг вашего базового уровня; ONDA не вычисляет эти значения сама.',
+      },
+      {
+        signal: 'Персональный базовый уровень',
+        source: 'Ночные HRV, пульс в покое и частота дыхания из Apple Health за последние 14 дней',
         kind: 'derived',
         meaning:
-          'Ваш персональный базовый уровень и его направление со временем — долгосрочный сигнал, который ONDA призвана сдвигать.',
+          'Ваш собственный коридор — среднее за последние ночи плюс-минус одно стандартное отклонение. ONDA отмечает ночь, только если та выходит за него не менее чем на 1,5 стандартного отклонения и изменилась на минимальную величину.',
       },
     ],
     notMeasuredPre: 'Чего ONDA ',
@@ -162,16 +190,16 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       'Глюкозу крови, кортизол, BDNF или любой кровяной/гормональный биомаркер',
       'Активность мозга (ЭЭГ), мозговые волны или «гамма-когерентность»',
       'Стадии сна или показатель готовности — Life Rhythm в ONDA показывает регулярность, время и длительность сна с Apple Watch, но не отслеживает сон по стадиям',
-      'Шаги, калории или тренировки — ONDA не читает ваши фитнес-данные',
+      'Шаги, калории или тренировки — ONDA их не читает (из фитнес-данных она читает только VO₂max, пульс при ходьбе и восстановление пульса за 1 минуту)',
       'Любой диагностический или медицинский вывод — ONDA не медицинский прибор',
     ],
     computeBox:
-      'О методе за каждым числом — как HRV вычисляется из интервалов между ударами и как строится показатель когерентности — смотрите, {{howLink}}. О доказательствах, на которых стоят эти сигналы, смотрите {{researchLink}}, а чтобы прочитать свой HRV на фоне популяционных норм — {{hrvLink}}.',
+      'О методе за каждым числом — откуда берётся HRV и как строится показатель когерентности — смотрите, {{howLink}}. О доказательствах, на которых стоят эти сигналы, смотрите {{researchLink}}, а чтобы прочитать свой HRV на фоне популяционных норм — {{hrvLink}}.',
     faqHeading: 'Вопросы',
     faq: [
       {
         q: 'Что ONDA на самом деле измеряет?',
-        a: 'ONDA измеряет пульс через Apple Watch, Apple Health или камерой iPhone (PPG) в покое, а вариабельность сердечного ритма (HRV, SDNN) читает из Apple Health — туда её записывают Apple Watch или другое устройство, которое синхронизирует данные о сердце с Apple Health. Из них она выводит ваш тренд HRV в покое и — при подключённых Apple Watch — живой показатель когерентности. Она не измеряет кровяные биомаркеры, активность мозга или стадии сна.',
+        a: 'ONDA измеряет пульс через Apple Watch, Apple Health или камерой iPhone (PPG) в покое, а вариабельность сердечного ритма (HRV, SDNN) берёт готовой из Apple Health — туда её записывают Apple Watch или другое устройство, которое синхронизирует данные о сердце с Apple Health; сама ONDA HRV не вычисляет. Ещё она читает из Apple Health пульс в покое, частоту дыхания, VO₂max, пульс при ходьбе и восстановление пульса за 1 минуту. По ночным значениям она строит ваш персональный базовый уровень, а при подключённых Apple Watch показывает живой показатель когерентности. Она не измеряет кровяные биомаркеры, активность мозга или стадии сна.',
       },
       {
         q: 'Показатель когерентности ONDA — это медицинское или клиническое измерение?',
@@ -183,7 +211,11 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       },
       {
         q: 'Может ли ONDA измерять HRV без Apple Watch?',
-        a: 'Пока нет — камера iPhone измеряет пульс в покое и даёт оценку дыхания; HRV появляется после подключения Apple Watch (или другого трекера, записывающего HRV в Apple Health).',
+        a: 'Пока нет — камера iPhone измеряет только пульс, без отдельных ударов и без HRV; HRV появляется после подключения Apple Watch (или другого трекера, записывающего HRV в Apple Health).',
+      },
+      {
+        q: 'Как часто ONDA присылает уведомления?',
+        a: 'Редко. ONDA присылает не чаще одного сигнала раз в два дня. С данными часов — спокойное сообщение каждые четыре ровные ночи. Без данных часов спокойное сообщение приходит примерно раз в три дня и пропускается, если за последние 24 часа вы делали практику или замер. Спокойных сообщений не больше одного в день, и никогда — в день сигнала.',
       },
       {
         q: 'ONDA — это медицинский прибор?',
@@ -200,7 +232,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
   es: {
     metaTitle: 'Qué mide ONDA — HRV, coherencia y qué se estima | ONDA Life',
     metaDescription:
-      'Qué mide ONDA exactamente de forma directa (frecuencia cardíaca, HRV), qué deriva (coherencia, tendencia de HRV en reposo) — además de lo que no mide. Honesto y verificable.',
+      'Qué lee ONDA exactamente (frecuencia cardíaca, HRV de Apple Salud), qué deriva (coherencia, tu línea base nocturna), con qué frecuencia te avisa — y lo que no mide.',
     kicker: '[ QUÉ MIDE ONDA ]',
     h1: 'Qué mide realmente ONDA.',
     heroLead:
@@ -215,24 +247,36 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
         meaning: 'Latidos por minuto, leídos en vivo durante una sesión y en reposo.',
       },
       {
-        signal: 'HRV (RMSSD / SDNN)',
-        source: 'Intervalos entre latidos (RR) del Apple Watch / Apple Salud (no disponible con la cámara)',
+        signal: 'HRV (SDNN)',
+        source: 'Se lee ya calculada de Apple Salud, donde la registra un Apple Watch (u otro dispositivo). ONDA no calcula la HRV por sí misma; la cámara del iPhone solo mide el pulso, no la HRV',
         kind: 'measured',
         meaning: 'Variabilidad de la frecuencia cardíaca — la variación entre latidos, la señal central de recuperación/autonómica.',
       },
       {
         signal: 'Coherencia',
-        source: 'Ritmo cardíaco + ritmo de respiración durante una sesión de respiración pautada',
+        source: 'Ritmo cardíaco + respiración durante una práctica (solo con Apple Watch)',
         kind: 'derived',
         meaning:
           'Una puntuación de sincronización: con qué suavidad y ritmo tu ritmo cardíaco oscila con tu respiración. Una métrica de feedback, no un biomarcador clínico.',
       },
       {
-        signal: 'Tendencia de HRV en reposo',
-        source: 'Tus propias lecturas de HRV agregadas a lo largo de días y semanas',
+        signal: 'Frecuencia cardíaca en reposo, frecuencia respiratoria',
+        source: 'Se leen de Apple Salud (valores nocturnos registrados por un Apple Watch)',
+        kind: 'measured',
+        meaning: 'Dos de las tres señales nocturnas de tu línea base, junto con la HRV.',
+      },
+      {
+        signal: 'VO₂máx, frecuencia cardíaca al caminar, recuperación de la frecuencia cardíaca en 1 minuto',
+        source: 'Se leen de Apple Salud (registrados por un Apple Watch)',
+        kind: 'measured',
+        meaning: 'Contexto de forma física alrededor de tu línea base; ONDA no calcula estos valores por sí misma.',
+      },
+      {
+        signal: 'Línea base personal',
+        source: 'HRV, frecuencia cardíaca en reposo y frecuencia respiratoria nocturnas de Apple Salud de los últimos 14 días',
         kind: 'derived',
         meaning:
-          'Tu línea base personal y su dirección en el tiempo — la señal a largo plazo que ONDA está diseñada para mover.',
+          'Tu propio corredor: la media de tus noches recientes más o menos una desviación estándar. ONDA marca una noche solo cuando queda al menos 1,5 desviaciones estándar fuera y ha cambiado en una cantidad mínima.',
       },
     ],
     notMeasuredPre: 'Qué ',
@@ -244,16 +288,16 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       'Glucosa en sangre, cortisol, BDNF o cualquier biomarcador de sangre/hormona',
       'Actividad cerebral (EEG), ondas cerebrales o «coherencia gamma»',
       'Fases del sueño o una puntuación de preparación — Life Rhythm de ONDA muestra la regularidad, el horario y la duración del sueño desde el Apple Watch, no un seguimiento por fases',
-      'Pasos, calorías o entrenamientos — ONDA no lee tus datos de fitness',
+      'Pasos, calorías o entrenamientos — ONDA no los lee (de los datos de forma física solo lee el VO₂máx, la frecuencia cardíaca al caminar y la recuperación de la frecuencia cardíaca en 1 minuto)',
       'Cualquier salida diagnóstica o médica — ONDA no es un dispositivo médico',
     ],
     computeBox:
-      'Para el método tras cada número — cómo se calcula la HRV a partir de los intervalos entre latidos y cómo se construye la puntuación de coherencia — mira {{howLink}}. Para la evidencia sobre la que se apoyan estas señales, mira {{researchLink}}, y para leer tu propia HRV frente a las normas poblacionales, el {{hrvLink}}.',
+      'Para el método tras cada número — de dónde sale la HRV y cómo se construye la puntuación de coherencia — mira {{howLink}}. Para la evidencia sobre la que se apoyan estas señales, mira {{researchLink}}, y para leer tu propia HRV frente a las normas poblacionales, el {{hrvLink}}.',
     faqHeading: 'Preguntas',
     faq: [
       {
         q: '¿Qué mide realmente ONDA?',
-        a: 'ONDA mide la frecuencia cardíaca vía Apple Watch, Apple Salud o la cámara del iPhone (PPG) en reposo, y lee la variabilidad de la frecuencia cardíaca (HRV, SDNN) de Apple Salud, donde la escribe un Apple Watch u otro dispositivo que sincroniza datos del corazón con Apple Salud. De ahí deriva tu tendencia de HRV en reposo y, con un Apple Watch, una puntuación de coherencia en vivo. No mide biomarcadores en sangre, actividad cerebral ni fases del sueño.',
+        a: 'ONDA mide la frecuencia cardíaca vía Apple Watch, Apple Salud o la cámara del iPhone (PPG) en reposo, y lee la variabilidad de la frecuencia cardíaca (HRV, SDNN) ya calculada de Apple Salud, donde la escribe un Apple Watch u otro dispositivo que sincroniza datos del corazón con Apple Salud; ONDA no calcula la HRV por sí misma. También lee de Apple Salud la frecuencia cardíaca en reposo, la frecuencia respiratoria, el VO₂máx, la frecuencia cardíaca al caminar y la recuperación de la frecuencia cardíaca en 1 minuto. Con los valores nocturnos construye tu línea base personal y, con un Apple Watch, muestra una puntuación de coherencia en vivo. No mide biomarcadores en sangre, actividad cerebral ni fases del sueño.',
       },
       {
         q: '¿La puntuación de coherencia de ONDA es una medición médica o clínica?',
@@ -265,7 +309,11 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       },
       {
         q: '¿Puede ONDA medir la HRV sin un Apple Watch?',
-        a: 'Todavía no — la cámara del iPhone mide tu pulso en reposo y estima la respiración; la HRV aparece al conectar un Apple Watch (u otro dispositivo que escriba HRV en Apple Salud).',
+        a: 'Todavía no — la cámara del iPhone solo mide tu pulso (frecuencia cardíaca), no latidos individuales ni la HRV; la HRV aparece al conectar un Apple Watch (u otro dispositivo que escriba HRV en Apple Salud).',
+      },
+      {
+        q: '¿Con qué frecuencia envía notificaciones ONDA?',
+        a: 'Pocas veces. ONDA envía como máximo una señal cada dos días. Con datos del reloj, envía un mensaje tranquilo cada cuatro noches estables. Sin datos del reloj, el mensaje tranquilo llega aproximadamente cada tres días y se omite si practicaste o te mediste en las últimas 24 horas. Hay como máximo un mensaje tranquilo al día, y nunca un día con señal.',
       },
       {
         q: '¿ONDA es un dispositivo médico?',
