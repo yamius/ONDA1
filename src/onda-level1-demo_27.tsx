@@ -16,6 +16,7 @@ import { loadLocalProgress, saveLocalProgress, mergeProgress, type LocalProgress
 import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, computeTrafficLight, type PendingAnomaly, type SignalInput, type TrafficState } from './lib/anomaly';
 import { SimpleHero, PulseBreathTiles, trafficCopy } from './components/SimpleHome';
 import { Coachmarks } from './components/Coachmarks';
+import { RateOndaRow } from './components/RateOndaRow';
 import { ensureModeAssigned, setMode as persistMode, type AppMode } from './lib/mode';
 import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
@@ -5890,6 +5891,10 @@ const OndaLevel1 = () => {
                   ) : t('practices.back_to_practices')}
                 </button>
               </div>
+              {/* Persistent "Rate ONDA" row (1.9.3) — on the regular results
+                  screen only; never on the first-run screen, which sits next to
+                  the paywall. */}
+              {!cameFromFirstRun && <RateOndaRow place="results" light={completeLight} />}
             </div>
           </div>
         )}
@@ -7446,6 +7451,13 @@ const OndaLevel1 = () => {
           </div>
         </div>
         )}
+
+        {/* Persistent "Rate ONDA" row (1.9.3) — after the practices, before the
+            HRV trend. Decorative stars; every star opens the App Store review
+            page (no stored value, no review-gating). */}
+        <div className="mb-6">
+          <RateOndaRow place="home" light={isLight} />
+        </div>
 
         {/* Section 4 — Your Progress (lifetime: 7-day HRV + streak + total).
             Placed ABOVE Quick Mood Scan: the real recovery metric (HRV trend)

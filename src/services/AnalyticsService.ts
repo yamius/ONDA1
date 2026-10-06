@@ -110,6 +110,7 @@ export type AnalyticsEventName =
   | 'purchase_cancelled'
   // Reviews
   | 'review_prompt_requested'        // SKStoreReview dispatched (Apple hides the actual dialog)
+  | 'rate_tap'                       // tapped the persistent "Rate ONDA" stars → App Store write-review page. params: place (home|results|menu). Star count is NOT recorded (Apple review-gating rule).
   // Errors
   | 'error'
   | 'audio_load_error'
