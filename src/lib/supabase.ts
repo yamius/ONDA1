@@ -26,11 +26,10 @@ export type UserGameProgress = {
   practice_history: any[];
   artifacts: any[];
   unlocked_achievements: any[];
-  bio_metrics: Record<string, any>;
-  sleep_tracking: {
-    day: number;
-    lastCheck: string | null;
-  };
+  // bio_metrics / sleep_tracking: legacy columns, no longer read or written by
+  // the app (1.9.3 — they held random prototype numbers). Cleared server-side.
+  bio_metrics?: Record<string, any>;
+  sleep_tracking?: Record<string, any>;
   selected_language: string;
   selected_level: number;
   selected_chapter: number;

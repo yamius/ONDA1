@@ -1090,7 +1090,6 @@ const OndaLevel1 = () => {
   const [showLevelDropdown, setShowLevelDropdown] = useState(false);
   const [selectedChapter, setSelectedChapter] = useState(1);
   const [showChapterDropdown, setShowChapterDropdown] = useState(false);
-   const [sleepTracking, setSleepTracking] = useState<{ day: number; lastCheck: string | null }>({ day: 0, lastCheck: null });
   const [rhythmProgress, setRhythmProgress] = useState(rhythmStore.progress());
   const [rhythmLog, setRhythmLog] = useState(rhythmStore.getLog());
   const [showRatingModal, setShowRatingModal] = useState(false);
@@ -1123,7 +1122,6 @@ const OndaLevel1 = () => {
         setPracticeHistory(p.practiceHistory || []);
         setArtifacts(p.artifacts || []);
         setUnlockedAchievements(p.unlockedAchievements || []);
-        if (p.sleepTracking) setSleepTracking(p.sleepTracking);
       }
       setProgressHydrated(true);
     });
@@ -1142,10 +1140,9 @@ const OndaLevel1 = () => {
       practiceHistory: practiceHistory as LocalProgress['practiceHistory'],
       artifacts: artifacts as LocalProgress['artifacts'],
       unlockedAchievements: unlockedAchievements as string[],
-      sleepTracking,
       updatedAt: new Date().toISOString(),
     });
-  }, [progressHydrated, qnt, activeCircuit, completedPractices, practiceHistory, artifacts, unlockedAchievements, sleepTracking]);
+  }, [progressHydrated, qnt, activeCircuit, completedPractices, practiceHistory, artifacts, unlockedAchievements]);
 
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [showProfileModal, setShowProfileModal] = useState(false);
@@ -1467,13 +1464,6 @@ const OndaLevel1 = () => {
     }
   }, [practiceState]);
 
-  const [bioMetrics, setBioMetrics] = useState({
-    heartRate: 72,
-    hrv: 45,
-    spo2: 98,
-    temp: 36.6,
-    stability: 100
-  });
   const [currentGuidingTextIndex, setCurrentGuidingTextIndex] = useState(0);
   const [isTextTransitioning, setIsTextTransitioning] = useState(false);
   const [audioResetKey, setAudioResetKey] = useState(0);
@@ -1799,8 +1789,6 @@ const OndaLevel1 = () => {
               practice_history: [],
               artifacts: [],
               unlocked_achievements: [],
-              bio_metrics: { heartRate: 72, hrv: 45, spo2: 98, temp: 36.6, stability: 100 },
-              sleep_tracking: { day: 0, lastCheck: null },
               selected_language: 'EN',
               selected_level: 1,
               selected_chapter: 1
@@ -1855,7 +1843,6 @@ const OndaLevel1 = () => {
             practiceHistory: progress.practice_history || [],
             artifacts: migratedArtifacts,
             unlockedAchievements: progress.unlocked_achievements || [],
-            sleepTracking: progress.sleep_tracking || null,
           });
           setQnt(merged.ond);
           setActiveCircuit(merged.activeCircuit);
@@ -1863,15 +1850,8 @@ const OndaLevel1 = () => {
           setPracticeHistory(merged.practiceHistory);
           setArtifacts(merged.artifacts);
           setUnlockedAchievements(merged.unlockedAchievements);
-          if (merged.sleepTracking) setSleepTracking(merged.sleepTracking);
-          setBioMetrics(progress.bio_metrics || {
-            heartRate: 72,
-            hrv: 45,
-            spo2: 98,
-            temp: 36.6,
-            stability: 100
-          });
-          // sleepTracking already set from the merged progress above.
+          // bio_metrics / sleep_tracking removed in 1.9.3 — they were random demo
+          // numbers from the prototype (never real sensor data), synced every ~3s.
           // Restore the user's saved language. Earlier this branch
           // unconditionally set EN here, which was the second of two
           // force-English bugs (the first being src/i18n.ts wiping
@@ -2035,8 +2015,6 @@ const OndaLevel1 = () => {
           practice_history: practiceHistory,
           artifacts,
           unlocked_achievements: unlockedAchievements,
-          bio_metrics: bioMetrics,
-          sleep_tracking: sleepTracking,
           selected_language: selectedLanguage,
           selected_level: selectedLevel,
           selected_chapter: selectedChapter,
@@ -2062,8 +2040,6 @@ const OndaLevel1 = () => {
     practiceHistory,
     artifacts,
     unlockedAchievements,
-    bioMetrics,
-    sleepTracking,
     selectedLanguage,
     selectedLevel,
     selectedChapter
@@ -2095,46 +2071,9 @@ const OndaLevel1 = () => {
     return () => document.removeEventListener('click', handleClickOutside);
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setBioMetrics(prev => {
-        const newHR = prev.heartRate + (Math.random() - 0.5) * 2;
-        const variance = Math.abs(newHR - 72);
-        const stability = Math.max(0, 100 - variance * 2);
-
-        return {
-          heartRate: newHR,
-          hrv: prev.hrv + (Math.random() - 0.5) * 3,
-          spo2: Math.min(100, prev.spo2 + (Math.random() - 0.3)),
-          temp: prev.temp + (Math.random() - 0.5) * 0.1,
-          stability
-        };
-      });
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    const checkSleepPattern = setInterval(() => {
-      const now = new Date();
-      const currentHour = now.getHours();
-      const todayKey = now.toDateString();
-
-      if (sleepTracking.lastCheck !== todayKey) {
-        if ((currentHour >= 22 && currentHour <= 23) || (currentHour >= 6 && currentHour <= 8)) {
-          const isConsistent = bioMetrics.stability > 80 && bioMetrics.heartRate < 75;
-          if (isConsistent) {
-            setSleepTracking(prev => ({
-              day: Math.min(7, prev.day + 1),
-              lastCheck: todayKey
-            }));
-          }
-        }
-      }
-    }, 60000);
-
-    return () => clearInterval(checkSleepPattern);
-  }, [sleepTracking.lastCheck, bioMetrics.stability, bioMetrics.heartRate]);
+  // (1.9.3) Removed the prototype's random 'bio metrics' generator (every 3s)
+  // and the fake 'sleep consistency' counter built on it — never real data,
+  // never shown, and it rewrote user_game_progress to Supabase every ~3s.
 
   useEffect(() => {
     if (practiceState === 'active' && !isPaused && activePractice) {
