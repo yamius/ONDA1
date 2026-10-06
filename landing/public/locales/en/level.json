@@ -58,12 +58,12 @@
     "2": {
       "name": "EMOTIONS / AQUA",
       "subtitle": "Energy Biochemistry: From Maneuverability to Social Power",
-      "metaDescription": "Level 2: Emotional mastery. HPA axis, DHEA, mirror neurons — neuroception, ventral vagus, social resonance. From maneuverability to calm dominance.",
+      "metaDescription": "Level 2: Emotional mastery. HPA axis, DHEA, mirror neurons, social resonance — plus ideas from polyvagal theory, a debated model. From maneuverability to calm dominance.",
       "intro": "Level 2 is the stage of mastering your emotional system as a high-tech reactor. We stop perceiving emotions as mere \"moods\" and begin treating them as biological protocols: with specific hormonal signatures, neuromotor patterns, and vegetative profiles.\n\nAt this level, we follow the path of mammalian evolution: from the instantaneous reactions of a small animal to the unshakable calm of a large predator and the complex resonance of a higher primate.",
       "architecture": {
         "intro": "Level 2 integrates three resource management strategies:",
         "parts": [
-          { "label": "I Maneuver", "protocol": "Protocol: The Maneuverability of the \"Small Mammal\"", "goal": "Objective: Biological flexibility and instantaneous acceleration without paralyzing stress.", "work": "Mechanism: Training neuroception (the brain's ability to detect threats before they are consciously perceived). We teach the system to \"drift\" smoothly between rest and action, turning cortisol and adrenaline from toxins into fuel for precision." },
+          { "label": "I Maneuver", "protocol": "Protocol: The Maneuverability of the \"Small Mammal\"", "goal": "Objective: Biological flexibility and instantaneous acceleration without paralyzing stress.", "work": "Mechanism: Inspired by polyvagal ideas (a debated model) — practising the felt sense of safety and threat that the model calls neuroception. We teach the system to \"drift\" smoothly between rest and action, turning cortisol and adrenaline from toxins into fuel for precision." },
           { "label": "I Guard the Territory", "protocol": "Protocol: The Strength of the \"Large Mammal\"", "goal": "Objective: Status calm and density of presence.", "work": "Mechanism: Working with the endocrine system — leaning less on emergency cortisol over time and more toward DHEA. This supports a state of \"calm dominance,\" a steadiness others tend to sense before you even speak." },
           { "label": "I'm Part of the Pack", "protocol": "Protocol: Social Resonance", "goal": "Objective: Transforming individual survival into collective power.", "work": "Mechanism: Activating the \"social brain\"—the mirror neuron system and the oxytocin profile. We learn to synchronize our rhythms with the group (co-regulation) while maintaining an autonomous center. Your presence becomes the \"glue\" that unites the field." }
         ]
@@ -138,8 +138,8 @@
     },
     "4": {
       "name": "SOCIETY / IGNIS",
-      "subtitle": "Oxytocin, Mirror Neurons, and Ventral Vagus — the fuel of social resonance.",
-      "metaDescription": "Level 4: Social Intelligence, Leadership Biology, Team Synergy. Oxytocin, mirror neurons, ventral vagus — neurobiology of empathy. From self-expression to collective mind.",
+      "subtitle": "Oxytocin, Mirror Neurons, and Polyvagal Ideas — the fuel of social resonance.",
+      "metaDescription": "Level 4: Social Intelligence, Leadership Biology, Team Synergy. Oxytocin and mirror neurons — neurobiology of empathy, plus polyvagal-theory ideas (a debated model). From self-expression to collective mind.",
       "intro": "Social Intelligence: From Self-Expression to Collective Mind\n\nLevel 4 is the stage of social realization and tempering. Here, the \"internal sketch\" created at the Mind level passes through the filter of the external environment. We transform the body into a powerful transmitter of ideas, and human interaction into the art of resonance.\n\nAt this level, we master the biology of influence, empathy, and group synergy, transitioning from personal survival to the state of Homo Creativus (The Creative Human).",
       "architecture": {
         "intro": "Level 4 integrates three stages of social evolution:",

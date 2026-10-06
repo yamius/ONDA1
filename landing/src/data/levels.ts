@@ -168,7 +168,7 @@ export const levelsData: Record<number, LevelData> = {
     subtitle: 'Energy Biochemistry: From Maneuverability to Social Power',
     theme: levelThemes[2],
     metaDescription:
-      'Level 2: Emotional mastery. HPA axis, DHEA, mirror neurons — neuroception, ventral vagus, social resonance. From maneuverability to calm dominance.',
+      'Level 2: Emotional mastery. HPA axis, DHEA, mirror neurons, social resonance — plus ideas from polyvagal theory, a debated model. From maneuverability to calm dominance.',
     intro:
       'Level 2 is the stage of mastering your emotional system as a high-tech reactor. We stop perceiving emotions as mere "moods" and begin treating them as biological protocols: with specific hormonal signatures, neuromotor patterns, and vegetative profiles.\n\nAt this level, we follow the path of mammalian evolution: from the instantaneous reactions of a small animal to the unshakable calm of a large predator and the complex resonance of a higher primate.',
     architecture: {
@@ -182,7 +182,7 @@ export const levelsData: Record<number, LevelData> = {
           protocol: 'Protocol: The Maneuverability of the "Small Mammal"',
           goal: 'Objective: Biological flexibility and instantaneous acceleration without paralyzing stress.',
           work:
-            'Mechanism: Training neuroception (the brain\'s ability to detect threats before they are consciously perceived). We teach the system to "drift" smoothly between rest and action, turning cortisol and adrenaline from toxins into fuel for precision.',
+            'Mechanism: Inspired by polyvagal ideas (a debated model) — practising the felt sense of safety and threat that the model calls neuroception. We teach the system to "drift" smoothly between rest and action, turning cortisol and adrenaline from toxins into fuel for precision.',
         },
         {
           number: '05',
@@ -369,10 +369,10 @@ export const levelsData: Record<number, LevelData> = {
     number: 4,
     badge: '[ LEVEL 4: SOCIETY / IGNIS ]',
     name: 'SOCIETY / IGNIS',
-    subtitle: 'Oxytocin, Mirror Neurons, and Ventral Vagus — the fuel of social resonance.',
+    subtitle: 'Oxytocin, Mirror Neurons, and Polyvagal Ideas — the fuel of social resonance.',
     theme: levelThemes[4],
     metaDescription:
-      'Level 4: Social Intelligence, Leadership Biology, Team Synergy. Oxytocin, mirror neurons, ventral vagus — neurobiology of empathy. From self-expression to collective mind.',
+      'Level 4: Social Intelligence, Leadership Biology, Team Synergy. Oxytocin and mirror neurons — neurobiology of empathy, plus polyvagal-theory ideas (a debated model). From self-expression to collective mind.',
     intro:
       'Social Intelligence: From Self-Expression to Collective Mind\n\nLevel 4 is the stage of social realization and tempering. Here, the "internal sketch" created at the Mind level passes through the filter of the external environment. We transform the body into a powerful transmitter of ideas, and human interaction into the art of resonance.\n\nAt this level, we master the biology of influence, empathy, and group synergy, transitioning from personal survival to the state of Homo Creativus (The Creative Human).',
     architecture: {

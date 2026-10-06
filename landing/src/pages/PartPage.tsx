@@ -309,7 +309,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Neurobiology and Neuroception',
-          text: 'We train the chain: Reticular Formation \u2192 Thalamus \u2192 Motor Cortex. This allows the brain to read environmental changes (neuroception) and issue a reaction \u201cbefore the thought,\u201d bypassing slow cognitive filters.',
+          text: 'Inspired by polyvagal ideas (a debated model): we practise attention to the felt sense of safety and to changes around us, which the model calls neuroception. It is a practice image, not a claim that a specific brain circuit is being trained.',
         },
         {
           name: 'Neuroendocrinology',

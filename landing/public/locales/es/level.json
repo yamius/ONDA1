@@ -58,12 +58,12 @@
     "2": {
       "name": "EMOCIONES / AQUA",
       "subtitle": "Bioquímica de la energía: de la maniobrabilidad al poder social",
-      "metaDescription": "Nivel 2: maestría emocional. Eje HPA, DHEA, neuronas espejo — neurocepción, vago ventral, resonancia social. De la maniobrabilidad al dominio sereno.",
+      "metaDescription": "Nivel 2: maestría emocional. Eje HPA, DHEA, neuronas espejo, resonancia social — y conceptos de la teoría polivagal, un modelo debatido. De la maniobrabilidad al dominio sereno.",
       "intro": "El Nivel 2 es la etapa de dominar tu sistema emocional como un reactor de alta tecnología. Dejamos de percibir las emociones como simples «estados de ánimo» y empezamos a tratarlas como protocolos biológicos: con firma hormonal, patrones neuromotores y perfiles vegetativos específicos.\n\nEn este nivel seguimos la senda de la evolución de los mamíferos: desde las reacciones instantáneas del pequeño animal a la calma inquebrantable del gran depredador y la resonancia compleja del primate superior.",
       "architecture": {
         "intro": "El Nivel 2 integra tres estrategias de gestión de recursos:",
         "parts": [
-          { "label": "Yo maniobro", "protocol": "Protocolo: la maniobrabilidad del «pequeño mamífero»", "goal": "Objetivo: flexibilidad biológica y aceleración instantánea sin estrés paralizante.", "work": "Mecanismo: entrenar la neurocepción (la capacidad del cerebro para detectar amenazas antes de la consciencia). Enseñamos al sistema a «derivar» suavemente entre el reposo y la acción, convirtiendo cortisol y adrenalina de toxinas en combustible de precisión." },
+          { "label": "Yo maniobro", "protocol": "Protocolo: la maniobrabilidad del «pequeño mamífero»", "goal": "Objetivo: flexibilidad biológica y aceleración instantánea sin estrés paralizante.", "work": "Mecanismo: inspirado en ideas polivagales (un modelo debatido) — practicar la sensación sentida de seguridad y amenaza que el modelo llama neurocepción. Enseñamos al sistema a «derivar» suavemente entre el reposo y la acción, convirtiendo cortisol y adrenalina de toxinas en combustible de precisión." },
           { "label": "Yo guardo el territorio", "protocol": "Protocolo: la fuerza del «gran mamífero»", "goal": "Objetivo: calma de estatus y densidad de presencia.", "work": "Mecanismo: reconfigurar el sistema endocrino. Pasamos las suprarrenales de la liberación de emergencia de cortisol a la producción de DHEA (la hormona de la vitalidad). Es un estado de «dominio sereno», donde tu estabilidad la siente el resto a nivel límbico antes de que hables." },
           { "label": "Soy parte de la manada", "protocol": "Protocolo: Resonancia social", "goal": "Objetivo: transformar la supervivencia individual en poder colectivo.", "work": "Mecanismo: activar el «cerebro social» — el sistema de neuronas espejo y el perfil de oxitocina. Aprendemos a sincronizar nuestro ritmo con el grupo (co-regulación) manteniendo un centro autónomo. Tu presencia se convierte en el «pegamento» que une el campo." }
         ]
@@ -138,8 +138,8 @@
     },
     "4": {
       "name": "SOCIEDAD / IGNIS",
-      "subtitle": "Oxitocina, neuronas espejo y vago ventral — el combustible de la resonancia social.",
-      "metaDescription": "Nivel 4: inteligencia social, biología del liderazgo, sinergia de equipo. Oxitocina, neuronas espejo, vago ventral — neurobiología de la empatía. De la auto-expresión a la mente colectiva.",
+      "subtitle": "Oxitocina, neuronas espejo e ideas polivagales — el combustible de la resonancia social.",
+      "metaDescription": "Nivel 4: inteligencia social, biología del liderazgo, sinergia de equipo. Oxitocina y neuronas espejo — neurobiología de la empatía, más conceptos de la teoría polivagal (un modelo debatido). De la auto-expresión a la mente colectiva.",
       "intro": "Inteligencia social: de la auto-expresión a la mente colectiva\n\nEl Nivel 4 es la etapa de realización social y temple. Aquí el «boceto interno» creado a nivel Mente atraviesa el filtro del entorno externo. Convertimos el cuerpo en un transmisor potente de ideas y la interacción humana en arte de la resonancia.\n\nEn este nivel dominamos la biología de la influencia, la empatía y la sinergia grupal, pasando de la supervivencia personal al estado de Homo Creativus (el humano creativo).",
       "architecture": {
         "intro": "El Nivel 4 integra tres etapas de la evolución social:",

@@ -126,7 +126,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "cardiac-coherence-365-method": {
     "published": "2026-09-22T18:37:38+02:00",
-    "modified": "2026-10-06T16:16:13+02:00"
+    "modified": "2026-10-06T16:32:51+02:00"
   },
   "cardiac-coherence-insomnia-sleep": {
     "published": "2026-09-24T22:03:37+02:00",
@@ -918,11 +918,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:polyvagal-theory": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-06T14:59:05.000Z"
   },
   "glossary:neuroception": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-06T14:59:05.000Z"
   },
   "glossary:neuroplasticity": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -950,15 +950,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:motor-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-06T14:59:05.000Z"
   },
   "glossary:neurobiology": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-06T14:59:05.000Z"
   },
   "glossary:cognitive-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-06T14:59:05.000Z"
   },
   "glossary:neuroendocrinology": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -990,7 +990,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:thymus": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-06T14:59:05.000Z"
   },
   "glossary:basal-ganglia": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1518,7 +1518,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:co-regulation": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-04T18:29:31.000Z"
+    "modified": "2026-10-06T14:59:05.000Z"
   },
   "glossary:tensegrity": {
     "published": "2026-09-29T18:09:37.000Z",

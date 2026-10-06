@@ -1367,7 +1367,7 @@ Part 3 ("I Adapt") targets "reduction of muscular tension (the \u2018body armor\
     title: 'Polyvagal Theory',
     category: 'Neuroscience',
     shortDescription:
-      'Stephen Porges\' theory of the vagus nerve — three neural states: ventral vagal (safety), sympathetic (mobilization), dorsal vagal (shutdown).',
+      'Stephen Porges\' theory of the vagus nerve, a debated model — it proposes three neural states: ventral vagal (safety), sympathetic (mobilization), dorsal vagal (shutdown).',
     content: `
 
 **Polyvagal Theory**, developed by Stephen Porges, proposes that the vagus nerve evolved in layers, each supporting a different survival strategy, and that the nervous system moves between distinct physiological states rather than simply switching "on" and "off". It is a debated model: many physiologists and comparative biologists dispute its anatomical and evolutionary claims. See [The Vagus Nerve](/science/concepts/vagus-nerve) for what is established.
@@ -1391,7 +1391,9 @@ In the terms of polyvagal theory (a debated model), Part 4 trains the nervous sy
 ---
 
 ## References
-1. [Porges, Biol Psychol (2007)](https://pubmed.ncbi.nlm.nih.gov/17049418/) — the theory's own account (a debated model)`,
+1. [Porges, Biol Psychol (2007)](https://pubmed.ncbi.nlm.nih.gov/17049418/) — the theory's own account (a debated model)
+
+Read more, with the evidence → [Polyvagal theory: what holds up and what is debated](/science/concepts/polyvagal-theory)`,
   },
   {
     slug: 'neuroception',
@@ -1401,18 +1403,14 @@ In the terms of polyvagal theory (a debated model), Part 4 trains the nervous sy
       'The brain\'s unconscious detection of safety or threat — happens before conscious perception.',
     content: `
 
-**Neuroception** is a term coined by Stephen Porges to describe the nervous system's automatic, unconscious evaluation of the environment for safety or threat. It occurs before we consciously perceive or think — the body "reads" the situation and responds.
+**Neuroception** is a term from polyvagal theory, a debated model, not established physiology. Stephen Porges coined it for the nervous system's automatic, unconscious evaluation of the environment for safety or threat. The theory proposes that this evaluation happens before we consciously perceive or think.
 
-## How It Works
+## What the theory proposes
 
 - **Below awareness** — we don't choose to feel safe or threatened
 - **Multi-sensory** — integrates facial cues, voice tone, body language, context
-- **Rapid** — bypasses slow cognitive processing
-- **Drives state** — determines which polyvagal state we occupy
-
-## The Chain
-
-Reticular Formation → Thalamus → Motor Cortex. This pathway allows the brain to detect environmental changes and issue reactions "before the thought" — bypassing slow cognitive filters.
+- **Rapid** — in the model, it works faster than deliberate thinking
+- **Drives state** — in the model, it sets which polyvagal state we occupy
 
 ## Why does neuroception matter?
 
@@ -1426,7 +1424,7 @@ Neuroception cannot be measured directly, because by definition it happens outsi
 
 ## In ONDA Life
 
-Part 4 trains "the chain: Reticular Formation → Thalamus → Motor Cortex" so the brain can read environmental changes (neuroception) and respond with precision. You react to flow, not to thought.
+Part 4 borrows the image of neuroception, inspired by polyvagal ideas (a debated model): practising attention to the felt sense of safety and to changes around you. It is a practice image, not a claim that a specific brain circuit is being trained.
 
 ---
 
@@ -1611,7 +1609,7 @@ Some diseases affect the motor neurons that start here, such as amyotrophic late
 
 ## In ONDA Life
 
-Part 4 trains the chain "Reticular Formation → Thalamus → Motor Cortex" — enabling reactions "before the thought." The motor cortex executes maneuverability; when fed by rapid neuroception, it produces precise, adaptive responses without slow cognitive filtering.`,
+Part 4 uses the motor cortex as an image for maneuverability: moving and responding with precision. Its framing of fast, safety-tuned reactions is inspired by polyvagal ideas (a debated model), not a claim that a specific circuit is being trained.`,
   },
   {
     slug: 'neurobiology',
@@ -1645,7 +1643,7 @@ Everyday factors also matter. Sleep supports memory consolidation and the cleari
 
 ## In ONDA Life
 
-Part 4 "Neurobiology and Neuroception" trains the chain Reticular Formation → Thalamus → Motor Cortex. Understanding neurobiology allows us to target specific circuits — turning scientific knowledge into precise, measurable practices.`,
+Part 4 "Neurobiology and Neuroception" uses neurobiology as a map and borrows the image of neuroception from polyvagal ideas (a debated model). The practices are inspired by these ideas; they do not claim to train specific circuits.`,
   },
   {
     slug: 'cognitive-system',
@@ -1666,7 +1664,7 @@ The **cognitive system** refers to the brain networks that support higher-order 
 
 ## Speed of Processing
 
-Cognitive processing operates on the order of hundreds of milliseconds. Sensory-motor pathways (reticular formation → thalamus → motor cortex) can respond in tens of milliseconds — "before the thought."
+Cognitive processing operates on the order of hundreds of milliseconds. Reflexes and well-practised sensory-motor responses can be considerably faster than deliberate thought.
 
 ## Why does the Cognitive System matter?
 
@@ -1923,7 +1921,7 @@ Thymus problems are also linked to autoimmunity. Myasthenia gravis is often asso
 
 ## In ONDA Life
 
-Part 5 aims to "restore the link between the sense of social safety and a powerful immune response" through the thymus. When the nervous system perceives safety (ventral vagal state), immune function can operate optimally.`,
+Part 5 aims to "restore the link between the sense of social safety and a powerful immune response" through the thymus. This is a practice image: chronic stress is associated with changes in immune function, but no practice has been shown to switch the thymus or immunity on through a felt sense of safety.`,
   },
   {
     slug: 'basal-ganglia',
@@ -5934,13 +5932,13 @@ Part 13 engages "C-tactile fibers and proprioceptive integration to create an ul
       'The ability to regulate one\'s emotional state through another person — mutual calming and stabilization in social contact.',
     content: `
 
-**Co-regulation** is the process by which one person\'s nervous system helps regulate another\'s. Through proximity, voice, touch, and synchronized rhythms, we can calm each other — or escalate each other. It is the biological basis of "we regulate together."
+Some descriptions of co-regulation use the language of polyvagal theory, a debated model; those parts are marked below as the theory's positions. **Co-regulation** is the process by which one person\'s state helps regulate another\'s. Through proximity, voice, touch, and shared rhythms, we can calm each other — or escalate each other. Polyvagal theory presents it as the biological basis of "we regulate together."
 
 ## Key Functions
 
-- **Mutual calming** — one person\'s ventral vagal state supports another\'s
-- **Social engagement** — facial muscles, hearing tuned to human voice
-- **Rhythm alignment** — breathing, heart rate, movement synchronize
+- **Mutual calming** — a calm person can help another settle; polyvagal theory describes this as one person\'s ventral vagal state supporting another\'s
+- **Social engagement** — in polyvagal theory, a "social engagement system" links facial muscles and hearing tuned to the human voice
+- **Rhythm alignment** — breathing, heart rate, movement can partly synchronize
 - **Bidirectional** — both participants influence and are influenced
 
 ## Why does Co-regulation matter?

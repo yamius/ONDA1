@@ -58,12 +58,12 @@
     "2": {
       "name": "EMOTIONEN / AQUA",
       "subtitle": "Biochemie der Energie: von der Wendigkeit zur sozialen Kraft",
-      "metaDescription": "Stufe 2: emotionale Meisterschaft. HPA-Achse, DHEA, Spiegelneuronen — Neurozeption, ventraler Vagus, soziale Resonanz. Von der Wendigkeit zu ruhiger Souveränität.",
+      "metaDescription": "Stufe 2: emotionale Meisterschaft. HPA-Achse, DHEA, Spiegelneuronen, soziale Resonanz — dazu Ideen der Polyvagal-Theorie, eines umstrittenen Modells. Von der Wendigkeit zu ruhiger Souveränität.",
       "intro": "Stufe 2 ist die Phase, in der du dein emotionales System wie einen Hightech-Reaktor beherrschen lernst. Wir hören auf, Emotionen als bloße „Launen“ zu sehen, und behandeln sie als biologische Protokolle: mit bestimmten hormonellen Signaturen, neuromotorischen Mustern und vegetativen Profilen.\n\nAuf dieser Stufe folgen wir dem Weg der Evolution der Säugetiere: von den blitzschnellen Reaktionen eines kleinen Tiers über die unerschütterliche Ruhe eines großen Raubtiers bis zur komplexen Resonanz eines höheren Primaten.",
       "architecture": {
         "intro": "Stufe 2 vereint drei Strategien des Ressourcenmanagements:",
         "parts": [
-          { "label": "Ich manövriere", "protocol": "Protokoll: Die Wendigkeit des „kleinen Säugetiers“", "goal": "Ziel: biologische Flexibilität und blitzschnelle Beschleunigung ohne lähmenden Stress.", "work": "Mechanismus: Training der Neurozeption (die Fähigkeit des Gehirns, Bedrohungen zu erkennen, bevor sie bewusst wahrgenommen werden). Wir bringen dem System bei, geschmeidig zwischen Ruhe und Handlung zu „gleiten“ und Cortisol und Adrenalin von Giften in Treibstoff für Präzision zu verwandeln." },
+          { "label": "Ich manövriere", "protocol": "Protokoll: Die Wendigkeit des „kleinen Säugetiers“", "goal": "Ziel: biologische Flexibilität und blitzschnelle Beschleunigung ohne lähmenden Stress.", "work": "Mechanismus: Inspiriert von polyvagalen Ideen (einem umstrittenen Modell) — Üben des gefühlten Sinns für Sicherheit und Bedrohung, den das Modell Neurozeption nennt. Wir bringen dem System bei, geschmeidig zwischen Ruhe und Handlung zu „gleiten“ und Cortisol und Adrenalin von Giften in Treibstoff für Präzision zu verwandeln." },
           { "label": "Ich schütze mein Revier", "protocol": "Protokoll: Die Stärke des „großen Säugetiers“", "goal": "Ziel: souveräne Ruhe und Dichte der Präsenz.", "work": "Mechanismus: Arbeit mit dem Hormonsystem — mit der Zeit weniger auf Notfall-Cortisol und mehr auf DHEA setzen. Das unterstützt einen Zustand „ruhiger Souveränität“, eine Stabilität, die andere oft spüren, bevor du überhaupt sprichst." },
           { "label": "Ich bin Teil der Gruppe", "protocol": "Protokoll: Soziale Resonanz", "goal": "Ziel: individuelles Überleben in kollektive Kraft verwandeln.", "work": "Mechanismus: das „soziale Gehirn“ aktivieren — das Spiegelneuronensystem und das Oxytocinprofil. Wir lernen, unsere Rhythmen mit der Gruppe zu synchronisieren (Ko-Regulation) und dabei ein eigenes Zentrum zu behalten. Deine Präsenz wird zum „Kitt“, der das Feld verbindet." }
         ]
@@ -138,8 +138,8 @@
     },
     "4": {
       "name": "GESELLSCHAFT / IGNIS",
-      "subtitle": "Oxytocin, Spiegelneuronen und ventraler Vagus — der Treibstoff sozialer Resonanz.",
-      "metaDescription": "Stufe 4: soziale Intelligenz, Biologie der Führung, Team-Synergie. Oxytocin, Spiegelneuronen, ventraler Vagus — die Neurobiologie der Empathie. Vom Selbstausdruck zum kollektiven Geist.",
+      "subtitle": "Oxytocin, Spiegelneuronen und polyvagale Ideen — der Treibstoff sozialer Resonanz.",
+      "metaDescription": "Stufe 4: soziale Intelligenz, Biologie der Führung, Team-Synergie. Oxytocin und Spiegelneuronen — die Neurobiologie der Empathie, dazu Ideen der Polyvagal-Theorie (eines umstrittenen Modells). Vom Selbstausdruck zum kollektiven Geist.",
       "intro": "Soziale Intelligenz: vom Selbstausdruck zum kollektiven Geist\n\nStufe 4 ist die Phase der sozialen Verwirklichung und Bewährung. Hier geht der „innere Entwurf“ aus der Stufe des Geistes durch den Filter der äußeren Umgebung. Wir machen den Körper zu einem kraftvollen Sender von Ideen und die Begegnung mit Menschen zur Kunst der Resonanz.\n\nAuf dieser Stufe meistern wir die Biologie von Einfluss, Empathie und Gruppensynergie und gehen vom persönlichen Überleben über zum Zustand des Homo Creativus (des schöpferischen Menschen).",
       "architecture": {
         "intro": "Stufe 4 vereint drei Etappen sozialer Entwicklung:",

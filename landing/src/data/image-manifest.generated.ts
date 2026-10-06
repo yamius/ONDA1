@@ -2332,6 +2332,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/concepts-polyvagal-theory.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/concepts-polyvagal-theory.png": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/concepts-polyvagal-theory.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/science/concepts-respiratory-sinus-arrhythmia.avif": {
     "width": 1920,
     "height": 820

@@ -58,12 +58,12 @@
     "2": {
       "name": "ÉMOTIONS / AQUA",
       "subtitle": "Biochimie de l’énergie : de la manœuvrabilité à la puissance sociale",
-      "metaDescription": "Niveau 2 : maîtrise émotionnelle. Axe HHS, DHEA, neurones miroirs — neuroception, vague ventral, résonance sociale. De la manœuvrabilité à une assurance calme.",
+      "metaDescription": "Niveau 2 : maîtrise émotionnelle. Axe HHS, DHEA, neurones miroirs, résonance sociale — et des idées de la théorie polyvagale, un modèle débattu. De la manœuvrabilité à une assurance calme.",
       "intro": "Le niveau 2 est l’étape où vous apprenez à maîtriser votre système émotionnel comme un réacteur de haute technologie. Nous cessons de voir les émotions comme de simples « humeurs » pour les traiter comme des protocoles biologiques : avec des signatures hormonales, des schémas neuromoteurs et des profils végétatifs précis.\n\nÀ ce niveau, nous suivons le chemin de l’évolution des mammifères : des réactions instantanées d’un petit animal au calme inébranlable d’un grand prédateur, puis à la résonance complexe d’un primate supérieur.",
       "architecture": {
         "intro": "Le niveau 2 intègre trois stratégies de gestion des ressources :",
         "parts": [
-          { "label": "Je manœuvre", "protocol": "Protocole : la manœuvrabilité du « petit mammifère »", "goal": "Objectif : souplesse biologique et accélération instantanée sans stress paralysant.", "work": "Mécanisme : dans les termes de la théorie polyvagale (un modèle débattu), entraîner la neuroception (la capacité du cerveau à détecter une menace avant qu’elle ne soit perçue consciemment). Nous apprenons au système à « glisser » en douceur du repos à l’action, en transformant le cortisol et l’adrénaline de toxines en carburant de précision." },
+          { "label": "Je manœuvre", "protocol": "Protocole : la manœuvrabilité du « petit mammifère »", "goal": "Objectif : souplesse biologique et accélération instantanée sans stress paralysant.", "work": "Mécanisme : inspiré d’idées polyvagales (un modèle débattu) — s’exercer au ressenti de sécurité et de menace que ce modèle appelle neuroception. Nous apprenons au système à « glisser » en douceur du repos à l’action, en transformant le cortisol et l’adrénaline de toxines en carburant de précision." },
           { "label": "Je protège mon territoire", "protocol": "Protocole : la force du « grand mammifère »", "goal": "Objectif : un calme assuré et une présence dense.", "work": "Mécanisme : travailler avec le système endocrinien — s’appuyer moins, avec le temps, sur le cortisol d’urgence et davantage sur la DHEA. Cela soutient un état d’« assurance calme », une stabilité que les autres perçoivent souvent avant même que vous ne parliez." },
           { "label": "Je fais partie du groupe", "protocol": "Protocole : résonance sociale", "goal": "Objectif : transformer la survie individuelle en puissance collective.", "work": "Mécanisme : activer le « cerveau social » — le système des neurones miroirs et le profil de l’ocytocine. Nous apprenons à synchroniser nos rythmes avec le groupe (co-régulation) tout en gardant un centre autonome. Votre présence devient le « liant » qui unit le groupe." }
         ]
@@ -138,8 +138,8 @@
     },
     "4": {
       "name": "SOCIÉTÉ / IGNIS",
-      "subtitle": "Ocytocine, neurones miroirs et vague ventral — le carburant de la résonance sociale.",
-      "metaDescription": "Niveau 4 : intelligence sociale, biologie du leadership, synergie d’équipe. Ocytocine, neurones miroirs, vague ventral — la neurobiologie de l’empathie. De l’expression de soi à l’esprit collectif.",
+      "subtitle": "Ocytocine, neurones miroirs et idées polyvagales — le carburant de la résonance sociale.",
+      "metaDescription": "Niveau 4 : intelligence sociale, biologie du leadership, synergie d’équipe. Ocytocine et neurones miroirs — la neurobiologie de l’empathie, et des idées de la théorie polyvagale (un modèle débattu). De l’expression de soi à l’esprit collectif.",
       "intro": "Intelligence sociale : de l’expression de soi à l’esprit collectif\n\nLe niveau 4 est l’étape de la réalisation sociale et de l’épreuve. Ici, l’« esquisse intérieure » créée au niveau de l’Esprit passe au filtre de l’environnement extérieur. Nous faisons du corps un puissant émetteur d’idées, et de l’interaction humaine un art de la résonance.\n\nÀ ce niveau, nous maîtrisons la biologie de l’influence, de l’empathie et de la synergie de groupe, en passant de la survie personnelle à l’état d’Homo Creativus (l’humain créateur).",
       "architecture": {
         "intro": "Le niveau 4 intègre trois étapes de l’évolution sociale :",

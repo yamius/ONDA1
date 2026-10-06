@@ -1116,6 +1116,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.biopsycho.2022.108382": {
+   "kind": "doi",
+   "valid": true,
+   "title": "An overview of the phylogeny of cardiorespiratory control in vertebrates with some reflections on the ‘Polyvagal Theory’",
+   "firstAuthor": "Taylor",
+   "authors": [
+    "Taylor",
+    "Wang",
+    "Leite"
+   ],
+   "year": 2022,
+   "journal": "Biological Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1016/j.biopsycho.2023.108589": {
    "kind": "doi",
    "valid": true,
@@ -7576,6 +7591,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3389/fped.2014.00080": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Reducing Auditory Hypersensitivities in Autistic Spectrum Disorder: Preliminary Findings Evaluating the Listening Project Protocol",
+   "firstAuthor": "Porges",
+   "authors": [
+    "Porges",
+    "Bazhenova",
+    "Bal",
+    "Carlson",
+    "Sorokin",
+    "Heilman",
+    "Cook",
+    "Lewis"
+   ],
+   "year": 2014,
+   "journal": "Frontiers in Pediatrics",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.3389/fphys.2012.00148": {
    "kind": "doi",
    "valid": true,
@@ -7889,6 +7924,22 @@
    "journal": "Biomedicines",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3390/ijerph182211778": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A Systematic Review of a Polyvagal Perspective on Embodied Contemplative Practices as Promoters of Cardiorespiratory Coupling and Traumatic Stress Recovery for PTSD and OCD: Research Methodologies and State of the Art",
+   "firstAuthor": "Poli",
+   "authors": [
+    "Poli",
+    "Gemignani",
+    "Soldani",
+    "Miccoli"
+   ],
+   "year": 2021,
+   "journal": "International Journal of Environmental Research and Public Health",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.3390/ijms22115882": {
    "kind": "doi",
@@ -10952,6 +11003,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:25136545": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Reducing auditory hypersensitivities in autistic spectrum disorder: preliminary findings evaluating the listening project protocol.",
+   "firstAuthor": "Porges",
+   "authors": [
+    "Porges",
+    "Bazhenova",
+    "Bal",
+    "Carlson",
+    "Sorokin",
+    "Heilman",
+    "Cook",
+    "Lewis"
+   ],
+   "year": 2014,
+   "journal": "Front Pediatr",
+   "doi": "10.3389/fped.2014.00080",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:25158633": {
    "kind": "pmid",
    "valid": true,
@@ -13520,6 +13592,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:34831534": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A Systematic Review of a Polyvagal Perspective on Embodied Contemplative Practices as Promoters of Cardiorespiratory Coupling and Traumatic Stress Recovery for PTSD and OCD: Research Methodologies and State of the Art.",
+   "firstAuthor": "Poli",
+   "authors": [
+    "Poli",
+    "Gemignani",
+    "Soldani",
+    "Miccoli"
+   ],
+   "year": 2021,
+   "journal": "Int J Environ Res Public Health",
+   "doi": "10.3390/ijerph182211778",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:34845389": {
    "kind": "pmid",
    "valid": true,
@@ -13722,6 +13811,22 @@
    "doi": "10.1016/j.neubiorev.2022.104711",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:35777519": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "An overview of the phylogeny of cardiorespiratory control in vertebrates with some reflections on the 'Polyvagal Theory'.",
+   "firstAuthor": "Taylor",
+   "authors": [
+    "Taylor",
+    "Wang",
+    "Leite"
+   ],
+   "year": 2022,
+   "journal": "Biol Psychol",
+   "doi": "10.1016/j.biopsycho.2022.108382",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:35798125": {
    "kind": "pmid",
@@ -14323,6 +14428,20 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:40735382": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Polyvagal Theory: Current Status, Clinical Applications, and Future Directions.",
+   "firstAuthor": "Porges",
+   "authors": [
+    "Porges"
+   ],
+   "year": 2025,
+   "journal": "Clin Neuropsychiatry",
+   "doi": "10.36131/cnfioritieditore20250301",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:40768584": {
    "kind": "pmid",
    "valid": true,
@@ -14503,6 +14622,72 @@
    "doi": "10.1002/eat.70064",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41768017": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Why The Polyvagal Theory Is Untenable: An international expert evaluation of the polyvagal theory and commentary upon Porges, S.W. (2025). Polyvagal theory: current status, clinical applications, and future directions. Clin. Neuropsychiatry, 22(3), 169-184.",
+   "firstAuthor": "Grossman",
+   "authors": [
+    "Grossman",
+    "Ackland",
+    "Allen",
+    "Berntson",
+    "Booth",
+    "Burghardt",
+    "Buron",
+    "Dinets",
+    "Doody",
+    "Dutschmann",
+    "Farmer",
+    "Fisher",
+    "Gourine",
+    "Joyner",
+    "Karemaker",
+    "Khalsa",
+    "Lakatta",
+    "Leite",
+    "Macefield",
+    "Machado",
+    "Machado",
+    "Menuet",
+    "Mendelowitz",
+    "Moraes",
+    "Neuhuber",
+    "Ottaviani",
+    "Paterson",
+    "Paton",
+    "Pellegrino",
+    "Ramchandra",
+    "Shanks",
+    "Schwaber",
+    "Shivkumar",
+    "Spyer",
+    "Taylor",
+    "Taylor",
+    "Wang",
+    "Yao",
+    "Zucker"
+   ],
+   "year": 2026,
+   "journal": "Clin Neuropsychiatry",
+   "doi": "10.36131/cnfioritieditore20260110",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:41768026": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "When A Critique Becomes Untenable: A Scholarly Response To Grossman Et Al.'S Evaluation Of Polyvagal Theory.",
+   "firstAuthor": "Porges",
+   "authors": [
+    "Porges"
+   ],
+   "year": 2026,
+   "journal": "Clin Neuropsychiatry",
+   "doi": "10.36131/cnfioritieditore20260111",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:41838387": {
    "kind": "pmid",

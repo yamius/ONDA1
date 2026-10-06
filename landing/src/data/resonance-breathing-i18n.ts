@@ -68,7 +68,7 @@ export const RESONANCE_BREATHING_I18N: Record<'en' | 'ru' | 'es', RbCopy> = {
         kicker: '[ THE EVIDENCE ]',
         title: 'What the evidence says',
         paras: [
-          'Breathing at resonance frequency reliably raises HRV during the session and engages the parasympathetic branch — the most-supported mechanism behind HRV biofeedback (Lehrer & Gevirtz, 2014). Slow, resonant breathing is also linked in the wider literature to lower arousal and better stress resilience with regular practice (Thayer et al., 2009; Porges, 2007).',
+          'Breathing at resonance frequency reliably raises HRV during the session and engages the parasympathetic branch — the most-supported mechanism behind HRV biofeedback (Lehrer & Gevirtz, 2014). Across studies, slow breathing raises vagally mediated HRV during and shortly after practice (Laborde et al., 2022).',
           'As always, the acute effect is robust; the size and durability of long-term change vary between people. Full detail and limits on {{researchLink}}.',
         ],
       },
@@ -166,7 +166,7 @@ export const RESONANCE_BREATHING_I18N: Record<'en' | 'ru' | 'es', RbCopy> = {
         kicker: '[ ДОКАЗАТЕЛЬСТВА ]',
         title: 'Что говорят исследования',
         paras: [
-          'Дыхание на резонансной частоте надёжно повышает HRV во время сессии и включает парасимпатическую ветвь — самый подтверждённый механизм за HRV-биофидбеком (Lehrer & Gevirtz, 2014). Медленное резонансное дыхание в более широкой литературе также связывают с более низким возбуждением и лучшей стрессоустойчивостью при регулярной практике (Thayer et al., 2009; Porges, 2007).',
+          'Дыхание на резонансной частоте надёжно повышает HRV во время сессии и включает парасимпатическую ветвь — самый подтверждённый механизм за HRV-биофидбеком (Lehrer & Gevirtz, 2014). По данным многих исследований, медленное дыхание повышает вагусно-опосредованную HRV во время практики и вскоре после неё (Laborde et al., 2022).',
           'Как всегда, острый эффект устойчив; величина и стойкость долгосрочных изменений варьируются у разных людей. Полные детали и пределы — на {{researchLink}}.',
         ],
       },
@@ -264,7 +264,7 @@ export const RESONANCE_BREATHING_I18N: Record<'en' | 'ru' | 'es', RbCopy> = {
         kicker: '[ LA EVIDENCIA ]',
         title: 'Qué dice la evidencia',
         paras: [
-          'Respirar a la frecuencia de resonancia eleva de forma fiable la HRV durante la sesión y activa la rama parasimpática — el mecanismo más respaldado tras el biofeedback de HRV (Lehrer & Gevirtz, 2014). La respiración lenta y resonante también se vincula en la literatura más amplia con menor activación y mejor resiliencia al estrés con la práctica regular (Thayer et al., 2009; Porges, 2007).',
+          'Respirar a la frecuencia de resonancia eleva de forma fiable la HRV durante la sesión y activa la rama parasimpática — el mecanismo más respaldado tras el biofeedback de HRV (Lehrer & Gevirtz, 2014). Según numerosos estudios, la respiración lenta eleva la HRV de mediación vagal durante la práctica y poco después (Laborde et al., 2022).',
           'Como siempre, el efecto agudo es robusto; el tamaño y la durabilidad del cambio a largo plazo varían entre personas. Todo el detalle y los límites en la {{researchLink}}.',
         ],
       },

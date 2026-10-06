@@ -76,7 +76,7 @@ export const PART_SEO: Record<string, { title: string; description: string }> = 
   'i-attune': {
     title: 'Part 15: Neurosomatic Fusion | ONDA Life',
     description:
-      'Neurosomatic fusion and collective ecstasy. Oxytocin, mirror neurons, ventral vagal. From individual conductivity to collective resonance — the connected human.',
+      'Neurosomatic fusion and collective ecstasy. Oxytocin and mirror neurons, plus polyvagal ideas (a debated model). From individual conductivity to collective resonance — the connected human.',
   },
   'i-witness': {
     title: 'Part 16: The Observing Human | ONDA Life',
