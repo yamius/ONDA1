@@ -46,6 +46,6 @@ npm run build   # schema gate + budget + SEO + localized-English report
   - *still English* — a field was copied, not translated.
 - `.cache/localized-english.md` — strings that repeat on many pages usually mean a component isn't reading translations; one-offs are usually untranslated content or links to EN-only articles (expected).
 
-## Article release queue (since 2026-10-07)
+## Release queue (since 2026-10-07)
 
-Waiting translated articles go live through `scripts/article-release-queue.ts`: **10 articles per language every 2 days** from `QUEUE_START`. To publish a newly translated article, import it **without** `--publish` and append its slug to that language's list in `ARTICLE_RELEASE_QUEUE` (append only — positions set the dates). A slug goes live only when its body exists in `public/locales/<lang>/articles.json`. The older weekly drips (ES/RU dated lists after 2026-10-07, ZH 11-per-Monday) were folded into this queue. Dates are build-date gates: `.github/workflows/landing-scheduled-rebuild.yml` triggers a daily rebuild once the `VERCEL_DEPLOY_HOOK_LANDING` secret is set.
+Waiting translations go live through `scripts/article-release-queue.ts`: **ONE site-wide stream of 10 pages every 2 days** from `QUEUE_START`. Languages take turns (one page per language per turn); each language's list = its queued articles, then the queued review pages (`REVIEW_RELEASE_QUEUE`). To publish a newly translated article, import it **without** `--publish` and append its slug to that language's list in `ARTICLE_RELEASE_QUEUE` (append only; only slugs whose translation body exists). Old weekly drips no longer publish queued slugs. Dates are build-date gates; `.github/workflows/landing-scheduled-rebuild.yml` rebuilds daily (secret `VERCEL_DEPLOY_HOOK_LANDING`).

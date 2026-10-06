@@ -1,20 +1,20 @@
 /**
- * Article release queue (owner decision 2026-10-07): every language publishes its waiting
- * translated articles at a fixed cadence — {PER_BATCH} articles every {EVERY_DAYS} days per
- * language, from QUEUE_START. Replaces the older weekly drips (ES/RU dated lists after
- * 2026-10-07, ZH 11-per-Monday) for everything not yet live on 2026-10-07.
+ * Release queue for translated pages (owner decision 2026-10-07): ONE site-wide stream —
+ * {PER_BATCH} pages in total every {EVERY_DAYS} days, from QUEUE_START. Languages take turns
+ * (round-robin, one page per language per turn); each language's turn list is its queued
+ * articles followed by the queued review pages (same review list for every language).
  *
- * To queue a newly translated article: append its slug to the language's list (never reorder
- * or remove — positions set the dates). A slug goes live on its date only if the translation
- * body exists in public/locales/<lang>/articles.json (checked in prerender-routes.ts).
- *
- * NB: the gate is the BUILD date — pages appear when the site is rebuilt on or after the date.
+ * To queue a newly translated article: append its slug to that language's list (append only —
+ * positions set the dates). Only add slugs whose translation body already exists in
+ * public/locales/<lang>/articles.json. NB: the gate is the BUILD date; the scheduled
+ * rebuild (.github/workflows/landing-scheduled-rebuild.yml) runs daily.
  */
-import type { PublishEntry } from './locale-publish'
+import type { PublishEntry, PublishCollection } from './locale-publish'
 
 export const QUEUE_START = '2026-10-08'
 export const PER_BATCH = 10
 export const EVERY_DAYS = 2
+const LANG_ORDER = ['es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja']
 
 export const ARTICLE_RELEASE_QUEUE: Record<string, readonly string[]> = {
   es: [
@@ -428,17 +428,43 @@ export const ARTICLE_RELEASE_QUEUE: Record<string, readonly string[]> = {
   ],
 }
 
+/** Breathing-aid reviews, round-up and duels translated 2026-10-07 — queued in every language. */
+export const REVIEW_RELEASE_QUEUE: readonly { collection: 'reviews' | 'comparisons' | 'h2h'; slug: string }[] = [
+  { collection: 'reviews', slug: 'ayo-sleep-tape' },
+  { collection: 'reviews', slug: 'dream-recovery-mouth-tape' },
+  { collection: 'reviews', slug: 'hostage-tape' },
+  { collection: 'reviews', slug: 'nexcare-surgical-tape' },
+  { collection: 'reviews', slug: 'sleep-strips-by-sleepright' },
+  { collection: 'reviews', slug: 'somnifit-sleep-strips' },
+  { collection: 'reviews', slug: 'somnifix' },
+  { collection: 'reviews', slug: 'the-tape-co' },
+  { collection: 'reviews', slug: 'breathe-right-original' },
+  { collection: 'reviews', slug: 'intake-breathing' },
+  { collection: 'reviews', slug: 'mute-nasal-dilator' },
+  { collection: 'comparisons', slug: 'best-mouth-tape-nasal-breathing-2026' },
+  { collection: 'h2h', slug: 'hostage-tape-vs-dream-recovery-mouth-tape' },
+  { collection: 'h2h', slug: 'hostage-tape-vs-somnifix' },
+  { collection: 'h2h', slug: 'hostage-tape-vs-intake-breathing' },
+  { collection: 'h2h', slug: 'hostage-tape-vs-somnifix-vs-intake-breathing' },
+  { collection: 'h2h', slug: 'intake-breathing-vs-breathe-right-original' },
+  { collection: 'h2h', slug: 'intake-breathing-vs-mute-nasal-dilator' },
+]
+
 function addDays(iso: string, days: number): string {
   const d = new Date(`${iso}T00:00:00Z`)
   d.setUTCDate(d.getUTCDate() + days)
   return d.toISOString().slice(0, 10)
 }
 
-export const ARTICLE_QUEUE_ENTRIES: PublishEntry[] = Object.entries(ARTICLE_RELEASE_QUEUE).flatMap(([lang, slugs]) =>
-  slugs.map((slug, i) => ({
-    collection: 'articles' as const,
-    lang,
-    slug,
-    publishOn: addDays(QUEUE_START, Math.floor(i / PER_BATCH) * EVERY_DAYS),
-  })),
-)
+const streams: { lang: string; collection: PublishCollection; slug: string }[][] = LANG_ORDER.map((lang) => [
+  ...(ARTICLE_RELEASE_QUEUE[lang] ?? []).map((slug) => ({ lang, collection: 'articles' as PublishCollection, slug })),
+  ...REVIEW_RELEASE_QUEUE.map((r) => ({ lang, collection: r.collection as PublishCollection, slug: r.slug })),
+])
+
+/** Round-robin across languages → one ordered site-wide list → dates by position. */
+export const RELEASE_QUEUE_ENTRIES: PublishEntry[] = (() => {
+  const order: { lang: string; collection: PublishCollection; slug: string }[] = []
+  const longest = Math.max(...streams.map((s) => s.length))
+  for (let i = 0; i < longest; i++) for (const s of streams) if (s[i]) order.push(s[i])
+  return order.map((e, i) => ({ ...e, publishOn: addDays(QUEUE_START, Math.floor(i / PER_BATCH) * EVERY_DAYS) }))
+})()
