@@ -2102,27 +2102,33 @@ Proposals that consciousness depends on quantum processes in the brain, such as 
 
 ## In ONDA Life
 
-Part 5 "Quantum Biology (Coherence)" works on the "density of presence." From a biophotonics perspective, this is high coherence in the electromagnetic field of cells. Your presence becomes palpable to others on a physical level.`,
+Part 5 "Quantum Biology (Coherence)" works on the "density of presence." In ONDA's language, this is pictured as high coherence in the electromagnetic field of cells — a metaphor, not a measured effect. The idea that others can sense your presence on a physical level is an unestablished claim, not a finding.`,
   },
   {
     slug: 'coherence',
     title: 'Coherence',
     category: 'Core Concepts',
     shortDescription:
-      'Synchronized, ordered oscillation — in physics, biology, and the subjective sense of "density of presence."',
+      'Synchronized, ordered oscillation — in physics, in the heart rhythm during slow breathing, and, as an ONDA image, the sense of "density of presence."',
     content: `
 
-**Coherence** describes a state of synchronized, ordered oscillation — as opposed to random, chaotic fluctuation. In physics, coherent waves align in phase; in biology, coherent systems exhibit coordinated activity.
+**Coherence** describes a state of synchronized, ordered oscillation — as opposed to random, chaotic fluctuation. In physics, coherent waves align in phase; in physiology, the word usually means a measurable heart-rhythm pattern.
 
 ## Levels of Coherence
 
 - **Physical** — laser light, superconducting states
-- **Biological** — heart-brain coherence (HRV), cellular EM field alignment
-- **Psychological** — the subjective sense of "density of presence," integrated awareness
+- **Physiological** — during slow breathing near a person's resonance rate (around 6 breaths per minute), heart rate rises and falls with each breath in a smooth, regular wave, and breathing, heart rate and blood pressure oscillations fall into step. This pattern can be measured from the heart rhythm; see [How Breathing Changes HRV](/science/mechanisms/breathing-and-hrv).
+- **Psychological (an ONDA image)** — the subjective sense of "density of presence," integrated awareness
+
+## What is not established
+
+Popular material often goes further: that the heart and brain lock into phase, that cells align their electromagnetic fields, or that other people can sense your coherence through the heart's field. These are unestablished claims, not findings.
 
 ## In ONDA Life
 
-Part 5 works on "the density of presence" through "high coherence in the electromagnetic field of the cells." Coherent presence is palpable — others register your stability before you speak.`,
+During practice with an Apple Watch, the ONDA app shows a live coherence score (it is not available with the phone camera). It is ONDA's own measure of how regular the breath-linked heart rhythm is — a feedback metric, not a clinical biomarker.
+
+In ONDA's language, Part 5 works on "the density of presence" through "high coherence in the electromagnetic field of the cells" — an image for a calm, collected state, not a physical field that other people can detect.`,
   },
   {
     slug: 'biophotonics',
@@ -2152,7 +2158,7 @@ Biophotonics is measured with instruments that detect how tissue absorbs, scatte
 
 ## In ONDA Life
 
-Part 5 "Quantum Biology (Coherence)" references biophotonics: "high coherence in the electromagnetic field of the cells" makes your presence palpable. The body's coherent state may be detectable by others at a subtle level.`,
+Part 5 "Quantum Biology (Coherence)" borrows biophotonics as an image: "high coherence in the electromagnetic field of the cells" is ONDA's metaphor for presence. The idea that others can detect the body's coherent state is an unestablished claim; there is no evidence for it.`,
   },
   {
     slug: 'limbic-system',

@@ -11,7 +11,7 @@ const article: Article = {
   subtitle: 'Coherence Optimization — Scanning Your Personal Resonance Frequency and Locking In System Harmony',
   seoTitle: 'Resonant Frequency: Find Your HRV Peak | ONDA Life',
   description:
-    'Every person has a unique resonant breathing frequency (about 4.5–7 breaths per minute) where heart, brain, and lungs phase-lock into coherence and HRV peaks. A simple resonance scan — a breathing-rate sweep with an HRV monitor — finds yours.',
+    'Every person has a unique resonant breathing frequency (about 4.5–7 breaths per minute) where breathing, heart rate and blood pressure oscillations fall into step and HRV peaks. A simple resonance scan — a breathing-rate sweep with an HRV monitor — finds yours.',
   category: 'Biological Software',
   relatedSlugs: [
     'heart-rate-variability',
@@ -29,7 +29,7 @@ const article: Article = {
   imageAlt:
     'Crystalline heart with golden resonance wave entering the vagal nerve — COHERENCE_SCORE 99% and VAGAL_TUBE TUNED overlays. ONDA Life resonant frequency breathing protocol visualization.',
   imageTitle:
-    '[ COHERENCE_SCORE: 99% ] — Resonant frequency locked. Vagal Tube: tuned. Heart-brain phase alignment: active.',
+    '[ COHERENCE_SCORE: 99% ] — Resonant frequency locked. Vagal Tube: tuned. Breath–heart rhythm: in step.',
   imageCaption:
     '[ VAGAL_TUBE: TUNED ] — Resonance locked at 0.1 Hz. Coherence score: 99%. The system is in phase.',
   imagePlacement: 'header',
@@ -43,7 +43,7 @@ const article: Article = {
 
 > "In physics, resonance occurs when an external frequency matches the natural frequency of a system, causing a dramatic increase in amplitude. Your body is not just a collection of organs — it is a complex biological oscillator.
 >
-> Every individual has a unique Resonant Frequency — a specific breathing rhythm where the heart, brain, and lungs enter perfect phase alignment. In the ONDA framework, we call this System Coherence. When you breathe at this frequency, vascular resistance drops, and your HRV surges to its peak potential."
+> Every individual has a unique Resonant Frequency — a specific breathing rhythm at which breathing, heart rate and blood pressure oscillations fall into step. In the ONDA framework, we call this System Coherence — our name for the state, not a clinical term. When you breathe at this frequency, the baroreflex amplifies the breath-linked swings in heart rate, and your HRV rises toward its personal peak."
 
 ---
 
@@ -70,29 +70,29 @@ Three mechanisms activated by resonant frequency breathing:
 
 > **Action:** Breathe at your identified resonant frequency for a minimum of 5 minutes. Use 5.5 seconds in, 5.5 seconds out (about 5.5 breaths per minute) as a starting point if your frequency has not been scanned yet.
 
-**Logic:** Most people resonate near 0.1 Hz. Breathing at this frequency engages the baroreflex — your body's built-in regulator for blood pressure and autonomic balance. At resonance, the baroreceptors in your aorta and carotid arteries synchronize with the cardiac cycle, producing a high-amplitude oscillation that pushes [HRV](/glossary/heart-rate-variability) toward its personal peak. The signal propagates upward through the vagal afferents to the [brainstem](/glossary/brainstem), and is associated with shifts in [prefrontal](/glossary/prefrontal-cortex) activation and lower [amygdala](/glossary/amygdala) reactivity.
+**Logic:** Most people resonate near 0.1 Hz. Breathing at this frequency engages the baroreflex — your body's built-in blood-pressure regulator. At resonance, the breath-driven rise and fall of heart rate (respiratory sinus arrhythmia) and the baroreflex response fall into step, producing a high-amplitude oscillation that pushes [HRV](/glossary/heart-rate-variability) toward its personal peak. Baroreceptor signals reach the [brainstem](/glossary/brainstem) with every beat; whether resonance breathing also shifts [prefrontal](/glossary/prefrontal-cortex) activity or [amygdala](/glossary/amygdala) reactivity is a hypothesis, supported so far only by small correlational studies.
 
 ### Mechanism 2: Vagal Capture
 
 > **Action:** Maintain the resonant breathing rhythm for 10+ consecutive minutes without interruption. Avoid speaking, checking devices, or breaking the rhythm.
 
-**Logic:** At resonance, the breathing rhythm strongly engages the [Vagus Nerve](/glossary/vagus-nerve) — the channel that carries a "safety" signal toward the heart, gut, lungs, and other systems: the environment is calm, recovery can be prioritised. Studies of slow resonant breathing typically show vagal tone (measured via HRV) rising within a few minutes, though the exact timing varies from person to person — a pattern often discussed through the lens of [polyvagal theory](/glossary/polyvagal-theory).
+**Logic:** At resonance, the breathing rhythm engages vagally mediated control of the heart. In ONDA's language, the [Vagus Nerve](/glossary/vagus-nerve) is the channel that carries a "safety" signal toward the heart, gut, lungs, and other systems: the environment is calm, recovery can be prioritised — an image, not a measurement. Studies of slow resonant breathing typically show vagally mediated HRV rising within a few minutes, though the exact timing varies from person to person. Vagal tone cannot be measured directly; HRV measures such as RMSSD reflect vagally mediated changes in heart rate.
 
 ### Mechanism 3: Instant Reset
 
 > **Action:** Use 5-minute resonance sessions as a cognitive reset between high-load tasks — between meetings, before creative work, before sleep-onset.
 
-**Logic:** Five minutes of resonance breathing removes cognitive noise as effectively as a system reboot clears corrupted temporary files. The neural mechanism: resonance drives the thalamo-cortical loop (involving the [thalamus](/glossary/thalamus)) into [Alpha](/glossary/alpha-state)/Theta border activity (8–10 Hz), the optimal state for creative integration and consolidation. [Cortisol](/glossary/cortisol) drops. Working memory clears. The system is ready for the next load cycle.
+**Logic:** In ONDA's language, five minutes of resonance breathing works like a system reboot between load cycles — a metaphor, not a measured effect. Many people feel calmer and clearer afterwards. The evidence is more modest than the image: claims that resonance breathing drives the brain into a specific [Alpha](/glossary/alpha-state)/Theta state are not established, [cortisol](/glossary/cortisol) findings for breathing and meditation practices are mixed and depend on the context, and links between HRV and working memory or other thinking skills are small and correlational.
 
 ---
 
 ## What are the benefits of resonant frequency breathing?
 
-**Autonomic Balance:** The [Sympathetic](/glossary/sympathetic-nervous-system) and [Parasympathetic](/glossary/parasympathetic-nervous-system) branches stop competing and begin operating as a coordinated duet. Neither dominates — both contribute to the oscillation. This is the biological definition of [coherence](/glossary/coherence).
+**Breath–Heart Coordination:** At resonance, breathing, heart rate and blood pressure oscillate together at one slow rhythm, with the [parasympathetic](/glossary/parasympathetic-nervous-system) (vagal) brake on the heart doing most of the visible work and the [sympathetic](/glossary/sympathetic-nervous-system) branch still active in the background. The smooth, regular heart-rhythm wave this produces is what researchers call [coherence](/glossary/coherence): a measurable heart-rhythm pattern, not a definition of a healthy nervous system.
 
-**Neural Clarity:** The brain shifts into "relaxed alertness" — Alpha/Theta border state — ideal for deep creative work, complex problem-solving, and high-fidelity decision-making. The same state meditators spend years trying to access deliberately.
+**Calm Focus (an ONDA image):** Many people describe a state of "relaxed alertness" during and after a session and use it before creative work or hard decisions. In ONDA's language, this is a quieter line with less noise — a subjective experience, not a proven brain state, and not shown to equal what long-term meditators train for.
 
-**Energy Efficiency:** At resonance, cardiovascular and respiratory systems operate at maximum mechanical efficiency. Organs consume fewer metabolic resources while maintaining peak output. The system is running at full capacity on minimum power draw.
+**Energy Efficiency (an ONDA model):** In ONDA's model, resonance is the system running with less internal friction — breath and heartbeat working together instead of against each other. This is an image of the experience, not a measured drop in the energy your organs use.
 
 > [ ONDA_STATEMENT ]
 > "You aren't broken; you are just out of tune. Resonance is the key to returning your biology to its original, effortless frequency."
@@ -104,7 +104,7 @@ Three mechanisms activated by resonant frequency breathing:
 Resonant-frequency work needs a device that captures the breathing-driven HRV envelope without smoothing it away.
 
 - [Polar H10](/reviews/polar-h10) — ECG chest strap for app-agnostic resonance training
-- [Oura Ring 4](/reviews/oura-ring-4) — overnight coherence trends
+- [Oura Ring 4](/reviews/oura-ring-4) — overnight HRV (RMSSD) trends
 - [Whoop 5.0](/reviews/whoop-5-0) — daily recovery on continuous HRV
 
 [Best HRV Trackers (2026) →](/reviews/hrv-trackers)
@@ -122,7 +122,7 @@ Resonant-frequency work needs a device that captures the breathing-driven HRV en
     },
     {
       name: 'Instant Cognitive Reset',
-      text: 'Use 5-minute resonance breathing sessions between high-load tasks — between meetings, before creative work, or before sleep-onset — to clear cognitive noise and reset the system.',
+      text: 'Use 5-minute resonance breathing sessions between high-load tasks — between meetings, before creative work, or before sleep-onset — as a short calming break between load cycles.',
       protocolId: 'resonance-instant-reset',
     },
   ],

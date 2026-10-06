@@ -13,7 +13,7 @@ A widely repeated idea is that LF/HF shows the sympathovagal balance. The eviden
 
 - The paragraph is exempt from the banned list; the marker never reaches the published page.
 - Every marked paragraph is printed by the check as **MYTH-DEBUNK** and listed in the hand-off note on its own line ("Myth-debunk paragraphs"). Yakiv reviews each by hand.
-- Use rarely — one per page at most, and only for a genuine refutation.
+- Use rarely, and only for a genuine refutation. Several markers on one page are allowed when each refutes a different myth (owner decision 2026-10-06).
 
 ## Vagus and vagal tone
 

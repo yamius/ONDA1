@@ -11,7 +11,7 @@ const article: Article = {
   subtitle: 'Hardware Calibration — Hijacking the Cardiovascular Control Loop for Peak Operational Efficiency',
   seoTitle: '0.1 Hz Baroreflex Hack: HRV Coherence | ONDA Life',
   description:
-    'At around 0.1 Hz (about 5.5–6 breaths/min) your breathing syncs with Mayer Waves, hijacking the baroreflex loop to maximize HRV amplitude, lower blood pressure, and phase-lock the heart-brain coherence signal.',
+    'At around 0.1 Hz (about 5.5–6 breaths/min) your breathing syncs with Mayer Waves, hijacking the baroreflex loop: heart-rate oscillations follow the breath and reach their largest amplitude, HRV peaks, and blood pressure can drop.',
   category: 'Biological Software',
   relatedSlugs: [
     'heart-rate-variability',

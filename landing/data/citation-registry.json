@@ -1381,6 +1381,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.cortex.2022.07.008": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Does heart rate variability predict better executive functioning? A systematic review and meta-analysis",
+   "firstAuthor": "Magnon",
+   "authors": [
+    "Magnon",
+    "Vallet",
+    "Benson",
+    "Mermillod",
+    "Chausse",
+    "Lacroix",
+    "Bouillon-Minois",
+    "Dutheil"
+   ],
+   "year": 2022,
+   "journal": "Cortex",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1016/j.ctim.2005.01.003": {
    "kind": "doi",
    "valid": true,
@@ -2097,6 +2117,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.neubiorev.2020.12.012": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Systematic review and meta-analysis of the relationship between the heartbeat-evoked potential and interoception",
+   "firstAuthor": "Coll",
+   "authors": [
+    "Coll",
+    "Hobson",
+    "Bird",
+    "Murphy"
+   ],
+   "year": 2021,
+   "journal": "Neuroscience &amp; Biobehavioral Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1016/j.neubiorev.2022.104576": {
    "kind": "doi",
    "valid": true,
@@ -2152,6 +2188,20 @@
    "journal": "Neuroscience &amp; Biobehavioral Reviews",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.neuroimage.2019.04.081": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heartbeat-evoked cortical responses: Underlying mechanisms, functional roles, and methodological considerations",
+   "firstAuthor": "Park",
+   "authors": [
+    "Park",
+    "Blanke"
+   ],
+   "year": 2019,
+   "journal": "NeuroImage",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1016/j.neuroimage.2019.116375": {
    "kind": "doi",
@@ -3010,6 +3060,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/s1474-4422(18)30336-3": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Stroke–heart syndrome: clinical presentation and underlying mechanisms",
+   "firstAuthor": "Scheitz",
+   "authors": [
+    "Scheitz",
+    "Nolte",
+    "Doehner",
+    "Hachinski",
+    "Endres"
+   ],
+   "year": 2018,
+   "journal": "The Lancet Neurology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1016/s1566-0702(00)00215-0": {
    "kind": "doi",
    "valid": true,
@@ -3840,6 +3907,85 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1056/nejmoa1406761": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Clinical Features and Outcomes of Takotsubo (Stress) Cardiomyopathy",
+   "firstAuthor": "Templin",
+   "authors": [
+    "Templin",
+    "Ghadri",
+    "Diekmann",
+    "Napp",
+    "Bataiosu",
+    "Jaguszewski",
+    "Cammann",
+    "Sarcon",
+    "Geyer",
+    "Neumann",
+    "Seifert",
+    "Hellermann",
+    "Schwyzer",
+    "Eisenhardt",
+    "Jenewein",
+    "Franke",
+    "Katus",
+    "Burgdorf",
+    "Schunkert",
+    "Moeller",
+    "Thiele",
+    "Bauersachs",
+    "Tschöpe",
+    "Schultheiss",
+    "Laney",
+    "Rajan",
+    "Michels",
+    "Pfister",
+    "Ukena",
+    "Böhm",
+    "Erbel",
+    "Cuneo",
+    "Kuck",
+    "Jacobshagen",
+    "Hasenfuss",
+    "Karakas",
+    "Koenig",
+    "Rottbauer",
+    "Said",
+    "Braun-Dullaeus",
+    "Cuculi",
+    "Banning",
+    "Fischer",
+    "Vasankari",
+    "Airaksinen",
+    "Fijalkowski",
+    "Rynkiewicz",
+    "Pawlak",
+    "Opolski",
+    "Dworakowski",
+    "MacCarthy",
+    "Kaiser",
+    "Osswald",
+    "Galiuto",
+    "Crea",
+    "Dichtl",
+    "Franz",
+    "Empen",
+    "Felix",
+    "Delmas",
+    "Lairez",
+    "Erne",
+    "Bax",
+    "Ford",
+    "Ruschitzka",
+    "Prasad",
+    "Lüscher"
+   ],
+   "year": 2015,
+   "journal": "New England Journal of Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1056/nejmra041867": {
    "kind": "doi",
    "valid": true,
@@ -4092,6 +4238,27 @@
    "journal": "Proceedings of the National Academy of Sciences",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1073/pnas.1915629117": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart–brain interactions shape somatosensory perception and evoked potentials",
+   "firstAuthor": "Al",
+   "authors": [
+    "Al",
+    "Iliopoulos",
+    "Forschack",
+    "Nierhaus",
+    "Grund",
+    "Motyka",
+    "Gaebler",
+    "Nikulin",
+    "Villringer"
+   ],
+   "year": 2020,
+   "journal": "Proceedings of the National Academy of Sciences",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1080/02678370500297720": {
    "kind": "doi",
@@ -5000,6 +5167,19 @@
    "journal": "Experimental Physiology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1113/expphysiol.2007.041178": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Potential clinical relevance of the ‘little brain’ on the mammalian heart",
+   "firstAuthor": "Armour",
+   "authors": [
+    "Armour"
+   ],
+   "year": 2008,
+   "journal": "Experimental Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1113/expphysiol.2010.056259": {
    "kind": "doi",
@@ -6846,6 +7026,24 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1523/jneurosci.3507-13.2014": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Fear from the Heart: Sensitivity to Fear Stimuli Depends on Individual Heartbeats",
+   "firstAuthor": "Garfinkel",
+   "authors": [
+    "Garfinkel",
+    "Minati",
+    "Gray",
+    "Seth",
+    "Dolan",
+    "Critchley"
+   ],
+   "year": 2014,
+   "journal": "The Journal of Neuroscience",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.15288/jsa.1981.42.547": {
    "kind": "doi",
    "valid": true,
@@ -7661,6 +7859,19 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3389/fpubh.2017.00267": {
+   "kind": "doi",
+   "valid": true,
+   "title": "New Frontiers in Heart Rate Variability and Social Coherence Research: Techniques, Technologies, and Implications for Improving Group Dynamics and Outcomes",
+   "firstAuthor": "McCraty",
+   "authors": [
+    "McCraty"
+   ],
+   "year": 2017,
+   "journal": "Frontiers in Public Health",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.3390/biomedicines13030700": {
    "kind": "doi",
    "valid": true,
@@ -8110,6 +8321,20 @@
    "journal": "Annals of Internal Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.7453/gahmj.2014.073": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart Rate Variability: New Perspectives on Physiological Mechanisms, Assessment of Self-regulatory Capacity, and Health Risk",
+   "firstAuthor": "Mccraty",
+   "authors": [
+    "Mccraty",
+    "Shaffer"
+   ],
+   "year": 2015,
+   "journal": "Global Advances in Health and Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.7861/clinmed.2022-news-concept": {
    "kind": "doi",
@@ -9167,6 +9392,21 @@
    "doi": "10.1016/j.clinph.2007.07.028",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:17981929": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Potential clinical relevance of the 'little brain' on the mammalian heart.",
+   "firstAuthor": "Armour",
+   "authors": [
+    "Armour"
+   ],
+   "year": 2008,
+   "yearAlt": 2007,
+   "journal": "Exp Physiol",
+   "doi": "10.1113/expphysiol.2007.041178",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:18249107": {
    "kind": "pmid",
@@ -10647,6 +10887,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:24806682": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Fear from the heart: sensitivity to fear stimuli depends on individual heartbeats.",
+   "firstAuthor": "Garfinkel",
+   "authors": [
+    "Garfinkel",
+    "Minati",
+    "Gray",
+    "Seth",
+    "Dolan",
+    "Critchley"
+   ],
+   "year": 2014,
+   "journal": "J Neurosci",
+   "doi": "10.1523/JNEUROSCI.3507-13.2014",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:25035618": {
    "kind": "pmid",
    "valid": true,
@@ -10820,6 +11079,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:25694852": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart Rate Variability: New Perspectives on Physiological Mechanisms, Assessment of Self-regulatory Capacity, and Health risk.",
+   "firstAuthor": "McCraty",
+   "authors": [
+    "McCraty",
+    "Shaffer"
+   ],
+   "year": 2015,
+   "journal": "Glob Adv Health Med",
+   "doi": "10.7453/gahmj.2014.073",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:25818837": {
    "kind": "pmid",
    "valid": true,
@@ -10962,6 +11236,86 @@
    "doi": "10.1523/JNEUROSCI.1625-15.2015",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:26332547": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Clinical Features and Outcomes of Takotsubo (Stress) Cardiomyopathy.",
+   "firstAuthor": "Templin",
+   "authors": [
+    "Templin",
+    "Ghadri",
+    "Diekmann",
+    "Napp",
+    "Bataiosu",
+    "Jaguszewski",
+    "Cammann",
+    "Sarcon",
+    "Geyer",
+    "Neumann",
+    "Seifert",
+    "Hellermann",
+    "Schwyzer",
+    "Eisenhardt",
+    "Jenewein",
+    "Franke",
+    "Katus",
+    "Burgdorf",
+    "Schunkert",
+    "Moeller",
+    "Thiele",
+    "Bauersachs",
+    "Tschöpe",
+    "Schultheiss",
+    "Laney",
+    "Rajan",
+    "Michels",
+    "Pfister",
+    "Ukena",
+    "Böhm",
+    "Erbel",
+    "Cuneo",
+    "Kuck",
+    "Jacobshagen",
+    "Hasenfuss",
+    "Karakas",
+    "Koenig",
+    "Rottbauer",
+    "Said",
+    "Braun-Dullaeus",
+    "Cuculi",
+    "Banning",
+    "Fischer",
+    "Vasankari",
+    "Airaksinen",
+    "Fijalkowski",
+    "Rynkiewicz",
+    "Pawlak",
+    "Opolski",
+    "Dworakowski",
+    "MacCarthy",
+    "Kaiser",
+    "Osswald",
+    "Galiuto",
+    "Crea",
+    "Dichtl",
+    "Franz",
+    "Empen",
+    "Felix",
+    "Delmas",
+    "Lairez",
+    "Erne",
+    "Bax",
+    "Ford",
+    "Ruschitzka",
+    "Prasad",
+    "Lüscher"
+   ],
+   "year": 2015,
+   "journal": "N Engl J Med",
+   "doi": "10.1056/NEJMoa1406761",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:26441373": {
    "kind": "pmid",
@@ -11666,6 +12020,20 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:29075623": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "New Frontiers in Heart Rate Variability and Social Coherence Research: Techniques, Technologies, and Implications for Improving Group Dynamics and Outcomes.",
+   "firstAuthor": "McCraty",
+   "authors": [
+    "McCraty"
+   ],
+   "year": 2017,
+   "journal": "Front Public Health",
+   "doi": "10.3389/fpubh.2017.00267",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:29142296": {
    "kind": "pmid",
    "valid": true,
@@ -12072,6 +12440,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:30509695": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Stroke-heart syndrome: clinical presentation and underlying mechanisms.",
+   "firstAuthor": "Scheitz",
+   "authors": [
+    "Scheitz",
+    "Nolte",
+    "Doehner",
+    "Hachinski",
+    "Endres"
+   ],
+   "year": 2018,
+   "journal": "Lancet Neurol",
+   "doi": "10.1016/S1474-4422(18)30336-3",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:30513777": {
    "kind": "pmid",
    "valid": true,
@@ -12162,6 +12548,21 @@
    "doi": "10.1038/s41587-019-0040-3",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:31051293": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heartbeat-evoked cortical responses: Underlying mechanisms, functional roles, and methodological considerations.",
+   "firstAuthor": "Park",
+   "authors": [
+    "Park",
+    "Blanke"
+   ],
+   "year": 2019,
+   "journal": "Neuroimage",
+   "doi": "10.1016/j.neuroimage.2019.04.081",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:31139634": {
    "kind": "pmid",
@@ -12551,6 +12952,28 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:32341167": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart-brain interactions shape somatosensory perception and evoked potentials.",
+   "firstAuthor": "Al",
+   "authors": [
+    "Al",
+    "Iliopoulos",
+    "Forschack",
+    "Nierhaus",
+    "Grund",
+    "Motyka",
+    "Gaebler",
+    "Nikulin",
+    "Villringer"
+   ],
+   "year": 2020,
+   "journal": "Proc Natl Acad Sci U S A",
+   "doi": "10.1073/pnas.1915629117",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:32385728": {
    "kind": "pmid",
    "valid": true,
@@ -12652,6 +13075,18 @@
    "doi": "10.1080/17437199.2020.1760727",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:32690676": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Correction for Al et al., Heart-brain interactions shape somatosensory perception and evoked potentials.",
+   "firstAuthor": "",
+   "authors": [],
+   "year": 2020,
+   "journal": "Proc Natl Acad Sci U S A",
+   "doi": "10.1073/pnas.2012463117",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:32820538": {
    "kind": "pmid",
@@ -12874,6 +13309,23 @@
    "doi": "10.1002/smi.3025",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:33450331": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Systematic review and meta-analysis of the relationship between the heartbeat-evoked potential and interoception.",
+   "firstAuthor": "Coll",
+   "authors": [
+    "Coll",
+    "Hobson",
+    "Bird",
+    "Murphy"
+   ],
+   "year": 2021,
+   "journal": "Neurosci Biobehav Rev",
+   "doi": "10.1016/j.neubiorev.2020.12.012",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:33469422": {
    "kind": "pmid",
@@ -13326,6 +13778,27 @@
    "doi": "10.1038/s41380-022-01661-0",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:36030561": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Does heart rate variability predict better executive functioning? A systematic review and meta-analysis.",
+   "firstAuthor": "Magnon",
+   "authors": [
+    "Magnon",
+    "Vallet",
+    "Benson",
+    "Mermillod",
+    "Chausse",
+    "Lacroix",
+    "Bouillon-Minois",
+    "Dutheil"
+   ],
+   "year": 2022,
+   "journal": "Cortex",
+   "doi": "10.1016/j.cortex.2022.07.008",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:36146073": {
    "kind": "pmid",

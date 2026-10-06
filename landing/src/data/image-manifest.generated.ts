@@ -2440,6 +2440,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1920,
     "height": 820
   },
+  "/images/science/mechanisms-heart-brain-interaction.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/mechanisms-heart-brain-interaction.png": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/mechanisms-heart-brain-interaction.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/science/mechanisms-hrv-day-to-day.avif": {
     "width": 1916,
     "height": 821

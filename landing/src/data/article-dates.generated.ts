@@ -1014,15 +1014,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:quantum-biology": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-06T11:40:34.000Z"
   },
   "glossary:coherence": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-06T11:40:34.000Z"
   },
   "glossary:biophotonics": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-06T11:40:34.000Z"
   },
   "glossary:limbic-system": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1690,7 +1690,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/measurements": {
     "published": "2026-09-06T17:37:13+02:00",
-    "modified": "2026-10-06T11:56:43+02:00"
+    "modified": "2026-10-06T12:56:19+02:00"
   },
   "page:/how-it-works": {
     "published": "2026-09-06T17:37:13+02:00",

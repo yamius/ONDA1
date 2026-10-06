@@ -612,7 +612,7 @@ Note for Balban 2023 (cited above): the source carries `note: "authors include a
 | Wehrwein 2016 | Wehrwein EA, Orer HS, Barman SM. Overview of the anatomy, physiology, and pharmacology of the autonomic nervous system. *Compr Physiol* 2016;6(3):1239–1278 | review | DOI 10.1002/cphy.c150037 · PMID 27347892 | Definition; three divisions; homeostasis; controls all parts except skeletal muscle |
 | Gibbons 2019 | Gibbons CH. Basics of autonomic nervous system function. *Handb Clin Neurol* 2019;160:407–418 | review | DOI 10.1016/B978-0-444-64032-1.00027-8 · PMID 31277865 | "Fight or flight / rest and digest" as a simplification; enteric as third division |
 | Berntson 1991 | Berntson GG, Cacioppo JT, Quigley KS. Autonomic determinism. *Psychol Rev* 1991;98(4):459–487 | review (theory) | DOI 10.1037/0033-295X.98.4.459 · PMID 1660159 | Branches are not one continuum ("autonomic space") |
-| Shaffer 2014 | Shaffer F, McCraty R, Zerr CL. A healthy heart is not a metronome. *Front Psychol* 2014;5:1040 | review | DOI 10.3389/fpsyg.2014.01040 · PMID 25324790 | Sympathetic speeds/strengthens, vagus slows the heart; both branches simultaneously active (full-text quotes) |
+| Shaffer 2014 | Shaffer F, McCraty R, Zerr CL. A healthy heart is not a metronome. *Front Psychol* 2014;5:1040 | review | DOI 10.3389/fpsyg.2014.01040 · PMID 25324790 | Sympathetic speeds/strengthens, vagus slows the heart; both branches simultaneously active (full-text quotes). Note: co-author R. McCraty is affiliated with the HeartMath Institute, which sells coherence-training devices |
 | Reyes del Paso 2013 | Reyes del Paso GA et al. The utility of low frequency heart rate variability as an index of sympathetic cardiac tone. *Psychophysiology* 2013;50(5):477–487 | review + reanalysis | DOI 10.1111/psyp.12027 · PMID 23445494 | LF and LF/HF are not sympathetic indices; spectrum mainly parasympathetic |
 | Goldstein 2011 | Goldstein DS et al. Low-frequency power of heart rate variability is not a measure of cardiac sympathetic tone. *Exp Physiol* 2011;96(12):1255–1261 | review | DOI 10.1113/expphysiol.2010.056259 · PMID 21890520 | LF reflects baroreflex function |
 | Diaz & Taylor 2006 | Diaz T, Taylor JA. Probing the arterial baroreflex. *Clin Auton Res* 2006;16(4):256–261 | review | DOI 10.1007/s10286-006-0352-5 · PMID 16732466 | Baroreflex in beat-to-beat pressure control |
@@ -764,6 +764,25 @@ All checked against PubMed on 2026-10-06 (esummary, abstract, XML): no errata or
 | Natarajan 2020 | Natarajan A, Su HW, Heneghan C. NPJ Digit Med 2020;3(1):156 | observational | DOI 10.1038/s41746-020-00363-7 · PMID 33299095 | RR elevated during illness (Fitbit) — emerging, single study — note: COI: all authors funded by Fitbit |
 | Williams 2022 | Williams B. The National Early Warning Score: from concept to NHS implementation. Clin Med (Lond) 2022;22(6):499-505 | review | DOI 10.7861/clinmed.2022-news-concept · PMID 36427887 | NEWS/NEWS2 as the NHS early-warning standard (components not listed on the page) — note: PubMed has no COI field. Its affiliation line says the author chairs the RCP NEWS/NEWS2 group; this is in the source note as an affiliation, not as a COI |
 
+## Heart–brain interaction (mechanisms/heart-brain-interaction, approved 2026-10-06)
+
+| Short cite | Full reference | Type / class | DOI / PMID | Use for |
+|---|---|---|---|---|
+| Garfinkel 2014 | Garfinkel SN, Minati L, Gray MA, Seth AK, Dolan RJ, Critchley HD. J Neurosci 2014;34(19):6573-6582 | other (single lab study) / established for the baroreceptor background, emerging for the systole effect | DOI 10.1523/JNEUROSCI.3507-13.2014 · PMID 24806682 | Heart–brain page |
+| Park 2019 | Park HD, Blanke O. NeuroImage 2019;197:502-511 | systematic review / context-dependent | DOI 10.1016/j.neuroimage.2019.04.081 · PMID 31051293 | Heart–brain page |
+| Coll 2021 | Coll MP, Hobson H, Bird G, Murphy J. Neurosci Biobehav Rev 2021;122:190-200 | meta-analysis / emerging | DOI 10.1016/j.neubiorev.2020.12.012 · PMID 33450331 | Heart–brain page |
+| Al 2020 | Al E, Iliopoulos F, Forschack N, Nierhaus T, Grund M, Motyka P, Gaebler M, Nikulin VV, Villringer A. PNAS 2020;117(19):10575-10584 | other (single lab study) / emerging | DOI 10.1073/pnas.1915629117 · PMID 32341167 | Heart–brain page — note: **ERRATUM**: PNAS 2020;117(29):17448, PMID 32690676 (PDF only; content not checked, see open questions). COI: "The authors declare no competing interest." |
+| Thayer 2009 | Thayer JF, Lane RD. Neurosci Biobehav Rev 2009;33(2):81-88 | review (model) / debated | DOI 10.1016/j.neubiorev.2008.08.004 · PMID 18771686 | Heart–brain page |
+| Thayer 2009 | Thayer JF, Hansen AL, Saus-Rose E, Johnsen BH. Ann Behav Med 2009;37(2):141-153 | review / debated | DOI 10.1007/s12160-009-9101-z · PMID 19424767 | Heart–brain page |
+| Holzman 2017 | Holzman JB, Bridgett DJ. Neurosci Biobehav Rev 2017;74(Pt A):233-255 | meta-analysis / context-dependent | DOI 10.1016/j.neubiorev.2016.12.032 · PMID 28057463 | Heart–brain page |
+| Magnon 2022 | Magnon V, Vallet GT, Benson A, Mermillod M, Chausse P, Lacroix A, Bouillon-Minois JB, Dutheil F. Cortex 2022;155:218-236 | meta-analysis / context-dependent | DOI 10.1016/j.cortex.2022.07.008 · PMID 36030561 | Heart–brain page — note: COI: "no competing interests" |
+| Forte 2019 | Forte G, Favieri F, Casagrande M. Front Neurosci 2019;13:710 | systematic review / context-dependent | DOI 10.3389/fnins.2019.00710 · PMID 31354419 | Heart–brain page |
+| Armour 2008 | Armour JA. Exp Physiol 2008;93(2):165-176 | review (largely animal data) / established anatomy, debated function | DOI 10.1113/expphysiol.2007.041178 · PMID 17981929 | Heart–brain page |
+| McCraty 2015 | McCraty R, Shaffer F. Glob Adv Health Med 2015;4(1):46-61 | review / debated | DOI 10.7453/gahmj.2014.073 · PMID 25694852 | Heart–brain page — note: **COI via affiliation**: McCraty = "Institute of HeartMath, Boulder Creek". There is no PubMed COI field. The note is in the source |
+| McCraty 2017 | McCraty R. Front Public Health 2017;5:267 | review / unknown | DOI 10.3389/fpubh.2017.00267 · PMID 29075623 | Heart–brain page — note: **COI via affiliation**: "Research, HeartMath Institute". No PubMed COI field. The note is in the source |
+| Templin 2015 | Templin C, Ghadri JR, Diekmann J, et al. (51 authors in total; full list in PubMed esummary) N Engl J Med 2015;373(10):929-938 | observational (registry) / established | DOI 10.1056/NEJMoa1406761 · PMID 26332547 | Heart–brain page |
+| Scheitz 2018 | Scheitz JF, Nolte CH, Doehner W, Hachinski V, Endres M. Lancet Neurol 2018;17(12):1109-1120 | review / established | DOI 10.1016/S1474-4422(18)30336-3 · PMID 30509695 | Heart–brain page |
+
 ## Official documents (type `official`: URL, no DOI — device and regulatory facts only)
 
 | Source | URL | Use for |
@@ -798,7 +817,7 @@ A widely repeated idea is that LF/HF shows the sympathovagal balance. The eviden
 
 - The paragraph is exempt from the banned list; the marker never reaches the published page.
 - Every marked paragraph is printed by the check as **MYTH-DEBUNK** and listed in the hand-off note on its own line ("Myth-debunk paragraphs"). Yakiv reviews each by hand.
-- Use rarely — one per page at most, and only for a genuine refutation.
+- Use rarely, and only for a genuine refutation. Several markers on one page are allowed when each refutes a different myth (owner decision 2026-10-06).
 
 ## Vagus and vagal tone
 
@@ -877,6 +896,7 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - `concepts/interoception` — 2026-10-05 (phase 2, roadmap #11; written by Claude Code under the same pack). Definition, accuracy/sensibility/awareness, measurement and its validity problems, insula and predictive models (labelled as models), emotion theories (contested), mental-health associations, training evidence. New fact onda.practice.livePulse. Heart–brain interaction is left to `mechanisms/heart-brain-interaction`.
 - `evidence/meditation-autonomic-nervous-system` — 2026-10-06 (phase 2; written by Claude Code under the same pack). Evidence synthesis of meditation and autonomic signals — HRV during a session and after a course, resting heart rate, blood pressure (AHA statements: Brook et al. 2013, Levine et al. 2017), cortisol, sleep with autonomic measures — by practice type, with the slow-breathing confound and session-vs-trait limits. New fact study.pascoe2017.trials. Brain changes are left to the meditation cluster articles.
 - `measurements/respiratory-rate` — 2026-10-06 (phase 2; written by Claude Code under the same pack). Canonical metric page for resting and sleeping respiratory rate: norms via breath.adult.normal, measurement (manual counting errors, ECG/PPG estimation, thin wearable validation), factors, clinical deterioration sign (early-warning score components not listed), nightly trend in wearable studies (emerging, single studies, COI noted), link to RSA/HRV, when to see a doctor. No new facts.
+- `mechanisms/heart-brain-interaction` — 2026-10-06 (phase 2, last page of the plan; written by Claude Code under the same pack). Two-way heart–brain signalling, heartbeat-evoked potentials and cardiac-cycle effects (preliminary), neurovisceral integration as a MODEL with weak correlations (no coefficients), intrinsic cardiac nervous system and heart-field claims as two myth-debunk paragraphs, HeartMath COI notes, takotsubo and stroke–heart syndrome. No new facts.
 
 **The full plan — remaining MVP order, phase 2 (incl. `concepts/interpreting-hrv`, `mechanisms/hrv-day-to-day`) and the methodology page — is in [ONDA_science_roadmap.md](#ONDA_science_roadmap).** Pages listed there may go in `relatedPlanned`; pages not in the roadmap may not.
 
