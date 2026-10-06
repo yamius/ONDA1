@@ -574,7 +574,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "resonant-frequency-system-coherence": {
     "published": "2026-03-24T13:00:58Z",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-06T15:53:15+02:00"
   },
   "respiratory-rate-hidden-signal": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -730,7 +730,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-10-06T15:15:46+02:00"
+    "modified": "2026-10-06T15:53:15+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1018,7 +1018,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:coherence": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T13:46:46.000Z"
+    "modified": "2026-10-06T13:53:15.000Z"
   },
   "glossary:biophotonics": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-06T15:53:15+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1718,7 +1718,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/hrv-vs-coherence": {
     "published": "2026-09-07T20:12:03+02:00",
-    "modified": "2026-10-05T10:55:46+02:00"
+    "modified": "2026-10-06T15:53:15+02:00"
   },
   "page:/apple-watch-hrv-biofeedback": {
     "published": "2026-09-07T20:12:03+02:00",

@@ -88,7 +88,7 @@ Three mechanisms activated by [resonant frequency](/science/mechanisms/breathing
 
 ## What are the benefits of resonant frequency breathing?
 
-**Breath–Heart Coordination:** At resonance, breathing, heart rate and blood pressure oscillate together at one slow rhythm, with the [parasympathetic](/glossary/parasympathetic-nervous-system) (vagal) brake on the heart doing most of the visible work and the [sympathetic](/glossary/sympathetic-nervous-system) branch still active in the background. The smooth, regular heart-rhythm wave this produces is what researchers call [coherence](/glossary/coherence): a measurable heart-rhythm pattern, not a definition of a healthy nervous system.
+**Breath–Heart Coordination:** At resonance, breathing, heart rate and blood pressure oscillate together at one slow rhythm, with the [parasympathetic](/glossary/parasympathetic-nervous-system) (vagal) brake on the heart doing most of the visible work and the [sympathetic](/glossary/sympathetic-nervous-system) branch still active in the background. The smooth, regular heart-rhythm wave this produces is what researchers call [coherence](/science/concepts/coherence): a measurable heart-rhythm pattern, not a definition of a healthy nervous system.
 
 **Calm Focus (an ONDA image):** Many people describe a state of "relaxed alertness" during and after a session and use it before creative work or hard decisions. In ONDA's language, this is a quieter line with less noise — a subjective experience, not a proven brain state, and not shown to equal what long-term meditators train for.
 

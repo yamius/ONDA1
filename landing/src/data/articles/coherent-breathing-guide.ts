@@ -39,7 +39,7 @@ const article: Article = {
 
 ## Section 1: Why breathe at about 6 breaths a minute?
 
-Around six breaths per minute (0.1 Hz) is the **[resonance frequency](/science/mechanisms/breathing-and-hrv)** of the cardiovascular system. Breathe there and you maximally stimulate the baroreflex — the loop that buffers blood pressure — driving large, coherent heart-rate oscillations and shifting the balance toward the [parasympathetic](/glossary/parasympathetic-nervous-system) branch via the [vagus nerve](/glossary/vagus-nerve) (Lehrer 2003; Lehrer & Gevirtz 2014). This is the engine of [HRV biofeedback](/science/evidence/hrv-biofeedback).
+Around six breaths per minute (0.1 Hz) is the **[resonance frequency](/science/mechanisms/breathing-and-hrv)** of the cardiovascular system. Breathe there and you maximally stimulate the baroreflex — the loop that buffers blood pressure — driving large, [coherent heart-rate oscillations](/science/concepts/coherence) and shifting the balance toward the [parasympathetic](/glossary/parasympathetic-nervous-system) branch via the [vagus nerve](/glossary/vagus-nerve) (Lehrer 2003; Lehrer & Gevirtz 2014). This is the engine of [HRV biofeedback](/science/evidence/hrv-biofeedback).
 
 It isn’t exactly six for everyone — personal resonance sits at about 4.5–7 breaths per minute. The [Resonance Breathing Finder](/tools/resonance-breathing) helps you home in on yours; if you just want a paced circle, the [Breathing Pacer](/tools/breathing) has a coherent preset.
 
