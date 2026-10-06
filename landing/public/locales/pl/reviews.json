@@ -1232,7 +1232,7 @@
       "productType": "Duży panel LED czerwone światło + NIR (Australia / USA)"
     },
     "breathwrk": {
-      "verdict": "Najlepsza biblioteka ćwiczeń oddechowych ogólnie — największy katalog sesji, opisy oparte na nauce, pełny zakres technik. Wzorzec kategorii dla uporządkowanej codziennej praktyki.",
+      "verdict": "Najlepsza biblioteka ćwiczeń oddechowych ogólnie — największy katalog sesji, opisy czerpiące z nauki, poparte jednym opublikowanym badaniem nad cyklicznym westchnieniem, pełny zakres technik. Wzorzec kategorii dla uporządkowanej codziennej praktyki.",
       "productType": "Aplikacja z prowadzonymi ćwiczeniami oddechowymi i uporządkowaną biblioteką"
     },
     "othership": {
@@ -1583,7 +1583,7 @@
       "picks": {
         "breathwrk": {
           "award": "Najlepsza ogólnie",
-          "takeaway": "Największa uporządkowana biblioteka + najszerszy zakres technik + opisy oparte na nauce w najlepszej cenie w segmencie premium."
+          "takeaway": "Największa uporządkowana biblioteka + najszerszy zakres technik + opisy czerpiące z nauki, poparte jednym opublikowanym badaniem nad cyklicznym westchnieniem w najlepszej cenie w segmencie premium."
         },
         "othership": {
           "award": "Najlepsze doświadczenie premium",
@@ -2361,7 +2361,7 @@
         },
         {
           "name": "Oparcie w badaniach",
-          "note": "Breathwrk zawiera techniki z danymi z badań klinicznych, np. cykliczne westchnienie (Balban 2023). WHM łączy się z badaniem metody na Uniwersytecie Radboud (Kox 2014). Othership opiera się na doświadczeniu i rytuale. Breathwrk i WHM na remis; Othership słabiej."
+          "note": "Pod względem dowodów Wim Hof Method wypada lepiej: sama metoda ma opublikowane badania, m.in. badanie Uniwersytetu Radboud (Kox 2014). Breathwrk powołuje się na jedno opublikowane badanie — nad cyklicznym westchnieniem (Balban 2023). Othership opiera się na doświadczeniu i rytuale."
         },
         {
           "name": "Produkcja / UX",

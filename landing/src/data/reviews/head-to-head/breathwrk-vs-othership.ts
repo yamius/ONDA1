@@ -19,7 +19,7 @@ const breathwrkVsOthership: HeadToHead = {
   axes: [
     { name: 'Library size', winner: 'a', note: 'Breathwrk: hundreds of structured sessions across goals and techniques. Othership: curated smaller library with higher per-session production. Breathwrk wins on raw breadth.' },
     { name: 'Technique coverage', winner: 'a', note: 'Breathwrk: full coverage (box, 4-7-8, Wim Hof, Tummo, cyclic sighing, Buteyko, coherent breathing). Othership: leans into rhythmic music breathwork.' },
-    { name: 'Evidence grounding', winner: 'a', note: 'Breathwrk: science-grounded copy citing Stanford cyclic-sighing, polyvagal, Huberman. Othership: ceremony framing dominates over peer-reviewed citation.' },
+    { name: 'Evidence grounding', winner: 'a', note: 'Breathwrk: cites the peer-reviewed Stanford cyclic-sighing trial (its polyvagal and Huberman references earn no evidence credit). Othership: ceremony framing dominates over peer-reviewed citation.' },
     { name: 'Production / UX', winner: 'b', note: 'Othership: cinematic visuals, immersive audio, live community classes. Breathwrk: clean functional UI without cinematic ambitions.' },
     { name: 'Community', winner: 'b', note: 'Othership: live daily classes, brand crossover from Toronto sauna spaces. Breathwrk: solo practice — no community layer.' },
     { name: 'Apple Watch / biofeedback', winner: 'tie', note: 'Both offer Apple Watch and Apple Health integration; neither closes a true HRV-driven biofeedback loop. Tie on this axis.' },
@@ -36,7 +36,7 @@ const breathwrkVsOthership: HeadToHead = {
     },
     {
       q: 'Which has better evidence base?',
-      a: 'Breathwrk — science-grounded copy citing Stanford cyclic-sighing research, polyvagal theory and Huberman lab protocols. Othership leans on ceremony framing without comparable peer-reviewed citation.',
+      a: 'Breathwrk — its copy cites the peer-reviewed Stanford cyclic-sighing trial; it also cites polyvagal theory, a debated model, and Huberman lab protocols, which we do not count as evidence. Othership leans on ceremony framing without comparable peer-reviewed citation.',
     },
     {
       q: 'Can I use both?',

@@ -22,7 +22,7 @@ const breathwrkVsOthershipVsWhm: HeadToHead = {
   axes: [
     { name: 'Library size', winner: 'a', note: 'Breathwrk: 100+ exercises plus daily classes and programmes. Othership: 500+ on-demand sessions, but curated around one music-driven style. WHM: structured rounds at varying levels — narrow by design.' },
     { name: 'Technique coverage', winner: 'a', note: 'Breathwrk: box, 4-7-8, cyclic sighing, coherent breathing, Wim Hof-style rounds and more. Othership: leans into rhythmic, music-led sessions. WHM: one method.' },
-    { name: 'Evidence grounding', winner: 'tie', note: 'Breathwrk includes techniques with trial evidence, such as cyclic sighing (Balban 2023). WHM is linked to the Radboud University study of the method (Kox 2014). Othership leans on experience and ceremony framing. Breathwrk and WHM tied; Othership weaker.' },
+    { name: 'Evidence grounding', winner: 'c', note: 'Wim Hof Method scores higher on evidence: the method itself has published research, including the Radboud University study (Kox 2014). Breathwrk cites one published study, on cyclic sighing (Balban 2023). Othership leans on experience and ceremony framing.' },
     { name: 'Production / UX', winner: 'b', note: 'Othership: cinematic, music-driven sessions. Breathwrk and WHM: cleaner, more functional apps.' },
     { name: 'Community', winner: 'b', note: 'Othership: live classes are central to the experience. Breathwrk and WHM: mostly solo practice.' },
     { name: 'Cold-exposure integration', winner: 'c', note: 'WHM: cold-exposure guidance built into the method. Breathwrk and Othership: breath only.' },

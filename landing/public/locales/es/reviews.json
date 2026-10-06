@@ -2124,7 +2124,7 @@
       "productType": "Dispositivo de terapia LED de luz roja + NIR de panel grande (Australia / EE. UU.)"
     },
     "breathwrk": {
-      "verdict": "La mejor biblioteca de respiración en general: el mayor catálogo de sesiones, textos basados en la ciencia y cobertura completa de técnicas. La referencia de la categoría para la práctica diaria estructurada.",
+      "verdict": "La mejor biblioteca de respiración en general: el mayor catálogo de sesiones, textos informados por la ciencia, respaldados por un estudio publicado sobre el suspiro cíclico y cobertura completa de técnicas. La referencia de la categoría para la práctica diaria estructurada.",
       "productType": "App de respiración guiada con biblioteca estructurada"
     },
     "othership": {
@@ -2636,7 +2636,7 @@
       "picks": {
         "breathwrk": {
           "award": "Mejor en general",
-          "takeaway": "La biblioteca estructurada más grande + la cobertura de técnicas más amplia + textos basados en la ciencia al mejor precio del nivel premium."
+          "takeaway": "La biblioteca estructurada más grande + la cobertura de técnicas más amplia + textos informados por la ciencia, respaldados por un estudio publicado sobre el suspiro cíclico al mejor precio del nivel premium."
         },
         "othership": {
           "award": "Mejor experiencia premium",
@@ -3506,7 +3506,7 @@
         },
         {
           "name": "Base científica",
-          "note": "Breathwrk incluye técnicas con evidencia de ensayos, como el suspiro cíclico (Balban 2023). WHM está vinculada al estudio de la Universidad de Radboud sobre el método (Kox 2014). Othership se apoya en la experiencia y en un enfoque ceremonial. Breathwrk y WHM empatan; Othership, más débil."
+          "note": "En evidencia, Wim Hof Method puntúa más alto: el propio método cuenta con investigación publicada, como el estudio de la Universidad de Radboud (Kox 2014). Breathwrk cita un único estudio publicado, sobre el suspiro cíclico (Balban 2023). Othership se apoya en la experiencia y en un enfoque ceremonial."
         },
         {
           "name": "Producción / UX",
@@ -3567,7 +3567,7 @@
         },
         {
           "name": "Base de evidencia",
-          "note": "Breathwrk: textos con base científica que citan el suspiro cíclico de Stanford, la teoría polivagal y a Huberman. Othership: el encuadre ceremonial predomina sobre la cita revisada por pares."
+          "note": "Breathwrk: cita el ensayo revisado por pares de Stanford sobre el suspiro cíclico (sus referencias a la teoría polivagal y a Huberman no suman como evidencia). Othership: el encuadre ceremonial predomina sobre la cita revisada por pares."
         },
         {
           "name": "Producción / UX",
@@ -3597,7 +3597,7 @@
         },
         {
           "q": "¿Cuál tiene mejor base de evidencia?",
-          "a": "Breathwrk: textos con base científica que citan la investigación del suspiro cíclico de Stanford, la teoría polivagal y los protocolos del laboratorio de Huberman. Othership se apoya en el encuadre ceremonial sin una cita revisada por pares comparable."
+          "a": "Breathwrk: sus textos citan el ensayo revisado por pares de Stanford sobre el suspiro cíclico; también citan la teoría polivagal, un modelo debatido, y los protocolos del laboratorio de Huberman, que no contamos como evidencia. Othership se apoya en el encuadre ceremonial sin una cita revisada por pares comparable."
         },
         {
           "q": "¿Puedo usar ambas?",
@@ -3650,7 +3650,7 @@
         },
         {
           "q": "¿Cuál tiene mejor base de evidencia?",
-          "a": "Breathwrk: cita revisada por pares del suspiro cíclico de Stanford, la teoría polivagal y los protocolos del laboratorio de Huberman. SOMA se apoya en los estudios publicados de Wim Hof y en la fisiología general de la respiración, con encuadre ceremonial."
+          "a": "Breathwrk: cita el ensayo revisado por pares de Stanford sobre el suspiro cíclico; sus referencias a la teoría polivagal (un modelo debatido) y a Huberman no suman como evidencia. SOMA se apoya en los estudios publicados de Wim Hof y en la fisiología general de la respiración, con encuadre ceremonial."
         },
         {
           "q": "¿Puedo convertirme en facilitador certificado por SOMA?",

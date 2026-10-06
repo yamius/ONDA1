@@ -35,7 +35,7 @@ const breathwrkVsSoma: HeadToHead = {
     },
     {
       q: 'Which has better evidence base?',
-      a: 'Breathwrk — peer-reviewed citation of Stanford cyclic-sighing, polyvagal theory and Huberman lab protocols. SOMA leans on Wim Hof published studies and general breath physiology with ceremony framing.',
+      a: 'Breathwrk — cites the peer-reviewed Stanford cyclic-sighing trial; its polyvagal-theory (a debated model) and Huberman references earn no evidence credit. SOMA leans on Wim Hof published studies and general breath physiology with ceremony framing.',
     },
     {
       q: 'Can I become a SOMA-certified facilitator?',

@@ -1232,7 +1232,7 @@
       "productType": "Aparelho de terapia de LED de luz vermelha + NIR de painel grande (Austrália / EUA)"
     },
     "breathwrk": {
-      "verdict": "Melhor biblioteca de breathwork no geral — maior catálogo de sessões, textos baseados em ciência, cobertura completa de técnicas. A referência da categoria para a prática diária estruturada.",
+      "verdict": "Melhor biblioteca de breathwork no geral — maior catálogo de sessões, textos informados pela ciência, apoiados em um estudo publicado sobre o suspiro cíclico, cobertura completa de técnicas. A referência da categoria para a prática diária estruturada.",
       "productType": "App de breathwork guiado com biblioteca estruturada"
     },
     "othership": {
@@ -1583,7 +1583,7 @@
       "picks": {
         "breathwrk": {
           "award": "Melhor no geral",
-          "takeaway": "Maior biblioteca estruturada + cobertura de técnicas mais ampla + textos baseados em ciência, pelo melhor preço da categoria premium."
+          "takeaway": "Maior biblioteca estruturada + cobertura de técnicas mais ampla + textos informados pela ciência, apoiados em um estudo publicado sobre o suspiro cíclico, pelo melhor preço da categoria premium."
         },
         "othership": {
           "award": "Melhor experiência premium",
@@ -2361,7 +2361,7 @@
         },
         {
           "name": "Base científica",
-          "note": "O Breathwrk inclui técnicas com evidência de ensaios, como o suspiro cíclico (Balban 2023). O WHM está ligado ao estudo da Universidade Radboud sobre o método (Kox 2014). O Othership se apoia na experiência e numa abordagem cerimonial. Breathwrk e WHM empatam; Othership é mais fraco."
+          "note": "Em evidência, o Wim Hof Method pontua mais alto: o próprio método tem pesquisa publicada, como o estudo da Universidade Radboud (Kox 2014). O Breathwrk cita um único estudo publicado, sobre o suspiro cíclico (Balban 2023). O Othership se apoia na experiência e numa abordagem cerimonial."
         },
         {
           "name": "Produção / UX",

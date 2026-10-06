@@ -12,7 +12,7 @@ const bestBreathworkApps2026: Comparison = {
     {
       reviewSlug: 'breathwrk',
       award: 'Best overall',
-      takeaway: 'Largest structured library + broadest technique coverage + science-grounded copy at the best premium-tier price.',
+      takeaway: 'Largest structured library + broadest technique coverage + science-informed copy, backed by one published study on cyclic sighing, at the best premium-tier price.',
     },
     {
       reviewSlug: 'othership',

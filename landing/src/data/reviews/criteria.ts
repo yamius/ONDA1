@@ -601,7 +601,7 @@ const BREATHWORK_APP_CRITERIA: Criterion[] = [
     label: 'Evidence grounding',
     weight: 0.15,
     description:
-      'How far the app cites and follows published research (Stanford cyclic-sighing, polyvagal, Buteyko CO₂ tolerance) rather than vague wellness claims, and whether instructor credentials are real.',
+      'How far the app cites and follows published research (e.g. the Stanford cyclic-sighing trial, Buteyko CO₂-tolerance work) rather than vague wellness claims, and whether instructor credentials are real. Citing a debated model such as polyvagal theory, or a podcast protocol, does not count as peer-reviewed evidence.',
   },
   {
     id: 'app-experience',

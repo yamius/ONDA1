@@ -12,11 +12,11 @@ const othership: ToolReview = {
     'Best premium breathwork experience — music-driven cinematic sessions, live community classes, polished UX. Highest sub price in the category, justified by production value.',
   summary:
     'Othership is the premium breathwork brand crossover from physical sauna/cold-plunge spaces in Toronto. The app delivers cinematic music-driven journeys (down-regulation, up-regulation, ceremony) with live community classes scheduled daily. Production value is the highest in the category — voiceovers, soundscapes and session arcs feel curated, not generated. $129.99/year is the highest sub price; the music + community thesis justifies it for the right user.',
-  overallScore: 8.3,
+  overallScore: 8.2,
   scores: [
     { criterionId: 'session-library', score: 8.5, note: 'Curated library organised around down-regulate (calm/sleep), up-regulate (energy/focus), ceremony (longer 30–60 min journeys). Smaller than Breathwrk in raw count but higher production value per session.' },
     { criterionId: 'technique-coverage', score: 7.5, note: 'Full breathwork modalities — box, Wim Hof, holotropic, cyclic sighing — but leans into rhythmic-music breathwork. Less Buteyko / clinical-research focus than Breathwrk.' },
-    { criterionId: 'evidence-grounding', score: 7.5, note: 'Cites Stanford cyclic-sighing and polyvagal work but leans more on lived-experience and ceremony framing than peer-reviewed citations.' },
+    { criterionId: 'evidence-grounding', score: 7.0, note: 'Cites the Stanford cyclic-sighing trial and polyvagal theory (a debated model, so no evidence credit), but leans more on lived-experience and ceremony framing than peer-reviewed citations.' },
     { criterionId: 'app-experience', score: 9.0, note: 'Best UX in category — cinematic visuals, immersive audio, low session-start friction. Live class layer is unique in breathwork apps.' },
     { criterionId: 'biofeedback', score: 6.0, note: 'Apple Health integration; no HRV-driven adaptation. Community / live classes substitute for measurement-driven feedback.' },
     { criterionId: 'value', score: 7.0, note: '$129.99/year (or $17.99/month) — highest premium-tier price in breathwork apps. Justified for users who value production and community; expensive for users who only want guided technique.' },

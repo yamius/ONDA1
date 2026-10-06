@@ -730,7 +730,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-10-06T15:53:15+02:00"
+    "modified": "2026-10-06T17:10:58+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -918,11 +918,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:polyvagal-theory": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T14:59:05.000Z"
+    "modified": "2026-10-06T15:10:58.000Z"
   },
   "glossary:neuroception": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T14:59:05.000Z"
+    "modified": "2026-10-06T15:10:58.000Z"
   },
   "glossary:neuroplasticity": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -950,15 +950,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:motor-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T14:59:05.000Z"
+    "modified": "2026-10-06T15:10:58.000Z"
   },
   "glossary:neurobiology": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T14:59:05.000Z"
+    "modified": "2026-10-06T15:10:58.000Z"
   },
   "glossary:cognitive-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T14:59:05.000Z"
+    "modified": "2026-10-06T15:10:58.000Z"
   },
   "glossary:neuroendocrinology": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -990,7 +990,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:thymus": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T14:59:05.000Z"
+    "modified": "2026-10-06T15:10:58.000Z"
   },
   "glossary:basal-ganglia": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1518,7 +1518,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:co-regulation": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T14:59:05.000Z"
+    "modified": "2026-10-06T15:10:58.000Z"
   },
   "glossary:tensegrity": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-06T15:53:15+02:00"
+    "modified": "2026-10-06T17:10:58+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1630,7 +1630,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",
-    "modified": "2026-10-05T23:51:56+02:00"
+    "modified": "2026-10-06T17:10:58+02:00"
   },
   "page:/articles/topic/:topic": {
     "published": "2026-09-24T00:24:48+02:00",
@@ -1638,11 +1638,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/part/:slug": {
     "published": "2026-02-24T15:51:07+01:00",
-    "modified": "2026-10-05T23:51:56+02:00"
+    "modified": "2026-10-06T17:10:58+02:00"
   },
   "page:/level/:number": {
     "published": "2026-02-26T01:46:23+01:00",
-    "modified": "2026-10-05T23:51:56+02:00"
+    "modified": "2026-10-06T17:10:58+02:00"
   },
   "page:/inner-spectrum": {
     "published": "2026-03-14T01:25:20Z",
@@ -1714,7 +1714,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/resonance-breathing": {
     "published": "2026-09-06T18:43:00+02:00",
-    "modified": "2026-10-05T23:51:56+02:00"
+    "modified": "2026-10-06T17:10:58+02:00"
   },
   "page:/hrv-vs-coherence": {
     "published": "2026-09-07T20:12:03+02:00",
