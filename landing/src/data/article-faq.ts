@@ -2154,27 +2154,27 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Is nose breathing better than mouth breathing?",
       answer:
-        "For rest, focus and slow breathing, yes — nasal breathing supports a calmer autonomic state and steadier attention, and Japanese research found measurable autonomic differences favoring it. Mouth breathing is appropriate mainly during hard exertion.",
+        "For rest, focus and slow breathing, it is the sensible default — the nose filters, warms and humidifies air, and early findings from small studies, including one Japanese study, hint at a calmer autonomic state and steadier attention; these effects are not established. Mouth breathing is appropriate mainly during hard exertion.",
     },
     {
       question: "Does nose breathing help concentration?",
       answer:
-        "Research linked nasal breathing to steadier sustained attention, likely because it supports a regulated autonomic state. Keeping your mouth closed during focused work may help concentration.",
+        "One small study linked nasal breathing to slightly steadier sustained attention — an early finding, not an established effect. Keeping your mouth closed during focused work may help, but this is not proven.",
     },
     {
       question: "Why is nasal breathing calming?",
       answer:
-        "It's slower and more resistive, encouraging a longer, controlled exhale, and it engages nasal nitric oxide that supports blood flow. Mouth breathing tends to be faster and more activating.",
+        "It's slower and more resistive, encouraging a longer, controlled exhale, and it carries sinus nitric oxide into the lungs — a proposed mechanism whose effect size is not established. Mouth breathing tends to be faster and more activating.",
     },
     {
       question: "Is mouth breathing ever okay?",
       answer:
-        "Yes — during intense exercise, when you need maximum airflow. The concern is habitual mouth breathing at rest or during sleep, which is linked to a less favorable autonomic pattern.",
+        "Yes — during intense exercise, when you need maximum airflow. The concern is habitual mouth breathing at rest or during sleep, which small studies tentatively link to a less favorable autonomic pattern.",
     },
     {
       question: "Should I breathe through my nose during breathing exercises?",
       answer:
-        "Inhale through the nose for the natural pacing and nitric oxide benefit. A long exhale through the mouth is fine; what matters most is breathing slowly.",
+        "Inhale through the nose for the natural pacing; any nitric oxide benefit is a proposed mechanism whose size is not established. A long exhale through the mouth is fine; what matters most is breathing slowly.",
     },
   ],
   "hrv-breathing-cold-honest-limits": [
@@ -2748,7 +2748,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     },
   ],
   "breathing-for-focus-and-attention": [
-    { question: "Does breathing through your nose improve memory?", answer: "Research suggests it can help. Nasal breathing synchronizes brain rhythms in memory- and emotion-related regions in a way mouth breathing does not, and people remembered items better when they arrived during a nasal inhale. Slow nasal breathing also settles you into the calm-alert state where focus works best." },
+    { question: "Does breathing through your nose improve memory?", answer: "Not shown. One study (Zelano et al., 2016) recorded brain rhythms in a very few patients with epilepsy who had brain electrodes, plus lab memory tests: nasal breathing synchronized rhythms in memory- and emotion-related regions, and items were remembered better when they arrived during a nasal inhale. It does not show that habitual nose breathing improves memory or focus. Slow nasal breathing also settles you into the calm-alert state where focus works best." },
     {
       question: "Can breathing exercises improve focus and concentration?",
       answer:

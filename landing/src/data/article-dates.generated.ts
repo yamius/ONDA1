@@ -690,7 +690,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "wim-hof-breathing-inflammation": {
     "published": "2026-09-22T18:48:54+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-06T21:17:46+02:00"
   },
   "wind-down-before-sleep-breathing": {
     "published": "2026-09-19T01:24:54+02:00",
@@ -1326,7 +1326,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:nitric-oxide": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-06T20:00:32.000Z"
   },
   "glossary:tdcs": {
     "published": "2026-09-29T18:09:37.000Z",

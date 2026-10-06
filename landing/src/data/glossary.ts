@@ -4388,15 +4388,15 @@ The Breathwork CLI article covers protocols (Box Breathing, Physiological Sigh) 
     title: 'Nitric Oxide',
     category: 'Biological Software',
     shortDescription:
-      'A potent vasodilator produced in the paranasal sinuses — nasal breathing boosts NO and increases oxygen uptake by ~20%.',
+      'A vasodilator made in the paranasal sinuses — nasal breathing carries it into the lungs, where it is proposed to aid oxygen uptake.',
     content: `
 
-**Nitric Oxide** (NO) is a signaling molecule that dilates blood vessels, improving blood flow and oxygen delivery. Your paranasal sinuses produce NO continuously; nasal breathing carries it into the lungs, where it enhances gas exchange.
+**Nitric Oxide** (NO) is a signaling molecule that dilates blood vessels, improving blood flow and oxygen delivery. Your paranasal sinuses produce NO continuously; [nasal breathing](/science/evidence/nasal-breathing) carries it into the lungs, where it is proposed to aid oxygen uptake. How large any such effect is in daily life is not established.
 
 ## Key Functions
 
 - **Vasodilation** — widens blood vessels for better perfusion
-- **Oxygen uptake** — nasal breathing increases oxygen absorption by ~20%
+- **Oxygen uptake** — sinus NO reaching the lungs is proposed to aid oxygen uptake; the size of any effect in daily life is not established
 - **Air conditioning** — nasal passages filter, warm, and humidify air
 - **Antimicrobial** — NO has mild antimicrobial properties in the respiratory tract
 
@@ -4414,7 +4414,7 @@ Diet plays a role too. Nitrate-rich vegetables such as leafy greens and beets ca
 
 ## In ONDA Life
 
-The Breathwork CLI article recommends strict nasal breathing for low-to-moderate intensity as the "Nitric Oxide Boost" protocol.
+The Breathwork CLI article suggests nasal breathing for low-to-moderate intensity under the name "Nitric Oxide Boost" — an image for the habit, not a promise of better oxygen uptake.
 `,
     relatedSlugs: ['vagus-nerve', 'diaphragm', 'autonomic-nervous-system'],
   },

@@ -15,7 +15,7 @@ const hostageTape: ToolReview = {
   overallScore: 8.4,
   scores: [
     { criterionId: 'adhesion-comfort', score: 9.0, note: 'Best beard-friendly adhesive in category — stays on through beard stubble where Somnifix and DIY tape fail. Painless removal claim broadly true in user reports.' },
-    { criterionId: 'breathing-mechanism', score: 7.5, note: 'Full-seal single-piece design. Corner cutout allows emergency exhale through mouth if needed. No porous-strip option.' },
+    { criterionId: 'breathing-mechanism', score: 7.5, note: 'Full-seal single-piece design. Corner cutout leaves part of the lips uncovered; not tested as a safety feature. No porous-strip option.' },
     { criterionId: 'evidence-grounding', score: 6.0, note: 'Brand-funded testimonials and UFC fighter endorsements. Limited peer-reviewed studies on the specific tape. Honest sleep-apnea caveat in safety copy.' },
     { criterionId: 'form-factor', score: 8.5, note: 'Single-piece full-face strip — easy to apply, generous coverage. Newer "Hostage Mini" half-strip option for users wanting less coverage.' },
     { criterionId: 'material-safety', score: 8.0, note: 'Hypoallergenic medical-grade adhesive. Skin-reaction reports rare in user feedback at scale. Latex-free.' },

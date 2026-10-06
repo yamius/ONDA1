@@ -8,6 +8,7 @@ import { OtherLanguages } from '../components/OtherLanguages'
 import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
 import HrvContextBox from '../components/HrvContextBox'
 import ColdSafetyBlock from '../components/ColdSafetyBlock'
+import MouthTapeSafetyBlock, { MOUTH_TAPE_SAFETY_CATEGORY, mouthTapeSafetyVariant } from '../components/MouthTapeSafetyBlock'
 import { storeCt } from '../lib/storeCt'
 import { useLocation, useParams, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -91,6 +92,7 @@ export function HeadToHeadPage() {
       </section>
 
       {a.category === 'cold-plunge' && <ColdSafetyBlock lang={lang} />}
+      {a.category === MOUTH_TAPE_SAFETY_CATEGORY && <MouthTapeSafetyBlock lang={lang} variant={mouthTapeSafetyVariant(products.map((p) => p.slug))} />}
 
       {/* Product cards — scores side by side. Renders 2 or 3 columns
           depending on whether the duel includes a third product. */}

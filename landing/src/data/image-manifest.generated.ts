@@ -2416,6 +2416,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/evidence-nasal-breathing.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-nasal-breathing.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-nasal-breathing.webp": {
+    "width": 1584,
+    "height": 672
+  },
   "/images/science/evidence-slow-breathing.avif": {
     "width": 1920,
     "height": 820

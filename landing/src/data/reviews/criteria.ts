@@ -698,7 +698,7 @@ const BREATHING_AID_CRITERIA: Criterion[] = [
     label: 'Breathing mechanism and approach',
     weight: 0.15,
     description:
-      'Full mouth seal vs porous mouth tape (allows emergency exhale), external nasal strip (dilates nostrils via leverage) vs internal stent (mechanically holds airway open). The mechanism dictates use case and risk profile.',
+      'Full mouth seal vs porous mouth tape (leaves part of the lips uncovered), external nasal strip (dilates nostrils via leverage) vs internal stent (mechanically holds airway open). The mechanism dictates use case and risk profile.',
   },
   {
     id: 'evidence-grounding',

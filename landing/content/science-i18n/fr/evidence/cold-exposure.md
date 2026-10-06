@@ -33,7 +33,7 @@ evidenceMap:
     limitation: "L’accoutumance réduit la réponse mais ne la supprime pas."
   - claim: "Le réflexe de plongée ralentit le cœur par une stimulation parasympathique accrue du stimulateur cardiaque naturel."
     limitation: "Revue mécanistique."
-  - claim: "Le choc thermique et le réflexe de plongée peuvent être activés ensemble, et ce conflit autonome est avancé pour expliquer les arythmies lors de la submersion en eau froide."
+  - claim: "Le choc dû au froid et le réflexe de plongée peuvent être activés ensemble, et ce conflit autonome est avancé pour expliquer les arythmies lors de la submersion en eau froide."
     limitation: "Une hypothèse étayée par des données d’arythmie chez des volontaires ; non démontrée comme cause de décès dans chaque cas."
   - claim: "Pour l’ensemble des déclencheurs du réflexe de plongée, la RMSSD a augmenté pendant l’exposition, mais pas après."
     limitation: "Études peu nombreuses et hétérogènes ; faible qualité des preuves."
@@ -78,7 +78,7 @@ Beaucoup d’études sont petites, n’incluent souvent que des hommes et utilis
 
 ## Que se passe-t-il dans le corps ?
 
-**Le choc thermique.** Une immersion soudaine en eau froide déclenche la réponse de choc au froid (ce que l’on appelle couramment l’« hydrocution ») : une inspiration réflexe brutale (gasp), une respiration rapide et incontrôlée et une hausse de la fréquence cardiaque. Elle peut provoquer des troubles du rythme cardiaque et augmente le risque de noyade, car il devient plus difficile d’agir en sécurité [S7]. Avec des immersions répétées, la réponse diminue [S7].
+**Le choc dû au froid.** Une immersion soudaine en eau froide déclenche la réponse de choc au froid (ce que l’on appelle couramment l’« hydrocution ») : une inspiration réflexe brutale (gasp), une respiration rapide et incontrôlée et une hausse de la fréquence cardiaque. Elle peut provoquer des troubles du rythme cardiaque et augmente le risque de noyade, car il devient plus difficile d’agir en sécurité [S7]. Avec des immersions répétées, la réponse diminue [S7].
 
 **Le réflexe de plongée.** L’eau froide sur le visage produit un effet différent : elle ralentit le cœur par une stimulation parasympathique venue du [nerf vague](/science/concepts/vagus-nerve) [S4]. Quand les deux réponses sont déclenchées en même temps, par exemple lorsque la tête passe sous l’eau froide, les deux branches du [système nerveux autonome](/science/concepts/autonomic-nervous-system) sont activées ensemble. Des chercheurs avancent que ce « conflit autonome » explique les troubles du rythme cardiaque observés lors de la submersion en eau froide [S5].
 
@@ -105,7 +105,7 @@ Les chiffres de dopamine et de noradrénaline qui circulent proviennent d’une 
 
 C’est la partie la plus importante de cette page.
 
-- **Le choc thermique est le principal danger.** Il peut tuer dans les premières minutes, par inhalation d’eau, par une baisse du débit sanguin cérébral due à l’hyperventilation et par des troubles du rythme cardiaque, avant que le corps ait eu le temps de se refroidir [S6]. La plupart des noyades en eau froide ne sont pas dues à l’hypothermie [S6].
+- **Le choc dû au froid est le principal danger.** Il peut tuer dans les premières minutes, par inhalation d’eau, par une baisse du débit sanguin cérébral due à l’hyperventilation et par des troubles du rythme cardiaque, avant que le corps ait eu le temps de se refroidir [S6]. La plupart des noyades en eau froide ne sont pas dues à l’hypothermie [S6].
 - **Des troubles du rythme cardiaque** peuvent survenir chez des volontaires en bonne santé lors d’une submersion en eau froide [S5].
 - **N’allez jamais seul en eau libre froide, et jamais après avoir bu de l’alcool.** L’alcool et d’autres substances modifient les risques de l’immersion en eau froide [S6]. Entrez lentement, gardez d’abord la tête hors de l’eau et sortez si votre respiration ne se calme pas.
 - **Parlez-en d’abord à un médecin** si vous avez une maladie cardiaque, une arythmie, une hypertension artérielle, un phénomène de Raynaud ou un autre trouble de la circulation, ou si vous êtes enceinte.

@@ -357,6 +357,19 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1002/ar.20782": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Nitric Oxide and the Paranasal Sinuses",
+   "firstAuthor": "Lundberg",
+   "authors": [
+    "Lundberg"
+   ],
+   "year": 2008,
+   "journal": "The Anatomical Record",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1002/cphy.c150037": {
    "kind": "doi",
    "valid": true,
@@ -459,6 +472,23 @@
    "journal": "Lifestyle Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1002/oto2.70294": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Impact of Nasal Obstruction and Mouth Taping on Sleep Apnea Indicators: Systematic Review and Meta‐Analysis",
+   "firstAuthor": "Alshehri",
+   "authors": [
+    "Alshehri",
+    "Alsaif",
+    "Abdulrazaq",
+    "Jabor",
+    "Al‐Sayed"
+   ],
+   "year": 2026,
+   "journal": "OTO Open",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1002/smi.3025": {
    "kind": "doi",
@@ -1025,6 +1055,21 @@
    "journal": "Progress in Brain Research",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.amjoto.2024.104545": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Nocturnal mouth-taping and social media: A scoping review of the evidence",
+   "firstAuthor": "Fangmeyer",
+   "authors": [
+    "Fangmeyer",
+    "Badger",
+    "Thakkar"
+   ],
+   "year": 2025,
+   "journal": "American Journal of Otolaryngology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1016/j.annemergmed.2004.06.016": {
    "kind": "doi",
@@ -1609,6 +1654,21 @@
    "journal": "EXPLORE",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.explore.2026.103414": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effect of the Buteyko breathing technique on asthma control and quality of life: a systematic review and meta-analysis of Randomized Controlled Trials",
+   "firstAuthor": "Wu",
+   "authors": [
+    "Wu",
+    "Zhang",
+    "Huang"
+   ],
+   "year": 2026,
+   "journal": "EXPLORE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1016/j.forsciint.2010.02.021": {
    "kind": "doi",
@@ -2467,6 +2527,21 @@
    "journal": "Psychoneuroendocrinology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.resp.2008.05.002": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Air-conditioning in the human nasal cavity",
+   "firstAuthor": "Elad",
+   "authors": [
+    "Elad",
+    "Wolf",
+    "Keck"
+   ],
+   "year": 2008,
+   "journal": "Respiratory Physiology &amp; Neurobiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1016/j.rmed.2007.12.012": {
    "kind": "doi",
@@ -5794,6 +5869,27 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1152/ajpregu.00148.2023": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Acute nasal breathing lowers diastolic blood pressure and increases parasympathetic contributions to heart rate variability in young adults",
+   "firstAuthor": "Watso",
+   "authors": [
+    "Watso",
+    "Cuba",
+    "Boutwell",
+    "Moss",
+    "Bowerfind",
+    "Fernandez",
+    "Cassette",
+    "May",
+    "Kirk"
+   ],
+   "year": 2023,
+   "journal": "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1152/ajpregu.91008.2008": {
    "kind": "doi",
    "valid": true,
@@ -6225,6 +6321,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1177/0194599814559383": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Novel Porous Oral Patches for Patients with Mild Obstructive Sleep Apnea and Mouth Breathing",
+   "firstAuthor": "Huang",
+   "authors": [
+    "Huang",
+    "Young"
+   ],
+   "year": 2014,
+   "yearAlt": 2015,
+   "journal": "Otolaryngology–Head and Neck Surgery",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1177/039463200802100113": {
    "kind": "doi",
    "valid": true,
@@ -6545,6 +6656,22 @@
    "journal": "Journal of the International Society of Sports Nutrition",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1186/s13102-024-00840-6": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Nose vs. mouth breathing– acute effect of different breathing regimens on muscular endurance",
+   "firstAuthor": "Lörinczi",
+   "authors": [
+    "Lörinczi",
+    "Vanderka",
+    "Lörincziová",
+    "Kushkestani"
+   ],
+   "year": 2024,
+   "journal": "BMC Sports Science, Medicine and Rehabilitation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1207/s15324796abm3203_9": {
    "kind": "doi",
@@ -7053,6 +7180,23 @@
    ],
    "year": 2025,
    "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1371/journal.pone.0323643": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Breaking social media fads and uncovering the safety and efficacy of mouth taping in patients with mouth breathing, sleep disordered breathing, or obstructive sleep apnea: A systematic review",
+   "firstAuthor": "Rhee",
+   "authors": [
+    "Rhee",
+    "Iansavitchene",
+    "Mannala",
+    "Graham",
+    "Rotenberg"
+   ],
+   "year": 2025,
+   "journal": "PLOS One",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
@@ -8111,6 +8255,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3390/healthcare10091755": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Impact of Mouth-Taping in Mouth-Breathers with Mild Obstructive Sleep Apnea: A Preliminary Study",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Lu",
+    "Cheng",
+    "Li"
+   ],
+   "year": 2022,
+   "journal": "Healthcare",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.3390/ijerph182211778": {
    "kind": "doi",
    "valid": true,
@@ -8524,6 +8684,22 @@
    "journal": "Medical Journal of Australia",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.70252/ehdr7442": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of Nasal or Oral Breathing on Anaerobic Power Output and Metabolic Responses",
+   "firstAuthor": "Recinto",
+   "authors": [
+    "Recinto",
+    "Efthemeou",
+    "Boffelli",
+    "Navalta"
+   ],
+   "year": 2017,
+   "journal": "International Journal of Exercise Science",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.7326/0003-4819-141-11-200412070-00008": {
    "kind": "doi",
@@ -9803,6 +9979,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:18565805": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Air-conditioning in the human nasal cavity.",
+   "firstAuthor": "Elad",
+   "authors": [
+    "Elad",
+    "Wolf",
+    "Keck"
+   ],
+   "year": 2008,
+   "journal": "Respir Physiol Neurobiol",
+   "doi": "10.1016/j.resp.2008.05.002",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:18769538": {
    "kind": "pmid",
    "valid": true,
@@ -9853,6 +10045,20 @@
    "doi": "10.1016/j.jpsychires.2008.08.003",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:18951492": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Nitric oxide and the paranasal sinuses.",
+   "firstAuthor": "Lundberg",
+   "authors": [
+    "Lundberg"
+   ],
+   "year": 2008,
+   "journal": "Anat Rec (Hoboken)",
+   "doi": "10.1002/ar.20782",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:18974367": {
    "kind": "pmid",
@@ -11363,6 +11569,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:25450408": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Novel porous oral patches for patients with mild obstructive sleep apnea and mouth breathing: a pilot study.",
+   "firstAuthor": "Huang",
+   "authors": [
+    "Huang",
+    "Young"
+   ],
+   "year": 2015,
+   "yearAlt": 2014,
+   "journal": "Otolaryngol Head Neck Surg",
+   "doi": "10.1177/0194599814559383",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:25451381": {
    "kind": "pmid",
    "valid": true,
@@ -12345,6 +12567,23 @@
    "doi": "10.1186/s12970-017-0177-8",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:28674596": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of Nasal or Oral Breathing on Anaerobic Power Output and Metabolic Responses.",
+   "firstAuthor": "Recinto",
+   "authors": [
+    "Recinto",
+    "Efthemeou",
+    "Boffelli",
+    "Navalta"
+   ],
+   "year": 2017,
+   "journal": "Int J Exerc Sci",
+   "doi": "10.70252/EHDR7442",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:28698222": {
    "kind": "pmid",
@@ -14306,6 +14545,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:36141367": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Impact of Mouth-Taping in Mouth-Breathers with Mild Obstructive Sleep Apnea: A Preliminary Study.",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Lu",
+    "Cheng",
+    "Li"
+   ],
+   "year": 2022,
+   "journal": "Healthcare (Basel)",
+   "doi": "10.3390/healthcare10091755",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:36146073": {
    "kind": "pmid",
    "valid": true,
@@ -14561,6 +14817,28 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:37867476": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Acute nasal breathing lowers diastolic blood pressure and increases parasympathetic contributions to heart rate variability in young adults.",
+   "firstAuthor": "Watso",
+   "authors": [
+    "Watso",
+    "Cuba",
+    "Boutwell",
+    "Moss",
+    "Bowerfind",
+    "Fernandez",
+    "Cassette",
+    "May",
+    "Kirk"
+   ],
+   "year": 2023,
+   "journal": "Am J Physiol Regul Integr Comp Physiol",
+   "doi": "10.1152/ajpregu.00148.2023",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:37943791": {
    "kind": "pmid",
    "valid": true,
@@ -14642,6 +14920,23 @@
    "doi": "10.1177/27536351241227261",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:38336799": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Nose vs. mouth breathing- acute effect of different breathing regimens on muscular endurance.",
+   "firstAuthor": "Lörinczi",
+   "authors": [
+    "Lörinczi",
+    "Vanderka",
+    "Lörincziová",
+    "Kushkestani"
+   ],
+   "year": 2024,
+   "journal": "BMC Sports Sci Med Rehabil",
+   "doi": "10.1186/s13102-024-00840-6",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:38355154": {
    "kind": "pmid",
@@ -14772,6 +15067,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:39662104": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Nocturnal mouth-taping and social media: A scoping review of the evidence.",
+   "firstAuthor": "Fangmeyer",
+   "authors": [
+    "Fangmeyer",
+    "Badger",
+    "Thakkar"
+   ],
+   "year": 2025,
+   "yearAlt": 2024,
+   "journal": "Am J Otolaryngol",
+   "doi": "10.1016/j.amjoto.2024.104545",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:39879231": {
    "kind": "pmid",
    "valid": true,
@@ -14847,6 +15159,24 @@
    "doi": "10.3390/nu17091470",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:40397877": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Breaking social media fads and uncovering the safety and efficacy of mouth taping in patients with mouth breathing, sleep disordered breathing, or obstructive sleep apnea: A systematic review.",
+   "firstAuthor": "Rhee",
+   "authors": [
+    "Rhee",
+    "Iansavitchene",
+    "Mannala",
+    "Graham",
+    "Rotenberg"
+   ],
+   "year": 2025,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0323643",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:40735382": {
    "kind": "pmid",
@@ -15198,6 +15528,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:41930853": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effect of the Buteyko breathing technique on asthma control and quality of life: a systematic review and meta-analysis of Randomized Controlled Trials.",
+   "firstAuthor": "Wu",
+   "authors": [
+    "Wu",
+    "Zhang",
+    "Huang"
+   ],
+   "year": 2026,
+   "journal": "Explore (NY)",
+   "doi": "10.1016/j.explore.2026.103414",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:42043659": {
    "kind": "pmid",
    "valid": true,
@@ -15388,6 +15734,24 @@
    "doi": "10.3390/s26165192",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:42662994": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Impact of Nasal Obstruction and Mouth Taping on Sleep Apnea Indicators: Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Alshehri",
+   "authors": [
+    "Alshehri",
+    "Alsaif",
+    "Abdulrazaq",
+    "Jabor",
+    "Al-Sayed"
+   ],
+   "year": 2026,
+   "journal": "OTO Open",
+   "doi": "10.1002/oto2.70294",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:42771122": {
    "kind": "pmid",

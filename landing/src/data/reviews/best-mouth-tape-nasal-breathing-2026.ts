@@ -51,8 +51,8 @@ const bestMouthTapeNasalBreathing2026: Comparison = {
     },
     {
       reviewSlug: 'the-tape-co',
-      award: 'Best X-pattern safety design',
-      takeaway: 'Cross-design leaves corner-of-mouth uncovered for emergency airflow — safer mechanism than full-seal.',
+      award: 'Best X-pattern design',
+      takeaway: 'Cross design leaves part of the lips uncovered and reduces adhesive contact; this has not been tested as a safety feature.',
     },
     {
       reviewSlug: 'somnifit-sleep-strips',
@@ -61,15 +61,15 @@ const bestMouthTapeNasalBreathing2026: Comparison = {
     },
   ],
   verdict:
-    'Hostage Tape wins overall as the category-defining 2026 biohacker mouth tape — beard-friendly adhesive, subscription convenience, polished brand. Somnifix is the FDA-registered medical reference for users wanting porous safety design. Intake Breathing is the premium external nasal dilator (James Nestor-recommended). Mute is the clinical internal stent. Breathe Right is the drugstore starting point everyone should try first. Nexcare is the unbeatable DIY budget pick. Pick on three questions: mouth tape vs nasal dilator, beard-friendly vs sensitive-skin, subscription convenience vs DIY economics.',
+    'Hostage Tape wins overall as the category-defining 2026 biohacker mouth tape — beard-friendly adhesive, subscription convenience, polished brand. Somnifix is the FDA-registered medical reference with a porous design. Intake Breathing is the premium external nasal dilator (James Nestor-recommended). Mute is the clinical internal stent. Breathe Right is the drugstore starting point everyone should try first. Nexcare is the unbeatable DIY budget pick. Pick on three questions: mouth tape vs nasal dilator, beard-friendly vs sensitive-skin, subscription convenience vs DIY economics.',
   faq: [
     {
       q: 'What is the best mouth tape in 2026?',
-      a: 'Hostage Tape overall — beard-friendly adhesive engineering, subscription convenience, biohacker brand polish. Somnifix for FDA-registered porous safety design. Dream Recovery for sensitive skin + premium silicone-gel.',
+      a: 'Hostage Tape overall — beard-friendly adhesive engineering, subscription convenience, biohacker brand polish. Somnifix for an FDA-registered porous design. Dream Recovery for sensitive skin + premium silicone-gel.',
     },
     {
       q: 'Is mouth taping safe?',
-      a: 'For users without sleep apnea — generally yes. Undiagnosed obstructive sleep apnea + full-seal mouth tape is contraindicated; the porous Somnifix design or X-pattern The Tape Co. design reduce the risk. Sleep-study evaluation recommended for users with snoring or fatigue symptoms before starting daily mouth taping.',
+      a: 'It depends on two things: a nose you can breathe through freely, and no untreated sleep apnea. Do not tape if your nose is blocked (cold, allergies, polyps, deviated septum). If sleep apnea is possible — loud snoring, gasping at night, breathing pauses a partner notices, daytime sleepiness — see a doctor first: tape can quieten snoring and hide the warning sign. No tape design, porous or X-pattern included, has been shown to make mouth taping safe.',
     },
     {
       q: 'Mouth tape vs nasal dilator — which should I use?',

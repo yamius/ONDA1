@@ -12,6 +12,7 @@ import { OtherLanguages } from '../components/OtherLanguages'
 import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
 import HrvContextBox from '../components/HrvContextBox'
 import ColdSafetyBlock from '../components/ColdSafetyBlock'
+import MouthTapeSafetyBlock, { MOUTH_TAPE_SAFETY_CATEGORY, mouthTapeSafetyVariant } from '../components/MouthTapeSafetyBlock'
 import { storeCt } from '../lib/storeCt'
 import { useParams, useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -110,6 +111,7 @@ export function ReviewPage() {
       </div>
 
       {review.category === 'cold-plunge' && <ColdSafetyBlock lang={lang} />}
+      {review.category === MOUTH_TAPE_SAFETY_CATEGORY && <MouthTapeSafetyBlock lang={lang} variant={mouthTapeSafetyVariant([review.slug])} />}
 
       {/* Branded score card — og:image + Product.image + visible hero (6.5).
           Falls back to the generated card when no explicit product photo. */}

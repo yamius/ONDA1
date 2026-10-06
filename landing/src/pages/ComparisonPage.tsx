@@ -11,6 +11,7 @@ import { OtherLanguages } from '../components/OtherLanguages'
 import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import ColdSafetyBlock from '../components/ColdSafetyBlock'
+import MouthTapeSafetyBlock, { MOUTH_TAPE_SAFETY_CATEGORY } from '../components/MouthTapeSafetyBlock'
 import { useParams, useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
@@ -61,6 +62,7 @@ export function ComparisonPage() {
         {tReviews('ui.updated')} {comparison.dateModified}
       </p>
       {comparison.category === 'cold-plunge' && <ColdSafetyBlock lang={lang} />}
+      {comparison.category === MOUTH_TAPE_SAFETY_CATEGORY && <MouthTapeSafetyBlock lang={lang} variant="tape" />}
       {/* EN: answer-first summary built from the ranked picks — the direct
           answer to "what is the best …?" before the hero image (GEO). */}
       {lang === 'en' && (() => {

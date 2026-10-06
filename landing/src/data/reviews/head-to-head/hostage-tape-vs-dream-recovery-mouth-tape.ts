@@ -21,7 +21,7 @@ const hostageVsDream: HeadToHead = {
     { name: 'Sensitive skin', winner: 'b', note: 'Dream Recovery: silicone-gel is the gentlest in category. Hostage Tape: acrylic adhesive moderate skin reaction rates in sensitive users.' },
     { name: 'Reusability', winner: 'b', note: 'Dream Recovery: 2-3 uses per silicone-gel strip. Hostage Tape: single-use disposable.' },
     { name: 'Subscription convenience', winner: 'a', note: 'Hostage Tape: $13/month subscription. Dream Recovery: per-pack purchase.' },
-    { name: 'Safety mechanism', winner: 'tie', note: 'Both full-seal designs. Hostage Tape has corner cutout for emergency exhale. Comparable mechanism on safety.' },
+    { name: 'Safety mechanism', winner: 'tie', note: 'Both full-seal designs; Hostage Tape has a corner cutout, which has not been tested as a safety feature. If sleep apnea is possible, see a doctor first.' },
     { name: 'Regulatory standing', winner: 'tie', note: 'Both brand-funded studies, no FDA registration. Comparable evidence base.' },
     { name: 'Per-night cost', winner: 'a', note: 'Hostage Tape: ~$0.43/night. Dream Recovery: ~$1/night effective with reuse. Hostage Tape cheaper.' },
   ],

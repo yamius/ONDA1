@@ -78,7 +78,7 @@ Slow diaphragmatic breathing can calm you, but not because the diaphragm "massag
 
 > **The Hack:** Strict nasal breathing for all low-to-moderate intensity activities.
 
-**The Logic:** Your paranasal sinuses produce Nitric Oxide, a potent vasodilator. Nasal breathing increases oxygen uptake by 20% and acts as a natural 'Air Filter' and 'Heater' for your internal hardware.
+**The Logic:** Your paranasal sinuses produce Nitric Oxide, a vasodilator, and [nasal breathing](/science/evidence/nasal-breathing) carries it into the lungs, where it is proposed to aid oxygen uptake — how large any such effect is in daily life is not established, so the 'Boost' in the name is an image, not a promise. What is well established: the nose acts as a natural 'Air Filter' and 'Heater' (to use the metaphor) for your internal hardware.
 
 > [ HARDWARE_VALIDATION ]
 > VALIDATION_DEVICE: Pulse Oximeter

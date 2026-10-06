@@ -11,11 +11,11 @@ const somnifix: ToolReview = {
   verdict:
     'The original mouth tape — FDA-registered porous strip with central breathing port. Decade-long reference; less beard-friendly than Hostage Tape.',
   summary:
-    'Somnifix is the category-original mouth tape — FDA-registered porous adhesive strip with a central breathing port that allows emergency mouth exhale. Hypoallergenic medical-grade adhesive. Multi-year track record predating the 2025–2026 biohacker boom. Less aggressive marketing than Hostage Tape; deeper FDA-registered credibility.',
+    'Somnifix is the category-original mouth tape — FDA-registered porous adhesive strip with a central breathing port that leaves part of the lips uncovered (not tested as a safety feature). Hypoallergenic medical-grade adhesive. Multi-year track record predating the 2025–2026 biohacker boom. Less aggressive marketing than Hostage Tape; deeper FDA-registered credibility.',
   overallScore: 8.0,
   scores: [
     { criterionId: 'adhesion-comfort', score: 7.5, note: 'Solid adhesion on clean skin. Less beard-friendly than Hostage Tape — adhesive engineered for skin contact, not stubble.' },
-    { criterionId: 'breathing-mechanism', score: 9.0, note: 'Porous design with central breathing port — the safest mechanism for users uncertain about full-seal contraindications. Allows partial mouth exhale.' },
+    { criterionId: 'breathing-mechanism', score: 9.0, note: 'Porous design with central breathing port — leaves part of the lips uncovered and allows partial mouth exhale. This has not been tested as a safety feature; if sleep apnea is possible, see a doctor first.' },
     { criterionId: 'evidence-grounding', score: 8.0, note: 'FDA-registered medical device. Multi-year track record with clinical-context citations. Stronger regulatory standing than Hostage Tape.' },
     { criterionId: 'form-factor', score: 7.5, note: 'Single-piece strip with central porous section. Easy to apply. Less generous coverage than Hostage Tape full strip.' },
     { criterionId: 'material-safety', score: 8.5, note: 'Hypoallergenic medical-grade adhesive. Latex-free. Skin-reaction reports rare across multi-year user base.' },
@@ -23,7 +23,7 @@ const somnifix: ToolReview = {
   ],
   pros: [
     'FDA-registered medical device — deepest regulatory standing',
-    'Porous central breathing port — safest mechanism for sleep-apnea-uncertain users',
+    'Porous central breathing port — a less complete seal than full-coverage tape',
     'Multi-year track record predating the 2025 biohacker boom',
     'No subscription required',
   ],
@@ -33,7 +33,7 @@ const somnifix: ToolReview = {
     'Smaller coverage than Hostage Tape full strip',
     'Less aggressive consumer marketing — lower brand recognition than Hostage Tape',
   ],
-  bestFor: 'Best for users wanting FDA-registered medical-credibility mouth tape with porous safety design — clinical credibility over biohacker brand marketing.',
+  bestFor: 'Best for users wanting FDA-registered medical-credibility mouth tape with a porous design — clinical credibility over biohacker brand marketing.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Somnifix product documentation, FDA registration records and multi-year user reviews. Not hands-on tested by ONDA.',
@@ -50,7 +50,7 @@ Beard adhesion and brand recognition. Somnifix adhesive is engineered for clean 
 
 ## Who should buy Somnifix?
 
-Choose Somnifix if you want FDA-registered medical-credibility mouth tape with safer porous design. For beard-friendly biohacker brand, Hostage Tape. For premium silicone, Dream Recovery. For DIY medical tape, Nexcare Surgical Tape.
+Choose Somnifix if you want FDA-registered medical-credibility mouth tape with a porous design. For beard-friendly biohacker brand, Hostage Tape. For premium silicone, Dream Recovery. For DIY medical tape, Nexcare Surgical Tape.
 
 ---
 
@@ -66,9 +66,9 @@ Choose Somnifix if you want FDA-registered medical-credibility mouth tape with s
   relatedSlugs: ['hostage-tape', 'dream-recovery-mouth-tape', 'breathe-right-original'],
   publishOn: '2026-07-13',
   faq: [
-    { q: "Is Somnifix worth it?", a: "Somnifix is worth it if you want mouth tape with medical credibility. It is an FDA-registered medical device with a porous central breathing port, the safest mechanism for users unsure about sleep apnea, and a multi-year track record. It costs more per night than Hostage Tape." },
+    { q: "Is Somnifix worth it?", a: "Somnifix is worth it if you want mouth tape with medical credibility. It is an FDA-registered medical device with a porous central breathing port (not tested as a safety feature) and a multi-year track record. If sleep apnea is possible, see a doctor first. It costs more per night than Hostage Tape." },
     { q: "How much does Somnifix cost?", a: "Somnifix costs about $25 for a 28-strip pack, roughly $0.90 per night. That is more per night than Hostage Tape. No subscription is required, so you buy packs only as you need them." },
-    { q: "Somnifix vs Hostage Tape: which is better?", a: "Somnifix wins on regulatory standing and safety design, as an FDA-registered device with a porous breathing port. Hostage Tape is cheaper per night, more beard-friendly and offers larger coverage. Choose Somnifix for clinical credibility." },
+    { q: "Somnifix vs Hostage Tape: which is better?", a: "Somnifix wins on regulatory standing as an FDA-registered device, and has a porous breathing port. Hostage Tape is cheaper per night, more beard-friendly and offers larger coverage. Choose Somnifix for clinical credibility." },
     { q: "What are the downsides of Somnifix?", a: "Somnifix is less beard-friendly than Hostage Tape, costs more per night at about $0.90, and offers smaller coverage than Hostage Tape's full strip. It also has lower brand recognition due to less aggressive marketing." },
   ],
   datePublished: '2026-07-13',
