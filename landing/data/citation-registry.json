@@ -638,6 +638,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1002/smi.70049": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Effects of an Online Yoga Nidra Meditation on Subjective Well‐Being and Diurnal Salivary Cortisol: A Randomised Controlled Trial",
+   "firstAuthor": "Moszeik",
+   "authors": [
+    "Moszeik",
+    "Rohleder",
+    "Renner"
+   ],
+   "year": 2025,
+   "journal": "Stress and Health",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1002/wps.20229": {
    "kind": "doi",
    "valid": true,
@@ -1238,6 +1253,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1007/s41782-022-00202-7": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Origin and Clinical Relevance of Yoga Nidra",
+   "firstAuthor": "Pandi-Perumal",
+   "authors": [
+    "Pandi-Perumal",
+    "Spence",
+    "Srivastava",
+    "Kanchibhotla",
+    "Kumar",
+    "Sharma",
+    "Gupta",
+    "Batmanabane"
+   ],
+   "year": 2022,
+   "journal": "Sleep and Vigilance",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1016/0002-9149(87)90795-8": {
    "kind": "doi",
    "valid": true,
@@ -1783,6 +1818,19 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1016/j.ctcp.2017.04.001": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Psychological effects of yoga nidra in women with menstrual disorders: A systematic review of randomized controlled trials",
+   "firstAuthor": "Kim",
+   "authors": [
+    "Kim"
+   ],
+   "year": 2017,
+   "journal": "Complementary Therapies in Clinical Practice",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1016/j.ctim.2005.01.003": {
    "kind": "doi",
    "valid": true,
@@ -1879,6 +1927,20 @@
    "journal": "Complementary Therapies in Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.ctim.2025.103231": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Yoga Nidra for cardiovascular health: a systematic review and meta-analysis of between- and within-group effects",
+   "firstAuthor": "Ghai",
+   "authors": [
+    "Ghai",
+    "Ghai"
+   ],
+   "year": 2025,
+   "journal": "Complementary Therapies in Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/j.cub.2013.06.039": {
    "kind": "doi",
@@ -2256,6 +2318,26 @@
    "journal": "Journal of the American Dietetic Association",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.jaim.2023.100882": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Yoga Nidra for hypertension: A systematic review and meta-analysis",
+   "firstAuthor": "Ahuja",
+   "authors": [
+    "Ahuja",
+    "Bhardwaj",
+    "Pathania",
+    "Sethi",
+    "Kumar",
+    "Parchani",
+    "Chandel",
+    "Phadke"
+   ],
+   "year": 2024,
+   "journal": "Journal of Ayurveda and Integrative Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/j.jbtep.2018.12.002": {
    "kind": "doi",
@@ -3603,6 +3685,24 @@
    "journal": "Journal of the American College of Cardiology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/s0926-6410(01)00106-9": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Increased dopamine tone during meditation-induced change of consciousness",
+   "firstAuthor": "Kjaer",
+   "authors": [
+    "Kjaer",
+    "Bertelsen",
+    "Piccini",
+    "Brooks",
+    "Alving",
+    "Lou"
+   ],
+   "year": 2002,
+   "journal": "Cognitive Brain Research",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/s0960-9822(01)00581-4": {
    "kind": "doi",
@@ -5105,6 +5205,39 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1089/acm.2011.0331": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Yoga Nidra Relaxation Increases Heart Rate Variability and is Unaffected by a Prior Bout of Hatha Yoga",
+   "firstAuthor": "Markil",
+   "authors": [
+    "Markil",
+    "Whitehurst",
+    "Jacobs",
+    "Zoeller"
+   ],
+   "year": 2012,
+   "journal": "The Journal of Alternative and Complementary Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1089/acm.2020.0466": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Yoga Meditation for Active Duty Military Members with Post-Traumatic Stress Disorder: Results and Discussion of a Landmark Initial Study",
+   "firstAuthor": "Sullivan",
+   "authors": [
+    "Sullivan",
+    "Lopez",
+    "Nault",
+    "Moonaz",
+    "Miller"
+   ],
+   "year": 2021,
+   "journal": "The Journal of Alternative and Complementary Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1089/acm.2020.0489": {
    "kind": "doi",
    "valid": true,
@@ -5756,6 +5889,43 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1111/aphw.12571": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The acute effects of nonsleep deep rest on perceptual responses, physical, and cognitive performance in physically active participants",
+   "firstAuthor": "Boukhris",
+   "authors": [
+    "Boukhris",
+    "Suppiah",
+    "Halson",
+    "Russell",
+    "Clarke",
+    "Geneau",
+    "Stutter",
+    "Driller"
+   ],
+   "year": 2024,
+   "journal": "Applied Psychology: Health and Well-Being",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1111/aphw.70180": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Time course of perceptual, cognitive, physical and physiological responses to a single non‐sleep deep rest session in physically active young adults",
+   "firstAuthor": "Boukhris",
+   "authors": [
+    "Boukhris",
+    "Suppiah",
+    "Kerkeni",
+    "Holt",
+    "Driller"
+   ],
+   "year": 2026,
+   "journal": "Applied Psychology: Health and Well-Being",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1111/head.12896": {
    "kind": "doi",
    "valid": true,
@@ -5980,6 +6150,22 @@
    "journal": "Journal of Anatomy",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1111/nyas.70149": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of Yoga Nidra on Stress, Anxiety, and Depression: A Systematic Review and Meta‐Analysis",
+   "firstAuthor": "Ghai",
+   "authors": [
+    "Ghai",
+    "Odyniec",
+    "Ghai"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Annals of the New York Academy of Sciences",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1111/php.12864": {
    "kind": "doi",
@@ -6854,6 +7040,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1159/000549416": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Yoga Nidra and Pain: A between-, within-Group Meta-Analysis and Dose Response Meta-Regression",
+   "firstAuthor": "Ghai",
+   "authors": [
+    "Ghai",
+    "Ghai"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Complementary Medicine Research",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1161/01.cir.93.5.1043": {
    "kind": "doi",
    "valid": true,
@@ -7455,6 +7656,23 @@
    "journal": "Advances in Rehabilitation Science and Practice",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1177/27683605251390728": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of Yoga Nidra in Managing Sleep Disorders: A Systematic Review of Randomized Controlled Trials",
+   "firstAuthor": "Dutta",
+   "authors": [
+    "Dutta",
+    "Mooventhan",
+    "Nivethitha",
+    "Dharani"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Journal of Integrative and Complementary Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1179/1476830515y.0000000018": {
    "kind": "doi",
@@ -8192,6 +8410,24 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1371/journal.pone.0294678": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Improved sleep, cognitive processing and enhanced learning and memory task accuracy with Yoga nidra practice in novices",
+   "firstAuthor": "Datta",
+   "authors": [
+    "Datta",
+    "Bhutambare",
+    "V. L.",
+    "Narawa",
+    "Srinath",
+    "Kanitkar"
+   ],
+   "year": 2023,
+   "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1371/journal.pone.0317615": {
    "kind": "doi",
    "valid": true,
@@ -8459,6 +8695,38 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.17761/2021-d-20-00014": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Consciousness State of Traditional Nidrâ Yoga/Modern Yoga Nidra: Phenomenological Characterization and Preliminary Insights from an EEG Study",
+   "firstAuthor": "Zaccaro",
+   "authors": [
+    "Zaccaro",
+    "Riehl",
+    "Piarulli",
+    "Alfì",
+    "Neri",
+    "Menicucci",
+    "Gemignani"
+   ],
+   "year": 2021,
+   "journal": "International Journal of Yoga Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.17761/2024-d-24-00021": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Key Components of Trauma-Informed Yoga Nidra",
+   "firstAuthor": "Luu",
+   "authors": [
+    "Luu"
+   ],
+   "year": 2024,
+   "journal": "International Journal of Yoga Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.2147/jpr.s231778": {
    "kind": "doi",
    "valid": true,
@@ -8686,6 +8954,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.25259/nmji_63_19": {
+   "kind": "doi",
+   "valid": true,
+   "title": "<i>Yoga nidra</i>\n                    practice shows improvement in sleep in patients with chronic insomnia: A randomized controlled trial",
+   "firstAuthor": "DATTA",
+   "authors": [
+    "DATTA",
+    "TRIPATHI",
+    "VERMA",
+    "MASIWAL",
+    "MALLICK"
+   ],
+   "year": 2021,
+   "journal": "The National Medical Journal of India",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.30773/pi.2017.08.17": {
    "kind": "doi",
    "valid": true,
@@ -8785,6 +9070,23 @@
    "journal": "Frontiers in Cardiovascular Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3389/fneur.2022.910794": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Electrophysiological Evidence of Local Sleep During Yoga Nidra Practice",
+   "firstAuthor": "Datta",
+   "authors": [
+    "Datta",
+    "Mallick",
+    "Tripathi",
+    "Ahuja",
+    "Deepak"
+   ],
+   "year": 2022,
+   "journal": "Frontiers in Neurology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.3389/fneur.2025.1556784": {
    "kind": "doi",
@@ -9449,6 +9751,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3390/clockssleep8030052": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Comparing the Effects of a Short Nap and Non-Sleep Deep Rest on Perceptual, Cognitive, and Physical Performance in Active Adults",
+   "firstAuthor": "Boukhris",
+   "authors": [
+    "Boukhris",
+    "Suppiah",
+    "Driller"
+   ],
+   "year": 2026,
+   "journal": "Clocks &amp; Sleep",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.3390/dj13020076": {
    "kind": "doi",
    "valid": true,
@@ -9528,6 +9845,23 @@
    "journal": "International Journal of Molecular Sciences",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3390/jcm13237178": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Non-Sleep Deep Rest Relaxation and Virtual Reality Therapy for Psychological Outcomes in Patients with Coronary Artery Disease: A Pilot Randomized Controlled Trial",
+   "firstAuthor": "Wrzeciono",
+   "authors": [
+    "Wrzeciono",
+    "Cieślik",
+    "Kiper",
+    "Szczepańska-Gieracha",
+    "Gajda"
+   ],
+   "year": 2024,
+   "journal": "Journal of Clinical Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.3390/jcm7120503": {
    "kind": "doi",
@@ -9779,6 +10113,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.4103/ijoy.ijoy_2_25": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Comparing the Effects of Yoga Nidra and Body Scan Meditation on Pain Outcomes",
+   "firstAuthor": "Gibbs",
+   "authors": [
+    "Gibbs",
+    "Hanney",
+    "Anderson"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "International Journal of Yoga",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.4330/wjc.v7.i4.204": {
    "kind": "doi",
    "valid": true,
@@ -9979,6 +10329,37 @@
    "journal": "Annals of Internal Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.7326/m23-2757": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Management of Posttraumatic Stress Disorder and Acute Stress Disorder: Synopsis of the 2023 U.S. Department of Veterans Affairs and U.S. Department of Defense Clinical Practice Guideline",
+   "firstAuthor": "Schnurr",
+   "authors": [
+    "Schnurr",
+    "Hamblen",
+    "Wolf",
+    "Coller",
+    "Collie",
+    "Fuller",
+    "Holtzheimer",
+    "Kelly",
+    "Lang",
+    "McGraw",
+    "Morganstein",
+    "Norman",
+    "Papke",
+    "Petrakis",
+    "Riggs",
+    "Sall",
+    "Shiner",
+    "Wiechers",
+    "Kelber"
+   ],
+   "year": 2024,
+   "journal": "Annals of Internal Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.7453/gahmj.2014.073": {
    "kind": "doi",
@@ -10385,6 +10766,25 @@
    "doi": "10.1007/s004210100518",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:11958969": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Increased dopamine tone during meditation-induced change of consciousness.",
+   "firstAuthor": "Kjaer",
+   "authors": [
+    "Kjaer",
+    "Bertelsen",
+    "Piccini",
+    "Brooks",
+    "Alving",
+    "Lou"
+   ],
+   "year": 2002,
+   "journal": "Brain Res Cogn Brain Res",
+   "doi": "10.1016/s0926-6410(01)00106-9",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:12030437": {
    "kind": "pmid",
@@ -12136,6 +12536,19 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:22398342": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Transforming trauma: a qualitative feasibility study of integrative restoration (iRest) yoga Nidra on combat-related post-traumatic stress disorder.",
+   "firstAuthor": "Stankovic",
+   "authors": [
+    "Stankovic"
+   ],
+   "year": 2011,
+   "journal": "Int J Yoga Therap",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:22495126": {
    "kind": "pmid",
    "valid": true,
@@ -12196,6 +12609,23 @@
    "doi": "10.3389/fphys.2012.00148",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:22866996": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Yoga Nidra relaxation increases heart rate variability and is unaffected by a prior bout of Hatha yoga.",
+   "firstAuthor": "Markil",
+   "authors": [
+    "Markil",
+    "Whitehurst",
+    "Jacobs",
+    "Zoeller"
+   ],
+   "year": 2012,
+   "journal": "J Altern Complement Med",
+   "doi": "10.1089/acm.2011.0331",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:22896675": {
    "kind": "pmid",
@@ -13280,6 +13710,22 @@
    "doi": "10.1179/1476830515Y.0000000018",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:25858651": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Delivering Integrative Restoration-Yoga Nidra Meditation (iRest®) to Women with Sexual Trauma at a Veteran's Medical Center: A Pilot Study.",
+   "firstAuthor": "Pence",
+   "authors": [
+    "Pence",
+    "Katz",
+    "Huffman",
+    "Cojucar"
+   ],
+   "year": 2014,
+   "journal": "Int J Yoga Therap",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:25914789": {
    "kind": "pmid",
@@ -14414,6 +14860,20 @@
    "doi": "10.1136/bjsports-2017-097608",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:28779936": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Psychological effects of yoga nidra in women with menstrual disorders: A systematic review of randomized controlled trials.",
+   "firstAuthor": "Kim",
+   "authors": [
+    "Kim"
+   ],
+   "year": 2017,
+   "journal": "Complement Ther Clin Pract",
+   "doi": "10.1016/j.ctcp.2017.04.001",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:28824402": {
    "kind": "pmid",
@@ -16319,6 +16779,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:33691076": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Yoga Meditation for Active Duty Military Members with Post-Traumatic Stress Disorder: Results and Discussion of a Landmark Initial Study.",
+   "firstAuthor": "Sullivan",
+   "authors": [
+    "Sullivan",
+    "Lopez",
+    "Nault",
+    "Moonaz",
+    "Miller"
+   ],
+   "year": 2021,
+   "journal": "J Altern Complement Med",
+   "doi": "10.1089/acm.2020.0466",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:33758260": {
    "kind": "pmid",
    "valid": true,
@@ -16476,6 +16954,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:34727178": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Consciousness State of Traditional Nidrâ Yoga/Modern Yoga Nidra: Phenomenological Characterization and Preliminary Insights from an EEG Study.",
+   "firstAuthor": "Zaccaro",
+   "authors": [
+    "Zaccaro",
+    "Riehl",
+    "Piarulli",
+    "Alfì",
+    "Neri",
+    "Menicucci",
+    "Gemignani"
+   ],
+   "year": 2021,
+   "journal": "Int J Yoga Therap",
+   "doi": "10.17761/2021-D-20-00014",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:34776024": {
    "kind": "pmid",
    "valid": true,
@@ -16494,6 +16992,24 @@
    "yearAlt": 2021,
    "journal": "Psychol Med",
    "doi": "10.1017/S0033291721004396",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:34825538": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Yoga nidra practice shows improvement in sleep in patients with chronic insomnia: A randomized controlled trial.",
+   "firstAuthor": "Datta",
+   "authors": [
+    "Datta",
+    "Tripathi",
+    "Verma",
+    "Masiwal",
+    "Mallick"
+   ],
+   "year": 2021,
+   "journal": "Natl Med J India",
+   "doi": "10.25259/NMJI_63_19",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
@@ -16698,6 +17214,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:35496325": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Origin and Clinical Relevance of Yoga Nidra.",
+   "firstAuthor": "Pandi-Perumal",
+   "authors": [
+    "Pandi-Perumal",
+    "Spence",
+    "Srivastava",
+    "Kanchibhotla",
+    "Kumar",
+    "Sharma",
+    "Gupta",
+    "Batmanabane"
+   ],
+   "year": 2022,
+   "journal": "Sleep Vigil",
+   "doi": "10.1007/s41782-022-00202-7",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:35615275": {
    "kind": "pmid",
    "valid": true,
@@ -16811,6 +17348,24 @@
    "doi": "10.1038/s41380-022-01661-0",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:35903117": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Electrophysiological Evidence of Local Sleep During Yoga Nidra Practice.",
+   "firstAuthor": "Datta",
+   "authors": [
+    "Datta",
+    "Mallick",
+    "Tripathi",
+    "Ahuja",
+    "Deepak"
+   ],
+   "year": 2022,
+   "journal": "Front Neurol",
+   "doi": "10.3389/fneur.2022.910794",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:36030561": {
    "kind": "pmid",
@@ -17295,6 +17850,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:38091317": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Improved sleep, cognitive processing and enhanced learning and memory task accuracy with Yoga nidra practice in novices.",
+   "firstAuthor": "Datta",
+   "authors": [
+    "Datta",
+    "Bhutambare",
+    "V L",
+    "Narawa",
+    "Srinath",
+    "Kanitkar"
+   ],
+   "year": 2023,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0294678",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:3812275": {
    "kind": "pmid",
    "valid": true,
@@ -17426,6 +18000,38 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:38408360": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Management of Posttraumatic Stress Disorder and Acute Stress Disorder: Synopsis of the 2023 U.S. Department of Veterans Affairs and U.S. Department of Defense Clinical Practice Guideline.",
+   "firstAuthor": "Schnurr",
+   "authors": [
+    "Schnurr",
+    "Hamblen",
+    "Wolf",
+    "Coller",
+    "Collie",
+    "Fuller",
+    "Holtzheimer",
+    "Kelly",
+    "Lang",
+    "McGraw",
+    "Morganstein",
+    "Norman",
+    "Papke",
+    "Petrakis",
+    "Riggs",
+    "Sall",
+    "Shiner",
+    "Wiechers",
+    "Kelber"
+   ],
+   "year": 2024,
+   "journal": "Ann Intern Med",
+   "doi": "10.7326/M23-2757",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:38478473": {
    "kind": "pmid",
    "valid": true,
@@ -17438,6 +18044,27 @@
    "year": 2024,
    "journal": "PLoS One",
    "doi": "10.1371/journal.pone.0286933",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:38484438": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Yoga Nidra for hypertension: A systematic review and meta-analysis.",
+   "firstAuthor": "Ahuja",
+   "authors": [
+    "Ahuja",
+    "Bhardwaj",
+    "Pathania",
+    "Sethi",
+    "Kumar",
+    "Parchani",
+    "Chandel",
+    "Phadke"
+   ],
+   "year": 2024,
+   "journal": "J Ayurveda Integr Med",
+   "doi": "10.1016/j.jaim.2023.100882",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
@@ -17480,6 +18107,27 @@
    "doi": "10.1038/s41593-024-01638-y",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:38953770": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The acute effects of nonsleep deep rest on perceptual responses, physical, and cognitive performance in physically active participants.",
+   "firstAuthor": "Boukhris",
+   "authors": [
+    "Boukhris",
+    "Suppiah",
+    "Halson",
+    "Russell",
+    "Clarke",
+    "Geneau",
+    "Stutter",
+    "Driller"
+   ],
+   "year": 2024,
+   "journal": "Appl Psychol Health Well Being",
+   "doi": "10.1111/aphw.12571",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:39175400": {
    "kind": "pmid",
@@ -17629,6 +18277,38 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:39685636": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Non-Sleep Deep Rest Relaxation and Virtual Reality Therapy for Psychological Outcomes in Patients with Coronary Artery Disease: A Pilot Randomized Controlled Trial.",
+   "firstAuthor": "Wrzeciono",
+   "authors": [
+    "Wrzeciono",
+    "Cieślik",
+    "Kiper",
+    "Szczepańska-Gieracha",
+    "Gajda"
+   ],
+   "year": 2024,
+   "journal": "J Clin Med",
+   "doi": "10.3390/jcm13237178",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:39690521": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Key Components of Trauma-Informed Yoga Nidra.",
+   "firstAuthor": "Luu",
+   "authors": [
+    "Luu"
+   ],
+   "year": 2024,
+   "journal": "Int J Yoga Therap",
+   "doi": "10.17761/2024-D-24-00021",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:39768041": {
    "kind": "pmid",
    "valid": true,
@@ -17760,6 +18440,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:40373021": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Effects of an Online Yoga Nidra Meditation on Subjective Well-Being and Diurnal Salivary Cortisol: A Randomised Controlled Trial.",
+   "firstAuthor": "Moszeik",
+   "authors": [
+    "Moszeik",
+    "Rohleder",
+    "Renner"
+   ],
+   "year": 2025,
+   "journal": "Stress Health",
+   "doi": "10.1002/smi.70049",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:40397877": {
    "kind": "pmid",
    "valid": true,
@@ -17818,6 +18514,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:40840566": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Yoga Nidra for cardiovascular health: a systematic review and meta-analysis of between- and within-group effects.",
+   "firstAuthor": "Ghai",
+   "authors": [
+    "Ghai",
+    "Ghai"
+   ],
+   "year": 2025,
+   "journal": "Complement Ther Med",
+   "doi": "10.1016/j.ctim.2025.103231",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:40895095": {
    "kind": "pmid",
    "valid": true,
@@ -17851,6 +18562,39 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:41144325": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of Yoga Nidra in Managing Sleep Disorders: A Systematic Review of Randomized Controlled Trials.",
+   "firstAuthor": "Dutta",
+   "authors": [
+    "Dutta",
+    "Mooventhan",
+    "Nivethitha",
+    "Dharani"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "J Integr Complement Med",
+   "doi": "10.1177/27683605251390728",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:41187098": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Yoga Nidra and Pain: A between-, within-Group Meta-Analysis and Dose Response Meta-Regression.",
+   "firstAuthor": "Ghai",
+   "authors": [
+    "Ghai",
+    "Ghai"
+   ],
+   "year": 2025,
+   "journal": "Complement Med Res",
+   "doi": "10.1159/000549416",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:41310318": {
    "kind": "pmid",
    "valid": true,
@@ -17870,6 +18614,23 @@
    "doi": "10.1007/s10484-025-09750-w",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41327816": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of Yoga Nidra on Stress, Anxiety, and Depression: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Ghai",
+   "authors": [
+    "Ghai",
+    "Odyniec",
+    "Ghai"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "Ann N Y Acad Sci",
+   "doi": "10.1111/nyas.70149",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:41410046": {
    "kind": "pmid",
@@ -17970,6 +18731,23 @@
    "doi": "10.3389/fphys.2025.1696346",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41743305": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Comparing the Effects of Yoga Nidra and Body Scan Meditation on Pain Outcomes.",
+   "firstAuthor": "Gibbs",
+   "authors": [
+    "Gibbs",
+    "Hanney",
+    "Anderson"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Int J Yoga",
+   "doi": "10.4103/ijoy.ijoy_2_25",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:41760347": {
    "kind": "pmid",
@@ -18236,6 +19014,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:42383502": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Time course of perceptual, cognitive, physical and physiological responses to a single non-sleep deep rest session in physically active young adults.",
+   "firstAuthor": "Boukhris",
+   "authors": [
+    "Boukhris",
+    "Suppiah",
+    "Kerkeni",
+    "Holt",
+    "Driller"
+   ],
+   "year": 2026,
+   "journal": "Appl Psychol Health Well Being",
+   "doi": "10.1111/aphw.70180",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:42467418": {
    "kind": "pmid",
    "valid": true,
@@ -18382,6 +19178,22 @@
    "doi": "10.1007/s10484-026-09811-8",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:42783005": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Comparing the Effects of a Short Nap and Non-Sleep Deep Rest on Perceptual, Cognitive, and Physical Performance in Active Adults.",
+   "firstAuthor": "Boukhris",
+   "authors": [
+    "Boukhris",
+    "Suppiah",
+    "Driller"
+   ],
+   "year": 2026,
+   "journal": "Clocks Sleep",
+   "doi": "10.3390/clockssleep8030052",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:6013341": {
    "kind": "pmid",
@@ -18733,6 +19545,25 @@
    "doi": "10.1016/s0165-0173(98)00019-8",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:9950067": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A 15O-H2O PET study of meditation and the resting state of normal consciousness.",
+   "firstAuthor": "Lou",
+   "authors": [
+    "Lou",
+    "Kjaer",
+    "Friberg",
+    "Wildschiodtz",
+    "Holm",
+    "Nowak"
+   ],
+   "year": 1999,
+   "journal": "Hum Brain Mapp",
+   "doi": "10.1002/(SICI)1097-0193(1999)7:2&#x0003c;98::AID-HBM3&#x0003e;3.0.CO;2-M",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   }
  }
 }

@@ -2,16 +2,16 @@ import type { Article } from './types'
 
 /**
  * Yoga Nidra ("yogic sleep"): guided lying-down relaxation held at the hypnagogic threshold. Evidence
- * framed modestly: theta/alpha shifts in yogic relaxation practices, vagal-tone / arousal effects of the
- * slow breathing, PSQI improvements in broader yoga programs (esp. older adults). Insomnia = arousal
- * problem. ONDA: resting HR + HRV trend via Apple Watch (no overnight sleep-staging claim).
+ * framed modestly: EEG = awake state with some local slow waves (not sleep); vagally mediated HRV / arousal
+ * effects of slow breathing; sleep meta-analysis (Singh 2026) = five studies, very low certainty.
+ * Insomnia often involves arousal; CBT-I is first-line. ONDA: resting HR + HRV trend via Apple Watch (no overnight sleep-staging claim).
  */
 const article: Article = {
   slug: 'yoga-nidra-sleep-science',
   title: "Yoga Nidra for Sleep: The Science of 'Yogic Sleep'",
   seoTitle: 'Yoga Nidra for Sleep: What the Science Shows | ONDA Life',
   description:
-    "Yoga Nidra — 'yogic sleep' — may improve sleep by shifting the brain toward slower waves and calming the nervous system. What research on this Indian practice shows, and how to do it.",
+    "Yoga Nidra — 'yogic sleep' — is guided deep relaxation used for sleep. What research on this Indian practice shows (small studies, very low certainty), and how to do it.",
   category: 'ONDA Protocol',
   relatedSlugs: ['wind-down-before-sleep-breathing', 'how-much-sleep-do-you-need', 'social-jet-lag-irregular-sleep', 'coherent-breathing-guide'],
   introStyle: 'gold',
@@ -26,27 +26,27 @@ const article: Article = {
     linkText: 'Wind-down breathing →',
   },
   content: `
-Yoga Nidra — literally "yogic sleep" — is a guided practice of deep relaxation done lying down, and research suggests it can improve sleep quality by shifting the brain toward slower, sleep-like brainwaves while calming the [autonomic nervous system](/science/concepts/autonomic-nervous-system). Unlike ordinary seated meditation, Yoga Nidra deliberately walks you to the edge of sleep and holds you there, in a state between waking and sleeping. Studies of this Indian practice and related techniques like OM chanting and slow pranayama link them to higher [HRV](/science/concepts/heart-rate-variability), lower arousal, and better scores on standard sleep measures. For people who lie awake with a racing mind, it's a structured, low-risk way to let the nervous system down.
+Yoga Nidra — literally "yogic sleep" — is a guided practice of deep relaxation done lying down, and small studies suggest it may help sleep quality, though the most recent meta-analysis found only five studies, no significant pooled effect in the randomised trials and very low certainty. In EEG recordings practitioners stay awake, with some local slow-wave activity, so it is deep rest rather than sleep. Unlike ordinary seated meditation, Yoga Nidra deliberately walks you towards the edge of sleep. Related relaxation and slow-breathing practices are linked to higher [HRV](/science/concepts/heart-rate-variability) and a calmer [autonomic nervous system](/science/concepts/autonomic-nervous-system). For people who lie awake with a racing mind, it is a gentle, structured practice to try — see [what the evidence on yoga nidra and NSDR shows](/science/evidence/yoga-nidra-nsdr).
 
 ## What is Yoga Nidra?
 
 Yoga Nidra is not sleep and not quite meditation — it's a systematic guided relaxation, usually 20 to 45 minutes, done lying on your back while a voice leads you through stages: settling the body, following the breath, a body scan rotating awareness through each part, and gentle imagery. You stay just barely awake, aware but deeply relaxed. The goal is the hypnagogic state — the drowsy threshold between waking and sleep — sustained on purpose rather than passed through in seconds.
 
-That threshold is exactly where the nervous system downshifts, which is why the practice acts so directly on sleep and stress.
+The practice is built around that quiet, low-arousal threshold, which is why it is used for sleep and stress — although the direct evidence for both is still modest.
 
 ## What does research show about Yoga Nidra?
 
-Research on Yoga Nidra and related yogic practices points to two converging effects — one in the brain, one in the autonomic nervous system.
+Research on Yoga Nidra and related yogic practices looks at two things — the brain and the autonomic nervous system — and the findings are modest.
 
-**Brainwaves shift toward sleep.** Neurophysiological studies of practices including Yoga Nidra, OM chanting, and slow pranayama find more slow-wave activity — theta and alpha — associated with relaxed, drifting states, mirroring the transition your brain makes as you fall asleep naturally.
+**The brain stays awake.** EEG studies of Yoga Nidra show an awake state with some local slow-wave activity and no sleep hallmarks such as sleep spindles: relaxed and drifting, but not asleep.
 
-**The nervous system calms.** The [slow breathing](/science/evidence/slow-breathing) woven into Yoga Nidra — like related techniques such as Nadi Shodhana, Ujjayi, and Bhramari — is linked to higher HRV and reduced sympathetic arousal. Broader clinical work on comprehensive yoga programs (postures, breathing, relaxation, meditation) shows lower anxiety and depressive symptoms and better standardized sleep-quality scores (Pittsburgh Sleep Quality Index), especially in older adults.
+**The nervous system may calm.** During a session heart rate tends to fall and some HRV measures change, as in other relaxing activities; direct data on Yoga Nidra itself come from small studies. [Slow breathing](/science/evidence/slow-breathing) in general — including techniques such as Nadi Shodhana, Ujjayi and Bhramari, which are separate pranayama practices rather than part of Yoga Nidra — is associated with higher vagally mediated HRV. Studies of comprehensive yoga programs (postures, breathing, relaxation, meditation) report lower anxiety and better sleep-quality scores, but those programs are not Yoga Nidra alone.
 
-Much of this research is small, and Yoga Nidra is often studied as part of a larger yoga program rather than alone — so treat it as promising, not proven. Together, though, the findings suggest it helps not by forcing sleep, but by guiding brain and body into the state from which sleep naturally follows.
+For sleep specifically, a 2026 meta-analysis found only five studies; pooled effects in the randomised trials were not significant, and the certainty of evidence was very low. So treat Yoga Nidra as a reasonable thing to try, not a proven sleep treatment. It may help not by forcing sleep, but by lowering arousal so that sleep has a chance to follow.
 
 ## Why it works for a racing mind
 
-Insomnia is often a problem of arousal, not tiredness — the body is exhausted but the nervous system won't switch off, and the mind loops. Yoga Nidra targets arousal directly. The body scan pulls attention out of anxious thought and into neutral physical sensation; the slow breathing is associated with higher vagally mediated HRV; the guided structure gives the busy mind a track to follow instead of its worries. It's the opposite of "trying" to sleep — which, as anyone with insomnia knows, only makes it worse.
+Insomnia is often a problem of arousal, not tiredness — the body is exhausted but the nervous system won't switch off, and the mind loops. Yoga Nidra aims at that arousal, although trials have not shown that it reliably lowers it. The body scan pulls attention out of anxious thought and into neutral physical sensation; slow breathing is associated with higher vagally mediated HRV; the guided structure gives the busy mind a track to follow instead of its worries. It's the opposite of "trying" to sleep — which, as anyone with insomnia knows, only makes it worse.
 
 ## How to practice Yoga Nidra for sleep
 
@@ -60,9 +60,9 @@ Use it as a daytime reset or as an on-ramp to sleep — ideally alongside a cons
 
 ## See your body settle
 
-The calming behind Yoga Nidra shows up in your heart rhythm. ONDA reads your resting heart rate and HRV from your Apple Watch, so you can see how a session settles your pulse and track whether [your baseline](/science/concepts/hrv-baseline) improves as the practice becomes a habit.
+The calming behind Yoga Nidra shows up in your heart rhythm. ONDA shows your live pulse through the phone camera or an Apple Watch and reads resting heart rate and HRV from your Apple Watch, so you can see how a session settles your pulse and track whether [your baseline](/science/concepts/hrv-baseline) improves as the practice becomes a habit.
 
-*ONDA is a breathing and HRV biofeedback app, not a medical device. This article draws on neurophysiological research on Yoga Nidra, OM chanting and pranayama, and on sleep-quality outcomes of yoga programs. Persistent insomnia deserves a conversation with a clinician.*
+*ONDA is a breathing and HRV biofeedback app, not a medical device. This article draws on neurophysiological research on Yoga Nidra, OM chanting and pranayama, and on sleep-quality outcomes of yoga programs. Persistent insomnia deserves a conversation with a clinician; cognitive behavioural therapy for insomnia (CBT-I) is the recommended first-line approach.*
 `,
 }
 

@@ -360,7 +360,7 @@ const TOPIC_HUB_FAQ_RAW: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
     },
     {
       q: "Does yoga nidra help you sleep?",
-      a: "Research suggests it can improve sleep quality. Yoga nidra, or yogic sleep, is guided deep relaxation done lying down that holds you at the edge of sleep, shifting the brain toward slower, sleep-like waves and calming the autonomic nervous system. For people who lie awake with a racing mind, it is a structured, low-risk practice.",
+      a: "It may, but the evidence is weak. Yoga nidra, or yogic sleep, is guided deep relaxation done lying down; in EEG studies practitioners stay awake, so it is not sleep. A 2026 meta-analysis found only five studies, with no significant pooled effect in the randomised trials and very low certainty. For people who lie awake with a racing mind it is a gentle practice to try; people with trauma may prefer a trauma-informed teacher, as body scans can bring up difficult memories.",
       links: [{ href: "/articles/yoga-nidra-sleep-science", label: "Yoga Nidra for Sleep: The Science of 'Yogic Sleep'" }],
     },
   ],

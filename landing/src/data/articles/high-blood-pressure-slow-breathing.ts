@@ -74,7 +74,7 @@ A modest, drug-free, near-zero-risk lever you can pull daily is genuinely worth 
 Pace is what matters. Not every breathing practice moves blood pressure the same way, and some move it the wrong way during practice:
 
 - **Slow breathing at about six breaths per minute** — coherent or resonance breathing, slow Ujjayi, or an even 5-in/5-out rhythm — is the most reliable option, because it's the pattern that exercises the baroreflex. Studies in yoga practitioners also find higher resting baroreflex sensitivity in experienced practitioners than in beginners, consistent with a trainable reflex.
-- **Slow-breathing relaxation practices** such as [Yoga Nidra](/articles/yoga-nidra-sleep-science) have been reported to lower pressure acutely alongside a rise in HRV — early, small studies, but pointing the same direction.
+- **Slow-breathing relaxation practices** such as [Yoga Nidra](/articles/yoga-nidra-sleep-science) have been reported to lower pressure acutely alongside a rise in HRV — but these are early, small studies at high risk of bias, so treat them as preliminary.
 - **Gentle cooling breaths** (like Sheetali) have also been studied in hypertension with favorable early results; keep any breath retention light.
 - **Fast, forceful breathing** (Kapalabhati, [Bhastrika](/articles/bhastrika-pranayama-brain-anxiety)) *raises* heart rate and pressure while you do it — it's an energizing tool, not a blood-pressure tool (see [fast vs slow pranayama](/articles/fast-vs-slow-pranayama)). Avoid it, and avoid forceful breath-holds, if you have hypertension.
 

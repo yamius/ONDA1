@@ -2524,6 +2524,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 768
   },
+  "/images/science/evidence-yoga-nidra-nsdr.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-yoga-nidra-nsdr.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-yoga-nidra-nsdr.webp": {
+    "width": 1584,
+    "height": 672
+  },
   "/images/science/measurements-heart-rate-variability.avif": {
     "width": 1916,
     "height": 821

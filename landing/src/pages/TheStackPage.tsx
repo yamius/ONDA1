@@ -130,7 +130,7 @@ const STACK_COMPONENTS: Component[] = [
     protocols: [
       { id: 'neuro-alpha-priming', name: 'DEEP_WORK_PRIMING', params: '(ALPHA_8-12Hz)' },
       { id: 'neuro-bdnf-trigger', name: 'BDNF_TRIGGER', params: '(3min_HIIT)' },
-      { id: 'neuro-nsdr', name: 'NSDR_RECOVERY', params: '(20min_YOGA_NIDRA)' },
+      { id: 'neuro-nsdr', name: 'NSDR_REST_BREAK', params: '(10-20min_GUIDED_REST)' },
       { id: 'neural-circuit-digital-sunset', name: 'DIGITAL_SUNSET', params: '(60min_PRE_SLEEP)' },
       { id: 'neural-lipid-fuel', name: 'LIPID_FUEL_INPUT', params: '(OMEGA3_ANTIOXIDANTS)' },
       { id: 'neural-co-regulation', name: 'NEURAL_CO_REGULATION', params: '(IN_PERSON_SYNC)' },

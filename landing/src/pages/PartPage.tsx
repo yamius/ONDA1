@@ -1639,7 +1639,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Deep Rest',
-          text: 'Long, deep relaxation — the conditions in which the body recovers best.',
+          text: 'Long, deep relaxation — a state associated with rest and recovery.',
         },
         {
           name: 'Health as Baseline',

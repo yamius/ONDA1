@@ -75,14 +75,9 @@ Every time you repeat a high-quality action, your brain wraps the neural pathway
 
 ### PROTOCOL 3: The 'Non-Sleep Deep Rest' (NSDR) Recovery
 
-> **The Hack:** 20 minutes of Yoga Nidra or guided NSDR after a period of intense learning.
+> **The Hack:** 10–20 minutes of Yoga Nidra or guided NSDR as a deliberate rest break after a period of intense learning.
 
-**The Logic:** Neural changes (plasticity) don't happen during the work; they happen during the rest immediately following it. NSDR accelerates the consolidation of new neural pathways by mimicking the brain states found in deep sleep.
-
-> [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Consumer EEG (Muse)
-> METRIC: Alpha-Theta Wave Ratio
-> STATUS: NEURAL_COHERENCE_STABLE
+**The Logic:** NSDR (non-sleep deep rest) is a guided relaxation done lying down — a body scan, breath awareness and a calm voice. In EEG recordings people stay awake during it, so it is not a form of sleep, and no study shows that it speeds up the consolidation of what you just learned. Small trials suggest it can feel restful and lower self-rated stress; in the one direct comparison found, a short nap helped against fatigue while a brief NSDR session did not. Treat it as a quiet break between learning blocks, not a substitute for sleep. [What the evidence on yoga nidra and NSDR shows →](/science/evidence/yoga-nidra-nsdr)
 
 ---
 
@@ -109,7 +104,7 @@ Three headsets that give live EEG feedback during focus sessions (none has been 
     },
     {
       name: "The 'Non-Sleep Deep Rest' (NSDR) Recovery",
-      text: '20 minutes of Yoga Nidra or guided NSDR after a period of intense learning.',
+      text: '10–20 minutes of Yoga Nidra or guided NSDR as a deliberate rest break after a period of intense learning — guided deep rest, not a substitute for sleep.',
       protocolId: 'neuro-nsdr',
     },
   ],
