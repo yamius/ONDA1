@@ -150,7 +150,7 @@ Das sind Zusammenhänge zwischen Gruppen. Sie zeigen nicht, dass eine verändert
 <!-- myth-debunk -->
 **„Meditierende spüren ihren Herzschlag automatisch besser.“** Die Evidenz stützt das nicht. Erfahrene Meditierende schnitten bei der Herzschlagwahrnehmung nicht besser ab als Nicht-Meditierende, schätzten ihre eigene Leistung aber höher und die Aufgabe als leichter ein [S17]. Eine spätere Studie, die die Herzfrequenz mit einer Medikamenteninfusion steigerte, fand erneut keine höhere Wahrnehmung oder Genauigkeit, und ihre Metaanalyse fand kaum Hinweise auf einen Unterschied [S18]. Diese Studien testeten nur die Herzschlagwahrnehmung; ob Meditation andere Aspekte der Körperwahrnehmung verändert, ist eine eigene Frage.
 
-**Vorläufig – lässt sie sich trainieren?** Trainingsstudien nutzen äußeres Feedback, das Menschen zeigt, wann ihr Herz tatsächlich schlägt:
+**Erste Hinweise – lässt sie sich trainieren?** Trainingsstudien nutzen äußeres Feedback, das Menschen zeigt, wann ihr Herz tatsächlich schlägt:
 
 - In einem kurzen Experiment steigerte Feedback, das zum echten Herzschlag passte, die Genauigkeit beim Herzschlag-Tracking stärker als nicht passendes Feedback, eine kurze Achtsamkeitsübung oder Warten [S19] (eine einzelne Sitzung, gesunde Erwachsene).
 - In einer kleinen randomisierten Studie wirkte eine Sitzung Herzschlag-Wahrnehmungstraining vielversprechend, doch über die Zeit gab es keine signifikanten Verbesserungen, und beide Gruppen zeigten ähnliche deskriptive Trends [S20].

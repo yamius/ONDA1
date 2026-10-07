@@ -1,5 +1,5 @@
 ---
-sourceHash: "8303f59ed49d"
+sourceHash: "f6488e471877"
 title: "Roodlichttherapie (fotobiomodulatie): wat het bewijs laat zien"
 metaTitle: "Roodlichttherapie: wat het bewijs laat zien"
 metaDescription: "Fotobiomodulatie uitgelegd: hoe de dosis werkt, waar het bewijs stevig is (orale mucositis, sommige pijn, haaruitval), waar het nog pril is, en oogveiligheid."
@@ -88,7 +88,7 @@ Een lichtdosis bestaat uit meerdere onderdelen, en elk ervan telt [S2]:
 
 ## Wat laat het bewijs zien?
 
-**Orale mucositis in de kankerzorg. Richtlijn.** Dit is een van de best onderzochte toepassingen. Orale mucositis is een pijnlijke ontsteking met zweren van het mondslijmvlies, veroorzaakt door sommige kankerbehandelingen. De internationale MASCC/ISOO-richtlijn beveelt fotobiomodulatie aan om orale mucositis te **voorkomen** bij afgebakende groepen: mensen die een stamceltransplantatie krijgen, en mensen die bestraling van hoofd en hals krijgen, met of zonder chemotherapie [S3]. De richtlijn noemt specifieke klinische protocollen en stelt dat de behandelaar al hun parameters moet volgen. Voor de behandeling van mucositis die al is ontstaan, was het bewijs onvoldoende voor een richtlijn [S3]. Het gaat om ziekenhuiszorg met klinische apparaten, niet om een reden om thuis een paneel te gebruiken.
+**Orale mucositis in de kankerzorg. Richtlijn.** Dit is een van de best onderzochte toepassingen. Orale mucositis is een pijnlijke ontsteking met zweren van het mondslijmvlies, veroorzaakt door sommige kankerbehandelingen. De internationale MASCC/ISOO-richtlijn beveelt fotobiomodulatie aan om orale mucositis te **voorkomen** bij afgebakende groepen: mensen die een hematopoëtische stamceltransplantatie krijgen, en mensen die bestraling van hoofd en hals krijgen, met of zonder chemotherapie [S3]. De richtlijn noemt specifieke klinische protocollen en stelt dat de behandelaar al hun parameters moet volgen. Voor de behandeling van mucositis die al is ontstaan, was het bewijs onvoldoende voor een richtlijn [S3]. Het gaat om ziekenhuiszorg met klinische apparaten, niet om een reden om thuis een paneel te gebruiken.
 
 **Gewrichts- en nekpijn. Afhankelijk van de context.** Bij knieartrose vond een meta-analyse van {{fact:study.stausholm2019.trials}} [S4] dat low-level lasertherapie pijn en beperkingen verminderde in vergelijking met placebo, met het duidelijkste effect bij de doses die een vereniging voor lasertherapie aanbeveelt [S4]. De auteurs merken op dat grote richtlijnen voor knieartrose het destijds niet aanbevalen [S4]. Bij nekpijn vond een meta-analyse van {{fact:study.chow2009.trials}} [S5] pijnverlichting in vergelijking met placebo, met milde bijwerkingen die vergelijkbaar waren met placebo [S5]. Beide analyses gaan over klinische lasers met vastgestelde doses, niet over ledpanelen voor consumenten.
 

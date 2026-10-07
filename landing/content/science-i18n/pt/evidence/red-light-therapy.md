@@ -1,5 +1,5 @@
 ---
-sourceHash: "8303f59ed49d"
+sourceHash: "f6488e471877"
 title: "Terapia de luz vermelha (fotobiomodulação): o que as evidências mostram"
 metaTitle: "Luz vermelha: o que as evidências mostram"
 metaDescription: "Fotobiomodulação explicada: como a dose funciona, onde as evidências são sólidas (mucosite oral, algumas dores, queda de cabelo), onde são iniciais e a segurança dos olhos."
@@ -88,7 +88,7 @@ Uma dose de luz tem várias partes, e cada uma importa [S2]:
 
 ## O que as evidências mostram?
 
-**Mucosite oral no tratamento do câncer. Diretriz.** Este é um dos usos mais estudados. A mucosite oral é uma inflamação dolorosa, com úlceras, do revestimento da boca, causada por alguns tratamentos contra o câncer. A diretriz internacional MASCC/ISOO recomenda a fotobiomodulação para **prevenir** a mucosite oral em grupos definidos: pessoas que fazem transplante de células-tronco e pessoas que fazem radioterapia de cabeça e pescoço, com ou sem quimioterapia [S3]. Ela cita protocolos clínicos específicos e diz que o profissional deve seguir todos os seus parâmetros. Para tratar uma mucosite já instalada, as evidências não foram suficientes para uma diretriz [S3]. Isso é cuidado hospitalar com aparelhos clínicos, não um motivo para usar um painel em casa.
+**Mucosite oral no tratamento do câncer. Diretriz.** Este é um dos usos mais estudados. A mucosite oral é uma inflamação dolorosa, com úlceras, do revestimento da boca, causada por alguns tratamentos contra o câncer. A diretriz internacional MASCC/ISOO recomenda a fotobiomodulação para **prevenir** a mucosite oral em grupos definidos: pessoas que fazem transplante de células-tronco hematopoéticas e pessoas que fazem radioterapia de cabeça e pescoço, com ou sem quimioterapia [S3]. Ela cita protocolos clínicos específicos e diz que o profissional deve seguir todos os seus parâmetros. Para tratar uma mucosite já instalada, as evidências não foram suficientes para uma diretriz [S3]. Isso é cuidado hospitalar com aparelhos clínicos, não um motivo para usar um painel em casa.
 
 **Dor nas articulações e no pescoço. Depende do contexto.** Na artrose do joelho, uma metanálise de {{fact:study.stausholm2019.trials}} [S4] concluiu que a terapia a laser de baixa intensidade reduziu a dor e a incapacidade em comparação com placebo, com o efeito mais claro nas doses recomendadas por uma associação de laserterapia [S4]. Os autores observam que as principais diretrizes sobre artrose do joelho não a recomendavam na época [S4]. Na dor no pescoço, uma metanálise de {{fact:study.chow2009.trials}} [S5] encontrou alívio da dor em comparação com placebo, com efeitos colaterais leves semelhantes aos do placebo [S5]. As duas análises tratam de lasers clínicos com doses definidas, não de painéis de LED de consumo.
 

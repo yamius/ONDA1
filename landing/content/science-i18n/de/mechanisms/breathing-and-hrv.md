@@ -93,7 +93,7 @@ Erstens hängt das Ergebnis vom Atemmuster während der Messung ab, sodass Werte
 
 **Kontextabhängig.** Die Erklärung der Effektgröße über Resonanz und Baroreflex [S4, S5, S9]; die individuellen Merkmale der Resonanzfrequenz [S6]. In einer Crossover-Studie erhöhte eine zusätzliche elektrische Ohrstimulation während langsamen Atmens bei der Resonanzfrequenz die HRV nicht weiter – das langsame Atmen erzeugte den Effekt bereits [S11].
 
-**Vorläufig.** In einer randomisierten Studie erhöhte langsames Atmen während des Biofeedbacks akut die Baroreflex-Verstärkung, und die Baroreflex-Verstärkung in Ruhe stieg über die Sitzungen hinweg [S7]. Ob solche Trainingsveränderungen dauerhafte gesundheitliche Wirkungen haben, ist eine eigene Frage für die Evidenzseiten.
+**Erste Hinweise.** In einer randomisierten Studie erhöhte langsames Atmen während des Biofeedbacks akut die Baroreflex-Verstärkung, und die Baroreflex-Verstärkung in Ruhe stieg über die Sitzungen hinweg [S7]. Ob solche Trainingsveränderungen dauerhafte gesundheitliche Wirkungen haben, ist eine eigene Frage für die Evidenzseiten.
 
 **Umstritten.** Ob vorwiegend der Baroreflex oder ein zentraler Rhythmus im Hirnstamm den atemgekoppelten Rhythmus erzeugt [S2] und ob eine längere Ausatmung über das Verlangsamen des Atems hinaus etwas bringt [S5].
 

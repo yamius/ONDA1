@@ -126,7 +126,7 @@ Vergleiche von Tag zu Tag sind nur sinnvoll, wenn die Messungen vergleichbar sin
 
 **Kontextabhängig.** Schlafentzug senkt die RMSSD in randomisierten Studien [S6]. Alkohol geht mit einem dosisabhängigen Rückgang der aus der HRV abgeleiteten nächtlichen Erholung einher [S9]. Eine harte aerobe Einheit senkt die HRV für einen Tag oder länger, mit schnellerer Erholung bei fitteren Menschen [S10], und leistungssteigerndes Training geht mit einem kleinen Anstieg der RMSSD in Ruhe einher [S11]. Die HRV verändert sich bei induziertem psychischem Stress [S15], mit dem Menstruationszyklus [S21] und bei akutem Aufenthalt in großer Höhe [S22].
 
-**Vorläufig.** Muster der von der Uhr erfassten SDNN rund um eine Infektion [S14], die Wirkung der Größe des Abendessens [S19] und von Dehydrierung beim Training [S23] sowie HRV-gesteuertes Training [S12] beruhen jeweils auf einzelnen oder kleinen Studien.
+**Erste Hinweise.** Muster der von der Uhr erfassten SDNN rund um eine Infektion [S14], die Wirkung der Größe des Abendessens [S19] und von Dehydrierung beim Training [S23] sowie HRV-gesteuertes Training [S12] beruhen jeweils auf einzelnen oder kleinen Studien.
 
 **Umstritten.** Koffein: Die Daten zur Herzfrequenz sind uneinheitlich, die Toleranz ist gut belegt [S16]; eine Studie am Tag fand keine spezifische Wirkung auf die HRV [S17], und eine kleine Schlafstudie fand Veränderungen nach einer hohen Dosis vor dem Schlafengehen [S18]. Wie viel des täglichen HRV-Profils von der inneren Uhr kommt und wie viel vom Schlaf selbst [S7, S8]. Spätes Essen, bei dem zwei kleine Studien in verschiedene Richtungen weisen [S19, S20].
 

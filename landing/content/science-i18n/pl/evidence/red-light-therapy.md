@@ -1,5 +1,5 @@
 ---
-sourceHash: "8303f59ed49d"
+sourceHash: "f6488e471877"
 title: "Terapia światłem czerwonym (fotobiomodulacja): co pokazują badania"
 metaTitle: "Terapia światłem czerwonym: co pokazują badania"
 metaDescription: "Fotobiomodulacja wyjaśniona: jak działa dawka, gdzie dowody są solidne (zapalenie błony śluzowej jamy ustnej, część bólu, łysienie), gdzie są wstępne, i bezpieczeństwo oczu."
@@ -89,7 +89,7 @@ Dawka światła składa się z kilku elementów i każdy z nich ma znaczenie [S2
 
 ## Co pokazują badania?
 
-**Zapalenie błony śluzowej jamy ustnej w leczeniu nowotworów. Wytyczne.** To jedno z najlepiej zbadanych zastosowań. Zapalenie błony śluzowej jamy ustnej to bolesny stan zapalny i owrzodzenie wyściółki jamy ustnej wywołane przez niektóre metody leczenia nowotworów. Międzynarodowe wytyczne MASCC/ISOO zalecają fotobiomodulację, aby **zapobiegać** zapaleniu błony śluzowej jamy ustnej w określonych grupach: u osób poddawanych przeszczepieniu komórek macierzystych oraz u osób poddawanych radioterapii w obrębie głowy i szyi, z chemioterapią lub bez niej [S3]. Wytyczne wskazują konkretne protokoły kliniczne i mówią, że lekarz powinien przestrzegać wszystkich ich parametrów. W leczeniu zapalenia, które już się rozwinęło, dowody nie wystarczyły do sformułowania wytycznych [S3]. To opieka szpitalna z użyciem urządzeń klinicznych, a nie powód, by używać panelu w domu.
+**Zapalenie błony śluzowej jamy ustnej w leczeniu nowotworów. Wytyczne.** To jedno z najlepiej zbadanych zastosowań. Zapalenie błony śluzowej jamy ustnej to bolesny stan zapalny i owrzodzenie wyściółki jamy ustnej wywołane przez niektóre metody leczenia nowotworów. Międzynarodowe wytyczne MASCC/ISOO zalecają fotobiomodulację, aby **zapobiegać** zapaleniu błony śluzowej jamy ustnej w określonych grupach: u osób poddawanych przeszczepieniu krwiotwórczych komórek macierzystych oraz u osób poddawanych radioterapii w obrębie głowy i szyi, z chemioterapią lub bez niej [S3]. Wytyczne wskazują konkretne protokoły kliniczne i mówią, że lekarz powinien przestrzegać wszystkich ich parametrów. W leczeniu zapalenia, które już się rozwinęło, dowody nie wystarczyły do sformułowania wytycznych [S3]. To opieka szpitalna z użyciem urządzeń klinicznych, a nie powód, by używać panelu w domu.
 
 **Ból stawów i szyi. Zależy od kontekstu.** W chorobie zwyrodnieniowej kolana metaanaliza obejmująca {{fact:study.stausholm2019.trials}} [S4] wykazała, że laseroterapia niskoenergetyczna zmniejszała ból i niesprawność w porównaniu z placebo, a najwyraźniejszy efekt występował przy dawkach zalecanych przez stowarzyszenie terapii laserowej [S4]. Autorzy zaznaczają, że główne wytyczne dotyczące choroby zwyrodnieniowej kolana nie zalecały jej w tamtym czasie [S4]. W bólu szyi metaanaliza obejmująca {{fact:study.chow2009.trials}} [S5] wykazała zmniejszenie bólu w porównaniu z placebo, przy łagodnych działaniach niepożądanych podobnych jak przy placebo [S5]. Obie analizy dotyczą laserów klinicznych o określonych dawkach, a nie konsumenckich paneli LED.
 

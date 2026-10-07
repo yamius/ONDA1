@@ -1,5 +1,5 @@
 ---
-sourceHash: "8303f59ed49d"
+sourceHash: "f6488e471877"
 title: "Terapia a luce rossa (fotobiomodulazione): che cosa mostrano le evidenze"
 metaTitle: "Terapia a luce rossa: che cosa mostrano le evidenze"
 metaDescription: "La fotobiomodulazione spiegata: come funziona la dose, dove le evidenze sono solide (mucosite orale, alcuni dolori, caduta dei capelli), dove sono iniziali, e la sicurezza degli occhi."
@@ -88,7 +88,7 @@ Una dose di luce ha diverse componenti, e ognuna conta [S2]:
 
 ## Che cosa mostrano le evidenze?
 
-**Mucosite orale nella cura dei tumori. Linea guida.** È uno degli usi più studiati. La mucosite orale è un’infiammazione dolorosa con ulcere della mucosa della bocca, causata da alcuni trattamenti oncologici. La linea guida internazionale MASCC/ISOO raccomanda la fotobiomodulazione per **prevenire** la mucosite orale in gruppi definiti: persone sottoposte a trapianto di cellule staminali e persone sottoposte a radioterapia della testa e del collo, con o senza chemioterapia [S3]. Indica protocolli clinici specifici e afferma che il clinico deve rispettarne tutti i parametri. Per trattare una mucosite già sviluppata le evidenze non bastavano per una linea guida [S3]. Si tratta di cure ospedaliere con dispositivi clinici, non di un motivo per usare un pannello a casa.
+**Mucosite orale nella cura dei tumori. Linea guida.** È uno degli usi più studiati. La mucosite orale è un’infiammazione dolorosa con ulcere della mucosa della bocca, causata da alcuni trattamenti oncologici. La linea guida internazionale MASCC/ISOO raccomanda la fotobiomodulazione per **prevenire** la mucosite orale in gruppi definiti: persone sottoposte a trapianto di cellule staminali ematopoietiche e persone sottoposte a radioterapia della testa e del collo, con o senza chemioterapia [S3]. Indica protocolli clinici specifici e afferma che il clinico deve rispettarne tutti i parametri. Per trattare una mucosite già sviluppata le evidenze non bastavano per una linea guida [S3]. Si tratta di cure ospedaliere con dispositivi clinici, non di un motivo per usare un pannello a casa.
 
 **Dolore articolare e cervicale. Dipende dal contesto.** Nell’artrosi del ginocchio, una meta-analisi di {{fact:study.stausholm2019.trials}} [S4] ha rilevato che la terapia laser a bassa intensità riduceva dolore e disabilità rispetto al placebo, con l’effetto più chiaro alle dosi raccomandate da un’associazione di terapia laser [S4]. Gli autori osservano che all’epoca le principali linee guida sull’artrosi del ginocchio non la raccomandavano [S4]. Nel dolore cervicale, una meta-analisi di {{fact:study.chow2009.trials}} [S5] ha rilevato un sollievo dal dolore rispetto al placebo, con effetti collaterali lievi simili a quelli del placebo [S5]. Entrambe le analisi riguardano laser clinici a dosi definite, non pannelli LED di consumo.
 

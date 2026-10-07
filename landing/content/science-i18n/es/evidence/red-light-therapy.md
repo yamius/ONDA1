@@ -1,5 +1,5 @@
 ---
-sourceHash: "8303f59ed49d"
+sourceHash: "f6488e471877"
 title: "Terapia de luz roja (fotobiomodulación): qué muestra la evidencia"
 metaTitle: "Terapia de luz roja: qué muestra la evidencia"
 metaDescription: "La fotobiomodulación explicada: cómo funciona la dosis, dónde la evidencia es sólida (mucositis oral, algunos dolores, caída del cabello), dónde es preliminar y cómo proteger los ojos."
@@ -89,7 +89,7 @@ Una dosis de luz tiene varias partes, y cada una importa [S2]:
 
 ## ¿Qué muestra la evidencia?
 
-**Mucositis oral en el tratamiento del cáncer. Guía clínica.** Es uno de los usos mejor estudiados. La mucositis oral es la inflamación dolorosa y la ulceración del revestimiento de la boca que causan algunos tratamientos contra el cáncer. La guía internacional MASCC/ISOO recomienda la fotobiomodulación para **prevenir** la mucositis oral en grupos definidos: personas que reciben un trasplante de células madre y personas que reciben radioterapia de cabeza y cuello, con o sin quimioterapia [S3]. Nombra protocolos clínicos concretos y señala que el profesional debe seguir todos sus parámetros. Para tratar la mucositis ya desarrollada, la evidencia no fue suficiente para formular una recomendación [S3]. Se trata de atención hospitalaria con dispositivos clínicos, no de un motivo para usar un panel en casa.
+**Mucositis oral en el tratamiento del cáncer. Guía clínica.** Es uno de los usos mejor estudiados. La mucositis oral es la inflamación dolorosa y la ulceración del revestimiento de la boca que causan algunos tratamientos contra el cáncer. La guía internacional MASCC/ISOO recomienda la fotobiomodulación para **prevenir** la mucositis oral en grupos definidos: personas que reciben un trasplante de células madre hematopoyéticas y personas que reciben radioterapia de cabeza y cuello, con o sin quimioterapia [S3]. Nombra protocolos clínicos concretos y señala que el profesional debe seguir todos sus parámetros. Para tratar la mucositis ya desarrollada, la evidencia no fue suficiente para formular una recomendación [S3]. Se trata de atención hospitalaria con dispositivos clínicos, no de un motivo para usar un panel en casa.
 
 **Dolor articular y de cuello. Depende del contexto.** En la artrosis de rodilla, un metaanálisis de {{fact:study.stausholm2019.trials}} [S4] encontró que la terapia láser de baja intensidad reducía el dolor y la discapacidad frente a placebo, con el efecto más claro a las dosis recomendadas por una asociación de terapia láser [S4]. Los autores señalan que las principales guías sobre artrosis de rodilla no la recomendaban en ese momento [S4]. En el dolor de cuello, un metaanálisis de {{fact:study.chow2009.trials}} [S5] encontró alivio del dolor frente a placebo, con efectos secundarios leves similares a los del placebo [S5]. Ambos análisis se refieren a láseres clínicos con dosis definidas, no a paneles LED de consumo.
 

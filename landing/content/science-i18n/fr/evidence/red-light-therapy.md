@@ -1,10 +1,10 @@
 ---
-sourceHash: "8303f59ed49d"
-title: "Luminothérapie rouge (photobiomodulation) : ce que montrent les données"
+sourceHash: "f6488e471877"
+title: "Thérapie par lumière rouge (photobiomodulation) : ce que montrent les données"
 metaTitle: "Lumière rouge : ce que montrent les données"
 metaDescription: "La photobiomodulation expliquée : le rôle de la dose, où les preuves sont solides (mucite buccale, certaines douleurs, chute de cheveux), où elles sont précoces, et la sécurité des yeux."
 shortAnswer: >
-  La luminothérapie rouge, ou photobiomodulation, utilise une lumière rouge et
+  La thérapie par lumière rouge, ou photobiomodulation, utilise une lumière rouge et
   proche infrarouge de faible puissance pour modifier le comportement des
   cellules, sans chauffer ni brûler les tissus. Elle est utilisée contre la
   mucite buccale en cancérologie et étudiée pour la douleur, la peau, la chute
@@ -56,9 +56,9 @@ evidenceMap:
     limitation: "Petites études de qualité variable chez des personnes en bonne santé, atteintes de démence, de lésion cérébrale ou d’AVC."
 ---
 
-## Qu’est-ce que la luminothérapie rouge ?
+## Qu’est-ce que la thérapie par lumière rouge ?
 
-La luminothérapie rouge est le nom courant de la **photobiomodulation** (PBM) : l’utilisation d’une lumière rouge ou proche infrarouge à faible densité de puissance pour modifier le comportement des cellules et des tissus [S1]. La lumière rouge est visible. La lumière proche infrarouge se situe juste au-delà du rouge et est invisible à l’œil.
+La thérapie par lumière rouge est le nom courant de la **photobiomodulation** (PBM) : l’utilisation d’une lumière rouge ou proche infrarouge à faible densité de puissance pour modifier le comportement des cellules et des tissus [S1]. La lumière rouge est visible. La lumière proche infrarouge se situe juste au-delà du rouge et est invisible à l’œil.
 
 Trois choses sont souvent confondues :
 
@@ -89,7 +89,7 @@ Une dose de lumière comporte plusieurs composantes, et chacune compte [S2] :
 
 ## Que montrent les données ?
 
-**Mucite buccale en cancérologie. Recommandation.** C’est l’un des usages les mieux étudiés. La mucite buccale est une inflammation douloureuse, avec ulcérations, de la muqueuse de la bouche, provoquée par certains traitements du cancer. La recommandation internationale MASCC/ISOO préconise la photobiomodulation pour **prévenir** la mucite buccale dans des groupes définis : les personnes qui reçoivent une greffe de cellules souches, et celles qui reçoivent une radiothérapie de la tête et du cou, avec ou sans chimiothérapie [S3]. Elle cite des protocoles cliniques précis et indique que le clinicien doit en respecter tous les paramètres. Pour traiter une mucite déjà installée, les preuves étaient insuffisantes pour formuler une recommandation [S3]. Il s’agit de soins hospitaliers avec des appareils cliniques, pas d’une raison d’utiliser un panneau à domicile.
+**Mucite buccale en cancérologie. Recommandation.** C’est l’un des usages les mieux étudiés. La mucite buccale est une inflammation douloureuse, avec ulcérations, de la muqueuse de la bouche, provoquée par certains traitements du cancer. La recommandation internationale MASCC/ISOO préconise la photobiomodulation pour **prévenir** la mucite buccale dans des groupes définis : les personnes qui reçoivent une greffe de cellules souches hématopoïétiques, et celles qui reçoivent une radiothérapie de la tête et du cou, avec ou sans chimiothérapie [S3]. Elle cite des protocoles cliniques précis et indique que le clinicien doit en respecter tous les paramètres. Pour traiter une mucite déjà installée, les preuves étaient insuffisantes pour formuler une recommandation [S3]. Il s’agit de soins hospitaliers avec des appareils cliniques, pas d’une raison d’utiliser un panneau à domicile.
 
 **Douleurs articulaires et cervicales. Selon le contexte.** Dans l’arthrose du genou, une méta-analyse de {{fact:study.stausholm2019.trials}} [S4] a montré que la thérapie laser de basse intensité réduisait la douleur et l’incapacité par rapport au placebo, avec l’effet le plus net aux doses recommandées par une association de thérapie laser [S4]. Les auteurs notent que les grandes recommandations sur l’arthrose du genou ne la préconisaient pas à l’époque [S4]. Dans les douleurs cervicales, une méta-analyse de {{fact:study.chow2009.trials}} [S5] a montré un soulagement de la douleur par rapport au placebo, avec des effets indésirables légers, comparables à ceux du placebo [S5]. Ces deux analyses portent sur des lasers cliniques à doses définies, pas sur des panneaux LED grand public.
 
@@ -140,6 +140,6 @@ Les appareils de photobiomodulation présentent en général peu de risques lors
 
 ## Dans ONDA
 
-ONDA ne comprend pas de fonction de lumière rouge, ne mesure ni l’exposition à la lumière ni la dose de lumière, et n’évalue ni la peau, ni les cheveux, ni la douleur, ni la cognition. Les tests ONDA de panneaux à lumière rouge et de masques pour le visage sont réunis dans les [tests de luminothérapie rouge](/reviews/red-light-therapy) ; ils notent les appareils sur leurs caractéristiques techniques et les preuves disponibles, ce qui ne constitue pas une preuve clinique pour un quelconque usage.
+ONDA ne comprend pas de fonction de lumière rouge, ne mesure ni l’exposition à la lumière ni la dose de lumière, et n’évalue ni la peau, ni les cheveux, ni la douleur, ni la cognition. Les tests ONDA de panneaux à lumière rouge et de masques pour le visage sont réunis dans les [tests de thérapie par lumière rouge](/reviews/red-light-therapy) ; ils notent les appareils sur leurs caractéristiques techniques et les preuves disponibles, ce qui ne constitue pas une preuve clinique pour un quelconque usage.
 
 > Information éducative, pas un diagnostic ni un traitement médical.

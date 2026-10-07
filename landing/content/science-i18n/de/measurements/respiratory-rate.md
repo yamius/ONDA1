@@ -93,7 +93,7 @@ Die Atmung wird vom Hirnstamm gesteuert, der Frequenz und Tiefe so anpasst, dass
 
 **Kontextabhängig – wie gut die Zahl ist.** Was eine dokumentierte Atemfrequenz wert ist, hängt davon ab, wie sorgfältig sie gemessen wurde. Zählungen von Hand sind anfällig für systematische und zufällige Fehler [S2], und ein elektronischer Monitor am Krankenbett löste das in einer Studie in einer Notaufnahme nicht [S3].
 
-**Vorläufig – ein nächtlicher Anstieg als frühes Krankheitszeichen.** Zwei Wearable-Studien untersuchten die Atemfrequenz im Schlaf rund um den Beginn von COVID:
+**Erste Hinweise – ein nächtlicher Anstieg als frühes Krankheitszeichen.** Zwei Wearable-Studien untersuchten die Atemfrequenz im Schlaf rund um den Beginn von COVID:
 
 - In einer retrospektiven Studie mit einem einzigen am Handgelenk getragenen Gerät erkannte ein Modell auf Basis von Veränderungen der nächtlichen Atemfrequenz eine Minderheit der Infektionen in den zwei Tagen vor den Symptomen und die meisten bis zum dritten Symptomtag [S11]. Es ist eine einzelne Studie an Menschen, die bereits Symptome hatten, mit kleinen Validierungsgruppen; mehrere Autoren waren beim Gerätehersteller angestellt oder wurden von ihm finanziert.
 - In einer großen, selbst ausgewählten Stichprobe von Nutzern eines Herstellers waren Atemfrequenz und Herzfrequenz während COVID typischerweise erhöht, während die Herzfrequenzvariabilität (HRV) sank [S12]. Es ist eine einzelne Beobachtungsstudie mit selbst angegebenen Diagnosen; alle Autoren wurden vom Hersteller finanziert.
