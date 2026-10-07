@@ -13,8 +13,10 @@ import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
 import HrvContextBox from '../components/HrvContextBox'
 import FastBreathingSafetyBlock from '../components/FastBreathingSafetyBlock'
 import RedLightSafetyBlock from '../components/RedLightSafetyBlock'
+import SaunaSafetyBlock from '../components/SaunaSafetyBlock'
 import { FAST_BREATHING_REVIEW_SLUGS } from '../data/fast-breathing-safety-i18n'
 import { isRedLightReview } from '../data/red-light-safety-i18n'
+import { isSaunaReview } from '../data/sauna-safety-i18n'
 import ColdSafetyBlock from '../components/ColdSafetyBlock'
 import MouthTapeSafetyBlock, { MOUTH_TAPE_SAFETY_CATEGORY, mouthTapeSafetyVariant } from '../components/MouthTapeSafetyBlock'
 import { storeCt } from '../lib/storeCt'
@@ -118,6 +120,7 @@ export function ReviewPage() {
       {review.category === MOUTH_TAPE_SAFETY_CATEGORY && <MouthTapeSafetyBlock lang={lang} variant={mouthTapeSafetyVariant([review.slug])} />}
       {FAST_BREATHING_REVIEW_SLUGS.has(review.slug) && <FastBreathingSafetyBlock lang={lang} />}
       {isRedLightReview(review.slug, review.category) && <RedLightSafetyBlock lang={lang} />}
+      {isSaunaReview(review.slug, review.category) && <SaunaSafetyBlock lang={lang} />}
 
       {/* Branded score card — og:image + Product.image + visible hero (6.5).
           Falls back to the generated card when no explicit product photo. */}

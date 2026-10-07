@@ -857,7 +857,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'What is the sauna-cold cycle for?',
       answer:
-        '20 minutes of sauna followed by 3 minutes of cold triggers heat shock and cold shock proteins. These molecular chaperones help proteins fold correctly and protect against cellular damage.',
+        'The idea is that heat and then cold raise heat-shock and cold-shock proteins, which help other proteins fold correctly. That a sauna-cold cycle protects health in people has not been shown; Finnish sauna studies show associations, not cause. Never combine sauna and cold after alcohol. See what the evidence on sauna shows: /science/evidence/sauna-heat-exposure.',
     },
   ],
   'circadian-lighting-dark-therapy': [

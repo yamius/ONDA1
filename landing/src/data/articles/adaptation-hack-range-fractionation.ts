@@ -59,7 +59,7 @@ This prevents the metabolic downclocking that inevitably follows prolonged linea
 
 The image here is hitting both extremes: cold narrows blood vessels, heat widens them. That alternating them trains vascular elasticity has not been shown — treat it as an idea, not a proven training effect.
 
-> **The Hack:** Cold, then sauna: vessels narrow in the cold and widen in the heat. "Training the vascular range" is an image, not a proven effect.
+> **The Hack:** Cold, then sauna: vessels narrow in the cold and widen in the heat. "Training the vascular range" is an image, not a proven effect. Blood pressure drops after heat, so stand up slowly; never do it after alcohol.
 
 ---
 

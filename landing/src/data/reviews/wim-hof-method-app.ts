@@ -44,10 +44,6 @@ const wimHofMethodApp: ToolReview = {
 
 Wim Hof Method app is the official reference for the Wim Hof breath protocol — structured rounds at varying levels, cold-exposure protocols, certified-instructor video courses, and citation of the Radboud University immune-response and autonomic-system studies that put the method on the scientific map — small laboratory studies in healthy volunteers, not proof of a treatment.
 
-## Safety
-
-Wim Hof rounds combine hyperventilation with breath-holds, which can cause fainting without warning. Never practise them in or near water (including baths and cold plunges) or while driving; do them sitting or lying down. Talk to a doctor first if you have epilepsy, heart disease or high blood pressure, or are pregnant. See [fast breathing: what the evidence shows](/science/evidence/fast-breathing).
-
 ## What are the downsides of Wim Hof Method?
 
 Single-method focus. The app is excellent for Wim Hof Method specifically; it does not cover Buteyko, 4-7-8, cyclic sighing or the broader breathwork landscape with the depth Breathwrk does. Cold-exposure integration assumes you have access to cold immersion hardware.

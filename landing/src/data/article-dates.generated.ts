@@ -110,7 +110,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "cacao-stem-cells": {
     "published": "2026-03-08T12:26:14+01:00",
-    "modified": "2026-10-07T07:44:50+02:00"
+    "modified": "2026-10-07T14:55:48+02:00"
   },
   "caffeine-half-life-sleep-pressure": {
     "published": "2026-06-04T00:46:04+02:00",
@@ -146,7 +146,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "circadian-lighting-dark-therapy": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-07T07:44:50+02:00"
+    "modified": "2026-10-07T14:55:48+02:00"
   },
   "circadian-reset-mastering-light": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -362,7 +362,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "longevity-hardware-cellular-cleanup": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-06T20:41:29+02:00"
+    "modified": "2026-10-07T14:55:48+02:00"
   },
   "longevity-protocol-biological-clock-reset": {
     "published": "2026-03-24T10:01:04Z",
@@ -422,11 +422,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "mitochondrial-biogenesis-cellular-power-grid": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-01T17:32:55+02:00"
+    "modified": "2026-10-07T14:55:48+02:00"
   },
   "mitochondrial-dna-red-light": {
     "published": "2026-02-28T20:22:39+01:00",
-    "modified": "2026-10-01T22:40:56+02:00"
+    "modified": "2026-10-07T14:55:48+02:00"
   },
   "molecular-psychology-hormonal-firmware": {
     "published": "2026-05-18T08:38:26+02:00",
@@ -730,7 +730,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-10-07T11:57:35+02:00"
+    "modified": "2026-10-07T14:55:48+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1406,11 +1406,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:mtdna": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-07T12:34:38.000Z"
+    "modified": "2026-10-07T12:55:48.000Z"
   },
   "glossary:photobiomodulation": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-07T12:34:38.000Z"
+    "modified": "2026-10-07T12:55:48.000Z"
   },
   "glossary:water-viscosity": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1418,7 +1418,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:nir": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-07T12:34:38.000Z"
+    "modified": "2026-10-07T12:55:48.000Z"
   },
   "glossary:senescence": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1550,7 +1550,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:heat-shock-proteins": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T18:41:29.000Z"
+    "modified": "2026-10-07T17:22:54.000Z"
   },
   "glossary:antifragility": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-07T13:13:18+02:00"
+    "modified": "2026-10-07T14:55:48+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1746,7 +1746,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-07T13:13:18+02:00"
+    "modified": "2026-10-07T14:55:48+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

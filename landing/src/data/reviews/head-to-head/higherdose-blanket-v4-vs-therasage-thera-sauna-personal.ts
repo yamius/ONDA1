@@ -32,7 +32,7 @@ const higherdoseVsTherasage: HeadToHead = {
     },
     {
       q: 'Is a sauna blanket as effective as a cabin sauna?',
-      a: 'Different mechanisms. Cabin saunas (including Therasage tent) reach higher core temperatures via convection plus radiant heat. Blankets deliver IR via direct contact at lower body temperatures. Both produce real cardiovascular benefits; cabin saunas have the deeper research base.',
+      a: 'Different mechanisms. Cabin saunas (including Therasage tent) reach higher core temperatures via convection plus radiant heat. Blankets deliver IR via direct contact at lower body temperatures. Neither device has health-outcome data of its own; the cardiovascular cohort data come from traditional Finnish saunas and show associations, not cause.',
     },
     {
       q: 'Why is Therasage more expensive?',

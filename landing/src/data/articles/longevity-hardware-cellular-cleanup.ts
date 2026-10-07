@@ -73,7 +73,7 @@ Zombie cells are senescent cells — the product of Cellular Senescence, a prote
 
 > **The Hack:** Time in a sauna followed by brief cold exposure.
 
-**The Logic:** The idea is 'Heat Shock Proteins' and 'Cold Shock Proteins' — molecular chaperones that help proteins fold correctly. 'Fixing bit rot' is an image: that sauna-cold cycles prevent neurodegenerative disease has not been shown.
+**The Logic:** The idea is 'Heat Shock Proteins' and 'Cold Shock Proteins' — molecular chaperones that help proteins fold correctly. 'Fixing bit rot' is an image: that sauna-cold cycles prevent neurodegenerative disease has not been shown. Never use the sauna after alcohol, drink water, and stand up slowly: blood pressure drops after heat, and going straight into cold adds the cold shock response.
 
 > [ HARDWARE_VALIDATION ]
 > VALIDATION_DEVICE: DNA Methylation Kit

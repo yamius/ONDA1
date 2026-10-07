@@ -58,7 +58,9 @@ The primary command for building new mitochondria is the activation of the PGC-1
 
 > **The Hack:** High-heat sauna (80°C+) for 20 minutes, 3 times a week.
 >
-> **The Logic:** Heat stress triggers 'Heat Shock Proteins' and pushes mitochondria to handle thermal energy more efficiently. In research, this kind of acute stressor is associated with increased PGC-1α signalling — the pathway linked to building more power units in muscle and brain tissue. Individual response varies.
+> **Safety:** Never use a sauna after drinking alcohol — alcohol is the main factor in sauna deaths. Drink water before and after, start with shorter sessions, and get out at once if you feel dizzy, sick or have palpitations. If you have heart disease or low or poorly controlled blood pressure, or are pregnant, talk to a doctor first. See [the evidence on sauna and heat](/science/evidence/sauna-heat-exposure).
+>
+> **The Logic:** The idea is that heat stress raises 'Heat Shock Proteins' and pushes mitochondria to handle thermal energy more efficiently — an idea, not something shown in people. In research, this kind of acute stressor is associated with increased PGC-1α signalling — the pathway linked to building more power units in muscle and brain tissue. Individual response varies.
 
 ### PROTOCOL_02 > Photonic Charging (Red Light Therapy)
 

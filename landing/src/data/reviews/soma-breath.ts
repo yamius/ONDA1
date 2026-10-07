@@ -48,8 +48,6 @@ SOMA Breath is the rhythmic music breathwork reference — beat-paced sessions, 
 
 Evidence depth and library size vs Breathwrk. SOMA leans heavier on ceremony framing than peer-reviewed citations, and the library is smaller than the structured-default Breathwrk. No HRV biofeedback.
 
-Safety: Wim Hof-style rounds combine hyperventilation with breath-holds, which can cause fainting without warning — never practise them in or near water (including baths and cold plunges) or while driving, and talk to a doctor first if you have epilepsy, heart disease or high blood pressure, or are pregnant. See [fast breathing: what the evidence shows](/science/evidence/fast-breathing).
-
 ## Who should buy SOMA Breath?
 
 Choose SOMA Breath for rhythmic music-paced breathwork with ceremony framing and certification community access. For largest structured library, Breathwrk. For cinematic music + live classes, Othership. For free entry, iBreathe.

@@ -56,9 +56,9 @@ Choose Sunlighten mPulse if true 3-wavelength IR and verified low-EMF discipline
 
 ## Background reading
 
-The biology of why infrared sauna works at the mitochondrial level.
+Background reading on the ideas behind heat exposure — mostly hypotheses, not effects shown in people. For what studies do show, see [the evidence on sauna and heat](/science/evidence/sauna-heat-exposure).
 
-- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why heat stress drives mitochondrial density
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — the idea that heat stress affects mitochondria (not shown in people)
 - [Longevity hardware and cellular cleanup](/articles/longevity-hardware-cellular-cleanup) — how sauna fits the broader autophagy/mitophagy stack
 - [Longevity protocol: biological clock reset](/articles/longevity-protocol-biological-clock-reset) — where sauna slots into a reset routine`,
   references: [

@@ -6228,10 +6228,10 @@ In the ONDA framework, we train the system to utilize the Glucagon Key efficient
     title: 'Heat Shock Proteins',
     category: 'Biological Software',
     shortDescription:
-      'Molecular chaperones activated by thermal stress that repair damaged proteins, enhance cellular resilience, and protect the system against heat and cold-induced damage.',
+      'Molecular chaperones made by cells under thermal stress that help repair damaged proteins and protect cells against heat and cold-induced damage.',
     content: `
 
-**Heat Shock Proteins (HSPs)** are a family of proteins produced by cells in response to thermal stress. Despite the name, they're activated by both heat exposure (sauna) and cold (ice bath) — any significant temperature shift triggers their release.
+**Heat Shock Proteins (HSPs)** are a family of proteins produced by cells in response to thermal stress. Despite the name, large temperature stress of either kind — heat or cold — can increase their production in cells. In people, a rise after sauna has been shown only in some small lab studies, and whether it brings any health effect is unknown. See [the evidence on sauna and heat](/science/evidence/sauna-heat-exposure).
 
 ## Function
 
@@ -6243,13 +6243,17 @@ HSPs act as **molecular chaperones**: they repair misfolded proteins, prevent ag
 - **HSP90** — regulates hormone receptors and signaling proteins
 - **HSP27** — protects against apoptosis; enhances cytoskeletal stability
 
-## Activation Protocol
+## Typical Exposures Studied
 
-| Stimulus | Mechanism | Threshold |
+These are typical session lengths, not proven thresholds for HSP release or for any health effect.
+
+| Stimulus | Mechanism | Typical session |
 |----------|-----------|-----------|
 | Sauna (80–100°C) | Direct thermal stress | 15–20 min |
 | Ice bath (4–15°C) | Cold shock response | 3–5 min |
 | Intense exercise | Metabolic heat + mechanical stress | High-intensity bouts |
+
+Never use a sauna after alcohol, and read the cold-exposure safety notes before an ice bath.
 
 ## In ONDA Life
 

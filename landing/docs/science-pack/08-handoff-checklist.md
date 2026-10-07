@@ -80,3 +80,11 @@ New link targets:   (pages that don’t exist yet, or “none”)
 Sections skipped:   (which and why, or “none”)
 Open questions / unsure about:
 ```
+
+## Safety blocks vs inline safety text
+
+Owner decision 2026-10-08.
+
+- Where a shared "Safety first" block renders (SaunaSafetyBlock, FastBreathingSafetyBlock, RedLightSafetyBlock, ColdSafetyBlock, MouthTapeSafetyBlock — page lists in `src/data/*-safety-i18n.ts`), do NOT add a separate plain-text safety paragraph to REVIEWS, COMPARISONS/ROUND-UPS or HEAD-TO-HEADS. The block is the single safety message there.
+- FAQ answers that directly answer a safety question stay — they are answers, not duplicates.
+- In ARTICLES with protocols, KEEP the short safety paragraph right at the instruction (in addition to the block).

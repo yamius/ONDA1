@@ -241,6 +241,34 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1001/jamapsychiatry.2016.1031": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Whole-Body Hyperthermia for the Treatment of Major Depressive Disorder",
+   "firstAuthor": "Janssen",
+   "authors": [
+    "Janssen",
+    "Lowry",
+    "Mehl",
+    "Allen",
+    "Kelly",
+    "Gartner",
+    "Medrano",
+    "Begay",
+    "Rentscher",
+    "White",
+    "Fridman",
+    "Roberts",
+    "Robbins",
+    "Hanusch",
+    "Cole",
+    "Raison"
+   ],
+   "year": 2016,
+   "journal": "JAMA Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1002/14651858.cd001277.pub4": {
    "kind": "doi",
    "valid": true,
@@ -369,6 +397,27 @@
    "journal": "The Anatomical Record",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1002/clc.23077": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of sauna bath on heart failure: A systematic review and meta‐analysis",
+   "firstAuthor": "Källström",
+   "authors": [
+    "Källström",
+    "Soveri",
+    "Oldgren",
+    "Laukkanen",
+    "Ichiki",
+    "Tei",
+    "Timmerman",
+    "Berglund",
+    "Hägglund"
+   ],
+   "year": 2018,
+   "journal": "Clinical Cardiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1002/cphy.c150037": {
    "kind": "doi",
@@ -1680,6 +1729,20 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.ctim.2019.05.002": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The blood pressure and heart rate during sauna bath correspond to cardiac responses during submaximal dynamic exercise",
+   "firstAuthor": "Ketelhut",
+   "authors": [
+    "Ketelhut",
+    "Ketelhut"
+   ],
+   "year": 2019,
+   "journal": "Complementary Therapies in Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1016/j.ctim.2021.102750": {
    "kind": "doi",
    "valid": true,
@@ -2282,6 +2345,21 @@
    "journal": "Mayo Clinic Proceedings",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.mayocp.2018.04.008": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cardiovascular and Other Health Benefits of Sauna Bathing: A Review of the Evidence",
+   "firstAuthor": "Laukkanen",
+   "authors": [
+    "Laukkanen",
+    "Laukkanen",
+    "Kunutsor"
+   ],
+   "year": 2018,
+   "journal": "Mayo Clinic Proceedings",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/j.neubiorev.2008.08.004": {
    "kind": "doi",
@@ -3074,6 +3152,20 @@
    "journal": "Hormones and Behavior",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/s0002-9343(00)00671-9": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Benefits and risks of sauna bathing",
+   "firstAuthor": "Hannuksela",
+   "authors": [
+    "Hannuksela",
+    "Ellahham"
+   ],
+   "year": 2001,
+   "journal": "The American Journal of Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/s0005-7967(01)00061-4": {
    "kind": "doi",
@@ -4646,6 +4738,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1080/02656736.2023.2179672": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effects of a single and a series of Finnish sauna sessions on the immune response and HSP-70 levels in trained and untrained men",
+   "firstAuthor": "Pilch",
+   "authors": [
+    "Pilch",
+    "Szarek",
+    "Olga",
+    "Anna",
+    "Żychowska",
+    "Ewa",
+    "Andraščíková",
+    "Pałka"
+   ],
+   "year": 2023,
+   "journal": "International Journal of Hyperthermia",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1080/02678370500297720": {
    "kind": "doi",
    "valid": true,
@@ -4864,6 +4976,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1093/ageing/afw212": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sauna bathing is inversely associated with dementia and Alzheimer's disease in middle-aged Finnish men",
+   "firstAuthor": "Laukkanen",
+   "authors": [
+    "Laukkanen",
+    "Kunutsor",
+    "Kauhanen",
+    "Laukkanen"
+   ],
+   "year": 2016,
+   "yearAlt": 2017,
+   "journal": "Age and Ageing",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1093/ajcn/51.2.241": {
    "kind": "doi",
    "valid": true,
@@ -4881,6 +5010,24 @@
    "journal": "The American Journal of Clinical Nutrition",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1093/ajh/hpx102": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sauna Bathing and Incident Hypertension: A Prospective Cohort Study",
+   "firstAuthor": "Zaccardi",
+   "authors": [
+    "Zaccardi",
+    "Laukkanen",
+    "Willeit",
+    "Kunutsor",
+    "Kauhanen",
+    "Laukkanen"
+   ],
+   "year": 2017,
+   "journal": "American Journal of Hypertension",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1093/brain/awaa443": {
    "kind": "doi",
@@ -4966,6 +5113,22 @@
    "journal": "Sleep",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1097/01.ede.0000152903.55579.15": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Maternal Hyperthermia and the Risk for Neural Tube Defects in Offspring",
+   "firstAuthor": "Moretti",
+   "authors": [
+    "Moretti",
+    "Bar-Oz",
+    "Fried",
+    "Koren"
+   ],
+   "year": 2005,
+   "journal": "Epidemiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1097/01.psy.0000089200.81962.19": {
    "kind": "doi",
@@ -5417,6 +5580,20 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1111/j.1556-4029.2008.00703.x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Death in Sauna*",
+   "firstAuthor": "Kenttämies",
+   "authors": [
+    "Kenttämies",
+    "Karkola"
+   ],
+   "year": 2008,
+   "journal": "Journal of Forensic Sciences",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1111/j.1600-0838.2004.00418.x": {
    "kind": "doi",
    "valid": true,
@@ -5632,6 +5809,23 @@
    "journal": "The Journal of Physiology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1113/jp272453": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Passive heat therapy improves endothelial function, arterial stiffness and blood pressure in sedentary humans",
+   "firstAuthor": "Brunt",
+   "authors": [
+    "Brunt",
+    "Howard",
+    "Francisco",
+    "Ely",
+    "Minson"
+   ],
+   "year": 2016,
+   "journal": "The Journal of Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1113/jphysiol.2002.037192": {
    "kind": "doi",
@@ -6105,6 +6299,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1152/ajpregu.00012.2025": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Comparison of thermoregulatory, cardiovascular, and immune responses to different passive heat therapy modalities",
+   "firstAuthor": "Atencio",
+   "authors": [
+    "Atencio",
+    "Reed",
+    "Wiedenfeld Needham",
+    "Lucernoni",
+    "Comrada",
+    "Halliwill",
+    "Minson"
+   ],
+   "year": 2025,
+   "journal": "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1152/ajpregu.00031.2007": {
    "kind": "doi",
    "valid": true,
@@ -6257,6 +6470,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1155/2012/184745": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Arsenic, Cadmium, Lead, and Mercury in Sweat: A Systematic Review",
+   "firstAuthor": "Sears",
+   "authors": [
+    "Sears",
+    "Kerr",
+    "Bray"
+   ],
+   "year": 2012,
+   "journal": "Journal of Environmental and Public Health",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1155/2013/653572": {
    "kind": "doi",
    "valid": true,
@@ -6274,6 +6502,20 @@
    "journal": "Neural Plasticity",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1155/2018/1857413": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Clinical Effects of Regular Dry Sauna Bathing: A Systematic Review",
+   "firstAuthor": "Hussain",
+   "authors": [
+    "Hussain",
+    "Cohen"
+   ],
+   "year": 2018,
+   "journal": "Evidence-Based Complementary and Alternative Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1161/01.cir.93.5.1043": {
    "kind": "doi",
@@ -6777,6 +7019,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1177/2047487317737629": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sauna exposure leads to improved arterial compliance: Findings from a non-randomised experimental study",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Laukkanen",
+    "Kunutsor",
+    "Khan",
+    "Willeit",
+    "Zaccardi",
+    "Laukkanen"
+   ],
+   "year": 2017,
+   "yearAlt": 2018,
+   "journal": "European Journal of Preventive Cardiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1177/20501579211028647": {
    "kind": "doi",
    "valid": true,
@@ -7164,6 +7426,41 @@
    "journal": "Medicine &amp; Science in Sports &amp; Exercise",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1253/circj.cj-16-0051": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Waon Therapy for Managing Chronic Heart Failure　– Results From a Multicenter Prospective Randomized WAON-CHF Study –",
+   "firstAuthor": "Tei",
+   "authors": [
+    "Tei",
+    "Imamura",
+    "Kinugawa",
+    "Inoue",
+    "Masuyama",
+    "Inoue",
+    "Noike",
+    "Muramatsu",
+    "Takeishi",
+    "Saku",
+    "Harada",
+    "Daida",
+    "Kobayashi",
+    "Hagiwara",
+    "Nagayama",
+    "Momomura",
+    "Yonezawa",
+    "Ito",
+    "Gojo",
+    "Akaishi",
+    "Miyata",
+    "Ohishi",
+    "WAON-CHF Study Investigators"
+   ],
+   "year": 2016,
+   "journal": "Circulation Journal",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1258/acb.2011.011115": {
    "kind": "doi",
@@ -8935,6 +9232,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.5114/biolsport.2023.119289": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A post-exercise infrared sauna session improves recovery of neuromuscular performance and muscle soreness after resistance exercise training",
+   "firstAuthor": "Ahokas",
+   "authors": [
+    "Ahokas",
+    "Ihalainen",
+    "Hanstock",
+    "Savolainen",
+    "Kyröläinen"
+   ],
+   "year": 2023,
+   "journal": "Biology of Sport",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.5664/jcsm.1476": {
    "kind": "doi",
    "valid": true,
@@ -9385,6 +9699,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:11165553": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Benefits and risks of sauna bathing.",
+   "firstAuthor": "Hannuksela",
+   "authors": [
+    "Hannuksela",
+    "Ellahham"
+   ],
+   "year": 2001,
+   "journal": "Am J Med",
+   "doi": "10.1016/s0002-9343(00)00671-9",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:11189015": {
    "kind": "pmid",
    "valid": true,
@@ -9799,6 +10128,23 @@
    "doi": "10.1016/j.annemergmed.2004.06.016",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:15703536": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Maternal hyperthermia and the risk for neural tube defects in offspring: systematic review and meta-analysis.",
+   "firstAuthor": "Moretti",
+   "authors": [
+    "Moretti",
+    "Bar-Oz",
+    "Fried",
+    "Koren"
+   ],
+   "year": 2005,
+   "journal": "Epidemiology",
+   "doi": "10.1097/01.ede.0000152903.55579.15",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:15800134": {
    "kind": "pmid",
@@ -10324,6 +10670,21 @@
    "doi": "10.1111/j.1542-474X.2008.00219.x",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:18471223": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Death in sauna.",
+   "firstAuthor": "Kenttämies",
+   "authors": [
+    "Kenttämies",
+    "Karkola"
+   ],
+   "year": 2008,
+   "journal": "J Forensic Sci",
+   "doi": "10.1111/j.1556-4029.2008.00703.x",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:18503485": {
    "kind": "pmid",
@@ -11195,6 +11556,22 @@
    "doi": "10.1097/HJH.0b013e3283520077",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:22505948": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Arsenic, cadmium, lead, and mercury in sweat: a systematic review.",
+   "firstAuthor": "Sears",
+   "authors": [
+    "Sears",
+    "Kerr",
+    "Bray"
+   ],
+   "year": 2012,
+   "journal": "J Environ Public Health",
+   "doi": "10.1155/2012/184745",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:22547634": {
    "kind": "pmid",
@@ -12207,6 +12584,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:25705824": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Association between sauna bathing and fatal cardiovascular and all-cause mortality events.",
+   "firstAuthor": "Laukkanen",
+   "authors": [
+    "Laukkanen",
+    "Khan",
+    "Zaccardi",
+    "Laukkanen"
+   ],
+   "year": 2015,
+   "journal": "JAMA Intern Med",
+   "doi": "10.1001/jamainternmed.2014.8187",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:25818837": {
    "kind": "pmid",
    "valid": true,
@@ -12686,6 +13080,41 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:27001189": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Waon Therapy for Managing Chronic Heart Failure　- Results From a Multicenter Prospective Randomized WAON-CHF Study.",
+   "firstAuthor": "Tei",
+   "authors": [
+    "Tei",
+    "Imamura",
+    "Kinugawa",
+    "Inoue",
+    "Masuyama",
+    "Inoue",
+    "Noike",
+    "Muramatsu",
+    "Takeishi",
+    "Saku",
+    "Harada",
+    "Daida",
+    "Kobayashi",
+    "Hagiwara",
+    "Nagayama",
+    "Momomura",
+    "Yonezawa",
+    "Ito",
+    "Gojo",
+    "Akaishi",
+    "Miyata",
+    "Ohishi"
+   ],
+   "year": 2016,
+   "journal": "Circ J",
+   "doi": "10.1253/circj.CJ-16-0051",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:27136449": {
    "kind": "pmid",
    "valid": true,
@@ -12703,6 +13132,53 @@
    "doi": "10.7326/M15-2175",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:27172277": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Whole-Body Hyperthermia for the Treatment of Major Depressive Disorder: A Randomized Clinical Trial.",
+   "firstAuthor": "Janssen",
+   "authors": [
+    "Janssen",
+    "Lowry",
+    "Mehl",
+    "Allen",
+    "Kelly",
+    "Gartner",
+    "Medrano",
+    "Begay",
+    "Rentscher",
+    "White",
+    "Fridman",
+    "Roberts",
+    "Robbins",
+    "Hanusch",
+    "Cole",
+    "Raison"
+   ],
+   "year": 2016,
+   "journal": "JAMA Psychiatry",
+   "doi": "10.1001/jamapsychiatry.2016.1031",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:27270841": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Passive heat therapy improves endothelial function, arterial stiffness and blood pressure in sedentary humans.",
+   "firstAuthor": "Brunt",
+   "authors": [
+    "Brunt",
+    "Howard",
+    "Francisco",
+    "Ely",
+    "Minson"
+   ],
+   "year": 2016,
+   "journal": "J Physiol",
+   "doi": "10.1113/JP272453",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:27347892": {
    "kind": "pmid",
@@ -12827,6 +13303,23 @@
    "doi": "10.1523/JNEUROSCI.2586-16.2016",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:27932366": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sauna bathing is inversely associated with dementia and Alzheimer's disease in middle-aged Finnish men.",
+   "firstAuthor": "Laukkanen",
+   "authors": [
+    "Laukkanen",
+    "Kunutsor",
+    "Kauhanen",
+    "Laukkanen"
+   ],
+   "year": 2017,
+   "journal": "Age Ageing",
+   "doi": "10.1093/ageing/afw212",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:28033127": {
    "kind": "pmid",
@@ -13099,6 +13592,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:28633297": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sauna Bathing and Incident Hypertension: A Prospective Cohort Study.",
+   "firstAuthor": "Zaccardi",
+   "authors": [
+    "Zaccardi",
+    "Laukkanen",
+    "Willeit",
+    "Kunutsor",
+    "Kauhanen",
+    "Laukkanen"
+   ],
+   "year": 2017,
+   "journal": "Am J Hypertens",
+   "doi": "10.1093/ajh/hpx102",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:28642676": {
    "kind": "pmid",
    "valid": true,
@@ -13281,6 +13793,27 @@
    "doi": "10.3389/fpubh.2017.00258",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:29048215": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sauna exposure leads to improved arterial compliance: Findings from a non-randomised experimental study.",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Laukkanen",
+    "Kunutsor",
+    "Khan",
+    "Willeit",
+    "Zaccardi",
+    "Laukkanen"
+   ],
+   "year": 2018,
+   "yearAlt": 2017,
+   "journal": "Eur J Prev Cardiol",
+   "doi": "10.1177/2047487317737629",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:29075623": {
    "kind": "pmid",
@@ -13507,6 +14040,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:29849692": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Clinical Effects of Regular Dry Sauna Bathing: A Systematic Review.",
+   "firstAuthor": "Hussain",
+   "authors": [
+    "Hussain",
+    "Cohen"
+   ],
+   "year": 2018,
+   "journal": "Evid Based Complement Alternat Med",
+   "doi": "10.1155/2018/1857413",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:29884281": {
    "kind": "pmid",
    "valid": true,
@@ -13642,6 +14190,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:30077204": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cardiovascular and Other Health Benefits of Sauna Bathing: A Review of the Evidence.",
+   "firstAuthor": "Laukkanen",
+   "authors": [
+    "Laukkanen",
+    "Laukkanen",
+    "Kunutsor"
+   ],
+   "year": 2018,
+   "journal": "Mayo Clin Proc",
+   "doi": "10.1016/j.mayocp.2018.04.008",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:30218689": {
    "kind": "pmid",
    "valid": true,
@@ -13657,6 +14221,28 @@
    "doi": "10.1016/j.biopsycho.2018.09.004",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:30239008": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of sauna bath on heart failure: A systematic review and meta-analysis.",
+   "firstAuthor": "Källström",
+   "authors": [
+    "Källström",
+    "Soveri",
+    "Oldgren",
+    "Laukkanen",
+    "Ichiki",
+    "Tei",
+    "Timmerman",
+    "Berglund",
+    "Hägglund"
+   ],
+   "year": 2018,
+   "journal": "Clin Cardiol",
+   "doi": "10.1002/clc.23077",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:30245619": {
    "kind": "pmid",
@@ -13839,6 +14425,21 @@
    "doi": "10.1016/j.neuroimage.2019.04.081",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:31126559": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The blood pressure and heart rate during sauna bath correspond to cardiac responses during submaximal dynamic exercise.",
+   "firstAuthor": "Ketelhut",
+   "authors": [
+    "Ketelhut",
+    "Ketelhut"
+   ],
+   "year": 2019,
+   "journal": "Complement Ther Med",
+   "doi": "10.1016/j.ctim.2019.05.002",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:31139634": {
    "kind": "pmid",
@@ -15340,6 +15941,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:36813265": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effects of a single and a series of Finnish sauna sessions on the immune response and HSP-70 levels in trained and untrained men.",
+   "firstAuthor": "Pilch",
+   "authors": [
+    "Pilch",
+    "Szarek",
+    "Olga",
+    "Anna",
+    "Żychowska",
+    "Ewa",
+    "Andraščíková Š",
+    "Pałka"
+   ],
+   "year": 2023,
+   "journal": "Int J Hyperthermia",
+   "doi": "10.1080/02656736.2023.2179672",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:36871835": {
    "kind": "pmid",
    "valid": true,
@@ -15460,6 +16082,25 @@
    "doi": "10.1016/j.biopsycho.2023.108589",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:37398966": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A post-exercise infrared sauna session improves recovery of neuromuscular performance and muscle soreness after resistance exercise training.",
+   "firstAuthor": "Ahokas",
+   "authors": [
+    "Ahokas",
+    "Ihalainen",
+    "Hanstock",
+    "Savolainen",
+    "Kyröläinen"
+   ],
+   "year": 2023,
+   "yearAlt": 2022,
+   "journal": "Biol Sport",
+   "doi": "10.5114/biolsport.2023.119289",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:37436518": {
    "kind": "pmid",
@@ -15936,6 +16577,26 @@
    "doi": "10.1016/j.neurom.2025.04.001",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:40332494": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Comparison of thermoregulatory, cardiovascular, and immune responses to different passive heat therapy modalities.",
+   "firstAuthor": "Atencio",
+   "authors": [
+    "Atencio",
+    "Reed",
+    "Wiedenfeld Needham",
+    "Lucernoni",
+    "Comrada",
+    "Halliwill",
+    "Minson"
+   ],
+   "year": 2025,
+   "journal": "Am J Physiol Regul Integr Comp Physiol",
+   "doi": "10.1152/ajpregu.00012.2025",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:40362779": {
    "kind": "pmid",

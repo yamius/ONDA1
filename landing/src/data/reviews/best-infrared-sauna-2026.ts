@@ -69,11 +69,11 @@ const bestInfraredSauna2026: Comparison = {
     },
     {
       q: 'Is infrared sauna better than traditional Finnish sauna?',
-      a: 'Different mechanisms, different evidence bases. Traditional Finnish convection has the deepest published research (Finnish cardiovascular and dementia cohort studies). Infrared sauna research is real but newer and narrower. Either is credible; pick on heat-source preference and install conditions.',
+      a: 'Different mechanisms, different evidence bases. Traditional Finnish convection has the deepest published research (observational Finnish cardiovascular and dementia cohort studies — associations, not cause). Infrared sauna research is newer, smaller and narrower, and the Finnish cohort results do not apply to infrared cabins. See [the evidence on sauna and heat](/science/evidence/sauna-heat-exposure). Either is a reasonable choice; pick on heat-source preference and install conditions.',
     },
     {
       q: 'What is the difference between near-IR and full-spectrum IR?',
-      a: 'Near-IR (700–1200 nm) is closer to natural sunlight wavelengths and penetrates deeper into tissue. Full-spectrum (near + mid + far) adds longer-wavelength heating useful for sweating and thermal-stress benefits. SaunaSpace runs near-IR only via incandescent bulbs; Sunlighten and Clearlight deliver full-spectrum via combined heating elements.',
+      a: 'Near-IR (700–1200 nm) is closer to natural sunlight wavelengths and is said by makers to penetrate deeper into tissue; a health benefit of that has not been shown. Full-spectrum (near + mid + far) adds longer-wavelength heating, which mainly makes you sweat. SaunaSpace runs near-IR only via incandescent bulbs; Sunlighten and Clearlight deliver full-spectrum via combined heating elements.',
     },
     {
       q: 'Should I worry about EMF in infrared saunas?',

@@ -52,9 +52,7 @@ If you want the largest structured catalogue with evidence-grounded copy and bro
 
 ## When is SOMA Breath the right pick?
 
-If you want beat-paced rhythmic music breathwork with ceremony framing and access to a global certified-facilitator community — SOMA is the right shape.
-
-Safety: Wim Hof-style rounds combine hyperventilation with breath-holds, which can cause fainting without warning — never practise them in or near water (including baths and cold plunges) or while driving, and talk to a doctor first if you have epilepsy, heart disease or high blood pressure, or are pregnant. See [fast breathing: what the evidence shows](/science/evidence/fast-breathing).`,
+If you want beat-paced rhythmic music breathwork with ceremony framing and access to a global certified-facilitator community — SOMA is the right shape.`,
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',

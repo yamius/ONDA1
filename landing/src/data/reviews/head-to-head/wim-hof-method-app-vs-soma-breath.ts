@@ -52,9 +52,7 @@ If you are committed to the WHM specifically and want the official curriculum, s
 
 ## When is SOMA Breath the right pick?
 
-If you want rhythmic music-paced breathwork that includes WHM-style rounds within broader pranayama context — SOMA is the right shape. Different pacing, broader scope.
-
-Safety: Wim Hof-style rounds combine hyperventilation with breath-holds, which can cause fainting without warning — never practise them in or near water (including baths and cold plunges) or while driving, and talk to a doctor first if you have epilepsy, heart disease or high blood pressure, or are pregnant. See [fast breathing: what the evidence shows](/science/evidence/fast-breathing).`,
+If you want rhythmic music-paced breathwork that includes WHM-style rounds within broader pranayama context — SOMA is the right shape. Different pacing, broader scope.`,
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',

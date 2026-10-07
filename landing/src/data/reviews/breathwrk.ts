@@ -48,8 +48,6 @@ Breathwrk is the structured breathwork reference — biggest library, broadest t
 
 No community or live-session layer (Othership's differentiator), no HRV-driven session adaptation (Inhale's differentiator), and less holotropic / emotional-release focus than Pause or SOMA. Breathwrk is excellent for structured daily practice; it's not the right shape for deep emotional-release sessions or for community-driven breathwork culture.
 
-Safety: Wim Hof-style rounds combine hyperventilation with breath-holds, which can cause fainting without warning — never practise them in or near water (including baths and cold plunges) or while driving, and talk to a doctor first if you have epilepsy, heart disease or high blood pressure, or are pregnant. See [fast breathing: what the evidence shows](/science/evidence/fast-breathing).
-
 ## Who should buy Breathwrk?
 
 Choose Breathwrk if you want the largest structured library and science-grounded copy at the best premium-tier price. For community + music-driven sessions, Othership. For HRV biofeedback, Inhale. For emotional release, Pause Breathwork. For free entry, iBreathe or Breathe2Relax.

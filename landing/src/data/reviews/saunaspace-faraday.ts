@@ -56,10 +56,10 @@ Choose SaunaSpace Faraday if near-IR-specific exposure and maximum EMF shielding
 
 ## Background reading
 
-The biology of why heat exposure works — and the protocols that compound with the hardware.
+Background reading on the ideas behind heat exposure — mostly hypotheses, not effects shown in people.
 
-- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why heat stress drives mitochondrial density up
-- [Mitochondrial DNA and red light](/articles/mitochondrial-dna-red-light) — how near-IR photons reach mitochondria — the mechanism IR saunas borrow
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — the idea that heat stress affects mitochondria (not shown in people)
+- [Mitochondrial DNA and red light](/articles/mitochondrial-dna-red-light) — how near-IR photons reach mitochondria — the mechanism IR sauna makers point to (not shown for saunas)
 - [Longevity hardware and cellular cleanup](/articles/longevity-hardware-cellular-cleanup) — how sauna fits the broader autophagy / mitophagy stack
 `,
   references: [
