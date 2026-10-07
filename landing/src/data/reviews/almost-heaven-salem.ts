@@ -72,14 +72,6 @@ The sticker price includes the sauna and heater, but plan for:
 - **Assembly:** it arrives as a DIY kit; plan a day with a helper or pay an installer.
 - **Running costs:** electricity for a 6 kW heater during warm-up and sessions, plus occasional stone and wood care.
 
-## Safety: who should be careful
-
-- **Heart conditions:** with unstable angina, a recent heart attack, severe aortic stenosis or uncontrolled blood pressure, ask your doctor first.
-- **Alcohol:** don’t drink before or during a session — it raises the risk of fainting, low blood pressure and heart-rhythm problems.
-- **Dehydration:** drink water, keep sessions to roughly 10–20 minutes, and get out if you feel dizzy.
-- **Children:** only short, supervised sessions at lower temperatures.
-- **Pregnancy:** avoid raising core temperature, especially early in pregnancy; talk to your clinician first.
-
 ## How the Salem compares
 
 | Sauna | Type | Price (our review) | Capacity | Best for |

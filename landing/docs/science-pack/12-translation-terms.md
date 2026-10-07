@@ -26,6 +26,7 @@ Binding terminology for `content/science-i18n/<lang>/` and for any translated ar
 | ru/uk | photobiomodulation | «фотобиомодуляция (PBM)» / «фотобіомодуляція (PBM)» at first mention, then **PBM** — never «ФБМ» (owner decision 2026-10-08; same principle as HRV) |
 | fr | red light therapy | **«thérapie par lumière rouge (photobiomodulation)»**; never «luminothérapie rouge» (in France luminothérapie = bright-light therapy for winter depression). Short meta title «Lumière rouge» is fine (owner decision 2026-10-08) |
 | de | evidence class "Emerging" | **«Erste Hinweise»**; not «Vorläufig», «aufkommend» or «Früh» (owner decision 2026-10-08) |
+| de | form of address | du everywhere (science pages, safety blocks, articles) — owner decision 2026-10-08 |
 | ru/uk | FDA "listed" | «внесено в перечень» / «внесено до переліку» (owner decision 2026-10-08) |
 | all | FDA statuses | keep **registered ≠ cleared ≠ approved** distinct; English word in brackets at first mention (ru «зарегистрировано», «допущено (cleared)», «одобрено (approved)»); never translate clearance as approval |
 | ja | hematopoietic stem cell transplant | 造血幹細胞移植 (EN now says "hematopoietic stem cell transplant", per MASCC/ISOO 2019) |

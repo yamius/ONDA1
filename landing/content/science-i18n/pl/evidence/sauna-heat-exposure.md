@@ -51,7 +51,7 @@ evidenceMap:
   - claim: "Reakcje białek szoku cieplnego na saunę badano u ludzi tylko w małych, krótkich badaniach."
     limitation: "Dwudziestu młodych mężczyzn; brak grupy kontrolnej; streszczenie nie podaje wyraźnego wyniku dotyczącego białek szoku cieplnego; nic nie wiąże go ze zdrowiem ani długością życia."
   - claim: "Zgon w saunie jest rzadki nawet w Finlandii; połowa zmarłych była pod wpływem alkoholu."
-    limitation: "Fińska dokumentacja sądowo-medyczna z lat dziewięćdziesiątych i początku dwutysięcznych."
+    limitation: "Fińska dokumentacja sądowo-medyczna z lat 1990–2002."
   - claim: "Alkohol podczas korzystania z sauny zwiększa ryzyko niskiego ciśnienia krwi, zaburzeń rytmu serca i nagłego zgonu; niestabilna dławica piersiowa, niedawny zawał serca i ciężkie zwężenie zastawki aortalnej są przeciwwskazaniami."
     limitation: "Przegląd narracyjny."
   - claim: "Hipertermia matki we wczesnej ciąży wiąże się z wyższym ryzykiem wad cewy nerwowej."

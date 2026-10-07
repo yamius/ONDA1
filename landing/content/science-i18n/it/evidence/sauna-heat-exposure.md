@@ -51,7 +51,7 @@ evidenceMap:
   - claim: "Nell’uomo, la risposta delle proteine da shock termico alla sauna è stata studiata solo in studi piccoli e brevi."
     limitation: "Venti giovani uomini; nessun gruppo di controllo; l’abstract non riporta un risultato chiaro sulle proteine da shock termico; nulla le collega alla salute o alla durata della vita."
   - claim: "Morire in sauna è raro anche in Finlandia; la metà delle persone decedute era sotto l’effetto dell’alcol."
-    limitation: "Archivi medico-legali finlandesi degli anni Novanta e dei primi anni Duemila."
+    limitation: "Archivi medico-legali finlandesi del periodo 1990–2002."
   - claim: "L’alcol durante la sauna aumenta il rischio di pressione bassa, aritmie e morte improvvisa; angina instabile, infarto recente e stenosi aortica grave sono controindicazioni."
     limitation: "Revisione narrativa."
   - claim: "L’ipertermia materna all’inizio della gravidanza è associata a un rischio più alto di difetti del tubo neurale."

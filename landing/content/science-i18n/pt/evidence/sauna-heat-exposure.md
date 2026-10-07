@@ -51,7 +51,7 @@ evidenceMap:
   - claim: "Em humanos, a resposta das proteínas de choque térmico à sauna foi estudada apenas em estudos pequenos e curtos."
     limitation: "Vinte homens jovens; sem grupo de controle; o resumo não relata um resultado claro sobre as proteínas de choque térmico; nada as liga à saúde ou à duração da vida."
   - claim: "Morrer na sauna é raro mesmo na Finlândia; metade das pessoas que morreram estava sob efeito de álcool."
-    limitation: "Registros médico-legais finlandeses dos anos noventa e do começo dos anos dois mil."
+    limitation: "Registros médico-legais finlandeses de 1990–2002."
   - claim: "O álcool durante a sauna aumenta o risco de pressão baixa, arritmia e morte súbita; angina instável, infarto recente e estenose aórtica grave são contraindicações."
     limitation: "Revisão narrativa."
   - claim: "A hipertermia materna no início da gravidez está associada a maior risco de defeitos do tubo neural."

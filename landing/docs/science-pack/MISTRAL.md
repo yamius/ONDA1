@@ -133,6 +133,8 @@ Every row of `evidenceMap` has exactly one class. There are no numeric grades an
 
 **Numbers.** Numbers appear only through `{{fact:…}}` or, for a value you are proposing, `{{proposed:P1}}` (§1.11). Title, metaTitle, metaDescription, shortAnswer and keyPoints contain no digits at all; write numbers there in words.
 
+**Exception — years and study periods (owner decision 2026-10-08).** When a year or period only says WHEN a study was conducted or published (bibliographic description: "followed from 1990–2002", "a 2014 trial"), write it in digits in the body — 1900–2099, single years or ranges such as 1990–2002 / 1990-2002, in every language (do not spell years out in words). The `{{fact}}` rule is for claims: norms, effects, percentages, counts, durations. A year attached to a count or unit ("2000 participants") is a number, not a year, and still fails. Title, metaTitle, metaDescription, shortAnswer and keyPoints stay digit-free. Checked automatically (STUDY_YEAR in check-science-content and science-translation-helper).
+
 **Wording.** Banned wording is listed in [05-banned-wording.md](#05-banned-wording).
 
 ## 1.5 HRV-specific limits
@@ -1138,6 +1140,7 @@ Owner decision 2026-10-08.
 - Where a shared "Safety first" block renders (SaunaSafetyBlock, FastBreathingSafetyBlock, RedLightSafetyBlock, ColdSafetyBlock, MouthTapeSafetyBlock — page lists in `src/data/*-safety-i18n.ts`), do NOT add a separate plain-text safety paragraph to REVIEWS, COMPARISONS/ROUND-UPS or HEAD-TO-HEADS. The block is the single safety message there.
 - FAQ answers that directly answer a safety question stay — they are answers, not duplicates.
 - In ARTICLES with protocols, KEEP the short safety paragraph right at the instruction (in addition to the block).
+- PRODUCT-SPECIFIC warnings stay in reviews (owner decision 2026-10-08): sentences about THIS model's features, its manual/instructions or model-specific risks (e.g. a heater guard, a timer, the maker's stated distance) are kept. Generic sentences that repeat the shared block (eyes/goggles, photosensitising drugs, pregnancy, alcohol, hydration, heart conditions, children) are removed; if nothing product-specific remains, the whole Safety section is removed. Applied: platinumled-biomax-600 and almost-heaven-salem (EN + 11 langs) — both sections were fully generic and were removed.
 
 ---
 

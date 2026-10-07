@@ -52,7 +52,7 @@ evidenceMap:
   - claim: "Chez l’humain, la réponse des protéines de choc thermique au sauna n’a été étudiée que dans de petites études de courte durée."
     limitation: "Vingt jeunes hommes ; pas de groupe témoin ; le résumé ne rapporte aucun résultat net sur les protéines de choc thermique ; rien ne les relie à la santé ou à la durée de vie."
   - claim: "Mourir au sauna est rare, même en Finlande ; la moitié des personnes décédées étaient sous l’emprise de l’alcool."
-    limitation: "Dossiers médico-légaux finlandais des années quatre-vingt-dix et du début des années deux mille."
+    limitation: "Dossiers médico-légaux finlandais de la période 1990–2002."
   - claim: "L’alcool pendant le sauna augmente le risque d’hypotension, de troubles du rythme cardiaque et de mort subite ; l’angor instable, un infarctus récent et un rétrécissement aortique sévère sont des contre-indications."
     limitation: "Revue narrative."
   - claim: "Une hyperthermie maternelle en début de grossesse est associée à un risque plus élevé d’anomalies du tube neural."

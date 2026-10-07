@@ -77,12 +77,12 @@ export const MOUTH_TAPE_SAFETY: Record<Lang, MouthTapeSafetyCopy> = {
   },
   de: {
     title: 'Sicherheit zuerst',
-    nose: 'Kleben Sie den Mund nicht zu, wenn Sie nicht frei durch die Nase atmen können – etwa bei Erkältung, Allergie, Nasenpolypen oder schiefer Nasenscheidewand. Es besteht Erstickungsgefahr.',
+    nose: 'Kleb den Mund nicht zu, wenn du nicht frei durch die Nase atmen kannst – etwa bei Erkältung, Allergie, Nasenpolypen oder schiefer Nasenscheidewand. Es besteht Erstickungsgefahr.',
     apnea: 'Mögliche Schlafapnoe (lautes Schnarchen, nächtliches Nach-Luft-Schnappen oder Würgen, Atemaussetzer, die dem Partner auffallen, Tagesmüdigkeit)? Zuerst zum Arzt: Mundtape und Nasendilatatoren können das Schnarchen leiser machen und so das Warnzeichen verdecken, ohne die Ursache zu behandeln.',
     alcohol: 'Nicht nach Alkohol oder Schlaftabletten.',
     children: 'Nicht bei Kindern, außer auf ärztlichen Rat.',
     sick: 'Nicht bei Übelkeit, möglichem Erbrechen oder nächtlichem Reflux.',
-    stop: 'Hören Sie auf und gehen Sie zum Arzt, wenn Sie atemlos, panisch oder mit Kopfschmerzen aufwachen.',
+    stop: 'Hör auf und geh zum Arzt, wenn du atemlos, panisch oder mit Kopfschmerzen aufwachst.',
     link: 'Was die Studienlage zeigt – und die Risiken →',
   },
   fr: {

@@ -82,10 +82,10 @@ export const RED_LIGHT_SAFETY: Record<Lang, RedLightSafetyCopy> = {
   de: {
     title: 'Sicherheit zuerst: Rot- und Nahinfrarotlicht',
     items: [
-      { lead: 'Schützen Sie Ihre Augen.', text: 'Tragen Sie die mitgelieferte Schutzbrille (oder eine für diese Wellenlängen geeignete) und blicken Sie nie in die LEDs. Nahinfrarotlicht ist unsichtbar und löst keinen Lidschlussreflex aus – ein Panel kann schwach wirken, obwohl seine Leistung hoch ist.' },
-      { lead: 'Halten Sie Abstand und Dauer laut Hersteller ein.', text: 'Mehr Licht ist nicht besser: Eine stärkere oder längere Sitzung bringt keinen Zusatznutzen, und bei Lichttherapie gilt oft „weniger kann mehr sein“.' },
-      { lead: 'Sprechen Sie vorher mit einer Ärztin oder einem Arzt,', text: 'wenn Sie schwanger sind, lichtsensibilisierende Medikamente oder Hautprodukte verwenden, eine lichtempfindliche Erkrankung haben, kürzlich ein Peeling, eine Laserbehandlung oder Operation hatten oder ein sich veränderndes Muttermal, eine unklare Hautveränderung oder Hautkrebs in der Vorgeschichte haben.' },
-      { lead: 'Brechen Sie ab, wenn die Haut schmerzhaft heiß oder rot wird.', text: 'Suchen Sie ärztlichen Rat, wenn Rötung, Schmerzen oder Augenbeschwerden nicht abklingen.' },
+      { lead: 'Schütze deine Augen.', text: 'Trag die mitgelieferte Schutzbrille (oder eine für diese Wellenlängen geeignete) und blick nie in die LEDs. Nahinfrarotlicht ist unsichtbar und löst keinen Lidschlussreflex aus – ein Panel kann schwach wirken, obwohl seine Leistung hoch ist.' },
+      { lead: 'Halte Abstand und Dauer laut Hersteller ein.', text: 'Mehr Licht ist nicht besser: Eine stärkere oder längere Sitzung bringt keinen Zusatznutzen, und bei Lichttherapie gilt oft „weniger kann mehr sein“.' },
+      { lead: 'Sprich vorher mit einer Ärztin oder einem Arzt,', text: 'wenn du schwanger bist, lichtsensibilisierende Medikamente oder Hautprodukte verwendest, eine lichtempfindliche Erkrankung hast, kürzlich ein Peeling, eine Laserbehandlung oder Operation hattest oder ein sich veränderndes Muttermal, eine unklare Hautveränderung oder Hautkrebs in der Vorgeschichte hast.' },
+      { lead: 'Brich ab, wenn die Haut schmerzhaft heiß oder rot wird.', text: 'Hol dir ärztlichen Rat, wenn Rötung, Schmerzen oder Augenbeschwerden nicht abklingen.' },
     ],
     note: 'Bei der FDA „registriert“ heißt nicht „freigegeben“ (cleared), und „freigegeben“ heißt nicht „zugelassen“ (approved): Eine Registrierung sagt nichts darüber, ob ein Gerät wirkt. Ein Panel oder eine Maske für zu Hause ersetzt keine ärztliche Behandlung.',
     link: 'Was die Studien zeigen – und welche Risiken es gibt →',

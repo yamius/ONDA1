@@ -72,9 +72,9 @@ export const COLD_SAFETY: Record<Lang, ColdSafetyCopy> = {
     title: 'Sicherheit zuerst',
     shock: 'Der Kälteschock kann in den ersten Minuten tödlich sein – noch bevor der Körper auskühlt: reflexartiges Luftschnappen, schnelle unkontrollierte Atmung und Herzrhythmusstörungen.',
     items: [
-      'Gehen Sie nie allein in kaltes offenes Gewässer.',
+      'Geh nie allein in kaltes offenes Gewässer.',
       'Nie nach Alkohol.',
-      'Sprechen Sie vorher mit einer Ärztin oder einem Arzt, wenn Sie eine Herzerkrankung, Herzrhythmusstörungen, Bluthochdruck, das Raynaud-Syndrom oder eine andere Durchblutungsstörung haben oder schwanger sind.',
+      'Sprich vorher mit einer Ärztin oder einem Arzt, wenn du eine Herzerkrankung, Herzrhythmusstörungen, Bluthochdruck, das Raynaud-Syndrom oder eine andere Durchblutungsstörung hast oder schwanger bist.',
       'Bei Brustschmerzen, Herzrasen oder Ohnmacht sofort aufhören und Hilfe holen.',
     ],
     link: 'Was die Forschung zeigt – und die Risiken →',

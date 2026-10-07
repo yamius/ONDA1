@@ -52,7 +52,7 @@ evidenceMap:
   - claim: "Die Reaktion der Hitzeschockproteine auf die Sauna wurde beim Menschen nur in kleinen, kurzen Studien untersucht."
     limitation: "Zwanzig junge Männer; keine Kontrollgruppe; die Zusammenfassung berichtet kein klares Ergebnis zu Hitzeschockproteinen; nichts verbindet sie mit Gesundheit oder Lebensdauer."
   - claim: "Der Tod in der Sauna ist selbst in Finnland selten; die Hälfte der Verstorbenen stand unter Alkoholeinfluss."
-    limitation: "Finnische rechtsmedizinische Akten aus den Neunziger- und frühen Zweitausenderjahren."
+    limitation: "Finnische rechtsmedizinische Akten aus den Jahren 1990–2002."
   - claim: "Alkohol beim Saunabaden erhöht das Risiko für niedrigen Blutdruck, Herzrhythmusstörungen und plötzlichen Tod; instabile Angina pectoris, ein kürzlicher Herzinfarkt und eine schwere Aortenklappenstenose sind Gegenanzeigen."
     limitation: "Narrative Übersicht."
   - claim: "Eine Überhitzung der Mutter in der Frühschwangerschaft ist mit einem höheren Risiko für Neuralrohrdefekte verbunden."

@@ -26,7 +26,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "adaptation-hack-range-fractionation": {
     "published": "2026-03-14T12:57:50Z",
-    "modified": "2026-10-06T20:41:29+02:00"
+    "modified": "2026-10-07T19:28:02+02:00"
   },
   "adrenal-governor-thermal-runaway": {
     "published": "2026-04-01T13:38:29Z",
@@ -42,7 +42,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "ancestral-sync-circadian-anchors": {
     "published": "2026-03-24T09:54:24Z",
-    "modified": "2026-10-07T07:44:50+02:00"
+    "modified": "2026-10-07T19:28:02+02:00"
   },
   "anterior-cingulate-core-coherence-monitoring": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -362,7 +362,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "longevity-hardware-cellular-cleanup": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-07T14:55:48+02:00"
+    "modified": "2026-10-07T19:28:02+02:00"
   },
   "longevity-protocol-biological-clock-reset": {
     "published": "2026-03-24T10:01:04Z",
@@ -422,7 +422,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "mitochondrial-biogenesis-cellular-power-grid": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-07T14:55:48+02:00"
+    "modified": "2026-10-07T19:28:02+02:00"
   },
   "mitochondrial-dna-red-light": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -730,7 +730,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-10-07T14:55:48+02:00"
+    "modified": "2026-10-07T19:28:02+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1550,7 +1550,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:heat-shock-proteins": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-07T17:22:54.000Z"
+    "modified": "2026-10-07T17:28:02.000Z"
   },
   "glossary:antifragility": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-07T14:55:48+02:00"
+    "modified": "2026-10-07T19:28:02+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1746,7 +1746,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-07T14:55:48+02:00"
+    "modified": "2026-10-07T19:28:02+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

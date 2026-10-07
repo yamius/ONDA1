@@ -61,13 +61,6 @@ The evidence is strongest for skin. In a controlled trial of 136 volunteers, Wun
 
 PlatinumLED’s product page recommends **10–20 minutes per treatment area**, at about **8–14 inches for deep tissue** or **16–24 inches for superficial facial skin**. Closer means higher irradiance and a shorter session; more is not better, as photobiomodulation follows a dose-response curve where very high doses can reduce the effect. Start at the short end and use it consistently (most studies used several sessions a week).
 
-## Safety
-
-- **Eyes:** do not stare into the LEDs. Near-infrared is invisible, so the panel feels dimmer than its actual output — wear the protective goggles, especially for face sessions.
-- **Photosensitising medicines and conditions:** check with a doctor first if you take drugs that increase light sensitivity (for example some antibiotics, isotretinoin, certain diuretics) or have a light-sensitive condition such as lupus or porphyria.
-- **Pregnancy, cancer, or treating over a suspicious mole or tattoo:** ask a clinician first.
-- **Heat:** stop if the skin gets uncomfortably hot.
-
 ## How it compares
 
 | Panel | Price (USD) | Wavelengths | Notes |

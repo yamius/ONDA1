@@ -51,7 +51,7 @@ evidenceMap:
   - claim: "De reactie van heatshockeiwitten op de sauna is bij mensen alleen in kleine, korte studies onderzocht."
     limitation: "Twintig jonge mannen; geen controlegroep; de samenvatting meldt geen duidelijke uitkomst voor heatshockeiwitten; niets koppelt dit aan gezondheid of levensduur."
   - claim: "Overlijden in de sauna is zelfs in Finland zeldzaam; de helft van de overledenen stond onder invloed van alcohol."
-    limitation: "Finse forensische dossiers uit de jaren negentig en het begin van de jaren tweeduizend."
+    limitation: "Finse forensische dossiers uit de periode 1990–2002."
   - claim: "Alcohol tijdens het saunabezoek verhoogt het risico op lage bloeddruk, hartritmestoornissen en plotselinge dood; instabiele angina pectoris, een recent hartinfarct en ernstige aortaklepstenose zijn contra-indicaties."
     limitation: "Narratieve review."
   - claim: "Hyperthermie bij de moeder vroeg in de zwangerschap gaat samen met een hoger risico op neuralebuisdefecten."

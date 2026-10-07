@@ -101,6 +101,8 @@ Every row of `evidenceMap` has exactly one class. There are no numeric grades an
 
 **Numbers.** Numbers appear only through `{{fact:…}}` or, for a value you are proposing, `{{proposed:P1}}` (§1.11). Title, metaTitle, metaDescription, shortAnswer and keyPoints contain no digits at all; write numbers there in words.
 
+**Exception — years and study periods (owner decision 2026-10-08).** When a year or period only says WHEN a study was conducted or published (bibliographic description: "followed from 1990–2002", "a 2014 trial"), write it in digits in the body — 1900–2099, single years or ranges such as 1990–2002 / 1990-2002, in every language (do not spell years out in words). The `{{fact}}` rule is for claims: norms, effects, percentages, counts, durations. A year attached to a count or unit ("2000 participants") is a number, not a year, and still fails. Title, metaTitle, metaDescription, shortAnswer and keyPoints stay digit-free. Checked automatically (STUDY_YEAR in check-science-content and science-translation-helper).
+
 **Wording.** Banned wording is listed in [05-banned-wording.md](05-banned-wording.md).
 
 ## 1.5 HRV-specific limits

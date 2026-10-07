@@ -10,6 +10,12 @@ import { join } from 'node:path'
 import matter from 'gray-matter'
 import { factText, type FactLang } from '../src/data/science/facts'
 
+// Years / study periods (owner decision 2026-10-08): a year 1900–2099 or a range like "1990–2002" / "1990-2002"
+// describes WHEN a study ran (bibliographic description), not a claim — digits allowed in the BODY only.
+// Kept tight so data still fails: no digit or % next to it and no decimal/thousands separator ("12.2014", "2,000"), and not followed by a count/unit
+// ("2000 participants", "1950 ms" still fail). Title/meta/shortAnswer/keyPoints stay strict.
+const STUDY_YEAR = /(?<![\d.,])(?:19|20)\d{2}(?:\s?[–-]\s?(?:19|20)\d{2})?(?![\d%]|[.,]\d)(?!\s*(?:%|ms|bpm|mg|kg|g\b|min|h\b|people|participants|subjects|patients|men|women|adults|children|users|nights|days))/g
+
 const [lang, cmd, arg] = process.argv.slice(2)
 const hash = (t: string) => createHash('sha1').update(t.replace(/\r\n/g, '\n')).digest('hex').slice(0, 12)
 const pages: string[] = []
@@ -44,7 +50,7 @@ if (cmd === 'facts') {
     if (links(t.content) !== links(en.content)) errs.push('internal links differ from EN (keep every link and its EN path)')
     const h2 = (s: string) => (s.match(/^## /gm) ?? []).length
     if (h2(t.content) !== h2(en.content)) errs.push('number of ## sections differs')
-    const stray = t.content.replace(/\{\{fact:[^}]+\}\}/g, '').replace(/\[S\d+(?:,\s*S\d+)*\]/g, '').replace(/\]\([^)]*\)/g, ']').replace(/et al\.,? \d{4}/g, '').replace(/\b\d+\.\d+\.\d+\b/g, '').match(/[^\n]{0,25}\d[^\n]{0,25}/g)
+    const stray = t.content.replace(/\{\{fact:[^}]+\}\}/g, '').replace(/\[S\d+(?:,\s*S\d+)*\]/g, '').replace(/\]\([^)]*\)/g, ']').replace(/et al\.,? \d{4}/g, '').replace(/\b\d+\.\d+\.\d+\b/g, '').replace(STUDY_YEAR, ' ').match(/[^\n]{0,25}\d[^\n]{0,25}/g)
     if (stray) errs.push(`digits outside facts: ${stray.slice(0, 3).map((x) => `“${x.trim()}”`).join(', ')}`)
     if (errs.length) { bad++; console.log(`${tf}:\n  - ${errs.join('\n  - ')}`) }
   }
