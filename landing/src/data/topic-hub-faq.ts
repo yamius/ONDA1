@@ -345,7 +345,7 @@ const TOPIC_HUB_FAQ_RAW: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
   world: [
     {
       q: "Does forest bathing (shinrin-yoku) really work?",
-      a: "Measurably, yes. In a Japanese study across 38 forests, time among trees versus in the city lowered cortisol by 12.4%, cut sympathetic activity by 7.0%, lowered blood pressure and heart rate, and raised parasympathetic activity by 55.0%. The effect is a real shift toward calm, driven partly by compounds trees release into the air.",
+      a: "Measurably, yes. In a Japanese field study across 38 forests (small groups at each site), time among trees versus in the city was linked to 12.4% lower cortisol, cut sympathetic activity by 7.0%, lowered blood pressure and heart rate, and raised parasympathetic activity by 55.0%. The effect is a real shift toward calm, driven partly by compounds trees release into the air.",
       links: [{ href: "/articles/forest-bathing-shinrin-yoku-science", label: "Forest Bathing (Shinrin-yoku): What Japanese Research Actually Measured" }],
     },
     {

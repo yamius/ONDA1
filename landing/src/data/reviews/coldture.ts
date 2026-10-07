@@ -60,7 +60,7 @@ The biology of why cold exposure works — and the protocols that compound with 
 
 - [Vagus nerve exercises](/articles/vagus-nerve-exercises) — with whole-body immersion the main reaction is the sympathetic cold shock; the vagal (diving) response comes mainly from cold on the face, and HRV rises only during exposure ([evidence](/science/evidence/cold-exposure))
 - [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — how cold exposure shapes the cortisol curve
-- [Adrenal governor and thermal runaway](/articles/adrenal-governor-thermal-runaway) — the thermoregulatory side of the stress response
+- [Adrenal fatigue: what the evidence says](/articles/adrenal-governor-thermal-runaway) — why stress-related exhaustion is not "burnt-out adrenals", and when to see a doctor
 `,
   references: [
     { label: 'Coldture — official site', url: 'https://coldture.com/' },

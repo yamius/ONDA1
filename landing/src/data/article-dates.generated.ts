@@ -30,7 +30,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "adrenal-governor-thermal-runaway": {
     "published": "2026-04-01T13:38:29Z",
-    "modified": "2026-10-06T15:15:46+02:00"
+    "modified": "2026-10-07T01:04:29+02:00"
   },
   "ai-biomarker-tracking-predictive": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -854,11 +854,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:cortisol": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-07T05:33:56.000Z"
   },
   "glossary:peristalsis": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T05:33:56.000Z"
   },
   "glossary:heart-rate-variability": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -938,7 +938,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:hpa-axis": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T05:33:56.000Z"
   },
   "glossary:proprioception": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -962,7 +962,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:neuroendocrinology": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T05:33:56.000Z"
   },
   "glossary:pituitary": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -970,11 +970,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:adrenal": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T05:33:56.000Z"
   },
   "glossary:adrenaline": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T05:33:56.000Z"
   },
   "glossary:lymphology": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -982,7 +982,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:dhea": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-07T05:33:56.000Z"
   },
   "glossary:testosterone": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1166,7 +1166,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:hormones": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T05:33:56.000Z"
   },
   "glossary:occipital-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1262,7 +1262,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:endorphins": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T05:33:56.000Z"
   },
   "glossary:neural-coupling": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1286,7 +1286,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:suprachiasmatic-nucleus": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-07T05:33:56.000Z"
   },
   "glossary:melatonin": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1358,7 +1358,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:lipolysis": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-30T09:32:45.000Z"
+    "modified": "2026-10-07T05:33:56.000Z"
   },
   "glossary:free-hormonal-index": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1446,7 +1446,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:biological-signature": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T12:45:35.000Z"
+    "modified": "2026-10-07T05:33:56.000Z"
   },
   "glossary:micro-drift": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1570,7 +1570,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:allostatic-load": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-04T17:23:01.000Z"
+    "modified": "2026-10-07T05:33:56.000Z"
   },
   "glossary:hormesis": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1630,7 +1630,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",
-    "modified": "2026-10-06T17:10:58+02:00"
+    "modified": "2026-10-07T01:04:29+02:00"
   },
   "page:/articles/topic/:topic": {
     "published": "2026-09-24T00:24:48+02:00",
@@ -1638,11 +1638,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/part/:slug": {
     "published": "2026-02-24T15:51:07+01:00",
-    "modified": "2026-10-06T17:10:58+02:00"
+    "modified": "2026-10-07T01:04:29+02:00"
   },
   "page:/level/:number": {
     "published": "2026-02-26T01:46:23+01:00",
-    "modified": "2026-10-06T17:10:58+02:00"
+    "modified": "2026-10-07T01:04:29+02:00"
   },
   "page:/inner-spectrum": {
     "published": "2026-03-14T01:25:20Z",

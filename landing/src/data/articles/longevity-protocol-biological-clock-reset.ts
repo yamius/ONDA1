@@ -87,7 +87,7 @@ To move beyond basic alignment and into Age Deceleration, implement the three-la
 
 By tightening circadian alignment, you're not just sleeping better — you're targeting the same methylation machinery the Horvath Clock reads. Whether that shifts measured biological age is still an open research question; what you can track yourself is the upstream signal.
 
-**Short-term:** Many people report more Deep Sleep and an easier morning cortisol curve within the first week, while effects on [HRV](/science/concepts/heart-rate-variability) are modest, inconsistent and not guaranteed on any timeline. Individual results vary — use your own data, not these numbers, as the benchmark.
+**Short-term:** Many people report more Deep Sleep and easier mornings within the first week, while effects on [HRV](/science/concepts/heart-rate-variability) are modest, inconsistent and not guaranteed on any timeline. Individual results vary — use your own data, not these numbers, as the benchmark.
 
 **Long-term:** The kind of circadian and metabolic alignment that research associates with healthier aging markers over time. (We don't promise specific telomere, methylation-clock, or sirtuin changes — those are research directions, not guaranteed outcomes.)
 

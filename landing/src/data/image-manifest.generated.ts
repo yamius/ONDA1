@@ -2296,6 +2296,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/concepts-cortisol-and-stress-response.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/concepts-cortisol-and-stress-response.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/concepts-cortisol-and-stress-response.webp": {
+    "width": 1584,
+    "height": 672
+  },
   "/images/science/concepts-heart-rate-variability.avif": {
     "width": 1916,
     "height": 821

@@ -407,7 +407,7 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'spinal-intelligence-decentralized-control':
     'The spinal cord is a distributed processor with motor memory and reflex logic. The ONDA Protocol develops edge-computing movement intelligence via unpredictable loading, proprioceptive focus, and Alpha-state triggers.',
   'adrenal-governor-thermal-runaway':
-    'The adrenals inject cortisol on command — the problem is the Beta-mode brain keeps signaling threat. The ONDA Governor uses HRV thresholding, Alpha-buffering, and anticipatory reset to block Redline entry.',
+    'Adrenal fatigue is not a recognised medical condition. Why the tiredness is still real, which adrenal diseases do exist, and when to see a doctor.',
   'ventral-tegmental-core-motivational-salience':
     'The VTA is the reactor of motivational salience. ONDA recalibrates dopamine telemetry via system reset, hormetic stress and delayed-reward deep work to restore drive without external triggers.',
   'fascial-tensegrity-protocol-myofascial-noise':
@@ -2934,17 +2934,16 @@ function getMetaForRouteBase(route: string): RouteMeta {
                           : slug === 'adrenal-governor-thermal-runaway'
                             ? {
                                 keywords: [
-                                  'Adrenal Fatigue Cortisol Precision',
-                                  'HRV Stress Limiter Protocol',
-                                  'Endocrine Architecture Biohacking',
-                                  'Cortisol Receptor Desensitization',
-                                  'Thermal Runaway Prevention',
-                                  'Anticipatory Reset Breathing',
-                                  'Adrenal Health Optimization',
+                                  'Adrenal Fatigue',
+                                  'Is Adrenal Fatigue Real',
+                                  'Adrenal Insufficiency',
+                                  'Cushing Syndrome',
+                                  'Cortisol Rhythm',
+                                  'Fatigue Red Flags',
                                   'ONDA Protocol',
                                 ],
-                                audience: 'Biohackers, High-Performers, Knowledge Workers, Burnout Recovery',
-                                proficiencyLevel: 'Intermediate',
+                                audience: 'Adults with persistent fatigue, Burnout Recovery',
+                                proficiencyLevel: 'Beginner',
                                 educationalLevel: 'Intermediate',
                               }
                           : slug === 'spinal-intelligence-decentralized-control'

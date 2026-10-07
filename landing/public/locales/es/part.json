@@ -118,7 +118,7 @@
     "i-maneuver": {
       "badge": "[ PARTE 4 — NIVEL 2: EMOCIONES / AQUA ]",
       "subtitle": "Protocolo: La maniobrabilidad del «pequeño mamífero»",
-      "metaDescription": "Parte 4: Neurocepción y deriva polivagal. Maniobrabilidad del pequeño mamífero — cortisol y adrenalina como combustible. ONDA Life.",
+      "metaDescription": "Parte 4: Neurocepción y deriva polivagal. Maniobrabilidad del pequeño mamífero — mantener la compostura bajo presión. ONDA Life.",
       "imageAlt": "Maniobra cognitiva, biohacking de toma de decisiones estratégicas, ONDA YO MANIOBRO, función ejecutiva neural visualizada.",
       "imageTitle": "[I_MANEUVER]: Visualización de la matriz multidimensional de decisión y la sincronización de la inteligencia táctica.",
       "intro": "Bienvenido a la etapa donde la flexibilidad biológica se transforma en maestría aplicada. Si las etapas anteriores eran sobre aprender simplemente a «ser», aquí aprendemos a ser en movimiento.\n\nEn el corazón de la Parte 4 está el regalo evolutivo de los pequeños mamíferos: la capacidad de evasión instantánea, navegación sutil y micro-evasión de amenazas sin caer en estrés paralizante. Traducimos la maniobrabilidad de cuestión de «suerte» a habilidad biológica medible.",
@@ -127,7 +127,7 @@
         "items": [
           { "name": "Teoría polivagal", "text": "En los términos de la teoría polivagal (un modelo debatido): entrenar al sistema nervioso a «derivar» suavemente entre el vago ventral (estado de compromiso social y seguridad) y el sistema simpático (energía para la acción). Usar el tono simpático para una maniobra sin caer en pánico o rabia." },
           { "name": "Neurobiología y neurocepción", "text": "Inspirado en ideas polivagales (un modelo debatido): practicamos la atención a la sensación sentida de seguridad y a los cambios del entorno, lo que el modelo llama neurocepción. Es una imagen de práctica, no la afirmación de que se entrene un circuito cerebral concreto." },
-          { "name": "Neuroendocrinología", "text": "Impacto directo sobre el eje HPA (hipotálamo-hipófisis-suprarrenales). Enseñamos al cuerpo a controlar la liberación de cortisol y adrenalina, convirtiéndolos de veneno en combustible para la precisión." },
+          { "name": "Neuroendocrinología", "text": "Trabajo con la vivencia del estrés. Practicamos afrontar la presión con un enfoque estable y preciso en lugar de dejarnos arrastrar por ella." },
           { "name": "Linfología", "text": "Usar el tono muscular como bomba natural para limpiar el cuerpo de los metabolitos del estrés, asegurando frescura física incluso bajo cargas altas." }
         ]
       },
@@ -152,14 +152,14 @@
     "i-guard-territory": {
       "badge": "[ PARTE 5 — NIVEL 2: EMOCIONES / AQUA ]",
       "subtitle": "Protocolo: La fuerza del «gran mamífero»",
-      "metaDescription": "Parte 5: DHEA, vago ventral, dominio sereno. Fuerza del gran mamífero — densidad de presencia. ONDA Life.",
+      "metaDescription": "Parte 5: calma arraigada, vago ventral, dominio sereno. Fuerza del gran mamífero — densidad de presencia. ONDA Life.",
       "imageAlt": "Seguridad del sistema inmune, defensa biológica del territorio, ONDA YO GUARDO EL TERRITORIO, integridad del microbioma visualizada.",
       "imageTitle": "[I_GUARD]: Visualización del perímetro inmune multicapa y el mantenimiento de la soberanía biológica.",
       "intro": "En esta etapa dejamos de maniobrar y comenzamos a ocupar espacio. Pasamos a trabajar con el reactor bioquímico del cuerpo a nivel del «gran mamífero». Aquí la emoción se ve no como un sentimiento abstracto, sino como un proceso de bioingeniería con firma hormonal, patrón neuromotor y perfil vegetativo.\n\nEn la Parte 5, el foco es la homeostasis. Es la capacidad de mantener la estabilidad del medio interno, la densidad de presencia y un estado de «calma de estatus», independientemente de la presión externa.",
       "protocol": {
         "intro": "Reconfiguramos el cuerpo a través de cuatro sistemas clave:",
         "items": [
-          { "name": "Sistema endocrino (circuito hormonal del dominio)", "text": "Las suprarrenales pasan de la liberación de emergencia de cortisol a la producción de DHEA — la hormona de la vitalidad y la longevidad. El eje hipófisis-gónadas forma el «estado del ganador» mediante una estimulación moderada de testosterona. El timo restaura el vínculo entre seguridad social y respuesta inmune potente." },
+          { "name": "Sistema endocrino (circuito hormonal del dominio)", "text": "Con el tiempo, la práctica construye una «calma de estatus» arraigada en lugar de reactividad — una sensación sentida de estabilidad bajo presión social. El timo restaura el vínculo entre seguridad social y respuesta inmune potente." },
           { "name": "Sistema nervioso autónomo (parasimpática inteligente)", "text": "Según la teoría polivagal de Stephen Porges —un modelo debatido, no ciencia establecida—, es un estado «vagal ventral» de «alerta tranquila», donde el corazón late con potencia y firmeza, y el cerebro está listo para un dominio efectivo en lugar de pánico." },
           { "name": "Sistema linfático (limpieza mecánica)", "text": "El estrés crónico bloquea diafragma y suelo pélvico. Nuestras prácticas de «peso» y «volumen» actúan como drenaje linfático profundo, exprimiendo literalmente los metabolitos del estrés de los tejidos." },
           { "name": "Biología cuántica (coherencia)", "text": "Trabajamos sobre la «densidad de presencia». Desde la biofotónica, es un estado de alta coherencia en el campo electromagnético de las células. Tu presencia se vuelve palpable a nivel físico para los demás." }
@@ -176,7 +176,7 @@
       "results": {
         "intro": "Resultados neurobiológicos:",
         "items": [
-          "Bucle de retroalimentación: activación del hipotálamo → aumento de testosterona → reducción del cortisol. Esto da un estado de dominio sereno sin agresión.",
+          "Estabilidad: a medida que el sistema nervioso se calma, esa estabilidad se percibe como compostura — un dominio sereno sin agresión.",
           "Neuro-señalización: difundes estatus a través de señales neuromotoras.",
           "Influencia límbica: los demás registran tu estabilidad y seguridad límbica antes de que pronuncies tu primera palabra."
         ]
@@ -330,7 +330,7 @@
       "protocol": {
         "intro": "Transformar el cuerpo en un transmisor potente de ideas mediante mecanismos neuroquímicos:",
         "items": [
-          { "name": "Ingeniería hormonal", "text": "«Power posing» y patrones respiratorios para bajar el cortisol y aumentar la testosterona." },
+          { "name": "Ingeniería hormonal", "text": "«Power posing» y patrones respiratorios para practicar una presencia más estable y arraigada." },
           { "name": "Estimulación vagal", "text": "Ejercicios vocales que la teoría polivagal, un modelo debatido, vincula con el vago ventral." },
           { "name": "Reevaluación cognitiva", "text": "Técnica de control prefrontal que amortigua fisiológicamente la actividad de la amígdala, sustituyendo el miedo por la excitación." },
           { "name": "Bucles de oxitocina", "text": "Gestionar contacto visual y microexpresiones para construir confianza social." },
@@ -351,7 +351,7 @@
         "items": [
           "Expresión soberana: tu voz gana peso, tus palabras ganan precisión y tu auto-expresión se vuelve clara y auténtica.",
           "Transformación energética: ya no temes ser notado; usas la atención como combustible para tu manifestación.",
-          "Marcadores biológicos: ratio testosterona-cortisol optimizado; cambios en el timbre y amplitud vocal.",
+          "Marcadores observables: cambios en el timbre y la amplitud vocal.",
           "Presencia resonante: eliminación de filtros sociales y afinamiento del sonido resonante de la personalidad. Ausencia de tensión en la mandíbula y constricción en la garganta."
         ]
       },
@@ -513,7 +513,7 @@
           { "name": "Sincronización fisiológica", "text": "Prácticas con respiración sincronizada, micromovimientos y entrainment del ritmo cardíaco para activar el «puente neurosomático»." },
           { "name": "Bioquímica de la confianza", "text": "Usar contacto visual prolongado y estimulación táctil específica para inundar el sistema con oxitocina y vasopresina, estabilizando el vínculo." },
           { "name": "Expansión del campo sensorial", "text": "Técnicas para modular el lóbulo parietal, difuminando los bordes físicos del cuerpo para experimentar las sensaciones del partner como propias." },
-          { "name": "Alquimia de los estados", "text": "Transformar el estrés y la tensión biológica en energía de acción y placer (convirtiendo estados impulsados por cortisol en flujo de dopamina/endorfinas)." },
+          { "name": "Alquimia de los estados", "text": "Transformar el estrés y la tensión biológica en energía de acción y placer." },
           { "name": "Éxtasis consciente", "text": "Entrenar a la PFC para permanecer «en línea» durante experiencias pico, permitiendo integrar estados extáticos en neuroplasticidad a largo plazo." }
         ]
       },
@@ -523,7 +523,7 @@
           { "name": "Vías oxitocinérgicas", "text": "Centros del vínculo y reducción del estrés." },
           { "name": "Corteza somatosensorial", "text": "Para mapeo sensorial expandido." },
           { "name": "Corteza prefrontal (PFC)", "text": "Mantener la consciencia incluso dentro de estados extáticos intensos." },
-          { "name": "Biomarcadores", "text": "Coherencia HRV entre partners; brainwave coupling (sincronía Alpha/Theta); cambio del ratio oxitocina/cortisol hacia bioquímica de vínculo." }
+          { "name": "Biomarcadores", "text": "Coherencia HRV entre partners; brainwave coupling (sincronía Alpha/Theta)." }
         ]
       },
       "results": {
@@ -549,7 +549,7 @@
           { "name": "Inventario de pensamientos", "text": "La práctica de «etiquetar» pensamientos entrantes: «planificación», «memoria», «crítica». Esto activa la mPFC y le quita al pensamiento su poder sobre ti." },
           { "name": "Inhibición neural", "text": "Entrenar la capacidad de cortar al instante una cadena de asociaciones, evitando que crezca en una narrativa emocional." },
           { "name": "Meta-monitorización «Testigo»", "text": "Mantener la atención no en el objeto sino en el proceso de la percepción misma. Observas al que observa." },
-          { "name": "Desacoplamiento de la respuesta límbica", "text": "Entrenar a la PFC a registrar pensamientos «cargados» como datos secos, evitando la liberación de cortisol." },
+          { "name": "Desacoplamiento de la respuesta límbica", "text": "Entrenar a la PFC a registrar pensamientos «cargados» como datos secos, en lugar de reaccionar a ellos." },
           { "name": "Silencio del DMN", "text": "Usar anclas sensoriales para «colapsar» el diálogo interno y pasar a un estado de silencio cognitivo profundo." }
         ]
       },

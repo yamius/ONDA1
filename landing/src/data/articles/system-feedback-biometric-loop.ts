@@ -23,11 +23,11 @@ const article: Article = {
   introStyle: 'cyan',
   image: '/images/articles/onda-system-feedback-biometric-loop.webp',
   imageAlt:
-    'Biometric feedback loop visualization: HRV, glucose, cortisol data streams around human figures. Real-time system correction, adaptive protocols. ONDA Life.',
+    'Biometric feedback loop visualization: HRV, heart rate and glucose data streams around human figures. Real-time system correction, adaptive protocols. ONDA Life.',
   imageTitle:
     '[ BIOMETRIC_FEEDBACK_LOOP ]: HRV, glucose, cortisol signals driving real-time system adjustment. ONDA adaptive protocols.',
   imageCaption:
-    '[ SIGNAL: BIOMETRIC_LOOP_ACTIVE ]: HRV, glucose, cortisol data streams driving real-time system correction. Adaptive protocols, dynamic calibration. ONDA Life.',
+    '[ SIGNAL: BIOMETRIC_LOOP_ACTIVE ]: HRV, heart rate and glucose data streams driving real-time system correction. Adaptive protocols, dynamic calibration. ONDA Life.',
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Predict before symptoms. Explore AI-driven biomarker forecasting.',

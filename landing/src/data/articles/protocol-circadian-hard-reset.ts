@@ -93,7 +93,7 @@ Post-reset, check your sleep regularity and duration in ONDA's Life Rhythm.
 
 **Target:** Morning HRV trending upward by Night 3. This is the clearest confirmation that the SCN has re-established dominance over peripheral clocks.
 
-If HRV does not improve by Day 4, the issue is likely upstream: chronic psychological stress elevating baseline cortisol, or unresolved inflammatory load blocking recovery. The clock cannot synchronize a system that is perpetually in threat-response mode.
+If HRV does not improve by Day 4, the issue is likely upstream: chronic psychological stress, or unresolved inflammatory load blocking recovery. The clock cannot synchronize a system that is perpetually in threat-response mode.
 
 > [ SYSTEM_LOG ]
 > STATUS: RECALIBRATION_SEQUENCE_COMPLETE

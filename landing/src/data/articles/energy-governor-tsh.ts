@@ -48,7 +48,7 @@ const article: Article = {
     },
     {
       name: 'PROTOCOL_03 > STRESS BYPASS (Cortisol Sync)',
-      text: 'Lower cortisol levels through breathwork protocols before sleep.',
+      text: 'Reduce evening stress load with slow breathing before sleep.',
       protocolId: 'tsh-stress-bypass',
     },
   ],
@@ -97,9 +97,9 @@ The thyroid gland determines the speed of neural transmission. An optimal TSH ra
 
 ### PROTOCOL_03 > STRESS BYPASS (Cortisol Sync)
 
-> **The Hack:** Lower cortisol levels through breathwork protocols before sleep.
+> **The Hack:** Reduce evening stress load with slow breathing before sleep.
 
-**The Logic:** High cortisol blocks the conversion of T4 into the active T3 hormone, which forces TSH to rise. By removing stress, you 'unlock' the metabolic pathway.
+**The Logic:** Stress hormones and thyroid hormones interact, and one hypothesis is that chronic stress may affect how T4 is converted into the active T3 hormone. This is not an established stress-to-TSH switch, and breathing is not a thyroid treatment: if you have symptoms of a sluggish thyroid, see a doctor for testing.
 
 \`[ STATUS: ACTIVE ]\`
 

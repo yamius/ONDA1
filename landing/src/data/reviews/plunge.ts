@@ -60,7 +60,7 @@ The biology of why cold exposure works — and the protocols that compound with 
 
 - [Vagus nerve exercises](/articles/vagus-nerve-exercises) — how cold-water face immersion triggers the vagal diving reflex
 - [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — how cold exposure shapes the cortisol curve
-- [Adrenal governor and thermal runaway](/articles/adrenal-governor-thermal-runaway) — the thermoregulatory side of the stress response`,
+- [Adrenal fatigue: what the evidence says](/articles/adrenal-governor-thermal-runaway) — why stress-related exhaustion is not "burnt-out adrenals", and when to see a doctor`,
   references: [
     { label: 'The Plunge — official product page', url: 'https://theplunge.com/' },
   ],

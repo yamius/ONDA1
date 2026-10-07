@@ -63,7 +63,7 @@ Dark Therapy is the intentional restriction of short-wavelength light to allow f
 
 > **The Hack:** Exposure to 10,000+ LUX of natural sunlight within 30 minutes of waking.
 >
-> **The Logic:** This triggers a high-amplitude Cortisol spike, which sets a timer for melatonin release 14–16 hours later. It anchors your 'System Clock' to the local solar cycle, eliminating midday brain fog.
+> **The Logic:** Morning light is the strongest daily signal for your body clock and helps time evening melatonin. The popular claim that a cortisol spike sets a precise melatonin "timer" is not strongly evidenced. It anchors your 'System Clock' to the local solar cycle, eliminating midday brain fog.
 
 ### PROTOCOL_02 > Spectral Shift (Evening Calibration)
 

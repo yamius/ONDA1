@@ -574,6 +574,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1007/bf03345606": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Exercise and circulating Cortisol levels: The intensity threshold effect",
+   "firstAuthor": "Hill",
+   "authors": [
+    "Hill",
+    "Zack",
+    "Battaglini",
+    "Viru",
+    "Viru",
+    "Hackney"
+   ],
+   "year": 2008,
+   "yearAlt": 2014,
+   "journal": "Journal of Endocrinological Investigation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1007/s00421-003-0988-y": {
    "kind": "doi",
    "valid": true,
@@ -1084,6 +1103,20 @@
    ],
    "year": 2005,
    "journal": "Annals of Emergency Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1016/j.bbi.2012.02.002": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Analysis of cortisol in hair – State of the art and future directions",
+   "firstAuthor": "Stalder",
+   "authors": [
+    "Stalder",
+    "Kirschbaum"
+   ],
+   "year": 2012,
+   "journal": "Brain, Behavior, and Immunity",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
@@ -3498,6 +3531,19 @@
    "journal": "Nature Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1038/nrendo.2009.106": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Stress and disorders of the stress system",
+   "firstAuthor": "Chrousos",
+   "authors": [
+    "Chrousos"
+   ],
+   "year": 2009,
+   "journal": "Nature Reviews Endocrinology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1038/nrgastro.2012.32": {
    "kind": "doi",
@@ -6587,6 +6633,20 @@
    "journal": "Breathe",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1186/s12902-016-0128-4": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Adrenal fatigue does not exist: a systematic review",
+   "firstAuthor": "Cadegiani",
+   "authors": [
+    "Cadegiani",
+    "Kater"
+   ],
+   "year": 2016,
+   "journal": "BMC Endocrine Disorders",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1186/s12916-019-1399-1": {
    "kind": "doi",
@@ -10027,6 +10087,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:18787373": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Exercise and circulating cortisol levels: the intensity threshold effect.",
+   "firstAuthor": "Hill",
+   "authors": [
+    "Hill",
+    "Zack",
+    "Battaglini",
+    "Viru",
+    "Viru",
+    "Hackney"
+   ],
+   "year": 2008,
+   "journal": "J Endocrinol Invest",
+   "doi": "10.1007/BF03345606",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:18835608": {
    "kind": "pmid",
    "valid": true,
@@ -10200,6 +10279,20 @@
    "reason": "Wrong paper: Da Silva AS et al. 2009, Exp Parasitol, Trypanosoma evansi in cats — was cited as Thayer et al. 2009 (use PMID 19424767)",
    "source": "manual",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:19488073": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Stress and disorders of the stress system.",
+   "firstAuthor": "Chrousos",
+   "authors": [
+    "Chrousos"
+   ],
+   "year": 2009,
+   "journal": "Nat Rev Endocrinol",
+   "doi": "10.1038/nrendo.2009.106",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:19568835": {
    "kind": "pmid",
@@ -10697,6 +10790,21 @@
    "year": 2012,
    "journal": "Cochrane Database Syst Rev",
    "doi": "10.1002/14651858.CD008262.pub2",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:22366690": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Analysis of cortisol in hair--state of the art and future directions.",
+   "firstAuthor": "Stalder",
+   "authors": [
+    "Stalder",
+    "Kirschbaum"
+   ],
+   "year": 2012,
+   "journal": "Brain Behav Immun",
+   "doi": "10.1016/j.bbi.2012.02.002",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
@@ -12208,6 +12316,21 @@
    "doi": "10.1073/pnas.1605635113",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:27557747": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Adrenal fatigue does not exist: a systematic review.",
+   "firstAuthor": "Cadegiani",
+   "authors": [
+    "Cadegiani",
+    "Kater"
+   ],
+   "year": 2016,
+   "journal": "BMC Endocr Disord",
+   "doi": "10.1186/s12902-016-0128-4",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:27631616": {
    "kind": "pmid",
@@ -16018,6 +16141,22 @@
    "doi": "10.1038/43185",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:9415946": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sleep loss results in an elevation of cortisol levels the next evening.",
+   "firstAuthor": "Leproult",
+   "authors": [
+    "Leproult",
+    "Copinschi",
+    "Buxton",
+    "Van Cauter"
+   ],
+   "year": 1997,
+   "journal": "Sleep",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:9416776": {
    "kind": "pmid",

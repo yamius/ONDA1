@@ -91,7 +91,7 @@ Three engineering interventions for the pre-sleep window:
 
 > **Action:** 10 minutes of slow diaphragmatic breathing before sleep (4s inhale expanding the belly, 6s exhale). Focus on full diaphragmatic descent — not chest breathing.
 
-**Logic:** Deep diaphragmatic breathing creates negative intra-thoracic pressure on each inhale — a partial vacuum in the chest cavity. This pressure gradient assists venous return from the head, reducing cerebral venous congestion and lowering the baseline intracranial pressure entering the sleep window. Lower pre-sleep intracranial pressure = wider hydrostatic gradient for CSF outflow = faster flush initiation at N3 onset. Additionally, extended exhale (6s) activates the parasympathetic branch, clearing residual cortisol and accelerating sleep-onset transition.
+**Logic:** Deep diaphragmatic breathing creates negative intra-thoracic pressure on each inhale — a partial vacuum in the chest cavity. This pressure gradient assists venous return from the head, reducing cerebral venous congestion and lowering the baseline intracranial pressure entering the sleep window. Lower pre-sleep intracranial pressure = wider hydrostatic gradient for CSF outflow = faster flush initiation at N3 onset. Additionally, an extended exhale (6s) leans toward the parasympathetic branch, which may make it easier to wind down before sleep.
 
 ---
 

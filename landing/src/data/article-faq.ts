@@ -484,7 +484,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "How do I support thyroid function naturally?",
       answer:
-        "Ensure adequate iodine and selenium, the raw materials for thyroid hormone. Track basal body temperature as a low-cost proxy for metabolic rate, and address chronic stress directly \u2014 because cortisol control is often the missing lever behind a sluggish thyroid.",
+        "Ensure adequate iodine and selenium, the raw materials for thyroid hormone. Track basal body temperature as a low-cost proxy for metabolic rate, and manage chronic stress as part of overall health. If you suspect a sluggish thyroid, see a doctor \u2014 thyroid problems need blood tests and medical care, not self-treatment.",
     },
   ],
   "energy-sensor-leptin": [
@@ -758,7 +758,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'How does morning light affect my circadian rhythm?',
       answer:
-        'Viewing sunlight within 30 minutes of waking triggers a timed Cortisol pulse and sets a 16-hour countdown for Melatonin release. It is the single most important sync-signal for your biological clock.',
+        'Morning light is one of the strongest sync-signals for your biological clock and helps time evening Melatonin release. Popular claims that it sets an exact cortisol pulse and 16-hour countdown are not strongly evidenced.',
     },
     {
       question: 'Why does blue light at night disrupt sleep?',
@@ -925,7 +925,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'Why use decaffeinated cacao for stem cell protocols?',
       answer:
-        'Caffeine and theobromine create adrenal spikes that conflict with deep recovery states. By filtering them out, polyphenols work directly on blood flow and stem cell mobilization without overclocking the nervous system.',
+        'Caffeine (and, more weakly, theobromine) is a stimulant that can work against deep recovery states. By filtering them out, polyphenols work directly on blood flow and stem cell mobilization without overclocking the nervous system.',
     },
     {
       question: 'What is the Micro-Circulation Loop protocol?',
@@ -993,12 +993,12 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'What are the three ancestral circadian anchors?',
       answer:
-        'The three ancestral Zeitgeber anchors in the ONDA protocol are: 1) Photonic Trigger — morning light within 30 minutes of waking to set the cortisol pulse and 16-hour melatonin countdown; 2) Thermal Reset — cold exposure in natural light to lock the temperature-circadian axis; 3) Metabolic Gate — first meal no earlier than 90 minutes after waking to synchronize the peripheral clocks in organs.',
+        'The three ancestral Zeitgeber anchors in the ONDA protocol are: 1) Photonic Trigger — morning light soon after waking, the strongest daily signal for the body clock; 2) Thermal Reset — cold exposure in natural light to lock the temperature-circadian axis; 3) Metabolic Gate — regular meal timing to support the peripheral clocks in organs (a fixed "wait 90 minutes" rule is popular advice without strong evidence).',
     },
     {
       question: 'Why must the first meal be delayed after waking?',
       answer:
-        'The Metabolic Gate principle states that immediate eating on waking sends an "any-time is feeding time" signal to peripheral liver and gut clocks, decoupling them from the central SCN clock. Delaying the first meal by 90 minutes ensures the cortisol peak has passed and peripheral clocks synchronize with the central rhythm, reducing epigenetic drift.',
+        'The Metabolic Gate principle states that immediate eating on waking sends an "any-time is feeding time" signal to peripheral liver and gut clocks, decoupling them from the central SCN clock. Meal timing does help set peripheral clocks, but the popular rule of delaying the first meal by exactly 90 minutes to wait out the cortisol peak is not strongly evidenced.',
     },
     {
       question: 'How quickly do circadian anchors fix disrupted sleep?',
@@ -1008,19 +1008,29 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
   ],
   'adrenal-governor-thermal-runaway': [
     {
-      question: 'What is the Adrenal Governor and how does it intercept stress signals before cortisol release?',
+      question: "Is adrenal fatigue a real condition?",
       answer:
-        'The Adrenal Governor is the ONDA framework\'s name for the neural filtering layer — primarily the prefrontal cortex exerting inhibitory control over the amygdala-HPA axis loop — that determines whether an incoming stimulus warrants a cortisol and adrenaline injection or constitutes informational noise that should be filtered. In a well-calibrated system operating in Alpha state, the prefrontal cortex\'s inhibitory projection to the amygdala is strong enough to evaluate stress signals before they propagate to the hypothalamus and trigger CRH release. In chronic Beta-mode, this inhibitory capacity is degraded — the amygdala fires unfiltered, the hypothalamus receives the signal, and the adrenals inject. The Governor protocol restores the prefrontal filtering capacity through HRV monitoring, Alpha-state maintenance, and anticipatory priming.',
+        "No. Adrenal fatigue is not a recognised medical diagnosis. A systematic review of 58 studies found no consistent evidence that stress or tiredness \"exhausts\" the adrenal glands and concluded that adrenal fatigue does not exist (Cadegiani & Kater 2016). The fatigue itself is real and worth investigating with a doctor.",
     },
     {
-      question: 'What is the difference between Performance Spiking and Redline cortisol output?',
+      question: "What real adrenal problems can cause fatigue?",
       answer:
-        'Performance Spiking is the appropriate, time-limited elevation of cortisol and adrenaline in response to a genuine challenge — a deadline, athletic effort, or acute stressor. The spike is sharp, purposeful, and followed by a rapid recovery as parasympathetic tone reasserts itself. Redline is the pathological state where cortisol is elevated continuously, not in response to specific challenges but as a default background state driven by chronic Beta-mode neural entrainment. The distinction is not in the cortisol level at peak, but in the baseline between peaks and the presence or absence of recovery. Redline is characterized by an elevated floor — basal cortisol never returns to the low range — rather than by higher individual peaks. This elevated floor is what drives receptor desensitization, hippocampal damage, and immune suppression.',
+        "Adrenal insufficiency (including Addison's disease), where the body genuinely makes too little cortisol, and Cushing's syndrome, where it is exposed to too much. Both are uncommon and are diagnosed with specific blood, saliva or urine tests set out in Endocrine Society guidelines, not with symptom checklists.",
     },
     {
-      question: 'Why does morning HRV measurement serve as the most reliable daily Adrenal Governor indicator?',
+      question: "Can a saliva cortisol test diagnose adrenal fatigue?",
       answer:
-        'Morning HRV — measured immediately after waking, before leaving the bed, before caffeine or screen exposure — reflects the overnight recovery state of the autonomic nervous system, free from acute stressors or deliberate interventions. It is the closest available proxy to the baseline autonomous tone of the HPA axis and the sympathovagal balance that will govern the day\'s stress response capacity. A drop below personal baseline HRV indicates that the previous day\'s load exceeded the system\'s recovery capacity — the adrenal-cardiac-neural system is still compensating. Measuring in this window provides a Governor Alert before any new load is added. Post-exercise or midday HRV measurements are more variable and reflect acute conditions rather than systemic recovery state.',
+        "No. Cortisol rises sharply after waking and falls towards evening, and it shifts with sleep, illness and exercise, so single readings or commercial \"adrenal stress\" panels mean little on their own. Real adrenal disease is tested with specific protocols ordered and interpreted by a doctor.",
+    },
+    {
+      question: "Can HRV or a wearable show adrenal fatigue?",
+      answer:
+        "No. Watches and rings do not measure cortisol or adrenal function. HRV reflects autonomic influences on the heart and changes with sleep, alcohol, illness, training and stress; it can suggest you need recovery, but it cannot diagnose or rule out any adrenal condition.",
+    },
+    {
+      question: "When should I see a doctor about exhaustion?",
+      answer:
+        "If tiredness persists despite rest, or comes with weight loss, dizziness on standing, salt cravings, darkening skin, nausea, or weight gain on the face and belly with purple stretch marks and easy bruising. Sudden severe weakness, vomiting or confusion is an emergency. Never stop prescribed steroids on your own.",
     },
   ],
   'spinal-intelligence-decentralized-control': [
@@ -1127,7 +1137,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'Why does diaphragmatic breathing before sleep improve brain fluid drainage?',
       answer:
-        'Deep diaphragmatic breathing creates negative intra-thoracic pressure on each inhale — a partial vacuum in the chest cavity that assists venous return from the head via the jugular veins. This reduces cerebral venous congestion and lowers the baseline intracranial pressure entering the sleep window. Lower pre-sleep intracranial pressure creates a wider hydrostatic gradient for CSF outflow, allowing the glymphatic system to initiate flow faster at N3 onset. Extended exhale (6s vs 4s) additionally activates the parasympathetic branch, clearing residual cortisol and accelerating the sleep-onset transition.',
+        'Deep diaphragmatic breathing creates negative intra-thoracic pressure on each inhale — a partial vacuum in the chest cavity that assists venous return from the head via the jugular veins. This reduces cerebral venous congestion and lowers the baseline intracranial pressure entering the sleep window. Lower pre-sleep intracranial pressure creates a wider hydrostatic gradient for CSF outflow, allowing the glymphatic system to initiate flow faster at N3 onset. An extended exhale (6s vs 4s) additionally leans toward the parasympathetic branch, which may make it easier to wind down before sleep.',
     },
   ],
   'nightly-flush-glymphatic-neural-cache': [
@@ -1592,7 +1602,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "How long does MBSR take to work?",
       answer:
-        "It's an 8-week program with daily practice, and benefits build across that arc. Measurable changes in stress, mood, HRV and cortisol develop over the weeks — consistent with research showing meditation's effects accrue over weeks of regular practice.",
+        "It's an 8-week program with daily practice, and benefits build across that arc. Changes in stress, mood and HRV develop over the weeks (evidence on cortisol is mixed) — consistent with research showing meditation's effects accrue over weeks of regular practice.",
     },
     {
       question: "Is MBSR better than regular meditation?",
@@ -1602,7 +1612,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "What can MBSR help with?",
       answer:
-        "The strongest evidence is for reducing stress and anxiety and preventing depression relapse (via its cousin MBCT), with modest benefit for chronic pain. It also lowers cortisol and is linked to meditation's documented brain changes. Effects are real but moderate, and vary by person.",
+        "The strongest evidence is for reducing stress and anxiety and preventing depression relapse (via its cousin MBCT), with modest benefit for chronic pain. Evidence that it lowers cortisol is mixed, and it is linked to meditation's documented brain changes. Effects are real but moderate, and vary by person.",
     },
   ],
   "zen-koans-brain-cognition": [
@@ -2100,12 +2110,12 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Does breathing actually lower cortisol?",
       answer:
-        "Yes — Japanese studies measuring urinary hormones found that conscious abdominal breathing significantly lowered cortisol, along with adrenaline and noradrenaline, while shifting the body toward parasympathetic dominance.",
+        "Possibly — two small Japanese studies (11 and 14 participants) measuring urinary hormones found lower cortisol, adrenaline and noradrenaline after conscious abdominal breathing, along with a shift toward parasympathetic dominance. The samples are small, so treat this as preliminary.",
     },
     {
       question: "Is this stronger evidence than HRV studies?",
       answer:
-        "It's more direct. HRV infers calm from your heartbeat; these studies measured the actual stress hormones (cortisol, adrenaline, noradrenaline) in urine and saliva, confirming the calm at the chemical level.",
+        "It's more direct but much smaller. HRV infers calm from your heartbeat; these studies measured stress hormones (cortisol, adrenaline, noradrenaline) in urine and saliva — a useful signal at the chemical level, but from small samples.",
     },
     {
       question: "What kind of breathing lowers stress hormones?",

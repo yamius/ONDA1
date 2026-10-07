@@ -45,7 +45,7 @@ Possibly, but the evidence is mixed, and honesty here matters more than hype:
 
 ## How to read this honestly
 
-The grown-up interpretation is this: meditation is **not** a proven fountain of youth, and anyone claiming it definitively "reverses aging" is overstating the science. But there are real, if modest and inconsistent, signals that mind-body practice can support cellular-health markers, especially with committed, regular practice. The mechanism is plausible — meditation [lowers chronic stress and cortisol](/articles/breathing-lowers-stress-hormones), and chronic stress accelerates telomere shortening, so reducing it could protect telomeres.
+The grown-up interpretation is this: meditation is **not** a proven fountain of youth, and anyone claiming it definitively "reverses aging" is overstating the science. But there are real, if modest and inconsistent, signals that mind-body practice can support cellular-health markers, especially with committed, regular practice. The mechanism is plausible — meditation can lower perceived stress (evidence on [cortisol is mixed](/science/evidence/meditation-autonomic-nervous-system)), and chronic stress accelerates telomere shortening, so reducing it could protect telomeres.
 
 The practical takeaway isn't "meditate to live forever." It's that the well-established benefits of meditation — lower stress, better emotional regulation, improved [HRV](/science/concepts/heart-rate-variability) and cardiovascular health — are themselves linked to healthier aging, and the cellular research adds a tentative, practice-dependent layer on top. Meditate for the solid, measurable benefits; treat the anti-aging angle as a promising bonus, not a promise.
 

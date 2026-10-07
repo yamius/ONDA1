@@ -919,7 +919,7 @@ Sources: [Craig, Nat Rev Neurosci (2002)](https://pubmed.ncbi.nlm.nih.gov/121543
 
 ## In ONDA Life
 
-One marker of Part 1 progress is "reduced levels of basal cortisol." Level 1 practices activate the parasympathetic system, which downregulates the HPA axis and allows cortisol to return to healthy baseline levels.
+ONDA does not measure cortisol or any hormone, and makes no claim that its practices change cortisol levels. Level 1 practices use slow breathing and HRV feedback; HRV is an indirect signal of autonomic state, not a cortisol reading. Cortisol can only be measured with a lab test (blood, saliva or urine).
 
 ---`,
   },
@@ -951,7 +951,7 @@ In the esophagus, disorders such as achalasia make swallowing difficult because 
 
 ## In ONDA Life
 
-"Restoration of rhythmic peristalsis" is a biological marker of Part 1 completion. When the parasympathetic system is activated and cortisol drops, the gut can return to its natural rhythmic movement — a sign that the body perceives safety.
+"Restoration of rhythmic peristalsis" is an image used in Part 1: when the body feels safe and settled, digestion tends to settle too. ONDA does not measure gut motility or hormones.
 
 ## Scientific Basis
 Built on: [HRV & vagal tone](https://pubmed.ncbi.nlm.nih.gov/18771686/) (Thayer & Lane).`,
@@ -1512,13 +1512,13 @@ The **HPA axis** (Hypothalamus-Pituitary-Adrenal) is the body's primary stress r
 2. **Pituitary** — releases ACTH (adrenocorticotropic hormone)
 3. **Adrenal glands** — release cortisol (and adrenaline from the medulla)
 
-## Cortisol: Poison or Fuel?
+## Acute vs. Chronic
 
-Chronically elevated cortisol is damaging. But in acute, controlled doses, cortisol and adrenaline sharpen focus and provide energy. The key is regulation — teaching the body to control release rather than being controlled by it.
+Chronically elevated cortisol is linked to harm, while short, acute rises in cortisol and adrenaline are a normal part of mobilizing energy and focus for a challenge.
 
 ## In ONDA Life
 
-Part 4 "Neuroendocrinology" directly impacts the HPA axis. We teach the body to control cortisol and adrenaline release, turning them "from poison into fuel for precision."`,
+Part 4 "Neuroendocrinology" works with the felt experience of stress: practising staying composed and precise under pressure. ONDA does not measure cortisol or any hormone, and makes no claim that its practices change hormone levels.`,
   },
   {
     slug: 'proprioception',
@@ -1710,7 +1710,7 @@ Disorders of the stress axis are another example. Cushing's syndrome involves ex
 
 ## In ONDA Life
 
-Part 4 "Neuroendocrinology" directly impacts the HPA axis. We teach the body to control cortisol and adrenaline release — turning stress hormones from "poison" (chronic elevation) into "fuel for precision" (acute, regulated mobilization).`,
+Part 4 "Neuroendocrinology" works with the felt experience of stress: practising staying composed and precise under pressure. ONDA does not measure hormones, and makes no claim that its practices change hormone levels.`,
   },
   {
     slug: 'pituitary',
@@ -1769,7 +1769,7 @@ The **adrenal glands** are two small glands located above each kidney. Each has 
 
 ## In ONDA Life
 
-Part 4 teaches the body to control adrenal output. Instead of chronic cortisol and adrenaline release (stress), we develop the ability to mobilize acutely when needed — and return to baseline quickly.`,
+Part 4 practises mobilizing when needed and settling back down afterwards — staying composed under pressure. ONDA does not measure adrenal hormones, and makes no claim that its practices change them.`,
   },
   {
     slug: 'adrenaline',
@@ -1789,9 +1789,9 @@ Part 4 teaches the body to control adrenal output. Instead of chronic cortisol a
 - Heightened alertness and focus
 - Increased blood sugar
 
-## Poison or Fuel?
+## Acute vs. Chronic
 
-Chronically elevated adrenaline contributes to anxiety and burnout. But in acute, controlled doses, it sharpens focus and provides energy for precision. Part 4 aims to use adrenaline as "fuel for precision" rather than a trigger for panic.`,
+Chronically elevated adrenaline contributes to anxiety and burnout. But in acute, controlled doses, it sharpens focus and provides energy for action. Part 4 practises staying composed and precise under pressure rather than tipping into panic. ONDA does not measure adrenaline or any hormone, and makes no claim that its practices change hormone levels.`,
   },
   {
     slug: 'lymphology',
@@ -1845,7 +1845,8 @@ Part 4 "Lymphology" uses muscle tone as a natural pump to clear the body of stre
 
 ## Cortisol/DHEA Ratio
 
-Chronic stress shifts adrenal output from DHEA toward cortisol. Part 5 aims to reverse this — the adrenals switch from "emergency cortisol release" to DHEA production, supporting the "winner's state" of calm dominance.
+Chronic stress is associated with a shift in adrenal output from DHEA toward cortisol. ONDA does not measure DHEA or cortisol, and there is no evidence that Part 5 practices change this ratio.
+
 ## Why does DHEA matter?
 
 DHEA matters because it is one of the most abundant steroid hormones in the body and serves as a building block for sex hormones like testosterone and estrogen. It is made mainly by the adrenal glands.
@@ -3257,7 +3258,7 @@ Part 9 lists "Flow State: Predominance of Alpha and Theta rhythms, characteristi
 ## Key Hormones in ONDA Life
 
 - **Cortisol** — stress hormone; high baseline indicates chronic stress
-- **DHEA, Testosterone** — vitality, dominance, "winner state"
+- **DHEA, Testosterone** — adrenal and sex steroids (ONDA does not measure them)
 - **Oxytocin** — trust, social bonding
 - **Adrenaline** — acute arousal, energy for action
 
@@ -3958,7 +3959,7 @@ Part 12 "DMN Inhibition and Joint Attention" shifts from protecting personal bou
 - **Pain relief** — natural analgesia
 - **Euphoria** — "runner's high," collective flow
 - **Social bonding** — released during synchronized activities
-- **Stress buffering** — counteract cortisol effects
+- **Stress buffering** — associated with a calmer stress response
 
 ## Why do Endorphins matter?
 
@@ -4135,7 +4136,7 @@ The **Suprachiasmatic Nucleus** (SCN) is a small region of the hypothalamus that
 
 ## In ONDA Life
 
-The Circadian Reset protocols work with the SCN: morning light exposure triggers a timed Cortisol pulse and sets the timer for Melatonin release. Blocking blue light at night allows the natural shutdown sequence to initialize.
+The Circadian Reset protocols work with the SCN: morning light is the strongest daily signal for the body clock and helps time evening Melatonin release (popular claims of an exact cortisol "timer" are not strongly evidenced). Blocking blue light at night allows the natural shutdown sequence to initialize.
 `,
   },
   {
@@ -4646,10 +4647,10 @@ ONDA does not measure cortisol or any hormone. The CHM article explains what res
     title: 'Lipolysis',
     category: 'Biological Software',
     shortDescription:
-      'Fat breakdown; blocked when cortisol remains elevated into evening hours.',
+      'Breakdown of stored fat into fatty acids and glycerol for energy, mainly regulated by insulin and adrenaline.',
     content: `
 
-**Lipolysis** is the breakdown of triglycerides in adipose tissue into free fatty acids and glycerol for use as energy. It is regulated by hormones including catecholamines (epinephrine, norepinephrine) and inhibited by insulin and prolonged cortisol elevation.
+**Lipolysis** is the breakdown of triglycerides in adipose tissue into free fatty acids and glycerol for use as energy. It is regulated by hormones including catecholamines (epinephrine, norepinephrine) and inhibited mainly by insulin.
 
 ## Key Points
 
@@ -4671,7 +4672,7 @@ Other influences include time since the last meal, exercise intensity and durati
 
 ## In ONDA Life
 
-The CHM article explains how cortisol sync and evening protocols support lipolytic windows.
+The CHM article explains why no consumer wearable measures cortisol, and why claims that evening cortisol "blocks" fat burning are not supported.
 `,
     relatedSlugs: ['cortisol', 'metabolism', 'circadian-rhythm'],
   },
@@ -5370,7 +5371,7 @@ The AI Biomarker Tracking article covers predictive sync and anomaly detection p
       'The unique, multi-variate pattern of your biomarkers when your system is in optimal health.',
     content: `
 
-**Biological Signature** is your personal multivariate pattern of biomarkers (HRV, RHR, sleep, cortisol, etc.) when your system is in optimal health. It serves as a baseline for anomaly detection and predictive modeling.
+**Biological Signature** is your personal multivariate pattern of biomarkers (HRV, RHR, sleep, etc.) when your system is in optimal health. It serves as a baseline for anomaly detection and predictive modeling.
 
 ## Key Points
 
@@ -6457,7 +6458,7 @@ Allostatic load accumulates when defense mechanisms (such as [cortisol](/glossar
 
 > **STATUS: RESILIENT (Optimal)**
 >
-> SIGNAL: High [Heart Rate Variability](/glossary/heart-rate-variability) (HRV) and a rapid return of cortisol to baseline levels following a load.
+> SIGNAL: High [Heart Rate Variability](/glossary/heart-rate-variability) (HRV) and a quick return of HRV and heart rate to baseline after a load.
 >
 > RESULT: High antifragility, rapid recovery, and low systemic inflammation.
 

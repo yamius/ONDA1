@@ -69,7 +69,7 @@ Screens at 11 PM act as a "Force Quit" for your sleep architecture. Blue light s
 
 > **The Hack:** View sunlight within 30 minutes of waking. 10 mins on a clear day, 20–30 mins on a cloudy day.
 
-**The Logic:** This triggers a timed Cortisol pulse (your morning "boot-up" sequence) and sets a 16-hour countdown for Melatonin release. It's the single most important sync-signal for your OS.
+**The Logic:** Morning light is a strong sync-signal for your body clock and helps time evening Melatonin release. The popular idea that it triggers a cortisol pulse that sets an exact "16-hour countdown" is not strongly evidenced.
 
 ### PROTOCOL 2: The Blue Light Firewall
 

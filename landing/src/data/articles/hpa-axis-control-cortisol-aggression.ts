@@ -87,7 +87,7 @@ Aggression is a high-energy state. When managed correctly, it becomes the fuel f
 
 > **The Hack:** 30–60 seconds of explosive physical exertion (push-ups, air squats, or a heavy carry).
 
-**The Logic:** Cortisol demands physical action. By providing the muscles with a load, you 'burn off' the excess signal and prevent it from accumulating as mental tension.
+**The Logic:** The stress response prepares the body for action. A short burst of physical effort can help discharge the tension it builds; the popular idea that exercise "burns off" cortisol is a simplification.
 
 \`[ STATUS: ACTIVE ]\`
 
@@ -121,7 +121,7 @@ Aggression is a high-energy state. When managed correctly, it becomes the fuel f
 
 ## [ HARDWARE_VALIDATION ]
 
-METRIC: Morning Cortisol Levels + Heart Rate Variability ([HRV](/science/concepts/heart-rate-variability)).
+METRIC: Heart Rate Variability ([HRV](/science/concepts/heart-rate-variability)) as an indirect stress-load signal (ONDA and wearables do not measure cortisol; that needs a lab test).
 \`STATUS: Stress Architecture Under Control. Reactivity Reduced.\`
 
 ---

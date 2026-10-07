@@ -27,7 +27,7 @@ const article: Article = {
     linkText: 'What ONDA measures →',
   },
   content: `
-Forest bathing — *shinrin-yoku*, coined in Japan in the 1980s — is the practice of spending calm, unhurried time among trees, and Japanese research has measured its effects precisely. In a nationwide study across 38 forests, from Okinawa to Hokkaido, time in the forest versus the city lowered the stress hormone [cortisol](/glossary/cortisol) by 12.4%, reduced sympathetic ("fight or flight") activity by 7.0%, dropped blood pressure and heart rate, and raised parasympathetic ("rest and digest") activity by a striking 55.0%. This isn't vague "nature is nice" wellness — it's a measured autonomic shift toward calm, driven in part by airborne compounds trees release. Japan turned an intuition into science, which is exactly why the rest of the world took notice.
+Forest bathing — *shinrin-yoku*, coined in Japan in the 1980s — is the practice of spending calm, unhurried time among trees, and Japanese research has measured its effects precisely. In a nationwide field study across 38 forests, from Okinawa to Hokkaido, with small groups at each site, time in the forest versus the city was linked to 12.4% lower levels of the stress hormone [cortisol](/glossary/cortisol), reduced sympathetic ("fight or flight") activity by 7.0%, dropped blood pressure and heart rate, and raised parasympathetic ("rest and digest") activity by a striking 55.0%. This isn't vague "nature is nice" wellness — it's a measured autonomic shift toward calm, driven in part by airborne compounds trees release. Japan turned an intuition into science, which is exactly why the rest of the world took notice.
 
 ## From feeling to science
 
@@ -39,7 +39,7 @@ The design matters: by comparing a forest walk to an equivalent urban walk, thes
 
 The findings are remarkably consistent across studies:
 
-- **The nationwide field study (38 forests).** Compared to urban settings, forest environments produced: cortisol down 12.4%, sympathetic nervous activity down 7.0%, systolic blood pressure down 1.4%, heart rate down 5.8%, and parasympathetic activity up 55.0%. In plain terms — less stress hormone, less "fight or flight," more "rest and digest."
+- **The nationwide field study (38 forests, small groups at each site).** Compared to urban settings, forest environments produced: cortisol down 12.4%, sympathetic nervous activity down 7.0%, systolic blood pressure down 1.4%, heart rate down 5.8%, and parasympathetic activity up 55.0%. In plain terms — less stress hormone, less "fight or flight," more "rest and digest."
 - **A controlled study in older adults (Gunma forest).** One hour walking in a forest versus non-forest farmland produced significant drops in blood pressure, reduced depressive mood on psychological testing (POMS), lower blood cortisol — and increased natural killer (NK) cell activity, part of the immune system's anti-microbial and anti-tumor defense.
 
 Together they show forest bathing shifting the whole system: nervous system toward calm, stress hormones down, and even immune markers up.

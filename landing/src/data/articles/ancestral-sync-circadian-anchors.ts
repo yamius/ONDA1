@@ -96,7 +96,7 @@ When all three anchors are correctly set, the system converges:
 
 **DNA Repair:** Genes responsible for fixing molecular damage — Sirtuins (SIRT1, SIRT3) — are activated on schedule. DNA repair enzymes peak during sleep phases that are only accessible when the circadian architecture is intact.
 
-**Cognitive Flux:** Morning brain fog disappears because your cortisol peak finally aligns with your wake-up time. The lag between biological "dawn" and subjective wakefulness collapses.
+**Cognitive Flux:** Many people find mornings feel clearer once their wake time is regular and they get light early. The idea that this works by "aligning your cortisol peak" is popular but not strongly evidenced.
 
 **System Stability:** Your [HRV](/science/concepts/heart-rate-variability) becomes predictable, adaptive, and resilient — not because you "relaxed more," but because the [autonomic nervous system](/science/concepts/autonomic-nervous-system) is receiving coherent timing signals from all three anchor systems simultaneously.
 
