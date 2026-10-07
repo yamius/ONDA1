@@ -6,14 +6,14 @@ const joovvVsMitoRed: HeadToHead = {
   productBSlug: 'mito-red-mitopro-1500',
   title: 'Joovv Solo 3.0 vs Mito Red MitoPRO 1500 (2026)',
   description:
-    'Joovv Solo 3.0 vs Mito Red MitoPRO 1500 — side-by-side ONDA comparison of the two top biohacker red light panels. FDA-registered modular versus four-wavelength large panel.',
+    'Joovv Solo 3.0 vs Mito Red MitoPRO 1500 — side-by-side ONDA comparison of the two top biohacker red light panels. Modular versus four-wavelength large panel.',
   intro:
-    'Joovv Solo 3.0 and Mito Red MitoPRO 1500 are the two red light panels biohackers most actually compare. Both ship premium build, verified irradiance and clean EMF; the structural differences are modularity, wavelength count, and the brand premium. The choice is mostly about which axis you weight — modular FDA-registered Joovv ecosystem, or broader-spectrum MitoPRO at a discount.',
+    'Joovv Solo 3.0 and Mito Red MitoPRO 1500 are the two red light panels biohackers most actually compare. Both ship premium build, verified irradiance and clean EMF; the structural differences are modularity, wavelength count, and the brand premium. The choice is mostly about which axis you weight — modular Joovv ecosystem, or broader-spectrum MitoPRO at a discount.',
   winnerSlug: null,
   verdict:
-    'Depends on the axis. Joovv Solo 3.0 wins for modular scaling and FDA registration. Mito Red MitoPRO 1500 wins for broader wavelength spectrum at $100 less.',
+    'Depends on the axis. Joovv Solo 3.0 wins for modular scaling. Mito Red MitoPRO 1500 wins for broader wavelength spectrum at $100 less.',
   bestForA:
-    'Choose Joovv Solo 3.0 if FDA-registered Class II status, modular full-body scaling, and the most verified build are the deciding criteria — and the brand premium is acceptable.',
+    'Choose Joovv Solo 3.0 if modular full-body scaling and the most verified build are the deciding criteria — and the brand premium is acceptable.',
   bestForB:
     'Choose Mito Red MitoPRO 1500 if you want broader four-wavelength coverage (630 + 660 + 830 + 850 nm), comparable build, at $100 cheaper than Joovv.',
   axes: [
@@ -21,7 +21,7 @@ const joovvVsMitoRed: HeadToHead = {
     { name: 'Wavelength coverage', winner: 'b', note: 'Mito Red: four wavelengths (630 + 660 + 830 + 850 nm). Joovv: two (660 + 850 nm). MitoPRO has broader spectrum.' },
     { name: 'EMF / flicker discipline', winner: 'a', note: 'Joovv: third-party EMF at <0.5 mG at 6", flicker published. MitoPRO: similar specs but less independently re-verified. Joovv has tighter discipline.' },
     { name: 'Coverage and modularity', winner: 'a', note: 'Joovv: modular Solo system stacks vertically for full-body. MitoPRO: large half-body panel, stack two for full-body. Joovv is more flexible.' },
-    { name: 'FDA / regulatory status', winner: 'a', note: 'Joovv Solo 3.0: FDA-registered Class II for skin indications. MitoPRO: no FDA registration. Joovv wins this axis decisively.' },
+    { name: 'FDA / regulatory status', winner: 'tie', note: 'Joovv and Mito Red both say their current panels (Solo 3.0, MitoPRO 1500X) are FDA Class II registered. Registration/listing is not clearance or approval and is not a quality mark.' },
     { name: 'Brand maturity', winner: 'tie', note: 'Both established biohacker brands with multi-year track records, large communities, multi-year warranties.' },
     { name: 'Price', winner: 'b', note: 'MitoPRO 1500: $1,199. Joovv Solo 3.0: $1,295. MitoPRO is $96 cheaper for broader spectrum and similar build.' },
     { name: 'Full-body cost', winner: 'b', note: 'Two MitoPRO 1500: ~$2,400. Joovv full-body stack: $3,000–$5,000. MitoPRO is meaningfully cheaper for full-body coverage.' },
@@ -29,11 +29,11 @@ const joovvVsMitoRed: HeadToHead = {
   faq: [
     {
       q: 'Joovv Solo 3.0 vs Mito Red MitoPRO 1500 — which is better?',
-      a: 'Depends on the axis. Joovv wins for FDA registration, modular scaling and the tightest EMF discipline. MitoPRO wins for broader four-wavelength spectrum and $100 lower price. Build, irradiance verification and brand maturity are roughly equivalent.',
+      a: 'Depends on the axis. Joovv wins for modular scaling and the tightest EMF discipline. MitoPRO wins for broader four-wavelength spectrum and $100 lower price. Build, irradiance verification and brand maturity are roughly equivalent.',
     },
     {
       q: 'Is the Joovv premium worth $100 over Mito Red?',
-      a: 'Only if FDA Class II registration matters to you. For most biohacker use cases the underlying photobiomodulation mechanism is the same, and MitoPRO’s broader spectrum (630 + 660 + 830 + 850 nm vs Joovv’s 660 + 850 nm) is the more concrete benefit for the dollar.',
+      a: 'Only if modular scaling matters to you. FDA registration is not a reason on its own: it is a listing, not clearance or approval. For most biohacker use cases the underlying photobiomodulation mechanism is the same, and MitoPRO’s broader spectrum (630 + 660 + 830 + 850 nm vs Joovv’s 660 + 850 nm) is the more concrete benefit for the dollar.',
     },
     {
       q: 'Which scales better to full-body?',
@@ -46,11 +46,11 @@ const joovvVsMitoRed: HeadToHead = {
   ],
   content: `## The short version
 
-Two top-tier biohacker panels with comparable build and verification. Joovv wins on regulatory status, modular scaling and EMF discipline; MitoPRO wins on wavelength spectrum and price. Pick on the axis you actually weight.
+Two top-tier biohacker panels with comparable build and verification. Joovv wins on modular scaling and EMF discipline; MitoPRO wins on wavelength spectrum and price. Pick on the axis you actually weight.
 
 ## When is Joovv Solo 3.0 the right pick?
 
-If FDA Class II registration is a real value (not just a nice-to-have), modular full-body scaling matters for your setup, and the tightest published EMF discipline matters — Joovv is the right shape. The $100 premium over MitoPRO buys regulatory status and the modular ecosystem.
+If modular full-body scaling matters for your setup and the tightest published EMF discipline matters — Joovv is the right shape. The $100 premium over MitoPRO buys the modular ecosystem.
 
 ## When is Mito Red MitoPRO 1500 the right pick?
 

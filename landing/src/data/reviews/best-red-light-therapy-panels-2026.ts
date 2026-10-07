@@ -12,12 +12,12 @@ const bestRedLightPanels2026: Comparison = {
     {
       reviewSlug: 'mito-red-mitopro-1500',
       award: 'Best overall',
-      takeaway: 'MitoPRO 1500X: six-wavelength large panel, FDA Class II registered, 3-year warranty — $400 cheaper than Joovv at $1,299.',
+      takeaway: 'MitoPRO 1500X: six-wavelength large panel, 3-year warranty — $400 cheaper than Joovv at $1,299.',
     },
     {
       reviewSlug: 'joovv-solo-3',
       award: 'Best modular system',
-      takeaway: 'Modular, FDA Class II registered, verified irradiance and clean EMF — the stackable reference, but now $1,699.',
+      takeaway: 'Modular, verified irradiance and clean EMF — the stackable reference, but now $1,699.',
     },
     {
       reviewSlug: 'platinumled-biomax-600',
@@ -57,19 +57,19 @@ const bestRedLightPanels2026: Comparison = {
     {
       reviewSlug: 'kineon-move-plus',
       award: 'Best for targeted joint use',
-      takeaway: 'Laser-plus-LED wrap for knee, elbow and shoulder photobiomodulation — FDA Class II registered.',
+      takeaway: 'Laser-plus-LED wrap for knee, elbow and shoulder photobiomodulation — listed with the FDA, not cleared.',
     },
   ],
   verdict:
-    'Mito Red MitoPRO 1500X wins overall — six wavelengths, FDA Class II registration, verified irradiance and a 3-year warranty at $1,299. Joovv Solo 3.0 remains the modular reference with the cleanest build, but at $1,699 it now costs $400 more for a narrower spectrum. PlatinumLED BIOMAX 600 leads on wavelength count and EMF transparency at mid-size; GembaRed Vesta is the EMF-discipline specialist; RubyLx Lyra Pro is for buyers who need every spec lab-verified. Infraredi delivers MitoPRO-class size at a discount; BioLight covers the mid-tier value point; Hooga is the budget entry that actually meets its specs. Bon Charge fits EU/AU consumer buyers; Kineon Move+ is a different product class for targeted joint use. Pick on the axis that matters most — coverage, spectrum, EMF, evidence or price.',
+    'Mito Red MitoPRO 1500X wins overall — six wavelengths, verified irradiance and a 3-year warranty at $1,299. Joovv Solo 3.0 remains the modular reference with the cleanest build, but at $1,699 it now costs $400 more for a narrower spectrum. PlatinumLED BIOMAX 600 leads on wavelength count and EMF transparency at mid-size; GembaRed Vesta is the EMF-discipline specialist; RubyLx Lyra Pro is for buyers who need every spec lab-verified. Infraredi delivers MitoPRO-class size at a discount; BioLight covers the mid-tier value point; Hooga is the budget entry that actually meets its specs. Bon Charge fits EU/AU consumer buyers; Kineon Move+ is a different product class for targeted joint use. Pick on the axis that matters most — coverage, spectrum, EMF, evidence or price.',
   faq: [
     {
       q: 'Which red light therapy panel is best in 2026?',
-      a: 'Mito Red MitoPRO 1500X wins overall — six wavelengths, FDA Class II registered, verified irradiance, $1,299. Joovv Solo 3.0 ($1,699) is the modular, stackable premium pick. Hooga HG500 is the budget entry. Pick on which axis (build, spectrum, EMF, price) matters most.',
+      a: 'Mito Red MitoPRO 1500X wins overall — six wavelengths, verified irradiance, $1,299. Joovv Solo 3.0 ($1,699) is the modular, stackable premium pick. Hooga HG500 is the budget entry. Pick on which axis (build, spectrum, EMF, price) matters most.',
     },
     {
       q: 'How much irradiance does a red light panel actually need?',
-      a: 'For typical photobiomodulation indications, peer-reviewed studies use 20–100 mW/cm² at the treatment surface. Manufacturers often quote peak irradiance at 0 inches — which is not a real treatment distance. Look for the 6-inch figure and check it against independent meter readings. Most panels in this list deliver 40–70 mW/cm² at 6 inches.',
+      a: 'Studies use a wide range of power densities, and more is not better: light therapy often shows a "less can be more" dose response, and home panels rarely deliver the dose used in studies. Manufacturers often quote peak irradiance at 0 inches — which is not a real treatment distance. Look for the 6-inch figure and check it against independent meter readings. Most panels in this list deliver 40–70 mW/cm² at 6 inches.',
     },
     {
       q: 'Which wavelengths matter — 660 nm or 850 nm?',
@@ -77,7 +77,7 @@ const bestRedLightPanels2026: Comparison = {
     },
     {
       q: 'Are red light therapy panels FDA-approved?',
-      a: 'In this list, Joovv Solo 3.0 and the current Mito Red MitoPRO 1500X are FDA-registered as Class II devices for their specific indications, and Bon Charge says its panel is FDA Class II registered (registration is not the same as FDA approval). The Kineon Move+ has a Class II listing only — no 510(k) clearance was found. Others are sold as consumer wellness devices without clinical clearance — the underlying photobiomodulation mechanism is supported by literature, but device-specific clinical claims are restricted.',
+      a: 'No. None of the panels in this list is FDA-approved. Joovv and Mito Red say the Solo 3.0 and the current MitoPRO 1500X are FDA registered as Class II devices, and Bon Charge says the same of its panel. Registration and listing only mean the company told the FDA the device exists; they are not clearance or approval and are not a quality mark. Clearance (510(k)) is a separate step: the FDA finds a device substantially equivalent to one already on the market, for a named use. The Kineon Move+ has a Class II listing only — no 510(k) clearance was found. Others are sold as consumer wellness devices; the photobiomodulation literature does not prove that any specific home panel works.',
     },
     {
       q: 'How important is EMF and flicker in red light panels?',

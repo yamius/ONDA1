@@ -18,7 +18,7 @@ const rubylxLyraPro: ToolReview = {
     { criterionId: 'wavelengths', score: 8.5, note: 'Five wavelengths (630 + 660 + 810 + 830 + 850 nm) — covers the standard photobiomodulation range without exotic additions.' },
     { criterionId: 'build-emf-flicker', score: 9.0, note: 'Third-party EMF at <0.3 mG at 6", flicker rate published and below research thresholds. Aluminium build with multi-year warranty.' },
     { criterionId: 'coverage', score: 7.5, note: 'Mid-large panel — between PlatinumLED BIOMAX 600 and MitoPRO 1500. Stand included; full-body requires stacking.' },
-    { criterionId: 'evidence', score: 7.5, note: 'No FDA Class II registration but RubyLx publishes full third-party lab reports for every claimed spec — the most-tested panel in this list.' },
+    { criterionId: 'evidence', score: 7.5, note: 'RubyLx publishes full third-party lab reports for every claimed spec — the most-tested panel in this list.' },
     { criterionId: 'value', score: 7.0, note: '$1,099 — premium pricing but cheaper than Joovv. The third-party testing transparency is what justifies the premium over BioLight.' },
   ],
   pros: [
@@ -29,7 +29,6 @@ const rubylxLyraPro: ToolReview = {
   ],
   cons: [
     'Smaller brand following — reliability track record shorter than Joovv or Mito Red',
-    'No FDA Class II registration',
     'Mid-large panel — full-body requires stacking',
     'No modular ecosystem like Joovv',
   ],
@@ -46,7 +45,7 @@ RubyLx Lyra Pro is the panel built for buyers who do not trust marketing-stated 
 
 ## What are the downsides of RubyLx Lyra Pro?
 
-RubyLx is a smaller brand than Joovv, Mito Red or PlatinumLED. The multi-year reliability track record is shorter, the modular ecosystem (Joovv) is absent, and the no FDA Class II registration carries the same implication as for every panel here except Joovv and the MitoPRO 1500X. The pricing is premium but justified by the testing transparency.
+RubyLx is a smaller brand than Joovv, Mito Red or PlatinumLED. The multi-year reliability track record is shorter, the modular ecosystem (Joovv) is absent (FDA registration, which only Joovv and the MitoPRO 1500X claim here, is a listing, not a quality mark). The pricing is premium but justified by the testing transparency.
 
 ## Who should buy RubyLx Lyra Pro?
 
@@ -68,9 +67,9 @@ The photobiomodulation mechanism behind why red light therapy works.
   ],
   relatedSlugs: ['gembared-vesta', 'platinumled-biomax-600', 'joovv-solo-3'],
   faq: [
-    { q: "Is the RubyLx Lyra Pro worth it?", a: "The Lyra Pro is worth it for buyers who want every spec independently verified. It is the most third-party tested panel in consumer red light, with published lab reports for irradiance, EMF, flicker and spectrum, and five-wavelength coverage. It lacks FDA Class II registration." },
+    { q: "Is the RubyLx Lyra Pro worth it?", a: "The Lyra Pro is worth it for buyers who want every spec independently verified. It is the most third-party tested panel in consumer red light, with published lab reports for irradiance, EMF, flicker and spectrum, and five-wavelength coverage." },
     { q: "How much does the RubyLx Lyra Pro cost?", a: "The RubyLx Lyra Pro is listed at $1,099 one-time, with the stand included. That is cheaper than Joovv, though full-body coverage requires stacking more than one panel. Its published lab reports cover irradiance, EMF, flicker and spectrum, and it offers five-wavelength coverage." },
-    { q: "What are the downsides of the RubyLx Lyra Pro?", a: "RubyLx has a smaller brand following, so its reliability track record is shorter than Joovv or Mito Red. The Lyra Pro has no FDA Class II registration, full-body use requires stacking panels, and there is no modular ecosystem like Joovv's." },
+    { q: "What are the downsides of the RubyLx Lyra Pro?", a: "RubyLx has a smaller brand following, so its reliability track record is shorter than Joovv or Mito Red. Full-body use with the Lyra Pro requires stacking panels, and there is no modular ecosystem like Joovv's." },
     { q: "RubyLx Lyra Pro vs Joovv: which is better?", a: "The Lyra Pro is cheaper than Joovv with comparable EMF discipline and more published third-party lab testing. Joovv offers a modular ecosystem and a longer reliability track record. Pick RubyLx for verified specs and value, Joovv for its ecosystem." },
   ],
   datePublished: '2026-05-23',

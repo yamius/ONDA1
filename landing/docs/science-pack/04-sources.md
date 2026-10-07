@@ -303,6 +303,26 @@ All checked against PubMed on 2026-10-06 (esummary, abstract, XML): no errata or
 
 Also cited: Balban 2023 (above).
 
+## Red light therapy (evidence/red-light-therapy, approved 2026-10-08)
+
+All checked against PubMed on 2026-10-08 (esummary, abstract); Wunsch 2014 funding and control-group details from the full text (PMC3926176).
+
+| Source | Full reference | Type / class | ID | Use for |
+|---|---|---|---|---|
+| Hamblin 2018 | Hamblin MR. Mechanisms and mitochondrial redox signaling in photobiomodulation. *Photochem Photobiol* 2018;94(2):199-212 | review / emerging | DOI 10.1111/php.12864 · PMID 29164625 | Definition; cytochrome c oxidase as proposed absorber; nitric oxide hypothesis. Mechanism, mostly cell/animal |
+| Huang 2009 | Huang YY, Chen AC, Carroll JD, Hamblin MR. Biphasic dose response in low level light therapy. *Dose Response* 2009;7(4):358-383 | review / emerging | DOI 10.2203/dose-response.09-027.Hamblin · PMID 20011653 | Dose parameters; biphasic (Arndt–Schulz) response. Mainly the authors' own cell/animal work |
+| Zadik 2019 (MASCC/ISOO) | Zadik Y, Arany PR, Fregnani ER, et al.; MASCC/ISOO Mucositis Study Group. Systematic review of photobiomodulation for the management of oral mucositis in cancer patients and clinical practice guidelines. *Support Care Cancer* 2019;27(10):3969-3983 | guideline / guideline | DOI 10.1007/s00520-019-04890-2 · PMID 31286228 | PBM to prevent oral mucositis in defined groups; no guideline for treatment |
+| Stausholm 2019 | Stausholm MB, Naterstad IF, Joensen J, et al. Efficacy of low-level laser therapy on pain and disability in knee osteoarthritis: systematic review and meta-analysis of randomised placebo-controlled trials. *BMJ Open* 2019;9(10):e031142 | meta-analysis / context-dependent | DOI 10.1136/bmjopen-2019-031142 · PMID 31662383 | Knee OA pain and disability vs placebo, at recommended doses (fact `study.stausholm2019.trials`). Two authors former WALT board members |
+| Chow 2009 | Chow RT, Johnson MI, Lopes-Martins RA, Bjordal JM. Efficacy of low-level laser therapy in the management of neck pain: a systematic review and meta-analysis. *Lancet* 2009;374(9705):1897-1908 | meta-analysis / context-dependent | DOI 10.1016/S0140-6736(09)61522-1 · PMID 19913903 | Neck pain vs placebo; side effects similar to placebo (fact `study.chow2009.trials`) |
+| Leal-Junior 2015 | Leal-Junior EC, Vanin AA, Miranda EF, et al. Effect of phototherapy (LLLT and LED therapy) on exercise performance and markers of exercise recovery: a systematic review with meta-analysis. *Lasers Med Sci* 2015;30(2):925-939 | meta-analysis / emerging | DOI 10.1007/s10103-013-1465-4 · PMID 24249354 | Pre-exercise light and performance; recovery markers not poolable. First author has manufacturer research support |
+| Adil 2017 | Adil A, Godwin M. The effectiveness of treatments for androgenetic alopecia: a systematic review and meta-analysis. *J Am Acad Dermatol* 2017;77(1):136-141.e5 | meta-analysis / context-dependent | DOI 10.1016/j.jaad.2017.02.054 · PMID 28396101 | Laser therapy superior to placebo for hair growth in men; FDA-cleared laser comb |
+| Wunsch 2014 | Wunsch A, Matuschka K. A controlled trial to determine the efficacy of red and near-infrared light treatment in patient satisfaction, reduction of fine lines, wrinkles, skin roughness, and intradermal collagen density increase. *Photomed Laser Surg* 2014;32(2):93-100 | controlled trial / emerging | DOI 10.1089/pho.2013.3616 · PMID 24286286 | Skin outcomes, single trial. Fully funded by JK-Holding; PI remunerated by sponsor; non-randomised control group mainly company employees (full text) |
+| Grimes 2025 | Grimes DR. Methodological issues in visible LED therapy dermatological research and reporting. *PLoS One* 2025;20(9):e0332995 | other (methodological analysis) / debated | DOI 10.1371/journal.pone.0332995 · PMID 41032498 | Mixed dermatology LED evidence; no dose validation; manufacturer sponsorship (fact `study.grimes2025.sponsored`) |
+| Cronshaw 2025 | Cronshaw M, Parker S, Hamadah O, Arnabat-Dominguez J, Grootveld M. Photobiomodulation LED devices for home use: design, function and potential: a pilot study. *Dent J (Basel)* 2025;13(2):76 | other (bench pilot) / emerging | DOI 10.3390/dj13020076 · PMID 39996950 | Home device output heterogeneous; maker dosing directions inaccurate |
+| Lee 2023 | Lee TL, Ding Z, Chan AS. Can transcranial photobiomodulation improve cognitive function? A systematic review of human studies. *Ageing Res Rev* 2023;83:101786 | systematic review / emerging | DOI 10.1016/j.arr.2022.101786 · PMID 36371017 | Transcranial PBM and cognition; half of trials randomised (fact `study.lee2023.studies`) |
+
+Also cited: FDA Premarket Notification 510(k) (Official documents below).
+
 ## Official documents (type `official`: URL, no DOI — device and regulatory facts only)
 
 | Source | URL | Use for |
@@ -316,5 +336,6 @@ Also cited: Balban 2023 (above).
 | electroCore — gammaCore FAQ (approved 2026-10-05) | https://www.gammacore.com/about-gammacore/faq/ | Manufacturer-listed gammaCore indications and label limitations — always attributed as “the manufacturer states”. The site blocks scripts; verify in a browser. |
 | LivaNova — VNS Therapy HCP FAQs (approved 2026-10-05) | https://www.livanova.com/epilepsy-vnstherapy/en-us/hcp/faqs | Implanted VNS Therapy: device description and the epilepsy indication only (the page states no depression indication) |
 | American Lung Association — respiratory rate | https://www.lung.org/blog/respiratory-rate-vital-signs | Adult resting breathing rate |
+| FDA — Premarket Notification 510(k) | https://www.fda.gov/medical-devices/premarket-submissions-selecting-and-preparing-correct-submission/premarket-notification-510k | What a 510(k) clearance is (substantial equivalence); not evidence that a device works |
 
 **Status of the identifiers:** every DOI above was confirmed in Crossref on 2026-10-04 (author, year, journal and title match).  Resting-heart-rate section: authors, year, volume and pages checked against PubMed on 2026-10-05. The automatic check looks every DOI/PMID up again each time a page that cites it is checked.

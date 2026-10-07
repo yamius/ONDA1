@@ -72,7 +72,7 @@ Caffeine and theobromine are pharmacological accelerators. While useful for 'Pro
 
 > **The Hack:** 10 minutes of Red Light Therapy (660nm) before the sleep cycle.
 
-**The Logic:** [Photobiomodulation](/glossary/photobiomodulation) at 660nm provides the [mitochondria](/glossary/mitochondria) with the necessary [ATP](/glossary/atp) to utilize the stem cells produced during the day. It closes the loop on the regeneration sequence.
+**The Logic:** [Photobiomodulation](/glossary/photobiomodulation) at 660nm is thought to act on the [mitochondria](/glossary/mitochondria), where the light is absorbed by cytochrome c oxidase; the light does not supply [ATP](/glossary/atp) itself. Any link to stem cells or overnight regeneration is speculative and has not been tested in people.
 
 ---
 

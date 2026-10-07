@@ -18,7 +18,7 @@ const hoogaHg500: ToolReview = {
     { criterionId: 'wavelengths', score: 7.0, note: 'Two wavelengths (660 + 850 nm) — the basic biohacker default. No 630, 810, 830 or 940 nm.' },
     { criterionId: 'build-emf-flicker', score: 7.5, note: 'EMF <0.5 mG at 6", flicker rate disclosed and low. Build is competent — aluminium back, plastic front trim; 3-year warranty and 60-day returns.' },
     { criterionId: 'coverage', score: 7.5, note: 'Half-body coverage in a single panel. Stand and door-mount hardware included.' },
-    { criterionId: 'evidence', score: 6.5, note: 'No FDA Class II registration. Marketing is conservative; Hooga does not overclaim — unusual at the budget tier.' },
+    { criterionId: 'evidence', score: 6.5, note: 'Marketing is conservative; Hooga does not overclaim — unusual at the budget tier.' },
     { criterionId: 'value', score: 9.5, note: '$359 for half-body coverage with verified specs — by far the best value in this list. Cheaper panels exist on Amazon but spec discipline drops fast.' },
   ],
   pros: [
@@ -29,7 +29,6 @@ const hoogaHg500: ToolReview = {
   ],
   cons: [
     'Two-wavelength coverage only — no 630, 810 or exotic additions',
-    'No FDA Class II registration',
     'Smaller LED count (100 vs 200–300 in premium panels)',
     'Aluminium-and-plastic build less premium than Joovv or Mito Red',
   ],
@@ -46,11 +45,11 @@ Hooga HG500 is the cheapest legitimate red-light therapy panel on the consumer m
 
 ## What are the downsides of Hooga HG500?
 
-You give up wavelength breadth (no 630/810/830 nm), LED count, and the premium build feel of Joovv or Mito Red. No FDA Class II registration. Smaller community/support footprint than the larger brands. The panel does what it does well; it just does less than premium options.
+You give up wavelength breadth (no 630/810/830 nm), LED count, and the premium build feel of Joovv or Mito Red. Smaller community/support footprint than the larger brands. The panel does what it does well; it just does less than premium options.
 
 ## Who should buy Hooga HG500?
 
-Choose Hooga HG500 if budget is the deciding criterion and you want verified specs at the entry tier. For wavelength breadth, MitoPRO 1500 or PlatinumLED BIOMAX 600. For premium build and FDA registration, Joovv Solo 3.0.
+Choose Hooga HG500 if budget is the deciding criterion and you want verified specs at the entry tier. For wavelength breadth, MitoPRO 1500 or PlatinumLED BIOMAX 600. For premium build and modularity, Joovv Solo 3.0.
 
 ---
 
@@ -70,7 +69,7 @@ The photobiomodulation mechanism behind why red light therapy works.
   faq: [
     { q: "Is the Hooga HG500 worth it?", a: "Yes, for a first red-light panel. At $359 with a door mount, hanging kit, 3-year warranty and 60-day returns, the HG500 delivers independently tested irradiance close to its claims and EMF readings in the same range as panels three times the price. You give up hardware refinement and wavelength breadth, not core performance." },
     { q: "What wavelengths does the Hooga HG500 use?", a: "The HG500 uses two wavelengths, 660 nm red and 850 nm near-infrared, from 100 5W LEDs. It has no 630 nm, 810 nm or more exotic additions. Buyers who want broader spectrum coverage will need a pricier panel such as the GembaRed Vesta or Joovv." },
-    { q: "Hooga HG500 vs Joovv: which should I buy?", a: "The Hooga costs about a fifth of Joovv ($1,699) while keeping most of the basic spec: honest irradiance and low EMF. Joovv adds FDA registration, a more premium build, more LEDs and a modular system. Choose Hooga for value, Joovv if you want the category-reference build." },
+    { q: "Hooga HG500 vs Joovv: which should I buy?", a: "The Hooga costs about a fifth of Joovv ($1,699) while keeping most of the basic spec: honest irradiance and low EMF. Joovv adds a more premium build, more LEDs and a modular system. Choose Hooga for value, Joovv if you want the category-reference build." },
   ],
   datePublished: '2026-05-23',
   dateModified: '2026-10-01',

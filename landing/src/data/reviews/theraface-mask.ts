@@ -17,7 +17,7 @@ const therafaceMask: ToolReview = {
     { criterionId: 'irradiance', score: 7.5, note: 'Documented irradiance in dermatology-acceptable range. Brand-funded validation; less independent verification than category references.' },
     { criterionId: 'wavelength-coverage', score: 8.5, note: 'Red 633 nm + blue 415 nm + amber 590 nm — three-wavelength coverage with mode-switching protocols.' },
     { criterionId: 'led-count-coverage', score: 7.5, note: 'Solid LED count and even distribution. No neck flap on the standard model.' },
-    { criterionId: 'clinical-evidence', score: 6.5, note: 'FDA registered, brand-funded research. Therabody pedigree from massage guns is real but doesn\'t carry into red-light clinical moat.' },
+    { criterionId: 'clinical-evidence', score: 6.5, note: 'FDA registered (a listing, not clearance or approval), brand-funded research. Therabody pedigree from massage guns is real but doesn\'t carry into red-light clinical moat.' },
     { criterionId: 'comfort-fit', score: 8.0, note: 'Hybrid flexible-shell build — between hard plastic and full silicone. App-controlled session timing is the UX differentiator.' },
     { criterionId: 'value', score: 6.5, note: '$649 — premium pricing reflecting Therabody brand premium. Justified for users in the Therabody ecosystem; expensive for users just buying a red light mask.' },
   ],
@@ -36,7 +36,7 @@ const therafaceMask: ToolReview = {
   bestFor: 'Best for users already in the Therabody ecosystem who want a coordinated face-mask + TheraFace Pro stack with three-wavelength coverage and app control.',
   testStatus: 'evidence-based',
   testNote:
-    'Evidence-based assessment — scored from Therabody product documentation, FDA registration and 2026 consumer reviews. Not hands-on tested by ONDA.',
+    'Evidence-based assessment — scored from Therabody product documentation, the brand’s FDA-registration statement and 2026 consumer reviews. Not hands-on tested by ONDA.',
   price: { usd: 649, note: 'TheraFace Mask standalone', asOf: '2026-05-28' },
   link: 'https://www.therabody.com/',
   linkType: 'official',

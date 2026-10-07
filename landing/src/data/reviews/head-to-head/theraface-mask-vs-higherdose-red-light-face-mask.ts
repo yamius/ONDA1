@@ -22,7 +22,7 @@ const therafaceVsHigherDose: HeadToHead = {
     { name: 'App / UX', winner: 'a', note: 'TheraFace: app-controlled session protocols. HigherDOSE: no app — a rechargeable handheld controller with 10- or 20-minute sessions. Both consumer-friendly; TheraFace more programmable.' },
     { name: 'Comfort', winner: 'tie', note: 'Both flexible-hybrid builds. Comparable comfort; preference varies.' },
     { name: 'Ecosystem fit', winner: 'tie', note: 'TheraFace pairs with TheraFace Pro device + Theragun. HigherDOSE pairs with PEMF mat + sauna blanket. Pick on which ecosystem you already use.' },
-    { name: 'Clinical evidence', winner: 'tie', note: 'Both rely on brand-funded research (HigherDOSE says its mask is FDA-cleared). Neither matches Omnilux Class II depth.' },
+    { name: 'Clinical evidence', winner: 'tie', note: 'Both rely on brand-funded research (HigherDOSE says its mask is FDA-cleared). Neither matches Omnilux’s peer-reviewed depth.' },
     { name: 'Price', winner: 'b', note: 'HigherDOSE: $349. TheraFace: $649. HigherDOSE roughly half the price.' },
   ],
   faq: [

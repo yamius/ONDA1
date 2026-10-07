@@ -707,6 +707,55 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1007/s00520-019-04890-2": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Systematic review of photobiomodulation for the management of oral mucositis in cancer patients and clinical practice guidelines",
+   "firstAuthor": "On behalf of The Mucositis Study Group of the Multinational Association of Supportive Care in Cancer/International Society of Oral Oncology (MASCC/ISOO)",
+   "authors": [
+    "On behalf of The Mucositis Study Group of the Multinational Association of Supportive Care in Cancer/International Society of Oral Oncology (MASCC/ISOO)",
+    "Zadik",
+    "Arany",
+    "Fregnani",
+    "Bossi",
+    "Antunes",
+    "Bensadoun",
+    "Gueiros",
+    "Majorana",
+    "Nair",
+    "Ranna",
+    "Tissing",
+    "Vaddi",
+    "Lubart",
+    "Migliorati",
+    "Lalla",
+    "Cheng",
+    "Elad"
+   ],
+   "year": 2019,
+   "journal": "Supportive Care in Cancer",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1007/s10103-013-1465-4": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effect of phototherapy (low-level laser therapy and light-emitting diode therapy) on exercise performance and markers of exercise recovery: a systematic review with meta-analysis",
+   "firstAuthor": "Leal-Junior",
+   "authors": [
+    "Leal-Junior",
+    "Vanin",
+    "Miranda",
+    "de Carvalho",
+    "Dal Corso",
+    "Bjordal"
+   ],
+   "year": 2013,
+   "yearAlt": 2015,
+   "journal": "Lasers in Medical Science",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1007/s10286-006-0352-5": {
    "kind": "doi",
    "valid": true,
@@ -1122,6 +1171,21 @@
    "journal": "Annals of Emergency Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1016/j.arr.2022.101786": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Can transcranial photobiomodulation improve cognitive function? A systematic review of human studies",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Ding",
+    "Chan"
+   ],
+   "year": 2023,
+   "journal": "Ageing Research Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/j.bbi.2012.02.002": {
    "kind": "doi",
@@ -1858,6 +1922,20 @@
    "journal": "Journal of the American Academy of Child &amp; Adolescent Psychiatry",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.jaad.2017.02.054": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effectiveness of treatments for androgenetic alopecia: A systematic review and meta-analysis",
+   "firstAuthor": "Adil",
+   "authors": [
+    "Adil",
+    "Godwin"
+   ],
+   "year": 2017,
+   "journal": "Journal of the American Academy of Dermatology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/j.jacc.2007.04.079": {
    "kind": "doi",
@@ -3069,6 +3147,22 @@
    "journal": "The Lancet",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/s0140-6736(09)61522-1": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of low-level laser therapy in the management of neck pain: a systematic review and meta-analysis of randomised placebo or active-treatment controlled trials",
+   "firstAuthor": "Chow",
+   "authors": [
+    "Chow",
+    "Johnson",
+    "Lopes-Martins",
+    "Bjordal"
+   ],
+   "year": 2009,
+   "journal": "The Lancet",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/s0140-6736(14)62000-6": {
    "kind": "doi",
@@ -7413,6 +7507,19 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1371/journal.pone.0332995": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Methodological issues in visible LED therapy dermatological research and reporting",
+   "firstAuthor": "Grimes",
+   "authors": [
+    "Grimes"
+   ],
+   "year": 2025,
+   "journal": "PLOS One",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1378/chest.125.2.683": {
    "kind": "doi",
    "valid": true,
@@ -7741,6 +7848,22 @@
    "journal": "JMIR Mental Health",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.2203/dose-response.09-027.hamblin": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Biphasic Dose Response in Low Level Light Therapy",
+   "firstAuthor": "Huang",
+   "authors": [
+    "Huang",
+    "Chen",
+    "Carroll",
+    "Hamblin"
+   ],
+   "year": 2009,
+   "journal": "Dose-Response",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.2337/dc15-0429": {
    "kind": "doi",
@@ -8483,6 +8606,23 @@
    "journal": "Biomedicines",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3390/dj13020076": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Photobiomodulation LED Devices for Home Use: Design, Function and Potential: A Pilot Study",
+   "firstAuthor": "Cronshaw",
+   "authors": [
+    "Cronshaw",
+    "Parker",
+    "Hamadah",
+    "Arnabat-Dominguez",
+    "Grootveld"
+   ],
+   "year": 2025,
+   "journal": "Dentistry Journal",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.3390/healthcare10091755": {
    "kind": "doi",
@@ -10496,6 +10636,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:19913903": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of low-level laser therapy in the management of neck pain: a systematic review and meta-analysis of randomised placebo or active-treatment controlled trials.",
+   "firstAuthor": "Chow",
+   "authors": [
+    "Chow",
+    "Johnson",
+    "Lopes-Martins",
+    "Bjordal"
+   ],
+   "year": 2009,
+   "journal": "Lancet",
+   "doi": "10.1016/S0140-6736(09)61522-1",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:20010421": {
    "kind": "pmid",
    "valid": true,
@@ -10511,6 +10668,23 @@
    "doi": "10.1097/ALN.0b013e3181c38c25",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:20011653": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Biphasic dose response in low level light therapy.",
+   "firstAuthor": "Huang",
+   "authors": [
+    "Huang",
+    "Chen",
+    "Carroll",
+    "Hamblin"
+   ],
+   "year": 2009,
+   "journal": "Dose Response",
+   "doi": "10.2203/dose-response.09-027.Hamblin",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:20204161": {
    "kind": "pmid",
@@ -11637,6 +11811,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:24249354": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effect of phototherapy (low-level laser therapy and light-emitting diode therapy) on exercise performance and markers of exercise recovery: a systematic review with meta-analysis.",
+   "firstAuthor": "Leal-Junior",
+   "authors": [
+    "Leal-Junior",
+    "Vanin",
+    "Miranda",
+    "de Carvalho Pde",
+    "Dal Corso",
+    "Bjordal"
+   ],
+   "year": 2015,
+   "yearAlt": 2013,
+   "journal": "Lasers Med Sci",
+   "doi": "10.1007/s10103-013-1465-4",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:24252493": {
    "kind": "pmid",
    "valid": true,
@@ -11655,6 +11849,22 @@
    "doi": "10.1016/j.jep.2013.11.008",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:24286286": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A controlled trial to determine the efficacy of red and near-infrared light treatment in patient satisfaction, reduction of fine lines, wrinkles, skin roughness, and intradermal collagen density increase.",
+   "firstAuthor": "Wunsch",
+   "authors": [
+    "Wunsch",
+    "Matuschka"
+   ],
+   "year": 2014,
+   "yearAlt": 2013,
+   "journal": "Photomed Laser Surg",
+   "doi": "10.1089/pho.2013.3616",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:24293767": {
    "kind": "pmid",
@@ -12715,6 +12925,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:28396101": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effectiveness of treatments for androgenetic alopecia: A systematic review and meta-analysis.",
+   "firstAuthor": "Adil",
+   "authors": [
+    "Adil",
+    "Godwin"
+   ],
+   "year": 2017,
+   "journal": "J Am Acad Dermatol",
+   "doi": "10.1016/j.jaad.2017.02.054",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:28467922": {
    "kind": "pmid",
    "valid": true,
@@ -13086,6 +13311,20 @@
    "doi": "10.1038/nrn.2017.130",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:29164625": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Mechanisms and Mitochondrial Redox Signaling in Photobiomodulation.",
+   "firstAuthor": "Hamblin",
+   "authors": [
+    "Hamblin"
+   ],
+   "year": 2018,
+   "journal": "Photochem Photobiol",
+   "doi": "10.1111/php.12864",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:29209423": {
    "kind": "pmid",
@@ -13632,6 +13871,36 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:31286228": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Systematic review of photobiomodulation for the management of oral mucositis in cancer patients and clinical practice guidelines.",
+   "firstAuthor": "Zadik",
+   "authors": [
+    "Zadik",
+    "Arany",
+    "Fregnani",
+    "Bossi",
+    "Antunes",
+    "Bensadoun",
+    "Gueiros",
+    "Majorana",
+    "Nair",
+    "Ranna",
+    "Tissing",
+    "Vaddi",
+    "Lubart",
+    "Migliorati",
+    "Lalla",
+    "Cheng",
+    "Elad"
+   ],
+   "year": 2019,
+   "journal": "Support Care Cancer",
+   "doi": "10.1007/s00520-019-04890-2",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:31311698": {
    "kind": "pmid",
    "valid": true,
@@ -13786,6 +14055,27 @@
    "doi": "10.3390/jcm8101638",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:31662383": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of low-level laser therapy on pain and disability in knee osteoarthritis: systematic review and meta-analysis of randomised placebo-controlled trials.",
+   "firstAuthor": "Stausholm",
+   "authors": [
+    "Stausholm",
+    "Naterstad",
+    "Joensen",
+    "Lopes-Martins RÁB",
+    "Sæbø",
+    "Lund",
+    "Fersum",
+    "Bjordal"
+   ],
+   "year": 2019,
+   "journal": "BMJ Open",
+   "doi": "10.1136/bmjopen-2019-031142",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:31672896": {
    "kind": "pmid",
@@ -14959,6 +15249,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:36371017": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Can transcranial photobiomodulation improve cognitive function? A systematic review of human studies.",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Ding",
+    "Chan"
+   ],
+   "year": 2023,
+   "yearAlt": 2022,
+   "journal": "Ageing Res Rev",
+   "doi": "10.1016/j.arr.2022.101786",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:36427887": {
    "kind": "pmid",
    "valid": true,
@@ -15574,6 +15881,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:39996950": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Photobiomodulation LED Devices for Home Use: Design, Function and Potential: A Pilot Study.",
+   "firstAuthor": "Cronshaw",
+   "authors": [
+    "Cronshaw",
+    "Parker",
+    "Hamadah",
+    "Arnabat-Dominguez",
+    "Grootveld"
+   ],
+   "year": 2025,
+   "journal": "Dent J (Basel)",
+   "doi": "10.3390/dj13020076",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:40149675": {
    "kind": "pmid",
    "valid": true,
@@ -15707,6 +16032,20 @@
    "doi": "10.3389/fneur.2025.1556784",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41032498": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Methodological issues in visible LED therapy dermatological research and reporting.",
+   "firstAuthor": "Grimes",
+   "authors": [
+    "Grimes"
+   ],
+   "year": 2025,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0332995",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:41310318": {
    "kind": "pmid",

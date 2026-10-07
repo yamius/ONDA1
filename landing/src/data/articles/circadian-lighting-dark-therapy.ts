@@ -69,7 +69,7 @@ Dark Therapy is the intentional restriction of short-wavelength light to allow f
 
 > **The Hack:** Switch all environmental lighting to red/amber wavelengths (below 2000K) after 8:00 PM.
 >
-> **The Logic:** Red light has no inhibitory effect on Melatonin production. Red and near-infrared light also reach the mitochondria directly — see [mitochondrial DNA & red light](/articles/mitochondrial-dna-red-light). By shifting the spectrum, you maintain visibility without sending an 'Emergency Wake' signal to the SCN.
+> **The Logic:** Dim red light suppresses melatonin far less than blue-rich light. Red and near-infrared light also reach the mitochondria directly — see [mitochondrial DNA & red light](/articles/mitochondrial-dna-red-light). By shifting the spectrum, you maintain visibility without sending an 'Emergency Wake' signal to the SCN.
 
 ### PROTOCOL_03 > The Photic Firewall (Blue Light Blocking)
 

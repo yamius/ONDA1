@@ -17,7 +17,7 @@ const solawave: ToolReview = {
     { criterionId: 'irradiance', score: 5.5, note: 'Modest irradiance — designed for daily light-touch use rather than clinical-dose sessions.' },
     { criterionId: 'wavelength-coverage', score: 6.0, note: 'Red 660 nm only — single wavelength. No near-infrared depth or amber / blue variants.' },
     { criterionId: 'led-count-coverage', score: 4.5, note: 'Small wand head — requires active positioning across face zones, narrow per-zone coverage.' },
-    { criterionId: 'clinical-evidence', score: 5.0, note: 'FDA registered. Light clinical evidence base; brand-funded consumer testimonials over peer-reviewed studies.' },
+    { criterionId: 'clinical-evidence', score: 5.0, note: 'FDA registered (a listing, not clearance or approval). Light clinical evidence base; brand-funded consumer testimonials over peer-reviewed studies.' },
     { criterionId: 'comfort-fit', score: 7.5, note: 'Comfortable handheld build with microcurrent + warmth + vibration. Convenient for spot use.' },
     { criterionId: 'value', score: 9.0, note: '$169 — best entry-tier pricing in red light. Multi-modality stack adds perceived value at the low end.' },
   ],
@@ -36,7 +36,7 @@ const solawave: ToolReview = {
   bestFor: 'Best for budget-conscious entry to red light therapy — multi-modality consumer convenience over clinical credentials.',
   testStatus: 'evidence-based',
   testNote:
-    'Evidence-based assessment — scored from Solawave product documentation, FDA registration and 2026 consumer reviews. Not hands-on tested by ONDA.',
+    'Evidence-based assessment — scored from Solawave product documentation, the brand’s FDA-registration statement and 2026 consumer reviews. Not hands-on tested by ONDA.',
   price: { usd: 169, note: 'Wand 4-in-1 standalone', asOf: '2026-05-28' },
   link: 'https://solawave.co/',
   linkType: 'official',
@@ -50,7 +50,7 @@ Dose, wavelength scope and clinical evidence. Single red wavelength only, narrow
 
 ## Who should buy Solawave Wand 4-in-1?
 
-Choose Solawave Wand for budget-conscious entry to red light therapy with multi-modality consumer convenience. For FDA-cleared handheld evidence reference, LightStim for Wrinkles. For lie-on mask convenience, CurrentBody Series 2. For clinical-evidence reference, Omnilux Contour Face.
+Choose Solawave Wand for budget-conscious entry to red light therapy with multi-modality consumer convenience. For a handheld evidence reference, LightStim for Wrinkles. For lie-on mask convenience, CurrentBody Series 2. For clinical-evidence reference, Omnilux Contour Face.
 
 ---
 

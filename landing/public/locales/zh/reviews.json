@@ -337,7 +337,6 @@
       ],
       "cons": [
         "中等尺寸面板——照射面积小于 MitoPRO 1500 或整套 Joovv 堆叠",
-        "没有 FDA II 类注册",
         "七波长的说法依赖于较少见波段（480、810、1060）上数量很少的 LED",
         "支架和安装配件需另购"
       ],
@@ -346,10 +345,10 @@
         "wavelengths": "覆盖七个波长（480 + 630 + 660 + 810 + 830 + 850 + 1060 nm，依据 PlatinumLED 当前产品页面）——甚至比 MitoPRO 更宽。480 nm 蓝光较为少见，只占总输出的一小部分。",
         "build-emf-flicker": "第三方 EMF 检测在 6\" 处 <0.3 mG，频闪率已公开且较低。PlatinumLED 公开发布了实验室检测——这在该品类中很少见。",
         "coverage": "中等尺寸面板——可覆盖上半身。比 Joovv Solo 或 MitoPRO 1500 小；适合局部照射，全身则需要堆叠。",
-        "evidence": "PlatinumLED 引用了真实的光生物调节文献；没有像 Joovv 或 MitoPRO 1500X 那样的 FDA II 类注册，但宣传相对品类惯例较为克制。",
+        "evidence": "PlatinumLED 引用了真实的光生物调节文献，宣传相对品类惯例较为克制。",
         "value": "$1,049（2026 年 10 月）——做工相当、光谱更宽，价格却明显低于 Joovv Solo 3.0 和 MitoPRO 1500。在高端价位中性价比突出。"
       },
-      "content": "## 领先之处\n\nPlatinumLED BIOMAX 600 是在略低于 Joovv 和 MitoPRO 的价位上，凭光谱宽度和 EMF 控制胜出的面板。七波长覆盖（480 + 630 + 660 + 810 + 830 + 850 + 1060 nm）比本榜单中任何产品都宽，而且 PlatinumLED 是少数公开发布第三方 EMF 和频闪检测报告、而不只是声称数据的品牌之一。\n\n## PlatinumLED BIOMAX 600 有哪些缺点？\n\nBIOMAX 600 的主要缺点是尺寸：它是中等尺寸——比 Joovv Solo 3.0 或 MitoPRO 1500 小。要覆盖全身需要堆叠两块。七波长的说法有一部分是营销：480 nm 蓝光只占总输出的一小部分，较少见波段的 LED 数量较少，意味着其有效剂量有限。没有像 Joovv 或 MitoPRO 1500X 那样的 FDA II 类注册。\n\n## PlatinumLED BIOMAX 600 值得买吗？\n\n对大多数想要一块正经中等尺寸面板的买家来说，值得。售价 $1,049（美国官方商店，2026-10-01 核实），比 Joovv Solo 3.0（$1,699）和 MitoPRO 1500X（$1,299）便宜，光谱更宽，有 3 年保修，检测结果公开。它不是入门红光理疗最便宜的途径——Hooga HG500 只要 $349——而且如果需要全身覆盖，你要买两块面板或更大的型号。\n\n## 红光和近红外面板的作用——以及真实的证据\n\n红光（约 630–660 nm）和近红外光（约 810–850 nm）会被线粒体中的细胞色素 c 氧化酶吸收；推测的效果是短期内提升细胞能量生成、降低氧化应激，这一过程称为光生物调节。红光主要作用于皮肤；近红外光能更深地穿透到肌肉和关节。\n\n证据最充分的是皮肤。在一项 136 名志愿者参与的对照试验中，Wunsch 和 Matuschka 发现，每周两次红光或宽带光照射，与对照组相比改善了自评肤色、皮肤粗糙度以及超声测得的胶原密度（[Photomedicine and Laser Surgery, 2014, doi:10.1089/pho.2013.3616](https://doi.org/10.1089/pho.2013.3616)）。至于肌肉恢复、关节疼痛、睡眠或“长寿”，研究规模更小、剂量和设备各异，结果不一——请把这些说法视为有前景但未经证实。大多数试验使用的是临床设备而非这块面板，因此结果不能一对一套用。\n\n## 距离、剂量和照射时长（厂商指导）\n\nPlatinumLED 产品页面建议 **每个部位 10–20 分钟**，**深层组织距离约 8–14 英寸**，**面部浅层皮肤 16–24 英寸**。距离越近辐照度越高、照射时间越短；并非越多越好，光生物调节遵循剂量-反应曲线，剂量过高反而可能削弱效果。从较短时间开始，并坚持使用（大多数研究为每周数次）。\n\n## 安全\n\n- **眼睛：** 不要直视 LED。近红外光肉眼不可见，所以面板看起来比实际输出要暗——请佩戴防护眼镜，尤其是照射面部时。\n- **光敏性药物和疾病：** 如果你服用会增加光敏性的药物（例如某些抗生素、异维 A 酸、某些利尿剂），或患有红斑狼疮、卟啉症等光敏性疾病，请先咨询医生。\n- **怀孕、癌症，或照射可疑痣或纹身部位：** 请先咨询临床医生。\n- **发热：** 如果皮肤热到不适，请停止。\n\n## 对比\n\n| 面板 | 价格（美元） | 波长 | 备注 |\n|---|---|---|---|\n| PlatinumLED BIOMAX 600 | $1,049 | 7 个（480–1060 nm） | 中等尺寸，公开 EMF 检测，支架另购 |\n| [Joovv Solo 3.0](/reviews/joovv-solo-3) | $1,699 | 红光 + 近红外 | 模块化，FDA 注册，高端 |\n| [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) | $1,299（1500X） | 六个波长，红光 + 近红外 | 更大面板，FDA II 类注册 |\n| [BioLight Pro 900](/reviews/biolight-pro-900) | $899 | 红光 + 近红外 | 中等尺寸，含支架 |\n| [Hooga HG500](/reviews/hooga-hg500) | $349 | 红光 + 近红外 | 入门预算款 |\n\n另请参阅 [Joovv Solo 3.0 对比 BIOMAX 600](/reviews/vs/joovv-solo-3-vs-platinumled-biomax-600)、[BIOMAX 600 对比 BioLight Pro 900](/reviews/vs/platinumled-biomax-600-vs-biolight-pro-900) 以及 [最佳红光理疗板](/reviews/compare/best-red-light-therapy-panels-2026)。\n\n## 谁该买 PlatinumLED BIOMAX 600？\n\n如果你想以比 Joovv Solo 3.0 低 $650 的价格获得宽光谱覆盖和公开的 EMF 检测，而且中等尺寸面板符合你的用途，就选 PlatinumLED BIOMAX 600。需要更大的半身覆盖或模块化全身方案，选 Mito Red 或 Joovv。纯粹看预算，选 Hooga HG500。\n\n---\n\n## 延伸阅读\n\n红光理疗为何有效背后的光生物调节机制。\n\n- [线粒体 DNA 与红光](/articles/mitochondrial-dna-red-light) ——660/850 nm 光子如何到达线粒体，以及在那里起什么作用\n- [线粒体生物发生：细胞电网](/articles/mitochondrial-biogenesis-cellular-power-grid) ——为什么光生物调节会提升线粒体密度\n- [长寿硬件与细胞清理](/articles/longevity-hardware-cellular-cleanup) ——红光理疗如何融入更广泛的自噬/线粒体自噬方案\n",
+      "content": "## 领先之处\n\nPlatinumLED BIOMAX 600 是在略低于 Joovv 和 MitoPRO 的价位上，凭光谱宽度和 EMF 控制胜出的面板。七波长覆盖（480 + 630 + 660 + 810 + 830 + 850 + 1060 nm）比本榜单中任何产品都宽，而且 PlatinumLED 是少数公开发布第三方 EMF 和频闪检测报告、而不只是声称数据的品牌之一。\n\n## PlatinumLED BIOMAX 600 有哪些缺点？\n\nBIOMAX 600 的主要缺点是尺寸：它是中等尺寸——比 Joovv Solo 3.0 或 MitoPRO 1500 小。要覆盖全身需要堆叠两块。七波长的说法有一部分是营销：480 nm 蓝光只占总输出的一小部分，较少见波段的 LED 数量较少，意味着其有效剂量有限。\n\n## PlatinumLED BIOMAX 600 值得买吗？\n\n对大多数想要一块正经中等尺寸面板的买家来说，值得。售价 $1,049（美国官方商店，2026-10-01 核实），比 Joovv Solo 3.0（$1,699）和 MitoPRO 1500X（$1,299）便宜，光谱更宽，有 3 年保修，检测结果公开。它不是入门红光理疗最便宜的途径——Hooga HG500 只要 $349——而且如果需要全身覆盖，你要买两块面板或更大的型号。\n\n## 红光和近红外面板的作用——以及真实的证据\n\n红光（约 630–660 nm）和近红外光（约 810–850 nm）会被线粒体中的细胞色素 c 氧化酶吸收；推测的效果是短期内提升细胞能量生成、降低氧化应激，这一过程称为光生物调节。红光主要作用于皮肤；近红外光能更深地穿透到肌肉和关节。\n\n证据最充分的是皮肤。在一项 136 名志愿者参与的对照试验中，Wunsch 和 Matuschka 发现，每周两次红光或宽带光照射，与对照组相比改善了自评肤色、皮肤粗糙度以及超声测得的胶原密度（[Photomedicine and Laser Surgery, 2014, doi:10.1089/pho.2013.3616](https://doi.org/10.1089/pho.2013.3616)）。至于肌肉恢复、关节疼痛、睡眠或“长寿”，研究规模更小、剂量和设备各异，结果不一——请把这些说法视为有前景但未经证实。大多数试验使用的是临床设备而非这块面板，因此结果不能一对一套用。\n\n## 距离、剂量和照射时长（厂商指导）\n\nPlatinumLED 产品页面建议 **每个部位 10–20 分钟**，**深层组织距离约 8–14 英寸**，**面部浅层皮肤 16–24 英寸**。距离越近辐照度越高、照射时间越短；并非越多越好，光生物调节遵循剂量-反应曲线，剂量过高反而可能削弱效果。从较短时间开始，并坚持使用（大多数研究为每周数次）。\n\n## 安全\n\n- **眼睛：** 不要直视 LED。近红外光肉眼不可见，所以面板看起来比实际输出要暗——请佩戴防护眼镜，尤其是照射面部时。\n- **光敏性药物和疾病：** 如果你服用会增加光敏性的药物（例如某些抗生素、异维 A 酸、某些利尿剂），或患有红斑狼疮、卟啉症等光敏性疾病，请先咨询医生。\n- **怀孕、癌症，或照射可疑痣或纹身部位：** 请先咨询临床医生。\n- **发热：** 如果皮肤热到不适，请停止。\n\n## 对比\n\n| 面板 | 价格（美元） | 波长 | 备注 |\n|---|---|---|---|\n| PlatinumLED BIOMAX 600 | $1,049 | 7 个（480–1060 nm） | 中等尺寸，公开 EMF 检测，支架另购 |\n| [Joovv Solo 3.0](/reviews/joovv-solo-3) | $1,699 | 红光 + 近红外 | 模块化，高端 |\n| [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) | $1,299（1500X） | 六个波长，红光 + 近红外 | 更大面板 |\n| [BioLight Pro 900](/reviews/biolight-pro-900) | $899 | 红光 + 近红外 | 中等尺寸，含支架 |\n| [Hooga HG500](/reviews/hooga-hg500) | $349 | 红光 + 近红外 | 入门预算款 |\n\n另请参阅 [Joovv Solo 3.0 对比 BIOMAX 600](/reviews/vs/joovv-solo-3-vs-platinumled-biomax-600)、[BIOMAX 600 对比 BioLight Pro 900](/reviews/vs/platinumled-biomax-600-vs-biolight-pro-900) 以及 [最佳红光理疗板](/reviews/compare/best-red-light-therapy-panels-2026)。\n\n## 谁该买 PlatinumLED BIOMAX 600？\n\n如果你想以比 Joovv Solo 3.0 低 $650 的价格获得宽光谱覆盖和公开的 EMF 检测，而且中等尺寸面板符合你的用途，就选 PlatinumLED BIOMAX 600。需要更大的半身覆盖或模块化全身方案，选 Mito Red 或 Joovv。纯粹看预算，选 Hooga HG500。\n\n---\n\n## 延伸阅读\n\n红光理疗为何有效背后的光生物调节机制。\n\n- [线粒体 DNA 与红光](/articles/mitochondrial-dna-red-light) ——660/850 nm 光子如何到达线粒体，以及在那里起什么作用\n- [线粒体生物发生：细胞电网](/articles/mitochondrial-biogenesis-cellular-power-grid) ——为什么光生物调节会提升线粒体密度\n- [长寿硬件与细胞清理](/articles/longevity-hardware-cellular-cleanup) ——红光理疗如何融入更广泛的自噬/线粒体自噬方案\n",
       "faq": [
         {
           "q": "PlatinumLED BioMax 600 值得买吗？",
@@ -357,7 +356,7 @@
         },
         {
           "q": "BioMax 600 和 Joovv Solo 3.0 哪个更好？",
-          "a": "BIOMAX 600（$1,049）以低 $650 的价格提供更宽的七波长光谱和公开的 EMF 检测。Joovv Solo 3.0（$1,699）有 FDA 注册，以及可扩展到全身堆叠的模块化系统。看重性价比和光谱选 BIOMAX，打算搭建更大的模块化方案选 Joovv。"
+          "a": "BIOMAX 600（$1,049）以低 $650 的价格提供更宽的七波长光谱和公开的 EMF 检测。Joovv Solo 3.0（$1,699）有可扩展到全身堆叠的模块化系统。看重性价比和光谱选 BIOMAX，打算搭建更大的模块化方案选 Joovv。"
         },
         {
           "q": "红光理疗板应该离身体多远？",
@@ -972,11 +971,11 @@
       ]
     },
     "joovv-solo-3": {
-      "verdict": "品类标杆——模块化、做工好、辐照度标注合理，并有 FDA 注册。本次对比中最贵，但大体物有所值。",
+      "verdict": "品类标杆——模块化、做工好、辐照度标注合理。本次对比中最贵，但大体物有所值。",
       "productType": "模块化全尺寸红光 + 近红外 LED 理疗设备"
     },
     "mito-red-mitopro-1500": {
-      "verdict": "生物黑客最爱的大尺寸面板——1500X 版本现有六个波长并获 FDA II 类注册，比 Joovv Solo 3.0 便宜 $400。",
+      "verdict": "生物黑客最爱的大尺寸面板——1500X 版本现有六个波长，比 Joovv Solo 3.0 便宜 $400。",
       "productType": "大尺寸红光 + 近红外 LED 理疗设备"
     },
     "magnawave-mini": {
@@ -1281,8 +1280,8 @@
       "productType": "消费级多功能 PEMF + 红外 + 晶体垫"
     },
     "omnilux-contour-face": {
-      "verdict": "临床标杆——FDA II 类许可、同行评审的皮肤科研究、柔性硅胶。所有消费级红光面罩都会拿来比较的基准。",
-      "productType": "获 FDA 许可的柔性硅胶红光面罩"
+      "verdict": "临床标杆——同行评审的皮肤科研究、柔性硅胶，厂商称已获 FDA 许可（clearance）。所有消费级红光面罩都会拿来比较的基准。",
+      "productType": "柔性硅胶红光面罩"
     },
     "higherdose-red-light-face-mask": {
       "verdict": "红光面罩中消费品牌体验最佳——控制器简单、柔性硅胶、品牌标称 50 mW/cm²。临床证据较少；品牌包装胜过技术深度。",
@@ -2440,11 +2439,11 @@
     "joovv-solo-3-vs-mito-red-mitopro-1500-vs-platinumled-biomax-600": {
       "title": "Joovv、Mito Red、PlatinumLED对比（2026）",
       "description": "Joovv（$1,699）、MitoPRO 1500X（$1,299）、BioMax 600（$1,049）对比：综合首选 Mito Red——FDA II 类注册、六波长、便宜 $400。价格、波长与 FDA 状态。",
-      "intro": "Joovv Solo 3.0、Mito Red MitoPRO 1500 和 PlatinumLED BIOMAX 600，是买家在 $1,000 以上价位真正会放在一起比较的三款高端红光理疗板。2026 年价格和规格都有变化：Joovv 现将 Solo 3.0 定价为 $1,699；Mito Red 用 MitoPRO 1500X（$1,299，六波长，FDA II 类注册）取代了四波长的 MitoPRO 1500。PlatinumLED 的 BioMax 600 仍为 $1,049，七波长。三款都靠谱；决定性的维度是价格、光谱和模块化扩展。",
-      "verdict": "对大多数买家来说综合最佳：Mito Red MitoPRO 1500X——和 Joovv 一样有 FDA II 类注册，六波长，便宜 $400。PlatinumLED 胜在价格和光谱；Joovv 胜在模块化扩展。",
+      "intro": "Joovv Solo 3.0、Mito Red MitoPRO 1500 和 PlatinumLED BIOMAX 600，是买家在 $1,000 以上价位真正会放在一起比较的三款高端红光理疗板。2026 年价格和规格都有变化：Joovv 现将 Solo 3.0 定价为 $1,699；Mito Red 用 MitoPRO 1500X（$1,299，六波长）取代了四波长的 MitoPRO 1500。PlatinumLED 的 BioMax 600 仍为 $1,049，七波长。三款都靠谱；决定性的维度是价格、光谱和模块化扩展。",
+      "verdict": "对大多数买家来说综合最佳：Mito Red MitoPRO 1500X——六波长、大面板，比 Joovv 便宜 $400。PlatinumLED 胜在价格和光谱；Joovv 胜在模块化扩展。",
       "bestForA": "如果模块化全身扩展、品类标杆级的做工以及 Joovv 声明的局部加热适应症是你的决定因素，并且能接受 $1,699 的溢价，就选 Joovv Solo 3.0。",
-      "bestForB": "如果你想要一块 FDA II 类注册的大尺寸面板，带六个波长和 3 年保修，价格 $1,299——比 Joovv 低 $400——就选 Mito Red MitoPRO 1500（现以 1500X 销售）。",
-      "bestForC": "如果最低价格（$1,049）、七波长覆盖和公开的第三方 EMF 检测比面板尺寸或 FDA 注册更重要，就选 PlatinumLED BIOMAX 600。",
+      "bestForB": "如果你想要一块大尺寸面板，带六个波长和 3 年保修，价格 $1,299——比 Joovv 低 $400——就选 Mito Red MitoPRO 1500（现以 1500X 销售）。",
+      "bestForC": "如果最低价格（$1,049）、七波长覆盖和公开的第三方 EMF 检测比面板尺寸更重要，就选 PlatinumLED BIOMAX 600。",
       "axes": [
         {
           "name": "波长覆盖",
@@ -2464,7 +2463,7 @@
         },
         {
           "name": "FDA / 监管状态",
-          "note": "Joovv Solo 3.0 和 Mito Red MitoPRO 1500X 均由厂商标注为 FDA II 类注册（2026-10-01 核实）。PlatinumLED BioMax 600：无 FDA 注册。Joovv 不再独占这一项。"
+          "note": "Joovv Solo 3.0 和 Mito Red MitoPRO 1500X 均由厂商标注为 FDA II 类注册（2026-10-01 核实）。PlatinumLED BioMax 600：无 FDA 注册。注册或列名并非许可（clearance），也不是批准，更不是质量标志。"
         },
         {
           "name": "品牌成熟度",
@@ -2482,7 +2481,7 @@
       "faq": [
         {
           "q": "Joovv、Mito Red、PlatinumLED，哪款红光理疗板最好？",
-          "a": "对大多数买家来说，Mito Red MitoPRO 1500X 是最全面的选择：它和 Joovv 一样有 FDA II 类注册，有六个波长，售价 $1,299，比 $1,699 的 Joovv Solo 3.0 便宜 $400。PlatinumLED BioMax 600（$1,049）最便宜、光谱最宽；想要模块化全身扩展则选 Joovv。"
+          "a": "对大多数买家来说，Mito Red MitoPRO 1500X 是最全面的选择：它有六个波长、面板大，售价 $1,299，比 $1,699 的 Joovv Solo 3.0 便宜 $400。PlatinumLED BioMax 600（$1,049）最便宜、光谱最宽；想要模块化全身扩展则选 Joovv。"
         },
         {
           "q": "2026 年 Joovv、Mito Red、PlatinumLED 红光板多少钱？",
@@ -2490,7 +2489,7 @@
         },
         {
           "q": "Mito Red 和 Joovv 一样通过 FDA 认证了吗？",
-          "a": "Mito Red 标注现款 MitoPRO 1500X 为 FDA II 类注册，Joovv 标注 Solo 3.0 为 II 类医疗器械。但注册并不等于每项功效都得到证明：Joovv 声明的适应症是局部加热，用于暂时缓解轻微的肌肉和关节疼痛。PlatinumLED 的 BioMax 600 没有 FDA 注册。"
+          "a": "两者都没有获得 FDA 批准。Mito Red 标注现款 MitoPRO 1500X 为 FDA II 类注册，Joovv 标注 Solo 3.0 为 II 类医疗器械。注册和列名只表示厂商向 FDA 申报了该设备，既不是许可也不是批准，也不能证明任何功效：Joovv 声明的适应症是局部加热，用于暂时缓解轻微的肌肉和关节疼痛。PlatinumLED 的 BioMax 600 没有 FDA 注册。"
         },
         {
           "q": "哪款红光理疗板波长最多？",
@@ -2501,7 +2500,7 @@
           "a": "论方便选 Joovv（模块化堆叠，统一安装）。论单位覆盖成本选 Mito Red（两块 MitoPRO 1500X 约 $2,600）。PlatinumLED 也有竞争力，但其中等尺寸面板单块覆盖面积更小。"
         }
       ],
-      "content": "## 简短回答\n\n**2026 年，Mito Red MitoPRO 1500X 是大多数买家的最佳选择。** 它和 Joovv Solo 3.0 一样有 FDA II 类注册，带六个波长和 3 年保修，售价 $1,299，而 Joovv 为 $1,699。**PlatinumLED BioMax 600**（$1,049）最便宜、光谱最宽，但面板较小且没有 FDA 注册。如果你最看重模块化全身扩展，**Joovv Solo 3.0** 仍是首选。\n\n## 2026 年有哪些变化\n\n两项已核实的变化改变了这场对比。Joovv 现在美国商店将 Solo 3.0 定价为 $1,699。Mito Red 不再销售初代四波长 MitoPRO 1500；其后继型号 1500X 增加了 590 和 810 nm，并标注为 FDA II 类注册。这消除了 Joovv 在监管上的领先，因此 ONDA 的综合首选从 Joovv 换成了 Mito Red。\n\n| 面板 | 价格（2026 年 10 月） | 波长 | FDA II 类 | 最适合 |\n|---|---|---|---|---|\n| Joovv Solo 3.0 | $1,699 | 660 + 850 nm | 是 | 模块化全身堆叠 |\n| Mito Red MitoPRO 1500X | $1,299 | 6 个（590–850 nm） | 是 | 综合性价比最佳 |\n| PlatinumLED BioMax 600 | $1,049 | 7 个（480–1060 nm） | 否 | 价格最低，光谱最宽 |\n\n## 什么情况下该选 Joovv Solo 3.0？\n\n如果模块化全身扩展符合你的搭建计划，并且你想要品类标杆级的做工，Joovv 就是合适的选择。如今溢价买到的是模块化生态和精致度，而不是独有的监管地位。\n\n## 什么情况下该选 Mito Red MitoPRO 1500X？\n\n如果你想要一块覆盖半身的大面板，带六个波长、FDA II 类注册和诚实的参数标注，价格比 Joovv 低 $400，Mito Red 就是合适的选择。大多数高端价位的买家最终会选它。\n\n## 什么情况下该选 PlatinumLED BIOMAX 600？\n\n如果最低价格、七波长光谱和公开的 EMF 检测是你的决定标准，PlatinumLED 就是合适的选择。需要接受面板较小且没有 FDA 注册。\n\n阅读完整测评：[Joovv Solo 3.0](/reviews/joovv-solo-3)、[Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500)、[PlatinumLED BioMax 600](/reviews/platinumled-biomax-600)，或 [最佳红光理疗板横评](/reviews/compare/best-red-light-therapy-panels-2026)。"
+      "content": "## 简短回答\n\n**2026 年，Mito Red MitoPRO 1500X 是大多数买家的最佳选择。** 它带六个波长和 3 年保修，售价 $1,299，而 Joovv 为 $1,699。**PlatinumLED BioMax 600**（$1,049）最便宜、光谱最宽，但面板较小。如果你最看重模块化全身扩展，**Joovv Solo 3.0** 仍是首选。\n\n## 2026 年有哪些变化\n\n两项已核实的变化改变了这场对比。Joovv 现在美国商店将 Solo 3.0 定价为 $1,699。Mito Red 不再销售初代四波长 MitoPRO 1500；其后继型号 1500X 增加了 590 和 810 nm，价格比 Joovv 低 $400 且光谱更宽，因此 ONDA 的综合首选从 Joovv 换成了 Mito Red。（Mito Red 还标注 1500X 为 FDA II 类注册——这只是列名，并非许可或批准。）\n\n| 面板 | 价格（2026 年 10 月） | 波长 | FDA 注册（厂商标注；非许可） | 最适合 |\n|---|---|---|---|---|\n| Joovv Solo 3.0 | $1,699 | 660 + 850 nm | 是 | 模块化全身堆叠 |\n| Mito Red MitoPRO 1500X | $1,299 | 6 个（590–850 nm） | 是 | 综合性价比最佳 |\n| PlatinumLED BioMax 600 | $1,049 | 7 个（480–1060 nm） | 否 | 价格最低，光谱最宽 |\n\n## 什么情况下该选 Joovv Solo 3.0？\n\n如果模块化全身扩展符合你的搭建计划，并且你想要品类标杆级的做工，Joovv 就是合适的选择。溢价买到的是模块化生态和精致度。\n\n## 什么情况下该选 Mito Red MitoPRO 1500X？\n\n如果你想要一块覆盖半身的大面板，带六个波长和诚实的参数标注，价格比 Joovv 低 $400，Mito Red 就是合适的选择。大多数高端价位的买家最终会选它。\n\n## 什么情况下该选 PlatinumLED BIOMAX 600？\n\n如果最低价格、七波长光谱和公开的 EMF 检测是你的决定标准，PlatinumLED 就是合适的选择。需要接受面板较小。\n\n阅读完整测评：[Joovv Solo 3.0](/reviews/joovv-solo-3)、[Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500)、[PlatinumLED BioMax 600](/reviews/platinumled-biomax-600)，或 [最佳红光理疗板横评](/reviews/compare/best-red-light-therapy-panels-2026)。"
     },
     "healthy-minds-program-vs-waking-up": {
       "title": "Healthy Minds Program 与 Waking Up 对比（2026）",
@@ -2633,10 +2632,10 @@
         },
         {
           "q": "是不是干脆买 Mito Red MitoPRO 1500X 更好？",
-          "a": "MitoPRO 1500X 售价 $1,299——比 Infraredi Pro Max 2.0 贵约 $280——提供六种波长、FDA Class II 注册以及更长的独立测评记录。如果这个差价对你很重要，Infraredi 是足够接近的性价比之选；如果不在意，MitoPRO 则比本次对比高一个档次。"
+          "a": "MitoPRO 1500X 售价 $1,299——比 Infraredi Pro Max 2.0 贵约 $280——提供六种波长以及更长的独立测评记录。如果这个差价对你很重要，Infraredi 是足够接近的性价比之选；如果不在意，MitoPRO 则比本次对比高一个档次。"
         }
       ],
-      "content": "## 简短回答\n\n对大多数人来说，**Hooga HG500** 是首选：$359 即可获得标准的 660 + 850 nm 参数、3 年保修和 60 天退货。只有在有明确理由时才多花约三倍的钱——想要五种波长和落地支架就选 **Infraredi Pro Max 2.0**（$1,019），想要已在用品牌的大型面板且能接受 1 年保修就选 **Bon Charge Max**（$999）。\n\n| | Hooga HG500 | Bon Charge Max | Infraredi Pro Max 2.0 |\n|---|---|---|---|\n| 价格（2026-10-01 核实） | $359 | $999 | $1,019（原价 $1,199） |\n| 波长 | 660 + 850 nm | 660 + 850 nm | 五种 |\n| LED | 100 | 400 | 210 颗双透镜 |\n| 标称辐照度 | 6 英寸处 94 mW/cm² | >142 mW/cm²（未注明距离） | 未列出 |\n| 安装方式 | 门挂支架 + 悬挂套件；支架另购 | 门挂支架 | 附底座支架 |\n| 保修/试用 | 3 年 / 60 天退货 | 1 年 | 3 年 / 60 天试用 |\n\n关于名称的说明：这篇对比最初是 Hooga vs Bon Charge “Red Light Therapy Panel” vs Infraredi Pro 1500。后两者现已不再以该名称销售，因此表格使用了各品牌当前最接近的型号。\n\n## 什么时候选 Hooga HG500？\n\n如果预算是决定因素，并且你想以最低的靠谱价格获得光生物调节研究中最常用的两种波长，Hooga 就很合适。大多数首次购买者都应从这里开始。完整内容请看 [Hooga HG500 测评](/reviews/hooga-hg500)。\n\n## 什么时候选 Bon Charge？\n\n如果你已经在用 Bon Charge 的产品，想要同一品牌的大型半身面板，Max 就很合适。比 Hooga 多付的钱换来的是更大的面板、品牌知名度和公开的 EMF 数据——而不是更多波长——而且保修期更短。完整内容请看 [Bon Charge 测评](/reviews/bon-charge-red-light-panel)。\n\n## 什么时候选 Infraredi？\n\n如果你想要三者中最广的光谱、随附底座支架和 3 年保修，Infraredi 就很合适——价格与 Bon Charge Max 差不多。完整内容请看 [Infraredi 测评](/reviews/infraredi-pro-1500)。\n\n## 高端面板呢？\n\n如果预算已经到了 $1,000，[Mito Red MitoPRO 1500X](/reviews/mito-red-mitopro-1500)（$1,299，六种波长，FDA Class II 注册）值得一看。想看按同一标准排名的整个市场，请看 [2026 年最佳红光疗法面板](/reviews/compare/best-red-light-therapy-panels-2026)。"
+      "content": "## 简短回答\n\n对大多数人来说，**Hooga HG500** 是首选：$359 即可获得标准的 660 + 850 nm 参数、3 年保修和 60 天退货。只有在有明确理由时才多花约三倍的钱——想要五种波长和落地支架就选 **Infraredi Pro Max 2.0**（$1,019），想要已在用品牌的大型面板且能接受 1 年保修就选 **Bon Charge Max**（$999）。\n\n| | Hooga HG500 | Bon Charge Max | Infraredi Pro Max 2.0 |\n|---|---|---|---|\n| 价格（2026-10-01 核实） | $359 | $999 | $1,019（原价 $1,199） |\n| 波长 | 660 + 850 nm | 660 + 850 nm | 五种 |\n| LED | 100 | 400 | 210 颗双透镜 |\n| 标称辐照度 | 6 英寸处 94 mW/cm² | >142 mW/cm²（未注明距离） | 未列出 |\n| 安装方式 | 门挂支架 + 悬挂套件；支架另购 | 门挂支架 | 附底座支架 |\n| 保修/试用 | 3 年 / 60 天退货 | 1 年 | 3 年 / 60 天试用 |\n\n关于名称的说明：这篇对比最初是 Hooga vs Bon Charge “Red Light Therapy Panel” vs Infraredi Pro 1500。后两者现已不再以该名称销售，因此表格使用了各品牌当前最接近的型号。\n\n## 什么时候选 Hooga HG500？\n\n如果预算是决定因素，并且你想以最低的靠谱价格获得光生物调节研究中最常用的两种波长，Hooga 就很合适。大多数首次购买者都应从这里开始。完整内容请看 [Hooga HG500 测评](/reviews/hooga-hg500)。\n\n## 什么时候选 Bon Charge？\n\n如果你已经在用 Bon Charge 的产品，想要同一品牌的大型半身面板，Max 就很合适。比 Hooga 多付的钱换来的是更大的面板、品牌知名度和公开的 EMF 数据——而不是更多波长——而且保修期更短。完整内容请看 [Bon Charge 测评](/reviews/bon-charge-red-light-panel)。\n\n## 什么时候选 Infraredi？\n\n如果你想要三者中最广的光谱、随附底座支架和 3 年保修，Infraredi 就很合适——价格与 Bon Charge Max 差不多。完整内容请看 [Infraredi 测评](/reviews/infraredi-pro-1500)。\n\n## 高端面板呢？\n\n如果预算已经到了 $1,000，[Mito Red MitoPRO 1500X](/reviews/mito-red-mitopro-1500)（$1,299，六种波长）值得一看。想看按同一标准排名的整个市场，请看 [2026 年最佳红光疗法面板](/reviews/compare/best-red-light-therapy-panels-2026)。"
     },
     "whoop-5-0-vs-polar-h10": {
       "title": "Whoop 5.0 与 Polar H10 对比评测：HRV 精度与费用（2026）",
@@ -3279,12 +3278,12 @@
       "description": "Omnilux Contour Face（$395）临床记录更扎实；HigherDOSE（$349）更便宜，宣称辐照度更高，并提供 20 分钟疗程。",
       "intro": "Omnilux Contour Face 和 HigherDOSE Red Light Face Mask 是两款柔性硅胶 LED 面罩，使用几乎相同的红光和近红外光。Omnilux 出自一个设备被皮肤科诊所使用的品牌，临床记录更长；HigherDOSE 是桑拿毯和 PEMF 垫制造商推出的热门生活方式面罩。本对比基于证据：ONDA 未亲手测试过任何一款面罩。",
       "verdict": "对大多数买家来说，Omnilux Contour Face 是更稳妥的选择，因为它以相同的红光和近红外光搭配更长的临床记录；HigherDOSE 则是宣称输出更高、价格更低的合理替代品。",
-      "bestForA": "如果你想要临床记录和 FDA 许可最扎实的面罩，以及简单的 10 分钟护理流程，选择 Omnilux Contour Face。",
+      "bestForA": "如果你想要临床记录最扎实的面罩，以及简单的 10 分钟护理流程，选择 Omnilux Contour Face。",
       "bestForB": "如果你想要稍便宜、带 20 分钟选项且宣称辐照度更高的生活方式面罩，选择 HigherDOSE Red Light Face Mask。",
       "axes": [
         {
           "name": "临床记录",
-          "note": "Omnilux 获得 FDA 许可，其设备在皮肤科诊所使用并有已发表研究；HigherDOSE 引用的是自家为期 8 周、结果为自我报告的试验。"
+          "note": "厂商称 Omnilux 已获 FDA 许可（clearance，并非批准），其设备在皮肤科诊所使用并有已发表研究；HigherDOSE 引用的是自家为期 8 周、结果为自我报告的试验。"
         },
         {
           "name": "波长",
@@ -3333,7 +3332,7 @@
           "a": "Omnilux 每次 10 分钟。HigherDOSE 可选 10 或 20 分钟。两个品牌都建议每周 3–5 次。"
         }
       ],
-      "content": "## 简要结论\n\n**Omnilux Contour Face**（$395）是临床记录最扎实的面罩。**HigherDOSE Red Light Face Mask**（$349）是更便宜的生活方式之选，宣称辐照度更高并有 20 分钟选项。两者的光本身几乎相同，所以选择归结为证据与价格和灵活性之间的权衡。\n\n## 各自的功能\n\n两者都是柔性硅胶面罩，配有 66 颗双芯片 LED（132 个光源），向面部照射红光和近红外光。Omnilux 使用 **633 nm 红光 + 830 nm 近红外**，辐照度约 **30 mW/cm²**，固定 **10 分钟** 疗程。HigherDOSE 使用 **630 nm 红光 + 830 nm 近红外**，宣称总计 **50 mW/cm²**，可选 **10 或 20 分钟**。两个品牌都建议每周 3–5 次，且两款面罩都不覆盖颈部。\n\n## 谁该选哪款\n\n如果你最看重临床支持，选 **Omnilux**：它获得 FDA 许可，设备在皮肤科诊所使用，并有已发表研究支持。如果你想省 $46、喜欢更长的疗程，或已经在用其他 HigherDOSE 产品，选 **HigherDOSE**。\n\n## 证据怎么说\n\n红光和近红外光疗有一些小型临床试验显示细纹和肤质有适度改善，但证据有限，效果因人而异。Omnilux 的已发表记录更深入；HigherDOSE 的主要数据来自自家为期 8 周、结果为自我报告的试验。纸面上更高的辐照度并未被证明意味着更好的效果。请把这两款面罩都当作美容护理，而不是医疗手段。查看 [我们的红光面罩排名](/reviews/compare/best-red-light-face-masks-2026)、[CurrentBody 与 HigherDOSE 对比](/reviews/vs/currentbody-series-2-vs-higherdose-red-light-face-mask) 以及 [红光在细胞内的作用](/articles/mitochondrial-dna-red-light)。\n\n## 结论\n\n**Omnilux Contour Face** 是更好的默认选择：同样的光，多花 $46 换来更扎实的临床记录。如果价格、20 分钟选项或品牌生态对你来说比已发表证据更重要，**HigherDOSE** 也说得过去。"
+      "content": "## 简要结论\n\n**Omnilux Contour Face**（$395）是临床记录最扎实的面罩。**HigherDOSE Red Light Face Mask**（$349）是更便宜的生活方式之选，宣称辐照度更高并有 20 分钟选项。两者的光本身几乎相同，所以选择归结为证据与价格和灵活性之间的权衡。\n\n## 各自的功能\n\n两者都是柔性硅胶面罩，配有 66 颗双芯片 LED（132 个光源），向面部照射红光和近红外光。Omnilux 使用 **633 nm 红光 + 830 nm 近红外**，辐照度约 **30 mW/cm²**，固定 **10 分钟** 疗程。HigherDOSE 使用 **630 nm 红光 + 830 nm 近红外**，宣称总计 **50 mW/cm²**，可选 **10 或 20 分钟**。两个品牌都建议每周 3–5 次，且两款面罩都不覆盖颈部。\n\n## 谁该选哪款\n\n如果你最看重临床支持，选 **Omnilux**：它的设备在皮肤科诊所使用，并有已发表研究支持。如果你想省 $46、喜欢更长的疗程，或已经在用其他 HigherDOSE 产品，选 **HigherDOSE**。\n\n## 证据怎么说\n\n红光和近红外光疗有一些小型临床试验显示细纹和肤质有适度改善，但证据有限，效果因人而异。Omnilux 的已发表记录更深入；HigherDOSE 的主要数据来自自家为期 8 周、结果为自我报告的试验。纸面上更高的辐照度并未被证明意味着更好的效果。请把这两款面罩都当作美容护理，而不是医疗手段。查看 [我们的红光面罩排名](/reviews/compare/best-red-light-face-masks-2026)、[CurrentBody 与 HigherDOSE 对比](/reviews/vs/currentbody-series-2-vs-higherdose-red-light-face-mask) 以及 [红光在细胞内的作用](/articles/mitochondrial-dna-red-light)。\n\n## 结论\n\n**Omnilux Contour Face** 是更好的默认选择：同样的光，多花 $46 换来更扎实的临床记录。如果价格、20 分钟选项或品牌生态对你来说比已发表证据更重要，**HigherDOSE** 也说得过去。"
     },
     "medito-vs-insight-timer": {
       "title": "Medito 与 Insight Timer 对比评测（2026）",

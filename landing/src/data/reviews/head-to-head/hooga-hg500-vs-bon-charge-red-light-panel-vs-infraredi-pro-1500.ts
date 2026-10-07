@@ -48,7 +48,7 @@ const threeValuePanels: HeadToHead = {
     },
     {
       q: 'Should I just buy Mito Red MitoPRO 1500X instead?',
-      a: 'The MitoPRO 1500X costs $1,299 — about $280 more than the Infraredi Pro Max 2.0 — for six wavelengths, FDA Class II registration and a longer independent-review track record. If that gap matters, Infraredi is the close-enough value pick; if not, MitoPRO is the tier above this comparison.',
+      a: 'The MitoPRO 1500X costs $1,299 — about $280 more than the Infraredi Pro Max 2.0 — for six wavelengths and a longer independent-review track record. If that gap matters, Infraredi is the close-enough value pick; if not, MitoPRO is the tier above this comparison.',
     },
   ],
   content: `## Short answer
@@ -80,7 +80,7 @@ If you want the broadest spectrum of the three, a base stand in the box and a 3-
 
 ## What about premium panels?
 
-If $1,000 is already on the table, the [Mito Red MitoPRO 1500X](/reviews/mito-red-mitopro-1500) ($1,299, six wavelengths, FDA Class II registered) is worth a look. For the whole market ranked on the same criteria, see the [best red light therapy panels of 2026](/reviews/compare/best-red-light-therapy-panels-2026).`,
+If $1,000 is already on the table, the [Mito Red MitoPRO 1500X](/reviews/mito-red-mitopro-1500) ($1,299, six wavelengths) is worth a look. For the whole market ranked on the same criteria, see the [best red light therapy panels of 2026](/reviews/compare/best-red-light-therapy-panels-2026).`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
   dateModified: '2026-10-01',

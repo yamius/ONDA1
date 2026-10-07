@@ -6,20 +6,20 @@ const omniluxVsGross: HeadToHead = {
   productBSlug: 'dr-dennis-gross-spectralite',
   title: 'Omnilux Contour Face vs Dr. Dennis Gross SpectraLite (2026)',
   description:
-    'Omnilux Contour Face vs Dr. Dennis Gross SpectraLite — FDA-cleared flexible silicone vs dermatology-brand hard-shell with dual red + blue spectrum. ONDA breaks down the clinical references.',
+    'Omnilux Contour Face vs Dr. Dennis Gross SpectraLite — flexible silicone vs dermatology-brand hard-shell with dual red + blue spectrum. ONDA breaks down the clinical references.',
   intro:
-    'Omnilux Contour Face and Dr. Dennis Gross SpectraLite FaceWare Pro are the two FDA-cleared dermatology-credible red light masks users compare. The defining difference: Omnilux is flexible silicone with single red + NIR spectrum; Dr. Dennis Gross is hard-shell with dual red + blue protocols.',
+    'Omnilux Contour Face and Dr. Dennis Gross SpectraLite FaceWare Pro are the two dermatology-credible red light masks users compare (both FDA-cleared, per their makers). The defining difference: Omnilux is flexible silicone with single red + NIR spectrum; Dr. Dennis Gross is hard-shell with dual red + blue protocols.',
   winnerSlug: null,
   verdict:
-    'Comfort vs spectrum scope. Omnilux Contour Face for FDA Class II clearance with best-in-class silicone comfort. Dr. Dennis Gross for dermatology-brand pedigree with dual red + blue protocols.',
+    'Comfort vs spectrum scope. Omnilux Contour Face for peer-reviewed evidence with best-in-class silicone comfort. Dr. Dennis Gross for dermatology-brand pedigree with dual red + blue protocols.',
   bestForA:
-    'Choose Omnilux Contour Face if you want FDA Class II clinical evidence with flexible-silicone comfort and red + near-infrared coverage.',
+    'Choose Omnilux Contour Face if you want peer-reviewed clinical evidence with flexible-silicone comfort and red + near-infrared coverage.',
   bestForB:
     'Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand dual red + blue spectrum protocols (anti-aging + acne) and accept hard-shell comfort.',
   axes: [
     { name: 'Comfort', winner: 'a', note: 'Omnilux: medical-grade flexible silicone — best in category. Dr. Dennis Gross: hard-shell, heavier, less comfortable for extended sessions.' },
     { name: 'Wavelength coverage', winner: 'b', note: 'Dr. Dennis Gross: dual red 633 nm + blue 415 nm — covers anti-aging + acne. Omnilux: red 633 nm + near-infrared 830 nm — anti-aging + deeper tissue without acne mode.' },
-    { name: 'Clinical evidence', winner: 'a', note: 'Both FDA-cleared. Omnilux: peer-reviewed dermatology studies on the specific device. Dr. Dennis Gross: brand-funded studies on dual-spectrum protocol; less independent peer review.' },
+    { name: 'Clinical evidence', winner: 'a', note: 'Both FDA-cleared, per their makers (clearance is not FDA approval). Omnilux: peer-reviewed dermatology studies on the specific device. Dr. Dennis Gross: brand-funded studies on dual-spectrum protocol; less independent peer review.' },
     { name: 'Session length', winner: 'b', note: 'Dr. Dennis Gross: 3-minute protocol — shortest in category. Omnilux: 10-minute protocol.' },
     { name: 'Brand pedigree', winner: 'b', note: 'Dr. Dennis Gross: dermatology-practice brand, named-dermatologist credibility. Omnilux: dermatology-clinic-device brand.' },
     { name: 'Daily-use convenience', winner: 'a', note: 'Omnilux: lie down, unattended wear. Dr. Dennis Gross: hard-shell weight makes long unattended use uncomfortable.' },
@@ -36,7 +36,7 @@ const omniluxVsGross: HeadToHead = {
     },
     {
       q: 'Which has stronger clinical evidence?',
-      a: 'Both FDA-cleared. Omnilux has more peer-reviewed independent studies on the specific Contour Face device. Dr. Dennis Gross relies more on brand-funded studies and dermatology-practice credibility.',
+      a: 'Both makers say their masks are FDA-cleared; clearance is not FDA approval or proof that a device works. Omnilux has more peer-reviewed independent studies on the specific Contour Face device. Dr. Dennis Gross relies more on brand-funded studies and dermatology-practice credibility.',
     },
     {
       q: 'Can hard-shell deliver the same dose as silicone?',
@@ -45,11 +45,11 @@ const omniluxVsGross: HeadToHead = {
   ],
   content: `## The short version
 
-Both are FDA-cleared dermatology-credible red light masks. Omnilux is the flexible-silicone comfort + peer-reviewed evidence reference. Dr. Dennis Gross is the hard-shell dermatology-brand dual-spectrum alternative.
+Both are dermatology-credible red light masks (FDA-cleared, per their makers). Omnilux is the flexible-silicone comfort + peer-reviewed evidence reference. Dr. Dennis Gross is the hard-shell dermatology-brand dual-spectrum alternative.
 
 ## When is Omnilux Contour Face the right pick?
 
-If you want FDA Class II clearance with flexible-silicone comfort and red + near-infrared coverage for anti-aging — Omnilux is the right shape at lower price.
+If you want peer-reviewed evidence with flexible-silicone comfort and red + near-infrared coverage for anti-aging — Omnilux is the right shape at lower price.
 
 ## When is Dr. Dennis Gross SpectraLite the right pick?
 

@@ -869,7 +869,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'Why use red light at night?',
       answer:
-        'Red light (2000K or lower) does not suppress melatonin. It provides enough illumination for evening activities without disrupting the shutdown sequence for sleep.',
+        'Dim red light (2000K or lower) suppresses melatonin much less than bright, blue-rich light. It provides enough illumination for evening activities while disturbing the shutdown sequence for sleep far less.',
     },
     {
       question: 'How does light affect your body clock?',
@@ -913,7 +913,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'What wavelengths are best for NIR photobiomodulation?',
       answer:
-        '660nm (red) penetrates surface tissue; 850nm (near-infrared) reaches deeper. Combined, they target both superficial and mitochondrial layers. Medical-grade panels typically use both.',
+        '660nm (red) is absorbed mostly near the surface; 850nm (near-infrared) reaches somewhat deeper. How much light reaches a given tissue depends on wavelength and dose. Many consumer panels combine both. Wear eye protection: near-infrared light is invisible.',
     },
     {
       question: 'Why does hydration matter for red light sessions?',
@@ -935,7 +935,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'How does red light therapy close the regeneration loop?',
       answer:
-        'Red light (660nm) provides mitochondria with ATP to utilize stem cells produced during the day. It completes the regeneration sequence before sleep.',
+        'Red light does not supply ATP. In cell and animal studies, 660nm light is absorbed by an enzyme in the mitochondria (cytochrome c oxidase), which may influence how they make ATP. A link to stem cells or overnight regeneration has not been shown in people.',
     },
   ],
   'system-feedback-biometric-loop': [

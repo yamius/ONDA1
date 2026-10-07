@@ -50,7 +50,7 @@ Clinical evidence and irradiance. HigherDOSE says the mask is FDA-cleared, with 
 
 ## Who should buy HigherDOSE Red Light Face Mask?
 
-Choose HigherDOSE Red Light Face Mask for consumer-polished daily-use mask in the HigherDOSE ecosystem at accessible pricing. For FDA Class II evidence, Omnilux. For consumer market leader, CurrentBody Series 2. For dermatology brand, Dr. Dennis Gross.
+Choose HigherDOSE Red Light Face Mask for consumer-polished daily-use mask in the HigherDOSE ecosystem at accessible pricing. For peer-reviewed evidence, Omnilux. For consumer market leader, CurrentBody Series 2. For dermatology brand, Dr. Dennis Gross.
 
 ---
 

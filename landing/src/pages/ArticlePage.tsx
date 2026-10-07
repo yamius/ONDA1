@@ -172,7 +172,9 @@ import { getProtocolUniqueId, PROTOCOL_STORAGE_PREFIX, ARTICLE_STORAGE_PREFIX } 
 import { ArticleReactions, ArticleValidationArrows } from '../components/ArticleReactions'
 import AppStoreCTA from '../components/AppStoreCTA'
 import FastBreathingSafetyBlock from '../components/FastBreathingSafetyBlock'
+import RedLightSafetyBlock from '../components/RedLightSafetyBlock'
 import { FAST_BREATHING_ARTICLE_SLUGS } from '../data/fast-breathing-safety-i18n'
+import { RED_LIGHT_ARTICLE_SLUGS } from '../data/red-light-safety-i18n'
 import ColdSafetyBlock, { COLD_SAFETY_ARTICLE_SLUGS } from '../components/ColdSafetyBlock'
 import { UseInClaudeLink } from '../components/UseInClaudeLink'
 import { storeCt } from '../lib/storeCt'
@@ -928,6 +930,7 @@ export function ArticlePage() {
 
       {COLD_SAFETY_ARTICLE_SLUGS.has(article.slug) && <ColdSafetyBlock lang={lang} />}
       {FAST_BREATHING_ARTICLE_SLUGS.has(article.slug) && <FastBreathingSafetyBlock lang={lang} />}
+      {RED_LIGHT_ARTICLE_SLUGS.has(article.slug) && <RedLightSafetyBlock lang={lang} />}
 
       <article className="prose-onda">
         {(() => {

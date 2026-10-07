@@ -90,7 +90,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "breathing-altitude-acclimatization": {
     "published": "2026-09-22T18:48:54+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-07T13:13:18+02:00"
   },
   "breathing-exercises-older-adults": {
     "published": "2026-09-22T08:22:18+02:00",
@@ -230,7 +230,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "fast-vs-slow-pranayama": {
     "published": "2026-09-22T18:37:38+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-07T13:13:18+02:00"
   },
   "fault-tolerant-human-hrv-buffer": {
     "published": "2026-03-24T12:53:43Z",
@@ -690,7 +690,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "wim-hof-breathing-inflammation": {
     "published": "2026-09-22T18:48:54+02:00",
-    "modified": "2026-10-06T21:17:46+02:00"
+    "modified": "2026-10-07T13:13:18+02:00"
   },
   "wind-down-before-sleep-breathing": {
     "published": "2026-09-19T01:24:54+02:00",
@@ -1406,11 +1406,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:mtdna": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-07T12:34:38.000Z"
   },
   "glossary:photobiomodulation": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-07T12:34:38.000Z"
   },
   "glossary:water-viscosity": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1418,7 +1418,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:nir": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-07T12:34:38.000Z"
   },
   "glossary:senescence": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-07T07:44:50+02:00"
+    "modified": "2026-10-07T13:13:18+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1634,7 +1634,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles/topic/:topic": {
     "published": "2026-09-24T00:24:48+02:00",
-    "modified": "2026-10-07T07:44:50+02:00"
+    "modified": "2026-10-07T13:13:18+02:00"
   },
   "page:/part/:slug": {
     "published": "2026-02-24T15:51:07+01:00",
@@ -1746,7 +1746,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-07T07:44:50+02:00"
+    "modified": "2026-10-07T13:13:18+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

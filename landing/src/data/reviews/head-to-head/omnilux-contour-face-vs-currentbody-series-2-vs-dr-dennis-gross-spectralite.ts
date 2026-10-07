@@ -7,20 +7,20 @@ const omniluxVsCurrentbodyVsGross: HeadToHead = {
   productCSlug: 'dr-dennis-gross-spectralite',
   title: 'Omnilux vs CurrentBody vs Dr. Dennis Gross (2026)',
   description:
-    'Omnilux Contour Face vs CurrentBody Series 2 vs Dr. Dennis Gross SpectraLite — the three category-defining FDA-cleared red light face masks compared.',
+    'Omnilux Contour Face vs CurrentBody Series 2 vs Dr. Dennis Gross SpectraLite — the three category-defining red light face masks compared.',
   intro:
-    'The three premium red light face masks that define the 2026 category. Omnilux Contour Face — FDA Class II flexible silicone with peer-reviewed dermatology evidence. CurrentBody Series 2 — consumer market leader with integrated neck flap. Dr. Dennis Gross SpectraLite — dermatology-brand hard-shell with dual red + blue spectrum.',
+    'The three premium red light face masks that define the 2026 category. Omnilux Contour Face — flexible silicone with peer-reviewed dermatology evidence. CurrentBody Series 2 — consumer market leader with integrated neck flap. Dr. Dennis Gross SpectraLite — dermatology-brand hard-shell with dual red + blue spectrum.',
   winnerSlug: null,
   verdict:
-    'Three different buying questions resolve cleanly. Omnilux for FDA Class II clinical reference. CurrentBody for consumer market leader with neck flap. Dr. Dennis Gross for dermatology-brand dual-spectrum protocols.',
+    'Three different buying questions resolve cleanly. Omnilux for the clinical reference. CurrentBody for consumer market leader with neck flap. Dr. Dennis Gross for dermatology-brand dual-spectrum protocols.',
   bestForA:
-    'Choose Omnilux Contour Face if you want the FDA Class II-cleared dermatology reference with peer-reviewed clinical evidence and flexible-silicone comfort.',
+    'Choose Omnilux Contour Face if you want the dermatology reference with peer-reviewed clinical evidence and flexible-silicone comfort.',
   bestForB:
     'Choose CurrentBody Series 2 if you want the consumer-market reference with integrated neck flap covering face + neck in one device.',
   bestForC:
     'Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand pedigree with dual red + blue protocols (anti-aging + acne) and accept hard-shell comfort.',
   axes: [
-    { name: 'Clinical evidence', winner: 'a', note: 'Omnilux: FDA Class II + peer-reviewed dermatology studies. CurrentBody and Dr. Dennis Gross: FDA cleared/registered with brand-funded research. Omnilux has the deepest independent peer-reviewed moat.' },
+    { name: 'Clinical evidence', winner: 'a', note: 'Omnilux: peer-reviewed dermatology studies (FDA-cleared, per the brand). CurrentBody: FDA registered (a listing, not clearance); Dr. Dennis Gross: FDA-cleared per the brand; both with brand-funded research. Omnilux has the deepest independent peer-reviewed moat.' },
     { name: 'Wavelength coverage', winner: 'c', note: 'Dr. Dennis Gross: dual red + blue. Omnilux: red + near-infrared. CurrentBody: red + near-infrared. Dr. Dennis Gross uniquely covers acne via blue.' },
     { name: 'Comfort', winner: 'tie', note: 'Omnilux and CurrentBody: flexible silicone — comparable comfort. Dr. Dennis Gross: hard-shell — less comfortable for extended sessions. Omnilux + CurrentBody tied; Dr. Dennis Gross trails.' },
     { name: 'Neck coverage', winner: 'b', note: 'CurrentBody: integrated neck flap. Omnilux: neck flap sold separately. Dr. Dennis Gross: no neck coverage.' },
@@ -31,7 +31,7 @@ const omniluxVsCurrentbodyVsGross: HeadToHead = {
   faq: [
     {
       q: 'Which red light face mask should I buy in 2026?',
-      a: 'Three questions resolve it. Want FDA Class II clinical evidence at best price? Omnilux Contour Face. Want consumer market leader with neck flap? CurrentBody Series 2. Want dermatology-brand dual red + blue spectrum? Dr. Dennis Gross.',
+      a: 'Three questions resolve it. Want peer-reviewed clinical evidence at best price? Omnilux Contour Face. Want consumer market leader with neck flap? CurrentBody Series 2. Want dermatology-brand dual red + blue spectrum? Dr. Dennis Gross.',
     },
     {
       q: 'Omnilux vs CurrentBody — which is better?',
@@ -52,11 +52,11 @@ const omniluxVsCurrentbodyVsGross: HeadToHead = {
   ],
   content: `## The short version
 
-Three category-defining red light face masks, three different theses. Omnilux = FDA Class II clinical reference. CurrentBody = consumer market leader with neck. Dr. Dennis Gross = dermatology-brand dual-spectrum.
+Three category-defining red light face masks, three different theses. Omnilux = clinical reference. CurrentBody = consumer market leader with neck. Dr. Dennis Gross = dermatology-brand dual-spectrum.
 
 ## When is Omnilux Contour Face the right pick?
 
-If your purchase decision is clinical-evidence driven and you want flexible-silicone comfort with red + NIR coverage — Omnilux is the right shape at the best price. FDA Class II clearance unmatched.
+If your purchase decision is clinical-evidence driven and you want flexible-silicone comfort with red + NIR coverage — Omnilux is the right shape at the best price.
 
 ## When is CurrentBody Series 2 the right pick?
 

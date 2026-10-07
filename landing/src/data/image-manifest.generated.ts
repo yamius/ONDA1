@@ -2452,6 +2452,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1584,
     "height": 672
   },
+  "/images/science/evidence-red-light-therapy.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-red-light-therapy.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-red-light-therapy.webp": {
+    "width": 1584,
+    "height": 672
+  },
   "/images/science/evidence-slow-breathing.avif": {
     "width": 1920,
     "height": 820

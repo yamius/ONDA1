@@ -6,14 +6,14 @@ const joovvVsPlatinumLed: HeadToHead = {
   productBSlug: 'platinumled-biomax-600',
   title: 'Joovv Solo 3.0 vs PlatinumLED BIOMAX 600 (2026)',
   description:
-    'Joovv Solo 3.0 vs PlatinumLED BIOMAX 600 — side-by-side ONDA comparison of two premium red light panels. FDA-registered modular versus seven-wavelength testing-published.',
+    'Joovv Solo 3.0 vs PlatinumLED BIOMAX 600 — side-by-side ONDA comparison of two premium red light panels. Modular versus seven-wavelength testing-published.',
   intro:
-    'Joovv Solo 3.0 and PlatinumLED BIOMAX 600 are the two panels users compare when the question is "premium build versus premium spectrum." Joovv ships FDA registration and modular scaling with two wavelengths; PlatinumLED ships seven wavelengths and published third-party EMF testing at $650 less. Different premium-tier philosophies.',
+    'Joovv Solo 3.0 and PlatinumLED BIOMAX 600 are the two panels users compare when the question is "premium build versus premium spectrum." Joovv ships modular scaling with two wavelengths; PlatinumLED ships seven wavelengths and published third-party EMF testing at $650 less. Different premium-tier philosophies.',
   winnerSlug: 'platinumled-biomax-600',
   verdict:
-    'PlatinumLED BIOMAX 600 is the better pick for most buyers — seven wavelengths, published EMF testing and $650 less. Joovv Solo 3.0 wins on FDA Class II registration and modular scaling.',
+    'PlatinumLED BIOMAX 600 is the better pick for most buyers — seven wavelengths, published EMF testing and $650 less. Joovv Solo 3.0 wins on modular scaling.',
   bestForA:
-    'Choose Joovv Solo 3.0 if FDA Class II registration, modular full-body scaling and the brand premium are deciding factors.',
+    'Choose Joovv Solo 3.0 if modular full-body scaling and the brand premium are deciding factors.',
   bestForB:
     'Choose PlatinumLED BIOMAX 600 if you want seven-wavelength coverage and published third-party EMF testing at meaningfully lower price.',
   axes: [
@@ -21,7 +21,7 @@ const joovvVsPlatinumLed: HeadToHead = {
     { name: 'Irradiance', winner: 'tie', note: 'Both panels verified within 10% of stated 6" figures. Effectively tied.' },
     { name: 'EMF transparency', winner: 'b', note: 'PlatinumLED publishes full third-party EMF and flicker test reports. Joovv publishes summary figures. PlatinumLED wins on testing transparency.' },
     { name: 'Coverage and modularity', winner: 'a', note: 'Joovv: modular Solo stacks. PlatinumLED: mid-size single panel, stack two for full-body. Joovv is more flexible.' },
-    { name: 'FDA / regulatory status', winner: 'a', note: 'Joovv Solo 3.0: FDA Class II registered. PlatinumLED BIOMAX 600: no FDA registration.' },
+    { name: 'FDA / regulatory status', winner: 'tie', note: 'Joovv says the Solo 3.0 is FDA Class II registered; PlatinumLED BIOMAX 600: no FDA registration. Registration/listing is not clearance or approval and is not a quality mark.' },
     { name: 'Build quality', winner: 'tie', note: 'Both premium aluminium-and-glass builds with multi-year warranties.' },
     { name: 'Brand maturity', winner: 'tie', note: 'Both established consumer red-light brands with multi-year track records.' },
     { name: 'Price', winner: 'b', note: 'PlatinumLED BIOMAX 600: $1,049. Joovv Solo 3.0: $1,699 (official US stores, 2026-10-01). PlatinumLED is $650 cheaper — a large gap.' },
@@ -29,7 +29,7 @@ const joovvVsPlatinumLed: HeadToHead = {
   faq: [
     {
       q: 'Joovv Solo 3.0 or PlatinumLED BIOMAX 600 — which is better?',
-      a: 'Joovv wins for FDA registration and modular scaling. PlatinumLED wins for wavelength spectrum (seven vs two) and price ($650 cheaper). For most biohackers PlatinumLED is the better value pick; for users who specifically want FDA Class II, Joovv.',
+      a: 'Joovv wins for modular scaling. PlatinumLED wins for wavelength spectrum (seven vs two) and price ($650 cheaper). For most biohackers PlatinumLED is the better value pick; for users who want a modular system, Joovv.',
     },
     {
       q: 'Is seven-wavelength coverage actually better?',
@@ -46,11 +46,11 @@ const joovvVsPlatinumLed: HeadToHead = {
   ],
   content: `## The short version
 
-Two premium-tier panels with different priorities. Joovv buys you FDA registration and modular scaling; PlatinumLED buys you seven wavelengths and published EMF testing at $650 less. Both are credible.
+Two premium-tier panels with different priorities. Joovv buys you modular scaling; PlatinumLED buys you seven wavelengths and published EMF testing at $650 less. Both are credible.
 
 ## When is Joovv Solo 3.0 the right pick?
 
-If FDA Class II registration matters and you plan to scale to full-body via the modular Solo system, Joovv is the right shape. The $1,699 panel buys regulatory status and the modular ecosystem.
+If you plan to scale to full-body via the modular Solo system, Joovv is the right shape. The $1,699 panel buys the modular ecosystem.
 
 ## When is PlatinumLED BIOMAX 600 the right pick?
 

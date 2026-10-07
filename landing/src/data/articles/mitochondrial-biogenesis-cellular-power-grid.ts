@@ -62,7 +62,7 @@ The primary command for building new mitochondria is the activation of the PGC-1
 
 ### PROTOCOL_02 > Photonic Charging (Red Light Therapy)
 
-> **The Hack:** Exposure to 660nm (Red) and 850nm (Near-Infrared) light for 10 minutes daily.
+> **The Hack:** Exposure to 660nm (Red) and 850nm (Near-Infrared) light for about 10 minutes, following the maker's distance and time. Wear the goggles supplied and never look into the LEDs: near-infrared light is invisible and does not trigger the blink reflex. Doses used in studies do not transfer directly to home panels. See [the evidence and safety review](/science/evidence/red-light-therapy).
 >
 > **The Logic:** Near-infrared light penetrates the skin and is absorbed by Cytochrome c Oxidase in the mitochondria. The working hypothesis is that this supports the ATP production cycle and may help lower markers of oxidative stress — the lab equivalent of cleaning 'soot' off your cellular engines. The evidence is promising but still early.
 
@@ -81,10 +81,10 @@ The primary command for building new mitochondria is the activation of the PGC-1
 
 ## Recommended tools
 
-Mitochondrial biogenesis is one of the most-cited photobiomodulation indications. Hardware that delivers the dose:
+Mitochondrial effects of photobiomodulation are studied mainly in cells and animals, not established in people. If you still want to try a panel:
 
-- [Joovv Solo 3.0](/reviews/joovv-solo-3) — FDA-registered modular reference panel
-- [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) — six-wavelength biohacker favourite (now the 1500X), FDA Class II registered
+- [Joovv Solo 3.0](/reviews/joovv-solo-3) — modular reference panel
+- [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) — six-wavelength biohacker favourite (now the 1500X)
 - [Hooga HG500](/reviews/hooga-hg500) — budget entry with honest specs
 
 [Best Red Light Therapy Panels (2026) →](/reviews/red-light-therapy)
@@ -97,7 +97,7 @@ Mitochondrial biogenesis is one of the most-cited photobiomodulation indications
     },
     {
       name: 'Photonic Charging (Red Light Therapy)',
-      text: 'Exposure to 660nm (Red) and 850nm (Near-Infrared) light for 10 minutes daily.',
+      text: 'Exposure to 660nm (Red) and 850nm (Near-Infrared) light for about 10 minutes, following the maker’s distance and time. Wear the goggles supplied and never look into the LEDs: near-infrared light is invisible and does not trigger the blink reflex.',
       protocolId: 'mito-photonic-charging',
     },
     {

@@ -5048,7 +5048,7 @@ The Mitochondrial DNA Red Light article covers how red light protocols may suppo
 
 - **Maternal inheritance** — mtDNA is passed primarily through the maternal line
 - **Mutation rate** — higher than nuclear DNA due to oxidative stress
-- **Red light** — photobiomodulation may support mtDNA integrity and biogenesis
+- **Red light** — photobiomodulation has been studied in cells and animals for effects on mtDNA and biogenesis; this is not shown in people
 
 ## Why does mtDNA matter?
 
@@ -5076,14 +5076,14 @@ The Mitochondrial DNA Red Light article covers protocols for supporting mitochon
       'The use of non-ionizing light (lasers or LEDs) to trigger photochemical changes within cellular structures.',
     content: `
 
-**Photobiomodulation** (PBM) uses visible red and near-infrared (NIR) light to stimulate cellular processes. It is non-thermal and non-ionizing. Primary targets include cytochrome c oxidase in mitochondria, which may enhance ATP production and reduce oxidative stress.
+**Photobiomodulation** (PBM) uses visible red and near-infrared (NIR) light to stimulate cellular processes. It is non-thermal and non-ionizing. Primary targets include cytochrome c oxidase in mitochondria. The proposed mechanism, mostly from cell and animal studies, is that this may enhance ATP production and reduce oxidative stress. See [the evidence review](/science/evidence/red-light-therapy).
 
 ## Key Mechanisms
 
 - **Cytochrome c oxidase** — absorbs red/NIR, may increase electron transport and ATP
 - **Nitric oxide** — light can dissociate NO from cytochrome c oxidase, restoring respiration
 - **Water viscosity** — some models suggest light reduces viscosity around proteins
-- **NIR penetration** — 700–1400 nm penetrates several cm into tissue
+- **NIR penetration** — NIR penetrates deeper than visible red; how much reaches deeper tissue depends on wavelength and dose
 
 ## Why does photobiomodulation matter?
 
@@ -5140,14 +5140,14 @@ The Mitochondrial DNA Red Light article references water viscosity in the contex
     title: 'NIR (Near Infra-Red)',
     category: 'Biological Software',
     shortDescription:
-      'The 700–1400nm light spectrum. Unlike visible light, NIR penetrates several centimeters deep into biological tissue.',
+      'The 700–1400nm light spectrum. NIR penetrates deeper into biological tissue than visible red light.',
     content: `
 
-**NIR** (Near Infrared) light spans approximately 700–1400 nm. Unlike visible light, NIR penetrates several centimeters into biological tissue, reaching muscles, joints, and deeper structures. It is used in photobiomodulation for mitochondrial support, pain relief, and recovery.
+**NIR** (Near Infrared) light spans approximately 700–1400 nm. NIR penetrates deeper into biological tissue than visible red light; how much reaches muscle or joints depends on wavelength and dose. It is used in photobiomodulation, which is studied for pain relief and recovery. NIR is invisible, so it does not trigger the blink reflex: protect your eyes.
 
 ## Key Properties
 
-- **Penetration** — 700–850 nm (red-NIR) penetrates ~2–5 cm; 850–1100 nm can go deeper
+- **Penetration** — deeper than visible red; the share of light that reaches muscle or joints depends on wavelength, dose and tissue
 - **Targets** — cytochrome c oxidase, hemoglobin, water
 - **Non-thermal** — PBM uses low irradiance; heating is minimal at typical doses
 
