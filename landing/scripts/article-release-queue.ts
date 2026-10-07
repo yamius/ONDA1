@@ -450,6 +450,47 @@ export const REVIEW_RELEASE_QUEUE: readonly { collection: 'reviews' | 'compariso
   { collection: 'h2h', slug: 'intake-breathing-vs-mute-nasal-dilator' },
 ]
 
+/** Other per-language pages moved into the stream 2026-10-07 (owner: all pages except science go through the queue). Append only. */
+export const EXTRA_RELEASE_QUEUE: Record<string, readonly { collection: 'reviews' | 'comparisons' | 'h2h'; slug: string }[]> = {
+  ru: [
+    { collection: 'h2h', slug: 'ringconn-gen-3-vs-whoop-5-0' },
+    { collection: 'h2h', slug: 'oura-ring-5-vs-samsung-galaxy-ring' },
+    { collection: 'h2h', slug: 'whoop-5-0-vs-ultrahuman-ring-pro' },
+    { collection: 'h2h', slug: 'apple-watch-series-12-vs-series-11' },
+    { collection: 'h2h', slug: 'apple-watch-series-12-vs-oura-ring-4' },
+    { collection: 'h2h', slug: 'apple-watch-series-12-vs-garmin-venu-4' },
+    { collection: 'h2h', slug: 'apple-watch-ultra-4-vs-garmin-fenix-8' },
+    { collection: 'h2h', slug: 'oura-ring-5-vs-apple-watch-series-11' },
+    { collection: 'h2h', slug: 'oura-ring-4-vs-apple-watch-series-11' },
+    { collection: 'h2h', slug: 'apple-watch-series-11-vs-garmin-venu-4' },
+    { collection: 'h2h', slug: 'apple-watch-series-11-vs-fitbit-charge-6' },
+    { collection: 'h2h', slug: 'garmin-fenix-8-vs-apple-watch-series-11' },
+    { collection: 'h2h', slug: 'oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11' },
+    { collection: 'h2h', slug: 'breathwrk-vs-othership-vs-wim-hof-method-app' },
+    { collection: 'h2h', slug: 'breathwrk-vs-othership' },
+    { collection: 'h2h', slug: 'breathwrk-vs-soma-breath' },
+    { collection: 'h2h', slug: 'ibreathe-vs-breathe-to-relax' },
+    { collection: 'h2h', slug: 'othership-vs-open-app' },
+    { collection: 'h2h', slug: 'wim-hof-method-app-vs-soma-breath' },
+    { collection: 'h2h', slug: 'bettersleep-vs-sleep-cycle' },
+    { collection: 'h2h', slug: 'endel-vs-pzizz-vs-bettersleep' },
+    { collection: 'h2h', slug: 'sleep-cycle-vs-sleep-as-android-vs-autosleep' },
+    { collection: 'h2h', slug: 'sleep-cycle-vs-sleep-as-android' },
+    { collection: 'h2h', slug: 'sleepio-vs-pzizz' },
+    { collection: 'h2h', slug: 'sleepio-vs-sleep-cycle-vs-pzizz' },
+    { collection: 'h2h', slug: 'levels-vs-nutrisense-vs-stelo' },
+    { collection: 'h2h', slug: 'levels-vs-nutrisense' },
+    { collection: 'h2h', slug: 'levels-vs-ultrahuman-m1' },
+    { collection: 'h2h', slug: 'levels-vs-zoe-vs-nutrisense' },
+    { collection: 'h2h', slug: 'lingo-vs-stelo-vs-ultrahuman-m1' },
+    { collection: 'h2h', slug: 'nutrisense-vs-zoe' },
+    { collection: 'h2h', slug: 'signos-vs-levels' },
+    { collection: 'h2h', slug: 'stelo-vs-lingo' },
+    { collection: 'h2h', slug: 'veri-vs-levels' },
+    { collection: 'h2h', slug: 'zoe-vs-levels' },
+  ],
+}
+
 function addDays(iso: string, days: number): string {
   const d = new Date(`${iso}T00:00:00Z`)
   d.setUTCDate(d.getUTCDate() + days)
@@ -459,6 +500,7 @@ function addDays(iso: string, days: number): string {
 const streams: { lang: string; collection: PublishCollection; slug: string }[][] = LANG_ORDER.map((lang) => [
   ...(ARTICLE_RELEASE_QUEUE[lang] ?? []).map((slug) => ({ lang, collection: 'articles' as PublishCollection, slug })),
   ...REVIEW_RELEASE_QUEUE.map((r) => ({ lang, collection: r.collection as PublishCollection, slug: r.slug })),
+  ...(EXTRA_RELEASE_QUEUE[lang] ?? []).map((r) => ({ lang, collection: r.collection as PublishCollection, slug: r.slug })),
 ])
 
 /** Round-robin across languages → one ordered site-wide list → dates by position. */

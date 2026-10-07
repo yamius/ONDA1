@@ -4153,12 +4153,12 @@ The Circadian Reset protocols work with the SCN: morning light is the strongest 
 
 - **Sleep trigger** — initiates the natural shutdown sequence
 - **Light-sensitive** — suppressed by blue light, even artificial
-- **Circadian marker** — release typically begins ~16 hours after morning light exposure
+- **Circadian marker** — release typically begins in the evening, a couple of hours before habitual sleep (dim-light melatonin onset)
 - **Antioxidant** — secondary roles in cellular protection
 
 ## In ONDA Life
 
-Morning light exposure sets a 16-hour countdown for Melatonin release. Blue light at night suppresses melatonin by tricking the SCN into thinking it's still noon. The Blue Light Firewall protocol protects this critical signal.
+Regular morning light helps keep the body clock, and with it evening Melatonin release, on time; the popular claim of an exact "16-hour countdown" is not strongly evidenced. Blue light at night suppresses melatonin by tricking the SCN into thinking it's still noon. The Blue Light Firewall protocol protects this critical signal.
 `,
   },
   {

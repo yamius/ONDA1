@@ -821,14 +821,12 @@ const localizedReviewRoutes = [
  * no category, so unlike reviews/comparisons they carry their own explicit
  * (lang, slug) rollout, date-gated at build time. A future-dated entry is inert.
  */
+// Future-dated duels moved to scripts/article-release-queue.ts EXTRA_RELEASE_QUEUE (owner 2026-10-07: everything except science in one stream).
 const HEADTOHEAD_LOCALE_ROLLOUT: readonly { lang: string; slug: string; publishOn: string }[] = [
   // Ring cluster — ES leads, RU trails (anti-scaled-content drip).
   { lang: 'es', slug: 'ringconn-gen-3-vs-whoop-5-0', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'oura-ring-5-vs-samsung-galaxy-ring', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'whoop-5-0-vs-ultrahuman-ring-pro', publishOn: '2026-09-18' },
-  { lang: 'ru', slug: 'ringconn-gen-3-vs-whoop-5-0', publishOn: '2026-11-02' },
-  { lang: 'ru', slug: 'oura-ring-5-vs-samsung-galaxy-ring', publishOn: '2026-11-02' },
-  { lang: 'ru', slug: 'whoop-5-0-vs-ultrahuman-ring-pro', publishOn: '2026-11-02' },
   // Apple Watch cluster — ES leads (today), RU trails (2026-11-09).
   { lang: 'es', slug: 'apple-watch-series-12-vs-series-11', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'apple-watch-series-12-vs-oura-ring-4', publishOn: '2026-09-18' },
@@ -841,17 +839,7 @@ const HEADTOHEAD_LOCALE_ROLLOUT: readonly { lang: string; slug: string; publishO
   { lang: 'es', slug: 'apple-watch-series-11-vs-fitbit-charge-6', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'garmin-fenix-8-vs-apple-watch-series-11', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11', publishOn: '2026-09-18' },
-  { lang: 'ru', slug: 'apple-watch-series-12-vs-series-11', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'apple-watch-series-12-vs-oura-ring-4', publishOn: '2026-11-09' },
   // (apple-watch-series-12-vs-whoop-5-0 in every other language: scripts/locale-publish.ts)
-  { lang: 'ru', slug: 'apple-watch-series-12-vs-garmin-venu-4', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'apple-watch-ultra-4-vs-garmin-fenix-8', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'oura-ring-5-vs-apple-watch-series-11', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'oura-ring-4-vs-apple-watch-series-11', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'apple-watch-series-11-vs-garmin-venu-4', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'apple-watch-series-11-vs-fitbit-charge-6', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'garmin-fenix-8-vs-apple-watch-series-11', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11', publishOn: '2026-11-09' },
   // Breathwork + sleep-app + CGM clusters — ES leads (today), RU trails (2026-11-16).
   { lang: 'es', slug: 'breathwrk-vs-othership-vs-wim-hof-method-app', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'breathwrk-vs-othership', publishOn: '2026-09-18' },
@@ -875,28 +863,6 @@ const HEADTOHEAD_LOCALE_ROLLOUT: readonly { lang: string; slug: string; publishO
   { lang: 'es', slug: 'stelo-vs-lingo', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'veri-vs-levels', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'zoe-vs-levels', publishOn: '2026-09-18' },
-  { lang: 'ru', slug: 'breathwrk-vs-othership-vs-wim-hof-method-app', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'breathwrk-vs-othership', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'breathwrk-vs-soma-breath', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'ibreathe-vs-breathe-to-relax', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'othership-vs-open-app', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'wim-hof-method-app-vs-soma-breath', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'bettersleep-vs-sleep-cycle', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'endel-vs-pzizz-vs-bettersleep', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'sleep-cycle-vs-sleep-as-android-vs-autosleep', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'sleep-cycle-vs-sleep-as-android', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'sleepio-vs-pzizz', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'sleepio-vs-sleep-cycle-vs-pzizz', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'levels-vs-nutrisense-vs-stelo', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'levels-vs-nutrisense', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'levels-vs-ultrahuman-m1', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'levels-vs-zoe-vs-nutrisense', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'lingo-vs-stelo-vs-ultrahuman-m1', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'nutrisense-vs-zoe', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'signos-vs-levels', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'stelo-vs-lingo', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'veri-vs-levels', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'zoe-vs-levels', publishOn: '2026-11-16' },
 ]
 const liveHeadToHeadLocale = [
   ...HEADTOHEAD_LOCALE_ROLLOUT.filter((e) => e.publishOn <= BUILD_DATE),
