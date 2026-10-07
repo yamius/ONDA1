@@ -1,5 +1,5 @@
 ---
-sourceHash: "f6f3978b9d05"
+sourceHash: "fdfd13042508"
 title: "PEMF-therapie (gepulste elektromagnetische velden): wat het onderzoek laat zien"
 metaTitle: "PEMF-therapie: wat het onderzoek laat zien"
 metaDescription: "Therapie met gepulste elektromagnetische velden uitgelegd: medische botstimulatoren tegenover matten voor thuis, waar studies pijnverlichting laten zien en wie het beter niet gebruikt."
@@ -142,11 +142,11 @@ Schumann-resonanties zijn echte, zeer zwakke natuurlijke elektromagnetische tril
 
 Toezichthouders beoordelen apparaten op hun beoogde gebruik, zodat dezelfde technologie in heel verschillende categorieën kan vallen.
 
-- **Botgroeistimulatoren.** In de Verenigde Staten zijn niet-invasieve botgroeistimulatoren hulpmiddelen op voorschrift die elektrische, magnetische of ultrasone velden gebruiken als aanvulling bij fractuurfixatie en spondylodese, of bij vastgestelde non-unions [S15]. Tot mei 2026 waren het klasse III-hulpmiddelen die werden goedgekeurd via premarket approval (PMA); sinds achttien mei 2026 zijn het klasse II-hulpmiddelen met bijzondere controles, die een clearance krijgen via een premarket notification [S14].
+- **Botgroeistimulatoren.** In de Verenigde Staten zijn niet-invasieve botgroeistimulatoren hulpmiddelen op voorschrift die elektrische, magnetische of ultrasone velden gebruiken als aanvulling bij fractuurfixatie en spondylodese, of bij vastgestelde non-unions [S15]. Tot mei 2026 waren het klasse III-hulpmiddelen die werden goedgekeurd via premarket approval (PMA); sinds 18 mei 2026 zijn het klasse II-hulpmiddelen met bijzondere controles, die een clearance krijgen via een 510(k) premarket notification [S14].
 - **Postoperatieve pijn en zwelling.** Niet-thermische gepulste radiofrequente apparaten zijn klasse II-hulpmiddelen op voorschrift voor aanvullend palliatief gebruik na een operatie [S16].
-- **Matten voor consumenten.** Ten minste één veelverkochte mat, het Bemer Therapy System Evo, kreeg een clearance via een premarket notification [S19] onder een productcode voor apparaten voor spiertraining die worden gebruikt voor andere dan medische doeleinden en niet bedoeld zijn voor mensen met een medische aandoening [S18]. Zo'n clearance zegt dat een apparaat wezenlijk gelijkwaardig is aan een apparaat dat al legaal op de markt is voor een benoemd gebruik [S17]; het is geen bewijs dat het apparaat de gezondheid verbetert.
+- **Matten voor consumenten.** Ten minste één veelverkochte mat, het Bemer Therapy System Evo, kreeg een clearance via 510(k) K231368 [S19] onder een productcode voor apparaten voor spiertraining die worden gebruikt voor andere dan medische doeleinden en niet bedoeld zijn voor mensen met een medische aandoening [S18]. Zo'n clearance zegt dat een apparaat wezenlijk gelijkwaardig is aan een apparaat dat al legaal op de markt is voor een benoemd gebruik [S17]; het is geen bewijs dat het apparaat de gezondheid verbetert.
 
-Drie woorden worden in marketing vaak door elkaar gehaald: **geregistreerd** (registered: het bedrijf en het product staan bij de FDA vermeld; dit is geen beoordeling van het apparaat), **toegelaten** (cleared: wezenlijk gelijkwaardig bevonden via een premarket notification voor een vermeld gebruik [S17]) en **goedgekeurd** (approved: premarket approval na een beoordeling van veiligheid en werkzaamheid, gebruikt voor hulpmiddelen met het hoogste risico). "FDA registered" is niet "FDA cleared", en geen van beide is "FDA approved". Controleer altijd voor welk gebruik een clearance precies geldt voordat je die opvat als bewijs voor iets anders.
+Drie woorden worden in marketing vaak door elkaar gehaald: **geregistreerd** (registered: het bedrijf en het product staan bij de FDA vermeld; dit is geen beoordeling van het apparaat), **toegelaten** (cleared: wezenlijk gelijkwaardig bevonden via een 510(k) premarket notification voor een vermeld gebruik [S17]) en **goedgekeurd** (approved: premarket approval na een beoordeling van veiligheid en werkzaamheid, gebruikt voor hulpmiddelen met het hoogste risico). "FDA registered" is niet "FDA cleared", en geen van beide is "FDA approved". Controleer altijd voor welk gebruik een clearance precies geldt voordat je die opvat als bewijs voor iets anders.
 
 ## Veiligheid
 

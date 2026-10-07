@@ -1,5 +1,5 @@
 ---
-sourceHash: "f6f3978b9d05"
+sourceHash: "fdfd13042508"
 title: "Terapia PEMF (pulsujące pola elektromagnetyczne): co pokazują badania"
 metaTitle: "Terapia PEMF: co pokazują badania"
 metaDescription: "Terapia pulsującym polem elektromagnetycznym wyjaśniona: medyczne stymulatory kości a maty domowe, gdzie badania pokazują ulgę w bólu i kto nie powinien jej stosować."
@@ -142,11 +142,11 @@ Rezonanse Schumanna to prawdziwe, bardzo słabe naturalne drgania elektromagnety
 
 Regulatorzy oceniają urządzenia według ich przeznaczenia, więc ta sama technologia może trafić do bardzo różnych kategorii.
 
-- **Stymulatory wzrostu kości.** W Stanach Zjednoczonych nieinwazyjne stymulatory wzrostu kości to wyroby na receptę wykorzystujące pola elektryczne, magnetyczne lub ultradźwiękowe jako uzupełnienie stabilizacji złamań i spondylodezy albo w utrwalonym braku zrostu [S15]. Do maja 2026 roku były wyrobami klasy III zatwierdzanymi (approved) w procedurze przedrynkowego zatwierdzenia (PMA); od osiemnastego maja 2026 roku są wyrobami klasy II objętymi kontrolami szczególnymi i dopuszczanymi (cleared) w trybie zgłoszenia przedrynkowego [S14].
+- **Stymulatory wzrostu kości.** W Stanach Zjednoczonych nieinwazyjne stymulatory wzrostu kości to wyroby na receptę wykorzystujące pola elektryczne, magnetyczne lub ultradźwiękowe jako uzupełnienie stabilizacji złamań i spondylodezy albo w utrwalonym braku zrostu [S15]. Do maja 2026 roku były wyrobami klasy III zatwierdzanymi (approved) w procedurze przedrynkowego zatwierdzenia (PMA); od 18 maja 2026 roku są wyrobami klasy II objętymi kontrolami szczególnymi i dopuszczanymi (cleared) w trybie zgłoszenia przedrynkowego 510(k) [S14].
 - **Ból i obrzęk pooperacyjny.** Nietermiczne urządzenia wykorzystujące pulsującą energię o częstotliwości radiowej to wyroby klasy II na receptę do uzupełniającego stosowania paliatywnego po operacji [S16].
-- **Maty konsumenckie.** Co najmniej jedna szeroko sprzedawana mata, Bemer Therapy System Evo, została dopuszczona w trybie zgłoszenia przedrynkowego [S19] w ramach kodu produktu dla urządzeń do treningu mięśni, które są używane do celów innych niż medyczne i nie są przeznaczone dla osób z chorobami [S18]. Takie dopuszczenie oznacza, że urządzenie jest zasadniczo równoważne z urządzeniem już legalnie obecnym na rynku w ramach wskazanego zastosowania [S17]; nie jest dowodem, że urządzenie poprawia zdrowie.
+- **Maty konsumenckie.** Co najmniej jedna szeroko sprzedawana mata, Bemer Therapy System Evo, została dopuszczona w trybie 510(k) K231368 [S19] w ramach kodu produktu dla urządzeń do treningu mięśni, które są używane do celów innych niż medyczne i nie są przeznaczone dla osób z chorobami [S18]. Takie dopuszczenie oznacza, że urządzenie jest zasadniczo równoważne z urządzeniem już legalnie obecnym na rynku w ramach wskazanego zastosowania [S17]; nie jest dowodem, że urządzenie poprawia zdrowie.
 
-W marketingu często zaciera się trzy słowa: **zarejestrowane** (registered: firma i produkt figurują w wykazie FDA; nie jest to ocena urządzenia), **dopuszczone** (cleared: uznane za zasadniczo równoważne w trybie zgłoszenia przedrynkowego dla wskazanego zastosowania [S17]) i **zatwierdzone** (approved: przedrynkowe zatwierdzenie po ocenie bezpieczeństwa i skuteczności, stosowane w przypadku wyrobów najwyższego ryzyka). „FDA registered” to nie „FDA cleared”, a żadne z nich nie oznacza „FDA approved”. Zanim potraktujesz dopuszczenie jako dowód czegokolwiek innego, zawsze sprawdź, jakiego zastosowania faktycznie dotyczy.
+W marketingu często zaciera się trzy słowa: **zarejestrowane** (registered: firma i produkt figurują w wykazie FDA; nie jest to ocena urządzenia), **dopuszczone** (cleared: uznane za zasadniczo równoważne w trybie zgłoszenia przedrynkowego 510(k) dla wskazanego zastosowania [S17]) i **zatwierdzone** (approved: przedrynkowe zatwierdzenie po ocenie bezpieczeństwa i skuteczności, stosowane w przypadku wyrobów najwyższego ryzyka). „FDA registered” to nie „FDA cleared”, a żadne z nich nie oznacza „FDA approved”. Zanim potraktujesz dopuszczenie jako dowód czegokolwiek innego, zawsze sprawdź, jakiego zastosowania faktycznie dotyczy.
 
 ## Bezpieczeństwo
 

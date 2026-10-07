@@ -1,5 +1,5 @@
 ---
-sourceHash: "f6f3978b9d05"
+sourceHash: "fdfd13042508"
 title: "Terapia PEMF (campos eletromagnéticos pulsados): o que as evidências mostram"
 metaTitle: "Terapia PEMF: o que as evidências mostram"
 metaDescription: "A terapia com campos eletromagnéticos pulsados explicada: estimuladores ósseos médicos e tapetes de uso doméstico, onde os ensaios mostram alívio da dor e quem deve evitá-la."
@@ -142,11 +142,11 @@ As ressonâncias de Schumann são oscilações eletromagnéticas naturais reais 
 
 Os órgãos reguladores avaliam os aparelhos pelo uso pretendido, então a mesma tecnologia pode cair em categorias muito diferentes.
 
-- **Estimuladores de crescimento ósseo.** Nos Estados Unidos, os estimuladores não invasivos de crescimento ósseo são dispositivos de prescrição que usam campos elétricos, magnéticos ou ultrassônicos como complemento à fixação de fraturas e à fusão vertebral, ou para pseudartroses estabelecidas [S15]. Eles eram dispositivos de classe III aprovados por aprovação pré-comercialização (PMA) até maio de 2026; desde dezoito de maio de 2026 são dispositivos de classe II com controles especiais, liberados por notificação pré-comercialização [S14].
+- **Estimuladores de crescimento ósseo.** Nos Estados Unidos, os estimuladores não invasivos de crescimento ósseo são dispositivos de prescrição que usam campos elétricos, magnéticos ou ultrassônicos como complemento à fixação de fraturas e à fusão vertebral, ou para pseudartroses estabelecidas [S15]. Eles eram dispositivos de classe III aprovados por aprovação pré-comercialização (PMA) até maio de 2026; desde 18 de maio de 2026 são dispositivos de classe II com controles especiais, liberados por notificação pré-comercialização 510(k) [S14].
 - **Dor e inchaço pós-operatórios.** Aparelhos de radiofrequência pulsada não térmicos são dispositivos de classe II de prescrição para uso paliativo complementar após cirurgias [S16].
-- **Tapetes para consumidores.** Pelo menos um tapete muito vendido, o Bemer Therapy System Evo, foi liberado por notificação pré-comercialização [S19] sob um código de produto para aparelhos de condicionamento muscular usados para fins não médicos e não destinados a pessoas com condições médicas [S18]. Uma liberação como essa diz que um aparelho é substancialmente equivalente a outro já comercializado legalmente para um uso específico [S17]; não é evidência de que o aparelho melhore a saúde.
+- **Tapetes para consumidores.** Pelo menos um tapete muito vendido, o Bemer Therapy System Evo, foi liberado pela 510(k) K231368 [S19] sob um código de produto para aparelhos de condicionamento muscular usados para fins não médicos e não destinados a pessoas com condições médicas [S18]. Uma liberação como essa diz que um aparelho é substancialmente equivalente a outro já comercializado legalmente para um uso específico [S17]; não é evidência de que o aparelho melhore a saúde.
 
-Três palavras costumam ser confundidas no marketing: **registrado** (registered; a empresa e o produto constam dos cadastros da FDA, o que não é uma avaliação do aparelho), **liberado** (cleared; considerado substancialmente equivalente por notificação pré-comercialização para um uso declarado [S17]) e **aprovado** (approved; aprovação pré-comercialização após avaliação de segurança e eficácia, usada para os aparelhos de maior risco). “Registrado na FDA” não é “liberado pela FDA”, e nenhum dos dois é “aprovado pela FDA”. Sempre verifique qual uso uma liberação realmente nomeia antes de lê-la como evidência de qualquer outra coisa.
+Três palavras costumam ser confundidas no marketing: **registrado** (registered; a empresa e o produto constam dos cadastros da FDA, o que não é uma avaliação do aparelho), **liberado** (cleared; considerado substancialmente equivalente por notificação pré-comercialização 510(k) para um uso declarado [S17]) e **aprovado** (approved; aprovação pré-comercialização após avaliação de segurança e eficácia, usada para os aparelhos de maior risco). “Registrado na FDA” não é “liberado pela FDA”, e nenhum dos dois é “aprovado pela FDA”. Sempre verifique qual uso uma liberação realmente nomeia antes de lê-la como evidência de qualquer outra coisa.
 
 ## Segurança
 

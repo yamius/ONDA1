@@ -1,5 +1,5 @@
 ---
-sourceHash: "f6f3978b9d05"
+sourceHash: "fdfd13042508"
 title: "Terapia PEMF (campi elettromagnetici pulsati): cosa mostrano le evidenze"
 metaTitle: "Terapia PEMF: cosa mostrano le evidenze"
 metaDescription: "La terapia con campi elettromagnetici pulsati spiegata: stimolatori ossei medici e tappetini per uso domestico, dove gli studi mostrano sollievo dal dolore e chi dovrebbe evitarla."
@@ -142,11 +142,11 @@ Le risonanze di Schumann sono oscillazioni elettromagnetiche naturali reali e mo
 
 Le autorità valutano i dispositivi in base all’uso previsto, per cui la stessa tecnologia può trovarsi in categorie molto diverse.
 
-- **Stimolatori della crescita ossea.** Negli Stati Uniti gli stimolatori non invasivi della crescita ossea sono dispositivi su prescrizione che usano campi elettrici, magnetici o a ultrasuoni come complemento alla fissazione delle fratture e alla fusione vertebrale, o per pseudoartrosi accertate [S15]. Erano dispositivi di classe III approvati tramite approvazione pre-commercializzazione (PMA) fino a maggio 2026; dal diciotto maggio 2026 sono dispositivi di classe II con controlli speciali, autorizzati tramite notifica pre-commercializzazione [S14].
+- **Stimolatori della crescita ossea.** Negli Stati Uniti gli stimolatori non invasivi della crescita ossea sono dispositivi su prescrizione che usano campi elettrici, magnetici o a ultrasuoni come complemento alla fissazione delle fratture e alla fusione vertebrale, o per pseudoartrosi accertate [S15]. Erano dispositivi di classe III approvati tramite approvazione pre-commercializzazione (PMA) fino a maggio 2026; dal 18 maggio 2026 sono dispositivi di classe II con controlli speciali, autorizzati tramite notifica pre-commercializzazione 510(k) [S14].
 - **Dolore e gonfiore postoperatori.** I dispositivi a radiofrequenza pulsata non termici sono dispositivi di classe II su prescrizione per un uso palliativo complementare dopo un intervento [S16].
-- **Tappetini di consumo.** Almeno un tappetino molto venduto, il Bemer Therapy System Evo, è stato autorizzato tramite notifica pre-commercializzazione [S19] con un codice prodotto per dispositivi di condizionamento muscolare usati per scopi non medici e non destinati a persone con condizioni mediche [S18]. Un’autorizzazione di questo tipo dice che un dispositivo è sostanzialmente equivalente a uno già legalmente in commercio per un uso specifico [S17]; non è una prova che il dispositivo migliori la salute.
+- **Tappetini di consumo.** Almeno un tappetino molto venduto, il Bemer Therapy System Evo, è stato autorizzato tramite la 510(k) K231368 [S19] con un codice prodotto per dispositivi di condizionamento muscolare usati per scopi non medici e non destinati a persone con condizioni mediche [S18]. Un’autorizzazione di questo tipo dice che un dispositivo è sostanzialmente equivalente a uno già legalmente in commercio per un uso specifico [S17]; non è una prova che il dispositivo migliori la salute.
 
-Nel marketing tre parole vengono spesso confuse: **registrato** (registered; l’azienda e il prodotto risultano negli elenchi della FDA, e questo non è un esame del dispositivo), **autorizzato** (cleared; giudicato sostanzialmente equivalente tramite notifica pre-commercializzazione per un uso dichiarato [S17]) e **approvato** (approved; approvazione pre-commercializzazione dopo una valutazione di sicurezza ed efficacia, usata per i dispositivi a più alto rischio). “Registrato presso la FDA” non significa “autorizzato dalla FDA”, e nessuno dei due significa “approvato dalla FDA”. Controlla sempre quale uso nomina davvero un’autorizzazione prima di leggerla come prova di qualcos’altro.
+Nel marketing tre parole vengono spesso confuse: **registrato** (registered; l’azienda e il prodotto risultano negli elenchi della FDA, e questo non è un esame del dispositivo), **autorizzato** (cleared; giudicato sostanzialmente equivalente tramite notifica pre-commercializzazione 510(k) per un uso dichiarato [S17]) e **approvato** (approved; approvazione pre-commercializzazione dopo una valutazione di sicurezza ed efficacia, usata per i dispositivi a più alto rischio). “Registrato presso la FDA” non significa “autorizzato dalla FDA”, e nessuno dei due significa “approvato dalla FDA”. Controlla sempre quale uso nomina davvero un’autorizzazione prima di leggerla come prova di qualcos’altro.
 
 ## Sicurezza
 
