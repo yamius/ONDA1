@@ -28,7 +28,8 @@
     "apaStyle": "Styl APA",
     "finalize": "[ OZNACZ_JAKO_PRZECZYTANE ]",
     "completed": "[ STATUS: PRZECZYTANE ]",
-    "faqHeading": "CZĘSTE PYTANIA"
+    "faqHeading": "CZĘSTE PYTANIA",
+    "illustrationLabel": "Ilustracja — nie pomiar"
   },
   "categories": {
     "Neural Hardware": "Sprzęt neuronowy",

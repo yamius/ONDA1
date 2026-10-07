@@ -76,10 +76,10 @@ The modern environment 'breaks' CPG firmware. Monotonous movement and lack of se
 > PRIMARY_DEVICE: [GAIT_ANALYZER: RUNSCRIBE / GARMIN_DYNAMICS_POD]
 > METRIC: Gait Symmetry & Ground Contact Time. Assessing how balanced your 'Autopilot' is functioning.
 > SECONDARY_DEVICE: [METABOLIC_TRACKER: LUMEN / PNOE]
-> METRIC: Oxygen Economy. A decrease in oxygen consumption at the same speed is a direct indicator of CPG optimization.
+> METRIC: Oxygen Economy. A lower oxygen cost at the same speed points to better movement economy.
 > SYSTEM_DATA: [COGNITIVE_LOAD_ASSESSMENT]
 > METRIC: The ability to solve complex mental tasks while moving. The more efficient the CPG, the more brain resources remain free for thinking.
-> STATUS: AUTOPILOT_CALIBRATED.
+> STATUS: TRACK_OVER_WEEKS
 
 ---
 

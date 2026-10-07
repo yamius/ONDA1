@@ -55,9 +55,9 @@ Most trackers tell you how you slept last night. Predictive Analytics tells you 
 ---
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: ONDA_CORE (Proprietary AI Engine) / API Integration
-> METRIC: Predictive Accuracy (System Downtime Probability)
-> STATUS: PREDICTIVE_ALGORITHMS_ACTIVE
+> EXAMPLE_DEVICE: wearable with heart rate / HRV / sleep data
+> METRIC: deviation from your own baseline (resting HR, HRV, sleep)
+> STATUS: TRACK_OVER_WEEKS
 
 ---
 

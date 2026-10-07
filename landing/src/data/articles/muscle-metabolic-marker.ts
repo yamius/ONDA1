@@ -75,12 +75,12 @@ Integrating peptide protocols (such as BPC-157) with resistance-based stress all
 
 > [ HARDWARE_VALIDATION ]
 > PRIMARY_DEVICE: [BIO_IMPEDANCE: INBODY / WITHINGS_BODY_SCAN]
-> METRIC: Skeletal Muscle Mass (SMM). We track net 'Metabolic Hardware' volume, not gross body weight.
+> METRIC: Skeletal Muscle Mass (SMM). Tracks net 'Metabolic Hardware' volume, not gross body weight.
 > SECONDARY_DEVICE: [DYNAMOMETER: DIGITAL_GRIP_TEST]
 > METRIC: Grip Power. Correlation of strength to body mass as a marker of biological durability.
 > SYSTEM_DATA: [BLOOD_PANEL: IGF-1 & HbA1c]
-> METRIC: Reduction in average blood sugar (HbA1c) alongside an optimization of growth factors.
-> STATUS: STRUCTURAL_INTEGRITY_STABLE.
+> METRIC: Average blood sugar (HbA1c) and growth-factor (IGF-1) trend.
+> STATUS: TRACK_OVER_WEEKS
 
 ---
 

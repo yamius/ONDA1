@@ -82,9 +82,9 @@ We limit inbound data streams. The system learns to close ports, reduce CPU load
 Shifting the brain into the Alpha state acts as a band-pass filter: target frequencies pass through while the high-frequency beta-noise of anxiety gets cut out.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Apple Watch / HRV Monitor
-> METRIC: Alpha coherence, HRV, subjective focus
-> STATUS: CLEAN_CHANNEL
+> EXAMPLE_DEVICE: Apple Watch / HRV Monitor
+> METRIC: HRV, subjective focus
+> STATUS: TRACK_OVER_WEEKS
 
 ---
 

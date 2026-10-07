@@ -28,7 +28,8 @@
     "apaStyle": "Style APA",
     "finalize": "[ MARQUER_COMME_LU ]",
     "completed": "[ STATUT : LU ]",
-    "faqHeading": "QUESTIONS FRÉQUENTES"
+    "faqHeading": "QUESTIONS FRÉQUENTES",
+    "illustrationLabel": "Illustration — pas une mesure"
   },
   "categories": {
     "Neural Hardware": "Matériel neuronal",

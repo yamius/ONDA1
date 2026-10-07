@@ -28,7 +28,8 @@
     "apaStyle": "APA 形式",
     "finalize": "[ 読了にする ]",
     "completed": "[ ステータス：読了 ]",
-    "faqHeading": "よくある質問"
+    "faqHeading": "よくある質問",
+    "illustrationLabel": "例示 — 測定値ではありません"
   },
   "categories": {
     "Neural Hardware": "神経ハードウェア",

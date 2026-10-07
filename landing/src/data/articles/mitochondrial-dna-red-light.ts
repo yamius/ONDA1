@@ -59,10 +59,10 @@ Near-infrared light is absorbed in the mitochondria, where energy production dep
 ---
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Red Light Rising / Joovv (consumer LED panels)
+> EXAMPLE_LIGHT_SOURCE: Red Light Rising / Joovv (consumer LED panels)
 > SPECTRUM_CHECK: 660nm (Surface) + 850nm (Deep Tissue)
-> METRIC: Increase in Grip Strength / Recovery Speed (via HRV)
-> STATUS: PHOTONIC_FLOW_ACTIVE
+> METRIC: Grip Strength / Recovery Trend (via HRV)
+> STATUS: TRACK_OVER_WEEKS
 
 ---
 

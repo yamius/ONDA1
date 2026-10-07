@@ -411,6 +411,13 @@ export function ArticlePage() {
     .filter((t): t is NonNullable<typeof t> => t != null)
     .slice(0, 5)
 
+  // Every [ HARDWARE_VALIDATION ] block is an illustration of what one could track, never a measurement.
+  const illustrationCaption = (spacing: string) => (
+    <div className={`${spacing} font-mono text-[11px] uppercase tracking-wider text-white/40`}>
+      {tArticles('detail.illustrationLabel', { defaultValue: 'Illustration — not a measurement' })}
+    </div>
+  )
+
   const markdownComponents = {
     h2: ({ children, id, node: _node, ...props }: { children?: React.ReactNode; id?: string; node?: unknown }) => {
       const text = typeof children === 'string' ? children : String(children)
@@ -420,6 +427,20 @@ export function ArticlePage() {
       const isLongevityStatus = text.includes('SYSTEM LIFESPAN: EXTENDED') && article.slug === 'longevity-hardware-cellular-cleanup'
       const isStatusBlock = isSystemStatus || isCLIStatus || isFirewallStatus || isLongevityStatus
       const isTechIntro = /^\[.*\]$/.test(text.trim()) && !isStatusBlock
+      if (extractText(children).includes('[ HARDWARE_VALIDATION ]')) {
+        return (
+          <>
+            <h2
+              id={id}
+              className="mb-1 mt-10 font-mono text-[13.9px] font-bold tracking-wider text-terminal-green/90 scroll-mt-24 [text-shadow:0_0_12px_rgba(74,222,128,0.76)]"
+              {...props}
+            >
+              {children}
+            </h2>
+            {illustrationCaption('mb-4')}
+          </>
+        )
+      }
       return (
         <h2
           id={id}
@@ -734,6 +755,7 @@ export function ArticlePage() {
                 </div>
               )
             })}
+            {illustrationCaption('pt-2')}
           </blockquote>
         )
       }

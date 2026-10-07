@@ -78,7 +78,7 @@ Zombie cells are senescent cells — the product of Cellular Senescence, a prote
 > [ HARDWARE_VALIDATION ]
 > VALIDATION_DEVICE: DNA Methylation Kit
 > METRIC: Epigenetic Aging Rate (DunedinPACE)
-> STATUS: HARDWARE_LIFESPAN_EXTENDED
+> STATUS: TRACK_OVER_MONTHS
 
 ---
 

@@ -59,9 +59,9 @@ Aging is not just the loss of healthy cells; it is the accumulation of "Zombie C
 ---
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: DNA Methylation Kit (TruDiagnostic)
+> EXAMPLE_DEVICE: DNA Methylation Kit (TruDiagnostic)
 > METRIC: Epigenetic Aging Rate (DunedinPACE) / Inflammatory Markers (hs-CRP)
-> STATUS: HARDWARE_LIFESPAN_EXTENDED
+> STATUS: TRACK_OVER_MONTHS
 `,
   howToSteps: [
     {

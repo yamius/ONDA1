@@ -55,9 +55,9 @@ For decades, sleep was treated as a black box—you closed your eyes and hoped f
 ---
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Oura Ring Gen 4+ / Somnee Headband
-> METRIC: Deep Sleep Duration (>90 min) & Delta Wave Amplitude
-> STATUS: DEEP_SLEEP_ENHANCEMENT_ACTIVE
+> EXAMPLE_DEVICE: Oura Ring Gen 4+ / Somnee Headband
+> METRIC: Deep Sleep Duration (>90 min); Delta Wave Amplitude only with an EEG headband (e.g. Somnee)
+> STATUS: TRACK_OVER_WEEKS
 
 ---
 

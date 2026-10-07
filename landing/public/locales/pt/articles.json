@@ -28,7 +28,8 @@
     "apaStyle": "Estilo APA",
     "finalize": "[ MARCAR_COMO_LIDO ]",
     "completed": "[ STATUS: LIDO ]",
-    "faqHeading": "PERGUNTAS FREQUENTES"
+    "faqHeading": "PERGUNTAS FREQUENTES",
+    "illustrationLabel": "Ilustração — não é uma medição"
   },
   "categories": {
     "Neural Hardware": "Hardware neural",

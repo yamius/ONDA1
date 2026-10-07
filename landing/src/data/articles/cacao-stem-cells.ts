@@ -78,9 +78,9 @@ Caffeine and theobromine are pharmacological accelerators. While useful for 'Pro
 
 ## [ HARDWARE_VALIDATION ]
 
-VALIDATION_DEVICE: Oura Ring / Whoop
+EXAMPLE_DEVICE: Oura Ring / Whoop
 METRIC: [HRV](/science/concepts/heart-rate-variability) (Heart Rate Variability) & Sleep Quality
-STATUS: REGENERATION_OPTIMIZED
+STATUS: TRACK_OVER_WEEKS
 
 ---
 

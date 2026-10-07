@@ -79,8 +79,8 @@ Insulin sensitivity and amino acid requirements fluctuate based on estrogen leve
 > SECONDARY_DEVICE: [CGM: CONTINUOUS_GLUCOSE_MONITOR]
 > METRIC: Insulin Sensitivity Index. Tracking how carbohydrate tolerance shifts across cycle weeks.
 > SYSTEM_DATA: [BIO_MARKERS: PROGESTERONE_PEAK]
-> METRIC: Confirmed ovulation as the primary indicator of overall system health and longevity.
-> STATUS: FEMALE_OS_OPTIMIZED.
+> METRIC: Whether ovulation occurs, cycle to cycle (progesterone rise).
+> STATUS: TRACK_OVER_WEEKS
 
 ---
 

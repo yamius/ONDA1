@@ -57,9 +57,9 @@ Neural entrainment works through a biological mechanism called the Frequency Fol
 ---
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Muse 2 / Flowtime EEG Headband
+> EXAMPLE_DEVICE: Muse 2 / Flowtime EEG Headband
 > METRIC: Alpha-Theta Coherence & Time-in-State (min)
-> STATUS: NEURAL_SYNC_ACTIVE
+> STATUS: TRACK_OVER_WEEKS
 
 ---
 

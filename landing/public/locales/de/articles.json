@@ -28,7 +28,8 @@
     "apaStyle": "APA-Stil",
     "finalize": "[ ALS_GELESEN_MARKIEREN ]",
     "completed": "[ STATUS: GELESEN ]",
-    "faqHeading": "HÄUFIGE FRAGEN"
+    "faqHeading": "HÄUFIGE FRAGEN",
+    "illustrationLabel": "Illustration – keine Messung"
   },
   "categories": {
     "Neural Hardware": "Neuronale Hardware",
