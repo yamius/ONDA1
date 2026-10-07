@@ -59,7 +59,7 @@ It does vary between people — body size, sex, genetics, liver health and medic
 **The Science:** Alcohol helps you fall asleep but wrecks the back half of the night — it suppresses REM, increases awakenings, and lowers overnight [heart-rate variability](/glossary/heart-rate-variability) as your body works to metabolise it. That’s why a few drinks leave you unrested and show up as poor recovery the next morning. Front-load and stop early to protect [deep sleep](/glossary/deep-sleep).
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Sleep / HRV tracker the morning after
+> EXAMPLE_DEVICE: Sleep / HRV tracker the morning after
 > METRIC: Lower overnight HRV and less deep sleep after late drinks
 > STATUS: RECOVERY_DEBT_LOGGED
 

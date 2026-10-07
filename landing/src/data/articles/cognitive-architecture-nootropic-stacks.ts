@@ -75,7 +75,7 @@ High-performance states often fail due to 'System Noise'—anxiety or over-stimu
 > **The Logic:** Magnesium L-Threonate is the only form of magnesium that effectively crosses the Blood-Brain Barrier. It increases synaptic density and resets receptor sensitivity, ensuring your hardware is ready for the next day's high-load processing.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Cognitive Testing Apps
+> EXAMPLE_DEVICE: Cognitive Testing Apps
 > METRIC: Working Memory & Reaction Time
 > STATUS: PATCH_SUCCESSFUL
 

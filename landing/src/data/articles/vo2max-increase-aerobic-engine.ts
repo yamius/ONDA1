@@ -69,7 +69,7 @@ The lever is the same hardware Zone 2 builds — [ATP](/glossary/atp) production
 **The Logic:** Adaptation happens during recovery, not the session. Stacking high-intensity work on poor recovery just digs a hole. Let [heart-rate variability](/glossary/heart-rate-variability) tell you when to push and when to back off.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: HR-ratio estimate or lab CPET
+> EXAMPLE_DEVICE: HR-ratio estimate or lab CPET
 > METRIC: Estimated VO₂max ↑ over 8–12 weeks
 > STATUS: AEROBIC_CEILING_RISING
 `,

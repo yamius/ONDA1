@@ -82,7 +82,7 @@ Short breath-hold cycles support carbon dioxide tolerance and cerebral vasodilat
 Specific sodium-to-potassium ratios support conductivity before deep work. Concentration is an electrical process, and signal loss must be minimized.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Apple Watch / focus timer
+> EXAMPLE_DEVICE: Apple Watch / focus timer
 > METRIC: sustained attention, reaction stability, subjective flow
 > STATUS: OUTPUT_STABLE
 

@@ -70,7 +70,7 @@ Prolonged sedentary work or psychological stress causes the neck, shoulder, and 
 > [ ONDA_PROTOCOL ]: Releasing myofascial tension returns the system to a state of low impedance, allowing the core (VTA and Acetylcholine Lens) to operate at maximum efficiency without wasting baseline energy.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: HRV monitor, capillary refill, subjective head clarity
+> EXAMPLE_DEVICE: HRV monitor, capillary refill, subjective head clarity
 > METRIC: cerebral perfusion index, neck/jaw tension, focus persistence
 > STATUS: STRUCTURAL_INTEGRITY
 

@@ -81,7 +81,7 @@ Slow diaphragmatic breathing can calm you, but not because the diaphragm "massag
 **The Logic:** Your paranasal sinuses produce Nitric Oxide, a vasodilator, and [nasal breathing](/science/evidence/nasal-breathing) carries it into the lungs, where it is proposed to aid oxygen uptake — how large any such effect is in daily life is not established, so the 'Boost' in the name is an image, not a promise. What is well established: the nose acts as a natural 'Air Filter' and 'Heater' (to use the metaphor) for your internal hardware.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Pulse Oximeter
+> EXAMPLE_DEVICE: Pulse Oximeter
 > METRIC: SpO2 Stability & CO2 Tolerance
 > STATUS: ROOT_ACCESS_GRANTED
 

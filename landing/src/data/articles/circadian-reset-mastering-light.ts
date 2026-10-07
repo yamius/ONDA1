@@ -84,7 +84,7 @@ Screens at 11 PM act as a "Force Quit" for your sleep architecture. Blue light s
 **The Logic:** To initiate Deep Sleep, your core body temperature must drop by 1–2 degrees. A warm bath draws heat to the surface (extremities), causing the core to cool down rapidly—a "Thermal Handshake" for your brain.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Actigraph / Whoop
+> EXAMPLE_DEVICE: Actigraph / Whoop
 > METRIC: Sleep Latency & RHR
 > STATUS: CLOCK_SYNC_SUCCESS
 

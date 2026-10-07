@@ -67,7 +67,7 @@ A popular tip is to delay your first cup 60–90 minutes after waking. Your natu
 **The Logic:** Total daily caffeine matters, but timing matters more for sleep. A big morning dose clears by night; a small afternoon one may not.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Sleep tracker (deep-sleep %) + subjective morning energy
+> EXAMPLE_DEVICE: Sleep tracker (deep-sleep %) + subjective morning energy
 > METRIC: Deep-sleep minutes ↑ after moving the cut-off earlier
 > STATUS: ADENOSINE_SIGNAL_RESTORED
 `,

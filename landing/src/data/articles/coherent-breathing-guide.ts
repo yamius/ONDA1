@@ -74,7 +74,7 @@ Coherent breathing differs from [box breathing and 4-7-8](/articles/box-breathin
 **The Logic:** Everyone’s resonance frequency differs slightly. The exact rate is best confirmed against live heart-rhythm feedback (what an HRV-biofeedback app like ONDA shows), but feel gets you close.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: HRV reading during the session
+> EXAMPLE_DEVICE: HRV reading during the session
 > METRIC: Heart-rate oscillation amplitude peaks at your resonance rate
 > STATUS: RESONANCE_ACHIEVED
 

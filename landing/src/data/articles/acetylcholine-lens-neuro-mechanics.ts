@@ -76,7 +76,7 @@ Sustained fixation on a single point tells the brain that one zone is the high-p
 Maintain precursor levels so the system has a reserve tank for long deep-work sessions.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Apple Watch / focus timer
+> EXAMPLE_DEVICE: Apple Watch / focus timer
 > METRIC: focus persistence, subjective clarity, task completion
 > STATUS: HIGH_RESOLUTION
 

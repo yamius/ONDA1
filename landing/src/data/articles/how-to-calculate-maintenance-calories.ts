@@ -61,7 +61,7 @@ The real test: eat at your estimated maintenance for 2–3 weeks and watch the t
 **The Logic:** Daily weight swings are mostly water and gut contents. The multi-week average reveals the real energy balance and turns a population estimate into your personal number.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Food log + weekly average weight
+> EXAMPLE_DEVICE: Food log + weekly average weight
 > METRIC: Weight stable at maintenance, or trending at the target rate
 > STATUS: ENERGY_BUDGET_CALIBRATED
 

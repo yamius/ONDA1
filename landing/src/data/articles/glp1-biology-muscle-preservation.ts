@@ -60,7 +60,7 @@ Glucagon-like peptide-1 (GLP-1) is far more than a satiety hormone; it is a syst
 ---
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: BIA Scale (InBody) / DEXA
+> EXAMPLE_DEVICE: BIA Scale (InBody) / DEXA
 > METRIC: Skeletal Muscle Mass Index (SMMI)
 > STATUS: BIO-MIMETIC_ACTIVE
 

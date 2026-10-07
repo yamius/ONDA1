@@ -81,7 +81,7 @@ Regular moderate activity — walking, Zone 2, strength work — generally suppo
 Cut the inputs that keep you switched on before reaching for adaptogens: late caffeine, evening alcohol, doomscrolling in bed and always-on work. Most of these act by eroding sleep, the master lever.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Sleep + HRV tracker / how you feel on waking
+> EXAMPLE_DEVICE: Sleep + HRV tracker / how you feel on waking
 > METRIC: Steadier energy, better sleep, calmer baseline over weeks
 > STATUS: HPA_AXIS_REREGULATED
 

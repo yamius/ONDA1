@@ -78,7 +78,7 @@ Don't count in your head — let the [Breathing Pacer](/tools/breathing) run the
 **The Logic:** The holds can feel like too much at first. Comfort beats heroics — the calming effect comes from the slow rhythm, not from enduring long holds.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: HRV / resting-HR tracker, or just the felt sense
+> EXAMPLE_DEVICE: HRV / resting-HR tracker, or just the felt sense
 > METRIC: Heart rate and tension drop within a few rounds
 > STATUS: PARASYMPATHETIC_ENGAGED
 `,

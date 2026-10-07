@@ -93,7 +93,7 @@ ONDA updates the interoceptive firmware through directed attention and data-matc
 **The Logic:** Most interoceptive signals are quiet. Exposure creates loud, clear signals that are impossible to misread. Training under clear signal conditions teaches the brain what "real" data looks like — making it easier to detect weaker signals during ordinary conditions.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Apple Watch / Polar H10
+> EXAMPLE_DEVICE: Apple Watch / Polar H10
 > METRIC: HRV, rMSSD, Respiratory Rate
 > STATUS: BIOMETRIC_VERIFIED
 

@@ -66,7 +66,7 @@ Reduces the sensitivity of the ACC to background system noise and minor distract
 **System Effect:** Lowers the emotional reaction of the vACC to trigger events, conserving system resources.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: focus-block timer / impulse log / HRV monitor
+> EXAMPLE_DEVICE: focus-block timer / impulse log / HRV monitor
 > METRIC: uninterrupted focus duration, impulse-act ratio, post-block clarity
 > STATUS: FOCUS_LOCKED
 

@@ -69,7 +69,7 @@ Get it backwards and you push your clock the wrong way — which is how people a
 **The Logic:** Pre-shifting shrinks the gap your clock has to close on arrival, so you land already part-adjusted.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Sleep tracker + how fast local-time sleep returns
+> EXAMPLE_DEVICE: Sleep tracker + how fast local-time sleep returns
 > METRIC: Solid sleep on local time within ~days, not the whole trip
 > STATUS: CIRCADIAN_REALIGNED
 

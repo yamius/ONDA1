@@ -78,7 +78,7 @@ Dark Therapy is the intentional restriction of short-wavelength light to allow f
 > **The Logic:** This filters out the specific 450-480nm frequencies that suppress melatonin. It allows for 'Digital Input' while maintaining 'Hormonal Integrity,' acting as a software bridge between the modern world and ancient biology.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Lux Meter / Spectrometer
+> EXAMPLE_DEVICE: Lux Meter / Spectrometer
 > METRIC: Melanopic Lux < 10 (Post-Sunset)
 > STATUS: SIGNAL_NOISE_REDUCED
 

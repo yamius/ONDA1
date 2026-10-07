@@ -80,7 +80,7 @@ The Prefrontal Cortex (PFC) is the 'Executive Suite' of your brain. It is the mo
 **The Logic:** This allows your Dopamine Receptors to 'up-regulate.' By lowering the artificial floor of stimulation, you make everyday reality—and complex work—interesting again.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Focus Session Logs
+> EXAMPLE_DEVICE: Focus Session Logs
 > METRIC: Deep Work Units (90min blocks)
 > STATUS: FIREWALL_ACTIVE
 

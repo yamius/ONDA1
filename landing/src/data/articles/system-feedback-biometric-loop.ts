@@ -29,11 +29,6 @@ const article: Article = {
   imageCaption:
     '[ SIGNAL: BIOMETRIC_LOOP_ACTIVE ]: HRV, heart rate and glucose data (from wearables and glucose monitors) as feedback for adjusting your routine.',
   imagePlacement: 'header',
-  neuralSuggestion: {
-    text: 'Predict before symptoms. Explore AI-driven biomarker forecasting.',
-    link: '/articles/ai-biomarker-tracking-predictive',
-    linkText: 'AI Biomarker Tracking',
-  },
   content: `
 ## [ ANALYZING CAUSAL LOGIC ]
 

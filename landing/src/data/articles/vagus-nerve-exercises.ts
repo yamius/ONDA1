@@ -101,7 +101,7 @@ Start with the long exhale, add a hum when you want a quick reset, and keep the 
 **The Logic:** This fires the mammalian dive reflex, which slows the heart through the vagus — useful to break an acute stress spike. (Skip if you have a heart condition.)
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: HRV tracker (morning trend)
+> EXAMPLE_DEVICE: HRV tracker (morning trend)
 > METRIC: HRV rises during the face cooling; a higher resting HRV afterwards has not been shown
 > STATUS: HRV_UP_DURING_EXPOSURE
 `,

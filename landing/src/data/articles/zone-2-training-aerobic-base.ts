@@ -73,7 +73,7 @@ This is the layer elite endurance athletes spend ~80% of their volume building. 
 **The Logic:** Zone 2 widens the base; brief VO₂max work raises the roof. You need both, but the base comes first. See the [VO₂max guide](/articles/vo2max-increase-aerobic-engine) for the high-end protocol.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Chest-strap HR monitor + morning resting HR
+> EXAMPLE_DEVICE: Chest-strap HR monitor + morning resting HR
 > METRIC: Resting HR trend ↓ / HRV trend ↑ over 8–12 weeks
 > STATUS: AEROBIC_BASE_COMPILING
 `,

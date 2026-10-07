@@ -92,7 +92,7 @@ This is also the antidote to the new wellness trap: obsessively comparing tracke
 When you're ready to choose hardware, our [HRV tracker reviews](/reviews/hrv-trackers) rank devices on exactly this: how trustworthy their HRV actually is, not their marketing. Most people are deciding between two — see [Oura Ring 4 vs Whoop 5.0](/reviews/vs/oura-ring-4-vs-whoop-5-0) — and if you've ever wondered what your "recovery" number really means, the [recovery score explainer](/tools/recovery-score) decodes it.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: One device, one condition, measured consistently
+> EXAMPLE_DEVICE: One device, one condition, measured consistently
 > METRIC: Your own 4-week RMSSD trend (not today's absolute number)
 > STATUS: SIGNAL_OVER_NOISE
 `,

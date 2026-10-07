@@ -75,7 +75,7 @@ The primary command for building new mitochondria is the activation of the PGC-1
 > **The Logic:** NAD+ is a critical co-enzyme for energy transfer. Low NAD+ levels mean your mitochondria can't process fuel efficiently. HIIT creates a massive 'Energy Debt' that forces the body to recycle old mitochondria (Autophagy) and build a newer, more resilient power grid.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: VO2 Max Mask
+> EXAMPLE_DEVICE: VO2 Max Mask
 > METRIC: Peak Oxygen Consumption
 > STATUS: WATTAGE_INCREASED
 

@@ -78,7 +78,7 @@ This is why 16:8 is the popular entry point: a 16-hour fast reaches the start of
 **Skip fasting** during pregnancy or breastfeeding, with a history of disordered eating, with type 1 diabetes or on glucose-lowering medication without medical supervision, or if you have certain other conditions — it is a tool, not a mandate. If you take regular medication or have a health condition, check with a clinician first. Done wrong, chronic under-eating tanks sleep, hormones and [homeostasis](/glossary/homeostasis) — the opposite of the goal.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Continuous glucose monitor / morning energy log
+> EXAMPLE_DEVICE: Continuous glucose monitor / morning energy log
 > METRIC: Flatter glucose curve + stable energy across the fast
 > STATUS: METABOLIC_FLEXIBILITY_ONLINE
 `,

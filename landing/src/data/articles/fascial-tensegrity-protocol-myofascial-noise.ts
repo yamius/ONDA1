@@ -66,7 +66,7 @@ This step uses a slow exhale to help lower the system Jitter. "Vagus activation"
 **System Effect:** {{fact:claim.slowExhale}}. Slowing the breath also lowers your heart rate and releases remaining tension in the jaw and neck.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: HRV monitor / subjective tension scan
+> EXAMPLE_DEVICE: HRV monitor / subjective tension scan
 > METRIC: rMSSD, neck/shoulder tension index, breath cadence
 > STATUS: STRUCTURAL_BALANCE
 

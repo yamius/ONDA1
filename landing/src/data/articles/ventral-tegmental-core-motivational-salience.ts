@@ -96,7 +96,7 @@ To stabilize the VTA according to ONDA protocols.
 **The Logic:** The VTA learns to derive value from the processing stage itself — the deep-work loop. The reactor stops chasing micro-rewards and locks onto the long-form mission signal.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Subjective drive log / focus block timer
+> EXAMPLE_DEVICE: Subjective drive log / focus block timer
 > METRIC: Time-to-task, post-task energy, baseline mood
 > STATUS: REACTOR_STABLE
 
