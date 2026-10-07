@@ -232,7 +232,7 @@ export const levelsData: Record<number, LevelData> = {
       items: [
         { name: 'Hypothalamus', text: 'Control center for territorial behavior and hormonal balance.' },
         { name: 'Basal Ganglia', text: 'Formation of stable, "unshakeable" postures and dominance habits.' },
-        { name: 'Mirror Neurons', text: 'Your biological Wi-Fi for instantaneous reading of others\' intentions.' },
+        { name: 'Mirror Neurons', text: 'Research links them to understanding others\' actions and intentions; their exact role is still debated.' },
         { name: 'Anterior Cingulate Cortex', text: 'The detector for social signals and emotional accuracy.' },
       ],
     },

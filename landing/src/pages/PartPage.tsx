@@ -848,7 +848,7 @@ export const parts: Record<string, {
     subtitle: 'Protocol: Social Cognition and Empathic Regulation',
     metaDescription: 'Part 11: Social cognition and empathic regulation. Theory of Mind, social predictive coding. ONDA Life.',
     intro:
-      'Part 11 is the transition from self-expression to interference. In physics, this is the moment when two waves overlap, creating a new, complex pattern. In ONDA, this is the tuning of your "neural Wi-Fi." We learn to be with another in a way that ensures interaction does not turn into a conflict of interest or manipulation.\n\nAt this level, the "social brain" is activated — a sophisticated network responsible for interpersonal synchronization. The key biological challenge is the balance between maintaining autonomy ("I") and deep connection ("We").',
+      'Part 11 is the transition from self-expression to interference. In physics, this is the moment when two waves overlap, creating a new, complex pattern. In ONDA, this is the tuning of what we call, as an image, your "neural Wi-Fi." We learn to be with another in a way that ensures interaction does not turn into a conflict of interest or manipulation.\n\nAt this level, the "social brain" is activated — a sophisticated network responsible for interpersonal synchronization. The key biological challenge is the balance between maintaining autonomy ("I") and deep connection ("We").',
     protocol: {
       title: 'Biological Protocol',
       intro:
@@ -881,7 +881,7 @@ export const parts: Record<string, {
       items: [
         {
           name: 'Mirror Neurons and Theory of Mind (ToM) Network',
-          text: 'The direct resonance of actions and emotions — the foundation for instantaneous empathy. The ability of the medial Prefrontal Cortex (mPFC) to understand the perspectives, intentions, and beliefs of another person.',
+          text: 'The direct resonance of actions and emotions, which research links to understanding others\' actions and feelings, though the role of mirror neurons is still debated. The ability of the medial Prefrontal Cortex (mPFC) to understand the perspectives, intentions, and beliefs of another person.',
         },
         {
           name: 'Orbitofrontal Cortex and the Ventral Vagus',
@@ -934,7 +934,7 @@ export const parts: Record<string, {
     title: 'I',
     titleHighlight: 'Co-Create',
     subtitle: 'Protocol: Neural Synchronization and Collective Intelligence',
-    metaDescription: 'Part 12: Neural coupling and collective intelligence. Gamma sync, brain-to-brain coherence. ONDA Life.',
+    metaDescription: 'Part 12: Neural coupling and collective intelligence — what research on gamma synchrony and brain-to-brain coherence does and doesn\'t show. ONDA Life.',
     intro:
       'Part 12 is the culmination of the ONDA system\'s social evolution. We transition from "I" to "WE" without the loss of individuality, entering a state of neural coupling. This is the point where the intelligence, emotions, and meanings of a group synchronize, creating a collective flow.\n\nAt this level, the brain demonstrates the highest form of interpersonal coordination: the synchronous operation of rhythms across multiple individuals. The key biological challenge is the integration of individual consciousness into a collective neural network.',
     protocol: {
@@ -1475,9 +1475,9 @@ export const parts: Record<string, {
     titleHighlight: 'Synchronize',
     subtitle: 'Protocol: Neuroelectric Synchronization and Collective Intelligence',
     metaDescription:
-      'Part 18: Inter-brain hyperscanning, gamma rhythms, mirror neurons. The Networked Human. Master of collective intelligence. ONDA Life.',
+      'Part 18: The Networked Human — what hyperscanning research on gamma rhythms, mirror neurons and inter-brain coherence does and doesn\'t show. ONDA Life.',
     intro:
-      'Part 18 is the triumph of network-centric thinking. In science, the closest research is inter-brain hyperscanning: studies that record several people at once report that their brain activity can become more aligned during shared tasks. The findings are early, and ONDA does not record EEG. We move from "I-mode" to "Network Node" mode. This is the biological foundation for collective intelligence, where meanings and intentions are transmitted via "neural Wi-Fi," turning the group into a self-learning, synergistic entity.\n\nKey Biological Challenge: Overcoming egocentric filters to achieve "biological telepathy" and mastering the quality of one\'s own signal within the collective system.\n\nWe activate systems responsible for ultra-high-order resonance and inter-brain coherence. Gamma Rhythms (40 Hz) are the frequency at which informational streams from different brains instantaneously merge into a unified insight. The Mirror Neuron System (premotor cortex and inferior parietal lobule) provides pre-verbal understanding of the actions and intentions of partners. The Right Temporoparietal Junction (rTPJ) is a key hub for modeling the states of others and acting as a "social navigator." The Anterior Insula provides empathic fusion—you experience the state of the group as your own. The Dorsal Anterior Cingulate Cortex (dACC) maintains joint attention, turning the group into a single focus of creation.',
+      'Part 18 is the triumph of network-centric thinking. In science, the closest research is inter-brain hyperscanning: studies that record several people at once report that their brain activity can become more aligned during shared tasks. The findings are early, and ONDA does not record EEG. We move from "I-mode" to "Network Node" mode. The aim is collective intelligence: people sharing meanings and intentions so the group learns together — what we call, as an image, a "neural Wi-Fi."\n\nKey Biological Challenge: Overcoming egocentric filters to understand others better and mastering the quality of one\'s own signal within the group.\n\nResearch on social understanding points to several brain regions, and the practice aims to train the skills they are linked to. The role of Gamma Rhythms (around 40 Hz) in shared attention and insight is still debated. The Mirror Neuron System (premotor cortex and inferior parietal lobule) is linked in research to understanding others\' actions, though its exact role is debated. The Right Temporoparietal Junction (rTPJ) is studied as a hub for modeling the states of others, a kind of "social navigator." The Anterior Insula is involved in sensing bodily and emotional states, including empathy for what others feel. The Dorsal Anterior Cingulate Cortex (dACC) is linked to attention control and is studied in joint-attention tasks. ONDA does not record EEG: these practices train attention, breathing and social skills, not brain rhythms directly.',
     protocol: {
       title: 'Biological Protocol',
       intro: 'This protocol transforms you into a conductor of the collective mind:',

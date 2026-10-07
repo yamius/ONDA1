@@ -82,7 +82,7 @@
         "items": [
           { "name": "Hypothalamus", "text": "Control center for territorial behavior and hormonal balance." },
           { "name": "Basal Ganglia", "text": "Formation of stable, \"unshakeable\" postures and dominance habits." },
-          { "name": "Mirror Neurons", "text": "The brain's system for reading others' intentions and states." },
+          { "name": "Mirror Neurons", "text": "Research links them to understanding others' actions and intentions; their exact role is still debated." },
           { "name": "Anterior Cingulate Cortex", "text": "The detector for social signals and emotional accuracy." }
         ]
       },
