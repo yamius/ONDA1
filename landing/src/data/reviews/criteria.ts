@@ -543,7 +543,7 @@ const PEMF_CRITERIA: Criterion[] = [
     label: 'Waveform and research evidence',
     weight: 0.2,
     description:
-      'Whether the specific waveforms and frequencies used are tied to published research (Bemer biorhythmic pulse, FDA-cleared bone-healing waveforms, Schumann-resonance frequencies) or are proprietary patterns without independent backing.',
+      'Whether the specific waveforms and frequencies used are tied to controlled human trials of that device or protocol, or are proprietary patterns without independent backing. Manufacturer counts of studies, Schumann-resonance settings and status borrowed from medical devices (such as prescription bone-growth stimulators) do not count as evidence.',
   },
   {
     id: 'build',

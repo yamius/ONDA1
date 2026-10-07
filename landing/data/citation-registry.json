@@ -417,6 +417,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1002/14651858.cd008471.pub2": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Electromagnetic field stimulation for treating delayed union or non-union of long bone fractures in adults",
+   "firstAuthor": "Griffin",
+   "authors": [
+    "Griffin",
+    "Costa",
+    "Parsons",
+    "Smith"
+   ],
+   "year": 2011,
+   "journal": "Cochrane Database of Systematic Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1002/14651858.cd010789.pub2": {
    "kind": "doi",
    "valid": true,
@@ -447,6 +463,24 @@
    "journal": "The Anatomical Record",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1002/bem.22127": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Pulsed electromagnetic field therapy in the treatment of pain and other symptoms in fibromyalgia: A randomized controlled study",
+   "firstAuthor": "Multanen",
+   "authors": [
+    "Multanen",
+    "Häkkinen",
+    "Heikkinen",
+    "Kautiainen",
+    "Mustalampi",
+    "Ylinen"
+   ],
+   "year": 2018,
+   "journal": "Bioelectromagnetics",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1002/clc.23077": {
    "kind": "doi",
@@ -1299,6 +1333,21 @@
    "journal": "Brain, Behavior, and Immunity",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1016/j.biopsych.2010.02.017": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Transcranial Low Voltage Pulsed Electromagnetic Fields in Patients with Treatment-Resistant Depression",
+   "firstAuthor": "Martiny",
+   "authors": [
+    "Martiny",
+    "Lunde",
+    "Bech"
+   ],
+   "year": 2010,
+   "journal": "Biological Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/j.biopsych.2015.06.016": {
    "kind": "doi",
@@ -4385,6 +4434,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1038/srep31724": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of Electrical Stimulators for Bone Healing: A Meta-Analysis of Randomized Sham-Controlled Trials",
+   "firstAuthor": "Aleem",
+   "authors": [
+    "Aleem",
+    "Aleem",
+    "Evaniew",
+    "Busse",
+    "Yaszemski",
+    "Agarwal",
+    "Einhorn",
+    "Bhandari"
+   ],
+   "year": 2016,
+   "journal": "Scientific Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1053/j.gastro.2006.11.002": {
    "kind": "doi",
    "valid": true,
@@ -5321,6 +5390,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1093/ptj/pzaa054": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of Pulsed Electromagnetic Field Therapy on Pain, Stiffness, Physical Function, and Quality of Life in Patients With Osteoarthritis: A Systematic Review and Meta-Analysis of Randomized Placebo-Controlled Trials",
+   "firstAuthor": "Yang",
+   "authors": [
+    "Yang",
+    "He",
+    "Ye",
+    "Perry",
+    "He"
+   ],
+   "year": 2020,
+   "journal": "Physical Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1093/scan/nsw154": {
    "kind": "doi",
    "valid": true,
@@ -5541,6 +5627,21 @@
    "journal": "Pain",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1097/md.0000000000021449": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Analgesic effect of pulsed electromagnetic fields for mammaplasty",
+   "firstAuthor": "Zhang",
+   "authors": [
+    "Zhang",
+    "Ding",
+    "Ji"
+   ],
+   "year": 2020,
+   "journal": "Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1097/psy.0000000000001065": {
    "kind": "doi",
@@ -7063,6 +7164,28 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1177/02692155221074052": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of pulsed electromagnetic field on pain and physical function in patients with low back pain: A systematic review and meta-analysis",
+   "firstAuthor": "Sun",
+   "authors": [
+    "Sun",
+    "Huang",
+    "Wang",
+    "Fu",
+    "Zhang",
+    "Cheng",
+    "Pei",
+    "Wang",
+    "He",
+    "Wei"
+   ],
+   "year": 2022,
+   "journal": "Clinical Rehabilitation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1177/039463200802100113": {
    "kind": "doi",
    "valid": true,
@@ -7232,6 +7355,24 @@
    "reason": "Wrong paper: Jarl G 2022, J Diabetes Sci Technol, diabetic foot-ulcer offloading — was cited as a FreeStyle Libre 3 accuracy study (use PMID 36877403)",
    "source": "manual",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1177/1947603520931168": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Pain and Functional Scores in Patients Affected by Knee OA after Treatment with Pulsed Electromagnetic and Magnetic Fields: A Meta-Analysis",
+   "firstAuthor": "Viganò",
+   "authors": [
+    "Viganò",
+    "Perucca Orfei",
+    "Ragni",
+    "Colombini",
+    "de Girolamo"
+   ],
+   "year": 2020,
+   "yearAlt": 2021,
+   "journal": "CARTILAGE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1177/2047487317702044": {
    "kind": "doi",
@@ -7464,6 +7605,33 @@
    ],
    "year": 2016,
    "journal": "BMC Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1192/j.eurpsy.2020.3": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Transcranial pulsed electromagnetic fields for treatment-resistant depression: A multicenter 8-week single-arm cohort study",
+   "firstAuthor": "Larsen",
+   "authors": [
+    "Larsen",
+    "Licht",
+    "Nielsen",
+    "Lolk",
+    "Borck",
+    "Sørensen",
+    "Christensen",
+    "Bizik",
+    "Ravn",
+    "Martiny",
+    "Vinberg",
+    "Jankuviené",
+    "Jørgensen",
+    "Videbech",
+    "Bech"
+   ],
+   "year": 2020,
+   "journal": "European Psychiatry",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
@@ -8117,6 +8285,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1515/jcim-2013-0037": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effects of the “physical BEMER<sup>®</sup> vascular therapy”, a method for the physical stimulation of the vasomotion of precapillary microvessels in case of impaired microcirculation, on sleep, pain and quality of life of patients with different clinical pictures on the basis of three scientifically validated scales",
+   "firstAuthor": "Bohn",
+   "authors": [
+    "Bohn",
+    "Hess",
+    "Burger"
+   ],
+   "year": 2013,
+   "journal": "jcim",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1519/1533-4287(1997)011<0211:taopef>2.3.co;2": {
    "kind": "doi",
    "valid": true,
@@ -8553,6 +8736,39 @@
    "journal": "Chronobiology International",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3109/15368378.2013.776335": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Nonthermal electromagnetic fields: From first messenger to therapeutic applications",
+   "firstAuthor": "Pilla",
+   "authors": [
+    "Pilla"
+   ],
+   "year": 2013,
+   "journal": "Electromagnetic Biology and Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.3233/ch-209224": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The influence of pulsed electromagnetic field therapy (PEMFT) on cutaneous blood flow in healthy volunteers",
+   "firstAuthor": "Biermann",
+   "authors": [
+    "Biermann",
+    "Sommerauer",
+    "Diesch",
+    "Koch",
+    "Jung",
+    "Kehrer",
+    "Prantl",
+    "Taeger"
+   ],
+   "year": 2021,
+   "journal": "Clinical Hemorheology and Microcirculation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.3389/fcvm.2019.00062": {
    "kind": "doi",
@@ -9196,6 +9412,22 @@
    ],
    "year": 2021,
    "journal": "Frontiers in Sports and Active Living",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.3390/bioengineering11121223": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Augmentation of Deficient Bone Healing by Pulsed Electromagnetic Fields—From Mechanisms to Clinical Outcomes",
+   "firstAuthor": "Kaadan",
+   "authors": [
+    "Kaadan",
+    "Salati",
+    "Setti",
+    "Aaron"
+   ],
+   "year": 2024,
+   "journal": "Bioengineering",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
@@ -11406,6 +11638,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:20385376": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Transcranial low voltage pulsed electromagnetic fields in patients with treatment-resistant depression.",
+   "firstAuthor": "Martiny",
+   "authors": [
+    "Martiny",
+    "Lunde",
+    "Bech"
+   ],
+   "year": 2010,
+   "journal": "Biol Psychiatry",
+   "doi": "10.1016/j.biopsych.2010.02.017",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:20438143": {
    "kind": "pmid",
    "valid": true,
@@ -11657,6 +11905,23 @@
    "doi": "10.1016/j.ijpsycho.2011.02.004",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:21491410": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Electromagnetic field stimulation for treating delayed union or non-union of long bone fractures in adults.",
+   "firstAuthor": "Griffin",
+   "authors": [
+    "Griffin",
+    "Costa",
+    "Parsons",
+    "Smith"
+   ],
+   "year": 2011,
+   "journal": "Cochrane Database Syst Rev",
+   "doi": "10.1002/14651858.CD008471.pub2",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:21574126": {
    "kind": "pmid",
@@ -12265,6 +12530,20 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:23675615": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Nonthermal electromagnetic fields: from first messenger to therapeutic applications.",
+   "firstAuthor": "Pilla",
+   "authors": [
+    "Pilla"
+   ],
+   "year": 2013,
+   "journal": "Electromagn Biol Med",
+   "doi": "10.3109/15368378.2013.776335",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:23738149": {
    "kind": "pmid",
    "valid": true,
@@ -12409,6 +12688,22 @@
    "doi": "10.1007/s40279-013-0083-4",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:23940071": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effects of the \"physical BEMER® vascular therapy\", a method for the physical stimulation of the vasomotion of precapillary microvessels in case of impaired microcirculation, on sleep, pain and quality of life of patients with different clinical pictures on the basis of three scientifically validated scales.",
+   "firstAuthor": "Bohn",
+   "authors": [
+    "Bohn",
+    "Hess",
+    "Burger"
+   ],
+   "year": 2013,
+   "journal": "J Complement Integr Med",
+   "doi": "10.1515/jcim-2013-0037",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:24126130": {
    "kind": "pmid",
@@ -13575,6 +13870,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:27539550": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of Electrical Stimulators for Bone Healing: A Meta-Analysis of Randomized Sham-Controlled Trials.",
+   "firstAuthor": "Aleem",
+   "authors": [
+    "Aleem",
+    "Aleem",
+    "Evaniew",
+    "Busse",
+    "Yaszemski",
+    "Agarwal",
+    "Einhorn",
+    "Bhandari"
+   ],
+   "year": 2016,
+   "journal": "Sci Rep",
+   "doi": "10.1038/srep31724",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:27557747": {
    "kind": "pmid",
    "valid": true,
@@ -14484,6 +14800,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:29709070": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Pulsed electromagnetic field therapy in the treatment of pain and other symptoms in fibromyalgia: A randomized controlled study.",
+   "firstAuthor": "Multanen",
+   "authors": [
+    "Multanen",
+    "Häkkinen",
+    "Heikkinen",
+    "Kautiainen",
+    "Mustalampi",
+    "Ylinen"
+   ],
+   "year": 2018,
+   "journal": "Bioelectromagnetics",
+   "doi": "10.1002/bem.22127",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:29849692": {
    "kind": "pmid",
    "valid": true,
@@ -15302,6 +15637,34 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:32093804": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Transcranial pulsed electromagnetic fields for treatment-resistant depression: A multicenter 8-week single-arm cohort study.",
+   "firstAuthor": "Larsen",
+   "authors": [
+    "Larsen",
+    "Licht",
+    "Nielsen",
+    "Lolk",
+    "Borck",
+    "Sørensen",
+    "Christensen",
+    "Bizik",
+    "Ravn",
+    "Martiny",
+    "Vinberg",
+    "Jankuviené",
+    "Jørgensen",
+    "Videbech",
+    "Bech"
+   ],
+   "year": 2020,
+   "journal": "Eur Psychiatry",
+   "doi": "10.1192/j.eurpsy.2020.3",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:32176800": {
    "kind": "pmid",
    "valid": true,
@@ -15417,6 +15780,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:32251502": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of Pulsed Electromagnetic Field Therapy on Pain, Stiffness, Physical Function, and Quality of Life in Patients With Osteoarthritis: A Systematic Review and Meta-Analysis of Randomized Placebo-Controlled Trials.",
+   "firstAuthor": "Yang",
+   "authors": [
+    "Yang",
+    "He",
+    "Ye",
+    "Perry",
+    "He"
+   ],
+   "year": 2020,
+   "journal": "Phys Ther",
+   "doi": "10.1093/ptj/pzaa054",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:32266329": {
    "kind": "pmid",
    "valid": true,
@@ -15502,6 +15883,25 @@
    "doi": "10.3389/fnins.2020.00284",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:32508140": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Pain and Functional Scores in Patients Affected by Knee OA after Treatment with Pulsed Electromagnetic and Magnetic Fields: A Meta-Analysis.",
+   "firstAuthor": "Viganò",
+   "authors": [
+    "Viganò",
+    "Perucca Orfei",
+    "Ragni",
+    "Colombini",
+    "de Girolamo"
+   ],
+   "year": 2021,
+   "yearAlt": 2020,
+   "journal": "Cartilage",
+   "doi": "10.1177/1947603520931168",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:32528330": {
    "kind": "pmid",
@@ -15607,6 +16007,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:32871867": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Analgesic effect of pulsed electromagnetic fields for mammaplasty: A meta-analysis of randomized controlled studies.",
+   "firstAuthor": "Zhang",
+   "authors": [
+    "Zhang",
+    "Ding",
+    "Ji"
+   ],
+   "year": 2020,
+   "journal": "Medicine (Baltimore)",
+   "doi": "10.1097/MD.0000000000021449",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:32986097": {
    "kind": "pmid",
    "valid": true,
@@ -15699,6 +16115,27 @@
    "doi": "10.1038/s41551-020-00640-6",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:33216020": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The influence of pulsed electromagnetic field therapy (PEMFT) on cutaneous blood flow in healthy volunteers1.",
+   "firstAuthor": "Biermann",
+   "authors": [
+    "Biermann",
+    "Sommerauer",
+    "Diesch",
+    "Koch",
+    "Jung",
+    "Kehrer",
+    "Prantl",
+    "Taeger"
+   ],
+   "year": 2020,
+   "journal": "Clin Hemorheol Microcirc",
+   "doi": "10.3233/CH-209224",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:33299095": {
    "kind": "pmid",
@@ -16169,6 +16606,29 @@
    "doi": "10.2196/27487",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:35077249": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of pulsed electromagnetic field on pain and physical function in patients with low back pain: A systematic review and meta-analysis.",
+   "firstAuthor": "Sun",
+   "authors": [
+    "Sun",
+    "Huang",
+    "Wang",
+    "Fu",
+    "Zhang",
+    "Cheng",
+    "Pei",
+    "Wang",
+    "He",
+    "Wei"
+   ],
+   "year": 2022,
+   "journal": "Clin Rehabil",
+   "doi": "10.1177/02692155221074052",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:35147898": {
    "kind": "pmid",
@@ -17168,6 +17628,23 @@
    "doi": "10.1016/j.amjoto.2024.104545",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:39768041": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Augmentation of Deficient Bone Healing by Pulsed Electromagnetic Fields-From Mechanisms to Clinical Outcomes.",
+   "firstAuthor": "Kaadan",
+   "authors": [
+    "Kaadan",
+    "Salati",
+    "Setti",
+    "Aaron"
+   ],
+   "year": 2024,
+   "journal": "Bioengineering (Basel)",
+   "doi": "10.3390/bioengineering11121223",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:39879231": {
    "kind": "pmid",

@@ -78,10 +78,6 @@ Full details in our [Qi Coil review](/reviews/qi-coil).
 
 For consumer PEMF in general, the best-studied everyday use is joint pain: a Cochrane review of small trials in knee osteoarthritis found electromagnetic field therapy may reduce pain moderately (Li 2013). Claims about sleep, energy or “detox” are not well supported, and with a heated mat much of what you feel is likely the warmth. Rife machines have no reliable evidence behind them (Cancer Research UK).
 
-## Is it safe?
-
-Low-intensity PEMF mats appear low-risk for most healthy adults. Do not use PEMF with a pacemaker, defibrillator or other implanted electronic device, and ask a doctor first if you are pregnant or have epilepsy. Never use any frequency device instead of medical treatment.
-
 ## Related comparisons
 
 [Healthy Wave vs HigherDOSE PEMF Mat](/reviews/vs/healthy-wave-multi-wave-vs-higherdose-pemf-mat), [Bemer vs Healthy Wave](/reviews/vs/bemer-classic-evo-vs-healthy-wave-multi-wave), or the full [best PEMF devices of 2026](/reviews/compare/best-pemf-devices-2026).

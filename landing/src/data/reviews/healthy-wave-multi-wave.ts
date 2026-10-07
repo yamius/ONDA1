@@ -9,13 +9,13 @@ const healthyWaveMultiWave: ToolReview = {
   description:
     'Healthy Wave Multi-Wave PEMF mat review (2026): PEMF, far-infrared heat, red light, negative ions and crystals in one mat, $995–$2,495. Honest evidence, safety, and how it compares with Bemer, OMI and HigherDOSE.',
   verdict:
-    'Best multi-modality PEMF mat — PEMF + far-infrared + red light at sub-Bemer pricing. Lacks Bemer’s research moat but covers more recovery modalities per session.',
+    'Best multi-modality PEMF mat — PEMF + far-infrared + red light at sub-Bemer pricing. No trials of the mat itself, but it covers more recovery modalities per session.',
   summary:
     'Healthy Wave Multi-Wave is a top-ranked PEMF mat across independent review sites. The differentiator is stacking — PEMF, far-infrared heat, red light, negative ions and crystals in a single mat. The Multi-Wave controller runs 1–30 Hz with three pulse widths (six waveforms), 12 presets or custom programmes. Not a Bemer in research backing, but a much cheaper way to get several recovery modalities at once.',
   overallScore: 8.4,
   scores: [
     { criterionId: 'field-strength', score: 8.5, note: 'Configurable PEMF intensity, 1–30 Hz; maker quotes up to 5+ gauss peak and about 1.5 gauss average at the surface. Higher than Bemer, but still low-intensity next to clinical coil systems.' },
-    { criterionId: 'waveform-evidence', score: 7.5, note: 'Uses common PEMF frequencies (including the 7.83 Hz Schumann band) from the general PEMF literature. No device-specific trials and no proprietary single-waveform research moat like Bemer.' },
+    { criterionId: 'waveform-evidence', score: 7.5, note: 'Uses common PEMF frequencies (including the 7.83 Hz Schumann band) from the general PEMF literature. No device-specific trials.' },
     { criterionId: 'build', score: 8.0, note: 'Folding three-section mat, 5-year limited warranty (plus 3 months when bought direct), 90-day trial. Customer service track record positive.' },
     { criterionId: 'programmability', score: 9.0, note: 'Best programmability in category — three pulse widths, six waveforms, 12 presets or custom programmes; PEMF, heat and red light controlled independently.' },
     { criterionId: 'form-factor', score: 8.5, note: 'Full-body mat with PEMF + far-infrared + red light + negative ions + crystals. Four Multi-Wave sizes from 32×20 in to 74×28 in. One mat replaces several single-modality devices.' },
@@ -28,7 +28,7 @@ const healthyWaveMultiWave: ToolReview = {
     '5-year warranty and 90-day trial',
   ],
   cons: [
-    'No proprietary research moat like Bemer biorhythmic signal — and no trials of this mat itself',
+    'No trials of this mat itself',
     'Larger and heavier than single-modality PEMF mats (full size about 26 lb)',
     'Controller learning curve — more parameters = more user setup',
     'Some users report the IR heat is more dominant than the PEMF signal',
@@ -66,7 +66,7 @@ There is no subscription. Running cost is only electricity.
 
 ## What are the downsides of Healthy Wave Multi-Wave?
 
-There is no single-waveform research moat. Bemer has many studies on its specific signal; Healthy Wave uses common PEMF frequencies without its own trials. The full-size mat is large and heavy (about 26 lb). More settings mean more setup. And some users say the heat dominates over the PEMF.
+There are no trials of this mat. Bemer cites many studies of its own signal, though most are small or manufacturer-linked; Healthy Wave uses common PEMF frequencies without its own trials. The full-size mat is large and heavy (about 26 lb). More settings mean more setup. And some users say the heat dominates over the PEMF.
 
 ## Who should buy it — and who should not?
 
@@ -76,14 +76,13 @@ There is no single-waveform research moat. Bemer has many studies on its specifi
 
 ## Is it safe?
 
-For most healthy adults, a low-intensity PEMF mat appears low-risk. Do not use the PEMF feature with a pacemaker, defibrillator or another implanted electronic device — Healthy Wave itself warns about interference. Ask a doctor first if you are pregnant, have epilepsy, or are being treated for a medical condition. Because the mat gets hot, take care if you have reduced sensation (for example, diabetic neuropathy) and keep sessions short at first. PEMF should not replace medical treatment.
+Because the mat gets hot, take care if you have reduced sensation (for example, diabetic neuropathy) and keep sessions short at first.
 
 ---
 
 ## Background reading
 
-- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — how applied electromagnetic fields shape tissue repair
-- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid) — PEMF and red light as adjunct cellular-energy modalities
+- [PEMF therapy — what the evidence shows](/science/evidence/pemf) — what is shown in people, what comes from cell studies, and what FDA registration, clearance and approval mean
 - [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 `,
   references: [
@@ -96,7 +95,7 @@ For most healthy adults, a low-intensity PEMF mat appears low-risk. Do not use t
   faq: [
     { q: "What does the Healthy Wave Multi-Wave PEMF mat do?", a: "The Healthy Wave Multi-Wave combines PEMF, far-infrared heat, red light, negative ions and heated crystals in one full-body mat. Its controller offers 1-30 Hz, three pulse widths (six waveforms), 12 presets or custom programmes. ONDA scores it 8.4/10 overall." },
     { q: "How much does the Healthy Wave Multi-Wave mat cost?", a: "The Healthy Wave Multi-Wave costs $995-$2,495 depending on size; the full-size Pro Multi-Wave (74x28 in) is $2,495 with the controller. That is less than half the Bemer set price, with a 5-year limited warranty and a 90-day trial." },
-    { q: "How does the Healthy Wave Multi-Wave compare to Bemer?", a: "The Healthy Wave Multi-Wave costs less than half a Bemer set and covers several modalities (PEMF, infrared, red light) versus Bemer’s single signal. However, it lacks Bemer’s research on its own specific signal, so Bemer remains the reference for waveform-research backing." },
+    { q: "How does the Healthy Wave Multi-Wave compare to Bemer?", a: "The Healthy Wave Multi-Wave costs less than half a Bemer set and covers several modalities (PEMF, infrared, red light) versus Bemer’s single signal. Bemer has more studies of its own signal, though most are small or manufacturer-linked, and neither mat has independent trials showing a health benefit." },
     { q: "Does the Healthy Wave PEMF mat really work?", a: "There are no independent clinical trials of the Healthy Wave mat itself. For PEMF in general, the best evidence is for joint pain: a Cochrane review found it may moderately reduce osteoarthritis pain. Much of what users feel is likely the far-infrared heat. Treat it as a relaxing recovery tool, not a proven treatment." },
     { q: "Is a Healthy Wave PEMF mat safe?", a: "For most healthy adults it appears low-risk. Do not use the PEMF feature with a pacemaker, defibrillator or other electronic implant, and ask a doctor first if you are pregnant, have epilepsy or a medical condition. Be careful with the heat if you have reduced skin sensation." },
     { q: "Healthy Wave vs HigherDOSE PEMF mat — which is better?", a: "Healthy Wave Multi-Wave ($995-$2,495) adds red light, more waveforms and finer controls. HigherDOSE ($1,295 full size) is simpler and more consumer-friendly. Choose Healthy Wave for control and more modalities, HigherDOSE for ease of use." },

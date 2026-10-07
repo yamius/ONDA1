@@ -7,22 +7,22 @@ const omiFullBodyMat: ToolReview = {
   category: 'pemf',
   productType: 'Mid-tier full-body PEMF mat',
   description:
-    'ONDA review of the OMI Full Body PEMF Mat — popular mid-tier mat backed by FDA bone-healing waveform research. Scored on field strength, waveform research, build and value.',
+    'ONDA review of the OMI Full Body PEMF Mat — popular mid-tier mat with simple presets. Not FDA-cleared for bone healing. Scored on field strength, waveform research, build and value.',
   verdict:
-    'Solid mid-tier PEMF mat — FDA-cleared bone-healing waveform, simple operation, accessible pricing. Lacks Bemer’s research moat or multi-modality stacking.',
+    'Solid mid-tier PEMF mat — simple operation, accessible pricing. Not FDA-cleared for bone healing, no trials of the mat itself, no multi-modality stacking.',
   summary:
-    'OMI Full Body Mat is the mid-tier PEMF reference — single-modality PEMF mat using the FDA-cleared bone-healing waveform research band, simple operation, and accessible pricing. No multi-modality stacking, no proprietary research moat. The right product for users who want straightforward PEMF mat use at $1,500–$2,000.',
+    'OMI Full Body Mat is the mid-tier PEMF reference — single-modality PEMF mat with simple preset operation and accessible pricing. OMI is not FDA-cleared for bone healing: medical bone-growth stimulators are prescription devices with their own trials, and a consumer mat using similar frequencies does not inherit their status or evidence. No multi-modality stacking, no trials of the mat itself. The right product for users who want straightforward PEMF mat use at $1,500–$2,000.',
   overallScore: 7.0,
   scores: [
-    { criterionId: 'field-strength', score: 7.5, note: 'Moderate field intensity in the FDA bone-healing research band. Documented usable continuous output.' },
-    { criterionId: 'waveform-evidence', score: 7.5, note: 'Uses FDA-cleared bone-healing waveform research band. No proprietary single-waveform research like Bemer.' },
+    { criterionId: 'field-strength', score: 7.5, note: 'Moderate field intensity; the maker documents usable continuous output.' },
+    { criterionId: 'waveform-evidence', score: 7.5, note: 'Uses common PEMF frequencies. OMI is not FDA-cleared for bone healing, and we found no trials of the mat itself.' },
     { criterionId: 'build', score: 7.5, note: 'Solid mat construction, 5-year warranty. Multi-year reliability track record positive in user reviews.' },
     { criterionId: 'programmability', score: 6.5, note: 'Simple preset operation — limited parameter exposure compared to Healthy Wave. Black-box-ish controller.' },
     { criterionId: 'form-factor', score: 7.5, note: 'Full-body mat, single-modality PEMF. Optional pillow applicator at upsell. No coil/spot system.' },
-    { criterionId: 'value', score: 7.5, note: '$1,500–$2,000 — accessible mid-tier pricing. Solid value for users wanting straightforward PEMF without paying for multi-modality or research moat.' },
+    { criterionId: 'value', score: 7.5, note: '$1,500–$2,000 — accessible mid-tier pricing. Solid value for users wanting straightforward PEMF without paying for multi-modality or a premium brand.' },
   ],
   pros: [
-    'FDA bone-healing waveform research band',
+    'Moderate field intensity with documented continuous output',
     'Simple operation — easy daily use',
     '5-year mat warranty',
     'Accessible mid-tier pricing ($1,500–$2,000)',
@@ -30,10 +30,10 @@ const omiFullBodyMat: ToolReview = {
   cons: [
     'Limited parameter exposure — black-box presets',
     'Single-modality only (no IR or red light stacking)',
-    'No proprietary research moat',
+    'Not FDA-cleared for bone healing; no trials of the mat itself',
     'Less brand recognition than Bemer or HigherDOSE',
   ],
-  bestFor: 'Best for users wanting straightforward single-modality PEMF mat use at accessible pricing without paying for multi-modality stacking or premium research moats.',
+  bestFor: 'Best for users wanting straightforward single-modality PEMF mat use at accessible pricing without paying for multi-modality stacking or a premium brand.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from OMI product documentation and independent 2026 PEMF mat reviews. Not hands-on tested by ONDA.',
@@ -42,22 +42,21 @@ const omiFullBodyMat: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-OMI Full Body Mat is the mid-tier PEMF reference — straightforward single-modality PEMF mat using FDA bone-healing waveform research, simple daily-use operation, and accessible $1,500–$2,000 pricing.
+OMI Full Body Mat is the mid-tier PEMF reference — straightforward single-modality PEMF mat with simple daily-use operation and accessible $1,500–$2,000 pricing. It is not FDA-cleared for bone healing — that status belongs to prescription bone-growth stimulators, not to consumer mats.
 
 ## What are the downsides of OMI Full Body PEMF Mat?
 
-No multi-modality stacking, no proprietary research moat, limited parameter exposure. Users wanting IR + red light + PEMF stacking should look at Healthy Wave; users wanting research-backed proprietary waveforms should look at Bemer.
+No multi-modality stacking, no trials of the mat itself, limited parameter exposure. Users wanting IR + red light + PEMF stacking should look at Healthy Wave; users wanting a proprietary signal should look at Bemer.
 
 ## Who should buy OMI Full Body PEMF Mat?
 
-Choose OMI Full Body Mat for straightforward mid-tier single-modality PEMF at accessible pricing. For multi-modality, Healthy Wave Multi-Wave. For Bemer waveform research, Bemer Classic Evo. For consumer-brand polish, HigherDOSE PEMF Mat.
+Choose OMI Full Body Mat for straightforward mid-tier single-modality PEMF at accessible pricing. For multi-modality, Healthy Wave Multi-Wave. For Bemer’s proprietary signal, Bemer Classic Evo. For consumer-brand polish, HigherDOSE PEMF Mat.
 
 ---
 
 ## Background reading
 
-- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
-- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
+- [PEMF therapy — what the evidence shows](/science/evidence/pemf) — what is shown in people, what comes from cell studies, and what FDA registration, clearance and approval mean
 `,
   references: [
     { label: 'OMI — official site', url: 'https://www.omimatusa.com/' },
@@ -65,12 +64,12 @@ Choose OMI Full Body Mat for straightforward mid-tier single-modality PEMF at ac
   relatedSlugs: ['healthy-wave-multi-wave', 'higherdose-pemf-mat', 'earthpulse-sleep-on-command'],
   publishOn: '2026-06-22',
   faq: [
-    { q: "Is the OMI Full Body PEMF Mat worth it?", a: "The OMI mat is worth it if you want straightforward, single-modality PEMF at accessible pricing. It uses the FDA bone-healing waveform research band, is simple for daily use, and has a 5-year mat warranty. It lacks parameter control, IR or red light stacking, and a proprietary research moat." },
+    { q: "Is the OMI Full Body PEMF Mat worth it?", a: "The OMI mat is worth it if you want straightforward, single-modality PEMF at accessible pricing. It is simple for daily use and has a 5-year mat warranty, but it is not FDA-cleared for bone healing and has no trials of its own. It lacks parameter control and IR or red light stacking." },
     { q: "How much does the OMI Full Body PEMF Mat cost?", a: "The OMI full-body mat with controller is listed at $1,750, within a mid-tier range of $1,500 to $2,000, and it comes with a 5-year mat warranty. There is no IR or red light stacking at that price." },
-    { q: "What are the downsides of the OMI Full Body PEMF Mat?", a: "The OMI mat relies on black-box presets with limited parameter exposure, is single-modality with no IR or red light stacking, has no proprietary research moat, and carries less brand recognition than Bemer or HigherDOSE. It is a simple, single-purpose mat." },
+    { q: "What are the downsides of the OMI Full Body PEMF Mat?", a: "The OMI mat relies on black-box presets with limited parameter exposure, is single-modality with no IR or red light stacking, has no trials of the mat itself, and carries less brand recognition than Bemer or HigherDOSE. It is a simple, single-purpose mat." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-06-22',
+  dateModified: '2026-10-07',
 }
 
 export default omiFullBodyMat

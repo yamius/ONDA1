@@ -2464,6 +2464,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1584,
     "height": 672
   },
+  "/images/science/evidence-pemf.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-pemf.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-pemf.webp": {
+    "width": 1584,
+    "height": 672
+  },
   "/images/science/evidence-red-light-therapy.avif": {
     "width": 1584,
     "height": 672
