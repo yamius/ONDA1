@@ -26,7 +26,7 @@ const article: Article = {
     linkText: 'See it live →',
   },
   content: `
-Not all breathwork calms you down — and confusing the two is a common mistake. In the yogic tradition of pranayama, techniques split into two opposite categories: **fast pranayama** (like Kapalabhati and Bhastrika) energizes you by activating the sympathetic "fight or flight" system, while **slow pranayama** (like Nadi Shodhana and Bhramari) calms you by activating the parasympathetic "rest and digest" system. Indian research comparing them found that the beneficial calming effects on cardiovascular parameters appear mainly after *slow* pranayama, not fast — while fast pranayama produces arousal and alertness instead. If your goal is calm, breathing faster is not "more" breathwork; it's the opposite tool.
+Not all breathwork calms you down — and confusing the two is a common mistake. In the yogic tradition of pranayama, techniques split into two opposite categories: **fast pranayama** (like Kapalabhati and Bhastrika) energizes you by activating the sympathetic "fight or flight" system, while **slow pranayama** (like Nadi Shodhana and Bhramari) calms you, shifting you toward the "rest and digest" state. Indian research comparing them found that the beneficial calming effects on cardiovascular parameters appear mainly after *slow* pranayama, not fast — while fast pranayama produces arousal and alertness instead. If your goal is calm, breathing faster is not "more" breathwork; it's the opposite tool.
 
 ## What is the difference between fast and slow pranayama?
 
@@ -41,7 +41,7 @@ The mistake many people make is treating "breathwork" as automatically relaxing.
 
 Slow pranayama is better for the body's stress response: in an Indian comparison, both fast and slow pranayama reduced perceived stress, but the beneficial effects on cardiovascular parameters (heart rate, blood pressure) appeared **only after slow pranayama, not fast**. The slow techniques produced the parasympathetic shift; the fast ones produced arousal.
 
-The mechanism follows the [breathing rate](/science/measurements/respiratory-rate) directly. [Slow breathing](/science/evidence/slow-breathing) — around six breaths per minute or fewer — lengthens the exhale and engages the baroreflex, raising heart rate variability (HRV), including its vagally mediated part (see [vagus nerve](/glossary/vagus-nerve)). Fast, forceful breathing does the reverse: it drives sympathetic activation, useful for waking up and energizing, but not for calming down. So the same word, "pranayama," covers two physiologically opposite tools.
+The mechanism follows the [breathing rate](/science/measurements/respiratory-rate) directly. [Slow breathing](/science/evidence/slow-breathing) — around six breaths per minute or fewer — lengthens the exhale and engages the baroreflex, raising heart rate variability (HRV), including its vagally mediated part (see [vagus nerve](/glossary/vagus-nerve)). Fast, forceful breathing does the reverse: it drives sympathetic activation — often used for waking up and feeling energized, but not for calming down. So the same word, "pranayama," covers two physiologically opposite tools.
 
 ## When should you use fast vs. slow pranayama?
 
@@ -55,6 +55,7 @@ Match the technique to what you actually need:
 **Use fast pranayama to energize and focus:**
 - Kapalabhati or Bhastrika — in the morning, or when you need alertness. ([Sudarshan Kriya](/articles/sudarshan-kriya-yoga-breathing) deliberately combines both families in one sequence.)
 - Not before bed, and not to calm anxiety — it will push the wrong way.
+- Sitting down, on a safe surface — never in or near water and never while driving, because fast breathing can cause light-headedness or fainting. If you have epilepsy, heart disease or high blood pressure, or are pregnant, talk to a doctor first ([fast breathing: what the evidence shows](/science/evidence/fast-breathing)).
 
 A simple rule: if you want the brake, breathe slow with a long exhale. If you want the gas, breathe fast and forceful. Both are legitimate; the error is using one when you need the other. For an even faster brake in an acute moment, a [physiological sigh](/articles/physiological-sigh) beats any sustained practice.
 

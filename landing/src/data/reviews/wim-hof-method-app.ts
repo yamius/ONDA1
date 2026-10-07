@@ -16,7 +16,7 @@ const wimHofMethodApp: ToolReview = {
   scores: [
     { criterionId: 'session-library', score: 7.0, note: 'Structured Wim Hof breath rounds at varying levels, plus cold-exposure protocols and certified-instructor course modules. Library narrow by design — this is the Wim Hof reference.' },
     { criterionId: 'technique-coverage', score: 5.5, note: 'Single-method focus — Wim Hof rounds dominate. Some adjunct content (yoga, meditation, cold protocols) but no Buteyko / 4-7-8 / cyclic sighing depth.' },
-    { criterionId: 'evidence-grounding', score: 8.0, note: 'Cites the Radboud University Wim Hof published studies (immune-response, autonomic-system modulation) and engages credibly with the peer-reviewed evidence on this specific method.' },
+    { criterionId: 'evidence-grounding', score: 8.0, note: 'Cites the Radboud University Wim Hof published studies (immune-response, autonomic-system modulation) on this specific method — small laboratory studies, mostly in healthy young men, not evidence of a treatment.' },
     { criterionId: 'app-experience', score: 7.5, note: 'Clean UI, structured progression through levels. Course-style content with Wim Hof video. Less polished than Othership; more functional than budget apps.' },
     { criterionId: 'biofeedback', score: 6.0, note: 'Breath-hold timer with personal-record tracking. Apple Health basic. No HRV-driven session adaptation.' },
     { criterionId: 'value', score: 7.5, note: '$42.99/year (Supporter Yearly) or $5.99/month — the cheapest of the big breathwork subscriptions; paid courses such as the 30-day audio challenge are extra.' },
@@ -42,7 +42,11 @@ const wimHofMethodApp: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-Wim Hof Method app is the official reference for the Wim Hof breath protocol — structured rounds at varying levels, cold-exposure protocols, certified-instructor video courses, and credible citation of the Radboud University immune-response and autonomic-system studies that put the method on the scientific map.
+Wim Hof Method app is the official reference for the Wim Hof breath protocol — structured rounds at varying levels, cold-exposure protocols, certified-instructor video courses, and citation of the Radboud University immune-response and autonomic-system studies that put the method on the scientific map — small laboratory studies in healthy volunteers, not proof of a treatment.
+
+## Safety
+
+Wim Hof rounds combine hyperventilation with breath-holds, which can cause fainting without warning. Never practise them in or near water (including baths and cold plunges) or while driving; do them sitting or lying down. Talk to a doctor first if you have epilepsy, heart disease or high blood pressure, or are pregnant. See [fast breathing: what the evidence shows](/science/evidence/fast-breathing).
 
 ## What are the downsides of Wim Hof Method?
 

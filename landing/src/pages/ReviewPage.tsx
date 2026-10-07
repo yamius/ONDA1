@@ -11,6 +11,8 @@
 import { OtherLanguages } from '../components/OtherLanguages'
 import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
 import HrvContextBox from '../components/HrvContextBox'
+import FastBreathingSafetyBlock from '../components/FastBreathingSafetyBlock'
+import { FAST_BREATHING_REVIEW_SLUGS } from '../data/fast-breathing-safety-i18n'
 import ColdSafetyBlock from '../components/ColdSafetyBlock'
 import MouthTapeSafetyBlock, { MOUTH_TAPE_SAFETY_CATEGORY, mouthTapeSafetyVariant } from '../components/MouthTapeSafetyBlock'
 import { storeCt } from '../lib/storeCt'
@@ -112,6 +114,7 @@ export function ReviewPage() {
 
       {review.category === 'cold-plunge' && <ColdSafetyBlock lang={lang} />}
       {review.category === MOUTH_TAPE_SAFETY_CATEGORY && <MouthTapeSafetyBlock lang={lang} variant={mouthTapeSafetyVariant([review.slug])} />}
+      {FAST_BREATHING_REVIEW_SLUGS.has(review.slug) && <FastBreathingSafetyBlock lang={lang} />}
 
       {/* Branded score card — og:image + Product.image + visible hero (6.5).
           Falls back to the generated card when no explicit product photo. */}

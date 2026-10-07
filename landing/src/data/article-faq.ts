@@ -2012,7 +2012,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Can you really control your immune system with breathing?",
       answer:
-        "Within limits, yes — and it's documented. Radboud research (Kox et al., 2014, PNAS) showed trained people could voluntarily activate their sympathetic nervous system and blunt their inflammatory response to injected endotoxin. It's a temporary, controlled effect, not immunity to disease.",
+        "Within limits, in small laboratory studies. Radboud research (Kox et al., 2014, PNAS) showed trained healthy young men could voluntarily activate their sympathetic nervous system and blunt their inflammatory response to injected endotoxin. It's a temporary laboratory effect, not immunity to disease.",
     },
     {
       question: "Do I need ice baths to get the benefits of Wim Hof breathing?",
@@ -2022,29 +2022,29 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Is Wim Hof breathing calming like slow breathing?",
       answer:
-        "No — it's the opposite. Wim Hof breathing is controlled hyperventilation that activates the sympathetic (\"fight or flight\") system, while slow six-breaths-per-minute breathing activates the parasympathetic (\"rest and digest\") system. Different tools for different goals.",
+        "No — it's the opposite. Wim Hof breathing is controlled hyperventilation that activates the sympathetic (\"fight or flight\") system, while slow six-breaths-per-minute breathing is associated with higher vagally mediated HRV — the calming (\"rest and digest\") direction. Different tools for different goals.",
     },
     {
       question: "Is Wim Hof breathing safe?",
       answer:
-        "Done seated or lying down, for most healthy people it's safe. Never do it in or near water, while driving, or standing, because the breath-holds can cause light-headedness or fainting. If you have a medical condition, check with your doctor first.",
+        "Done seated or lying down, most healthy people tolerate it. Never do it in or near water (including baths and cold plunges), while driving, or standing, because the breath-holds can cause light-headedness or fainting without warning. If you have epilepsy, heart disease or high blood pressure, are pregnant, or have panic attacks, check with your doctor first.",
     },
   ],
   "breathing-altitude-acclimatization": [
     {
       question: "Can breathing exercises help with altitude sickness?",
       answer:
-        "They may help. On a Kilimanjaro expedition, 26 participants used Wim Hof Method controlled-hyperventilation breathing and researchers reported it may prevent or reduce acute mountain sickness and accelerate acclimatization. It's a promising field observation, not proven in large trials, and doesn't replace proper acclimatization.",
+        "Possibly, but the evidence is very thin. A single uncontrolled report from a Kilimanjaro expedition described 26 participants using Wim Hof Method controlled-hyperventilation breathing with fewer or milder symptoms of acute mountain sickness. That is an anecdote, not a trial, and breathing doesn't replace proper acclimatization.",
     },
     {
       question: "How does breathing help at altitude?",
       answer:
-        "Deliberate deep breathing temporarily raises blood oxygen and lowers carbon dioxide, nudging blood chemistry toward the adaptation your body makes naturally over days — potentially giving acclimatization a head start.",
+        "At altitude, breathing more is the body's own first response to thin air and does raise blood oxygen somewhat. Deliberate fast breathing mainly lowers carbon dioxide; at sea level it barely raises oxygen, because blood is already about 97–99% saturated. Whether a breathing technique speeds acclimatization has not been tested in controlled trials.",
     },
     {
       question: "What breathing should I use at altitude?",
       answer:
-        "Controlled deep breathing may aid acclimatization during ascent, while slow paced breathing helps with the anxiety and poor sleep altitude brings. Do intense breathing only while resting, never in dangerous terrain.",
+        "No breathing protocol has been shown to speed acclimatization. Slow paced breathing can help with the anxiety and poor sleep altitude brings. If you try intense breathing, do it only seated and resting — never in or near water, while driving, or in dangerous terrain.",
     },
     {
       question: "Does breathing replace acclimatization?",
@@ -2056,7 +2056,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Is all breathwork calming?",
       answer:
-        "No. Fast pranayama (Kapalabhati, Bhastrika) is energizing and activates the sympathetic system; slow pranayama (Nadi Shodhana, Bhramari) is calming and activates the parasympathetic system. Using fast breathing to calm down works against you.",
+        "No. Fast pranayama (Kapalabhati, Bhastrika) is energizing and activates the sympathetic system; slow pranayama (Nadi Shodhana, Bhramari) is calming and is associated with higher vagally mediated HRV. Using fast breathing to calm down works against you.",
     },
     {
       question: "Which pranayama is best for calming down?",

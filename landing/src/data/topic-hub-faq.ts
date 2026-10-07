@@ -355,7 +355,7 @@ const TOPIC_HUB_FAQ_RAW: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
     },
     {
       q: "Does Wim Hof breathing reduce inflammation?",
-      a: "Research at Radboud University in the Netherlands suggests it can: trained practitioners blunted their inflammatory response to an injected bacterial toxin. A follow-up study found the breathing technique did the work, while cold exposure alone did not significantly reduce inflammation. If the anti-inflammatory effect is your goal, the ice bath is optional.",
+      a: "Small laboratory studies at Radboud University in the Netherlands suggest it can, in the short term: trained healthy volunteers blunted their inflammatory response to an injected bacterial toxin. In a later pilot study, the breathing exercise reduced the response while cold training alone did not, and adding cold training strengthened the breathing effect. This is a laboratory model in healthy young men, not a treatment for inflammatory disease.",
       links: [{ href: "/articles/wim-hof-breathing-inflammation", label: "Wim Hof Breathing and Inflammation" }],
     },
     {

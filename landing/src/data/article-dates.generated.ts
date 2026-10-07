@@ -730,7 +730,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-10-07T07:44:50+02:00"
+    "modified": "2026-10-07T11:57:35+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1290,7 +1290,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:melatonin": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-07T09:48:00.000Z"
+    "modified": "2026-10-07T09:57:35.000Z"
   },
   "glossary:adenosine": {
     "published": "2026-09-29T18:09:37.000Z",

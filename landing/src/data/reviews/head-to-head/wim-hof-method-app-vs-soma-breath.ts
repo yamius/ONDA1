@@ -39,7 +39,7 @@ const wimHofVsSoma: HeadToHead = {
     },
     {
       q: 'Can I do Wim Hof safely without an app?',
-      a: 'The basic rounds (30–40 deep breaths + retention + recovery breath) can be done without an app. Both WHM app and SOMA add structure, progression and timing — useful but not strictly required. Cold-exposure protocols are where the WHM app integration becomes more valuable.',
+      a: 'The basic rounds (30–40 deep breaths + retention + recovery breath) can be done without an app. Both WHM app and SOMA add structure, progression and timing — useful but not strictly required. Cold-exposure protocols are where the WHM app integration becomes more valuable. With or without an app, do the rounds sitting or lying down — never in or near water and never while driving, because they can cause fainting.',
     },
   ],
   content: `## The short version
@@ -52,7 +52,9 @@ If you are committed to the WHM specifically and want the official curriculum, s
 
 ## When is SOMA Breath the right pick?
 
-If you want rhythmic music-paced breathwork that includes WHM-style rounds within broader pranayama context — SOMA is the right shape. Different pacing, broader scope.`,
+If you want rhythmic music-paced breathwork that includes WHM-style rounds within broader pranayama context — SOMA is the right shape. Different pacing, broader scope.
+
+Safety: Wim Hof-style rounds combine hyperventilation with breath-holds, which can cause fainting without warning — never practise them in or near water (including baths and cold plunges) or while driving, and talk to a doctor first if you have epilepsy, heart disease or high blood pressure, or are pregnant. See [fast breathing: what the evidence shows](/science/evidence/fast-breathing).`,
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',

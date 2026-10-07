@@ -7,6 +7,8 @@
 import { OtherLanguages } from '../components/OtherLanguages'
 import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
 import HrvContextBox from '../components/HrvContextBox'
+import FastBreathingSafetyBlock from '../components/FastBreathingSafetyBlock'
+import { hasFastBreathingProduct } from '../data/fast-breathing-safety-i18n'
 import ColdSafetyBlock from '../components/ColdSafetyBlock'
 import MouthTapeSafetyBlock, { MOUTH_TAPE_SAFETY_CATEGORY, mouthTapeSafetyVariant } from '../components/MouthTapeSafetyBlock'
 import { storeCt } from '../lib/storeCt'
@@ -93,6 +95,7 @@ export function HeadToHeadPage() {
 
       {a.category === 'cold-plunge' && <ColdSafetyBlock lang={lang} />}
       {a.category === MOUTH_TAPE_SAFETY_CATEGORY && <MouthTapeSafetyBlock lang={lang} variant={mouthTapeSafetyVariant(products.map((p) => p.slug))} />}
+      {hasFastBreathingProduct(products.map((p) => p.slug)) && <FastBreathingSafetyBlock lang={lang} />}
 
       {/* Product cards — scores side by side. Renders 2 or 3 columns
           depending on whether the duel includes a third product. */}
