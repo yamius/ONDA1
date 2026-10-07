@@ -14,7 +14,7 @@ const focuscalm: ToolReview = {
     'FocusCalm is BrainCo’s consumer EEG headband — single-channel forehead electrode plus accelerometer, paired with a content-heavy app of guided focus and calm sessions. Cheaper than Muse 2 and Neurosity Crown, with a more polished training library than Mendi or Emotiv. The trade is signal depth: one electrode means simpler interpretation. Best as an entry into EEG-feedback content for first-time users who do not need raw data.',
   overallScore: 6.9,
   scores: [
-    { criterionId: 'signal-quality', score: 6.5, note: 'Single forehead EEG electrode plus accelerometer. Adequate consumer signal for the focus/calm metric the app surfaces; lower information density than multi-electrode systems.' },
+    { criterionId: 'signal-quality', score: 6.5, note: 'Single forehead EEG electrode plus accelerometer. Adequate consumer signal for the app’s own focus/calm score (BrainCo’s formula, not a validated measure of attention); lower information density than multi-electrode systems.' },
     { criterionId: 'training-content', score: 8.0, note: 'Strong library of guided focus and calm sessions, games and exercises. Content-driven by design — the app drives the experience, not the data.' },
     { criterionId: 'insights', score: 6.5, note: 'Single focus / calm score per session plus aggregate trends. Less analytical depth than multi-electrode alternatives.' },
     { criterionId: 'comfort', score: 7.0, note: 'Soft headband — comfortable for 10–20 minute sessions; not designed for sleep.' },
@@ -43,7 +43,7 @@ const focuscalm: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-FocusCalm bets on content. The single forehead EEG electrode is enough to produce a credible focus/calm metric, and the app wraps it in a structured programme of guided sessions, mini-games and progression tracking that pull a first-time user through the early weeks more reliably than a measurement-first device like Emotiv. At $199 the hardware is the second-cheapest legitimate EEG headset in this list, beaten only by the educational-tier NeuroSky.
+FocusCalm bets on content. The single forehead EEG electrode feeds the app’s own focus/calm score — BrainCo’s formula, not a validated measure of attention — and the app wraps it in a structured programme of guided sessions, mini-games and progression tracking that pull a first-time user through the early weeks more reliably than a measurement-first device like Emotiv. At $199 the hardware is the second-cheapest legitimate EEG headset in this list, beaten only by the educational-tier NeuroSky.
 
 ## What are the downsides of FocusCalm?
 
@@ -57,11 +57,11 @@ Choose FocusCalm if you want the cheapest legitimate EEG-feedback experience wit
 
 ## Background reading
 
-The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+The neuroscience these headsets feed back — and what the EEG signal can and cannot tell you about mental states.
 
 - [Adaptation and range fractionation](/articles/adaptation-hack-range-fractionation) — training cognitive states by deliberate variation
 - [Alpha brain waves: calm, creativity and flow](/articles/neural-bridge-alpha-flow-gateway) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
-- [Acetylcholine as the attention lens](/articles/acetylcholine-lens-neuro-mechanics) — the neurochemistry behind focus that EEG resolves
+- [Acetylcholine as the attention lens](/articles/acetylcholine-lens-neuro-mechanics) — the neurochemistry behind focus
 `,
   references: [
     { label: 'FocusCalm — official product page', url: 'https://focuscalm.com/' },

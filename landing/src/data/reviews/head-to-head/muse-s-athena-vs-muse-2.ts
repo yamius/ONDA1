@@ -41,7 +41,7 @@ const museSAthenaVsMuse2: HeadToHead = {
     },
     {
       q: 'What is fNIRS and does it matter?',
-      a: 'Functional near-infrared spectroscopy — Athena’s prefrontal optodes measure blood-oxygenation changes in the prefrontal cortex alongside the EEG signal. In practical terms it gives Athena’s neurofeedback model a second independent biomarker; the user-visible benefit is more reliable focus and calm scoring during sessions.',
+      a: 'Functional near-infrared spectroscopy — Athena’s prefrontal optodes measure blood-oxygenation changes in the prefrontal cortex alongside the EEG signal. In practical terms it adds a second, slower blood-flow signal to the EEG; there are no published data on whether it makes the app’s calm and focus scores more accurate.',
     },
   ],
   content: `## The short version
@@ -50,7 +50,7 @@ Athena is Muse 2 with sleep tracking, fNIRS sensing and a sleep-friendly form fa
 
 ## When is Athena the right pick?
 
-For users who want one device that handles meditation by day and sleep tracking by night, Athena is the only Muse that works. The fNIRS addition meaningfully improves session-level neurofeedback accuracy by giving the app a second independent biomarker. The soft sleep-friendly band is the form-factor reason most users move to Athena even before they value the new sensors.
+For users who want one device that handles meditation by day and sleep tracking by night, Athena is the only Muse that works. The fNIRS addition gives the app a second, slower blood-flow signal, though there are no published data showing that it improves feedback accuracy. The soft sleep-friendly band is the form-factor reason most users move to Athena even before they value the new sensors.
 
 ## When is Muse 2 the right pick?
 

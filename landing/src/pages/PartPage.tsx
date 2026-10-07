@@ -545,13 +545,13 @@ export const parts: Record<string, {
       ],
     },
     targets: {
-      intro: 'Target Systems and Progress Biomarkers:',
+      intro: 'Target Systems and Aims of the Practice:',
       items: [
         { name: 'Dorsolateral Prefrontal Cortex (dlPFC)', text: 'Cognitive clarity and focus retention.' },
         { name: 'Anterior Cingulate Cortex (ACC)', text: 'A high-precision \u201cerror detector\u201d and discriminator of differences.' },
-        { name: 'P300 Amplitude Increase', text: 'A biomarker indicating how quickly and efficiently the brain recognizes a significant stimulus.' },
+        { name: 'P300 Amplitude Increase', text: 'An EEG marker that research links to how quickly and efficiently the brain recognizes a significant stimulus. Here it names an aim of the practice: ONDA does not record EEG, so the app does not measure P300.' },
         { name: 'Saccadic Stability', text: 'The precision and controllability of eye micro-movements when scanning space.' },
-        { name: 'Perceptual Stabilization', text: 'Entering a Theta/Alpha state to ground the mind.' },
+        { name: 'Perceptual Stabilization', text: 'An image for shifting into a calmer, theta/alpha-like state to ground the mind. ONDA does not record EEG, so it cannot tell which brain state you are in; during practice it shows your pulse and breathing rate.' },
       ],
     },
     results: {
@@ -608,7 +608,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Gamma Binding and Cholinergic Modulation',
-          text: 'Synchronizing neurons at gamma frequency to assemble scattered elements of perception into a single, cohesive image. Working with acetylcholine, which literally \u201chighlights\u201d the necessary neural connections.',
+          text: 'The aim of gathering scattered elements of perception into a single, cohesive image. Research links this kind of binding to gamma-frequency activity and to acetylcholine, which helps the brain prioritize relevant signals, but the role of gamma is still debated. ONDA does not record EEG.',
         },
         {
           name: 'Locus Coeruleus',
@@ -632,7 +632,7 @@ export const parts: Record<string, {
         'Ownership of Attention: You don\u2019t just concentrate \u2014 you become the owner of your attention.',
         'Effortless Focus: The brain learns to enter a state of deep focus without excessive strain, maintaining clarity and conserving biological energy.',
         'Cognitive Inhibition: Optimizing the system\u2019s ability to actively ignore irrelevant stimuli.',
-        'Biological Markers: Increased beta-rhythm power in the frontal lobes, stabilization of heart rate, and reduced reaction time when switching between tasks.',
+        'Intended markers: research on attention training describes changes such as frontal beta-rhythm power and faster task switching. ONDA does not record EEG, so the app does not measure these; what it shows during practice is your heart rate.',
       ],
     },
     outro:
@@ -708,7 +708,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Occipital Cortex (V1–V4) and γ-Synchronization',
-          text: 'Visualizing and rendering images in the absence of external stimuli. Instantaneous unification of neural ensembles for a "flash" of understanding and image integrity.',
+          text: 'Visualizing and rendering images in the absence of external stimuli. The image here is a mental picture coming together as a single, vivid whole, a "flash" of understanding; the role of gamma synchronization in this is still debated, and ONDA does not measure it.',
         },
         {
           name: 'Posterior Parietal Cortex (PPC)',
@@ -721,8 +721,8 @@ export const parts: Record<string, {
       items: [
         'Proactive Mastery: You gain the ability not just to react to events, but to "pre-write" them at the neural level.',
         'Operational Efficiency: The vision becomes a program, and the brain acts as an efficient executor, finding the shortest paths to the goal.',
-        'Flow State: Predominance of Alpha and Theta rhythms, characteristic of creative flow and insight.',
-        'Biological Belief: Changes in Galvanic Skin Response (GSR) — an indicator that the body "believes" in the created image as if it were real.',
+        'Flow State: the experience of vision and action working as one. EEG studies of flow are small and point mainly to frontal theta with only moderate alpha; ONDA does not record EEG, so the app does not check your brain rhythms.',
+        'Biological Belief: the body responding to the created image as if it were real. Research tracks this with skin conductance (Galvanic Skin Response, GSR); ONDA does not measure GSR.',
       ],
     },
     outro:
@@ -893,7 +893,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Oxytocin-Vasopressin System and Inter-brain Synchrony',
-          text: 'The biochemical balance between trust and boundary protection. Inter-brain synchrony is a phenomenon where the brain rhythms of partners begin to operate in a coherent mode.',
+          text: 'The biochemical balance between trust and boundary protection. Inter-brain synchrony is what hyperscanning studies report when partners’ brain activity becomes more alike during shared tasks; the findings are early, and ONDA does not record EEG.',
         },
       ],
     },
@@ -902,7 +902,7 @@ export const parts: Record<string, {
       items: [
         'Co-resonance: You learn to create a resonance that empowers both participants in the process.',
         'Nutritious Interaction: Interaction becomes light, productive, and biologically nourishing.',
-        'Biological Markers: Synchronization of Heart Rate Variability (HRV) between partners and Alpha-rhythm brain coherence.',
+        'Intended markers: research describes heart-rhythm (HRV) and alpha-rhythm alignment between partners. ONDA does not record EEG or compare two people’s signals; with an Apple Watch it shows your own HRV.',
         'Resonance Strategy: Shifting from "social survival" to "social resonance" strategies. Relaxation of the pelvic diaphragm and the release of deep bodily blocks.',
       ],
     },
@@ -969,7 +969,7 @@ export const parts: Record<string, {
       items: [
         {
           name: 'Brain-to-Brain Coupling and Gamma Synchronization',
-          text: 'Inter-brain synchronization where the neural patterns of participants mirror one another. The Gamma rhythm (40+ Hz) is responsible for collective insight and the instantaneous synthesis of ideas.',
+          text: 'Hyperscanning studies report that participants’ brain activity can become more aligned during joint tasks. Gamma activity (40+ Hz) has been linked to moments of insight, but no study shows that it produces collective insight. ONDA does not record EEG.',
         },
         {
           name: 'DMN Inhibition and Joint Attention',
@@ -990,7 +990,7 @@ export const parts: Record<string, {
       items: [
         'Synergetic Mastery: You gain the skill of integrating into group processes of any complexity, maintaining sovereignty while exponentially amplifying the overall result.',
         'Living Network: The group transforms into a living neural network capable of solving tasks inaccessible to the individual mind.',
-        'Biological Markers: Inter-brain coherence, group heart rate variability (HRV) alignment, and collective dopamine surges.',
+        'Intended markers: research on groups describes inter-brain coherence, aligned heart rate variability (HRV) and shared reward (dopamine). ONDA does not record EEG, compare a group’s HRV or measure dopamine, so these describe the aim of the practice, not measured results.',
         'We-Consciousness: Creating a hyper-productive environment where ideas self-organize into results through a unified field of consciousness.',
       ],
     },
@@ -1083,7 +1083,7 @@ export const parts: Record<string, {
       items: [
         'You begin to perceive the body not as noise, but as a high-precision data stream.',
         'This is the state of a "pilot" who feels the slightest vibration of the aircraft\'s wing.',
-        'Progress biomarkers: Increased gray matter density in the insular cortex, reduced resting muscle tone, normalization of Galvanic Skin Response (GSR).',
+        'Over time: finer interoception, less tension at rest and a steadier autonomic baseline.',
         'Transition from "Survival Mode" to total "Presence Mode" through sensory anchors.',
       ],
     },
@@ -1161,7 +1161,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Biomarkers',
-          text: 'Reduction in skin electrical impedance; stabilization of vascular tone; disappearance of "sensory amnesia" zones.',
+          text: 'Markers used in research on this kind of work: skin electrical impedance, vascular tone, fewer "sensory amnesia" zones. ONDA does not measure skin conductance or vascular tone; read these as the aim of the practice.',
         },
       ],
     },
@@ -1245,7 +1245,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Biomarkers',
-          text: 'HRV coherence between partners; brainwave coupling (Alpha/Theta sync).',
+          text: 'Described in research, not measured by ONDA: HRV coherence between partners and brainwave coupling (alpha/theta sync). ONDA does not record EEG or compare two people’s signals; with an Apple Watch it shows your own coherence.',
         },
       ],
     },
@@ -1368,7 +1368,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Biomarkers',
-          text: 'Cognitive Gap increase; Alpha-rhythm stabilization; reduction in mental rumination.',
+          text: 'Aims of the practice: a wider cognitive gap, calm alpha-like attention and less rumination. ONDA does not record EEG, so the app does not track alpha rhythm.',
         },
       ],
     },
@@ -1477,14 +1477,14 @@ export const parts: Record<string, {
     metaDescription:
       'Part 18: Inter-brain hyperscanning, gamma rhythms, mirror neurons. The Networked Human. Master of collective intelligence. ONDA Life.',
     intro:
-      'Part 18 is the triumph of network-centric thinking. In science, this is described as inter-brain hyperscanning: a state where the electrical brain rhythms of participants literally lock into phase, creating a single neural cluster. We move from "I-mode" to "Network Node" mode. This is the biological foundation for collective intelligence, where meanings and intentions are transmitted via "neural Wi-Fi," turning the group into a self-learning, synergistic entity.\n\nKey Biological Challenge: Overcoming egocentric filters to achieve "biological telepathy" and mastering the quality of one\'s own signal within the collective system.\n\nWe activate systems responsible for ultra-high-order resonance and inter-brain coherence. Gamma Rhythms (40 Hz) are the frequency at which informational streams from different brains instantaneously merge into a unified insight. The Mirror Neuron System (premotor cortex and inferior parietal lobule) provides pre-verbal understanding of the actions and intentions of partners. The Right Temporoparietal Junction (rTPJ) is a key hub for modeling the states of others and acting as a "social navigator." The Anterior Insula provides empathic fusion—you experience the state of the group as your own. The Dorsal Anterior Cingulate Cortex (dACC) maintains joint attention, turning the group into a single focus of creation.',
+      'Part 18 is the triumph of network-centric thinking. In science, the closest research is inter-brain hyperscanning: studies that record several people at once report that their brain activity can become more aligned during shared tasks. The findings are early, and ONDA does not record EEG. We move from "I-mode" to "Network Node" mode. This is the biological foundation for collective intelligence, where meanings and intentions are transmitted via "neural Wi-Fi," turning the group into a self-learning, synergistic entity.\n\nKey Biological Challenge: Overcoming egocentric filters to achieve "biological telepathy" and mastering the quality of one\'s own signal within the collective system.\n\nWe activate systems responsible for ultra-high-order resonance and inter-brain coherence. Gamma Rhythms (40 Hz) are the frequency at which informational streams from different brains instantaneously merge into a unified insight. The Mirror Neuron System (premotor cortex and inferior parietal lobule) provides pre-verbal understanding of the actions and intentions of partners. The Right Temporoparietal Junction (rTPJ) is a key hub for modeling the states of others and acting as a "social navigator." The Anterior Insula provides empathic fusion—you experience the state of the group as your own. The Dorsal Anterior Cingulate Cortex (dACC) maintains joint attention, turning the group into a single focus of creation.',
     protocol: {
       title: 'Biological Protocol',
       intro: 'This protocol transforms you into a conductor of the collective mind:',
       items: [
         {
           name: 'Neuroelectric Tuning',
-          text: 'Practices of group breath synchronization, shared visual fields, and vocal toning to align the electrical potentials of the group.',
+          text: 'Practices of group breath synchronization, shared visual fields, and vocal toning to bring the group into a shared rhythm.',
         },
         {
           name: 'Mirror Resonance Activation',
@@ -1509,10 +1509,10 @@ export const parts: Record<string, {
       items: [
         { name: 'Mirror Neuron Network', text: 'Pre-verbal understanding of partners\' intentions and actions.' },
         { name: 'Oxytocin System (bonding chemistry)', text: 'The neurochemistry of trust and belonging within the collective.' },
-        { name: 'Gamma-wave generators', text: 'Brain rhythms at 40 Hz where informational streams merge into unified insight.' },
+        { name: 'Gamma-wave generators', text: 'Fast brain rhythms (around 40 Hz) that research links to integrating information; here they stand for separate streams merging into a shared insight. Their role is still debated, and ONDA does not record EEG.' },
         {
           name: 'Biomarkers',
-          text: 'Inter-brain phase coherence, synchronous pupil dilation (limbic resonance), Alpha-rhythm alignment within the group.',
+          text: 'Described in hyperscanning research, not measured by ONDA: inter-brain phase coherence, synchronous pupil dilation, alpha-rhythm alignment within the group. ONDA does not record EEG or compare signals between people.',
         },
       ],
     },

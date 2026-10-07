@@ -13,9 +13,11 @@ import { storeCt } from '../lib/storeCt'
 import FastBreathingSafetyBlock from '../components/FastBreathingSafetyBlock'
 import RedLightSafetyBlock from '../components/RedLightSafetyBlock'
 import SaunaSafetyBlock from '../components/SaunaSafetyBlock'
+import HeadsetMeasuresNote from '../components/HeadsetMeasuresNote'
 import { FAST_BREATHING_COMPARISON_SLUGS } from '../data/fast-breathing-safety-i18n'
 import { isRedLightComparison } from '../data/red-light-safety-i18n'
 import { isSaunaComparison } from '../data/sauna-safety-i18n'
+import { isHeadsetComparison } from '../data/headset-measures-i18n'
 import ColdSafetyBlock from '../components/ColdSafetyBlock'
 import MouthTapeSafetyBlock, { MOUTH_TAPE_SAFETY_CATEGORY } from '../components/MouthTapeSafetyBlock'
 import { useParams, useLocation, Link } from 'react-router-dom'
@@ -72,6 +74,7 @@ export function ComparisonPage() {
       {FAST_BREATHING_COMPARISON_SLUGS.has(comparison.slug) && <FastBreathingSafetyBlock lang={lang} />}
       {isRedLightComparison(comparison.slug, comparison.category) && <RedLightSafetyBlock lang={lang} />}
       {isSaunaComparison(comparison.slug, comparison.category) && <SaunaSafetyBlock lang={lang} />}
+      {isHeadsetComparison(comparison.slug, comparison.category) && <HeadsetMeasuresNote lang={lang} />}
       {/* EN: answer-first summary built from the ranked picks — the direct
           answer to "what is the best …?" before the hero image (GEO). */}
       {lang === 'en' && (() => {

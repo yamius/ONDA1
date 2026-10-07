@@ -37,7 +37,7 @@ const sensAiVsMuse: HeadToHead = {
     },
     {
       q: 'What is photobiomodulation?',
-      a: 'Transcranial photobiomodulation — near-infrared light shone through the skull to the prefrontal cortex — is an active intervention with published evidence for neural function and mood. Sens.ai is the only headset in this list that includes it. The mechanism is independent of EEG.',
+      a: 'Transcranial photobiomodulation — near-infrared light shone through the skull to the prefrontal cortex — is an active intervention; evidence for effects on cognition and mood is still emerging and comes mostly from small studies. Sens.ai is the only headset in this list that includes it. The mechanism is independent of EEG.',
     },
     {
       q: 'Which has the more open developer access?',

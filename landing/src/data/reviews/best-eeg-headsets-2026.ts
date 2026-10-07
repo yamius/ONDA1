@@ -37,7 +37,7 @@ const bestEegHeadsets2026: Comparison = {
     {
       reviewSlug: 'myndlift',
       award: 'Best clinical neurofeedback',
-      takeaway: 'Clinically-prescribed neurofeedback at home — real protocols, real outcome tracking, gated by a licensed provider.',
+      takeaway: 'Clinician-supervised neurofeedback at home — set protocols and symptom tracking, gated by a licensed provider.',
     },
     {
       reviewSlug: 'mendi',
@@ -85,7 +85,7 @@ const bestEegHeadsets2026: Comparison = {
     },
     {
       q: 'Do EEG headsets actually work for focus and meditation?',
-      a: 'Within their limits, yes. EEG neurofeedback for meditation has the strongest evidence base of any consumer brain-training application — the underlying Muse hardware in particular has dozens of peer-reviewed studies. The caveat is that consumer EEG measures only what reaches the scalp through dry electrodes; the granularity is real but bounded, and the effect size for novice meditators is modest until practice has been built over months.',
+      a: 'As feedback tools, within their limits, yes. Meditation feedback is the most-studied consumer use, but trials of its benefit are few and small — the Muse hardware appears in dozens of peer-reviewed studies, mostly as a recording tool rather than as proof that the feedback helps. The caveat is that consumer EEG measures only what reaches the scalp through dry electrodes; the signal is real but bounded, and any benefit for novice meditators is modest and comes mainly from the practice itself.',
     },
     {
       q: 'Which EEG headset has the most open SDK?',
@@ -125,7 +125,7 @@ Start with what you want the headset to do, because the three common jobs need d
 
 **1. Meditation feedback.** You want to hear when your mind wanders and learn to settle it. What matters is the app, the guided content and comfort — not channel count. Muse S Athena and Muse 2 lead here; FocusCalm is the cheaper single-channel alternative. Raw data is irrelevant for this job.
 
-**2. Neurofeedback training.** You want to train a specific brain pattern over weeks (attention, calm, a clinician’s protocol). Consumer apps offer simplified versions; real neurofeedback for ADHD, anxiety or sleep problems is designed and adjusted by a clinician, which is what Myndlift provides. Sens.ai sits in between, adding light and HRV training on top of EEG.
+**2. Neurofeedback training.** You want to train a specific brain pattern over weeks (attention, calm, a clinician’s protocol). Consumer apps offer simplified versions; clinical neurofeedback for ADHD, anxiety or sleep problems is designed and adjusted by a clinician, which is what Myndlift provides — though blinded and sham-controlled trials show little or no specific benefit for ADHD or insomnia. Sens.ai sits in between, adding light and HRV training on top of EEG.
 
 **3. Developer or raw-data work.** You want to stream signals into your own code, run experiments or build an app. Choose on SDK openness and channels: Neurosity Crown (8 electrodes, open SDK, no subscription for data), Emotiv Insight 2 (5 channels, raw data behind the Pro tier) or NeuroSky for learning on a tiny budget.
 
@@ -142,12 +142,12 @@ What it cannot do is just as important:
 - **Proprietary scores.** “Calm”, “focus” or “flow” numbers are each company’s own algorithm, not a validated medical measure, and they are not comparable between brands.
 - **No diagnosis.** No consumer headset diagnoses ADHD, anxiety, depression or sleep disorders.
 
-The honest framing: use the score as a trend within your own sessions. The benefit most people get comes from the practice the feedback encourages, and effects for beginners build over weeks of regular use.
+The honest framing: use the score as a trend within your own sessions. The benefit most people get comes from the practice the feedback encourages, and any effect depends on practising regularly.
 
 ## Who should skip an EEG headset
 
 - **People who want a stress or recovery number.** Heart rate variability from a ring or watch is easier to collect daily and better studied for stress and recovery than consumer EEG scores — see our [best HRV trackers](/reviews/compare/best-hrv-trackers-2026).
-- **Anyone seeking treatment** for ADHD, depression or anxiety — start with a clinician; Myndlift or Flow only make sense inside that route.
+- **Anyone seeking treatment** for ADHD, depression or anxiety — start with a clinician; Myndlift or Flow only make sense inside that route, and neurofeedback is not a replacement for established treatment.
 - **Buyers who will not wear it regularly.** A headset used twice is the most expensive meditation app you own.
 - **People who dislike wearing anything on the head** during practice — a guided breathing or meditation app alone may be enough.
 

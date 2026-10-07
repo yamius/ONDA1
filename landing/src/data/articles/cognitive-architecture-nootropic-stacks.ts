@@ -83,11 +83,11 @@ High-performance states often fail due to 'System Noise'—anxiety or over-stimu
 
 ## Recommended tools
 
-Nootropic stacks are most valuable when you can measure them. EEG is the most direct consumer signal.
+No consumer headset can measure the effect of a nootropic stack: focus scores are each maker’s own formula and shift with sleep, caffeine and expectation. These headsets show live EEG feedback, not proof that a stack works.
 
-- [Neurosity Crown](/reviews/neurosity-crown) — developer-grade EEG to measure stack effects
+- [Neurosity Crown](/reviews/neurosity-crown) — developer-grade EEG with raw-data access
 - [Muse S Athena](/reviews/muse-s-athena) — consumer EEG with focus mode
-- [Emotiv Insight 2](/reviews/emotiv-insight-2) — multi-dimensional cognitive-performance metrics
+- [Emotiv Insight 2](/reviews/emotiv-insight-2) — six proprietary performance scores
 
 [Best EEG Headsets (2026) →](/reviews/eeg-headsets)
 `,

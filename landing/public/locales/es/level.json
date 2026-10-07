@@ -113,7 +113,7 @@
         "items": [
           { "name": "Hueco cognitivo", "text": "Aumentar la pausa entre evento y reacción automática para permitir libertad de elección." },
           { "name": "Modulación colinérgica", "text": "Usar acetilcolina para «iluminar» literalmente las conexiones neurales necesarias durante el foco." },
-          { "name": "Vinculación gamma", "text": "Sincronizar neuronas en frecuencia gamma para ensamblar fragmentos dispersos de la experiencia en un solo insight." },
+          { "name": "Vinculación gamma", "text": "El objetivo de reunir fragmentos dispersos de la experiencia en un solo insight. La investigación relaciona este tipo de integración con la actividad en frecuencia gamma, pero su papel está en debate y ONDA no registra EEG." },
           { "name": "Programación proactiva (RAS)", "text": "Ajustar los filtros del cerebro para buscar automáticamente oportunidades alineadas con tu visión interna." }
         ]
       },
@@ -230,7 +230,7 @@
         "parts": [
           { "label": "Yo observo", "protocol": "Protocolo: Distancia neural y monitorización metacognitiva", "goal": "Objetivo: pasar de rehén del flujo de la consciencia a su Meta-Programador.", "work": "Trabajo: desactivar la Default Mode Network (DMN) y establecer «distancia neural». Usar anclas sensoriales para colapsar el diálogo interno y convertir los pensamientos en impulsos eléctricos transparentes." },
           { "label": "Yo integro", "protocol": "Protocolo: Integración neural global y síntesis de la experiencia", "goal": "Objetivo: alcanzar la máxima coherencia neural — el cerebro como un supercomputador único, sin fricción.", "work": "Trabajo: reforzar la conectividad horizontal (interhemisférica) y vertical (corteza-cuerpo). Usar el cuerpo calloso y el mPFC para reconciliar disonancia cognitiva y unir lógica con intuición." },
-          { "label": "Yo sincronizo", "protocol": "Protocolo: Sincronización neuroeléctrica e inteligencia colectiva", "goal": "Objetivo: del «modo Yo» al «nodo de la red» — activar el hiperscaneo entre cerebros y el flujo colectivo.", "work": "Trabajo: disparar ritmos gamma (40 Hz) y el sistema de neuronas espejo. Lograr el bloqueo de fase neuroeléctrico con otros para acceder a recursos y soluciones de escala «oceánica»." }
+          { "label": "Yo sincronizo", "protocol": "Protocolo: Sincronización neuroeléctrica e inteligencia colectiva", "goal": "Objetivo: del «modo Yo» al «nodo de la red» — ritmo compartido y flujo colectivo con los demás.", "work": "Trabajo: respiración compartida, atención conjunta y el sistema de neuronas espejo, inspirados en la investigación de hyperscanning sobre cómo la actividad cerebral puede alinearse entre personas (hallazgos preliminares; ONDA no registra EEG). El objetivo: acceder a recursos y soluciones de escala «oceánica»." }
         ]
       },
       "biologicalProtocol": {
@@ -238,7 +238,7 @@
         "items": [
           { "name": "Etiquetado metacognitivo", "text": "Prácticas para «etiquetar» eventos mentales, activando el mPFC y quitando la carga emocional al pensamiento." },
           { "name": "Sincronía interhemisférica", "text": "Ejercicios para el cuerpo calloso que aseguran un flujo de datos sin fisuras entre centros analíticos e intuitivos." },
-          { "name": "Ajuste del flujo gamma", "text": "Técnicas para estabilizar la actividad cerebral de alta frecuencia (40 Hz) para insights colectivos y aprendizaje rápido." },
+          { "name": "Ajuste del flujo gamma", "text": "Técnicas para sostener estados compartidos de alta concentración al servicio de insights colectivos y aprendizaje rápido. La actividad gamma rápida (40 Hz) es aquí una imagen; ONDA no registra EEG." },
           { "name": "Desacoplamiento límbico", "text": "Entrenar al PFC a registrar datos «cargados» sin dejarse arrastrar a una reacción de estrés." }
         ]
       },

@@ -321,7 +321,7 @@ export const levelsData: Record<number, LevelData> = {
         },
         {
           name: 'Gamma Binding',
-          text: 'Synchronizing neurons at gamma frequency to assemble scattered fragments of experience into a single insight.',
+          text: 'The aim of gathering scattered fragments of experience into a single insight. Research links this kind of binding to gamma-frequency activity, but its role is debated, and ONDA does not record EEG.',
         },
         {
           name: 'Proactive Programming (RAS)',
@@ -604,9 +604,9 @@ export const levelsData: Record<number, LevelData> = {
           label: 'I Synchronize',
           slug: 'i-synchronize',
           protocol: 'Protocol: Neuroelectric Synchronization and Collective Intelligence',
-          goal: 'Objective: From "I-mode" to "Network Node" — activating inter-brain hyperscanning and collective flow.',
+          goal: 'Objective: From "I-mode" to "Network Node" — shared rhythm and collective flow with others.',
           work:
-            'Work: Triggering Gamma rhythms (40 Hz) and the Mirror Neuron System. Achieving neuroelectric phase-locking with others to access "oceanic" scale resources and solutions.',
+            'Work: Shared breathing, joint attention and the Mirror Neuron System, inspired by hyperscanning research on how brain activity can align between people (early findings; ONDA does not record EEG). The aim: access "oceanic" scale resources and solutions.',
         },
       ],
     },
@@ -624,7 +624,7 @@ export const levelsData: Record<number, LevelData> = {
         },
         {
           name: 'Gamma-Flow Tuning',
-          text: 'Techniques to stabilize high-frequency (40 Hz) brain activity for collective insight and rapid learning.',
+          text: 'Techniques for sustaining shared, high-focus states for collective insight and rapid learning. Fast (40 Hz) gamma activity is the image here; ONDA does not record EEG.',
         },
         {
           name: 'Limbic Decoupling',

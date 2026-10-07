@@ -100,9 +100,9 @@ A calibrated acetylcholine lens delivers measurable upgrades.
 
 ## Recommended tools
 
-Acetylcholine sharpens attention; EEG is the noisiest-but-most-direct readback consumer hardware can give you on the result.
+Acetylcholine sharpens attention. Consumer EEG cannot see acetylcholine; these headsets give live feedback on brain activity, and their focus scores are each maker’s own formula, not a validated measure of attention.
 
-- [Muse S Athena](/reviews/muse-s-athena) — EEG + fNIRS focus tracking
+- [Muse S Athena](/reviews/muse-s-athena) — EEG + fNIRS with the app’s own focus score
 - [Neurosity Crown](/reviews/neurosity-crown) — developer-grade focus EEG
 - [FocusCalm](/reviews/focuscalm) — content-driven focus training EEG
 

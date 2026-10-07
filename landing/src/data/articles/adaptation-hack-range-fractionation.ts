@@ -113,11 +113,11 @@ Range Fractionation is an Anti-fragility Strategy. Instead of attempting to be '
 
 ## Recommended tools
 
-Range fractionation reads as adaptation across cognitive states. EEG is the highest-density consumer signal for catching it.
+Range fractionation is about adaptation across cognitive states. No consumer headset can measure it directly; these give live EEG feedback, and their state scores are each maker’s own formula.
 
-- [Neurosity Crown](/reviews/neurosity-crown) — developer EEG for measuring adaptation
-- [Muse S Athena](/reviews/muse-s-athena) — consumer EEG with multi-state tracking
-- [Emotiv Insight 2](/reviews/emotiv-insight-2) — six-dimensional cognitive performance metrics
+- [Neurosity Crown](/reviews/neurosity-crown) — developer EEG with raw-data access
+- [Muse S Athena](/reviews/muse-s-athena) — consumer EEG with the app’s own calm/active labels
+- [Emotiv Insight 2](/reviews/emotiv-insight-2) — six proprietary performance scores
 
 [Best EEG Headsets (2026) →](/reviews/eeg-headsets)
 `,

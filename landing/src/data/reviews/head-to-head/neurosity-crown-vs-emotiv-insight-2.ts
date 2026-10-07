@@ -21,7 +21,7 @@ const neurosityVsEmotiv: HeadToHead = {
     { name: 'Signal quality', winner: 'tie', note: 'Both consumer-grade dry/semi-dry systems. Neurosity has more channels; Emotiv has slightly cleaner per-channel signal at rest. Effectively tied.' },
     { name: 'Open SDK access', winner: 'a', note: 'Neurosity: raw EEG via JavaScript and Python (plus BrainFlow, LSL and OSC), no subscription. Emotiv: SDK available, but raw-data access requires EmotivPRO subscription. Neurosity is the more open platform.' },
     { name: 'Academic toolchain', winner: 'b', note: 'EmotivPRO is cited in hundreds of published academic studies. Neurosity has a smaller research footprint — the platform is younger.' },
-    { name: 'Live cognitive metrics', winner: 'b', note: 'Emotiv: live focus, stress, engagement, excitement, interest, relaxation — six dimensions. Neurosity: focus, calm and flow. Emotiv is broader on live metrics.' },
+    { name: 'Live cognitive metrics', winner: 'b', note: 'Emotiv: live focus, stress, engagement, excitement, interest, relaxation — six dimensions. Neurosity: focus, calm and flow. Emotiv shows more live scores; all are each company’s own formulas, not validated measures.' },
     { name: 'Built-in user experience', winner: 'a', note: 'Neurosity ships an adaptive focus-music streaming feature out of the box. Emotiv leans on the SDK ecosystem for user-facing apps.' },
     { name: 'Comfort', winner: 'b', note: 'Emotiv Insight 2 is lighter and the five-arm crown is comfortable for longer sessions. Neurosity Crown is more substantial.' },
     { name: 'Price', winner: 'b', note: 'Emotiv Insight 2: $499 + Pro subscription (~$99/year) for raw data. Neurosity Crown: $1,499 no subscription. Emotiv is cheaper upfront; Neurosity cheaper over multi-year ownership if you need raw data.' },
@@ -54,7 +54,7 @@ If you want to build something on top of EEG — a focus app, a productivity too
 
 ## When is Emotiv Insight 2 the right pick?
 
-If you are running academic-style analysis and want to cite the EmotivPRO toolchain in your work, Emotiv is the right shape. The five-channel hardware is good enough for most cortical-region work, the live cognitive metrics are broader than Neurosity’s, and the Pro subscription is acceptable when academic-toolchain depth is the value you are paying for.`,
+If you are running academic-style analysis and want to cite the EmotivPRO toolchain in your work, Emotiv is the right shape. The five-channel hardware is good enough for most cortical-region work, the live (proprietary) cognitive scores are broader than Neurosity’s, and the Pro subscription is acceptable when academic-toolchain depth is the value you are paying for.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',
   datePublished: '2026-05-22',
   dateModified: '2026-10-04',

@@ -57,11 +57,11 @@ Choose Flow Neuroscience if you have major depression and a clinician open to di
 
 ## Background reading
 
-The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+Background on the brain systems behind mood and attention. Flow stimulates the brain with a weak current; it does not record EEG.
 
 - [Digital dementia and attentional control](/articles/digital-dementia-attentional-control) — rebuilding attention with feedback-driven practice
-- [Neuroplasticity and flow overclocking](/articles/neuroplasticity-flow-overclocking) — EEG signatures of flow states and how they form
-- [ACC calibration: cognitive-control protocol](/articles/acc-calibration-protocol-cognitive-control) — how prefrontal control loops show up in EEG
+- [Neuroplasticity and flow overclocking](/articles/neuroplasticity-flow-overclocking) — what flow states are and how they form
+- [ACC calibration: cognitive-control protocol](/articles/acc-calibration-protocol-cognitive-control) — the prefrontal control loops behind cognitive control
 `,
   references: [
     { label: 'Flow Neuroscience — official site', url: 'https://www.flowneuroscience.com/' },

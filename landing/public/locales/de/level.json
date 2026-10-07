@@ -113,7 +113,7 @@
         "items": [
           { "name": "Kognitive Lücke", "text": "Die Pause zwischen einem Ereignis und einer automatischen Reaktion vergrößern, damit Raum für freie Wahl entsteht." },
           { "name": "Cholinerge Modulation", "text": "Acetylcholin nutzen, um die benötigten neuronalen Verbindungen beim Fokussieren buchstäblich „hervorzuheben“." },
-          { "name": "Gamma-Bindung", "text": "Neuronen im Gammabereich synchronisieren, um verstreute Erfahrungsfragmente zu einer Einsicht zusammenzufügen." },
+          { "name": "Gamma-Bindung", "text": "Ziel ist, verstreute Erfahrungsfragmente zu einer Einsicht zusammenzufügen. Die Forschung bringt diese Art der Bindung mit Aktivität im Gammabereich in Verbindung, ihre Rolle ist aber umstritten, und ONDA zeichnet kein EEG auf." },
           { "name": "Proaktive Programmierung (RAS)", "text": "Die Filter des Gehirns so einstellen, dass sie automatisch nach Gelegenheiten suchen, die zu deiner inneren Vision passen." }
         ]
       },
@@ -230,7 +230,7 @@
         "parts": [
           { "label": "Ich bezeuge", "protocol": "Protokoll: Neuronale Distanz und metakognitives Monitoring", "goal": "Ziel: vom Gefangenen des Bewusstseinsstroms zu seinem Meta-Programmierer werden.", "work": "Arbeit: das Ruhezustandsnetzwerk (DMN) deaktivieren und „neuronale Distanz“ herstellen. Mit sensorischen Ankern den inneren Dialog zum Verstummen bringen und Gedanken in durchsichtige elektrische Impulse verwandeln." },
           { "label": "Ich integriere", "protocol": "Protokoll: Globale neuronale Integration und Synthese der Erfahrung", "goal": "Ziel: maximale neuronale Kohärenz — das Gehirn als einziger, reibungsloser Supercomputer.", "work": "Arbeit: die horizontale (zwischen den Hemisphären) und vertikale (Kortex–Körper) Vernetzung stärken. Balken (Corpus callosum) und mPFC nutzen, um kognitive Dissonanz aufzulösen und Logik mit Intuition zu vereinen." },
-          { "label": "Ich synchronisiere", "protocol": "Protokoll: Neuroelektrische Synchronisation und kollektive Intelligenz", "goal": "Ziel: vom „Ich-Modus“ zum „Netzwerkknoten“ — Hyperscanning zwischen Gehirnen und kollektiver Flow.", "work": "Arbeit: Gammarhythmen (40 Hz) und das Spiegelneuronensystem anregen. Eine neuroelektrische Phasenkopplung mit anderen erreichen, um Ressourcen und Lösungen von „ozeanischem“ Ausmaß zu erschließen." }
+          { "label": "Ich synchronisiere", "protocol": "Protokoll: Neuroelektrische Synchronisation und kollektive Intelligenz", "goal": "Ziel: vom „Ich-Modus“ zum „Netzwerkknoten“ — gemeinsamer Rhythmus und kollektiver Flow mit anderen.", "work": "Arbeit: gemeinsames Atmen, geteilte Aufmerksamkeit und das Spiegelneuronensystem, angelehnt an Hyperscanning-Studien dazu, wie sich Hirnaktivität zwischen Menschen angleichen kann (erste Hinweise; ONDA zeichnet kein EEG auf). Ziel: Ressourcen und Lösungen von „ozeanischem“ Ausmaß erschließen." }
         ]
       },
       "biologicalProtocol": {
@@ -238,7 +238,7 @@
         "items": [
           { "name": "Metakognitives Benennen", "text": "Übungen, um mentale Ereignisse zu „markieren“, den mPFC zu aktivieren und Gedanken ihre emotionale Ladung zu nehmen." },
           { "name": "Synchronisation der Hemisphären", "text": "Übungen für den Balken, damit Daten nahtlos zwischen analytischen und intuitiven Zentren fließen." },
-          { "name": "Gamma-Flow-Abstimmung", "text": "Techniken, um hochfrequente Hirnaktivität (40 Hz) für kollektive Einsichten und schnelles Lernen zu stabilisieren." },
+          { "name": "Gamma-Flow-Abstimmung", "text": "Techniken, um gemeinsame Zustände hoher Konzentration für kollektive Einsichten und schnelles Lernen zu halten. Schnelle Gamma-Aktivität (40 Hz) ist hier ein Bild; ONDA zeichnet kein EEG auf." },
           { "name": "Limbische Entkopplung", "text": "Den PFC trainieren, „aufgeladene“ Daten zu registrieren, ohne in eine Stressreaktion hineingezogen zu werden." }
         ]
       },

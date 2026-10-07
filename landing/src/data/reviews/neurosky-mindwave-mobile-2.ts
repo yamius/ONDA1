@@ -14,7 +14,7 @@ const neuroskyMindwaveMobile2: ToolReview = {
     'NeuroSky MindWave Mobile 2 is the entry-level consumer EEG product — a single forehead electrode plus reference ear-clip, paired with a developer SDK and a small library of third-party apps. The hardware is over a decade old and feels it; the value is the price tag (~$110) and the SDK that lets students, hobbyists and developers learn EEG basics without buying a $1,000+ device.',
   overallScore: 5.6,
   scores: [
-    { criterionId: 'signal-quality', score: 5.5, note: 'Single forehead electrode plus reference ear-clip. Sampling and signal handling reflect mid-2010s hardware — adequate to detect attention and meditation indices, far behind multi-channel modern devices.' },
+    { criterionId: 'signal-quality', score: 5.5, note: 'Single forehead electrode plus reference ear-clip. Sampling and signal handling reflect mid-2010s hardware — adequate to compute NeuroSky’s own attention and meditation indices (not validated measures), far behind multi-channel modern devices.' },
     { criterionId: 'training-content', score: 4.5, note: 'No first-party content library; experience depends on third-party apps. The platform is the device and the SDK, not a content offering.' },
     { criterionId: 'insights', score: 4.5, note: 'Basic attention / meditation eSense metrics. Limited modern analytics — much of the ecosystem is legacy.' },
     { criterionId: 'comfort', score: 5.5, note: 'Lightweight headset with rigid arm; tolerable for short sessions, dated form factor.' },
@@ -57,11 +57,11 @@ Choose NeuroSky MindWave Mobile 2 if you are a student, developer or hobbyist wh
 
 ## Background reading
 
-The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+The neuroscience these headsets feed back — and what the EEG signal can and cannot tell you about mental states.
 
-- [Acetylcholine as the attention lens](/articles/acetylcholine-lens-neuro-mechanics) — the neurochemistry behind focus that EEG resolves
-- [Cognitive architecture: neural throughput](/articles/cognitive-architecture-neural-throughput) — reading EEG as the bandwidth signal of your cognitive system
-- [Cognitive architecture: nootropic stacks](/articles/cognitive-architecture-nootropic-stacks) — why EEG is the closest consumer-measurable proxy for nootropic effects
+- [Acetylcholine as the attention lens](/articles/acetylcholine-lens-neuro-mechanics) — the neurochemistry behind focus
+- [Cognitive architecture: neural throughput](/articles/cognitive-architecture-neural-throughput) — a metaphor for how much information the mind can handle
+- [Cognitive architecture: nootropic stacks](/articles/cognitive-architecture-nootropic-stacks) — what nootropic stacks can and cannot do, and why headset scores cannot show their effect
 `,
   references: [
     { label: 'NeuroSky MindWave Mobile 2 — official product page', url: 'https://store.neurosky.com/products/mindwave-mobile-2' },

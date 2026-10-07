@@ -571,12 +571,12 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "What is neural entrainment?",
       answer:
-        "Neural entrainment is nudging brainwave activity toward a target frequency using a rhythmic external stimulus \u2014 sound, light or pulsed signal. The brain tends to fall into step with the rhythm, a phenomenon known as the frequency-following response.",
+        "Neural entrainment is nudging brainwave activity toward a target frequency using a rhythmic external stimulus \u2014 sound, light or pulsed signal. The idea is that the brain falls into step with the rhythm (the frequency-following response); how far this shifts brain rhythms in practice is uncertain.",
     },
     {
       question: "Do binaural beats actually work?",
       answer:
-        "Binaural beats can shift the dominant EEG frequency via the frequency-following response, with effects that vary between individuals. Closed-loop systems \u2014 which read your brain state in real time and adapt the stimulus \u2014 are more reliable than fixed, open-loop tracks.",
+        "The evidence is mixed. A systematic review of EEG studies found inconsistent evidence that binaural beats actually shift brain rhythms, and effects vary between individuals. Closed-loop systems, which adapt the sound to a live EEG reading, are a plausible design, but there is no good evidence yet that they work better than fixed tracks.",
     },
   ],
   'neural-optimizer-estrogen': [
@@ -622,7 +622,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Can sound actually improve deep sleep quality?",
       answer:
-        "Yes. Stimulation phase-locked to slow-wave sleep can increase delta-wave amplitude, which is linked to better memory consolidation and physical recovery. The key is precise timing \u2014 the sound must lock to the wave\u2019s phase, which is why real-time EEG matters.",
+        "Yes. Stimulation phase-locked to slow-wave sleep can increase delta-wave amplitude, which some studies link to better memory consolidation; benefits for physical recovery have not been shown. The key is precise timing \u2014 the sound must lock to the wave\u2019s phase, which is why real-time EEG matters.",
     },
   ],
   "physiological-concentration-flow-state-hardwired": [
@@ -1392,7 +1392,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Can you actually measure meditation progress?",
       answer:
-        "Yes. Meditation produces measurable changes — brain structure within weeks, gamma waves that rise with experience, lower stress hormones, and stronger HRV. While brain changes need a lab, HRV and resting heart rate are trackable at home and reliably respond to practice, giving you objective progress instead of guesswork.",
+        "Partly. Some changes are measurable: experienced meditators show brain differences such as higher gamma (cross-sectional findings), and trials show small falls in heart rate and blood pressure, while HRV findings are mixed. Brain changes need a lab, but pulse, breathing and HRV can be tracked at home and often shift during practice. Read them as feedback on how your body responds, not as proof of progress.",
     },
     {
       question: "How long until meditation shows results?",
@@ -1580,7 +1580,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "What is gamma synchrony and why does it matter?",
       answer:
-        "Gamma synchrony is fast (above ~30 Hz), highly coordinated brain activity linked to peak awareness and the binding of information into unified experience. Expert meditators produce it powerfully and at will, showing that high-level brain states are trainable skills, not fixed traits.",
+        "Gamma synchrony is fast (above ~30 Hz), highly coordinated brain activity linked to heightened awareness and the binding of information into unified experience. Small studies found that expert meditators could produce strong gamma synchrony during practice. This suggests that high-level brain states can be trained, though comparing experts with beginners cannot rule out other differences between them.",
     },
     {
       question: "What does expert research mean for a beginner?",
@@ -1786,22 +1786,22 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Does meditation experience increase gamma waves?",
       answer:
-        "Yes — research found gamma amplitude positively correlated with meditation experience: the more you've practiced, the higher your gamma. This makes it a progress-linked brain marker, evidence that meditation builds a measurable capacity over time.",
+        "Possibly. One study found gamma amplitude positively correlated with meditation experience: people with more practice tended to have higher gamma. Because it compared different people at one point in time, it cannot show that practice raised anyone's gamma.",
     },
     {
       question: "Do different meditation types produce the same brain changes?",
       answer:
-        "They share a core. Elevated gamma appeared across Vipassana, Himalayan Yoga, and Isha Shoonya practitioners, and EEG classifiers distinguished meditative states across four traditions with ~91% accuracy — suggesting a common measurable signature of deep meditation, stronger in advanced practitioners.",
+        "They seem to share some features. Elevated gamma appeared in Vipassana, Himalayan Yoga and Isha Shoonya practitioners, and EEG classifiers told meditative from non-meditative states apart across four traditions with high accuracy, more so in advanced practitioners. These are small cross-sectional studies, so they suggest a common signature rather than prove one.",
     },
     {
       question: "Can I measure my own meditation progress?",
       answer:
-        "Not gamma waves at home — but you can track heart rate variability (HRV), which also strengthens with meditation practice and reflects the same trained calm. A rising HRV baseline is an accessible, at-home marker of the progress brain research shows is real.",
+        "Not gamma waves at home. You can track pulse, breathing and heart rate variability (HRV), which often rises during slow, calm practice; lasting changes in resting HRV after meditation courses are mixed. Use them as feedback on how your body responds, not as a measure of brain change.",
     },
     {
       question: "Is meditation a trainable skill?",
       answer:
-        "The evidence strongly suggests so. Both gamma waves and the distinctiveness of the meditative brain state increase with experience — meaning meditation builds measurable capacity over time, like physical training, rather than being a fixed ability you either have or don't.",
+        "The evidence suggests so, but it is mostly indirect. Gamma and the distinctiveness of the meditative brain state are greater in experienced practitioners, yet these studies compare different people, so they can't rule out that people with these brains simply keep meditating longer.",
     },
   ],
   "rajyoga-open-eye-meditation": [
@@ -1941,7 +1941,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Does Tanden (Zen) breathing work for beginners?",
       answer:
-        "Yes. A Japanese study had 15 people with no meditation experience do 20 minutes of focused Tanden breathing and measured prefrontal-cortex activation, a shift toward calm alpha EEG, and a significant rise in whole-blood serotonin — with reduced negative mood. Meaningful benefits arrive from the very first sessions, no experience needed.",
+        "Possibly. A Japanese study had 15 people with no meditation experience do 20 minutes of focused Tanden breathing and measured prefrontal-cortex activation, a shift toward alpha EEG, and a significant rise in whole-blood serotonin, with reduced negative mood. It was one small study without a control group, so it suggests, but does not prove, that beginners benefit from the first sessions.",
     },
     {
       question: "Can breathing lift mood, not just calm you down?",

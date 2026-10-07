@@ -10,9 +10,11 @@ import HrvContextBox from '../components/HrvContextBox'
 import FastBreathingSafetyBlock from '../components/FastBreathingSafetyBlock'
 import RedLightSafetyBlock from '../components/RedLightSafetyBlock'
 import SaunaSafetyBlock from '../components/SaunaSafetyBlock'
+import HeadsetMeasuresNote from '../components/HeadsetMeasuresNote'
 import { hasFastBreathingProduct } from '../data/fast-breathing-safety-i18n'
 import { hasRedLightProduct } from '../data/red-light-safety-i18n'
 import { hasSaunaProduct } from '../data/sauna-safety-i18n'
+import { hasHeadsetProduct } from '../data/headset-measures-i18n'
 import ColdSafetyBlock from '../components/ColdSafetyBlock'
 import MouthTapeSafetyBlock, { MOUTH_TAPE_SAFETY_CATEGORY, mouthTapeSafetyVariant } from '../components/MouthTapeSafetyBlock'
 import { storeCt } from '../lib/storeCt'
@@ -102,6 +104,7 @@ export function HeadToHeadPage() {
       {hasFastBreathingProduct(products.map((p) => p.slug)) && <FastBreathingSafetyBlock lang={lang} />}
       {hasRedLightProduct(products) && <RedLightSafetyBlock lang={lang} />}
       {hasSaunaProduct(products) && <SaunaSafetyBlock lang={lang} />}
+      {hasHeadsetProduct(products) && <HeadsetMeasuresNote lang={lang} />}
 
       {/* Product cards — scores side by side. Renders 2 or 3 columns
           depending on whether the duel includes a third product. */}

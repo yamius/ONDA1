@@ -1066,11 +1066,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:biofeedback": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-06T12:45:35.000Z"
+    "modified": "2026-10-07T18:38:03.000Z"
   },
   "glossary:p300": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T18:38:03.000Z"
   },
   "glossary:saccades": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1078,11 +1078,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:theta-state": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T18:38:03.000Z"
   },
   "glossary:alpha-state": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T18:38:03.000Z"
   },
   "glossary:cognitive-gap": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1122,7 +1122,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:gamma-binding": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T18:38:03.000Z"
   },
   "glossary:cholinergic-modulation": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1134,11 +1134,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:beta-rhythm": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T18:38:03.000Z"
   },
   "glossary:frontal-lobes": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T18:38:03.000Z"
   },
   "glossary:hippocampus": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1162,7 +1162,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:flow-state": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T18:38:03.000Z"
   },
   "glossary:hormones": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1174,7 +1174,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:gamma-synchronization": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T18:38:03.000Z"
   },
   "glossary:medial-prefrontal-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1230,7 +1230,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:inter-brain-synchrony": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T18:38:03.000Z"
   },
   "glossary:interference": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1270,7 +1270,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:synchronization": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T18:38:03.000Z"
   },
   "glossary:oxytocin-system": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1278,7 +1278,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:inter-brain-coherence": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-05T21:25:12.000Z"
+    "modified": "2026-10-07T18:38:03.000Z"
   },
   "glossary:circadian-rhythm": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1746,7 +1746,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-07T19:28:02+02:00"
+    "modified": "2026-10-07T19:42:40+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

@@ -2404,6 +2404,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1584,
     "height": 672
   },
+  "/images/science/evidence-eeg-neurofeedback.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-eeg-neurofeedback.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-eeg-neurofeedback.webp": {
+    "width": 1584,
+    "height": 672
+  },
   "/images/science/evidence-fast-breathing.avif": {
     "width": 1584,
     "height": 672

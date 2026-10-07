@@ -2500,7 +2500,7 @@ Part 7 "Sensorimotor Integration" develops deep processing of contours, shapes, 
 
 ## In ONDA Life
 
-Biofeedback principles underlie many ONDA practices. Connecting a fitness tracker or smartwatch provides real-time vitals during practice. Part 7 biomarkers (P300, saccadic stability, theta/alpha states) can be measured and trained through biofeedback approaches.
+Biofeedback principles underlie many ONDA practices. ONDA's feedback comes from heart signals: pulse and breathing rate from the iPhone camera or an Apple Watch, and a live coherence score with an Apple Watch. ONDA does not record EEG, so the brain markers named in Part 7 (P300, theta/alpha states) describe aims of the program, not something the app measures or trains. What EEG neurofeedback can and cannot do → [EEG neurofeedback: what the evidence shows](/science/evidence/eeg-neurofeedback)
 
 Read more, with the evidence → [HRV biofeedback: what the research shows](/science/evidence/hrv-biofeedback)`,
   },
@@ -2535,7 +2535,7 @@ Because a single brain response is small compared with background activity, rese
 
 ## In ONDA Life
 
-Part 7 lists "P300 Amplitude Increase" as a progress biomarker — indicating how quickly and efficiently the brain recognizes a significant stimulus. Higher P300 amplitude suggests improved signal-to-noise optimization and cognitive clarity.`,
+Part 7 names "P300 Amplitude Increase" as an aim of the practice. ONDA does not record EEG, so the app does not measure P300 and does not track it as progress; the phrase describes a goal of the program, not a result you can check in the app.`,
   },
   {
     slug: 'saccades',
@@ -2601,7 +2601,7 @@ Clinical and research EEG uses many electrodes and careful setup. Consumer headb
 
 ## In ONDA Life
 
-Part 7 "Perceptual Stabilization" involves "entering a Theta/Alpha state to ground the mind." Theta supports the transition from reactive thinking to observational presence — the cognitive gap that enables discernment.`,
+Part 7 "Perceptual Stabilization" uses the image of "entering a Theta/Alpha state to ground the mind." ONDA does not record EEG, so the app cannot tell whether you are in a theta state; the phrase describes the intended shift from reactive thinking to calmer observation — the cognitive gap that enables discernment.`,
   },
   {
     slug: 'alpha-state',
@@ -2622,7 +2622,7 @@ Part 7 "Perceptual Stabilization" involves "entering a Theta/Alpha state to grou
 
 ## In ONDA Life
 
-Part 7 "Perceptual Stabilization" involves "entering a Theta/Alpha state to ground the mind." Alpha supports relaxed alertness — the optimal state for cognitive clarity and signal-to-noise optimization.`,
+Part 7 "Perceptual Stabilization" uses the image of "entering a Theta/Alpha state to ground the mind." ONDA does not record EEG, so the app does not check your alpha rhythm; the phrase describes the intended state of relaxed, alert attention, not a measured brain rhythm.`,
   },
   {
     slug: 'cognitive-gap',
@@ -2929,7 +2929,7 @@ Scalp recordings of gamma are easily contaminated by muscle activity, including 
 
 ## In ONDA Life
 
-Part 8 "Gamma Binding and Cholinergic Modulation" synchronizes neurons at gamma frequency to assemble scattered elements of perception into a single, cohesive image. Combined with acetylcholine, this supports deep focus and unified perceptual experience.`,
+Part 8 "Gamma Binding and Cholinergic Modulation" takes gamma binding as its image: practice aimed at gathering scattered elements of perception into a single, cohesive picture during deep focus. ONDA does not record EEG, and there is no evidence that the practice synchronizes neurons at gamma frequency; the name describes the exercise's goal.`,
   },
   {
     slug: 'cholinergic-modulation',
@@ -3027,7 +3027,7 @@ Beta rhythm is measured with electroencephalography (EEG), which records electri
 
 ## In ONDA Life
 
-Part 8 lists "increased beta-rhythm power in the frontal lobes" as a biological marker of progress. It indicates improved neural resilience — the brain's ability to sustain focus and maintain cognitive control.`,
+Part 8 lists "increased beta-rhythm power in the frontal lobes" among its intended markers. ONDA does not record EEG, so the app does not measure beta power, and a change in beta power on its own would not show better focus or cognitive control. Read it as a description of the program's aim, not as a progress indicator.`,
   },
   {
     slug: 'frontal-lobes',
@@ -3063,7 +3063,7 @@ Injury to prefrontal areas more often causes problems with planning, attention, 
 
 ## In ONDA Life
 
-Part 8 targets the frontal lobes for "Deep Work" mode. Increased beta-rhythm power in the frontal lobes, along with dlPFC stabilization, supports sustained focus and neural resilience.`,
+Part 8 targets the frontal lobes for "Deep Work" mode — sustained, focused attention. Its text names frontal beta-rhythm power and dlPFC stabilization as aims; ONDA does not record EEG or brain activity, so these are goals of the practice, not something the app measures.`,
   },
   {
     slug: 'hippocampus',
@@ -3243,7 +3243,7 @@ Part 9 "Biological Belief" references changes in GSR as an indicator that the bo
 
 ## In ONDA Life
 
-Part 9 lists "Flow State: Predominance of Alpha and Theta rhythms, characteristic of creative flow and insight" as a result. When imagination becomes a precise program and the brain acts as an efficient executor, flow emerges — the vision and action unite.`,
+Part 9 lists "Flow State: Predominance of Alpha and Theta rhythms, characteristic of creative flow and insight" as an intended result. EEG studies of flow are small and point mainly to frontal theta with only moderate alpha, and ONDA does not record EEG, so the app does not check your brain rhythms. Here flow means the experience of vision and action working as one.`,
   },
   {
     slug: 'hormones',
@@ -3330,7 +3330,7 @@ Some meditation studies have reported higher gamma activity in long-term practit
 
 ## In ONDA Life
 
-Part 9 describes "instantaneous unification of neural ensembles for a 'flash' of understanding and image integrity." Gamma synchronization enables the mental image to cohere — the vision becomes a single, vivid whole.`,
+Part 9 describes "instantaneous unification of neural ensembles for a 'flash' of understanding and image integrity." This is an image for the moment a mental picture comes together as a single, vivid whole. ONDA does not record EEG and does not measure gamma synchronization, and the role of gamma in binding perception remains debated.`,
   },
   {
     slug: 'medial-prefrontal-cortex',
@@ -3753,7 +3753,7 @@ Relationship and context may matter too: some studies report stronger synchrony 
 
 ## In ONDA Life
 
-Part 11 lists "Inter-brain Synchrony" as a target: "the brain rhythms of partners begin to operate in a coherent mode." Biological markers include "synchronization of Heart Rate Variability (HRV) between partners and Alpha-rhythm brain coherence." This is co-resonance at the physiological level.`,
+Part 11 lists "Inter-brain Synchrony" as a target: "the brain rhythms of partners begin to operate in a coherent mode." Its intended markers include "synchronization of Heart Rate Variability (HRV) between partners and Alpha-rhythm brain coherence." ONDA does not record EEG and does not compare two people's signals, so these describe the aim of the practice, not markers the app measures.`,
   },
   {
     slug: 'interference',
@@ -4029,7 +4029,7 @@ Part 12 "Neural Coupling" practices synchronize attention and breathing rhythms 
 
 ## In ONDA Life
 
-Part 9 engages gamma synchronization for image integrity. Part 11 targets HRV synchronization between partners. Part 12 uses "Intentional Synchronization" for seamless joint task execution. Synchronization is the biological substrate of coordination and collective flow.`,
+Part 9 engages gamma synchronization for image integrity. Part 11 targets HRV synchronization between partners. Part 12 uses "Intentional Synchronization" for seamless joint task execution. These are aims of the practices: ONDA does not record EEG or compare HRV between people.`,
   },
   {
     slug: 'oxytocin-system',
@@ -4095,7 +4095,7 @@ Results depend strongly on analysis choices. Good studies compare real pairs aga
 
 ## In ONDA Life
 
-Part 12 lists "Inter-brain coherence" as a biological marker — alongside group HRV alignment and collective dopamine surges. Together with Gamma Synchronization, it enables collective insight and the instantaneous synthesis of ideas. The group becomes a living neural network.`,
+Part 12 lists "Inter-brain coherence" as an intended marker, alongside group HRV alignment and collective dopamine surges. ONDA does not record EEG, compare a group's HRV or measure dopamine, so these describe the aim of the practice — shared attention and joint insight — not measured results.`,
   },
   {
     slug: 'circadian-rhythm',

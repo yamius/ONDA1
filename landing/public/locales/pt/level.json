@@ -113,7 +113,7 @@
         "items": [
           { "name": "Cognitive Gap", "text": "Increasing the pause between an event and an automatic reaction to allow for freedom of choice." },
           { "name": "Cholinergic Modulation", "text": "Utilizing acetylcholine to literally \"highlight\" necessary neural connections during focus." },
-          { "name": "Gamma Binding", "text": "Synchronizing neurons at gamma frequency to assemble scattered fragments of experience into a single insight." },
+          { "name": "Gamma Binding", "text": "The aim of gathering scattered fragments of experience into a single insight. Research links this kind of binding to gamma-frequency activity, but its role is debated, and ONDA does not record EEG." },
           { "name": "Proactive Programming (RAS)", "text": "Tuning the brain's filters to automatically seek opportunities that match your internal vision." }
         ]
       },
@@ -230,7 +230,7 @@
         "parts": [
           { "label": "I Witness", "protocol": "Protocol: Neural Distance and Metacognitive Monitoring", "goal": "Objective: Transitioning from being a hostage of the stream of consciousness to becoming its Meta-Programmer.", "work": "Work: Deactivating the Default Mode Network (DMN) and establishing \"neural distance.\" Using sensory anchors to collapse internal dialogue and transform thoughts into transparent electrical impulses." },
           { "label": "I Integrate", "protocol": "Protocol: Global Neural Integration and Experience Synthesis", "goal": "Objective: Achieving maximum neural coherence — the brain as a single, frictionless supercomputer.", "work": "Work: Strengthening horizontal (inter-hemispheric) and vertical (cortex-body) connectivity. Utilizing the corpus callosum and mPFC to reconcile cognitive dissonance and unite logic with intuition." },
-          { "label": "I Synchronize", "protocol": "Protocol: Neuroelectric Synchronization and Collective Intelligence", "goal": "Objective: From \"I-mode\" to \"Network Node\" — activating inter-brain hyperscanning and collective flow.", "work": "Work: Triggering Gamma rhythms (40 Hz) and the Mirror Neuron System. Achieving neuroelectric phase-locking with others to access \"oceanic\" scale resources and solutions." }
+          { "label": "I Synchronize", "protocol": "Protocol: Neuroelectric Synchronization and Collective Intelligence", "goal": "Objective: From \"I-mode\" to \"Network Node\" — shared rhythm and collective flow with others.", "work": "Work: Shared breathing, joint attention and the Mirror Neuron System, inspired by hyperscanning research on how brain activity can align between people (early findings; ONDA does not record EEG). The aim: access \"oceanic\" scale resources and solutions." }
         ]
       },
       "biologicalProtocol": {
@@ -238,7 +238,7 @@
         "items": [
           { "name": "Metacognitive Labeling", "text": "Practices to \"tag\" mental events, activating the mPFC and stripping thoughts of their emotional charge." },
           { "name": "Inter-hemispheric Sync", "text": "Exercises for the corpus callosum to ensure seamless data flow between analytical and intuitive centers." },
-          { "name": "Gamma-Flow Tuning", "text": "Techniques to stabilize high-frequency (40 Hz) brain activity for collective insight and rapid learning." },
+          { "name": "Gamma-Flow Tuning", "text": "Techniques for sustaining shared, high-focus states for collective insight and rapid learning. Fast (40 Hz) gamma activity is the image here; ONDA does not record EEG." },
           { "name": "Limbic Decoupling", "text": "Training the PFC to register \"charged\" data without getting pulled into a stress reaction." }
         ]
       },

@@ -113,7 +113,7 @@
         "items": [
           { "name": "Espace cognitif", "text": "Allonger la pause entre un événement et une réaction automatique pour laisser place à la liberté de choix." },
           { "name": "Modulation cholinergique", "text": "Utiliser l’acétylcholine pour « surligner » littéralement les connexions neuronales nécessaires pendant la concentration." },
-          { "name": "Liaison gamma", "text": "Synchroniser les neurones en fréquence gamma pour assembler des fragments épars d’expérience en une seule intuition." },
+          { "name": "Liaison gamma", "text": "L’objectif : assembler des fragments épars d’expérience en une seule intuition. La recherche relie ce type de liaison à l’activité en fréquence gamma, mais son rôle reste débattu, et ONDA n’enregistre pas d’EEG." },
           { "name": "Programmation proactive (SAR)", "text": "Régler les filtres du cerveau pour qu’ils cherchent automatiquement les occasions correspondant à votre vision intérieure." }
         ]
       },
@@ -230,7 +230,7 @@
         "parts": [
           { "label": "Je suis témoin", "protocol": "Protocole : distance neuronale et surveillance métacognitive", "goal": "Objectif : passer d’otage du flux de conscience à son méta-programmeur.", "work": "Travail : désactiver le réseau du mode par défaut (DMN) et établir une « distance neuronale ». Utiliser des ancres sensorielles pour faire taire le dialogue intérieur et transformer les pensées en impulsions électriques transparentes." },
           { "label": "J’intègre", "protocol": "Protocole : intégration neuronale globale et synthèse de l’expérience", "goal": "Objectif : atteindre une cohérence neuronale maximale — le cerveau comme un supercalculateur unique et sans friction.", "work": "Travail : renforcer la connectivité horizontale (entre les hémisphères) et verticale (cortex–corps). Utiliser le corps calleux et le CPFm pour résoudre la dissonance cognitive et unir la logique à l’intuition." },
-          { "label": "Je synchronise", "protocol": "Protocole : synchronisation neuroélectrique et intelligence collective", "goal": "Objectif : du « mode Je » au « nœud de réseau » — hyperscanning inter-cerveaux et flow collectif.", "work": "Travail : déclencher les rythmes gamma (40 Hz) et le système des neurones miroirs. Atteindre un verrouillage de phase neuroélectrique avec les autres pour accéder à des ressources et des solutions d’ampleur « océanique »." }
+          { "label": "Je synchronise", "protocol": "Protocole : synchronisation neuroélectrique et intelligence collective", "goal": "Objectif : du « mode Je » au « nœud de réseau » — rythme partagé et flow collectif avec les autres.", "work": "Travail : respiration partagée, attention conjointe et système des neurones miroirs, inspirés des études d’hyperscanning sur la façon dont l’activité cérébrale peut s’aligner entre personnes (résultats préliminaires ; ONDA n’enregistre pas d’EEG). L’objectif : accéder à des ressources et des solutions d’ampleur « océanique »." }
         ]
       },
       "biologicalProtocol": {
@@ -238,7 +238,7 @@
         "items": [
           { "name": "Étiquetage métacognitif", "text": "Des pratiques pour « étiqueter » les événements mentaux, activer le CPFm et ôter aux pensées leur charge émotionnelle." },
           { "name": "Synchronisation interhémisphérique", "text": "Des exercices pour le corps calleux afin que les données circulent sans heurt entre les centres analytiques et intuitifs." },
-          { "name": "Accord du flow gamma", "text": "Des techniques pour stabiliser une activité cérébrale à haute fréquence (40 Hz) au service des intuitions collectives et d’un apprentissage rapide." },
+          { "name": "Accord du flow gamma", "text": "Des techniques pour maintenir des états partagés de haute concentration au service des intuitions collectives et d’un apprentissage rapide. L’activité gamma rapide (40 Hz) n’est ici qu’une image ; ONDA n’enregistre pas d’EEG." },
           { "name": "Découplage limbique", "text": "Entraîner le CPF à enregistrer des données « chargées » sans se laisser entraîner dans une réaction de stress." }
         ]
       },

@@ -23,6 +23,7 @@ Binding terminology for `content/science-i18n/<lang>/` and for any translated ar
 | uk | high ventilation breathwork | «практики інтенсивного (швидкого) дихання» (mirrors the ru decision 2026-10-07) |
 | ru | tummo | «туммо» (owner decision 2026-10-07) |
 | uk | Wim Hof | **«Вім Гоф»** — Ukrainian transliteration h → г (owner decision 2026-10-07) |
+| ru/uk | sham (control/feedback) | **«имитационная (sham)»** / **«імітаційна (sham)»** at first mention, then «имитация» / «імітація» (owner decision 2026-10-08) |
 | ru/uk | photobiomodulation | «фотобиомодуляция (PBM)» / «фотобіомодуляція (PBM)» at first mention, then **PBM** — never «ФБМ» (owner decision 2026-10-08; same principle as HRV) |
 | fr | red light therapy | **«thérapie par lumière rouge (photobiomodulation)»**; never «luminothérapie rouge» (in France luminothérapie = bright-light therapy for winter depression). Short meta title «Lumière rouge» is fine (owner decision 2026-10-08) |
 | de | evidence class "Emerging" | **«Erste Hinweise»**; not «Vorläufig», «aufkommend» or «Früh» (owner decision 2026-10-08) |
