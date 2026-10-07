@@ -23,6 +23,8 @@ Binding terminology for `content/science-i18n/<lang>/` and for any translated ar
 | uk | high ventilation breathwork | «практики інтенсивного (швидкого) дихання» (mirrors the ru decision 2026-10-07) |
 | ru | tummo | «туммо» (owner decision 2026-10-07) |
 | uk | Wim Hof | **«Вім Гоф»** — Ukrainian transliteration h → г (owner decision 2026-10-07) |
+| uk | "with the participation of" (study populations) | **«за участю»**; not «за участі» (owner decision 2026-10-07) |
+| ru/uk | Kox 2014 groups (fact study.kox2014.groups) | ru «двенадцать добровольцев, прошедших обучение методу, и двенадцать — без обучения»; uk «дванадцять добровольців, які пройшли навчання методу, і дванадцять — без навчання» (owner decision 2026-10-07) |
 | es | "never in water" (meta/short texts) | **«nunca lo practiques en el agua»**; not «el agua está prohibida» (owner decision 2026-10-07) |
 | pl | altered states / "high" from breathwork | **«odmienne stany świadomości»**; never slang «haj» (owner decision 2026-10-07) |
 | it | altered states / "high" from breathwork | **«stati alterati di coscienza»**; never slang «sballo» (owner decision 2026-10-07) |
