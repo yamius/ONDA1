@@ -2,7 +2,7 @@
 sourceHash: "0b230da8f884"
 title: "Respiración rápida: qué muestra la evidencia y cuáles son los riesgos reales"
 metaTitle: "Respiración rápida: evidencia y riesgos reales"
-metaDescription: "Wim Hof, respiración holotrópica, tummo e hiperventilación cíclica: qué muestran los estudios sobre inflamación, ánimo y deporte, y por qué el agua está prohibida."
+metaDescription: "Wim Hof, respiración holotrópica, tummo e hiperventilación cíclica: qué muestran los estudios sobre inflamación, ánimo y deporte. Nunca lo practiques en el agua."
 shortAnswer: >
   La respiración rápida abarca prácticas como la respiración Wim Hof, la
   respiración holotrópica, el tummo y la hiperventilación cíclica. Respirar más

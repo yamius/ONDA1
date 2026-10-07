@@ -19,3 +19,10 @@ Binding terminology for `content/science-i18n/<lang>/` and for any translated ar
 | zh | neuroception | 神经觉 with the English term in brackets at the first mentions: 神经觉（neuroception） (owner decision 2026-10-06) |
 | fr | cold shock response | **«réponse de choc au froid»** (or «choc dû au froid»); at the first body mention add the everyday French word: «(ce que l’on appelle couramment l’« hydrocution »)». Never «choc thermique» — in French it reads as heat stroke (owner decision 2026-10-06) |
 | fr | gasp (cold shock) | **«inspiration réflexe brutale (gasp)»**; not «hoquet inspiratoire» (owner decision 2026-10-06) |
+| ru | high ventilation breathwork | **«практики интенсивного (быстрого) дыхания»**; not «высоковентиляционные дыхательные практики» (owner decision 2026-10-07) |
+| uk | high ventilation breathwork | «практики інтенсивного (швидкого) дихання» (mirrors the ru decision 2026-10-07) |
+| ru | tummo | «туммо» (owner decision 2026-10-07) |
+| uk | Wim Hof | **«Вім Гоф»** — Ukrainian transliteration h → г (owner decision 2026-10-07) |
+| es | "never in water" (meta/short texts) | **«nunca lo practiques en el agua»**; not «el agua está prohibida» (owner decision 2026-10-07) |
+| pl | altered states / "high" from breathwork | **«odmienne stany świadomości»**; never slang «haj» (owner decision 2026-10-07) |
+| it | altered states / "high" from breathwork | **«stati alterati di coscienza»**; never slang «sballo» (owner decision 2026-10-07) |

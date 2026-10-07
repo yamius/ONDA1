@@ -76,7 +76,7 @@ evidenceMap:
 
 **Spada poziom dwutlenku węgla.** Oddychanie ponad potrzeby organizmu wypłukuje dwutlenek węgla z krwi (hipokapnia). Krew staje się bardziej zasadowa: u biegaczy stosujących oddychanie metodą Wima Hofa wydychany dwutlenek węgla spadał do poziomów wskazujących na zasadowicę oddechową [S6].
 
-**Zwężają się naczynia krwionośne mózgu.** Niski poziom dwutlenku węgla zwiększa opór naczyń mózgowych i zmniejsza przepływ krwi przez mózg [S10]. To prawdopodobne źródło zawrotów głowy i „haju”, który opisują niektórzy.
+**Zwężają się naczynia krwionośne mózgu.** Niski poziom dwutlenku węgla zwiększa opór naczyń mózgowych i zmniejsza przepływ krwi przez mózg [S10]. To prawdopodobne źródło zawrotów głowy i odmiennych stanów świadomości, które opisują niektórzy.
 
 **Mrowienie i skurcze.** Mrowienie palców i warg, a czasem skurcze dłoni, występują często. Zwykle przypisuje się je spadkowi wapnia zjonizowanego, gdy krew staje się zasadowa, ale jedno małe badanie wykazało mrowienie u każdego ochotnika bez istotnej zmiany wapnia zjonizowanego [S11]. Dokładny mechanizm jest przedmiotem sporu.
 

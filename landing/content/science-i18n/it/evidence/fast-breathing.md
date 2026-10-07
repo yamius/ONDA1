@@ -76,7 +76,7 @@ Qui per "respirazione rapida" si intende respirare di proposito più velocemente
 
 **L'anidride carbonica scende.** Respirare più di quanto serva al corpo elimina l'anidride carbonica dal sangue (ipocapnia). Il sangue diventa più alcalino: in runner che praticavano la respirazione Wim Hof, l'anidride carbonica espirata è scesa a livelli che indicano un'alcalosi respiratoria [S6].
 
-**I vasi sanguigni del cervello si restringono.** Poca anidride carbonica aumenta la resistenza dei vasi cerebrali e riduce il flusso sanguigno al cervello [S10]. È la probabile origine del senso di testa leggera e dello "sballo" che alcune persone descrivono.
+**I vasi sanguigni del cervello si restringono.** Poca anidride carbonica aumenta la resistenza dei vasi cerebrali e riduce il flusso sanguigno al cervello [S10]. È la probabile origine del senso di testa leggera e degli stati alterati di coscienza che alcune persone descrivono.
 
 **Formicolii e crampi.** Formicolii a dita e labbra, e talvolta crampi alle mani, sono comuni. Di solito vengono attribuiti a un calo del calcio ionizzato quando il sangue diventa alcalino, ma un piccolo studio ha rilevato formicolii in tutti i volontari senza variazioni significative del calcio ionizzato [S11]. Il meccanismo esatto è dibattuto.
 
