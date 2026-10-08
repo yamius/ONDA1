@@ -42,7 +42,9 @@
     "sexMale": "mężczyźni",
     "nearest": "Badanie podaje dwuletnie grupy wiekowe co pięć lat. Bierzemy grupę najbliższą twojemu wiekowi i nie szacujemy wartości pośrednich.",
     "edgeYoung": "Dane zaczynają się od 20 lat, więc porównanie dotyczy najmłodszej grupy (20–21).",
-    "edgeOld": "Dane kończą się na 61 latach, więc porównanie dotyczy najstarszej grupy (60–61)."
+    "edgeOld": "Dane kończą się na 61 latach, więc porównanie dotyczy najstarszej grupy (60–61).",
+    "infoOnly": "Tylko informacyjnie — użytkownicy Fitbit ({{sex}}) w wieku {{band}} lat: środkowa połowa miała {{p25}}–{{p75}} ms, mediana wynosiła {{p50}} ms (RMSSD, 6–7 rano).",
+    "noCompare": "Opublikowane dane kończą się na 61 latach; dla twojego wieku nie wykonujemy porównania."
   },
   "verdicts": {
     "lower": "Niższe niż u większości użytkowników Fitbit w twoim wieku",
@@ -50,6 +52,7 @@
     "higher": "Wyższe niż u większości użytkowników Fitbit w twoim wieku"
   },
   "disclaimerLine": "To porównanie z użytkownikami jednego urządzenia, a nie norma medyczna. Ważniejszy jest twój własny trend.",
+  "deviceNote": "Rozkład pochodzi z danych z nadgarstka Fitbit; inne urządzenia (Oura, Whoop, Garmin, Polar, Apple) liczą HRV inaczej, więc porównanie jest przybliżone.",
   "summaries": {
     "lower": "Wartość poniżej środkowej połowy zdarza się często i sama w sobie niewiele mówi: mogą ją wyjaśniać geny, urządzenie, pora pomiaru, krótka noc, alkohol, choroba lub ciężki trening. Sprawdzaj, czy twoja średnia z 7 dni pozostaje poniżej twojego zwykłego zakresu.",
     "middle": "Jedna czwarta użytkowników miała niższe wartości, a jedna czwarta wyższe. Bardziej przydatne od tego porównania jest to, czy twoje HRV pozostaje stabilne lub rośnie w kolejnych tygodniach.",

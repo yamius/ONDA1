@@ -11,7 +11,7 @@
  */
 import { readFileSync, writeFileSync, existsSync } from 'node:fs'
 import { join } from 'node:path'
-import { HRV_AGE_POINTS, HRV_COMPARISON_DISCLAIMER, HRV_POSITION_TEXT, HRV_VERDICT_TEXT } from '../src/data/hrv-norms'
+import { HRV_AGE_POINTS, HRV_COMPARISON_DISCLAIMER, HRV_DEVICE_NOTE, HRV_MAX_COMPARED_AGE, HRV_NO_COMPARISON_NOTE, HRV_POSITION_TEXT, HRV_VERDICT_TEXT } from '../src/data/hrv-norms'
 import { HRV_WIDGET_VERSION } from '../src/data/hrv-widget-version'
 
 const OUT = join(process.cwd(), 'public', 'embed', 'onda-hrv-widget.js')
@@ -29,6 +29,7 @@ const js = `/*!
  * Lancet Digital Health, Supplementary Table S3, 6–7 a.m.). A comparison with
  * users of one device, not a medical norm. No interpolation between age groups.
  * Sex "Prefer not to say" shows the comparison with both groups, no single verdict.
+ * Ages above ${HRV_MAX_COMPARED_AGE}: no verdict (the data end at 61); the oldest group is shown for information.
  *
  * Usage on any page:
  *   <div data-onda-hrv></div>
@@ -54,6 +55,9 @@ ${points}
   var VERDICT = ${JSON.stringify(HRV_VERDICT_TEXT)};
   var POSITION = ${JSON.stringify(HRV_POSITION_TEXT)};
   var DISCLAIMER = ${JSON.stringify(HRV_COMPARISON_DISCLAIMER)};
+  var DEVICE_NOTE = ${JSON.stringify(HRV_DEVICE_NOTE)};
+  var MAX_COMPARED_AGE = ${HRV_MAX_COMPARED_AGE};
+  var NO_COMPARISON = ${JSON.stringify(HRV_NO_COMPARISON_NOTE)};
   var VERDICT_COLOR = { lower: '#fbbf24', middle: '#22d3ee', higher: '#34d399' };
 
   // Nearest age group by distance to its two-year span; a tie goes to the younger group.
@@ -131,6 +135,22 @@ ${points}
         out.innerHTML = '<p class="ondahrv__hint">Enter age (18–100) and RMSSD (1–250 ms).</p>';
         return;
       }
+      if (a > MAX_COMPARED_AGE) {
+        var groups = sex === 'unspecified' ? ['female', 'male'] : [sex];
+        var info = '';
+        for (var g = 0; g < groups.length; g++) {
+          var x = interpret(a, groups[g], r);
+          info += '<p class="ondahrv__note">For information only — Fitbit ' + (groups[g] === 'male' ? 'men' : 'women') + ' aged ' + x.point.label +
+            ': middle half ' + x.q[0] + '–' + x.q[2] + ' ms, median ' + x.q[1] + ' ms (RMSSD, 6–7 a.m.).</p>';
+        }
+        out.innerHTML =
+          '<div class="ondahrv__out">' +
+            '<p class="ondahrv__disc">' + NO_COMPARISON + '</p>' + info +
+            '<p class="ondahrv__disc">' + DEVICE_NOTE + '</p>' +
+            '<p class="ondahrv__disc">' + DISCLAIMER + '</p>' +
+          '</div>';
+        return;
+      }
       var edge = a < POINTS[0].min ? ' The data start at age 20.' : a > POINTS[POINTS.length - 1].max ? ' The data stop at age 61.' : '';
       if (sex === 'unspecified') {
         var f = interpret(a, 'female', r), m = interpret(a, 'male', r);
@@ -142,6 +162,7 @@ ${points}
           '<div class="ondahrv__out">' + line('women', f) + line('men', m) +
             '<p class="ondahrv__note">RMSSD, 6–7 a.m.' + edge + '</p>' +
             '<p class="ondahrv__disc">' + DISCLAIMER + '</p>' +
+            '<p class="ondahrv__disc">' + DEVICE_NOTE + '</p>' +
           '</div>';
         return;
       }
@@ -152,6 +173,7 @@ ${points}
           '<p class="ondahrv__note">Compared with Fitbit ' + (sex === 'male' ? 'men' : 'women') + ' aged ' + res.point.label +
             ': middle half ' + res.q[0] + '–' + res.q[2] + ' ms, median ' + res.q[1] + ' ms (RMSSD, 6–7 a.m.).' + edge + '</p>' +
           '<p class="ondahrv__disc">' + DISCLAIMER + '</p>' +
+          '<p class="ondahrv__disc">' + DEVICE_NOTE + '</p>' +
         '</div>';
     }
     ageEl.addEventListener('input', render);

@@ -1,7 +1,7 @@
 {
   "name": "onda-life",
   "version": "1.0.0",
-  "description": "HRV norms by age, guided breathing, free practices and honest wearable comparisons.",
+  "description": "HRV by age compared with Fitbit users, guided breathing, free practices and honest wearable comparisons.",
   "author": {
     "name": "ONDA Life",
     "email": "info@onda-life.com",
@@ -13,7 +13,7 @@
   "interface": {
     "displayName": "ONDA Life",
     "shortDescription": "HRV, breathing & practices",
-    "longDescription": "ONDA helps you understand your heart rate variability and practice better. Check your HRV against age norms (Apple Watch SDNN or RMSSD), follow a live guided breathing session, find a free short practice for your goal, and compare wearables and wellness apps using ONDA's independent reviews. No account needed. ONDA is a wellness tool, not a medical device.\n\nFour read-only tools, each with an interactive card:\n- Check HRV for your age: where one HRV value sits against population norms, with a percentile scale.\n- Breathe now: a live animated breathing guide with a timer (slow breathing, 4-7-8, box, physiological sigh, longer exhale).\n- Find an ONDA practice: 1-3 free 6-minute guided practices for calm, sleep, focus or energy, each playable free in the browser.\n- Compare devices or apps: 2-3 wearables or wellness apps side by side from ONDA's evidence-based reviews (price, subscription, HRV metric, score, verdict).\n\nIf acute symptoms such as chest pain or fainting are mentioned, the HRV tool does not interpret numbers and points to urgent medical help. Nothing you send is stored.",
+    "longDescription": "ONDA helps you understand your heart rate variability and practice better. Compare your HRV (RMSSD) with a published distribution from one wearable’s users (Natarajan 2020, Fitbit; a comparison, not a medical norm), follow a live guided breathing session, find a free short practice for your goal, and compare wearables and wellness apps using ONDA's independent reviews. No account needed. ONDA is a wellness tool, not a medical device.\n\nFour read-only tools, each with an interactive card:\n- Compare HRV with Fitbit users your age: whether one RMSSD value is lower than most, within the middle half or higher than most, in a comparison with a published distribution from one wearable’s users (Natarajan 2020, Fitbit); Apple Watch SDNN is not compared.\n- Breathe now: a live animated breathing guide with a timer (slow breathing, 4-7-8, box, physiological sigh, longer exhale).\n- Find an ONDA practice: 1-3 free 6-minute guided practices for calm, sleep, focus or energy, each playable free in the browser.\n- Compare devices or apps: 2-3 wearables or wellness apps side by side from ONDA's evidence-based reviews (price, subscription, HRV metric, score, verdict).\n\nIf acute symptoms such as chest pain or fainting are mentioned, the HRV tool does not interpret numbers and points to urgent medical help. Nothing you send is stored.",
     "developerName": "ONDA Life",
     "category": "Healthcare",
     "capabilities": ["Read", "Interactive"],

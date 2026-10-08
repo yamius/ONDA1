@@ -20,7 +20,7 @@ Sources: [submission](https://claude.com/docs/connectors/building/submission), [
 | Valid input → success; invalid input → actionable error | ✅ v1.4.0: errors name the rule (“goal must be one of calm, sleep, focus or energy”) and never echo the values; no more generic “could not process” |
 | Reasonably sized responses | ✅ a few KB per call (limit ≈150,000 chars) |
 | No conversation data beyond what the tool needs; no memory or chat history | ✅ only tool parameters; `_meta` hints ignored |
-| Own first-party API | ✅ data is ONDA’s own (site reviews, norms, practices), bundled in the server |
+| Own first-party API | ✅ data is ONDA’s own (site reviews, published HRV distribution, practices), bundled in the server |
 | Server domain matches the service | ✅ `onda-life.com/mcp` on the main domain (a rewrite to the server project; responses, headers and cards pass through unchanged — checked with Inspector) |
 | Authentication | ✅ **none** is supported by default for public data. Origin checks are not required (Claude calls come from Anthropic’s backend, `160.79.104.0/21`, not the browser) |
 | Documentation URL | ✅ new page `https://onda-life.com/ai-apps` (built, see §4) |
@@ -38,7 +38,7 @@ Sources: [submission](https://claude.com/docs/connectors/building/submission), [
 | Field | Value |
 |---|---|
 | Server name (≤100) | ONDA Life |
-| One-liner (≤200) | HRV norms by age, guided breathing, free practices and honest wearable comparisons. |
+| One-liner (≤200) | HRV by age compared with Fitbit users, guided breathing, free practices and honest wearable comparisons. |
 | Categories (1–5) | Health & Wellness (and Lifestyle, if offered) |
 | Documentation URL | https://onda-life.com/ai-apps |
 | Privacy policy URL | https://onda-life.com/privacy |
@@ -48,15 +48,15 @@ Sources: [submission](https://claude.com/docs/connectors/building/submission), [
 | Use cases | Check whether an HRV value is typical for your age; do a short guided breathing exercise; find a free 6-minute practice for calm, sleep, focus or energy; compare HRV wearables and wellness apps before buying. |
 | What users need first | Nothing — no account, no device. Optional: an HRV value from a wearable. |
 | Reads / writes | Reads only. |
-| Data handling | Own data (ONDA’s reviews, norms and practices). **Handles personal health data: yes** — age and an HRV value are processed to compute the answer and not stored. Sponsored content: no; links to the ONDA app are our own product, and the reviews are not paid. |
+| Data handling | Own data (ONDA’s reviews, a published HRV distribution and practices). **Handles personal health data: yes** — age and an HRV value are processed to compute the answer and not stored. Sponsored content: no; links to the ONDA app are our own product, and the reviews are not paid. |
 | Company | ONDA Life · https://onda-life.com · primary contact Yakiv Bilenko, info@onda-life.com |
 
 **Description (≤2,000):**
 
-> ONDA helps you understand your heart rate variability and practice better. Check your HRV against age norms (Apple Watch SDNN or RMSSD), follow a live guided breathing session, find a free short practice for your goal, and compare wearables and wellness apps using ONDA's independent reviews. No account needed. ONDA is a wellness tool, not a medical device.
+> ONDA helps you understand your heart rate variability and practice better. Compare your HRV (RMSSD) with a published distribution from one wearable’s users (Natarajan 2020, Fitbit; a comparison, not a medical norm), follow a live guided breathing session, find a free short practice for your goal, and compare wearables and wellness apps using ONDA's independent reviews. No account needed. ONDA is a wellness tool, not a medical device.
 >
 > Four read-only tools, each with an interactive card:
-> • Check HRV for your age — where one HRV value sits against population norms, with a percentile scale.
+> • Compare HRV with Fitbit users your age — whether one RMSSD value is lower than most, within the middle half or higher than most, in a comparison with a published distribution from one wearable’s users (Natarajan 2020, Fitbit); Apple Watch SDNN is not compared.
 > • Breathe now — a live animated breathing guide with a timer (slow breathing, 4-7-8, box, physiological sigh, longer exhale).
 > • Find an ONDA practice — 1–3 free 6-minute guided practices for calm, sleep, focus or energy, playable in the browser.
 > • Compare devices or apps — 2–3 wearables or wellness apps side by side from ONDA’s evidence-based reviews: price, subscription, HRV metric, score and verdict.
@@ -69,7 +69,7 @@ Current title “9. ONDA App in ChatGPT” → **“9. ONDA App in ChatGPT and C
 
 > **9. ONDA App in ChatGPT and Claude**
 >
-> ONDA Life offers an app inside ChatGPT and a connector in Claude. Both use the same server, which can check an HRV value against age norms, guide a breathing session, suggest a short practice, and compare wearables and wellness apps using our reviews. You do not need an ONDA account to use it.
+> ONDA Life offers an app inside ChatGPT and a connector in Claude. Both use the same server, which can compare an HRV value with a published distribution from one wearable’s users (Natarajan 2020, Fitbit), guide a breathing session, suggest a short practice, and compare wearables and wellness apps using our reviews. You do not need an ONDA account to use it.
 >
 > **What we receive.** When ChatGPT or Claude uses one of our tools, our server receives only the parameters that tool needs to answer. Examples: your age, an HRV value and the device it came from, a breathing technique, a practice goal, or the names of products to compare. ChatGPT or Claude may also attach technical hints to a request, such as your language, an approximate location or an anonymous identifier. Our server does not use or store them. We do not receive your conversation history, only the parameters of each tool call.
 >
@@ -108,7 +108,7 @@ No account or credentials needed: add `https://onda-life.com/mcp` as a connector
 
 | # | Prompt | Expected |
 |---|---|---|
-| 1 | I'm 42 and my Apple Watch says my HRV is 38. Is that normal? | `check_hrv` card: SDNN scale, age band 35–44, ~40th percentile, “Within the typical range, slightly below the median”. |
+| 1 | I'm 42 and my Apple Watch says my HRV is 38. Is that normal? | `check_hrv` card: 38 ms SDNN “not compared” — the published distribution (Natarajan 2020, Fitbit) is for RMSSD only; suggests comparing the weekly average with your own baseline. |
 | 2 | I can't fall asleep, my mind is racing. Can you help me breathe? | `breathe_now` card: live breathing circle, Start/Stop, timer. |
 | 3 | Show me 4-7-8 breathing | `breathe_now` card for 4-7-8 (in 4 · hold 7 · out 8) with the breath-hold caution. |
 | 4 | I want to start meditating, I have 10 minutes, I'm a beginner. | `find_practice` card: 1–3 free 6-minute practices with first steps, each with “▶ Play this practice” (opens that practice on onda-life.com/emoton); below, buttons “Try free now in the browser” and “Full version with pulse — App Store”. |
