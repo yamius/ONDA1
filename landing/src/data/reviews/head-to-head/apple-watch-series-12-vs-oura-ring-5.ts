@@ -17,7 +17,7 @@ const series12VsOura5: HeadToHead = {
   bestForB:
     'Choose the Oura Ring 5 if overnight HRV and sleep are the point: finger measurement is more precise, the slim ring is easy to sleep in, and its battery lasts 6–9 days.',
   axes: [
-    { name: 'Overnight HRV precision', winner: 'b', note: 'The Oura Ring 5’s overnight RMSSD remains the closest consumer match to an ECG chest strap, now on redesigned sensors with 12 signal pathways. The Series 12 is much improved but still wrist optical.' },
+    { name: 'Overnight HRV precision', winner: 'b', note: 'Earlier Oura generations agreed with ECG more closely than others in one overnight study; the Ring 5 itself, on redesigned sensors with 12 signal pathways, has not been separately validated. The Series 12 is much improved but still wrist optical.' },
     { name: 'Recovery-metric comparability', winner: 'tie', note: 'Apple Health now carries an RMSSD value, the statistic Oura uses, so you can compare in kind — Apple hasn’t confirmed Recovery HRV itself is RMSSD, and absolute numbers still differ.' },
     { name: 'Battery / overnight wear', winner: 'b', note: 'The Oura Ring 5 runs 6–9 days per charge; the Series 12’s ~24-hour battery means overnight measurement competes with the daily charge.' },
     { name: 'Everyday smartwatch', winner: 'a', note: 'Apps, a screen, ECG and hypertension notifications — the Series 12 is a full smartwatch; the Oura Ring 5 has no display.' },
@@ -28,7 +28,7 @@ const series12VsOura5: HeadToHead = {
   faq: [
     {
       q: 'Is the Apple Watch Series 12 or Oura Ring 5 better for HRV?',
-      a: 'For a continuous overnight HRV record, the Oura Ring 5 — finger measurement on redesigned sensors remains the closest consumer match to an ECG strap, and the 6–9 day battery suits all-night wear. The Series 12 is now much closer: its Recovery HRV is sampled 24× more often, so it is usable as a personal trend.',
+      a: 'For a continuous overnight HRV record, the Oura Ring 5 — Oura has better-supported accuracy for its earlier generations overnight (there is no independent check of the current model), and the 6–9 day battery suits all-night wear. The Series 12 is now much closer: its Recovery HRV is sampled 24× more often, so it is usable as a personal trend.',
     },
     {
       q: 'Does the Oura Ring 5 need a subscription?',

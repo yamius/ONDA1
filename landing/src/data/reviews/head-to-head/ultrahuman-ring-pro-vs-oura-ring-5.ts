@@ -27,7 +27,7 @@ const ringProVsOura5: HeadToHead = {
   faq: [
     {
       q: 'Ultrahuman Ring Pro or Oura Ring 5 — which should I buy?',
-      a: 'If you refuse a subscription and want the longest battery, the Ring Pro (one-time $479, ~15 days). If you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) and the best app, the Oura Ring 5 ($399 + ~$6/month). The Ring Pro wins the cost model; Oura wins accuracy and polish.',
+      a: 'If you refuse a subscription and want the longest battery, the Ring Pro (one-time $479, ~15 days). If you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) and the best app, the Oura Ring 5 ($399 + ~$6/month). The Ring Pro wins the cost model; Oura has better-supported accuracy for its earlier generations overnight (there is no independent check of the current model) and wins on polish.',
     },
     {
       q: 'Is the Ring Pro accurate enough to skip Oura?',

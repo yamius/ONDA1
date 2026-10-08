@@ -14,7 +14,7 @@ const ouraRing5: ToolReview = {
     'The Oura Ring 5 (launched June 2026) is the new generation of the category leader. It is ~40% slimmer than the Ring 4 (6.09mm × 2.28mm) with a 6–9 day battery, and — the part that matters — redesigned sensors: stronger LEDs, low-profile domes and 12 signal pathways for cleaner contact and more consistent readings across finger types and skin tones. Sleep and overnight HRV remain best in class. The catch is unchanged: full data needs the monthly membership, and hardware is $399 ($499 for premium finishes). Note that the headline new software features (live workout tracking, women’s health, bloodwork import) also roll out to the Ring 4 and Gen3 — so the Ring 5’s real advantage over the Ring 4 is the sensors and the fit, not the app.',
   overallScore: 8.1,
   scores: [
-    { criterionId: 'hrv-accuracy', score: 8.7, note: 'Overnight RMSSD remains the closest consumer match to an ECG chest strap; the redesigned sensors and 12 signal pathways improve contact consistency across skin tones and finger types. Daytime/exercise readings still drift under motion.' },
+    { criterionId: 'hrv-accuracy', score: 8.7, note: 'Earlier Oura generations agreed with ECG more closely than others in one overnight study; the Ring 5 itself has not been separately validated. The redesigned sensors and 12 signal pathways improve contact consistency across skin tones and finger types. Daytime/exercise readings still drift under motion.' },
     { criterionId: 'sensor', score: 8.5, note: 'Redesigned sensor stack: stronger LEDs and low-profile domes for better skin contact. A genuine hardware step over the Ring 4, not just a slimmer shell.' },
     { criterionId: 'sleep-accuracy', score: 8.5, note: 'Best-in-class sleep staging carries over, with slightly more consistent overnight tracking reported; occasional gaps in sleep/stress data still show up in hands-on reviews.' },
     { criterionId: 'data-access', score: 6.5, note: 'Unchanged from the Ring 4 — a developer API exists, but raw beat-to-beat data is limited and deeper analysis sits behind the membership.' },
@@ -25,7 +25,7 @@ const ouraRing5: ToolReview = {
   pros: [
     'Genuinely upgraded sensors — better contact across skin tones and finger types',
     '~40% slimmer and lighter than the Ring 4, 6–9 day battery',
-    'Still the closest consumer match to ECG-grade overnight HRV and the best sleep staging',
+    'Earlier Oura generations agreed with ECG more closely than others in one overnight study (the Ring 5 itself has not been separately validated), plus the best sleep staging',
     'Clear, educational app',
   ],
   cons: [
@@ -43,7 +43,7 @@ const ouraRing5: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-For a clean overnight [HRV](/glossary/heart-rate-variability) signal and validated sleep staging, the Oura Ring 5 is the strongest consumer device of 2026 — the same lead the [Ring 4](/reviews/oura-ring-4) held, now on redesigned sensors. Stronger LEDs, low-profile sensor domes and 12 signal pathways improve skin contact, which is where a finger-worn optical sensor either wins or loses its reading, and reviewers report more consistent tracking across skin tones and finger types.
+For overnight [HRV](/glossary/heart-rate-variability), earlier Oura generations agreed with ECG more closely than others in one overnight study; the Ring 5 itself has not been separately validated. It carries the line the [Ring 4](/reviews/oura-ring-4) belongs to onto redesigned sensors. Stronger LEDs, low-profile sensor domes and 12 signal pathways improve skin contact, which is where a finger-worn optical sensor either wins or loses its reading, and reviewers report more consistent tracking across skin tones and finger types.
 
 ## What actually changed vs the Ring 4
 

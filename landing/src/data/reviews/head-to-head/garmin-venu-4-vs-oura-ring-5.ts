@@ -8,7 +8,7 @@ const venu4VsOura5: HeadToHead = {
   description:
     'Garmin Venu 4 vs Oura Ring 5 for HRV — a no-subscription training smartwatch with multi-day battery vs the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated), which needs a membership. Weighed axis by axis.',
   intro:
-    'Both of these can realistically be worn every night, which is what makes the comparison interesting. The Garmin Venu 4 is a no-subscription all-rounder: Garmin HRV Status against a three-week personal baseline, the most advanced Garmin sleep tracking yet, and a multi-day battery. The Oura Ring 5 is the 2026 flagship ring — ~40% slimmer than the Ring 4 with redesigned sensors, still the closest consumer match to chest-strap overnight HRV — but it asks for a monthly membership. Training watch or dedicated recovery ring?',
+    'Both of these can realistically be worn every night, which is what makes the comparison interesting. The Garmin Venu 4 is a no-subscription all-rounder: Garmin HRV Status against a three-week personal baseline, the most advanced Garmin sleep tracking yet, and a multi-day battery. The Oura Ring 5 is the 2026 flagship ring — ~40% slimmer than the Ring 4 with redesigned sensors, from a line whose earlier Oura generations agreed with ECG more closely than others in one overnight study (the Ring 5 itself has not been separately validated) — but it asks for a monthly membership. Training watch or dedicated recovery ring?',
   winnerSlug: null,
   verdict:
     'No overall winner — it splits by use case. For overnight HRV and sleep in the most comfortable form, the Oura Ring 5 leads (previous Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated). For one device that also runs your training, shows a screen and never charges a fee, the Venu 4 leads. Wrist optical still trails the finger for absolute overnight precision.',
@@ -17,7 +17,7 @@ const venu4VsOura5: HeadToHead = {
   bestForB:
     'Choose the Oura Ring 5 if accurate overnight HRV and sleep are the point, you want the slimmest always-on wearable, and the ~$6/month membership is acceptable.',
   axes: [
-    { name: 'Overnight HRV precision', winner: 'b', note: 'Oura’s overnight RMSSD remains the closest consumer match to an ECG chest strap, now with redesigned sensors. Garmin HRV Status is a dependable overnight-baseline read, but wrist optical sits a step behind finger-based rings.' },
+    { name: 'Overnight HRV precision', winner: 'b', note: 'Earlier Oura generations agreed with ECG more closely than others in one overnight study; the Ring 5 itself, with its redesigned sensors, has not been separately validated. Garmin HRV Status is a dependable overnight-baseline read, but wrist optical sits a step behind finger-based rings.' },
     { name: 'Sleep tracking', winner: 'b', note: 'Oura’s sleep staging is better-validated among consumer wearables (manufacturer-funded studies). The Venu 4 has the most advanced Garmin sleep tracking yet, with circadian-alignment metrics — good, but less validated.' },
     { name: 'Battery / overnight wear', winner: 'tie', note: 'Oura Ring 5: 6–9 days. Venu 4: multi-day. Both make nightly wear practical without a charging window around sleep.' },
     { name: 'Training & everyday smartwatch', winner: 'a', note: 'Screen, workouts and Garmin’s training ecosystem make the Venu 4 a real sports and daily-driver watch. The ring has no display and is not a training tool.' },
@@ -28,7 +28,7 @@ const venu4VsOura5: HeadToHead = {
   faq: [
     {
       q: 'Is the Garmin Venu 4 or Oura Ring 5 more accurate for HRV?',
-      a: 'The Oura Ring 5. Its overnight RMSSD is the closest consumer match to an ECG chest strap, and finger measurement beats wrist optical. Garmin HRV Status on the Venu 4 is a solid overnight-baseline read, good enough to follow your trend, just not as precise.',
+      a: 'The Oura Ring 5. Oura has better-supported accuracy for its earlier generations overnight; there is no independent check of the current model. Garmin HRV Status on the Venu 4 is a solid overnight-baseline read, good enough to follow your trend, just not as precise.',
     },
     {
       q: 'Does the Garmin Venu 4 need a subscription like Oura?',
