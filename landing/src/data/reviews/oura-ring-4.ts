@@ -23,7 +23,7 @@ const ouraRing4: ToolReview = {
     { criterionId: 'value', score: 6.0, note: 'From 349 USD plus a mandatory 5.99 USD/month membership — capable, but never fully owned.' },
   ],
   pros: [
-    'Closest consumer match to ECG-grade overnight HRV',
+    'In one overnight study (13 people), Oura Ring 4 was among the closest matches to ECG',
     'Strong, published sleep-stage validation against polysomnography',
     'Small, comfortable 24/7 form factor',
     'Gets the same new software as the Ring 5, for $50 less',
