@@ -14,7 +14,9 @@
  *  3. evidenceMap: valid class, limitation, known sources; `official` sources only in rows with
  *     claimType device|regulatory and no efficacy wording; class `guideline` needs a guideline source;
  *     every [Sx] in the body is defined
- *  4. numbers: none in the body outside {{fact:…}} / {{proposed:…}}; fact ids exist;
+ *  4. numbers: none in the body outside {{fact:…}} / {{proposed:…}} (years / study periods such as 1990–2002
+ *     full dates of regulatory/research events and regulatory designations like 510(k), K231368,
+ *     91 FR 20352, 21 CFR 890.5870 are allowed in the body — scripts/science-body-digits.ts); fact ids exist;
  *     no digits in title/meta/shortAnswer/keyPoints
  *  5. proposals: well-formed; every {{proposed:id}} is declared; proposed facts and proposals are PENDING —
  *     allowed in a draft, blocked with --publish
@@ -22,6 +24,7 @@
  *  7. related links exist; relatedPlanned = science pages not written yet (format only)
  * Exit code 1 on any error (and on pending items with --publish).
  */
+import { stripBodyDigitExceptions } from './science-body-digits'
 import matter from 'gray-matter'
 import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs'
 import { join, relative, basename, dirname, resolve } from 'node:path'
@@ -107,8 +110,10 @@ async function urlOpens(url: string): Promise<string | null> {
 // "version 1.9.3" — an app release label (any language: the word before is not checked).
 const APP_VERSION = /\b\d+\.\d+\.\d+\b/g
 
+// Years, full dates and regulatory designations allowed in the BODY: see scripts/science-body-digits.ts.
+
 function stripAllowed(text: string): string {
-  return text
+  return stripBodyDigitExceptions(text
     .replace(/\{\{(fact|proposed):[^}]+\}\}/g, ' ')
     .replace(/\[S\d+(?:\s*,\s*S\d+)*\]/g, ' ')
     .replace(/\([A-Z][A-Za-z’'\- ]+(?: et al\.)?,? (19|20)\d{2}[a-z]?\)/g, ' ') // (Author 2021)
@@ -117,6 +122,7 @@ function stripAllowed(text: string): string {
     .replace(/\b(aged?|at ages?|ages?) \d{2}(?:[–-]\d{2}|\+)/gi, ' ') // age bands are labels, not data
     .replace(APP_VERSION, ' ') // app version numbers are labels, not data
     .replace(/^#{1,6} .*$/gm, (h) => h.replace(/\b(19|20)\d{2}\b/g, ' '))
+  ) // then years / study periods, full dates, regulatory designations (owner decisions 2026-10-08); fmText is checked separately, strictly
 }
 
 const routeExists = {

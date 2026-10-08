@@ -87,7 +87,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Can alternate nostril breathing lower blood pressure?",
       answer:
-        "Research associates regular slow breathing, including Nadi Shodhana, with modest reductions in blood pressure — through vagal activation, not the nostril technique specifically. It's a supportive practice, not a treatment for hypertension.",
+        "Research associates regular slow breathing, including Nadi Shodhana, with modest reductions in blood pressure — likely through the slow breathing pace itself, not the nostril technique specifically. It's a supportive practice, not a treatment for hypertension.",
     },
   ],
   "humming-breath-vagus": [
@@ -104,7 +104,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Is humming the same as chanting or singing?",
       answer:
-        "They work through the same mechanism — vibration in the larynx (a proposed route to vagal fibers) plus extended exhales. Humming is just the simplest and quietest version.",
+        "They share the same core — slowed breathing with extended exhales. Vibration in the larynx is a proposed route to vagal fibers, not a proven one. Humming is just the simplest and quietest version.",
     },
     {
       question: "When should I use humming breath?",
@@ -114,7 +114,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Does humming really lower stress?",
       answer:
-        "Yes — it produces a measurable calming shift (lower heart rate, higher HRV) through vagal stimulation and long exhales. It's a wellness practice, not a treatment for any medical condition.",
+        "It can help you feel calmer: humming slows your breathing and lengthens the exhale. {{fact:claim.slowExhale}}. There is no evidence that the hum itself stimulates the vagus nerve beyond what slow breathing does. It's a wellness practice, not a treatment for any medical condition.",
     },
   ],
   "normal-hrv-by-age": [
@@ -283,10 +283,10 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
   ],
   "om-chanting-brain-vagus": [
     { question: "Does OM chanting calm the brain?", answer: "A small fMRI study found OM chanting was accompanied by deactivation of limbic regions including the amygdala, hippocampus and cingulate cortex — a pattern its authors compared to clinical vagus nerve stimulation. It is an intriguing signal from a small study, not settled neuroscience." },
-    { question: "Why did OM work but not other sounds?", answer: "In the study, a non-humming control sound ('ssss') did not produce the limbic deactivation, suggesting the resonant hum of OM, not just vocalizing, is the active ingredient." },
-    { question: "How might OM chanting stimulate the vagus nerve?", answer: "The authors proposed that OM's vibration in the throat and ears stimulates the laryngeal and auricular branches of the vagus nerve, shifting the body toward parasympathetic calm. This is a hypothesis about mechanism." },
-    { question: "Is OM chanting the same as humming (Bhramari)?", answer: "They share the core mechanism — vibration plus a long exhale. OM adds resonance and the focus of a mantra, and it is the version with brain-imaging research behind it." },
-    { question: "Do I need to be religious for OM chanting to work?", answer: "No. The physiological effect comes from the vibration and the long exhale, not from belief, although many people find the tradition adds depth." },
+    { question: "Why did OM work but not other sounds?", answer: "In the study, a non-humming control sound ('ssss') did not produce the limbic deactivation, which may point to the resonant hum of OM. But 'ssss' also changes the breathing, and the study was small and not replicated, so it has not been shown that the hum is the active ingredient." },
+    { question: "Is OM chanting linked to the vagus nerve?", answer: "The authors proposed that OM's vibration in the throat and ears stimulates the laryngeal and auricular branches of the vagus nerve, shifting the body toward parasympathetic calm. This is a hypothesis about mechanism; it has not been shown that the vibration does more than the slow breathing that comes with chanting." },
+    { question: "Is OM chanting the same as humming (Bhramari)?", answer: "They share the same core — a hum on a slow, long exhale. OM adds resonance and the focus of a mantra, and it is the version with a small brain-imaging study behind it." },
+    { question: "Do I need to be religious for OM chanting to work?", answer: "No. The physiological effect seems to come mainly from the slow, long exhale, not from belief; the role of the vibration is unproven. Many people find the tradition adds depth." },
   ],
   "pranayama-metabolic-syndrome": [
     { question: "Can pranayama help metabolic syndrome?", answer: "As a complement to lifestyle change, research in young adults suggests it can. A study in medical students with raised BMI or blood pressure found pranayama improved clinical predictors of metabolic syndrome. It targets the stress and autonomic drivers of the syndrome alongside diet and exercise." },
@@ -365,7 +365,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "How do I apply range fractionation in practice?",
       answer:
-        "Never run two identical days: follow high load with low load and high recovery. Alternate sauna and cold to train the full vascular range. Combine small daily stimulus doses with one large weekly session. Track HRV \u2014 rising HRV alongside rising performance means the protocol is working.",
+        "Never run two identical days: follow high load with low load and high recovery. Alternate sauna and cold if you enjoy it ('training the vascular range' is an image, not a proven effect). Combine small daily stimulus doses with one large weekly session. Track HRV \u2014 rising HRV alongside rising performance means the protocol is working.",
     },
   ],
   "ai-biomarker-tracking-predictive": [
@@ -484,7 +484,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "How do I support thyroid function naturally?",
       answer:
-        "Ensure adequate iodine and selenium, the raw materials for thyroid hormone. Track basal body temperature as a low-cost proxy for metabolic rate, and address chronic stress directly \u2014 because cortisol control is often the missing lever behind a sluggish thyroid.",
+        "Ensure adequate iodine and selenium, the raw materials for thyroid hormone. Track basal body temperature as a low-cost proxy for metabolic rate, and manage chronic stress as part of overall health. If you suspect a sluggish thyroid, see a doctor \u2014 thyroid problems need blood tests and medical care, not self-treatment.",
     },
   ],
   "energy-sensor-leptin": [
@@ -571,12 +571,12 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "What is neural entrainment?",
       answer:
-        "Neural entrainment is nudging brainwave activity toward a target frequency using a rhythmic external stimulus \u2014 sound, light or pulsed signal. The brain tends to fall into step with the rhythm, a phenomenon known as the frequency-following response.",
+        "Neural entrainment is nudging brainwave activity toward a target frequency using a rhythmic external stimulus \u2014 sound, light or pulsed signal. The idea is that the brain falls into step with the rhythm (the frequency-following response); how far this shifts brain rhythms in practice is uncertain.",
     },
     {
       question: "Do binaural beats actually work?",
       answer:
-        "Binaural beats can shift the dominant EEG frequency via the frequency-following response, with effects that vary between individuals. Closed-loop systems \u2014 which read your brain state in real time and adapt the stimulus \u2014 are more reliable than fixed, open-loop tracks.",
+        "The evidence is mixed. A systematic review of EEG studies found inconsistent evidence that binaural beats actually shift brain rhythms, and effects vary between individuals. Closed-loop systems, which adapt the sound to a live EEG reading, are a plausible design, but there is no good evidence yet that they work better than fixed tracks.",
     },
   ],
   'neural-optimizer-estrogen': [
@@ -622,7 +622,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Can sound actually improve deep sleep quality?",
       answer:
-        "Yes. Stimulation phase-locked to slow-wave sleep can increase delta-wave amplitude, which is linked to better memory consolidation and physical recovery. The key is precise timing \u2014 the sound must lock to the wave\u2019s phase, which is why real-time EEG matters.",
+        "Yes. Stimulation phase-locked to slow-wave sleep can increase delta-wave amplitude, which some studies link to better memory consolidation; benefits for physical recovery have not been shown. The key is precise timing \u2014 the sound must lock to the wave\u2019s phase, which is why real-time EEG matters.",
     },
   ],
   "physiological-concentration-flow-state-hardwired": [
@@ -758,7 +758,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'How does morning light affect my circadian rhythm?',
       answer:
-        'Viewing sunlight within 30 minutes of waking triggers a timed Cortisol pulse and sets a 16-hour countdown for Melatonin release. It is the single most important sync-signal for your biological clock.',
+        'Morning light is one of the strongest sync-signals for your biological clock and helps time evening Melatonin release. Popular claims that it sets an exact cortisol pulse and 16-hour countdown are not strongly evidenced.',
     },
     {
       question: 'Why does blue light at night disrupt sleep?',
@@ -857,7 +857,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'What is the sauna-cold cycle for?',
       answer:
-        '20 minutes of sauna followed by 3 minutes of cold triggers heat shock and cold shock proteins. These molecular chaperones help proteins fold correctly and protect against cellular damage.',
+        'The idea is that heat and then cold raise heat-shock and cold-shock proteins, which help other proteins fold correctly. That a sauna-cold cycle protects health in people has not been shown; Finnish sauna studies show associations, not cause. Never combine sauna and cold after alcohol. See what the evidence on sauna shows: /science/evidence/sauna-heat-exposure.',
     },
   ],
   'circadian-lighting-dark-therapy': [
@@ -869,7 +869,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'Why use red light at night?',
       answer:
-        'Red light (2000K or lower) does not suppress melatonin. It provides enough illumination for evening activities without disrupting the shutdown sequence for sleep.',
+        'Dim red light (2000K or lower) suppresses melatonin much less than bright, blue-rich light. It provides enough illumination for evening activities while disturbing the shutdown sequence for sleep far less.',
     },
     {
       question: 'How does light affect your body clock?',
@@ -913,7 +913,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'What wavelengths are best for NIR photobiomodulation?',
       answer:
-        '660nm (red) penetrates surface tissue; 850nm (near-infrared) reaches deeper. Combined, they target both superficial and mitochondrial layers. Medical-grade panels typically use both.',
+        '660nm (red) is absorbed mostly near the surface; 850nm (near-infrared) reaches somewhat deeper. How much light reaches a given tissue depends on wavelength and dose. Many consumer panels combine both. Wear eye protection: near-infrared light is invisible.',
     },
     {
       question: 'Why does hydration matter for red light sessions?',
@@ -925,7 +925,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'Why use decaffeinated cacao for stem cell protocols?',
       answer:
-        'Caffeine and theobromine create adrenal spikes that conflict with deep recovery states. By filtering them out, polyphenols work directly on blood flow and stem cell mobilization without overclocking the nervous system.',
+        'Caffeine (and, more weakly, theobromine) is a stimulant that can work against deep recovery states. By filtering them out, polyphenols work directly on blood flow and stem cell mobilization without overclocking the nervous system.',
     },
     {
       question: 'What is the Micro-Circulation Loop protocol?',
@@ -935,7 +935,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'How does red light therapy close the regeneration loop?',
       answer:
-        'Red light (660nm) provides mitochondria with ATP to utilize stem cells produced during the day. It completes the regeneration sequence before sleep.',
+        'Red light does not supply ATP. In cell and animal studies, 660nm light is absorbed by an enzyme in the mitochondria (cytochrome c oxidase), which may influence how they make ATP. A link to stem cells or overnight regeneration has not been shown in people.',
     },
   ],
   'system-feedback-biometric-loop': [
@@ -986,19 +986,19 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'Can I do the Hard Reset without cold exposure?',
       answer:
-        'The thermal spike (cold exposure after morning light) is the second Zeitgeber in the stack. Skipping it reduces the reset speed significantly. A minimum of 60 seconds of face-and-neck cold-water immersion at ≤15°C is sufficient to trigger the norepinephrine pulse that signals "daytime" to the sympathetic nervous system.',
+        'The thermal spike (cold exposure after morning light) is the second Zeitgeber in the stack. In this protocol it is optional: a specific cold dose that resets the circadian clock has not been shown, so the morning light anchor matters more.',
     },
   ],
   'ancestral-sync-circadian-anchors': [
     {
       question: 'What are the three ancestral circadian anchors?',
       answer:
-        'The three ancestral Zeitgeber anchors in the ONDA protocol are: 1) Photonic Trigger — morning light within 30 minutes of waking to set the cortisol pulse and 16-hour melatonin countdown; 2) Thermal Reset — cold exposure in natural light to lock the temperature-circadian axis; 3) Metabolic Gate — first meal no earlier than 90 minutes after waking to synchronize the peripheral clocks in organs.',
+        'The three ancestral Zeitgeber anchors in the ONDA protocol are: 1) Photonic Trigger — morning light soon after waking, the strongest daily signal for the body clock; 2) Thermal Reset — cold exposure in natural light to lock the temperature-circadian axis; 3) Metabolic Gate — regular meal timing to support the peripheral clocks in organs (a fixed "wait 90 minutes" rule is popular advice without strong evidence).',
     },
     {
       question: 'Why must the first meal be delayed after waking?',
       answer:
-        'The Metabolic Gate principle states that immediate eating on waking sends an "any-time is feeding time" signal to peripheral liver and gut clocks, decoupling them from the central SCN clock. Delaying the first meal by 90 minutes ensures the cortisol peak has passed and peripheral clocks synchronize with the central rhythm, reducing epigenetic drift.',
+        'The Metabolic Gate principle states that immediate eating on waking sends an "any-time is feeding time" signal to peripheral liver and gut clocks, decoupling them from the central SCN clock. Meal timing does help set peripheral clocks, but the popular rule of delaying the first meal by exactly 90 minutes to wait out the cortisol peak is not strongly evidenced.',
     },
     {
       question: 'How quickly do circadian anchors fix disrupted sleep?',
@@ -1008,19 +1008,29 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
   ],
   'adrenal-governor-thermal-runaway': [
     {
-      question: 'What is the Adrenal Governor and how does it intercept stress signals before cortisol release?',
+      question: "Is adrenal fatigue a real condition?",
       answer:
-        'The Adrenal Governor is the ONDA framework\'s name for the neural filtering layer — primarily the prefrontal cortex exerting inhibitory control over the amygdala-HPA axis loop — that determines whether an incoming stimulus warrants a cortisol and adrenaline injection or constitutes informational noise that should be filtered. In a well-calibrated system operating in Alpha state, the prefrontal cortex\'s inhibitory projection to the amygdala is strong enough to evaluate stress signals before they propagate to the hypothalamus and trigger CRH release. In chronic Beta-mode, this inhibitory capacity is degraded — the amygdala fires unfiltered, the hypothalamus receives the signal, and the adrenals inject. The Governor protocol restores the prefrontal filtering capacity through HRV monitoring, Alpha-state maintenance, and anticipatory priming.',
+        "No. Adrenal fatigue is not a recognised medical diagnosis. A systematic review of 58 studies found no consistent evidence that stress or tiredness \"exhausts\" the adrenal glands and concluded that adrenal fatigue does not exist (Cadegiani & Kater 2016). The fatigue itself is real and worth investigating with a doctor.",
     },
     {
-      question: 'What is the difference between Performance Spiking and Redline cortisol output?',
+      question: "What real adrenal problems can cause fatigue?",
       answer:
-        'Performance Spiking is the appropriate, time-limited elevation of cortisol and adrenaline in response to a genuine challenge — a deadline, athletic effort, or acute stressor. The spike is sharp, purposeful, and followed by a rapid recovery as parasympathetic tone reasserts itself. Redline is the pathological state where cortisol is elevated continuously, not in response to specific challenges but as a default background state driven by chronic Beta-mode neural entrainment. The distinction is not in the cortisol level at peak, but in the baseline between peaks and the presence or absence of recovery. Redline is characterized by an elevated floor — basal cortisol never returns to the low range — rather than by higher individual peaks. This elevated floor is what drives receptor desensitization, hippocampal damage, and immune suppression.',
+        "Adrenal insufficiency (including Addison's disease), where the body genuinely makes too little cortisol, and Cushing's syndrome, where it is exposed to too much. Both are uncommon and are diagnosed with specific blood, saliva or urine tests set out in Endocrine Society guidelines, not with symptom checklists.",
     },
     {
-      question: 'Why does morning HRV measurement serve as the most reliable daily Adrenal Governor indicator?',
+      question: "Can a saliva cortisol test diagnose adrenal fatigue?",
       answer:
-        'Morning HRV — measured immediately after waking, before leaving the bed, before caffeine or screen exposure — reflects the overnight recovery state of the autonomic nervous system, free from acute stressors or deliberate interventions. It is the closest available proxy to the baseline autonomous tone of the HPA axis and the sympathovagal balance that will govern the day\'s stress response capacity. A drop below personal baseline HRV indicates that the previous day\'s load exceeded the system\'s recovery capacity — the adrenal-cardiac-neural system is still compensating. Measuring in this window provides a Governor Alert before any new load is added. Post-exercise or midday HRV measurements are more variable and reflect acute conditions rather than systemic recovery state.',
+        "No. Cortisol rises sharply after waking and falls towards evening, and it shifts with sleep, illness and exercise, so single readings or commercial \"adrenal stress\" panels mean little on their own. Real adrenal disease is tested with specific protocols ordered and interpreted by a doctor.",
+    },
+    {
+      question: "Can HRV or a wearable show adrenal fatigue?",
+      answer:
+        "No. Watches and rings do not measure cortisol or adrenal function. HRV reflects autonomic influences on the heart and changes with sleep, alcohol, illness, training and stress; it can suggest you need recovery, but it cannot diagnose or rule out any adrenal condition.",
+    },
+    {
+      question: "When should I see a doctor about exhaustion?",
+      answer:
+        "If tiredness persists despite rest, or comes with weight loss, dizziness on standing, salt cravings, darkening skin, nausea, or weight gain on the face and belly with purple stretch marks and easy bruising. Sudden severe weakness, vomiting or confusion is an emergency. Never stop prescribed steroids on your own.",
     },
   ],
   'spinal-intelligence-decentralized-control': [
@@ -1127,7 +1137,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'Why does diaphragmatic breathing before sleep improve brain fluid drainage?',
       answer:
-        'Deep diaphragmatic breathing creates negative intra-thoracic pressure on each inhale — a partial vacuum in the chest cavity that assists venous return from the head via the jugular veins. This reduces cerebral venous congestion and lowers the baseline intracranial pressure entering the sleep window. Lower pre-sleep intracranial pressure creates a wider hydrostatic gradient for CSF outflow, allowing the glymphatic system to initiate flow faster at N3 onset. Extended exhale (6s vs 4s) additionally activates the parasympathetic branch, clearing residual cortisol and accelerating the sleep-onset transition.',
+        'Deep diaphragmatic breathing creates negative intra-thoracic pressure on each inhale — a partial vacuum in the chest cavity that assists venous return from the head via the jugular veins. This reduces cerebral venous congestion and lowers the baseline intracranial pressure entering the sleep window. Lower pre-sleep intracranial pressure creates a wider hydrostatic gradient for CSF outflow, allowing the glymphatic system to initiate flow faster at N3 onset. An extended exhale (6s vs 4s) additionally leans toward the parasympathetic branch, which may make it easier to wind down before sleep.',
     },
   ],
   'nightly-flush-glymphatic-neural-cache': [
@@ -1156,17 +1166,17 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'What are Mayer Waves and why does 0.1 Hz breathing synchronize with them?',
       answer:
-        'Mayer Waves are slow oscillations in blood pressure with a natural frequency of approximately 0.1 Hz — one cycle every 10 seconds — produced by the baroreflex feedback loop as it regulates arterial pressure. Normally, breathing runs out of phase with this oscillation, causing partial cancellation of the HRV signal. When breathing frequency matches Mayer Wave frequency at around 0.1 Hz (about 5.5–6 breaths per minute), the respiratory and cardiovascular oscillations phase-lock, creating constructive resonance — HRV amplitude surges to its physiological ceiling and baroreflex sensitivity reaches its maximum.',
+        'Mayer Waves are slow oscillations in blood pressure at roughly 0.1 Hz — about one cycle every 10 seconds — linked to the baroreflex loop that regulates arterial pressure. When you breathe at around 0.1 Hz (about 5.5–6 breaths per minute), the breathing cycle lines up with the delay in the baroreflex loop, and heart rate and blood pressure swing much more widely. This resonance is what HRV biofeedback uses; how much of the breath-linked heart rhythm the baroreflex itself produces is still debated.',
     },
     {
-      question: 'How does 0.1 Hz breathing lower blood pressure without medication?',
+      question: 'Does 0.1 Hz breathing lower blood pressure without medication?',
       answer:
-        'Repeated sessions of 0.1 Hz baroreflex resonance training sensitize arterial baroreceptors — they become faster and more precise at detecting pressure deviations and commanding compensatory responses. Over 4–8 weeks of daily 10–20 minute sessions, this produces measurable increases in baroreflex sensitivity (BRS) and arterial elasticity, resulting in systolic blood pressure reductions of 7–15 mmHg in hypertensive individuals. The mechanism is neuroplastic: the brainstem cardiovascular control centers recalibrate their setpoint downward in response to the improved signal-to-noise ratio delivered by resonance breathing.',
+        'The evidence is narrower than popular claims. During a slow-breathing session, measured baroreflex sensitivity rises — a short-term effect. In one randomised study of healthy adults, a course of HRV biofeedback raised resting baroreflex sensitivity; whether this lasts or improves health has not been established. Some studies report modest blood-pressure reductions with regular slow breathing, but results are inconsistent, and it is not a substitute for medical treatment.',
     },
     {
-      question: 'How quickly does the 0.1 Hz baroreflex hook produce measurable effects?',
+      question: 'How quickly does 0.1 Hz breathing have an effect?',
       answer:
-        'The acute effects begin within 90 seconds of reaching resonance: vagal efferent output increases, heart rate variability rises, and cortisol begins dropping. A 5-minute session is the minimum effective dose for measurable parasympathetic activation and cognitive noise reduction. A full 20-minute session produces baroreflex sensitization that persists 4–6 hours post-session, making it practical as a pre-work or pre-decision protocol. Blood pressure reduction accumulates over 4–8 weeks of consistent daily practice.',
+        'Heart-rate oscillations grow during the practice itself, once your breathing settles near your resonance rate, and baroreflex sensitivity rises while you breathe slowly. Many people feel calmer within minutes; the effect varies from person to person. One session does not "reset" the baroreflex, and any longer-term changes depend on regular practice and are not well established.',
     },
   ],
   'resonant-frequency-system-coherence': [
@@ -1195,7 +1205,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'What is hormetic stress loading and how does it expand the HRV buffer?',
       answer:
-        'Hormetic stress loading uses controlled, short-duration stress spikes — cold exposure (≤15°C, 2–3 min), CO₂ tolerance training, or HIIT at 80–90% max HR — to force the regulatory system to practice recovery. Each spike followed by complete recovery trains the system to exit stress states faster. Over 4–6 weeks, the HRV baseline rises and the recovery slope steepens, expanding the operational buffer.',
+        'Hormetic stress loading uses controlled, short-duration stress spikes — brief cold exposure, CO₂ tolerance training, or HIIT at 80–90% max HR — with the idea that practising recovery helps the system exit stress states faster. That this raises the HRV baseline is not proven: for cold exposure, studies show HRV rising during the exposure, not afterwards.',
     },
     {
       question: 'How can morning HRV predict illness 48 hours in advance?',
@@ -1271,9 +1281,9 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
         'Apply moderate, sustained pressure with fingertips or a massage ball for 30 to 45 seconds on each high-tension point along the neck and upper shoulders, until the tissue tension subsides. Combine with the humming exhale for full parasympathetic shift.',
     },
     {
-      question: 'Why is humming on the exhale used to activate the vagus nerve?',
+      question: 'Why is a humming exhale used in this protocol?',
       answer:
-        'A long, low-frequency humming exhale (8–10 seconds after a 4-second nasal inhale) creates vibration around the vagus pathway and lowers system jitter. {{fact:claim.slowExhale}}. Slowing the breath also lowers heart rate and releases residual tension in the jaw and neck.',
+        'A long, low-frequency humming exhale (8–10 seconds after a 4-second nasal inhale) slows the breath and gives you a sound to pace it. Humming has not been shown to activate the vagus nerve directly. {{fact:claim.slowExhale}}. Slowing the breath also lowers heart rate and releases residual tension in the jaw and neck.',
     },
   ],
   'vascular-tensegrity-microvascular-mechanics': [
@@ -1382,7 +1392,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Can you actually measure meditation progress?",
       answer:
-        "Yes. Meditation produces measurable changes — brain structure within weeks, gamma waves that rise with experience, lower stress hormones, and stronger HRV. While brain changes need a lab, HRV and resting heart rate are trackable at home and reliably respond to practice, giving you objective progress instead of guesswork.",
+        "Partly. Some changes are measurable: experienced meditators show brain differences such as higher gamma (cross-sectional findings), and trials show small falls in heart rate and blood pressure, while HRV findings are mixed. Brain changes need a lab, but pulse, breathing and HRV can be tracked at home and often shift during practice. Read them as feedback on how your body responds, not as proof of progress.",
     },
     {
       question: "How long until meditation shows results?",
@@ -1424,10 +1434,10 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
   ],
   "yoga-nidra-sleep-science": [
     { question: "What is Yoga Nidra?", answer: "'Yogic sleep' — a guided deep-relaxation practice done lying down, usually 20 to 45 minutes, that takes you to the threshold between waking and sleep using a body scan, breath awareness and imagery." },
-    { question: "Does Yoga Nidra actually help you sleep?", answer: "Research suggests it can. Yogic relaxation practices shift the brain toward slower theta and alpha activity and are linked to higher HRV and lower arousal, and yoga programs that include it improve standardized sleep-quality scores. Studies are mostly small, so it is promising rather than proven." },
-    { question: "Is Yoga Nidra the same as sleep or meditation?", answer: "Neither exactly. It is a guided state between waking and sleep — more relaxed than sitting meditation, but not unconscious like sleep." },
+    { question: "Does Yoga Nidra actually help you sleep?", answer: "It may, but the evidence is weak. A 2026 meta-analysis found only five studies; pooled effects in the randomised trials were not significant and the certainty was very low. In EEG studies practitioners stay awake during it, and related relaxation practices are linked to higher HRV. Treat it as worth trying, not as a proven sleep treatment." },
+    { question: "Is Yoga Nidra the same as sleep or meditation?", answer: "Neither exactly. It is a guided state between waking and sleep — done lying down and fully guided, unlike most seated meditation; EEG studies show practitioners stay awake, so it is not sleep." },
     { question: "How long should Yoga Nidra be for sleep?", answer: "Typically 20 to 45 minutes, guided by a recording. For sleep, do it lying in bed and let yourself drift off if it happens." },
-    { question: "Can Yoga Nidra help with insomnia?", answer: "It suits insomnia driven by a racing mind, because it lowers arousal through the body scan and slow breathing rather than forcing sleep. Persistent insomnia still deserves a conversation with a clinician." },
+    { question: "Can Yoga Nidra help with insomnia?", answer: "It may suit insomnia driven by a racing mind, because it aims to lower arousal through the body scan and slow breathing rather than forcing sleep — but the trials are small and the evidence is weak. Cognitive behavioural therapy for insomnia (CBT-I) is the recommended first-line approach, and persistent insomnia deserves a conversation with a clinician." },
   ],
   "bhastrika-pranayama-brain-anxiety": [
     { question: "Does Bhastrika pranayama reduce anxiety?", answer: "In a randomized controlled trial, four weeks of Bhastrika practice significantly reduced anxiety and negative affect and changed activity in emotion-processing brain regions including the amygdala, insula and prefrontal cortex. It was a small study in healthy adults, so it is an encouraging signal rather than a settled clinical result." },
@@ -1570,7 +1580,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "What is gamma synchrony and why does it matter?",
       answer:
-        "Gamma synchrony is fast (above ~30 Hz), highly coordinated brain activity linked to peak awareness and the binding of information into unified experience. Expert meditators produce it powerfully and at will, showing that high-level brain states are trainable skills, not fixed traits.",
+        "Gamma synchrony is fast (above ~30 Hz), highly coordinated brain activity linked to heightened awareness and the binding of information into unified experience. Small studies found that expert meditators could produce strong gamma synchrony during practice. This suggests that high-level brain states can be trained, though comparing experts with beginners cannot rule out other differences between them.",
     },
     {
       question: "What does expert research mean for a beginner?",
@@ -1592,7 +1602,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "How long does MBSR take to work?",
       answer:
-        "It's an 8-week program with daily practice, and benefits build across that arc. Measurable changes in stress, mood, HRV and cortisol develop over the weeks — consistent with research showing meditation's effects accrue over weeks of regular practice.",
+        "It's an 8-week program with daily practice, and benefits build across that arc. Changes in stress, mood and HRV develop over the weeks (evidence on cortisol is mixed) — consistent with research showing meditation's effects accrue over weeks of regular practice.",
     },
     {
       question: "Is MBSR better than regular meditation?",
@@ -1602,7 +1612,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "What can MBSR help with?",
       answer:
-        "The strongest evidence is for reducing stress and anxiety and preventing depression relapse (via its cousin MBCT), with modest benefit for chronic pain. It also lowers cortisol and is linked to meditation's documented brain changes. Effects are real but moderate, and vary by person.",
+        "The strongest evidence is for reducing stress and anxiety and preventing depression relapse (via its cousin MBCT), with modest benefit for chronic pain. Evidence that it lowers cortisol is mixed, and it is linked to meditation's documented brain changes. Effects are real but moderate, and vary by person.",
     },
   ],
   "zen-koans-brain-cognition": [
@@ -1776,22 +1786,22 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Does meditation experience increase gamma waves?",
       answer:
-        "Yes — research found gamma amplitude positively correlated with meditation experience: the more you've practiced, the higher your gamma. This makes it a progress-linked brain marker, evidence that meditation builds a measurable capacity over time.",
+        "Possibly. One study found gamma amplitude positively correlated with meditation experience: people with more practice tended to have higher gamma. Because it compared different people at one point in time, it cannot show that practice raised anyone's gamma.",
     },
     {
       question: "Do different meditation types produce the same brain changes?",
       answer:
-        "They share a core. Elevated gamma appeared across Vipassana, Himalayan Yoga, and Isha Shoonya practitioners, and EEG classifiers distinguished meditative states across four traditions with ~91% accuracy — suggesting a common measurable signature of deep meditation, stronger in advanced practitioners.",
+        "They seem to share some features. Elevated gamma appeared in Vipassana, Himalayan Yoga and Isha Shoonya practitioners, and EEG classifiers told meditative from non-meditative states apart across four traditions with high accuracy, more so in advanced practitioners. These are small cross-sectional studies, so they suggest a common signature rather than prove one.",
     },
     {
       question: "Can I measure my own meditation progress?",
       answer:
-        "Not gamma waves at home — but you can track heart rate variability (HRV), which also strengthens with meditation practice and reflects the same trained calm. A rising HRV baseline is an accessible, at-home marker of the progress brain research shows is real.",
+        "Not gamma waves at home. You can track pulse, breathing and heart rate variability (HRV), which often rises during slow, calm practice; lasting changes in resting HRV after meditation courses are mixed. Use them as feedback on how your body responds, not as a measure of brain change.",
     },
     {
       question: "Is meditation a trainable skill?",
       answer:
-        "The evidence strongly suggests so. Both gamma waves and the distinctiveness of the meditative brain state increase with experience — meaning meditation builds measurable capacity over time, like physical training, rather than being a fixed ability you either have or don't.",
+        "The evidence suggests so, but it is mostly indirect. Gamma and the distinctiveness of the meditative brain state are greater in experienced practitioners, yet these studies compare different people, so they can't rule out that people with these brains simply keep meditating longer.",
     },
   ],
   "rajyoga-open-eye-meditation": [
@@ -1931,7 +1941,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Does Tanden (Zen) breathing work for beginners?",
       answer:
-        "Yes. A Japanese study had 15 people with no meditation experience do 20 minutes of focused Tanden breathing and measured prefrontal-cortex activation, a shift toward calm alpha EEG, and a significant rise in whole-blood serotonin — with reduced negative mood. Meaningful benefits arrive from the very first sessions, no experience needed.",
+        "Possibly. A Japanese study had 15 people with no meditation experience do 20 minutes of focused Tanden breathing and measured prefrontal-cortex activation, a shift toward alpha EEG, and a significant rise in whole-blood serotonin, with reduced negative mood. It was one small study without a control group, so it suggests, but does not prove, that beginners benefit from the first sessions.",
     },
     {
       question: "Can breathing lift mood, not just calm you down?",
@@ -1997,44 +2007,44 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Is it the cold or the breathing that reduces inflammation in the Wim Hof Method?",
       answer:
-        "The breathing. A 2022 Radboud study separated the components and found cold exposure alone did not significantly reduce inflammation, while the breathing technique did. The anti-inflammatory effect traces to the breath, not the ice baths.",
+        "Mainly the breathing, with the cold as an add-on. The best-known trial combined meditation, breathing and cold. A 2022 Radboud pilot study in 48 healthy young men separated the components: cold training alone did not meaningfully change the inflammatory response, the breathing exercise did, and adding cold training strengthened its effect — the combination worked best. It is a laboratory model, not a treatment for inflammatory disease.",
     },
     {
       question: "Can you really control your immune system with breathing?",
       answer:
-        "Within limits, yes — and it's documented. Radboud research (Kox et al., 2014, PNAS) showed trained people could voluntarily activate their sympathetic nervous system and blunt their inflammatory response to injected endotoxin. It's a temporary, controlled effect, not immunity to disease.",
+        "Within limits, in small laboratory studies. Radboud research (Kox et al., 2014, PNAS) showed trained healthy young men could voluntarily activate their sympathetic nervous system and blunt their inflammatory response to injected endotoxin. It's a temporary laboratory effect, not immunity to disease.",
     },
     {
       question: "Do I need ice baths to get the benefits of Wim Hof breathing?",
       answer:
-        "Not for the anti-inflammatory effect — the research points to the breathing as the active ingredient. Cold training has separate effects and appeal, but it isn't required for the immune result.",
+        "Not to get an effect: breathing alone changed the inflammatory response in the lab model, while cold alone did not. In a 2022 pilot study, adding cold training strengthened the breathing effect, so the combination worked best. If you do use cold water, read the cold-water safety guidance first.",
     },
     {
       question: "Is Wim Hof breathing calming like slow breathing?",
       answer:
-        "No — it's the opposite. Wim Hof breathing is controlled hyperventilation that activates the sympathetic (\"fight or flight\") system, while slow six-breaths-per-minute breathing activates the parasympathetic (\"rest and digest\") system. Different tools for different goals.",
+        "No — it's the opposite. Wim Hof breathing is controlled hyperventilation that activates the sympathetic (\"fight or flight\") system, while slow six-breaths-per-minute breathing is associated with higher vagally mediated HRV — the calming (\"rest and digest\") direction. Different tools for different goals.",
     },
     {
       question: "Is Wim Hof breathing safe?",
       answer:
-        "Done seated or lying down, for most healthy people it's safe. Never do it in or near water, while driving, or standing, because the breath-holds can cause light-headedness or fainting. If you have a medical condition, check with your doctor first.",
+        "Done seated or lying down, most healthy people tolerate it. Never do it in or near water (including baths and cold plunges), while driving, or standing, because the breath-holds can cause light-headedness or fainting without warning. If you have epilepsy, heart disease or high blood pressure, are pregnant, or have panic attacks, check with your doctor first.",
     },
   ],
   "breathing-altitude-acclimatization": [
     {
       question: "Can breathing exercises help with altitude sickness?",
       answer:
-        "They may help. On a Kilimanjaro expedition, 26 participants used Wim Hof Method controlled-hyperventilation breathing and researchers reported it may prevent or reduce acute mountain sickness and accelerate acclimatization. It's a promising field observation, not proven in large trials, and doesn't replace proper acclimatization.",
+        "Possibly, but the evidence is very thin. A single uncontrolled report from a Kilimanjaro expedition described 26 participants using Wim Hof Method controlled-hyperventilation breathing with fewer or milder symptoms of acute mountain sickness. That is an anecdote, not a trial, and breathing doesn't replace proper acclimatization.",
     },
     {
       question: "How does breathing help at altitude?",
       answer:
-        "Deliberate deep breathing temporarily raises blood oxygen and lowers carbon dioxide, nudging blood chemistry toward the adaptation your body makes naturally over days — potentially giving acclimatization a head start.",
+        "At altitude, breathing more is the body's own first response to thin air and does raise blood oxygen somewhat. Deliberate fast breathing mainly lowers carbon dioxide; at sea level it barely raises oxygen, because blood is already about 97–99% saturated. Whether a breathing technique speeds acclimatization has not been tested in controlled trials.",
     },
     {
       question: "What breathing should I use at altitude?",
       answer:
-        "Controlled deep breathing may aid acclimatization during ascent, while slow paced breathing helps with the anxiety and poor sleep altitude brings. Do intense breathing only while resting, never in dangerous terrain.",
+        "No breathing protocol has been shown to speed acclimatization. Slow paced breathing can help with the anxiety and poor sleep altitude brings. If you try intense breathing, do it only seated and resting — never in or near water, while driving, or in dangerous terrain.",
     },
     {
       question: "Does breathing replace acclimatization?",
@@ -2046,7 +2056,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Is all breathwork calming?",
       answer:
-        "No. Fast pranayama (Kapalabhati, Bhastrika) is energizing and activates the sympathetic system; slow pranayama (Nadi Shodhana, Bhramari) is calming and activates the parasympathetic system. Using fast breathing to calm down works against you.",
+        "No. Fast pranayama (Kapalabhati, Bhastrika) is energizing and activates the sympathetic system; slow pranayama (Nadi Shodhana, Bhramari) is calming and is associated with higher vagally mediated HRV. Using fast breathing to calm down works against you.",
     },
     {
       question: "Which pranayama is best for calming down?",
@@ -2100,12 +2110,12 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Does breathing actually lower cortisol?",
       answer:
-        "Yes — Japanese studies measuring urinary hormones found that conscious abdominal breathing significantly lowered cortisol, along with adrenaline and noradrenaline, while shifting the body toward parasympathetic dominance.",
+        "Possibly — two small Japanese studies (11 and 14 participants) measuring urinary hormones found lower cortisol, adrenaline and noradrenaline after conscious abdominal breathing, along with a shift toward parasympathetic dominance. The samples are small, so treat this as preliminary.",
     },
     {
       question: "Is this stronger evidence than HRV studies?",
       answer:
-        "It's more direct. HRV infers calm from your heartbeat; these studies measured the actual stress hormones (cortisol, adrenaline, noradrenaline) in urine and saliva, confirming the calm at the chemical level.",
+        "It's more direct but much smaller. HRV infers calm from your heartbeat; these studies measured stress hormones (cortisol, adrenaline, noradrenaline) in urine and saliva — a useful signal at the chemical level, but from small samples.",
     },
     {
       question: "What kind of breathing lowers stress hormones?",
@@ -2154,27 +2164,27 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Is nose breathing better than mouth breathing?",
       answer:
-        "For rest, focus and slow breathing, yes — nasal breathing supports a calmer autonomic state and steadier attention, and Japanese research found measurable autonomic differences favoring it. Mouth breathing is appropriate mainly during hard exertion.",
+        "For rest, focus and slow breathing, it is the sensible default — the nose filters, warms and humidifies air, and early findings from small studies, including one Japanese study, hint at a calmer autonomic state and steadier attention; these effects are not established. Mouth breathing is appropriate mainly during hard exertion.",
     },
     {
       question: "Does nose breathing help concentration?",
       answer:
-        "Research linked nasal breathing to steadier sustained attention, likely because it supports a regulated autonomic state. Keeping your mouth closed during focused work may help concentration.",
+        "One small study linked nasal breathing to slightly steadier sustained attention — an early finding, not an established effect. Keeping your mouth closed during focused work may help, but this is not proven.",
     },
     {
       question: "Why is nasal breathing calming?",
       answer:
-        "It's slower and more resistive, encouraging a longer, controlled exhale, and it engages nasal nitric oxide that supports blood flow. Mouth breathing tends to be faster and more activating.",
+        "It's slower and more resistive, encouraging a longer, controlled exhale, and it carries sinus nitric oxide into the lungs — a proposed mechanism whose effect size is not established. Mouth breathing tends to be faster and more activating.",
     },
     {
       question: "Is mouth breathing ever okay?",
       answer:
-        "Yes — during intense exercise, when you need maximum airflow. The concern is habitual mouth breathing at rest or during sleep, which is linked to a less favorable autonomic pattern.",
+        "Yes — during intense exercise, when you need maximum airflow. The concern is habitual mouth breathing at rest or during sleep, which small studies tentatively link to a less favorable autonomic pattern.",
     },
     {
       question: "Should I breathe through my nose during breathing exercises?",
       answer:
-        "Inhale through the nose for the natural pacing and nitric oxide benefit. A long exhale through the mouth is fine; what matters most is breathing slowly.",
+        "Inhale through the nose for the natural pacing; any nitric oxide benefit is a proposed mechanism whose size is not established. A long exhale through the mouth is fine; what matters most is breathing slowly.",
     },
   ],
   "hrv-breathing-cold-honest-limits": [
@@ -2475,12 +2485,12 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Why does a cold shower make you feel calm afterward?",
       answer:
-        "Cold triggers a sympathetic 'cold-shock' spike — racing heart, an involuntary gasp — and then, as you stay in and especially once you come out, a strong parasympathetic rebound. Cold-water immersion increases vagal activity, so the clear-headed calm afterward comes from that vagal overcorrection, not the cold itself. You've run a full stress-and-recovery cycle in minutes.",
+        "Cold on the skin triggers a sympathetic 'cold-shock' spike — racing heart, an involuntary gasp. Cold on the face triggers the diving response, which slows the heart through the vagus nerve. Vagally mediated HRV rises during the exposure but has not been shown to stay higher afterwards, so there is no proven post-cold 'vagal rebound'. The calm many people feel afterwards is a real experience, not evidence that the cold has trained the vagus nerve.",
     },
     {
       question: "How do I stay calm in cold water?",
       answer:
-        "Control the first breath. The cold's power lives in the involuntary gasp, so decide your first breath before the water hits and meet it with a long, slow exhale, keeping the breathing deliberate. That stops the sympathetic spike from bootstrapping into panic and steers you toward the parasympathetic rebound — the same breath skill you can practice warm first.",
+        "Control the first breath. The cold's power lives in the involuntary gasp, so decide your first breath before the water hits and meet it with a long, slow exhale, keeping the breathing deliberate. That stops the sympathetic spike from bootstrapping into panic and keeps the breath under your control — the same breath skill you can practice warm first.",
     },
     {
       question: "Is cold exposure safe?",
@@ -2748,7 +2758,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     },
   ],
   "breathing-for-focus-and-attention": [
-    { question: "Does breathing through your nose improve memory?", answer: "Research suggests it can help. Nasal breathing synchronizes brain rhythms in memory- and emotion-related regions in a way mouth breathing does not, and people remembered items better when they arrived during a nasal inhale. Slow nasal breathing also settles you into the calm-alert state where focus works best." },
+    { question: "Does breathing through your nose improve memory?", answer: "Not shown. One study (Zelano et al., 2016) recorded brain rhythms in a very few patients with epilepsy who had brain electrodes, plus lab memory tests: nasal breathing synchronized rhythms in memory- and emotion-related regions, and items were remembered better when they arrived during a nasal inhale. It does not show that habitual nose breathing improves memory or focus. Slow nasal breathing also settles you into the calm-alert state where focus works best." },
     {
       question: "Can breathing exercises improve focus and concentration?",
       answer:

@@ -1,5 +1,5 @@
 ---
-sourceHash: 60023d57fe48
+sourceHash: 3f90a409e444
 title: "Le nerf vague : ce qu’il fait, et ce qui relève du mythe"
 metaTitle: "Le nerf vague : son rôle réel et les mythes"
 metaDescription: "Ce que fait vraiment le nerf vague — cœur, intestin, voies respiratoires, gorge, signaux vers le cerveau — et les allégations sur le tonus vagal qui exagèrent."

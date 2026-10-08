@@ -17,7 +17,7 @@ const infraredi: ToolReviewInput = {
     { criterionId: 'wavelengths', score: 8.5, note: 'Four wavelengths (630 + 660 + 830 + 850 nm) — the spectrum of the original MitoPRO 1500; the current 1500X adds 590 and 810 nm.' },
     { criterionId: 'build-emf-flicker', score: 8.0, note: 'EMF tested at <0.5 mG at 6", flicker rate disclosed. Build is competent — aluminium back, glass front; multi-year warranty.' },
     { criterionId: 'coverage', score: 8.5, note: 'Large panel — half-body coverage comparable to MitoPRO 1500. Base stand included; 3-year warranty.' },
-    { criterionId: 'evidence', score: 7.0, note: 'No FDA Class II registration. Marketing is reasonable; references underlying photobiomodulation literature without overreach.' },
+    { criterionId: 'evidence', score: 7.0, note: 'Marketing is reasonable; references underlying photobiomodulation literature without overreach.' },
     { criterionId: 'value', score: 8.0, note: '$1,019 (Pro Max 2.0, on sale) for a panel size comparable to MitoPRO 1500X ($1,299). Strong value in the large-panel tier.' },
   ],
   pros: [
@@ -28,7 +28,6 @@ const infraredi: ToolReviewInput = {
   ],
   cons: [
     'Newer brand — multi-year reliability track record is thinner',
-    'No FDA Class II registration',
     'EMF and flicker testing less independently re-verified than Joovv or PlatinumLED',
     'Smaller community / biohacker following than Mito Red',
   ],
@@ -45,7 +44,7 @@ Infraredi Pro 1500 is the large-panel value pick. Note: Infraredi no longer list
 
 ## What are the downsides of Infraredi Pro 1500?
 
-Brand maturity. Infraredi is newer than Joovv or Mito Red, and the multi-year reliability track record is thinner. EMF and flicker testing is published but less independently re-verified than the larger brands. No FDA Class II registration.
+Brand maturity. Infraredi is newer than Joovv or Mito Red, and the multi-year reliability track record is thinner. EMF and flicker testing is published but less independently re-verified than the larger brands.
 
 ## Who should buy Infraredi Pro 1500?
 
@@ -67,9 +66,9 @@ The photobiomodulation mechanism behind why red light therapy works.
   ],
   relatedSlugs: ['mito-red-mitopro-1500', 'hooga-hg500', 'biolight-pro-900'],
   faq: [
-    { q: "Infraredi Pro 1500 vs MitoPRO 1500: which is better?", a: "The Infraredi Pro 1500 matches the MitoPRO 1500 on panel size for about $280 less (the current Pro Max 2.0 at $1,019 vs the 1500X at $1,299), with five wavelengths to the 1500X’s six and a base stand included. Mito Red has the more established brand, FDA Class II registration on the 1500X, a larger biohacker community and a longer reliability record. Infraredi wins on price." },
-    { q: "How much does the Infraredi Pro 1500 cost?", a: "Infraredi no longer lists the Pro 1500; its closest current model, the Pro Max 2.0, costs $1,019 on sale (list $1,199), with a base stand, 3-year warranty and 60-day trial. That makes it a strong value for a large panel, although it has no FDA Class II registration." },
-    { q: "What are the downsides of the Infraredi Pro 1500?", a: "Infraredi is a newer brand, so its multi-year reliability record is thinner than Joovv or Mito Red. It lacks FDA Class II registration, and its published EMF and flicker results have been less independently re-verified than those of Joovv or PlatinumLED." },
+    { q: "Infraredi Pro 1500 vs MitoPRO 1500: which is better?", a: "The Infraredi Pro 1500 matches the MitoPRO 1500 on panel size for about $280 less (the current Pro Max 2.0 at $1,019 vs the 1500X at $1,299), with five wavelengths to the 1500X’s six and a base stand included. Mito Red has the more established brand, a larger biohacker community and a longer reliability record. Infraredi wins on price." },
+    { q: "How much does the Infraredi Pro 1500 cost?", a: "Infraredi no longer lists the Pro 1500; its closest current model, the Pro Max 2.0, costs $1,019 on sale (list $1,199), with a base stand, 3-year warranty and 60-day trial. That makes it a strong value for a large panel." },
+    { q: "What are the downsides of the Infraredi Pro 1500?", a: "Infraredi is a newer brand, so its multi-year reliability record is thinner than Joovv or Mito Red. Its published EMF and flicker results have been less independently re-verified than those of Joovv or PlatinumLED." },
   ],
   datePublished: '2026-05-23',
   dateModified: '2026-10-01',

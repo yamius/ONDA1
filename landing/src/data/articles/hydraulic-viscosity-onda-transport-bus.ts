@@ -64,7 +64,7 @@ According to the Hagen–Poiseuille law, resistance to flow is directly proporti
 When structural tension (such as spasms in the masticatory or trapezius muscles) compresses microvessels, the resulting decrease in blood velocity and local tissue cooling causes viscosity to rise. The result is delayed delivery of nutrients to the brain — increased latency.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: peripheral skin temperature, capillary refill, subjective head clarity
+> EXAMPLE_DEVICE: peripheral skin temperature, capillary refill, subjective head clarity
 > METRIC: cerebral perfusion latency, jaw/neck tension index, focus persistence
 > STATUS: BUS_OPTIMIZED
 

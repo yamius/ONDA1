@@ -18,10 +18,10 @@ const circularVsGen3: HeadToHeadInput = {
   axes: [
     { name: 'Features that work today', winner: 'b', note: 'RingConn’s vascular/sleep-apnea insights and haptic alerts ship and work. The Circular’s ECG/AFib didn’t reliably work in independent testing.' },
     { name: 'Unique hardware', winner: 'a', note: 'The Circular’s on-finger ECG and AFib detection are unique in the category — if they mature.' },
-    { name: 'Subscription', winner: 'c', note: 'Tie — both are subscription-free.' },
+    { name: 'Subscription', winner: 'tie', note: 'Tie — both are subscription-free.' },
     { name: 'Battery', winner: 'b', note: 'RingConn Gen 3: ~10-14 days plus a wireless charging case. Circular Ring 2: ~6 days. RingConn lasts much longer.' },
     { name: 'Reliability & polish', winner: 'b', note: 'RingConn is proven and well-reviewed; the Circular’s software was the main thing reviewers criticised.' },
-    { name: 'Price', winner: 'c', note: 'Both start around $349 (Circular’s higher finishes cost more). Similar money — the difference is what you actually get working.' },
+    { name: 'Price', winner: 'tie', note: 'Both start around $349 (Circular’s higher finishes cost more). Similar money — the difference is what you actually get working.' },
   ],
   faq: [
     {

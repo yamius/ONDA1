@@ -15,7 +15,7 @@ const amazfitHelioRing: ToolReviewInput = {
   scores: [
     { criterionId: 'hrv-accuracy', score: 6.5, note: 'Continuous HRV via RMSSD for recovery/readiness. Reasonable for a budget ring, but not validated to the level of Oura.' },
     { criterionId: 'sensor', score: 6.5, note: 'Optical HR, SpO2 and skin-temperature sensors in a light titanium shell. Budget-tier optics; a clean signal at rest.' },
-    { criterionId: 'sleep-accuracy', score: 7.5, note: 'The strongest area — roughly 85–95% agreement vs polysomnography in third-party checks. Genuinely good sleep tracking for the price.' },
+    { criterionId: 'sleep-accuracy', score: 7.5, note: 'The strongest area — good sleep tracking for the price (stage estimates, not a sleep study).' },
     { criterionId: 'data-access', score: 6.0, note: 'Data lives in the Zepp app with basic export; no truly open API.' },
     { criterionId: 'wearability', score: 6.0, note: 'Very light (<4g) and thin (2.6mm), comfortable to sleep in — but only three sizes (8, 10, 12) means many fingers can’t get a proper fit, and real-world battery is only ~2.5–3 days.' },
     { criterionId: 'app-ux', score: 6.5, note: 'The Zepp app (iOS + Android) gives sleep scores, readiness and basic workout summaries. Capable but less polished and explanatory than Oura.' },
@@ -24,7 +24,7 @@ const amazfitHelioRing: ToolReviewInput = {
   pros: [
     'Just $199 with no subscription for core metrics',
     'Light, thin titanium — comfortable to sleep in',
-    'Respectable sleep tracking (~85–95% vs PSG)',
+    'Respectable sleep tracking for the price',
     'Cross-platform Zepp app (iOS and Android)',
   ],
   cons: [

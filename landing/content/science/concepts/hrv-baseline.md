@@ -29,7 +29,7 @@ lastReviewed: null
 related:
   glossary: [heart-rate-variability]
   articles: [your-baseline-knows-first, normal-hrv-by-age, how-to-measure-hrv-consistently]
-  science: [concepts/heart-rate-variability, concepts/rmssd, concepts/sdnn, measurements/heart-rate-variability]
+  science: [concepts/heart-rate-variability, concepts/rmssd, concepts/sdnn, measurements/heart-rate-variability, mechanisms/exercise-and-hrv]
 relatedPlanned: [concepts/interpreting-hrv, mechanisms/hrv-day-to-day]
 sources:
   - id: S1

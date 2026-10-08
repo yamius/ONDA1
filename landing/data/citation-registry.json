@@ -241,6 +241,84 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1001/jamapsychiatry.2016.1031": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Whole-Body Hyperthermia for the Treatment of Major Depressive Disorder",
+   "firstAuthor": "Janssen",
+   "authors": [
+    "Janssen",
+    "Lowry",
+    "Mehl",
+    "Allen",
+    "Kelly",
+    "Gartner",
+    "Medrano",
+    "Begay",
+    "Rentscher",
+    "White",
+    "Fridman",
+    "Roberts",
+    "Robbins",
+    "Hanusch",
+    "Cole",
+    "Raison"
+   ],
+   "year": 2016,
+   "journal": "JAMA Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1001/jamapsychiatry.2024.3702": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Neurofeedback for Attention-Deficit/Hyperactivity Disorder",
+   "firstAuthor": "Westwood",
+   "authors": [
+    "Westwood",
+    "Aggensteiner",
+    "Kaiser",
+    "Nagy",
+    "Donno",
+    "Merkl",
+    "Balia",
+    "Goujon",
+    "Bousquet",
+    "Capodiferro",
+    "Derks",
+    "Purper-Ouakil",
+    "Carucci",
+    "Holtmann",
+    "Brandeis",
+    "Cortese",
+    "Sonuga-Barke",
+    "European ADHD Guidelines Group (EAGG)",
+    "Baeyens",
+    "Banaschewski",
+    "Bölte",
+    "Buitelaar",
+    "Coghill",
+    "Doepfner",
+    "Ferrin",
+    "Galera",
+    "Hoofdakker",
+    "Hollis",
+    "Kuntsi",
+    "Van der Oord",
+    "Ramos-Quiroga",
+    "Romanos",
+    "Stringaris",
+    "Soutullo",
+    "Simonoff",
+    "Santosh",
+    "Thapar",
+    "Wong"
+   ],
+   "year": 2025,
+   "journal": "JAMA Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1002/14651858.cd001277.pub4": {
    "kind": "doi",
    "valid": true,
@@ -320,6 +398,110 @@
    "journal": "Cochrane Database of Systematic Reviews",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1002/14651858.cd008262.pub2": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cold-water immersion (cryotherapy) for preventing and treating muscle soreness after exercise",
+   "firstAuthor": "Bleakley",
+   "authors": [
+    "Bleakley",
+    "McDonough",
+    "Gardner",
+    "Baxter",
+    "Hopkins",
+    "Davison"
+   ],
+   "year": 2012,
+   "journal": "Cochrane Database of Systematic Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1002/14651858.cd008471.pub2": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Electromagnetic field stimulation for treating delayed union or non-union of long bone fractures in adults",
+   "firstAuthor": "Griffin",
+   "authors": [
+    "Griffin",
+    "Costa",
+    "Parsons",
+    "Smith"
+   ],
+   "year": 2011,
+   "journal": "Cochrane Database of Systematic Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1002/14651858.cd010789.pub2": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Whole-body cryotherapy (extreme cold air exposure) for preventing and treating muscle soreness after exercise in adults",
+   "firstAuthor": "Costello",
+   "authors": [
+    "Costello",
+    "Baker",
+    "Minett",
+    "Bieuzen",
+    "Stewart",
+    "Bleakley"
+   ],
+   "year": 2015,
+   "journal": "Cochrane Database of Systematic Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1002/ar.20782": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Nitric Oxide and the Paranasal Sinuses",
+   "firstAuthor": "Lundberg",
+   "authors": [
+    "Lundberg"
+   ],
+   "year": 2008,
+   "journal": "The Anatomical Record",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1002/bem.22127": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Pulsed electromagnetic field therapy in the treatment of pain and other symptoms in fibromyalgia: A randomized controlled study",
+   "firstAuthor": "Multanen",
+   "authors": [
+    "Multanen",
+    "Häkkinen",
+    "Heikkinen",
+    "Kautiainen",
+    "Mustalampi",
+    "Ylinen"
+   ],
+   "year": 2018,
+   "journal": "Bioelectromagnetics",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1002/clc.23077": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of sauna bath on heart failure: A systematic review and meta‐analysis",
+   "firstAuthor": "Källström",
+   "authors": [
+    "Källström",
+    "Soveri",
+    "Oldgren",
+    "Laukkanen",
+    "Ichiki",
+    "Tei",
+    "Timmerman",
+    "Berglund",
+    "Hägglund"
+   ],
+   "year": 2018,
+   "journal": "Clinical Cardiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1002/cphy.c150037": {
    "kind": "doi",
@@ -424,6 +606,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1002/oto2.70294": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Impact of Nasal Obstruction and Mouth Taping on Sleep Apnea Indicators: Systematic Review and Meta‐Analysis",
+   "firstAuthor": "Alshehri",
+   "authors": [
+    "Alshehri",
+    "Alsaif",
+    "Abdulrazaq",
+    "Jabor",
+    "Al‐Sayed"
+   ],
+   "year": 2026,
+   "journal": "OTO Open",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1002/smi.3025": {
    "kind": "doi",
    "valid": true,
@@ -438,6 +637,21 @@
    "journal": "Stress and Health",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1002/smi.70049": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Effects of an Online Yoga Nidra Meditation on Subjective Well‐Being and Diurnal Salivary Cortisol: A Randomised Controlled Trial",
+   "firstAuthor": "Moszeik",
+   "authors": [
+    "Moszeik",
+    "Rohleder",
+    "Renner"
+   ],
+   "year": 2025,
+   "journal": "Stress and Health",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1002/wps.20229": {
    "kind": "doi",
@@ -508,6 +722,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1007/bf03345606": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Exercise and circulating Cortisol levels: The intensity threshold effect",
+   "firstAuthor": "Hill",
+   "authors": [
+    "Hill",
+    "Zack",
+    "Battaglini",
+    "Viru",
+    "Viru",
+    "Hackney"
+   ],
+   "year": 2008,
+   "yearAlt": 2014,
+   "journal": "Journal of Endocrinological Investigation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1007/s00421-003-0988-y": {
    "kind": "doi",
    "valid": true,
@@ -555,6 +788,23 @@
    "journal": "European Journal of Applied Physiology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1007/s00421-023-05202-7": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of hyperventilation on oxygenation, apnea breaking points, diving response, and spleen contraction during serial static apneas",
+   "firstAuthor": "Pernett",
+   "authors": [
+    "Pernett",
+    "Bergenhed",
+    "Holmström",
+    "Mulder",
+    "Schagatay"
+   ],
+   "year": 2023,
+   "journal": "European Journal of Applied Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1007/s004210050065": {
    "kind": "doi",
@@ -604,6 +854,55 @@
    "journal": "Psychological Research",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1007/s00520-019-04890-2": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Systematic review of photobiomodulation for the management of oral mucositis in cancer patients and clinical practice guidelines",
+   "firstAuthor": "On behalf of The Mucositis Study Group of the Multinational Association of Supportive Care in Cancer/International Society of Oral Oncology (MASCC/ISOO)",
+   "authors": [
+    "On behalf of The Mucositis Study Group of the Multinational Association of Supportive Care in Cancer/International Society of Oral Oncology (MASCC/ISOO)",
+    "Zadik",
+    "Arany",
+    "Fregnani",
+    "Bossi",
+    "Antunes",
+    "Bensadoun",
+    "Gueiros",
+    "Majorana",
+    "Nair",
+    "Ranna",
+    "Tissing",
+    "Vaddi",
+    "Lubart",
+    "Migliorati",
+    "Lalla",
+    "Cheng",
+    "Elad"
+   ],
+   "year": 2019,
+   "journal": "Supportive Care in Cancer",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1007/s10103-013-1465-4": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effect of phototherapy (low-level laser therapy and light-emitting diode therapy) on exercise performance and markers of exercise recovery: a systematic review with meta-analysis",
+   "firstAuthor": "Leal-Junior",
+   "authors": [
+    "Leal-Junior",
+    "Vanin",
+    "Miranda",
+    "de Carvalho",
+    "Dal Corso",
+    "Bjordal"
+   ],
+   "year": 2013,
+   "yearAlt": 2015,
+   "journal": "Lasers in Medical Science",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1007/s10286-006-0352-5": {
    "kind": "doi",
@@ -954,6 +1253,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1007/s41782-022-00202-7": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Origin and Clinical Relevance of Yoga Nidra",
+   "firstAuthor": "Pandi-Perumal",
+   "authors": [
+    "Pandi-Perumal",
+    "Spence",
+    "Srivastava",
+    "Kanchibhotla",
+    "Kumar",
+    "Sharma",
+    "Gupta",
+    "Batmanabane"
+   ],
+   "year": 2022,
+   "journal": "Sleep and Vigilance",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1016/0002-9149(87)90795-8": {
    "kind": "doi",
    "valid": true,
@@ -990,6 +1309,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.amjoto.2024.104545": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Nocturnal mouth-taping and social media: A scoping review of the evidence",
+   "firstAuthor": "Fangmeyer",
+   "authors": [
+    "Fangmeyer",
+    "Badger",
+    "Thakkar"
+   ],
+   "year": 2025,
+   "journal": "American Journal of Otolaryngology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1016/j.annemergmed.2004.06.016": {
    "kind": "doi",
    "valid": true,
@@ -1005,6 +1339,65 @@
    "journal": "Annals of Emergency Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1016/j.arr.2022.101786": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Can transcranial photobiomodulation improve cognitive function? A systematic review of human studies",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Ding",
+    "Chan"
+   ],
+   "year": 2023,
+   "journal": "Ageing Research Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1016/j.autneu.2026.103447": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Validity of the Polar H10 for heart rate variability and cardiac autonomic reflex tests",
+   "firstAuthor": "Blalock",
+   "authors": [
+    "Blalock",
+    "Riemann",
+    "Flatt"
+   ],
+   "year": 2026,
+   "journal": "Autonomic Neuroscience",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
+  "doi:10.1016/j.bbi.2012.02.002": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Analysis of cortisol in hair – State of the art and future directions",
+   "firstAuthor": "Stalder",
+   "authors": [
+    "Stalder",
+    "Kirschbaum"
+   ],
+   "year": 2012,
+   "journal": "Brain, Behavior, and Immunity",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1016/j.biopsych.2010.02.017": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Transcranial Low Voltage Pulsed Electromagnetic Fields in Patients with Treatment-Resistant Depression",
+   "firstAuthor": "Martiny",
+   "authors": [
+    "Martiny",
+    "Lunde",
+    "Bech"
+   ],
+   "year": 2010,
+   "journal": "Biological Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/j.biopsych.2015.06.016": {
    "kind": "doi",
@@ -1416,6 +1809,43 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1016/j.cpnec.2024.100272": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A randomized controlled clinical trial of a Wim Hof Method intervention in women with high depressive symptoms",
+   "firstAuthor": "Blades",
+   "authors": [
+    "Blades",
+    "Mendes",
+    "Don",
+    "Mayer",
+    "Dileo",
+    "O'Bryan",
+    "Fromer",
+    "Guan",
+    "Cheng",
+    "Mason",
+    "Prather",
+    "Epel"
+   ],
+   "year": 2024,
+   "journal": "Comprehensive Psychoneuroendocrinology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1016/j.ctcp.2017.04.001": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Psychological effects of yoga nidra in women with menstrual disorders: A systematic review of randomized controlled trials",
+   "firstAuthor": "Kim",
+   "authors": [
+    "Kim"
+   ],
+   "year": 2017,
+   "journal": "Complementary Therapies in Clinical Practice",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1016/j.ctim.2005.01.003": {
    "kind": "doi",
    "valid": true,
@@ -1461,6 +1891,20 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.ctim.2019.05.002": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The blood pressure and heart rate during sauna bath correspond to cardiac responses during submaximal dynamic exercise",
+   "firstAuthor": "Ketelhut",
+   "authors": [
+    "Ketelhut",
+    "Ketelhut"
+   ],
+   "year": 2019,
+   "journal": "Complementary Therapies in Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1016/j.ctim.2021.102750": {
    "kind": "doi",
    "valid": true,
@@ -1498,6 +1942,20 @@
    "journal": "Complementary Therapies in Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.ctim.2025.103231": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Yoga Nidra for cardiovascular health: a systematic review and meta-analysis of between- and within-group effects",
+   "firstAuthor": "Ghai",
+   "authors": [
+    "Ghai",
+    "Ghai"
+   ],
+   "year": 2025,
+   "journal": "Complementary Therapies in Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/j.cub.2013.06.039": {
    "kind": "doi",
@@ -1573,6 +2031,21 @@
    "journal": "EXPLORE",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.explore.2026.103414": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effect of the Buteyko breathing technique on asthma control and quality of life: a systematic review and meta-analysis of Randomized Controlled Trials",
+   "firstAuthor": "Wu",
+   "authors": [
+    "Wu",
+    "Zhang",
+    "Huang"
+   ],
+   "year": 2026,
+   "journal": "EXPLORE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1016/j.forsciint.2010.02.021": {
    "kind": "doi",
@@ -1689,6 +2162,58 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.jaac.2020.07.906": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Double-Blind Placebo-Controlled Randomized Clinical Trial of Neurofeedback for Attention-Deficit/Hyperactivity Disorder With 13-Month Follow-up",
+   "firstAuthor": "Arnold",
+   "authors": [
+    "Arnold",
+    "Arns",
+    "Barterian",
+    "Bergman",
+    "Black",
+    "Conners",
+    "Connor",
+    "Dasgupta",
+    "deBeus",
+    "Higgins",
+    "Hirshberg",
+    "Hollway",
+    "Kerson",
+    "Lightstone",
+    "Lofthouse",
+    "Lubar",
+    "McBurnett",
+    "Monastra",
+    "Buchan-Page",
+    "Pan",
+    "Rice",
+    "Roley-Roberts",
+    "Rhodes",
+    "Schrader",
+    "Tan",
+    "Williams"
+   ],
+   "year": 2021,
+   "journal": "Journal of the American Academy of Child &amp; Adolescent Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1016/j.jaad.2017.02.054": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effectiveness of treatments for androgenetic alopecia: A systematic review and meta-analysis",
+   "firstAuthor": "Adil",
+   "authors": [
+    "Adil",
+    "Godwin"
+   ],
+   "year": 2017,
+   "journal": "Journal of the American Academy of Dermatology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1016/j.jacc.2007.04.079": {
    "kind": "doi",
    "valid": true,
@@ -1740,6 +2265,21 @@
    "journal": "Journal of the American College of Cardiology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.jacc.2015.06.1084": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Orthostatic Hypotension",
+   "firstAuthor": "Ricci",
+   "authors": [
+    "Ricci",
+    "De Caterina",
+    "Fedorowski"
+   ],
+   "year": 2015,
+   "journal": "Journal of the American College of Cardiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1016/j.jad.2011.01.011": {
    "kind": "doi",
@@ -1793,6 +2333,26 @@
    "journal": "Journal of the American Dietetic Association",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.jaim.2023.100882": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Yoga Nidra for hypertension: A systematic review and meta-analysis",
+   "firstAuthor": "Ahuja",
+   "authors": [
+    "Ahuja",
+    "Bhardwaj",
+    "Pathania",
+    "Sethi",
+    "Kumar",
+    "Parchani",
+    "Chandel",
+    "Phadke"
+   ],
+   "year": 2024,
+   "journal": "Journal of Ayurveda and Integrative Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/j.jbtep.2018.12.002": {
    "kind": "doi",
@@ -1930,6 +2490,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.jsams.2021.04.012": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Monitoring and adapting endurance training on the basis of heart rate variability monitored by wearable technologies: A systematic review with meta-analysis",
+   "firstAuthor": "Düking",
+   "authors": [
+    "Düking",
+    "Zinner",
+    "Trabelsi",
+    "Reed",
+    "Holmberg",
+    "Kunz",
+    "Sperlich"
+   ],
+   "year": 2021,
+   "journal": "Journal of Science and Medicine in Sport",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1016/j.jsmc.2009.02.006": {
    "kind": "doi",
    "valid": true,
@@ -1943,6 +2522,23 @@
    "journal": "Sleep Medicine Clinics",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.jtcme.2017.02.003": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of Bhramari Pranayama on health – A systematic review",
+   "firstAuthor": "Kuppusamy",
+   "authors": [
+    "Kuppusamy",
+    "Kamaldeen",
+    "Pitani",
+    "Amaldas",
+    "Shanmugam"
+   ],
+   "year": 2018,
+   "journal": "Journal of Traditional and Complementary Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1016/j.jtherbio.2023.103775": {
    "kind": "doi",
@@ -2019,6 +2615,21 @@
    "journal": "Mayo Clinic Proceedings",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.mayocp.2018.04.008": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cardiovascular and Other Health Benefits of Sauna Bathing: A Review of the Evidence",
+   "firstAuthor": "Laukkanen",
+   "authors": [
+    "Laukkanen",
+    "Laukkanen",
+    "Kunutsor"
+   ],
+   "year": 2018,
+   "journal": "Mayo Clinic Proceedings",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/j.neubiorev.2008.08.004": {
    "kind": "doi",
@@ -2203,6 +2814,26 @@
    "journal": "Neuroscience &amp; Biobehavioral Reviews",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.neubiorev.2023.105453": {
+   "kind": "doi",
+   "valid": true,
+   "title": "High ventilation breathwork practices: An overview of their effects, mechanisms, and considerations for clinical applications",
+   "firstAuthor": "Fincham",
+   "authors": [
+    "Fincham",
+    "Kartar",
+    "Uthaug",
+    "Anderson",
+    "Hall",
+    "Nagai",
+    "Critchley",
+    "Colasanti"
+   ],
+   "year": 2023,
+   "journal": "Neuroscience &amp; Biobehavioral Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/j.neuroimage.2019.04.081": {
    "kind": "doi",
@@ -2417,6 +3048,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.resp.2008.05.002": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Air-conditioning in the human nasal cavity",
+   "firstAuthor": "Elad",
+   "authors": [
+    "Elad",
+    "Wolf",
+    "Keck"
+   ],
+   "year": 2008,
+   "journal": "Respiratory Physiology &amp; Neurobiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1016/j.rmed.2007.12.012": {
    "kind": "doi",
    "valid": true,
@@ -2531,6 +3177,37 @@
    "journal": "Sleep Medicine Reviews",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.smrv.2011.02.005": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart rate variability, sleep and sleep disorders",
+   "firstAuthor": "Stein",
+   "authors": [
+    "Stein",
+    "Pu"
+   ],
+   "year": 2012,
+   "journal": "Sleep Medicine Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
+  "doi:10.1016/j.smrv.2016.06.004": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart rate variability in insomnia patients: A critical review of the literature",
+   "firstAuthor": "Dodds",
+   "authors": [
+    "Dodds",
+    "Miller",
+    "Kyle",
+    "Marshall",
+    "Gordon"
+   ],
+   "year": 2017,
+   "journal": "Sleep Medicine Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1016/j.smrv.2023.101764": {
    "kind": "doi",
@@ -2777,6 +3454,20 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/s0002-9343(00)00671-9": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Benefits and risks of sauna bathing",
+   "firstAuthor": "Hannuksela",
+   "authors": [
+    "Hannuksela",
+    "Ellahham"
+   ],
+   "year": 2001,
+   "journal": "The American Journal of Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1016/s0005-7967(01)00061-4": {
    "kind": "doi",
    "valid": true,
@@ -2849,6 +3540,22 @@
    "journal": "The Lancet",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/s0140-6736(09)61522-1": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of low-level laser therapy in the management of neck pain: a systematic review and meta-analysis of randomised placebo or active-treatment controlled trials",
+   "firstAuthor": "Chow",
+   "authors": [
+    "Chow",
+    "Johnson",
+    "Lopes-Martins",
+    "Bjordal"
+   ],
+   "year": 2009,
+   "journal": "The Lancet",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1016/s0140-6736(14)62000-6": {
    "kind": "doi",
@@ -2949,6 +3656,23 @@
    "journal": "The Lancet",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/s0140-6736(84)90062-x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "CYCLICAL VARIATION OF THE HEART RATE IN SLEEP APNOEA SYNDROME",
+   "firstAuthor": "Guilleminault",
+   "authors": [
+    "Guilleminault",
+    "Winkle",
+    "Connolly",
+    "Melvin",
+    "Tilkian"
+   ],
+   "year": 1984,
+   "journal": "The Lancet",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1016/s0165-0173(98)00019-8": {
    "kind": "doi",
@@ -3061,6 +3785,24 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/s0926-6410(01)00106-9": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Increased dopamine tone during meditation-induced change of consciousness",
+   "firstAuthor": "Kjaer",
+   "authors": [
+    "Kjaer",
+    "Bertelsen",
+    "Piccini",
+    "Brooks",
+    "Alving",
+    "Lou"
+   ],
+   "year": 2002,
+   "journal": "Cognitive Brain Research",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1016/s0960-9822(01)00581-4": {
    "kind": "doi",
    "valid": true,
@@ -3153,6 +3895,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1017/s0033291721004396": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of bio- and neurofeedback for depression: a meta-analysis",
+   "firstAuthor": "Fernández-Alvarez",
+   "authors": [
+    "Fernández-Alvarez",
+    "Grassi",
+    "Colombo",
+    "Botella",
+    "Cipresso",
+    "Perna",
+    "Riva"
+   ],
+   "year": 2021,
+   "yearAlt": 2022,
+   "journal": "Psychological Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1023/a:1009554825745": {
    "kind": "doi",
    "valid": true,
@@ -3196,6 +3958,20 @@
    "journal": "Psychological Bulletin",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1037/amp0000118": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The psychology of neurofeedback: Clinical intervention even if applied placebo.",
+   "firstAuthor": "Thibault",
+   "authors": [
+    "Thibault",
+    "Raz"
+   ],
+   "year": 2017,
+   "journal": "American Psychologist",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1038/35013070": {
    "kind": "doi",
@@ -3326,6 +4102,32 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1038/nm.3891": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Short-term cold acclimation improves insulin sensitivity in patients with type 2 diabetes mellitus",
+   "firstAuthor": "Hanssen",
+   "authors": [
+    "Hanssen",
+    "Hoeks",
+    "Brans",
+    "van der Lans",
+    "Schaart",
+    "van den Driessche",
+    "Jörgensen",
+    "Boekschoten",
+    "Hesselink",
+    "Havekes",
+    "Kersten",
+    "Mottaghy",
+    "van Marken Lichtenbelt",
+    "Schrauwen"
+   ],
+   "year": 2015,
+   "journal": "Nature Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1038/nm0495-370": {
    "kind": "doi",
    "valid": true,
@@ -3346,6 +4148,19 @@
    "journal": "Nature Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1038/nrendo.2009.106": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Stress and disorders of the stress system",
+   "firstAuthor": "Chrousos",
+   "authors": [
+    "Chrousos"
+   ],
+   "year": 2009,
+   "journal": "Nature Reviews Endocrinology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1038/nrgastro.2012.32": {
    "kind": "doi",
@@ -3729,6 +4544,24 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1038/s41598-023-44902-0": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effectiveness of the Wim Hof method on cardiac autonomic function, blood pressure, arterial compliance, and different psychological parameters",
+   "firstAuthor": "Ketelhut",
+   "authors": [
+    "Ketelhut",
+    "Querciagrossa",
+    "Bisang",
+    "Metry",
+    "Borter",
+    "Nigg"
+   ],
+   "year": 2023,
+   "journal": "Scientific Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1038/s41598-026-44902-w": {
    "kind": "doi",
    "valid": true,
@@ -3799,6 +4632,63 @@
    "journal": "npj Digital Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1038/s41746-025-02238-1": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The accuracy of Apple Watch measurements: a living systematic review and meta-analysis",
+   "firstAuthor": "Lambe",
+   "authors": [
+    "Lambe",
+    "Baldwin",
+    "O’Grady",
+    "Schumann",
+    "Caulfield",
+    "Doherty"
+   ],
+   "year": 2026,
+   "journal": "npj Digital Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
+  "doi:10.1038/srep31724": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of Electrical Stimulators for Bone Healing: A Meta-Analysis of Randomized Sham-Controlled Trials",
+   "firstAuthor": "Aleem",
+   "authors": [
+    "Aleem",
+    "Aleem",
+    "Evaniew",
+    "Busse",
+    "Yaszemski",
+    "Agarwal",
+    "Einhorn",
+    "Bhandari"
+   ],
+   "year": 2016,
+   "journal": "Scientific Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1046/j.1365-2869.2001.00263.x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Autonomic activity during human sleep as a function of time and sleep stage",
+   "firstAuthor": "Trinder",
+   "authors": [
+    "Trinder",
+    "Kleiman",
+    "Carrington",
+    "Smith",
+    "Breen",
+    "Tan",
+    "Kim"
+   ],
+   "year": 2001,
+   "journal": "Journal of Sleep Research",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1053/j.gastro.2006.11.002": {
    "kind": "doi",
@@ -4275,6 +5165,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1080/02656736.2023.2179672": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effects of a single and a series of Finnish sauna sessions on the immune response and HSP-70 levels in trained and untrained men",
+   "firstAuthor": "Pilch",
+   "authors": [
+    "Pilch",
+    "Szarek",
+    "Olga",
+    "Anna",
+    "Żychowska",
+    "Ewa",
+    "Andraščíková",
+    "Pałka"
+   ],
+   "year": 2023,
+   "journal": "International Journal of Hyperthermia",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1080/02678370500297720": {
    "kind": "doi",
    "valid": true,
@@ -4417,6 +5327,53 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1089/acm.2006.6203": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Holotropic Breathwork: The Potential Role of a Prolonged, Voluntary Hyperventilation Procedure as an Adjunct to Psychotherapy",
+   "firstAuthor": "Rhinewine",
+   "authors": [
+    "Rhinewine",
+    "Williams"
+   ],
+   "year": 2007,
+   "journal": "The Journal of Alternative and Complementary Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1089/acm.2011.0331": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Yoga Nidra Relaxation Increases Heart Rate Variability and is Unaffected by a Prior Bout of Hatha Yoga",
+   "firstAuthor": "Markil",
+   "authors": [
+    "Markil",
+    "Whitehurst",
+    "Jacobs",
+    "Zoeller"
+   ],
+   "year": 2012,
+   "journal": "The Journal of Alternative and Complementary Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1089/acm.2020.0466": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Yoga Meditation for Active Duty Military Members with Post-Traumatic Stress Disorder: Results and Discussion of a Landmark Initial Study",
+   "firstAuthor": "Sullivan",
+   "authors": [
+    "Sullivan",
+    "Lopez",
+    "Nault",
+    "Moonaz",
+    "Miller"
+   ],
+   "year": 2021,
+   "journal": "The Journal of Alternative and Complementary Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1089/acm.2020.0489": {
    "kind": "doi",
    "valid": true,
@@ -4479,6 +5436,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1093/ageing/afw212": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sauna bathing is inversely associated with dementia and Alzheimer's disease in middle-aged Finnish men",
+   "firstAuthor": "Laukkanen",
+   "authors": [
+    "Laukkanen",
+    "Kunutsor",
+    "Kauhanen",
+    "Laukkanen"
+   ],
+   "year": 2016,
+   "yearAlt": 2017,
+   "journal": "Age and Ageing",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1093/ajcn/51.2.241": {
    "kind": "doi",
    "valid": true,
@@ -4497,6 +5471,120 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1093/ajh/hpx102": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sauna Bathing and Incident Hypertension: A Prospective Cohort Study",
+   "firstAuthor": "Zaccardi",
+   "authors": [
+    "Zaccardi",
+    "Laukkanen",
+    "Willeit",
+    "Kunutsor",
+    "Kauhanen",
+    "Laukkanen"
+   ],
+   "year": 2017,
+   "journal": "American Journal of Hypertension",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1093/brain/awaa009": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Consensus on the reporting and experimental design of clinical and cognitive-behavioural neurofeedback studies (CRED-nf checklist)",
+   "firstAuthor": "Ros",
+   "authors": [
+    "Ros",
+    "Enriquez-Geppert",
+    "Zotev",
+    "Young",
+    "Wood",
+    "Whitfield-Gabrieli",
+    "Wan",
+    "Vuilleumier",
+    "Vialatte",
+    "Van De Ville",
+    "Todder",
+    "Surmeli",
+    "Sulzer",
+    "Strehl",
+    "Sterman",
+    "Steiner",
+    "Sorger",
+    "Soekadar",
+    "Sitaram",
+    "Sherlin",
+    "Schönenberg",
+    "Scharnowski",
+    "Schabus",
+    "Rubia",
+    "Rosa",
+    "Reiner",
+    "Pineda",
+    "Paret",
+    "Ossadtchi",
+    "Nicholson",
+    "Nan",
+    "Minguez",
+    "Micoulaud-Franchi",
+    "Mehler",
+    "Lührs",
+    "Lubar",
+    "Lotte",
+    "Linden",
+    "Lewis-Peacock",
+    "Lebedev",
+    "Lanius",
+    "Kübler",
+    "Kranczioch",
+    "Koush",
+    "Konicar",
+    "Kohl",
+    "Kober",
+    "Klados",
+    "Jeunet",
+    "Janssen",
+    "Huster",
+    "Hoedlmoser",
+    "Hirshberg",
+    "Heunis",
+    "Hendler",
+    "Hampson",
+    "Guggisberg",
+    "Guggenberger",
+    "Gruzelier",
+    "Göbel",
+    "Gninenko",
+    "Gharabaghi",
+    "Frewen",
+    "Fovet",
+    "Fernández",
+    "Escolano",
+    "Ehlis",
+    "Drechsler",
+    "Christopher deCharms",
+    "Debener",
+    "De Ridder",
+    "Davelaar",
+    "Congedo",
+    "Cavazza",
+    "Breteler",
+    "Brandeis",
+    "Bodurka",
+    "Birbaumer",
+    "Bazanova",
+    "Barth",
+    "Bamidis",
+    "Auer",
+    "Arns",
+    "Thibault"
+   ],
+   "year": 2020,
+   "journal": "Brain",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1093/brain/awaa443": {
    "kind": "doi",
    "valid": true,
@@ -4513,6 +5601,24 @@
    "journal": "Brain",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1093/brain/awx011": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Better than sham? A double-blind placebo-controlled neurofeedback study in primary insomnia",
+   "firstAuthor": "Schabus",
+   "authors": [
+    "Schabus",
+    "Griessenberger",
+    "Gnjezda",
+    "Heib",
+    "Wislowska",
+    "Hoedlmoser"
+   ],
+   "year": 2017,
+   "journal": "Brain",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1093/cercor/bhad408": {
    "kind": "doi",
@@ -4553,6 +5659,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1093/ptj/pzaa054": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of Pulsed Electromagnetic Field Therapy on Pain, Stiffness, Physical Function, and Quality of Life in Patients With Osteoarthritis: A Systematic Review and Meta-Analysis of Randomized Placebo-Controlled Trials",
+   "firstAuthor": "Yang",
+   "authors": [
+    "Yang",
+    "He",
+    "Ye",
+    "Perry",
+    "He"
+   ],
+   "year": 2020,
+   "journal": "Physical Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1093/scan/nsw154": {
    "kind": "doi",
    "valid": true,
@@ -4581,6 +5704,65 @@
    "journal": "Sleep",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1093/sleep/zsaa291": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Performance of seven consumer sleep-tracking devices compared with polysomnography",
+   "firstAuthor": "Chinoy",
+   "authors": [
+    "Chinoy",
+    "Cuellar",
+    "Huwa",
+    "Jameson",
+    "Watson",
+    "Bessman",
+    "Hirsch",
+    "Cooper",
+    "Drummond",
+    "Markwald"
+   ],
+   "year": 2020,
+   "yearAlt": 2021,
+   "journal": "Sleep",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
+  "doi:10.1093/sleep/zsad325": {
+   "kind": "doi",
+   "valid": true,
+   "title": "State of the science and recommendations for using wearable technology in sleep and circadian research",
+   "firstAuthor": "de Zambotti",
+   "authors": [
+    "de Zambotti",
+    "Goldstein",
+    "Cook",
+    "Menghini",
+    "Altini",
+    "Cheng",
+    "Robillard"
+   ],
+   "year": 2023,
+   "yearAlt": 2024,
+   "journal": "SLEEP",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
+  "doi:10.1097/01.ede.0000152903.55579.15": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Maternal Hyperthermia and the Risk for Neural Tube Defects in Offspring",
+   "firstAuthor": "Moretti",
+   "authors": [
+    "Moretti",
+    "Bar-Oz",
+    "Fried",
+    "Koren"
+   ],
+   "year": 2005,
+   "journal": "Epidemiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1097/01.psy.0000089200.81962.19": {
    "kind": "doi",
@@ -4708,6 +5890,30 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1097/hcr.0000000000001017": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart Rate Variability-Guided Exercise Training Compared With Standard Exercise Training in Patients With Coronary Artery Disease: A Randomized Clinical Trial",
+   "firstAuthor": "Besnier",
+   "authors": [
+    "Besnier",
+    "Gayda",
+    "Magnan",
+    "Iglesies-Grau",
+    "Bouvard",
+    "Martin",
+    "Clavet",
+    "Duclos",
+    "Nigam",
+    "Juneau",
+    "L’Allier",
+    "Bherer"
+   ],
+   "year": 2026,
+   "journal": "Journal of Cardiopulmonary Rehabilitation and Prevention",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1097/hjh.0000000000001217": {
    "kind": "doi",
    "valid": true,
@@ -4757,6 +5963,21 @@
    "journal": "Pain",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1097/md.0000000000021449": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Analgesic effect of pulsed electromagnetic fields for mammaplasty",
+   "firstAuthor": "Zhang",
+   "authors": [
+    "Zhang",
+    "Ding",
+    "Ji"
+   ],
+   "year": 2020,
+   "journal": "Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1097/psy.0000000000001065": {
    "kind": "doi",
@@ -4871,6 +6092,43 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1111/aphw.12571": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The acute effects of nonsleep deep rest on perceptual responses, physical, and cognitive performance in physically active participants",
+   "firstAuthor": "Boukhris",
+   "authors": [
+    "Boukhris",
+    "Suppiah",
+    "Halson",
+    "Russell",
+    "Clarke",
+    "Geneau",
+    "Stutter",
+    "Driller"
+   ],
+   "year": 2024,
+   "journal": "Applied Psychology: Health and Well-Being",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1111/aphw.70180": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Time course of perceptual, cognitive, physical and physiological responses to a single non‐sleep deep rest session in physically active young adults",
+   "firstAuthor": "Boukhris",
+   "authors": [
+    "Boukhris",
+    "Suppiah",
+    "Kerkeni",
+    "Holt",
+    "Driller"
+   ],
+   "year": 2026,
+   "journal": "Applied Psychology: Health and Well-Being",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1111/head.12896": {
    "kind": "doi",
    "valid": true,
@@ -4892,6 +6150,23 @@
    "journal": "Headache: The Journal of Head and Face Pain",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1111/j.1365-2362.2003.01277.x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Nasal nitric oxide measurements before and after repeated humming maneuvers",
+   "firstAuthor": "Maniscalco",
+   "authors": [
+    "Maniscalco",
+    "Sofia",
+    "Weitzberg",
+    "Carratu",
+    "Lundberg"
+   ],
+   "year": 2003,
+   "journal": "European Journal of Clinical Investigation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1111/j.1440-1819.1966.tb02646.x": {
    "kind": "doi",
@@ -5017,6 +6292,35 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1111/j.1542-474x.2008.00219.x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Baroreflex Sensitivity: Measurement and Clinical Implications",
+   "firstAuthor": "La Rovere",
+   "authors": [
+    "La Rovere",
+    "Pinna",
+    "Raczak"
+   ],
+   "year": 2008,
+   "journal": "Annals of Noninvasive Electrocardiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1111/j.1556-4029.2008.00703.x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Death in Sauna*",
+   "firstAuthor": "Kenttämies",
+   "authors": [
+    "Kenttämies",
+    "Karkola"
+   ],
+   "year": 2008,
+   "journal": "Journal of Forensic Sciences",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1111/j.1600-0838.2004.00418.x": {
    "kind": "doi",
    "valid": true,
@@ -5066,6 +6370,22 @@
    "journal": "Journal of Anatomy",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1111/nyas.70149": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of Yoga Nidra on Stress, Anxiety, and Depression: A Systematic Review and Meta‐Analysis",
+   "firstAuthor": "Ghai",
+   "authors": [
+    "Ghai",
+    "Odyniec",
+    "Ghai"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Annals of the New York Academy of Sciences",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1111/php.12864": {
    "kind": "doi",
@@ -5233,6 +6553,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1113/jp272453": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Passive heat therapy improves endothelial function, arterial stiffness and blood pressure in sedentary humans",
+   "firstAuthor": "Brunt",
+   "authors": [
+    "Brunt",
+    "Howard",
+    "Francisco",
+    "Ely",
+    "Minson"
+   ],
+   "year": 2016,
+   "journal": "The Journal of Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1113/jphysiol.2002.037192": {
    "kind": "doi",
    "valid": true,
@@ -5274,6 +6611,38 @@
    "journal": "The Journal of Physiology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1113/jphysiol.2013.268953": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Integrative regulation of human brain blood flow",
+   "firstAuthor": "Willie",
+   "authors": [
+    "Willie",
+    "Tzeng",
+    "Fisher",
+    "Ainslie"
+   ],
+   "year": 2014,
+   "journal": "The Journal of Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1121/1.2188887": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Paranasal sinus ventilation by humming",
+   "firstAuthor": "Granqvist",
+   "authors": [
+    "Granqvist",
+    "Sundberg",
+    "Lundberg",
+    "Weitzberg"
+   ],
+   "year": 2006,
+   "journal": "The Journal of the Acoustical Society of America",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1124/pr.117.014407": {
    "kind": "doi",
@@ -5494,6 +6863,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1136/bjsm.2007.042200": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Is heart rate a convenient tool to monitor over-reaching? A systematic review of the literature",
+   "firstAuthor": "Bosquet",
+   "authors": [
+    "Bosquet",
+    "Merkari",
+    "Arvisais",
+    "Aubert"
+   ],
+   "year": 2008,
+   "journal": "British Journal of Sports Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1136/bjsports-2017-097608": {
    "kind": "doi",
    "valid": true,
@@ -5689,6 +7074,59 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1152/ajpregu.00012.2025": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Comparison of thermoregulatory, cardiovascular, and immune responses to different passive heat therapy modalities",
+   "firstAuthor": "Atencio",
+   "authors": [
+    "Atencio",
+    "Reed",
+    "Wiedenfeld Needham",
+    "Lucernoni",
+    "Comrada",
+    "Halliwill",
+    "Minson"
+   ],
+   "year": 2025,
+   "journal": "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1152/ajpregu.00031.2007": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effect of aging on baroreflex function in humans",
+   "firstAuthor": "Monahan",
+   "authors": [
+    "Monahan"
+   ],
+   "year": 2007,
+   "journal": "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1152/ajpregu.00148.2023": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Acute nasal breathing lowers diastolic blood pressure and increases parasympathetic contributions to heart rate variability in young adults",
+   "firstAuthor": "Watso",
+   "authors": [
+    "Watso",
+    "Cuba",
+    "Boutwell",
+    "Moss",
+    "Bowerfind",
+    "Fernandez",
+    "Cassette",
+    "May",
+    "Kirk"
+   ],
+   "year": 2023,
+   "journal": "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1152/ajpregu.91008.2008": {
    "kind": "doi",
    "valid": true,
@@ -5702,6 +7140,23 @@
    "journal": "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1152/japplphysiol.00578.2026": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Beyond hypothermia: mechanisms of death, rescue, and prevention in cold water immersion",
+   "firstAuthor": "Leuci",
+   "authors": [
+    "Leuci",
+    "Melau",
+    "Messina",
+    "Tipton",
+    "Carenzo"
+   ],
+   "year": 2026,
+   "journal": "Journal of Applied Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1152/japplphysiol.90991.2008": {
    "kind": "doi",
@@ -5790,6 +7245,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1155/2012/184745": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Arsenic, Cadmium, Lead, and Mercury in Sweat: A Systematic Review",
+   "firstAuthor": "Sears",
+   "authors": [
+    "Sears",
+    "Kerr",
+    "Bray"
+   ],
+   "year": 2012,
+   "journal": "Journal of Environmental and Public Health",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1155/2013/653572": {
    "kind": "doi",
    "valid": true,
@@ -5807,6 +7277,35 @@
    "journal": "Neural Plasticity",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1155/2018/1857413": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Clinical Effects of Regular Dry Sauna Bathing: A Systematic Review",
+   "firstAuthor": "Hussain",
+   "authors": [
+    "Hussain",
+    "Cohen"
+   ],
+   "year": 2018,
+   "journal": "Evidence-Based Complementary and Alternative Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1159/000549416": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Yoga Nidra and Pain: A between-, within-Group Meta-Analysis and Dose Response Meta-Regression",
+   "firstAuthor": "Ghai",
+   "authors": [
+    "Ghai",
+    "Ghai"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Complementary Medicine Research",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1161/01.cir.93.5.1043": {
    "kind": "doi",
@@ -5936,6 +7435,28 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1161/hc0202.103311": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Slow Breathing Increases Arterial Baroreflex Sensitivity in Patients With Chronic Heart Failure",
+   "firstAuthor": "Bernardi",
+   "authors": [
+    "Bernardi",
+    "Porta",
+    "Spicuzza",
+    "Bellwon",
+    "Spadacini",
+    "Frey",
+    "Yeung",
+    "Sanderson",
+    "Pedretti",
+    "Tramarin"
+   ],
+   "year": 2002,
+   "journal": "Circulation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1161/hyp.0b013e318293645f": {
    "kind": "doi",
    "valid": true,
@@ -6004,6 +7525,60 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1164/rccm.200202-138bc": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Humming Greatly Increases Nasal Nitric Oxide",
+   "firstAuthor": "Weitzberg",
+   "authors": [
+    "Weitzberg",
+    "Lundberg"
+   ],
+   "year": 2002,
+   "journal": "American Journal of Respiratory and Critical Care Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
+  "doi:10.1172/jci118235": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sympathetic neural mechanisms in obstructive sleep apnea.",
+   "firstAuthor": "Somers",
+   "authors": [
+    "Somers",
+    "Dyken",
+    "Clary",
+    "Abboud"
+   ],
+   "year": 1995,
+   "journal": "Journal of Clinical Investigation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
+  "doi:10.1172/jci68993": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cold acclimation recruits human brown fat and increases nonshivering thermogenesis",
+   "firstAuthor": "van der Lans",
+   "authors": [
+    "van der Lans",
+    "Hoeks",
+    "Brans",
+    "Vijgen",
+    "Visser",
+    "Vosselman",
+    "Hansen",
+    "Jörgensen",
+    "Wu",
+    "Mottaghy",
+    "Schrauwen",
+    "van Marken Lichtenbelt"
+   ],
+   "year": 2013,
+   "journal": "Journal of Clinical Investigation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.1176/appi.ajp.157.6.924": {
    "kind": "doi",
    "valid": true,
@@ -6056,6 +7631,43 @@
    "journal": "American Journal of Psychiatry",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1177/0194599814559383": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Novel Porous Oral Patches for Patients with Mild Obstructive Sleep Apnea and Mouth Breathing",
+   "firstAuthor": "Huang",
+   "authors": [
+    "Huang",
+    "Young"
+   ],
+   "year": 2014,
+   "yearAlt": 2015,
+   "journal": "Otolaryngology–Head and Neck Surgery",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1177/02692155221074052": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of pulsed electromagnetic field on pain and physical function in patients with low back pain: A systematic review and meta-analysis",
+   "firstAuthor": "Sun",
+   "authors": [
+    "Sun",
+    "Huang",
+    "Wang",
+    "Fu",
+    "Zhang",
+    "Cheng",
+    "Pei",
+    "Wang",
+    "He",
+    "Wei"
+   ],
+   "year": 2022,
+   "journal": "Clinical Rehabilitation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1177/039463200802100113": {
    "kind": "doi",
@@ -6119,6 +7731,20 @@
    "journal": "Journal of Biological Rhythms",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1177/08830738241273347": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A Review of Hyperventilation Activation in Diagnosis and Management of Childhood Absence Epilepsy",
+   "firstAuthor": "Rao",
+   "authors": [
+    "Rao",
+    "Kuperman"
+   ],
+   "year": 2024,
+   "journal": "Journal of Child Neurology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1177/0956797614553946": {
    "kind": "doi",
@@ -6206,12 +7832,57 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1177/1757913917740391": {
+   "kind": "doi",
+   "valid": true,
+   "title": "What works for wellbeing? A systematic review of wellbeing outcomes for music and singing in adults",
+   "firstAuthor": "Daykin",
+   "authors": [
+    "Daykin",
+    "Mansfield",
+    "Meads",
+    "Julier",
+    "Tomlinson",
+    "Payne",
+    "Grigsby Duffy",
+    "Lane",
+    "D’Innocenzo",
+    "Burnett",
+    "Kay",
+    "Dolan",
+    "Testoni",
+    "Victor"
+   ],
+   "year": 2017,
+   "yearAlt": 2018,
+   "journal": "Perspectives in Public Health",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1177/19322968221101632": {
    "kind": "doi",
    "valid": false,
    "reason": "Wrong paper: Jarl G 2022, J Diabetes Sci Technol, diabetic foot-ulcer offloading — was cited as a FreeStyle Libre 3 accuracy study (use PMID 36877403)",
    "source": "manual",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1177/1947603520931168": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Pain and Functional Scores in Patients Affected by Knee OA after Treatment with Pulsed Electromagnetic and Magnetic Fields: A Meta-Analysis",
+   "firstAuthor": "Viganò",
+   "authors": [
+    "Viganò",
+    "Perucca Orfei",
+    "Ragni",
+    "Colombini",
+    "de Girolamo"
+   ],
+   "year": 2020,
+   "yearAlt": 2021,
+   "journal": "CARTILAGE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1177/2047487317702044": {
    "kind": "doi",
@@ -6234,6 +7905,26 @@
    "journal": "European Journal of Preventive Cardiology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1177/2047487317737629": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sauna exposure leads to improved arterial compliance: Findings from a non-randomised experimental study",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Laukkanen",
+    "Kunutsor",
+    "Khan",
+    "Willeit",
+    "Zaccardi",
+    "Laukkanen"
+   ],
+   "year": 2017,
+   "yearAlt": 2018,
+   "journal": "European Journal of Preventive Cardiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1177/20501579211028647": {
    "kind": "doi",
@@ -6275,6 +7966,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1177/27683605251390728": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of Yoga Nidra in Managing Sleep Disorders: A Systematic Review of Randomized Controlled Trials",
+   "firstAuthor": "Dutta",
+   "authors": [
+    "Dutta",
+    "Mooventhan",
+    "Nivethitha",
+    "Dharani"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Journal of Integrative and Complementary Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1179/1476830515y.0000000018": {
    "kind": "doi",
    "valid": true,
@@ -6294,6 +8002,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1183/09031936.03.00017903": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Assessment of nasal and sinus nitric oxide output using single-breath humming exhalations",
+   "firstAuthor": "Maniscalco",
+   "authors": [
+    "Maniscalco",
+    "Weitzberg",
+    "Sundberg",
+    "Sofia",
+    "Lundberg"
+   ],
+   "year": 2003,
+   "journal": "European Respiratory Journal",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1183/20734735.009817": {
    "kind": "doi",
    "valid": true,
@@ -6308,6 +8033,20 @@
    "journal": "Breathe",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1186/s12902-016-0128-4": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Adrenal fatigue does not exist: a systematic review",
+   "firstAuthor": "Cadegiani",
+   "authors": [
+    "Cadegiani",
+    "Kater"
+   ],
+   "year": 2016,
+   "journal": "BMC Endocrine Disorders",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
   },
   "doi:10.1186/s12916-019-1399-1": {
    "kind": "doi",
@@ -6377,6 +8116,68 @@
    "journal": "Journal of the International Society of Sports Nutrition",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1186/s13102-024-00840-6": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Nose vs. mouth breathing– acute effect of different breathing regimens on muscular endurance",
+   "firstAuthor": "Lörinczi",
+   "authors": [
+    "Lörinczi",
+    "Vanderka",
+    "Lörincziová",
+    "Kushkestani"
+   ],
+   "year": 2024,
+   "journal": "BMC Sports Science, Medicine and Rehabilitation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1186/s40359-016-0168-6": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Attentional and affective consequences of technology supported mindfulness training: a randomised, active control, efficacy trial",
+   "firstAuthor": "Bhayee",
+   "authors": [
+    "Bhayee",
+    "Tomaszewski",
+    "Lee",
+    "Moffat",
+    "Pino",
+    "Moreno",
+    "Farb"
+   ],
+   "year": 2016,
+   "journal": "BMC Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1192/j.eurpsy.2020.3": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Transcranial pulsed electromagnetic fields for treatment-resistant depression: A multicenter 8-week single-arm cohort study",
+   "firstAuthor": "Larsen",
+   "authors": [
+    "Larsen",
+    "Licht",
+    "Nielsen",
+    "Lolk",
+    "Borck",
+    "Sørensen",
+    "Christensen",
+    "Bizik",
+    "Ravn",
+    "Martiny",
+    "Vinberg",
+    "Jankuviené",
+    "Jørgensen",
+    "Videbech",
+    "Bech"
+   ],
+   "year": 2020,
+   "journal": "European Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1207/s15324796abm3203_9": {
    "kind": "doi",
@@ -6593,6 +8394,41 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1253/circj.cj-16-0051": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Waon Therapy for Managing Chronic Heart Failure　– Results From a Multicenter Prospective Randomized WAON-CHF Study –",
+   "firstAuthor": "Tei",
+   "authors": [
+    "Tei",
+    "Imamura",
+    "Kinugawa",
+    "Inoue",
+    "Masuyama",
+    "Inoue",
+    "Noike",
+    "Muramatsu",
+    "Takeishi",
+    "Saku",
+    "Harada",
+    "Daida",
+    "Kobayashi",
+    "Hagiwara",
+    "Nagayama",
+    "Momomura",
+    "Yonezawa",
+    "Ito",
+    "Gojo",
+    "Akaishi",
+    "Miyata",
+    "Ohishi",
+    "WAON-CHF Study Investigators"
+   ],
+   "year": 2016,
+   "journal": "Circulation Journal",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1258/acb.2011.011115": {
    "kind": "doi",
    "valid": true,
@@ -6755,6 +8591,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1371/journal.pone.0058244": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Neurocognitive and Somatic Components of Temperature Increases during g-Tummo Meditation: Legend and Reality",
+   "firstAuthor": "Kozhevnikov",
+   "authors": [
+    "Kozhevnikov",
+    "Elliott",
+    "Shephard",
+    "Gramann"
+   ],
+   "year": 2013,
+   "journal": "PLoS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1371/journal.pone.0064319": {
    "kind": "doi",
    "valid": true,
@@ -6870,6 +8722,86 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1371/journal.pone.0286933": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Does the Wim Hof Method have a beneficial impact on physiological and psychological outcomes in healthy and non-healthy participants? A systematic review",
+   "firstAuthor": "Almahayni",
+   "authors": [
+    "Almahayni",
+    "Hammond"
+   ],
+   "year": 2024,
+   "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1371/journal.pone.0294678": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Improved sleep, cognitive processing and enhanced learning and memory task accuracy with Yoga nidra practice in novices",
+   "firstAuthor": "Datta",
+   "authors": [
+    "Datta",
+    "Bhutambare",
+    "V. L.",
+    "Narawa",
+    "Srinath",
+    "Kanitkar"
+   ],
+   "year": 2023,
+   "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1371/journal.pone.0317615": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of cold-water immersion on health and wellbeing: A systematic review and meta-analysis",
+   "firstAuthor": "Cain",
+   "authors": [
+    "Cain",
+    "Brinsley",
+    "Bennett",
+    "Nelson",
+    "Maher",
+    "Singh"
+   ],
+   "year": 2025,
+   "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1371/journal.pone.0323643": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Breaking social media fads and uncovering the safety and efficacy of mouth taping in patients with mouth breathing, sleep disordered breathing, or obstructive sleep apnea: A systematic review",
+   "firstAuthor": "Rhee",
+   "authors": [
+    "Rhee",
+    "Iansavitchene",
+    "Mannala",
+    "Graham",
+    "Rotenberg"
+   ],
+   "year": 2025,
+   "journal": "PLOS One",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1371/journal.pone.0332995": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Methodological issues in visible LED therapy dermatological research and reporting",
+   "firstAuthor": "Grimes",
+   "authors": [
+    "Grimes"
+   ],
+   "year": 2025,
+   "journal": "PLOS One",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.1378/chest.125.2.683": {
    "kind": "doi",
    "valid": true,
@@ -6899,6 +8831,42 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.14814/phy2.70527": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Validation of nocturnal resting heart rate and heart rate variability in consumer wearables",
+   "firstAuthor": "Dial",
+   "authors": [
+    "Dial",
+    "Hollander",
+    "Vatne",
+    "Emerson",
+    "Edwards",
+    "Hagen"
+   ],
+   "year": 2025,
+   "journal": "Physiological Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
+  "doi:10.14814/phy2.70706": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Contextual equivalence for accurate comparison of wearables requires transparency",
+   "firstAuthor": "Dial",
+   "authors": [
+    "Dial",
+    "Hollander",
+    "Vatne",
+    "Emerson",
+    "Edwards",
+    "Hagen"
+   ],
+   "year": 2025,
+   "journal": "Physiological Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1503/cmaj.150535": {
    "kind": "doi",
    "valid": true,
@@ -6914,6 +8882,21 @@
    "journal": "Canadian Medical Association Journal",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1515/jcim-2013-0037": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effects of the “physical BEMER<sup>®</sup> vascular therapy”, a method for the physical stimulation of the vasomotion of precapillary microvessels in case of impaired microcirculation, on sleep, pain and quality of life of patients with different clinical pictures on the basis of three scientifically validated scales",
+   "firstAuthor": "Bohn",
+   "authors": [
+    "Bohn",
+    "Hess",
+    "Burger"
+   ],
+   "year": 2013,
+   "journal": "jcim",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.1519/1533-4287(1997)011<0211:taopef>2.3.co;2": {
    "kind": "doi",
@@ -7074,6 +9057,38 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.17761/2021-d-20-00014": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Consciousness State of Traditional Nidrâ Yoga/Modern Yoga Nidra: Phenomenological Characterization and Preliminary Insights from an EEG Study",
+   "firstAuthor": "Zaccaro",
+   "authors": [
+    "Zaccaro",
+    "Riehl",
+    "Piarulli",
+    "Alfì",
+    "Neri",
+    "Menicucci",
+    "Gemignani"
+   ],
+   "year": 2021,
+   "journal": "International Journal of Yoga Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.17761/2024-d-24-00021": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Key Components of Trauma-Informed Yoga Nidra",
+   "firstAuthor": "Luu",
+   "authors": [
+    "Luu"
+   ],
+   "year": 2024,
+   "journal": "International Journal of Yoga Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.2147/jpr.s231778": {
    "kind": "doi",
    "valid": true,
@@ -7199,6 +9214,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.2203/dose-response.09-027.hamblin": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Biphasic Dose Response in Low Level Light Therapy",
+   "firstAuthor": "Huang",
+   "authors": [
+    "Huang",
+    "Chen",
+    "Carroll",
+    "Hamblin"
+   ],
+   "year": 2009,
+   "journal": "Dose-Response",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.2337/dc15-0429": {
    "kind": "doi",
    "valid": true,
@@ -7285,6 +9316,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.25259/nmji_63_19": {
+   "kind": "doi",
+   "valid": true,
+   "title": "<i>Yoga nidra</i>\n                    practice shows improvement in sleep in patients with chronic insomnia: A randomized controlled trial",
+   "firstAuthor": "DATTA",
+   "authors": [
+    "DATTA",
+    "TRIPATHI",
+    "VERMA",
+    "MASIWAL",
+    "MALLICK"
+   ],
+   "year": 2021,
+   "journal": "The National Medical Journal of India",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.30773/pi.2017.08.17": {
    "kind": "doi",
    "valid": true,
@@ -7336,6 +9384,39 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3109/15368378.2013.776335": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Nonthermal electromagnetic fields: From first messenger to therapeutic applications",
+   "firstAuthor": "Pilla",
+   "authors": [
+    "Pilla"
+   ],
+   "year": 2013,
+   "journal": "Electromagnetic Biology and Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.3233/ch-209224": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The influence of pulsed electromagnetic field therapy (PEMFT) on cutaneous blood flow in healthy volunteers",
+   "firstAuthor": "Biermann",
+   "authors": [
+    "Biermann",
+    "Sommerauer",
+    "Diesch",
+    "Koch",
+    "Jung",
+    "Kehrer",
+    "Prantl",
+    "Taeger"
+   ],
+   "year": 2021,
+   "journal": "Clinical Hemorheology and Microcirculation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.3389/fcvm.2019.00062": {
    "kind": "doi",
    "valid": true,
@@ -7351,6 +9432,23 @@
    "journal": "Frontiers in Cardiovascular Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3389/fneur.2022.910794": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Electrophysiological Evidence of Local Sleep During Yoga Nidra Practice",
+   "firstAuthor": "Datta",
+   "authors": [
+    "Datta",
+    "Mallick",
+    "Tripathi",
+    "Ahuja",
+    "Deepak"
+   ],
+   "year": 2022,
+   "journal": "Frontiers in Neurology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.3389/fneur.2025.1556784": {
    "kind": "doi",
@@ -7383,6 +9481,23 @@
    "journal": "Frontiers in Human Neuroscience",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3389/fnhum.2017.00398": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Comparison of Medical and Consumer Wireless EEG Systems for Use in Clinical Trials",
+   "firstAuthor": "Ratti",
+   "authors": [
+    "Ratti",
+    "Waninger",
+    "Berka",
+    "Ruffini",
+    "Verma"
+   ],
+   "year": 2017,
+   "journal": "Frontiers in Human Neuroscience",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.3389/fnhum.2018.00353": {
    "kind": "doi",
@@ -7591,6 +9706,28 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3389/fnins.2024.1450163": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Neurofeedback to enhance sleep quality and insomnia: a systematic review and meta-analysis of randomized clinical trials",
+   "firstAuthor": "Recio-Rodriguez",
+   "authors": [
+    "Recio-Rodriguez",
+    "Fernandez-Crespo",
+    "Sanchez-Aguadero",
+    "Gonzalez-Sanchez",
+    "Garcia-Yu",
+    "Alonso-Dominguez",
+    "Chiu",
+    "Tsai",
+    "Lee",
+    "Rihuete-Galve"
+   ],
+   "year": 2024,
+   "journal": "Frontiers in Neuroscience",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.3389/fped.2014.00080": {
    "kind": "doi",
    "valid": true,
@@ -7711,6 +9848,27 @@
    "journal": "Frontiers in Physiology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3389/fpsyg.2013.00334": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Music structure determines heart rate variability of singers",
+   "firstAuthor": "Vickhoff",
+   "authors": [
+    "Vickhoff",
+    "Malmgren",
+    "Åström",
+    "Nyberg",
+    "Ekström",
+    "Engwall",
+    "Snygg",
+    "Nilsson",
+    "Jörnsten"
+   ],
+   "year": 2013,
+   "journal": "Frontiers in Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.3389/fpsyg.2014.00756": {
    "kind": "doi",
@@ -7843,6 +10001,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3389/fpsyt.2019.00035": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Clinical and Experimental Factors Influencing the Efficacy of Neurofeedback in ADHD: A Meta-Analysis",
+   "firstAuthor": "Bussalb",
+   "authors": [
+    "Bussalb",
+    "Congedo",
+    "Barthélemy",
+    "Ojeda",
+    "Acquaviva",
+    "Delorme",
+    "Mayaud"
+   ],
+   "year": 2019,
+   "journal": "Frontiers in Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.3389/fpsyt.2020.00467": {
    "kind": "doi",
    "valid": true,
@@ -7907,6 +10084,38 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.3389/fspor.2021.700757": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Acute Effects of the Wim Hof Breathing Method on Repeated Sprint Ability: A Pilot Study",
+   "firstAuthor": "Citherlet",
+   "authors": [
+    "Citherlet",
+    "Crettaz von Roten",
+    "Kayser",
+    "Guex"
+   ],
+   "year": 2021,
+   "journal": "Frontiers in Sports and Active Living",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.3390/bioengineering11121223": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Augmentation of Deficient Bone Healing by Pulsed Electromagnetic Fields—From Mechanisms to Clinical Outcomes",
+   "firstAuthor": "Kaadan",
+   "authors": [
+    "Kaadan",
+    "Salati",
+    "Setti",
+    "Aaron"
+   ],
+   "year": 2024,
+   "journal": "Bioengineering",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.3390/biomedicines13030700": {
    "kind": "doi",
    "valid": true,
@@ -7925,6 +10134,71 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3390/clockssleep8030052": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Comparing the Effects of a Short Nap and Non-Sleep Deep Rest on Perceptual, Cognitive, and Physical Performance in Active Adults",
+   "firstAuthor": "Boukhris",
+   "authors": [
+    "Boukhris",
+    "Suppiah",
+    "Driller"
+   ],
+   "year": 2026,
+   "journal": "Clocks &amp; Sleep",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.3390/dj13020076": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Photobiomodulation LED Devices for Home Use: Design, Function and Potential: A Pilot Study",
+   "firstAuthor": "Cronshaw",
+   "authors": [
+    "Cronshaw",
+    "Parker",
+    "Hamadah",
+    "Arnabat-Dominguez",
+    "Grootveld"
+   ],
+   "year": 2025,
+   "journal": "Dentistry Journal",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
+  "doi:10.3390/healthcare10091755": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Impact of Mouth-Taping in Mouth-Breathers with Mild Obstructive Sleep Apnea: A Preliminary Study",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Lu",
+    "Cheng",
+    "Li"
+   ],
+   "year": 2022,
+   "journal": "Healthcare",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
+  "doi:10.3390/healthcare11060843": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Effect of Cognitive Training with Neurofeedback on Cognitive Function in Healthy Adults: A Systematic Review and Meta-Analysis",
+   "firstAuthor": "Matsuzaki",
+   "authors": [
+    "Matsuzaki",
+    "Nouchi",
+    "Sakaki",
+    "Dinet",
+    "Kawashima"
+   ],
+   "year": 2023,
+   "journal": "Healthcare",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.3390/ijerph182211778": {
    "kind": "doi",
    "valid": true,
@@ -7941,6 +10215,30 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.3390/ijerph19063380": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effectiveness of Mantra-Based Meditation on Mental Health: A Systematic Review and Meta-Analysis",
+   "firstAuthor": "Álvarez-Pérez",
+   "authors": [
+    "Álvarez-Pérez",
+    "Rivero-Santana",
+    "Perestelo-Pérez",
+    "Duarte-Díaz",
+    "Ramos-García",
+    "Toledo-Chávarri",
+    "Torres-Castaño",
+    "León-Salas",
+    "Infante-Ventura",
+    "González-Hernández",
+    "Rodríguez-Rodríguez",
+    "Serrano-Aguilar"
+   ],
+   "year": 2022,
+   "journal": "International Journal of Environmental Research and Public Health",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.3390/ijms22115882": {
    "kind": "doi",
    "valid": true,
@@ -7954,6 +10252,23 @@
    "journal": "International Journal of Molecular Sciences",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3390/jcm13237178": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Non-Sleep Deep Rest Relaxation and Virtual Reality Therapy for Psychological Outcomes in Patients with Coronary Artery Disease: A Pilot Randomized Controlled Trial",
+   "firstAuthor": "Wrzeciono",
+   "authors": [
+    "Wrzeciono",
+    "Cieślik",
+    "Kiper",
+    "Szczepańska-Gieracha",
+    "Gajda"
+   ],
+   "year": 2024,
+   "journal": "Journal of Clinical Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.3390/jcm7120503": {
    "kind": "doi",
@@ -8089,6 +10404,20 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3390/s21134302": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Promise of Sleep: A Multi-Sensor Approach for Accurate Sleep Stage Detection Using the Oura Ring",
+   "firstAuthor": "Altini",
+   "authors": [
+    "Altini",
+    "Kinnunen"
+   ],
+   "year": 2021,
+   "journal": "Sensors",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.3390/s22186723": {
    "kind": "doi",
    "valid": true,
@@ -8107,6 +10436,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3390/s24196220": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Validity of Apple Watch Series 9 and Ultra 2 for Serial Measurements of Heart Rate Variability and Resting Heart Rate",
+   "firstAuthor": "O’Grady",
+   "authors": [
+    "O’Grady",
+    "Lambe",
+    "Baldwin",
+    "Acheson",
+    "Doherty"
+   ],
+   "year": 2024,
+   "journal": "Sensors",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.3390/s26010003": {
    "kind": "doi",
    "valid": true,
@@ -8122,6 +10468,23 @@
    "journal": "Sensors",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3390/s26041325": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Disconnection Between Self-Reported Wellbeing and Heart Rate Variability from Wearables",
+   "firstAuthor": "Ungaro",
+   "authors": [
+    "Ungaro",
+    "Wolfe",
+    "Isaacs",
+    "De Chavez",
+    "Freese"
+   ],
+   "year": 2026,
+   "journal": "Sensors",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.3390/s26144486": {
    "kind": "doi",
@@ -8205,6 +10568,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.4103/ijoy.ijoy_2_25": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Comparing the Effects of Yoga Nidra and Body Scan Meditation on Pain Outcomes",
+   "firstAuthor": "Gibbs",
+   "authors": [
+    "Gibbs",
+    "Hanney",
+    "Anderson"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "International Journal of Yoga",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
+  },
   "doi:10.4330/wjc.v7.i4.204": {
    "kind": "doi",
    "valid": true,
@@ -8219,6 +10598,23 @@
    "journal": "World Journal of Cardiology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.5114/biolsport.2023.119289": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A post-exercise infrared sauna session improves recovery of neuromuscular performance and muscle soreness after resistance exercise training",
+   "firstAuthor": "Ahokas",
+   "authors": [
+    "Ahokas",
+    "Ihalainen",
+    "Hanstock",
+    "Savolainen",
+    "Kyröläinen"
+   ],
+   "year": 2023,
+   "journal": "Biology of Sport",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.5664/jcsm.1476": {
    "kind": "doi",
@@ -8253,6 +10649,25 @@
    "journal": "Journal of Clinical Sleep Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.5664/jcsm.6506": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Clinical Practice Guideline for Diagnostic Testing for Adult Obstructive Sleep Apnea: An American Academy of Sleep Medicine Clinical Practice Guideline",
+   "firstAuthor": "Kapur",
+   "authors": [
+    "Kapur",
+    "Auckley",
+    "Chowdhuri",
+    "Kuhlmann",
+    "Mehra",
+    "Ramar",
+    "Harrod"
+   ],
+   "year": 2017,
+   "journal": "Journal of Clinical Sleep Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.5664/jcsm.8356": {
    "kind": "doi",
@@ -8339,6 +10754,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.70252/ehdr7442": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of Nasal or Oral Breathing on Anaerobic Power Output and Metabolic Responses",
+   "firstAuthor": "Recinto",
+   "authors": [
+    "Recinto",
+    "Efthemeou",
+    "Boffelli",
+    "Navalta"
+   ],
+   "year": 2017,
+   "journal": "International Journal of Exercise Science",
+   "source": "crossref",
+   "verifiedAt": "2026-10-06"
+  },
   "doi:10.7326/0003-4819-141-11-200412070-00008": {
    "kind": "doi",
    "valid": true,
@@ -8372,6 +10803,37 @@
    "journal": "Annals of Internal Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.7326/m23-2757": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Management of Posttraumatic Stress Disorder and Acute Stress Disorder: Synopsis of the 2023 U.S. Department of Veterans Affairs and U.S. Department of Defense Clinical Practice Guideline",
+   "firstAuthor": "Schnurr",
+   "authors": [
+    "Schnurr",
+    "Hamblen",
+    "Wolf",
+    "Coller",
+    "Collie",
+    "Fuller",
+    "Holtzheimer",
+    "Kelly",
+    "Lang",
+    "McGraw",
+    "Morganstein",
+    "Norman",
+    "Papke",
+    "Petrakis",
+    "Riggs",
+    "Sall",
+    "Shiner",
+    "Wiechers",
+    "Kelber"
+   ],
+   "year": 2024,
+   "journal": "Annals of Internal Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-07"
   },
   "doi:10.7453/gahmj.2014.073": {
    "kind": "doi",
@@ -8654,6 +11116,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:11165553": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Benefits and risks of sauna bathing.",
+   "firstAuthor": "Hannuksela",
+   "authors": [
+    "Hannuksela",
+    "Ellahham"
+   ],
+   "year": 2001,
+   "journal": "Am J Med",
+   "doi": "10.1016/s0002-9343(00)00671-9",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:11189015": {
    "kind": "pmid",
    "valid": true,
@@ -8724,6 +11201,29 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:11790690": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Slow breathing increases arterial baroreflex sensitivity in patients with chronic heart failure.",
+   "firstAuthor": "Bernardi",
+   "authors": [
+    "Bernardi",
+    "Porta",
+    "Spicuzza",
+    "Bellwon",
+    "Spadacini",
+    "Frey",
+    "Yeung",
+    "Sanderson",
+    "Pedretti",
+    "Tramarin"
+   ],
+   "year": 2002,
+   "journal": "Circulation",
+   "doi": "10.1161/hc0202.103311",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:11820330": {
    "kind": "pmid",
    "valid": true,
@@ -8740,6 +11240,45 @@
    "doi": "10.1007/s004210100518",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:11903855": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Autonomic activity during human sleep as a function of time and sleep stage.",
+   "firstAuthor": "Trinder",
+   "authors": [
+    "Trinder",
+    "Kleiman",
+    "Carrington",
+    "Smith",
+    "Breen",
+    "Tan",
+    "Kim"
+   ],
+   "year": 2001,
+   "journal": "J Sleep Res",
+   "doi": "10.1046/j.1365-2869.2001.00263.x",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
+  "pmid:11958969": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Increased dopamine tone during meditation-induced change of consciousness.",
+   "firstAuthor": "Kjaer",
+   "authors": [
+    "Kjaer",
+    "Bertelsen",
+    "Piccini",
+    "Brooks",
+    "Alving",
+    "Lou"
+   ],
+   "year": 2002,
+   "journal": "Brain Res Cogn Brain Res",
+   "doi": "10.1016/s0926-6410(01)00106-9",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:12030437": {
    "kind": "pmid",
@@ -8762,6 +11301,21 @@
    "doi": "10.1002/14651858.CD001520",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:12119224": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Humming greatly increases nasal nitric oxide.",
+   "firstAuthor": "Weitzberg",
+   "authors": [
+    "Weitzberg",
+    "Lundberg"
+   ],
+   "year": 2002,
+   "journal": "Am J Respir Crit Care Med",
+   "doi": "10.1164/rccm.200202-138BC",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:12154366": {
    "kind": "pmid",
@@ -8871,6 +11425,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:12952268": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Assessment of nasal and sinus nitric oxide output using single-breath humming exhalations.",
+   "firstAuthor": "Maniscalco",
+   "authors": [
+    "Maniscalco",
+    "Weitzberg",
+    "Sundberg",
+    "Sofia",
+    "Lundberg"
+   ],
+   "year": 2003,
+   "journal": "Eur Respir J",
+   "doi": "10.1183/09031936.03.00017903",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:13470504": {
    "kind": "pmid",
    "valid": true,
@@ -8909,6 +11481,24 @@
    "doi": "10.1097/01.psy.0000089200.81962.19",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:14636292": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Nasal nitric oxide measurements before and after repeated humming maneuvers.",
+   "firstAuthor": "Maniscalco",
+   "authors": [
+    "Maniscalco",
+    "Sofia",
+    "Weitzberg",
+    "Carratu",
+    "Lundberg"
+   ],
+   "year": 2003,
+   "journal": "Eur J Clin Invest",
+   "doi": "10.1111/j.1365-2362.2003.01277.x",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:15094802": {
    "kind": "pmid",
@@ -9045,6 +11635,23 @@
    "doi": "10.1016/j.annemergmed.2004.06.016",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:15703536": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Maternal hyperthermia and the risk for neural tube defects in offspring: systematic review and meta-analysis.",
+   "firstAuthor": "Moretti",
+   "authors": [
+    "Moretti",
+    "Bar-Oz",
+    "Fried",
+    "Koren"
+   ],
+   "year": 2005,
+   "journal": "Epidemiology",
+   "doi": "10.1097/01.ede.0000152903.55579.15",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:15800134": {
    "kind": "pmid",
@@ -9265,6 +11872,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:16708919": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Paranasal sinus ventilation by humming.",
+   "firstAuthor": "Granqvist",
+   "authors": [
+    "Granqvist",
+    "Sundberg",
+    "Lundberg",
+    "Weitzberg"
+   ],
+   "year": 2006,
+   "journal": "J Acoust Soc Am",
+   "doi": "10.1121/1.2188887",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:16732466": {
    "kind": "pmid",
    "valid": true,
@@ -9367,6 +11991,20 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:17442786": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effect of aging on baroreflex function in humans.",
+   "firstAuthor": "Monahan",
+   "authors": [
+    "Monahan"
+   ],
+   "year": 2007,
+   "journal": "Am J Physiol Regul Integr Comp Physiol",
+   "doi": "10.1152/ajpregu.00031.2007",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:17576282": {
    "kind": "pmid",
    "valid": true,
@@ -9444,6 +12082,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:17931070": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Holotropic Breathwork: the potential role of a prolonged, voluntary hyperventilation procedure as an adjunct to psychotherapy.",
+   "firstAuthor": "Rhinewine",
+   "authors": [
+    "Rhinewine",
+    "Williams"
+   ],
+   "year": 2007,
+   "journal": "J Altern Complement Med",
+   "doi": "10.1089/acm.2006.6203",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:17981929": {
    "kind": "pmid",
    "valid": true,
@@ -9475,6 +12128,23 @@
    "doi": "10.1016/j.rmed.2007.12.012",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:18308872": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Is heart rate a convenient tool to monitor over-reaching? A systematic review of the literature.",
+   "firstAuthor": "Bosquet",
+   "authors": [
+    "Bosquet",
+    "Merkari",
+    "Arvisais",
+    "Aubert"
+   ],
+   "year": 2008,
+   "journal": "Br J Sports Med",
+   "doi": "10.1136/bjsm.2007.042200",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:18334580": {
    "kind": "pmid",
@@ -9526,6 +12196,37 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:18426445": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Baroreflex sensitivity: measurement and clinical implications.",
+   "firstAuthor": "La Rovere",
+   "authors": [
+    "La Rovere",
+    "Pinna",
+    "Raczak"
+   ],
+   "year": 2008,
+   "journal": "Ann Noninvasive Electrocardiol",
+   "doi": "10.1111/j.1542-474X.2008.00219.x",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:18471223": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Death in sauna.",
+   "firstAuthor": "Kenttämies",
+   "authors": [
+    "Kenttämies",
+    "Karkola"
+   ],
+   "year": 2008,
+   "journal": "J Forensic Sci",
+   "doi": "10.1111/j.1556-4029.2008.00703.x",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:18503485": {
    "kind": "pmid",
    "valid": true,
@@ -9564,6 +12265,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:18565805": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Air-conditioning in the human nasal cavity.",
+   "firstAuthor": "Elad",
+   "authors": [
+    "Elad",
+    "Wolf",
+    "Keck"
+   ],
+   "year": 2008,
+   "journal": "Respir Physiol Neurobiol",
+   "doi": "10.1016/j.resp.2008.05.002",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:18769538": {
    "kind": "pmid",
    "valid": true,
@@ -9596,6 +12313,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:18787373": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Exercise and circulating cortisol levels: the intensity threshold effect.",
+   "firstAuthor": "Hill",
+   "authors": [
+    "Hill",
+    "Zack",
+    "Battaglini",
+    "Viru",
+    "Viru",
+    "Hackney"
+   ],
+   "year": 2008,
+   "journal": "J Endocrinol Invest",
+   "doi": "10.1007/BF03345606",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:18835608": {
    "kind": "pmid",
    "valid": true,
@@ -9614,6 +12350,20 @@
    "doi": "10.1016/j.jpsychires.2008.08.003",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:18951492": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Nitric oxide and the paranasal sinuses.",
+   "firstAuthor": "Lundberg",
+   "authors": [
+    "Lundberg"
+   ],
+   "year": 2008,
+   "journal": "Anat Rec (Hoboken)",
+   "doi": "10.1002/ar.20782",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:18974367": {
    "kind": "pmid",
@@ -9756,6 +12506,20 @@
    "source": "manual",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:19488073": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Stress and disorders of the stress system.",
+   "firstAuthor": "Chrousos",
+   "authors": [
+    "Chrousos"
+   ],
+   "year": 2009,
+   "journal": "Nat Rev Endocrinol",
+   "doi": "10.1038/nrendo.2009.106",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:19568835": {
    "kind": "pmid",
    "valid": true,
@@ -9774,6 +12538,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:19913903": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of low-level laser therapy in the management of neck pain: a systematic review and meta-analysis of randomised placebo or active-treatment controlled trials.",
+   "firstAuthor": "Chow",
+   "authors": [
+    "Chow",
+    "Johnson",
+    "Lopes-Martins",
+    "Bjordal"
+   ],
+   "year": 2009,
+   "journal": "Lancet",
+   "doi": "10.1016/S0140-6736(09)61522-1",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:20010421": {
    "kind": "pmid",
    "valid": true,
@@ -9789,6 +12570,23 @@
    "doi": "10.1097/ALN.0b013e3181c38c25",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:20011653": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Biphasic dose response in low level light therapy.",
+   "firstAuthor": "Huang",
+   "authors": [
+    "Huang",
+    "Chen",
+    "Carroll",
+    "Hamblin"
+   ],
+   "year": 2009,
+   "journal": "Dose Response",
+   "doi": "10.2203/dose-response.09-027.Hamblin",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:20204161": {
    "kind": "pmid",
@@ -9818,6 +12616,22 @@
    "doi": "10.1016/j.forsciint.2010.02.021",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:20385376": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Transcranial low voltage pulsed electromagnetic fields in patients with treatment-resistant depression.",
+   "firstAuthor": "Martiny",
+   "authors": [
+    "Martiny",
+    "Lunde",
+    "Bech"
+   ],
+   "year": 2010,
+   "journal": "Biol Psychiatry",
+   "doi": "10.1016/j.biopsych.2010.02.017",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:20438143": {
    "kind": "pmid",
@@ -10071,6 +12885,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:21491410": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Electromagnetic field stimulation for treating delayed union or non-union of long bone fractures in adults.",
+   "firstAuthor": "Griffin",
+   "authors": [
+    "Griffin",
+    "Costa",
+    "Parsons",
+    "Smith"
+   ],
+   "year": 2011,
+   "journal": "Cochrane Database Syst Rev",
+   "doi": "10.1002/14651858.CD008471.pub2",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:21574126": {
    "kind": "pmid",
    "valid": true,
@@ -10110,6 +12941,22 @@
    "doi": "10.4103/0973-6131.78171",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:21658979": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart rate variability, sleep and sleep disorders.",
+   "firstAuthor": "Stein",
+   "authors": [
+    "Stein",
+    "Pu"
+   ],
+   "year": 2012,
+   "yearAlt": 2011,
+   "journal": "Sleep Med Rev",
+   "doi": "10.1016/j.smrv.2011.02.005",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:21876150": {
    "kind": "pmid",
@@ -10236,6 +13083,40 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:22336838": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cold-water immersion (cryotherapy) for preventing and treating muscle soreness after exercise.",
+   "firstAuthor": "Bleakley",
+   "authors": [
+    "Bleakley",
+    "McDonough",
+    "Gardner",
+    "Baxter",
+    "Hopkins",
+    "Davison"
+   ],
+   "year": 2012,
+   "journal": "Cochrane Database Syst Rev",
+   "doi": "10.1002/14651858.CD008262.pub2",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:22366690": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Analysis of cortisol in hair--state of the art and future directions.",
+   "firstAuthor": "Stalder",
+   "authors": [
+    "Stalder",
+    "Kirschbaum"
+   ],
+   "year": 2012,
+   "journal": "Brain Behav Immun",
+   "doi": "10.1016/j.bbi.2012.02.002",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:22392290": {
    "kind": "pmid",
    "valid": true,
@@ -10249,6 +13130,19 @@
    "doi": "10.1038/nrgastro.2012.32",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:22398342": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Transforming trauma: a qualitative feasibility study of integrative restoration (iRest) yoga Nidra on combat-related post-traumatic stress disorder.",
+   "firstAuthor": "Stankovic",
+   "authors": [
+    "Stankovic"
+   ],
+   "year": 2011,
+   "journal": "Int J Yoga Therap",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:22495126": {
    "kind": "pmid",
@@ -10265,6 +13159,22 @@
    "doi": "10.1097/HJH.0b013e3283520077",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:22505948": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Arsenic, cadmium, lead, and mercury in sweat: a systematic review.",
+   "firstAuthor": "Sears",
+   "authors": [
+    "Sears",
+    "Kerr",
+    "Bray"
+   ],
+   "year": 2012,
+   "journal": "J Environ Public Health",
+   "doi": "10.1155/2012/184745",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:22547634": {
    "kind": "pmid",
@@ -10294,6 +13204,23 @@
    "doi": "10.3389/fphys.2012.00148",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:22866996": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Yoga Nidra relaxation increases heart rate variability and is unaffected by a prior bout of Hatha yoga.",
+   "firstAuthor": "Markil",
+   "authors": [
+    "Markil",
+    "Whitehurst",
+    "Jacobs",
+    "Zoeller"
+   ],
+   "year": 2012,
+   "journal": "J Altern Complement Med",
+   "doi": "10.1089/acm.2011.0331",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:22896675": {
    "kind": "pmid",
@@ -10569,6 +13496,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:23555572": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Neurocognitive and somatic components of temperature increases during g-tummo meditation: legend and reality.",
+   "firstAuthor": "Kozhevnikov",
+   "authors": [
+    "Kozhevnikov",
+    "Elliott",
+    "Shephard",
+    "Gramann"
+   ],
+   "year": 2013,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0058244",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:23583623": {
    "kind": "pmid",
    "valid": true,
@@ -10610,6 +13554,20 @@
    "doi": "10.1161/HYP.0b013e318293645f",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:23675615": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Nonthermal electromagnetic fields: from first messenger to therapeutic applications.",
+   "firstAuthor": "Pilla",
+   "authors": [
+    "Pilla"
+   ],
+   "year": 2013,
+   "journal": "Electromagn Biol Med",
+   "doi": "10.3109/15368378.2013.776335",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:23738149": {
    "kind": "pmid",
@@ -10663,6 +13621,28 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:23847555": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Music structure determines heart rate variability of singers.",
+   "firstAuthor": "Vickhoff",
+   "authors": [
+    "Vickhoff",
+    "Malmgren",
+    "Aström",
+    "Nyberg",
+    "Ekström",
+    "Engwall",
+    "Snygg",
+    "Nilsson",
+    "Jörnsten"
+   ],
+   "year": 2013,
+   "journal": "Front Psychol",
+   "doi": "10.3389/fpsyg.2013.00334",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:23852425": {
    "kind": "pmid",
    "valid": true,
@@ -10680,6 +13660,31 @@
    "doi": "10.1007/s40279-013-0071-8",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:23867626": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cold acclimation recruits human brown fat and increases nonshivering thermogenesis.",
+   "firstAuthor": "van der Lans",
+   "authors": [
+    "van der Lans",
+    "Hoeks",
+    "Brans",
+    "Vijgen",
+    "Visser",
+    "Vosselman",
+    "Hansen",
+    "Jörgensen",
+    "Wu",
+    "Mottaghy",
+    "Schrauwen",
+    "van Marken Lichtenbelt"
+   ],
+   "year": 2013,
+   "journal": "J Clin Invest",
+   "doi": "10.1172/JCI68993",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:23899560": {
    "kind": "pmid",
@@ -10730,6 +13735,22 @@
    "doi": "10.1007/s40279-013-0083-4",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:23940071": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effects of the \"physical BEMER® vascular therapy\", a method for the physical stimulation of the vasomotion of precapillary microvessels in case of impaired microcirculation, on sleep, pain and quality of life of patients with different clinical pictures on the basis of three scientifically validated scales.",
+   "firstAuthor": "Bohn",
+   "authors": [
+    "Bohn",
+    "Hess",
+    "Burger"
+   ],
+   "year": 2013,
+   "journal": "J Complement Integr Med",
+   "doi": "10.1515/jcim-2013-0037",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:24126130": {
    "kind": "pmid",
@@ -10839,6 +13860,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:24249354": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effect of phototherapy (low-level laser therapy and light-emitting diode therapy) on exercise performance and markers of exercise recovery: a systematic review with meta-analysis.",
+   "firstAuthor": "Leal-Junior",
+   "authors": [
+    "Leal-Junior",
+    "Vanin",
+    "Miranda",
+    "de Carvalho Pde",
+    "Dal Corso",
+    "Bjordal"
+   ],
+   "year": 2015,
+   "yearAlt": 2013,
+   "journal": "Lasers Med Sci",
+   "doi": "10.1007/s10103-013-1465-4",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:24252493": {
    "kind": "pmid",
    "valid": true,
@@ -10857,6 +13898,22 @@
    "doi": "10.1016/j.jep.2013.11.008",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:24286286": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A controlled trial to determine the efficacy of red and near-infrared light treatment in patient satisfaction, reduction of fine lines, wrinkles, skin roughness, and intradermal collagen density increase.",
+   "firstAuthor": "Wunsch",
+   "authors": [
+    "Wunsch",
+    "Matuschka"
+   ],
+   "year": 2014,
+   "yearAlt": 2013,
+   "journal": "Photomed Laser Surg",
+   "doi": "10.1089/pho.2013.3616",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:24293767": {
    "kind": "pmid",
@@ -10902,6 +13959,23 @@
    "doi": "10.1001/jamainternmed.2013.13018",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:24396059": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Integrative regulation of human brain blood flow.",
+   "firstAuthor": "Willie",
+   "authors": [
+    "Willie",
+    "Tzeng",
+    "Fisher",
+    "Ainslie"
+   ],
+   "year": 2014,
+   "journal": "J Physiol",
+   "doi": "10.1113/jphysiol.2013.268953",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:24636500": {
    "kind": "pmid",
@@ -11080,6 +14154,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:25450408": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Novel porous oral patches for patients with mild obstructive sleep apnea and mouth breathing: a pilot study.",
+   "firstAuthor": "Huang",
+   "authors": [
+    "Huang",
+    "Young"
+   ],
+   "year": 2015,
+   "yearAlt": 2014,
+   "journal": "Otolaryngol Head Neck Surg",
+   "doi": "10.1177/0194599814559383",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:25451381": {
    "kind": "pmid",
    "valid": true,
@@ -11166,6 +14256,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:25705824": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Association between sauna bathing and fatal cardiovascular and all-cause mortality events.",
+   "firstAuthor": "Laukkanen",
+   "authors": [
+    "Laukkanen",
+    "Khan",
+    "Zaccardi",
+    "Laukkanen"
+   ],
+   "year": 2015,
+   "journal": "JAMA Intern Med",
+   "doi": "10.1001/jamainternmed.2014.8187",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:25818837": {
    "kind": "pmid",
    "valid": true,
@@ -11220,6 +14327,22 @@
    "doi": "10.1179/1476830515Y.0000000018",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:25858651": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Delivering Integrative Restoration-Yoga Nidra Meditation (iRest®) to Women with Sexual Trauma at a Veteran's Medical Center: A Pilot Study.",
+   "firstAuthor": "Pence",
+   "authors": [
+    "Pence",
+    "Katz",
+    "Huffman",
+    "Cojucar"
+   ],
+   "year": 2014,
+   "journal": "Int J Yoga Therap",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:25914789": {
    "kind": "pmid",
@@ -11287,6 +14410,55 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:26147760": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Short-term cold acclimation improves insulin sensitivity in patients with type 2 diabetes mellitus.",
+   "firstAuthor": "Hanssen",
+   "authors": [
+    "Hanssen",
+    "Hoeks",
+    "Brans",
+    "van der Lans",
+    "Schaart",
+    "van den Driessche",
+    "Jörgensen",
+    "Boekschoten",
+    "Hesselink",
+    "Havekes",
+    "Kersten",
+    "Mottaghy",
+    "van Marken Lichtenbelt",
+    "Schrauwen"
+   ],
+   "year": 2015,
+   "journal": "Nat Med",
+   "doi": "10.1038/nm.3891",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:26174323": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Post-exercise cold water immersion attenuates acute anabolic signalling and long-term adaptations in muscle to strength training.",
+   "firstAuthor": "Roberts",
+   "authors": [
+    "Roberts",
+    "Raastad",
+    "Markworth",
+    "Figueiredo",
+    "Egner",
+    "Shield",
+    "Cameron-Smith",
+    "Coombes",
+    "Peake"
+   ],
+   "year": 2015,
+   "journal": "J Physiol",
+   "doi": "10.1113/JP270570",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:26245965": {
    "kind": "pmid",
    "valid": true,
@@ -11308,6 +14480,22 @@
    "doi": "10.1523/JNEUROSCI.1625-15.2015",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:26271068": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Orthostatic Hypotension: Epidemiology, Prognosis, and Treatment.",
+   "firstAuthor": "Ricci",
+   "authors": [
+    "Ricci",
+    "De Caterina",
+    "Fedorowski"
+   ],
+   "year": 2015,
+   "journal": "J Am Coll Cardiol",
+   "doi": "10.1016/j.jacc.2015.06.1084",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:26332547": {
    "kind": "pmid",
@@ -11386,6 +14574,25 @@
    "year": 2015,
    "journal": "N Engl J Med",
    "doi": "10.1056/NEJMoa1406761",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:26383887": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Whole-body cryotherapy (extreme cold air exposure) for preventing and treating muscle soreness after exercise in adults.",
+   "firstAuthor": "Costello",
+   "authors": [
+    "Costello",
+    "Baker",
+    "Minett",
+    "Bieuzen",
+    "Stewart",
+    "Bleakley"
+   ],
+   "year": 2015,
+   "journal": "Cochrane Database Syst Rev",
+   "doi": "10.1002/14651858.CD010789.pub2",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
@@ -11561,6 +14768,41 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:27001189": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Waon Therapy for Managing Chronic Heart Failure　- Results From a Multicenter Prospective Randomized WAON-CHF Study.",
+   "firstAuthor": "Tei",
+   "authors": [
+    "Tei",
+    "Imamura",
+    "Kinugawa",
+    "Inoue",
+    "Masuyama",
+    "Inoue",
+    "Noike",
+    "Muramatsu",
+    "Takeishi",
+    "Saku",
+    "Harada",
+    "Daida",
+    "Kobayashi",
+    "Hagiwara",
+    "Nagayama",
+    "Momomura",
+    "Yonezawa",
+    "Ito",
+    "Gojo",
+    "Akaishi",
+    "Miyata",
+    "Ohishi"
+   ],
+   "year": 2016,
+   "journal": "Circ J",
+   "doi": "10.1253/circj.CJ-16-0051",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:27136449": {
    "kind": "pmid",
    "valid": true,
@@ -11578,6 +14820,77 @@
    "doi": "10.7326/M15-2175",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:27172277": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Whole-Body Hyperthermia for the Treatment of Major Depressive Disorder: A Randomized Clinical Trial.",
+   "firstAuthor": "Janssen",
+   "authors": [
+    "Janssen",
+    "Lowry",
+    "Mehl",
+    "Allen",
+    "Kelly",
+    "Gartner",
+    "Medrano",
+    "Begay",
+    "Rentscher",
+    "White",
+    "Fridman",
+    "Roberts",
+    "Robbins",
+    "Hanusch",
+    "Cole",
+    "Raison"
+   ],
+   "year": 2016,
+   "journal": "JAMA Psychiatry",
+   "doi": "10.1001/jamapsychiatry.2016.1031",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:27238063": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Neurofeedback for Attention-Deficit/Hyperactivity Disorder: Meta-Analysis of Clinical and Neuropsychological Outcomes From Randomized Controlled Trials.",
+   "firstAuthor": "Cortese",
+   "authors": [
+    "Cortese",
+    "Ferrin",
+    "Brandeis",
+    "Holtmann",
+    "Aggensteiner",
+    "Daley",
+    "Santosh",
+    "Simonoff",
+    "Stevenson",
+    "Stringaris",
+    "Sonuga-Barke"
+   ],
+   "year": 2016,
+   "journal": "J Am Acad Child Adolesc Psychiatry",
+   "doi": "10.1016/j.jaac.2016.03.007",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:27270841": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Passive heat therapy improves endothelial function, arterial stiffness and blood pressure in sedentary humans.",
+   "firstAuthor": "Brunt",
+   "authors": [
+    "Brunt",
+    "Howard",
+    "Francisco",
+    "Ely",
+    "Minson"
+   ],
+   "year": 2016,
+   "journal": "J Physiol",
+   "doi": "10.1113/JP272453",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:27347892": {
    "kind": "pmid",
@@ -11620,6 +14933,60 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:27539550": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of Electrical Stimulators for Bone Healing: A Meta-Analysis of Randomized Sham-Controlled Trials.",
+   "firstAuthor": "Aleem",
+   "authors": [
+    "Aleem",
+    "Aleem",
+    "Evaniew",
+    "Busse",
+    "Yaszemski",
+    "Agarwal",
+    "Einhorn",
+    "Bhandari"
+   ],
+   "year": 2016,
+   "journal": "Sci Rep",
+   "doi": "10.1038/srep31724",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:27557747": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Adrenal fatigue does not exist: a systematic review.",
+   "firstAuthor": "Cadegiani",
+   "authors": [
+    "Cadegiani",
+    "Kater"
+   ],
+   "year": 2016,
+   "journal": "BMC Endocr Disord",
+   "doi": "10.1186/s12902-016-0128-4",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:27631616": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Effect of Cold Showering on Health and Work: A Randomized Controlled Trial.",
+   "firstAuthor": "Buijze",
+   "authors": [
+    "Buijze",
+    "Sierevelt",
+    "van der Heijden",
+    "Dijkgraaf",
+    "Frings-Dresen"
+   ],
+   "year": 2016,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0161749",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:27658566": {
    "kind": "pmid",
    "valid": true,
@@ -11650,6 +15017,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:27894358": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Attentional and affective consequences of technology supported mindfulness training: a randomised, active control, efficacy trial.",
+   "firstAuthor": "Bhayee",
+   "authors": [
+    "Bhayee",
+    "Tomaszewski",
+    "Lee",
+    "Moffat",
+    "Pino",
+    "Moreno",
+    "Farb"
+   ],
+   "year": 2016,
+   "journal": "BMC Psychol",
+   "doi": "10.1186/s40359-016-0168-6",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:27927961": {
    "kind": "pmid",
    "valid": true,
@@ -11669,6 +15056,23 @@
    "doi": "10.1523/JNEUROSCI.2586-16.2016",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:27932366": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sauna bathing is inversely associated with dementia and Alzheimer's disease in middle-aged Finnish men.",
+   "firstAuthor": "Laukkanen",
+   "authors": [
+    "Laukkanen",
+    "Kunutsor",
+    "Kauhanen",
+    "Laukkanen"
+   ],
+   "year": 2017,
+   "journal": "Age Ageing",
+   "doi": "10.1093/ageing/afw212",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:28033127": {
    "kind": "pmid",
@@ -11733,6 +15137,45 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:28162150": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Clinical Practice Guideline for Diagnostic Testing for Adult Obstructive Sleep Apnea: An American Academy of Sleep Medicine Clinical Practice Guideline.",
+   "firstAuthor": "Kapur",
+   "authors": [
+    "Kapur",
+    "Auckley",
+    "Chowdhuri",
+    "Kuhlmann",
+    "Mehra",
+    "Ramar",
+    "Harrod"
+   ],
+   "year": 2017,
+   "journal": "J Clin Sleep Med",
+   "doi": "10.5664/jcsm.6506",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
+  "pmid:28187954": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart rate variability in insomnia patients: A critical review of the literature.",
+   "firstAuthor": "Dodds",
+   "authors": [
+    "Dodds",
+    "Miller",
+    "Kyle",
+    "Marshall",
+    "Gordon"
+   ],
+   "year": 2017,
+   "yearAlt": 2016,
+   "journal": "Sleep Med Rev",
+   "doi": "10.1016/j.smrv.2016.06.004",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:28240995": {
    "kind": "pmid",
    "valid": true,
@@ -11766,6 +15209,58 @@
    "doi": "10.3389/fpsyg.2017.00213",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:28335000": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Better than sham? A double-blind placebo-controlled neurofeedback study in primary insomnia.",
+   "firstAuthor": "Schabus",
+   "authors": [
+    "Schabus",
+    "Griessenberger",
+    "Gnjezda",
+    "Heib",
+    "Wislowska",
+    "Hoedlmoser"
+   ],
+   "year": 2017,
+   "journal": "Brain",
+   "doi": "10.1093/brain/awx011",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:28344546": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Choosing MUSE: Validation of a Low-Cost, Portable EEG System for ERP Research.",
+   "firstAuthor": "Krigolson",
+   "authors": [
+    "Krigolson",
+    "Williams",
+    "Norton",
+    "Hassall",
+    "Colino"
+   ],
+   "year": 2017,
+   "journal": "Front Neurosci",
+   "doi": "10.3389/fnins.2017.00109",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:28396101": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effectiveness of treatments for androgenetic alopecia: A systematic review and meta-analysis.",
+   "firstAuthor": "Adil",
+   "authors": [
+    "Adil",
+    "Godwin"
+   ],
+   "year": 2017,
+   "journal": "J Am Acad Dermatol",
+   "doi": "10.1016/j.jaad.2017.02.054",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:28467922": {
    "kind": "pmid",
@@ -11926,6 +15421,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:28633297": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sauna Bathing and Incident Hypertension: A Prospective Cohort Study.",
+   "firstAuthor": "Zaccardi",
+   "authors": [
+    "Zaccardi",
+    "Laukkanen",
+    "Willeit",
+    "Kunutsor",
+    "Kauhanen",
+    "Laukkanen"
+   ],
+   "year": 2017,
+   "journal": "Am J Hypertens",
+   "doi": "10.1093/ajh/hpx102",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:28642676": {
    "kind": "pmid",
    "valid": true,
@@ -11961,6 +15475,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:28674596": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of Nasal or Oral Breathing on Anaerobic Power Output and Metabolic Responses.",
+   "firstAuthor": "Recinto",
+   "authors": [
+    "Recinto",
+    "Efthemeou",
+    "Boffelli",
+    "Navalta"
+   ],
+   "year": 2017,
+   "journal": "Int J Exerc Sci",
+   "doi": "10.70252/EHDR7442",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:28698222": {
    "kind": "pmid",
    "valid": true,
@@ -11985,6 +15516,38 @@
    "doi": "10.1136/bjsports-2017-097608",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:28779936": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Psychological effects of yoga nidra in women with menstrual disorders: A systematic review of randomized controlled trials.",
+   "firstAuthor": "Kim",
+   "authors": [
+    "Kim"
+   ],
+   "year": 2017,
+   "journal": "Complement Ther Clin Pract",
+   "doi": "10.1016/j.ctcp.2017.04.001",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:28824402": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Comparison of Medical and Consumer Wireless EEG Systems for Use in Clinical Trials.",
+   "firstAuthor": "Ratti",
+   "authors": [
+    "Ratti",
+    "Waninger",
+    "Berka",
+    "Ruffini",
+    "Verma"
+   ],
+   "year": 2017,
+   "journal": "Front Hum Neurosci",
+   "doi": "10.3389/fnhum.2017.00398",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:28863392": {
    "kind": "pmid",
@@ -12077,6 +15640,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:29016171": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The psychology of neurofeedback: Clinical intervention even if applied placebo.",
+   "firstAuthor": "Thibault",
+   "authors": [
+    "Thibault",
+    "Raz"
+   ],
+   "year": 2017,
+   "journal": "Am Psychol",
+   "doi": "10.1037/amp0000118",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:29034226": {
    "kind": "pmid",
    "valid": true,
@@ -12092,6 +15670,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:29048215": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sauna exposure leads to improved arterial compliance: Findings from a non-randomised experimental study.",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Laukkanen",
+    "Kunutsor",
+    "Khan",
+    "Willeit",
+    "Zaccardi",
+    "Laukkanen"
+   ],
+   "year": 2018,
+   "yearAlt": 2017,
+   "journal": "Eur J Prev Cardiol",
+   "doi": "10.1177/2047487317737629",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:29075623": {
    "kind": "pmid",
    "valid": true,
@@ -12105,6 +15704,34 @@
    "doi": "10.3389/fpubh.2017.00267",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:29130840": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "What works for wellbeing? A systematic review of wellbeing outcomes for music and singing in adults.",
+   "firstAuthor": "Daykin",
+   "authors": [
+    "Daykin",
+    "Mansfield",
+    "Meads",
+    "Julier",
+    "Tomlinson",
+    "Payne",
+    "Grigsby Duffy",
+    "Lane",
+    "D'Innocenzo",
+    "Burnett",
+    "Kay",
+    "Dolan",
+    "Testoni",
+    "Victor"
+   ],
+   "year": 2018,
+   "yearAlt": 2017,
+   "journal": "Perspect Public Health",
+   "doi": "10.1177/1757913917740391",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:29142296": {
    "kind": "pmid",
@@ -12122,6 +15749,20 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:29164625": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Mechanisms and Mitochondrial Redox Signaling in Photobiomodulation.",
+   "firstAuthor": "Hamblin",
+   "authors": [
+    "Hamblin"
+   ],
+   "year": 2018,
+   "journal": "Photochem Photobiol",
+   "doi": "10.1111/php.12864",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:29209423": {
    "kind": "pmid",
    "valid": true,
@@ -12137,6 +15778,25 @@
    "doi": "10.1183/20734735.009817",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:29321984": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of Bhramari Pranayama on health - A systematic review.",
+   "firstAuthor": "Kuppusamy",
+   "authors": [
+    "Kuppusamy",
+    "Kamaldeen",
+    "Pitani",
+    "Amaldas",
+    "Shanmugam"
+   ],
+   "year": 2018,
+   "yearAlt": 2017,
+   "journal": "J Tradit Complement Med",
+   "doi": "10.1016/j.jtcme.2017.02.003",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:29467611": {
    "kind": "pmid",
@@ -12303,6 +15963,40 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:29709070": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Pulsed electromagnetic field therapy in the treatment of pain and other symptoms in fibromyalgia: A randomized controlled study.",
+   "firstAuthor": "Multanen",
+   "authors": [
+    "Multanen",
+    "Häkkinen",
+    "Heikkinen",
+    "Kautiainen",
+    "Mustalampi",
+    "Ylinen"
+   ],
+   "year": 2018,
+   "journal": "Bioelectromagnetics",
+   "doi": "10.1002/bem.22127",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:29849692": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Clinical Effects of Regular Dry Sauna Bathing: A Systematic Review.",
+   "firstAuthor": "Hussain",
+   "authors": [
+    "Hussain",
+    "Cohen"
+   ],
+   "year": 2018,
+   "journal": "Evid Based Complement Alternat Med",
+   "doi": "10.1155/2018/1857413",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:29884281": {
    "kind": "pmid",
    "valid": true,
@@ -12438,6 +16132,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:30077204": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cardiovascular and Other Health Benefits of Sauna Bathing: A Review of the Evidence.",
+   "firstAuthor": "Laukkanen",
+   "authors": [
+    "Laukkanen",
+    "Laukkanen",
+    "Kunutsor"
+   ],
+   "year": 2018,
+   "journal": "Mayo Clin Proc",
+   "doi": "10.1016/j.mayocp.2018.04.008",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:30218689": {
    "kind": "pmid",
    "valid": true,
@@ -12453,6 +16163,28 @@
    "doi": "10.1016/j.biopsycho.2018.09.004",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:30239008": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of sauna bath on heart failure: A systematic review and meta-analysis.",
+   "firstAuthor": "Källström",
+   "authors": [
+    "Källström",
+    "Soveri",
+    "Oldgren",
+    "Laukkanen",
+    "Ichiki",
+    "Tei",
+    "Timmerman",
+    "Berglund",
+    "Hägglund"
+   ],
+   "year": 2018,
+   "journal": "Clin Cardiol",
+   "doi": "10.1002/clc.23077",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:30245619": {
    "kind": "pmid",
@@ -12621,6 +16353,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:30833909": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Clinical and Experimental Factors Influencing the Efficacy of Neurofeedback in ADHD: A Meta-Analysis.",
+   "firstAuthor": "Bussalb",
+   "authors": [
+    "Bussalb",
+    "Congedo",
+    "Barthélemy",
+    "Ojeda",
+    "Acquaviva",
+    "Delorme",
+    "Mayaud"
+   ],
+   "year": 2019,
+   "journal": "Front Psychiatry",
+   "doi": "10.3389/fpsyt.2019.00035",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:31051293": {
    "kind": "pmid",
    "valid": true,
@@ -12635,6 +16387,21 @@
    "doi": "10.1016/j.neuroimage.2019.04.081",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:31126559": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The blood pressure and heart rate during sauna bath correspond to cardiac responses during submaximal dynamic exercise.",
+   "firstAuthor": "Ketelhut",
+   "authors": [
+    "Ketelhut",
+    "Ketelhut"
+   ],
+   "year": 2019,
+   "journal": "Complement Ther Med",
+   "doi": "10.1016/j.ctim.2019.05.002",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:31139634": {
    "kind": "pmid",
@@ -12666,6 +16433,36 @@
    "doi": "10.1016/B978-0-444-64032-1.00027-8",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:31286228": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Systematic review of photobiomodulation for the management of oral mucositis in cancer patients and clinical practice guidelines.",
+   "firstAuthor": "Zadik",
+   "authors": [
+    "Zadik",
+    "Arany",
+    "Fregnani",
+    "Bossi",
+    "Antunes",
+    "Bensadoun",
+    "Gueiros",
+    "Majorana",
+    "Nair",
+    "Ranna",
+    "Tissing",
+    "Vaddi",
+    "Lubart",
+    "Migliorati",
+    "Lalla",
+    "Cheng",
+    "Elad"
+   ],
+   "year": 2019,
+   "journal": "Support Care Cancer",
+   "doi": "10.1007/s00520-019-04890-2",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:31311698": {
    "kind": "pmid",
@@ -12821,6 +16618,27 @@
    "doi": "10.3390/jcm8101638",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:31662383": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of low-level laser therapy on pain and disability in knee osteoarthritis: systematic review and meta-analysis of randomised placebo-controlled trials.",
+   "firstAuthor": "Stausholm",
+   "authors": [
+    "Stausholm",
+    "Naterstad",
+    "Joensen",
+    "Lopes-Martins RÁB",
+    "Sæbø",
+    "Lund",
+    "Fersum",
+    "Bjordal"
+   ],
+   "year": 2019,
+   "journal": "BMJ Open",
+   "doi": "10.1136/bmjopen-2019-031142",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:31672896": {
    "kind": "pmid",
@@ -12982,6 +16800,131 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:32093804": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Transcranial pulsed electromagnetic fields for treatment-resistant depression: A multicenter 8-week single-arm cohort study.",
+   "firstAuthor": "Larsen",
+   "authors": [
+    "Larsen",
+    "Licht",
+    "Nielsen",
+    "Lolk",
+    "Borck",
+    "Sørensen",
+    "Christensen",
+    "Bizik",
+    "Ravn",
+    "Martiny",
+    "Vinberg",
+    "Jankuviené",
+    "Jørgensen",
+    "Videbech",
+    "Bech"
+   ],
+   "year": 2020,
+   "journal": "Eur Psychiatry",
+   "doi": "10.1192/j.eurpsy.2020.3",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:32176800": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Consensus on the reporting and experimental design of clinical and cognitive-behavioural neurofeedback studies (CRED-nf checklist).",
+   "firstAuthor": "Ros",
+   "authors": [
+    "Ros",
+    "Enriquez-Geppert",
+    "Zotev",
+    "Young",
+    "Wood",
+    "Whitfield-Gabrieli",
+    "Wan",
+    "Vuilleumier",
+    "Vialatte",
+    "Van De Ville",
+    "Todder",
+    "Surmeli",
+    "Sulzer",
+    "Strehl",
+    "Sterman",
+    "Steiner",
+    "Sorger",
+    "Soekadar",
+    "Sitaram",
+    "Sherlin",
+    "Schönenberg",
+    "Scharnowski",
+    "Schabus",
+    "Rubia",
+    "Rosa",
+    "Reiner",
+    "Pineda",
+    "Paret",
+    "Ossadtchi",
+    "Nicholson",
+    "Nan",
+    "Minguez",
+    "Micoulaud-Franchi",
+    "Mehler",
+    "Lührs",
+    "Lubar",
+    "Lotte",
+    "Linden",
+    "Lewis-Peacock",
+    "Lebedev",
+    "Lanius",
+    "Kübler",
+    "Kranczioch",
+    "Koush",
+    "Konicar",
+    "Kohl",
+    "Kober",
+    "Klados",
+    "Jeunet",
+    "Janssen",
+    "Huster",
+    "Hoedlmoser",
+    "Hirshberg",
+    "Heunis",
+    "Hendler",
+    "Hampson",
+    "Guggisberg",
+    "Guggenberger",
+    "Gruzelier",
+    "Göbel",
+    "Gninenko",
+    "Gharabaghi",
+    "Frewen",
+    "Fovet",
+    "Fernández",
+    "Escolano",
+    "Ehlis",
+    "Drechsler",
+    "Christopher deCharms",
+    "Debener",
+    "De Ridder",
+    "Davelaar",
+    "Congedo",
+    "Cavazza",
+    "Breteler",
+    "Brandeis",
+    "Bodurka",
+    "Birbaumer",
+    "Bazanova",
+    "Barth",
+    "Bamidis",
+    "Auer",
+    "Arns",
+    "Thibault"
+   ],
+   "year": 2020,
+   "journal": "Brain",
+   "doi": "10.1093/brain/awaa009",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:32212422": {
    "kind": "pmid",
    "valid": true,
@@ -12999,6 +16942,24 @@
    "doi": "10.1002/14651858.CD001277.pub4",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:32251502": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of Pulsed Electromagnetic Field Therapy on Pain, Stiffness, Physical Function, and Quality of Life in Patients With Osteoarthritis: A Systematic Review and Meta-Analysis of Randomized Placebo-Controlled Trials.",
+   "firstAuthor": "Yang",
+   "authors": [
+    "Yang",
+    "He",
+    "Ye",
+    "Perry",
+    "He"
+   ],
+   "year": 2020,
+   "journal": "Phys Ther",
+   "doi": "10.1093/ptj/pzaa054",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:32266329": {
    "kind": "pmid",
@@ -13085,6 +17046,25 @@
    "doi": "10.3389/fnins.2020.00284",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:32508140": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Pain and Functional Scores in Patients Affected by Knee OA after Treatment with Pulsed Electromagnetic and Magnetic Fields: A Meta-Analysis.",
+   "firstAuthor": "Viganò",
+   "authors": [
+    "Viganò",
+    "Perucca Orfei",
+    "Ragni",
+    "Colombini",
+    "de Girolamo"
+   ],
+   "year": 2021,
+   "yearAlt": 2020,
+   "journal": "Cartilage",
+   "doi": "10.1177/1947603520931168",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:32528330": {
    "kind": "pmid",
@@ -13176,6 +17156,35 @@
    "doi": "10.1111/acps.13225",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:32853703": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Double-Blind Placebo-Controlled Randomized Clinical Trial of Neurofeedback for Attention-Deficit/Hyperactivity Disorder With 13-Month Follow-up.",
+   "firstAuthor": "Neurofeedback Collaborative Group",
+   "authors": [],
+   "year": 2021,
+   "yearAlt": 2020,
+   "journal": "J Am Acad Child Adolesc Psychiatry",
+   "doi": "10.1016/j.jaac.2020.07.906",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:32871867": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Analgesic effect of pulsed electromagnetic fields for mammaplasty: A meta-analysis of randomized controlled studies.",
+   "firstAuthor": "Zhang",
+   "authors": [
+    "Zhang",
+    "Ding",
+    "Ji"
+   ],
+   "year": 2020,
+   "journal": "Medicine (Baltimore)",
+   "doi": "10.1097/MD.0000000000021449",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:32986097": {
    "kind": "pmid",
@@ -13270,6 +17279,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:33216020": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The influence of pulsed electromagnetic field therapy (PEMFT) on cutaneous blood flow in healthy volunteers1.",
+   "firstAuthor": "Biermann",
+   "authors": [
+    "Biermann",
+    "Sommerauer",
+    "Diesch",
+    "Koch",
+    "Jung",
+    "Kehrer",
+    "Prantl",
+    "Taeger"
+   ],
+   "year": 2020,
+   "journal": "Clin Hemorheol Microcirc",
+   "doi": "10.3233/CH-209224",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:33299095": {
    "kind": "pmid",
    "valid": true,
@@ -13339,6 +17369,29 @@
    "doi": "10.1016/j.cbpa.2020.110880",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:33378539": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Performance of seven consumer sleep-tracking devices compared with polysomnography.",
+   "firstAuthor": "Chinoy",
+   "authors": [
+    "Chinoy",
+    "Cuellar",
+    "Huwa",
+    "Jameson",
+    "Watson",
+    "Bessman",
+    "Hirsch",
+    "Cooper",
+    "Drummond",
+    "Markwald"
+   ],
+   "year": 2021,
+   "journal": "Sleep",
+   "doi": "10.1093/sleep/zsaa291",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:33378655": {
    "kind": "pmid",
@@ -13452,6 +17505,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:33691076": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Yoga Meditation for Active Duty Military Members with Post-Traumatic Stress Disorder: Results and Discussion of a Landmark Initial Study.",
+   "firstAuthor": "Sullivan",
+   "authors": [
+    "Sullivan",
+    "Lopez",
+    "Nault",
+    "Moonaz",
+    "Miller"
+   ],
+   "year": 2021,
+   "journal": "J Altern Complement Med",
+   "doi": "10.1089/acm.2020.0466",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:33758260": {
    "kind": "pmid",
    "valid": true,
@@ -13539,6 +17610,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:34201861": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Promise of Sleep: A Multi-Sensor Approach for Accurate Sleep Stage Detection Using the Oura Ring.",
+   "firstAuthor": "Altini",
+   "authors": [
+    "Altini",
+    "Kinnunen"
+   ],
+   "year": 2021,
+   "journal": "Sensors (Basel)",
+   "doi": "10.3390/s21134302",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:34473846": {
    "kind": "pmid",
    "valid": true,
@@ -13556,6 +17642,43 @@
    "doi": "10.1111/psyp.13933",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:34489178": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Monitoring and adapting endurance training on the basis of heart rate variability monitored by wearable technologies: A systematic review with meta-analysis.",
+   "firstAuthor": "Düking",
+   "authors": [
+    "Düking",
+    "Zinner",
+    "Trabelsi",
+    "Reed",
+    "Holmberg",
+    "Kunz",
+    "Sperlich"
+   ],
+   "year": 2021,
+   "journal": "J Sci Med Sport",
+   "doi": "10.1016/j.jsams.2021.04.012",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
+  "pmid:34514386": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Acute Effects of the Wim Hof Breathing Method on Repeated Sprint Ability: A Pilot Study.",
+   "firstAuthor": "Citherlet",
+   "authors": [
+    "Citherlet",
+    "Crettaz von Roten",
+    "Kayser",
+    "Guex"
+   ],
+   "year": 2021,
+   "journal": "Front Sports Act Living",
+   "doi": "10.3389/fspor.2021.700757",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:34582701": {
    "kind": "pmid",
@@ -13591,6 +17714,65 @@
    "doi": "10.1038/s41598-021-98736-9",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:34727178": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Consciousness State of Traditional Nidrâ Yoga/Modern Yoga Nidra: Phenomenological Characterization and Preliminary Insights from an EEG Study.",
+   "firstAuthor": "Zaccaro",
+   "authors": [
+    "Zaccaro",
+    "Riehl",
+    "Piarulli",
+    "Alfì",
+    "Neri",
+    "Menicucci",
+    "Gemignani"
+   ],
+   "year": 2021,
+   "journal": "Int J Yoga Therap",
+   "doi": "10.17761/2021-D-20-00014",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:34776024": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of bio- and neurofeedback for depression: a meta-analysis.",
+   "firstAuthor": "Fernández-Alvarez",
+   "authors": [
+    "Fernández-Alvarez",
+    "Grassi",
+    "Colombo",
+    "Botella",
+    "Cipresso",
+    "Perna",
+    "Riva"
+   ],
+   "year": 2022,
+   "yearAlt": 2021,
+   "journal": "Psychol Med",
+   "doi": "10.1017/S0033291721004396",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:34825538": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Yoga nidra practice shows improvement in sleep in patients with chronic insomnia: A randomized controlled trial.",
+   "firstAuthor": "Datta",
+   "authors": [
+    "Datta",
+    "Tripathi",
+    "Verma",
+    "Masiwal",
+    "Mallick"
+   ],
+   "year": 2021,
+   "journal": "Natl Med J India",
+   "doi": "10.25259/NMJI_63_19",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:34831534": {
    "kind": "pmid",
@@ -13702,6 +17884,29 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:35077249": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of pulsed electromagnetic field on pain and physical function in patients with low back pain: A systematic review and meta-analysis.",
+   "firstAuthor": "Sun",
+   "authors": [
+    "Sun",
+    "Huang",
+    "Wang",
+    "Fu",
+    "Zhang",
+    "Cheng",
+    "Pei",
+    "Wang",
+    "He",
+    "Wei"
+   ],
+   "year": 2022,
+   "journal": "Clin Rehabil",
+   "doi": "10.1177/02692155221074052",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:35147898": {
    "kind": "pmid",
    "valid": true,
@@ -13769,6 +17974,52 @@
    "doi": "10.1007/s41465-021-00218-3",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:35329068": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effectiveness of Mantra-Based Meditation on Mental Health: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Álvarez-Pérez",
+   "authors": [
+    "Álvarez-Pérez",
+    "Rivero-Santana",
+    "Perestelo-Pérez",
+    "Duarte-Díaz",
+    "Ramos-García",
+    "Toledo-Chávarri",
+    "Torres-Castaño",
+    "León-Salas",
+    "Infante-Ventura",
+    "González-Hernández",
+    "Rodríguez-Rodríguez",
+    "Serrano-Aguilar"
+   ],
+   "year": 2022,
+   "journal": "Int J Environ Res Public Health",
+   "doi": "10.3390/ijerph19063380",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
+  "pmid:35496325": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Origin and Clinical Relevance of Yoga Nidra.",
+   "firstAuthor": "Pandi-Perumal",
+   "authors": [
+    "Pandi-Perumal",
+    "Spence",
+    "Srivastava",
+    "Kanchibhotla",
+    "Kumar",
+    "Sharma",
+    "Gupta",
+    "Batmanabane"
+   ],
+   "year": 2022,
+   "journal": "Sleep Vigil",
+   "doi": "10.1007/s41782-022-00202-7",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:35615275": {
    "kind": "pmid",
@@ -13884,6 +18135,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:35903117": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Electrophysiological Evidence of Local Sleep During Yoga Nidra Practice.",
+   "firstAuthor": "Datta",
+   "authors": [
+    "Datta",
+    "Mallick",
+    "Tripathi",
+    "Ahuja",
+    "Deepak"
+   ],
+   "year": 2022,
+   "journal": "Front Neurol",
+   "doi": "10.3389/fneur.2022.910794",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:36030561": {
    "kind": "pmid",
    "valid": true,
@@ -13902,6 +18171,39 @@
    "year": 2022,
    "journal": "Cortex",
    "doi": "10.1016/j.cortex.2022.07.008",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:36137565": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Health effects of voluntary exposure to cold water - a continuing subject of debate.",
+   "firstAuthor": "Esperland",
+   "authors": [
+    "Esperland",
+    "de Weerd",
+    "Mercer"
+   ],
+   "year": 2022,
+   "journal": "Int J Circumpolar Health",
+   "doi": "10.1080/22423982.2022.2111789",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:36141367": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Impact of Mouth-Taping in Mouth-Breathers with Mild Obstructive Sleep Apnea: A Preliminary Study.",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Lu",
+    "Cheng",
+    "Li"
+   ],
+   "year": 2022,
+   "journal": "Healthcare (Basel)",
+   "doi": "10.3390/healthcare10091755",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
@@ -13943,6 +18245,23 @@
    "doi": "10.1111/psyp.14183",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:36371017": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Can transcranial photobiomodulation improve cognitive function? A systematic review of human studies.",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Ding",
+    "Chan"
+   ],
+   "year": 2023,
+   "yearAlt": 2022,
+   "journal": "Ageing Res Rev",
+   "doi": "10.1016/j.arr.2022.101786",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:36427887": {
    "kind": "pmid",
@@ -14018,6 +18337,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:36813265": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effects of a single and a series of Finnish sauna sessions on the immune response and HSP-70 levels in trained and untrained men.",
+   "firstAuthor": "Pilch",
+   "authors": [
+    "Pilch",
+    "Szarek",
+    "Olga",
+    "Anna",
+    "Żychowska",
+    "Ewa",
+    "Andraščíková Š",
+    "Pałka"
+   ],
+   "year": 2023,
+   "journal": "Int J Hyperthermia",
+   "doi": "10.1080/02656736.2023.2179672",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:36871835": {
    "kind": "pmid",
    "valid": true,
@@ -14055,6 +18395,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:36981504": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Effect of Cognitive Training with Neurofeedback on Cognitive Function in Healthy Adults: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Matsuzaki",
+   "authors": [
+    "Matsuzaki",
+    "Nouchi",
+    "Sakaki",
+    "Dinet",
+    "Kawashima"
+   ],
+   "year": 2023,
+   "journal": "Healthcare (Basel)",
+   "doi": "10.3390/healthcare11060843",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:37030995": {
    "kind": "pmid",
    "valid": true,
@@ -14071,6 +18429,24 @@
    "doi": "10.1016/j.ejim.2023.03.025",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:37060440": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of hyperventilation on oxygenation, apnea breaking points, diving response, and spleen contraction during serial static apneas.",
+   "firstAuthor": "Pernett",
+   "authors": [
+    "Pernett",
+    "Bergenhed",
+    "Holmström",
+    "Mulder",
+    "Schagatay"
+   ],
+   "year": 2023,
+   "journal": "Eur J Appl Physiol",
+   "doi": "10.1007/s00421-023-05202-7",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:37205669": {
    "kind": "pmid",
@@ -14121,6 +18497,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:37398966": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A post-exercise infrared sauna session improves recovery of neuromuscular performance and muscle soreness after resistance exercise training.",
+   "firstAuthor": "Ahokas",
+   "authors": [
+    "Ahokas",
+    "Ihalainen",
+    "Hanstock",
+    "Savolainen",
+    "Kyröläinen"
+   ],
+   "year": 2023,
+   "yearAlt": 2022,
+   "journal": "Biol Sport",
+   "doi": "10.5114/biolsport.2023.119289",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:37436518": {
    "kind": "pmid",
    "valid": true,
@@ -14160,6 +18555,68 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:37845341": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effectiveness of the Wim Hof method on cardiac autonomic function, blood pressure, arterial compliance, and different psychological parameters.",
+   "firstAuthor": "Ketelhut",
+   "authors": [
+    "Ketelhut",
+    "Querciagrossa",
+    "Bisang",
+    "Metry",
+    "Borter",
+    "Nigg"
+   ],
+   "year": 2023,
+   "journal": "Sci Rep",
+   "doi": "10.1038/s41598-023-44902-0",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:37867476": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Acute nasal breathing lowers diastolic blood pressure and increases parasympathetic contributions to heart rate variability in young adults.",
+   "firstAuthor": "Watso",
+   "authors": [
+    "Watso",
+    "Cuba",
+    "Boutwell",
+    "Moss",
+    "Bowerfind",
+    "Fernandez",
+    "Cassette",
+    "May",
+    "Kirk"
+   ],
+   "year": 2023,
+   "journal": "Am J Physiol Regul Integr Comp Physiol",
+   "doi": "10.1152/ajpregu.00148.2023",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:37923236": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "High ventilation breathwork practices: An overview of their effects, mechanisms, and considerations for clinical applications.",
+   "firstAuthor": "Fincham",
+   "authors": [
+    "Fincham",
+    "Kartar",
+    "Uthaug",
+    "Anderson",
+    "Hall",
+    "Nagai",
+    "Critchley",
+    "Colasanti"
+   ],
+   "year": 2023,
+   "journal": "Neurosci Biobehav Rev",
+   "doi": "10.1016/j.neubiorev.2023.105453",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:37943791": {
    "kind": "pmid",
    "valid": true,
@@ -14179,6 +18636,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:38091317": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Improved sleep, cognitive processing and enhanced learning and memory task accuracy with Yoga nidra practice in novices.",
+   "firstAuthor": "Datta",
+   "authors": [
+    "Datta",
+    "Bhutambare",
+    "V L",
+    "Narawa",
+    "Srinath",
+    "Kanitkar"
+   ],
+   "year": 2023,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0294678",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:3812275": {
    "kind": "pmid",
    "valid": true,
@@ -14195,6 +18671,26 @@
    "doi": "10.1016/0002-9149(87)90795-8",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:38149978": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "State of the science and recommendations for using wearable technology in sleep and circadian research.",
+   "firstAuthor": "de Zambotti",
+   "authors": [
+    "de Zambotti",
+    "Goldstein",
+    "Cook",
+    "Menghini",
+    "Altini",
+    "Cheng",
+    "Robillard"
+   ],
+   "year": 2024,
+   "journal": "Sleep",
+   "doi": "10.1093/sleep/zsad325",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:38211547": {
    "kind": "pmid",
@@ -14241,6 +18737,23 @@
    "doi": "10.1177/27536351241227261",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:38336799": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Nose vs. mouth breathing- acute effect of different breathing regimens on muscular endurance.",
+   "firstAuthor": "Lörinczi",
+   "authors": [
+    "Lörinczi",
+    "Vanderka",
+    "Lörincziová",
+    "Kushkestani"
+   ],
+   "year": 2024,
+   "journal": "BMC Sports Sci Med Rehabil",
+   "doi": "10.1186/s13102-024-00840-6",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:38355154": {
    "kind": "pmid",
@@ -14293,6 +18806,74 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:38408360": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Management of Posttraumatic Stress Disorder and Acute Stress Disorder: Synopsis of the 2023 U.S. Department of Veterans Affairs and U.S. Department of Defense Clinical Practice Guideline.",
+   "firstAuthor": "Schnurr",
+   "authors": [
+    "Schnurr",
+    "Hamblen",
+    "Wolf",
+    "Coller",
+    "Collie",
+    "Fuller",
+    "Holtzheimer",
+    "Kelly",
+    "Lang",
+    "McGraw",
+    "Morganstein",
+    "Norman",
+    "Papke",
+    "Petrakis",
+    "Riggs",
+    "Sall",
+    "Shiner",
+    "Wiechers",
+    "Kelber"
+   ],
+   "year": 2024,
+   "journal": "Ann Intern Med",
+   "doi": "10.7326/M23-2757",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:38478473": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Does the Wim Hof Method have a beneficial impact on physiological and psychological outcomes in healthy and non-healthy participants? A systematic review.",
+   "firstAuthor": "Almahayni",
+   "authors": [
+    "Almahayni",
+    "Hammond"
+   ],
+   "year": 2024,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0286933",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:38484438": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Yoga Nidra for hypertension: A systematic review and meta-analysis.",
+   "firstAuthor": "Ahuja",
+   "authors": [
+    "Ahuja",
+    "Bhardwaj",
+    "Pathania",
+    "Sethi",
+    "Kumar",
+    "Parchani",
+    "Chandel",
+    "Phadke"
+   ],
+   "year": 2024,
+   "journal": "J Ayurveda Integr Med",
+   "doi": "10.1016/j.jaim.2023.100882",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:38663342": {
    "kind": "pmid",
    "valid": true,
@@ -14333,6 +18914,42 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:38953770": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The acute effects of nonsleep deep rest on perceptual responses, physical, and cognitive performance in physically active participants.",
+   "firstAuthor": "Boukhris",
+   "authors": [
+    "Boukhris",
+    "Suppiah",
+    "Halson",
+    "Russell",
+    "Clarke",
+    "Geneau",
+    "Stutter",
+    "Driller"
+   ],
+   "year": 2024,
+   "journal": "Appl Psychol Health Well Being",
+   "doi": "10.1111/aphw.12571",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:39175400": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A Review of Hyperventilation Activation in Diagnosis and Management of Childhood Absence Epilepsy.",
+   "firstAuthor": "Rao",
+   "authors": [
+    "Rao",
+    "Kuperman"
+   ],
+   "year": 2024,
+   "journal": "J Child Neurol",
+   "doi": "10.1177/08830738241273347",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:39290618": {
    "kind": "pmid",
    "valid": true,
@@ -14352,6 +18969,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:39409260": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Validity of Apple Watch Series 9 and Ultra 2 for Serial Measurements of Heart Rate Variability and Resting Heart Rate.",
+   "firstAuthor": "O'Grady",
+   "authors": [
+    "O'Grady",
+    "Lambe",
+    "Baldwin",
+    "Acheson",
+    "Doherty"
+   ],
+   "year": 2024,
+   "journal": "Sensors (Basel)",
+   "doi": "10.3390/s24196220",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:39491426": {
    "kind": "pmid",
    "valid": true,
@@ -14370,6 +19005,187 @@
    "doi": "10.1016/j.concog.2023.103590",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:39568666": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Neurofeedback to enhance sleep quality and insomnia: a systematic review and meta-analysis of randomized clinical trials.",
+   "firstAuthor": "Recio-Rodriguez",
+   "authors": [
+    "Recio-Rodriguez",
+    "Fernandez-Crespo",
+    "Sanchez-Aguadero",
+    "Gonzalez-Sanchez",
+    "Garcia-Yu",
+    "Alonso-Dominguez",
+    "Chiu",
+    "Tsai",
+    "Lee",
+    "Rihuete-Galve"
+   ],
+   "year": 2024,
+   "journal": "Front Neurosci",
+   "doi": "10.3389/fnins.2024.1450163",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:39606690": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A randomized controlled clinical trial of a Wim Hof Method intervention in women with high depressive symptoms.",
+   "firstAuthor": "Blades",
+   "authors": [
+    "Blades",
+    "Mendes",
+    "Don",
+    "Mayer",
+    "Dileo",
+    "O'Bryan",
+    "Fromer",
+    "Guan",
+    "Cheng",
+    "Mason",
+    "Prather",
+    "Epel"
+   ],
+   "year": 2024,
+   "journal": "Compr Psychoneuroendocrinol",
+   "doi": "10.1016/j.cpnec.2024.100272",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:39661381": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Neurofeedback for Attention-Deficit/Hyperactivity Disorder: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Westwood",
+   "authors": [
+    "Westwood",
+    "Aggensteiner",
+    "Kaiser",
+    "Nagy",
+    "Donno",
+    "Merkl",
+    "Balia",
+    "Goujon",
+    "Bousquet",
+    "Capodiferro",
+    "Derks",
+    "Purper-Ouakil",
+    "Carucci",
+    "Holtmann",
+    "Brandeis",
+    "Cortese",
+    "Sonuga-Barke"
+   ],
+   "year": 2025,
+   "journal": "JAMA Psychiatry",
+   "doi": "10.1001/jamapsychiatry.2024.3702",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:39662104": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Nocturnal mouth-taping and social media: A scoping review of the evidence.",
+   "firstAuthor": "Fangmeyer",
+   "authors": [
+    "Fangmeyer",
+    "Badger",
+    "Thakkar"
+   ],
+   "year": 2025,
+   "yearAlt": 2024,
+   "journal": "Am J Otolaryngol",
+   "doi": "10.1016/j.amjoto.2024.104545",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:39685636": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Non-Sleep Deep Rest Relaxation and Virtual Reality Therapy for Psychological Outcomes in Patients with Coronary Artery Disease: A Pilot Randomized Controlled Trial.",
+   "firstAuthor": "Wrzeciono",
+   "authors": [
+    "Wrzeciono",
+    "Cieślik",
+    "Kiper",
+    "Szczepańska-Gieracha",
+    "Gajda"
+   ],
+   "year": 2024,
+   "journal": "J Clin Med",
+   "doi": "10.3390/jcm13237178",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:39690521": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Key Components of Trauma-Informed Yoga Nidra.",
+   "firstAuthor": "Luu",
+   "authors": [
+    "Luu"
+   ],
+   "year": 2024,
+   "journal": "Int J Yoga Therap",
+   "doi": "10.17761/2024-D-24-00021",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:39768041": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Augmentation of Deficient Bone Healing by Pulsed Electromagnetic Fields-From Mechanisms to Clinical Outcomes.",
+   "firstAuthor": "Kaadan",
+   "authors": [
+    "Kaadan",
+    "Salati",
+    "Setti",
+    "Aaron"
+   ],
+   "year": 2024,
+   "journal": "Bioengineering (Basel)",
+   "doi": "10.3390/bioengineering11121223",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:39879231": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of cold-water immersion on health and wellbeing: A systematic review and meta-analysis.",
+   "firstAuthor": "Cain",
+   "authors": [
+    "Cain",
+    "Brinsley",
+    "Bennett",
+    "Nelson",
+    "Maher",
+    "Singh"
+   ],
+   "year": 2025,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0317615",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
+  "pmid:39996950": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Photobiomodulation LED Devices for Home Use: Design, Function and Potential: A Pilot Study.",
+   "firstAuthor": "Cronshaw",
+   "authors": [
+    "Cronshaw",
+    "Parker",
+    "Hamadah",
+    "Arnabat-Dominguez",
+    "Grootveld"
+   ],
+   "year": 2025,
+   "journal": "Dent J (Basel)",
+   "doi": "10.3390/dj13020076",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:40149675": {
    "kind": "pmid",
@@ -14409,6 +19225,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:40332494": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Comparison of thermoregulatory, cardiovascular, and immune responses to different passive heat therapy modalities.",
+   "firstAuthor": "Atencio",
+   "authors": [
+    "Atencio",
+    "Reed",
+    "Wiedenfeld Needham",
+    "Lucernoni",
+    "Comrada",
+    "Halliwill",
+    "Minson"
+   ],
+   "year": 2025,
+   "journal": "Am J Physiol Regul Integr Comp Physiol",
+   "doi": "10.1152/ajpregu.00012.2025",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:40362779": {
    "kind": "pmid",
    "valid": true,
@@ -14427,6 +19263,40 @@
    "doi": "10.3390/nu17091470",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:40373021": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Effects of an Online Yoga Nidra Meditation on Subjective Well-Being and Diurnal Salivary Cortisol: A Randomised Controlled Trial.",
+   "firstAuthor": "Moszeik",
+   "authors": [
+    "Moszeik",
+    "Rohleder",
+    "Renner"
+   ],
+   "year": 2025,
+   "journal": "Stress Health",
+   "doi": "10.1002/smi.70049",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:40397877": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Breaking social media fads and uncovering the safety and efficacy of mouth taping in patients with mouth breathing, sleep disordered breathing, or obstructive sleep apnea: A systematic review.",
+   "firstAuthor": "Rhee",
+   "authors": [
+    "Rhee",
+    "Iansavitchene",
+    "Mannala",
+    "Graham",
+    "Rotenberg"
+   ],
+   "year": 2025,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0323643",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
   },
   "pmid:40735382": {
    "kind": "pmid",
@@ -14468,6 +19338,40 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:40834291": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Validation of nocturnal resting heart rate and heart rate variability in consumer wearables.",
+   "firstAuthor": "Dial",
+   "authors": [
+    "Dial",
+    "Hollander",
+    "Vatne",
+    "Emerson",
+    "Edwards",
+    "Hagen"
+   ],
+   "year": 2025,
+   "journal": "Physiol Rep",
+   "doi": "10.14814/phy2.70527",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
+  "pmid:40840566": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Yoga Nidra for cardiovascular health: a systematic review and meta-analysis of between- and within-group effects.",
+   "firstAuthor": "Ghai",
+   "authors": [
+    "Ghai",
+    "Ghai"
+   ],
+   "year": 2025,
+   "journal": "Complement Ther Med",
+   "doi": "10.1016/j.ctim.2025.103231",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:40895095": {
    "kind": "pmid",
    "valid": true,
@@ -14486,6 +19390,53 @@
    "doi": "10.3389/fneur.2025.1556784",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41032498": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Methodological issues in visible LED therapy dermatological research and reporting.",
+   "firstAuthor": "Grimes",
+   "authors": [
+    "Grimes"
+   ],
+   "year": 2025,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0332995",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:41144325": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of Yoga Nidra in Managing Sleep Disorders: A Systematic Review of Randomized Controlled Trials.",
+   "firstAuthor": "Dutta",
+   "authors": [
+    "Dutta",
+    "Mooventhan",
+    "Nivethitha",
+    "Dharani"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "J Integr Complement Med",
+   "doi": "10.1177/27683605251390728",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:41187098": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Yoga Nidra and Pain: A between-, within-Group Meta-Analysis and Dose Response Meta-Regression.",
+   "firstAuthor": "Ghai",
+   "authors": [
+    "Ghai",
+    "Ghai"
+   ],
+   "year": 2025,
+   "journal": "Complement Med Res",
+   "doi": "10.1159/000549416",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:41310318": {
    "kind": "pmid",
@@ -14506,6 +19457,42 @@
    "doi": "10.1007/s10484-025-09750-w",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41327816": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of Yoga Nidra on Stress, Anxiety, and Depression: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Ghai",
+   "authors": [
+    "Ghai",
+    "Odyniec",
+    "Ghai"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "Ann N Y Acad Sci",
+   "doi": "10.1111/nyas.70149",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:41399178": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Contextual equivalence for accurate comparison of wearables requires transparency.",
+   "firstAuthor": "Dial",
+   "authors": [
+    "Dial",
+    "Hollander",
+    "Vatne",
+    "Emerson",
+    "Edwards",
+    "Hagen"
+   ],
+   "year": 2025,
+   "journal": "Physiol Rep",
+   "doi": "10.14814/phy2.70706",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:41410046": {
    "kind": "pmid",
@@ -14572,6 +19559,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:41513748": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The accuracy of Apple Watch measurements: a living systematic review and meta-analysis.",
+   "firstAuthor": "Lambe",
+   "authors": [
+    "Lambe",
+    "Baldwin",
+    "O'Grady",
+    "Schumann",
+    "Caulfield",
+    "Doherty"
+   ],
+   "year": 2026,
+   "journal": "NPJ Digit Med",
+   "doi": "10.1038/s41746-025-02238-1",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:41516438": {
    "kind": "pmid",
    "valid": true,
@@ -14606,6 +19612,66 @@
    "doi": "10.3389/fphys.2025.1696346",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41627302": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart Rate Variability-Guided Exercise Training Compared With Standard Exercise Training in Patients With Coronary Artery Disease: A RANDOMIZED CLINICAL TRIAL.",
+   "firstAuthor": "Besnier",
+   "authors": [
+    "Besnier",
+    "Gayda",
+    "Magnan",
+    "Iglesies-Grau",
+    "Bouvard",
+    "Martin",
+    "Clavet",
+    "Duclos",
+    "Nigam",
+    "Juneau",
+    "L'Allier",
+    "Bherer"
+   ],
+   "year": 2026,
+   "journal": "J Cardiopulm Rehabil Prev",
+   "doi": "10.1097/HCR.0000000000001017",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
+  "pmid:41743305": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Comparing the Effects of Yoga Nidra and Body Scan Meditation on Pain Outcomes.",
+   "firstAuthor": "Gibbs",
+   "authors": [
+    "Gibbs",
+    "Hanney",
+    "Anderson"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Int J Yoga",
+   "doi": "10.4103/ijoy.ijoy_2_25",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
+  "pmid:41755264": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Disconnection Between Self-Reported Wellbeing and Heart Rate Variability from Wearables.",
+   "firstAuthor": "Ungaro",
+   "authors": [
+    "Ungaro",
+    "Wolfe",
+    "Isaacs",
+    "De Chavez",
+    "Freese"
+   ],
+   "year": 2026,
+   "journal": "Sensors (Basel)",
+   "doi": "10.3390/s26041325",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:41760347": {
    "kind": "pmid",
@@ -14778,6 +19844,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:41930853": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effect of the Buteyko breathing technique on asthma control and quality of life: a systematic review and meta-analysis of Randomized Controlled Trials.",
+   "firstAuthor": "Wu",
+   "authors": [
+    "Wu",
+    "Zhang",
+    "Huang"
+   ],
+   "year": 2026,
+   "journal": "Explore (NY)",
+   "doi": "10.1016/j.explore.2026.103414",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:42043659": {
    "kind": "pmid",
    "valid": true,
@@ -14837,6 +19919,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:42275859": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Validity of the Polar H10 for heart rate variability and cardiac autonomic reflex tests.",
+   "firstAuthor": "Blalock",
+   "authors": [
+    "Blalock",
+    "Riemann",
+    "Flatt"
+   ],
+   "year": 2026,
+   "journal": "Auton Neurosci",
+   "doi": "10.1016/j.autneu.2026.103447",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:42325329": {
    "kind": "pmid",
    "valid": true,
@@ -14855,6 +19953,24 @@
    "doi": "10.3389/fpsyg.2026.1792917",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:42383502": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Time course of perceptual, cognitive, physical and physiological responses to a single non-sleep deep rest session in physically active young adults.",
+   "firstAuthor": "Boukhris",
+   "authors": [
+    "Boukhris",
+    "Suppiah",
+    "Kerkeni",
+    "Holt",
+    "Driller"
+   ],
+   "year": 2026,
+   "journal": "Appl Psychol Health Well Being",
+   "doi": "10.1111/aphw.70180",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:42467418": {
    "kind": "pmid",
@@ -14933,6 +20049,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:42532024": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Beyond hypothermia: mechanisms of death, rescue, and prevention in cold water immersion.",
+   "firstAuthor": "Leuci",
+   "authors": [
+    "Leuci",
+    "Melau",
+    "Messina",
+    "Tipton",
+    "Carenzo"
+   ],
+   "year": 2026,
+   "journal": "J Appl Physiol (1985)",
+   "doi": "10.1152/japplphysiol.00578.2026",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:42655500": {
    "kind": "pmid",
    "valid": true,
@@ -14951,6 +20085,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:42662994": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Impact of Nasal Obstruction and Mouth Taping on Sleep Apnea Indicators: Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Alshehri",
+   "authors": [
+    "Alshehri",
+    "Alsaif",
+    "Abdulrazaq",
+    "Jabor",
+    "Al-Sayed"
+   ],
+   "year": 2026,
+   "journal": "OTO Open",
+   "doi": "10.1002/oto2.70294",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:42771122": {
    "kind": "pmid",
    "valid": true,
@@ -14967,6 +20119,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:42783005": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Comparing the Effects of a Short Nap and Non-Sleep Deep Rest on Perceptual, Cognitive, and Physical Performance in Active Adults.",
+   "firstAuthor": "Boukhris",
+   "authors": [
+    "Boukhris",
+    "Suppiah",
+    "Driller"
+   ],
+   "year": 2026,
+   "journal": "Clocks Sleep",
+   "doi": "10.3390/clockssleep8030052",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
+  },
   "pmid:6013341": {
    "kind": "pmid",
    "valid": true,
@@ -14981,6 +20149,24 @@
    "doi": "10.1111/j.1440-1819.1966.tb02646.x",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:6140442": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cyclical variation of the heart rate in sleep apnoea syndrome. Mechanisms, and usefulness of 24 h electrocardiography as a screening technique.",
+   "firstAuthor": "Guilleminault",
+   "authors": [
+    "Guilleminault",
+    "Connolly",
+    "Winkle",
+    "Melvin",
+    "Tilkian"
+   ],
+   "year": 1984,
+   "journal": "Lancet",
+   "doi": "10.1016/s0140-6736(84)90062-x",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:7164002": {
    "kind": "pmid",
@@ -15031,6 +20217,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:7560081": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sympathetic neural mechanisms in obstructive sleep apnea.",
+   "firstAuthor": "Somers",
+   "authors": [
+    "Somers",
+    "Dyken",
+    "Clary",
+    "Abboud"
+   ],
+   "year": 1995,
+   "journal": "J Clin Invest",
+   "doi": "10.1172/JCI118235",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:7585069": {
    "kind": "pmid",
    "valid": true,
@@ -15052,6 +20255,23 @@
    "doi": "10.1038/nm0495-370",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:7701171": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "[Electrolyte changes during and after voluntary hyperventilation].",
+   "firstAuthor": "Stadler",
+   "authors": [
+    "Stadler",
+    "Steurer",
+    "Dür",
+    "Binswanger",
+    "Vetter"
+   ],
+   "year": 1995,
+   "journal": "Praxis (Bern 1994)",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   },
   "pmid:7984236": {
    "kind": "pmid",
@@ -15217,6 +20437,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:9415946": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sleep loss results in an elevation of cortisol levels the next evening.",
+   "firstAuthor": "Leproult",
+   "authors": [
+    "Leproult",
+    "Copinschi",
+    "Buxton",
+    "Van Cauter"
+   ],
+   "year": 1997,
+   "journal": "Sleep",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-06"
+  },
   "pmid:9416776": {
    "kind": "pmid",
    "valid": true,
@@ -15284,6 +20520,25 @@
    "doi": "10.1016/s0165-0173(98)00019-8",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:9950067": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A 15O-H2O PET study of meditation and the resting state of normal consciousness.",
+   "firstAuthor": "Lou",
+   "authors": [
+    "Lou",
+    "Kjaer",
+    "Friberg",
+    "Wildschiodtz",
+    "Holm",
+    "Nowak"
+   ],
+   "year": 1999,
+   "journal": "Hum Brain Mapp",
+   "doi": "10.1002/(SICI)1097-0193(1999)7:2&#x0003c;98::AID-HBM3&#x0003e;3.0.CO;2-M",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-07"
   }
  }
 }

@@ -1,142 +1,118 @@
 import type { Article } from './types'
 
 /**
- * The Adrenal Governor: Protecting the System from Thermal Runaway
- * ID: power_mgmt_10
- * SEO: adrenal fatigue cortisol precision, HRV stress limiter protocol, endocrine architecture biohacking, cortisol receptor desensitization, adrenal health optimization.
+ * Adrenal Fatigue: What the Evidence Says
+ * (slug kept from the former "Adrenal Governor" metaphor article — URL unchanged.)
+ * Targets the "adrenal fatigue" search intent with an honest answer: not a recognised
+ * condition (Cadegiani & Kater 2016), the real adrenal diseases (Endocrine Society
+ * guidelines), why "adrenal tests" mislead, red flags, and what helps exhaustion.
+ * Follows content/science/concepts/cortisol-and-stress-response.md.
  */
 const article: Article = {
   slug: 'adrenal-governor-thermal-runaway',
-  title: 'The Adrenal Governor: Protecting the System from Thermal Runaway',
-  subtitle: 'Limiter Active — Cortisol Precision Architecture, HRV-Based Load Thresholding, and the Anticipatory Reset Protocol for Endocrine Longevity',
-  seoTitle: 'Adrenal Governor: Cortisol Precision Protocol | ONDA Life',
+  title: 'Adrenal Fatigue: What the Evidence Says',
+  seoTitle: 'Adrenal Fatigue: Is It Real? What the Evidence Says | ONDA Life',
   description:
-    'The adrenals are fuel injectors for cortisol and adrenaline — the problem is the brain keeps its foot on the gas. The ONDA Adrenal Governor uses HRV thresholding, Alpha-buffering, and anticipatory reset to filter stress signals before they reach the Redline and exhaust the endocrine system.',
+    'Adrenal fatigue is not a recognised medical condition. Why the tiredness is still real, which adrenal diseases do exist, and when to see a doctor.',
   category: 'Biological Software',
-  relatedSlugs: [
-    'cortisol',
-    'heart-rate-variability',
-    'stress',
-    'alpha-waves',
-    'inflammation',
-    'burnout',
-    'vagus-nerve',
-    'sleep',
-    'hpa-axis',
-  ],
+  relatedSlugs: ['cortisol', 'hpa-axis', 'stress', 'burnout', 'sleep', 'heart-rate-variability'],
   introStyle: 'amber',
   image: '/images/articles/adrenal-governor-thermal-runaway.webp',
   imageAlt:
-    'Sci-fi mechanical adrenal gland rendered as a precision fuel injector with ADRENAL_GOVERNOR engraved on its body. Purple-blue neural streams feed into the device from the left; cyan injection output exits right. Labels: NEURAL_STREAM, DEEP-SAPPHIRE, INJECTION_PORT, ADRENAL_GOVERNOR, GOVERNOR_CONTROL. ONDA Life endocrine architecture cortisol limiter visualization.',
-  imageTitle:
-    '[ ADRENAL_GOVERNOR_FUEL_INJECTION ] — Neural stream input. Governor control active. Injection port: regulated. Thermal runaway: blocked.',
-  imageCaption:
-    '[ ADRENAL_GOVERNOR: ACTIVE ] [ GOVERNOR_CONTROL: ENGAGED ] — Neural signal intercepted. Injection authorized only for verified threat. Redline blocked.',
+    'Stylised illustration of an adrenal gland, used for an article on whether adrenal fatigue is real and what the evidence says about cortisol, exhaustion and real adrenal diseases.',
+  imageTitle: 'Adrenal fatigue: what the evidence says about tiredness, cortisol and the adrenal glands.',
+  imageCaption: 'Exhaustion is real; "adrenal fatigue" as a diagnosis is not supported by the evidence.',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'Governor calibrated. The Alpha state that buffers cortisol is built on a coherent 0.1 Hz foundation — entrainment is what keeps the limiter running continuously.',
-    link: '/articles/rhythmic-entrainment-system-frequencies',
-    linkText: 'Rhythmic Entrainment: 0.1 Hz System Coherence',
+    text: 'Find out if your stress load is tipping into burnout — and what to do first.',
+    link: '/tools/burnout',
+    linkText: 'Burnout Self-Assessment →',
   },
   content: `
-## [ THE INJECTION SYSTEM ]
-
-> "In high-performance engines, a 'governor' monitors the RPMs to ensure the motor doesn't explode. Your adrenals are the injectors for adrenaline and cortisol. The problem isn't that they 'fatigue'; it's that the brain (Beta-mode) constantly keeps its foot on the gas pedal, forcing the injectors to spray expensive fuel into a vacuum.
->
-> The Adrenal Governor is a neural overlay that intercepts the stress signal and filters it. It determines: is this situation a **'mortal threat'** (injection required) or simply **'informational noise'** (injection blocked)?"
-
-The adrenal glands are not the problem — they are executing commands correctly. The problem is the source of the commands. In a state of chronic Beta-mode neural activity, the prefrontal cortex-amygdala-HPA axis loop generates a nearly continuous low-level threat signal. The adrenals respond faithfully: they inject. But there is no corresponding expenditure — no running, fighting, or physical recovery — so the cortisol and adrenaline accumulate in circulation, driving receptor downregulation, inflammatory load, and metabolic disruption. The ONDA Governor intercepts the signal, not the gland.
+Adrenal fatigue is not a recognised medical condition. The idea is that long-term stress "wears out" the adrenal glands until they can no longer make enough cortisol — but a systematic review of 58 studies found no consistent evidence that this happens, and concluded that adrenal fatigue does not exist (Cadegiani & Kater 2016). The exhaustion people describe is real, though. It deserves a proper medical look, because real adrenal diseases exist and so do many other causes of fatigue — and a label that doesn't hold up can delay finding them.
 
 ---
 
-## When is cortisol healthy and when is it chronic stress?
+## What is "adrenal fatigue" supposed to be?
 
-Cortisol is essential at baseline and useful in short performance spikes, but becomes a problem as chronic stress (Redline). Power management in ONDA is divided into three distinct operating zones — defined by the relationship between cortisol output, neural state, and the load the output is actually serving:
+The theory says chronic stress makes the adrenal glands produce cortisol non-stop until they become "exhausted", leaving you tired, foggy, craving salt or sugar and dependent on caffeine. It is popular in alternative medicine and often comes with saliva-test panels, "adrenal support" supplements and staged protocols.
 
-**Baseline:** The minimum cortisol level required to maintain metabolism, immune surveillance, circadian timing, and alertness. Cortisol is not a "bad" hormone — at baseline, it is essential. Operating in the Alpha rhythm fits precisely within this range: Alpha state correlates with cortisol levels sufficient for metabolic function but below the threshold at which neuroinflammation, receptor desensitization, and hippocampal damage occur. Baseline is sustainable indefinitely.
-
-**Performance Spiking:** A short-term cortisol and adrenaline burst to solve a complex task, handle a genuine deadline, perform athletically, or manage an acute stressor. The system heats up — [HRV](/science/concepts/heart-rate-variability) drops, sympathetic tone rises, focus narrows — but cools down rapidly when the task resolves. This is the system working as designed: stress as a targeted tool, not a background state. The Governor allows Performance Spikes; it monitors their duration and ensures recovery follows.
-
-**Redline (Critical Zone):** Chronic stress — continuous or near-continuous HPA axis activation without adequate recovery intervals. In Redline, cortisol is secreted not in response to specific challenges but as a default background state, driven by Beta-mode neural entrainment and the absence of parasympathetic recovery windows. The consequences are measurable and cumulative: hippocampal volume reduction, prefrontal cortex thinning, amygdala hyperreactivity, receptor desensitization, and progressive immune dysfunction. The Governor is explicitly programmed to block entry into this zone — or to detect entry and force exit.
+The problem is the core claim: that healthy adrenal glands run out of capacity under ordinary life stress. When researchers looked for it, they didn't find it.
 
 ---
 
-## What happens to your body under chronic stress?
+## What does the evidence say?
 
-Under chronic stress, receptors stop responding to cortisol at normal levels, the adrenals fire at non-threats, and you end up anxious but unable to focus. Without an active limiter, the endocrine system enters Thermal Runaway — the same self-amplifying failure cascade described in the Quiet Mode article, now viewed from the hormonal substrate:
+| Question | What the research shows |
+|---|---|
+| Do stressed or tired people have "exhausted" adrenals? | No consistent evidence; a systematic review of 58 studies concluded adrenal fatigue does not exist (Cadegiani & Kater 2016) |
+| Are there real adrenal diseases? | Yes — adrenal insufficiency and Cushing's syndrome, diagnosed with specific tests (Endocrine Society guidelines: Bornstein 2016, Nieman 2008) |
+| Can one cortisol reading show adrenal "burnout"? | No — cortisol rises sharply after waking and falls towards evening, so a single value means little without the time of day (Stalder 2016) |
+| Does stress affect cortisol at all? | Yes — sleep loss, for example, raises evening cortisol the next day (Leproult 1997); that is a normal response, not gland failure |
 
-**Signal Desensitization:** Receptors stop responding to cortisol at normal concentrations. The HPA axis compensates by increasing output. Basal cortisol rises. The system now requires elevated cortisol just to feel normal — and even higher cortisol to produce the performance spike it previously achieved at lower levels. The classic adrenal exhaustion trajectory is not the glands "running out" of cortisol; it is the progressive receptor downregulation that makes the existing cortisol output increasingly ineffective.
-
-**Leaking Injectors:** The adrenals begin to "leak" — firing micro-doses of adrenaline in response to inputs that carry no genuine threat content: a phone notification, an unread email, an ambient social media scroll. This is the sympathetic nervous system's threat threshold recalibrated downward by chronic high Beta, until the amygdala is flagging ordinary informational events as requiring emergency hormonal response. The physical experience is the ambient anxiety of modern knowledge work — not caused by any specific stressor, but by an endocrine system running its emergency protocol on non-emergency inputs.
-
-**System Brownout:** A state where arousal is high (anxiety, restlessness, inability to switch off) but useful cognitive output is low (inability to focus, make decisions, or sustain deep work). This is the hallmark of late-stage Redline operation: the cortisol and adrenaline are present, but so is the receptor desensitization — high fuel in the tank, but the engine can no longer efficiently burn it. The subjective experience is "wired but tired" — a condition that does not resolve with more rest alone, because the Governor itself needs to be recalibrated.
-
----
-
-## How can you keep stress hormones from running away?
-
-Three techniques keep stress hormones in check — HRV thresholding, daily Alpha-state breathing sessions, and an anticipatory reset before predictable stress:
-
-### Technique 1: HRV Thresholding (Load Indicator Monitoring)
-
-> **Action:** Track morning HRV daily (first reading after waking, supine, before coffee or screens). Establish your personal baseline over about 14 days (at least 7 readings). Define a personal threshold — approximately 15–20% below your rolling average — as the "Governor Alert" level. When HRV drops below threshold, treat that day as a Quiet Mode day: no high-intensity training, no extended cognitive overload sessions, active parasympathetic recovery prioritized.
-
-**Logic:** HRV is shaped by both sympathetic (cortisol, adrenaline-driven) and parasympathetic (vagus-driven) activity, but it is not a direct readout of the "balance" between them — no single HRV number measures that ([why](/science/concepts/autonomic-nervous-system)). A drop below personal baseline HRV is the physiological signature of excessive recent load — the adrenal-cardiac-neural system reporting that it has been operating near Redline and recovery is required. Using HRV as a load indicator turns a subjective "I feel fine / I feel burned out" self-assessment into a concrete number, which makes it much harder to override recovery needs through willpower or caffeine. The Governor operates on data, not on motivation.
-
-### Technique 2: The Alpha-Buffer (Chemical Desensitization Prevention)
-
-> **Action:** Maintain a minimum of 2–3 Alpha-state sessions per day — morning (before screens), midday (between high-load periods), and pre-sleep. Minimum 3 minutes each. Use the ONDA Alpha-Drop protocol: 0.1 Hz breathing, eyes closed, slight forward tilt, no agenda.
-
-**Logic:** The Alpha state creates a chemical buffer against cortisol receptor desensitization via two mechanisms. First, Alpha dominance reduces basal HPA axis activity — the continuous low-level threat signal that drives tonic cortisol elevation. Less chronic cortisol exposure means slower receptor downregulation. Second, Alpha-associated parasympathetic tone drives glucocorticoid receptor upregulation in the hippocampus — restoring sensitivity to existing cortisol concentrations rather than requiring higher cortisol to achieve the same effect. The buffer is not metaphorical: it is a measurable change in receptor density and sensitivity maintained by regular Alpha-state access. Without it, Redline entry is gradual and invisible until the Brownout threshold is crossed.
-
-### Technique 3: Anticipatory Reset (Pre-Stress Limiter Setting)
-
-> **Action:** 3–5 minutes of 0.1 Hz resonance breathing immediately before any predictable high-load event: a difficult meeting, a high-stakes presentation, a competitive performance, a confrontational conversation. Do this in advance, not after. The goal is to pre-set the limiter — not to recover from a spike already in progress.
-
-**Logic:** The anticipatory reset works by establishing parasympathetic tone before the stressor arrives — pre-loading the Alpha-buffer rather than attempting to activate it while the cortisol spike is already in circulation. The baroreflex response to 0.1 Hz breathing takes 3–5 minutes to achieve maximum HRV coherence. Starting the reset after the stressor has arrived is too late to prevent the spike; starting it before allows the Governor to be in the engaged position when the amygdala's threat assessment begins. The result is not the absence of cortisol response — Performance Spiking is allowed and useful — but a modulated response that peaks lower and recovers faster, without breaching the Redline threshold.
+The review by Cadegiani & Kater searched the literature for studies that tested the adrenal function of people with fatigue or burnout. The results were contradictory, the methods were inconsistent, and no test reliably separated people labelled with "adrenal fatigue" from everyone else. A real disease would show a pattern; this didn't.
 
 ---
 
-## Impact Log: Resource Preservation
+## Which adrenal conditions are real?
 
-**Stable Energy:** An absence of "crashes" or afternoon energy slumps — the cortisol curve remains linear rather than exhibiting the sharp spike-and-crash pattern of unmanaged Redline operation. Stable energy is not the result of consuming more energy; it is the result of not wasting it on non-productive hormonal activation and the subsequent compensatory trough.
+Two groups of adrenal disease are well established, with clear definitions and diagnostic tests set out in Endocrine Society clinical guidelines:
 
-**Endocrine Longevity:** Your adrenals retain the ability to deliver a powerful, targeted cortisol and adrenaline pulse when it truly matters — in high-stakes athletic performance, genuine emergencies, or peak cognitive demand. Endocrine longevity is the preservation of response capacity through managed non-use: not spending Redline-level output on informational noise, so that maximum output is available when the situation genuinely requires it.
+**Adrenal insufficiency (including Addison's disease).** The adrenal glands — or the pituitary signal that drives them — genuinely fail to make enough cortisol. It is uncommon, can be life-threatening if missed, and is diagnosed with blood tests such as a morning cortisol and an ACTH stimulation test, not with a symptom questionnaire (Bornstein 2016).
 
-**Emotional Coolant:** The ability to maintain precise, composed decision-making in situations where others are operating from a compromised, cortisol-saturated prefrontal cortex. Emotional coolant is not suppression — it is the result of an amygdala whose threat threshold has not been pathologically lowered by chronic Redline operation. The Governor does not remove the capacity for strong emotional response; it reserves it for situations that warrant it.
+**Cushing's syndrome.** The opposite: long-term exposure to too much cortisol, most often from steroid medicines and more rarely from a tumour. Diagnosis needs specific tests such as late-night salivary cortisol, 24-hour urine cortisol or a dexamethasone suppression test, ordered and interpreted by a doctor (Nieman 2008).
 
-> [ ONDA_STATEMENT ]
-> "Your energy is not about how much you can burn, but how much you can retain. True power requires control. Be the engineer of your endocrine system, not its slave."
+Neither condition is "mild adrenal fatigue". They are distinct diseases, and the point of testing properly is to find or rule them out.
 
 ---
 
-## Recommended tools
+## Why do "adrenal fatigue" tests and supplements mislead?
 
-Cooling the adrenal runaway is a vagal-tone problem. The hardware adjuncts that help:
+[Cortisol](/glossary/cortisol) follows a daily rhythm: it peaks within the first hour after waking and falls to its lowest around bedtime (see [Cortisol and the stress response](/science/concepts/cortisol-and-stress-response)). It also shifts with sleep, illness, exercise and the exact time a sample is taken. So a single saliva or blood value — or a four-point saliva panel sold as an "adrenal stress test" — can look "low" or "high" for reasons that have nothing to do with gland failure.
 
-- [Apollo Neuro](/reviews/apollo-neuro) — passive vagal modulation through stress windows
-- [Pulsetto](/reviews/pulsetto) — cervical tVNS with stress and anxiety programmes
-- [Sensate](/reviews/sensate) — paired-soundscape evening reset
+That creates two risks:
 
-[Best Vagus Nerve Stimulators (2026) →](/reviews/vagus-nerve-stimulators)
+- **A missed diagnosis.** Fatigue has many real causes — anaemia, thyroid disease, sleep apnoea, depression, diabetes, infections, medication side effects, and the real adrenal diseases above. Treating it as adrenal fatigue can delay finding the actual problem.
+- **Unproven products.** "Adrenal support" supplements and protocols have no good evidence behind them for fatigue. Anything that contains steroid hormones is a medicine, not a supplement: taking steroids you don't need can suppress your own adrenal glands, and stopping them suddenly can be dangerous.
+
+---
+
+## Can a wearable or HRV show adrenal fatigue?
+
+No. Watches and rings do not measure cortisol or adrenal function. [HRV](/science/concepts/heart-rate-variability) (heart rate variability) reflects how your heart rhythm is shaped by the [autonomic nervous system](/science/concepts/autonomic-nervous-system), and it moves with sleep, alcohol, illness, training and stress. A low morning HRV can be a useful nudge to take it easier, but it is not an "adrenal indicator" and can't diagnose — or rule out — any adrenal condition.
+
+---
+
+## What helps if you're exhausted?
+
+Start with a check-up, then work on the basics that support the stress system:
+
+- **See a doctor first** to rule out the treatable causes above, with proper blood tests rather than an "adrenal panel".
+- **Protect sleep.** Sleep loss and stress hormones feed each other (Leproult 1997); a regular schedule of 7+ hours is the highest-yield lever.
+- **Lower the load where you can.** Fewer always-on inputs, earlier caffeine, less evening alcohol and real recovery days.
+- **Try calm practices if they help you.** Meditation lowered cortisol versus active controls in a meta-analysis of randomized trials (Pascoe 2017), and a small trial found lower salivary cortisol after 8 weeks of slow diaphragmatic breathing (Ma 2017). Evidence that breathing lowers cortisol is mixed and context-dependent, so treat it as support, not treatment. The [Breathing Pacer](/tools/breathing) is a simple way to practise.
+
+If constant wired-and-tired is your normal, it may be closer to burnout than to anything adrenal — the [Burnout Self-Assessment](/tools/burnout) and our guide on [how to lower cortisol](/articles/how-to-lower-cortisol) are good next steps.
+
+---
+
+## When should you see a doctor?
+
+See a doctor if you have persistent exhaustion that doesn't improve with rest, or any of these red flags:
+
+- Unexplained weight loss, loss of appetite, nausea or vomiting
+- Dizziness or fainting when you stand up, low blood pressure, or strong salt cravings
+- Darkening of the skin, especially in creases, scars or gums
+- Weight gain concentrated on the face, upper back and belly, wide purple stretch marks, easy bruising or muscle weakness
+- New or hard-to-control high blood pressure or blood sugar
+- Fatigue with low mood, loss of interest, or thoughts of self-harm — seek help promptly
+
+Sudden severe weakness, vomiting, abdominal pain or confusion — especially if you take steroids or have known adrenal disease — is an emergency.
+
+**If you take steroid medicines** (such as prednisolone or hydrocortisone tablets, or high-dose inhaled or injected steroids), don't stop or reduce them on your own — stopping suddenly can trigger a dangerous adrenal crisis. Talk to your prescriber first.
+
+This article is educational, not medical advice.
 `,
-  howToSteps: [
-    {
-      name: 'HRV Thresholding (Load Indicator Monitoring)',
-      text: 'Track morning HRV daily (supine, before coffee/screens). Establish 2–3 week personal baseline. Define Governor Alert threshold at 15–20% below rolling average. On threshold breach: engage Quiet Mode — no high-intensity training, no cognitive overload sessions, active parasympathetic recovery prioritized. The Governor operates on data, not motivation.',
-      protocolId: 'governor-hrv-thresholding',
-    },
-    {
-      name: 'Alpha-Buffer (Chemical Desensitization Prevention)',
-      text: 'Minimum 2–3 Alpha-state sessions per day (morning pre-screens, midday, pre-sleep). 3 minutes each: 0.1 Hz breathing, eyes closed, slight forward tilt, no agenda. Reduces basal HPA axis drive and upregulates glucocorticoid receptor density in the hippocampus — maintaining cortisol sensitivity without requiring higher output.',
-      protocolId: 'governor-alpha-buffer',
-    },
-    {
-      name: 'Anticipatory Reset (Pre-Stress Limiter Setting)',
-      text: '3–5 minutes of 0.1 Hz resonance breathing immediately BEFORE high-load events (meetings, presentations, competitions). Pre-loads parasympathetic tone before the stressor arrives. Modulates cortisol spike peak and accelerates recovery — without preventing the Performance Spike itself.',
-      protocolId: 'governor-anticipatory-reset',
-    },
-  ],
 }
 
 export default [article]

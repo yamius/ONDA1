@@ -1,9 +1,10 @@
 import type { Article } from './types'
 
 /**
- * Humming breath / Bhramari (bee breath). AEO reference article. Distinctive mechanism: vibration
- * in the larynx mechanically stimulates vagal fibers (direct route), on top of the long-exhale
- * effect — same proposed route as chanting/singing. FAQ in ARTICLE_FAQ. Practice, not treatment.
+ * Humming breath / Bhramari (bee breath). AEO reference article. Mechanism shown so far: slower
+ * breathing with a long exhale. Laryngeal vibration reaching vagal fibers is only a PROPOSED route
+ * (not shown beyond slow breathing; Ghati 2021 RCT: no BP advantage vs slow breathing). Aligned with
+ * /science/evidence/humming-and-chanting. FAQ in ARTICLE_FAQ. Practice, not treatment.
  */
 const article: Article = {
   slug: 'humming-breath-vagus',
@@ -20,7 +21,7 @@ const article: Article = {
   imageTitle: 'Humming Breath and the Vagus Nerve',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'Humming gives the vagus nerve a direct, mechanical nudge. Watch your heart rate settle as you hum.',
+    text: 'Humming slows your breathing and lengthens the exhale. Watch your heart rate settle as you hum.',
     link: '/tools',
     linkText: 'See it live →',
   },
@@ -40,11 +41,11 @@ Repeat for five to ten breaths, or a few minutes. Some people gently rest their 
 
 ## How is humming linked to the vagus nerve?
 
-Humming is thought to reach the vagus nerve through a more direct route that most breathing techniques lack — they reach it indirectly, through the pace of the breath: the vagus nerve has fibers running through the larynx and the muscles of the throat and soft palate. When you hum, chant or sing, the vibration is proposed to stimulate those fibers mechanically, on top of the long exhale. {{fact:claim.slowExhale}}.
+The anatomy is real: the vagus nerve supplies the larynx and the muscles of the throat and soft palate. Some researchers propose that when you hum, chant or sing, the vibration stimulates those fibers mechanically, on top of the long exhale. That is a hypothesis: no study has shown that the hum itself stimulates the vagus nerve beyond what slow breathing does. What humming clearly does is slow your breathing and lengthen the exhale. {{fact:claim.slowExhale}}.
 
-Indian clinical research supports this: randomized trials of Bhramari (the traditional name for humming breath) in hypertensive patients found significant reductions in blood pressure and heart rate, and studies in healthy adults found Bhramari raised vagally mediated [HRV](/science/concepts/heart-rate-variability) both immediately and after a few weeks of daily practice — meaning the benefit isn't only in the moment, it accumulates.
+The clinical evidence on Bhramari (the traditional name for humming breath) is thin. A systematic review found only a few early studies, none of them randomized, and rated their quality as very low. The one randomized trial we found, in people with high blood pressure, compared a single short session of Bhramari with slow breathing: humming did not lower blood pressure more than slow breathing did. A rise in vagally mediated [HRV](/science/concepts/heart-rate-variability) during humming is expected from the slower breathing alone; an added effect of the sound or vibration has not been shown. The full review is in [humming, chanting and Om: what the evidence shows](/science/evidence/humming-and-chanting).
 
-That's why humming shows up alongside [slow breathing](/science/evidence/slow-breathing) and cold-water exposure on nearly every list of vagus-nerve exercises. You get both effects at once: the extended exhale tips you toward "rest and digest," and the vibration is thought to give the vagus nerve a direct nudge. The result is a measurable calming shift — heart rate down, heart rate variability (HRV) up — often within a few breaths. For the full menu of methods, see [vagus nerve exercises](/articles/vagus-nerve-exercises). Chanting OM uses the same hum-plus-long-exhale mechanism, and it has brain-imaging work behind it — see [OM chanting and the brain](/articles/om-chanting-brain-vagus).
+That's why humming shows up alongside [slow breathing](/science/evidence/slow-breathing) and cold-water exposure on nearly every list of vagus-nerve exercises. The extended exhale slows your breathing, and the hum gives you a sound and a vibration to focus on; whether the vibration adds anything for the vagus nerve is unproven. The usual result is a calming shift during the practice — heart rate down, heart rate variability (HRV) up. For the full menu of methods, see [vagus nerve exercises](/articles/vagus-nerve-exercises). Chanting OM uses the same hum-plus-long-exhale pattern, and a small brain-imaging study has looked at it — see [OM chanting and the brain](/articles/om-chanting-brain-vagus).
 
 ## When should you use humming breath?
 
@@ -59,17 +60,17 @@ For a sudden panic spike where you can't make noise, a silent [physiological sig
 
 ## Humming vs other vagus-nerve techniques
 
-| Technique | How it hits the vagus | Best for |
+| Technique | How it works | Best for |
 |---|---|---|
-| **Humming (Bhramari)** | Vibration in larynx + long exhale | Calm with a sensory anchor |
+| **Humming (Bhramari)** | Slow breathing with a long exhale; a vibration route to the vagus is proposed | Calm with a sensory anchor |
 | **Slow / coherent breathing** | Long exhales, ~5–6 breaths/min | Sustained calm, raising HRV |
-| **Cold water on the face** | Dive reflex | A fast, sharp vagal reset |
+| **Cold water on the face** | Dive reflex | A fast circuit-breaker when you're spiked |
 
-Humming is unique in giving you a *mechanical* route to the vagus nerve, not just a paced one — which is why it feels distinctly soothing to many people.
+What sets humming apart is the sound and the vibration you can feel, which many people find soothing and easy to focus on. A separate *mechanical* route to the vagus nerve has been proposed but not shown.
 
 ## See it work
 
-Because humming produces a genuine autonomic shift, you can watch it. ONDA reads your pulse from your phone camera or Apple Watch and shows your heart rate settle as you hum through long exhales; with an Apple Watch you also see your HRV climb. Seeing it in your own numbers confirms the vibration and the slow exhale are doing their job — and helps you find the exhale length and pitch that calm *you* most.
+Because humming slows your breathing, you can watch how your body responds. ONDA reads your pulse from your phone camera or Apple Watch and shows your heart rate as you hum through long exhales; with an Apple Watch you also see your HRV. Your own numbers show how you respond to the slower breathing — and help you find the exhale length and pitch that calm *you* most.
 `,
   howToSteps: [
     {

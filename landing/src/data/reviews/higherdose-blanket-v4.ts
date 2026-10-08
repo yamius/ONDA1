@@ -55,7 +55,7 @@ Choose HigherDose Blanket if portability and accessible price matter more than s
 
 ## Background reading
 
-The biology of why heat exposure works — and the protocols that compound with the hardware.
+Background reading on the ideas behind heat exposure — mostly hypotheses, not effects shown in people.
 
 - [Longevity protocol: biological clock reset](/articles/longevity-protocol-biological-clock-reset) — where sauna slots into a reset routine
 - [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — the heat-shock side of the stress response

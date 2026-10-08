@@ -16,7 +16,7 @@ const fitbitAirVsWhoop50: HeadToHeadInput = {
   bestForB:
     'Choose Whoop 5.0 if recovery and strain coaching actually drives how you train, and you want a validated, mature platform — accepting the ongoing $199–$359 yearly membership.',
   axes: [
-    { name: 'HRV accuracy', winner: 'b', note: 'Whoop has years of validation (its own sleep/HRV studies land ~75–86%). The Fitbit Air is brand-new with no independent validation yet — unknown, not proven equal.' },
+    { name: 'HRV accuracy', winner: 'b', note: 'Whoop has years of validation work behind it. The Fitbit Air is brand-new with no independent validation yet — unknown, not proven equal.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s Recovery + Strain model is the sharpest daily-readiness coach in consumer wearables. Fitbit’s readiness is lighter, with the deeper coaching behind Premium.' },
     { name: 'Price / model', winner: 'a', note: 'Fitbit Air: $99 one-time, core metrics no-Premium. Whoop: membership-only, $199 (One), $239 (Peak) or $359 (Life) a year. 3-year cost ≈ $99 vs $597–$1,077.' },
     { name: 'Subscription for the basics', winner: 'a', note: 'Air surfaces HR, HRV, SpO2, sleep and AFib without Premium. Whoop shows nothing without an active membership.' },

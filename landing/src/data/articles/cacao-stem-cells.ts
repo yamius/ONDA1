@@ -38,7 +38,7 @@ const article: Article = {
 
 > "Cacao is more than a nutrient; it is a complex chemical driver for your cellular infrastructure. In the ONDA model, we treat the removal of caffeine and theobromine not as a loss, but as a 'Frequency Filter.'
 >
-> By isolating the pure flavonols from their stimulant counterparts, we cut 'System Noise' (adrenal spikes) while leaning into the pathways research has linked to regeneration. This is how you calibrate your internal laboratory for recovery without overclocking the nervous system."
+> By isolating the pure flavonols from their stimulant counterparts, we cut 'System Noise' (the stimulant kick) while leaning into the pathways research has linked to regeneration. This is how you calibrate your internal laboratory for recovery without overclocking the nervous system."
 
 ---
 
@@ -72,15 +72,15 @@ Caffeine and theobromine are pharmacological accelerators. While useful for 'Pro
 
 > **The Hack:** 10 minutes of Red Light Therapy (660nm) before the sleep cycle.
 
-**The Logic:** [Photobiomodulation](/glossary/photobiomodulation) at 660nm provides the [mitochondria](/glossary/mitochondria) with the necessary [ATP](/glossary/atp) to utilize the stem cells produced during the day. It closes the loop on the regeneration sequence.
+**The Logic:** [Photobiomodulation](/glossary/photobiomodulation) at 660nm is thought to act on the [mitochondria](/glossary/mitochondria), where the light is absorbed by cytochrome c oxidase; the light does not supply [ATP](/glossary/atp) itself. Any link to stem cells or overnight regeneration is speculative and has not been tested in people.
 
 ---
 
 ## [ HARDWARE_VALIDATION ]
 
-VALIDATION_DEVICE: Oura Ring / Whoop
+EXAMPLE_DEVICE: Oura Ring / Whoop
 METRIC: [HRV](/science/concepts/heart-rate-variability) (Heart Rate Variability) & Sleep Quality
-STATUS: REGENERATION_OPTIMIZED
+STATUS: TRACK_OVER_WEEKS
 
 ---
 

@@ -16,7 +16,7 @@ const healthyWaveVsHigherDose: HeadToHeadInput = {
   bestForB:
     'Choose HigherDOSE PEMF Mat if you want polished consumer UX with multi-modality recovery and you accept lighter PEMF technical depth.',
   axes: [
-    { name: 'PEMF intensity', winner: 'a', note: 'Healthy Wave: configurable across documented PEMF research range. HigherDOSE: modest intensity across 4 preset levels (3–23 Hz). Healthy Wave wins on raw PEMF capability.' },
+    { name: 'PEMF intensity', winner: 'a', note: 'Healthy Wave: configurable across the frequency range used in PEMF research. HigherDOSE: modest intensity across 4 preset levels (3–23 Hz). Healthy Wave wins on raw PEMF capability.' },
     { name: 'PEMF programmability', winner: 'a', note: 'Healthy Wave: real parameter exposure (waveform, frequency, intensity). HigherDOSE: 4 preset frequency levels (3–23 Hz), no custom parameters.' },
     { name: 'Modality stack', winner: 'tie', note: 'Both stack PEMF + infrared + crystals (HigherDOSE: about 20 lb of amethyst and obsidian). Comparable modality coverage.' },
     { name: 'Consumer UX', winner: 'b', note: 'HigherDOSE: simple preset controls, premium consumer branding, easier daily use. Healthy Wave: more parameters = more setup friction.' },

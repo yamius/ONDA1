@@ -17,10 +17,10 @@ const lunaVsHelio: HeadToHeadInput = {
     'Choose the Amazfit Helio Ring if you want the cheapest, lightest subscription-free ring and one of its three sizes fits you.',
   axes: [
     { name: 'Price', winner: 'b', note: 'Amazfit Helio: $199. Noise Luna Gen 2: ~$300. The Helio is the cheaper ring.' },
-    { name: 'Subscription', winner: 'c', note: 'Tie — both are one-time purchases with no membership.' },
-    { name: 'Single-charge battery', winner: 'c', note: 'Both are modest — Luna ~4 days, Helio ~2.5–3. The Luna edges it, but its headline ~30 days depends on the charging case.' },
+    { name: 'Subscription', winner: 'tie', note: 'Tie — both are one-time purchases with no membership.' },
+    { name: 'Single-charge battery', winner: 'a', note: 'Per the manufacturers: up to 7 days for the Luna Ring (for the Gen 2, up to 5 days per Wareable) and up to 4 days for the Helio per charge. Reviewers report less in real use (Luna ~4, Helio ~2.5–3), and the Luna’s headline ~30 days depends on the charging case.' },
     { name: 'Fit & sizing', winner: 'a', note: 'The Helio ships in only three sizes (8, 10, 12); the Luna offers a wider range, so more people can fit it well.' },
-    { name: 'Sleep tracking', winner: 'c', note: 'Both track sleep well for the price — sleep staging is a strong point for each.' },
+    { name: 'Sleep tracking', winner: 'tie', note: 'Both track sleep well for the price — sleep staging is a strong point for each.' },
     { name: 'Extras', winner: 'a', note: 'The Luna adds a voice-activated Luna AI assistant and a pocket charging case; the Helio is more bare-bones.' },
   ],
   faq: [
@@ -30,7 +30,7 @@ const lunaVsHelio: HeadToHeadInput = {
     },
     {
       q: 'Which has better battery?',
-      a: 'Roughly a wash on a single charge (Luna ~4 days, Helio ~2.5–3), but the Luna’s pocket charging case pushes its total battery far higher, so you recharge the ring less often overall.',
+      a: 'The Luna. Per the manufacturers, the Luna Ring lasts up to 7 days (for the Gen 2, up to 5 days per Wareable) and the Helio up to 4 days per charge (reviewers report about 4 and 2.5–3 days in real use), and the Luna’s pocket charging case pushes its total battery far higher, so you recharge the ring less often overall.',
     },
     {
       q: 'Will these rings fit me?',

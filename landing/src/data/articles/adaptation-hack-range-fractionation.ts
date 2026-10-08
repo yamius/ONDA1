@@ -57,9 +57,9 @@ This prevents the metabolic downclocking that inevitably follows prolonged linea
 
 ### 3. MODULE: THERMAL STRESS (Thermal Range)
 
-Train vascular elasticity by hitting both extremes: cold fraction for maximal vasoconstriction and norepinephrine surge, heat fraction for vasodilation and heat shock protein activation.
+The image here is hitting both extremes: cold narrows blood vessels, heat widens them. That alternating them trains vascular elasticity has not been shown — treat it as an idea, not a proven training effect.
 
-> **The Hack:** Ice bath for maximal vasoconstriction and norepinephrine surge, then sauna for vasodilation and heat shock protein activation. Train vascular elasticity via extreme range endpoints.
+> **The Hack:** Cold, then sauna: vessels narrow in the cold and widen in the heat. "Training the vascular range" is an image, not a proven effect. Blood pressure drops after heat, so stand up slowly; never do it after alcohol.
 
 ---
 
@@ -113,11 +113,11 @@ Range Fractionation is an Anti-fragility Strategy. Instead of attempting to be '
 
 ## Recommended tools
 
-Range fractionation reads as adaptation across cognitive states. EEG is the highest-density consumer signal for catching it.
+Range fractionation is about adaptation across cognitive states. No consumer headset can measure it directly; these give live EEG feedback, and their state scores are each maker’s own formula.
 
-- [Neurosity Crown](/reviews/neurosity-crown) — developer EEG for measuring adaptation
-- [Muse S Athena](/reviews/muse-s-athena) — consumer EEG with multi-state tracking
-- [Emotiv Insight 2](/reviews/emotiv-insight-2) — six-dimensional cognitive performance metrics
+- [Neurosity Crown](/reviews/neurosity-crown) — developer EEG with raw-data access
+- [Muse S Athena](/reviews/muse-s-athena) — consumer EEG with the app’s own calm/active labels
+- [Emotiv Insight 2](/reviews/emotiv-insight-2) — six proprietary performance scores
 
 [Best EEG Headsets (2026) →](/reviews/eeg-headsets)
 `,
@@ -129,7 +129,7 @@ Range fractionation reads as adaptation across cognitive states. EEG is the high
     },
     {
       name: 'Thermal Range Fractionation (Sauna + Cold)',
-      text: "Ice bath for maximal vasoconstriction and norepinephrine surge, then sauna for vasodilation and heat shock protein activation. Train vascular elasticity via extreme range endpoints.",
+      text: "Cold, then sauna: vessels narrow in the cold and widen in the heat. 'Training the vascular range' is an image, not a proven effect.",
       protocolId: 'range-frac-thermal',
     },
     {

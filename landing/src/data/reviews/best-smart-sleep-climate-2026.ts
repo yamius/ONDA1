@@ -83,7 +83,7 @@ const bestSmartSleepClimate2026: Comparison = {
     },
     {
       q: 'Eight Sleep vs ChiliPad — which is better?',
-      a: 'Eight Sleep wins on integrated HRV tracking and Autopilot climate scheduling by sleep stage. ChiliPad wins on no subscription and cleaner ownership model. The hardware climate range is comparable; the wrapper is the differentiator.',
+      a: 'Eight Sleep wins on integrated HRV tracking and Autopilot climate scheduling by estimated sleep stage. ChiliPad wins on no subscription and cleaner ownership model. The hardware climate range is comparable; the wrapper is the differentiator.',
     },
     {
       q: 'Can I install climate on my existing mattress?',

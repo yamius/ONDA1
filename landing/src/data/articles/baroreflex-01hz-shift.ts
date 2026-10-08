@@ -1,17 +1,17 @@
 import type { Article } from './types'
 
 /**
- * The 0.1 Hz Shift: Engineering the Baroreflex Hook
+ * 0.1 Hz Breathing and the Baroreflex: What Resonance Actually Does
  * ID: protocol_baroreflex_01
  * SEO: baroreflex optimization, 0.1 Hz breathing, Mayer waves, HRV coherence, vagal tone, blood pressure regulation.
  */
 const article: Article = {
   slug: 'baroreflex-01hz-shift',
-  title: 'The 0.1 Hz Shift: Engineering the Baroreflex Hook',
-  subtitle: 'Hardware Calibration — Hijacking the Cardiovascular Control Loop for Peak Operational Efficiency',
-  seoTitle: '0.1 Hz Baroreflex Hack: HRV Coherence | ONDA Life',
+  title: '0.1 Hz Breathing and the Baroreflex: What Resonance Actually Does',
+  subtitle: 'Hardware Calibration — Breathing in Step with the Cardiovascular Control Loop',
+  seoTitle: '0.1 Hz Breathing and the Baroreflex | ONDA Life',
   description:
-    'At around 0.1 Hz (about 5.5–6 breaths/min) your breathing syncs with Mayer Waves, hijacking the baroreflex loop: heart-rate oscillations follow the breath and reach their largest amplitude, HRV peaks, and blood pressure can drop.',
+    'At around 0.1 Hz (about 5.5–6 breaths/min) your breathing falls into step with the baroreflex loop: heart-rate oscillations follow the breath and reach their largest amplitude. What resonance does during the practice — and what the evidence says about blood pressure.',
   category: 'Biological Software',
   relatedSlugs: [
     'heart-rate-variability',
@@ -27,14 +27,14 @@ const article: Article = {
   introStyle: 'blue',
   image: '/images/articles/baroreflex-01hz-shift.webp',
   imageAlt:
-    'Cybernetic human profile with glowing neural pathways and orange 0.1 Hz wave — 0.1Hz_TARGET LOCKED, BAROREFLEX_GAIN MAXIMUM, SYSTEM_FRICTION MINIMAL overlays. ONDA Life baroreflex calibration protocol visualization.',
+    'Cybernetic human profile with glowing neural pathways and orange 0.1 Hz wave — 0.1Hz_TARGET LOCKED, BAROREFLEX_GAIN MAXIMUM, SYSTEM_FRICTION MINIMAL overlays (illustration, not a measurement). ONDA Life 0.1 Hz breathing visualization.',
   imageTitle:
-    '[ 0.1Hz_TARGET: LOCKED ] — Baroreflex gain: maximum. System friction: minimal. Phase-lock achieved.',
+    '[ 0.1Hz_TARGET: LOCKED ] — an artistic image of breathing in step with the baroreflex (illustration, not a measurement).',
   imageCaption:
-    '[ BAROREFLEX_GAIN: MAXIMUM ] [ SYSTEM_FRICTION: MINIMAL ] — 0.1 Hz locked. The cardiovascular control loop is no longer fighting itself.',
+    '[ BAROREFLEX_GAIN: MAXIMUM ] [ SYSTEM_FRICTION: MINIMAL ] — illustration, not a measurement. At 0.1 Hz, breathing and the cardiovascular control loop move in step.',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'Baroreflex calibrated. Find your exact personal resonance frequency — not everyone peaks at exactly 6 breaths/min.',
+    text: 'Next step: find your exact personal resonance frequency — not everyone peaks at exactly 6 breaths/min.',
     link: '/articles/resonant-frequency-system-coherence',
     linkText: 'Resonant Frequency Scan Protocol',
   },
@@ -43,7 +43,7 @@ const article: Article = {
 
 > "Think of the baroreflex as the smart thermostat for your cardiovascular system. Its sole objective is to maintain blood pressure within a precise operational range.
 >
-> Pressure rises → Baroreceptors send a signal to the brainstem. The brain commands the heart to slow down via the Vagus Nerve. Pressure drops → The cycle repeats. Normally, this process runs in the background — often out of sync with your breathing.
+> Pressure rises → [Baroreceptors](/science/concepts/baroreflex) send a signal to the brainstem. The brain commands the heart to slow down via the Vagus Nerve. Pressure drops → The cycle repeats. Normally, this process runs in the background — often out of sync with your breathing.
 >
 > But when you breathe at exactly **0.1 Hz**, you create Resonance."
 
@@ -63,25 +63,25 @@ Breathing at around 0.1 Hz — about 5.5–6 breaths per minute — causes your 
 
 The three proposed benefits are blood-pressure leveling, a calmer parasympathetic state, and brain-heart coherence.
 
-### Benefit 1 — Blood Pressure Auto-Leveling
+### Benefit 1 — A stronger baroreflex response during the practice
 
 > **Protocol:** 10–20 minutes of 0.1 Hz breathing per session, daily for 4 weeks.
 
-**Mechanism:** Resonating at 0.1 Hz is the fastest non-pharmacological way to lower systemic blood pressure. The repeated synchronization "trains" arterial baroreceptors to detect pressure changes with higher sensitivity and respond faster. Over weeks, the vessels become more elastic and adaptive to load — resting blood pressure drops, and the recovery speed after stress spikes accelerates.
+**Mechanism:** During a slow-breathing session, measured baroreflex sensitivity rises — the reflex responds more strongly while you breathe this way. This is a short-term effect. In one randomised study of healthy adults, a course of HRV biofeedback also raised resting baroreflex sensitivity across sessions; whether this lasts, and what it means for health, has not been established.
 
-Clinical data: some studies of consistent slow-breathing and HRV-biofeedback training report modest blood-pressure reductions, but results are inconsistent and it is not a substitute for medical treatment ([evidence](/science/evidence/slow-breathing)).
+Blood pressure: some studies of consistent slow-breathing and HRV-biofeedback training report modest blood-pressure reductions, but results are inconsistent and it is not a substitute for medical treatment ([evidence](/science/evidence/slow-breathing)).
 
-### Benefit 2 — Vagal Tone Injection (The Parasympathetic Patch)
+### Benefit 2 — A calmer state during the practice
 
 > **Protocol:** 5 minutes of 0.1 Hz breathing immediately after acute stress — meeting, conflict, physical load.
 
-**Mechanism:** The baroreflex is the front door to the Vagus Nerve. By engaging it via 0.1 Hz breathing, you can nudge the system toward Rest & Digest (a useful image, not a switch with a timer), easing the background noise of chronic sympathetic activation. The vagal efferent signal — normally suppressed by stress — is allowed to broadcast again at full amplitude. Cortisol begins dropping. Gut motility resumes. Immune surveillance re-engages.
+**Mechanism:** When pressure rises, the baroreflex slows the heart through the vagus nerve. Slow 0.1 Hz breathing engages this loop strongly, and many people use it to nudge themselves toward Rest & Digest (a useful image, not a switch with a timer). Many people feel calmer within minutes; the effect varies from person to person.
 
-### Benefit 3 — Brain-Heart Phase Lock (Coherence)
+### Benefit 3 — A steady rhythm for focused work (a model, not a measurement)
 
 > **Protocol:** 15–20 minutes at 0.1 Hz for deep cognitive work, creative sessions, or pre-decision clarity.
 
-**Mechanism:** At resonance, the heart begins to "dictate" the rhythm to the brain via vagal afferent signals traveling to the brainstem and thalamus. This dampens Amygdala activity — the fear and reactivity center — and reinforces Prefrontal Cortex function: logic, planning, and deep focus. The brain shifts into Alpha/Theta border state (8–10 Hz), the zone of relaxed alertness where creative problem-solving and high-fidelity decision-making peak.
+**The model:** The same baroreceptors that steady blood pressure also give the brain a beat-by-beat picture of the heart. Some researchers propose that a smooth, regular heart rhythm feeds back on how the brain handles stress — an idea still being tested, not an established effect ([heart–brain interaction](/science/mechanisms/heart-brain-interaction)). Treat the session as a calm, steady start to focused work, not as a brain upgrade.
 
 ---
 
@@ -93,9 +93,9 @@ Clinical data: some studies of consistent slow-breathing and HRV-biofeedback tra
 
 **Duty Cycle (Parasympathetic Bias):** 4.0s inhale / 6.0s exhale. Extended exhale is commonly used when the goal is winding down or falling asleep; whether it adds anything beyond slowing the breath is still debated.
 
-**Minimum required duration:** 10 minutes — the threshold for a complete system "reflash" and measurable baroreflex recalibration.
+**Suggested duration:** about 10 minutes per session.
 
-**Biofeedback monitoring (optional but recommended):** Real-time HRV display showing LF peak confirms you have reached resonance. The LF spectral power surges visibly when phase-lock is achieved — a direct readout of successful baroreflex hooking.
+**Biofeedback monitoring (optional but recommended):** A real-time HRV display showing a low-frequency (LF) peak suggests you have reached resonance. Low-frequency HRV reflects baroreflex modulation, so the LF peak grows when your breathing is in step with the loop.
 
 **Note on individual variation:** 0.1 Hz is the population average, not a universal constant. Some individuals resonate at 5.5 or 6.5 breaths per minute. If 6 breaths/min feels forced or doesn't produce the characteristic calm, perform a full Resonance Scan to find your exact frequency.
 
@@ -103,13 +103,11 @@ Clinical data: some studies of consistent slow-breathing and HRV-biofeedback tra
 
 ## Impact Log: System in Coherence
 
-**Cardiovascular:** Blood pressure stabilizes. Vessel elasticity increases. Baroreflex sensitivity (BRS) rises — the metric that best predicts cardiac risk and recovery capacity.
+**Cardiovascular:** Baroreflex sensitivity (BRS) rises during slow breathing. In patients with heart disease, reduced baroreflex sensitivity is linked to worse outcomes.
 
-**Autonomic:** Sympathetic/Parasympathetic oscillation becomes coordinated instead of competitive. The system operates as a single regulated unit. Sustained over weeks, this widened oscillation is what expands the [fault-tolerant HRV buffer](/articles/fault-tolerant-human-hrv-buffer) — the resilience headroom that absorbs stress without cascade failure.
+**Autonomic:** Sympathetic/Parasympathetic oscillation becomes coordinated instead of competitive. Sustained over weeks, this widened oscillation is what expands the [fault-tolerant HRV buffer](/articles/fault-tolerant-human-hrv-buffer) — the resilience headroom that absorbs stress without cascade failure.
 
-**Cognitive:** Working memory expands. Emotional reactivity decreases. The prefrontal override is online.
-
-**Systemic:** All downstream systems receiving vagal input — gut, immune, inflammatory — shift toward repair and maintenance mode.
+**Subjective:** Many people feel calmer and steadier during and after the session; the effect varies from person to person.
 
 > [ ONDA_STATEMENT ]
 > "0.1 Hz is not just a rhythm; it is the frequency where your biology speaks the language of physics. It is the point where you stop wasting energy on internal friction."
@@ -129,17 +127,17 @@ Catching the 0.1 Hz shift cleanly requires an HRV device with enough sampling fi
   howToSteps: [
     {
       name: '0.1 Hz Calibration Baseline',
-      text: 'Set a breathing pacer to about 5.5 breaths per minute (5.5 seconds in, 5.5 seconds out). No breath holds. Maintain for 10–20 minutes. Monitor HRV if possible — the LF spectral peak surge confirms baroreflex phase-lock.',
+      text: 'Set a breathing pacer to about 5.5 breaths per minute (5.5 seconds in, 5.5 seconds out). No breath holds. Maintain for 10–20 minutes. Monitor HRV if possible — a growing low-frequency (LF) peak reflects baroreflex modulation and suggests you are at resonance.',
       protocolId: 'baroreflex-01hz-baseline',
     },
     {
-      name: 'Acute Stress Reset (Parasympathetic Patch)',
+      name: 'Acute Stress Reset',
       text: 'Immediately after acute stress — meeting, conflict, physical load — apply 5 minutes of 0.1 Hz breathing. Many people feel calmer within minutes; the effect varies from person to person.',
       protocolId: 'baroreflex-acute-patch',
     },
     {
-      name: 'Deep Coherence Session (Brain-Heart Phase Lock)',
-      text: 'Before creative or decision-critical work, run 15–20 minutes of 0.1 Hz breathing. Amygdala reactivity dampens, prefrontal function sharpens, Alpha/Theta brainwave state activates. Session effect lasts 4–6 hours.',
+      name: 'Deep Coherence Session',
+      text: 'Before creative or decision-critical work, run 15–20 minutes of 0.1 Hz breathing as a calm, steady start. How you feel afterwards varies from person to person.',
       protocolId: 'baroreflex-coherence-session',
     },
   ],

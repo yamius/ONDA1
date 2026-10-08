@@ -58,13 +58,13 @@
     "2": {
       "name": "EMOCIONES / AQUA",
       "subtitle": "Bioquímica de la energía: de la maniobrabilidad al poder social",
-      "metaDescription": "Nivel 2: maestría emocional. Eje HPA, DHEA, neuronas espejo, resonancia social — y conceptos de la teoría polivagal, un modelo debatido. De la maniobrabilidad al dominio sereno.",
+      "metaDescription": "Nivel 2: maestría emocional. Respuesta al estrés, presencia serena, neuronas espejo, resonancia social — y conceptos de la teoría polivagal, un modelo debatido. De la maniobrabilidad al dominio sereno.",
       "intro": "El Nivel 2 es la etapa de dominar tu sistema emocional como un reactor de alta tecnología. Dejamos de percibir las emociones como simples «estados de ánimo» y empezamos a tratarlas como protocolos biológicos: con firma hormonal, patrones neuromotores y perfiles vegetativos específicos.\n\nEn este nivel seguimos la senda de la evolución de los mamíferos: desde las reacciones instantáneas del pequeño animal a la calma inquebrantable del gran depredador y la resonancia compleja del primate superior.",
       "architecture": {
         "intro": "El Nivel 2 integra tres estrategias de gestión de recursos:",
         "parts": [
-          { "label": "Yo maniobro", "protocol": "Protocolo: la maniobrabilidad del «pequeño mamífero»", "goal": "Objetivo: flexibilidad biológica y aceleración instantánea sin estrés paralizante.", "work": "Mecanismo: inspirado en ideas polivagales (un modelo debatido) — practicar la sensación sentida de seguridad y amenaza que el modelo llama neurocepción. Enseñamos al sistema a «derivar» suavemente entre el reposo y la acción, convirtiendo cortisol y adrenalina de toxinas en combustible de precisión." },
-          { "label": "Yo guardo el territorio", "protocol": "Protocolo: la fuerza del «gran mamífero»", "goal": "Objetivo: calma de estatus y densidad de presencia.", "work": "Mecanismo: reconfigurar el sistema endocrino. Pasamos las suprarrenales de la liberación de emergencia de cortisol a la producción de DHEA (la hormona de la vitalidad). Es un estado de «dominio sereno», donde tu estabilidad la siente el resto a nivel límbico antes de que hables." },
+          { "label": "Yo maniobro", "protocol": "Protocolo: la maniobrabilidad del «pequeño mamífero»", "goal": "Objetivo: flexibilidad biológica y aceleración instantánea sin estrés paralizante.", "work": "Mecanismo: inspirado en ideas polivagales (un modelo debatido) — practicar la sensación sentida de seguridad y amenaza que el modelo llama neurocepción. Enseñamos al sistema a «derivar» suavemente entre el reposo y la acción, manteniendo la compostura y la precisión bajo presión." },
+          { "label": "Yo guardo el territorio", "protocol": "Protocolo: la fuerza del «gran mamífero»", "goal": "Objetivo: calma de estatus y densidad de presencia.", "work": "Mecanismo: construir con el tiempo una presencia estable y arraigada. Es un estado de «dominio sereno», donde tu estabilidad la siente el resto a nivel límbico antes de que hables." },
           { "label": "Soy parte de la manada", "protocol": "Protocolo: Resonancia social", "goal": "Objetivo: transformar la supervivencia individual en poder colectivo.", "work": "Mecanismo: activar el «cerebro social» — el sistema de neuronas espejo y el perfil de oxitocina. Aprendemos a sincronizar nuestro ritmo con el grupo (co-regulación) manteniendo un centro autónomo. Tu presencia se convierte en el «pegamento» que une el campo." }
         ]
       },
@@ -82,7 +82,7 @@
         "items": [
           { "name": "Hipotálamo", "text": "Centro de control del comportamiento territorial y el equilibrio hormonal." },
           { "name": "Ganglios basales", "text": "Formación de posturas «inquebrantables» y hábitos de dominio." },
-          { "name": "Neuronas espejo", "text": "Tu Wi-Fi biológico para leer al instante las intenciones de otros." },
+          { "name": "Neuronas espejo", "text": "La investigación las relaciona con la comprensión de las acciones e intenciones de otros; su papel exacto sigue en debate." },
           { "name": "Corteza cingulada anterior", "text": "Detector de señales sociales y precisión emocional." }
         ]
       },
@@ -113,7 +113,7 @@
         "items": [
           { "name": "Hueco cognitivo", "text": "Aumentar la pausa entre evento y reacción automática para permitir libertad de elección." },
           { "name": "Modulación colinérgica", "text": "Usar acetilcolina para «iluminar» literalmente las conexiones neurales necesarias durante el foco." },
-          { "name": "Vinculación gamma", "text": "Sincronizar neuronas en frecuencia gamma para ensamblar fragmentos dispersos de la experiencia en un solo insight." },
+          { "name": "Vinculación gamma", "text": "El objetivo de reunir fragmentos dispersos de la experiencia en un solo insight. La investigación relaciona este tipo de integración con la actividad en frecuencia gamma, pero su papel está en debate y ONDA no registra EEG." },
           { "name": "Programación proactiva (RAS)", "text": "Ajustar los filtros del cerebro para buscar automáticamente oportunidades alineadas con tu visión interna." }
         ]
       },
@@ -230,7 +230,7 @@
         "parts": [
           { "label": "Yo observo", "protocol": "Protocolo: Distancia neural y monitorización metacognitiva", "goal": "Objetivo: pasar de rehén del flujo de la consciencia a su Meta-Programador.", "work": "Trabajo: desactivar la Default Mode Network (DMN) y establecer «distancia neural». Usar anclas sensoriales para colapsar el diálogo interno y convertir los pensamientos en impulsos eléctricos transparentes." },
           { "label": "Yo integro", "protocol": "Protocolo: Integración neural global y síntesis de la experiencia", "goal": "Objetivo: alcanzar la máxima coherencia neural — el cerebro como un supercomputador único, sin fricción.", "work": "Trabajo: reforzar la conectividad horizontal (interhemisférica) y vertical (corteza-cuerpo). Usar el cuerpo calloso y el mPFC para reconciliar disonancia cognitiva y unir lógica con intuición." },
-          { "label": "Yo sincronizo", "protocol": "Protocolo: Sincronización neuroeléctrica e inteligencia colectiva", "goal": "Objetivo: del «modo Yo» al «nodo de la red» — activar el hiperscaneo entre cerebros y el flujo colectivo.", "work": "Trabajo: disparar ritmos gamma (40 Hz) y el sistema de neuronas espejo. Lograr el bloqueo de fase neuroeléctrico con otros para acceder a recursos y soluciones de escala «oceánica»." }
+          { "label": "Yo sincronizo", "protocol": "Protocolo: Sincronización neuroeléctrica e inteligencia colectiva", "goal": "Objetivo: del «modo Yo» al «nodo de la red» — ritmo compartido y flujo colectivo con los demás.", "work": "Trabajo: respiración compartida, atención conjunta y el sistema de neuronas espejo, inspirados en la investigación de hyperscanning sobre cómo la actividad cerebral puede alinearse entre personas (hallazgos preliminares; ONDA no registra EEG). El objetivo: acceder a recursos y soluciones de escala «oceánica»." }
         ]
       },
       "biologicalProtocol": {
@@ -238,8 +238,8 @@
         "items": [
           { "name": "Etiquetado metacognitivo", "text": "Prácticas para «etiquetar» eventos mentales, activando el mPFC y quitando la carga emocional al pensamiento." },
           { "name": "Sincronía interhemisférica", "text": "Ejercicios para el cuerpo calloso que aseguran un flujo de datos sin fisuras entre centros analíticos e intuitivos." },
-          { "name": "Ajuste del flujo gamma", "text": "Técnicas para estabilizar la actividad cerebral de alta frecuencia (40 Hz) para insights colectivos y aprendizaje rápido." },
-          { "name": "Desacoplamiento límbico", "text": "Entrenar al PFC a registrar datos «cargados» sin desencadenar liberación de cortisol ni de la amígdala." }
+          { "name": "Ajuste del flujo gamma", "text": "Técnicas para sostener estados compartidos de alta concentración al servicio de insights colectivos y aprendizaje rápido. La actividad gamma rápida (40 Hz) es aquí una imagen; ONDA no registra EEG." },
+          { "name": "Desacoplamiento límbico", "text": "Entrenar al PFC a registrar datos «cargados» sin dejarse arrastrar a una reacción de estrés." }
         ]
       },
       "targetSystems": {

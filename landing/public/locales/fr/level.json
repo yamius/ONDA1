@@ -58,13 +58,13 @@
     "2": {
       "name": "ÉMOTIONS / AQUA",
       "subtitle": "Biochimie de l’énergie : de la manœuvrabilité à la puissance sociale",
-      "metaDescription": "Niveau 2 : maîtrise émotionnelle. Axe HHS, DHEA, neurones miroirs, résonance sociale — et des idées de la théorie polyvagale, un modèle débattu. De la manœuvrabilité à une assurance calme.",
+      "metaDescription": "Niveau 2 : maîtrise émotionnelle. Réponse au stress, présence calme, neurones miroirs, résonance sociale — et des idées de la théorie polyvagale, un modèle débattu. De la manœuvrabilité à une assurance calme.",
       "intro": "Le niveau 2 est l’étape où vous apprenez à maîtriser votre système émotionnel comme un réacteur de haute technologie. Nous cessons de voir les émotions comme de simples « humeurs » pour les traiter comme des protocoles biologiques : avec des signatures hormonales, des schémas neuromoteurs et des profils végétatifs précis.\n\nÀ ce niveau, nous suivons le chemin de l’évolution des mammifères : des réactions instantanées d’un petit animal au calme inébranlable d’un grand prédateur, puis à la résonance complexe d’un primate supérieur.",
       "architecture": {
         "intro": "Le niveau 2 intègre trois stratégies de gestion des ressources :",
         "parts": [
-          { "label": "Je manœuvre", "protocol": "Protocole : la manœuvrabilité du « petit mammifère »", "goal": "Objectif : souplesse biologique et accélération instantanée sans stress paralysant.", "work": "Mécanisme : inspiré d’idées polyvagales (un modèle débattu) — s’exercer au ressenti de sécurité et de menace que ce modèle appelle neuroception. Nous apprenons au système à « glisser » en douceur du repos à l’action, en transformant le cortisol et l’adrénaline de toxines en carburant de précision." },
-          { "label": "Je protège mon territoire", "protocol": "Protocole : la force du « grand mammifère »", "goal": "Objectif : un calme assuré et une présence dense.", "work": "Mécanisme : travailler avec le système endocrinien — s’appuyer moins, avec le temps, sur le cortisol d’urgence et davantage sur la DHEA. Cela soutient un état d’« assurance calme », une stabilité que les autres perçoivent souvent avant même que vous ne parliez." },
+          { "label": "Je manœuvre", "protocol": "Protocole : la manœuvrabilité du « petit mammifère »", "goal": "Objectif : souplesse biologique et accélération instantanée sans stress paralysant.", "work": "Mécanisme : inspiré d’idées polyvagales (un modèle débattu) — s’exercer au ressenti de sécurité et de menace que ce modèle appelle neuroception. Nous apprenons au système à « glisser » en douceur du repos à l’action, en restant posé et précis sous pression." },
+          { "label": "Je protège mon territoire", "protocol": "Protocole : la force du « grand mammifère »", "goal": "Objectif : un calme assuré et une présence dense.", "work": "Mécanisme : construire peu à peu une présence stable et ancrée. Cela soutient un état d’« assurance calme », une stabilité que les autres perçoivent souvent avant même que vous ne parliez." },
           { "label": "Je fais partie du groupe", "protocol": "Protocole : résonance sociale", "goal": "Objectif : transformer la survie individuelle en puissance collective.", "work": "Mécanisme : activer le « cerveau social » — le système des neurones miroirs et le profil de l’ocytocine. Nous apprenons à synchroniser nos rythmes avec le groupe (co-régulation) tout en gardant un centre autonome. Votre présence devient le « liant » qui unit le groupe." }
         ]
       },
@@ -82,7 +82,7 @@
         "items": [
           { "name": "Hypothalamus", "text": "Centre de commande du comportement territorial et de l’équilibre hormonal." },
           { "name": "Noyaux gris centraux", "text": "Formation de postures stables et « inébranlables » et d’habitudes d’assurance." },
-          { "name": "Neurones miroirs", "text": "Le système cérébral qui lit les intentions et les états des autres." },
+          { "name": "Neurones miroirs", "text": "La recherche les relie à la compréhension des actions et des intentions des autres ; leur rôle exact reste débattu." },
           { "name": "Cortex cingulaire antérieur", "text": "Le détecteur des signaux sociaux et de la justesse émotionnelle." }
         ]
       },
@@ -113,7 +113,7 @@
         "items": [
           { "name": "Espace cognitif", "text": "Allonger la pause entre un événement et une réaction automatique pour laisser place à la liberté de choix." },
           { "name": "Modulation cholinergique", "text": "Utiliser l’acétylcholine pour « surligner » littéralement les connexions neuronales nécessaires pendant la concentration." },
-          { "name": "Liaison gamma", "text": "Synchroniser les neurones en fréquence gamma pour assembler des fragments épars d’expérience en une seule intuition." },
+          { "name": "Liaison gamma", "text": "L’objectif : assembler des fragments épars d’expérience en une seule intuition. La recherche relie ce type de liaison à l’activité en fréquence gamma, mais son rôle reste débattu, et ONDA n’enregistre pas d’EEG." },
           { "name": "Programmation proactive (SAR)", "text": "Régler les filtres du cerveau pour qu’ils cherchent automatiquement les occasions correspondant à votre vision intérieure." }
         ]
       },
@@ -230,7 +230,7 @@
         "parts": [
           { "label": "Je suis témoin", "protocol": "Protocole : distance neuronale et surveillance métacognitive", "goal": "Objectif : passer d’otage du flux de conscience à son méta-programmeur.", "work": "Travail : désactiver le réseau du mode par défaut (DMN) et établir une « distance neuronale ». Utiliser des ancres sensorielles pour faire taire le dialogue intérieur et transformer les pensées en impulsions électriques transparentes." },
           { "label": "J’intègre", "protocol": "Protocole : intégration neuronale globale et synthèse de l’expérience", "goal": "Objectif : atteindre une cohérence neuronale maximale — le cerveau comme un supercalculateur unique et sans friction.", "work": "Travail : renforcer la connectivité horizontale (entre les hémisphères) et verticale (cortex–corps). Utiliser le corps calleux et le CPFm pour résoudre la dissonance cognitive et unir la logique à l’intuition." },
-          { "label": "Je synchronise", "protocol": "Protocole : synchronisation neuroélectrique et intelligence collective", "goal": "Objectif : du « mode Je » au « nœud de réseau » — hyperscanning inter-cerveaux et flow collectif.", "work": "Travail : déclencher les rythmes gamma (40 Hz) et le système des neurones miroirs. Atteindre un verrouillage de phase neuroélectrique avec les autres pour accéder à des ressources et des solutions d’ampleur « océanique »." }
+          { "label": "Je synchronise", "protocol": "Protocole : synchronisation neuroélectrique et intelligence collective", "goal": "Objectif : du « mode Je » au « nœud de réseau » — rythme partagé et flow collectif avec les autres.", "work": "Travail : respiration partagée, attention conjointe et système des neurones miroirs, inspirés des études d’hyperscanning sur la façon dont l’activité cérébrale peut s’aligner entre personnes (résultats préliminaires ; ONDA n’enregistre pas d’EEG). L’objectif : accéder à des ressources et des solutions d’ampleur « océanique »." }
         ]
       },
       "biologicalProtocol": {
@@ -238,8 +238,8 @@
         "items": [
           { "name": "Étiquetage métacognitif", "text": "Des pratiques pour « étiqueter » les événements mentaux, activer le CPFm et ôter aux pensées leur charge émotionnelle." },
           { "name": "Synchronisation interhémisphérique", "text": "Des exercices pour le corps calleux afin que les données circulent sans heurt entre les centres analytiques et intuitifs." },
-          { "name": "Accord du flow gamma", "text": "Des techniques pour stabiliser une activité cérébrale à haute fréquence (40 Hz) au service des intuitions collectives et d’un apprentissage rapide." },
-          { "name": "Découplage limbique", "text": "Entraîner le CPF à enregistrer des données « chargées » sans déclencher de libération de cortisol ni l’amygdale." }
+          { "name": "Accord du flow gamma", "text": "Des techniques pour maintenir des états partagés de haute concentration au service des intuitions collectives et d’un apprentissage rapide. L’activité gamma rapide (40 Hz) n’est ici qu’une image ; ONDA n’enregistre pas d’EEG." },
+          { "name": "Découplage limbique", "text": "Entraîner le CPF à enregistrer des données « chargées » sans se laisser entraîner dans une réaction de stress." }
         ]
       },
       "targetSystems": {

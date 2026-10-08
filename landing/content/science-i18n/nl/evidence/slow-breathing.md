@@ -1,5 +1,5 @@
 ---
-sourceHash: "2dc08d4f1532"
+sourceHash: "57d18386abf8"
 title: "Langzaam ademen: wat het bewijs laat zien"
 metaTitle: "Langzaam ademen: wat het bewijs laat zien"
 metaDescription: "Wat onderzoek laat zien over langzaam ademen zonder feedback — HRV, bloeddruk, stress, slaap, pijn — en wat er bekend is over populaire technieken."
@@ -104,7 +104,7 @@ De vergelijking is het lastige deel. Mensen weten altijd of ze langzaam ademen, 
 
 ## Wat laat het bewijs zien?
 
-**Hartslagvariabiliteit: vastgesteld.** Een meta-analyse van {{fact:study.laborde2022.studies}} vond dat vagaal gemedieerde HRV stijgt tijdens langzaam ademen, direct na één sessie en na programma's met meerdere sessies [S2]. Een systematische review bij gezonde mensen kwam tot een resultaat in dezelfde richting [S3]. Dit zijn veranderingen in een fysiologisch signaal; op zichzelf zijn het geen gezondheidsuitkomsten.
+**Hartslagvariabiliteit: vastgesteld.** Een meta-analyse van {{fact:study.laborde2022.studies}} vond dat vagaal gemedieerde HRV stijgt tijdens langzaam ademen, direct na één sessie en na programma's met meerdere sessies [S2]. Een eerdere systematische review bij gezonde mensen, die deels dezelfde studies omvat, wees dezelfde kant op [S3]. Dit zijn veranderingen in een fysiologisch signaal; op zichzelf zijn het geen gezondheidsuitkomsten.
 
 **Bloeddruk: afhankelijk van de context.** Een meta-analyse van {{fact:study.chaddha2019.studies}} bij mensen met hypertensie of prehypertensie vond een bescheiden daling van de systolische en diastolische bloeddruk, met hoge heterogeniteit [S4]. De auteurs stellen dat het een redelijke eerste optie kan zijn voor mensen met een laag risico die aarzelen om met medicatie te beginnen [S4] — een suggestie, geen richtlijn. Bij apparaatgestuurd ademen is meer voorzichtigheid nodig: een meta-analyse van {{fact:study.mahtani2012.trials}}, vond dat het effect verdween als de studies met banden met de fabrikant werden weggelaten, en vroeg om langere, onafhankelijke studies [S5]. De praktische kant staat in [langzaam ademen en hoge bloeddruk](/articles/high-blood-pressure-slow-breathing).
 

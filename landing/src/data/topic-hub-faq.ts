@@ -345,7 +345,7 @@ const TOPIC_HUB_FAQ_RAW: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
   world: [
     {
       q: "Does forest bathing (shinrin-yoku) really work?",
-      a: "Measurably, yes. In a Japanese study across 38 forests, time among trees versus in the city lowered cortisol by 12.4%, cut sympathetic activity by 7.0%, lowered blood pressure and heart rate, and raised parasympathetic activity by 55.0%. The effect is a real shift toward calm, driven partly by compounds trees release into the air.",
+      a: "Measurably, yes. In a Japanese field study across 38 forests (small groups at each site), time among trees versus in the city was linked to 12.4% lower cortisol, cut sympathetic activity by 7.0%, lowered blood pressure and heart rate, and raised parasympathetic activity by 55.0%. The effect is a real shift toward calm, driven partly by compounds trees release into the air.",
       links: [{ href: "/articles/forest-bathing-shinrin-yoku-science", label: "Forest Bathing (Shinrin-yoku): What Japanese Research Actually Measured" }],
     },
     {
@@ -355,12 +355,12 @@ const TOPIC_HUB_FAQ_RAW: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
     },
     {
       q: "Does Wim Hof breathing reduce inflammation?",
-      a: "Research at Radboud University in the Netherlands suggests it can: trained practitioners blunted their inflammatory response to an injected bacterial toxin. A follow-up study found the breathing technique did the work, while cold exposure alone did not significantly reduce inflammation. If the anti-inflammatory effect is your goal, the ice bath is optional.",
+      a: "Small laboratory studies at Radboud University in the Netherlands suggest it can, in the short term: trained healthy volunteers blunted their inflammatory response to an injected bacterial toxin. In a later pilot study, the breathing exercise reduced the response while cold training alone did not, and adding cold training strengthened the breathing effect. This is a laboratory model in healthy young men, not a treatment for inflammatory disease.",
       links: [{ href: "/articles/wim-hof-breathing-inflammation", label: "Wim Hof Breathing and Inflammation" }],
     },
     {
       q: "Does yoga nidra help you sleep?",
-      a: "Research suggests it can improve sleep quality. Yoga nidra, or yogic sleep, is guided deep relaxation done lying down that holds you at the edge of sleep, shifting the brain toward slower, sleep-like waves and calming the autonomic nervous system. For people who lie awake with a racing mind, it is a structured, low-risk practice.",
+      a: "It may, but the evidence is weak. Yoga nidra, or yogic sleep, is guided deep relaxation done lying down; in EEG studies practitioners stay awake, so it is not sleep. A 2026 meta-analysis found only five studies, with no significant pooled effect in the randomised trials and very low certainty. For people who lie awake with a racing mind it is a gentle practice to try; people with trauma may prefer a trauma-informed teacher, as body scans can bring up difficult memories.",
       links: [{ href: "/articles/yoga-nidra-sleep-science", label: "Yoga Nidra for Sleep: The Science of 'Yogic Sleep'" }],
     },
   ],

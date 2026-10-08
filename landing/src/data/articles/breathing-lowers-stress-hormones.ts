@@ -9,10 +9,10 @@ import type { Article } from './types'
  */
 const article: Article = {
   slug: 'breathing-lowers-stress-hormones',
-  title: 'Breathing Lowers Your Stress Hormones — Japanese Research on Cortisol',
-  seoTitle: 'Breathing Lowers Cortisol: The Hormone Evidence | ONDA Life',
+  title: 'Can Breathing Lower Stress Hormones? Small Japanese Studies on Cortisol',
+  seoTitle: 'Does Breathing Lower Cortisol? Small-Study Evidence | ONDA Life',
   description:
-    'Beyond HRV, Japanese studies measured actual stress hormones: slow abdominal breathing significantly lowered cortisol, adrenaline and noradrenaline. The direct evidence and what it means.',
+    'Beyond HRV, two small Japanese studies measured stress hormones: after slow abdominal breathing, cortisol, adrenaline and noradrenaline were lower. What these small studies show and what they don’t.',
   category: 'Biological Software',
   relatedSlugs: ['how-to-lower-cortisol', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally', 'box-breathing-how-it-works', 'breathing-exercises-older-adults'],
   introStyle: 'emerald',
@@ -27,7 +27,7 @@ const article: Article = {
     linkText: 'What ONDA measures →',
   },
   content: `
-Most breathing research measures [heart rate variability](/science/concepts/heart-rate-variability) (HRV) as a proxy for calm. Japanese studies went further and measured the actual stress hormones in the body — and found that slow, conscious abdominal breathing significantly lowered [cortisol](/glossary/cortisol), adrenaline and noradrenaline. In one study of healthy women, urinary levels of all three stress hormones dropped significantly after abdominal breathing, while the parasympathetic "rest and digest" system became dominant. This is stronger evidence than HRV alone: it's not just that your heart rhythm looks calmer — the chemistry of stress in your body measurably falls. And it works without being a strain on the body itself.
+Most breathing research measures [heart rate variability](/science/concepts/heart-rate-variability) (HRV) as a proxy for calm. Two small Japanese studies went further and measured stress hormones — and found lower [cortisol](/glossary/cortisol), adrenaline and noradrenaline after slow, conscious abdominal breathing. In one study of healthy women, urinary levels of all three stress hormones dropped significantly after abdominal breathing, while the parasympathetic "rest and digest" system became dominant. This is stronger evidence than HRV alone: it's not just that your heart rhythm looks calmer — the chemistry of stress in your body measurably falls. And it works without being a strain on the body itself.
 
 ## Beyond HRV: measuring the hormones directly
 

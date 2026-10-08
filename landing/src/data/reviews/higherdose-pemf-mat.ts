@@ -50,14 +50,13 @@ PEMF technical depth. Four preset frequency levels (3–23 Hz), modest intensity
 
 ## Who should buy HigherDOSE PEMF Mat?
 
-Choose HigherDOSE PEMF Mat for consumer-polished multi-modality recovery at $1,295. For PEMF-first multi-modality, Healthy Wave Multi-Wave. For research-backed PEMF signal, Bemer. For straightforward single-modality, OMI.
+Choose HigherDOSE PEMF Mat for consumer-polished multi-modality recovery at $1,295. For PEMF-first multi-modality, Healthy Wave Multi-Wave. For a proprietary PEMF signal, Bemer. For straightforward single-modality, OMI.
 
 ---
 
 ## Background reading
 
-- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
-- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
+- [PEMF therapy — what the evidence shows](/science/evidence/pemf) — what is shown in people, what comes from cell studies, and what FDA registration, clearance and approval mean
 - [Ancestral sync — circadian anchors](/articles/ancestral-sync-circadian-anchors)
 `,
   references: [

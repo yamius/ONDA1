@@ -225,9 +225,6 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'chronic-stress-nervous-system-never-off', publishOn: '2026-10-05' },
   { slug: 'overtraining-hrv-resting-heart-rate', publishOn: '2026-09-26' },
   { slug: 'sitting-all-day-nervous-system', publishOn: '2026-10-05' },
-  { slug: 'name-it-to-tame-it-affect-labeling', publishOn: '2026-10-12' },
-  { slug: 'cold-exposure-vagus-nerve', publishOn: '2026-10-12' },
-  { slug: 'nicotine-vaping-hrv-heart-rate', publishOn: '2026-10-19' },
   { slug: 'how-to-measure-hrv-consistently', publishOn: '2026-09-26' },
   // GEO + gap-fill localization wave (staggered drip)
   { slug: 'how-to-raise-hrv-naturally', publishOn: '2026-09-19' },
@@ -236,21 +233,7 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'structured-meditation-training-by-levels', publishOn: '2026-09-19' },
   { slug: 'app-between-meditation-and-fitness-tracker', publishOn: '2026-09-19' },
   { slug: 'what-to-do-after-low-hrv-reading', publishOn: '2026-09-26' },
-  { slug: 'short-daily-breathing-routine', publishOn: '2026-10-26' },
-  { slug: 'find-your-resonance-breathing-rate', publishOn: '2026-10-26' },
-  { slug: 'train-hrv-iphone-camera-no-wearable', publishOn: '2026-10-26' },
-  { slug: 'calm-your-nervous-system-down', publishOn: '2026-11-02' },
-  { slug: 'body-awareness-training-app', publishOn: '2026-11-02' },
-  { slug: 'consciousness-training-app', publishOn: '2026-11-02' },
-  { slug: 'breathing-for-focus-and-attention', publishOn: '2026-11-02' },
-  { slug: 'wearables-train-not-just-track', publishOn: '2026-11-09' },
-  { slug: 'wind-down-before-sleep-breathing', publishOn: '2026-11-09' },
-  { slug: 'how-to-regulate-emotions', publishOn: '2026-11-09' },
-  { slug: 'meditation-with-apple-watch', publishOn: '2026-11-09' },
-  { slug: 'anxiety-panic-breathing-hrv', publishOn: '2026-11-16' },
   { slug: 'apple-watch-recovery-hrv-vs-overall-hrv', publishOn: '2026-09-26' },
-  { slug: 'dysautonomia-long-covid-breathing', publishOn: '2026-11-16' },
-  { slug: 'high-blood-pressure-slow-breathing', publishOn: '2026-11-16' },
   // Series "Doctors and Your Data" — 2026-09-26
   { slug: 'doctors-and-your-data', publishOn: '2026-09-26' },
   { slug: 'talk-to-your-doctor-about-wearable-data', publishOn: '2026-09-26' },
@@ -326,76 +309,17 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'physiological-concentration-flow-state-hardwired', publishOn: '2026-10-05' },
   // Metabolism / mitochondria / longevity / hormones pillars — RE-TRANSLATED
   // from current EN (old bodies stale); full link parity. Batch 2026-10-12.
-  { slug: 'glp1-biology-muscle-preservation', publishOn: '2026-10-12' },
-  { slug: 'metabolic-flexibility-dual-fuel-system', publishOn: '2026-10-12' },
-  { slug: 'mitochondrial-biogenesis-cellular-power-grid', publishOn: '2026-10-12' },
-  { slug: 'mitochondrial-dna-red-light', publishOn: '2026-10-12' },
-  { slug: 'longevity-hardware-cellular-cleanup', publishOn: '2026-10-12' },
-  { slug: 'senolytic-high-dosing-longevity', publishOn: '2026-10-12' },
-  { slug: 'energy-governor-tsh', publishOn: '2026-10-12' },
-  { slug: 'energy-sensor-leptin', publishOn: '2026-10-12' },
-  { slug: 'neural-optimizer-estrogen', publishOn: '2026-10-12' },
-  { slug: 'femtech-cyclical-architecture', publishOn: '2026-10-12' },
-  { slug: 'endocrine-social-drive-oxytocin-testosterone', publishOn: '2026-10-12' },
   // Cognition / attention / neuromodulator pillars — RE-TRANSLATED from
   // current EN (old bodies stale); full link parity. Batch 2026-10-19.
-  { slug: 'acc-calibration-protocol-cognitive-control', publishOn: '2026-10-19' },
-  { slug: 'acetylcholine-lens-neuro-mechanics', publishOn: '2026-10-19' },
-  { slug: 'adaptation-hack-range-fractionation', publishOn: '2026-10-19' },
-  { slug: 'ai-biomarker-tracking-predictive', publishOn: '2026-10-19' },
-  { slug: 'anterior-cingulate-core-coherence-monitoring', publishOn: '2026-10-19' },
-  { slug: 'cacao-stem-cells', publishOn: '2026-10-19' },
-  { slug: 'cognitive-architecture-neural-throughput', publishOn: '2026-10-19' },
-  { slug: 'cognitive-architecture-nootropic-stacks', publishOn: '2026-10-19' },
-  { slug: 'digital-dementia-attentional-control', publishOn: '2026-10-19' },
   // Structural / spinal / feedback pillars — RE-TRANSLATED. Batch 2026-10-26.
-  { slug: 'hydraulic-viscosity-onda-transport-bus', publishOn: '2026-10-26' },
-  { slug: 'neural-hydraulics-csf-flow', publishOn: '2026-10-26' },
-  { slug: 'neural-signal-to-noise-cleaning-system-channel', publishOn: '2026-10-26' },
-  { slug: 'spinal-harddrive-cpg-autonomous-scripts', publishOn: '2026-10-26' },
-  { slug: 'spinal-intelligence-decentralized-control', publishOn: '2026-10-26' },
-  { slug: 'system-feedback-biometric-loop', publishOn: '2026-10-26' },
-  { slug: 'system-stability-serotonin', publishOn: '2026-10-26' },
-  { slug: 'vascular-tensegrity-microvascular-mechanics', publishOn: '2026-10-26' },
-  { slug: 'ventral-tegmental-core-motivational-salience', publishOn: '2026-10-26' },
-  { slug: 'fascial-tensegrity-protocol-myofascial-noise', publishOn: '2026-10-26' },
   // Lifestyle-signal cluster (honest "trace in your own numbers") — staggered drip, RU trails ES
   { slug: 'your-baseline-knows-first', publishOn: '2026-09-18' },
-  { slug: 'respiratory-rate-hidden-signal', publishOn: '2026-11-02' },
-  { slug: 'heart-rate-recovery-fitness-marker', publishOn: '2026-11-02' },
-  { slug: 'screen-apnea-breathing', publishOn: '2026-11-02' },
-  { slug: 'caffeine-hrv-resting-heart-rate', publishOn: '2026-11-09' },
-  { slug: 'social-jet-lag-irregular-sleep', publishOn: '2026-11-09' },
-  { slug: 'eating-late-heart-rate-sleep', publishOn: '2026-11-09' },
-  { slug: 'chronic-stress-nervous-system-never-off', publishOn: '2026-11-16' },
   { slug: 'overtraining-hrv-resting-heart-rate', publishOn: '2026-09-26' },
-  { slug: 'sitting-all-day-nervous-system', publishOn: '2026-11-16' },
-  { slug: 'name-it-to-tame-it-affect-labeling', publishOn: '2026-11-23' },
-  { slug: 'cold-exposure-vagus-nerve', publishOn: '2026-11-23' },
-  { slug: 'nicotine-vaping-hrv-heart-rate', publishOn: '2026-11-30' },
   { slug: 'how-to-measure-hrv-consistently', publishOn: '2026-09-26' },
   // GEO + gap-fill localization wave (staggered drip)
   { slug: 'how-to-raise-hrv-naturally', publishOn: '2026-09-26' },
-  { slug: 'how-to-train-your-nervous-system', publishOn: '2026-12-07' },
-  { slug: 'meditation-app-with-biofeedback', publishOn: '2026-12-07' },
-  { slug: 'structured-meditation-training-by-levels', publishOn: '2026-12-07' },
-  { slug: 'app-between-meditation-and-fitness-tracker', publishOn: '2026-12-07' },
   { slug: 'what-to-do-after-low-hrv-reading', publishOn: '2026-09-26' },
-  { slug: 'short-daily-breathing-routine', publishOn: '2026-12-14' },
-  { slug: 'find-your-resonance-breathing-rate', publishOn: '2026-12-14' },
-  { slug: 'train-hrv-iphone-camera-no-wearable', publishOn: '2026-12-14' },
-  { slug: 'calm-your-nervous-system-down', publishOn: '2026-12-21' },
-  { slug: 'body-awareness-training-app', publishOn: '2026-12-21' },
-  { slug: 'consciousness-training-app', publishOn: '2026-12-21' },
-  { slug: 'breathing-for-focus-and-attention', publishOn: '2026-12-21' },
-  { slug: 'wearables-train-not-just-track', publishOn: '2026-12-28' },
-  { slug: 'wind-down-before-sleep-breathing', publishOn: '2026-12-28' },
-  { slug: 'how-to-regulate-emotions', publishOn: '2026-12-28' },
-  { slug: 'meditation-with-apple-watch', publishOn: '2026-12-28' },
-  { slug: 'anxiety-panic-breathing-hrv', publishOn: '2027-01-04' },
   { slug: 'apple-watch-recovery-hrv-vs-overall-hrv', publishOn: '2026-09-26' },
-  { slug: 'dysautonomia-long-covid-breathing', publishOn: '2027-01-04' },
-  { slug: 'high-blood-pressure-slow-breathing', publishOn: '2027-01-04' },
   // Native-quality RU translations (hand-written) — 2026-09-25
   { slug: 'yoga-nidra-sleep-science', publishOn: '2026-09-25' },
   { slug: 'physiological-sigh', publishOn: '2026-09-25' },
@@ -563,10 +487,11 @@ export function glossaryLocalizedLangs(slug: string): readonly string[] {
  * ES and RU keep their existing hand-curated pilot lists above — this block
  * only adds UK and ZH.
  */
+import { ARTICLE_RELEASE_QUEUE } from './article-release-queue'
 const ARTICLE_ROLLOUT_BATCH = 11
 const ARTICLE_LOCALE_ROLLOUTS: readonly { lang: string; start: string }[] = [
   { lang: 'uk', start: '2026-08-03' },
-  { lang: 'zh', start: '2026-11-02' },
+  { lang: 'zh', start: '2099-01-01' }, // waiting ZH articles moved to scripts/article-release-queue.ts (2026-10-07)
   // DE/FR: native-quality launch — nothing drips on a date yet; articles go
   // live only through ARTICLE_LOCALE_EARLY below.
   { lang: 'de', start: '2099-01-01' },
@@ -753,7 +678,9 @@ const liveLocaleArticles: Record<string, string[]> = (() => {
     const early = new Set(ARTICLE_LOCALE_EARLY[lang] ?? [])
     // Drip index runs over the NON-early backlog only, so adding early-published
     // bodies never shifts already-live drip slugs back out of the window.
-    const backlog = slugs.filter((s) => !early.has(s))
+    // Slugs in the article release queue publish only on their queue date (2026-10-07+).
+    const queued = new Set(ARTICLE_RELEASE_QUEUE[lang] ?? [])
+    const backlog = slugs.filter((s) => !early.has(s) && !queued.has(s))
     const live = [...early].filter((s) => s in bodies).concat(
       backlog.filter((_, i) => articleRolloutDate(start, i) <= BUILD_DATE),
     ).sort()
@@ -761,9 +688,11 @@ const liveLocaleArticles: Record<string, string[]> = (() => {
   }
   return out
 })()
+const articleBodiesByLang: Record<string, Record<string, unknown>> = {}
 for (const e of livePublish('articles')) {
   const list = (liveLocaleArticles[e.lang] ??= [])
-  if (!list.includes(e.slug) && articles.some((a) => a.slug === e.slug)) list.push(e.slug)
+  const bodies = (articleBodiesByLang[e.lang] ??= loadArticleBodies(e.lang))
+  if (!list.includes(e.slug) && articles.some((a) => a.slug === e.slug) && e.slug in bodies) list.push(e.slug)
 }
 const liveLocaleArticleSetByLang: Record<string, Set<string>> = Object.fromEntries(
   Object.entries(liveLocaleArticles).map(([lang, slugs]) => [lang, new Set(slugs)]),
@@ -892,14 +821,12 @@ const localizedReviewRoutes = [
  * no category, so unlike reviews/comparisons they carry their own explicit
  * (lang, slug) rollout, date-gated at build time. A future-dated entry is inert.
  */
+// Future-dated duels moved to scripts/article-release-queue.ts EXTRA_RELEASE_QUEUE (owner 2026-10-07: everything except science in one stream).
 const HEADTOHEAD_LOCALE_ROLLOUT: readonly { lang: string; slug: string; publishOn: string }[] = [
   // Ring cluster — ES leads, RU trails (anti-scaled-content drip).
   { lang: 'es', slug: 'ringconn-gen-3-vs-whoop-5-0', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'oura-ring-5-vs-samsung-galaxy-ring', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'whoop-5-0-vs-ultrahuman-ring-pro', publishOn: '2026-09-18' },
-  { lang: 'ru', slug: 'ringconn-gen-3-vs-whoop-5-0', publishOn: '2026-11-02' },
-  { lang: 'ru', slug: 'oura-ring-5-vs-samsung-galaxy-ring', publishOn: '2026-11-02' },
-  { lang: 'ru', slug: 'whoop-5-0-vs-ultrahuman-ring-pro', publishOn: '2026-11-02' },
   // Apple Watch cluster — ES leads (today), RU trails (2026-11-09).
   { lang: 'es', slug: 'apple-watch-series-12-vs-series-11', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'apple-watch-series-12-vs-oura-ring-4', publishOn: '2026-09-18' },
@@ -912,17 +839,7 @@ const HEADTOHEAD_LOCALE_ROLLOUT: readonly { lang: string; slug: string; publishO
   { lang: 'es', slug: 'apple-watch-series-11-vs-fitbit-charge-6', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'garmin-fenix-8-vs-apple-watch-series-11', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11', publishOn: '2026-09-18' },
-  { lang: 'ru', slug: 'apple-watch-series-12-vs-series-11', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'apple-watch-series-12-vs-oura-ring-4', publishOn: '2026-11-09' },
   // (apple-watch-series-12-vs-whoop-5-0 in every other language: scripts/locale-publish.ts)
-  { lang: 'ru', slug: 'apple-watch-series-12-vs-garmin-venu-4', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'apple-watch-ultra-4-vs-garmin-fenix-8', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'oura-ring-5-vs-apple-watch-series-11', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'oura-ring-4-vs-apple-watch-series-11', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'apple-watch-series-11-vs-garmin-venu-4', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'apple-watch-series-11-vs-fitbit-charge-6', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'garmin-fenix-8-vs-apple-watch-series-11', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11', publishOn: '2026-11-09' },
   // Breathwork + sleep-app + CGM clusters — ES leads (today), RU trails (2026-11-16).
   { lang: 'es', slug: 'breathwrk-vs-othership-vs-wim-hof-method-app', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'breathwrk-vs-othership', publishOn: '2026-09-18' },
@@ -946,28 +863,6 @@ const HEADTOHEAD_LOCALE_ROLLOUT: readonly { lang: string; slug: string; publishO
   { lang: 'es', slug: 'stelo-vs-lingo', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'veri-vs-levels', publishOn: '2026-09-18' },
   { lang: 'es', slug: 'zoe-vs-levels', publishOn: '2026-09-18' },
-  { lang: 'ru', slug: 'breathwrk-vs-othership-vs-wim-hof-method-app', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'breathwrk-vs-othership', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'breathwrk-vs-soma-breath', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'ibreathe-vs-breathe-to-relax', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'othership-vs-open-app', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'wim-hof-method-app-vs-soma-breath', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'bettersleep-vs-sleep-cycle', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'endel-vs-pzizz-vs-bettersleep', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'sleep-cycle-vs-sleep-as-android-vs-autosleep', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'sleep-cycle-vs-sleep-as-android', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'sleepio-vs-pzizz', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'sleepio-vs-sleep-cycle-vs-pzizz', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'levels-vs-nutrisense-vs-stelo', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'levels-vs-nutrisense', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'levels-vs-ultrahuman-m1', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'levels-vs-zoe-vs-nutrisense', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'lingo-vs-stelo-vs-ultrahuman-m1', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'nutrisense-vs-zoe', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'signos-vs-levels', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'stelo-vs-lingo', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'veri-vs-levels', publishOn: '2026-11-16' },
-  { lang: 'ru', slug: 'zoe-vs-levels', publishOn: '2026-11-16' },
 ]
 const liveHeadToHeadLocale = [
   ...HEADTOHEAD_LOCALE_ROLLOUT.filter((e) => e.publishOn <= BUILD_DATE),

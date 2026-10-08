@@ -1,5 +1,5 @@
 ---
-sourceHash: 60023d57fe48
+sourceHash: 3f90a409e444
 title: "De nervus vagus: wat hij doet en wat een mythe is"
 metaTitle: "De nervus vagus: wat hij doet, wat een mythe is"
 metaDescription: "Wat de nervus vagus doet — hart, darm, luchtwegen, keel, signalen naar de hersenen — en welke populaire claims over vagale tonus en oefeningen te ver gaan."

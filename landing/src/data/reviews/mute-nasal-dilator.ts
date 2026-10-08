@@ -11,7 +11,7 @@ const muteNasal: ToolReviewInput = {
   verdict:
     'Best internal nasal stent — mechanically holds airway from inside, clinical published evidence, reusable. Initial adaptation curve is real.',
   summary:
-    'Mute Nasal Dilator is the Rhinomed internal nasal stent — small flexible polymer stent inserted into the nostrils that mechanically holds the airway open from inside. Published clinical studies on airflow improvement, FDA registered, reusable for ~1 week per stent. Initial adaptation curve is real (first nights feel strange) but committed users report deeper improvement than external strips.',
+    'Mute Nasal Dilator is the Rhinomed internal nasal stent — small flexible polymer stent inserted into the nostrils that mechanically holds the airway open from inside. Published clinical studies on airflow improvement, FDA registered, reusable for ~1 week per stent. Initial adaptation curve is real (first nights feel strange) and some committed users report a bigger improvement than with external strips (user reports, not tested).',
   scores: [
     { criterionId: 'adhesion-comfort', score: 7.0, note: 'No adhesive — friction-fit inside nostrils. Initial adaptation curve real; most users habituate within 3-5 nights.' },
     { criterionId: 'breathing-mechanism', score: 8.5, note: 'Internal mechanical stent — holds airway from inside more directly than external strip leverage. Strongest mechanical mechanism in category.' },

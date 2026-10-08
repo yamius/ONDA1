@@ -333,7 +333,7 @@ The comparison is the hard part. People always know whether they are breathing s
 
 ## What does the evidence show?
 
-**Heart rate variability: established.** A meta-analysis of {{fact:study.laborde2022.studies}} found that vagally mediated heart rate variability rises during slow breathing, immediately after a single session and after multi-session programmes [S2]. A systematic review in healthy people reached the same direction of result [S3]. These are changes in a physiological signal; on their own they are not health outcomes.
+**Heart rate variability: established.** A meta-analysis of {{fact:study.laborde2022.studies}} found that vagally mediated heart rate variability rises during slow breathing, immediately after a single session and after multi-session programmes [S2]. An earlier systematic review in healthy people, which partly covers the same studies, pointed the same way [S3]. These are changes in a physiological signal; on their own they are not health outcomes.
 
 **Blood pressure: context-dependent.** A meta-analysis of {{fact:study.chaddha2019.studies}} in people with hypertension or prehypertension found modest reductions in systolic and diastolic blood pressure, with high heterogeneity [S4]. The authors suggest it may be a reasonable first option for low-risk people reluctant to start medication [S4] — a suggestion, not a guideline. Device-guided breathing needs more caution: a meta-analysis of {{fact:study.mahtani2012.trials}} found that the effect disappeared when the manufacturer-linked trials were excluded, and called for longer, independent trials [S5]. The practical angle is in [slow breathing and high blood pressure](/articles/high-blood-pressure-slow-breathing).
 

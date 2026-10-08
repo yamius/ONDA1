@@ -71,14 +71,14 @@ Zombie cells are senescent cells — the product of Cellular Senescence, a prote
 
 ### PROTOCOL 3: Hormetic Stress (The Sauna-Cold Cycle)
 
-> **The Hack:** 20 minutes of high heat (sauna) followed by 3 minutes of cold exposure.
+> **The Hack:** Time in a sauna followed by brief cold exposure.
 
-**The Logic:** This triggers 'Heat Shock Proteins' and 'Cold Shock Proteins.' These molecular chaperones go into the 'Code' of your proteins, helping them fold correctly and preventing the 'Bit Rot' that leads to neurodegenerative diseases.
+**The Logic:** The idea is 'Heat Shock Proteins' and 'Cold Shock Proteins' — molecular chaperones that help proteins fold correctly. 'Fixing bit rot' is an image: that sauna-cold cycles prevent neurodegenerative disease has not been shown. Never use the sauna after alcohol, drink water, and stand up slowly: blood pressure drops after heat, and going straight into cold adds the cold shock response.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: DNA Methylation Kit
+> EXAMPLE_DEVICE: DNA Methylation Kit
 > METRIC: Epigenetic Aging Rate (DunedinPACE)
-> STATUS: HARDWARE_LIFESPAN_EXTENDED
+> STATUS: TRACK_OVER_MONTHS
 
 ---
 
@@ -87,7 +87,7 @@ Zombie cells are senescent cells — the product of Cellular Senescence, a prote
 Cellular-cleanup protocols pair with photobiomodulation routines. Three panels with verified specs:
 
 - [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) — broad-spectrum biohacker premium
-- [Joovv Solo 3.0](/reviews/joovv-solo-3) — FDA-registered modular reference
+- [Joovv Solo 3.0](/reviews/joovv-solo-3) — modular reference
 - [PlatinumLED BIOMAX 600](/reviews/platinumled-biomax-600) — seven-wavelength coverage with published EMF testing
 
 [Best Red Light Therapy Panels (2026) →](/reviews/red-light-therapy)
@@ -95,7 +95,7 @@ Cellular-cleanup protocols pair with photobiomodulation routines. Three panels w
   howToSteps: [
     { name: "The '3-Day System Flush' (Extended Fasting)", text: 'A 36-to-72 hour water-only fast performed once per quarter.', protocolId: 'longevity-system-flush' },
     { name: 'Natural Senolytics (The Quercetin/Fisetin Patch)', text: 'High intake of strawberries (Fisetin) and capers or red onions (Quercetin).', protocolId: 'longevity-senolytics' },
-    { name: 'Hormetic Stress (The Sauna-Cold Cycle)', text: '20 minutes of high heat (sauna) followed by 3 minutes of cold exposure.', protocolId: 'longevity-sauna-cold' },
+    { name: 'Hormetic Stress (The Sauna-Cold Cycle)', text: 'Time in a sauna followed by brief cold exposure.', protocolId: 'longevity-sauna-cold' },
   ],
 }
 

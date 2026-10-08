@@ -1,5 +1,5 @@
 ---
-sourceHash: "2dc08d4f1532"
+sourceHash: "57d18386abf8"
 title: "Respiration lente : ce que montrent les données"
 metaTitle: "Respiration lente : ce que montrent les données"
 metaDescription: "Ce que montre la recherche sur la respiration lente sans retour visuel — HRV, tension, stress, sommeil, douleur — et sur les techniques populaires."
@@ -105,7 +105,7 @@ La comparaison est la partie difficile. Les participants savent toujours s’ils
 
 ## Que montrent les données ?
 
-**HRV : établi.** Une méta-analyse de {{fact:study.laborde2022.studies}} a montré que la HRV d’origine vagale augmente pendant la respiration lente, immédiatement après une seule séance et après des programmes de plusieurs séances [S2]. Une revue systématique chez des personnes en bonne santé a abouti à un résultat de même sens [S3]. Il s’agit de variations d’un signal physiologique ; à elles seules, ce ne sont pas des résultats de santé.
+**HRV : établi.** Une méta-analyse de {{fact:study.laborde2022.studies}} a montré que la HRV d’origine vagale augmente pendant la respiration lente, immédiatement après une seule séance et après des programmes de plusieurs séances [S2]. Une revue systématique antérieure chez des personnes en bonne santé, qui porte en partie sur les mêmes études, allait dans le même sens [S3]. Il s’agit de variations d’un signal physiologique ; à elles seules, ce ne sont pas des résultats de santé.
 
 **Pression artérielle : dépend du contexte.** Une méta-analyse de {{fact:study.chaddha2019.studies}} chez des personnes souffrant d’hypertension ou de préhypertension a trouvé des baisses modestes de la pression artérielle systolique et diastolique, avec une hétérogénéité élevée [S4]. Les auteurs suggèrent qu’elle pourrait constituer une première option raisonnable pour les personnes à faible risque réticentes à commencer un traitement médicamenteux [S4] — une suggestion, pas une recommandation officielle. La respiration guidée par un appareil appelle plus de prudence : une méta-analyse de {{fact:study.mahtani2012.trials}} a constaté que l’effet disparaissait lorsque les essais liés au fabricant étaient exclus, et a appelé à des essais plus longs et indépendants [S5]. L’aspect pratique est traité dans [respiration lente et hypertension](/articles/high-blood-pressure-slow-breathing).
 

@@ -42,7 +42,7 @@ That residual caffeine doesn't always stop you falling asleep — it quietly ste
 
 ## Section 2: When should you drink your first coffee of the day?
 
-Delay your first cup 60–90 minutes after waking, because caffeine also interacts with your [circadian rhythm](/glossary/circadian-rhythm). Your natural [cortisol](/glossary/cortisol) wake-up pulse peaks in the first hour after waking, so caffeine the instant you rise is partly wasted — and trains tolerance. Delaying your first cup 60–90 minutes lets cortisol do its job, then hands off to caffeine as it dips.
+A popular tip is to delay your first cup 60–90 minutes after waking. Your natural [cortisol](/glossary/cortisol) wake-up rise peaks in the first hour after waking, and the idea is that caffeine works better once it dips — but this is popular advice without strong evidence. Where caffeine timing clearly matters for your [circadian rhythm](/glossary/circadian-rhythm) is the other end of the day: keep it well away from bedtime.
 
 ---
 
@@ -56,9 +56,9 @@ Delay your first cup 60–90 minutes after waking, because caffeine also interac
 
 ### PROTOCOL 2: Delay the First Cup
 
-> **The Hack:** Wait 60–90 minutes after waking for your first coffee.
+> **The Hack:** Optionally, wait 60–90 minutes after waking for your first coffee.
 
-**The Logic:** Riding your natural cortisol peak first means less tolerance build-up and a smoother, longer-lasting lift when the caffeine takes over.
+**The Logic:** Some people find a later first coffee gives a smoother lift; the idea that it works by letting your cortisol peak "go first" is popular advice without strong evidence.
 
 ### PROTOCOL 3: Front-Load the Dose
 
@@ -67,7 +67,7 @@ Delay your first cup 60–90 minutes after waking, because caffeine also interac
 **The Logic:** Total daily caffeine matters, but timing matters more for sleep. A big morning dose clears by night; a small afternoon one may not.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Sleep tracker (deep-sleep %) + subjective morning energy
+> EXAMPLE_DEVICE: Sleep tracker (deep-sleep %) + subjective morning energy
 > METRIC: Deep-sleep minutes ↑ after moving the cut-off earlier
 > STATUS: ADENOSINE_SIGNAL_RESTORED
 `,
@@ -79,7 +79,7 @@ Delay your first cup 60–90 minutes after waking, because caffeine also interac
     },
     {
       name: 'Delay the First Cup',
-      text: 'Wait 60–90 minutes after waking before your first coffee so your natural cortisol peak works first.',
+      text: 'If it suits you, wait 60–90 minutes after waking before your first coffee (popular advice; evidence is limited).',
       protocolId: 'caffeine-delay-first-cup',
     },
     {

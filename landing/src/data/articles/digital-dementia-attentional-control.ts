@@ -49,7 +49,7 @@ Your attention is protected. Analog morning, [monotasking blocks](/articles/acc-
 
 ## Section 1: What does context switching cost your focus?
 
-Every time you switch from a deep task to a notification, your brain pays a 'Switching Tax.' It takes an average of 23 minutes to return to full focus. Chronic context switching causes Cortisol to rise and lowers your functional IQ by 10 points. You are not multitasking; you are just 'throttling' your own processor.
+Every time you switch from a deep task to a notification, your brain pays a 'Switching Tax.' It takes an average of 23 minutes to return to full focus. Chronic context switching adds to your stress load and can slow and blunt your performance on the task you return to. You are not multitasking; you are just 'throttling' your own processor.
 
 ---
 
@@ -80,7 +80,7 @@ The Prefrontal Cortex (PFC) is the 'Executive Suite' of your brain. It is the mo
 **The Logic:** This allows your Dopamine Receptors to 'up-regulate.' By lowering the artificial floor of stimulation, you make everyday reality—and complex work—interesting again.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Focus Session Logs
+> EXAMPLE_DEVICE: Focus Session Logs
 > METRIC: Deep Work Units (90min blocks)
 > STATUS: FIREWALL_ACTIVE
 

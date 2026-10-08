@@ -32,7 +32,7 @@ const mendiVsMuse2: HeadToHeadInput = {
     },
     {
       q: 'Is fNIRS as good as EEG?',
-      a: 'Neither — they are different signals. fNIRS measures blood-oxygenation changes (slower, single-region for Mendi). EEG measures electrical activity (fast, multi-region). For focus training Mendi’s single signal is enough; for meditation and broader brain-training EEG is informationally richer.',
+      a: 'Neither — they are different signals. fNIRS measures blood-oxygenation changes (slower, single-region for Mendi). EEG measures electrical activity (fast, multi-region). Mendi’s single signal is enough to drive its focus game, though evidence that the game trains focus is mostly company-published; for meditation and broader brain-training EEG is informationally richer.',
     },
     {
       q: 'Can I meditate with Mendi?',

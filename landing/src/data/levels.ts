@@ -168,7 +168,7 @@ export const levelsData: Record<number, LevelData> = {
     subtitle: 'Energy Biochemistry: From Maneuverability to Social Power',
     theme: levelThemes[2],
     metaDescription:
-      'Level 2: Emotional mastery. HPA axis, DHEA, mirror neurons, social resonance — plus ideas from polyvagal theory, a debated model. From maneuverability to calm dominance.',
+      'Level 2: Emotional mastery. Stress response, calm presence, mirror neurons, social resonance — plus ideas from polyvagal theory, a debated model. From maneuverability to calm dominance.',
     intro:
       'Level 2 is the stage of mastering your emotional system as a high-tech reactor. We stop perceiving emotions as mere "moods" and begin treating them as biological protocols: with specific hormonal signatures, neuromotor patterns, and vegetative profiles.\n\nAt this level, we follow the path of mammalian evolution: from the instantaneous reactions of a small animal to the unshakable calm of a large predator and the complex resonance of a higher primate.',
     architecture: {
@@ -182,7 +182,7 @@ export const levelsData: Record<number, LevelData> = {
           protocol: 'Protocol: The Maneuverability of the "Small Mammal"',
           goal: 'Objective: Biological flexibility and instantaneous acceleration without paralyzing stress.',
           work:
-            'Mechanism: Inspired by polyvagal ideas (a debated model) — practising the felt sense of safety and threat that the model calls neuroception. We teach the system to "drift" smoothly between rest and action, turning cortisol and adrenaline from toxins into fuel for precision.',
+            'Mechanism: Inspired by polyvagal ideas (a debated model) — practising the felt sense of safety and threat that the model calls neuroception. We teach the system to "drift" smoothly between rest and action, staying composed and precise under pressure.',
         },
         {
           number: '05',
@@ -191,7 +191,7 @@ export const levelsData: Record<number, LevelData> = {
           protocol: 'Protocol: The Strength of the "Large Mammal"',
           goal: 'Objective: Status calm and density of presence.',
           work:
-            'Mechanism: Reconfiguring the endocrine system. We shift the adrenal glands from emergency cortisol release to the production of DHEA (the hormone of vitality). This is a state of "calm dominance," where your stability is sensed by others at a limbic level before you even speak.',
+            'Mechanism: Building a steady, grounded presence over time. This is a state of "calm dominance," where your stability is sensed by others at a limbic level before you even speak.',
         },
         {
           number: '06',
@@ -232,7 +232,7 @@ export const levelsData: Record<number, LevelData> = {
       items: [
         { name: 'Hypothalamus', text: 'Control center for territorial behavior and hormonal balance.' },
         { name: 'Basal Ganglia', text: 'Formation of stable, "unshakeable" postures and dominance habits.' },
-        { name: 'Mirror Neurons', text: 'Your biological Wi-Fi for instantaneous reading of others\' intentions.' },
+        { name: 'Mirror Neurons', text: 'Research links them to understanding others\' actions and intentions; their exact role is still debated.' },
         { name: 'Anterior Cingulate Cortex', text: 'The detector for social signals and emotional accuracy.' },
       ],
     },
@@ -321,7 +321,7 @@ export const levelsData: Record<number, LevelData> = {
         },
         {
           name: 'Gamma Binding',
-          text: 'Synchronizing neurons at gamma frequency to assemble scattered fragments of experience into a single insight.',
+          text: 'The aim of gathering scattered fragments of experience into a single insight. Research links this kind of binding to gamma-frequency activity, but its role is debated, and ONDA does not record EEG.',
         },
         {
           name: 'Proactive Programming (RAS)',
@@ -604,9 +604,9 @@ export const levelsData: Record<number, LevelData> = {
           label: 'I Synchronize',
           slug: 'i-synchronize',
           protocol: 'Protocol: Neuroelectric Synchronization and Collective Intelligence',
-          goal: 'Objective: From "I-mode" to "Network Node" — activating inter-brain hyperscanning and collective flow.',
+          goal: 'Objective: From "I-mode" to "Network Node" — shared rhythm and collective flow with others.',
           work:
-            'Work: Triggering Gamma rhythms (40 Hz) and the Mirror Neuron System. Achieving neuroelectric phase-locking with others to access "oceanic" scale resources and solutions.',
+            'Work: Shared breathing, joint attention and the Mirror Neuron System, inspired by hyperscanning research on how brain activity can align between people (early findings; ONDA does not record EEG). The aim: access "oceanic" scale resources and solutions.',
         },
       ],
     },
@@ -624,11 +624,11 @@ export const levelsData: Record<number, LevelData> = {
         },
         {
           name: 'Gamma-Flow Tuning',
-          text: 'Techniques to stabilize high-frequency (40 Hz) brain activity for collective insight and rapid learning.',
+          text: 'Techniques for sustaining shared, high-focus states for collective insight and rapid learning. Fast (40 Hz) gamma activity is the image here; ONDA does not record EEG.',
         },
         {
           name: 'Limbic Decoupling',
-          text: 'Training the PFC to register "charged" data without triggering cortisol release or the amygdala.',
+          text: 'Training the PFC to register "charged" data without getting pulled into a stress reaction.',
         },
       ],
     },

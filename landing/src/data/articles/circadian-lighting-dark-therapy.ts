@@ -63,13 +63,13 @@ Dark Therapy is the intentional restriction of short-wavelength light to allow f
 
 > **The Hack:** Exposure to 10,000+ LUX of natural sunlight within 30 minutes of waking.
 >
-> **The Logic:** This triggers a high-amplitude Cortisol spike, which sets a timer for melatonin release 14–16 hours later. It anchors your 'System Clock' to the local solar cycle, eliminating midday brain fog.
+> **The Logic:** Morning light is the strongest daily signal for your body clock and helps time evening melatonin. The popular claim that a cortisol spike sets a precise melatonin "timer" is not strongly evidenced. It anchors your 'System Clock' to the local solar cycle, eliminating midday brain fog.
 
 ### PROTOCOL_02 > Spectral Shift (Evening Calibration)
 
 > **The Hack:** Switch all environmental lighting to red/amber wavelengths (below 2000K) after 8:00 PM.
 >
-> **The Logic:** Red light has no inhibitory effect on Melatonin production. Red and near-infrared light also reach the mitochondria directly — see [mitochondrial DNA & red light](/articles/mitochondrial-dna-red-light). By shifting the spectrum, you maintain visibility without sending an 'Emergency Wake' signal to the SCN.
+> **The Logic:** Dim red light suppresses melatonin far less than blue-rich light. Red and near-infrared light also reach the mitochondria directly — see [mitochondrial DNA & red light](/articles/mitochondrial-dna-red-light). By shifting the spectrum, you maintain visibility without sending an 'Emergency Wake' signal to the SCN.
 
 ### PROTOCOL_03 > The Photic Firewall (Blue Light Blocking)
 
@@ -78,7 +78,7 @@ Dark Therapy is the intentional restriction of short-wavelength light to allow f
 > **The Logic:** This filters out the specific 450-480nm frequencies that suppress melatonin. It allows for 'Digital Input' while maintaining 'Hormonal Integrity,' acting as a software bridge between the modern world and ancient biology.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Lux Meter / Spectrometer
+> EXAMPLE_DEVICE: Lux Meter / Spectrometer
 > METRIC: Melanopic Lux < 10 (Post-Sunset)
 > STATUS: SIGNAL_NOISE_REDUCED
 

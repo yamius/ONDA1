@@ -71,14 +71,6 @@ The sticker price includes the sauna and heater, but plan for:
 - **Assembly:** it arrives as a DIY kit; plan a day with a helper or pay an installer.
 - **Running costs:** electricity for a 6 kW heater during warm-up and sessions, plus occasional stone and wood care.
 
-## Safety: who should be careful
-
-- **Heart conditions:** with unstable angina, a recent heart attack, severe aortic stenosis or uncontrolled blood pressure, ask your doctor first.
-- **Alcohol:** don’t drink before or during a session — it raises the risk of fainting, low blood pressure and heart-rhythm problems.
-- **Dehydration:** drink water, keep sessions to roughly 10–20 minutes, and get out if you feel dizzy.
-- **Children:** only short, supervised sessions at lower temperatures.
-- **Pregnancy:** avoid raising core temperature, especially early in pregnancy; talk to your clinician first.
-
 ## How the Salem compares
 
 | Sauna | Type | Price (our review) | Capacity | Best for |
@@ -98,9 +90,9 @@ The sticker price includes the sauna and heater, but plan for:
 
 ## Background reading
 
-The biology of why heat exposure works — and the protocols that compound with the hardware.
+Background reading on the ideas behind heat exposure — mostly hypotheses, not effects shown in people.
 
-- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why heat stress drives mitochondrial density up
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — the idea that heat stress affects mitochondria (not shown in people)
 - [Longevity hardware and cellular cleanup](/articles/longevity-hardware-cellular-cleanup) — how sauna fits the broader autophagy / mitophagy stack
 `,
   references: [

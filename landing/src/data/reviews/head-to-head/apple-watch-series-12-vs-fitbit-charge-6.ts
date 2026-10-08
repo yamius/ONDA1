@@ -12,12 +12,12 @@ const series12VsCharge6: HeadToHeadInput = {
   verdict:
     'No overall winner — two different tiers. For the deeper HRV system, ECG, hypertension notifications and a full smartwatch, the Series 12 leads. For the cheapest credible way to track HRV and sleep trends, with a battery that suits every-night wear, the Charge 6 leads.',
   bestForA:
-    'Choose the Series 12 if you want a do-everything smartwatch whose HRV is now good enough to act on — Recovery HRV against your baseline, ECG and hypertension notifications — with no subscription.',
+    'Choose the Series 12 if you want a do-everything smartwatch whose HRV is now usable as a personal trend — Recovery HRV against your baseline, ECG and hypertension notifications — with no subscription.',
   bestForB:
     'Choose the Fitbit Charge 6 if you want an affordable, light band that tracks overnight HRV and sleep trends well enough, and you are not trying to train on the data.',
   axes: [
     { name: 'HRV depth', winner: 'a', note: 'The Series 12 samples HRV ~24× more often and reports Recovery HRV against your baseline plus Overall HRV. The Charge 6 reports a basic overnight figure — fine for trends, without the depth.' },
-    { name: 'Sleep tracking', winner: 'b', note: 'Fitbit sleep tracking is long-refined and reliable; the Series 12’s sleep tracking is improved but still behind dedicated sleep trackers.' },
+    { name: 'Sleep tracking', winner: 'b', note: 'Fitbit sleep tracking is long-refined and reliable for sleep/wake (stage estimates are less consistent); the Series 12’s sleep tracking is improved but still behind dedicated sleep trackers.' },
     { name: 'Battery / overnight wear', winner: 'b', note: 'Charge 6: a small, light band with a multi-day battery, easy to wear every night. Series 12: up to ~24 hours, so charging competes with overnight wear.' },
     { name: 'Sensor & health features', winner: 'a', note: 'The Series 12’s Health Sensing System adds a single-lead ECG and optical hypertension notifications; the Charge 6 is optical PPG with SpO2 and respiratory rate.' },
     { name: 'Smartwatch & app', winner: 'a', note: 'Apps, payments and a clean Apple Health UI with HRV in the Heart Rate app. The Charge 6 has GPS and a few Google apps, but its app pushes Premium persistently.' },

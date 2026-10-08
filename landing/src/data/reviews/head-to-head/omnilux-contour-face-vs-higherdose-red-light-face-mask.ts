@@ -3,7 +3,7 @@ import type { HeadToHeadInput } from '../types'
 /**
  * Omnilux Contour Face vs HigherDOSE Red Light Face Mask — clinical reference vs lifestyle mask.
  * Facts verified 2026-10-04 on official product pages: Omnilux $395, 633 nm + 830 nm,
- * 132 LEDs, ~30 mW/cm², 10-min sessions, FDA-cleared; HigherDOSE $349, 630 nm (26 mW/cm²)
+ * 132 LEDs, ~30 mW/cm², 10-min sessions, FDA-cleared per Omnilux; HigherDOSE $349, 630 nm (26 mW/cm²)
  * + 830 nm (24 mW/cm²), 50 mW/cm² total claimed, 132 diodes, 10 or 20-min sessions,
  * described as FDA-cleared, brand 8-week self-reported trial. Evidence-based, not hands-on.
  */
@@ -19,11 +19,11 @@ const omniluxContourFaceVsHigherdoseRedLightFaceMask: HeadToHeadInput = {
   verdict:
     'Omnilux Contour Face is the safer pick for most buyers because it pairs the same red and near-infrared light with a longer clinical record, while HigherDOSE is a reasonable cheaper alternative with higher claimed output.',
   bestForA:
-    'Choose Omnilux Contour Face if you want the mask with the strongest clinical and FDA-clearance record and a simple 10-minute routine.',
+    'Choose Omnilux Contour Face if you want the mask with the strongest clinical record and a simple 10-minute routine.',
   bestForB:
     'Choose HigherDOSE Red Light Face Mask if you want a slightly cheaper lifestyle mask with a 20-minute option and higher claimed irradiance.',
   axes: [
-    { name: 'Clinical record', winner: 'a', note: 'Omnilux is FDA-cleared and its devices are used in dermatology practices with published studies; HigherDOSE cites its own 8-week trial with self-reported results.' },
+    { name: 'Clinical record', winner: 'a', note: 'Omnilux says the mask is FDA-cleared, and its devices are used in dermatology practices with published studies; HigherDOSE cites its own 8-week trial with self-reported results.' },
     { name: 'Wavelengths', winner: 'tie', note: 'Omnilux: red 633 nm + near-infrared 830 nm. HigherDOSE: red 630 nm + near-infrared 830 nm — effectively the same pair.' },
     { name: 'LEDs', winner: 'tie', note: 'Both use 66 dual-chip LEDs for 132 light sources across the face; neither includes a neck section.' },
     { name: 'Irradiance claim', winner: 'b', note: 'HigherDOSE claims 50 mW/cm² total (26 red + 24 near-infrared); Omnilux states about 30 mW/cm².' },
@@ -63,7 +63,7 @@ Both are flexible silicone masks with 66 dual-chip LEDs (132 light sources) that
 
 ## Who should pick which
 
-Pick **Omnilux** if you care most about clinical backing: it is FDA-cleared, its devices are used in dermatology practices and it has published studies behind it. Pick **HigherDOSE** if you want to save $46, like longer sessions, or already use other HigherDOSE products.
+Pick **Omnilux** if you care most about clinical backing: its devices are used in dermatology practices and it has published studies behind it. Pick **HigherDOSE** if you want to save $46, like longer sessions, or already use other HigherDOSE products.
 
 ## What the evidence says
 

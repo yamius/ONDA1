@@ -6,13 +6,13 @@ const bestPemfDevices2026: Comparison = {
   description:
     'ONDA ranks the ten best PEMF devices of 2026 — Bemer Classic Evo, Healthy Wave, Pulse Centers, Curatron, iMRS, OMI, EarthPulse, Resona Health, OlyLife, HigherDOSE and MagnaWave. Scored on field strength, waveform research, build and value.',
   intro:
-    'Pulsed electromagnetic field hardware split into three clean tiers by 2026: research-backed premium mats (Bemer, iMRS), multi-modality consumer mats (Healthy Wave, HigherDOSE) and clinical / portable coil systems (Pulse Centers, Curatron, MagnaWave). The new wearable tier (Resona Health VIBE at $299) opens a sub-$500 entry point that didn\'t exist three years ago. We scored the ten most credible systems of 2026 against the same six axes: field strength, waveform research, build, programmability, form factor and value.',
+    'Pulsed electromagnetic field hardware split into three clean tiers by 2026: premium proprietary-signal mats (Bemer, iMRS), multi-modality consumer mats (Healthy Wave, HigherDOSE) and clinical / portable coil systems (Pulse Centers, Curatron, MagnaWave). The new wearable tier (Resona Health VIBE at $299) opens a sub-$500 entry point that didn\'t exist three years ago. We scored the ten most-searched systems of 2026 against the same six axes: field strength, waveform research, build, programmability, form factor and value.',
   category: 'pemf',
   picks: [
     {
       reviewSlug: 'bemer-classic-evo',
       award: 'Best overall',
-      takeaway: 'Most-published PEMF waveform, FDA Class II clearance, multi-decade brand — the category reference.',
+      takeaway: 'Best-known PEMF mat and most-studied single signal, premium build, multi-decade brand. Most studies are manufacturer-linked; its FDA clearance is for non-medical muscle conditioning.',
     },
     {
       reviewSlug: 'healthy-wave-multi-wave',
@@ -22,12 +22,12 @@ const bestPemfDevices2026: Comparison = {
     {
       reviewSlug: 'pulse-centers-pulse-xl-pro',
       award: 'Best high-intensity clinical',
-      takeaway: 'Highest consumer-accessible field intensity via clinical coil applicators — pro-athlete grade.',
+      takeaway: 'Highest consumer-accessible field intensity via coil applicators, sold mainly to clinics. No independent trials of this system.',
     },
     {
       reviewSlug: 'curatron-3d',
-      award: 'Best medical-grade dual-applicator',
-      takeaway: 'Mat + coil from a single Swiss/Israeli medical-grade controller at mid-tier pricing.',
+      award: 'Best dual-applicator (mat + coil)',
+      takeaway: 'Mat + coil from a single controller with transparent parameters at mid-tier pricing. FDA registration is a listing, not a clearance.',
     },
     {
       reviewSlug: 'imrs-prime',
@@ -42,12 +42,12 @@ const bestPemfDevices2026: Comparison = {
     {
       reviewSlug: 'omi-full-body-mat',
       award: 'Best mid-tier mat',
-      takeaway: 'FDA bone-healing waveform research band at accessible $1,500–$2,000 pricing.',
+      takeaway: 'Simple single-modality mat at accessible $1,500–$2,000 pricing. Not FDA-cleared for bone healing.',
     },
     {
       reviewSlug: 'earthpulse-sleep-on-command',
       award: 'Best sleep-focused',
-      takeaway: 'Under-mattress install, Schumann + delta-band overnight protocols at $899.',
+      takeaway: 'Under-mattress install with maker-marketed Schumann and delta sleep settings at $899 — no controlled trials show better sleep.',
     },
     {
       reviewSlug: 'resona-health-vibe',
@@ -61,15 +61,15 @@ const bestPemfDevices2026: Comparison = {
     },
   ],
   verdict:
-    'Bemer Classic Evo wins overall as the category-defining PEMF mat with the deepest published research base. Healthy Wave Multi-Wave is the best modality-stacked alternative at half the price. Pulse Centers Pulse XL Pro owns the high-intensity clinical coil niche. Resona Health VIBE at $299 redefines the entry tier — PEMF-curious users no longer need to commit $2,000+ to try the modality. Pick on three questions: waveform research backing (Bemer), modality stacking (Healthy Wave), or commitment level (Resona VIBE).',
+    'Bemer Classic Evo wins overall on build, applicator system and brand — it has the longest study list, though most studies are manufacturer-linked and independent controlled trials found no difference from control. Healthy Wave Multi-Wave is the best modality-stacked alternative at half the price. Pulse Centers Pulse XL Pro owns the high-intensity clinical coil niche. Resona Health VIBE at $299 redefines the entry tier — PEMF-curious users no longer need to commit $2,000+ to try the modality. Pick on three questions: proprietary signal and build (Bemer), modality stacking (Healthy Wave), or commitment level (Resona VIBE).',
   faq: [
     {
       q: 'What is the best PEMF device in 2026?',
-      a: 'Bemer Classic Evo overall — most-published waveform, FDA Class II clearance. Healthy Wave Multi-Wave for multi-modality (PEMF + IR + red light) at half the price. Pulse Centers for high-intensity coil. Resona Health VIBE for $299 wearable entry.',
+      a: 'Bemer Classic Evo overall — best build and most-studied signal, though evidence is mostly maker-linked. Healthy Wave Multi-Wave for multi-modality (PEMF + IR + red light) at half the price. Pulse Centers for high-intensity coil. Resona Health VIBE for $299 wearable entry.',
     },
     {
       q: 'Is Bemer worth the premium price?',
-      a: 'For users buying PEMF specifically for waveform research backing — yes, the Bemer biorhythmic signal has 50+ peer-reviewed studies no other consumer PEMF can match. For users prioritising modality stacking or raw intensity, alternatives deliver more for less.',
+      a: 'Only if you value its build and brand. Bemer cites more studies than any other consumer PEMF, but most are small or manufacturer-linked, and independent controlled trials found no difference from control. For modality stacking or raw intensity, alternatives deliver more for less.',
     },
     {
       q: 'PEMF mat vs coil — which should I buy?',
@@ -77,11 +77,11 @@ const bestPemfDevices2026: Comparison = {
     },
     {
       q: 'Does PEMF actually work?',
-      a: 'For specific FDA-cleared indications (bone healing, post-operative edema) — yes, with strong published evidence. For general wellness, recovery and sleep, the evidence is mixed and varies by waveform and intensity. Bemer\'s biorhythmic signal has the deepest consumer-PEMF research moat; other devices use the general PEMF literature.',
+      a: 'Partly. Trials with clinical devices suggest short-term pain relief in osteoarthritis and low back pain; for non-healing fractures a Cochrane review called the evidence inconclusive. Medical bone stimulators are prescription devices, not these mats. For wellness, recovery and sleep, evidence is weak.',
     },
     {
       q: 'What\'s the cheapest credible PEMF device?',
-      a: 'Resona Health VIBE at $299 — wearable form factor, 130+ documented protocols, real PEMF component. Best entry point for PEMF-curious users before committing to a mat. EarthPulse Sleep on Command at $899 if your use case is specifically sleep.',
+      a: 'Resona Health VIBE at $299 — wearable form factor, 130+ preset protocols, real PEMF component. Best entry point for PEMF-curious users before committing to a mat. EarthPulse Sleep on Command ($899) is marketed for sleep, but better sleep is not shown in trials.',
     },
     {
       q: 'How much does Bemer really cost over 3 years?',
@@ -90,24 +90,24 @@ const bestPemfDevices2026: Comparison = {
   ],
   content: `## How we ranked them
 
-Every system was scored against ONDA\'s published [review methodology](/reviews/methodology): six weighted criteria, with field strength and waveform research carrying weight on purpose — the category\'s biggest user-confusion sources are inflated intensity claims and proprietary-waveform marketing without research backing.
+Every system was scored against ONDA\'s published [review methodology](/reviews/methodology): six weighted criteria, with field strength and waveform research carrying weight on purpose — the category\'s biggest user-confusion sources are inflated intensity claims and proprietary-waveform marketing without independent research backing. What the research shows and does not show is summarised in [PEMF therapy — the evidence](/science/evidence/pemf).
 
-All ten were assessed from manufacturer documentation, FDA registration records and independent 2026 consumer/clinician reviews rather than hands-on testing.
+All ten were assessed from manufacturer documentation, FDA databases and independent 2026 consumer/clinician reviews rather than hands-on testing. An FDA registration is only a listing; a 510(k) clearance covers one stated use and is not proof of health benefits. Medical PEMF bone-growth stimulators were approved through premarket approval (PMA) until May 2026 and are class II (510(k)) devices since then — none of the consumer devices below is one of them.
 
 ## Best PEMF Devices: which should you buy?
 
 Three buying questions resolve the category cleanly:
 
-**Do you want research-backed proprietary waveform?** Yes → Bemer Classic Evo (50+ peer-reviewed studies on the specific signal). No → Healthy Wave, iMRS, OMI (well-documented general PEMF frequencies).
+**Do you want a proprietary signal with its own study list?** Yes → Bemer Classic Evo (many studies, mostly small or manufacturer-linked; independent controlled trials found no difference from control). No → Healthy Wave, iMRS, OMI (common PEMF frequencies, no trials of the devices themselves).
 
-**What form factor?** Whole-body mat (Bemer, Healthy Wave, OMI, HigherDOSE). Localised coil (Pulse Centers, MagnaWave, Curatron). Sleep-specific under-mattress (EarthPulse). Wearable (Resona VIBE, OlyLife).
+**What form factor?** Whole-body mat (Bemer, Healthy Wave, OMI, HigherDOSE). Localised coil (Pulse Centers, MagnaWave, Curatron). Under-mattress, marketed for sleep (EarthPulse). Wearable (Resona VIBE, OlyLife).
 
 **What budget tier?** Under $500: Resona VIBE wearable, OlyLife wand. $1,000–$2,500: OMI, HigherDOSE, EarthPulse, Healthy Wave (full size $2,495; smaller sizes from $995). $3,000–$5,000: iMRS, Curatron. $5,000+: Bemer, Pulse Centers, MagnaWave (compact Semi 10 from $8,360; lineup $5,500–$39,660).
 
-Bemer dominates the research-backed premium tier; Healthy Wave wins on modality stacking; Pulse Centers and MagnaWave own the clinical coil niche; Resona VIBE redefines the entry tier at $299.`,
+Bemer leads the premium tier on build and brand; Healthy Wave wins on modality stacking; Pulse Centers and MagnaWave own the clinical coil niche; Resona VIBE redefines the entry tier at $299.`,
   publishOn: '2026-06-22',
   datePublished: '2026-06-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-07',
 }
 
 export default bestPemfDevices2026

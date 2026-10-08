@@ -265,7 +265,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       established: 'Gesichert',
       guideline: 'Leitlinie / Expertenkonsens',
       'context-dependent': 'Kontextabhängig',
-      emerging: 'Vorläufig',
+      emerging: 'Erste Hinweise',
       debated: 'Umstritten',
       unknown: 'Unbekannt',
     },

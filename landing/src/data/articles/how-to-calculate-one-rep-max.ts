@@ -60,7 +60,7 @@ A validation study found these equations correlate strongly with measured 1RM (r
 **The Logic:** Percentages let you progress systematically. But real readiness fluctuates with sleep, stress and fatigue, so autoregulate with RPE/RIR (reps in reserve) rather than treating the percentage as sacred. Re-estimate every few weeks as you get stronger.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Training log
+> EXAMPLE_DEVICE: Training log
 > METRIC: Estimated 1RM trending up across mesocycles
 > STATUS: STRENGTH_CEILING_RISING
 

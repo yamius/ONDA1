@@ -63,7 +63,7 @@ The **Semi 10** is MagnaWave’s compact digital machine:
 
 **For pain.** A 2020 systematic review found that PEMF may reduce musculoskeletal pain, especially in knee osteoarthritis, but the trials used many different devices and settings, and the quality was mixed (Paolucci et al., 2020). There is no proof that one brand’s waveform works better than another’s.
 
-**For bone healing.** Some PEMF bone-growth stimulators are approved by the FDA for non-healing fractures. Those are specific medical devices with their own data. Their approval does not carry over to wellness PEMF machines.
+**For bone healing.** Some prescription PEMF bone-growth stimulators have been approved by the FDA (through premarket approval, PMA) for non-healing fractures; since May 2026 the FDA regulates them as class II devices cleared through 510(k). Those are specific medical devices with their own data, and a Cochrane review still called the evidence for non-union inconclusive. Their status does not carry over to wellness PEMF machines.
 
 **For MagnaWave itself.** We could not find published, peer-reviewed human trials of MagnaWave machines. Most of the brand’s reputation comes from equine use and practitioner reports. That is useful experience, but it is not controlled evidence.
 
@@ -110,8 +110,7 @@ The price comes first: from $8,360 for the smallest machine. The evidence is sec
 
 ## Background reading
 
-- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
-- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
+- [PEMF therapy — what the evidence shows](/science/evidence/pemf) — what is shown in people, what comes from cell studies, and what FDA registration, clearance and approval mean
 `,
   references: [
     { label: 'MagnaWave PEMF — official machine lineup and prices', url: 'https://www.magnawavepemf.com/machines/' },
@@ -127,7 +126,7 @@ The price comes first: from $8,360 for the smallest machine. The evidence is sec
     { q: "What are the downsides of the MagnaWave Mini?", a: "The smallest current MagnaWave costs from $8,360, there are no published human trials of the brand, it treats one area at a time with a coil instead of the whole body, the controls are made for practitioners, and it is marketed mainly for animals." },
     { q: "MagnaWave Mini vs Pulse Centers: which is better?", a: "They are now close in price: the MagnaWave Semi 10 starts at $8,360 and the Pulse Centers XL Pro costs about $9,000. MagnaWave suits equine and mobile practitioners with its carry case and 10-year warranty; Pulse Centers is the fuller clinic system for human use." },
     { q: "Is MagnaWave FDA approved?", a: "No. No MagnaWave machine is FDA approved. MagnaWave says its practitioner machines are not intended to diagnose, treat, cure or prevent disease in animals. Its home brand AuraWell is described by the company as FDA cleared, which means similar to an existing device for a narrow use, not approved." },
-    { q: "Does PEMF therapy actually work?", a: "Partly. A 2020 systematic review found PEMF may reduce musculoskeletal pain, especially knee osteoarthritis, but the studies varied widely and quality was mixed. Some PEMF bone stimulators are FDA approved for non-healing fractures, but that does not prove wellness devices work." },
+    { q: "Does PEMF therapy actually work?", a: "Partly. A 2020 systematic review found PEMF may reduce musculoskeletal pain, especially knee osteoarthritis, but the studies varied widely and quality was mixed. Some prescription PEMF bone stimulators have FDA approval for non-healing fractures (class II since 2026), but that does not prove wellness devices work." },
     { q: "Who should not use PEMF?", a: "Do not use PEMF with a pacemaker, defibrillator or other active implant, during pregnancy, or if you have epilepsy. Ask a doctor before using it over metal implants, a tumour or an active bleed, and start at low intensity." },
   ],
   datePublished: '2026-06-22',

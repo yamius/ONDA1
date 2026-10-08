@@ -34,7 +34,7 @@ const threePremiumSauna: HeadToHeadInput = {
     },
     {
       q: 'Is full-spectrum IR better than near-IR-only?',
-      a: 'Different bets. Full-spectrum delivers heating across near, mid and far wavelengths — broader thermal effect. Near-IR-only (SaunaSpace) targets the wavelengths closer to natural sunlight, with stronger penetration into deeper tissues. SaunaSpace bets on spectrum specificity; Sunlighten and Clearlight bet on spectrum breadth.',
+      a: 'Different bets. Full-spectrum delivers heating across near, mid and far wavelengths — broader thermal effect. Near-IR-only (SaunaSpace) targets the wavelengths closer to natural sunlight, which the maker says penetrate deeper into tissue; a health benefit of that has not been shown. SaunaSpace bets on spectrum specificity; Sunlighten and Clearlight bet on spectrum breadth.',
     },
     {
       q: 'Does the EMF difference between these matter?',

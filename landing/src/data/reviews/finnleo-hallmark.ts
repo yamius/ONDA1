@@ -17,14 +17,14 @@ const finnleoHallmark: ToolReviewInput = {
     { criterionId: 'build', score: 9.0, note: 'Finnish hemlock or nordic white spruce. Multi-decade Finnish manufacturing pedigree. 5-year structural warranty.' },
     { criterionId: 'emf', score: 9.5, note: 'Traditional convection — no electronics in heat delivery. EMF non-issue.' },
     { criterionId: 'form-factor', score: 7.0, note: 'Indoor cabin installation. 1–6 person configurations. Requires ventilation planning and 220V for larger heaters.' },
-    { criterionId: 'evidence', score: 8.0, note: 'The Finnish cohort studies on cardiovascular mortality and dementia risk were run on this style of sauna. Deepest evidence base in the sauna category.' },
+    { criterionId: 'evidence', score: 8.0, note: 'The Finnish cohort studies on cardiovascular mortality and dementia risk were run on this style of sauna. Deepest evidence base in the sauna category, though observational (men only; associations, not cause).' },
     { criterionId: 'value', score: 5.5, note: '$6,000–$12,000+ depending on configuration. Premium Finnish pedigree pricing.' },
   ],
   pros: [
     'Premium Finnish manufacturing pedigree — the reference traditional sauna',
     'Helo-engineered heater with löyly steam support',
     'Finnish hemlock or nordic white spruce construction',
-    'Deepest published research evidence base (Finnish cohort studies)',
+    'Deepest published research evidence base (observational Finnish cohort studies)',
   ],
   cons: [
     'Not IR — different mechanism from IR cabin saunas',
@@ -41,7 +41,7 @@ const finnleoHallmark: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Finnleo Hallmark is the premium traditional indoor Finnish sauna. Finnish-built, Helo-engineered heater, hemlock or nordic spruce construction, full löyly-capable convection heat. This is the format the Finnish cardiovascular and cognitive cohort studies were built on — the deepest evidence base in the sauna category sits behind this mechanism.
+Finnleo Hallmark is the premium traditional indoor Finnish sauna. Finnish-built, Helo-engineered heater, hemlock or nordic spruce construction, full löyly-capable convection heat. This is the format the Finnish cardiovascular and cognitive cohort studies were built on — the deepest evidence base in the sauna category sits behind this format. Those studies are observational, in middle-aged Finnish men: they show associations, not proof that sauna causes the benefit.
 
 ## What are the downsides of Finnleo Hallmark?
 
@@ -55,10 +55,10 @@ Choose Finnleo Hallmark if traditional Finnish indoor sauna with premium Finnish
 
 ## Background reading
 
-The biology of why heat exposure works — and the protocols that compound with the hardware.
+Background reading on the ideas behind heat exposure — mostly hypotheses, not effects shown in people.
 
-- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why heat stress drives mitochondrial density up
-- [Mitochondrial DNA and red light](/articles/mitochondrial-dna-red-light) — how near-IR photons reach mitochondria — the mechanism IR saunas borrow
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — the idea that heat stress affects mitochondria (not shown in people)
+- [Mitochondrial DNA and red light](/articles/mitochondrial-dna-red-light) — how near-IR photons reach mitochondria — the mechanism IR sauna makers point to (not shown for saunas)
 - [Longevity hardware and cellular cleanup](/articles/longevity-hardware-cellular-cleanup) — how sauna fits the broader autophagy / mitophagy stack
 `,
   references: [

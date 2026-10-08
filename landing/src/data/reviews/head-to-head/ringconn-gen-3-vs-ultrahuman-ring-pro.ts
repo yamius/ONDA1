@@ -16,7 +16,7 @@ const gen3VsRingPro: HeadToHeadInput = {
   bestForB:
     'Choose the Ultrahuman Ring Pro if you want the longest battery, on-ring processing and Ultrahuman’s metabolic-leaning metrics, and the higher price is worth it.',
   axes: [
-    { name: 'Subscription', winner: 'c', note: 'Tie — both are one-time purchases with no membership.' },
+    { name: 'Subscription', winner: 'tie', note: 'Tie — both are one-time purchases with no membership.' },
     { name: 'Price', winner: 'a', note: 'RingConn Gen 3: $349. Ultrahuman Ring Pro: $479. RingConn is $130 cheaper.' },
     { name: 'Battery', winner: 'b', note: 'Ring Pro: ~15 days — best in class. RingConn Gen 3: ~10-14 days. Both excellent; Ultrahuman edges it.' },
     { name: 'Unique features', winner: 'a', note: 'The Gen 3 has a first-in-category haptic motor (silent alarm/alerts), vascular/blood-pressure trends and sleep-apnea insights — RingConn’s differentiators.' },

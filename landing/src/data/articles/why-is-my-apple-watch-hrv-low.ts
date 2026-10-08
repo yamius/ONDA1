@@ -29,7 +29,7 @@ A low [HRV](/science/concepts/heart-rate-variability) number on your Apple Watch
 Heart rate variability (HRV) is the small variation in time between heartbeats. Devices summarise it in different ways:
 
 - **Apple Watch** reports **[SDNN](/science/concepts/sdnn)** — the spread of beat-to-beat intervals — from short readings of about a minute, taken in the background a few times a day (older models; Series 12 and Ultra 4 on watchOS 27 measure as often as every five minutes) and during Breathe or Mindfulness sessions.
-- **Oura, Whoop and Garmin** report **[RMSSD](/science/concepts/rmssd)**, usually averaged over the night, when the body is most relaxed and HRV is at its highest.
+- **Oura, Whoop and Garmin** typically report **[RMSSD](/science/concepts/rmssd)**-type values averaged over sleep, when the body is still and relaxed.
 
 Short daytime readings run lower than a night-time average, and SDNN and RMSSD are different numbers. So an Apple Watch HRV of 35 next to an Oura value of 55 does not mean one of them is wrong, or that your recovery is worse. [Why your HRV differs on every device](/articles/hrv-different-every-device) explains this in more detail. Newer watches also show a separate Recovery HRV; see [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv).
 

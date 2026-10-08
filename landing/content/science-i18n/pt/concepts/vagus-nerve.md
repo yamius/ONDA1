@@ -1,5 +1,5 @@
 ---
-sourceHash: 60023d57fe48
+sourceHash: 3f90a409e444
 title: "O nervo vago: o que ele faz e o que é mito"
 metaTitle: "Nervo vago: o que ele faz e o que é mito"
 metaDescription: "O que o nervo vago faz de fato — coração, intestino, vias aéreas, garganta, sinais ao cérebro — e quais alegações sobre o tônus vagal vão longe demais."

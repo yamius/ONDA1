@@ -72,16 +72,11 @@ For whole-body mats, see [OMI Full Body Mat](/reviews/omi-full-body-mat) and [He
 
 Choose Resona Health VIBE if you are curious about PEMF and want a low-commitment first device, or if you want a portable wearable for targeted use. Skip it if you want whole-body sessions, or if you expect a proven medical effect.
 
-## Is PEMF safe?
-
-For most healthy adults, low-intensity consumer PEMF appears low-risk. Do not use it if you have a pacemaker or another implanted electronic device, and check with a doctor first if you are pregnant, have epilepsy or are being treated for a medical condition. PEMF should not replace medical treatment.
-
 ---
 
 ## Background reading
 
-- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
-- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
+- [PEMF therapy — what the evidence shows](/science/evidence/pemf) — what is shown in people, what comes from cell studies, and what FDA registration, clearance and approval mean
 `,
   references: [
     { label: 'Resona Health — official site', url: 'https://resona.health/product/vibe/' },

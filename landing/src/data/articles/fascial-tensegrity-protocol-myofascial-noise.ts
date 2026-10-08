@@ -66,7 +66,7 @@ This step uses a slow exhale to help lower the system Jitter. "Vagus activation"
 **System Effect:** {{fact:claim.slowExhale}}. Slowing the breath also lowers your heart rate and releases remaining tension in the jaw and neck.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: HRV monitor / subjective tension scan
+> EXAMPLE_DEVICE: HRV monitor / subjective tension scan
 > METRIC: rMSSD, neck/shoulder tension index, breath cadence
 > STATUS: STRUCTURAL_BALANCE
 
@@ -93,7 +93,7 @@ Regular execution of this protocol delivers the following results.
       protocolId: 'fascia-trapezius-release',
     },
     {
-      name: 'Vagus Activation (Resonant Humming Exhale)',
+      name: 'Slow Humming Exhale',
       text: 'Inhale smoothly through the nose over 4 seconds. Exhale slowly over 8 to 10 seconds with a low-frequency humming sound or controlled pursed-lip exhale. Repeat 5 cycles.',
       protocolId: 'fascia-vagus-humming',
     },

@@ -64,7 +64,7 @@ In practice, that means comparing like with like: a morning reading taken the sa
 Slow, long-exhale breathing is the strongest, best-evidenced vagus nerve exercise; humming, cold on the face and slow social contact follow.
 
 - **Slow, long-exhale breathing** — the strongest, best-evidenced lever. {{fact:claim.slowExhale}}. Slow breathing shifts state fast (Gerritsen & Band 2018). This is the engine behind every breathing app, and the [Breathing Pacer](/tools/breathing) automates it.
-- **Humming, chanting, gargling** — the vagus innervates the larynx, so vocal-cord vibration is thought to give it gentle stimulation (a proposed route). Low-cost, surprisingly effective for a quick reset.
+- **Humming, chanting, gargling** — the vagus innervates the larynx, so vocal-cord vibration is thought to give it gentle stimulation (a proposed route, not shown beyond the slow exhale that comes with it). Low-cost and easy to try; see [humming, chanting and Om: the evidence](/science/evidence/humming-and-chanting).
 - **Cold on the face** — a cold splash or pack to the face triggers the [dive reflex](/glossary/mammalian-dive-reflex), abruptly slowing the heart via the vagus. A fast circuit-breaker when you're spiked.
 - **Slow, social, safe** — unhurried conversation, being with people you trust, and even a long exhale-sigh all nudge the system toward the regulated state.
 
@@ -101,9 +101,9 @@ Start with the long exhale, add a hum when you want a quick reset, and keep the 
 **The Logic:** This fires the mammalian dive reflex, which slows the heart through the vagus — useful to break an acute stress spike. (Skip if you have a heart condition.)
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: HRV tracker (morning trend)
-> METRIC: Resting HRV trends up over weeks of daily practice
-> STATUS: HRV_RISING
+> EXAMPLE_DEVICE: HRV tracker (morning trend)
+> METRIC: HRV rises during the face cooling; a higher resting HRV afterwards has not been shown
+> STATUS: HRV_UP_DURING_EXPOSURE
 `,
 }
 

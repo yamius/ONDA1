@@ -38,7 +38,7 @@ const wimHofVsSoma: HeadToHeadInput = {
     },
     {
       q: 'Can I do Wim Hof safely without an app?',
-      a: 'The basic rounds (30–40 deep breaths + retention + recovery breath) can be done without an app. Both WHM app and SOMA add structure, progression and timing — useful but not strictly required. Cold-exposure protocols are where the WHM app integration becomes more valuable.',
+      a: 'The basic rounds (30–40 deep breaths + retention + recovery breath) can be done without an app. Both WHM app and SOMA add structure, progression and timing — useful but not strictly required. Cold-exposure protocols are where the WHM app integration becomes more valuable. With or without an app, do the rounds sitting or lying down — never in or near water and never while driving, because they can cause fainting.',
     },
   ],
   content: `## The short version

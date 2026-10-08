@@ -35,7 +35,7 @@ const muse2VsFocusCalmVsMendi: HeadToHeadInput = {
     },
     {
       q: 'Is fNIRS as good as EEG?',
-      a: 'Different signal, different use case. Mendi’s fNIRS measures prefrontal blood-oxygenation changes — slower, single-region. EEG measures electrical activity across multiple cortical sites — faster, richer. For focus training fNIRS works; for broader brain-training EEG is informationally richer.',
+      a: 'Different signal, different use case. Mendi’s fNIRS measures prefrontal blood-oxygenation changes — slower, single-region. EEG measures electrical activity across multiple cortical sites — faster, richer. Mendi uses fNIRS for its focus game, with mostly company-published evidence; for broader brain-training EEG is informationally richer.',
     },
     {
       q: 'Can I meditate with all three?',
@@ -43,7 +43,7 @@ const muse2VsFocusCalmVsMendi: HeadToHeadInput = {
     },
     {
       q: 'Which has the most research backing?',
-      a: 'Muse 2 — the Muse hardware has the largest published consumer-EEG research base after a decade of academic use. FocusCalm has less; Mendi’s fNIRS approach is plausible but the device-specific research is thinner.',
+      a: 'Muse 2 — the Muse hardware has the largest published consumer-EEG research base after a decade of academic use, mostly as a recording tool rather than as evidence that its feedback works. FocusCalm has less; Mendi’s fNIRS approach is plausible but the device-specific research is thinner.',
     },
     {
       q: 'Should I get any of these or upgrade to Muse S Athena?',

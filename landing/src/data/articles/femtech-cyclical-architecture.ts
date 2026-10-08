@@ -63,7 +63,7 @@ Insulin sensitivity and amino acid requirements fluctuate based on estrogen leve
 
 > **The Hack:** Use a smart ring (Oura/Evie) for daily Basal Body Temperature (BBT) tracking to identify phase transitions with precision.
 >
-> **The Logic:** A 0.3–0.5°C rise in temperature signals the switch to RECOVERY mode, where the system requires higher sleep priority and lower cortisol-inducing loads.
+> **The Logic:** A 0.3–0.5°C rise in temperature signals the switch to RECOVERY mode, where the system requires higher sleep priority and lighter stress and training loads.
 
 ### PROTOCOL_03 > NUTRITIONAL PATCH (MICRONUTRIENT_LOAD)
 
@@ -79,8 +79,8 @@ Insulin sensitivity and amino acid requirements fluctuate based on estrogen leve
 > SECONDARY_DEVICE: [CGM: CONTINUOUS_GLUCOSE_MONITOR]
 > METRIC: Insulin Sensitivity Index. Tracking how carbohydrate tolerance shifts across cycle weeks.
 > SYSTEM_DATA: [BIO_MARKERS: PROGESTERONE_PEAK]
-> METRIC: Confirmed ovulation as the primary indicator of overall system health and longevity.
-> STATUS: FEMALE_OS_OPTIMIZED.
+> METRIC: Whether ovulation occurs, cycle to cycle (progesterone rise).
+> STATUS: TRACK_OVER_WEEKS
 
 ---
 

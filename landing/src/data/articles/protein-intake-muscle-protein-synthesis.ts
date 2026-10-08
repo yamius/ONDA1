@@ -69,7 +69,7 @@ This becomes critical when you compress eating (see [intermittent fasting](/arti
 **The Logic:** A deficit signals the body to break down tissue for energy. High protein plus a resistance stimulus tells it to keep the muscle and burn fat instead.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Food log + strength/measurement trend
+> EXAMPLE_DEVICE: Food log + strength/measurement trend
 > METRIC: Daily protein ≥ target on most days; strength maintained in a deficit
 > STATUS: BUILD_QUEUE_PROVISIONED
 `,

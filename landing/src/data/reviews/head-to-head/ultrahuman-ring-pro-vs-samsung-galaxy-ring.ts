@@ -16,7 +16,7 @@ const ringProVsSamsung: HeadToHeadInput = {
   bestForB:
     'Choose the Samsung Galaxy Ring if you own a Samsung Galaxy phone, want tight ecosystem integration and a cheaper, more established ring.',
   axes: [
-    { name: 'Subscription', winner: 'c', note: 'Tie — neither charges a subscription. Both are one-time purchases, which is the whole reason to consider them over Oura.' },
+    { name: 'Subscription', winner: 'tie', note: 'Tie — neither charges a subscription. Both are one-time purchases, which is the whole reason to consider them over Oura.' },
     { name: 'Battery', winner: 'a', note: 'Ring Pro: ~15 days, best in class. Galaxy Ring: ~6–7 days. Clear edge to Ultrahuman.' },
     { name: 'Platform reach', winner: 'a', note: 'Ring Pro works fully across iOS and Android. The Galaxy Ring’s best features assume a Samsung Galaxy phone; outside that ecosystem it is more limited.' },
     { name: 'Ecosystem integration', winner: 'b', note: 'On a Samsung Galaxy phone, the Galaxy Ring integrates tightly with Samsung Health and Galaxy devices — smoother than a third-party ring for Samsung users.' },

@@ -1,5 +1,5 @@
 ---
-sourceHash: "33b9f01d78ea"
+sourceHash: "55f2a6818cc5"
 title: "HRV-Baseline: Warum dein eigenes Normal mehr zählt als jede Norm"
 metaTitle: "HRV-Baseline: dein eigenes Normal statt einer Norm"
 metaDescription: "Deine HRV-Baseline ist dein eigener typischer Bereich, kein Bevölkerungsdurchschnitt. Warum sie Altersnormen schlägt, wie ONDA sie bildet und was eine Abweichung bedeutet."

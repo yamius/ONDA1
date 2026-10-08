@@ -20,7 +20,7 @@ const hv3ProVsTheragunElite: HeadToHeadInput = {
     { name: 'Amplitude (depth)', winner: 'b', note: 'Theragun Elite: 16 mm deep stroke. Hypervolt 3 Pro: ~14 mm. The Elite reaches deeper into tissue — Theragun’s signature.' },
     { name: 'Noise & battery', winner: 'a', note: 'The 3 Pro’s QuietGlide motor (~51 dB) and 4-hour battery beat the Elite on both.' },
     { name: 'Ergonomics', winner: 'b', note: 'Theragun’s multi-grip triangle reaches awkward muscles more ways; the Hypervolt’s single-grip handle is comfortable but less versatile.' },
-    { name: 'App', winner: 'c', note: 'Both connect to a capable app (Hyperice vs Therabody) with guided routines and pressure feedback — roughly a wash.' },
+    { name: 'App', winner: 'tie', note: 'Both connect to a capable app (Hyperice vs Therabody) with guided routines and pressure feedback — roughly a wash.' },
     { name: 'Price', winner: 'a', note: 'Hypervolt 3 Pro: $349. Theragun Elite: $399. The Hypervolt is cheaper and stronger.' },
   ],
   faq: [

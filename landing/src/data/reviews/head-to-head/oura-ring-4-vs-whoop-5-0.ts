@@ -17,7 +17,7 @@ const ouraRing4VsWhoop50: HeadToHeadInput = {
     'Choose Whoop 5.0 if you train hard, treat the daily recovery score as a coaching signal, and prefer a band you actively engage with over a passive ring.',
   axes: [
     { name: 'HRV measurement accuracy', winner: 'a', note: 'Oura Ring 4 edges Whoop 5.0 in independent comparison — closer agreement with chest-strap reference at rest, marginally cleaner overnight pipeline.' },
-    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging is the consumer reference; Whoop’s is competent but narrower in the metrics surfaced.' },
+    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging is better-validated among consumer wearables (manufacturer-funded studies), though wearable sleep stages are still estimates; Whoop’s is competent but narrower in the metrics surfaced.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s daily Recovery score and Strain coach are sharper and more actionable for trained users than Oura’s Readiness.' },
     { name: 'Form factor and wearability', winner: 'a', note: 'A ring is more wearable around the clock than a band — sleep, work, gym, social. Whoop band shows in dress codes.' },
     { name: 'Battery life', winner: 'b', note: 'Whoop 5.0: 14+ days per charge, topped up with a slide-on battery pack while you wear it. Oura Ring 4: about 4–7 days, charged on a dock. Whoop lasts longest.' },

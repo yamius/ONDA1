@@ -18,7 +18,7 @@ const hostageVsIntake: HeadToHeadInput = {
   axes: [
     { name: 'Mechanism', winner: 'tie', note: 'Hostage Tape: mouth seal forces nasal breathing. Intake: mechanical nostril dilation makes nasal breathing easier. Same goal, opposite approaches.' },
     { name: 'Adaptation', winner: 'b', note: 'Intake: comfortable from night one. Hostage Tape: most users adapt within 1-2 weeks; some never tolerate full mouth seal.' },
-    { name: 'Safety concerns', winner: 'b', note: 'Intake: no contraindication with sleep apnea. Hostage Tape: undiagnosed OSA + full seal is contraindicated.' },
+    { name: 'Safety concerns', winner: 'tie', note: 'Hostage Tape: not with a blocked nose or untreated sleep apnea. Intake: Dilators can also quieten snoring and hide possible sleep apnea — if apnea is possible, see a doctor first.' },
     { name: 'Brand polish / convenience', winner: 'a', note: 'Hostage Tape: subscription convenience, viral biohacker brand. Intake: premium positioning, less biohacker buzz.' },
     { name: 'Annual cost', winner: 'a', note: 'Hostage Tape: ~$156/year. Intake: ~$240/year ongoing tabs. Hostage Tape cheaper.' },
     { name: 'Effectiveness for committed users', winner: 'a', note: 'Hostage Tape: forces nasal breathing absolutely. Intake: makes nasal breathing easier but doesn\'t prevent mouth breathing if user opens mouth.' },
@@ -34,11 +34,11 @@ const hostageVsIntake: HeadToHeadInput = {
     },
     {
       q: 'Which is safer?',
-      a: 'Intake — no contraindication with sleep apnea. Hostage Tape requires ruling out undiagnosed obstructive sleep apnea before committing to full mouth seal.',
+      a: 'Neither replaces a check for sleep apnea. Mouth tape is not for a blocked nose or untreated sleep apnea. Dilators can also quieten snoring and hide possible sleep apnea — if apnea is possible, see a doctor first.',
     },
     {
       q: 'Which should I try first?',
-      a: 'Intake Breathing — lower-risk entry, comfortable from night one, makes nasal breathing easier. If nasal airflow still feels insufficient after 2 weeks of Intake alone, add Hostage Tape.',
+      a: 'Intake Breathing — comfortable from night one and makes nasal breathing easier without sealing the mouth. Dilators can also quieten snoring and hide possible sleep apnea — if apnea is possible, see a doctor first.',
     },
   ],
   content: `## The short version
@@ -51,7 +51,7 @@ If you\'re committed to forcing nasal breathing via mouth seal and you\'ve ruled
 
 ## When is Intake Breathing the right pick?
 
-If you can\'t adapt to mouth tape or you want lower-risk entry — Intake is the right shape. Comfortable from night one, no sleep-apnea contraindication, makes nasal breathing easier without forcing it.`,
+If you can\'t adapt to mouth tape — Intake is the right shape. Comfortable from night one, makes nasal breathing easier without forcing it. Dilators can also quieten snoring and hide possible sleep apnea — if apnea is possible, see a doctor first.`,
   relatedComparisonSlug: 'best-mouth-tape-nasal-breathing-2026',
   publishOn: '2026-07-13',
   datePublished: '2026-05-28',

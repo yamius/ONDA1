@@ -61,7 +61,7 @@ Chronotype is substantially heritable and changes predictably across life: child
 **The Logic:** Morning light advances the clock; evening light delays it. Used consistently, light is the one lever that actually moves your chronotype (within limits).
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Sleep tracker (weekday vs free-day midpoint)
+> EXAMPLE_DEVICE: Sleep tracker (weekday vs free-day midpoint)
 > METRIC: Smaller weekday/weekend sleep-timing gap; easier wakeups
 > STATUS: ALIGNED_WITH_CLOCK
 

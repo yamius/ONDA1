@@ -6,27 +6,27 @@ const lightstimVsSolawave: HeadToHeadInput = {
   productBSlug: 'solawave-wand-4-in-1',
   title: 'LightStim for Wrinkles vs Solawave Wand 4-in-1 (2026)',
   description:
-    'LightStim for Wrinkles vs Solawave Wand 4-in-1 — FDA-cleared decade-long clinical handheld vs budget multi-modality consumer wand. ONDA breaks down the handheld red light duel.',
+    'LightStim for Wrinkles vs Solawave Wand 4-in-1 — decade-long clinical handheld vs budget multi-modality consumer wand. ONDA breaks down the handheld red light duel.',
   intro:
-    'LightStim for Wrinkles and Solawave Wand 4-in-1 are the two handheld red light devices users compare when they don\'t want a lie-on mask. Both are sub-$300, both require active positioning per session. The defining difference is honesty — LightStim is FDA-cleared with peer-reviewed clinical evidence; Solawave is a multi-modality consumer wand with light evidence base.',
+    'LightStim for Wrinkles and Solawave Wand 4-in-1 are the two handheld red light devices users compare when they don\'t want a lie-on mask. Both are sub-$300, both require active positioning per session. The defining difference is honesty — LightStim has peer-reviewed clinical evidence (and says it is FDA-cleared); Solawave is a multi-modality consumer wand with light evidence base.',
   verdict:
     'LightStim wins on clinical evidence, wavelength coverage and peer-reviewed track record. Solawave wins on price and multi-modality stack.',
   bestForA:
-    'Choose LightStim for Wrinkles if you want FDA-cleared handheld red light with peer-reviewed clinical evidence and decade-long track record.',
+    'Choose LightStim for Wrinkles if you want handheld red light with peer-reviewed clinical evidence and a decade-long track record.',
   bestForB:
     'Choose Solawave Wand 4-in-1 if you want budget entry to handheld red light with multi-modality stack (LED + microcurrent + warmth + massage).',
   axes: [
-    { name: 'Clinical evidence', winner: 'a', note: 'LightStim: FDA-cleared with peer-reviewed clinical studies on the specific device. Solawave: FDA registered with brand-funded consumer testimonials.' },
+    { name: 'Clinical evidence', winner: 'a', note: 'LightStim: peer-reviewed clinical studies on the specific device (FDA-cleared, per LightStim). Solawave: FDA registered (a listing, not clearance) with brand-funded consumer testimonials.' },
     { name: 'Wavelength coverage', winner: 'a', note: 'LightStim: four wavelengths (605 / 630 / 660 / 855 nm) including near-infrared. Solawave: single red 660 nm.' },
     { name: 'LED dose', winner: 'a', note: 'LightStim: higher dose per zone with documented irradiance. Solawave: modest dose by design.' },
     { name: 'Multi-modality stack', winner: 'b', note: 'Solawave: LED + microcurrent + warmth + massage in one device. LightStim: LED only.' },
-    { name: 'Track record', winner: 'a', note: 'LightStim: 1+ decade FDA-cleared track record. Solawave: newer consumer brand.' },
+    { name: 'Track record', winner: 'a', note: 'LightStim: 1+ decade track record. Solawave: newer consumer brand.' },
     { name: 'Price', winner: 'b', note: 'Solawave: $169. LightStim: $249. Solawave meaningfully cheaper.' },
   ],
   faq: [
     {
       q: 'LightStim or Solawave — which handheld is better?',
-      a: 'For clinical evidence and dose — LightStim. For multi-modality consumer convenience at lower price — Solawave. LightStim is the rational choice if you can afford the $80 premium for FDA clearance + peer-reviewed evidence.',
+      a: 'For clinical evidence and dose — LightStim. For multi-modality consumer convenience at lower price — Solawave. LightStim is the rational choice if you can afford the $80 premium for peer-reviewed evidence.',
     },
     {
       q: 'Does Solawave\'s multi-modality stack make up for the lighter LED dose?',
@@ -34,7 +34,7 @@ const lightstimVsSolawave: HeadToHeadInput = {
     },
     {
       q: 'Which has better dermatology track record?',
-      a: 'LightStim — 1+ decade FDA-cleared with multiple peer-reviewed studies on the specific device. Solawave is a newer brand with consumer-facing testimonials rather than dermatology evidence.',
+      a: 'LightStim — 1+ decade track record with multiple peer-reviewed studies on the specific device. Solawave is a newer brand with consumer-facing testimonials rather than dermatology evidence.',
     },
     {
       q: 'Are handhelds worth it vs masks?',
@@ -43,11 +43,11 @@ const lightstimVsSolawave: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Both are handheld red light devices under $300. LightStim is the FDA-cleared decade-long clinical reference. Solawave is the budget multi-modality consumer entry.
+Both are handheld red light devices under $300. LightStim is the decade-long clinical reference. Solawave is the budget multi-modality consumer entry.
 
 ## When is LightStim for Wrinkles the right pick?
 
-If you want FDA-cleared handheld red light with peer-reviewed clinical evidence on the specific device — LightStim is the right shape. Four-wavelength coverage, documented dose, 1+ decade track record.
+If you want handheld red light with peer-reviewed clinical evidence on the specific device — LightStim is the right shape. Four-wavelength coverage, documented dose, 1+ decade track record.
 
 ## When is Solawave Wand 4-in-1 the right pick?
 

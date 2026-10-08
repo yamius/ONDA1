@@ -58,7 +58,7 @@ The standard French protocol is the [365 method](/articles/cardiac-coherence-365
 - **Practice consistently.** Practitioners typically describe benefits building over two to three weeks of regular practice.
 - **Don't turn it into a performance.** The aim is to lower arousal, not to "succeed" at breathing.
 
-For persistent insomnia, pair it with good sleep habits — a consistent wake time, morning light, dim evenings (see [how much sleep you need](/articles/how-much-sleep-do-you-need)) — and, where needed, professional care such as cognitive behavioral therapy for insomnia (CBT-I). For a longer guided wind-down, [Yoga Nidra](/articles/yoga-nidra-sleep-science) targets the same arousal from a different angle.
+For persistent insomnia, pair it with good sleep habits — a consistent wake time, morning light, dim evenings (see [how much sleep you need](/articles/how-much-sleep-do-you-need)) — and, where needed, professional care such as cognitive behavioral therapy for insomnia (CBT-I). For a longer guided wind-down, [Yoga Nidra](/articles/yoga-nidra-sleep-science) may target the same arousal from a different angle.
 
 ## See your arousal come down
 

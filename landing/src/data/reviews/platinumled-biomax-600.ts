@@ -17,7 +17,7 @@ const platinumledBiomax600: ToolReviewInput = {
     { criterionId: 'wavelengths', score: 9.0, note: 'Seven-wavelength coverage (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm, per PlatinumLED’s current product page) — broader than even MitoPRO. The 480 nm blue is unusual and a small share of total output.' },
     { criterionId: 'build-emf-flicker', score: 9.0, note: 'Third-party EMF testing at <0.3 mG at 6", flicker rate disclosed and low. PlatinumLED published its lab testing publicly — rare in the category.' },
     { criterionId: 'coverage', score: 7.5, note: 'Mid-size panel — half-body for upper torso. Smaller than Joovv Solo or MitoPRO 1500; pairs well with targeted work but requires stacking for full body.' },
-    { criterionId: 'evidence', score: 7.5, note: 'PlatinumLED references real photobiomodulation literature; no FDA Class II registration like Joovv or the MitoPRO 1500X, but the marketing is restrained relative to category norms.' },
+    { criterionId: 'evidence', score: 7.5, note: 'PlatinumLED references real photobiomodulation literature, and the marketing is restrained relative to category norms.' },
     { criterionId: 'value', score: 7.5, note: '$1,049 (Oct 2026) — meaningfully cheaper than Joovv Solo 3.0 and MitoPRO 1500 for comparable build and broader spectrum. Strong value in the premium tier.' },
   ],
   pros: [
@@ -28,7 +28,6 @@ const platinumledBiomax600: ToolReviewInput = {
   ],
   cons: [
     'Mid-size panel — smaller treatment area than MitoPRO 1500 or full Joovv stack',
-    'No FDA Class II registration',
     'Seven-wavelength claim relies on small LED counts for the less-common bands (480, 810, 1060)',
     'Stand and mount hardware sold separately',
   ],
@@ -45,7 +44,7 @@ PlatinumLED BIOMAX 600 is the panel that wins on spectrum breadth and EMF discip
 
 ## What are the downsides of PlatinumLED BIOMAX 600?
 
-The main downside of the BIOMAX 600 is size: it is mid-size — smaller than Joovv Solo 3.0 or MitoPRO 1500. For full-body coverage you stack two. The seven-wavelength claim is partly marketing: the 480 nm blue is a small share of total output, and the smaller LED counts for the less-common bands mean their effective dose is modest. No FDA Class II registration like Joovv or the MitoPRO 1500X.
+The main downside of the BIOMAX 600 is size: it is mid-size — smaller than Joovv Solo 3.0 or MitoPRO 1500. For full-body coverage you stack two. The seven-wavelength claim is partly marketing: the 480 nm blue is a small share of total output, and the smaller LED counts for the less-common bands mean their effective dose is modest.
 
 ## Is the PlatinumLED BIOMAX 600 worth it?
 
@@ -61,20 +60,13 @@ The evidence is strongest for skin. In a controlled trial of 136 volunteers, Wun
 
 PlatinumLED’s product page recommends **10–20 minutes per treatment area**, at about **8–14 inches for deep tissue** or **16–24 inches for superficial facial skin**. Closer means higher irradiance and a shorter session; more is not better, as photobiomodulation follows a dose-response curve where very high doses can reduce the effect. Start at the short end and use it consistently (most studies used several sessions a week).
 
-## Safety
-
-- **Eyes:** do not stare into the LEDs. Near-infrared is invisible, so the panel feels dimmer than its actual output — wear the protective goggles, especially for face sessions.
-- **Photosensitising medicines and conditions:** check with a doctor first if you take drugs that increase light sensitivity (for example some antibiotics, isotretinoin, certain diuretics) or have a light-sensitive condition such as lupus or porphyria.
-- **Pregnancy, cancer, or treating over a suspicious mole or tattoo:** ask a clinician first.
-- **Heat:** stop if the skin gets uncomfortably hot.
-
 ## How it compares
 
 | Panel | Price (USD) | Wavelengths | Notes |
 |---|---|---|---|
 | PlatinumLED BIOMAX 600 | $1,049 | 7 (480–1060 nm) | Mid-size, posted EMF tests, stand extra |
-| [Joovv Solo 3.0](/reviews/joovv-solo-3) | $1,699 | Red + NIR | Modular, FDA-registered, premium |
-| [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) | $1,299 (1500X) | Six wavelengths, red + NIR | Larger panel, FDA Class II registered |
+| [Joovv Solo 3.0](/reviews/joovv-solo-3) | $1,699 | Red + NIR | Modular, premium |
+| [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) | $1,299 (1500X) | Six wavelengths, red + NIR | Larger panel |
 | [BioLight Pro 900](/reviews/biolight-pro-900) | $899 | Red + NIR | Mid-size, stand included |
 | [Hooga HG500](/reviews/hooga-hg500) | $349 | Red + NIR | Budget entry |
 
@@ -102,7 +94,7 @@ The photobiomodulation mechanism behind why red light therapy works.
   relatedSlugs: ['joovv-solo-3', 'mito-red-mitopro-1500', 'biolight-pro-900'],
   faq: [
     { q: "Is PlatinumLED BioMax 600 worth it?", a: "For most buyers wanting one mid-size panel, yes. At $1,049 it is cheaper than the Joovv Solo 3.0 ($1,699) and MitoPRO 1500X ($1,299), with seven wavelengths, published EMF testing and a 3-year warranty. It is not the cheapest option (Hooga HG500 is $349) and full-body coverage needs two panels. Evidence is strongest for skin benefits; other uses are less proven." },
-    { q: "BioMax 600 vs Joovv Solo 3.0: which is better?", a: "The BIOMAX 600 ($1,049) offers a broader seven-wavelength spectrum and publicly posted EMF tests for $650 less. The Joovv Solo 3.0 ($1,699) has FDA registration and a modular system that scales to full-body stacks. Choose BIOMAX for value and spectrum, Joovv if you plan to build a larger modular setup." },
+    { q: "BioMax 600 vs Joovv Solo 3.0: which is better?", a: "The BIOMAX 600 ($1,049) offers a broader seven-wavelength spectrum and publicly posted EMF tests for $650 less. The Joovv Solo 3.0 ($1,699) has a modular system that scales to full-body stacks. Choose BIOMAX for value and spectrum, Joovv if you plan to build a larger modular setup." },
     { q: "How far should you stand from a red light panel?", a: "Follow the manufacturer. For the BIOMAX 600, PlatinumLED recommends about 8–14 inches for deep tissue and 16–24 inches for facial skin, for 10–20 minutes per area. Closer means higher intensity and shorter sessions; more dose is not automatically better. Wear eye protection." },
     { q: "How much does the PlatinumLED BIOMAX 600 cost?", a: "The PlatinumLED BIOMAX 600 costs $1,049 one-time on the official US store (October 2026), with stand and mount hardware extra. That is meaningfully cheaper than the Joovv Solo 3.0 and MitoPRO 1500 for comparable build and a broader spectrum. ONDA scores it 8.2/10 overall." },
     { q: "What wavelengths does the PlatinumLED BIOMAX 600 emit?", a: "The PlatinumLED BIOMAX 600 emits seven wavelengths: 480, 630, 660, 810, 830, 850 and 1060 nm, the broadest spectrum in ONDA's red-light list. The 480 nm blue is unusual and a small share of total output, and the less-common bands rely on smaller LED counts." },

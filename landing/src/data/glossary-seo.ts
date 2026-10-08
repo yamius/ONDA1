@@ -52,9 +52,9 @@ export const GLOSSARY_SEO: Record<string, { title: string; description: string }
       'Explore the role of oxytocin in social intelligence, leadership, and creating deep biological resonance with others.',
   },
   cortisol: {
-    title: 'Cortisol Management: Balancing Stress & Energy',
+    title: 'Cortisol: The Stress Hormone and Its Daily Rhythm',
     description:
-      'Understand the biological impact of cortisol on your performance and learn ONDA protocols for healthy stress regulation.',
+      'What cortisol does, how its daily rhythm works, what chronic stress changes, and why only a lab test can measure it.',
   },
   homeostasis: {
     title: 'Biological Homeostasis: The Key to Resilience',

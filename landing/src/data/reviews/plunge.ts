@@ -41,7 +41,7 @@ const plunge: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-The Plunge All-In is the cold-plunge tub that defined consumer expectations for the category. The 1 HP integrated chiller is the most capable in the consumer space, the ozone sanitation system cuts water-change frequency to every 2–4 weeks rather than weekly, and the build holds up outdoors in the multi-year ownership reports. Founder Michael Garrett built the company around the cold-exposure community, and the protocol guidance is honest about what the research supports — the [norepinephrine](/glossary/norepinephrine) and [dopamine](/glossary/dopamine) surge cold drives, framed as [hormesis](/glossary/hormesis) rather than a cure-all.
+The Plunge All-In is the cold-plunge tub that defined consumer expectations for the category. The 1 HP integrated chiller is the most capable in the consumer space, the ozone sanitation system cuts water-change frequency to every 2–4 weeks rather than weekly, and the build holds up outdoors in the multi-year ownership reports. Founder Michael Garrett built the company around the cold-exposure community, and the protocol guidance frames cold as [hormesis](/glossary/hormesis) rather than a cure-all. The often-cited [norepinephrine](/glossary/norepinephrine) and [dopamine](/glossary/dopamine) rise comes from one study (Šrámek 2000), in which an hour up to the neck in 14 °C water raised plasma noradrenaline and dopamine; short plunges were not tested.
 
 ## What are the downsides of The Plunge All-In?
 
@@ -59,7 +59,7 @@ The biology of why cold exposure works — and the protocols that compound with 
 
 - [Vagus nerve exercises](/articles/vagus-nerve-exercises) — how cold-water face immersion triggers the vagal diving reflex
 - [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — how cold exposure shapes the cortisol curve
-- [Adrenal governor and thermal runaway](/articles/adrenal-governor-thermal-runaway) — the thermoregulatory side of the stress response`,
+- [Adrenal fatigue: what the evidence says](/articles/adrenal-governor-thermal-runaway) — why stress-related exhaustion is not "burnt-out adrenals", and when to see a doctor`,
   references: [
     { label: 'The Plunge — official product page', url: 'https://theplunge.com/' },
   ],

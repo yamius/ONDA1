@@ -16,11 +16,11 @@ const gen3VsGen2: HeadToHeadInput = {
   bestForB:
     'Choose the RingConn Gen 2 if you want dependable subscription-free sleep and HRV tracking for less and don’t need the new insight features or haptics.',
   axes: [
-    { name: 'Subscription', winner: 'c', note: 'Tie — both are one-time purchases with no membership. That is RingConn’s whole pitch.' },
+    { name: 'Subscription', winner: 'tie', note: 'Tie — both are one-time purchases with no membership. That is RingConn’s whole pitch.' },
     { name: 'Haptic alerts', winner: 'a', note: 'The Gen 3 is the first smart ring with a built-in haptic motor — silent alarm and alerts for elevated HR, inactivity and step goals. The Gen 2 has no vibration.' },
     { name: 'Health insights', winner: 'a', note: 'The Gen 3 adds vascular-health and nighttime blood-pressure trends plus sleep-apnea pattern insights. The Gen 2 sticks to core metrics.' },
     { name: 'Battery & charging', winner: 'a', note: 'Gen 3: ~10-14 days plus a universal wireless charging case. Gen 2: ~12 days. Both excellent; the Gen 3 edges it and adds wireless charging.' },
-    { name: 'Core tracking', winner: 'c', note: 'Both deliver solid sleep and HRV; neither matches Oura’s validated accuracy, and for the basics the everyday difference is small.' },
+    { name: 'Core tracking', winner: 'tie', note: 'Both deliver solid sleep and HRV; neither matches Oura’s validated accuracy, and for the basics the everyday difference is small.' },
     { name: 'Price', winner: 'b', note: 'The Gen 2 is the cheaper ring; the Gen 3 starts at $349 ($369 metallic). Pay more only for the new features.' },
   ],
   faq: [

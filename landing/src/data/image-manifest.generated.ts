@@ -2272,6 +2272,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1920,
     "height": 820
   },
+  "/images/science/concepts-baroreflex.avif": {
+    "width": 1024,
+    "height": 768
+  },
+  "/images/science/concepts-baroreflex.jpg": {
+    "width": 1024,
+    "height": 768
+  },
+  "/images/science/concepts-baroreflex.webp": {
+    "width": 1024,
+    "height": 768
+  },
   "/images/science/concepts-coherence.avif": {
     "width": 1916,
     "height": 821
@@ -2283,6 +2295,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/science/concepts-coherence.webp": {
     "width": 1916,
     "height": 821
+  },
+  "/images/science/concepts-cortisol-and-stress-response.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/concepts-cortisol-and-stress-response.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/concepts-cortisol-and-stress-response.webp": {
+    "width": 1584,
+    "height": 672
   },
   "/images/science/concepts-heart-rate-variability.avif": {
     "width": 1916,
@@ -2368,6 +2392,42 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 768
   },
+  "/images/science/evidence-cold-exposure.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-cold-exposure.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-cold-exposure.webp": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-eeg-neurofeedback.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-eeg-neurofeedback.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-eeg-neurofeedback.webp": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-fast-breathing.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-fast-breathing.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-fast-breathing.webp": {
+    "width": 1584,
+    "height": 672
+  },
   "/images/science/evidence-hrv-biofeedback.avif": {
     "width": 1920,
     "height": 820
@@ -2380,6 +2440,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1920,
     "height": 820
   },
+  "/images/science/evidence-humming-and-chanting.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-humming-and-chanting.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-humming-and-chanting.webp": {
+    "width": 1584,
+    "height": 672
+  },
   "/images/science/evidence-meditation-autonomic-nervous-system.avif": {
     "width": 1916,
     "height": 821
@@ -2391,6 +2463,54 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/science/evidence-meditation-autonomic-nervous-system.webp": {
     "width": 1916,
     "height": 821
+  },
+  "/images/science/evidence-nasal-breathing.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-nasal-breathing.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-nasal-breathing.webp": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-pemf.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-pemf.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-pemf.webp": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-red-light-therapy.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-red-light-therapy.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-red-light-therapy.webp": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-sauna-heat-exposure.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-sauna-heat-exposure.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-sauna-heat-exposure.webp": {
+    "width": 1584,
+    "height": 672
   },
   "/images/science/evidence-slow-breathing.avif": {
     "width": 1920,
@@ -2416,6 +2536,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 768
   },
+  "/images/science/evidence-yoga-nidra-nsdr.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-yoga-nidra-nsdr.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-yoga-nidra-nsdr.webp": {
+    "width": 1584,
+    "height": 672
+  },
   "/images/science/measurements-heart-rate-variability.avif": {
     "width": 1916,
     "height": 821
@@ -2427,6 +2559,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/science/measurements-heart-rate-variability.webp": {
     "width": 1916,
     "height": 821
+  },
+  "/images/science/measurements-hrv-ppg-vs-ecg.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/measurements-hrv-ppg-vs-ecg.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/measurements-hrv-ppg-vs-ecg.webp": {
+    "width": 1376,
+    "height": 768
   },
   "/images/science/measurements-onda-method.avif": {
     "width": 2688,
@@ -2476,6 +2620,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1920,
     "height": 820
   },
+  "/images/science/mechanisms-exercise-and-hrv.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-exercise-and-hrv.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-exercise-and-hrv.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/mechanisms-heart-brain-interaction.avif": {
     "width": 1916,
     "height": 821
@@ -2499,6 +2655,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/science/mechanisms-hrv-day-to-day.webp": {
     "width": 1916,
     "height": 821
+  },
+  "/images/science/mechanisms-sleep-and-hrv.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/mechanisms-sleep-and-hrv.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/mechanisms-sleep-and-hrv.webp": {
+    "width": 1584,
+    "height": 672
   },
   "/images/science/rmssd.avif": {
     "width": 1024,

@@ -69,7 +69,7 @@ Screens at 11 PM act as a "Force Quit" for your sleep architecture. Blue light s
 
 > **The Hack:** View sunlight within 30 minutes of waking. 10 mins on a clear day, 20–30 mins on a cloudy day.
 
-**The Logic:** This triggers a timed Cortisol pulse (your morning "boot-up" sequence) and sets a 16-hour countdown for Melatonin release. It's the single most important sync-signal for your OS.
+**The Logic:** Morning light is a strong sync-signal for your body clock and helps time evening Melatonin release. The popular idea that it triggers a cortisol pulse that sets an exact "16-hour countdown" is not strongly evidenced.
 
 ### PROTOCOL 2: The Blue Light Firewall
 
@@ -84,7 +84,7 @@ Screens at 11 PM act as a "Force Quit" for your sleep architecture. Blue light s
 **The Logic:** To initiate Deep Sleep, your core body temperature must drop by 1–2 degrees. A warm bath draws heat to the surface (extremities), causing the core to cool down rapidly—a "Thermal Handshake" for your brain.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Actigraph / Whoop
+> EXAMPLE_DEVICE: Actigraph / Whoop
 > METRIC: Sleep Latency & RHR
 > STATUS: CLOCK_SYNC_SUCCESS
 
@@ -96,7 +96,7 @@ A circadian reset is measured. Pair the light protocol with a tracker that catch
 
 - [Sleep Cycle](/reviews/sleep-cycle) — cross-platform sleep tracking with smart alarm
 - [Calm](/reviews/calm) — sleep stories and wind-down content
-- [Oura Ring 4](/reviews/oura-ring-4) — best-in-class sleep-stage tracking
+- [Oura Ring 4](/reviews/oura-ring-4) — optical sleep-stage estimation
 
 [Best Sleep Apps (2026) →](/reviews/sleep-apps)
 `,

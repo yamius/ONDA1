@@ -43,7 +43,7 @@ Faster than most people expect — the research reveals a surprisingly quick pro
 
 - **Within 2–4 weeks — white matter changes.** Randomized controlled trials found changes in the white matter surrounding the anterior and posterior cingulate cortex — brain regions central to attention and self-regulation — after just 2 to 4 weeks, following only 5 to 10 hours of mindfulness training. These changes correlated with improved emotional states.
 - **Around 10 hours — gray matter growth.** A randomized study found that roughly 10 hours of mindfulness training increased gray matter volume in the posterior cingulate cortex, a key hub for self-awareness and perspective.
-- **Weeks to months — measurable biology.** Both meditation and [HRV biofeedback](/science/evidence/hrv-biofeedback) have been shown to lower [cortisol](/articles/breathing-lowers-stress-hormones), the stress hormone. Structured programs improve HRV and autonomic balance over weeks of practice. In longer studies, even cellular-aging markers have been explored, with practice time linked to the degree of change.
+- **Weeks to months — measurable biology.** Some studies of meditation and [HRV biofeedback](/science/evidence/hrv-biofeedback) report lower [cortisol](/articles/breathing-lowers-stress-hormones), the stress hormone, but overall the evidence is [mixed](/science/evidence/meditation-autonomic-nervous-system). Structured programs improve HRV and autonomic balance over weeks of practice. In longer studies, even cellular-aging markers have been explored, with practice time linked to the degree of change.
 
 The pattern is consistent: meaningful, measurable adaptation begins within weeks, not years — provided you actually practice.
 

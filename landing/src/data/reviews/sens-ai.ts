@@ -25,7 +25,7 @@ const sensAi: ToolReviewInput = {
     'The only headset combining EEG + PBM + HRV in a single device and programme',
     'Strong cross-modal session analysis — three biomarkers on one timeline',
     'Premium hardware build and progression-tracked content',
-    'Photobiomodulation evidence base independently real — adds a second intervention to EEG neurofeedback',
+    'Adds a second intervention (photobiomodulation) to EEG neurofeedback — evidence for brain effects is still emerging',
   ],
   cons: [
     'Premium price — $1,250 plus an ongoing membership',
@@ -56,11 +56,11 @@ Choose Sens.ai if the multi-modal stack — EEG + photobiomodulation + HRV in a 
 
 ## Background reading
 
-The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+The neuroscience these headsets feed back — and what the EEG signal can and cannot tell you about mental states.
 
 - [Digital dementia and attentional control](/articles/digital-dementia-attentional-control) — rebuilding attention with feedback-driven practice
-- [Neuroplasticity and flow overclocking](/articles/neuroplasticity-flow-overclocking) — EEG signatures of flow states and how they form
-- [ACC calibration: cognitive-control protocol](/articles/acc-calibration-protocol-cognitive-control) — how prefrontal control loops show up in EEG
+- [Neuroplasticity and flow overclocking](/articles/neuroplasticity-flow-overclocking) — what flow states are and how they form
+- [ACC calibration: cognitive-control protocol](/articles/acc-calibration-protocol-cognitive-control) — the prefrontal control loops behind cognitive control
 `,
   references: [
     { label: 'Sens.ai — official product page', url: 'https://www.sens.ai/' },

@@ -10,13 +10,13 @@ const series12VsWhoop50: HeadToHeadInput = {
   intro:
     'These answer the same question two ways. The September 2026 Series 12 finally samples HRV often enough, with a dedicated Recovery HRV, to be a real recovery signal — inside a no-subscription smartwatch. Whoop 5.0 is a subscription-only band built from the ground up around continuous overnight HRV and the sharpest recovery-and-strain coaching in the category. One is a do-everything watch; the other is a dedicated coach.',
   verdict:
-    'No overall winner — pick by whether you want coaching or a do-everything device. Whoop 5.0 leads for continuous overnight HRV, recovery-and-strain coaching and multi-day battery; the Series 12 wins for being a no-subscription smartwatch with ECG whose HRV is now good enough to act on.',
+    'No overall winner — pick by whether you want coaching or a do-everything device. Whoop 5.0 leads for continuous overnight HRV, recovery-and-strain coaching and multi-day battery; the Series 12 wins for being a no-subscription smartwatch with ECG whose HRV is now usable as a personal trend.',
   bestForA:
-    'Choose the Series 12 if you want one no-subscription smartwatch — ECG, hypertension notifications, apps — with HRV that is finally good enough to act on.',
+    'Choose the Series 12 if you want one no-subscription smartwatch — ECG, hypertension notifications, apps — with HRV that is now usable as a personal trend.',
   bestForB:
     'Choose Whoop 5.0 if recovery-and-strain coaching drives how you train and you want continuous overnight HRV from a screenless band — accepting the ongoing membership.',
   axes: [
-    { name: 'Continuous overnight HRV', winner: 'b', note: 'Whoop samples HRV continuously through the night and reports a full-sleep average; the Series 12 samples often (24× more than before) but is a watch you may not wear every night.' },
+    { name: 'Continuous overnight HRV', winner: 'b', note: 'Whoop builds its recovery signal from HRV measured during sleep; the Series 12 samples often (24× more than before) but is a watch you may not wear every night.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s Recovery + Strain model is the sharpest daily-readiness coach in consumer wearables. The Series 12 gives you the numbers (Recovery vs Overall HRV) but lighter guidance.' },
     { name: 'Battery / overnight wear', winner: 'b', note: 'Whoop lasts 14+ days and charges on-body without removal; the Series 12’s ~1-day battery competes with overnight measurement.' },
     { name: 'Subscription / cost', winner: 'a', note: 'Series 12 is $399 one-time, no subscription. Whoop is membership-only at $199–$359/year — cheaper first year, an ongoing cost forever.' },
@@ -35,12 +35,12 @@ const series12VsWhoop50: HeadToHeadInput = {
     },
     {
       q: 'Whoop or Apple Watch for HRV — which should I buy?',
-      a: 'For recovery coaching you act on daily and continuous overnight HRV, Whoop 5.0. For one device that also does ECG, apps and payments with no subscription and HRV that is now good enough to act on, the Series 12. An athlete training on the signal leans Whoop; most people lean Apple Watch.',
+      a: 'For recovery coaching you act on daily and continuous overnight HRV, Whoop 5.0. For one device that also does ECG, apps and payments with no subscription and HRV that is now usable as a personal trend, the Series 12. An athlete training on the signal leans Whoop; most people lean Apple Watch.',
     },
   ],
   content: `## The short version
 
-Pick by the job. Whoop 5.0 is the dedicated recovery coach — continuous overnight HRV, the sharpest Recovery-and-Strain model, a 14+-day screenless band — behind a subscription. The Series 12 is a no-subscription smartwatch whose HRV, after the September 2026 Health Sensing System update, is finally good enough to act on, with ECG and hypertension notifications on top.
+Pick by the job. Whoop 5.0 is the dedicated recovery coach — continuous overnight HRV, the sharpest Recovery-and-Strain model, a 14+-day screenless band — behind a subscription. The Series 12 is a no-subscription smartwatch whose HRV, after the September 2026 Health Sensing System update, is now usable as a personal trend, with ECG and hypertension notifications on top.
 
 ## Why the Series 12 closed the gap
 

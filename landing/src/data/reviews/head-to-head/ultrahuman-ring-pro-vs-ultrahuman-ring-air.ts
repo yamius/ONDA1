@@ -20,7 +20,7 @@ const ringProVsRingAir: HeadToHeadInput = {
     { name: 'Battery', winner: 'a', note: 'Ring Pro: ~15 days. Ring Air: ~4–6 days. Roughly triple.' },
     { name: 'Reliability', winner: 'a', note: 'The Ring Air had widely reported battery failures within months; the Ring Pro is the redesign built to fix exactly that (though it is new and not yet proven long-term).' },
     { name: 'Processing & features', winner: 'a', note: 'The Ring Pro adds an on-ring dual-core processor and the "Jade" biointelligence layer. The Ring Air has neither.' },
-    { name: 'Subscription', winner: 'c', note: 'Tie — both are subscription-free, one-time purchases.' },
+    { name: 'Subscription', winner: 'tie', note: 'Tie — both are subscription-free, one-time purchases.' },
     { name: 'Price', winner: 'b', note: 'Ring Air launched at ~$350 vs the Ring Pro’s $479, so where it’s still sold it is cheaper — the Ring Air’s only real edge.' },
   ],
   faq: [

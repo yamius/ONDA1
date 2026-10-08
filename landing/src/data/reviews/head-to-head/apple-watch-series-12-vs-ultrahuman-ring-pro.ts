@@ -27,7 +27,7 @@ const series12VsRingPro: HeadToHeadInput = {
   faq: [
     {
       q: 'Is the Apple Watch Series 12 or Ultrahuman Ring Pro better for HRV?',
-      a: 'For a continuous overnight HRV record, the Ring Pro — finger measurement beats wrist optical, and its ~15-day battery means it is almost always on your hand at night. The Series 12 is now much closer: its Recovery HRV is sampled ~24× more often, so it is good enough to act on, just not the most precise overnight number.',
+      a: 'For a continuous overnight HRV record, the Ring Pro — finger measurement beats wrist optical, and its ~15-day battery means it is almost always on your hand at night. The Series 12 is now much closer: its Recovery HRV is sampled ~24× more often, so it is usable as a personal trend, just not the most precise overnight number.',
     },
     {
       q: 'Do the Apple Watch Series 12 or Ultrahuman Ring Pro need a subscription?',
@@ -40,7 +40,7 @@ const series12VsRingPro: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Both are subscription-free, so this comes down to form factor. The Ultrahuman Ring Pro wins for the overnight number and for wear — finger measurement and a ~15-day battery make all-night tracking effortless. The Series 12 wins as a device — ECG, hypertension notifications, a screen, apps — and its HRV is finally good enough to act on. The Ring Pro’s catch is newness, not cost.
+Both are subscription-free, so this comes down to form factor. The Ultrahuman Ring Pro wins for the overnight number and for wear — finger measurement and a ~15-day battery make all-night tracking effortless. The Series 12 wins as a device — ECG, hypertension notifications, a screen, apps — and its HRV is now usable as a personal trend. The Ring Pro’s catch is newness, not cost.
 
 ## Why the Ring Pro exists
 

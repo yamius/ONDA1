@@ -15,7 +15,7 @@ const lunaRing: ToolReviewInput = {
   scores: [
     { criterionId: 'hrv-accuracy', score: 6.5, note: 'HRV tracking for recovery and stress — reasonable for the price, not validated to Oura’s level.' },
     { criterionId: 'sensor', score: 6.5, note: 'Optical heart rate, SpO2, PPG and skin-temperature sensors. A competent budget array.' },
-    { criterionId: 'sleep-accuracy', score: 7.5, note: 'The standout — sleep staging felt accurate in independent testing, and automatic activity detection (walks, jogs) worked reliably.' },
+    { criterionId: 'sleep-accuracy', score: 7.5, note: 'The standout — competent sleep tracking (stage estimates, not a sleep study), and automatic activity detection (walks, jogs) worked reliably.' },
     { criterionId: 'data-access', score: 6.0, note: 'Data lives in the Noise/Luna app with basic export; no open API.' },
     { criterionId: 'wearability', score: 6.5, note: 'Comfortable, and the pocket charging case pushes total battery toward ~30 days — but only ~4 days per single charge, behind class leaders.' },
     { criterionId: 'app-ux', score: 6.5, note: 'Includes a voice-activated "Luna AI" assistant; capable, though independent reviews noted some teething issues.' },
@@ -23,7 +23,7 @@ const lunaRing: ToolReviewInput = {
   ],
   pros: [
     'Affordable (~$300) and subscription-free',
-    'Accurate sleep staging and reliable activity auto-detection',
+    'Competent sleep tracking (stage estimates, not a sleep study) and reliable activity auto-detection',
     'Pocket charging case pushes total battery toward ~30 days',
     'Voice-activated Luna AI assistant',
   ],
@@ -42,7 +42,7 @@ const lunaRing: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-The Noise Luna Ring Gen 2’s pitch is value: core smart-ring tracking, no subscription, around $300. It covers heart rate, [HRV](/glossary/heart-rate-variability), SpO2, skin temperature and sleep, with a voice-activated Luna AI assistant. Sleep staging is its strongest area — accurate in independent testing — and automatic activity detection works reliably. The pocket charging case pushes total battery toward a headline ~30 days.
+The Noise Luna Ring Gen 2’s pitch is value: core smart-ring tracking, no subscription, around $300. It covers heart rate, [HRV](/glossary/heart-rate-variability), SpO2, skin temperature and sleep, with a voice-activated Luna AI assistant. Sleep tracking is its strongest area — though its sleep stages are estimates, not a sleep study — and automatic activity detection works reliably. The pocket charging case pushes total battery toward a headline ~30 days.
 
 ## What are the downsides of Noise Luna Ring Gen 2?
 

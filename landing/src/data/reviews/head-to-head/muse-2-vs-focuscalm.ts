@@ -32,7 +32,7 @@ const muse2VsFocuscalm: HeadToHeadInput = {
     },
     {
       q: 'Does single-channel EEG actually work?',
-      a: 'For a focus/calm metric, yes — a single forehead electrode is enough to produce a credible attention-versus-calm score. For richer multi-band analysis (alpha/beta/theta/gamma distribution across cortical sites), multi-channel is meaningfully better. FocusCalm’s single channel limits the analytical depth.',
+      a: 'For FocusCalm’s own focus/calm score, yes — a single forehead electrode is enough to drive it, but that score is the company’s formula, not a validated measure of attention. For richer multi-band analysis (alpha/beta/theta/gamma distribution across cortical sites), multi-channel is meaningfully better. FocusCalm’s single channel limits the analytical depth.',
     },
     {
       q: 'Which has better content?',

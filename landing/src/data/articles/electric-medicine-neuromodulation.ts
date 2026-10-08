@@ -74,13 +74,9 @@ Transcranial Direct Current Stimulation (tDCS) allows for the manipulation of ne
 ---
 
 > [ HARDWARE_VALIDATION ]
-> PRIMARY_DEVICE: [EEG_MONITOR: MUSE_S / FLOWTIME]
-> METRIC: Alpha-Beta Ratio. Confirmed increase in Alpha waves (relaxed alertness) with a simultaneous drop in Beta waves (anxiety/noise).
-> SECONDARY_DEVICE: [SENSORS: NEUVANA_SIGNAL_APP]
-> METRIC: Vagal Tone Index. Verification of parasympathetic activation via inter-beat interval analysis.
-> SYSTEM_CHECK: [HRV_RECOVERY_SCORE]
-> METRIC: 15–25% increase in HRV within 30 minutes post-protocol.
-> STATUS: NEURAL_INTERFACE_READY. SYSTEM_CALIBRATED.
+> EXAMPLE_DEVICE: HRV monitor (chest strap or wearable)
+> METRIC: HRV before vs. after a session, compared with your own baseline
+> STATUS: TRACK_OVER_WEEKS
 
 ---
 

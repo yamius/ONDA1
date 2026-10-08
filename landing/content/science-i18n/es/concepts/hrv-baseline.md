@@ -1,5 +1,5 @@
 ---
-sourceHash: "33b9f01d78ea"
+sourceHash: "55f2a6818cc5"
 title: "Línea base de HRV: por qué tu propia normalidad importa más que cualquier norma"
 metaTitle: "Línea base de HRV: tu normalidad, no una norma"
 metaDescription: "Tu línea base de HRV es tu propio rango habitual, no un promedio poblacional: por qué supera a las normas por edad y cómo la construye ONDA."

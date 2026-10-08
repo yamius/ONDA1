@@ -9,20 +9,20 @@ const pulseCentersXLPro: ToolReviewInput = {
   description:
     'ONDA review of the Pulse Centers Pulse XL Pro — high-output coil-based PEMF system used by athletic and chiropractic clinics. Scored on field strength, build, programmability and value.',
   verdict:
-    'Highest-output consumer-accessible PEMF. Clinical coil applicators, used in pro-athlete and chiropractic settings. Price puts it in the prosumer/clinic bracket.',
+    'Highest-output consumer-accessible PEMF. Clinic-style coil applicators sold to athletic and chiropractic practices — a sales channel, not evidence; we found no independent trials of this system. Price puts it in the prosumer/clinic bracket.',
   summary:
-    'Pulse Centers Pulse XL Pro is the high-intensity opposite of Bemer — coil-based applicators delivering 200,000+ µT peak intensity vs Bemer’s 35–150 µT. The Pulse system dominates clinical and athletic-recovery installations. Hardware is built for clinic-grade use; pricing reflects it ($7,000–$15,000+). Not a daily-driver consumer mat — a serious clinical PEMF tool.',
+    'Pulse Centers Pulse XL Pro is the high-intensity opposite of Bemer — coil-based applicators delivering 200,000+ µT peak intensity vs Bemer’s 35–150 µT. The Pulse system dominates clinical and athletic-recovery installations. Hardware is built for clinic-grade use; pricing reflects it ($7,000–$15,000+). Not a daily-driver consumer mat — a high-intensity clinic tool, with no independent trials of this system.',
   scores: [
     { criterionId: 'field-strength', score: 9.8, note: 'Highest field strength in consumer-accessible PEMF — 200,000+ µT peak via coil applicators. The category benchmark for intensity-driven protocols.' },
-    { criterionId: 'waveform-evidence', score: 7.5, note: 'Uses well-documented high-intensity PEMF research band. Less single-waveform research moat than Bemer; the intensity-effect literature is the backing.' },
-    { criterionId: 'build', score: 9.0, note: 'Clinical-grade control unit and coil applicators. Used in professional chiropractic, athletic recovery and equine settings. 5-year warranty.' },
+    { criterionId: 'waveform-evidence', score: 7.5, note: 'Uses the high-intensity PEMF range studied in general PEMF research. We found no independent trials of this system itself.' },
+    { criterionId: 'build', score: 9.0, note: 'Clinic-style control unit and coil applicators. Sold into professional chiropractic, athletic recovery and equine settings. 5-year warranty.' },
     { criterionId: 'programmability', score: 8.0, note: 'Pre-set clinical protocols with intensity steps. Coil-targeting via paddle/loop accessories gives effective spot-treatment flexibility.' },
     { criterionId: 'form-factor', score: 7.0, note: 'Coil applicators (paddle, loop) — targeted spot treatment, not whole-body simultaneous. Requires the user to position applicators per session.' },
     { criterionId: 'value', score: 6.5, note: '$7,000–$15,000+ depending on configuration. Prosumer/clinic pricing — overkill for daily wellness use, fair for professional or serious recovery protocols.' },
   ],
   pros: [
     'Highest consumer-accessible field intensity (200,000+ µT peak)',
-    'Clinical-grade build used in pro-athlete and chiropractic recovery',
+    'Clinic-style build sold to athletic and chiropractic practices',
     'Coil-targeting enables effective spot treatment',
     '5-year warranty and strong clinical support',
   ],
@@ -31,6 +31,7 @@ const pulseCentersXLPro: ToolReviewInput = {
     'Coil-only form factor — no whole-body mat in this tier',
     'Requires active positioning per session, not passive lie-on-and-relax',
     'Overkill for general wellness — built for athletic recovery and rehab',
+    'No independent trials of this system',
   ],
   bestFor: 'Best for serious athletic recovery, rehabilitation contexts, or clinic installations where high-intensity targeted PEMF is the protocol — not for general consumer wellness use.',
   testStatus: 'evidence-based',
@@ -41,7 +42,7 @@ const pulseCentersXLPro: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Pulse Centers Pulse XL Pro is the high-intensity reference in consumer-accessible PEMF — 200,000+ µT peak via coil applicators, vs Bemer's 35–150 µT mat output. The build is clinical-grade and the user base skews professional (chiropractic, athletic recovery, equine).
+Pulse Centers Pulse XL Pro is the high-intensity reference in consumer-accessible PEMF — 200,000+ µT peak via coil applicators, vs Bemer's 35–150 µT mat output. The build is clinic-style and the user base skews professional (chiropractic, athletic recovery, equine). Where it is sold is not evidence that it works: we found no independent trials of this system.
 
 ## What are the downsides of Pulse Centers Pulse XL Pro?
 
@@ -49,14 +50,13 @@ Price and form factor. At $7,000–$15,000+ this is prosumer/clinic pricing, not
 
 ## Who should buy Pulse Centers Pulse XL Pro?
 
-Choose Pulse Centers Pulse XL Pro if you're running serious athletic recovery or rehab protocols and want the highest-intensity coil-based PEMF available to consumers. For research-backed mat-style PEMF, Bemer Classic Evo. For multi-modality mat coverage, Healthy Wave Multi-Wave. For accessible entry-tier PEMF, Resona Health VIBE.
+Choose Pulse Centers Pulse XL Pro if you're running serious athletic recovery or rehab protocols and want the highest-intensity coil-based PEMF available to consumers. For a low-intensity proprietary-signal mat, Bemer Classic Evo. For multi-modality mat coverage, Healthy Wave Multi-Wave. For accessible entry-tier PEMF, Resona Health VIBE.
 
 ---
 
 ## Background reading
 
-- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — high-intensity PEMF in tissue repair
-- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid) — PEMF as athletic-recovery modality
+- [PEMF therapy — what the evidence shows](/science/evidence/pemf) — what is shown in people, what comes from cell studies, and what FDA registration, clearance and approval mean
 `,
   references: [
     { label: 'Pulse Centers — official site', url: 'https://pulsecenters.com/' },
@@ -64,13 +64,13 @@ Choose Pulse Centers Pulse XL Pro if you're running serious athletic recovery or
   relatedSlugs: ['bemer-classic-evo', 'curatron-3d', 'imrs-prime'],
   publishOn: '2026-06-22',
   faq: [
-    { q: "Is the Pulse Centers Pulse XL Pro worth it?", a: "The Pulse XL Pro is worth it for serious athletic recovery, rehabilitation or clinic installations. It delivers the highest consumer-accessible field intensity, over 200,000 µT peak, with a clinical-grade build and a 5-year warranty. For general wellness use it is overkill." },
+    { q: "Is the Pulse Centers Pulse XL Pro worth it?", a: "The Pulse XL Pro is worth it for serious athletic recovery, rehabilitation or clinic installations. It delivers the highest consumer-accessible field intensity, over 200,000 µT peak, with a clinic-style build and a 5-year warranty, though we found no independent trials of this system. For general wellness use it is overkill." },
     { q: "How much does the Pulse Centers Pulse XL Pro cost?", a: "The XL Pro configuration is listed at $9,000, with pricing that varies by accessory set. The review places it in a prosumer range of $7,000 to $15,000 or more, out of reach for casual users." },
     { q: "What are the downsides of the Pulse Centers Pulse XL Pro?", a: "Its $7,000 to $15,000-plus pricing is out of reach for casual users. It is coil-only with no whole-body mat, requires active positioning each session rather than passive lying down, and is overkill for general wellness." },
     { q: "Pulse Centers Pulse XL Pro vs MagnaWave Mini: which is better?", a: "The Pulse XL Pro offers the highest consumer-accessible intensity and clinic-grade support. MagnaWave no longer sells a Mini; its compact Semi 10 starts at $8,360, so the two are now close in price. Choose Pulse Centers for clinic installs, MagnaWave for a portable, carry-case build aimed mainly at equine and mobile practitioners." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-07',
 }
 
 export default pulseCentersXLPro

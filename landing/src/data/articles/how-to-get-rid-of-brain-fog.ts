@@ -64,7 +64,7 @@ Sitting all day, dehydration, blood-sugar swings and no daylight all dull thinki
 Don't fix all four blindly — find your biggest driver and start there. The [Brain Fog Quiz](/tools/brain-fog) scores all four and tells you which is most likely clouding you, with the matched protocol. Then give it a few days: most lifestyle-driven fog lifts quickly once the dominant cause is addressed.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Sleep tracker + an honest daily focus rating
+> EXAMPLE_DEVICE: Sleep tracker + an honest daily focus rating
 > METRIC: Clearer thinking within days of fixing the top driver
 > STATUS: SIGNAL_TO_NOISE_RISING
 

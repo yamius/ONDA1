@@ -1,5 +1,5 @@
 ---
-sourceHash: "c535fb5db147"
+sourceHash: "6e6ab4ef8d19"
 title: "单个 HRV 数值能告诉你什么、不能告诉你什么"
 metaTitle: "解读 HRV：单个数值能说明什么"
 metaDescription: "单次 HRV 读数究竟反映了什么？为什么偏低不等于诊断，偏高也不一定是好事，又为什么拿你的 HRV 和别人比较会产生误导。"

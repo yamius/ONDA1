@@ -72,7 +72,7 @@ Pick **VIBE** if you are PEMF-curious, want to focus on one area such as a knee 
 
 ## What the evidence says
 
-PEMF evidence for consumer devices is limited. The strongest signal is for osteoarthritis pain, where a Cochrane review of small trials found electromagnetic field therapy may reduce pain moderately, with uncertain effects on function. Claims about sleep, energy or recovery come mostly from manufacturers, and we found no independent trials of either product. Crystals have no good evidence behind them. Do not use PEMF with a pacemaker or other implanted device, and ask a doctor first if you are pregnant or being treated for a condition. For background, read [electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation).
+PEMF evidence for consumer devices is limited. The strongest signal is for osteoarthritis pain, where a Cochrane review of small trials found electromagnetic field therapy may reduce pain moderately, with uncertain effects on function. Claims about sleep, energy or recovery come mostly from manufacturers, and we found no independent trials of either product. Crystals have no good evidence behind them. For background, read [PEMF therapy — what the evidence shows](/science/evidence/pemf).
 
 ## Bottom line
 

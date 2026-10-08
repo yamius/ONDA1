@@ -14,6 +14,8 @@
  * prerender-routes.ts (article drips, review category pilots) keep working; this
  * list only adds to them.
  */
+import { RELEASE_QUEUE_ENTRIES } from './article-release-queue'
+
 export type PublishCollection = 'articles' | 'reviews' | 'comparisons' | 'h2h' | 'glossary'
 export interface PublishEntry {
   collection: PublishCollection
@@ -97,4 +99,6 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('h2h', 'medito-vs-insight-timer', '2026-10-04', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('h2h', 'medito-vs-headspace', '2026-10-04', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('articles', 'why-is-my-apple-watch-hrv-low', '2026-10-04', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  // Release queue: waiting translations, 10 pages site-wide every 2 days (scripts/article-release-queue.ts).
+  ...RELEASE_QUEUE_ENTRIES,
 ]

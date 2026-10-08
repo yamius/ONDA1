@@ -26,7 +26,7 @@ const article: Article = {
   content: `
 ## [ ARTICLE: NEURAL_ENTRAINMENT // BRAIN_FREQUENCY_TUNING ]
 
-Traditional meditation has long been a "black box" operation—subjective, inconsistent, and difficult to quantify. Neural Entrainment 2.0 transforms this practice into a closed-loop engineering process. By utilizing real-time EEG (Electroencephalography) and AI-generated binaural audio, we can now bypass the years of training required for "monk-level" focus and directly induce specific brainwave states through the Frequency Following Response (FFR).
+Traditional meditation has long been a "black box" operation—subjective, inconsistent, and difficult to quantify. Neural Entrainment 2.0 transforms this practice into a closed-loop engineering process. By utilizing real-time EEG (Electroencephalography) and AI-generated binaural audio, the aim is to nudge brainwave activity toward a target state through the Frequency Following Response (FFR). The evidence is mixed: EEG studies find inconsistent evidence that binaural beats actually shift brain rhythms, and no device replaces years of practice.
 
 ---
 
@@ -34,11 +34,11 @@ Traditional meditation has long been a "black box" operation—subjective, incon
 
 > **The Hack:** [ PROTOCOL_CLOSED_LOOP_SYNC ]
 >
-> **EEG Calibration:** Connect a consumer-grade EEG (e.g., Muse 2, Flowtime) to measure your baseline Power Spectral Density (PSD).
+> **EEG Calibration:** Connect a consumer-grade EEG (e.g., Muse 2, Flowtime) to get a rough estimate of your baseline Power Spectral Density (PSD); a few dry electrodes give coarse readings that blinks and jaw tension can distort.
 >
 > **AI-Generated Stimulus:** The system generates an auditory "carrier frequency" embedded with a differential tone. If the goal is Deep Focus (Alpha), the differential is set to ~10 Hz.
 >
-> **Real-Time Modulation:** As your brainwaves drift into high-beta (stress), the AI dynamically shifts the audio's volume, texture, or frequency to "anchor" the brain back into the target Alpha or Theta zone.
+> **Real-Time Modulation:** As your brainwaves drift into high-beta (often linked with tension, though not a direct measure of stress), the AI dynamically shifts the audio's volume, texture, or frequency to "anchor" the brain back into the target Alpha or Theta zone.
 >
 > **Verification:** The session concludes only once the cumulative "Time-in-State" metric meets the pre-programmed stability threshold.
 
@@ -50,16 +50,16 @@ Neural entrainment works through a biological mechanism called the Frequency Fol
 
 **Oscillatory Coupling:** When the brain is exposed to a rhythmic sensory stimulus (auditory or visual), the neurons in the auditory cortex begin to fire at the same frequency as the stimulus.
 
-**Network Synchronization:** This local firing spreads throughout the cortex, effectively "tuning" the entire system's CPU frequency.
+**Network Synchronization:** Some researchers propose that this local rhythm spreads across the cortex, "tuning" the whole system; EEG studies find inconsistent evidence that it does.
 
 **Neuroplasticity:** Repeatedly practising a shift into Alpha (8–12 Hz) for focus or Theta (4–8 Hz) for creativity is associated, over time, with finding these states easier to reach on your own — the same "practice makes it familiar" principle behind any trained skill.
 
 ---
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Muse 2 / Flowtime EEG Headband
+> EXAMPLE_DEVICE: Muse 2 / Flowtime EEG Headband
 > METRIC: Alpha-Theta Coherence & Time-in-State (min)
-> STATUS: NEURAL_SYNC_ACTIVE
+> STATUS: TRACK_OVER_WEEKS
 
 ---
 
@@ -76,7 +76,7 @@ Neural entrainment via meditation is built on the practice. Three apps where the
   howToSteps: [
     {
       name: 'PROTOCOL_CLOSED_LOOP_SYNC',
-      text: 'Connect a consumer-grade EEG (e.g., Muse 2, Flowtime) to measure your baseline Power Spectral Density (PSD).',
+      text: 'Connect a consumer-grade EEG (e.g., Muse 2, Flowtime) to get a rough estimate of your baseline Power Spectral Density (PSD); a few dry electrodes give coarse readings that blinks and jaw tension can distort.',
       protocolId: 'neural-ent-closed-loop-neural-sync',
     },
   ],

@@ -80,3 +80,12 @@ New link targets:   (pages that don’t exist yet, or “none”)
 Sections skipped:   (which and why, or “none”)
 Open questions / unsure about:
 ```
+
+## Safety blocks vs inline safety text
+
+Owner decision 2026-10-08.
+
+- Where a shared "Safety first" block renders (SaunaSafetyBlock, FastBreathingSafetyBlock, RedLightSafetyBlock, ColdSafetyBlock, MouthTapeSafetyBlock — page lists in `src/data/*-safety-i18n.ts`), do NOT add a separate plain-text safety paragraph to REVIEWS, COMPARISONS/ROUND-UPS or HEAD-TO-HEADS. The block is the single safety message there.
+- FAQ answers that directly answer a safety question stay — they are answers, not duplicates.
+- In ARTICLES with protocols, KEEP the short safety paragraph right at the instruction (in addition to the block).
+- PRODUCT-SPECIFIC warnings stay in reviews (owner decision 2026-10-08): sentences about THIS model's features, its manual/instructions or model-specific risks (e.g. a heater guard, a timer, the maker's stated distance) are kept. Generic sentences that repeat the shared block (eyes/goggles, photosensitising drugs, pregnancy, alcohol, hydration, heart conditions, children) are removed; if nothing product-specific remains, the whole Safety section is removed. Applied: platinumled-biomax-600 and almost-heaven-salem (EN + 11 langs) — both sections were fully generic and were removed.

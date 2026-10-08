@@ -456,6 +456,23 @@ const HEAD_TO_HEAD_MODULES: HeadToHeadInput[] = [
 /** Full registry with computed winners. */
 export const ALL_HEAD_TO_HEADS: HeadToHead[] = HEAD_TO_HEAD_MODULES.map(withWinner)
 
+/** Axis-winner sanity check. Throws at import (so prerender / `npm run build`
+ *  fails): a two-way duel (no productCSlug) may only use 'a' | 'b' | 'tie';
+ *  'c' is allowed only in three-way duels. */
+export function validateHeadToHeadWinners(list: HeadToHead[]): void {
+  const bad: string[] = []
+  for (const h of list) {
+    const allowed = h.productCSlug ? ['a', 'b', 'c', 'tie'] : ['a', 'b', 'tie']
+    for (const ax of h.axes) {
+      if (!allowed.includes(ax.winner)) bad.push(`${h.slug} › "${ax.name}": winner '${ax.winner}'`)
+    }
+  }
+  if (bad.length) {
+    throw new Error(`Invalid head-to-head axis winners (two-way duels allow only 'a' | 'b' | 'tie'):\n  ${bad.join('\n  ')}`)
+  }
+}
+validateHeadToHeadWinners(ALL_HEAD_TO_HEADS)
+
 /** Live head-to-head duels — date-gated entries are excluded until their
  *  `publishOn` date is reached. Consumers (hub, category and review pages,
  *  prerender route list, lookup helpers) all read from this filtered view

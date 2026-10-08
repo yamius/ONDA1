@@ -9,7 +9,7 @@ const intakeBreathing: ToolReviewInput = {
   description:
     'ONDA review of Intake Breathing — premium external magnetic nasal dilator with reusable magnetic strips. Scored on adhesion, mechanism, evidence and value.',
   verdict:
-    'Best premium nasal dilator — magnetic reusable design, James Nestor-recommended, deepest evidence base in nasal-airway openers.',
+    'Best premium nasal dilator — magnetic reusable design, James Nestor-recommended; its airflow studies are brand-funded.',
   summary:
     'Intake Breathing is the premium external nasal dilator — small adhesive tabs on each nostril hold a flexible magnetic band that mechanically widens the nostrils overnight. James Nestor explicitly recommends it in Breath. Reusable band design, replacement adhesive tabs, demonstrably effective for mouth-breathers who can\'t commit to mouth tape. Premium pricing reflects the engineering.',
   scores: [

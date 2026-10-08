@@ -12,7 +12,7 @@ const article: Article = {
   title: 'Gamma Brainwaves: The Measurable Signature of Meditation Experience',
   seoTitle: 'Gamma Brainwaves & Meditation Experience | ONDA Life',
   description:
-    'Experienced meditators show higher gamma brainwaves — and the amount rises with practice experience. How research turned meditation depth into a measurable, progress-linked brain signal.',
+    'Experienced meditators show higher gamma brainwaves, and in one study gamma was higher in people with more practice. What this cross-sectional research does and does not show about meditation as a trainable skill.',
   category: 'Biological Software',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-brain-changes-how-fast', 'measuring-meditation-progress', 'how-much-meditation-do-you-need', 'how-to-raise-hrv-naturally', 'rajyoga-open-eye-meditation'],
   introStyle: 'indigo',
@@ -22,12 +22,12 @@ const article: Article = {
   imageTitle: 'Gamma Brainwaves and Meditation Experience',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'More practice, more gamma — a brain rhythm that behaves like a fitness marker. You can’t feel it, but you can track its autonomic twin.',
+    text: 'Experienced meditators show more gamma — a difference between groups, not proof that it grows in you. You can’t feel it, but you can watch how your pulse and breathing respond to practice.',
     link: '/measurements',
     linkText: 'What ONDA measures →',
   },
   content: `
-Experienced meditators have a distinctive brain signature — elevated gamma brainwaves — and, crucially, the amount of gamma rises with how much you've practiced. In a study comparing practitioners of three meditation traditions (Vipassana, Himalayan Yoga, and Isha Shoonya) against non-meditators, all the meditators showed higher parieto-occipital gamma amplitude (60–110 Hz) than controls — and this gamma power was positively correlated with each person's meditation experience. In other words, meditation leaves a measurable mark on the brain's fastest rhythms, and that mark grows with practice. This is one of the clearest pieces of evidence that meditation is a [trainable skill with an objective, progress-linked signature](/articles/meditation-brain-changes-how-fast) — not just a subjective state you either "get" or don't.
+Experienced meditators have a distinctive brain signature — elevated gamma brainwaves — and in one study the amount of gamma was higher in people with more practice. Comparing practitioners of three meditation traditions (Vipassana, Himalayan Yoga, and Isha Shoonya) with non-meditators, researchers found that all the meditators showed higher parieto-occipital gamma amplitude (60–110 Hz) than controls, and gamma power was positively correlated with each person's meditation experience. This compares different people at one point in time, so it cannot show that practice caused the difference: people who keep meditating for years may differ from the start. Still, it fits the idea that meditation is a [trainable skill](/articles/meditation-brain-changes-how-fast), not just a subjective state you either "get" or don't.
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
@@ -39,25 +39,25 @@ What makes gamma interesting for meditation is that it appears both *during* pra
 
 ## Does meditation experience increase gamma waves?
 
-Yes — the most important finding for anyone practicing is that gamma amplitude was **positively correlated with meditation experience.** More practice, more gamma. This turns a brain rhythm into something like a fitness marker — evidence that meditation builds a measurable capacity over time, the way training builds muscle.
+Possibly, but the evidence cannot show it yet. In that study gamma amplitude was **positively correlated with meditation experience**: people with more practice tended to have more gamma. That is a correlation across different people, not a measurement of gamma rising in the same person over time. Long-term meditators may differ from the start in health, temperament or habits, so the finding is suggestive rather than proof that practice builds gamma.
 
-It also held across three different traditions, suggesting a common neural signature of meditative training rather than a quirk of one technique. And researchers ruled out that the gamma came from eye or muscle movement artifacts, confirming it as genuine brain activity. Higher gamma in experienced meditators isn't an accident of measurement — it's the brain reflecting accumulated practice.
+The pattern held across three different traditions, which suggests a shared feature of long-term practice rather than a quirk of one technique. The researchers also checked for eye- and muscle-movement artefacts, a known problem for scalp gamma recordings, and concluded that the signal was brain activity. Even so, gamma recordings are easily contaminated, and the finding comes from a single cross-sectional study.
 
 ## Do different meditation traditions change the brain in the same way?
 
-They appear to share a measurable core: beyond gamma, high-density EEG research across four Indian-rooted traditions — Vipassana, Brahma Kumaris Raja Yoga, Heartfulness, and Isha Yoga — found that machine-learning classifiers could distinguish meditative from non-meditative brain states with about 91% accuracy. Notably, classification worked *better* in advanced meditators than in beginners, again pointing to a stronger, more distinct neural signature with experience.
+They appear to share some features: beyond gamma, high-density EEG research across four Indian-rooted traditions — Vipassana, Brahma Kumaris Raja Yoga, Heartfulness, and Isha Yoga — found that machine-learning classifiers could tell meditative from non-meditative brain states with high accuracy. Classification worked *better* in advanced meditators than in beginners, which is consistent with a more distinct brain state in experienced practitioners, though again these are different groups of people.
 
-This is a striking convergence: whatever the tradition, deep meditation produces a recognizable, measurable brain state — and that state becomes more pronounced and distinguishable as you train. Meditation isn't an unmeasurable mystery; it has a neural fingerprint that sharpens with practice. (One of those traditions, [open-eyed Rajyoga](/articles/rajyoga-open-eye-meditation), has its own distinct EEG signature.)
+Taken together, these studies suggest that deep meditation produces a recognizable brain state across traditions, and that it is more distinct in experienced practitioners. They do not show whether, or how quickly, that state develops in someone who starts practising. (One of those traditions, [open-eyed Rajyoga](/articles/rajyoga-open-eye-meditation), has its own distinct EEG signature.)
 
 ## Why measurable progress changes everything
 
-Here's why this matters beyond the lab. The single biggest reason people abandon meditation is the feeling that nothing is changing. But the gamma research shows that something very real *is* changing, and it accumulates with practice. The problem is only that you can't feel your gamma waves.
+Here's why this matters beyond the lab. A common reason people abandon meditation is the feeling that nothing is changing. The gamma research shows that experienced practitioners differ in measurable ways, but you can't feel your gamma waves, and these studies can't tell you whether your own practice is changing them.
 
-This is the case for [meditation with measurable feedback](/articles/measuring-meditation-progress). You won't hook yourself up to an EEG daily — but the same principle applies to accessible signals like [heart rate variability](/science/concepts/heart-rate-variability) (HRV), which also strengthens with meditation practice and reflects the autonomic side of the same trained calm. Seeing *any* objective marker climb with your practice provides the proof of progress that the gamma studies reveal is genuinely there — and that proof is what keeps people practicing long enough to build it.
+This is the case for [meditation with measurable feedback](/articles/measuring-meditation-progress). You won't hook yourself up to an EEG daily, but you can watch accessible signals such as your pulse, breathing and [heart rate variability](/science/concepts/heart-rate-variability) (HRV). HRV often rises during slow, calm practice, while lasting changes in resting HRV after a meditation course have not been shown consistently ([meditation and the autonomic nervous system](/science/evidence/meditation-autonomic-nervous-system)). Treat these numbers as feedback on how your body responds to a session, not as a readout of brain change.
 
 ## Track the progress you can measure
 
-You can't record your gamma waves at home, but you can track the autonomic signature of a trained nervous system. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from your Apple Watch (or your pulse from your phone camera) and shows how they respond to practice and trend over weeks. Just as gamma rises with meditation experience, your [HRV baseline tends to strengthen](/articles/how-to-raise-hrv-naturally) with consistent practice — giving you a visible, at-home version of the progress the brain research documents.
+You can't record your gamma waves at home, but you can see how your body responds to practice. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from your Apple Watch (or your pulse from your phone camera) and shows how they respond during sessions and trend over weeks. A lasting rise in resting HRV from meditation is not guaranteed, and other habits that [can raise HRV](/articles/how-to-raise-hrv-naturally) matter too, so read the trend as feedback, not as proof of brain change.
 `,
 }
 

@@ -11,9 +11,9 @@ const whoop5: ToolReviewInput = {
   verdict:
     'A recovery coach on your wrist: continuous overnight HRV and sharp strain insight, locked behind a perpetual membership.',
   summary:
-    'The Whoop 5.0 is built around recovery. It samples HRV continuously through the night and reports a full-sleep average rather than a morning spot-check, which makes its daily recovery signal the cleanest of the three. The trade-off is the model: there is no hardware to own, only an ongoing membership.',
+    'The Whoop 5.0 is built around recovery. It builds its daily recovery signal from HRV measured during sleep rather than from a morning spot-check. The trade-off is the model: there is no hardware to own, only an ongoing membership.',
   scores: [
-    { criterionId: 'hrv-accuracy', score: 8.5, note: 'Continuous overnight sampling builds a full-night HRV average from hundreds of readings, not one spot-check.' },
+    { criterionId: 'hrv-accuracy', score: 8.5, note: 'Recovery is built on HRV measured during sleep, not on one morning spot-check.' },
     { criterionId: 'sensor', score: 8.0, note: 'A multi-wavelength optical band that holds heart-rate well when worn snugly.' },
     { criterionId: 'sleep-accuracy', score: 8.0, note: 'Recovery-grade sleep tracking, close behind Oura and well ahead of a general-purpose smartwatch.' },
     { criterionId: 'data-access', score: 6.5, note: 'A developer API exists, but like Oura the raw beat-to-beat stream stays largely closed.' },
@@ -42,9 +42,9 @@ const whoop5: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-The Whoop 5.0 is built around one idea: recovery. Rather than a morning spot-check, it samples [HRV](/glossary/heart-rate-variability) continuously through the night and reports a full-sleep average drawn from hundreds of readings — the cleanest basis for a daily recovery signal of the three devices here. The screenless band is easy to forget you are wearing, the current generation pushed battery life out to roughly two weeks, and the slide-on battery pack means it never has to leave your wrist to charge.
+The Whoop 5.0 is built around one idea: recovery. Rather than a morning spot-check, it builds its daily recovery signal from [HRV](/glossary/heart-rate-variability) measured during sleep; Whoop does not publish exactly how that nightly value is weighted. The screenless band is easy to forget you are wearing, the current generation pushed battery life out to roughly two weeks, and the slide-on battery pack means it never has to leave your wrist to charge.
 
-**2026 validation update.** Independent HRV and sleep comparisons through 2026 continue to place Whoop among the stronger wrist-worn options — its overnight HRV and sleep-stage agreement typically land in the ~75–86% range against reference devices. That is short of a finger-based ring or an ECG chest strap, but it is dependable enough that the *trend* Whoop reports each morning is one you can train on.
+**2026 validation update.** A wrist band is still short of a finger-based ring or an ECG chest strap for beat-to-beat precision, and its sleep stages are estimates. Read the *trend* Whoop reports each morning rather than any single value.
 
 ## What are the downsides of Whoop 5.0?
 
@@ -71,7 +71,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   relatedSlugs: ['oura-ring-4', 'apple-watch-series-11'],
   faq: [
     { q: "Does Whoop 5.0 require a subscription?", a: "Yes. Whoop is subscription-only: $199 per year for WHOOP One, $239 for Peak or $359 for Life, each including the band — there is no separate hardware purchase. Stop paying and the band stops working." },
-    { q: "Is Whoop 5.0 accurate for HRV?", a: "Whoop samples HRV continuously overnight and reports a full-sleep average. Its own validation places sleep and HRV agreement in roughly the 75–86% range against reference devices — strong for a wrist band, behind a finger ring or ECG chest strap." },
+    { q: "Is Whoop 5.0 accurate for HRV?", a: "Whoop builds its nightly HRV value from measurements taken during sleep. It is good enough to follow trends, but as a wrist band it is behind a finger ring or ECG chest strap for precision. The 5.0 itself has not been separately tested." },
     { q: "Who is Whoop 5.0 best for?", a: "Athletes and serious trainers who act on a daily recovery-and-strain score. The ~14-day battery and screenless band suit 24/7 wear; it is overkill for casual users who dislike subscriptions." },
   ],
 

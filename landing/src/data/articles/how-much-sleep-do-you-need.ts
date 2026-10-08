@@ -68,7 +68,7 @@ You can repay *some* debt — a few extra hours across several nights helps — 
 **The Science:** A stable wake time entrains your [circadian rhythm](/glossary/circadian-rhythm) and stabilises the pressure-and-clock system that governs sleep — more effective than erratic hours plus weekend catch-up.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Sleep tracker + daytime alertness
+> EXAMPLE_DEVICE: Sleep tracker + daytime alertness
 > METRIC: Need met most nights; afternoon energy without heavy caffeine
 > STATUS: SLEEP_BALANCE_POSITIVE
 

@@ -15,7 +15,7 @@ const mendi: ToolReviewInput = {
   scores: [
     { criterionId: 'signal-quality', score: 6.5, note: 'fNIRS optodes over the prefrontal cortex — measures blood-oxygenation changes rather than electrical activity. Single-region measurement, simpler than EEG but less informationally rich.' },
     { criterionId: 'training-content', score: 7.5, note: 'Game-based neurofeedback: a ball rises with sustained prefrontal activity. Simple programme, no meditation library, no sleep — pure focus training.' },
-    { criterionId: 'insights', score: 7.0, note: 'Per-session focus scores plus aggregate trend data. Less analytical depth than EEG-based devices.' },
+    { criterionId: 'insights', score: 7.0, note: 'Mendi’s own per-session score plus aggregate trend data. Less analytical depth than EEG-based devices.' },
     { criterionId: 'comfort', score: 8.0, note: 'Simple forehead band — comfortable for 10–15 minute sessions, easy to put on and remove.' },
     { criterionId: 'app-ux', score: 7.5, note: 'Polished iOS/Android app with clean game-driven session flow.' },
     { criterionId: 'open-data', score: 5.0, note: 'Closed system — no raw data export or SDK. Not a developer platform.' },
@@ -25,7 +25,7 @@ const mendi: ToolReviewInput = {
     'Game-based neurofeedback — easiest learning curve in the category',
     'Single forehead band — most comfortable form factor for focus sessions',
     'No subscription required',
-    'fNIRS gives a different signal modality from EEG — useful if EEG has not worked for you',
+    'fNIRS gives a different signal modality from EEG — may suit some users who did not get on with EEG',
   ],
   cons: [
     'Not EEG — fNIRS is a different (and narrower) signal',
@@ -42,7 +42,7 @@ const mendi: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Mendi is the gentlest entry into neurofeedback. The fNIRS sensor on the forehead measures blood-oxygenation changes in the prefrontal cortex — a different signal from EEG, simpler to interpret — and feeds it into a single game: a ball rises as you sustain prefrontal activity, falls as you lose focus. There is nothing else to learn. Sessions are short, the app is clean, and the device is the most comfortable in this list.
+Mendi is the gentlest entry into neurofeedback. The fNIRS sensor on the forehead measures blood-oxygenation changes in the prefrontal cortex — a different signal from EEG, simpler to interpret — and feeds it into a single game: a ball rises as the prefrontal oxygenation signal climbs and falls as it drops. There is nothing else to learn. Sessions are short, the app is clean, and the device is the most comfortable in this list.
 
 ## What are the downsides of Mendi?
 
@@ -56,10 +56,10 @@ Choose Mendi if the simplest possible neurofeedback experience is exactly what y
 
 ## Background reading
 
-The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+The neuroscience behind Mendi’s signal — fNIRS measures blood oxygenation in the prefrontal cortex, not electrical brain activity — and what feedback training can and cannot do.
 
-- [Cognitive architecture: neural throughput](/articles/cognitive-architecture-neural-throughput) — reading EEG as the bandwidth signal of your cognitive system
-- [Cognitive architecture: nootropic stacks](/articles/cognitive-architecture-nootropic-stacks) — why EEG is the closest consumer-measurable proxy for nootropic effects
+- [EEG neurofeedback and consumer headsets](/science/evidence/eeg-neurofeedback) — how fNIRS differs from EEG, and what blinded feedback trials show
+- [Breathing for focus and attention](/articles/breathing-for-focus-and-attention) — simple ways to steady attention without a device
 - [Digital dementia and attentional control](/articles/digital-dementia-attentional-control) — rebuilding attention with feedback-driven practice
 `,
   references: [
@@ -70,7 +70,7 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
     { q: "Is Mendi worth it?", a: "Mendi is worth it if you want the simplest neurofeedback experience focused on prefrontal attention training. Its game-based format has the easiest learning curve in the category, it uses a comfortable single forehead band, and there is no subscription. It does not include a meditation library or sleep tracking." },
     { q: "How much does Mendi cost?", a: "Mendi has a $379 list price (often discounted, about $284 in a September 2026 sale) as a one-time purchase, with no subscription required. That covers the single forehead band and its game-based neurofeedback training, though it does not include a meditation library or sleep tracking." },
     { q: "What are the downsides of Mendi?", a: "Mendi is not EEG: it uses fNIRS, a different and narrower signal, and it measures only one region, the prefrontal cortex. It has no meditation library or sleep tracking, and its data platform is closed, with no developer access." },
-    { q: "Who is Mendi best for?", a: "Mendi is best for users seeking the simplest neurofeedback experience focused purely on prefrontal attention training. Its fNIRS signal can also be useful if EEG-based neurofeedback has not worked for you, since it measures a different signal modality." },
+    { q: "Who is Mendi best for?", a: "Mendi is best for users seeking the simplest neurofeedback experience focused purely on prefrontal attention training. Because fNIRS measures a different signal, it may suit some people who did not get on with EEG headsets, though no study compares the two for this." },
   ],
   datePublished: '2026-05-21',
   dateModified: '2026-09-30',

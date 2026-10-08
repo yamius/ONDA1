@@ -16,7 +16,7 @@ const jovsDpl: ToolReviewInput = {
     { criterionId: 'irradiance', score: 6.5, note: 'Documented irradiance per mode. Less independently verified than category references; spec sheets emphasize peak rather than continuous output.' },
     { criterionId: 'wavelength-coverage', score: 9.0, note: 'Seven wavelength modes — broadest coverage in consumer face masks. Goes beyond standard red + NIR into blue / amber / green.' },
     { criterionId: 'led-count-coverage', score: 7.0, note: 'Solid LED count across hard-shell coverage. No neck flap.' },
-    { criterionId: 'clinical-evidence', score: 5.5, note: 'FDA registered. Strong K-beauty consumer market but limited Western peer-reviewed validation on the specific device.' },
+    { criterionId: 'clinical-evidence', score: 5.5, note: 'FDA registered (a listing, not clearance or approval). Strong K-beauty consumer market but limited Western peer-reviewed validation on the specific device.' },
     { criterionId: 'comfort-fit', score: 6.5, note: 'Hard-shell hybrid build — less comfortable than full silicone alternatives. Korean ergonomic design tries to soften the hard form factor.' },
     { criterionId: 'value', score: 7.5, note: '$399 — accessible mid-tier pricing for the multi-wavelength spec. Strong per-wavelength cost.' },
   ],
@@ -35,7 +35,7 @@ const jovsDpl: ToolReviewInput = {
   bestFor: 'Best for users wanting maximum wavelength coverage at mid-tier pricing — spec maximalism over Western clinical-evidence credentials.',
   testStatus: 'evidence-based',
   testNote:
-    'Evidence-based assessment — scored from JOVS product documentation, FDA registration and 2026 K-beauty / Western consumer reviews. Not hands-on tested by ONDA.',
+    'Evidence-based assessment — scored from JOVS product documentation, the brand’s FDA-registration statement and 2026 K-beauty / Western consumer reviews. Not hands-on tested by ONDA.',
   price: { usd: 399, note: 'DPL Photofacial Mask standalone', asOf: '2026-05-28' },
   link: 'https://www.jovs.com/',
   linkType: 'official',

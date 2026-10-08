@@ -118,7 +118,7 @@
     "i-maneuver": {
       "badge": "[ PARTE 4 — NIVEL 2: EMOCIONES / AQUA ]",
       "subtitle": "Protocolo: La maniobrabilidad del «pequeño mamífero»",
-      "metaDescription": "Parte 4: Neurocepción y deriva polivagal. Maniobrabilidad del pequeño mamífero — cortisol y adrenalina como combustible. ONDA Life.",
+      "metaDescription": "Parte 4: Neurocepción y deriva polivagal. Maniobrabilidad del pequeño mamífero — mantener la compostura bajo presión. ONDA Life.",
       "imageAlt": "Maniobra cognitiva, biohacking de toma de decisiones estratégicas, ONDA YO MANIOBRO, función ejecutiva neural visualizada.",
       "imageTitle": "[I_MANEUVER]: Visualización de la matriz multidimensional de decisión y la sincronización de la inteligencia táctica.",
       "intro": "Bienvenido a la etapa donde la flexibilidad biológica se transforma en maestría aplicada. Si las etapas anteriores eran sobre aprender simplemente a «ser», aquí aprendemos a ser en movimiento.\n\nEn el corazón de la Parte 4 está el regalo evolutivo de los pequeños mamíferos: la capacidad de evasión instantánea, navegación sutil y micro-evasión de amenazas sin caer en estrés paralizante. Traducimos la maniobrabilidad de cuestión de «suerte» a habilidad biológica medible.",
@@ -127,7 +127,7 @@
         "items": [
           { "name": "Teoría polivagal", "text": "En los términos de la teoría polivagal (un modelo debatido): entrenar al sistema nervioso a «derivar» suavemente entre el vago ventral (estado de compromiso social y seguridad) y el sistema simpático (energía para la acción). Usar el tono simpático para una maniobra sin caer en pánico o rabia." },
           { "name": "Neurobiología y neurocepción", "text": "Inspirado en ideas polivagales (un modelo debatido): practicamos la atención a la sensación sentida de seguridad y a los cambios del entorno, lo que el modelo llama neurocepción. Es una imagen de práctica, no la afirmación de que se entrene un circuito cerebral concreto." },
-          { "name": "Neuroendocrinología", "text": "Impacto directo sobre el eje HPA (hipotálamo-hipófisis-suprarrenales). Enseñamos al cuerpo a controlar la liberación de cortisol y adrenalina, convirtiéndolos de veneno en combustible para la precisión." },
+          { "name": "Neuroendocrinología", "text": "Trabajo con la vivencia del estrés. Practicamos afrontar la presión con un enfoque estable y preciso en lugar de dejarnos arrastrar por ella." },
           { "name": "Linfología", "text": "Usar el tono muscular como bomba natural para limpiar el cuerpo de los metabolitos del estrés, asegurando frescura física incluso bajo cargas altas." }
         ]
       },
@@ -152,14 +152,14 @@
     "i-guard-territory": {
       "badge": "[ PARTE 5 — NIVEL 2: EMOCIONES / AQUA ]",
       "subtitle": "Protocolo: La fuerza del «gran mamífero»",
-      "metaDescription": "Parte 5: DHEA, vago ventral, dominio sereno. Fuerza del gran mamífero — densidad de presencia. ONDA Life.",
+      "metaDescription": "Parte 5: calma arraigada, vago ventral, dominio sereno. Fuerza del gran mamífero — densidad de presencia. ONDA Life.",
       "imageAlt": "Seguridad del sistema inmune, defensa biológica del territorio, ONDA YO GUARDO EL TERRITORIO, integridad del microbioma visualizada.",
       "imageTitle": "[I_GUARD]: Visualización del perímetro inmune multicapa y el mantenimiento de la soberanía biológica.",
       "intro": "En esta etapa dejamos de maniobrar y comenzamos a ocupar espacio. Pasamos a trabajar con el reactor bioquímico del cuerpo a nivel del «gran mamífero». Aquí la emoción se ve no como un sentimiento abstracto, sino como un proceso de bioingeniería con firma hormonal, patrón neuromotor y perfil vegetativo.\n\nEn la Parte 5, el foco es la homeostasis. Es la capacidad de mantener la estabilidad del medio interno, la densidad de presencia y un estado de «calma de estatus», independientemente de la presión externa.",
       "protocol": {
         "intro": "Reconfiguramos el cuerpo a través de cuatro sistemas clave:",
         "items": [
-          { "name": "Sistema endocrino (circuito hormonal del dominio)", "text": "Las suprarrenales pasan de la liberación de emergencia de cortisol a la producción de DHEA — la hormona de la vitalidad y la longevidad. El eje hipófisis-gónadas forma el «estado del ganador» mediante una estimulación moderada de testosterona. El timo restaura el vínculo entre seguridad social y respuesta inmune potente." },
+          { "name": "Sistema endocrino (circuito hormonal del dominio)", "text": "Con el tiempo, la práctica construye una «calma de estatus» arraigada en lugar de reactividad — una sensación sentida de estabilidad bajo presión social. El timo restaura el vínculo entre seguridad social y respuesta inmune potente." },
           { "name": "Sistema nervioso autónomo (parasimpática inteligente)", "text": "Según la teoría polivagal de Stephen Porges —un modelo debatido, no ciencia establecida—, es un estado «vagal ventral» de «alerta tranquila», donde el corazón late con potencia y firmeza, y el cerebro está listo para un dominio efectivo en lugar de pánico." },
           { "name": "Sistema linfático (limpieza mecánica)", "text": "El estrés crónico bloquea diafragma y suelo pélvico. Nuestras prácticas de «peso» y «volumen» actúan como drenaje linfático profundo, exprimiendo literalmente los metabolitos del estrés de los tejidos." },
           { "name": "Biología cuántica (coherencia)", "text": "Trabajamos sobre la «densidad de presencia». Desde la biofotónica, es un estado de alta coherencia en el campo electromagnético de las células. Tu presencia se vuelve palpable a nivel físico para los demás." }
@@ -176,7 +176,7 @@
       "results": {
         "intro": "Resultados neurobiológicos:",
         "items": [
-          "Bucle de retroalimentación: activación del hipotálamo → aumento de testosterona → reducción del cortisol. Esto da un estado de dominio sereno sin agresión.",
+          "Estabilidad: a medida que el sistema nervioso se calma, esa estabilidad se percibe como compostura — un dominio sereno sin agresión.",
           "Neuro-señalización: difundes estatus a través de señales neuromotoras.",
           "Influencia límbica: los demás registran tu estabilidad y seguridad límbica antes de que pronuncies tu primera palabra."
         ]
@@ -193,7 +193,7 @@
       "protocol": {
         "intro": "Este protocolo se basa en la activación del «cerebro social»:",
         "items": [
-          { "name": "Sistema de neuronas espejo (corteza premotora)", "text": "Tu Wi-Fi biológico. Entrenamos la capacidad de leer al instante intenciones y estados ajenos a través de microexpresiones y gestos, convirtiendo la intuición en una herramienta precisa de navegación." },
+          { "name": "Sistema de neuronas espejo (corteza premotora)", "text": "El sistema del cerebro para captar a los demás. Entrenamos la capacidad de leer intenciones y estados ajenos a través de microexpresiones y gestos, convirtiendo la intuición en un sentido de orientación más fiable." },
           { "name": "Perfil de oxitocina (hipotálamo)", "text": "Trabajo con la hormona de la confianza y la pertenencia. La meta es entrenar al sistema a producir oxitocina en respuesta al contacto social seguro, reduciendo automáticamente la ansiedad y la agresión basales." },
           { "name": "Vago ventral (compromiso social)", "text": "Activación de la «parasimpática inteligente». Es un estado donde músculos faciales y oído se afinan a la voz y el rostro humanos, proporcionando co-regulación — la capacidad de calmarte a través del otro y de calmar al otro a cambio." },
           { "name": "Corteza cingulada anterior (sensado social)", "text": "Entrenar el detector de errores y señales sociales. Aprendemos «ósmosis emocional» — el intercambio de estados — manteniendo la autonomía y evitando ser arrastrados al caos del otro." }
@@ -236,9 +236,9 @@
         "items": [
           { "name": "Corteza prefrontal dorsolateral (dlPFC)", "text": "Claridad cognitiva y retención del foco." },
           { "name": "Corteza cingulada anterior (ACC)", "text": "Un «detector de errores» de alta precisión y discriminador de diferencias." },
-          { "name": "Aumento de la amplitud P300", "text": "Biomarcador que indica con qué rapidez y eficiencia el cerebro reconoce un estímulo significativo." },
+          { "name": "Aumento de la amplitud P300", "text": "Marcador de EEG que la investigación relaciona con la rapidez y eficiencia con que el cerebro reconoce un estímulo significativo. Aquí nombra un objetivo de la práctica: ONDA no registra EEG, así que la app no mide la P300." },
           { "name": "Estabilidad sacádica", "text": "Precisión y control de los micromovimientos oculares al escanear el espacio." },
-          { "name": "Estabilización perceptiva", "text": "Entrar en estados Theta/Alpha para anclar la mente." }
+          { "name": "Estabilización perceptiva", "text": "Una imagen del paso a un estado más tranquilo, de tipo theta/alpha, para anclar la mente. ONDA no registra EEG, así que no puede saber en qué estado cerebral estás; durante la práctica muestra tu pulso y tu frecuencia respiratoria." }
         ]
       },
       "results": {
@@ -262,7 +262,7 @@
         "items": [
           { "name": "dlPFC y control ejecutivo", "text": "La corteza prefrontal dorsolateral es el principal controlador de la retención de objetivos. Fortalecer el enlace entre PFC y ganglios basales para un retorno fluido al objetivo y el filtrado de impulsos." },
           { "name": "Red de Atención Dorsal (DAN) y supresión del DMN", "text": "Activación de la red de atención voluntaria y dirigida. Entrenar al cerebro a desactivar a tiempo la Default Mode Network (DMN) — el «modo de mente errante» — para una inmersión profunda en la tarea." },
-          { "name": "Vinculación gamma y modulación colinérgica", "text": "Sincronizar neuronas en frecuencia gamma para ensamblar elementos dispersos de la percepción en una imagen única y coherente. Trabajo con acetilcolina, que literalmente «ilumina» las conexiones neurales necesarias." },
+          { "name": "Vinculación gamma y modulación colinérgica", "text": "El objetivo de reunir elementos dispersos de la percepción en una imagen única y coherente. La investigación relaciona este tipo de integración con la actividad en frecuencia gamma y con la acetilcolina, que ayuda al cerebro a priorizar las señales relevantes, pero el papel de gamma sigue en debate. ONDA no registra EEG." },
           { "name": "Locus Coeruleus", "text": "Regular los niveles de alerta mediante noradrenalina. La corteza cingulada anterior (ACC) monitoriza distracciones y detecta errores." }
         ]
       },
@@ -282,7 +282,7 @@
           "Propiedad de la atención: no solo te concentras — te conviertes en dueño de tu atención.",
           "Foco sin esfuerzo: el cerebro aprende a entrar en estado de foco profundo sin tensión excesiva, manteniendo claridad y conservando energía biológica.",
           "Inhibición cognitiva: optimización de la capacidad del sistema de ignorar activamente estímulos irrelevantes.",
-          "Marcadores biológicos: aumento de la potencia del ritmo beta en lóbulos frontales, estabilización del ritmo cardíaco y reducción del tiempo de reacción al cambiar de tarea."
+          "Marcadores buscados: la investigación sobre entrenamiento de la atención describe cambios como la potencia del ritmo beta frontal y un cambio de tarea más rápido. ONDA no registra EEG, así que la app no los mide; durante la práctica muestra tu frecuencia cardíaca."
         ]
       },
       "outro": "No solo te concentras — te conviertes en dueño de tu atención."
@@ -307,7 +307,7 @@
         "items": [
           { "name": "Corteza prefrontal (dlPFC + vmPFC)", "text": "La arquitectura y evaluación de estrategias futuras. El director que dirige el proceso creativo. El hipotálamo traduce la imagen mental en respuesta química (hormonas y neurotransmisores)." },
           { "name": "Hipocampo y Default Mode Network (DMN)", "text": "Reconstrucción de experiencias pasadas para modelar nuevos escenarios. La DMN es responsable del insight creativo y la visualización." },
-          { "name": "Corteza occipital (V1–V4) y γ-sincronización", "text": "Visualizar y renderizar imágenes en ausencia de estímulos externos. Unificación instantánea de conjuntos neurales para un «destello» de comprensión e integridad de la imagen." },
+          { "name": "Corteza occipital (V1–V4) y γ-sincronización", "text": "Visualizar y renderizar imágenes en ausencia de estímulos externos. La imagen aquí es la de una escena mental que se une en un todo vívido, un «destello» de comprensión; el papel de la sincronización gamma en esto sigue en debate, y ONDA no la mide." },
           { "name": "Corteza parietal posterior (PPC)", "text": "Ensamblaje de mapas espaciales y ubicación de la imagen dentro del contexto del entorno. Sincronización del boceto mental con la respuesta fisiológica del cuerpo." }
         ]
       },
@@ -316,8 +316,8 @@
         "items": [
           "Maestría proactiva: capacidad no solo de reaccionar a los eventos sino de «pre-escribirlos» a nivel neural.",
           "Eficiencia operacional: la visión se vuelve programa y el cerebro actúa como ejecutor eficiente, encontrando los caminos más cortos hacia el objetivo.",
-          "Estado de flujo: predominancia de ritmos Alpha y Theta, característicos del flujo creativo y el insight.",
-          "Creencia biológica: cambios en la respuesta galvánica de la piel (GSR) — indicador de que el cuerpo «cree» en la imagen creada como si fuera real."
+          "Estado de flujo: la experiencia de que visión y acción funcionan como una sola. Los estudios de EEG sobre el flujo son pequeños y apuntan sobre todo a theta frontal con alpha solo moderado; ONDA no registra EEG, así que la app no revisa tus ritmos cerebrales.",
+          "Creencia biológica: el cuerpo responde a la imagen creada como si fuera real. La investigación lo sigue con la conductancia de la piel (respuesta galvánica de la piel, GSR); ONDA no mide la GSR."
         ]
       },
       "outro": "La visión se vuelve programa, y el cerebro actúa como ejecutor eficiente. Adquieres la capacidad no solo de reaccionar a los eventos, sino de «pre-escribirlos» a nivel neural."
@@ -330,7 +330,7 @@
       "protocol": {
         "intro": "Transformar el cuerpo en un transmisor potente de ideas mediante mecanismos neuroquímicos:",
         "items": [
-          { "name": "Ingeniería hormonal", "text": "«Power posing» y patrones respiratorios para bajar el cortisol y aumentar la testosterona." },
+          { "name": "Ingeniería hormonal", "text": "«Power posing» y patrones respiratorios para practicar una presencia más estable y arraigada." },
           { "name": "Estimulación vagal", "text": "Ejercicios vocales que la teoría polivagal, un modelo debatido, vincula con el vago ventral." },
           { "name": "Reevaluación cognitiva", "text": "Técnica de control prefrontal que amortigua fisiológicamente la actividad de la amígdala, sustituyendo el miedo por la excitación." },
           { "name": "Bucles de oxitocina", "text": "Gestionar contacto visual y microexpresiones para construir confianza social." },
@@ -351,7 +351,7 @@
         "items": [
           "Expresión soberana: tu voz gana peso, tus palabras ganan precisión y tu auto-expresión se vuelve clara y auténtica.",
           "Transformación energética: ya no temes ser notado; usas la atención como combustible para tu manifestación.",
-          "Marcadores biológicos: ratio testosterona-cortisol optimizado; cambios en el timbre y amplitud vocal.",
+          "Marcadores observables: cambios en el timbre y la amplitud vocal.",
           "Presencia resonante: eliminación de filtros sociales y afinamiento del sonido resonante de la personalidad. Ausencia de tensión en la mandíbula y constricción en la garganta."
         ]
       },
@@ -361,7 +361,7 @@
       "badge": "[ PARTE 11 — NIVEL 4: SOCIEDAD / IGNIS ]",
       "subtitle": "Protocolo: Cognición social y regulación empática",
       "metaDescription": "Parte 11: Cognición social y regulación empática. Theory of Mind, predictive coding social. ONDA Life.",
-      "intro": "La Parte 11 es la transición de la auto-expresión a la interferencia. En física, es el momento en que dos ondas se solapan creando un patrón nuevo y complejo. En ONDA, es el ajuste de tu «Wi-Fi neural». Aprendemos a estar con el otro de manera que la interacción no se convierta en conflicto de intereses ni manipulación.\n\nEn este nivel se activa el «cerebro social» — una red sofisticada responsable de la sincronización interpersonal. El reto biológico clave es el equilibrio entre mantener la autonomía («Yo») y la conexión profunda («Nosotros»).",
+      "intro": "La Parte 11 es la transición de la auto-expresión a la interferencia. En física, es el momento en que dos ondas se solapan creando un patrón nuevo y complejo. En ONDA, es el ajuste de lo que, como imagen, llamamos tu «Wi-Fi neural». Aprendemos a estar con el otro de manera que la interacción no se convierta en conflicto de intereses ni manipulación.\n\nEn este nivel se activa el «cerebro social» — una red sofisticada responsable de la sincronización interpersonal. El reto biológico clave es el equilibrio entre mantener la autonomía («Yo») y la conexión profunda («Nosotros»).",
       "protocol": {
         "intro": "Afinar las herramientas de navegación interpersonal al máximo nivel de precisión:",
         "items": [
@@ -375,10 +375,10 @@
       "targets": {
         "intro": "Sistemas objetivo y mecanismos de la interacción interpersonal:",
         "items": [
-          { "name": "Neuronas espejo y red de Theory of Mind (ToM)", "text": "Resonancia directa de acciones y emociones — base de la empatía instantánea. La capacidad de la PFC medial (mPFC) de comprender perspectivas, intenciones y creencias del otro." },
+          { "name": "Neuronas espejo y red de Theory of Mind (ToM)", "text": "Resonancia directa de acciones y emociones, que la investigación relaciona con la comprensión de las acciones y los sentimientos de otros, aunque el papel de las neuronas espejo sigue en debate. La capacidad de la PFC medial (mPFC) de comprender perspectivas, intenciones y creencias del otro." },
           { "name": "Corteza orbitofrontal y vago ventral", "text": "Asegurar la armonía social y las elecciones éticas en el momento. En los términos de la teoría polivagal (un modelo debatido), el vago ventral crea un «contenedor» fisiológico de seguridad para la comunicación abierta." },
           { "name": "mPFC y rTPJ (unión témporo-parietal derecha)", "text": "La mPFC es el centro para comprender el «Yo» del otro. La rTPJ es un nodo clave para leer señales no verbales y gestionar el «modelo mental» del otro." },
-          { "name": "Sistema oxitocina-vasopresina e inter-brain synchrony", "text": "El equilibrio bioquímico entre confianza y protección de límites. La inter-brain synchrony es el fenómeno por el cual los ritmos cerebrales de los partners empiezan a operar en modo coherente." }
+          { "name": "Sistema oxitocina-vasopresina e inter-brain synchrony", "text": "El equilibrio bioquímico entre confianza y protección de límites. La inter-brain synchrony es lo que describen los estudios de hyperscanning cuando la actividad cerebral de los partners se vuelve más parecida durante tareas compartidas; los hallazgos son preliminares y ONDA no registra EEG." }
         ]
       },
       "results": {
@@ -386,7 +386,7 @@
         "items": [
           "Co-resonancia: aprendes a crear una resonancia que potencia a ambos participantes del proceso.",
           "Interacción nutricia: la interacción se vuelve ligera, productiva y biológicamente nutritiva.",
-          "Marcadores biológicos: sincronización de la HRV entre partners y coherencia cerebral en ritmo Alpha.",
+          "Marcadores buscados: la investigación describe la alineación del ritmo cardíaco (HRV) y del ritmo alpha entre partners. ONDA no registra EEG ni compara las señales de dos personas; con un Apple Watch muestra tu propia HRV.",
           "Estrategia de resonancia: pasar de estrategias de «supervivencia social» a «resonancia social». Relajación del diafragma pélvico y liberación de bloqueos corporales profundos."
         ]
       },
@@ -395,7 +395,7 @@
     "i-co-create": {
       "badge": "[ PARTE 12 — NIVEL 4: SOCIEDAD / IGNIS ]",
       "subtitle": "Protocolo: Sincronización neural e inteligencia colectiva",
-      "metaDescription": "Parte 12: Neural coupling e inteligencia colectiva. Sincronía gamma, coherencia entre cerebros. ONDA Life.",
+      "metaDescription": "Parte 12: Neural coupling e inteligencia colectiva — qué muestra y qué no la investigación sobre sincronía gamma y coherencia entre cerebros. ONDA Life.",
       "intro": "La Parte 12 es la culminación de la evolución social del sistema ONDA. Pasamos de «Yo» a «NOSOTROS» sin pérdida de individualidad, entrando en un estado de neural coupling. Es el punto donde la inteligencia, las emociones y los significados de un grupo se sincronizan, creando un flujo colectivo.\n\nEn este nivel el cerebro demuestra la forma más alta de coordinación interpersonal: el funcionamiento síncrono de ritmos a través de varios individuos. El reto biológico clave es la integración de la consciencia individual en una red neural colectiva.",
       "protocol": {
         "intro": "Transformar el «trabajo en equipo» en un proceso medible de alineación biológica:",
@@ -410,7 +410,7 @@
       "targets": {
         "intro": "Sistemas objetivo y mecanismos de la co-creación colectiva:",
         "items": [
-          { "name": "Brain-to-Brain Coupling y sincronización gamma", "text": "Sincronización entre cerebros donde los patrones neurales de los participantes se reflejan mutuamente. El ritmo gamma (40+ Hz) es responsable del insight colectivo y la síntesis instantánea de ideas." },
+          { "name": "Brain-to-Brain Coupling y sincronización gamma", "text": "Los estudios de hyperscanning indican que la actividad cerebral de los participantes puede alinearse más durante tareas conjuntas. La actividad gamma (40+ Hz) se ha relacionado con momentos de insight, pero ningún estudio muestra que produzca un insight colectivo. ONDA no registra EEG." },
           { "name": "Inhibición del DMN y atención conjunta", "text": "Suprimir la «red del ego» del cerebro para pasar de proteger los límites personales a realizar un objetivo común. La atención conjunta forma un foco único como centro de sinergia del grupo." },
           { "name": "dlPFC y ACC", "text": "El coordinador de acciones conjuntas y estrategias compartidas. La corteza cingulada anterior (ACC) suaviza microconflictos y afina el tempo del grupo." },
           { "name": "TPJ y sistemas endorfina-oxitocina", "text": "La unión témporo-parietal (TPJ) ofrece comprensión profunda de las intenciones de cada participante. Los sistemas de endorfinas y oxitocina actúan como «pegamento hormonal» de la cohesión colectiva." }
@@ -421,7 +421,7 @@
         "items": [
           "Maestría sinérgica: ganas la habilidad de integrarte en procesos grupales de cualquier complejidad, manteniendo soberanía mientras amplificas exponencialmente el resultado.",
           "Red viva: el grupo se transforma en una red neural viva capaz de resolver tareas inaccesibles a la mente individual.",
-          "Marcadores biológicos: coherencia entre cerebros, alineación grupal de la HRV y oleadas de dopamina colectivas.",
+          "Marcadores buscados: la investigación sobre grupos describe coherencia entre cerebros, alineación de la HRV y recompensa compartida (dopamina). ONDA no registra EEG, no compara la HRV de un grupo ni mide la dopamina: describen el objetivo de la práctica, no resultados medidos.",
           "Consciencia-Nosotros: crear un entorno hiperproductivo donde las ideas se auto-organizan en resultados a través de un campo unificado de consciencia."
         ]
       },
@@ -487,7 +487,7 @@
           { "name": "Cadenas fasciales (tensegridad)", "text": "Tejido conjuntivo como red informativa global del cuerpo." },
           { "name": "Canal espinal", "text": "Autopista principal para la transmisión de impulsos." },
           { "name": "Eje HPA", "text": "Regulación de la respuesta al estrés." },
-          { "name": "Biomarcadores", "text": "Reducción de la impedancia eléctrica de la piel; estabilización del tono vascular; desaparición de zonas de «amnesia sensorial»." }
+          { "name": "Biomarcadores", "text": "Marcadores que usa la investigación en este tipo de trabajo: impedancia eléctrica de la piel, tono vascular, menos zonas de «amnesia sensorial». ONDA no mide la conductancia de la piel ni el tono vascular; tómalos como el objetivo de la práctica." }
         ]
       },
       "results": {
@@ -513,7 +513,7 @@
           { "name": "Sincronización fisiológica", "text": "Prácticas con respiración sincronizada, micromovimientos y entrainment del ritmo cardíaco para activar el «puente neurosomático»." },
           { "name": "Bioquímica de la confianza", "text": "Usar contacto visual prolongado y estimulación táctil específica para inundar el sistema con oxitocina y vasopresina, estabilizando el vínculo." },
           { "name": "Expansión del campo sensorial", "text": "Técnicas para modular el lóbulo parietal, difuminando los bordes físicos del cuerpo para experimentar las sensaciones del partner como propias." },
-          { "name": "Alquimia de los estados", "text": "Transformar el estrés y la tensión biológica en energía de acción y placer (convirtiendo estados impulsados por cortisol en flujo de dopamina/endorfinas)." },
+          { "name": "Alquimia de los estados", "text": "Transformar el estrés y la tensión biológica en energía de acción y placer." },
           { "name": "Éxtasis consciente", "text": "Entrenar a la PFC para permanecer «en línea» durante experiencias pico, permitiendo integrar estados extáticos en neuroplasticidad a largo plazo." }
         ]
       },
@@ -523,7 +523,7 @@
           { "name": "Vías oxitocinérgicas", "text": "Centros del vínculo y reducción del estrés." },
           { "name": "Corteza somatosensorial", "text": "Para mapeo sensorial expandido." },
           { "name": "Corteza prefrontal (PFC)", "text": "Mantener la consciencia incluso dentro de estados extáticos intensos." },
-          { "name": "Biomarcadores", "text": "Coherencia HRV entre partners; brainwave coupling (sincronía Alpha/Theta); cambio del ratio oxitocina/cortisol hacia bioquímica de vínculo." }
+          { "name": "Biomarcadores", "text": "Descritos en la investigación, no medidos por ONDA: coherencia HRV entre partners y brainwave coupling (sincronía alpha/theta). ONDA no registra EEG ni compara las señales de dos personas; con un Apple Watch muestra tu propia coherencia." }
         ]
       },
       "results": {
@@ -549,7 +549,7 @@
           { "name": "Inventario de pensamientos", "text": "La práctica de «etiquetar» pensamientos entrantes: «planificación», «memoria», «crítica». Esto activa la mPFC y le quita al pensamiento su poder sobre ti." },
           { "name": "Inhibición neural", "text": "Entrenar la capacidad de cortar al instante una cadena de asociaciones, evitando que crezca en una narrativa emocional." },
           { "name": "Meta-monitorización «Testigo»", "text": "Mantener la atención no en el objeto sino en el proceso de la percepción misma. Observas al que observa." },
-          { "name": "Desacoplamiento de la respuesta límbica", "text": "Entrenar a la PFC a registrar pensamientos «cargados» como datos secos, evitando la liberación de cortisol." },
+          { "name": "Desacoplamiento de la respuesta límbica", "text": "Entrenar a la PFC a registrar pensamientos «cargados» como datos secos, en lugar de reaccionar a ellos." },
           { "name": "Silencio del DMN", "text": "Usar anclas sensoriales para «colapsar» el diálogo interno y pasar a un estado de silencio cognitivo profundo." }
         ]
       },
@@ -559,7 +559,7 @@
           { "name": "PFC dorsolateral", "text": "Un filtro potente que separa señales vitales del ruido informativo." },
           { "name": "Corteza cingulada anterior (ACC)", "text": "Tu monitor interno que avisa: «¡Atención! Acabamos de resbalar de vuelta a la rumiación.»" },
           { "name": "Amígdala (Circuit Breaking)", "text": "Bloquear la vía donde un pensamiento dispara al instante una respuesta de miedo en el cuerpo." },
-          { "name": "Biomarcadores", "text": "Aumento del hueco cognitivo; estabilización del ritmo Alpha; reducción de la rumiación mental." }
+          { "name": "Biomarcadores", "text": "Objetivos de la práctica: un hueco cognitivo más amplio, una atención tranquila de tipo alpha y menos rumiación. ONDA no registra EEG, así que la app no sigue el ritmo alpha." }
         ]
       },
       "results": {
@@ -611,14 +611,14 @@
     "i-synchronize": {
       "badge": "[ PARTE 18 — NIVEL 6: CEREBRO / AQUA II ]",
       "subtitle": "Protocolo: Sincronización neuroeléctrica e inteligencia colectiva",
-      "metaDescription": "Parte 18: Hyperscanning entre cerebros, ritmos gamma, neuronas espejo. El humano en red. Maestro de la inteligencia colectiva. ONDA Life.",
+      "metaDescription": "Parte 18: El humano en red — qué muestra y qué no la investigación de hyperscanning sobre ritmos gamma, neuronas espejo y coherencia cerebral. ONDA Life.",
       "imageAlt": "Sincronización neuroeléctrica, hyperscanning entre cerebros, ONDA YO SINCRONIZO.",
       "imageTitle": "[I_SYNCHRONIZE]: Visualización del cluster neural único formado por el bloqueo de fase entre múltiples cerebros.",
-      "intro": "La Parte 18 es el triunfo del pensamiento centrado en la red. En ciencia, esto se describe como hyperscanning entre cerebros: un estado donde los ritmos eléctricos del cerebro de los participantes se enclavan literalmente en fase, creando un único cluster neural. Pasamos del «modo Yo» al modo «Nodo de la Red». Es la base biológica de la inteligencia colectiva, donde significados e intenciones se transmiten vía «Wi-Fi neural», convirtiendo al grupo en una entidad sinérgica que se auto-aprende.\n\nReto biológico clave: superar los filtros egocéntricos para alcanzar la «telepatía biológica» y dominar la calidad de la propia señal dentro del sistema colectivo.\n\nActivamos sistemas responsables de la resonancia de orden ultra-alto y la coherencia entre cerebros. Los ritmos gamma (40 Hz) son la frecuencia a la que los flujos informativos de distintos cerebros se fusionan al instante en un insight unificado. El sistema de neuronas espejo (corteza premotora y lóbulo parietal inferior) ofrece comprensión preverbal de las acciones e intenciones de los partners. La rTPJ (unión témporo-parietal derecha) es un hub clave para modelar los estados de los demás y actuar como «navegador social». La ínsula anterior proporciona fusión empática — experimentas el estado del grupo como propio. La corteza cingulada anterior dorsal (dACC) mantiene la atención conjunta, convirtiendo al grupo en un único foco de creación.",
+      "intro": "La Parte 18 es el triunfo del pensamiento centrado en la red. En ciencia, la investigación más cercana es el hyperscanning entre cerebros: estudios que registran a varias personas a la vez indican que su actividad cerebral puede alinearse más durante tareas compartidas. Los hallazgos son preliminares y ONDA no registra EEG. Pasamos del «modo Yo» al modo «Nodo de la Red». El objetivo es la inteligencia colectiva: personas que comparten significados e intenciones para que el grupo aprenda en conjunto — lo que, como imagen, llamamos un «Wi-Fi neural».\n\nReto biológico clave: superar los filtros egocéntricos para entender mejor a los demás y dominar la calidad de la propia señal dentro del grupo.\n\nLa investigación sobre la comprensión social señala varias regiones cerebrales, y la práctica busca entrenar las habilidades con las que se relacionan. El papel de los ritmos gamma (unos 40 Hz) en la atención compartida y el insight sigue en debate. El sistema de neuronas espejo (corteza premotora y lóbulo parietal inferior) se relaciona en la investigación con la comprensión de las acciones ajenas, aunque su papel exacto se debate. La rTPJ (unión témporo-parietal derecha) se estudia como un hub para modelar los estados de los demás, una especie de «navegador social». La ínsula anterior participa en percibir estados corporales y emocionales, incluida la empatía por lo que sienten otros. La corteza cingulada anterior dorsal (dACC) se relaciona con el control de la atención y se estudia en tareas de atención conjunta. ONDA no registra EEG: estas prácticas entrenan la atención, la respiración y las habilidades sociales, no los ritmos cerebrales directamente.",
       "protocol": {
         "intro": "Este protocolo te convierte en director de la mente colectiva:",
         "items": [
-          { "name": "Afinamiento neuroeléctrico", "text": "Prácticas de sincronización grupal de la respiración, campos visuales compartidos y tonificación vocal para alinear los potenciales eléctricos del grupo." },
+          { "name": "Afinamiento neuroeléctrico", "text": "Prácticas de sincronización grupal de la respiración, campos visuales compartidos y tonificación vocal para llevar al grupo a un ritmo común." },
           { "name": "Activación de la resonancia espejo", "text": "Ejercicios de diálogo no verbal y «micro-mirroring» para leer intuitivamente intenciones sin distorsión cognitiva." },
           { "name": "Sincronización gamma-flujo", "text": "Resolver retos colectivos complejos y co-crear para romper barreras individuales y disparar insights compartidos de alta frecuencia." },
           { "name": "Acoplamiento de oxitocina", "text": "Aprovechar mecanismos de confianza y vulnerabilidad radical para reducir el ruido social y activar la «neuroquímica de la pertenencia»." },
@@ -630,8 +630,8 @@
         "items": [
           { "name": "Red de neuronas espejo", "text": "Comprensión preverbal de las intenciones y acciones de los partners." },
           { "name": "Sistema oxitocínico (química del vínculo)", "text": "La neuroquímica de la confianza y la pertenencia dentro del colectivo." },
-          { "name": "Generadores de ondas gamma", "text": "Ritmos cerebrales a 40 Hz donde los flujos informativos se fusionan en un insight unificado." },
-          { "name": "Biomarcadores", "text": "Coherencia de fase entre cerebros, dilatación pupilar síncrona (resonancia límbica), alineación del ritmo Alpha en el grupo." }
+          { "name": "Generadores de ondas gamma", "text": "Ritmos cerebrales rápidos (en torno a 40 Hz) que la investigación relaciona con la integración de información; aquí representan flujos separados que se funden en un insight compartido. Su papel sigue en debate y ONDA no registra EEG." },
+          { "name": "Biomarcadores", "text": "Descritos en la investigación de hyperscanning, no medidos por ONDA: coherencia de fase entre cerebros, dilatación pupilar síncrona, alineación del ritmo alpha en el grupo. ONDA no registra EEG ni compara señales entre personas." }
         ]
       },
       "results": {

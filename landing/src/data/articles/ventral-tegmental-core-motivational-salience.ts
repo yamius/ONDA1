@@ -87,7 +87,7 @@ To stabilize the VTA according to ONDA protocols.
 
 > **The Hack:** Use controlled exposure to stressors such as an ONDA cold plunge or intense training to generate a clean, intense baseline signal.
 
-**The Logic:** Hormetic stress resets dopamine sensitivity without oxidative soot. Cold and heavy load deliver a wide, slow pulse that the VTA reads as a high-fidelity event rather than empty jitter.
+**The Logic (hypothesis):** The idea is that hormetic stress resets dopamine sensitivity — a hypothesis, not a shown effect. Picture cold and heavy load as a wide, slow pulse rather than empty jitter; that is an image, not something measured in the VTA.
 
 ### PROTOCOL 3: Bypassing External Grids
 
@@ -96,7 +96,7 @@ To stabilize the VTA according to ONDA protocols.
 **The Logic:** The VTA learns to derive value from the processing stage itself — the deep-work loop. The reactor stops chasing micro-rewards and locks onto the long-form mission signal.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Subjective drive log / focus block timer
+> EXAMPLE_DEVICE: Subjective drive log / focus block timer
 > METRIC: Time-to-task, post-task energy, baseline mood
 > STATUS: REACTOR_STABLE
 

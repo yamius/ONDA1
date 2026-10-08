@@ -15,7 +15,7 @@ const museSAthena: ToolReviewInput = {
   scores: [
     { criterionId: 'signal-quality', score: 8.5, note: 'Four dry EEG electrodes plus prefrontal fNIRS optodes — the first consumer headset to fuse both signals in one device. Signal stability holds well during sit and lie-down sessions; a true research-grade reference it is not.' },
     { criterionId: 'training-content', score: 9.5, note: 'The deepest brain-training content library in the consumer space — guided meditations, breathwork, sleep journeys, focus sessions, mood tracking. Mature after a decade of iteration.' },
-    { criterionId: 'insights', score: 9.0, note: 'Per-session reports decompose meditation into calm, focus and active states; sleep staging combines EEG with movement. Best post-session analysis in this list.' },
+    { criterionId: 'insights', score: 9.0, note: 'Per-session reports label session time as calm, neutral or active using Interaxon’s own algorithm; sleep staging combines EEG with movement. Best post-session analysis in this list.' },
     { criterionId: 'comfort', score: 9.0, note: 'Soft fabric band designed for overnight wear — the only premium EEG headset in this list you can realistically sleep in.' },
     { criterionId: 'app-ux', score: 9.0, note: 'Polished iOS/Android app with Apple Health and Google Fit integration. Mature ecosystem after a decade of Muse releases.' },
     { criterionId: 'open-data', score: 6.0, note: 'Raw-EEG export available via Muse Direct (third-party app) but Interaxon’s first-party SDK is limited. Developer access lags Neurosity Crown by a wide margin.' },
@@ -56,11 +56,11 @@ Choose Muse S Athena if you want one consumer device that handles meditation, fo
 
 ## Background reading
 
-The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+The neuroscience these headsets feed back — and what the EEG signal can and cannot tell you about mental states.
 
 - [Alpha brain waves: calm, creativity and flow](/articles/neural-bridge-alpha-flow-gateway) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
-- [Acetylcholine as the attention lens](/articles/acetylcholine-lens-neuro-mechanics) — the neurochemistry behind focus that EEG resolves
-- [Cognitive architecture: neural throughput](/articles/cognitive-architecture-neural-throughput) — reading EEG as the bandwidth signal of your cognitive system
+- [Acetylcholine as the attention lens](/articles/acetylcholine-lens-neuro-mechanics) — the neurochemistry behind focus
+- [Cognitive architecture: neural throughput](/articles/cognitive-architecture-neural-throughput) — a metaphor for how much information the mind can handle
 `,
   references: [
     { label: 'Muse S Athena — official product page', url: 'https://choosemuse.com/products/muse-s-athena' },

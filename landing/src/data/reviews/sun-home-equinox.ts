@@ -55,7 +55,7 @@ Choose Sun Home Equinox if you want category-leader-tier full-spectrum IR with m
 
 ## Background reading
 
-The biology of why heat exposure works — and the protocols that compound with the hardware.
+Background reading on the ideas behind heat exposure — mostly hypotheses, not effects shown in people.
 
 - [Longevity protocol: biological clock reset](/articles/longevity-protocol-biological-clock-reset) — where sauna slots into a reset routine
 - [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — the heat-shock side of the stress response
@@ -69,7 +69,7 @@ The biology of why heat exposure works — and the protocols that compound with 
   faq: [
     { q: "Is the Sun Home Equinox worth it?", a: "The Sun Home Equinox is worth it if you want full-spectrum IR near category-leader level at a lower price. It has separate near and far emitters, chromotherapy, Bluetooth audio and a cedar cabin with 5-year warranty. It is a newer brand with less rigorous wavelength control than Sunlighten mPulse." },
     { q: "How much does the Sun Home Equinox cost?", a: "The Sun Home Equinox starts at about $6,000 for the 2-person configuration. That sits in mid-premium territory, below comparable Sunlighten or Clearlight models, and includes chromotherapy lighting and Bluetooth audio." },
-    { q: "Sun Home Equinox vs Sunlighten mPulse: which is better?", a: "Sunlighten mPulse is the stronger pick for rigorous wavelength control and published research. Sun Home Equinox offers full-spectrum IR with bundled extras at mid-premium pricing below comparable Sunlighten models. Choose Equinox for value, mPulse for proven precision." },
+    { q: "Sun Home Equinox vs Sunlighten mPulse: which is better?", a: "Sunlighten mPulse is the stronger pick for rigorous wavelength control and published research. Sun Home Equinox offers full-spectrum IR with bundled extras at mid-premium pricing below comparable Sunlighten models. Choose Equinox for value, mPulse for finer wavelength control." },
   ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',

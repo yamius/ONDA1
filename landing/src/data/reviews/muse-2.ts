@@ -57,10 +57,10 @@ Choose Muse 2 if meditation feedback is the only thing you want from an EEG head
 
 ## Background reading
 
-The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+The neuroscience these headsets feed back — and what the EEG signal can and cannot tell you about mental states.
 
-- [Neuroplasticity and flow overclocking](/articles/neuroplasticity-flow-overclocking) — EEG signatures of flow states and how they form
-- [ACC calibration: cognitive-control protocol](/articles/acc-calibration-protocol-cognitive-control) — how prefrontal control loops show up in EEG
+- [Neuroplasticity and flow overclocking](/articles/neuroplasticity-flow-overclocking) — what flow states are and how they form
+- [ACC calibration: cognitive-control protocol](/articles/acc-calibration-protocol-cognitive-control) — the prefrontal control loops behind cognitive control
 - [Adaptation and range fractionation](/articles/adaptation-hack-range-fractionation) — training cognitive states by deliberate variation
 `,
   references: [

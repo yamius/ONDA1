@@ -1,5 +1,5 @@
 ---
-sourceHash: edb839c74e4d
+sourceHash: b5d3f3942574
 title: "Dlaczego HRV zmienia się z dnia na dzień"
 metaTitle: "Dlaczego HRV zmienia się z dnia na dzień: przyczyny"
 metaDescription: "Dlaczego HRV zmienia się z dnia na dzień: naturalny szum, sen, alkohol, trening, choroba, stres i cykl — mechanizmy i dane naukowe."

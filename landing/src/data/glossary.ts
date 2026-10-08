@@ -602,7 +602,7 @@ The **Mammalian Dive Reflex** is an automatic physiological response triggered w
 - **Bradycardia** — heart rate slows immediately
 - **Peripheral vasoconstriction** — blood shifts to core organs
 - **Vagal activation** — the parasympathetic system takes control
-- **Stress reset** — can interrupt sympathetic dominance
+- **Slower heart during exposure** — a lasting stress-reset effect has not been established
 
 ## Why does the mammalian dive reflex matter?
 
@@ -919,7 +919,7 @@ Sources: [Craig, Nat Rev Neurosci (2002)](https://pubmed.ncbi.nlm.nih.gov/121543
 
 ## In ONDA Life
 
-One marker of Part 1 progress is "reduced levels of basal cortisol." Level 1 practices activate the parasympathetic system, which downregulates the HPA axis and allows cortisol to return to healthy baseline levels.
+ONDA does not measure cortisol or any hormone, and makes no claim that its practices change cortisol levels. Level 1 practices use slow breathing and HRV feedback; HRV is an indirect signal of autonomic state, not a cortisol reading. Cortisol can only be measured with a lab test (blood, saliva or urine).
 
 ---`,
   },
@@ -951,7 +951,7 @@ In the esophagus, disorders such as achalasia make swallowing difficult because 
 
 ## In ONDA Life
 
-"Restoration of rhythmic peristalsis" is a biological marker of Part 1 completion. When the parasympathetic system is activated and cortisol drops, the gut can return to its natural rhythmic movement — a sign that the body perceives safety.
+"Restoration of rhythmic peristalsis" is an image used in Part 1: when the body feels safe and settled, digestion tends to settle too. ONDA does not measure gut motility or hormones.
 
 ## Scientific Basis
 Built on: [HRV & vagal tone](https://pubmed.ncbi.nlm.nih.gov/18771686/) (Thayer & Lane).`,
@@ -1512,13 +1512,13 @@ The **HPA axis** (Hypothalamus-Pituitary-Adrenal) is the body's primary stress r
 2. **Pituitary** — releases ACTH (adrenocorticotropic hormone)
 3. **Adrenal glands** — release cortisol (and adrenaline from the medulla)
 
-## Cortisol: Poison or Fuel?
+## Acute vs. Chronic
 
-Chronically elevated cortisol is damaging. But in acute, controlled doses, cortisol and adrenaline sharpen focus and provide energy. The key is regulation — teaching the body to control release rather than being controlled by it.
+Chronically elevated cortisol is linked to harm, while short, acute rises in cortisol and adrenaline are a normal part of mobilizing energy and focus for a challenge.
 
 ## In ONDA Life
 
-Part 4 "Neuroendocrinology" directly impacts the HPA axis. We teach the body to control cortisol and adrenaline release, turning them "from poison into fuel for precision."`,
+Part 4 "Neuroendocrinology" works with the felt experience of stress: practising staying composed and precise under pressure. ONDA does not measure cortisol or any hormone, and makes no claim that its practices change hormone levels.`,
   },
   {
     slug: 'proprioception',
@@ -1710,7 +1710,7 @@ Disorders of the stress axis are another example. Cushing's syndrome involves ex
 
 ## In ONDA Life
 
-Part 4 "Neuroendocrinology" directly impacts the HPA axis. We teach the body to control cortisol and adrenaline release — turning stress hormones from "poison" (chronic elevation) into "fuel for precision" (acute, regulated mobilization).`,
+Part 4 "Neuroendocrinology" works with the felt experience of stress: practising staying composed and precise under pressure. ONDA does not measure hormones, and makes no claim that its practices change hormone levels.`,
   },
   {
     slug: 'pituitary',
@@ -1769,7 +1769,7 @@ The **adrenal glands** are two small glands located above each kidney. Each has 
 
 ## In ONDA Life
 
-Part 4 teaches the body to control adrenal output. Instead of chronic cortisol and adrenaline release (stress), we develop the ability to mobilize acutely when needed — and return to baseline quickly.`,
+Part 4 practises mobilizing when needed and settling back down afterwards — staying composed under pressure. ONDA does not measure adrenal hormones, and makes no claim that its practices change them.`,
   },
   {
     slug: 'adrenaline',
@@ -1789,9 +1789,9 @@ Part 4 teaches the body to control adrenal output. Instead of chronic cortisol a
 - Heightened alertness and focus
 - Increased blood sugar
 
-## Poison or Fuel?
+## Acute vs. Chronic
 
-Chronically elevated adrenaline contributes to anxiety and burnout. But in acute, controlled doses, it sharpens focus and provides energy for precision. Part 4 aims to use adrenaline as "fuel for precision" rather than a trigger for panic.`,
+Chronically elevated adrenaline contributes to anxiety and burnout. But in acute, controlled doses, it sharpens focus and provides energy for action. Part 4 practises staying composed and precise under pressure rather than tipping into panic. ONDA does not measure adrenaline or any hormone, and makes no claim that its practices change hormone levels.`,
   },
   {
     slug: 'lymphology',
@@ -1845,7 +1845,8 @@ Part 4 "Lymphology" uses muscle tone as a natural pump to clear the body of stre
 
 ## Cortisol/DHEA Ratio
 
-Chronic stress shifts adrenal output from DHEA toward cortisol. Part 5 aims to reverse this — the adrenals switch from "emergency cortisol release" to DHEA production, supporting the "winner's state" of calm dominance.
+Chronic stress is associated with a shift in adrenal output from DHEA toward cortisol. ONDA does not measure DHEA or cortisol, and there is no evidence that Part 5 practices change this ratio.
+
 ## Why does DHEA matter?
 
 DHEA matters because it is one of the most abundant steroid hormones in the body and serves as a building block for sex hormones like testosterone and estrogen. It is made mainly by the adrenal glands.
@@ -2301,7 +2302,7 @@ Yes, but its size varies a lot by situation:
 
 - **Face to face:** people tend to mirror expressions and posture, which nudges their own feelings in the same direction (Hatfield 1993).
 - **In the body:** heart rate, breathing and skin conductance of people who interact can partly line up — called physiological synchrony — but findings are mixed and depend on the setting and measurement (Palumbo et al. 2016).
-- **Online:** in a large Facebook experiment, people who saw fewer positive posts wrote slightly fewer positive posts themselves — a real but very small effect (Kramer et al. 2014).
+- **Online:** one large Facebook study found a real but very small effect: people who saw fewer positive posts wrote slightly fewer positive posts themselves (Kramer et al. 2014).
 
 Popular explanations that “mirror neurons” or “limbic resonance” directly transfer feelings between people go beyond what the evidence shows.
 
@@ -2317,7 +2318,7 @@ Part 6 of the ONDA practice path, “I’m Part of the Pack”, uses the idea of
 
 - Hatfield E, Cacioppo JT, Rapson RL (1993). [Emotional contagion](https://doi.org/10.1111/1467-8721.ep10770953). Current Directions in Psychological Science.
 - Palumbo RV et al. (2016). [Interpersonal autonomic physiology: a systematic review](https://doi.org/10.1177/1088868316628405). Personality and Social Psychology Review.
-- Kramer ADI et al. (2014). [Experimental evidence of massive-scale emotional contagion through social networks](https://doi.org/10.1073/pnas.1320040111). PNAS.
+- Kramer ADI et al. (2014). [Experimental evidence of massive-scale emotional contagion through social networks](https://doi.org/10.1073/pnas.1320040111). PNAS. Status: Editorial Expression of Concern (PNAS, 2014) — concerns participant-consent ethics, not the data.
 `,
   },
   {
@@ -2499,7 +2500,7 @@ Part 7 "Sensorimotor Integration" develops deep processing of contours, shapes, 
 
 ## In ONDA Life
 
-Biofeedback principles underlie many ONDA practices. Connecting a fitness tracker or smartwatch provides real-time vitals during practice. Part 7 biomarkers (P300, saccadic stability, theta/alpha states) can be measured and trained through biofeedback approaches.
+Biofeedback principles underlie many ONDA practices. ONDA's feedback comes from heart signals: pulse and breathing rate from the iPhone camera or an Apple Watch, and a live coherence score with an Apple Watch. ONDA does not record EEG, so the brain markers named in Part 7 (P300, theta/alpha states) describe aims of the program, not something the app measures or trains. What EEG neurofeedback can and cannot do → [EEG neurofeedback: what the evidence shows](/science/evidence/eeg-neurofeedback)
 
 Read more, with the evidence → [HRV biofeedback: what the research shows](/science/evidence/hrv-biofeedback)`,
   },
@@ -2534,7 +2535,7 @@ Because a single brain response is small compared with background activity, rese
 
 ## In ONDA Life
 
-Part 7 lists "P300 Amplitude Increase" as a progress biomarker — indicating how quickly and efficiently the brain recognizes a significant stimulus. Higher P300 amplitude suggests improved signal-to-noise optimization and cognitive clarity.`,
+Part 7 names "P300 Amplitude Increase" as an aim of the practice. ONDA does not record EEG, so the app does not measure P300 and does not track it as progress; the phrase describes a goal of the program, not a result you can check in the app.`,
   },
   {
     slug: 'saccades',
@@ -2600,7 +2601,7 @@ Clinical and research EEG uses many electrodes and careful setup. Consumer headb
 
 ## In ONDA Life
 
-Part 7 "Perceptual Stabilization" involves "entering a Theta/Alpha state to ground the mind." Theta supports the transition from reactive thinking to observational presence — the cognitive gap that enables discernment.`,
+Part 7 "Perceptual Stabilization" uses the image of "entering a Theta/Alpha state to ground the mind." ONDA does not record EEG, so the app cannot tell whether you are in a theta state; the phrase describes the intended shift from reactive thinking to calmer observation — the cognitive gap that enables discernment.`,
   },
   {
     slug: 'alpha-state',
@@ -2621,7 +2622,7 @@ Part 7 "Perceptual Stabilization" involves "entering a Theta/Alpha state to grou
 
 ## In ONDA Life
 
-Part 7 "Perceptual Stabilization" involves "entering a Theta/Alpha state to ground the mind." Alpha supports relaxed alertness — the optimal state for cognitive clarity and signal-to-noise optimization.`,
+Part 7 "Perceptual Stabilization" uses the image of "entering a Theta/Alpha state to ground the mind." ONDA does not record EEG, so the app does not check your alpha rhythm; the phrase describes the intended state of relaxed, alert attention, not a measured brain rhythm.`,
   },
   {
     slug: 'cognitive-gap',
@@ -2928,7 +2929,7 @@ Scalp recordings of gamma are easily contaminated by muscle activity, including 
 
 ## In ONDA Life
 
-Part 8 "Gamma Binding and Cholinergic Modulation" synchronizes neurons at gamma frequency to assemble scattered elements of perception into a single, cohesive image. Combined with acetylcholine, this supports deep focus and unified perceptual experience.`,
+Part 8 "Gamma Binding and Cholinergic Modulation" takes gamma binding as its image: practice aimed at gathering scattered elements of perception into a single, cohesive picture during deep focus. ONDA does not record EEG, and there is no evidence that the practice synchronizes neurons at gamma frequency; the name describes the exercise's goal.`,
   },
   {
     slug: 'cholinergic-modulation',
@@ -3026,7 +3027,7 @@ Beta rhythm is measured with electroencephalography (EEG), which records electri
 
 ## In ONDA Life
 
-Part 8 lists "increased beta-rhythm power in the frontal lobes" as a biological marker of progress. It indicates improved neural resilience — the brain's ability to sustain focus and maintain cognitive control.`,
+Part 8 lists "increased beta-rhythm power in the frontal lobes" among its intended markers. ONDA does not record EEG, so the app does not measure beta power, and a change in beta power on its own would not show better focus or cognitive control. Read it as a description of the program's aim, not as a progress indicator.`,
   },
   {
     slug: 'frontal-lobes',
@@ -3062,7 +3063,7 @@ Injury to prefrontal areas more often causes problems with planning, attention, 
 
 ## In ONDA Life
 
-Part 8 targets the frontal lobes for "Deep Work" mode. Increased beta-rhythm power in the frontal lobes, along with dlPFC stabilization, supports sustained focus and neural resilience.`,
+Part 8 targets the frontal lobes for "Deep Work" mode — sustained, focused attention. Its text names frontal beta-rhythm power and dlPFC stabilization as aims; ONDA does not record EEG or brain activity, so these are goals of the practice, not something the app measures.`,
   },
   {
     slug: 'hippocampus',
@@ -3242,7 +3243,7 @@ Part 9 "Biological Belief" references changes in GSR as an indicator that the bo
 
 ## In ONDA Life
 
-Part 9 lists "Flow State: Predominance of Alpha and Theta rhythms, characteristic of creative flow and insight" as a result. When imagination becomes a precise program and the brain acts as an efficient executor, flow emerges — the vision and action unite.`,
+Part 9 lists "Flow State: Predominance of Alpha and Theta rhythms, characteristic of creative flow and insight" as an intended result. EEG studies of flow are small and point mainly to frontal theta with only moderate alpha, and ONDA does not record EEG, so the app does not check your brain rhythms. Here flow means the experience of vision and action working as one.`,
   },
   {
     slug: 'hormones',
@@ -3257,7 +3258,7 @@ Part 9 lists "Flow State: Predominance of Alpha and Theta rhythms, characteristi
 ## Key Hormones in ONDA Life
 
 - **Cortisol** — stress hormone; high baseline indicates chronic stress
-- **DHEA, Testosterone** — vitality, dominance, "winner state"
+- **DHEA, Testosterone** — adrenal and sex steroids (ONDA does not measure them)
 - **Oxytocin** — trust, social bonding
 - **Adrenaline** — acute arousal, energy for action
 
@@ -3329,7 +3330,7 @@ Some meditation studies have reported higher gamma activity in long-term practit
 
 ## In ONDA Life
 
-Part 9 describes "instantaneous unification of neural ensembles for a 'flash' of understanding and image integrity." Gamma synchronization enables the mental image to cohere — the vision becomes a single, vivid whole.`,
+Part 9 describes "instantaneous unification of neural ensembles for a 'flash' of understanding and image integrity." This is an image for the moment a mental picture comes together as a single, vivid whole. ONDA does not record EEG and does not measure gamma synchronization, and the role of gamma in binding perception remains debated.`,
   },
   {
     slug: 'medial-prefrontal-cortex',
@@ -3752,7 +3753,7 @@ Relationship and context may matter too: some studies report stronger synchrony 
 
 ## In ONDA Life
 
-Part 11 lists "Inter-brain Synchrony" as a target: "the brain rhythms of partners begin to operate in a coherent mode." Biological markers include "synchronization of Heart Rate Variability (HRV) between partners and Alpha-rhythm brain coherence." This is co-resonance at the physiological level.`,
+Part 11 lists "Inter-brain Synchrony" as a target: "the brain rhythms of partners begin to operate in a coherent mode." Its intended markers include "synchronization of Heart Rate Variability (HRV) between partners and Alpha-rhythm brain coherence." ONDA does not record EEG and does not compare two people's signals, so these describe the aim of the practice, not markers the app measures.`,
   },
   {
     slug: 'interference',
@@ -3958,7 +3959,7 @@ Part 12 "DMN Inhibition and Joint Attention" shifts from protecting personal bou
 - **Pain relief** — natural analgesia
 - **Euphoria** — "runner's high," collective flow
 - **Social bonding** — released during synchronized activities
-- **Stress buffering** — counteract cortisol effects
+- **Stress buffering** — associated with a calmer stress response
 
 ## Why do Endorphins matter?
 
@@ -4028,7 +4029,7 @@ Part 12 "Neural Coupling" practices synchronize attention and breathing rhythms 
 
 ## In ONDA Life
 
-Part 9 engages gamma synchronization for image integrity. Part 11 targets HRV synchronization between partners. Part 12 uses "Intentional Synchronization" for seamless joint task execution. Synchronization is the biological substrate of coordination and collective flow.`,
+Part 9 engages gamma synchronization for image integrity. Part 11 targets HRV synchronization between partners. Part 12 uses "Intentional Synchronization" for seamless joint task execution. These are aims of the practices: ONDA does not record EEG or compare HRV between people.`,
   },
   {
     slug: 'oxytocin-system',
@@ -4094,7 +4095,7 @@ Results depend strongly on analysis choices. Good studies compare real pairs aga
 
 ## In ONDA Life
 
-Part 12 lists "Inter-brain coherence" as a biological marker — alongside group HRV alignment and collective dopamine surges. Together with Gamma Synchronization, it enables collective insight and the instantaneous synthesis of ideas. The group becomes a living neural network.`,
+Part 12 lists "Inter-brain coherence" as an intended marker, alongside group HRV alignment and collective dopamine surges. ONDA does not record EEG, compare a group's HRV or measure dopamine, so these describe the aim of the practice — shared attention and joint insight — not measured results.`,
   },
   {
     slug: 'circadian-rhythm',
@@ -4135,7 +4136,7 @@ The **Suprachiasmatic Nucleus** (SCN) is a small region of the hypothalamus that
 
 ## In ONDA Life
 
-The Circadian Reset protocols work with the SCN: morning light exposure triggers a timed Cortisol pulse and sets the timer for Melatonin release. Blocking blue light at night allows the natural shutdown sequence to initialize.
+The Circadian Reset protocols work with the SCN: morning light is the strongest daily signal for the body clock and helps time evening Melatonin release (popular claims of an exact cortisol "timer" are not strongly evidenced). Blocking blue light at night allows the natural shutdown sequence to initialize.
 `,
   },
   {
@@ -4152,12 +4153,12 @@ The Circadian Reset protocols work with the SCN: morning light exposure triggers
 
 - **Sleep trigger** — initiates the natural shutdown sequence
 - **Light-sensitive** — suppressed by blue light, even artificial
-- **Circadian marker** — release typically begins ~16 hours after morning light exposure
+- **Circadian marker** — release typically begins in the evening, a couple of hours before habitual sleep (dim-light melatonin onset)
 - **Antioxidant** — secondary roles in cellular protection
 
 ## In ONDA Life
 
-Morning light exposure sets a 16-hour countdown for Melatonin release. Blue light at night suppresses melatonin by tricking the SCN into thinking it's still noon. The Blue Light Firewall protocol protects this critical signal.
+Regular morning light helps keep the body clock, and with it evening Melatonin release, on time; the popular claim of an exact "16-hour countdown" is not strongly evidenced. Blue light at night suppresses melatonin by tricking the SCN into thinking it's still noon. The Blue Light Firewall protocol protects this critical signal.
 `,
   },
   {
@@ -4388,15 +4389,15 @@ The Breathwork CLI article covers protocols (Box Breathing, Physiological Sigh) 
     title: 'Nitric Oxide',
     category: 'Biological Software',
     shortDescription:
-      'A potent vasodilator produced in the paranasal sinuses — nasal breathing boosts NO and increases oxygen uptake by ~20%.',
+      'A vasodilator made in the paranasal sinuses — nasal breathing carries it into the lungs, where it is proposed to aid oxygen uptake.',
     content: `
 
-**Nitric Oxide** (NO) is a signaling molecule that dilates blood vessels, improving blood flow and oxygen delivery. Your paranasal sinuses produce NO continuously; nasal breathing carries it into the lungs, where it enhances gas exchange.
+**Nitric Oxide** (NO) is a signaling molecule that dilates blood vessels, improving blood flow and oxygen delivery. Your paranasal sinuses produce NO continuously; [nasal breathing](/science/evidence/nasal-breathing) carries it into the lungs, where it is proposed to aid oxygen uptake. How large any such effect is in daily life is not established.
 
 ## Key Functions
 
 - **Vasodilation** — widens blood vessels for better perfusion
-- **Oxygen uptake** — nasal breathing increases oxygen absorption by ~20%
+- **Oxygen uptake** — sinus NO reaching the lungs is proposed to aid oxygen uptake; the size of any effect in daily life is not established
 - **Air conditioning** — nasal passages filter, warm, and humidify air
 - **Antimicrobial** — NO has mild antimicrobial properties in the respiratory tract
 
@@ -4414,7 +4415,7 @@ Diet plays a role too. Nitrate-rich vegetables such as leafy greens and beets ca
 
 ## In ONDA Life
 
-The Breathwork CLI article recommends strict nasal breathing for low-to-moderate intensity as the "Nitric Oxide Boost" protocol.
+The Breathwork CLI article suggests nasal breathing for low-to-moderate intensity under the name "Nitric Oxide Boost" — an image for the habit, not a promise of better oxygen uptake.
 `,
     relatedSlugs: ['vagus-nerve', 'diaphragm', 'autonomic-nervous-system'],
   },
@@ -4646,10 +4647,10 @@ ONDA does not measure cortisol or any hormone. The CHM article explains what res
     title: 'Lipolysis',
     category: 'Biological Software',
     shortDescription:
-      'Fat breakdown; blocked when cortisol remains elevated into evening hours.',
+      'Breakdown of stored fat into fatty acids and glycerol for energy, mainly regulated by insulin and adrenaline.',
     content: `
 
-**Lipolysis** is the breakdown of triglycerides in adipose tissue into free fatty acids and glycerol for use as energy. It is regulated by hormones including catecholamines (epinephrine, norepinephrine) and inhibited by insulin and prolonged cortisol elevation.
+**Lipolysis** is the breakdown of triglycerides in adipose tissue into free fatty acids and glycerol for use as energy. It is regulated by hormones including catecholamines (epinephrine, norepinephrine) and inhibited mainly by insulin.
 
 ## Key Points
 
@@ -4671,7 +4672,7 @@ Other influences include time since the last meal, exercise intensity and durati
 
 ## In ONDA Life
 
-The CHM article explains how cortisol sync and evening protocols support lipolytic windows.
+The CHM article explains why no consumer wearable measures cortisol, and why claims that evening cortisol "blocks" fat burning are not supported.
 `,
     relatedSlugs: ['cortisol', 'metabolism', 'circadian-rhythm'],
   },
@@ -5047,7 +5048,7 @@ The Mitochondrial DNA Red Light article covers how red light protocols may suppo
 
 - **Maternal inheritance** — mtDNA is passed primarily through the maternal line
 - **Mutation rate** — higher than nuclear DNA due to oxidative stress
-- **Red light** — photobiomodulation may support mtDNA integrity and biogenesis
+- **Red light** — photobiomodulation has been studied in cells and animals for effects on mtDNA and biogenesis; this is not shown in people
 
 ## Why does mtDNA matter?
 
@@ -5075,14 +5076,14 @@ The Mitochondrial DNA Red Light article covers protocols for supporting mitochon
       'The use of non-ionizing light (lasers or LEDs) to trigger photochemical changes within cellular structures.',
     content: `
 
-**Photobiomodulation** (PBM) uses visible red and near-infrared (NIR) light to stimulate cellular processes. It is non-thermal and non-ionizing. Primary targets include cytochrome c oxidase in mitochondria, which may enhance ATP production and reduce oxidative stress.
+**Photobiomodulation** (PBM) uses visible red and near-infrared (NIR) light to stimulate cellular processes. It is non-thermal and non-ionizing. Primary targets include cytochrome c oxidase in mitochondria. The proposed mechanism, mostly from cell and animal studies, is that this may enhance ATP production and reduce oxidative stress. See [the evidence review](/science/evidence/red-light-therapy).
 
 ## Key Mechanisms
 
 - **Cytochrome c oxidase** — absorbs red/NIR, may increase electron transport and ATP
 - **Nitric oxide** — light can dissociate NO from cytochrome c oxidase, restoring respiration
 - **Water viscosity** — some models suggest light reduces viscosity around proteins
-- **NIR penetration** — 700–1400 nm penetrates several cm into tissue
+- **NIR penetration** — NIR penetrates deeper than visible red; how much reaches deeper tissue depends on wavelength and dose
 
 ## Why does photobiomodulation matter?
 
@@ -5139,14 +5140,14 @@ The Mitochondrial DNA Red Light article references water viscosity in the contex
     title: 'NIR (Near Infra-Red)',
     category: 'Biological Software',
     shortDescription:
-      'The 700–1400nm light spectrum. Unlike visible light, NIR penetrates several centimeters deep into biological tissue.',
+      'The 700–1400nm light spectrum. NIR penetrates deeper into biological tissue than visible red light.',
     content: `
 
-**NIR** (Near Infrared) light spans approximately 700–1400 nm. Unlike visible light, NIR penetrates several centimeters into biological tissue, reaching muscles, joints, and deeper structures. It is used in photobiomodulation for mitochondrial support, pain relief, and recovery.
+**NIR** (Near Infrared) light spans approximately 700–1400 nm. NIR penetrates deeper into biological tissue than visible red light; how much reaches muscle or joints depends on wavelength and dose. It is used in photobiomodulation, which is studied for pain relief and recovery. NIR is invisible, so it does not trigger the blink reflex: protect your eyes.
 
 ## Key Properties
 
-- **Penetration** — 700–850 nm (red-NIR) penetrates ~2–5 cm; 850–1100 nm can go deeper
+- **Penetration** — deeper than visible red; the share of light that reaches muscle or joints depends on wavelength, dose and tissue
 - **Targets** — cytochrome c oxidase, hemoglobin, water
 - **Non-thermal** — PBM uses low irradiance; heating is minimal at typical doses
 
@@ -5370,7 +5371,7 @@ The AI Biomarker Tracking article covers predictive sync and anomaly detection p
       'The unique, multi-variate pattern of your biomarkers when your system is in optimal health.',
     content: `
 
-**Biological Signature** is your personal multivariate pattern of biomarkers (HRV, RHR, sleep, cortisol, etc.) when your system is in optimal health. It serves as a baseline for anomaly detection and predictive modeling.
+**Biological Signature** is your personal multivariate pattern of biomarkers (HRV, RHR, sleep, etc.) when your system is in optimal health. It serves as a baseline for anomaly detection and predictive modeling.
 
 ## Key Points
 
@@ -6080,7 +6081,7 @@ Instead of operating at one fixed point, Range Fractionation splits your stimulu
 ## Applications
 
 - **Mechanical (Training):** Fragment load across ultra-heavy (1–3 reps, CNS activation), moderate (8–12 reps, hypertrophy), and light/high-velocity (explosive power). All fiber types upgrade simultaneously.
-- **Thermal:** Alternate between cold (maximal vasoconstriction, norepinephrine surge) and heat (vasodilation, heat shock protein activation). Trains full vascular range.
+- **Thermal:** Alternate between cold (vessels narrow) and heat (vessels widen). "Training the full vascular range" is an image; a training effect has not been shown.
 - **Amplitude Shift:** Never run two identical days. High Load must be followed by Low Load/High Recovery — biological adaptation requires contrast.
 - **Micro-Fractionation:** Small daily stimulus doses + one massive weekly "Impact" session. Maintains baseline tone while delivering periodic deep structural resets.
 
@@ -6227,10 +6228,10 @@ In the ONDA framework, we train the system to utilize the Glucagon Key efficient
     title: 'Heat Shock Proteins',
     category: 'Biological Software',
     shortDescription:
-      'Molecular chaperones activated by thermal stress that repair damaged proteins, enhance cellular resilience, and protect the system against heat and cold-induced damage.',
+      'Molecular chaperones made by cells under thermal stress that help repair damaged proteins and protect cells against heat and cold-induced damage.',
     content: `
 
-**Heat Shock Proteins (HSPs)** are a family of proteins produced by cells in response to thermal stress. Despite the name, they're activated by both heat exposure (sauna) and cold (ice bath) — any significant temperature shift triggers their release.
+**Heat Shock Proteins (HSPs)** are a family of proteins produced by cells in response to thermal stress. Despite the name, large temperature stress of either kind — heat or cold — can increase their production in cells. In people, a rise after sauna has been shown only in some small lab studies, and whether it brings any health effect is unknown. See [the evidence on sauna and heat](/science/evidence/sauna-heat-exposure).
 
 ## Function
 
@@ -6242,21 +6243,25 @@ HSPs act as **molecular chaperones**: they repair misfolded proteins, prevent ag
 - **HSP90** — regulates hormone receptors and signaling proteins
 - **HSP27** — protects against apoptosis; enhances cytoskeletal stability
 
-## Activation Protocol
+## Typical Exposures Studied
 
-| Stimulus | Mechanism | Threshold |
+These are typical session lengths, not proven thresholds for HSP release or for any health effect.
+
+| Stimulus | Mechanism | Typical session |
 |----------|-----------|-----------|
 | Sauna (80–100°C) | Direct thermal stress | 15–20 min |
 | Ice bath (4–15°C) | Cold shock response | 3–5 min |
 | Intense exercise | Metabolic heat + mechanical stress | High-intensity bouts |
 
+Never use a sauna after alcohol, and read the cold-exposure safety notes before an ice bath.
+
 ## In ONDA Life
 
-Heat Shock Proteins are a key outcome of the **Thermal Range Fractionation** protocol — hitting both temperature extremes in sequence maximizes HSP activation and trains the full vascular range simultaneously.
+Heat Shock Proteins are the idea behind the **Thermal Range Fractionation** protocol — hitting both temperature extremes in sequence. That this maximizes HSP activation or trains the vascular range has not been shown.
 
 ## Practical Signal
 
-Post-sauna or post-cold session: reduced muscle soreness, faster recovery, and improved training adaptation are downstream markers of HSP activity.
+Cold-water immersion after exercise may reduce muscle soreness. But in a trial, regular cold-water immersion after strength training reduced gains in strength and muscle (Roberts 2015) — so cold right after lifting is not a sign of better training adaptation.
 `,
     relatedSlugs: ['range-fractionation', 'autophagy', 'mitochondria'],
   },
@@ -6340,7 +6345,7 @@ Adiponectin functions as a "lubricant" for metabolic processes, streamlining the
 
 In ONDA protocols, we aim to maximize adiponectin levels to fortify the system:
 
-- **Cold Exposure:** Cold stress (ice baths, cryotherapy) is one of the most powerful triggers for adiponectin release. This activates "brown fat" and accelerates metabolic rate.
+- **Cold Exposure:** Effects of cold on brown fat and insulin sensitivity are emerging: small studies of mild cold air over several days increased brown fat activity and improved insulin sensitivity. Evidence for cryotherapy is of very low quality, and a link to adiponectin has not been shown.
 - **Visceral Fat Reduction:** Decreasing the volume of internal (visceral) fat automatically removes the inhibition of adiponectin synthesis.
 - **Monounsaturated Fats:** Incorporating olive oil and avocados into the nutritional protocol supports the natural secretion of this optimizer.`,
     relatedSlugs: ['insulin-sensitivity', 'allostatic-load', 'metabolic-flexibility'],
@@ -6457,7 +6462,7 @@ Allostatic load accumulates when defense mechanisms (such as [cortisol](/glossar
 
 > **STATUS: RESILIENT (Optimal)**
 >
-> SIGNAL: High [Heart Rate Variability](/glossary/heart-rate-variability) (HRV) and a rapid return of cortisol to baseline levels following a load.
+> SIGNAL: High [Heart Rate Variability](/glossary/heart-rate-variability) (HRV) and a quick return of HRV and heart rate to baseline after a load.
 >
 > RESULT: High antifragility, rapid recovery, and low systemic inflammation.
 
@@ -6506,7 +6511,7 @@ Hormesis functions by activating survival pathways that typically remain in a "d
 >
 > SIGNAL: Brief exposure to cold, physical exertion, or intermittent fasting.
 >
-> RESULT: Activation of [AMPK](/glossary/ampk) and Sirtuins (longevity genes). Enhanced cognitive function, a fortified immune system, and reduced systemic inflammation.
+> RESULT (hypothesis): Activation of [AMPK](/glossary/ampk) and Sirtuins (longevity genes), with better cognitive function, immunity and lower inflammation. This is a hypothesis, not an established effect; cold-water immersion, for example, raises inflammation markers acutely.
 
 > **STATUS: COMFORT_DEGRADATION (Hibernation)**
 >
@@ -6524,7 +6529,7 @@ Hormesis functions by activating survival pathways that typically remain in a "d
 
 In the ONDA framework, dosed stress is used to expand your adaptive bandwidth:
 
-- **Cold/Heat Shock:** Ice baths or saunas are classic examples of thermal hormesis that activate metabolic defense layers.
+- **Cold/Heat Shock:** Ice baths or saunas are often described as thermal hormesis — an idea, not an established health effect.
 - **Intermittent Fasting:** Hunger, acting as a hormetic stressor, triggers [Autophagy](/glossary/autophagy) (cellular cleanup).
 - **Hypoxic Training:** Brief breath-holding exercises train the brain's resilience to oxygen deficits and improve vascular health.
 - **Phytohormetins:** Consumption of specific plants (e.g., broccoli or turmeric) that contain low doses of "toxins" which stimulate our own internal antioxidant systems.`,

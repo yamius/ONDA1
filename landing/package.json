@@ -16,7 +16,8 @@
     "audit:gsc": "node scripts/gsc-coverage-audit.mjs",
     "audit:ai": "node scripts/ai-audit.mjs",
     "citations:check": "tsx scripts/check-citations.ts",
-    "citations:refresh": "tsx scripts/check-citations.ts --refresh"
+    "citations:refresh": "tsx scripts/check-citations.ts --refresh",
+    "sources:health": "tsx scripts/check-sources-health.ts"
   },
   "dependencies": {
     "@react-three/fiber": "^9.6.1",

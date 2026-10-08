@@ -20,7 +20,7 @@ const ouraVsWhoopVsApple: HeadToHeadInput = {
     'Choose Apple Watch Series 11 if you want a do-everything smartwatch with HRV as one feature among many — and you are in the iPhone ecosystem.',
   axes: [
     { name: 'HRV measurement', winner: 'a', note: 'Oura: continuous overnight HRV, marginally cleanest pipeline. Whoop: continuous overnight HRV, similar accuracy. Apple Watch: spot-checks only, not continuous. Apple is the outlier here.' },
-    { name: 'Sleep tracking', winner: 'a', note: 'Oura sleep model is the consumer reference. Whoop tracks sleep automatically and competently. Apple Watch sleep is a secondary feature — competent, less granular.' },
+    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep model has the strongest published validation of the three (in Oura-funded studies). Whoop tracks sleep automatically and competently. Apple Watch sleep is a secondary feature — competent, less granular.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s Recovery and Strain coaching is the sharpest daily-readiness signal. Oura has Readiness; Apple has nothing equivalent.' },
     { name: 'Form factor (passive wear)', winner: 'a', note: 'Ring is the most passive wearable — fits sleep, work, gym, social. Whoop band is wearable everywhere except when display matters. Apple Watch is visible.' },
     { name: 'Smartwatch features', winner: 'c', note: 'Apple Watch: ECG, messaging, payments, fall detection, third-party apps. Whoop and Oura: none — they are dedicated instruments.' },
@@ -35,7 +35,7 @@ const ouraVsWhoopVsApple: HeadToHeadInput = {
     },
     {
       q: 'Can Apple Watch replace Oura or Whoop?',
-      a: 'Not for HRV specifically. Apple Watch takes spot-check HRV readings rather than tracking continuously overnight, which is when HRV matters as a recovery signal. For occasional HRV awareness it is fine; for serious HRV training it is the wrong tool.',
+      a: 'Not for HRV specifically. Apple Watch samples HRV intermittently, including during sleep, rather than averaging the whole night — the steadiest window for HRV as a recovery signal. For occasional HRV awareness it is fine; for serious HRV training it is the wrong tool.',
     },
     {
       q: 'Should I get more than one of these?',
@@ -56,7 +56,7 @@ Three different jobs in three different form factors. Oura is the passive HRV-an
 
 ## When is Oura Ring 4 the right pick?
 
-If HRV and sleep tracking are the reason you are buying, Oura is the right shape. The continuous overnight pipeline, the consumer-reference sleep model, the roughly 4–7-day battery and the ring form factor all line up around that use case.
+If HRV and sleep tracking are the reason you are buying, Oura is the right shape. The continuous overnight pipeline, the well-studied sleep model, the roughly 4–7-day battery and the ring form factor all line up around that use case.
 
 ## When is Whoop 5.0 the right pick?
 

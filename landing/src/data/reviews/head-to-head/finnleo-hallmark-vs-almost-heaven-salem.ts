@@ -39,7 +39,7 @@ const finnleoVsAlmostHeaven: HeadToHeadInput = {
     },
     {
       q: 'Which has the better evidence base?',
-      a: 'Both — traditional Finnish sauna has the deepest published research evidence base in the sauna category (Kuopio cohort studies on cardiovascular mortality and dementia risk). Finnleo represents the indoor format the studies ran on; Almost Heaven Salem is the outdoor barrel adaptation of the same mechanism.',
+      a: 'Both — traditional Finnish sauna has the deepest published research evidence base in the sauna category (observational Kuopio cohort studies on cardiovascular mortality and dementia risk — associations, not cause). Finnleo represents the indoor format the studies ran on; Almost Heaven Salem is the outdoor barrel adaptation of the same mechanism.',
     },
   ],
   content: `## The short version

@@ -58,13 +58,13 @@
     "2": {
       "name": "EMOTIONS / AQUA",
       "subtitle": "Energy Biochemistry: From Maneuverability to Social Power",
-      "metaDescription": "Level 2: Emotional mastery. HPA axis, DHEA, mirror neurons, social resonance — plus ideas from polyvagal theory, a debated model. From maneuverability to calm dominance.",
+      "metaDescription": "Level 2: Emotional mastery. Stress response, calm presence, mirror neurons, social resonance — plus ideas from polyvagal theory, a debated model. From maneuverability to calm dominance.",
       "intro": "Level 2 is the stage of mastering your emotional system as a high-tech reactor. We stop perceiving emotions as mere \"moods\" and begin treating them as biological protocols: with specific hormonal signatures, neuromotor patterns, and vegetative profiles.\n\nAt this level, we follow the path of mammalian evolution: from the instantaneous reactions of a small animal to the unshakable calm of a large predator and the complex resonance of a higher primate.",
       "architecture": {
         "intro": "Level 2 integrates three resource management strategies:",
         "parts": [
-          { "label": "I Maneuver", "protocol": "Protocol: The Maneuverability of the \"Small Mammal\"", "goal": "Objective: Biological flexibility and instantaneous acceleration without paralyzing stress.", "work": "Mechanism: Inspired by polyvagal ideas (a debated model) — practising the felt sense of safety and threat that the model calls neuroception. We teach the system to \"drift\" smoothly between rest and action, turning cortisol and adrenaline from toxins into fuel for precision." },
-          { "label": "I Guard the Territory", "protocol": "Protocol: The Strength of the \"Large Mammal\"", "goal": "Objective: Status calm and density of presence.", "work": "Mechanism: Working with the endocrine system — leaning less on emergency cortisol over time and more toward DHEA. This supports a state of \"calm dominance,\" a steadiness others tend to sense before you even speak." },
+          { "label": "I Maneuver", "protocol": "Protocol: The Maneuverability of the \"Small Mammal\"", "goal": "Objective: Biological flexibility and instantaneous acceleration without paralyzing stress.", "work": "Mechanism: Inspired by polyvagal ideas (a debated model) — practising the felt sense of safety and threat that the model calls neuroception. We teach the system to \"drift\" smoothly between rest and action, staying composed and precise under pressure." },
+          { "label": "I Guard the Territory", "protocol": "Protocol: The Strength of the \"Large Mammal\"", "goal": "Objective: Status calm and density of presence.", "work": "Mechanism: Building a steady, grounded presence over time. This supports a state of \"calm dominance,\" a steadiness others tend to sense before you even speak." },
           { "label": "I'm Part of the Pack", "protocol": "Protocol: Social Resonance", "goal": "Objective: Transforming individual survival into collective power.", "work": "Mechanism: Activating the \"social brain\"—the mirror neuron system and the oxytocin profile. We learn to synchronize our rhythms with the group (co-regulation) while maintaining an autonomous center. Your presence becomes the \"glue\" that unites the field." }
         ]
       },
@@ -82,7 +82,7 @@
         "items": [
           { "name": "Hypothalamus", "text": "Control center for territorial behavior and hormonal balance." },
           { "name": "Basal Ganglia", "text": "Formation of stable, \"unshakeable\" postures and dominance habits." },
-          { "name": "Mirror Neurons", "text": "The brain's system for reading others' intentions and states." },
+          { "name": "Mirror Neurons", "text": "Research links them to understanding others' actions and intentions; their exact role is still debated." },
           { "name": "Anterior Cingulate Cortex", "text": "The detector for social signals and emotional accuracy." }
         ]
       },
@@ -113,7 +113,7 @@
         "items": [
           { "name": "Cognitive Gap", "text": "Increasing the pause between an event and an automatic reaction to allow for freedom of choice." },
           { "name": "Cholinergic Modulation", "text": "Utilizing acetylcholine to literally \"highlight\" necessary neural connections during focus." },
-          { "name": "Gamma Binding", "text": "Synchronizing neurons at gamma frequency to assemble scattered fragments of experience into a single insight." },
+          { "name": "Gamma Binding", "text": "The aim of gathering scattered fragments of experience into a single insight. Research links this kind of binding to gamma-frequency activity, but its role is debated, and ONDA does not record EEG." },
           { "name": "Proactive Programming (RAS)", "text": "Tuning the brain's filters to automatically seek opportunities that match your internal vision." }
         ]
       },
@@ -230,7 +230,7 @@
         "parts": [
           { "label": "I Witness", "protocol": "Protocol: Neural Distance and Metacognitive Monitoring", "goal": "Objective: Transitioning from being a hostage of the stream of consciousness to becoming its Meta-Programmer.", "work": "Work: Deactivating the Default Mode Network (DMN) and establishing \"neural distance.\" Using sensory anchors to collapse internal dialogue and transform thoughts into transparent electrical impulses." },
           { "label": "I Integrate", "protocol": "Protocol: Global Neural Integration and Experience Synthesis", "goal": "Objective: Achieving maximum neural coherence — the brain as a single, frictionless supercomputer.", "work": "Work: Strengthening horizontal (inter-hemispheric) and vertical (cortex-body) connectivity. Utilizing the corpus callosum and mPFC to reconcile cognitive dissonance and unite logic with intuition." },
-          { "label": "I Synchronize", "protocol": "Protocol: Neuroelectric Synchronization and Collective Intelligence", "goal": "Objective: From \"I-mode\" to \"Network Node\" — activating inter-brain hyperscanning and collective flow.", "work": "Work: Triggering Gamma rhythms (40 Hz) and the Mirror Neuron System. Achieving neuroelectric phase-locking with others to access \"oceanic\" scale resources and solutions." }
+          { "label": "I Synchronize", "protocol": "Protocol: Neuroelectric Synchronization and Collective Intelligence", "goal": "Objective: From \"I-mode\" to \"Network Node\" — shared rhythm and collective flow with others.", "work": "Work: Shared breathing, joint attention and the Mirror Neuron System, inspired by hyperscanning research on how brain activity can align between people (early findings; ONDA does not record EEG). The aim: access \"oceanic\" scale resources and solutions." }
         ]
       },
       "biologicalProtocol": {
@@ -238,8 +238,8 @@
         "items": [
           { "name": "Metacognitive Labeling", "text": "Practices to \"tag\" mental events, activating the mPFC and stripping thoughts of their emotional charge." },
           { "name": "Inter-hemispheric Sync", "text": "Exercises for the corpus callosum to ensure seamless data flow between analytical and intuitive centers." },
-          { "name": "Gamma-Flow Tuning", "text": "Techniques to stabilize high-frequency (40 Hz) brain activity for collective insight and rapid learning." },
-          { "name": "Limbic Decoupling", "text": "Training the PFC to register \"charged\" data without triggering cortisol release or the amygdala." }
+          { "name": "Gamma-Flow Tuning", "text": "Techniques for sustaining shared, high-focus states for collective insight and rapid learning. Fast (40 Hz) gamma activity is the image here; ONDA does not record EEG." },
+          { "name": "Limbic Decoupling", "text": "Training the PFC to register \"charged\" data without getting pulled into a stress reaction." }
         ]
       },
       "targetSystems": {

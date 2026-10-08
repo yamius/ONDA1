@@ -11,28 +11,28 @@ const imrsPrime: ToolReviewInput = {
   verdict:
     'Swiss-engineered Bemer alternative — sawtooth waveform, multi-applicator system, multi-decade brand. Lower price than Bemer with comparable build.',
   summary:
-    'iMRS Prime is the Swiss Bionic Solutions Bemer-alternative — full-body mat plus pillow plus spot applicator, sawtooth waveform with documented Schumann (7.83 Hz) and circadian-aligned frequency protocols. Multi-decade brand, premium build, mid-premium pricing. Often cross-shopped against Bemer and chosen for the price differential.',
+    'iMRS Prime is the Swiss Bionic Solutions Bemer-alternative — full-body mat plus pillow plus spot applicator, sawtooth waveform with Schumann (7.83 Hz) settings and morning/evening presets that the maker markets as energising and calming (not tested in controlled trials). Multi-decade brand, premium build, mid-premium pricing. Often cross-shopped against Bemer and chosen for the price differential.',
   scores: [
     { criterionId: 'field-strength', score: 7.5, note: 'Low-to-moderate intensity (~150–200 µT mat output). Similar philosophy to Bemer — waveform shape over peak gauss.' },
-    { criterionId: 'waveform-evidence', score: 8.0, note: 'Sawtooth waveform with Schumann and bone-healing frequency presets. Backed by general PEMF research, not single-waveform proprietary research like Bemer.' },
+    { criterionId: 'waveform-evidence', score: 8.0, note: 'Sawtooth waveform with Schumann and bone-healing frequency presets. Relies on general PEMF research; we found no trials of the device itself.' },
     { criterionId: 'build', score: 8.5, note: 'Swiss-engineered premium build, multi-decade brand pedigree, 3-year warranty.' },
-    { criterionId: 'programmability', score: 7.5, note: 'Circadian-aligned preset protocols (morning energising, evening calming). Less parameter exposure than Healthy Wave; more polished than consumer mats.' },
+    { criterionId: 'programmability', score: 7.5, note: 'Morning and evening preset protocols (marketed as energising and calming; not tested in controlled trials). Less parameter exposure than Healthy Wave; more polished than consumer mats.' },
     { criterionId: 'form-factor', score: 8.5, note: 'Coordinated multi-applicator system — full mat + pillow + spot applicator from single control unit.' },
     { criterionId: 'value', score: 7.0, note: '$3,500–$4,500 — meaningfully cheaper than Bemer Classic Evo for a comparable multi-applicator Swiss build.' },
   ],
   pros: [
     'Swiss-engineered premium build at lower price than Bemer',
     'Coordinated multi-applicator system (mat + pillow + spot)',
-    'Circadian-aligned preset protocols (morning/evening)',
+    'Morning and evening preset protocols',
     'Multi-decade Swiss Bionic Solutions brand pedigree',
   ],
   cons: [
-    'No proprietary single-waveform research moat like Bemer',
+    'Energising/calming presets are maker claims; no trials of the device itself',
     'Less parameter exposure than Healthy Wave Multi-Wave',
     'Brand recognition lower than Bemer in US market',
     'Mid-premium pricing without clear research differentiation vs Bemer',
   ],
-  bestFor: 'Best for users cross-shopping Bemer who want Swiss-engineered multi-applicator PEMF at lower price and accept the lack of single-waveform research moat.',
+  bestFor: 'Best for users cross-shopping Bemer who want Swiss-engineered multi-applicator PEMF at lower price and accept that the device itself has not been tested in trials.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Swiss Bionic Solutions product documentation and independent 2026 PEMF reviews. Not hands-on tested by ONDA.',
@@ -41,22 +41,22 @@ const imrsPrime: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-iMRS Prime is the rational Bemer alternative — Swiss-engineered multi-applicator PEMF system at meaningfully lower price. Sawtooth waveform with circadian-aligned preset protocols (morning energising, evening calming) and a multi-decade brand pedigree.
+iMRS Prime is the rational Bemer alternative — Swiss-engineered multi-applicator PEMF system at meaningfully lower price. Sawtooth waveform with morning and evening preset protocols (the maker calls them energising and calming; this is not tested in controlled trials) and a multi-decade brand pedigree.
 
 ## What are the downsides of iMRS Prime?
 
-No research moat. Where Bemer has 50+ peer-reviewed studies on the specific biorhythmic signal, iMRS uses well-documented general PEMF frequencies without a proprietary single-waveform research base. Brand recognition in the US market is lower.
+No device trials. Bemer cites many studies of its signal (mostly small or manufacturer-linked); iMRS uses common PEMF frequencies and we found no trials of the iMRS itself. Brand recognition in the US market is lower.
 
 ## Who should buy iMRS Prime?
 
-Choose iMRS Prime if you're cross-shopping Bemer and want Swiss-engineered multi-applicator hardware at lower price. For research-backed biorhythmic signal, Bemer Classic Evo. For multi-modality stacking, Healthy Wave Multi-Wave. For mid-tier with dual coil/mat, Curatron 3D.
+Choose iMRS Prime if you're cross-shopping Bemer and want Swiss-engineered multi-applicator hardware at lower price. For Bemer’s proprietary signal, Bemer Classic Evo. For multi-modality stacking, Healthy Wave Multi-Wave. For mid-tier with dual coil/mat, Curatron 3D.
 
 ---
 
 ## Background reading
 
-- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
-- [Ancestral sync — circadian anchors](/articles/ancestral-sync-circadian-anchors) — why circadian-aligned protocols matter for recovery hardware
+- [PEMF therapy — what the evidence shows](/science/evidence/pemf) — what is shown in people, what comes from cell studies, and what FDA registration, clearance and approval mean
+- [Ancestral sync — circadian anchors](/articles/ancestral-sync-circadian-anchors) — how light and timing shape the body clock (not about PEMF)
 `,
   references: [
     { label: 'Swiss Bionic Solutions — official site', url: 'https://www.swissbionic.com/' },
@@ -64,12 +64,12 @@ Choose iMRS Prime if you're cross-shopping Bemer and want Swiss-engineered multi
   relatedSlugs: ['bemer-classic-evo', 'curatron-3d', 'omi-full-body-mat'],
   publishOn: '2026-06-22',
   faq: [
-    { q: "iMRS Prime vs Bemer: which is better?", a: "iMRS Prime costs less than Bemer and offers a comparable Swiss-engineered build plus a coordinated mat, pillow and spot applicator system. Bemer keeps a research advantage: its proprietary single waveform is better studied. Choose iMRS for price and applicators, Bemer for waveform evidence." },
+    { q: "iMRS Prime vs Bemer: which is better?", a: "iMRS Prime costs less than Bemer and offers a comparable Swiss-engineered build plus a coordinated mat, pillow and spot applicator system. Bemer has more studies of its signal, though most are manufacturer-linked and independent trials found no clear benefit. Choose iMRS for price and applicators, Bemer for its brand and build." },
     { q: "How much does the iMRS Prime cost?", a: "The iMRS Prime costs about $4,000 in the configuration with a full-body mat, pillow and spot applicator. That is mid-premium pricing, below Bemer, for a Swiss-engineered build from a multi-decade brand, though without clear research differentiation from Bemer to justify the choice on evidence alone." },
-    { q: "What frequencies does the iMRS Prime use?", a: "The iMRS Prime uses a sawtooth waveform with documented Schumann (7.83 Hz) protocols and circadian-aligned morning and evening presets. It exposes fewer adjustable parameters than the Healthy Wave Multi-Wave, so it suits users who prefer presets over manual tuning." },
+    { q: "What frequencies does the iMRS Prime use?", a: "The iMRS Prime uses a sawtooth waveform with Schumann (7.83 Hz) settings and morning and evening presets that the maker markets as energising and calming, not tested in controlled trials. It exposes fewer adjustable parameters than the Healthy Wave Multi-Wave, so it suits users who prefer presets over manual tuning." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-06-22',
+  dateModified: '2026-10-07',
 }
 
 export default imrsPrime

@@ -16,7 +16,7 @@ const ultra4VsWhoop5: HeadToHeadInput = {
   bestForB:
     'Choose the Whoop 5.0 if daily recovery and strain are the point: continuous overnight HRV, a screenless band you forget you are wearing, and a 14+-day battery that charges on-body.',
   axes: [
-    { name: 'Continuous overnight HRV', winner: 'b', note: 'Whoop samples HRV continuously through the night and reports a full-sleep average; the Ultra 4 samples HRV up to 24× more often than before but remains a wrist-optical watch built for much more than recovery.' },
+    { name: 'Continuous overnight HRV', winner: 'b', note: 'Whoop builds its recovery signal from HRV measured during sleep; the Ultra 4 samples HRV up to 24× more often than before but remains a wrist-optical watch built for much more than recovery.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s Recovery, Strain and AI coach are built around daily readiness. The Ultra 4 adds an athlete readiness score and Recovery vs Overall HRV, but recovery is one feature among many.' },
     { name: 'Battery / overnight wear', winner: 'b', note: 'Whoop runs 14+ days and charges on-body without removal. The Ultra 4’s ~50 hours (84 in Low Power) finally clears the night, but still means charging every couple of days.' },
     { name: 'HRV metric comparability', winner: 'tie', note: 'Apple Health now carries an RMSSD value, the statistic Whoop uses, so you can compare in kind — Apple hasn’t confirmed Recovery HRV is RMSSD.' },
@@ -27,7 +27,7 @@ const ultra4VsWhoop5: HeadToHeadInput = {
   faq: [
     {
       q: 'Is the Apple Watch Ultra 4 or Whoop 5.0 better for HRV?',
-      a: 'For a dedicated overnight recovery signal, the Whoop 5.0 — it samples HRV continuously through the night and reports a full-sleep average. The Ultra 4 is now close in kind: it samples HRV about 24× more often, Apple Health now carries an RMSSD value, and its ~50-hour battery makes night-after-night wear practical. A finger ring or ECG chest strap is still more precise than either wrist device.',
+      a: 'For a dedicated overnight recovery signal, the Whoop 5.0 — it builds its recovery signal from HRV measured during sleep. The Ultra 4 is now close in kind: it samples HRV about 24× more often, Apple Health now carries an RMSSD value, and its ~50-hour battery makes night-after-night wear practical. A finger ring or ECG chest strap is still more precise than either wrist device.',
     },
     {
       q: 'Can the Apple Watch Ultra 4 replace a Whoop?',
@@ -48,7 +48,7 @@ Older Apple Watches reported sparse SDNN, which never lined up with Whoop’s RM
 
 ## The honest setup
 
-If you train on a daily recovery score and want nothing on your wrist but the sensor, Whoop is the purer tool. If you would use the Ultra’s rugged, outdoor and smartwatch features anyway, its HRV is now good enough to act on without paying a membership. If you only want the most precise overnight HRV, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
+If you train on a daily recovery score and want nothing on your wrist but the sensor, Whoop is the purer tool. If you would use the Ultra’s rugged, outdoor and smartwatch features anyway, its HRV is now usable as a personal trend without paying a membership. If you only want the most precise overnight HRV, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
   dateModified: '2026-10-04',

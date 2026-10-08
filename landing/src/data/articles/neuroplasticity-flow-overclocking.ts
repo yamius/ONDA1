@@ -49,7 +49,7 @@ BDNF is the "Miracle-Gro" for your brain. It is a protein that supports the surv
 
 ## Section 2: What happens in the brain during a flow state?
 
-Flow State is a high-bandwidth cognitive state where the Prefrontal Cortex (the inner critic) temporarily shuts down—a process called Transient Hypofrontality. This allows for seamless information processing and massive increases in creativity and pattern recognition. Alpha Waves and Theta Waves dominate during Flow—the brain shifts from scattered High-Beta (anxious, distracted) to focused Alpha (calm alertness) and creative Theta (insight, flow). Mastering the transition into Flow is the key to peak cognitive performance.
+Flow State is a high-bandwidth cognitive state where the Prefrontal Cortex (the inner critic) temporarily shuts down—a process called Transient Hypofrontality. This allows for seamless information processing and massive increases in creativity and pattern recognition. EEG studies of flow are small; the clearest finding is more frontal theta with only moderate alpha, so flow is not simply an "alpha state" (see [alpha brain waves](/articles/neural-bridge-alpha-flow-gateway)). Mastering the transition into Flow is the key to peak cognitive performance.
 
 ---
 
@@ -65,7 +65,7 @@ Every time you repeat a high-quality action, your brain wraps the neural pathway
 
 > **The Hack:** Use 10 minutes of Binaural Beats (Alpha range: 8–12 Hz) or box breathing before a cognitively demanding task.
 
-**The Logic:** This shifts your brain's electrical activity from the scattered High-Beta state to a focused Alpha state, lowering the barrier to entry for the Flow State.
+**The Logic:** A calm few minutes before hard work can make it easier to settle in. Whether binaural beats actually shift brain rhythms toward alpha is uncertain — EEG studies give inconsistent results — so the slow breathing is the better-supported part.
 
 ### PROTOCOL 2: High-Intensity Cognitive Bursts (BDNF Trigger)
 
@@ -75,20 +75,15 @@ Every time you repeat a high-quality action, your brain wraps the neural pathway
 
 ### PROTOCOL 3: The 'Non-Sleep Deep Rest' (NSDR) Recovery
 
-> **The Hack:** 20 minutes of Yoga Nidra or guided NSDR after a period of intense learning.
+> **The Hack:** 10–20 minutes of Yoga Nidra or guided NSDR as a deliberate rest break after a period of intense learning.
 
-**The Logic:** Neural changes (plasticity) don't happen during the work; they happen during the rest immediately following it. NSDR accelerates the consolidation of new neural pathways by mimicking the brain states found in deep sleep.
-
-> [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Consumer EEG (Muse)
-> METRIC: Alpha-Theta Wave Ratio
-> STATUS: NEURAL_COHERENCE_STABLE
+**The Logic:** NSDR (non-sleep deep rest) is a guided relaxation done lying down — a body scan, breath awareness and a calm voice. In EEG recordings people stay awake during it, so it is not a form of sleep, and no study shows that it speeds up the consolidation of what you just learned. Small trials suggest it can feel restful and lower self-rated stress; in the one direct comparison found, a short nap helped against fatigue while a brief NSDR session did not. Treat it as a quiet break between learning blocks, not a substitute for sleep. [What the evidence on yoga nidra and NSDR shows →](/science/evidence/yoga-nidra-nsdr)
 
 ---
 
 ## Recommended tools
 
-Flow states are visible in EEG. Three headsets that actually train them rather than just report them:
+Three headsets that give live EEG feedback during focus sessions (none has been shown to train flow itself):
 
 - [Muse S Athena](/reviews/muse-s-athena) — EEG + fNIRS sensor fusion
 - [Neurosity Crown](/reviews/neurosity-crown) — flow-music streaming on live EEG
@@ -109,7 +104,7 @@ Flow states are visible in EEG. Three headsets that actually train them rather t
     },
     {
       name: "The 'Non-Sleep Deep Rest' (NSDR) Recovery",
-      text: '20 minutes of Yoga Nidra or guided NSDR after a period of intense learning.',
+      text: '10–20 minutes of Yoga Nidra or guided NSDR as a deliberate rest break after a period of intense learning — guided deep rest, not a substitute for sleep.',
       protocolId: 'neuro-nsdr',
     },
   ],

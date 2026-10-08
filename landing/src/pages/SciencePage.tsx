@@ -129,6 +129,7 @@ const mdComponents = (lang: string) => ({
   p: ({ children }: { children?: React.ReactNode }) => <p className={`${P} mb-4`}>{children}</p>,
   ul: ({ children }: { children?: React.ReactNode }) => <ul className={`${P} mb-4 list-disc space-y-2 pl-5`}>{children}</ul>,
   blockquote: ({ children }: { children?: React.ReactNode }) => <div className="mt-10 border-l-2 border-white/20 pl-4 font-mono text-xs italic text-white/50">{children}</div>,
+  img: ({ src, alt }: { src?: string; alt?: string }) => <OptimizedImage src={src ?? ''} alt={alt ?? ''} className="my-6 w-full rounded" />,
 })
 
 function Entry({ p, lang, ui }: { p: SciencePageData; lang: string; ui: ScienceUi }) {

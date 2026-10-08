@@ -58,13 +58,13 @@
     "2": {
       "name": "EMOTIONEN / AQUA",
       "subtitle": "Biochemie der Energie: von der Wendigkeit zur sozialen Kraft",
-      "metaDescription": "Stufe 2: emotionale Meisterschaft. HPA-Achse, DHEA, Spiegelneuronen, soziale Resonanz — dazu Ideen der Polyvagal-Theorie, eines umstrittenen Modells. Von der Wendigkeit zu ruhiger Souveränität.",
+      "metaDescription": "Stufe 2: emotionale Meisterschaft. Stressreaktion, ruhige Präsenz, Spiegelneuronen, soziale Resonanz — dazu Ideen der Polyvagal-Theorie, eines umstrittenen Modells. Von der Wendigkeit zu ruhiger Souveränität.",
       "intro": "Stufe 2 ist die Phase, in der du dein emotionales System wie einen Hightech-Reaktor beherrschen lernst. Wir hören auf, Emotionen als bloße „Launen“ zu sehen, und behandeln sie als biologische Protokolle: mit bestimmten hormonellen Signaturen, neuromotorischen Mustern und vegetativen Profilen.\n\nAuf dieser Stufe folgen wir dem Weg der Evolution der Säugetiere: von den blitzschnellen Reaktionen eines kleinen Tiers über die unerschütterliche Ruhe eines großen Raubtiers bis zur komplexen Resonanz eines höheren Primaten.",
       "architecture": {
         "intro": "Stufe 2 vereint drei Strategien des Ressourcenmanagements:",
         "parts": [
-          { "label": "Ich manövriere", "protocol": "Protokoll: Die Wendigkeit des „kleinen Säugetiers“", "goal": "Ziel: biologische Flexibilität und blitzschnelle Beschleunigung ohne lähmenden Stress.", "work": "Mechanismus: Inspiriert von polyvagalen Ideen (einem umstrittenen Modell) — Üben des gefühlten Sinns für Sicherheit und Bedrohung, den das Modell Neurozeption nennt. Wir bringen dem System bei, geschmeidig zwischen Ruhe und Handlung zu „gleiten“ und Cortisol und Adrenalin von Giften in Treibstoff für Präzision zu verwandeln." },
-          { "label": "Ich schütze mein Revier", "protocol": "Protokoll: Die Stärke des „großen Säugetiers“", "goal": "Ziel: souveräne Ruhe und Dichte der Präsenz.", "work": "Mechanismus: Arbeit mit dem Hormonsystem — mit der Zeit weniger auf Notfall-Cortisol und mehr auf DHEA setzen. Das unterstützt einen Zustand „ruhiger Souveränität“, eine Stabilität, die andere oft spüren, bevor du überhaupt sprichst." },
+          { "label": "Ich manövriere", "protocol": "Protokoll: Die Wendigkeit des „kleinen Säugetiers“", "goal": "Ziel: biologische Flexibilität und blitzschnelle Beschleunigung ohne lähmenden Stress.", "work": "Mechanismus: Inspiriert von polyvagalen Ideen (einem umstrittenen Modell) — Üben des gefühlten Sinns für Sicherheit und Bedrohung, den das Modell Neurozeption nennt. Wir bringen dem System bei, geschmeidig zwischen Ruhe und Handlung zu „gleiten“ und unter Druck gefasst und präzise zu bleiben." },
+          { "label": "Ich schütze mein Revier", "protocol": "Protokoll: Die Stärke des „großen Säugetiers“", "goal": "Ziel: souveräne Ruhe und Dichte der Präsenz.", "work": "Mechanismus: Mit der Zeit eine stabile, geerdete Präsenz aufbauen. Das unterstützt einen Zustand „ruhiger Souveränität“, eine Stabilität, die andere oft spüren, bevor du überhaupt sprichst." },
           { "label": "Ich bin Teil der Gruppe", "protocol": "Protokoll: Soziale Resonanz", "goal": "Ziel: individuelles Überleben in kollektive Kraft verwandeln.", "work": "Mechanismus: das „soziale Gehirn“ aktivieren — das Spiegelneuronensystem und das Oxytocinprofil. Wir lernen, unsere Rhythmen mit der Gruppe zu synchronisieren (Ko-Regulation) und dabei ein eigenes Zentrum zu behalten. Deine Präsenz wird zum „Kitt“, der das Feld verbindet." }
         ]
       },
@@ -82,7 +82,7 @@
         "items": [
           { "name": "Hypothalamus", "text": "Steuerzentrum für Revierverhalten und hormonelles Gleichgewicht." },
           { "name": "Basalganglien", "text": "Bildung stabiler, „unerschütterlicher“ Haltungen und Gewohnheiten der Souveränität." },
-          { "name": "Spiegelneuronen", "text": "Das System des Gehirns, um Absichten und Zustände anderer zu lesen." },
+          { "name": "Spiegelneuronen", "text": "Die Forschung bringt sie mit dem Verstehen der Handlungen und Absichten anderer in Verbindung; ihre genaue Rolle ist noch umstritten." },
           { "name": "Anteriorer cingulärer Kortex", "text": "Der Detektor für soziale Signale und emotionale Treffsicherheit." }
         ]
       },
@@ -113,7 +113,7 @@
         "items": [
           { "name": "Kognitive Lücke", "text": "Die Pause zwischen einem Ereignis und einer automatischen Reaktion vergrößern, damit Raum für freie Wahl entsteht." },
           { "name": "Cholinerge Modulation", "text": "Acetylcholin nutzen, um die benötigten neuronalen Verbindungen beim Fokussieren buchstäblich „hervorzuheben“." },
-          { "name": "Gamma-Bindung", "text": "Neuronen im Gammabereich synchronisieren, um verstreute Erfahrungsfragmente zu einer Einsicht zusammenzufügen." },
+          { "name": "Gamma-Bindung", "text": "Ziel ist, verstreute Erfahrungsfragmente zu einer Einsicht zusammenzufügen. Die Forschung bringt diese Art der Bindung mit Aktivität im Gammabereich in Verbindung, ihre Rolle ist aber umstritten, und ONDA zeichnet kein EEG auf." },
           { "name": "Proaktive Programmierung (RAS)", "text": "Die Filter des Gehirns so einstellen, dass sie automatisch nach Gelegenheiten suchen, die zu deiner inneren Vision passen." }
         ]
       },
@@ -230,7 +230,7 @@
         "parts": [
           { "label": "Ich bezeuge", "protocol": "Protokoll: Neuronale Distanz und metakognitives Monitoring", "goal": "Ziel: vom Gefangenen des Bewusstseinsstroms zu seinem Meta-Programmierer werden.", "work": "Arbeit: das Ruhezustandsnetzwerk (DMN) deaktivieren und „neuronale Distanz“ herstellen. Mit sensorischen Ankern den inneren Dialog zum Verstummen bringen und Gedanken in durchsichtige elektrische Impulse verwandeln." },
           { "label": "Ich integriere", "protocol": "Protokoll: Globale neuronale Integration und Synthese der Erfahrung", "goal": "Ziel: maximale neuronale Kohärenz — das Gehirn als einziger, reibungsloser Supercomputer.", "work": "Arbeit: die horizontale (zwischen den Hemisphären) und vertikale (Kortex–Körper) Vernetzung stärken. Balken (Corpus callosum) und mPFC nutzen, um kognitive Dissonanz aufzulösen und Logik mit Intuition zu vereinen." },
-          { "label": "Ich synchronisiere", "protocol": "Protokoll: Neuroelektrische Synchronisation und kollektive Intelligenz", "goal": "Ziel: vom „Ich-Modus“ zum „Netzwerkknoten“ — Hyperscanning zwischen Gehirnen und kollektiver Flow.", "work": "Arbeit: Gammarhythmen (40 Hz) und das Spiegelneuronensystem anregen. Eine neuroelektrische Phasenkopplung mit anderen erreichen, um Ressourcen und Lösungen von „ozeanischem“ Ausmaß zu erschließen." }
+          { "label": "Ich synchronisiere", "protocol": "Protokoll: Neuroelektrische Synchronisation und kollektive Intelligenz", "goal": "Ziel: vom „Ich-Modus“ zum „Netzwerkknoten“ — gemeinsamer Rhythmus und kollektiver Flow mit anderen.", "work": "Arbeit: gemeinsames Atmen, geteilte Aufmerksamkeit und das Spiegelneuronensystem, angelehnt an Hyperscanning-Studien dazu, wie sich Hirnaktivität zwischen Menschen angleichen kann (erste Hinweise; ONDA zeichnet kein EEG auf). Ziel: Ressourcen und Lösungen von „ozeanischem“ Ausmaß erschließen." }
         ]
       },
       "biologicalProtocol": {
@@ -238,8 +238,8 @@
         "items": [
           { "name": "Metakognitives Benennen", "text": "Übungen, um mentale Ereignisse zu „markieren“, den mPFC zu aktivieren und Gedanken ihre emotionale Ladung zu nehmen." },
           { "name": "Synchronisation der Hemisphären", "text": "Übungen für den Balken, damit Daten nahtlos zwischen analytischen und intuitiven Zentren fließen." },
-          { "name": "Gamma-Flow-Abstimmung", "text": "Techniken, um hochfrequente Hirnaktivität (40 Hz) für kollektive Einsichten und schnelles Lernen zu stabilisieren." },
-          { "name": "Limbische Entkopplung", "text": "Den PFC trainieren, „aufgeladene“ Daten zu registrieren, ohne Cortisol freizusetzen oder die Amygdala auszulösen." }
+          { "name": "Gamma-Flow-Abstimmung", "text": "Techniken, um gemeinsame Zustände hoher Konzentration für kollektive Einsichten und schnelles Lernen zu halten. Schnelle Gamma-Aktivität (40 Hz) ist hier ein Bild; ONDA zeichnet kein EEG auf." },
+          { "name": "Limbische Entkopplung", "text": "Den PFC trainieren, „aufgeladene“ Daten zu registrieren, ohne in eine Stressreaktion hineingezogen zu werden." }
         ]
       },
       "targetSystems": {

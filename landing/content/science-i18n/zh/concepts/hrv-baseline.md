@@ -1,5 +1,5 @@
 ---
-sourceHash: "33b9f01d78ea"
+sourceHash: "55f2a6818cc5"
 title: "HRV 个人基线：为什么你自己的常态比任何常模都重要"
 metaTitle: "HRV 个人基线：你自己的常态，而非任何常模"
 metaDescription: "HRV 个人基线是你自己的典型范围，而不是人群平均值。本文介绍它为何比年龄常模更有用、ONDA 如何建立它，以及数值偏移能说明什么、不能说明什么。"

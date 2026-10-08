@@ -71,9 +71,9 @@ To move beyond basic alignment and into Age Deceleration, implement the three-la
 
 ### Protocol 2: Pulsed Hormesis (The Stress Patch)
 
-> **Action:** Fasted exercise in natural morning light, followed immediately by cold exposure (≤ 15°C, 2–3 minutes).
+> **Action:** Fasted exercise in natural morning light, followed immediately by brief cold exposure.
 
-**Logic:** This dual-signal triggers AMPK activation — the cellular energy sensor that initiates autophagy. The same AMPK signal drives [mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid) — the build-out of new cellular power plants. AMPK tells the body to recycle old, "laggy" cells and recalibrate the metabolic clock to peak efficiency. The fasted state amplifies the signal: without glucose available, the system accelerates into repair mode. The cold exposure adds a hormetic stressor that further activates mitochondrial biogenesis via PGC-1α, the master regulator of cellular energy capacity.
+**Logic:** The idea behind this dual signal is AMPK, the cellular energy sensor linked to autophagy; that this routine triggers AMPK or autophagy in people has not been shown. AMPK is also linked to [mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid) — the build-out of new cellular power plants. AMPK tells the body to recycle old, "laggy" cells and recalibrate the metabolic clock to peak efficiency. The fasted state amplifies the signal: without glucose available, the system accelerates into repair mode. Adding cold is meant as a hormetic stressor — an image, not a measured effect of this routine.
 
 ### Protocol 3: Data-Driven Wind Down
 
@@ -87,7 +87,7 @@ To move beyond basic alignment and into Age Deceleration, implement the three-la
 
 By tightening circadian alignment, you're not just sleeping better — you're targeting the same methylation machinery the Horvath Clock reads. Whether that shifts measured biological age is still an open research question; what you can track yourself is the upstream signal.
 
-**Short-term:** Many people report more Deep Sleep and an easier morning cortisol curve within the first week, while effects on [HRV](/science/concepts/heart-rate-variability) are modest, inconsistent and not guaranteed on any timeline. Individual results vary — use your own data, not these numbers, as the benchmark.
+**Short-term:** Many people report more Deep Sleep and easier mornings within the first week, while effects on [HRV](/science/concepts/heart-rate-variability) are modest, inconsistent and not guaranteed on any timeline. Individual results vary — use your own data, not these numbers, as the benchmark.
 
 **Long-term:** The kind of circadian and metabolic alignment that research associates with healthier aging markers over time. (We don't promise specific telomere, methylation-clock, or sirtuin changes — those are research directions, not guaranteed outcomes.)
 
@@ -116,7 +116,7 @@ Red-light protocols are part of most longevity stacks. The panels that actually 
     },
     {
       name: 'Pulsed Hormesis (The Stress Patch)',
-      text: 'Perform fasted exercise in natural morning light, immediately followed by cold exposure at ≤15°C for 2–3 minutes.',
+      text: 'Perform fasted exercise in natural morning light, immediately followed by brief cold exposure.',
       protocolId: 'longevity_protocol_03_hormesis',
     },
     {

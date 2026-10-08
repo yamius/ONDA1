@@ -21,6 +21,70 @@ export interface StudyCitation {
 }
 
 export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
+  "adrenal-governor-thermal-runaway": [
+    {
+      "title": "Adrenal fatigue does not exist: a systematic review",
+      "authors": "Cadegiani FA, Kater CE",
+      "year": 2016,
+      "journal": "BMC Endocrine Disorders",
+      "doi": "10.1186/s12902-016-0128-4",
+      "pmid": "27557747",
+      "url": "https://doi.org/10.1186/s12902-016-0128-4"
+    },
+    {
+      "title": "Diagnosis and Treatment of Primary Adrenal Insufficiency: An Endocrine Society Clinical Practice Guideline",
+      "authors": "Bornstein SR et al.",
+      "year": 2016,
+      "journal": "The Journal of Clinical Endocrinology & Metabolism",
+      "doi": "10.1210/jc.2015-1710",
+      "pmid": "26760044",
+      "url": "https://doi.org/10.1210/jc.2015-1710"
+    },
+    {
+      "title": "The diagnosis of Cushing's syndrome: an Endocrine Society Clinical Practice Guideline",
+      "authors": "Nieman LK et al.",
+      "year": 2008,
+      "journal": "The Journal of Clinical Endocrinology & Metabolism",
+      "doi": "10.1210/jc.2008-0125",
+      "pmid": "18334580",
+      "url": "https://doi.org/10.1210/jc.2008-0125"
+    },
+    {
+      "title": "Assessment of the cortisol awakening response: Expert consensus guidelines",
+      "authors": "Stalder T et al.",
+      "year": 2016,
+      "journal": "Psychoneuroendocrinology",
+      "doi": "10.1016/j.psyneuen.2015.10.010",
+      "pmid": "26563991",
+      "url": "https://doi.org/10.1016/j.psyneuen.2015.10.010"
+    },
+    {
+      "title": "Sleep loss results in an elevation of cortisol levels the next evening",
+      "authors": "Leproult R et al.",
+      "year": 1997,
+      "journal": "Sleep",
+      "pmid": "9415946",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9415946/"
+    },
+    {
+      "title": "Mindfulness mediates the physiological markers of stress: Systematic review and meta-analysis",
+      "authors": "Pascoe MC et al.",
+      "year": 2017,
+      "journal": "Journal of Psychiatric Research",
+      "doi": "10.1016/j.jpsychires.2017.08.004",
+      "pmid": "28863392",
+      "url": "https://doi.org/10.1016/j.jpsychires.2017.08.004"
+    },
+    {
+      "title": "The Effect of Diaphragmatic Breathing on Attention, Negative Affect and Stress in Healthy Adults",
+      "authors": "Ma X et al.",
+      "year": 2017,
+      "journal": "Frontiers in Psychology",
+      "doi": "10.3389/fpsyg.2017.00874",
+      "pmid": "28626434",
+      "url": "https://doi.org/10.3389/fpsyg.2017.00874"
+    }
+  ],
   "4-7-8-breathing": [
     {
       "title": "Effects of sleep deprivation and 4-7-8 breathing control on heart rate variability, blood pressure, blood glucose, and endothelial function in healthy young adults",

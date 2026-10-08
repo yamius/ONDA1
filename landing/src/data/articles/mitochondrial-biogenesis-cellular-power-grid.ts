@@ -58,11 +58,13 @@ The primary command for building new mitochondria is the activation of the PGC-1
 
 > **The Hack:** High-heat sauna (80°C+) for 20 minutes, 3 times a week.
 >
-> **The Logic:** Heat stress triggers 'Heat Shock Proteins' and pushes mitochondria to handle thermal energy more efficiently. In research, this kind of acute stressor is associated with increased PGC-1α signalling — the pathway linked to building more power units in muscle and brain tissue. Individual response varies.
+> **Safety:** Never use a sauna after drinking alcohol — alcohol is the main factor in sauna deaths. Drink water before and after, start with shorter sessions, and get out at once if you feel dizzy, sick or have palpitations. If you have heart disease or low or poorly controlled blood pressure, or are pregnant, talk to a doctor first. See [the evidence on sauna and heat](/science/evidence/sauna-heat-exposure).
+>
+> **The Logic:** The idea is that heat stress raises 'Heat Shock Proteins' and pushes mitochondria to handle thermal energy more efficiently — an idea, not something shown in people. In research, this kind of acute stressor is associated with increased PGC-1α signalling — the pathway linked to building more power units in muscle and brain tissue. Individual response varies.
 
 ### PROTOCOL_02 > Photonic Charging (Red Light Therapy)
 
-> **The Hack:** Exposure to 660nm (Red) and 850nm (Near-Infrared) light for 10 minutes daily.
+> **The Hack:** Exposure to 660nm (Red) and 850nm (Near-Infrared) light for about 10 minutes, following the maker's distance and time. Wear the goggles supplied and never look into the LEDs: near-infrared light is invisible and does not trigger the blink reflex. Doses used in studies do not transfer directly to home panels. See [the evidence and safety review](/science/evidence/red-light-therapy).
 >
 > **The Logic:** Near-infrared light penetrates the skin and is absorbed by Cytochrome c Oxidase in the mitochondria. The working hypothesis is that this supports the ATP production cycle and may help lower markers of oxidative stress — the lab equivalent of cleaning 'soot' off your cellular engines. The evidence is promising but still early.
 
@@ -73,7 +75,7 @@ The primary command for building new mitochondria is the activation of the PGC-1
 > **The Logic:** NAD+ is a critical co-enzyme for energy transfer. Low NAD+ levels mean your mitochondria can't process fuel efficiently. HIIT creates a massive 'Energy Debt' that forces the body to recycle old mitochondria (Autophagy) and build a newer, more resilient power grid.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: VO2 Max Mask
+> EXAMPLE_DEVICE: VO2 Max Mask
 > METRIC: Peak Oxygen Consumption
 > STATUS: WATTAGE_INCREASED
 
@@ -81,10 +83,10 @@ The primary command for building new mitochondria is the activation of the PGC-1
 
 ## Recommended tools
 
-Mitochondrial biogenesis is one of the most-cited photobiomodulation indications. Hardware that delivers the dose:
+Mitochondrial effects of photobiomodulation are studied mainly in cells and animals, not established in people. If you still want to try a panel:
 
-- [Joovv Solo 3.0](/reviews/joovv-solo-3) — FDA-registered modular reference panel
-- [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) — six-wavelength biohacker favourite (now the 1500X), FDA Class II registered
+- [Joovv Solo 3.0](/reviews/joovv-solo-3) — modular reference panel
+- [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) — six-wavelength biohacker favourite (now the 1500X)
 - [Hooga HG500](/reviews/hooga-hg500) — budget entry with honest specs
 
 [Best Red Light Therapy Panels (2026) →](/reviews/red-light-therapy)
@@ -97,7 +99,7 @@ Mitochondrial biogenesis is one of the most-cited photobiomodulation indications
     },
     {
       name: 'Photonic Charging (Red Light Therapy)',
-      text: 'Exposure to 660nm (Red) and 850nm (Near-Infrared) light for 10 minutes daily.',
+      text: 'Exposure to 660nm (Red) and 850nm (Near-Infrared) light for about 10 minutes, following the maker’s distance and time. Wear the goggles supplied and never look into the LEDs: near-infrared light is invisible and does not trigger the blink reflex.',
       protocolId: 'mito-photonic-charging',
     },
     {

@@ -74,7 +74,7 @@ The lesson: pick one method, use it under the same conditions, and **track the t
 **The Logic:** Visceral (abdominal) fat drives [metabolic](/glossary/metabolism) and cardiovascular risk more than total fat. A shrinking waist is a strong health signal independent of the percentage itself.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Tape measure (Navy method) + weekly log
+> EXAMPLE_DEVICE: Tape measure (Navy method) + weekly log
 > METRIC: Body-fat % and waist trending down while strength holds
 > STATUS: RECOMPOSITION_IN_PROGRESS
 `,

@@ -73,7 +73,7 @@ const bestColdPlunge2026: Comparison = {
     },
     {
       q: 'How cold should a cold plunge be?',
-      a: 'Most published cold-exposure research uses water at 10–15°C (50–59°F). The 39°F floor that premium tubs target is significantly colder than necessary for the typical hormetic-stress benefits — the lower temperatures cater to extreme protocols and Wim Hof Method practitioners.',
+      a: 'There is no established temperature threshold for benefits. Trials have used a wide range of water temperatures and durations, and the benefits themselves are still emerging. The 39°F floor that premium tubs reach caters to extreme protocols and Wim Hof Method practitioners. If you are new to cold water, start warmer and shorter.',
     },
     {
       q: 'Can I install a cold plunge indoors?',

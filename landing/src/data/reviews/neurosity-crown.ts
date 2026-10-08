@@ -56,9 +56,9 @@ For developers, the key point is access. Neurosity offers official **JavaScript 
 
 **Measuring.** Dry-electrode headsets are noisier than lab EEG with gel. Blinks, jaw movement and walking all add artefacts. For seated focus sessions the Crown’s eight channels give useful data, but it is not a clinical EEG.
 
-**Training.** Neurofeedback means watching (or hearing) your brain activity and learning to change it. The evidence is mixed. A 2016 meta-analysis of randomised trials in ADHD found benefits when parents rated their children, but much smaller effects when the raters did not know the treatment (Cortese et al., 2016). That suggests part of the effect is expectation. For healthy adults, studies on focus and productivity are small and short.
+**Training.** Neurofeedback means watching (or hearing) your brain activity and learning to change it. The evidence is mixed. A 2016 meta-analysis of randomised trials in ADHD found benefits when parents rated their children, but no significant effect when the raters did not know the treatment (Cortese et al., 2016); a 2025 meta-analysis came to the same conclusion (Westwood et al., 2025). That suggests much of the effect is expectation. For healthy adults, studies on focus and productivity are small and short.
 
-**What this means for you.** The Crown is a good tool to see how your attention changes across a day, or with coffee, sleep or [breathing exercises](/articles/breathing-for-focus-and-attention). Do not expect it to raise your focus on its own.
+**What this means for you.** The Crown is a good tool to see how its focus score changes across a day, or with coffee, sleep or [breathing exercises](/articles/breathing-for-focus-and-attention); the score is Neurosity’s own estimate, not a validated measure of attention. Do not expect it to raise your focus on its own.
 
 ## Is the Neurosity Crown a medical device?
 
@@ -93,7 +93,7 @@ It falls short on almost everything Muse leads on. There is no deep guided-medit
 
 ## Background reading
 
-The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+The neuroscience these headsets feed back — and what the EEG signal can and cannot tell you about mental states.
 
 - [ACC calibration: cognitive-control protocol](/articles/acc-calibration-protocol-cognitive-control) — how prefrontal control loops show up in EEG
 - [Adaptation and range fractionation](/articles/adaptation-hack-range-fractionation) — training cognitive states by deliberate variation
@@ -113,7 +113,7 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
     { q: "What are the downsides of the Neurosity Crown?", a: "The Crown costs about three times the Muse S Athena, its battery lasts about three hours, it has no deep meditation library or sleep tracking, its rigid crown is not for overnight wear, and its UX assumes a more technical user than consumer meditation alternatives." },
     { q: "Neurosity Crown vs Muse S Athena: which is better?", a: "Pick the Neurosity Crown for raw data, an open SDK and the widest coverage from eight channels. Pick the Muse S Athena for guided brain-training content, sleep tracking and overnight comfort, at roughly a third of the Crown's price." },
     { q: "Is the Neurosity Crown a medical device?", a: "No. The Crown is a consumer and developer EEG headset, not an FDA-cleared medical device. It cannot diagnose ADHD, epilepsy or sleep disorders. It only reads brain signals and sends no current, so there are no major safety risks." },
-    { q: "Does neurofeedback with a headset actually improve focus?", a: "The evidence is mixed. A 2016 meta-analysis in ADHD found benefits mainly when raters knew who was treated, which suggests expectation plays a role. Studies in healthy adults are small. A headset is best used to see what affects your focus, not as a guaranteed fix." },
+    { q: "Does neurofeedback with a headset actually improve focus?", a: "The evidence is mixed. A 2016 meta-analysis in ADHD found benefits mainly when raters knew who was treated, and a 2025 meta-analysis found no clear benefit on blinded ratings, which suggests expectation plays a large role. Studies in healthy adults are small. A headset is best used to see what affects your focus, not as a guaranteed fix." },
     { q: "Neurosity Crown vs Emotiv Insight 2: which is better for developers?", a: "The Crown, for most people. It has eight channels versus five and gives raw data with no subscription, while Emotiv puts raw-data access behind a Pro plan of about $99 a year. Emotiv costs less up front ($499) and fits some academic toolchains." },
   ],
   datePublished: '2026-05-21',

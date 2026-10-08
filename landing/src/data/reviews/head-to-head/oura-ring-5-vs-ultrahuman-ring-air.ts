@@ -12,11 +12,11 @@ const ouraRing5VsUltrahuman: HeadToHeadInput = {
   verdict:
     'Accuracy with a subscription vs no subscription with a reliability question. The Oura Ring 5 is the more accurate, better-supported ring — if you accept the ~$6/month membership. The Ultrahuman Ring Air is subscription-free and lighter — if you accept its battery-reliability risk.',
   bestForA:
-    'Choose the Oura Ring 5 if you want the most accurate sleep and HRV, upgraded sensors and the best app experience, and the mandatory membership is acceptable.',
+    'Choose the Oura Ring 5 if you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated), upgraded sensors and the best app experience, and the mandatory membership is acceptable.',
   bestForB:
     'Choose the Ultrahuman Ring Air if avoiding a subscription is the priority, you want the lightest ring and cross-platform support, and you will accept the battery-reliability risk.',
   axes: [
-    { name: 'Sleep & HRV accuracy', winner: 'a', note: 'Oura leads on validated sleep staging and overnight HRV, now on upgraded Ring 5 sensors (stronger LEDs, 12 signal pathways). Ultrahuman’s sleep tracking is genuinely good but a step behind the reference.' },
+    { name: 'Sleep & HRV accuracy', winner: 'a', note: 'Oura leads on better-validated sleep staging (manufacturer-funded studies) and overnight HRV, now on upgraded Ring 5 sensors (stronger LEDs, 12 signal pathways). Ultrahuman’s sleep tracking is genuinely good but a step behind Oura.' },
     { name: 'Subscription', winner: 'b', note: 'Ultrahuman: no subscription — buy once. Oura: ~$6/month required for full data, on top of the ring. If avoiding a recurring fee is the goal, Ultrahuman wins outright.' },
     { name: 'Reliability', winner: 'a', note: 'Ultrahuman Ring Air carries widespread battery-failure reports within months. Oura’s hardware track record is the safer bet.' },
     { name: 'Weight & comfort', winner: 'b', note: 'The Ultrahuman Ring Air is among the lightest rings made; the Ring 5 is ~40% slimmer than the Ring 4 and very comfortable, but Ultrahuman keeps a narrow edge on sheer lightness.' },

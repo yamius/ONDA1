@@ -66,7 +66,7 @@ Reduces the sensitivity of the ACC to background system noise and minor distract
 **System Effect:** Lowers the emotional reaction of the vACC to trigger events, conserving system resources.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: focus-block timer / impulse log / HRV monitor
+> EXAMPLE_DEVICE: focus-block timer / impulse log / HRV monitor
 > METRIC: uninterrupted focus duration, impulse-act ratio, post-block clarity
 > STATUS: FOCUS_LOCKED
 
@@ -90,9 +90,9 @@ Regular execution of the ACC calibration protocol brings longer uninterrupted fo
 
 ## Recommended tools
 
-ACC calibration is the kind of thing neurofeedback was designed to address. Hardware that puts the loop in your hands:
+Neurofeedback aims at this kind of attention control, though trials in healthy adults are few and small. Hardware that gives you live feedback:
 
-- [Muse S Athena](/reviews/muse-s-athena) — EEG + fNIRS for ACC-adjacent metrics
+- [Muse S Athena](/reviews/muse-s-athena) — EEG + fNIRS with the app’s own session scores
 - [Neurosity Crown](/reviews/neurosity-crown) — developer-grade EEG with raw access
 - [Myndlift](/reviews/myndlift) — clinical-supervised neurofeedback at home
 

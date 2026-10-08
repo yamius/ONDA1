@@ -21,16 +21,16 @@ const irVsTraditional: HeadToHeadInput = {
   axes: [
     { name: 'Heat source', winner: 'tie', note: 'Sunlighten: full-spectrum IR (radiant). Finnleo and Almost Heaven: convection (traditional Finnish heat). Different mechanisms; pick on which feels right.' },
     { name: 'Install context', winner: 'tie', note: 'Sunlighten: indoor cabin. Finnleo: indoor cabin. Almost Heaven: outdoor barrel only. Pick on install space.' },
-    { name: 'Peak temperature', winner: 'b', note: 'Finnleo and Almost Heaven: 80–95°C traditional Finnish heat. Sunlighten: 50–65°C IR-cabin temperature (lower but deeper-penetrating).' },
+    { name: 'Peak temperature', winner: 'b', note: 'Finnleo and Almost Heaven: 80–95°C traditional Finnish heat. Sunlighten: 50–65°C IR-cabin temperature (lower; the body heats less).' },
     { name: 'EMF', winner: 'b', note: 'Finnleo and Almost Heaven: no electronics in heat delivery (EMF non-issue). Sunlighten: low EMF documented but non-zero.' },
-    { name: 'Research evidence', winner: 'b', note: 'Traditional Finnish sauna (Finnleo, Almost Heaven) has the deepest published research evidence base — Finnish cohort studies on cardiovascular mortality and dementia risk.' },
+    { name: 'Research evidence', winner: 'b', note: 'Traditional Finnish sauna (Finnleo, Almost Heaven) has the deepest published research evidence base — observational Finnish cohort studies (middle-aged men) linking frequent use with lower cardiovascular mortality and dementia risk; associations, not proof of cause.' },
     { name: 'Brand pedigree', winner: 'b', note: 'Finnleo: Finnish manufacturing pedigree (Helo). Almost Heaven: American cedar barrel pedigree. Sunlighten: longest IR-sauna brand presence.' },
     { name: 'Price', winner: 'c', note: 'Almost Heaven Salem (2-person): $4,485 list incl. heater ($4,036.50 sale, October 2026). Sunlighten: ~$6,000. Finnleo: ~$8,000+. Almost Heaven is the cheapest; Finnleo premium-priced.' },
   ],
   faq: [
     {
       q: 'IR or traditional Finnish sauna — which is better?',
-      a: 'Different mechanisms with different evidence bases. Traditional Finnish sauna (Finnleo, Almost Heaven) has the deepest published research evidence — Kuopio cohort studies on cardiovascular and cognitive outcomes. IR sauna (Sunlighten) has newer but real research, and delivers benefits at lower air temperatures via deeper tissue penetration.',
+      a: 'Different mechanisms with different evidence bases. Traditional Finnish sauna (Finnleo, Almost Heaven) has the deepest published research evidence — observational Kuopio cohort studies on cardiovascular and cognitive outcomes (associations, not cause). IR sauna (Sunlighten) runs at lower air temperatures and heats the body less: in one direct comparison, far-infrared sauna raised core temperature least. Outcome research on IR cabins is small, and the Finnish cohort results do not apply to them.',
     },
     {
       q: 'Can I install Finnleo outdoors?',
@@ -38,7 +38,7 @@ const irVsTraditional: HeadToHeadInput = {
     },
     {
       q: 'Is Sunlighten as effective as traditional sauna?',
-      a: 'Different effect profiles. Traditional sauna reaches higher core temperatures via convection plus radiant heat — strongest evidence base. IR sauna delivers radiant-only heat at lower air temperatures but with deeper tissue penetration. For users sensitive to high air temperatures, IR may be more tolerable; for users wanting the format the cohort studies ran on, traditional.',
+      a: 'Different effect profiles. Traditional sauna reaches higher core temperatures via convection plus radiant heat — the largest evidence base, though observational (associations, not cause). IR sauna delivers radiant-only heat at lower air temperatures and raises core temperature less (claims by makers of deeper tissue penetration have not been shown to bring extra benefit). For users sensitive to high air temperatures, IR may be more tolerable; for users wanting the format the cohort studies ran on, traditional.',
     },
     {
       q: 'Which has the lowest EMF?',

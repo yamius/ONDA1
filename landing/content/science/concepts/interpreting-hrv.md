@@ -28,7 +28,7 @@ related:
   glossary: [heart-rate-variability]
   articles: [what-to-do-after-low-hrv-reading, why-is-my-apple-watch-hrv-low, hrv-questions-answered, normal-hrv-by-age, doctors-and-your-data]
   tools: [hrv]
-  science: [concepts/heart-rate-variability, concepts/hrv-baseline, concepts/rmssd, concepts/sdnn, measurements/heart-rate-variability]
+  science: [concepts/heart-rate-variability, concepts/hrv-baseline, concepts/rmssd, concepts/sdnn, measurements/heart-rate-variability, mechanisms/exercise-and-hrv]
 relatedPlanned:
   - mechanisms/hrv-day-to-day
 sources:

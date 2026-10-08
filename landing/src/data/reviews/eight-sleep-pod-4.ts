@@ -11,11 +11,11 @@ const eightSleepPod4: ToolReviewInput = {
   verdict:
     'The category-defining smart sleep-climate system — dual-zone water cooling/heating, HRV tracking, subscription required.',
   summary:
-    'Eight Sleep Pod 4 is the smart sleep-climate system that defined the category. Dual-zone water-cooled cover with active heating and cooling (13–43°C), built-in HRV and sleep tracking, autopilot climate adjustment based on sleep stage. The hardware is excellent; the subscription model is the editorial point of contention — full features require ongoing Eight Sleep Autopilot membership.',
+    'Eight Sleep Pod 4 is the smart sleep-climate system that defined the category. Dual-zone water-cooled cover with active heating and cooling (13–43°C), built-in HRV and sleep tracking, autopilot climate adjustment based on estimated sleep stage. The hardware is excellent; the subscription model is the editorial point of contention — full features require ongoing Eight Sleep Autopilot membership.',
   scores: [
-    { criterionId: 'climate-range', score: 9.5, note: 'Best-in-class dual-zone range (13–43°C), strong recovery time, holds target through wide ambient swings. Autopilot adjusts overnight based on sleep stage.' },
+    { criterionId: 'climate-range', score: 9.5, note: 'Best-in-class dual-zone range (13–43°C), strong recovery time, holds target through wide ambient swings. Autopilot adjusts overnight based on estimated sleep stage.' },
     { criterionId: 'build', score: 8.5, note: 'Premium cover construction over Eight Sleep mattress. Hub size moderate. 2-year warranty. Multi-year reliability track record largely positive.' },
-    { criterionId: 'app-tracking', score: 9.0, note: 'Best sleep/HRV tracking integrated into a climate system. Sleep-stage detection, HRV trends, snore detection. Apple Health integration.' },
+    { criterionId: 'app-tracking', score: 9.0, note: 'Best sleep/HRV tracking integrated into a climate system. Sleep-stage estimates, HRV trends, snore detection. Apple Health integration.' },
     { criterionId: 'form-factor', score: 7.5, note: 'Cover + mattress system. Dual-zone (his/her temperature) is unique in the category. Hub requires nightstand space.' },
     { criterionId: 'subscription', score: 5.0, note: 'Autopilot subscription required for full features (~$15-25/month). The biggest editorial criticism — premium hardware locked behind ongoing membership.' },
     { criterionId: 'value', score: 5.5, note: '$3,000-5,000 hardware + ongoing subscription. Premium tier; the subscription stretches 3-year cost.' },
@@ -23,7 +23,7 @@ const eightSleepPod4: ToolReviewInput = {
   pros: [
     'Best-in-class climate range with dual-zone (his/her) control',
     'Built-in HRV and sleep-stage tracking — no separate wearable needed',
-    'Autopilot adjusts temperature by sleep stage automatically',
+    'Autopilot adjusts temperature by estimated sleep stage automatically',
     'Multi-year reliability track record largely positive',
   ],
   cons: [
@@ -43,7 +43,7 @@ const eightSleepPod4: ToolReviewInput = {
 
 > Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 (from $1,999 Solo; $2,899 queen, $2,999 king), and Eight Sleep's own store now lists only the Pod 6 — the Pod 4 survives mainly as remaining or third-party stock. At its ~$4,000 queen price the Pod 4 is no longer the cheaper way into Eight Sleep; only buy it at a discount clearly below the Pod 6. On the Pod 5: the Pod 5 Ultra adds an adjustable base, top-down cooling and audio, but roughly doubles the price, and the core temp/HRV tech and the new Autopilot 4.0 software also reach the Pod 4. See [Pod 4 vs Pod 5](/reviews/vs/eight-sleep-pod-4-vs-eight-sleep-pod-5).
 
-Eight Sleep Pod 4 is the smart sleep-climate system that defined the consumer category. Dual-zone water cooling/heating (13–43°C), built-in HRV and sleep tracking that obviates the need for a separate wearable, and Autopilot programmable climate that adjusts by detected sleep stage overnight. Hardware build and multi-year reliability are both solid.
+Eight Sleep Pod 4 is the smart sleep-climate system that defined the consumer category. Dual-zone water cooling/heating (13–43°C), built-in HRV and sleep tracking that obviates the need for a separate wearable, and Autopilot programmable climate that adjusts by estimated sleep stage overnight. Hardware build and multi-year reliability are both solid.
 
 ## What are the downsides of Eight Sleep Pod 4?
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: edb839c74e4d
+sourceHash: b5d3f3942574
 title: "Perché l'HRV cambia da un giorno all'altro"
 metaTitle: "Perché l'HRV cambia ogni giorno: cause e prove"
 metaDescription: "Perché la variabilità della frequenza cardiaca cambia ogni giorno: rumore normale, sonno, alcol, allenamento, malattia, stress e ciclo. Meccanismi e prove."

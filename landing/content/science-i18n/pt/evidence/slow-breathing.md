@@ -1,5 +1,5 @@
 ---
-sourceHash: "2dc08d4f1532"
+sourceHash: "57d18386abf8"
 title: "Respiração lenta: o que mostram as evidências"
 metaTitle: "Respiração lenta: o que mostram as evidências"
 metaDescription: "O que a pesquisa mostra sobre a respiração lenta sem retorno — HRV, pressão arterial, estresse, sono, dor — e o que se sabe sobre técnicas populares."
@@ -105,7 +105,7 @@ A comparação é a parte difícil. As pessoas sempre sabem se estão respirando
 
 ## O que mostram as evidências?
 
-**Variabilidade da frequência cardíaca: estabelecido.** Uma metanálise de {{fact:study.laborde2022.studies}} constatou que a HRV mediada pelo nervo vago sobe durante a respiração lenta, imediatamente após uma única sessão e depois de programas de várias sessões [S2]. Uma revisão sistemática em pessoas saudáveis chegou a um resultado na mesma direção [S3]. Trata-se de mudanças em um sinal fisiológico; por si sós, não são desfechos de saúde.
+**Variabilidade da frequência cardíaca: estabelecido.** Uma metanálise de {{fact:study.laborde2022.studies}} constatou que a HRV mediada pelo nervo vago sobe durante a respiração lenta, imediatamente após uma única sessão e depois de programas de várias sessões [S2]. Uma revisão sistemática anterior em pessoas saudáveis, que abrange em parte os mesmos estudos, apontou na mesma direção [S3]. Trata-se de mudanças em um sinal fisiológico; por si sós, não são desfechos de saúde.
 
 **Pressão arterial: depende do contexto.** Uma metanálise de {{fact:study.chaddha2019.studies}} em pessoas com hipertensão ou pré-hipertensão encontrou reduções modestas da pressão arterial sistólica e diastólica, com alta heterogeneidade [S4]. Os autores sugerem que ela pode ser uma primeira opção razoável para pessoas de baixo risco relutantes em começar a tomar medicamentos [S4] — uma sugestão, não uma diretriz. A respiração guiada por dispositivo pede mais cautela: uma metanálise reuniu {{fact:study.mahtani2012.trials}}; o efeito desapareceu quando os ensaios ligados ao fabricante foram excluídos, e os autores pediram ensaios mais longos e independentes [S5]. O aspecto prático está em [respiração lenta e pressão alta](/articles/high-blood-pressure-slow-breathing).
 

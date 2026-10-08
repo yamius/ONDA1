@@ -27,7 +27,7 @@ const morozkoVsPlunge: HeadToHeadInput = {
   faq: [
     {
       q: 'Do I need a Morozko Forge for cold plunge benefits?',
-      a: 'No. The published cold-exposure research uses water at 10–15°C (50–59°F) — well above Morozko’s 33°F floor. For typical hormetic-stress benefits, The Plunge at 39°F is already colder than the research requires.',
+      a: 'No. Trials have used a wide range of water temperatures, there is no established temperature threshold for benefits, and the benefits themselves are still emerging. Nothing in the research requires Morozko’s 33°F floor; The Plunge at 39°F already covers the temperatures studied.',
     },
     {
       q: 'What is Morozko Forge for then?',
@@ -52,7 +52,7 @@ If extreme cold-exposure depth (sub-40°F, ice formation, Wim Hof Method) is the
 
 ## When is The Plunge the right pick?
 
-If typical daily-use cold-plunge practice is the goal — and 39°F floor is colder than the published research even requires — Plunge is the right shape. The $4,000+ savings versus Morozko buys a lot of other biohacker hardware.`,
+If typical daily-use cold-plunge practice is the goal — and trials have used a wide range of temperatures, with no established threshold for benefits — Plunge is the right shape. The $4,000+ savings versus Morozko buys a lot of other biohacker hardware.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',

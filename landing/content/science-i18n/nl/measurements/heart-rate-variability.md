@@ -1,5 +1,5 @@
 ---
-sourceHash: "0bbffcc298fa"
+sourceHash: "2cecd6f1dabf"
 title: "Kun je HRV van een smartwatch of ring vertrouwen?"
 metaTitle: "HRV van wearables: horloge of ring te vertrouwen?"
 metaDescription: "HRV van een smartwatch of ring is een schatting uit het polssignaal, geen ecg-meting. Waar ze overeenkomen, waar ze uiteenlopen en hoe je je getallen leest."
@@ -61,6 +61,18 @@ evidenceMap:
     limitation: "Methodologische voorzichtigheid uit de standaarden en richtlijnen; HRV weerspiegelt vagaal gemedieerde veranderingen in de hartslag, niet de activiteit van de zenuw zelf."
   - claim: "Eén lage of hoge waarde bewijst op zichzelf geen stress, ziekte of gezondheidstoestand."
     limitation: "Gaat over interpretatie, niet over meetnauwkeurigheid; aanhoudende veranderingen met zorgwekkende klachten horen bij een arts."
+  - claim: "Een borstband die de elektrische activiteit van het hart registreert, gaf bij gezonde jongvolwassenen HRV-waarden in het tijdsdomein die in de praktijk uitwisselbaar waren met een laboratorium-ecg (één validatiestudie)."
+    limitation: "Eén borstbandmodel, gezonde jongvolwassenen, een kort protocol liggend, met begeleide ademhaling en staand; het zegt niets over optische sensoren aan de pols of in een ring."
+  - claim: "In één studie naar nachtelijke waarden verschilde de overeenkomst met een ecg-referentie tussen consumentenwearables: Oura-ringen kwamen nauw overeen, WHOOP aanvaardbaar, Garmin Fenix en Polar minder nauw."
+    limitation: "Eén kleine studie bij gezonde volwassenen, alleen tijdens de slaap, met specifieke apparaatgeneraties; elke fabrikant berekent de nachtelijke HRV over eigen vensters met niet-gestandaardiseerde methoden; geen ranglijst van merken. Gefinancierd door het Air Force Research Laboratory van de Amerikaanse luchtmacht; de auteurs verklaren geen belangenconflicten."
+  - claim: "Zonder gepubliceerde details over de algoritmen kunnen gebruikers en onafhankelijke onderzoekers niet nagaan hoe de nachtelijke HRV van een wearable wordt berekend of gewogen."
+    limitation: "Het antwoord van de auteurs van de studie in een briefwisseling (het team van WHOOP had commentaar op de studie gegeven); een pleidooi voor transparantie, geen nieuwe meetgegevens."
+  - claim: "Over validatiestudies heen onderschatte de Apple Watch de hartslag gemiddeld licht, met een matige spreiding van afzonderlijke metingen, en de nauwkeurigheid verschilde per maat, omstandigheden en individuele fysiologie."
+    limitation: "Een gepoold resultaat voor de hartslag; de samenvatting meldt geen gepoold HRV-resultaat, en de resultaten zijn niet uitgesplitst naar horlogegeneratie."
+  - claim: "In één validatiestudie van herhaalde metingen bij gezonde volwassenen hadden twee recente Apple Watch-modellen de neiging de HRV te onderschatten ten opzichte van een borstband als referentie, en haalden ze de vooraf vastgestelde equivalentiemarge van de auteurs niet."
+    limitation: "Eén studie, gezonde volwassenen, twee horlogemodellen, een borstband met analysesoftware als referentie; ze beschrijft Recovery HRV of nieuwere horlogemodellen niet."
+  - claim: "In één observationele studie kwam hoe mensen zich voelden niet consequent overeen met de nachtelijke HRV van een activiteitstracker."
+    limitation: "Kleine observationele studie met één commerciële tracker; alle auteurs zijn in dienst van PepsiCo R&D (Gatorade Sports Science Institute), dat de studie financierde; onafhankelijke herhaling is nodig."
 ---
 
 ## Wat is HRV van een wearable?
@@ -81,6 +93,8 @@ De referentieketen is elektrisch. Een ecg registreert de elektrische activiteit 
 
 Kort gezegd: ecg → elektrische toppen → intervallen van slag tot slag → HRV. En: PPG → polstoppen aan de huid → intervallen van pols tot pols → PRV.
 
+![Een elektrisch ecg-signaal met scherpe pieken boven een zachtere optische polsgolf, naast de omtrek van een polsband.](/images/science/measurements-hrv-ppg-vs-ecg.jpg)
+
 Elke hartslag levert uiteindelijk een polsgolf op, dus de twee ketens hangen nauw samen. Maar de pols moet naar de meetplek reizen, en wat er onderweg gebeurt — polsgolflooptijd, vaattonus, perifere circulatie — kan samen met bewegingsartefacten, sensorcontact, optische eigenschappen van de huid en de signaalverwerking van het apparaat een waarde op basis van de pols doen afwijken van haar elektrische tegenhanger [S3]. Een sensor aan de pols of in een ring is dus geen kleinere ecg-elektrode. Hij neemt een verwant signaal waar en schat daaruit, en de kwaliteit van die schatting hangt af van de omstandigheden.
 
 Daarom is ook de vraag „is deze sensor nauwkeurig?” onvolledig. De versie die op bewijs steunt, vraagt: nauwkeurig voor welke maat, bij welke persoon, onder welke omstandigheden, met welke verwerking? De volgende delen nemen die stukken een voor een door.
@@ -94,6 +108,8 @@ Elke HRV-waarde van een wearable is het eindproduct van een reeks keuzes, en twe
 - **Wanneer en hoe is er gemeten?** Een korte steekproef, een gecontroleerde rustmeting en een nachtelijk venster zijn verschillende meetregimes — en de meetduur verandert zelfs wat een waarde betekent, omdat langere vensters tragere ritmes opnemen en hogere waarden van het type SDNN geven [S2].
 - **Hoe goed was het signaal?** Beweging, een losse pasvorm en een zwakke doorbloeding van de huid tasten een optische schatting als eerste aan, en studies op validatieniveau filteren zulke metingen eruit voordat ze iets berekenen [S4].
 - **Kijk je naar een trend of reageer je op één getal?** Eén waarde is een observatie; een reeks waarden die op dezelfde manier is verzameld, is een signaal [S5].
+
+Een borstband die de elektrische activiteit van het hart registreert, zit dichter bij de referentie dan een optische sensor. In één validatiestudie bij gezonde jongvolwassenen (Blalock et al., 2026) registreerden een Polar-borstband en een laboratorium-ecg tegelijk de intervallen van slag tot slag, en de HRV-waarden van de band in het tijdsdomein waren in de praktijk uitwisselbaar met die van het ecg [S11]. Daarom dienen zulke banden in onderzoek naar wearables vaak als praktische referentie. De bevinding geldt alleen voor gezonde jongvolwassenen in een kort protocol van rust, begeleide ademhaling en staan; ze is niet over te zetten naar optische sensoren aan de pols of in een ring.
 
 Het ecosysteem van Apple is een levend voorbeeld van de vraag naar de maat. {{fact:applewatch.hrv.healthkit}} [S6] — dus de HRV-waarden in Apple Health zijn altijd van het type SDNN geweest, automatisch vastgelegd door de Apple Watch. Op recente modellen geldt: {{fact:applewatch.hrv.variants2026}} [S7]; Apple heeft niet bekendgemaakt hoe Recovery HRV wordt berekend. Daarnaast geldt: {{fact:applewatch.hrv.rmssdType}} [S8] — een platformwijziging waardoor apps een waarde van het type RMSSD in Apple Health kunnen opslaan, wat telt zodra je een getal van de Apple Watch vergelijkt met een ring die RMSSD toont.
 
@@ -126,6 +142,10 @@ De praktische regel volgt uit de tabel: hetzelfde apparaat, dezelfde maat, verge
 
 Een gecontroleerde validatiestudie (Zuern et al., 2026) mat {{fact:study.zuern2026.participants}} met sinusritme, met een klinisch ecg en een PPG-sensor aan de pols die tegelijk liepen [S4]. Onder gecontroleerde rustomstandigheden benaderde PPG aan de pols de indices uit het ecg zo goed dat de auteurs bepaalde parameters steunen voor kortdurende beoordeling — terwijl ze om verdere validatie in het dagelijks leven vragen [S4]. De overeenstemming hing af van de maat, met een zwakkere overeenstemming voor maten van kortetermijnvariabiliteit en entropie dan voor standaardmaten op basis van intervallen [S4], en metingen met een slechte signaalkwaliteit — lage doorbloeding, bewegingsartefacten — werden vóór de analyse uitgesloten [S4]. Precies op die filtering kun je in het dagelijks gebruik niet rekenen.
 
+Nachtelijke waarden voegen een tweede laag toe: apparaten berekenen ze verschillend. In één studie naar nachtelijke waarden (Dial et al., 2025) droegen {{fact:study.dial2025.participants}} tijdens de slaap tegelijk een ecg-referentie en verschillende consumentenwearables, over {{fact:study.dial2025.nights}} in totaal [S9]. In deze studie verschilde de overeenkomst met de referentie tussen de apparaten: de Oura-ringen kwamen er nauw mee overeen, WHOOP aanvaardbaar, en de horloges van Garmin (Fenix) en Polar minder nauw [S9]. Het resultaat beschrijft deze apparaatversies in deze kleine groep gezonde volwassenen tijdens de slaap — het is geen ranglijst van merken. Elke fabrikant berekent zijn nachtelijke HRV over eigen vensters met methoden die niet gestandaardiseerd zijn, en de auteurs van de studie merken op dat zonder transparantie van de fabrikanten gebruikers noch onafhankelijke onderzoekers kunnen nagaan hoe zulke maten worden berekend of gewogen [S10].
+
+Voor de Apple Watch vond een doorlopend bijgewerkte systematische review met meta-analyse (Lambe et al., 2026) ten opzichte van referentiemethoden een lichte gemiddelde onderschatting van de hartslag, met een matige spreiding van afzonderlijke metingen en een nauwkeurigheid die verschilde per maat, omstandigheden en individuele fysiologie [S12]; de samenvatting meldt geen gepoold HRV-resultaat. Eén validatiestudie van dezelfde groep (O'Grady et al., 2024) vergeleek herhaalde HRV-metingen van twee recente Apple Watch-modellen bij gezonde volwassenen met een borstband als referentie: het horloge had de neiging de HRV te onderschatten en haalde de vooraf vastgestelde equivalentiemarge van de auteurs niet [S13]. Die studie dateert van vóór Apples varianten Recovery HRV en Overall HRV en zegt niets over hoe die presteren.
+
 De feiten over het ecosysteem van Apple horen hier als apparaatfeiten: Apple Health slaat HRV op als SDNN [S6], recente horlogemodellen tonen twee HRV-varianten [S7], en het platform accepteert nu ook een waarde van het type RMSSD [S8] — afgebakende uitspraken over wat wordt vastgelegd, niet over gezondheid.
 
 **Methodologische richtlijnen.** Actuele richtlijnen stellen dat het ingangssignaal, de meetduur, de setting, de ademhaling en de analysemethode allemaal de zorgvuldigheid en betrouwbaarheid beïnvloeden [S5], en dat bevindingen over HRV van wearables — ook in onderzoek — binnen deze beperkingen moeten worden geïnterpreteerd en in context geplaatst [S5]. In het dagelijks leven betekent dat: vergelijk gelijk met gelijk.
@@ -137,6 +157,7 @@ De feiten over het ecosysteem van Apple horen hier als apparaatfeiten: Apple Hea
 - **Het is geen ecg-meting.** Een waarde op basis van PPG is een schatting uit een verwant signaal, en gepoolde overeenstemming geldt niet voor elke setting en betekent geen uitwisselbaarheid [S3].
 - **Het is niet één universeel getal.** RMSSD, SDNN en eigen scores beschrijven verschillende dingen; een waarde zonder maat en venster is onvolledige informatie [S2, S3].
 - **Het is geen diagnose en geen stressoordeel.** {{fact:claim.hrvNotStress}} [S1, S5] — en dezelfde voorzichtigheid geldt voor ongewoon hoge waarden.
+- **Het is geen aflezing van hoe je je voelt.** In één observationele studie kwam hoe mensen zich voelden niet consequent overeen met de nachtelijke HRV van hun tracker; alle auteurs werken voor PepsiCo R&D (Gatorade Sports Science Institute), dat de studie financierde [S14].
 - **Het is geen vagale tonus.** De formulering doet ertoe. {{fact:claim.vagalTone}} [S1, S5].
 - **Het is geen ranglijst van apparaten.** Overeenstemming hangt af van maat, omstandigheden, signaalkwaliteit en verwerking [S3, S4]; welk apparaat bij je past, is een vraag voor productreviews, en deze pagina noemt bewust geen „nauwkeurigste” tracker.
 - **Eén waarde zegt weinig.** Methodologische richtlijnen vragen om interpretatie in context [S5]; je eigen recente metingen onder vergelijkbare omstandigheden vormen de zinvollere vergelijking.

@@ -68,7 +68,7 @@ At this point, the anterior cingulate cortex activates.
 **Attention Management:** If the cost of maintaining control exceeds the threshold, the ACC signals the need to take a break, run a ventilation protocol, or perform myofascial release.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: focus-block timer / subjective error log / HRV monitor
+> EXAMPLE_DEVICE: focus-block timer / subjective error log / HRV monitor
 > METRIC: error rate, task-switch latency, conflict frustration index
 > STATUS: ARBITER_STABLE
 

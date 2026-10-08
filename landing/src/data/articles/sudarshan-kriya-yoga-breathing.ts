@@ -49,7 +49,7 @@ The research on SKY is unusually ambitious for a breathing technique:
 
 **PTSD.** A trial among survivors of the 2004 Indian Ocean tsunami reported reductions in PTSD and depression. A small randomized study of US veterans of Iraq and Afghanistan found reduced PTSD symptoms and a lower respiration rate, with effects still present at one-year follow-up.
 
-**Stress hormones.** Several studies report lower cortisol after SKY training, alongside reduced self-reported stress — consistent with the practice's calming slow-breathing core.
+**Stress hormones.** Several small studies report lower cortisol after SKY training (evidence is limited), alongside reduced self-reported stress — consistent with the practice's calming slow-breathing core.
 
 ## The honest caveats
 

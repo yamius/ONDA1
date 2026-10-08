@@ -62,7 +62,7 @@ The full step-by-step is in the box on this page; in short — reframe it as sti
 Rather than wing it, the [Dopamine Reset Planner](/tools/dopamine-detox) builds the plan for you — choose a window (morning, 24-hour, weekend, 7-day) and the loops to cut, and it returns the tactics plus the stimulus-control rules that make it stick. For the deeper "why," see [Dopamine Architecture](/articles/dopamine-architecture-mastering-desire).
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Screen-time analytics + subjective focus
+> EXAMPLE_DEVICE: Screen-time analytics + subjective focus
 > METRIC: Longer focus spans and less reflexive reaching for the phone
 > STATUS: REWARD_BASELINE_RECALIBRATING
 

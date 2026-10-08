@@ -61,7 +61,7 @@ The [Water Intake Calculator](/tools/water) turns your weight and day into a tar
 **The Logic:** Urine colour is a free, real-time hydration gauge that beats any fixed daily quota, because it reflects your actual balance right now — losses, intake and all.
 
 > [ HARDWARE_VALIDATION ]
-> VALIDATION_DEVICE: Urine colour + thirst
+> EXAMPLE_DEVICE: Urine colour + thirst
 > METRIC: Consistently pale-straw urine, steady energy
 > STATUS: HYDRATION_BALANCED
 
