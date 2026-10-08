@@ -11,9 +11,9 @@ const series12VsWhoop50: HeadToHead = {
     'These answer the same question two ways. The September 2026 Series 12 finally samples HRV often enough, with a dedicated Recovery HRV, to be a real recovery signal — inside a no-subscription smartwatch. Whoop 5.0 is a subscription-only band built from the ground up around continuous overnight HRV and the sharpest recovery-and-strain coaching in the category. One is a do-everything watch; the other is a dedicated coach.',
   winnerSlug: null,
   verdict:
-    'No overall winner — pick by whether you want coaching or a do-everything device. Whoop 5.0 leads for continuous overnight HRV, recovery-and-strain coaching and multi-day battery; the Series 12 wins for being a no-subscription smartwatch with ECG whose HRV is now good enough to act on.',
+    'No overall winner — pick by whether you want coaching or a do-everything device. Whoop 5.0 leads for continuous overnight HRV, recovery-and-strain coaching and multi-day battery; the Series 12 wins for being a no-subscription smartwatch with ECG whose HRV is now usable as a personal trend.',
   bestForA:
-    'Choose the Series 12 if you want one no-subscription smartwatch — ECG, hypertension notifications, apps — with HRV that is finally good enough to act on.',
+    'Choose the Series 12 if you want one no-subscription smartwatch — ECG, hypertension notifications, apps — with HRV that is now usable as a personal trend.',
   bestForB:
     'Choose Whoop 5.0 if recovery-and-strain coaching drives how you train and you want continuous overnight HRV from a screenless band — accepting the ongoing membership.',
   axes: [
@@ -36,12 +36,12 @@ const series12VsWhoop50: HeadToHead = {
     },
     {
       q: 'Whoop or Apple Watch for HRV — which should I buy?',
-      a: 'For recovery coaching you act on daily and continuous overnight HRV, Whoop 5.0. For one device that also does ECG, apps and payments with no subscription and HRV that is now good enough to act on, the Series 12. An athlete training on the signal leans Whoop; most people lean Apple Watch.',
+      a: 'For recovery coaching you act on daily and continuous overnight HRV, Whoop 5.0. For one device that also does ECG, apps and payments with no subscription and HRV that is now usable as a personal trend, the Series 12. An athlete training on the signal leans Whoop; most people lean Apple Watch.',
     },
   ],
   content: `## The short version
 
-Pick by the job. Whoop 5.0 is the dedicated recovery coach — continuous overnight HRV, the sharpest Recovery-and-Strain model, a 14+-day screenless band — behind a subscription. The Series 12 is a no-subscription smartwatch whose HRV, after the September 2026 Health Sensing System update, is finally good enough to act on, with ECG and hypertension notifications on top.
+Pick by the job. Whoop 5.0 is the dedicated recovery coach — continuous overnight HRV, the sharpest Recovery-and-Strain model, a 14+-day screenless band — behind a subscription. The Series 12 is a no-subscription smartwatch whose HRV, after the September 2026 Health Sensing System update, is now usable as a personal trend, with ECG and hypertension notifications on top.
 
 ## Why the Series 12 closed the gap
 

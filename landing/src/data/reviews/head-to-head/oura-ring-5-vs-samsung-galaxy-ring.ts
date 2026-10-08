@@ -8,12 +8,12 @@ const oura5VsGalaxy: HeadToHead = {
   description:
     'Oura Ring 5 vs Samsung Galaxy Ring — the accuracy-and-app leader with a membership vs the subscription-free Android ring. Cross-platform accuracy vs own-it-outright value.',
   intro:
-    'These two answer the same question — a comfortable ring for overnight HRV and sleep — with opposite trade-offs. The Oura Ring 5 is the 2026 flagship: 40% slimmer, upgraded sensors, still the most accurate overnight HRV and sleep, but full data needs a monthly membership. The Samsung Galaxy Ring is the subscription-free alternative — every feature unlocked at purchase — but it is tied to Samsung Health and Android, and its accuracy trails Oura. The decision usually comes down to your phone and whether you accept an ongoing fee.',
+    'These two answer the same question — a comfortable ring for overnight HRV and sleep — with opposite trade-offs. The Oura Ring 5 is the 2026 flagship: 40% slimmer, upgraded sensors, overnight HRV and sleep from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated), but full data needs a monthly membership. The Samsung Galaxy Ring is the subscription-free alternative — every feature unlocked at purchase — but it is tied to Samsung Health and Android, and its accuracy trails Oura. The decision usually comes down to your phone and whether you accept an ongoing fee.',
   winnerSlug: null,
   verdict:
     'Accuracy-and-app vs own-it-outright, cross-platform vs Samsung-locked. The Oura Ring 5 wins on accuracy, sensors and app depth and works on iPhone and Android, for $399 plus ~$6/month. The Samsung Galaxy Ring wins on cost model — $399 with no subscription, every feature unlocked — but only really fits Samsung/Android owners. Pick by your phone and whether the membership is acceptable.',
   bestForA:
-    'Choose the Oura Ring 5 if you want the most accurate sleep and HRV and the most polished app, you may be on iPhone or Android, and the membership is acceptable.',
+    'Choose the Oura Ring 5 if you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) and the most polished app, you may be on iPhone or Android, and the membership is acceptable.',
   bestForB:
     'Choose the Samsung Galaxy Ring if you are on a Samsung phone inside Samsung Health and want Oura-style tracking with no subscription — every feature unlocked for good at purchase.',
   axes: [
@@ -31,7 +31,7 @@ const oura5VsGalaxy: HeadToHead = {
     },
     {
       q: 'Is the Samsung Galaxy Ring accurate enough to replace Oura?',
-      a: 'For most people its overnight HRV and sleep tracking are competent and good enough day to day, but Oura’s accuracy is better-validated (manufacturer-funded studies) and the Ring 5 widens that gap. If precision is your priority, Oura has the edge — at the cost of a subscription.',
+      a: 'For most people its overnight HRV and sleep tracking are competent and good enough day to day, but Oura’s accuracy is better-validated (manufacturer-funded studies; the Ring 5 itself has not been separately validated). If precision is your priority, Oura has the edge — at the cost of a subscription.',
     },
     {
       q: 'Does the Samsung Galaxy Ring work with an iPhone?',

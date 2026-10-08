@@ -51,7 +51,7 @@ Accuracy and polish. RingConn’s [HRV](/glossary/heart-rate-variability) and sl
 
 ## Who should buy RingConn Gen 3?
 
-Choose the RingConn Gen 3 if you want the strongest subscription-free ring — long battery, silent haptic alerts, a broad sensor suite — and you don’t want to pay Oura’s ongoing membership. If you want the most accurate data and the best app, [Oura Ring 5](/reviews/oura-ring-5) still leads, at a subscription; for the previous, cheaper RingConn, see the [Gen 2](/reviews/ringconn-gen-2).
+Choose the RingConn Gen 3 if you want the strongest subscription-free ring — long battery, silent haptic alerts, a broad sensor suite — and you don’t want to pay Oura’s ongoing membership. If you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) and the best app, [Oura Ring 5](/reviews/oura-ring-5) still leads, at a subscription; for the previous, cheaper RingConn, see the [Gen 2](/reviews/ringconn-gen-2).
 
 ---
 

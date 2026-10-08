@@ -72,7 +72,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   relatedSlugs: ['oura-ring-4', 'apple-watch-series-11'],
   faq: [
     { q: "Does Whoop 5.0 require a subscription?", a: "Yes. Whoop is subscription-only: $199 per year for WHOOP One, $239 for Peak or $359 for Life, each including the band — there is no separate hardware purchase. Stop paying and the band stops working." },
-    { q: "Is Whoop 5.0 accurate for HRV?", a: "Whoop builds its nightly HRV value from measurements taken during sleep. It is good enough to follow trends, but as a wrist band it is behind a finger ring or ECG chest strap for precision." },
+    { q: "Is Whoop 5.0 accurate for HRV?", a: "Whoop builds its nightly HRV value from measurements taken during sleep. It is good enough to follow trends, but as a wrist band it is behind a finger ring or ECG chest strap for precision. The 5.0 itself has not been separately tested." },
     { q: "Who is Whoop 5.0 best for?", a: "Athletes and serious trainers who act on a daily recovery-and-strain score. The ~14-day battery and screenless band suit 24/7 wear; it is overkill for casual users who dislike subscriptions." },
   ],
 

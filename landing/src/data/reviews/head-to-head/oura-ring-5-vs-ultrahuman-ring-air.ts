@@ -13,7 +13,7 @@ const ouraRing5VsUltrahuman: HeadToHead = {
   verdict:
     'Accuracy with a subscription vs no subscription with a reliability question. The Oura Ring 5 is the more accurate, better-supported ring — if you accept the ~$6/month membership. The Ultrahuman Ring Air is subscription-free and lighter — if you accept its battery-reliability risk.',
   bestForA:
-    'Choose the Oura Ring 5 if you want the most accurate sleep and HRV, upgraded sensors and the best app experience, and the mandatory membership is acceptable.',
+    'Choose the Oura Ring 5 if you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated), upgraded sensors and the best app experience, and the mandatory membership is acceptable.',
   bestForB:
     'Choose the Ultrahuman Ring Air if avoiding a subscription is the priority, you want the lightest ring and cross-platform support, and you will accept the battery-reliability risk.',
   axes: [

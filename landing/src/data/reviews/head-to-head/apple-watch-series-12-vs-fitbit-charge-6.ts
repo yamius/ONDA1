@@ -13,7 +13,7 @@ const series12VsCharge6: HeadToHead = {
   verdict:
     'No overall winner — two different tiers. For the deeper HRV system, ECG, hypertension notifications and a full smartwatch, the Series 12 leads. For the cheapest credible way to track HRV and sleep trends, with a battery that suits every-night wear, the Charge 6 leads.',
   bestForA:
-    'Choose the Series 12 if you want a do-everything smartwatch whose HRV is now good enough to act on — Recovery HRV against your baseline, ECG and hypertension notifications — with no subscription.',
+    'Choose the Series 12 if you want a do-everything smartwatch whose HRV is now usable as a personal trend — Recovery HRV against your baseline, ECG and hypertension notifications — with no subscription.',
   bestForB:
     'Choose the Fitbit Charge 6 if you want an affordable, light band that tracks overnight HRV and sleep trends well enough, and you are not trying to train on the data.',
   axes: [

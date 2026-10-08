@@ -1267,7 +1267,7 @@
       "productType": "Darmowa aplikacja do oddychania przeponowego na stres i PTSD, stworzona przez DoD"
     },
     "polar-h10": {
-      "verdict": "Najdokładniejsze urządzenie HRV, jakie można kupić — instrument referencyjny, a nie urządzenie do noszenia przez cały dzień.",
+      "verdict": "Najdokładniejsze urządzenie HRV, jakie można kupić (u młodych zdrowych dorosłych w spoczynku) — instrument referencyjny, a nie urządzenie do noszenia przez cały dzień.",
       "productType": "Pas piersiowy EKG"
     },
     "calm": {
@@ -2296,8 +2296,8 @@
       "title": "Apple Watch Series 12 czy Whoop 5.0 — porównanie (2026)",
       "description": "Apple Watch Series 12 czy Whoop 5.0 do HRV: zegarek za $399 bez abonamentu albo opaska Whoop z abonamentem $199–$359 rocznie i baterią 14+ dni.",
       "intro": "Te urządzenia odpowiadają na to samo pytanie na dwa sposoby. Series 12 (wrzesień 2026) wreszcie mierzy HRV wystarczająco często i z osobną wartością Recovery HRV do oceny stresu i regeneracji, by być prawdziwym sygnałem regeneracji — w smartwatchu bez abonamentu. Whoop 5.0 to opaska wyłącznie w abonamencie, od podstaw zbudowana wokół ciągłego nocnego HRV i najprecyzyjniejszego coachingu regeneracji i obciążenia w kategorii. Jedno to zegarek do wszystkiego, drugie — wyspecjalizowany trener.",
-      "verdict": "Brak zwycięzcy ogólnego — wybierz w zależności od tego, czy chcesz coachingu, czy urządzenia do wszystkiego. Whoop 5.0 prowadzi w ciągłym nocnym HRV, coachingu regeneracji i obciążenia oraz kilkudniowej baterii; Series 12 wygrywa jako smartwatch bez abonamentu z EKG, którego HRV jest teraz na tyle dobre, by na nim działać.",
-      "bestForA": "Wybierz Series 12, jeśli chcesz jednego smartwatcha bez abonamentu — EKG, powiadomienia o nadciśnieniu, aplikacje — z HRV, na którym wreszcie można polegać.",
+      "verdict": "Brak zwycięzcy ogólnego — wybierz w zależności od tego, czy chcesz coachingu, czy urządzenia do wszystkiego. Whoop 5.0 prowadzi w ciągłym nocnym HRV, coachingu regeneracji i obciążenia oraz kilkudniowej baterii; Series 12 wygrywa jako smartwatch bez abonamentu z EKG, którego HRV nadaje się już do śledzenia osobistego trendu.",
+      "bestForA": "Wybierz Series 12, jeśli chcesz jednego smartwatcha bez abonamentu — EKG, powiadomienia o nadciśnieniu, aplikacje — z HRV, które nadaje się już do śledzenia osobistego trendu.",
       "bestForB": "Wybierz Whoop 5.0, jeśli coaching regeneracji i obciążenia wyznacza twój trening i chcesz ciągłego nocnego HRV z opaski bez ekranu — akceptując stały abonament.",
       "axes": [
         {
@@ -2340,17 +2340,17 @@
         },
         {
           "q": "Whoop czy Apple Watch do HRV — co kupić?",
-          "a": "Do codziennego coachingu regeneracji i ciągłego nocnego HRV — Whoop 5.0. Do jednego urządzenia, które bez abonamentu obsługuje też EKG, aplikacje i płatności, a jego HRV jest teraz wystarczająco dobre — Series 12. Sportowiec trenujący według tego sygnału skłoni się ku Whoop; większość osób — ku Apple Watch."
+          "a": "Do codziennego coachingu regeneracji i ciągłego nocnego HRV — Whoop 5.0. Do jednego urządzenia, które bez abonamentu obsługuje też EKG, aplikacje i płatności, a jego HRV nadaje się już do śledzenia osobistego trendu — Series 12. Sportowiec trenujący według tego sygnału skłoni się ku Whoop; większość osób — ku Apple Watch."
         }
       ],
-      "content": "## W skrócie\n\nWybierz według zadania. Whoop 5.0 to wyspecjalizowany trener regeneracji — ciągłe nocne HRV, najprecyzyjniejszy model Recovery i Strain, opaska bez ekranu na 14+ dni — ale w abonamencie. Series 12 to smartwatch bez abonamentu, którego HRV po aktualizacji Health Sensing System we wrześniu 2026 jest wreszcie na tyle dobre, by na nim działać, a do tego EKG i powiadomienia o nadciśnieniu.\n\n## Dlaczego Series 12 zmniejszył dystans\n\nApple podaje teraz Recovery HRV mierzone znacznie częściej, a watchOS 27 dodaje do Apple Health typ danych RMSSD — metrykę, której używa model regeneracji Whoop. Apple nie ujawnia, jakiej statystyki używa Recovery HRV. Zobacz [Recovery HRV a Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) oraz [dlaczego HRV różni się na każdym urządzeniu](/articles/hrv-different-every-device).\n\n## Uczciwe zastrzeżenie\n\nWhoop jest stworzony do noszenia 24/7 i codziennego coachingu; Apple Watch to uniwersalny smartwatch, którego możesz nie nosić każdej nocy, a jego bateria na ~1 dzień konkuruje z pomiarem nocnym. Jeśli chodzi ci przede wszystkim o ciągłe nocne HRV, zobacz [najlepsze trackery HRV 2026](/reviews/compare/best-hrv-trackers-2026) — pierścień lub opaska może sprawdzić się lepiej niż zegarek."
+      "content": "## W skrócie\n\nWybierz według zadania. Whoop 5.0 to wyspecjalizowany trener regeneracji — ciągłe nocne HRV, najprecyzyjniejszy model Recovery i Strain, opaska bez ekranu na 14+ dni — ale w abonamencie. Series 12 to smartwatch bez abonamentu, którego HRV po aktualizacji Health Sensing System we wrześniu 2026 nadaje się już do śledzenia osobistego trendu, a do tego EKG i powiadomienia o nadciśnieniu.\n\n## Dlaczego Series 12 zmniejszył dystans\n\nApple podaje teraz Recovery HRV mierzone znacznie częściej, a watchOS 27 dodaje do Apple Health typ danych RMSSD — metrykę, której używa model regeneracji Whoop. Apple nie ujawnia, jakiej statystyki używa Recovery HRV. Zobacz [Recovery HRV a Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) oraz [dlaczego HRV różni się na każdym urządzeniu](/articles/hrv-different-every-device).\n\n## Uczciwe zastrzeżenie\n\nWhoop jest stworzony do noszenia 24/7 i codziennego coachingu; Apple Watch to uniwersalny smartwatch, którego możesz nie nosić każdej nocy, a jego bateria na ~1 dzień konkuruje z pomiarem nocnym. Jeśli chodzi ci przede wszystkim o ciągłe nocne HRV, zobacz [najlepsze trackery HRV 2026](/reviews/compare/best-hrv-trackers-2026) — pierścień lub opaska może sprawdzić się lepiej niż zegarek."
     },
     "apple-watch-series-12-vs-oura-ring-4": {
       "title": "Apple Watch Series 12 czy Oura Ring 4: porównanie (2026)",
       "description": "Apple Watch Series 12 vs Oura Ring 4 do HRV — skoro Apple podaje Recovery HRV, a Apple Health oferuje RMSSD, porównanie jest wreszcie uczciwe. Zegarek czy pierścień, kryterium po kryterium.",
       "intro": "Przez lata była to nierówna walka: Apple Watch podawał rzadko próbkowane SDNN, Oura Ring — ciągłe RMSSD, i liczby nigdy się nie zgadzały. Series 12 z września 2026 to zmienia — mierzy HRV około 24× częściej, dodaje Recovery HRV, a Apple Health oferuje teraz RMSSD, którego używa Oura (Apple nie potwierdza, że Recovery HRV to RMSSD). Prawdziwe pytanie jest więc teraz uczciwe: wszechstronny smartwatch czy dedykowany pierścień do pomiarów nocnych?",
-      "verdict": "Brak zwycięzcy ogólnego — zależy, czego chcesz. Po najprecyzyjniejsze, bezobsługowe nocne HRV i sen prowadzi Oura Ring 4 dzięki pomiarowi na palcu i baterii na kilka dni. Jako wszechstronny smartwatch z EKG, powiadomieniami o nadciśnieniu i bez subskrypcji wygrywa Series 12 — jego HRV jest wreszcie na tyle dobre, by na nim działać.",
-      "bestForA": "Wybierz Series 12, jeśli chcesz jednego wszechstronnego smartwatcha — EKG, powiadomienia o nadciśnieniu, aplikacje — z HRV na tyle dobrym, by na nim działać, i bez subskrypcji.",
+      "verdict": "Brak zwycięzcy ogólnego — zależy, czego chcesz. Po najprecyzyjniejsze, bezobsługowe nocne HRV i sen prowadzi Oura Ring 4 dzięki pomiarowi na palcu i baterii na kilka dni. Jako wszechstronny smartwatch z EKG, powiadomieniami o nadciśnieniu i bez subskrypcji wygrywa Series 12 — jego HRV nadaje się już do śledzenia osobistego trendu.",
+      "bestForA": "Wybierz Series 12, jeśli chcesz jednego wszechstronnego smartwatcha — EKG, powiadomienia o nadciśnieniu, aplikacje — z HRV, które nadaje się do śledzenia osobistego trendu, i bez subskrypcji.",
       "bestForB": "Wybierz Oura Ring 4, jeśli chodzi ci o nocne HRV i sen: pomiar na palcu jest precyzyjniejszy, w pierścieniu łatwiej się śpi, a bateria wystarcza na kilka dni.",
       "axes": [
         {
@@ -2385,7 +2385,7 @@
       "faq": [
         {
           "q": "Co jest dokładniejsze do HRV: Apple Watch Series 12 czy Oura Ring 4?",
-          "a": "Oura Ring 4 jest precyzyjniejszy przy ciągłym nocnym zapisie HRV — pomiar na palcu przewyższa optykę na nadgarstku, a bateria sprzyja noszeniu przez całą noc. Series 12 jest teraz znacznie bliżej: mierzy HRV 24× częściej i dodaje Recovery HRV, więc jest na tyle dobre, by na nim działać, choć nie jest najprecyzyjniejszą liczbą nocną."
+          "a": "Oura Ring 4 jest precyzyjniejszy przy ciągłym nocnym zapisie HRV — pomiar na palcu przewyższa optykę na nadgarstku, a bateria sprzyja noszeniu przez całą noc. Series 12 jest teraz znacznie bliżej: mierzy HRV 24× częściej i dodaje Recovery HRV, więc nadaje się do śledzenia osobistego trendu, choć nie jest najprecyzyjniejszą liczbą nocną."
         },
         {
           "q": "Czy Apple Watch Series 12 wymaga subskrypcji jak Oura?",
@@ -2393,10 +2393,10 @@
         },
         {
           "q": "Apple Watch czy pierścień Oura — co kupić do monitorowania regeneracji?",
-          "a": "Po najczystszy nocny sygnał regeneracji i najłatwiejsze noszenie przez całą noc — Oura Ring 4. Po jedno urządzenie, które robi też EKG, powiadomienia o nadciśnieniu, aplikacje i płatności — z HRV na tyle dobrym, by na nim działać, i bez subskrypcji — Series 12. Wiele osób łączy pierścień do trendu z zegarkiem do całej reszty."
+          "a": "Po najczystszy nocny sygnał regeneracji i najłatwiejsze noszenie przez całą noc — Oura Ring 4. Po jedno urządzenie, które robi też EKG, powiadomienia o nadciśnieniu, aplikacje i płatności — z HRV, które nadaje się do śledzenia osobistego trendu, i bez subskrypcji — Series 12. Wiele osób łączy pierścień do trendu z zegarkiem do całej reszty."
         }
       ],
-      "content": "## W skrócie\n\nTo teraz uczciwe porównanie, a wynik zależy od tego, czego chcesz. Oura Ring 4 wygrywa w samej nocnej liczbie — pomiar na palcu jest precyzyjniejszy, a bateria na kilka dni sprawia, że noszenie przez całą noc nie wymaga wysiłku. Series 12 wygrywa jako urządzenie — EKG, powiadomienia o nadciśnieniu, ekran, aplikacje, brak subskrypcji — a jego HRV jest wreszcie na tyle dobre, by na nim działać.\n\n## Dlaczego porównanie zmieniło się w 2026 roku\n\nPrzed wrześniem 2026 Apple Watch podawał rzadko próbkowane SDNN, a Oura opierała gotowość na RMSSD — różne metryki, które nigdy się nie pokrywały. Series 12 mierzy HRV znacznie częściej, a Apple Health oferuje teraz wartość RMSSD — ten sam *rodzaj* liczby, który podaje Oura. Apple nie mówi, czy samo Recovery HRV to RMSSD. Zobacz [Recovery HRV a Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) oraz [dlaczego HRV wygląda inaczej na każdym urządzeniu](/articles/hrv-different-every-device).\n\n## Uczciwy zestaw\n\nDla wielu osób odpowiedzią jest oba: pierścień Oura do bezobsługowego trendu nocnego i Apple Watch do wszystkiego, czego pierścień nie potrafi. Jeśli chcesz tylko najprecyzyjniejszego nocnego HRV, zobacz [najlepsze trackery HRV 2026](/reviews/compare/best-hrv-trackers-2026)."
+      "content": "## W skrócie\n\nTo teraz uczciwe porównanie, a wynik zależy od tego, czego chcesz. Oura Ring 4 wygrywa w samej nocnej liczbie — pomiar na palcu jest precyzyjniejszy, a bateria na kilka dni sprawia, że noszenie przez całą noc nie wymaga wysiłku. Series 12 wygrywa jako urządzenie — EKG, powiadomienia o nadciśnieniu, ekran, aplikacje, brak subskrypcji — a jego HRV nadaje się już do śledzenia osobistego trendu.\n\n## Dlaczego porównanie zmieniło się w 2026 roku\n\nPrzed wrześniem 2026 Apple Watch podawał rzadko próbkowane SDNN, a Oura opierała gotowość na RMSSD — różne metryki, które nigdy się nie pokrywały. Series 12 mierzy HRV znacznie częściej, a Apple Health oferuje teraz wartość RMSSD — ten sam *rodzaj* liczby, który podaje Oura. Apple nie mówi, czy samo Recovery HRV to RMSSD. Zobacz [Recovery HRV a Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) oraz [dlaczego HRV wygląda inaczej na każdym urządzeniu](/articles/hrv-different-every-device).\n\n## Uczciwy zestaw\n\nDla wielu osób odpowiedzią jest oba: pierścień Oura do bezobsługowego trendu nocnego i Apple Watch do wszystkiego, czego pierścień nie potrafi. Jeśli chcesz tylko najprecyzyjniejszego nocnego HRV, zobacz [najlepsze trackery HRV 2026](/reviews/compare/best-hrv-trackers-2026)."
     },
     "whoop-5-0-vs-garmin-venu-4": {
       "title": "Whoop 5.0 czy Garmin Venu 4: porównanie (2026)",

@@ -12,7 +12,7 @@ const bestHrvTrackers2026: Comparison = {
     {
       reviewSlug: 'oura-ring-5',
       award: 'Best overall',
-      takeaway: 'The most accurate overnight HRV and sleep, upgraded sensors and the best app — if you accept the subscription.',
+      takeaway: 'Overnight HRV and sleep from the best-validated ring line (the Ring 5 itself not yet separately validated), upgraded sensors and the best app — if you accept the subscription.',
     },
     {
       reviewSlug: 'ringconn-gen-3',
@@ -85,7 +85,7 @@ const bestHrvTrackers2026: Comparison = {
   faq: [
     {
       q: 'Which HRV tracker is the most accurate?',
-      a: 'For ground-truth accuracy the Polar H10 chest strap is unmatched — it reads the heart electrically, the same way a clinical ECG does. Among devices you can wear all day, the Oura Ring 5 is closest, with the Whoop 5.0 just behind.',
+      a: 'For ground-truth accuracy the Polar H10 chest strap is unmatched in young healthy adults at rest — it reads the heart electrically, the same way a clinical ECG does. Among devices you can wear all day, one study of overnight readings found earlier Oura rings agreed with ECG most closely; the Oura Ring 5 and Whoop 5.0 themselves have not been tested.',
     },
     {
       q: 'What is the best HRV tracker without a subscription?',
@@ -108,7 +108,7 @@ const bestHrvTrackers2026: Comparison = {
 
 Every device was scored against ONDA's published [review methodology](/reviews/methodology): seven weighted criteria, with HRV measurement accuracy carrying the most weight because it is the metric this category exists to serve. The overall score is the weighted mean — not a number picked by feel.
 
-All of them were assessed from manufacturer specifications, independent 2026 reviews and published validation literature rather than hands-on testing, so treat the scores as an evidence-based starting point. That literature is consistent: across nocturnal HR and HRV, the Oura Ring (Gen 3/4) shows the strongest agreement with reference measurement, ahead of Whoop, Garmin and Polar's wrist devices — which is why the overnight rings lead this ranking on accuracy. One caveat worth reading first: no two devices report the same HRV number — [here is why your HRV is different on every device](/articles/hrv-different-every-device), and which reading to actually trust.
+All of them were assessed from manufacturer specifications, independent 2026 reviews and published validation literature rather than hands-on testing, so treat the scores as an evidence-based starting point. In one study of overnight readings (13 people, previous-generation devices), Oura rings agreed with ECG more closely than the others (Whoop, Garmin and Polar's wrist devices) — a single small study, not a settled ranking, and one reason the overnight rings lead this ranking on accuracy. One caveat worth reading first: no two devices report the same HRV number — [here is why your HRV is different on every device](/articles/hrv-different-every-device), and which reading to actually trust.
 
 ## Best HRV Trackers: which should you buy?
 

@@ -11,9 +11,9 @@ const series12VsOura5: HeadToHead = {
     'Both are 2026 hardware and both cost $399 up front. The Series 12’s new Health Sensing System samples HRV about 24× more often and reports a separate Recovery HRV, and Apple Health now carries an RMSSD value — the statistic Oura uses. The Oura Ring 5 answers with redesigned sensors, a ~40% slimmer body and a 6–9 day battery. So the question is the honest one: a do-everything smartwatch, or a dedicated overnight ring?',
   winnerSlug: null,
   verdict:
-    'No overall winner — it splits by what you want. For the most precise, hands-off overnight HRV and sleep, the Oura Ring 5 leads on the finger and the 6–9 day battery. For an all-round smartwatch with ECG, hypertension notifications and no subscription, the Series 12 wins — its HRV is finally good enough to act on.',
+    'No overall winner — it splits by what you want. For the most precise, hands-off overnight HRV and sleep, the Oura Ring 5 leads on the finger and the 6–9 day battery. For an all-round smartwatch with ECG, hypertension notifications and no subscription, the Series 12 wins — its HRV is now usable as a personal trend.',
   bestForA:
-    'Choose the Series 12 if you want one do-everything smartwatch — ECG, hypertension notifications, apps — with HRV that is now good enough to act on, and no subscription.',
+    'Choose the Series 12 if you want one do-everything smartwatch — ECG, hypertension notifications, apps — with HRV that is now usable as a personal trend, and no subscription.',
   bestForB:
     'Choose the Oura Ring 5 if overnight HRV and sleep are the point: finger measurement is more precise, the slim ring is easy to sleep in, and its battery lasts 6–9 days.',
   axes: [
@@ -28,7 +28,7 @@ const series12VsOura5: HeadToHead = {
   faq: [
     {
       q: 'Is the Apple Watch Series 12 or Oura Ring 5 better for HRV?',
-      a: 'For a continuous overnight HRV record, the Oura Ring 5 — finger measurement on redesigned sensors remains the closest consumer match to an ECG strap, and the 6–9 day battery suits all-night wear. The Series 12 is now much closer: its Recovery HRV is sampled 24× more often, so it is good enough to act on.',
+      a: 'For a continuous overnight HRV record, the Oura Ring 5 — finger measurement on redesigned sensors remains the closest consumer match to an ECG strap, and the 6–9 day battery suits all-night wear. The Series 12 is now much closer: its Recovery HRV is sampled 24× more often, so it is usable as a personal trend.',
     },
     {
       q: 'Does the Oura Ring 5 need a subscription?',
@@ -36,12 +36,12 @@ const series12VsOura5: HeadToHead = {
     },
     {
       q: 'Apple Watch Series 12 or Oura Ring 5 — which should I buy?',
-      a: 'For the cleanest overnight recovery signal and easiest all-night wear, the Oura Ring 5. For one device that also does ECG, hypertension notifications and apps — with HRV now good enough to act on and no subscription — the Series 12. Many people pair a ring for the trend with a watch for everything else.',
+      a: 'For the cleanest overnight recovery signal and easiest all-night wear, the Oura Ring 5. For one device that also does ECG, hypertension notifications and apps — with HRV now usable as a personal trend and no subscription — the Series 12. Many people pair a ring for the trend with a watch for everything else.',
     },
   ],
   content: `## The short version
 
-This splits by what you want. The Oura Ring 5 wins for the overnight number itself — finger measurement on redesigned sensors is more precise, and the 6–9 day battery makes all-night wear effortless. The Series 12 wins as a device — ECG, hypertension notifications, a screen, apps, no subscription — and its HRV is finally good enough to act on.
+This splits by what you want. The Oura Ring 5 wins for the overnight number itself — finger measurement on redesigned sensors is more precise, and the 6–9 day battery makes all-night wear effortless. The Series 12 wins as a device — ECG, hypertension notifications, a screen, apps, no subscription — and its HRV is now usable as a personal trend.
 
 ## Why the numbers are now comparable
 

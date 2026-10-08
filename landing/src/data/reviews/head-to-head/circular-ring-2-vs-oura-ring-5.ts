@@ -8,14 +8,14 @@ const circularVsOura5: HeadToHead = {
   description:
     'Circular Ring 2 vs Oura Ring 5 — the ambitious ECG/AFib ring with no subscription vs the proven accuracy flagship. Innovation on paper vs features that actually work.',
   intro:
-    'On paper this looks close: the Circular Ring 2 has an on-finger ECG, AFib detection and a subscription-free AI coach — things the Oura Ring 5 doesn’t offer. In practice it isn’t close yet. Independent testing found the Circular’s marquee features didn’t reliably work, while the Oura Ring 5 delivers the most accurate, most polished ring experience — for a subscription.',
+    'On paper this looks close: the Circular Ring 2 has an on-finger ECG, AFib detection and a subscription-free AI coach — things the Oura Ring 5 doesn’t offer. In practice it isn’t close yet. Independent testing found the Circular’s marquee features didn’t reliably work, while the Oura Ring 5 delivers the most polished ring experience from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) — for a subscription.',
   winnerSlug: null,
   verdict:
     'Ambition vs execution. The Circular Ring 2 has unique hardware (ECG, AFib) and no subscription, but its software is unfinished and those features didn’t reliably work in testing. The Oura Ring 5 is less ambitious on paper but does everything well, accurately, with the best app — at $399 plus a membership. Today, buy Oura for a ring that works; consider Circular only as an early-adopter bet.',
   bestForA:
     'Choose the Circular Ring 2 only if on-ring ECG/AFib and AI coaching excite you and you accept unfinished software as an early adopter.',
   bestForB:
-    'Choose the Oura Ring 5 if you want the most accurate, most polished ring that works reliably today, and the membership is acceptable.',
+    'Choose the Oura Ring 5 if you want the most polished ring that works reliably today, from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated), and the membership is acceptable.',
   axes: [
     { name: 'Features that work today', winner: 'b', note: 'Oura’s tracking is accurate and reliable. The Circular’s headline ECG/AFib features didn’t reliably work in independent testing, and promised BP/glucose hadn’t shipped.' },
     { name: 'Unique hardware', winner: 'a', note: 'The Circular is the first ring with on-finger ECG and AFib detection — genuinely unique, if it matures.' },
@@ -27,7 +27,7 @@ const circularVsOura5: HeadToHead = {
   faq: [
     {
       q: 'Circular Ring 2 or Oura Ring 5?',
-      a: 'Buy the Oura Ring 5 if you want a ring that works reliably today — it’s the most accurate with the best app, for a subscription. The Circular Ring 2 has unique ECG/AFib hardware and no subscription, but its software is unfinished and those features didn’t reliably work in testing. It’s an early-adopter bet, not a safe pick.',
+      a: 'Buy the Oura Ring 5 if you want a ring that works reliably today — earlier Oura generations agreed well with ECG overnight (the Ring 5 itself has not been separately validated), and it has the best app, for a subscription. The Circular Ring 2 has unique ECG/AFib hardware and no subscription, but its software is unfinished and those features didn’t reliably work in testing. It’s an early-adopter bet, not a safe pick.',
     },
     {
       q: 'Does the Circular Ring 2’s ECG actually work?',
@@ -40,7 +40,7 @@ const circularVsOura5: HeadToHead = {
   ],
   content: `## The short version
 
-Innovation vs execution. The [Circular Ring 2](/reviews/circular-ring-2) has unique on-ring ECG/AFib and no subscription, but unfinished software; the [Oura Ring 5](/reviews/oura-ring-5) is less novel but the most accurate, most polished ring — for a membership.
+Innovation vs execution. The [Circular Ring 2](/reviews/circular-ring-2) has unique on-ring ECG/AFib and no subscription, but unfinished software; the [Oura Ring 5](/reviews/oura-ring-5) is less novel but the most polished ring, from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) — for a membership.
 
 ## When is the Circular Ring 2 the right pick?
 

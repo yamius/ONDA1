@@ -1244,7 +1244,7 @@
       "productType": "美国国防部开发的免费腹式呼吸 App，用于缓解压力和 PTSD"
     },
     "polar-h10": {
-      "verdict": "你能买到的最精准的 HRV 设备——一件参考仪器，而非全天佩戴的可穿戴设备。",
+      "verdict": "你能买到的最精准的 HRV 设备（针对健康年轻成人的静息状态）——一件参考仪器，而非全天佩戴的可穿戴设备。",
       "productType": "ECG 胸带"
     },
     "calm": {
@@ -2273,8 +2273,8 @@
       "title": "Apple Watch Series 12 与 Whoop 5.0 对比评测：HRV 与恢复（2026）",
       "description": "Apple Watch Series 12 与 Whoop 5.0 HRV 对比：没有绝对赢家。要恢复指导选 Whoop（每年 $199–$359），要免订阅的 $399 智能手表选 Series 12。",
       "intro": "这两款产品用两种方式回答同一个问题。2026 年 9 月推出的 Series 12 终于能以足够高的频率、并提供面向压力与恢复的 Recovery HRV 来采样 HRV，让一款免订阅的智能手表拥有了真正可用的恢复信号。Whoop 5.0 则是一款仅限订阅的手环，从一开始就围绕夜间连续 HRV 和同类中最精准的恢复与负荷（Strain）指导而设计。一个是全能手表，另一个是专属教练。",
-      "verdict": "没有总冠军——取决于你想要教练指导还是全能设备。Whoop 5.0 在夜间连续 HRV、恢复与负荷指导和多日续航上领先；Series 12 的优势在于它是一款带 ECG、免订阅、且 HRV 已足以指导行动的智能手表。",
-      "bestForA": "如果你想要一块免订阅的智能手表——ECG、高血压通知、应用一应俱全——并且 HRV 终于足以指导行动，选 Series 12。",
+      "verdict": "没有总冠军——取决于你想要教练指导还是全能设备。Whoop 5.0 在夜间连续 HRV、恢复与负荷指导和多日续航上领先；Series 12 的优势在于它是一款带 ECG、免订阅、且 HRV 可用于追踪个人趋势的智能手表。",
+      "bestForA": "如果你想要一块免订阅的智能手表——ECG、高血压通知、应用一应俱全——并且 HRV 可用于追踪个人趋势，选 Series 12。",
       "bestForB": "如果恢复与负荷指导决定你的训练方式，并且想用无屏手环获取夜间连续 HRV，同时能接受持续的会员费用，选 Whoop 5.0。",
       "axes": [
         {
@@ -2317,17 +2317,17 @@
         },
         {
           "q": "测 HRV 买 Whoop 还是 Apple Watch？",
-          "a": "如果你需要每天据此行动的恢复指导和夜间连续 HRV，选 Whoop 5.0。如果你想要一台设备同时搞定 ECG、应用和支付、无需订阅，且 HRV 已足以指导行动，选 Series 12。依据这一信号训练的运动员更适合 Whoop；大多数人更适合 Apple Watch。"
+          "a": "如果你需要每天据此行动的恢复指导和夜间连续 HRV，选 Whoop 5.0。如果你想要一台设备同时搞定 ECG、应用和支付、无需订阅，且 HRV 可用于追踪个人趋势，选 Series 12。依据这一信号训练的运动员更适合 Whoop；大多数人更适合 Apple Watch。"
         }
       ],
-      "content": "## 简要结论\n\n按用途来选。Whoop 5.0 是专属的恢复教练——夜间连续 HRV、最精准的 Recovery 与 Strain 模型、续航 14 天以上的无屏手环——但需要订阅。Series 12 是一款免订阅的智能手表，经过 2026 年 9 月 Health Sensing System 更新后，HRV 终于足以指导行动，另外还有 ECG 和高血压通知。\n\n## Series 12 为什么缩小了差距\n\nApple 现在以高得多的频率采样并报告 Recovery HRV，watchOS 27 还为 Apple 健康新增了 RMSSD 数据类型——这正是 Whoop 恢复模型所用的指标。不过 Apple 没有说明 Recovery HRV 采用哪种统计量。参见 [Recovery HRV 与 Overall HRV 的区别](/articles/apple-watch-recovery-hrv-vs-overall-hrv) 和 [为什么每台设备的 HRV 读数都不一样](/articles/hrv-different-every-device)。\n\n## 坦白说的注意事项\n\nWhoop 的设计是全天候佩戴、每天给你指导；Apple Watch 是一块通用智能手表，你未必每晚都戴，而且约 1 天的续航会与夜间测量相冲突。如果夜间连续 HRV 才是你的核心需求，请看 [2026 年最佳 HRV 追踪设备](/reviews/compare/best-hrv-trackers-2026)——戒指或手环可能比手表更适合你。"
+      "content": "## 简要结论\n\n按用途来选。Whoop 5.0 是专属的恢复教练——夜间连续 HRV、最精准的 Recovery 与 Strain 模型、续航 14 天以上的无屏手环——但需要订阅。Series 12 是一款免订阅的智能手表，经过 2026 年 9 月 Health Sensing System 更新后，HRV 现在可用于追踪个人趋势，另外还有 ECG 和高血压通知。\n\n## Series 12 为什么缩小了差距\n\nApple 现在以高得多的频率采样并报告 Recovery HRV，watchOS 27 还为 Apple 健康新增了 RMSSD 数据类型——这正是 Whoop 恢复模型所用的指标。不过 Apple 没有说明 Recovery HRV 采用哪种统计量。参见 [Recovery HRV 与 Overall HRV 的区别](/articles/apple-watch-recovery-hrv-vs-overall-hrv) 和 [为什么每台设备的 HRV 读数都不一样](/articles/hrv-different-every-device)。\n\n## 坦白说的注意事项\n\nWhoop 的设计是全天候佩戴、每天给你指导；Apple Watch 是一块通用智能手表，你未必每晚都戴，而且约 1 天的续航会与夜间测量相冲突。如果夜间连续 HRV 才是你的核心需求，请看 [2026 年最佳 HRV 追踪设备](/reviews/compare/best-hrv-trackers-2026)——戒指或手环可能比手表更适合你。"
     },
     "apple-watch-series-12-vs-oura-ring-4": {
       "title": "Apple Watch Series 12与Oura Ring 4对比（2026）",
       "description": "从HRV角度对比Apple Watch Series 12与Oura Ring 4——苹果现在提供恢复HRV，Apple健康也支持RMSSD，比较终于公平了。手表与戒指，逐项权衡。",
       "intro": "多年来这都是一场不公平的较量：Apple Watch报告稀疏采样的SDNN，Oura Ring报告连续的RMSSD，两者的数字从来对不上。2026年9月的Series 12改变了这一点——它的HRV采样频率提高了约24倍并新增恢复HRV，Apple健康现在也提供Oura所用的RMSSD（苹果并未确认恢复HRV就是RMSSD）。所以现在真正的问题终于变得实事求是：一块全能智能手表，还是一枚专门的夜间戒指？",
-      "verdict": "没有全面的赢家——取决于你想要什么。若要最精确、免操心的夜间HRV和睡眠数据，Oura Ring 4凭借手指测量和多日续航领先。若要一款带ECG、高血压通知且无需订阅的全能智能手表，Series 12胜出——它的HRV终于好到可以据此行动。",
-      "bestForA": "如果你想要一块全能智能手表——ECG、高血压通知、应用——其HRV现在已足以据此行动，且无需订阅，请选Series 12。",
+      "verdict": "没有全面的赢家——取决于你想要什么。若要最精确、免操心的夜间HRV和睡眠数据，Oura Ring 4凭借手指测量和多日续航领先。若要一款带ECG、高血压通知且无需订阅的全能智能手表，Series 12胜出——它的HRV现在可用于追踪个人趋势。",
+      "bestForA": "如果你想要一块全能智能手表——ECG、高血压通知、应用——其HRV现在可用于追踪个人趋势，且无需订阅，请选Series 12。",
       "bestForB": "如果夜间HRV和睡眠才是重点，请选Oura Ring 4：手指测量更精确，戒指戴着睡觉更舒服，电池可用好几天。",
       "axes": [
         {
@@ -2362,7 +2362,7 @@
       "faq": [
         {
           "q": "Apple Watch Series 12和Oura Ring 4哪个测HRV更准？",
-          "a": "就连续的夜间HRV记录而言，Oura Ring 4更精确——手指测量优于手腕光学测量，其续航也适合整夜佩戴。Series 12现在已接近很多：它的HRV采样频率提高24倍并新增恢复HRV，已足以据此行动，只是不是最精确的夜间数据。"
+          "a": "就连续的夜间HRV记录而言，Oura Ring 4更精确——手指测量优于手腕光学测量，其续航也适合整夜佩戴。Series 12现在已接近很多：它的HRV采样频率提高24倍并新增恢复HRV，已可用于追踪个人趋势，只是不是最精确的夜间数据。"
         },
         {
           "q": "Apple Watch Series 12像Oura一样需要订阅吗？",
@@ -2370,10 +2370,10 @@
         },
         {
           "q": "为了恢复管理，该买Apple Watch还是Oura戒指？",
-          "a": "要最干净的夜间恢复信号和最轻松的整夜佩戴，选Oura Ring 4。要一台同时具备ECG、高血压通知、应用和支付的设备——HRV现在也足以据此行动且无需订阅——选Series 12。很多人会搭配使用：戒指看趋势，手表做其他一切。"
+          "a": "要最干净的夜间恢复信号和最轻松的整夜佩戴，选Oura Ring 4。要一台同时具备ECG、高血压通知、应用和支付的设备——HRV现在也可用于追踪个人趋势且无需订阅——选Series 12。很多人会搭配使用：戒指看趋势，手表做其他一切。"
         }
       ],
-      "content": "## 简要结论\n\n这现在是一场公平的比较，答案取决于你想要什么。就夜间数据本身而言，Oura Ring 4胜出——手指测量更精确，多日续航让整夜佩戴毫不费力。作为一台设备，Series 12胜出——ECG、高血压通知、屏幕、应用、无需订阅——而且它的HRV终于好到可以据此行动。\n\n## 为什么2026年比较发生了变化\n\n2026年9月之前，Apple Watch报告稀疏采样的SDNN，而Oura的准备度基于RMSSD——两种不同的指标，从来对不上。Series 12的HRV采样频繁得多，Apple健康现在也提供RMSSD数值（苹果未说明恢复HRV本身是否为RMSSD），因此它现在与Oura报告的是同一*类*数字。请参阅[恢复HRV与整体HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv)以及[为什么每台设备的HRV读数都不同](/articles/hrv-different-every-device)。\n\n## 实在的搭配\n\n对很多人来说，答案是两者兼用：Oura Ring负责免操心的夜间趋势，Apple Watch负责戒指做不到的一切。如果你只想要最精确的夜间HRV，请参阅[2026年最佳HRV追踪器](/reviews/compare/best-hrv-trackers-2026)。"
+      "content": "## 简要结论\n\n这现在是一场公平的比较，答案取决于你想要什么。就夜间数据本身而言，Oura Ring 4胜出——手指测量更精确，多日续航让整夜佩戴毫不费力。作为一台设备，Series 12胜出——ECG、高血压通知、屏幕、应用、无需订阅——而且它的HRV现在可用于追踪个人趋势。\n\n## 为什么2026年比较发生了变化\n\n2026年9月之前，Apple Watch报告稀疏采样的SDNN，而Oura的准备度基于RMSSD——两种不同的指标，从来对不上。Series 12的HRV采样频繁得多，Apple健康现在也提供RMSSD数值（苹果未说明恢复HRV本身是否为RMSSD），因此它现在与Oura报告的是同一*类*数字。请参阅[恢复HRV与整体HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv)以及[为什么每台设备的HRV读数都不同](/articles/hrv-different-every-device)。\n\n## 实在的搭配\n\n对很多人来说，答案是两者兼用：Oura Ring负责免操心的夜间趋势，Apple Watch负责戒指做不到的一切。如果你只想要最精确的夜间HRV，请参阅[2026年最佳HRV追踪器](/reviews/compare/best-hrv-trackers-2026)。"
     },
     "whoop-5-0-vs-garmin-venu-4": {
       "title": "Whoop 5.0 与 Garmin Venu 4 对比评测：HRV 与训练（2026）",

@@ -8,7 +8,7 @@ const ouraRing5VsWhoop: HeadToHead = {
   description:
     'Oura Ring 5 vs WHOOP 5.0 — the sleep-first ring vs the training-first band. ONDA compares HRV and sleep accuracy, recovery coaching, comfort and cost.',
   intro:
-    'The Oura Ring 5 and WHOOP 5.0 are the two screenless recovery trackers most people cross-shop, and they split cleanly by philosophy. Oura is the sleep-first ring — the most accurate overnight HRV and sleep in the smallest thing you can wear. WHOOP is the training-first band — continuous HRV and a full recovery-and-strain coaching layer. Both lock their best data behind a payment.',
+    'The Oura Ring 5 and WHOOP 5.0 are the two screenless recovery trackers most people cross-shop, and they split cleanly by philosophy. Oura is the sleep-first ring — overnight HRV and sleep from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) in the smallest thing you can wear. WHOOP is the training-first band — continuous HRV and a full recovery-and-strain coaching layer. Both lock their best data behind a payment.',
   winnerSlug: null,
   verdict:
     'Sleep-first ring vs training-first band. The Oura Ring 5 wins on sleep and overnight HRV accuracy and all-day comfort; WHOOP 5.0 wins on continuous in-exercise HRV and daily recovery-and-strain coaching. Both require ongoing payment — pick by whether your priority is precise sleep data or training guidance.',
@@ -40,7 +40,7 @@ const ouraRing5VsWhoop: HeadToHead = {
   ],
   content: `## The short version
 
-Two screenless trackers, two philosophies. The [Oura Ring 5](/reviews/oura-ring-5) is the sleep-first ring with the most accurate overnight HRV and sleep. [WHOOP 5.0](/reviews/whoop-5-0) is the training-first band with continuous HRV and daily recovery-and-strain coaching.
+Two screenless trackers, two philosophies. The [Oura Ring 5](/reviews/oura-ring-5) is the sleep-first ring from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated). [WHOOP 5.0](/reviews/whoop-5-0) is the training-first band with continuous HRV and daily recovery-and-strain coaching.
 
 ## When is the Oura Ring 5 the right pick?
 
