@@ -440,15 +440,11 @@ export const ALL_HEAD_TO_HEADS: HeadToHead[] = [
 /** Axis-winner sanity check. Throws at import (so prerender / `npm run build`
  *  fails): a two-way duel (no productCSlug) may only use 'a' | 'b' | 'tie';
  *  'c' is allowed only in three-way duels. */
-// Pending owner decision (2026-10-08): note names Luna as the winner on spec
-// (~4 vs ~2.5–3 days) — owner to choose 'a' or 'tie', then remove this entry.
-const PENDING_OWNER_C = new Set(['luna-ring-vs-amazfit-helio-ring › Single-charge battery'])
 export function validateHeadToHeadWinners(list: HeadToHead[]): void {
   const bad: string[] = []
   for (const h of list) {
     const allowed = h.productCSlug ? ['a', 'b', 'c', 'tie'] : ['a', 'b', 'tie']
     for (const ax of h.axes) {
-      if (PENDING_OWNER_C.has(`${h.slug} › ${ax.name}`)) continue
       if (!allowed.includes(ax.winner)) bad.push(`${h.slug} › "${ax.name}": winner '${ax.winner}'`)
     }
   }
