@@ -66,7 +66,24 @@ export function HrvEmbedWidget() {
         </label>
       </div>
 
-      {result ? (
+      {(result && !result.verdict) || (both && !both.female.verdict) ? (
+        <div className="rounded-lg border border-white/10 bg-white/5 p-3">
+          <p className="mb-2 font-mono text-[10px] leading-relaxed text-white/70">{c.result.noCompare}</p>
+          {(result ? [result] : both ? [both.female, both.male] : []).map((r) => (
+            <p key={r.sex} className="mb-2 font-mono text-[10px] leading-relaxed text-white/55">
+              {fill(c.result.infoOnly, {
+                sex: r.sex === 'female' ? c.result.sexFemale : c.result.sexMale,
+                band: r.point.label,
+                p25: r.ref.p25,
+                p75: r.ref.p75,
+                p50: r.ref.p50,
+              })}
+            </p>
+          ))}
+          <p className="font-mono text-[10px] leading-relaxed text-white/45">{c.deviceNote}</p>
+          <p className="mt-2 font-mono text-[10px] leading-relaxed text-white/45">{c.disclaimerLine}</p>
+        </div>
+      ) : result && result.verdict ? (
         <div className="rounded-lg border border-white/10 bg-white/5 p-3">
           <div className={`text-base font-bold ${verdictColor}`}>{c.verdicts[result.verdict]}</div>
           <p className="mt-2 font-mono text-[10px] leading-relaxed text-white/55">
@@ -79,6 +96,7 @@ export function HrvEmbedWidget() {
             })}
           </p>
           <p className="mt-2 font-mono text-[10px] leading-relaxed text-white/45">{c.disclaimerLine}</p>
+          <p className="mt-2 font-mono text-[10px] leading-relaxed text-white/45">{c.deviceNote}</p>
         </div>
       ) : both ? (
         <div className="rounded-lg border border-white/10 bg-white/5 p-3">
@@ -87,7 +105,7 @@ export function HrvEmbedWidget() {
               {fill(c.result.comparedPosition, {
                 sex: s === 'female' ? c.result.sexFemale : c.result.sexMale,
                 band: both[s].point.label,
-                position: c.result.position[both[s].verdict],
+                position: c.result.position[both[s].verdict!],
                 p25: both[s].ref.p25,
                 p75: both[s].ref.p75,
                 p50: both[s].ref.p50,
@@ -95,6 +113,7 @@ export function HrvEmbedWidget() {
             </p>
           ))}
           <p className="font-mono text-[10px] leading-relaxed text-white/45">{c.disclaimerLine}</p>
+          <p className="mt-2 font-mono text-[10px] leading-relaxed text-white/45">{c.deviceNote}</p>
         </div>
       ) : (
         <p className="font-mono text-[11px] text-white/40">{c.invalid}</p>

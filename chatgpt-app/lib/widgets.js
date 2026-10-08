@@ -104,7 +104,10 @@ const hrv = page(
   if (!d.compared) {
     $('#root').innerHTML = '<h2>Your HRV at age ' + esc(d.age) + '</h2>' +
       '<div class="row" style="margin-top:10px"><span class="big">' + esc(d.value) + ' ms</span><span>' + esc(d.metric) + ' · not compared</span></div>' +
-      '<p>' + esc(d.metricNote) + '</p>' + foot;
+      (d.comparisons ? '<p>' + esc(d.ageNote) + '</p>' + d.comparisons.map((c) =>
+        '<p class="muted small">' + esc(c.group) + ': middle half ' + esc(c.p25) + '–' + esc(c.p75) + ' ms, median ' + esc(c.p50) + ' ms</p>').join('') +
+        '<p class="muted small">' + esc(d.deviceNote) + '</p><p><strong>' + esc(d.disclaimer) + '</strong></p>'
+        : '<p>' + esc(d.metricNote) + '</p>') + foot;
     return;
   }
   const NAMES = { lower: 'Below the middle half', middle: 'Middle half', higher: 'Above the middle half' };
@@ -117,6 +120,7 @@ const hrv = page(
     '<div class="row" style="margin-top:10px"><span class="big">' + esc(d.value) + ' ms</span><span>' + esc(d.metric) + (d.verdictText ? ' · ' + esc(d.verdictText) : '') + '</span></div>' +
     groups +
     '<p><strong>' + esc(d.disclaimer) + '</strong></p>' +
+    '<p class="muted small">' + esc(d.deviceNote) + '</p>' +
     '<p class="muted small">' + esc(d.ageNote) + ' ' + esc(d.metricNote) + '</p>' +
     '<p class="muted small">Source: ' + esc(d.source) + '</p>' + foot;
 });`,
@@ -209,7 +213,7 @@ boot((d) => {
 );
 
 export const WIDGETS = {
-  hrv: { uri: 'ui://onda/hrv-v6.html', name: 'HRV compared with Fitbit users your age', html: hrv },
+  hrv: { uri: 'ui://onda/hrv-v7.html', name: 'HRV compared with Fitbit users your age', html: hrv },
   breathe: { uri: 'ui://onda/breathe-v5.html', name: 'Breathing guide', html: breathe },
   practice: { uri: 'ui://onda/practice-v5.html', name: 'ONDA practices', html: practice },
   compare: { uri: 'ui://onda/compare-v5.html', name: 'Device and app comparison', html: compare },

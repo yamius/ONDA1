@@ -7,4 +7,4 @@
  *   2 — 2026-10-08 (task 054): Natarajan 2020 Fitbit distribution, sex input, verdicts + disclaimer
  *   3 — 2026-10-08 (task 054 follow-up): sex option "Prefer not to say" → comparison with both groups, no verdict
  */
-export const HRV_WIDGET_VERSION = '3'
+export const HRV_WIDGET_VERSION = '4'

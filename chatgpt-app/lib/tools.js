@@ -8,7 +8,7 @@
  * HRV + personal baseline need Apple Watch, the camera pulse works on any iPhone.
  */
 import { readFileSync } from 'node:fs';
-import { interpretHrvBoth, HRV_AGE_POINTS, HRV_VERDICT_TEXT, HRV_POSITION_TEXT, HRV_COMPARISON_DISCLAIMER } from './generated/hrv-norms.js';
+import { interpretHrvBoth, HRV_AGE_POINTS, HRV_VERDICT_TEXT, HRV_POSITION_TEXT, HRV_COMPARISON_DISCLAIMER, HRV_DEVICE_NOTE, HRV_NO_COMPARISON_NOTE } from './generated/hrv-norms.js';
 import { BREATHING_PATTERNS } from './generated/breathing.js';
 import { appStoreUrl, siteUrl } from './links.js';
 
@@ -62,7 +62,7 @@ export const checkHrv = {
   widget: 'hrv',
   description:
     "ONDA Life — HRV by age: compares one heart rate variability (RMSSD) value with a published distribution from one wearable's users (Natarajan 2020, about 8 million Fitbit users, morning RMSSD by age and sex). " +
-    "It is a comparison, not a medical norm: it says whether the value is lower than most, within the middle half, or higher than most users of the nearest age group (ages 20–61 in the data). " +
+    "It is a comparison, not a medical norm: it says whether the value is lower than most, within the middle half, or higher than most users of the nearest age group (ages 20–61 in the data: 18–19 is compared with 20–21 and 62–64 with 60–61; above 64 no comparison is made and the 60–61 distribution is shown for information only). The distribution comes from Fitbit wrist data, so for other devices the comparison is approximate. " +
     "Oura, Whoop, Garmin, Fitbit and Polar report RMSSD and are compared; Apple Watch reports SDNN, a different measure that is not compared. Sex is optional; without it the value is shown against both women and men. " +
     "Use for: is my HRV normal for my age; good HRV for my age; Oura or Whoop HRV score; heart rate variability by age; Apple Watch HRV meaning. " +
     "The optional red_flag_symptoms flag covers only acute symptoms: chest pain or pressure; fainting or nearly fainting; severe shortness of breath; " +
@@ -92,7 +92,7 @@ export const checkHrv = {
     required: ['age', 'hrv_ms', 'device'],
     additionalProperties: false,
   },
-  outputSchema: {"type":"object","description":"Either the HRV comparison, or { urgent: true, message } when red_flag_symptoms is true.","properties":{"urgent":{"type":"boolean"},"message":{"type":"string"},"age":{"type":"number"},"value":{"type":"number"},"metric":{"type":"string","enum":["SDNN","RMSSD"]},"device":{"type":"string"},"sex":{"type":"string"},"compared":{"type":"boolean"},"ageGroup":{"type":"string"},"ageNote":{"type":"string"},"comparisons":{"type":"array","items":{"type":"object","properties":{"group":{"type":"string"},"sex":{"type":"string"},"p25":{"type":"number"},"p50":{"type":"number"},"p75":{"type":"number"},"verdict":{"type":"string","enum":["lower","middle","higher"]},"verdictText":{"type":"string"}},"required":[]}},"verdict":{"type":"string","enum":["lower","middle","higher"]},"verdictText":{"type":"string"},"disclaimer":{"type":"string"},"metricNote":{"type":"string"},"source":{"type":"string"},"bridge":{"type":"object","properties":{"text":{"type":"string"},"url":{"type":"string"}},"required":["url"]},"learnMore":{"type":"string"},"safety":{"type":"string"}}},
+  outputSchema: {"type":"object","description":"Either the HRV comparison, or { urgent: true, message } when red_flag_symptoms is true.","properties":{"urgent":{"type":"boolean"},"message":{"type":"string"},"age":{"type":"number"},"value":{"type":"number"},"metric":{"type":"string","enum":["SDNN","RMSSD"]},"device":{"type":"string"},"sex":{"type":"string"},"compared":{"type":"boolean"},"ageGroup":{"type":"string"},"ageNote":{"type":"string"},"deviceNote":{"type":"string"},"comparisons":{"type":"array","items":{"type":"object","properties":{"group":{"type":"string"},"sex":{"type":"string"},"p25":{"type":"number"},"p50":{"type":"number"},"p75":{"type":"number"},"verdict":{"type":"string","enum":["lower","middle","higher"]},"verdictText":{"type":"string"}},"required":[]}},"verdict":{"type":"string","enum":["lower","middle","higher"]},"verdictText":{"type":"string"},"disclaimer":{"type":"string"},"metricNote":{"type":"string"},"source":{"type":"string"},"bridge":{"type":"object","properties":{"text":{"type":"string"},"url":{"type":"string"}},"required":["url"]},"learnMore":{"type":"string"},"safety":{"type":"string"}}},
   annotations: annotations('Compare HRV with Fitbit users your age'),
   invoking: 'Comparing HRV…',
   invoked: 'HRV compared',
@@ -136,6 +136,21 @@ export const checkHrv = {
     const single = sex === 'female' || sex === 'male' ? both[sex] : null;
     const point = both.female.point;
     const list = single ? [single] : [both.female, both.male];
+    if (!both.female.compared) {
+      // Above HRV_MAX_COMPARED_AGE: no verdict; the oldest group is shown for information only.
+      const out = {
+        ...base,
+        compared: false,
+        ageGroup: point.label,
+        ageNote: HRV_NO_COMPARISON_NOTE,
+        comparisons: list.map((r) => ({ group: `${GROUP[r.sex]} aged ${r.point.label} (for information only)`, sex: r.sex, p25: r.ref.p25, p50: r.ref.p50, p75: r.ref.p75 })),
+        deviceNote: HRV_DEVICE_NOTE,
+        disclaimer: HRV_COMPARISON_DISCLAIMER,
+        source: SOURCE_NOTE,
+      };
+      const text = `${value} ms RMSSD at age ${a}: no verdict. ${HRV_NO_COMPARISON_NOTE} For information only: ${list.map(groupLine).join('; ')}. ${HRV_DEVICE_NOTE} ${HRV_COMPARISON_DISCLAIMER}`;
+      return { structuredContent: out, text };
+    }
     const comparisons = list.map((r) => ({
       group: `${GROUP[r.sex]} aged ${r.point.label}`,
       sex: r.sex,
@@ -152,13 +167,14 @@ export const checkHrv = {
       ageNote: ageNote(a, point),
       comparisons,
       ...(single ? { verdict: single.verdict, verdictText: HRV_VERDICT_TEXT[single.verdict] } : {}),
+      deviceNote: HRV_DEVICE_NOTE,
       disclaimer: HRV_COMPARISON_DISCLAIMER,
       metricNote: 'Morning RMSSD from a wrist sensor. Other devices and other times of day give different numbers.',
       source: SOURCE_NOTE,
     };
     const text = single
-      ? `${value} ms RMSSD at age ${a}: ${HRV_VERDICT_TEXT[single.verdict]}. Compared with ${groupLine(single)}. ${out.ageNote} ${HRV_COMPARISON_DISCLAIMER}`
-      : `${value} ms RMSSD at age ${a} (sex not given, so no single verdict). Compared with ${groupLine(both.female)}: ${HRV_POSITION_TEXT[both.female.verdict]}. Compared with ${groupLine(both.male)}: ${HRV_POSITION_TEXT[both.male.verdict]}. ${out.ageNote} ${HRV_COMPARISON_DISCLAIMER}`;
+      ? `${value} ms RMSSD at age ${a}: ${HRV_VERDICT_TEXT[single.verdict]}. Compared with ${groupLine(single)}. ${out.ageNote} ${HRV_DEVICE_NOTE} ${HRV_COMPARISON_DISCLAIMER}`
+      : `${value} ms RMSSD at age ${a} (sex not given, so no single verdict). Compared with ${groupLine(both.female)}: ${HRV_POSITION_TEXT[both.female.verdict]}. Compared with ${groupLine(both.male)}: ${HRV_POSITION_TEXT[both.male.verdict]}. ${out.ageNote} ${HRV_DEVICE_NOTE} ${HRV_COMPARISON_DISCLAIMER}`;
     return { structuredContent: out, text };
   },
 };

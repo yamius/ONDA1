@@ -37,6 +37,9 @@ var HRV_VERDICT_TEXT = {
   higher: "Higher than most Fitbit users your age"
 };
 var HRV_COMPARISON_DISCLAIMER = "This is a comparison with users of one device, not a medical norm. Your own trend matters more.";
+var HRV_DEVICE_NOTE = "The distribution comes from Fitbit wrist data; other devices (Oura, Whoop, Garmin, Polar, Apple) compute HRV differently, so the comparison is approximate.";
+var HRV_MAX_COMPARED_AGE = 64;
+var HRV_NO_COMPARISON_NOTE = "The published data end at age 61; no comparison is made for your age.";
 var HRV_POSITION_TEXT = {
   lower: "below the middle half",
   middle: "within the middle half",
@@ -57,10 +60,11 @@ function nearestAgePoint(age) {
 function interpretHrv(age, rmssd, sex) {
   const point = nearestAgePoint(age);
   const ref = point[sex];
-  const verdict = rmssd < ref.p25 ? "lower" : rmssd > ref.p75 ? "higher" : "middle";
+  const compared = age <= HRV_MAX_COMPARED_AGE;
+  const verdict = !compared ? null : rmssd < ref.p25 ? "lower" : rmssd > ref.p75 ? "higher" : "middle";
   const first = HRV_AGE_POINTS[0];
   const last = HRV_AGE_POINTS[HRV_AGE_POINTS.length - 1];
-  return { point, sex, ref, verdict, outsideAgeRange: age < first.minAge || age > last.maxAge };
+  return { point, sex, ref, verdict, compared, outsideAgeRange: age < first.minAge || age > last.maxAge };
 }
 var HRV_COPY_VARS = Object.fromEntries(
   HRV_AGE_POINTS.flatMap((p) => [
@@ -75,6 +79,9 @@ export {
   HRV_AGE_POINTS,
   HRV_COMPARISON_DISCLAIMER,
   HRV_COPY_VARS,
+  HRV_DEVICE_NOTE,
+  HRV_MAX_COMPARED_AGE,
+  HRV_NO_COMPARISON_NOTE,
   HRV_POSITION_TEXT,
   HRV_SOURCES,
   HRV_VERDICT_TEXT,

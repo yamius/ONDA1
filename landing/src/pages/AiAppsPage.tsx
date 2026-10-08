@@ -18,13 +18,13 @@ export const AI_APPS_DESC =
   'Use ONDA inside ChatGPT and Claude: compare HRV with Fitbit users your age, breathe with a live guide, find a free 6-minute practice, compare wearables. No account.'
 const MCP_URL = 'https://onda-life.com/mcp'
 const SUPPORT = 'info@onda-life.com'
-const DATE_MODIFIED = '2026-10-08'
+const DATE_MODIFIED = '2026-10-09'
 
 const TOOLS: { name: string; title: string; what: string; prompts: string[] }[] = [
   {
     name: 'check_hrv',
     title: 'Compare HRV with Fitbit users your age',
-    what: 'Compares one HRV (RMSSD) value from Oura, Whoop, Garmin, Fitbit or Polar with a published distribution from one wearable’s users (Natarajan 2020, about 8 million Fitbit users, morning RMSSD), using the nearest age group in the data (20–61) and, if you share it, your sex. It says whether the value is lower than most, within the middle half or higher than most — no percentile. Without sex it shows both women and men. Apple Watch reports SDNN, a different measure, so it is not compared. This is a comparison with users of one device, not a medical norm. Your own trend matters more.',
+    what: 'Compares one HRV (RMSSD) value from Oura, Whoop, Garmin, Fitbit or Polar with a published distribution from one wearable’s users (Natarajan 2020, about 8 million Fitbit users, morning RMSSD), using the nearest age group in the data (20–61; ages 18–19 are compared with 20–21 and 62–64 with 60–61; above 64 no comparison is made and the 60–61 figures are shown for information only) and, if you share it, your sex. It says whether the value is lower than most, within the middle half or higher than most — no percentile. Without sex it shows both women and men. Apple Watch reports SDNN, a different measure, so it is not compared. The distribution comes from Fitbit wrist data; other devices compute HRV differently, so the comparison is approximate. This is a comparison with users of one device, not a medical norm. Your own trend matters more.',
     prompts: ['I’m 42 and my Apple Watch says my HRV is 38. Is that normal?', 'My Oura shows an HRV of 55 at age 30 — is that good?'],
   },
   {

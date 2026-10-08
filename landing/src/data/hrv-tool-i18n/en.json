@@ -42,7 +42,9 @@
     "sexMale": "men",
     "nearest": "The study reports two-year age groups every five years. We use the group nearest to your age and do not estimate values in between.",
     "edgeYoung": "The data start at age 20, so you are compared with the youngest group (20–21).",
-    "edgeOld": "The data stop at age 61, so you are compared with the oldest group (60–61)."
+    "edgeOld": "The data stop at age 61, so you are compared with the oldest group (60–61).",
+    "infoOnly": "For information only — Fitbit {{sex}} aged {{band}}: the middle half had {{p25}}–{{p75}} ms, the median was {{p50}} ms (RMSSD, 6–7 a.m.).",
+    "noCompare": "The published data end at age 61; no comparison is made for your age."
   },
   "verdicts": {
     "lower": "Lower than most Fitbit users your age",
@@ -50,6 +52,7 @@
     "higher": "Higher than most Fitbit users your age"
   },
   "disclaimerLine": "This is a comparison with users of one device, not a medical norm. Your own trend matters more.",
+  "deviceNote": "The distribution comes from Fitbit wrist data; other devices (Oura, Whoop, Garmin, Polar, Apple) compute HRV differently, so the comparison is approximate.",
   "summaries": {
     "lower": "A value below the middle half is common and on its own says little: genetics, your device, the time of the reading, a short night, alcohol, illness or hard training can all explain it. Watch whether your 7-day average stays below your own usual range.",
     "middle": "A quarter of users had lower values and a quarter had higher ones. More useful than this comparison is whether your own HRV holds steady or rises over the coming weeks.",

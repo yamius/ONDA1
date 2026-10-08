@@ -54,7 +54,7 @@ What to keep in mind about this table:
 
 - **Fitbit users, not the general population.** People who wear a fitness tracker are not a random sample, and age and sex were self-reported.
 - **Wrist optical sensor, early morning.** Values come from several Fitbit models during still periods at 6–7 a.m.; a chest-strap ECG, another brand or a whole-night average gives different numbers.
-- **Ages 20 to 61 only**, in two-year slices every five years.
+- **Ages 20 to 61 only**, in two-year slices every five years. Our calculator compares ages 18–19 with 20–21 and 62–64 with 60–61; above 64 it makes no comparison and shows the 60–61 figures for information only.
 - **The study was done by Fitbit.** Three of the four authors were Fitbit employees, and Fitbit funded the work.
 
 If your number sits near your age row, that's normal. If it sits below, that alone means little — it could be your genetics, your device, or a rough week. What matters is the direction it moves over time.

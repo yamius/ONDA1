@@ -132,10 +132,11 @@ export function HrvInterpreterPage() {
         </div>
         <p className="mt-2 font-mono text-[11px] leading-relaxed text-white/40">{c.hint}</p>
 
-        {result && (
+        {result && result.verdict && (
           <div className="mt-6" aria-live="polite">
             <p className={`mb-2 text-2xl font-bold ${VERDICT_COLOR[result.verdict]}`}>{c.verdicts[result.verdict]}</p>
             <p className="mb-2 font-mono text-xs leading-relaxed text-white/70">{c.disclaimerLine}</p>
+            <p className="mb-2 font-mono text-xs leading-relaxed text-white/70">{c.deviceNote}</p>
             <p className="mb-2 font-mono text-xs leading-relaxed text-white/60">
               {fill(c.result.compared, {
                 sex: result.sex === 'female' ? c.result.sexFemale : c.result.sexMale,
@@ -150,14 +151,33 @@ export function HrvInterpreterPage() {
             <UseInClaudeLink lang={lang} variant="hrv" className="mt-4" />
           </div>
         )}
-        {both && (
+        {/* Age above HRV_MAX_COMPARED_AGE: no verdict, 60–61 shown for information only. */}
+        {(result ? !result.verdict : both ? !both.female.verdict : false) && (
+          <div className="mt-6" aria-live="polite">
+            <p className="mb-2 font-mono text-xs leading-relaxed text-white/80">{c.result.noCompare}</p>
+            {(result ? [result] : both ? [both.female, both.male] : []).map((r) => (
+              <p key={r.sex} className="mb-2 font-mono text-xs leading-relaxed text-white/60">
+                {fill(c.result.infoOnly, {
+                  sex: r.sex === 'female' ? c.result.sexFemale : c.result.sexMale,
+                  band: r.point.label,
+                  p25: r.ref.p25,
+                  p75: r.ref.p75,
+                  p50: r.ref.p50,
+                })}
+              </p>
+            ))}
+            <p className="mb-2 font-mono text-xs leading-relaxed text-white/70">{c.deviceNote}</p>
+            <p className="mb-2 font-mono text-xs leading-relaxed text-white/70">{c.disclaimerLine}</p>
+          </div>
+        )}
+        {both && both.female.verdict && both.male.verdict && (
           <div className="mt-6" aria-live="polite">
             {(['female', 'male'] as const).map((s) => (
               <p key={s} className="mb-2 font-mono text-xs leading-relaxed text-white/70">
                 {fill(c.result.comparedPosition, {
                   sex: s === 'female' ? c.result.sexFemale : c.result.sexMale,
                   band: both[s].point.label,
-                  position: c.result.position[both[s].verdict],
+                  position: c.result.position[both[s].verdict!],
                   p25: both[s].ref.p25,
                   p75: both[s].ref.p75,
                   p50: both[s].ref.p50,
@@ -165,6 +185,7 @@ export function HrvInterpreterPage() {
               </p>
             ))}
             <p className="mb-2 font-mono text-xs leading-relaxed text-white/70">{c.disclaimerLine}</p>
+            <p className="mb-2 font-mono text-xs leading-relaxed text-white/70">{c.deviceNote}</p>
             <p className="mb-2 font-mono text-xs leading-relaxed text-white/60">{ageNote}</p>
             <UseInClaudeLink lang={lang} variant="hrv" className="mt-4" />
           </div>

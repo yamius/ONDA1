@@ -42,7 +42,9 @@
     "sexMale": "mannen",
     "nearest": "De studie geeft leeftijdsgroepen van twee jaar, om de vijf jaar. We gebruiken de groep die het dichtst bij je leeftijd ligt en schatten geen waarden daartussen.",
     "edgeYoung": "De gegevens beginnen bij 20 jaar, dus je wordt vergeleken met de jongste groep (20–21).",
-    "edgeOld": "De gegevens stoppen bij 61 jaar, dus je wordt vergeleken met de oudste groep (60–61)."
+    "edgeOld": "De gegevens stoppen bij 61 jaar, dus je wordt vergeleken met de oudste groep (60–61).",
+    "infoOnly": "Alleen ter informatie — Fitbit-gebruikers ({{sex}}) van {{band}} jaar: de middelste helft had {{p25}}–{{p75}} ms, de mediaan was {{p50}} ms (RMSSD, 6–7 uur 's ochtends).",
+    "noCompare": "De gepubliceerde gegevens stoppen bij 61 jaar; voor jouw leeftijd wordt geen vergelijking gemaakt."
   },
   "verdicts": {
     "lower": "Lager dan bij de meeste Fitbit-gebruikers van jouw leeftijd",
@@ -50,6 +52,7 @@
     "higher": "Hoger dan bij de meeste Fitbit-gebruikers van jouw leeftijd"
   },
   "disclaimerLine": "Dit is een vergelijking met gebruikers van één apparaat, geen medische norm. Je eigen trend telt zwaarder.",
+  "deviceNote": "De verdeling komt uit Fitbit-polsgegevens; andere apparaten (Oura, Whoop, Garmin, Polar, Apple) berekenen HRV anders, dus de vergelijking is bij benadering.",
   "summaries": {
     "lower": "Een waarde onder de middelste helft komt vaak voor en zegt op zichzelf weinig: aanleg, je apparaat, het tijdstip van meten, een korte nacht, alcohol, ziekte of zware training kunnen het verklaren. Let erop of je 7-daags gemiddelde onder je gebruikelijke bereik blijft.",
     "middle": "Een kwart van de gebruikers had lagere waarden en een kwart hogere. Nuttiger dan deze vergelijking is of je eigen HRV de komende weken stabiel blijft of stijgt.",

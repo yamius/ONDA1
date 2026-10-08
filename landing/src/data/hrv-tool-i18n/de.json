@@ -42,7 +42,9 @@
     "sexMale": "Männer",
     "nearest": "Die Studie nennt Zwei-Jahres-Altersgruppen im Abstand von fünf Jahren. Wir nehmen die Gruppe, die deinem Alter am nächsten liegt, und schätzen keine Werte dazwischen.",
     "edgeYoung": "Die Daten beginnen mit 20 Jahren, deshalb wirst du mit der jüngsten Gruppe (20–21) verglichen.",
-    "edgeOld": "Die Daten enden mit 61 Jahren, deshalb wirst du mit der ältesten Gruppe (60–61) verglichen."
+    "edgeOld": "Die Daten enden mit 61 Jahren, deshalb wirst du mit der ältesten Gruppe (60–61) verglichen.",
+    "infoOnly": "Nur zur Information – Fitbit-Nutzer ({{sex}}) im Alter von {{band}}: Die mittlere Hälfte lag bei {{p25}}–{{p75}} ms, der Median bei {{p50}} ms (RMSSD, 6–7 Uhr morgens).",
+    "noCompare": "Die veröffentlichten Daten enden mit 61 Jahren; für dein Alter wird kein Vergleich gemacht."
   },
   "verdicts": {
     "lower": "Niedriger als bei den meisten Fitbit-Nutzern deines Alters",
@@ -50,6 +52,7 @@
     "higher": "Höher als bei den meisten Fitbit-Nutzern deines Alters"
   },
   "disclaimerLine": "Das ist ein Vergleich mit Nutzern eines einzigen Geräts, keine medizinische Norm. Dein eigener Trend ist wichtiger.",
+  "deviceNote": "Die Verteilung stammt aus Fitbit-Handgelenksdaten; andere Geräte (Oura, Whoop, Garmin, Polar, Apple) berechnen die HRV anders, deshalb ist der Vergleich nur ungefähr.",
   "summaries": {
     "lower": "Ein Wert unterhalb der mittleren Hälfte ist häufig und sagt allein wenig aus: Gene, dein Gerät, der Zeitpunkt der Messung, eine kurze Nacht, Alkohol, Krankheit oder hartes Training können ihn erklären. Achte darauf, ob dein 7-Tage-Durchschnitt unter deinem üblichen Bereich bleibt.",
     "middle": "Ein Viertel der Nutzer hatte niedrigere Werte, ein Viertel höhere. Wichtiger als dieser Vergleich ist, ob deine eigene HRV in den kommenden Wochen stabil bleibt oder steigt.",
