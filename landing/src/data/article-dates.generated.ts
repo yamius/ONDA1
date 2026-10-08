@@ -226,7 +226,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "fascial-tensegrity-protocol-myofascial-noise": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-10-08T01:38:48+02:00"
+    "modified": "2026-10-08T13:05:49+02:00"
   },
   "fast-vs-slow-pranayama": {
     "published": "2026-09-22T18:37:38+02:00",
@@ -234,7 +234,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "fault-tolerant-human-hrv-buffer": {
     "published": "2026-03-24T12:53:43Z",
-    "modified": "2026-10-06T20:41:29+02:00"
+    "modified": "2026-10-08T13:05:49+02:00"
   },
   "femtech-cyclical-architecture": {
     "published": "2026-03-04T21:35:50+01:00",
@@ -318,7 +318,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-to-train-your-nervous-system": {
     "published": "2026-09-19T01:18:42+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T13:05:49+02:00"
   },
   "hpa-axis-control-cortisol-aggression": {
     "published": "2026-03-10T14:37:54Z",
@@ -342,7 +342,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "humming-breath-vagus": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T13:05:49+02:00"
   },
   "hydraulic-viscosity-onda-transport-bus": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -494,7 +494,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "om-chanting-brain-vagus": {
     "published": "2026-09-24T22:03:37+02:00",
-    "modified": "2026-10-06T15:15:46+02:00"
+    "modified": "2026-10-08T13:05:49+02:00"
   },
   "onda-report-for-your-cardiologist": {
     "published": "2026-09-26T13:37:15+02:00",
@@ -650,7 +650,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "vagus-nerve-exercises": {
     "published": "2026-06-04T14:36:55+02:00",
-    "modified": "2026-10-08T01:38:48+02:00"
+    "modified": "2026-10-08T13:05:49+02:00"
   },
   "vascular-tensegrity-microvascular-mechanics": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-08T11:54:33+02:00"
+    "modified": "2026-10-08T13:05:49+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",

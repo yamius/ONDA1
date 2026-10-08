@@ -2475,6 +2475,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.jsams.2021.04.012": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Monitoring and adapting endurance training on the basis of heart rate variability monitored by wearable technologies: A systematic review with meta-analysis",
+   "firstAuthor": "Düking",
+   "authors": [
+    "Düking",
+    "Zinner",
+    "Trabelsi",
+    "Reed",
+    "Holmberg",
+    "Kunz",
+    "Sperlich"
+   ],
+   "year": 2021,
+   "journal": "Journal of Science and Medicine in Sport",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1016/j.jsmc.2009.02.006": {
    "kind": "doi",
    "valid": true,
@@ -5837,6 +5856,30 @@
    "journal": "Menopause",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1097/hcr.0000000000001017": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart Rate Variability-Guided Exercise Training Compared With Standard Exercise Training in Patients With Coronary Artery Disease: A Randomized Clinical Trial",
+   "firstAuthor": "Besnier",
+   "authors": [
+    "Besnier",
+    "Gayda",
+    "Magnan",
+    "Iglesies-Grau",
+    "Bouvard",
+    "Martin",
+    "Clavet",
+    "Duclos",
+    "Nigam",
+    "Juneau",
+    "L’Allier",
+    "Bherer"
+   ],
+   "year": 2026,
+   "journal": "Journal of Cardiopulmonary Rehabilitation and Prevention",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1097/hjh.0000000000001217": {
    "kind": "doi",
@@ -17464,6 +17507,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:34489178": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Monitoring and adapting endurance training on the basis of heart rate variability monitored by wearable technologies: A systematic review with meta-analysis.",
+   "firstAuthor": "Düking",
+   "authors": [
+    "Düking",
+    "Zinner",
+    "Trabelsi",
+    "Reed",
+    "Holmberg",
+    "Kunz",
+    "Sperlich"
+   ],
+   "year": 2021,
+   "journal": "J Sci Med Sport",
+   "doi": "10.1016/j.jsams.2021.04.012",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:34514386": {
    "kind": "pmid",
    "valid": true,
@@ -19338,6 +19401,31 @@
    "doi": "10.3389/fphys.2025.1696346",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41627302": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart Rate Variability-Guided Exercise Training Compared With Standard Exercise Training in Patients With Coronary Artery Disease: A RANDOMIZED CLINICAL TRIAL.",
+   "firstAuthor": "Besnier",
+   "authors": [
+    "Besnier",
+    "Gayda",
+    "Magnan",
+    "Iglesies-Grau",
+    "Bouvard",
+    "Martin",
+    "Clavet",
+    "Duclos",
+    "Nigam",
+    "Juneau",
+    "L'Allier",
+    "Bherer"
+   ],
+   "year": 2026,
+   "journal": "J Cardiopulm Rehabil Prev",
+   "doi": "10.1097/HCR.0000000000001017",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:41743305": {
    "kind": "pmid",

@@ -1,5 +1,5 @@
 ---
-sourceHash: "0bbffcc298fa"
+sourceHash: "20e5cd0bc337"
 title: "Czy można ufać HRV ze smartwatcha lub pierścienia?"
 metaTitle: "HRV z zegarka lub pierścienia: czy można mu ufać?"
 metaDescription: "HRV ze smartwatcha lub pierścienia to szacunek z sygnału tętna, a nie odczyt EKG. Gdzie obie metody się zgadzają, gdzie rozchodzą i jak czytać swoje wyniki."

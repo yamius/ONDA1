@@ -29,7 +29,7 @@ related:
   glossary: [heart-rate-variability, slow-wave-sleep]
   articles: [how-much-sleep-do-you-need, onda-report-for-your-sleep-specialist]
   tools: [sleep-cycle]
-  science: [mechanisms/hrv-day-to-day, concepts/hrv-baseline, measurements/heart-rate-variability, concepts/interpreting-hrv]
+  science: [mechanisms/hrv-day-to-day, concepts/hrv-baseline, measurements/heart-rate-variability, concepts/interpreting-hrv, mechanisms/exercise-and-hrv]
 sources:
   - id: S1
     cite: "Trinder et al. (2001)"

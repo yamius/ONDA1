@@ -1,5 +1,5 @@
 ---
-sourceHash: "0bbffcc298fa"
+sourceHash: "20e5cd0bc337"
 title: "Kun je HRV van een smartwatch of ring vertrouwen?"
 metaTitle: "HRV van wearables: horloge of ring te vertrouwen?"
 metaDescription: "HRV van een smartwatch of ring is een schatting uit het polssignaal, geen ecg-meting. Waar ze overeenkomen, waar ze uiteenlopen en hoe je je getallen leest."

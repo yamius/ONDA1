@@ -457,6 +457,15 @@ All checked against PubMed on 2026-10-08 (report 046_humming_report.md; quotes f
 | Álvarez-Pérez 2022 | Álvarez-Pérez Y, et al. Effectiveness of mantra-based meditation on mental health: a systematic review and meta-analysis. *Int J Environ Res Public Health* 2022;19(6):3380 | meta-analysis / context-dependent | DOI 10.3390/ijerph19063380 · PMID 35329068 | Small-to-moderate reductions in anxiety, depression, stress; risk of bias; mostly silent mantra |
 | Daykin 2018 | Daykin N, et al. What works for wellbeing? A systematic review of wellbeing outcomes for music and singing in adults. *Perspect Public Health* 2018;138(1):39-46 | systematic review / context-dependent | DOI 10.1177/1757913917740391 · PMID 29130840 | Music and singing and wellbeing in adults |
 
+## Exercise and HRV (mechanisms/exercise-and-hrv, 2026-10-08)
+
+Owner-provided sources (Yakiv, 2026-10-08), abstracts re-checked verbatim against Europe PMC / PubMed on 2026-10-08 (report 047_exercise_and_hrv.md). Stanley 2013 and Carter 2026 are already listed above. Facts `study.duking2021.studies`, `study.duking2021.submaximal`, `study.besnier2026.design`, `study.besnier2026.vo2peak` approved 2026-10-08 under this owner task. Zhang 2025 (athlete biofeedback) not used: it mixes HRV biofeedback with neurofeedback and does not isolate an HRVB effect.
+
+| Source | Full reference | Type / class | ID | Use for |
+|---|---|---|---|---|
+| Düking 2021 | Düking P, Zinner C, Trabelsi K, Reed JL, Holmberg HC, Kunz P, Sperlich B. Monitoring and adapting endurance training on the basis of heart rate variability monitored by wearable technologies: a systematic review with meta-analysis. *J Sci Med Sport* 2021;24(11):1180–1192 | meta-analysis (small, heterogeneous trials) / emerging | DOI 10.1016/j.jsams.2021.04.012 · PMID 34489178 | HRV-guided vs predefined endurance training: medium effect on submaximal parameters, no significant effect on performance or VO2peak, fewer non-responders; facts `study.duking2021.studies`, `study.duking2021.submaximal` |
+| Besnier 2026 | Besnier F, Gayda M, Magnan PO, et al. Heart rate variability-guided exercise training compared with standard exercise training in patients with coronary artery disease: a randomized clinical trial. *J Cardiopulm Rehabil Prev* 2026;46(3):211–218 | randomized trial (small, cardiac rehabilitation) / emerging | DOI 10.1097/hcr.0000000000001017 · PMID 41627302 | Null primary outcome (VO2peak similar); secondary threshold signal must not carry the conclusion; authors declare no conflicts; facts `study.besnier2026.design`, `study.besnier2026.vo2peak` |
+
 ## Official documents (type `official`: URL, no DOI — device and regulatory facts only)
 
 | Source | URL | Use for |

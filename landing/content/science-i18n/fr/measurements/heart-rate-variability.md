@@ -1,5 +1,5 @@
 ---
-sourceHash: "0bbffcc298fa"
+sourceHash: "20e5cd0bc337"
 title: "Peut-on se fier à la HRV d’une montre ou d’une bague connectée ?"
 metaTitle: "HRV d’une montre ou d’une bague : fiable ou non ?"
 metaDescription: "La HRV d’une montre ou d’une bague est une estimation tirée du pouls, pas un ECG. Où les deux concordent, où elles divergent, comment lire vos chiffres."

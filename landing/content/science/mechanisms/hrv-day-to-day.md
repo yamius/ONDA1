@@ -30,7 +30,7 @@ related:
   glossary: [heart-rate-variability, circadian-rhythm]
   articles: [how-much-alcohol-lowers-hrv, overtraining-hrv-resting-heart-rate, how-much-sleep-do-you-need]
   tools: [hrv]
-  science: [concepts/hrv-baseline, concepts/interpreting-hrv, measurements/resting-heart-rate, measurements/heart-rate-variability]
+  science: [concepts/hrv-baseline, concepts/interpreting-hrv, measurements/resting-heart-rate, measurements/heart-rate-variability, mechanisms/exercise-and-hrv]
 sources:
   - id: S1
     cite: "Bellenger et al. (2022)"

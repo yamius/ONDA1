@@ -1,5 +1,5 @@
 ---
-sourceHash: "316a58d3a51c"
+sourceHash: "bb28101534fc"
 title: "HRV und Herzfrequenz im Schlaf: Warum die Nacht das beste Messfenster ist"
 metaTitle: "HRV und Herzfrequenz im Schlaf"
 metaDescription: "Was mit Herzfrequenz und HRV über die Nacht und die Schlafstadien passiert, warum Nachtwerte das stabilste Fenster sind und was Wearables sagen können und was nicht."

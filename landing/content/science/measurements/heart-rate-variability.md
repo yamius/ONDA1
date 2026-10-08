@@ -29,7 +29,7 @@ related:
   glossary: [heart-rate-variability]
   articles: [hrv-different-every-device, apple-watch-recovery-hrv-vs-overall-hrv, how-to-measure-hrv-consistently]
   tools: [hrv]
-  science: [concepts/rmssd, concepts/sdnn]
+  science: [concepts/rmssd, concepts/sdnn, mechanisms/exercise-and-hrv]
 relatedPlanned: [concepts/heart-rate-variability, concepts/hrv-baseline, measurements/resting-heart-rate, mechanisms/breathing-and-hrv, evidence/hrv-biofeedback]
 sources:
   - id: S1

@@ -1,5 +1,5 @@
 ---
-sourceHash: "0bbffcc298fa"
+sourceHash: "20e5cd0bc337"
 title: "Kann man der HRV von Smartwatch oder Ring trauen?"
 metaTitle: "HRV von Wearables: Kann man Uhr oder Ring trauen?"
 metaDescription: "Die HRV von Smartwatch und Ring ist eine Schätzung aus dem Pulssignal, keine EKG-Messung. Wo beide übereinstimmen, wo sie abweichen und wie du deine Werte liest."

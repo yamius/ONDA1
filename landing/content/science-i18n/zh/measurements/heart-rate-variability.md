@@ -1,5 +1,5 @@
 ---
-sourceHash: "0bbffcc298fa"
+sourceHash: "20e5cd0bc337"
 title: "智能手表或指环测得的 HRV 可信吗？"
 metaTitle: "可穿戴设备 HRV：手表和指环的数值可信吗？"
 metaDescription: "智能手表和指环的 HRV 是根据脉搏信号得出的估算值，而不是心电图读数。本文介绍两者在哪些情况下一致、在哪些情况下偏离，以及该如何解读你的数值。"

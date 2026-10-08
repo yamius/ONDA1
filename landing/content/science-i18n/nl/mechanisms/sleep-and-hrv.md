@@ -1,5 +1,5 @@
 ---
-sourceHash: "316a58d3a51c"
+sourceHash: "bb28101534fc"
 title: "HRV en hartslag tijdens de slaap: waarom de nacht het beste meetvenster is"
 metaTitle: "HRV en hartslag tijdens de slaap"
 metaDescription: "Wat er 's nachts en in de slaapfasen gebeurt met hartslag en HRV, waarom nachtelijke metingen het stabielste venster zijn en wat wearables wel en niet zeggen."

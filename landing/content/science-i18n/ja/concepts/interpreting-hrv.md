@@ -1,5 +1,5 @@
 ---
-sourceHash: "c535fb5db147"
+sourceHash: "6e6ab4ef8d19"
 title: "HRVの一つの値からわかること、わからないこと"
 metaTitle: "HRVの読み方：一つの値からわかること"
 metaDescription: "HRVの一つの測定値が本当に示すもの、低い値が診断ではない理由、高い値が必ずしもよいとは限らない理由、そして他人のHRVと比べると誤解を招く理由を解説します。"
