@@ -88,7 +88,7 @@ In trainingsstudies wordt HRV meestal 's ochtends bij het wakker worden vastgele
 - **Duur.** Op basis van beperkte gegevens is de duur van een training waarschijnlijk niet de belangrijkste factor [S1].
 - **Soort inspanning.** De meeste gegevens komen uit aerobe inspanning; kracht- en weerstandstraining zijn te weinig onderzocht om hetzelfde tijdsverloop te noemen [S1].
 
-De signalen van overreaching komen uitgebreider aan bod in [overtraining, HRV en rusthartslag](/articles/overtraining-hrv-resting-heart-rate).
+De signalen van overbelasting (overreaching) komen uitgebreider aan bod in [overtraining, HRV en rusthartslag](/articles/overtraining-hrv-resting-heart-rate).
 
 ## Wat laat HRV zien over weken van training?
 

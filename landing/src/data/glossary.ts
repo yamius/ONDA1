@@ -2302,7 +2302,7 @@ Yes, but its size varies a lot by situation:
 
 - **Face to face:** people tend to mirror expressions and posture, which nudges their own feelings in the same direction (Hatfield 1993).
 - **In the body:** heart rate, breathing and skin conductance of people who interact can partly line up — called physiological synchrony — but findings are mixed and depend on the setting and measurement (Palumbo et al. 2016).
-- **Online:** in a large Facebook experiment, people who saw fewer positive posts wrote slightly fewer positive posts themselves — a real but very small effect (Kramer et al. 2014).
+- **Online:** one large Facebook study found a real but very small effect: people who saw fewer positive posts wrote slightly fewer positive posts themselves (Kramer et al. 2014).
 
 Popular explanations that “mirror neurons” or “limbic resonance” directly transfer feelings between people go beyond what the evidence shows.
 
