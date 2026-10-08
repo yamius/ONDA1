@@ -19,7 +19,7 @@ const lunaVsOura4: HeadToHead = {
   axes: [
     { name: 'Cost model', winner: 'a', note: 'Luna: ~$300 one-time, no subscription. Oura Ring 4: $349 + ~$6/month. Over a couple of years the Luna costs far less.' },
     { name: 'Accuracy', winner: 'b', note: 'Oura Ring 4 has one independent overnight check of heart rate and HRV against ECG (one study, 13 people); no independent check of its sleep staging was found. The Luna has no independent validation.' },
-    { name: 'Sleep tracking', winner: 'c', note: 'Both report sleep stages, but no independent check of either ring’s sleep staging was found, so neither can be called more accurate.' },
+    { name: 'Sleep tracking', winner: 'tie', note: 'Both report sleep stages, but no independent check of either ring’s sleep staging was found, so neither can be called more accurate.' },
     { name: 'App & ecosystem', winner: 'b', note: 'Oura’s app is the most polished and explanatory in the category; the Luna app is capable but has some rough edges.' },
     { name: 'Single-charge battery', winner: 'b', note: 'Oura Ring 4: ~6–8 days. Luna: ~4 days per charge (the case extends the total). Oura lasts longer between charges.' },
     { name: 'Fit & sizing', winner: 'b', note: 'Oura offers a full size range with a sizing kit; the Luna’s range is narrower.' },
