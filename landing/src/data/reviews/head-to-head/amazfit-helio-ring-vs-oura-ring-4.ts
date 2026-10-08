@@ -18,7 +18,7 @@ const helioVsOura4: HeadToHead = {
     'Choose the Oura Ring 4 if you want the most accurate sleep and HRV, the best app and longer battery, and the membership is acceptable.',
   axes: [
     { name: 'Cost model', winner: 'a', note: 'Helio: $199 one-time, no subscription. Oura Ring 4: $349 + ~$6/month. Over a couple of years the Helio costs a fraction as much.' },
-    { name: 'Accuracy', winner: 'b', note: 'Oura is the validated reference for sleep staging and overnight HRV. The Helio is decent for the price but a clear step behind.' },
+    { name: 'Accuracy', winner: 'b', note: 'Oura Ring 4 has one independent overnight check of heart rate and HRV against ECG (one study, 13 people); no independent check of its sleep staging was found. The Helio has no independent validation.' },
     { name: 'Battery', winner: 'b', note: 'Oura Ring 4: ~6–8 days. Amazfit Helio: ~2.5–3 days real-world. Oura lasts far longer between charges.' },
     { name: 'App & ecosystem', winner: 'b', note: 'Oura’s app is the most polished and explanatory in the category with wide integrations; the Zepp app is capable but plainer.' },
     { name: 'Fit & sizing', winner: 'b', note: 'Oura offers a full size range with a sizing kit. The Helio has only three sizes (8, 10, 12), so many people can’t fit it well.' },
