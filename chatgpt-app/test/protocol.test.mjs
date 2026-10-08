@@ -26,14 +26,25 @@ test('every tool points at a readable MCP Apps card', async () => {
   }
 });
 
-test('check_hrv picks SDNN for Apple Watch and RMSSD otherwise', async () => {
+test('check_hrv: Apple Watch SDNN is not compared; RMSSD uses the nearest Natarajan age point', async () => {
   const aw = (await call('check_hrv', { age: 42, hrv_ms: 38, device: 'apple_watch' })).result.structuredContent;
-  const oura = (await call('check_hrv', { age: 42, hrv_ms: 38, device: 'oura' })).result.structuredContent;
+  const oura = (await call('check_hrv', { age: 42, hrv_ms: 38, device: 'oura', sex: 'female' })).result.structuredContent;
   assert.equal(aw.metric, 'SDNN');
-  assert.equal(aw.ageBand, '35–44');
+  assert.equal(aw.compared, false);
+  assert.equal(aw.verdict, undefined);
   assert.equal(oura.metric, 'RMSSD');
-  assert.equal(oura.ageBand, '40–49');
+  assert.equal(oura.ageGroup, '40–41');
+  assert.equal(oura.verdict, 'middle');
+  assert.match(oura.disclaimer, /not a medical norm/);
   assert.match(aw.bridge.url, /ct=chatgpt_hrv/);
+});
+
+test('check_hrv without sex compares with both groups and gives no single verdict', async () => {
+  const r = (await call('check_hrv', { age: 70, hrv_ms: 20, device: 'garmin', sex: 'prefer_not_to_say' })).result;
+  const d = r.structuredContent;
+  assert.equal(d.verdict, undefined);
+  assert.deepEqual(d.comparisons.map((c) => c.group), ['Fitbit women aged 60–61', 'Fitbit men aged 60–61']);
+  assert.match(r.content[0].text, /not a medical norm/);
 });
 
 test('breathe_now never promises a numeric pacer in the bridge', async () => {
@@ -95,13 +106,13 @@ test('breathe_now accepts 478 sent as a number', async () => {
 test('check_hrv with red-flag symptoms returns only urgent-care guidance', async () => {
   const r = (await call('check_hrv', { age: 50, hrv_ms: 15, device: 'apple_watch', red_flag_symptoms: true })).result;
   assert.equal(r.structuredContent.urgent, true);
-  assert.equal(r.structuredContent.percentile, undefined);
+  assert.equal(r.structuredContent.comparisons, undefined);
   assert.match(r.content[0].text, /emergency|urgent/i);
 });
 
 test('server manifest carries our own description and icon', async () => {
   const r = await handleRpc({ jsonrpc: '2.0', id: 1, method: 'initialize', params: {} });
-  assert.match(r.result.serverInfo.description, /^HRV norms by age/);
+  assert.match(r.result.serverInfo.description, /^HRV by age compared with Fitbit users/);
   assert.match(r.result.serverInfo.icons[0].src, /icon-512\.png$/);
 });
 
@@ -121,13 +132,16 @@ test('ordinary requests (prompts 1-5) never return the urgent-care card', async 
   }
   const hrv = (await call('check_hrv', { age: 42, hrv_ms: 38, device: 'apple_watch', red_flag_symptoms: false })).result.structuredContent;
   assert.equal(hrv.urgent, undefined);
-  assert.equal(hrv.tierLabel, 'Within the typical range, slightly below the median');
+  assert.equal(hrv.compared, false);
 });
 
-test('tier wording: below average only under the 25th percentile', async () => {
-  const lo = (await call('check_hrv', { age: 42, hrv_ms: 24, device: 'apple_watch' })).result.structuredContent;
-  assert.ok(lo.percentile < 25);
-  assert.equal(lo.tierLabel, 'Below average');
+test('verdict thresholds: below p25 lower, above p75 higher', async () => {
+  const lo = (await call('check_hrv', { age: 41, hrv_ms: 25, device: 'oura', sex: 'female' })).result.structuredContent;
+  const mid = (await call('check_hrv', { age: 41, hrv_ms: 26, device: 'oura', sex: 'female' })).result.structuredContent;
+  const hi = (await call('check_hrv', { age: 41, hrv_ms: 53, device: 'oura', sex: 'female' })).result.structuredContent;
+  assert.equal(lo.verdictText, 'Lower than most Fitbit users your age');
+  assert.equal(mid.verdict, 'middle');
+  assert.equal(hi.verdictText, 'Higher than most Fitbit users your age');
 });
 
 test('Claude directory: every tool has full annotations and a short name', async () => {

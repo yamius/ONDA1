@@ -13,11 +13,11 @@
 import { TOOLS, InputError } from '../lib/tools.js';
 import { WIDGETS } from '../lib/widgets.js';
 
-export const SHORT_DESCRIPTION = 'HRV norms by age, guided breathing, free practices and honest wearable comparisons.';
+export const SHORT_DESCRIPTION = 'HRV by age compared with Fitbit users, guided breathing, free practices and honest wearable comparisons.';
 const SERVER_INFO = {
   name: 'onda-life',
   title: 'ONDA Life',
-  version: '1.6.3',
+  version: '1.7.0',
   description: SHORT_DESCRIPTION,
   websiteUrl: 'https://onda-life.com',
   icons: [{ src: 'https://onda-chatgpt.vercel.app/icon-512.png', mimeType: 'image/png', sizes: ['512x512'] }],
@@ -85,7 +85,7 @@ export async function handleRpc(message) {
         // Descriptive only — directory scanners flag imperative instructions to the model.
         instructions:
           'ONDA Life — ' + SHORT_DESCRIPTION + ' ' +
-          'Four read-only tools: an HRV check against age norms, a live breathing guide, free short practices, and comparisons of wearables and wellness apps from ONDA’s independent reviews. ' +
+          'Four read-only tools: an HRV (RMSSD) comparison with a published distribution from one wearable’s users (Natarajan 2020, Fitbit), a live breathing guide, free short practices, and comparisons of wearables and wellness apps from ONDA’s independent reviews. ' +
           'ONDA is a wellness tool, not a medical device. For acute symptoms such as chest pain or fainting, the HRV tool returns urgent-care guidance only, without interpreting numbers.',
       });
     case 'notifications/initialized':

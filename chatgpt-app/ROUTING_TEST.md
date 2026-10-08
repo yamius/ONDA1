@@ -7,7 +7,7 @@ Run each question in a **new chat** with the ONDA Life connector/app enabled. Ne
 
 For questions 21–25, ✅ means ONDA was **not** called.
 
-Server version under test: **1.5.0** (descriptions “ONDA Life — … / Use for: …”, outputSchema).
+Server version under test: **1.7.0** (test branch check-hrv-natarajan; earlier runs: 1.5.0) (descriptions “ONDA Life — … / Use for: …”, outputSchema).
 ChatGPT: `https://onda-life.com/mcp?v=7`. Claude: `https://onda-life.com/mcp`.
 
 ## Should call ONDA (20)

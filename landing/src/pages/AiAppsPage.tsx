@@ -15,16 +15,16 @@ const PAGE_URL = `${SITE_URL}/ai-apps`
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
 export const AI_APPS_TITLE = 'ONDA for ChatGPT & Claude: HRV and Breathing'
 export const AI_APPS_DESC =
-  'Use ONDA inside ChatGPT and Claude: check HRV against age norms, breathe with a live guide, find a free 6-minute practice, compare wearables. No account.'
+  'Use ONDA inside ChatGPT and Claude: compare HRV with Fitbit users your age, breathe with a live guide, find a free 6-minute practice, compare wearables. No account.'
 const MCP_URL = 'https://onda-life.com/mcp'
 const SUPPORT = 'info@onda-life.com'
-const DATE_MODIFIED = '2026-10-04'
+const DATE_MODIFIED = '2026-10-08'
 
 const TOOLS: { name: string; title: string; what: string; prompts: string[] }[] = [
   {
     name: 'check_hrv',
-    title: 'Check HRV for your age',
-    what: 'Compares one HRV value with population norms for your age and shows where you sit on a percentile scale. Apple Watch values are read against an SDNN table; Oura, Whoop, Garmin, Fitbit and Polar values against an RMSSD table. A rough population anchor, not a medical assessment — your own trend matters more.',
+    title: 'Compare HRV with Fitbit users your age',
+    what: 'Compares one HRV (RMSSD) value from Oura, Whoop, Garmin, Fitbit or Polar with a published distribution from one wearable’s users (Natarajan 2020, about 8 million Fitbit users, morning RMSSD), using the nearest age group in the data (20–61) and, if you share it, your sex. It says whether the value is lower than most, within the middle half or higher than most — no percentile. Without sex it shows both women and men. Apple Watch reports SDNN, a different measure, so it is not compared. This is a comparison with users of one device, not a medical norm. Your own trend matters more.',
     prompts: ['I’m 42 and my Apple Watch says my HRV is 38. Is that normal?', 'My Oura shows an HRV of 55 at age 30 — is that good?'],
   },
   {

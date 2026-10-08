@@ -92,26 +92,33 @@ const page = (title, css, body, js) => `<!doctype html><html><head><meta charset
 
 // ── check_hrv ───────────────────────────────────────────────────────────
 const hrv = page(
-  'HRV for your age',
-  `.scale{position:relative;height:14px;border-radius:999px;margin:22px 0 6px;background:linear-gradient(90deg,#d9655b 0%,#e8a94f 25%,#7fbf7a 50%,#3fa9b5 80%,#2c7fb8 100%)}
-.pin{position:absolute;top:-24px;transform:translateX(-50%);font-size:12px;font-weight:700;white-space:nowrap}
-.pin:after{content:"";position:absolute;left:50%;top:18px;width:2px;height:22px;background:var(--fg);transform:translateX(-50%)}
-.ticks{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted)}
-.big{font-size:28px;font-weight:700}`,
+  'HRV compared with Fitbit users your age',
+  `.zones{display:flex;gap:4px;margin:8px 0 4px}.zone{flex:1;text-align:center;font-size:12px;padding:6px 2px;border-radius:8px;background:rgba(127,127,127,.14);color:var(--muted)}
+.zone.on{background:#0f7c8c;color:#fff;font-weight:700}
+.big{font-size:28px;font-weight:700}.grp{margin-top:12px}`,
   `<div class="card" id="root"></div>`,
   `boot((d) => {
   if (d.urgent) { $('#root').innerHTML = '<h2 class="warn">Please get medical help now</h2><p>' + esc(d.message) + '</p>'; return; }
-  const pct = Math.max(2, Math.min(98, d.percentile));
-  $('#root').innerHTML =
-    '<h2>Your HRV for age ' + esc(d.age) + '</h2>' +
-    '<div class="muted">' + esc(d.metric) + ' · age band ' + esc(d.ageBand) + '</div>' +
-    '<div class="row" style="margin-top:10px"><span class="big">' + esc(d.value) + ' ms</span><span>' + esc(d.tierLabel) + ' · ~' + esc(d.percentile) + ' percentile</span></div>' +
-    '<div class="scale"><span class="pin" style="left:' + pct + '%">You</span></div>' +
-    '<div class="ticks"><span>' + d.band.p10 + ' ms</span><span>median ' + d.band.p50 + ' ms</span><span>' + d.band.p90 + ' ms</span></div>' +
-    '<p>' + esc(d.summary) + '</p>' +
-    '<p class="muted small">' + esc(d.metricNote) + ' ' + esc(d.trendNote) + '</p>' +
-    bridge(d.bridge, '<a class="btn ghost" target="_blank" rel="noopener" href="' + esc(d.learnMore) + '">Full calculator</a>') +
+  const foot = bridge(d.bridge, '<a class="btn ghost" target="_blank" rel="noopener" href="' + esc(d.learnMore) + '">Full calculator</a>') +
     '<p class="muted small">' + esc(d.safety) + '</p>';
+  if (!d.compared) {
+    $('#root').innerHTML = '<h2>Your HRV at age ' + esc(d.age) + '</h2>' +
+      '<div class="row" style="margin-top:10px"><span class="big">' + esc(d.value) + ' ms</span><span>' + esc(d.metric) + ' · not compared</span></div>' +
+      '<p>' + esc(d.metricNote) + '</p>' + foot;
+    return;
+  }
+  const NAMES = { lower: 'Below the middle half', middle: 'Middle half', higher: 'Above the middle half' };
+  const zones = (v) => ['lower', 'middle', 'higher'].map((k) => '<div class="zone' + (k === v ? ' on' : '') + '">' + NAMES[k] + '</div>').join('');
+  const groups = (d.comparisons || []).map((c) =>
+    '<div class="grp"><div class="muted small">Compared with ' + esc(c.group) + ': middle half ' + esc(c.p25) + '–' + esc(c.p75) + ' ms, median ' + esc(c.p50) + ' ms</div>' +
+    '<div class="zones">' + zones(c.verdict) + '</div><div class="small">' + esc(c.verdictText) + '</div></div>').join('');
+  $('#root').innerHTML =
+    '<h2>Your HRV at age ' + esc(d.age) + '</h2>' +
+    '<div class="row" style="margin-top:10px"><span class="big">' + esc(d.value) + ' ms</span><span>' + esc(d.metric) + (d.verdictText ? ' · ' + esc(d.verdictText) : '') + '</span></div>' +
+    groups +
+    '<p><strong>' + esc(d.disclaimer) + '</strong></p>' +
+    '<p class="muted small">' + esc(d.ageNote) + ' ' + esc(d.metricNote) + '</p>' +
+    '<p class="muted small">Source: ' + esc(d.source) + '</p>' + foot;
 });`,
 );
 
@@ -202,7 +209,7 @@ boot((d) => {
 );
 
 export const WIDGETS = {
-  hrv: { uri: 'ui://onda/hrv-v5.html', name: 'HRV for your age', html: hrv },
+  hrv: { uri: 'ui://onda/hrv-v6.html', name: 'HRV compared with Fitbit users your age', html: hrv },
   breathe: { uri: 'ui://onda/breathe-v5.html', name: 'Breathing guide', html: breathe },
   practice: { uri: 'ui://onda/practice-v5.html', name: 'ONDA practices', html: practice },
   compare: { uri: 'ui://onda/compare-v5.html', name: 'Device and app comparison', html: compare },

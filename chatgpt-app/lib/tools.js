@@ -3,12 +3,12 @@
  * { structuredContent, text } out. Nothing about the user is stored or logged.
  *
  * Facts come only from generated site data (see landing/scripts/export-chatgpt-data.ts):
- * HRV norms, breathing patterns, adaptive practices and reviews. Bridge wording
+ * HRV distribution (Natarajan 2020, Fitbit users), breathing patterns, adaptive practices and reviews. Bridge wording
  * follows landing/docs/onda-facts-source-of-truth.md — no numeric pacer claim,
  * HRV + personal baseline need Apple Watch, the camera pulse works on any iPhone.
  */
 import { readFileSync } from 'node:fs';
-import { interpretHrv, bandsFor } from './generated/hrv-norms.js';
+import { interpretHrvBoth, HRV_AGE_POINTS, HRV_VERDICT_TEXT, HRV_POSITION_TEXT, HRV_COMPARISON_DISCLAIMER } from './generated/hrv-norms.js';
 import { BREATHING_PATTERNS } from './generated/breathing.js';
 import { appStoreUrl, siteUrl } from './links.js';
 
@@ -25,21 +25,10 @@ export const SAFETY_NOTE =
 /** Validation error whose message is safe to show (never contains the input values). */
 export class InputError extends Error {}
 
-const ordinal = (n) => n + ([, 'st', 'nd', 'rd'][(n % 100 >> 3) ^ 1 && n % 10] || 'th');
-
 // Pure computations over bundled site data: read-only, same input → same output, no outside calls.
 const annotations = (title) => ({ title, readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false });
 
 // ───────────────────────────────────────────────────────────── check_hrv ───
-
-/** Card wording: only below the 25th percentile reads as "below average". */
-function tierLabel(p) {
-  if (p < 25) return 'Below average';
-  if (p < 50) return 'Within the typical range, slightly below the median';
-  if (p <= 75) return 'Within the typical range';
-  if (p <= 90) return 'Above average';
-  return 'Top range for your age';
-}
 
 const DEVICE_METRIC = {
   apple_watch: 'sdnn',
@@ -51,14 +40,31 @@ const DEVICE_METRIC = {
   other: 'rmssd',
 };
 
+const SEXES = ['female', 'male', 'prefer_not_to_say'];
+const GROUP = { female: 'Fitbit women', male: 'Fitbit men' };
+const SOURCE_NOTE =
+  'Natarajan A et al. Lancet Digital Health 2020 (Supplementary Table S3): RMSSD between 6 and 7 a.m. among about 8 million Fitbit users (wrist sensor, one day, self-reported age and sex). Three of four authors were Fitbit employees and Fitbit funded the study.';
+const SDNN_MESSAGE =
+  'Apple Watch reports SDNN, a different measure from RMSSD. The published distribution used here is for RMSSD only, so an SDNN value is not compared and gets no verdict. Compare your weekly average with your own baseline instead.';
+
+function ageNote(age, point) {
+  if (age < HRV_AGE_POINTS[0].minAge) return `The data start at age 20, so you are compared with ages ${point.label}.`;
+  if (age > HRV_AGE_POINTS[HRV_AGE_POINTS.length - 1].maxAge) return `The data end at age 61, so you are compared with ages ${point.label}.`;
+  return `Nearest age group in the data: ${point.label} (no estimate between groups).`;
+}
+
+const groupLine = (r) =>
+  `${GROUP[r.sex]} aged ${r.point.label}: middle half ${r.ref.p25}–${r.ref.p75} ms, median ${r.ref.p50} ms (RMSSD, 6–7 a.m.)`;
+
 export const checkHrv = {
   name: 'check_hrv',
-  title: 'Check HRV for your age',
+  title: 'Compare HRV with Fitbit users your age',
   widget: 'hrv',
   description:
-    "ONDA Life — HRV norms by age: compares one heart rate variability (HRV) value with population norms for the person’s age and shows a percentile scale. " +
-    "Apple Watch reports SDNN; Oura, Whoop, Garmin, Fitbit and Polar report RMSSD — the tool picks the matching table from the device. Not a medical assessment. " +
-    "Use for: is my HRV normal; good HRV for my age; low HRV for my age; Apple Watch HRV meaning; Oura or Whoop HRV score; heart rate variability by age. " +
+    "ONDA Life — HRV by age: compares one heart rate variability (RMSSD) value with a published distribution from one wearable's users (Natarajan 2020, about 8 million Fitbit users, morning RMSSD by age and sex). " +
+    "It is a comparison, not a medical norm: it says whether the value is lower than most, within the middle half, or higher than most users of the nearest age group (ages 20–61 in the data). " +
+    "Oura, Whoop, Garmin, Fitbit and Polar report RMSSD and are compared; Apple Watch reports SDNN, a different measure that is not compared. Sex is optional; without it the value is shown against both women and men. " +
+    "Use for: is my HRV normal for my age; good HRV for my age; Oura or Whoop HRV score; heart rate variability by age; Apple Watch HRV meaning. " +
     "The optional red_flag_symptoms flag covers only acute symptoms: chest pain or pressure; fainting or nearly fainting; severe shortness of breath; " +
     "a racing, pounding or irregular heartbeat that does not settle at rest; new confusion, weakness on one side or trouble speaking. " +
     "When the flag is true the tool returns urgent-care guidance only and no interpretation. It does not apply to ordinary questions about sleep, stress, tiredness, training or a low value on its own.",
@@ -70,7 +76,12 @@ export const checkHrv = {
       device: {
         type: 'string',
         enum: Object.keys(DEVICE_METRIC),
-        description: 'Where the value comes from; "other" for any other RMSSD source.',
+        description: 'Where the value comes from; "other" for any other RMSSD source. Apple Watch values (SDNN) are not compared.',
+      },
+      sex: {
+        type: 'string',
+        enum: SEXES,
+        description: 'Optional. "prefer_not_to_say" or omitted: the value is shown against both women and men, without a single verdict.',
       },
       red_flag_symptoms: {
         type: 'boolean',
@@ -81,11 +92,11 @@ export const checkHrv = {
     required: ['age', 'hrv_ms', 'device'],
     additionalProperties: false,
   },
-  outputSchema: {"type":"object","description":"Either the HRV interpretation, or { urgent: true, message } when red_flag_symptoms is true.","properties":{"urgent":{"type":"boolean"},"message":{"type":"string"},"age":{"type":"number"},"value":{"type":"number"},"metric":{"type":"string","enum":["SDNN","RMSSD"]},"device":{"type":"string"},"ageBand":{"type":"string"},"percentile":{"type":"number"},"tier":{"type":"string"},"tierLabel":{"type":"string"},"summary":{"type":"string"},"band":{"type":"object","properties":{"p10":{"type":"number"},"p25":{"type":"number"},"p50":{"type":"number"},"p75":{"type":"number"},"p90":{"type":"number"}},"required":[]},"allBands":{"type":"array","items":{"type":"object","properties":{"label":{"type":"string"},"p50":{"type":"number"}},"required":[]}},"trendNote":{"type":"string"},"metricNote":{"type":"string"},"bridge":{"type":"object","properties":{"text":{"type":"string"},"url":{"type":"string"}},"required":["url"]},"learnMore":{"type":"string"},"safety":{"type":"string"}}},
-  annotations: annotations('Check HRV for your age'),
-  invoking: 'Checking HRV norms…',
-  invoked: 'HRV checked',
-  run({ age, hrv_ms, device, red_flag_symptoms }) {
+  outputSchema: {"type":"object","description":"Either the HRV comparison, or { urgent: true, message } when red_flag_symptoms is true.","properties":{"urgent":{"type":"boolean"},"message":{"type":"string"},"age":{"type":"number"},"value":{"type":"number"},"metric":{"type":"string","enum":["SDNN","RMSSD"]},"device":{"type":"string"},"sex":{"type":"string"},"compared":{"type":"boolean"},"ageGroup":{"type":"string"},"ageNote":{"type":"string"},"comparisons":{"type":"array","items":{"type":"object","properties":{"group":{"type":"string"},"sex":{"type":"string"},"p25":{"type":"number"},"p50":{"type":"number"},"p75":{"type":"number"},"verdict":{"type":"string","enum":["lower","middle","higher"]},"verdictText":{"type":"string"}},"required":[]}},"verdict":{"type":"string","enum":["lower","middle","higher"]},"verdictText":{"type":"string"},"disclaimer":{"type":"string"},"metricNote":{"type":"string"},"source":{"type":"string"},"bridge":{"type":"object","properties":{"text":{"type":"string"},"url":{"type":"string"}},"required":["url"]},"learnMore":{"type":"string"},"safety":{"type":"string"}}},
+  annotations: annotations('Compare HRV with Fitbit users your age'),
+  invoking: 'Comparing HRV…',
+  invoked: 'HRV compared',
+  run({ age, hrv_ms, device, sex, red_flag_symptoms }) {
     if (red_flag_symptoms === true || red_flag_symptoms === 'true') {
       return {
         structuredContent: { urgent: true, message: URGENT_MESSAGE },
@@ -95,30 +106,21 @@ export const checkHrv = {
     if (!DEVICE_METRIC[device]) {
       throw new InputError('Invalid input: device must be one of apple_watch, oura, whoop, garmin, fitbit, polar or other.');
     }
+    if (sex != null && !SEXES.includes(sex)) {
+      throw new InputError('Invalid input: sex must be female, male or prefer_not_to_say.');
+    }
     const metric = DEVICE_METRIC[device];
     const value = Math.round(Number(hrv_ms));
     if (!(Number(age) >= 18 && Number(age) <= 100) || !(value >= 3 && value <= 300)) {
       throw new InputError('Invalid input: age must be a whole number from 18 to 100, and hrv_ms a value from 3 to 300 milliseconds.');
     }
-    const r = interpretHrv(Number(age), value, metric);
-    const label = tierLabel(r.percentile);
-    const out = {
-      age: Number(age),
+    const a = Number(age);
+    const base = {
+      age: a,
       value,
       metric: metric.toUpperCase(),
       device,
-      ageBand: r.band.label,
-      percentile: r.percentile,
-      tier: r.tier,
-      tierLabel: label,
-      summary: r.summary,
-      band: { p10: r.band.p10, p25: r.band.p25, p50: r.band.p50, p75: r.band.p75, p90: r.band.p90 },
-      allBands: bandsFor(metric).map((b) => ({ label: b.label, p50: b.p50 })),
-      trendNote: 'One reading says little — compare your weekly average with your own baseline.',
-      metricNote:
-        metric === 'sdnn'
-          ? 'Apple Watch SDNN comes from short readings and runs lower than RMSSD — never compare it with Oura or Whoop numbers.'
-          : 'Night-time RMSSD, the window Oura, Whoop and Garmin measure. Daytime spot readings run lower.',
+      sex: sex || 'prefer_not_to_say',
       bridge: {
         text: 'ONDA builds your personal norm from your Apple Watch history and checks your HRV against it every day.',
         url: appStoreUrl('chatgpt_hrv'),
@@ -126,10 +128,38 @@ export const checkHrv = {
       learnMore: siteUrl('/tools/hrv', 'chatgpt_hrv'),
       safety: SAFETY_NOTE,
     };
-    return {
-      structuredContent: out,
-      text: `${value} ms (${out.metric}) at age ${out.age}: about the ${ordinal(r.percentile)} percentile for ${r.band.label} — ${label}. ${r.summary}`,
+    if (metric === 'sdnn') {
+      const out = { ...base, compared: false, metricNote: SDNN_MESSAGE, disclaimer: HRV_COMPARISON_DISCLAIMER };
+      return { structuredContent: out, text: `${value} ms (SDNN, Apple Watch) at age ${a}: not compared. ${SDNN_MESSAGE}` };
+    }
+    const both = interpretHrvBoth(a, value);
+    const single = sex === 'female' || sex === 'male' ? both[sex] : null;
+    const point = both.female.point;
+    const list = single ? [single] : [both.female, both.male];
+    const comparisons = list.map((r) => ({
+      group: `${GROUP[r.sex]} aged ${r.point.label}`,
+      sex: r.sex,
+      p25: r.ref.p25,
+      p50: r.ref.p50,
+      p75: r.ref.p75,
+      verdict: r.verdict,
+      verdictText: single ? HRV_VERDICT_TEXT[r.verdict] : `Your value is ${HRV_POSITION_TEXT[r.verdict]}`,
+    }));
+    const out = {
+      ...base,
+      compared: true,
+      ageGroup: point.label,
+      ageNote: ageNote(a, point),
+      comparisons,
+      ...(single ? { verdict: single.verdict, verdictText: HRV_VERDICT_TEXT[single.verdict] } : {}),
+      disclaimer: HRV_COMPARISON_DISCLAIMER,
+      metricNote: 'Morning RMSSD from a wrist sensor. Other devices and other times of day give different numbers.',
+      source: SOURCE_NOTE,
     };
+    const text = single
+      ? `${value} ms RMSSD at age ${a}: ${HRV_VERDICT_TEXT[single.verdict]}. Compared with ${groupLine(single)}. ${out.ageNote} ${HRV_COMPARISON_DISCLAIMER}`
+      : `${value} ms RMSSD at age ${a} (sex not given, so no single verdict). Compared with ${groupLine(both.female)}: ${HRV_POSITION_TEXT[both.female.verdict]}. Compared with ${groupLine(both.male)}: ${HRV_POSITION_TEXT[both.male.verdict]}. ${out.ageNote} ${HRV_COMPARISON_DISCLAIMER}`;
+    return { structuredContent: out, text };
   },
 };
 
