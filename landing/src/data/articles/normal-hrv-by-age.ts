@@ -7,10 +7,10 @@ import type { Article } from './types'
  */
 const article: Article = {
   slug: 'normal-hrv-by-age',
-  title: 'Normal HRV by Age: What’s a Good Heart Rate Variability?',
-  seoTitle: 'Normal HRV by Age: What’s a Good HRV? | ONDA Life',
+  title: 'Normal HRV by Age: Chart for Men and Women, and What’s a Good HRV',
+  seoTitle: 'Normal HRV by Age Chart: What’s a Good HRV? | ONDA Life',
   description:
-    'There’s no single good HRV number — it depends on age and your own baseline. Typical HRV ranges by age, why HRV drops as you get older, and why your trend matters more than any average.',
+    'HRV by age chart: median overnight RMSSD is about 58 ms at 18–29, 42 ms in your 40s and 30 ms in your 60s. Apple Watch SDNN norms, men vs women, low HRV.',
   category: 'Biological Software',
   relatedSlugs: ['how-to-raise-hrv-naturally', 'how-to-measure-hrv-consistently', 'hrv-different-every-device', 'resting-heart-rate-by-age', 'your-baseline-knows-first'],
   introStyle: 'rose',
@@ -31,7 +31,7 @@ There is no universal "good" [HRV](/science/concepts/heart-rate-variability) num
 
 More quick answers → **[HRV Questions, Answered](/articles/hrv-questions-answered)** — 52 short answers on what lowers HRV, what raises it and how to measure it.
 
-## What is a normal HRV for my age?
+## HRV by age chart: what is normal for my age?
 
 A normal overnight RMSSD runs from a median of about 58 ms at ages 18–29 down to about 26 ms at 70+ — these are population norms for overnight RMSSD, the number rings and straps report. The median is the middle value; the typical range covers the middle half of healthy people (25th–75th percentile). HRV varies enormously between individuals, so two healthy people the same age can differ by 40 ms or more. Use this as orientation, not a scoreboard:
 
@@ -46,7 +46,7 @@ A normal overnight RMSSD runs from a median of about 58 ms at ages 18–29 down 
 
 If your number sits inside or near your age band, that's normal. If it sits below, that alone means little — it could be your genetics, your device, or a rough week. What matters is the direction it moves over time. How these norms were built (Nunan 2010, Umetani 1998, Voss 2015) is explained on the [HRV calculator](/tools/hrv) page.
 
-## What is a normal HRV on Apple Watch?
+## Apple Watch HRV by age (SDNN chart)
 
 A normal Apple Watch HRV (SDNN) runs from a median of about 46 ms at ages 18–34 down to about 26 ms at 65+ — Apple Watch shows SDNN, not RMSSD, so its numbers can't be compared with the table above. In a study of about 1,900 healthy adults (Voss 2015, 5-minute resting ECG), SDNN ran:
 
@@ -60,7 +60,7 @@ A normal Apple Watch HRV (SDNN) runs from a median of about 46 ms at ages 18–3
 
 Apple Watch takes short readings of about a minute several times a day and at night, so single values jump around more than a lab recording. Compare your 7-day average in the Health app, not one reading.
 
-## Is normal HRV different for men and women?
+## HRV by age and sex: is it different for men and women?
 
 Slightly, and mostly in younger adults. In a large 24-hour ECG study, women under about 30 had somewhat lower HRV than men of the same age, and the difference faded after about 50 (Umetani 1998). The gap is small compared with the spread between individuals, so the same age table works for both sexes as a rough guide. For women, HRV also shifts across the menstrual cycle: vagal HRV tends to be lower in the second half of the cycle, after ovulation (Schmalenberger 2019), so compare the same phase of the cycle when you look at trends.
 

@@ -7,10 +7,10 @@ import type { Article } from './types'
  */
 const article: Article = {
   slug: 'resting-heart-rate-by-age',
-  title: 'Resting Heart Rate by Age: What’s Normal?',
-  seoTitle: 'Resting Heart Rate by Age: What’s Normal? | ONDA Life',
+  title: 'Resting Heart Rate by Age: Chart for Men and Women, and What’s Normal',
+  seoTitle: 'Resting Heart Rate by Age Chart: What’s Normal? | ONDA Life',
   description:
-    'A normal resting heart rate is 60–100 bpm for adults, but the healthy range shifts with age and fitness. Typical resting heart rate ranges by age, what raises or lowers yours, and when it matters.',
+    'Normal resting heart rate is 60–100 bpm for adults. Chart by age, plus CDC medians: about 67–69 bpm for men and 70–74 bpm for women. When to see a doctor.',
   category: 'Biological Software',
   relatedSlugs: ['normal-hrv-by-age', 'heart-rate-recovery-fitness-marker', 'how-to-measure-hrv-consistently', 'caffeine-hrv-resting-heart-rate', 'your-baseline-knows-first'],
   introStyle: 'rose',
@@ -25,11 +25,11 @@ const article: Article = {
     linkText: 'What ONDA measures →',
   },
   content: `
-A normal [resting heart rate](/science/measurements/resting-heart-rate) for most adults is 60 to 100 beats per minute, but the healthy range shifts with age and fitness. Newborns run high (100–160 bpm), children settle down through their teens, and by adulthood most people land between 60 and 100 bpm at rest — with well-trained adults often in the 40s or 50s. A lower resting heart rate generally reflects better cardiovascular fitness, because a stronger heart pumps more blood per beat and needs fewer beats. As with [HRV](/science/concepts/heart-rate-variability), the single most useful comparison isn't the population average — it's how your resting heart rate is trending against your own baseline.
+A normal [resting heart rate](/science/measurements/resting-heart-rate) for most adults is 60 to 100 beats per minute, but the healthy range shifts with age and fitness. Newborns run high (100–160 bpm), children settle down through their teens, and by adulthood most people land between 60 and 100 bpm at rest — with well-trained adults often in the 40s or 50s. In CDC survey data, the median adult resting pulse is about 67–69 bpm for men and 70–74 bpm for women, and it barely changes with age (table below). A lower resting heart rate generally reflects better cardiovascular fitness, because a stronger heart pumps more blood per beat and needs fewer beats. As with [HRV](/science/concepts/heart-rate-variability), the single most useful comparison isn't the population average — it's how your resting heart rate is trending against your own baseline.
 
 **Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age ([RMSSD](/science/concepts/rmssd) from Oura, Whoop, Garmin or [SDNN](/science/concepts/sdnn) from Apple Watch).
 
-## What is a normal resting heart rate by age?
+## Resting heart rate by age chart: what is normal?
 
 A normal adult resting heart rate is 60–100 bpm — a wide band, and fitness moves people within it more than age does. Fit people often sit lower (often below 60 bpm; many elite endurance athletes reach 40 bpm or less at their lowest point of the day), and in population studies a lower resting heart rate is associated with lower long-term mortality. These are general ranges for a healthy resting heart rate:
 
@@ -43,7 +43,7 @@ A normal adult resting heart rate is 60–100 bpm — a wide band, and fitness m
 
 Within adulthood, age itself moves resting heart rate less than you'd expect — a fit 60-year-old can easily have a lower resting heart rate than an unfit 30-year-old. Fitness, stress, sleep and stimulants explain most of the difference.
 
-## Normal resting heart rate for adults: men and women
+## Resting heart rate by age and sex: men and women
 
 In the CDC's NHANES survey of healthy U.S. adults (seated resting pulse, Ostchega 2011), the median barely changes with age, and women run a few beats higher than men:
 

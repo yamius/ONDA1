@@ -119,6 +119,11 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
   ],
   "normal-hrv-by-age": [
     {
+      question: "What is a healthy HRV range?",
+      answer:
+        "For overnight RMSSD, the middle half of healthy people (25th–75th percentile) runs about 42–78 ms at 18–29, 36–68 ms at 30–39, 30–56 ms at 40–49, 26–48 ms at 50–59, 22–42 ms at 60–69 and 19–36 ms at 70+. Apple Watch SDNN has its own, lower norms. A value outside the range is not a diagnosis — compare it with your own baseline.",
+    },
+    {
       question: "What is a good HRV for my age?",
       answer:
         "For overnight RMSSD (Oura, Whoop, Garmin) the median is about 58 ms at 18–29, 50 ms at 30–39, 42 ms at 40–49, 36 ms at 50–59 and 30 ms at 60–69. On Apple Watch (SDNN) it is about 46 ms at 18–34, 42 ms at 35–44 and 34 ms at 45–54. The ranges overlap hugely — your own baseline and trend matter far more than the age average.",
@@ -155,6 +160,11 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     },
   ],
   "resting-heart-rate-by-age": [
+    {
+      question: "What is a normal resting heart rate for men and women?",
+      answer:
+        "In CDC NHANES data (seated resting pulse), the median for men is about 69 bpm at 18–39, 68 bpm at 40–59 and 67 bpm at 60+; for women it is about 74, 71 and 70 bpm. The middle half of healthy adults sits roughly at 60–77 bpm for men and 64–82 bpm for women. Watches and rings usually read a few bpm lower.",
+    },
     {
       question: "What is a normal resting heart rate by age?",
       answer:
