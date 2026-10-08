@@ -48,7 +48,7 @@
       },
       {
         "q": "Qual é uma boa variabilidade da frequência cardíaca (HRV ou VFC)?",
-        "a": "Não existe um único número de HRV bom: ela diminui com a idade e varia de um dispositivo para outro. O RMSSD noturno mediano fica em torno de 58 ms aos vinte e poucos anos e cerca de 30 ms aos sessenta, com uma ampla variação saudável. Uma boa HRV é aquela que se mantém estável ou sobe em relação à sua própria linha de base.",
+        "a": "Não existe um único número de HRV bom: ela cai com a idade e muda conforme o dispositivo. Entre cerca de 8 milhões de usuários de Fitbit, o RMSSD mediano da manhã foi {{fact:hrv.fitbit.rmssd.am.female.median.20-21}} nas mulheres e {{fact:hrv.fitbit.rmssd.am.male.median.20-21}} nos homens aos 20–21 anos, e {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} e {{fact:hrv.fitbit.rmssd.am.male.median.60-61}} aos 60–61, com grande variação em todas as idades. Uma HRV boa é a que se mantém estável ou sobe em relação à sua linha de base.",
         "links": [
           {
             "href": "/articles/normal-hrv-by-age",

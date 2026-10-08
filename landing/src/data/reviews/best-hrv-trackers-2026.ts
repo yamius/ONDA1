@@ -93,7 +93,7 @@ const bestHrvTrackers2026: Comparison = {
     },
     {
       q: 'Do I need a chest strap for HRV?',
-      a: 'No — rings and bands like the Oura Ring 5 and Whoop 5.0 measure overnight HRV well enough to track trends and recovery. A chest strap like the Polar H10 is worth it only if you want reference-grade numbers or are validating another device.',
+      a: 'No — rings and bands like the Oura Ring 5 and Whoop 5.0 are designed to track overnight HRV trends and recovery; neither current model has an independent validation against ECG yet (as of October 2026). A chest strap like the Polar H10 is worth it only if you want reference-grade numbers or are validating another device.',
     },
     {
       q: 'Which HRV trackers have no subscription?',

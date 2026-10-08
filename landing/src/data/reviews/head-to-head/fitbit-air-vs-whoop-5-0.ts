@@ -8,14 +8,14 @@ const fitbitAirVsWhoop50: HeadToHead = {
   description:
     'Fitbit Air vs Whoop 5.0 — the screenless-band showdown. A $99 no-subscription-basics tracker versus the subscription-only recovery coach. Which 24/7 HRV band to buy.',
   intro:
-    'Both are screenless bands you wear around the clock for HRV, sleep and recovery — but they sit at opposite ends of the model. The Fitbit Air is a $99 pod whose core metrics work with no subscription; Whoop 5.0 is a membership-only product ($199–$359 a year) with the sharpest recovery-and-strain coaching in the category and years of validation behind it. One is the cheapest honest way in; the other is the proven instrument for people who train on the signal.',
+    'Both are screenless bands you wear around the clock for HRV, sleep and recovery — but they sit at opposite ends of the model. The Fitbit Air is a $99 pod whose core metrics work with no subscription; Whoop 5.0 is a membership-only product ($199–$359 a year) with the sharpest recovery-and-strain coaching in the category on a mature platform; overnight HRV of the earlier WHOOP 4.0 was checked against a chest-strap reference (Dial 2025), but no independent validation of the 5.0 against ECG was found (as of October 2026). One is the cheapest honest way in; the other is the established instrument for people who train on the signal.',
   winnerSlug: null,
   verdict:
     'No single winner — they serve different buyers. Whoop 5.0 is the proven, coaching-grade choice for people who train on recovery; the Fitbit Air is the far cheaper, no-subscription on-ramp for everyone else — with the caveat that its accuracy is still unvalidated.',
   bestForA:
     'Choose the Fitbit Air if you want continuous HRV, sleep and SpO2 for a one-time $99 with no subscription wall on the basics — and you can accept that, as a May-2026 device, its accuracy is not yet independently validated.',
   bestForB:
-    'Choose Whoop 5.0 if recovery and strain coaching actually drives how you train, and you want a validated, mature platform — accepting the ongoing $199–$359 yearly membership.',
+    'Choose Whoop 5.0 if recovery and strain coaching actually drives how you train, and you want a mature platform (its predecessor WHOOP 4.0 was validated overnight; the 5.0 itself has not been) — accepting the ongoing $199–$359 yearly membership.',
   axes: [
     { name: 'HRV accuracy', winner: 'b', note: 'Whoop has years of validation work behind it. The Fitbit Air is brand-new with no independent validation yet — unknown, not proven equal.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s Recovery + Strain model is the sharpest daily-readiness coach in consumer wearables. Fitbit’s readiness is lighter, with the deeper coaching behind Premium.' },
@@ -40,7 +40,7 @@ const fitbitAirVsWhoop50: HeadToHead = {
     },
     {
       q: 'Which should an athlete buy?',
-      a: 'Whoop 5.0 — its recovery-and-strain coaching is built for training on the signal, and it has the validation to back the numbers. The Fitbit Air is a general-wellness on-ramp, not a training instrument.',
+      a: 'Whoop 5.0 — its recovery-and-strain coaching is built for training on the signal; its earlier generation (4.0) has an independent overnight HRV check, but no independent validation of the 5.0 against ECG was found (as of October 2026). The Fitbit Air is a general-wellness on-ramp, not a training instrument.',
     },
   ],
   content: `## The short version
@@ -53,7 +53,7 @@ You want a 24/7 HRV and sleep trend without paying a monthly fee to see it, $99 
 
 ## When Whoop 5.0 is the pick
 
-Recovery and strain coaching actually changes your training, you want a mature, validated platform, and the $199–$359 a year is worth it for the model. Whoop is an instrument for people who act on the signal daily.
+Recovery and strain coaching actually changes your training, you want a mature platform (the earlier WHOOP 4.0 has an independent overnight HRV check; the 5.0 itself has not been validated), and the $199–$359 a year is worth it for the model. Whoop is an instrument for people who act on the signal daily.
 
 ## The honest note
 

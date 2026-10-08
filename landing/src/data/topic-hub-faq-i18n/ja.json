@@ -48,7 +48,7 @@
       },
       {
         "q": "心拍変動（HRV）の良い数値とは？",
-        "a": "「良いHRV」を示す単一の数値はありません。HRVは年齢とともに低下し、デバイスによっても異なります。夜間RMSSDの中央値は20代でおよそ58 ms、60代で約30 msで、健康な人でも幅があります。良いHRVとは、あなた自身のベースラインと比べて安定している、または上昇しているHRVです。",
+        "a": "誰にとっても良い HRV の数値というものはありません。年齢とともに低下し、デバイスによっても変わります。約800万人の Fitbit ユーザーでは、朝の RMSSD の中央値は20〜21歳で女性 {{fact:hrv.fitbit.rmssd.am.female.median.20-21}}・男性 {{fact:hrv.fitbit.rmssd.am.male.median.20-21}}、60〜61歳で {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} と {{fact:hrv.fitbit.rmssd.am.male.median.60-61}} で、どの年齢でもばらつきは大きいです。良い HRV とは、あなた自身のベースラインに対して安定しているか上がっている HRV です。",
         "links": [
           {
             "href": "/articles/normal-hrv-by-age",

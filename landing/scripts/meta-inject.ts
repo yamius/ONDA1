@@ -17,7 +17,8 @@ import { TOPIC_HUB_FAQ, hubFaqFor } from '../src/data/topic-hub-faq'
 import { ARTICLE_FAQ as FAQ_SCHEMA, ARTICLE_FAQ_SCHEMA_ONLY } from '../src/data/article-faq'
 import { ARTICLE_CITATIONS, type StudyCitation } from '../src/data/article-citations'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
-import { hrvToolCopy } from '../src/data/hrv-tool-i18n'
+import { hrvToolCopy, fill as fillHrv } from '../src/data/hrv-tool-i18n'
+import { HRV_COPY_VARS } from '../src/data/hrv-norms'
 import { baselineCopy } from '../src/data/baseline-i18n'
 import { rhrToolCopy } from '../src/data/rhr-tool-i18n'
 import { SUPPORTED_LANGS, type Lang } from '../src/i18n'
@@ -2041,7 +2042,7 @@ function getMetaForRouteBase(route: string): RouteMeta {
       breadcrumbs,
       ogType: 'website',
       image: `${SITE_URL}/images/tools/hrv.png`,
-      faq: { mainEntity: c.faq.map((f) => ({ question: f.q, answer: f.a })), url },
+      faq: { mainEntity: c.faq.map((f) => ({ question: f.q, answer: fillHrv(f.a, HRV_COPY_VARS) })), url },
       jsonLd: [
         {
           '@context': 'https://schema.org',

@@ -48,7 +48,7 @@
       },
       {
         "q": "¿Cuál es una buena HRV?",
-        "a": "No existe una única cifra de HRV buena: disminuye con la edad y varía según el dispositivo. La mediana del RMSSD nocturno ronda los 58 ms a los veinte años y unos 30 ms a los sesenta, con una amplia variación saludable. Una buena HRV es la que se mantiene estable o sube respecto a tu propia línea base.",
+        "a": "No hay una única cifra de HRV buena: baja con la edad y cambia según el dispositivo. Entre unos 8 millones de usuarios de Fitbit, la mediana del RMSSD matutino fue de {{fact:hrv.fitbit.rmssd.am.female.median.20-21}} en mujeres y {{fact:hrv.fitbit.rmssd.am.male.median.20-21}} en hombres a los 20–21 años, y de {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} y {{fact:hrv.fitbit.rmssd.am.male.median.60-61}} a los 60–61, con una gran dispersión en todas las edades. Una HRV buena es la que se mantiene estable o sube respecto a tu propia línea base.",
         "links": [
           {
             "href": "/articles/normal-hrv-by-age",

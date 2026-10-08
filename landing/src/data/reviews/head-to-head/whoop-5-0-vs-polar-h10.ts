@@ -29,7 +29,7 @@ const whoopVsPolarH10: HeadToHead = {
   faq: [
     {
       q: 'Is Polar H10 more accurate than Whoop for HRV?',
-      a: 'Yes. Polar H10 measures the heart’s electrical signal like an ECG, and a validation study found its RR intervals closely matched an ECG Holter at rest and during exercise (Gilgen-Ammann et al., 2019). Whoop uses optical sensors: heart rate agreed well with ECG in its validation, but HRV (RMSSD) error was larger (Bellenger et al., 2021). Whoop is fine for overnight trends; H10 is the reference.',
+      a: 'Yes. Polar H10 measures the heart’s electrical signal like an ECG, and a validation study found its RR intervals closely matched an ECG Holter at rest and during exercise (Gilgen-Ammann et al., 2019). Whoop uses optical sensors: in a validation of the earlier Whoop 2.0, heart rate agreed well with ECG, but HRV (RMSSD) error was larger (Bellenger et al., 2021); the 5.0 itself has no independent validation against ECG (as of October 2026). Whoop is fine for overnight trends; H10 is the reference.',
     },
     {
       q: 'How much does Whoop cost compared with Polar H10?',

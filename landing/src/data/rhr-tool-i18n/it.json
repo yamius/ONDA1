@@ -71,11 +71,11 @@
   "sections": [
     {
       "h2": "Quanti sono i battiti normali a riposo in base all'età?",
-      "body": "Negli adulti una frequenza cardiaca a riposo tra 60 e 100 bpm è considerata normale. Le persone allenate stanno spesso più in basso (spesso sotto i 60 bpm; molti atleti di resistenza d’élite scendono a 40 bpm o meno nel punto più basso della giornata), e negli studi di popolazione una frequenza cardiaca a riposo più bassa è associata a una minore mortalità nel lungo periodo. Nell'indagine NHANES dei CDC su adulti sani negli Stati Uniti, la mediana del polso a riposo da seduti era di circa 69 bpm negli uomini di 18–39 anni, 68 bpm a 40–59 anni e 67 bpm dai 60 anni — quasi piatta per tutta la vita adulta. La metà centrale degli uomini (p25–p75) si collocava tra circa 60 e 77 bpm. A differenza dell'HRV, negli adulti la frequenza a riposo cambia poco con l'età: forma fisica, genetica, sonno e stress contano molto di più. Per questo il confronto più utile è con il tuo andamento mattutino. Guida completa: [frequenza cardiaca a riposo per età](/articles/resting-heart-rate-by-age)."
+      "body": "Negli adulti una frequenza cardiaca a riposo tra 60 e 100 bpm è considerata normale. Le persone allenate stanno spesso più in basso (spesso sotto i 60 bpm; molti atleti di resistenza d’élite scendono a 40 bpm o meno nel punto più basso della giornata), e negli studi di popolazione una frequenza cardiaca a riposo più bassa è associata a una minore mortalità nel lungo periodo. Nell'indagine NHANES dei CDC su adulti sani negli Stati Uniti, la mediana del polso a riposo da seduti era di circa 69 bpm negli uomini di 20–39 anni, 68 bpm a 40–59 anni e 67 bpm a 60–79 anni e 68 bpm dagli 80 — quasi piatta per tutta la vita adulta. La metà centrale degli uomini (p25–p75) si collocava tra circa 60 e 77 bpm. A differenza dell'HRV, negli adulti la frequenza a riposo cambia poco con l'età: forma fisica, genetica, sonno e stress contano molto di più. Per questo il confronto più utile è con il tuo andamento mattutino. Guida completa: [frequenza cardiaca a riposo per età](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Frequenza cardiaca normale nella donna",
-      "body": "Nelle donne la frequenza a riposo è di qualche battito più alta rispetto agli uomini, soprattutto perché il cuore di solito è più piccolo e pompa un po' meno sangue a ogni battito. In NHANES la mediana era di circa 74 bpm nelle donne di 18–39 anni, 71 bpm a 40–59 anni e 70 bpm dai 60 anni, con la metà centrale tra circa 64 e 82 bpm. La frequenza a riposo varia anche con il ciclo mestruale — tende a essere qualche battito più alta nella seconda metà del ciclo — e aumenta in gravidanza. Quindi confronta valori omogenei: stessa ora del giorno, stessa fase del ciclo e media settimanale invece di un singolo giorno. Scegli \"Donna\" nel calcolatore per usare la tabella femminile."
+      "body": "Nelle donne la frequenza a riposo è di qualche battito più alta rispetto agli uomini, soprattutto perché il cuore di solito è più piccolo e pompa un po' meno sangue a ogni battito. In NHANES la mediana era di circa 74 bpm nelle donne di 20–39 anni, 71 bpm a 40–59 anni e 70 bpm a 60–79 anni e 71 bpm dagli 80, con la metà centrale tra circa 64 e 82 bpm. La frequenza a riposo varia anche con il ciclo mestruale — tende a essere qualche battito più alta nella seconda metà del ciclo — e aumenta in gravidanza. Quindi confronta valori omogenei: stessa ora del giorno, stessa fase del ciclo e media settimanale invece di un singolo giorno. Scegli \"Donna\" nel calcolatore per usare la tabella femminile."
     },
     {
       "h2": "Battiti a riposo alti: perché?",
@@ -94,11 +94,11 @@
   "faq": [
     {
       "q": "Qual è la frequenza cardiaca a riposo normale per età?",
-      "a": "Negli adulti è 60–100 bpm, e nelle persone sane di solito tra 60 e 79 bpm. La mediana CDC NHANES è di circa 69 bpm negli uomini di 18–39 anni, 68 bpm a 40–59 e 67 bpm dai 60; nelle donne circa 74, 71 e 70 bpm. Cambia pochissimo con l'età."
+      "a": "Negli adulti è 60–100 bpm, e nelle persone sane di solito tra 60 e 79 bpm. La mediana CDC NHANES è di circa 69 bpm negli uomini di 20–39 anni, 68 bpm a 40–59 e 67 bpm a 60–79 e 68 bpm dagli 80; nelle donne circa 74, 71, 70 e 71 bpm. Cambia pochissimo con l'età."
     },
     {
       "q": "Qual è la frequenza cardiaca normale in una donna?",
-      "a": "Qualche battito più alta che negli uomini: la mediana è di circa 74 bpm a 18–39 anni, 71 bpm a 40–59 e 70 bpm dai 60, con la metà centrale delle donne tra circa 64 e 82 bpm."
+      "a": "Qualche battito più alta che negli uomini: la mediana è di circa 74 bpm a 20–39 anni, 71 bpm a 40–59 e 70 bpm a 60–79 e 71 bpm dagli 80, con la metà centrale delle donne tra circa 64 e 82 bpm."
     },
     {
       "q": "50 battiti a riposo vanno bene?",
@@ -126,7 +126,7 @@
     }
   ],
   "sourcesTitle": "Fonti e metodologia",
-  "methodology": "Le tabelle provengono direttamente dal rapporto CDC/NCHS su NHANES 1999–2008 (Ostchega et al. 2011, Tabelle 2–3): polso a riposo da seduti di circa 17.000 adulti statunitensi, escluse le persone con condizioni o farmaci che influenzano il polso. La fascia 18–39 usa la riga 20–39 e la fascia 60+ la riga 60–79. Il tuo percentile è interpolato tra i percentili pubblicati dal 5° al 95° per età e sesso. Orologi e anelli misurano la frequenza a riposo o durante il sonno, che di solito è qualche bpm più bassa di una misura da seduti.",
+  "methodology": "Le tabelle provengono direttamente dal rapporto CDC/NCHS su NHANES 1999–2008 (Ostchega et al. 2011, Tabelle 2–3): polso a riposo da seduti di circa 17.000 adulti statunitensi, escluse le persone con condizioni o farmaci che influenzano il polso. Le fasce sono le righe della fonte (20–39, 40–59, 60–79, 80+). La fonte non ha dati propri per i 18–19 anni, quindi il confronto è con 20–39. Il tuo percentile è interpolato tra i percentili pubblicati dal 5° al 95° per età e sesso. Orologi e anelli misurano la frequenza a riposo o durante il sonno, che di solito è qualche bpm più bassa di una misura da seduti.",
   "sourcesContributes": [
     "Fonte diretta delle tabelle: percentili del polso a riposo da seduti per età e sesso da NHANES 1999–2008, escluse condizioni e farmaci che influenzano il polso (Tabelle 2–3).",
     "Contesto clinico: 60–100 bpm è l'intervallo normale standard; più bassa nelle persone molto allenate, leggermente più alta nelle donne e in parte genetica.",
@@ -138,5 +138,6 @@
     "hrv": "Calcolatore HRV per età",
     "camera": "Misura il polso con la fotocamera del telefono",
     "zone2": "Frequenza cardiaca in Zona 2"
-  }
+  },
+  "youngNote": "La fonte non ha dati propri per i 18–19 anni, quindi il confronto è con la fascia 20–39."
 }

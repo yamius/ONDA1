@@ -486,7 +486,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "normal-hrv-by-age": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T21:46:29+02:00"
   },
   "nose-vs-mouth-breathing": {
     "published": "2026-09-22T08:22:18+02:00",
@@ -582,7 +582,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "resting-heart-rate-by-age": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T21:46:29+02:00"
   },
   "rhythmic-entrainment-system-frequencies": {
     "published": "2026-03-31T22:29:31Z",
@@ -730,7 +730,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-10-07T20:44:19+02:00"
+    "modified": "2026-10-08T19:32:47+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -870,7 +870,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:sdnn": {
     "published": "2026-10-04T19:18:25.000Z",
-    "modified": "2026-10-04T22:28:34.000Z"
+    "modified": "2026-10-08T21:22:34.000Z"
   },
   "glossary:hrv-baseline": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1042,7 +1042,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:emotional-osmosis": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-02T11:06:38.000Z"
+    "modified": "2026-10-08T17:32:47.000Z"
   },
   "glossary:social-sensing": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-08T13:05:49+02:00"
+    "modified": "2026-10-08T13:29:42+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1674,15 +1674,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/science": {
     "published": "2026-10-04T21:18:25+02:00",
-    "modified": "2026-10-05T13:59:50+02:00"
+    "modified": "2026-10-08T16:37:20+02:00"
   },
   "page:/science/:kind": {
     "published": "2026-10-04T21:18:25+02:00",
-    "modified": "2026-10-05T13:59:50+02:00"
+    "modified": "2026-10-08T16:37:20+02:00"
   },
   "page:/science/:kind/:slug": {
     "published": "2026-10-04T21:18:25+02:00",
-    "modified": "2026-10-05T13:59:50+02:00"
+    "modified": "2026-10-08T16:37:20+02:00"
   },
   "page:/ai-apps": {
     "published": "2026-10-03T19:24:51+02:00",
@@ -1746,7 +1746,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-08T11:54:33+02:00"
+    "modified": "2026-10-08T18:20:49+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

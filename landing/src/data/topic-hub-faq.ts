@@ -39,7 +39,7 @@ const TOPIC_HUB_FAQ_RAW: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
     },
     {
       q: 'What is a good HRV?',
-      a: 'There is no single good HRV number: it falls with age and differs by device. Median overnight RMSSD is roughly 58 ms in your twenties and about 30 ms in your sixties, with a wide healthy spread. A good HRV is one that is stable or rising against your own baseline.',
+      a: 'There is no single good HRV number: it falls with age and differs by device. Among about 8 million Fitbit users, median early-morning RMSSD was {{fact:hrv.fitbit.rmssd.am.female.median.20-21}} for women and {{fact:hrv.fitbit.rmssd.am.male.median.20-21}} for men at 20–21, and {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} and {{fact:hrv.fitbit.rmssd.am.male.median.60-61}} at 60–61, with a wide spread at every age. A good HRV is one that is stable or rising against your own baseline.',
       links: [
         { href: '/articles/normal-hrv-by-age', label: 'Normal HRV by age' },
         { href: '/articles/hrv-questions-answered', label: '52 HRV questions, answered' },

@@ -741,6 +741,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1007/s00392-025-02722-4": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The level of acute alcohol exposure during binge drinking associates with the extent of cardiac response",
+   "firstAuthor": "von Falkenhausen",
+   "authors": [
+    "von Falkenhausen",
+    "Krewitz",
+    "Winter",
+    "Kern",
+    "Brunner",
+    "Brunner",
+    "Sinner"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Clinical Research in Cardiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1007/s00421-003-0988-y": {
    "kind": "doi",
    "valid": true,
@@ -917,6 +937,24 @@
    "journal": "Clinical Autonomic Research",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1007/s10286-026-01243-y": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Acute effects of binge drinking following aerobic exercise on autonomic and hemodynamic recovery in young men: a randomized crossover trial",
+   "firstAuthor": "Kim",
+   "authors": [
+    "Kim",
+    "Han",
+    "Choi",
+    "Kim",
+    "Kim",
+    "Jae"
+   ],
+   "year": 2026,
+   "journal": "Clinical Autonomic Research",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1007/s10339-009-0352-1": {
    "kind": "doi",
@@ -5639,6 +5677,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1093/eurheartj/ehae695": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Acute alcohol consumption and arrhythmias in young adults: the MunichBREW II study",
+   "firstAuthor": "Brunner",
+   "authors": [
+    "Brunner",
+    "Krewitz",
+    "Winter",
+    "von Falkenhausen",
+    "Kern",
+    "Brunner",
+    "Sinner"
+   ],
+   "year": 2024,
+   "journal": "European Heart Journal",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1093/europace/eus341": {
    "kind": "doi",
    "valid": true,
@@ -7044,6 +7101,26 @@
    "journal": "American Journal of Physiology-Heart and Circulatory Physiology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1152/ajpheart.00700.2009": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Dose-related effects of red wine and alcohol on heart rate variability",
+   "firstAuthor": "Spaak",
+   "authors": [
+    "Spaak",
+    "Tomlinson",
+    "McGowan",
+    "Soleas",
+    "Morris",
+    "Picton",
+    "Notarius",
+    "Floras"
+   ],
+   "year": 2010,
+   "journal": "American Journal of Physiology-Heart and Circulatory Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1152/ajpheart.1981.241.4.h620": {
    "kind": "doi",
@@ -8479,6 +8556,29 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1371/journal.pdig.0001284": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Real-world effects of alcohol on heart rate, sleep, and physical activity by age and sex",
+   "firstAuthor": "Grosicki",
+   "authors": [
+    "Grosicki",
+    "Robinson",
+    "Joyner",
+    "Carter",
+    "von Hippel",
+    "Presby",
+    "Fielding",
+    "Bigalke",
+    "Kim",
+    "Chapman",
+    "Holmes"
+   ],
+   "year": 2026,
+   "journal": "PLOS Digital Health",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1371/journal.pmed.0010062": {
    "kind": "doi",
    "valid": true,
@@ -9350,6 +9450,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.31083/rcm47953": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cardiac Responses to Alcohol: A Review of Mechanisms and Clinical Implications",
+   "firstAuthor": "Johnston",
+   "authors": [
+    "Johnston",
+    "Kamble",
+    "Lee",
+    "Garley",
+    "Figueredo"
+   ],
+   "year": 2026,
+   "journal": "Reviews in Cardiovascular Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.3109/00365510902946984": {
    "kind": "doi",
    "valid": true,
@@ -9432,6 +9549,24 @@
    "journal": "Frontiers in Cardiovascular Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3389/fcvm.2026.1920023": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Moderate alcohol intake and heart rate variability adaptations to high-intensity interval training in healthy young adults: the BEER-HIIT study",
+   "firstAuthor": "Navarro-Lomas",
+   "authors": [
+    "Navarro-Lomas",
+    "De-la-O",
+    "Dote-Montero",
+    "Castillo",
+    "Amaro-Gahete",
+    "Plaza-Florido"
+   ],
+   "year": 2026,
+   "journal": "Frontiers in Cardiovascular Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.3389/fneur.2022.910794": {
    "kind": "doi",
@@ -9807,6 +9942,29 @@
    "journal": "Frontiers in Physiology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3389/fphys.2018.00424": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Normal Values of Corrected Heart-Rate Variability in 10-Second Electrocardiograms for All Ages",
+   "firstAuthor": "van den Berg",
+   "authors": [
+    "van den Berg",
+    "Rijnbeek",
+    "Niemeijer",
+    "Hofman",
+    "van Herpen",
+    "Bots",
+    "Hillege",
+    "Swenne",
+    "Eijgelsheim",
+    "Stricker",
+    "Kors"
+   ],
+   "year": 2018,
+   "journal": "Frontiers in Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.3389/fphys.2022.876283": {
    "kind": "doi",
@@ -12632,6 +12790,27 @@
    "doi": "10.1016/j.biopsych.2010.02.017",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:20418480": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Dose-related effects of red wine and alcohol on heart rate variability.",
+   "firstAuthor": "Spaak",
+   "authors": [
+    "Spaak",
+    "Tomlinson",
+    "McGowan",
+    "Soleas",
+    "Morris",
+    "Picton",
+    "Notarius",
+    "Floras"
+   ],
+   "year": 2010,
+   "journal": "Am J Physiol Heart Circ Physiol",
+   "doi": "10.1152/ajpheart.00700.2009",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:20438143": {
    "kind": "pmid",
@@ -15982,6 +16161,30 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:29755366": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Normal Values of Corrected Heart-Rate Variability in 10-Second Electrocardiograms for All Ages.",
+   "firstAuthor": "van den Berg",
+   "authors": [
+    "van den Berg",
+    "Rijnbeek",
+    "Niemeijer",
+    "Hofman",
+    "van Herpen",
+    "Bots",
+    "Hillege",
+    "Swenne",
+    "Eijgelsheim",
+    "Stricker",
+    "Kors"
+   ],
+   "year": 2018,
+   "journal": "Front Physiol",
+   "doi": "10.3389/fphys.2018.00424",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:29849692": {
    "kind": "pmid",
    "valid": true,
@@ -17335,6 +17538,23 @@
    "doi": "10.1371/journal.pone.0243693",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:33328029": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart rate variability with photoplethysmography in 8 million individuals: a cross-sectional study.",
+   "firstAuthor": "Natarajan",
+   "authors": [
+    "Natarajan",
+    "Pantelopoulos",
+    "Emir-Farinas",
+    "Natarajan"
+   ],
+   "year": 2020,
+   "journal": "Lancet Digit Health",
+   "doi": "10.1016/S2589-7500(20)30246-6",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:33334565": {
    "kind": "pmid",
@@ -18969,6 +19189,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:39363568": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Acute alcohol consumption and arrhythmias in young adults: the MunichBREW II study.",
+   "firstAuthor": "Brunner",
+   "authors": [
+    "Brunner",
+    "Krewitz",
+    "Winter",
+    "von Falkenhausen",
+    "Kern",
+    "Brunner",
+    "Sinner"
+   ],
+   "year": 2024,
+   "journal": "Eur Heart J",
+   "doi": "10.1093/eurheartj/ehae695",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:39409260": {
    "kind": "pmid",
    "valid": true,
@@ -19337,6 +19577,27 @@
    "doi": "10.1126/sciadv.adx6491",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:40828179": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The level of acute alcohol exposure during binge drinking associates with the extent of cardiac response.",
+   "firstAuthor": "von Falkenhausen",
+   "authors": [
+    "von Falkenhausen",
+    "Krewitz",
+    "Winter",
+    "Kern",
+    "Brunner",
+    "Brunner",
+    "Sinner"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "Clin Res Cardiol",
+   "doi": "10.1007/s00392-025-02722-4",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:40834291": {
    "kind": "pmid",
@@ -19755,6 +20016,30 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:41801993": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Real-world effects of alcohol on heart rate, sleep, and physical activity by age and sex.",
+   "firstAuthor": "Grosicki",
+   "authors": [
+    "Grosicki",
+    "Robinson",
+    "Joyner",
+    "Carter",
+    "von Hippel",
+    "Presby",
+    "Fielding",
+    "Bigalke",
+    "Kim",
+    "Chapman",
+    "Holmes"
+   ],
+   "year": 2026,
+   "journal": "PLOS Digit Health",
+   "doi": "10.1371/journal.pdig.0001284",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:41838387": {
    "kind": "pmid",
    "valid": true,
@@ -19918,6 +20203,24 @@
    "doi": "10.1038/s41598-026-53333-6",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:42238641": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cardiac Responses to Alcohol: A Review of Mechanisms and Clinical Implications.",
+   "firstAuthor": "Johnston",
+   "authors": [
+    "Johnston",
+    "Kamble",
+    "Lee",
+    "Garley",
+    "Figueredo"
+   ],
+   "year": 2026,
+   "journal": "Rev Cardiovasc Med",
+   "doi": "10.31083/RCM47953",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:42275859": {
    "kind": "pmid",
@@ -20103,6 +20406,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:42712702": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Moderate alcohol intake and heart rate variability adaptations to high-intensity interval training in healthy young adults: the BEER-HIIT study.",
+   "firstAuthor": "Navarro-Lomas",
+   "authors": [
+    "Navarro-Lomas",
+    "De-la-O",
+    "Dote-Montero",
+    "Castillo",
+    "Amaro-Gahete",
+    "Plaza-Florido"
+   ],
+   "year": 2026,
+   "journal": "Front Cardiovasc Med",
+   "doi": "10.3389/fcvm.2026.1920023",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:42771122": {
    "kind": "pmid",
    "valid": true,
@@ -20134,6 +20456,25 @@
    "doi": "10.3390/clockssleep8030052",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:42804102": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Acute effects of binge drinking following aerobic exercise on autonomic and hemodynamic recovery in young men: a randomized crossover trial.",
+   "firstAuthor": "Kim",
+   "authors": [
+    "Kim",
+    "Han",
+    "Choi",
+    "Kim",
+    "Kim",
+    "Jae"
+   ],
+   "year": 2026,
+   "journal": "Clin Auton Res",
+   "doi": "10.1007/s10286-026-01243-y",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:6013341": {
    "kind": "pmid",
@@ -20505,6 +20846,23 @@
    "doi": "10.1056/NEJM199801223380401",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:9502641": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Twenty-four hour time domain heart rate variability and heart rate: relations to age and gender over nine decades.",
+   "firstAuthor": "Umetani",
+   "authors": [
+    "Umetani",
+    "Singer",
+    "McCraty",
+    "Atkinson"
+   ],
+   "year": 1998,
+   "journal": "J Am Coll Cardiol",
+   "doi": "10.1016/s0735-1097(97)00554-8",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:9858756": {
    "kind": "pmid",

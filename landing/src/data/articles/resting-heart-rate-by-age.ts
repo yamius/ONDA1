@@ -27,7 +27,7 @@ const article: Article = {
   content: `
 A normal [resting heart rate](/science/measurements/resting-heart-rate) for most adults is 60 to 100 beats per minute, but the healthy range shifts with age and fitness. Newborns run high (100–160 bpm), children settle down through their teens, and by adulthood most people land between 60 and 100 bpm at rest — with well-trained adults often in the 40s or 50s. In CDC survey data, the median adult resting pulse is about 67–69 bpm for men and 70–74 bpm for women, and it barely changes with age (table below). A lower resting heart rate generally reflects better cardiovascular fitness, because a stronger heart pumps more blood per beat and needs fewer beats. As with [HRV](/science/concepts/heart-rate-variability), the single most useful comparison isn't the population average — it's how your resting heart rate is trending against your own baseline.
 
-**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age ([RMSSD](/science/concepts/rmssd) from Oura, Whoop, Garmin or [SDNN](/science/concepts/sdnn) from Apple Watch).
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — compare your morning [RMSSD](/science/concepts/rmssd) (Oura, Whoop, Garmin, Polar, Fitbit) with Fitbit users your age. Apple Watch [SDNN](/science/concepts/sdnn) is a different measure and isn't compared.
 
 ## Resting heart rate by age chart: what is normal?
 
@@ -49,9 +49,10 @@ In the CDC's NHANES survey of healthy U.S. adults (seated resting pulse, Ostcheg
 
 | Age | Men — median (typical p25–p75) | Women — median (typical p25–p75) |
 |---|---|---|
-| 18–39 | 69 bpm (61–76) | 74 bpm (66–82) |
-| 40–59 | 68 bpm (61–77) | 71 bpm (64–79) |
-| 60+ | 67 bpm (60–75) | 70 bpm (64–78) |
+| 20–39 | {{fact:rhr.male.median.20-39}} ({{fact:rhr.male.typical.20-39}}) | {{fact:rhr.female.median.20-39}} ({{fact:rhr.female.typical.20-39}}) |
+| 40–59 | {{fact:rhr.male.median.40-59}} ({{fact:rhr.male.typical.40-59}}) | {{fact:rhr.female.median.40-59}} ({{fact:rhr.female.typical.40-59}}) |
+| 60–79 | {{fact:rhr.male.median.60-79}} ({{fact:rhr.male.typical.60-79}}) | {{fact:rhr.female.median.60-79}} ({{fact:rhr.female.typical.60-79}}) |
+| 80+ | {{fact:rhr.male.median.80plus}} ({{fact:rhr.male.typical.80plus}}) | {{fact:rhr.female.median.80plus}} ({{fact:rhr.female.typical.80plus}}) |
 
 Watches and rings read resting or sleeping heart rate, which usually comes out a few bpm lower than a seated check. See your percentile for your age and sex: **[Resting Heart Rate by Age calculator](/tools/resting-heart-rate)**.
 

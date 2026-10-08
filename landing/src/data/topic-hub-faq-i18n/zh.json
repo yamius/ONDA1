@@ -48,7 +48,7 @@
       },
       {
         "q": "HRV 多少算好？",
-        "a": "没有一个统一的“好”心率变异性（HRV）数值：它随年龄下降，也因设备而异。夜间 RMSSD 中位数在二十多岁时约为 58 ms，六十多岁时约为 30 ms，健康范围跨度很大。好的 HRV 是相对于你自己的基线保持稳定或上升的 HRV。",
+        "a": "不存在一个统一的好 HRV 数值：它随年龄下降，也因设备而异。在约 800 万名 Fitbit 用户中，早晨 RMSSD 的中位数在 20–21 岁时女性为 {{fact:hrv.fitbit.rmssd.am.female.median.20-21}}、男性为 {{fact:hrv.fitbit.rmssd.am.male.median.20-21}}，60–61 岁时为 {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} 和 {{fact:hrv.fitbit.rmssd.am.male.median.60-61}}，每个年龄的差异都很大。好的 HRV 是相对于你自己的基线保持稳定或在上升的 HRV。",
         "links": [
           {
             "href": "/articles/normal-hrv-by-age",

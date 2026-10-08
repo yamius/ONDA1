@@ -48,7 +48,7 @@
       },
       {
         "q": "Jaka zmienność rytmu serca (HRV) jest dobra?",
-        "a": "Nie ma jednej dobrej wartości HRV: spada ona z wiekiem i różni się w zależności od urządzenia. Mediana nocnego RMSSD to około 58 ms u dwudziestolatków i około 30 ms u sześćdziesięciolatków, przy szerokim zakresie zdrowych wartości. Dobre HRV to takie, które jest stabilne lub rośnie w porównaniu z Twoją własną linią bazową.",
+        "a": "Nie ma jednej dobrej wartości HRV: spada ono z wiekiem i zależy od urządzenia. Wśród około 8 milionów użytkowników Fitbit mediana porannego RMSSD wynosiła {{fact:hrv.fitbit.rmssd.am.female.median.20-21}} u kobiet i {{fact:hrv.fitbit.rmssd.am.male.median.20-21}} u mężczyzn w wieku 20–21 lat oraz {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} i {{fact:hrv.fitbit.rmssd.am.male.median.60-61}} w wieku 60–61, z dużym rozrzutem w każdym wieku. Dobre HRV to takie, które jest stabilne lub rośnie względem twojej linii bazowej.",
         "links": [
           {
             "href": "/articles/normal-hrv-by-age",

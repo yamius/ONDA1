@@ -3,7 +3,7 @@ import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { homePathFor, langFromPath, langHref, type Lang } from '../i18n'
-import { RHR_BANDS, RHR_SOURCES, interpretRhr, type RhrResult, type RhrSex } from '../data/resting-hr'
+import { RHR_BANDS, RHR_MIN_SOURCE_AGE, RHR_SOURCES, interpretRhr, type RhrResult, type RhrSex } from '../data/resting-hr'
 import { rhrToolCopy, fill, type RhrToolCopy } from '../data/rhr-tool-i18n'
 import { SourcesSection } from '../components/SourcesSection'
 
@@ -142,6 +142,9 @@ export function RestingHeartRatePage() {
             <p className="font-mono text-xs leading-relaxed text-white/60">
               {fill(c.summaries[result.tier], { v: rhr.replace(',', '.'), sexWord, band: result.band.label, median: result.band.p50 })}
             </p>
+            {parseInt(age, 10) < RHR_MIN_SOURCE_AGE && (
+              <p className="mt-3 font-mono text-[11px] leading-relaxed text-white/50">{c.youngNote}</p>
+            )}
             {result.flag && (
               <p className="mt-3 font-mono text-[11px] leading-relaxed text-amber-300/80">{c.flags[result.flag]}</p>
             )}

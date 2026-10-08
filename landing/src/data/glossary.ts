@@ -1013,7 +1013,7 @@ Most ring and strap wearables (Oura, Whoop, Garmin, Polar) report RMSSD; Apple H
 
 **SDNN** is the standard deviation of the intervals between normal heartbeats in a recording. Where [RMSSD](/glossary/rmssd) isolates beat-to-beat changes, SDNN describes the overall spread of the intervals, so it is shaped by every rhythm in the recording window — including slower ones — and depends strongly on how long the recording is.
 
-Apple Health has long recorded heart rate variability as SDNN, so Apple Watch HRV values should be compared with SDNN norms, not RMSSD norms. Like any HRV measure, a single SDNN value is not a diagnosis; trends against your own baseline under comparable conditions say more.
+Apple Health has long recorded heart rate variability as SDNN, so Apple Watch HRV values should only be compared with other SDNN values, not with RMSSD values or RMSSD age tables. Like any HRV measure, a single SDNN value is not a diagnosis; trends against your own baseline under comparable conditions say more.
 
 **Read the science →** [SDNN: what this HRV metric measures, and what it doesn't](/science/concepts/sdnn) — definition, why it depends on recording length, why Apple Health stores it, evidence and sources. See also [RMSSD on ONDA Science](/science/concepts/rmssd) and [why Apple Watch HRV can look low](/articles/why-is-my-apple-watch-hrv-low).`,
     relatedSlugs: ['heart-rate-variability', 'rmssd', 'hrv-baseline'],

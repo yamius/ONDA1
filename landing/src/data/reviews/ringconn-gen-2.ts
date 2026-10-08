@@ -73,7 +73,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   faq: [
     { q: "Is the RingConn Gen 2 subscription-free?", a: "Yes — $299 one-time with no subscription, roughly half the long-term cost of an Oura. Every feature is unlocked at purchase." },
     { q: "How long does the RingConn Gen 2 battery last?", a: "About 10–12 days per charge depending on size — and its charging case extends that to months." },
-    { q: "Is the RingConn Gen 2 accurate for HRV?", a: "Independent reviewers rate its overnight HRV comparable to pricier rings — good, not class-leading. It also adds sleep-apnea screening. It is best chosen for battery life and value rather than the sharpest single metric." },
+    { q: "Is the RingConn Gen 2 accurate for HRV?", a: "Reviewers find it usable for trends, but only a preprint exists: no peer-reviewed independent validation of its HRV against ECG was found (as of October 2026). It also adds sleep-apnea screening. It is best chosen for battery life and value rather than the sharpest single metric." },
   ],
 
   datePublished: '2026-05-15',

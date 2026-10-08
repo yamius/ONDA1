@@ -2442,7 +2442,7 @@
       "faq": [
         {
           "q": "Is Whoop 5.0 nauwkeuriger dan de Garmin Venu 4?",
-          "a": "Geen betekenisvol verschil. Beide meten HRV 's nachts continu via optische PPG, en onafhankelijke vergelijkingen zien ze qua nauwkeurigheid ongeveer gelijk. De keuze hangt niet af van de sensor."
+          "a": "Geen aangetoond verschil. Beide meten HRV 's nachts continu via optische PPG. Noch de WHOOP 5.0 noch de Venu 4 heeft een onafhankelijke validatie van HRV tegen ECG (stand oktober 2026), dus er is geen basis om hun nauwkeurigheid te rangschikken. De keuze hangt niet af van de sensor."
         },
         {
           "q": "Heb je een abonnement nodig voor Whoop of Garmin?",
@@ -2704,7 +2704,7 @@
       "faq": [
         {
           "q": "Is de Polar H10 nauwkeuriger dan Whoop voor HRV?",
-          "a": "Ja. De Polar H10 meet het elektrische signaal van het hart zoals een ECG, en een validatieonderzoek vond dat de RR-intervallen in rust en tijdens inspanning nauw overeenkwamen met een ECG-Holter (Gilgen-Ammann et al., 2019). Whoop gebruikt optische sensoren: de hartslag kwam in de validatie goed overeen met ECG, maar de HRV-fout (RMSSD) was groter (Bellenger et al., 2021). Whoop volstaat voor nachtelijke trends; de H10 is de referentie."
+          "a": "Ja. De Polar H10 meet het elektrische signaal van het hart zoals een ECG, en een validatieonderzoek vond dat de RR-intervallen in rust en tijdens inspanning nauw overeenkwamen met een ECG-Holter (Gilgen-Ammann et al., 2019). Whoop gebruikt optische sensoren: in een validatie van de eerdere Whoop 2.0 kwam de hartslag goed overeen met ECG, maar de HRV-fout (RMSSD) was groter (Bellenger et al., 2021); de 5.0 zelf heeft geen onafhankelijke validatie tegen ECG (stand oktober 2026). Whoop volstaat voor nachtelijke trends; de H10 is de referentie."
         },
         {
           "q": "Wat kost Whoop vergeleken met de Polar H10?",

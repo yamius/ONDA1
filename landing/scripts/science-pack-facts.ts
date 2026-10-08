@@ -15,7 +15,7 @@ const src = (f: (typeof FACTS)[string]) =>
 
 const all = Object.values(FACTS)
 const group = (pred: (id: string) => boolean) => all.filter((f) => pred(f.id))
-const isTable = (id: string) => /^(hrv\.(rmssd|sdnn)|rhr\.(male|female))\.(median|typical)\./.test(id)
+const isTable = (id: string) => /^(hrv\.fitbit\.rmssd\.am\.(male|female)|rhr\.(male|female))\.(median|typical|p5|p10|p90|p95)\./.test(id)
 
 function table(rows: typeof all): string {
   return ['| id | Inserted text | Scope | Status | Sources |', '|---|---|---|---|---|',
@@ -36,7 +36,7 @@ ${table(group((id) => !isTable(id)))}
 
 ## Table facts (generated from hrv-norms.ts and resting-hr.ts)
 
-Ids follow \`<metric>.<median|typical>.<age>\` with ages written \`18-29\`, \`30-39\` … \`70plus\`. \`typical\` is the 25th–75th percentile.
+HRV: \`hrv.fitbit.rmssd.am.<female|male>.<median|typical>.<age>\` with ages \`20-21\`, \`25-26\` … \`60-61\` (Natarajan 2020 Table S3, Fitbit users, 6–7 a.m.; a distribution, not a norm). Resting HR: \`rhr.<male|female>.<median|typical|p5|p10|p90|p95>.<age>\` with ages \`20-39\`, \`40-59\`, \`60-79\`, \`80plus\`. \`typical\` is the 25th–75th percentile; p5/p10/p90/p95 (resting HR only) are single percentiles.
 
 ${table(group(isTable))}
 `

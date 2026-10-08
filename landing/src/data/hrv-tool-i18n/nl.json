@@ -1,10 +1,10 @@
 {
   "science": "De wetenschap erachter → [RMSSD — wat deze HRV-maat weerspiegelt en wat niet](/science/concepts/rmssd) · [SDNN — wat deze HRV-maat meet en wat niet](/science/concepts/sdnn) · [HRV-baseline: waarom je eigen normaal meer zegt dan welke norm ook](/science/concepts/hrv-baseline) · [Wat één HRV-waarde je wel en niet kan vertellen](/science/concepts/interpreting-hrv)",
   "meta": {
-    "title": "HRV-calculator per leeftijd — gratis HRV-normen | ONDA Life",
-    "description": "Gratis HRV-calculator: vul je leeftijd en HRV in (RMSSD van Oura, Whoop, Garmin of SDNN van Apple Watch) en zie je percentiel en normale HRV per leeftijd.",
+    "title": "HRV-calculator per leeftijd en geslacht — Vergelijking met Fitbit-gebruikers | ONDA Life",
+    "description": "Gratis HRV-calculator: vul je leeftijd, geslacht en ochtend-RMSSD in en zie hoe die zich verhoudt tot ongeveer 8 miljoen Fitbit-gebruikers van jouw leeftijd. Een vergelijking, geen medische norm.",
     "appName": "HRV-calculator per leeftijd",
-    "appDescription": "Gratis calculator die je hartslagvariabiliteit (RMSSD of Apple Watch-SDNN) vergelijkt met gepubliceerde leeftijdsnormen en een geschat percentiel geeft."
+    "appDescription": "Gratis calculator die je ochtend-RMSSD vergelijkt met de gepubliceerde verdeling onder ongeveer 8 miljoen Fitbit-gebruikers van dezelfde leeftijd en hetzelfde geslacht (Natarajan 2020). Geen medische norm."
   },
   "breadcrumb": {
     "home": "Home",
@@ -12,65 +12,68 @@
     "current": "HRV-calculator"
   },
   "h1": "HRV-calculator per leeftijd",
-  "capsule": "Vul je leeftijd en je hartslagvariabiliteit (HRV) in en zie ongeveer waar je staat ten opzichte van mensen van jouw leeftijd. Gebruik RMSSD als je waarde van Oura, Whoop, Garmin of Polar komt, en SDNN als die van je Apple Watch komt. De normen komen uit wetenschappelijke studies, maar je eigen HRV-trend over meerdere weken zegt meer dan welk percentiel ook.",
+  "capsule": "Vul je leeftijd, geslacht en hartslagvariabiliteit (HRV, als RMSSD in ms) in en zie hoe die zich verhoudt tot Fitbit-gebruikers van jouw leeftijd. De cijfers komen uit één grote gepubliceerde studie met ongeveer 8 miljoen Fitbit-gebruikers (Natarajan 2020). Die laat zien hoe HRV verdeeld was onder gebruikers van één apparaat — geen medische norm. Je eigen trend over weken telt zwaarder.",
   "imageAlt": "HRV-calculator per leeftijd — gratis interactieve calculator voor hartslagvariabiliteit van ONDA Life",
-  "metric": {
-    "label": "Je apparaat toont",
-    "rmssd": "RMSSD (Oura, Whoop, Garmin, Polar)",
-    "sdnn": "SDNN (Apple Watch)",
-    "hintRmssd": "Oura: Paraatheid → HRV-balans / gemiddelde HRV. Whoop: Recovery → HRV. Garmin: HRV-status (gemiddelde 's nachts). Polar: Nightly Recharge → HRV.",
-    "hintSdnn": "iPhone-app Gezondheid → Bladeren → Hart → Hartslagvariabiliteit. Apple Watch toont SDNN in ms — gebruik als het kan je 7-daags gemiddelde."
+  "sex": {
+    "label": "Geslacht",
+    "female": "Vrouw",
+    "male": "Man",
+    "unspecified": "Zeg ik liever niet"
   },
+  "metricNote": "Vul RMSSD in ms in — de HRV die Oura, Whoop, Garmin, Polar en Fitbit tonen. De Apple Watch toont SDNN, een andere maat, dus deze tabel geldt niet voor Apple Watch-waarden.",
+  "hint": "Oura: Readiness → gemiddelde HRV. Whoop: Recovery → HRV. Garmin: HRV-status (nachtgemiddelde). Polar: Nightly Recharge → HRV. Fitbit: Gezondheidsstatistieken → HRV.",
   "age": {
     "label": "Leeftijd",
     "placeholder": "bijv. 34"
   },
   "value": {
-    "labelRmssd": "HRV — RMSSD (ms)",
-    "labelSdnn": "HRV — SDNN (ms)",
+    "label": "HRV — RMSSD (ms)",
     "placeholder": "bijv. 45"
   },
   "result": {
-    "percentile": "≈ {{p}}e percentiel",
-    "band": "leeftijd {{band}}"
+    "compared": "Vergeleken met Fitbit-gebruikers ({{sex}}) van {{band}} jaar: de middelste helft had {{p25}}–{{p75}} ms, de mediaan was {{p50}} ms (RMSSD, 6–7 uur 's ochtends).",
+    "comparedPosition": "Vergeleken met Fitbit-gebruikers ({{sex}}) van {{band}} jaar: jouw waarde ligt {{position}} (middelste helft {{p25}}–{{p75}} ms, mediaan {{p50}} ms).",
+    "position": {
+      "lower": "onder de middelste helft",
+      "middle": "binnen de middelste helft",
+      "higher": "boven de middelste helft"
+    },
+    "sexFemale": "vrouwen",
+    "sexMale": "mannen",
+    "nearest": "De studie geeft leeftijdsgroepen van twee jaar, om de vijf jaar. We gebruiken de groep die het dichtst bij je leeftijd ligt en schatten geen waarden daartussen.",
+    "edgeYoung": "De gegevens beginnen bij 20 jaar, dus je wordt vergeleken met de jongste groep (20–21).",
+    "edgeOld": "De gegevens stoppen bij 61 jaar, dus je wordt vergeleken met de oudste groep (60–61)."
   },
-  "tiers": {
-    "low": "Laag voor je leeftijd",
-    "below": "Onder gemiddeld",
-    "average": "Gemiddeld",
-    "above": "Boven gemiddeld",
-    "excellent": "Uitstekend"
+  "verdicts": {
+    "lower": "Lager dan bij de meeste Fitbit-gebruikers van jouw leeftijd",
+    "middle": "Binnen de middelste helft van Fitbit-gebruikers van jouw leeftijd",
+    "higher": "Hoger dan bij de meeste Fitbit-gebruikers van jouw leeftijd"
   },
+  "disclaimerLine": "Dit is een vergelijking met gebruikers van één apparaat, geen medische norm. Je eigen trend telt zwaarder.",
   "summaries": {
-    "low": "Met {{v}} ms zit je in het lagere bereik voor de leeftijd {{band}}. Eén lage meting is heel gewoon na slecht slapen, alcohol, ziekte of zware training — het gaat om je eigen trend over weken, niet om één nacht.",
-    "below": "{{v}} ms ligt onder de gebruikelijke mediaan (~{{median}} ms) voor de leeftijd {{band}}. Slaap, het moment van alcohol, zone 2-cardio en rustig ademhalen zijn de knoppen met het meeste bewijs.",
-    "average": "{{v}} ms ligt rond de mediaan (~{{median}} ms) voor de leeftijd {{band}} — een gezonde, normale HRV in rust. Volg je eigen baseline; een stijgende trend is het doel.",
-    "above": "{{v}} ms ligt boven de mediaan (~{{median}} ms) voor de leeftijd {{band}} — een goed teken van herstelvermogen. Bescherm het met regelmatige slaap en voldoende herstel.",
-    "excellent": "{{v}} ms valt in de top voor de leeftijd {{band}} — een HRV die je vaak ziet bij goed getrainde, goed herstelde mensen."
+    "lower": "Een waarde onder de middelste helft komt vaak voor en zegt op zichzelf weinig: aanleg, je apparaat, het tijdstip van meten, een korte nacht, alcohol, ziekte of zware training kunnen het verklaren. Let erop of je 7-daags gemiddelde onder je gebruikelijke bereik blijft.",
+    "middle": "Een kwart van de gebruikers had lagere waarden en een kwart hogere. Nuttiger dan deze vergelijking is of je eigen HRV de komende weken stabiel blijft of stijgt.",
+    "higher": "Een waarde boven de middelste helft komt vaak voor bij fitte, goed uitgeruste mensen, maar ook apparaat en aanleg spelen mee. Een plotselinge sprong ver boven je gebruikelijke bereik is een tweede blik waard."
   },
-  "sdnnNote": "Apple Watch meet een paar keer per dag en 's nachts kort (ongeveer een minuut), dus de SDNN-waarden schommelen meer dan een nachtelijke RMSSD. Vergelijk je 7-daags gemiddelde, niet één meting.",
   "invalid": "Vul een geldige leeftijd (18–120) en HRV in ms (1–300) in.",
-  "disclaimer": "Educatieve schatting, geen medisch advies. Percentielen zijn bij benadering en gebaseerd op gepubliceerde normstudies naar HRV. Je eigen trend en baseline over meerdere weken zeggen veel meer dan één meting of een vergelijking met de bevolking. HRV varieert per nacht door slaap, alcohol, ziekte en trainingsbelasting.",
+  "disclaimer": "Een vergelijking ter informatie, geen medisch advies en geen diagnose. De referentie is de verdeling van de ochtend-RMSSD onder Fitbit-gebruikers in één gepubliceerde studie, geen medische norm. Je eigen trend over meerdere weken telt veel zwaarder dan één meting. HRV wisselt van nacht tot nacht met slaap, alcohol, ziekte en trainingsbelasting.",
   "tables": {
-    "rmssdTitle": "HRV (RMSSD) per leeftijd — nachtelijke normen",
-    "rmssdCaption": "Voor Oura, Whoop, Garmin en Polar (RMSSD 's nachts of in rust).",
-    "sdnnTitle": "HRV (SDNN) per leeftijd — normen voor Apple Watch",
-    "sdnnCaption": "Voor Apple Watch (SDNN). Uit Voss 2015 (ecg van 5 minuten in rust), vrouwen en mannen samen.",
+    "title": "HRV (RMSSD) per leeftijd en geslacht — verdeling onder Fitbit-gebruikers",
+    "caption": "RMSSD tussen 6 en 7 uur 's ochtends, polssensor, ongeveer 8 miljoen Fitbit-gebruikers (Natarajan 2020, aanvullende tabel S3). Mediaan en middelste helft (25e–75e percentiel). Geen medische norm.",
     "age": "Leeftijd",
-    "p10": "Laag (p10)",
-    "p25": "Onder gemiddeld (p25)",
-    "p50": "Mediaan (p50)",
-    "p75": "Boven gemiddeld (p75)",
-    "p90": "Uitstekend (p90)"
+    "femaleMedian": "Vrouwen — mediaan",
+    "femaleRange": "Vrouwen — middelste helft",
+    "maleMedian": "Mannen — mediaan",
+    "maleRange": "Mannen — middelste helft"
   },
   "sections": [
     {
-      "h2": "Wat is een goede HRV voor mijn leeftijd? Normale HRV per leeftijd",
-      "body": "Een goede HRV ligt rond of boven de mediaan voor je leeftijd — en, belangrijker nog, blijft stabiel of stijgt ten opzichte van je eigen baseline. Voor nachtelijke RMSSD (Oura, Whoop, Garmin, Polar) is de mediaan ongeveer 58 ms bij 18–29 jaar, 50 ms in je dertiger jaren, 42 ms in je veertiger jaren, 36 ms in je vijftiger jaren, 30 ms in je zestiger jaren en 26 ms na je zeventigste. De middelste helft van de mensen (p25–p75) in hun dertiger jaren zit tussen ongeveer 36 en 68 ms, dus de spreiding binnen één leeftijdsgroep is groter dan het verschil tussen decennia. Daarom zegt één vergelijking met een tabel op zich weinig. HRV daalt met de leeftijd omdat de vagale sturing van het hart afneemt en bloedvaten stijver worden — dat is normaal. Conditie, slaap en regelmatig rustig ademhalen kunnen die daling afremmen. Lees de volledige gids: [Normale HRV per leeftijd](/articles/normal-hrv-by-age)."
+      "h2": "Wat is een goede HRV voor mijn leeftijd?",
+      "body": "Er bestaat geen enkel goed HRV-getal. De grootste gepubliceerde dataset naar leeftijd en geslacht, van ongeveer 8 miljoen Fitbit-gebruikers (Natarajan 2020), laat zien hoe de RMSSD tussen 6 en 7 uur 's ochtends verdeeld was: de mediaan was {{f20}} ms bij vrouwen en {{m20}} ms bij mannen op 20–21 jaar, {{f40}} en {{m40}} ms op 40–41 en {{f60}} en {{m60}} ms op 60–61. De spreiding binnen één leeftijdsgroep is groter dan het verschil tussen groepen, dus één vergelijking zegt op zichzelf weinig. HRV daalt doorgaans met de leeftijd; conditie, slaap en regelmatig langzaam ademen bepalen mee waar je zit. Nuttiger is de vraag of je eigen HRV stabiel blijft of stijgt ten opzichte van je baseline. Volledige gids: [Normale HRV per leeftijd](/articles/normal-hrv-by-age)."
     },
     {
-      "h2": "Normale HRV op de Apple Watch (SDNN)",
-      "body": "De Apple Watch geeft geen RMSSD — hij toont SDNN, een andere HRV-maat, dus die waarden kun je niet vergelijken met tabellen voor Oura of Whoop. In de studie van Voss 2015 bij ongeveer 1.900 gezonde volwassenen (ecg van 5 minuten in rust) was de mediane SDNN ongeveer 46 ms bij 18–34, 42 ms bij 35–44, 34 ms bij 45–54, 29 ms bij 55–64 en 26 ms vanaf 65. Kies hierboven \"SDNN (Apple Watch)\" om je percentiel ten opzichte van deze normen te zien. Eén kanttekening: de Apple Watch meet een paar keer per dag en 's nachts kort, ongeveer een minuut, dus losse waarden schommelen meer dan een meting in een lab. Gebruik je 7-daags gemiddelde in de app Gezondheid. Zakt je gemiddelde een aantal dagen duidelijk onder je gebruikelijke niveau, dan zegt dat meer dan welk los getal ook. Meer: [Waarom je HRV op elk apparaat anders is](/articles/hrv-different-every-device)."
+      "h2": "En de HRV van de Apple Watch?",
+      "body": "De Apple Watch toont SDNN, geen RMSSD, uit korte metingen van ongeveer een minuut, meerdere keren per dag en 's nachts. SDNN en RMSSD zijn verschillende maten, dus de Fitbit-tabel hierboven geldt niet voor Apple Watch-waarden, en deze calculator vergelijkt ze niet. Vergelijk in plaats daarvan je 7-daags gemiddelde in de Gezondheid-app met je eerdere weken. Ligt je gemiddelde een paar dagen duidelijk onder je gebruikelijke niveau, dan zegt dat meer dan welk los getal ook. Meer: [Waarom je HRV op elk apparaat anders is](/articles/hrv-different-every-device)."
     },
     {
       "h2": "Waarom is mijn HRV laag?",
@@ -88,16 +91,16 @@
   "faqTitle": "HRV-calculator — veelgestelde vragen",
   "faq": [
     {
-      "q": "Wat is een normale HRV per leeftijd?",
-      "a": "Voor nachtelijke RMSSD is de mediaan ongeveer 58 ms bij 18–29, 50 ms bij 30–39, 42 ms bij 40–49, 36 ms bij 50–59 en 30 ms bij 60–69. Voor SDNN op de Apple Watch is dat ongeveer 46 ms bij 18–34, 42 ms bij 35–44, 34 ms bij 45–54 en 29 ms bij 55–64. Je eigen trend zegt meer dan het gemiddelde."
+      "q": "Wat is een goede HRV voor mijn leeftijd?",
+      "a": "Onder ongeveer 8 miljoen Fitbit-gebruikers was de mediane RMSSD tussen 6 en 7 uur 's ochtends {{f20}} ms bij vrouwen en {{m20}} ms bij mannen op 20–21 jaar, {{f40}} en {{m40}} ms op 40–41 en {{f60}} en {{m60}} ms op 60–61. Dat beschrijft de gebruikers van één apparaat, geen medische norm. Je eigen trend telt zwaarder dan welk gemiddelde ook."
     },
     {
-      "q": "Wat is een normale HRV op de Apple Watch?",
-      "a": "De Apple Watch toont SDNN. Bij gezonde volwassenen is de mediaan ongeveer 46 ms bij 18–34, 42 ms bij 35–44, 34 ms bij 45–54, 29 ms bij 55–64 en 26 ms vanaf 65 (Voss 2015). De metingen zijn kort, dus gebruik je 7-daags gemiddelde."
+      "q": "Hoe werkt deze calculator?",
+      "a": "Hij neemt de gepubliceerde tabel van de ochtend-RMSSD onder Fitbit-gebruikers (Natarajan 2020), kiest voor jouw geslacht de leeftijdsgroep die het dichtst bij je leeftijd ligt en vertelt of je waarde onder, binnen of boven de middelste helft valt. Hij schat geen waarden tussen leeftijdsgroepen en geeft geen percentiel."
     },
     {
-      "q": "RMSSD of SDNN — wat toont mijn apparaat?",
-      "a": "Oura, Whoop, Garmin en Polar geven RMSSD. De Apple Watch geeft SDNN. Kies de juiste optie in de calculator — de twee worden anders gemeten en hebben aparte normtabellen."
+      "q": "Kan ik hem gebruiken met een Apple Watch?",
+      "a": "Nee. De Apple Watch toont SDNN, een andere HRV-maat uit korte metingen, die je niet met een RMSSD-tabel kunt vergelijken. Vergelijk het 7-daags gemiddelde van je Apple Watch liever met je eerdere weken."
     },
     {
       "q": "Waarom is mijn HRV laag?",
@@ -116,13 +119,12 @@
       "a": "HRV reageert op slaap, alcohol, maaltijden, stress, ziekte en training. Schommelingen van 10–20 ms per dag zijn normaal, dus vergelijk weekgemiddelden in plaats van losse nachten."
     },
     {
-      "q": "Waar komen deze HRV-normen vandaan?",
-      "a": "De RMSSD-banden zijn afgeleid van de meta-analyse van Nunan 2010, de leeftijdscurve van Umetani 1998 en het cohort van Voss 2015, aangepast voor nachtelijke metingen met wearables. De SDNN-tabel komt rechtstreeks uit Voss 2015 (ongeveer 1.900 gezonde volwassenen). De volledige bronnen staan bij Bronnen."
+      "q": "Waar komen deze cijfers vandaan?",
+      "a": "Uit één gepubliceerde studie met ongeveer 8 miljoen Fitbit-gebruikers (Natarajan 2020, Lancet Digital Health, aanvullende tabel S3): RMSSD gemeten door de polssensor tussen 6 en 7 uur 's ochtends terwijl de drager stil was, naar zelf opgegeven leeftijd en geslacht. Drie van de vier auteurs werkten bij Fitbit, en Fitbit financierde de studie. Het is de verdeling onder gebruikers van één apparaat, geen medische norm."
     }
   ],
   "sourcesTitle": "Bronnen & methode",
-  "methodologyRmssd": "De RMSSD-banden zijn afgeleid, niet overgenomen uit één dataset. De meeste normstudies geven gemiddelden ± SD of medianen per decennium voor korte metingen overdag. We hebben die centrale waarden gecombineerd (Nunan 2010), de daling per decennium toegepast (Umetani 1998) en de spreiding naar leeftijd en geslacht (Voss 2015), en die omgezet naar geschatte percentielen, rekening houdend met de rechtsscheve verdeling van RMSSD. De tabel is afgestemd op nachtelijke RMSSD — wat Oura, Whoop en Garmin meten, wanneer de parasympathische tonus het hoogst is — daarom liggen de medianen boven de gepoolde ~42 ms overdag uit Nunan 2010.",
-  "methodologySdnn": "De SDNN-tabel komt rechtstreeks uit Voss et al. 2015 (ongeveer 1.900 gezonde volwassenen, ecg van 5 minuten liggend in rust): we hebben de gepubliceerde gemiddelden ± SD per decennium voor vrouwen (tabel 5) en mannen (tabel 7) samengevoegd, gewogen naar groepsgrootte, en met een log-normale fit omgezet naar percentielen, omdat SDNN rechtsscheef verdeeld is. De jongste band gebruikt de gegevens van 25–34 en de oudste die van 65–74. De Apple Watch leest SDNN uit korte metingen (~1 minuut), dus losse waarden schommelen meer dan een meting in een lab — vergelijk je weekgemiddelde.",
+  "methodology": "Waar de cijfers vandaan komen: uit één gepubliceerde studie, Natarajan et al. 2020 (Lancet Digital Health), bijlage, tabel S3 — RMSSD tussen 6 en 7 uur 's ochtends bij ongeveer 8 miljoen Fitbit-gebruikers, gemeten door de optische polssensor (PPG) tijdens rustperiodes op één dag, met zelf opgegeven leeftijd en geslacht. De tabel geeft de mediaan en het 25e–75e percentiel voor leeftijdsgroepen van twee jaar (20–21, 25–26 … 60–61), apart voor vrouwen en mannen. Drie van de vier auteurs werkten bij Fitbit, en Fitbit financierde de studie. Fitbit-gebruikers zijn geen willekeurige steekproef van de bevolking, andere apparaten en borstband-ECG's geven andere cijfers, en onder 20 en boven 61 zijn er geen gegevens. Hoe wij het gebruiken: we nemen de leeftijdsgroep die het dichtst bij je leeftijd ligt (18–19 jaar → 20–21; ouder dan 61 → 60–61) en interpoleren niet tussen groepen. Onder het 25e percentiel zeggen we 'lager dan bij de meeste', boven het 75e 'hoger dan bij de meeste', anders 'binnen de middelste helft'. Dit is een vergelijking met gebruikers van één apparaat, geen medische norm en geen diagnose.",
   "embed": {
     "title": "Deze HRV-calculator insluiten",
     "text": "Gratis in te sluiten op je site of blog — plak dit fragment. Het wordt inline weergegeven (geen iframe), heeft geen afhankelijkheden, is open source en bevat een bronvermelding naar ONDA Life.",
@@ -140,9 +142,7 @@
     "trackers": "Beste HRV-trackers (2026)"
   },
   "sourcesContributes": [
-    "Gepoolde referentiewaarden voor RMSSD/SDNN uit 44 studies bij gezonde volwassenen (gepoolde rust-RMSSD ≈ 42 ms) — verankeren de centrale tendens.",
-    "De klassieke leeftijdscurve — HRV in het tijdsdomein (incl. RMSSD) daalt per decennium — bepaalt de verschuiving per leeftijdsgroep.",
-    "Groot gezond cohort (n ≈ 1.900; 5-min ecg in rugligging) met kortetermijn-HRV gestratificeerd naar leeftijd en geslacht. Bepaalt de spreiding van de RMSSD (breedte p10–p90) en is de directe bron van de SDNN-tabel (Apple Watch): gemiddelden per decennium ± SD voor vrouwen (Table 5) en mannen (Table 7).",
-    "Fundamentele definities van RMSSD/SDNN en meetstandaarden waarnaar de literatuur verwijst."
+    "Directe bron van de tabel: RMSSD tussen 6 en 7 uur 's ochtends bij ongeveer 8 miljoen Fitbit-gebruikers (optische polssensor, rustperiodes), mediaan en 25e–75e percentiel per leeftijd en geslacht. Drie van de vier auteurs werkten bij Fitbit, en Fitbit financierde de studie.",
+    "Definitie van RMSSD en de meetstandaarden waarnaar de literatuur verwijst."
   ]
 }

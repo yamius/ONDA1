@@ -71,11 +71,11 @@
   "sections": [
     {
       "h2": "¿Cuál es la frecuencia cardíaca normal en reposo según la edad?",
-      "body": "En adultos se considera normal una frecuencia cardíaca en reposo de 60 a 100 lpm. Las personas en forma suelen estar por debajo (a menudo por debajo de 60 lpm; muchos atletas de resistencia de élite llegan a 40 lpm o menos en el punto más bajo del día), y en estudios poblacionales una frecuencia cardiaca en reposo más baja se asocia con menor mortalidad a largo plazo. En la encuesta NHANES de los CDC con adultos sanos de EE. UU., la mediana del pulso en reposo sentado fue de unos 69 lpm en hombres de 18–39 años, 68 lpm a los 40–59 y 67 lpm a partir de los 60: casi plana a lo largo de la vida adulta. La mitad central de los hombres (p25–p75) estaba entre unos 60 y 77 lpm. A diferencia de la HRV, la frecuencia en reposo apenas cambia con la edad en adultos; la forma física, la genética, el sueño y el estrés influyen mucho más. Por eso la comparación más útil es con tu propia tendencia matutina. Guía completa: [frecuencia cardíaca en reposo por edad](/articles/resting-heart-rate-by-age)."
+      "body": "En adultos se considera normal una frecuencia cardíaca en reposo de 60 a 100 lpm. Las personas en forma suelen estar por debajo (a menudo por debajo de 60 lpm; muchos atletas de resistencia de élite llegan a 40 lpm o menos en el punto más bajo del día), y en estudios poblacionales una frecuencia cardiaca en reposo más baja se asocia con menor mortalidad a largo plazo. En la encuesta NHANES de los CDC con adultos sanos de EE. UU., la mediana del pulso en reposo sentado fue de unos 69 lpm en hombres de 20–39 años, 68 lpm a los 40–59 y 67 lpm a los 60–79 y 68 lpm a partir de los 80: casi plana a lo largo de la vida adulta. La mitad central de los hombres (p25–p75) estaba entre unos 60 y 77 lpm. A diferencia de la HRV, la frecuencia en reposo apenas cambia con la edad en adultos; la forma física, la genética, el sueño y el estrés influyen mucho más. Por eso la comparación más útil es con tu propia tendencia matutina. Guía completa: [frecuencia cardíaca en reposo por edad](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Pulso en reposo en la mujer: ¿qué es normal?",
-      "body": "La frecuencia cardíaca en reposo de las mujeres es unos latidos más alta que la de los hombres, sobre todo porque el corazón suele ser más pequeño y bombea algo menos de sangre por latido. En NHANES la mediana fue de unos 74 lpm en mujeres de 18–39 años, 71 lpm a los 40–59 y 70 lpm a partir de los 60, con la mitad central entre unos 64 y 82 lpm. La frecuencia en reposo también varía con el ciclo menstrual —suele ser unos latidos más alta en la segunda mitad— y aumenta durante el embarazo. Así que compara en condiciones equivalentes: a la misma hora, en la misma fase del ciclo y con tu promedio semanal en lugar de un solo día. Elige \"Mujer\" en la calculadora para usar la tabla femenina."
+      "body": "La frecuencia cardíaca en reposo de las mujeres es unos latidos más alta que la de los hombres, sobre todo porque el corazón suele ser más pequeño y bombea algo menos de sangre por latido. En NHANES la mediana fue de unos 74 lpm en mujeres de 20–39 años, 71 lpm a los 40–59 y 70 lpm a los 60–79 y 71 lpm a partir de los 80, con la mitad central entre unos 64 y 82 lpm. La frecuencia en reposo también varía con el ciclo menstrual —suele ser unos latidos más alta en la segunda mitad— y aumenta durante el embarazo. Así que compara en condiciones equivalentes: a la misma hora, en la misma fase del ciclo y con tu promedio semanal en lugar de un solo día. Elige \"Mujer\" en la calculadora para usar la tabla femenina."
     },
     {
       "h2": "¿Por qué tengo el pulso en reposo alto?",
@@ -94,11 +94,11 @@
   "faq": [
     {
       "q": "¿Cuál es el pulso normal por edad?",
-      "a": "En adultos es de 60–100 lpm, y en personas sanas suele estar entre 60 y 79. La mediana CDC NHANES es de unos 69 lpm en hombres de 18–39 años, 68 lpm a los 40–59 y 67 lpm a partir de los 60; en mujeres, unos 74, 71 y 70 lpm. Apenas cambia con la edad."
+      "a": "En adultos es de 60–100 lpm, y en personas sanas suele estar entre 60 y 79. La mediana CDC NHANES es de unos 69 lpm en hombres de 20–39 años, 68 lpm a los 40–59 y 67 lpm a los 60–79 y 68 lpm a partir de los 80; en mujeres, unos 74, 71, 70 y 71 lpm. Apenas cambia con la edad."
     },
     {
       "q": "¿Cuál es el pulso normal en reposo de una mujer?",
-      "a": "Unos latidos más alto que en los hombres: la mediana es de unos 74 lpm a los 18–39 años, 71 lpm a los 40–59 y 70 lpm a partir de los 60, con la mitad central de las mujeres entre unos 64 y 82 lpm."
+      "a": "Unos latidos más alto que en los hombres: la mediana es de unos 74 lpm a los 20–39 años, 71 lpm a los 40–59 y 70 lpm a los 60–79 y 71 lpm a partir de los 80, con la mitad central de las mujeres entre unos 64 y 82 lpm."
     },
     {
       "q": "¿Es bueno tener 50 pulsaciones en reposo?",
@@ -126,7 +126,7 @@
     }
   ],
   "sourcesTitle": "Fuentes y metodología",
-  "methodology": "Las tablas proceden directamente del informe CDC/NCHS sobre NHANES 1999–2008 (Ostchega et al. 2011, tablas 2–3): pulso en reposo sentado de unos 17 000 adultos de EE. UU., excluyendo a personas con afecciones o medicamentos que alteran el pulso. La franja 18–39 usa la fila 20–39 y la franja 60+ la fila 60–79. Tu percentil se interpola entre los percentiles 5.º–95.º publicados para tu edad y sexo. Relojes y anillos miden la frecuencia en reposo o durante el sueño, que suele ser unos lpm más baja que una medición sentado.",
+  "methodology": "Las tablas proceden directamente del informe CDC/NCHS sobre NHANES 1999–2008 (Ostchega et al. 2011, tablas 2–3): pulso en reposo sentado de unos 17 000 adultos de EE. UU., excluyendo a personas con afecciones o medicamentos que alteran el pulso. Las franjas son las filas de la fuente (20–39, 40–59, 60–79, 80+). La fuente no tiene datos propios para los 18–19 años, así que se comparan con 20–39. Tu percentil se interpola entre los percentiles 5.º–95.º publicados para tu edad y sexo. Relojes y anillos miden la frecuencia en reposo o durante el sueño, que suele ser unos lpm más baja que una medición sentado.",
   "sourcesContributes": [
     "Fuente directa de las tablas: percentiles del pulso en reposo sentado por edad y sexo de NHANES 1999–2008, excluyendo afecciones y medicamentos que alteran el pulso (tablas 2–3).",
     "Contexto clínico: 60–100 lpm es el rango normal estándar; más baja en personas muy en forma, algo más alta en mujeres y en parte genética.",
@@ -138,5 +138,6 @@
     "hrv": "Calculadora de HRV por edad",
     "camera": "Mide tu pulso con la cámara del móvil",
     "zone2": "Frecuencia cardíaca en Zona 2"
-  }
+  },
+  "youngNote": "La fuente no tiene datos propios para los 18–19 años, así que te comparamos con el grupo de 20–39."
 }

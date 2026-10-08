@@ -28,7 +28,7 @@
         {
           "id": "rmssd-vs-sdnn",
           "q": "RMSSD 和 SDNN 有什么区别？",
-          "a": "它们是计算 HRV 的两种方法。RMSSD 看相邻心跳之间的差值，反映迷走神经活动；Oura、Whoop、Garmin 和 Polar 报告的是它。SDNN 是一段时间内所有间期的整体离散程度；Apple Watch 报告的是 SDNN。两者不能互换，只能各自对照自己的参考值。[支持两种模式的 HRV 计算器 →](/tools/hrv)"
+          "a": "这是计算 HRV 的两种方法。RMSSD 看相邻心跳之间的差异，反映迷走神经活动；Oura、Whoop、Garmin 和 Polar 显示的是它。SDNN 是一个时间窗内所有间期的整体离散程度；Apple Watch 显示的是 SDNN。两者不能互换，所以永远不要把其中一个的数值拿去和另一个的表比较。[为什么每台设备的 HRV 都不一样 →](/articles/hrv-different-every-device)"
         },
         {
           "id": "hrv-vs-heart-rate",
@@ -48,22 +48,22 @@
         {
           "id": "what-is-a-good-hrv",
           "q": "HRV 多少算好？",
-          "a": "并不存在一个统一的“好”HRV 数值。作为参考，夜间 RMSSD 中位数在 18–29 岁约为 58 ms，到 60 多岁降至约 30 ms，健康人群围绕这些中位数分布得很广。其他来源的数字可能更高（例如 WHOOP 认为很多二十多岁的人在 55–105 ms），因为每个来源使用的人群、设备和测量时段都不同。“好”的 HRV 是相对于自身基线保持稳定或上升。[各年龄段的正常 HRV →](/articles/normal-hrv-by-age)"
+          "a": "不存在一个统一的好 HRV 数值。在约 800 万名 Fitbit 用户中，早上 6–7 点 RMSSD 的中位数在 20–21 岁时女性为 {{fact:hrv.fitbit.rmssd.am.female.median.20-21}}、男性为 {{fact:hrv.fitbit.rmssd.am.male.median.20-21}}，60–61 岁时为 {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} 和 {{fact:hrv.fitbit.rmssd.am.male.median.60-61}}——这是与同一种设备用户的比较，不是医学标准。在其他地方你会看到更高的数字（例如 WHOOP 把很多二十多岁的人放在 55–105 毫秒），因为每个来源使用的人群、设备和时间段都不同。“好”的 HRV 是相对于你自己的基线保持稳定或在上升的 HRV。[各年龄段的正常 HRV →](/articles/normal-hrv-by-age)"
         },
         {
           "id": "healthy-hrv",
           "q": "健康的 HRV 是多少？",
-          "a": "健康的 HRV 是指处在你自己的常规范围内，并能在压力、旅行或高强度训练后恢复。人群范围非常宽——两个同龄的健康人可能相差 40 ms 甚至更多。年龄参考值用来定位，两周趋势用来做判断。[查看你自己的范围 →](/tools/baseline)"
+          "a": "健康的 HRV 是保持在你平时范围内、并能在压力、出行或高强度训练后恢复的 HRV。人群范围非常宽——同龄的两个健康人可能相差 40 毫秒甚至更多。把年龄对照表当作参考，用你两周的趋势来做判断。[查看你自己的范围 →](/tools/baseline)"
         },
         {
           "id": "hrv-range-by-age",
           "q": "不同年龄的 HRV 正常范围是多少？",
-          "a": "典型的夜间 RMSSD（健康成年人中间一半）在 18–29 岁约为 42–78 ms，30 多岁 36–68 ms，40 多岁 30–56 ms，之后范围更窄。Apple Watch 的 SDNN 有另一套参考值。输入年龄和数值即可查看你的百分位。[按年龄计算 HRV →](/tools/hrv)"
+          "a": "在约 800 万名 Fitbit 用户中，早晨 RMSSD 的中间一半在 20–21 岁时女性为 {{fact:hrv.fitbit.rmssd.am.female.typical.20-21}}、男性为 {{fact:hrv.fitbit.rmssd.am.male.typical.20-21}}，40–41 岁时为 {{fact:hrv.fitbit.rmssd.am.female.typical.40-41}} 和 {{fact:hrv.fitbit.rmssd.am.male.typical.40-41}}，60–61 岁时为 {{fact:hrv.fitbit.rmssd.am.female.typical.60-61}} 和 {{fact:hrv.fitbit.rmssd.am.male.typical.60-61}}。这描述的是同一种设备的用户，不是医学标准，Apple Watch 的 SDNN 也不能与之比较。输入年龄、性别和你的数值，看看你处在什么位置。[按年龄计算 HRV →](/tools/hrv)"
         },
         {
           "id": "is-my-number-good",
           "q": "HRV 20、30 或 43 算好吗？为什么我的只有 30？",
-          "a": "这取决于你的年龄、设备和自身基线。20 ms 在 70 多岁时可能很普通；30 ms 在 60 岁时很典型，在 25 岁时则偏低；43 ms 大约处于 40 多岁人群的中间；100 ms 对大多数成年人来说偏高，但对部分运动员很正常。脱离背景的单个数字意义不大——先看它在你年龄段的位置，再观察趋势。[查看你的数值 →](/tools/hrv)"
+          "a": "这取决于你的年龄、设备和你自己的基线。在 Fitbit 用户中，早晨 RMSSD 的中间一半在 25–26 岁时女性为 {{fact:hrv.fitbit.rmssd.am.female.typical.25-26}}、男性为 {{fact:hrv.fitbit.rmssd.am.male.typical.25-26}}，60–61 岁时为 {{fact:hrv.fitbit.rmssd.am.female.typical.60-61}} 和 {{fact:hrv.fitbit.rmssd.am.male.typical.60-61}}。所以 30 毫秒在 60 岁时处于范围中间，在 25 岁时偏低；43 毫秒对 40 岁出头的人来说略高于中位数（女性 {{fact:hrv.fitbit.rmssd.am.female.median.40-41}}，男性 {{fact:hrv.fitbit.rmssd.am.male.median.40-41}}）。100 毫秒对大多数成年人来说偏高，但对一些运动员来说很正常。没有背景的单个数字说明不了多少——先看它在你这个年龄处在什么位置，再关注趋势。[查一查你的数值 →](/tools/hrv)"
         },
         {
           "id": "high-hrv",

@@ -1,10 +1,10 @@
 {
   "science": "La science derrière → [RMSSD : ce que reflète cette mesure de la HRV, et ce qu’elle ne reflète pas](/science/concepts/rmssd) · [SDNN : ce que mesure cet indicateur de la HRV, et ce qu’il ne mesure pas](/science/concepts/sdnn) · [Référence personnelle de HRV : pourquoi votre propre normalité compte plus que toute norme](/science/concepts/hrv-baseline) · [Ce qu’une seule valeur de HRV peut vous dire, et ce qu’elle ne peut pas dire](/science/concepts/interpreting-hrv)",
   "meta": {
-    "title": "Calculateur de HRV selon l'âge — Normes | ONDA Life",
-    "description": "Calculateur de HRV gratuit : entrez votre âge et votre HRV (RMSSD Oura, Whoop, Garmin ou SDNN Apple Watch) : votre percentile et les normes par âge.",
+    "title": "Calculateur de HRV selon l'âge et le sexe — Comparaison avec les utilisateurs Fitbit | ONDA Life",
+    "description": "Calculateur de HRV gratuit : entrez votre âge, votre sexe et votre RMSSD du matin pour voir comment il se situe par rapport à environ 8 millions d’utilisateurs Fitbit de votre âge. Une comparaison, pas une norme médicale.",
     "appName": "Calculateur de HRV selon l'âge",
-    "appDescription": "Calculateur gratuit qui compare votre variabilité de la fréquence cardiaque (RMSSD ou SDNN de l'Apple Watch) aux normes publiées par âge et donne un percentile approximatif."
+    "appDescription": "Calculateur gratuit qui compare votre RMSSD du matin à la distribution publiée chez environ 8 millions d’utilisateurs Fitbit du même âge et du même sexe (Natarajan 2020). Pas une norme médicale."
   },
   "breadcrumb": {
     "home": "Accueil",
@@ -12,65 +12,68 @@
     "current": "Calculateur de HRV"
   },
   "h1": "Calculateur de HRV selon l'âge",
-  "capsule": "Entrez votre âge et votre variabilité de la fréquence cardiaque (HRV, ou VFC) pour voir où vous vous situez par rapport aux personnes de votre âge. Utilisez le RMSSD si votre valeur vient d'Oura, Whoop, Garmin ou Polar, et le SDNN si elle vient de l'Apple Watch. Les normes proviennent d'études publiées, mais votre tendance sur plusieurs semaines compte plus qu'un percentile.",
+  "capsule": "Entrez votre âge, votre sexe et votre variabilité de la fréquence cardiaque (HRV, ou VFC, en RMSSD en ms) pour voir comment elle se situe par rapport aux utilisateurs Fitbit de votre âge. Les chiffres viennent d’une grande étude publiée portant sur environ 8 millions d’utilisateurs Fitbit (Natarajan 2020). Elle montre comment la HRV se répartissait chez les utilisateurs d’un seul appareil — pas une norme médicale. Votre propre tendance sur plusieurs semaines compte davantage.",
   "imageAlt": "Calculateur de HRV selon l'âge — calculateur interactif gratuit de variabilité de la fréquence cardiaque par ONDA Life",
-  "metric": {
-    "label": "Votre appareil affiche",
-    "rmssd": "RMSSD (Oura, Whoop, Garmin, Polar)",
-    "sdnn": "SDNN (Apple Watch)",
-    "hintRmssd": "Oura : Disponibilité → Équilibre de la HRV / HRV moyenne. Whoop : Recovery → HRV. Garmin : Statut HRV (moyenne nocturne). Polar : Nightly Recharge → HRV.",
-    "hintSdnn": "App Santé de l'iPhone → Parcourir → Cœur → Variabilité de la fréquence cardiaque. L'Apple Watch affiche le SDNN en ms — utilisez votre moyenne sur 7 jours si possible."
+  "sex": {
+    "label": "Sexe",
+    "female": "Femme",
+    "male": "Homme",
+    "unspecified": "Je préfère ne pas le dire"
   },
+  "metricNote": "Entrez le RMSSD en ms — la HRV qu’affichent Oura, Whoop, Garmin, Polar et Fitbit. L’Apple Watch affiche le SDNN, une autre mesure : ce tableau ne s’applique donc pas à ses valeurs.",
+  "hint": "Oura : Disponibilité → HRV moyenne. Whoop : Recovery → HRV. Garmin : Statut VFC (moyenne nocturne). Polar : Nightly Recharge → HRV. Fitbit : Mesures de santé → HRV.",
   "age": {
     "label": "Âge",
     "placeholder": "ex. 34"
   },
   "value": {
-    "labelRmssd": "HRV — RMSSD (ms)",
-    "labelSdnn": "HRV — SDNN (ms)",
+    "label": "HRV — RMSSD (ms)",
     "placeholder": "ex. 45"
   },
   "result": {
-    "percentile": "≈ {{p}}e percentile",
-    "band": "{{band}} ans"
+    "compared": "Comparé aux utilisateurs Fitbit ({{sex}}) de {{band}} ans : la moitié centrale avait {{p25}}–{{p75}} ms, la médiane était de {{p50}} ms (RMSSD, 6 h–7 h du matin).",
+    "comparedPosition": "Comparé aux utilisateurs Fitbit ({{sex}}) de {{band}} ans : votre valeur est {{position}} (moitié centrale {{p25}}–{{p75}} ms, médiane {{p50}} ms).",
+    "position": {
+      "lower": "sous la moitié centrale",
+      "middle": "dans la moitié centrale",
+      "higher": "au-dessus de la moitié centrale"
+    },
+    "sexFemale": "femmes",
+    "sexMale": "hommes",
+    "nearest": "L’étude donne des tranches d’âge de deux ans tous les cinq ans. Nous utilisons la tranche la plus proche de votre âge et n’estimons pas de valeurs entre les tranches.",
+    "edgeYoung": "Les données commencent à 20 ans : vous êtes donc comparé au groupe le plus jeune (20–21).",
+    "edgeOld": "Les données s’arrêtent à 61 ans : vous êtes donc comparé au groupe le plus âgé (60–61)."
   },
-  "tiers": {
-    "low": "Basse pour votre âge",
-    "below": "Sous la moyenne",
-    "average": "Dans la moyenne",
-    "above": "Au-dessus de la moyenne",
-    "excellent": "Excellente"
+  "verdicts": {
+    "lower": "Plus basse que chez la plupart des utilisateurs Fitbit de votre âge",
+    "middle": "Dans la moitié centrale des utilisateurs Fitbit de votre âge",
+    "higher": "Plus élevée que chez la plupart des utilisateurs Fitbit de votre âge"
   },
+  "disclaimerLine": "Il s’agit d’une comparaison avec les utilisateurs d’un seul appareil, pas d’une norme médicale. Votre propre tendance compte davantage.",
   "summaries": {
-    "low": "Avec {{v}} ms, vous êtes dans la fourchette basse pour les {{band}} ans. Une seule valeur basse est fréquente après une mauvaise nuit, de l'alcool, une maladie ou un entraînement intense — ce qui compte, c'est votre tendance sur plusieurs semaines, pas une nuit.",
-    "below": "{{v}} ms est sous la médiane habituelle (~{{median}} ms) pour les {{band}} ans. Sommeil, horaire de l'alcool, cardio en zone 2 et respiration lente sont les leviers les mieux étayés par la recherche.",
-    "average": "{{v}} ms est proche de la médiane (~{{median}} ms) pour les {{band}} ans — une HRV de repos saine et typique. Suivez votre propre référence ; l'objectif est une tendance à la hausse.",
-    "above": "{{v}} ms est au-dessus de la médiane (~{{median}} ms) pour les {{band}} ans — bon signe de capacité de récupération. Préservez-la avec un sommeil et une récupération réguliers.",
-    "excellent": "{{v}} ms est dans la fourchette haute pour les {{band}} ans — le type de HRV que l'on observe souvent chez les personnes bien entraînées et bien récupérées."
+    "lower": "Une valeur sous la moitié centrale est fréquente et, seule, dit peu de chose : la génétique, votre appareil, l’heure de la mesure, une nuit courte, l’alcool, une maladie ou un entraînement intense peuvent l’expliquer. Regardez si votre moyenne sur 7 jours reste sous votre plage habituelle.",
+    "middle": "Un quart des utilisateurs avaient des valeurs plus basses et un quart des valeurs plus élevées. Plus utile que cette comparaison : savoir si votre propre HRV reste stable ou augmente dans les semaines qui viennent.",
+    "higher": "Une valeur au-dessus de la moitié centrale est fréquente chez les personnes en forme et bien reposées, mais l’appareil et la génétique jouent aussi. Un bond soudain bien au-dessus de votre plage habituelle mérite un second regard."
   },
-  "sdnnNote": "L'Apple Watch fait des mesures courtes (environ une minute) plusieurs fois par jour et la nuit, donc ses valeurs de SDNN varient davantage qu'un RMSSD nocturne. Comparez votre moyenne sur 7 jours, pas une mesure isolée.",
   "invalid": "Entrez un âge valide (18–120) et une HRV en ms (1–300).",
-  "disclaimer": "Estimation à visée éducative, pas un avis médical. Les percentiles sont approximatifs et construits à partir d'études normatives publiées sur la HRV. Votre tendance sur plusieurs semaines et votre référence personnelle comptent bien plus qu'une mesure isolée ou qu'une comparaison avec la population. La HRV varie d'une nuit à l'autre selon le sommeil, l'alcool, la maladie et la charge d'entraînement.",
+  "disclaimer": "Comparaison à visée éducative, ni avis médical ni diagnostic. La référence est la distribution du RMSSD du matin chez les utilisateurs Fitbit dans une étude publiée, pas une norme médicale. Votre propre tendance sur plusieurs semaines compte bien plus qu’une mesure isolée. La HRV varie d’une nuit à l’autre selon le sommeil, l’alcool, la maladie et la charge d’entraînement.",
   "tables": {
-    "rmssdTitle": "HRV (RMSSD) selon l'âge — normes nocturnes",
-    "rmssdCaption": "Pour Oura, Whoop, Garmin et Polar (RMSSD nocturne ou au repos).",
-    "sdnnTitle": "HRV (SDNN) selon l'âge — normes Apple Watch",
-    "sdnnCaption": "Pour l'Apple Watch (SDNN). D'après Voss 2015 (ECG de repos de 5 minutes), femmes et hommes regroupés.",
+    "title": "HRV (RMSSD) selon l’âge et le sexe — distribution chez les utilisateurs Fitbit",
+    "caption": "RMSSD entre 6 h et 7 h du matin, capteur au poignet, environ 8 millions d’utilisateurs Fitbit (Natarajan 2020, tableau supplémentaire S3). Médiane et moitié centrale (25e–75e percentile). Pas une norme médicale.",
     "age": "Âge",
-    "p10": "Basse (p10)",
-    "p25": "Sous la moyenne (p25)",
-    "p50": "Médiane (p50)",
-    "p75": "Au-dessus (p75)",
-    "p90": "Excellente (p90)"
+    "femaleMedian": "Femmes — médiane",
+    "femaleRange": "Femmes — moitié centrale",
+    "maleMedian": "Hommes — médiane",
+    "maleRange": "Hommes — moitié centrale"
   },
   "sections": [
     {
-      "h2": "Quelle est la HRV normale selon l'âge ?",
-      "body": "Une bonne HRV se situe autour ou au-dessus de la médiane de votre âge — et surtout, elle reste stable ou augmente par rapport à votre propre référence. Pour le RMSSD nocturne (Oura, Whoop, Garmin, Polar), la médiane est d'environ 58 ms à 18–29 ans, 50 ms dans la trentaine, 42 ms dans la quarantaine, 36 ms dans la cinquantaine, 30 ms dans la soixantaine et 26 ms après 70 ans. La moitié centrale des personnes (p25–p75) dans la trentaine va d'environ 36 à 68 ms : l'écart au sein d'une même tranche d'âge est donc plus large que la différence entre deux décennies. C'est pourquoi une simple comparaison avec un tableau dit peu de choses à elle seule. La HRV baisse avec l'âge parce que le contrôle vagal du cœur s'affaiblit et que les vaisseaux se rigidifient — c'est normal. La forme physique, le sommeil et une respiration lente régulière peuvent freiner ce déclin. Guide complet : [HRV normale selon l'âge](/articles/normal-hrv-by-age)."
+      "h2": "Quelle HRV est bonne pour mon âge ?",
+      "body": "Il n’existe pas de bonne valeur de HRV unique. Le plus grand jeu de données publié par âge et par sexe, issu d’environ 8 millions d’utilisateurs Fitbit (Natarajan 2020), montre comment se répartissait le RMSSD entre 6 h et 7 h du matin : la médiane était de {{f20}} ms chez les femmes et {{m20}} ms chez les hommes à 20–21 ans, de {{f40}} et {{m40}} ms à 40–41 ans, et de {{f60}} et {{m60}} ms à 60–61 ans. L’écart au sein d’une même tranche d’âge est plus grand que la différence entre les tranches : une comparaison isolée dit donc peu de chose. La HRV tend à diminuer avec l’âge ; la forme physique, le sommeil et la respiration lente régulière influencent votre position. La question la plus utile est de savoir si votre propre HRV reste stable ou augmente par rapport à votre ligne de base. Guide complet : [HRV normale selon l’âge](/articles/normal-hrv-by-age)."
     },
     {
-      "h2": "HRV normale sur Apple Watch (SDNN)",
-      "body": "L'Apple Watch n'affiche pas le RMSSD mais le SDNN, une autre mesure de la HRV : ses valeurs ne sont donc pas comparables aux tableaux Oura ou Whoop. Dans l'étude de Voss 2015 portant sur environ 1 900 adultes en bonne santé (ECG de repos de 5 minutes), le SDNN médian était d'environ 46 ms à 18–34 ans, 42 ms à 35–44 ans, 34 ms à 45–54 ans, 29 ms à 55–64 ans et 26 ms à partir de 65 ans. Choisissez « SDNN (Apple Watch) » ci-dessus pour obtenir votre percentile selon ces normes. Une réserve : l'Apple Watch fait des mesures courtes d'environ une minute plusieurs fois par jour et la nuit, donc les valeurs isolées sont plus dispersées qu'un enregistrement en laboratoire. Utilisez votre moyenne sur 7 jours dans l'app Santé. Si votre moyenne descend nettement sous votre niveau habituel pendant plusieurs jours, c'est plus parlant que n'importe quel chiffre isolé. En savoir plus : [pourquoi votre HRV diffère selon l'appareil](/articles/hrv-different-every-device)."
+      "h2": "Et la HRV de l’Apple Watch ?",
+      "body": "L’Apple Watch affiche le SDNN, pas le RMSSD, à partir de mesures courtes d’environ une minute prises plusieurs fois par jour et la nuit. Le SDNN et le RMSSD sont des mesures différentes : le tableau Fitbit ci-dessus ne s’applique donc pas aux valeurs de l’Apple Watch, et ce calculateur ne les compare pas. Comparez plutôt votre moyenne sur 7 jours dans l’app Santé avec vos semaines précédentes. Si votre moyenne reste nettement sous votre niveau habituel plusieurs jours de suite, cela en dit plus qu’un chiffre isolé. Plus : [Pourquoi votre HRV change d’un appareil à l’autre](/articles/hrv-different-every-device)."
     },
     {
       "h2": "Pourquoi ma HRV est-elle basse ?",
@@ -88,16 +91,16 @@
   "faqTitle": "Calculateur de HRV — questions fréquentes",
   "faq": [
     {
-      "q": "Quelle est une bonne HRV pour mon âge ?",
-      "a": "Pour le RMSSD nocturne, la médiane est d'environ 58 ms à 18–29 ans, 50 ms à 30–39 ans, 42 ms à 40–49 ans, 36 ms à 50–59 ans et 30 ms à 60–69 ans. Pour le SDNN de l'Apple Watch, elle est d'environ 46 ms à 18–34 ans, 42 ms à 35–44 ans, 34 ms à 45–54 ans et 29 ms à 55–64 ans. Votre propre tendance compte plus que la moyenne."
+      "q": "Quelle HRV est bonne pour mon âge ?",
+      "a": "Chez environ 8 millions d’utilisateurs Fitbit, la médiane du RMSSD entre 6 h et 7 h du matin était de {{f20}} ms chez les femmes et {{m20}} ms chez les hommes à 20–21 ans, de {{f40}} et {{m40}} ms à 40–41 ans, et de {{f60}} et {{m60}} ms à 60–61 ans. Cela décrit les utilisateurs d’un seul appareil, pas une norme médicale. Votre propre tendance compte plus que n’importe quelle moyenne."
     },
     {
-      "q": "Quelle est la HRV normale sur Apple Watch ?",
-      "a": "L'Apple Watch affiche le SDNN. Chez l'adulte en bonne santé, la médiane est d'environ 46 ms à 18–34 ans, 42 ms à 35–44 ans, 34 ms à 45–54 ans, 29 ms à 55–64 ans et 26 ms à partir de 65 ans (Voss 2015). Les mesures sont courtes : utilisez votre moyenne sur 7 jours."
+      "q": "Comment fonctionne ce calculateur ?",
+      "a": "Il reprend le tableau publié du RMSSD du matin chez les utilisateurs Fitbit (Natarajan 2020), choisit la tranche d’âge la plus proche de la vôtre pour votre sexe et vous indique si votre valeur est sous la moitié centrale, dedans ou au-dessus. Il n’estime pas de valeurs entre les tranches d’âge et ne donne pas de percentile."
     },
     {
-      "q": "RMSSD ou SDNN : lequel affiche mon appareil ?",
-      "a": "Oura, Whoop, Garmin et Polar affichent le RMSSD. L'Apple Watch affiche le SDNN. Choisissez l'option correspondante dans le calculateur — les deux se mesurent différemment et utilisent des tableaux de normes distincts."
+      "q": "Puis-je l’utiliser avec une Apple Watch ?",
+      "a": "Non. L’Apple Watch affiche le SDNN, une autre mesure de la HRV issue de mesures courtes, qu’on ne peut pas comparer à un tableau de RMSSD. Comparez plutôt la moyenne sur 7 jours de votre Apple Watch avec vos semaines précédentes."
     },
     {
       "q": "Pourquoi ma HRV est-elle basse ?",
@@ -116,13 +119,12 @@
       "a": "La HRV est sensible au sommeil, à l'alcool, aux repas, au stress, à la maladie et à l'entraînement. Des variations de 10–20 ms d'un jour à l'autre sont normales : comparez des moyennes hebdomadaires plutôt que des nuits isolées."
     },
     {
-      "q": "D'où viennent ces normes de HRV ?",
-      "a": "Les tranches de RMSSD sont dérivées de la méta-analyse de Nunan 2010, de la courbe d'âge d'Umetani 1998 et de la cohorte de Voss 2015, ajustées pour les mesures nocturnes des objets connectés. Le tableau SDNN provient directement de Voss 2015 (environ 1 900 adultes en bonne santé). Les références complètes figurent dans la section Sources."
+      "q": "D’où viennent ces chiffres ?",
+      "a": "D’une étude publiée portant sur environ 8 millions d’utilisateurs Fitbit (Natarajan 2020, Lancet Digital Health, tableau supplémentaire S3) : RMSSD mesuré par le capteur au poignet entre 6 h et 7 h du matin pendant que la personne était immobile, selon l’âge et le sexe déclarés. Trois des quatre auteurs étaient salariés de Fitbit, et Fitbit a financé l’étude. C’est la distribution chez les utilisateurs d’un seul appareil, pas une norme médicale."
     }
   ],
   "sourcesTitle": "Sources et méthodologie",
-  "methodologyRmssd": "Les tranches de RMSSD sont dérivées, et non copiées d'un seul jeu de données. La plupart des études normatives rapportent des moyennes ± ET ou des médianes par décennie pour de courts enregistrements diurnes. Nous avons combiné ces valeurs centrales (Nunan 2010), appliqué la baisse décennie par décennie (Umetani 1998) et la dispersion selon l'âge et le sexe (Voss 2015), puis les avons converties en percentiles approximatifs en tenant compte de l'asymétrie à droite du RMSSD. Le tableau correspond au RMSSD nocturne — ce que mesurent Oura, Whoop et Garmin, au moment où le tonus parasympathique est le plus élevé — c'est pourquoi ses médianes dépassent la valeur diurne regroupée d'environ 42 ms de Nunan 2010.",
-  "methodologySdnn": "Le tableau SDNN provient directement de Voss et al. 2015 (environ 1 900 adultes en bonne santé, ECG de repos de 5 minutes en position allongée) : nous avons regroupé les moyennes ± ET publiées par décennie pour les femmes (tableau 5) et les hommes (tableau 7), pondérées par la taille des groupes, puis converties en percentiles par un ajustement log-normal, car le SDNN est asymétrique à droite. La tranche la plus jeune utilise les données 25–34 ans et la plus âgée les données 65–74 ans. L'Apple Watch mesure le SDNN sur de courts échantillons (~1 minute), donc les valeurs isolées sont plus dispersées qu'un enregistrement en laboratoire — comparez votre moyenne hebdomadaire.",
+  "methodology": "D’où viennent les chiffres : d’une étude publiée, Natarajan et al. 2020 (Lancet Digital Health), annexe, tableau S3 — RMSSD entre 6 h et 7 h du matin chez environ 8 millions d’utilisateurs Fitbit, mesuré par le capteur optique au poignet (PPG) pendant les périodes d’immobilité sur une journée, avec âge et sexe déclarés. Le tableau donne la médiane et les 25e–75e percentiles pour des tranches d’âge de deux ans (20–21, 25–26 … 60–61), séparément pour les femmes et les hommes. Trois des quatre auteurs étaient salariés de Fitbit, et Fitbit a financé l’étude. Les utilisateurs Fitbit ne sont pas un échantillon aléatoire de la population, d’autres appareils et les ceintures thoraciques ECG donnent d’autres chiffres, et il n’y a pas de données avant 20 ans ni après 61 ans. Comment nous l’utilisons : nous prenons la tranche d’âge la plus proche de la vôtre (18–19 ans → 20–21 ; plus de 61 ans → 60–61) et n’interpolons pas entre les tranches. Sous le 25e percentile, nous disons « plus basse que chez la plupart », au-dessus du 75e « plus élevée que chez la plupart », sinon « dans la moitié centrale ». C’est une comparaison avec les utilisateurs d’un seul appareil, ni une norme médicale ni un diagnostic.",
   "embed": {
     "title": "Intégrer ce calculateur de HRV",
     "text": "Intégration gratuite sur votre site ou blog — collez simplement ce code. Il s'affiche directement dans la page (sans iframe), sans dépendance, en open source, et inclut un lien de crédit vers ONDA Life.",
@@ -140,9 +142,7 @@
     "trackers": "Meilleurs capteurs de HRV (2026)"
   },
   "sourcesContributes": [
-    "Valeurs de référence RMSSD/SDNN agrégées à partir de 44 études chez des adultes en bonne santé (RMSSD au repos agrégé ≈ 42 ms) — ancrent la tendance centrale.",
-    "La courbe classique du déclin avec l’âge — la HRV temporelle (dont le RMSSD) baisse décennie après décennie — détermine le décalage par tranche d’âge.",
-    "Vaste cohorte d’adultes sains (n ≈ 1 900 ; ECG de 5 min en décubitus dorsal) avec une HRV à court terme stratifiée par âge et sexe. Détermine la dispersion du RMSSD (largeur p10–p90) et constitue la source directe du tableau SDNN (Apple Watch) : moyennes par décennie ± ET pour les femmes (Table 5) et les hommes (Table 7).",
-    "Définitions fondamentales du RMSSD/SDNN et normes de mesure auxquelles se réfère la littérature."
+    "Source directe du tableau : RMSSD entre 6 h et 7 h du matin chez environ 8 millions d’utilisateurs Fitbit (capteur optique au poignet, périodes d’immobilité), médiane et 25e–75e percentiles par âge et par sexe. Trois des quatre auteurs étaient salariés de Fitbit, et Fitbit a financé l’étude.",
+    "Définition du RMSSD et normes de mesure auxquelles se réfère la littérature."
   ]
 }

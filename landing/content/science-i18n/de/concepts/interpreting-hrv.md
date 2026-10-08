@@ -1,5 +1,5 @@
 ---
-sourceHash: "6e6ab4ef8d19"
+sourceHash: 176424b10273
 title: "Was ein einzelner HRV-Wert verrät – und was nicht"
 metaTitle: "HRV deuten: Was ein einzelner Wert verrät"
 metaDescription: "Was ein HRV-Wert wirklich zeigt, warum niedrig keine Diagnose und hoch nicht immer gut ist und warum der Vergleich mit anderen in die Irre führt."

@@ -14,6 +14,7 @@ import { writeFileSync, mkdirSync, readFileSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { articles } from '../src/data/articles'
+import { resolveFacts, type FactLang } from '../src/data/science/facts'
 import { glossaryTerms } from '../src/data/glossary'
 import { levelsData } from '../src/data/levels'
 import { parts } from '../src/pages/PartPage'
@@ -72,7 +73,7 @@ function articleTitle(slug: string, lang: Lang, fallback: string): string {
 }
 
 function articleDescription(slug: string, lang: Lang, fallback: string): string {
-  return articlesByLang[lang].bodies?.[slug]?.description ?? fallback
+  return resolveFacts(articlesByLang[lang].bodies?.[slug]?.description ?? fallback, `llms:${lang}:${slug}`, lang as FactLang)
 }
 
 const __dirname = dirname(fileURLToPath(import.meta.url))

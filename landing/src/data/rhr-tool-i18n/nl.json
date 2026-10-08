@@ -71,11 +71,11 @@
   "sections": [
     {
       "h2": "Wat is een normale rusthartslag per leeftijd?",
-      "body": "Voor volwassenen geldt een rusthartslag tussen 60 en 100 bpm als normaal. Fitte mensen zitten vaak lager (vaak onder 60 bpm; veel topduursporters halen op het laagste punt van de dag 40 bpm of minder), en in bevolkingsonderzoek gaat een lagere rusthartslag samen met een lagere sterfte op lange termijn. In het NHANES-onderzoek van de CDC onder gezonde Amerikaanse volwassenen was de mediane zittende rustpols ongeveer 69 bpm bij mannen van 18–39 jaar, 68 bpm bij 40–59 jaar en 67 bpm vanaf 60 — vrijwel vlak over het hele volwassen leven. De middelste helft van de mannen (p25–p75) zat tussen ongeveer 60 en 77 bpm. Anders dan HRV verandert de rusthartslag bij volwassenen nauwelijks met de leeftijd; conditie, erfelijkheid, slaap en stress spelen een veel grotere rol. Daarom is de nuttigste vergelijking die met je eigen ochtendtrend. Volledige gids: [rusthartslag per leeftijd](/articles/resting-heart-rate-by-age)."
+      "body": "Voor volwassenen geldt een rusthartslag tussen 60 en 100 bpm als normaal. Fitte mensen zitten vaak lager (vaak onder 60 bpm; veel topduursporters halen op het laagste punt van de dag 40 bpm of minder), en in bevolkingsonderzoek gaat een lagere rusthartslag samen met een lagere sterfte op lange termijn. In het NHANES-onderzoek van de CDC onder gezonde Amerikaanse volwassenen was de mediane zittende rustpols ongeveer 69 bpm bij mannen van 20–39 jaar, 68 bpm bij 40–59 jaar en 67 bpm bij 60–79 en 68 bpm vanaf 80 — vrijwel vlak over het hele volwassen leven. De middelste helft van de mannen (p25–p75) zat tussen ongeveer 60 en 77 bpm. Anders dan HRV verandert de rusthartslag bij volwassenen nauwelijks met de leeftijd; conditie, erfelijkheid, slaap en stress spelen een veel grotere rol. Daarom is de nuttigste vergelijking die met je eigen ochtendtrend. Volledige gids: [rusthartslag per leeftijd](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Rusthartslag bij vrouwen: wat is normaal?",
-      "body": "De rusthartslag van vrouwen ligt een paar slagen hoger dan die van mannen, vooral omdat het hart meestal kleiner is en per slag iets minder bloed rondpompt. In NHANES was de mediaan ongeveer 74 bpm bij vrouwen van 18–39 jaar, 71 bpm bij 40–59 jaar en 70 bpm vanaf 60, met de middelste helft tussen ongeveer 64 en 82 bpm. De rusthartslag beweegt ook mee met de menstruatiecyclus — in de tweede helft van de cyclus ligt hij vaak een paar slagen hoger — en stijgt tijdens de zwangerschap. Vergelijk dus gelijke situaties: hetzelfde tijdstip, dezelfde fase van je cyclus en je weekgemiddelde in plaats van één dag. Kies \"Vrouw\" in de calculator om de tabel voor vrouwen te gebruiken."
+      "body": "De rusthartslag van vrouwen ligt een paar slagen hoger dan die van mannen, vooral omdat het hart meestal kleiner is en per slag iets minder bloed rondpompt. In NHANES was de mediaan ongeveer 74 bpm bij vrouwen van 20–39 jaar, 71 bpm bij 40–59 jaar en 70 bpm bij 60–79 en 71 bpm vanaf 80, met de middelste helft tussen ongeveer 64 en 82 bpm. De rusthartslag beweegt ook mee met de menstruatiecyclus — in de tweede helft van de cyclus ligt hij vaak een paar slagen hoger — en stijgt tijdens de zwangerschap. Vergelijk dus gelijke situaties: hetzelfde tijdstip, dezelfde fase van je cyclus en je weekgemiddelde in plaats van één dag. Kies \"Vrouw\" in de calculator om de tabel voor vrouwen te gebruiken."
     },
     {
       "h2": "Rusthartslag te hoog: wat zijn de oorzaken?",
@@ -94,11 +94,11 @@
   "faq": [
     {
       "q": "Wat is een normale rusthartslag per leeftijd?",
-      "a": "Voor volwassenen 60–100 bpm, en bij gezonde mensen meestal tussen de 60 en 79. De CDC NHANES-mediaan is ongeveer 69 bpm voor mannen van 18–39, 68 bpm bij 40–59 en 67 bpm bij 60+; voor vrouwen ongeveer 74, 71 en 70 bpm. Hij verandert nauwelijks met de leeftijd."
+      "a": "Voor volwassenen 60–100 bpm, en bij gezonde mensen meestal tussen de 60 en 79. De CDC NHANES-mediaan is ongeveer 69 bpm voor mannen van 20–39, 68 bpm bij 40–59 en 67 bpm bij 60–79 en 68 bpm bij 80+; voor vrouwen ongeveer 74, 71, 70 en 71 bpm. Hij verandert nauwelijks met de leeftijd."
     },
     {
       "q": "Wat is een normale rusthartslag voor een vrouw?",
-      "a": "Een paar slagen hoger dan bij mannen: de mediaan is ongeveer 74 bpm bij 18–39, 71 bpm bij 40–59 en 70 bpm vanaf 60, met de middelste helft van de vrouwen tussen ongeveer 64 en 82 bpm."
+      "a": "Een paar slagen hoger dan bij mannen: de mediaan is ongeveer 74 bpm bij 20–39, 71 bpm bij 40–59 en 70 bpm bij 60–79 en 71 bpm vanaf 80, met de middelste helft van de vrouwen tussen ongeveer 64 en 82 bpm."
     },
     {
       "q": "Is een rusthartslag van 50 goed?",
@@ -126,7 +126,7 @@
     }
   ],
   "sourcesTitle": "Bronnen & methode",
-  "methodology": "De tabellen komen rechtstreeks uit het CDC/NCHS-rapport over NHANES 1999–2008 (Ostchega et al. 2011, tabellen 2–3): zittende rustpols van ongeveer 17.000 Amerikaanse volwassenen, zonder mensen met een aandoening of medicijn die de pols beïnvloedt. De groep 18–39 gebruikt de rij 20–39 en de groep 60+ de rij 60–79. Je percentiel wordt geïnterpoleerd tussen de gepubliceerde 5e–95e percentielen voor je leeftijd en geslacht. Horloges en ringen meten je rust- of slaaphartslag, die meestal een paar bpm lager ligt dan een zittende meting.",
+  "methodology": "De tabellen komen rechtstreeks uit het CDC/NCHS-rapport over NHANES 1999–2008 (Ostchega et al. 2011, tabellen 2–3): zittende rustpols van ongeveer 17.000 Amerikaanse volwassenen, zonder mensen met een aandoening of medicijn die de pols beïnvloedt. De groepen zijn de rijen uit de bron (20–39, 40–59, 60–79, 80+). Voor 18–19 jaar heeft de bron geen aparte gegevens, dus die worden vergeleken met 20–39. Je percentiel wordt geïnterpoleerd tussen de gepubliceerde 5e–95e percentielen voor je leeftijd en geslacht. Horloges en ringen meten je rust- of slaaphartslag, die meestal een paar bpm lager ligt dan een zittende meting.",
   "sourcesContributes": [
     "Directe bron van de tabellen: percentielen van de zittende rustpols per leeftijd en geslacht uit NHANES 1999–2008, zonder aandoeningen en medicijnen die de pols beïnvloeden (tabellen 2–3).",
     "Klinische context: 60–100 bpm is het standaard normale bereik; lager bij zeer fitte mensen, iets hoger bij vrouwen en deels erfelijk bepaald.",
@@ -138,5 +138,6 @@
     "hrv": "HRV-calculator per leeftijd",
     "camera": "Meet je pols met de camera van je telefoon",
     "zone2": "Zone 2-hartslag"
-  }
+  },
+  "youngNote": "Voor 18–19 jaar heeft de bron geen aparte gegevens, dus je wordt vergeleken met 20–39 jaar."
 }

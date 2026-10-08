@@ -49,7 +49,7 @@ On top of that sits the most complete sensor package on any watch here: single-l
 
 ## What are the downsides of Apple Watch Ultra 4?
 
-The physics are still wrist-optical. Apple calls it its most accurate heart sensing, and the new system genuinely closes the gap — but a finger-based ring or an ECG chest strap remains more precise for the overnight number itself. And it is a lot of watch: from $799, large and heavy, with much of the price going to dive, satellite and multisport features rather than HRV. If you want that HRV system in a smaller, cheaper package, the [Apple Watch Series 12](/reviews/apple-watch-series-12) has the same one — it just can’t match the battery.
+The physics are still wrist-optical. Apple calls it its most accurate heart sensing; no independent validation of Recovery or Overall HRV against ECG was found (as of October 2026), and a finger-based ring or an ECG chest strap remains more precise for the overnight number itself. And it is a lot of watch: from $799, large and heavy, with much of the price going to dive, satellite and multisport features rather than HRV. If you want that HRV system in a smaller, cheaper package, the [Apple Watch Series 12](/reviews/apple-watch-series-12) has the same one — it just can’t match the battery.
 
 ## Who should buy Apple Watch Ultra 4?
 

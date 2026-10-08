@@ -34,7 +34,7 @@ const article: Article = {
 
 > "You wake up, you feel fine, you get on with the day. But your body has been keeping notes you never read — and sometimes those notes changed days ago.
 
-**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age ([RMSSD](/science/concepts/rmssd) from Oura, Whoop, Garmin or [SDNN](/science/concepts/sdnn) from Apple Watch).
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — compare your morning [RMSSD](/science/concepts/rmssd) (Oura, Whoop, Garmin, Polar, Fitbit) with Fitbit users your age. Apple Watch [SDNN](/science/concepts/sdnn) is a different measure and isn't compared.
 
 > The strange, well-documented truth of continuous physiology is this: your resting rhythm often drifts *before* you consciously feel anything. Not because a device is psychic. Because your autonomic nervous system reacts to load — a hard week, a short night, a coming cold — earlier and more honestly than your self-report does."
 

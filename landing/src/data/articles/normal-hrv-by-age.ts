@@ -1,7 +1,8 @@
 import type { Article } from './types'
 
 /**
- * Normal HRV by age — massive "good HRV / average HRV" query. AEO reference with age×RMSSD table.
+ * Normal HRV by age — massive "good HRV / average HRV" query. AEO reference with an age×sex RMSSD table
+ * from Natarajan 2020 (Fitbit users, Table S3; all numbers via {{fact}}; task 054, 2026-10-08).
  * Honest: ranges are broad, device-dependent guidance, NOT invented precision; the core message is
  * "your baseline and trend beat any population average." FAQ in ARTICLE_FAQ. Leads into ONDA baseline.
  */
@@ -10,7 +11,7 @@ const article: Article = {
   title: 'Normal HRV by Age: Chart for Men and Women, and What’s a Good HRV',
   seoTitle: 'Normal HRV by Age Chart: What’s a Good HRV? | ONDA Life',
   description:
-    'HRV by age chart: median overnight RMSSD is about 58 ms at 18–29, 42 ms in your 40s and 30 ms in your 60s. Apple Watch SDNN norms, men vs women, low HRV.',
+    'HRV by age and sex: among about 8 million Fitbit users, median morning RMSSD was {{fact:hrv.fitbit.rmssd.am.female.median.20-21}} (women) and {{fact:hrv.fitbit.rmssd.am.male.median.20-21}} (men) at 20–21, {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} and {{fact:hrv.fitbit.rmssd.am.male.median.60-61}} at 60–61. Not a medical norm.',
   category: 'Biological Software',
   relatedSlugs: ['how-to-raise-hrv-naturally', 'how-to-measure-hrv-consistently', 'hrv-different-every-device', 'resting-heart-rate-by-age', 'your-baseline-knows-first'],
   introStyle: 'rose',
@@ -25,52 +26,54 @@ const article: Article = {
     linkText: 'What ONDA measures →',
   },
   content: `
-There is no universal "good" [HRV](/science/concepts/heart-rate-variability) number — it depends heavily on your age, and even more on your own baseline. As a guide, the median overnight HRV (measured as [RMSSD](/science/concepts/rmssd) by Oura, Whoop, Garmin and Polar) is about 58 ms at 18–29, 50 ms in your 30s, 42 ms in your 40s, 36 ms in your 50s, 30 ms in your 60s and 26 ms after 70. Apple Watch reports a different measure, [SDNN](/science/concepts/sdnn), with its own norms (below). HRV naturally declines with age and varies a lot between devices, fitness levels, sleep and stress. The single most useful number isn't where you land against the population — it's whether your own HRV is trending up or down against your personal normal.
+There is no universal "good" [HRV](/science/concepts/heart-rate-variability) number — it depends heavily on your age, and even more on your own baseline. The largest published dataset, from about 8 million Fitbit users (Natarajan 2020), shows the typical picture: median [RMSSD](/science/concepts/rmssd) between 6 and 7 a.m. was {{fact:hrv.fitbit.rmssd.am.female.median.20-21}} for women and {{fact:hrv.fitbit.rmssd.am.male.median.20-21}} for men at age 20–21, {{fact:hrv.fitbit.rmssd.am.female.median.40-41}} and {{fact:hrv.fitbit.rmssd.am.male.median.40-41}} at 40–41, and {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} and {{fact:hrv.fitbit.rmssd.am.male.median.60-61}} at 60–61. That is how HRV was distributed among Fitbit users, not a medical norm. HRV naturally declines with age and varies a lot between devices, fitness levels, sleep and stress. The single most useful number isn't where you land against the population — it's whether your own HRV is trending up or down against your personal normal.
 
-**Check your number → [HRV Calculator by Age](/tools/hrv)** — enter your age and HRV to see your percentile.
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — enter your age, sex and morning RMSSD to compare it with Fitbit users your age.
 
 More quick answers → **[HRV Questions, Answered](/articles/hrv-questions-answered)** — 52 short answers on what lowers HRV, what raises it and how to measure it.
 
 ## HRV by age chart: what is normal for my age?
 
-A normal overnight RMSSD runs from a median of about 58 ms at ages 18–29 down to about 26 ms at 70+ — these are population norms for overnight RMSSD, the number rings and straps report. The median is the middle value; the typical range covers the middle half of healthy people (25th–75th percentile). HRV varies enormously between individuals, so two healthy people the same age can differ by 40 ms or more. Use this as orientation, not a scoreboard:
+The biggest age-by-sex HRV dataset comes from about 8 million Fitbit users (Natarajan 2020). The table shows how early-morning RMSSD (6–7 a.m., near the end of sleep, measured by the wrist sensor while the wearer was still) was distributed among them. The median is the middle value; the typical range covers the middle half of users (25th–75th percentile). Two healthy people of the same age can differ by 40 ms or more, so use it as orientation, not a scoreboard.
 
-| Age | Median RMSSD | Typical range (p25–p75) |
-|---|---|---|
-| 18–29 | 58 ms | 42–78 ms |
-| 30–39 | 50 ms | 36–68 ms |
-| 40–49 | 42 ms | 30–56 ms |
-| 50–59 | 36 ms | 26–48 ms |
-| 60–69 | 30 ms | 22–42 ms |
-| 70+ | 26 ms | 19–36 ms |
+**HRV (RMSSD) by age and sex — distribution among Fitbit users, 6–7 a.m.**
 
-If your number sits inside or near your age band, that's normal. If it sits below, that alone means little — it could be your genetics, your device, or a rough week. What matters is the direction it moves over time. How these norms were built (Nunan 2010, Umetani 1998, Voss 2015) is explained on the [HRV calculator](/tools/hrv) page.
+| Age | Women — median | Women — typical (p25–p75) | Men — median | Men — typical (p25–p75) |
+|---|---|---|---|---|
+| 20–21 | {{fact:hrv.fitbit.rmssd.am.female.median.20-21}} | {{fact:hrv.fitbit.rmssd.am.female.typical.20-21}} | {{fact:hrv.fitbit.rmssd.am.male.median.20-21}} | {{fact:hrv.fitbit.rmssd.am.male.typical.20-21}} |
+| 25–26 | {{fact:hrv.fitbit.rmssd.am.female.median.25-26}} | {{fact:hrv.fitbit.rmssd.am.female.typical.25-26}} | {{fact:hrv.fitbit.rmssd.am.male.median.25-26}} | {{fact:hrv.fitbit.rmssd.am.male.typical.25-26}} |
+| 30–31 | {{fact:hrv.fitbit.rmssd.am.female.median.30-31}} | {{fact:hrv.fitbit.rmssd.am.female.typical.30-31}} | {{fact:hrv.fitbit.rmssd.am.male.median.30-31}} | {{fact:hrv.fitbit.rmssd.am.male.typical.30-31}} |
+| 35–36 | {{fact:hrv.fitbit.rmssd.am.female.median.35-36}} | {{fact:hrv.fitbit.rmssd.am.female.typical.35-36}} | {{fact:hrv.fitbit.rmssd.am.male.median.35-36}} | {{fact:hrv.fitbit.rmssd.am.male.typical.35-36}} |
+| 40–41 | {{fact:hrv.fitbit.rmssd.am.female.median.40-41}} | {{fact:hrv.fitbit.rmssd.am.female.typical.40-41}} | {{fact:hrv.fitbit.rmssd.am.male.median.40-41}} | {{fact:hrv.fitbit.rmssd.am.male.typical.40-41}} |
+| 45–46 | {{fact:hrv.fitbit.rmssd.am.female.median.45-46}} | {{fact:hrv.fitbit.rmssd.am.female.typical.45-46}} | {{fact:hrv.fitbit.rmssd.am.male.median.45-46}} | {{fact:hrv.fitbit.rmssd.am.male.typical.45-46}} |
+| 50–51 | {{fact:hrv.fitbit.rmssd.am.female.median.50-51}} | {{fact:hrv.fitbit.rmssd.am.female.typical.50-51}} | {{fact:hrv.fitbit.rmssd.am.male.median.50-51}} | {{fact:hrv.fitbit.rmssd.am.male.typical.50-51}} |
+| 55–56 | {{fact:hrv.fitbit.rmssd.am.female.median.55-56}} | {{fact:hrv.fitbit.rmssd.am.female.typical.55-56}} | {{fact:hrv.fitbit.rmssd.am.male.median.55-56}} | {{fact:hrv.fitbit.rmssd.am.male.typical.55-56}} |
+| 60–61 | {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} | {{fact:hrv.fitbit.rmssd.am.female.typical.60-61}} | {{fact:hrv.fitbit.rmssd.am.male.median.60-61}} | {{fact:hrv.fitbit.rmssd.am.male.typical.60-61}} |
 
-## Apple Watch HRV by age (SDNN chart)
+What to keep in mind about this table:
 
-A normal Apple Watch HRV (SDNN) runs from a median of about 46 ms at ages 18–34 down to about 26 ms at 65+ — Apple Watch shows SDNN, not RMSSD, so its numbers can't be compared with the table above. In a study of about 1,900 healthy adults (Voss 2015, 5-minute resting ECG), SDNN ran:
+- **Fitbit users, not the general population.** People who wear a fitness tracker are not a random sample, and age and sex were self-reported.
+- **Wrist optical sensor, early morning.** Values come from several Fitbit models during still periods at 6–7 a.m.; a chest-strap ECG, another brand or a whole-night average gives different numbers.
+- **Ages 20 to 61 only**, in two-year slices every five years.
+- **The study was done by Fitbit.** Three of the four authors were Fitbit employees, and Fitbit funded the work.
 
-| Age | Median SDNN | Typical range (p25–p75) |
-|---|---|---|
-| 18–34 | 46 ms | 35–60 ms |
-| 35–44 | 42 ms | 32–54 ms |
-| 45–54 | 34 ms | 27–44 ms |
-| 55–64 | 29 ms | 22–39 ms |
-| 65+ | 26 ms | 20–35 ms |
+If your number sits near your age row, that's normal. If it sits below, that alone means little — it could be your genetics, your device, or a rough week. What matters is the direction it moves over time.
 
-Apple Watch takes short readings of about a minute several times a day and at night, so single values jump around more than a lab recording. Compare your 7-day average in the Health app, not one reading.
+Other studies show the same overall picture — HRV falls with age, and men and women differ only a little: a review of 44 studies of short resting ECG recordings (Nunan 2010), a 24-hour ECG study of 260 people aged 10 to 99 (Umetani 1998) and about 1,900 adults in the German KORA study (Voss 2015). They used different recordings, so their numbers can't go into one table with the Fitbit data.
+
+## What about Apple Watch HRV?
+
+Apple Watch shows [SDNN](/science/concepts/sdnn), not RMSSD, from short readings of about a minute taken several times a day and at night. SDNN and RMSSD are different measures, so the table above does not apply to Apple Watch numbers. Compare your own 7-day average in the Health app with your earlier weeks instead.
 
 ## HRV by age and sex: is it different for men and women?
 
-Slightly, and mostly in younger adults. In a large 24-hour ECG study, women under about 30 had somewhat lower HRV than men of the same age, and the difference faded after about 50 (Umetani 1998). The gap is small compared with the spread between individuals, so the same age table works for both sexes as a rough guide. For women, HRV also shifts across the menstrual cycle: vagal HRV tends to be lower in the second half of the cycle, after ovulation (Schmalenberger 2019), so compare the same phase of the cycle when you look at trends.
-
-A study of wearable data from about 8 million people confirmed the same picture at scale: HRV falls steadily with age, and people of the same age differ widely (Natarajan 2020).
+Only a little. {{fact:claim.hrvSexDiffSmall}}. Studies with very different methods agree: in a 24-hour ECG study, women under 30 had lower HRV than men, the gap narrowed after 30 and disappeared after 50 (Umetani 1998). In about 1,900 German adults, the sex differences disappeared in the two oldest age decades (Voss 2015). In about 14,000 short ECGs, median HRV differed minimally between men and women (van den Berg 2018). And among 8 million Fitbit users, RMSSD showed no clear difference between the sexes (Natarajan 2020) — in the table above, the women's and men's medians are close and meet at about 50. The gap is small compared with the spread between individuals. For women, HRV also shifts across the menstrual cycle: vagal HRV tends to be lower in the second half of the cycle, after ovulation (Schmalenberger 2019), so compare the same phase of the cycle when you look at trends.
 
 ## Is my HRV too low?
 
 A single low number is rarely a reason to worry. Check three things first:
 
-1. **Compare like with like.** RMSSD (rings, straps, Whoop, Garmin, Oura) and SDNN (the standard Apple Watch HRV) are different measures, so use the matching table above. Apple Watch Series 12 also shows a separate Recovery HRV (Apple hasn’t published its formula) — see [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv).
+1. **Compare like with like.** RMSSD (rings, straps, Whoop, Garmin, Oura) and SDNN (the standard Apple Watch HRV) are different measures, so don't compare an Apple Watch SDNN number with the RMSSD table above. Apple Watch Series 12 also shows a separate Recovery HRV (Apple hasn’t published its formula) — see [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv).
 2. **Look at your 7-day average**, not one night. One bad night, a drink or a cold can drop HRV sharply.
 3. **Compare with your own baseline.** A sustained drop of more than about 10–20% below your usual range for a week or more is worth attention.
 

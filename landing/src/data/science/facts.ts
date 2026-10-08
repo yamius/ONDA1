@@ -7,14 +7,14 @@
  *
  * Norm TABLES are not copied here: they stay in hrv-norms.ts / resting-hr.ts
  * (the calculators and the ChatGPT/Claude server already read them) and are
- * exposed below as generated table facts (`hrv.rmssd.median.40-49` …), so a
- * value can only ever exist once.
+ * exposed below as generated table facts (`hrv.fitbit.rmssd.am.female.median.40-41`,
+ * `rhr.male.typical.20-39` …), so a value can only ever exist once.
  *
  * Status: 'proposed' entries await the owner's approval (docs/science-audit.md §4);
  * only 'approved' entries may be used in new science pages.
  * Keep this module tiny — it is imported by browser code (no prose bodies).
  */
-import { HRV_AGE_BANDS, SDNN_AGE_BANDS, type HrvAgeBand } from '../hrv-norms'
+import { HRV_AGE_POINTS } from '../hrv-norms'
 import { RHR_BANDS } from '../resting-hr'
 
 export interface FactSource {
@@ -50,6 +50,9 @@ const DAMBROSIO_2026: FactSource = { label: "D'Ambrosio 2026, Circulation (brady
 const HILLEBRAND_2013: FactSource = { label: 'Hillebrand 2013, Europace (HRV and first cardiovascular event, meta-analysis)', doi: '10.1093/europace/eus341', pmid: '23370966' }
 const LOERUP_2019: FactSource = { label: 'Loerup 2019, BMC Med (blood pressure and heart rate in pregnancy, meta-analysis)', doi: '10.1186/s12916-019-1399-1', pmid: '31506067' }
 const VOSS_2015: FactSource = { label: 'Voss 2015, PLOS ONE', doi: '10.1371/journal.pone.0118308' }
+const NATARAJAN_2020: FactSource = { label: 'Natarajan 2020, Lancet Digit Health, Supplementary appendix Table S3 (about 8 million Fitbit users; Fitbit-funded, three of four authors Fitbit employees)', doi: '10.1016/S2589-7500(20)30246-6', pmid: '33328029' }
+const UMETANI_1998: FactSource = { label: 'Umetani 1998, J Am Coll Cardiol (24-hour Holter, 260 people aged 10–99)', doi: '10.1016/s0735-1097(97)00554-8', pmid: '9502641' }
+const VAN_DEN_BERG_2018: FactSource = { label: 'van den Berg 2018, Front Physiol (13,943 10-second ECGs)', doi: '10.3389/fphys.2018.00424', pmid: '29755366' }
 const NUNAN_2010: FactSource = { label: 'Nunan 2010, Pacing Clin Electrophysiol', doi: '10.1111/j.1540-8159.2010.02841.x' }
 const SRAMEK_2000: FactSource = { label: 'Šrámek 2000, Eur J Appl Physiol (cold-water immersion, catecholamines)', doi: '10.1007/s004210050065', pmid: '10751106' }
 const LEHRER_2003: FactSource = { label: 'Lehrer 2003, Psychosomatic Medicine', doi: '10.1097/01.psy.0000089200.81962.19' }
@@ -125,6 +128,11 @@ const KALYANI_2011: FactSource = { label: 'Kalyani 2011, Int J Yoga (Om chanting
 const GHATI_2021: FactSource = { label: 'Ghati 2021, Explore (bee-humming breathing vs slow breathing in essential hypertension, RCT)', doi: '10.1016/j.explore.2020.03.009', pmid: '32620379' }
 const KUPPUSAMY_2018: FactSource = { label: 'Kuppusamy 2018, J Tradit Complement Med (bhramari pranayama, systematic review)', doi: '10.1016/j.jtcme.2017.02.003', pmid: '29321984' }
 const BELLENGER_2016: FactSource = { label: 'Bellenger 2016, Sports Med (autonomic heart rate regulation and training status in endurance-trained athletes, systematic review and meta-analysis)', doi: '10.1007/s40279-016-0484-2', pmid: '26888648' }
+const GROSICKI_2026: FactSource = { label: 'Grosicki 2026, PLOS Digit Health (real-world effects of alcohol on heart rate, sleep and activity by age and sex; WHOOP-funded)', doi: '10.1371/journal.pdig.0001284', pmid: '41801993' }
+const SPAAK_2010: FactSource = { label: 'Spaak 2010, Am J Physiol Heart Circ Physiol (dose-related effects of red wine and alcohol on heart rate variability)', doi: '10.1152/ajpheart.00700.2009', pmid: '20418480' }
+const FALKENHAUSEN_2025: FactSource = { label: 'von Falkenhausen 2025, Clin Res Cardiol (MunichBREW II subgroup: level of acute alcohol exposure and cardiac response)', doi: '10.1007/s00392-025-02722-4', pmid: '40828179' }
+const KIM_2026_ALCOHOL: FactSource = { label: 'Kim 2026, Clin Auton Res (binge drinking after aerobic exercise, randomized crossover in young men)', doi: '10.1007/s10286-026-01243-y', pmid: '42804102' }
+const NAVARRO_LOMAS_2026: FactSource = { label: 'Navarro-Lomas 2026, Front Cardiovasc Med (BEER-HIIT: moderate alcohol intake and HRV adaptations to HIIT)', doi: '10.3389/fcvm.2026.1920023', pmid: '42712702' }
 const BELLENGER_2022: FactSource = { label: 'Bellenger 2022, Sensors (day-to-day variability of wearable HRV in elite athletes, observational; research group supported by WHOOP)', doi: '10.3390/s22186723', pmid: '36146073' }
 const ALHADDAD_2011: FactSource = { label: 'Al Haddad 2011, Int J Sports Med (reliability of resting and post-exercise HR measures, n = 15)', doi: '10.1055/s-0031-1275356', pmid: '21574126' }
 const STANLEY_2013: FactSource = { label: 'Stanley 2013, Sports Med (cardiac parasympathetic reactivation after exercise, review)', doi: '10.1007/s40279-013-0083-4', pmid: '23912805' }
@@ -244,6 +252,14 @@ const FACTS_LIST: Fact[] = [
   { id: 'study.duking2021.submaximal', display: 'Hedges’ g = 0.296 (95% CI 0.031 to 0.562; p = 0.028)', kind: 'number', scope: 'Pooled fixed-effects effect of HRV-guided versus predefined endurance training on submaximal physiological parameters (Düking 2021); performance and VO2peak effects were small and not significant.', sources: [DUKING_2021], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (owner task, mechanisms/exercise-and-hrv). Quote: “Fixed effects meta-analysis revealed a significant medium-sized positive effect of HRV-guided training on submaximal physiological parameters (g = 0.296, 95% CI 0.031 to 0.562, p = 0.028)”' },
   { id: 'study.bellenger2016.studies', display: 'twenty-seven studies (twenty-four of them in the meta-analysis)', kind: 'number', scope: 'Studies included in the Bellenger 2016 systematic review of training and autonomic heart rate regulation in endurance-trained athletes (literature to April 2015).', sources: [BELLENGER_2016], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (mechanisms/exercise-and-hrv). Quote: “Of the 5377 records retrieved, 27 studies were included in the systematic review and 24 studies were included in the meta-analysis.”' },
   { id: 'study.bellenger2016.restingRmssd', display: 'small — a standardised mean difference of 0.58', kind: 'number', scope: 'Pooled change in resting RMSSD in studies where training improved performance (Bellenger 2016); group average, not an individual threshold.', sources: [BELLENGER_2016], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (mechanisms/exercise-and-hrv). Quote: “Studies inducing increases in performance showed small increases in resting RMSSD [standardised mean difference (SMD) = 0.58; P < 0.001]”' },
+  { id: 'alcohol.realworld.cohort', display: '5,109,185 nights (person-days) from 20,968 people', kind: 'number', scope: 'Size of the WHOOP real-world alcohol dataset (Grosicki 2026; retrospective within-person cohort of wearable users; company-funded).', sources: [GROSICKI_2026], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (mechanisms/alcohol-and-hrv P1). Quote: “In this retrospective cohort study, we analyzed 5,109,185 person-days from 20,968 participants”' },
+  { id: 'alcohol.rhr.perdrink', display: '2.8 beats per minute in women and 2.4 in men', kind: 'number', scope: 'Rise in night-time resting heart rate when a person drank one drink more than their own average, compared with one drink less (a two-drink contrast, not \'per drink\'); WHOOP users, within-person averages (Grosicki 2026).', sources: [GROSICKI_2026], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (mechanisms/alcohol-and-hrv P2). Quote: “consuming one drink more than personal average, compared with one less, was associated with an increase in RHR by 2.8 bpm (99.9% CI: 2.7, 2.9) in females and 2.4 bpm (99.9% CI: 2.3, 2.4) in males”' },
+  { id: 'alcohol.hrv.perdrink', display: '3.8 ms in women and 3.3 ms in men', kind: 'number', scope: 'Fall in night-time HRV (as measured by WHOOP) for the same contrast — one drink above versus one drink below a person\'s own average; within-person averages (Grosicki 2026).', sources: [GROSICKI_2026], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (mechanisms/alcohol-and-hrv P3). Quote: “while HRV declined by 3.8 ms (99.9% CI: -4.1, -3.5) in females and 3.3 ms (99.9% CI: -3.5, -3.1) in males.”' },
+  { id: 'alcohol.lab.design', display: '12 healthy adults aged 24 to 47', kind: 'number', scope: 'Participants in the red wine / ethanol / water crossover trial (Spaak 2010; six men, six women; three sessions two weeks apart).', sources: [SPAAK_2010], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (mechanisms/alcohol-and-hrv P4). Quote: “we now tested in 12 subjects (24-47 yr, 6 men)”' },
+  { id: 'alcohol.lab.twodrinks', display: 'heart rate up by about five to six beats per minute, total HRV down by 28–33% and high-frequency power down by 32–42%', kind: 'number', scope: 'Effect of two drinks (red wine or ethanol) against each person\'s own pre-drink baseline in a small laboratory crossover trial; short 8-minute recordings (Spaak 2010). Exact HR values +5.4 (wine) and +5.7 (ethanol) per minute.', sources: [SPAAK_2010], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (mechanisms/alcohol-and-hrv P5). Quote: “two glasses of both increased HR (RW, +5.4 + or - 1.2; and EtOH, +5.7 + or - 1.2 min(-1); P < 0.001), decreased total HRV by 28-33% (P < 0.05) and high-frequency spectral power by 32-42% (vagal HR modulation)”' },
+  { id: 'alcohol.binge.dose', display: '193 young adults', kind: 'number', scope: 'Participants in the dose-response subgroup analysis of the MunichBREW II binge-drinking cohort (mean age about 30, 36% women; quartiles of intake and of peak breath alcohol; von Falkenhausen 2025). Same dataset as Brunner 2024.', sources: [FALKENHAUSEN_2025], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (mechanisms/alcohol-and-hrv P6). Quote: “We analyzed 193 participants (mean age 29.9 ± 10.6 years, 36% women).”' },
+  { id: 'alcohol.postexercise', display: '14 young men who drank 60 g of alcohol right after a 30-minute run, measured at one and two hours', kind: 'number', scope: 'Design of the post-exercise binge crossover trial (Kim 2026; soju 360 mL vs water 360 mL after treadmill running at 55–60% of heart rate reserve).', sources: [KIM_2026_ALCOHOL], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (mechanisms/alcohol-and-hrv P7). Quote: “In a randomized crossover design, 14 young men (mean age 25 years; body mass index 25.1 kg/m2) completed a 30-min treadmill run at 55-60% of heart rate reserve, followed immediately by water (360 mL) or alcohol (soju; 360 mL containing 60 g ethanol).”' },
+  { id: 'alcohol.beerhiit.design', display: '71 healthy young adults over ten weeks of interval training', kind: 'number', scope: 'Size and length of the BEER-HIIT trial (Navarro-Lomas 2026; age 18–40, 52% women; five groups; HRV a secondary outcome).', sources: [NAVARRO_LOMAS_2026], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (mechanisms/alcohol-and-hrv P8). Quote: “71 healthy young adults (18-40 years old; 52.1% women) participated in the BEER-HIIT study. We conducted a 10-week (2 days/week) controlled trial”' },
   { id: 'study.besnier2026.design', display: 'forty-eight patients after an acute coronary syndrome, three aerobic sessions a week for three months', kind: 'number', scope: 'Design of the Besnier 2026 randomized trial of HRV-guided versus standard exercise training (cardiac rehabilitation population).', sources: [BESNIER_2026], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (owner task, mechanisms/exercise-and-hrv). Quote: “This randomized controlled trial included 48 patients randomized to HRV-G or SET. Both groups consisted of 3 aerobic exercise sessions per week for 3 months.”' },
   { id: 'study.besnier2026.vo2peak', display: 'by 1.9 mL·kg⁻¹·min⁻¹ with standard training and by 2.1 mL·kg⁻¹·min⁻¹ with HRV-guided training, with no significant difference between groups (P = .794)', kind: 'number', scope: 'Change in peak oxygen uptake (primary outcome) in the Besnier 2026 trial in patients with coronary artery disease.', sources: [BESNIER_2026], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (owner task, mechanisms/exercise-and-hrv). Quote (abstract as indexed): “The V̇O₂ peak increased significantly in both groups (+1.9 mL·kg -1 ·min -1 , P = .002 for SET and +2.1 mL·kg -1 ·min -1 , P < .001 for HRV-G) with no significant group-by-time interaction ( P = .794).”' },
   { id: 'study.weitzberg2002.humming', display: 'about fifteen-fold', kind: 'number', scope: 'Rise in nasal nitric oxide during single-breath humming versus quiet nasal exhalation at a fixed flow rate, ten healthy adults (Weitzberg & Lundberg 2002). Body text only, always next to its conditions (healthy volunteers, single breath, fixed flow, sinus model; not a treatment study) — never in titles, meta, short answers, key points or evidence-map claims.', sources: [WEITZBERG_2002], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (evidence/humming-and-chanting P1). Quote: “NO increased 15-fold during humming compared with quiet exhalation.”' },
@@ -258,47 +274,52 @@ const FACTS_LIST: Fact[] = [
   // ── Fixed wording (claims) ──────────────────────────────────────────
   { id: 'claim.vagalTone', display: 'Vagal tone cannot be measured directly; HRV measures such as RMSSD reflect vagally mediated changes in heart rate', short: 'Vagal tone cannot be measured directly', kind: 'claim', scope: 'Use instead of “HRV measures vagal tone” or “X trains your vagal tone”.', sources: [TASK_FORCE_1996], status: 'approved', reviewed: R },
   { id: 'claim.slowExhale', display: 'Slow breathing is associated with higher vagally mediated HRV; whether a longer exhale adds anything beyond slowing the breath is still debated', short: 'Slow breathing is associated with higher vagally mediated HRV', kind: 'claim', scope: 'Use instead of “a long exhale stimulates/activates the vagus nerve”. Reworded 2026-10-05 (Yakiv): the exhale ratio is debated (Shaffer & Meehan 2020). Starts with a capital and has its own clause — use it as a full sentence.', sources: [LEHRER_2003, BALBAN_2023], status: 'approved', reviewed: R },
+  { id: 'claim.hrvSexDiffSmall', display: 'Differences in HRV between men and women are small and largely disappear by about age 50', kind: 'claim', scope: 'Sex difference in resting HRV across adult age; consistent across 24-hour Holter (Umetani 1998), 5-minute ECG (Voss 2015), 10-second ECG (van den Berg 2018) and wrist PPG among Fitbit users (Natarajan 2020). Group-level, small compared with the spread between individuals.', sources: [UMETANI_1998, VOSS_2015, VAN_DEN_BERG_2018, NATARAJAN_2020], status: 'approved', reviewed: '2026-10-08', note: 'Approved by Yakiv 2026-10-08 (task 052/054). Quotes: Umetani 1998 “Gender differences decreased at age >30 years and disappeared at age >50 years.”; Voss 2015 “The gender differences disappeared within the last two age decades and the age dependencies disappeared in the last decade.”; van den Berg 2018 “Differences of the median were minimal between men and women.”; Natarajan 2020 (abstract) “such a difference is not seen with RMSSD”.' },
   { id: 'claim.hrvNotStress', display: 'A single low HRV reading does not by itself mean you are stressed or unwell', kind: 'claim', scope: 'Use instead of “low HRV means stressed”.', sources: [TASK_FORCE_1996], status: 'approved', reviewed: R },
 ]
 
-const ageKey = (b: HrvAgeBand) => b.label.replace('–', '-').replace('+', 'plus')
+const ageKey = (label: string) => label.replace('–', '-').replace('+', 'plus')
+const NATARAJAN_NOTE = 'Approved by Yakiv 2026-10-08 (task 054). Natarajan 2020, Supplementary appendix Table S3 “Typical values for time domain HRV features”, block 6am–7am, column RMSSD (Female|Male), “median (25 – 75)”; decoded from the appendix PDF glyph codes and checked against the rendered page (052_by_age_pages.md).'
 
-/** Table facts generated from the canonical norm tables (never edit values here). */
+const RHR_TAIL_NOTE = 'Approved by Yakiv 2026-10-08 (task 054). Verbatim from CDC NHSR 41 (Ostchega 2011), Table 2 (males, PDF page 13) / Table 3 (females, PDF page 14), columns 5th/10th/90th/95th; rows 20–39, 40–59, 60–79 and “80 years and over” (separate row, not 60 and over; in the 80+ row the 1st and 99th columns are empty). Re-checked 2026-10-08 with pdftotext -layout.'
+
+/** Table facts generated from the canonical tables (never edit values here). */
 function tableFacts(): Fact[] {
   const out: Fact[] = []
-  for (const [metric, bands, src, scope] of [
-    ['rmssd', HRV_AGE_BANDS, [VOSS_2015, NUNAN_2010], 'Night-time RMSSD, healthy adults (ONDA norm table, hrv-norms.ts).'],
-    ['sdnn', SDNN_AGE_BANDS, [VOSS_2015], 'SDNN from 5-minute resting ECG, healthy adults (Voss 2015; used for Apple Watch).'],
-  ] as const) {
-    for (const b of bands) {
-      const k = ageKey(b)
-      out.push({ id: `hrv.${metric}.median.${k}`, display: `${b.p50} ms`, kind: 'number', scope: `${scope} Age ${b.label}, median.`, sources: [...src], status: 'approved', reviewed: R })
-      out.push({ id: `hrv.${metric}.typical.${k}`, display: `${b.p25}–${b.p75} ms`, kind: 'range', scope: `${scope} Age ${b.label}, 25th–75th percentile.`, sources: [...src], status: 'approved', reviewed: R })
+  for (const sex of ['female', 'male'] as const) {
+    for (const p of HRV_AGE_POINTS) {
+      const k = ageKey(p.label)
+      const q = p[sex]
+      const scope = `RMSSD between 6 and 7 a.m., wrist optical sensor (PPG), still periods, about 8 million Fitbit users, self-reported ${sex === 'female' ? 'women' : 'men'} aged ${p.label}; distribution among Fitbit users, not a medical norm; Fitbit-authored and Fitbit-funded.`
+      out.push({ id: `hrv.fitbit.rmssd.am.${sex}.median.${k}`, display: `${q.p50} ms`, kind: 'number', scope: `${scope} Median.`, sources: [NATARAJAN_2020], status: 'approved', reviewed: '2026-10-08', note: NATARAJAN_NOTE })
+      out.push({ id: `hrv.fitbit.rmssd.am.${sex}.typical.${k}`, display: `${q.p25}–${q.p75} ms`, kind: 'range', scope: `${scope} 25th–75th percentile (middle half).`, sources: [NATARAJAN_2020], status: 'approved', reviewed: '2026-10-08', note: NATARAJAN_NOTE })
     }
   }
   for (const sex of ['female', 'male'] as const) {
     for (const b of RHR_BANDS[sex]) {
-      const k = b.label.replace('–', '-').replace('+', 'plus')
-      out.push({ id: `rhr.${sex}.median.${k}`, display: `${b.p50} bpm`, kind: 'number', scope: `Seated resting pulse, US adults (NHANES), ${sex}, age ${b.label}, median.`, sources: [CDC_NHSR41], status: 'approved', reviewed: R })
-      out.push({ id: `rhr.${sex}.typical.${k}`, display: `${b.p25}–${b.p75} bpm`, kind: 'range', scope: `Seated resting pulse, US adults (NHANES), ${sex}, age ${b.label}, 25th–75th percentile.`, sources: [CDC_NHSR41], status: 'approved', reviewed: R })
+      const k = ageKey(b.label)
+      const relabel = b.label === '80+' ? ' Row “80 years and over” added, approved by Yakiv 2026-10-08.' : b.label === '20–39' || b.label === '60–79' ? ' Label matches the source row (was 18–39 / 60+), approved by Yakiv 2026-10-08.' : ''
+      out.push({ id: `rhr.${sex}.median.${k}`, display: `${b.p50} bpm`, kind: 'number', scope: `Seated resting pulse, US adults (NHANES 1999–2008), ${sex}, age ${b.label}, median (Ostchega 2011, Table ${sex === 'male' ? 2 : 3}).`, sources: [CDC_NHSR41], status: 'approved', reviewed: relabel ? '2026-10-08' : R, ...(relabel ? { note: relabel.trim() } : {}) })
+      out.push({ id: `rhr.${sex}.typical.${k}`, display: `${b.p25}–${b.p75} bpm`, kind: 'range', scope: `Seated resting pulse, US adults (NHANES 1999–2008), ${sex}, age ${b.label}, 25th–75th percentile (Ostchega 2011, Table ${sex === 'male' ? 2 : 3}).`, sources: [CDC_NHSR41], status: 'approved', reviewed: relabel ? '2026-10-08' : R, ...(relabel ? { note: relabel.trim() } : {}) })
+      for (const pc of ['p5', 'p10', 'p90', 'p95'] as const) {
+        out.push({ id: `rhr.${sex}.${pc}.${k}`, display: `${b[pc]} bpm`, kind: 'number', scope: `Seated resting pulse, US adults (NHANES 1999–2008), ${sex}, age ${b.label}, ${pc.slice(1)}th percentile (Ostchega 2011, Table ${sex === 'male' ? 2 : 3}).`, sources: [CDC_NHSR41], status: 'approved', reviewed: '2026-10-08', note: RHR_TAIL_NOTE })
+      }
     }
   }
   return out
 }
 
-/** Derived from the RMSSD table — never typed by hand, so it cannot drift from hrv-norms.ts. */
+/** Numberless since 2026-10-08 (task 054): the old value was computed from an unsourced table. */
 function derivedFacts(): Fact[] {
-  const steps = HRV_AGE_BANDS.slice(1).map((b, i) => HRV_AGE_BANDS[i].p50 - b.p50)
-  const lo = Math.min(...steps), hi = Math.max(...steps)
   return [{
     id: 'hrv.age.trend',
-    display: `HRV tends to fall with age — in our night-time RMSSD table the median drops by about ${lo === hi ? lo : `${lo}–${hi}`} ms from one age band to the next`,
-    vars: { range: lo === hi ? String(lo) : `${lo}–${hi}` },
+    display: 'HRV tends to fall with age',
     kind: 'claim',
-    scope: `Computed from HRV_AGE_BANDS medians (steps: ${steps.join(', ')} ms). Individuals vary widely.`,
-    sources: [VOSS_2015, NUNAN_2010],
+    scope: 'Group-level decline of resting HRV with age (Natarajan 2020: “HRV metrics decrease with age”; Voss 2015; Umetani 1998). Individuals vary widely.',
+    sources: [NATARAJAN_2020, VOSS_2015, UMETANI_1998],
     status: 'approved',
-    reviewed: R,
+    reviewed: '2026-10-08',
+    note: 'Task 054 (2026-10-08): numeric part (“in our night-time RMSSD table the median drops by about 4–8 ms …”) retired with the unsourced HRV_AGE_BANDS table; wording reduced to the sourced trend.',
   }]
 }
 
@@ -313,7 +334,7 @@ const UNITS: Record<'ms' | 'bpm', Record<FactLang, string>> = {
   bpm: { en: 'bpm', ru: 'уд/мин', uk: 'уд/хв', es: 'lpm', de: 'S/min', fr: 'bpm', it: 'bpm', pt: 'bpm', nl: 'spm', pl: 'ud./min', ja: '拍/分', zh: '次/分' },
 }
 const DECIMAL_COMMA = new Set<FactLang>(['ru', 'uk', 'es', 'de', 'fr', 'it', 'pt', 'nl', 'pl'])
-const TABLE_FACT = /^(hrv\.(rmssd|sdnn)|rhr\.(male|female))\.(median|typical)\./
+const TABLE_FACT = /^(hrv\.fitbit\.rmssd\.am\.(male|female)|rhr\.(male|female))\.(median|typical|p5|p10|p90|p95)\./
 
 /** Locale form of a generated table fact (“34 ms” → “34 мс”, “1.5” → “1,5”). */
 function tableDisplay(f: Fact, lang: FactLang): string {

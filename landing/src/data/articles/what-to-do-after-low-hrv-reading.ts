@@ -31,7 +31,7 @@ const article: Article = {
 
 > "Your watch says your HRV is low this morning. Your stomach drops a little. Is something wrong? Should you cancel the workout? Panic?
 
-**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age ([RMSSD](/science/concepts/rmssd) from Oura, Whoop, Garmin or [SDNN](/science/concepts/sdnn) from Apple Watch).
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — compare your morning [RMSSD](/science/concepts/rmssd) (Oura, Whoop, Garmin, Polar, Fitbit) with Fitbit users your age. Apple Watch [SDNN](/science/concepts/sdnn) is a different measure and isn't compared.
 
 > Slow down. A single low [HRV](/glossary/heart-rate-variability) reading is one of the most over-interpreted numbers in consumer health. Most of the time it means very little — and when it does mean something, the right response is boring, physiological, and entirely in your hands."
 

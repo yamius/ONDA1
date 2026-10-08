@@ -29,7 +29,7 @@ const whoop50VsGarminVenu4: HeadToHead = {
   faq: [
     {
       q: 'Is Whoop 5.0 more accurate than Garmin Venu 4?',
-      a: 'No meaningful difference. Both track HRV continuously overnight via optical PPG, and independent comparisons sit them roughly equal in accuracy. The decision is not about the sensor.',
+      a: 'No evidence of a difference. Both track HRV continuously overnight via optical PPG. Neither the WHOOP 5.0 nor the Venu 4 has an independent validation of HRV against ECG (as of October 2026), so there is no basis to rank their accuracy. The decision is not about the sensor.',
     },
     {
       q: 'Do you need a subscription for either?',

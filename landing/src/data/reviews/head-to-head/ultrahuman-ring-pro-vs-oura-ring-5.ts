@@ -11,7 +11,7 @@ const ringProVsOura5: HeadToHead = {
     'This is the headline smart-ring decision of 2026: Ultrahuman’s redesigned, US-available Ring Pro against Oura’s flagship Ring 5. The Ring Pro is subscription-free with a category-leading ~15-day battery; the Ring 5 comes from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) with the best app, but charges a mandatory membership. It comes down to owning it outright vs paying for the reference experience.',
   winnerSlug: null,
   verdict:
-    'No subscription and huge battery vs accuracy and app depth. The Ultrahuman Ring Pro wins on cost model (one-time $479, no fee) and battery (~15 days); the Oura Ring 5 wins on validated accuracy, sensors and the best app — for $399 plus a membership. Pick by whether you refuse a subscription or want the reference ring.',
+    'No subscription and huge battery vs accuracy and app depth. The Ultrahuman Ring Pro wins on cost model (one-time $479, no fee) and battery (~15 days); the Oura Ring 5 wins on the best-supported ring line (the Ring 5 itself is not validated), sensors and the best app — for $399 plus a membership. Pick by whether you refuse a subscription or want the reference ring.',
   bestForA:
     'Choose the Ultrahuman Ring Pro if a one-time price with no subscription and an exceptional ~15-day battery matter most, and you are comfortable being an early adopter of a redesigned ring.',
   bestForB:
@@ -31,7 +31,7 @@ const ringProVsOura5: HeadToHead = {
     },
     {
       q: 'Is the Ring Pro accurate enough to skip Oura?',
-      a: 'For most people, its HRV and sleep tracking are good and improved over the Ring Air. But Oura is still the validated accuracy reference, so if precision is your top priority, the Ring 5 has the edge — at the cost of a subscription.',
+      a: 'For most people, its HRV and sleep tracking are good and improved over the Ring Air. But earlier Oura generations have the best independent overnight evidence (the Ring 5 itself has not been validated), so if precision is your top priority, Oura is the better-supported line — at the cost of a subscription.',
     },
     {
       q: 'Does the Ring Pro really last 15 days?',

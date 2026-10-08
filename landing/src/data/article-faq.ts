@@ -121,12 +121,12 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "What is a healthy HRV range?",
       answer:
-        "For overnight RMSSD, the middle half of healthy people (25th–75th percentile) runs about 42–78 ms at 18–29, 36–68 ms at 30–39, 30–56 ms at 40–49, 26–48 ms at 50–59, 22–42 ms at 60–69 and 19–36 ms at 70+. Apple Watch SDNN has its own, lower norms. A value outside the range is not a diagnosis — compare it with your own baseline.",
+        "Among about 8 million Fitbit users, the middle half of early-morning RMSSD ran {{fact:hrv.fitbit.rmssd.am.female.typical.30-31}} for women and {{fact:hrv.fitbit.rmssd.am.male.typical.30-31}} for men at 30–31, and {{fact:hrv.fitbit.rmssd.am.female.typical.50-51}} and {{fact:hrv.fitbit.rmssd.am.male.typical.50-51}} at 50–51. That describes Fitbit users, not a medical norm, and other devices read differently. A value outside the range is not a diagnosis — compare it with your own baseline.",
     },
     {
       question: "What is a good HRV for my age?",
       answer:
-        "For overnight RMSSD (Oura, Whoop, Garmin) the median is about 58 ms at 18–29, 50 ms at 30–39, 42 ms at 40–49, 36 ms at 50–59 and 30 ms at 60–69. On Apple Watch (SDNN) it is about 46 ms at 18–34, 42 ms at 35–44 and 34 ms at 45–54. The ranges overlap hugely — your own baseline and trend matter far more than the age average.",
+        "Among about 8 million Fitbit users, median early-morning RMSSD was {{fact:hrv.fitbit.rmssd.am.female.median.20-21}} (women) and {{fact:hrv.fitbit.rmssd.am.male.median.20-21}} (men) at 20–21, {{fact:hrv.fitbit.rmssd.am.female.median.40-41}} and {{fact:hrv.fitbit.rmssd.am.male.median.40-41}} at 40–41, and {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} and {{fact:hrv.fitbit.rmssd.am.male.median.60-61}} at 60–61. The ranges overlap hugely — your own baseline and trend matter far more than the age average.",
     },
     {
       question: "Why is my HRV lower than average?",
@@ -141,7 +141,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "What's a normal HRV at 40? At 50? At 60?",
       answer:
-        "For overnight RMSSD the median is about 42 ms in your 40s (typical 30–56 ms), 36 ms in your 50s (26–48 ms) and 30 ms in your 60s (22–42 ms) — with wide individual variation. Apple Watch SDNN runs about 34 ms at 45–54 and 29 ms at 55–64.",
+        "Among about 8 million Fitbit users, median early-morning RMSSD was {{fact:hrv.fitbit.rmssd.am.female.median.40-41}} for women and {{fact:hrv.fitbit.rmssd.am.male.median.40-41}} for men at 40–41 (middle half {{fact:hrv.fitbit.rmssd.am.female.typical.40-41}} and {{fact:hrv.fitbit.rmssd.am.male.typical.40-41}}), {{fact:hrv.fitbit.rmssd.am.female.median.50-51}} and {{fact:hrv.fitbit.rmssd.am.male.median.50-51}} at 50–51, and {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} and {{fact:hrv.fitbit.rmssd.am.male.median.60-61}} at 60–61, the oldest group in the data. That is a comparison with users of one device, not a medical norm, and individual variation is wide.",
     },
     {
       question: "Is low HRV something to worry about?",
@@ -151,7 +151,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Is normal HRV different for men and women?",
       answer:
-        "Slightly, mostly in younger adults: women under about 30 tend to have somewhat lower HRV than men, and the gap fades after about 50. The difference is small compared with how much people vary, so the same age ranges work as a rough guide. In women, HRV also tends to be lower in the second half of the menstrual cycle.",
+        "Only a little: studies agree the difference is small, mostly in younger adults, and largely gone by about age 50. In women, HRV also tends to be lower in the second half of the menstrual cycle.",
     },
     {
       question: "When is low HRV a reason to see a doctor?",
@@ -163,7 +163,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "What is a normal resting heart rate for men and women?",
       answer:
-        "In CDC NHANES data (seated resting pulse), the median for men is about 69 bpm at 18–39, 68 bpm at 40–59 and 67 bpm at 60+; for women it is about 74, 71 and 70 bpm. The middle half of healthy adults sits roughly at 60–77 bpm for men and 64–82 bpm for women. Watches and rings usually read a few bpm lower.",
+        "In CDC NHANES data (seated resting pulse), the median for men is about {{fact:rhr.male.median.20-39}} at 20–39, {{fact:rhr.male.median.40-59}} at 40–59, {{fact:rhr.male.median.60-79}} at 60–79 and {{fact:rhr.male.median.80plus}} at 80+; for women {{fact:rhr.female.median.20-39}}, {{fact:rhr.female.median.40-59}}, {{fact:rhr.female.median.60-79}} and {{fact:rhr.female.median.80plus}}. Watches and rings usually read a few bpm lower.",
     },
     {
       question: "What is a normal resting heart rate by age?",

@@ -11,7 +11,7 @@ const ringProVsRingconn: HeadToHead = {
     'Both are subscription-free rings with long batteries, so this is a value-vs-features decision, not a subscription argument. The Ultrahuman Ring Pro is the premium option — on-ring processing, richer metrics, ~15-day battery, $479. The RingConn Gen 2 is the value champion — solid tracking, a 10–12-day battery and no subscription for about $180 less ($299).',
   winnerSlug: null,
   verdict:
-    'Both skip the subscription and last well over a week. The Ultrahuman Ring Pro wins on features, processing and a slightly longer battery; the RingConn Gen 2 wins decisively on price — roughly half the cost for solid, proven tracking. Pick by whether you want premium metrics or the best value.',
+    'Both skip the subscription and last well over a week. The Ultrahuman Ring Pro wins on features, processing and a slightly longer battery; the RingConn Gen 2 wins decisively on price — roughly half the cost for solid tracking with a longer track record. Pick by whether you want premium metrics or the best value.',
   bestForA:
     'Choose the Ultrahuman Ring Pro if you want the richer feature set, on-ring processing and the longest battery, and the higher price is worth it.',
   bestForB:

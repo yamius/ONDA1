@@ -2442,7 +2442,7 @@
       "faq": [
         {
           "q": "Le Whoop 5.0 est-il plus précis que la Garmin Venu 4 ?",
-          "a": "Pas de différence significative. Les deux suivent la HRV en continu la nuit par PPG optique, et les comparaisons indépendantes les placent à peu près à égalité en précision. Le choix ne se joue pas sur le capteur."
+          "a": "Aucune différence démontrée. Les deux suivent la HRV en continu la nuit par PPG optique. Ni le WHOOP 5.0 ni la Venu 4 n’ont de validation indépendante de la HRV par rapport à un ECG (en octobre 2026) : rien ne permet donc de classer leur précision. Le choix ne se joue pas sur le capteur."
         },
         {
           "q": "Faut-il un abonnement pour le Whoop ou la Garmin Venu 4 ?",
@@ -2704,7 +2704,7 @@
       "faq": [
         {
           "q": "Polar H10 ou Whoop : lequel est le plus précis pour la HRV ?",
-          "a": "La Polar H10. Elle mesure le signal électrique du cœur comme un ECG, et une étude de validation a montré que ses intervalles RR correspondaient étroitement à un Holter ECG au repos et à l’effort (Gilgen-Ammann et al., 2019). Le Whoop utilise des capteurs optiques : lors de sa validation, la fréquence cardiaque concordait bien avec l’ECG, mais l’erreur sur la HRV (RMSSD) était plus importante (Bellenger et al., 2021). Le Whoop convient aux tendances nocturnes ; la H10 est la référence."
+          "a": "La Polar H10. Elle mesure le signal électrique du cœur comme un ECG, et une étude de validation a montré que ses intervalles RR correspondaient étroitement à un Holter ECG au repos et à l’effort (Gilgen-Ammann et al., 2019). Le Whoop utilise des capteurs optiques : lors d’une validation de l’ancien Whoop 2.0, la fréquence cardiaque concordait bien avec l’ECG, mais l’erreur sur la HRV (RMSSD) était plus importante (Bellenger et al., 2021) ; le 5.0 lui-même n’a pas de validation indépendante par rapport à un ECG (en octobre 2026). Le Whoop convient aux tendances nocturnes ; la H10 est la référence."
         },
         {
           "q": "Combien coûte le Whoop par rapport à la Polar H10 ?",
