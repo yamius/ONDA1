@@ -1,5 +1,5 @@
 ---
-sourceHash: "843bab33012e"
+sourceHash: "cdf43fb44f40"
 title: "Training en HRV: wat inspanning doet en wat HRV-gestuurd trainen laat zien"
 metaTitle: "Training en HRV: bewijs voor HRV-gestuurd trainen"
 metaDescription: "Waarom HRV na een zware training daalt en weer herstelt, hoe lang dat duurt en wat studies naar HRV-gestuurd trainen laten zien vergeleken met een vast trainingsschema."

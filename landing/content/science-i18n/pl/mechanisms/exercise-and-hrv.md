@@ -1,5 +1,5 @@
 ---
-sourceHash: "843bab33012e"
+sourceHash: "cdf43fb44f40"
 title: "Wysiłek a HRV: co robi trening i co pokazuje trening sterowany HRV"
 metaTitle: "Wysiłek a HRV: dowody dla treningu sterowanego HRV"
 metaDescription: "Dlaczego HRV spada po ciężkim treningu i wraca do normy, ile to trwa i co pokazują badania treningu sterowanego HRV w porównaniu ze stałym planem treningowym."

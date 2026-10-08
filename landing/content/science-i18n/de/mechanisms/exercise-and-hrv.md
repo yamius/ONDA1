@@ -1,5 +1,5 @@
 ---
-sourceHash: "843bab33012e"
+sourceHash: "cdf43fb44f40"
 title: "Training und HRV: Was Belastung bewirkt und was HRV-gesteuertes Training zeigt"
 metaTitle: "Training und HRV: Evidenz zum HRV-gesteuerten Training"
 metaDescription: "Warum die HRV nach hartem Training sinkt und sich wieder erholt, wie lange das dauert und was Studien zu HRV-gesteuertem Training im Vergleich mit einem festen Trainingsplan zeigen."

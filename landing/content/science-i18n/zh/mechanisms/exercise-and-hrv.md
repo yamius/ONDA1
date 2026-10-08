@@ -1,5 +1,5 @@
 ---
-sourceHash: "843bab33012e"
+sourceHash: "cdf43fb44f40"
 title: "运动与 HRV：训练带来什么变化，HRV 指导训练又显示了什么"
 metaTitle: "运动与 HRV：HRV 指导训练的证据"
 metaDescription: "为什么高强度训练后 HRV 会下降又恢复、需要多长时间，以及与固定训练计划相比，HRV 指导训练的研究显示了什么。"

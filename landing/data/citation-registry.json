@@ -1355,6 +1355,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1016/j.autneu.2026.103447": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Validity of the Polar H10 for heart rate variability and cardiac autonomic reflex tests",
+   "firstAuthor": "Blalock",
+   "authors": [
+    "Blalock",
+    "Riemann",
+    "Flatt"
+   ],
+   "year": 2026,
+   "journal": "Autonomic Neuroscience",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1016/j.bbi.2012.02.002": {
    "kind": "doi",
    "valid": true,
@@ -4617,6 +4632,24 @@
    "journal": "npj Digital Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1038/s41746-025-02238-1": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The accuracy of Apple Watch measurements: a living systematic review and meta-analysis",
+   "firstAuthor": "Lambe",
+   "authors": [
+    "Lambe",
+    "Baldwin",
+    "O’Grady",
+    "Schumann",
+    "Caulfield",
+    "Doherty"
+   ],
+   "year": 2026,
+   "journal": "npj Digital Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1038/srep31724": {
    "kind": "doi",
@@ -8782,6 +8815,42 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.14814/phy2.70527": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Validation of nocturnal resting heart rate and heart rate variability in consumer wearables",
+   "firstAuthor": "Dial",
+   "authors": [
+    "Dial",
+    "Hollander",
+    "Vatne",
+    "Emerson",
+    "Edwards",
+    "Hagen"
+   ],
+   "year": 2025,
+   "journal": "Physiological Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
+  "doi:10.14814/phy2.70706": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Contextual equivalence for accurate comparison of wearables requires transparency",
+   "firstAuthor": "Dial",
+   "authors": [
+    "Dial",
+    "Hollander",
+    "Vatne",
+    "Emerson",
+    "Edwards",
+    "Hagen"
+   ],
+   "year": 2025,
+   "journal": "Physiological Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1503/cmaj.150535": {
    "kind": "doi",
    "valid": true,
@@ -10351,6 +10420,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3390/s24196220": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Validity of Apple Watch Series 9 and Ultra 2 for Serial Measurements of Heart Rate Variability and Resting Heart Rate",
+   "firstAuthor": "O’Grady",
+   "authors": [
+    "O’Grady",
+    "Lambe",
+    "Baldwin",
+    "Acheson",
+    "Doherty"
+   ],
+   "year": 2024,
+   "journal": "Sensors",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.3390/s26010003": {
    "kind": "doi",
    "valid": true,
@@ -10366,6 +10452,23 @@
    "journal": "Sensors",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3390/s26041325": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Disconnection Between Self-Reported Wellbeing and Heart Rate Variability from Wearables",
+   "firstAuthor": "Ungaro",
+   "authors": [
+    "Ungaro",
+    "Wolfe",
+    "Isaacs",
+    "De Chavez",
+    "Freese"
+   ],
+   "year": 2026,
+   "journal": "Sensors",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.3390/s26144486": {
    "kind": "doi",
@@ -18833,6 +18936,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:39409260": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Validity of Apple Watch Series 9 and Ultra 2 for Serial Measurements of Heart Rate Variability and Resting Heart Rate.",
+   "firstAuthor": "O'Grady",
+   "authors": [
+    "O'Grady",
+    "Lambe",
+    "Baldwin",
+    "Acheson",
+    "Doherty"
+   ],
+   "year": 2024,
+   "journal": "Sensors (Basel)",
+   "doi": "10.3390/s24196220",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:39491426": {
    "kind": "pmid",
    "valid": true,
@@ -19184,6 +19305,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:40834291": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Validation of nocturnal resting heart rate and heart rate variability in consumer wearables.",
+   "firstAuthor": "Dial",
+   "authors": [
+    "Dial",
+    "Hollander",
+    "Vatne",
+    "Emerson",
+    "Edwards",
+    "Hagen"
+   ],
+   "year": 2025,
+   "journal": "Physiol Rep",
+   "doi": "10.14814/phy2.70527",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:40840566": {
    "kind": "pmid",
    "valid": true,
@@ -19302,6 +19442,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:41399178": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Contextual equivalence for accurate comparison of wearables requires transparency.",
+   "firstAuthor": "Dial",
+   "authors": [
+    "Dial",
+    "Hollander",
+    "Vatne",
+    "Emerson",
+    "Edwards",
+    "Hagen"
+   ],
+   "year": 2025,
+   "journal": "Physiol Rep",
+   "doi": "10.14814/phy2.70706",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:41410046": {
    "kind": "pmid",
    "valid": true,
@@ -19366,6 +19525,25 @@
    "doi": "10.1007/s10484-025-09765-3",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41513748": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The accuracy of Apple Watch measurements: a living systematic review and meta-analysis.",
+   "firstAuthor": "Lambe",
+   "authors": [
+    "Lambe",
+    "Baldwin",
+    "O'Grady",
+    "Schumann",
+    "Caulfield",
+    "Doherty"
+   ],
+   "year": 2026,
+   "journal": "NPJ Digit Med",
+   "doi": "10.1038/s41746-025-02238-1",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:41516438": {
    "kind": "pmid",
@@ -19443,6 +19621,24 @@
    "doi": "10.4103/ijoy.ijoy_2_25",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:41755264": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Disconnection Between Self-Reported Wellbeing and Heart Rate Variability from Wearables.",
+   "firstAuthor": "Ungaro",
+   "authors": [
+    "Ungaro",
+    "Wolfe",
+    "Isaacs",
+    "De Chavez",
+    "Freese"
+   ],
+   "year": 2026,
+   "journal": "Sensors (Basel)",
+   "doi": "10.3390/s26041325",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:41760347": {
    "kind": "pmid",
@@ -19689,6 +19885,22 @@
    "doi": "10.1038/s41598-026-53333-6",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:42275859": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Validity of the Polar H10 for heart rate variability and cardiac autonomic reflex tests.",
+   "firstAuthor": "Blalock",
+   "authors": [
+    "Blalock",
+    "Riemann",
+    "Flatt"
+   ],
+   "year": 2026,
+   "journal": "Auton Neurosci",
+   "doi": "10.1016/j.autneu.2026.103447",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:42325329": {
    "kind": "pmid",

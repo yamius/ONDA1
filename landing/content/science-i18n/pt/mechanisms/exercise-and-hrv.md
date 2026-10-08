@@ -1,5 +1,5 @@
 ---
-sourceHash: "843bab33012e"
+sourceHash: "cdf43fb44f40"
 title: "Exercício e HRV: o que o treino faz e o que mostra o treino guiado pela HRV"
 metaTitle: "Exercício e HRV: evidências sobre o treino guiado pela HRV"
 metaDescription: "Por que a HRV cai depois de um treino pesado e se recupera, quanto tempo isso leva e o que estudos de treino guiado pela HRV mostram em comparação com um plano fixo."

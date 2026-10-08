@@ -1,5 +1,5 @@
 ---
-sourceHash: "20e5cd0bc337"
+sourceHash: "2cecd6f1dabf"
 title: "Czy można ufać HRV ze smartwatcha lub pierścienia?"
 metaTitle: "HRV z zegarka lub pierścienia: czy można mu ufać?"
 metaDescription: "HRV ze smartwatcha lub pierścienia to szacunek z sygnału tętna, a nie odczyt EKG. Gdzie obie metody się zgadzają, gdzie rozchodzą i jak czytać swoje wyniki."
@@ -61,6 +61,18 @@ evidenceMap:
     limitation: "Ostrożność metodologiczna ze standardów i wytycznych; HRV odzwierciedla zależne od nerwu błędnego zmiany częstości serca, a nie aktywność samego nerwu."
   - claim: "Pojedyncza niska lub wysoka wartość sama w sobie nie przesądza o stresie, chorobie ani stanie zdrowia."
     limitation: "Dotyczy interpretacji, a nie dokładności pomiaru; utrzymujące się zmiany z niepokojącymi objawami wymagają konsultacji z lekarzem."
+  - claim: "Pas piersiowy rejestrujący aktywność elektryczną serca dawał u zdrowych młodych dorosłych wartości HRV w dziedzinie czasu praktycznie zamienne z laboratoryjnym EKG (pojedyncze badanie walidacyjne)."
+    limitation: "Jeden model pasa piersiowego, zdrowi młodzi dorośli, krótki protokół w pozycji leżącej, z kontrolowanym oddechem i na stojąco; nic nie mówi o optycznych czujnikach na nadgarstku czy w pierścieniu."
+  - claim: "W jednym badaniu wartości nocnych zgodność z referencyjnym EKG różniła się między konsumenckimi urządzeniami do noszenia: pierścienie Oura były z nim ściśle zgodne, WHOOP w akceptowalnym stopniu, a Garmin Fenix i Polar w mniejszym stopniu."
+    limitation: "Pojedyncze małe badanie zdrowych dorosłych, tylko podczas snu, konkretne generacje urządzeń; każdy producent liczy nocne HRV we własnych oknach niestandaryzowanymi metodami; to nie jest ranking marek. Finansowane przez Air Force Research Laboratory Sił Powietrznych USA; autorzy deklarują brak konfliktu interesów."
+  - claim: "Bez opublikowanych szczegółów algorytmów ani użytkownicy, ani niezależni badacze nie są w stanie ustalić, jak nocne HRV z urządzenia do noszenia jest obliczane lub ważone."
+    limitation: "Odpowiedź autorów badania w wymianie listów (zespół WHOOP skomentował badanie); argument za przejrzystością, a nie nowe dane pomiarowe."
+  - claim: "W zbiorze badań walidacyjnych Apple Watch nieznacznie zaniżał średnio tętno przy umiarkowanym rozrzucie pojedynczych odczytów, a dokładność zależała od miary, warunków i indywidualnej fizjologii."
+    limitation: "Zbiorczy wynik dla tętna; streszczenie nie podaje zbiorczego wyniku dla HRV, a wyniki nie są rozbite na generacje zegarka."
+  - claim: "W jednym badaniu walidacyjnym powtarzanych odczytów u zdrowych dorosłych dwa nowe modele Apple Watch miały tendencję do zaniżania HRV względem referencyjnego pasa piersiowego i nie mieściły się we wcześniej ustalonym przez autorów marginesie równoważności."
+    limitation: "Pojedyncze badanie, zdrowi dorośli, dwa modele zegarka, jako referencja pas piersiowy z oprogramowaniem analitycznym; nie opisuje Recovery HRV ani nowszych modeli zegarka."
+  - claim: "W jednym badaniu obserwacyjnym samopoczucie uczestników nie pokrywało się konsekwentnie z nocnym HRV z opaski aktywności."
+    limitation: "Małe badanie obserwacyjne z jednym komercyjnym trackerem; wszyscy autorzy są pracownikami PepsiCo R&D (Gatorade Sports Science Institute), które sfinansowało badanie; potrzebna jest niezależna replikacja."
 ---
 
 ## Czym jest HRV z urządzeń ubieralnych?
@@ -81,6 +93,8 @@ Dwa łańcuchy pomiarowe zaczynają się od dwóch różnych sygnałów.
 
 W skrócie: EKG → szczyty elektryczne → odstępy między uderzeniami → HRV. Oraz: PPG → szczyty fali tętna na skórze → odstępy między falami tętna → PRV.
 
+![Elektryczny zapis EKG z ostrymi szczytami nad łagodniejszą optyczną falą tętna, obok zarys opaski na nadgarstek.](/images/science/measurements-hrv-ppg-vs-ecg.jpg)
+
 Każde uderzenie serca ostatecznie wytwarza falę tętna, więc oba łańcuchy są blisko spokrewnione. Ale fala tętna musi dotrzeć do miejsca pomiaru, a to, co dzieje się po drodze — czas przejścia fali tętna, napięcie naczyń, krążenie obwodowe — wraz z artefaktami ruchowymi, kontaktem czujnika, właściwościami optycznymi skóry i przetwarzaniem sygnału w urządzeniu może oddalić wartość opartą na tętnie od jej elektrycznego odpowiednika [S3]. Czujnik na nadgarstku lub w pierścieniu nie jest więc pomniejszoną elektrodą EKG. Obserwuje powiązany sygnał i na jego podstawie szacuje, a jakość szacunku zależy od warunków.
 
 Dlatego też pytanie „czy ten czujnik jest dokładny?” jest niepełne. Wersja oparta na danych brzmi: dokładny dla jakiej miary, u jakiej osoby, w jakich warunkach i przy jakim przetwarzaniu? Kolejne sekcje rozkładają te elementy po kolei.
@@ -94,6 +108,8 @@ Każda wartość HRV z urządzenia ubieralnego jest efektem końcowym łańcucha
 - **Kiedy i jak to zmierzono?** Krótki pomiar punktowy, kontrolowany zapis spoczynkowy i okno nocne to różne tryby pomiaru — a długość zapisu zmienia nawet znaczenie wartości, bo dłuższe okna gromadzą wolniejsze rytmy i większe wartości typu SDNN [S2].
 - **Jak dobry był sygnał?** Ruch, luźne dopasowanie i słabe ukrwienie obwodowe najpierw pogarszają szacunek optyczny, a badania walidacyjne odfiltrowują takie zapisy, zanim cokolwiek obliczą [S4].
 - **Patrzysz na trend czy reagujesz na jedną liczbę?** Pojedyncza wartość to obserwacja; ciąg wartości zebranych w ten sam sposób to sygnał [S5].
+
+Pas piersiowy rejestrujący aktywność elektryczną serca jest bliżej referencji niż czujnik optyczny. W pojedynczym badaniu walidacyjnym ze zdrowymi młodymi dorosłymi (Blalock et al., 2026) pas piersiowy Polar i laboratoryjne EKG jednocześnie rejestrowały odstępy między kolejnymi uderzeniami serca, a wartości HRV z pasa w dziedzinie czasu były praktycznie zamienne z wartościami z EKG [S11]. Dlatego takie pasy często służą jako praktyczna referencja w badaniach urządzeń do noszenia. Wynik dotyczy wyłącznie zdrowych młodych dorosłych w krótkim protokole spoczynku, kontrolowanego oddechu i stania; nie przenosi się na optyczne czujniki na nadgarstku czy w pierścieniu.
 
 Ekosystem Apple to dobry przykład pytania o miarę. {{fact:applewatch.hrv.healthkit}} [S6] — więc wartości HRV w Apple Health zawsze były typu SDNN, rejestrowane automatycznie przez Apple Watch. W najnowszych modelach: {{fact:applewatch.hrv.variants2026}} [S7]; Apple nie podało, jak obliczane jest Recovery HRV. Niezależnie od tego {{fact:applewatch.hrv.rmssdType}} [S8] — to zmiana platformy, która pozwala aplikacjom zapisywać w Apple Health wartość typu RMSSD, co ma znaczenie zawsze, gdy liczbę z Apple Watch porównuje się z pierścieniem podającym RMSSD.
 
@@ -126,6 +142,10 @@ Praktyczna zasada wynika z tabeli: to samo urządzenie, ta sama miara, podobne w
 
 W kontrolowanym badaniu walidacyjnym (Zuern et al., 2026) zbadano {{fact:study.zuern2026.participants}} z rytmem zatokowym, rejestrując jednocześnie kliniczne EKG i sygnał z czujnika PPG na nadgarstku [S4]. W kontrolowanych warunkach spoczynkowych PPG na nadgarstku odtworzyło wskaźniki z EKG na tyle dokładnie, że autorzy poparli wybrane parametry do oceny krótkoterminowej — wzywając jednocześnie do dalszej walidacji w warunkach rzeczywistych [S4]. Zgodność zależała od miary: krótkoterminowe miary zmienności i entropii zgadzały się słabiej niż standardowe miary oparte na odstępach [S4], a zapisy o słabej jakości sygnału — przy niskim ukrwieniu czy artefaktach ruchowych — wykluczono przed analizą [S4]. Właśnie na takim filtrowaniu codzienne użytkowanie nie może polegać.
 
+Wartości nocne dokładają drugą warstwę: urządzenia liczą je różnie. W jednym badaniu wartości nocnych (Dial et al., 2025) {{fact:study.dial2025.participants}} nosiło podczas snu jednocześnie referencyjne EKG i kilka konsumenckich urządzeń do noszenia, łącznie przez {{fact:study.dial2025.nights}} [S9]. W tym badaniu zgodność z referencją różniła się między urządzeniami: pierścienie Oura były z nią ściśle zgodne, WHOOP w akceptowalnym stopniu, a zegarki Garmin Fenix i Polar w mniejszym stopniu [S9]. Wynik opisuje te wersje urządzeń w tej małej grupie zdrowych dorosłych podczas snu — to nie jest ranking marek. Każdy producent liczy swoje nocne HRV we własnych oknach metodami, które nie są standaryzowane, a autorzy badania zauważają, że bez przejrzystości producentów ani użytkownicy, ani niezależni badacze nie są w stanie ustalić, jak takie miary są obliczane lub ważone [S10].
+
+W przypadku Apple Watch „żywy” przegląd systematyczny z metaanalizą (Lambe et al., 2026) wykazał niewielkie średnie zaniżenie tętna względem metod referencyjnych, umiarkowany rozrzut pojedynczych odczytów i dokładność zależną od miary, warunków i indywidualnej fizjologii [S12]; jego streszczenie nie podaje zbiorczego wyniku dla HRV. Pojedyncze badanie walidacyjne tej samej grupy (O'Grady et al., 2024) porównało powtarzane odczyty HRV z dwóch nowych modeli Apple Watch u zdrowych dorosłych z referencyjnym pasem piersiowym: zegarek miał tendencję do zaniżania HRV i nie mieścił się we wcześniej ustalonym przez autorów marginesie równoważności [S13]. To badanie powstało przed wariantami Recovery HRV i Overall HRV od Apple i nic nie mówi o tym, jak one się sprawdzają.
+
 Fakty dotyczące ekosystemu Apple należą tutaj jako fakty o urządzeniach: Apple Health zapisuje HRV jako SDNN [S6], najnowsze modele zegarka udostępniają dwa warianty HRV [S7], a platforma przyjmuje teraz także wartość typu RMSSD [S8] — to stwierdzenia o ograniczonym zakresie, dotyczące tego, co jest rejestrowane, a nie zdrowia.
 
 **Wytyczne / konsensus ekspertów.** Aktualne wytyczne stwierdzają, że sygnał wejściowy, długość zapisu, miejsce pomiaru, oddech i sposób analizy wpływają na rzetelność i wiarygodność [S5] oraz że wyniki dotyczące HRV z urządzeń ubieralnych — także w badaniach — należy interpretować i osadzać w kontekście tych ograniczeń [S5]. W codziennym użyciu oznacza to porównywanie porównywalnego.
@@ -137,6 +157,7 @@ Fakty dotyczące ekosystemu Apple należą tutaj jako fakty o urządzeniach: App
 - **To nie jest odczyt EKG.** Wartość z PPG to szacunek z powiązanego sygnału, a zbiorcza zgodność nie obejmuje wszystkich warunków ani nie oznacza wymienności [S3].
 - **To nie jest jedna uniwersalna liczba.** RMSSD, SDNN i autorskie wyniki opisują różne rzeczy; wartość bez miary i okna to niepełna informacja [S2, S3].
 - **To nie jest diagnoza ani werdykt o stresie.** {{fact:claim.hrvNotStress}} [S1, S5] — i ta sama ostrożność dotyczy nietypowo wysokich wartości.
+- **To nie jest odczyt twojego samopoczucia.** W jednym badaniu obserwacyjnym samopoczucie uczestników nie pokrywało się konsekwentnie z nocnym HRV z ich trackera; wszyscy autorzy pracują dla PepsiCo R&D (Gatorade Sports Science Institute), które sfinansowało badanie [S14].
 - **To nie jest napięcie nerwu błędnego.** Sformułowanie ma tu znaczenie. {{fact:claim.vagalTone}} [S1, S5].
 - **To nie jest ranking urządzeń.** Zgodność zależy od miary, warunków, jakości sygnału i przetwarzania [S3, S4]; to, które urządzenie ci odpowiada, to pytanie do recenzji produktów, a ta strona celowo nie wskazuje „najdokładniejszego” trackera.
 - **Pojedyncza wartość mówi niewiele.** Wytyczne metodologiczne zalecają interpretację w kontekście [S5]; więcej mówi porównanie z twoimi niedawnymi odczytami z porównywalnych warunków.

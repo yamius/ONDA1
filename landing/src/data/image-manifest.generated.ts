@@ -2560,6 +2560,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/measurements-hrv-ppg-vs-ecg.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/measurements-hrv-ppg-vs-ecg.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/measurements-hrv-ppg-vs-ecg.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/measurements-onda-method.avif": {
     "width": 2688,
     "height": 1152

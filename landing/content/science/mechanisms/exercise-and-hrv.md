@@ -29,7 +29,7 @@ related:
   glossary: [heart-rate-variability]
   articles: [overtraining-hrv-resting-heart-rate, zone-2-training-aerobic-base]
   tools: [baseline]
-  science: [mechanisms/hrv-day-to-day, concepts/hrv-baseline, concepts/interpreting-hrv, mechanisms/sleep-and-hrv]
+  science: [mechanisms/hrv-day-to-day, concepts/hrv-baseline, concepts/interpreting-hrv, mechanisms/sleep-and-hrv, measurements/heart-rate-variability]
 sources:
   - id: S1
     cite: "Stanley, Peake & Buchheit (2013)"
