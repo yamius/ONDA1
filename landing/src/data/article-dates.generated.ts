@@ -14,11 +14,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "acc-calibration-protocol-cognitive-control": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-10-07T20:44:19+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "acetylcholine-lens-neuro-mechanics": {
     "published": "2026-04-22T08:39:02Z",
-    "modified": "2026-10-07T20:44:19+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "active-intervention-vs-passive-tracking": {
     "published": "2026-09-12T12:28:48+02:00",
@@ -46,7 +46,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "anterior-cingulate-core-coherence-monitoring": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "anti-entropy-neural-architecture": {
     "published": "2026-03-30T20:35:54Z",
@@ -82,11 +82,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "body-fat-percentage-composition": {
     "published": "2026-06-04T00:46:04+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "box-breathing-how-it-works": {
     "published": "2026-06-04T14:36:55+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "breathing-altitude-acclimatization": {
     "published": "2026-09-22T18:48:54+02:00",
@@ -106,7 +106,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "breathwork-command-line-interface": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-06T22:08:35+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "cacao-stem-cells": {
     "published": "2026-03-08T12:26:14+01:00",
@@ -114,7 +114,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "caffeine-half-life-sleep-pressure": {
     "published": "2026-06-04T00:46:04+02:00",
-    "modified": "2026-10-07T07:44:50+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "caffeine-hrv-resting-heart-rate": {
     "published": "2026-09-18T14:42:44+02:00",
@@ -146,11 +146,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "circadian-lighting-dark-therapy": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-07T14:55:48+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "circadian-reset-mastering-light": {
     "published": "2026-02-26T15:36:15+01:00",
-    "modified": "2026-10-07T07:44:50+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "co2-tolerance-expanding-oxygen-limit": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -162,7 +162,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "cognitive-architecture-nootropic-stacks": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-07T20:44:19+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "cognitive-shuffling": {
     "published": "2026-06-04T00:30:56+02:00",
@@ -170,7 +170,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "coherent-breathing-guide": {
     "published": "2026-06-04T17:34:04+02:00",
-    "modified": "2026-10-06T16:16:13+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "cold-exposure-vagus-nerve": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -186,7 +186,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "digital-dementia-attentional-control": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-07T07:44:50+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "doctors-and-your-data": {
     "published": "2026-09-26T13:37:15+02:00",
@@ -194,7 +194,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "does-dopamine-detox-work": {
     "published": "2026-06-04T15:03:27+02:00",
-    "modified": "2026-06-08T20:41:35+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "dopamine-architecture-mastering-desire": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -226,7 +226,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "fascial-tensegrity-protocol-myofascial-noise": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-10-06T15:15:46+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "fast-vs-slow-pranayama": {
     "published": "2026-09-22T18:37:38+02:00",
@@ -250,7 +250,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glp1-biology-muscle-preservation": {
     "published": "2026-02-28T20:22:39+01:00",
-    "modified": "2026-05-25T19:35:33+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "gut-brain-axis-data-link": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -266,7 +266,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-long-does-alcohol-stay-in-your-system": {
     "published": "2026-06-04T22:53:28+02:00",
-    "modified": "2026-09-30T10:48:26+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "how-much-alcohol-lowers-hrv": {
     "published": "2026-09-21T17:29:12+02:00",
@@ -278,31 +278,31 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-much-sleep-do-you-need": {
     "published": "2026-06-04T17:34:04+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "how-much-water-should-you-drink": {
     "published": "2026-06-04T22:53:28+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "how-to-beat-jet-lag": {
     "published": "2026-06-04T23:17:31+02:00",
-    "modified": "2026-06-06T01:38:51+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "how-to-calculate-maintenance-calories": {
     "published": "2026-06-04T22:53:28+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "how-to-calculate-one-rep-max": {
     "published": "2026-06-04T22:53:28+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "how-to-get-rid-of-brain-fog": {
     "published": "2026-06-04T15:03:27+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "how-to-lower-cortisol": {
     "published": "2026-06-04T15:03:27+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "how-to-measure-hrv-consistently": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -330,7 +330,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hrv-different-every-device": {
     "published": "2026-06-04T01:14:45+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "hrv-harmony-of-rhythms": {
     "published": "2026-09-22T07:30:24+02:00",
@@ -346,15 +346,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hydraulic-viscosity-onda-transport-bus": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-05-18T09:59:04+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "intermittent-fasting-metabolic-switch": {
     "published": "2026-06-04T00:39:42+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "interoceptive-precision-sensor-calibration": {
     "published": "2026-04-21T12:25:38Z",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "jhana-meditation-stages": {
     "published": "2026-09-23T20:27:09+02:00",
@@ -362,7 +362,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "longevity-hardware-cellular-cleanup": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-08T01:19:54+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "longevity-protocol-biological-clock-reset": {
     "published": "2026-03-24T10:01:04Z",
@@ -422,7 +422,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "mitochondrial-biogenesis-cellular-power-grid": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-07T19:28:02+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "mitochondrial-dna-red-light": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -550,7 +550,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "physiological-concentration-flow-state-hardwired": {
     "published": "2026-04-22T07:43:40Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "physiological-sigh": {
     "published": "2026-09-21T17:29:12+02:00",
@@ -562,7 +562,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "protein-intake-muscle-protein-synthesis": {
     "published": "2026-06-04T00:46:04+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "protocol-circadian-hard-reset": {
     "published": "2026-03-24T09:33:24Z",
@@ -626,7 +626,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "system-feedback-biometric-loop": {
     "published": "2026-03-09T00:06:14+01:00",
-    "modified": "2026-10-08T01:19:54+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "system-stability-serotonin": {
     "published": "2026-03-10T14:37:54Z",
@@ -650,15 +650,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "vagus-nerve-exercises": {
     "published": "2026-06-04T14:36:55+02:00",
-    "modified": "2026-10-06T20:41:29+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "vascular-tensegrity-microvascular-mechanics": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "ventral-tegmental-core-motivational-salience": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-10-06T20:41:29+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "vipassana-meditation-attention-brain": {
     "published": "2026-09-23T17:17:09+02:00",
@@ -666,7 +666,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "vo2max-increase-aerobic-engine": {
     "published": "2026-06-04T00:39:42+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "wearables-train-not-just-track": {
     "published": "2026-09-19T01:31:51+02:00",
@@ -674,7 +674,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "what-is-my-chronotype": {
     "published": "2026-06-04T23:17:31+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "what-to-do-after-low-hrv-reading": {
     "published": "2026-09-19T00:55:37+02:00",
@@ -726,7 +726,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "zone-2-training-aerobic-base": {
     "published": "2026-06-04T00:39:42+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T01:38:48+02:00"
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",

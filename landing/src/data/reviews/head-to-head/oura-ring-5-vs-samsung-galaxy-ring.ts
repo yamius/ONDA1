@@ -17,7 +17,7 @@ const oura5VsGalaxy: HeadToHead = {
   bestForB:
     'Choose the Samsung Galaxy Ring if you are on a Samsung phone inside Samsung Health and want Oura-style tracking with no subscription — every feature unlocked for good at purchase.',
   axes: [
-    { name: 'Sleep & HRV accuracy', winner: 'a', note: 'Oura is the validated reference for sleep staging and overnight HRV, and the Ring 5’s upgraded sensors extend that lead. The Galaxy Ring is competent but its accuracy trails Oura.' },
+    { name: 'Sleep & HRV accuracy', winner: 'a', note: 'Oura’s sleep staging and overnight HRV are better-validated among consumer rings (manufacturer-funded studies), and the Ring 5’s upgraded sensors extend that lead. The Galaxy Ring is competent but its accuracy trails Oura.' },
     { name: 'Subscription & cost', winner: 'b', note: 'Samsung Galaxy Ring: $399, no subscription — every feature unlocked at purchase. Oura Ring 5: $399 + ~$6/month for full data. Over time the Galaxy Ring is meaningfully cheaper.' },
     { name: 'Platform', winner: 'a', note: 'Oura works fully on iPhone and Android. The Galaxy Ring is tied to Samsung Health and Android and is really only a natural fit for Samsung-phone owners.' },
     { name: 'App & ecosystem', winner: 'a', note: 'Oura’s app is the most polished and explanatory in the category with the widest integrations. Samsung Health is capable inside the Samsung ecosystem but narrower and less HRV-focused.' },
@@ -31,7 +31,7 @@ const oura5VsGalaxy: HeadToHead = {
     },
     {
       q: 'Is the Samsung Galaxy Ring accurate enough to replace Oura?',
-      a: 'For most people its overnight HRV and sleep tracking are competent and good enough day to day, but Oura remains the validated accuracy reference and the Ring 5 widens that gap. If precision is your priority, Oura has the edge — at the cost of a subscription.',
+      a: 'For most people its overnight HRV and sleep tracking are competent and good enough day to day, but Oura’s accuracy is better-validated (manufacturer-funded studies) and the Ring 5 widens that gap. If precision is your priority, Oura has the edge — at the cost of a subscription.',
     },
     {
       q: 'Does the Samsung Galaxy Ring work with an iPhone?',

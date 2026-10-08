@@ -17,8 +17,8 @@ const ouraVsAppleWatch: HeadToHead = {
   bestForB:
     'Choose Apple Watch Series 11 if you are looking for a do-everything smartwatch with HRV as one feature among many — and you are in the iPhone ecosystem.',
   axes: [
-    { name: 'HRV tracking', winner: 'a', note: 'Oura tracks HRV continuously overnight (the right window); Apple Watch spot-checks rather than continuously tracks. For HRV as a recovery signal Oura is the clear winner.' },
-    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging is the consumer reference. Apple Watch sleep tracking is competent but less granular and the watch is uncomfortable to sleep in for many users.' },
+    { name: 'HRV tracking', winner: 'a', note: 'Oura averages HRV across the night (the steadiest window); Apple Watch samples HRV intermittently, including during sleep, rather than averaging the whole night. For HRV as a recovery signal Oura is the clear winner.' },
+    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging has stronger published validation (in Oura-funded studies), though wearable sleep stages remain estimates. Apple Watch sleep tracking is competent but less granular and the watch is uncomfortable to sleep in for many users.' },
     { name: 'Form factor for 24/7 wear', winner: 'a', note: 'Ring you forget you are wearing versus watch with a display that lights up overnight. Oura is the right shape for passive tracking.' },
     { name: 'Battery life', winner: 'a', note: 'Oura: about 4–7 days. Apple Watch: ~18–36h depending on always-on. Charging windows that fit between sleep sessions matter for HRV continuity.' },
     { name: 'General smartwatch features', winner: 'b', note: 'Apple Watch: ECG, messaging, payments, apps, fall detection, emergency SOS, third-party ecosystem. Oura: ring with no display, none of that.' },
@@ -29,11 +29,11 @@ const ouraVsAppleWatch: HeadToHead = {
   faq: [
     {
       q: 'Is Oura better than Apple Watch for sleep tracking?',
-      a: 'Yes, by a meaningful margin. Oura’s sleep staging is the consumer reference standard, and the ring is more comfortable to sleep in than a watch with an always-on display. Apple Watch sleep tracking works but is not what the device was designed for.',
+      a: 'Yes, by a meaningful margin. Oura’s sleep staging has stronger published validation (in Oura-funded studies), and the ring is more comfortable to sleep in than a watch with an always-on display. Apple Watch sleep tracking works but is not what the device was designed for.',
     },
     {
       q: 'Can Apple Watch measure HRV like Oura?',
-      a: 'Not really. Apple Watch takes spot-check HRV readings (typically during Breathe app sessions) rather than continuous overnight tracking. Oura’s overnight HRV pipeline produces the recovery signal HRV is supposed to be — Apple’s spot-checks do not.',
+      a: 'Not really. Apple Watch samples HRV intermittently while you are still — including during sleep and Breathe sessions — rather than averaging the whole night. Oura’s whole-night average gives a steadier recovery signal than Apple’s scattered samples.',
     },
     {
       q: 'Do I need both an Apple Watch and an Oura Ring?',

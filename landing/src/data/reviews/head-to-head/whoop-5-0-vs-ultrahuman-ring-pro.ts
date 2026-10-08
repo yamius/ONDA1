@@ -21,7 +21,7 @@ const whoop50VsRingPro: HeadToHead = {
     { name: 'Recovery & training coaching', winner: 'a', note: 'Whoop’s recovery, strain and sleep-coaching framework is deeper and more prescriptive for athletes, built on continuous overnight HRV. The Ring Pro tracks HRV and sleep well but is less of a daily training coach.' },
     { name: 'Battery', winner: 'b', note: 'Ultrahuman Ring Pro: category-leading ~15-day battery. Whoop 5.0: 14+ days with an on-body slide-on charging pack. Close, but the Ring Pro edges it and directly targets battery reliability.' },
     { name: 'Form factor & comfort', winner: 'tie', note: 'A finger ring vs a screenless wrist band — both are light and easy to forget you are wearing. Preference, not a winner.' },
-    { name: 'Overnight HRV', winner: 'a', note: 'Whoop is built around continuous overnight HRV and a full-sleep average from hundreds of readings — the cleanest daily recovery basis. The Ring Pro tracks continuous HRV too but Whoop’s recovery model is more refined.' },
+    { name: 'Overnight HRV', winner: 'a', note: 'Whoop is built around a daily recovery signal from HRV measured during sleep. The Ring Pro tracks continuous HRV too but Whoop’s recovery model is more refined.' },
     { name: 'Track record & reliability', winner: 'a', note: 'Whoop has years of proven hardware and support. The Ring Pro is new, independent long-term validation is thin, and Ultrahuman’s previous ring had widely reported battery failures — the reliability win is promised, not yet proven.' },
   ],
   faq: [

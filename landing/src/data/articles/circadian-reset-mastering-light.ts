@@ -96,7 +96,7 @@ A circadian reset is measured. Pair the light protocol with a tracker that catch
 
 - [Sleep Cycle](/reviews/sleep-cycle) — cross-platform sleep tracking with smart alarm
 - [Calm](/reviews/calm) — sleep stories and wind-down content
-- [Oura Ring 4](/reviews/oura-ring-4) — best-in-class sleep-stage tracking
+- [Oura Ring 4](/reviews/oura-ring-4) — optical sleep-stage estimation
 
 [Best Sleep Apps (2026) →](/reviews/sleep-apps)
 `,

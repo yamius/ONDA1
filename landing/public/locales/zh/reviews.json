@@ -188,17 +188,17 @@
       "scoreNotes": {
         "hrv-accuracy": "在 Oura 的验证研究中，夜间 RMSSD 与心电图相差仅几毫秒；白天读数会因运动而漂移。",
         "sensor": "来自手指的光学 PPG 在夜间保持干净信号——这正是 HRV 最关键的时段。",
-        "sleep-accuracy": "同类最佳的睡眠分期；一项针对 Oura 算法、96 人参与的多导睡眠图研究显示，各分期准确率为 75–91%。",
+        "sleep-accuracy": "已发表的睡眠分期结果中相对较强；一项由 Oura 资助、针对 Oura 算法、96 人参与的多导睡眠图研究显示，各分期准确率为 76–91%。",
         "data-access": "提供开发者 API，但逐搏原始数据有限，更深入的分析需要会员。",
         "wearability": "同类中最小巧的全天候外形之一；续航 4 到 7 天，充电时间短。",
         "app-ux": "精致的 App，会解释 Readiness 和 HRV，而不是把一切压缩成一个不透明的数字。",
         "value": "349 美元起，外加强制的每月 5.99 美元会员——功能强大，但永远不算完全归你所有。"
       },
-      "content": "## 结论速览\n\nOura Ring 4 仍是夜间心率变异性（HRV）和睡眠追踪最好的戒指之一，并且能获得与更新的 Ring 5 相同的新软件。售价 $349 起——比 Ring 5 便宜 $50——还经常打折。问题在于：完整数据需要每月 $5.99 的会员，因此实际花费高于标价。\n\n> **Ring 5 更新：** Oura Ring 5（2026 年 6 月）现为旗舰——更薄，传感器重新设计，$399 起。Oura 官方商店仍以 $349 起销售 Ring 4。参见 [Oura Ring 5 对比 Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4) 和我们的 [Oura Ring 5 测评](/reviews/oura-ring-5)。\n\n## Oura Ring 4 能测什么？准不准？\n\n戒指通过手指上的光学传感器（PPG）读取心率、[HRV](/glossary/heart-rate-variability)（RMSSD）、皮肤温度、血氧和活动。基于这些数据，它生成睡眠分期、Readiness 评分和活动数据。\n\n**HRV。** 夜间是 Oura 最擅长的时段。在一项针对 49 名成年人的研究中，Oura 的夜间 HRV 与医用心电图高度一致（r² = 0.98，平均差约 1 ms；Kinnunen et al., 2020）。该研究使用的是上一代戒指，但手指 PPG 的方法相同。白天动作会干扰信号，因此请把白天的 HRV 视为粗略估计。\n\n**睡眠。** 2024 年的一项研究将 Oura 睡眠算法（Gen 3 戒指）与居家多导睡眠图在 96 人、421,045 个时段上进行对比。各睡眠分期的准确率约从 76%（浅睡）到 91%（REM）（Svensson et al., 2024）。这在消费级设备的已发表结果中属于最好的一批——但它仍不是临床睡眠检查。\n\n解读你的数据时，可以对照 [不同年龄的正常 HRV](/articles/normal-hrv-by-age)——更重要的是，与你自己数周以来的基线比较。\n\n## Oura Ring 4 实际要花多少钱？\n\n戒指本身 **$349 起**（银色和黑色；高级表面处理 $399–$499）。**会员费为每月 $5.99 或每年 $69.99**，首月免费。没有会员时，App 只显示基础数据。按两年计算，基础款 Ring 4 加年度会员约 $490。\n\n| 戒指 | 价格 | 订阅 | 最适合 |\n|---|---|---|---|\n| Oura Ring 4 | $349 起 | 每月 $5.99 | 夜间 HRV + 睡眠，较低的 Oura 价格 |\n| [Oura Ring 5](/reviews/oura-ring-5) | $399 起 | 每月 $5.99 | 最新 Oura 硬件 |\n| [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) | $479 | 无 | 免订阅，续航长 |\n| [RingConn Gen 2](/reviews/ringconn-gen-2) | $299 | 无 | 总成本最低 |\n\n## Ring 5 推出后，Oura Ring 4 还值得买吗？\n\n对大多数人来说，值得。两款戒指使用相同的 App 和相同的新功能。Ring 5 更薄、传感器更新，但目前还没有已发表的证据表明它测 HRV 或睡眠更准确。如果想省下 $50 或更多，Ring 4 是更明智的选择。如果你想要最新、最小巧的戒指，就选 Ring 5。\n\n## Oura Ring 4 有哪些缺点？\n\n有两点让它无法得到更高分。第一是白天的 HRV：离开静息状态后，动作会干扰光学信号。第二是商业模式：戒指只是购买的一半，而且即便开通会员，逐搏原始数据也从未完全开放。此外它没有屏幕。\n\n## 谁适合买 Oura Ring 4，谁不适合？\n\n**适合购买：** 你想用一枚小巧的戒指获得准确的夜间 HRV 和睡眠数据，并且能接受会员费用。\n\n**建议跳过：** 你希望彻底拥有自己的设备——[Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) 和 [RingConn Gen 2](/reviews/ringconn-gen-2) 都无需订阅（参见 [Oura Ring 4 对比 RingConn Gen 2](/reviews/vs/oura-ring-4-vs-ringconn-gen-2)）。如果你训练强度大、关心白天负荷，请看 [Oura Ring 4 对比 Whoop 5.0](/reviews/vs/oura-ring-4-vs-whoop-5-0) 或 [Oura Ring 4 对比 Apple Watch Series 11](/reviews/vs/oura-ring-4-vs-apple-watch-series-11)。\n\n完整横评请看 [2026 年最佳 HRV 追踪设备](/reviews/compare/best-hrv-trackers-2026)。\n\n---\n\n## 延伸阅读\n\n为什么 HRV 值得追踪——以及身体如何产生它——背后的科学。\n\n- [不同年龄的正常 HRV](/articles/normal-hrv-by-age) ——各年龄段的典型 HRV 范围，以及为什么你自己的趋势更重要\n- [HRV：容错缓冲区](/articles/fault-tolerant-human-hrv-buffer) ——为什么宽广的 HRV 区间才是你真正要训练的目标\n- [压力感受性反射与 0.1 Hz 偏移](/articles/baroreflex-01hz-shift) ——HRV 曲线中共振频率呼吸的特征\n- [HRV 能预测反应时间和专注力吗？](/articles/nervous-system-ping-latency) ——静息 HRV 关于注意力和自控力能说明什么、不能说明什么\n",
+      "content": "## 结论速览\n\nOura Ring 4 仍是夜间心率变异性（HRV）和睡眠追踪最好的戒指之一，并且能获得与更新的 Ring 5 相同的新软件。售价 $349 起——比 Ring 5 便宜 $50——还经常打折。问题在于：完整数据需要每月 $5.99 的会员，因此实际花费高于标价。\n\n> **Ring 5 更新：** Oura Ring 5（2026 年 6 月）现为旗舰——更薄，传感器重新设计，$399 起。Oura 官方商店仍以 $349 起销售 Ring 4。参见 [Oura Ring 5 对比 Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4) 和我们的 [Oura Ring 5 测评](/reviews/oura-ring-5)。\n\n## Oura Ring 4 能测什么？准不准？\n\n戒指通过手指上的光学传感器（PPG）读取心率、[HRV](/glossary/heart-rate-variability)（RMSSD）、皮肤温度、血氧和活动。基于这些数据，它生成睡眠分期、Readiness 评分和活动数据。\n\n**HRV。** 夜间是 Oura 最擅长的时段。在一项针对 49 名成年人的研究中，Oura 的夜间 HRV 与医用心电图高度一致（r² = 0.98，平均差约 1 ms；Kinnunen et al., 2020）。该研究使用的是上一代戒指，但手指 PPG 的方法相同。白天动作会干扰信号，因此请把白天的 HRV 视为粗略估计。\n\n**睡眠。** 2024 年的一项研究将 Oura 睡眠算法（Gen 3 戒指）与居家多导睡眠图在 96 人、421,045 个时段上进行对比。各睡眠分期的准确率约从 76%（浅睡）到 91%（REM）（Svensson et al., 2024）；该研究由 Oura 资助。这在消费级设备的已发表结果中属于较强的一批——但它仍不是临床睡眠检查。\n\n解读你的数据时，可以对照 [不同年龄的正常 HRV](/articles/normal-hrv-by-age)——更重要的是，与你自己数周以来的基线比较。\n\n## Oura Ring 4 实际要花多少钱？\n\n戒指本身 **$349 起**（银色和黑色；高级表面处理 $399–$499）。**会员费为每月 $5.99 或每年 $69.99**，首月免费。没有会员时，App 只显示基础数据。按两年计算，基础款 Ring 4 加年度会员约 $490。\n\n| 戒指 | 价格 | 订阅 | 最适合 |\n|---|---|---|---|\n| Oura Ring 4 | $349 起 | 每月 $5.99 | 夜间 HRV + 睡眠，较低的 Oura 价格 |\n| [Oura Ring 5](/reviews/oura-ring-5) | $399 起 | 每月 $5.99 | 最新 Oura 硬件 |\n| [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) | $479 | 无 | 免订阅，续航长 |\n| [RingConn Gen 2](/reviews/ringconn-gen-2) | $299 | 无 | 总成本最低 |\n\n## Ring 5 推出后，Oura Ring 4 还值得买吗？\n\n对大多数人来说，值得。两款戒指使用相同的 App 和相同的新功能。Ring 5 更薄、传感器更新，但目前还没有已发表的证据表明它测 HRV 或睡眠更准确。如果想省下 $50 或更多，Ring 4 是更明智的选择。如果你想要最新、最小巧的戒指，就选 Ring 5。\n\n## Oura Ring 4 有哪些缺点？\n\n有两点让它无法得到更高分。第一是白天的 HRV：离开静息状态后，动作会干扰光学信号。第二是商业模式：戒指只是购买的一半，而且即便开通会员，逐搏原始数据也从未完全开放。此外它没有屏幕。\n\n## 谁适合买 Oura Ring 4，谁不适合？\n\n**适合购买：** 你想用一枚小巧的戒指获得准确的夜间 HRV 和睡眠数据，并且能接受会员费用。\n\n**建议跳过：** 你希望彻底拥有自己的设备——[Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) 和 [RingConn Gen 2](/reviews/ringconn-gen-2) 都无需订阅（参见 [Oura Ring 4 对比 RingConn Gen 2](/reviews/vs/oura-ring-4-vs-ringconn-gen-2)）。如果你训练强度大、关心白天负荷，请看 [Oura Ring 4 对比 Whoop 5.0](/reviews/vs/oura-ring-4-vs-whoop-5-0) 或 [Oura Ring 4 对比 Apple Watch Series 11](/reviews/vs/oura-ring-4-vs-apple-watch-series-11)。\n\n完整横评请看 [2026 年最佳 HRV 追踪设备](/reviews/compare/best-hrv-trackers-2026)。\n\n---\n\n## 延伸阅读\n\n为什么 HRV 值得追踪——以及身体如何产生它——背后的科学。\n\n- [不同年龄的正常 HRV](/articles/normal-hrv-by-age) ——各年龄段的典型 HRV 范围，以及为什么你自己的趋势更重要\n- [HRV：容错缓冲区](/articles/fault-tolerant-human-hrv-buffer) ——为什么宽广的 HRV 区间才是你真正要训练的目标\n- [压力感受性反射与 0.1 Hz 偏移](/articles/baroreflex-01hz-shift) ——HRV 曲线中共振频率呼吸的特征\n- [HRV 能预测反应时间和专注力吗？](/articles/nervous-system-ping-latency) ——静息 HRV 关于注意力和自控力能说明什么、不能说明什么\n",
       "faq": [
         {
           "q": "Oura Ring 4 测 HRV 准吗？",
-          "a": "准。它在夜间从手指连续记录 HRV，手指的信号质量优于手腕光学传感器；独立测试也将其睡眠分期和 HRV 的一致性评为智能戒指中的佼佼者。在 ONDA 的测评中得分 7.9/10。"
+          "a": "准。它在夜间从手指连续记录 HRV，手指的信号质量优于手腕光学传感器；已发表的测试（部分由 Oura 资助）也将其睡眠分期和 HRV 的一致性评为智能戒指中的佼佼者。在 ONDA 的测评中得分 7.9/10。"
         },
         {
           "q": "Oura Ring 4 需要订阅吗？",
@@ -218,7 +218,7 @@
         },
         {
           "q": "Oura 睡眠追踪和睡眠实验室相比有多准？",
-          "a": "在 2024 年一项与居家多导睡眠图对照、共 96 人参与的研究中，Oura 算法（Gen 3 戒指）各睡眠分期的准确率约为 76% 至 91%。这是消费级设备中最好的结果之一，但它不能诊断睡眠障碍。"
+          "a": "在 2024 年一项与居家多导睡眠图对照、共 96 人参与的研究中，Oura 算法（Gen 3 戒指）各睡眠分期的准确率约为 76% 至 91%；该研究由 Oura 资助。这是消费级设备中较强的结果之一，但它不能诊断睡眠障碍。"
         }
       ]
     },
@@ -2279,7 +2279,7 @@
       "axes": [
         {
           "name": "夜间连续 HRV",
-          "note": "Whoop 整夜连续采样 HRV，并给出整段睡眠的平均值；Series 12 采样也很频繁（比以前多 24 倍），但它是一块你未必每晚都戴的手表。"
+          "note": "Whoop 根据睡眠中测得的 HRV 生成恢复信号；Series 12 采样也很频繁（比以前多 24 倍），但它是一块你未必每晚都戴的手表。"
         },
         {
           "name": "恢复指导",
@@ -2707,7 +2707,7 @@
       "description": "Oura、Whoop、Garmin 怎么选？睡眠与 HRV 选 Oura，恢复指导选 Whoop，免订阅选 Garmin（约 $499）。附价格与三年总成本。",
       "intro": "Oura Ring 4、Whoop 5.0 和 Garmin Venu 4 是大多数非 Apple 用户最常放在一起比较的三款 HRV 追踪器。三种形态，三种理念：Oura 是无感佩戴的戒指，Whoop 是持续监测的恢复指导手环，Garmin 是作为训练工具的智能手表。三者都能可靠地测量夜间 HRV；选择的关键在于你希望设备如何融入日常——以及你希望如何为它付费。",
       "verdict": "综合 HRV 与睡眠追踪，Oura Ring 4 胜出。依据每日恢复评分训练的运动员选 Whoop。想要自带训练分析、无需订阅的手表，选 Garmin。",
-      "bestForA": "如果 HRV 和睡眠是决定因素，选 Oura Ring 4——无感佩戴的戒指最适合全天候佩戴，其睡眠分期已与多导睡眠图对照验证。",
+      "bestForA": "如果 HRV 和睡眠是决定因素，选 Oura Ring 4——无感佩戴的戒指最适合全天候佩戴，其睡眠分期已在一项由 Oura 资助的研究中与多导睡眠图对照。",
       "bestForB": "如果你训练强度大，把每日 Recovery 评分当作调整训练的指导信号，并且偏好续航两周的无屏手环，选 Whoop 5.0。",
       "bestForC": "如果你想要一款续航最长 12 天、自带训练分析的训练型智能手表，选 Garmin Venu 4——无需订阅。",
       "axes": [
@@ -2717,7 +2717,7 @@
         },
         {
           "name": "睡眠追踪",
-          "note": "Oura 的睡眠分期在三者中拥有最有力的公开验证（多晚多导睡眠图，Svensson 2024，基于 Gen3）。Whoop 和 Garmin 表现合格，但验证较少。"
+          "note": "Oura 的睡眠分期在三者中拥有最有力的公开验证（多晚多导睡眠图，Svensson 2024，基于 Gen3；由 Oura 资助）。Whoop 和 Garmin 表现合格，但验证较少。"
         },
         {
           "name": "恢复指导",
@@ -2751,7 +2751,7 @@
       "faq": [
         {
           "q": "Oura、Whoop、Garmin 哪个睡眠监测最好？",
-          "a": "Oura Ring 4。戒指是最容易戴着入睡的设备，而且 Oura 的睡眠分期在三者中拥有最有力的公开验证（与多晚多导睡眠图对照）。Whoop 和 Garmin 的睡眠追踪也合格；如果你更看重恢复指导或训练分析而非睡眠细节，可以选它们。"
+          "a": "Oura Ring 4。戒指是最容易戴着入睡的设备，而且 Oura 的睡眠分期在三者中拥有最有力的公开验证（与多晚多导睡眠图对照，研究由 Oura 资助）。Whoop 和 Garmin 的睡眠追踪也合格；如果你更看重恢复指导或训练分析而非睡眠细节，可以选它们。"
         },
         {
           "q": "Oura、Whoop、Garmin 综合哪个最好？",
@@ -2770,7 +2770,7 @@
           "a": "支持，三者都可以。Oura 和 Whoop 支持 iPhone 和安卓，Garmin Connect 也在两个平台运行——不像 Apple Watch 必须搭配 iPhone。"
         }
       ],
-      "content": "## 简短结论\n\n就睡眠和综合 HRV 追踪而言，Oura Ring 4 是三者中最好的：佩戴形态最友好，睡眠数据验证最充分，起价 $349，另加每月 $5.99。Whoop 5.0 最适合想要每日恢复指导的运动员（每年 $199–$359，仅会员制）。Garmin Venu 4 最适合想要训练分析和智能手表功能、又不想订阅的人（约 $499）。\n\n| | Oura Ring 4 | Whoop 5.0 | Garmin Venu 4 |\n|---|---|---|---|\n| 形态 | 戒指，无屏幕 | 无屏手环 | AMOLED 智能手表 |\n| 最擅长 | 睡眠 + 夜间 HRV | 恢复指导 | 训练分析 |\n| 续航 | 约 4–7 天 | 14 天以上 | 最长 12 天 |\n| 价格 | $349 起 | 手环包含在会员中 | 约 $499（标价 $549.99） |\n| 订阅 | $5.99/月或 $69.99/年 | 每年 $199 / $239 / $359 | 无 |\n| 三年成本 | 约 $559 | $597–$1,077 | 约 $499 |\n| iPhone 和安卓 | 支持 | 支持 | 支持 |\n\n## 适合选 Oura Ring 4 的情况\n\n- 你购买的主要原因是睡眠和夜间 HRV；\n- 你想要一款日夜佩戴都几乎感觉不到的设备；\n- 你能接受一笔不大的会员费。详见我们的 [Oura Ring 4 评测](/reviews/oura-ring-4)。\n\n## 适合选 Whoop 5.0 的情况\n\n- 你训练强度大，想要一个能调整当天训练的每日 Recovery 评分；\n- 你偏好续航两周的无屏手环；\n- 你愿意按年支付会员费。详见我们的 [Whoop 5.0 评测](/reviews/whoop-5-0)。\n\n## 适合选 Garmin Venu 4 的情况\n\n- 你想在手腕上拥有 GPS、训练负荷、VO2 max 和智能手表功能；\n- 你宁愿一次性付费也不想订阅；\n- 你想要带屏幕的长续航设备。详见我们的 [Garmin Venu 4 评测](/reviews/garmin-venu-4)。\n\n## 哪个最适合睡眠？\n\nOura。戒指最容易戴着入睡，而且 Oura 的睡眠分期已在 96 名成年人中与多晚多导睡眠图对照测试（Svensson et al., 2024，Oura Gen3 搭配当前睡眠算法）。Whoop 和 Garmin 是合格的睡眠追踪器，但缺乏同等的公开验证。想了解夜间数据的含义，请看[各年龄段的正常 HRV](/articles/normal-hrv-by-age)。\n\n## 可以搭配使用吗？\n\n很多人同时佩戴 Oura 和 Garmin——Oura 负责夜间 HRV 和睡眠，Garmin 负责训练和白天的智能手表功能。如果恢复指导比训练分析更重要，可以用 Whoop 替换这对组合中的 Garmin。\n\n## 相关对比\n\n只比两款：[Oura Ring 4 vs Whoop 5.0](/reviews/vs/oura-ring-4-vs-whoop-5-0)、[Whoop 5.0 vs Garmin Venu 4](/reviews/vs/whoop-5-0-vs-garmin-venu-4)，或把 Garmin 换成 Apple：[Oura Ring 4 vs Whoop 5.0 vs Apple Watch Series 11](/reviews/vs/oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11)。完整排名：[2026 年最佳 HRV 追踪器](/reviews/compare/best-hrv-trackers-2026)。\n\n## 参考来源\n\n- Svensson T et al. (2024). Validity and reliability of the Oura Ring Generation 3 with Oura sleep staging algorithm 2.0 compared with multi-night ambulatory polysomnography. *Sleep Medicine* 115:251–263. [doi:10.1016/j.sleep.2024.01.020](https://doi.org/10.1016/j.sleep.2024.01.020)\n- [WHOOP 会员价格](https://support.whoop.com/s/article/Membership-Pricing?language=en_US)、[Garmin Venu 4 发布公告](https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/take-steps-towards-a-healthier-lifestyle-with-the-venu-4-from-garmin/)，以及我们的 [Oura Ring 4 评测](/reviews/oura-ring-4)（Oura 价格），核实于 2026-10-02"
+      "content": "## 简短结论\n\n就睡眠和综合 HRV 追踪而言，Oura Ring 4 是三者中最好的：佩戴形态最友好，睡眠数据验证最充分，起价 $349，另加每月 $5.99。Whoop 5.0 最适合想要每日恢复指导的运动员（每年 $199–$359，仅会员制）。Garmin Venu 4 最适合想要训练分析和智能手表功能、又不想订阅的人（约 $499）。\n\n| | Oura Ring 4 | Whoop 5.0 | Garmin Venu 4 |\n|---|---|---|---|\n| 形态 | 戒指，无屏幕 | 无屏手环 | AMOLED 智能手表 |\n| 最擅长 | 睡眠 + 夜间 HRV | 恢复指导 | 训练分析 |\n| 续航 | 约 4–7 天 | 14 天以上 | 最长 12 天 |\n| 价格 | $349 起 | 手环包含在会员中 | 约 $499（标价 $549.99） |\n| 订阅 | $5.99/月或 $69.99/年 | 每年 $199 / $239 / $359 | 无 |\n| 三年成本 | 约 $559 | $597–$1,077 | 约 $499 |\n| iPhone 和安卓 | 支持 | 支持 | 支持 |\n\n## 适合选 Oura Ring 4 的情况\n\n- 你购买的主要原因是睡眠和夜间 HRV；\n- 你想要一款日夜佩戴都几乎感觉不到的设备；\n- 你能接受一笔不大的会员费。详见我们的 [Oura Ring 4 评测](/reviews/oura-ring-4)。\n\n## 适合选 Whoop 5.0 的情况\n\n- 你训练强度大，想要一个能调整当天训练的每日 Recovery 评分；\n- 你偏好续航两周的无屏手环；\n- 你愿意按年支付会员费。详见我们的 [Whoop 5.0 评测](/reviews/whoop-5-0)。\n\n## 适合选 Garmin Venu 4 的情况\n\n- 你想在手腕上拥有 GPS、训练负荷、VO2 max 和智能手表功能；\n- 你宁愿一次性付费也不想订阅；\n- 你想要带屏幕的长续航设备。详见我们的 [Garmin Venu 4 评测](/reviews/garmin-venu-4)。\n\n## 哪个最适合睡眠？\n\nOura。戒指最容易戴着入睡，而且 Oura 的睡眠分期已在 96 名成年人中与多晚多导睡眠图对照测试（Svensson et al., 2024，Oura Gen3 搭配当前睡眠算法；该研究由 Oura 资助）。Whoop 和 Garmin 是合格的睡眠追踪器，但缺乏同等的公开验证。想了解夜间数据的含义，请看[各年龄段的正常 HRV](/articles/normal-hrv-by-age)。\n\n## 可以搭配使用吗？\n\n很多人同时佩戴 Oura 和 Garmin——Oura 负责夜间 HRV 和睡眠，Garmin 负责训练和白天的智能手表功能。如果恢复指导比训练分析更重要，可以用 Whoop 替换这对组合中的 Garmin。\n\n## 相关对比\n\n只比两款：[Oura Ring 4 vs Whoop 5.0](/reviews/vs/oura-ring-4-vs-whoop-5-0)、[Whoop 5.0 vs Garmin Venu 4](/reviews/vs/whoop-5-0-vs-garmin-venu-4)，或把 Garmin 换成 Apple：[Oura Ring 4 vs Whoop 5.0 vs Apple Watch Series 11](/reviews/vs/oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11)。完整排名：[2026 年最佳 HRV 追踪器](/reviews/compare/best-hrv-trackers-2026)。\n\n## 参考来源\n\n- Svensson T et al. (2024). Validity and reliability of the Oura Ring Generation 3 with Oura sleep staging algorithm 2.0 compared with multi-night ambulatory polysomnography. *Sleep Medicine* 115:251–263. [doi:10.1016/j.sleep.2024.01.020](https://doi.org/10.1016/j.sleep.2024.01.020)\n- [WHOOP 会员价格](https://support.whoop.com/s/article/Membership-Pricing?language=en_US)、[Garmin Venu 4 发布公告](https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/take-steps-towards-a-healthier-lifestyle-with-the-venu-4-from-garmin/)，以及我们的 [Oura Ring 4 评测](/reviews/oura-ring-4)（Oura 价格），核实于 2026-10-02"
     },
     "calm-vs-insight-timer": {
       "title": "Calm 与 Insight Timer 对比评测：价格与免费版（2026）",

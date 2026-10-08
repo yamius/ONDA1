@@ -16,7 +16,7 @@ const fitbitCharge6: ToolReview = {
   scores: [
     { criterionId: 'hrv-accuracy', score: 6.5, note: 'Overnight HRV is reported as a basic figure — fine for trends, without the depth of a dedicated recovery tracker.' },
     { criterionId: 'sensor', score: 7.0, note: 'Optical PPG in a small band.' },
-    { criterionId: 'sleep-accuracy', score: 7.0, note: 'Fitbit sleep tracking is long-refined and reliable for the price.' },
+    { criterionId: 'sleep-accuracy', score: 7.0, note: 'Fitbit sleep tracking is long-refined and reliable for sleep/wake at the price; stage estimates are less consistent.' },
     { criterionId: 'data-access', score: 6.0, note: 'Data lives inside the Google Fitbit ecosystem, with limited export.' },
     { criterionId: 'wearability', score: 7.5, note: 'A small, light band with a multi-day battery — easy to wear every night.' },
     { criterionId: 'app-ux', score: 7.0, note: 'A clean app, but with a persistent Premium and Google Health Premium upsell.' },
@@ -25,7 +25,7 @@ const fitbitCharge6: ToolReview = {
   pros: [
     'Cheapest device in this comparison',
     'HRV trends are now free — no Premium needed',
-    'Long-refined, reliable sleep tracking',
+    'Long-refined sleep tracking, reliable for sleep/wake',
     'Small, light, with a multi-day battery',
   ],
   cons: [

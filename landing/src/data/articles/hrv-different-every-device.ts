@@ -50,7 +50,7 @@ So before blaming a device, check you're even comparing the same metric over the
 
 This is the single biggest source of confusion:
 
-- **Oura, Whoop, Garmin** compute HRV mostly from your **night**, averaging across hours of still, warm, motionless sleep — the cleanest possible conditions for detecting beats. That's why overnight RMSSD from a ring validates well against medical ECG (the Oura ring's nocturnal RMSSD shows very high agreement with ECG; Cao et al., 2022).
+- **Oura, Whoop, Garmin** compute HRV mostly from your **night**, averaging across hours of still, warm, motionless sleep — steadier conditions for detecting beats. That's why overnight RMSSD from a ring validates well against medical ECG (the Oura ring's nocturnal RMSSD shows very high agreement with ECG; Cao et al., 2022).
 - **Apple Watch** historically takes **sporadic spot readings** through the day (often during the Breathe/Mindfulness app or at random). Daytime readings — sitting, talking, moving, caffeinated — are inherently noisier and swing wildly. A 22 at 3 p.m. after coffee and a meeting is not comparable to a 48 measured overnight.
 
 Same heart, different window, different number. Neither is wrong; they're answering different questions.
@@ -77,7 +77,7 @@ Ranked, roughly, for HRV specifically:
 2. **Overnight ring or band (Oura, Whoop, Garmin)** — very good for *nightly trends*, measured in ideal conditions.
 3. **Daytime wrist spot-checks (Apple Watch default HRV)** — fine for a rough sense, noisy as an absolute; read the trend, never a single value.
 
-This ranking is backed by 2026 validation work: across nocturnal HR and HRV, the Oura Ring (Gen 3 and Gen 4) has shown the strongest agreement with reference measurement, ahead of Whoop, Garmin and Polar's wrist devices, while Whoop's own sleep/HRV validation lands around 75–86% depending on the metric — solid, but a step behind the ring. The pattern holds: still, overnight, well-fitted wins.
+This ranking is backed by 2026 validation work: across nocturnal HR and HRV, the Oura Ring (Gen 3 and Gen 4) has shown the strongest agreement with reference measurement, ahead of Whoop, Garmin and Polar's wrist devices, with Whoop's wrist band a step behind the ring. The pattern holds: still, overnight, well-fitted wins.
 
 But the real answer is the one nobody selling a wearable will tell you: **the absolute number barely matters.** HRV is wildly individual — a "good" RMSSD for one person is another's bad night. What carries signal is *your own value, on one device, measured the same way, trending over weeks.*
 

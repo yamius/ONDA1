@@ -8,7 +8,7 @@ const ouraRing5VsAppleWatch11: HeadToHead = {
   description:
     'Oura Ring 5 vs Apple Watch Series 11 — a dedicated sleep-and-HRV ring vs an all-round smartwatch. ONDA on accuracy, battery, features, comfort and cost.',
   intro:
-    'The Oura Ring 5 and the Apple Watch Series 11 answer different questions. The Ring 5 is a dedicated sleep-and-HRV instrument you forget you are wearing; the Series 11 is an outstanding all-round smartwatch that also does health, but spot-checks HRV rather than tracking it. If sleep and recovery are the point, they are not really the same category.',
+    'The Oura Ring 5 and the Apple Watch Series 11 answer different questions. The Ring 5 is a dedicated sleep-and-HRV instrument you forget you are wearing; the Series 11 is an outstanding all-round smartwatch that also does health, but samples HRV intermittently rather than averaging it across the night. If sleep and recovery are the point, they are not really the same category.',
   winnerSlug: null,
   verdict:
     'A dedicated tracker vs a smartwatch. The Oura Ring 5 wins decisively on overnight HRV and sleep accuracy, comfort and multi-day battery. The Apple Watch Series 11 wins on everything a smartwatch does — display, apps, GPS, ECG, calls — and needs no subscription. Buy Oura for recovery data; buy the Watch for a wrist computer.',
@@ -17,7 +17,7 @@ const ouraRing5VsAppleWatch11: HeadToHead = {
   bestForB:
     'Choose the Apple Watch Series 11 if you want a full smartwatch — notifications, apps, GPS, ECG, workouts, calls — with capable but casual health tracking and no subscription.',
   axes: [
-    { name: 'Overnight HRV & sleep', winner: 'a', note: 'Oura tracks overnight HRV continuously and leads on validated sleep staging. The Apple Watch spot-checks HRV rather than tracking it through the night — a casual HRV tool by comparison.' },
+    { name: 'Overnight HRV & sleep', winner: 'a', note: 'Oura tracks overnight HRV continuously and has stronger published sleep-staging validation (in Oura-funded studies). The Apple Watch samples HRV intermittently, including during sleep, rather than averaging the whole night — a casual HRV tool by comparison.' },
     { name: 'Battery life', winner: 'a', note: 'Oura Ring 5: 6–9 days. Apple Watch Series 11: about a day (sleep tracking competes with daytime use for charge). Not close.' },
     { name: 'Comfort for sleep', winner: 'a', note: 'A slim ring is far more comfortable to wear to bed than a watch, and it does not need nightly charging around your sleep window.' },
     { name: 'Smartwatch features', winner: 'b', note: 'Display, apps, GPS, ECG, fall detection, calls, contactless pay — the Apple Watch is a wrist computer. The Oura ring has no display and offloads everything to the phone.' },
@@ -31,7 +31,7 @@ const ouraRing5VsAppleWatch11: HeadToHead = {
     },
     {
       q: 'Is the Apple Watch good enough for HRV?',
-      a: 'For occasional readings, yes — but it spot-checks HRV rather than tracking it continuously overnight, so for recovery trends the Oura Ring 5 is a clear step up. The Watch’s strength is being a smartwatch, not a dedicated HRV tracker.',
+      a: 'For occasional readings, yes — but it samples HRV intermittently, including during sleep, rather than averaging the whole night, so for recovery trends the Oura Ring 5 is a clear step up. The Watch’s strength is being a smartwatch, not a dedicated HRV tracker.',
     },
     {
       q: 'Can I wear the Apple Watch to sleep like the Oura?',

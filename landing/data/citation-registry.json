@@ -3127,6 +3127,37 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.smrv.2011.02.005": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart rate variability, sleep and sleep disorders",
+   "firstAuthor": "Stein",
+   "authors": [
+    "Stein",
+    "Pu"
+   ],
+   "year": 2012,
+   "journal": "Sleep Medicine Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
+  "doi:10.1016/j.smrv.2016.06.004": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart rate variability in insomnia patients: A critical review of the literature",
+   "firstAuthor": "Dodds",
+   "authors": [
+    "Dodds",
+    "Miller",
+    "Kyle",
+    "Marshall",
+    "Gordon"
+   ],
+   "year": 2017,
+   "journal": "Sleep Medicine Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1016/j.smrv.2023.101764": {
    "kind": "doi",
    "valid": true,
@@ -3574,6 +3605,23 @@
    "journal": "The Lancet",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/s0140-6736(84)90062-x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "CYCLICAL VARIATION OF THE HEART RATE IN SLEEP APNOEA SYNDROME",
+   "firstAuthor": "Guilleminault",
+   "authors": [
+    "Guilleminault",
+    "Winkle",
+    "Connolly",
+    "Melvin",
+    "Tilkian"
+   ],
+   "year": 1984,
+   "journal": "The Lancet",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1016/s0165-0173(98)00019-8": {
    "kind": "doi",
@@ -4553,6 +4601,25 @@
    "journal": "Scientific Reports",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1046/j.1365-2869.2001.00263.x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Autonomic activity during human sleep as a function of time and sleep stage",
+   "firstAuthor": "Trinder",
+   "authors": [
+    "Trinder",
+    "Kleiman",
+    "Carrington",
+    "Smith",
+    "Breen",
+    "Tan",
+    "Kim"
+   ],
+   "year": 2001,
+   "journal": "Journal of Sleep Research",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1053/j.gastro.2006.11.002": {
    "kind": "doi",
@@ -5568,6 +5635,49 @@
    "journal": "Sleep",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1093/sleep/zsaa291": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Performance of seven consumer sleep-tracking devices compared with polysomnography",
+   "firstAuthor": "Chinoy",
+   "authors": [
+    "Chinoy",
+    "Cuellar",
+    "Huwa",
+    "Jameson",
+    "Watson",
+    "Bessman",
+    "Hirsch",
+    "Cooper",
+    "Drummond",
+    "Markwald"
+   ],
+   "year": 2020,
+   "yearAlt": 2021,
+   "journal": "Sleep",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
+  "doi:10.1093/sleep/zsad325": {
+   "kind": "doi",
+   "valid": true,
+   "title": "State of the science and recommendations for using wearable technology in sleep and circadian research",
+   "firstAuthor": "de Zambotti",
+   "authors": [
+    "de Zambotti",
+    "Goldstein",
+    "Cook",
+    "Menghini",
+    "Altini",
+    "Cheng",
+    "Robillard"
+   ],
+   "year": 2023,
+   "yearAlt": 2024,
+   "journal": "SLEEP",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1097/01.ede.0000152903.55579.15": {
    "kind": "doi",
@@ -7272,6 +7382,22 @@
    "journal": "American Review of Respiratory Disease",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1172/jci118235": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sympathetic neural mechanisms in obstructive sleep apnea.",
+   "firstAuthor": "Somers",
+   "authors": [
+    "Somers",
+    "Dyken",
+    "Clary",
+    "Abboud"
+   ],
+   "year": 1995,
+   "journal": "Journal of Clinical Investigation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1172/jci68993": {
    "kind": "doi",
@@ -9997,6 +10123,20 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3390/s21134302": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Promise of Sleep: A Multi-Sensor Approach for Accurate Sleep Stage Detection Using the Oura Ring",
+   "firstAuthor": "Altini",
+   "authors": [
+    "Altini",
+    "Kinnunen"
+   ],
+   "year": 2021,
+   "journal": "Sensors",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.3390/s22186723": {
    "kind": "doi",
    "valid": true,
@@ -10194,6 +10334,25 @@
    "journal": "Journal of Clinical Sleep Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.5664/jcsm.6506": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Clinical Practice Guideline for Diagnostic Testing for Adult Obstructive Sleep Apnea: An American Academy of Sleep Medicine Clinical Practice Guideline",
+   "firstAuthor": "Kapur",
+   "authors": [
+    "Kapur",
+    "Auckley",
+    "Chowdhuri",
+    "Kuhlmann",
+    "Mehra",
+    "Ramar",
+    "Harrod"
+   ],
+   "year": 2017,
+   "journal": "Journal of Clinical Sleep Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.5664/jcsm.8356": {
    "kind": "doi",
@@ -10766,6 +10925,26 @@
    "doi": "10.1007/s004210100518",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:11903855": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Autonomic activity during human sleep as a function of time and sleep stage.",
+   "firstAuthor": "Trinder",
+   "authors": [
+    "Trinder",
+    "Kleiman",
+    "Carrington",
+    "Smith",
+    "Breen",
+    "Tan",
+    "Kim"
+   ],
+   "year": 2001,
+   "journal": "J Sleep Res",
+   "doi": "10.1046/j.1365-2869.2001.00263.x",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:11958969": {
    "kind": "pmid",
@@ -12362,6 +12541,22 @@
    "doi": "10.4103/0973-6131.78171",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:21658979": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart rate variability, sleep and sleep disorders.",
+   "firstAuthor": "Stein",
+   "authors": [
+    "Stein",
+    "Pu"
+   ],
+   "year": 2012,
+   "yearAlt": 2011,
+   "journal": "Sleep Med Rev",
+   "doi": "10.1016/j.smrv.2011.02.005",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:21876150": {
    "kind": "pmid",
@@ -14520,6 +14715,45 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:28162150": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Clinical Practice Guideline for Diagnostic Testing for Adult Obstructive Sleep Apnea: An American Academy of Sleep Medicine Clinical Practice Guideline.",
+   "firstAuthor": "Kapur",
+   "authors": [
+    "Kapur",
+    "Auckley",
+    "Chowdhuri",
+    "Kuhlmann",
+    "Mehra",
+    "Ramar",
+    "Harrod"
+   ],
+   "year": 2017,
+   "journal": "J Clin Sleep Med",
+   "doi": "10.5664/jcsm.6506",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
+  "pmid:28187954": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart rate variability in insomnia patients: A critical review of the literature.",
+   "firstAuthor": "Dodds",
+   "authors": [
+    "Dodds",
+    "Miller",
+    "Kyle",
+    "Marshall",
+    "Gordon"
+   ],
+   "year": 2017,
+   "yearAlt": 2016,
+   "journal": "Sleep Med Rev",
+   "doi": "10.1016/j.smrv.2016.06.004",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:28240995": {
    "kind": "pmid",
    "valid": true,
@@ -16667,6 +16901,29 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:33378539": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Performance of seven consumer sleep-tracking devices compared with polysomnography.",
+   "firstAuthor": "Chinoy",
+   "authors": [
+    "Chinoy",
+    "Cuellar",
+    "Huwa",
+    "Jameson",
+    "Watson",
+    "Bessman",
+    "Hirsch",
+    "Cooper",
+    "Drummond",
+    "Markwald"
+   ],
+   "year": 2021,
+   "journal": "Sleep",
+   "doi": "10.1093/sleep/zsaa291",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:33378655": {
    "kind": "pmid",
    "valid": true,
@@ -16883,6 +17140,21 @@
    "doi": "10.1176/appi.ajp.2020.20091340",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:34201861": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Promise of Sleep: A Multi-Sensor Approach for Accurate Sleep Stage Detection Using the Oura Ring.",
+   "firstAuthor": "Altini",
+   "authors": [
+    "Altini",
+    "Kinnunen"
+   ],
+   "year": 2021,
+   "journal": "Sensors (Basel)",
+   "doi": "10.3390/s21134302",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:34473846": {
    "kind": "pmid",
@@ -17885,6 +18157,26 @@
    "doi": "10.1016/0002-9149(87)90795-8",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:38149978": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "State of the science and recommendations for using wearable technology in sleep and circadian research.",
+   "firstAuthor": "de Zambotti",
+   "authors": [
+    "de Zambotti",
+    "Goldstein",
+    "Cook",
+    "Menghini",
+    "Altini",
+    "Cheng",
+    "Robillard"
+   ],
+   "year": 2024,
+   "journal": "Sleep",
+   "doi": "10.1093/sleep/zsad325",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:38211547": {
    "kind": "pmid",
@@ -19210,6 +19502,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:6140442": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cyclical variation of the heart rate in sleep apnoea syndrome. Mechanisms, and usefulness of 24 h electrocardiography as a screening technique.",
+   "firstAuthor": "Guilleminault",
+   "authors": [
+    "Guilleminault",
+    "Connolly",
+    "Winkle",
+    "Melvin",
+    "Tilkian"
+   ],
+   "year": 1984,
+   "journal": "Lancet",
+   "doi": "10.1016/s0140-6736(84)90062-x",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:7164002": {
    "kind": "pmid",
    "valid": true,
@@ -19258,6 +19568,23 @@
    "doi": "10.1152/ajpheart.1994.267.1.H411",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:7560081": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sympathetic neural mechanisms in obstructive sleep apnea.",
+   "firstAuthor": "Somers",
+   "authors": [
+    "Somers",
+    "Dyken",
+    "Clary",
+    "Abboud"
+   ],
+   "year": 1995,
+   "journal": "J Clin Invest",
+   "doi": "10.1172/JCI118235",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:7585069": {
    "kind": "pmid",

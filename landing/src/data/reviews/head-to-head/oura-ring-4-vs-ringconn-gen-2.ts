@@ -18,7 +18,7 @@ const ouraVsRingconn: HeadToHead = {
     'Choose RingConn Gen 2 if you want subscription-free smart-ring tracking with the longest battery in the category, at the lowest 3-year total cost.',
   axes: [
     { name: 'HRV measurement', winner: 'a', note: 'Both optical PPG with comparable accuracy ceilings. Oura’s pipeline is marginally cleaner in independent comparison.' },
-    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep model is the consumer reference. RingConn is competent but a tier behind on staging granularity.' },
+    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging is better-validated among consumer rings (manufacturer-funded studies); wearable sleep stages are still estimates. RingConn is competent but a tier behind on staging granularity.' },
     { name: 'App maturity', winner: 'a', note: 'Oura: decade of iteration. RingConn: newer, cleaner-but-shallower. Oura wins decisively.' },
     { name: 'Battery life', winner: 'b', note: 'RingConn Gen 2: 10–12 days depending on size. Oura Ring 4: about 4–7 days. RingConn lasts roughly two to three times as long — the longest in the smart-ring category.' },
     { name: 'Subscription requirement', winner: 'b', note: 'RingConn: no subscription. Oura: $5.99/month membership required for full features. RingConn wins outright.' },
@@ -29,7 +29,7 @@ const ouraVsRingconn: HeadToHead = {
   faq: [
     {
       q: 'Is Oura Ring 4 worth twice the price of RingConn Gen 2 over three years?',
-      a: 'Only if you actually use the deeper analytics. Oura’s sleep model and Readiness score are the consumer reference; the monthly membership is the cost of admission to that depth. If you would mostly use the ring as a passive HRV tracker, RingConn delivers most of that for half the price.',
+      a: 'Only if you actually use the deeper analytics. Oura’s sleep model and Readiness score are the most developed in the category, with better-validated sleep staging (manufacturer-funded studies); the monthly membership is the cost of admission to that depth. If you would mostly use the ring as a passive HRV tracker, RingConn delivers most of that for half the price.',
     },
     {
       q: 'Does RingConn really have a 12-day battery?',

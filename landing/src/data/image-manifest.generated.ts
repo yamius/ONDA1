@@ -2620,6 +2620,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/mechanisms-sleep-and-hrv.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/mechanisms-sleep-and-hrv.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/mechanisms-sleep-and-hrv.webp": {
+    "width": 1584,
+    "height": 672
+  },
   "/images/science/rmssd.avif": {
     "width": 1024,
     "height": 768

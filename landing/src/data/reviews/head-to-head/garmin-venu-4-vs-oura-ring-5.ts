@@ -18,7 +18,7 @@ const venu4VsOura5: HeadToHead = {
     'Choose the Oura Ring 5 if accurate overnight HRV and sleep are the point, you want the slimmest always-on wearable, and the ~$6/month membership is acceptable.',
   axes: [
     { name: 'Overnight HRV precision', winner: 'b', note: 'Oura’s overnight RMSSD remains the closest consumer match to an ECG chest strap, now with redesigned sensors. Garmin HRV Status is a dependable overnight-baseline read, but wrist optical sits a step behind finger-based rings.' },
-    { name: 'Sleep tracking', winner: 'b', note: 'Oura carries best-in-class sleep staging. The Venu 4 has the most advanced Garmin sleep tracking yet, with circadian-alignment metrics — good, but not the reference.' },
+    { name: 'Sleep tracking', winner: 'b', note: 'Oura’s sleep staging is better-validated among consumer wearables (manufacturer-funded studies). The Venu 4 has the most advanced Garmin sleep tracking yet, with circadian-alignment metrics — good, but less validated.' },
     { name: 'Battery / overnight wear', winner: 'tie', note: 'Oura Ring 5: 6–9 days. Venu 4: multi-day. Both make nightly wear practical without a charging window around sleep.' },
     { name: 'Training & everyday smartwatch', winner: 'a', note: 'Screen, workouts and Garmin’s training ecosystem make the Venu 4 a real sports and daily-driver watch. The ring has no display and is not a training tool.' },
     { name: 'Subscription / cost', winner: 'a', note: 'Venu 4: $499 one-time, every feature unlocked. Oura Ring 5: $399 ($499 premium finishes) plus a ~$6/month membership for full data — cheaper up front, an ongoing cost after.' },

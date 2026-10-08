@@ -14,14 +14,14 @@ const ouraVsWhoopVsGarmin: HeadToHead = {
   verdict:
     'Oura Ring 4 wins for general HRV-and-sleep tracking. Whoop for athletes who train on a daily recovery score. Garmin for trainers who want a watch with first-party training analytics and no subscription.',
   bestForA:
-    'Choose Oura Ring 4 if HRV and sleep are the deciding criteria — a passive ring is the right shape for 24/7 wear, with sleep staging validated against polysomnography.',
+    'Choose Oura Ring 4 if HRV and sleep are the deciding criteria — a passive ring is the right shape for 24/7 wear, with sleep staging tested against polysomnography in an Oura-funded study.',
   bestForB:
     'Choose Whoop 5.0 if you train hard, treat the daily Recovery score as a coaching prompt that changes your session, and prefer a screenless band with two-week battery.',
   bestForC:
     'Choose Garmin Venu 4 if you want a training-focused smartwatch with up to 12 days of battery and first-party training analytics — no subscription required.',
   axes: [
     { name: 'HRV measurement', winner: 'tie', note: 'All three track HRV overnight on optical PPG. Effectively tied at the sensor layer for trend use; differentiation is in interpretation.' },
-    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging has the strongest published validation of the three (multi-night polysomnography, Svensson 2024, on Gen3). Whoop and Garmin are competent but less validated.' },
+    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging has the strongest published validation of the three (multi-night polysomnography, Svensson 2024, on Gen3; funded by Oura). Whoop and Garmin are competent but less validated.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s Recovery and Strain coaching is the sharpest daily-readiness model. Oura’s Readiness is good; Garmin’s Body Battery and HRV Status are lighter-touch.' },
     { name: 'Training analytics', winner: 'c', note: 'Garmin: training load, VO2 max, recovery time, structured workouts, GPS. Whoop: Strain-based coaching. Oura: minimal training-specific analytics.' },
     { name: 'Form factor for 24/7 wear', winner: 'a', note: 'Ring fits sleep, work, gym, social. Whoop band hides under clothing. Garmin watch is visible. Oura wins on passive wearability.' },
@@ -33,7 +33,7 @@ const ouraVsWhoopVsGarmin: HeadToHead = {
   faq: [
     {
       q: 'Oura vs Whoop vs Garmin — which is best for sleep?',
-      a: 'Oura Ring 4. A ring is the easiest device to sleep in, and Oura’s sleep staging has the strongest published validation of the three against multi-night polysomnography. Whoop and Garmin track sleep competently; pick them if recovery coaching or training analytics matter more than sleep detail.',
+      a: 'Oura Ring 4. A ring is the easiest device to sleep in, and Oura’s sleep staging has the strongest published validation of the three against multi-night polysomnography, in a study funded by Oura. Whoop and Garmin track sleep competently; pick them if recovery coaching or training analytics matter more than sleep detail.',
     },
     {
       q: 'Which is best overall — Oura, Whoop or Garmin?',
@@ -86,7 +86,7 @@ For sleep and overall HRV tracking, Oura Ring 4 is the best of the three: the mo
 
 ## Which is best for sleep?
 
-Oura. A ring is the easiest thing to sleep in, and Oura’s sleep staging has been tested against multi-night polysomnography in 96 adults (Svensson et al., 2024, Oura Gen3 with the current sleep algorithm). Whoop and Garmin are competent sleep trackers but lack comparable published validation. For what your overnight numbers mean, see [normal HRV by age](/articles/normal-hrv-by-age).
+Oura. A ring is the easiest thing to sleep in, and Oura’s sleep staging has been tested against multi-night polysomnography in 96 adults (Svensson et al., 2024, Oura Gen3 with the current sleep algorithm; the study was funded by Oura). Whoop and Garmin are competent sleep trackers but lack comparable published validation. For what your overnight numbers mean, see [normal HRV by age](/articles/normal-hrv-by-age).
 
 ## Can you combine them?
 

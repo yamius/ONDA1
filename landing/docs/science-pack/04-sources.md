@@ -423,6 +423,22 @@ All checked against PubMed on 2026-10-08 (esummary, abstract; conflicts of inter
 | Luu 2024 | Luu K. Key components of trauma-informed yoga nidra. *Int J Yoga Therap* 2024 | review (narrative) / context-dependent | DOI 10.17761/2024-D-24-00021 · PMID 39690521 | Safety: flashbacks, distress, dissociation; trauma-informed delivery |
 | Ditto 2006 | Ditto B, Eclache M, Goldman N. Short-term autonomic and cardiovascular effects of mindfulness body scan meditation. *Ann Behav Med* 2006;32(3):227-234 | randomized trial / emerging | DOI 10.1207/s15324796abm3203_9 · PMID 17107296 | Body scan raised RSA more than other relaxing activities |
 
+## Sleep and HRV (mechanisms/sleep-and-hrv, approved 2026-10-08)
+
+All checked against PubMed on 2026-10-08 (report 045_sleep_hrv_report.md). Approved by Yakiv 2026-10-08 (9 new journal sources + 2 official pages, listed in the Official documents table). Viola 2002, Boudreau 2013 and Carter 2026 are already listed above. Facts P1 (Chinoy 2021 sample) and P2 (Trinder 2001 sample) approved the same day. WHOOP is not described on the page.
+
+| Source | Full reference | Type / class | ID | Use for |
+|---|---|---|---|---|
+| Trinder 2001 | Trinder J, et al. Autonomic activity during human sleep as a function of time and sleep stage. *J Sleep Res* 2001 | observational (small laboratory study) / established | DOI 10.1046/j.1365-2869.2001.00263.x · PMID 11903855 | NREM shift to parasympathetic influence; stage mix explains changes over the night; fact `study.trinder2001.participants` |
+| Stein & Pu 2012 | Stein PK, Pu Y. Heart rate variability, sleep and sleep disorders. *Sleep Med Rev* 2012 | review / established | DOI 10.1016/j.smrv.2011.02.005 · PMID 21658979 | HRV across sleep stages and sleep disorders; interpretation caveats |
+| Chinoy 2021 | Chinoy ED, et al. Performance of seven consumer sleep-tracking devices compared with polysomnography. *Sleep* 2021 | observational (laboratory validation) / context-dependent | DOI 10.1093/sleep/zsaa291 · PMID 33378539 | Trackers detect sleep well, wake less well; stage estimates inconsistent; fact `study.chinoy2021.participants` |
+| de Zambotti 2024 | de Zambotti M, et al. State of the science and recommendations for using wearable technology in sleep and circadian research. *Sleep* 2024 | review / established | DOI 10.1093/sleep/zsad325 · PMID 38149978 | Wake misclassification; performance may not transfer to all populations |
+| Altini & Kinnunen 2021 | Altini M, Kinnunen H. The promise of sleep: a multi-sensor approach for accurate sleep stage detection using the Oura Ring. *Sensors* 2021 | observational / emerging | DOI 10.3390/s21134302 · PMID 34201861 | Manufacturer-run stage model (conflict of interest: Oura employee and adviser) |
+| Guilleminault 1984 | Guilleminault C, et al. Cyclical variation of the heart rate in sleep apnoea syndrome. *Lancet* 1984 | observational / established | DOI 10.1016/s0140-6736(84)90062-x · PMID 6140442 | Bradycardia–tachycardia pattern in sleep apnea |
+| Somers 1995 | Somers VK, et al. Sympathetic neural mechanisms in obstructive sleep apnea. *J Clin Invest* 1995 | observational (ten patients) / emerging | DOI 10.1172/JCI118235 · PMID 7560081 | Sympathetic activity and BP do not fall during sleep in OSA |
+| Dodds 2017 | Dodds KL, et al. Heart rate variability in insomnia patients: a critical review of the literature. *Sleep Med Rev* 2017 | systematic review / debated | DOI 10.1016/j.smrv.2016.06.004 · PMID 28187954 | HRV not reliably impaired in insomnia |
+| Kapur 2017 | Kapur VK, et al. Clinical practice guideline for diagnostic testing for adult obstructive sleep apnea: an AASM clinical practice guideline. *J Clin Sleep Med* 2017 | guideline / guideline | DOI 10.5664/jcsm.6506 · PMID 28162150 | OSA diagnosed with PSG or home sleep apnea testing, not wearables or questionnaires |
+
 ## Official documents (type `official`: URL, no DOI — device and regulatory facts only)
 
 | Source | URL | Use for |
@@ -430,6 +446,8 @@ All checked against PubMed on 2026-10-08 (esummary, abstract; conflicts of inter
 | Apple Newsroom, 9 Sep 2026 | https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/ | Recovery HRV and Overall HRV; measuring every five minutes (fact `applewatch.hrv.variants2026`) |
 | ONDA — What ONDA measures (type `product-documentation`, approved 2026-10-05) | https://onda-life.com/measurements | What the app reads and how it compares readings; scope (descriptive, not a medical assessment). Not evidence for any scientific claim |
 | ONDA — How ONDA works (type `product-documentation`, approved 2026-10-06) | https://onda-life.com/how-it-works | How the baseline is built from nightly Apple Health values; HRV read ready-made as SDNN; camera = pulse only. Aligned with the app code 2026-10-06. Not evidence for any scientific claim |
+| Oura support — Heart Rate Variability (approved 2026-10-08) | https://support.ouraring.com/hc/en-us/articles/360025441974-Heart-Rate-Variability | Oura measures HRV only during sleep; shown value = mean of five-minute samples (method only, not accuracy) |
+| Garmin Technology — HRV Status (approved 2026-10-08) | https://www.garmin.com/en-US/garmin-technology/health-science/hrv-status/ | HRV Status average calculated from the entire sleep period (method only) |
 | HealthKit heartRateVariabilitySDNN | https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilitysdnn | Apple Health stores HRV as SDNN |
 | HealthKit heartRateVariabilityRMSSD | https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilityrmssd | RMSSD type from iOS/watchOS 27 |
 | FDA De Novo DEN150048 | https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN150048.pdf | gammaCore: the cleared headache indication only |

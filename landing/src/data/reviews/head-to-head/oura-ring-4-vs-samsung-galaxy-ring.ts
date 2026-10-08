@@ -18,7 +18,7 @@ const ouraVsSamsungRing: HeadToHead = {
     'Choose Samsung Galaxy Ring if you are on Samsung — Galaxy phone plus Galaxy Watch — and you want a no-subscription ring tightly integrated into Samsung Health.',
   axes: [
     { name: 'HRV measurement', winner: 'a', note: 'Both track HRV optically overnight; Oura’s pipeline is marginally tighter in independent comparison. Small gap.' },
-    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep model remains the consumer reference. Samsung’s sleep analytics are competent but a tier behind.' },
+    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging is better-validated among consumer rings (manufacturer-funded studies); wearable sleep stages are still estimates. Samsung’s sleep analytics are competent but a tier behind.' },
     { name: 'Cross-platform support', winner: 'a', note: 'Oura runs natively on both iPhone and Android with full feature parity. Samsung Galaxy Ring works with Android only; there is no iPhone support.' },
     { name: 'Ecosystem integration', winner: 'b', note: 'Samsung Galaxy Ring composes natively with Galaxy Watch (HRV + sleep cross-validation), Samsung Health and Samsung devices. The strongest single-brand health ecosystem.' },
     { name: 'Battery life', winner: 'b', note: 'Samsung: ~7 days. Oura: about 4–7 days. Close, with a Samsung edge — especially in larger sizes.' },
@@ -37,11 +37,11 @@ const ouraVsSamsungRing: HeadToHead = {
     },
     {
       q: 'Is the Oura membership worth it over Samsung Galaxy Ring?',
-      a: 'For most users on iPhone or with deep analytics needs, yes — Oura’s sleep and recovery models are the consumer reference and the membership is small relative to that depth. For Samsung-ecosystem users who get Galaxy Watch cross-validation for free, the membership is harder to justify.',
+      a: 'For most users on iPhone or with deep analytics needs, yes — Oura’s sleep and recovery models are the most developed in the category and the membership is small relative to that depth. For Samsung-ecosystem users who get Galaxy Watch cross-validation for free, the membership is harder to justify.',
     },
     {
       q: 'Which has better sleep tracking?',
-      a: 'Oura, by a meaningful margin. Oura’s sleep staging and recovery model remain the consumer reference standard. Samsung’s sleep tracking is competent but more general-purpose.',
+      a: 'Oura, by a meaningful margin. Oura’s sleep staging is better-validated among consumer rings (manufacturer-funded studies), and its recovery model is more developed. Samsung’s sleep tracking is competent but more general-purpose.',
     },
   ],
   content: `## The short version
@@ -50,7 +50,7 @@ This is a tie that breaks on which ecosystem you live in. The hardware is compar
 
 ## When is Oura the right pick?
 
-If you are on iPhone or you have a cross-platform household where the device needs to work for everyone, Oura is the right shape. The app is the most mature in the category, the sleep model is the consumer reference, and the membership is the cost of admission to the deepest smart-ring analytics on the market.
+If you are on iPhone or you have a cross-platform household where the device needs to work for everyone, Oura is the right shape. The app is the most mature in the category, the sleep staging is better-validated among consumer rings (manufacturer-funded studies), and the membership is the cost of admission to the deepest smart-ring analytics on the market.
 
 ## When is Samsung Galaxy Ring the right pick?
 

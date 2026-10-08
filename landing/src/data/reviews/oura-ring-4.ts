@@ -16,7 +16,7 @@ const ouraRing4: ToolReview = {
   scores: [
     { criterionId: 'hrv-accuracy', score: 8.5, note: 'Nighttime RMSSD tracks an ECG within a few milliseconds in Oura validation work; daytime readings drift under motion.' },
     { criterionId: 'sensor', score: 8.0, note: 'Optical PPG from the finger holds a clean signal overnight — the window that matters most for HRV.' },
-    { criterionId: 'sleep-accuracy', score: 8.5, note: 'Best-in-class sleep staging; a 96-person polysomnography study of the Oura algorithm found 76–91% per-stage accuracy.' },
+    { criterionId: 'sleep-accuracy', score: 8.5, note: 'Among the stronger published sleep-staging results; a 96-person polysomnography study of the Oura algorithm, funded by Oura, found 76–91% per-stage accuracy.' },
     { criterionId: 'data-access', score: 6.5, note: 'A developer API exists, but raw beat-to-beat data is limited and deeper analysis sits behind the membership.' },
     { criterionId: 'wearability', score: 8.5, note: 'One of the smallest always-on form factors in the category; a 4 to 7 day battery with brief charges.' },
     { criterionId: 'app-ux', score: 8.5, note: 'A polished app that explains Readiness and HRV rather than reducing everything to one opaque number.' },
@@ -53,7 +53,7 @@ The ring uses optical sensors (PPG) on the finger to read heart rate, [HRV](/glo
 
 **HRV.** The night is where Oura is strongest. In a study of 49 adults, nightly Oura HRV agreed closely with a medical ECG (r² = 0.98, mean difference about 1 ms; Kinnunen et al., 2020). That study used an earlier ring generation, but the finger-PPG method is the same. During the day, movement disturbs the signal, so treat daytime HRV as a rough estimate.
 
-**Sleep.** A 2024 study compared the Oura sleep algorithm (on the Gen 3 ring) with home polysomnography in 96 people over 421,045 epochs. Accuracy per sleep stage ranged from about 76% (light sleep) to 91% (REM) (Svensson et al., 2024). That is among the best published results for a consumer device — but it is still not a clinical sleep test.
+**Sleep.** A 2024 study compared the Oura sleep algorithm (on the Gen 3 ring) with home polysomnography in 96 people over 421,045 epochs. Accuracy per sleep stage ranged from about 76% (light sleep) to 91% (REM) (Svensson et al., 2024); the study was funded by Oura. That is among the stronger published results for a consumer device — but it is still not a clinical sleep test ([why wearable sleep stages are estimates](/science/mechanisms/sleep-and-hrv)).
 
 To make sense of your numbers, compare them with [normal HRV by age](/articles/normal-hrv-by-age) — and, more importantly, with your own baseline over weeks.
 
@@ -103,12 +103,12 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
   relatedSlugs: ['oura-ring-5', 'whoop-5-0', 'apple-watch-series-11', 'ultrahuman-ring-pro', 'ringconn-gen-2'],
   faq: [
-    { q: "Is the Oura Ring 4 accurate for HRV?", a: "Yes. It records HRV continuously overnight from the finger, where signal quality beats wrist optical sensors, and independent testing rates its sleep-stage and HRV agreement among the best in the smart-ring category. It scores 7.9/10 in ONDA's review." },
+    { q: "Is the Oura Ring 4 accurate for HRV?", a: "Yes. It records HRV continuously overnight from the finger, where signal quality beats wrist optical sensors, and published testing (partly funded by Oura) rates its sleep-stage and HRV agreement among the best in the smart-ring category. It scores 7.9/10 in ONDA's review." },
     { q: "Does the Oura Ring 4 require a subscription?", a: "Yes. The ring is from $349 one-time, but full data — readiness, HRV trends and insights — needs the Oura membership at $5.99 per month or $69.99 per year (first month free). Without it you see only limited metrics." },
     { q: "Oura Ring 4 vs Oura Ring 5 — which should I buy?", a: "Both are top-tier for overnight HRV and share the same software. The Ring 5 is the newer flagship with an upgraded sensor and slimmer build; the Ring 4 is often the better value when discounted. Buy the Ring 4 to save money, the Ring 5 for the latest hardware." },
     { q: "Is the Oura Ring 4 still worth buying after the Ring 5?", a: "Yes, for most people. Oura still sells the Ring 4 from $349, $50 below the Ring 5, and it gets the same app features. There is no published evidence yet that the Ring 5 measures HRV or sleep more accurately. Choose the Ring 5 only if you want the slimmer, newest hardware." },
     { q: "How much does the Oura Ring 4 cost in total?", a: "From $349 for the ring plus $5.99 per month or $69.99 per year for the membership. Over two years with a yearly plan, that is roughly $490 for a base-finish ring. Premium finishes cost $399 to $499." },
-    { q: "How accurate is Oura sleep tracking compared with a sleep lab?", a: "In a 2024 study of 96 people against home polysomnography, the Oura algorithm (on the Gen 3 ring) was about 76% to 91% accurate per sleep stage. That is among the best results for a consumer device, but it cannot diagnose sleep disorders." },
+    { q: "How accurate is Oura sleep tracking compared with a sleep lab?", a: "In a 2024 study of 96 people against home polysomnography, the Oura algorithm (on the Gen 3 ring) was about 76% to 91% accurate per sleep stage; the study was funded by Oura. That is among the stronger results for a consumer device, but it cannot diagnose sleep disorders." },
   ],
 
   datePublished: '2026-05-15',

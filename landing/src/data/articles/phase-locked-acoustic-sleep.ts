@@ -34,7 +34,7 @@ For decades, sleep was treated as a black box—you closed your eyes and hoped f
 
 > **The Hack:** [ PROTOCOL_DELTA_AMPLIFICATION ]
 >
-> **Real-Time Detection:** Use a clinical-grade tracker (Oura Gen 4+, Dreem, or Whoop 5.0) to identify the precise onset of Slow Wave Sleep (SWS).
+> **Real-Time Detection:** Closed-loop systems detect slow waves from EEG. Consumer trackers such as Oura or Whoop give only an estimate of sleep stages, not the precise onset of Slow Wave Sleep (SWS) — see [HRV and heart rate during sleep](/science/mechanisms/sleep-and-hrv).
 >
 > **Acoustic Pink Noise:** When the system detects Delta oscillations (0.5–4 Hz), it triggers sub-perceptual "bursts" of pink noise via bone conduction or localized speakers.
 >
@@ -74,7 +74,7 @@ Acoustic phase-locking and sleep tracking layer cleanly. Hardware and software t
   howToSteps: [
     {
       name: 'PROTOCOL_DELTA_AMPLIFICATION',
-      text: 'Use a clinical-grade tracker (Oura Gen 4+, Dreem, or Whoop 5.0) to identify the precise onset of Slow Wave Sleep (SWS).',
+      text: 'Closed-loop systems detect slow waves from EEG. Consumer trackers such as Oura or Whoop give only an estimate of sleep stages, not the precise onset of Slow Wave Sleep (SWS).',
       protocolId: 'phase-lock-delta-wave-amplification',
     },
   ],

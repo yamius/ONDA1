@@ -17,7 +17,7 @@ const series12VsWhoop50: HeadToHead = {
   bestForB:
     'Choose Whoop 5.0 if recovery-and-strain coaching drives how you train and you want continuous overnight HRV from a screenless band — accepting the ongoing membership.',
   axes: [
-    { name: 'Continuous overnight HRV', winner: 'b', note: 'Whoop samples HRV continuously through the night and reports a full-sleep average; the Series 12 samples often (24× more than before) but is a watch you may not wear every night.' },
+    { name: 'Continuous overnight HRV', winner: 'b', note: 'Whoop builds its recovery signal from HRV measured during sleep; the Series 12 samples often (24× more than before) but is a watch you may not wear every night.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s Recovery + Strain model is the sharpest daily-readiness coach in consumer wearables. The Series 12 gives you the numbers (Recovery vs Overall HRV) but lighter guidance.' },
     { name: 'Battery / overnight wear', winner: 'b', note: 'Whoop lasts 14+ days and charges on-body without removal; the Series 12’s ~1-day battery competes with overnight measurement.' },
     { name: 'Subscription / cost', winner: 'a', note: 'Series 12 is $399 one-time, no subscription. Whoop is membership-only at $199–$359/year — cheaper first year, an ongoing cost forever.' },
