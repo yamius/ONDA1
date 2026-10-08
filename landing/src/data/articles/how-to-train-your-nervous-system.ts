@@ -55,9 +55,9 @@ This is the nervous-system equivalent of a strength rep. Each slow-breathing ses
 
 Breathing is the lever you pull actively, but it works on a foundation:
 
-- **Vagal-tone exercises** — humming, gargling, cold exposure, longer exhales — nudge the same parasympathetic branch; see [vagus nerve exercises](/articles/vagus-nerve-exercises).
+- **Vagus nerve exercises** — humming, gargling, cold exposure, longer exhales — are popular ways to support the same parasympathetic branch; slow breathing has the best evidence; see [vagus nerve exercises](/articles/vagus-nerve-exercises).
 - **Sleep and recovery** set the baseline the whole system operates from.
-- **Aerobic fitness** raises resting vagal tone over time.
+- **Aerobic fitness** tends to raise resting HRV over time.
 - **Removing chronic load** — the stress that never switches off keeps the system stuck in "go," so boundaries and real disengagement matter as much as any practice.
 
 None of these is exotic. Training a nervous system is mostly consistent, boring, foundational work — plus the active breathing rep that accelerates it.
@@ -99,7 +99,7 @@ A realistic plan treats it like any training program. **Protect the foundation**
     },
     {
       name: 'Protect the foundation',
-      text: 'Sleep, recovery, aerobic fitness and boundaries around chronic stress set the baseline the whole system runs from. Vagal-tone exercises (humming, cold, long exhales) support the same branch.',
+      text: 'Sleep, recovery, aerobic fitness and boundaries around chronic stress set the baseline the whole system runs from. Vagus nerve exercises (humming, cold, long exhales) are used to support the same branch; slow breathing has the best evidence.',
       protocolId: 'tns-foundation',
     },
     {

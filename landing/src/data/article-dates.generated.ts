@@ -150,7 +150,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "circadian-reset-mastering-light": {
     "published": "2026-02-26T15:36:15+01:00",
-    "modified": "2026-10-08T01:38:48+02:00"
+    "modified": "2026-10-08T11:54:33+02:00"
   },
   "co2-tolerance-expanding-oxygen-limit": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -330,7 +330,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hrv-different-every-device": {
     "published": "2026-06-04T01:14:45+02:00",
-    "modified": "2026-10-08T01:38:48+02:00"
+    "modified": "2026-10-08T11:54:33+02:00"
   },
   "hrv-harmony-of-rhythms": {
     "published": "2026-09-22T07:30:24+02:00",
@@ -546,7 +546,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "phase-locked-acoustic-sleep": {
     "published": "2026-02-28T20:22:39+01:00",
-    "modified": "2026-10-08T01:19:54+02:00"
+    "modified": "2026-10-08T11:54:33+02:00"
   },
   "physiological-concentration-flow-state-hardwired": {
     "published": "2026-04-22T07:43:40Z",
@@ -686,7 +686,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "why-is-my-apple-watch-hrv-low": {
     "published": "2026-10-04T14:03:10+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T11:54:33+02:00"
   },
   "wim-hof-breathing-inflammation": {
     "published": "2026-09-22T18:48:54+02:00",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-08T00:57:23+02:00"
+    "modified": "2026-10-08T11:54:33+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1746,7 +1746,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-07T21:55:20+02:00"
+    "modified": "2026-10-08T11:54:33+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

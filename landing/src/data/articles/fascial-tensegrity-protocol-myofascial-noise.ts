@@ -93,7 +93,7 @@ Regular execution of this protocol delivers the following results.
       protocolId: 'fascia-trapezius-release',
     },
     {
-      name: 'Vagus Activation (Resonant Humming Exhale)',
+      name: 'Slow Humming Exhale',
       text: 'Inhale smoothly through the nose over 4 seconds. Exhale slowly over 8 to 10 seconds with a low-frequency humming sound or controlled pursed-lip exhale. Repeat 5 cycles.',
       protocolId: 'fascia-vagus-humming',
     },

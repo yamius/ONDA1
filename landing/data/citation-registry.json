@@ -2489,6 +2489,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.jtcme.2017.02.003": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of Bhramari Pranayama on health – A systematic review",
+   "firstAuthor": "Kuppusamy",
+   "authors": [
+    "Kuppusamy",
+    "Kamaldeen",
+    "Pitani",
+    "Amaldas",
+    "Shanmugam"
+   ],
+   "year": 2018,
+   "journal": "Journal of Traditional and Complementary Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1016/j.jtherbio.2023.103775": {
    "kind": "doi",
    "valid": true,
@@ -6058,6 +6075,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1111/j.1365-2362.2003.01277.x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Nasal nitric oxide measurements before and after repeated humming maneuvers",
+   "firstAuthor": "Maniscalco",
+   "authors": [
+    "Maniscalco",
+    "Sofia",
+    "Weitzberg",
+    "Carratu",
+    "Lundberg"
+   ],
+   "year": 2003,
+   "journal": "European Journal of Clinical Investigation",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1111/j.1440-1819.1966.tb02646.x": {
    "kind": "doi",
    "valid": true,
@@ -6517,6 +6551,22 @@
    "journal": "The Journal of Physiology",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1121/1.2188887": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Paranasal sinus ventilation by humming",
+   "firstAuthor": "Granqvist",
+   "authors": [
+    "Granqvist",
+    "Sundberg",
+    "Lundberg",
+    "Weitzberg"
+   ],
+   "year": 2006,
+   "journal": "The Journal of the Acoustical Society of America",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1124/pr.117.014407": {
    "kind": "doi",
@@ -7383,6 +7433,20 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1164/rccm.200202-138bc": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Humming Greatly Increases Nasal Nitric Oxide",
+   "firstAuthor": "Weitzberg",
+   "authors": [
+    "Weitzberg",
+    "Lundberg"
+   ],
+   "year": 2002,
+   "journal": "American Journal of Respiratory and Critical Care Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1172/jci118235": {
    "kind": "doi",
    "valid": true,
@@ -7676,6 +7740,33 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1177/1757913917740391": {
+   "kind": "doi",
+   "valid": true,
+   "title": "What works for wellbeing? A systematic review of wellbeing outcomes for music and singing in adults",
+   "firstAuthor": "Daykin",
+   "authors": [
+    "Daykin",
+    "Mansfield",
+    "Meads",
+    "Julier",
+    "Tomlinson",
+    "Payne",
+    "Grigsby Duffy",
+    "Lane",
+    "D’Innocenzo",
+    "Burnett",
+    "Kay",
+    "Dolan",
+    "Testoni",
+    "Victor"
+   ],
+   "year": 2017,
+   "yearAlt": 2018,
+   "journal": "Perspectives in Public Health",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1177/19322968221101632": {
    "kind": "doi",
    "valid": false,
@@ -7818,6 +7909,23 @@
    "journal": "Nutritional Neuroscience",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1183/09031936.03.00017903": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Assessment of nasal and sinus nitric oxide output using single-breath humming exhalations",
+   "firstAuthor": "Maniscalco",
+   "authors": [
+    "Maniscalco",
+    "Weitzberg",
+    "Sundberg",
+    "Sofia",
+    "Lundberg"
+   ],
+   "year": 2003,
+   "journal": "European Respiratory Journal",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.1183/20734735.009817": {
    "kind": "doi",
@@ -9613,6 +9721,27 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3389/fpsyg.2013.00334": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Music structure determines heart rate variability of singers",
+   "firstAuthor": "Vickhoff",
+   "authors": [
+    "Vickhoff",
+    "Malmgren",
+    "Åström",
+    "Nyberg",
+    "Ekström",
+    "Engwall",
+    "Snygg",
+    "Nilsson",
+    "Jörnsten"
+   ],
+   "year": 2013,
+   "journal": "Frontiers in Psychology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.3389/fpsyg.2014.00756": {
    "kind": "doi",
    "valid": true,
@@ -9957,6 +10086,30 @@
    "journal": "International Journal of Environmental Research and Public Health",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.3390/ijerph19063380": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effectiveness of Mantra-Based Meditation on Mental Health: A Systematic Review and Meta-Analysis",
+   "firstAuthor": "Álvarez-Pérez",
+   "authors": [
+    "Álvarez-Pérez",
+    "Rivero-Santana",
+    "Perestelo-Pérez",
+    "Duarte-Díaz",
+    "Ramos-García",
+    "Toledo-Chávarri",
+    "Torres-Castaño",
+    "León-Salas",
+    "Infante-Ventura",
+    "González-Hernández",
+    "Rodríguez-Rodríguez",
+    "Serrano-Aguilar"
+   ],
+   "year": 2022,
+   "journal": "International Journal of Environmental Research and Public Health",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
   },
   "doi:10.3390/ijms22115882": {
    "kind": "doi",
@@ -10987,6 +11140,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:12119224": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Humming greatly increases nasal nitric oxide.",
+   "firstAuthor": "Weitzberg",
+   "authors": [
+    "Weitzberg",
+    "Lundberg"
+   ],
+   "year": 2002,
+   "journal": "Am J Respir Crit Care Med",
+   "doi": "10.1164/rccm.200202-138BC",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:12154366": {
    "kind": "pmid",
    "valid": true,
@@ -11095,6 +11263,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:12952268": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Assessment of nasal and sinus nitric oxide output using single-breath humming exhalations.",
+   "firstAuthor": "Maniscalco",
+   "authors": [
+    "Maniscalco",
+    "Weitzberg",
+    "Sundberg",
+    "Sofia",
+    "Lundberg"
+   ],
+   "year": 2003,
+   "journal": "Eur Respir J",
+   "doi": "10.1183/09031936.03.00017903",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:13470504": {
    "kind": "pmid",
    "valid": true,
@@ -11133,6 +11319,24 @@
    "doi": "10.1097/01.psy.0000089200.81962.19",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:14636292": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Nasal nitric oxide measurements before and after repeated humming maneuvers.",
+   "firstAuthor": "Maniscalco",
+   "authors": [
+    "Maniscalco",
+    "Sofia",
+    "Weitzberg",
+    "Carratu",
+    "Lundberg"
+   ],
+   "year": 2003,
+   "journal": "Eur J Clin Invest",
+   "doi": "10.1111/j.1365-2362.2003.01277.x",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:15094802": {
    "kind": "pmid",
@@ -11505,6 +11709,23 @@
    "doi": "10.1080/07420520500545979",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:16708919": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Paranasal sinus ventilation by humming.",
+   "firstAuthor": "Granqvist",
+   "authors": [
+    "Granqvist",
+    "Sundberg",
+    "Lundberg",
+    "Weitzberg"
+   ],
+   "year": 2006,
+   "journal": "J Acoust Soc Am",
+   "doi": "10.1121/1.2188887",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:16732466": {
    "kind": "pmid",
@@ -13220,6 +13441,28 @@
    "doi": "10.1016/j.ijpsycho.2013.06.017",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:23847555": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Music structure determines heart rate variability of singers.",
+   "firstAuthor": "Vickhoff",
+   "authors": [
+    "Vickhoff",
+    "Malmgren",
+    "Aström",
+    "Nyberg",
+    "Ekström",
+    "Engwall",
+    "Snygg",
+    "Nilsson",
+    "Jörnsten"
+   ],
+   "year": 2013,
+   "journal": "Front Psychol",
+   "doi": "10.3389/fpsyg.2013.00334",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:23852425": {
    "kind": "pmid",
@@ -15283,6 +15526,34 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:29130840": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "What works for wellbeing? A systematic review of wellbeing outcomes for music and singing in adults.",
+   "firstAuthor": "Daykin",
+   "authors": [
+    "Daykin",
+    "Mansfield",
+    "Meads",
+    "Julier",
+    "Tomlinson",
+    "Payne",
+    "Grigsby Duffy",
+    "Lane",
+    "D'Innocenzo",
+    "Burnett",
+    "Kay",
+    "Dolan",
+    "Testoni",
+    "Victor"
+   ],
+   "year": 2018,
+   "yearAlt": 2017,
+   "journal": "Perspect Public Health",
+   "doi": "10.1177/1757913917740391",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
+  },
   "pmid:29142296": {
    "kind": "pmid",
    "valid": true,
@@ -15328,6 +15599,25 @@
    "doi": "10.1183/20734735.009817",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:29321984": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of Bhramari Pranayama on health - A systematic review.",
+   "firstAuthor": "Kuppusamy",
+   "authors": [
+    "Kuppusamy",
+    "Kamaldeen",
+    "Pitani",
+    "Amaldas",
+    "Shanmugam"
+   ],
+   "year": 2018,
+   "yearAlt": 2017,
+   "journal": "J Tradit Complement Med",
+   "doi": "10.1016/j.jtcme.2017.02.003",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:29467611": {
    "kind": "pmid",
@@ -17485,6 +17775,31 @@
    "doi": "10.1007/s41465-021-00218-3",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:35329068": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effectiveness of Mantra-Based Meditation on Mental Health: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Álvarez-Pérez",
+   "authors": [
+    "Álvarez-Pérez",
+    "Rivero-Santana",
+    "Perestelo-Pérez",
+    "Duarte-Díaz",
+    "Ramos-García",
+    "Toledo-Chávarri",
+    "Torres-Castaño",
+    "León-Salas",
+    "Infante-Ventura",
+    "González-Hernández",
+    "Rodríguez-Rodríguez",
+    "Serrano-Aguilar"
+   ],
+   "year": 2022,
+   "journal": "Int J Environ Res Public Health",
+   "doi": "10.3390/ijerph19063380",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:35496325": {
    "kind": "pmid",

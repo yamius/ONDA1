@@ -87,7 +87,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Can alternate nostril breathing lower blood pressure?",
       answer:
-        "Research associates regular slow breathing, including Nadi Shodhana, with modest reductions in blood pressure — through vagal activation, not the nostril technique specifically. It's a supportive practice, not a treatment for hypertension.",
+        "Research associates regular slow breathing, including Nadi Shodhana, with modest reductions in blood pressure — likely through the slow breathing pace itself, not the nostril technique specifically. It's a supportive practice, not a treatment for hypertension.",
     },
   ],
   "humming-breath-vagus": [
@@ -104,7 +104,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Is humming the same as chanting or singing?",
       answer:
-        "They work through the same mechanism — vibration in the larynx (a proposed route to vagal fibers) plus extended exhales. Humming is just the simplest and quietest version.",
+        "They share the same core — slowed breathing with extended exhales. Vibration in the larynx is a proposed route to vagal fibers, not a proven one. Humming is just the simplest and quietest version.",
     },
     {
       question: "When should I use humming breath?",
@@ -114,7 +114,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Does humming really lower stress?",
       answer:
-        "Yes — it produces a measurable calming shift (lower heart rate, higher HRV) through vagal stimulation and long exhales. It's a wellness practice, not a treatment for any medical condition.",
+        "It can help you feel calmer: humming slows your breathing and lengthens the exhale. {{fact:claim.slowExhale}}. There is no evidence that the hum itself stimulates the vagus nerve beyond what slow breathing does. It's a wellness practice, not a treatment for any medical condition.",
     },
   ],
   "normal-hrv-by-age": [
@@ -283,10 +283,10 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
   ],
   "om-chanting-brain-vagus": [
     { question: "Does OM chanting calm the brain?", answer: "A small fMRI study found OM chanting was accompanied by deactivation of limbic regions including the amygdala, hippocampus and cingulate cortex — a pattern its authors compared to clinical vagus nerve stimulation. It is an intriguing signal from a small study, not settled neuroscience." },
-    { question: "Why did OM work but not other sounds?", answer: "In the study, a non-humming control sound ('ssss') did not produce the limbic deactivation, suggesting the resonant hum of OM, not just vocalizing, is the active ingredient." },
-    { question: "How might OM chanting stimulate the vagus nerve?", answer: "The authors proposed that OM's vibration in the throat and ears stimulates the laryngeal and auricular branches of the vagus nerve, shifting the body toward parasympathetic calm. This is a hypothesis about mechanism." },
-    { question: "Is OM chanting the same as humming (Bhramari)?", answer: "They share the core mechanism — vibration plus a long exhale. OM adds resonance and the focus of a mantra, and it is the version with brain-imaging research behind it." },
-    { question: "Do I need to be religious for OM chanting to work?", answer: "No. The physiological effect comes from the vibration and the long exhale, not from belief, although many people find the tradition adds depth." },
+    { question: "Why did OM work but not other sounds?", answer: "In the study, a non-humming control sound ('ssss') did not produce the limbic deactivation, which may point to the resonant hum of OM. But 'ssss' also changes the breathing, and the study was small and not replicated, so it has not been shown that the hum is the active ingredient." },
+    { question: "Is OM chanting linked to the vagus nerve?", answer: "The authors proposed that OM's vibration in the throat and ears stimulates the laryngeal and auricular branches of the vagus nerve, shifting the body toward parasympathetic calm. This is a hypothesis about mechanism; it has not been shown that the vibration does more than the slow breathing that comes with chanting." },
+    { question: "Is OM chanting the same as humming (Bhramari)?", answer: "They share the same core — a hum on a slow, long exhale. OM adds resonance and the focus of a mantra, and it is the version with a small brain-imaging study behind it." },
+    { question: "Do I need to be religious for OM chanting to work?", answer: "No. The physiological effect seems to come mainly from the slow, long exhale, not from belief; the role of the vibration is unproven. Many people find the tradition adds depth." },
   ],
   "pranayama-metabolic-syndrome": [
     { question: "Can pranayama help metabolic syndrome?", answer: "As a complement to lifestyle change, research in young adults suggests it can. A study in medical students with raised BMI or blood pressure found pranayama improved clinical predictors of metabolic syndrome. It targets the stress and autonomic drivers of the syndrome alongside diet and exercise." },
@@ -1281,9 +1281,9 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
         'Apply moderate, sustained pressure with fingertips or a massage ball for 30 to 45 seconds on each high-tension point along the neck and upper shoulders, until the tissue tension subsides. Combine with the humming exhale for full parasympathetic shift.',
     },
     {
-      question: 'Why is humming on the exhale used to activate the vagus nerve?',
+      question: 'Why is a humming exhale used in this protocol?',
       answer:
-        'A long, low-frequency humming exhale (8–10 seconds after a 4-second nasal inhale) creates vibration around the vagus pathway and lowers system jitter. {{fact:claim.slowExhale}}. Slowing the breath also lowers heart rate and releases residual tension in the jaw and neck.',
+        'A long, low-frequency humming exhale (8–10 seconds after a 4-second nasal inhale) slows the breath and gives you a sound to pace it. Humming has not been shown to activate the vagus nerve directly. {{fact:claim.slowExhale}}. Slowing the breath also lowers heart rate and releases residual tension in the jaw and neck.',
     },
   ],
   'vascular-tensegrity-microvascular-mechanics': [

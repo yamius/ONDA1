@@ -2440,6 +2440,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1920,
     "height": 820
   },
+  "/images/science/evidence-humming-and-chanting.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-humming-and-chanting.jpg": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/science/evidence-humming-and-chanting.webp": {
+    "width": 1584,
+    "height": 672
+  },
   "/images/science/evidence-meditation-autonomic-nervous-system.avif": {
     "width": 1916,
     "height": 821

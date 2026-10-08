@@ -195,7 +195,7 @@ evidenceMap:
     sources: [S1]
     class: established
     claimType: physiology
-    quote: "In the neck, the vagus nerve provides required innervation to most of the muscles of the pharynx and larynx, which are responsible for swallowing and vocalization."
+    quote: "the vagus nerve provides required innervation to most of the muscles of the pharynx and larynx, which are responsible for swallowing and vocalization"
     limitation: "Anatomical summary."
   - claim: "The vagus nerve takes part in regulating digestion, heart rate and respiratory rate, and in reflexes such as coughing, swallowing and vomiting."
     sources: [S1]

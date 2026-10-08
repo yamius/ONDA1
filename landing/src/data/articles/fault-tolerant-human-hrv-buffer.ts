@@ -78,7 +78,7 @@ Three interventions to stress-test the system and expand the HRV buffer:
 
 ### Protocol 2: VNS Calibration
 
-> **Action:** Daily Vagus Nerve Stimulation via resonant frequency breathing (0.1 Hz, 10–15 minutes), gargling, or humming. Track morning HRV for 7 consecutive days to establish baseline.
+> **Action:** Daily slow breathing at resonance frequency (0.1 Hz, 10–15 minutes); humming or gargling can be added as a way to slow the exhale. Track morning HRV for 7 consecutive days to establish baseline.
 
 **Logic:** Here "VNS" is our shorthand for slow-breathing practice, not medical vagus nerve stimulation. Think of it as an Uninterruptible Power Supply (UPS) image — a useful metaphor, not literal physiology. Even when the external environment cuts the power — acute stress, sleep deprivation, infection — a well-regulated system holds baseline function better. In studies, effects of regular slow-breathing practice on HRV are modest and inconsistent; where they occur, they may raise the threshold before the system tips into sympathetic overdrive.
 
@@ -121,7 +121,7 @@ Reading the buffer requires a device that resolves beat-to-beat intervals reliab
     },
     {
       name: 'VNS Calibration',
-      text: 'Apply daily Vagus Nerve Stimulation via resonant frequency breathing at 0.1 Hz for 10–15 minutes. Track morning HRV for 7 consecutive days to establish your buffer baseline.',
+      text: 'Practise slow breathing at resonance frequency (0.1 Hz) daily for 10–15 minutes. Track morning HRV for 7 consecutive days to establish your buffer baseline.',
       protocolId: 'hrv-buffer-vns-calibration',
     },
     {

@@ -1,5 +1,5 @@
 ---
-sourceHash: 60023d57fe48
+sourceHash: 3f90a409e444
 title: "Der Vagusnerv: was er tut und was Mythos ist"
 metaTitle: "Der Vagusnerv: Was er tut und was Mythos ist"
 metaDescription: "Was der Vagusnerv wirklich tut – Herz, Darm, Atemwege, Rachen, Signale ans Gehirn – und welche Aussagen zu Vagustonus und Übungen zu weit gehen."
