@@ -1,5 +1,5 @@
 ---
-sourceHash: "cdf43fb44f40"
+sourceHash: "79992de6d516"
 title: "Wysiłek a HRV: co robi trening i co pokazuje trening sterowany HRV"
 metaTitle: "Wysiłek a HRV: dowody dla treningu sterowanego HRV"
 metaDescription: "Dlaczego HRV spada po ciężkim treningu i wraca do normy, ile to trwa i co pokazują badania treningu sterowanego HRV w porównaniu ze stałym planem treningowym."
@@ -49,6 +49,20 @@ evidenceMap:
     limitation: "Wytyczne dotyczące rzetelności badań; konsensus ekspertów, a nie bezpośrednie dowody dotyczące decyzji treningowych."
   - claim: "ONDA tworzy linię bazową z nocnych wartości w Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (facts baseline.window, baseline.compare)."
     limitation: "Opisuje wyłącznie działanie aplikacji; nie stanowi dowodu na żadne twierdzenie zdrowotne ani treningowe."
+  - claim: "W metaanalizie u sportowców wytrzymałościowych trening, który poprawił wyniki, szedł w parze ze wzrostem zależnego od nerwu błędnego HRV w spoczynku i po wysiłku oraz powrotu tętna (facts study.bellenger2016.studies, study.bellenger2016.restingRmssd)."
+    limitation: "Tylko sportowcy wytrzymałościowi; połączone małe badania; wskaźniki częstotliwościowe ograniczone do mocy HF; średnie grupowe, a nie test indywidualny."
+  - claim: "HRV po wysiłku i powrót tętna rosną także podczas przeciążenia, więc sam ich kierunek nie odróżnia pozytywnej adaptacji od negatywnej."
+    limitation: "Niewielka podgrupa badań nad przeciążeniem."
+  - claim: "Na spoczynkowe HRV przeciążenie w dużej mierze nie wpływało, być może z powodu problemów metodologicznych."
+    limitation: "Autorzy wskazują problemy metodologiczne; mało badań nad przeciążeniem."
+  - claim: "Zmiany tętna i HRV przy treningu z przeciążeniem są małe lub umiarkowane i mogą mieścić się w zmienności z dnia na dzień."
+    limitation: "Sportowcy wyczynowi; głównie HRV w dziedzinie częstotliwości (LF/HF) w spoczynku na leżąco; starsza literatura (2008)."
+  - claim: "Zmiany HRV lub tętna w trakcie treningu trzeba porównywać z innymi oznakami i objawami przeciążenia, aby miały znaczenie."
+    limitation: "Wniosek autorów niewielkiej metaanalizy; nie jest to zweryfikowana reguła decyzyjna."
+  - claim: "U elitarnych sportowców wytrzymałościowych z negatywną adaptacją wiązano zarówno wzrosty, jak i spadki HRV."
+    limitation: "Przegląd narracyjny niewielkiej liczby badań u elitarnych sportowców; nie jest to synteza systematyczna."
+  - claim: "Praktyczne sposoby wykorzystania HRV do monitorowania stanu wytrenowania elitarnych sportowców nie zostały ustalone; uśrednianie z tygodnia to proponowana metoda."
+    limitation: "Proponowane metody (uśrednianie, specjalne wskaźniki dla „nasycenia” HRV) to zalecenia z przykładami przypadków, niesprawdzone w badaniach."
 ---
 
 ## Co wysiłek robi z HRV?
@@ -74,7 +88,15 @@ W badaniach nad treningiem HRV rejestruje się zwykle rano po przebudzeniu, czę
 - **Czas trwania.** Na podstawie ograniczonych danych długość sesji prawdopodobnie nie jest głównym czynnikiem [S1].
 - **Rodzaj wysiłku.** Większość danych dotyczy wysiłku aerobowego; trening siłowy i oporowy jest zbadany zbyt słabo, by mówić o takim samym przebiegu w czasie [S1].
 
-W skali tygodni regularny trening, który poprawia wydolność, przesuwa zwykle spoczynkowe HRV w przeciwną stronę; ten długofalowy obraz i oznaki przeciążenia treningowego (overreaching) opisują strony [dlaczego HRV zmienia się z dnia na dzień](/science/mechanisms/hrv-day-to-day) i [przetrenowanie, HRV i tętno spoczynkowe](/articles/overtraining-hrv-resting-heart-rate).
+Oznaki przeciążenia omówiono dokładniej w artykule [przetrenowanie, HRV i tętno spoczynkowe](/articles/overtraining-hrv-resting-heart-rate).
+
+## Co pokazuje HRV w ciągu tygodni treningu?
+
+Pojedynczy poranek odzwierciedla ostatnią sesję; trend z kilku tygodni odzwierciedla to, jak organizm się adaptuje. Przegląd systematyczny z metaanalizą u sportowców wytrzymałościowych objął {{fact:study.bellenger2016.studies}} [S6]. Gdy trening poprawiał wyniki, zależne od nerwu błędnego HRV w spoczynku i po wysiłku oraz powrót tętna po wysiłku zwykle rosły; w przypadku spoczynkowego RMSSD wzrost był {{fact:study.bellenger2016.restingRmssd}} [S6]. Haczyk polega na tym, że HRV po wysiłku i powrót tętna rosły także podczas przeciążenia treningowego (overreaching) – okresu ciężkiego treningu z pogorszeniem wyników – więc sam kierunek zmian nie pozwalał odróżnić dobrej adaptacji od złej [S6]. Na spoczynkowe HRV przeciążenie w dużej mierze nie wpływało, co według autorów może wynikać z problemów metodologicznych [S6].
+
+Wcześniejsza metaanaliza u sportowców wyczynowych doszła do podobnej granicy: zmiany tętna spoczynkowego i HRV przy treningu z przeciążeniem były małe lub umiarkowane i mogły mieścić się w zwykłej zmienności z dnia na dzień [S7]. Jej wniosek: zmiana tętna lub HRV ma znaczenie tylko razem z innymi oznakami i objawami przeciążenia [S7].
+
+U elitarnych sportowców wytrzymałościowych obraz jest jeszcze mniej jednoznaczny. Przegląd zauważa, że badania u elitarnych sportowców wiązały z negatywną adaptacją zarówno wzrosty, jak i spadki HRV oraz że praktyczne sposoby wykorzystania HRV do monitorowania ich stanu wytrenowania nie zostały jeszcze ustalone; autorzy proponują uśredniać odczyty z tygodnia zamiast odczytywać pojedyncze dni (to zalecenie, a nie sprawdzona interwencja) [S8]. Podsumowując, trendy HRV z kilku tygodni to jedna z kilku wskazówek, a nie samodzielna miara przeciążenia czy przetrenowania.
 
 ## Co pokazują dane dotyczące treningu sterowanego HRV?
 
@@ -86,9 +108,9 @@ W skali tygodni regularny trening, który poprawia wydolność, przesuwa zwykle 
 
 **Według klasy dowodów.**
 
-- **Zależy od kontekstu.** HRV spada po sesji i wraca do normy w czasie, który wydłuża się wraz z intensywnością, skraca wraz z wydolnością i różni się między osobami [S1].
+- **Zależy od kontekstu.** HRV spada po sesji i wraca do normy w czasie, który wydłuża się wraz z intensywnością, skraca wraz z wydolnością i różni się między osobami [S1]. W ciągu tygodni treningu wytrzymałościowego HRV zwykle rośnie przy pozytywnej adaptacji, ale niektóre miary HRV rosną też podczas przeciążenia, więc sam kierunek zmian ich nie rozróżnia [S6].
 - **Wytyczne / konsensus ekspertów.** Odczyty HRV porównuj tylko w porównywalnych warunkach zapisu [S4].
-- **Wstępne dane.** Trening wytrzymałościowy sterowany HRV umiarkowanie poprawia miary submaksymalne i wiąże się z mniejszą liczbą osób bez odpowiedzi niż z góry ustalony plan, bez wykazanej przewagi pod względem wyników czy szczytowego poboru tlenu [S2]. W jednym małym badaniu u pacjentów kardiologicznych trening sterowany i standardowy w takim samym stopniu poprawiły szczytowy pobór tlenu [S3]. Model powrotu do normy oparty na metaboreflexie i baroreflexie jest roboczym wyjaśnieniem [S1].
+- **Wstępne dane.** Trening wytrzymałościowy sterowany HRV umiarkowanie poprawia miary submaksymalne i wiąże się z mniejszą liczbą osób bez odpowiedzi niż z góry ustalony plan, bez wykazanej przewagi pod względem wyników czy szczytowego poboru tlenu [S2]. W jednym małym badaniu u pacjentów kardiologicznych trening sterowany i standardowy w takim samym stopniu poprawiły szczytowy pobór tlenu [S3]. Model powrotu do normy oparty na metaboreflexie i baroreflexie jest roboczym wyjaśnieniem [S1]. Uśrednianie odczytów HRV z tygodnia to metoda zaproponowana dla elitarnych sportowców, a nie sprawdzona [S8].
 - **Nieznane.** Nie wykazano, czy sterowanie HRV pomaga osobom trenującym rekreacyjnie w długim okresie ani która reguła decyzyjna działa najlepiej.
 
 ## Jak czytać HRV w kontekście treningu?
@@ -100,6 +122,7 @@ Ta strona nie zawiera porad dotyczących obciążenia treningowego. Planowanie s
 ## Czego to nie mówi
 
 - **Niskie poranne HRV po treningu nie jest werdyktem.** To oczekiwana reakcja na ciężką sesję i samo w sobie nie mówi nic o przetrenowaniu ani chorobie [S1].
+- **Rosnący lub malejący trend HRV nie jest werdyktem w sprawie przeciążenia.** Zmiany są małe w porównaniu ze zmiennością z dnia na dzień i do ich interpretacji potrzebne są inne oznaki i objawy [S6] [S7].
 - **Rytm serca, który wrócił do normy, to nie pełna regeneracja.** Mięśnie i zapasy energetyczne mogą mieć inny harmonogram [S1].
 - **Nie wykazano, że sterowanie HRV jest lepsze od dobrego stałego planu** pod względem wyników czy szczytowego poboru tlenu [S2], a w jednym małym badaniu u pacjentów kardiologicznych pierwszorzędowy punkt końcowy się nie różnił [S3].
 - **Najlepsza reguła decyzyjna jest nieznana.** Badania stosowały różne progi i protokoły [S2], a długofalowej korzyści dla osób trenujących rekreacyjnie nie wykazano.

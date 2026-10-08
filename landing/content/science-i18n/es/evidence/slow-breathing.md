@@ -1,5 +1,5 @@
 ---
-sourceHash: "2dc08d4f1532"
+sourceHash: "57d18386abf8"
 title: "Respiración lenta: qué muestra la evidencia"
 metaTitle: "Respiración lenta: qué muestra la evidencia"
 metaDescription: "Qué muestra la investigación sobre la respiración lenta sin retroalimentación —HRV, presión arterial, estrés, sueño, dolor— y qué se sabe de las técnicas populares."
@@ -105,7 +105,7 @@ Lo difícil es la comparación. Las personas siempre saben si están respirando 
 
 ## ¿Qué muestra la evidencia?
 
-**Variabilidad de la frecuencia cardíaca: establecido.** Un metaanálisis de {{fact:study.laborde2022.studies}} encontró que la HRV de mediación vagal aumenta durante la respiración lenta, inmediatamente después de una sola sesión y tras programas de varias sesiones [S2]. Una revisión sistemática en personas sanas llegó a un resultado en la misma dirección [S3]. Son cambios de una señal fisiológica; por sí solos no son resultados de salud.
+**Variabilidad de la frecuencia cardíaca: establecido.** Un metaanálisis de {{fact:study.laborde2022.studies}} encontró que la HRV de mediación vagal aumenta durante la respiración lenta, inmediatamente después de una sola sesión y tras programas de varias sesiones [S2]. Una revisión sistemática anterior en personas sanas, que abarca en parte los mismos estudios, apuntó en la misma dirección [S3]. Son cambios de una señal fisiológica; por sí solos no son resultados de salud.
 
 **Presión arterial: depende del contexto.** Un metaanálisis de {{fact:study.chaddha2019.studies}} en personas con hipertensión o prehipertensión encontró reducciones modestas de la presión arterial sistólica y diastólica, con heterogeneidad alta [S4]. Los autores sugieren que podría ser una primera opción razonable para personas de bajo riesgo reacias a empezar a tomar medicación [S4]: una sugerencia, no una guía. La respiración guiada por dispositivo requiere más cautela: un metaanálisis que incluyó {{fact:study.mahtani2012.trials}} encontró que el efecto desaparecía al excluir los ensayos vinculados al fabricante, y pidió ensayos más largos e independientes [S5]. El enfoque práctico está en [respiración lenta y presión arterial alta](/articles/high-blood-pressure-slow-breathing).
 

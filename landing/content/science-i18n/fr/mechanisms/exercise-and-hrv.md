@@ -1,5 +1,5 @@
 ---
-sourceHash: "cdf43fb44f40"
+sourceHash: "79992de6d516"
 title: "Exercice et HRV : ce que fait l’entraînement et ce que montre le guidage par la HRV"
 metaTitle: "Exercice et HRV : données sur l’entraînement guidé par la HRV"
 metaDescription: "Pourquoi la HRV baisse après un entraînement intense puis récupère, combien de temps cela prend et ce que montrent les essais d’entraînement guidé par la HRV face à un plan fixe."
@@ -50,6 +50,20 @@ evidenceMap:
     limitation: "Recommandation sur la rigueur de la recherche ; consensus d’experts, pas une preuve directe sur les décisions d’entraînement."
   - claim: "ONDA construit sa référence personnelle à partir des valeurs nocturnes d’Apple Health et compare chaque nuit au couloir propre de l’utilisateur."
     limitation: "Décrit uniquement le fonctionnement de l’application ; ne constitue une preuve d’aucune affirmation de santé ou d’entraînement."
+  - claim: "Dans une méta-analyse chez des sportifs d’endurance, l’entraînement qui améliorait la performance s’accompagnait d’une hausse de la HRV d’origine vagale au repos et après l’effort et de la récupération de la fréquence cardiaque."
+    limitation: "Sportifs d’endurance uniquement ; petites études regroupées ; indices fréquentiels limités à la puissance HF ; moyennes de groupe, pas un test individuel."
+  - claim: "La HRV après l’effort et la récupération de la fréquence cardiaque augmentent aussi pendant le surmenage, si bien que leur sens seul ne distingue pas une adaptation positive d’une adaptation négative."
+    limitation: "Petit sous-ensemble d’études sur le surmenage."
+  - claim: "La HRV au repos était peu affectée par le surmenage, peut-être en raison de problèmes méthodologiques."
+    limitation: "Les auteurs signalent des problèmes méthodologiques ; peu d’études sur le surmenage."
+  - claim: "Les variations de la fréquence cardiaque et de la HRV lors d’un entraînement en surcharge sont faibles à modérées et peuvent rester dans la variabilité d’un jour à l’autre."
+    limitation: "Sportifs de compétition ; HRV surtout dans le domaine fréquentiel (LF/HF) au repos en décubitus ; littérature ancienne (2008)."
+  - claim: "Les variations de la HRV ou de la fréquence cardiaque pendant l’entraînement doivent être comparées à d’autres signes et symptômes de surmenage pour avoir un sens."
+    limitation: "Conclusion des auteurs d’une petite méta-analyse ; pas une règle de décision validée."
+  - claim: "Chez les sportifs d’endurance d’élite, des hausses comme des baisses de la HRV ont été associées à une adaptation négative."
+    limitation: "Revue narrative d’un petit nombre d’études chez des sportifs d’élite ; pas une synthèse systématique."
+  - claim: "Des façons pratiques d’utiliser la HRV pour suivre l’état d’entraînement des sportifs d’élite n’étaient pas établies ; la moyenne hebdomadaire est une méthode proposée."
+    limitation: "Les méthodes proposées (moyenne, indices spécifiques pour la saturation de la HRV) sont des recommandations illustrées par des cas, non testées dans des essais."
 ---
 
 ## Que fait l’exercice à la HRV ?
@@ -75,7 +89,15 @@ Dans les études sur l’entraînement, la HRV est généralement enregistrée l
 - **La durée.** D’après des données limitées, la durée d’une séance n’est probablement pas le facteur principal [S1].
 - **Le type d’exercice.** La plupart des données concernent l’effort aérobie ; l’entraînement en force et contre résistance est trop peu étudié pour lui attribuer la même évolution dans le temps [S1].
 
-Sur plusieurs semaines, un entraînement régulier qui améliore la condition physique tend à faire évoluer la HRV au repos dans l’autre sens ; cette vision à plus long terme et les signes de surmenage relèvent de [pourquoi la HRV change d’un jour à l’autre](/science/mechanisms/hrv-day-to-day) et de [surentraînement, HRV et fréquence cardiaque au repos](/articles/overtraining-hrv-resting-heart-rate).
+Les signes de surmenage sont traités plus en détail dans [surentraînement, HRV et fréquence cardiaque au repos](/articles/overtraining-hrv-resting-heart-rate).
+
+## Que montre la HRV au fil des semaines d’entraînement ?
+
+Un seul matin reflète la dernière séance ; une tendance sur plusieurs semaines reflète la façon dont le corps s’adapte. Une revue systématique avec méta-analyse chez des sportifs d’endurance a inclus {{fact:study.bellenger2016.studies}} [S6]. Lorsque l’entraînement améliorait la performance, la HRV d’origine vagale au repos et après l’effort, ainsi que la récupération de la fréquence cardiaque après l’effort, avaient tendance à augmenter ; pour le RMSSD au repos, la hausse était {{fact:study.bellenger2016.restingRmssd}} [S6]. Le hic, c’est que la HRV après l’effort et la récupération de la fréquence cardiaque augmentaient aussi pendant le surmenage (overreaching) — une période d’entraînement intense avec une performance diminuée —, si bien que le sens du changement ne permettait pas, à lui seul, de distinguer une bonne adaptation d’une mauvaise [S6]. La HRV au repos était peu affectée par le surmenage, ce qui, selon les auteurs, pourrait tenir à des problèmes méthodologiques [S6].
+
+Une méta-analyse plus ancienne chez des sportifs de compétition est arrivée à une limite semblable : les variations de la fréquence cardiaque au repos et de la HRV lors d’un entraînement en surcharge étaient faibles à modérées et pouvaient rester dans la variabilité ordinaire d’un jour à l’autre [S7]. Sa conclusion : une variation de la fréquence cardiaque ou de la HRV n’a de sens qu’accompagnée d’autres signes et symptômes de surmenage [S7].
+
+Chez les sportifs d’endurance d’élite, le tableau est encore moins net. Une revue note que des études chez des sportifs d’élite ont associé aussi bien des hausses que des baisses de la HRV à une adaptation négative, et que des façons pratiques d’utiliser la HRV pour suivre leur état d’entraînement n’étaient pas encore établies ; les auteurs proposent de faire la moyenne des mesures sur une semaine plutôt que de lire des jours isolés (une recommandation, pas une intervention testée) [S8]. Au total, les tendances de la HRV sur plusieurs semaines sont un repère parmi d’autres, pas un indicateur autonome de surmenage ou de surentraînement.
 
 ## Que montrent les données sur l’entraînement guidé par la HRV ?
 
@@ -87,9 +109,9 @@ Sur plusieurs semaines, un entraînement régulier qui améliore la condition ph
 
 **Par niveau de preuve.**
 
-- **Dépend du contexte.** La HRV baisse après une séance et récupère selon une évolution qui s’allonge avec l’intensité, se raccourcit avec la condition physique et varie d’une personne à l’autre [S1].
+- **Dépend du contexte.** La HRV baisse après une séance et récupère selon une évolution qui s’allonge avec l’intensité, se raccourcit avec la condition physique et varie d’une personne à l’autre [S1]. Au fil des semaines d’entraînement d’endurance, la HRV tend à augmenter avec une adaptation positive, mais certaines mesures de HRV augmentent aussi pendant le surmenage, si bien que le sens du changement ne suffit pas à distinguer les deux [S6].
 - **Recommandations.** Ne comparer des mesures de HRV que dans des conditions d’enregistrement comparables (consensus d’experts) [S4].
-- **Émergent.** L’entraînement d’endurance guidé par la HRV améliore modestement les mesures sous-maximales et laisse moins de non-répondeurs qu’un plan prédéfini, sans avantage démontré pour la performance ni pour la consommation maximale d’oxygène [S2]. Dans un petit essai chez des patients cardiaques, l’entraînement guidé et l’entraînement standard ont amélioré la consommation maximale d’oxygène de façon équivalente [S3]. Le modèle de récupération fondé sur le métaboréflexe et le baroréflexe est une explication de travail [S1].
+- **Émergent.** L’entraînement d’endurance guidé par la HRV améliore modestement les mesures sous-maximales et laisse moins de non-répondeurs qu’un plan prédéfini, sans avantage démontré pour la performance ni pour la consommation maximale d’oxygène [S2]. Dans un petit essai chez des patients cardiaques, l’entraînement guidé et l’entraînement standard ont amélioré la consommation maximale d’oxygène de façon équivalente [S3]. Le modèle de récupération fondé sur le métaboréflexe et le baroréflexe est une explication de travail [S1]. La moyenne hebdomadaire des mesures de HRV est une méthode proposée pour les sportifs d’élite, non une méthode testée [S8].
 - **Inconnu.** Il n’a pas été démontré que le guidage par la HRV aide les sportifs amateurs à long terme, ni quelle règle de décision fonctionne le mieux.
 
 ## Comment lire la HRV autour de l’entraînement ?
@@ -101,6 +123,7 @@ Cette page ne donne aucun conseil sur la charge d’entraînement. La planificat
 ## Ce qu’elle ne vous dit pas
 
 - **Une HRV basse le matin après l’entraînement n’est pas un verdict.** C’est la réponse attendue à une séance difficile, et elle ne dit rien à elle seule d’un surentraînement ou d’une maladie [S1].
+- **Une tendance de la HRV à la hausse ou à la baisse n’est pas un verdict sur le surmenage.** Les variations sont faibles par rapport à la variabilité d’un jour à l’autre et doivent être interprétées avec d’autres signes et symptômes [S6] [S7].
 - **Un rythme cardiaque récupéré n’est pas une récupération complète.** Les muscles et les réserves d’énergie peuvent suivre d’autres calendriers [S1].
 - **Il n’est pas démontré que le guidage par la HRV fasse mieux qu’un bon plan fixe** pour la performance ou la consommation maximale d’oxygène [S2], et dans un petit essai chez des patients cardiaques, le critère principal n’a pas différé [S3].
 - **La meilleure règle de décision est inconnue.** Les essais ont utilisé des seuils et des protocoles différents [S2], et le bénéfice à long terme pour les sportifs amateurs n’a pas été démontré.

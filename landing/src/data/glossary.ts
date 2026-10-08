@@ -2318,7 +2318,7 @@ Part 6 of the ONDA practice path, “I’m Part of the Pack”, uses the idea of
 
 - Hatfield E, Cacioppo JT, Rapson RL (1993). [Emotional contagion](https://doi.org/10.1111/1467-8721.ep10770953). Current Directions in Psychological Science.
 - Palumbo RV et al. (2016). [Interpersonal autonomic physiology: a systematic review](https://doi.org/10.1177/1088868316628405). Personality and Social Psychology Review.
-- Kramer ADI et al. (2014). [Experimental evidence of massive-scale emotional contagion through social networks](https://doi.org/10.1073/pnas.1320040111). PNAS.
+- Kramer ADI et al. (2014). [Experimental evidence of massive-scale emotional contagion through social networks](https://doi.org/10.1073/pnas.1320040111). PNAS. Status: Editorial Expression of Concern (PNAS, 2014) — concerns participant-consent ethics, not the data.
 `,
   },
   {

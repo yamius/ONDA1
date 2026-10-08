@@ -1,5 +1,5 @@
 ---
-sourceHash: "2dc08d4f1532"
+sourceHash: "57d18386abf8"
 title: "Wolne oddychanie: co pokazują badania"
 metaTitle: "Wolne oddychanie: co pokazują badania"
 metaDescription: "Co badania mówią o wolnym oddychaniu bez informacji zwrotnej — HRV, ciśnienie krwi, stres, sen, ból — i co wiadomo o popularnych technikach oddechowych."
@@ -104,7 +104,7 @@ Najtrudniejsze jest porównanie. Ludzie zawsze wiedzą, czy oddychają wolno, wi
 
 ## Co pokazują badania?
 
-**HRV: ustalone.** Metaanaliza, która objęła {{fact:study.laborde2022.studies}}, wykazała, że HRV zależne od nerwu błędnego rośnie w czasie wolnego oddychania, bezpośrednio po pojedynczej sesji i po programach złożonych z wielu sesji [S2]. Przegląd systematyczny u zdrowych osób dał wynik w tym samym kierunku [S3]. To zmiany sygnału fizjologicznego; same w sobie nie są efektami zdrowotnymi.
+**HRV: ustalone.** Metaanaliza, która objęła {{fact:study.laborde2022.studies}}, wykazała, że HRV zależne od nerwu błędnego rośnie w czasie wolnego oddychania, bezpośrednio po pojedynczej sesji i po programach złożonych z wielu sesji [S2]. Wcześniejszy przegląd systematyczny u zdrowych osób, obejmujący częściowo te same badania, wskazywał w tym samym kierunku [S3]. To zmiany sygnału fizjologicznego; same w sobie nie są efektami zdrowotnymi.
 
 **Ciśnienie krwi: zależy od kontekstu.** Metaanaliza, która objęła {{fact:study.chaddha2019.studies}} u osób z nadciśnieniem lub stanem przednadciśnieniowym, wykazała umiarkowane obniżenie ciśnienia skurczowego i rozkurczowego przy wysokiej heterogeniczności [S4]. Autorzy sugerują, że może to być rozsądna pierwsza opcja dla osób z niskim ryzykiem, które nie chcą zaczynać leczenia farmakologicznego [S4] — to sugestia, a nie wytyczne. Oddychanie z urządzeniem nadającym rytm wymaga większej ostrożności: metaanaliza, która objęła {{fact:study.mahtani2012.trials}}, wykazała, że efekt znikał po wyłączeniu badań powiązanych z producentem, i wezwała do dłuższych, niezależnych badań [S5]. Praktyczne ujęcie znajdziesz w artykule [wolny oddech a wysokie ciśnienie](/articles/high-blood-pressure-slow-breathing).
 

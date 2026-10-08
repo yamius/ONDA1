@@ -1,5 +1,5 @@
 ---
-sourceHash: "cdf43fb44f40"
+sourceHash: "79992de6d516"
 title: "Training en HRV: wat inspanning doet en wat HRV-gestuurd trainen laat zien"
 metaTitle: "Training en HRV: bewijs voor HRV-gestuurd trainen"
 metaDescription: "Waarom HRV na een zware training daalt en weer herstelt, hoe lang dat duurt en wat studies naar HRV-gestuurd trainen laten zien vergeleken met een vast trainingsschema."
@@ -49,6 +49,20 @@ evidenceMap:
     limitation: "Richtlijn voor zorgvuldig onderzoek; consensus van experts, geen direct bewijs over trainingsbeslissingen."
   - claim: "ONDA bouwt zijn baseline op uit nachtelijke waarden in Apple Health en vergelijkt elke nacht met de eigen bandbreedte van de gebruiker (facts baseline.window, baseline.compare)."
     limitation: "Beschrijft alleen het gedrag van de app; geen bewijs voor enige gezondheids- of trainingsclaim."
+  - claim: "In een meta-analyse bij duursporters ging training die de prestaties verbeterde samen met stijgingen van vagaal gemedieerde HRV in rust en na inspanning en van het hartslagherstel (facts study.bellenger2016.studies, study.bellenger2016.restingRmssd)."
+    limitation: "Alleen duursporters; gepoolde kleine studies; frequentiedomeinindices beperkt tot HF-vermogen; groepsgemiddelden, geen individuele test."
+  - claim: "HRV na inspanning en hartslagherstel stijgen ook tijdens overreaching, dus hun richting alleen onderscheidt positieve niet van negatieve aanpassing."
+    limitation: "Kleine subset van studies naar overreaching."
+  - claim: "HRV in rust werd door overreaching grotendeels niet beïnvloed, mogelijk door methodologische problemen."
+    limitation: "De auteurs wijzen op methodologische problemen; weinig studies naar overreaching."
+  - claim: "Veranderingen in hartslag en HRV bij overbelastingstraining zijn klein tot matig en kunnen binnen de schommeling van dag tot dag vallen."
+    limitation: "Wedstrijdsporters; vooral HRV in het frequentiedomein (LF/HF) in liggende rust; oudere literatuur (2008)."
+  - claim: "Veranderingen in HRV of hartslag tijdens training moeten worden vergeleken met andere tekenen en symptomen van overreaching om betekenis te hebben."
+    limitation: "Conclusie van de auteurs van een kleine meta-analyse; geen gevalideerde beslisregel."
+  - claim: "Bij topduursporters zijn zowel stijgingen als dalingen van HRV in verband gebracht met negatieve aanpassing."
+    limitation: "Narratieve review van een klein aantal studies bij topsporters; geen systematische synthese."
+  - claim: "Praktische manieren om met HRV de trainingstoestand van topsporters te volgen waren niet vastgesteld; weekgemiddelden zijn een voorgestelde methode."
+    limitation: "Voorgestelde methoden (middelen, specifieke indices voor HRV-verzadiging) zijn aanbevelingen met casusvoorbeelden, niet getest in trials."
 ---
 
 ## Wat doet inspanning met HRV?
@@ -74,7 +88,15 @@ In trainingsstudies wordt HRV meestal 's ochtends bij het wakker worden vastgele
 - **Duur.** Op basis van beperkte gegevens is de duur van een training waarschijnlijk niet de belangrijkste factor [S1].
 - **Soort inspanning.** De meeste gegevens komen uit aerobe inspanning; kracht- en weerstandstraining zijn te weinig onderzocht om hetzelfde tijdsverloop te noemen [S1].
 
-Over weken heen verschuift regelmatige training die de fitheid verbetert de HRV in rust meestal de andere kant op; dat beeld op langere termijn en de signalen van overreaching horen bij [waarom HRV van dag tot dag verandert](/science/mechanisms/hrv-day-to-day) en [overtraining, HRV en rusthartslag](/articles/overtraining-hrv-resting-heart-rate).
+De signalen van overreaching komen uitgebreider aan bod in [overtraining, HRV en rusthartslag](/articles/overtraining-hrv-resting-heart-rate).
+
+## Wat laat HRV zien over weken van training?
+
+Eén ochtend weerspiegelt de laatste training; een trend over weken weerspiegelt hoe het lichaam zich aanpast. Een systematische review met meta-analyse bij duursporters omvatte {{fact:study.bellenger2016.studies}} [S6]. Als training de prestaties verbeterde, stegen de vagaal gemedieerde HRV in rust en na inspanning en het hartslagherstel na inspanning doorgaans; voor RMSSD in rust was de stijging {{fact:study.bellenger2016.restingRmssd}} [S6]. Het addertje: HRV na inspanning en hartslagherstel stegen ook tijdens overreaching – een periode van zware training met verminderde prestaties –, zodat de richting van de verandering alleen goede niet van slechte aanpassing kon onderscheiden [S6]. HRV in rust werd door overreaching grotendeels niet beïnvloed, wat volgens de auteurs aan methodologische problemen kan liggen [S6].
+
+Een eerdere meta-analyse bij wedstrijdsporters kwam bij een vergelijkbare grens uit: de veranderingen in rusthartslag en HRV bij overbelastingstraining waren klein tot matig en konden binnen de gewone schommeling van dag tot dag vallen [S7]. De conclusie: een verandering in hartslag of HRV betekent alleen iets samen met andere tekenen en symptomen van overreaching [S7].
+
+Bij topduursporters is het beeld nog minder overzichtelijk. Een review merkt op dat studies bij topsporters zowel stijgingen als dalingen van HRV in verband hebben gebracht met negatieve aanpassing, en dat praktische manieren om met HRV hun trainingstoestand te volgen nog niet vastgesteld waren; de auteurs stellen voor metingen over een week te middelen in plaats van losse dagen te lezen (een aanbeveling, geen geteste interventie) [S8]. Alles bij elkaar zijn HRV-trends over weken één aanwijzing naast andere, geen zelfstandige maat voor overreaching of overtraining.
 
 ## Wat laat het bewijs zien voor HRV-gestuurd trainen?
 
@@ -86,9 +108,9 @@ Over weken heen verschuift regelmatige training die de fitheid verbetert de HRV 
 
 **Per bewijsklasse.**
 
-- **Afhankelijk van de context.** HRV daalt na een training en herstelt volgens een tijdsverloop dat langer wordt met de intensiteit, korter met de fitheid en per persoon verschilt [S1].
+- **Afhankelijk van de context.** HRV daalt na een training en herstelt volgens een tijdsverloop dat langer wordt met de intensiteit, korter met de fitheid en per persoon verschilt [S1]. Over weken van duurtraining stijgt HRV doorgaans bij positieve aanpassing, maar sommige HRV-maten stijgen ook tijdens overreaching, zodat de richting alleen de twee niet scheidt [S6].
 - **Richtlijn / consensus van experts.** Vergelijk HRV-metingen alleen onder vergelijkbare meetomstandigheden [S4].
-- **Opkomend.** HRV-gestuurde duurtraining verbetert submaximale maten in bescheiden mate en laat minder non-responders over dan een vooraf vastgelegd schema, zonder aangetoond voordeel voor prestaties of maximale zuurstofopname [S2]. In één kleine studie bij hartpatiënten verbeterde de maximale zuurstofopname even sterk met gestuurde als met standaardtraining [S3]. Het model van herstel via metaboreflex en baroreflex is een werkverklaring [S1].
+- **Opkomend.** HRV-gestuurde duurtraining verbetert submaximale maten in bescheiden mate en laat minder non-responders over dan een vooraf vastgelegd schema, zonder aangetoond voordeel voor prestaties of maximale zuurstofopname [S2]. In één kleine studie bij hartpatiënten verbeterde de maximale zuurstofopname even sterk met gestuurde als met standaardtraining [S3]. Het model van herstel via metaboreflex en baroreflex is een werkverklaring [S1]. Weekgemiddelden van HRV-metingen zijn een voorgestelde methode voor topsporters, geen geteste [S8].
 - **Onbekend.** Of HRV-sturing recreatieve sporters op de lange termijn helpt, en welke beslisregel het beste werkt, is niet aangetoond.
 
 ## Hoe lees je HRV rond training?
@@ -100,6 +122,7 @@ Deze pagina geeft geen advies over trainingsbelasting. Het plannen van traininge
 ## Wat het je niet vertelt
 
 - **Een lage ochtend-HRV na training is geen eindoordeel.** Het is de verwachte reactie op een zware training en zegt op zichzelf niets over overtraining of ziekte [S1].
+- **Een stijgende of dalende HRV-trend is geen oordeel over overreaching.** De veranderingen zijn klein ten opzichte van de schommeling van dag tot dag en hebben andere tekenen en symptomen nodig om te worden geïnterpreteerd [S6] [S7].
 - **Een hersteld hartritme is geen volledig herstel.** Spieren en energievoorraden kunnen een ander tijdpad volgen [S1].
 - **Het is niet aangetoond dat HRV-sturing beter werkt dan een goed vast schema** voor prestaties of maximale zuurstofopname [S2], en in één kleine studie bij hartpatiënten verschilde de primaire uitkomst niet [S3].
 - **De beste beslisregel is onbekend.** De studies gebruikten verschillende drempels en protocollen [S2], en het voordeel op lange termijn voor recreatieve sporters is niet aangetoond.

@@ -71,6 +71,33 @@ sources:
     title: "How ONDA works"
     url: "https://onda-life.com/how-it-works"
     type: product-documentation
+  - id: S6
+    cite: "Bellenger et al. (2016)"
+    title: "Monitoring Athletic Training Status Through Autonomic Heart Rate Regulation: A Systematic Review and Meta-Analysis"
+    journal: "Sports Medicine"
+    year: 2016
+    doi: "10.1007/s40279-016-0484-2"
+    pmid: 26888648
+    type: meta-analysis
+    note: "Endurance-trained athletes; literature to April 2015; small overreaching subset; no conflict-of-interest statement in the PubMed/Europe PMC record"
+  - id: S7
+    cite: "Bosquet et al. (2008)"
+    title: "Is heart rate a convenient tool to monitor over-reaching? A systematic review of the literature"
+    journal: "British Journal of Sports Medicine"
+    year: 2008
+    doi: "10.1136/bjsm.2007.042200"
+    pmid: 18308872
+    type: meta-analysis
+    note: "Competitive athletes, supine resting HRV mostly frequency-domain (LF/HF); small to moderate effects; no conflict-of-interest statement in the PubMed/Europe PMC record"
+  - id: S8
+    cite: "Plews et al. (2013)"
+    title: "Training adaptation and heart rate variability in elite endurance athletes: opening the door to effective monitoring"
+    journal: "Sports Medicine"
+    year: 2013
+    doi: "10.1007/s40279-013-0071-8"
+    pmid: 23852425
+    type: review
+    note: "Narrative review with case data from elite athletes; proposed methods (weekly averaging) are recommendations, not trial-tested; no conflict-of-interest statement in the PubMed/Europe PMC record"
 evidenceMap:
   - claim: "Full cardiac autonomic recovery after one aerobic session takes longer as intensity rises (fact training.recovery.time)."
     sources: [S1]
@@ -156,6 +183,48 @@ evidenceMap:
     claimType: device
     quote: "From nightly Apple Health values — HRV, resting heart rate and breathing rate — ONDA builds your personal baseline"
     limitation: "Describes app behaviour only; not evidence for any health or training claim."
+  - claim: "In a meta-analysis of endurance-trained athletes, training that improved performance came with increases in vagal-related resting and post-exercise HRV and heart rate recovery (facts study.bellenger2016.studies, study.bellenger2016.restingRmssd)."
+    sources: [S6]
+    class: context-dependent
+    claimType: physiology
+    quote: "Increases in vagal-related indices of resting and post-exercise HRV, post-exercise HRR, and HR acceleration are evident when positive adaptation to training has occurred, allowing for increases in performance."
+    limitation: "Endurance-trained athletes only; pooled small studies; frequency-domain indices limited to HF power; group averages, not an individual test."
+  - claim: "Post-exercise HRV and heart rate recovery also increase during overreaching, so their direction alone does not separate positive from negative adaptation."
+    sources: [S6]
+    class: context-dependent
+    claimType: physiology
+    quote: "However, increases in post-exercise HRV and HRR also occur in response to overreaching, demonstrating that additional measures of training tolerance may be required"
+    limitation: "Small overreaching subset of studies."
+  - claim: "Resting HRV was largely unaffected by overreaching, possibly because of methodological issues."
+    sources: [S6]
+    class: emerging
+    claimType: physiology
+    quote: "Resting HRV is largely unaffected by overreaching, although this may be the result of methodological issues that warrant further investigation."
+    limitation: "The authors flag methodological issues; few overreaching studies."
+  - claim: "Changes in heart rate and HRV with overload training are small to moderate and may fall within day-to-day variability."
+    sources: [S7]
+    class: context-dependent
+    claimType: measurement
+    quote: "The small to moderate amplitude of these alterations limits their clinical usefulness, as expected differences may fall within the day-to-day variability of these markers."
+    limitation: "Competitive athletes; mostly frequency-domain HRV (LF/HF) in supine rest; older literature (2008)."
+  - claim: "HRV or heart rate changes during training need to be compared with other signs and symptoms of overreaching to be meaningful."
+    sources: [S7]
+    class: context-dependent
+    claimType: measurement
+    quote: "Consequently, correct interpretation of HR or HRV fluctuations during the training process requires the comparison with other signs and symptoms of over-reaching to be meaningful."
+    limitation: "Author conclusion from a small meta-analysis; not a validated decision rule."
+  - claim: "In elite endurance athletes, both increases and decreases in HRV have been associated with negative adaptation."
+    sources: [S8]
+    class: emerging
+    claimType: physiology
+    quote: "For example, in elite athletes, studies have revealed both increases and decreases in HRV to be associated with negative adaptation."
+    limitation: "Narrative review of a small number of studies in elite athletes; not a systematic synthesis."
+  - claim: "Practical ways to use HRV to monitor training status in elite athletes had not been established; weekly averaging is a proposed method."
+    sources: [S8]
+    class: emerging
+    claimType: measurement
+    quote: "As such, practical ways by which HRV can be used to monitor training status in elites are yet to be established."
+    limitation: "Proposed methods (averaging, specific indices for HRV saturation) are recommendations with case examples, not tested in trials."
 ---
 
 ## What does exercise do to HRV?
@@ -181,7 +250,15 @@ In training studies, HRV is usually recorded in the morning on waking, often for
 - **Duration.** Based on limited data, how long a session lasts is unlikely to be the main factor [S1].
 - **Type of exercise.** Most of the data come from aerobic exercise; strength and resistance training are covered too thinly to state the same time course [S1].
 
-Over weeks, regular training that improves fitness tends to move resting HRV the other way; that longer-term picture and the signs of overreaching belong to [why HRV changes from day to day](/science/mechanisms/hrv-day-to-day) and [overtraining, HRV and resting heart rate](/articles/overtraining-hrv-resting-heart-rate).
+The signs of overreaching are covered in more depth in [overtraining, HRV and resting heart rate](/articles/overtraining-hrv-resting-heart-rate).
+
+## What does HRV show over weeks of training?
+
+A single morning reflects the last session; a trend over weeks reflects how the body is adapting. A systematic review with meta-analysis of endurance-trained athletes included {{fact:study.bellenger2016.studies}} [S6]. When training led to better performance, vagal-related HRV at rest and after exercise, and heart rate recovery after exercise, tended to rise; for resting RMSSD the increase was {{fact:study.bellenger2016.restingRmssd}} [S6]. The catch is that HRV after exercise and heart rate recovery also rose during overreaching — a period of hard training with reduced performance — so the direction of change alone could not tell good adaptation from bad [S6]. Resting HRV was largely unaffected by overreaching, which the authors say may reflect methodological issues [S6].
+
+An earlier meta-analysis in competitive athletes reached a similar boundary: the changes in resting heart rate and HRV with overload training were small to moderate, and could fall within ordinary day-to-day variability [S7]. Its conclusion is that a change in heart rate or HRV means something only alongside other signs and symptoms of overreaching [S7].
+
+In elite endurance athletes the picture is less tidy still. A review notes that studies in elite athletes have linked both rises and falls in HRV with negative adaptation, and that practical ways to use HRV to monitor their training status had not been established; the authors propose averaging readings over a week rather than reading single days (a recommendation, not a tested intervention) [S8]. Taken together, HRV trends over weeks are one input among several, not a stand-alone gauge of overreaching or overtraining.
 
 ## What does the evidence show for HRV-guided training?
 
@@ -193,9 +270,9 @@ Over weeks, regular training that improves fitness tends to move resting HRV the
 
 **By evidence class.**
 
-- **Context-dependent.** HRV falls after a session and recovers over a time course that lengthens with intensity, shortens with fitness and varies between people [S1].
+- **Context-dependent.** HRV falls after a session and recovers over a time course that lengthens with intensity, shortens with fitness and varies between people [S1]. Over weeks of endurance training, HRV tends to rise with positive adaptation, but some HRV measures rise during overreaching too, so direction alone does not separate the two [S6].
 - **Guideline.** Compare HRV readings only under comparable recording conditions (expert consensus) [S4].
-- **Emerging.** HRV-guided endurance training modestly improves submaximal measures and leaves fewer non-responders than a predefined plan, without a shown advantage for performance or peak oxygen uptake [S2]. In one small trial in heart patients, guided and standard training improved peak oxygen uptake equally [S3]. The metaboreflex and baroreflex model of recovery is a working explanation [S1].
+- **Emerging.** HRV-guided endurance training modestly improves submaximal measures and leaves fewer non-responders than a predefined plan, without a shown advantage for performance or peak oxygen uptake [S2]. In one small trial in heart patients, guided and standard training improved peak oxygen uptake equally [S3]. The metaboreflex and baroreflex model of recovery is a working explanation [S1]. Weekly averaging of HRV readings is a proposed method for elite athletes, not a tested one [S8].
 - **Unknown.** Whether HRV guidance helps recreational exercisers over the long term, and which decision rule works best, have not been shown.
 
 ## How should HRV around training be read?
@@ -207,6 +284,7 @@ This page gives no training-load advice. Planning sessions is a matter for you a
 ## What it does not tell you
 
 - **A low morning HRV after training is not a verdict.** It is the expected response to a hard session and says nothing on its own about overtraining or illness [S1].
+- **A rising or falling HRV trend is not a verdict on overreaching.** Changes are small relative to day-to-day variability and need other signs and symptoms to interpret [S6] [S7].
 - **A recovered heart rhythm is not full recovery.** Muscles and energy stores can follow other timelines [S1].
 - **HRV guidance has not been shown to beat a good fixed plan** on performance or peak oxygen uptake [S2], and in one small trial in heart patients the primary outcome did not differ [S3].
 - **The best decision rule is unknown.** The trials used different thresholds and protocols [S2], and the long-term benefit for recreational exercisers has not been shown.

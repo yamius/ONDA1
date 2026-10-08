@@ -1,5 +1,5 @@
 ---
-sourceHash: "cdf43fb44f40"
+sourceHash: "79992de6d516"
 title: "Esercizio e HRV: cosa fa l'allenamento e cosa mostra la guida tramite HRV"
 metaTitle: "Esercizio e HRV: prove sull'allenamento guidato dall'HRV"
 metaDescription: "Perché l'HRV cala dopo un allenamento intenso e poi recupera, quanto tempo serve e cosa mostrano gli studi sull'allenamento guidato dall'HRV rispetto a un piano fisso."
@@ -50,6 +50,20 @@ evidenceMap:
     limitation: "Linea guida sul rigore della ricerca; consenso di esperti, non una prova diretta sulle decisioni di allenamento."
   - claim: "ONDA costruisce la sua baseline dai valori notturni di Apple Health e confronta ogni notte con il corridoio personale dell'utente."
     limitation: "Descrive solo il funzionamento dell'app; non è una prova per alcuna affermazione sulla salute o sull'allenamento."
+  - claim: "In una meta-analisi su atleti di resistenza, l'allenamento che migliorava la prestazione si accompagnava ad aumenti dell'HRV di origine vagale a riposo e dopo l'esercizio e del recupero della frequenza cardiaca."
+    limitation: "Solo atleti di resistenza; piccoli studi aggregati; indici in frequenza limitati alla potenza HF; medie di gruppo, non un test individuale."
+  - claim: "L'HRV dopo l'esercizio e il recupero della frequenza cardiaca aumentano anche durante il sovraccarico, quindi la loro sola direzione non distingue un adattamento positivo da uno negativo."
+    limitation: "Piccolo sottogruppo di studi sul sovraccarico."
+  - claim: "L'HRV a riposo è risultata in gran parte non influenzata dal sovraccarico, forse per problemi metodologici."
+    limitation: "Gli autori segnalano problemi metodologici; pochi studi sul sovraccarico."
+  - claim: "Le variazioni della frequenza cardiaca e dell'HRV con l'allenamento in sovraccarico sono da piccole a moderate e possono rientrare nella variabilità da un giorno all'altro."
+    limitation: "Atleti agonisti; HRV per lo più nel dominio della frequenza (LF/HF) a riposo in posizione supina; letteratura datata (2008)."
+  - claim: "Le variazioni dell'HRV o della frequenza cardiaca durante l'allenamento vanno confrontate con altri segni e sintomi di sovraccarico per avere senso."
+    limitation: "Conclusione degli autori di una piccola meta-analisi; non una regola decisionale validata."
+  - claim: "Negli atleti di resistenza d'élite sia aumenti sia cali dell'HRV sono stati associati a un adattamento negativo."
+    limitation: "Revisione narrativa di pochi studi su atleti d'élite; non una sintesi sistematica."
+  - claim: "Non erano stati definiti modi pratici per usare l'HRV nel monitorare lo stato di allenamento degli atleti d'élite; la media settimanale è un metodo proposto."
+    limitation: "I metodi proposti (media, indici specifici per la saturazione dell'HRV) sono raccomandazioni con esempi di casi, non sperimentate in studi."
 ---
 
 ## Che cosa fa l'esercizio all'HRV?
@@ -75,7 +89,15 @@ Negli studi sull'allenamento l'HRV viene di solito registrata al mattino al risv
 - **Durata.** Sulla base di dati limitati, quanto dura una seduta probabilmente non è il fattore principale [S1].
 - **Tipo di esercizio.** La maggior parte dei dati riguarda l'esercizio aerobico; l'allenamento di forza e contro resistenza è studiato troppo poco per attribuirgli lo stesso andamento nel tempo [S1].
 
-Nell'arco di settimane, un allenamento regolare che migliora la forma fisica tende a spostare l'HRV a riposo nella direzione opposta; questo quadro di più lungo periodo e i segni di sovraccarico appartengono a [perché l'HRV cambia da un giorno all'altro](/science/mechanisms/hrv-day-to-day) e a [sovrallenamento, HRV e frequenza cardiaca a riposo](/articles/overtraining-hrv-resting-heart-rate).
+I segni di sovraccarico sono trattati più nel dettaglio in [sovrallenamento, HRV e frequenza cardiaca a riposo](/articles/overtraining-hrv-resting-heart-rate).
+
+## Che cosa mostra l'HRV nell'arco di settimane di allenamento?
+
+Una singola mattina riflette l'ultima seduta; un andamento nell'arco di settimane riflette come il corpo si sta adattando. Una revisione sistematica con meta-analisi su atleti di resistenza ha incluso {{fact:study.bellenger2016.studies}} [S6]. Quando l'allenamento migliorava la prestazione, l'HRV di origine vagale a riposo e dopo l'esercizio, e il recupero della frequenza cardiaca dopo l'esercizio, tendevano ad aumentare; per l'RMSSD a riposo l'aumento è stato {{fact:study.bellenger2016.restingRmssd}} [S6]. Il problema è che l'HRV dopo l'esercizio e il recupero della frequenza cardiaca aumentavano anche durante il sovraccarico funzionale (overreaching) – un periodo di allenamento duro con prestazioni ridotte –, quindi la sola direzione del cambiamento non permetteva di distinguere un buon adattamento da uno cattivo [S6]. L'HRV a riposo è risultata in gran parte non influenzata dal sovraccarico, cosa che secondo gli autori potrebbe dipendere da problemi metodologici [S6].
+
+Una meta-analisi precedente su atleti agonisti era arrivata a un limite simile: le variazioni della frequenza cardiaca a riposo e dell'HRV con l'allenamento in sovraccarico erano da piccole a moderate e potevano rientrare nella normale variabilità da un giorno all'altro [S7]. La sua conclusione è che una variazione della frequenza cardiaca o dell'HRV ha senso solo insieme ad altri segni e sintomi di sovraccarico [S7].
+
+Negli atleti di resistenza d'élite il quadro è ancora meno lineare. Una revisione osserva che gli studi su atleti d'élite hanno collegato sia aumenti sia cali dell'HRV a un adattamento negativo, e che non erano ancora stati definiti modi pratici per usare l'HRV per monitorare il loro stato di allenamento; gli autori propongono di fare la media delle misure su una settimana invece di leggere i singoli giorni (una raccomandazione, non un intervento sperimentato) [S8]. Nel complesso, gli andamenti dell'HRV nell'arco di settimane sono un elemento tra diversi, non un indicatore autonomo di sovraccarico o sovrallenamento.
 
 ## Cosa mostrano le prove sull'allenamento guidato dall'HRV?
 
@@ -87,9 +109,9 @@ Nell'arco di settimane, un allenamento regolare che migliora la forma fisica ten
 
 **Per classe di evidenza.**
 
-- **Dipende dal contesto.** L'HRV cala dopo una seduta e recupera con un andamento che si allunga con l'intensità, si accorcia con la forma fisica e varia da persona a persona [S1].
+- **Dipende dal contesto.** L'HRV cala dopo una seduta e recupera con un andamento che si allunga con l'intensità, si accorcia con la forma fisica e varia da persona a persona [S1]. Nell'arco di settimane di allenamento di resistenza l'HRV tende ad aumentare con un adattamento positivo, ma alcune misure dell'HRV aumentano anche durante il sovraccarico, quindi la sola direzione non distingue i due casi [S6].
 - **Linee guida.** Confrontare le misure di HRV solo in condizioni di registrazione paragonabili (consenso di esperti) [S4].
-- **Emergente.** L'allenamento di resistenza guidato dall'HRV migliora in modo modesto le misure submassimali e lascia meno non-responder rispetto a un piano predefinito, senza un vantaggio dimostrato per prestazione o consumo massimo di ossigeno [S2]. In un piccolo studio su pazienti cardiopatici, l'allenamento guidato e quello standard hanno migliorato il consumo massimo di ossigeno in egual misura [S3]. Il modello del recupero basato su metaboriflesso e riflesso barocettivo è una spiegazione di lavoro [S1].
+- **Emergente.** L'allenamento di resistenza guidato dall'HRV migliora in modo modesto le misure submassimali e lascia meno non-responder rispetto a un piano predefinito, senza un vantaggio dimostrato per prestazione o consumo massimo di ossigeno [S2]. In un piccolo studio su pazienti cardiopatici, l'allenamento guidato e quello standard hanno migliorato il consumo massimo di ossigeno in egual misura [S3]. Il modello del recupero basato su metaboriflesso e riflesso barocettivo è una spiegazione di lavoro [S1]. La media settimanale delle misure di HRV è un metodo proposto per gli atleti d'élite, non sperimentato [S8].
 - **Sconosciuto.** Non è stato dimostrato se la guida tramite HRV aiuti chi si allena per piacere nel lungo periodo, né quale regola decisionale funzioni meglio.
 
 ## Come leggere l'HRV intorno all'allenamento?
@@ -101,6 +123,7 @@ Questa pagina non dà consigli sul carico di allenamento. Pianificare le sedute 
 ## Che cosa non ti dice
 
 - **Un'HRV bassa al mattino dopo l'allenamento non è un verdetto.** È la risposta attesa a una seduta dura e da sola non dice nulla su sovrallenamento o malattia [S1].
+- **Un andamento dell'HRV in salita o in discesa non è un verdetto sul sovraccarico.** Le variazioni sono piccole rispetto alla variabilità da un giorno all'altro e vanno interpretate insieme ad altri segni e sintomi [S6] [S7].
 - **Un ritmo cardiaco recuperato non è un recupero completo.** Muscoli e riserve di energia possono seguire tempi diversi [S1].
 - **Non è stato dimostrato che la guida tramite HRV batta un buon piano fisso** su prestazione o consumo massimo di ossigeno [S2], e in un piccolo studio su pazienti cardiopatici l'esito primario non è stato diverso [S3].
 - **La regola decisionale migliore è sconosciuta.** Gli studi hanno usato soglie e protocolli diversi [S2], e il beneficio a lungo termine per chi si allena per piacere non è stato dimostrato.

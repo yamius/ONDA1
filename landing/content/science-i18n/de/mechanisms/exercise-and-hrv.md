@@ -1,5 +1,5 @@
 ---
-sourceHash: "cdf43fb44f40"
+sourceHash: "79992de6d516"
 title: "Training und HRV: Was Belastung bewirkt und was HRV-gesteuertes Training zeigt"
 metaTitle: "Training und HRV: Evidenz zum HRV-gesteuerten Training"
 metaDescription: "Warum die HRV nach hartem Training sinkt und sich wieder erholt, wie lange das dauert und was Studien zu HRV-gesteuertem Training im Vergleich mit einem festen Trainingsplan zeigen."
@@ -50,6 +50,20 @@ evidenceMap:
     limitation: "Leitlinie zur Forschungsqualität; Expertenkonsens, kein direkter Beleg zu Trainingsentscheidungen."
   - claim: "ONDA bildet seine Baseline aus nächtlichen Werten in Apple Health und vergleicht jede Nacht mit dem eigenen Korridor der Nutzerin oder des Nutzers."
     limitation: "Beschreibt nur das Verhalten der App; kein Beleg für eine Gesundheits- oder Trainingsaussage."
+  - claim: "In einer Metaanalyse bei Ausdauersportlern ging Training, das die Leistung verbesserte, mit Anstiegen der vagal vermittelten HRV in Ruhe und nach Belastung sowie der Herzfrequenzerholung einher."
+    limitation: "Nur Ausdauersportler; gepoolte kleine Studien; Frequenzbereichsindizes auf die HF-Leistung beschränkt; Gruppenmittelwerte, kein individueller Test."
+  - claim: "HRV nach Belastung und Herzfrequenzerholung steigen auch bei Überlastung, daher trennt ihre Richtung allein positive nicht von negativer Anpassung."
+    limitation: "Kleine Teilmenge von Studien zur Überlastung."
+  - claim: "Die Ruhe-HRV blieb von Überlastung weitgehend unberührt, möglicherweise wegen methodischer Probleme."
+    limitation: "Die Autoren nennen methodische Probleme; wenige Studien zur Überlastung."
+  - claim: "Veränderungen von Herzfrequenz und HRV bei Überlastungstraining sind klein bis moderat und können innerhalb der Schwankung von Tag zu Tag liegen."
+    limitation: "Wettkampfsportler; überwiegend HRV im Frequenzbereich (LF/HF) in Rückenlage in Ruhe; ältere Literatur (2008)."
+  - claim: "Veränderungen von HRV oder Herzfrequenz im Trainingsverlauf müssen mit anderen Anzeichen und Symptomen einer Überlastung verglichen werden, um aussagekräftig zu sein."
+    limitation: "Schlussfolgerung der Autoren einer kleinen Metaanalyse; keine validierte Entscheidungsregel."
+  - claim: "Bei Ausdauer-Spitzensportlern wurden sowohl Anstiege als auch Abfälle der HRV mit negativer Anpassung in Verbindung gebracht."
+    limitation: "Narrative Übersicht weniger Studien im Spitzensport; keine systematische Synthese."
+  - claim: "Praktische Wege, mit der HRV den Trainingszustand im Spitzensport zu überwachen, waren nicht etabliert; Wochenmittelwerte sind eine vorgeschlagene Methode."
+    limitation: "Vorgeschlagene Methoden (Mittelung, spezielle Indizes für HRV-Sättigung) sind Empfehlungen mit Fallbeispielen, nicht in Studien geprüft."
 ---
 
 ## Was macht Training mit der HRV?
@@ -75,7 +89,15 @@ In Trainingsstudien wird die HRV meist morgens nach dem Aufwachen aufgezeichnet,
 - **Dauer.** Nach begrenzten Daten ist die Länge einer Einheit wahrscheinlich nicht der wichtigste Faktor [S1].
 - **Art der Belastung.** Die meisten Daten stammen aus aerobem Training; Kraft- und Widerstandstraining sind zu dünn abgedeckt, um denselben Zeitverlauf anzunehmen [S1].
 
-Über Wochen verschiebt regelmäßiges Training, das die Fitness verbessert, die Ruhe-HRV eher in die andere Richtung; dieses längerfristige Bild und die Anzeichen von Überlastung gehören zu [warum sich die HRV von Tag zu Tag verändert](/science/mechanisms/hrv-day-to-day) und [Übertraining, HRV und Ruhepuls](/articles/overtraining-hrv-resting-heart-rate).
+Die Anzeichen von Überlastung werden ausführlicher in [Übertraining, HRV und Ruhepuls](/articles/overtraining-hrv-resting-heart-rate) behandelt.
+
+## Was zeigt die HRV über Wochen des Trainings?
+
+Ein einzelner Morgen spiegelt die letzte Einheit wider; ein Trend über Wochen spiegelt wider, wie sich der Körper anpasst. Eine systematische Übersichtsarbeit mit Metaanalyse bei Ausdauersportlerinnen und -sportlern schloss {{fact:study.bellenger2016.studies}} ein [S6]. Wenn das Training die Leistung verbesserte, stiegen die vagal vermittelte HRV in Ruhe und nach Belastung sowie die Herzfrequenzerholung nach Belastung tendenziell an; beim Ruhe-RMSSD war der Anstieg {{fact:study.bellenger2016.restingRmssd}} [S6]. Der Haken: Auch während einer Überlastung (Overreaching) – einer Phase harten Trainings mit verminderter Leistung – stiegen die HRV nach Belastung und die Herzfrequenzerholung, sodass die Richtung der Veränderung allein gute nicht von schlechter Anpassung unterscheiden konnte [S6]. Die Ruhe-HRV blieb von der Überlastung weitgehend unberührt, was laut den Autorinnen und Autoren an methodischen Problemen liegen könnte [S6].
+
+Eine frühere Metaanalyse bei Wettkampfsportlerinnen und -sportlern stieß an eine ähnliche Grenze: Die Veränderungen von Ruhepuls und HRV bei Überlastungstraining waren klein bis moderat und konnten innerhalb der normalen Schwankung von Tag zu Tag liegen [S7]. Ihr Fazit: Eine Veränderung von Herzfrequenz oder HRV ist nur zusammen mit anderen Anzeichen und Symptomen einer Überlastung aussagekräftig [S7].
+
+Bei Ausdauer-Spitzensportlerinnen und -sportlern ist das Bild noch weniger eindeutig. Eine Übersichtsarbeit hält fest, dass Studien im Spitzensport sowohl Anstiege als auch Abfälle der HRV mit negativer Anpassung in Verbindung gebracht haben und dass praktische Wege, mit der HRV ihren Trainingszustand zu überwachen, noch nicht etabliert waren; die Autoren schlagen vor, die Werte über eine Woche zu mitteln, statt einzelne Tage zu lesen (eine Empfehlung, keine geprüfte Intervention) [S8]. Insgesamt sind HRV-Trends über Wochen ein Hinweis unter mehreren, kein eigenständiges Maß für Überlastung oder Übertraining.
 
 ## Was zeigt die Evidenz zum HRV-gesteuerten Training?
 
@@ -87,9 +109,9 @@ In Trainingsstudien wird die HRV meist morgens nach dem Aufwachen aufgezeichnet,
 
 **Nach Evidenzklasse.**
 
-- **Kontextabhängig.** Die HRV sinkt nach einer Einheit und erholt sich über einen Zeitverlauf, der mit der Intensität länger wird, mit der Fitness kürzer wird und sich von Mensch zu Mensch unterscheidet [S1].
+- **Kontextabhängig.** Die HRV sinkt nach einer Einheit und erholt sich über einen Zeitverlauf, der mit der Intensität länger wird, mit der Fitness kürzer wird und sich von Mensch zu Mensch unterscheidet [S1]. Über Wochen des Ausdauertrainings steigt die HRV bei positiver Anpassung eher an, aber manche HRV-Maße steigen auch bei Überlastung, sodass die Richtung allein beides nicht trennt [S6].
 - **Leitlinie.** HRV-Werte nur unter vergleichbaren Aufzeichnungsbedingungen vergleichen (Expertenkonsens) [S4].
-- **Erste Hinweise.** HRV-gesteuertes Ausdauertraining verbessert submaximale Messgrößen moderat und hinterlässt weniger Non-Responder als ein vorab festgelegter Plan, ohne gezeigten Vorteil für Leistung oder maximale Sauerstoffaufnahme [S2]. In einer kleinen Studie mit Herzpatientinnen und Herzpatienten verbesserten gesteuertes und Standardtraining die maximale Sauerstoffaufnahme gleich stark [S3]. Das Modell aus Metaboreflex und Baroreflex ist eine Arbeitserklärung der Erholung [S1].
+- **Erste Hinweise.** HRV-gesteuertes Ausdauertraining verbessert submaximale Messgrößen moderat und hinterlässt weniger Non-Responder als ein vorab festgelegter Plan, ohne gezeigten Vorteil für Leistung oder maximale Sauerstoffaufnahme [S2]. In einer kleinen Studie mit Herzpatientinnen und Herzpatienten verbesserten gesteuertes und Standardtraining die maximale Sauerstoffaufnahme gleich stark [S3]. Das Modell aus Metaboreflex und Baroreflex ist eine Arbeitserklärung der Erholung [S1]. Wochenmittelwerte der HRV sind eine für den Spitzensport vorgeschlagene, keine geprüfte Methode [S8].
 - **Unbekannt.** Ob HRV-Steuerung Freizeitsportlerinnen und Freizeitsportlern langfristig hilft und welche Entscheidungsregel am besten funktioniert, ist nicht gezeigt.
 
 ## Wie liest man die HRV rund ums Training?
@@ -101,6 +123,7 @@ Diese Seite gibt keine Empfehlungen zur Trainingsbelastung. Die Planung deiner E
 ## Was sie dir nicht sagt
 
 - **Eine niedrige Morgen-HRV nach dem Training ist kein Urteil.** Sie ist die erwartbare Reaktion auf eine harte Einheit und sagt für sich genommen nichts über Übertraining oder Krankheit [S1].
+- **Ein steigender oder fallender HRV-Trend ist kein Urteil über Überlastung.** Die Veränderungen sind klein im Vergleich zur Schwankung von Tag zu Tag und brauchen zur Deutung andere Anzeichen und Symptome [S6] [S7].
 - **Ein erholter Herzrhythmus ist keine vollständige Erholung.** Muskeln und Energiespeicher können anderen Zeitplänen folgen [S1].
 - **HRV-Steuerung ist einem guten festen Plan nachweislich nicht überlegen** bei Leistung oder maximaler Sauerstoffaufnahme [S2], und in einer kleinen Studie mit Herzpatientinnen und Herzpatienten unterschied sich der primäre Endpunkt nicht [S3].
 - **Die beste Entscheidungsregel ist unbekannt.** Die Studien nutzten unterschiedliche Schwellen und Protokolle [S2], und ein langfristiger Nutzen für Freizeitsportlerinnen und Freizeitsportler ist nicht gezeigt.

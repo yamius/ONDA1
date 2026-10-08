@@ -6863,6 +6863,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1136/bjsm.2007.042200": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Is heart rate a convenient tool to monitor over-reaching? A systematic review of the literature",
+   "firstAuthor": "Bosquet",
+   "authors": [
+    "Bosquet",
+    "Merkari",
+    "Arvisais",
+    "Aubert"
+   ],
+   "year": 2008,
+   "journal": "British Journal of Sports Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-08"
+  },
   "doi:10.1136/bjsports-2017-097608": {
    "kind": "doi",
    "valid": true,
@@ -12112,6 +12128,23 @@
    "doi": "10.1016/j.rmed.2007.12.012",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:18308872": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Is heart rate a convenient tool to monitor over-reaching? A systematic review of the literature.",
+   "firstAuthor": "Bosquet",
+   "authors": [
+    "Bosquet",
+    "Merkari",
+    "Arvisais",
+    "Aubert"
+   ],
+   "year": 2008,
+   "journal": "Br J Sports Med",
+   "doi": "10.1136/bjsm.2007.042200",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-08"
   },
   "pmid:18334580": {
    "kind": "pmid",

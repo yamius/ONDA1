@@ -1,5 +1,5 @@
 ---
-sourceHash: "2dc08d4f1532"
+sourceHash: "57d18386abf8"
 title: "Respirazione lenta: che cosa mostrano le evidenze"
 metaTitle: "Respirazione lenta: che cosa mostrano le evidenze"
 metaDescription: "Che cosa mostra la ricerca sulla respirazione lenta senza feedback — HRV, pressione, stress, sonno, dolore — e che cosa si sa delle tecniche più diffuse."
@@ -105,7 +105,7 @@ La parte difficile è il confronto. Le persone sanno sempre se stanno respirando
 
 ## Che cosa mostrano le evidenze?
 
-**HRV: accertato.** Una meta-analisi di {{fact:study.laborde2022.studies}} ha trovato che l'HRV di mediazione vagale aumenta durante la respirazione lenta, subito dopo una singola sessione e dopo programmi di più sessioni [S2]. Una revisione sistematica su persone sane è arrivata a un risultato nella stessa direzione [S3]. Si tratta di variazioni di un segnale fisiologico; da sole non sono esiti di salute.
+**HRV: accertato.** Una meta-analisi di {{fact:study.laborde2022.studies}} ha trovato che l'HRV di mediazione vagale aumenta durante la respirazione lenta, subito dopo una singola sessione e dopo programmi di più sessioni [S2]. Una revisione sistematica precedente su persone sane, che include in parte gli stessi studi, andava nella stessa direzione [S3]. Si tratta di variazioni di un segnale fisiologico; da sole non sono esiti di salute.
 
 **Pressione arteriosa: dipende dal contesto.** Una meta-analisi di {{fact:study.chaddha2019.studies}} su persone con ipertensione o preipertensione ha trovato modeste riduzioni della pressione sistolica e diastolica, con eterogeneità elevata [S4]. Gli autori suggeriscono che possa essere una prima opzione ragionevole per le persone a basso rischio restie a iniziare un farmaco [S4]: un suggerimento, non una linea guida. La respirazione guidata da dispositivo richiede più cautela: una meta-analisi di {{fact:study.mahtani2012.trials}} ha trovato che l'effetto scompariva escludendo gli studi legati al produttore, e ha chiesto studi più lunghi e indipendenti [S5]. Gli aspetti pratici sono in [respirazione lenta e pressione alta](/articles/high-blood-pressure-slow-breathing).
 

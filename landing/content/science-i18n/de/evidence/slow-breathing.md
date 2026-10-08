@@ -1,5 +1,5 @@
 ---
-sourceHash: "2dc08d4f1532"
+sourceHash: "57d18386abf8"
 title: "Langsames Atmen: Was die Evidenz zeigt"
 metaTitle: "Langsames Atmen: Was die Evidenz zeigt"
 metaDescription: "Was die Forschung zu langsamem Atmen ohne Feedback zeigt – HRV, Blutdruck, Stress, Schlaf, Schmerz – und was über bekannte Atemtechniken bekannt ist."
@@ -105,7 +105,7 @@ Der Vergleich ist der schwierige Teil. Menschen wissen immer, ob sie langsam atm
 
 ## Was zeigt die Evidenz?
 
-**HRV: gesichert.** Eine Metaanalyse von {{fact:study.laborde2022.studies}} fand, dass die vagal vermittelte HRV während langsamen Atmens, unmittelbar nach einer einzelnen Sitzung und nach Programmen mit mehreren Sitzungen steigt [S2]. Eine systematische Übersichtsarbeit bei gesunden Menschen kam zu einem Ergebnis in dieselbe Richtung [S3]. Das sind Veränderungen eines physiologischen Signals; für sich genommen sind sie keine Gesundheitsergebnisse.
+**HRV: gesichert.** Eine Metaanalyse von {{fact:study.laborde2022.studies}} fand, dass die vagal vermittelte HRV während langsamen Atmens, unmittelbar nach einer einzelnen Sitzung und nach Programmen mit mehreren Sitzungen steigt [S2]. Eine frühere systematische Übersichtsarbeit bei gesunden Menschen, die sich teilweise auf dieselben Studien stützt, wies in dieselbe Richtung [S3]. Das sind Veränderungen eines physiologischen Signals; für sich genommen sind sie keine Gesundheitsergebnisse.
 
 **Blutdruck: kontextabhängig.** Eine Metaanalyse von {{fact:study.chaddha2019.studies}} bei Menschen mit Bluthochdruck oder Prähypertonie fand moderate Senkungen des systolischen und diastolischen Blutdrucks, bei hoher Heterogenität [S4]. Die Autoren halten langsames Atmen möglicherweise für eine sinnvolle erste Option bei Menschen mit geringem Risiko, die zögern, mit Medikamenten zu beginnen [S4] – ein Vorschlag, keine Leitlinie. Bei gerätegestütztem Atmen ist mehr Vorsicht geboten: Eine Metaanalyse von {{fact:study.mahtani2012.trials}} fand, dass der Effekt verschwand, wenn die herstellernahen Studien ausgeschlossen wurden, und forderte längere, unabhängige Studien [S5]. Praktische Hinweise findest du in [langsames Atmen und Bluthochdruck](/articles/high-blood-pressure-slow-breathing).
 
