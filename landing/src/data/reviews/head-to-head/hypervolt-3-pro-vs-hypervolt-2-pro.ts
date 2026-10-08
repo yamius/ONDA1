@@ -21,7 +21,7 @@ const hv3ProVsHv2Pro: HeadToHead = {
     { name: 'Battery', winner: 'a', note: '3 Pro: ~4 hours. 2 Pro: ~3 hours. Longer sessions between charges.' },
     { name: 'Noise', winner: 'a', note: 'The 3 Pro’s QuietGlide motor runs ~51 dB — marginally quieter than the 2 Pro’s 48–52 dB range, and smoother.' },
     { name: 'Attachments', winner: 'a', note: 'The 3 Pro ships redesigned attachments 33% larger for better surface coverage. The 2 Pro’s are the older, smaller set.' },
-    { name: 'Amplitude & app', winner: 'c', note: 'Both sit around 14 mm amplitude and use the same Hyperice app with guided routines and pressure feedback — no meaningful difference here.' },
+    { name: 'Amplitude & app', winner: 'tie', note: 'Both sit around 14 mm amplitude and use the same Hyperice app with guided routines and pressure feedback — no meaningful difference here.' },
     { name: 'Price', winner: 'a', note: 'Hypervolt 3 Pro launched at $349, below the 2 Pro’s $399. The newer gun is also the cheaper one at list price.' },
   ],
   faq: [

@@ -18,7 +18,7 @@ const helioVsSamsung: HeadToHead = {
     'Choose the Samsung Galaxy Ring if you own a Samsung Galaxy phone and want a more polished ring with better battery, build and integration.',
   axes: [
     { name: 'Price', winner: 'a', note: 'Amazfit Helio: $199. Samsung Galaxy Ring: ~$399. The Helio is roughly half the cost.' },
-    { name: 'Subscription', winner: 'c', note: 'Tie — neither charges a subscription.' },
+    { name: 'Subscription', winner: 'tie', note: 'Tie — neither charges a subscription.' },
     { name: 'Battery', winner: 'b', note: 'Galaxy Ring: ~6–7 days. Amazfit Helio: ~2.5–3 days real-world. Samsung lasts more than twice as long.' },
     { name: 'Platform reach', winner: 'a', note: 'The Helio works fully across iOS and Android via Zepp. The Galaxy Ring’s best features assume a Samsung Galaxy phone; outside that it’s more limited.' },
     { name: 'Ecosystem & build', winner: 'b', note: 'On a Samsung phone the Galaxy Ring integrates tightly with Samsung Health and Galaxy devices, with a more premium build and wider size range.' },

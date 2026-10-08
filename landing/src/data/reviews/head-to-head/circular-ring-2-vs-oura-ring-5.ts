@@ -22,7 +22,7 @@ const circularVsOura5: HeadToHead = {
     { name: 'Subscription & cost', winner: 'a', note: 'Circular: subscription-free (from $349). Oura Ring 5: $399 + ~$6/month. Circular is cheaper to own if the features work.' },
     { name: 'Accuracy', winner: 'b', note: 'Oura is the validated reference for sleep and HRV; the Circular’s data was uneven in testing.' },
     { name: 'App & polish', winner: 'b', note: 'Oura’s app is the category benchmark. The Circular’s software was the main thing reviewers criticised.' },
-    { name: 'Battery', winner: 'c', note: 'Comparable — Circular ~6 days, Oura Ring 5 ~6–9. Neither is the differentiator here.' },
+    { name: 'Battery', winner: 'tie', note: 'Comparable — Circular ~6 days, Oura Ring 5 ~6–9. Neither is the differentiator here.' },
   ],
   faq: [
     {

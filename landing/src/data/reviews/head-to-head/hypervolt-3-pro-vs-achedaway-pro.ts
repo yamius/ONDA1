@@ -22,7 +22,7 @@ const hv3ProVsAchedaway: HeadToHead = {
     { name: 'App & guided routines', winner: 'a', note: 'The Hypervolt connects to the Hyperice app with guided routines and pressure feedback. The Achedaway has no comparable app ecosystem.' },
     { name: 'Attachments', winner: 'b', note: 'Achedaway Pro: 7 attachments. Hypervolt 3 Pro: fewer, though redesigned 33% larger for coverage. Edge Achedaway on sheer count.' },
     { name: 'Brand & support', winner: 'a', note: 'Hyperice has strong NBA/NFL pedigree and mainstream support. Achedaway is a smaller, spec-forward brand.' },
-    { name: 'Price', winner: 'c', note: 'Tie — both are $349. This comparison is purely about what you get for the same money.' },
+    { name: 'Price', winner: 'tie', note: 'Tie — both are $349. This comparison is purely about what you get for the same money.' },
   ],
   faq: [
     {

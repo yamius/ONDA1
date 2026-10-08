@@ -17,11 +17,11 @@ const ringProVsRingconn: HeadToHead = {
   bestForB:
     'Choose the RingConn Gen 2 if you want a subscription-free ring with a long battery and solid tracking for the lowest price — the value pick.',
   axes: [
-    { name: 'Subscription', winner: 'c', note: 'Tie — both are one-time purchases with no membership.' },
+    { name: 'Subscription', winner: 'tie', note: 'Tie — both are one-time purchases with no membership.' },
     { name: 'Price', winner: 'b', note: 'RingConn Gen 2: $299. Ring Pro: $479. RingConn is about $180 cheaper for a subscription-free ring.' },
     { name: 'Battery', winner: 'a', note: 'Ring Pro: ~15 days. RingConn Gen 2: ~12 days. Both excellent; Ultrahuman edges it.' },
     { name: 'Features & processing', winner: 'a', note: 'The Ring Pro adds an on-ring dual-core processor, richer metabolic-leaning metrics and the "Jade" biointelligence layer. RingConn keeps things simpler.' },
-    { name: 'Tracking quality', winner: 'c', note: 'Both deliver solid sleep and HRV tracking for the price; neither matches Oura’s validated accuracy, and the everyday difference between them is small.' },
+    { name: 'Tracking quality', winner: 'tie', note: 'Both deliver solid sleep and HRV tracking for the price; neither matches Oura’s validated accuracy, and the everyday difference between them is small.' },
     { name: 'Track record', winner: 'b', note: 'RingConn Gen 2 is proven and, after settling with Oura, remains on sale in the US. The Ring Pro is new; Ultrahuman’s prior Ring Air had battery-reliability complaints the redesign targets.' },
   ],
   faq: [

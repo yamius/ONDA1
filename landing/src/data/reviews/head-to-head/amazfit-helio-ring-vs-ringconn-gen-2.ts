@@ -18,10 +18,10 @@ const helioVsRingconn: HeadToHead = {
     'Choose the RingConn Gen 2 if you want a much longer battery, a wide size range (6–14) and dependable tracking, and $100 more is acceptable.',
   axes: [
     { name: 'Price', winner: 'a', note: 'Amazfit Helio: $199 list. RingConn Gen 2: $299. The Helio is the cheaper capable subscription-free ring.' },
-    { name: 'Subscription', winner: 'c', note: 'Tie — both are one-time purchases with no membership for core metrics.' },
+    { name: 'Subscription', winner: 'tie', note: 'Tie — both are one-time purchases with no membership for core metrics.' },
     { name: 'Battery', winner: 'b', note: 'RingConn Gen 2: 10–12 days depending on size, plus a charging case that adds about 150 days. Amazfit Helio: about 2.5–3 days in real-world use. Not close.' },
     { name: 'Fit & sizing', winner: 'b', note: 'The Helio ships in only three sizes (8, 10, 12), so many fingers can’t get a proper fit. RingConn Gen 2 comes in sizes 6 to 14.' },
-    { name: 'Sleep & HRV tracking', winner: 'c', note: 'Both deliver solid overnight sleep and HRV for the price; the everyday difference is small and neither has Oura’s body of published validation.' },
+    { name: 'Sleep & HRV tracking', winner: 'tie', note: 'Both deliver solid overnight sleep and HRV for the price; the everyday difference is small and neither has Oura’s body of published validation.' },
     { name: 'Comfort', winner: 'a', note: 'The Helio is exceptionally light (under 4 g) and thin (2.6 mm) — a slight comfort edge if it fits.' },
   ],
   faq: [
