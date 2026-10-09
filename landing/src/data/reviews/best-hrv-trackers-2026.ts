@@ -123,7 +123,7 @@ The scores cluster tightly — every device here is genuinely capable, and the r
 - [Garmin Venu 4 vs Oura Ring 5](/reviews/vs/garmin-venu-4-vs-oura-ring-5)
 `,
   datePublished: '2026-05-15',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default bestHrvTrackers2026

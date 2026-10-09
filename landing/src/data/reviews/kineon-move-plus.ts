@@ -115,7 +115,7 @@ The photobiomodulation mechanism behind why red light therapy works.
   ],
 
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default kineonMovePlus

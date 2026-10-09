@@ -70,7 +70,7 @@ Choose Winix 5500-2 for budget auto-mode sensor without paying app premium. For 
     { q: "Winix 5500-2 vs Levoit Core 600S: which is better?", a: "The Levoit Core 600S covers a larger area. The Winix 5500-2 is the budget choice at $249 with an auto-mode sensor and strong filter economics but no app. Choose Winix for value, Levoit for larger rooms." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default winix5500

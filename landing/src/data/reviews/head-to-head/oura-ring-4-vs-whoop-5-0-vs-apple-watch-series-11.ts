@@ -71,7 +71,7 @@ If you want a smartwatch — messaging, payments, ECG, third-party apps, the dee
 Apple Watch by day + Oura by night is the most common multi-device configuration. Whoop + Apple Watch is the second. Pure Oura or pure Whoop is the minimalist option.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default ouraVsWhoopVsApple

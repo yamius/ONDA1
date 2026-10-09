@@ -56,7 +56,7 @@ Wear both: a ring for sleep and recovery, a watch for the day. Otherwise, pick b
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default ouraRing5VsAppleWatch11

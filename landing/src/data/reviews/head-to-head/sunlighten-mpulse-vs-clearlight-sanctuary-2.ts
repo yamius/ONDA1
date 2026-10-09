@@ -56,7 +56,7 @@ If a Jacuzzi-backed lifetime warranty for comparable full-spectrum IR is worth t
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-05-25',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default sunlightenVsClearlight

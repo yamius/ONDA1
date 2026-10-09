@@ -70,7 +70,7 @@ Choose Dream Recovery for sensitive skin + premium silicone-gel mouth tape. For 
     { q: "Dream Recovery vs Hostage Tape: which is better?", a: "Dream Recovery is better for sensitive skin; Hostage Tape is better for beards. Dream Recovery's reusable, hypoallergenic silicone-gel adhesive is gentler on skin, while Hostage Tape's acrylic adhesive is more beard-friendly. Dream Recovery is also reusable 2-3 times per strip." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default dreamRecovery

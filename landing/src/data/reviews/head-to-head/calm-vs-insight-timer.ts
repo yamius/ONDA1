@@ -88,7 +88,7 @@ Considering a third app? See [Headspace vs Calm vs Insight Timer](/reviews/vs/he
 - [Insight Timer — how much does it cost?](https://help.insighttimer.com/support/solutions/articles/67000664579-how-much-does-insight-timer-cost-) and [what is Member Plus?](https://help.insighttimer.com/support/solutions/articles/67000664702-what-is-memberplus-), checked 2026-10-02`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default calmVsInsightTimer

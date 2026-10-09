@@ -71,7 +71,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "What are the downsides of the Infraredi Pro 1500?", a: "Infraredi is a newer brand, so its multi-year reliability record is thinner than Joovv or Mito Red. Its published EMF and flicker results have been less independently re-verified than those of Joovv or PlatinumLED." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default infraredi

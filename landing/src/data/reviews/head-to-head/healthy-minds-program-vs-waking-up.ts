@@ -88,7 +88,7 @@ Weighing a third option? See [Headspace vs Waking Up vs Healthy Minds Program](/
 - [Waking Up — subscription plans](https://www.wakingup.com/checkout) and [scholarship](https://www.wakingup.com/scholarship), checked 2026-10-01`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default healthyMindsVsWakingUp

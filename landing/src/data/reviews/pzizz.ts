@@ -72,7 +72,7 @@ The sleep biology behind what these apps measure and the protocols they support.
     { q: "What are the downsides of Pzizz?", a: "Pzizz has no sleep tracking whatsoever and no insights or analytics, by design. It does one thing only, and the full module set requires a subscription, so the free version is limited. If you want sleep analytics, it is the wrong app." },
   ],
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-10-10',
 }
 
 export default pzizz

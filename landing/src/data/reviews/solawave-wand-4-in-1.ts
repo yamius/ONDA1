@@ -69,7 +69,7 @@ Choose Solawave Wand for budget-conscious entry to red light therapy with multi-
     { q: "What are the downsides of the Solawave Wand 4-in-1?", a: "The Solawave Wand has modest irradiance compared with clinical references and uses only one wavelength, red 660 nm. Its narrow per-zone coverage requires active use, and its clinical-evidence base is light compared with clinical-grade devices." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-10-10',
 }
 
 export default solawave

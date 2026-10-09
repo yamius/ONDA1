@@ -72,7 +72,7 @@ The science behind why HRV is the signal worth tracking.
     { q: "What are the downsides of the Amazfit Helio Ring?", a: "Only three sizes, so fit is hit-or-miss, and a short single-charge battery. If a size fits and you want the cheapest subscription-free ring, it delivers." },
   ],
   datePublished: '2026-09-06',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default amazfitHelioRing

@@ -52,7 +52,7 @@ On paper the Series 12 has the newer HRV system: far more frequent sampling and 
 If you want one watch for everything and train casually, the Series 12 is the better buy. If you train seriously outdoors and want HRV along for the ride, the Fenix 8 earns its price. If overnight HRV precision is the only goal, neither is ideal — see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default series12VsFenix8

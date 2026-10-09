@@ -57,7 +57,7 @@ If athletic recovery or pre-sleep parasympathetic priming is the reason you are 
 If you want a daily-use device with structured guided programmes you can run while reading, working or winding down — Pulsetto is the right shape. The four-mode library covers more use cases than Hoolest’s intensity-only adjustment, and the collar form factor makes it easier to engage with daily.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-10',
 }
 
 export default hoolestVsPulsetto

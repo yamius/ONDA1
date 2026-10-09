@@ -70,7 +70,7 @@ Choose Prana Breath for cheap, customisable breath-pattern practice — especial
   ],
 
   datePublished: '2026-06-29',
-  dateModified: '2026-09-17',
+  dateModified: '2026-10-10',
 }
 
 export default pranaBreath

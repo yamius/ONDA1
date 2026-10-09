@@ -73,7 +73,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "Relax Sauna vs HigherDose Blanket: which is better?", a: "The HigherDose Blanket is cheaper and simpler to set up. The Relax Sauna suits users uncomfortable lying prone in a blanket, with an upright chair-and-tent design, documented low EMF and a long reliability track record." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default relaxSaunaPortable

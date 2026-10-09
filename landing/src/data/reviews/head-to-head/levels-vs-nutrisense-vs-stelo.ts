@@ -68,7 +68,7 @@ If you need a person, not an app, helping you interpret the data, Nutrisense is 
 If you want Dexcom G7 hardware at the lowest legitimate price — no coaching, no premium analytics, just the sensor and a clean app — Stelo is the right shape. It is the cheapest path to ongoing CGM in 2026 and the right starting point for users not sure they want CGM long-term.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default threeCgm

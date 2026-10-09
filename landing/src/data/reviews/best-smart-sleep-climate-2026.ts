@@ -119,7 +119,7 @@ Three buying questions resolve the category cleanly:
 Eight Sleep dominates the integrated-tracking premium tier; Sleepme dominates the subscription-free water-cooled tier; BedJet owns the air-flow niche. Below those, smart-bed and passive alternatives serve users not committing to active hardware.`,
   publishOn: '2026-06-15',
   datePublished: '2026-06-15',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default bestSmartSleepClimate2026

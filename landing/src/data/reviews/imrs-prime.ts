@@ -69,7 +69,7 @@ Choose iMRS Prime if you're cross-shopping Bemer and want Swiss-engineered multi
     { q: "What frequencies does the iMRS Prime use?", a: "The iMRS Prime uses a sawtooth waveform with Schumann (7.83 Hz) settings and morning and evening presets that the maker markets as energising and calming, not tested in controlled trials. It exposes fewer adjustable parameters than the Healthy Wave Multi-Wave, so it suits users who prefer presets over manual tuning." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default imrsPrime

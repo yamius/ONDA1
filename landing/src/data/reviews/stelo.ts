@@ -73,7 +73,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { q: "What are the downsides of Stelo?", a: "Stelo's insight engine is simpler than Levels, with no food-by-food ranking history. There is no human coach, only app guidance, it ships US-only through Dexcom, and third-party app integration is limited compared with Levels." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default stelo

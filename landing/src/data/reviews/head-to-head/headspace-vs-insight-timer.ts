@@ -57,7 +57,7 @@ If you want a structured introduction to mindfulness with a clear curriculum and
 If you want the largest free meditation library on the market — access to Tara Brach, Jack Kornfield and thousands of other teachers at no cost — Insight Timer is the right shape. The free tier is genuinely free; Member Plus is optional.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default headspaceVsInsight

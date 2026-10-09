@@ -72,7 +72,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
     { q: "What are the downsides of the Sleep Number Climate360?", a: "Its climate range is less aggressive than dedicated systems, and it requires a Sleep Number 360 bed purchase rather than a retrofit. Pricing is premium smart-bed territory without biohacker positioning, and the climate hardware cannot be removed or upgraded separately." },
   ],
   datePublished: '2026-06-15',
-  dateModified: '2026-06-15',
+  dateModified: '2026-10-10',
 }
 
 export default sleepNumberClimate360

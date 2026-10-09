@@ -57,7 +57,7 @@ If app maturity, the deepest consumer sleep model and Readiness scoring are the 
 If subscription-free is a hard requirement, you want the longest battery in the smart-ring category and the lowest 3-year total cost of ownership matters, RingConn is the right shape. The trade is a slightly less mature app and shallower sleep analytics.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default ouraVsRingconn

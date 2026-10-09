@@ -89,7 +89,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
   relatedSlugs: ['apple-watch-series-11', 'oura-ring-4', 'whoop-5-0', 'garmin-fenix-8'],
   datePublished: '2026-09-18',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default appleWatchSeries12

@@ -69,7 +69,7 @@ If you want the deepest mixable content library — soundscapes, sleep stories, 
   relatedComparisonSlug: 'best-sleep-apps-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-06-04',
+  dateModified: '2026-10-10',
 }
 
 export default endelVsPzizzVsBettersleep

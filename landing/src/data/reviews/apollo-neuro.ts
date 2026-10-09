@@ -73,7 +73,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "Who is the Apollo Neuro best for?", a: "The Apollo Neuro is best for daily-wear vagal modulation: people who want something gentle, non-electrical and easy to integrate into life. It needs no pads, skin contact or titration, and it is the only device in its category designed for genuine all-day wear." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default apolloNeuro

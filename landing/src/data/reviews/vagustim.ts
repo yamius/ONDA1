@@ -73,7 +73,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "What are the downsides of Vagustim?", a: "Vagustim has less brand recognition than Nurosym outside the EU, a multi-electrode setup more involved than a single ear clip, and no on-device HRV biofeedback. Support and warranty processes are weaker outside EU markets." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-10',
 }
 
 export default vagustim

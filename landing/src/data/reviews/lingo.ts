@@ -72,7 +72,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { q: "Lingo vs Levels: which is better?", a: "Lingo is cheaper and simpler: no subscription, and one Lingo Count score per meal. Levels offers far deeper analytics and the slightly more accurate Dexcom Stelo (G7 platform), as a membership from about $80 a year (app-only) to $1,329 a year. Neither includes a human coach. Choose Lingo if cost and simplicity matter more than insight depth." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default lingo

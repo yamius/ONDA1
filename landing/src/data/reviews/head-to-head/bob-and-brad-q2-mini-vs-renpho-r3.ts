@@ -57,7 +57,7 @@ If you want higher stall force + deeper amplitude in full-size budget form — R
   relatedComparisonSlug: 'best-massage-guns-2026',
   publishOn: '2026-07-20',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-10',
 }
 
 export default bobVsRenpho

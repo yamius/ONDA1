@@ -71,7 +71,7 @@ Choose Open if you want one premium app for breath + meditation + movement rathe
     { q: "Open vs Breathwrk: which is better?", a: "Choose Open for breathwork, meditation and movement in one polished app with live classes and Apple Watch support. Choose Breathwrk if you want pure breathwork depth, including more Buteyko and clinical-modality breadth, since Open's hybrid focus dilutes that." },
   ],
   datePublished: '2026-06-29',
-  dateModified: '2026-06-29',
+  dateModified: '2026-10-10',
 }
 
 export default openApp

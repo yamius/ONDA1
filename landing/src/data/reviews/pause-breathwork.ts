@@ -69,7 +69,7 @@ Choose Pause Breathwork if you're buying breathwork for somatic / emotional rele
     { q: "What are the downsides of Pause Breathwork?", a: "Pause has a narrow, somatic and holotropic-dominant technique scope, is less suited to daily structured breath practice, offers no HRV biofeedback, and its longer sessions do not fit short daily windows. It is built for emotional release, not a quick structured daily protocol." },
   ],
   datePublished: '2026-06-29',
-  dateModified: '2026-06-29',
+  dateModified: '2026-10-10',
 }
 
 export default pauseBreathwork

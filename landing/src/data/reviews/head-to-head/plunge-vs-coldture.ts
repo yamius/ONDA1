@@ -55,7 +55,7 @@ If you are in the US, want the longest-established brand pedigree and the deepes
 If you are in Canada, EU or a cold-climate US region installing outdoors, Coldture’s winter-engineered chiller and insulation outperform Plunge. The lower price is a bonus.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default plungeVsColdture

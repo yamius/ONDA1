@@ -57,7 +57,7 @@ If your sleep problem is falling asleep — getting your nervous system into sle
 If you want to track sleep — smart alarm, sleep-stage estimates, snoring detection, multi-month trends — Sleep Cycle is the right shape. The implementation has been iterated for over a decade and the smart alarm is the category-defining version.`,
   relatedComparisonSlug: 'best-sleep-apps-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-10',
 }
 
 export default bettersleepVsSleepCycle

@@ -57,7 +57,7 @@ If you have major depression and a clinician open to discussing tDCS as a take-h
 If you want passive vagal modulation through the day — for recovery, stress, sleep, focus — without a clinical indication or a structured programme commitment, Apollo is the right shape. The vibrotactile mechanism is real; the University of Pittsburgh research base is solid; daily wearability is the use case.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default flowVsApollo

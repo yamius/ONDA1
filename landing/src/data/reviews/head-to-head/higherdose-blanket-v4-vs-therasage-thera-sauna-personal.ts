@@ -57,7 +57,7 @@ If you have install space and want full-spectrum IR (near + mid + far) at mid-ti
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default higherdoseVsTherasage

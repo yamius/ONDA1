@@ -74,7 +74,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
     { q: "ChiliPad Dock Pro vs Eight Sleep Pod 4: which is better?", a: "The ChiliPad Dock Pro is better for subscription-free ownership; the Pod 4 is better for integrated HRV and sleep tracking. Climate hardware is comparable, but the Pod 4 costs about $4,000 plus roughly $20 per month, versus about $1,700 for Sleepme's current Chilipad 2.0 (queen) with no fees." },
   ],
   datePublished: '2026-06-15',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default chilipadDockPro

@@ -72,7 +72,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { q: "What are the downsides of Veri?", a: "Veri's Libre 3 accuracy lags Dexcom G7, the default plan has no human coach, its insight depth lags Levels for serious users, and US availability is limited, so it mainly makes sense for EU buyers." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default veri

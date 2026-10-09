@@ -56,7 +56,7 @@ See [Sun Home Equinox vs Clearlight Sanctuary 2](/reviews/vs/sun-home-equinox-vs
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default sunHomeVsSunlighten

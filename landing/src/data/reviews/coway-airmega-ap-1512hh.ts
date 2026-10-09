@@ -70,7 +70,7 @@ Choose Coway AP-1512HH for budget Wirecutter-trust reference. For app integratio
     { q: "Coway Airmega AP-1512HH vs Airmega 400: which is better?", a: "The Airmega 400 is better for large spaces; the AP-1512HH is better for budget buyers. The 400 covers 1,560 sq ft for $479 with a metal build, while the AP-1512HH covers 361 sq ft for $229 with a plastic build." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default cowayAp1512

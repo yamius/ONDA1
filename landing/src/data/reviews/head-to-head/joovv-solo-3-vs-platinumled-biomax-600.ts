@@ -56,7 +56,7 @@ If you plan to scale to full-body via the modular Solo system, Joovv is the righ
 If wavelength breadth (seven bands vs Joovv’s two), published third-party EMF testing, and saving $650 are the deciding factors, PlatinumLED is the right shape. Most spec-focused biohacker buyers land here.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default joovvVsPlatinumLed

@@ -69,7 +69,7 @@ If accountability through a registered dietitian working through your data weekl
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default levelsVsZoeVsNutrisense

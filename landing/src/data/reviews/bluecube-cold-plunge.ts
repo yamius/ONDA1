@@ -72,7 +72,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { q: "Who is the BlueCube Cold Plunge best for?", a: "The BlueCube Cold Plunge is best for clinical, athletic-facility or multi-user household use where chiller capacity matters. Its chiller recovers fast enough for continuous back-to-back plunges, backed by commercial-grade build and 5-year component warranties. It is overbuilt for single-user home practice." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default blueCubeColdPlunge

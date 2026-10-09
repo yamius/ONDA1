@@ -110,7 +110,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "Is a traditional sauna better than infrared?", a: "Neither is better for everyone. Traditional saunas heat the air to roughly 80–100 °C and are the format behind the Finnish cohort studies; infrared cabins run cooler and feel gentler. If matching the research matters most, choose traditional; if comfort and easy indoor install matter more, infrared fits." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default almostHeavenSalem

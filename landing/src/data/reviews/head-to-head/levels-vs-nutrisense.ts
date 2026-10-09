@@ -55,7 +55,7 @@ Levels is the right shape for users who treat CGM as a self-experiment instrumen
 Nutrisense is the right shape when accountability is the value. A registered dietitian reviewing your data weekly, sending written summaries and answering questions in-app is the difference between sustained behavioural change and a $200 month of charts for many users. Pay the premium only if you will use the coach.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default levelsVsNutrisense

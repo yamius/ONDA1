@@ -74,7 +74,7 @@ Red and near-infrared light therapy has small clinical trials showing modest imp
 **Omnilux Contour Face** is the better default: the same light with a stronger clinical record for $46 more. **HigherDOSE** makes sense if price, a 20-minute option or the brand ecosystem matter more to you than published evidence.`,
   relatedComparisonSlug: 'best-red-light-face-masks-2026',
   datePublished: '2026-10-04',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default omniluxContourFaceVsHigherdoseRedLightFaceMask

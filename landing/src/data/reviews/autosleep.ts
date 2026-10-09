@@ -74,7 +74,7 @@ The sleep biology behind what these apps measure and the protocols they support.
     { q: "Who is AutoSleep best for?", a: "AutoSleep is best for Apple Watch owners who want accurate, automatic sleep data and no subscription. It suits data-focused users who are happy with a purist tracker and do not need soundscapes, stories or other relaxation content." },
   ],
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-10-10',
 }
 
 export default autosleep

@@ -89,7 +89,7 @@ For consumer PEMF in general, the best-studied everyday use is joint pain: a Coc
   relatedComparisonSlug: 'best-pemf-devices-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default healthyWaveVsQiCoil

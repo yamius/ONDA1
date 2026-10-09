@@ -70,7 +70,7 @@ Choose Curatron 3D for clinic-style dual-applicator PEMF with transparent parame
     { q: "Curatron 3D vs Bemer Classic Evo: which is better?", a: "The Curatron 3D is better for transparent parameters and targeted coil use; Bemer is better for research depth and polish. Curatron costs about $4,500 versus Bemer's $5,490, while Bemer has a longer, mostly manufacturer-linked study list and an FDA clearance for non-medical muscle conditioning." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default curatron3d

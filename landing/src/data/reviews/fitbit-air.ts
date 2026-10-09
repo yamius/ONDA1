@@ -69,7 +69,7 @@ Choose the Fitbit Air if you want the cheapest honest way to start watching a 24
     { q: "Does the Fitbit Air have GPS?", a: "Not built-in — it uses your phone’s connected GPS. It is a screenless $99 pod built around 24/7 HRV and sleep, the cheapest honest entry to continuous HRV." },
   ],
   datePublished: '2026-09-12',
-  dateModified: '2026-09-12',
+  dateModified: '2026-10-10',
 }
 
 export default fitbitAir

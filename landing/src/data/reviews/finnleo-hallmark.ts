@@ -73,7 +73,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "What are the downsides of the Finnleo Hallmark?", a: "The main downsides are price, placement and power. It is premium-priced, it is indoor-only with ventilation requirements, and larger heaters require 220V electrical. It also works by a different mechanism than IR cabin saunas, so buyers specifically after infrared should look elsewhere." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default finnleoHallmark

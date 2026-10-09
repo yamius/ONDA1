@@ -70,7 +70,7 @@ Choose Inhale by Aero Health if you wear Apple Watch and want HRV-driven adaptiv
   ],
 
   datePublished: '2026-06-29',
-  dateModified: '2026-09-17',
+  dateModified: '2026-10-10',
 }
 
 export default inhale

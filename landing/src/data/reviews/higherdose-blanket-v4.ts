@@ -72,7 +72,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "Who should buy the HigherDose Sauna Blanket V4?", a: "It suits people who want IR sauna practice but lack the space or budget for a cabin. It is the most portable IR sauna form factor available, needs no install and has documented low EMF. Buyers who want full-spectrum IR or a long warranty should consider a cabin." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default higherdoseBlanketV4

@@ -68,7 +68,7 @@ Choose OlyLife TERA P90 Plus only if you explicitly discount the terahertz marke
     { q: "What are the downsides of the OlyLife TERA P90 Plus?", a: "Its terahertz marketing claims overstate the published evidence, MLM-style distribution leads to inconsistent warranty support, it offers limited parameter exposure and protocol depth, and as a handheld wand it provides no whole-body mat coverage. Value it for PEMF alone." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default olylifeTera

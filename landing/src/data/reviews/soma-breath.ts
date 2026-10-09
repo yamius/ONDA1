@@ -71,7 +71,7 @@ Choose SOMA Breath for rhythmic music-paced breathwork with ceremony framing and
     { q: "What are the downsides of SOMA Breath?", a: "SOMA Breath is less science-informed than Breathwrk, has a smaller library and offers no HRV biofeedback. Its ceremony framing may also not suit users seeking pure clinical breathwork without the journey-style production." },
   ],
   datePublished: '2026-06-29',
-  dateModified: '2026-06-29',
+  dateModified: '2026-10-10',
 }
 
 export default somaBreath

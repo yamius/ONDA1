@@ -73,7 +73,7 @@ The sleep biology behind what these apps measure and the protocols they support.
     { q: "What are the downsides of SleepScore?", a: "SleepScore's phone-based sonar is an estimate, not wearable-grade tracking. Wind-down content is light, the useful analysis sits behind Premium, and the app is less polished than Sleep Cycle, its closest mainstream alternative." },
   ],
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-10-10',
 }
 
 export default sleepscore

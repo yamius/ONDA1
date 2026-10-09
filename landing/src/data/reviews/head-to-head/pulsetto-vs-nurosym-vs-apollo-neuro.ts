@@ -72,7 +72,7 @@ If you want vagal modulation that runs in your day without ceremony — at work,
 Apollo as the daily passive baseline plus Pulsetto or Nurosym for targeted acute sessions is the most common multi-device configuration among serious users. The mechanisms hit different pathways, so the effects stack rather than redundant.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default pulsettoVsNurosymVsApollo

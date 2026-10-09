@@ -56,7 +56,7 @@ For the sleep-and-content leader, see [Balance vs Calm](/reviews/vs/balance-vs-c
   relatedComparisonSlug: 'best-meditation-apps-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default balanceVsHeadspace

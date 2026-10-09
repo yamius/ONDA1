@@ -56,7 +56,7 @@ For the previous Hyperice flagship, see the [Hypervolt 2 Pro](/reviews/hypervolt
   relatedComparisonSlug: 'best-massage-guns-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default hv3ProVsTheragunProPlus

@@ -56,7 +56,7 @@ Against the clinical reference, see [Coway Airmega 400 vs IQAir HealthPro Plus](
   relatedComparisonSlug: 'best-air-purifiers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default cowayVsDyson

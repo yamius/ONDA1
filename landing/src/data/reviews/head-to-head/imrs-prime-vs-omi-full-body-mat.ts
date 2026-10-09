@@ -57,7 +57,7 @@ If you want straightforward single-modality PEMF mat use at accessible $1,500–
   relatedComparisonSlug: 'best-pemf-devices-2026',
   publishOn: '2026-06-22',
   datePublished: '2026-05-27',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default imrsVsOmi

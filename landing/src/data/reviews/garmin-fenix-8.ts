@@ -73,7 +73,7 @@ Why HRV is the signal worth tracking — and why the number differs by device.
     { q: "How long does the Fenix 8 battery last?", a: "Up to roughly 28–48 days with solar in smartwatch mode — the standout figure among flagship watches, meaning overnight HRV is rarely interrupted by charging." },
   ],
   datePublished: '2026-09-12',
-  dateModified: '2026-09-12',
+  dateModified: '2026-10-10',
 }
 
 export default garminFenix8

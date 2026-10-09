@@ -55,7 +55,7 @@ If extreme cold-exposure depth (sub-40°F, ice formation, Wim Hof Method) is the
 If typical daily-use cold-plunge practice is the goal — and trials have used a wide range of temperatures, with no established threshold for benefits — Plunge is the right shape. The $4,000+ savings versus Morozko buys a lot of other biohacker hardware.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default morozkoVsPlunge

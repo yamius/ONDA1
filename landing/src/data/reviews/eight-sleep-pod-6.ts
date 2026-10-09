@@ -72,7 +72,7 @@ Choose the Pod 6 if you want Eight Sleep’s climate control and wearable-free s
     { q: "Does the Eight Sleep Pod 6 track HRV?", a: "Yes. The Pod 6 tracks heart rate, breathing rate, HRV, snoring and sleep stages from sensors in the cover, without a wearable. No independent validation of the Pod 6 sensors has been published yet, so treat it as a trend rather than a clinical reading." },
   ],
   datePublished: '2026-10-01',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default eightSleepPod6

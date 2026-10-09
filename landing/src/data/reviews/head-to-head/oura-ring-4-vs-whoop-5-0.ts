@@ -55,7 +55,7 @@ The hardware story is nearly equivalent — both are optical PPG wearables; the 
 If you are training hard enough that a daily readiness signal changes your session — high-volume endurance, heavy lifting blocks, competition prep — Whoop is the right shape. If you want overnight HRV and sleep data composed with the rest of your life without ceremony, Oura is the right shape. Most users land on Oura; the minority who land on Whoop are the right minority for it.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default ouraRing4VsWhoop50

@@ -73,7 +73,7 @@ The sleep biology behind what these apps measure and the protocols they support.
     { q: "Is Endel worth it?", a: "Endel is worth it if you want distinctive, adaptive ambient audio to fall asleep to. Its soundscapes shift with time of day and other inputs, unlike a fixed playlist, and the app is calmly designed. It is not worth it if you want sleep data, since it offers no tracking or analytics." },
   ],
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-10-10',
 }
 
 export default endel

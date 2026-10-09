@@ -71,7 +71,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { q: "What are the downsides of the Morozko Forge?", a: "The Morozko Forge costs $10,000 or more, which is out of reach for most users, and it is overkill for general cold exposure. Some configurations require 220V electrical work, and buyers face long lead times and limited distribution." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default morozkoForge

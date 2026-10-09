@@ -127,7 +127,7 @@ Ask your doctor first if you take blood thinners, have a bleeding disorder or ar
     { q: "Is the Hypervolt 3 Pro worth it?", a: "Yes, for most people who want a premium gun. At $349 it is quiet (51 dB), runs up to four hours, has six speeds and a heated head, and costs $250 less than the Theragun PRO Plus. Choose the Theragun only if you need its deeper 16 mm stroke." },
   ],
   datePublished: '2026-09-06',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default hypervolt3Pro

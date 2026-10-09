@@ -70,7 +70,7 @@ Choose Breathe Right Original as the first nasal-airway-opener to try — cheape
     { q: "Who are Breathe Right Original strips best for?", a: "Breathe Right Original is best for first-time nasal-airway-opener users who want the drugstore reference at the lowest per-night cost. It is the one to try before committing to premium magnetic or internal alternatives. It has a decades-long FDA-cleared track record." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default breatheRight

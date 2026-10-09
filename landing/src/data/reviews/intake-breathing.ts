@@ -70,7 +70,7 @@ Choose Intake Breathing if you can\'t adapt to mouth tape and want the most effe
     { q: "Intake Breathing vs mouth tape: which should I try?", a: "Intake suits committed mouth-breathers who cannot adapt to mouth tape. Rather than sealing the lips, it opens the nasal airway, and it is the most effective external nasal dilator approach. It is visible on the face, though, and it has no FDA Class II clearance." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default intakeBreathing

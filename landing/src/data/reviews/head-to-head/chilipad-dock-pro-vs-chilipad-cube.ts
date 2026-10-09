@@ -56,7 +56,7 @@ If you sleep alone, you want set-and-forget water cooling, and your bedroom clim
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-06-15',
   datePublished: '2026-05-27',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default dockProVsCube

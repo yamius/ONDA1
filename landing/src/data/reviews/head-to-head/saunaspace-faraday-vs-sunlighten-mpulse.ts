@@ -57,7 +57,7 @@ If you want full-spectrum IR with the ability to programme near, mid and far sep
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default saunaspaceVsSunlighten

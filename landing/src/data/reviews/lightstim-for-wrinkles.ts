@@ -69,7 +69,7 @@ Choose LightStim for Wrinkles for peer-reviewed evidence at accessible pricing a
     { q: "LightStim vs a red light face mask: which is better?", a: "LightStim has the stronger evidence base, but it is a handheld you must actively move across your face each session, which is slower than a lie-on mask. Masks let you do other things during treatment. LightStim also has no app or session programming." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-10-10',
 }
 
 export default lightstim

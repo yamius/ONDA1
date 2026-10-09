@@ -70,7 +70,7 @@ Choose Lumara Viso if you want maximum LED count and three-wavelength coverage i
     { q: "Lumara Viso vs Omnilux: which is better?", a: "Omnilux is the stronger pick for clinical evidence, while the Lumara Viso wins on raw specs. Viso offers 470 LEDs, three wavelengths and an included neck flap in flexible silicone; its evidence moat is lighter than Omnilux's. Choose Viso for coverage, Omnilux for dermatology pedigree." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-10-10',
 }
 
 export default lumaraViso

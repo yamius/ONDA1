@@ -70,7 +70,7 @@ Choose IQAir HealthPro Plus for clinical-grade HEPA filtration — accept lack o
     { q: "What are the downsides of the IQAir HealthPro Plus?", a: "It costs $1,099 and has no app, no sensors and no auto mode, so control is manual only. It is also loud on high speed, at around 65 dB. You are paying for filtration depth and multi-decade Swiss pedigree, not convenience features." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default iqairHealthPro

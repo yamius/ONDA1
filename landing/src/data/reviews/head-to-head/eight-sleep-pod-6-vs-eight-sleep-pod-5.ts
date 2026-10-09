@@ -52,7 +52,7 @@ Keep it. The Pod 6 upgrade is mostly a smaller hub and more sensors, and a Pod 5
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-09-30',
   datePublished: '2026-09-30',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default pod6VsPod5

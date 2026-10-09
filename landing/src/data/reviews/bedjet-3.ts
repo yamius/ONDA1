@@ -72,7 +72,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
     { q: "BedJet 3 vs Eight Sleep: which is better?", a: "Eight Sleep is better for rigorous temperature control, while the BedJet 3 is better for affordability and easy setup. BedJet pushes air through a duct under the sheet with no water tank, is cheaper and needs no subscription, but its temperature control is less rigorous." },
   ],
   datePublished: '2026-06-15',
-  dateModified: '2026-06-15',
+  dateModified: '2026-10-10',
 }
 
 export default bedjet3

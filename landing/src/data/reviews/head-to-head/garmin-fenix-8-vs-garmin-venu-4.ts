@@ -59,7 +59,7 @@ HRV, sleep and everyday health are the point, you want a comfortable AMOLED watc
 Both measure; neither trains. A ring may beat both for pure overnight HRV precision — see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026) — and the [state-changing part](/articles/active-intervention-vs-passive-tracking) still comes from active [HRV biofeedback](/hrv-biofeedback).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-12',
-  dateModified: '2026-09-12',
+  dateModified: '2026-10-10',
 }
 
 export default fenix8VsVenu4

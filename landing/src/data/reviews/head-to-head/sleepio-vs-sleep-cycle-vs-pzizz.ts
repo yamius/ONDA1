@@ -68,7 +68,7 @@ If you want to track sleep — smart alarm, sleep-stage estimates, snoring detec
 If you want help getting to sleep tonight without a programme, Pzizz is the right shape. Generative dreamscape audio purpose-built for sleep onset — press-play and the experience does the rest. For clinical insomnia it is not the right tool; for nightly wind-down it is.`,
   relatedComparisonSlug: 'best-sleep-apps-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-10',
 }
 
 export default threeSleep

@@ -69,7 +69,7 @@ Choose OPOVE M3 Pro 2 for mid-budget premium-tier percussion. For higher stall f
     { q: "What are the downsides of the OPOVE M3 Pro 2?", a: "It has no app or smart features, lower brand recognition than Theragun or Hyperice, a 1-year warranty versus Therabody's 2 years, and a standard single grip without extra versatility. You are paying for raw specs, battery life and quiet operation rather than brand or smart features." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-07-20',
+  dateModified: '2026-10-10',
 }
 
 export default opoveM3

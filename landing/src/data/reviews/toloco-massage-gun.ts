@@ -68,7 +68,7 @@ Choose TOLOCO if $69 vs $99 is meaningful and you accept reduced stall force. Fo
     { q: "What are the downsides of the TOLOCO massage gun?", a: "TOLOCO has the lowest stall force in the roundup at 25–30 lbs, a thin brand pedigree, and variable build quality in user reports. It is also noisier than Renpho or Bob and Brad budget alternatives." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-07-20',
+  dateModified: '2026-10-10',
 }
 
 export default tolocoGun

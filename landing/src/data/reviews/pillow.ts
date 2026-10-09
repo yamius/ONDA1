@@ -73,7 +73,7 @@ The sleep biology behind what these apps measure and the protocols they support.
     { q: "What are the downsides of Pillow?", a: "Pillow is iOS-only with no Android version, leans heavily on owning an Apple Watch, has minimal wind-down content, and needs a subscription for its fuller features. It is best as a detailed analysis tool for Apple Watch owners rather than a relaxation or wind-down app." },
   ],
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-10-10',
 }
 
 export default pillow

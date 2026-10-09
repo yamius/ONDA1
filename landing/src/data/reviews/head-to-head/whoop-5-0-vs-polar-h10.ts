@@ -98,7 +98,7 @@ Adding a smartwatch to the decision? See [Polar H10 vs Whoop 5.0 vs Garmin Venu 
 - [WHOOP membership pricing](https://support.whoop.com/s/article/Membership-Pricing?language=en_US) and [Polar H10 product page](https://www.polar.com/us-en/sensors/h10-heart-rate-sensor), checked 2026-10-02`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default whoopVsPolarH10

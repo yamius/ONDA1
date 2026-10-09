@@ -56,7 +56,7 @@ For the subscription-free field beyond Samsung, see [RingConn Gen 3 vs Oura Ring
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-18',
   datePublished: '2026-09-18',
-  dateModified: '2026-09-18',
+  dateModified: '2026-10-10',
 }
 
 export default oura5VsGalaxy

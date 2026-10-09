@@ -109,7 +109,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
   ],
 
   datePublished: '2026-05-25',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default clearlightSanctuary2

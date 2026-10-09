@@ -57,7 +57,7 @@ If you are in an EU market, Veri is the right shape — same job as Levels (cons
 If you are in the US, Levels remains the right shape — the deeper meal-impact analytics, the more accurate sensor, the more mature app. The premium pricing is the cost of the analytical depth; EU readers can keep this comparison filed under "what to know about the cross-border alternative".`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default veriVsLevels

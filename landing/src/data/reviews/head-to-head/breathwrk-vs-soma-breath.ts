@@ -56,7 +56,7 @@ If you want beat-paced rhythmic music breathwork with ceremony framing and acces
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default breathwrkVsSoma

@@ -56,7 +56,7 @@ For a subscription-free ring that lasts far longer, see [Amazfit Helio vs RingCo
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default helioVsOura4

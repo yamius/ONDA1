@@ -71,7 +71,7 @@ Choose Breathwrk if you want the largest structured library and science-informed
     { q: "Who is Breathwrk best for?", a: "Breathwrk is best for users who want the largest structured breathwork library, science-informed copy backed by one published study on cyclic sighing, and full technique coverage, including box, 4-7-8, Wim Hof, Tummo, cyclic sighing and Buteyko. It is the rational default for daily practice." },
   ],
   datePublished: '2026-06-29',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default breathwrk

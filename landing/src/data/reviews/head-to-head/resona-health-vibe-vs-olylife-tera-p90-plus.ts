@@ -55,7 +55,7 @@ Only if you find a specific deal, explicitly discount the terahertz claims, and 
   relatedComparisonSlug: 'best-pemf-devices-2026',
   publishOn: '2026-06-22',
   datePublished: '2026-05-27',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default resonaVsOlylife

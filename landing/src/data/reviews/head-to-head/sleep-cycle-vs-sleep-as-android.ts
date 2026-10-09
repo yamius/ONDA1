@@ -57,7 +57,7 @@ If you want a polished, low-friction sleep tracker that works the same on iPhone
 If you are on Android and you would rather have automation, plugin ecosystem and granular control than a polished out-of-box experience, Sleep as Android is the right shape. The Tasker integration alone is reason enough for power users. For iPhone users it is not an option.`,
   relatedComparisonSlug: 'best-sleep-apps-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-10',
 }
 
 export default sleepCycleVsSleepAsAndroid

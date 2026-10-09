@@ -68,7 +68,7 @@ If you want premium consumer-brand polish + best smart features + formaldehyde d
   relatedComparisonSlug: 'best-air-purifiers-2026',
   publishOn: '2026-07-27',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-10',
 }
 
 export default iqairVsMolekuleVsDyson

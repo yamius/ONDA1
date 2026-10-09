@@ -56,7 +56,7 @@ For a subscription-free ring whose health features actually ship, see [Circular 
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default circularVsOura5

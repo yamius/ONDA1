@@ -70,7 +70,7 @@ Choose Theragun PRO Plus for spec-ceiling percussion therapy with Therabody ecos
     { q: "What are the downsides of the Theragun PRO Plus?", a: "The PRO Plus costs $599, is heavy at about 2.9 lbs so single-hand sessions feel long, and offers only a marginal motor improvement over the Elite for 50% more money. Its app also pushes ecosystem upsells." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-07-20',
+  dateModified: '2026-10-10',
 }
 
 export default theragunProPlus

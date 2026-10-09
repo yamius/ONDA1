@@ -70,7 +70,7 @@ Choose HigherDOSE PEMF Mat for consumer-polished multi-modality recovery at $1,2
     { q: "What are the downsides of the HigherDOSE PEMF Mat?", a: "Its PEMF intensity is modest compared with Healthy Wave or clinical mats, and it offers only 4 preset frequency levels (3–23 Hz) with no protocol depth. Research backing is light, since the marketing leans on the multi-modality stack rather than PEMF specifics. The one-year warranty is also short." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default higherDosePemf

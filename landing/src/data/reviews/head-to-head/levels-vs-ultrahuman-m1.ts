@@ -57,7 +57,7 @@ If you treat CGM as the primary instrument — running structured meal experimen
 If you already own an Ultrahuman ring or plan to, M1 is the right shape because glucose composed with HRV and sleep on one timeline is a meaningful cross-signal view nothing else in the consumer market offers. As a standalone CGM programme it is the wrong choice — go for Levels or Stelo instead.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default levelsVsUltrahumanM1

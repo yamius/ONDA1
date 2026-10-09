@@ -57,7 +57,7 @@ If you want clinical-grade HyperHEPA H14 depth + multi-decade Swiss pedigree —
   relatedComparisonSlug: 'best-air-purifiers-2026',
   publishOn: '2026-07-27',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-10',
 }
 
 export default dysonVsIqair

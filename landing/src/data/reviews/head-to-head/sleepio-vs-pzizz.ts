@@ -57,7 +57,7 @@ If you have chronic insomnia — six weeks of trouble falling or staying asleep,
 If you want help getting to sleep tonight, without a structured programme, Pzizz is the right shape. The generative dreamscape audio works as a press-play nightly ritual; the nap mode and focus mode add daytime use cases. For clinical insomnia it is not the right tool — but it is a good nightly companion for users who just want to wind down.`,
   relatedComparisonSlug: 'best-sleep-apps-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-10',
 }
 
 export default sleepioVsPzizz

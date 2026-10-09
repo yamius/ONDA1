@@ -72,7 +72,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "Who is the BioLight Pro 900 best for?", a: "The BioLight Pro 900 is best for buyers who want a competent four-wavelength red light panel under $1,000 without paying the Joovv brand premium. It fits those who value published EMF testing and included mounting hardware over brand recognition." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default bioLightPro900

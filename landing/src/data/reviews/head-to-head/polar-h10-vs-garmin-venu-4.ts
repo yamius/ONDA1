@@ -61,7 +61,7 @@ If you want continuous overnight HRV plus a training-analytics smartwatch — VO
 Garmin Venu 4 for the continuous signal; Polar H10 for reference measurements and chest-strap workouts. The H10 pairs directly to the Garmin watch over ANT+/Bluetooth so the configuration is clean.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default polarH10VsGarmin

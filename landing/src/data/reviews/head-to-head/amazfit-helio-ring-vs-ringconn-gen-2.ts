@@ -90,7 +90,7 @@ Against Oura: [Amazfit Helio vs Oura Ring 4](/reviews/vs/amazfit-helio-ring-vs-o
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default helioVsRingconn

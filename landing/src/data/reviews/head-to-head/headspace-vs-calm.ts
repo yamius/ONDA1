@@ -55,7 +55,7 @@ If you have never meditated and want to learn — the Basics course, the structu
 If sleep content matters as much as meditation, or you respond better to celebrity narration than to a single teacher voice, Calm is the right shape. The library is broader, the Sleep Stories format is category-defining, and the ambient soundscapes work as background content in a way Headspace does not.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default headspaceVsCalm

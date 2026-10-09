@@ -60,7 +60,7 @@ If HRV is a feature on the list but not the deciding criterion, Apple Watch is t
 Many users land here: Apple Watch by day, Oura by night. Apple comes off when you go to bed, Oura stays on. Cost is the trade.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default ouraVsAppleWatch

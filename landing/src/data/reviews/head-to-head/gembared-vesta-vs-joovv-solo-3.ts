@@ -57,7 +57,7 @@ If EMF discipline is a first-class criterion (you are sensitive to it or running
 If modular full-body scaling fits your setup plan and the larger brand’s warranty/support footprint matters, Joovv is the right shape.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default gembaredVsJoovv

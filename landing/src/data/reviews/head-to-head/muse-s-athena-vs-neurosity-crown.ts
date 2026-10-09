@@ -84,7 +84,7 @@ Consumer EEG can show broad changes in brain activity, such as more alpha when y
 For most people, **Muse S Athena** is the better buy: more useful day to day, sleep tracking included and about a third of the price. Choose **Neurosity Crown** only if raw multi-channel EEG and an open SDK are the reason you are buying a headset.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',
   datePublished: '2026-10-04',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default museSAthenaVsNeurosityCrown

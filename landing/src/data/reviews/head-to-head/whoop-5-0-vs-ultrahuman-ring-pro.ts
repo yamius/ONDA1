@@ -56,7 +56,7 @@ Against the other subscription-free rings, see [RingConn Gen 3 vs Ultrahuman Rin
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-18',
   datePublished: '2026-09-18',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default whoop50VsRingPro

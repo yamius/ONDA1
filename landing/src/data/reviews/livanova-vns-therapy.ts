@@ -74,7 +74,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "How does LivaNova VNS compare with consumer VNS devices?", a: "LivaNova is the clinical gold standard for VNS, with twenty-plus years of evidence and direct cervical vagus stimulation, the most efficacious approach. The review treats it as a reference point for understanding what non-invasive consumer VNS devices can and cannot replicate, not as an alternative you choose off the shelf." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-10',
 }
 
 export default livanovaVnsTherapy

@@ -73,7 +73,7 @@ The sleep biology behind what these apps measure and the protocols they support.
     { q: "What are the downsides of Sleepio?", a: "Sleepio is not a tracker or a sound library, and it requires real commitment over several weeks. If you pay directly, there is no meaningful free tier. It is also overkill for people who sleep fine and only want sleep statistics." },
   ],
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-10-10',
 }
 
 export default sleepio

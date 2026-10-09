@@ -72,7 +72,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "Who is the JNH Lifestyles Joyous best for?", a: "It suits buyers who want a real cabin IR sauna at the lowest credible price. It offers Canadian hemlock construction, a 5-year warranty on heaters and several capacity options. Buyers who want full-spectrum IR or strict low-EMF engineering should look at premium brands." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default jnhLifestylesJoyous

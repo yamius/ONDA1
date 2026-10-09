@@ -74,7 +74,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { q: "Signos vs Levels: which is better?", a: "Choose Signos if weight loss is the goal and AI coaching nudges motivate you; it is cheaper than Levels on the same Dexcom G7 hardware. Choose Levels if you want deeper, more academic metabolic insight for general biohacking rather than a weight-loss programme." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-10',
 }
 
 export default signos

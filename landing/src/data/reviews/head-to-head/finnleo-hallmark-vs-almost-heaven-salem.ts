@@ -57,7 +57,7 @@ If you have outdoor install space and want a traditional cedar barrel sauna with
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-05-25',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default finnleoVsAlmostHeaven

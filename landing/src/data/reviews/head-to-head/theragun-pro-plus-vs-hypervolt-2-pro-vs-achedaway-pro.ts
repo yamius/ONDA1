@@ -68,7 +68,7 @@ If you want highest stall force (80 lbs) at sub-Theragun pricing and you don\'t 
   relatedComparisonSlug: 'best-massage-guns-2026',
   publishOn: '2026-07-20',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-10',
 }
 
 export default theragunVsHypervoltVsAchedaway

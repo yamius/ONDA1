@@ -60,7 +60,7 @@ Recovery and strain coaching actually changes your training, you want a mature p
 Neither replaces active practice. A tracker — either of these — tells you *how you recovered*; it does not change your state. Pair whichever you buy with an [active practice](/articles/active-intervention-vs-passive-tracking) like [HRV biofeedback](/hrv-biofeedback), which is the part a band cannot do.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-12',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default fitbitAirVsWhoop50

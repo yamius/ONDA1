@@ -69,7 +69,7 @@ Choose Shark CryoGlow if you want cooling + LED combined into one device for a s
     { q: "What are the downsides of the Shark CryoGlow?", a: "The CryoGlow's cooling element compromises LED dose, and the hybrid design is heavier and more complex to use daily than a pure silicone mask. There is also limited peer-reviewed clinical evidence on the cooling-plus-LED combination specifically, so its benefits rest more on concept than proof." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-10-10',
 }
 
 export default sharkCryoglow

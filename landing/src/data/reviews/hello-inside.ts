@@ -71,7 +71,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { q: "Hello Inside vs Veri: which is better?", a: "Veri offers a deeper insight engine and broader third-party integration. Hello Inside wins on language: it has the strongest German-language CGM content in the category. German-speaking EU users will likely prefer Hello Inside; others will usually get more from Veri." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-10',
 }
 
 export default helloInside

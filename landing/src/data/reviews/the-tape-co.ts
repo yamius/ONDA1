@@ -69,7 +69,7 @@ Choose The Tape Co. if you want an X-pattern design that leaves the mouth corner
     { q: "What are the downsides of The Tape Co.?", a: "The Tape Co. has no FDA registration and, as a newer brand, lacks a multi-year track record. Its two-piece application is higher friction than single-piece strips, and it costs mid-tier without premium brand polish." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default theTapeCo

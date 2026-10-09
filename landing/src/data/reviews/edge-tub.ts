@@ -72,7 +72,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { q: "Edge Tub vs The Plunge: which is better?", a: "The Edge Tub is better for value; The Plunge is better for track record and warranty. Edge offers comparable chiller hardware at roughly half the price, while Plunge has a 3-year warranty and more developed protocol guidance." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default edgeTub

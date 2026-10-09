@@ -57,7 +57,7 @@ If you have a diagnosed migraine or cluster-headache condition and a clinician w
 If you want clinical-grade tVNS at home without going through a clinician — for HRV training, stress modulation, sleep-onset work, anxiety-related self-experimentation — Nurosym is the right shape. The Parasym hardware appears in dozens of peer-reviewed trials across exactly those indications; the parameters are disclosed; no prescription gate.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default gammacoreVsNurosym

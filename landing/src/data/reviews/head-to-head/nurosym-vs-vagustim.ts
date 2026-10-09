@@ -57,7 +57,7 @@ If you are running structured tVNS self-experiments, want the deepest published 
 If you are in an EU market and want a wider library of disclosed-parameter presets covering sleep, stress, depression, anxiety and IBS protocols, Vagustim is the right shape. The lower price and the protocol variety are the differentiators; the trade is brand recognition and trial volume.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default nurosymVsVagustim

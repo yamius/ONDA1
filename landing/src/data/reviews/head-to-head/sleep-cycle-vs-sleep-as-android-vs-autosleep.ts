@@ -69,7 +69,7 @@ If you are an iPhone user with an Apple Watch and want native HealthKit-integrat
   relatedComparisonSlug: 'best-sleep-apps-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-06-04',
+  dateModified: '2026-10-10',
 }
 
 export default sleepCycleVsSleepAsAndroidVsAutoSleep

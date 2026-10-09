@@ -73,7 +73,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
     { q: "Eight Sleep Pod 3 vs Pod 4: which is better?", a: "The Pod 4 is better for climate performance; the Pod 3 is better for value when discounted. Both share the app, tracking and Autopilot, but the Pod 3 has a slightly narrower climate range and costs about $1,800 versus $4,000." },
   ],
   datePublished: '2026-06-15',
-  dateModified: '2026-06-15',
+  dateModified: '2026-10-10',
 }
 
 export default eightSleepPod3

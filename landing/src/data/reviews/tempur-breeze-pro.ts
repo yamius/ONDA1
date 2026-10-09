@@ -72,7 +72,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
     { q: "What are the downsides of the Tempur-Breeze Pro?", a: "The Tempur-Breeze Pro has no active climate control, so temperature cannot be adjusted, and its passive cooling diminishes through the night. It has no tracking and carries premium pricing without smart-system features." },
   ],
   datePublished: '2026-06-15',
-  dateModified: '2026-06-15',
+  dateModified: '2026-10-10',
 }
 
 export default tempurBreezePro

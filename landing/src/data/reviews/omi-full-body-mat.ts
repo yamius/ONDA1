@@ -68,7 +68,7 @@ Choose OMI Full Body Mat for straightforward mid-tier single-modality PEMF at ac
     { q: "What are the downsides of the OMI Full Body PEMF Mat?", a: "The OMI mat relies on black-box presets with limited parameter exposure, is single-modality with no IR or red light stacking, has no trials of the mat itself, and carries less brand recognition than Bemer or HigherDOSE. It is a simple, single-purpose mat." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default omiFullBodyMat

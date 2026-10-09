@@ -72,7 +72,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { q: "Coldture vs The Plunge: which is better?", a: "Coldture is better for cold-climate and EU or Canadian buyers; The Plunge has stronger brand recognition and protocol content. Coldture is slightly cheaper with an outdoor winter rating and better EU and Canada distribution, while its guidance library is less developed." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default coldture

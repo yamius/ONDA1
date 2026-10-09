@@ -70,7 +70,7 @@ Choose Ekrin B37 for lifetime-warranty mid-tier percussion with athlete brand pe
     { q: "Who is the Ekrin B37 best for?", a: "The Ekrin B37 is best for athletes who want a lifetime-warranty mid-tier massage gun. It suits buyers who value long-term ownership, athlete-focused positioning and about 8 hours of battery over premium amplitude. It offers 56 lbs stall force for $249.99." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default ekrinB37

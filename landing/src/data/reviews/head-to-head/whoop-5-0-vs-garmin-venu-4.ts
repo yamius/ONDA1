@@ -56,7 +56,7 @@ If you train hard, value daily readiness as a coaching prompt, and the no-displa
 If you would rather pay once, look at a watch face on your wrist, and have Strava and TrainingPeaks integration first-party in your training stack, Garmin Venu 4 is the right shape. Over three years it costs less than even the cheapest Whoop tier ($597) — and roughly half of Whoop Life ($1,077) — with no functional gap for most training use cases.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default whoop50VsGarminVenu4

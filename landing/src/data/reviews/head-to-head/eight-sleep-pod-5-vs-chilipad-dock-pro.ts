@@ -58,7 +58,7 @@ If you want the same debate one generation down, see [Pod 4 vs ChiliPad Dock Pro
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default pod5VsChilipad

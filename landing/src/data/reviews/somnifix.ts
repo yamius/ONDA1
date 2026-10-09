@@ -71,7 +71,7 @@ Choose Somnifix if you want FDA-registered medical-credibility mouth tape with a
     { q: "What are the downsides of Somnifix?", a: "Somnifix is less beard-friendly than Hostage Tape, costs more per night at about $0.90, and offers smaller coverage than Hostage Tape's full strip. It also has lower brand recognition due to less aggressive marketing." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default somnifix

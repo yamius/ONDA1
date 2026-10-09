@@ -70,7 +70,7 @@ Choose Achedaway Pro for spec-maximalist percussion without paying for premium-b
     { q: "Who is the Achedaway Pro best for?", a: "The Achedaway Pro is best for spec-maximalist biohackers who want the highest stall force at sub-Theragun pricing. It suits buyers who do not need an app and are comfortable trading brand pedigree and smart features for 80 lbs of stall force, 16 mm amplitude and 7 attachments." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-07-20',
+  dateModified: '2026-10-10',
 }
 
 export default achedawayPro

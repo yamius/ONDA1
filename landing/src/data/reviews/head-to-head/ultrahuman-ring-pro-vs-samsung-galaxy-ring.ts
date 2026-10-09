@@ -56,7 +56,7 @@ For the accuracy flagship, see [Ring Pro vs Oura Ring 5](/reviews/vs/ultrahuman-
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default ringProVsSamsung

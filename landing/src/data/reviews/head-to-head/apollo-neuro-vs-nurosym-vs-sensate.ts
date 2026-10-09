@@ -68,7 +68,7 @@ If a pleasant focused evening wind-down ritual is what you want, Sensate is the 
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default apolloVsNurosymVsSensate

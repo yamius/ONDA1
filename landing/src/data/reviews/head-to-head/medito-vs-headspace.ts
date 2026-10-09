@@ -78,7 +78,7 @@ Meditation apps have been studied in randomised trials, mostly short ones, with 
 For a free alternative to Headspace, **Medito** is the cleanest choice: no cost, no ads, no account. **Headspace** remains the better teacher for beginners who want structure and are willing to pay about $70 a year. See the full [Medito review](/reviews/medito) and [Headspace review](/reviews/headspace) for scores.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-10-04',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default meditoVsHeadspace

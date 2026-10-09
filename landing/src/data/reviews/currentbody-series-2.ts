@@ -70,7 +70,7 @@ Choose CurrentBody Series 2 if you want the consumer-market reference with integ
     { q: "CurrentBody Series 2 vs Dr. Dennis Gross SpectraLite: which is better?", a: "CurrentBody Series 2 is better for comfort and neck coverage; SpectraLite is better for dermatology pedigree and acne. CurrentBody uses flexible silicone with a neck flap, while SpectraLite adds blue light but has a hard shell and no neck flap." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-10-10',
 }
 
 export default currentbodySeries2

@@ -55,7 +55,7 @@ If you want budget entry to red light with multi-modality consumer stack — Sol
   relatedComparisonSlug: 'best-red-light-face-masks-2026',
   publishOn: '2026-07-06',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-10',
 }
 
 export default lightstimVsSolawave

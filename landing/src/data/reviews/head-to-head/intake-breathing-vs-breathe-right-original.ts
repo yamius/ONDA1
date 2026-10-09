@@ -57,7 +57,7 @@ If you want the FDA-cleared drugstore reference at lowest per-night cost — Bre
   relatedComparisonSlug: 'best-mouth-tape-nasal-breathing-2026',
   publishOn: '2026-07-13',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-10',
 }
 
 export default intakeVsBreatheRight

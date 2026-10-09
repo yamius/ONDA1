@@ -72,7 +72,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "What are the downsides of Xen by Neuvana?", a: "Independent clinical evidence on the Xen device is thin. In-ear electrode placement is fiddlier than a tragus clip, the earbuds are cabled to a control unit, and there is no on-device HRV measurement." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-10',
 }
 
 export default xenByNeuvana

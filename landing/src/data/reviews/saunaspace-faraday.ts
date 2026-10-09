@@ -72,7 +72,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "What are the downsides of the SaunaSpace Faraday?", a: "It is near-IR only, with no mid or far IR. Tent configurations require assembly, premium pricing starts above $4,000 for the base setup, and its user base is smaller than mainstream IR brands such as Sunlighten and Clearlight." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default saunaspaceFaraday

@@ -73,7 +73,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "What are the downsides of the Joovv Solo 3.0?", a: "Price is the main one: $1,699 per panel and $3,000–$5,000 for a full-body stack. It also offers no exotic wavelength options such as 810, 830 or 940 nm, and it uses a single front-emitter layout rather than a bidirectional design." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default joovvSolo3

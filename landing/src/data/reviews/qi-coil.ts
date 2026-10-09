@@ -67,7 +67,7 @@ Only for someone who wants a portable frequency gadget and a big preset library 
     { q: "What are the downsides of the Qi Coil?", a: "The Qi Coil's mechanism rests on Rife and scalar theory without credible clinical evidence, it does not disclose PEMF waveform, frequency range or intensity, its $797 to $9,995 pricing is extreme, and its medbed and scalar marketing overstates what a consumer coil can do." },
   ],
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default qiCoil

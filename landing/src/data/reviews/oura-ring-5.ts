@@ -75,7 +75,7 @@ Choose the Oura Ring 5 if you are buying fresh and want overnight HRV and sleep 
     { q: "Is the Oura Ring 5 accurate for sleep and HRV?", a: "Previous Oura generations agreed well with ECG overnight, and finger-based measurement suits sleep tracking; the Ring 5 itself has not been separately validated." },
   ],
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default ouraRing5

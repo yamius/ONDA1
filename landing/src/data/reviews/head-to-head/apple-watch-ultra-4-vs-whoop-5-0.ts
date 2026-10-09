@@ -52,7 +52,7 @@ Older Apple Watches reported sparse SDNN, which never lined up with Whoop’s RM
 If you train on a daily recovery score and want nothing on your wrist but the sensor, Whoop is the purer tool. If you would use the Ultra’s rugged, outdoor and smartwatch features anyway, its HRV is now usable as a personal trend without paying a membership. If you only want the most precise overnight HRV, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default ultra4VsWhoop5

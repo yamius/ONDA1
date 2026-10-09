@@ -70,7 +70,7 @@ Choose Breathe2Relax if you want evidence-backed free diaphragmatic breathing â€
   ],
 
   datePublished: '2026-06-29',
-  dateModified: '2026-09-17',
+  dateModified: '2026-10-10',
 }
 
 export default breatheToRelax

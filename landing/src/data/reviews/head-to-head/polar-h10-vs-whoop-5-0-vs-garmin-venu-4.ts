@@ -69,7 +69,7 @@ If you want a training-analytics smartwatch with first-party VO2 max, training-l
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default polarVsWhoopVsGarmin

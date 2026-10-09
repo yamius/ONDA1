@@ -69,7 +69,7 @@ Choose the Noise Luna Ring Gen 2 if you want a cheap, subscription-free ring wit
     { q: "What is the Noise Luna Ring battery life?", a: "The single-charge battery is modest, but the charging case extends total battery considerably — a practical setup for weeks between wall charges." },
   ],
   datePublished: '2026-09-06',
-  dateModified: '2026-09-18',
+  dateModified: '2026-10-10',
 }
 
 export default lunaRing

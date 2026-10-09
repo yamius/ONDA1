@@ -94,7 +94,7 @@ Choose Resona Health VIBE if you are curious about PEMF and want a low-commitmen
   ],
 
   datePublished: '2026-06-22',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default resonaVibe

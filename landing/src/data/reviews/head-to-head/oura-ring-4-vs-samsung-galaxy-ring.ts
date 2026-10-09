@@ -57,7 +57,7 @@ If you are on iPhone or you have a cross-platform household where the device nee
 If you are inside the Samsung ecosystem — Galaxy phone, Galaxy Watch, Samsung Health — Samsung Galaxy Ring is the right shape. Wearing a Galaxy Watch and a Galaxy Ring together in one app (a cross-check, not a validation) is unique, the subscription-free model saves $215 over three years, and Samsung Health is a credible health-data platform. For iPhone users it is the wrong shape; for Android users outside Samsung it loses most of its integration advantage.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default ouraVsSamsungRing

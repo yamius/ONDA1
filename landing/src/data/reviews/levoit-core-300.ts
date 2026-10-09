@@ -69,7 +69,7 @@ Choose Levoit Core 300 as starter purifier for single bedroom at $99. For larger
     { q: "Does the Levoit Core 300 have an app or auto mode?", a: "No. The Core 300 has no app, no sensor and no auto mode, just three manual speeds. It is a purely mechanical entry-level device in a plastic budget build. For app control and auto mode, the Levoit Core 600S is the step up at $299." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default levoitCore300

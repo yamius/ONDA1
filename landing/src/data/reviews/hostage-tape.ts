@@ -70,7 +70,7 @@ Choose Hostage Tape if you have a beard and want subscription-convenient biohack
     { q: "Is Hostage Tape safe for everyone?", a: "No. Its full-seal design is contraindicated if you might have undiagnosed sleep apnea, so get that checked first. There is also no porous-strip variant for people who want only a partial seal, and peer-reviewed evidence on this specific tape is limited." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default hostageTape

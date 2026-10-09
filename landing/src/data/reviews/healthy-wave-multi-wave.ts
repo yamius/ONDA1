@@ -101,7 +101,7 @@ Because the mat gets hot, take care if you have reduced sensation (for example, 
   ],
 
   datePublished: '2026-06-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default healthyWaveMultiWave

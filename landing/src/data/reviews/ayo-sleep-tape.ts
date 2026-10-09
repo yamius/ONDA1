@@ -70,7 +70,7 @@ Choose AYO Sleep Tape for sensitive-skin K-beauty hypoallergenic mouth tape at m
     { q: "AYO Sleep Tape vs Hostage Tape: which is better?", a: "AYO Sleep Tape is better for sensitive skin, while Hostage Tape is better for beards. AYO's K-beauty hypoallergenic adhesive is gentle and priced around $0.50 per night, but it is less beard-friendly and a newer brand in the Western market than Hostage Tape." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default ayoSleepTape

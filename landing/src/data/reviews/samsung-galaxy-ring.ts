@@ -75,7 +75,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
 
   datePublished: '2026-05-15',
-  dateModified: '2026-09-12',
+  dateModified: '2026-10-10',
 }
 
 export default samsungGalaxyRing

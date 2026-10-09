@@ -74,7 +74,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "Nurosym vs Pulsetto: which is better?", a: "Nurosym is better for evidence: it has the deepest peer-reviewed research base in consumer tVNS. Pulsetto is cheaper at $269, is neck-worn and offers four guided programmes, but its independent clinical evidence is thinner than Nurosym's." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default nurosym

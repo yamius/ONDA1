@@ -69,7 +69,7 @@ Choose the Circular Ring 2 only if you’re an early adopter who wants on-ring E
     { q: "How much does the Circular Ring 2 cost and does it need a subscription?", a: "It starts at $349 (Obsidian Black; up to $549 for Gold/Rose Gold), and it is subscription-free." },
   ],
   datePublished: '2026-09-06',
-  dateModified: '2026-09-18',
+  dateModified: '2026-10-10',
 }
 
 export default circularRing2

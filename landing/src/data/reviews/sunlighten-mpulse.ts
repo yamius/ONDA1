@@ -72,7 +72,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "What are the downsides of the Sunlighten mPulse?", a: "The mPulse costs $5,000 to $10,000+, needs dedicated install space of at least 4×4 ft, and larger configurations require 220V electrical. Lead times can also stretch during peak demand, so plan the purchase ahead." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default sunlightenMpulse

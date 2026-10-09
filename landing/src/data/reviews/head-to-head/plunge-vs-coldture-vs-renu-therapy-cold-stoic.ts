@@ -62,7 +62,7 @@ If you are in Canada, EU or a cold-climate US region installing outdoors — Col
 If you are installing indoors and chiller noise matters (basement, garage near living spaces, wellness room) — Renu Therapy’s quiet chiller is the deciding feature. Temperature floor is marginally less aggressive than Plunge’s but rarely the deciding factor.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default threePremiumPlunge

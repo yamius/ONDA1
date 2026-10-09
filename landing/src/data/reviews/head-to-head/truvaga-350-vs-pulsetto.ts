@@ -57,7 +57,7 @@ If you value the gammaCore lineage — the same manufacturing pedigree, the same
 If you want a daily-use collar with four guided programmes, structured 4–20 minute sessions and no session lifetime cap, Pulsetto is the right shape. At $269 versus $325 for the Truvaga 350 it is a little cheaper, with broader programme variety. Most consumer users land here.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default truvagaVsPulsetto

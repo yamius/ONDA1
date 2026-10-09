@@ -70,7 +70,7 @@ Choose 3M Nexcare for cost-conscious DIY mouth tape — clinical adhesive at low
     { q: "Nexcare vs Hostage Tape: which is better?", a: "Nexcare wins on cost, at about $0.05 per night, and lets you cut any size you prefer. Hostage Tape is more beard-friendly and offers brand convenience. Choose Nexcare for DIY value, Hostage Tape if a beard or pre-cut ease matters more." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default nexcareSurgical

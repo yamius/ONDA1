@@ -59,7 +59,7 @@ You want to glance at stats and notifications on your wrist, map runs with onboa
 The Air is brand-new (May 2026) with no independent HRV-accuracy validation yet, so read your own trend rather than trusting the absolute number. And either way, a Fitbit tells you how you recovered; the [state-changing part](/articles/active-intervention-vs-passive-tracking) comes from an active practice like [HRV biofeedback](/hrv-biofeedback).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-12',
-  dateModified: '2026-09-12',
+  dateModified: '2026-10-10',
 }
 
 export default fitbitAirVsCharge6

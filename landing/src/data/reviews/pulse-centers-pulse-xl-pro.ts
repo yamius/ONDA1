@@ -70,7 +70,7 @@ Choose Pulse Centers Pulse XL Pro if you're running serious athletic recovery or
     { q: "Pulse Centers Pulse XL Pro vs MagnaWave Mini: which is better?", a: "The Pulse XL Pro offers the highest consumer-accessible intensity and clinic-grade support. MagnaWave no longer sells a Mini; its compact Semi 10 starts at $8,360, so the two are now close in price. Choose Pulse Centers for clinic installs, MagnaWave for a portable, carry-case build aimed mainly at equine and mobile practitioners." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default pulseCentersXLPro

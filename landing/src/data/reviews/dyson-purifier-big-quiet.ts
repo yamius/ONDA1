@@ -70,7 +70,7 @@ Choose Dyson Big+Quiet for premium consumer brand + best smart features + formal
     { q: "Dyson Big+Quiet vs IQAir: which is better?", a: "IQAir is better for filtration depth; the Dyson is better for smart features and polish. IQAir uses HyperHEPA H14, while the Dyson uses H13 but adds formaldehyde destruction, a full app, built-in sensors and very quiet operation." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default dysonBigQuiet

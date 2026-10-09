@@ -74,7 +74,7 @@ The sleep biology behind what these apps measure and the protocols they support.
     { q: "BetterSleep vs AutoSleep: which is better?", a: "BetterSleep is better for getting to sleep; AutoSleep is better for measuring it. BetterSleep is a relaxation app first with the deepest wind-down content library, while AutoSleep is a purist Apple Watch tracker with no wind-down content at all." },
   ],
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-10-10',
 }
 
 export default bettersleep

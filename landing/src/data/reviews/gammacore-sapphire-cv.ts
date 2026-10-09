@@ -74,7 +74,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "Is gammaCore worth it?", a: "For clinically indicated migraine or cluster-headache patients, yes: it has the deepest randomised-trial evidence base of any device in its category. For general stress relief or wellness it is the wrong tool, because it is a clinical device with narrow indications and prescription gating." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default gammacoreSapphireCv

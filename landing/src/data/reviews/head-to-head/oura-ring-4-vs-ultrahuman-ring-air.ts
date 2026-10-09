@@ -58,7 +58,7 @@ If you want the most polished smart-ring experience and the analytics depth that
 If you want a smart ring without a subscription, the lightest possible form factor, or you already use (or plan to use) the Ultrahuman M1 CGM for the unique cross-signal glucose + HRV + sleep view, Ultrahuman is the right shape. Just go in aware of the battery-reliability caveat.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default ouraVsUltrahuman

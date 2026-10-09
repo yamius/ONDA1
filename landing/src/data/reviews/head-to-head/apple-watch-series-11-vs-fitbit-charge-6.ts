@@ -96,7 +96,7 @@ Both devices measure HRV optically at the wrist, which is fine for multi-day tre
 - [Fitbit Charge 6 — Google Store](https://store.google.com/product/fitbit_charge_6)`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default appleWatchVsFitbit

@@ -70,7 +70,7 @@ Choose Molekule Air Pro for PECO technology + premium smart features. For clinic
     { q: "Molekule Air Pro vs IQAir: which is better?", a: "IQAir is the clinical reference with a longer 2-to-4-year filter cycle and lower filter costs. The Molekule Air Pro counters with PECO VOC destruction and better smart features, including HomeKit and Google Home. Choose IQAir for running costs, Molekule for smart integration." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default molekuleAirPro

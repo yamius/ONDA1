@@ -69,7 +69,7 @@ If you want a science-based meditation framework from a credible research lab, a
   relatedComparisonSlug: 'best-meditation-apps-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default headspaceVsWakingUpVsHealthyMinds

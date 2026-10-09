@@ -52,7 +52,7 @@ Before September 2026, the Apple Watch reported SDNN sampled sparsely, while Our
 For many people the answer is both: an Oura Ring for the hands-off overnight trend, and an Apple Watch for everything a ring can’t do. If you only want the most precise overnight HRV, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-18',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default series12VsOura4

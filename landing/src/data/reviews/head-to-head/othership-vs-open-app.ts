@@ -56,7 +56,7 @@ If you want one premium app covering breath + meditation + movement rather than 
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default othershipVsOpen

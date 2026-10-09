@@ -72,7 +72,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
   ],
 
   datePublished: '2026-06-15',
-  dateModified: '2026-09-17',
+  dateModified: '2026-10-10',
 }
 
 export default slumberCloudDryline

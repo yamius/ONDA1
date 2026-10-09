@@ -72,7 +72,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { q: "Renu Cold Stoic vs Plunge: which is better?", a: "Choose the Renu Cold Stoic for indoor installs, since it has the quietest premium chiller. Choose The Plunge for a slightly colder 39°F floor and wider brand recognition. Pricing is comparable, and both include ozone and a 3-year warranty." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default renuTherapyColdStoic

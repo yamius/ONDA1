@@ -52,7 +52,7 @@ The Series 12’s Health Sensing System samples HRV far more often and reports R
 Both measure; neither trains. If a clean overnight HRV trend is your single priority, a finger ring outperforms either watch — see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-18',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default series12VsVenu4

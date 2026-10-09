@@ -56,7 +56,7 @@ Against the other cheap subscription-free ring, see [Noise Luna vs Amazfit Helio
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default lunaVsOura4

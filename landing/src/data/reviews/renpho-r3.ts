@@ -68,7 +68,7 @@ Choose Renpho R3 for pure spec-per-dollar Amazon budget. For Bob and Brad PT cre
     { q: "What are the downsides of the Renpho R3?", a: "The Renpho R3 has no app or smart features, no brand credibility moat, a standard single-grip handle, and only a 1-year warranty. It is a spec-per-dollar play rather than a premium brand purchase. Expect only basic features." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-07-20',
+  dateModified: '2026-10-10',
 }
 
 export default renphoR3

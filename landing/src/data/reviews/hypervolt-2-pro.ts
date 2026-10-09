@@ -73,7 +73,7 @@ Choose Hypervolt 2 Pro if you want premium percussion at $200 less than Theragun
     { q: "Is the Hypervolt 2 Pro quiet?", a: "Yes. At 48–52 dB, the Hypervolt 2 Pro is the quietest gun in the premium category, thanks to its brushless motor. Add the full Hyperice app with guided routines and a lighter body than Theragun, and it is the premium pick for buyers who reject Therabody pricing." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default hypervolt2Pro

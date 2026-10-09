@@ -73,7 +73,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { q: "What are the downsides of Zoe?", a: "Zoe's CGM phase is fixed at two weeks, so it is not an ongoing CGM tool. There is no raw glucose data export, Libre accuracy lags Dexcom G7, and availability is UK-focused with slower US expansion." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default zoe

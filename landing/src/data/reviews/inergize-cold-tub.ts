@@ -107,7 +107,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { q: "Is a chiller worth it, or can I use ice?", a: "Ice is fine for testing the habit, but it takes several bags per session and the cost adds up. If you plunge three or more times a week, a chiller holds the temperature daily and saves the effort. Inergize's Elite Chiller covers 37 to 104°F and is sold alone ($2,690) or bundled with the tub ($2,990 on sale)." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default inergizeColdTub

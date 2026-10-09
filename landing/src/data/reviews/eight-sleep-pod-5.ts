@@ -70,7 +70,7 @@ Choose the Pod 5 Ultra if you want the maximal full-bed system and the price is 
     { q: "Eight Sleep Pod 5 vs Pod 4: which is better?", a: "The Pod 4 is the better value; the Pod 5 Ultra is better only if you want a full bed system with an adjustable base, top-down blanket, audio and snore mitigation. Both share core dual-zone climate and HRV tech, and Autopilot 4.0 reaches the Pod 4 too." },
   ],
   datePublished: '2026-09-06',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default eightSleepPod5

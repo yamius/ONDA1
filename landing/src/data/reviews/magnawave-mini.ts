@@ -130,7 +130,7 @@ The price comes first: from $8,360 for the smallest machine. The evidence is sec
     { q: "Who should not use PEMF?", a: "Do not use PEMF with a pacemaker, defibrillator or other active implant, during pregnancy, or if you have epilepsy. Ask a doctor before using it over metal implants, a tumour or an active bleed, and start at low intensity." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default magnawaveMini

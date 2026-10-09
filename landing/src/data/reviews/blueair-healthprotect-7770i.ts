@@ -70,7 +70,7 @@ Choose Blueair 7770i for Swedish premium HEPASilent + GermShield. For higher cov
     { q: "Blueair HealthProtect 7770i vs Coway Airmega 400: which is better?", a: "The Coway Airmega 400 is better for coverage and value; the Blueair is better for quiet premium engineering. Coway covers more space for $479 with a 12-month filter cycle, while Blueair adds HEPASilent and GermShield modes at $820." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default blueair7770

@@ -69,7 +69,7 @@ Choose Bob and Brad Q2 Mini for budget mini with brand credibility. For premium 
     { q: "Who is the Bob and Brad Q2 Mini best for?", a: "The Bob and Brad Q2 Mini is best for budget-conscious buyers who want a credible-brand mini massage gun at $99. It suits people who trust the Bob and Brad physical-therapist framing and accept reduced stall force for the price." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-07-20',
+  dateModified: '2026-10-10',
 }
 
 export default bobAndBradQ2

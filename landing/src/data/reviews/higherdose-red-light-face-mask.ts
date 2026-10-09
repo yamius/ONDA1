@@ -69,7 +69,7 @@ Choose HigherDOSE Red Light Face Mask for consumer-polished daily-use mask in th
     { q: "What are the downsides of the HigherDOSE Red Light Face Mask?", a: "Its clinical-evidence base is light, and its 50 mW/cm² irradiance is the brand’s own figure rather than an independent measurement. It has no neck flap and no multi-wavelength variants. The pitch is consumer-friendliness and the HigherDOSE ecosystem, which pairs with its PEMF mat and sauna blanket, rather than dermatology depth." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default higherDoseFaceMask

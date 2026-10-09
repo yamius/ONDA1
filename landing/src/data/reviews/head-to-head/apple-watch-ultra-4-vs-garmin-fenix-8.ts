@@ -52,7 +52,7 @@ Apple’s September 2026 Health Sensing System closed much of the gap: the Ultra
 Both measure; neither trains. Whichever rugged flagship you pick, and however good its HRV, a finger ring is still the more precise overnight instrument — see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-18',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default ultra4VsFenix8

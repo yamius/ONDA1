@@ -68,7 +68,7 @@ If you want the most accurate OTC sensor — same Dexcom G7 hardware as Levels a
 If you already own an Ultrahuman ring or plan to, M1 is the right shape because the unified glucose + HRV + sleep view in one app is unique. As a standalone CGM it is not differentiated from Lingo or Veri.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default threeOtcCgm

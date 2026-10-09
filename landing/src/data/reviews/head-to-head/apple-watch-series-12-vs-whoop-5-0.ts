@@ -52,7 +52,7 @@ Apple now reports Recovery HRV sampled far more often, and Apple Health now carr
 Whoop is built to be worn 24/7 and coach you daily; the Apple Watch is a general smartwatch you may not wear every night, and its ~1-day battery competes with overnight measurement. If continuous overnight HRV is the whole point, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026) — a ring or band may serve you better than a watch.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-18',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default series12VsWhoop50

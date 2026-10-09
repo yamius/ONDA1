@@ -87,7 +87,7 @@ Choose the Ultra 4 if you are an athlete or outdoors user who wants Apple’s ne
   ],
   relatedSlugs: ['apple-watch-series-12', 'garmin-fenix-8', 'oura-ring-4', 'whoop-5-0'],
   datePublished: '2026-09-18',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default appleWatchUltra4

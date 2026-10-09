@@ -69,7 +69,7 @@ Choose Mute Nasal Dilator if you tolerate internal devices and want clinical-evi
     { q: "What are the downsides of the Mute Nasal Dilator?", a: "Mute has an adaptation curve, and the first nights feel strange. Internal insertion is not tolerated by everyone, a sizing kit is needed because it comes in three sizes, and its per-night cost is higher than external strips." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default muteNasal

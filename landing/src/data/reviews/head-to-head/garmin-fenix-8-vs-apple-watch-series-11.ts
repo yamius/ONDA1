@@ -61,7 +61,7 @@ You want the best daily smartwatch, a polished health app and tight iPhone integ
 Both are trackers — they measure, they do not train. Whichever you wear, the [state-changing part](/articles/active-intervention-vs-passive-tracking) still comes from an active practice like [HRV biofeedback](/hrv-biofeedback). And if overnight HRV precision is your real goal, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026) — a ring will likely serve you better than either watch.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-12',
-  dateModified: '2026-09-12',
+  dateModified: '2026-10-10',
 }
 
 export default garminFenix8VsAppleWatch11

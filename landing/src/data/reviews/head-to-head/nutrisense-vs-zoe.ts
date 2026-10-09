@@ -57,7 +57,7 @@ If you want continuous CGM data plus a registered dietitian working through it w
 If you want personalised nutrition grounded in real published science, and a one-time multi-biomarker reset (CGM + gut microbiome + blood) followed by ongoing food-ranking guidance is what you want — Zoe is the right shape. The PREDICT studies are the scientific anchor; the food rankings are the deliverable.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-10',
 }
 
 export default nutrisenseVsZoe

@@ -70,7 +70,7 @@ Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand pedigree with 
     { q: "Who is the Dr. Dennis Gross SpectraLite best for?", a: "The SpectraLite FaceWare Pro is best for users who want dermatology-brand pedigree with dual red and blue light for anti-aging and acne. It suits those who accept a hard-shell comfort trade-off in exchange for a fast 3-minute protocol." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-10-10',
 }
 
 export default drDennisGross

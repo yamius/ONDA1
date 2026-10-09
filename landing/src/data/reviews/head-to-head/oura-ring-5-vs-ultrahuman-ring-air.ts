@@ -58,7 +58,7 @@ For another subscription-free ring, see the [Samsung Galaxy Ring](/reviews/samsu
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default ouraRing5VsUltrahuman

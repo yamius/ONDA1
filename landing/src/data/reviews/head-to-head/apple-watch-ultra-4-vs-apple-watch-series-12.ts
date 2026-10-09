@@ -52,7 +52,7 @@ A continuous overnight record needs the watch on your wrist all night, every nig
 If you don’t need ruggedness, the Series 12 is the smarter buy; if you want an Apple Watch you can sleep in every night, the Ultra 4. Both are still wrist optical — for the most precise overnight number, a finger ring leads; see [Series 12 vs Oura Ring 4](/reviews/vs/apple-watch-series-12-vs-oura-ring-4) and the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default ultra4VsSeries12

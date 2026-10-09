@@ -70,7 +70,7 @@ Choose Coway Airmega 400 for premium-tier coverage at mid-premium price. For cli
     { q: "Coway Airmega 400 vs Blueair HealthProtect 7770i: which is better?", a: "The Coway Airmega 400 is better for coverage and value. It costs $479 versus $820, covers more space and has a 12-month filter cycle versus Blueair's 6-month. The Blueair is better for its HEPASilent and GermShield modes." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default cowayAirmega400

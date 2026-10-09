@@ -57,7 +57,7 @@ If you want the simplest possible neurofeedback experience — a single forehead
 If meditation is the use case, Muse 2 is the right shape — four-channel EEG, decade-old ecosystem, mature meditation library. The content library alone is reason enough.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default mendiVsMuse2

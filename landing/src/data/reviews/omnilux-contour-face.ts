@@ -71,7 +71,7 @@ Choose Omnilux Contour Face if you want the dermatology reference with peer-revi
     { q: "Omnilux Contour Face vs Lumara Viso: which is better?", a: "Omnilux is better for clinical evidence, with device-specific peer-reviewed studies. The Lumara Viso offers more LEDs, three wavelengths and an included neck flap, but has a lighter evidence moat and costs more at $650." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default omniluxContourFace

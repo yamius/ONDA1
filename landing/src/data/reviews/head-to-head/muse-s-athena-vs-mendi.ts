@@ -56,7 +56,7 @@ Against the gamified EEG option, see [Muse 2 vs FocusCalm vs Mendi](/reviews/vs/
   relatedComparisonSlug: 'best-eeg-headsets-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default museAthenaVsMendi

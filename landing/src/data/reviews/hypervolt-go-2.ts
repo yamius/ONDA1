@@ -69,7 +69,7 @@ Choose Hypervolt Go 2 for premium-brand travel mini. For Hyperice full-size prem
     { q: "What are the downsides of the Hypervolt Go 2?", a: "The Go 2 trades power for portability: it has half the stall force of the Hypervolt 2 Pro. It ships with only two attachments, carries a one-year warranty, and costs $30 more than the budget Bob and Brad Q2 Mini." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-07-20',
+  dateModified: '2026-10-10',
 }
 
 export default hypervoltGo2

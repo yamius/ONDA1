@@ -69,7 +69,7 @@ If sleep content matters as much as meditation, or you respond to celebrity narr
 If you want the largest free meditation library on the market — and access to premier teachers (Tara Brach, Jack Kornfield, Sharon Salzberg) at no cost — Insight Timer is the right shape. The free tier is genuinely free; the optional Member Plus is cheaper than the other two.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default threeMeditation

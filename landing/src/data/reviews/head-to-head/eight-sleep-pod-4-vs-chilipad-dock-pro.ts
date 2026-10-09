@@ -56,7 +56,7 @@ If you already wear an Oura or Whoop and you want the climate hardware alone wit
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-06-15',
   datePublished: '2026-05-27',
-  dateModified: '2026-05-27',
+  dateModified: '2026-10-10',
 }
 
 export default eightSleepVsChilipad

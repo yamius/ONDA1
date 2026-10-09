@@ -52,7 +52,7 @@ The [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) is under a US import ban
 Apple Health now carries an RMSSD value, the statistic rings report, so you can compare in kind — Apple hasn’t confirmed Recovery HRV is RMSSD, and absolute values still differ between devices. Compare each device against its own baseline, not against each other. See [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv), [why HRV reads differently on every device](/articles/hrv-different-every-device), and the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default series12VsRingPro

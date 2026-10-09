@@ -52,7 +52,7 @@ The Series 12 reports two HRV numbers — Recovery HRV and Overall HRV — which
 If HRV is one feature among many you want on your wrist, the Series 12 is the better device. If you only want cheap, reliable HRV and sleep trends, the Charge 6 is enough. If HRV is the main reason you are buying, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default series12VsCharge6

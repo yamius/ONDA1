@@ -56,7 +56,7 @@ If you want the broadest wavelength coverage in the mid-tier, published third-pa
 If you want competent four-wavelength mid-size coverage at the lowest mid-tier price and brand maturity is not deciding, BioLight is the right shape. Solid value play at $899.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default platinumledVsBioLight

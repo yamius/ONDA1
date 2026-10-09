@@ -73,7 +73,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
     { q: "Who is the Eight Sleep Pod Cover Pro best for?", a: "The Pod Cover Pro is best for people who want Pod 4 capability on their existing mattress. It gives entry to Eight Sleep's dual-zone climate, HRV and sleep tracking, and Autopilot without buying a new mattress." },
   ],
   datePublished: '2026-06-15',
-  dateModified: '2026-06-15',
+  dateModified: '2026-10-10',
 }
 
 export default eightSleepPodCoverPro

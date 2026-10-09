@@ -56,7 +56,7 @@ Against the flagship, see [Circular Ring 2 vs Oura Ring 5](/reviews/vs/circular-
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default circularVsGen3

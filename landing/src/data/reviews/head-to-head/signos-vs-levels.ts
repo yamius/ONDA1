@@ -57,7 +57,7 @@ If weight loss is the explicit reason you are wearing a CGM and you respond well
 If you treat CGM as a general-purpose self-experimentation instrument — running fasting protocols, tracking time-in-range as a metric, iterating on food curves week by week without a weight-loss frame — Levels is the right shape. The deeper insight engine and the broader content library are what the premium pays for.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default signosVsLevels

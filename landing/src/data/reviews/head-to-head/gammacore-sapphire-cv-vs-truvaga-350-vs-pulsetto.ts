@@ -68,7 +68,7 @@ If you want the gammaCore hardware platform — same 5 kHz cervical waveform, sa
 If you want a daily-use cervical tVNS collar with four guided programmes and no clinical commitment, Pulsetto is the right shape. The lowest price, the broadest protocol library, and the no-cap session lifetime are the differentiators. Most consumer users land here.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default threeCervical

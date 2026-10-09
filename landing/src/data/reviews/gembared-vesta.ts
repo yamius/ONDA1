@@ -72,7 +72,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "What are the downsides of the GembaRed Vesta?", a: "The Vesta is premium-priced without the size or modularity of Joovv or Mito Red. GembaRed is a smaller brand, so its multi-year reliability track record is thinner, and its EMF focus appeals mainly to a subset of buyers." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default gembaredVesta

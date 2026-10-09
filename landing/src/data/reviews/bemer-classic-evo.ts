@@ -72,7 +72,7 @@ Choose Bemer Classic Evo if you want the best-known PEMF signal in a well-built 
     { q: "Who is the Bemer Classic Evo best for?", a: "The Bemer Classic Evo is best for users who want the best-known PEMF signal in a coordinated multi-applicator system from a multi-decade brand. It suits buyers who can pay premium pricing and accept that health benefits are not proven." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default bemerClassicEvo

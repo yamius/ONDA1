@@ -73,7 +73,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
 
   datePublished: '2026-05-16',
-  dateModified: '2026-09-17',
+  dateModified: '2026-10-10',
 }
 
 export default withingsScanwatch

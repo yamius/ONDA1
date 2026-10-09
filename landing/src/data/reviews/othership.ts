@@ -71,7 +71,7 @@ Choose Othership if you want breathwork as cinematic experience with music and l
     { q: "Othership vs Breathwrk: which is better?", a: "Othership is better for immersive, music-driven sessions and daily live classes. Breathwrk is better for evidence citation, raw session count and Buteyko or clinical-research focus. Pick based on whether you want an experience or structured, evidence-led practice." },
   ],
   datePublished: '2026-06-29',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default othership

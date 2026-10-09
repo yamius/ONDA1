@@ -58,7 +58,7 @@ For the middle-ground water-cooled route without a subscription, see [Pod 5 vs C
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default pod5VsBedjet

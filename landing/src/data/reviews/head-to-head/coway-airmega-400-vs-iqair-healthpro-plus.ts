@@ -56,7 +56,7 @@ See [Coway Airmega 400 vs Dyson Big+Quiet](/reviews/vs/coway-airmega-400-vs-dyso
   relatedComparisonSlug: 'best-air-purifiers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default cowayVsIqair

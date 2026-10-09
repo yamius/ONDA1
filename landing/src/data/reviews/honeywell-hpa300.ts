@@ -69,7 +69,7 @@ Choose Honeywell HPA300 for budget large-room coverage with Honeywell brand-trus
     { q: "Is the Honeywell HPA300 loud?", a: "It can be. On Turbo the HPA300 reaches roughly 62 dB, so it is loud at top speed. Its lower speeds are the practical choice for bedrooms. It is also a plastic build with no premium polish, which fits its role as a basic, trusted budget unit." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default honeywellHpa300

@@ -69,7 +69,7 @@ Choose TheraFace Mask if you\'re already in the Therabody ecosystem and want coo
     { q: "What are the downsides of the TheraFace Mask?", a: "The TheraFace Mask has no peer-reviewed dermatology evidence moat, costs a premium $649, and has no neck flap on the standard model. Its brand premium relies on Theragun pedigree more than red-light credibility." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-10-10',
 }
 
 export default therafaceMask

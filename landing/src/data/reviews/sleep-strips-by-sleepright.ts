@@ -70,7 +70,7 @@ Choose SleepRight Nasal Breathe Aid for budget internal nasal dilation. For prem
     { q: "What are the downsides of the SleepRight Nasal Breathe Aid?", a: "SleepRight is less anatomically optimised than Mute, and its cone design is less refined than Mute's polymer stent. It has limited peer-reviewed clinical validation, and some users report moderate nostril irritation, so comfort varies from person to person." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default sleepRightStrips

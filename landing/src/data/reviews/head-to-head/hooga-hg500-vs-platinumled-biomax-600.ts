@@ -56,7 +56,7 @@ Against the premium reference, see [Hooga HG500 vs Joovv Solo 3.0](/reviews/vs/h
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default hoogaVsPlatinum

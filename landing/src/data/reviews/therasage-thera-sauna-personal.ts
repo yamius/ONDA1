@@ -72,7 +72,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "What are the downsides of the Therasage TheraSauna?", a: "Its wavelength separation is less rigorous than Sunlighten mPulse, its EMF profile is higher than SaunaSpace Faraday, and its build is less premium than Sunlighten or Clearlight cabins. Brand recognition is also narrower than category leaders." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default therasageTheraSaunaPersonal

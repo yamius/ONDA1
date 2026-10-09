@@ -72,7 +72,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "Sun Home Equinox vs Sunlighten mPulse: which is better?", a: "Sunlighten mPulse is the stronger pick for rigorous wavelength control and published research. Sun Home Equinox offers full-spectrum IR with bundled extras at mid-premium pricing below comparable Sunlighten models. Choose Equinox for value, mPulse for finer wavelength control." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default sunHomeEquinox

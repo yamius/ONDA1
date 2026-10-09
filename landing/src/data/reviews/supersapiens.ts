@@ -73,7 +73,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { q: "What are the downsides of Supersapiens?", a: "Supersapiens is EU only, with no general-nutrition meal scoring and no coaching layer at any tier. Its niche endurance audience also limits long-term product investment, which matters for a subscription you plan to keep." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-10',
 }
 
 export default supersapiens

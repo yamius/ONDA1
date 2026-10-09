@@ -71,7 +71,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "Hooga HG500 vs Joovv: which should I buy?", a: "The Hooga costs about a fifth of Joovv ($1,699) while keeping most of the basic spec: honest irradiance and low EMF. Joovv adds a more premium build, more LEDs and a modular system. Choose Hooga for value, Joovv if you want the category-reference build." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default hoogaHg500

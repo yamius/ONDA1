@@ -56,7 +56,7 @@ Cross-shop the 3 Pro against [Theragun PRO Plus](/reviews/vs/hypervolt-3-pro-vs-
   relatedComparisonSlug: 'best-massage-guns-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default hv3ProVsHv2Pro

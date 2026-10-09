@@ -56,7 +56,7 @@ For Therabody’s flagship, see [Hypervolt 3 Pro vs Theragun PRO Plus](/reviews/
   relatedComparisonSlug: 'best-massage-guns-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default hv3ProVsTheragunElite

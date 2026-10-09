@@ -55,7 +55,7 @@ If you want the most accurate consumer CGM hardware available — the same Dexco
 If you are not sure CGM will change anything for you and want the cheapest legitimate way to find out, or you plan to wear a CGM occasionally rather than continuously, Lingo is the right shape. $54 single sensors with no subscription beats Stelo’s monthly model on flexibility.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default steloVsLingo

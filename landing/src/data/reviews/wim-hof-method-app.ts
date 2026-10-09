@@ -71,7 +71,7 @@ Choose Wim Hof Method app if you're committed to the WHM specifically. For broad
     { q: "What are the downsides of the Wim Hof Method app?", a: "The app focuses on a single method with no Buteyko, 4-7-8 or cyclic sighing depth. Its UX is less polished than Othership, its scope is narrower than Breathwrk, and cold protocols assume access to cold immersion." },
   ],
   datePublished: '2026-06-29',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default wimHofMethodApp

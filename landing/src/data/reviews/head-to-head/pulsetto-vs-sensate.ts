@@ -56,7 +56,7 @@ Against the vibration-based option, see [Sensate vs Apollo Neuro](/reviews/vs/se
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default pulsettoVsSensate

@@ -52,7 +52,7 @@ Garmin HRV Status builds a personal overnight baseline over about three weeks an
 If you already train with Garmin, the Venu 4 gives you a usable recovery trend with no extra fee. If recovery and sleep are the whole point and you are fine with a membership, the Ring 5 is the more precise instrument. For the full field, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default venu4VsOura5

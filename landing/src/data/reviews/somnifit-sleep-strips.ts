@@ -69,7 +69,7 @@ Choose SomniFit if you want the cheapest credible branded mouth tape and your sk
     { q: "What are the downsides of SomniFit Sleep Strips?", a: "SomniFit's basic adhesive causes moderate skin reactions in sensitive users and struggles with beards and oily skin. It lacks biohacker brand polish, and there is minimal peer-reviewed evidence behind it compared with better-established options." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default somnifit

@@ -68,7 +68,7 @@ If a focused evening wind-down ritual with paired soundscapes is the use case, S
 If you want short, intense parasympathetic priming around training and sleep, Hoolest is the right shape. The dual ear/neck targeting and the founder-published athletic-recovery research are the differentiators. Active engagement required for the session.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default threeVagusForms

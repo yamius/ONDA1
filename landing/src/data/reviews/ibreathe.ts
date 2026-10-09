@@ -68,7 +68,7 @@ Choose iBreathe if you already know which technique you want and just need a cle
     { q: "Does iBreathe work on Apple Watch?", a: "Yes. iBreathe has native Apple Watch support alongside its clean, minimalist phone app with a visual breath guide. It does not measure HRV or offer any biofeedback, though, so it guides your pace without showing how your body responds." },
   ],
   datePublished: '2026-06-29',
-  dateModified: '2026-06-29',
+  dateModified: '2026-10-10',
 }
 
 export default ibreathe

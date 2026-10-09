@@ -68,7 +68,7 @@ If the earbud form factor and music-paired sessions make daily use realistic for
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default nurosymVsVagustimVsXen

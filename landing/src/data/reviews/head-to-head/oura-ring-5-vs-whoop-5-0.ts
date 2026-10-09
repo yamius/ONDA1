@@ -56,7 +56,7 @@ For subscription-free rings, see the [Ultrahuman Ring Pro](/reviews/ultrahuman-r
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default ouraRing5VsWhoop

@@ -106,7 +106,7 @@ The metabolic biology these programmes surface — and the protocols the data un
   ],
 
   datePublished: '2026-05-21',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default ultrahumanM1

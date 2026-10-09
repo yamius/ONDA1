@@ -72,7 +72,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "Who is the Bon Charge Red Light Therapy Panel best for?", a: "The Bon Charge panel is best for EU and Australian buyers who want a wellness-positioned red light panel from an established consumer brand. It suits those who prefer consistent build quality and brand presence over detailed technical specs." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default bonCharge

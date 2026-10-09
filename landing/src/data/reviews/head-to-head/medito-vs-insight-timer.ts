@@ -78,7 +78,7 @@ Studies of app-based mindfulness show modest benefits for stress and wellbeing o
 Both apps make paying optional. **Medito** is the cleanest, most private free choice; **Insight Timer** gives you far more choice for free and a cheap upgrade if you want courses. For the wider field, see [our meditation app ranking](/reviews/compare/best-meditation-apps-2026) or [Calm vs Insight Timer](/reviews/vs/calm-vs-insight-timer).`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-10-04',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default meditoVsInsightTimer

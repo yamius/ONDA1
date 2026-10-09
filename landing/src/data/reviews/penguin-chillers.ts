@@ -108,7 +108,7 @@ The biology of why cold exposure works — and the protocols that compound with 
   ],
 
   datePublished: '2026-05-25',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default penguinChillers

@@ -97,7 +97,7 @@ Newer generation: [RingConn Gen 3 vs RingConn Gen 2](/reviews/vs/ringconn-gen-3-
 - [Oura: ITC patent ruling against Ultrahuman](https://ouraring.com/blog/oura-itc-case/)`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default ringconnVsUltrahuman

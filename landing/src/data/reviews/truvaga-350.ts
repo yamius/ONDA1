@@ -73,7 +73,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "Truvaga 350 vs gammaCore: which is better?", a: "Truvaga uses the same hardware platform as the FDA-cleared gammaCore but needs no prescription or insurance approval. gammaCore holds the FDA clearance; Truvaga is sold as a wellness device. Choose Truvaga for easy access to cervical tVNS." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default truvaga350

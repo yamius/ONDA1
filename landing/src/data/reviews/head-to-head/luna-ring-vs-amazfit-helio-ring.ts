@@ -56,7 +56,7 @@ For a longer single-charge battery at a similar price, see the [RingConn Gen 2](
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default lunaVsHelio

@@ -55,7 +55,7 @@ If you want the category-defining build with longest multi-year reliability data
 If you want chiller-built cold-plunge capability at the most accessible price in the tier — Edge is the right shape. For typical home daily-use practice the hardware delivers what most users actually need.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default plungeVsEdge

@@ -60,7 +60,7 @@ If you want a stronger acute parasympathetic shift in a structured 4–20 minute
 Both. Apollo as the daily ambient baseline; Pulsetto for targeted acute sessions. The mechanisms are different enough that the effects layer cleanly.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default apolloNeuroVsPulsetto

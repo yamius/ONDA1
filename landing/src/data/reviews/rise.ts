@@ -73,7 +73,7 @@ The sleep biology behind what these apps measure and the protocols they support.
     { q: "What are the downsides of RISE?", a: "RISE's sleep debt figure is a model, not a measurement. It is light on wind-down content, has a thin free tier, and is a single-angle app that does one thing: frame sleep around daytime energy." },
   ],
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-10-10',
 }
 
 export default rise

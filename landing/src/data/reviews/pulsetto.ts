@@ -73,7 +73,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "Pulsetto vs Nurosym: which is better?", a: "Pulsetto is better for price and variety: $269 with four guided programmes and session logging. Nurosym is better for evidence, with the deepest peer-reviewed research base in consumer tVNS, but it costs €700 (about $820) and runs a single programme." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default pulsetto

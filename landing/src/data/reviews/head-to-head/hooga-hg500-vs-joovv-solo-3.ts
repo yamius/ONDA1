@@ -56,7 +56,7 @@ For the spectrum-rich mid-tier, see [Hooga HG500 vs PlatinumLED BIOMAX 600](/rev
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default hoogaVsJoovv

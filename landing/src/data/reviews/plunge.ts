@@ -71,7 +71,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { q: "Plunge vs Renu Therapy Cold Stoic: which is better?", a: "The Plunge reaches a slightly colder floor, 39°F versus Renu's 40°F, and has wider brand recognition. The Renu Cold Stoic has the quietest chiller among premium plunges, making it better for indoor installs. Both include ozone and a 3-year warranty." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default plunge

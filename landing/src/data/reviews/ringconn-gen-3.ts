@@ -72,7 +72,7 @@ The science behind why HRV is the signal worth tracking.
     { q: "RingConn Gen 3 vs Oura — which is better?", a: "For a feature-rich, subscription-free ring with a long battery and silent haptic alerts, the Gen 3 is the strongest no-membership alternative to Oura. Oura still leads on the most refined app and sleep-stage accuracy." },
   ],
   datePublished: '2026-09-06',
-  dateModified: '2026-09-18',
+  dateModified: '2026-10-10',
 }
 
 export default ringconnGen3

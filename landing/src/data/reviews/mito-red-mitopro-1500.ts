@@ -72,7 +72,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "Mito Red MitoPRO 1500 vs Joovv: which is better?", a: "The MitoPRO 1500X costs $1,299 against $1,699 for the Joovv Solo 3.0, offers six wavelengths to Joovv’s red plus near-infrared, and is now listed as FDA Class II registered too (not clearance or approval). Joovv keeps the modular stacking system and more independently re-verified EMF and flicker testing. Pick Mito Red for value and spectrum, Joovv for modular scaling." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default mitoRedMitoPro1500

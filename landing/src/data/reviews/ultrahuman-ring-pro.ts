@@ -79,7 +79,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { q: "Ultrahuman Ring Pro vs Oura — which is better?", a: "Choose the Ring Pro to avoid a subscription and own your data outright; choose Oura for the more refined app and the most published sleep-stage research (on earlier generations, partly Oura-funded). There is no independent data to compare their overnight HRV accuracy. The Ring Pro is also the US-available successor to the Ring Air." },
   ],
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default ultrahumanRingPro

@@ -56,7 +56,7 @@ For self-experimenters and biohackers who want to reference the literature, Nuro
 For users who want a polished daily-use experience with guided sleep, stress, anxiety and pain programmes, Pulsetto is the right shape. The neck collar is faster to put on than an ear clip, the four-mode library covers the common use cases, and at $269 it is a third of the entry cost of Nurosym.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default nurosymVsPulsetto

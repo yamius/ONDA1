@@ -72,7 +72,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { q: "Levels vs Lingo: which CGM should I choose?", a: "Levels gives the deepest insights and ships Dexcom Stelo (G7 platform, slightly more accurate than Libre 3), but is a membership (from $80 a year app-only to $1,329 a year) and is US-only. Lingo needs no subscription and is the cheapest legitimate entry, offering a simpler per-meal score on Libre 3. Choose Levels for depth, Lingo for cost." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default levels

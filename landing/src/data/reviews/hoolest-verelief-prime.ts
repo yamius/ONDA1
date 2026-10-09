@@ -72,7 +72,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "Hoolest VeRelief Prime vs Pulsetto: which is better?", a: "Pulsetto offers more protocol variety and works as a passive wearable. The VeRelief Prime is built for athletes: short, intense sessions that fit recovery workflows. The trade-off is that you must hold it during sessions, and its higher peak intensity can be uncomfortable." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-10',
 }
 
 export default hoolestVeReliefPrime

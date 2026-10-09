@@ -73,7 +73,7 @@ The sleep biology behind what these apps measure and the protocols they support.
     { q: "What are the downsides of Sleep as Android?", a: "Sleep as Android is Android only, and it is feature-dense, so it rewards tinkering more than casual use. Phone-based tracking is an estimate unless you pair a wearable, and the app is less polished than the mainstream iOS sleep apps." },
   ],
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-10-10',
 }
 
 export default sleepAsAndroid

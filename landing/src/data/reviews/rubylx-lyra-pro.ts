@@ -72,7 +72,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "RubyLx Lyra Pro vs Joovv: which is better?", a: "The Lyra Pro is cheaper than Joovv with comparable EMF discipline and more published third-party lab testing. Joovv offers a modular ecosystem and a longer reliability track record. Pick RubyLx for verified specs and value, Joovv for its ecosystem." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default rubylxLyraPro

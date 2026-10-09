@@ -71,7 +71,7 @@ If ring weight matters more than anything else, Ultrahuman is the lightest smart
 If subscription-free is a hard requirement and you want the longest battery in the category, RingConn is the right shape. It is also the cheapest over three years by a meaningful margin. The trade is a slightly less mature app and shallower sleep analytics than Oura.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default threeRings

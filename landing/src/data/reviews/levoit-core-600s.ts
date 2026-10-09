@@ -69,7 +69,7 @@ Choose Levoit Core 600S for mid-budget smart features at $299. For mid-premium c
     { q: "What are the downsides of the Levoit Core 600S?", a: "It covers 635 sq ft, far less than the Coway Airmega 400. It has no premium-tier filtration, a plastic build rather than metal, and its sensor is only moderately accurate compared with Dyson or IQAir. For $299, most buyers will find those trades acceptable." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default levoitCore600s

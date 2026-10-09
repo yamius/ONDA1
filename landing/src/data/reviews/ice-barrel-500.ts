@@ -71,7 +71,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { q: "Who is the Ice Barrel 500 best for?", a: "It suits people who want a clean, compact cold plunge without paying chiller-tier prices. Its vertical footprint fits small spaces, it is outdoor-rated and easy to drain, and it has proven multi-year reliability. The warranty is one year, versus three for The Plunge." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default iceBarrel500

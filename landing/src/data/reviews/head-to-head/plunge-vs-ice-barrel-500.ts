@@ -56,7 +56,7 @@ If daily-use cold plunge is the goal and you want a set-and-forget tub that hold
 If you are in a cold climate where ice cost is negligible, or doing occasional cold-plunge practice — Ice Barrel saves $4,800 upfront. The vertical footprint also fits smaller spaces.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default plungeVsIceBarrel

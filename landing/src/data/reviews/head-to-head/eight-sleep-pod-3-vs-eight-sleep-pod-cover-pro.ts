@@ -56,7 +56,7 @@ If you have a mattress you like, or you want the current-gen Pod 4-platform clim
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-06-15',
   datePublished: '2026-05-27',
-  dateModified: '2026-05-27',
+  dateModified: '2026-10-10',
 }
 
 export default pod3VsCoverPro

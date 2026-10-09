@@ -73,7 +73,7 @@ Choose EarthPulse if you want overnight PEMF — under-mattress install, Schuman
     { q: "Who is the EarthPulse Sleep on Command best for?", a: "EarthPulse is best for people who want overnight PEMF under the mattress rather than daytime sessions. The maker markets it for sleep onset and deep sleep, but this is not shown in controlled trials, so it is not a treatment for insomnia." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default earthpulse

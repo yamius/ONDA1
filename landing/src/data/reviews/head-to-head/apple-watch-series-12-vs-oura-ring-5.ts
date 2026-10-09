@@ -52,7 +52,7 @@ Earlier Apple Watches reported SDNN sampled sparsely, while Oura built on RMSSD.
 For many people the answer is both: an Oura Ring for the hands-off overnight trend, and an Apple Watch for everything a ring can’t do. Already own a Ring 4? See [Oura Ring 5 vs Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4). For the wider field, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default series12VsOura5

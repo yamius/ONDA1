@@ -69,7 +69,7 @@ Choose JOVS DPL for maximum wavelength coverage at mid-tier pricing. For Western
     { q: "What are the downsides of the JOVS DPL Photofacial Mask?", a: "Its Western clinical-evidence base is light, and its hard-shell hybrid build is less comfortable than silicone masks. There is no neck flap. JOVS is recognised in K-beauty but newer in the Western red-light market, without a multi-year track record there." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-10-10',
 }
 
 export default jovsDpl

@@ -56,7 +56,7 @@ If you have a mattress you like and you want Eight Sleep climate and tracking on
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-06-15',
   datePublished: '2026-05-27',
-  dateModified: '2026-05-27',
+  dateModified: '2026-10-10',
 }
 
 export default pod4VsCoverPro

@@ -79,7 +79,7 @@ If the lowest price, seven-wavelength spectrum and publicly posted EMF testing a
 Read the full reviews: [Joovv Solo 3.0](/reviews/joovv-solo-3), [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500), [PlatinumLED BioMax 600](/reviews/platinumled-biomax-600), or the [best red light therapy panels round-up](/reviews/compare/best-red-light-therapy-panels-2026).`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default topThreePanels

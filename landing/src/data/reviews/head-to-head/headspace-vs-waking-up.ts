@@ -57,7 +57,7 @@ If you have never meditated and want a friendly, structured introduction — Bas
 If you want meditation as part of a wider inquiry into mind, consciousness and attention — and you want Sam Harris’ teaching voice plus lectures from neuroscientists and philosophers around it — Waking Up is the right shape. The library is non-linear and assumes intellectual engagement. The free-access policy means cost is never the blocker.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default headspaceVsWakingUp

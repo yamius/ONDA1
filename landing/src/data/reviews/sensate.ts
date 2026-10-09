@@ -73,7 +73,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "Who is the Sensate best for?", a: "Sensate is best for people who want a sound-paired evening wind-down ritual and value comfort and calm over acute stimulation. It suits sleep-onset use and anyone wary of skin contact, since it uses no electrodes or pads. Those wanting direct vagal stimulation should look at electrical tVNS instead." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default sensate

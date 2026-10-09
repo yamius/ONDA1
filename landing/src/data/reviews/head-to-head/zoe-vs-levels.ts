@@ -57,7 +57,7 @@ If you want personalised nutrition grounded in real published science — and th
 If you want CGM as an ongoing instrument — running meal experiments, tracking time-in-range as a daily metric, iterating on glucose curves week by week — Levels is the right shape. The deeper insight engine and the more accurate sensor justify the premium pricing for users who treat the device as a serious tool.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default zoeVsLevels
