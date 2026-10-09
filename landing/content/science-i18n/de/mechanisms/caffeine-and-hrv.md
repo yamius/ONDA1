@@ -1,5 +1,5 @@
 ---
-sourceHash: 1df02114d918
+sourceHash: b13ba3334574
 title: "Koffein und HRV: Was Kaffee bewirkt und was nicht"
 metaTitle: "Koffein und HRV: Senkt Kaffee deine HRV?"
 metaDescription: "Was die Forschung zu Kaffee und HRV in Ruhe und nach dem Training zeigt, wo Energydrinks anders sind und wie spätes Koffein die HRV erreicht."
@@ -60,7 +60,7 @@ In einer randomisierten, doppelblinden Crossover-Studie galt Folgendes: {{fact:c
 In einer zweiten randomisierten Crossover-Studie tranken {{fact:caffeine.espresso.design}} an verschiedenen Tagen Espresso, entkoffeinierten Espresso oder warmes Wasser [S4]. Koffeinhaltiger Espresso hatte keinen spezifischen kurzfristigen Effekt auf die vagal vermittelte HRV [S4]. Die HRV stieg während der Sitzungen in jeder Bedingung; deshalb zählt der Vergleich zwischen den Getränken mehr als die Veränderung innerhalb einer Sitzung.
 
 <!-- myth-debunk -->
-Oft heißt es, Kaffee mache die HRV kaputt. Bei regelmäßigen Trinkern und moderaten Dosen fanden die oben genannten Studien keinen solchen Effekt in Ruhe [S3] [S4], und die Metaanalysen weiter unten fanden keinen nach dem Training [S1] [S2]. Das gilt nicht für sehr große Dosen, für Energydrinks oder für Menschen, die selten Kaffee trinken.
+Oft heißt es, Kaffee mache die HRV kaputt. Bei regelmäßigen Trinkern und moderaten Dosen fanden kleine Studien keine Veränderung in Ruhe [S3] [S4], und zwei sich teilweise überschneidende Metaanalysen fanden keinen Effekt auf die Erholung nach dem Training [S1] [S2]. Das gilt nicht für sehr große Dosen, für Energydrinks oder für Menschen, die selten Kaffee trinken. Koffein am späten Tag kann den Schlaf trotzdem verkürzen oder leichter machen, und schlechterer Schlaf kann deine nächtliche HRV senken – siehe [HRV und Schlaf](/science/mechanisms/sleep-and-hrv).
 
 **Was wir nicht wissen.** In PubMed ist keine systematische Übersichtsarbeit und keine Metaanalyse zu Koffein und HRV in Ruhe indexiert (Stand Oktober 2026). Die oben beschriebene Evidenz in Ruhe beruht auf wenigen kleinen Studien.
 

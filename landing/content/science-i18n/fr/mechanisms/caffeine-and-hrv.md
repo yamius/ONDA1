@@ -1,5 +1,5 @@
 ---
-sourceHash: 1df02114d918
+sourceHash: b13ba3334574
 title: "Caféine et HRV : ce que le café fait et ne fait pas"
 metaTitle: "Caféine et HRV : le café fait-il baisser votre HRV ?"
 metaDescription: "Café et HRV au repos et après l’effort : ce que montre la recherche, en quoi les boissons énergisantes diffèrent, et le rôle de la caféine tardive."
@@ -60,7 +60,7 @@ Dans un essai croisé randomisé en double aveugle, {{fact:caffeine.rest.rauh}} 
 Dans un second essai croisé randomisé, {{fact:caffeine.espresso.design}} ont bu un espresso, un espresso décaféiné ou de l’eau chaude lors de journées distinctes [S4]. L’espresso caféiné n’a eu aucun effet spécifique à court terme sur la HRV à médiation vagale [S4]. La HRV a augmenté pendant les séances dans toutes les conditions ; c’est pourquoi la comparaison entre boissons compte davantage que le changement au cours d’une même séance.
 
 <!-- myth-debunk -->
-On entend souvent que le café « tue » la HRV. Chez les buveurs réguliers à doses modérées, les essais ci-dessus n’ont trouvé aucun effet de ce type au repos [S3] [S4], et les méta-analyses ci-dessous n’en ont trouvé aucun après l’effort [S1] [S2]. Cela ne couvre ni les très fortes doses, ni les boissons énergisantes, ni les personnes qui boivent rarement du café.
+On entend souvent que le café « tue » la HRV. Chez les buveurs réguliers à doses modérées, de petits essais n’ont trouvé aucun changement au repos [S3] [S4], et deux méta-analyses qui se recoupent en partie n’ont trouvé aucun effet sur la récupération après l’effort [S1] [S2]. Cela ne couvre ni les très fortes doses, ni les boissons énergisantes, ni les personnes qui boivent rarement du café. La caféine en fin de journée peut tout de même raccourcir ou alléger le sommeil, et un sommeil de moins bonne qualité peut faire baisser votre HRV nocturne — voir [HRV et sommeil](/science/mechanisms/sleep-and-hrv).
 
 **Ce que l’on ne sait pas.** Aucune revue systématique ni méta-analyse sur la caféine et la HRV au repos n’est indexée dans PubMed (en octobre 2026). Les données au repos présentées ci-dessus reposent sur quelques petits essais.
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "33d11ee1d8b5"
+sourceHash: "6a056afa89f5"
 title: "Sauna i ekspozycja na ciepło: co pokazują badania"
 metaTitle: "Sauna i ekspozycja na ciepło: badania i ryzyko"
 metaDescription: "Sauna fińska, kabiny na podczerwień, gorące kąpiele i kliniczna terapia ciepłem: co badania mówią o sercu, ciśnieniu krwi i nastroju oraz jakie są realne ryzyka."
@@ -105,7 +105,7 @@ W te zmiany zaangażowany jest [autonomiczny układ nerwowy](/science/concepts/a
 
 ## Podczerwień czy sauna tradycyjna: co pokazują bezpośrednie porównania?
 
-Bardzo niewiele. W jednym badaniu laboratoryjnym tych samych młodych zdrowych dorosłych ogrzewano na trzy sposoby. Zanurzenie w gorącej wodzie najbardziej podniosło temperaturę głęboką ciała i rzut serca; sauna na daleką podczerwień najmniej podniosła temperaturę głęboką; tylko zanurzenie w gorącej wodzie zmieniło markery odporności [S8]. To jedna ostra sesja. Żadne badanie nie porównało długoterminowych skutków zdrowotnych saun na podczerwień i tradycyjnych. W badaniach niewydolności serca stosowano sauny na podczerwień [S9], a dane z fińskiej kohorty pochodzą wyłącznie z saun tradycyjnych [S1]. Recenzje produktów w tym serwisie, takie jak zestawienie [najlepszych saun na podczerwień](/reviews/best-infrared-sauna-2026) i recenzja [Finnleo Hallmark](/reviews/finnleo-hallmark), porównują urządzenia, a nie skutki zdrowotne.
+Bardzo niewiele. W jednym badaniu laboratoryjnym tych samych młodych zdrowych dorosłych ogrzewano na trzy sposoby. Zanurzenie w gorącej wodzie najbardziej podniosło temperaturę głęboką ciała i rzut serca; sauna na daleką podczerwień najmniej podniosła temperaturę głęboką; tylko zanurzenie w gorącej wodzie zmieniło markery odporności [S8]. To jedna ostra sesja. Żadne badanie nie porównało długoterminowych skutków zdrowotnych saun na podczerwień i tradycyjnych. W badaniach niewydolności serca stosowano sauny na podczerwień [S9], a dane z fińskiej kohorty pochodzą wyłącznie z saun tradycyjnych [S1]. Recenzje produktów w tym serwisie, takie jak zestawienie [najlepszych saun na podczerwień](/reviews/compare/best-infrared-sauna-2026) i recenzja [Finnleo Hallmark](/reviews/finnleo-hallmark), porównują urządzenia, a nie skutki zdrowotne.
 
 ### Czy w saunie wypaca się toksyny?
 

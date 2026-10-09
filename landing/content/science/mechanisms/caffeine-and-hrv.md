@@ -189,7 +189,7 @@ In a randomized double-blind crossover trial, {{fact:caffeine.rest.rauh}} [S3]. 
 In a second randomized crossover trial, {{fact:caffeine.espresso.design}} drank espresso, decaffeinated espresso or warm water on separate days [S4]. Caffeinated espresso had no specific short-term effect on vagally mediated HRV [S4]. HRV rose during the sessions in every condition, which is why the comparison between drinks matters more than the change within one session.
 
 <!-- myth-debunk -->
-A common saying is that coffee kills your HRV. In regular drinkers at moderate doses, the trials above found no such effect at rest [S3] [S4], and the meta-analyses below found none after exercise [S1] [S2]. This does not cover very large doses, energy drinks or people who rarely drink coffee.
+A common saying is that coffee kills your HRV. In regular drinkers at moderate doses, small trials found no change at rest [S3] [S4], and two partly overlapping meta-analyses found no effect on recovery after exercise [S1] [S2]. This does not cover very large doses, energy drinks or people who rarely drink coffee. Late-day caffeine can still shorten or lighten sleep, and poorer sleep can lower your overnight HRV — see [sleep-and-hrv](/science/mechanisms/sleep-and-hrv).
 
 **What we don't know.** There is no systematic review or meta-analysis of caffeine and resting HRV indexed in PubMed (as of October 2026). The resting evidence above rests on a few small trials.
 

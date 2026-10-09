@@ -1,5 +1,5 @@
 ---
-sourceHash: "33d11ee1d8b5"
+sourceHash: "6a056afa89f5"
 title: "Sauna und Hitzeexposition: Was die Evidenz zeigt"
 metaTitle: "Sauna und Hitzeexposition: Evidenz und Risiken"
 metaDescription: "Finnische Sauna, Infrarotkabine, heißes Bad und klinische Wärmetherapie: was Studien zu Herz, Blutdruck und Stimmung zeigen – und die echten Risiken."
@@ -106,7 +106,7 @@ An diesen Veränderungen ist das [autonome Nervensystem](/science/concepts/auton
 
 ## Infrarot oder traditionell: Was zeigen direkte Vergleiche?
 
-Sehr wenig. Eine Laborstudie erwärmte dieselben jungen, gesunden Erwachsenen auf drei Arten. Das Eintauchen in heißes Wasser erhöhte Kerntemperatur und Herzzeitvolumen am stärksten; die Ferninfrarotsauna erhöhte die Kerntemperatur am wenigsten; nur das heiße Bad veränderte Immunmarker [S8]. Das ist eine einzelne Sitzung. Keine Studie hat langfristige Gesundheitsergebnisse von Infrarot- und traditionellen Saunen verglichen. Die Studien zur Herzinsuffizienz nutzten Infrarotsaunen [S9], und die Daten der finnischen Kohorte stammen ausschließlich aus traditionellen Saunen [S1]. Produkttests auf dieser Website, etwa die Übersicht der [besten Infrarotsaunen](/reviews/best-infrared-sauna-2026) und der Test der [Finnleo Hallmark](/reviews/finnleo-hallmark), vergleichen Geräte, keine Gesundheitswirkungen.
+Sehr wenig. Eine Laborstudie erwärmte dieselben jungen, gesunden Erwachsenen auf drei Arten. Das Eintauchen in heißes Wasser erhöhte Kerntemperatur und Herzzeitvolumen am stärksten; die Ferninfrarotsauna erhöhte die Kerntemperatur am wenigsten; nur das heiße Bad veränderte Immunmarker [S8]. Das ist eine einzelne Sitzung. Keine Studie hat langfristige Gesundheitsergebnisse von Infrarot- und traditionellen Saunen verglichen. Die Studien zur Herzinsuffizienz nutzten Infrarotsaunen [S9], und die Daten der finnischen Kohorte stammen ausschließlich aus traditionellen Saunen [S1]. Produkttests auf dieser Website, etwa die Übersicht der [besten Infrarotsaunen](/reviews/compare/best-infrared-sauna-2026) und der Test der [Finnleo Hallmark](/reviews/finnleo-hallmark), vergleichen Geräte, keine Gesundheitswirkungen.
 
 ### Schwitzt man in der Sauna Giftstoffe aus?
 

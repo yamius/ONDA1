@@ -1,5 +1,5 @@
 ---
-sourceHash: "33d11ee1d8b5"
+sourceHash: "6a056afa89f5"
 title: "Sauna y exposición al calor: qué muestra la evidencia"
 metaTitle: "Sauna y exposición al calor: evidencia y riesgos"
 metaDescription: "Sauna finlandesa, cabinas de infrarrojos, baños calientes y terapia térmica clínica: qué muestran los estudios sobre el corazón, la presión arterial y el ánimo, y cuáles son los riesgos reales."
@@ -105,7 +105,7 @@ En estos cambios interviene el [sistema nervioso autónomo](/science/concepts/au
 
 ## Infrarrojos o tradicional: ¿qué muestran las comparaciones directas?
 
-Muy poco. Un estudio de laboratorio calentó a los mismos adultos jóvenes y sanos de tres maneras. La inmersión en agua caliente fue la que más elevó la temperatura central y el gasto cardíaco; la sauna de infrarrojo lejano, la que menos elevó la temperatura central; y solo la inmersión en agua caliente modificó los marcadores inmunitarios [S8]. Se trata de una sola sesión aguda. Ningún estudio ha comparado los efectos a largo plazo sobre la salud de las saunas de infrarrojos y las tradicionales. Los ensayos de insuficiencia cardíaca usaron saunas de infrarrojos [S9], y los datos de la cohorte finlandesa proceden solo de saunas tradicionales [S1]. Las reseñas de productos de este sitio, como la selección de las [mejores saunas de infrarrojos](/reviews/best-infrared-sauna-2026) y la reseña de la [Finnleo Hallmark](/reviews/finnleo-hallmark), comparan aparatos, no efectos sobre la salud.
+Muy poco. Un estudio de laboratorio calentó a los mismos adultos jóvenes y sanos de tres maneras. La inmersión en agua caliente fue la que más elevó la temperatura central y el gasto cardíaco; la sauna de infrarrojo lejano, la que menos elevó la temperatura central; y solo la inmersión en agua caliente modificó los marcadores inmunitarios [S8]. Se trata de una sola sesión aguda. Ningún estudio ha comparado los efectos a largo plazo sobre la salud de las saunas de infrarrojos y las tradicionales. Los ensayos de insuficiencia cardíaca usaron saunas de infrarrojos [S9], y los datos de la cohorte finlandesa proceden solo de saunas tradicionales [S1]. Las reseñas de productos de este sitio, como la selección de las [mejores saunas de infrarrojos](/reviews/compare/best-infrared-sauna-2026) y la reseña de la [Finnleo Hallmark](/reviews/finnleo-hallmark), comparan aparatos, no efectos sobre la salud.
 
 ### ¿La sauna elimina toxinas con el sudor?
 

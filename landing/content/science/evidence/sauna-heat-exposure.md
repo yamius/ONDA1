@@ -353,7 +353,7 @@ These changes involve the [autonomic nervous system](/science/concepts/autonomic
 
 ## Infrared or traditional: what do direct comparisons show?
 
-Very little. One laboratory study heated the same young healthy adults in three ways. Hot-water immersion raised core temperature and cardiac output most; far-infrared sauna raised core temperature least; only hot-water immersion changed immune markers [S8]. That is one acute session. No study has compared long-term health outcomes of infrared and traditional saunas. The heart failure trials used infrared saunas [S9], and the Finnish cohort data come only from traditional saunas [S1]. Product reviews on this site, such as the [best infrared saunas](/reviews/best-infrared-sauna-2026) round-up and the [Finnleo Hallmark](/reviews/finnleo-hallmark) review, compare devices, not health effects.
+Very little. One laboratory study heated the same young healthy adults in three ways. Hot-water immersion raised core temperature and cardiac output most; far-infrared sauna raised core temperature least; only hot-water immersion changed immune markers [S8]. That is one acute session. No study has compared long-term health outcomes of infrared and traditional saunas. The heart failure trials used infrared saunas [S9], and the Finnish cohort data come only from traditional saunas [S1]. Product reviews on this site, such as the [best infrared saunas](/reviews/compare/best-infrared-sauna-2026) round-up and the [Finnleo Hallmark](/reviews/finnleo-hallmark) review, compare devices, not health effects.
 
 ### Does sauna sweat out toxins?
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: 1df02114d918
+sourceHash: b13ba3334574
 title: "Cafeína e HRV: o que o café faz e o que não faz"
 metaTitle: "Cafeína e HRV: o café baixa a sua HRV?"
 metaDescription: "Café e HRV em repouso e após o exercício: o que a pesquisa mostra, como as bebidas energéticas diferem e o papel da cafeína tardia."
@@ -60,7 +60,7 @@ Em um ensaio cruzado randomizado e duplo-cego, {{fact:caffeine.rest.rauh}} [S3].
 Em um segundo ensaio cruzado randomizado, {{fact:caffeine.espresso.design}} tomaram espresso, espresso descafeinado ou água morna em dias diferentes [S4]. O espresso com cafeína não teve efeito específico de curto prazo sobre a HRV mediada pelo vago [S4]. A HRV subiu durante as sessões em todas as condições; por isso a comparação entre as bebidas importa mais do que a mudança dentro de uma sessão.
 
 <!-- myth-debunk -->
-Um ditado comum é que o café "acaba" com a sua HRV. Em quem toma café regularmente e em doses moderadas, os ensaios acima não encontraram esse efeito em repouso [S3] [S4], e as metanálises abaixo não encontraram nenhum após o exercício [S1] [S2]. Isso não vale para doses muito altas, bebidas energéticas ou pessoas que raramente tomam café.
+Um ditado comum é que o café "acaba" com a sua HRV. Em quem toma café regularmente e em doses moderadas, ensaios pequenos não encontraram mudança em repouso [S3] [S4], e duas metanálises que se sobrepõem em parte não encontraram efeito na recuperação após o exercício [S1] [S2]. Isso não vale para doses muito altas, bebidas energéticas ou pessoas que raramente tomam café. Ainda assim, cafeína no fim do dia pode encurtar ou deixar o sono mais leve, e dormir pior pode baixar sua HRV noturna — veja [HRV e sono](/science/mechanisms/sleep-and-hrv).
 
 **O que não sabemos.** Não há revisão sistemática nem metanálise sobre cafeína e HRV em repouso indexada no PubMed (em outubro de 2026). As evidências em repouso descritas acima se apoiam em poucos ensaios pequenos.
 
