@@ -89,3 +89,13 @@ Owner decision 2026-10-08.
 - FAQ answers that directly answer a safety question stay — they are answers, not duplicates.
 - In ARTICLES with protocols, KEEP the short safety paragraph right at the instruction (in addition to the block).
 - PRODUCT-SPECIFIC warnings stay in reviews (owner decision 2026-10-08): sentences about THIS model's features, its manual/instructions or model-specific risks (e.g. a heater guard, a timer, the maker's stated distance) are kept. Generic sentences that repeat the shared block (eyes/goggles, photosensitising drugs, pregnancy, alcohol, hydration, heart conditions, children) are removed; if nothing product-specific remains, the whole Safety section is removed. Applied: platinumled-biomax-600 and almost-heaven-salem (EN + 11 langs) — both sections were fully generic and were removed.
+
+## Outdated translations (sourceHash) — build error for live languages
+
+Every translation in `content/science-i18n/<lang>/` carries `sourceHash`, the hash of the EN page it was translated from. When the EN page changes, the hash no longer matches and the translation is STALE.
+
+- Language already live (in `SCIENCE_LIVE_LANGS`, i.e. its `SCIENCE_ROLLOUT` date ≤ build date): a stale translation **fails the build**. The error lists every failing `page:lang`.
+- Language not live yet: only a warning; fix it before that language's rollout Monday, or the build will fail from that day.
+- Fix: bring the translation in line with the current EN text, then set its hash from `npx tsx scripts/science-translation-helper.ts <lang> hash <kind/slug>`.
+- So whenever you edit an EN page, update (or hand off for update) every live-language translation of it in the same change.
+- Emergency override (owner/maintainer only, logged in the build output with the reason): `ALLOW_STALE=mechanisms/caffeine-and-hrv:es,evidence/pemf:de ALLOW_STALE_REASON="why" npm run build`. `ALLOW_STALE` without a reason is itself an error.

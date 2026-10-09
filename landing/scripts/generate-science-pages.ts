@@ -114,7 +114,7 @@ const published = new Set(publishable.map(key))
 
 // Translations: lang → key → raw
 const translations = new Map<string, Map<string, Raw>>()
-const stale: string[] = []
+const stale: { lang: string; page: string }[] = []
 const problems: string[] = []
 if (existsSync(I18N_DIR)) {
   for (const lang of readdirSync(I18N_DIR)) {
@@ -123,7 +123,7 @@ if (existsSync(I18N_DIR)) {
     for (const t of readTree(join(I18N_DIR, lang))) {
       const en = publishable.find((r) => key(r) === key(t))
       if (!en) continue // translation of an unpublished page: ignored
-      if (t.fm.sourceHash !== scienceSourceHash(en.text)) stale.push(`${lang}/${key(t)}`)
+      if (t.fm.sourceHash !== scienceSourceHash(en.text)) stale.push({ lang, page: key(t) })
       const rows = (t.fm.evidenceMap ?? []) as unknown[]
       if (rows.length !== (en.fm.evidenceMap ?? []).length) problems.push(`${lang}/${key(t)}: evidenceMap has ${rows.length} rows, EN has ${(en.fm.evidenceMap ?? []).length}`)
       for (const f of ['title', 'metaTitle', 'metaDescription', 'shortAnswer', 'imageAlt']) if (!t.fm[f] && en.fm[f]) problems.push(`${lang}/${key(t)}: missing ${f}`)
@@ -145,6 +145,31 @@ if (problems.length) {
   console.error(`[science] translation problems:\n  ${problems.join('\n  ')}`)
   process.exit(1)
 }
+
+// STALE (sourceHash ≠ EN): fatal for LIVE languages (a published /<lang>/ page would contradict EN), a warning for
+// languages not live yet (they go live on their SCIENCE_ROLLOUT Monday and must be fixed by then).
+// Override (emergency only): ALLOW_STALE=page:lang,page:lang (e.g. mechanisms/caffeine-and-hrv:es) + ALLOW_STALE_REASON="...".
+const allowStale = new Set((process.env.ALLOW_STALE ?? '').split(',').map((x) => x.trim()).filter(Boolean))
+const allowReason = (process.env.ALLOW_STALE_REASON ?? '').trim()
+if (allowStale.size && !allowReason) {
+  console.error('[science] ALLOW_STALE is set but ALLOW_STALE_REASON is empty — a reason is required for every stale override.')
+  process.exit(1)
+}
+const staleLive = stale.filter((s) => SCIENCE_LIVE_LANGS.includes(s.lang))
+const staleFatal = staleLive.filter((s) => !allowStale.has(`${s.page}:${s.lang}`))
+for (const s of staleLive.filter((x) => allowStale.has(`${x.page}:${x.lang}`)))
+  console.warn(`[science] ALLOW_STALE: publishing stale ${s.page}:${s.lang} — reason: ${allowReason}`)
+if (staleFatal.length) {
+  const list = staleFatal.map((s) => `${s.page}:${s.lang}`)
+  console.error(
+    `[science] STALE translations in LIVE languages (EN changed after translation; sourceHash mismatch):\n  ${list.join('\n  ')}\n` +
+      `Fix: update each translation to the current EN text and set its sourceHash from\n` +
+      `  npx tsx scripts/science-translation-helper.ts <lang> hash <kind/slug>\n` +
+      `Emergency override (logged): ALLOW_STALE=${list.join(',')} ALLOW_STALE_REASON="why" npm run build`,
+  )
+  process.exit(1)
+}
+const staleNotLive = stale.filter((s) => !SCIENCE_LIVE_LANGS.includes(s.lang))
 
 const langsOf = (k: string) => ['en', ...SCIENCE_LIVE_LANGS.filter((l) => translations.get(l)?.has(k))]
 
@@ -252,4 +277,4 @@ writeFileSync(
 const tr = SCIENCE_LIVE_LANGS.map((l) => `${l}:${full[l].length}`).join(' ')
 console.log(`[science] generated ${publishable.length} page(s)${tr ? ` + translations ${tr}` : ''}${skipped.length ? `; NOT published (pending): ${skipped.join('; ')}` : ''}`)
 if (untranslated.length) console.warn(`[science] not yet translated in live languages (EN only there): ${untranslated.join('; ')}`)
-if (stale.length) console.warn(`[science] STALE translations (EN changed after translation — update them): ${stale.join(', ')}`)
+if (staleNotLive.length) console.warn(`[science] STALE translations in not-yet-live languages (fix before their SCIENCE_ROLLOUT date): ${staleNotLive.map((s) => `${s.page}:${s.lang}`).join(', ')}`)

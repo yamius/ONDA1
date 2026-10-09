@@ -49,3 +49,7 @@ npm run build   # schema gate + budget + SEO + localized-English report
 ## Release queue (since 2026-10-07)
 
 Waiting translations go live through `scripts/article-release-queue.ts`: **ONE site-wide stream of 20 pages every 2 days** from `QUEUE_START`. Languages take turns (one page per language per turn); each language's list = its queued articles, then the queued review pages (`REVIEW_RELEASE_QUEUE`). To publish a newly translated article, import it **without** `--publish` and append its slug to that language's list in `ARTICLE_RELEASE_QUEUE` (append only; only slugs whose translation body exists). Old weekly drips no longer publish queued slugs. Dates are build-date gates; `.github/workflows/landing-scheduled-rebuild.yml` rebuilds daily (secret `VERCEL_DEPLOY_HOOK_LANDING`).
+
+## /science translations
+
+Science pages use their own pipeline (`content/science-i18n/`, rollout in `src/data/science/i18n.ts`). A stale `sourceHash` in a live language fails the build; see `docs/science-pack/08-handoff-checklist.md` ("Outdated translations") for the fix and the `ALLOW_STALE` override.
