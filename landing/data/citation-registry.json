@@ -741,6 +741,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1007/s00246-025-03770-3": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Impact of Acute Energy Drink Consumption on Heart Rate Variability in Children and Adolescents. A Randomized Trial",
+   "firstAuthor": "Mandilaras",
+   "authors": [
+    "Mandilaras",
+    "Li",
+    "Dalla-Pozza",
+    "Jakob",
+    "Haas",
+    "Oberhoffer"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Pediatric Cardiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
+  },
   "doi:10.1007/s00392-025-02722-4": {
    "kind": "doi",
    "valid": true,
@@ -2956,6 +2975,25 @@
    "journal": "Neuron",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.numecd.2022.01.015": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Caffeine intake and its influences on heart rate variability recovery in healthy active adults after exercise: A systematic review and meta-analysis",
+   "firstAuthor": "Porto",
+   "authors": [
+    "Porto",
+    "Benjamim",
+    "Gonzaga",
+    "Luciano de Almeida",
+    "Bueno Júnior",
+    "Garner",
+    "Valenti"
+   ],
+   "year": 2022,
+   "journal": "Nutrition, Metabolism and Cardiovascular Diseases",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
   },
   "doi:10.1016/j.physbeh.2018.06.010": {
    "kind": "doi",
@@ -6317,6 +6355,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1111/j.1475-097x.2006.00663.x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Acute effects of caffeine on heart rate variability in habitual caffeine consumers",
+   "firstAuthor": "Rauh",
+   "authors": [
+    "Rauh",
+    "Burkert",
+    "Siepmann",
+    "Mueck‐Weymann"
+   ],
+   "year": 2006,
+   "journal": "Clinical Physiology and Functional Imaging",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
+  },
   "doi:10.1111/j.1540-8159.2010.02841.x": {
    "kind": "doi",
    "valid": true,
@@ -9207,6 +9261,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.2174/011573403x289842240307114736": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Impact of Caffeine Intake Strategies on Heart Rate Variability during\nPost-Exercise Recovery: A Systematic Review and Meta-Analysis",
+   "firstAuthor": "Almeida",
+   "authors": [
+    "Almeida",
+    "Morales",
+    "Ribeiro",
+    "Sampaio-Jorge",
+    "Ribeiro",
+    "Barth",
+    "Ribeiro"
+   ],
+   "year": 2024,
+   "journal": "Current Cardiology Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
+  },
   "doi:10.2196/23825": {
    "kind": "doi",
    "valid": true,
@@ -10531,6 +10604,25 @@
    "journal": "Nutrients",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3390/nu9070741": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Coffee Consumption and Heart Rate Variability: The Brazilian Longitudinal Study of Adult Health (ELSA-Brasil) Cohort Study",
+   "firstAuthor": "De Oliveira",
+   "authors": [
+    "De Oliveira",
+    "Araújo",
+    "De Figueiredo",
+    "Goulart",
+    "Schmidt",
+    "Barreto",
+    "Ribeiro"
+   ],
+   "year": 2017,
+   "journal": "Nutrients",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
   },
   "doi:10.3390/photonics6030077": {
    "kind": "doi",
@@ -12012,6 +12104,23 @@
    "doi": "10.1037/0033-295x.98.4.459",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:16640511": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Acute effects of caffeine on heart rate variability in habitual caffeine consumers.",
+   "firstAuthor": "Rauh",
+   "authors": [
+    "Rauh",
+    "Burkert",
+    "Siepmann",
+    "Mueck-Weymann"
+   ],
+   "year": 2006,
+   "journal": "Clin Physiol Funct Imaging",
+   "doi": "10.1111/j.1475-097X.2006.00663.x",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
   },
   "pmid:16687322": {
    "kind": "pmid",
@@ -15696,6 +15805,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:28703735": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Coffee Consumption and Heart Rate Variability: The Brazilian Longitudinal Study of Adult Health (ELSA-Brasil) Cohort Study.",
+   "firstAuthor": "de Oliveira",
+   "authors": [
+    "de Oliveira",
+    "Araújo",
+    "de Figueiredo",
+    "Goulart",
+    "Schmidt",
+    "Barreto",
+    "Ribeiro"
+   ],
+   "year": 2017,
+   "journal": "Nutrients",
+   "doi": "10.3390/nu9070741",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
+  },
   "pmid:28779936": {
    "kind": "pmid",
    "valid": true,
@@ -18178,6 +18307,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:35272883": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Caffeine intake and its influences on heart rate variability recovery in healthy active adults after exercise: A systematic review and meta-analysis.",
+   "firstAuthor": "Porto",
+   "authors": [
+    "Porto",
+    "Benjamim",
+    "Gonzaga",
+    "Luciano de Almeida",
+    "Bueno Júnior",
+    "Garner",
+    "Valenti"
+   ],
+   "year": 2022,
+   "journal": "Nutr Metab Cardiovasc Dis",
+   "doi": "10.1016/j.numecd.2022.01.015",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
+  },
   "pmid:35299845": {
    "kind": "pmid",
    "valid": true,
@@ -19094,6 +19243,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:38494935": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Impact of Caffeine Intake Strategies on Heart Rate Variability during Post-Exercise Recovery: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Almeida",
+   "authors": [
+    "Almeida",
+    "Morales",
+    "Ribeiro",
+    "Sampaio-Jorge",
+    "Ribeiro",
+    "Barth",
+    "Ribeiro"
+   ],
+   "year": 2024,
+   "journal": "Curr Cardiol Rev",
+   "doi": "10.2174/011573403X289842240307114736",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
+  },
   "pmid:38663342": {
    "kind": "pmid",
    "valid": true,
@@ -19389,6 +19558,26 @@
    "doi": "10.3390/bioengineering11121223",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:39838188": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Impact of Acute Energy Drink Consumption on Heart Rate Variability in Children and Adolescents. A Randomized Trial.",
+   "firstAuthor": "Mandilaras",
+   "authors": [
+    "Mandilaras",
+    "Li",
+    "Dalla-Pozza",
+    "Jakob",
+    "Haas",
+    "Oberhoffer"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "Pediatr Cardiol",
+   "doi": "10.1007/s00246-025-03770-3",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
   },
   "pmid:39879231": {
    "kind": "pmid",

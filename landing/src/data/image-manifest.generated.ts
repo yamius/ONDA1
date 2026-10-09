@@ -2632,6 +2632,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1920,
     "height": 820
   },
+  "/images/science/mechanisms-caffeine-and-hrv.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-caffeine-and-hrv.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-caffeine-and-hrv.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/mechanisms-exercise-and-hrv.avif": {
     "width": 1376,
     "height": 768
