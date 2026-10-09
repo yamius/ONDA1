@@ -1,16 +1,16 @@
 ---
-sourceHash: 8610003c6538
+sourceHash: 26f74cb4722e
 title: "Krankheit und HRV: was ein Wearable sehen kann und was nicht"
 metaTitle: "Krankheit und HRV: Frühsignal, keine Diagnose"
 metaDescription: "Wie Entzündung und Infektion HRV und Ruhepuls verschieben, was Wearable-Warnungen bedeuten und warum sie dir nicht sagen können, dass du krank bist."
 shortAnswer: >
   Entzündung und Infektion senken die Herzfrequenzvariabilität meist und erhöhen
-  den Ruhepuls, aber der Zusammenhang ist noch ein Forschungsbefund, kein Test.
-  Die am besten untersuchten Frühwarnungen vor einer Infektion beruhten auf
-  einem Anstieg des Ruhepulses zusammen mit Veränderungen bei Schritten und
-  Schlaf, nicht auf der Herzfrequenzvariabilität. Dieselben Warnungen treten
-  auch nach Stress, Alkohol und Reisen auf. Eine solche Veränderung ist
-  höchstens ein unspezifisches Frühsignal, dass der Körper belastet ist.
+  den Ruhepuls, aber der Zusammenhang ist ein Forschungsbefund, kein Test. Die
+  am besten untersuchten Frühwarnungen vor einer Infektion beruhten auf einem
+  Anstieg des Ruhepulses, nicht auf der Herzfrequenzvariabilität. Stress,
+  Alkohol und Reisen lösen dieselben Warnungen aus. Eine solche Veränderung ist
+  höchstens ein unspezifisches Frühsignal, dass der Körper belastet ist. Bei
+  Symptomen geh zum Arzt, nicht zur Uhr.
 keyPoints:
   - "In Wearable-Studien ging eine niedrigere Herzfrequenzvariabilität, besonders die SDNN, mit höheren Werten des Entzündungsmarkers CRP einher, und die Autoren des Reviews nennen die Wearable-HRV einen explorativen Biomarker, kein Diagnosewerkzeug."
   - "Die am besten untersuchten Frühwarnungen vor einer Infektion stützten sich auf den Ruhepuls im Vergleich zur eigenen Baseline, zusammen mit Schritten und Schlaf, nicht auf die Herzfrequenzvariabilität."
@@ -68,7 +68,7 @@ Das sind drei Studien aus einer Forschungsgruppe, sie sind also keine unabhängi
 ## Was bedeutet eine Warnung wirklich?
 
 <!-- myth-debunk -->
-Verbreitet ist die Vorstellung, dass ein HRV-Abfall oder eine Warnung des Geräts bedeutet, dass du krank wirst. Die prospektive Studie zeigt, warum das nicht folgt. Andere Atemwegsinfektionen und auch Ereignisse ganz ohne Infektion, etwa Stress, Alkohol und Reisen, lösten ebenfalls Warnungen aus [S3]. Sie taten es seltener: {{fact:illness.alavi.otherEvents}} [S3]. Eine Warnung sagt, dass etwas von deinem üblichen Muster abweicht, nicht, was die Ursache ist.
+Verbreitet ist die Vorstellung, dass ein HRV-Abfall oder eine Warnung des Geräts bedeutet, dass du krank wirst. Die prospektive Studie zeigt, warum das nicht folgt. Andere Atemwegsinfektionen und auch Ereignisse ganz ohne Infektion, etwa Stress, Alkohol und Reisen, lösten ebenfalls Warnungen aus [S3]. Die Warnung schlug also auch bei Menschen an, die nicht mit dem Coronavirus infiziert waren, wenn auch seltener: im Durchschnitt {{fact:illness.alavi.otherEvents}} [S3]. Eine Warnung sagt, dass etwas von deinem üblichen Muster abweicht, nicht, was die Ursache ist.
 
 Eine Nacht nach dem Trinken ist ein typisches Beispiel: Die HRV sinkt und der Ruhepuls steigt, ohne dass eine Krankheit im Spiel ist ([Alkohol und HRV](/science/mechanisms/alcohol-and-hrv)). Kurzer Schlaf, eine späte Mahlzeit, hartes Training und Reisen bewegen dieselben Werte ([warum sich die HRV von Tag zu Tag verändert](/science/mechanisms/hrv-day-to-day); [HRV und Herzfrequenz im Schlaf](/science/mechanisms/sleep-and-hrv)). {{fact:claim.hrvNotStress}}.
 

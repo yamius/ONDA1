@@ -6,12 +6,12 @@ metaTitle: "Illness and HRV: Early Signal, Not a Diagnosis"
 metaDescription: "How inflammation and infection move HRV and resting heart rate, what wearable alerts actually mean, and why they cannot tell you that you are ill."
 shortAnswer: >
   Inflammation and infection tend to lower heart rate variability and raise
-  resting heart rate, but the link is still a research finding, not a test. The
+  resting heart rate, but the link is a research finding, not a test. The
   best-studied early warnings of infection came from a rise in resting heart
-  rate, together with changes in steps and sleep, rather than from heart rate
-  variability. The same alerts also appear after stress, alcohol and travel. At
-  most, such a change is a non-specific early signal that the body is under
-  strain.
+  rate rather than from heart rate variability. Stress, alcohol and travel
+  trigger the same alerts. At most, such a change is a non-specific early
+  signal that the body is under strain. With symptoms, see a doctor, not the
+  watch.
 keyPoints:
   - "In wearable studies, lower heart rate variability, especially SDNN, went together with higher levels of the inflammation marker CRP, and the reviewers call wearable HRV an exploratory biomarker, not a diagnostic tool."
   - "The best-studied early warnings of infection relied on resting heart rate against a person's own baseline, together with steps and sleep, not on heart rate variability."
@@ -187,7 +187,7 @@ These are three studies from one research group, so they are not independent con
 ## What does an alert actually mean?
 
 <!-- myth-debunk -->
-A common belief is that a drop in HRV or a device alert means you are getting sick. The prospective study shows why this does not follow. Other respiratory infections, and also events with no infection at all, such as stress, alcohol and travel, triggered alerts too [S3]. They did so less often: {{fact:illness.alavi.otherEvents}} [S3]. An alert says that something deviates from your usual pattern, not what caused it.
+A common belief is that a drop in HRV or a device alert means you are getting sick. The prospective study shows why this does not follow. Other respiratory infections, and also events with no infection at all, such as stress, alcohol and travel, triggered alerts too [S3]. So the alert also fired in people who were not infected with the coronavirus, though less often: on average {{fact:illness.alavi.otherEvents}} [S3]. An alert says that something deviates from your usual pattern, not what caused it.
 
 A night after drinking is a typical example: HRV falls and resting heart rate rises, with no illness involved ([alcohol and HRV](/science/mechanisms/alcohol-and-hrv)). Short sleep, a late meal, hard training and travel move the same numbers ([why HRV changes from day to day](/science/mechanisms/hrv-day-to-day); [HRV and heart rate during sleep](/science/mechanisms/sleep-and-hrv)). {{fact:claim.hrvNotStress}}.
 

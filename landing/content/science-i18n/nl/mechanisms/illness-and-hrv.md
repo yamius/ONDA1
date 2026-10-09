@@ -1,16 +1,16 @@
 ---
-sourceHash: 8610003c6538
+sourceHash: 26f74cb4722e
 title: "Ziekte en HRV: wat een wearable wel en niet kan zien"
 metaTitle: "Ziekte en HRV: vroeg signaal, geen diagnose"
 metaDescription: "Hoe ontsteking en infectie HRV en rusthartslag verschuiven, wat meldingen van wearables betekenen en waarom ze je niet kunnen vertellen dat je ziek bent."
 shortAnswer: >
   Ontsteking en infectie verlagen meestal de hartslagvariabiliteit en verhogen
-  de rusthartslag, maar het verband is nog een onderzoeksbevinding, geen test.
-  De best onderzochte vroege waarschuwingen voor een infectie kwamen van een
-  stijging van de rusthartslag, samen met veranderingen in stappen en slaap, en
-  niet van de hartslagvariabiliteit. Dezelfde meldingen verschijnen ook na
-  stress, alcohol en reizen. Zo'n verandering is hooguit een niet-specifiek
-  vroeg signaal dat het lichaam onder druk staat.
+  de rusthartslag, maar het verband is een onderzoeksbevinding, geen test. De
+  best onderzochte vroege waarschuwingen voor een infectie kwamen van een
+  stijging van de rusthartslag, niet van de hartslagvariabiliteit. Stress,
+  alcohol en reizen leiden tot dezelfde meldingen. Zo'n verandering is hooguit
+  een niet-specifiek vroeg signaal dat het lichaam onder druk staat. Met
+  klachten ga je naar een arts, niet naar je horloge.
 keyPoints:
   - "In studies met wearables ging een lagere hartslagvariabiliteit, vooral SDNN, samen met hogere waarden van de ontstekingsmarker CRP, en de auteurs van de review noemen HRV van wearables een verkennende biomarker, geen diagnostisch hulpmiddel."
   - "De best onderzochte vroege waarschuwingen voor een infectie steunden op de rusthartslag ten opzichte van iemands eigen baseline, samen met stappen en slaap, niet op de hartslagvariabiliteit."
@@ -68,7 +68,7 @@ Dit zijn drie studies van één onderzoeksgroep, dus ze bevestigen elkaar niet o
 ## Wat betekent een melding eigenlijk?
 
 <!-- myth-debunk -->
-Een veelgehoorde overtuiging is dat een daling van je HRV of een melding van je apparaat betekent dat je ziek wordt. De prospectieve studie laat zien waarom dat niet volgt. Andere luchtweginfecties, en ook gebeurtenissen zonder enige infectie, zoals stress, alcohol en reizen, leidden eveneens tot meldingen [S3]. Dat gebeurde minder vaak: {{fact:illness.alavi.otherEvents}} [S3]. Een melding zegt dat iets afwijkt van je gebruikelijke patroon, niet wat de oorzaak is.
+Een veelgehoorde overtuiging is dat een daling van je HRV of een melding van je apparaat betekent dat je ziek wordt. De prospectieve studie laat zien waarom dat niet volgt. Andere luchtweginfecties, en ook gebeurtenissen zonder enige infectie, zoals stress, alcohol en reizen, leidden eveneens tot meldingen [S3]. De melding ging dus ook af bij mensen die niet met het coronavirus besmet waren, al minder vaak: gemiddeld {{fact:illness.alavi.otherEvents}} [S3]. Een melding zegt dat iets afwijkt van je gebruikelijke patroon, niet wat de oorzaak is.
 
 Een nacht na het drinken is een typisch voorbeeld: HRV daalt en de rusthartslag stijgt, zonder dat er ziekte in het spel is ([alcohol en HRV](/science/mechanisms/alcohol-and-hrv)). Kort slapen, een late maaltijd, zware training en reizen bewegen dezelfde waarden ([waarom HRV van dag tot dag verandert](/science/mechanisms/hrv-day-to-day); [HRV en hartslag tijdens de slaap](/science/mechanisms/sleep-and-hrv)). {{fact:claim.hrvNotStress}}.
 

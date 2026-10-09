@@ -1,17 +1,17 @@
 ---
-sourceHash: 8610003c6538
+sourceHash: 26f74cb4722e
 title: "Enfermedad y HRV: lo que un dispositivo ponible puede y no puede ver"
 metaTitle: "Enfermedad y HRV: señal temprana, no diagnóstico"
 metaDescription: "Cómo la inflamación y la infección mueven la HRV y el pulso en reposo, qué significan las alertas de los relojes y por qué no dicen que estás enfermo."
 shortAnswer: >
   La inflamación y la infección tienden a bajar la variabilidad de la frecuencia
-  cardíaca y a subir la frecuencia cardíaca en reposo, pero la relación sigue
-  siendo un hallazgo de investigación, no una prueba. Los avisos tempranos de
-  infección mejor estudiados procedían de una subida de la frecuencia cardíaca
-  en reposo, junto con cambios en los pasos y el sueño, y no de la variabilidad
-  de la frecuencia cardíaca. Las mismas alertas aparecen también tras el estrés,
-  el alcohol y los viajes. Como mucho, un cambio así es una señal temprana
-  inespecífica de que el cuerpo está sometido a una carga.
+  cardíaca y a subir la frecuencia cardíaca en reposo, pero la relación es un
+  hallazgo de investigación, no una prueba. Los avisos tempranos de infección
+  mejor estudiados procedían de una subida de la frecuencia cardíaca en reposo,
+  no de la variabilidad de la frecuencia cardíaca. El estrés, el alcohol y los
+  viajes provocan las mismas alertas. Como mucho, un cambio así es una señal
+  temprana inespecífica de que el cuerpo está sometido a una carga. Si tienes
+  síntomas, consulta a un médico, no al reloj.
 keyPoints:
   - "En los estudios con dispositivos ponibles, una variabilidad de la frecuencia cardíaca más baja, sobre todo la SDNN, iba unida a niveles más altos del marcador de inflamación PCR, y los revisores consideran la HRV de los dispositivos ponibles un biomarcador exploratorio, no una herramienta diagnóstica."
   - "Los avisos tempranos de infección mejor estudiados se basaban en la frecuencia cardíaca en reposo comparada con la línea base propia de cada persona, junto con los pasos y el sueño, no en la variabilidad de la frecuencia cardíaca."
@@ -69,7 +69,7 @@ Son tres estudios de un mismo grupo de investigación, así que no son confirmac
 ## ¿Qué significa realmente una alerta?
 
 <!-- myth-debunk -->
-Una creencia habitual es que una bajada de la HRV o una alerta del dispositivo significa que te estás poniendo enfermo. El estudio prospectivo muestra por qué no es así. Otras infecciones respiratorias, y también eventos sin ninguna infección, como el estrés, el alcohol y los viajes, provocaron alertas [S3]. Lo hicieron con menos frecuencia: {{fact:illness.alavi.otherEvents}} [S3]. Una alerta dice que algo se desvía de tu patrón habitual, no qué lo causó.
+Una creencia habitual es que una bajada de la HRV o una alerta del dispositivo significa que te estás poniendo enfermo. El estudio prospectivo muestra por qué no es así. Otras infecciones respiratorias, y también eventos sin ninguna infección, como el estrés, el alcohol y los viajes, provocaron alertas [S3]. Así que la alerta también saltó en personas que no estaban infectadas por el coronavirus, aunque con menos frecuencia: de media, {{fact:illness.alavi.otherEvents}} [S3]. Una alerta dice que algo se desvía de tu patrón habitual, no qué lo causó.
 
 Una noche después de beber es un ejemplo típico: la HRV baja y la frecuencia cardíaca en reposo sube, sin que haya ninguna enfermedad ([alcohol y HRV](/science/mechanisms/alcohol-and-hrv)). Dormir poco, una cena tardía, un entrenamiento duro y los viajes mueven los mismos valores ([por qué la HRV cambia de un día a otro](/science/mechanisms/hrv-day-to-day); [HRV y frecuencia cardíaca durante el sueño](/science/mechanisms/sleep-and-hrv)). {{fact:claim.hrvNotStress}}.
 

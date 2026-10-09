@@ -54,3 +54,16 @@ Binding terminology for `content/science-i18n/<lang>/` and for any translated ar
 | living systematic review | живой систематический обзор | живий систематичний огляд | lebendes systematisches Review | żywy przegląd systematyczny | revisión sistemática viva | revisão sistemática viva | revue systématique évolutive | revisione sistematica living | levende systematische review | リビング・システマティックレビュー | 动态系统综述 |
 
 de: HRV is feminine — «die HRV» (owner decision 2026-10-09).
+
+## Illness and infection terms (owner decision 2026-10-09, mechanisms/illness-and-hrv)
+
+| Term | ru | uk | de | pl | es | pt | fr | it | nl | ja | zh |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| CRP (C-reactive protein) | СРБ (С-реактивный белок) | СРБ (С-реактивний білок) | CRP (C-reaktives Protein) | CRP (białko C-reaktywne) | PCR (proteína C reactiva) | PCR (proteína C reativa) | CRP (protéine C réactive) | PCR (proteina C reattiva) | CRP (C-reactief proteïne) | CRP（C反応性タンパク） | CRP（C 反应蛋白） |
+| inflammation marker | маркер воспаления | маркер запалення | Entzündungsmarker | marker stanu zapalnego | marcador de inflamación | marcador de inflamação | marqueur d'inflammation | marcatore di infiammazione | ontstekingsmarker | 炎症マーカー | 炎症标志物 |
+| alert (device) | оповещение | сповіщення | Warnung | alert | alerta | alerta | alerte | avviso | melding | アラート | 提醒 |
+| Long COVID | постковидный синдром (Long COVID), then «постковидный синдром» | постковідний синдром (Long COVID), then «постковідний синдром» | Long COVID | long COVID (zespół pocovidowy), then «long COVID» | COVID persistente (Long COVID) | COVID longa | COVID long | Long COVID | long covid | 新型コロナ後遺症（Long COVID）, then «新型コロナ後遺症» | 长新冠（Long COVID）, then «长新冠» |
+| exploratory or adjunctive biomarker | поисковый или вспомогательный биомаркер | пошуковий або допоміжний біомаркер | explorativer oder ergänzender Biomarker | biomarker eksploracyjny lub pomocniczy | biomarcador exploratorio o complementario | biomarcador exploratório ou complementar | biomarqueur exploratoire ou complémentaire | biomarcatore esplorativo o complementare | verkennende of aanvullende biomarker | 探索的または補助的なバイオマーカー | 探索性或辅助性生物标志物 |
+| vaccination | вакцинация | вакцинація | Impfung | szczepienie | vacunación | vacinação | vaccination | vaccinazione | vaccinatie | ワクチン接種 | 疫苗接种 |
+| machine-learning model | модель машинного обучения | модель машинного навчання | Machine-Learning-Modell | model uczenia maszynowego | modelo de aprendizaje automático | modelo de aprendizado de máquina | modèle d'apprentissage automatique | modello di apprendimento automatico | machinelearningmodel | 機械学習モデル | 机器学习模型 |
+| non-specific early signal | неспецифический ранний сигнал | неспецифічний ранній сигнал | unspezifisches Frühsignal | niespecyficzny wczesny sygnał | señal temprana inespecífica | sinal precoce inespecífico | signal précoce non spécifique | segnale precoce aspecifico | niet-specifiek vroeg signaal | 非特異的な早期のサイン | 非特异性早期信号 |

@@ -1,18 +1,17 @@
 ---
-sourceHash: 8610003c6538
+sourceHash: 26f74cb4722e
 title: "Maladie et HRV : ce qu’un objet connecté peut voir ou non"
 metaTitle: "Maladie et HRV : signal précoce, pas diagnostic"
-metaDescription: "Comment l’inflammation et l’infection modifient la HRV et le pouls au repos, ce que valent les alertes des montres et leurs limites pour un diagnostic."
+metaDescription: "Comment l’inflammation et l’infection modifient la HRV et le pouls au repos. Votre montre ne peut pas dire si vous êtes malade."
 shortAnswer: >
   L’inflammation et l’infection tendent à abaisser la variabilité de la
   fréquence cardiaque et à augmenter la fréquence cardiaque au repos, mais ce
-  lien reste un résultat de recherche, pas un test. Les alertes précoces
+  lien est un résultat de recherche, pas un test. Les alertes précoces
   d’infection les mieux étudiées reposaient sur une hausse de la fréquence
-  cardiaque au repos, associée à des changements du nombre de pas et du sommeil,
-  et non sur la variabilité de la fréquence cardiaque. Les mêmes alertes
-  apparaissent aussi après du stress, de l’alcool ou un voyage. Au mieux, un tel
-  changement est un signal précoce non spécifique indiquant que le corps est
-  sollicité.
+  cardiaque au repos, et non sur la variabilité de la fréquence cardiaque. Le
+  stress, l’alcool et les voyages déclenchent les mêmes alertes. Au mieux, un
+  tel changement est un signal précoce non spécifique indiquant que le corps est
+  sollicité. En cas de symptômes, consultez un médecin, pas la montre.
 keyPoints:
   - "Dans les études avec objets connectés, une variabilité de la fréquence cardiaque plus basse, surtout la SDNN, allait de pair avec des taux plus élevés du marqueur d’inflammation CRP, et les auteurs de la revue qualifient la HRV des objets connectés de biomarqueur exploratoire, pas d’outil diagnostique."
   - "Les alertes précoces d’infection les mieux étudiées s’appuyaient sur la fréquence cardiaque au repos comparée à la référence propre de la personne, avec les pas et le sommeil, et non sur la variabilité de la fréquence cardiaque."
@@ -70,7 +69,7 @@ Ce sont trois études d’un même groupe de recherche ; elles ne se confirment 
 ## Que signifie vraiment une alerte ?
 
 <!-- myth-debunk -->
-On croit souvent qu’une baisse de la HRV ou une alerte de l’appareil signifie que l’on tombe malade. L’étude prospective montre pourquoi ce n’est pas le cas. D’autres infections respiratoires, et aussi des événements sans aucune infection, comme le stress, l’alcool et les voyages, ont également déclenché des alertes [S3]. Ils l’ont fait moins souvent : {{fact:illness.alavi.otherEvents}} [S3]. Une alerte indique que quelque chose s’écarte de votre profil habituel, pas ce qui en est la cause.
+On croit souvent qu’une baisse de la HRV ou une alerte de l’appareil signifie que l’on tombe malade. L’étude prospective montre pourquoi ce n’est pas le cas. D’autres infections respiratoires, et aussi des événements sans aucune infection, comme le stress, l’alcool et les voyages, ont également déclenché des alertes [S3]. L’alerte s’est donc aussi déclenchée chez des personnes non infectées par le coronavirus, quoique moins souvent : en moyenne {{fact:illness.alavi.otherEvents}} [S3]. Une alerte indique que quelque chose s’écarte de votre profil habituel, pas ce qui en est la cause.
 
 Une nuit après avoir bu est un exemple typique : la HRV baisse et la fréquence cardiaque au repos augmente, sans aucune maladie en jeu ([alcool et HRV](/science/mechanisms/alcohol-and-hrv)). Un sommeil court, un repas tardif, un entraînement intense et les voyages font bouger les mêmes valeurs ([pourquoi la HRV change d’un jour à l’autre](/science/mechanisms/hrv-day-to-day) ; [HRV et fréquence cardiaque pendant le sommeil](/science/mechanisms/sleep-and-hrv)). {{fact:claim.hrvNotStress}}.
 

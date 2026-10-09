@@ -1,16 +1,16 @@
 ---
-sourceHash: 8610003c6538
+sourceHash: 26f74cb4722e
 title: "Choroba a HRV: co urządzenie noszone widzi, a czego nie"
 metaTitle: "Choroba a HRV: wczesny sygnał, nie diagnoza"
 metaDescription: "Jak stan zapalny i infekcja zmieniają HRV i tętno spoczynkowe, co naprawdę znaczą alerty urządzeń noszonych i dlaczego nie powiedzą Ci, że jesteś chory."
 shortAnswer: >
   Stan zapalny i infekcja zwykle obniżają zmienność rytmu serca i podnoszą tętno
-  spoczynkowe, ale ten związek to wciąż wynik badań, a nie test. Najlepiej
-  zbadane wczesne ostrzeżenia przed infekcją opierały się na wzroście tętna
-  spoczynkowego wraz ze zmianami liczby kroków i snu, a nie na zmienności rytmu
-  serca. Te same alerty pojawiają się też po stresie, alkoholu i podróżach. Taka
-  zmiana jest co najwyżej niespecyficznym wczesnym sygnałem, że organizm jest
-  obciążony.
+  spoczynkowe, ale ten związek to wynik badań, a nie test. Najlepiej zbadane
+  wczesne ostrzeżenia przed infekcją opierały się na wzroście tętna
+  spoczynkowego, a nie na zmienności rytmu serca. Stres, alkohol i podróże
+  wywołują te same alerty. Taka zmiana jest co najwyżej niespecyficznym wczesnym
+  sygnałem, że organizm jest obciążony. Przy objawach idź do lekarza, a nie
+  patrz na zegarek.
 keyPoints:
   - "W badaniach z urządzeniami noszonymi niższa zmienność rytmu serca, zwłaszcza SDNN, szła w parze z wyższym poziomem markera stanu zapalnego CRP, a autorzy przeglądu nazywają HRV z urządzeń noszonych biomarkerem eksploracyjnym, a nie narzędziem diagnostycznym."
   - "Najlepiej zbadane wczesne ostrzeżenia przed infekcją opierały się na tętnie spoczynkowym względem osobistej linii bazowej, wraz z krokami i snem, a nie na zmienności rytmu serca."
@@ -68,7 +68,7 @@ To trzy badania jednej grupy badawczej, więc nie są one niezależnymi potwierd
 ## Co właściwie oznacza alert?
 
 <!-- myth-debunk -->
-Powszechnie uważa się, że spadek HRV lub alert urządzenia oznacza, że zaczynasz chorować. Badanie prospektywne pokazuje, dlaczego tak nie jest. Inne infekcje dróg oddechowych, a także zdarzenia zupełnie bez infekcji, takie jak stres, alkohol i podróże, również wywoływały alerty [S3]. Działo się to rzadziej: {{fact:illness.alavi.otherEvents}} [S3]. Alert mówi, że coś odbiega od Twojego zwykłego wzorca, ale nie mówi, co to spowodowało.
+Powszechnie uważa się, że spadek HRV lub alert urządzenia oznacza, że zaczynasz chorować. Badanie prospektywne pokazuje, dlaczego tak nie jest. Inne infekcje dróg oddechowych, a także zdarzenia zupełnie bez infekcji, takie jak stres, alkohol i podróże, również wywoływały alerty [S3]. Alert pojawiał się więc także u osób niezakażonych koronawirusem, choć rzadziej: średnio {{fact:illness.alavi.otherEvents}} [S3]. Alert mówi, że coś odbiega od Twojego zwykłego wzorca, ale nie mówi, co to spowodowało.
 
 Typowy przykład to noc po alkoholu: HRV spada, a tętno spoczynkowe rośnie, bez żadnej choroby ([alkohol a HRV](/science/mechanisms/alcohol-and-hrv)). Krótki sen, późny posiłek, ciężki trening i podróże przesuwają te same wartości ([dlaczego HRV zmienia się z dnia na dzień](/science/mechanisms/hrv-day-to-day); [HRV i tętno podczas snu](/science/mechanisms/sleep-and-hrv)). {{fact:claim.hrvNotStress}}.
 

@@ -1,17 +1,17 @@
 ---
-sourceHash: 8610003c6538
+sourceHash: 26f74cb4722e
 title: "Malattia e HRV: che cosa un dispositivo indossabile può e non può vedere"
 metaTitle: "Malattia e HRV: segnale precoce, non diagnosi"
 metaDescription: "Come infiammazione e infezione spostano l'HRV e il battito a riposo, che cosa significano gli avvisi dei dispositivi e perché non dicono che sei malato."
 shortAnswer: >
   Infiammazione e infezione tendono ad abbassare la variabilità della frequenza
-  cardiaca e ad alzare la frequenza cardiaca a riposo, ma il legame è ancora un
+  cardiaca e ad alzare la frequenza cardiaca a riposo, ma il legame è un
   risultato di ricerca, non un test. I segnali precoci di infezione più studiati
-  venivano da un aumento della frequenza cardiaca a riposo, insieme a
-  cambiamenti nei passi e nel sonno, e non dalla variabilità della frequenza
-  cardiaca. Gli stessi avvisi compaiono anche dopo stress, alcol e viaggi. Al
-  massimo, un cambiamento di questo tipo è un segnale precoce aspecifico che il
-  corpo è sotto carico.
+  venivano da un aumento della frequenza cardiaca a riposo, non dalla
+  variabilità della frequenza cardiaca. Stress, alcol e viaggi fanno scattare
+  gli stessi avvisi. Al massimo, un cambiamento di questo tipo è un segnale
+  precoce aspecifico che il corpo è sotto carico. Con dei sintomi, rivolgiti a
+  un medico, non all'orologio.
 keyPoints:
   - "Negli studi con dispositivi indossabili, una variabilità della frequenza cardiaca più bassa, soprattutto la SDNN, si accompagnava a livelli più alti del marcatore di infiammazione PCR, e i revisori definiscono l'HRV dei dispositivi indossabili un biomarcatore esplorativo, non uno strumento diagnostico."
   - "I segnali precoci di infezione più studiati si basavano sulla frequenza cardiaca a riposo rispetto alla baseline personale, insieme a passi e sonno, non sulla variabilità della frequenza cardiaca."
@@ -69,7 +69,7 @@ Sono tre studi dello stesso gruppo di ricerca, quindi non sono conferme indipend
 ## Che cosa significa davvero un avviso?
 
 <!-- myth-debunk -->
-Una convinzione diffusa è che un calo dell'HRV o un avviso del dispositivo significhi che ti stai ammalando. Lo studio prospettico mostra perché non è così. Anche altre infezioni respiratorie, e persino eventi senza alcuna infezione, come stress, alcol e viaggi, hanno fatto scattare avvisi [S3]. Lo hanno fatto meno spesso: {{fact:illness.alavi.otherEvents}} [S3]. Un avviso dice che qualcosa si discosta dal tuo andamento abituale, non che cosa l'ha causato.
+Una convinzione diffusa è che un calo dell'HRV o un avviso del dispositivo significhi che ti stai ammalando. Lo studio prospettico mostra perché non è così. Anche altre infezioni respiratorie, e persino eventi senza alcuna infezione, come stress, alcol e viaggi, hanno fatto scattare avvisi [S3]. Quindi l'avviso è scattato anche in persone non infettate dal coronavirus, anche se meno spesso: in media {{fact:illness.alavi.otherEvents}} [S3]. Un avviso dice che qualcosa si discosta dal tuo andamento abituale, non che cosa l'ha causato.
 
 Una notte dopo aver bevuto è un esempio tipico: l'HRV scende e la frequenza cardiaca a riposo sale, senza alcuna malattia ([alcol e HRV](/science/mechanisms/alcohol-and-hrv)). Poco sonno, un pasto tardivo, un allenamento duro e i viaggi spostano gli stessi valori ([perché l'HRV cambia da un giorno all'altro](/science/mechanisms/hrv-day-to-day); [HRV e frequenza cardiaca durante il sonno](/science/mechanisms/sleep-and-hrv)). {{fact:claim.hrvNotStress}}.
 
