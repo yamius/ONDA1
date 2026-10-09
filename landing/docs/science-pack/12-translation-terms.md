@@ -72,7 +72,7 @@ de: HRV is feminine — «die HRV» (owner decision 2026-10-09).
 
 | Term | ru | uk | de | pl | es | pt | fr | it | nl | ja | zh |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| cyclic sighing | циклические вздохи | циклічні зітхання | zyklisches Seufzen | cykliczne wzdychanie | suspiro cíclico | suspiro cíclico | soupir cyclique | sospiro ciclico | cyclisch zuchten | サイクリック・サイ | 循环叹息 |
+| cyclic sighing | циклические вздохи | циклічні зітхання | zyklisches Seufzen | cykliczne wzdychanie | suspiro cíclico | suspiro cíclico | soupir cyclique | sospiro ciclico | cyclisch zuchten | 周期的ため息呼吸（cyclic sighing） at first mention, then 周期的ため息呼吸 (owner decision 2026-10-09) | 循环叹息 |
 | box breathing | квадратное дыхание | квадратне дихання | Box Breathing | oddychanie pudełkowe | respiración cuadrada (box breathing) | respiração quadrada | respiration carrée | respirazione quadrata | boxademhaling | ボックス呼吸 | 箱式呼吸 |
 | 4-7-8 breathing (в тексте словами) | дыхание «четыре-семь-восемь» | дихання «чотири-сім-вісім» | Vier-Sieben-Acht-Atmung | oddychanie „cztery-siedem-osiem” | respiración cuatro-siete-ocho | respiração quatro-sete-oito | respiration quatre-sept-huit | respirazione quattro-sette-otto | vier-zeven-acht-ademhaling | 四・七・八呼吸法 | 四-七-八呼吸法 |
 | physiological sigh / single sigh | физиологический вздох / отдельный вздох | фізіологічне зітхання / окреме зітхання | physiologischer Seufzer / einzelner Seufzer | westchnienie fizjologiczne / pojedyncze westchnienie | suspiro fisiológico / suspiros sueltos | suspiro fisiológico / suspiros isolados | soupir physiologique / soupirs isolés | sospiro fisiologico / singoli sospiri | fysiologische zucht / losse zucht | 生理的ため息 / 単発のため息 | 生理性叹息 / 单次叹气 |
@@ -86,3 +86,5 @@ de: HRV is feminine — «die HRV» (owner decision 2026-10-09).
 | salivary alpha-amylase | альфа-амилаза слюны | альфа-амілаза слини | Speichel-Alpha-Amylase | alfa-amylaza w ślinie | alfa-amilasa salival | alfa-amilase salivar | alpha-amylase salivaire | alfa-amilasi salivare | speekselalfa-amylase | 唾液アルファアミラーゼ | 唾液α-淀粉酶 |
 
 In body text the 4-7-8 technique is written in words in every language (digit rule); titles of the /articles page keep their own style.
+
+Owner-confirmed 2026-10-09: fr «élèves officiers» (officer cadets) and it «spin bike» as used on breathing-techniques-compared. ja: サイクリック・サイ replaced site-wide by 周期的ため息呼吸 (gloss （cyclic sighing） at the first mention of each page).

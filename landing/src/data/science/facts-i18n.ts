@@ -1654,7 +1654,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'breathing.avcik.design': { display: "十分間の三つの条件をそれぞれ行った大学生34人（男性19人、女性15人）" },
     'breathing.parlak.design': { display: "内視鏡検査前の高齢者75人（各群25人）" },
     'breathing.kirazli.design': { display: "耳鳴りのある48人（6週間練習した23人、対照25人）" },
-    'breathing.riedl.design': { display: "大学生47人が一分間のボックス呼吸またはサイクリック・サイを行いました" },
+    'breathing.riedl.design': { display: "大学生47人が一分間のボックス呼吸または周期的ため息呼吸を行いました" },
     'breathing.hanley.dose': { display: "録音による四分間のセッション一回" },
     'study.besnier2026.design': { display: "急性冠症候群を経験した患者48人、週3回の有酸素運動を3か月間" },
     'study.besnier2026.vo2peak': { display: "標準トレーニングで1.9 mL·kg⁻¹·min⁻¹、HRVガイド下トレーニングで2.1 mL·kg⁻¹·min⁻¹増加し、群間に有意差はなかった（P = .794）" },
