@@ -7190,6 +7190,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1146/annurev-bioeng-103020-040136": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Detection and Monitoring of Viral Infections via Wearable Devices and Biometric Data",
+   "firstAuthor": "Goergen",
+   "authors": [
+    "Goergen",
+    "Tweardy",
+    "Steinhubl",
+    "Wegerich",
+    "Singh",
+    "Mieloszyk",
+    "Dunn"
+   ],
+   "year": 2022,
+   "journal": "Annual Review of Biomedical Engineering",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
+  },
   "doi:10.1152/ajpheart.00041.2026": {
    "kind": "doi",
    "valid": true,
@@ -8683,6 +8702,28 @@
    "journal": "PLoS Biology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1371/journal.pdig.0001093": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Longitudinal wearable sensor data enhance precision of Long COVID detection",
+   "firstAuthor": "Uwakwe",
+   "authors": [
+    "Uwakwe",
+    "Rangan",
+    "Kumar",
+    "Gutjahr",
+    "Miao",
+    "Brooks",
+    "Maguire",
+    "Mishra",
+    "McGuire",
+    "Snyder"
+   ],
+   "year": 2025,
+   "journal": "PLOS Digital Health",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
   },
   "doi:10.1371/journal.pdig.0001284": {
    "kind": "doi",
@@ -10489,6 +10530,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.3390/diagnostics16040538": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Clinical Evidence of Wearable-Derived Heart Rate Variability for Detecting Systemic Inflammation: A Systematic Review",
+   "firstAuthor": "Siswishanto",
+   "authors": [
+    "Siswishanto",
+    "Nurdiati",
+    "Aluicius",
+    "Rezza",
+    "Batrisha"
+   ],
+   "year": 2026,
+   "journal": "Diagnostics",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
+  },
   "doi:10.3390/dj13020076": {
    "kind": "doi",
    "valid": true,
@@ -10877,6 +10935,20 @@
    "journal": "Sensors",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3390/vaccines10122095": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Impact of COVID-19 Vaccination on Heart Rate Variability: A Systematic Review",
+   "firstAuthor": "Kwon",
+   "authors": [
+    "Kwon",
+    "Lee"
+   ],
+   "year": 2022,
+   "journal": "Vaccines",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
   },
   "doi:10.3949/ccjm.76.s2.17": {
    "kind": "doi",
@@ -18292,6 +18364,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:34932906": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Detection and Monitoring of Viral Infections via Wearable Devices and Biometric Data.",
+   "firstAuthor": "Goergen",
+   "authors": [
+    "Goergen",
+    "Tweardy",
+    "Steinhubl",
+    "Wegerich",
+    "Singh",
+    "Mieloszyk",
+    "Dunn"
+   ],
+   "year": 2022,
+   "yearAlt": 2021,
+   "journal": "Annu Rev Biomed Eng",
+   "doi": "10.1146/annurev-bioeng-103020-040136",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
+  },
   "pmid:34985954": {
    "kind": "pmid",
    "valid": true,
@@ -18773,6 +18866,21 @@
    "doi": "10.7861/clinmed.2022-news-concept",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:36560505": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Impact of COVID-19 Vaccination on Heart Rate Variability: A Systematic Review.",
+   "firstAuthor": "Kwon",
+   "authors": [
+    "Kwon",
+    "Lee"
+   ],
+   "year": 2022,
+   "journal": "Vaccines (Basel)",
+   "doi": "10.3390/vaccines10122095",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
   },
   "pmid:36600580": {
    "kind": "pmid",
@@ -20034,6 +20142,29 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:41264615": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Longitudinal wearable sensor data enhance precision of Long COVID detection.",
+   "firstAuthor": "Uwakwe",
+   "authors": [
+    "Uwakwe",
+    "Rangan",
+    "Kumar",
+    "Gutjahr",
+    "Miao",
+    "Brooks",
+    "Maguire",
+    "Mishra",
+    "McGuire",
+    "Snyder"
+   ],
+   "year": 2025,
+   "journal": "PLOS Digit Health",
+   "doi": "10.1371/journal.pdig.0001093",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
+  },
   "pmid:41310318": {
    "kind": "pmid",
    "valid": true,
@@ -20268,6 +20399,24 @@
    "doi": "10.4103/ijoy.ijoy_2_25",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:41750686": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Clinical Evidence of Wearable-Derived Heart Rate Variability for Detecting Systemic Inflammation: A Systematic Review.",
+   "firstAuthor": "Siswishanto",
+   "authors": [
+    "Siswishanto",
+    "Nurdiati",
+    "Aluicius",
+    "Rezza",
+    "Batrisha"
+   ],
+   "year": 2026,
+   "journal": "Diagnostics (Basel)",
+   "doi": "10.3390/diagnostics16040538",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
   },
   "pmid:41755264": {
    "kind": "pmid",
