@@ -29,7 +29,8 @@
     "tableTitle": "Koffein in gängigen Getränken",
     "colDrink": "Getränk",
     "colServing": "Portion",
-    "colCaffeine": "Koffein"
+    "colCaffeine": "Koffein",
+    "cupNote": "8,8 Stunden sind die Modellschätzung von Gardiner 2023 für eine Dosis von etwa 107 mg; die Standardtasse in diesem Rechner (Filterkaffee) hat 95 mg."
   },
   "drinks": {
     "espresso": {
@@ -124,7 +125,7 @@
     }
   ],
   "sourcesTitle": "Quellen & Methodik",
-  "methodology": "Das Modell nutzt eine Elimination erster Ordnung: verbleibendes Koffein = Dosis × 0,5^(Stunden ÷ Halbwertszeit), mit einer typischen Halbwertszeit von 5,5 Stunden (4 Stunden bei schnellem, 8,5 Stunden bei langsamem Abbau). Die Grenze ist der Zeitpunkt, ab dem zur Schlafenszeit weniger als etwa 35 mg – rund ein Drittel einer Tasse Kaffee – übrig wären. Wir haben diese Schwelle an der Metaanalyse von Gardiner 2023 kalibriert: Damit braucht ein Kaffee mit 107 mg etwa 8,8 Stunden Abstand zum Schlafengehen, wie die Studie empfiehlt. Sehr empfindliche Menschen sollten niedriger ansetzen. Die Koffeinmengen sind typische Durchschnittswerte. Orientierende Schätzung, keine medizinische Beratung.",
+  "methodology": "Das Modell nutzt eine Elimination erster Ordnung: verbleibendes Koffein = Dosis × 0,5^(Stunden ÷ Halbwertszeit), mit einer typischen Halbwertszeit von 5,5 Stunden (4 Stunden bei schnellem, 8,5 Stunden bei langsamem Abbau). Die Grenze ist der Zeitpunkt, ab dem zur Schlafenszeit weniger als etwa 35 mg – rund ein Drittel einer Tasse Kaffee – übrig wären. Wir haben diese Schwelle an der Metaanalyse von Gardiner 2023 kalibriert: Damit braucht ein Kaffee mit 107 mg etwa 8,8 Stunden Abstand zum Schlafengehen, wie die Studie empfiehlt. Unsere Berechnung ist etwas vorsichtiger als die Modellschätzung von Gardiner. Sehr empfindliche Menschen sollten niedriger ansetzen. Die Koffeinmengen sind typische Durchschnittswerte. Orientierende Schätzung, keine medizinische Beratung.",
   "sourcesContributes": [
     "Metaanalyse von 24 Studien: Koffein verkürzte die Gesamtschlafdauer um ~45 Min. und senkte die Schlafeffizienz um 7 %; Kaffee (~107 mg) sollte ≥8,8 Std. und ein Pre-Workout-Booster (~217 mg) ≥13,2 Std. vor dem Schlafen getrunken werden.",
     "400 mg Koffein 0, 3 oder 6 Stunden vor dem Schlafengehen störten allesamt den Schlaf; selbst nach 6 Stunden verkürzte es den objektiv gemessenen Schlaf um mehr als eine Stunde.",

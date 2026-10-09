@@ -78,7 +78,8 @@ export function CaffeineCalculatorPage() {
       </nav>
 
       <h1 className="mb-3 text-3xl font-bold tracking-tight md:text-4xl">{c.h1}</h1>
-      <p className="mb-8 text-base leading-relaxed text-white/70">{c.capsule}</p>
+      <p className="mb-2 text-base leading-relaxed text-white/70">{c.capsule}</p>
+      <p className="mb-8 text-sm leading-relaxed text-white/50">{c.ui.cupNote}</p>
 
       <div className="mb-6 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5 md:p-6">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

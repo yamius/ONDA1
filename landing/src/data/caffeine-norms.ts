@@ -17,7 +17,9 @@
 import type { ScienceSource } from './sources'
 
 export const DEFAULT_HALF_LIFE_H = 5.5
-/** Calibrated to Gardiner 2023: 107 mg coffee → ≥8.8 h, 217.5 mg pre-workout → ≥13.2 h before bed. */
+/** Calibrated to Gardiner 2023: 107 mg coffee → ≥8.8 h, 217.5 mg pre-workout → ≥13.2 h before bed.
+ *  Note: 8.8 h is Gardiner's model estimate for ~107 mg; our standard cup (brewed coffee) is 95 mg. With this
+ *  threshold our cut-off is slightly more conservative than Gardiner's estimate (page copy says so: ui.cupNote, methodology). */
 export const SLEEP_THRESHOLD_MG = 35
 
 export interface CaffeineDrink {
