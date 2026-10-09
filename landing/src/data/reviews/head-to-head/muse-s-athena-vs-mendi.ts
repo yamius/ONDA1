@@ -9,6 +9,7 @@ const museAthenaVsMendi: HeadToHeadInput = {
     'Muse S Athena vs Mendi — the EEG-plus-fNIRS brain-training headband vs the simple fNIRS focus trainer. Richer data and sleep vs the easiest habit, compared by ONDA.',
   intro:
     'Both are worn on the forehead to train your brain, but they measure different things. The Muse S Athena is the most complete consumer headset — it combines EEG with fNIRS, adds sleep tracking, and gives real-time audio neurofeedback. Mendi is deliberately simpler: fNIRS only (prefrontal blood flow), shown as a single game-like bar, with no subscription and almost no learning curve. It’s depth-and-versatility versus the easiest possible habit.',
+  jobDependentVerdict: true,
   verdict:
     'Complete and rich vs simple and easy. The Muse S Athena wins on measurement (EEG + fNIRS), sleep tracking and versatility; Mendi wins on simplicity, price and habit-formation for pure focus training. Choose Muse for the fuller, more capable device; Mendi if you just want an easy, cheaper, game-based focus trainer.',
   bestForA:

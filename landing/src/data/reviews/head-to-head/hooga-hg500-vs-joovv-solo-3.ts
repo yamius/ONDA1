@@ -9,6 +9,7 @@ const hoogaVsJoovv: HeadToHeadInput = {
     'Hooga HG500 vs Joovv Solo 3.0 — the budget red-light reference vs the premium category leader. Roughly a fifth of the price vs brand, build and a modular ecosystem.',
   intro:
     'This is the red-light panel decision most people actually face: the value pick versus the premium reference. The Hooga HG500 delivers honest specs and a solid build for about a fifth of the Joovv price. The Joovv Solo 3.0 is the category benchmark — modular, beautifully built — and priced like it. The question is how much the brand, build and ecosystem are worth to you over raw output per dollar.',
+  jobDependentVerdict: true,
   verdict:
     'Value vs premium reference. The Hooga HG500 wins decisively on price and output-per-dollar — most of the core spec for roughly a fifth of the cost. The Joovv Solo 3.0 wins on build quality, brand maturity and a modular ecosystem you can expand. Pick Hooga if you want the results without the premium; Joovv if brand, build and expandability justify the spend.',
   bestForA:

@@ -16,7 +16,7 @@ const currentbodySeries2: ToolReviewInput = {
     { criterionId: 'irradiance', score: 8.0, note: 'Documented irradiance in dermatology-acceptable range. Less independently-verified than Omnilux but transparent at the spec level.' },
     { criterionId: 'wavelength-coverage', score: 8.5, note: 'Red 633 nm + near-infrared 830 nm — the pair most used in skin studies, matching the Omnilux spectrum.' },
     { criterionId: 'led-count-coverage', score: 9.0, note: 'Integrated neck flap is the differentiator — coverage extends from forehead through cheeks and jaw down the neck. 2026 spec war winner.' },
-    { criterionId: 'clinical-evidence', score: 7.5, note: 'FDA registered (a listing, not clearance). Brand-funded studies + customer-base scale rather than peer-reviewed dermatology moat.' },
+    { criterionId: 'clinical-evidence', score: 6.0, note: 'FDA registered (a listing, not clearance). Brand-funded studies + customer-base scale rather than peer-reviewed dermatology moat.' },
     { criterionId: 'comfort-fit', score: 9.0, note: 'Medical-grade flexible silicone, lighter than Omnilux. Strap design refined through multiple consumer-feedback cycles.' },
     { criterionId: 'value', score: 7.5, note: '$470 — premium-tier pricing including neck flap. More expensive than Omnilux Contour Face alone but cheaper than Omnilux + neck add-on combined.' },
   ],

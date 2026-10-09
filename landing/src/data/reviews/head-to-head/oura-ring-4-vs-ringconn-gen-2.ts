@@ -9,6 +9,7 @@ const ouraVsRingconn: HeadToHeadInput = {
     'Oura Ring 4 vs RingConn Gen 2 — side-by-side ONDA comparison of premium smart-ring incumbent versus the subscription-free challenger with the longest battery.',
   intro:
     'Oura Ring 4 and RingConn Gen 2 are the two smart rings users compare when subscription economics become the deciding factor. Oura is the polished category incumbent with the deepest analytics and a small monthly membership; RingConn Gen 2 is the subscription-free challenger with a 12-day battery and a meaningfully lower 3-year cost. Both run similar optical sensors; the wrappers and economics differ.',
+  jobDependentVerdict: true,
   verdict:
     'Depends on what you value. Oura Ring 4 wins on app maturity and analytics depth. RingConn Gen 2 wins on battery, subscription-free model and total cost of ownership.',
   bestForA:

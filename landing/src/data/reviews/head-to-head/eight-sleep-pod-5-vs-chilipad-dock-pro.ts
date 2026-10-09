@@ -9,6 +9,7 @@ const pod5VsChilipad: HeadToHeadInput = {
     'Eight Sleep Pod 5 vs ChiliPad Dock Pro — the maximal $6,099 smart-bed system with HRV tracking and a subscription, vs the $1,700 subscription-free dual-zone water cooler. ONDA on what the extra money buys.',
   intro:
     'The Eight Sleep Pod 5 Ultra and the ChiliPad Dock Pro sit at opposite ends of the sleep-climate market. The Pod 5 is the maximal system — dual-zone cover plus a top-down hydro blanket, integrated HRV tracking, an adjustable base and Autopilot software — but it starts around $6,099 and requires an ongoing membership. The ChiliPad Dock Pro delivers the same core job, dual-zone water cooling, for about $1,700 once, with no subscription and no built-in tracking. The gap is roughly 3–4× the price for tracking, software and extras.',
+  jobDependentVerdict: true,
   verdict:
     'Maximal smart-bed vs clean water cooling. The Eight Sleep Pod 5 wins on integrated HRV/sleep tracking, Autopilot software and full-bed extras — if you accept ~$6,099 plus a subscription. The ChiliPad Dock Pro wins on price and ownership: the same dual-zone water cooling for roughly a quarter of the 3-year cost, no subscription, no tracking (pair with the Oura or WHOOP you already wear).',
   bestForA:

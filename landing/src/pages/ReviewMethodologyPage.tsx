@@ -43,8 +43,12 @@ export function ReviewMethodologyPage() {
       </p>
 
       <h2 className="mb-3 text-xl font-bold tracking-tight">{tReviews('methodology.scoreHeading')}</h2>
-      <p className="mb-10 font-mono text-sm leading-relaxed text-white/60">
+      <p className="mb-4 font-mono text-sm leading-relaxed text-white/60">
         {tReviews('methodology.scoreBody')}
+      </p>
+      {/* Rounding, tie and adjustment rules (scoring.ts / check-review-scores.ts). */}
+      <p className="mb-10 font-mono text-sm leading-relaxed text-white/60">
+        {tReviews('methodology.scoreRulesBody')}
       </p>
 
       {REVIEW_CATEGORIES.map((cat) => (

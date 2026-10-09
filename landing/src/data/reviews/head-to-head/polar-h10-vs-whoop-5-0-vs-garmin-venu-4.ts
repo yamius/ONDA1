@@ -10,6 +10,7 @@ const polarVsWhoopVsGarmin: HeadToHeadInput = {
     'Polar H10 vs Whoop 5.0 vs Garmin Venu 4 — three-way ONDA comparison of three training-focused HRV instruments. Chest-strap reference, recovery coaching band and training smartwatch.',
   intro:
     'Polar H10, Whoop 5.0 and Garmin Venu 4 are the three HRV instruments serious athletes compare when measurement quality and training analytics are the deciding factors. Three form factors, three roles: Polar H10 is the ECG chest-strap accuracy reference, Whoop is the continuous-coaching recovery band, Garmin is the do-everything training watch. Often paired rather than substituted.',
+  jobDependentVerdict: true,
   verdict:
     'Three different roles. Polar H10 for reference accuracy. Whoop for daily recovery coaching. Garmin for training analytics with no subscription. Committed athletes often run two of three.',
   bestForA:

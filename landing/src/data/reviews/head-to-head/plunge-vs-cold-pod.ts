@@ -9,6 +9,7 @@ const plungeVsColdPod: HeadToHeadInput = {
     'The Plunge All-In vs Cold Pod — a $5,990 built-in-chiller cold plunge vs a $220 inflatable ice-fill tub. ONDA compares chiller, running cost, build and value.',
   intro:
     'The Plunge All-In and the Cold Pod are the two ends of the cold-plunge market people actually choose between: buy the finished, chilled, plug-in appliance, or start with a $220 inflatable tub you fill with ice. Both get you cold water. The gap is convenience and running cost versus upfront price — the same “premium vs cheap entry” fork, at 27x the money.',
+  jobDependentVerdict: true,
   verdict:
     'It depends entirely on budget and commitment. The Plunge All-In is the finished appliance — built-in chiller, filtration, no ice, ready every day — at $5,990. The Cold Pod is the cheapest legitimate way in at $220, if you are willing to buy ice daily and refill it yourself.',
   bestForA:

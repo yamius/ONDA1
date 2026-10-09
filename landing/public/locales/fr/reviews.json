@@ -29,7 +29,8 @@
     "updatesBody": "Chaque test et chaque comparatif porte une date de mise à jour. Nous révisons les notes et les classements lorsqu’un modèle phare sort, lorsqu’un prix ou une disponibilité change sensiblement, ou lorsque de nouvelles preuves apparaissent — pas selon un calendrier fixe. Lorsqu’un produit est arrêté ou, par exemple, interdit à la vente, nous le signalons et ajustons le classement.",
     "authorHeading": "Qui écrit les tests",
     "authorBody": "Les tests sont rédigés par Yakiv Bilenko, fondateur d’ONDA Life.",
-    "authorLink": "À propos de l’auteur"
+    "authorLink": "À propos de l’auteur",
+    "scoreRulesBody": "Comment la note est calculée : la moyenne pondérée est arrondie à une décimale, la moitié vers le haut (8,35 devient 8,4). Si deux produits finissent avec la même note, celui qui a la meilleure note sur le critère de preuves de la catégorie passe devant ; si elle est aussi égale, ils partagent le rang et sont affichés à égalité. Dans les face-à-face, un écart de 0,1 ou moins est affiché comme « pratiquement à égalité ». Rarement, la rédaction peut ajuster la moyenne d’au plus ±0,3 point ; tout ajustement est indiqué sur le test avec sa raison."
   },
   "ui": {
     "updated": "Mis à jour",
@@ -62,7 +63,12 @@
     "seeFullRanking": "Voir le classement complet",
     "tie": "Égalité",
     "why": "Pourquoi",
-    "winner": "Gagnant"
+    "winner": "Gagnant",
+    "higherScore": "Score ONDA le plus élevé : {{name}} ({{scores}})",
+    "practicallyEqual": "Pratiquement à égalité selon le score ONDA ({{scores}})",
+    "scoresVs": " contre ",
+    "scoresAnd": " et ",
+    "editorialAdjustment": "Ajustement éditorial {{value}} : {{reason}}"
   },
   "testStatus": {
     "hands-on": "Testé en conditions réelles",

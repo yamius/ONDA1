@@ -9,6 +9,7 @@ const sleepioVsPzizz: HeadToHeadInput = {
     'Sleepio vs Pzizz — side-by-side ONDA comparison of two sleep apps with opposite approaches. CBT-I clinical programme versus generative wind-down audio.',
   intro:
     'Sleepio and Pzizz are the two sleep apps users compare when the goal is sleeping better, not tracking sleep. They sit at opposite ends of the intervention spectrum. Sleepio is a NICE-recommended digital CBT-I (cognitive-behavioural therapy for insomnia) programme; Pzizz is a generative-audio wind-down library that uses overlapping voice, music and tones to ease you into sleep. Clinical programme versus audio ritual.',
+  jobDependentVerdict: true,
   verdict:
     'Different problems. Sleepio for users with insomnia who want a clinical CBT-I programme. Pzizz for users who want a nightly wind-down ritual without therapy-style commitment.',
   bestForA:

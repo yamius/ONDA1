@@ -9,6 +9,7 @@ const ouraRing5VsUltrahuman: HeadToHeadInput = {
     'Oura Ring 5 vs Ultrahuman Ring Air — the accuracy-leading flagship (with a mandatory subscription) vs the subscription-free ring (with a battery-reliability question).',
   intro:
     'The Oura Ring 5 and the Ultrahuman Ring Air are the two smart rings people weigh when accuracy matters. Oura is the flagship — upgraded sensors, the best-supported ring line for sleep and HRV (the Ring 5 itself is not validated) — but it charges a mandatory membership. Ultrahuman is the subscription-free alternative with strong sleep tracking, undercut by widespread reports of batteries failing within months. The trade is accuracy-plus-fee versus own-it-outright-with-a-risk.',
+  jobDependentVerdict: true,
   verdict:
     'Accuracy with a subscription vs no subscription with a reliability question. The Oura Ring 5 is the more accurate, better-supported ring — if you accept the ~$6/month membership. The Ultrahuman Ring Air is subscription-free and lighter — if you accept its battery-reliability risk.',
   bestForA:
@@ -16,7 +17,7 @@ const ouraRing5VsUltrahuman: HeadToHeadInput = {
   bestForB:
     'Choose the Ultrahuman Ring Air if avoiding a subscription is the priority, you want the lightest ring and cross-platform support, and you will accept the battery-reliability risk.',
   axes: [
-    { name: 'Sleep & HRV accuracy', winner: 'a', note: 'Oura leads on better-validated sleep staging (manufacturer-funded studies) and overnight HRV, now on upgraded Ring 5 sensors (stronger LEDs, 12 signal pathways). Ultrahuman’s sleep tracking is genuinely good but a step behind Oura.' },
+    { name: 'Sleep & HRV accuracy', winner: 'tie', note: 'Practically equal: neither the Ring 5 nor the Ring Air has an independent validation of sleep staging or overnight HRV (as of October 2026). Oura’s published sleep-staging studies are on earlier generations and funded by the maker; Ultrahuman has only company-run preprints.' },
     { name: 'Subscription', winner: 'b', note: 'Ultrahuman: no subscription — buy once. Oura: ~$6/month required for full data, on top of the ring. If avoiding a recurring fee is the goal, Ultrahuman wins outright.' },
     { name: 'Reliability', winner: 'a', note: 'Ultrahuman Ring Air carries widespread battery-failure reports within months. Oura’s hardware track record is the safer bet.' },
     { name: 'Weight & comfort', winner: 'b', note: 'The Ultrahuman Ring Air is among the lightest rings made; the Ring 5 is ~40% slimmer than the Ring 4 and very comfortable, but Ultrahuman keeps a narrow edge on sheer lightness.' },

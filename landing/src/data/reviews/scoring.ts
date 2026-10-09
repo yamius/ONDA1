@@ -92,6 +92,18 @@ export function rankPositions<T extends Rankable>(sorted: readonly T[]): { rank:
 
 /** Head-to-head winner under the ranking rule: the single best product's
  *  slug, or null when the top spot is tied. */
+/** A score gap of this size or less is shown as "practically equal" on
+ *  head-to-head pages (and does not move a round-up award on its own). */
+export const PRACTICALLY_EQUAL_GAP = 0.1
+
+/** Score comparison for a head-to-head page: products best-first, and
+ *  whether the gap between the top two is ≤ PRACTICALLY_EQUAL_GAP. */
+export function scoreComparison<T extends Rankable>(products: readonly T[]): { ranked: T[]; practicallyEqual: boolean } {
+  const ranked = sortByRank(products)
+  const gap = ranked.length > 1 ? ranked[0].overallScore - ranked[1].overallScore : Infinity
+  return { ranked, practicallyEqual: gap <= PRACTICALLY_EQUAL_GAP + 1e-9 }
+}
+
 export function scoreWinnerSlug<T extends Rankable & { slug: string }>(products: readonly T[]): string | null {
   const sorted = sortByRank(products)
   if (sorted.length < 2) return sorted[0]?.slug ?? null

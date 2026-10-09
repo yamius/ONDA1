@@ -9,6 +9,7 @@ const wimHofVsSoma: HeadToHeadInput = {
     'Wim Hof Method app vs SOMA Breath — official single-method app vs rhythmic music breathwork with global facilitator network. ONDA breaks down which method-focused app fits.',
   intro:
     'Wim Hof Method app and SOMA Breath are the two method-branded breathwork apps users compare. Both lean into structured rounds; both have community / certification components. The defining difference: WHM is the official single-method reference; SOMA layers Wim Hof rounds inside rhythmic music breathwork with broader pranayama context.',
+  jobDependentVerdict: true,
   verdict:
     'Method purity vs music layering. Wim Hof Method app for the official WHM with structured progression and cold-exposure integration. SOMA Breath for rhythmic music breathwork that includes WHM-style rounds inside broader pranayama context.',
   bestForA:

@@ -9,6 +9,7 @@ const eliteVsHypervolt: HeadToHeadInput = {
     'Theragun Elite vs Hyperice Hypervolt 2 Pro — same $399 mid-premium duel. ONDA breaks down Therabody ecosystem vs Hyperice stall force.',
   intro:
     'Theragun Elite and Hypervolt 2 Pro are the two $399 premium massage guns users cross-shop. Same price, similar build quality. The defining differences: Elite has 16 mm amplitude + 2-year warranty + 40 lbs stall; Hypervolt has 14 mm amplitude + 1-year warranty + 60 lbs stall.',
+  jobDependentVerdict: true,
   verdict:
     'Therabody ecosystem vs Hyperice stall force. Elite for full Therabody app + 2-year warranty + deeper amplitude. Hypervolt 2 Pro for 60 lbs stall force at same price.',
   bestForA:

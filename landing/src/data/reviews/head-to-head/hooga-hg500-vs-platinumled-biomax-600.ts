@@ -9,6 +9,7 @@ const hoogaVsPlatinum: HeadToHeadInput = {
     'Hooga HG500 vs PlatinumLED BIOMAX 600 — the budget dual-wavelength panel vs the spectrum-rich mid-premium. Lowest price vs seven wavelengths and clean EMF.',
   intro:
     'Both sit below Joovv money, but they make different bets. The Hooga HG500 is the value pick — the two core wavelengths and a solid build for the lowest sensible price. The PlatinumLED BIOMAX 600 is the spectrum-rich step up — seven wavelengths, disciplined EMF and a near-premium build for roughly triple the price. It comes down to core value versus wavelength variety.',
+  jobDependentVerdict: true,
   verdict:
     'Core value vs spectrum-rich mid-premium. The Hooga HG500 wins on price and output-per-dollar with the two wavelengths that cover most use. The PlatinumLED BIOMAX 600 wins on wavelength variety (seven bands), EMF discipline and a better build, at roughly three times the cost. Pick Hooga for the essentials cheaply; PlatinumLED if the extra wavelengths and build matter.',
   bestForA:

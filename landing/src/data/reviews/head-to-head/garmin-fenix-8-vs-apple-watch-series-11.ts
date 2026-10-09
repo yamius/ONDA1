@@ -9,6 +9,7 @@ const garminFenix8VsAppleWatch11: HeadToHeadInput = {
     'Garmin Fenix 8 vs Apple Watch Series 11 — flagship smartwatch showdown for HRV. Multi-week battery and outdoor depth versus the best everyday smartwatch and ecosystem.',
   intro:
     'Two flagship wrist computers people cross-shop in 2026 — but they optimise for opposite lives. The Fenix 8 is a rugged, multi-week-battery multisport instrument with an ECG-capable Elevate v5 sensor; the Apple Watch Series 11 is the best everyday smartwatch, with a polished health app and deep iPhone integration. For HRV specifically the gap is narrower than the price gap suggests.',
+  jobDependentVerdict: true,
   verdict:
     'No overall winner — it splits by life. For continuous overnight HRV, outdoor/training depth and battery that never gets in the way, the Fenix 8 leads; for an everyday smartwatch, apps and iPhone ecosystem, the Series 11 wins — at a fraction of the price.',
   bestForA:

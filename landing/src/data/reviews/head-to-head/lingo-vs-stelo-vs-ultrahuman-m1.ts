@@ -10,6 +10,7 @@ const threeOtcCgm: HeadToHeadInput = {
     'Lingo vs Stelo vs Ultrahuman M1 — three-way ONDA comparison of three non-coaching CGM programmes. Cheapest entry, Dexcom OTC and ring-ecosystem play in one decision.',
   intro:
     'Lingo, Stelo and Ultrahuman M1 are the three CGM programmes users compare when coaching subscriptions (Levels, Nutrisense, Signos) are explicitly not wanted. Three different sensors, three different positioning: Lingo (Abbott Libre 3) is the cheapest legitimate OTC entry; Stelo (Dexcom G7) is the most accurate OTC option; Ultrahuman M1 (Libre 3; Abbott Lingo in the US via M2 Live) is the ecosystem play for ring users.',
+  jobDependentVerdict: true,
   verdict:
     'Three different jobs. Lingo for the cheapest no-subscription entry. Stelo for the most accurate OTC sensor. Ultrahuman M1 for users in the Ultrahuman Ring ecosystem.',
   bestForA:

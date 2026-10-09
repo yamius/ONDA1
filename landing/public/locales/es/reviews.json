@@ -50,7 +50,8 @@
         "free-tier": "Cuánto es realmente utilizable sin pagar — un plan gratuito funcional frente a una muestra bloqueada.",
         "value": "Precio — pago único o suscripción — sopesado frente a lo que ofrece la app."
       }
-    }
+    },
+    "scoreRulesBody": "Cómo se calcula la cifra: la media ponderada se redondea a un decimal, la mitad hacia arriba (8,35 pasa a 8,4). Si dos productos terminan con la misma puntuación, queda por delante el que tiene más nota en el criterio de evidencia de esa categoría; si también empatan ahí, comparten puesto y se muestran como empate. En los cara a cara, una diferencia de 0,1 o menos se muestra como prácticamente iguales. En raras ocasiones el editor puede ajustar la media como máximo ±0,3 puntos; cualquier ajuste se muestra en la reseña junto con su motivo."
   },
   "ui": {
     "updated": "Actualizado",
@@ -83,7 +84,12 @@
     "faqHeading": "Preguntas frecuentes",
     "seeFullRanking": "Ver la clasificación completa",
     "commonQuestions": "Preguntas habituales",
-    "headToHeadHeading": "Comparativas cara a cara"
+    "headToHeadHeading": "Comparativas cara a cara",
+    "higherScore": "Mayor puntuación ONDA: {{name}} ({{scores}})",
+    "practicallyEqual": "Prácticamente iguales según la puntuación ONDA ({{scores}})",
+    "scoresVs": " vs. ",
+    "scoresAnd": " y ",
+    "editorialAdjustment": "Ajuste editorial {{value}}: {{reason}}"
   },
   "testStatus": {
     "hands-on": "Probado en persona",
@@ -3346,7 +3352,7 @@
       "axes": [
         {
           "name": "Precisión de sueño y HRV",
-          "note": "La fase del sueño y la HRV nocturna de Oura están entre las mejor validadas de los anillos de consumo (en estudios financiados por el fabricante), y los sensores mejorados del Ring 5 amplían esa ventaja. El Galaxy Ring es competente, pero su precisión queda por detrás de Oura."
+          "note": "Prácticamente iguales: ni el Ring 5 ni el Galaxy Ring tienen una validación independiente de las fases del sueño ni de la HRV nocturna (a octubre de 2026). Los estudios publicados de Oura sobre fases del sueño son de generaciones anteriores y los financió el fabricante; los nuevos sensores del Ring 5 no se han probado de forma independiente."
         },
         {
           "name": "Suscripción y coste",

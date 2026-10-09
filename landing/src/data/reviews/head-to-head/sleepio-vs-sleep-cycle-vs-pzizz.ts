@@ -10,6 +10,7 @@ const threeSleep: HeadToHeadInput = {
     'Sleepio vs Sleep Cycle vs Pzizz — three-way ONDA comparison covering three different sleep-app approaches. Clinical CBT-I, sleep tracking and generative wind-down audio.',
   intro:
     'Sleepio, Sleep Cycle and Pzizz are three sleep apps users compare when they realise the category divides on intent rather than features. Sleepio is a clinical digital CBT-I (cognitive-behavioural therapy for insomnia) intervention with the strongest evidence in the consumer space. Sleep Cycle is a phone-based sleep tracker with a smart alarm. Pzizz is a generative-audio wind-down ritual. Three different problems, three different products.',
+  jobDependentVerdict: true,
   verdict:
     'Three different problems. Sleepio for clinically-diagnosed insomnia treatment. Sleep Cycle for tracking sleep with a smart alarm. Pzizz for falling asleep tonight without a programme.',
   bestForA:

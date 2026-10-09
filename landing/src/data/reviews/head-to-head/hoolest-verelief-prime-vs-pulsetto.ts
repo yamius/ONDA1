@@ -9,6 +9,7 @@ const hoolestVsPulsetto: HeadToHeadInput = {
     'Hoolest VeRelief Prime vs Pulsetto — side-by-side ONDA comparison of two consumer cervical tVNS devices. Athletic-recovery handheld versus daily-use neck collar.',
   intro:
     'Hoolest VeRelief Prime and Pulsetto are the two consumer cervical tVNS devices users compare when athletic recovery is on the table. Both target the cervical vagal branches transcutaneously at similar consumer-friendly prices. The structural difference is intent: Hoolest is the athlete-built handheld for short, intense sessions; Pulsetto is the daily-use collar with four guided programmes.',
+  jobDependentVerdict: true,
   verdict:
     'Depends on use case. Hoolest VeRelief Prime for short intense pre-sleep or post-training sessions. Pulsetto for daily-use programme-driven cervical tVNS.',
   bestForA:

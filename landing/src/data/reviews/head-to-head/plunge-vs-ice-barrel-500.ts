@@ -9,6 +9,7 @@ const plungeVsIceBarrel: HeadToHeadInput = {
     'The Plunge vs Ice Barrel 500 — side-by-side ONDA comparison of chiller-built premium vs the popular barrel-style ice-fill cold plunge.',
   intro:
     'The Plunge and Ice Barrel 500 are the two most-compared cold-plunge tubs across the chiller-built vs ice-fill divide. Both deliver real cold-exposure; the structural difference is the operating model — Plunge holds 39°F automatically, Ice Barrel requires daily ice fill.',
+  jobDependentVerdict: true,
   verdict:
     'Different operating models. The Plunge for users who want set-and-forget daily-use convenience. Ice Barrel for cold climates or occasional use where the upfront savings matter more than daily ice cost.',
   bestForA:

@@ -149,7 +149,10 @@ export type ToolReviewInput = Omit<ToolReview, 'overallScore'>
 export interface ComparisonPick {
   /** Slug of a ToolReview in the registry. */
   reviewSlug: string
-  /** Award label, e.g. "Best overall", "Best value", "Best for athletes". */
+  /** Award label, e.g. "Best overall", "Best value", "Best for athletes".
+   *  Empty string = no award (the pick is still ranked and shown, without a
+   *  badge) — used when "Best overall" moved to a new #1 and no existing
+   *  award of the round-up fits the former leader. Awards are never invented. */
   award: string
   /** One-line reason this pick won its award. */
   takeaway: string
@@ -196,6 +199,12 @@ export interface HeadToHead {
    *  computed overall scores (scoring.ts scoreWinnerSlug: overall, then the
    *  category tie-break criterion, else tie) — never typed in a duel file. */
   winnerSlug: string | null
+  /** True when the verdict deliberately answers "it depends on the job"
+   *  (no single winner). The page then shows the ONDA score comparison above
+   *  the verdict — "Higher ONDA score: X (8.3 vs 7.9)", or "Practically equal
+   *  by ONDA score (8.2 and 8.1)" when the gap is ≤ 0.1 — instead of a
+   *  WINNER label. */
+  jobDependentVerdict?: boolean
   /** One-line verdict — the quotable single-sentence answer to "which one". */
   verdict: string
   /** "Choose A if…" line — the user-fit answer for product A. */
@@ -236,7 +245,8 @@ export interface Comparison {
   /** Intro paragraph framing the round-up. */
   intro: string
   category: ReviewCategory
-  /** Ranked picks — array order is the ranking. */
+  /** Picks with their awards. The ranking is COMPUTED (index.ts sorts by
+   *  overall score, then the tie-break criterion); file order is ignored. */
   picks: ComparisonPick[]
   /** Closing editorial verdict. */
   verdict: string

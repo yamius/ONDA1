@@ -9,6 +9,7 @@ const eightSleepVsChilipad: HeadToHeadInput = {
     'Eight Sleep Pod 4 vs ChiliPad Dock Pro — side-by-side ONDA comparison of the two category-defining smart sleep-climate systems. Integrated HRV tracking + subscription vs subscription-free dual-zone water cooling.',
   intro:
     'Eight Sleep Pod 4 and Sleepme ChiliPad Dock Pro are the two systems users compare when picking premium smart sleep-climate hardware in 2026. Both deliver dual-zone water cooling/heating with comparable climate range. The category-defining difference is the wrapper: Eight Sleep bundles integrated HRV and sleep-stage tracking behind an ongoing Autopilot subscription, ChiliPad ships clean hardware with no subscription and no built-in tracking.',
+  jobDependentVerdict: true,
   verdict:
     'Subscription preference decides. Eight Sleep Pod 4 for integrated HRV/sleep tracking and Autopilot climate scheduling — accept the ongoing membership. ChiliPad Dock Pro for the same water-cooled climate without subscription and without tracking (pair with an Oura or Whoop you already wear).',
   bestForA:

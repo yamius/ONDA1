@@ -10,6 +10,7 @@ const threeCervical: HeadToHeadInput = {
     'gammaCore vs Truvaga vs Pulsetto — three-way ONDA comparison of cervical tVNS devices. FDA-cleared prescription, consumer same-hardware and accessible collar in one decision.',
   intro:
     'gammaCore Sapphire CV, Truvaga 350 and Pulsetto are the three cervical tVNS devices users compare across the regulated–consumer spectrum. gammaCore is FDA-cleared prescription only; Truvaga is its consumer over-the-counter sibling on the same hardware platform; Pulsetto is the most accessible consumer collar with the broadest protocol library. Three regulatory tiers, one nerve target.',
+  jobDependentVerdict: true,
   verdict:
     'Different tiers. gammaCore for clinically-indicated headache patients with a prescriber. Truvaga 350 for consumers wanting the gammaCore platform without prescription. Pulsetto for the most accessible daily-use cervical tVNS.',
   bestForA:

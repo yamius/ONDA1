@@ -11,12 +11,12 @@ const bestPemfDevices2026: Comparison = {
   picks: [
     {
       reviewSlug: 'bemer-classic-evo',
-      award: 'Best overall',
+      award: '',
       takeaway: 'Best-known PEMF mat and most-studied single signal, premium build, multi-decade brand. Most studies are manufacturer-linked; its FDA clearance is for non-medical muscle conditioning.',
     },
     {
       reviewSlug: 'healthy-wave-multi-wave',
-      award: 'Best multi-modality mat',
+      award: 'Best overall',
       takeaway: 'PEMF + far-infrared + red light at sub-Bemer pricing — best modality coverage per session.',
     },
     {
@@ -61,11 +61,11 @@ const bestPemfDevices2026: Comparison = {
     },
   ],
   verdict:
-    'Bemer Classic Evo wins overall on build, applicator system and brand — it has the longest study list, though most studies are manufacturer-linked and independent controlled trials found no difference from control. Healthy Wave Multi-Wave is the best modality-stacked alternative at half the price. Pulse Centers Pulse XL Pro owns the high-intensity clinical coil niche. Resona Health VIBE at $299 redefines the entry tier — PEMF-curious users no longer need to commit $2,000+ to try the modality. Pick on three questions: proprietary signal and build (Bemer), modality stacking (Healthy Wave), or commitment level (Resona VIBE).',
+    'Healthy Wave Multi-Wave ranks first on the ONDA score: PEMF plus far-infrared and red light at less than half the Bemer price, with the deepest programmability in the category. Bemer Classic Evo has the best build, applicator system and brand and the longest study list, though most studies are manufacturer-linked and independent controlled trials found no difference from control. Pulse Centers Pulse XL Pro owns the high-intensity clinical coil niche. Resona Health VIBE at $299 redefines the entry tier — PEMF-curious users no longer need to commit $2,000+ to try the modality. Pick on three questions: proprietary signal and build (Bemer), modality stacking (Healthy Wave), or commitment level (Resona VIBE).',
   faq: [
     {
       q: 'What is the best PEMF device in 2026?',
-      a: 'Bemer Classic Evo overall — best build and most-studied signal, though evidence is mostly maker-linked. Healthy Wave Multi-Wave for multi-modality (PEMF + IR + red light) at half the price. Pulse Centers for high-intensity coil. Resona Health VIBE for $299 wearable entry.',
+      a: 'Healthy Wave Multi-Wave overall — multi-modality (PEMF + IR + red light) at less than half the Bemer price. Bemer Classic Evo for build and the most-studied signal, though evidence is mostly maker-linked and independent controlled trials found no difference from control. Pulse Centers for high-intensity coil. Resona Health VIBE for $299 wearable entry.',
     },
     {
       q: 'Is Bemer worth the premium price?',

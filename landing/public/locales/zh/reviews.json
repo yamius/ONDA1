@@ -39,7 +39,12 @@
     "seeFullRanking": "查看完整排名",
     "tie": "平手",
     "why": "原因",
-    "winner": "胜出"
+    "winner": "胜出",
+    "higherScore": "ONDA 评分更高：{{name}}（{{scores}}）",
+    "practicallyEqual": "按 ONDA 评分基本持平（{{scores}}）",
+    "scoresVs": " 对 ",
+    "scoresAnd": "和",
+    "editorialAdjustment": "编辑调整 {{value}}：{{reason}}"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",

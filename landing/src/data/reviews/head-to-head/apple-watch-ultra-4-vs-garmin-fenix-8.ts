@@ -9,6 +9,7 @@ const ultra4VsFenix8: HeadToHeadInput = {
     'Apple Watch Ultra 4 vs Garmin Fenix 8 — the two rugged flagships for HRV and the outdoors. Apple’s new Health Sensing System and ecosystem versus Garmin’s multi-week battery and training depth.',
   intro:
     'Two rugged, ECG-capable flagships people cross-shop in late 2026 — but they optimise for different lives. The Apple Watch Ultra 4 pairs Apple’s all-new Health Sensing System (Recovery HRV, sampled ~24× more often) with a ~50-hour battery and the iPhone ecosystem. The Garmin Fenix 8 is the expedition instrument: Elevate v5 with ECG, HRV Status, maps and dive, on a battery that lasts weeks. For HRV specifically the gap is narrower than the spec sheets suggest.',
+  jobDependentVerdict: true,
   verdict:
     'No overall winner — it splits by life. For the newest HRV system, everyday smartwatch and iPhone ecosystem, the Ultra 4 leads; for multi-week battery, deep training and expedition tools, the Fenix 8 leads. Both are wrist-optical, so a ring or chest strap still beats either for a pure overnight record.',
   bestForA:

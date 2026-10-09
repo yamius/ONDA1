@@ -9,6 +9,7 @@ const ultrahumanVsSamsungRing: HeadToHeadInput = {
     'Ultrahuman Ring Air vs Samsung Galaxy Ring — two subscription-free Oura alternatives. ONDA compares ecosystem lock-in, reliability, sleep tracking, weight and price.',
   intro:
     'The Ultrahuman Ring Air and the Samsung Galaxy Ring are the two subscription-free smart rings people weigh against Oura. Both skip the monthly fee; the real fork is ecosystem and reliability. Ultrahuman is cross-platform and the lightest ring on the market, but dogged by battery-failure reports. Samsung is comfortable and competent — as long as you live in the Galaxy ecosystem.',
+  jobDependentVerdict: true,
   verdict:
     'Both are subscription-free Oura alternatives with the same overall standing. Samsung Galaxy Ring is the safer, better-supported pick if you own a Galaxy phone; Ultrahuman Ring Air is the lighter, cross-platform choice — if you accept its battery-reliability question.',
   bestForA:

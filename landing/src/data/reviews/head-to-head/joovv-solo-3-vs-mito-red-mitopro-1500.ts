@@ -9,6 +9,7 @@ const joovvVsMitoRed: HeadToHeadInput = {
     'Joovv Solo 3.0 vs Mito Red MitoPRO 1500 — side-by-side ONDA comparison of the two top biohacker red light panels. Modular versus four-wavelength large panel.',
   intro:
     'Joovv Solo 3.0 and Mito Red MitoPRO 1500 are the two red light panels biohackers most actually compare. Both ship premium build, verified irradiance and clean EMF; the structural differences are modularity, wavelength count, and the brand premium. The choice is mostly about which axis you weight — modular Joovv ecosystem, or broader-spectrum MitoPRO at a discount.',
+  jobDependentVerdict: true,
   verdict:
     'Depends on the axis. Joovv Solo 3.0 wins for modular scaling. Mito Red MitoPRO 1500 wins for broader wavelength spectrum at $100 less.',
   bestForA:

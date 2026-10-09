@@ -9,6 +9,7 @@ const whoopVsUltrahuman: HeadToHeadInput = {
     'WHOOP 5.0 vs Ultrahuman Ring Air — a subscription recovery band vs a one-time subscription-free ring. ONDA breaks down HRV, recovery coaching, cost and reliability.',
   intro:
     'WHOOP 5.0 and the Ultrahuman Ring Air are the two screenless recovery trackers most people cross-shop when they want HRV without a watch face. The split is structural: WHOOP is a band you rent — continuous HRV and a full recovery-coaching layer behind a perpetual membership — while Ultrahuman is a lightweight ring you buy once with no subscription, strong on sleep but shadowed by battery-reliability reports.',
+  jobDependentVerdict: true,
   verdict:
     'A subscription band vs a one-time ring. WHOOP 5.0 is the deeper recovery coach — continuous HRV, strain and daily guidance — but it is $199–$359/yr, forever. Ultrahuman Ring Air is subscription-free at $350 with strong sleep tracking, if you can accept its battery-reliability question.',
   bestForA:

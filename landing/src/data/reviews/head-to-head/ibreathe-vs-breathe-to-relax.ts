@@ -9,6 +9,7 @@ const ibreatheVsB2r: HeadToHeadInput = {
     'iBreathe vs Breathe2Relax — the two best free breathwork apps compared. Modern minimalist timer vs DoD-built diaphragmatic-breathing evidence base.',
   intro:
     'iBreathe and Breathe2Relax are the two free breathwork apps worth using in 2026. Both are completely free with no subscription. The defining difference: iBreathe is a modern minimalist breath timer; Breathe2Relax is a US National Center for Telehealth-built clinical app with published PTSD / stress validation studies.',
+  jobDependentVerdict: true,
   verdict:
     'Modern minimalist vs clinical evidence. iBreathe for clean modern UI with visual breath guide. Breathe2Relax for clinical evidence base in a dated UI.',
   bestForA:

@@ -9,6 +9,7 @@ const veriVsLevels: HeadToHeadInput = {
     'Veri vs Levels — side-by-side ONDA comparison of two biohacker CGM programmes. Polished EU programme on Libre 3 versus US-only Levels on Dexcom Stelo.',
   intro:
     'Veri and Levels are the two consumer CGM programmes EU biohackers most often compare against each other when deciding what they can actually buy. Levels has the deeper analytics and the more accurate sensor, but ships US-only. Veri is the polished EU-focused equivalent on Libre 3 hardware. The decision often resolves before scoring — whichever ships to your country.',
+  jobDependentVerdict: true,
   verdict:
     'Geography decides. Levels for US users who want the deepest insight engine on Dexcom Stelo. Veri for EU users who want a Levels-style experience in their region.',
   bestForA:

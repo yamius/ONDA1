@@ -10,6 +10,7 @@ const hostageVsSomnifixVsIntake: HeadToHeadInput = {
     'Hostage Tape vs Somnifix vs Intake Breathing — the three category-defining nasal-breathing aids compared. Biohacker mouth tape vs FDA-registered medical mouth tape vs premium magnetic nasal dilator.',
   intro:
     'The three nasal-breathing aids that define the 2026 category. Hostage Tape — viral biohacker mouth tape with beard-friendly acrylic adhesive. Somnifix — FDA-registered porous mouth tape with central breathing port. Intake Breathing — premium external magnetic nasal dilator (James Nestor-recommended).',
+  jobDependentVerdict: true,
   verdict:
     'Three different theses, three different right answers. Hostage Tape for beard-friendly biohacker mouth seal. Somnifix for an FDA-registered porous design. Intake Breathing for premium external magnetic dilation.',
   bestForA:

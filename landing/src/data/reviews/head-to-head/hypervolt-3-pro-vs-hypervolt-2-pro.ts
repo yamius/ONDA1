@@ -9,6 +9,7 @@ const hv3ProVsHv2Pro: HeadToHeadInput = {
     'Hyperice Hypervolt 3 Pro vs Hypervolt 2 Pro — what the 2026 upgrade actually changes: more stall force, quieter motor, longer battery, and a lower price. ONDA on whether to upgrade.',
   intro:
     'The Hypervolt 3 Pro is Hyperice’s 2026 flagship and a clean upgrade over the Hypervolt 2 Pro it replaces. It pushes harder, runs quieter, lasts longer and — unusually — launched at a lower price. If you already own the 2 Pro the case to upgrade is modest; if you’re buying new, the 3 Pro is the obvious pick unless the 2 Pro is deeply discounted.',
+  jobDependentVerdict: true,
   verdict:
     'A straight generational upgrade. The Hypervolt 3 Pro beats the 2 Pro on stall force (~70 vs 60 lbs), battery (4 vs ~3 hours), noise and attachment size — at a lower $349 vs $399. The 2 Pro only makes sense heavily discounted below the 3 Pro. Buying new, choose the 3 Pro.',
   bestForA:

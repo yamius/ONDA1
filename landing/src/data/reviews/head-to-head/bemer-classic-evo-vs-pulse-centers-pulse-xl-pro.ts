@@ -9,6 +9,7 @@ const bemerVsPulseCenters: HeadToHeadInput = {
     'Bemer Classic Evo vs Pulse Centers Pulse XL Pro — low-intensity proprietary-signal mat vs high-intensity clinical coil. ONDA breaks down the form-factor and intensity trade.',
   intro:
     'Bemer and Pulse Centers represent the two opposite poles of PEMF — low-intensity waveform-research mat vs high-intensity clinical coil. Both are premium-tier; both have multi-decade brand pedigrees; they answer fundamentally different questions about what PEMF should do.',
+  jobDependentVerdict: true,
   verdict:
     'Use case decides. Bemer Classic Evo for daily passive whole-body use with a proprietary signal. Pulse Centers Pulse XL Pro for high-intensity targeted athletic recovery and rehab via coil applicators.',
   bestForA:

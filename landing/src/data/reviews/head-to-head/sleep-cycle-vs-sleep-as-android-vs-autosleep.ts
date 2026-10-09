@@ -10,6 +10,7 @@ const sleepCycleVsSleepAsAndroidVsAutoSleep: HeadToHeadInput = {
     'Sleep Cycle vs Sleep as Android vs AutoSleep — three-way ONDA comparison of three phone-based sleep trackers. Cross-platform, Android-only and Apple Watch-paired in one decision.',
   intro:
     'Sleep Cycle, Sleep as Android and AutoSleep are the three phone-based sleep trackers users compare across platforms. Three different angles on the same goal: Sleep Cycle is the polished cross-platform incumbent, Sleep as Android is the Android-only customisation specialist, AutoSleep is the iPhone + Apple Watch native option. Pick on platform first.',
+  jobDependentVerdict: true,
   verdict:
     'Platform decides. Sleep Cycle for cross-platform (iPhone or Android). Sleep as Android for Android-only deep customisation. AutoSleep for iPhone users with an Apple Watch.',
   bestForA:

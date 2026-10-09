@@ -29,7 +29,8 @@
     "updatesBody": "Jeder Test und jede Übersicht trägt ein Aktualisierungsdatum. Wir überarbeiten Noten und Rankings, wenn ein Flaggschiff erscheint, sich ein Preis oder die Verfügbarkeit deutlich ändert oder neue Evidenz auftaucht — nicht nach festem Zeitplan und nicht, um einem Kalender hinterherzulaufen. Wenn ein Produkt eingestellt oder zum Beispiel vom Verkauf ausgeschlossen wird, sagen wir das und passen das Ranking an.",
     "authorHeading": "Wer die Tests schreibt",
     "authorBody": "Die Tests schreibt Yakiv Bilenko, Gründer von ONDA Life.",
-    "authorLink": "Über den Autor"
+    "authorLink": "Über den Autor",
+    "scoreRulesBody": "So wird die Zahl berechnet: Der gewichtete Mittelwert wird auf eine Nachkommastelle gerundet, ab der Hälfte aufwärts (8,35 wird 8,4). Haben zwei Produkte denselben Score, steht das mit der höheren Bewertung beim Evidenzkriterium der Kategorie vorn; ist auch diese gleich, teilen sie sich den Rang und werden als Gleichstand gezeigt. In Direktvergleichen wird ein Abstand von 0,1 oder weniger als praktisch gleichauf angezeigt. In seltenen Fällen kann die Redaktion den Mittelwert um höchstens ±0,3 Punkte anpassen; jede Anpassung wird im Test zusammen mit ihrem Grund angezeigt."
   },
   "ui": {
     "updated": "Aktualisiert",
@@ -62,7 +63,12 @@
     "seeFullRanking": "Zum vollständigen Ranking",
     "tie": "Unentschieden",
     "why": "Warum",
-    "winner": "Sieger"
+    "winner": "Sieger",
+    "higherScore": "Höherer ONDA-Score: {{name}} ({{scores}})",
+    "practicallyEqual": "Laut ONDA-Score praktisch gleichauf ({{scores}})",
+    "scoresVs": " vs. ",
+    "scoresAnd": " und ",
+    "editorialAdjustment": "Redaktionelle Anpassung {{value}}: {{reason}}"
   },
   "testStatus": {
     "hands-on": "Praxistest",

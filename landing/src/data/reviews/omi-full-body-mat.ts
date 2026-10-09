@@ -14,7 +14,7 @@ const omiFullBodyMat: ToolReviewInput = {
     'OMI Full Body Mat is the mid-tier PEMF reference — single-modality PEMF mat with simple preset operation and accessible pricing. OMI is not FDA-cleared for bone healing: medical bone-growth stimulators are prescription devices with their own trials, and a consumer mat using similar frequencies does not inherit their status or evidence. No multi-modality stacking, no trials of the mat itself. The right product for users who want straightforward PEMF mat use at $1,500–$2,000.',
   scores: [
     { criterionId: 'field-strength', score: 7.5, note: 'Moderate field intensity; the maker documents usable continuous output.' },
-    { criterionId: 'waveform-evidence', score: 7.5, note: 'Uses common PEMF frequencies. OMI is not FDA-cleared for bone healing, and we found no trials of the mat itself.' },
+    { criterionId: 'waveform-evidence', score: 7.0, note: 'Uses common PEMF frequencies. OMI is not FDA-cleared for bone healing, and we found no trials of the mat itself.' },
     { criterionId: 'build', score: 7.5, note: 'Solid mat construction, 5-year warranty. Multi-year reliability track record positive in user reviews.' },
     { criterionId: 'programmability', score: 6.5, note: 'Simple preset operation — limited parameter exposure compared to Healthy Wave. Black-box-ish controller.' },
     { criterionId: 'form-factor', score: 7.5, note: 'Full-body mat, single-modality PEMF. Optional pillow applicator at upsell. No coil/spot system.' },

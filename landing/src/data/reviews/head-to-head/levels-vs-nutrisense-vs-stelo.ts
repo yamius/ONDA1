@@ -10,6 +10,7 @@ const threeCgm: HeadToHeadInput = {
     'Levels vs Nutrisense vs Stelo — three-way ONDA comparison of the three top Dexcom G7 CGM programmes. App intelligence, human dietitian and OTC value in one decision.',
   intro:
     'Levels, Nutrisense and Stelo are the three most-compared CGM programmes for non-diabetic biohackers — all three running on the Dexcom G7 sensor platform (Levels now ships Stelo, Dexcom’s OTC G7-platform sensor), the most accurate consumer sensor. Same hardware, three different wrappers: Levels bets on app intelligence, Nutrisense pairs a registered dietitian, Stelo is Dexcom’s own OTC consumer programme without coaching. The decision is purely about what sits above the sensor.',
+  jobDependentVerdict: true,
   verdict:
     'Three different jobs on the same hardware. Levels for the deepest app insights. Nutrisense for a registered dietitian. Stelo for the same sensor at a third of the cost.',
   bestForA:

@@ -15,7 +15,7 @@ const somnifit: ToolReviewInput = {
   scores: [
     { criterionId: 'adhesion-comfort', score: 6.0, note: 'Basic acrylic adhesive — adequate grip on clean skin. Struggles with beards and oily skin. Removal can be tacky.' },
     { criterionId: 'breathing-mechanism', score: 6.5, note: 'Full-seal single-piece. Generic mechanism.' },
-    { criterionId: 'evidence-grounding', score: 5.0, note: 'FDA registered. No peer-reviewed studies. Modest evidence base.' },
+    { criterionId: 'evidence-grounding', score: 4.5, note: 'FDA registered. No peer-reviewed studies. Modest evidence base.' },
     { criterionId: 'form-factor', score: 6.0, note: 'Single-piece strip. Functional design without premium engineering.' },
     { criterionId: 'material-safety', score: 6.0, note: 'Basic acrylic adhesive. Latex-free. Skin-reaction reports moderate — sensitive skin users should pick Dream Recovery or AYO.' },
     { criterionId: 'value', score: 8.5, note: '~$8 for 30 strips = ~$0.27/night. Cheapest credible branded mouth tape after Nexcare DIY.' },

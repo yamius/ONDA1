@@ -9,6 +9,7 @@ const finnleoVsAlmostHeaven: HeadToHeadInput = {
     'Finnleo Hallmark vs Almost Heaven Salem — side-by-side ONDA comparison of two traditional Finnish convection saunas. Indoor Finnish-built vs outdoor American cedar barrel.',
   intro:
     'Finnleo Hallmark and Almost Heaven Salem are the two traditional Finnish-style convection saunas users compare when IR is not the choice. Both deliver full Finnish-sauna heat (80–95°C) with löyly steam capability and have multi-decade brand reliability. The structural difference is indoor Finnish-engineered cabin versus outdoor American cedar barrel.',
+  jobDependentVerdict: true,
   verdict:
     'Form factor decides. Finnleo Hallmark for indoor installation with Finnish manufacturing pedigree. Almost Heaven Salem for outdoor barrel installation with American cedar build.',
   bestForA:

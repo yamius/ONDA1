@@ -10,6 +10,7 @@ const breathwrkVsOthershipVsWhm: HeadToHeadInput = {
     'Breathwrk ($49/yr) vs Othership ($129.99/yr) vs Wim Hof Method app ($42.99/yr): library, evidence, community, cold exposure and price compared.',
   intro:
     'Three breathwork apps that define the 2026 category. Breathwrk — now part of Peloton — has the broadest structured library. Othership offers music-driven sessions with live classes. The Wim Hof Method app is the official single-method app, built around Wim Hof breathing and cold exposure.',
+  jobDependentVerdict: true,
   verdict:
     'Three different jobs, three right answers. Breathwrk for the broadest structured library; Othership for music-driven sessions and live classes; the Wim Hof Method app for the Wim Hof method specifically — and, at $42.99 a year, the cheapest subscription of the three.',
   bestForA:

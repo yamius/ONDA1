@@ -19,6 +19,7 @@ const resonaHealthVibeVsHigherdosePemfMat: HeadToHeadInput = {
     'Resona VIBE ($299) is the cheaper, portable way to try PEMF; HigherDOSE PEMF Mat ($1,295) wins for whole-body sessions with infrared heat.',
   intro:
     'Resona Health VIBE and the HigherDOSE PEMF Mat both use pulsed electromagnetic fields, but they are built for different routines. VIBE is a 75 g pocket device with 130 preset protocols that you carry or wear on a lanyard and place on one area. The HigherDOSE mat is a full-length mat that combines PEMF with far-infrared heat and a layer of amethyst and obsidian crystals for lie-down sessions at home. This comparison is evidence-based: ONDA has not tested either device hands-on.',
+  jobDependentVerdict: true,
   verdict:
     'No overall winner — Resona VIBE is the smarter low-cost way to find out whether PEMF helps you, while the HigherDOSE PEMF Mat is for people who already want a daily whole-body, heated recovery session.',
   bestForA:

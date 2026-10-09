@@ -17,7 +17,7 @@ const sunlightenMpulse: ToolReviewInput = {
     { criterionId: 'build', score: 9.0, note: 'Premium cedar cabin, 1–4-person configurations, 7-year warranty. Multi-decade reliability track record.' },
     { criterionId: 'emf', score: 9.0, note: 'Independently-measured ultra-low EMF at seated position (typically <1 mG). Sunlighten publishes the numbers.' },
     { criterionId: 'form-factor', score: 7.5, note: 'Cabin requires dedicated space (1-person from 4×4 ft; 4-person from 6×7 ft). 110V or 220V depending on size.' },
-    { criterionId: 'evidence', score: 7.5, note: 'Substantial published research on Sunlighten units in particular. FDA Class II registered. Honest marketing language vs typical IR-sauna overclaiming.' },
+    { criterionId: 'evidence', score: 7.0, note: 'Substantial published research on Sunlighten units in particular. FDA Class II registered. Honest marketing language vs typical IR-sauna overclaiming.' },
     { criterionId: 'value', score: 6.5, note: '$5,000–$10,000+ depending on configuration. Premium pricing matched by build and verified specs.' },
   ],
   pros: [

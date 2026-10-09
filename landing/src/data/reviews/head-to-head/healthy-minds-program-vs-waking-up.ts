@@ -9,6 +9,7 @@ const healthyMindsVsWakingUp: HeadToHeadInput = {
     'Healthy Minds Program vs Waking Up — side-by-side ONDA comparison of two science-backed meditation apps. Richard Davidson’s research lab versus Sam Harris’ philosophical project.',
   intro:
     'Healthy Minds Program and Waking Up are the two meditation apps most often weighed against each other when scientific credibility is the deciding factor. Both are taught by named researchers; both move beyond consumer-mindfulness packaging. Healthy Minds is run by Healthy Minds Innovations, a nonprofit affiliated with Richard Davidson’s Center for Healthy Minds at the University of Wisconsin–Madison; Waking Up is Sam Harris’ philosophical project paired with neuroscience and philosophy lectures.',
+  jobDependentVerdict: true,
   verdict:
     'Different approaches to the same credibility goal. Healthy Minds for an evidence-based four-pillar training framework — free, no paywall. Waking Up for philosophical depth and non-dual practice under Sam Harris.',
   bestForA:

@@ -10,6 +10,7 @@ const threeVagusForms: HeadToHeadInput = {
     'Apollo vs Sensate vs Hoolest — three-way ONDA comparison of three non-Nurosym, non-Pulsetto vagus devices. All-day vibrotactile, infrasonic wind-down and athlete-grade handheld.',
   intro:
     'Apollo Neuro, Sensate and Hoolest VeRelief Prime are the three consumer vagus-modulation devices users compare when neither the dominant ear-clip (Nurosym) nor the dominant collar (Pulsetto) is the right shape. Three different form factors and three different jobs: all-day vibrotactile (Apollo), infrasonic sit-down ritual (Sensate), athlete-grade handheld (Hoolest).',
+  jobDependentVerdict: true,
   verdict:
     'Three different jobs. Apollo for all-day passive vagal modulation. Sensate for an evening wind-down audio ritual. Hoolest for short intense pre-sleep or post-training sessions.',
   bestForA:

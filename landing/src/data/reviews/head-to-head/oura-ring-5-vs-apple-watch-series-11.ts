@@ -9,6 +9,7 @@ const ouraRing5VsAppleWatch11: HeadToHeadInput = {
     'Oura Ring 5 vs Apple Watch Series 11 — a dedicated sleep-and-HRV ring vs an all-round smartwatch. ONDA on accuracy, battery, features, comfort and cost.',
   intro:
     'The Oura Ring 5 and the Apple Watch Series 11 answer different questions. The Ring 5 is a dedicated sleep-and-HRV instrument you forget you are wearing; the Series 11 is an outstanding all-round smartwatch that also does health, but samples HRV intermittently rather than averaging it across the night. If sleep and recovery are the point, they are not really the same category.',
+  jobDependentVerdict: true,
   verdict:
     'A dedicated tracker vs a smartwatch. The Oura Ring 5 wins decisively on overnight HRV and sleep accuracy, comfort and multi-day battery. The Apple Watch Series 11 wins on everything a smartwatch does — display, apps, GPS, ECG, calls — and needs no subscription. Buy Oura for recovery data; buy the Watch for a wrist computer.',
   bestForA:

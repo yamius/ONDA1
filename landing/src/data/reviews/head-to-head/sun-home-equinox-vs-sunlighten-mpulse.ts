@@ -9,6 +9,7 @@ const sunHomeVsSunlighten: HeadToHeadInput = {
     'Sun Home Equinox vs Sunlighten mPulse — the value-forward newcomer with integrated red light vs the premium category leader with true 3-wavelength control. Full-spectrum infrared compared.',
   intro:
     'The Sunlighten mPulse is the premium reference in full-spectrum infrared — true, independently-controlled three-wavelength delivery in a premium cedar cabin. The Sun Home Equinox is the value-forward challenger: the highest heat, integrated red light and chromotherapy, at a similar price. It’s wavelength precision and build vs heat and bundled features.',
+  jobDependentVerdict: true,
   verdict:
     'Premium reference vs value-forward challenger. The Sunlighten mPulse wins on true 3-wavelength control, premium cedar build and category pedigree; the Sun Home Equinox wins on heat output and bundled extras (integrated red light, chromotherapy). Both verify low EMF at a similar price. Pick Sunlighten for wavelength precision and build; Sun Home for heat and the feature bundle.',
   bestForA:

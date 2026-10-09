@@ -9,6 +9,7 @@ const whoopVsPolarH10: HeadToHeadInput = {
     'Whoop 5.0 vs Polar H10 for HRV: ECG chest strap ($105, no subscription) vs 24/7 recovery band ($199–$359/yr). Accuracy, cost and who should buy which.',
   intro:
     'Whoop 5.0 and Polar H10 are not really the same kind of device, but they end up on the same shortlist for users who care about HRV signal quality. Whoop is an optical band sold as a membership with recovery coaching; Polar H10 is the ECG chest strap that sets the consumer-accuracy ceiling. The choice is between continuous lifestyle tracking and reference-grade measurement.',
+  jobDependentVerdict: true,
   verdict:
     'They solve different jobs. Whoop for continuous overnight HRV with recovery coaching; Polar H10 for ECG-grade accuracy when you put the strap on. Many serious HRV users own both.',
   bestForA:

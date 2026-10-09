@@ -17,6 +17,7 @@ const meditoVsInsightTimer: HeadToHeadInput = {
     'Medito ($0, no paywall ever) is the cleanest free meditation app; Insight Timer (free, Member Plus $60/yr) wins on sheer library size.',
   intro:
     'Medito and Insight Timer are the two meditation apps you can genuinely use without paying. Medito is run by a nonprofit: every session is free, with no ads, no account and no premium tier. Insight Timer offers the world’s largest free library of guided meditations, with an optional Member Plus subscription for courses and offline listening. This comparison is evidence-based: ONDA has not tested either app hands-on.',
+  jobDependentVerdict: true,
   verdict:
     'No single winner: Medito is the better pick if you want a fully free, private app with nothing to upgrade, while Insight Timer is the better pick if you want the largest free library and do not mind an optional paid tier.',
   bestForA:

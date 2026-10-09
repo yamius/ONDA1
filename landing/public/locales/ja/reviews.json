@@ -29,7 +29,8 @@
     "updatesBody": "Every review and round-up carries a last-updated date. We revise scores and rankings when a flagship launches, when a price or availability changes materially, or when new evidence emerges — not on a fixed schedule and not to chase a calendar. When a product is discontinued or, for example, banned from sale, we say so and adjust the ranking.",
     "authorHeading": "Who writes the reviews",
     "authorBody": "Reviews are written by Yakiv Bilenko, founder of ONDA Life.",
-    "authorLink": "About the author"
+    "authorLink": "About the author",
+    "scoreRulesBody": "数値の計算方法：加重平均を小数点以下1桁に四捨五入します（8.35は8.4）。2つの製品が同じスコアの場合は、そのカテゴリーのエビデンス基準のスコアが高い方を上位とし、それも同じなら同順位として引き分けで表示します。直接比較では、差が0.1以下の場合は「ほぼ同等」と表示します。まれに編集者が平均を最大±0.3ポイント調整することがあり、その場合はレビューに理由とともに表示します。"
   },
   "ui": {
     "updated": "Updated",
@@ -62,7 +63,12 @@
     "seeFullRanking": "ランキング全体を見る",
     "tie": "引き分け",
     "why": "理由",
-    "winner": "勝者"
+    "winner": "勝者",
+    "higherScore": "ONDAスコアが高いのは：{{name}}（{{scores}}）",
+    "practicallyEqual": "ONDAスコアではほぼ同等（{{scores}}）",
+    "scoresVs": " 対 ",
+    "scoresAnd": "・",
+    "editorialAdjustment": "編集上の調整 {{value}}：{{reason}}"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",

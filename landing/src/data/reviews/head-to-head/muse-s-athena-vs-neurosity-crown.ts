@@ -16,6 +16,7 @@ const museSAthenaVsNeurosityCrown: HeadToHeadInput = {
     'Muse S Athena ($474.99) is the better EEG headset for meditation and sleep; Neurosity Crown ($1,499) wins for raw brain data and developers.',
   intro:
     'Muse S Athena and Neurosity Crown are the two consumer EEG headsets people compare most, but they answer different questions. Athena is a soft headband with four EEG channels, fNIRS and a large guided-meditation library, built for daily practice and sleep. Crown is an eight-channel headset with an open SDK, built for people who want to work with their own brain data. This comparison is evidence-based: ONDA has not tested either device hands-on.',
+  jobDependentVerdict: true,
   verdict:
     'No overall winner — they serve different people. Muse S Athena is the better buy for meditation, sleep tracking and everyday focus practice at about a third of the price; Neurosity Crown is the better buy for raw EEG, wider head coverage and building your own apps.',
   bestForA:

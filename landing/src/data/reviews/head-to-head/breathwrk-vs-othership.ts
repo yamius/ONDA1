@@ -9,6 +9,7 @@ const breathwrkVsOthership: HeadToHeadInput = {
     'Breathwrk vs Othership — structured, science-informed library vs cinematic music-driven premium experience. ONDA breaks down the breathwork app top two.',
   intro:
     'Breathwrk and Othership are the two breathwork apps users compare when picking a premium daily practice tool. The defining difference is the thesis: Breathwrk bets on structured library depth and science-informed copy, backed by one published study on cyclic sighing; Othership bets on cinematic music-driven production and live community.',
+  jobDependentVerdict: true,
   verdict:
     'Structured library vs cinematic experience. Breathwrk for the largest structured catalogue, with science-informed copy backed by one published study on cyclic sighing, at the best premium price. Othership for music-driven premium experience with live community.',
   bestForA:

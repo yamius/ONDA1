@@ -14,8 +14,8 @@ const pulseCentersXLPro: ToolReviewInput = {
     'Pulse Centers Pulse XL Pro is the high-intensity opposite of Bemer — coil-based applicators delivering 200,000+ µT peak intensity vs Bemer’s 35–150 µT. The Pulse system dominates clinical and athletic-recovery installations. Hardware is built for clinic-grade use; pricing reflects it ($7,000–$15,000+). Not a daily-driver consumer mat — a high-intensity clinic tool, with no independent trials of this system.',
   scores: [
     { criterionId: 'field-strength', score: 9.8, note: 'Highest field strength in consumer-accessible PEMF — 200,000+ µT peak via coil applicators. The category benchmark for intensity-driven protocols.' },
-    { criterionId: 'waveform-evidence', score: 7.5, note: 'Uses the high-intensity PEMF range studied in general PEMF research. We found no independent trials of this system itself.' },
-    { criterionId: 'build', score: 9.0, note: 'Clinic-style control unit and coil applicators. Sold into professional chiropractic, athletic recovery and equine settings. 5-year warranty.' },
+    { criterionId: 'waveform-evidence', score: 7.0, note: 'Uses the high-intensity PEMF range studied in general PEMF research. We found no independent trials of this system itself.' },
+    { criterionId: 'build', score: 8.5, note: 'Clinic-style control unit and coil applicators. Sold into professional chiropractic, athletic recovery and equine settings. 5-year warranty.' },
     { criterionId: 'programmability', score: 8.0, note: 'Pre-set clinical protocols with intensity steps. Coil-targeting via paddle/loop accessories gives effective spot-treatment flexibility.' },
     { criterionId: 'form-factor', score: 7.0, note: 'Coil applicators (paddle, loop) — targeted spot treatment, not whole-body simultaneous. Requires the user to position applicators per session.' },
     { criterionId: 'value', score: 6.5, note: '$7,000–$15,000+ depending on configuration. Prosumer/clinic pricing — overkill for daily wellness use, fair for professional or serious recovery protocols.' },

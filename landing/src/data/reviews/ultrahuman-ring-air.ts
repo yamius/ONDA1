@@ -13,9 +13,9 @@ const ultrahumanRingAir: ToolReviewInput = {
   summary:
     'The Ultrahuman Ring Air does the fundamentals well — light, subscription-free, continuous HRV and strong sleep tracking. But it is hard to recommend without reservation: through 2026, batteries failing within months have been a widely reported problem, and since 21 October 2025 it can no longer be imported into or sold new in the US.',
   scores: [
-    { criterionId: 'hrv-accuracy', score: 8.0, note: 'Continuous HRV (SDNN and RMSSD), updated every couple of minutes at rest — a genuinely continuous overnight signal.' },
+    { criterionId: 'hrv-accuracy', score: 7.0, note: 'Continuous HRV (SDNN and RMSSD), updated every couple of minutes at rest — a genuinely continuous overnight signal.' },
     { criterionId: 'sensor', score: 7.5, note: 'Optical PPG in a very light ring; a clean signal at rest.' },
-    { criterionId: 'sleep-accuracy', score: 8.0, note: 'Strong sleep tracking — early third-party checks put sleep-stage agreement high, among the better rings.' },
+    { criterionId: 'sleep-accuracy', score: 7.0, note: 'Strong sleep tracking — early third-party checks put sleep-stage agreement high, among the better rings.' },
     { criterionId: 'data-access', score: 6.5, note: 'Lifelong access to your own data plus some export, but no truly open API.' },
     { criterionId: 'wearability', score: 5.5, note: 'Featherweight and comfortable — but widely reported battery failures within months undercut its reliability as a 24/7 device.' },
     { criterionId: 'app-ux', score: 7.5, note: 'A capable app, extensible through add-on "PowerPlugs".' },

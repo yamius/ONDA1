@@ -17,7 +17,7 @@ const bonCharge: ToolReviewInput = {
     { criterionId: 'wavelengths', score: 7.5, note: 'Two-wavelength coverage (660 + 850 nm) — standard biohacker default, no exotic additions like PlatinumLED or GembaRed.' },
     { criterionId: 'build-emf-flicker', score: 7.5, note: 'Solid aluminium build with glass front. Bon Charge now publishes EMF (0.05–0.1 µT) and zero-flicker claims for the Max; warranty is 1 year.' },
     { criterionId: 'coverage', score: 8.0, note: 'Half-body coverage in the main panel; multiple sizes available. Stand and door-mount hardware included.' },
-    { criterionId: 'evidence', score: 7.0, note: 'Bon Charge lists the Max as FDA Class II registered (registration/listing, not clearance or approval). Positioned as a wellness device; references the underlying photobiomodulation literature.' },
+    { criterionId: 'evidence', score: 6.5, note: 'Bon Charge lists the Max as FDA Class II registered (registration/listing, not clearance or approval). Positioned as a wellness device; references the underlying photobiomodulation literature.' },
     { criterionId: 'value', score: 7.0, note: '$999 for the half-body Max (the smaller Demi is $699). Mid-tier pricing — cheaper than Joovv, comparable to BioLight; brand premium baked in.' },
   ],
   pros: [

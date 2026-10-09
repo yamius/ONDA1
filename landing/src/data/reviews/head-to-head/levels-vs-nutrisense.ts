@@ -9,6 +9,7 @@ const levelsVsNutrisense: HeadToHeadInput = {
     'Levels vs Nutrisense — side-by-side ONDA comparison of the two leading consumer CGM programmes. Same Dexcom G7 hardware; the difference is app intelligence vs a registered dietitian.',
   intro:
     'Levels and Nutrisense are the two biohacker CGM programmes everyone shortlists. Both ship the same Dexcom G7 sensor — the most accurate consumer CGM hardware on the market — so the accuracy ceiling is identical. The real difference is the wrapper: Levels bets on app intelligence and a deep content library; Nutrisense bets on a registered dietitian who reviews your data weekly.',
+  jobDependentVerdict: true,
   verdict:
     'It is a deliberate tie that depends on what you want. Levels for the deepest insight engine on your own; Nutrisense for a registered dietitian working through your data with you each week.',
   bestForA:

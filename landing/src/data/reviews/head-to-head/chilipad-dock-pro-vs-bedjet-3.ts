@@ -9,6 +9,7 @@ const chilipadVsBedjet: HeadToHeadInput = {
     'ChiliPad Dock Pro vs BedJet 3 — side-by-side ONDA comparison of water-cooled vs air-flow sleep climate. Aggressive dual-zone cooling at premium price vs no-water air system at half the cost.',
   intro:
     'ChiliPad Dock Pro and BedJet 3 are the two subscription-free sleep-climate systems users compare when Eight Sleep is off the table. The category-defining difference is climate method: ChiliPad is dual-zone water cooling with a fluid reservoir and chiller; BedJet pushes ambient or cooled air under the sheets with no water tank to manage.',
+  jobDependentVerdict: true,
   verdict:
     'Climate aggressiveness vs maintenance simplicity. ChiliPad Dock Pro for aggressive summer cooling and dual-zone control. BedJet 3 for clean install with no water management and roughly half the price.',
   bestForA:

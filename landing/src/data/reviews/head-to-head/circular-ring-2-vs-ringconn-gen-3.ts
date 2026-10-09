@@ -9,6 +9,7 @@ const circularVsGen3: HeadToHeadInput = {
     'Circular Ring 2 vs RingConn Gen 3 — two subscription-free rings chasing heart-health features. On-ring ECG/AFib that doesn’t reliably work vs vascular and sleep-apnea insights that ship.',
   intro:
     'Both are subscription-free rings that push into heart-health territory, but they differ on a crucial point: whether the features work. The Circular Ring 2 has the more ambitious hardware — on-finger ECG and AFib detection — but its software is unfinished and those features didn’t reliably work in testing. The RingConn Gen 3 aims lower (vascular and blood-pressure trends, sleep-apnea insights, a haptic alarm) but delivers what it promises today.',
+  jobDependentVerdict: true,
   verdict:
     'Ambition that doesn’t work yet vs features that do. The Circular Ring 2 has unique ECG/AFib hardware, but unfinished software and unreliable performance in testing. The RingConn Gen 3 offers vascular/sleep-apnea insights and a haptic alarm that actually ship, with a longer battery and proven reliability — at a similar subscription-free price. Today, RingConn is the safer buy.',
   bestForA:

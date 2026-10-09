@@ -9,6 +9,7 @@ const circularVsOura5: HeadToHeadInput = {
     'Circular Ring 2 vs Oura Ring 5 — the ambitious ECG/AFib ring with no subscription vs the proven accuracy flagship. Innovation on paper vs features that actually work.',
   intro:
     'On paper this looks close: the Circular Ring 2 has an on-finger ECG, AFib detection and a subscription-free AI coach — things the Oura Ring 5 doesn’t offer. In practice it isn’t close yet. Independent testing found the Circular’s marquee features didn’t reliably work, while the Oura Ring 5 delivers the most polished ring experience from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) — for a subscription.',
+  jobDependentVerdict: true,
   verdict:
     'Ambition vs execution. The Circular Ring 2 has unique hardware (ECG, AFib) and no subscription, but its software is unfinished and those features didn’t reliably work in testing. The Oura Ring 5 is less ambitious on paper but does everything well, accurately, with the best app — at $399 plus a membership. Today, buy Oura for a ring that works; consider Circular only as an early-adopter bet.',
   bestForA:
@@ -19,7 +20,7 @@ const circularVsOura5: HeadToHeadInput = {
     { name: 'Features that work today', winner: 'b', note: 'Oura’s tracking is accurate and reliable. The Circular’s headline ECG/AFib features didn’t reliably work in independent testing, and promised BP/glucose hadn’t shipped.' },
     { name: 'Unique hardware', winner: 'a', note: 'The Circular is the first ring with on-finger ECG and AFib detection — genuinely unique, if it matures.' },
     { name: 'Subscription & cost', winner: 'a', note: 'Circular: subscription-free (from $349). Oura Ring 5: $399 + ~$6/month. Circular is cheaper to own if the features work.' },
-    { name: 'Accuracy', winner: 'b', note: 'Oura is the validated reference for sleep and HRV; the Circular’s data was uneven in testing.' },
+    { name: 'Accuracy', winner: 'tie', note: 'Practically equal on validation: neither the Circular Ring 2 nor the Ring 5 has an independent validation of sleep or HRV (as of October 2026). Reviewers found the Circular’s data uneven in everyday use; that is a reliability note, not a measured accuracy result.' },
     { name: 'App & polish', winner: 'b', note: 'Oura’s app is the category benchmark. The Circular’s software was the main thing reviewers criticised.' },
     { name: 'Battery', winner: 'tie', note: 'Comparable — Circular ~6 days, Oura Ring 5 ~6–9. Neither is the differentiator here.' },
   ],

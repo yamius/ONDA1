@@ -81,7 +81,7 @@ const bestBreathworkApps2026: Comparison = {
     },
     {
       q: 'Breathwrk vs Othership — which is better?',
-      a: 'Breathwrk wins on library depth, technique coverage, science grounding and price. Othership wins on production value, music-driven sessions and live community. Different theses about what breathwork should feel like.',
+      a: 'Breathwrk wins on library depth, technique coverage, science-informed copy (one published study on cyclic sighing) and price. Othership wins on production value, music-driven sessions and live community. Different theses about what breathwork should feel like.',
     },
     {
       q: 'Is there a free breathing app that works?',

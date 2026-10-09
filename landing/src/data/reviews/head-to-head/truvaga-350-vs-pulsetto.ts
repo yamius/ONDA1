@@ -9,6 +9,7 @@ const truvagaVsPulsetto: HeadToHeadInput = {
     'Truvaga 350 vs Pulsetto — side-by-side ONDA comparison of two consumer cervical tVNS devices. Clinical hardware platform versus consumer collar with broader protocols.',
   intro:
     'Truvaga 350 and Pulsetto are the two consumer cervical tVNS devices most commonly compared. Both stimulate the cervical vagal branches transcutaneously; the form factor and provenance differ. Truvaga is electroCore’s consumer arm running the same hardware platform as the FDA-cleared gammaCore prescription device; Pulsetto is a collar with four guided programmes at a lower price.',
+  jobDependentVerdict: true,
   verdict:
     'Depends on what you value. Truvaga 350 for clinical provenance (same hardware as FDA-cleared gammaCore). Pulsetto for protocol variety, daily-use form factor and lower price.',
   bestForA:

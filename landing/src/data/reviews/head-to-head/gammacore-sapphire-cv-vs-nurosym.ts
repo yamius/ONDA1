@@ -9,6 +9,7 @@ const gammacoreVsNurosym: HeadToHeadInput = {
     'gammaCore Sapphire CV vs Nurosym — side-by-side ONDA comparison of FDA-cleared prescription cervical tVNS versus the consumer auricular tVNS with the deepest evidence base.',
   intro:
     'gammaCore Sapphire CV and Nurosym are the two non-invasive vagus stimulators serious users compare when evidence depth is the deciding criterion. They target different branches of the vagus nerve — gammaCore at the cervical trunk, Nurosym at the auricular branch — and sit at opposite ends of the regulatory spectrum. gammaCore is FDA-cleared and prescription-only for migraine and cluster headache; Nurosym is consumer-accessible with the deepest published auricular tVNS evidence.',
+  jobDependentVerdict: true,
   verdict:
     'Different roles. gammaCore for clinically-indicated headache patients with prescriber access. Nurosym for self-directed consumer tVNS users who want disclosed parameters and the deepest evidence base.',
   bestForA:

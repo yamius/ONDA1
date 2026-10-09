@@ -10,7 +10,7 @@
 export const ARTICLE_DATES: Record<string, { published: string; modified: string }> = {
   "4-7-8-breathing": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-10-06T15:15:46+02:00"
+    "modified": "2026-10-09T20:19:15+02:00"
   },
   "acc-calibration-protocol-cognitive-control": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -62,7 +62,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "apple-watch-recovery-hrv-vs-overall-hrv": {
     "published": "2026-09-17T17:21:46+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "attention-trainable-skill-meditation": {
     "published": "2026-09-23T20:27:09+02:00",
@@ -270,7 +270,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-much-alcohol-lowers-hrv": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-10-06T15:15:46+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "how-much-meditation-do-you-need": {
     "published": "2026-09-23T15:19:19+02:00",
@@ -306,11 +306,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-to-measure-hrv-consistently": {
     "published": "2026-09-18T16:27:42+02:00",
-    "modified": "2026-10-06T15:15:46+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "how-to-raise-hrv-naturally": {
     "published": "2026-09-19T00:55:37+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "how-to-regulate-emotions": {
     "published": "2026-09-19T01:24:54+02:00",
@@ -330,7 +330,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hrv-different-every-device": {
     "published": "2026-06-04T01:14:45+02:00",
-    "modified": "2026-10-08T11:54:33+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "hrv-harmony-of-rhythms": {
     "published": "2026-09-22T07:30:24+02:00",
@@ -486,7 +486,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "normal-hrv-by-age": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-10-08T21:46:29+02:00"
+    "modified": "2026-10-09T00:24:35+02:00"
   },
   "nose-vs-mouth-breathing": {
     "published": "2026-09-22T08:22:18+02:00",
@@ -542,7 +542,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "overtraining-hrv-resting-heart-rate": {
     "published": "2026-09-18T14:42:44+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "phase-locked-acoustic-sleep": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -582,7 +582,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "resting-heart-rate-by-age": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-10-08T21:46:29+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "rhythmic-entrainment-system-frequencies": {
     "published": "2026-03-31T22:29:31Z",
@@ -678,15 +678,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "what-to-do-after-low-hrv-reading": {
     "published": "2026-09-19T00:55:37+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "what-your-apple-watch-records": {
     "published": "2026-09-05T18:33:27+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "why-is-my-apple-watch-hrv-low": {
     "published": "2026-10-04T14:03:10+02:00",
-    "modified": "2026-10-08T11:54:33+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "wim-hof-breathing-inflammation": {
     "published": "2026-09-22T18:48:54+02:00",
@@ -714,7 +714,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "your-baseline-knows-first": {
     "published": "2026-09-18T14:42:44+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "zazen-zen-meditation-brain": {
     "published": "2026-09-23T18:39:06+02:00",
@@ -730,7 +730,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-10-08T19:32:47+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -870,7 +870,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:sdnn": {
     "published": "2026-10-04T19:18:25.000Z",
-    "modified": "2026-10-08T21:22:34.000Z"
+    "modified": "2026-10-08T21:47:16.000Z"
   },
   "glossary:hrv-baseline": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-08T13:29:42+02:00"
+    "modified": "2026-10-09T20:19:15+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1634,7 +1634,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles/topic/:topic": {
     "published": "2026-09-24T00:24:48+02:00",
-    "modified": "2026-10-08T00:57:23+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "page:/part/:slug": {
     "published": "2026-02-24T15:51:07+01:00",
@@ -1686,7 +1686,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/ai-apps": {
     "published": "2026-10-03T19:24:51+02:00",
-    "modified": "2026-10-04T12:26:23+02:00"
+    "modified": "2026-10-09T00:24:35+02:00"
   },
   "page:/measurements": {
     "published": "2026-09-06T17:37:13+02:00",
@@ -1730,7 +1730,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/tools": {
     "published": "2026-06-03T18:28:47+02:00",
-    "modified": "2026-10-05T10:11:22+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "page:/reviews": {
     "published": "2026-05-15T20:16:55+02:00",
@@ -1746,7 +1746,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-08T18:20:49+02:00"
+    "modified": "2026-10-10T00:29:41+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",
@@ -1754,11 +1754,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "tool:/tools/hrv": {
     "published": "2026-06-03T18:28:47+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-09T00:24:35+02:00"
   },
   "tool:/tools/caffeine": {
     "published": "2026-06-03T21:04:07+02:00",
-    "modified": "2026-09-27T20:00:23+02:00"
+    "modified": "2026-10-09T23:07:23+02:00"
   },
   "tool:/tools/sleep-debt": {
     "published": "2026-06-03T21:12:51+02:00",
@@ -1785,7 +1785,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/water": {
-    "published": "2026-09-28T18:41:12.816Z",
+    "published": "2026-10-09T22:29:01.498Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/alcohol": {
@@ -1833,15 +1833,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-27T20:00:23+02:00"
   },
   "tool:/tools/digital-detox": {
-    "published": "2026-09-28T18:41:12.807Z",
+    "published": "2026-10-09T22:29:01.295Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/burnout": {
-    "published": "2026-09-28T18:41:12.806Z",
+    "published": "2026-10-09T22:29:01.262Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/nervous-system": {
-    "published": "2026-09-28T18:41:12.811Z",
+    "published": "2026-10-09T22:29:01.311Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/wim-hof": {
@@ -1854,7 +1854,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "tool:/tools/resting-heart-rate": {
     "published": "2026-06-04T13:16:18+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-08T23:47:16+02:00"
   },
   "tool:/tools/recovery-score": {
     "published": "2026-06-04T13:31:14+02:00",

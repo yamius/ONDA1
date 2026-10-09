@@ -15,7 +15,7 @@ const intakeBreathing: ToolReviewInput = {
   scores: [
     { criterionId: 'adhesion-comfort', score: 8.0, note: 'Small adhesive tabs grip well; magnetic band redistributes pressure rather than holding tension on a single point. Comfortable for the form factor.' },
     { criterionId: 'breathing-mechanism', score: 9.0, note: 'External magnetic dilation — mechanically widens nostril openings. Most effective external nasal dilator approach; outperforms passive strips like Breathe Right on user-reported airflow.' },
-    { criterionId: 'evidence-grounding', score: 7.5, note: 'James Nestor recommendation in Breath book. Brand-funded airflow studies. Sleep-medicine adjacent positioning without FDA Class II.' },
+    { criterionId: 'evidence-grounding', score: 6.5, note: 'James Nestor recommendation in Breath book. Brand-funded airflow studies. Sleep-medicine adjacent positioning without FDA Class II.' },
     { criterionId: 'form-factor', score: 8.5, note: 'Reusable magnetic band with replaceable adhesive tabs — long-term ownership economics work. Discreet visual profile.' },
     { criterionId: 'material-safety', score: 8.0, note: 'Medical-grade adhesive tabs. Magnetic band hypoallergenic. Skin-reaction reports rare.' },
     { criterionId: 'value', score: 6.5, note: '~$40 starter kit, $20/month for replacement tabs = ~$0.65/night ongoing. Premium pricing but reusable band reduces long-term cost.' },

@@ -10,6 +10,7 @@ const bemerVsHealthyWaveVsPulse: HeadToHeadInput = {
     'Bemer Classic Evo vs Healthy Wave Multi-Wave vs Pulse Centers Pulse XL Pro — the three premium PEMF systems compared. Proprietary-signal mat vs multi-modality mat vs high-intensity clinical coil.',
   intro:
     'The three premium PEMF systems that define the 2026 category. Bemer Classic Evo — low-intensity proprietary-signal mat, FDA-cleared only for non-medical muscle conditioning. Healthy Wave Multi-Wave — multi-modality mat (PEMF + IR + red light) at half the price. Pulse Centers Pulse XL Pro — high-intensity clinical coil for athletic recovery and rehab.',
+  jobDependentVerdict: true,
   verdict:
     'Three different buying questions resolve cleanly. Bemer for daily passive use with a proprietary signal. Healthy Wave for modality stacking at half the price. Pulse Centers for high-intensity targeted clinical work.',
   bestForA:

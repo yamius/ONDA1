@@ -9,6 +9,7 @@ const dysonVsIqair: HeadToHeadInput = {
     'Dyson Purifier Big+Quiet vs IQAir HealthPro Plus — premium consumer smart vs clinical HEPA. ONDA breaks down the premium duel.',
   intro:
     'Dyson Big+Quiet and IQAir HealthPro Plus are the two premium air purifiers users compare when picking $1,000+ hardware. The defining difference: Dyson bets on consumer-brand polish + smart features + formaldehyde destruction; IQAir bets on deepest clinical-grade filtration + multi-decade Swiss pedigree.',
+  jobDependentVerdict: true,
   verdict:
     'Smart features vs clinical filtration. Dyson Big+Quiet for premium smart UX + formaldehyde + best-in-category app. IQAir for HyperHEPA H14 clinical depth.',
   bestForA:

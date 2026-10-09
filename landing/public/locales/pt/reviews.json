@@ -29,7 +29,8 @@
     "updatesBody": "Every review and round-up carries a last-updated date. We revise scores and rankings when a flagship launches, when a price or availability changes materially, or when new evidence emerges — not on a fixed schedule and not to chase a calendar. When a product is discontinued or, for example, banned from sale, we say so and adjust the ranking.",
     "authorHeading": "Who writes the reviews",
     "authorBody": "Reviews are written by Yakiv Bilenko, founder of ONDA Life.",
-    "authorLink": "About the author"
+    "authorLink": "About the author",
+    "scoreRulesBody": "Como o número é calculado: a média ponderada é arredondada para uma casa decimal, com a metade para cima (8,35 vira 8,4). Se dois produtos terminam com a mesma pontuação, fica à frente o que tem nota maior no critério de evidências da categoria; se ela também for igual, dividem a posição e aparecem como empate. Nos confrontos diretos, uma diferença de 0,1 ou menos aparece como praticamente iguais. Raramente o editor pode ajustar a média em no máximo ±0,3 ponto; qualquer ajuste aparece na análise junto com o motivo."
   },
   "ui": {
     "updated": "Updated",
@@ -62,7 +63,12 @@
     "seeFullRanking": "Ver o ranking completo",
     "tie": "Empate",
     "why": "Por quê",
-    "winner": "Vencedor"
+    "winner": "Vencedor",
+    "higherScore": "Maior pontuação ONDA: {{name}} ({{scores}})",
+    "practicallyEqual": "Praticamente iguais pela pontuação ONDA ({{scores}})",
+    "scoresVs": " vs. ",
+    "scoresAnd": " e ",
+    "editorialAdjustment": "Ajuste editorial {{value}}: {{reason}}"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",

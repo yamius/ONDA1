@@ -9,6 +9,7 @@ const hv3ProVsAchedaway: HeadToHeadInput = {
     'Hyperice Hypervolt 3 Pro vs Achedaway Pro — same $349, two philosophies: quiet plus a full app ecosystem vs the highest stall force in the category and more attachments.',
   intro:
     'Priced identically at $349, these two make opposite bets. The Achedaway Pro chases raw specs — the highest stall force in the category (80 lbs) and seven attachments — but skips a polished app ecosystem. The Hypervolt 3 Pro trades a little peak force for the quietest motor, a refined Hyperice app with guided routines, and brand pedigree. Spec-hunters vs ecosystem-and-quiet.',
+  jobDependentVerdict: true,
   verdict:
     'Same price, opposite priorities. The Achedaway Pro wins on raw stall force (80 vs ~70 lbs) and attachment count; the Hypervolt 3 Pro wins on quiet operation, the Hyperice app and guided routines, and brand support. Pick by whether you want maximum specs or a quieter, more connected experience.',
   bestForA:

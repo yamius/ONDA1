@@ -10,6 +10,7 @@ const iqairVsMolekuleVsDyson: HeadToHeadInput = {
     'IQAir HealthPro Plus vs Molekule Air Pro vs Dyson Big+Quiet — the three category-defining premium air purifiers compared.',
   intro:
     'The three premium air purifiers that define the 2026 category. IQAir HealthPro Plus — clinical-grade HyperHEPA H14 with multi-decade Swiss pedigree. Molekule Air Pro — PECO photocatalytic VOC destruction + True HEPA + premium app. Dyson Purifier Big+Quiet — consumer-brand polish + True HEPA + formaldehyde destruction + best smart features.',
+  jobDependentVerdict: true,
   verdict:
     'Three different premium theses. IQAir for clinical filtration depth. Molekule for PECO VOC destruction. Dyson for premium smart + formaldehyde + quietest operation.',
   bestForA:

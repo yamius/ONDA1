@@ -9,6 +9,7 @@ const hv3ProVsTheragunElite: HeadToHeadInput = {
     'Hyperice Hypervolt 3 Pro vs Theragun Elite — the 2026 Hyperice flagship vs Therabody’s value pick. Power, quiet and price vs deep amplitude and the Therabody app.',
   intro:
     'Both are premium percussion guns around the same price, and they split on philosophy. The Hypervolt 3 Pro leads on raw force, quiet operation and battery; the Theragun Elite leads on stroke depth (16 mm amplitude) and the Therabody ecosystem. It’s power-and-quiet versus depth-and-app.',
+  jobDependentVerdict: true,
   verdict:
     'Power and quiet vs depth and ecosystem. The Hypervolt 3 Pro wins on stall force (~70 vs 40 lbs), noise, battery and price ($349 vs $399); the Theragun Elite wins on amplitude (16 mm deep stroke), the Therabody app and multi-grip versatility. Pick by whether you want stronger-quieter percussion or a deeper stroke.',
   bestForA:

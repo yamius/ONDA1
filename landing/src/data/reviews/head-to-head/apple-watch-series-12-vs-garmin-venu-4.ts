@@ -9,6 +9,7 @@ const series12VsVenu4: HeadToHeadInput = {
     'Apple Watch Series 12 vs Garmin Venu 4 — two mid-range health smartwatches for HRV. Apple’s new Health Sensing System and ECG versus Garmin’s multi-day battery and training ecosystem.',
   intro:
     'Two mainstream health smartwatches around the same money, pulling in different directions. The September 2026 Apple Watch Series 12 brings the all-new Health Sensing System — Recovery HRV sampled ~24× more often — plus ECG and hypertension notifications, but a ~1-day battery. The Garmin Venu 4 answers with HRV Status, a multi-day battery and the Garmin training ecosystem, and no ECG. Which mid-range watch fits depends on battery and ecosystem more than on the HRV number.',
+  jobDependentVerdict: true,
   verdict:
     'No overall winner — it splits by priorities. For the newest HRV system, an ECG and iPhone integration, the Series 12 leads; for multi-day battery that makes overnight wear effortless and the Garmin training world, the Venu 4 leads. Both are wrist optical, so a ring still beats either for a pure overnight record.',
   bestForA:

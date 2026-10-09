@@ -9,6 +9,7 @@ const helioVsRingconn: HeadToHeadInput = {
     'Amazfit Helio Ring ($199, 3 sizes, ~3-day battery) vs RingConn Gen 2 ($299, sizes 6–14, 10–12 days). Two no-subscription smart rings compared.',
   intro:
     'These are the two rings people cross-shop when they want smart-ring tracking without a subscription and without Oura money. The Amazfit Helio Ring is the cheaper one at $199; the RingConn Gen 2 costs $100 more ($299) but fixes the Helio’s two biggest weaknesses — battery and fit — with a 10–12-day charge and sizes 6 to 14.',
+  jobDependentVerdict: true,
   verdict:
     'Both are subscription-free rings. The Amazfit Helio Ring is cheaper ($199) and very light; the RingConn Gen 2 wins day to day with a 10–12-day battery (vs about 2.5–3 days), nine sizes and solid tracking for $299. For most people RingConn is the better buy; the Helio wins on price and comfort if one of its three sizes fits.',
   bestForA:

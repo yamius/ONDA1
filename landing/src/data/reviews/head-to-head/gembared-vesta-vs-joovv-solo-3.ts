@@ -9,6 +9,7 @@ const gembaredVsJoovv: HeadToHeadInput = {
     'GembaRed Vesta vs Joovv Solo 3.0 — side-by-side ONDA comparison of two premium red light panels. EMF-shielded six-wavelength engineering versus the modular reference.',
   intro:
     'GembaRed Vesta and Joovv Solo 3.0 are the two red light panels users compare when premium-tier engineering matters. GembaRed is the founder-engineered EMF-shielded specialist; Joovv is the modular reference. Different paths to the premium tier: GembaRed buys you cleanest-possible build, Joovv buys you brand maturity and modular scaling.',
+  jobDependentVerdict: true,
   verdict:
     'Different premium intents. GembaRed Vesta wins on EMF/flicker discipline and wavelength breadth. Joovv Solo 3.0 wins on modular full-body scaling and brand maturity.',
   bestForA:

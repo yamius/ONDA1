@@ -9,6 +9,7 @@ const series12VsGalaxyRing: HeadToHeadInput = {
     'Apple Watch Series 12 vs Samsung Galaxy Ring for HRV and sleep — two subscription-free trackers from rival ecosystems. Watch vs ring, weighed axis by axis, starting with the phone you own.',
   intro:
     'Both start at $399 and neither needs a subscription, so this comparison comes down to form factor and ecosystem. The Series 12 brings the new Health Sensing System — HRV sampled 24× more often, Recovery HRV, ECG and hypertension notifications — in a full smartwatch. The Galaxy Ring is a comfortable multi-day ring for overnight HRV and sleep, built around Samsung Health and Android. The first question is which phone is in your pocket.',
+  jobDependentVerdict: true,
   verdict:
     'No overall winner — it splits by phone and use case. On Android, and especially a Samsung phone, the Galaxy Ring is the easy, subscription-free pick for overnight HRV and sleep with a multi-day battery. For an all-round smartwatch with ECG, hypertension notifications, more open data and HRV now usable as a personal trend, the Series 12 wins — inside Apple’s iPhone ecosystem.',
   bestForA:

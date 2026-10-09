@@ -9,6 +9,7 @@ const cowayVsBlueair: HeadToHeadInput = {
     'Coway Airmega 400 vs Blueair HealthProtect 7770i — Korean mid-premium HEPA vs Swedish HEPASilent premium. ONDA breaks down the mid-premium air-purifier duel.',
   intro:
     'Coway Airmega 400 and Blueair HealthProtect 7770i are the two mid-premium air purifiers users cross-shop. The defining difference: Coway delivers larger AHAM coverage at lower price; Blueair delivers HEPASilent technology + GermShield always-on mode at premium pricing.',
+  jobDependentVerdict: true,
   verdict:
     'Coverage vs technology. Coway Airmega 400 for largest AHAM-certified coverage at best mid-premium value. Blueair 7770i for HEPASilent + GermShield premium tech.',
   bestForA:

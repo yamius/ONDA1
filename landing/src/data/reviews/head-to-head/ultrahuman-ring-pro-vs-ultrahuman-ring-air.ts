@@ -9,6 +9,7 @@ const ringProVsRingAir: HeadToHeadInput = {
     'Ultrahuman Ring Pro vs Ring Air — the redesigned, US-available successor with a ~15-day battery vs the older, US-banned Ring Air. ONDA on which Ultrahuman ring to buy.',
   intro:
     'This is really an upgrade-and-availability question. The Ultrahuman Ring Pro is the redesigned successor: a ~15-day battery, on-ring processing, and — crucially — it is on sale in the US. The older Ultrahuman Ring Air is under a US import ban (after Oura’s ITC patent win) and carried widely reported battery failures. For a US buyer, this is not much of a contest.',
+  jobDependentVerdict: true,
   verdict:
     'For US buyers the Ring Pro wins by default — the Ring Air is banned from US sale and can’t be bought there. Beyond availability, the Ring Pro roughly triples the battery (~15 vs ~4–6 days), adds on-ring processing, and is Ultrahuman’s answer to the Ring Air’s battery-reliability complaints. The Ring Air only makes sense at a steep discount where it’s still legally available and you accept the risk.',
   bestForA:

@@ -15,7 +15,7 @@ const breatheRight: ToolReviewInput = {
   scores: [
     { criterionId: 'adhesion-comfort', score: 7.0, note: 'Solid adhesion on clean dry skin. Skin-irritation reports moderate; clear / sensitive-skin variants address most issues.' },
     { criterionId: 'breathing-mechanism', score: 6.0, note: 'External spring-tension leverage — passive widening via plastic spring force across the bridge. Weaker than magnetic external (Intake) or internal mechanical (Mute) approaches.' },
-    { criterionId: 'evidence-grounding', score: 8.0, note: 'FDA-cleared with decades of clinical-context literature on nasal-strip airflow. Multi-decade brand track record. Strongest regulatory standing in nasal dilators.' },
+    { criterionId: 'evidence-grounding', score: 7.5, note: 'FDA-cleared with decades of clinical-context literature on nasal-strip airflow. Multi-decade brand track record. Strongest regulatory standing in nasal dilators.' },
     { criterionId: 'form-factor', score: 7.0, note: 'Single-piece strip. Easy to apply. Disposable single-use. Visible externally.' },
     { criterionId: 'material-safety', score: 7.0, note: 'Hypoallergenic and sensitive-skin variants available. Skin-irritation reports rare with correct variant selection. Latex-free.' },
     { criterionId: 'value', score: 8.5, note: '~$10 for 30 strips = ~$0.33/night. Best per-night value in nasal-airway category by margin. Drugstore availability.' },

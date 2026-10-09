@@ -9,6 +9,7 @@ const series12VsWhoop50: HeadToHeadInput = {
     'Apple Watch Series 12 vs Whoop 5.0 for HRV and recovery — a no-subscription smartwatch with the new Health Sensing System versus a subscription-only recovery coach. Where each one wins.',
   intro:
     'These answer the same question two ways. The September 2026 Series 12 finally samples HRV often enough, with a dedicated Recovery HRV, to be a real recovery signal — inside a no-subscription smartwatch. Whoop 5.0 is a subscription-only band built from the ground up around continuous overnight HRV and the sharpest recovery-and-strain coaching in the category. One is a do-everything watch; the other is a dedicated coach.',
+  jobDependentVerdict: true,
   verdict:
     'No overall winner — pick by whether you want coaching or a do-everything device. Whoop 5.0 leads for continuous overnight HRV, recovery-and-strain coaching and multi-day battery; the Series 12 wins for being a no-subscription smartwatch with ECG whose HRV is now usable as a personal trend.',
   bestForA:

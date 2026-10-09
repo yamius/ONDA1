@@ -10,6 +10,7 @@ const eightSleepVsChilipadVsBedjet: HeadToHeadInput = {
     'Eight Sleep Pod 4 vs ChiliPad Dock Pro vs BedJet 3 — the three category-defining smart sleep-climate systems compared. Premium-with-tracking vs subscription-free water vs no-water air-flow.',
   intro:
     'The three systems that resolve the smart sleep-climate category in 2026. Eight Sleep Pod 4 — water-cooled with integrated HRV tracking and required subscription. ChiliPad Dock Pro — same water cooling without the subscription, no tracking. BedJet 3 — air-flow alternative at the lowest price with no water management.',
+  jobDependentVerdict: true,
   verdict:
     'Three different buying questions resolve cleanly. Eight Sleep Pod 4 if you want integrated tracking and accept the subscription. ChiliPad Dock Pro if you want the same water cooling without the subscription. BedJet 3 if you want the air-flow alternative at the lowest price.',
   bestForA:

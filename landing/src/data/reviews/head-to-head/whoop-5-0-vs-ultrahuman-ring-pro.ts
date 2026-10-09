@@ -9,6 +9,7 @@ const whoop50VsRingPro: HeadToHeadInput = {
     'Whoop 5.0 vs Ultrahuman Ring Pro — the subscription-only recovery band vs the subscription-free ring with a 15-day battery. Recovery coaching vs own-it-outright value.',
   intro:
     'Two very different takes on continuous HRV. The Whoop 5.0 is a screenless wrist band built around a daily recovery-and-strain score, sampled from continuous overnight HRV — but it is subscription-only at $199–$359/year, and the band stops working when you stop paying. The Ultrahuman Ring Pro is the opposite model: a one-time $479 ring with no subscription, a category-leading ~15-day battery and on-ring processing. The catch is that the Ring Pro is new, and Ultrahuman’s previous ring had widely reported reliability problems, so its durability win is promised rather than proven.',
+  jobDependentVerdict: true,
   verdict:
     'Rent-a-recovery-coach vs own-a-ring. The Whoop 5.0 wins on continuous overnight HRV and the deepest recovery-and-strain coaching, if you accept paying yearly. The Ultrahuman Ring Pro wins on cost model (one-time $479, no fee), an exceptional ~15-day battery and owning your device — with the honest caveat that its long-term reliability is unproven. Pick by whether you want daily coaching you rent or a ring you own.',
   bestForA:

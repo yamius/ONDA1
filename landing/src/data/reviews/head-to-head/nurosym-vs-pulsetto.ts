@@ -9,6 +9,7 @@ const nurosymVsPulsetto: HeadToHeadInput = {
     'Nurosym vs Pulsetto — side-by-side ONDA comparison of the two leading consumer tVNS devices. Auricular vs cervical, clinical-grade evidence vs accessible price.',
   intro:
     'Nurosym and Pulsetto are the two consumer tVNS devices most users compare against each other. They stimulate different branches of the vagus nerve — Nurosym at the ear (auricular), Pulsetto at the neck (cervical) — and they come from different ends of the market: Nurosym is the rebranded Parasym hardware with the deepest published research base, Pulsetto is the consumer-accessible neck collar with the widest programme variety at a third of the price.',
+  jobDependentVerdict: true,
   verdict:
     'Depends on what matters most. Nurosym wins on evidence and disclosed parameters; Pulsetto wins on protocol variety, daily-use form factor and price.',
   bestForA:

@@ -10,6 +10,7 @@ const omniluxVsCurrentbodyVsGross: HeadToHeadInput = {
     'Omnilux Contour Face vs CurrentBody Series 2 vs Dr. Dennis Gross SpectraLite — the three category-defining red light face masks compared.',
   intro:
     'The three premium red light face masks that define the 2026 category. Omnilux Contour Face — flexible silicone with peer-reviewed dermatology evidence. CurrentBody Series 2 — consumer market leader with integrated neck flap. Dr. Dennis Gross SpectraLite — dermatology-brand hard-shell with dual red + blue spectrum.',
+  jobDependentVerdict: true,
   verdict:
     'Three different buying questions resolve cleanly. Omnilux for the clinical reference. CurrentBody for consumer market leader with neck flap. Dr. Dennis Gross for dermatology-brand dual-spectrum protocols.',
   bestForA:

@@ -9,6 +9,7 @@ const imrsVsOmi: HeadToHeadInput = {
     'iMRS Prime vs OMI Full Body Mat — premium multi-applicator Swiss system vs mid-tier single-modality reference. ONDA breaks down which mid-market PEMF mat fits.',
   intro:
     'iMRS Prime and OMI Full Body Mat are the two mats users cross-shop in the $1,500–$4,000 PEMF mid-market. iMRS is the Swiss-engineered multi-applicator system; OMI is the simple single-mat reference. Different complexity, different price tiers.',
+  jobDependentVerdict: true,
   verdict:
     'Complexity vs simplicity. iMRS Prime for multi-applicator Swiss-engineered system with morning and evening presets. OMI Full Body Mat for straightforward single-modality at meaningfully lower price.',
   bestForA:

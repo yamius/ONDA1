@@ -10,6 +10,7 @@ const threeValuePanels: HeadToHeadInput = {
     'Hooga HG500 ($359) vs Bon Charge Max ($999) vs Infraredi Pro Max ($1,019): which value red light panel fits you? Prices, specs and warranties compared.',
   intro:
     'Hooga HG500, Bon Charge’s half-body panel and Infraredi’s large Pro panel are three value-tier red light panels people compare when they do not want to pay Joovv prices. Model names have shifted: Bon Charge now sells its half-body panel as the Max ($999), and Infraredi’s Pro 1500 has been replaced in its line-up by the Pro Max 2.0 ($1,019 on sale). The three still represent three different value philosophies — cheapest legitimate entry, wellness-brand mid-tier, and widest spectrum.',
+  jobDependentVerdict: true,
   verdict:
     'Three different value points. Hooga at $359 for most first-time buyers. Bon Charge for buyers already in the Bon Charge ecosystem. Infraredi for the broadest spectrum and a free-standing base at the top of the value tier.',
   bestForA:

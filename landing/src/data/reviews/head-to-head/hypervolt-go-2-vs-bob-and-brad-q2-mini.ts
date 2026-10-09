@@ -9,6 +9,7 @@ const goVsQ2: HeadToHeadInput = {
     'Hypervolt Go 2 vs Bob and Brad Q2 Mini — premium travel mini vs PT-brand budget mini. ONDA breaks down the travel-mini duel.',
   intro:
     'Hypervolt Go 2 and Bob and Brad Q2 Mini are the two travel-mini massage guns users compare. The defining difference: Hypervolt Go 2 is premium-brand Hyperice ecosystem at $129; Bob and Brad Q2 Mini is "Famous PT" YouTube brand at $99. Both deliver brushless motors and ~30-35 lbs stall force.',
+  jobDependentVerdict: true,
   verdict:
     'Premium ecosystem vs PT-brand credibility. Hypervolt Go 2 for Hyperice app + brand pedigree at $129. Bob and Brad Q2 Mini for PT framing + $30 less.',
   bestForA:

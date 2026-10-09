@@ -16,7 +16,7 @@ const higherDoseFaceMask: ToolReviewInput = {
     { criterionId: 'irradiance', score: 7.0, note: 'HigherDOSE states 50 mW/cm² total (630 nm 26 + 830 nm 24 mW/cm²) — the brand’s figures, not independently measured.' },
     { criterionId: 'wavelength-coverage', score: 7.5, note: 'Red 630 nm + near-infrared 830 nm — the standard clinical pair. No blue / amber variants.' },
     { criterionId: 'led-count-coverage', score: 7.5, note: '66 dual-core LEDs (132 diodes) across face. No neck flap on standard model.' },
-    { criterionId: 'clinical-evidence', score: 6.0, note: 'FDA-cleared, per HigherDOSE. Light clinical evidence base; brand-funded research without peer-reviewed depth.' },
+    { criterionId: 'clinical-evidence', score: 5.5, note: 'FDA-cleared, per HigherDOSE. Light clinical evidence base; brand-funded research without peer-reviewed depth.' },
     { criterionId: 'comfort-fit', score: 8.5, note: 'Flexible silicone comparable to Omnilux / CurrentBody comfort. Lighter than Lumara Viso.' },
     { criterionId: 'value', score: 8.0, note: '$349 — accessible mid-premium pricing. Cheaper than Omnilux / CurrentBody / TheraFace, justified by lighter spec.' },
   ],

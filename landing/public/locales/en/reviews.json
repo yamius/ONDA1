@@ -29,7 +29,8 @@
     "updatesBody": "Every review and round-up carries a last-updated date. We revise scores and rankings when a flagship launches, when a price or availability changes materially, or when new evidence emerges — not on a fixed schedule and not to chase a calendar. When a product is discontinued or, for example, banned from sale, we say so and adjust the ranking.",
     "authorHeading": "Who writes the reviews",
     "authorBody": "Reviews are written by Yakiv Bilenko, founder of ONDA Life.",
-    "authorLink": "About the author"
+    "authorLink": "About the author",
+    "scoreRulesBody": "How the number is computed: the weighted mean is rounded to one decimal, half up (8.35 becomes 8.4). If two products end on the same score, the one with the higher score on the category’s evidence criterion ranks first; if that is equal too, they share the rank and are shown as a tie. In head-to-heads, a gap of 0.1 or less is shown as practically equal. Rarely, the editor may adjust the mean by at most ±0.3 points; any adjustment is shown on the review together with its reason."
   },
   "ui": {
     "updated": "Updated",
@@ -52,7 +53,12 @@
     "faq": "[ FAQ ]",
     "product": "Product",
     "overall": "Overall",
-    "metaReviewTitle": "{{name}} review — scored {{score}}/10"
+    "metaReviewTitle": "{{name}} review — scored {{score}}/10",
+    "higherScore": "Higher ONDA score: {{name}} ({{scores}})",
+    "practicallyEqual": "Practically equal by ONDA score ({{scores}})",
+    "scoresVs": " vs ",
+    "scoresAnd": " and ",
+    "editorialAdjustment": "Editorial adjustment {{value}}: {{reason}}"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",

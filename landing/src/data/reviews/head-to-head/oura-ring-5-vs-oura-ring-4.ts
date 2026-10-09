@@ -9,6 +9,7 @@ const ouraRing5VsRing4: HeadToHeadInput = {
     'Oura Ring 5 vs Oura Ring 4 — 40% slimmer with upgraded sensors vs the cheaper previous flagship. ONDA on what actually changed and whether Ring 4 owners should upgrade.',
   intro:
     'The Oura Ring 5 (June 2026) is slimmer and has redesigned sensors — but the headline new software features are also coming to the Ring 4. So the real question is not "which is better on paper" (the Ring 5 is), it is "should you pay for it" — and the answer is different for a new buyer than for a Ring 4 owner.',
+  jobDependentVerdict: true,
   verdict:
     'If you are buying fresh, the Oura Ring 5 is the one to get — slimmer, better sensors, longer battery. If you already own a Ring 4, hold: the new app features roll out to your ring too, so you would be paying for sensors and fit, not new capability. The mandatory subscription applies to both.',
   bestForA:
@@ -16,7 +17,7 @@ const ouraRing5VsRing4: HeadToHeadInput = {
   bestForB:
     'Stay on (or buy) the Oura Ring 4 if you already own one, or if you can find it discounted now that the Ring 5 has shipped — it gets the same new software and costs $50 less.',
   axes: [
-    { name: 'Sensors & accuracy', winner: 'a', note: 'Ring 5 has redesigned sensors — stronger LEDs, low-profile domes, 12 signal pathways — for more consistent contact across skin tones and finger types. The Ring 4 was already the accuracy leader; the Ring 5 nudges ahead on hardware.' },
+    { name: 'Sensors & accuracy', winner: 'b', note: 'The Ring 4 is the only one of the two with an independent overnight check of heart rate and HRV against ECG (one study, 13 people). The Ring 5 has redesigned sensors — stronger LEDs, low-profile domes, 12 signal pathways — for more consistent contact across skin tones and finger types, but it has not been validated yet (as of October 2026).' },
     { name: 'Size & comfort', winner: 'a', note: 'The Ring 5 is ~40% slimmer and lighter (6.09mm × 2.28mm) than the Ring 4 — the clearest, most felt improvement. Note the narrower size range (6–13 vs 4–15).' },
     { name: 'Battery', winner: 'a', note: 'Ring 5: 6–9 days. Ring 4: 5–8 days. A modest but real gain.' },
     { name: 'New software features', winner: 'tie', note: 'A tie by design: live workout tracking, women’s-health additions, the lost-ring finder and lab/bloodwork import are rolling out to the Ring 4 (and Gen3) too, not exclusive to the Ring 5. This is the crux of the upgrade question.' },

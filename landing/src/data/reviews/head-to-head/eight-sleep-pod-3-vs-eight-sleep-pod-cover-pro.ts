@@ -9,6 +9,7 @@ const pod3VsCoverPro: HeadToHeadInput = {
     'Eight Sleep Pod 3 vs Pod Cover Pro — previous-gen full system at clearance pricing vs current-gen cover for your existing mattress. ONDA breaks down which Eight Sleep entry tier is the rational buy.',
   intro:
     'Both are the value entry points into the Eight Sleep ecosystem. Pod 3 is the previous-gen full mattress system, still in inventory at meaningfully reduced pricing; Pod Cover Pro is the current-gen cover-only product that installs on your existing mattress.',
+  jobDependentVerdict: true,
   verdict:
     'Mattress status decides again. Pod 3 if you\'re replacing your mattress and the inventory discount is deep enough. Pod Cover Pro if you have a mattress you like and want the current-gen tracking/climate on it.',
   bestForA:

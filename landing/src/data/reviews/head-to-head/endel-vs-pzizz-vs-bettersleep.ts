@@ -10,6 +10,7 @@ const endelVsPzizzVsBettersleep: HeadToHeadInput = {
     'Endel vs Pzizz vs BetterSleep — three-way ONDA comparison of three sleep-audio apps. AI generative soundscapes, dreamscape voice-and-music and mixable content library.',
   intro:
     'Endel, Pzizz and BetterSleep are the three sleep-audio apps users compare when content depth and ambient quality are the deciding factors. Three different audio approaches: Endel uses AI-generated soundscapes that adapt to context; Pzizz uses generative dreamscape audio purpose-built for sleep onset; BetterSleep ships a deep mixable library of sounds, stories and meditations.',
+  jobDependentVerdict: true,
   verdict:
     'Different audio philosophies. Endel for ambient generative soundscapes. Pzizz for dreamscape voice-and-music sleep onset. BetterSleep for a deep mixable content library.',
   bestForA:

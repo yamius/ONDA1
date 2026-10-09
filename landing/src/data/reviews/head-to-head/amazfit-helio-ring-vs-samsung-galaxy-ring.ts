@@ -9,6 +9,7 @@ const helioVsSamsung: HeadToHeadInput = {
     'Amazfit Helio Ring vs Samsung Galaxy Ring — two subscription-free rings at very different prices. Cheapest and cross-platform vs pricier with better battery and Samsung integration.',
   intro:
     'Both skip the subscription, but they sit at opposite ends of the budget. The Amazfit Helio Ring is $199 and works across iOS and Android; the Samsung Galaxy Ring is roughly double at ~$399, with a better battery, build and tight integration — at its best on a Samsung Galaxy phone. This is cheapest-and-cross-platform vs pricier-and-more-polished.',
+  jobDependentVerdict: true,
   verdict:
     'Both are subscription-free. The Amazfit Helio Ring wins on price (~half) and true cross-platform support; the Samsung Galaxy Ring wins on battery, build, fit range and ecosystem integration for Samsung users. Pick by budget and whether you live in the Samsung ecosystem.',
   bestForA:

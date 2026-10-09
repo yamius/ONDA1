@@ -9,6 +9,7 @@ const bobVsRenpho: HeadToHeadInput = {
     'Bob and Brad Q2 Mini vs Renpho R3 — the $99 budget massage-gun duel. PT-brand credibility vs Amazon-bestseller spec.',
   intro:
     'Bob and Brad Q2 Mini and Renpho R3 are the two $99 budget massage guns users compare. Both have brushless motors, both have ~6 hour batteries. The defining differences: Bob and Brad has PT-brand credibility from "Famous Physical Therapists" YouTube channel + mini form factor; Renpho has higher stall force + Amazon distribution scale.',
+  jobDependentVerdict: true,
   verdict:
     'PT credibility vs raw spec at the same $99. Bob and Brad for brand framing + mini portability. Renpho R3 for higher stall force in full-size.',
   bestForA:

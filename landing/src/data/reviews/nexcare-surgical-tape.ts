@@ -15,7 +15,7 @@ const nexcareSurgical: ToolReviewInput = {
   scores: [
     { criterionId: 'adhesion-comfort', score: 7.5, note: 'Clinical-grade 3M medical adhesive — gentle on skin, painless removal. Less beard-friendly than Hostage Tape. Sensitive-skin variant is the right pick.' },
     { criterionId: 'breathing-mechanism', score: 7.0, note: 'User cuts strip to size — can do full seal, partial seal or cross design. Maximum flexibility.' },
-    { criterionId: 'evidence-grounding', score: 7.0, note: 'FDA-cleared medical paper tape. Clinical-context literature on adhesive safety. Decades of hospital use.' },
+    { criterionId: 'evidence-grounding', score: 6.5, note: 'FDA-cleared medical paper tape. Clinical-context literature on adhesive safety. Decades of hospital use.' },
     { criterionId: 'form-factor', score: 5.5, note: 'Roll form requires cutting per use. No pre-cut strips. Higher friction per night than dedicated mouth-tape brands.' },
     { criterionId: 'material-safety', score: 8.5, note: 'Hypoallergenic medical-grade adhesive. Latex-free. Sensitive Skin variant minimises reactions; multi-decade hospital track record.' },
     { criterionId: 'value', score: 9.5, note: '~$5 for a roll lasting 3+ months = ~$0.05/night. Unbeatable per-night cost in mouth-tape category.' },
