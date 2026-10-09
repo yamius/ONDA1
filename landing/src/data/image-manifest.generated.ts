@@ -2680,6 +2680,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/mechanisms-menstrual-cycle-and-hrv.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-menstrual-cycle-and-hrv.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-menstrual-cycle-and-hrv.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/mechanisms-sleep-and-hrv.avif": {
     "width": 1584,
     "height": 672

@@ -924,6 +924,27 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1007/s00737-026-01740-z": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Wearable-measured heart rate variability and premenstrual disorder symptoms across menstrual cycle",
+   "firstAuthor": "Pan",
+   "authors": [
+    "Pan",
+    "Zhou",
+    "Chen",
+    "Zhang",
+    "Shi",
+    "Lin",
+    "Huang",
+    "Li",
+    "Lu"
+   ],
+   "year": 2026,
+   "journal": "Archives of Women's Mental Health",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
+  },
   "doi:10.1007/s10103-013-1465-4": {
    "kind": "doi",
    "valid": true,
@@ -1293,6 +1314,23 @@
    "journal": "Sports Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1007/s40279-025-02388-y": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Wearable-Derived Heart Rate Variability Across the Menstrual Cycle, Hormonal Contraceptive Use, and Reproductive Life Stages in Females: A Living Systematic Review",
+   "firstAuthor": "de Jager",
+   "authors": [
+    "de Jager",
+    "Caulfield",
+    "Angelidi",
+    "MacNamee,",
+    "Holden"
+   ],
+   "year": 2026,
+   "journal": "Sports Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
   },
   "doi:10.1007/s41465-021-00218-3": {
    "kind": "doi",
@@ -4727,6 +4765,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-08"
   },
+  "doi:10.1038/s41746-026-02799-9": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The menstrual cycle through the lens of a wearable device: insights into physiology, sleep, and cycle variability",
+   "firstAuthor": "Gonzalez",
+   "authors": [
+    "Gonzalez",
+    "O’Day",
+    "Johnson",
+    "Kim",
+    "Jasinski",
+    "Holmes",
+    "Delp",
+    "Hicks"
+   ],
+   "year": 2026,
+   "journal": "npj Digital Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
+  },
   "doi:10.1038/srep31724": {
    "kind": "doi",
    "valid": true,
@@ -7224,6 +7282,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1152/ajpregu.00028.2026": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cardiac autonomic regulation across the menstrual cycle is highly individual: evidence from phase-aligned cyclic generalized additive mixed models",
+   "firstAuthor": "Schaffarczyk",
+   "authors": [
+    "Schaffarczyk",
+    "Rückemann",
+    "Sperlich",
+    "Gronwald"
+   ],
+   "year": 2026,
+   "journal": "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
+  },
   "doi:10.1152/ajpregu.00031.2007": {
    "kind": "doi",
    "valid": true,
@@ -8970,6 +9044,24 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.14814/phy2.15298": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart rate variability as a function of menopausal status, menstrual cycle phase, and estradiol level",
+   "firstAuthor": "Ramesh",
+   "authors": [
+    "Ramesh",
+    "James",
+    "Holroyd‐Leduc",
+    "Wilton",
+    "Sola",
+    "Ahmed"
+   ],
+   "year": 2022,
+   "journal": "Physiological Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
+  },
   "doi:10.14814/phy2.15389": {
    "kind": "doi",
    "valid": true,
@@ -10346,6 +10438,23 @@
    "journal": "Bioengineering",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.3390/biology12060785": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Periovulatory Subphase of the Menstrual Cycle Is Marked by a Significant Decrease in Heart Rate Variability",
+   "firstAuthor": "Hamidovic",
+   "authors": [
+    "Hamidovic",
+    "Davis",
+    "Wardle",
+    "Naveed",
+    "Soumare"
+   ],
+   "year": 2023,
+   "journal": "Biology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
   },
   "doi:10.3390/biomedicines13030700": {
    "kind": "doi",
@@ -18390,6 +18499,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:35608101": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart rate variability as a function of menopausal status, menstrual cycle phase, and estradiol level.",
+   "firstAuthor": "Ramesh",
+   "authors": [
+    "Ramesh",
+    "James",
+    "Holroyd-Leduc",
+    "Wilton",
+    "Sola",
+    "Ahmed"
+   ],
+   "year": 2022,
+   "journal": "Physiol Rep",
+   "doi": "10.14814/phy2.15298",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
+  },
   "pmid:35615275": {
    "kind": "pmid",
    "valid": true,
@@ -18865,6 +18993,24 @@
    "doi": "10.1016/j.biopsycho.2023.108589",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:37372070": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Periovulatory Subphase of the Menstrual Cycle Is Marked by a Significant Decrease in Heart Rate Variability.",
+   "firstAuthor": "Hamidovic",
+   "authors": [
+    "Hamidovic",
+    "Davis",
+    "Wardle",
+    "Naveed",
+    "Soumare"
+   ],
+   "year": 2023,
+   "journal": "Biology (Basel)",
+   "doi": "10.3390/biology12060785",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
   },
   "pmid:37398966": {
    "kind": "pmid",
@@ -20045,6 +20191,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:41545627": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Wearable-Derived Heart Rate Variability Across the Menstrual Cycle, Hormonal Contraceptive Use, and Reproductive Life Stages in Females: A Living Systematic Review.",
+   "firstAuthor": "de Jager",
+   "authors": [
+    "de Jager",
+    "Caulfield",
+    "Angelidi",
+    "MacNamee",
+    "Holden"
+   ],
+   "year": 2026,
+   "journal": "Sports Med",
+   "doi": "10.1007/s40279-025-02388-y",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
+  },
   "pmid:41561154": {
    "kind": "pmid",
    "valid": true,
@@ -20334,6 +20498,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:42012497": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cardiac autonomic regulation across the menstrual cycle is highly individual: evidence from phase-aligned cyclic generalized additive mixed models.",
+   "firstAuthor": "Schaffarczyk",
+   "authors": [
+    "Schaffarczyk",
+    "Rückemann",
+    "Sperlich",
+    "Gronwald"
+   ],
+   "year": 2026,
+   "journal": "Am J Physiol Regul Integr Comp Physiol",
+   "doi": "10.1152/ajpregu.00028.2026",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
+  },
   "pmid:42043659": {
    "kind": "pmid",
    "valid": true,
@@ -20392,6 +20573,27 @@
    "doi": "10.1038/s41598-026-53333-6",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:42185632": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The menstrual cycle through the lens of a wearable device: insights into physiology, sleep, and cycle variability.",
+   "firstAuthor": "Gonzalez",
+   "authors": [
+    "Gonzalez",
+    "O'Day",
+    "Johnson",
+    "Kim",
+    "Jasinski",
+    "Holmes",
+    "Delp",
+    "Hicks"
+   ],
+   "year": 2026,
+   "journal": "NPJ Digit Med",
+   "doi": "10.1038/s41746-026-02799-9",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
   },
   "pmid:42238641": {
    "kind": "pmid",
@@ -20463,6 +20665,28 @@
    "doi": "10.1111/aphw.70180",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:42412242": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Wearable-measured heart rate variability and premenstrual disorder symptoms across menstrual cycle.",
+   "firstAuthor": "Pan",
+   "authors": [
+    "Pan",
+    "Zhou",
+    "Chen",
+    "Zhang",
+    "Shi",
+    "Lin",
+    "Huang",
+    "Li",
+    "Lu"
+   ],
+   "year": 2026,
+   "journal": "Arch Womens Ment Health",
+   "doi": "10.1007/s00737-026-01740-z",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
   },
   "pmid:42467418": {
    "kind": "pmid",
