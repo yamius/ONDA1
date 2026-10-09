@@ -38,3 +38,19 @@ Binding terminology for `content/science-i18n/<lang>/` and for any translated ar
 | it | altered states / "high" from breathwork | **«stati alterati di coscienza»**; never slang «sballo» (owner decision 2026-10-07) |
 | all | overreaching | General term + English in brackets at first mention: ru «перегрузка (overreaching)», uk «перевантаження (overreaching)», de «Überlastung (Overreaching)», es/pt «sobrecarga (overreaching)», fr «surmenage (overreaching)», it «sovraccarico (overreaching)», nl «overbelasting (overreaching)», pl «przeciążenie (overreaching)», ja «過負荷（オーバーリーチング）», zh «过度负荷（overreaching）»; «функциональная перегрузка» (and equivalents) only when the source says "functional overreaching" (owner decision 2026-10-08) |
 | all | binge drinking | ru **«разовое употребление большой дозы алкоголя»**, uk **«разове вживання великої дози алкоголю»**, es **«consumo intensivo de alcohol»**; de «Rauschtrinken», fr «alcoolisation massive», it «binge drinking», pl «upijanie się», pt «consumo excessivo episódico», nl «bingedrinken», ja «多量飲酒», zh «狂饮»; never ru/uk «запой/запій» (owner decision 2026-10-08) |
+
+## Menstrual cycle terms (owner decision 2026-10-09, mechanisms/menstrual-cycle-and-hrv)
+
+| Term | ru | uk | de | pl | es | pt | fr | it | nl | ja | zh |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| follicular phase | фолликулярная фаза | фолікулярна фаза | Follikelphase | faza folikularna | fase folicular | fase folicular | phase folliculaire | fase follicolare | folliculaire fase | 卵胞期 | 卵泡期 |
+| luteal phase | лютеиновая фаза | лютеїнова фаза | Lutealphase | faza lutealna | fase lútea | fase lútea | phase lutéale | fase luteale | luteale fase | 黄体期 | 黄体期 |
+| ovulation | овуляция | овуляція | Eisprung | owulacja | ovulación | ovulação | ovulation | ovulazione | ovulatie | 排卵 | 排卵 |
+| LH surge | пик лютеинизирующего гормона (ЛГ), then «пик ЛГ» | пік лютеїнізуючого гормону (ЛГ), then «пік ЛГ» | Anstieg des luteinisierenden Hormons (LH), then «LH-Anstieg» | skok hormonu luteinizującego (LH), then «skok LH» | pico de LH | pico de LH | pic de LH | picco di LH | LH-piek | LHサージ | LH 峰 |
+| hormonal contraception | гормональная контрацепция | гормональна контрацепція | hormonelle Verhütung | antykoncepcja hormonalna | anticoncepción hormonal | contracepção hormonal | contraception hormonale | contraccezione ormonale | hormonale anticonceptie | ホルモン避妊法 | 激素避孕 |
+| menopause / postmenopausal | менопауза / после менопаузы | менопауза / після менопаузи | Menopause / nach der Menopause | menopauza / po menopauzie | menopausia / después de la menopausia | menopausa / depois da menopausa | ménopause / ménopausées | menopausa / dopo la menopausa | menopauze / na de menopauze | 閉経 / 閉経後 | 绝经 / 绝经后 |
+| premenstrual disorders | предменструальные расстройства | передменструальні розлади | prämenstruelle Störungen | zaburzenia przedmiesiączkowe | trastornos premenstruales | transtornos pré-menstruais | troubles prémenstruels | disturbi premestruali | premenstruele stoornissen | 月経前障害 | 经前障碍 |
+| naturally cycling | с естественным циклом | з природним циклом | mit natürlichem Zyklus | z naturalnym cyklem | con ciclos naturales | com ciclo natural | à cycle naturel | con ciclo naturale | natuurlijk menstruerend | 自然な月経周期のある | 自然月经周期的 |
+| living systematic review | живой систематический обзор | живий систематичний огляд | lebendes systematisches Review | żywy przegląd systematyczny | revisión sistemática viva | revisão sistemática viva | revue systématique évolutive | revisione sistematica living | levende systematische review | リビング・システマティックレビュー | 动态系统综述 |
+
+de: HRV is feminine — «die HRV» (owner decision 2026-10-09).
