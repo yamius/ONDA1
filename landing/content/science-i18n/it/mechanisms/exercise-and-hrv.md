@@ -1,5 +1,5 @@
 ---
-sourceHash: ed51ac72268e
+sourceHash: 68b096acdcad
 title: "Esercizio e HRV: cosa fa l'allenamento e cosa mostra la guida tramite HRV"
 metaTitle: "Esercizio e HRV: prove sull'allenamento guidato dall'HRV"
 metaDescription: "Perché l'HRV cala dopo un allenamento intenso e poi recupera, quanto tempo serve e cosa mostrano gli studi sull'allenamento guidato dall'HRV rispetto a un piano fisso."
@@ -22,6 +22,8 @@ keyPoints:
   - "Non è stato dimostrato se la guida tramite variabilità della frequenza cardiaca aiuti chi si allena per piacere nel lungo periodo, né quale regola decisionale funzioni meglio."
 imageAlt: "La sagoma di un runner sopra un tracciato cardiaco: battiti regolari prima dell'esercizio, una lunga discesa lenta durante la corsa e di nuovo battiti regolari dopo."
 evidenceMap:
+  - claim: "In uno studio crossover dopo un allenamento a intervalli, respirare a sei respiri al minuto è stato seguito da una frequenza cardiaca più bassa rispetto alla respirazione quadrata."
+    limitation: "Un solo studio in studenti attivi su spin bike; il tempo di ritorno alla frequenza cardiaca a riposo non è risultato significativamente diverso."
   - claim: "Il recupero autonomico cardiaco completo dopo una singola seduta aerobica richiede più tempo man mano che l'intensità aumenta."
     limitation: "Dati aggregati da studi sull'esercizio aerobico in atleti e persone sane; la cinetica individuale varia e l'allenamento di forza è poco coperto."
   - claim: "La riattivazione parasimpatica cardiaca dopo una seduta di allenamento è molto individuale."
@@ -76,7 +78,7 @@ Il ritorno richiede tempo, e quanto dipende da quanto è stata dura la seduta. U
 
 I meccanismi non sono del tutto compresi [S1]. Il modello di lavoro della revisione ha due fasi. Nel breve termine dopo una seduta, i segnali provenienti dai muscoli in attività — per esempio l'acidità nel muscolo e nel sangue — sono probabilmente il fattore principale che trattiene il freno vagale (il metaboriflesso). Nel medio termine, nelle ore e nei giorni successivi, le variazioni del volume del sangue dopo l'esercizio agiscono verosimilmente attraverso il riflesso barocettivo, il circuito sensibile alla pressione che regola la frequenza cardiaca [S1]. Gli stessi autori formulano con cautela entrambe le parti di questo modello.
 
-Altri due punti influenzano il modo di interpretare una misura dopo l'allenamento. Primo, la velocità della riattivazione è molto individuale [S1]. Secondo, il recupero autonomico del cuore non sembra coincidere con quello di tutti i sistemi: le riserve di energia e il sistema neuromuscolare possono seguire tempi propri [S1]. Un ritmo cardiaco tornato normale non significa di per sé che i muscoli abbiano recuperato, e vale anche il contrario.
+Altri due punti influenzano il modo di interpretare una misura dopo l'allenamento. Primo, la velocità della riattivazione è molto individuale [S1]. Secondo, il recupero autonomico del cuore non sembra coincidere con quello di tutti i sistemi: le riserve di energia e il sistema neuromuscolare possono seguire tempi propri [S1]. Un ritmo cardiaco tornato normale non significa di per sé che i muscoli abbiano recuperato, e vale anche il contrario. Anche il modo in cui respiri subito dopo una sessione può contare: in uno studio dopo un allenamento a intervalli, respirare a sei respiri al minuto ha abbassato la frequenza cardiaca più della respirazione quadrata [S9]; vedi [tecniche di respirazione a confronto](/science/mechanisms/breathing-techniques-compared).
 
 ## Come si misura l'HRV intorno all'allenamento?
 

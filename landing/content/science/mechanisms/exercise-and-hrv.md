@@ -98,7 +98,22 @@ sources:
     pmid: 23852425
     type: review
     note: "Narrative review with case data from elite athletes; proposed methods (weekly averaging) are recommendations, not trial-tested; no conflict-of-interest statement in the PubMed/Europe PMC record"
+  - id: S9
+    cite: "Kasap & Aydin (2025)"
+    title: "Box breathing or six breaths per minute: Which strategy improves athletes post-HIIT cardiovascular recovery?"
+    journal: "PLOS ONE"
+    year: 2025
+    doi: "10.1371/journal.pone.0336615"
+    pmid: 41248139
+    type: randomized-trial
+    note: "Crossover trial; authors declare no competing interests and no specific funding"
 evidenceMap:
+  - claim: "In one crossover study after interval training, breathing at six breaths per minute was followed by a lower heart rate than box breathing."
+    sources: [S9]
+    class: emerging
+    claimType: physiology
+    quote: "While 6 bpm appears optimal for post-HIIT recovery, box breathing may impose physiological and perceptual stress."
+    limitation: "Single study in active students on a spin bike; time to return to resting heart rate did not differ significantly."
   - claim: "Full cardiac autonomic recovery after one aerobic session takes longer as intensity rises (fact training.recovery.time)."
     sources: [S1]
     class: context-dependent
@@ -237,7 +252,7 @@ The return takes time, and the time depends on how hard the session was. A revie
 
 The mechanisms are not completely understood [S1]. The review's working model has two phases. In the short term after a session, signals from working muscles — for example, acidity in muscle and blood — are likely the main factor holding the vagal brake back (the metaboreflex). In the intermediate term, over the following hours and days, changes in blood volume after exercise probably act through the baroreflex, the pressure-sensing loop that adjusts heart rate [S1]. Both parts of this model are hedged by the authors themselves.
 
-Two further points shape how a reading after training should be understood. First, the speed of reactivation is highly individual [S1]. Second, the heart's autonomic recovery does not appear to coincide with the recovery of every system: energy stores and the neuromuscular system may follow their own timelines [S1]. A heart rhythm that is back to normal does not by itself mean the muscles have recovered, and the reverse also holds.
+Two further points shape how a reading after training should be understood. First, the speed of reactivation is highly individual [S1]. Second, the heart's autonomic recovery does not appear to coincide with the recovery of every system: energy stores and the neuromuscular system may follow their own timelines [S1]. A heart rhythm that is back to normal does not by itself mean the muscles have recovered, and the reverse also holds. How you breathe straight after a session may also matter: in one study after interval training, breathing at six breaths per minute lowered heart rate more than box breathing [S9] — see [breathing techniques compared](/science/mechanisms/breathing-techniques-compared).
 
 ## How is HRV around training measured?
 

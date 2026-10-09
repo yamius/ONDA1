@@ -3,14 +3,14 @@ import type { Article } from './types'
 /**
  * 4-7-8 breathing — inhale 4 / hold 7 / exhale 8, popular for sleep. AEO reference article.
  * Honest framing: it lowers arousal (makes sleep more likely) but can't force sleep; ratio > exact
- * count; long exhale + mild CO2 rise → vagal downshift. FAQ in ARTICLE_FAQ. Technique, not treatment.
+ * count; long exhale slows breathing; no shown HRV effect for 4-7-8 (see /science/mechanisms/breathing-techniques-compared). FAQ in ARTICLE_FAQ. Technique, not treatment.
  */
 const article: Article = {
   slug: '4-7-8-breathing',
   title: '4-7-8 Breathing: How It Works, and When It Doesn’t',
   seoTitle: '4-7-8 Breathing for Sleep: How It Works | ONDA Life',
   description:
-    'The 4-7-8 breathing technique — inhale 4, hold 7, exhale 8 — is popular for falling asleep. The science of why the long exhale calms you, how to do it, and how it compares to box breathing.',
+    'The 4-7-8 breathing technique — inhale 4, hold 7, exhale 8 — is popular for falling asleep. What the evidence does and doesn’t show, how to do it, and how it differs from box breathing.',
   category: 'ONDA Protocol',
   relatedSlugs: ['box-breathing-how-it-works', 'physiological-sigh', 'coherent-breathing-guide', 'wind-down-before-sleep-breathing', 'find-your-resonance-breathing-rate'],
   introStyle: 'indigo',
@@ -20,12 +20,12 @@ const article: Article = {
   imageTitle: '4-7-8 Breathing',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'Counting seconds and hoping? Watch your pulse actually slow as your exhales lengthen.',
+    text: 'Counting seconds and hoping? See how your pulse responds as your exhales lengthen.',
     link: '/tools',
     linkText: 'See it live →',
   },
   content: `
-The 4-7-8 breathing technique is a paced pattern: inhale quietly through the nose for 4 seconds, hold your breath for 7, then exhale audibly through the mouth for 8. The long exhale and the breath hold slow your heart rate and shift your nervous system toward rest, which is why it's most popular for falling asleep. Developed by Dr. Andrew Weil from yogic pranayama, it works for one concrete reason: it slows your breathing down, and that downshifts your body. {{fact:claim.slowExhale}}. It's not instant and it's not magic — most people feel calmer after three or four rounds, not one.
+The 4-7-8 breathing technique is a paced pattern: inhale quietly through the nose for 4 seconds, hold your breath for 7, then exhale audibly through the mouth for 8. The long exhale and the hold slow your breathing right down, and many people find that calming, which is why it's most popular for falling asleep. Popularised by Dr. Andrew Weil, who adapted it from yogic pranayama. What it reliably does is slow your breathing. {{fact:claim.slowExhale}}. It's not instant and it's not magic — give it three or four rounds rather than judging it after one.
 
 ## How to do 4-7-8 breathing
 
@@ -40,25 +40,25 @@ That's one round. Repeat for four rounds to start. Weil's original guidance is t
 
 ## Why the long exhale calms you
 
-Your breathing is directly wired to your [autonomic nervous system](/science/concepts/autonomic-nervous-system). When you inhale, your heart rate speeds up slightly; when you exhale, it slows. Make the exhale longer than the inhale and you favour the parasympathetic "rest and digest" branch during the breath, which can lower heart rate, and signalling safety to the brain.
+Your breathing is directly wired to your [autonomic nervous system](/science/concepts/autonomic-nervous-system). Heart rate naturally rises a little on each inhale and falls on each exhale.
 
-The 7-second hold adds a second effect: a brief, gentle rise in carbon dioxide, which at low levels has a calming, vasodilating influence and helps interrupt the fast, shallow breathing of a stressed state. Together, the hold and the extended exhale are what make 4-7-8 a wind-down tool rather than an energizing one. This is measurable — as you settle into the pattern, [heart rate variability](/science/concepts/heart-rate-variability) (HRV) rises, reflecting the shift toward calm.
+The hold also adds a pause that breaks up fast, shallow breathing. Together, the hold and the extended exhale are what make 4-7-8 a wind-down tool rather than an energizing one. Whether it changes [heart rate variability](/science/concepts/heart-rate-variability) (HRV) is unclear: a small crossover trial found no significant change in standard HRV measures, although women in particular reported less stress.
 
 ## Does 4-7-8 actually help you sleep?
 
-Partly, and honestly. 4-7-8 doesn't sedate you the way a sleeping pill does — it can't force sleep. What it does is lower the physiological arousal that keeps you awake: racing heart, shallow breath, an active stress response. By downshifting your nervous system, it makes the *conditions* for sleep more likely. For many people that's enough to fall asleep faster; for others with real insomnia, it's a helpful piece but not a cure. Give it three to four rounds and a few minutes — if you're bolt awake and forcing the counts, that tension works against you. The goal is to relax into it, not to perform it. For a fuller routine, see [winding down before sleep](/articles/wind-down-before-sleep-breathing).
+Partly, and honestly. 4-7-8 doesn't sedate you the way a sleeping pill does — it can't force sleep. There are no studies of 4-7-8 and falling asleep in healthy people. The only trial touching sleep was in people with tinnitus, where sleep was a secondary outcome. Treat it as a wind-down ritual that may help you relax, not a proven sleep aid. For people with real insomnia, it's a helpful piece but not a cure. Give it three to four rounds and a few minutes — if you're bolt awake and forcing the counts, that tension works against you. The goal is to relax into it, not to perform it. For a fuller routine, see [winding down before sleep](/articles/wind-down-before-sleep-breathing).
 
 ## 4-7-8 vs box breathing vs physiological sigh
 
-These three techniques are often confused but do different jobs. Match the tool to the moment:
+These three techniques are often confused but do different jobs. What the research does and doesn't show is in [breathing techniques compared](/science/mechanisms/breathing-techniques-compared). Match the tool to the moment:
 
-| Technique | Pattern | Best for |
+| Technique | Pattern | Commonly used for |
 |---|---|---|
 | **4-7-8** | 4 in · 7 hold · 8 out | Winding down for sleep |
 | **Box breathing** | 4 in · 4 hold · 4 out · 4 hold | Staying steady and focused under pressure |
 | **Physiological sigh** | 2 inhales · 1 long exhale | Calming a sudden stress spike in seconds |
 
-For sleep, 4-7-8 is the classic choice. For a stressful meeting, [box breathing](/articles/box-breathing-how-it-works) keeps you level. For a sudden jolt of anxiety, nothing beats the [physiological sigh](/articles/physiological-sigh) for speed.
+For sleep, 4-7-8 is the traditional choice, though it has never been compared directly with box breathing. For a stressful meeting, [box breathing](/articles/box-breathing-how-it-works) keeps you level. For a sudden jolt of anxiety, the [physiological sigh](/articles/physiological-sigh) is the quickest to do.
 
 ## Common mistakes
 
@@ -69,7 +69,7 @@ For sleep, 4-7-8 is the classic choice. For a stressful meeting, [box breathing]
 
 ## See your body respond
 
-The reason paced breathing feels like a leap of faith is that you can't normally see it working. ONDA shows you: rest a fingertip on your phone camera or use your Apple Watch, and watch your pulse slow as your exhales lengthen. Seeing your own heart rate drop turns "I'm counting seconds and hoping" into visible, real-time feedback — which also makes it easier to find the exhale length that calms *you* fastest.
+The reason paced breathing feels like a leap of faith is that you can't normally see it working. ONDA shows you: rest a fingertip on your phone camera or use your Apple Watch, and watch how your pulse responds as your exhales lengthen. Seeing your own pulse respond turns "I'm counting seconds and hoping" into visible, real-time feedback — which also makes it easier to find the exhale length that calms *you* fastest.
 `,
   howToSteps: [
     {

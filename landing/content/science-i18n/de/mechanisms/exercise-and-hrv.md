@@ -1,5 +1,5 @@
 ---
-sourceHash: ed51ac72268e
+sourceHash: 68b096acdcad
 title: "Training und HRV: Was Belastung bewirkt und was HRV-gesteuertes Training zeigt"
 metaTitle: "Training und HRV: Evidenz zum HRV-gesteuerten Training"
 metaDescription: "Warum die HRV nach hartem Training sinkt und sich wieder erholt, wie lange das dauert und was Studien zu HRV-gesteuertem Training im Vergleich mit einem festen Trainingsplan zeigen."
@@ -22,6 +22,8 @@ keyPoints:
   - "Ob eine Steuerung über die Herzfrequenzvariabilität Freizeitsportlerinnen und Freizeitsportlern langfristig hilft und welche Entscheidungsregel am besten funktioniert, ist nicht gezeigt."
 imageAlt: "Die Silhouette einer Läuferin oder eines Läufers über einer Herzkurve: regelmäßige Schläge vor dem Training, eine lange, langsame Senke beim Laufen und danach wieder gleichmäßige Schläge."
 evidenceMap:
+  - claim: "In einer Crossover-Studie nach Intervalltraining folgte auf Atmen mit sechs Atemzügen pro Minute eine niedrigere Herzfrequenz als auf Box Breathing."
+    limitation: "Eine einzelne Studie mit aktiven Studierenden auf dem Spinning-Rad; die Zeit bis zur Rückkehr zur Ruheherzfrequenz unterschied sich nicht signifikant."
   - claim: "Die vollständige kardiale autonome Erholung nach einer einzelnen aeroben Einheit dauert umso länger, je höher die Intensität ist."
     limitation: "Zusammengeführt aus Studien zu aerober Belastung bei Sportlerinnen, Sportlern und gesunden Menschen; der individuelle Verlauf variiert, und Krafttraining ist kaum abgedeckt."
   - claim: "Die kardiale parasympathische Reaktivierung nach einer Trainingseinheit ist stark individuell."
@@ -76,7 +78,7 @@ Diese Rückkehr braucht Zeit, und wie viel, hängt davon ab, wie hart die Einhei
 
 Die Mechanismen sind nicht vollständig verstanden [S1]. Das Arbeitsmodell der Übersichtsarbeit hat zwei Phasen. Kurz nach einer Einheit sind Signale aus der arbeitenden Muskulatur – zum Beispiel Säure in Muskel und Blut – wahrscheinlich der wichtigste Faktor, der die vagale Bremse zurückhält (der Metaboreflex). Mittelfristig, über die folgenden Stunden und Tage, wirken Veränderungen des Blutvolumens nach dem Training vermutlich über den Baroreflex, den druckempfindlichen Regelkreis, der die Herzfrequenz anpasst [S1]. Beide Teile dieses Modells formulieren die Autoren selbst vorsichtig.
 
-Zwei weitere Punkte prägen, wie ein Wert nach dem Training zu verstehen ist. Erstens ist das Tempo der Reaktivierung stark individuell [S1]. Zweitens scheint die autonome Erholung des Herzens nicht mit der Erholung jedes Systems zusammenzufallen: Energiespeicher und das neuromuskuläre System folgen möglicherweise ihrem eigenen Zeitplan [S1]. Ein Herzrhythmus, der wieder normal ist, bedeutet für sich genommen nicht, dass sich die Muskeln erholt haben, und umgekehrt gilt das ebenso.
+Zwei weitere Punkte prägen, wie ein Wert nach dem Training zu verstehen ist. Erstens ist das Tempo der Reaktivierung stark individuell [S1]. Zweitens scheint die autonome Erholung des Herzens nicht mit der Erholung jedes Systems zusammenzufallen: Energiespeicher und das neuromuskuläre System folgen möglicherweise ihrem eigenen Zeitplan [S1]. Ein Herzrhythmus, der wieder normal ist, bedeutet für sich genommen nicht, dass sich die Muskeln erholt haben, und umgekehrt gilt das ebenso. Auch wie du direkt nach einer Einheit atmest, kann eine Rolle spielen: In einer Studie nach Intervalltraining senkte Atmen mit sechs Atemzügen pro Minute die Herzfrequenz stärker als Box Breathing [S9] – siehe [Atemtechniken im Vergleich](/science/mechanisms/breathing-techniques-compared).
 
 ## Wie wird die HRV rund ums Training gemessen?
 

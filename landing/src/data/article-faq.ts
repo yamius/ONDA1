@@ -40,22 +40,22 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "How long until 4-7-8 breathing works?",
       answer:
-        "Usually three to four rounds, over a couple of minutes. It lowers physiological arousal gradually rather than instantly — it's a wind-down, not an off-switch.",
+        "Weil suggests four rounds to start; there is no research on how quickly it takes effect. Think of it as a wind-down, not an off-switch.",
     },
     {
       question: "Is 4-7-8 breathing good for anxiety?",
       answer:
-        "Yes, for winding down. {{fact:claim.slowExhale}}. Slowing the breath also lowers heart rate. For a sudden anxiety spike, though, a physiological sigh works faster; 4-7-8 is better for settling over a few minutes.",
+        "It may help with situational anxiety: in one trial in older adults before an endoscopy, anxiety was lower after 4-7-8 breathing. It is not a treatment for anxiety disorders, and it has not been compared directly with the physiological sigh.",
     },
     {
       question: "Can I do 4-7-8 breathing every night?",
       answer:
-        "Yes. It's a safe, natural technique you can use nightly as a wind-down routine. Start with four rounds and build up if you like.",
+        "Yes. Generally fine for healthy adults as a nightly routine; stop if you feel light-headed. It is not a substitute for treating insomnia. Start with four rounds and build up if you like.",
     },
     {
       question: "4-7-8 vs box breathing — which is better for sleep?",
       answer:
-        "4-7-8, because the longer exhale and the breath hold push harder toward the rest-and-digest state. Box breathing is better for staying calm and alert, not for falling asleep.",
+        "No study has compared them directly. 4-7-8 is the more traditional bedtime pattern; choose the one that feels relaxing rather than effortful.",
     },
     {
       question: "Does the exact 4-7-8 count matter?",
