@@ -567,6 +567,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1002/ejsc.70172": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Does Cardiorespiratory Fitness Predict the Physiological and Psychological Stress Response to a Mathematics Exam in Secondary High School Students?",
+   "firstAuthor": "Gerber",
+   "authors": [
+    "Gerber",
+    "Haller",
+    "Looser",
+    "Ludyga"
+   ],
+   "year": 2026,
+   "journal": "European Journal of Sport Science",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
+  },
   "doi:10.1002/jbmr.3284": {
    "kind": "doi",
    "valid": true,
@@ -1962,6 +1978,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1016/j.cpnec.2026.100349": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Influence of resilience on autonomic nervous system habituation to repeated stress exposure: Insights from heart rate variability and heart rate response",
+   "firstAuthor": "Rösner",
+   "authors": [
+    "Rösner",
+    "Maryam",
+    "Tüscher",
+    "Petrowski"
+   ],
+   "year": 2026,
+   "journal": "Comprehensive Psychoneuroendocrinology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
+  },
   "doi:10.1016/j.cpnec.2026.100360": {
    "kind": "doi",
    "valid": true,
@@ -2980,6 +3012,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1016/j.neubiorev.2025.106268": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cardiac vagal recovery following acute psychological stress in human adults: A scoping review",
+   "firstAuthor": "Roddick",
+   "authors": [
+    "Roddick",
+    "Seo",
+    "Barkovich",
+    "Forrester",
+    "Chen"
+   ],
+   "year": 2025,
+   "journal": "Neuroscience &amp; Biobehavioral Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
+  },
   "doi:10.1016/j.neuroimage.2019.04.081": {
    "kind": "doi",
    "valid": true,
@@ -3211,6 +3260,35 @@
    "journal": "Psychoneuroendocrinology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.psyneuen.2025.107657": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Psychobiological reactivity to acute psychological stress as a predictor of cardiovascular disease and mortality: The Multi-Ethnic Study of Atherosclerosis",
+   "firstAuthor": "Chauntry",
+   "authors": [
+    "Chauntry",
+    "Moore",
+    "Seeman",
+    "Shea",
+    "Sloan",
+    "Whittaker",
+    "Puterman",
+    "Turner",
+    "Tyne",
+    "Hutson",
+    "Funnell",
+    "Zieff",
+    "Geleta",
+    "Stone",
+    "Hanson",
+    "Stoner",
+    "Bancks"
+   ],
+   "year": 2026,
+   "journal": "Psychoneuroendocrinology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
   },
   "doi:10.1016/j.resp.2008.05.002": {
    "kind": "doi",
@@ -3508,6 +3586,23 @@
    "journal": "Trends in Cognitive Sciences",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.tine.2025.100270": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Autonomic stress responses in oral examination simulations: Neuroscientific insights from comparing peer-led and lecturer-led approaches",
+   "firstAuthor": "Gellisch",
+   "authors": [
+    "Gellisch",
+    "Bablok",
+    "Morosan-Puopolo",
+    "Schäfer",
+    "Brand-Saberi"
+   ],
+   "year": 2025,
+   "journal": "Trends in Neuroscience and Education",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
   },
   "doi:10.1016/j.tins.2020.10.007": {
    "kind": "doi",
@@ -4464,6 +4559,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1038/s41467-025-57846-y": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Daytime eating during simulated night work mitigates changes in cardiovascular risk factors: secondary analyses of a randomized controlled trial",
+   "firstAuthor": "Chellappa",
+   "authors": [
+    "Chellappa",
+    "Gao",
+    "Qian",
+    "Vujovic",
+    "Li",
+    "Hu",
+    "Scheer"
+   ],
+   "year": 2025,
+   "journal": "Nature Communications",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
+  },
   "doi:10.1038/s41551-020-00640-6": {
    "kind": "doi",
    "valid": true,
@@ -4725,6 +4839,24 @@
    "journal": "Scientific Reports",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1038/s41598-025-24704-2": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Standard deviation of pulse pressure measured using wearable devices improves the estimation of acute psychological stress",
+   "firstAuthor": "Shiotani",
+   "authors": [
+    "Shiotani",
+    "Minakata",
+    "Toyoda",
+    "Odane",
+    "Mitsuyasu",
+    "Nakao"
+   ],
+   "year": 2025,
+   "journal": "Scientific Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
   },
   "doi:10.1038/s41598-026-44902-w": {
    "kind": "doi",
@@ -6738,6 +6870,23 @@
    "journal": "Psychophysiology",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1111/psyp.70213": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Relationship Between Subjective Sleep, Biological Sex, and Cardiovascular and Psychological Reactivity to Acute Psychological Stress",
+   "firstAuthor": "Cook",
+   "authors": [
+    "Cook",
+    "Tyra",
+    "Brindle",
+    "Ginty"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Psychophysiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
   },
   "doi:10.1111/psyp.70235": {
    "kind": "doi",
@@ -9160,6 +9309,32 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1371/journal.pone.0320160": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Psychophysiological correlates of science communicators",
+   "firstAuthor": "Vagni",
+   "authors": [
+    "Vagni",
+    "Tartarisco",
+    "Campisi",
+    "Cerbara",
+    "Dedola",
+    "Pedranghelu",
+    "Castello",
+    "Gorini",
+    "Failla",
+    "Liuzza",
+    "Tintori",
+    "Pioggia",
+    "Ferrazzoli",
+    "Cerasa"
+   ],
+   "year": 2025,
+   "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
+  },
   "doi:10.1371/journal.pone.0323643": {
    "kind": "doi",
    "valid": true,
@@ -9618,6 +9793,24 @@
    "journal": "Journal of Medical Internet Research",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.2196/80450": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Electrocardiogram-Based Mental Stress Detection Amid Everyday Activities Using Machine Learning: Model Development and Validation Study",
+   "firstAuthor": "Uendes",
+   "authors": [
+    "Uendes",
+    "Antonides",
+    "van de Ven",
+    "van der Mee",
+    "de Geus",
+    "Hoogendoorn"
+   ],
+   "year": 2026,
+   "journal": "Journal of Medical Internet Research",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
   },
   "doi:10.2196/84764": {
    "kind": "doi",
@@ -10201,6 +10394,24 @@
    "journal": "Frontiers in Neuroscience",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.3389/fnins.2026.1832059": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Temporal dynamics of heart rate variability reveal stressor-specific autonomic patterns: a multi-stressor study",
+   "firstAuthor": "Villatte",
+   "authors": [
+    "Villatte",
+    "Benesch",
+    "Vinet",
+    "Bouserhal",
+    "Voix",
+    "Hébert"
+   ],
+   "year": 2026,
+   "journal": "Frontiers in Neuroscience",
+   "source": "crossref",
+   "verifiedAt": "2026-10-09"
   },
   "doi:10.3389/fped.2014.00080": {
    "kind": "doi",
@@ -20041,6 +20252,33 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:40138298": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Psychophysiological correlates of science communicators.",
+   "firstAuthor": "Vagni",
+   "authors": [
+    "Vagni",
+    "Tartarisco",
+    "Campisi",
+    "Cerbara",
+    "Dedola",
+    "Pedranghelu",
+    "Castello",
+    "Gorini",
+    "Failla",
+    "Liuzza",
+    "Tintori",
+    "Pioggia",
+    "Ferrazzoli",
+    "Cerasa"
+   ],
+   "year": 2025,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0320160",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
+  },
   "pmid:40149675": {
    "kind": "pmid",
    "valid": true,
@@ -20059,6 +20297,26 @@
    "doi": "10.3390/biomedicines13030700",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:40199860": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Daytime eating during simulated night work mitigates changes in cardiovascular risk factors: secondary analyses of a randomized controlled trial.",
+   "firstAuthor": "Chellappa",
+   "authors": [
+    "Chellappa",
+    "Gao",
+    "Qian",
+    "Vujovic",
+    "Li",
+    "Hu",
+    "Scheer"
+   ],
+   "year": 2025,
+   "journal": "Nat Commun",
+   "doi": "10.1038/s41467-025-57846-y",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
   },
   "pmid:40323248": {
    "kind": "pmid",
@@ -20151,6 +20409,24 @@
    "doi": "10.1371/journal.pone.0323643",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:40571137": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cardiac vagal recovery following acute psychological stress in human adults: A scoping review.",
+   "firstAuthor": "Roddick",
+   "authors": [
+    "Roddick",
+    "Seo",
+    "Barkovich",
+    "Forrester",
+    "Chen"
+   ],
+   "year": 2025,
+   "journal": "Neurosci Biobehav Rev",
+   "doi": "10.1016/j.neubiorev.2025.106268",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
   },
   "pmid:40735382": {
    "kind": "pmid",
@@ -20247,6 +20523,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:40889828": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Autonomic stress responses in oral examination simulations: Neuroscientific insights from comparing peer-led and lecturer-led approaches.",
+   "firstAuthor": "Gellisch",
+   "authors": [
+    "Gellisch",
+    "Bablok",
+    "Morosan-Puopolo",
+    "Schäfer",
+    "Brand-Saberi"
+   ],
+   "year": 2025,
+   "journal": "Trends Neurosci Educ",
+   "doi": "10.1016/j.tine.2025.100270",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
+  },
   "pmid:40895095": {
    "kind": "pmid",
    "valid": true,
@@ -20279,6 +20573,37 @@
    "doi": "10.1371/journal.pone.0332995",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:41135261": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Psychobiological reactivity to acute psychological stress as a predictor of cardiovascular disease and mortality: The Multi-Ethnic Study of Atherosclerosis.",
+   "firstAuthor": "Chauntry",
+   "authors": [
+    "Chauntry",
+    "Moore",
+    "Seeman",
+    "Shea",
+    "Sloan",
+    "Whittaker",
+    "Puterman",
+    "Turner",
+    "Tyne",
+    "Hutson",
+    "Funnell",
+    "Zieff",
+    "Geleta",
+    "Stone",
+    "Hanson",
+    "Stoner",
+    "Bancks"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "Psychoneuroendocrinology",
+   "doi": "10.1016/j.psyneuen.2025.107657",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
   },
   "pmid:41144325": {
    "kind": "pmid",
@@ -20348,6 +20673,25 @@
    "year": 2025,
    "journal": "PLOS Digit Health",
    "doi": "10.1371/journal.pdig.0001093",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
+  },
+  "pmid:41266574": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Standard deviation of pulse pressure measured using wearable devices improves the estimation of acute psychological stress.",
+   "firstAuthor": "Shiotani",
+   "authors": [
+    "Shiotani",
+    "Minakata",
+    "Toyoda",
+    "Odane",
+    "Mitsuyasu",
+    "Nakao"
+   ],
+   "year": 2025,
+   "journal": "Sci Rep",
+   "doi": "10.1038/s41598-025-24704-2",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
@@ -20448,6 +20792,23 @@
    "doi": "10.1161/CIRCULATIONAHA.125.076170",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41454435": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Relationship Between Subjective Sleep, Biological Sex, and Cardiovascular and Psychological Reactivity to Acute Psychological Stress.",
+   "firstAuthor": "Cook",
+   "authors": [
+    "Cook",
+    "Tyra",
+    "Brindle",
+    "Ginty"
+   ],
+   "year": 2026,
+   "journal": "Psychophysiology",
+   "doi": "10.1111/psyp.70213",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
   },
   "pmid:41501316": {
    "kind": "pmid",
@@ -20889,6 +21250,42 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:41945645": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Electrocardiogram-Based Mental Stress Detection Amid Everyday Activities Using Machine Learning: Model Development and Validation Study.",
+   "firstAuthor": "Uendes",
+   "authors": [
+    "Uendes",
+    "Antonides",
+    "van de Ven",
+    "van der Mee",
+    "de Geus",
+    "Hoogendoorn"
+   ],
+   "year": 2026,
+   "journal": "J Med Internet Res",
+   "doi": "10.2196/80450",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
+  },
+  "pmid:41949986": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Does Cardiorespiratory Fitness Predict the Physiological and Psychological Stress Response to a Mathematics Exam in Secondary High School Students?",
+   "firstAuthor": "Gerber",
+   "authors": [
+    "Gerber",
+    "Haller",
+    "Looser",
+    "Ludyga"
+   ],
+   "year": 2026,
+   "journal": "Eur J Sport Sci",
+   "doi": "10.1002/ejsc.70172",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
+  },
   "pmid:42002307": {
    "kind": "pmid",
    "valid": true,
@@ -20943,6 +21340,23 @@
    "doi": "10.1007/s11325-026-03685-0",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:42088781": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Influence of resilience on autonomic nervous system habituation to repeated stress exposure: Insights from heart rate variability and heart rate response.",
+   "firstAuthor": "Rösner",
+   "authors": [
+    "Rösner",
+    "Maryam",
+    "Tüscher",
+    "Petrowski"
+   ],
+   "year": 2026,
+   "journal": "Compr Psychoneuroendocrinol",
+   "doi": "10.1016/j.cpnec.2026.100349",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
   },
   "pmid:42151374": {
    "kind": "pmid",
@@ -21210,6 +21624,25 @@
    "doi": "10.1152/japplphysiol.00578.2026",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:42591646": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Temporal dynamics of heart rate variability reveal stressor-specific autonomic patterns: a multi-stressor study.",
+   "firstAuthor": "Villatte",
+   "authors": [
+    "Villatte",
+    "Benesch",
+    "Vinet",
+    "Bouserhal",
+    "Voix",
+    "Hébert"
+   ],
+   "year": 2026,
+   "journal": "Front Neurosci",
+   "doi": "10.3389/fnins.2026.1832059",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-09"
   },
   "pmid:42655500": {
    "kind": "pmid",
