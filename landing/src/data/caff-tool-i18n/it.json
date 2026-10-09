@@ -29,7 +29,8 @@
     "tableTitle": "Caffeina nelle bevande più comuni",
     "colDrink": "Bevanda",
     "colServing": "Porzione",
-    "colCaffeine": "Caffeina"
+    "colCaffeine": "Caffeina",
+    "cupNote": "8,8 ore è la stima del modello di Gardiner 2023 per una dose di circa 107 mg; la tazza standard di questo calcolatore (caffè filtro) contiene 95 mg."
   },
   "drinks": {
     "espresso": {
@@ -124,7 +125,7 @@
     }
   ],
   "sourcesTitle": "Fonti e metodologia",
-  "methodology": "Il modello usa un'eliminazione di primo ordine: caffeina residua = dose × 0,5^(ore ÷ emivita), con un'emivita tipica di 5,5 ore (4 ore per metabolismo veloce, 8,5 ore per metabolismo lento). L'orario limite è il momento dopo il quale all'ora di dormire resterebbero meno di circa 35 mg — più o meno un terzo di tazza di caffè. Abbiamo calibrato questa soglia sulla meta-analisi di Gardiner 2023: con essa, un caffè da 107 mg richiede circa 8,8 ore prima di dormire, come raccomanda lo studio. Le persone molto sensibili dovrebbero puntare più in basso. I contenuti di caffeina sono medie tipiche. Stima a scopo educativo, non è un consiglio medico.",
+  "methodology": "Il modello usa un'eliminazione di primo ordine: caffeina residua = dose × 0,5^(ore ÷ emivita), con un'emivita tipica di 5,5 ore (4 ore per metabolismo veloce, 8,5 ore per metabolismo lento). L'orario limite è il momento dopo il quale all'ora di dormire resterebbero meno di circa 35 mg — più o meno un terzo di tazza di caffè. Abbiamo calibrato questa soglia sulla meta-analisi di Gardiner 2023: con essa, un caffè da 107 mg richiede circa 8,8 ore prima di dormire, come raccomanda lo studio. Il nostro calcolo è leggermente più prudente della stima del modello di Gardiner. Le persone molto sensibili dovrebbero puntare più in basso. I contenuti di caffeina sono medie tipiche. Stima a scopo educativo, non è un consiglio medico.",
   "sourcesContributes": [
     "Meta-analisi di 24 studi: la caffeina ha ridotto il sonno totale di ~45 min e l'efficienza del sonno del 7%; il caffè (~107 mg) andrebbe bevuto ≥8,8 h e un pre-workout (~217 mg) ≥13,2 h prima di dormire.",
     "400 mg di caffeina assunti 0, 3 o 6 ore prima di dormire hanno sempre disturbato il sonno; anche a 6 ore hanno ridotto di oltre un'ora il sonno misurato oggettivamente.",

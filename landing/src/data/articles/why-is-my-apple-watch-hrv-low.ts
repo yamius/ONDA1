@@ -4,7 +4,8 @@ import type { Article } from './types'
  * Why is my Apple Watch HRV so low? — companion to /tools/hrv and the Apple Watch duels
  * (top GA4 entry pages, 2026-10). Apple-Watch-specific angle, distinct from
  * what-to-do-after-low-hrv-reading (generic) and hrv-different-every-device (cross-device):
- * SDNN from short spot readings, age norms for SDNN (Voss 2015), common causes, when to worry.
+ * SDNN from short spot readings, why age tables don't fit it (SDNN table removed in task 054, 2026-10-08:
+ * the numbers were not verifiable), common causes, when to worry.
  * Sources verified via Crossref: Voss 2015 (PLOS ONE), Shaffer & Ginsberg 2017 (Front Public Health).
  */
 const article: Article = {
@@ -12,14 +13,14 @@ const article: Article = {
   title: 'Why Is My Apple Watch HRV So Low?',
   seoTitle: 'Why Is My Apple Watch HRV So Low? | ONDA Life',
   description:
-    'Apple Watch HRV is SDNN from short spot readings, so it often looks lower than Oura or Whoop. What is normal for your age, common causes and when to worry.',
+    'Apple Watch HRV is SDNN from short spot readings, so it often looks lower than Oura or Whoop. Why age charts don’t fit it, common causes and when to worry.',
   category: 'Biological Software',
   relatedSlugs: ['normal-hrv-by-age', 'apple-watch-recovery-hrv-vs-overall-hrv', 'hrv-different-every-device', 'what-to-do-after-low-hrv-reading'],
   introStyle: 'cyan',
   neuralSuggestion: {
-    text: 'Check one Apple Watch HRV value against SDNN norms for your age.',
-    link: '/tools/hrv',
-    linkText: 'HRV by age calculator →',
+    text: 'Compare your Apple Watch HRV with your own weekly average, not with someone else’s.',
+    link: '/tools/baseline',
+    linkText: 'Find your own range →',
   },
   content: `
 A low [HRV](/science/concepts/heart-rate-variability) number on your Apple Watch is usually less alarming than it looks. Apple Watch measures a different kind of HRV than most rings and bands, it takes short readings at random moments, and one value on its own says very little. Here is how to read it.
@@ -35,17 +36,7 @@ Short daytime readings run lower than a night-time average, and SDNN and RMSSD a
 
 ## What is a normal Apple Watch HRV for your age?
 
-HRV falls with age. Our SDNN ranges below are built from a large study of healthy adults measured with 5-minute ECG recordings (Voss 2015):
-
-| Age | Typical range (25th–75th percentile) | Median |
-|---|---|---|
-| 18–34 | 35–60 ms | ~46 ms |
-| 35–44 | 32–54 ms | ~42 ms |
-| 45–54 | 27–44 ms | ~34 ms |
-| 55–64 | 22–39 ms | ~29 ms |
-| 65+ | 20–35 ms | ~26 ms |
-
-These are population anchors, not targets. Apple Watch’s one-minute readings scatter more than a lab recording, so compare your **weekly average**, not a single value. You can check one number against these ranges in our [HRV by age calculator](/tools/hrv) — choose Apple Watch so it uses the SDNN table.
+HRV tends to fall with age, but there is no published age table for Apple Watch readings that we can vouch for. Age tables are built from RMSSD (rings, straps, Fitbit) or from lab ECG recordings, and they can't be applied to Apple Watch's one-minute SDNN readings. People of the same age also differ widely. So the useful comparison is with yourself: look at your **weekly average** in the Health app and how it moves against your own earlier weeks. For RMSSD from other devices, see [normal HRV by age](/articles/normal-hrv-by-age).
 
 ## Why your reading might be low
 

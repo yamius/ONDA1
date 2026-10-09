@@ -29,7 +29,8 @@
     "tableTitle": "Caffeine in common drinks",
     "colDrink": "Drink",
     "colServing": "Serving",
-    "colCaffeine": "Caffeine"
+    "colCaffeine": "Caffeine",
+    "cupNote": "8.8 h is the model estimate from Gardiner 2023 for a dose of about 107 mg; the standard cup in this calculator (brewed coffee) is 95 mg."
   },
   "drinks": {
     "espresso": {
@@ -124,7 +125,7 @@
     }
   ],
   "sourcesTitle": "Sources & methodology",
-  "methodology": "The model uses first-order elimination: remaining caffeine = dose × 0.5^(hours ÷ half-life), with a typical half-life of 5.5 hours (4 hours for fast, 8.5 hours for slow metabolisers). The cut-off is the time at which less than about 35 mg — roughly a third of a cup of coffee — would remain at bedtime. We calibrated this threshold to the meta-analysis by Gardiner 2023: with it, a 107 mg coffee needs about 8.8 hours before bed, as the study recommends. Highly sensitive people should aim lower. Caffeine amounts are typical averages. Educational estimate, not medical advice.",
+  "methodology": "The model uses first-order elimination: remaining caffeine = dose × 0.5^(hours ÷ half-life), with a typical half-life of 5.5 hours (4 hours for fast, 8.5 hours for slow metabolisers). The cut-off is the time at which less than about 35 mg — roughly a third of a cup of coffee — would remain at bedtime. We calibrated this threshold to the meta-analysis by Gardiner 2023: with it, a 107 mg coffee needs about 8.8 hours before bed, as the study recommends. Our calculation is slightly more conservative than Gardiner's model estimate. Highly sensitive people should aim lower. Caffeine amounts are typical averages. Educational estimate, not medical advice.",
   "sourcesContributes": [
     "Meta-analysis of 24 studies: caffeine cut total sleep by ~45 min and sleep efficiency by 7%; coffee (~107 mg) should be drunk ≥8.8 h and a pre-workout (~217 mg) ≥13.2 h before bed.",
     "400 mg caffeine taken 0, 3 or 6 hours before bed all disturbed sleep; even at 6 hours it cut objectively measured sleep by more than an hour.",

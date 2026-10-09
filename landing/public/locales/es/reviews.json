@@ -654,7 +654,7 @@
         "app-ux": "Samsung Health es bastante claro, pero atado al ecosistema de Samsung y Android.",
         "value": "399 USD sin suscripción — la ventaja de coste permanente frente al Oura Ring 4."
       },
-      "content": "## En qué destaca\n\nEl Samsung Galaxy Ring es la alternativa más directa al Oura Ring 4, y su ventaja principal es simple: sin suscripción. La compra desbloquea todas las funciones para siempre, mientras que Oura sigue cobrando cada mes. Como hardware es un anillo cómodo y bien hecho, con batería de varios días y variabilidad de la frecuencia cardíaca (HRV o VFC) nocturna y seguimiento del sueño competentes — para un usuario de un teléfono Samsung ya dentro de Samsung Health, es una elección natural y sin fricción.\n\n## En qué se queda corto\n\nEl anillo está atado a su ecosistema. Está construido en torno a Samsung Health y Android — no hay soporte para iPhone — y el acceso a los datos es comparativamente cerrado: sin API abierta para desarrolladores, exportación limitada, tus cifras se quedan en gran parte dentro de la app de Samsung. En precisión pura va por detrás del Oura Ring 4, que sigue teniendo la validación independiente de fases de sueño más sólida en la categoría de anillos.\n\n## Para quién es\n\nElige el Samsung Galaxy Ring si eres usuario de Android — idealmente de Samsung — y quieres un seguimiento de anillo estilo Oura sin una suscripción perpetua, y te conformas con mantener tus datos dentro de Samsung Health. Los usuarios de iPhone, o cualquiera que quiera el anillo más preciso o datos abiertos, deberían mirar el Oura Ring 4."
+      "content": "## En qué destaca\n\nEl Samsung Galaxy Ring es la alternativa más directa al Oura Ring 4, y su ventaja principal es simple: sin suscripción. La compra desbloquea todas las funciones para siempre, mientras que Oura sigue cobrando cada mes. Como hardware es un anillo cómodo y bien hecho, con batería de varios días y variabilidad de la frecuencia cardíaca (HRV o VFC) nocturna y seguimiento del sueño competentes — para un usuario de un teléfono Samsung ya dentro de Samsung Health, es una elección natural y sin fricción.\n\n## En qué se queda corto\n\nEl anillo está atado a su ecosistema. Está construido en torno a Samsung Health y Android — no hay soporte para iPhone — y el acceso a los datos es comparativamente cerrado: sin API abierta para desarrolladores, exportación limitada, tus cifras se quedan en gran parte dentro de la app de Samsung. En precisión, no se encontró ninguna validación independiente del HRV del Galaxy Ring frente a un ECG (a octubre de 2026). El Oura Ring 4 tiene un estudio nocturno independiente de HRV, y el estudio más conocido de fases de sueño en anillos es una comprobación de las fases de sueño del Oura Gen 3; el estudio fue financiado por Oura.\n\n## Para quién es\n\nElige el Samsung Galaxy Ring si eres usuario de Android — idealmente de Samsung — y quieres un seguimiento de anillo estilo Oura sin una suscripción perpetua, y te conformas con mantener tus datos dentro de Samsung Health. Los usuarios de iPhone, o cualquiera que quiera el anillo más preciso o datos abiertos, deberían mirar el Oura Ring 4."
     },
     "ultrahuman-ring-air": {
       "verdict": "Un anillo ultraligero y sin suscripción con un buen seguimiento del sueño — lastrado por numerosos informes de baterías que fallan en pocos meses y ahora con la venta prohibida en EE. UU. Su sucesor de Ultrahuman es el Ring Pro.",
@@ -2795,7 +2795,7 @@
         },
         {
           "q": "¿Necesito una banda pectoral para el HRV?",
-          "a": "No — anillos y bandas como el Oura Ring 4 y el Whoop 5.0 miden el HRV nocturno suficientemente bien para seguir tendencias y recuperación. Una banda pectoral como la Polar H10 solo merece la pena si quieres cifras de nivel de referencia o estás validando otro dispositivo."
+          "a": "No — anillos y bandas como el Oura Ring 5 y el Whoop 5.0 están diseñados para seguir tendencias de HRV nocturno y recuperación; ninguno de los dos modelos actuales tiene aún una validación independiente frente a un ECG (a octubre de 2026). Una banda pectoral como la Polar H10 solo merece la pena si quieres cifras de nivel de referencia o estás validando otro dispositivo."
         },
         {
           "q": "¿Qué monitores de HRV no tienen suscripción?",
@@ -5431,7 +5431,7 @@
       "faq": [
         {
           "q": "¿Whoop 5.0 es más preciso que Garmin Venu 4?",
-          "a": "No hay una diferencia significativa. Ambos registran la HRV de forma continua por la noche mediante PPG óptica, y las comparaciones independientes los sitúan más o menos igual en precisión. La decisión no depende del sensor."
+          "a": "No hay pruebas de una diferencia. Ambos registran la HRV de forma continua por la noche mediante PPG óptica. Ni el WHOOP 5.0 ni el Venu 4 tienen una validación independiente de la HRV frente a un ECG (a octubre de 2026), así que no hay base para ordenarlos por precisión. La decisión no depende del sensor."
         },
         {
           "q": "¿Whoop o Garmin Venu 4 necesitan suscripción?",
@@ -5693,7 +5693,7 @@
       "faq": [
         {
           "q": "¿Qué es más preciso para la HRV, Polar H10 o Whoop?",
-          "a": "Polar H10. Mide la señal eléctrica del corazón como un ECG, y un estudio de validación halló que sus intervalos RR coincidían estrechamente con un Holter ECG en reposo y durante el ejercicio (Gilgen-Ammann et al., 2019). Whoop usa sensores ópticos: en su validación la frecuencia cardíaca coincidió bien con el ECG, pero el error en la HRV (RMSSD) fue mayor (Bellenger et al., 2021). Whoop sirve para tendencias nocturnas; la H10 es la referencia."
+          "a": "Polar H10. Mide la señal eléctrica del corazón como un ECG, y un estudio de validación halló que sus intervalos RR coincidían estrechamente con un Holter ECG en reposo y durante el ejercicio (Gilgen-Ammann et al., 2019). Whoop usa sensores ópticos: en una validación del anterior Whoop 2.0 la frecuencia cardíaca coincidió bien con el ECG, pero el error en la HRV (RMSSD) fue mayor (Bellenger et al., 2021); el 5.0 en sí no tiene validación independiente frente a un ECG (a octubre de 2026). Whoop sirve para tendencias nocturnas; la H10 es la referencia."
         },
         {
           "q": "¿Cuánto cuesta Whoop frente a Polar H10?",

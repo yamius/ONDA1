@@ -28,7 +28,7 @@ related:
   glossary: [heart-rate-variability]
   articles: [what-to-do-after-low-hrv-reading, why-is-my-apple-watch-hrv-low, hrv-questions-answered, normal-hrv-by-age, doctors-and-your-data]
   tools: [hrv]
-  science: [concepts/heart-rate-variability, concepts/hrv-baseline, concepts/rmssd, concepts/sdnn, measurements/heart-rate-variability, mechanisms/exercise-and-hrv]
+  science: [concepts/heart-rate-variability, concepts/hrv-baseline, concepts/rmssd, concepts/sdnn, measurements/heart-rate-variability, mechanisms/exercise-and-hrv, mechanisms/alcohol-and-hrv]
 relatedPlanned:
   - mechanisms/hrv-day-to-day
 sources:
@@ -331,7 +331,7 @@ That is all one number can say. It is easy to read more into it than it holds [S
 ## Why is HRV so personal?
 
 <!-- myth-debunk -->
-**"You can compare your HRV with a friend's."** Hardly at all. Healthy adults differ enormously in HRV [S6], and a lower value than a peer's does not necessarily mean poorer physiological status [S5]. On average HRV falls with age — {{fact:hrv.age.trend}} [S7] — and the metric, the device, the time of day and the recording length differ between any two people's numbers [S4]. A friend's higher reading tells you nothing about your health.
+**"You can compare your HRV with a friend's."** Hardly at all. Healthy adults differ enormously in HRV [S6], and a lower value than a peer's does not necessarily mean poorer physiological status [S5]. On average, {{fact:hrv.age.trend}} [S7], and the metric, the device, the time of day and the recording length differ between any two people's numbers [S4]. A friend's higher reading tells you nothing about your health.
 
 The useful comparison is with yourself: your own readings, taken the same way, over days and weeks. How that works is the subject of [the HRV baseline](/science/concepts/hrv-baseline). Age tables are in [normal HRV by age](/articles/normal-hrv-by-age); read them as group context, not as a target.
 
@@ -351,7 +351,7 @@ A sudden, unusually high value is therefore a reason to check the data — was t
 Many factors move HRV [S4]. The ones most commonly reported are:
 
 - a short or poor night's sleep;
-- alcohol;
+- alcohol (see [alcohol and HRV](/science/mechanisms/alcohol-and-hrv));
 - an illness starting, such as a cold or fever;
 - a hard training session or a heavy training block;
 - measurement conditions: a different time of day, posture, movement, talking or a loose sensor.

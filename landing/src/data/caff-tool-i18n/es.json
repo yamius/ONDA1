@@ -29,7 +29,8 @@
     "tableTitle": "Cafeína en bebidas comunes",
     "colDrink": "Bebida",
     "colServing": "Porción",
-    "colCaffeine": "Cafeína"
+    "colCaffeine": "Cafeína",
+    "cupNote": "8,8 horas es la estimación del modelo de Gardiner 2023 para una dosis de unos 107 mg; la taza estándar de esta calculadora (café de filtro) tiene 95 mg."
   },
   "drinks": {
     "espresso": {
@@ -124,7 +125,7 @@
     }
   ],
   "sourcesTitle": "Fuentes y metodología",
-  "methodology": "El modelo usa una eliminación de primer orden: cafeína restante = dosis × 0,5^(horas ÷ vida media), con una vida media típica de 5,5 horas (4 horas para metabolizadores rápidos y 8,5 horas para lentos). La hora límite es el momento a partir del cual a la hora de dormir quedarían menos de unos 35 mg, aproximadamente un tercio de taza de café. Calibramos este umbral con el metaanálisis de Gardiner 2023: con él, un café de 107 mg necesita unas 8,8 horas antes de dormir, como recomienda el estudio. Las personas muy sensibles deberían apuntar más bajo. Las cantidades de cafeína son promedios típicos. Estimación educativa, no es consejo médico.",
+  "methodology": "El modelo usa una eliminación de primer orden: cafeína restante = dosis × 0,5^(horas ÷ vida media), con una vida media típica de 5,5 horas (4 horas para metabolizadores rápidos y 8,5 horas para lentos). La hora límite es el momento a partir del cual a la hora de dormir quedarían menos de unos 35 mg, aproximadamente un tercio de taza de café. Calibramos este umbral con el metaanálisis de Gardiner 2023: con él, un café de 107 mg necesita unas 8,8 horas antes de dormir, como recomienda el estudio. Nuestro cálculo es algo más conservador que la estimación del modelo de Gardiner. Las personas muy sensibles deberían apuntar más bajo. Las cantidades de cafeína son promedios típicos. Estimación educativa, no es consejo médico.",
   "sourcesContributes": [
     "Metaanálisis de 24 estudios: la cafeína redujo el sueño total ~45 min y la eficiencia del sueño un 7 %; el café (~107 mg) debe tomarse ≥8,8 h y un pre-entreno (~217 mg) ≥13,2 h antes de dormir.",
     "400 mg de cafeína tomados 0, 3 o 6 horas antes de dormir alteraron el sueño en todos los casos; incluso a las 6 horas redujeron el sueño medido objetivamente en más de una hora.",

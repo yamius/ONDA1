@@ -71,11 +71,11 @@
   "sections": [
     {
       "h2": "What is a normal resting heart rate by age?",
-      "body": "For adults, a resting heart rate between 60 and 100 bpm is considered normal. Fit people often sit lower (often below 60 bpm; many elite endurance athletes reach 40 bpm or less at their lowest point of the day), and in population studies a lower resting heart rate is associated with lower long-term mortality. In the CDC's NHANES survey of healthy U.S. adults, the median seated resting pulse was about 69 bpm for men aged 18–39, 68 bpm at 40–59 and 67 bpm from 60 — almost flat across adult life. The middle half of men (p25–p75) sat between about 60 and 77 bpm. Unlike HRV, resting heart rate hardly changes with age in adults; fitness, genetics, sleep and stress matter far more. That's why the most useful comparison is with your own morning trend. Full guide: [resting heart rate by age](/articles/resting-heart-rate-by-age)."
+      "body": "For adults, a resting heart rate between 60 and 100 bpm is considered normal. Fit people often sit lower (often below 60 bpm; many elite endurance athletes reach 40 bpm or less at their lowest point of the day), and in population studies a lower resting heart rate is associated with lower long-term mortality. In the CDC's NHANES survey of healthy U.S. adults, the median seated resting pulse was about 69 bpm for men aged 20–39, 68 bpm at 40–59, 67 bpm at 60–79 and 68 bpm at 80+ — almost flat across adult life. The middle half of men (p25–p75) sat between about 60 and 77 bpm. Unlike HRV, resting heart rate hardly changes with age in adults; fitness, genetics, sleep and stress matter far more. That's why the most useful comparison is with your own morning trend. Full guide: [resting heart rate by age](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Normal resting heart rate for women",
-      "body": "Women's resting heart rate runs a few beats higher than men's, mainly because the heart is usually smaller and pumps a little less blood per beat. In NHANES the median was about 74 bpm for women aged 18–39, 71 bpm at 40–59 and 70 bpm from 60, with the middle half between roughly 64 and 82 bpm. Resting heart rate also moves with the menstrual cycle — it tends to be a few beats higher in the second half of the cycle — and it rises during pregnancy. So compare like with like: the same time of day, the same phase of your cycle, and your weekly average rather than a single day. Choose \"Woman\" in the calculator to use the women's table."
+      "body": "Women's resting heart rate runs a few beats higher than men's, mainly because the heart is usually smaller and pumps a little less blood per beat. In NHANES the median was about 74 bpm for women aged 20–39, 71 bpm at 40–59, 70 bpm at 60–79 and 71 bpm at 80+, with the middle half between roughly 64 and 82 bpm. Resting heart rate also moves with the menstrual cycle — it tends to be a few beats higher in the second half of the cycle — and it rises during pregnancy. So compare like with like: the same time of day, the same phase of your cycle, and your weekly average rather than a single day. Choose \"Woman\" in the calculator to use the women's table."
     },
     {
       "h2": "Why is my resting heart rate high?",
@@ -94,11 +94,11 @@
   "faq": [
     {
       "q": "What is a normal resting heart rate by age?",
-      "a": "For adults it is 60–100 bpm, and in healthy people usually 60s–70s. The CDC NHANES median is about 69 bpm for men 18–39, 68 bpm at 40–59 and 67 bpm at 60+; for women about 74, 71 and 70 bpm. It barely changes with age."
+      "a": "For adults it is 60–100 bpm, and in healthy people usually 60s–70s. The CDC NHANES median is about 69 bpm for men 20–39, 68 bpm at 40–59, 67 bpm at 60–79 and 68 bpm at 80+; for women about 74, 71, 70 and 71 bpm. It barely changes with age."
     },
     {
       "q": "What is a normal resting heart rate for women?",
-      "a": "A few beats higher than for men: the median is about 74 bpm at 18–39, 71 bpm at 40–59 and 70 bpm from 60, with the middle half of women between roughly 64 and 82 bpm."
+      "a": "A few beats higher than for men: the median is about 74 bpm at 20–39, 71 bpm at 40–59, 70 bpm at 60–79 and 71 bpm at 80+, with the middle half of women between roughly 64 and 82 bpm."
     },
     {
       "q": "Is a resting heart rate of 50 good?",
@@ -126,7 +126,7 @@
     }
   ],
   "sourcesTitle": "Sources & methodology",
-  "methodology": "The tables come directly from the CDC/NCHS report on NHANES 1999–2008 (Ostchega et al. 2011, Tables 2–3): seated resting pulse of about 17,000 U.S. adults, excluding people with a condition or medication that affects pulse. The 18–39 band uses the 20–39 row and the 60+ band the 60–79 row. Your percentile is interpolated between the published 5th–95th percentiles for your age and sex. Watches and rings measure resting or sleeping heart rate, which usually runs a few bpm lower than a seated check.",
+  "methodology": "The tables come directly from the CDC/NCHS report on NHANES 1999–2008 (Ostchega et al. 2011, Tables 2–3): seated resting pulse of about 17,000 U.S. adults, excluding people with a condition or medication that affects pulse. The bands are the source rows (20–39, 40–59, 60–79, 80+). The source has no separate data for ages 18–19 among adults, so they are compared with 20–39. Your percentile is interpolated between the published 5th–95th percentiles for your age and sex. Watches and rings measure resting or sleeping heart rate, which usually runs a few bpm lower than a seated check.",
   "sourcesContributes": [
     "Direct source of the tables: seated resting pulse percentiles by age and sex from NHANES 1999–2008, excluding conditions and medications that affect pulse (Tables 2–3).",
     "Clinical context: 60–100 bpm is the conventional normal range; lower in the very fit, slightly higher in women, and partly genetic.",
@@ -138,5 +138,6 @@
     "hrv": "HRV Calculator by Age",
     "camera": "Measure your pulse with your phone camera",
     "zone2": "Zone 2 heart rate"
-  }
+  },
+  "youngNote": "The source has no separate data for ages 18–19, so you are compared with ages 20–39."
 }

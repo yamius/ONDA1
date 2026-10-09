@@ -29,7 +29,8 @@
     "tableTitle": "Kofeina w popularnych napojach",
     "colDrink": "Napój",
     "colServing": "Porcja",
-    "colCaffeine": "Kofeina"
+    "colCaffeine": "Kofeina",
+    "cupNote": "8,8 godziny to szacunek modelu Gardiner 2023 dla dawki około 107 mg; standardowa filiżanka w tym kalkulatorze (kawa parzona) to 95 mg."
   },
   "drinks": {
     "espresso": {
@@ -124,7 +125,7 @@
     }
   ],
   "sourcesTitle": "Źródła i metodologia",
-  "methodology": "Model zakłada eliminację pierwszego rzędu: pozostała kofeina = dawka × 0,5^(godziny ÷ okres półtrwania), przy typowym okresie półtrwania 5,5 godziny (4 godziny przy szybkim, 8,5 godziny przy wolnym metabolizmie). Godzina graniczna to moment, po którym w chwili pójścia spać zostałoby mniej niż około 35 mg — mniej więcej jedna trzecia kubka kawy. Skalibrowaliśmy ten próg według metaanalizy Gardiner 2023: przy nim kawa zawierająca 107 mg wymaga około 8,8 godziny przed snem, zgodnie z zaleceniem badania. Osoby bardzo wrażliwe powinny celować niżej. Zawartość kofeiny to typowe średnie. Szacunek edukacyjny, nie porada medyczna.",
+  "methodology": "Model zakłada eliminację pierwszego rzędu: pozostała kofeina = dawka × 0,5^(godziny ÷ okres półtrwania), przy typowym okresie półtrwania 5,5 godziny (4 godziny przy szybkim, 8,5 godziny przy wolnym metabolizmie). Godzina graniczna to moment, po którym w chwili pójścia spać zostałoby mniej niż około 35 mg — mniej więcej jedna trzecia kubka kawy. Skalibrowaliśmy ten próg według metaanalizy Gardiner 2023: przy nim kawa zawierająca 107 mg wymaga około 8,8 godziny przed snem, zgodnie z zaleceniem badania. Nasze obliczenie jest nieco ostrożniejsze niż szacunek modelu Gardinera. Osoby bardzo wrażliwe powinny celować niżej. Zawartość kofeiny to typowe średnie. Szacunek edukacyjny, nie porada medyczna.",
   "sourcesContributes": [
     "Metaanaliza 24 badań: kofeina skracała całkowity sen o ~45 min i obniżała wydajność snu o 7%; kawę (~107 mg) należy pić ≥8,8 godz., a przedtreningówkę (~217 mg) ≥13,2 godz. przed snem.",
     "400 mg kofeiny przyjęte 0, 3 lub 6 godzin przed snem zawsze zaburzało sen; nawet po 6 godzinach skracało obiektywnie mierzony sen o ponad godzinę.",

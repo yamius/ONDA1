@@ -28,7 +28,7 @@
         {
           "id": "rmssd-vs-sdnn",
           "q": "Was ist der Unterschied zwischen RMSSD und SDNN?",
-          "a": "Es sind zwei Arten, die HRV zu berechnen. RMSSD betrachtet die Unterschiede zwischen benachbarten Schlägen und bildet die vagale Aktivität ab; Oura, Whoop, Garmin und Polar geben ihn aus. SDNN ist die Gesamtstreuung aller Intervalle in einem Zeitfenster; die Apple Watch gibt SDNN aus. Beide sind nicht austauschbar, vergleiche also jeden Wert nur mit seinen eigenen Normwerten. [HRV-Rechner mit beiden Modi →](/tools/hrv)"
+          "a": "Es sind zwei Arten, die HRV zu berechnen. RMSSD betrachtet die Unterschiede zwischen benachbarten Schlägen und bildet die vagale Aktivität ab; Oura, Whoop, Garmin und Polar zeigen ihn an. SDNN ist die gesamte Streuung aller Intervalle in einem Zeitfenster; die Apple Watch zeigt SDNN. Die beiden sind nicht austauschbar – vergleiche also nie einen Wert des einen mit einer Tabelle des anderen. [Warum jedes Gerät eine andere HRV zeigt →](/articles/hrv-different-every-device)"
         },
         {
           "id": "hrv-vs-heart-rate",
@@ -48,22 +48,22 @@
         {
           "id": "what-is-a-good-hrv",
           "q": "Was ist ein guter HRV-Wert?",
-          "a": "Es gibt nicht den einen guten HRV-Wert. Zur Orientierung: Der mediane nächtliche RMSSD liegt mit 18–29 bei etwa 58 ms und sinkt in den 60ern auf rund 30 ms, wobei gesunde Menschen weit um diese Mediane streuen. Anderswo findest du höhere Zahlen (WHOOP etwa sieht viele Twens bei 55–105 ms), weil jede Quelle andere Menschen, Geräte und Tageszeiten nutzt. Eine „gute“ HRV ist eine, die gegenüber deiner eigenen Baseline stabil bleibt oder steigt. [Normale HRV nach Alter →](/articles/normal-hrv-by-age)"
+          "a": "Es gibt keinen einzelnen guten HRV-Wert. Unter rund 8 Millionen Fitbit-Nutzern lag der Median des RMSSD zwischen 6 und 7 Uhr morgens bei {{fact:hrv.fitbit.rmssd.am.female.median.20-21}} für Frauen und {{fact:hrv.fitbit.rmssd.am.male.median.20-21}} für Männer mit 20–21 und bei {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} und {{fact:hrv.fitbit.rmssd.am.male.median.60-61}} mit 60–61 – ein Vergleich mit Nutzern eines Geräts, keine medizinische Norm. Anderswo siehst du höhere Zahlen (WHOOP etwa ordnet viele Zwanzigjährige bei 55–105 ms ein), weil jede Quelle andere Menschen, Geräte und Tageszeiten nutzt. Eine „gute“ HRV ist eine, die gegenüber deiner eigenen Baseline stabil bleibt oder steigt. [Normale HRV nach Alter →](/articles/normal-hrv-by-age)"
         },
         {
           "id": "healthy-hrv",
           "q": "Was ist eine gesunde HRV?",
-          "a": "Eine gesunde HRV liegt in deinem gewohnten Bereich und erholt sich nach Stress, Reisen oder hartem Training. Die Bereiche in der Bevölkerung sind sehr breit – zwei gesunde Menschen gleichen Alters können sich um 40 ms oder mehr unterscheiden. Nutze Altersnormen zur Orientierung und deinen Zwei-Wochen-Trend für Entscheidungen. [Deinen eigenen Bereich ansehen →](/tools/baseline)"
+          "a": "Eine gesunde HRV bleibt in deinem üblichen Bereich und erholt sich nach Stress, Reisen oder einem harten Training. Die Bereiche in der Bevölkerung sind sehr breit – zwei gesunde Menschen gleichen Alters können um 40 ms oder mehr auseinanderliegen. Nutze Alterstabellen zur Orientierung und deinen Zwei-Wochen-Trend für Entscheidungen. [Finde deinen eigenen Bereich →](/tools/baseline)"
         },
         {
           "id": "hrv-range-by-age",
           "q": "Welche HRV ist normal nach Alter?",
-          "a": "Der typische nächtliche RMSSD (mittlere Hälfte gesunder Erwachsener) liegt bei etwa 42–78 ms mit 18–29, 36–68 ms in den 30ern, 30–56 ms in den 40ern und danach enger. Das SDNN der Apple Watch hat eigene, andere Normwerte. Gib dein Alter und deinen Wert ein, um dein Perzentil zu sehen. [HRV-Rechner nach Alter →](/tools/hrv)"
+          "a": "Unter rund 8 Millionen Fitbit-Nutzern lag die mittlere Hälfte des morgendlichen RMSSD bei {{fact:hrv.fitbit.rmssd.am.female.typical.20-21}} für Frauen und {{fact:hrv.fitbit.rmssd.am.male.typical.20-21}} für Männer mit 20–21, bei {{fact:hrv.fitbit.rmssd.am.female.typical.40-41}} und {{fact:hrv.fitbit.rmssd.am.male.typical.40-41}} mit 40–41 und bei {{fact:hrv.fitbit.rmssd.am.female.typical.60-61}} und {{fact:hrv.fitbit.rmssd.am.male.typical.60-61}} mit 60–61. Das beschreibt die Nutzer eines Geräts, keine medizinische Norm, und SDNN der Apple Watch lässt sich damit nicht vergleichen. Gib Alter, Geschlecht und deinen Wert ein, um zu sehen, wo du liegst. [HRV-Rechner nach Alter →](/tools/hrv)"
         },
         {
           "id": "is-my-number-good",
           "q": "Ist eine HRV von 20, 30 oder 43 gut? Warum ist meine nur 30?",
-          "a": "Das hängt von deinem Alter, deinem Gerät und deiner eigenen Baseline ab. 20 ms können in den 70ern ganz normal sein; 30 ms sind mit 60 typisch und mit 25 eher niedrig; 43 ms liegen bei Menschen in den 40ern etwa in der Mitte; 100 ms sind für die meisten Erwachsenen hoch, für manche Sportler aber normal. Eine einzelne Zahl ohne Kontext sagt wenig – prüfe, wo sie für dein Alter liegt, und beobachte dann deinen Trend. [Deinen Wert prüfen →](/tools/hrv)"
+          "a": "Das hängt von deinem Alter, deinem Gerät und deiner eigenen Baseline ab. Unter Fitbit-Nutzern lag die mittlere Hälfte des morgendlichen RMSSD bei {{fact:hrv.fitbit.rmssd.am.female.typical.25-26}} (Frauen) und {{fact:hrv.fitbit.rmssd.am.male.typical.25-26}} (Männer) mit 25–26 und bei {{fact:hrv.fitbit.rmssd.am.female.typical.60-61}} und {{fact:hrv.fitbit.rmssd.am.male.typical.60-61}} mit 60–61. 30 ms liegen mit 60 also in der Mitte und mit 25 eher niedrig, und 43 ms liegen bei Menschen Anfang 40 etwas über dem Median ({{fact:hrv.fitbit.rmssd.am.female.median.40-41}} bei Frauen, {{fact:hrv.fitbit.rmssd.am.male.median.40-41}} bei Männern). 100 ms sind für die meisten Erwachsenen hoch, für manche Sportler aber normal. Eine einzelne Zahl ohne Kontext sagt wenig – schau, wo sie für dein Alter liegt, und verfolge dann deinen Trend. [Prüfe deinen Wert →](/tools/hrv)"
         },
         {
           "id": "high-hrv",

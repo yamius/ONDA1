@@ -29,7 +29,7 @@ related:
   glossary: [heart-rate-variability, slow-wave-sleep]
   articles: [how-much-sleep-do-you-need, onda-report-for-your-sleep-specialist]
   tools: [sleep-cycle]
-  science: [mechanisms/hrv-day-to-day, concepts/hrv-baseline, measurements/heart-rate-variability, concepts/interpreting-hrv, mechanisms/exercise-and-hrv]
+  science: [mechanisms/hrv-day-to-day, concepts/hrv-baseline, measurements/heart-rate-variability, concepts/interpreting-hrv, mechanisms/exercise-and-hrv, mechanisms/alcohol-and-hrv]
 sources:
   - id: S1
     cite: "Trinder et al. (2001)"
@@ -309,7 +309,7 @@ The night is steadier, not clean. Sleep stages, awakenings and the timing of sle
 
 ## What affects nightly values?
 
-Short or broken sleep, alcohol, a hard training day, infection, stress, a late meal and the menstrual cycle can all shift a night's heart rate and HRV. Their mechanisms and evidence are set out on [why HRV changes from day to day](/science/mechanisms/hrv-day-to-day) and are not repeated here.
+Short or broken sleep, alcohol, a hard training day, infection, stress, a late meal and the menstrual cycle can all shift a night's heart rate and HRV. Their mechanisms and evidence are set out on [why HRV changes from day to day](/science/mechanisms/hrv-day-to-day) and are not repeated here. Alcohol and the menstrual cycle each have a page of their own: [alcohol and HRV](/science/mechanisms/alcohol-and-hrv) and [the menstrual cycle and HRV](/science/mechanisms/menstrual-cycle-and-hrv).
 
 ## What do sleep disorders do to night-time heart rhythm?
 

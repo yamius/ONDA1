@@ -2734,6 +2734,14 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "journal": "Journal of Clinical Medicine",
       "doi": "10.3390/jcm8111946",
       "url": "https://doi.org/10.3390/jcm8111946"
+    },
+    {
+      "title": "Normal Values of Corrected Heart-Rate Variability in 10-Second Electrocardiograms for All Ages",
+      "authors": "van den Berg ME et al.",
+      "year": 2018,
+      "journal": "Frontiers in Physiology",
+      "doi": "10.3389/fphys.2018.00424",
+      "url": "https://doi.org/10.3389/fphys.2018.00424"
     }
   ],
   "nose-vs-mouth-breathing": [

@@ -34,7 +34,7 @@ const article: Article = {
 
 > "You don't have to do anything for an Apple Watch to build a record of you. While you sleep it samples your pulse, times the gaps between beats, and counts your breaths — night after night. Most people never look. The numbers are already there; the only trick is reading them back as a *range* instead of a single, lonely figure."
 
-**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age ([RMSSD](/science/concepts/rmssd) from Oura, Whoop, Garmin or [SDNN](/science/concepts/sdnn) from Apple Watch).
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — compare your morning [RMSSD](/science/concepts/rmssd) (Oura, Whoop, Garmin, Polar, Fitbit) with Fitbit users your age. Apple Watch [SDNN](/science/concepts/sdnn) is a different measure and isn't compared.
 
 ---
 

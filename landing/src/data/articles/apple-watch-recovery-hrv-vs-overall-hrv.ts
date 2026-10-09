@@ -37,7 +37,7 @@ const article: Article = {
 
 > "People opened the Health app in late September 2026 and found something new: their Apple Watch was suddenly reporting **two** heart-rate-variability numbers instead of one — 'Recovery HRV' and 'Overall HRV' — and they often didn't match.
 
-**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age ([RMSSD](/science/concepts/rmssd) from Oura, Whoop, Garmin or [SDNN](/science/concepts/sdnn) from Apple Watch).
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — compare your morning [RMSSD](/science/concepts/rmssd) (Oura, Whoop, Garmin, Polar, Fitbit) with Fitbit users your age. Apple Watch [SDNN](/science/concepts/sdnn) is a different measure and isn't compared.
 
 > This wasn't a bug. With the Apple Watch Series 12 and Ultra 4 on watchOS 27, Apple rebuilt how the watch measures HRV — it now reports two HRV variants, measures far more *often*, and gives each number a different job. If your HRV looks different, jumpier, or hard to compare to last month, here is exactly what happened."
 

@@ -71,11 +71,11 @@
   "sections": [
     {
       "h2": "Quelle est la fréquence cardiaque normale au repos selon l'âge ?",
-      "body": "Chez l'adulte, une fréquence cardiaque au repos entre 60 et 100 bpm est considérée comme normale. Les personnes en forme se situent souvent plus bas (souvent sous 60 bpm ; de nombreux athlètes d’endurance de haut niveau descendent à 40 bpm ou moins au point le plus bas de la journée), et dans les études de population, une fréquence cardiaque au repos plus basse est associée à une mortalité plus faible à long terme. Dans l'enquête NHANES du CDC menée auprès d'adultes américains en bonne santé, le pouls médian au repos en position assise était d'environ 69 bpm chez les hommes de 18–39 ans, 68 bpm à 40–59 ans et 67 bpm à partir de 60 ans — quasiment stable tout au long de la vie adulte. La moitié centrale des hommes (p25–p75) se situait entre environ 60 et 77 bpm. Contrairement à la HRV, la fréquence au repos change à peine avec l'âge chez l'adulte ; la condition physique, la génétique, le sommeil et le stress comptent bien davantage. C'est pourquoi la comparaison la plus utile reste celle avec votre propre tendance du matin. Guide complet : [fréquence cardiaque au repos selon l'âge](/articles/resting-heart-rate-by-age)."
+      "body": "Chez l'adulte, une fréquence cardiaque au repos entre 60 et 100 bpm est considérée comme normale. Les personnes en forme se situent souvent plus bas (souvent sous 60 bpm ; de nombreux athlètes d’endurance de haut niveau descendent à 40 bpm ou moins au point le plus bas de la journée), et dans les études de population, une fréquence cardiaque au repos plus basse est associée à une mortalité plus faible à long terme. Dans l'enquête NHANES du CDC menée auprès d'adultes américains en bonne santé, le pouls médian au repos en position assise était d'environ 69 bpm chez les hommes de 20–39 ans, 68 bpm à 40–59 ans et 67 bpm à 60–79 ans et 68 bpm à partir de 80 ans — quasiment stable tout au long de la vie adulte. La moitié centrale des hommes (p25–p75) se situait entre environ 60 et 77 bpm. Contrairement à la HRV, la fréquence au repos change à peine avec l'âge chez l'adulte ; la condition physique, la génétique, le sommeil et le stress comptent bien davantage. C'est pourquoi la comparaison la plus utile reste celle avec votre propre tendance du matin. Guide complet : [fréquence cardiaque au repos selon l'âge](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Pouls normal chez la femme au repos",
-      "body": "La fréquence cardiaque au repos des femmes est supérieure de quelques battements à celle des hommes, surtout parce que le cœur est généralement plus petit et éjecte un peu moins de sang à chaque battement. Dans NHANES, la médiane était d'environ 74 bpm chez les femmes de 18–39 ans, 71 bpm à 40–59 ans et 70 bpm à partir de 60 ans, la moitié centrale se situant entre environ 64 et 82 bpm. La fréquence au repos varie aussi avec le cycle menstruel — elle est souvent plus élevée de quelques battements en seconde moitié de cycle — et elle augmente pendant la grossesse. Comparez donc ce qui est comparable : même moment de la journée, même phase du cycle, et votre moyenne hebdomadaire plutôt qu'un seul jour. Choisissez « Femme » dans le calculateur pour utiliser le tableau féminin."
+      "body": "La fréquence cardiaque au repos des femmes est supérieure de quelques battements à celle des hommes, surtout parce que le cœur est généralement plus petit et éjecte un peu moins de sang à chaque battement. Dans NHANES, la médiane était d'environ 74 bpm chez les femmes de 20–39 ans, 71 bpm à 40–59 ans et 70 bpm à 60–79 ans et 71 bpm à partir de 80 ans, la moitié centrale se situant entre environ 64 et 82 bpm. La fréquence au repos varie aussi avec le cycle menstruel — elle est souvent plus élevée de quelques battements en seconde moitié de cycle — et elle augmente pendant la grossesse. Comparez donc ce qui est comparable : même moment de la journée, même phase du cycle, et votre moyenne hebdomadaire plutôt qu'un seul jour. Choisissez « Femme » dans le calculateur pour utiliser le tableau féminin."
     },
     {
       "h2": "Pouls au repos trop élevé : pourquoi ?",
@@ -94,11 +94,11 @@
   "faq": [
     {
       "q": "Quelle est la fréquence cardiaque normale au repos selon l'âge ?",
-      "a": "Chez l'adulte, 60–100 bpm, et chez les personnes en bonne santé généralement entre 60 et 79 bpm. La médiane CDC NHANES est d'environ 69 bpm chez les hommes de 18–39 ans, 68 bpm à 40–59 ans et 67 bpm à 60 ans et plus ; chez les femmes, environ 74, 71 et 70 bpm. Elle varie à peine avec l'âge."
+      "a": "Chez l'adulte, 60–100 bpm, et chez les personnes en bonne santé généralement entre 60 et 79 bpm. La médiane CDC NHANES est d'environ 69 bpm chez les hommes de 20–39 ans, 68 bpm à 40–59 ans et 67 bpm à 60–79 ans et 68 bpm à 80 ans et plus ; chez les femmes, environ 74, 71, 70 et 71 bpm. Elle varie à peine avec l'âge."
     },
     {
       "q": "Quel est le pouls normal d'une femme au repos ?",
-      "a": "Quelques battements de plus que chez l'homme : la médiane est d'environ 74 bpm à 18–39 ans, 71 bpm à 40–59 ans et 70 bpm à partir de 60 ans, la moitié centrale des femmes se situant entre environ 64 et 82 bpm."
+      "a": "Quelques battements de plus que chez l'homme : la médiane est d'environ 74 bpm à 20–39 ans, 71 bpm à 40–59 ans et 70 bpm à 60–79 ans et 71 bpm à partir de 80 ans, la moitié centrale des femmes se situant entre environ 64 et 82 bpm."
     },
     {
       "q": "Un pouls au repos de 50, c'est bien ?",
@@ -126,7 +126,7 @@
     }
   ],
   "sourcesTitle": "Sources et méthodologie",
-  "methodology": "Les tableaux proviennent directement du rapport CDC/NCHS sur NHANES 1999–2008 (Ostchega et al. 2011, tableaux 2–3) : pouls au repos en position assise d'environ 17 000 adultes américains, hors personnes ayant une affection ou un traitement influençant le pouls. La tranche 18–39 ans utilise la ligne 20–39 ans et la tranche 60+ la ligne 60–79 ans. Votre percentile est interpolé entre les 5e et 95e percentiles publiés pour votre âge et votre sexe. Montres et bagues mesurent la fréquence au repos ou pendant le sommeil, généralement quelques bpm plus basse qu'une mesure assise.",
+  "methodology": "Les tableaux proviennent directement du rapport CDC/NCHS sur NHANES 1999–2008 (Ostchega et al. 2011, tableaux 2–3) : pouls au repos en position assise d'environ 17 000 adultes américains, hors personnes ayant une affection ou un traitement influençant le pouls. Les tranches sont les lignes de la source (20–39, 40–59, 60–79, 80+ ans). La source n’a pas de données propres pour 18–19 ans : ils sont comparés à la tranche 20–39 ans. Votre percentile est interpolé entre les 5e et 95e percentiles publiés pour votre âge et votre sexe. Montres et bagues mesurent la fréquence au repos ou pendant le sommeil, généralement quelques bpm plus basse qu'une mesure assise.",
   "sourcesContributes": [
     "Source directe des tableaux : percentiles du pouls au repos en position assise par âge et sexe, NHANES 1999–2008, hors affections et médicaments influençant le pouls (tableaux 2–3).",
     "Contexte clinique : 60–100 bpm est la plage normale standard ; plus basse chez les personnes très entraînées, légèrement plus élevée chez les femmes, et en partie génétique.",
@@ -138,5 +138,6 @@
     "hrv": "Calculateur de HRV selon l'âge",
     "camera": "Mesurer son pouls avec la caméra du téléphone",
     "zone2": "Fréquence cardiaque en Zone 2"
-  }
+  },
+  "youngNote": "La source n’a pas de données propres pour 18–19 ans : vous êtes comparé à la tranche 20–39 ans."
 }

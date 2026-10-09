@@ -71,11 +71,11 @@
   "sections": [
     {
       "h2": "Quantos batimentos são normais em repouso para cada idade?",
-      "body": "Em adultos, uma frequência cardíaca de repouso entre 60 e 100 bpm é considerada normal. Pessoas em boa forma muitas vezes ficam abaixo disso (muitas vezes abaixo de 60 bpm; muitos atletas de resistência de elite chegam a 40 bpm ou menos no ponto mais baixo do dia), e, em estudos populacionais, uma frequência cardíaca em repouso mais baixa está associada a menor mortalidade no longo prazo. Na pesquisa NHANES do CDC com adultos saudáveis dos EUA, a mediana do pulso em repouso, sentado, foi de cerca de 69 bpm nos homens de 18–39 anos, 68 bpm aos 40–59 e 67 bpm a partir dos 60 — praticamente estável ao longo da vida adulta. A metade central dos homens (p25–p75) ficou entre cerca de 60 e 77 bpm. Diferente da HRV, a frequência de repouso quase não muda com a idade em adultos; condicionamento, genética, sono e estresse pesam muito mais. Por isso a comparação mais útil é com a sua própria tendência matinal. Guia completo: [frequência cardíaca de repouso por idade](/articles/resting-heart-rate-by-age)."
+      "body": "Em adultos, uma frequência cardíaca de repouso entre 60 e 100 bpm é considerada normal. Pessoas em boa forma muitas vezes ficam abaixo disso (muitas vezes abaixo de 60 bpm; muitos atletas de resistência de elite chegam a 40 bpm ou menos no ponto mais baixo do dia), e, em estudos populacionais, uma frequência cardíaca em repouso mais baixa está associada a menor mortalidade no longo prazo. Na pesquisa NHANES do CDC com adultos saudáveis dos EUA, a mediana do pulso em repouso, sentado, foi de cerca de 69 bpm nos homens de 20–39 anos, 68 bpm aos 40–59 e 67 bpm aos 60–79 e 68 bpm a partir dos 80 — praticamente estável ao longo da vida adulta. A metade central dos homens (p25–p75) ficou entre cerca de 60 e 77 bpm. Diferente da HRV, a frequência de repouso quase não muda com a idade em adultos; condicionamento, genética, sono e estresse pesam muito mais. Por isso a comparação mais útil é com a sua própria tendência matinal. Guia completo: [frequência cardíaca de repouso por idade](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Qual a frequência cardíaca normal da mulher em repouso?",
-      "body": "A frequência de repouso das mulheres fica alguns batimentos acima da dos homens, principalmente porque o coração costuma ser menor e bombeia um pouco menos de sangue a cada batida. No NHANES, a mediana foi de cerca de 74 bpm nas mulheres de 18–39 anos, 71 bpm aos 40–59 e 70 bpm a partir dos 60, com a metade central entre aproximadamente 64 e 82 bpm. A frequência de repouso também varia com o ciclo menstrual — tende a ficar alguns batimentos mais alta na segunda metade do ciclo — e aumenta na gravidez. Então compare situações equivalentes: mesmo horário, mesma fase do ciclo e sua média semanal, e não um único dia. Escolha \"Mulher\" na calculadora para usar a tabela feminina."
+      "body": "A frequência de repouso das mulheres fica alguns batimentos acima da dos homens, principalmente porque o coração costuma ser menor e bombeia um pouco menos de sangue a cada batida. No NHANES, a mediana foi de cerca de 74 bpm nas mulheres de 20–39 anos, 71 bpm aos 40–59 e 70 bpm aos 60–79 e 71 bpm a partir dos 80, com a metade central entre aproximadamente 64 e 82 bpm. A frequência de repouso também varia com o ciclo menstrual — tende a ficar alguns batimentos mais alta na segunda metade do ciclo — e aumenta na gravidez. Então compare situações equivalentes: mesmo horário, mesma fase do ciclo e sua média semanal, e não um único dia. Escolha \"Mulher\" na calculadora para usar a tabela feminina."
     },
     {
       "h2": "Por que minha frequência cardíaca de repouso está alta?",
@@ -94,11 +94,11 @@
   "faq": [
     {
       "q": "Qual a frequência cardíaca de repouso normal por idade?",
-      "a": "Em adultos, 60–100 bpm; em pessoas saudáveis, geralmente entre 60 e 79. A mediana do CDC NHANES é de cerca de 69 bpm nos homens de 18–39 anos, 68 bpm aos 40–59 e 67 bpm aos 60+; nas mulheres, cerca de 74, 71 e 70 bpm. Quase não muda com a idade."
+      "a": "Em adultos, 60–100 bpm; em pessoas saudáveis, geralmente entre 60 e 79. A mediana do CDC NHANES é de cerca de 69 bpm nos homens de 20–39 anos, 68 bpm aos 40–59 e 67 bpm aos 60–79 e 68 bpm aos 80+; nas mulheres, cerca de 74, 71, 70 e 71 bpm. Quase não muda com a idade."
     },
     {
       "q": "Qual a frequência cardíaca normal da mulher em repouso?",
-      "a": "Alguns batimentos acima da dos homens: a mediana é de cerca de 74 bpm aos 18–39 anos, 71 bpm aos 40–59 e 70 bpm a partir dos 60, com a metade central das mulheres entre cerca de 64 e 82 bpm."
+      "a": "Alguns batimentos acima da dos homens: a mediana é de cerca de 74 bpm aos 20–39 anos, 71 bpm aos 40–59 e 70 bpm aos 60–79 e 71 bpm a partir dos 80, com a metade central das mulheres entre cerca de 64 e 82 bpm."
     },
     {
       "q": "Frequência cardíaca de repouso de 50 é bom?",
@@ -126,7 +126,7 @@
     }
   ],
   "sourcesTitle": "Fontes e metodologia",
-  "methodology": "As tabelas vêm diretamente do relatório do CDC/NCHS sobre o NHANES 1999–2008 (Ostchega et al. 2011, Tabelas 2–3): pulso em repouso, sentado, de cerca de 17.000 adultos dos EUA, excluindo pessoas com condições ou medicamentos que afetam o pulso. A faixa de 18–39 anos usa a linha de 20–39 e a faixa de 60+ usa a linha de 60–79. Seu percentil é interpolado entre os percentis 5 a 95 publicados para sua idade e sexo. Relógios e anéis medem a frequência em repouso ou durante o sono, que costuma ficar alguns bpm abaixo de uma medição sentada.",
+  "methodology": "As tabelas vêm diretamente do relatório do CDC/NCHS sobre o NHANES 1999–2008 (Ostchega et al. 2011, Tabelas 2–3): pulso em repouso, sentado, de cerca de 17.000 adultos dos EUA, excluindo pessoas com condições ou medicamentos que afetam o pulso. As faixas são as linhas da fonte (20–39, 40–59, 60–79, 80+). A fonte não tem dados próprios para 18–19 anos, então a comparação é com 20–39. Seu percentil é interpolado entre os percentis 5 a 95 publicados para sua idade e sexo. Relógios e anéis medem a frequência em repouso ou durante o sono, que costuma ficar alguns bpm abaixo de uma medição sentada.",
   "sourcesContributes": [
     "Fonte direta das tabelas: percentis do pulso em repouso, sentado, por idade e sexo do NHANES 1999–2008, excluindo condições e medicamentos que afetam o pulso (Tabelas 2–3).",
     "Contexto clínico: 60–100 bpm é a faixa normal padrão; mais baixa em pessoas muito condicionadas, um pouco mais alta em mulheres e em parte genética.",
@@ -138,5 +138,6 @@
     "hrv": "Calculadora de HRV por idade",
     "camera": "Meça seu pulso com a câmera do celular",
     "zone2": "Frequência cardíaca na Zona 2"
-  }
+  },
+  "youngNote": "A fonte não tem dados próprios para 18–19 anos, então a comparação é com a faixa de 20–39."
 }

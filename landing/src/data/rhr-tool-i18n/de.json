@@ -71,11 +71,11 @@
   "sections": [
     {
       "h2": "Normaler Ruhepuls: Was ist nach Alter normal?",
-      "body": "Bei Erwachsenen gilt ein Ruhepuls zwischen 60 und 100 S/min als normal. Fitte Menschen liegen oft niedriger (oft unter 60 S/min; viele Ausdauerathleten der Spitzenklasse erreichen am Tagestiefpunkt 40 S/min oder weniger), und in Bevölkerungsstudien geht ein niedrigerer Ruhepuls mit einer geringeren langfristigen Sterblichkeit einher. In der NHANES-Erhebung der CDC unter gesunden US-Erwachsenen lag der mediane Ruhepuls im Sitzen bei Männern mit 18–39 Jahren bei etwa 69 S/min, mit 40–59 bei 68 S/min und ab 60 bei 67 S/min — über das Erwachsenenleben fast konstant. Die mittlere Hälfte der Männer (p25–p75) lag zwischen etwa 60 und 77 S/min. Anders als die HRV verändert sich der Ruhepuls bei Erwachsenen mit dem Alter kaum; Fitness, Gene, Schlaf und Stress spielen eine viel größere Rolle. Deshalb ist der Vergleich mit deinem eigenen Morgenverlauf am aussagekräftigsten. Ausführlicher Ratgeber: [Ruhepuls nach Alter](/articles/resting-heart-rate-by-age)."
+      "body": "Bei Erwachsenen gilt ein Ruhepuls zwischen 60 und 100 S/min als normal. Fitte Menschen liegen oft niedriger (oft unter 60 S/min; viele Ausdauerathleten der Spitzenklasse erreichen am Tagestiefpunkt 40 S/min oder weniger), und in Bevölkerungsstudien geht ein niedrigerer Ruhepuls mit einer geringeren langfristigen Sterblichkeit einher. In der NHANES-Erhebung der CDC unter gesunden US-Erwachsenen lag der mediane Ruhepuls im Sitzen bei Männern mit 20–39 Jahren bei etwa 69 S/min, mit 40–59 bei 68 S/min und mit 60–79 bei 67 S/min und ab 80 bei 68 S/min — über das Erwachsenenleben fast konstant. Die mittlere Hälfte der Männer (p25–p75) lag zwischen etwa 60 und 77 S/min. Anders als die HRV verändert sich der Ruhepuls bei Erwachsenen mit dem Alter kaum; Fitness, Gene, Schlaf und Stress spielen eine viel größere Rolle. Deshalb ist der Vergleich mit deinem eigenen Morgenverlauf am aussagekräftigsten. Ausführlicher Ratgeber: [Ruhepuls nach Alter](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Ruhepuls-Tabelle Frau: normale Werte für Frauen",
-      "body": "Der Ruhepuls von Frauen liegt ein paar Schläge höher als bei Männern, vor allem weil das Herz meist kleiner ist und pro Schlag etwas weniger Blut pumpt. In NHANES lag der Median bei Frauen mit 18–39 Jahren bei etwa 74 S/min, mit 40–59 bei 71 S/min und ab 60 bei 70 S/min; die mittlere Hälfte lag zwischen etwa 64 und 82 S/min. Der Ruhepuls schwankt außerdem mit dem Zyklus — in der zweiten Zyklushälfte ist er meist ein paar Schläge höher — und steigt in der Schwangerschaft. Vergleiche also Gleiches mit Gleichem: dieselbe Tageszeit, dieselbe Zyklusphase und deinen Wochendurchschnitt statt eines einzelnen Tages. Wähle im Rechner „Frau“, um die Tabelle für Frauen zu nutzen."
+      "body": "Der Ruhepuls von Frauen liegt ein paar Schläge höher als bei Männern, vor allem weil das Herz meist kleiner ist und pro Schlag etwas weniger Blut pumpt. In NHANES lag der Median bei Frauen mit 20–39 Jahren bei etwa 74 S/min, mit 40–59 bei 71 S/min und mit 60–79 bei 70 S/min und ab 80 bei 71 S/min; die mittlere Hälfte lag zwischen etwa 64 und 82 S/min. Der Ruhepuls schwankt außerdem mit dem Zyklus — in der zweiten Zyklushälfte ist er meist ein paar Schläge höher — und steigt in der Schwangerschaft. Vergleiche also Gleiches mit Gleichem: dieselbe Tageszeit, dieselbe Zyklusphase und deinen Wochendurchschnitt statt eines einzelnen Tages. Wähle im Rechner „Frau“, um die Tabelle für Frauen zu nutzen."
     },
     {
       "h2": "Ruhepuls zu hoch — woran liegt das?",
@@ -94,11 +94,11 @@
   "faq": [
     {
       "q": "Welcher Ruhepuls ist nach Alter normal?",
-      "a": "Bei Erwachsenen 60–100 S/min, bei Gesunden meist zwischen 60 und 79 S/min. Der CDC-NHANES-Median liegt bei Männern mit 18–39 bei etwa 69 S/min, mit 40–59 bei 68 S/min und ab 60 bei 67 S/min; bei Frauen bei etwa 74, 71 und 70 S/min. Mit dem Alter ändert er sich kaum."
+      "a": "Bei Erwachsenen 60–100 S/min, bei Gesunden meist zwischen 60 und 79 S/min. Der CDC-NHANES-Median liegt bei Männern mit 20–39 bei etwa 69 S/min, mit 40–59 bei 68 S/min und mit 60–79 bei 67 S/min und ab 80 bei 68 S/min; bei Frauen bei etwa 74, 71, 70 und 71 S/min. Mit dem Alter ändert er sich kaum."
     },
     {
       "q": "Welcher Ruhepuls ist bei Frauen normal?",
-      "a": "Ein paar Schläge höher als bei Männern: Der Median liegt bei etwa 74 S/min mit 18–39, 71 S/min mit 40–59 und 70 S/min ab 60; die mittlere Hälfte der Frauen liegt zwischen etwa 64 und 82 S/min."
+      "a": "Ein paar Schläge höher als bei Männern: Der Median liegt bei etwa 74 S/min mit 20–39, 71 S/min mit 40–59 und 70 S/min mit 60–79 und 71 S/min ab 80; die mittlere Hälfte der Frauen liegt zwischen etwa 64 und 82 S/min."
     },
     {
       "q": "Ist ein Ruhepuls von 50 gut?",
@@ -126,7 +126,7 @@
     }
   ],
   "sourcesTitle": "Quellen & Methodik",
-  "methodology": "Die Tabellen stammen direkt aus dem CDC/NCHS-Bericht zu NHANES 1999–2008 (Ostchega et al. 2011, Tabellen 2–3): Ruhepuls im Sitzen von rund 17.000 US-Erwachsenen, ohne Personen mit Erkrankungen oder Medikamenten, die den Puls beeinflussen. Die Gruppe 18–39 nutzt die Zeile 20–39, die Gruppe 60+ die Zeile 60–79. Dein Perzentil wird zwischen den veröffentlichten 5.–95. Perzentilen für dein Alter und Geschlecht interpoliert. Uhren und Ringe messen den Ruhe- oder Schlafpuls, der meist ein paar S/min niedriger liegt als eine Messung im Sitzen.",
+  "methodology": "Die Tabellen stammen direkt aus dem CDC/NCHS-Bericht zu NHANES 1999–2008 (Ostchega et al. 2011, Tabellen 2–3): Ruhepuls im Sitzen von rund 17.000 US-Erwachsenen, ohne Personen mit Erkrankungen oder Medikamenten, die den Puls beeinflussen. Die Gruppen sind die Zeilen der Quelle (20–39, 40–59, 60–79, 80+). Für 18–19 Jahre hat die Quelle keine eigenen Daten, deshalb wird mit 20–39 verglichen. Dein Perzentil wird zwischen den veröffentlichten 5.–95. Perzentilen für dein Alter und Geschlecht interpoliert. Uhren und Ringe messen den Ruhe- oder Schlafpuls, der meist ein paar S/min niedriger liegt als eine Messung im Sitzen.",
   "sourcesContributes": [
     "Direkte Quelle der Tabellen: Perzentile des Ruhepulses im Sitzen nach Alter und Geschlecht aus NHANES 1999–2008, ohne pulsbeeinflussende Erkrankungen und Medikamente (Tabellen 2–3).",
     "Klinischer Kontext: 60–100 S/min ist der übliche Normalbereich; niedriger bei sehr Fitten, etwas höher bei Frauen und ist teilweise genetisch bedingt.",
@@ -138,5 +138,6 @@
     "hrv": "HRV-Rechner nach Alter",
     "camera": "Puls mit der Handykamera messen",
     "zone2": "Zone-2-Puls"
-  }
+  },
+  "youngNote": "Für 18–19 Jahre hat die Quelle keine eigenen Daten, deshalb wirst du mit 20–39 Jahren verglichen."
 }

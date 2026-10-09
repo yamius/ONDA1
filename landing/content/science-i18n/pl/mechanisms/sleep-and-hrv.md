@@ -1,5 +1,5 @@
 ---
-sourceHash: "bb28101534fc"
+sourceHash: 58de478c79ed
 title: "HRV i tętno podczas snu: dlaczego noc to najlepsze okno pomiarowe"
 metaTitle: "HRV i tętno podczas snu"
 metaDescription: "Co dzieje się z tętnem i HRV w ciągu nocy i w fazach snu, dlaczego odczyty nocne są najstabilniejszym oknem i co urządzenia ubieralne mogą, a czego nie mogą powiedzieć."
@@ -99,7 +99,7 @@ Noc jest stabilniejsza, ale nie czysta. Fazy snu, przebudzenia i pora snu nadal 
 
 ## Co wpływa na wartości nocne?
 
-Krótki lub przerywany sen, alkohol, ciężki dzień treningowy, infekcja, stres, późny posiłek i cykl miesiączkowy mogą przesunąć nocne tętno i HRV. Ich mechanizmy i dane naukowe opisuje strona [dlaczego HRV zmienia się z dnia na dzień](/science/mechanisms/hrv-day-to-day); nie powtarzamy ich tutaj.
+Krótki lub przerywany sen, alkohol, ciężki dzień treningowy, infekcja, stres, późny posiłek i cykl miesiączkowy mogą przesunąć nocne tętno i HRV. Ich mechanizmy i dane naukowe opisuje strona [dlaczego HRV zmienia się z dnia na dzień](/science/mechanisms/hrv-day-to-day); nie powtarzamy ich tutaj. Alkohol i cykl menstruacyjny mają osobne strony: [alkohol a HRV](/science/mechanisms/alcohol-and-hrv) oraz [cykl menstruacyjny a HRV](/science/mechanisms/menstrual-cycle-and-hrv).
 
 ## Co zaburzenia snu robią z nocnym rytmem serca?
 

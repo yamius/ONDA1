@@ -1,5 +1,5 @@
 ---
-sourceHash: "79992de6d516"
+sourceHash: 68b096acdcad
 title: "Exercice et HRV : ce que fait l’entraînement et ce que montre le guidage par la HRV"
 metaTitle: "Exercice et HRV : données sur l’entraînement guidé par la HRV"
 metaDescription: "Pourquoi la HRV baisse après un entraînement intense puis récupère, combien de temps cela prend et ce que montrent les essais d’entraînement guidé par la HRV face à un plan fixe."
@@ -22,6 +22,8 @@ keyPoints:
   - "Il n’est pas démontré que le guidage par la variabilité de la fréquence cardiaque aide les sportifs amateurs à long terme, ni quelle règle de décision fonctionne le mieux."
 imageAlt: "La silhouette d’un coureur au-dessus d’un tracé cardiaque : des battements réguliers avant l’effort, un long creux lent pendant la course, puis des battements de nouveau réguliers ensuite."
 evidenceMap:
+  - claim: "Dans une étude croisée après un entraînement par intervalles, respirer à six cycles par minute a été suivi d’une fréquence cardiaque plus basse que la respiration carrée."
+    limitation: "Une seule étude chez des étudiants actifs sur vélo de spinning ; le délai de retour à la fréquence cardiaque de repos n’a pas différé de façon significative."
   - claim: "La récupération autonome cardiaque complète après une seule séance aérobie prend plus de temps à mesure que l’intensité augmente."
     limitation: "Données regroupées d’études sur l’effort aérobie chez des sportifs et des personnes en bonne santé ; la cinétique individuelle varie et l’entraînement en force est peu couvert."
   - claim: "La réactivation parasympathique cardiaque après une séance d’entraînement est très individuelle."
@@ -76,7 +78,7 @@ Ce retour prend du temps, et ce temps dépend de la dureté de la séance. Une r
 
 Les mécanismes ne sont pas entièrement compris [S1]. Le modèle de travail de la revue comporte deux phases. À court terme après une séance, des signaux venant des muscles sollicités — par exemple l’acidité dans le muscle et le sang — sont probablement le principal facteur qui retient le frein vagal (le métaboréflexe). À moyen terme, au cours des heures et des jours suivants, les variations du volume sanguin après l’effort agissent vraisemblablement par le baroréflexe, la boucle sensible à la pression qui ajuste la fréquence cardiaque [S1]. Les auteurs eux-mêmes formulent ces deux volets du modèle avec prudence.
 
-Deux autres points déterminent la façon de comprendre une mesure après l’entraînement. D’abord, la vitesse de réactivation est très individuelle [S1]. Ensuite, la récupération autonome du cœur ne semble pas coïncider avec celle de tous les systèmes : les réserves d’énergie et le système neuromusculaire peuvent suivre leur propre calendrier [S1]. Un rythme cardiaque revenu à la normale ne signifie pas à lui seul que les muscles ont récupéré, et l’inverse est vrai aussi.
+Deux autres points déterminent la façon de comprendre une mesure après l’entraînement. D’abord, la vitesse de réactivation est très individuelle [S1]. Ensuite, la récupération autonome du cœur ne semble pas coïncider avec celle de tous les systèmes : les réserves d’énergie et le système neuromusculaire peuvent suivre leur propre calendrier [S1]. Un rythme cardiaque revenu à la normale ne signifie pas à lui seul que les muscles ont récupéré, et l’inverse est vrai aussi. La façon de respirer juste après une séance peut aussi compter : dans une étude après un entraînement par intervalles, respirer à six cycles par minute a davantage fait baisser la fréquence cardiaque que la respiration carrée [S9] ; voir [techniques de respiration comparées](/science/mechanisms/breathing-techniques-compared).
 
 ## Comment mesure-t-on la HRV autour de l’entraînement ?
 

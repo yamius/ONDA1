@@ -12,7 +12,7 @@ Public MCP server for the OpenAI Apps SDK. Spec: `D:\_PValley\_work\610_ONDA_Cha
 
 | Tool | What it does | Card | Bridge tag |
 |---|---|---|---|
-| `check_hrv` | One HRV number vs age norms (Apple Watch → SDNN table, others → RMSSD) | scale with “You” marker | `ct=chatgpt_hrv` |
+| `check_hrv` | One RMSSD value vs a published distribution from one wearable’s users (Natarajan 2020, Fitbit), nearest age point, optional sex; Apple Watch SDNN not compared | three zones (below / middle half / above) + disclaimer | `ct=chatgpt_hrv` |
 | `breathe_now` | Animated breathing guide with timer: coherent, 4-7-8, box, sigh, longer exhale | live circle | `ct=chatgpt_breathe` |
 | `find_practice` | 1–3 of the 18 free **adaptive** practices by goal / experience / position | practice list + “play free” → `/emoton` | `ct=chatgpt_practice`, `utm_campaign=chatgpt_practice` |
 | `compare` | 2–3 devices or apps from ONDA reviews: price, score, HRV metric, verdict, “works with ONDA” | side-by-side table | `ct=chatgpt_compare` |
@@ -31,7 +31,7 @@ cd landing && npx tsx scripts/export-chatgpt-data.ts
 | `data/practices.json` | `landing/src/data/adaptivePractices.ts` + `data/practice-tags.json` (hand tags: goal, level, position, one line) |
 | `lib/generated/hrv-norms.js`, `breathing.js` | the site modules, bundled as-is |
 
-Re-run after changing reviews, practices, HRV norms or breathing patterns, then redeploy. The script fails if a practice is untagged or a wearable review has no HRV metric.
+re-run after changing reviews, practices, the HRV distribution or breathing patterns, then redeploy. The script fails if a practice is untagged or a wearable review has no HRV metric.
 
 ## Run and test
 

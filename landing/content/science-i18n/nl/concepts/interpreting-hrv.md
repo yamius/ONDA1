@@ -1,5 +1,5 @@
 ---
-sourceHash: "6e6ab4ef8d19"
+sourceHash: 534dc086a30e
 title: "Wat één HRV-waarde je wel en niet kan vertellen"
 metaTitle: "HRV interpreteren: wat één waarde je vertelt"
 metaDescription: "Wat één HRV-meting echt laat zien, waarom laag geen diagnose is, waarom hoog niet altijd goed is en waarom vergelijken met anderen misleidt."
@@ -101,7 +101,7 @@ Een plotselinge, ongewoon hoge waarde is daarom een reden om de gegevens te cont
 Veel factoren bewegen HRV [S4]. De vaakst gemelde zijn:
 
 - een korte of slechte nacht;
-- alcohol;
+- alcohol (zie [alcohol en HRV](/science/mechanisms/alcohol-and-hrv));
 - een beginnende ziekte, zoals een verkoudheid of koorts;
 - een zware training of een zwaar trainingsblok;
 - de meetomstandigheden: een ander tijdstip, een andere houding, beweging, praten of een losse sensor.

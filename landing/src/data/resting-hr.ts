@@ -4,8 +4,13 @@
  * Percentiles are taken DIRECTLY from the CDC/NCHS NHANES 1999–2008 report
  * (Ostchega et al. 2011, National Health Statistics Reports No. 41, Tables 2–3):
  * seated resting pulse of ~17,000 U.S. adults, excluding people with a condition
- * or medication that affects pulse. Bands: 18–39 uses the 20–39 row, 60+ the
- * 60–79 row (the 80+ row is based on few people). Wearables that read resting
+ * or medication that affects pulse. Bands are labelled exactly as the source
+ * rows (20–39, 40–59, 60–79, 80+; the 80+ row is based on 197 men / 219 women).
+ * The table starts at 20: ages 18–19 are compared with 20–39 and the tool says the
+ * source has no separate data for them (the 16–19 row is never shown) — owner
+ * decision 2026-10-08. All percentiles are also published as approved facts
+ * (rhr.<sex>.<median|typical|p5|p10|p90|p95>.<age>, generated in science/facts.ts) — edit values
+ * only here, and only verbatim from the source tables. Wearables that read resting
  * or sleeping heart rate usually come out a few bpm lower than a seated check.
  * Educational, not medical advice.
  */
@@ -30,14 +35,16 @@ export interface RhrBand {
 
 export const RHR_BANDS: Record<RhrSex, RhrBand[]> = {
   male: [
-    { minAge: 18, maxAge: 39, label: '18–39', p5: 52, p10: 55, p25: 61, p50: 69, p75: 76, p90: 84, p95: 89 },
+    { minAge: 20, maxAge: 39, label: '20–39', p5: 52, p10: 55, p25: 61, p50: 69, p75: 76, p90: 84, p95: 89 },
     { minAge: 40, maxAge: 59, label: '40–59', p5: 52, p10: 55, p25: 61, p50: 68, p75: 77, p90: 85, p95: 90 },
-    { minAge: 60, maxAge: Infinity, label: '60+', p5: 50, p10: 54, p25: 60, p50: 67, p75: 75, p90: 84, p95: 91 },
+    { minAge: 60, maxAge: 79, label: '60–79', p5: 50, p10: 54, p25: 60, p50: 67, p75: 75, p90: 84, p95: 91 },
+    { minAge: 80, maxAge: Infinity, label: '80+', p5: 51, p10: 54, p25: 61, p50: 68, p75: 78, p90: 86, p95: 94 },
   ],
   female: [
-    { minAge: 18, maxAge: 39, label: '18–39', p5: 57, p10: 60, p25: 66, p50: 74, p75: 82, p90: 89, p95: 95 },
+    { minAge: 20, maxAge: 39, label: '20–39', p5: 57, p10: 60, p25: 66, p50: 74, p75: 82, p90: 89, p95: 95 },
     { minAge: 40, maxAge: 59, label: '40–59', p5: 56, p10: 59, p25: 64, p50: 71, p75: 79, p90: 86, p95: 92 },
-    { minAge: 60, maxAge: Infinity, label: '60+', p5: 56, p10: 59, p25: 64, p50: 70, p75: 78, p90: 86, p95: 92 },
+    { minAge: 60, maxAge: 79, label: '60–79', p5: 56, p10: 59, p25: 64, p50: 70, p75: 78, p90: 86, p95: 92 },
+    { minAge: 80, maxAge: Infinity, label: '80+', p5: 56, p10: 59, p25: 64, p50: 71, p75: 77, p90: 85, p95: 93 },
   ],
 }
 
@@ -58,6 +65,9 @@ export function bandForAge(age: number, sex: RhrSex): RhrBand {
   const bands = RHR_BANDS[sex]
   return bands.find((b) => age >= b.minAge && age <= b.maxAge) ?? bands[0]
 }
+
+/** Ages below the first source row (18–19): compared with 20–39, with a note in the tool. */
+export const RHR_MIN_SOURCE_AGE = 20
 
 function estimatePercentile(v: number, b: RhrBand): number {
   const pts: Array<[number, number]> = [

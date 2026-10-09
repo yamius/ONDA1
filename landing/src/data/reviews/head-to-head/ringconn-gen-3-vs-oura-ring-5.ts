@@ -10,7 +10,7 @@ const gen3VsOura5: HeadToHeadInput = {
   intro:
     'The RingConn Gen 3 has become the ring people cross-shop against Oura when they refuse a subscription. It brings a long battery, a haptic silent alarm and new vascular/sleep-apnea insights for a one-time $349. The Oura Ring 5 is the accuracy-and-app reference but charges a mandatory membership on top of the ring. It’s own-it-outright vs the best experience you keep paying for.',
   verdict:
-    'No subscription and more hardware features vs validated accuracy and the best app. The RingConn Gen 3 wins on cost model (one-time $349, no fee), battery and extras like haptic alerts; Oura has better-supported accuracy for its earlier generations overnight (there is no independent check of the current model), and the Ring 5 wins on sensors and app polish, for $399 plus ~$6/month. Pick by whether you refuse a subscription or want the reference ring.',
+    'No subscription and more hardware features vs the best-supported ring line and the best app. The RingConn Gen 3 wins on cost model (one-time $349, no fee), battery and extras like haptic alerts; Oura has better-supported accuracy for its earlier generations overnight (there is no independent check of the current model), and the Ring 5 wins on sensors and app polish, for $399 plus ~$6/month. Pick by whether you refuse a subscription or want the reference ring.',
   bestForA:
     'Choose the RingConn Gen 3 if you want a feature-rich, subscription-free ring with a long battery and silent haptic alerts, and you refuse an ongoing fee.',
   bestForB:
@@ -30,7 +30,7 @@ const gen3VsOura5: HeadToHeadInput = {
     },
     {
       q: 'Is the RingConn Gen 3 accurate enough to replace Oura?',
-      a: 'For most people its sleep and HRV tracking are good, and it adds features Oura lacks. But Oura is still the validated accuracy reference, so if precision is your priority, the Ring 5 has the edge — at the cost of a subscription.',
+      a: 'For most people its sleep and HRV tracking are good, and it adds features Oura lacks. But earlier Oura generations have the best independent overnight evidence (the Ring 5 itself has not been validated), so if precision is your priority, Oura is the better-supported line — at the cost of a subscription.',
     },
     {
       q: 'How much cheaper is RingConn over time?',

@@ -10,7 +10,7 @@ const series12VsRingPro: HeadToHeadInput = {
   intro:
     'Neither of these asks for a monthly fee, which makes it a cleaner fight than most watch-vs-ring comparisons. The September 2026 Series 12 brings Recovery HRV sampled about 24× more often, plus ECG and hypertension notifications, on a ~1-day battery. The Ultrahuman Ring Pro — the redesigned, US-available successor to the banned Ring Air — measures overnight HRV from the finger and claims a category-leading ~15-day battery. The question: one smartwatch that does everything, or a ring that just quietly records your nights?',
   verdict:
-    'No overall winner — it splits by use case. For hands-off overnight HRV and sleep with almost no charging, the Ultrahuman Ring Pro leads. For one device with ECG, hypertension notifications, apps and a newly credible HRV system, the Series 12 leads. Both are one-time purchases; the Ring Pro is the newer, less proven hardware.',
+    'No overall winner — it splits by use case. For hands-off overnight HRV and sleep with almost no charging, the Ultrahuman Ring Pro leads. For one device with ECG, hypertension notifications, apps and a much more frequent HRV system (Recovery/Overall HRV; no independent validation against ECG was found as of October 2026), the Series 12 leads. Both are one-time purchases; the Ring Pro is the newer, less proven hardware.',
   bestForA:
     'Choose the Series 12 if you want one do-everything smartwatch — ECG, hypertension notifications, apps, payments — with Recovery HRV and no subscription, and you accept a daily charge.',
   bestForB:

@@ -27,7 +27,7 @@ const ouraRing4VsWhoop50: HeadToHeadInput = {
   faq: [
     {
       q: 'Which is more accurate for HRV — Oura Ring 4 or Whoop 5.0?',
-      a: 'Oura Ring 4. In independent 2025–2026 comparisons against chest-strap reference (Polar H10), Oura’s overnight HRV pipeline shows marginally tighter agreement. The gap is small — both are well-validated consumer wearables — but it sits in Oura’s favour at rest and overnight.',
+      a: 'Oura Ring 4. In one independent overnight study against a chest strap (Dial 2025), Oura Ring 4 agreed slightly more closely than WHOOP 4.0; no independent validation of WHOOP 5.0 against ECG was found (as of October 2026).',
     },
     {
       q: 'Is Whoop 5.0 better for athletes than Oura Ring 4?',
@@ -48,7 +48,7 @@ Oura Ring 4 wins for the general HRV-tracking use case. The overnight signal is 
 
 ## How they really differ
 
-The hardware story is nearly equivalent — both are well-validated optical PPG wearables with strong overnight HRV pipelines. (If you're weighing the raw numbers, read [why your HRV is different on every device](/articles/hrv-different-every-device) — the two won't always agree, and that's expected.) The choice is mostly about the wrapper. Oura is a passive instrument with a polished analytics app and a credible sleep model. Whoop is an active coach: the band is more visible, the daily Recovery score is more directive, the Strain target is built into the experience.
+The hardware story is nearly equivalent — both are optical PPG wearables; the Ring 4 and the earlier WHOOP 4.0 each have one independent overnight check, the WHOOP 5.0 has none (as of October 2026). (If you're weighing the raw numbers, read [why your HRV is different on every device](/articles/hrv-different-every-device) — the two won't always agree, and that's expected.) The choice is mostly about the wrapper. Oura is a passive instrument with a polished analytics app and a credible sleep model. Whoop is an active coach: the band is more visible, the daily Recovery score is more directive, the Strain target is built into the experience.
 
 ## When the verdict flips
 

@@ -2442,7 +2442,7 @@
       "faq": [
         {
           "q": "Whoop 5.0 è più preciso del Garmin Venu 4?",
-          "a": "Nessuna differenza significativa. Entrambi misurano l'HRV di continuo durante la notte con PPG ottico, e i confronti indipendenti li collocano più o meno alla pari per precisione. La scelta non dipende dal sensore."
+          "a": "Nessuna differenza dimostrata. Entrambi misurano l'HRV di continuo durante la notte con PPG ottico. Né il WHOOP 5.0 né il Venu 4 hanno una validazione indipendente dell'HRV rispetto all'ECG (a ottobre 2026), quindi non c'è base per classificarne la precisione. La scelta non dipende dal sensore."
         },
         {
           "q": "Serve un abbonamento per Whoop o Garmin?",
@@ -2704,7 +2704,7 @@
       "faq": [
         {
           "q": "Polar H10 o Whoop: quale è più preciso per l’HRV?",
-          "a": "Polar H10. Misura il segnale elettrico del cuore come un ECG, e uno studio di validazione ha rilevato che i suoi intervalli RR corrispondevano strettamente a un Holter ECG a riposo e durante l’esercizio (Gilgen-Ammann et al., 2019). Whoop usa sensori ottici: nella sua validazione la frequenza cardiaca concordava bene con l’ECG, ma l’errore sull’HRV (RMSSD) era maggiore (Bellenger et al., 2021). Whoop va bene per i trend notturni; la H10 è il riferimento."
+          "a": "Polar H10. Misura il segnale elettrico del cuore come un ECG, e uno studio di validazione ha rilevato che i suoi intervalli RR corrispondevano strettamente a un Holter ECG a riposo e durante l’esercizio (Gilgen-Ammann et al., 2019). Whoop usa sensori ottici: in una validazione del precedente Whoop 2.0 la frequenza cardiaca concordava bene con l’ECG, ma l’errore sull’HRV (RMSSD) era maggiore (Bellenger et al., 2021); il 5.0 in sé non ha una validazione indipendente rispetto all’ECG (a ottobre 2026). Whoop va bene per i trend notturni; la H10 è il riferimento."
         },
         {
           "q": "Quanto costa Whoop rispetto a Polar H10?",

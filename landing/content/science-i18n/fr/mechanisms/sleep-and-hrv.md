@@ -1,5 +1,5 @@
 ---
-sourceHash: "bb28101534fc"
+sourceHash: 58de478c79ed
 title: "HRV et fréquence cardiaque pendant le sommeil : pourquoi la nuit est la meilleure fenêtre"
 metaTitle: "HRV et fréquence cardiaque pendant le sommeil"
 metaDescription: "Ce qui arrive à la fréquence cardiaque et à la HRV au fil de la nuit et des stades de sommeil, pourquoi les mesures nocturnes sont les plus stables et ce que les objets connectés peuvent dire ou non."
@@ -100,7 +100,7 @@ La nuit est plus stable, pas exempte de bruit. Les stades de sommeil, les éveil
 
 ## Qu’est-ce qui influence les valeurs nocturnes ?
 
-Un sommeil court ou entrecoupé, l’alcool, une journée d’entraînement intense, une infection, le stress, un repas tardif et le cycle menstruel peuvent tous modifier la fréquence cardiaque et la HRV d’une nuit. Leurs mécanismes et les données correspondantes sont présentés dans [pourquoi la HRV change d’un jour à l’autre](/science/mechanisms/hrv-day-to-day) et ne sont pas repris ici.
+Un sommeil court ou entrecoupé, l’alcool, une journée d’entraînement intense, une infection, le stress, un repas tardif et le cycle menstruel peuvent tous modifier la fréquence cardiaque et la HRV d’une nuit. Leurs mécanismes et les données correspondantes sont présentés dans [pourquoi la HRV change d’un jour à l’autre](/science/mechanisms/hrv-day-to-day) et ne sont pas repris ici. L’alcool et le cycle menstruel ont chacun leur propre page : [alcool et HRV](/science/mechanisms/alcohol-and-hrv) et [cycle menstruel et HRV](/science/mechanisms/menstrual-cycle-and-hrv).
 
 ## Que font les troubles du sommeil au rythme cardiaque nocturne ?
 

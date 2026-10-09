@@ -36,7 +36,7 @@ const ouraVsRingconn: HeadToHeadInput = {
     },
     {
       q: 'Which is more accurate?',
-      a: 'Marginally Oura on HRV pipeline. Both use optical PPG at similar precision; the gap is small and not the main reason to pick one over the other. Pick on subscription model and battery life instead.',
+      a: 'Oura Ring 4 has one independent overnight study; RingConn has only a preprint, so their precision cannot be compared (as of October 2026). Accuracy is not the main reason to pick one over the other. Pick on subscription model and battery life instead.',
     },
     {
       q: 'Can RingConn replace Oura long-term?',

@@ -28,7 +28,7 @@
         {
           "id": "rmssd-vs-sdnn",
           "q": "Che differenza c'è tra RMSSD e SDNN?",
-          "a": "Sono due modi di calcolare l'HRV. RMSSD considera le differenze tra battiti vicini e segue l'attività vagale; lo riportano Oura, Whoop, Garmin e Polar. SDNN è la dispersione complessiva di tutti gli intervalli in una finestra di tempo; Apple Watch riporta SDNN. I due non sono intercambiabili, quindi confronta ciascuno solo con i propri valori di riferimento. [Calcolatore HRV con entrambe le modalità →](/tools/hrv)"
+          "a": "Sono due modi di calcolare la HRV. L’RMSSD guarda le differenze tra battiti vicini e segue l’attività vagale; lo mostrano Oura, Whoop, Garmin e Polar. L’SDNN è la dispersione complessiva di tutti gli intervalli in una finestra; Apple Watch mostra l’SDNN. Non sono intercambiabili, quindi non confrontare mai un valore dell’uno con una tabella dell’altro. [Perché ogni dispositivo mostra una HRV diversa →](/articles/hrv-different-every-device)"
         },
         {
           "id": "hrv-vs-heart-rate",
@@ -48,22 +48,22 @@
         {
           "id": "what-is-a-good-hrv",
           "q": "Qual è un buon valore di HRV?",
-          "a": "Non esiste un unico valore di HRV \"buono\". Come orientamento, l'RMSSD notturno mediano è di circa 58 ms tra 18 e 29 anni e scende a circa 30 ms verso i 60 anni, con le persone sane molto distribuite attorno a queste mediane. Altrove troverai valori più alti (WHOOP, per esempio, colloca molti ventenni tra 55 e 105 ms) perché ogni fonte usa persone, dispositivi e momenti della giornata diversi. Un HRV \"buono\" è stabile o in crescita rispetto alla tua baseline. [HRV normale per età →](/articles/normal-hrv-by-age)"
+          "a": "Non esiste un unico valore di HRV buono. Tra circa 8 milioni di utenti Fitbit, l’RMSSD mediano tra le 6 e le 7 del mattino era {{fact:hrv.fitbit.rmssd.am.female.median.20-21}} nelle donne e {{fact:hrv.fitbit.rmssd.am.male.median.20-21}} negli uomini a 20–21 anni, e {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} e {{fact:hrv.fitbit.rmssd.am.male.median.60-61}} a 60–61 anni: un confronto con gli utenti di un solo dispositivo, non una norma medica. Altrove vedrai numeri più alti (WHOOP, per esempio, colloca molti ventenni tra 55 e 105 ms) perché ogni fonte usa persone, dispositivi e orari diversi. Una HRV «buona» è quella stabile o in crescita rispetto alla tua baseline. [HRV normale per età →](/articles/normal-hrv-by-age)"
         },
         {
           "id": "healthy-hrv",
           "q": "Qual è un HRV sano?",
-          "a": "Un HRV sano rimane nel tuo intervallo abituale e si riprende dopo stress, viaggi o un allenamento intenso. Gli intervalli nella popolazione sono molto ampi — due persone sane della stessa età possono differire di 40 ms o più. Usa i valori per età come orientamento e il tuo andamento di due settimane per decidere. [Scopri il tuo intervallo →](/tools/baseline)"
+          "a": "Una HRV sana resta nel tuo intervallo abituale e si riprende dopo stress, viaggi o un allenamento duro. Gli intervalli nella popolazione sono molto ampi: due persone sane della stessa età possono differire di 40 ms o più. Usa le tabelle per età come orientamento e il tuo andamento di due settimane per decidere. [Guarda il tuo intervallo →](/tools/baseline)"
         },
         {
           "id": "hrv-range-by-age",
           "q": "Quali sono i valori normali di HRV per età?",
-          "a": "L'RMSSD notturno tipico (la metà centrale degli adulti sani) è di circa 42–78 ms tra 18 e 29 anni, 36–68 ms tra i 30 e i 39, 30–56 ms tra i 40 e i 49 e più ristretto in seguito. L'SDNN di Apple Watch ha valori di riferimento propri e diversi. Inserisci età e valore per vedere il tuo percentile. [Calcolatore HRV per età →](/tools/hrv)"
+          "a": "Tra circa 8 milioni di utenti Fitbit, la metà centrale dell’RMSSD del mattino era {{fact:hrv.fitbit.rmssd.am.female.typical.20-21}} nelle donne e {{fact:hrv.fitbit.rmssd.am.male.typical.20-21}} negli uomini a 20–21 anni, {{fact:hrv.fitbit.rmssd.am.female.typical.40-41}} e {{fact:hrv.fitbit.rmssd.am.male.typical.40-41}} a 40–41 anni e {{fact:hrv.fitbit.rmssd.am.female.typical.60-61}} e {{fact:hrv.fitbit.rmssd.am.male.typical.60-61}} a 60–61 anni. Descrive gli utenti di un solo dispositivo, non una norma medica, e l’SDNN di Apple Watch non si può confrontare con questi valori. Inserisci età, sesso e il tuo valore per vedere dove ti collochi. [Calcolatore HRV per età →](/tools/hrv)"
         },
         {
           "id": "is-my-number-good",
           "q": "Un HRV di 20, 30 o 43 va bene? Perché il mio è solo 30?",
-          "a": "Dipende dalla tua età, dal dispositivo e dalla tua baseline. 20 ms può essere normale a 70 anni; 30 ms è tipico a 60 anni e bassino a 25; 43 ms è vicino alla media per chi ha 40–49 anni; 100 ms è alto per la maggior parte degli adulti ma normale per alcuni atleti. Un singolo numero senza contesto dice poco — verifica dove si colloca per la tua età, poi osserva l'andamento. [Verifica il tuo valore →](/tools/hrv)"
+          "a": "Dipende dalla tua età, dal dispositivo e dalla tua baseline. Tra gli utenti Fitbit la metà centrale dell’RMSSD del mattino andava da {{fact:hrv.fitbit.rmssd.am.female.typical.25-26}} (donne) e {{fact:hrv.fitbit.rmssd.am.male.typical.25-26}} (uomini) a 25–26 anni, e da {{fact:hrv.fitbit.rmssd.am.female.typical.60-61}} e {{fact:hrv.fitbit.rmssd.am.male.typical.60-61}} a 60–61 anni. Quindi 30 ms è a metà intervallo a 60 anni e piuttosto basso a 25, e 43 ms è un po’ sopra la mediana per chi ha circa 40 anni ({{fact:hrv.fitbit.rmssd.am.female.median.40-41}} nelle donne, {{fact:hrv.fitbit.rmssd.am.male.median.40-41}} negli uomini). 100 ms è alto per la maggior parte degli adulti, ma normale per alcuni atleti. Un numero senza contesto dice poco: guarda dove si colloca per la tua età, poi segui l’andamento. [Controlla il tuo valore →](/tools/hrv)"
         },
         {
           "id": "high-hrv",

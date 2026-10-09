@@ -2419,7 +2419,7 @@
       "faq": [
         {
           "q": "Whoop 5.0 和 Garmin Venu 4 哪个测 HRV 更准？",
-          "a": "没有实质差别。两者都通过光学 PPG 整夜连续追踪 HRV，独立比较认为两者准确度大致相当。选择不取决于传感器。"
+          "a": "没有证据表明两者有差别。两者都通过光学 PPG 整夜连续追踪 HRV。WHOOP 5.0 和 Venu 4 都没有以 ECG 为参照的独立 HRV 验证（截至 2026 年 10 月），因此无从比较两者的准确度。选择不取决于传感器。"
         },
         {
           "q": "Whoop 和 Garmin 需要付费订阅吗？",
@@ -2681,7 +2681,7 @@
       "faq": [
         {
           "q": "测 HRV，Polar H10 比 Whoop 更准吗？",
-          "a": "是的。Polar H10 像 ECG 一样测量心脏的电信号，一项验证研究发现，其 RR 间期在静息和运动中都与 ECG 动态心电图高度吻合（Gilgen-Ammann et al., 2019）。Whoop 使用光学传感器：在验证中心率与 ECG 一致性良好，但 HRV（RMSSD）误差更大（Bellenger et al., 2021）。看夜间趋势 Whoop 够用；H10 才是参考标准。"
+          "a": "是的。Polar H10 像 ECG 一样测量心脏的电信号，一项验证研究发现，其 RR 间期在静息和运动中都与 ECG 动态心电图高度吻合（Gilgen-Ammann et al., 2019）。Whoop 使用光学传感器：在对早期型号 Whoop 2.0 的验证中，心率与 ECG 一致性良好，但 HRV（RMSSD）误差更大（Bellenger et al., 2021）；5.0 本身尚无以 ECG 为参照的独立验证（截至 2026 年 10 月）。看夜间趋势 Whoop 够用；H10 才是参考标准。"
         },
         {
           "q": "Whoop 和 Polar H10 价格差多少？",

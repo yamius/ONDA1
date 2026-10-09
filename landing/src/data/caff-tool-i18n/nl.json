@@ -29,7 +29,8 @@
     "tableTitle": "Cafeïne in veelgedronken dranken",
     "colDrink": "Drankje",
     "colServing": "Portie",
-    "colCaffeine": "Cafeïne"
+    "colCaffeine": "Cafeïne",
+    "cupNote": "8,8 uur is de modelschatting van Gardiner 2023 voor een dosis van ongeveer 107 mg; de standaardkop in deze calculator (filterkoffie) bevat 95 mg."
   },
   "drinks": {
     "espresso": {
@@ -124,7 +125,7 @@
     }
   ],
   "sourcesTitle": "Bronnen en methode",
-  "methodology": "Het model gaat uit van eerste-orde-eliminatie: resterende cafeïne = dosis × 0,5^(uren ÷ halfwaardetijd), met een gangbare halfwaardetijd van 5,5 uur (4 uur bij snelle, 8,5 uur bij langzame afbrekers). Het laatste tijdstip is het moment waarop bij bedtijd minder dan ongeveer 35 mg — grofweg een derde kop koffie — over zou zijn. We hebben deze drempel gekalibreerd op de meta-analyse van Gardiner 2023: daarmee heeft een koffie van 107 mg ongeveer 8,8 uur nodig voor bedtijd, zoals het onderzoek aanraadt. Zeer gevoelige mensen doen er goed aan lager te mikken. Cafeïnehoeveelheden zijn gangbare gemiddelden. Educatieve schatting, geen medisch advies.",
+  "methodology": "Het model gaat uit van eerste-orde-eliminatie: resterende cafeïne = dosis × 0,5^(uren ÷ halfwaardetijd), met een gangbare halfwaardetijd van 5,5 uur (4 uur bij snelle, 8,5 uur bij langzame afbrekers). Het laatste tijdstip is het moment waarop bij bedtijd minder dan ongeveer 35 mg — grofweg een derde kop koffie — over zou zijn. We hebben deze drempel gekalibreerd op de meta-analyse van Gardiner 2023: daarmee heeft een koffie van 107 mg ongeveer 8,8 uur nodig voor bedtijd, zoals het onderzoek aanraadt. Onze berekening is iets voorzichtiger dan de modelschatting van Gardiner. Zeer gevoelige mensen doen er goed aan lager te mikken. Cafeïnehoeveelheden zijn gangbare gemiddelden. Educatieve schatting, geen medisch advies.",
   "sourcesContributes": [
     "Meta-analyse van 24 studies: cafeïne verkortte de totale slaap met ~45 min en de slaapefficiëntie met 7%; koffie (~107 mg) moet ≥8,8 u en een pre-workout (~217 mg) ≥13,2 u voor het slapen gedronken worden.",
     "400 mg cafeïne, 0, 3 of 6 uur voor het slapen ingenomen, verstoorde telkens de slaap; zelfs na 6 uur verkortte het de objectief gemeten slaap met meer dan een uur.",

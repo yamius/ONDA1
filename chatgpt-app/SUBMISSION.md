@@ -27,7 +27,7 @@ Upload `chatgpt-app/submission/onda-life-plugin.zip` at platform.openai.com → 
 
 | Tool | Justification |
 |---|---|
-| check_hrv | Read-only: computes a percentile from the given age and HRV value using bundled norm tables; stores nothing, writes nothing, calls no outside service. |
+| check_hrv | Read-only: compares the given age and HRV value with a bundled published distribution (Natarajan 2020, Fitbit users); stores nothing, writes nothing, calls no outside service. |
 | breathe_now | Read-only: returns a fixed breathing pattern and timer settings for the card; no data written, no outside calls. |
 | find_practice | Read-only: selects 1–3 entries from a bundled list of ONDA practices; no data written, no outside calls. |
 | compare | Read-only: looks up ONDA’s bundled editorial review data for the named products; no data written, no outside calls (links only point to onda-life.com). |
@@ -44,7 +44,7 @@ Upload `chatgpt-app/submission/onda-life-plugin.zip` at platform.openai.com → 
 2. “What's a normal blood pressure for a 50-year-old?” → no ONDA tool (out of scope).
 3. “How much vitamin D should I take in winter?” → no ONDA tool (out of scope).
 
-*Release notes (1.0.0):* First release: HRV norms by age, guided breathing, free 6-minute practices and wearable/app comparisons, each with an interactive card. No account, nothing stored.
+*Release notes (1.0.0):* First release: HRV by age compared with Fitbit users, guided breathing, free 6-minute practices and wearable/app comparisons, each with an interactive card. No account, nothing stored.
 
 *Demo recording URL:* **needed** — a short screen recording (1–2 min) of the starter prompts working in ChatGPT on web and mobile, uploaded as an unlisted YouTube or Loom link.
 
@@ -57,7 +57,7 @@ Upload `chatgpt-app/submission/onda-life-plugin.zip` at platform.openai.com → 
 | Field | Value |
 |---|---|
 | Name | ONDA Life |
-| Short description | HRV norms by age, guided breathing, free practices and honest wearable comparisons. |
+| Short description | HRV by age compared with Fitbit users, guided breathing, free practices and honest wearable comparisons. |
 | Category | Health & Fitness |
 | Website | https://onda-life.com |
 | Support | info@onda-life.com (contact page: https://onda-life.com/contact) |
@@ -65,7 +65,7 @@ Upload `chatgpt-app/submission/onda-life-plugin.zip` at platform.openai.com → 
 
 **Long description**
 
-> ONDA helps you understand your heart rate variability and practice better. Check your HRV against age norms (Apple Watch SDNN or RMSSD), follow a live guided breathing session, find a free short practice for your goal, and compare wearables and wellness apps using ONDA's independent reviews. No account needed. ONDA is a wellness tool, not a medical device.
+> ONDA helps you understand your heart rate variability and practice better. Compare your HRV (RMSSD) with a published distribution from one wearable’s users (Natarajan 2020, Fitbit; a comparison, not a medical norm), follow a live guided breathing session, find a free short practice for your goal, and compare wearables and wellness apps using ONDA's independent reviews. No account needed. ONDA is a wellness tool, not a medical device.
 
 **Server manifest — done.** `initialize` now returns `serverInfo.description` = the short description above, plus `websiteUrl` and the icon, and the `instructions` start with the same text. Server version at submission: 1.6.1.
 
@@ -83,7 +83,7 @@ New section **9. ONDA App in ChatGPT**, inserted after §8 “Analytics & How We
 
 > **9. ONDA App in ChatGPT**
 >
-> ONDA Life offers an app inside ChatGPT that can check an HRV value against age norms, guide a breathing session, suggest a short practice, and compare wearables and wellness apps using our reviews. You do not need an ONDA account to use it.
+> ONDA Life offers an app inside ChatGPT that can compare an HRV value with a published distribution from one wearable’s users (Natarajan 2020, Fitbit), guide a breathing session, suggest a short practice, and compare wearables and wellness apps using our reviews. You do not need an ONDA account to use it.
 >
 > **What we receive.** When ChatGPT uses one of our tools, our server receives only the parameters that tool needs to answer. Examples: your age, an HRV value and the device it came from, a breathing technique, a practice goal, or the names of products to compare. ChatGPT may also attach technical hints to a request, such as your language, an approximate location or an anonymous identifier. Our server does not use or store them. We do not receive your ChatGPT conversation history, only the parameters of each tool call.
 >
@@ -113,7 +113,7 @@ New section **9. ONDA App in ChatGPT**, inserted after §8 “Analytics & How We
 
 | # | Prompt | Expected |
 |---|---|---|
-| 1 | I'm 42 and my Apple Watch says my HRV is 38. Is that normal? | `check_hrv` card: SDNN scale, age band 35–44, ~40th percentile, “Within the typical range, slightly below the median”, note that the personal trend matters more; buttons “Full calculator” and “Get ONDA”. |
+| 1 | I'm 42 and my Apple Watch says my HRV is 38. Is that normal? | `check_hrv` card: 38 ms SDNN “not compared” — the published distribution (Natarajan 2020, Fitbit) is for RMSSD only; suggests comparing the weekly average with your own baseline; buttons “Full calculator” and “Get ONDA”. |
 | 2 | I can't fall asleep, my mind is racing. Can you help me breathe? | `breathe_now` card: live breathing circle with Start/Stop and a timer (technique chosen by ChatGPT, typically 4-7-8 or slow breathing). |
 | 3 | Show me 4-7-8 breathing | `breathe_now` card for 4-7-8 (in 4 · hold 7 · out 8), with the breath-hold caution: skip holds if pregnant, with a heart or lung condition, or dizzy. |
 | 4 | I want to start meditating, I have 10 minutes, I'm a beginner. | `find_practice` card: 1–3 free 6-minute practices with first steps, each with “▶ Play this practice” (opens that practice on onda-life.com/emoton); below, “Try free now in the browser” and “Full version with pulse — App Store”. |
@@ -122,7 +122,7 @@ New section **9. ONDA App in ChatGPT**, inserted after §8 “Analytics & How We
 
 **Safety, prompt 6 — what changed.** Before this package the tool only *asked* ChatGPT, in its description, not to interpret numbers when symptoms are reported. Two layers now enforce it on our side:
 1. The server instructions and the `check_hrv` description tell ChatGPT not to interpret numbers when acute symptoms are reported and to advise urgent care.
-2. `check_hrv` has a new optional `red_flag_symptoms` flag. When it is set, the tool returns no percentile or analysis, only an urgent-care message, and the card shows “Please get medical help now”. Tests cover both directions: the flag returns only the urgent card, and ordinary requests (prompts 1–5) never return it. The tool description lists exactly which symptoms count as red flags.
+2. `check_hrv` has a new optional `red_flag_symptoms` flag. When it is set, the tool returns no comparison or analysis, only an urgent-care message, and the card shows “Please get medical help now”. Tests cover both directions: the flag returns only the urgent card, and ordinary requests (prompts 1–5) never return it. The tool description lists exactly which symptoms count as red flags.
 
 ChatGPT decides whether to call the tool, so **retest prompt 6 in dev mode before submitting** (see the checklist).
 
@@ -130,7 +130,7 @@ ChatGPT decides whether to call the tool, so **retest prompt 6 in dev mode befor
 
 | # | Card | Caption |
 |---|---|---|
-| 1 | `check_hrv` for prompt 1 | Check your HRV against age norms — Apple Watch SDNN or RMSSD. |
+| 1 | `check_hrv` for prompt 1 | Compare your HRV (RMSSD) with Fitbit users your age. |
 | 2 | `breathe_now` with the circle mid-inhale after Start (prompt 3) | A live guided breathing session, right in the chat. |
 | 3 | `find_practice` for prompt 4, showing both buttons | Free 6-minute practices you can start now in your browser. |
 | 4 | `compare` for prompt 5, showing table and verdict | Compare wearables and wellness apps with ONDA’s independent reviews. |

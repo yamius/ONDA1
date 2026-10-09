@@ -28,7 +28,7 @@ const polarH10VsGarmin: HeadToHeadInput = {
   faq: [
     {
       q: 'Is Polar H10 more accurate than Garmin Venu 4?',
-      a: 'Yes, significantly. Polar H10 uses electrical ECG — the same measurement method as clinical ECG — with near-perfect agreement against reference instruments. Garmin uses optical PPG, which is accurate enough for trending but lags ECG by a real margin.',
+      a: 'Yes, significantly. Polar H10 uses electrical ECG — the same measurement method as clinical ECG — with near-perfect agreement against reference instruments. Garmin uses optical PPG; no independent validation of the Venu 4’s HRV against ECG was found (as of October 2026), so use it for trends.',
     },
     {
       q: 'Can Garmin Venu 4 replace Polar H10?',

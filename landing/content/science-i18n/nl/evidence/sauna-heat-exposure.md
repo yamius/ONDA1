@@ -1,5 +1,5 @@
 ---
-sourceHash: "33d11ee1d8b5"
+sourceHash: "6a056afa89f5"
 title: "Sauna en warmteblootstelling: wat het onderzoek laat zien"
 metaTitle: "Sauna en warmte: onderzoek en risico’s"
 metaDescription: "Finse sauna, infraroodcabines, hete baden en klinische warmtetherapie: wat studies laten zien voor hart, bloeddruk en stemming, en wat de echte risico’s zijn."
@@ -105,7 +105,7 @@ Bij deze veranderingen is het [autonome zenuwstelsel](/science/concepts/autonomi
 
 ## Infrarood of traditioneel: wat laten directe vergelijkingen zien?
 
-Heel weinig. Eén laboratoriumstudie verwarmde dezelfde jonge, gezonde volwassenen op drie manieren. Onderdompeling in heet water verhoogde de kerntemperatuur en het hartminuutvolume het meest; de verre-infraroodsauna verhoogde de kerntemperatuur het minst; alleen onderdompeling in heet water veranderde afweermarkers [S8]. Dat is één acute sessie. Geen enkele studie heeft de gezondheidsuitkomsten op lange termijn van infrarood- en traditionele sauna’s vergeleken. De studies bij hartfalen gebruikten infraroodsauna’s [S9], en de gegevens uit het Finse cohort komen alleen van traditionele sauna’s [S1]. Productreviews op deze site, zoals het overzicht van de [beste infraroodsauna’s](/reviews/best-infrared-sauna-2026) en de review van de [Finnleo Hallmark](/reviews/finnleo-hallmark), vergelijken apparaten, geen gezondheidseffecten.
+Heel weinig. Eén laboratoriumstudie verwarmde dezelfde jonge, gezonde volwassenen op drie manieren. Onderdompeling in heet water verhoogde de kerntemperatuur en het hartminuutvolume het meest; de verre-infraroodsauna verhoogde de kerntemperatuur het minst; alleen onderdompeling in heet water veranderde afweermarkers [S8]. Dat is één acute sessie. Geen enkele studie heeft de gezondheidsuitkomsten op lange termijn van infrarood- en traditionele sauna’s vergeleken. De studies bij hartfalen gebruikten infraroodsauna’s [S9], en de gegevens uit het Finse cohort komen alleen van traditionele sauna’s [S1]. Productreviews op deze site, zoals het overzicht van de [beste infraroodsauna’s](/reviews/compare/best-infrared-sauna-2026) en de review van de [Finnleo Hallmark](/reviews/finnleo-hallmark), vergelijken apparaten, geen gezondheidseffecten.
 
 ### Zweet je in de sauna gifstoffen uit?
 

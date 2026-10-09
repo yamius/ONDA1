@@ -29,7 +29,8 @@
     "tableTitle": "Teneur en caféine des boissons courantes",
     "colDrink": "Boisson",
     "colServing": "Portion",
-    "colCaffeine": "Caféine"
+    "colCaffeine": "Caféine",
+    "cupNote": "8,8 heures est l'estimation du modèle de Gardiner 2023 pour une dose d'environ 107 mg ; la tasse standard de ce calculateur (café filtre) contient 95 mg."
   },
   "drinks": {
     "espresso": {
@@ -124,7 +125,7 @@
     }
   ],
   "sourcesTitle": "Sources et méthodologie",
-  "methodology": "Le modèle utilise une élimination d'ordre 1 : caféine restante = dose × 0,5^(heures ÷ demi-vie), avec une demi-vie typique de 5,5 heures (4 heures pour un métabolisme rapide, 8,5 heures pour un métabolisme lent). L'heure limite est le moment à partir duquel il resterait moins d'environ 35 mg — soit à peu près un tiers de tasse de café — au coucher. Nous avons calibré ce seuil sur la méta-analyse de Gardiner 2023 : avec lui, un café de 107 mg nécessite environ 8,8 heures avant le coucher, comme le recommande l'étude. Les personnes très sensibles devraient viser plus bas. Les teneurs en caféine sont des moyennes. Estimation éducative, pas un avis médical.",
+  "methodology": "Le modèle utilise une élimination d'ordre 1 : caféine restante = dose × 0,5^(heures ÷ demi-vie), avec une demi-vie typique de 5,5 heures (4 heures pour un métabolisme rapide, 8,5 heures pour un métabolisme lent). L'heure limite est le moment à partir duquel il resterait moins d'environ 35 mg — soit à peu près un tiers de tasse de café — au coucher. Nous avons calibré ce seuil sur la méta-analyse de Gardiner 2023 : avec lui, un café de 107 mg nécessite environ 8,8 heures avant le coucher, comme le recommande l'étude. Notre calcul est un peu plus prudent que l'estimation du modèle de Gardiner. Les personnes très sensibles devraient viser plus bas. Les teneurs en caféine sont des moyennes. Estimation éducative, pas un avis médical.",
   "sourcesContributes": [
     "Méta-analyse de 24 études : la caféine a réduit le sommeil total d'environ 45 min et l'efficacité du sommeil de 7 % ; un café (~107 mg) doit être bu ≥8,8 h et un pre-workout (~217 mg) ≥13,2 h avant le coucher.",
     "400 mg de caféine pris 0, 3 ou 6 heures avant le coucher ont tous perturbé le sommeil ; même à 6 heures, le sommeil mesuré objectivement a diminué de plus d'une heure.",

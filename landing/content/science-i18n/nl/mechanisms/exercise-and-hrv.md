@@ -1,5 +1,5 @@
 ---
-sourceHash: "79992de6d516"
+sourceHash: 68b096acdcad
 title: "Training en HRV: wat inspanning doet en wat HRV-gestuurd trainen laat zien"
 metaTitle: "Training en HRV: bewijs voor HRV-gestuurd trainen"
 metaDescription: "Waarom HRV na een zware training daalt en weer herstelt, hoe lang dat duurt en wat studies naar HRV-gestuurd trainen laten zien vergeleken met een vast trainingsschema."
@@ -21,6 +21,8 @@ keyPoints:
   - "Of sturing op hartslagvariabiliteit recreatieve sporters op de lange termijn helpt, en welke beslisregel het beste werkt, is niet aangetoond."
 imageAlt: "De omtrek van een hardloper boven een hartcurve: regelmatige slagen vóór de inspanning, een lange, trage dip tijdens het hardlopen en daarna weer gelijkmatige slagen."
 evidenceMap:
+  - claim: "In één crossoverstudie na intervaltraining volgde op ademen met zes ademhalingen per minuut een lagere hartslag dan op boxademhaling."
+    limitation: "Eén studie bij actieve studenten op een spinningfiets; de tijd tot herstel van de rusthartslag verschilde niet significant."
   - claim: "Volledig autonoom herstel van het hart na één aerobe training duurt langer naarmate de intensiteit stijgt (fact training.recovery.time)."
     limitation: "Samengevoegd uit studies naar aerobe inspanning bij sporters en gezonde mensen; het verloop verschilt per persoon en krachttraining is slecht onderzocht."
   - claim: "De parasympathische reactivatie van het hart na een training is sterk individueel."
@@ -75,7 +77,7 @@ Die terugkeer kost tijd, en hoeveel tijd hangt af van hoe zwaar de training was.
 
 De mechanismen zijn niet volledig begrepen [S1]. Het werkmodel van de review kent twee fasen. Op korte termijn na een training zijn signalen uit de werkende spieren — bijvoorbeeld verzuring van spieren en bloed — waarschijnlijk de belangrijkste factor die de vagale rem tegenhoudt (de metaboreflex). Op middellange termijn, in de uren en dagen daarna, werken veranderingen in het bloedvolume na inspanning vermoedelijk via de baroreflex, de drukgevoelige regelkring die de hartslag bijstelt [S1]. De auteurs formuleren beide delen van dit model zelf voorzichtig.
 
-Twee andere punten bepalen hoe je een meting na training moet begrijpen. Ten eerste is de snelheid van de reactivatie sterk individueel [S1]. Ten tweede lijkt het autonome herstel van het hart niet samen te vallen met het herstel van elk systeem: energievoorraden en het neuromusculaire systeem kunnen hun eigen tijdpad volgen [S1]. Een hartritme dat weer normaal is, betekent op zichzelf niet dat de spieren hersteld zijn, en andersom geldt hetzelfde.
+Twee andere punten bepalen hoe je een meting na training moet begrijpen. Ten eerste is de snelheid van de reactivatie sterk individueel [S1]. Ten tweede lijkt het autonome herstel van het hart niet samen te vallen met het herstel van elk systeem: energievoorraden en het neuromusculaire systeem kunnen hun eigen tijdpad volgen [S1]. Een hartritme dat weer normaal is, betekent op zichzelf niet dat de spieren hersteld zijn, en andersom geldt hetzelfde. Hoe je vlak na een sessie ademt, kan ook uitmaken: in één studie na intervaltraining verlaagde ademen met zes ademhalingen per minuut de hartslag meer dan boxademhaling [S9] — zie [ademhalingstechnieken vergeleken](/science/mechanisms/breathing-techniques-compared).
 
 ## Hoe wordt HRV rond training gemeten?
 

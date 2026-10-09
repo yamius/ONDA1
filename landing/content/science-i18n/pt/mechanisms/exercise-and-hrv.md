@@ -1,5 +1,5 @@
 ---
-sourceHash: "79992de6d516"
+sourceHash: 68b096acdcad
 title: "Exercício e HRV: o que o treino faz e o que mostra o treino guiado pela HRV"
 metaTitle: "Exercício e HRV: evidências sobre o treino guiado pela HRV"
 metaDescription: "Por que a HRV cai depois de um treino pesado e se recupera, quanto tempo isso leva e o que estudos de treino guiado pela HRV mostram em comparação com um plano fixo."
@@ -21,6 +21,8 @@ keyPoints:
   - "Não foi demonstrado se o treino guiado pela variabilidade da frequência cardíaca ajuda praticantes amadores no longo prazo, nem qual regra de decisão funciona melhor."
 imageAlt: "O contorno de um corredor sobre um traçado cardíaco: batimentos regulares antes do exercício, uma queda longa e lenta durante a corrida e, depois, batimentos regulares de novo."
 evidenceMap:
+  - claim: "Em um estudo cruzado depois de um treino intervalado, respirar a seis respirações por minuto foi seguido de uma frequência cardíaca mais baixa do que a respiração quadrada."
+    limitation: "Um único estudo em estudantes ativos em bicicleta de spinning; o tempo de retorno à frequência cardíaca de repouso não diferiu de forma significativa."
   - claim: "A recuperação autonômica cardíaca completa após uma única sessão aeróbica leva mais tempo à medida que a intensidade aumenta."
     limitation: "Dados reunidos de estudos com exercício aeróbico em atletas e pessoas saudáveis; a cinética individual varia e o treino de força é pouco coberto."
   - claim: "A reativação parassimpática cardíaca após uma sessão de treino é altamente individual."
@@ -75,7 +77,7 @@ Essa volta leva tempo, e quanto depende de quão pesada foi a sessão. Uma revis
 
 Os mecanismos não são totalmente compreendidos [S1]. O modelo de trabalho da revisão tem duas fases. No curto prazo após uma sessão, sinais dos músculos em atividade — por exemplo, a acidez no músculo e no sangue — provavelmente são o principal fator que segura o freio vagal (o metaborreflexo). No médio prazo, ao longo das horas e dos dias seguintes, as mudanças no volume de sangue após o exercício possivelmente agem pelo barorreflexo, o circuito sensível à pressão que ajusta a frequência cardíaca [S1]. Os próprios autores descrevem as duas partes desse modelo com cautela.
 
-Mais dois pontos influenciam como entender uma medição depois do treino. Primeiro, a velocidade da reativação é altamente individual [S1]. Segundo, a recuperação autonômica do coração não parece coincidir com a recuperação de todos os sistemas: as reservas de energia e o sistema neuromuscular podem seguir seu próprio cronograma [S1]. Um ritmo cardíaco que voltou ao normal não significa, por si só, que os músculos se recuperaram, e o contrário também vale.
+Mais dois pontos influenciam como entender uma medição depois do treino. Primeiro, a velocidade da reativação é altamente individual [S1]. Segundo, a recuperação autonômica do coração não parece coincidir com a recuperação de todos os sistemas: as reservas de energia e o sistema neuromuscular podem seguir seu próprio cronograma [S1]. Um ritmo cardíaco que voltou ao normal não significa, por si só, que os músculos se recuperaram, e o contrário também vale. A forma de respirar logo depois de uma sessão também pode importar: em um estudo depois de um treino intervalado, respirar a seis respirações por minuto baixou a frequência cardíaca mais do que a respiração quadrada [S9]; veja [técnicas de respiração comparadas](/science/mechanisms/breathing-techniques-compared).
 
 ## Como a HRV é medida em torno do treino?
 

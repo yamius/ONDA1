@@ -1,10 +1,10 @@
 {
   "science": "背后的科学 → [RMSSD：这项 HRV 指标反映什么，又不反映什么](/science/concepts/rmssd) · [SDNN：这项 HRV 指标测量什么，又不测量什么](/science/concepts/sdnn) · [HRV 个人基线：为什么你自己的常态比任何常模都重要](/science/concepts/hrv-baseline) · [单个 HRV 数值能告诉你什么、不能告诉你什么](/science/concepts/interpreting-hrv)",
   "meta": {
-    "title": "按年龄计算 HRV — 免费 HRV 正常范围对照表 | ONDA Life",
-    "description": "免费 HRV 计算器：输入年龄和心率变异性（Oura、Whoop、Garmin 的 RMSSD 或 Apple Watch 的 SDNN），查看同龄百分位与 HRV 正常范围。",
+    "title": "按年龄和性别计算 HRV — 与 Fitbit 用户比较 | ONDA Life",
+    "description": "免费 HRV 计算器：输入年龄、性别和早晨的 RMSSD，看看它与约 800 万名同龄 Fitbit 用户相比处在什么位置。这只是比较，不是医学标准。",
     "appName": "按年龄计算 HRV",
-    "appDescription": "免费计算器：将你的心率变异性（RMSSD 或 Apple Watch 的 SDNN）与已发表的年龄常模对比，给出大致百分位。"
+    "appDescription": "免费计算器：把你早晨的 RMSSD 与已发表的约 800 万名同龄同性别 Fitbit 用户的分布（Natarajan 2020）进行比较。不是医学标准。"
   },
   "breadcrumb": {
     "home": "首页",
@@ -12,65 +12,71 @@
     "current": "HRV 计算器"
   },
   "h1": "按年龄计算 HRV",
-  "capsule": "输入年龄和心率变异性（HRV），即可了解你的数值在同龄人中大致处于什么位置。如果数据来自 Oura、Whoop、Garmin 或 Polar，请选择 RMSSD；如果来自 Apple Watch，请选择 SDNN。常模来自同行评审研究，但比任何百分位都更重要的，是你自己连续数周的 HRV 趋势。",
+  "capsule": "输入年龄、性别和心率变异性（HRV，以 RMSSD 毫秒值表示），看看它与同龄 Fitbit 用户相比处在什么位置。数据来自一项约 800 万名 Fitbit 用户的大型已发表研究（Natarajan 2020）。它展示的是 HRV 在同一种设备用户中的分布，而不是医学标准。你自己几周来的趋势更重要。",
   "imageAlt": "按年龄计算 HRV — ONDA Life 免费互动式心率变异性计算器",
-  "metric": {
-    "label": "你的设备显示的是",
-    "rmssd": "RMSSD（Oura、Whoop、Garmin、Polar）",
-    "sdnn": "SDNN（Apple Watch）",
-    "hintRmssd": "Oura：准备度 → HRV 平衡 / 平均 HRV。Whoop：Recovery（恢复）→ HRV。Garmin：HRV 状态（夜间平均值）。Polar：Nightly Recharge 夜间恢复 → HRV。",
-    "hintSdnn": "iPhone“健康”App → 浏览 → 心脏 → 心率变异性。Apple Watch 以 ms（毫秒）显示 SDNN，尽量使用 7 天平均值。"
+  "sex": {
+    "label": "性别",
+    "female": "女性",
+    "male": "男性",
+    "unspecified": "不愿透露"
   },
+  "metricNote": "请输入以毫秒为单位的 RMSSD——Oura、Whoop、Garmin、Polar 和 Fitbit 显示的就是这种 HRV。Apple Watch 显示的是另一种指标 SDNN，因此这张表不适用于 Apple Watch 的数值。",
+  "hint": "Oura：准备度 → 平均 HRV。Whoop：Recovery → HRV。Garmin：HRV 状态（夜间平均）。Polar：Nightly Recharge → HRV。Fitbit：健康指标 → HRV。",
   "age": {
     "label": "年龄",
     "placeholder": "例如 34"
   },
   "value": {
-    "labelRmssd": "HRV — RMSSD（ms）",
-    "labelSdnn": "HRV — SDNN（ms）",
+    "label": "HRV — RMSSD（毫秒）",
     "placeholder": "例如 45"
   },
   "result": {
-    "percentile": "约第 {{p}} 百分位",
-    "band": "{{band}} 岁"
+    "compared": "与 {{band}} 岁的 Fitbit 用户（{{sex}}）相比：中间一半为 {{p25}}–{{p75}} 毫秒，中位数为 {{p50}} 毫秒（RMSSD，早上 6–7 点）。",
+    "comparedPosition": "与 {{band}} 岁的 Fitbit 用户（{{sex}}）相比：你的数值{{position}}（中间一半为 {{p25}}–{{p75}} 毫秒，中位数为 {{p50}} 毫秒）。",
+    "position": {
+      "lower": "低于中间一半",
+      "middle": "处于中间一半",
+      "higher": "高于中间一半"
+    },
+    "sexFemale": "女性",
+    "sexMale": "男性",
+    "nearest": "该研究每隔五年给出一个两岁跨度的年龄组。我们使用最接近你年龄的那一组，不估算组与组之间的数值。",
+    "edgeYoung": "数据从 20 岁开始，所以与最年轻的一组（20–21 岁）比较。",
+    "edgeOld": "数据到 61 岁为止，所以与最年长的一组（60–61 岁）比较。",
+    "infoOnly": "仅供参考——{{band}} 岁的 Fitbit 用户（{{sex}}）：中间一半为 {{p25}}–{{p75}} 毫秒，中位数为 {{p50}} 毫秒（RMSSD，早上 6–7 点）。",
+    "noCompare": "已发表的数据到 61 岁为止；对你的年龄不做比较。"
   },
-  "tiers": {
-    "low": "低于同龄水平",
-    "below": "低于平均",
-    "average": "平均水平",
-    "above": "高于平均",
-    "excellent": "优秀"
+  "verdicts": {
+    "lower": "低于大多数同龄 Fitbit 用户",
+    "middle": "处于同龄 Fitbit 用户的中间一半",
+    "higher": "高于大多数同龄 Fitbit 用户"
   },
+  "disclaimerLine": "这是与同一种设备用户的比较，不是医学标准。你自己的趋势更重要。",
+  "deviceNote": "该分布来自 Fitbit 腕部数据；其他设备（Oura、Whoop、Garmin、Polar、Apple）计算 HRV 的方法不同，因此这一比较只是近似的。",
   "summaries": {
-    "low": "{{v}} ms 处于 {{band}} 岁人群的较低区间。睡眠不佳、饮酒、生病或高强度训练后出现一次低值很常见——重要的是你自己数周的趋势，而不是某一晚。",
-    "below": "{{v}} ms 低于 {{band}} 岁人群的典型中位数（约 {{median}} ms）。睡眠、饮酒时间、Zone 2 有氧训练和慢呼吸，是证据最充分的改善手段。",
-    "average": "{{v}} ms 接近 {{band}} 岁人群的中位数（约 {{median}} ms），属于健康、典型的静息 HRV。记录你自己的基线，目标是趋势上升。",
-    "above": "{{v}} ms 高于 {{band}} 岁人群的中位数（约 {{median}} ms），说明恢复能力良好。坚持规律睡眠和充分恢复来保持它。",
-    "excellent": "{{v}} ms 处于 {{band}} 岁人群的最高区间——常见于训练有素、恢复充分的人。"
+    "lower": "低于中间一半的数值很常见，单独来看说明不了什么：遗传、设备、测量时间、睡得少、饮酒、生病或高强度训练都可能是原因。请留意你的 7 天平均值是否一直低于你平时的范围。",
+    "middle": "四分之一的用户数值更低，四分之一更高。比这个比较更有用的是：接下来几周你自己的 HRV 是保持稳定还是在上升。",
+    "higher": "高于中间一半的数值在体能好、休息充分的人中很常见，但设备和遗传也有影响。如果突然远高于你平时的范围，值得再核实一下。"
   },
-  "sdnnNote": "Apple Watch 每天白天和夜间会多次进行短时测量（约一分钟），因此 SDNN 数值的波动比夜间 RMSSD 更大。请对比 7 天平均值，而不是单次读数。",
-  "invalid": "请输入有效的年龄（18–120）和 HRV 数值（1–300 ms）。",
-  "disclaimer": "仅为科普性估算，不构成医疗建议。百分位为近似值，基于已发表的 HRV 常模研究。与单次读数或人群对比相比，你自己数周的趋势和基线重要得多。HRV 每晚都会随睡眠、饮酒、疾病和训练负荷而变化。",
+  "invalid": "请输入有效的年龄（18–120）和 HRV 毫秒值（1–300）。",
+  "disclaimer": "仅供学习的比较，不是医疗建议，也不是诊断。参照是一项已发表研究中 Fitbit 用户早晨 RMSSD 的分布，而不是医学标准。你自己几周的趋势远比单次读数重要。HRV 会随睡眠、饮酒、疾病和训练负荷每晚变化。",
   "tables": {
-    "rmssdTitle": "各年龄 HRV（RMSSD）— 夜间常模",
-    "rmssdCaption": "适用于 Oura、Whoop、Garmin 和 Polar（夜间或静息 RMSSD）。",
-    "sdnnTitle": "各年龄 HRV（SDNN）— Apple Watch 常模",
-    "sdnnCaption": "适用于 Apple Watch（SDNN）。数据来自 Voss 2015（5 分钟静息心电图），男女合并。",
+    "title": "按年龄和性别的 HRV（RMSSD）— Fitbit 用户中的分布",
+    "caption": "早上 6–7 点的 RMSSD，手腕传感器，约 800 万名 Fitbit 用户（Natarajan 2020，补充表 S3）。中位数和中间一半（第 25–75 百分位）。不是医学标准。",
     "age": "年龄",
-    "p10": "偏低（p10）",
-    "p25": "低于平均（p25）",
-    "p50": "中位数（p50）",
-    "p75": "高于平均（p75）",
-    "p90": "优秀（p90）"
+    "femaleMedian": "女性 — 中位数",
+    "femaleRange": "女性 — 中间一半",
+    "maleMedian": "男性 — 中位数",
+    "maleRange": "男性 — 中间一半"
   },
   "sections": [
     {
-      "h2": "HRV 正常范围：不同年龄多少算好？",
-      "body": "好的 HRV 是指接近或高于同龄中位数，更重要的是，相对于你自己的基线保持稳定或上升。对于夜间 RMSSD（Oura、Whoop、Garmin、Polar），中位数大约为：18–29 岁 58 ms，30 多岁 50 ms，40 多岁 42 ms，50 多岁 36 ms，60 多岁 30 ms，70 岁以后 26 ms。30 多岁人群中间一半（p25–p75）的范围约为 36 到 68 ms，也就是说，同一年龄段内部的差异比不同年龄段之间的差距还大。因此，仅凭一张对照表做一次比较，说明不了太多。HRV 随年龄下降，是因为迷走神经对心脏的调节减弱、血管变硬——这是正常现象。良好的体能、睡眠和规律的慢呼吸可以减缓这种下降。完整指南：[各年龄 HRV 正常范围](/articles/normal-hrv-by-age)。"
+      "h2": "我这个年龄多少 HRV 算好？",
+      "body": "不存在一个统一的“好” HRV 数值。按年龄和性别划分的最大已发表数据集——约 800 万名 Fitbit 用户（Natarajan 2020）——显示了早上 6–7 点 RMSSD 的分布：20–21 岁时中位数女性为 {{f20}} 毫秒、男性为 {{m20}} 毫秒，40–41 岁时为 {{f40}} 和 {{m40}} 毫秒，60–61 岁时为 {{f60}} 和 {{m60}} 毫秒。同一年龄组内部的差异大于各组之间的差距，因此单次比较本身说明不了多少。HRV 往往随年龄下降；体能、睡眠和规律的慢呼吸会影响你所处的位置。更有用的问题是：相对于你的基线，你自己的 HRV 是保持稳定还是在上升。完整指南：[各年龄段的正常 HRV](/articles/normal-hrv-by-age)。"
     },
     {
-      "h2": "Apple Watch 的 HRV 正常范围（SDNN）",
-      "body": "Apple Watch 不显示 RMSSD，而是显示 SDNN——另一种 HRV 指标，因此它的数值不能和 Oura 或 Whoop 的对照表直接比较。在 Voss 2015 对约 1,900 名健康成年人的研究（5 分钟静息心电图）中，SDNN 中位数约为：18–34 岁 46 ms，35–44 岁 42 ms，45–54 岁 34 ms，55–64 岁 29 ms，65 岁及以上 26 ms。在上方选择“SDNN（Apple Watch）”，即可得到你相对这些常模的百分位。需要注意：Apple Watch 每天白天和夜间多次进行约一分钟的短时测量，所以单次数值比实验室记录更分散。请使用“健康”App 中的 7 天平均值。如果平均值连续几天明显低于你的平常水平，这比任何单个数字都更有参考价值。延伸阅读：[为什么不同设备的 HRV 都不一样](/articles/hrv-different-every-device)。"
+      "h2": "那 Apple Watch 的 HRV 呢？",
+      "body": "Apple Watch 显示的是 SDNN 而不是 RMSSD，来自每天数次及夜间约一分钟的短时测量。SDNN 和 RMSSD 是不同的指标，因此上面的 Fitbit 表不适用于 Apple Watch 的数值，这个计算器也不会比较它们。请改为把“健康”应用中的 7 天平均值与之前几周对比。如果平均值连续几天明显低于平时水平，这比任何单个数字都更说明问题。延伸阅读：[为什么每台设备的 HRV 都不一样](/articles/hrv-different-every-device)。"
     },
     {
       "h2": "HRV 低是什么原因？",
@@ -88,16 +94,16 @@
   "faqTitle": "HRV 计算器常见问题",
   "faq": [
     {
-      "q": "HRV 正常范围是多少？不同年龄多少算好？",
-      "a": "夜间 RMSSD 的中位数约为：18–29 岁 58 ms，30–39 岁 50 ms，40–49 岁 42 ms，50–59 岁 36 ms，60–69 岁 30 ms。Apple Watch SDNN 约为：18–34 岁 46 ms，35–44 岁 42 ms，45–54 岁 34 ms，55–64 岁 29 ms。你自己的趋势比平均值更重要。"
+      "q": "我这个年龄多少 HRV 算好？",
+      "a": "在约 800 万名 Fitbit 用户中，早上 6–7 点 RMSSD 的中位数在 20–21 岁时女性为 {{f20}} 毫秒、男性为 {{m20}} 毫秒，40–41 岁时为 {{f40}} 和 {{m40}} 毫秒，60–61 岁时为 {{f60}} 和 {{m60}} 毫秒。这描述的是同一种设备的用户，不是医学标准。你自己的趋势比任何平均值都重要。"
     },
     {
-      "q": "Apple Watch 的 HRV 多少算正常？",
-      "a": "Apple Watch 显示的是 SDNN。健康成年人的中位数大约为：18–34 岁 46 ms，35–44 岁 42 ms，45–54 岁 34 ms，55–64 岁 29 ms，65 岁及以上 26 ms（Voss 2015）。由于是短时测量，请使用 7 天平均值。"
+      "q": "这个计算器是怎么工作的？",
+      "a": "它使用已发表的 Fitbit 用户早晨 RMSSD 表（Natarajan 2020），按你的性别选出最接近你年龄的年龄组，告诉你的数值是低于中间一半、处于其中还是高于中间一半。它不估算年龄组之间的数值，也不给出百分位。"
     },
     {
-      "q": "RMSSD 还是 SDNN？我的设备显示的是哪一个？",
-      "a": "Oura、Whoop、Garmin 和 Polar 显示 RMSSD，Apple Watch 显示 SDNN。请在计算器中选择对应选项——两者测量方式不同，使用各自独立的常模表。"
+      "q": "Apple Watch 能用吗？",
+      "a": "不能。Apple Watch 显示的是 SDNN，这是另一种来自短时测量的 HRV 指标，无法与 RMSSD 表比较。请把 Apple Watch 的 7 天平均值与你之前几周对比。"
     },
     {
       "q": "HRV 低是什么原因？",
@@ -116,13 +122,12 @@
       "a": "HRV 对睡眠、饮酒、饮食、压力、疾病和训练都很敏感。每天 10–20 ms 的波动属于正常，所以请比较每周平均值，而不是单晚数据。"
     },
     {
-      "q": "这些 HRV 常模数据来自哪里？",
-      "a": "RMSSD 区间基于 Nunan 2010 荟萃分析、Umetani 1998 年龄曲线和 Voss 2015 队列推导，并针对可穿戴设备的夜间读数做了调整。SDNN 表直接来自 Voss 2015（约 1,900 名健康成年人）。完整引用见“来源与方法”部分。"
+      "q": "这些数字从哪里来？",
+      "a": "来自一项约 800 万名 Fitbit 用户的已发表研究（Natarajan 2020，Lancet Digital Health，补充表 S3）：在早上 6–7 点佩戴者静止时由手腕传感器测得的 RMSSD，按用户自报的年龄和性别分组。四位作者中有三位是 Fitbit 员工，研究由 Fitbit 资助。这是同一种设备用户中的分布，不是医学标准。"
     }
   ],
   "sourcesTitle": "来源与方法",
-  "methodologyRmssd": "RMSSD 区间是推导而来，并非照搬单一数据集。大多数常模研究报告的是白天短时记录按年龄段的均值 ± 标准差或中位数。我们综合了这些中心值（Nunan 2010），套用逐个年龄段的下降幅度（Umetani 1998）以及年龄/性别离散度（Voss 2015），再考虑 RMSSD 的右偏分布，换算成近似百分位。该表对应的是夜间 RMSSD——即 Oura、Whoop 和 Garmin 在副交感神经张力最高时测得的数值——因此其中位数高于 Nunan 2010 中白天合并数据约 42 ms 的水平。",
-  "methodologySdnn": "SDNN 表直接来自 Voss 等人 2015 年的研究（约 1,900 名健康成年人，仰卧 5 分钟静息心电图）：我们将已发表的女性（表 5）和男性（表 7）各年龄段均值 ± 标准差按样本量加权合并，并因 SDNN 呈右偏分布而采用对数正态拟合换算成百分位。最年轻的区间使用 25–34 岁数据，最年长的区间使用 65–74 岁数据。Apple Watch 基于短时（约 1 分钟）样本读取 SDNN，因此单次数值比实验室记录更分散——请比较每周平均值。",
+  "methodology": "数字来源：一项已发表研究，Natarajan 等 2020（Lancet Digital Health）附录表 S3——约 800 万名 Fitbit 用户在早上 6–7 点的 RMSSD，由手腕光学传感器（PPG）在一天中的静止时段测得，年龄和性别为用户自报。表中按两岁跨度的年龄组（20–21、25–26 … 60–61）分别给出女性和男性的中位数及第 25–75 百分位。四位作者中有三位是 Fitbit 员工，研究由 Fitbit 资助。Fitbit 用户并非人群的随机样本，其他设备和胸带心电图得到的数字不同，20 岁以下和 61 岁以上没有数据。我们的用法：选取最接近你年龄的年龄组（18–19 岁 → 20–21；61 岁以上 → 60–61），不在组间插值。低于第 25 百分位显示“低于大多数”，高于第 75 百分位显示“高于大多数”，否则显示“处于中间一半”。这是与同一种设备用户的比较，不是医学标准，也不是诊断。",
   "embed": {
     "title": "嵌入这个 HRV 计算器",
     "text": "可免费嵌入你的网站或博客——粘贴这段代码即可。它以内联方式渲染（无需 iframe），无依赖、开源，并附带指向 ONDA Life 的署名链接。",
@@ -140,9 +145,7 @@
     "trackers": "最佳 HRV 追踪设备（2026）"
   },
   "sourcesContributes": [
-    "汇总 44 项健康成人研究的 RMSSD/SDNN 参考值（汇总静息 RMSSD ≈ 42 ms）——确定集中趋势。",
-    "经典的年龄下降曲线——时域 HRV（含 RMSSD）逐个十年下降——决定各年龄段的偏移。",
-    "大型健康队列（n ≈ 1,900；5 分钟仰卧心电图），按年龄和性别分层的短时 HRV。用于确定 RMSSD 的离散度（p10–p90 宽度），并且是 SDNN（Apple Watch）表格的直接来源：女性（Table 5）和男性（Table 7）各十年龄段均值 ± SD。",
-    "RMSSD/SDNN 的基础定义及文献所依据的测量标准。"
+    "表格的直接来源：约 800 万名 Fitbit 用户早上 6–7 点的 RMSSD（手腕光学传感器，静止时段），按年龄和性别给出中位数及第 25–75 百分位。四位作者中有三位是 Fitbit 员工，研究由 Fitbit 资助。",
+    "RMSSD 的定义以及文献所依据的测量标准。"
   ]
 }

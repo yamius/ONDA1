@@ -46,9 +46,9 @@ The Samsung Galaxy Ring is the most direct alternative to the Oura Ring 4, and i
 
 ## What are the downsides of Samsung Galaxy Ring?
 
-The ring is tied to its ecosystem. It is built around Samsung Health and Android — there is no iPhone support — and data access is comparatively closed: no open developer API, limited export, your numbers largely staying inside Samsung's app. On raw accuracy it trails the Oura Ring 4, which still holds the strongest independent sleep-stage validation in the ring category.
+The ring is tied to its ecosystem. It is built around Samsung Health and Android — there is no iPhone support — and data access is comparatively closed: no open developer API, limited export, your numbers largely staying inside Samsung's app. On accuracy, no independent validation of the Galaxy Ring's HRV against ECG was found (as of October 2026). Oura Ring 4 has one independent overnight HRV study, and the best-known ring sleep-staging study is a check of Oura Gen 3 sleep staging; the study was funded by Oura.
 
-**2026 note.** The accuracy picture is unchanged: independent 2026 comparisons continue to rank Oura's rings first for overnight HRV and sleep-stage agreement, with the Galaxy Ring a competent step behind. The Galaxy Ring's real case is still the no-subscription, native-Android integration — not a claim of matching Oura on precision.
+**2026 note.** The accuracy picture is unchanged: no independent comparison that includes the Galaxy Ring was found, and no independent validation of its HRV against ECG (as of October 2026). The Galaxy Ring's real case is still the no-subscription, native-Android integration — not a claim of matching Oura on precision.
 
 ## Who should buy Samsung Galaxy Ring?
 
@@ -71,7 +71,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   faq: [
     { q: "Does the Samsung Galaxy Ring work with iPhone?", a: "No. It is Android and Samsung Health only, with no iPhone support, so it suits Samsung phone owners specifically." },
     { q: "Does the Samsung Galaxy Ring need a subscription?", a: "No — it is $399 one-time with no subscription, a standing cost advantage over the Oura Ring, which requires a roughly $6-per-month membership for full data." },
-    { q: "Is the Samsung Galaxy Ring as accurate as Oura?", a: "Close, but a step behind. Independent testing still rates Oura first for overnight HRV and sleep-stage agreement; the Galaxy Ring is a competent, subscription-free alternative for Android users." },
+    { q: "Is the Samsung Galaxy Ring as accurate as Oura?", a: "Unknown: no independent validation of the Galaxy Ring's HRV against ECG was found (as of October 2026); Oura Ring 4 has one overnight study. The Galaxy Ring is a competent, subscription-free alternative for Android users." },
   ],
 
   datePublished: '2026-05-15',

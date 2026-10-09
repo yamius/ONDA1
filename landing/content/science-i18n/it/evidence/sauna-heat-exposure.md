@@ -1,5 +1,5 @@
 ---
-sourceHash: "33d11ee1d8b5"
+sourceHash: "6a056afa89f5"
 title: "Sauna ed esposizione al calore: che cosa mostrano le evidenze"
 metaTitle: "Sauna ed esposizione al calore: evidenze e rischi"
 metaDescription: "Sauna finlandese, cabine a infrarossi, bagni caldi e terapia del calore clinica: che cosa mostrano gli studi su cuore, pressione e umore, e i rischi reali."
@@ -105,7 +105,7 @@ Questi cambiamenti coinvolgono il [sistema nervoso autonomo](/science/concepts/a
 
 ## Infrarossi o tradizionale: che cosa mostrano i confronti diretti?
 
-Molto poco. Uno studio di laboratorio ha riscaldato in tre modi gli stessi giovani adulti sani. L’immersione in acqua calda ha aumentato di più la temperatura interna e la gittata cardiaca; la sauna a infrarossi lontani ha aumentato di meno la temperatura interna; solo l’immersione in acqua calda ha modificato i marcatori immunitari [S8]. Si tratta di una sola seduta acuta. Nessuno studio ha confrontato gli esiti di salute a lungo termine delle saune a infrarossi e di quelle tradizionali. Gli studi sullo scompenso cardiaco hanno usato saune a infrarossi [S9], e i dati della coorte finlandese provengono solo da saune tradizionali [S1]. Le recensioni di prodotti su questo sito, come la rassegna delle [migliori saune a infrarossi](/reviews/best-infrared-sauna-2026) e la recensione della [Finnleo Hallmark](/reviews/finnleo-hallmark), confrontano dispositivi, non effetti sulla salute.
+Molto poco. Uno studio di laboratorio ha riscaldato in tre modi gli stessi giovani adulti sani. L’immersione in acqua calda ha aumentato di più la temperatura interna e la gittata cardiaca; la sauna a infrarossi lontani ha aumentato di meno la temperatura interna; solo l’immersione in acqua calda ha modificato i marcatori immunitari [S8]. Si tratta di una sola seduta acuta. Nessuno studio ha confrontato gli esiti di salute a lungo termine delle saune a infrarossi e di quelle tradizionali. Gli studi sullo scompenso cardiaco hanno usato saune a infrarossi [S9], e i dati della coorte finlandese provengono solo da saune tradizionali [S1]. Le recensioni di prodotti su questo sito, come la rassegna delle [migliori saune a infrarossi](/reviews/compare/best-infrared-sauna-2026) e la recensione della [Finnleo Hallmark](/reviews/finnleo-hallmark), confrontano dispositivi, non effetti sulla salute.
 
 ### La sauna fa eliminare le tossine con il sudore?
 

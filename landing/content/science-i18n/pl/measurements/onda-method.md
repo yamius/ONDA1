@@ -1,5 +1,5 @@
 ---
-sourceHash: "fed00e9a1b1b"
+sourceHash: c9a1794847a3
 title: "Jak ONDA mierzy i interpretuje sygnały twojego ciała"
 metaTitle: "Jak ONDA mierzy i odczytuje sygnały twojego ciała"
 metaDescription: "Skąd ONDA bierze dane, jak buduje twoją osobistą linię bazową i sygnały, co zostaje w telefonie i jakie są granice każdej pokazywanej liczby."
@@ -61,7 +61,7 @@ Sygnał pojawia się, gdy ostatniej nocy tętno spoczynkowe wzrosło, HRV spadł
 
 Gdy twoje noce pozostają w korytarzu, zamiast sygnałów obowiązuje inny rytm: {{fact:onda.checkin.steadyCadence}}, {{fact:onda.checkin.dailyCap}}. Bez danych z zegarka spokojne wiadomości przychodzą {{fact:onda.checkin.noWatchCadence}}. Spokojne wiadomości można wyłączyć w Ustawieniach.
 
-Wartości nocne zmieniają się z codziennych powodów, takich jak alkohol, późny posiłek, trening, podróż czy krótka noc — dlatego jedna noc nigdy nie jest traktowana jak werdykt. Zobacz, [dlaczego HRV zmienia się z dnia na dzień](/science/mechanisms/hrv-day-to-day).
+Wartości nocne zmieniają się z codziennych powodów, takich jak alkohol, późny posiłek, trening, podróż czy krótka noc — dlatego jedna noc nigdy nie jest traktowana jak werdykt. Zobacz, [dlaczego HRV zmienia się z dnia na dzień](/science/mechanisms/hrv-day-to-day). O samym alkoholu: [alkohol a HRV](/science/mechanisms/alcohol-and-hrv).
 
 ## Co widzisz podczas praktyki?
 

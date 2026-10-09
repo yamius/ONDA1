@@ -3,20 +3,17 @@ import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { homePathFor, langFromPath, langHref, type Lang } from '../i18n'
-import { HRV_SOURCES, bandsFor, interpretHrv, type HrvMetric, type HrvResult } from '../data/hrv-norms'
+import { HRV_AGE_POINTS, HRV_COPY_VARS, HRV_SOURCES, interpretHrv, interpretHrvBoth, type HrvResult, type HrvSexChoice } from '../data/hrv-norms'
 import { hrvToolCopy, fill, HRV_TOOL_PATH, type HrvToolCopy } from '../data/hrv-tool-i18n'
+import { HRV_WIDGET_VERSION } from '../data/hrv-widget-version'
 import { SourcesSection } from '../components/SourcesSection'
 import { UseInClaudeLink } from '../components/UseInClaudeLink'
-import { ordinal } from '../utils/ordinal'
 
-const TIER_COLOR: Record<string, string> = {
-  low: 'text-red-400',
-  below: 'text-amber-400',
-  average: 'text-terminal-cyan',
-  above: 'text-terminal-green',
-  excellent: 'text-terminal-green',
+const VERDICT_COLOR: Record<string, string> = {
+  lower: 'text-amber-400',
+  middle: 'text-terminal-cyan',
+  higher: 'text-terminal-green',
 }
-
 
 /** Render inline markdown links ([text](/path)) as router links. */
 function Rich({ text, lang }: { text: string; lang: Lang }) {
@@ -41,7 +38,7 @@ export function HrvInterpreterPage() {
   const lang = langFromPath(pathname)
   const c: HrvToolCopy = hrvToolCopy(lang)
 
-  const [metric, setMetric] = useState<HrvMetric>('rmssd')
+  const [sex, setSex] = useState<HrvSexChoice>('female')
   const [age, setAge] = useState('')
   const [hrv, setHrv] = useState('')
 
@@ -54,12 +51,19 @@ export function HrvInterpreterPage() {
     const a = parseInt(age, 10)
     const h = parseFloat(hrv.replace(',', '.'))
     if (!a || !h || a < 18 || a > 120 || h <= 0 || h > 300) return null
-    return interpretHrv(a, h, metric)
-  }, [age, hrv, metric])
-
-  const percentileText = result
-    ? fill(c.result.percentile, { p: lang === 'en' ? ordinal(result.percentile).replace(/^~/, '') : result.percentile })
-    : ''
+    return sex === 'unspecified' ? null : interpretHrv(a, h, sex)
+  }, [age, hrv, sex])
+  // "Prefer not to say": compare with both groups, no single verdict.
+  const both = useMemo(() => {
+    const a = parseInt(age, 10)
+    const h = parseFloat(hrv.replace(',', '.'))
+    if (sex !== 'unspecified' || !a || !h || a < 18 || a > 120 || h <= 0 || h > 300) return null
+    return interpretHrvBoth(a, h)
+  }, [age, hrv, sex])
+  const ageNote = (() => {
+    const a = parseInt(age, 10)
+    return a < HRV_AGE_POINTS[0].minAge ? c.result.edgeYoung : a > HRV_AGE_POINTS[HRV_AGE_POINTS.length - 1].maxAge ? c.result.edgeOld : c.result.nearest
+  })()
   const hub = lang === 'en' ? '/tools' : `/${lang}/tools`
 
   return (
@@ -86,29 +90,27 @@ export function HrvInterpreterPage() {
       {/* Calculator */}
       <div className="mb-6 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5 md:p-6">
         <fieldset className="mb-4">
-          <legend className="mb-2 block font-mono text-xs uppercase tracking-widest text-white/50">{c.metric.label}</legend>
-          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2" role="radiogroup">
-            {(['rmssd', 'sdnn'] as const).map((m) => (
+          <legend className="mb-2 block font-mono text-xs uppercase tracking-widest text-white/50">{c.sex.label}</legend>
+          <div className="grid grid-cols-3 gap-2" role="radiogroup">
+            {(['female', 'male', 'unspecified'] as const).map((s) => (
               <button
-                key={m}
+                key={s}
                 type="button"
                 role="radio"
-                aria-checked={metric === m}
-                onClick={() => setMetric(m)}
-                className={`rounded-lg border px-3 py-2 text-left font-mono text-xs transition-colors ${
-                  metric === m
+                aria-checked={sex === s}
+                onClick={() => setSex(s)}
+                className={`rounded-lg border px-3 py-2 font-mono text-xs transition-colors ${
+                  sex === s
                     ? 'border-terminal-green/60 bg-terminal-green/10 text-terminal-green'
                     : 'border-white/15 text-white/60 hover:border-white/30'
                 }`}
               >
-                {m === 'rmssd' ? c.metric.rmssd : c.metric.sdnn}
+                {s === 'female' ? c.sex.female : s === 'male' ? c.sex.male : c.sex.unspecified}
               </button>
             ))}
           </div>
-          <p className="mt-2 font-mono text-[11px] leading-relaxed text-white/40">
-            {metric === 'rmssd' ? c.metric.hintRmssd : c.metric.hintSdnn}
-          </p>
         </fieldset>
+        <p className="mb-4 font-mono text-[11px] leading-relaxed text-white/50">{c.metricNote}</p>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <label className="block">
@@ -120,9 +122,7 @@ export function HrvInterpreterPage() {
             />
           </label>
           <label className="block">
-            <span className="mb-1 block font-mono text-xs uppercase tracking-widest text-white/50">
-              {metric === 'rmssd' ? c.value.labelRmssd : c.value.labelSdnn}
-            </span>
+            <span className="mb-1 block font-mono text-xs uppercase tracking-widest text-white/50">{c.value.label}</span>
             <input
               type="text" inputMode="decimal" placeholder={c.value.placeholder}
               value={hrv} onChange={(e) => setHrv(e.target.value)}
@@ -130,31 +130,67 @@ export function HrvInterpreterPage() {
             />
           </label>
         </div>
+        <p className="mt-2 font-mono text-[11px] leading-relaxed text-white/40">{c.hint}</p>
 
-        {result && (
+        {result && result.verdict && (
           <div className="mt-6" aria-live="polite">
-            <div className="mb-2 flex flex-wrap items-baseline justify-between gap-2">
-              <span className={`text-2xl font-bold ${TIER_COLOR[result.tier]}`}>{c.tiers[result.tier]}</span>
-              <span className="font-mono text-sm text-white/50">
-                {percentileText} · {fill(c.result.band, { band: result.band.label })}
-              </span>
-            </div>
-            <div className="mb-4 h-3 w-full overflow-hidden rounded-full bg-white/10">
-              <div
-                className="h-full rounded-full bg-gradient-to-r from-terminal-cyan to-terminal-green transition-all"
-                style={{ width: `${result.barPct}%` }}
-              />
-            </div>
-            <p className="font-mono text-xs leading-relaxed text-white/60">
-              {fill(c.summaries[result.tier], { v: hrv.replace(',', '.'), band: result.band.label, median: result.band.p50 })}
+            <p className={`mb-2 text-2xl font-bold ${VERDICT_COLOR[result.verdict]}`}>{c.verdicts[result.verdict]}</p>
+            <p className="mb-2 font-mono text-xs leading-relaxed text-white/70">{c.disclaimerLine}</p>
+            <p className="mb-2 font-mono text-xs leading-relaxed text-white/70">{c.deviceNote}</p>
+            <p className="mb-2 font-mono text-xs leading-relaxed text-white/60">
+              {fill(c.result.compared, {
+                sex: result.sex === 'female' ? c.result.sexFemale : c.result.sexMale,
+                band: result.point.label,
+                p25: result.ref.p25,
+                p75: result.ref.p75,
+                p50: result.ref.p50,
+              })}{' '}
+              {ageNote}
             </p>
-            {metric === 'sdnn' && (
-              <p className="mt-3 font-mono text-[11px] leading-relaxed text-amber-300/70">{c.sdnnNote}</p>
-            )}
+            <p className="font-mono text-xs leading-relaxed text-white/60">{c.summaries[result.verdict]}</p>
             <UseInClaudeLink lang={lang} variant="hrv" className="mt-4" />
           </div>
         )}
-        {!result && (age || hrv) && (
+        {/* Age above HRV_MAX_COMPARED_AGE: no verdict, 60–61 shown for information only. */}
+        {(result ? !result.verdict : both ? !both.female.verdict : false) && (
+          <div className="mt-6" aria-live="polite">
+            <p className="mb-2 font-mono text-xs leading-relaxed text-white/80">{c.result.noCompare}</p>
+            {(result ? [result] : both ? [both.female, both.male] : []).map((r) => (
+              <p key={r.sex} className="mb-2 font-mono text-xs leading-relaxed text-white/60">
+                {fill(c.result.infoOnly, {
+                  sex: r.sex === 'female' ? c.result.sexFemale : c.result.sexMale,
+                  band: r.point.label,
+                  p25: r.ref.p25,
+                  p75: r.ref.p75,
+                  p50: r.ref.p50,
+                })}
+              </p>
+            ))}
+            <p className="mb-2 font-mono text-xs leading-relaxed text-white/70">{c.deviceNote}</p>
+            <p className="mb-2 font-mono text-xs leading-relaxed text-white/70">{c.disclaimerLine}</p>
+          </div>
+        )}
+        {both && both.female.verdict && both.male.verdict && (
+          <div className="mt-6" aria-live="polite">
+            {(['female', 'male'] as const).map((s) => (
+              <p key={s} className="mb-2 font-mono text-xs leading-relaxed text-white/70">
+                {fill(c.result.comparedPosition, {
+                  sex: s === 'female' ? c.result.sexFemale : c.result.sexMale,
+                  band: both[s].point.label,
+                  position: c.result.position[both[s].verdict!],
+                  p25: both[s].ref.p25,
+                  p75: both[s].ref.p75,
+                  p50: both[s].ref.p50,
+                })}
+              </p>
+            ))}
+            <p className="mb-2 font-mono text-xs leading-relaxed text-white/70">{c.disclaimerLine}</p>
+            <p className="mb-2 font-mono text-xs leading-relaxed text-white/70">{c.deviceNote}</p>
+            <p className="mb-2 font-mono text-xs leading-relaxed text-white/60">{ageNote}</p>
+            <UseInClaudeLink lang={lang} variant="hrv" className="mt-4" />
+          </div>
+        )}
+        {!result && !both && (age || hrv) && (
           <p className="mt-4 font-mono text-xs text-white/40">{c.invalid}</p>
         )}
         <p className="mt-4 font-mono text-xs leading-relaxed text-white/50"><Rich text={c.science} lang={lang} /></p>
@@ -164,16 +200,15 @@ export function HrvInterpreterPage() {
 
       <AppStoreCTA ct={storeCt('tool', 'hrv', lang)} variant="tool" lang={lang} />
 
-      {/* Reference tables — RMSSD (rings/straps) and SDNN (Apple Watch) */}
-      <NormsTable c={c} metric="rmssd" title={c.tables.rmssdTitle} caption={c.tables.rmssdCaption} />
-      <NormsTable c={c} metric="sdnn" title={c.tables.sdnnTitle} caption={c.tables.sdnnCaption} />
+      {/* Reference table — Natarajan 2020, Table S3 (distribution among Fitbit users) */}
+      <NormsTable c={c} />
 
       {/* Answer blocks for neighbouring queries — each self-contained */}
       {c.sections.map((s) => (
         <section key={s.h2} className="mb-10">
           <h2 className="mb-3 text-xl font-bold tracking-tight md:text-2xl">{s.h2}</h2>
           <p className="text-sm leading-relaxed text-white/70">
-            <Rich text={s.body} lang={lang} />
+            <Rich text={fill(s.body, HRV_COPY_VARS)} lang={lang} />
           </p>
         </section>
       ))}
@@ -184,14 +219,14 @@ export function HrvInterpreterPage() {
         {c.faq.map((f) => (
           <div key={f.q} className="py-4">
             <h3 className="mb-1 font-semibold text-white/90">{f.q}</h3>
-            <p className="font-mono text-xs leading-relaxed text-white/50">{f.a}</p>
+            <p className="font-mono text-xs leading-relaxed text-white/50">{fill(f.a, HRV_COPY_VARS)}</p>
           </div>
         ))}
       </div>
 
       <SourcesSection
         heading={c.sourcesTitle}
-        methodology={`${c.methodologyRmssd} ${c.methodologySdnn}`}
+        methodology={c.methodology}
         sources={HRV_SOURCES.map((src, i) => ({ ...src, contributes: c.sourcesContributes[i] ?? src.contributes }))}
       />
 
@@ -213,33 +248,31 @@ export function HrvInterpreterPage() {
   )
 }
 
-function NormsTable({ c, metric, title, caption }: { c: HrvToolCopy; metric: HrvMetric; title: string; caption: string }) {
+function NormsTable({ c }: { c: HrvToolCopy }) {
   return (
     <section className="mb-10">
-      <h2 className="mb-2 text-xl font-bold tracking-tight md:text-2xl">{title}</h2>
-      <p className="mb-3 font-mono text-[11px] text-white/40">{caption}</p>
+      <h2 className="mb-2 text-xl font-bold tracking-tight md:text-2xl">{c.tables.title}</h2>
+      <p className="mb-3 font-mono text-[11px] text-white/40">{c.tables.caption}</p>
       <div className="overflow-x-auto rounded-xl border border-white/10">
         <table className="w-full border-collapse font-mono text-xs">
-          <caption className="sr-only">{title}</caption>
+          <caption className="sr-only">{c.tables.title}</caption>
           <thead>
             <tr className="border-b border-white/10 text-white/50">
               <th scope="col" className="px-3 py-2 text-left">{c.tables.age}</th>
-              <th scope="col" className="px-3 py-2 text-right">{c.tables.p10}</th>
-              <th scope="col" className="px-3 py-2 text-right">{c.tables.p25}</th>
-              <th scope="col" className="px-3 py-2 text-right">{c.tables.p50}</th>
-              <th scope="col" className="px-3 py-2 text-right">{c.tables.p75}</th>
-              <th scope="col" className="px-3 py-2 text-right">{c.tables.p90}</th>
+              <th scope="col" className="px-3 py-2 text-right">{c.tables.femaleMedian}</th>
+              <th scope="col" className="px-3 py-2 text-right">{c.tables.femaleRange}</th>
+              <th scope="col" className="px-3 py-2 text-right">{c.tables.maleMedian}</th>
+              <th scope="col" className="px-3 py-2 text-right">{c.tables.maleRange}</th>
             </tr>
           </thead>
           <tbody>
-            {bandsFor(metric).map((b) => (
-              <tr key={b.label} className="border-b border-white/5 text-white/70">
-                <th scope="row" className="px-3 py-2 text-left font-semibold text-white/90">{b.label}</th>
-                <td className="px-3 py-2 text-right">{b.p10}</td>
-                <td className="px-3 py-2 text-right">{b.p25}</td>
-                <td className="px-3 py-2 text-right text-terminal-cyan">{b.p50}</td>
-                <td className="px-3 py-2 text-right">{b.p75}</td>
-                <td className="px-3 py-2 text-right text-terminal-green">{b.p90}</td>
+            {HRV_AGE_POINTS.map((p) => (
+              <tr key={p.label} className="border-b border-white/5 text-white/70">
+                <th scope="row" className="px-3 py-2 text-left font-semibold text-white/90">{p.label}</th>
+                <td className="px-3 py-2 text-right text-terminal-cyan">{p.female.p50}</td>
+                <td className="px-3 py-2 text-right">{p.female.p25}–{p.female.p75}</td>
+                <td className="px-3 py-2 text-right text-terminal-cyan">{p.male.p50}</td>
+                <td className="px-3 py-2 text-right">{p.male.p25}–{p.male.p75}</td>
               </tr>
             ))}
           </tbody>
@@ -256,7 +289,7 @@ function EmbedHrvBlock({ c, lang }: { c: HrvToolCopy; lang: Lang }) {
   // Recommended: the dependency-free JS widget renders inline (light DOM), so the
   // credit is a real link on the host page. Open source: github.com/yamius/onda-hrv-widget.
   const snippet = `<div data-onda-hrv${lang === 'en' ? '' : ` data-lang="${lang}"`}></div>
-<script src="https://onda-life.com/embed/onda-hrv-widget.js" defer></script>`
+<script src="https://onda-life.com/embed/onda-hrv-widget.js?v=${HRV_WIDGET_VERSION}" defer></script>`
   // Alternative: iframe (isolated). The credit <p> below it sits in the host page.
   const iframe = `<iframe src="https://onda-life.com/embed/hrv${q}" width="100%" height="440" style="border:0;max-width:440px" title="${c.meta.appName} — ONDA Life" loading="lazy"></iframe>
 <p style="font:12px sans-serif"><a href="${pageUrl}">${c.meta.appName}</a> — <a href="https://onda-life.com">ONDA Life</a></p>`

@@ -26,7 +26,7 @@ export const TOOLS: ToolEntry[] = [
   {
     slug: 'hrv',
     name: 'HRV Calculator by Age',
-    blurb: 'Enter your age and HRV (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch) to see your percentile for your age — and what moves it.',
+    blurb: 'Enter your age, sex and morning RMSSD (Oura, Whoop, Garmin, Polar, Fitbit) to compare it with about 8 million Fitbit users your age — a comparison, not a medical norm.',
     live: true,
     category: 'RECOVERY',
     badge: 'ms',

@@ -1,5 +1,5 @@
 ---
-sourceHash: "fed00e9a1b1b"
+sourceHash: c9a1794847a3
 title: "Come ONDA misura e interpreta i segnali del tuo corpo"
 metaTitle: "Come ONDA misura e legge i segnali del tuo corpo"
 metaDescription: "Da dove ONDA prende i dati, come costruisce baseline e segnali personali, cosa resta sul telefono e i limiti di ogni numero che mostra."
@@ -62,7 +62,7 @@ Un segnale compare quando nell'ultima notte la frequenza cardiaca a riposo è sa
 
 Quando le tue notti restano dentro il corridoio, ONDA invia invece un messaggio tranquillo: {{fact:onda.checkin.steadyCadence}}, con {{fact:onda.checkin.dailyCap}}. Senza dati da un orologio, i messaggi tranquilli arrivano {{fact:onda.checkin.noWatchCadence}}. Puoi disattivarli nelle Impostazioni.
 
-I valori notturni si muovono per motivi ordinari, come alcol, una cena tardiva, l'allenamento, un viaggio o una notte breve: per questo una sola notte non viene mai letta come un verdetto. Vedi [perché l'HRV cambia da un giorno all'altro](/science/mechanisms/hrv-day-to-day).
+I valori notturni si muovono per motivi ordinari, come alcol, una cena tardiva, l'allenamento, un viaggio o una notte breve: per questo una sola notte non viene mai letta come un verdetto. Vedi [perché l'HRV cambia da un giorno all'altro](/science/mechanisms/hrv-day-to-day). Per l'alcol in particolare, vedi [alcol e HRV](/science/mechanisms/alcohol-and-hrv).
 
 ## Cosa vedi durante una pratica?
 

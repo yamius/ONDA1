@@ -1,5 +1,5 @@
 ---
-sourceHash: "33d11ee1d8b5"
+sourceHash: "6a056afa89f5"
 title: "Sauna e exposição ao calor: o que as evidências mostram"
 metaTitle: "Sauna e exposição ao calor: evidências e riscos"
 metaDescription: "Sauna finlandesa, cabines de infravermelho, banhos quentes e terapia de calor clínica: o que os estudos mostram sobre coração, pressão e humor, e os riscos reais."
@@ -105,7 +105,7 @@ Essas mudanças envolvem o [sistema nervoso autônomo](/science/concepts/autonom
 
 ## Infravermelho ou tradicional: o que mostram as comparações diretas?
 
-Muito pouco. Um estudo de laboratório aqueceu os mesmos adultos jovens e saudáveis de três formas. A imersão em água quente foi a que mais elevou a temperatura central e o débito cardíaco; a sauna de infravermelho distante foi a que menos elevou a temperatura central; só a imersão em água quente alterou marcadores imunológicos [S8]. Trata-se de uma única sessão aguda. Nenhum estudo comparou os desfechos de saúde de longo prazo das saunas de infravermelho e das tradicionais. Os ensaios em insuficiência cardíaca usaram saunas de infravermelho [S9], e os dados da coorte finlandesa vêm apenas de saunas tradicionais [S1]. As análises de produtos deste site, como o comparativo das [melhores saunas de infravermelho](/reviews/best-infrared-sauna-2026) e a análise da [Finnleo Hallmark](/reviews/finnleo-hallmark), comparam aparelhos, não efeitos na saúde.
+Muito pouco. Um estudo de laboratório aqueceu os mesmos adultos jovens e saudáveis de três formas. A imersão em água quente foi a que mais elevou a temperatura central e o débito cardíaco; a sauna de infravermelho distante foi a que menos elevou a temperatura central; só a imersão em água quente alterou marcadores imunológicos [S8]. Trata-se de uma única sessão aguda. Nenhum estudo comparou os desfechos de saúde de longo prazo das saunas de infravermelho e das tradicionais. Os ensaios em insuficiência cardíaca usaram saunas de infravermelho [S9], e os dados da coorte finlandesa vêm apenas de saunas tradicionais [S1]. As análises de produtos deste site, como o comparativo das [melhores saunas de infravermelho](/reviews/compare/best-infrared-sauna-2026) e a análise da [Finnleo Hallmark](/reviews/finnleo-hallmark), comparam aparelhos, não efeitos na saúde.
 
 ### A sauna elimina toxinas pelo suor?
 

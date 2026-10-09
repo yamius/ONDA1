@@ -32,7 +32,7 @@ const article: Article = {
 
 > "You check your HRV and it's 45. You check an hour later and it's 68. You panic, or you celebrate, and both are mistakes — because you just measured two different situations, not two different you's.
 
-**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age ([RMSSD](/science/concepts/rmssd) from Oura, Whoop, Garmin or [SDNN](/science/concepts/sdnn) from Apple Watch).
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — compare your morning [RMSSD](/science/concepts/rmssd) (Oura, Whoop, Garmin, Polar, Fitbit) with Fitbit users your age. Apple Watch [SDNN](/science/concepts/sdnn) is a different measure and isn't compared.
 
 > HRV is gloriously sensitive. That sensitivity is what makes it useful and what makes it useless — depending entirely on whether you control the conditions. Measured carelessly, it's noise. Measured consistently, it's one of the best signals you have."
 

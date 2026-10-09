@@ -1,5 +1,5 @@
 ---
-sourceHash: "79992de6d516"
+sourceHash: 68b096acdcad
 title: "Wysiłek a HRV: co robi trening i co pokazuje trening sterowany HRV"
 metaTitle: "Wysiłek a HRV: dowody dla treningu sterowanego HRV"
 metaDescription: "Dlaczego HRV spada po ciężkim treningu i wraca do normy, ile to trwa i co pokazują badania treningu sterowanego HRV w porównaniu ze stałym planem treningowym."
@@ -21,6 +21,8 @@ keyPoints:
   - "Nie wykazano, czy sterowanie zmiennością rytmu serca pomaga osobom trenującym rekreacyjnie w długim okresie ani która reguła decyzyjna działa najlepiej."
 imageAlt: "Zarys biegacza nad zapisem pracy serca: regularne uderzenia przed wysiłkiem, długi, powolny spadek w trakcie biegu i ponownie równe uderzenia po nim."
 evidenceMap:
+  - claim: "W jednym badaniu krzyżowym po treningu interwałowym oddychanie z częstością sześciu oddechów na minutę wiązało się z niższym tętnem niż oddychanie pudełkowe."
+    limitation: "Jedno badanie u aktywnych studentów na rowerze spinningowym; czas powrotu do tętna spoczynkowego nie różnił się istotnie."
   - claim: "Pełny autonomiczny powrót serca do normy po jednej sesji aerobowej trwa tym dłużej, im wyższa intensywność (fact training.recovery.time)."
     limitation: "Zbiorcze dane z badań wysiłku aerobowego u sportowców i osób zdrowych; przebieg różni się między osobami, a trening siłowy jest słabo zbadany."
   - claim: "Przywspółczulna reaktywacja serca po sesji treningowej jest wysoce indywidualna."
@@ -75,7 +77,7 @@ Ten powrót wymaga czasu, a jego długość zależy od tego, jak ciężka była 
 
 Mechanizmy nie są w pełni poznane [S1]. Roboczy model z przeglądu zakłada dwie fazy. W krótkim okresie po sesji sygnały z pracujących mięśni — na przykład zakwaszenie mięśni i krwi — są prawdopodobnie głównym czynnikiem powstrzymującym powrót hamulca błędnego (metaboreflex). W średnim okresie, w kolejnych godzinach i dniach, zmiany objętości krwi po wysiłku działają przypuszczalnie poprzez baroreflex, czyli wrażliwą na ciśnienie pętlę regulującą tętno [S1]. Obie części tego modelu sami autorzy formułują ostrożnie.
 
-Dwie kolejne kwestie wpływają na to, jak rozumieć odczyt po treningu. Po pierwsze, tempo reaktywacji jest wysoce indywidualne [S1]. Po drugie, autonomiczny powrót serca do normy nie pokrywa się, jak się wydaje, z regeneracją każdego układu: zapasy energetyczne i układ nerwowo-mięśniowy mogą mieć własny harmonogram [S1]. Rytm serca, który wrócił do normy, sam w sobie nie oznacza, że mięśnie się zregenerowały — i odwrotnie.
+Dwie kolejne kwestie wpływają na to, jak rozumieć odczyt po treningu. Po pierwsze, tempo reaktywacji jest wysoce indywidualne [S1]. Po drugie, autonomiczny powrót serca do normy nie pokrywa się, jak się wydaje, z regeneracją każdego układu: zapasy energetyczne i układ nerwowo-mięśniowy mogą mieć własny harmonogram [S1]. Rytm serca, który wrócił do normy, sam w sobie nie oznacza, że mięśnie się zregenerowały — i odwrotnie. Znaczenie może mieć też to, jak oddychasz tuż po treningu: w jednym badaniu po treningu interwałowym oddychanie z częstością sześciu oddechów na minutę obniżało tętno bardziej niż oddychanie pudełkowe [S9] — zobacz [porównanie technik oddechowych](/science/mechanisms/breathing-techniques-compared).
 
 ## Jak mierzy się HRV w kontekście treningu?
 

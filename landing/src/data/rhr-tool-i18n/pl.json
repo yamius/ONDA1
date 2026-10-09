@@ -71,11 +71,11 @@
   "sections": [
     {
       "h2": "Prawidłowe tętno spoczynkowe według wieku — jakie jest?",
-      "body": "U dorosłych za prawidłowe uznaje się tętno spoczynkowe od 60 do 100 ud./min. Osoby wysportowane często mają niższe tętno (często poniżej 60 ud./min; wielu wyczynowych sportowców wytrzymałościowych osiąga w najniższym punkcie doby 40 ud./min lub mniej), a w badaniach populacyjnych niższe tętno spoczynkowe wiąże się z niższą długoterminową śmiertelnością. W badaniu CDC NHANES zdrowych dorosłych w USA mediana tętna spoczynkowego na siedząco wynosiła ok. 69 ud./min u mężczyzn w wieku 18–39 lat, 68 ud./min w wieku 40–59 i 67 ud./min od 60. roku życia — przez całe dorosłe życie niemal bez zmian. Środkowa połowa mężczyzn (p25–p75) mieściła się mniej więcej między 60 a 77 ud./min. W przeciwieństwie do HRV tętno spoczynkowe u dorosłych prawie nie zależy od wieku; dużo ważniejsze są kondycja, geny, sen i stres. Dlatego najbardziej przydatne jest porównanie z własnym porannym trendem. Pełny poradnik: [tętno spoczynkowe według wieku](/articles/resting-heart-rate-by-age)."
+      "body": "U dorosłych za prawidłowe uznaje się tętno spoczynkowe od 60 do 100 ud./min. Osoby wysportowane często mają niższe tętno (często poniżej 60 ud./min; wielu wyczynowych sportowców wytrzymałościowych osiąga w najniższym punkcie doby 40 ud./min lub mniej), a w badaniach populacyjnych niższe tętno spoczynkowe wiąże się z niższą długoterminową śmiertelnością. W badaniu CDC NHANES zdrowych dorosłych w USA mediana tętna spoczynkowego na siedząco wynosiła ok. 69 ud./min u mężczyzn w wieku 20–39 lat, 68 ud./min w wieku 40–59 i 67 ud./min w wieku 60–79 i 68 ud./min od 80. roku życia — przez całe dorosłe życie niemal bez zmian. Środkowa połowa mężczyzn (p25–p75) mieściła się mniej więcej między 60 a 77 ud./min. W przeciwieństwie do HRV tętno spoczynkowe u dorosłych prawie nie zależy od wieku; dużo ważniejsze są kondycja, geny, sen i stres. Dlatego najbardziej przydatne jest porównanie z własnym porannym trendem. Pełny poradnik: [tętno spoczynkowe według wieku](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Norma tętna u kobiety",
-      "body": "Tętno spoczynkowe kobiet jest o kilka uderzeń wyższe niż mężczyzn, głównie dlatego, że serce jest zwykle mniejsze i przy każdym skurczu pompuje nieco mniej krwi. W NHANES mediana wynosiła ok. 74 ud./min u kobiet w wieku 18–39 lat, 71 ud./min w wieku 40–59 i 70 ud./min od 60. roku życia, a środkowa połowa mieściła się mniej więcej między 64 a 82 ud./min. Tętno spoczynkowe zmienia się też w cyklu miesiączkowym — w drugiej jego połowie bywa o kilka uderzeń wyższe — i rośnie w ciąży. Porównuj więc podobne sytuacje: tę samą porę dnia, tę samą fazę cyklu i średnią tygodniową zamiast jednego dnia. Wybierz w kalkulatorze „Kobieta”, aby użyć tabeli dla kobiet."
+      "body": "Tętno spoczynkowe kobiet jest o kilka uderzeń wyższe niż mężczyzn, głównie dlatego, że serce jest zwykle mniejsze i przy każdym skurczu pompuje nieco mniej krwi. W NHANES mediana wynosiła ok. 74 ud./min u kobiet w wieku 20–39 lat, 71 ud./min w wieku 40–59 i 70 ud./min w wieku 60–79 i 71 ud./min od 80. roku życia, a środkowa połowa mieściła się mniej więcej między 64 a 82 ud./min. Tętno spoczynkowe zmienia się też w cyklu miesiączkowym — w drugiej jego połowie bywa o kilka uderzeń wyższe — i rośnie w ciąży. Porównuj więc podobne sytuacje: tę samą porę dnia, tę samą fazę cyklu i średnią tygodniową zamiast jednego dnia. Wybierz w kalkulatorze „Kobieta”, aby użyć tabeli dla kobiet."
     },
     {
       "h2": "Tętno za wysokie w spoczynku — dlaczego?",
@@ -94,11 +94,11 @@
   "faq": [
     {
       "q": "Jakie jest prawidłowe tętno spoczynkowe według wieku?",
-      "a": "U dorosłych 60–100 ud./min, a u zdrowych osób zwykle 60–79 ud./min. Mediana CDC NHANES to ok. 69 ud./min u mężczyzn w wieku 18–39 lat, 68 ud./min w wieku 40–59 i 67 ud./min po 60.; u kobiet ok. 74, 71 i 70 ud./min. Z wiekiem prawie się nie zmienia."
+      "a": "U dorosłych 60–100 ud./min, a u zdrowych osób zwykle 60–79 ud./min. Mediana CDC NHANES to ok. 69 ud./min u mężczyzn w wieku 20–39 lat, 68 ud./min w wieku 40–59 i 67 ud./min w wieku 60–79 i 68 ud./min po 80.; u kobiet ok. 74, 71, 70 i 71 ud./min. Z wiekiem prawie się nie zmienia."
     },
     {
       "q": "Jaka jest norma tętna u kobiety?",
-      "a": "O kilka uderzeń wyższa niż u mężczyzn: mediana to ok. 74 ud./min w wieku 18–39 lat, 71 ud./min w wieku 40–59 i 70 ud./min od 60. roku życia, a środkowa połowa kobiet mieści się mniej więcej między 64 a 82 ud./min."
+      "a": "O kilka uderzeń wyższa niż u mężczyzn: mediana to ok. 74 ud./min w wieku 20–39 lat, 71 ud./min w wieku 40–59 i 70 ud./min w wieku 60–79 i 71 ud./min od 80. roku życia, a środkowa połowa kobiet mieści się mniej więcej między 64 a 82 ud./min."
     },
     {
       "q": "Czy tętno spoczynkowe 50 to dobry wynik?",
@@ -126,7 +126,7 @@
     }
   ],
   "sourcesTitle": "Źródła i metodologia",
-  "methodology": "Tabele pochodzą bezpośrednio z raportu CDC/NCHS o NHANES 1999–2008 (Ostchega i in. 2011, tabele 2–3): tętno spoczynkowe na siedząco u ok. 17 000 dorosłych w USA, z wyłączeniem osób z chorobami lub lekami wpływającymi na tętno. Przedział 18–39 wykorzystuje wiersz 20–39, a przedział 60+ wiersz 60–79. Twój percentyl jest interpolowany między opublikowanymi percentylami od 5. do 95. dla Twojego wieku i płci. Zegarki i pierścienie mierzą tętno spoczynkowe lub w czasie snu, zwykle o kilka ud./min niższe niż pomiar na siedząco.",
+  "methodology": "Tabele pochodzą bezpośrednio z raportu CDC/NCHS o NHANES 1999–2008 (Ostchega i in. 2011, tabele 2–3): tętno spoczynkowe na siedząco u ok. 17 000 dorosłych w USA, z wyłączeniem osób z chorobami lub lekami wpływającymi na tętno. Przedziały to wiersze źródła (20–39, 40–59, 60–79, 80+). Źródło nie ma osobnych danych dla wieku 18–19 lat, więc porównuje się je z grupą 20–39. Twój percentyl jest interpolowany między opublikowanymi percentylami od 5. do 95. dla Twojego wieku i płci. Zegarki i pierścienie mierzą tętno spoczynkowe lub w czasie snu, zwykle o kilka ud./min niższe niż pomiar na siedząco.",
   "sourcesContributes": [
     "Bezpośrednie źródło tabel: percentyle tętna spoczynkowego na siedząco według wieku i płci z NHANES 1999–2008, z wyłączeniem chorób i leków wpływających na tętno (tabele 2–3).",
     "Kontekst kliniczny: standardowy zakres normy to 60–100 ud./min; niższe tętno u osób bardzo wysportowanych, nieco wyższe u kobiet i częściowo uwarunkowane genetycznie.",
@@ -138,5 +138,6 @@
     "hrv": "Kalkulator HRV według wieku",
     "camera": "Zmierz tętno aparatem telefonu",
     "zone2": "Tętno w strefie 2"
-  }
+  },
+  "youngNote": "Źródło nie ma osobnych danych dla wieku 18–19 lat, więc porównanie dotyczy grupy 20–39 lat."
 }

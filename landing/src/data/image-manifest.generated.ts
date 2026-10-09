@@ -2608,6 +2608,30 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/mechanisms-acute-stress-and-hrv.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-acute-stress-and-hrv.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-acute-stress-and-hrv.webp": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-alcohol-and-hrv.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-alcohol-and-hrv.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-alcohol-and-hrv.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/mechanisms-breathing-and-hrv.avif": {
     "width": 1920,
     "height": 820
@@ -2619,6 +2643,30 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/science/mechanisms-breathing-and-hrv.webp": {
     "width": 1920,
     "height": 820
+  },
+  "/images/science/mechanisms-breathing-techniques-compared.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-breathing-techniques-compared.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-breathing-techniques-compared.webp": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-caffeine-and-hrv.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-caffeine-and-hrv.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-caffeine-and-hrv.webp": {
+    "width": 1376,
+    "height": 768
   },
   "/images/science/mechanisms-exercise-and-hrv.avif": {
     "width": 1376,
@@ -2655,6 +2703,30 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/science/mechanisms-hrv-day-to-day.webp": {
     "width": 1916,
     "height": 821
+  },
+  "/images/science/mechanisms-illness-and-hrv.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-illness-and-hrv.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-illness-and-hrv.webp": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-menstrual-cycle-and-hrv.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-menstrual-cycle-and-hrv.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-menstrual-cycle-and-hrv.webp": {
+    "width": 1376,
+    "height": 768
   },
   "/images/science/mechanisms-sleep-and-hrv.avif": {
     "width": 1584,

@@ -66,7 +66,7 @@ proposals:            # optional: values or sources that are NOT yet in 03-facts
 ## What is example entity?
 
 Plain English, short paragraphs. Cite sources inline as [S1]. Numbers ONLY through references:
-approved facts like {{fact:hrv.rmssd.typical.40-49}} [S1], or your own proposal like {{proposed:P1}} [S1].
+approved facts like {{fact:hrv.fitbit.rmssd.am.female.typical.40-41}} [S1], or your own proposal like {{proposed:P1}} [S1].
 
 ## How does it work?
 

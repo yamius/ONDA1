@@ -48,7 +48,7 @@
       },
       {
         "q": "Was ist ein guter Wert der Herzfrequenzvariabilität (HRV)?",
-        "a": "Es gibt keinen einzelnen guten HRV-Wert: Die HRV sinkt mit dem Alter und unterscheidet sich je nach Gerät. Der Median des nächtlichen RMSSD liegt mit Anfang zwanzig bei etwa 58 ms und mit sechzig bei etwa 30 ms, mit großer gesunder Streuung. Eine gute HRV ist eine, die im Vergleich zu deinem eigenen Ausgangswert stabil bleibt oder steigt.",
+        "a": "Es gibt keinen einzelnen guten HRV-Wert: Sie sinkt mit dem Alter und hängt vom Gerät ab. Unter rund 8 Millionen Fitbit-Nutzern lag der Median des morgendlichen RMSSD bei {{fact:hrv.fitbit.rmssd.am.female.median.20-21}} für Frauen und {{fact:hrv.fitbit.rmssd.am.male.median.20-21}} für Männer mit 20–21 und bei {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} und {{fact:hrv.fitbit.rmssd.am.male.median.60-61}} mit 60–61, mit großer Streuung in jedem Alter. Eine gute HRV ist eine, die gegenüber deiner eigenen Baseline stabil bleibt oder steigt.",
         "links": [
           {
             "href": "/articles/normal-hrv-by-age",

@@ -28,7 +28,7 @@
         {
           "id": "rmssd-vs-sdnn",
           "q": "Wat is het verschil tussen RMSSD en SDNN?",
-          "a": "Het zijn twee manieren om HRV te berekenen. RMSSD kijkt naar verschillen tussen opeenvolgende slagen en volgt de vagale activiteit; Oura, Whoop, Garmin en Polar rapporteren die. SDNN is de totale spreiding van alle intervallen in een tijdvenster; Apple Watch rapporteert SDNN. De twee zijn niet uitwisselbaar, dus vergelijk elk alleen met de eigen normen. [HRV-calculator met beide modi →](/tools/hrv)"
+          "a": "Het zijn twee manieren om HRV te berekenen. RMSSD kijkt naar verschillen tussen opeenvolgende slagen en volgt de vagale activiteit; Oura, Whoop, Garmin en Polar tonen het. SDNN is de totale spreiding van alle intervallen in een tijdvenster; de Apple Watch toont SDNN. Ze zijn niet uitwisselbaar, dus vergelijk nooit een getal van het ene met een tabel van het andere. [Waarom elk apparaat een andere HRV toont →](/articles/hrv-different-every-device)"
         },
         {
           "id": "hrv-vs-heart-rate",
@@ -48,22 +48,22 @@
         {
           "id": "what-is-a-good-hrv",
           "q": "Wat is een goede HRV?",
-          "a": "Er bestaat niet één goed HRV-getal. Ter oriëntatie: de mediane nachtelijke RMSSD is ongeveer 58 ms bij 18–29 jaar en daalt tot zo'n 30 ms rond je zestigste, met een grote spreiding rond die medianen bij gezonde mensen. Elders zie je hogere cijfers (WHOOP plaatst bijvoorbeeld veel twintigers op 55–105 ms), omdat elke bron andere mensen, apparaten en tijdstippen gebruikt. Een \"goede\" HRV is stabiel of stijgend ten opzichte van je eigen basislijn. [Normale HRV per leeftijd →](/articles/normal-hrv-by-age)"
+          "a": "Er bestaat geen enkel goed HRV-getal. Onder ongeveer 8 miljoen Fitbit-gebruikers was de mediane RMSSD tussen 6 en 7 uur 's ochtends {{fact:hrv.fitbit.rmssd.am.female.median.20-21}} bij vrouwen en {{fact:hrv.fitbit.rmssd.am.male.median.20-21}} bij mannen op 20–21 jaar, en {{fact:hrv.fitbit.rmssd.am.female.median.60-61}} en {{fact:hrv.fitbit.rmssd.am.male.median.60-61}} op 60–61 — een vergelijking met gebruikers van één apparaat, geen medische norm. Elders zie je hogere getallen (WHOOP plaatst bijvoorbeeld veel twintigers op 55–105 ms), omdat elke bron andere mensen, apparaten en tijdstippen gebruikt. Een „goede” HRV is er een die stabiel blijft of stijgt ten opzichte van je eigen baseline. [Normale HRV per leeftijd →](/articles/normal-hrv-by-age)"
         },
         {
           "id": "healthy-hrv",
           "q": "Wat is een gezonde HRV?",
-          "a": "Een gezonde HRV ligt binnen je eigen gebruikelijke bereik en herstelt na stress, reizen of een zware training. Bevolkingsbereiken zijn erg breed — twee gezonde mensen van dezelfde leeftijd kunnen 40 ms of meer verschillen. Gebruik leeftijdsnormen ter oriëntatie en je trend over twee weken voor beslissingen. [Bekijk je eigen bereik →](/tools/baseline)"
+          "a": "Een gezonde HRV blijft binnen je gebruikelijke bereik en herstelt na stress, reizen of een zware training. De bereiken in de bevolking zijn heel breed — twee gezonde mensen van dezelfde leeftijd kunnen 40 ms of meer verschillen. Gebruik leeftijdstabellen voor oriëntatie en je trend over twee weken voor beslissingen. [Bekijk je eigen bereik →](/tools/baseline)"
         },
         {
           "id": "hrv-range-by-age",
           "q": "Wat is een normale HRV per leeftijd?",
-          "a": "De typische nachtelijke RMSSD (middelste helft van gezonde volwassenen) is ongeveer 42–78 ms bij 18–29 jaar, 36–68 ms in je dertiger jaren, 30–56 ms in je veertiger jaren en daarna smaller. Apple Watch SDNN heeft eigen, andere normen. Vul je leeftijd en getal in om je percentiel te zien. [HRV-calculator per leeftijd →](/tools/hrv)"
+          "a": "Onder ongeveer 8 miljoen Fitbit-gebruikers was de middelste helft van de ochtend-RMSSD {{fact:hrv.fitbit.rmssd.am.female.typical.20-21}} bij vrouwen en {{fact:hrv.fitbit.rmssd.am.male.typical.20-21}} bij mannen op 20–21 jaar, {{fact:hrv.fitbit.rmssd.am.female.typical.40-41}} en {{fact:hrv.fitbit.rmssd.am.male.typical.40-41}} op 40–41 en {{fact:hrv.fitbit.rmssd.am.female.typical.60-61}} en {{fact:hrv.fitbit.rmssd.am.male.typical.60-61}} op 60–61. Dat beschrijft de gebruikers van één apparaat, geen medische norm, en SDNN van de Apple Watch is er niet mee te vergelijken. Vul je leeftijd, geslacht en getal in om te zien waar je zit. [HRV-calculator per leeftijd →](/tools/hrv)"
         },
         {
           "id": "is-my-number-good",
           "q": "Is een HRV van 20, 30 of 43 goed? Waarom is de mijne maar 30?",
-          "a": "Dat hangt af van je leeftijd, je apparaat en je eigen basislijn. 20 ms kan normaal zijn als je in de zeventig bent; 30 ms is typisch op je 60e en aan de lage kant op je 25e; 43 ms ligt rond het midden voor veertigers; 100 ms is hoog voor de meeste volwassenen maar normaal voor sommige sporters. Eén getal zonder context zegt weinig — kijk waar het ligt voor je leeftijd en volg dan je trend. [Check je getal →](/tools/hrv)"
+          "a": "Dat hangt af van je leeftijd, je apparaat en je eigen baseline. Onder Fitbit-gebruikers liep de middelste helft van de ochtend-RMSSD van {{fact:hrv.fitbit.rmssd.am.female.typical.25-26}} (vrouwen) en {{fact:hrv.fitbit.rmssd.am.male.typical.25-26}} (mannen) op 25–26 jaar, en van {{fact:hrv.fitbit.rmssd.am.female.typical.60-61}} en {{fact:hrv.fitbit.rmssd.am.male.typical.60-61}} op 60–61. Dus 30 ms zit op 60 jaar midden in het bereik en op 25 aan de lage kant, en 43 ms ligt iets boven de mediaan voor mensen van begin 40 ({{fact:hrv.fitbit.rmssd.am.female.median.40-41}} bij vrouwen, {{fact:hrv.fitbit.rmssd.am.male.median.40-41}} bij mannen). 100 ms is hoog voor de meeste volwassenen, maar normaal voor sommige sporters. Eén getal zonder context zegt weinig — kijk waar het voor jouw leeftijd zit en volg daarna je trend. [Check je getal →](/tools/hrv)"
         },
         {
           "id": "high-hrv",

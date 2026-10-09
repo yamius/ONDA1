@@ -1,5 +1,5 @@
 ---
-sourceHash: "fed00e9a1b1b"
+sourceHash: c9a1794847a3
 title: "ONDA 如何测量和解读你的身体信号"
 metaTitle: "ONDA 如何测量和解读你的身体信号"
 metaDescription: "ONDA 的数据从哪里来、如何建立你的个人基线和信号、哪些内容只留在你的手机上，以及它显示的每个数字都有哪些局限。"
@@ -56,7 +56,7 @@ ONDA 是一款呼吸与生物反馈应用。它读取其他设备已经记录下
 
 当你的夜间数值一直留在波动区间之内时，ONDA 会改为{{fact:onda.checkin.steadyCadence}}，并且{{fact:onda.checkin.dailyCap}}。没有手表数据时，平静消息的频率为{{fact:onda.checkin.noWatchCadence}}。平静消息可以在“设置”中关闭。
 
-夜间数值会因为饮酒、晚餐吃得晚、训练、旅行或睡得少等寻常原因而波动，所以单独一晚从不被当作定论。见[为什么 HRV 每天都在变化](/science/mechanisms/hrv-day-to-day)。
+夜间数值会因为饮酒、晚餐吃得晚、训练、旅行或睡得少等寻常原因而波动，所以单独一晚从不被当作定论。见[为什么 HRV 每天都在变化](/science/mechanisms/hrv-day-to-day)。关于酒精的具体内容，请见[酒精与 HRV](/science/mechanisms/alcohol-and-hrv)。
 
 ## 练习时你会看到什么？
 
