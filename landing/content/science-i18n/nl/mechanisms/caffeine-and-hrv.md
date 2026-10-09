@@ -1,5 +1,5 @@
 ---
-sourceHash: b13ba3334574
+sourceHash: d1da038aff34
 title: "Cafeïne en HRV: wat koffie wel en niet doet"
 metaTitle: "Cafeïne en HRV: verlaagt koffie je HRV?"
 metaDescription: "Wat onderzoek laat zien over koffie en hartslagvariabiliteit in rust en na inspanning, waarin energiedrankjes verschillen en hoe late cafeïne HRV bereikt."
@@ -59,7 +59,7 @@ Zo was een gerandomiseerde, dubbelblinde cross-overstudie opgezet: {{fact:caffei
 In een tweede gerandomiseerde cross-overstudie dronken {{fact:caffeine.espresso.design}} op verschillende dagen espresso, cafeïnevrije espresso of warm water [S4]. Espresso met cafeïne had geen specifiek kortetermijneffect op vagaal gemedieerde HRV [S4]. HRV steeg tijdens de sessies in elke conditie; daarom is de vergelijking tussen de dranken belangrijker dan de verandering binnen één sessie.
 
 <!-- myth-debunk -->
-Een bekend gezegde is dat koffie je HRV om zeep helpt. Bij regelmatige drinkers en matige doses vonden kleine studies geen verandering in rust [S3] [S4], en twee deels overlappende meta-analyses vonden geen effect op het herstel na inspanning [S1] [S2]. Dit geldt niet voor zeer grote doses, energiedrankjes of mensen die zelden koffie drinken. Cafeïne laat op de dag kan je slaap wel korter of lichter maken, en slechtere slaap kan je nachtelijke HRV verlagen — zie [HRV en slaap](/science/mechanisms/sleep-and-hrv).
+Een bekend gezegde is dat koffie je HRV om zeep helpt. Bij regelmatige drinkers en matige doses vonden kleine studies geen verandering in rust [S3] [S4], en twee deels overlappende meta-analyses vonden geen effect op het herstel na inspanning [S1] [S2]. Dit geldt niet voor zeer grote doses, energiedrankjes of mensen die zelden koffie drinken. Cafeïne laat op de dag kan je slaap wel korter of lichter maken [S9], en slechtere slaap kan je nachtelijke HRV verlagen — zie [HRV en slaap](/science/mechanisms/sleep-and-hrv).
 
 **Wat we niet weten.** Er is geen in PubMed geïndexeerde systematische review of meta-analyse over cafeïne en HRV in rust (stand oktober 2026). Het bewijs over rust hierboven berust op een paar kleine studies.
 

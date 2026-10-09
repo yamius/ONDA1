@@ -99,6 +99,15 @@ sources:
     title: "How ONDA works"
     url: "https://onda-life.com/how-it-works"
     type: product-documentation
+  - id: S9
+    cite: "Gardiner et al. (2023)"
+    title: "The effect of caffeine on subsequent sleep: A systematic review and meta-analysis"
+    journal: "Sleep Medicine Reviews"
+    year: 2023
+    doi: "10.1016/j.smrv.2023.101764"
+    pmid: 36870101
+    type: meta-analysis
+    note: "Systematic review and meta-analysis of 24 studies, mostly healthy adults; caffeine reduced total sleep time and deep sleep and increased light sleep; timing guidance is model-derived; authors declare no conflicts of interest"
 evidenceMap:
   - claim: "In young men who regularly consume caffeine, a placebo or modest caffeine doses produced no difference in resting HRV over the following hour and a half (fact caffeine.rest.rauh)."
     sources: [S3]
@@ -189,7 +198,7 @@ In a randomized double-blind crossover trial, {{fact:caffeine.rest.rauh}} [S3]. 
 In a second randomized crossover trial, {{fact:caffeine.espresso.design}} drank espresso, decaffeinated espresso or warm water on separate days [S4]. Caffeinated espresso had no specific short-term effect on vagally mediated HRV [S4]. HRV rose during the sessions in every condition, which is why the comparison between drinks matters more than the change within one session.
 
 <!-- myth-debunk -->
-A common saying is that coffee kills your HRV. In regular drinkers at moderate doses, small trials found no change at rest [S3] [S4], and two partly overlapping meta-analyses found no effect on recovery after exercise [S1] [S2]. This does not cover very large doses, energy drinks or people who rarely drink coffee. Late-day caffeine can still shorten or lighten sleep, and poorer sleep can lower your overnight HRV — see [sleep-and-hrv](/science/mechanisms/sleep-and-hrv).
+A common saying is that coffee kills your HRV. In regular drinkers at moderate doses, small trials found no change at rest [S3] [S4], and two partly overlapping meta-analyses found no effect on recovery after exercise [S1] [S2]. This does not cover very large doses, energy drinks or people who rarely drink coffee. Late-day caffeine can still shorten or lighten sleep [S9], and poorer sleep can lower your overnight HRV — see [sleep-and-hrv](/science/mechanisms/sleep-and-hrv).
 
 **What we don't know.** There is no systematic review or meta-analysis of caffeine and resting HRV indexed in PubMed (as of October 2026). The resting evidence above rests on a few small trials.
 

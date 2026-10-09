@@ -1,5 +1,5 @@
 ---
-sourceHash: b13ba3334574
+sourceHash: d1da038aff34
 title: "Kofeina a HRV: co kawa robi, a czego nie robi"
 metaTitle: "Kofeina a HRV: czy kawa obniża Twoje HRV?"
 metaDescription: "Co badania mówią o kawie i zmienności rytmu serca w spoczynku i po wysiłku, czym różnią się napoje energetyczne i jak późna kofeina wpływa na HRV."
@@ -58,7 +58,7 @@ W randomizowanym, podwójnie zaślepionym badaniu naprzemiennym {{fact:caffeine.
 W drugim randomizowanym badaniu naprzemiennym {{fact:caffeine.espresso.design}} w różne dni piło espresso, espresso bezkofeinowe lub ciepłą wodę [S4]. Espresso z kofeiną nie miało swoistego krótkoterminowego wpływu na HRV zależne od nerwu błędnego [S4]. HRV rosło podczas sesji w każdym wariancie, dlatego porównanie między napojami jest ważniejsze niż zmiana w obrębie jednej sesji.
 
 <!-- myth-debunk -->
-Często mówi się, że kawa zabija HRV. U osób pijących regularnie i w umiarkowanych dawkach małe badania nie wykazały zmian w spoczynku [S3] [S4], a dwie częściowo pokrywające się metaanalizy nie wykazały wpływu na regenerację po wysiłku [S1] [S2]. Nie dotyczy to bardzo dużych dawek, napojów energetycznych ani osób, które rzadko piją kawę. Kofeina późnym popołudniem lub wieczorem może jednak skrócić lub spłycić sen, a gorszy sen może obniżyć twoją nocną HRV — zobacz [HRV i sen](/science/mechanisms/sleep-and-hrv).
+Często mówi się, że kawa zabija HRV. U osób pijących regularnie i w umiarkowanych dawkach małe badania nie wykazały zmian w spoczynku [S3] [S4], a dwie częściowo pokrywające się metaanalizy nie wykazały wpływu na regenerację po wysiłku [S1] [S2]. Nie dotyczy to bardzo dużych dawek, napojów energetycznych ani osób, które rzadko piją kawę. Kofeina późnym popołudniem lub wieczorem może jednak skrócić lub spłycić sen [S9], a gorszy sen może obniżyć twoją nocną HRV — zobacz [HRV i sen](/science/mechanisms/sleep-and-hrv).
 
 **Czego nie wiemy.** W PubMed nie ma indeksowanego przeglądu systematycznego ani metaanalizy dotyczących kofeiny i spoczynkowego HRV (stan na październik 2026). Opisane wyżej dane o spoczynku opierają się na kilku małych badaniach.
 
