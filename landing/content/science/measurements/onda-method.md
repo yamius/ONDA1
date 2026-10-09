@@ -126,7 +126,7 @@ A signal appears when last night's resting heart rate rose, heart rate variabili
 
 When your nights stay inside the corridor, ONDA sends a calm check-in instead, {{fact:onda.checkin.steadyCadence}}, with {{fact:onda.checkin.dailyCap}}. Without watch data, check-ins come {{fact:onda.checkin.noWatchCadence}}. Calm check-ins can be turned off in Settings.
 
-Nightly values move for ordinary reasons such as alcohol, a late meal, training, travel or a short night, which is why one night is never read as a verdict. See [why HRV changes from day to day](/science/mechanisms/hrv-day-to-day).
+Nightly values move for ordinary reasons such as alcohol, a late meal, training, travel or a short night, which is why one night is never read as a verdict. See [why HRV changes from day to day](/science/mechanisms/hrv-day-to-day). For alcohol in particular, see [alcohol and HRV](/science/mechanisms/alcohol-and-hrv).
 
 ## What do you see during a practice?
 

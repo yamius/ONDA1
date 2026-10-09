@@ -351,7 +351,7 @@ A sudden, unusually high value is therefore a reason to check the data — was t
 Many factors move HRV [S4]. The ones most commonly reported are:
 
 - a short or poor night's sleep;
-- alcohol;
+- alcohol (see [alcohol and HRV](/science/mechanisms/alcohol-and-hrv));
 - an illness starting, such as a cold or fever;
 - a hard training session or a heavy training block;
 - measurement conditions: a different time of day, posture, movement, talking or a loose sensor.

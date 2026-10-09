@@ -1,5 +1,5 @@
 ---
-sourceHash: dd4bee5d5d9d
+sourceHash: 58de478c79ed
 title: "HRV y frecuencia cardíaca durante el sueño: por qué la noche es la mejor ventana"
 metaTitle: "HRV y frecuencia cardíaca durante el sueño"
 metaDescription: "Qué ocurre con la frecuencia cardíaca y la HRV a lo largo de la noche y de las fases del sueño, por qué las lecturas nocturnas son las más estables y qué pueden y no pueden decir los wearables."
@@ -99,7 +99,7 @@ La noche es más estable, no limpia. Las fases del sueño, los despertares y el 
 
 ## ¿Qué influye en los valores nocturnos?
 
-El sueño corto o entrecortado, el alcohol, un día de entrenamiento duro, una infección, el estrés, una cena tardía y el ciclo menstrual pueden desplazar la frecuencia cardíaca y la HRV de una noche. Sus mecanismos y la evidencia se exponen en [por qué la HRV cambia de un día a otro](/science/mechanisms/hrv-day-to-day) y no se repiten aquí.
+El sueño corto o entrecortado, el alcohol, un día de entrenamiento duro, una infección, el estrés, una cena tardía y el ciclo menstrual pueden desplazar la frecuencia cardíaca y la HRV de una noche. Sus mecanismos y la evidencia se exponen en [por qué la HRV cambia de un día a otro](/science/mechanisms/hrv-day-to-day) y no se repiten aquí. El alcohol y el ciclo menstrual tienen cada uno su propia página: [alcohol y HRV](/science/mechanisms/alcohol-and-hrv) y [ciclo menstrual y HRV](/science/mechanisms/menstrual-cycle-and-hrv).
 
 ## ¿Qué hacen los trastornos del sueño con el ritmo cardíaco nocturno?
 

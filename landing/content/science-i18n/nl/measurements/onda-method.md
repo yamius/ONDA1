@@ -1,5 +1,5 @@
 ---
-sourceHash: "fed00e9a1b1b"
+sourceHash: c9a1794847a3
 title: "Hoe ONDA de signalen van je lichaam meet en interpreteert"
 metaTitle: "Hoe ONDA je lichaamssignalen meet en leest"
 metaDescription: "Waar ONDA zijn gegevens vandaan haalt, hoe het je baseline en signalen opbouwt, wat op je telefoon blijft en waar de grenzen van elk getal liggen."
@@ -61,7 +61,7 @@ Een signaal verschijnt als afgelopen nacht je rusthartslag steeg, je HRV daalde 
 
 Blijven je nachten binnen de bandbreedte, dan stuurt ONDA in plaats daarvan {{fact:onda.checkin.steadyCadence}} — {{fact:onda.checkin.dailyCap}}. Zonder gegevens van een horloge komen ze {{fact:onda.checkin.noWatchCadence}}. Rustige berichten kun je uitzetten in de instellingen.
 
-Nachtelijke waarden bewegen om gewone redenen, zoals alcohol, een late maaltijd, training, reizen of een korte nacht; daarom wordt één nacht nooit als oordeel gelezen. Zie [waarom HRV van dag tot dag verandert](/science/mechanisms/hrv-day-to-day).
+Nachtelijke waarden bewegen om gewone redenen, zoals alcohol, een late maaltijd, training, reizen of een korte nacht; daarom wordt één nacht nooit als oordeel gelezen. Zie [waarom HRV van dag tot dag verandert](/science/mechanisms/hrv-day-to-day). Specifiek over alcohol, zie [alcohol en HRV](/science/mechanisms/alcohol-and-hrv).
 
 ## Wat zie je tijdens een oefening?
 

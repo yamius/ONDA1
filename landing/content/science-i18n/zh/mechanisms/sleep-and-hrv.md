@@ -1,5 +1,5 @@
 ---
-sourceHash: dd4bee5d5d9d
+sourceHash: 58de478c79ed
 title: "睡眠中的 HRV 与心率：为什么夜间是最好的测量窗口"
 metaTitle: "睡眠中的 HRV 与心率"
 metaDescription: "整夜及各睡眠阶段中心率和 HRV 如何变化，为什么夜间读数最稳定，以及可穿戴设备能告诉你什么、不能告诉你什么。"
@@ -96,7 +96,7 @@ evidenceMap:
 
 ## 哪些因素会影响夜间数值？
 
-睡眠不足或断续、饮酒、高强度训练日、感染、压力、晚餐过晚以及月经周期，都可能改变一晚的心率和 HRV。它们的机制和证据见[HRV 为什么每天都在变化](/science/mechanisms/hrv-day-to-day)，这里不再重复。
+睡眠不足或断续、饮酒、高强度训练日、感染、压力、晚餐过晚以及月经周期，都可能改变一晚的心率和 HRV。它们的机制和证据见[HRV 为什么每天都在变化](/science/mechanisms/hrv-day-to-day)，这里不再重复。酒精和月经周期各有专门的页面：[酒精与 HRV](/science/mechanisms/alcohol-and-hrv)和[月经周期与 HRV](/science/mechanisms/menstrual-cycle-and-hrv)。
 
 ## 睡眠障碍会如何影响夜间心律？
 

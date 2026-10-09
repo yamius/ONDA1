@@ -1,5 +1,5 @@
 ---
-sourceHash: 176424b10273
+sourceHash: 534dc086a30e
 title: "Was ein einzelner HRV-Wert verrät – und was nicht"
 metaTitle: "HRV deuten: Was ein einzelner Wert verrät"
 metaDescription: "Was ein HRV-Wert wirklich zeigt, warum niedrig keine Diagnose und hoch nicht immer gut ist und warum der Vergleich mit anderen in die Irre führt."
@@ -102,7 +102,7 @@ Ein plötzlicher, ungewöhnlich hoher Wert ist daher ein Grund, die Daten zu pr�
 Viele Faktoren bewegen die HRV [S4]. Am häufigsten genannt werden:
 
 - eine kurze oder schlechte Nacht;
-- Alkohol;
+- Alkohol (siehe [Alkohol und HRV](/science/mechanisms/alcohol-and-hrv));
 - eine beginnende Krankheit, etwa eine Erkältung oder Fieber;
 - eine harte Trainingseinheit oder ein intensiver Trainingsblock;
 - die Messbedingungen: eine andere Tageszeit, Körperhaltung, Bewegung, Sprechen oder ein locker sitzender Sensor.

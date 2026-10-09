@@ -1,5 +1,5 @@
 ---
-sourceHash: dd4bee5d5d9d
+sourceHash: 58de478c79ed
 title: "HRV e frequenza cardiaca durante il sonno: perché la notte è la finestra migliore"
 metaTitle: "HRV e frequenza cardiaca durante il sonno"
 metaDescription: "Che cosa succede a frequenza cardiaca e HRV nel corso della notte e delle fasi del sonno, perché le misure notturne sono le più stabili e che cosa i wearable possono dire e cosa no."
@@ -99,7 +99,7 @@ La notte è più stabile, non priva di disturbi. Le fasi del sonno, i risvegli e
 
 ## Che cosa influenza i valori notturni?
 
-Sonno breve o frammentato, alcol, una giornata di allenamento intenso, un'infezione, lo stress, un pasto tardivo e il ciclo mestruale possono tutti spostare la frequenza cardiaca e l'HRV di una notte. I loro meccanismi e le relative prove sono descritti in [perché l'HRV cambia da un giorno all'altro](/science/mechanisms/hrv-day-to-day) e qui non vengono ripetuti.
+Sonno breve o frammentato, alcol, una giornata di allenamento intenso, un'infezione, lo stress, un pasto tardivo e il ciclo mestruale possono tutti spostare la frequenza cardiaca e l'HRV di una notte. I loro meccanismi e le relative prove sono descritti in [perché l'HRV cambia da un giorno all'altro](/science/mechanisms/hrv-day-to-day) e qui non vengono ripetuti. L'alcol e il ciclo mestruale hanno ciascuno una pagina dedicata: [alcol e HRV](/science/mechanisms/alcohol-and-hrv) e [ciclo mestruale e HRV](/science/mechanisms/menstrual-cycle-and-hrv).
 
 ## Che cosa fanno i disturbi del sonno al ritmo cardiaco notturno?
 

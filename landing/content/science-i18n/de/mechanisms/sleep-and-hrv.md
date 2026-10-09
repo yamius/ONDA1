@@ -1,5 +1,5 @@
 ---
-sourceHash: dd4bee5d5d9d
+sourceHash: 58de478c79ed
 title: "HRV und Herzfrequenz im Schlaf: Warum die Nacht das beste Messfenster ist"
 metaTitle: "HRV und Herzfrequenz im Schlaf"
 metaDescription: "Was mit Herzfrequenz und HRV über die Nacht und die Schlafstadien passiert, warum Nachtwerte das stabilste Fenster sind und was Wearables sagen können und was nicht."
@@ -99,7 +99,7 @@ Die Nacht ist stabiler, aber nicht störungsfrei. Schlafstadien, Wachphasen und 
 
 ## Was beeinflusst die Nachtwerte?
 
-Kurzer oder unterbrochener Schlaf, Alkohol, ein harter Trainingstag, eine Infektion, Stress, eine späte Mahlzeit und der Menstruationszyklus können Herzfrequenz und HRV einer Nacht verschieben. Ihre Mechanismen und die Evidenz dazu stehen unter [warum sich die HRV von Tag zu Tag verändert](/science/mechanisms/hrv-day-to-day) und werden hier nicht wiederholt.
+Kurzer oder unterbrochener Schlaf, Alkohol, ein harter Trainingstag, eine Infektion, Stress, eine späte Mahlzeit und der Menstruationszyklus können Herzfrequenz und HRV einer Nacht verschieben. Ihre Mechanismen und die Evidenz dazu stehen unter [warum sich die HRV von Tag zu Tag verändert](/science/mechanisms/hrv-day-to-day) und werden hier nicht wiederholt. Alkohol und der Menstruationszyklus haben jeweils eine eigene Seite: [Alkohol und HRV](/science/mechanisms/alcohol-and-hrv) und [Menstruationszyklus und HRV](/science/mechanisms/menstrual-cycle-and-hrv).
 
 ## Was machen Schlafstörungen mit dem nächtlichen Herzrhythmus?
 

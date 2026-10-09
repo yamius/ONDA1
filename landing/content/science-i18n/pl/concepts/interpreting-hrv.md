@@ -1,5 +1,5 @@
 ---
-sourceHash: 176424b10273
+sourceHash: 534dc086a30e
 title: "Co pojedyncza wartość HRV może, a czego nie może ci powiedzieć"
 metaTitle: "Jak czytać HRV: co mówi jedna wartość"
 metaDescription: "Co naprawdę pokazuje jeden odczyt HRV, dlaczego niski nie jest diagnozą, wysoki nie zawsze jest dobry, a porównywanie się z innymi wprowadza w błąd."
@@ -101,7 +101,7 @@ Nagła, nietypowo wysoka wartość jest więc powodem, by sprawdzić dane — cz
 Na HRV wpływa wiele czynników [S4]. Najczęściej wymieniane to:
 
 - krótki lub słaby sen;
-- alkohol;
+- alkohol (zob. [alkohol a HRV](/science/mechanisms/alcohol-and-hrv));
 - początek choroby, na przykład przeziębienia lub gorączki;
 - ciężki trening lub intensywny blok treningowy;
 - warunki pomiaru: inna pora dnia, pozycja ciała, ruch, mówienie lub luźny czujnik.

@@ -1,5 +1,5 @@
 ---
-sourceHash: dd4bee5d5d9d
+sourceHash: 58de478c79ed
 title: "HRV en hartslag tijdens de slaap: waarom de nacht het beste meetvenster is"
 metaTitle: "HRV en hartslag tijdens de slaap"
 metaDescription: "Wat er 's nachts en in de slaapfasen gebeurt met hartslag en HRV, waarom nachtelijke metingen het stabielste venster zijn en wat wearables wel en niet zeggen."
@@ -99,7 +99,7 @@ De nacht is stabieler, niet zuiver. Slaapfasen, ontwaken en het tijdstip van de 
 
 ## Wat beïnvloedt nachtelijke waarden?
 
-Korte of onderbroken slaap, alcohol, een zware trainingsdag, een infectie, stress, een late maaltijd en de menstruatiecyclus kunnen allemaal de hartslag en HRV van een nacht verschuiven. Hun mechanismen en het bewijs staan op [waarom HRV van dag tot dag verandert](/science/mechanisms/hrv-day-to-day) en worden hier niet herhaald.
+Korte of onderbroken slaap, alcohol, een zware trainingsdag, een infectie, stress, een late maaltijd en de menstruatiecyclus kunnen allemaal de hartslag en HRV van een nacht verschuiven. Hun mechanismen en het bewijs staan op [waarom HRV van dag tot dag verandert](/science/mechanisms/hrv-day-to-day) en worden hier niet herhaald. Alcohol en de menstruatiecyclus hebben elk een eigen pagina: [alcohol en HRV](/science/mechanisms/alcohol-and-hrv) en [menstruatiecyclus en HRV](/science/mechanisms/menstrual-cycle-and-hrv).
 
 ## Wat doen slaapstoornissen met het hartritme 's nachts?
 

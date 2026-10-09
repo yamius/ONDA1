@@ -1,5 +1,5 @@
 ---
-sourceHash: "fed00e9a1b1b"
+sourceHash: c9a1794847a3
 title: "Wie ONDA die Signale deines Körpers misst und deutet"
 metaTitle: "Wie ONDA deine Körpersignale misst und deutet"
 metaDescription: "Woher ONDA seine Daten bezieht, wie es deine Baseline und Signale bildet, was auf deinem Handy bleibt und wo die Grenzen jeder angezeigten Zahl liegen."
@@ -62,7 +62,7 @@ Ein Signal erscheint, wenn in der letzten Nacht der Ruhepuls gestiegen, die HRV 
 
 Bleiben deine Nächte im Korridor, schickt ONDA stattdessen einen ruhigen Check-in – {{fact:onda.checkin.steadyCadence}}, dabei {{fact:onda.checkin.dailyCap}}. Ohne Daten einer Uhr kommen Check-ins {{fact:onda.checkin.noWatchCadence}}. Ruhige Check-ins lassen sich in den Einstellungen ausschalten.
 
-Nächtliche Werte bewegen sich aus gewöhnlichen Gründen wie Alkohol, einer späten Mahlzeit, Training, Reisen oder einer kurzen Nacht – deshalb gilt eine einzelne Nacht nie als Urteil. Siehe [warum sich die HRV von Tag zu Tag ändert](/science/mechanisms/hrv-day-to-day).
+Nächtliche Werte bewegen sich aus gewöhnlichen Gründen wie Alkohol, einer späten Mahlzeit, Training, Reisen oder einer kurzen Nacht – deshalb gilt eine einzelne Nacht nie als Urteil. Siehe [warum sich die HRV von Tag zu Tag ändert](/science/mechanisms/hrv-day-to-day). Speziell zu Alkohol siehe [Alkohol und HRV](/science/mechanisms/alcohol-and-hrv).
 
 ## Was siehst du während einer Übung?
 

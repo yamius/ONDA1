@@ -1,5 +1,5 @@
 ---
-sourceHash: 176424b10273
+sourceHash: 534dc086a30e
 title: "O que um único valor de HRV pode e não pode dizer"
 metaTitle: "Como interpretar a HRV: o que um valor isolado diz"
 metaDescription: "O que uma leitura de HRV mostra, por que um valor baixo não é diagnóstico, por que alto nem sempre é bom e por que comparar sua HRV com a de outros engana."
@@ -101,7 +101,7 @@ Um valor alto, repentino e incomum é, portanto, um motivo para verificar os dad
 Muitos fatores movem a HRV [S4]. Os mais citados são:
 
 - uma noite de sono curta ou ruim;
-- álcool;
+- álcool (veja [álcool e HRV](/science/mechanisms/alcohol-and-hrv));
 - o início de uma doença, como um resfriado ou febre;
 - um treino pesado ou um bloco de treino intenso;
 - as condições de medição: outra hora do dia, a postura, movimento, falar ou um sensor frouxo.
