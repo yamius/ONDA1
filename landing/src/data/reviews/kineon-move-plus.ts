@@ -17,7 +17,7 @@ const kineonMovePlus: ToolReviewInput = {
     { criterionId: 'wavelengths', score: 7.0, note: 'Two wavelengths: 660 nm LED (superficial) and 808 nm laser (deeper near-infrared). The 808 nm band is the one most studied for joints; nothing beyond that pair.' },
     { criterionId: 'build-emf-flicker', score: 8.0, note: 'Battery-powered modules on an adjustable strap with a charge case; about 4 hours of continuous use (24 ten-minute sessions) per charge. Cordless use avoids mains-driver EMF; no independent EMF data published.' },
     { criterionId: 'coverage', score: 4.5, note: 'Joint-only — knee, elbow, shoulder, wrist or ankle via the strap. Not a panel, not for full-body. Coverage score reflects the different problem, not failure.' },
-    { criterionId: 'evidence', score: 8.0, note: 'Listed in the FDA device database (GUDID) as a Class II over-the-counter LED-plus-laser device for knee pain relief. Low-level laser therapy for knee osteoarthritis has meta-analytic support; no independent trial of the Move+ itself.' },
+    { criterionId: 'evidence', score: 8.0, note: 'Listed in the FDA device database (GUDID) as a Class II over-the-counter LED-plus-laser device for knee pain relief. Low-level laser therapy for knee osteoarthritis has meta-analytic support; no independent trial of the Move+ itself. “Backed by 9,600+ research papers” on its product page refers to red-light research in general, not to trials of the Move+.' },
     { criterionId: 'value', score: 8.0, note: '$499 on the official store (list $699), HSA/FSA eligible, 30-day trial — fair for a targeted laser device; poor value if bought as a panel substitute.' },
   ],
   pros: [

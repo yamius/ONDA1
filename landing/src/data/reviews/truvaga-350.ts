@@ -13,13 +13,14 @@ const truvaga350: ToolReviewInput = {
   summary:
     'Truvaga is electroCore’s consumer brand, using the same cervical tVNS hardware platform that powers the FDA-cleared gammaCore prescription line — repackaged as an over-the-counter wellness device. The 350 model delivers 350 two-minute sessions before retirement and uses the same 5 kHz burst waveform. Strong manufacturing pedigree; the wellness-indication clinical evidence is thinner than gammaCore’s headache record but real.',
   scores: [
-    { criterionId: 'evidence', score: 7.5, note: 'Inherits gammaCore’s safety record; wellness-indication evidence is a small but real set of HRV and stress studies. Not FDA-cleared for any indication — sold as a general wellness device.' },
+    { criterionId: 'evidence', score: 7.0, note: 'No published trials of the Truvaga device itself (two registered trials, no results yet, October 2026). The gammaCore studies are of the prescription device and are not counted here, though the shared platform gives it gammaCore’s safety record — 7.0, the base score for a device without trials of its own. Not FDA-cleared for any indication — sold as a general wellness device.' },
     { criterionId: 'mechanism', score: 8.5, note: 'Same cervical tVNS approach as gammaCore: handheld unit over the carotid sheath, 5 kHz burst waveform. Targets the cervical vagal trunk directly.' },
     { criterionId: 'protocols', score: 6.5, note: 'Two-minute fixed sessions; intensity user-adjustable. The companion app suggests usage patterns rather than distinct programmes.' },
     { criterionId: 'comfort', score: 7.0, note: 'Ergonomic handheld; some users report jaw twitches or neck soreness at higher amplitudes — same as gammaCore.' },
     { criterionId: 'biofeedback', score: 6.0, note: 'App logs sessions and supports simple mood/stress journaling. No on-device HRV measurement.' },
     { criterionId: 'value', score: 8.0, note: '$325 one-time for 350 preloaded sessions (about six months of daily use) — now only about $56 more than Pulsetto; the rechargeable Truvaga Plus is $499. No prescription. Roughly one-fifth the long-term cost of gammaCore.' },
   ],
+  editorialAdjustment: { value: -0.3, reason: 'Marketing honesty — the homepage says Truvaga devices “are a product of extensive clinical studies”, but those studies are of gammaCore, the prescription device; we found no published trial of Truvaga itself (checked October 2026). This is scored here, not under evidence.' },
   pros: [
     'Same hardware platform as the FDA-cleared gammaCore — proven safety',
     'No prescription, no insurance approval needed',

@@ -20,6 +20,7 @@ const hoolestVeReliefPrime: ToolReviewInput = {
     { criterionId: 'biofeedback', score: 6.0, note: 'Companion app logs sessions and integrates with Apple Health for HRV correlation; no on-device HRV.' },
     { criterionId: 'value', score: 7.5, note: '$279 one-time, no subscription. Comparable to Pulsetto at the entry tier.' },
   ],
+  editorialAdjustment: { value: -0.3, reason: 'Marketing honesty — the homepage calls VeRelief “Clinically Proven” and its research page says “Proven to Reset Panic”, but the studies are the founders’ own and unpublished, and they used a 10-minute protocol rather than the device’s 3-minute mode; we found no published trial of VeRelief (checked October 2026). This is scored here, not under evidence.' },
   pros: [
     'Founder-published HRV and sleep-onset research',
     'High peak intensity in short sessions — fits athletic recovery workflows',

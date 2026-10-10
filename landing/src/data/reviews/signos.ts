@@ -13,7 +13,7 @@ const signos: ToolReviewInput = {
   summary:
     'Signos is the CGM programme built for weight loss rather than general biohacker insight. Hardware is Dexcom G7; the differentiator is an AI agent that watches glucose curves in real time and pushes meal-by-meal recommendations through the app. Insights focus on glucose spikes that drive insulin and weight gain, with strong food-logging and exercise-prompt integration. Less academic than Levels, more behaviourally directive.',
   scores: [
-    { criterionId: 'sensor-accuracy', score: 8.5, note: 'Dexcom G7 — 10-day wear, 30-minute warm-up, the same hardware as Levels and Stelo. In an independent head-to-head study (Eichenlaub et al. 2025) the G7 and FreeStyle Libre 3 were similarly accurate.' },
+    { criterionId: 'sensor-accuracy', score: 8.5, note: 'Dexcom G7 — 10-day wear, 30-minute warm-up, the same hardware as Levels and Stelo. In an independent head-to-head study (Eichenlaub et al. 2025) the G7 and FreeStyle Libre 3 were similarly accurate. The “FDA-Cleared” badge on its site refers to the Signos glucose monitoring system (app plus sensor) for glucose monitoring, not to weight loss.' },
     { criterionId: 'insights', score: 8.0, note: 'Strong on glucose-spike interpretation and meal scoring; weight-loss framing throughout. Less general-purpose than Levels.' },
     { criterionId: 'coaching', score: 7.0, note: 'AI agent surfaces meal-by-meal nudges and exercise prompts in real time. No human RD by default; some plans include access.' },
     { criterionId: 'app-integration', score: 7.5, note: 'Polished app with food logging and exercise integration. Apple Health support; narrower third-party stack than Levels.' },

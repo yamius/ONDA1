@@ -17,7 +17,7 @@ const saunaspaceFaraday: ToolReviewInput = {
     { criterionId: 'build', score: 8.5, note: 'All-wood (poplar) construction with Faraday-cage EMF shielding. 5-year warranty. Strong build-quality reputation.' },
     { criterionId: 'emf', score: 9.5, note: 'Full Faraday-cage shielding — eliminates external EMF entirely. The most rigorous EMF discipline in the consumer sauna category.' },
     { criterionId: 'form-factor', score: 7.0, note: '1-person tent-style or cabin configurations. Smaller footprint than full cabin IR; tent requires assembly.' },
-    { criterionId: 'evidence', score: 7.0, note: 'Founder-led with serious biohacker community presence. Honest about near-IR-vs-full-spectrum distinction; no overclaiming.' },
+    { criterionId: 'evidence', score: 7.0, note: 'Founder-led with serious biohacker community presence. Honest about the near-IR-vs-full-spectrum distinction; its EMF page says “research shows” everyday EMFs harm cells without citing studies — a claim about EMFs in general, not about the sauna.' },
     { criterionId: 'value', score: 6.5, note: '$4,000–$6,500 depending on configuration. Premium tier; the Faraday cage is the value differentiator.' },
   ],
   pros: [

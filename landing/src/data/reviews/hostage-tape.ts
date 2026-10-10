@@ -15,7 +15,7 @@ const hostageTape: ToolReviewInput = {
   scores: [
     { criterionId: 'adhesion-comfort', score: 9.0, note: 'Best beard-friendly adhesive in category — stays on through beard stubble where Somnifix and DIY tape fail. Painless removal claim broadly true in user reports.' },
     { criterionId: 'breathing-mechanism', score: 7.5, note: 'Full-seal single-piece design. Corner cutout leaves part of the lips uncovered; not tested as a safety feature. No porous-strip option.' },
-    { criterionId: 'evidence-grounding', score: 6.0, note: 'Brand-funded testimonials and UFC fighter endorsements. Limited peer-reviewed studies on the specific tape. Honest sleep-apnea caveat in safety copy.' },
+    { criterionId: 'evidence-grounding', score: 6.0, note: 'Brand-funded testimonials and UFC fighter endorsements. Its “clinically studied” claim rests on a company study (three weeks, 45 participants, self-reported ratings); the maker discloses its limitations, and it has not been published in a peer-reviewed journal (October 2026). Honest sleep-apnea caveat in safety copy.' },
     { criterionId: 'form-factor', score: 8.5, note: 'Single-piece full-face strip — easy to apply, generous coverage. Newer "Hostage Mini" half-strip option for users wanting less coverage.' },
     { criterionId: 'material-safety', score: 8.0, note: 'Hypoallergenic adhesive. Skin-reaction reports rare in user feedback at scale. Latex-free.' },
     { criterionId: 'value', score: 8.5, note: '$13/month for ~30 strips = ~$0.43/night. Subscription convenience valued by users; absolute cost higher than DIY medical tape but reasonable for the brand polish.' },

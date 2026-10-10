@@ -17,9 +17,10 @@ const hoogaHg500: ToolReviewInput = {
     { criterionId: 'wavelengths', score: 7.0, note: 'Two wavelengths (660 + 850 nm) — the basic biohacker default. No 630, 810, 830 or 940 nm.' },
     { criterionId: 'build-emf-flicker', score: 7.5, note: 'EMF <0.5 mG at 6", flicker rate disclosed and low. Build is competent — aluminium back, plastic front trim; 3-year warranty and 60-day returns.' },
     { criterionId: 'coverage', score: 7.5, note: 'Half-body coverage in a single panel. Stand and door-mount hardware included.' },
-    { criterionId: 'evidence', score: 6.5, note: 'Marketing is conservative; Hooga does not overclaim — unusual at the budget tier.' },
+    { criterionId: 'evidence', score: 6.5, note: 'Hooga’s FAQ states its status accurately (the panels “are not FDA Class II or 510(k)-cleared finished devices”), more precisely than most of the category; its sales page does not (see the score adjustment).' },
     { criterionId: 'value', score: 9.5, note: '$359 for half-body coverage with verified specs — by far the best value in this list. Cheaper panels exist on Amazon but spec discipline drops fast.' },
   ],
+  editorialAdjustment: { value: -0.3, reason: 'Marketing honesty — the red-light collection page says the therapy is “FDA-cleared for general wellness use”, but Hooga panels have no FDA clearance; Hooga’s own FAQ says they “are not FDA Class II or 510(k)-cleared finished devices” — the FAQ is the accurate one (checked October 2026). This is scored here, not under evidence.' },
   pros: [
     'Best value in the consumer red-light category — $359 for verified half-body specs',
     'Independent meter readings close to manufacturer claims',

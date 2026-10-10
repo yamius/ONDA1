@@ -13,7 +13,7 @@ const stelo: ToolReviewInput = {
   summary:
     'Stelo is Dexcom’s direct-to-consumer CGM for non-diabetic biohackers, cleared by the FDA in 2024 as the first OTC CGM in the US. Hardware is the Dexcom G7 sensor — the same sensor underneath Levels and Nutrisense — sold through Dexcom’s own app at $99 for two sensors (a one-month supply). Insight engine is simpler than Levels but the data is the same. It is the cheapest way to get the Dexcom G7 sensor.',
   scores: [
-    { criterionId: 'sensor-accuracy', score: 8.5, note: 'Dexcom G7 hardware, 15-day wear in the Stelo variant, 30-minute warm-up. In an independent head-to-head study (Eichenlaub et al. 2025) the G7 and FreeStyle Libre 3 were similarly accurate; maker accuracy figures do not count as evidence in ONDA scores.' },
+    { criterionId: 'sensor-accuracy', score: 8.5, note: 'Dexcom G7 hardware, 15-day wear in the Stelo variant, 30-minute warm-up. In an independent head-to-head study (Eichenlaub et al. 2025) the G7 and FreeStyle Libre 3 were similarly accurate; maker accuracy figures do not count as evidence in ONDA scores. Dexcom presents Stelo’s evidence honestly: the site lists its references and discloses that 77.9% of sensors lasted the full 15 days.' },
     { criterionId: 'insights', score: 7.0, note: 'Solid meal-impact and daily time-in-range views. Less depth than Levels — no AUC decomposition or food-ranking history — but covers what most users need.' },
     { criterionId: 'coaching', score: 5.5, note: 'No human coach; in-app AI guidance and educational content only. Coaching is the trade for the price.' },
     { criterionId: 'app-integration', score: 7.5, note: 'Dexcom Stelo app on iOS/Android with Apple Health integration. Limited third-party connectors compared with Levels.' },

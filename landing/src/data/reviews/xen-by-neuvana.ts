@@ -20,6 +20,7 @@ const xenByNeuvana: ToolReviewInput = {
     { criterionId: 'biofeedback', score: 5.5, note: 'App logs sessions; no on-device HRV. Optional Apple Health integration.' },
     { criterionId: 'value', score: 6.5, note: '$399 hardware, no subscription required. More expensive than Pulsetto, less studied than Nurosym.' },
   ],
+  editorialAdjustment: { value: -0.3, reason: 'Marketing honesty — the homepage says “Backed by Research, Proven by Results”, but its Xen figures come from Neuvana’s own pilot studies, which its reference list describes as “not from peer-reviewed publications” (checked October 2026). This is scored here, not under evidence.' },
   pros: [
     'Earbud form factor — most familiar consumer shape in the category',
     'Stimulation paired with music — turns sessions into something you enjoy',

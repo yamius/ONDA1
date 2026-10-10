@@ -16,7 +16,7 @@ const jovsDpl: ToolReviewInput = {
     { criterionId: 'irradiance', score: 6.5, note: 'Documented irradiance per mode. Less independently verified than category references; spec sheets emphasize peak rather than continuous output.' },
     { criterionId: 'wavelength-coverage', score: 9.0, note: 'Seven wavelength modes — broadest coverage in consumer face masks. Goes beyond standard red + NIR into blue / amber / green.' },
     { criterionId: 'led-count-coverage', score: 7.0, note: 'Solid LED count across hard-shell coverage. No neck flap.' },
-    { criterionId: 'clinical-evidence', score: 5.5, note: 'FDA registered (a listing, not clearance or approval). Strong K-beauty consumer market but limited Western peer-reviewed validation on the specific device.' },
+    { criterionId: 'clinical-evidence', score: 5.5, note: 'FDA registered (a listing, not clearance or approval). 510(k) K261851 covers the OEM’s LED masks JML1–JML10; whether the DPL mask is included is not visible in the FDA database. Strong K-beauty consumer market but limited Western peer-reviewed validation on the specific device.' },
     { criterionId: 'comfort-fit', score: 6.5, note: 'Hard-shell hybrid build — less comfortable than full silicone alternatives. Korean ergonomic design tries to soften the hard form factor.' },
     { criterionId: 'value', score: 7.5, note: '$399 — accessible mid-tier pricing for the multi-wavelength spec. Strong per-wavelength cost.' },
   ],
