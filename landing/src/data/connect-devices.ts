@@ -385,7 +385,7 @@ export function getConnectDevice(slug: string): ConnectDevice | undefined {
 }
 
 export const CONNECT_INDEX_META = {
-  title: 'How to Read Your Wearable’s HRV, Device by Device | ONDA Life',
+  title: 'How to Read Your Wearable’s HRV | ONDA Life',
   description:
     'How to read HRV from Oura, WHOOP, Polar, Garmin, Fitbit, Samsung, Withings, Ultrahuman, RingConn, Amazfit and Apple Watch: which HRV each shows, and whether it can connect to ONDA.',
   h1: 'How to read your device’s HRV',
