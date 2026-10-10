@@ -200,12 +200,12 @@
       "verdict": "Nog steeds een uitstekende tracker voor HRV en slaap 's nachts — nu een trede onder de slankere Oura Ring 5 met vernieuwde sensoren, maar met dezelfde nieuwe software en met korting vaak de betere koop. Het verplichte abonnement blijft.",
       "summary": "De Oura Ring 4 was het apparaat om te verslaan voor hartslagvariabiliteit en slaap 's nachts, en hij staat nog steeds bijna bovenaan — inmiddels opgevolgd door de Oura Ring 5, die slanker is en opnieuw ontworpen sensoren heeft. Belangrijk: de nieuwe softwarefuncties komen ook naar de Ring 4. Hij houdt dus het kleine 24/7-formaat, goed gevalideerde slaapfasen en nachtelijke HRV dicht bij een ecg — voor $50 minder. Het nadeel blijft: een doorlopend lidmaatschap, zonder welke de app alleen basisdata toont.",
       "description": "Oura Ring 4 review 2026: nog altijd top voor HRV en slaap 's nachts, vanaf $349 — $50 onder Ring 5 — maar volledige data vraagt $5.99/maand.",
-      "bestFor": "Het best voor nauwkeurige HRV- en slaapdata 's nachts tegen de laagste Oura-prijs.",
+      "bestFor": "Het best voor nachtelijke HRV met één onafhankelijke ecg-controle (13 mensen) en slaapdata tegen de laagste Oura-prijs.",
       "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van fabrikantspecificaties, onafhankelijke reviews uit 2026 en gepubliceerde validatieliteratuur. Niet zelf praktisch getest door ONDA.",
       "productType": "Slimme ring",
       "pros": [
         "In één nachtelijk onderzoek (13 mensen) behoorde de Oura Ring 4 tot de apparaten die het dichtst bij het ecg kwamen",
-        "Sterke, gepubliceerde validatie van slaapfasen tegen polysomnografie",
+        "De slaapfasebepaling van een eerdere generatie (Gen 3) is in door Oura gefinancierde studies vergeleken met polysomnografie; geen onafhankelijke validatie van de slaapfasebepaling van de Ring 4",
         "Klein, comfortabel formaat voor 24/7",
         "Krijgt dezelfde nieuwe software als de Ring 5, voor $50 minder"
       ],
@@ -1274,7 +1274,7 @@
       "productType": "Gratis app van het Amerikaanse ministerie van Defensie voor buikademhaling tegen stress en PTSS"
     },
     "polar-h10": {
-      "verdict": "Het nauwkeurigste HRV-apparaat dat je kunt kopen (bij jonge gezonde volwassenen in rust) — een referentie-instrument, geen wearable voor de hele dag.",
+      "verdict": "Een ECG-borstband die bij jonge gezonde volwassenen in rust vrijwel perfect overeenkwam met een laboratorium-ECG — een referentie-instrument, geen wearable voor de hele dag.",
       "productType": "ECG-borstband"
     },
     "calm": {

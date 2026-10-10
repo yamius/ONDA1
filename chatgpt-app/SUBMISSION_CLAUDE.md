@@ -19,7 +19,7 @@ Sources: [submission](https://claude.com/docs/connectors/building/submission), [
 | Read and write tools separated | ✅ all read-only, nothing writes |
 | Valid input → success; invalid input → actionable error | ✅ v1.4.0: errors name the rule (“goal must be one of calm, sleep, focus or energy”) and never echo the values; no more generic “could not process” |
 | Reasonably sized responses | ✅ a few KB per call (limit ≈150,000 chars) |
-| No conversation data beyond what the tool needs; no memory or chat history | ✅ only tool parameters; `_meta` hints ignored |
+| No conversation data beyond what the tool needs; no memory or chat history | ✅ only tool parameters; `_meta` hint values ignored (links are tagged by host from the `User-Agent` header and `_meta` key names only, since 1.8.1) |
 | Own first-party API | ✅ data is ONDA’s own (site reviews, published HRV distribution, practices), bundled in the server |
 | Server domain matches the service | ✅ `onda-life.com/mcp` on the main domain (a rewrite to the server project; responses, headers and cards pass through unchanged — checked with Inspector) |
 | Authentication | ✅ **none** is supported by default for public data. Origin checks are not required (Claude calls come from Anthropic’s backend, `160.79.104.0/21`, not the browser) |
