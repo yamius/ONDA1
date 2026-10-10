@@ -200,12 +200,12 @@
       "verdict": "Continua sendo um excelente monitor noturno de HRV e sono — agora um degrau abaixo do Oura Ring 5, mais fino e com sensores aprimorados, mas com o mesmo software novo e muitas vezes com melhor custo-benefício em promoção. A assinatura obrigatória continua.",
       "summary": "O Oura Ring 4 era o dispositivo a ser batido em variabilidade da frequência cardíaca noturna e sono, e continua perto do topo — agora sucedido pelo Oura Ring 5, mais fino e com sensores redesenhados. O ponto principal: os novos recursos de software também chegam ao Ring 4, que mantém um formato pequeno para uso 24/7, estimativa de fases do sono bem validada e HRV noturna próxima ao ECG por $50 a menos. A desvantagem não mudou: uma assinatura recorrente sem a qual o app mostra apenas dados básicos.",
       "description": "Oura Ring 4 vale a pena? Análise 2026: ainda top em HRV noturna e sono, a partir de $349 ($50 abaixo do Ring 5), mas exige assinatura de $5.99/mês.",
-      "bestFor": "Ideal para dados noturnos precisos de HRV e sono pelo menor preço da Oura.",
+      "bestFor": "Ideal para a HRV noturna com uma verificação independente por ECG (13 pessoas) e dados de sono pelo menor preço da Oura.",
       "testNote": "Avaliação baseada em evidências: pontuada a partir das especificações do fabricante, análises independentes de 2026 e literatura de validação publicada. Não testado na prática pela ONDA.",
       "productType": "Anel inteligente",
       "pros": [
         "Em um estudo noturno (13 pessoas), o Oura Ring 4 ficou entre os mais próximos do ECG",
-        "Validação publicada e sólida das fases do sono contra polissonografia",
+        "As fases do sono de uma geração anterior (Gen 3) foram comparadas com a polissonografia em estudos financiados pela Oura; não há validação independente das fases do sono do Ring 4",
         "Formato pequeno e confortável para uso 24/7",
         "Recebe o mesmo software novo do Ring 5, por $50 a menos"
       ],
@@ -1274,7 +1274,7 @@
       "productType": "App gratuito de respiração diafragmática criado pelo DoD para estresse e TEPT"
     },
     "polar-h10": {
-      "verdict": "O dispositivo de variabilidade da frequência cardíaca (HRV ou VFC) mais preciso que você pode comprar (em adultos jovens saudáveis, em repouso): um instrumento de referência, não um wearable para o dia todo.",
+      "verdict": "Uma cinta peitoral de ECG que coincidiu quase perfeitamente com o ECG de laboratório em adultos jovens saudáveis em repouso: um instrumento de referência, não um wearable para o dia todo.",
       "productType": "Cinta peitoral ECG"
     },
     "calm": {

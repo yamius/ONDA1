@@ -4,6 +4,8 @@
  * with mimeType text/html;profile=mcp-app (MCP Apps). Data arrives over the postMessage bridge (ui/notifications/tool-result), or window.openai.toolOutput as fallback
  * (the tool's structuredContent); the card re-renders on openai:set_globals.
  * Links open via window.openai.openExternal when the host provides it.
+ * Cards never build or tag a URL themselves: every href is a URL from the tool result,
+ * already tagged by the server for the host that called the tool (lib/links.js).
  */
 
 const SHELL_CSS = `

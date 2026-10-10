@@ -200,12 +200,12 @@
       "verdict": "Nadal świetny tracker nocnego HRV i snu — teraz o krok za smuklejszym Oura Ring 5 z ulepszonymi czujnikami, ale z tym samym nowym oprogramowaniem i często lepszą opłacalnością w promocji. Obowiązkowy abonament pozostaje.",
       "summary": "Oura Ring 4 był urządzeniem do pobicia w pomiarze nocnej zmienności rytmu serca i snu — i nadal jest w czołówce, choć jego następcą jest Oura Ring 5, smuklejszy i z przeprojektowanymi czujnikami. Co kluczowe, nowe funkcje oprogramowania trafiają także na Ring 4, więc zachowuje on małą obudowę do noszenia 24/7, dobrze zwalidowane fazy snu i nocne HRV bliskie EKG — za 50 $ mniej. Haczyk się nie zmienił: cykliczne członkostwo, bez którego aplikacja pokazuje tylko podstawowe dane.",
       "description": "Oura Ring 4 – recenzja 2026: czołowy pierścień do nocnego HRV i snu, od 349 $ (50 $ taniej niż Ring 5), pełne dane wymagają abonamentu 5,99 $/mies.",
-      "bestFor": "Najlepszy dla osób, które chcą dokładnych nocnych danych o HRV i śnie w najniższej cenie Oura.",
+      "bestFor": "Najlepszy dla osób, które chcą nocnego HRV z jedną niezależną weryfikacją względem EKG (13 osób) i danych o śnie w najniższej cenie Oura.",
       "testNote": "Ocena oparta na dowodach — na podstawie specyfikacji producenta, niezależnych recenzji z 2026 roku i opublikowanej literatury walidacyjnej. Nie testowane osobiście przez ONDA.",
       "productType": "Inteligentny pierścień",
       "pros": [
         "W jednym badaniu nocnym (13 osób) Oura Ring 4 był wśród urządzeń najbliższych EKG",
-        "Mocna, opublikowana walidacja faz snu względem polisomnografii",
+        "Rozpoznawanie faz snu poprzedniej generacji (Gen 3) porównywano z polisomnografią w badaniach finansowanych przez Oura; brak niezależnej walidacji rozpoznawania faz snu przez Ring 4",
         "Mała, wygodna obudowa do noszenia 24/7",
         "Otrzymuje to samo nowe oprogramowanie co Ring 5 — za 50 $ mniej"
       ],
@@ -1274,7 +1274,7 @@
       "productType": "Darmowa aplikacja do oddychania przeponowego na stres i PTSD, stworzona przez DoD"
     },
     "polar-h10": {
-      "verdict": "Najdokładniejsze urządzenie HRV, jakie można kupić (u młodych zdrowych dorosłych w spoczynku) — instrument referencyjny, a nie urządzenie do noszenia przez cały dzień.",
+      "verdict": "Pas piersiowy EKG, którego odczyty niemal idealnie zgadzały się z laboratoryjnym EKG u młodych zdrowych dorosłych w spoczynku — instrument referencyjny, a nie urządzenie do noszenia przez cały dzień.",
       "productType": "Pas piersiowy EKG"
     },
     "calm": {

@@ -9,15 +9,20 @@
  * Each tool points ChatGPT at a card (MCP Apps resource, text/html;profile=mcp-app)
  * via _meta.ui.resourceUri (+ the openai/outputTemplate alias); the card gets
  * structuredContent over the ui/notifications/tool-result bridge.
+ *
+ * Links in a tool result are tagged with the host that called it (ChatGPT, Claude or
+ * unknown → ai_app): detectClient(req, params) runs per tools/call, from the request
+ * headers and the key names of params._meta only (lib/links.js).
  */
 import { TOOLS, InputError } from '../lib/tools.js';
 import { WIDGETS } from '../lib/widgets.js';
+import { detectClient, linksFor } from '../lib/links.js';
 
 export const SHORT_DESCRIPTION = 'HRV by age compared with Fitbit users, guided breathing, free practices and honest wearable comparisons.';
 const SERVER_INFO = {
   name: 'onda-life',
   title: 'ONDA Life',
-  version: '1.8.0',
+  version: '1.8.1',
   description: SHORT_DESCRIPTION,
   websiteUrl: 'https://onda-life.com',
   icons: [{ src: 'https://onda-chatgpt.vercel.app/icon-512.png', mimeType: 'image/png', sizes: ['512x512'] }],
@@ -74,7 +79,8 @@ function resourceContents(w) {
 const rpcResult = (id, result) => ({ jsonrpc: '2.0', id, result });
 const rpcError = (id, code, message) => ({ jsonrpc: '2.0', id, error: { code, message } });
 
-export async function handleRpc(message) {
+/** One JSON-RPC message. `req` (optional) is the HTTP request, read only to tag links by host. */
+export async function handleRpc(message, req) {
   const { id, method, params } = message ?? {};
   switch (method) {
     case 'initialize':
@@ -107,7 +113,7 @@ export async function handleRpc(message) {
       const tool = TOOLS.find((t) => t.name === params?.name);
       if (!tool) return rpcError(id, -32602, `Unknown tool: ${params?.name}`);
       try {
-        const { structuredContent, text } = tool.run(params.arguments ?? {});
+        const { structuredContent, text } = tool.run(params.arguments ?? {}, linksFor(detectClient(req, params)));
         return rpcResult(id, {
           structuredContent,
           content: [{ type: 'text', text }],
@@ -156,10 +162,10 @@ export default async function handler(req, res) {
     return res.status(400).json(rpcError(null, -32700, 'Parse error'));
   }
   if (Array.isArray(body)) {
-    const out = (await Promise.all(body.map(handleRpc))).filter(Boolean);
+    const out = (await Promise.all(body.map((m) => handleRpc(m, req)))).filter(Boolean);
     return out.length ? res.status(200).json(out) : res.status(202).end();
   }
-  const response = await handleRpc(body);
+  const response = await handleRpc(body, req);
   if (!response) return res.status(202).end();
   return res.status(200).json(response);
 }
