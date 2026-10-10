@@ -37,7 +37,7 @@ Scope of verification: the shipping app (`src/`, `ios/`). Where the site current
 
 ### Input sources (pulse)
 - ✅ iPhone camera (PPG) — no wearable required.
-- ✅ Apple Watch (via WCSession / HealthKit) — supplies continuous pulse and the live coherence feedback.
+- ✅ Apple Watch (via WCSession / HealthKit) — supplies continuous pulse and the live coherence feedback. **Apple Watch is required ONLY for real-time breathing biofeedback** (live pulse/coherence during practice); the baseline uses Apple Health data from any device syncing there (owner, 2026-10-11).
 - ✅ Any tracker that writes heart data to Apple Health (via HealthKit).
 - ⚠️ Direct BLE chest strap / Garmin on iOS — **not supported** (see Correction 3).
 
@@ -54,7 +54,7 @@ Scope of verification: the shipping app (`src/`, `ios/`). Where the site current
 ### Baseline
 - ✅ Window **14 days** (`BASELINE_WINDOW_DAYS = 14`). Three range signals: **Resting HR (bpm), HRV/SDNN (ms), Respiratory rate (/min)**. Four single-value extras: peak HR, avg walking pulse, **VO₂max (est.)**, 1-minute recovery.
 - ✅ **Baseline source = Apple Health, any source** (verified 2026-10-03): HealthKit queries for HRV (SDNN type) and resting HR have no source filter (`HealthKitHeartRatePlugin.swift`), so Oura/Whoop/Garmin etc. count if their app syncs heart data to Apple Health. Say "Apple Watch, or a device that syncs heart data to Apple Health" — never "Apple Watch only" for the baseline. Live **coherence** stays Apple-Watch-only.
-- ✅ Camera (day-0, no permissions): resting pulse + a breathing estimate only; **HRV is empty ("NO DATA") until an Apple Watch is connected**; no extras.
+- ✅ Camera (day-0, no permissions): resting pulse + a breathing estimate only; **HRV is empty ("NO DATA") until Apple Health has HRV data** (from Apple Watch or any other device that syncs there — corrected 2026-10-11, owner); no extras.
 
 ### Signals / traffic-light (Simple mode)
 - ✅ Pure statistics, not AI: a personal corridor of **mean ± SD** (never a population norm), gated by **≥1.5 SD AND a per-metric floor** (resting HR +5 bpm, HRV −15%, breathing +2/min), **minimum 7 nights**, throttled to ≤1 signal / 2 days.
