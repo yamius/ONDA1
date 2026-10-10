@@ -37,7 +37,7 @@ const lumaraViso: ToolReviewInput = {
   testNote:
     'Evidence-based assessment — scored from Lumara product documentation and 2026 consumer reviews. Not hands-on tested by ONDA.',
   price: { usd: 650, note: 'Viso flagship; neck flap included', asOf: '2026-05-28' },
-  link: 'https://www.lumara.com/',
+  link: 'https://lumarasystems.com/products/viso',
   linkType: 'official',
   content: `## Where it leads
 
@@ -59,7 +59,7 @@ Choose Lumara Viso if you want maximum LED count and three-wavelength coverage i
 - [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
 `,
   references: [
-    { label: 'Lumara — official site', url: 'https://www.lumara.com/' },
+    { label: 'Lumara — official VISO product page', url: 'https://lumarasystems.com/products/viso' },
   ],
   relatedSlugs: ['omnilux-contour-face', 'currentbody-series-2', 'higherdose-red-light-face-mask'],
   publishOn: '2026-07-06',

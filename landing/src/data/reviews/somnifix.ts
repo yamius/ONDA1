@@ -20,6 +20,7 @@ const somnifix: ToolReviewInput = {
     { criterionId: 'material-safety', score: 8.5, note: 'Hypoallergenic adhesive. Latex-free. Skin-reaction reports rare across multi-year user base.' },
     { criterionId: 'value', score: 7.5, note: '~$25 for 28 strips = ~$0.90/night. More expensive per night than Hostage Tape subscription; no subscription required.' },
   ],
+  editorialAdjustment: { value: -0.3, reason: 'Marketing honesty — the product page says SomniFix is “the only mouth tape product specifically validated in a Harvard Medical School clinical study”, and the homepage says “Clinically Proven!”, but the study is the maker’s own sponsored 2017 study and we found no publication of it (checked October 2026). This is scored here, not under evidence.' },
   pros: [
     'FDA-registered (a listing, not clearance or approval)',
     'Porous central breathing port — a less complete seal than full-coverage tape',

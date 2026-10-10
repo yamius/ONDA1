@@ -17,7 +17,7 @@ const platinumledBiomax600: ToolReviewInput = {
     { criterionId: 'wavelengths', score: 9.0, note: 'Seven-wavelength coverage (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm, per PlatinumLED’s current product page) — broader than even MitoPRO. The 480 nm blue is unusual and a small share of total output.' },
     { criterionId: 'build-emf-flicker', score: 9.0, note: 'Third-party EMF testing at <0.3 mG at 6", flicker rate disclosed and low. PlatinumLED published its lab testing publicly — rare in the category.' },
     { criterionId: 'coverage', score: 7.5, note: 'Mid-size panel — half-body for upper torso. Smaller than Joovv Solo or MitoPRO 1500; pairs well with targeted work but requires stacking for full body.' },
-    { criterionId: 'evidence', score: 7.5, note: 'PlatinumLED references real photobiomodulation literature, and the marketing is restrained relative to category norms.' },
+    { criterionId: 'evidence', score: 7.5, note: 'PlatinumLED references real photobiomodulation literature, and the marketing is restrained relative to category norms. “FDA Class II Registered” on its pages means registration/listing, not clearance.' },
     { criterionId: 'value', score: 7.5, note: '$1,049 (Oct 2026) — meaningfully cheaper than Joovv Solo 3.0 and MitoPRO 1500 for comparable build and broader spectrum. Strong value in the premium tier.' },
   ],
   pros: [

@@ -17,7 +17,7 @@ const almostHeavenSalem: ToolReviewInput = {
     { criterionId: 'build', score: 9.0, note: '1 ⅜-inch ball-and-socket cedar staves (Rustic Red Cedar or Onyx finish); limited lifetime warranty on manufacturing defects; Harvia heater warranty 1 year on elements, 5 years on other components.' },
     { criterionId: 'emf', score: 9.5, note: 'Traditional sauna — the heater sits in a corner rather than in panels around the body, so EMF exposure is not a meaningful concern.' },
     { criterionId: 'form-factor', score: 7.0, note: '2-person barrel, 78 × 47 × 75⅜ in exterior. Needs a level, solid base and a dedicated 240 V / 30 A hard-wired circuit plus 110 V for lighting. DIY kit assembly.' },
-    { criterionId: 'evidence', score: 8.0, note: 'Traditional Finnish sauna has the deepest sauna-research literature — observational Finnish cohort studies on cardiovascular and all-cause mortality.' },
+    { criterionId: 'evidence', score: 8.0, note: 'Traditional Finnish sauna has the deepest sauna-research literature — observational Finnish cohort studies on cardiovascular and all-cause mortality. The maker’s “scientifically proven health benefits” line is about sauna bathing in general, and that evidence is observational.' },
     { criterionId: 'value', score: 7.0, note: '$4,485 list ($4,036.50 sale, October 2026) including the heater; electrician, base and delivery are extra. Strong value for a cedar Finnish-style sauna.' },
   ],
   pros: [
