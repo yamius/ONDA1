@@ -51,7 +51,7 @@ Price and scope. At $395 Omnilux is premium-tier; competitors at half the price 
 
 ## Who should buy Omnilux Contour Face?
 
-Choose Omnilux Contour Face if you want best-in-class silicone comfort in a red + near-infrared mask. For larger consumer market share, CurrentBody Series 2. For dermatology-brand alternative, Dr. Dennis Gross SpectraLite. For handheld at lower price, LightStim.
+Choose Omnilux Contour Face if you want the most comfortable silicone fit in our assessment, in a red + near-infrared mask. For larger consumer market share, CurrentBody Series 2. For dermatology-brand alternative, Dr. Dennis Gross SpectraLite. For handheld at lower price, LightStim.
 
 ---
 

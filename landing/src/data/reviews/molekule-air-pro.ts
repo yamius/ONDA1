@@ -18,7 +18,7 @@ const molekuleAirPro: ToolReviewInput = {
     { criterionId: 'build-noise', score: 8.0, note: 'Premium consumer build. Quiet on low (~32 dB), louder on high (~62 dB). Cylindrical form factor distinctive.' },
     { criterionId: 'smart-features', score: 9.0, note: 'Full app integration with PM2.5 / VOC sensors, auto mode, Apple HomeKit / Google Home. Premium smart-feature execution.' },
     { criterionId: 'maintenance-cost', score: 6.5, note: 'PECO filter 6-month replacement, HEPA pre-filter 6-month. ~$200-300/year filter cost. Higher than IQAir long-term.' },
-    { criterionId: 'value', score: 6.5, note: '$1,199 — premium pricing. Justified by PECO + smart features; expensive vs IQAir clinical reference or Coway / Dyson alternatives.' },
+    { criterionId: 'value', score: 6.5, note: '$1,199 — premium pricing. Justified by PECO + smart features; expensive vs IQAir (maker-rated H14, company-stated) or Coway / Dyson alternatives.' },
   ],
   pros: [
     'PECO photocatalytic technology — destroys VOCs at molecular level',

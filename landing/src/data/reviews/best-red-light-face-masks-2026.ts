@@ -12,7 +12,7 @@ const bestRedLightFaceMasks2026: Comparison = {
     {
       reviewSlug: 'omnilux-contour-face',
       award: '',
-      takeaway: 'Best-in-class flexible silicone + the standard red / near-infrared pair, FDA-cleared for wrinkles — no published trial of the mask itself.',
+      takeaway: 'Flexible silicone (the most comfortable in our assessment) + the standard red / near-infrared pair, FDA-cleared for wrinkles — no published trial of the mask itself.',
     },
     {
       reviewSlug: 'currentbody-series-2',
