@@ -2763,70 +2763,6 @@
       "dateModified": "2026-10-10"
     },
     {
-      "slug": "nurosym",
-      "name": "Nurosym",
-      "brand": "Parasym Health",
-      "category": "vagus-stim",
-      "productType": "Auricular tVNS (ear clip)",
-      "url": "https://onda-life.com/reviews/nurosym",
-      "categoryUrl": "https://onda-life.com/reviews/vagus-nerve-stimulators",
-      "priceUsd": 820,
-      "priceNote": "€700 list on nurosym.com (≈$820; regional pricing varies) — one-time; no subscription; 2-year warranty",
-      "priceAsOf": "2026-10-01",
-      "score": 7.9,
-      "scores": [
-        {
-          "id": "evidence",
-          "score": 9.5,
-          "note": "The Parasym/Nurosym hardware appears in 40+ peer-reviewed tVNS trials, covering HRV, inflammation, depression and long-COVID — the deepest research base of any consumer device here."
-        },
-        {
-          "id": "mechanism",
-          "score": 9,
-          "note": "Transcutaneous auricular VNS at the tragus, the most-studied non-invasive target, with disclosed pulse parameters (25 Hz, 200–1000 µs) rather than a black-box waveform."
-        },
-        {
-          "id": "protocols",
-          "score": 7,
-          "note": "A single, well-defined stimulation programme; intensity is dialled by the user. Less programme variety than Pulsetto, but parameters are transparent."
-        },
-        {
-          "id": "comfort",
-          "score": 7.5,
-          "note": "A tragus clip is well-tolerated for 30–60 minute sessions; not designed for hours of wear, and the cable tethers you to the unit."
-        },
-        {
-          "id": "biofeedback",
-          "score": 6.5,
-          "note": "No built-in HRV measurement — pair with a chest strap or ring for closed-loop tracking."
-        },
-        {
-          "id": "value",
-          "score": 6,
-          "note": "€700 (about $820; US pricing varies by region) one-time, no subscription. Premium pricing — justified by the evidence base, not for casual experimenters."
-        }
-      ],
-      "verdict": "The most clinically-validated consumer tVNS device — a research-grade ear clip with a price to match.",
-      "bestFor": "Best for research-grade auricular tVNS at home — when evidence matters more than form factor.",
-      "pros": [
-        "Deepest peer-reviewed research base of any consumer tVNS device",
-        "Disclosed stimulation parameters — no black-box dosing",
-        "No subscription, no app required to use",
-        "UK-manufactured, CE-marked Class IIa medical device"
-      ],
-      "cons": [
-        "Single programme — less variety than app-driven competitors",
-        "No on-device HRV measurement or session logging",
-        "€700 (about $820) puts it out of reach of casual users",
-        "Wired clip is less convenient than a wireless wearable"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
       "slug": "livanova-vns-therapy",
       "name": "LivaNova VNS Therapy (SenTiva)",
       "brand": "LivaNova",
@@ -2883,6 +2819,70 @@
         "Restricted to clinically-indicated patients with prescribing specialist",
         "Voice change and throat discomfort during stimulation are common",
         "Procedure costs are insurance-mediated; not directly purchasable"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-10"
+    },
+    {
+      "slug": "nurosym",
+      "name": "Nurosym",
+      "brand": "Parasym Health",
+      "category": "vagus-stim",
+      "productType": "Auricular tVNS (ear clip)",
+      "url": "https://onda-life.com/reviews/nurosym",
+      "categoryUrl": "https://onda-life.com/reviews/vagus-nerve-stimulators",
+      "priceUsd": 820,
+      "priceNote": "€700 list on nurosym.com (≈$820; regional pricing varies) — one-time; no subscription; 2-year warranty",
+      "priceAsOf": "2026-10-01",
+      "score": 7.4,
+      "scores": [
+        {
+          "id": "evidence",
+          "score": 7.5,
+          "note": "Trials were mostly on Parasym — an earlier version from the same maker, with academic funding — and samples were small; where Nurosym itself is named, results are mostly null. About twenty independent peer-reviewed studies used Parasym ear stimulators (50+ according to the manufacturer, as of October 2026); most had a sham or control arm. None was maker-funded, though Parasym supplied devices for some. The clearest positive results come from small sham-controlled trials in cardiovascular patients on earlier models (AF burden, TNF-alpha, POTS tachycardia, blood pressure). The maker says Nurosym uses the same technology, but no published data show it performs like those models. No trial has depression as its main outcome, and long-COVID data are uncontrolled pilots. ONDA rule: an earlier version of the same device counts when the maker and the stimulation method are the same, capped at 7.5."
+        },
+        {
+          "id": "mechanism",
+          "score": 9,
+          "note": "Transcutaneous auricular VNS at the tragus, the most-studied non-invasive target, The trials that name Nurosym report its frequency and pulse width (20–25 Hz, 200–250 µs); the waveform itself is proprietary."
+        },
+        {
+          "id": "protocols",
+          "score": 7,
+          "note": "A single, well-defined stimulation programme; intensity is dialled by the user. Less programme variety than Pulsetto, but the frequency and pulse width are reported in the trials."
+        },
+        {
+          "id": "comfort",
+          "score": 7.5,
+          "note": "A tragus clip is well-tolerated for 30–60 minute sessions; not designed for hours of wear, and the cable tethers you to the unit."
+        },
+        {
+          "id": "biofeedback",
+          "score": 6.5,
+          "note": "No built-in HRV measurement — pair with a chest strap or ring for closed-loop tracking."
+        },
+        {
+          "id": "value",
+          "score": 6,
+          "note": "€700 (about $820; US pricing varies by region) one-time, no subscription. Premium pricing for the largest independent trial record (mostly earlier Parasym models), not for casual experimenters."
+        }
+      ],
+      "verdict": "The most-studied consumer ear tVNS device — a research-grade ear clip with a price to match.",
+      "bestFor": "Best for research-grade auricular tVNS at home — when evidence matters more than form factor.",
+      "pros": [
+        "Largest independent trial record of any consumer tVNS device (mostly earlier Parasym models)",
+        "Frequency and pulse width reported in trials (waveform proprietary)",
+        "No subscription, no app required to use",
+        "CE-marked medical device (Class IIa per the maker)"
+      ],
+      "cons": [
+        "Single programme — less variety than app-driven competitors",
+        "No on-device HRV measurement or session logging",
+        "€700 (about $820) puts it out of reach of casual users",
+        "Wired clip is less convenient than a wireless wearable"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": null,
@@ -2999,7 +2999,7 @@
         }
       ],
       "verdict": "Protocol-driven auricular tVNS with credible research provenance — strong on EU regulatory and trial backing.",
-      "bestFor": "Best for users in EU markets who want protocol variety alongside Nurosym-level evidence.",
+      "bestFor": "Best for users in EU markets who want protocol variety with thinner evidence than Nurosym.",
       "pros": [
         "CE-marked Class IIa medical device — EU regulatory backing",
         "Wider protocol library than Nurosym with disclosed parameters",
@@ -3379,7 +3379,7 @@
         {
           "id": "value",
           "score": 6.5,
-          "note": "$399 hardware, no subscription required. More expensive than Pulsetto, less validated than Nurosym."
+          "note": "$399 hardware, no subscription required. More expensive than Pulsetto, less studied than Nurosym."
         }
       ],
       "verdict": "Auricular tVNS packaged as earbuds — a clever consumer form factor, modest independent evidence.",
@@ -6018,7 +6018,7 @@
       "priceUsd": 6000,
       "priceNote": "1-person from $5K; 4-person from $10K",
       "priceAsOf": "2026-05-25",
-      "score": 8.3,
+      "score": 8.2,
       "scores": [
         {
           "id": "heat-source",
@@ -6042,8 +6042,8 @@
         },
         {
           "id": "evidence",
-          "score": 7.5,
-          "note": "Substantial published research on Sunlighten units in particular. FDA Class II registered. Honest marketing language vs typical IR-sauna overclaiming."
+          "score": 7,
+          "note": "No peer-reviewed trial of the mPulse itself. The only published trial on a Sunlighten-made sauna is a 20-person, 3-month before-and-after pilot from 2010 on an older model (Sunlight Armana 3), so it is not evidence for the mPulse; Japanese Waon-therapy studies used other makers’ devices. Sunlighten describes its saunas as general-wellness products, not medical devices. 7.0 is the base score for a product without trials of its own."
         },
         {
           "id": "value",
@@ -6056,8 +6056,7 @@
       "pros": [
         "True 3-wavelength IR (near + mid + far) with programmable control",
         "Independently-measured ultra-low EMF (<1 mG at seated position)",
-        "Premium cedar build with 7-year warranty",
-        "Substantial published research using Sunlighten units"
+        "Premium cedar build with 7-year warranty"
       ],
       "cons": [
         "$5,000–$10,000+ pricing — premium tier",
@@ -6328,6 +6327,70 @@
       "dateModified": "2026-10-10"
     },
     {
+      "slug": "sun-home-equinox",
+      "name": "Sun Home Equinox",
+      "brand": "Sun Home Saunas",
+      "category": "sauna",
+      "productType": "Mid-premium full-spectrum IR cabin sauna",
+      "url": "https://onda-life.com/reviews/sun-home-equinox",
+      "categoryUrl": "https://onda-life.com/reviews/infrared-sauna",
+      "priceUsd": 6000,
+      "priceNote": "2-person Equinox starting configuration",
+      "priceAsOf": "2026-05-25",
+      "score": 7.7,
+      "scores": [
+        {
+          "id": "heat-source",
+          "score": 8,
+          "note": "Full-spectrum IR with separate near and far emitter panels. More wavelength rigour than mid-tier; less granular than Sunlighten mPulse."
+        },
+        {
+          "id": "build",
+          "score": 8,
+          "note": "Cedar cabin construction with bundled chromotherapy and Bluetooth audio. 5-year warranty."
+        },
+        {
+          "id": "emf",
+          "score": 8,
+          "note": "Documented low EMF; third-party-verified. Comparable to Clearlight at seated position."
+        },
+        {
+          "id": "form-factor",
+          "score": 7.5,
+          "note": "1–4-person cabin configurations. Standard 110V or 220V depending on size."
+        },
+        {
+          "id": "evidence",
+          "score": 7,
+          "note": "No peer-reviewed trial of the Equinox found — 7.0, the base score for a product without trials of its own. Honest marketing about being newer to market."
+        },
+        {
+          "id": "value",
+          "score": 7.5,
+          "note": "$4,500–$8,000 depending on configuration. Bundled features (chromotherapy, audio) at price below comparable Sunlighten / Clearlight configs."
+        }
+      ],
+      "verdict": "A capable newer entrant — full-spectrum IR with bundled chromotherapy and sound, price-disciplined relative to category leaders.",
+      "bestFor": "Best for users wanting category-leader-tier full-spectrum IR at marginally lower price with bundled extras.",
+      "pros": [
+        "Full-spectrum IR with separate near and far emitters",
+        "Bundled chromotherapy lighting and Bluetooth audio",
+        "Cedar cabin with 5-year warranty",
+        "Mid-premium pricing below comparable Sunlighten / Clearlight"
+      ],
+      "cons": [
+        "Newer brand — multi-year reliability data still being built",
+        "Less rigorous wavelength control than Sunlighten mPulse",
+        "No peer-reviewed trial of the Equinox itself",
+        "Bundled features may not be reasons users actually buy a sauna"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-10"
+    },
+    {
       "slug": "higherdose-blanket-v4",
       "name": "HigherDose Infrared Sauna Blanket V4",
       "brand": "HigherDose",
@@ -6384,70 +6447,6 @@
         "Wellness-positioned rather than clinical-grade",
         "Blanket-research evidence base thinner than cabin IR",
         "1-year warranty (vs Sunlighten 7-year, Clearlight lifetime)"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
-      "slug": "sun-home-equinox",
-      "name": "Sun Home Equinox",
-      "brand": "Sun Home Saunas",
-      "category": "sauna",
-      "productType": "Mid-premium full-spectrum IR cabin sauna",
-      "url": "https://onda-life.com/reviews/sun-home-equinox",
-      "categoryUrl": "https://onda-life.com/reviews/infrared-sauna",
-      "priceUsd": 6000,
-      "priceNote": "2-person Equinox starting configuration",
-      "priceAsOf": "2026-05-25",
-      "score": 7.6,
-      "scores": [
-        {
-          "id": "heat-source",
-          "score": 8,
-          "note": "Full-spectrum IR with separate near and far emitter panels. More wavelength rigour than mid-tier; less granular than Sunlighten mPulse."
-        },
-        {
-          "id": "build",
-          "score": 8,
-          "note": "Cedar cabin construction with bundled chromotherapy and Bluetooth audio. 5-year warranty."
-        },
-        {
-          "id": "emf",
-          "score": 8,
-          "note": "Documented low EMF; third-party-verified. Comparable to Clearlight at seated position."
-        },
-        {
-          "id": "form-factor",
-          "score": 7.5,
-          "note": "1–4-person cabin configurations. Standard 110V or 220V depending on size."
-        },
-        {
-          "id": "evidence",
-          "score": 6,
-          "note": "Newer brand without the published-research footprint of Sunlighten. Honest marketing about being newer to market."
-        },
-        {
-          "id": "value",
-          "score": 7.5,
-          "note": "$4,500–$8,000 depending on configuration. Bundled features (chromotherapy, audio) at price below comparable Sunlighten / Clearlight configs."
-        }
-      ],
-      "verdict": "A capable newer entrant — full-spectrum IR with bundled chromotherapy and sound, price-disciplined relative to category leaders.",
-      "bestFor": "Best for users wanting category-leader-tier full-spectrum IR at marginally lower price with bundled extras.",
-      "pros": [
-        "Full-spectrum IR with separate near and far emitters",
-        "Bundled chromotherapy lighting and Bluetooth audio",
-        "Cedar cabin with 5-year warranty",
-        "Mid-premium pricing below comparable Sunlighten / Clearlight"
-      ],
-      "cons": [
-        "Newer brand — multi-year reliability data still being built",
-        "Less rigorous wavelength control than Sunlighten mPulse",
-        "Published-research footprint thinner than category leaders",
-        "Bundled features may not be reasons users actually buy a sauna"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": null,
@@ -8829,70 +8828,6 @@
       "dateModified": "2026-10-10"
     },
     {
-      "slug": "omnilux-contour-face",
-      "name": "Omnilux Contour Face",
-      "brand": "Omnilux",
-      "category": "red-light-mask",
-      "productType": "Flexible silicone red light face mask",
-      "url": "https://onda-life.com/reviews/omnilux-contour-face",
-      "categoryUrl": "https://onda-life.com/reviews/red-light-face-masks",
-      "priceUsd": 395,
-      "priceNote": "Contour Face; neck flap sold separately",
-      "priceAsOf": "2026-09-30",
-      "score": 8.6,
-      "scores": [
-        {
-          "id": "irradiance",
-          "score": 9,
-          "note": "Documented irradiance honest to dermatology-clinic dose at 10-minute session. Among the most transparent specs in the category — not inflated peak figures."
-        },
-        {
-          "id": "wavelength-coverage",
-          "score": 8.5,
-          "note": "Red 633 nm + near-infrared 830 nm — the two wavelengths most used in skin studies. No blue / amber distraction."
-        },
-        {
-          "id": "led-count-coverage",
-          "score": 8,
-          "note": "132 LEDs evenly distributed across forehead, cheeks and jaw. No neck flap on the standard Contour; neck addition sold separately."
-        },
-        {
-          "id": "clinical-evidence",
-          "score": 9.5,
-          "note": "Peer-reviewed published studies on the specific device for fine lines, collagen and skin smoothness; FDA-cleared per Omnilux (clearance is not FDA approval). The deepest clinical-evidence moat in consumer red light masks."
-        },
-        {
-          "id": "comfort-fit",
-          "score": 9,
-          "note": "Medical-grade flexible silicone — among the most comfortable wearable masks. Sits naturally on the face, adjustable strap, unattended wear OK."
-        },
-        {
-          "id": "value",
-          "score": 7,
-          "note": "$395 — premium pricing. Justified by the clinical evidence base; not the cheapest mask but the credibility-per-dollar is strong."
-        }
-      ],
-      "verdict": "The clinical reference — peer-reviewed dermatology studies, flexible silicone, FDA-cleared per Omnilux. The benchmark every consumer red-light mask gets compared to.",
-      "bestFor": "Best for users wanting the dermatology reference with peer-reviewed clinical evidence and best-in-class flexible-silicone comfort.",
-      "pros": [
-        "Used by dermatology practices; FDA-cleared per Omnilux",
-        "Peer-reviewed published studies on the specific device",
-        "Medical-grade flexible silicone — best comfort in category",
-        "Honest irradiance specs without marketing inflation"
-      ],
-      "cons": [
-        "Premium pricing ($395)",
-        "No neck flap on the standard Contour (sold separately)",
-        "Single 10-minute protocol — no advanced programmability",
-        "No blue / amber wavelength variants (by design — clinical focus)"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
       "slug": "currentbody-series-2",
       "name": "CurrentBody Series 2 LED Light Therapy Face Mask",
       "brand": "CurrentBody",
@@ -8908,7 +8843,7 @@
         {
           "id": "irradiance",
           "score": 8,
-          "note": "Documented irradiance in dermatology-acceptable range. Less independently-verified than Omnilux but transparent at the spec level."
+          "note": "Documented irradiance in a dermatology-acceptable range; transparent at the spec level, but no independent measurement cited."
         },
         {
           "id": "wavelength-coverage",
@@ -8936,7 +8871,7 @@
           "note": "$470 — premium-tier pricing including neck flap. More expensive than Omnilux Contour Face alone but cheaper than Omnilux + neck add-on combined."
         }
       ],
-      "verdict": "Best consumer-market reference — biggest customer base, polished silicone build, neck flap included. Less clinical-evidence moat than Omnilux.",
+      "verdict": "Best consumer-market reference — biggest customer base, polished silicone build, neck flap included. No independent trial of the mask itself.",
       "bestFor": "Best for users wanting the consumer-market reference with integrated neck flap, polished silicone build and the largest customer-feedback base.",
       "pros": [
         "Integrated neck flap — coverage from forehead to neck in one device",
@@ -8945,7 +8880,7 @@
         "Polished consumer UX with clear session protocols"
       ],
       "cons": [
-        "Less clinical-evidence moat than Omnilux (no peer-reviewed studies on the specific device)",
+        "No independent peer-reviewed studies on the specific device",
         "$470 — premium pricing",
         "Brand leans on scale rather than peer-reviewed studies",
         "No customisable session modes"
@@ -8972,7 +8907,7 @@
         {
           "id": "irradiance",
           "score": 8.5,
-          "note": "470 LEDs deliver high irradiance across treatment area. Documented spec; less independently verified than Omnilux."
+          "note": "470 LEDs deliver high irradiance across treatment area. Documented spec; no independent measurement cited."
         },
         {
           "id": "wavelength-coverage",
@@ -9000,7 +8935,7 @@
           "note": "$650 — premium-tier pricing. Per-LED cost is competitive given the 470-count; per-clinical-study cost is weak."
         }
       ],
-      "verdict": "Highest LED count in 2026 — 470 LEDs in flexible silicone with neck coverage. Premium pricing; clinical-evidence moat lighter than Omnilux.",
+      "verdict": "Highest LED count in 2026 — 470 LEDs in flexible silicone with neck coverage. Premium pricing; no published trial of the mask itself.",
       "bestFor": "Best for users wanting maximum LED count and three-wavelength coverage in flexible silicone — premium spec maximalism over dermatology-clinical pedigree.",
       "pros": [
         "470 LEDs — highest count in consumer red light masks",
@@ -9009,7 +8944,7 @@
         "Flexible medical-grade silicone build"
       ],
       "cons": [
-        "Lighter clinical-evidence moat than Omnilux",
+        "No published trial of the mask itself",
         "Premium pricing ($650)",
         "Newer brand without multi-year track record",
         "Spec-driven marketing leans on LED count over published studies"
@@ -9021,62 +8956,63 @@
       "dateModified": "2026-10-10"
     },
     {
-      "slug": "lightstim-for-wrinkles",
-      "name": "LightStim for Wrinkles",
-      "brand": "LightStim",
+      "slug": "omnilux-contour-face",
+      "name": "Omnilux Contour Face",
+      "brand": "Omnilux",
       "category": "red-light-mask",
-      "productType": "Handheld red + near-infrared LED device",
-      "url": "https://onda-life.com/reviews/lightstim-for-wrinkles",
+      "productType": "Flexible silicone red light face mask",
+      "url": "https://onda-life.com/reviews/omnilux-contour-face",
       "categoryUrl": "https://onda-life.com/reviews/red-light-face-masks",
-      "priceUsd": 249,
-      "priceNote": "LightStim for Wrinkles handheld",
-      "priceAsOf": "2026-05-28",
-      "score": 7.6,
+      "priceUsd": 395,
+      "priceNote": "Contour Face; neck flap sold separately",
+      "priceAsOf": "2026-09-30",
+      "score": 7.8,
       "scores": [
         {
           "id": "irradiance",
-          "score": 7.5,
-          "note": "Documented irradiance honest to peer-reviewed studies. Handheld positioning delivers higher local dose than mask area-averaged dose."
+          "score": 9,
+          "note": "Omnilux states about 30 mW/cm² for a 10-minute session — a moderate, plausible figure rather than an inflated peak claim. The brand's figure; no independent measurement found."
         },
         {
           "id": "wavelength-coverage",
           "score": 8.5,
-          "note": "Four wavelengths — red 605 / 630 / 660 / 855 nm. Broader red coverage than most masks plus near-infrared depth."
+          "note": "Red 633 nm + near-infrared 830 nm — the two wavelengths most used in skin studies. No blue / amber distraction."
         },
         {
           "id": "led-count-coverage",
-          "score": 5.5,
-          "note": "Handheld device — coverage is per-position, requiring active user positioning across face zones. Slower per session than masks."
+          "score": 8,
+          "note": "132 LEDs evenly distributed across forehead, cheeks and jaw. No neck flap on the standard Contour; neck addition sold separately."
         },
         {
           "id": "clinical-evidence",
-          "score": 9,
-          "note": "FDA-cleared per LightStim (clearance is not FDA approval), with a multi-decade clinical track record. Peer-reviewed studies on the specific device for fine lines. Among the deepest evidence bases in the category."
+          "score": 7,
+          "note": "No published or registered trial of the Contour FACE itself (Europe PMC, ClinicalTrials.gov and Omnilux's own bibliography, searched October 2026). Published Omnilux studies are on other models, so they do not count for the Contour; the ones we checked — the Revive clinic panel (2005), a men's mask Omnilux lists as Omnilux Men (2023) and the Omnilux Clear acne mask (2025) — are also each tied to the maker (employee authors, an Omnilux advisory-board author, GlobalMed funding). The brand's own Contour study is unpublished, with self-reported results (company-stated). FDA 510(k) K191629 (OTC, full-face wrinkles; cleared by equivalence to an earlier LED mask without clinical data) is scored as neutral."
         },
         {
           "id": "comfort-fit",
-          "score": 6,
-          "note": "Handheld — comfortable to hold but requires active use. Can't multitask during session."
+          "score": 9,
+          "note": "Medical-grade flexible silicone — among the most comfortable wearable masks. Sits naturally on the face, adjustable strap, unattended wear OK."
         },
         {
           "id": "value",
-          "score": 8.5,
-          "note": "$249 — accessible pricing for a device with peer-reviewed clinical evidence. Best evidence-per-dollar in the category."
+          "score": 7,
+          "note": "$395 — premium pricing for best-in-class silicone comfort and the standard red + near-infrared pair; no device-specific trial behind the price."
         }
       ],
-      "verdict": "Longest track record in consumer red light therapy — handheld (FDA-cleared, per LightStim), multi-decade brand, accessible pricing. Handheld form factor means active positioning per session.",
-      "bestFor": "Best for users wanting peer-reviewed evidence at accessible pricing and accepting handheld active-positioning vs mask convenience.",
+      "verdict": "Flexible silicone with the standard red + near-infrared pair, FDA-cleared for wrinkles (510(k) K191629). No published trial of the Contour itself; Omnilux's published studies are on other models.",
+      "bestFor": "Best for users who want a comfortable red + near-infrared silicone mask with a simple 10-minute routine.",
       "pros": [
-        "Multi-decade clinical track record (FDA-cleared, per LightStim)",
-        "Four-wavelength coverage (605 / 630 / 660 / 855 nm)",
-        "Peer-reviewed studies on the specific device",
-        "Accessible $249 pricing — best evidence-per-dollar"
+        "FDA-cleared for full-face wrinkles (510(k) K191629)",
+        "Red 633 nm + near-infrared 830 nm — the pair most used in skin studies",
+        "Medical-grade flexible silicone — best comfort in category",
+        "Moderate, plausible stated irradiance — no inflated peak claims"
       ],
       "cons": [
-        "Handheld form factor — requires active positioning per session",
-        "Slower per-session vs lie-on masks",
-        "No app or session-programmability",
-        "Brand UX dated vs 2026 competitors"
+        "No published trial of the Contour itself; Omnilux's published studies are on other models",
+        "Premium pricing ($395)",
+        "No neck flap on the standard Contour (sold separately)",
+        "Single 10-minute protocol — no advanced programmability",
+        "No blue / amber wavelength variants (by design)"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": null,
@@ -9128,7 +9064,7 @@
           "note": "$649 — premium pricing reflecting Therabody brand premium. Justified for users in the Therabody ecosystem; expensive for users just buying a red light mask."
         }
       ],
-      "verdict": "Best Therabody-brand crossover into face masks — three-wavelength coverage, premium build, brand pedigree from massage gun category. Less clinical moat than dermatology references.",
+      "verdict": "Best Therabody-brand crossover into face masks — three-wavelength coverage, premium build, brand pedigree from massage gun category. Research is brand-funded.",
       "bestFor": "Best for users already in the Therabody ecosystem who want a coordinated face-mask + TheraFace Pro stack with three-wavelength coverage and app control.",
       "pros": [
         "Therabody brand pedigree and ecosystem (pairs with TheraFace Pro)",
@@ -9269,6 +9205,70 @@
         "Irradiance figures are brand-stated, not independently verified",
         "No neck flap",
         "No multi-wavelength variants"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-10"
+    },
+    {
+      "slug": "lightstim-for-wrinkles",
+      "name": "LightStim for Wrinkles",
+      "brand": "LightStim",
+      "category": "red-light-mask",
+      "productType": "Handheld red + near-infrared LED device",
+      "url": "https://onda-life.com/reviews/lightstim-for-wrinkles",
+      "categoryUrl": "https://onda-life.com/reviews/red-light-face-masks",
+      "priceUsd": 249,
+      "priceNote": "LightStim for Wrinkles handheld",
+      "priceAsOf": "2026-05-28",
+      "score": 6.9,
+      "scores": [
+        {
+          "id": "irradiance",
+          "score": 7.5,
+          "note": "LightStim's FDA filing for the current model (K261482) states 21.6 mW/cm² at treatment distance and 3.89 J/cm² per 3-minute area — the maker's figures, not independently measured."
+        },
+        {
+          "id": "wavelength-coverage",
+          "score": 8.5,
+          "note": "Four wavelengths — amber 605, red 640 and 652, near-infrared 850 nm (current model, per FDA K261482 and LightStim). Broader red coverage than most masks plus near-infrared depth."
+        },
+        {
+          "id": "led-count-coverage",
+          "score": 5.5,
+          "note": "Handheld device — coverage is per-position, requiring active user positioning across face zones. Slower per session than masks."
+        },
+        {
+          "id": "clinical-evidence",
+          "score": 7,
+          "note": "FDA-cleared (K120775; current model K261482) — clearance is not FDA approval and is scored as neutral. We found no peer-reviewed trials of this device. The only wrinkle data are the company's own unpublished 8-week, 40-person study of the earlier model, with no control group described; studies run by the maker do not count as evidence in ONDA scores. LightStim's \"clinically proven\" claim is company-stated and comes without study design or publication details. Independent red-light skin research is mixed, not negative — 7.0, the base score for a device without trials of its own."
+        },
+        {
+          "id": "comfort-fit",
+          "score": 6,
+          "note": "Handheld — comfortable to hold but requires active use. Can't multitask during session."
+        },
+        {
+          "id": "value",
+          "score": 8.5,
+          "note": "$249 — accessible pricing for four wavelengths including near-infrared; the trade-off is slower per-zone handheld sessions."
+        }
+      ],
+      "verdict": "Four-wavelength red + near-infrared handheld, FDA-cleared (K120775; current model K261482), at accessible pricing — but no published trials of the device itself. Handheld form factor means active positioning per session.",
+      "bestFor": "Best for users who want an FDA-cleared four-wavelength handheld at accessible pricing and accept active positioning instead of mask convenience.",
+      "pros": [
+        "FDA-cleared (current model K261482); the maker's first wrinkle clearance dates from 2009",
+        "Four-wavelength coverage (605 / 640 / 652 / 850 nm)",
+        "Accessible $249 pricing"
+      ],
+      "cons": [
+        "No published trials of the device itself — LightStim's \"clinically proven\" claim (company-stated) comes without study design or publication details",
+        "Handheld form factor — requires active positioning per session",
+        "Slower per-session vs lie-on masks",
+        "No app or session-programmability",
+        "Brand UX dated vs 2026 competitors"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": null,
@@ -11671,16 +11671,16 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Nurosym (7.9 vs 7.1 vs 6.9)",
+      "label": "Higher ONDA score: Nurosym (7.4 vs 7.1 vs 6.9)",
       "onda_scores": {
         "pulsetto": 6.9,
-        "nurosym": 7.9,
+        "nurosym": 7.4,
         "apollo-neuro": 7.1
       },
       "verdict": "Three different jobs. Pulsetto for guided daily-use cervical sessions, Nurosym for clinical-grade auricular evidence, Apollo Neuro for all-day passive vagal modulation.",
       "bestFor": {
         "a": "Choose Pulsetto if you want a polished daily-use neck collar with four guided programmes (sleep, stress, anxiety, pain) at the most accessible price in consumer tVNS.",
-        "b": "Choose Nurosym if peer-reviewed evidence and disclosed stimulation parameters are the deciding criteria — the deepest published auricular tVNS literature in consumer devices.",
+        "b": "Choose Nurosym if peer-reviewed evidence and disclosed stimulation parameters are the deciding criteria — the largest independent auricular tVNS trial record in consumer devices (mostly on earlier Parasym models).",
         "c": "Choose Apollo Neuro if you want vagal modulation that lives in your day — no electrodes, no setup, all-day wear, with the strongest non-electrical research base."
       },
       "axes": [
@@ -11692,12 +11692,12 @@
         {
           "name": "Independent evidence",
           "winner": "b",
-          "note": "Nurosym hardware: 40+ peer-reviewed trials. Apollo: University of Pittsburgh HRV/recovery RCTs. Pulsetto: mostly company-sponsored studies plus one pilot. Nurosym leads on independent depth."
+          "note": "Nurosym: about twenty independent peer-reviewed studies of Parasym devices (50+ according to the manufacturer, as of October 2026), mostly on earlier models. Apollo: University of Pittsburgh HRV/recovery RCTs. Pulsetto: mostly company-sponsored studies plus one pilot. Nurosym leads on independent depth."
         },
         {
           "name": "Acute effect strength",
-          "winner": "a",
-          "note": "Pulsetto delivers the strongest acute parasympathetic shift per session due to direct cervical stimulation. Nurosym is moderate. Apollo is gentlest by design."
+          "winner": "tie",
+          "note": "No head-to-head data. Cervical stimulation (Pulsetto) is the more direct route, but neither electrical device has solid acute data. Pulsetto has one pilot plus company studies. For Nurosym there is one small sham crossover on an earlier Parasym model, and none of the trials that name Nurosym reports an HRV result. Apollo is gentlest by design."
         },
         {
           "name": "Protocol variety",
@@ -12132,20 +12132,20 @@
       "winnerStatus": "winner",
       "label": "WINNER: Omnilux Contour Face",
       "onda_scores": {
-        "omnilux-contour-face": 8.6,
+        "omnilux-contour-face": 7.8,
         "higherdose-red-light-face-mask": 7.3
       },
-      "verdict": "Omnilux Contour Face is the safer pick for most buyers because it pairs the same red and near-infrared light with a longer clinical record, while HigherDOSE is a reasonable cheaper alternative with higher claimed output.",
+      "verdict": "Omnilux Contour Face has the higher ONDA score for $46 more, while HigherDOSE is a reasonable cheaper alternative with higher claimed output and a 20-minute option. Neither has a published independent trial of the mask itself.",
       "bestFor": {
-        "a": "Choose Omnilux Contour Face if you want the mask with the strongest clinical record and a simple 10-minute routine.",
+        "a": "Choose Omnilux Contour Face if you want the higher-scored mask and a simple 10-minute routine.",
         "b": "Choose HigherDOSE Red Light Face Mask if you want a slightly cheaper lifestyle mask with a 20-minute option and higher claimed irradiance.",
         "c": null
       },
       "axes": [
         {
           "name": "Clinical record",
-          "winner": "a",
-          "note": "Omnilux says the mask is FDA-cleared, and its devices are used in dermatology practices with published studies; HigherDOSE cites its own 8-week trial with self-reported results."
+          "winner": "tie",
+          "note": "Practically equal: neither mask has an independent trial of its own (as of October 2026). Omnilux’s published studies are on other models; HigherDOSE cites its own 8-week trial with self-reported results. Both are described as FDA-cleared (Omnilux: 510(k) K191629)."
         },
         {
           "name": "Wavelengths",
@@ -14530,9 +14530,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Nurosym (7.9 vs 6.9)",
+      "label": "Higher ONDA score: Nurosym (7.4 vs 6.9)",
       "onda_scores": {
-        "nurosym": 7.9,
+        "nurosym": 7.4,
         "pulsetto": 6.9
       },
       "verdict": "Depends on what matters most. Nurosym wins on evidence and disclosed parameters; Pulsetto wins on protocol variety, daily-use form factor and price.",
@@ -14545,17 +14545,17 @@
         {
           "name": "Stimulation target",
           "winner": "tie",
-          "note": "Different vagus branches: Nurosym at the auricular branch (ear), Pulsetto at the cervical vagal trunk (neck). Both validated; the cervical approach is more direct, the auricular has the deeper literature."
+          "note": "Different vagus branches: Nurosym at the auricular branch (ear), Pulsetto at the cervical vagal trunk (neck). Both studied, neither proven for wellness use; the cervical approach is more direct, the auricular has the deeper literature."
         },
         {
           "name": "Independent evidence base",
           "winner": "a",
-          "note": "Nurosym (Parasym hardware): 40+ peer-reviewed trials covering HRV, inflammation, depression, long-COVID. Pulsetto: one published pilot plus company-sponsored studies."
+          "note": "Nurosym: about twenty independent peer-reviewed studies of Parasym devices (50+ according to the manufacturer, as of October 2026), mostly on earlier models; no depression trial and only uncontrolled long-COVID pilots. Pulsetto: one published pilot plus company-sponsored studies."
         },
         {
           "name": "Stimulation parameters",
           "winner": "a",
-          "note": "Nurosym: disclosed (25 Hz, 200–1000 µs). Pulsetto: documented in-app but less granular. Nurosym is the right pick for self-experimenters who reference the literature."
+          "note": "Nurosym: trials that name it report 20–25 Hz and 200–250 µs; waveform proprietary. Pulsetto: documented in-app but less granular. Nurosym is the right pick for self-experimenters who reference the literature."
         },
         {
           "name": "Protocol variety",
@@ -14570,7 +14570,7 @@
         {
           "name": "Regulatory status",
           "winner": "tie",
-          "note": "Both CE-marked. Nurosym Class IIa medical device; Pulsetto wellness device. Neither FDA-cleared."
+          "note": "Both CE-marked. Nurosym a medical device (Class IIa per the maker); Pulsetto wellness device. Neither FDA-cleared."
         },
         {
           "name": "Price",
@@ -14771,22 +14771,22 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Nurosym (7.9 vs 7.0)",
+      "label": "Higher ONDA score: Nurosym (7.4 vs 7.0)",
       "onda_scores": {
         "gammacore-sapphire-cv": 7,
-        "nurosym": 7.9
+        "nurosym": 7.4
       },
-      "verdict": "Different roles. gammaCore for clinically-indicated headache patients with prescriber access. Nurosym for self-directed consumer tVNS users who want disclosed parameters and the deepest evidence base.",
+      "verdict": "Different roles. gammaCore for clinically-indicated headache patients with prescriber access. Nurosym for self-directed consumer tVNS users who want reported stimulation settings and the largest consumer trial record (mostly earlier Parasym models).",
       "bestFor": {
         "a": "Choose gammaCore Sapphire CV if you have a migraine or cluster-headache diagnosis and a prescriber willing to write for it — the only FDA-cleared non-invasive VNS device.",
-        "b": "Choose Nurosym if you want clinical-grade auricular tVNS at home, with the deepest peer-reviewed evidence base of any consumer device, and you do not have an FDA-indication condition.",
+        "b": "Choose Nurosym if you want clinical-grade auricular tVNS at home, with the largest independent trial record of any consumer device (mostly earlier Parasym models), and you do not have an FDA-indication condition.",
         "c": null
       },
       "axes": [
         {
-          "name": "FDA clearance",
-          "winner": "a",
-          "note": "gammaCore Sapphire CV: FDA-cleared (prescription) for migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua. Nurosym: CE-marked as a Class IIa device in Europe, not FDA-cleared."
+          "name": "Regulatory status",
+          "winner": "tie",
+          "note": "gammaCore Sapphire CV: FDA-cleared (prescription) for migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua. Nurosym: CE-marked in Europe (Class IIa per the maker), not FDA-cleared. Regulatory status is a fact, not a score — FDA status is neutral in ONDA scores."
         },
         {
           "name": "Stimulation target",
@@ -14796,7 +14796,7 @@
         {
           "name": "Trial evidence — within indication",
           "winner": "a",
-          "note": "gammaCore: 30+ randomised trials for migraine/cluster headache, the regulatory reference. Nurosym hardware: 40+ broader-indication tVNS trials."
+          "note": "gammaCore: 30+ randomised trials for migraine/cluster headache, the regulatory reference. Nurosym hardware: about twenty independent device studies (50+ according to the manufacturer, as of October 2026), small and mostly on earlier Parasym models."
         },
         {
           "name": "Trial evidence — outside indication",
@@ -14821,7 +14821,7 @@
         {
           "name": "Disclosed parameters",
           "winner": "tie",
-          "note": "Both disclose stimulation parameters at clinical level. gammaCore’s 5 kHz burst is fixed; Nurosym’s 25 Hz pulse parameters are user-titratable within a documented range."
+          "note": "Both have known stimulation parameters. gammaCore’s 5 kHz burst is fixed; trials that name Nurosym report 20–25 Hz and 200–250 µs with user-titrated intensity, though its waveform is proprietary."
         }
       ]
     },
@@ -14963,14 +14963,14 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Nurosym (7.9 vs 7.2)",
+      "label": "Higher ONDA score: Nurosym (7.4 vs 7.2)",
       "onda_scores": {
-        "nurosym": 7.9,
+        "nurosym": 7.4,
         "vagustim": 7.2
       },
-      "verdict": "Comparable evidence; different philosophies. Nurosym for the spartan single-programme approach with the deepest published trial base. Vagustim for protocol-rich auricular tVNS with EU distribution.",
+      "verdict": "Different philosophies, and Nurosym has the deeper evidence. Nurosym for the spartan single-programme approach with the larger published trial record. Vagustim for protocol-rich auricular tVNS with EU distribution.",
       "bestFor": {
-        "a": "Choose Nurosym if you want the deepest peer-reviewed auricular tVNS evidence base and disclosed parameters — the Parasym hardware platform behind 40+ published trials.",
+        "a": "Choose Nurosym if you want the deepest peer-reviewed auricular tVNS evidence base and disclosed parameters — Parasym devices, mostly earlier models, were used in about twenty independent published studies (50+ according to the manufacturer, as of October 2026).",
         "b": "Choose Vagustim if you want auricular tVNS with a wider preset library (stress, sleep, depression, anxiety, IBS), and you are in an EU market where Vagustim ships natively.",
         "c": null
       },
@@ -14978,7 +14978,7 @@
         {
           "name": "Independent trial evidence",
           "winner": "a",
-          "note": "Nurosym (Parasym hardware): 40+ peer-reviewed trials across HRV, inflammation, depression, long-COVID. Vagustim: real trial base from Turkish and German collaborator groups but smaller in volume."
+          "note": "Nurosym: about twenty independent peer-reviewed studies of Parasym devices (50+ according to the manufacturer, as of October 2026), mostly on earlier models. Vagustim: real trial base from Turkish and German collaborator groups but smaller in volume."
         },
         {
           "name": "Stimulation target",
@@ -14988,7 +14988,7 @@
         {
           "name": "Stimulation parameters",
           "winner": "tie",
-          "note": "Both disclose pulse parameters at clinical level. Nurosym: 25 Hz fixed pulse. Vagustim: parameter ranges per protocol preset."
+          "note": "Both have known pulse parameters. Nurosym: trials that name it report 20–25 Hz and 200–250 µs; waveform proprietary. Vagustim: parameter ranges per protocol preset."
         },
         {
           "name": "Protocol variety",
@@ -15003,7 +15003,7 @@
         {
           "name": "Regulatory status",
           "winner": "tie",
-          "note": "Both CE-marked Class IIa medical devices in Europe. Neither FDA-cleared."
+          "note": "Both CE-marked medical devices in Europe (Nurosym’s Class IIa per the maker). Neither FDA-cleared."
         },
         {
           "name": "Brand recognition (outside EU)",
@@ -17103,12 +17103,12 @@
       "winnerStatus": "winner",
       "label": "WINNER: Sunlighten mPulse 3-in-1",
       "onda_scores": {
-        "sunlighten-mpulse": 8.3,
+        "sunlighten-mpulse": 8.2,
         "clearlight-sanctuary-2": 7.7
       },
-      "verdict": "Sunlighten mPulse wins on wavelength rigour and FDA Class II registration. Clearlight Sanctuary 2 wins on its Jacuzzi-backed lifetime warranty, but now costs more (~$7,299 vs ~$6,000).",
+      "verdict": "Sunlighten mPulse wins on wavelength rigour and published EMF figures. Clearlight Sanctuary 2 wins on its Jacuzzi-backed lifetime warranty, but now costs more (~$7,299 vs ~$6,000).",
       "bestFor": {
-        "a": "Choose Sunlighten mPulse if true 3-wavelength control (programmable near / mid / far separately) and FDA Class II registration are the deciding criteria.",
+        "a": "Choose Sunlighten mPulse if true 3-wavelength control (programmable near / mid / far separately) is the deciding criterion.",
         "b": "Choose Clearlight Sanctuary 2 if a Jacuzzi-backed lifetime warranty for comparable full-spectrum IR is worth the higher price.",
         "c": null
       },
@@ -17134,14 +17134,9 @@
           "note": "Clearlight: lifetime heater warranty (Jacuzzi backing). Sunlighten: 7-year on most components. Clearlight edges on coverage period."
         },
         {
-          "name": "FDA registration",
-          "winner": "a",
-          "note": "Sunlighten: FDA Class II registered. Clearlight: we found no FDA Class II registration claim for the Sanctuary 2."
-        },
-        {
-          "name": "Brand and research footprint",
-          "winner": "a",
-          "note": "Sunlighten has the deepest published-research footprint and longest brand presence in the consumer IR sauna category."
+          "name": "Model-specific research",
+          "winner": "tie",
+          "note": "Neither has an outcome trial of the reviewed model. Sunlighten: one 20-person 2010 before-and-after pilot on an older model (Sunlight Armana 3). Clearlight: one 12-person, single-session 2026 core-temperature study on the Sanctuary 2, with the sauna supplied by Clearlight."
         },
         {
           "name": "Price",
@@ -17160,9 +17155,9 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
-      "label": "Practically equal by ONDA score (7.7 and 7.6)",
+      "label": "Practically equal by ONDA score (7.7 and 7.7)",
       "onda_scores": {
-        "sun-home-equinox": 7.6,
+        "sun-home-equinox": 7.7,
         "clearlight-sanctuary-2": 7.7
       },
       "verdict": "Value and features vs pedigree and warranty. The Sun Home Equinox wins on heat output and bundled extras (integrated red light, chromotherapy, sound). The Clearlight Sanctuary 2 wins on build reputation and its Jacuzzi-backed lifetime warranty, but now costs more ($7,299 vs ~$6,000). Sun Home documents third-party EMF figures; Clearlight markets low EMF/ELF without published third-party numbers. Pick Sun Home for the feature bundle and heat; Clearlight for warranty and long brand history.",
@@ -17214,10 +17209,10 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Sunlighten mPulse 3-in-1 (8.3 vs 7.6)",
+      "label": "Higher ONDA score: Sunlighten mPulse 3-in-1 (8.2 vs 7.7)",
       "onda_scores": {
-        "sun-home-equinox": 7.6,
-        "sunlighten-mpulse": 8.3
+        "sun-home-equinox": 7.7,
+        "sunlighten-mpulse": 8.2
       },
       "verdict": "Premium reference vs value-forward challenger. The Sunlighten mPulse wins on true 3-wavelength control, premium cedar build and category pedigree; the Sun Home Equinox wins on heat output and bundled extras (integrated red light, chromotherapy). Both verify low EMF at a similar price. Pick Sunlighten for wavelength precision and build; Sun Home for heat and the feature bundle.",
       "bestFor": {
@@ -17268,10 +17263,10 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Sunlighten mPulse 3-in-1 (8.3 vs 8.0)",
+      "label": "Higher ONDA score: Sunlighten mPulse 3-in-1 (8.2 vs 8.0)",
       "onda_scores": {
         "saunaspace-faraday": 8,
-        "sunlighten-mpulse": 8.3
+        "sunlighten-mpulse": 8.2
       },
       "verdict": "Different bets. SaunaSpace Faraday for near-IR purists wanting full Faraday-cage EMF shielding. Sunlighten mPulse for full-spectrum buyers wanting per-wavelength programmable control.",
       "bestFor": {
@@ -17306,9 +17301,9 @@
           "note": "Sunlighten: programmable near + mid + far. SaunaSpace: near-IR-only. Sunlighten broader by design."
         },
         {
-          "name": "Research footprint",
-          "winner": "b",
-          "note": "Sunlighten: largest published-research footprint in consumer IR sauna. SaunaSpace: founder-driven biohacker presence."
+          "name": "Model-specific research",
+          "winner": "tie",
+          "note": "Neither has an outcome trial of the reviewed model. Sunlighten: one 20-person 2010 pilot on an older model (Sunlight Armana 3). SaunaSpace: we found no peer-reviewed study."
         },
         {
           "name": "Price",
@@ -17448,13 +17443,13 @@
       "winnerStatus": "winner",
       "label": "WINNER: Sunlighten mPulse 3-in-1",
       "onda_scores": {
-        "sunlighten-mpulse": 8.3,
+        "sunlighten-mpulse": 8.2,
         "clearlight-sanctuary-2": 7.7,
         "saunaspace-faraday": 8
       },
-      "verdict": "Sunlighten mPulse wins on wavelength rigour and research footprint. Clearlight on its Jacuzzi-backed lifetime warranty. SaunaSpace on near-IR purity and EMF discipline. Three premium picks, three different philosophies.",
+      "verdict": "Sunlighten mPulse wins on wavelength rigour and per-wavelength control. Clearlight on its Jacuzzi-backed lifetime warranty. SaunaSpace on near-IR purity and EMF discipline. Three premium picks, three different philosophies.",
       "bestFor": {
-        "a": "Choose Sunlighten mPulse if programmable per-wavelength control (near + mid + far separately), FDA Class II registration and the deepest published-research footprint are the deciding criteria.",
+        "a": "Choose Sunlighten mPulse if programmable per-wavelength control (near + mid + far separately) is the deciding criterion.",
         "b": "Choose Clearlight Sanctuary 2 if you want Jacuzzi-backed lifetime heater warranty and full-spectrum IR, and the higher price ($7,299 basswood) is acceptable.",
         "c": "Choose SaunaSpace Faraday if near-IR-only incandescent delivery and full Faraday-cage EMF shielding are your bet on IR-sauna philosophy."
       },
@@ -17470,9 +17465,9 @@
           "note": "SaunaSpace: full Faraday-cage shielding (most rigorous). Sunlighten: <1 mG at seated position. Clearlight: marketed as low EMF/ELF without published third-party figures, no Faraday cage."
         },
         {
-          "name": "Research footprint",
-          "winner": "a",
-          "note": "Sunlighten: deepest published-research presence in consumer IR sauna. Clearlight and SaunaSpace: smaller research footprints."
+          "name": "Model-specific research",
+          "winner": "tie",
+          "note": "None has an outcome trial of the reviewed model. Sunlighten: one 20-person 2010 pilot on an older model (Sunlight Armana 3). Clearlight: one 12-person, single-session 2026 core-temperature study on the Sanctuary 2, sauna supplied by Clearlight. SaunaSpace: we found no peer-reviewed study."
         },
         {
           "name": "Warranty",
@@ -17507,15 +17502,15 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Sunlighten mPulse 3-in-1 (8.3 vs 8.0 vs 8.0)",
+      "label": "Higher ONDA score: Sunlighten mPulse 3-in-1 (8.2 vs 8.0 vs 8.0)",
       "onda_scores": {
-        "sunlighten-mpulse": 8.3,
+        "sunlighten-mpulse": 8.2,
         "finnleo-hallmark": 8,
         "almost-heaven-salem": 8
       },
       "verdict": "Three different heat sources. Sunlighten for IR cabin and programmable wavelength control. Finnleo for premium Finnish indoor convection. Almost Heaven for traditional outdoor cedar barrel.",
       "bestFor": {
-        "a": "Choose Sunlighten mPulse if you want IR cabin sauna with programmable per-wavelength control and the deepest IR research footprint.",
+        "a": "Choose Sunlighten mPulse if you want IR cabin sauna with programmable per-wavelength control.",
         "b": "Choose Finnleo Hallmark if you want premium traditional Finnish indoor sauna — Helo-engineered heater, the format the Finnish cohort studies were run on.",
         "c": "Choose Almost Heaven Salem if you want traditional outdoor cedar barrel sauna with American-built construction, a 6 kW electric heater and the lowest price of the three."
       },
@@ -17708,13 +17703,13 @@
       "label": "WINNER: Nurosym",
       "onda_scores": {
         "apollo-neuro": 7.1,
-        "nurosym": 7.9,
+        "nurosym": 7.4,
         "sensate": 6.2
       },
       "verdict": "Nurosym wins on evidence and mechanism directness for serious users. Apollo wins for all-day wearability. Sensate wins as a focused evening ritual.",
       "bestFor": {
         "a": "Choose Apollo Neuro if you want vagal modulation through the entire day — work, sleep, training — with no electrodes and the strongest non-electrical research base.",
-        "b": "Choose Nurosym if peer-reviewed evidence and direct electrical stimulation are the deciding criteria — the deepest published auricular tVNS literature in consumer devices.",
+        "b": "Choose Nurosym if peer-reviewed evidence and direct electrical stimulation are the deciding criteria — the largest independent auricular tVNS trial record in consumer devices (mostly on earlier Parasym models).",
         "c": "Choose Sensate if a focused evening wind-down ritual is the primary use case — soundscape-paired infrasonic sessions on the chest."
       },
       "axes": [
@@ -17726,12 +17721,12 @@
         {
           "name": "Independent evidence",
           "winner": "b",
-          "note": "Nurosym (Parasym hardware): 40+ peer-reviewed trials. Apollo: University of Pittsburgh HRV/recovery RCTs. Sensate: one pilot plus company studies. Nurosym leads."
+          "note": "Nurosym: about twenty independent peer-reviewed studies of Parasym devices (50+ according to the manufacturer, as of October 2026), mostly on earlier models. Apollo: University of Pittsburgh HRV/recovery RCTs. Sensate: one pilot plus company studies. Nurosym leads."
         },
         {
           "name": "Acute effect strength",
-          "winner": "b",
-          "note": "Nurosym delivers a clearer acute parasympathetic shift through direct electrical stimulation. Sensate produces a noticeable subjective shift via focused ritual. Apollo is gentlest by design."
+          "winner": "tie",
+          "note": "No trial compares them. Nurosym stimulates the nerve electrically, but its acute HRV data are one small sham crossover on an earlier Parasym model (Geng 2022, n=14, HRV rose). None of the trials that name Nurosym reports an HRV result, and a meta-analysis of 16 sham-controlled ear-tVNS studies (Wolf 2021) found no reliable effect. Apollo and Sensate are gentler, non-electrical routes by design."
         },
         {
           "name": "All-day wearability",
@@ -17751,7 +17746,7 @@
         {
           "name": "Disclosed parameters",
           "winner": "b",
-          "note": "Nurosym discloses pulse parameters (25 Hz, 200–1000 µs). Apollo and Sensate document their programmes but stimulation parameters are less granular."
+          "note": "Trials that name Nurosym report 20–25 Hz and 200–250 µs; its waveform is proprietary. Apollo and Sensate document their programmes but stimulation parameters are less granular."
         },
         {
           "name": "Price (hardware)",
@@ -17839,13 +17834,13 @@
       "winnerStatus": "winner",
       "label": "WINNER: Nurosym",
       "onda_scores": {
-        "nurosym": 7.9,
+        "nurosym": 7.4,
         "vagustim": 7.2,
         "xen-by-neuvana": 6.2
       },
       "verdict": "Nurosym wins on evidence and disclosed parameters. Vagustim wins on protocol variety in EU markets. Xen wins on consumer-friendly earbud form factor with music pairing.",
       "bestFor": {
-        "a": "Choose Nurosym if peer-reviewed evidence and clinical-grade auricular tVNS are the deciding criteria — the Parasym hardware platform behind 40+ published trials.",
+        "a": "Choose Nurosym if peer-reviewed evidence and clinical-grade auricular tVNS are the deciding criteria — Parasym devices, mostly earlier models, were used in about twenty independent published studies (50+ according to the manufacturer, as of October 2026).",
         "b": "Choose Vagustim if you are in an EU market and want auricular tVNS with a wider protocol preset library (stress, sleep, depression, anxiety, IBS) at a lower price.",
         "c": "Choose Xen by Neuvana if you want auricular tVNS in a familiar earbud form factor paired with music — the most consumer-friendly shape of the three."
       },
@@ -17853,7 +17848,7 @@
         {
           "name": "Independent evidence",
           "winner": "a",
-          "note": "Nurosym (Parasym hardware): 40+ peer-reviewed trials. Vagustim: real trial base from Turkish/German collaborator groups. Xen: limited company-sponsored studies only."
+          "note": "Nurosym: about twenty independent peer-reviewed studies of Parasym devices (50+ according to the manufacturer, as of October 2026), mostly on earlier models. Vagustim: real trial base from Turkish/German collaborator groups. Xen: limited company-sponsored studies only."
         },
         {
           "name": "Stimulation target",
@@ -17863,7 +17858,7 @@
         {
           "name": "Disclosed parameters",
           "winner": "a",
-          "note": "Nurosym: 25 Hz, 200–1000 µs documented. Vagustim: parameter ranges per protocol. Xen: less granular disclosure."
+          "note": "Nurosym: trials that name it report 20–25 Hz and 200–250 µs; waveform proprietary. Vagustim: parameter ranges per protocol. Xen: less granular disclosure."
         },
         {
           "name": "Protocol variety",
@@ -17883,7 +17878,7 @@
         {
           "name": "Regulatory status",
           "winner": "tie",
-          "note": "Nurosym and Vagustim: CE-marked Class IIa medical devices. Xen: consumer wellness device. Nurosym and Vagustim tie; Xen is lighter regulatory."
+          "note": "Nurosym and Vagustim: CE-marked medical devices (Nurosym’s Class IIa per the maker). Xen: consumer wellness device. Nurosym and Vagustim tie; Xen is lighter regulatory."
         },
         {
           "name": "Price",
@@ -21204,22 +21199,22 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Omnilux Contour Face (8.6 vs 8.0)",
+      "label": "Higher ONDA score: CurrentBody Series 2 LED Light Therapy Face Mask (8.0 vs 7.8)",
       "onda_scores": {
-        "omnilux-contour-face": 8.6,
+        "omnilux-contour-face": 7.8,
         "currentbody-series-2": 8
       },
-      "verdict": "Clinical evidence vs consumer features. Omnilux Contour Face for peer-reviewed dermatology depth. CurrentBody Series 2 for integrated neck flap and largest consumer customer base.",
+      "verdict": "Price vs consumer features. Omnilux Contour Face for the lower face-only price. CurrentBody Series 2 for integrated neck flap and largest consumer customer base.",
       "bestFor": {
-        "a": "Choose Omnilux Contour Face if you want the dermatology reference with peer-reviewed clinical evidence.",
+        "a": "Choose Omnilux Contour Face if you want face-only coverage at a lower price in a flexible-silicone mask.",
         "b": "Choose CurrentBody Series 2 if you want the consumer-market reference with integrated neck flap covering face + neck in one device.",
         "c": null
       },
       "axes": [
         {
           "name": "Clinical evidence",
-          "winner": "a",
-          "note": "Omnilux: peer-reviewed dermatology studies on the specific device (FDA-cleared, per the brand). CurrentBody: FDA registered (a listing, not clearance) with brand-funded research."
+          "winner": "tie",
+          "note": "Practically equal: neither mask has an independent trial of its own (as of October 2026). Omnilux's published studies are on other models; CurrentBody's research is brand-funded. Omnilux is FDA-cleared (510(k) K191629), CurrentBody FDA registered (a listing) — both scored as neutral."
         },
         {
           "name": "Wavelength coverage",
@@ -21263,14 +21258,14 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Omnilux Contour Face (8.6 vs 7.3)",
+      "label": "Higher ONDA score: Omnilux Contour Face (7.8 vs 7.3)",
       "onda_scores": {
-        "omnilux-contour-face": 8.6,
+        "omnilux-contour-face": 7.8,
         "dr-dennis-gross-spectralite": 7.3
       },
-      "verdict": "Comfort vs spectrum scope. Omnilux Contour Face for peer-reviewed evidence with best-in-class silicone comfort. Dr. Dennis Gross for dermatology-brand pedigree with dual red + blue protocols.",
+      "verdict": "Comfort vs spectrum scope. Omnilux Contour Face for best-in-class silicone comfort and red + near-infrared light. Dr. Dennis Gross for dermatology-brand pedigree with dual red + blue protocols.",
       "bestFor": {
-        "a": "Choose Omnilux Contour Face if you want peer-reviewed clinical evidence with flexible-silicone comfort and red + near-infrared coverage.",
+        "a": "Choose Omnilux Contour Face if you want flexible-silicone comfort and red + near-infrared coverage.",
         "b": "Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand dual red + blue spectrum protocols (anti-aging + acne) and accept hard-shell comfort.",
         "c": null
       },
@@ -21287,8 +21282,8 @@
         },
         {
           "name": "Clinical evidence",
-          "winner": "a",
-          "note": "Both FDA-cleared, per their makers (clearance is not FDA approval). Omnilux: peer-reviewed dermatology studies on the specific device. Dr. Dennis Gross: brand-funded studies on dual-spectrum protocol; less independent peer review."
+          "winner": "tie",
+          "note": "Practically equal: neither mask has an independent trial of its own (as of October 2026). Omnilux's published studies are on other Omnilux models; Dr. Dennis Gross's are brand-funded. Both FDA-cleared (Omnilux: 510(k) K191629; Dr. Dennis Gross: per the brand); clearance is not evidence that a device works."
         },
         {
           "name": "Session length",
@@ -21416,7 +21411,7 @@
         {
           "name": "Clinical evidence",
           "winner": "tie",
-          "note": "Both rely on brand-funded research (HigherDOSE says its mask is FDA-cleared). Neither matches Omnilux’s peer-reviewed depth."
+          "note": "Both rely on brand-funded research (HigherDOSE says its mask is FDA-cleared)."
         },
         {
           "name": "Price",
@@ -21437,30 +21432,30 @@
       "winnerStatus": "winner",
       "label": "WINNER: LightStim for Wrinkles",
       "onda_scores": {
-        "lightstim-for-wrinkles": 7.6,
+        "lightstim-for-wrinkles": 6.9,
         "solawave-wand-4-in-1": 6.2
       },
-      "verdict": "LightStim wins on clinical evidence, wavelength coverage and peer-reviewed track record. Solawave wins on price and multi-modality stack.",
+      "verdict": "LightStim wins on wavelength coverage and longer market history. Solawave wins on price and multi-modality stack.",
       "bestFor": {
-        "a": "Choose LightStim for Wrinkles if you want handheld red light with peer-reviewed clinical evidence and a decade-long track record.",
+        "a": "Choose LightStim for Wrinkles if you want a four-wavelength red + near-infrared handheld with FDA clearance.",
         "b": "Choose Solawave Wand 4-in-1 if you want budget entry to handheld red light with multi-modality stack (LED + microcurrent + warmth + massage).",
         "c": null
       },
       "axes": [
         {
           "name": "Clinical evidence",
-          "winner": "a",
-          "note": "LightStim: peer-reviewed clinical studies on the specific device (FDA-cleared, per LightStim). Solawave: FDA registered (a listing, not clearance) with brand-funded consumer testimonials."
+          "winner": "tie",
+          "note": "Neither has published trials of the device itself. LightStim is FDA-cleared (K120775; current model K261482), but the only wrinkle data in its FDA filings are an unpublished company study of an earlier model; Solawave is FDA registered (a listing, not clearance) with brand-funded consumer testimonials. FDA status is neutral in ONDA scores."
         },
         {
           "name": "Wavelength coverage",
           "winner": "a",
-          "note": "LightStim: four wavelengths (605 / 630 / 660 / 855 nm) including near-infrared. Solawave: single red 660 nm."
+          "note": "LightStim: four wavelengths (605 / 640 / 652 / 850 nm) including near-infrared. Solawave: single red 660 nm."
         },
         {
           "name": "LED dose",
-          "winner": "a",
-          "note": "LightStim: higher dose per zone with documented irradiance. Solawave: modest dose by design."
+          "winner": "tie",
+          "note": "LightStim: 21.6 mW/cm² at treatment distance per its FDA filing (K261482; the maker’s figure). Solawave: no irradiance figure in our sources. Without comparable figures we call no winner."
         },
         {
           "name": "Multi-modality stack",
@@ -21470,7 +21465,7 @@
         {
           "name": "Track record",
           "winner": "a",
-          "note": "LightStim: 1+ decade track record. Solawave: newer consumer brand."
+          "note": "LightStim: the maker’s first FDA wrinkle clearance dates from 2009 (per FDA database) — market history, not evidence that it works. Solawave: newer consumer brand."
         },
         {
           "name": "Price",
@@ -21490,23 +21485,23 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Omnilux Contour Face (8.6 vs 8.0 vs 7.3)",
+      "label": "Higher ONDA score: CurrentBody Series 2 LED Light Therapy Face Mask (8.0 vs 7.8 vs 7.3)",
       "onda_scores": {
-        "omnilux-contour-face": 8.6,
+        "omnilux-contour-face": 7.8,
         "currentbody-series-2": 8,
         "dr-dennis-gross-spectralite": 7.3
       },
-      "verdict": "Three different buying questions resolve cleanly. Omnilux for the clinical reference. CurrentBody for consumer market leader with neck flap. Dr. Dennis Gross for dermatology-brand dual-spectrum protocols.",
+      "verdict": "Three different buying questions resolve cleanly. Omnilux for comfort at the best face-only price. CurrentBody for consumer market leader with neck flap. Dr. Dennis Gross for dermatology-brand dual-spectrum protocols.",
       "bestFor": {
-        "a": "Choose Omnilux Contour Face if you want the dermatology reference with peer-reviewed clinical evidence and flexible-silicone comfort.",
+        "a": "Choose Omnilux Contour Face if you want flexible-silicone comfort and red + near-infrared light at the best face-only price.",
         "b": "Choose CurrentBody Series 2 if you want the consumer-market reference with integrated neck flap covering face + neck in one device.",
         "c": "Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand pedigree with dual red + blue protocols (anti-aging + acne) and accept hard-shell comfort."
       },
       "axes": [
         {
           "name": "Clinical evidence",
-          "winner": "a",
-          "note": "Omnilux: peer-reviewed dermatology studies (FDA-cleared, per the brand). CurrentBody: FDA registered (a listing, not clearance); Dr. Dennis Gross: FDA-cleared per the brand; both with brand-funded research. Omnilux has the deepest independent peer-reviewed moat."
+          "winner": "tie",
+          "note": "Practically equal: none of the three has an independent trial of the mask itself (as of October 2026). Omnilux's published studies are on other models; CurrentBody's and Dr. Dennis Gross's are brand-funded. Omnilux (510(k) K191629) and Dr. Dennis Gross are FDA-cleared, CurrentBody FDA registered (a listing) — all scored as neutral."
         },
         {
           "name": "Wavelength coverage",
@@ -22902,12 +22897,7 @@
         {
           "review": "nurosym",
           "award": "Best overall",
-          "takeaway": "The deepest peer-reviewed research base in consumer ear tVNS — research-grade auricular stimulation in a deliberately spartan form (€700, about $820)."
-        },
-        {
-          "review": "livanova-vns-therapy",
-          "award": "Reference medical device",
-          "takeaway": "The implanted clinical gold standard for drug-resistant epilepsy and treatment-resistant depression — included as the benchmark every non-invasive device approximates."
+          "takeaway": "The largest independent trial record in consumer ear tVNS (mostly earlier Parasym models) — research-grade auricular stimulation in a deliberately spartan form (€700, about $820)."
         },
         {
           "review": "truvaga-350",
@@ -22948,6 +22938,12 @@
           "review": "xen-by-neuvana",
           "award": "Most consumer-friendly form factor",
           "takeaway": "Auricular tVNS packaged as music-paired earbuds — a clever form factor, modest device-specific evidence."
+        },
+        {
+          "review": "livanova-vns-therapy",
+          "award": "",
+          "takeaway": "Implanted VNS therapy for drug-resistant epilepsy and treatment-resistant depression, available only on prescription with surgery — shown for comparison, not ranked against the consumer devices.",
+          "comparisonOnly": "For comparison: medical implant (VNS therapy for epilepsy/depression), by prescription"
         }
       ]
     },
@@ -23187,7 +23183,7 @@
         {
           "review": "sunlighten-mpulse",
           "award": "Best overall (full-spectrum IR)",
-          "takeaway": "True 3-wavelength IR delivery, premium cedar build, verified low EMF, FDA Class II."
+          "takeaway": "True 3-wavelength IR delivery, premium cedar build, verified low EMF."
         },
         {
           "review": "finnleo-hallmark",
@@ -23210,14 +23206,14 @@
           "takeaway": "Jacuzzi-backed full-spectrum IR with lifetime heater warranty, slightly cheaper than Sunlighten."
         },
         {
-          "review": "higherdose-blanket-v4",
-          "award": "Best portable",
-          "takeaway": "Far-IR blanket — the most accessible IR-sauna entry without install commitment."
-        },
-        {
           "review": "sun-home-equinox",
           "award": "Best mid-premium IR",
           "takeaway": "Full-spectrum IR with bundled chromotherapy at lower price than Sunlighten / Clearlight."
+        },
+        {
+          "review": "higherdose-blanket-v4",
+          "award": "Best portable",
+          "takeaway": "Far-IR blanket — the most accessible IR-sauna entry without install commitment."
         },
         {
           "review": "therasage-thera-sauna-personal",
@@ -23423,11 +23419,6 @@
       "url": "https://onda-life.com/reviews/compare/best-red-light-face-masks-2026",
       "picks": [
         {
-          "review": "omnilux-contour-face",
-          "award": "Best overall",
-          "takeaway": "Peer-reviewed dermatology studies + flexible silicone — the clinical reference (FDA-cleared, per Omnilux)."
-        },
-        {
           "review": "currentbody-series-2",
           "award": "Best consumer market leader",
           "takeaway": "Biggest customer base + integrated neck flap + polished silicone build — the consumer default."
@@ -23438,9 +23429,9 @@
           "takeaway": "470 LEDs + three-wavelength coverage + flexible silicone with neck flap — spec maximalist."
         },
         {
-          "review": "lightstim-for-wrinkles",
-          "award": "Best evidence-per-dollar",
-          "takeaway": "Handheld with a decade-long peer-reviewed track record at $249 (FDA-cleared, per LightStim)."
+          "review": "omnilux-contour-face",
+          "award": "",
+          "takeaway": "Best-in-class flexible silicone + the standard red / near-infrared pair, FDA-cleared for wrinkles — no published trial of the mask itself."
         },
         {
           "review": "theraface-mask",
@@ -23456,6 +23447,11 @@
           "review": "higherdose-red-light-face-mask",
           "award": "Best consumer-brand UX",
           "takeaway": "Simple controller + flexible silicone at accessible $349 — HigherDOSE ecosystem entry."
+        },
+        {
+          "review": "lightstim-for-wrinkles",
+          "award": "",
+          "takeaway": "Four-wavelength handheld at $249, FDA-cleared (current model K261482) — no published trials of the device itself."
         },
         {
           "review": "jovs-dpl-photofacial-mask",
