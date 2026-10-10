@@ -87,7 +87,7 @@
         {
           "id": "hrv-accuracy",
           "score": 9.7,
-          "note": "Electrical ECG read directly from the chest; peer-reviewed work finds near-perfect agreement with clinical ECG in young healthy adults, at rest."
+          "note": "Electrical ECG read from the chest; close to lab ECG at rest, during cycling to exhaustion and while standing — in young healthy adults (two independent studies: Schaffarczyk 2022, Blalock 2026)."
         },
         {
           "id": "sensor",
@@ -8789,7 +8789,7 @@
         {
           "id": "evidence-grounding",
           "score": 7,
-          "note": "Built by the US National Center for Telehealth & Technology, which also ran its validation studies — research by the developer's own organisation does not count as evidence in ONDA scores. The techniques it teaches are well documented."
+          "note": "No randomised trial of the app itself. Published research on the app is limited to small pilot studies: an uncontrolled pilot in 31 service members where Breathe2Relax was used together with trauma-sensitive yoga (Skopp et al. 2024, Military Psychology) and a cost analysis (Luxton et al. 2014). Base score for a product without its own trials; the diaphragmatic breathing it teaches is well documented."
         },
         {
           "id": "app-experience",
@@ -8804,16 +8804,15 @@
         {
           "id": "value",
           "score": 9.5,
-          "note": "Completely free with no premium tier. Unbeatable value for the evidence base."
+          "note": "Completely free with no premium tier."
         }
       ],
-      "verdict": "Best evidence-backed free breathwork app — built by US military telehealth for PTSD and stress; it teaches well-documented diaphragmatic breathing at zero cost.",
+      "verdict": "Free breathwork app built by US military telehealth for PTSD and stress; it teaches well-documented diaphragmatic breathing at zero cost, though the app itself has only small pilot studies.",
       "bestFor": "Best for users wanting evidence-backed diaphragmatic breathing at zero cost — especially in clinical / PTSD / stress-management contexts.",
       "pros": [
-        "Best evidence base of any free breathwork app — published PTSD / stress validation",
+        "Teaches diaphragmatic breathing, a well-documented technique — the app itself has only small pilot studies",
         "Completely free with no subscription or ads",
-        "Built by US Department of Defense / National Center for Telehealth",
-        "Teaches a well-documented breathing technique at zero cost"
+        "Built by US Department of Defense / National Center for Telehealth"
       ],
       "cons": [
         "Dated UI from original government-build era",
@@ -21089,7 +21088,7 @@
         "ibreathe": 6.2,
         "breathe-to-relax": 5.9
       },
-      "verdict": "Modern minimalist vs clinical evidence. iBreathe for clean modern UI with visual breath guide. Breathe2Relax for clinical evidence base in a dated UI.",
+      "verdict": "Modern minimalist vs clinical roots. iBreathe for clean modern UI with visual breath guide. Breathe2Relax for clinically designed diaphragmatic breathing in a dated UI.",
       "bestFor": {
         "a": "Choose iBreathe if you want a clean modern minimalist breath timer with visual guide and Apple Watch native support at zero cost.",
         "b": "Choose Breathe2Relax if you want evidence-backed diaphragmatic breathing at zero cost — especially in clinical, PTSD or stress-management contexts.",
@@ -21104,7 +21103,7 @@
         {
           "name": "Evidence base",
           "winner": "b",
-          "note": "Breathe2Relax: published PTSD and stress validation studies via US National Center for Telehealth. iBreathe: no comparable validation."
+          "note": "Breathe2Relax: small pilot studies of the app itself (no randomised trial) and a well-documented technique. iBreathe: no studies of the app."
         },
         {
           "name": "Apple Watch",
@@ -23409,7 +23408,7 @@
         {
           "review": "breathe-to-relax",
           "award": "Best evidence-backed free",
-          "takeaway": "US National Center for Telehealth-built free app with published PTSD / stress validation studies."
+          "takeaway": "US National Center for Telehealth-built free app for diaphragmatic breathing; the highest evidence score among the free apps, though research on the app itself is limited to small pilot studies."
         }
       ]
     },
