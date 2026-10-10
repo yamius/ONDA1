@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-09T20:19:15+02:00"
+    "modified": "2026-10-10T00:41:21+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1738,7 +1738,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/methodology": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-09-28T20:58:44+02:00"
+    "modified": "2026-10-10T01:08:53+02:00"
   },
   "page:/compare/:slug": {
     "published": "2026-09-06T18:55:14+02:00",
@@ -1746,7 +1746,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-10T00:29:41+02:00"
+    "modified": "2026-10-10T03:25:14+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",
@@ -1785,7 +1785,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/water": {
-    "published": "2026-10-09T22:29:01.498Z",
+    "published": "2026-10-10T01:22:04.520Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/alcohol": {
@@ -1833,15 +1833,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-27T20:00:23+02:00"
   },
   "tool:/tools/digital-detox": {
-    "published": "2026-10-09T22:29:01.295Z",
+    "published": "2026-10-10T01:22:04.022Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/burnout": {
-    "published": "2026-10-09T22:29:01.262Z",
+    "published": "2026-10-10T01:22:03.921Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/nervous-system": {
-    "published": "2026-10-09T22:29:01.311Z",
+    "published": "2026-10-10T01:22:04.150Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/wim-hof": {
