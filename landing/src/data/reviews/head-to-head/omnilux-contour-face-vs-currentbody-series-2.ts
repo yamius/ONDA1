@@ -6,18 +6,18 @@ const omniluxVsCurrentbody: HeadToHeadInput = {
   productBSlug: 'currentbody-series-2',
   title: 'Omnilux Contour Face vs CurrentBody Series 2 (2026)',
   description:
-    'Omnilux Contour Face vs CurrentBody Series 2 — clinical reference vs consumer market leader with neck flap. ONDA breaks down the premium silicone red light mask top two.',
+    'Omnilux Contour Face vs CurrentBody Series 2 — face-only price vs integrated neck flap. ONDA breaks down the premium silicone red light mask top two.',
   intro:
-    'Omnilux Contour Face and CurrentBody Series 2 are the two flexible-silicone face masks users compare when picking premium red light therapy. Both deliver red 633 nm + near-infrared 830 nm in medical-grade silicone. The defining difference is the thesis: Omnilux bets on peer-reviewed clinical evidence; CurrentBody bets on integrated neck flap and consumer-market scale.',
+    'Omnilux Contour Face and CurrentBody Series 2 are the two flexible-silicone face masks users compare when picking premium red light therapy. Both deliver red 633 nm + near-infrared 830 nm in medical-grade silicone. Neither has an independent trial of the mask itself; the real difference is the package: Omnilux is the cheaper face-only mask, while CurrentBody bets on integrated neck flap and consumer-market scale.',
   jobDependentVerdict: true,
   verdict:
-    'Clinical evidence vs consumer features. Omnilux Contour Face for peer-reviewed dermatology depth. CurrentBody Series 2 for integrated neck flap and largest consumer customer base.',
+    'Price vs consumer features. Omnilux Contour Face for the lower face-only price. CurrentBody Series 2 for integrated neck flap and largest consumer customer base.',
   bestForA:
-    'Choose Omnilux Contour Face if you want the dermatology reference with peer-reviewed clinical evidence.',
+    'Choose Omnilux Contour Face if you want face-only coverage at a lower price in a flexible-silicone mask.',
   bestForB:
     'Choose CurrentBody Series 2 if you want the consumer-market reference with integrated neck flap covering face + neck in one device.',
   axes: [
-    { name: 'Clinical evidence', winner: 'a', note: 'Omnilux: peer-reviewed dermatology studies on the specific device (FDA-cleared, per the brand). CurrentBody: FDA registered (a listing, not clearance) with brand-funded research.' },
+    { name: 'Clinical evidence', winner: 'tie', note: 'Practically equal: neither mask has an independent trial of its own (as of October 2026). Omnilux\'s published studies are on other models; CurrentBody\'s research is brand-funded. Omnilux is FDA-cleared (510(k) K191629), CurrentBody FDA registered (a listing) — both scored as neutral.' },
     { name: 'Wavelength coverage', winner: 'tie', note: 'Both use red 633 nm + near-infrared 830 nm — the pair most used in skin studies. Same spectrum.' },
     { name: 'Neck coverage', winner: 'b', note: 'CurrentBody: integrated neck flap on Series 2. Omnilux: neck flap sold separately as add-on.' },
     { name: 'LED count', winner: 'tie', note: '132 LEDs each in similar distribution. Comparable raw coverage on the face proper.' },
@@ -28,7 +28,7 @@ const omniluxVsCurrentbody: HeadToHeadInput = {
   faq: [
     {
       q: 'Omnilux or CurrentBody — which is better?',
-      a: 'Different theses. Omnilux wins on peer-reviewed clinical evidence and dermatology-clinic credibility. CurrentBody wins on integrated neck flap and consumer-market scale. Both deliver comparable face coverage in flexible silicone.',
+      a: 'Different theses. Omnilux wins on face-only price. CurrentBody wins on integrated neck flap and consumer-market scale. Both deliver comparable face coverage in flexible silicone.',
     },
     {
       q: 'Is the neck flap actually useful?',
@@ -36,20 +36,20 @@ const omniluxVsCurrentbody: HeadToHeadInput = {
     },
     {
       q: 'Which has better dermatology evidence?',
-      a: 'Omnilux — peer-reviewed published studies on the specific Contour Face device; Omnilux also says it is FDA-cleared (clearance is not FDA approval). CurrentBody is FDA registered — a listing, not clearance or approval — with brand-funded research.',
+      a: 'Neither has an independent trial of the mask itself (as of October 2026). Omnilux\'s published studies are on other Omnilux models; CurrentBody\'s research is brand-funded. Omnilux is FDA-cleared (510(k) K191629); CurrentBody is FDA registered — a listing, not clearance or approval. Neither status is evidence that a mask works.',
     },
     {
       q: 'Total cost comparison?',
-      a: 'Omnilux Contour Face alone: $395. CurrentBody Series 2 with neck flap: $470. Add Omnilux neck flap: roughly comparable total. The trade is peer-reviewed evidence vs integrated neck flap convenience.',
+      a: 'Omnilux Contour Face alone: $395. CurrentBody Series 2 with neck flap: $470. Add Omnilux neck flap: roughly comparable total. The trade is face-only price vs integrated neck flap convenience.',
     },
   ],
   content: `## The short version
 
-Both are premium flexible-silicone red light face masks. Omnilux is the clinical-evidence reference. CurrentBody is the consumer-market reference with integrated neck coverage.
+Both are premium flexible-silicone red light face masks. Omnilux is the cheaper face-only option. CurrentBody is the consumer-market reference with integrated neck coverage.
 
 ## When is Omnilux Contour Face the right pick?
 
-If you want peer-reviewed dermatology evidence on the specific device — Omnilux is the right shape. Used in dermatology practices; clinical credibility unmatched.
+If you want face-only coverage at a lower price — Omnilux is the right shape. No trial of the Contour itself has been published.
 
 ## When is CurrentBody Series 2 the right pick?
 

@@ -45,7 +45,7 @@ HigherDose Sauna Blanket V4 is the portable IR sauna that brought the category t
 
 ## What are the downsides of HigherDose Infrared Sauna Blanket V4?
 
-Far-IR only. No near or mid IR. The spectrum narrowness limits the depth of benefits that wider-spectrum cabins (Sunlighten, Clearlight) deliver. Research base on sauna blankets specifically is thinner than cabin IR.
+Far-IR only. No near or mid IR. Wider-spectrum cabins (Sunlighten, Clearlight) cover more wavelengths, though a health benefit of that breadth has not been shown. Research base on sauna blankets specifically is thinner than cabin IR.
 
 ## Who should buy HigherDose Infrared Sauna Blanket V4?
 

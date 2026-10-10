@@ -146,9 +146,9 @@ test('compare: winner only when the duel page shows one; status, label and ONDA 
   const vns = (await run(['pulsetto', 'nurosym', 'apollo neuro'])).structuredContent;
   assert.equal(vns.duel.winner, null);
   assert.equal(vns.duel.winnerStatus, 'depends-on-the-job');
-  assert.equal(vns.duel.label, 'Higher ONDA score: Nurosym (7.9 vs 7.1 vs 6.9)');
-  assert.deepEqual(vns.duel.onda_scores, { pulsetto: 6.9, nurosym: 7.9, 'apollo-neuro': 7.1 });
-  assert.deepEqual(vns.products.map((p) => p.score), [6.9, 7.9, 7.1], 'product scores = the duel page scores');
+  assert.equal(vns.duel.label, 'Higher ONDA score: Nurosym (7.4 vs 7.1 vs 6.9)');
+  assert.deepEqual(vns.duel.onda_scores, { pulsetto: 6.9, nurosym: 7.4, 'apollo-neuro': 7.1 });
+  assert.deepEqual(vns.products.map((p) => p.score), [6.9, 7.4, 7.1], 'product scores = the duel page scores');
 
   const rings = (await run(['ringconn gen 2', 'ultrahuman ring air'])).structuredContent;
   assert.equal(rings.duel.winner, null);

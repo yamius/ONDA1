@@ -63,6 +63,7 @@ for (const c of ALL_COMPARISONS) {
   for (const p of c.picks) if (!known.has(p.reviewSlug)) errors.push(`${c.slug}: pick "${p.reviewSlug}" has no review`)
   const best = c.picks.filter((p) => /^best overall/i.test(p.award))
   if (best.length > 1) errors.push(`${c.slug}: ${best.length} "Best overall" awards`)
+  for (const p of c.picks) if (p.comparisonOnly && p.award) errors.push(`${c.slug}: comparison-only pick "${p.reviewSlug}" must not carry an award`)
 }
 
 if (errors.length) {

@@ -11,7 +11,7 @@ const vagustim: ToolReviewInput = {
   verdict:
     'Protocol-driven auricular tVNS with credible research provenance — strong on EU regulatory and trial backing.',
   summary:
-    'Vagustim is a Turkish-developed auricular tVNS device, CE-marked and backed by a published trial base from clinical-research groups in Turkey and Germany. Hardware combines an ear clip with paired auxiliary electrodes for specific protocols (vagus only, vagus + acupoint, etc.). Less brand recognition outside the EU than Nurosym, comparable evidence depth, and a wider protocol library.',
+    'Vagustim is a Turkish-developed auricular tVNS device, CE-marked and backed by a published trial base from clinical-research groups in Turkey and Germany. Hardware combines an ear clip with paired auxiliary electrodes for specific protocols (vagus only, vagus + acupoint, etc.). Less brand recognition outside the EU than Nurosym, thinner evidence than Nurosym, and a wider protocol library.',
   scores: [
     { criterionId: 'evidence', score: 7.0, note: 'CE-marked Class IIa medical device. Independent studies on HRV, anxiety and depression count; company-collaborator studies do not count as evidence in ONDA scores.' },
     { criterionId: 'mechanism', score: 7.5, note: 'Auricular tVNS via tragus clip, plus paired electrode protocols. Documented stimulation parameters configurable per protocol.' },
@@ -32,7 +32,7 @@ const vagustim: ToolReviewInput = {
     'No on-device HRV biofeedback',
     'Customer support and warranty processes weaker outside EU markets',
   ],
-  bestFor: 'Best for users in EU markets who want protocol variety alongside Nurosym-level evidence.',
+  bestFor: 'Best for users in EU markets who want protocol variety with thinner evidence than Nurosym.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Vagustim Health product documentation, published independent and collaborator trials and 2026 EU market reviews. Not hands-on tested by ONDA.',
@@ -49,7 +49,7 @@ Distribution is the constraint. Brand recognition outside the EU is thin, custom
 
 ## Who should buy Vagustim?
 
-Choose Vagustim if you are in an EU market, want clinical-grade evidence comparable to Nurosym, and prefer a wider protocol library to a single deliberately constrained programme. If you are outside the EU, Nurosym’s distribution and support are more reliable. If you want fewer electrodes and a phone-app driven UX, Pulsetto is closer to that shape.
+Choose Vagustim if you are in an EU market, accept a thinner evidence base than Nurosym’s, and prefer a wider protocol library to a single deliberately constrained programme. If you are outside the EU, Nurosym’s distribution and support are more reliable. If you want fewer electrodes and a phone-app driven UX, Pulsetto is closer to that shape.
 
 ---
 
@@ -69,7 +69,7 @@ The biology behind what these devices target — and the protocols that compound
   faq: [
     { q: "Is Vagustim worth it?", a: "Vagustim is worth it for EU users wanting protocol variety with solid evidence. It is a CE-marked Class IIa medical device with a wider, disclosed protocol library than Nurosym and a published trial base on HRV and anxiety, with no subscription. Setup is more involved than a single ear clip." },
     { q: "How much does Vagustim cost?", a: "Vagustim costs €499, about $540, as a one-time purchase. No subscription is required to use its protocol library, which is wider than Nurosym's and comes with disclosed stimulation parameters." },
-    { q: "Vagustim vs Nurosym: which is better?", a: "Vagustim offers a wider protocol library with disclosed parameters and comparable evidence. Nurosym has stronger brand recognition outside the EU and a simpler single-ear-clip setup. Choose Vagustim for protocol variety in EU markets." },
+    { q: "Vagustim vs Nurosym: which is better?", a: "Vagustim offers a wider protocol library with disclosed parameters and thinner evidence. Nurosym has stronger brand recognition outside the EU and a simpler single-ear-clip setup. Choose Vagustim for protocol variety in EU markets." },
     { q: "What are the downsides of Vagustim?", a: "Vagustim has less brand recognition than Nurosym outside the EU, a multi-electrode setup more involved than a single ear clip, and no on-device HRV biofeedback. Support and warranty processes are weaker outside EU markets." },
   ],
   datePublished: '2026-05-21',

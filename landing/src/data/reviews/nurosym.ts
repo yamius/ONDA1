@@ -7,24 +7,24 @@ const nurosym: ToolReviewInput = {
   category: 'vagus-stim',
   productType: 'Auricular tVNS (ear clip)',
   description:
-    'ONDA review of the Nurosym — the clinical-grade auricular tVNS device used in published HRV and inflammation research. Scored on evidence, mechanism, protocols and value.',
+    'ONDA review of the Nurosym — Parasym’s consumer ear tVNS device; earlier Parasym models were used in published cardiovascular, HRV and inflammation-marker trials. Scored on evidence, mechanism, protocols and value.',
   verdict:
-    'The most clinically-validated consumer tVNS device — a research-grade ear clip with a price to match.',
+    'The most-studied consumer ear tVNS device — a research-grade ear clip with a price to match.',
   summary:
-    'Nurosym is the rebranded consumer line of Parasym, the UK company whose hardware has been used in dozens of peer-reviewed studies on auricular vagus nerve stimulation. It clips to the tragus of the left ear and delivers a calibrated electrical pulse to the auricular branch of the vagus nerve. There is no app gimmickry — a single dial, documented parameters, and an evidence base no other consumer device matches.',
+    'Nurosym is the consumer line of Parasym, the London company whose ear stimulators, mostly earlier models, were used in about twenty independent peer-reviewed studies of auricular vagus nerve stimulation (50+ according to the manufacturer, as of October 2026). It clips to the tragus of the left ear and delivers a calibrated electrical pulse to the auricular branch of the vagus nerve. There is no app gimmickry — a single dial, stimulation settings reported in the trials, and the largest independent trial record of any consumer device, though mostly small studies on earlier Parasym models.',
   scores: [
-    { criterionId: 'evidence', score: 9.5, note: 'The Parasym/Nurosym hardware appears in 40+ peer-reviewed tVNS trials, covering HRV, inflammation, depression and long-COVID — the deepest research base of any consumer device here.' },
-    { criterionId: 'mechanism', score: 9.0, note: 'Transcutaneous auricular VNS at the tragus, the most-studied non-invasive target, with disclosed pulse parameters (25 Hz, 200–1000 µs) rather than a black-box waveform.' },
-    { criterionId: 'protocols', score: 7.0, note: 'A single, well-defined stimulation programme; intensity is dialled by the user. Less programme variety than Pulsetto, but parameters are transparent.' },
+    { criterionId: 'evidence', score: 7.5, note: 'Trials were mostly on Parasym — an earlier version from the same maker, with academic funding — and samples were small; where Nurosym itself is named, results are mostly null. About twenty independent peer-reviewed studies used Parasym ear stimulators (50+ according to the manufacturer, as of October 2026); most had a sham or control arm. None was maker-funded, though Parasym supplied devices for some. The clearest positive results come from small sham-controlled trials in cardiovascular patients on earlier models (AF burden, TNF-alpha, POTS tachycardia, blood pressure). The maker says Nurosym uses the same technology, but no published data show it performs like those models. No trial has depression as its main outcome, and long-COVID data are uncontrolled pilots. ONDA rule: an earlier version of the same device counts when the maker and the stimulation method are the same, capped at 7.5.' },
+    { criterionId: 'mechanism', score: 9.0, note: 'Transcutaneous auricular VNS at the tragus, the most-studied non-invasive target, The trials that name Nurosym report its frequency and pulse width (20–25 Hz, 200–250 µs); the waveform itself is proprietary.' },
+    { criterionId: 'protocols', score: 7.0, note: 'A single, well-defined stimulation programme; intensity is dialled by the user. Less programme variety than Pulsetto, but the frequency and pulse width are reported in the trials.' },
     { criterionId: 'comfort', score: 7.5, note: 'A tragus clip is well-tolerated for 30–60 minute sessions; not designed for hours of wear, and the cable tethers you to the unit.' },
     { criterionId: 'biofeedback', score: 6.5, note: 'No built-in HRV measurement — pair with a chest strap or ring for closed-loop tracking.' },
-    { criterionId: 'value', score: 6.0, note: '€700 (about $820; US pricing varies by region) one-time, no subscription. Premium pricing — justified by the evidence base, not for casual experimenters.' },
+    { criterionId: 'value', score: 6.0, note: '€700 (about $820; US pricing varies by region) one-time, no subscription. Premium pricing for the largest independent trial record (mostly earlier Parasym models), not for casual experimenters.' },
   ],
   pros: [
-    'Deepest peer-reviewed research base of any consumer tVNS device',
-    'Disclosed stimulation parameters — no black-box dosing',
+    'Largest independent trial record of any consumer tVNS device (mostly earlier Parasym models)',
+    'Frequency and pulse width reported in trials (waveform proprietary)',
     'No subscription, no app required to use',
-    'UK-manufactured, CE-marked Class IIa medical device',
+    'CE-marked medical device (Class IIa per the maker)',
   ],
   cons: [
     'Single programme — less variety than app-driven competitors',
@@ -41,7 +41,7 @@ const nurosym: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Nurosym wins this comparison on the criterion that matters most for medical devices: evidence. The underlying Parasym hardware has been the experimental platform for dozens of published trials of transcutaneous auricular VNS — stimulating the [vagus nerve](/glossary/vagus-nerve), including studies of [HRV](/glossary/heart-rate-variability), inflammatory markers and long-COVID symptoms — a research record no other consumer tVNS device can claim. Being studied is not the same as being proven, though: a living meta-analysis of 16 sham-controlled studies in healthy people (Wolf 2021, *Psychophysiology*) found no reliable effect of ear tVNS on vagally mediated HRV, so do not buy it expecting your HRV to rise. The parameters are documented (25 Hz pulse, 200–1000 µs pulse width, intensity user-titrated), so a clinician or self-experimenter can describe exactly what dose is being delivered.
+Among consumer devices, Nurosym leads on the criterion that matters most for medical devices: evidence. Parasym devices, mostly earlier models, were used in about twenty independent published studies of transcutaneous auricular VNS — stimulating the [vagus nerve](/glossary/vagus-nerve). The clearest positive results come from small sham-controlled trials in cardiovascular patients (atrial fibrillation, POTS, high blood pressure). There are also acute [HRV](/glossary/heart-rate-variability) studies in healthy adults and uncontrolled long-COVID pilots. The newer trials that name Nurosym (2025–26) mostly found no effect versus sham, and although the maker says Nurosym uses the same technology, no published data show it performs like the older models — so ONDA caps its evidence score at 7.5. Being studied is not the same as being proven, though: a living meta-analysis of 16 sham-controlled studies in healthy people (Wolf 2021, *Psychophysiology*) found no reliable effect of ear tVNS on vagally mediated HRV, so do not buy it expecting your HRV to rise. The trials that name Nurosym report its frequency and pulse width (20–25 Hz, 200–250 µs; intensity user-titrated), so a clinician or self-experimenter can describe most of the dose — the waveform itself is proprietary.
 
 ## What are the downsides of Nurosym?
 
@@ -49,7 +49,7 @@ The same austerity that makes Nurosym credible makes it spartan. There is one st
 
 ## Who should buy Nurosym?
 
-Choose Nurosym if you are running a structured tVNS self-experiment, want disclosed parameters you can reference against the literature, and are willing to pay clinical pricing for clinical provenance. If you want a polished consumer experience with modes and a phone app, Pulsetto, Xen by Neuvana or Truvaga are better fits.
+Choose Nurosym if you are running a structured tVNS self-experiment, want stimulation settings you can match against the published trials, and are willing to pay clinical pricing for clinical provenance. If you want a polished consumer experience with modes and a phone app, Pulsetto, Xen by Neuvana or Truvaga are better fits.
 
 ---
 
@@ -63,15 +63,15 @@ The biology behind what these devices target — and the protocols that compound
 `,
   references: [
     { label: 'Nurosym — official product page', url: 'https://nurosym.com/' },
-    { label: 'Transcutaneous auricular VNS — clinical evidence review (Frontiers in Neuroscience)', url: 'https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2019.00854/full' },
+    { label: 'Kaniusas et al. 2019 — auricular VNS from a physiological perspective (Frontiers in Neuroscience; not a Nurosym study; authors tied to SzeleSTIM, another ear-VNS maker)', url: 'https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2019.00854/full' },
     { label: 'Wolf et al. 2021 — Does transcutaneous auricular vagus nerve stimulation affect vagally mediated heart rate variability? A living Bayesian meta-analysis (Psychophysiology)', url: 'https://doi.org/10.1111/psyp.13933' },
   ],
   relatedSlugs: ['gammacore-sapphire-cv', 'pulsetto', 'truvaga-350'],
   faq: [
-    { q: "Is Nurosym worth it?", a: "Nurosym is worth it if evidence matters more than form factor. It has the deepest peer-reviewed research base of any consumer tVNS device, disclosed stimulation parameters, and is a UK-manufactured, CE-marked Class IIa medical device. Expect a single programme and a wired ear clip." },
-    { q: "How much does Nurosym cost?", a: "Nurosym is listed at €700 on the official store, about $820 (regional pricing varies), as a one-time purchase with no subscription and no app required to use it. The review notes that price puts it out of reach of casual users. It is a CE-marked Class IIa device." },
+    { q: "Is Nurosym worth it?", a: "Nurosym is worth it if evidence matters more than form factor. It has the largest independent trial record of any consumer tVNS device (mostly earlier Parasym models), frequency and pulse width reported in trials, and is a CE-marked medical device (Class IIa per the maker). Expect a single programme and a wired ear clip." },
+    { q: "How much does Nurosym cost?", a: "Nurosym is listed at €700 on the official store, about $820 (regional pricing varies), as a one-time purchase with no subscription and no app required to use it. The review notes that price puts it out of reach of casual users. It is CE-marked (Class IIa per the maker)." },
     { q: "What are the downsides of Nurosym?", a: "Nurosym offers a single programme with less variety than app-driven competitors, no on-device HRV measurement or session logging, a €700 (about $820) price that puts it out of reach of casual users, and a wired clip that is less convenient than a wireless wearable." },
-    { q: "Nurosym vs Pulsetto: which is better?", a: "Nurosym is better for evidence: it has the deepest peer-reviewed research base in consumer tVNS. Pulsetto is cheaper at $269, is neck-worn and offers four guided programmes, but its independent clinical evidence is thinner than Nurosym's." },
+    { q: "Nurosym vs Pulsetto: which is better?", a: "Nurosym is better for evidence: it has the largest independent trial record in consumer tVNS (mostly on earlier Parasym models). Pulsetto is cheaper at $269, is neck-worn and offers four guided programmes, but its independent clinical evidence is thinner than Nurosym's." },
   ],
   datePublished: '2026-05-21',
   dateModified: '2026-10-10',

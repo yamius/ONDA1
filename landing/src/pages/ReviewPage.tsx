@@ -125,7 +125,7 @@ export function ReviewPage() {
         <p className="-mt-6 mb-8 font-mono text-xs text-white/50">
           {tReviews('ui.editorialAdjustment', {
             value: `${review.editorialAdjustment.value > 0 ? '+' : ''}${review.editorialAdjustment.value.toFixed(1)}`,
-            reason: review.editorialAdjustment.reason,
+            reason: tReviews(`bodies.${review.slug}.editorialAdjustment`, { defaultValue: review.editorialAdjustment.reason }),
             defaultValue: 'Editorial adjustment {{value}}: {{reason}}',
           })}
         </p>
