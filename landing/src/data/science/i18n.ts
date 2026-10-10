@@ -70,7 +70,7 @@ export interface ScienceUi {
 export const SCIENCE_UI: Record<string, ScienceUi> = {
   en: {
     hubTitle: 'ONDA Science',
-    hubMetaTitle: 'ONDA Science: HRV, Breathing and the Nervous System',
+    hubMetaTitle: 'ONDA Science: HRV, Breath & the Nervous System',
     hubDescription:
       'Evidence-first reference pages on heart rate variability, breathing and the autonomic nervous system — what each measure is, what the research shows and its limits.',
     hubIntro:
@@ -211,7 +211,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
   },
   es: {
     hubTitle: 'ONDA Science',
-    hubMetaTitle: 'ONDA Science: HRV, respiración y sistema nervioso',
+    hubMetaTitle: 'ONDA Science: HRV, respirar y sistema nervioso',
     hubDescription:
       'Páginas de referencia sobre la variabilidad de la frecuencia cardíaca, la respiración y el sistema nervioso autónomo: qué mide cada indicador, qué muestra la investigación y sus límites.',
     hubIntro:
@@ -305,7 +305,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
   },
   fr: {
     hubTitle: 'ONDA Science',
-    hubMetaTitle: 'ONDA Science : HRV, respiration et système nerveux',
+    hubMetaTitle: 'ONDA Science : HRV, souffle et système nerveux',
     hubDescription:
       'Des pages de référence sur la variabilité de la fréquence cardiaque, la respiration et le système nerveux autonome : ce que mesure chaque indicateur, ce que montre la recherche et ses limites.',
     hubIntro:
@@ -352,7 +352,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
   },
   it: {
     hubTitle: 'ONDA Science',
-    hubMetaTitle: 'ONDA Science: HRV, respirazione e sistema nervoso',
+    hubMetaTitle: 'ONDA Science: HRV, respiro e sistema nervoso',
     hubDescription:
       'Pagine di riferimento sulla variabilità della frequenza cardiaca, la respirazione e il sistema nervoso autonomo: cosa misura ogni indicatore, cosa mostra la ricerca e quali sono i suoi limiti.',
     hubIntro:
@@ -399,7 +399,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
   },
   pt: {
     hubTitle: 'ONDA Science',
-    hubMetaTitle: 'ONDA Science: HRV, respiração e sistema nervoso',
+    hubMetaTitle: 'ONDA Science: HRV, fôlego e sistema nervoso',
     hubDescription:
       'Páginas de referência sobre variabilidade da frequência cardíaca, respiração e sistema nervoso autônomo: o que cada indicador mede, o que a pesquisa mostra e quais são seus limites.',
     hubIntro:

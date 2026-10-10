@@ -10,6 +10,11 @@
       "statusCode": 301
     },
     {
+      "source": "/pricing",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
       "source": "/part/i-resonate",
       "destination": "/part/i-am-vibration",
       "statusCode": 301
