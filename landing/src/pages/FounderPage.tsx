@@ -20,7 +20,8 @@ const SITE_URL = 'https://onda-life.com'
 const CANONICAL_URL = `${SITE_URL}/people/yakiv-bilenko`
 const AUTHOR_ID = `${SITE_URL}/#author`
 const SAME_AS = ['https://www.linkedin.com/in/yamius', 'https://wateremotions.tilda.ws/kukoom']
-const PAGE_DESC_EN = PEOPLE_I18N.en.metaDescription
+/** Person JSON-LD description, aligned with the About page (task 069b). */
+export const PERSON_DESC = "Yakiv Bilenko — architect and Gestalt therapist, founder of ONDA Life (Onda Life LLC). Architect (Kyiv National University of Construction and Architecture, KNUCA, 2006) and Gestalt and systemic-family therapist (MIGIS institute, 2018); he leads ONDA's product and engineering."
 
 function prefixFor(lang: string): string {
   return lang === 'ru' ? '/ru' : lang === 'es' ? '/es' : ''
@@ -56,10 +57,9 @@ export function founderJsonLd(lang: Lang = 'en'): Record<string, unknown>[] {
         url: CANONICAL_URL,
         sameAs: SAME_AS,
         jobTitle: 'Founder & CEO, ONDA Life',
-        description: PAGE_DESC_EN,
+        description: PERSON_DESC,
         knowsAbout: [
           'architecture',
-          'architecture and human psychological states',
           'Gestalt therapy',
           'systemic family therapy',
           'psychology',

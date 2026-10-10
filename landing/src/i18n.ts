@@ -260,7 +260,7 @@ export const LANG_PAGE_EXCLUDE: Partial<Record<Lang, readonly string[]>> = {
   de: ['/terms'],
   fr: ['/terms'],
   ...Object.fromEntries(
-    ARTICLES_ONLY_LANGS.map((l) => [l, LOCALIZED_BASE_PATHS.filter((b) => b !== '/articles' && b !== '/privacy')]),
+    ARTICLES_ONLY_LANGS.map((l) => [l, LOCALIZED_BASE_PATHS.filter((b) => b !== '/articles' && b !== '/privacy' && b !== '/about')]),
   ),
 }
 /** Languages whose /part/:slug bodies are not translated yet — no route, and

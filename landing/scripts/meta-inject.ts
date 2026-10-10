@@ -49,7 +49,7 @@ import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePa
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
 import { appleWatchHrvJsonLd } from '../src/pages/AppleWatchHrvBiofeedbackPage'
 import { researchJsonLd } from '../src/pages/ResearchPage'
-import { founderJsonLd } from '../src/pages/FounderPage'
+import { founderJsonLd, PERSON_DESC } from '../src/pages/FounderPage'
 import { productJsonLd } from '../src/pages/ProductPage'
 import { howItWorksJsonLd } from '../src/pages/HowItWorksPage'
 import { EMOTON_FAQ } from '../src/data/emoton-faq'
@@ -1069,15 +1069,12 @@ function buildPersonJsonLd(): string {
     url: AUTHOR_URL,
     sameAs: AUTHOR_SAME_AS,
     jobTitle: 'Founder & CEO, ONDA Life',
-    description:
-      'Yakiv Bilenko — architect (Kyiv National University of Construction and Architecture, KNUCA, 2006) and Gestalt therapist (MIGIS institute, 2018), founder and CEO of ONDA Life. As an architect he researches structured forms — domes, spheres, pyramids, zomes — that influence human mental, physical and psychological states; as a Gestalt and systemic-family therapist he develops programs for psychological development and self-regulation. He leads ONDA\'s product and engineering. ONDA\'s physiology and neuroscience are overseen by its scientific advisor — Yakiv\'s own expertise is architecture, psychology and Gestalt therapy, not clinical neuroscience.',
+    description: PERSON_DESC,
     // knowsAbout is deliberately his ACTUAL domains — architecture, Gestalt /
     // systemic therapy, psychology, and the applied breath/HRV practice he
-    // builds and writes about. Neuroscience is intentionally NOT claimed here:
-    // that authority belongs to the scientific advisor, not the founder.
+    // builds and writes about. Neuroscience is intentionally NOT claimed here.
     knowsAbout: [
       'architecture',
-      'architecture and human psychological states',
       'Gestalt therapy',
       'systemic family therapy',
       'psychology',
