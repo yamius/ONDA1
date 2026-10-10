@@ -304,9 +304,9 @@ const DEFAULT_TITLE = 'ONDA Life: Stop Tracking Stress. Start Training It.'
 const DEFAULT_DESC =
   'Guided breathing with real-time feedback from your own heart rhythm. Structured 8-level training for your nervous system. Free to start, no account.'
 
-const ABOUT_TITLE = 'About ONDA Life — Who Builds It, and Why'
+const ABOUT_TITLE = 'About ONDA Life — What It Does and Who Builds It'
 const ABOUT_DESC =
-  "Built by a developer-founder and a science advisor with a PhD in physics and neuroscience — HRV biofeedback training, honest about what it can and can't do."
+  'ONDA Life is an iPhone app that helps you notice your nervous-system state and train it with breathing: your own trend, not a stress score. Who builds it and how.'
 
 const GLOSSARY_TITLE = 'HRV, Breathwork & Neuroscience Glossary | ONDA Life'
 const GLOSSARY_DESC =
@@ -953,6 +953,7 @@ function buildOrganizationJsonLd(): string {
     '@type': 'Organization',
     '@id': `${SITE_URL}/#organization`,
     name: 'ONDA Life',
+    legalName: 'Onda Life LLC',
     url: SITE_URL,
     description:
       'ONDA Life is an HRV biofeedback and guided-breathing app for real-time physiological self-regulation and nervous-system training (iOS, iPad and Apple Watch).',
@@ -1276,15 +1277,10 @@ function buildAboutPageJsonLd(name: string, description: string, url: string): s
     name,
     description,
     url,
-    mainEntity: {
-      '@type': 'SoftwareApplication',
-      name: 'ONDA Life',
-      applicationCategory: 'HealthApplication',
-      operatingSystem: 'iOS, Android',
-      description:
-        'Structured HRV biofeedback training: guided breathing with live heart-rhythm feedback, across an 8-level path for your nervous system.',
-      url: SITE_URL,
-    },
+    // The page is about the company and its founder (task 069): point at the
+    // Organization / Person entities emitted alongside it by @id.
+    mainEntity: { '@id': `${SITE_URL}/#organization` },
+    about: [{ '@id': `${SITE_URL}/#organization` }, { '@id': AUTHOR_ID }],
   }
   return JSON.stringify(aboutPage)
 }
@@ -3929,6 +3925,12 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   // Organization + WebSite JSON-LD on homepage only. Together with the
   // Person record on the same page they form a connected Knowledge
   // Graph (WebSite → publisher → Organization → founder → Person).
+  // Organization on /about too (task 069) — the AboutPage mainEntity refers to it by @id.
+  if (meta.aboutPage && canonicalUrl !== SITE_URL) {
+    out = out.replace('</head>', `  <script type="application/ld+json">${buildOrganizationJsonLd()}</script>
+</head>`)
+  }
+
   if (canonicalUrl === SITE_URL) {
     const orgScript = `<script type="application/ld+json">${buildOrganizationJsonLd()}</script>`
     const siteScript = `<script type="application/ld+json">${buildWebSiteJsonLd()}</script>`

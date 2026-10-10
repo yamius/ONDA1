@@ -852,8 +852,16 @@ for (const route of routes) {
                 : `/reviews/${reviewInfo.slug}`)
         : isGlossaryLocalized && glossaryInfo
           ? (glossaryInfo.kind === 'index' ? '/glossary' : `/glossary/${glossaryInfo.slug}`)
-          : route
+          : isLocalized && basePath === '/about'
+            ? '/about'
+            : route
     const meta = getMetaForRoute(metaRoute)
+    // /<lang>/about (task 069): same AboutPage + Organization + Person graph as
+    // EN, with the localized name/description/url on the AboutPage node.
+    if (isLocalized && basePath === '/about' && meta.aboutPage) {
+      const lm = localizedMeta[LOCALIZED_PAGES['/about']][lang]
+      meta.aboutPage = { name: lm.title, description: lm.description, url: pageUrlFor('/about', lang) }
+    }
     // The glossary FAQPage is built from the EN entry text — never emit it on
     // a localized glossary page.
     if (isGlossaryLocalized) delete meta.faq

@@ -1,7 +1,10 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { langFromPath, localizedPathFor } from '../i18n'
+import { langFromPath, localizedPathFor, langHref } from '../i18n'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
+import type { ReactNode } from 'react'
 import { syncOgLocale } from '../utils/ogLocale'
 import { useLocation } from 'react-router-dom'
 
@@ -58,110 +61,97 @@ export function AboutPage() {
     }
   }, [t, tHome, lang])
 
-  const introList = t('introList', { returnObjects: true }) as string[]
-  const howList = t('howList', { returnObjects: true }) as string[]
-  const rewardsList = t('rewardsList', { returnObjects: true }) as string[]
+  type Item = { t: string; d: string }
+  const whatItems = t('what.items', { returnObjects: true }) as Item[]
+  const infoItems = t('info.items', { returnObjects: true }) as Item[]
+  const privacyItems = t('privacy.items', { returnObjects: true }) as string[]
+
+  // Copy carries internal links as [label](/path); every path goes through
+  // langHref so /<lang>/… is used only where that page is actually built.
+  const rich = (text: string): ReactNode[] => {
+    const out: ReactNode[] = []
+    const re = /\[([^\]]+)\]\((\/[^)\s]*)\)/g
+    let last = 0
+    let m: RegExpExecArray | null
+    while ((m = re.exec(text))) {
+      if (m.index > last) out.push(text.slice(last, m.index))
+      out.push(
+        <Link key={m.index} to={langHref(m[2], lang)} className="text-terminal-green/80 underline underline-offset-2 hover:text-terminal-green">
+          {m[1]}
+        </Link>,
+      )
+      last = m.index + m[0].length
+    }
+    if (last < text.length) out.push(text.slice(last))
+    return out
+  }
+
+  const P = 'font-mono text-sm leading-relaxed text-white/60 md:text-base'
+  const H2 = 'mb-4 text-2xl font-bold tracking-tight md:text-3xl'
+
+  const itemList = (items: Item[]) => (
+    <ul className="mb-12 space-y-3 pl-1">
+      {items.map((it, i) => (
+        <li key={i} className="font-mono text-sm leading-relaxed text-white/60">
+          <span className="mr-2 text-terminal-green/40">•</span>
+          <strong className="font-semibold text-white/85">{it.t}</strong> {rich(it.d)}
+        </li>
+      ))}
+    </ul>
+  )
 
   return (
     <div className="mx-auto max-w-3xl px-4 pb-16 md:px-6">
-      <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-        {t('tag')}
-      </div>
+      <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">{t('tag')}</div>
 
-      <h1 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
-        {t('title1')}
-      </h1>
-      <p className="mb-6 font-mono text-sm leading-relaxed text-white/60 md:text-base">
-        {t('intro1')}
-      </p>
-      <ul className="mb-8 space-y-2 pl-1">
-        {introList.map((item, i) => (
-          <li key={i} className="font-mono text-sm leading-relaxed text-white/50">
+      <h1 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">{t('title')}</h1>
+      <p className={`mb-4 ${P}`}>{t('lead')}</p>
+      <p className="mb-12 font-mono text-sm font-semibold leading-relaxed text-terminal-green/80 md:text-base">{t('principle')}</p>
+
+      <h2 className={H2}>{t('what.heading')}</h2>
+      {itemList(whatItems)}
+
+      <h2 className={H2}>{t('basis.heading')}</h2>
+      <p className={`mb-4 ${P}`}>{rich(t('basis.p1'))}</p>
+      <p className={`mb-12 ${P}`}>{rich(t('basis.p2'))}</p>
+
+      <h2 className={H2}>{t('info.heading')}</h2>
+      {itemList(infoItems)}
+
+      <h2 className={H2}>{t('privacy.heading')}</h2>
+      <ul className="mb-12 space-y-2 pl-1">
+        {privacyItems.map((item, i) => (
+          <li key={i} className="font-mono text-sm leading-relaxed text-white/60">
             <span className="mr-2 text-terminal-green/40">•</span>{item}
           </li>
         ))}
       </ul>
-      <p className="mb-6 font-mono text-sm leading-relaxed text-white/60 md:text-base">
-        {t('intro2')}
-      </p>
-      <p className="mb-16 rounded-lg border border-white/10 bg-white/[0.02] p-4 font-mono text-xs leading-relaxed text-white/45">
-        {t('disclaimer', {
-          defaultValue:
-            'The evidence-backed part of ONDA is HRV biofeedback and paced (resonance) breathing — see the science behind ONDA and what ONDA measures. The ONDA Path — its levels and higher-state language — is an experiential framework, not a hierarchy of clinically validated biological states.',
-        })}
-      </p>
 
-      <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
-        {t('title2')}
-      </h2>
-      <p className="mb-4 font-mono text-sm leading-relaxed text-white/60 md:text-base">
-        {t('how1')}
-      </p>
-      <p className="mb-4 font-mono text-sm leading-relaxed text-white/60">
-        {t('howLead')}
-      </p>
-      <ul className="mb-6 space-y-2 pl-1">
-        {howList.map((item, i) => (
-          <li key={i} className="font-mono text-sm leading-relaxed text-white/50">
-            <span className="mr-2 text-terminal-green/40">•</span>{item}
-          </li>
-        ))}
-      </ul>
-      <p className="mb-16 font-mono text-sm leading-relaxed text-white/60">
-        {t('how2')}
-      </p>
-
-      <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
-        {t('title3')}
-      </h2>
-      <p className="mb-4 font-mono text-sm leading-relaxed text-white/60 md:text-base">
-        {t('rewards1')}
-      </p>
-      <ul className="mb-6 space-y-2 pl-1">
-        {rewardsList.map((item, i) => (
-          <li key={i} className="font-mono text-sm leading-relaxed text-white/50">
-            <span className="mr-2 text-terminal-green/40">•</span>{item}
-          </li>
-        ))}
-      </ul>
-      <p className="mb-16 font-mono text-sm leading-relaxed text-white/60">
-        {t('rewards2')}
-      </p>
-
-      <div className="space-y-6 border-t border-white/5 pt-10">
-        <h2 className="mb-2 text-2xl font-bold tracking-tight md:text-4xl">
-          {t('details.heading')}
-        </h2>
-        <p className="font-mono text-sm leading-relaxed text-white/60">{t('details.p1')}</p>
-        <p className="font-mono text-sm leading-relaxed text-white/60">{t('details.p2')}</p>
-        <p className="font-mono text-sm leading-relaxed text-white/60">{t('details.p3')}</p>
-        <p className="font-mono text-sm leading-relaxed text-white/60">{t('details.p4')}</p>
-        <p className="font-mono text-sm leading-relaxed text-white/60">{t('details.p5')}</p>
-        <p className="font-mono text-sm leading-relaxed text-white/50">{t('details.p6')}</p>
-        <p className="mt-8 font-mono text-base font-semibold text-terminal-green">
-          {t('details.goodLuck')}
-        </p>
-      </div>
-
-      <section className="mt-12 space-y-4 border-t border-white/5 pt-10">
-        <h2 className="mb-2 text-2xl font-bold tracking-tight md:text-4xl">
-          {t('author.heading')}
-        </h2>
-        <p className="font-mono text-sm font-semibold leading-relaxed text-white/80 md:text-base">
-          {t('author.lead')}
-        </p>
-        <p className="font-mono text-sm leading-relaxed text-white/60">{t('author.p1')}</p>
-        <p className="font-mono text-sm leading-relaxed text-white/60">{t('author.p2')}</p>
-        <p className="font-mono text-sm leading-relaxed text-white/50">{t('author.p3')}</p>
+      <section className="mb-12 space-y-4 border-t border-white/5 pt-10">
+        <h2 className={H2}>{t('person.heading')}</h2>
+        <p className="font-mono text-sm font-semibold leading-relaxed text-white/80 md:text-base">{t('person.p1')}</p>
+        <p className={P}>{t('person.p2')}</p>
+        <p className={P}>{t('person.p3')}</p>
         <a
           href="https://www.linkedin.com/in/yamius"
           target="_blank"
           rel="me noopener noreferrer"
           className="inline-block font-mono text-xs text-terminal-green/70 transition-colors hover:text-terminal-green"
         >
-          {t('author.linkedin')}
+          {t('person.linkedin')}
         </a>
       </section>
+
+      <section className="mb-12 space-y-4 border-t border-white/5 pt-10">
+        <h2 className={H2}>{t('company.heading')}</h2>
+        <p className={P}>{t('company.p1')}</p>
+        <p className={P}>{t('company.p2')}</p>
+        <p className="rounded-lg border border-white/10 bg-white/[0.02] p-4 font-mono text-xs leading-relaxed text-white/55">
+          {t('company.emergency')}
+        </p>
+      </section>
+
+      <AppStoreCTA ct={storeCt('about', 'page', lang)} variant="general" lang={lang} />
 
       <div className="mt-12">
         <Link
