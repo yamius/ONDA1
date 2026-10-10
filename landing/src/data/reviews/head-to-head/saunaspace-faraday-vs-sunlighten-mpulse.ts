@@ -22,7 +22,7 @@ const saunaspaceVsSunlighten: HeadToHeadInput = {
     { name: 'EMF discipline', winner: 'a', note: 'SaunaSpace: full Faraday-cage shielding — the most rigorous in the consumer sauna category. Sunlighten: published <1 mG at seated position but no Faraday cage.' },
     { name: 'Form factor', winner: 'b', note: 'Sunlighten: traditional cabin install. SaunaSpace: tent-style or smaller cabin configurations. Sunlighten more familiar form factor.' },
     { name: 'Spectrum breadth', winner: 'b', note: 'Sunlighten: programmable near + mid + far. SaunaSpace: near-IR-only. Sunlighten broader by design.' },
-    { name: 'Research footprint', winner: 'b', note: 'Sunlighten: largest published-research footprint in consumer IR sauna. SaunaSpace: founder-driven biohacker presence.' },
+    { name: 'Model-specific research', winner: 'tie', note: 'Neither has an outcome trial of the reviewed model. Sunlighten: one 20-person 2010 pilot on an older model (Sunlight Armana 3). SaunaSpace: we found no peer-reviewed study.' },
     { name: 'Price', winner: 'a', note: 'SaunaSpace Faraday: ~$5,000 tent. Sunlighten mPulse: ~$6,000+ cabin. SaunaSpace marginally cheaper at the tent tier.' },
   ],
   faq: [
@@ -53,7 +53,7 @@ If near-IR-only via tungsten-filament incandescent bulbs is your wavelength bet 
 
 ## When is Sunlighten mPulse the right pick?
 
-If you want full-spectrum IR with the ability to programme near, mid and far separately per session — Sunlighten is the right shape. The deepest published-research footprint and traditional cabin form factor are bonuses.`,
+If you want full-spectrum IR with the ability to programme near, mid and far separately per session — Sunlighten is the right shape. The traditional cabin form factor is a bonus.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-05-25',

@@ -17,14 +17,13 @@ const sunlightenMpulse: ToolReviewInput = {
     { criterionId: 'build', score: 9.0, note: 'Premium cedar cabin, 1–4-person configurations, 7-year warranty. Multi-decade reliability track record.' },
     { criterionId: 'emf', score: 9.0, note: 'Independently-measured ultra-low EMF at seated position (typically <1 mG). Sunlighten publishes the numbers.' },
     { criterionId: 'form-factor', score: 7.5, note: 'Cabin requires dedicated space (1-person from 4×4 ft; 4-person from 6×7 ft). 110V or 220V depending on size.' },
-    { criterionId: 'evidence', score: 7.5, note: 'Substantial published research on Sunlighten units in particular. FDA Class II registered. Honest marketing language vs typical IR-sauna overclaiming.' },
+    { criterionId: 'evidence', score: 7.0, note: 'No peer-reviewed trial of the mPulse itself. The only published trial on a Sunlighten-made sauna is a 20-person, 3-month before-and-after pilot from 2010 on an older model (Sunlight Armana 3), so it is not evidence for the mPulse; Japanese Waon-therapy studies used other makers’ devices. Sunlighten describes its saunas as general-wellness products, not medical devices. 7.0 is the base score for a product without trials of its own.' },
     { criterionId: 'value', score: 6.5, note: '$5,000–$10,000+ depending on configuration. Premium pricing matched by build and verified specs.' },
   ],
   pros: [
     'True 3-wavelength IR (near + mid + far) with programmable control',
     'Independently-measured ultra-low EMF (<1 mG at seated position)',
     'Premium cedar build with 7-year warranty',
-    'Substantial published research using Sunlighten units',
   ],
   cons: [
     '$5,000–$10,000+ pricing — premium tier',
@@ -41,7 +40,7 @@ const sunlightenMpulse: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Sunlighten mPulse 3-in-1 is the IR sauna that sets the standard for what "full-spectrum" should mean. Most competitors put a far-IR emitter behind the panel and call it full-spectrum; mPulse delivers near, mid and far IR through three independent emitter systems, programmable per session. Combined with cedar build, third-party-verified EMF and FDA Class II registration, this is the premium-tier reference.
+Sunlighten mPulse 3-in-1 is the IR sauna that sets the standard for what "full-spectrum" should mean. Most competitors put a far-IR emitter behind the panel and call it full-spectrum; mPulse delivers near, mid and far IR through three independent emitter systems, programmable per session. Combined with cedar build and third-party-verified EMF, this is the premium-tier reference.
 
 ## What are the downsides of Sunlighten mPulse 3-in-1?
 
@@ -62,12 +61,12 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
 - [Longevity protocol: biological clock reset](/articles/longevity-protocol-biological-clock-reset) — where sauna slots into a reset routine`,
   references: [
     { label: 'Sunlighten — official site', url: 'https://www.sunlighten.com/' },
-    { label: 'Sunlighten research and clinical-grade IR documentation', url: 'https://www.sunlighten.com/research/' },
+    { label: 'Sunlighten — the maker’s own research list (not independent evidence)', url: 'https://www.sunlighten.com/light-science/research/' },
   ],
   relatedSlugs: ['clearlight-sanctuary-2', 'saunaspace-faraday', 'sun-home-equinox'],
   publishOn: '2026-06-04',
   faq: [
-    { q: "Is the Sunlighten mPulse 3-in-1 worth it?", a: "The mPulse is worth it for serious daily IR sauna users. It delivers true near, mid and far wavelengths with programmable control, independently measured ultra-low EMF under 1 mG seated, a cedar build with 7-year warranty, and substantial published research. It is premium-priced and needs dedicated space." },
+    { q: "Is the Sunlighten mPulse 3-in-1 worth it?", a: "The mPulse is worth it for serious daily IR sauna users. It delivers true near, mid and far wavelengths with programmable control, independently measured ultra-low EMF under 1 mG seated, and a cedar build with 7-year warranty. It is premium-priced and needs dedicated space." },
     { q: "How much does the Sunlighten mPulse cost?", a: "The Sunlighten mPulse costs from about $5,000 for a 1-person unit to $10,000 for a 4-person model. That places it in the premium tier. Larger configurations also need 220V electrical, which adds to installation planning." },
     { q: "What are the downsides of the Sunlighten mPulse?", a: "The mPulse costs $5,000 to $10,000+, needs dedicated install space of at least 4×4 ft, and larger configurations require 220V electrical. Lead times can also stretch during peak demand, so plan the purchase ahead." },
   ],

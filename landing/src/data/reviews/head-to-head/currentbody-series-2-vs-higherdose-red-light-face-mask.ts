@@ -30,7 +30,7 @@ const currentbodyVsHigherDose: HeadToHeadInput = {
     },
     {
       q: 'Is HigherDOSE\'s lower dose enough?',
-      a: 'For daily light-touch use — yes. HigherDOSE\'s thesis is daily consumer-friendly dosing rather than clinical-intensity sessions. For users wanting peak dose, CurrentBody (or Omnilux) delivers more.',
+      a: 'For daily light-touch use — yes. HigherDOSE\'s thesis is daily consumer-friendly dosing rather than clinical-intensity sessions. For users wanting peak dose, CurrentBody delivers more.',
     },
     {
       q: 'Does the HigherDOSE ecosystem matter?',

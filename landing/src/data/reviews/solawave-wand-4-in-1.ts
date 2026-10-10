@@ -49,7 +49,7 @@ Dose, wavelength scope and clinical evidence. Single red wavelength only, narrow
 
 ## Who should buy Solawave Wand 4-in-1?
 
-Choose Solawave Wand for budget-conscious entry to red light therapy with multi-modality consumer convenience. For a handheld evidence reference, LightStim for Wrinkles. For lie-on mask convenience, CurrentBody Series 2. For clinical-evidence reference, Omnilux Contour Face.
+Choose Solawave Wand for budget-conscious entry to red light therapy with multi-modality consumer convenience. For a four-wavelength handheld, LightStim for Wrinkles. For lie-on mask convenience, CurrentBody Series 2. For a top-ranked lie-on mask, Omnilux Contour Face.
 
 ---
 

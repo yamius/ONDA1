@@ -139,7 +139,7 @@ const roundupRows = comparisons.map((c) => ({
   slug: c.slug,
   title: c.title,
   url: `${SITE}/reviews/compare/${c.slug}`,
-  picks: c.picks.map((p) => ({ review: p.reviewSlug, award: p.award, takeaway: p.takeaway })),
+  picks: c.picks.map((p) => ({ review: p.reviewSlug, award: p.award, takeaway: p.takeaway, ...(p.comparisonOnly ? { comparisonOnly: p.comparisonOnly } : {}) })),
 }))
 
 mkdirSync(dirname(OUT), { recursive: true })

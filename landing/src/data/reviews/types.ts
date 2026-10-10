@@ -156,6 +156,13 @@ export interface ComparisonPick {
   award: string
   /** One-line reason this pick won its award. */
   takeaway: string
+  /** Set for a product shown only for comparison (e.g. a prescription
+   *  implant in a consumer round-up): the value is the block label, e.g.
+   *  "For comparison: medical implant …, by prescription". Such picks are
+   *  excluded from ranking, awards, the "practically equal" line and the
+   *  ItemList JSON-LD, and are rendered in a separate block after the ranked
+   *  picks. Their award must be ''. Translated as picks.<slug>.comparisonOnly. */
+  comparisonOnly?: string
 }
 
 /** A question/answer pair — feeds both the on-page FAQ and FAQPage JSON-LD. */

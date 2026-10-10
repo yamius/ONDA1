@@ -13,19 +13,19 @@ const nurosymVsVagustimVsXen: HeadToHeadInput = {
   verdict:
     'Nurosym wins on evidence and disclosed parameters. Vagustim wins on protocol variety in EU markets. Xen wins on consumer-friendly earbud form factor with music pairing.',
   bestForA:
-    'Choose Nurosym if peer-reviewed evidence and clinical-grade auricular tVNS are the deciding criteria — the Parasym hardware platform behind 40+ published trials.',
+    'Choose Nurosym if peer-reviewed evidence and clinical-grade auricular tVNS are the deciding criteria — Parasym devices, mostly earlier models, were used in about twenty independent published studies (50+ according to the manufacturer, as of October 2026).',
   bestForB:
     'Choose Vagustim if you are in an EU market and want auricular tVNS with a wider protocol preset library (stress, sleep, depression, anxiety, IBS) at a lower price.',
   bestForC:
     'Choose Xen by Neuvana if you want auricular tVNS in a familiar earbud form factor paired with music — the most consumer-friendly shape of the three.',
   axes: [
-    { name: 'Independent evidence', winner: 'a', note: 'Nurosym (Parasym hardware): 40+ peer-reviewed trials. Vagustim: real trial base from Turkish/German collaborator groups. Xen: limited company-sponsored studies only.' },
+    { name: 'Independent evidence', winner: 'a', note: 'Nurosym: about twenty independent peer-reviewed studies of Parasym devices (50+ according to the manufacturer, as of October 2026), mostly on earlier models. Vagustim: real trial base from Turkish/German collaborator groups. Xen: limited company-sponsored studies only.' },
     { name: 'Stimulation target', winner: 'tie', note: 'All three target the auricular branch of the vagus nerve electrically. Same anatomical target.' },
-    { name: 'Disclosed parameters', winner: 'a', note: 'Nurosym: 25 Hz, 200–1000 µs documented. Vagustim: parameter ranges per protocol. Xen: less granular disclosure.' },
+    { name: 'Disclosed parameters', winner: 'a', note: 'Nurosym: trials that name it report 20–25 Hz and 200–250 µs; waveform proprietary. Vagustim: parameter ranges per protocol. Xen: less granular disclosure.' },
     { name: 'Protocol variety', winner: 'b', note: 'Vagustim: library of presets (stress, sleep, depression, anxiety, IBS). Nurosym: single user-titrated programme. Xen: multiple modes plus music sync.' },
     { name: 'Form factor', winner: 'c', note: 'Xen: earbuds — most familiar consumer shape. Nurosym: tragus clip with cable tether. Vagustim: tragus clip plus optional secondary electrodes.' },
     { name: 'Music / audio integration', winner: 'c', note: 'Xen pairs stimulation with music playback through the same earbuds. Nurosym and Vagustim have no audio component.' },
-    { name: 'Regulatory status', winner: 'tie', note: 'Nurosym and Vagustim: CE-marked Class IIa medical devices. Xen: consumer wellness device. Nurosym and Vagustim tie; Xen is lighter regulatory.' },
+    { name: 'Regulatory status', winner: 'tie', note: 'Nurosym and Vagustim: CE-marked medical devices (Nurosym’s Class IIa per the maker). Xen: consumer wellness device. Nurosym and Vagustim tie; Xen is lighter regulatory.' },
     { name: 'Price', winner: 'b', note: 'Vagustim: €499 (~$540). Xen: $399. Nurosym: €700 (~$820). Xen cheapest; Nurosym premium-priced for the evidence base.' },
   ],
   faq: [
@@ -39,7 +39,7 @@ const nurosymVsVagustimVsXen: HeadToHeadInput = {
     },
     {
       q: 'Which has the most research behind it?',
-      a: 'Nurosym, by a meaningful margin. The Parasym hardware behind Nurosym appears in 40+ peer-reviewed trials. Vagustim has a real research base — smaller but credible. Xen has limited device-specific evidence beyond the broader auricular tVNS literature.',
+      a: 'Nurosym, by a meaningful margin. The Parasym hardware behind Nurosym, mostly in earlier models, appears in about twenty independent peer-reviewed studies (50+ according to the manufacturer, as of October 2026). Vagustim has a real research base — smaller but credible. Xen has limited device-specific evidence beyond the broader auricular tVNS literature.',
     },
     {
       q: 'Is Xen really tVNS like the others?',

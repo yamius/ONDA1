@@ -9,9 +9,9 @@ const therafaceMask: ToolReviewInput = {
   description:
     'ONDA review of the TheraFace Mask — Therabody-branded premium face mask with red, blue and amber LED protocols and brand-funded research. Scored on irradiance, wavelength, evidence and value.',
   verdict:
-    'Best Therabody-brand crossover into face masks — three-wavelength coverage, premium build, brand pedigree from massage gun category. Less clinical moat than dermatology references.',
+    'Best Therabody-brand crossover into face masks — three-wavelength coverage, premium build, brand pedigree from massage gun category. Research is brand-funded.',
   summary:
-    'TheraFace Mask is Therabody\'s 2026 face mask — leveraging the Theragun brand pedigree into the red light category. Three-wavelength coverage (red 633 nm + blue 415 nm + amber 590 nm), flexible-shell hybrid build, integrated session app, premium pricing. Brand-funded research; less peer-reviewed dermatology moat than Omnilux or Dr. Dennis Gross.',
+    'TheraFace Mask is Therabody\'s 2026 face mask — leveraging the Theragun brand pedigree into the red light category. Three-wavelength coverage (red 633 nm + blue 415 nm + amber 590 nm), flexible-shell hybrid build, integrated session app, premium pricing. Brand-funded research, which does not count as evidence in ONDA scores.',
   scores: [
     { criterionId: 'irradiance', score: 7.5, note: 'Documented irradiance in dermatology-acceptable range. Brand-funded validation; less independent verification than category references.' },
     { criterionId: 'wavelength-coverage', score: 8.5, note: 'Red 633 nm + blue 415 nm + amber 590 nm — three-wavelength coverage with mode-switching protocols.' },
@@ -45,11 +45,11 @@ TheraFace Mask is Therabody\'s 2026 red light face mask — three-wavelength cov
 
 ## What are the downsides of TheraFace Mask?
 
-Clinical evidence and price. TheraFace lacks the peer-reviewed dermatology moat of Omnilux or Dr. Dennis Gross — the Theragun pedigree is real but doesn\'t carry into red-light credibility. At $649 the premium relies on brand position rather than evidence.
+Clinical evidence and price. TheraFace relies on brand-funded research — the Theragun pedigree is real but doesn\'t carry into red-light evidence. At $649 the premium relies on brand position rather than evidence.
 
 ## Who should buy TheraFace Mask?
 
-Choose TheraFace Mask if you\'re already in the Therabody ecosystem and want coordinated face-mask + TheraFace Pro. For dermatology evidence, Omnilux Contour Face. For dermatology brand pedigree, Dr. Dennis Gross. For consumer market leader, CurrentBody Series 2.
+Choose TheraFace Mask if you\'re already in the Therabody ecosystem and want coordinated face-mask + TheraFace Pro. For a cheaper flexible-silicone mask, Omnilux Contour Face. For dermatology brand pedigree, Dr. Dennis Gross. For consumer market leader, CurrentBody Series 2.
 
 ---
 

@@ -94,7 +94,7 @@ export const SERP_OVERRIDES: Record<string, { title?: string; description?: stri
   '/reviews/omnilux-contour-face': {
     title: 'Omnilux Contour Face Review 2026: Worth $395? | ONDA Life',
     description:
-      'The flexible red light mask with the strongest dermatology evidence. Results to expect, how to use it, price and cheaper alternatives.',
+      'Flexible red and near-infrared light mask, FDA-cleared for wrinkles, but with no trial of the mask itself. Price, results to expect and cheaper alternatives.',
   },
   '/reviews/kineon-move-plus': {
     title: 'Kineon Move+ Review 2026: Red Light for Joints | ONDA Life',

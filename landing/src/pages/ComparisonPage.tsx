@@ -51,7 +51,7 @@ export function ComparisonPage() {
   const criteria = getCriteria(comparison.category)
   // Picks arrive ranked (overall → tie-break criterion). Genuine ties share a
   // rank and are shown as "#2=" (scoring.ts rankPositions).
-  const rankedPickReviews = comparison.picks.map((p) => getReviewBySlug(p.reviewSlug)).filter((r): r is NonNullable<typeof r> => !!r)
+  const rankedPickReviews = comparison.picks.filter((p) => !p.comparisonOnly).map((p) => getReviewBySlug(p.reviewSlug)).filter((r): r is NonNullable<typeof r> => !!r)
   const rankPos = rankPositions(rankedPickReviews)
   const rankBySlug = new Map(rankedPickReviews.map((r, i) => [r.slug, rankPos[i]]))
   // Top two within PRACTICALLY_EQUAL_GAP (0.1): awards stay, but the top of
@@ -98,8 +98,15 @@ export function ComparisonPage() {
       {lang === 'en' && (() => {
         // The top pick is the "Best overall" award holder (it stays with the
         // former leader when the new #1 leads by ≤ 0.1); otherwise #1.
-        const top = comparison.picks.find((p) => /^best overall/i.test(p.award)) ?? comparison.picks[0]
-        const rest = comparison.picks.filter((p) => p !== top && p.award)
+        const competing = comparison.picks.filter((p) => !p.comparisonOnly)
+        const bestOverall = competing.find((p) => /^best overall/i.test(p.award))
+        const top = bestOverall ?? competing[0]
+        // No "Best overall" and #1 is a genuine tie (shared rank): say so
+        // instead of naming one of the tied products as the top pick.
+        const tiedTop = !bestOverall && rankPositions(rankedPickReviews)[0]?.tied
+          ? rankedPickReviews.filter((_, i) => rankPositions(rankedPickReviews)[i].rank === 1)
+          : null
+        const rest = competing.filter((p) => p !== top && p.award && !(tiedTop && tiedTop.some((r) => r.slug === p.reviewSlug)))
         const lc = (t: string) => (/^[A-Z][a-z]/.test(t) ? t.charAt(0).toLowerCase() + t.slice(1) : t)
         const topReview = top && getReviewBySlug(top.reviewSlug)
         if (!topReview) return null
@@ -112,9 +119,19 @@ export function ComparisonPage() {
         return (
           <div className="mb-8 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5">
             <p id="comparison-answer" className="text-[15px] leading-relaxed text-white/85">
-              Our top pick among the {scope} is{' '}
-              <span className="font-semibold text-white/95">{topReview.name}</span>{' '}
-              ({topReview.overallScore.toFixed(1)}/10): {lc(top.takeaway)}
+              {tiedTop ? (
+                <>
+                  Our top picks among the {scope} are tied:{' '}
+                  <span className="font-semibold text-white/95">{tiedTop.map((r) => r.name).join(' and ')}</span>{' '}
+                  ({topReview.overallScore.toFixed(1)}/10 each).
+                </>
+              ) : (
+                <>
+                  Our top pick among the {scope} is{' '}
+                  <span className="font-semibold text-white/95">{topReview.name}</span>{' '}
+                  ({topReview.overallScore.toFixed(1)}/10): {lc(top.takeaway)}
+                </>
+              )}
               {list ? ` Other winners: ${list}.` : ''}
             </p>
           </div>
@@ -143,7 +160,7 @@ export function ComparisonPage() {
           </p>
         )}
         <div className="grid gap-3">
-          {comparison.picks.map((pick) => {
+          {comparison.picks.filter((p) => !p.comparisonOnly).map((pick) => {
             const r = getReviewBySlug(pick.reviewSlug)
             if (!r) return null
             const pos = rankBySlug.get(r.slug)
@@ -181,6 +198,33 @@ export function ComparisonPage() {
             )
           })}
         </div>
+        {/* Comparison-only picks (e.g. a prescription implant): shown for
+            reference, never ranked or awarded. */}
+        {comparison.picks.filter((p) => p.comparisonOnly).map((pick) => {
+          const r = getReviewBySlug(pick.reviewSlug)
+          if (!r) return null
+          return (
+            <div key={pick.reviewSlug} className="mt-6" data-testid="comparison-only">
+              <h3 className="mb-3 font-mono text-xs font-bold uppercase tracking-widest text-white/50">
+                {tReviews(`comparisons.${slug}.picks.${pick.reviewSlug}.comparisonOnly`, { defaultValue: pick.comparisonOnly })}
+              </h3>
+              <div className="glass-card rounded-lg border border-dashed border-white/10 p-5">
+                <div className="mb-1 flex items-baseline justify-between gap-4">
+                  <Link to={langHref(`/reviews/${r.slug}`, lang)} className="font-semibold transition-colors hover:text-terminal-green">
+                    {r.name}
+                  </Link>
+                  <span className="shrink-0 font-mono text-sm font-bold text-white/60">
+                    {r.overallScore.toFixed(1)}
+                    <span className="text-white/30"> / 10</span>
+                  </span>
+                </div>
+                <p className="font-mono text-xs leading-relaxed text-white/50">
+                  {tReviews(`comparisons.${slug}.picks.${pick.reviewSlug}.takeaway`, { defaultValue: pick.takeaway })}
+                </p>
+              </div>
+            </div>
+          )
+        })}
       </section>
 
       {/* Comparison table */}

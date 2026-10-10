@@ -94,7 +94,7 @@ Proper management of anterior cingulate cortex functions delivers the following.
 
 In ONDA's model, ACC coherence is shaped by [vagal tone](/science/concepts/vagus-nerve) — a working hypothesis, not an established finding, and vagal tone itself cannot be measured directly. Three consumer devices built around the vagal pathway:
 
-- [Nurosym](/reviews/nurosym) — auricular tVNS with HRV/coherence research backing
+- [Nurosym](/reviews/nurosym) — auricular tVNS with the largest consumer trial record (small studies, mostly on earlier Parasym models)
 - [Apollo Neuro](/reviews/apollo-neuro) — vibrotactile coherence modulator
 - [Sensate](/reviews/sensate) — infrasonic chest-resonance device
 

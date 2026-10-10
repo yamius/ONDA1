@@ -372,7 +372,7 @@ const RED_LIGHT_CRITERIA: Criterion[] = [
     label: 'Evidence and regulatory status',
     weight: 0.15,
     description:
-      'Quality of the published photobiomodulation literature backing the device’s claimed indications, and how honestly the manufacturer represents what its panel does versus the published evidence. FDA registration or clearance is neutral (no points added or removed unless the maker misrepresents it), and studies run or funded by the manufacturer do not count as evidence.',
+      'Quality of the published photobiomodulation literature backing the device’s claimed indications. FDA registration or clearance is neutral (no points added or removed), and studies run or funded by the manufacturer do not count as evidence. How a maker presents its evidence is not scored here; if its own materials claim clinical proof or studies that do not exist for this product, the review takes a −0.3 marketing-honesty adjustment instead, quoting the maker.',
   },
   {
     id: 'value',
@@ -470,7 +470,7 @@ const SAUNA_CRITERIA: Criterion[] = [
     label: 'Evidence and regulatory status',
     weight: 0.1,
     description:
-      'Quality of the published sauna and IR-therapy literature backing the device’s claimed benefits, and honest representation of indication versus marketing language. FDA registration or clearance is neutral (no points added or removed unless the maker misrepresents it), and studies run or funded by the manufacturer do not count as evidence.',
+      'Quality of the published sauna and IR-therapy literature backing the device’s claimed benefits. FDA registration or clearance is neutral (no points added or removed), and studies run or funded by the manufacturer do not count as evidence. How a maker presents its evidence is not scored here; if its own materials claim clinical proof or studies that do not exist for this product, the review takes a −0.3 marketing-honesty adjustment instead, quoting the maker.',
   },
   {
     id: 'value',
@@ -636,8 +636,9 @@ const BREATHWORK_APP_CRITERIA: Criterion[] = [
 /** Red light face masks: wearable LED photobiomodulation hardware for
  *  facial skin — distinct from full-body panels by form factor, dose
  *  per session, and clinical-evidence framing around dermatology. The
- *  category split sharply in 2024–2026 between FDA-cleared clinical
- *  references (Omnilux, Dr. Dennis Gross, LightStim) and consumer-brand
+ *  category split sharply in 2024–2026 between long-running light-therapy
+ *  lines and a dermatologist's brand (Omnilux, LightStim, Dr. Dennis Gross)
+ *  and consumer-brand
  *  premium devices (CurrentBody, HigherDOSE, TheraFace). Irradiance
  *  honesty and clinical-evidence base lead the rubric. */
 const RED_LIGHT_MASK_CRITERIA: Criterion[] = [
@@ -667,7 +668,7 @@ const RED_LIGHT_MASK_CRITERIA: Criterion[] = [
     label: 'Clinical evidence and regulatory standing',
     weight: 0.2,
     description:
-      'Published peer-reviewed studies on the specific device for the claimed indications (fine lines, collagen, pigmentation, acne), and how honestly the manufacturer represents the published evidence. FDA registration or Class II clearance is neutral (no points added or removed unless the maker misrepresents it), and studies run or funded by the brand do not count as evidence. The category is full of marketing claims weakly tied to what the hardware actually does.',
+      'Published peer-reviewed studies on the specific device for the claimed indications (fine lines, collagen, pigmentation, acne). FDA registration or Class II clearance is neutral (no points added or removed), and studies run or funded by the brand do not count as evidence. How a maker presents its evidence is not scored here; if its own materials claim clinical proof or studies that do not exist for this product, the review takes a −0.3 marketing-honesty adjustment instead, quoting the maker.',
   },
   {
     id: 'comfort-fit',

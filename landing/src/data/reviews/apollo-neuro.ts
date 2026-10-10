@@ -49,7 +49,7 @@ The mechanism is the catch. Vibrotactile stimulation modulates autonomic tone vi
 
 ## Who should buy Apollo Neuro?
 
-Choose Apollo Neuro if you want a vagal-modulation device you can actually wear all day, in the office, while sleeping, while exercising, without any setup ritual. If you want a stronger acute electrical effect, Nurosym, Truvaga 350 or Pulsetto are better fits. Pair the two if you can — many users run Apollo Neuro as the daily passive baseline and an electrical tVNS device for targeted sessions.
+Choose Apollo Neuro if you want a vagal-modulation device you can actually wear all day, in the office, while sleeping, while exercising, without any setup ritual. If you want direct electrical stimulation, Nurosym, Truvaga 350 or Pulsetto are better fits. Pair the two if you can — many users run Apollo Neuro as the daily passive baseline and an electrical tVNS device for targeted sessions.
 
 ---
 

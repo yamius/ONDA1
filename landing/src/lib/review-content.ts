@@ -47,7 +47,7 @@ export function getHeadToHeadsForProduct(productSlug: string): HeadToHeadMeta[] 
 
 /** Reviews referenced by a comparison, in pick (ranking) order. */
 export function getReviewsForComparison(comparison: Pick<Comparison, 'picks'>): ReviewMeta[] {
-  return comparison.picks.map((p) => reviewBySlug.get(p.reviewSlug)).filter((r): r is ReviewMeta => !!r)
+  return comparison.picks.filter((p) => !p.comparisonOnly).map((p) => reviewBySlug.get(p.reviewSlug)).filter((r): r is ReviewMeta => !!r)
 }
 
 // ── Full entries ───────────────────────────────────────────────────────────

@@ -77,7 +77,7 @@ The sticker price includes the sauna and heater, but plan for:
 |---|---|---|---|---|
 | Almost Heaven Salem | Traditional barrel, 6 kW electric | $4,485 list ($4,036.50 sale) | 2 | Lowest-cost Finnish-style sauna outdoors |
 | [Finnleo Hallmark](/reviews/finnleo-hallmark) | Traditional indoor cabin | ~$8,000 | 2 | Traditional heat inside the house |
-| [Sunlighten mPulse 3-in-1](/reviews/sunlighten-mpulse) | Full-spectrum infrared cabin | ~$6,000 (1-person from ~$5,000) | 1–4 | Best-researched infrared |
+| [Sunlighten mPulse 3-in-1](/reviews/sunlighten-mpulse) | Full-spectrum infrared cabin | ~$6,000 (1-person from ~$5,000) | 1–4 | Separately programmable near/mid/far |
 | [Clearlight Sanctuary 2](/reviews/clearlight-sanctuary-2) | Full-spectrum infrared cabin | $7,299 | 2 | Premium indoor infrared |
 
 ## Who should buy it — and who should skip

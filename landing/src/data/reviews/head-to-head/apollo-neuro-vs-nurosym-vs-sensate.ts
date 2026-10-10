@@ -15,23 +15,23 @@ const apolloVsNurosymVsSensate: HeadToHeadInput = {
   bestForA:
     'Choose Apollo Neuro if you want vagal modulation through the entire day — work, sleep, training — with no electrodes and the strongest non-electrical research base.',
   bestForB:
-    'Choose Nurosym if peer-reviewed evidence and direct electrical stimulation are the deciding criteria — the deepest published auricular tVNS literature in consumer devices.',
+    'Choose Nurosym if peer-reviewed evidence and direct electrical stimulation are the deciding criteria — the largest independent auricular tVNS trial record in consumer devices (mostly on earlier Parasym models).',
   bestForC:
     'Choose Sensate if a focused evening wind-down ritual is the primary use case — soundscape-paired infrasonic sessions on the chest.',
   axes: [
     { name: 'Mechanism directness', winner: 'b', note: 'Nurosym: direct electrical stimulation of the auricular vagal branch — the most direct of the three. Apollo: vibrotactile, indirect via mechanoreceptors. Sensate: infrasonic chest resonance, also indirect.' },
-    { name: 'Independent evidence', winner: 'b', note: 'Nurosym (Parasym hardware): 40+ peer-reviewed trials. Apollo: University of Pittsburgh HRV/recovery RCTs. Sensate: one pilot plus company studies. Nurosym leads.' },
-    { name: 'Acute effect strength', winner: 'b', note: 'Nurosym delivers a clearer acute parasympathetic shift through direct electrical stimulation. Sensate produces a noticeable subjective shift via focused ritual. Apollo is gentlest by design.' },
+    { name: 'Independent evidence', winner: 'b', note: 'Nurosym: about twenty independent peer-reviewed studies of Parasym devices (50+ according to the manufacturer, as of October 2026), mostly on earlier models. Apollo: University of Pittsburgh HRV/recovery RCTs. Sensate: one pilot plus company studies. Nurosym leads.' },
+    { name: 'Acute effect strength', winner: 'tie', note: 'No trial compares them. Nurosym stimulates the nerve electrically, but its acute HRV data are one small sham crossover on an earlier Parasym model (Geng 2022, n=14, HRV rose). None of the trials that name Nurosym reports an HRV result, and a meta-analysis of 16 sham-controlled ear-tVNS studies (Wolf 2021) found no reliable effect. Apollo and Sensate are gentler, non-electrical routes by design.' },
     { name: 'All-day wearability', winner: 'a', note: 'Apollo: wrist/ankle/clip-on, 24/7 wear. Nurosym: 30–60 minute clip-on sessions. Sensate: chest sessions, sit-down only.' },
     { name: 'Setup friction', winner: 'a', note: 'Apollo: put it on. Sensate: chest placement + headphones. Nurosym: ear clip with cable tether to control unit.' },
     { name: 'Evening wind-down fit', winner: 'c', note: 'Sensate’s soundscape-paired sessions are the most pleasant pre-sleep ritual in this group. Apollo runs ambient overnight; Nurosym is too active for sleep.' },
-    { name: 'Disclosed parameters', winner: 'b', note: 'Nurosym discloses pulse parameters (25 Hz, 200–1000 µs). Apollo and Sensate document their programmes but stimulation parameters are less granular.' },
+    { name: 'Disclosed parameters', winner: 'b', note: 'Trials that name Nurosym report 20–25 Hz and 200–250 µs; its waveform is proprietary. Apollo and Sensate document their programmes but stimulation parameters are less granular.' },
     { name: 'Price (hardware)', winner: 'c', note: 'Sensate: $299. Apollo: $448 (incl. 1-year membership). Nurosym: €700 (~$820). Sensate is cheapest; Nurosym premium-priced for its evidence base.' },
   ],
   faq: [
     {
       q: 'Apollo Neuro vs Nurosym vs Sensate — which works best?',
-      a: 'Three different jobs. Apollo for all-day passive vagal modulation. Nurosym for clinical-grade direct auricular tVNS with the deepest evidence. Sensate for an evening wind-down ritual with paired soundscapes. None substitutes for the others.',
+      a: 'Three different jobs. Apollo for all-day passive vagal modulation. Nurosym for direct auricular tVNS with the largest independent trial record (mostly earlier Parasym models). Sensate for an evening wind-down ritual with paired soundscapes. None substitutes for the others.',
     },
     {
       q: 'Are all three really vagus nerve stimulators?',
@@ -39,7 +39,7 @@ const apolloVsNurosymVsSensate: HeadToHeadInput = {
     },
     {
       q: 'Which has the strongest evidence?',
-      a: 'Nurosym, by a meaningful margin. The Parasym hardware behind Nurosym appears in 40+ peer-reviewed trials. Apollo Neuro is second with University of Pittsburgh RCTs. Sensate is third with one published pilot plus company-funded studies.',
+      a: 'Nurosym, by a meaningful margin. The Parasym hardware behind Nurosym, mostly in earlier models, appears in about twenty independent peer-reviewed studies (50+ according to the manufacturer, as of October 2026). Apollo Neuro is second with University of Pittsburgh RCTs. Sensate is third with one published pilot plus company-funded studies.',
     },
     {
       q: 'Can I sleep with any of these?',
@@ -60,7 +60,7 @@ If you want vagal modulation that runs through your day without ceremony, Apollo
 
 ## When is Nurosym the right pick?
 
-If you are running structured tVNS self-experiments, want disclosed parameters, and value the deepest published evidence base, Nurosym is the right shape. The Parasym hardware is the most-cited consumer auricular tVNS platform in the literature.
+If you are running structured tVNS self-experiments, want stimulation settings reported in trials, and value the largest independent evidence record, Nurosym is the right shape. Parasym devices, mostly earlier models, are the most-studied consumer auricular tVNS platform; the trials that name Nurosym itself were mostly null.
 
 ## When is Sensate the right pick?
 

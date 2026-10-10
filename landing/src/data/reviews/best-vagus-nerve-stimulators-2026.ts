@@ -12,7 +12,7 @@ const bestVagusNerveStimulators2026: Comparison = {
     {
       reviewSlug: 'nurosym',
       award: 'Best overall',
-      takeaway: 'The deepest peer-reviewed research base in consumer ear tVNS — research-grade auricular stimulation in a deliberately spartan form (€700, about $820).',
+      takeaway: 'The largest independent trial record in consumer ear tVNS (mostly earlier Parasym models) — research-grade auricular stimulation in a deliberately spartan form (€700, about $820).',
     },
     {
       reviewSlug: 'gammacore-sapphire-cv',
@@ -56,16 +56,17 @@ const bestVagusNerveStimulators2026: Comparison = {
     },
     {
       reviewSlug: 'livanova-vns-therapy',
-      award: 'Reference medical device',
-      takeaway: 'The implanted clinical gold standard for drug-resistant epilepsy and treatment-resistant depression — included as the benchmark every non-invasive device approximates.',
+      award: '',
+      comparisonOnly: 'For comparison: medical implant (VNS therapy for epilepsy/depression), by prescription',
+      takeaway: 'Implanted VNS therapy for drug-resistant epilepsy and treatment-resistant depression, available only on prescription with surgery — shown for comparison, not ranked against the consumer devices.',
     },
   ],
   verdict:
-    'On evidence and mechanism transparency, Nurosym wins the consumer category — its hardware appears across a large body of independent peer-reviewed tVNS research. gammaCore Sapphire CV is the regulatory reference but prescription-gated and headache-specific; Truvaga 350 comes from the same maker without the prescription and now costs $325. Apollo Neuro is the right tool if wearing it all day is the deciding feature; Vagustim is the protocol-rich auricular alternative to Nurosym; Pulsetto is the cheapest credible entry; Hoolest VeRelief Prime fits athletic recovery; Sensate is the most pleasant to use; Xen by Neuvana wins on familiar form factor. LivaNova VNS Therapy is the implanted medical reference — not a consumer purchase. Before buying any of them, try free slow breathing: it has comparable or better evidence for stress and HRV.',
+    'On evidence and mechanism transparency, Nurosym wins the consumer category — Parasym devices, mostly earlier models, were used in about twenty small independent peer-reviewed studies. gammaCore Sapphire CV is the regulatory reference but prescription-gated and headache-specific; Truvaga 350 comes from the same maker without the prescription and now costs $325. Apollo Neuro is the right tool if wearing it all day is the deciding feature; Vagustim is the protocol-rich auricular alternative to Nurosym; Pulsetto is the cheapest credible entry; Hoolest VeRelief Prime fits athletic recovery; Sensate is the most pleasant to use; Xen by Neuvana wins on familiar form factor. LivaNova VNS Therapy is shown separately for comparison only — a prescription implant, not ranked against the consumer devices. Before buying any of them, try free slow breathing: it has comparable or better evidence for stress and HRV.',
   faq: [
     {
       q: 'What is the best vagus nerve stimulator in 2026?',
-      a: 'For evidence-backed consumer tVNS, Nurosym is the strongest pick — its hardware has been used in a large body of peer-reviewed auricular VNS research. For prescribed medical use, gammaCore Sapphire CV is the FDA-cleared reference for specific headache disorders. For daily wear without electrical stimulation, Apollo Neuro is the best fit.',
+      a: 'For evidence-backed consumer tVNS, Nurosym is the strongest pick — Parasym devices, mostly earlier models, were used in about twenty small independent peer-reviewed studies. For prescribed medical use, gammaCore Sapphire CV is the FDA-cleared reference for specific headache disorders. For daily wear without electrical stimulation, Apollo Neuro is the best fit.',
     },
     {
       q: 'Are vagus nerve stimulators FDA-approved?',
@@ -81,7 +82,7 @@ const bestVagusNerveStimulators2026: Comparison = {
     },
     {
       q: 'Which vagus nerve stimulator has the most research behind it?',
-      a: 'On the consumer side, Nurosym — the rebranded Parasym hardware — has the largest published research footprint. On the medical side, LivaNova VNS Therapy has more than twenty years of FDA-approved use, and gammaCore has randomised trials behind its headache indications. Most consumer wellness claims rest on small or mixed studies.',
+      a: 'On the consumer side, Nurosym — the consumer line of Parasym’s ear stimulator — has the largest published research footprint, mostly on earlier Parasym models. On the medical side, LivaNova VNS Therapy has more than twenty years of FDA-approved use, and gammaCore has randomised trials behind its headache indications. Most consumer wellness claims rest on small or mixed studies.',
     },
     {
       q: 'Is Apollo Neuro really a vagus nerve stimulator?',
@@ -102,7 +103,7 @@ const bestVagusNerveStimulators2026: Comparison = {
   ],
   content: `## Quick answer
 
-**Best overall: Nurosym** (€700, about $820) — the consumer ear device with the deepest research base. **Best prescription device: gammaCore Sapphire CV**, FDA-cleared for specific headache disorders. **Best no-prescription neck device: Truvaga 350** ($325). **Best to wear all day: Apollo Neuro** ($448, vibration rather than electrical). **Cheapest credible option: Pulsetto** ($269). And before you spend anything, try slow breathing — it is free and its evidence is at least as good for everyday stress.
+**Best overall: Nurosym** (€700, about $820) — the consumer ear device with the largest independent trial record. **Best prescription device: gammaCore Sapphire CV**, FDA-cleared for specific headache disorders. **Best no-prescription neck device: Truvaga 350** ($325). **Best to wear all day: Apollo Neuro** ($448, vibration rather than electrical). **Cheapest credible option: Pulsetto** ($269). And before you spend anything, try slow breathing — it is free and its evidence is at least as good for everyday stress.
 
 ## How we ranked them
 
@@ -112,7 +113,7 @@ Every device was scored against ONDA's published [review methodology](/reviews/m
 
 | Device | Price (Oct 2026) | Type | Regulatory status | Best for |
 |---|---|---|---|---|
-| [Nurosym](/reviews/nurosym) | €700 (~$820) | Ear tVNS (clip) | CE-marked Class IIa medical device | Evidence-first buyers |
+| [Nurosym](/reviews/nurosym) | €700 (~$820) | Ear tVNS (clip) | CE-marked medical device (Class IIa per the maker) | Evidence-first buyers |
 | [gammaCore Sapphire CV](/reviews/gammacore-sapphire-cv) | Prescription; varies by insurer | Neck (cervical) handheld | FDA-cleared, headache indications | Migraine and cluster headache |
 | [Truvaga 350](/reviews/truvaga-350) | $325 (350 sessions) | Neck (cervical) handheld | General wellness, not FDA-cleared | Neck VNS without prescription |
 | [Apollo Neuro](/reviews/apollo-neuro) | $448 incl. 1-yr membership | Vibration wearable | Consumer wellness device, not FDA-cleared | All-day wear |
@@ -121,7 +122,7 @@ Every device was scored against ONDA's published [review methodology](/reviews/m
 | [Hoolest VeRelief Prime](/reviews/hoolest-verelief-prime) | $279 | Handheld | Consumer wellness device, not FDA-cleared | Athletic recovery |
 | [Sensate](/reviews/sensate) | $299 | Infrasonic chest device | Consumer wellness device, not FDA-cleared | Wind-down routines |
 | [Xen by Neuvana](/reviews/xen-by-neuvana) | $399 | Ear tVNS (earbuds) | Consumer wellness device, not FDA-cleared | Familiar form factor |
-| [LivaNova VNS Therapy](/reviews/livanova-vns-therapy) | Surgical; insurer-covered | Implanted | FDA-approved (epilepsy, depression) | Medical reference only |
+| [LivaNova VNS Therapy](/reviews/livanova-vns-therapy) | Surgical; insurer-covered | Implanted | FDA-approved (epilepsy, depression) | For comparison only (prescription implant, not ranked) |
 
 ## How to choose
 
@@ -153,7 +154,7 @@ Slow, paced breathing — about five to seven breaths a minute, often with a lon
 
 ## Which should you buy?
 
-If the deciding criterion is evidence, choose Nurosym. If it is daily wearability, Apollo Neuro. If you need prescribed clinical use for headache, gammaCore. If price is the constraint, Pulsetto, or Truvaga 350 for a neck device from gammaCore’s maker. The category is small, the differentiation is real, and the scoring above maps directly onto which trade-off matters to you.`,
+If the deciding criterion is evidence in a consumer device, choose Nurosym. If it is daily wearability, Apollo Neuro. If you need prescribed clinical use for headache, gammaCore. If price is the constraint, Pulsetto, or Truvaga 350 for a neck device from gammaCore’s maker. The category is small, the differentiation is real, and the scoring above maps directly onto which trade-off matters to you.`,
   datePublished: '2026-05-21',
   dateModified: '2026-10-10',
 }
