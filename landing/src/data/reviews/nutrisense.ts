@@ -73,7 +73,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { q: "Nutrisense vs Levels: which is better?", a: "Choose Nutrisense for human coaching: every subscriber gets a registered dietitian and weekly written reviews. Choose Levels for a deeper app-side insight engine at a lower price. Both use Dexcom G7, so the sensor accuracy ceiling is the same." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-10',
 }
 
 export default nutrisense

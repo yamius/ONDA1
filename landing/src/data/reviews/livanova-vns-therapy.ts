@@ -13,7 +13,7 @@ const livanovaVnsTherapy: ToolReviewInput = {
   summary:
     'LivaNova VNS Therapy is the implanted vagus nerve stimulator that defined the modern VNS category. A pulse generator is surgically placed under the collarbone and wired to the left cervical vagus nerve; programming is done by a clinician. FDA-approved for drug-resistant epilepsy since 1997 and treatment-resistant depression since 2005. Included here as the medical reference point for understanding what non-invasive devices can and cannot replicate.',
   scores: [
-    { criterionId: 'evidence', score: 9.8, note: 'Twenty-plus years of FDA-approved use, hundreds of peer-reviewed studies, patient-outcome registry data on more than 5,000 patients. The reference VNS evidence base.' },
+    { criterionId: 'evidence', score: 9.0, note: 'Twenty-plus years of FDA-approved use and hundreds of peer-reviewed studies. The pivotal trials were sponsored by the maker (Cyberonics, now LivaNova) and the registry data come from the maker, and studies run or funded by the maker do not count as evidence in ONDA scores; the independent literature alone still makes this the reference VNS evidence base.' },
     { criterionId: 'mechanism', score: 9.5, note: 'Direct electrical stimulation of the cervical vagus nerve via surgically-implanted lead — the most direct stimulation possible. Programmable duty cycle, amplitude and frequency.' },
     { criterionId: 'protocols', score: 8.5, note: 'Clinician-programmed continuous duty cycle plus closed-loop AutoStim (responsive to heart-rate changes in seizure prediction). Not user-adjustable by design.' },
     { criterionId: 'comfort', score: 5.0, note: 'Surgical implant; post-operative scar and possible voice/throat side effects during stimulation. Lifetime device.' },

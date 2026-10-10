@@ -61,11 +61,11 @@ const bestCgmForBiohackers2026: Comparison = {
     },
   ],
   verdict:
-    'Hardware splits the field into two camps and almost nothing else does. Eight of these ten programmes are software and coaching wrappers around either Abbott Libre 3 or Dexcom G7 — so the right buying question is not which sensor, it is which wrapper. Levels wins overall on insight depth, on the most accurate sensor platform (Dexcom Stelo, built on G7), now sold as tiered memberships ($80–$1,329 a year) that include only one to two months of CGM. Nutrisense delivers a registered dietitian on the same sensor for slightly more. Stelo is the same Dexcom G7 hardware at roughly a third of the long-term cost, with a simpler insight engine. Zoe is the only programme treating CGM as part of a wider biomarker fusion. Ultrahuman M1 is the right pick if you already own (or plan to own) the Ultrahuman Ring Air. Signos is the AI-driven weight-loss specialist; Veri is the EU equivalent of Levels; Lingo is the cheapest legitimate entry; Hello Inside fits German-speaking users; Supersapiens is for EU endurance athletes. Pick the wrapper that matches your goal, not the brand that markets hardest.',
+    'Hardware splits the field into two camps and almost nothing else does. Eight of these ten programmes are software and coaching wrappers around either Abbott Libre 3 or Dexcom G7 — so the right buying question is not which sensor, it is which wrapper. Levels wins overall on insight depth, on Dexcom Stelo (built on G7), now sold as tiered memberships ($80–$1,329 a year) that include only one to two months of CGM. Nutrisense delivers a registered dietitian on the same sensor for slightly more. Stelo is the same Dexcom G7 hardware at roughly a third of the long-term cost, with a simpler insight engine. Zoe is the only programme treating CGM as part of a wider biomarker fusion. Ultrahuman M1 is the right pick if you already own (or plan to own) the Ultrahuman Ring Air. Signos is the AI-driven weight-loss specialist; Veri is the EU equivalent of Levels; Lingo is the cheapest legitimate entry; Hello Inside fits German-speaking users; Supersapiens is for EU endurance athletes. Pick the wrapper that matches your goal, not the brand that markets hardest.',
   faq: [
     {
       q: 'What is the best CGM for biohackers in 2026?',
-      a: 'For the deepest insight engine and the most accurate sensor, Levels — shipping Dexcom Stelo (no prescription), as a membership from $80 a year (app-only) to $399–$1,329 a year with one to two months of CGM included. For the same sensor at a third of the long-term cost, Dexcom Stelo. For a registered dietitian alongside the data, Nutrisense. For multi-biomarker personalised nutrition, Zoe. The right pick depends on what trade-off matters most to you.',
+      a: 'For the deepest insight engine, Levels — shipping Dexcom Stelo (no prescription), as a membership from $80 a year (app-only) to $399–$1,329 a year with one to two months of CGM included. For the same sensor at a third of the long-term cost, Dexcom Stelo. For a registered dietitian alongside the data, Nutrisense. For multi-biomarker personalised nutrition, Zoe. The right pick depends on what trade-off matters most to you.',
     },
     {
       q: 'Do I need a prescription for a CGM in 2026?',
@@ -73,7 +73,7 @@ const bestCgmForBiohackers2026: Comparison = {
     },
     {
       q: 'Which sensor is more accurate, Abbott Libre 3 or Dexcom G7?',
-      a: 'Dexcom G7 is marginally more accurate in independent validation — MARD ~8.2% versus ~9% for Libre 3 — and that gap drives the score difference between programmes shipping each sensor. For most non-diabetic biohacker use cases both sensors are accurate enough. Choose the wrapper first, not the sensor.',
+      a: 'They are similarly accurate. In an independent head-to-head study (Eichenlaub et al. 2025) MARD against a laboratory reference was about 12.0% for Dexcom G7 and 11.6% for Libre 3. The makers report different figures (about 8.2% for G7, about 9% for Libre 3), but maker figures do not count as evidence in ONDA scores, so both sensors get the same accuracy score. Choose the wrapper first, not the sensor.',
     },
     {
       q: 'Is a CGM worth it if I am not diabetic?',

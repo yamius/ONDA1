@@ -30,7 +30,7 @@ const helloInside: ToolReviewInput = {
     'Insight engine less deep than Veri or Levels',
     'Narrower third-party integration than Veri',
     'Mostly DACH-region focus; limited brand recognition elsewhere',
-    'Libre 3 accuracy lags Dexcom G7 in independent comparison',
+    '60-minute sensor warm-up (Dexcom G7: 30 minutes)',
   ],
   bestFor: 'Best for German-speaking EU users who want CGM coaching in their language.',
   testStatus: 'evidence-based',
@@ -67,7 +67,7 @@ The metabolic biology these programmes surface — and the protocols the data un
   relatedSlugs: ['veri', 'lingo', 'zoe'],
   faq: [
     { q: "How much does Hello Inside cost?", a: "Hello Inside costs €99–€129 per month (about $130), with sensors included. Billing is monthly by default, so there is no annual lock-in. Higher tiers add group dietitian sessions, and the programme includes weekly written progress reports that act as a coaching substitute." },
-    { q: "Which CGM sensor does Hello Inside use?", a: "Hello Inside uses the Abbott Libre 3 sensor. It is paired with a beginner-friendly app, but in independent comparison Libre 3 accuracy lags the Dexcom G7. Users who care most about sensor accuracy should weigh that against its language and coaching strengths." },
+    { q: "Which CGM sensor does Hello Inside use?", a: "Hello Inside uses the Abbott Libre 3 sensor. It is paired with a beginner-friendly app. In an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate, so the choice comes down to language, coaching and price rather than the sensor." },
     { q: "Hello Inside vs Veri: which is better?", a: "Veri offers a deeper insight engine and broader third-party integration. Hello Inside wins on language: it has the strongest German-language CGM content in the category. German-speaking EU users will likely prefer Hello Inside; others will usually get more from Veri." },
   ],
   datePublished: '2026-05-21',

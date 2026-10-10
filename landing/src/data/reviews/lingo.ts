@@ -30,7 +30,7 @@ const lingo: ToolReviewInput = {
     'Insight engine simpler than Levels — just a per-meal spike score',
     'No human coach available at any tier',
     'Limited third-party integration compared with Levels',
-    'Libre 3 accuracy lags Dexcom G7 in independent comparison',
+    '60-minute sensor warm-up, twice Stelo’s 30 minutes',
   ],
   bestFor: 'Best for first-time CGM users who want the cheapest legitimate entry without subscription.',
   testStatus: 'evidence-based',
@@ -45,7 +45,7 @@ Lingo is the cheapest legitimate path into CGM for a US non-diabetic. Abbott’s
 
 ## What are the downsides of the Lingo?
 
-It is a beginner tool. The single-score insight layer becomes frustrating once you have learned to read your own curves — there is no AUC decomposition, no food-by-food ranking history, no coaching. The third-party integration list is short, and Libre 3 accuracy lags Dexcom G7 marginally in independent comparison. As an instrument for ongoing biohacker self-experimentation, Lingo is the entry point, not the destination.
+It is a beginner tool. The single-score insight layer becomes frustrating once you have learned to read your own curves — there is no AUC decomposition, no food-by-food ranking history, no coaching. The third-party integration list is short, and the 60-minute sensor warm-up is twice Stelo’s 30 minutes. As an instrument for ongoing biohacker self-experimentation, Lingo is the entry point, not the destination.
 
 ## Who should buy the Lingo?
 
@@ -69,7 +69,7 @@ The metabolic biology these programmes surface — and the protocols the data un
   faq: [
     { q: "Do you need a prescription for Lingo?", a: "No. Lingo is Abbott's over-the-counter CGM, sold without a prescription or subscription. It uses Libre 3 hardware with reliable, calibration-free 14-day wear, and you simply buy sensors as you need them. It is the cheapest legitimate consumer CGM access in the US." },
     { q: "How much does Lingo cost?", a: "Lingo costs $54 for a two-week plan (one sensor, no auto-renew), with multi-sensor and subscription plans that cost less per sensor. No subscription is required: you can buy single sensors as you need them. That makes it the lowest-cost entry into continuous glucose monitoring for a US non-diabetic." },
-    { q: "Lingo vs Levels: which is better?", a: "Lingo is cheaper and simpler: no subscription, and one Lingo Count score per meal. Levels offers far deeper analytics and the slightly more accurate Dexcom Stelo (G7 platform), as a membership from about $80 a year (app-only) to $1,329 a year. Neither includes a human coach. Choose Lingo if cost and simplicity matter more than insight depth." },
+    { q: "Lingo vs Levels: which is better?", a: "Lingo is cheaper and simpler: no subscription, and one Lingo Count score per meal. Levels offers far deeper analytics on Dexcom Stelo (G7 platform), as a membership from about $80 a year (app-only) to $1,329 a year. Neither includes a human coach. Choose Lingo if cost and simplicity matter more than insight depth." },
   ],
   datePublished: '2026-05-21',
   dateModified: '2026-10-10',

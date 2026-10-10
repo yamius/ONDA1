@@ -54,7 +54,7 @@ You want a light, discreet, subscription-free tracker centred on sleep and readi
 
 ## Also worth comparing
 
-If precision sleep and HRV matter most, the [Oura Ring 4](/reviews/oura-ring-4) is the accuracy reference (mandatory subscription). For the full field, see the [best HRV trackers](/reviews/hrv-trackers).`,
+If precision sleep and HRV matter most, the [Oura Ring 4](/reviews/oura-ring-4) is the best-supported ring (one independent overnight HRV check; mandatory subscription). For the full field, see the [best HRV trackers](/reviews/hrv-trackers).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

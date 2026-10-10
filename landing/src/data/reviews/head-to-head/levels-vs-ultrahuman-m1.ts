@@ -13,7 +13,7 @@ const levelsVsUltrahumanM1: HeadToHeadInput = {
   verdict:
     'Depends on what you want. Levels for the deepest glucose-only insight engine on the best CGM hardware. Ultrahuman M1 for glucose composed with HRV, sleep and recovery from an Ultrahuman ring.',
   bestForA:
-    'Choose Levels if CGM is the central instrument and you want the deepest meal-impact analysis on Dexcom Stelo (G7 platform) — the most accurate sensor in the consumer category.',
+    'Choose Levels if CGM is the central instrument and you want the deepest meal-impact analysis on Dexcom Stelo (G7 platform).',
   bestForB:
     'Choose Ultrahuman M1 if you already own (or plan to own) an Ultrahuman ring and want glucose data composed with HRV, sleep and recovery in one app.',
   axes: [
@@ -29,11 +29,11 @@ const levelsVsUltrahumanM1: HeadToHeadInput = {
   faq: [
     {
       q: 'Should I pick Levels or Ultrahuman M1?',
-      a: 'Levels if CGM is the deciding job and you want the deepest meal-impact analysis on the most accurate sensor platform (Dexcom Stelo, built on G7). Ultrahuman M1 if you already own (or plan to own) an Ultrahuman ring and want glucose composing with HRV and sleep in one app.',
+      a: 'Levels if CGM is the deciding job and you want the deepest meal-impact analysis on Dexcom Stelo (built on G7). Ultrahuman M1 if you already own (or plan to own) an Ultrahuman ring and want glucose composing with HRV and sleep in one app.',
     },
     {
       q: 'Is Dexcom Stelo/G7 (Levels) better than Libre 3 (Ultrahuman)?',
-      a: 'Marginally. Dexcom G7 sits at MARD ~8.2% versus Libre 3 at MARD ~9% in independent comparison. The gap is consistent but small — most non-diabetic biohacker use cases are well-served by either.',
+      a: 'Not on accuracy. The makers report different figures (about 8.2% MARD for G7, about 9% for Libre 3), but in an independent head-to-head study (Eichenlaub et al. 2025) the two were similarly accurate. Most non-diabetic biohacker use cases are well-served by either.',
     },
     {
       q: 'Can I use Ultrahuman M1 without an Ultrahuman ring?',

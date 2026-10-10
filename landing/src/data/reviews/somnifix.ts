@@ -15,7 +15,7 @@ const somnifix: ToolReviewInput = {
   scores: [
     { criterionId: 'adhesion-comfort', score: 7.5, note: 'Solid adhesion on clean skin. Less beard-friendly than Hostage Tape — adhesive engineered for skin contact, not stubble.' },
     { criterionId: 'breathing-mechanism', score: 7.5, note: 'Porous design with central breathing port — leaves part of the lips uncovered and allows partial mouth exhale. This has not been tested as a safety feature, so the design earns no extra credit: the same nasal-breathing mechanism as other mouth tapes. If sleep apnea is possible, see a doctor first.' },
-    { criterionId: 'evidence-grounding', score: 6.5, note: 'FDA registration is a listing and is scored as neutral. Multi-year track record and clinical-context citations, but no trials of the tape itself — on par with other mouth tapes without device trials.' },
+    { criterionId: 'evidence-grounding', score: 6.5, note: 'FDA registration is a listing and is scored as neutral. No trials of the tape itself, and mouth taping overall has only a few small studies with mixed results and safety warnings (see our nasal-breathing evidence page) — so mouth tapes score at most 6.5 here, below the 7.0 for products backed by a consistent independent evidence base.' },
     { criterionId: 'form-factor', score: 7.5, note: 'Single-piece strip with central porous section. Easy to apply. Less generous coverage than Hostage Tape full strip.' },
     { criterionId: 'material-safety', score: 8.5, note: 'Hypoallergenic medical-grade adhesive. Latex-free. Skin-reaction reports rare across multi-year user base.' },
     { criterionId: 'value', score: 7.5, note: '~$25 for 28 strips = ~$0.90/night. More expensive per night than Hostage Tape subscription; no subscription required.' },

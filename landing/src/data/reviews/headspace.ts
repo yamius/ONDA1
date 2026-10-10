@@ -73,7 +73,7 @@ The science of what meditation actually does at the nervous-system level.
     { q: "Headspace vs Insight Timer: which is better?", a: "Headspace is better for structured learning, with clear courses that guide beginners step by step. Insight Timer is better for breadth and value, with a far larger library and a genuinely usable free tier. Pick Headspace to learn the basics; pick Insight Timer if you want variety." },
   ],
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-10-10',
 }
 
 export default headspace

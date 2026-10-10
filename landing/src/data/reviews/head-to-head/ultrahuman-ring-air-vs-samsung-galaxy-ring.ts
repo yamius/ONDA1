@@ -54,7 +54,7 @@ You already carry a Samsung Galaxy phone and want a reliable, subscription-free 
 
 ## Also worth comparing
 
-For the accuracy leader (with a subscription), see the [Oura Ring 4](/reviews/oura-ring-4), or the full field in the [best HRV trackers](/reviews/hrv-trackers).`,
+For the best-supported ring line (with a subscription), see the [Oura Ring 4](/reviews/oura-ring-4), or the full field in the [best HRV trackers](/reviews/hrv-trackers).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

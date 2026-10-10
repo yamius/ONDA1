@@ -19,7 +19,7 @@ const healthyMindsProgram: ToolReviewInput = {
     { criterionId: 'app-experience', score: 7.5, note: 'Clean and calm, with no ads and no upsells interrupting practice.' },
     { criterionId: 'free-tier', score: 10.0, note: 'Completely free — no subscription, no ads, no locked content.' },
     { criterionId: 'value', score: 9.5, note: 'Free, sustained by donations — nothing else here matches it on cost.' },
-    { criterionId: 'evidence', score: 8.5, note: 'Outcomes measured across many peer-reviewed studies, but much of the research comes from the developer’s affiliated Center for Healthy Minds; studies run by the maker do not count as evidence in ONDA scores. Independent studies remain.' },
+    { criterionId: 'evidence', score: 7.5, note: 'Outcomes measured across many peer-reviewed studies, but most come from the developer\'s affiliated Center for Healthy Minds; research by an organisation affiliated with the app is not independent and does not count as evidence in ONDA scores. Few independent studies remain.' },
   ],
   pros: [
     'Completely free — no subscription, no ads',
@@ -73,7 +73,7 @@ The science of what meditation actually does at the nervous-system level.
     { q: "What are the downsides of the Healthy Minds Program?", a: "Its library is focused rather than sprawling, and it follows a fixed journey instead of an adaptive plan. Production is less polished than Calm, and there is no sleep-story-style relaxation content. For evidence-based practice at zero cost, those trade-offs are modest." },
   ],
   datePublished: '2026-05-15',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default healthyMindsProgram

@@ -15,7 +15,7 @@ const sleepio: ToolReviewInput = {
   scores: [
     { criterionId: 'tracking-accuracy', score: 6.0, note: 'A sleep diary rather than sensor tracking — the data that drives the CBT-I program.' },
     { criterionId: 'wind-down-content', score: 5.0, note: 'Some relaxation tools, but content is not the point — the therapy course is.' },
-    { criterionId: 'sleep-science', score: 9.5, note: 'A genuine CBT-I program — the first-line clinical treatment for insomnia — with published trial evidence.' },
+    { criterionId: 'sleep-science', score: 9.0, note: 'A genuine CBT-I program — the first-line clinical treatment for insomnia, backed by independent trials of CBT-I. Sleepio\'s own trials are led by a Big Health co-founder, and studies run by the maker do not count as evidence in ONDA scores.' },
     { criterionId: 'insights', score: 7.5, note: 'Progress tracked against the course; diary-driven, focused on the treatment.' },
     { criterionId: 'app-experience', score: 7.0, note: 'A structured, week-by-week course — it asks for commitment, not browsing.' },
     { criterionId: 'free-tier', score: 4.5, note: 'No real free tier — but in some regions it is available free through a health service.' },

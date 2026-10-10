@@ -15,7 +15,7 @@ const breatheToRelax: ToolReviewInput = {
   scores: [
     { criterionId: 'session-library', score: 4.5, note: 'Narrow library — focused on diaphragmatic and paced breathing for stress / PTSD context. Not a content platform.' },
     { criterionId: 'technique-coverage', score: 4.5, note: 'Diaphragmatic and paced breathing only. No Wim Hof, holotropic or broader technique coverage.' },
-    { criterionId: 'evidence-grounding', score: 8.5, note: 'Built by US National Center for Telehealth & Technology with published validation studies on PTSD and stress outcomes. Best evidence base of any free breathwork app.' },
+    { criterionId: 'evidence-grounding', score: 7.0, note: 'Built by the US National Center for Telehealth & Technology, which also ran its validation studies — research by the developer\'s own organisation does not count as evidence in ONDA scores. The techniques it teaches are well documented.' },
     { criterionId: 'app-experience', score: 5.0, note: 'Dated UI from original government-build era. Functional but lacks 2026-tier polish.' },
     { criterionId: 'biofeedback', score: 4.0, note: 'No HRV. Basic session tracking.' },
     { criterionId: 'value', score: 9.5, note: 'Completely free with no premium tier. Unbeatable value for the evidence base.' },

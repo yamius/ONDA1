@@ -6,9 +6,9 @@ const gen3VsOura5: HeadToHeadInput = {
   productBSlug: 'oura-ring-5',
   title: 'RingConn Gen 3 vs Oura Ring 5 (2026)',
   description:
-    'RingConn Gen 3 vs Oura Ring 5 — the feature-rich subscription-free ring vs the accuracy leader with a membership. The strongest no-subscription alternative to Oura, compared.',
+    'RingConn Gen 3 vs Oura Ring 5 — the feature-rich subscription-free ring vs the best-supported ring line with a membership. The strongest no-subscription alternative to Oura, compared.',
   intro:
-    'The RingConn Gen 3 has become the ring people cross-shop against Oura when they refuse a subscription. It brings a long battery, a haptic silent alarm and new vascular/sleep-apnea insights for a one-time $349. The Oura Ring 5 is the accuracy-and-app reference but charges a mandatory membership on top of the ring. It’s own-it-outright vs the best experience you keep paying for.',
+    'The RingConn Gen 3 has become the ring people cross-shop against Oura when they refuse a subscription. It brings a long battery, a haptic silent alarm and new vascular/sleep-apnea insights for a one-time $349. The Oura Ring 5 is the best-supported ring line and app reference but charges a mandatory membership on top of the ring. It’s own-it-outright vs the best experience you keep paying for.',
   jobDependentVerdict: true,
   verdict:
     'No subscription and more hardware features vs the best-supported ring line and the best app. The RingConn Gen 3 wins on cost model (one-time $349, no fee), battery and extras like haptic alerts; Oura has better-supported accuracy for its earlier generations overnight (there is no independent check of the current model), and the Ring 5 wins on sensors and app polish, for $399 plus ~$6/month. Pick by whether you refuse a subscription or want the reference ring.',
@@ -40,7 +40,7 @@ const gen3VsOura5: HeadToHeadInput = {
   ],
   content: `## The short version
 
-The strongest no-subscription alternative to Oura. The [RingConn Gen 3](/reviews/ringconn-gen-3) brings a long battery, haptic alerts and new health insights for a one-time $349; the [Oura Ring 5](/reviews/oura-ring-5) is the accuracy-and-app leader at $399 plus a membership.
+The strongest no-subscription alternative to Oura. The [RingConn Gen 3](/reviews/ringconn-gen-3) brings a long battery, haptic alerts and new health insights for a one-time $349; the [Oura Ring 5](/reviews/oura-ring-5) is the app leader from the best-supported ring line at $399 plus a membership.
 
 ## When is the RingConn Gen 3 the right pick?
 

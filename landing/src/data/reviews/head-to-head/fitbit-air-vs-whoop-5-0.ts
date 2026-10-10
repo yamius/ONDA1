@@ -28,7 +28,7 @@ const fitbitAirVsWhoop50: HeadToHeadInput = {
   faq: [
     {
       q: 'Is the Fitbit Air as accurate as Whoop for HRV?',
-      a: 'Unknown. Whoop has years of validation behind it; the Fitbit Air launched in May 2026 with no independent HRV-accuracy studies yet. Treat the Air as promising but unproven, not as a validated equal.',
+      a: 'Unknown. The earlier WHOOP 4.0 had one independent overnight HRV check, but the 5.0 itself has not been validated; the Fitbit Air launched in May 2026 with no independent HRV-accuracy studies yet. Treat the Air as promising but unproven, not as a validated equal.',
     },
     {
       q: 'Do both need a subscription?',

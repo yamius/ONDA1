@@ -69,6 +69,8 @@ export {
   sortByRank,
   rankPositions,
   scoreWinnerSlug,
+  scoreComparison,
+  PRACTICALLY_EQUAL_GAP,
   MAX_EDITORIAL_ADJUSTMENT,
 } from './scoring'
 export { TIE_BREAK_CRITERION } from './criteria'

@@ -30,7 +30,7 @@ const lunaRing: ToolReviewInput = {
   cons: [
     'Only ~4 days battery per single charge — behind class leaders',
     'Some app teething issues',
-    'Accuracy below Oura’s validated reference',
+    'No independent validation of its HRV or sleep tracking',
     'No open API',
   ],
   bestFor: 'Best for a cheap, subscription-free ring with solid sleep tracking and a long total battery via its case — a practical Oura alternative on a budget.',

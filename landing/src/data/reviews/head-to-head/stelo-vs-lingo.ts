@@ -8,11 +8,11 @@ const steloVsLingo: HeadToHeadInput = {
   description:
     'Stelo vs Lingo — side-by-side ONDA comparison of the two FDA-cleared OTC CGMs. Dexcom G7 versus Abbott Libre 3 hardware, no prescription required for either.',
   intro:
-    'Stelo and Lingo are the two FDA-cleared over-the-counter CGMs in the US — the first consumer glucose monitors you can buy without a prescription. Stelo runs on Dexcom G7; Lingo runs on Abbott Libre 3. Both are OTC, both target non-diabetic biohackers, and both are deliberately simpler than the coached programmes (Levels, Nutrisense). The choice comes down to sensor accuracy versus price.',
+    'Stelo and Lingo are the two FDA-cleared over-the-counter CGMs in the US — the first consumer glucose monitors you can buy without a prescription. Stelo runs on Dexcom G7; Lingo runs on Abbott Libre 3. Both are OTC, both target non-diabetic biohackers, and both are deliberately simpler than the coached programmes (Levels, Nutrisense). The choice comes down to warm-up time and wear length versus price flexibility.',
   verdict:
-    'Stelo wins on hardware accuracy at a small price premium. Lingo wins on cost flexibility — buy single 2-week sensors as needed without subscription.',
+    'Stelo wins on warm-up time and wear length at a small price premium. Lingo wins on cost flexibility — buy single 2-week sensors as needed without subscription.',
   bestForA:
-    'Choose Stelo by Dexcom if sensor accuracy matters more than the last $50/month — you get the same Dexcom G7 hardware as Levels and Nutrisense at a third of the cost.',
+    'Choose Stelo by Dexcom if a 30-minute warm-up and 15-day wear matter more than the last $50/month — you get the same Dexcom G7 hardware as Levels and Nutrisense at a third of the cost.',
   bestForB:
     'Choose Lingo by Abbott if cost is the deciding factor or you want to wear a CGM occasionally rather than continuously — single 2-week sensors at $54 each.',
   axes: [
@@ -27,7 +27,7 @@ const steloVsLingo: HeadToHeadInput = {
   faq: [
     {
       q: 'Is Stelo more accurate than Lingo?',
-      a: 'Yes, marginally. Stelo runs Dexcom G7 (MARD ~8.2%); Lingo runs Abbott Libre 3 (MARD ~9%). In independent comparison against reference plasma glucose, Dexcom edges Abbott consistently at rest. For most non-diabetic biohacker use cases both are accurate enough.',
+      a: 'Not meaningfully. Stelo runs Dexcom G7 and Lingo runs Abbott Libre 3. The makers report different figures (about 8.2% MARD for G7, about 9% for Libre 3), but maker figures do not count as evidence in ONDA scores; in an independent head-to-head study (Eichenlaub et al. 2025) the two were similarly accurate. For most non-diabetic biohacker use cases both are accurate enough.',
     },
     {
       q: 'Which is cheaper, Stelo or Lingo?',
@@ -44,11 +44,11 @@ const steloVsLingo: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Stelo wins on accuracy at a small price premium; Lingo wins on cost flexibility for occasional wear. Both are OTC — no prescription, no coaching subscription — which sets them apart from Levels, Nutrisense, Signos and the rest of the premium-tier CGM market.
+Stelo wins on warm-up time and wear length at a small price premium; Lingo wins on cost flexibility for occasional wear. Both are OTC — no prescription, no coaching subscription — which sets them apart from Levels, Nutrisense, Signos and the rest of the premium-tier CGM market.
 
 ## When is Stelo the right pick?
 
-If you want the most accurate consumer CGM hardware available — the same Dexcom G7 sensor underneath Levels and Nutrisense — at roughly a third of those programmes’ cost, Stelo is the right shape. The 30-minute warm-up versus Lingo’s 60-minute matters more than it sounds when you swap sensors every two weeks.
+If you want the Dexcom G7 sensor — the same one underneath Levels and Nutrisense — at roughly a third of those programmes’ cost, Stelo is the right shape. The 30-minute warm-up versus Lingo’s 60-minute matters more than it sounds when you swap sensors every two weeks.
 
 ## When is Lingo the right pick?
 

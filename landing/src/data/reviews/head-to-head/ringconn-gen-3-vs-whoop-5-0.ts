@@ -52,7 +52,7 @@ You train on a daily recovery-and-strain score, want the cleanest continuous ove
 
 ## Also worth comparing
 
-Against the accuracy leader, see [RingConn Gen 3 vs Oura Ring 5](/reviews/vs/ringconn-gen-3-vs-oura-ring-5). Full field: [best HRV trackers](/reviews/hrv-trackers).`,
+Against the best-supported ring line, see [RingConn Gen 3 vs Oura Ring 5](/reviews/vs/ringconn-gen-3-vs-oura-ring-5). Full field: [best HRV trackers](/reviews/hrv-trackers).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-18',
   datePublished: '2026-09-18',

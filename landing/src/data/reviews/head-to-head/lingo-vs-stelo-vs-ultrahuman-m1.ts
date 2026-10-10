@@ -9,14 +9,14 @@ const threeOtcCgm: HeadToHeadInput = {
   description:
     'Lingo vs Stelo vs Ultrahuman M1 — three-way ONDA comparison of three non-coaching CGM programmes. Cheapest entry, Dexcom OTC and ring-ecosystem play in one decision.',
   intro:
-    'Lingo, Stelo and Ultrahuman M1 are the three CGM programmes users compare when coaching subscriptions (Levels, Nutrisense, Signos) are explicitly not wanted. Three different sensors, three different positioning: Lingo (Abbott Libre 3) is the cheapest legitimate OTC entry; Stelo (Dexcom G7) is the most accurate OTC option; Ultrahuman M1 (Libre 3; Abbott Lingo in the US via M2 Live) is the ecosystem play for ring users.',
+    'Lingo, Stelo and Ultrahuman M1 are the three CGM programmes users compare when coaching subscriptions (Levels, Nutrisense, Signos) are explicitly not wanted. Three different sensors, three different positioning: Lingo (Abbott Libre 3) is the cheapest legitimate OTC entry; Stelo (Dexcom G7) is Dexcom’s own OTC option; Ultrahuman M1 (Libre 3; Abbott Lingo in the US via M2 Live) is the ecosystem play for ring users.',
   jobDependentVerdict: true,
   verdict:
-    'Three different jobs. Lingo for the cheapest no-subscription entry. Stelo for the most accurate OTC sensor. Ultrahuman M1 for users in the Ultrahuman Ring ecosystem.',
+    'Three different jobs. Lingo for the cheapest no-subscription entry. Stelo for the Dexcom G7 sensor without a prescription. Ultrahuman M1 for users in the Ultrahuman Ring ecosystem.',
   bestForA:
     'Choose Lingo by Abbott if you want the cheapest legitimate consumer CGM access — $54 single 2-week sensors, no subscription, simplest insight model.',
   bestForB:
-    'Choose Stelo by Dexcom if you want the most accurate OTC consumer CGM — same Dexcom G7 hardware as Levels and Nutrisense at $89–$99/month without coaching.',
+    'Choose Stelo by Dexcom if you want the Dexcom G7 sensor without a prescription — same hardware as Levels and Nutrisense at $89–$99/month without coaching.',
   bestForC:
     'Choose Ultrahuman M1 if you already own or plan to own an Ultrahuman ring — native unified ecosystem (glucose + HRV + sleep) in one app.',
   axes: [
@@ -32,11 +32,11 @@ const threeOtcCgm: HeadToHeadInput = {
   faq: [
     {
       q: 'Which is the best OTC CGM — Lingo, Stelo or Ultrahuman M1?',
-      a: 'Stelo for the most accurate hardware (Dexcom G7). Lingo for the cheapest legitimate entry ($54 single sensors). Ultrahuman M1 for ring-ecosystem users wanting unified glucose + HRV + sleep in one app.',
+      a: 'Stelo for Dexcom G7 hardware with a 30-minute warm-up. Lingo for the cheapest legitimate entry ($54 single sensors). Ultrahuman M1 for ring-ecosystem users wanting unified glucose + HRV + sleep in one app.',
     },
     {
       q: 'Are these the same as Levels and Nutrisense?',
-      a: 'Stelo runs the same Dexcom G7 sensor as Levels and Nutrisense — same hardware, simpler app, no coaching, lower price. Lingo and Ultrahuman use Abbott Libre 3, which is a different sensor (marginally less accurate). The non-coaching tier delivers the hardware without the subscription wrapper.',
+      a: 'Stelo runs the same Dexcom G7 sensor as Levels and Nutrisense — same hardware, simpler app, no coaching, lower price. Lingo and Ultrahuman use Abbott Libre 3, which is a different sensor (similarly accurate in an independent head-to-head study). The non-coaching tier delivers the hardware without the subscription wrapper.',
     },
     {
       q: 'Which has the best long-term cost?',
@@ -53,7 +53,7 @@ const threeOtcCgm: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Three non-coaching CGM programmes for users explicitly avoiding the Levels/Nutrisense/Signos subscription model. Pick on sensor accuracy (Stelo), entry cost (Lingo) or ecosystem fit (Ultrahuman M1).
+Three non-coaching CGM programmes for users explicitly avoiding the Levels/Nutrisense/Signos subscription model. Pick on sensor platform (Stelo), entry cost (Lingo) or ecosystem fit (Ultrahuman M1).
 
 ## When is Lingo the right pick?
 
@@ -61,7 +61,7 @@ If you have never worn a CGM and want the cheapest legitimate way to try one, Li
 
 ## When is Stelo the right pick?
 
-If you want the most accurate OTC sensor — same Dexcom G7 hardware as Levels and Nutrisense at a third of those programmes’ cost — Stelo is the right shape. The accuracy advantage over Libre 3 is real even if small.
+If you want the Dexcom G7 sensor — same hardware as Levels and Nutrisense at a third of those programmes’ cost — Stelo is the right shape. In an independent head-to-head study the G7 and Libre 3 were similarly accurate, so choose it for the platform and the 30-minute warm-up, not for accuracy.
 
 ## When is Ultrahuman M1 the right pick?
 

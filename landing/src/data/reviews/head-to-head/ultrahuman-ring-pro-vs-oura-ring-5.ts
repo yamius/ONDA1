@@ -6,7 +6,7 @@ const ringProVsOura5: HeadToHeadInput = {
   productBSlug: 'oura-ring-5',
   title: 'Ultrahuman Ring Pro vs Oura Ring 5 (2026)',
   description:
-    'Ultrahuman Ring Pro vs Oura Ring 5 — the subscription-free flagship with a ~15-day battery vs the accuracy leader with a mandatory membership. ONDA on which smart ring to buy.',
+    'Ultrahuman Ring Pro vs Oura Ring 5 — the subscription-free flagship with a ~15-day battery vs the best-supported ring line with a mandatory membership. ONDA on which smart ring to buy.',
   intro:
     'This is the headline smart-ring decision of 2026: Ultrahuman’s redesigned, US-available Ring Pro against Oura’s flagship Ring 5. The Ring Pro is subscription-free with a category-leading ~15-day battery; the Ring 5 comes from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) with the best app, but charges a mandatory membership. It comes down to owning it outright vs paying for the reference experience.',
   jobDependentVerdict: true,

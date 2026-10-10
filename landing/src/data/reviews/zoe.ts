@@ -13,7 +13,7 @@ const zoe: ToolReviewInput = {
   summary:
     'Zoe is the UK-built personalised-nutrition programme run by epidemiologist Tim Spector. It combines a two-week Abbott Libre CGM stretch with an at-home gut microbiome test and a blood biomarker panel, then turns the three signals into food rankings personalised to your physiology. After the 2-week measurement phase you keep the app and rankings on a £60/month subscription. Strong science, strong content, less suited to ongoing CGM use.',
   scores: [
-    { criterionId: 'sensor-accuracy', score: 7.5, note: 'Abbott Libre (2-week wear), MARD ~9–11%. Calibration-free; accuracy in the second week is the weakest point.' },
+    { criterionId: 'sensor-accuracy', score: 7.5, note: 'Abbott Libre (2-week wear), maker-reported MARD ~9–11% (maker figures do not count as evidence in ONDA scores). Calibration-free; accuracy in the second week is the weakest point.' },
     { criterionId: 'insights', score: 8.5, note: 'The only programme here that fuses CGM with gut microbiome and blood biomarkers into a single food-ranking score — unique multi-biomarker view backed by the published PREDICT studies.' },
     { criterionId: 'coaching', score: 8.0, note: 'No 1-on-1 coach by default, but the content library and personalised food rankings stand in for ongoing guidance. Spector and the team are credible scientific authorities.' },
     { criterionId: 'app-integration', score: 8.5, note: 'Polished app with personalised food rankings, recipes and meal logging. Apple Health integration available.' },
@@ -29,7 +29,7 @@ const zoe: ToolReviewInput = {
   cons: [
     'CGM phase is fixed at two weeks — not an ongoing CGM tool',
     'No raw glucose data export',
-    'Libre accuracy lags Dexcom G7 in independent comparison',
+    'Older 2-week Libre variant — accuracy is weakest in the second week',
     'UK-focused availability, slower US expansion',
   ],
   bestFor: 'Best for users who want personalised nutrition grounded in real published science, not just glucose curves.',
@@ -45,7 +45,7 @@ Zoe is the only programme in this list that does not pretend glucose is the whol
 
 ## What are the downsides of Zoe?
 
-The CGM is a snapshot, not an instrument. Two weeks of Abbott Libre wear feed the initial ranking model and then end; if you want ongoing CGM data, Zoe is the wrong shape. There is no raw data export, the Libre sensor lags Dexcom G7 on accuracy, and the annual subscription commitment after the £300 setup is steep for a programme that has stopped giving you new glucose data after week two.
+The CGM is a snapshot, not an instrument. Two weeks of Abbott Libre wear feed the initial ranking model and then end; if you want ongoing CGM data, Zoe is the wrong shape. There is no raw data export, the older Libre variant is least accurate in its second week, and the annual subscription commitment after the £300 setup is steep for a programme that has stopped giving you new glucose data after week two.
 
 ## Who should buy Zoe?
 
@@ -70,7 +70,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { q: "Is Zoe worth it?", a: "Zoe is worth it if you want personalised nutrition grounded in published science, not just glucose curves. It is the only programme fusing CGM, gut microbiome and blood biomarkers, led by Tim Spector with PREDICT-backed food rankings. Its CGM phase is only two weeks." },
     { q: "How much does Zoe cost?", a: "Zoe costs £300 for setup plus £60 per month for its multi-biomarker programme. The CGM portion lasts two weeks only. The review rates its long-term cost as lower than Levels or Nutrisense." },
     { q: "Zoe vs Levels: which is better?", a: "Zoe is better for science-backed personalised nutrition combining CGM, microbiome and blood biomarkers, at lower long-term cost. Levels suits ongoing glucose tracking; Zoe's CGM lasts only two weeks, has no raw data export and uses Libre rather than Levels' Dexcom Stelo (G7 platform)." },
-    { q: "What are the downsides of Zoe?", a: "Zoe's CGM phase is fixed at two weeks, so it is not an ongoing CGM tool. There is no raw glucose data export, Libre accuracy lags Dexcom G7, and availability is UK-focused with slower US expansion." },
+    { q: "What are the downsides of Zoe?", a: "Zoe's CGM phase is fixed at two weeks, so it is not an ongoing CGM tool. There is no raw glucose data export, the older Libre variant is least accurate in its second week, and availability is UK-focused with slower US expansion." },
   ],
   datePublished: '2026-05-21',
   dateModified: '2026-10-10',

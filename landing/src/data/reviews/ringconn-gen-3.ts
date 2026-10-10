@@ -28,7 +28,7 @@ const ringconnGen3: ToolReviewInput = {
     'New vascular / nighttime blood-pressure trends and sleep-apnea insights',
   ],
   cons: [
-    'Accuracy still a step below Oura’s validated reference',
+    'No independent validation of its HRV or sleep tracking yet',
     'App less polished than Oura’s',
     'No open API',
     'New health-insight features are trend-level, not diagnostic',
@@ -46,7 +46,7 @@ The RingConn Gen 3 is the most complete subscription-free ring RingConn has ship
 
 ## What are the downsides of RingConn Gen 3?
 
-Accuracy and polish. RingConn’s [HRV](/glossary/heart-rate-variability) and sleep tracking are good and improved, but Oura remains the validated reference, and the RingConn app is less explanatory. The new vascular and blood-pressure features are trend-level insights, not diagnostic tools — useful for spotting patterns, not for medical decisions.
+Accuracy and polish. RingConn’s [HRV](/glossary/heart-rate-variability) and sleep tracking have not been independently validated (only a preprint on an earlier generation), and the RingConn app is less explanatory. The new vascular and blood-pressure features are trend-level insights, not diagnostic tools — useful for spotting patterns, not for medical decisions.
 
 ## Who should buy RingConn Gen 3?
 
