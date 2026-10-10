@@ -200,12 +200,12 @@
       "verdict": "Weiterhin ein hervorragender Tracker für HRV und Schlaf über Nacht — jetzt eine Stufe unter dem schlankeren Oura Ring 5 mit überarbeiteten Sensoren, aber mit derselben neuen Software und reduziert oft das bessere Angebot. Das Pflicht-Abo bleibt.",
       "summary": "Der Oura Ring 4 war das Maß der Dinge für Herzratenvariabilität und Schlaf über Nacht, und er ist weiterhin nah an der Spitze — inzwischen abgelöst vom Oura Ring 5, der schlanker ist und neu entwickelte Sensoren hat. Entscheidend: Die neuen Softwarefunktionen kommen auch auf den Ring 4. Er behält also die kleine 24/7-Bauform, gut validierte Schlafphasen und nächtliche HRV nah am EKG — für $50 weniger. Der Haken bleibt: eine laufende Mitgliedschaft, ohne die die App nur Basisdaten zeigt.",
       "description": "Oura Ring 4 Test 2026: weiter top für HRV und Schlaf über Nacht, ab $349 — $50 unter dem Ring 5 —, aber volle Daten nur mit Abo für $5.99/Monat.",
-      "bestFor": "Ideal für genaue HRV- und Schlafdaten über Nacht zum niedrigsten Oura-Preis.",
+      "bestFor": "Ideal für nächtliche HRV mit einer unabhängigen EKG-Prüfung (13 Personen) und Schlafdaten zum niedrigsten Oura-Preis.",
       "testNote": "Evidenzbasierte Bewertung — erstellt anhand von Herstellerangaben, unabhängigen Tests aus 2026 und veröffentlichter Validierungsliteratur. Nicht von ONDA selbst praktisch getestet.",
       "productType": "Smart Ring",
       "pros": [
         "In einer Nachtstudie (13 Personen) gehörte der Oura Ring 4 zu den Geräten, die dem EKG am nächsten kamen",
-        "Starke, veröffentlichte Validierung der Schlafphasen gegen Polysomnographie",
+        "Die Schlafphasenerkennung einer früheren Generation (Gen 3) wurde in von Oura finanzierten Studien mit Polysomnographie verglichen; keine unabhängige Validierung der Schlafphasenerkennung des Ring 4",
         "Kleine, bequeme Bauform für 24/7",
         "Bekommt dieselbe neue Software wie der Ring 5, für $50 weniger"
       ],
@@ -1274,7 +1274,7 @@
       "productType": "Kostenlose, vom US-Verteidigungsministerium entwickelte App für Zwerchfellatmung gegen Stress und PTBS"
     },
     "polar-h10": {
-      "verdict": "Das genaueste HRV-Gerät, das du kaufen kannst (bei jungen gesunden Erwachsenen in Ruhe) — ein Referenzinstrument, kein Wearable für den ganzen Tag.",
+      "verdict": "Ein EKG-Brustgurt, der bei jungen gesunden Erwachsenen in Ruhe fast perfekt mit dem Labor-EKG übereinstimmte — ein Referenzinstrument, kein Wearable für den ganzen Tag.",
       "productType": "EKG-Brustgurt"
     },
     "calm": {

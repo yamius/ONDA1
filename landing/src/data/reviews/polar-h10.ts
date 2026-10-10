@@ -9,7 +9,7 @@ const polarH10: ToolReviewInput = {
   description:
     'ONDA review of the Polar H10 — the ECG chest strap that sets the HRV accuracy benchmark. Scored on accuracy, data access, wearability and value.',
   verdict:
-    'The most accurate HRV device you can buy (validated in young healthy adults, at rest) — a reference instrument, not an all-day wearable.',
+    'A chest-strap ECG that matched lab ECG almost perfectly in young healthy adults at rest — a reference instrument, not an all-day wearable.',
   summary:
     'The Polar H10 is the chest strap that the rest of this category is measured against. Its electrical ECG sensor delivers HRV accuracy (in young healthy adults, at rest) that no optical wearable matches, and it streams raw data to any app. The catch is by design — it is a deliberate measurement tool, not something you wear around the clock.',
   scores: [
@@ -22,7 +22,7 @@ const polarH10: ToolReviewInput = {
     { criterionId: 'value', score: 9.0, note: 'Around 90 USD, no subscription, and reliable for years — the cheapest device in this comparison.' },
   ],
   pros: [
-    'ECG-grade accuracy — the reference standard for HRV',
+    'ECG electrodes, not optical — close to lab ECG at rest in young healthy adults',
     'Fully open: raw RR data over Bluetooth and ANT+, any app',
     'Cheapest device here, with no subscription',
     'Reliable for years of use',

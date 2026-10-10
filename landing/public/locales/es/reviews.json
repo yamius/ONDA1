@@ -462,12 +462,12 @@
       "verdict": "Sigue siendo un excelente monitor nocturno de HRV y sueño — ahora un escalón por debajo del Oura Ring 5, más delgado y con sensores mejorados, pero con el mismo software nuevo y a menudo con mejor relación calidad-precio cuando está rebajado. La suscripción obligatoria se mantiene.",
       "summary": "El Oura Ring 4 era el dispositivo a batir en variabilidad de la frecuencia cardíaca nocturna y sueño, y sigue cerca de lo más alto — ahora con el Oura Ring 5 como sucesor, más delgado y con sensores rediseñados. Lo importante: las nuevas funciones de software también llegan al Ring 4, que conserva un formato pequeño para llevar 24/7, una estimación de fases del sueño bien validada y una HRV nocturna cercana al ECG por $50 menos. La pega no cambia: una membresía recurrente sin la cual la app solo muestra datos básicos.",
       "description": "Oura Ring 4, análisis 2026: sigue siendo de los mejores para HRV nocturna y sueño, desde $349 ($50 menos que el Ring 5), pero exige membresía de $5.99/mes.",
-      "bestFor": "Ideal para datos nocturnos precisos de HRV y sueño al precio más bajo de Oura.",
+      "bestFor": "Ideal para la HRV nocturna con una comprobación independiente frente a ECG (13 personas) y datos de sueño al precio más bajo de Oura.",
       "testNote": "Evaluación basada en evidencia — puntuada a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
       "productType": "Anillo inteligente",
       "pros": [
         "En un estudio nocturno (13 personas), el Oura Ring 4 estuvo entre los más cercanos al ECG",
-        "Validación publicada y sólida de las fases del sueño frente a polisomnografía",
+        "Las fases del sueño de una generación anterior (Gen 3) se compararon con polisomnografía en estudios financiados por Oura; no hay validación independiente de las fases del sueño del Ring 4",
         "Formato pequeño y cómodo para llevar 24/7",
         "Recibe el mismo software nuevo que el Ring 5, por $50 menos"
       ],
@@ -575,13 +575,13 @@
       "productType": "Smartwatch"
     },
     "polar-h10": {
-      "verdict": "El dispositivo de HRV más preciso que puedes comprar (en adultos jóvenes sanos, en reposo) — un instrumento de referencia, no un wearable de uso diario.",
+      "verdict": "Una banda pectoral de ECG que coincidió casi a la perfección con el ECG de laboratorio en adultos jóvenes sanos en reposo — un instrumento de referencia, no un wearable de uso diario.",
       "summary": "El Polar H10 es la banda pectoral con la que se mide el resto de esta categoría. Su sensor de ECG eléctrico ofrece una precisión de HRV (en adultos jóvenes sanos, en reposo) que ningún wearable óptico iguala, y transmite datos en bruto a cualquier app. La pega es por diseño — es una herramienta de medición deliberada, no algo que lleves a todas horas.",
       "description": "Reseña de ONDA del Polar H10 — la banda pectoral de ECG que marca la referencia de precisión de HRV. Puntuado por precisión, acceso a los datos, comodidad y precio.",
       "bestFor": "Lo mejor para una precisión de HRV de referencia — un instrumento de medición, no un wearable de uso diario.",
       "testNote": "Evaluación basada en evidencia — puntuado a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
       "pros": [
-        "Precisión de nivel ECG — el estándar de referencia para el HRV",
+        "Electrodos de ECG, no sensor óptico — cerca del ECG de laboratorio en reposo en adultos jóvenes sanos",
         "Totalmente abierto: datos RR en bruto por Bluetooth y ANT+, cualquier app",
         "El dispositivo más barato de aquí, sin suscripción",
         "Fiable durante años de uso"

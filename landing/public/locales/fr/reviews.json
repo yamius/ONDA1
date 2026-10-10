@@ -200,12 +200,12 @@
       "verdict": "Toujours un excellent suivi nocturne de la HRV et du sommeil — désormais un cran en dessous de l’Oura Ring 5, plus fine et dotée de capteurs améliorés, mais avec le même nouveau logiciel et souvent un meilleur rapport qualité-prix en promotion. L’abonnement obligatoire demeure.",
       "summary": "L’Oura Ring 4 était l’appareil de référence pour la variabilité de la fréquence cardiaque nocturne et le sommeil, et elle reste près du sommet — désormais remplacée par l’Oura Ring 5, plus fine et aux capteurs repensés. Point essentiel : les nouvelles fonctions logicielles arrivent aussi sur la Ring 4, qui conserve un petit format portable 24 h/24, une détection des phases de sommeil bien validée et une HRV nocturne proche de l’ECG pour 50 $ de moins. Le bémol est inchangé : un abonnement récurrent, sans lequel l’appli n’affiche que des données de base.",
       "description": "Avis Oura Ring 4 (2026) : toujours top pour la HRV nocturne et le sommeil, dès 349 $ (50 $ de moins que la Ring 5) — mais abonnement de 5,99 $/mois.",
-      "bestFor": "Idéale pour des données nocturnes précises de HRV et de sommeil au prix Oura le plus bas.",
+      "bestFor": "Idéale pour la HRV nocturne avec une vérification indépendante par ECG (13 personnes) et des données de sommeil au prix Oura le plus bas.",
       "testNote": "Évaluation fondée sur les preuves — notée à partir des caractéristiques du fabricant, de tests indépendants de 2026 et de la littérature de validation publiée. Non testée en conditions réelles par ONDA.",
       "productType": "Bague connectée",
       "pros": [
         "Dans une étude nocturne (13 personnes), l’Oura Ring 4 figurait parmi les plus proches de l’ECG",
-        "Validation publiée solide des phases de sommeil face à la polysomnographie",
+        "Les phases de sommeil d’une génération précédente (Gen 3) ont été comparées à la polysomnographie dans des études financées par Oura ; aucune validation indépendante des phases de sommeil de la Ring 4",
         "Format petit et confortable à porter 24 h/24",
         "Reçoit le même nouveau logiciel que la Ring 5, pour 50 $ de moins"
       ],
@@ -1274,7 +1274,7 @@
       "productType": "Appli gratuite de respiration diaphragmatique conçue par le DoD contre le stress et le TSPT"
     },
     "polar-h10": {
-      "verdict": "L’appareil de HRV le plus précis que l’on puisse acheter (chez de jeunes adultes en bonne santé, au repos) : un instrument de référence, pas un wearable à porter toute la journée.",
+      "verdict": "Une ceinture thoracique ECG dont les mesures ont concordé presque parfaitement avec l’ECG de laboratoire chez de jeunes adultes en bonne santé au repos : un instrument de référence, pas un wearable à porter toute la journée.",
       "productType": "Ceinture thoracique ECG"
     },
     "calm": {

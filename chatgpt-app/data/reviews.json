@@ -52,10 +52,10 @@
         }
       ],
       "verdict": "Still an excellent overnight HRV and sleep tracker — now one step below the slimmer, upgraded-sensor Oura Ring 5, but sharing the same new software and often the better value discounted. Mandatory subscription remains.",
-      "bestFor": "Best for accurate overnight HRV and sleep data at the lowest Oura price.",
+      "bestFor": "Best for overnight HRV with one independent ECG check (13 people) and sleep data at the lowest Oura price.",
       "pros": [
         "In one overnight study (13 people), Oura Ring 4 was among the closest matches to ECG",
-        "Strong, published sleep-stage validation against polysomnography",
+        "Sleep staging of an earlier generation (Gen 3) was compared with polysomnography in Oura-funded studies; no independent validation of Ring 4 sleep staging",
         "Small, comfortable 24/7 form factor",
         "Gets the same new software as the Ring 5, for $50 less"
       ],
@@ -189,10 +189,10 @@
           "note": "Around 90 USD, no subscription, and reliable for years — the cheapest device in this comparison."
         }
       ],
-      "verdict": "The most accurate HRV device you can buy (validated in young healthy adults, at rest) — a reference instrument, not an all-day wearable.",
+      "verdict": "A chest-strap ECG that matched lab ECG almost perfectly in young healthy adults at rest — a reference instrument, not an all-day wearable.",
       "bestFor": "Best for ground-truth HRV accuracy — a measurement instrument, not an all-day wearable.",
       "pros": [
-        "ECG-grade accuracy — the reference standard for HRV",
+        "ECG electrodes, not optical — close to lab ECG at rest in young healthy adults",
         "Fully open: raw RR data over Bluetooth and ANT+, any app",
         "Cheapest device here, with no subscription",
         "Reliable for years of use"
