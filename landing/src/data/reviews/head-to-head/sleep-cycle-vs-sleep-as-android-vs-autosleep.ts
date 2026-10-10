@@ -39,8 +39,8 @@ const sleepCycleVsSleepAsAndroidVsAutoSleep: HeadToHeadInput = {
       a: 'No — AutoSleep is designed around the Apple Watch as the sensor. Without it, the iPhone-only version is limited. For iPhone-only users without an Apple Watch, Sleep Cycle is the right shape.',
     },
     {
-      q: 'Which is most accurate?',
-      a: 'AutoSleep with an Apple Watch — wrist-worn sensors give richer sleep-stage estimates than phone-only tracking. Sleep Cycle and Sleep as Android are competent for trends but bounded by phone microphone/accelerometer limits.',
+      q: 'Which gives the richest sleep data?',
+      a: 'AutoSleep with an Apple Watch — wrist-worn sensors add heart-rate and motion data that phone-only tracking lacks, though none of the three has independently validated sleep staging. Sleep Cycle and Sleep as Android are competent for trends but bounded by phone microphone/accelerometer limits.',
     },
     {
       q: 'Can I have all three on my phone?',

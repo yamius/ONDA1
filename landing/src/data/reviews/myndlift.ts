@@ -42,7 +42,7 @@ const myndlift: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Myndlift is the clinical reference for what neurofeedback can be when an actual clinician designs the protocol and adjusts it week by week. The patient wears a Muse 2 headband (or the multi-site channel extender for richer EEG), runs sessions at home, and the data flows back to the licensed supervising provider — who tunes the protocol and tracks symptom scales (ASRS for ADHD, GAD-7 for anxiety). Myndlift states that its programmes improve those symptoms; independent trials of this specific platform are not yet published, and a meta-analysis of neurofeedback trials for ADHD found benefits on symptom ratings by unblinded assessors, usually parents, but not on probably-blinded ratings (Cortese 2016). A 2025 meta-analysis again found no significant improvement on probably-blinded ratings (Westwood 2025), and a double-blind trial in children found no advantage over sham feedback (Neurofeedback Collaborative Group 2021); in insomnia, real and sham feedback helped equally (Schabus 2017). See [EEG neurofeedback: what the evidence shows](/science/evidence/eeg-neurofeedback). It is the only platform in this category whose pedigree rests on supervised clinical use rather than consumer self-direction.
+Myndlift shows what neurofeedback can be when an actual clinician designs the protocol and adjusts it week by week. The patient wears a Muse 2 headband (or the multi-site channel extender for richer EEG), runs sessions at home, and the data flows back to the licensed supervising provider — who tunes the protocol and tracks symptom scales (ASRS for ADHD, GAD-7 for anxiety). Myndlift states that its programmes improve those symptoms; independent trials of this specific platform are not yet published, and a meta-analysis of neurofeedback trials for ADHD found benefits on symptom ratings by unblinded assessors, usually parents, but not on probably-blinded ratings (Cortese 2016). A 2025 meta-analysis again found no significant improvement on probably-blinded ratings (Westwood 2025), and a double-blind trial in children found no advantage over sham feedback (Neurofeedback Collaborative Group 2021); in insomnia, real and sham feedback helped equally (Schabus 2017). See [EEG neurofeedback: what the evidence shows](/science/evidence/eeg-neurofeedback). It is the only platform in this category whose pedigree rests on supervised clinical use rather than consumer self-direction.
 
 ## What are the downsides of Myndlift?
 
@@ -50,7 +50,7 @@ You cannot buy it directly. Access is gated by a licensed mental-health provider
 
 ## Who should buy Myndlift?
 
-Choose Myndlift if you have a diagnosed condition (ADHD, anxiety, post-traumatic stress, sleep disorder) and a licensed mental-health provider willing to prescribe and supervise, and treat it as an addition to established treatment, not a replacement for it. For self-directed brain training, Muse S Athena or Neurosity Crown are the right consumer shapes; Myndlift is the clinical reference point in the same category.
+Choose Myndlift if you have a diagnosed condition (ADHD, anxiety, post-traumatic stress, sleep disorder) and a licensed mental-health provider willing to prescribe and supervise, and treat it as an addition to established treatment, not a replacement for it. For self-directed brain training, Muse S Athena or Neurosity Crown are the right consumer shapes; Myndlift is the clinician-supervised option in the same category.
 
 ---
 

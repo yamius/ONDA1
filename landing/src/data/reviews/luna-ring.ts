@@ -13,7 +13,7 @@ const lunaRing: ToolReviewInput = {
   summary:
     'The Noise Luna Ring Gen 2 is a budget, subscription-free smart ring aimed squarely at people who want core Oura-style tracking for less. At around $300 with no membership, it covers heart rate, HRV, SpO2, skin temperature, sleep and automatic activity detection, with a "Luna AI" assistant. Sleep staging is genuinely accurate and the pocket charging case stretches total battery toward a headline ~30 days — but the ring itself lasts only about four days per charge, a step behind class leaders, and the app has some teething issues. It’s a reliable, practical alternative rather than a groundbreaking one.',
   scores: [
-    { criterionId: 'hrv-accuracy', score: 6.5, note: 'HRV tracking for recovery and stress — reasonable for the price, not validated to Oura’s level.' },
+    { criterionId: 'hrv-accuracy', score: 6.5, note: 'HRV tracking for recovery and stress — reasonable for the price; no independent validation against ECG was found (as of October 2026).' },
     { criterionId: 'sensor', score: 6.5, note: 'Optical heart rate, SpO2, PPG and skin-temperature sensors. A competent budget array.' },
     { criterionId: 'sleep-accuracy', score: 7.0, note: 'Competent sleep tracking (stage estimates, not a sleep study), and automatic activity detection (walks, jogs) worked reliably; no independent validation was found. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'data-access', score: 6.0, note: 'Data lives in the Noise/Luna app with basic export; no open API.' },
@@ -46,7 +46,7 @@ The Noise Luna Ring Gen 2’s pitch is value: core smart-ring tracking, no subsc
 
 ## What are the downsides of Noise Luna Ring Gen 2?
 
-The single-charge battery is only about four days, a step behind class leaders that run a week or more, so you lean on the case. The app has some teething issues, and accuracy — while fine for trends — is below Oura’s validated reference. This is a practical alternative, not a groundbreaking one.
+The single-charge battery is only about four days, a step behind class leaders that run a week or more, so you lean on the case. The app has some teething issues, and accuracy — fine for trends — has no independent validation against ECG (as of October 2026). This is a practical alternative, not a groundbreaking one.
 
 ## Who should buy Noise Luna Ring Gen 2?
 

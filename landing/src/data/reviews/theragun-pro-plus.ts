@@ -9,11 +9,11 @@ const theragunProPlus: ToolReviewInput = {
   description:
     'ONDA review of the Theragun PRO Plus — Therabody flagship massage gun with 60 lbs stall force, 16 mm amplitude, OLED display and full Therabody app integration. Scored on stall force, build, battery and value.',
   verdict:
-    'The percussion-therapy reference — highest stall force, deepest amplitude, polished app. Premium pricing reflects the spec ceiling and Therabody ecosystem.',
+    'Therabody’s flagship percussion gun — highest stall force, deepest amplitude, polished app. Premium pricing reflects the spec ceiling and Therabody ecosystem.',
   summary:
     'Theragun PRO Plus is the category-defining premium massage gun — 60 lbs stall force (highest tier), 16 mm amplitude, brushless motor running 50–55 dB, OLED display with pressure sensor, full Therabody app integration with guided routines. Multi-decade brand pedigree. Premium pricing ($599) reflects the spec ceiling; competitors close the gap on individual specs but no other device combines stall force + amplitude + app at this level.',
   scores: [
-    { criterionId: 'stall-force-amplitude', score: 9.5, note: '60 lbs stall force + 16 mm amplitude — top of category on both axes. The percussion-dose benchmark.' },
+    { criterionId: 'stall-force-amplitude', score: 9.5, note: '60 lbs stall force + 16 mm amplitude — top of category on both axes.' },
     { criterionId: 'build-attachments', score: 9.0, note: 'Premium brushless motor build, 6 attachments included, 2-year warranty. Multi-decade Therabody pedigree.' },
     { criterionId: 'battery-noise', score: 8.5, note: 'Brushless motor at 50–55 dB — quietest in category. ~2.5 hours per charge. USB-C charging.' },
     { criterionId: 'app-smart-features', score: 9.5, note: 'Best app in category — Therabody guided routines, pressure sensor, OLED feedback, Bluetooth integration with TheraFace.' },
@@ -41,7 +41,7 @@ const theragunProPlus: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Theragun PRO Plus is the percussion-therapy reference — top stall force, deepest amplitude, quietest brushless motor, best app in category. The premium-tier definition.
+Theragun PRO Plus is Therabody’s flagship percussion gun — top stall force, deepest amplitude, quietest brushless motor, best app in category.
 
 ## What are the downsides of Theragun PRO Plus?
 

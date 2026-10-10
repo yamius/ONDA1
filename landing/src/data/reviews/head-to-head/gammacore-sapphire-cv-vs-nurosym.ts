@@ -15,7 +15,7 @@ const gammacoreVsNurosym: HeadToHeadInput = {
   bestForA:
     'Choose gammaCore Sapphire CV if you have a migraine or cluster-headache diagnosis and a prescriber willing to write for it — the only FDA-cleared non-invasive VNS device.',
   bestForB:
-    'Choose Nurosym if you want clinical-grade auricular tVNS at home, with the largest independent trial record of any consumer device (mostly earlier Parasym models), and you do not have an FDA-indication condition.',
+    'Choose Nurosym if you want auricular tVNS at home, with the largest independent trial record of any consumer device (mostly earlier Parasym models), and you do not have an FDA-indication condition.',
   axes: [
     { name: 'Regulatory status', winner: 'tie', note: 'gammaCore Sapphire CV: FDA-cleared (prescription) for migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua. Nurosym: CE-marked in Europe (Class IIa per the maker), not FDA-cleared. Regulatory status is a fact, not a score — FDA status is neutral in ONDA scores.' },
     { name: 'Stimulation target', winner: 'a', note: 'gammaCore: cervical vagal trunk directly (most direct possible non-invasive target). Nurosym: auricular branch (the most-studied non-invasive target).' },
@@ -54,7 +54,7 @@ If you have a diagnosed migraine or cluster-headache condition and a clinician w
 
 ## When is Nurosym the right pick?
 
-If you want clinical-grade tVNS at home without going through a clinician — for HRV training, stress modulation, sleep-onset work, anxiety-related self-experimentation — Nurosym is the right shape. Parasym devices, mostly earlier models, appear in about twenty independent studies; the clearest results are in cardiovascular patients, and trials in healthy users are few and small, with mixed results. The trials report the frequency and pulse width; no prescription gate.`,
+If you want evidence-led tVNS at home without going through a clinician — for HRV training, stress modulation, sleep-onset work, anxiety-related self-experimentation — Nurosym is the right shape. Parasym devices, mostly earlier models, appear in about twenty independent studies; the clearest results are in cardiovascular patients, and trials in healthy users are few and small, with mixed results. The trials report the frequency and pulse width; no prescription gate.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
   dateModified: '2026-10-10',

@@ -20,7 +20,7 @@ const ouraVsWhoopVsGarmin: HeadToHeadInput = {
     'Choose Garmin Venu 4 if you want a training-focused smartwatch with up to 12 days of battery and first-party training analytics — no subscription required.',
   axes: [
     { name: 'HRV measurement', winner: 'tie', note: 'All three track HRV overnight on optical PPG. Effectively tied at the sensor layer for trend use; differentiation is in interpretation.' },
-    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging has the strongest published validation of the three (multi-night polysomnography, Svensson 2024, on Gen3; funded by Oura). Whoop and Garmin are competent but less validated.' },
+    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging has the strongest published validation of the three (multi-night polysomnography, Svensson 2024, on Gen3; funded by Oura). The Ring 4 also has an independent HRV check against ECG (overnight recordings from 13 people, Dial 2025); no independent validation was found for the WHOOP 5.0 or the Venu 4.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s Recovery and Strain coaching is the sharpest daily-readiness model. Oura’s Readiness is good; Garmin’s Body Battery and HRV Status are lighter-touch.' },
     { name: 'Training analytics', winner: 'c', note: 'Garmin: training load, VO2 max, recovery time, structured workouts, GPS. Whoop: Strain-based coaching. Oura: minimal training-specific analytics.' },
     { name: 'Form factor for 24/7 wear', winner: 'a', note: 'Ring fits sleep, work, gym, social. Whoop band hides under clothing. Garmin watch is visible. Oura wins on passive wearability.' },
@@ -53,7 +53,7 @@ const ouraVsWhoopVsGarmin: HeadToHeadInput = {
   ],
   content: `## The short answer
 
-For sleep and overall HRV tracking, Oura Ring 4 is the best of the three: the most wearable form factor and the best-validated sleep data, from $349 plus $5.99 a month. Whoop 5.0 is best for athletes who want a daily recovery coach ($199–$359 a year, membership only). Garmin Venu 4 is best for training analytics and smartwatch features with no subscription (about $499).
+For sleep and overall HRV tracking, Oura Ring 4 is the best of the three: the most wearable form factor and the only one of the three with an independent overnight HRV check (one small study; its sleep staging was validated only on Gen 3, in Oura-funded studies), from $349 plus $5.99 a month. Whoop 5.0 is best for athletes who want a daily recovery coach ($199–$359 a year, membership only). Garmin Venu 4 is best for training analytics and smartwatch features with no subscription (about $499).
 
 | | Oura Ring 4 | Whoop 5.0 | Garmin Venu 4 |
 |---|---|---|---|

@@ -50,7 +50,7 @@ It is brand new (launched May 2026), so there is **no independent HRV-validation
 
 ## Who should buy Fitbit Air?
 
-Choose the Fitbit Air if you want the cheapest honest way to start watching a 24/7 HRV and sleep trend, without paying a subscription to see the basics. If you need validated accuracy or open data, a chest strap or a proven ring is the safer buy — revisit the Air once independent validation exists.
+Choose the Fitbit Air if you want the cheapest honest way to start watching a 24/7 HRV and sleep trend, without paying a subscription to see the basics. If you need validated accuracy or open data, an ECG chest strap (closest to lab ECG at rest, in young healthy adults) is the safer buy — revisit the Air once independent validation exists.
 
 ---
 

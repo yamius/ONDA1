@@ -49,7 +49,7 @@ The Galaxy Ring has no iPhone support; it is built around Samsung Health and And
 
 ## What the Series 12 changed
 
-The Series 12 samples HRV about 24× more often than before and reports Recovery HRV (Apple hasn’t published its formula), with Overall HRV reported separately — see [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) and [why HRV reads differently on every device](/articles/hrv-different-every-device). If the most precise overnight HRV is your only goal, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
+The Series 12 samples HRV about 24× more often than before and reports Recovery HRV (Apple hasn’t published its formula), with Overall HRV reported separately — see [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) and [why HRV reads differently on every device](/articles/hrv-different-every-device). If overnight HRV is your only goal, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
   dateModified: '2026-10-10',

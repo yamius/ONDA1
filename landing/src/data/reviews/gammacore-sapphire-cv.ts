@@ -9,7 +9,7 @@ const gammacoreSapphireCv: ToolReviewInput = {
   description:
     'ONDA review of the gammaCore Sapphire CV — the FDA-cleared prescription cervical tVNS device for migraine and cluster headache. Scored on evidence, mechanism and value.',
   verdict:
-    'The FDA-cleared medical reference for non-invasive cervical VNS — a clinical tool, not a consumer wellness device.',
+    'An FDA-cleared, prescription-only non-invasive cervical VNS device for specific headache disorders — a clinical tool, not a consumer wellness device.',
   summary:
     'gammaCore is the only non-invasive vagus nerve stimulator with FDA clearance for headache disorders — migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua. It is a handheld device pressed against the side of the neck over the carotid artery, delivering a proprietary 5 kHz waveform burst for 2-minute sessions. Available by prescription only. Within its indications it is the most evidence-backed device in this list — and it is priced and gated accordingly.',
   scores: [
@@ -32,7 +32,7 @@ const gammacoreSapphireCv: ToolReviewInput = {
     'No customisable protocols — fixed 2-minute sessions',
     'Cost varies by payer; refill model can lock you in',
   ],
-  bestFor: 'Best for clinically-indicated migraine or cluster-headache patients — the medical reference for cervical VNS.',
+  bestFor: 'Best for clinically-indicated migraine or cluster-headache patients — an FDA-cleared, prescription-only cervical VNS device.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from electroCore clinical documentation, FDA-cleared labelling, and the published gammaCore randomised-trial record. Not hands-on tested by ONDA.',

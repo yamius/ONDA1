@@ -52,7 +52,7 @@ You want the design, app, formaldehyde-destroying layer and cooling function, an
 
 ## Also worth comparing
 
-Against the clinical reference, see [Coway Airmega 400 vs IQAir HealthPro Plus](/reviews/vs/coway-airmega-400-vs-iqair-healthpro-plus) and [Dyson vs IQAir](/reviews/vs/dyson-purifier-big-quiet-vs-iqair-healthpro-plus). Full field: [best air purifiers](/reviews/air-purifiers).`,
+Against the H14-rated IQAir, see [Coway Airmega 400 vs IQAir HealthPro Plus](/reviews/vs/coway-airmega-400-vs-iqair-healthpro-plus) and [Dyson vs IQAir](/reviews/vs/dyson-purifier-big-quiet-vs-iqair-healthpro-plus). Full field: [best air purifiers](/reviews/air-purifiers).`,
   relatedComparisonSlug: 'best-air-purifiers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

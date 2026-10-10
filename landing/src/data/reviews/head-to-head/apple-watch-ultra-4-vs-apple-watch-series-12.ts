@@ -36,7 +36,7 @@ const ultra4VsSeries12: HeadToHeadInput = {
     },
     {
       q: 'Apple Watch Ultra 4 or Series 12 — which should I buy?',
-      a: 'Buy the Ultra 4 if you want night-after-night HRV without a charging conflict and will use its readiness score, dive and satellite features. Buy the Series 12 if HRV and everyday health are the point — it has the same HRV system for half the price. If overnight HRV is your single priority, a finger ring still leads.',
+      a: 'Buy the Ultra 4 if you want night-after-night HRV without a charging conflict and will use its readiness score, dive and satellite features. Buy the Series 12 if HRV and everyday health are the point — it has the same HRV system for half the price. If overnight HRV is your single priority, a ring may suit you better (in overnight recordings from 13 people, Dial 2025, Oura Ring 4 was among the closest to ECG).',
     },
   ],
   content: `## The short version
@@ -49,7 +49,7 @@ A continuous overnight record needs the watch on your wrist all night, every nig
 
 ## The honest setup
 
-If you don’t need ruggedness, the Series 12 is the smarter buy; if you want an Apple Watch you can sleep in every night, the Ultra 4. Both are still wrist optical — for the most precise overnight number, a finger ring leads; see [Series 12 vs Oura Ring 4](/reviews/vs/apple-watch-series-12-vs-oura-ring-4) and the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
+If you don’t need ruggedness, the Series 12 is the smarter buy; if you want an Apple Watch you can sleep in every night, the Ultra 4. Both are still wrist optical — for overnight HRV, a ring may suit you better (in overnight recordings from 13 people, Dial 2025, Oura Ring 4 was among the closest to ECG); see [Series 12 vs Oura Ring 4](/reviews/vs/apple-watch-series-12-vs-oura-ring-4) and the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
   dateModified: '2026-10-10',

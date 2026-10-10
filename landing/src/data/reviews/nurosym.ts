@@ -9,7 +9,7 @@ const nurosym: ToolReviewInput = {
   description:
     'ONDA review of the Nurosym — Parasym’s consumer ear tVNS device; earlier Parasym models were used in published cardiovascular, HRV and inflammation-marker trials. Scored on evidence, mechanism, protocols and value.',
   verdict:
-    'The most-studied consumer ear tVNS device — a research-grade ear clip with a price to match.',
+    'The most-studied consumer ear tVNS device — an ear clip of the kind used in research studies, with a price to match.',
   summary:
     'Nurosym is the consumer line of Parasym, the London company whose ear stimulators, mostly earlier models, were used in about twenty independent peer-reviewed studies of auricular vagus nerve stimulation (50+ according to the manufacturer, as of October 2026). It clips to the tragus of the left ear and delivers a calibrated electrical pulse to the auricular branch of the vagus nerve. There is no app gimmickry — a single dial, stimulation settings reported in the trials, and the largest independent trial record of any consumer device, though mostly small studies on earlier Parasym models.',
   scores: [
@@ -32,7 +32,7 @@ const nurosym: ToolReviewInput = {
     '€700 (about $820) puts it out of reach of casual users',
     'Wired clip is less convenient than a wireless wearable',
   ],
-  bestFor: 'Best for research-grade auricular tVNS at home — when evidence matters more than form factor.',
+  bestFor: 'Best for auricular tVNS of the kind used in research, at home — when evidence matters more than form factor.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from manufacturer specifications, the published Parasym/Nurosym trial record and independent 2026 reviews. Not hands-on tested by ONDA.',

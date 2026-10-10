@@ -17,7 +17,7 @@ const bestSleepApps2026: Comparison = {
     {
       reviewSlug: 'sleepio',
       award: 'Best for insomnia',
-      takeaway: 'A clinically validated CBT-I course — the one app here that treats a sleep disorder, not just tracks it.',
+      takeaway: 'A CBT-I course with the largest body of randomised trials here (many run by its developer) — the one app here that treats a sleep disorder, not just tracks it.',
     },
     {
       reviewSlug: 'sleepscore',
@@ -69,7 +69,7 @@ const bestSleepApps2026: Comparison = {
     },
     {
       q: 'Do sleep apps actually track sleep accurately?',
-      a: 'Phone-based tracking (Sleep Cycle, SleepScore, Sleep as Android) is a reasonable estimate, not clinical-grade. Apps paired with a wearable — AutoSleep and Pillow with an Apple Watch — are more precise. Sound-only apps like Pzizz and Endel do not track at all.',
+      a: 'Phone-based tracking (Sleep Cycle, SleepScore, Sleep as Android) is a reasonable estimate, not clinical-grade. Apps paired with a wearable — AutoSleep and Pillow with an Apple Watch — add heart-rate and motion data, but their sleep staging has not been independently validated. Sound-only apps like Pzizz and Endel do not track at all.',
     },
     {
       q: 'Which sleep app helps you actually fall asleep?',

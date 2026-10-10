@@ -8,14 +8,14 @@ const dysonVsIqair: HeadToHeadInput = {
   description:
     'Dyson Purifier Big+Quiet vs IQAir HealthPro Plus — premium consumer smart vs clinical HEPA. ONDA breaks down the premium duel.',
   intro:
-    'Dyson Big+Quiet and IQAir HealthPro Plus are the two premium air purifiers users compare when picking $1,000+ hardware. The defining difference: Dyson bets on consumer-brand polish + smart features + formaldehyde destruction; IQAir bets on deepest clinical-grade filtration + multi-decade Swiss pedigree.',
+    'Dyson Big+Quiet and IQAir HealthPro Plus are the two premium air purifiers users compare when picking $1,000+ hardware. The defining difference: Dyson bets on consumer-brand polish + smart features + formaldehyde destruction; IQAir bets on deepest maker-rated H14 filtration + multi-decade Swiss pedigree.',
   jobDependentVerdict: true,
   verdict:
     'Smart features vs clinical filtration. Dyson Big+Quiet for premium smart UX + formaldehyde + best-in-category app. IQAir for HyperHEPA H14 clinical depth.',
   bestForA:
     'Choose Dyson Big+Quiet if you want premium consumer-brand polish, best smart features and formaldehyde destruction at $999.',
   bestForB:
-    'Choose IQAir HealthPro Plus if you want clinical-grade HyperHEPA H14 filtration depth with multi-decade Swiss pedigree.',
+    'Choose IQAir HealthPro Plus if you want maker-rated HyperHEPA H14 filtration depth with multi-decade Swiss pedigree.',
   axes: [
     { name: 'Filtration depth', winner: 'b', note: 'IQAir: HyperHEPA H14 (0.003 microns). Dyson: True HEPA H13 + formaldehyde catalyst. IQAir deeper raw filtration.' },
     { name: 'Smart features', winner: 'a', note: 'Dyson: PM2.5 / VOC / formaldehyde sensors, app, HomeKit, real-time display. IQAir: no app, no sensors.' },
@@ -28,7 +28,7 @@ const dysonVsIqair: HeadToHeadInput = {
   faq: [
     {
       q: 'Dyson Big+Quiet or IQAir — which premium is better?',
-      a: 'For premium consumer-brand polish + smart features + formaldehyde focus — Dyson. For clinical-grade HEPA depth + Swiss pedigree — IQAir. Different theses.',
+      a: 'For premium consumer-brand polish + smart features + formaldehyde focus — Dyson. For maker-rated H14 HEPA depth + Swiss pedigree — IQAir. Different theses.',
     },
     {
       q: 'Is Dyson really quieter than IQAir?',
@@ -53,7 +53,7 @@ If you want premium smart features + formaldehyde focus + quietest operation —
 
 ## When is IQAir HealthPro Plus the right pick?
 
-If you want clinical-grade HyperHEPA H14 depth + multi-decade Swiss pedigree — IQAir is the right shape. Accept lack of smart features.`,
+If you want maker-rated HyperHEPA H14 depth + multi-decade Swiss pedigree — IQAir is the right shape. Accept lack of smart features.`,
   relatedComparisonSlug: 'best-air-purifiers-2026',
   publishOn: '2026-07-27',
   datePublished: '2026-05-28',

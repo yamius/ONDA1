@@ -11,13 +11,13 @@ const omniluxVsGross: HeadToHeadInput = {
     'Omnilux Contour Face and Dr. Dennis Gross SpectraLite FaceWare Pro are the two red light masks users often compare (both FDA-cleared — Omnilux: 510(k) K191629; Dr. Dennis Gross: per the brand). The defining difference: Omnilux is flexible silicone with single red + NIR spectrum; Dr. Dennis Gross is hard-shell with dual red + blue protocols.',
   jobDependentVerdict: true,
   verdict:
-    'Comfort vs spectrum scope. Omnilux Contour Face for best-in-class silicone comfort and red + near-infrared light. Dr. Dennis Gross for dermatology-brand pedigree with dual red + blue protocols.',
+    'Comfort vs spectrum scope. Omnilux Contour Face for silicone comfort (the most comfortable in our assessment) and red + near-infrared light. Dr. Dennis Gross for dermatology-brand pedigree with dual red + blue protocols.',
   bestForA:
     'Choose Omnilux Contour Face if you want flexible-silicone comfort and red + near-infrared coverage.',
   bestForB:
     'Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand dual red + blue spectrum protocols (anti-aging + acne) and accept hard-shell comfort.',
   axes: [
-    { name: 'Comfort', winner: 'a', note: 'Omnilux: medical-grade flexible silicone — best in category. Dr. Dennis Gross: hard-shell, heavier, less comfortable for extended sessions.' },
+    { name: 'Comfort', winner: 'a', note: 'Omnilux: flexible silicone — the most comfortable in our testing. Dr. Dennis Gross: hard-shell, heavier, less comfortable for extended sessions.' },
     { name: 'Wavelength coverage', winner: 'b', note: 'Dr. Dennis Gross: dual red 633 nm + blue 415 nm — covers anti-aging + acne. Omnilux: red 633 nm + near-infrared 830 nm — anti-aging + deeper tissue without acne mode.' },
     { name: 'Clinical evidence', winner: 'tie', note: 'Practically equal: neither mask has an independent trial of its own (as of October 2026). Omnilux\'s published studies are on other Omnilux models; Dr. Dennis Gross\'s are brand-funded. Both FDA-cleared (Omnilux: 510(k) K191629; Dr. Dennis Gross: per the brand); clearance is not evidence that a device works.' },
     { name: 'Session length', winner: 'b', note: 'Dr. Dennis Gross: 3-minute protocol — shortest in category. Omnilux: 10-minute protocol.' },

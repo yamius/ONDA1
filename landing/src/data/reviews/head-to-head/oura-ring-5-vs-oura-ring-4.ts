@@ -17,7 +17,7 @@ const ouraRing5VsRing4: HeadToHeadInput = {
   bestForB:
     'Stay on (or buy) the Oura Ring 4 if you already own one, or if you can find it discounted now that the Ring 5 has shipped — it gets the same new software and costs $50 less.',
   axes: [
-    { name: 'Sensors & accuracy', winner: 'b', note: 'The Ring 4 is the only one of the two with an independent overnight check of heart rate and HRV against ECG (one study, 13 people). The Ring 5 has redesigned sensors — stronger LEDs, low-profile domes, 12 signal pathways — for more consistent contact across skin tones and finger types, but it has not been validated yet (as of October 2026).' },
+    { name: 'Sensors & accuracy', winner: 'b', note: 'The Ring 4 is the only one of the two with an independent check of heart rate and HRV against ECG (overnight recordings from 13 people, Dial 2025). The Ring 5 has redesigned sensors — stronger LEDs, low-profile domes, 12 signal pathways — for more consistent contact across skin tones and finger types, but it has not been validated yet (as of October 2026).' },
     { name: 'Size & comfort', winner: 'a', note: 'The Ring 5 is ~40% slimmer and lighter (6.09mm × 2.28mm) than the Ring 4 — the clearest, most felt improvement. Note the narrower size range (6–13 vs 4–15).' },
     { name: 'Battery', winner: 'a', note: 'Ring 5: 6–9 days. Ring 4: 5–8 days. A modest but real gain.' },
     { name: 'New software features', winner: 'tie', note: 'A tie by design: live workout tracking, women’s-health additions, the lost-ring finder and lab/bloodwork import are rolling out to the Ring 4 (and Gen3) too, not exclusive to the Ring 5. This is the crux of the upgrade question.' },
@@ -35,7 +35,7 @@ const ouraRing5VsRing4: HeadToHeadInput = {
     },
     {
       q: 'Is the Oura Ring 4 still worth buying in 2026?',
-      a: 'Yes — especially discounted. It shares the new software with the Ring 5, keeps best-in-class overnight HRV and sleep, and costs $50 less. The Ring 5’s edge is sensors and fit, not capability.',
+      a: 'Yes — especially discounted. It shares the new software with the Ring 5, keeps the overnight HRV (overnight recordings from 13 people, Dial 2025) and sleep tracking, and costs $50 less. The Ring 5’s edge is sensors and fit, not capability.',
     },
   ],
   content: `## The short version

@@ -49,7 +49,7 @@ The trade-off is evidence. Most of the supporting research is company-sponsored 
 
 ## Who should buy Pulsetto?
 
-Choose Pulsetto if you want a polished daily-use cervical tVNS device with structured programmes and minimal setup, and you are comfortable with a lighter independent-evidence base in exchange for accessibility. If clinical-grade evidence is the deciding criterion, Nurosym is the right pick. If you want a one-time-purchase device with no app subscription, Truvaga 350 is closer to that shape.
+Choose Pulsetto if you want a polished daily-use cervical tVNS device with structured programmes and minimal setup, and you are comfortable with a lighter independent-evidence base in exchange for accessibility. If the larger (largely maker-funded) trial base is the deciding criterion, Nurosym is the right pick. If you want a one-time-purchase device with no app subscription, Truvaga 350 is closer to that shape.
 
 ---
 

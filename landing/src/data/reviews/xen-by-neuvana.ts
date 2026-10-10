@@ -49,7 +49,7 @@ The evidence base is the weak point. The auricular tVNS mechanism has been studi
 
 ## Who should buy Xen by Neuvana?
 
-Choose Xen by Neuvana if the earbud form factor and music-paired sessions make daily use realistic for you, and you are comfortable with a thinner device-specific evidence base. If clinical-grade evidence is the priority, Nurosym is the right pick. If you want a wider protocol library at a lower price, Pulsetto delivers more for less.
+Choose Xen by Neuvana if the earbud form factor and music-paired sessions make daily use realistic for you, and you are comfortable with a thinner device-specific evidence base. If the larger (largely maker-funded) trial base is the deciding criterion, Nurosym is the right pick. If you want a wider protocol library at a lower price, Pulsetto delivers more for less.
 
 ---
 

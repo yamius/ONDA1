@@ -54,7 +54,7 @@ Ultrahuman’s answer is the **Ring Pro**: announced in February 2026, US pre-or
 
 The ring uses an optical sensor (PPG) on the inside of the finger. It reads heart rate and [HRV](/glossary/heart-rate-variability) continuously, updating every few minutes at rest, plus skin temperature, blood oxygen and movement. From these it builds sleep stages, a recovery score and daily readiness.
 
-The night is where a ring is strongest. The finger gives a cleaner signal than the wrist, and you lie still. Published validation work on finger rings (mostly on Oura) shows nightly HRV close to an ECG. There is less independent research on the Ring Air itself, so we score it a little below Oura on accuracy. Daytime HRV during movement is a rough estimate on every ring. To read your numbers, compare them with [normal HRV by age](/articles/normal-hrv-by-age) — and, above all, with your own baseline.
+The night is where a ring is strongest. You lie still, which keeps the signal clean, and in overnight recordings from 13 people (Dial 2025) Oura Ring 4 was among the closest to ECG. There is less independent research on the Ring Air itself, so we score it a little below Oura on accuracy. Daytime HRV during movement is a rough estimate on every ring. To read your numbers, compare them with [normal HRV by age](/articles/normal-hrv-by-age) — and, above all, with your own baseline.
 
 ## How much does the Ultrahuman Ring Air cost?
 

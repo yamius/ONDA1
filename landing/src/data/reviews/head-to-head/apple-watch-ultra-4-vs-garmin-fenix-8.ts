@@ -11,7 +11,7 @@ const ultra4VsFenix8: HeadToHeadInput = {
     'Two rugged, ECG-capable flagships people cross-shop in late 2026 — but they optimise for different lives. The Apple Watch Ultra 4 pairs Apple’s all-new Health Sensing System (Recovery HRV, sampled ~24× more often) with a ~50-hour battery and the iPhone ecosystem. The Garmin Fenix 8 is the expedition instrument: Elevate v5 with ECG, HRV Status, maps and dive, on a battery that lasts weeks. For HRV specifically the gap is narrower than the spec sheets suggest.',
   jobDependentVerdict: true,
   verdict:
-    'No overall winner — it splits by life. For the newest HRV system, everyday smartwatch and iPhone ecosystem, the Ultra 4 leads; for multi-week battery, deep training and expedition tools, the Fenix 8 leads. Both are wrist-optical, so a ring or chest strap still beats either for a pure overnight record.',
+    'No overall winner — it splits by life. For the newest HRV system, everyday smartwatch and iPhone ecosystem, the Ultra 4 leads; for multi-week battery, deep training and expedition tools, the Fenix 8 leads.',
   bestForA:
     'Choose the Apple Watch Ultra 4 if you want Apple’s new HRV system (Recovery HRV), the best everyday smartwatch and iPhone integration, with a 50-hour battery and dive/satellite features.',
   bestForB:
@@ -28,7 +28,7 @@ const ultra4VsFenix8: HeadToHeadInput = {
   faq: [
     {
       q: 'Is the Apple Watch Ultra 4 or Garmin Fenix 8 better for HRV?',
-      a: 'For the HRV system itself the Ultra 4 edges it in 2026 — it samples ~24× more often and reports Recovery HRV, while Garmin HRV Status is a single overnight-baseline model. But both are wrist optical, so neither matches a finger ring or ECG chest strap for a continuous overnight record. The Fenix’s advantage is a battery that never interrupts tracking.',
+      a: 'For the HRV system itself the Ultra 4 edges it in 2026 — it samples ~24× more often and reports Recovery HRV, while Garmin HRV Status is a single overnight-baseline model. But both are wrist optical, and an ECG chest strap is closer to lab ECG (at rest, in young healthy adults). The Fenix’s advantage is a battery that never interrupts tracking.',
     },
     {
       q: 'Which has better battery, the Ultra 4 or the Fenix 8?',
@@ -41,7 +41,7 @@ const ultra4VsFenix8: HeadToHeadInput = {
   ],
   content: `## The short version
 
-This is a life-fit decision, not an accuracy one. The Ultra 4 wins for the newest HRV system, the best everyday smartwatch and iPhone integration. The Fenix 8 wins for multi-week battery, deep training and navigation, and expedition tools. For HRV precision specifically, both are wrist optical — a ring or chest strap beats either.
+This is a life-fit decision, not an accuracy one. The Ultra 4 wins for the newest HRV system, the best everyday smartwatch and iPhone integration. The Fenix 8 wins for multi-week battery, deep training and navigation, and expedition tools. For HRV precision specifically, both are wrist optical — an ECG chest strap is closer to lab ECG (at rest, in young healthy adults).
 
 ## Where the HRV comparison landed in 2026
 
@@ -49,7 +49,7 @@ Apple’s September 2026 Health Sensing System closed much of the gap: the Ultra
 
 ## The honest caveat
 
-Both measure; neither trains. Whichever rugged flagship you pick, and however good its HRV, a finger ring is still the more precise overnight instrument — see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
+Both measure; neither trains. Whichever rugged flagship you pick, and however good its HRV, a ring line such as Oura has more published overnight validation — see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-18',
   dateModified: '2026-10-10',

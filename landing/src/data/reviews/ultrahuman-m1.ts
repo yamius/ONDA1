@@ -51,7 +51,7 @@ You stick a small sensor on the back of your upper arm. A tiny filament under th
 
 ## What does the evidence say?
 
-Abbott’s Libre-family sensors are well validated in people with diabetes; the maker reports a mean absolute error of about 9% for Libre 3 against lab glucose (maker figures do not count as evidence in ONDA scores), and in an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate. For people **without** diabetes, the evidence is weaker. Glucose in healthy people stays in a narrow range, and small rises after meals are normal. There is no strong proof yet that chasing flatter curves improves long-term health. A CGM is best used as a feedback tool for habits, not as a health verdict.
+Abbott’s Libre-family sensors are well validated in people with diabetes (the sensor, not the M1 app or its scores, which have not been validated); the maker reports a mean absolute error of about 9% for Libre 3 against lab glucose (maker figures do not count as evidence in ONDA scores), and in an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate. For people **without** diabetes, the evidence is weaker. Glucose in healthy people stays in a narrow range, and small rises after meals are normal. There is no strong proof yet that chasing flatter curves improves long-term health. A CGM is best used as a feedback tool for habits, not as a health verdict.
 
 ## How much does Ultrahuman M1 cost?
 

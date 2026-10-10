@@ -116,7 +116,7 @@ Blood pressure: some studies of consistent slow-breathing and HRV-biofeedback tr
 
 ## Recommended tools
 
-Catching the 0.1 Hz shift cleanly requires an HRV device with enough sampling fidelity. The chest strap is the reference; the wearables are the lifestyle option.
+Catching the 0.1 Hz shift cleanly requires an HRV device with enough sampling fidelity. An ECG chest strap is closest to lab ECG (at rest, in young healthy adults); the wearables are the lifestyle option.
 
 - [Polar H10](/reviews/polar-h10) — ECG chest strap that resolves resonant-frequency breathing cleanly
 - [Oura Ring 4](/reviews/oura-ring-4) — overnight HRV trending

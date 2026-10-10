@@ -99,7 +99,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best for measurement precision',
         capsKey: 'elite',
         blurb:
-          'A serious, data-first HRV app with a live coherence breathing pacer and morning readiness. Its most accurate readings need a chest strap, and it’s more measurement tool than guided practice — but for raw HRV precision it’s excellent.',
+          'A serious, data-first HRV app with a live coherence breathing pacer and morning readiness. Its cleanest readings come from a paired ECG chest strap, at rest, and it’s more measurement tool than guided practice — but for raw HRV numbers it’s excellent.',
         pros: [
           'Most measurement-focused; chest-strap accuracy',
           'Resonance breathing pacer with live HRV',
@@ -129,7 +129,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
       },
     ],
     bottomLine:
-      'For accessible, guided HRV biofeedback with no extra hardware, ONDA leads. If you want the most precise measurement and don’t mind a chest strap, choose Elite HRV. If you mainly want a big library of breathing exercises with biofeedback as an option, choose Breathwrk. For passive overnight HRV tracking (not biofeedback), a ring or band like Oura or WHOOP is a different tool entirely.',
+      'For accessible, guided HRV biofeedback with no extra hardware, ONDA leads. If you want the cleanest readings from a paired ECG chest strap at rest, choose Elite HRV. If you mainly want a big library of breathing exercises with biofeedback as an option, choose Breathwrk. For passive overnight HRV tracking (not biofeedback), a ring or band like Oura or WHOOP is a different tool entirely.',
     faq: [
       {
         q: 'What is the best HRV biofeedback app?',
@@ -141,7 +141,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
       },
       {
         q: 'Do I need a chest strap for HRV biofeedback?',
-        a: 'Not with ONDA — it uses the iPhone camera (PPG) or an Apple Watch. Elite HRV’s most accurate measurement uses a chest strap. Breathwrk’s biofeedback needs a Bluetooth heart-rate device.',
+        a: 'Not with ONDA — it uses the iPhone camera (PPG) or an Apple Watch. Elite HRV gets its cleanest readings from a paired ECG chest strap, at rest. Breathwrk’s biofeedback needs a Bluetooth heart-rate device.',
       },
     ],
   },
@@ -471,7 +471,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'If you want measurement PLUS biofeedback',
         capsKey: 'elite',
         blurb:
-          'Pick Elite HRV when you want precise measurement and a coherence pacer in one, and you will use a chest strap for accuracy. It sits between the trackers and pure biofeedback — data-first, with training attached.',
+          'Pick Elite HRV when you want precise measurement and a coherence pacer in one, and you will pair an ECG chest strap for the cleanest readings at rest. It sits between the trackers and pure biofeedback — data-first, with training attached.',
         pros: [
           'Precise HRV measurement plus a coherence breathing pacer',
           'Strong for data-minded users',
@@ -584,7 +584,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best for data-first users who want a pacer',
         capsKey: 'elite',
         blurb:
-          'Elite HRV genuinely combines all three — a resonance breathing pacer with live HRV feedback — but it’s a measurement-first tool, and its most accurate readings want a chest strap. If you care more about precise numbers than a guided practice, it’s excellent.',
+          'Elite HRV genuinely combines all three — a resonance breathing pacer with live HRV feedback — but it’s a measurement-first tool, and its cleanest readings come from a paired ECG chest strap, at rest. If you care more about precise numbers than a guided practice, it’s excellent.',
         pros: [
           'Real breathing pacer with live HRV feedback',
           'Strong measurement precision; free core app',

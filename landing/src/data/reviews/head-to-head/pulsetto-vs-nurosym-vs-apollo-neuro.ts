@@ -12,7 +12,7 @@ const pulsettoVsNurosymVsApollo: HeadToHeadInput = {
     'Pulsetto, Nurosym and Apollo Neuro are the three consumer vagus-modulation devices most users actually shortlist together. They sit on the same shelf but use three different mechanisms — cervical electrical tVNS (Pulsetto), auricular electrical tVNS (Nurosym), and vibrotactile modulation (Apollo). The decision is not about brand; it is about which mechanism fits your life.',
   jobDependentVerdict: true,
   verdict:
-    'Three different jobs. Pulsetto for guided daily-use cervical sessions, Nurosym for clinical-grade auricular evidence, Apollo Neuro for all-day passive vagal modulation.',
+    'Three different jobs. Pulsetto for guided daily-use cervical sessions, Nurosym for the larger body of auricular evidence, Apollo Neuro for all-day passive vagal modulation.',
   bestForA:
     'Choose Pulsetto if you want a polished daily-use neck collar with four guided programmes (sleep, stress, anxiety, pain) at the most accessible price in consumer tVNS.',
   bestForB:

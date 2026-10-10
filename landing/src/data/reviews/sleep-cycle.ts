@@ -50,7 +50,7 @@ It is a tracker first. Wind-down content — sounds, sleep-aid audio — exists 
 
 ## Who should buy Sleep Cycle?
 
-Choose Sleep Cycle if you want a polished, low-effort tracker with a smart alarm and a free tier you can actually live on. If you mainly need help falling asleep, a relaxation app will serve you better; a wearable gives a closer estimate, but only a sleep study is clinical-grade.
+Choose Sleep Cycle if you want a polished, low-effort tracker with a smart alarm and a free tier you can actually live on. If you mainly need help falling asleep, a relaxation app will serve you better; a wearable adds heart-rate data, though its sleep staging is not independently validated either; only a sleep study is clinical-grade.
 
 ---
 

@@ -12,7 +12,7 @@ const bestRedLightFaceMasks2026: Comparison = {
     {
       reviewSlug: 'omnilux-contour-face',
       award: '',
-      takeaway: 'Best-in-class flexible silicone + the standard red / near-infrared pair, FDA-cleared for wrinkles — no published trial of the mask itself.',
+      takeaway: 'Flexible silicone (the most comfortable in our assessment) + the standard red / near-infrared pair, FDA-cleared for wrinkles — no published trial of the mask itself.',
     },
     {
       reviewSlug: 'currentbody-series-2',
@@ -67,7 +67,7 @@ const bestRedLightFaceMasks2026: Comparison = {
   faq: [
     {
       q: 'What is the best red light face mask in 2026?',
-      a: 'CurrentBody Series 2 and Lumara Viso share the top ONDA score (8.0): CurrentBody for the consumer-market reference with neck flap, Lumara for the most LEDs and three wavelengths. Omnilux Contour Face (7.8) for flexible medical-grade silicone comfort and FDA clearance for wrinkles; no trial of any of these masks itself has been published. Dr. Dennis Gross for dermatology-brand dual-spectrum.',
+      a: 'CurrentBody Series 2 and Lumara Viso share the top ONDA score (8.0): CurrentBody for the consumer-market reference with neck flap, Lumara for the most LEDs and three wavelengths. Omnilux Contour Face (7.8) for flexible silicone comfort and FDA clearance for wrinkles; no trial of any of these masks itself has been published. Dr. Dennis Gross for dermatology-brand dual-spectrum.',
     },
     {
       q: 'Is Omnilux worth the premium price?',

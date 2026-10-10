@@ -14,7 +14,7 @@ const theragunVsHypervoltVsAchedaway: HeadToHeadInput = {
   verdict:
     'Three different theses. Theragun PRO Plus for spec ceiling + Therabody app. Hypervolt 2 Pro for same stall at lower price. Achedaway Pro for highest stall force at sub-Theragun pricing without app.',
   bestForA:
-    'Choose Theragun PRO Plus if you want the category reference — spec ceiling + best app + longest warranty + Therabody ecosystem.',
+    'Choose Theragun PRO Plus if you want the spec ceiling + best app + longest warranty + Therabody ecosystem.',
   bestForB:
     'Choose Hypervolt 2 Pro if you want matching premium stall force at $200 less with Hyperice ecosystem.',
   bestForC:
@@ -56,7 +56,7 @@ Three premium massage guns, three different theses. Theragun PRO Plus = ecosyste
 
 ## When is Theragun PRO Plus the right pick?
 
-If you want the category reference — spec ceiling, best app, longest warranty, Therabody ecosystem — Theragun PRO Plus is the right shape. Accept premium pricing.
+If you want the spec ceiling, best app, longest warranty, Therabody ecosystem — Theragun PRO Plus is the right shape. Accept premium pricing.
 
 ## When is Hypervolt 2 Pro the right pick?
 

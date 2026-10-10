@@ -12,7 +12,7 @@ const bestHrvTrackers2026: Comparison = {
     {
       reviewSlug: 'oura-ring-5',
       award: 'Best overall',
-      takeaway: 'Overnight HRV and sleep from the best-validated ring line (the Ring 5 itself not yet separately validated), upgraded sensors and the best app — if you accept the subscription.',
+      takeaway: 'Overnight HRV and sleep from the ring line with the most published research — mostly on earlier generations, partly funded by Oura (the Ring 5 itself not yet separately validated), upgraded sensors and the best app — if you accept the subscription.',
     },
     {
       reviewSlug: 'ringconn-gen-3',
@@ -32,7 +32,7 @@ const bestHrvTrackers2026: Comparison = {
     {
       reviewSlug: 'polar-h10',
       award: 'Best for accuracy',
-      takeaway: 'ECG-grade accuracy and fully open data — a reference instrument, not an all-day wearable.',
+      takeaway: 'ECG electrodes, not optical — close to lab ECG at rest in young healthy adults — and fully open data; a measuring tool, not an all-day wearable.',
     },
     {
       reviewSlug: 'samsung-galaxy-ring',
@@ -62,7 +62,7 @@ const bestHrvTrackers2026: Comparison = {
     {
       reviewSlug: 'withings-scanwatch',
       award: 'Best hybrid ECG watch',
-      takeaway: 'A discreet analog watch with medical-grade ECG and a ~30-day battery — clinical screening, no subscription.',
+      takeaway: 'A discreet analog watch with a regulator-cleared single-lead ECG (per Withings) and a ~30-day battery — no subscription.',
     },
     {
       reviewSlug: 'circular-ring-2',
@@ -81,11 +81,11 @@ const bestHrvTrackers2026: Comparison = {
     },
   ],
   verdict:
-    'For the cleanest overnight HRV and sleep in something you wear around the clock, the Oura Ring 5 wins overall — if you accept the membership. If you refuse a subscription, the field is now excellent: the RingConn Gen 3 leads on features and value, the Ultrahuman Ring Pro on battery, the RingConn Gen 2 on price-to-performance and the Amazfit Helio Ring on outright cost. Athletes should look at the Whoop 5.0, and anyone who wants ground-truth accuracy at the Polar H10 chest strap. Samsung Galaxy Ring suits Android users, Garmin and Apple are the all-day do-everything devices, and the Circular Ring 2 is the most ambitious — but buy it only knowing its ECG/AFib software is unfinished. Note: the older Ultrahuman Ring Air is no longer recommended — it is under a US import ban; its successor is the Ring Pro above.',
+    'For overnight HRV and sleep in something you wear around the clock, the Oura Ring 5 wins overall — if you accept the membership. If you refuse a subscription, the field is now excellent: the RingConn Gen 3 leads on features and value, the Ultrahuman Ring Pro on battery, the RingConn Gen 2 on price-to-performance and the Amazfit Helio Ring on outright cost. Athletes should look at the Whoop 5.0, and anyone who wants readings close to a lab ECG at rest at the Polar H10 chest strap. Samsung Galaxy Ring suits Android users, Garmin and Apple are the all-day do-everything devices, and the Circular Ring 2 is the most ambitious — but buy it only knowing its ECG/AFib software is unfinished. Note: the older Ultrahuman Ring Air is no longer recommended — it is under a US import ban; its successor is the Ring Pro above.',
   faq: [
     {
-      q: 'Which HRV tracker is the most accurate?',
-      a: 'For ground-truth accuracy the Polar H10 chest strap is unmatched in young healthy adults at rest — it reads the heart electrically, the same way a clinical ECG does. Among devices you can wear all day, one study of overnight readings found earlier Oura rings agreed with ECG most closely; the Oura Ring 5 and Whoop 5.0 themselves have not been tested.',
+      q: 'Which HRV tracker is closest to a lab ECG?',
+      a: 'No single device wins everywhere. At rest in young healthy adults the Polar H10 chest strap comes closest to a lab ECG — it reads the heart electrically, like a clinical ECG — but it is less reliable during movement. Among devices you can wear all day, one small study of overnight readings found earlier Oura rings agreed with ECG most closely; the Oura Ring 5 and Whoop 5.0 themselves have not been tested.',
     },
     {
       q: 'What is the best HRV tracker without a subscription?',
@@ -93,7 +93,7 @@ const bestHrvTrackers2026: Comparison = {
     },
     {
       q: 'Do I need a chest strap for HRV?',
-      a: 'No — rings and bands like the Oura Ring 5 and Whoop 5.0 are designed to track overnight HRV trends and recovery; neither current model has an independent validation against ECG yet (as of October 2026). A chest strap like the Polar H10 is worth it only if you want reference-grade numbers or are validating another device.',
+      a: 'No — rings and bands like the Oura Ring 5 and Whoop 5.0 are designed to track overnight HRV trends and recovery; neither current model has an independent validation against ECG yet (as of October 2026). A chest strap like the Polar H10 is worth it only if you want readings closest to lab ECG (at rest, in young healthy adults) or are validating another device.',
     },
     {
       q: 'Which HRV trackers have no subscription?',

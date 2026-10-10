@@ -124,7 +124,7 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
           },
           {
             q: 'Нужен ли нагрудный датчик для ONDA?',
-            a: 'Нет. ONDA рассчитана на работу с камерой iPhone или Apple Watch. Нагрудный датчик даёт самый точный HRV среди потребительских сенсоров, но ONDA его не требует.',
+            a: 'Нет. ONDA рассчитана на работу с камерой iPhone или Apple Watch. Нагрудный датчик в покое у молодых здоровых взрослых близок к лабораторной ЭКГ (при движении менее надёжен), но ONDA его не требует.',
           },
           {
             q: 'Хранит ли ONDA мои данные HealthKit?',
@@ -199,7 +199,7 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
         items: [
           {
             q: 'Какое приложение для HRV-биофидбека лучшее?',
-            a: 'Основные приложения HRV-биофидбека — ONDA, Elite HRV и (в премиум-тарифе) Breathwrk. ONDA работает с камерой iPhone или Apple Watch внутри направляемой прогрессивной практики; Elite HRV больше сфокусирован на измерении и точнее всего с нагрудным датчиком. Лучшее зависит от того, хотите ли вы направляемую практику или самое точное измерение.',
+            a: 'Основные приложения HRV-биофидбека — ONDA, Elite HRV и (в премиум-тарифе) Breathwrk. ONDA работает с камерой iPhone или Apple Watch внутри направляемой прогрессивной практики; Elite HRV больше сфокусирован на измерении и даёт самые чистые данные с подключённым ЭКГ-датчиком на груди, в покое. Лучшее зависит от того, хотите ли вы направляемую практику или измерение на первом месте.',
           },
           {
             q: 'ONDA или Oura — что выбрать?',
@@ -315,7 +315,7 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
           },
           {
             q: '¿Necesito una banda de pecho para ONDA?',
-            a: 'No. ONDA está diseñada para funcionar con la cámara del iPhone o un Apple Watch. Una banda de pecho da la HRV más precisa de cualquier sensor de consumo, pero ONDA no la requiere.',
+            a: 'No. ONDA está diseñada para funcionar con la cámara del iPhone o un Apple Watch. Una banda de pecho se acerca a un ECG de laboratorio en reposo en adultos jóvenes sanos (es menos fiable en movimiento), pero ONDA no la requiere.',
           },
           {
             q: '¿ONDA guarda mis datos de HealthKit?',
@@ -390,7 +390,7 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
         items: [
           {
             q: '¿Cuál es la mejor app de biofeedback de HRV?',
-            a: 'Las principales apps de biofeedback de HRV son ONDA, Elite HRV y (en su nivel premium) Breathwrk. ONDA funciona con la cámara del iPhone o un Apple Watch dentro de una práctica guiada y progresiva; Elite HRV está más centrada en la medición y es más precisa con una banda de pecho. La mejor depende de si quieres una práctica guiada o la medición más precisa.',
+            a: 'Las principales apps de biofeedback de HRV son ONDA, Elite HRV y (en su nivel premium) Breathwrk. ONDA funciona con la cámara del iPhone o un Apple Watch dentro de una práctica guiada y progresiva; Elite HRV está más centrada en la medición y obtiene sus lecturas más limpias con una banda de pecho ECG emparejada, en reposo. La mejor depende de si quieres una práctica guiada o priorizar la medición.',
           },
           {
             q: '¿ONDA u Oura — cuál elegir?',

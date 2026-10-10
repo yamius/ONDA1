@@ -18,7 +18,7 @@ const molekuleAirPro: ToolReviewInput = {
     { criterionId: 'build-noise', score: 8.0, note: 'Premium consumer build. Quiet on low (~32 dB), louder on high (~62 dB). Cylindrical form factor distinctive.' },
     { criterionId: 'smart-features', score: 9.0, note: 'Full app integration with PM2.5 / VOC sensors, auto mode, Apple HomeKit / Google Home. Premium smart-feature execution.' },
     { criterionId: 'maintenance-cost', score: 6.5, note: 'PECO filter 6-month replacement, HEPA pre-filter 6-month. ~$200-300/year filter cost. Higher than IQAir long-term.' },
-    { criterionId: 'value', score: 6.5, note: '$1,199 — premium pricing. Justified by PECO + smart features; expensive vs IQAir clinical reference or Coway / Dyson alternatives.' },
+    { criterionId: 'value', score: 6.5, note: '$1,199 — premium pricing. Justified by PECO + smart features; expensive vs IQAir (maker-rated H14, company-stated) or Coway / Dyson alternatives.' },
   ],
   pros: [
     'PECO photocatalytic technology — destroys VOCs at molecular level',
@@ -49,7 +49,7 @@ PECO efficacy beyond HEPA claims have been debated in independent reviews; Molek
 
 ## Who should buy Molekule Air Pro?
 
-Choose Molekule Air Pro for PECO technology + premium smart features. For clinical-grade HEPA without smart features, IQAir HealthPro Plus. For consumer-polished smart features at lower price, Dyson Big+Quiet or Coway Airmega 400.
+Choose Molekule Air Pro for PECO technology + premium smart features. For maker-rated H14 HEPA (company-stated) without smart features, IQAir HealthPro Plus. For consumer-polished smart features at lower price, Dyson Big+Quiet or Coway Airmega 400.
 
 ---
 
@@ -67,7 +67,7 @@ Choose Molekule Air Pro for PECO technology + premium smart features. For clinic
     { q: "Is the Molekule Air Pro worth it?", a: "The Molekule Air Pro is worth it if you want PECO VOC destruction plus the best smart-feature integration in the premium category, including PM2.5 and VOC sensors and HomeKit and Google Home support. The trade-off is higher long-term filter cost, and PECO efficacy claims are debated in independent reviews." },
     { q: "How much does the Molekule Air Pro cost?", a: "The Molekule Air Pro is listed at $1,199 standalone. Running costs are higher than IQAir, because its filters are replaced on a 6-month cycle versus IQAir's 2 to 4 years, so budget for filters on top of the purchase price." },
     { q: "What are the downsides of the Molekule Air Pro?", a: "Its downsides are premium $1,199 pricing, PECO efficacy claims that are debated in independent reviews, and higher filter replacement costs than IQAir, with a 6-month filter cycle compared with IQAir's 2 to 4 years. Its smart features are strong, but running costs add up." },
-    { q: "Molekule Air Pro vs IQAir: which is better?", a: "IQAir is the clinical reference with a longer 2-to-4-year filter cycle and lower filter costs. The Molekule Air Pro counters with PECO VOC destruction and better smart features, including HomeKit and Google Home. Choose IQAir for running costs, Molekule for smart integration." },
+    { q: "Molekule Air Pro vs IQAir: which is better?", a: "IQAir has a maker-rated H14 filter (company-stated), with a longer 2-to-4-year filter cycle and lower filter costs. The Molekule Air Pro counters with PECO VOC destruction and better smart features, including HomeKit and Google Home. Choose IQAir for running costs, Molekule for smart integration." },
   ],
   datePublished: '2026-07-27',
   dateModified: '2026-10-10',

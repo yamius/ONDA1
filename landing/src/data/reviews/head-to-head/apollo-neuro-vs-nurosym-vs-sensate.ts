@@ -52,7 +52,7 @@ const apolloVsNurosymVsSensate: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Three independent mechanisms targeting the same nerve. Apollo is all-day vibrotactile, Nurosym is clinical-grade electrical, Sensate is infrasonic-and-soundscape ritual. Pick on which mechanism fits your routine.
+Three independent mechanisms targeting the same nerve. Apollo is all-day vibrotactile, Nurosym is direct electrical, Sensate is infrasonic-and-soundscape ritual. Pick on which mechanism fits your routine.
 
 ## When is Apollo Neuro the right pick?
 

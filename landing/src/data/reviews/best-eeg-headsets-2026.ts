@@ -171,7 +171,7 @@ The category divides on modality and on intent.
 
 **Multi-modal premium (Sens.ai):** EEG + photobiomodulation + HRV in one programme. Right pick only when the multi-modal stack is what you want.
 
-**Clinical reference (Myndlift):** Prescribed neurofeedback at home, on top of consumer hardware. Reference clinical option in the category.
+**Clinician-supervised (Myndlift):** Prescribed neurofeedback at home, on top of consumer hardware. The clinician-supervised option in the category.
 
 Decide on modality first, then on the device within it. The category is small enough that these ten are effectively the universe of headsets worth knowing about in 2026.`,
   datePublished: '2026-05-21',

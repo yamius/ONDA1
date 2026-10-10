@@ -6,20 +6,20 @@ const cowayVsIqair: HeadToHeadInput = {
   productBSlug: 'iqair-healthpro-plus',
   title: 'Coway Airmega 400 vs IQAir HealthPro Plus (2026)',
   description:
-    'Coway Airmega 400 vs IQAir HealthPro Plus — the large-room value champion vs the clinical filtration reference. Best value vs medical-grade HyperHEPA, compared by ONDA.',
+    'Coway Airmega 400 vs IQAir HealthPro Plus — the large-room value champion vs the H14-rated filtration pick (company-stated). Best value vs maker-rated HyperHEPA, compared by ONDA.',
   intro:
-    'This is value versus clinical-grade filtration. The Coway Airmega 400 delivers verified True HEPA H13 coverage for a large room at a mid-premium price. The IQAir HealthPro Plus is the clinical reference — HyperHEPA H14 filtration that captures particles down to 0.003 microns, with a hospital-deployment pedigree — at more than double the price. How much filtration do you actually need?',
+    'This is value versus maker-rated H14 filtration. The Coway Airmega 400 delivers verified True HEPA H13 coverage for a large room at a mid-premium price. The IQAir HealthPro Plus is the H14-rated pick (company-stated) — HyperHEPA H14 filtration that captures particles down to 0.003 microns, with a hospital-deployment pedigree — at more than double the price. How much filtration do you actually need?',
   jobDependentVerdict: true,
   verdict:
-    'Value vs clinical reference. The Coway Airmega 400 wins on price and everyday value — verified large-room HEPA for less than half the cost. The IQAir HealthPro Plus wins on outright filtration: HyperHEPA H14 and heavy VOC/odor removal, the medical-grade choice. Pick Coway for excellent value; IQAir if you need the deepest, clinical-grade filtration.',
+    'Value vs maker-rated H14 filtration. The Coway Airmega 400 wins on price and everyday value — verified large-room HEPA for less than half the cost. The IQAir HealthPro Plus wins on outright filtration: HyperHEPA H14 and heavy VOC/odor removal, the H14-rated choice (company-stated). Pick Coway for excellent value; IQAir if you need the deepest, maker-rated H14 filtration.',
   bestForA:
-    'Choose the Coway Airmega 400 if you want verified large-room HEPA filtration and coverage at strong value, and don’t need medical-grade capture.',
+    'Choose the Coway Airmega 400 if you want verified large-room HEPA filtration and coverage at strong value, and don’t need H14-rated capture.',
   bestForB:
-    'Choose the IQAir HealthPro Plus if you want the deepest, clinical-grade filtration (HyperHEPA H14) for allergies, VOCs or sensitive health needs.',
+    'Choose the IQAir HealthPro Plus if you want the deepest, maker-rated H14 filtration (HyperHEPA H14) for allergies, VOCs or sensitive health needs.',
   axes: [
-    { name: 'Filtration depth', winner: 'b', note: 'IQAir’s HyperHEPA H14 captures 99.5% of particles down to 0.003 microns — beyond standard HEPA, the clinical reference. The Coway’s True HEPA H13 is excellent but a tier below.' },
+    { name: 'Filtration depth', winner: 'b', note: 'IQAir’s HyperHEPA H14 captures 99.5% of particles down to 0.003 microns — beyond standard HEPA (company-stated). The Coway’s True HEPA H13 is excellent but a tier below.' },
     { name: 'Price & value', winner: 'a', note: 'Coway Airmega 400: ~$479. IQAir HealthPro Plus: ~$1,099. The Coway is less than half the price for very capable everyday filtration.' },
-    { name: 'VOC / odor removal', winner: 'b', note: 'IQAir excels at heavy VOC and odor removal; the Coway’s carbon stage is good but not clinical-grade.' },
+    { name: 'VOC / odor removal', winner: 'b', note: 'IQAir excels at heavy VOC and odor removal; the Coway’s carbon stage is good but not as heavy-duty.' },
     { name: 'Coverage / CADR', winner: 'a', note: 'The Airmega 400 is a genuine large-room champion on CADR-per-dollar; IQAir is strong but the Coway leads on value coverage.' },
     { name: 'Brand pedigree', winner: 'b', note: 'IQAir has a multi-decade medical pedigree, including hospital deployments — reassurance the Coway doesn’t claim.' },
     { name: 'Running cost', winner: 'a', note: 'The Coway’s filters are cheaper to replace; IQAir’s clinical filters cost more to maintain over time.' },
@@ -27,7 +27,7 @@ const cowayVsIqair: HeadToHeadInput = {
   faq: [
     {
       q: 'Coway Airmega 400 or IQAir HealthPro Plus?',
-      a: 'For excellent everyday large-room filtration at strong value, the Coway Airmega 400 (~$479). For the deepest, clinical-grade filtration — HyperHEPA H14, heavy VOC/odor removal, medical pedigree — the IQAir HealthPro Plus (~$1,099). Pick Coway for value, IQAir if you need medical-grade capture.',
+      a: 'For excellent everyday large-room filtration at strong value, the Coway Airmega 400 (~$479). For the deepest, maker-rated H14 filtration — HyperHEPA H14, heavy VOC/odor removal, medical pedigree — the IQAir HealthPro Plus (~$1,099). Pick Coway for value, IQAir if you need H14-rated capture.',
     },
     {
       q: 'Do I need IQAir’s HyperHEPA over standard HEPA?',
@@ -35,20 +35,20 @@ const cowayVsIqair: HeadToHeadInput = {
     },
     {
       q: 'Which is better value?',
-      a: 'The Coway Airmega 400, clearly — less than half the price, cheaper filters, and verified large-room coverage. IQAir earns its premium only if you specifically need clinical-grade filtration.',
+      a: 'The Coway Airmega 400, clearly — less than half the price, cheaper filters, and verified large-room coverage. IQAir earns its premium only if you specifically need maker-rated H14 filtration.',
     },
   ],
   content: `## The short version
 
-The [Coway Airmega 400](/reviews/coway-airmega-400) is the large-room value champion; the [IQAir HealthPro Plus](/reviews/iqair-healthpro-plus) is the clinical reference — HyperHEPA H14 medical-grade filtration at more than double the price.
+The [Coway Airmega 400](/reviews/coway-airmega-400) is the large-room value champion; the [IQAir HealthPro Plus](/reviews/iqair-healthpro-plus) is the H14-rated pick (company-stated) — maker-rated HyperHEPA H14 filtration at more than double the price.
 
 ## When is the Coway Airmega 400 the right pick?
 
-You want verified large-room HEPA filtration at strong value, without paying for clinical-grade capture.
+You want verified large-room HEPA filtration at strong value, without paying for H14-rated capture.
 
 ## When is the IQAir HealthPro Plus the right pick?
 
-You need the deepest filtration — allergies, VOCs, chemical sensitivity or medical-grade reassurance.
+You need the deepest filtration — allergies, VOCs, chemical sensitivity or maker-rated H14 reassurance.
 
 ## Also worth comparing
 

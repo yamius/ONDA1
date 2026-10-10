@@ -13,7 +13,7 @@ const ringconnGen3: ToolReviewInput = {
   summary:
     'The RingConn Gen 3 is the most capable subscription-free ring RingConn has made. For a one-time $349 (no subscription) it tracks heart rate, HRV, SpO2, respiratory rate, skin temperature, stress and sleep, and adds genuinely new hardware: it is the first smart ring with a built-in haptic motor (silent alarms and alerts for elevated heart rate, inactivity and step goals), plus vascular-health and nighttime blood-pressure trend tracking, sleep-apnea pattern insights, a universal wireless charging case, and a longer battery ceiling (~10-14 days). It is cross-platform (iPhone and Android). It still is not the validated accuracy reference the way Oura is, but as a no-subscription package it is one of the best on the market.',
   scores: [
-    { criterionId: 'hrv-accuracy', score: 7.0, note: 'Continuous HRV for recovery and stress, improved over the Gen 2. Good, though not validated to Oura’s level.' },
+    { criterionId: 'hrv-accuracy', score: 7.0, note: 'Continuous HRV for recovery and stress, improved over the Gen 2. Good for trends, though only a preprint exists (on an earlier generation) and no peer-reviewed independent validation was found (as of October 2026).' },
     { criterionId: 'sensor', score: 7.5, note: 'Broad sensor suite — HR, HRV, SpO2, respiratory rate, skin temperature — plus a first-in-category haptic motor and new vascular / nighttime blood-pressure trend tracking.' },
     { criterionId: 'sleep-accuracy', score: 7.0, note: 'Solid sleep tracking with new sleep-apnea pattern insights; no independent sleep validation was found. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'data-access', score: 6.5, note: 'Data lives in the RingConn app with export; no truly open API.' },
@@ -50,7 +50,7 @@ Accuracy and polish. RingConn’s [HRV](/glossary/heart-rate-variability) and sl
 
 ## Who should buy RingConn Gen 3?
 
-Choose the RingConn Gen 3 if you want the strongest subscription-free ring — long battery, silent haptic alerts, a broad sensor suite — and you don’t want to pay Oura’s ongoing membership. If you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) and the best app, [Oura Ring 5](/reviews/oura-ring-5) still leads, at a subscription; for the previous, cheaper RingConn, see the [Gen 2](/reviews/ringconn-gen-2).
+Choose the RingConn Gen 3 if you want the strongest subscription-free ring — long battery, silent haptic alerts, a broad sensor suite — and you don’t want to pay Oura’s ongoing membership. If you want the ring line with the most published research — mostly on earlier generations, partly funded by Oura (the Ring 5 itself has not been separately validated) — and the best app, [Oura Ring 5](/reviews/oura-ring-5) still leads, at a subscription; for the previous, cheaper RingConn, see the [Gen 2](/reviews/ringconn-gen-2).
 
 ---
 
@@ -69,7 +69,7 @@ The science behind why HRV is the signal worth tracking.
   faq: [
     { q: "Is the RingConn Gen 3 better than the Gen 2?", a: "Yes — the Gen 3 adds a ~10–14 day battery, a first-in-category haptic motor for silent alerts, and new vascular and sleep-apnea insights. ONDA scores it 7.6/10, one of the strongest subscription-free rings." },
     { q: "Does the RingConn Gen 3 need a subscription?", a: "No — $349 one-time ($369 for metallic finishes) with no subscription, roughly half the long-term cost of an Oura." },
-    { q: "RingConn Gen 3 vs Oura — which is better?", a: "For a feature-rich, subscription-free ring with a long battery and silent haptic alerts, the Gen 3 is the strongest no-membership alternative to Oura. Oura still leads on the most refined app and sleep-stage accuracy." },
+    { q: "RingConn Gen 3 vs Oura — which is better?", a: "For a feature-rich, subscription-free ring with a long battery and silent haptic alerts, the Gen 3 is the strongest no-membership alternative to Oura. Oura still leads on the most refined app and has more published sleep research (mostly on earlier generations, partly funded by Oura)." },
   ],
   datePublished: '2026-09-06',
   dateModified: '2026-10-10',

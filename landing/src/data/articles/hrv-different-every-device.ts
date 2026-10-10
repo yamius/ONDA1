@@ -63,9 +63,9 @@ Most wearables use **PPG** (photoplethysmography): green LEDs reading blood-volu
 
 Here's the catch. PPG is excellent at average **heart rate** — but HRV needs the *exact* gap between consecutive beats, and small timing errors that don't matter for HR wreck the beat-to-beat math. In one validation, the Apple Watch Series 6 hit near-perfect agreement with ECG for heart rate (≈1% error at rest) but only **moderate** agreement for the beat-interval measure HRV depends on (≈31% error at rest; 2025 Sensors validation). Motion, cold hands, loose fit and skin differences all add noise — and the wrist moves far more than a ring or strap.
 
-The takeaway: **HR is easy, HRV is hard**, and a still overnight ring beats a daytime wrist spot-check for the beat-to-beat precision HRV requires.
+The takeaway: **HR is easy, HRV is hard**, and readings taken while you are still (overnight or at rest) give cleaner beat-to-beat data than readings taken on the move.
 
-*2026 update:* wrist hardware is closing the gap. Apple narrowed its HRV measurement-design disadvantage in 2026, and the newest validation work still puts a well-fitted overnight ring ahead — see the ranking below.
+*2026 update:* wrist hardware is closing the gap. Apple narrowed its HRV measurement-design disadvantage in 2026; in overnight recordings from 13 people (Dial 2025), the Oura Ring was among the closest to ECG — see the ranking below.
 
 ---
 
@@ -73,11 +73,11 @@ The takeaway: **HR is easy, HRV is hard**, and a still overnight ring beats a da
 
 Ranked, roughly, for HRV specifically:
 
-1. **Chest strap (e.g. Polar H10)** — consumer gold standard; near-ECG beat detection. Best if you want one trustworthy reading.
+1. **Chest strap (e.g. Polar H10)** — ECG electrodes; close to lab ECG at rest in young healthy adults. Best if you want one trustworthy reading.
 2. **Overnight ring or band (Oura, Whoop, Garmin)** — very good for *nightly trends*, measured in ideal conditions.
 3. **Daytime wrist spot-checks (Apple Watch default HRV)** — fine for a rough sense, noisy as an absolute; read the trend, never a single value.
 
-This ranking is backed by 2026 validation work: across nocturnal HR and HRV, the Oura Ring (Gen 3 and Gen 4) has shown the strongest agreement with reference measurement, ahead of Whoop, Garmin and Polar's wrist devices, with Whoop's wrist band a step behind the ring. The pattern holds: still, overnight, well-fitted wins.
+This ranking is consistent with one independent study (Dial 2025: overnight recordings from 13 people): across nocturnal HR and HRV, the Oura Ring (Gen 3 and Gen 4) agreed most closely with the ECG reference, ahead of Whoop, Garmin and Polar's wrist devices — a small sample, so treat it as one data point. The pattern holds: still, overnight, well-fitted wins.
 
 But the real answer is the one nobody selling a wearable will tell you: **the absolute number barely matters.** HRV is wildly individual — a "good" RMSSD for one person is another's bad night. What carries signal is *your own value, on one device, measured the same way, trending over weeks.*
 

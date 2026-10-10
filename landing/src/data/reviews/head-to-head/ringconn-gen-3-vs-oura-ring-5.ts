@@ -11,27 +11,27 @@ const gen3VsOura5: HeadToHeadInput = {
     'The RingConn Gen 3 has become the ring people cross-shop against Oura when they refuse a subscription. It brings a long battery, a haptic silent alarm and new vascular/sleep-apnea insights for a one-time $349. The Oura Ring 5 is the best-supported ring line and app reference but charges a mandatory membership on top of the ring. It’s own-it-outright vs the best experience you keep paying for.',
   jobDependentVerdict: true,
   verdict:
-    'No subscription and more hardware features vs the best-supported ring line and the best app. The RingConn Gen 3 wins on cost model (one-time $349, no fee), battery and extras like haptic alerts; Oura has better-supported accuracy for its earlier generations overnight (there is no independent check of the current model), and the Ring 5 wins on sensors and app polish, for $399 plus ~$6/month. Pick by whether you refuse a subscription or want the reference ring.',
+    'No subscription and more hardware features vs the best-supported ring line and the best app. The RingConn Gen 3 wins on cost model (one-time $349, no fee), battery and extras like haptic alerts; Oura has more published research on its earlier generations (there is no independent check of the current model), and the Ring 5 wins on sensors and app polish, for $399 plus ~$6/month. Pick by whether you refuse a subscription or want the most established ring.',
   bestForA:
     'Choose the RingConn Gen 3 if you want a feature-rich, subscription-free ring with a long battery and silent haptic alerts, and you refuse an ongoing fee.',
   bestForB:
-    'Choose the Oura Ring 5 if you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) and the most polished app, and the membership is acceptable.',
+    'Choose the Oura Ring 5 if you want the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated) and the most polished app, and the membership is acceptable.',
   axes: [
     { name: 'Subscription & cost', winner: 'a', note: 'RingConn Gen 3: one-time $349, no subscription. Oura Ring 5: $399 + ~$6/month. Over a few years RingConn is much cheaper and you owe nothing ongoing.' },
     { name: 'Sleep & HRV accuracy', winner: 'tie', note: 'Practically equal: neither the RingConn Gen 3 nor the Ring 5 has an independent validation of sleep staging or overnight HRV (as of October 2026). Earlier Oura generations have the better independent overnight evidence, but that does not transfer to the Ring 5 automatically.' },
     { name: 'App & ecosystem', winner: 'b', note: 'Oura’s app is the most polished and explanatory in the category, with the widest integrations. RingConn’s is capable but plainer.' },
     { name: 'Battery', winner: 'a', note: 'RingConn Gen 3: ~10-14 days. Oura Ring 5: ~6-9 days. RingConn lasts noticeably longer.' },
     { name: 'Extra hardware', winner: 'a', note: 'The Gen 3 adds a first-in-category haptic motor (silent alarm/alerts), plus vascular/blood-pressure trends and a wireless charging case — features the Ring 5 doesn’t have.' },
-    { name: 'Track record', winner: 'b', note: 'Oura has years of product history and support (earlier generations have the best independent overnight evidence; the Ring 5 itself is not validated); RingConn is newer to the premium tier, though the Gen 3 is well-reviewed.' },
+    { name: 'Track record', winner: 'b', note: 'Oura has years of product history and support (earlier generations have more published research, including one small independent ECG study; the Ring 5 itself is not validated); RingConn is newer to the premium tier, though the Gen 3 is well-reviewed.' },
   ],
   faq: [
     {
       q: 'RingConn Gen 3 or Oura Ring 5 — which should I buy?',
-      a: 'If you refuse a subscription and want a long battery plus extras like a haptic silent alarm, the RingConn Gen 3 (one-time $349). If you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) and the best app, the Oura Ring 5 ($399 + ~$6/month). RingConn wins the cost model and battery; Oura has better-supported accuracy for its earlier generations overnight (there is no independent check of the current model) and wins on polish.',
+      a: 'If you refuse a subscription and want a long battery plus extras like a haptic silent alarm, the RingConn Gen 3 (one-time $349). If you want the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated) and the best app, the Oura Ring 5 ($399 + ~$6/month). RingConn wins the cost model and battery; Oura has more published research on its earlier generations (there is no independent check of the current model) and wins on polish.',
     },
     {
       q: 'Is the RingConn Gen 3 accurate enough to replace Oura?',
-      a: 'For most people its sleep and HRV tracking are good, and it adds features Oura lacks. But earlier Oura generations have the best independent overnight evidence (the Ring 5 itself has not been validated), so if precision is your priority, Oura is the better-supported line — at the cost of a subscription.',
+      a: 'For most people its sleep and HRV tracking are good, and it adds features Oura lacks. But earlier Oura generations have more published research, including one small independent ECG study (the Ring 5 itself has not been validated), so if published evidence is your priority, Oura is the better-supported line — at the cost of a subscription.',
     },
     {
       q: 'How much cheaper is RingConn over time?',

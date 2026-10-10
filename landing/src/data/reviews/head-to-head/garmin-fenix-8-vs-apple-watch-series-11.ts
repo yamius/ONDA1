@@ -29,7 +29,7 @@ const garminFenix8VsAppleWatch11: HeadToHeadInput = {
   faq: [
     {
       q: 'Which is better for HRV — Fenix 8 or Apple Watch Series 11?',
-      a: 'The Fenix 8, mainly because of battery: it tracks HRV continuously overnight and runs for weeks, while the Apple Watch spot-checks HRV and needs daily charging, which competes with overnight wear. Neither is reference-grade — a ring or chest strap still leads on pure accuracy.',
+      a: 'The Fenix 8, mainly because of battery: it tracks HRV continuously overnight and runs for weeks, while the Apple Watch spot-checks HRV and needs daily charging, which competes with overnight wear. Neither is reference-grade — an ECG chest strap matched lab ECG more closely at rest in young healthy adults.',
     },
     {
       q: 'Is the Fenix 8 worth 2–3× the price for HRV?',
@@ -46,7 +46,7 @@ const garminFenix8VsAppleWatch11: HeadToHeadInput = {
   ],
   content: `## The short version
 
-This is a life-fit decision, not an accuracy one. The Fenix 8 wins for continuous overnight HRV, outdoor and training depth, and battery that never interrupts tracking. The Apple Watch Series 11 wins as an everyday smartwatch with the best health app and iPhone integration — for much less money. For HRV precision specifically, a ring or chest strap beats both.
+This is a life-fit decision, not an accuracy one. The Fenix 8 wins for continuous overnight HRV, outdoor and training depth, and battery that never interrupts tracking. The Apple Watch Series 11 wins as an everyday smartwatch with the best health app and iPhone integration — for much less money. For HRV precision specifically, an ECG chest strap is closer to lab ECG (at rest, in young healthy adults).
 
 ## When the Fenix 8 is the pick
 

@@ -12,12 +12,12 @@ const bestVagusNerveStimulators2026: Comparison = {
     {
       reviewSlug: 'nurosym',
       award: 'Best overall',
-      takeaway: 'The largest independent trial record in consumer ear tVNS (mostly earlier Parasym models) — research-grade auricular stimulation in a deliberately spartan form (€700, about $820).',
+      takeaway: 'The largest independent trial record in consumer ear tVNS (mostly earlier Parasym models) — auricular stimulation of the kind used in research studies, in a deliberately spartan form (€700, about $820).',
     },
     {
       reviewSlug: 'gammacore-sapphire-cv',
       award: 'Best clinical (prescription)',
-      takeaway: 'FDA-cleared prescription neck device for migraine (ages 12+), cluster headache and two rare headache disorders — the clinical reference for cervical stimulation.',
+      takeaway: 'FDA-cleared prescription neck device for migraine (ages 12+), cluster headache and two rare headache disorders.',
     },
     {
       reviewSlug: 'truvaga-350',

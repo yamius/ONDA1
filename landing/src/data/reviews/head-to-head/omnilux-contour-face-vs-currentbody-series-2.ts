@@ -8,7 +8,7 @@ const omniluxVsCurrentbody: HeadToHeadInput = {
   description:
     'Omnilux Contour Face vs CurrentBody Series 2 — face-only price vs integrated neck flap. ONDA breaks down the premium silicone red light mask top two.',
   intro:
-    'Omnilux Contour Face and CurrentBody Series 2 are the two flexible-silicone face masks users compare when picking premium red light therapy. Both deliver red 633 nm + near-infrared 830 nm in medical-grade silicone. Neither has an independent trial of the mask itself; the real difference is the package: Omnilux is the cheaper face-only mask, while CurrentBody bets on integrated neck flap and consumer-market scale.',
+    'Omnilux Contour Face and CurrentBody Series 2 are the two flexible-silicone face masks users compare when picking premium red light therapy. Both deliver red 633 nm + near-infrared 830 nm in flexible silicone. Neither has an independent trial of the mask itself; the real difference is the package: Omnilux is the cheaper face-only mask, while CurrentBody bets on integrated neck flap and consumer-market scale.',
   jobDependentVerdict: true,
   verdict:
     'Price vs consumer features. Omnilux Contour Face for the lower face-only price. CurrentBody Series 2 for integrated neck flap and largest consumer customer base.',
@@ -21,7 +21,7 @@ const omniluxVsCurrentbody: HeadToHeadInput = {
     { name: 'Wavelength coverage', winner: 'tie', note: 'Both use red 633 nm + near-infrared 830 nm — the pair most used in skin studies. Same spectrum.' },
     { name: 'Neck coverage', winner: 'b', note: 'CurrentBody: integrated neck flap on Series 2. Omnilux: neck flap sold separately as add-on.' },
     { name: 'LED count', winner: 'tie', note: '132 LEDs each in similar distribution. Comparable raw coverage on the face proper.' },
-    { name: 'Comfort', winner: 'tie', note: 'Both medical-grade flexible silicone — comparable comfort. Personal preference rather than product difference.' },
+    { name: 'Comfort', winner: 'tie', note: 'Both flexible silicone — comparable comfort. Personal preference rather than product difference.' },
     { name: 'Consumer market scale', winner: 'b', note: 'CurrentBody: largest customer base, refined through user-feedback iterations. Omnilux: dermatology-clinic focus rather than consumer scale.' },
     { name: 'Price', winner: 'a', note: 'Omnilux Contour Face alone: $395. CurrentBody Series 2 with neck: $470. Omnilux cheaper before adding neck flap.' },
   ],

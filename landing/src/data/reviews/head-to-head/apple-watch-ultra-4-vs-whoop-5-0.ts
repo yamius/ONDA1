@@ -28,7 +28,7 @@ const ultra4VsWhoop5: HeadToHeadInput = {
   faq: [
     {
       q: 'Is the Apple Watch Ultra 4 or Whoop 5.0 better for HRV?',
-      a: 'For a dedicated overnight recovery signal, the Whoop 5.0 — it builds its recovery signal from HRV measured during sleep. The Ultra 4 is now close in kind: it samples HRV about 24× more often, Apple Health now carries an RMSSD value, and its ~50-hour battery makes night-after-night wear practical. A finger ring or ECG chest strap is still more precise than either wrist device.',
+      a: 'For a dedicated overnight recovery signal, the Whoop 5.0 — it builds its recovery signal from HRV measured during sleep. The Ultra 4 is now close in kind: it samples HRV about 24× more often, Apple Health now carries an RMSSD value, and its ~50-hour battery makes night-after-night wear practical. An ECG chest strap matched lab ECG more closely in young healthy adults at rest, and the Oura ring line has more published overnight validation than either wrist device.',
     },
     {
       q: 'Can the Apple Watch Ultra 4 replace a Whoop?',
@@ -49,7 +49,7 @@ Older Apple Watches reported sparse SDNN, which never lined up with Whoop’s RM
 
 ## The honest setup
 
-If you train on a daily recovery score and want nothing on your wrist but the sensor, Whoop is the purer tool. If you would use the Ultra’s rugged, outdoor and smartwatch features anyway, its HRV is now usable as a personal trend without paying a membership. If you only want the most precise overnight HRV, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
+If you train on a daily recovery score and want nothing on your wrist but the sensor, Whoop is the purer tool. If you would use the Ultra’s rugged, outdoor and smartwatch features anyway, its HRV is now usable as a personal trend without paying a membership. If overnight HRV is your only goal, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
   dateModified: '2026-10-10',

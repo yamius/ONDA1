@@ -9,9 +9,9 @@ const breathwrk: ToolReviewInput = {
   description:
     'ONDA review of Breathwrk — the largest structured breathwork library on the consumer market — science-informed copy, backed by one published study on cyclic sighing, across calm, energy, sleep and performance. Scored on library, technique coverage, evidence and value.',
   verdict:
-    'Best breathwork library overall — biggest session catalogue, science-informed copy, backed by one published study on cyclic sighing, full technique coverage. The category reference for structured daily practice.',
+    'Best breathwork library overall — biggest session catalogue, science-informed copy, backed by one published study on cyclic sighing, full technique coverage. A large, long-running library for structured daily practice.',
   summary:
-    'Breathwrk is the structured breathwork reference — hundreds of guided sessions across calm, energy, sleep, focus and performance, science-informed copy backed by one published study on cyclic sighing, and the broadest technique coverage in the category (box, 4-7-8, Wim Hof rounds, Tummo, cyclic sighing, coherent breathing, Buteyko). Apple Watch support. $49/year. The biggest, most defensible app in the breathwork category.',
+    'Breathwrk is a large structured-breathwork library — hundreds of guided sessions across calm, energy, sleep, focus and performance, science-informed copy backed by one published study on cyclic sighing, and the broadest technique coverage in the category (box, 4-7-8, Wim Hof rounds, Tummo, cyclic sighing, coherent breathing, Buteyko). Apple Watch support. $49/year. The biggest, most defensible app in the breathwork category.',
   scores: [
     { criterionId: 'session-library', score: 9.0, note: 'Largest structured breathwork library — hundreds of guided sessions organised by goal (calm, sleep, energy, focus, performance) and technique. New content adds monthly.' },
     { criterionId: 'technique-coverage', score: 9.0, note: 'Full coverage — box breathing, 4-7-8, Wim Hof rounds, Tummo, cyclic sighing (Stanford-validated), coherent breathing, Buteyko, alternate-nostril. Almost no documented technique missing.' },
@@ -41,7 +41,7 @@ const breathwrk: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Breathwrk is the structured breathwork reference — biggest library, broadest technique coverage, science-informed copy backed by one published study on cyclic sighing. The Stanford cyclic-sighing trial is cited properly; the copy also leans on polyvagal theory (a debated model) and Huberman lab protocols, which earn no evidence credit in our scoring. The library size and Apple Watch native support make it the rational default for daily breathwork practice.
+Breathwrk is a large structured-breathwork library — biggest library, broadest technique coverage, science-informed copy backed by one published study on cyclic sighing. The Stanford cyclic-sighing trial is cited properly; the copy also leans on polyvagal theory (a debated model) and Huberman lab protocols, which earn no evidence credit in our scoring. The library size and Apple Watch native support make it the rational default for daily breathwork practice.
 
 ## What are the downsides of Breathwrk?
 

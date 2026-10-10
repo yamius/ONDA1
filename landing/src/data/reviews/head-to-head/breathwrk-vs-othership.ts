@@ -45,7 +45,7 @@ const breathwrkVsOthership: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Both are premium-tier breathwork apps. Breathwrk is the structured-library reference. Othership is the cinematic-experience reference.
+Both are premium-tier breathwork apps. Breathwrk is a large structured library. Othership is built around cinematic, experience-led sessions.
 
 ## When is Breathwrk the right pick?
 

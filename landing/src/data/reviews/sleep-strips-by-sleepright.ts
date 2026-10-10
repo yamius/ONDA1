@@ -17,7 +17,7 @@ const sleepRightStrips: ToolReviewInput = {
     { criterionId: 'breathing-mechanism', score: 7.5, note: 'Internal mechanical dilation. Less refined than Mute\'s polymer stent but the core mechanism is sound.' },
     { criterionId: 'evidence-grounding', score: 5.5, note: 'FDA registered. Limited peer-reviewed clinical literature on the specific device.' },
     { criterionId: 'form-factor', score: 6.0, note: 'Internal cone inserts. Comes in adjustable sizing. Two-piece (one per nostril) design.' },
-    { criterionId: 'material-safety', score: 6.5, note: 'Medical-grade polymer. Reusable for ~3 months per pair. Nostril-irritation reports moderate; cone design less anatomically optimised than Mute.' },
+    { criterionId: 'material-safety', score: 6.5, note: 'What the company calls medical-grade polymer. Reusable for ~3 months per pair. Nostril-irritation reports moderate; cone design less anatomically optimised than Mute.' },
     { criterionId: 'value', score: 8.0, note: '~$12 for reusable pair lasting ~3 months = ~$0.15/night. Best per-night value in internal nasal dilators.' },
   ],
   pros: [
