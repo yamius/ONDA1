@@ -46,11 +46,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "anterior-cingulate-core-coherence-monitoring": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-10-08T01:38:48+02:00"
+    "modified": "2026-10-10T18:18:04+02:00"
   },
   "anti-entropy-neural-architecture": {
     "published": "2026-03-30T20:35:54Z",
-    "modified": "2026-10-06T15:15:46+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "anxiety-panic-breathing-hrv": {
     "published": "2026-09-17T14:44:39+02:00",
@@ -58,7 +58,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "app-between-meditation-and-fitness-tracker": {
     "published": "2026-09-19T01:18:42+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-10T05:57:01+02:00"
   },
   "apple-watch-recovery-hrv-vs-overall-hrv": {
     "published": "2026-09-17T17:21:46+02:00",
@@ -70,7 +70,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "baroreflex-01hz-shift": {
     "published": "2026-03-24T13:06:24Z",
-    "modified": "2026-10-06T18:30:38+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "bhastrika-pranayama-brain-anxiety": {
     "published": "2026-09-24T12:08:14+02:00",
@@ -90,7 +90,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "breathing-altitude-acclimatization": {
     "published": "2026-09-22T18:48:54+02:00",
-    "modified": "2026-10-07T13:13:18+02:00"
+    "modified": "2026-10-10T05:44:24+02:00"
   },
   "breathing-exercises-older-adults": {
     "published": "2026-09-22T08:22:18+02:00",
@@ -210,7 +210,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "electric-medicine-neuromodulation": {
     "published": "2026-03-04T14:27:07+01:00",
-    "modified": "2026-10-08T01:19:54+02:00"
+    "modified": "2026-10-10T18:18:04+02:00"
   },
   "endocrine-social-drive-oxytocin-testosterone": {
     "published": "2026-03-10T13:31:48Z",
@@ -234,7 +234,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "fault-tolerant-human-hrv-buffer": {
     "published": "2026-03-24T12:53:43Z",
-    "modified": "2026-10-08T13:05:49+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "femtech-cyclical-architecture": {
     "published": "2026-03-04T21:35:50+01:00",
@@ -322,7 +322,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hpa-axis-control-cortisol-aggression": {
     "published": "2026-03-10T14:37:54Z",
-    "modified": "2026-10-07T07:44:50+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "hrv-breathing-cold-honest-limits": {
     "published": "2026-09-22T07:55:50+02:00",
@@ -330,7 +330,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hrv-different-every-device": {
     "published": "2026-06-04T01:14:45+02:00",
-    "modified": "2026-10-08T23:47:16+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "hrv-harmony-of-rhythms": {
     "published": "2026-09-22T07:30:24+02:00",
@@ -354,7 +354,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "interoceptive-precision-sensor-calibration": {
     "published": "2026-04-21T12:25:38Z",
-    "modified": "2026-10-08T01:38:48+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "jhana-meditation-stages": {
     "published": "2026-09-23T20:27:09+02:00",
@@ -362,11 +362,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "longevity-hardware-cellular-cleanup": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-08T01:38:48+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "longevity-protocol-biological-clock-reset": {
     "published": "2026-03-24T10:01:04Z",
-    "modified": "2026-10-07T07:44:50+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "mbsr-mindfulness-clinical-evidence": {
     "published": "2026-09-23T20:27:09+02:00",
@@ -422,11 +422,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "mitochondrial-biogenesis-cellular-power-grid": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-08T01:38:48+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "mitochondrial-dna-red-light": {
     "published": "2026-02-28T20:22:39+01:00",
-    "modified": "2026-10-08T01:19:54+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "molecular-psychology-hormonal-firmware": {
     "published": "2026-05-18T08:38:26+02:00",
@@ -534,7 +534,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "onda-report-for-your-sports-doctor": {
     "published": "2026-09-26T13:37:15+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-10T05:57:01+02:00"
   },
   "onda-report-for-your-therapist-or-psychiatrist": {
     "published": "2026-09-26T16:06:06+02:00",
@@ -670,7 +670,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "wearables-train-not-just-track": {
     "published": "2026-09-19T01:31:51+02:00",
-    "modified": "2026-10-06T15:15:46+02:00"
+    "modified": "2026-10-10T05:57:01+02:00"
   },
   "what-is-my-chronotype": {
     "published": "2026-06-04T23:17:31+02:00",
@@ -678,7 +678,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "what-to-do-after-low-hrv-reading": {
     "published": "2026-09-19T00:55:37+02:00",
-    "modified": "2026-10-08T23:47:16+02:00"
+    "modified": "2026-10-10T18:41:20+02:00"
   },
   "what-your-apple-watch-records": {
     "published": "2026-09-05T18:33:27+02:00",
@@ -1610,7 +1610,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/about": {
     "published": "2026-02-23T14:18:07+01:00",
-    "modified": "2026-09-06T17:46:56+02:00"
+    "modified": "2026-10-11T00:37:28+02:00"
   },
   "page:/glossary": {
     "published": "2026-02-22T18:17:04+01:00",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-10T03:36:53+02:00"
+    "modified": "2026-10-10T05:44:24+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1674,15 +1674,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/science": {
     "published": "2026-10-04T21:18:25+02:00",
-    "modified": "2026-10-08T16:37:20+02:00"
+    "modified": "2026-10-10T23:49:51+02:00"
   },
   "page:/science/:kind": {
     "published": "2026-10-04T21:18:25+02:00",
-    "modified": "2026-10-08T16:37:20+02:00"
+    "modified": "2026-10-10T23:49:51+02:00"
   },
   "page:/science/:kind/:slug": {
     "published": "2026-10-04T21:18:25+02:00",
-    "modified": "2026-10-08T16:37:20+02:00"
+    "modified": "2026-10-10T23:49:51+02:00"
   },
   "page:/ai-apps": {
     "published": "2026-10-03T19:24:51+02:00",
@@ -1698,11 +1698,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/product": {
     "published": "2026-09-06T18:55:14+02:00",
-    "modified": "2026-10-05T10:11:22+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "page:/faq": {
     "published": "2026-09-06T19:08:55+02:00",
-    "modified": "2026-10-05T10:55:46+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "page:/people/yakiv-bilenko": {
     "published": "2026-09-06T20:46:58+02:00",
@@ -1710,7 +1710,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/hrv-biofeedback": {
     "published": "2026-09-06T18:43:00+02:00",
-    "modified": "2026-10-05T23:51:56+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "page:/resonance-breathing": {
     "published": "2026-09-06T18:43:00+02:00",
@@ -1722,11 +1722,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/apple-watch-hrv-biofeedback": {
     "published": "2026-09-07T20:12:03+02:00",
-    "modified": "2026-10-05T10:55:46+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "page:/compare": {
     "published": "2026-09-06T18:55:14+02:00",
-    "modified": "2026-10-05T10:11:22+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "page:/tools": {
     "published": "2026-06-03T18:28:47+02:00",
@@ -1742,11 +1742,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/compare/:slug": {
     "published": "2026-09-06T18:55:14+02:00",
-    "modified": "2026-10-05T10:11:22+02:00"
+    "modified": "2026-10-10T18:46:48+02:00"
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-10T05:08:33+02:00"
+    "modified": "2026-10-11T00:09:00+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",
@@ -1785,7 +1785,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/water": {
-    "published": "2026-10-10T01:22:04.520Z",
+    "published": "2026-10-10T22:52:17.711Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/alcohol": {
@@ -1833,15 +1833,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-27T20:00:23+02:00"
   },
   "tool:/tools/digital-detox": {
-    "published": "2026-10-10T01:22:04.022Z",
+    "published": "2026-10-10T22:52:17.624Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/burnout": {
-    "published": "2026-10-10T01:22:03.921Z",
+    "published": "2026-10-10T22:52:17.619Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/nervous-system": {
-    "published": "2026-10-10T01:22:04.150Z",
+    "published": "2026-10-10T22:52:17.660Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/wim-hof": {

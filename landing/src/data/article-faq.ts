@@ -2373,7 +2373,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "How do I know if late eating affects me specifically?",
       answer:
-        "Compare early-dinner and late-dinner nights against your own baseline while keeping bedtime, alcohol and training similar. With an Apple Watch, ONDA reads overnight heart rate and HRV from Apple Health and holds a personal 14-day baseline, so you can see whether late meals consistently push your sleeping pulse up or HRV down relative to your normal.",
+        "Compare early-dinner and late-dinner nights against your own baseline while keeping bedtime, alcohol and training similar. ONDA reads overnight heart rate and HRV from Apple Health (Apple Watch or another tracker that syncs there) and holds a personal 14-day baseline, so you can see whether late meals consistently push your sleeping pulse up or HRV down relative to your normal.",
     },
     {
       question: "Is late-night eating actually bad for you?",

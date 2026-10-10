@@ -129,6 +129,7 @@ async function main() {
   mkdirSync(outDir, { recursive: true })
   let n = 0
   for (const t of TOOLS) {
+    if (t.path) continue // lives outside /tools, has its own OG image
     const svg = toolSvg(t.name, t.category, t.badge)
     const png = await sharp(Buffer.from(svg)).png({ quality: 90 }).toBuffer()
     writeFileSync(join(outDir, `${t.slug}.png`), png)

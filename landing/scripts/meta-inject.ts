@@ -35,7 +35,7 @@ import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
 import { SERP_OVERRIDES } from '../src/data/serp-overrides'
 import { PRODUCT_I18N } from '../src/data/product-i18n'
 import { FAQ_I18N } from '../src/data/faq-i18n'
-import { TOOLS } from '../src/data/tools'
+import { TOOLS, toolPath } from '../src/data/tools'
 import { TOOLS_I18N, TOOLS_EN } from '../src/data/tools-i18n'
 import { localizedToolCard } from '../src/data/tools-localized'
 import { COMPARE_I18N } from '../src/data/compare-i18n'
@@ -50,7 +50,7 @@ import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
 import { CONNECT_INDEX_META, connectJsonLd, getConnectDevice } from '../src/data/connect-devices'
 import { appleWatchHrvJsonLd } from '../src/pages/AppleWatchHrvBiofeedbackPage'
 import { researchJsonLd } from '../src/pages/ResearchPage'
-import { founderJsonLd } from '../src/pages/FounderPage'
+import { founderJsonLd, PERSON_DESC } from '../src/pages/FounderPage'
 import { productJsonLd } from '../src/pages/ProductPage'
 import { howItWorksJsonLd } from '../src/pages/HowItWorksPage'
 import { EMOTON_FAQ } from '../src/data/emoton-faq'
@@ -1078,15 +1078,12 @@ function buildPersonJsonLd(): string {
     url: AUTHOR_URL,
     sameAs: AUTHOR_SAME_AS,
     jobTitle: 'Founder & CEO, ONDA Life',
-    description:
-      'Yakiv Bilenko — architect (Kyiv National University of Construction and Architecture, KNUCA, 2006) and Gestalt therapist (MIGIS institute, 2018), founder and CEO of ONDA Life. As an architect he researches structured forms — domes, spheres, pyramids, zomes — that influence human mental, physical and psychological states; as a Gestalt and systemic-family therapist he develops programs for psychological development and self-regulation. He leads ONDA\'s product and engineering. ONDA\'s physiology and neuroscience are overseen by its scientific advisor — Yakiv\'s own expertise is architecture, psychology and Gestalt therapy, not clinical neuroscience.',
+    description: PERSON_DESC,
     // knowsAbout is deliberately his ACTUAL domains — architecture, Gestalt /
     // systemic therapy, psychology, and the applied breath/HRV practice he
-    // builds and writes about. Neuroscience is intentionally NOT claimed here:
-    // that authority belongs to the scientific advisor, not the founder.
+    // builds and writes about. Neuroscience is intentionally NOT claimed here.
     knowsAbout: [
       'architecture',
-      'architecture and human psychological states',
       'Gestalt therapy',
       'systemic family therapy',
       'psychology',
@@ -2027,7 +2024,7 @@ function getMetaForRouteBase(route: string): RouteMeta {
         url,
         items: TOOLS.map((t) => {
           const loc = localizedToolCard(t.slug, lang)
-          return { url: loc ? `${SITE_URL}/${lang}/tools/${t.slug}` : `${SITE_URL}/tools/${t.slug}`, name: loc ? loc.name : t.name }
+          return { url: loc ? `${SITE_URL}/${lang}${toolPath(t)}` : `${SITE_URL}${toolPath(t)}`, name: loc ? loc.name : t.name }
         }),
       },
     }
@@ -2043,7 +2040,7 @@ function getMetaForRouteBase(route: string): RouteMeta {
         name: TOOLS_EN.h1,
         description: TOOLS_EN.metaDescription,
         url,
-        items: TOOLS.map((t) => ({ url: `${SITE_URL}/tools/${t.slug}`, name: t.name })),
+        items: TOOLS.map((t) => ({ url: `${SITE_URL}${toolPath(t)}`, name: t.name })),
       },
     }
   }

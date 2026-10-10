@@ -15,6 +15,7 @@ import { whmToolCopy } from './whm-tool-i18n'
 import { sleepToolCopy } from './sleep-tool-i18n'
 import { caffToolCopy } from './caff-tool-i18n'
 import { chronoToolCopy } from './chrono-tool-i18n'
+import emotonCard from './emoton-tool-card.json'
 
 type Meta = { meta: { appName: string; description: string } }
 const COPY: Record<string, (l: Lang) => Meta> = {
@@ -34,10 +35,11 @@ const COPY: Record<string, (l: Lang) => Meta> = {
 /** Localized {name, blurb} for a tool card, or null when the tool is English-only. */
 export function localizedToolCard(slug: string, lang: Lang): { name: string; blurb: string } | null {
   if (lang === 'en') return null
+  if (slug === 'emoton') return (emotonCard as Record<string, { name: string; blurb: string }>)[lang] ?? null
   const get = COPY[slug]
   if (!get) return null
   const c = get(lang)
   return { name: c.meta.appName, blurb: c.meta.description }
 }
 
-export const LOCALIZED_TOOL_SLUGS: readonly string[] = Object.keys(COPY)
+export const LOCALIZED_TOOL_SLUGS: readonly string[] = [...Object.keys(COPY), 'emoton']

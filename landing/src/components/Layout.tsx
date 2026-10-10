@@ -280,13 +280,6 @@ export function Layout() {
               )
             })}
           </div>
-          <TransitionLink
-            to={langHref('/emoton', currentLang)}
-            onClick={goEmoton}
-            className="-mx-4 block border-b border-white/5 bg-gradient-to-r from-green-400/70 to-transparent px-4 py-3 text-sm font-bold text-white transition-opacity hover:opacity-80"
-          >
-            {t('menu.emoton', { defaultValue: 'Emoton' })}
-          </TransitionLink>
           <a
             href={downloadHref}
             target="_blank"
@@ -316,13 +309,7 @@ export function Layout() {
               <span className="text-cyan-400">ONDA</span>
               <span className="text-green-400"> LIFE</span>
             </TransitionLink>
-            <TransitionLink
-              to={langHref('/emoton', currentLang)}
-              onClick={goEmoton}
-              className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-3 py-1.5 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:px-4 md:py-1.5 md:text-sm"
-            >
-              {t('menu.emoton', { defaultValue: 'Emoton' })}
-            </TransitionLink>
+            {/* Header slot intentionally empty (task 073; step 2 adds "Connect"). */}
           </div>
         </header>
         <div className="pt-6">
