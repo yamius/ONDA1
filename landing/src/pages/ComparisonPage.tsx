@@ -28,7 +28,7 @@ import Markdown from 'react-markdown'
 import { NotFoundPage } from './NotFoundPage'
 import { readComparison, getReviewsForComparison, getReviewBySlug } from '../lib/review-content'
 import { getCriteria } from '../data/reviews/criteria'
-import { rankPositions } from '../data/reviews/scoring'
+import { rankPositions, scoreComparison } from '../data/reviews/scoring'
 import { langFromPath, langHref, homePathFor } from '../i18n'
 
 export function ComparisonPage() {
@@ -54,6 +54,15 @@ export function ComparisonPage() {
   const rankedPickReviews = comparison.picks.map((p) => getReviewBySlug(p.reviewSlug)).filter((r): r is NonNullable<typeof r> => !!r)
   const rankPos = rankPositions(rankedPickReviews)
   const rankBySlug = new Map(rankedPickReviews.map((r, i) => [r.slug, rankPos[i]]))
+  // Top two within PRACTICALLY_EQUAL_GAP (0.1): awards stay, but the top of
+  // the list says the leaders are practically equal by ONDA score.
+  const topScores = scoreComparison(rankedPickReviews)
+  const topEqualLine = topScores.practicallyEqual && topScores.ranked.length > 1
+    ? (tReviews('ui.practicallyEqual', {
+        scores: `${topScores.ranked[0].name} ${topScores.ranked[0].overallScore.toFixed(1)}${tReviews('ui.scoresAnd', { defaultValue: ' and ' }) as string}${topScores.ranked[1].name} ${topScores.ranked[1].overallScore.toFixed(1)}`,
+        defaultValue: 'Practically equal by ONDA score ({{scores}})',
+      }) as string)
+    : null
 
   return (
     <div className="mx-auto max-w-4xl px-4 pb-16 pt-6 md:px-6">
@@ -128,6 +137,11 @@ export function ComparisonPage() {
         <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-green/90">
           {tReviews('ui.topPicks')}
         </h2>
+        {topEqualLine && (
+          <p className="mb-4 font-mono text-xs text-white/60" data-testid="top-practically-equal">
+            {topEqualLine}
+          </p>
+        )}
         <div className="grid gap-3">
           {comparison.picks.map((pick) => {
             const r = getReviewBySlug(pick.reviewSlug)
