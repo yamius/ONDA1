@@ -17,7 +17,7 @@ export const SHORT_DESCRIPTION = 'HRV by age compared with Fitbit users, guided 
 const SERVER_INFO = {
   name: 'onda-life',
   title: 'ONDA Life',
-  version: '1.7.0',
+  version: '1.8.0',
   description: SHORT_DESCRIPTION,
   websiteUrl: 'https://onda-life.com',
   icons: [{ src: 'https://onda-chatgpt.vercel.app/icon-512.png', mimeType: 'image/png', sizes: ['512x512'] }],
