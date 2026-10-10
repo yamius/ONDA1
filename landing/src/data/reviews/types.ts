@@ -257,6 +257,9 @@ export interface Comparison {
   picks: ComparisonPick[]
   /** Closing editorial verdict. */
   verdict: string
+  /** Optional one-liner shown under the "Practically equal" line: who each
+   *  of the tied leaders suits. Only facts already stated in their reviews. */
+  topEqualWhoSuits?: string
   /** Drives FAQPage JSON-LD plus an on-page FAQ block. */
   faq: ComparisonFAQ[]
   /** Markdown body — methodology recap, how picks were chosen, etc. */
