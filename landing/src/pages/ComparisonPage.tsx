@@ -159,6 +159,11 @@ export function ComparisonPage() {
             {topEqualLine}
           </p>
         )}
+        {topEqualLine && comparison.topEqualWhoSuits && (
+          <p className="mb-4 font-mono text-xs text-white/60" data-testid="top-who-suits">
+            {tField('topEqualWhoSuits', comparison.topEqualWhoSuits)}
+          </p>
+        )}
         <div className="grid gap-3">
           {comparison.picks.filter((p) => !p.comparisonOnly).map((pick) => {
             const r = getReviewBySlug(pick.reviewSlug)
