@@ -15,7 +15,7 @@ const dreamRecovery: ToolReviewInput = {
   scores: [
     { criterionId: 'adhesion-comfort', score: 8.0, note: 'Silicone-gel adhesive is gentler on skin than acrylic; good adhesion on clean skin. Less beard-grip than Hostage Tape — silicone gel doesn\'t hold stubble.' },
     { criterionId: 'breathing-mechanism', score: 7.5, note: 'Full-seal design. No porous center port. Designed for users committed to nasal-only breathing.' },
-    { criterionId: 'evidence-grounding', score: 6.5, note: 'Brand-funded research and biohacker testimonials. No FDA registration. Less regulatory standing than Somnifix.' },
+    { criterionId: 'evidence-grounding', score: 6.0, note: 'Brand-funded research (which does not count as evidence in ONDA scores) and biohacker testimonials; no independent trials of the tape. On par with Hostage Tape.' },
     { criterionId: 'form-factor', score: 8.0, note: 'Single-piece strip with reusable silicone-gel construction — 2–3 uses per strip in practice. Reduces per-night cost meaningfully.' },
     { criterionId: 'material-safety', score: 9.0, note: 'Silicone-gel adhesive — among the gentlest in category. Hypoallergenic, latex-free, low skin-reaction reports. Best fit for sensitive skin.' },
     { criterionId: 'value', score: 7.0, note: '~$30 for 10 strips × ~3 uses = ~$1/night effective. Premium pricing offset by reusability.' },

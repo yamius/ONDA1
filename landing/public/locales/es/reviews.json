@@ -51,7 +51,8 @@
         "value": "Precio — pago único o suscripción — sopesado frente a lo que ofrece la app."
       }
     },
-    "scoreRulesBody": "Cómo se calcula la cifra: la media ponderada se redondea a un decimal, la mitad hacia arriba (8,35 pasa a 8,4). Si dos productos terminan con la misma puntuación, queda por delante el que tiene más nota en el criterio de evidencia de esa categoría; si también empatan ahí, comparten puesto y se muestran como empate. En los cara a cara, una diferencia de 0,1 o menos se muestra como prácticamente iguales. En raras ocasiones el editor puede ajustar la media como máximo ±0,3 puntos; cualquier ajuste se muestra en la reseña junto con su motivo."
+    "scoreRulesBody": "Cómo se calcula la cifra: la media ponderada se redondea a un decimal, la mitad hacia arriba (8,35 pasa a 8,4). Si dos productos terminan con la misma puntuación, queda por delante el que tiene más nota en el criterio de evidencia de esa categoría; si también empatan ahí, comparten puesto y se muestran como empate. En los cara a cara, una diferencia de 0,1 o menos se muestra como prácticamente iguales. En raras ocasiones el editor puede ajustar la media como máximo ±0,3 puntos; cualquier ajuste se muestra en la reseña junto con su motivo.",
+    "evidenceRulesBody": "Reglas de evidencia en todas las categorías: los estudios realizados o financiados por el fabricante no cuentan como evidencia. Un dispositivo sin validación independiente propia obtiene como máximo 7,5 en un criterio de precisión si sus generaciones anteriores se validaron de forma independiente, y como máximo 7,0 si no. El registro y la autorización (clearance) de la FDA son neutrales: no suman ni restan; un producto pierde puntos solo si el fabricante tergiversa su estatus regulatorio (por ejemplo, llama «aprobación de la FDA» a un registro), y la reseña lo indica."
   },
   "ui": {
     "updated": "Actualizado",

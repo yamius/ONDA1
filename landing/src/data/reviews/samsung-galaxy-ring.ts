@@ -13,9 +13,9 @@ const samsungGalaxyRing: ToolReviewInput = {
   summary:
     'The Samsung Galaxy Ring is the closest thing to an Oura Ring 4 without the subscription. It is a comfortable ring with competent overnight HRV and sleep tracking — but it is tied to Samsung Health and Android, and its accuracy trails Oura.',
   scores: [
-    { criterionId: 'hrv-accuracy', score: 7.0, note: 'Overnight optical HRV from the ring — competent, though independent validation still favours the Oura Ring 4.' },
+    { criterionId: 'hrv-accuracy', score: 7.0, note: 'Overnight optical HRV from the ring; no independent validation of the Galaxy Ring against ECG was found (as of October 2026). ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'sensor', score: 7.5, note: 'Optical PPG in a ring form factor; a clean overnight signal.' },
-    { criterionId: 'sleep-accuracy', score: 7.0, note: 'Good sleep tracking, a small step behind the category-leading Oura.' },
+    { criterionId: 'sleep-accuracy', score: 7.0, note: 'Good everyday sleep tracking, but no independent sleep validation of the Galaxy Ring was found. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'data-access', score: 6.0, note: 'Built around Samsung Health with no open API and limited export — data largely stays inside the app.' },
     { criterionId: 'wearability', score: 8.0, note: 'A comfortable ring for around-the-clock wear, with a multi-day battery.' },
     { criterionId: 'app-ux', score: 7.0, note: 'Samsung Health is clear enough, but tied to the Samsung and Android ecosystem.' },

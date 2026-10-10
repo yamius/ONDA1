@@ -372,7 +372,7 @@ const RED_LIGHT_CRITERIA: Criterion[] = [
     label: 'Evidence and regulatory status',
     weight: 0.15,
     description:
-      'Quality of the published photobiomodulation literature backing the device’s claimed indications, and how honestly the manufacturer represents what its panel does versus the published evidence. FDA registration or listing earns no points, an FDA clearance is noted only as a fact about a specific indication, and studies run or funded by the manufacturer do not count as evidence.',
+      'Quality of the published photobiomodulation literature backing the device’s claimed indications, and how honestly the manufacturer represents what its panel does versus the published evidence. FDA registration or clearance is neutral (no points added or removed unless the maker misrepresents it), and studies run or funded by the manufacturer do not count as evidence.',
   },
   {
     id: 'value',
@@ -470,7 +470,7 @@ const SAUNA_CRITERIA: Criterion[] = [
     label: 'Evidence and regulatory status',
     weight: 0.1,
     description:
-      'Quality of the published sauna and IR-therapy literature backing the device’s claimed benefits, and honest representation of indication versus marketing language. FDA registration earns no points; an FDA clearance is noted only as a fact about a specific indication.',
+      'Quality of the published sauna and IR-therapy literature backing the device’s claimed benefits, and honest representation of indication versus marketing language. FDA registration or clearance is neutral (no points added or removed unless the maker misrepresents it), and studies run or funded by the manufacturer do not count as evidence.',
   },
   {
     id: 'value',
@@ -667,7 +667,7 @@ const RED_LIGHT_MASK_CRITERIA: Criterion[] = [
     label: 'Clinical evidence and regulatory standing',
     weight: 0.2,
     description:
-      'Published peer-reviewed studies on the specific device for the claimed indications (fine lines, collagen, pigmentation, acne), and how honestly the manufacturer represents the published evidence. FDA registration earns no points, an FDA Class II clearance is noted only as a fact about a specific indication, and studies run or funded by the brand do not count as evidence. The category is full of marketing claims weakly tied to what the hardware actually does.',
+      'Published peer-reviewed studies on the specific device for the claimed indications (fine lines, collagen, pigmentation, acne), and how honestly the manufacturer represents the published evidence. FDA registration or Class II clearance is neutral (no points added or removed unless the maker misrepresents it), and studies run or funded by the brand do not count as evidence. The category is full of marketing claims weakly tied to what the hardware actually does.',
   },
   {
     id: 'comfort-fit',
@@ -712,7 +712,7 @@ const BREATHING_AID_CRITERIA: Criterion[] = [
     label: 'Evidence grounding and safety',
     weight: 0.15,
     description:
-      'How honestly the brand represents the published evidence (sleep-apnea caution is real — undiagnosed OSA + full mouth seal is contraindicated), and whether independent studies back its claims. FDA registration earns no points, an FDA clearance is noted only as a fact about a specific indication, and studies run or funded by the brand do not count as evidence. The category is full of viral wellness marketing weakly tied to clinical reality.',
+      'How honestly the brand represents the published evidence (sleep-apnea caution is real — undiagnosed OSA + full mouth seal is contraindicated), and whether independent studies back its claims. FDA registration or clearance is neutral (no points added or removed unless the maker misrepresents it), and studies run or funded by the brand do not count as evidence. The category is full of viral wellness marketing weakly tied to clinical reality.',
   },
   {
     id: 'form-factor',

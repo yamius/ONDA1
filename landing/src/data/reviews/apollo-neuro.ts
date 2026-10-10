@@ -13,7 +13,7 @@ const apolloNeuro: ToolReviewInput = {
   summary:
     'Apollo Neuro is a wrist or ankle worn band that uses low-frequency haptic vibration — not electrical stimulation — to modulate autonomic state and vagal tone. The mechanism is mechanoreceptor-mediated rather than direct vagal stimulation, which keeps it out of the strict tVNS category but firmly in the vagus-modulator conversation. Founder-led University of Pittsburgh research; comfortable enough to wear all day.',
   scores: [
-    { criterionId: 'evidence', score: 7.0, note: 'Published HRV / recovery RCTs from the founding team at University of Pittsburgh; independent replication is mounting. Strongest evidence base of any non-electrical device here.' },
+    { criterionId: 'evidence', score: 6.0, note: 'Its published HRV / recovery trials come from the founding team, and studies run by the maker do not count as evidence in ONDA scores. Independent replication is still limited.' },
     { criterionId: 'mechanism', score: 6.5, note: 'Vibrotactile rather than electrical — aims to influence calm through touch receptors; the mechanism is proposed, not proven. Not tVNS in the strict sense; classified here as a vagal modulator.' },
     { criterionId: 'protocols', score: 8.5, note: 'Seven distinct modes (energy, calm, sleep, focus, recover, social, clear) with adjustable intensity and duration. Best programme variety in the category.' },
     { criterionId: 'comfort', score: 9.0, note: 'Wrist, ankle or clip-on; designed for all-day wear. The only device here genuinely worn passively.' },

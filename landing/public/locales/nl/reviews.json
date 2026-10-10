@@ -30,7 +30,8 @@
     "authorHeading": "Who writes the reviews",
     "authorBody": "Reviews are written by Yakiv Bilenko, founder of ONDA Life.",
     "authorLink": "About the author",
-    "scoreRulesBody": "Zo wordt het cijfer berekend: het gewogen gemiddelde wordt afgerond op één decimaal, de helft naar boven (8,35 wordt 8,4). Eindigen twee producten op dezelfde score, dan staat het product met de hogere score op het bewijscriterium van de categorie voor; is ook die gelijk, dan delen ze de plaats en tonen we een gelijkspel. In onderlinge vergelijkingen wordt een verschil van 0,1 of minder getoond als vrijwel gelijk. Zelden kan de redactie het gemiddelde met hooguit ±0,3 punt bijstellen; elke bijstelling staat bij de review, met de reden erbij."
+    "scoreRulesBody": "Zo wordt het cijfer berekend: het gewogen gemiddelde wordt afgerond op één decimaal, de helft naar boven (8,35 wordt 8,4). Eindigen twee producten op dezelfde score, dan staat het product met de hogere score op het bewijscriterium van de categorie voor; is ook die gelijk, dan delen ze de plaats en tonen we een gelijkspel. In onderlinge vergelijkingen wordt een verschil van 0,1 of minder getoond als vrijwel gelijk. Zelden kan de redactie het gemiddelde met hooguit ±0,3 punt bijstellen; elke bijstelling staat bij de review, met de reden erbij.",
+    "evidenceRulesBody": "Bewijsregels in alle categorieën: studies die de fabrikant zelf uitvoert of financiert, tellen niet als bewijs. Een apparaat zonder eigen onafhankelijke validatie krijgt op een nauwkeurigheidscriterium hooguit 7,5 als eerdere generaties onafhankelijk gevalideerd zijn, en anders hooguit 7,0. FDA-registratie en FDA-clearance zijn neutraal – ze leveren niets op en kosten niets; een product verliest alleen punten als de fabrikant zijn regelgevende status verkeerd voorstelt (bijvoorbeeld een registratie “FDA-goedgekeurd” noemt), en de review vermeldt dat dan."
   },
   "ui": {
     "updated": "Updated",

@@ -30,7 +30,8 @@
     "authorHeading": "Who writes the reviews",
     "authorBody": "Reviews are written by Yakiv Bilenko, founder of ONDA Life.",
     "authorLink": "About the author",
-    "scoreRulesBody": "Como o número é calculado: a média ponderada é arredondada para uma casa decimal, com a metade para cima (8,35 vira 8,4). Se dois produtos terminam com a mesma pontuação, fica à frente o que tem nota maior no critério de evidências da categoria; se ela também for igual, dividem a posição e aparecem como empate. Nos confrontos diretos, uma diferença de 0,1 ou menos aparece como praticamente iguais. Raramente o editor pode ajustar a média em no máximo ±0,3 ponto; qualquer ajuste aparece na análise junto com o motivo."
+    "scoreRulesBody": "Como o número é calculado: a média ponderada é arredondada para uma casa decimal, com a metade para cima (8,35 vira 8,4). Se dois produtos terminam com a mesma pontuação, fica à frente o que tem nota maior no critério de evidências da categoria; se ela também for igual, dividem a posição e aparecem como empate. Nos confrontos diretos, uma diferença de 0,1 ou menos aparece como praticamente iguais. Raramente o editor pode ajustar a média em no máximo ±0,3 ponto; qualquer ajuste aparece na análise junto com o motivo.",
+    "evidenceRulesBody": "Regras de evidência em todas as categorias: estudos conduzidos ou financiados pelo fabricante não contam como evidência. Um dispositivo sem validação independente própria recebe no máximo 7,5 em um critério de precisão se gerações anteriores foram validadas de forma independente, e no máximo 7,0 se não. O registro e a clearance da FDA são neutros — não somam nem tiram nada; um produto só perde pontos se o fabricante distorcer seu status regulatório (por exemplo, chamar um registro de “aprovação da FDA”), e a análise diz isso."
   },
   "ui": {
     "updated": "Updated",

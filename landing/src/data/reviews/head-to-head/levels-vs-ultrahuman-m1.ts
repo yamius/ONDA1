@@ -17,7 +17,7 @@ const levelsVsUltrahumanM1: HeadToHeadInput = {
   bestForB:
     'Choose Ultrahuman M1 if you already own (or plan to own) an Ultrahuman ring and want glucose data composed with HRV, sleep and recovery in one app.',
   axes: [
-    { name: 'Sensor accuracy', winner: 'a', note: 'Levels ships Dexcom Stelo (G7 platform, MARD ~8.2%). Ultrahuman M1 uses Abbott Libre 3 (MARD ~9%), or Abbott Lingo in the US. Levels has the more accurate sensor.' },
+    { name: 'Sensor accuracy', winner: 'tie', note: 'Practically equal: maker accuracy figures do not count as evidence, and in an independent head-to-head study (Eichenlaub et al. 2025) the Dexcom G7 platform and FreeStyle Libre 3 were similarly accurate (MARD about 12% vs 11.6% against a lab reference).' },
     { name: 'Sensor wear time', winner: 'a', note: 'Levels (Dexcom Stelo): 15 days. Ultrahuman M1 (Libre 3 / Lingo): 14 days. Near-identical change cadence, slight Levels edge.' },
     { name: 'Glucose insight depth', winner: 'a', note: 'Levels has the deeper meal-impact engine — AUC decomposition, food-by-food ranking history, time-in-range views. Ultrahuman is competent but glucose-specific depth is shallower.' },
     { name: 'Cross-signal integration', winner: 'b', note: 'Ultrahuman M1 composes glucose with HRV, sleep and recovery from an Ultrahuman ring in one timeline — unique cross-modal view. Levels integrates with Oura via Apple Health but it is bolt-on.' },

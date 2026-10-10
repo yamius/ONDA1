@@ -13,7 +13,7 @@ const ringconnGen2: ToolReviewInput = {
   summary:
     'The RingConn Gen 2 is the value pick of the smart-ring field — a 10–12-day battery, no subscription and accuracy in the same conversation as pricier rings, for roughly half the long-term cost. The trade-off is plainer software and more closed data.',
   scores: [
-    { criterionId: 'hrv-accuracy', score: 7.0, note: 'Overnight optical HRV that independent reviewers rate as comparable to pricier rings — good, not class-leading.' },
+    { criterionId: 'hrv-accuracy', score: 7.0, note: 'Overnight optical HRV that reviewers find usable for trends; only a preprint exists, and no peer-reviewed independent validation against ECG was found (as of October 2026). ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'sensor', score: 7.0, note: 'Optical PPG in a light titanium ring.' },
     { criterionId: 'sleep-accuracy', score: 7.0, note: 'Competent sleep tracking, and it adds sleep-apnea screening.' },
     { criterionId: 'data-access', score: 5.5, note: 'A closed app — no open API and limited export; data stays with RingConn.' },

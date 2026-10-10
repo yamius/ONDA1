@@ -16,7 +16,7 @@ const drDennisGross: ToolReviewInput = {
     { criterionId: 'irradiance', score: 8.0, note: 'Documented irradiance honest for the 3-minute protocol. Shorter session compensated by higher LED density.' },
     { criterionId: 'wavelength-coverage', score: 8.5, note: 'Red 633 nm + blue 415 nm — dual-spectrum approach unique among hard-shell masks. Covers anti-aging and acne in alternating protocols.' },
     { criterionId: 'led-count-coverage', score: 7.0, note: '162 LEDs across hard-shell coverage. Even distribution on the face surface; no neck flap.' },
-    { criterionId: 'clinical-evidence', score: 6.0, note: 'FDA-cleared per the brand (clearance is not FDA approval), backed by Dr. Dennis Gross dermatology practice. Brand-funded studies on the dual-spectrum protocol. Strong dermatology-brand credibility.' },
+    { criterionId: 'clinical-evidence', score: 6.5, note: 'FDA-cleared per the brand (clearance is not FDA approval; scored as neutral). The studies on the dual-spectrum protocol are brand-funded and do not count as evidence in ONDA scores, and dermatology-brand reputation is not evidence — no independent device studies found.' },
     { criterionId: 'comfort-fit', score: 6.5, note: 'Hard-shell construction — less comfortable than flexible silicone alternatives. Weight noticeable on extended sessions. Pro tier is more refined than the original FaceWare.' },
     { criterionId: 'value', score: 7.0, note: '$455 — premium pricing for the dermatology-brand pedigree. Comparable to Omnilux Contour with dual-spectrum trade.' },
   ],

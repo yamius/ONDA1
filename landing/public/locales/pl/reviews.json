@@ -30,7 +30,8 @@
     "authorHeading": "Who writes the reviews",
     "authorBody": "Reviews are written by Yakiv Bilenko, founder of ONDA Life.",
     "authorLink": "About the author",
-    "scoreRulesBody": "Jak liczymy wynik: średnia ważona jest zaokrąglana do jednego miejsca po przecinku, połowa w górę (8,35 daje 8,4). Jeśli dwa produkty mają ten sam wynik, wyżej jest ten z wyższą oceną w kryterium dowodów danej kategorii; jeśli i ona jest równa, dzielą miejsce i pokazujemy remis. W porównaniach bezpośrednich różnica 0,1 lub mniejsza jest pokazywana jako praktycznie równe. Rzadko redakcja może skorygować średnią najwyżej o ±0,3 punktu; każda korekta jest pokazana w recenzji razem z powodem."
+    "scoreRulesBody": "Jak liczymy wynik: średnia ważona jest zaokrąglana do jednego miejsca po przecinku, połowa w górę (8,35 daje 8,4). Jeśli dwa produkty mają ten sam wynik, wyżej jest ten z wyższą oceną w kryterium dowodów danej kategorii; jeśli i ona jest równa, dzielą miejsce i pokazujemy remis. W porównaniach bezpośrednich różnica 0,1 lub mniejsza jest pokazywana jako praktycznie równe. Rzadko redakcja może skorygować średnią najwyżej o ±0,3 punktu; każda korekta jest pokazana w recenzji razem z powodem.",
+    "evidenceRulesBody": "Zasady dotyczące dowodów we wszystkich kategoriach: badania prowadzone lub finansowane przez producenta nie liczą się jako dowody. Urządzenie bez własnej niezależnej walidacji dostaje w kryterium dokładności najwyżej 7,5, jeśli wcześniejsze generacje były niezależnie zwalidowane, a najwyżej 7,0, jeśli nie. Rejestracja i clearance FDA są neutralne — niczego nie dodają ani nie odejmują; produkt traci punkty tylko wtedy, gdy producent przeinacza swój status regulacyjny (np. nazywa rejestrację „zatwierdzeniem FDA”), a recenzja to wskazuje."
   },
   "ui": {
     "updated": "Updated",

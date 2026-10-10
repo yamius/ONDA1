@@ -15,7 +15,7 @@ const ringconnGen3: ToolReviewInput = {
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.0, note: 'Continuous HRV for recovery and stress, improved over the Gen 2. Good, though not validated to Oura’s level.' },
     { criterionId: 'sensor', score: 7.5, note: 'Broad sensor suite — HR, HRV, SpO2, respiratory rate, skin temperature — plus a first-in-category haptic motor and new vascular / nighttime blood-pressure trend tracking.' },
-    { criterionId: 'sleep-accuracy', score: 7.0, note: 'Solid sleep tracking with new sleep-apnea pattern insights. Among the better rings for sleep at this price.' },
+    { criterionId: 'sleep-accuracy', score: 7.0, note: 'Solid sleep tracking with new sleep-apnea pattern insights; no independent sleep validation was found. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'data-access', score: 6.5, note: 'Data lives in the RingConn app with export; no truly open API.' },
     { criterionId: 'wearability', score: 8.0, note: 'A standout: ~10-14 day battery, cross-platform, a haptic silent alarm, and a universal wireless charging case. Comfortable for 24/7 wear.' },
     { criterionId: 'app-ux', score: 7.0, note: 'Capable, improved app with the new vascular and sleep-apnea insight cards. Less polished and explanatory than Oura, but clear.' },

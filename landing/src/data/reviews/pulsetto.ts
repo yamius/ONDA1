@@ -13,7 +13,7 @@ const pulsetto: ToolReviewInput = {
   summary:
     'Pulsetto is a Lithuanian-made neck-worn tVNS collar that stimulates the cervical vagal branches transcutaneously through two electrode pads. It runs four guided programmes — sleep, stress, anxiety reduction, pain reduction — through a companion app. CE-marked as a wellness device. The clearest entry point into consumer tVNS at the price; the evidence base is mostly company-sponsored and early.',
   scores: [
-    { criterionId: 'evidence', score: 6.0, note: 'CE-marked. Mostly company-sponsored studies and one published pilot on HRV/stress; thinner independent evidence than Nurosym or gammaCore.' },
+    { criterionId: 'evidence', score: 5.0, note: 'CE-marked. Mostly company-sponsored studies, which do not count as evidence in ONDA scores, plus one published pilot on HRV/stress.' },
     { criterionId: 'mechanism', score: 7.5, note: 'Cervical transcutaneous VNS via twin neck electrodes — targets the cervical vagal branches. Documented pulse parameters in the app.' },
     { criterionId: 'protocols', score: 8.5, note: 'Four distinct guided programmes plus a custom mode. The strongest protocol variety in this list.' },
     { criterionId: 'comfort', score: 7.5, note: 'Lightweight collar; daily 4–20 minute sessions tolerated well. Gel/saline pad maintenance is the main friction.' },

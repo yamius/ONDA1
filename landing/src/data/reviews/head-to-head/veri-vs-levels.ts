@@ -18,7 +18,7 @@ const veriVsLevels: HeadToHeadInput = {
     'Choose Levels if you are in the US — the deeper insight engine on the more accurate sensor justifies the premium pricing for serious biohacker use.',
   axes: [
     { name: 'Geographic availability', winner: 'a', note: 'Veri: EU-focused with broad European market coverage. Levels: US-only. For European users this axis often decides the comparison.' },
-    { name: 'Sensor accuracy', winner: 'b', note: 'Levels: Dexcom Stelo, G7 platform (MARD ~8.2%). Veri: Abbott Libre 3 (MARD ~9%). Levels has the marginally more accurate sensor.' },
+    { name: 'Sensor accuracy', winner: 'tie', note: 'Practically equal: maker accuracy figures do not count as evidence, and in an independent head-to-head study (Eichenlaub et al. 2025) the Dexcom G7 platform and FreeStyle Libre 3 were similarly accurate (MARD about 12% vs 11.6% against a lab reference).' },
     { name: 'Insight depth', winner: 'b', note: 'Levels has the deeper meal-impact engine — AUC decomposition, food-by-food ranking history. Veri is competent but a tier behind on analytical depth.' },
     { name: 'App polish', winner: 'tie', note: 'Both are polished consumer apps; Levels is more mature, Veri is cleaner in places. Roughly equal.' },
     { name: 'Third-party integrations', winner: 'a', note: 'Veri integrates Garmin, Oura, MyFitnessPal natively. Levels integrates Apple Health and Oura. Veri has the broader EU-relevant integration list.' },

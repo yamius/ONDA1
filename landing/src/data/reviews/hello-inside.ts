@@ -13,7 +13,7 @@ const helloInside: ToolReviewInput = {
   summary:
     'Hello Inside is a Vienna-built CGM programme aimed at DACH (Germany-Austria-Switzerland) and wider EU metabolic-health users. Abbott Libre 3 hardware with an app that emphasises beginner-friendly framing, weekly progress reports and dietitian-style content modules. Less integration breadth than Veri; stronger local-language content for German speakers.',
   scores: [
-    { criterionId: 'sensor-accuracy', score: 8.0, note: 'Abbott Libre 3 — MARD ~9%, 14-day wear. Same sensor as Veri, Ultrahuman M1 and Lingo.' },
+    { criterionId: 'sensor-accuracy', score: 8.5, note: 'Abbott Libre 3 — 14-day wear, the same sensor as Veri, Ultrahuman M1 and Lingo. In an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate.' },
     { criterionId: 'insights', score: 7.0, note: 'Solid time-in-range and meal-impact views, weekly written progress reports. Less analytical depth than Veri or Levels.' },
     { criterionId: 'coaching', score: 6.5, note: 'Higher tiers include dietitian-led group sessions; default tier is app + content modules.' },
     { criterionId: 'app-integration', score: 7.0, note: 'Apple Health and Google Fit support; narrower third-party connector list than Veri. Strong German-language content.' },

@@ -19,7 +19,7 @@ const healthyMindsProgram: ToolReviewInput = {
     { criterionId: 'app-experience', score: 7.5, note: 'Clean and calm, with no ads and no upsells interrupting practice.' },
     { criterionId: 'free-tier', score: 10.0, note: 'Completely free — no subscription, no ads, no locked content.' },
     { criterionId: 'value', score: 9.5, note: 'Free, sustained by donations — nothing else here matches it on cost.' },
-    { criterionId: 'evidence', score: 9.5, note: 'The most validated app in the category — outcomes measured across 50+ peer-reviewed studies.' },
+    { criterionId: 'evidence', score: 8.5, note: 'Outcomes measured across many peer-reviewed studies, but much of the research comes from the developer’s affiliated Center for Healthy Minds; studies run by the maker do not count as evidence in ONDA scores. Independent studies remain.' },
   ],
   pros: [
     'Completely free — no subscription, no ads',

@@ -13,7 +13,7 @@ const nutrisense: ToolReviewInput = {
   summary:
     'Nutrisense is the CGM programme that bets on human coaching, not app intelligence, as the differentiator. Every subscriber is paired with a registered dietitian (RD) who reviews the data, sends weekly summaries and answers questions in-app. Hardware is Dexcom G7 — the same sensor underneath Levels and Stelo. The insight engine is competent rather than category-leading, but the coach is the product. Roughly $280 a month including the RD.',
   scores: [
-    { criterionId: 'sensor-accuracy', score: 9.0, note: 'Dexcom G7 — same sensor as Levels and Stelo, MARD ~8.2%. 10-day wear, 30-minute warm-up.' },
+    { criterionId: 'sensor-accuracy', score: 8.5, note: 'Dexcom G7, the same sensor as Levels and Stelo; 10-day wear, 30-minute warm-up. In an independent head-to-head study (Eichenlaub et al. 2025) the G7 and FreeStyle Libre 3 were similarly accurate; maker accuracy figures do not count as evidence in ONDA scores.' },
     { criterionId: 'insights', score: 8.0, note: 'Solid meal scoring, time-in-range and glucose-variability views. Less deep than Levels on AUC decomposition, but covers the metrics that matter.' },
     { criterionId: 'coaching', score: 9.5, note: 'Registered dietitian assigned to every subscriber — weekly written reviews, in-app messaging, video consultations on higher tiers. The strongest human-coaching component in this list.' },
     { criterionId: 'app-integration', score: 8.0, note: 'Clean iOS/Android app. Apple Health, MyFitnessPal and Cronometer integration; ketone-meter support on higher tiers.' },

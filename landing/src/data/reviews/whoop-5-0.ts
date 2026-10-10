@@ -13,9 +13,9 @@ const whoop5: ToolReviewInput = {
   summary:
     'The Whoop 5.0 is built around recovery. It builds its daily recovery signal from HRV measured during sleep rather than from a morning spot-check. The trade-off is the model: there is no hardware to own, only an ongoing membership.',
   scores: [
-    { criterionId: 'hrv-accuracy', score: 7.5, note: 'Recovery is built on HRV measured during sleep, not on one morning spot-check.' },
+    { criterionId: 'hrv-accuracy', score: 7.5, note: 'Recovery is built on HRV measured during sleep. The earlier WHOOP 4.0 was checked in one independent overnight study; the 5.0 itself has not been validated against ECG (as of October 2026). ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'sensor', score: 8.0, note: 'A multi-wavelength optical band that holds heart-rate well when worn snugly.' },
-    { criterionId: 'sleep-accuracy', score: 7.5, note: 'Recovery-grade sleep tracking, close behind Oura and well ahead of a general-purpose smartwatch.' },
+    { criterionId: 'sleep-accuracy', score: 7.5, note: 'Recovery-grade sleep tracking; the 5.0 has no independent sleep validation, so it scores the same as the Oura rings. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'data-access', score: 6.5, note: 'A developer API exists, but like Oura the raw beat-to-beat stream stays largely closed.' },
     { criterionId: 'wearability', score: 8.5, note: 'Screenless and easy to forget; ~14 day battery, and the slide-on pack charges it without removal.' },
     { criterionId: 'app-ux', score: 7.5, note: 'Strain, Recovery and an AI coach reward data-minded users but can overwhelm everyone else.' },

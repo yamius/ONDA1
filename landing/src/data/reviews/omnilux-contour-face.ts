@@ -16,7 +16,7 @@ const omniluxContourFace: ToolReviewInput = {
     { criterionId: 'irradiance', score: 9.0, note: 'Documented irradiance honest to dermatology-clinic dose at 10-minute session. Among the most transparent specs in the category — not inflated peak figures.' },
     { criterionId: 'wavelength-coverage', score: 8.5, note: 'Red 633 nm + near-infrared 830 nm — the two wavelengths most used in skin studies. No blue / amber distraction.' },
     { criterionId: 'led-count-coverage', score: 8.0, note: '132 LEDs evenly distributed across forehead, cheeks and jaw. No neck flap on the standard Contour; neck addition sold separately.' },
-    { criterionId: 'clinical-evidence', score: 9.0, note: 'Peer-reviewed published studies on the specific device for fine lines, collagen and skin smoothness; FDA-cleared per Omnilux (clearance is not FDA approval). The deepest clinical-evidence moat in consumer red light masks.' },
+    { criterionId: 'clinical-evidence', score: 9.5, note: 'Peer-reviewed published studies on the specific device for fine lines, collagen and skin smoothness; FDA-cleared per Omnilux (clearance is not FDA approval). The deepest clinical-evidence moat in consumer red light masks.' },
     { criterionId: 'comfort-fit', score: 9.0, note: 'Medical-grade flexible silicone — among the most comfortable wearable masks. Sits naturally on the face, adjustable strap, unattended wear OK.' },
     { criterionId: 'value', score: 7.0, note: '$395 — premium pricing. Justified by the clinical evidence base; not the cheapest mask but the credibility-per-dollar is strong.' },
   ],

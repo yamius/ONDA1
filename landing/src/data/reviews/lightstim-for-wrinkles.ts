@@ -16,7 +16,7 @@ const lightstim: ToolReviewInput = {
     { criterionId: 'irradiance', score: 7.5, note: 'Documented irradiance honest to peer-reviewed studies. Handheld positioning delivers higher local dose than mask area-averaged dose.' },
     { criterionId: 'wavelength-coverage', score: 8.5, note: 'Four wavelengths — red 605 / 630 / 660 / 855 nm. Broader red coverage than most masks plus near-infrared depth.' },
     { criterionId: 'led-count-coverage', score: 5.5, note: 'Handheld device — coverage is per-position, requiring active user positioning across face zones. Slower per session than masks.' },
-    { criterionId: 'clinical-evidence', score: 8.5, note: 'FDA-cleared per LightStim (clearance is not FDA approval), with a multi-decade clinical track record. Peer-reviewed studies on the specific device for fine lines. Among the deepest evidence bases in the category.' },
+    { criterionId: 'clinical-evidence', score: 9.0, note: 'FDA-cleared per LightStim (clearance is not FDA approval), with a multi-decade clinical track record. Peer-reviewed studies on the specific device for fine lines. Among the deepest evidence bases in the category.' },
     { criterionId: 'comfort-fit', score: 6.0, note: 'Handheld — comfortable to hold but requires active use. Can\'t multitask during session.' },
     { criterionId: 'value', score: 8.5, note: '$249 — accessible pricing for a device with peer-reviewed clinical evidence. Best evidence-per-dollar in the category.' },
   ],

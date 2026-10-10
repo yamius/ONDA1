@@ -16,7 +16,7 @@ const solawave: ToolReviewInput = {
     { criterionId: 'irradiance', score: 5.5, note: 'Modest irradiance — designed for daily light-touch use rather than clinical-dose sessions.' },
     { criterionId: 'wavelength-coverage', score: 6.0, note: 'Red 660 nm only — single wavelength. No near-infrared depth or amber / blue variants.' },
     { criterionId: 'led-count-coverage', score: 4.5, note: 'Small wand head — requires active positioning across face zones, narrow per-zone coverage.' },
-    { criterionId: 'clinical-evidence', score: 4.5, note: 'FDA registered (a listing, not clearance or approval). Light clinical evidence base; brand-funded consumer testimonials over peer-reviewed studies.' },
+    { criterionId: 'clinical-evidence', score: 5.0, note: 'FDA registered (a listing, not clearance or approval). Light clinical evidence base; brand-funded consumer testimonials over peer-reviewed studies.' },
     { criterionId: 'comfort-fit', score: 7.5, note: 'Comfortable handheld build with microcurrent + warmth + vibration. Convenient for spot use.' },
     { criterionId: 'value', score: 9.0, note: '$169 — best entry-tier pricing in red light. Multi-modality stack adds perceived value at the low end.' },
   ],

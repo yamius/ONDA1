@@ -13,7 +13,7 @@ const vagustim: ToolReviewInput = {
   summary:
     'Vagustim is a Turkish-developed auricular tVNS device, CE-marked and backed by a published trial base from clinical-research groups in Turkey and Germany. Hardware combines an ear clip with paired auxiliary electrodes for specific protocols (vagus only, vagus + acupoint, etc.). Less brand recognition outside the EU than Nurosym, comparable evidence depth, and a wider protocol library.',
   scores: [
-    { criterionId: 'evidence', score: 7.5, note: 'CE-marked Class IIa medical device; trial base of independent and company-collaborator studies on HRV, anxiety and depression. Second to Nurosym in published evidence among ear-clip devices.' },
+    { criterionId: 'evidence', score: 7.0, note: 'CE-marked Class IIa medical device. Independent studies on HRV, anxiety and depression count; company-collaborator studies do not count as evidence in ONDA scores.' },
     { criterionId: 'mechanism', score: 7.5, note: 'Auricular tVNS via tragus clip, plus paired electrode protocols. Documented stimulation parameters configurable per protocol.' },
     { criterionId: 'protocols', score: 8.0, note: 'Library of protocol presets (stress, sleep, depression, anxiety, IBS), each with disclosed parameters. Stronger protocol variety than Nurosym.' },
     { criterionId: 'comfort', score: 7.0, note: 'Tragus clip plus secondary electrode pads. Slightly more setup than a single ear clip; well-tolerated for 20-30 minute sessions.' },

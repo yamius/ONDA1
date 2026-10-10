@@ -35,7 +35,7 @@ const breathwrkVsOthershipVsWhm: HeadToHeadInput = {
     },
     {
       q: 'Is Breathwrk or Othership better?',
-      a: 'Breathwrk wins on technique coverage, evidence and price ($49 vs $129.99 a year). Othership wins on production and live community classes. Pick Breathwrk for structured daily practice; pick Othership if the music and community are what keep you practising.',
+      a: 'Breathwrk wins on technique coverage and price ($49 vs $129.99 a year). Othership wins on production and live community classes. Pick Breathwrk for structured daily practice; pick Othership if the music and community are what keep you practising.',
     },
     {
       q: 'How much do Breathwrk, Othership and the Wim Hof Method app cost?',

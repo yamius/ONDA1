@@ -16,7 +16,7 @@ const lumaraViso: ToolReviewInput = {
     { criterionId: 'irradiance', score: 8.5, note: '470 LEDs deliver high irradiance across treatment area. Documented spec; less independently verified than Omnilux.' },
     { criterionId: 'wavelength-coverage', score: 9.0, note: 'Red 633 nm + near-infrared 830 nm + amber 590 nm — three wavelengths covering surface skin, deeper tissue and pigmentation. Broader than the standard red + NIR pair.' },
     { criterionId: 'led-count-coverage', score: 9.5, note: '470 LEDs — highest in consumer red light masks. Coverage extends face + neck with even distribution. The 2026 LED-count benchmark.' },
-    { criterionId: 'clinical-evidence', score: 6.0, note: 'FDA registered (a listing, not clearance or approval). Brand newer than dermatology references; no peer-reviewed clinical studies on the specific device yet. Spec-driven rather than evidence-driven.' },
+    { criterionId: 'clinical-evidence', score: 6.5, note: 'FDA registered (a listing, not clearance or approval). Brand newer than dermatology references; no peer-reviewed clinical studies on the specific device yet. Spec-driven rather than evidence-driven.' },
     { criterionId: 'comfort-fit', score: 8.5, note: 'Medical-grade flexible silicone — comparable comfort to Omnilux and CurrentBody. 470 LEDs add weight but distribution keeps it wearable.' },
     { criterionId: 'value', score: 6.0, note: '$650 — premium-tier pricing. Per-LED cost is competitive given the 470-count; per-clinical-study cost is weak.' },
   ],

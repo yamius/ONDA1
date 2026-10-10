@@ -19,7 +19,7 @@ const headspace: ToolReviewInput = {
     { criterionId: 'app-experience', score: 8.5, note: 'A friendly, polished app — the signature animations make the practice approachable.' },
     { criterionId: 'free-tier', score: 5.0, note: 'Free content is essentially a product tour; a practice needs the subscription.' },
     { criterionId: 'value', score: 7.0, note: 'Around 70 USD a year — reasonable for the structured course library.' },
-    { criterionId: 'evidence', score: 8.0, note: 'Headspace has funded and published clinical research on its programs — strong for the category.' },
+    { criterionId: 'evidence', score: 7.5, note: 'Headspace has been tested in independent university trials; studies Headspace funded itself do not count as evidence in ONDA scores. Still strong for the category.' },
   ],
   pros: [
     'The best structured path for beginners',
