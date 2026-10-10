@@ -8,14 +8,14 @@ const hoogaVsJoovv: HeadToHeadInput = {
   description:
     'Hooga HG500 vs Joovv Solo 3.0 — the budget red-light reference vs the premium category leader. Roughly a fifth of the price vs brand, build and a modular ecosystem.',
   intro:
-    'This is the red-light panel decision most people actually face: the value pick versus the premium reference. The Hooga HG500 delivers honest specs and a solid build for about a fifth of the Joovv price. The Joovv Solo 3.0 is the category benchmark — modular, beautifully built — and priced like it. The question is how much the brand, build and ecosystem are worth to you over raw output per dollar.',
+    'This is the red-light panel decision most people actually face: the value pick versus the premium option. The Hooga HG500 delivers honest specs and a solid build for about a fifth of the Joovv price. The Joovv Solo 3.0 is the long-running premium option — modular, beautifully built — and priced like it. The question is how much the brand, build and ecosystem are worth to you over raw output per dollar.',
   jobDependentVerdict: true,
   verdict:
     'Value vs premium reference. The Hooga HG500 wins decisively on price and output-per-dollar — most of the core spec for roughly a fifth of the cost. The Joovv Solo 3.0 wins on build quality, brand maturity and a modular ecosystem you can expand. Pick Hooga if you want the results without the premium; Joovv if brand, build and expandability justify the spend.',
   bestForA:
     'Choose the Hooga HG500 if you want honest irradiance and a solid panel for about a fifth of the Joovv price, and you don’t need the premium brand or modular stacking.',
   bestForB:
-    'Choose the Joovv Solo 3.0 if you want the category reference — premium build and a modular ecosystem — and the price is acceptable.',
+    'Choose the Joovv Solo 3.0 if you want a premium build and a modular ecosystem — and the price is acceptable.',
   axes: [
     { name: 'Price', winner: 'a', note: 'Hooga HG500: $359 (door mount and hanging kit included; mobile stand extra). Joovv Solo 3.0: $1,699 (official US store, 2026-10-01), more for modular stacks. Roughly a fifth of the cost.' },
     { name: 'Output per dollar', winner: 'a', note: 'On dollars-per-mW/cm², Hooga wins most apples-to-apples comparisons — most of the usable irradiance for far less.' },

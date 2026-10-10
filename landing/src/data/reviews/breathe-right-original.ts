@@ -9,9 +9,9 @@ const breatheRight: ToolReviewInput = {
   description:
     'ONDA review of Breathe Right Original — the drugstore-standard external adhesive nasal strip from Kenvue/Johnson & Johnson. Scored on adhesion, mechanism, evidence and value.',
   verdict:
-    'Drugstore reference for nasal strips — decades-long track record, FDA-cleared, ubiquitous distribution. Weaker mechanism than magnetic or internal dilators.',
+    'The best-known drugstore nasal strip — decades-long track record, FDA-cleared, ubiquitous distribution. Weaker mechanism than magnetic or internal dilators.',
   summary:
-    'Breathe Right Original is the drugstore-standard external nasal strip — adhesive plastic strip across the bridge of the nose that uses spring-tension leverage to widen nostrils. Decades-long FDA-cleared track record (originally 3M, now Kenvue/J&J). Ubiquitous drugstore distribution. The reference everyone tries first; weaker mechanism than magnetic or internal alternatives.',
+    'Breathe Right Original is the drugstore-standard external nasal strip — adhesive plastic strip across the bridge of the nose that uses spring-tension leverage to widen nostrils. Decades-long FDA-cleared track record (originally 3M, now Kenvue/J&J). Ubiquitous drugstore distribution. The strip most people try first; weaker mechanism than magnetic or internal alternatives.',
   scores: [
     { criterionId: 'adhesion-comfort', score: 7.0, note: 'Solid adhesion on clean dry skin. Skin-irritation reports moderate; clear / sensitive-skin variants address most issues.' },
     { criterionId: 'breathing-mechanism', score: 6.0, note: 'External spring-tension leverage — passive widening via plastic spring force across the bridge. Weaker than magnetic external (Intake) or internal mechanical (Mute) approaches.' },
@@ -32,7 +32,7 @@ const breatheRight: ToolReviewInput = {
     'Visible externally',
     'Adhesion fails with skincare products or sweat',
   ],
-  bestFor: 'Best for first-time nasal-airway-opener users wanting the drugstore reference at lowest per-night cost — try this before committing to premium magnetic / internal alternatives.',
+  bestFor: 'Best for first-time nasal-airway-opener users wanting an FDA-cleared drugstore strip at lowest per-night cost — try this before committing to premium magnetic / internal alternatives.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Breathe Right product documentation, FDA registration records and multi-decade clinical-context literature. Not hands-on tested by ONDA.',
@@ -41,7 +41,7 @@ const breatheRight: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Breathe Right Original is the drugstore-standard nasal strip — FDA-cleared, decades-long brand track record, ubiquitous distribution, best per-night value. The category reference everyone tries first.
+Breathe Right Original is the drugstore-standard nasal strip — FDA-cleared, decades-long brand track record, ubiquitous distribution, best per-night value. The strip most people try first.
 
 ## What are the downsides of Breathe Right Original?
 
@@ -67,7 +67,7 @@ Choose Breathe Right Original as the first nasal-airway-opener to try — cheape
     { q: "Are Breathe Right Original strips worth it?", a: "Yes, as the first nasal strip to try. Breathe Right Original has a decades-long FDA-cleared track record, the best per-night value in the nasal-airway category, and ubiquitous drugstore availability. Its spring-tension mechanism is weaker than magnetic or internal dilators, so some users later upgrade." },
     { q: "How much do Breathe Right Original strips cost?", a: "Breathe Right Original costs about $10 for a 30-strip pack, roughly $0.33 per night. That is the best per-night value in the nasal-airway category, and sensitive-skin and clear variants are also available. Each strip is single-use and disposable." },
     { q: "What are the downsides of Breathe Right Original?", a: "Breathe Right Original uses a weaker mechanism than magnetic or internal alternatives, and each strip is single-use and disposable. The strip is visible externally, and its adhesion fails with skincare products or sweat. Sensitive-skin and clear variants are available for some of these issues." },
-    { q: "Who are Breathe Right Original strips best for?", a: "Breathe Right Original is best for first-time nasal-airway-opener users who want the drugstore reference at the lowest per-night cost. It is the one to try before committing to premium magnetic or internal alternatives. It has a decades-long FDA-cleared track record." },
+    { q: "Who are Breathe Right Original strips best for?", a: "Breathe Right Original is best for first-time nasal-airway-opener users who want an FDA-cleared drugstore strip at the lowest per-night cost. It is the one to try before committing to premium magnetic or internal alternatives. It has a decades-long FDA-cleared track record." },
   ],
   datePublished: '2026-07-13',
   dateModified: '2026-10-10',

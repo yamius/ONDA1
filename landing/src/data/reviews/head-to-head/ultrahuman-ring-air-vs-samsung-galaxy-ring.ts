@@ -35,7 +35,7 @@ const ultrahumanVsSamsungRing: HeadToHeadInput = {
     },
     {
       q: 'Are either of these a real Oura alternative?',
-      a: 'Yes, on price — both drop Oura’s mandatory subscription. Oura Ring 4 still leads on validated sleep and HRV accuracy, but if avoiding a monthly fee is the priority, these two are the subscription-free rings to choose between.',
+      a: 'Yes, on price — both drop Oura’s mandatory subscription. Oura Ring 4 is the only one of the three with an independent overnight HRV check (its sleep staging has no independent validation), but if avoiding a monthly fee is the priority, these two are the subscription-free rings to choose between.',
     },
   ],
   content: `## The short version

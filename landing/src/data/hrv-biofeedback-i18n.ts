@@ -137,7 +137,7 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
       },
       {
         q: 'Do I need a chest strap for HRV biofeedback?',
-        a: 'Not always. A chest strap gives the most accurate signal, but apps like ONDA use the iPhone camera (photoplethysmography) or an Apple Watch to give usable real-time feedback with no extra hardware.',
+        a: 'Not always. A chest strap is close to lab ECG at rest in young healthy adults (less reliable during movement), but apps like ONDA use the iPhone camera (photoplethysmography) or an Apple Watch to give usable real-time feedback with no extra hardware.',
       },
       {
         q: 'How long does HRV biofeedback take to work?',
@@ -272,7 +272,7 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
       },
       {
         q: 'Нужен ли нагрудный датчик для HRV-биофидбека?',
-        a: 'Не всегда. Нагрудный датчик даёт самый точный сигнал, но приложения вроде ONDA используют камеру iPhone (фотоплетизмография) или Apple Watch, давая пригодную обратную связь в реальном времени без дополнительного оборудования.',
+        a: 'Не всегда. Нагрудный датчик в покое у молодых здоровых взрослых близок к лабораторной ЭКГ (при движении менее надёжен), но приложения вроде ONDA используют камеру iPhone (фотоплетизмография) или Apple Watch, давая пригодную обратную связь в реальном времени без дополнительного оборудования.',
       },
       {
         q: 'Сколько нужно времени, чтобы HRV-биофидбек сработал?',
@@ -407,7 +407,7 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
       },
       {
         q: '¿Necesito una banda de pecho para el biofeedback de HRV?',
-        a: 'No siempre. Una banda de pecho da la señal más precisa, pero apps como ONDA usan la cámara del iPhone (fotopletismografía) o un Apple Watch para dar feedback en tiempo real utilizable sin hardware extra.',
+        a: 'No siempre. Una banda de pecho se acerca a un ECG de laboratorio en reposo en adultos jóvenes sanos (es menos fiable en movimiento), pero apps como ONDA usan la cámara del iPhone (fotopletismografía) o un Apple Watch para dar feedback en tiempo real utilizable sin hardware extra.',
       },
       {
         q: '¿Cuánto tarda en funcionar el biofeedback de HRV?',

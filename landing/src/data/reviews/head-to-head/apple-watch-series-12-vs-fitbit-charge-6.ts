@@ -28,7 +28,7 @@ const series12VsCharge6: HeadToHeadInput = {
   faq: [
     {
       q: 'Is the Apple Watch Series 12 or Fitbit Charge 6 better for HRV?',
-      a: 'The Series 12 gives you more HRV: it samples ~24× more often and reports Recovery HRV against a baseline. The Charge 6 reports a basic overnight figure that is fine for trends, and its multi-day battery makes every-night wear easier. Neither matches a finger ring or ECG chest strap for a continuous overnight record.',
+      a: 'The Series 12 gives you more HRV: it samples ~24× more often and reports Recovery HRV against a baseline. The Charge 6 reports a basic overnight figure that is fine for trends, and its multi-day battery makes every-night wear easier. For readings closest to lab ECG, an ECG chest strap is the better tool (at rest, in young healthy adults).',
     },
     {
       q: 'Do I need Fitbit Premium for HRV on the Charge 6?',

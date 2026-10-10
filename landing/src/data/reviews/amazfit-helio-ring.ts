@@ -13,7 +13,7 @@ const amazfitHelioRing: ToolReviewInput = {
   summary:
     'The Amazfit Helio Ring is Zepp Health’s budget entry into the smart-ring space: a light titanium ring at $199 with no subscription for core metrics. It tracks heart rate, HRV (RMSSD), blood oxygen, skin temperature and sleep, syncing to the cross-platform Zepp app. Sleep tracking is respectable for the price, and being subscription-free at $199 makes it one of the cheapest capable rings. But it ships in just three sizes (8, 10, 12), so many people can’t get a proper fit, and real-world battery is only about 2.5–3 days — well short of Oura and RingConn.',
   scores: [
-    { criterionId: 'hrv-accuracy', score: 6.5, note: 'Continuous HRV via RMSSD for recovery/readiness. Reasonable for a budget ring, but not validated to the level of Oura.' },
+    { criterionId: 'hrv-accuracy', score: 6.5, note: 'Continuous HRV via RMSSD for recovery/readiness. Reasonable for a budget ring; no independent validation against ECG was found (as of October 2026).' },
     { criterionId: 'sensor', score: 6.5, note: 'Optical HR, SpO2 and skin-temperature sensors in a light titanium shell. Budget-tier optics; a clean signal at rest.' },
     { criterionId: 'sleep-accuracy', score: 7.0, note: 'Good sleep tracking for the price (stage estimates, not a sleep study); no independent validation was found. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'data-access', score: 6.0, note: 'Data lives in the Zepp app with basic export; no truly open API.' },
@@ -30,7 +30,7 @@ const amazfitHelioRing: ToolReviewInput = {
   cons: [
     'Only three sizes (8, 10, 12) — many people can’t get a good fit',
     'Short real-world battery (~2.5–3 days)',
-    'Budget sensors; accuracy below Oura',
+    'Budget sensors; no independent accuracy validation found',
     'Zepp app less polished; no open API',
   ],
   bestFor: 'Best for a cheap, subscription-free ring with solid sleep tracking — if one of its three sizes fits you and you accept a short battery.',
@@ -50,7 +50,7 @@ Two things hold it back. First, it ships in only three sizes (8, 10, 12), so a l
 
 ## Who should buy Amazfit Helio Ring?
 
-Choose the Amazfit Helio Ring if you want the cheapest capable, subscription-free ring and one of its three sizes fits you. If you need a wider size range, longer battery or the best accuracy, look at the [RingConn Gen 2](/reviews/ringconn-gen-2) (value, 10–12-day battery), the [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring), or [Oura](/reviews/oura-ring-4) if you accept its subscription.
+Choose the Amazfit Helio Ring if you want the cheapest capable, subscription-free ring and one of its three sizes fits you. If you need a wider size range or a longer battery, look at the [RingConn Gen 2](/reviews/ringconn-gen-2) (value, 10–12-day battery), the [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring), or [Oura](/reviews/oura-ring-4) if you accept its subscription.
 
 ---
 
@@ -68,7 +68,7 @@ The science behind why HRV is the signal worth tracking.
   publishOn: '2026-09-06',
   faq: [
     { q: "Is the Amazfit Helio Ring subscription-free?", a: "Yes — $199 one-time with no subscription for its core metrics. It is the cheapest capable smart ring; the trade-offs are a short real-world battery and only three sizes." },
-    { q: "Is the Amazfit Helio Ring accurate for HRV and sleep?", a: "Sleep tracking is solid and HRV is decent for the price — ONDA scores it 6.8/10. It is a budget pick; a pricier ring like Oura or RingConn is more accurate and better-featured." },
+    { q: "Is the Amazfit Helio Ring accurate for HRV and sleep?", a: "Sleep tracking is solid and HRV is decent for the price — ONDA scores it 6.8/10. It is a budget pick: no independent validation was found, and among these rings only the Oura Ring 4 has an independent overnight HRV check. Pricier rings like Oura or RingConn are better-featured." },
     { q: "What are the downsides of the Amazfit Helio Ring?", a: "Only three sizes, so fit is hit-or-miss, and a short single-charge battery. If a size fits and you want the cheapest subscription-free ring, it delivers." },
   ],
   datePublished: '2026-09-06',

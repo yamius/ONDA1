@@ -17,7 +17,7 @@ const intakeBreathing: ToolReviewInput = {
     { criterionId: 'breathing-mechanism', score: 9.0, note: 'External magnetic dilation — mechanically widens nostril openings. Most effective external nasal dilator approach; outperforms passive strips like Breathe Right on user-reported airflow.' },
     { criterionId: 'evidence-grounding', score: 6.5, note: 'James Nestor recommends it in Breath (an endorsement, not evidence). Its airflow studies are brand-funded and do not count as evidence in ONDA scores; we found no independent trials of the device.' },
     { criterionId: 'form-factor', score: 8.5, note: 'Reusable magnetic band with replaceable adhesive tabs — long-term ownership economics work. Discreet visual profile.' },
-    { criterionId: 'material-safety', score: 8.0, note: 'Medical-grade adhesive tabs. Magnetic band hypoallergenic. Skin-reaction reports rare.' },
+    { criterionId: 'material-safety', score: 8.0, note: 'Adhesive tabs. Magnetic band hypoallergenic. Skin-reaction reports rare.' },
     { criterionId: 'value', score: 6.5, note: '~$40 starter kit, $20/month for replacement tabs = ~$0.65/night ongoing. Premium pricing but reusable band reduces long-term cost.' },
   ],
   pros: [
@@ -41,7 +41,7 @@ const intakeBreathing: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Intake Breathing is the premium external nasal dilator reference — magnetic reusable band design, James Nestor-recommended, most effective external dilation approach. Best fit for mouth-breathers who reject mouth tape.
+Intake Breathing is the premium external nasal dilator — magnetic reusable band design, James Nestor-recommended, most effective external dilation approach. Best fit for mouth-breathers who reject mouth tape.
 
 ## What are the downsides of Intake Breathing?
 
@@ -49,7 +49,7 @@ Cost and visibility. Subscription-style adhesive-tab replacement ongoing cost, p
 
 ## Who should buy Intake Breathing?
 
-Choose Intake Breathing if you can\'t adapt to mouth tape and want the most effective external nasal dilator. For internal nasal stent, Mute. For drugstore reference, Breathe Right. For mouth tape, Hostage Tape or Somnifix.
+Choose Intake Breathing if you can\'t adapt to mouth tape and want the most effective external nasal dilator. For internal nasal stent, Mute. For a drugstore option, Breathe Right. For mouth tape, Hostage Tape or Somnifix.
 
 ---
 

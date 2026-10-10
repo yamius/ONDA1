@@ -6,15 +6,15 @@ const ouraVsFitbitCharge6: HeadToHeadInput = {
   productBSlug: 'fitbit-charge-6',
   title: 'Oura Ring 4 vs Fitbit Charge 6 (2026)',
   description:
-    'Oura Ring 4 vs Fitbit Charge 6 — the precision sleep-and-HRV ring vs the $159 budget on-ramp. ONDA compares accuracy, recovery depth, price and subscriptions.',
+    'Oura Ring 4 vs Fitbit Charge 6 — the dedicated sleep-and-HRV ring vs the $159 budget on-ramp. ONDA compares accuracy, recovery depth, price and subscriptions.',
   intro:
-    'The Oura Ring 4 and the Fitbit Charge 6 sit at opposite ends of the same question: how much do you want to spend to track sleep and HRV? Oura is the precision instrument — the most validated overnight sleep and HRV in a consumer wearable, behind a mandatory membership. The Charge 6 is the cheap, reliable on-ramp: real HRV for $159, but a basic recovery tool with a persistent Premium upsell.',
+    'The Oura Ring 4 and the Fitbit Charge 6 sit at opposite ends of the same question: how much do you want to spend to track sleep and HRV? Oura is the dedicated overnight ring — overnight HRV with an independent ECG check (overnight recordings from 13 people, Dial 2025), behind a mandatory membership. The Charge 6 is the cheap, reliable on-ramp: real HRV for $159, but a basic recovery tool with a persistent Premium upsell.',
   verdict:
     'Different budgets, different jobs. Oura Ring 4 is the stronger pick for sleep and HRV and the better recovery tool — if you accept ~$6/month on top of $349. Fitbit Charge 6 is the honest budget pick: $159, reliable, and enough to start, with real depth locked behind Premium.',
   bestForA:
     'Choose the Oura Ring 4 if an independently checked overnight HRV and detailed sleep staging are the point, you want a genuine readiness/recovery tool, and the mandatory membership is acceptable.',
   bestForB:
-    'Choose the Fitbit Charge 6 if you want a cheap, reliable first step into HRV and activity tracking, prefer a screen and a one-time price, and do not need research-grade accuracy.',
+    'Choose the Fitbit Charge 6 if you want a cheap, reliable first step into HRV and activity tracking, prefer a screen and a one-time price, and do not need a dedicated overnight ring.',
   axes: [
     { name: 'Sleep & HRV accuracy', winner: 'a', note: 'Oura Ring 4 has one independent overnight HRV check against ECG; its sleep staging was validated against polysomnography only in maker-funded studies; wearable sleep stages are still estimates. The Charge 6 gives usable HRV and sleep stages but at wrist-band accuracy, not ring-grade.' },
     { name: 'Recovery depth', winner: 'a', note: 'Oura’s Readiness score synthesises HRV, resting heart rate, temperature and sleep into a genuine recovery signal. The Charge 6’s Daily Readiness is thinner and gated behind Premium.' },
@@ -39,15 +39,15 @@ const ouraVsFitbitCharge6: HeadToHeadInput = {
   ],
   content: `## The short version
 
-[Oura Ring 4](/reviews/oura-ring-4) is the precision sleep-and-HRV instrument with a mandatory subscription. [Fitbit Charge 6](/reviews/fitbit-charge-6) is the $159 on-ramp — reliable, screen-and-GPS, and enough to start, with real depth behind Premium.
+[Oura Ring 4](/reviews/oura-ring-4) is the dedicated overnight sleep-and-HRV instrument with a mandatory subscription. [Fitbit Charge 6](/reviews/fitbit-charge-6) is the $159 on-ramp — reliable, screen-and-GPS, and enough to start, with real depth behind Premium.
 
 ## When is the Oura Ring 4 the right pick?
 
-Accuracy is the point. Better-validated sleep staging (in manufacturer-funded studies), steady overnight HRV and a genuine Readiness score make Oura the better recovery tool — worth it if the membership does not put you off.
+Overnight HRV is the point. Sleep staging validated in manufacturer-funded studies (on Gen 3), steady overnight HRV and a genuine Readiness score make Oura the better recovery tool — worth it if the membership does not put you off.
 
 ## When is the Fitbit Charge 6 the right pick?
 
-Budget and breadth. For $159 you get usable HRV, a screen, GPS and Google apps — a great first wearable if you do not need ring-grade precision.
+Budget and breadth. For $159 you get usable HRV, a screen, GPS and Google apps — a great first wearable if you do not need a dedicated overnight ring.
 
 ## Also worth comparing
 

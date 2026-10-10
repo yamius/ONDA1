@@ -311,7 +311,7 @@ export const ONDA_VS: OndaVsEntry[] = [
     description:
       'ONDA vs Elite HRV — two genuine HRV-biofeedback apps compared. Accessibility (camera / Apple Watch) vs measurement depth (chest strap). An objective comparison from ONDA Life.',
     intro:
-      'Elite HRV is the closest thing to a direct peer: a serious HRV app with morning readiness, ANS balance and a live coherence breathing pacer. The main difference is access. Elite HRV measures HRV most accurately with a chest strap; ONDA is built to work with the iPhone camera or an Apple Watch, wrapped in a guided, progressive practice. Elite HRV leans measurement-and-data; ONDA leans guided training.',
+      'Elite HRV is the closest thing to a direct peer: a serious HRV app with morning readiness, ANS balance and a live coherence breathing pacer. The main difference is access. Elite HRV gets its cleanest readings from a paired ECG chest strap, at rest; ONDA is built to work with the iPhone camera or an Apple Watch, wrapped in a guided, progressive practice. Elite HRV leans measurement-and-data; ONDA leans guided training.',
     them: {
       'Real-time HRV biofeedback (live feedback as you breathe)': 'yes',
       'Live coherence score': 'yes',
@@ -331,17 +331,17 @@ export const ONDA_VS: OndaVsEntry[] = [
     bestForOnda:
       'Choose ONDA if you want HRV biofeedback that works with your phone or Apple Watch — no chest strap — inside a guided, progressive practice.',
     bestForThem:
-      'Choose Elite HRV if you want the most measurement-focused HRV app and you’re happy to use a chest strap for the most accurate data.',
+      'Choose Elite HRV if you want the most measurement-focused HRV app and you’re happy to use a chest strap for the cleanest readings at rest.',
     verdict:
-      'The honest peer comparison. Both do real HRV biofeedback and coherence training. Elite HRV is measurement-first and most accurate with a chest strap; ONDA is access-first (camera / Apple Watch) and guided. Pick by whether you prioritise measurement precision or a device-free, guided practice.',
+      'The honest peer comparison. Both do real HRV biofeedback and coherence training. Elite HRV is measurement-first, with its cleanest readings from a paired ECG chest strap at rest; ONDA is access-first (camera / Apple Watch) and guided. Pick by whether you prioritise measurement precision or a device-free, guided practice.',
     faq: [
       {
         q: 'Is ONDA the same as Elite HRV?',
-        a: 'They’re close peers — both offer HRV biofeedback and coherence breathing. The difference is access and framing: Elite HRV is measurement-first and most accurate with a chest strap; ONDA works with the iPhone camera or Apple Watch inside a guided, progressive program.',
+        a: 'They’re close peers — both offer HRV biofeedback and coherence breathing. The difference is access and framing: Elite HRV is measurement-first, with its cleanest readings from a paired ECG chest strap at rest; ONDA works with the iPhone camera or Apple Watch inside a guided, progressive program.',
       },
       {
         q: 'Do I need a chest strap for ONDA like Elite HRV?',
-        a: 'No. ONDA is designed to work with the iPhone camera (pulse/PPG) or an Apple Watch. Elite HRV’s most accurate measurement uses a chest strap.',
+        a: 'No. ONDA is designed to work with the iPhone camera (pulse/PPG) or an Apple Watch. Elite HRV gets its cleanest readings from a paired ECG chest strap, at rest.',
       },
     ],
   },

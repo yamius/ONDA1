@@ -85,7 +85,7 @@ The primary command for building new mitochondria is the activation of the PGC-1
 
 Mitochondrial effects of photobiomodulation are studied mainly in cells and animals, not established in people. If you still want to try a panel:
 
-- [Joovv Solo 3.0](/reviews/joovv-solo-3) — modular reference panel
+- [Joovv Solo 3.0](/reviews/joovv-solo-3) — modular panel
 - [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) — six-wavelength biohacker favourite (now the 1500X)
 - [Hooga HG500](/reviews/hooga-hg500) — budget entry with honest specs
 

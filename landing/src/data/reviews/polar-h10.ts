@@ -7,14 +7,14 @@ const polarH10: ToolReviewInput = {
   category: 'hrv-wearable',
   productType: 'ECG chest strap',
   description:
-    'ONDA review of the Polar H10 — the ECG chest strap that sets the HRV accuracy benchmark. Scored on accuracy, data access, wearability and value.',
+    'ONDA review of the Polar H10 — the ECG chest strap that closely matched lab ECG for HRV in young healthy adults at rest. Scored on accuracy, data access, wearability and value.',
   verdict:
     'The most accurate HRV device you can buy (validated in young healthy adults, at rest) — a reference instrument, not an all-day wearable.',
   summary:
-    'The Polar H10 is the chest strap that the rest of this category is measured against. Its electrical ECG sensor delivers HRV accuracy (in young healthy adults, at rest) that no optical wearable matches, and it streams raw data to any app. The catch is by design — it is a deliberate measurement tool, not something you wear around the clock.',
+    'The Polar H10 is a chest strap often used as the reference when other wearables are validated. Its electrical ECG sensor matched lab ECG almost perfectly for HRV in young healthy adults at rest, and it streams raw data to any app. The catch is by design — it is a deliberate measurement tool, not something you wear around the clock.',
   scores: [
     { criterionId: 'hrv-accuracy', score: 9.7, note: 'Electrical ECG read directly from the chest; peer-reviewed work finds near-perfect agreement with clinical ECG in young healthy adults, at rest.' },
-    { criterionId: 'sensor', score: 9.5, note: 'A true ECG electrode pair — the gold-standard sensor type, not optical inference from blood flow.' },
+    { criterionId: 'sensor', score: 9.5, note: 'A true ECG electrode pair, not optical inference from blood flow — close to lab ECG at rest in young healthy adults.' },
     { criterionId: 'sleep-accuracy', score: 3.0, note: 'Not a sleep device — a chest strap does no sleep staging and is not worn overnight.' },
     { criterionId: 'data-access', score: 9.5, note: 'Broadcasts raw beat-to-beat (RR) intervals over Bluetooth and ANT+; pairs with virtually any HRV app.' },
     { criterionId: 'wearability', score: 3.5, note: 'A chest strap worn for a measurement or a workout — not 24/7 passive tracking.' },
@@ -33,7 +33,7 @@ const polarH10: ToolReviewInput = {
     'Needs a third-party app for real HRV analysis',
     'Must sit snug against skin to read cleanly',
   ],
-  bestFor: 'Best for ground-truth HRV accuracy — a measurement instrument, not an all-day wearable.',
+  bestFor: 'Best for near-lab HRV at rest — a measurement instrument, not an all-day wearable.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from manufacturer specifications, independent 2026 reviews and published validation literature. Not hands-on tested by ONDA.',
@@ -42,17 +42,17 @@ const polarH10: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-The Polar H10 is not really a wearable — it is a measurement instrument, and within this comparison it is the reference the others are judged against. Its electrical ECG sensor reads the heart's signal directly rather than inferring it from blood flow, and peer-reviewed validation finds near-perfect agreement with clinical ECG for resting [HRV](/glossary/heart-rate-variability) in young healthy adults. It also broadcasts raw beat-to-beat (RR) intervals over both Bluetooth and ANT+, so it pairs with effectively any HRV app. At about 105 USD with no subscription, nothing else here is this accurate or this open.
+The Polar H10 is not really a wearable — it is a measurement instrument, and within this comparison we use it as the reference at rest. Its electrical ECG sensor reads the heart's signal directly rather than inferring it from blood flow, and peer-reviewed validation finds near-perfect agreement with clinical ECG for resting [HRV](/glossary/heart-rate-variability) in young healthy adults. It also broadcasts raw beat-to-beat (RR) intervals over both Bluetooth and ANT+, so it pairs with effectively any HRV app. At about 105 USD with no subscription, nothing else here has this kind of ECG validation at rest or is this open.
 
 ## What are the downsides of Polar H10?
 
 The trade-off is deliberate. A chest strap is not something you wear around the clock — there is no all-day passive tracking, and it does no sleep staging at all, which costs it heavily on the two criteria built around 24/7 lifestyle use. For a morning orthostatic measurement or a training session it is ideal; as a continuous recovery monitor it is the wrong tool.
 
-**2026 note.** Nothing has displaced it. Through 2026 the H10 remains the reference every ring, band and watch is validated against — when a study reports a wearable at "~80% agreement," the H10 (or a clinical ECG) is the 100% it is measured against. If you buy any optical wearable and want to know how much to trust its HRV number, the H10 is still the cheapest way to check it against ground truth.
+**2026 note.** Nothing has displaced it. Through 2026 the H10 is still often used as a reference strap in wearable validation studies, alongside clinical ECG. If you buy any optical wearable and want to know how much to trust its HRV number, the H10 is still the cheapest way to check it against an ECG-based reading at rest.
 
 ## Who should buy Polar H10?
 
-Choose the Polar H10 if you want ground-truth HRV — a clean, app-agnostic signal for a structured morning protocol, or for validating another device — and you are willing to put a strap on to get it. If you want HRV collected passively while you sleep, pair it with one of the rings or bands here, or pick one of them instead.
+Choose the Polar H10 if you want near-lab-ECG HRV readings at rest — a clean, app-agnostic signal for a structured morning protocol, or for validating another device — and you are willing to put a strap on to get it. If you want HRV collected passively while you sleep, pair it with one of the rings or bands here, or pick one of them instead.
 
 ---
 
@@ -70,9 +70,9 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
   relatedSlugs: ['oura-ring-4', 'whoop-5-0', 'garmin-venu-4'],
   faq: [
-    { q: "Is the Polar H10 the most accurate HRV device?", a: "Effectively yes. It is an ECG chest strap that reads the heart’s electrical signal directly, with peer-reviewed near-perfect agreement with clinical ECG in young healthy adults, at rest — the reference every optical wearable is validated against." },
+    { q: "How accurate is the Polar H10 for HRV?", a: "In young healthy adults at rest it matched lab ECG almost perfectly: it is an ECG chest strap that reads the heart’s electrical signal directly. There are no comparable data during exercise or in older or clinical groups." },
     { q: "Can the Polar H10 track HRV overnight or sleep?", a: "Not really. It is a chest strap for measurements and workouts, does no sleep staging, and is not designed for 24/7 wear. Pair it with a ring or band for passive overnight data." },
-    { q: "How much is the Polar H10 and does it need a subscription?", a: "About $105 one-time ($104.95 at Polar US), no subscription. It streams raw beat-to-beat (RR) intervals over Bluetooth and ANT+ to almost any HRV app — the cheapest, most open ground-truth option." },
+    { q: "How much is the Polar H10 and does it need a subscription?", a: "About $105 one-time ($104.95 at Polar US), no subscription. It streams raw beat-to-beat (RR) intervals over Bluetooth and ANT+ to almost any HRV app — the cheapest, most open ECG-strap option." },
   ],
 
   datePublished: '2026-05-15',

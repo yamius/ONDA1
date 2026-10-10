@@ -13,7 +13,7 @@ const sleepAsAndroid: ToolReviewInput = {
   summary:
     'Sleep as Android is the most complete sleep app on its platform: it tracks your night, wakes you with a sleep-cycle smart alarm, and bundles in wind-down sounds, snore detection and wide wearable support. The cost of all those features is an interface that feels techy and dense.',
   scores: [
-    { criterionId: 'tracking-accuracy', score: 7.5, note: 'Solid phone-based tracking, more accurate when paired with a supported wearable.' },
+    { criterionId: 'tracking-accuracy', score: 7.5, note: 'Solid phone-based tracking; pairing a supported wearable adds heart-rate data, but accuracy has not been independently tested.' },
     { criterionId: 'wind-down-content', score: 6.0, note: 'Lullabies, nature sounds and binaural audio — more wind-down content than the pure trackers here.' },
     { criterionId: 'sleep-science', score: 7.0, note: 'A sleep-cycle smart alarm and snore tracking, with sensible sleep-hygiene features.' },
     { criterionId: 'insights', score: 7.5, note: 'Deep stats and trends, plus snore and sleep-talk recordings.' },

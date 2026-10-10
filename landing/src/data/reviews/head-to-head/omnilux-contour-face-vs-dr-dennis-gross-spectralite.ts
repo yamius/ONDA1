@@ -17,7 +17,7 @@ const omniluxVsGross: HeadToHeadInput = {
   bestForB:
     'Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand dual red + blue spectrum protocols (anti-aging + acne) and accept hard-shell comfort.',
   axes: [
-    { name: 'Comfort', winner: 'a', note: 'Omnilux: medical-grade flexible silicone — best in category. Dr. Dennis Gross: hard-shell, heavier, less comfortable for extended sessions.' },
+    { name: 'Comfort', winner: 'a', note: 'Omnilux: flexible silicone — the most comfortable in our testing. Dr. Dennis Gross: hard-shell, heavier, less comfortable for extended sessions.' },
     { name: 'Wavelength coverage', winner: 'b', note: 'Dr. Dennis Gross: dual red 633 nm + blue 415 nm — covers anti-aging + acne. Omnilux: red 633 nm + near-infrared 830 nm — anti-aging + deeper tissue without acne mode.' },
     { name: 'Clinical evidence', winner: 'a', note: 'Both FDA-cleared, per their makers (clearance is not FDA approval). Omnilux: peer-reviewed dermatology studies on the specific device. Dr. Dennis Gross: brand-funded studies on dual-spectrum protocol; less independent peer review.' },
     { name: 'Session length', winner: 'b', note: 'Dr. Dennis Gross: 3-minute protocol — shortest in category. Omnilux: 10-minute protocol.' },

@@ -13,7 +13,7 @@ const topThreePanels: HeadToHeadInput = {
   verdict:
     'Best overall for most buyers: Mito Red MitoPRO 1500X — six wavelengths, a large panel, $400 cheaper than Joovv. PlatinumLED wins on price and spectrum; Joovv on modular scaling.',
   bestForA:
-    'Choose Joovv Solo 3.0 if modular full-body scaling, the category-reference build and Joovv’s stated topical-heating indications are deciding factors — at $1,699, the premium price is accepted.',
+    'Choose Joovv Solo 3.0 if modular full-body scaling, the premium modular build and Joovv’s stated topical-heating indications are deciding factors — at $1,699, the premium price is accepted.',
   bestForB:
     'Choose Mito Red MitoPRO 1500 (now sold as the 1500X) if you want a large panel with six wavelengths and a 3-year warranty at $1,299 — $400 below Joovv.',
   bestForC:
@@ -66,7 +66,7 @@ Two verified changes moved this comparison. Joovv now lists the Solo 3.0 at $1,6
 
 ## When is Joovv Solo 3.0 the right pick?
 
-If modular full-body scaling fits your setup plan and you want the category-reference build, Joovv is the right shape. The premium buys the modular ecosystem and polish.
+If modular full-body scaling fits your setup plan and you want the premium modular build, Joovv is the right shape. The premium buys the modular ecosystem and polish.
 
 ## When is Mito Red MitoPRO 1500X the right pick?
 

@@ -13,11 +13,11 @@ const sleepioVsPzizz: HeadToHeadInput = {
   verdict:
     'Different problems. Sleepio for users with insomnia who want a clinical CBT-I programme. Pzizz for users who want a nightly wind-down ritual without therapy-style commitment.',
   bestForA:
-    'Choose Sleepio if you have chronic insomnia and want the most clinically-validated digital CBT-I programme — a 6-week structured intervention recommended by the UK NICE.',
+    'Choose Sleepio if you have chronic insomnia and want the digital CBT-I programme with the largest body of randomised trials (many run by its developer) — a 6-week structured intervention recommended by the UK NICE.',
   bestForB:
     'Choose Pzizz if you want a nightly wind-down audio ritual — generative voice, music and tones to put you to sleep — without the commitment of a structured CBT-I programme.',
   axes: [
-    { name: 'Clinical evidence base', winner: 'a', note: 'Sleepio is the most clinically-validated digital sleep intervention — multiple published RCTs, NICE recommendation, NHS prescribing pathways. Pzizz has user satisfaction data but no equivalent clinical trial base.' },
+    { name: 'Clinical evidence base', winner: 'a', note: 'Sleepio has the largest body of randomised trials among digital sleep interventions (many run by its developer) — multiple published RCTs, NICE recommendation, NHS prescribing pathways. Pzizz has user satisfaction data but no equivalent clinical trial base.' },
     { name: 'Mechanism', winner: 'a', note: 'Sleepio: structured CBT-I (sleep restriction, stimulus control, cognitive techniques). Pzizz: generative audio with overlapping voice and music. Sleepio targets the disorder; Pzizz aids the moment.' },
     { name: 'Time to effect', winner: 'b', note: 'Sleepio: 6-week structured programme, effects build over weeks. Pzizz: immediate per-session use. Pzizz is the right shape if you want help tonight.' },
     { name: 'Commitment level', winner: 'b', note: 'Sleepio requires weekly engagement with a structured programme — sleep diary, exercises, sessions. Pzizz is press-play.' },
@@ -33,7 +33,7 @@ const sleepioVsPzizz: HeadToHeadInput = {
     },
     {
       q: 'Is Sleepio really clinically validated?',
-      a: 'Yes — it is the most clinically-validated digital sleep intervention on the market. Multiple published randomised trials, NICE (UK) recommendation, and NHS prescribing pathways in some UK regions. No other consumer sleep app has equivalent clinical credentials.',
+      a: 'Yes — it has the largest body of randomised trials among digital sleep interventions (many run by its developer). Multiple published randomised trials, NICE (UK) recommendation, and NHS prescribing pathways in some UK regions. No other consumer sleep app has equivalent clinical credentials.',
     },
     {
       q: 'How do I get Sleepio?',
@@ -50,7 +50,7 @@ Sleepio and Pzizz are not really alternatives. Sleepio is a clinical interventio
 
 ## When is Sleepio the right pick?
 
-If you have chronic insomnia — six weeks of trouble falling or staying asleep, daytime impact — Sleepio is the right shape. It is the most clinically-validated digital sleep intervention on the market and the only one with NICE recommendation and NHS prescribing pathways. The six-week structured CBT-I commitment is the cost; durable improvement in insomnia severity is the value.
+If you have chronic insomnia — six weeks of trouble falling or staying asleep, daytime impact — Sleepio is the right shape. It has the largest body of randomised trials among digital sleep interventions (many run by its developer) and is the only one with NICE recommendation and NHS prescribing pathways. The six-week structured CBT-I commitment is the cost; durable improvement in insomnia severity is the value.
 
 ## When is Pzizz the right pick?
 

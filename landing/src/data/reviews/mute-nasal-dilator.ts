@@ -17,7 +17,7 @@ const muteNasal: ToolReviewInput = {
     { criterionId: 'breathing-mechanism', score: 8.5, note: 'Internal mechanical stent — holds airway from inside more directly than external strip leverage. Strongest mechanical mechanism in category.' },
     { criterionId: 'evidence-grounding', score: 6.5, note: 'Rhinomed has published airflow studies, but studies run or funded by the maker do not count as evidence in ONDA scores, and we found no independent trials of the device. FDA registration is neutral.' },
     { criterionId: 'form-factor', score: 6.5, note: 'Internal stent — invisible externally but inserted into nostrils. Comes in three sizes (S/M/L) requiring fit determination.' },
-    { criterionId: 'material-safety', score: 7.5, note: 'Medical-grade polymer. Reusable ~1 week per stent. Nostril-irritation reports in subset of users — not all anatomies fit comfortably.' },
+    { criterionId: 'material-safety', score: 7.5, note: 'Polymer (medical-grade, per Mute). Reusable ~1 week per stent. Nostril-irritation reports in subset of users — not all anatomies fit comfortably.' },
     { criterionId: 'value', score: 6.0, note: '~$25 for 3-pack × 1 week each = ~$1.20/night. More expensive per night than mouth tape or Breathe Right.' },
   ],
   pros: [

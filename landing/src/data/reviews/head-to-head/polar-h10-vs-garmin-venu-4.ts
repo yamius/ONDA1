@@ -6,12 +6,12 @@ const polarH10VsGarmin: HeadToHeadInput = {
   productBSlug: 'garmin-venu-4',
   title: 'Polar H10 vs Garmin Venu 4 (2026)',
   description:
-    'Polar H10 vs Garmin Venu 4 — side-by-side ONDA comparison of the ECG chest-strap reference versus the Garmin training smartwatch.',
+    'Polar H10 vs Garmin Venu 4 — side-by-side ONDA comparison of the ECG chest strap versus the Garmin training smartwatch.',
   intro:
-    'Polar H10 and Garmin Venu 4 are the two training instruments serious athletes compare when sensor accuracy meets ecosystem. The Polar H10 is the ECG chest strap that sets the consumer-accuracy ceiling; Garmin Venu 4 is the smartwatch with the deepest first-party training-analytics stack. They are not really substitutes — most committed athletes own both.',
+    'Polar H10 and Garmin Venu 4 are the two training instruments serious athletes compare when sensor accuracy meets ecosystem. The Polar H10 is the ECG chest strap that matched lab ECG almost perfectly in young healthy adults at rest; Garmin Venu 4 is the smartwatch with the deepest first-party training-analytics stack. They are not really substitutes — most committed athletes own both.',
   jobDependentVerdict: true,
   verdict:
-    'Different jobs. Polar H10 for ground-truth accuracy. Garmin Venu 4 for continuous lifestyle tracking and training analytics. Many athletes pair the two.',
+    'Different jobs. Polar H10 for chest-strap ECG readings that matched lab ECG almost perfectly in young healthy adults at rest. Garmin Venu 4 for continuous lifestyle tracking and training analytics. Many athletes pair the two.',
   bestForA:
     'Choose Polar H10 if accuracy is the deciding criterion — a structured morning HRV protocol, validating another device, or app-agnostic measurement at the lowest price.',
   bestForB:
@@ -29,11 +29,11 @@ const polarH10VsGarmin: HeadToHeadInput = {
   faq: [
     {
       q: 'Is Polar H10 more accurate than Garmin Venu 4?',
-      a: 'Yes, significantly. Polar H10 uses electrical ECG — the same measurement method as clinical ECG — with near-perfect agreement against reference instruments. Garmin uses optical PPG; no independent validation of the Venu 4’s HRV against ECG was found (as of October 2026), so use it for trends.',
+      a: 'Yes, significantly. Polar H10 uses electrical ECG — the same measurement method as clinical ECG — with near-perfect agreement against reference instruments in young healthy adults at rest. Garmin uses optical PPG; no independent validation of the Venu 4’s HRV against ECG was found (as of October 2026), so use it for trends.',
     },
     {
       q: 'Can Garmin Venu 4 replace Polar H10?',
-      a: 'For continuous lifestyle tracking, yes. For a reference-grade morning HRV protocol or for validating another device, no — only ECG hardware like H10 gives you ground-truth accuracy.',
+      a: 'For continuous lifestyle tracking, yes. For a resting morning HRV protocol or for validating another device, no — an ECG chest strap like the H10 tracks lab ECG more closely at rest than optical sensors do.',
     },
     {
       q: 'Should I use both?',
@@ -41,16 +41,16 @@ const polarH10VsGarmin: HeadToHeadInput = {
     },
     {
       q: 'Does Polar H10 work with Garmin?',
-      a: 'Yes — Polar H10 broadcasts over ANT+ and Bluetooth, both of which Garmin watches support. You can pair the strap to a Garmin Venu 4 for ECG-grade heart-rate data during workouts.',
+      a: 'Yes — Polar H10 broadcasts over ANT+ and Bluetooth, both of which Garmin watches support. You can pair the strap to a Garmin Venu 4 for chest-strap ECG heart-rate data during workouts (less precise with heavy movement than at rest).',
     },
   ],
   content: `## The short version
 
-Polar H10 is the accuracy reference; Garmin Venu 4 is the continuous-wear training watch. They serve different jobs, and committed athletes often own both.
+Polar H10 is the ECG chest strap we use as the reference at rest; Garmin Venu 4 is the continuous-wear training watch. They serve different jobs, and committed athletes often own both.
 
 ## When is Polar H10 the right pick?
 
-If ground-truth HRV accuracy is what you want — for a structured morning protocol, for validating another device, or for app-agnostic measurement — Polar H10 is the right shape. At about $105 with no subscription and a replaceable coin cell, it is the cheapest device in the HRV category and the most accurate at once.
+If a resting HRV reading close to lab ECG is what you want — for a structured morning protocol, for validating another device, or for app-agnostic measurement — Polar H10 is the right shape. At about $105 with no subscription and a replaceable coin cell, it is the cheapest device in the HRV category, and in young healthy adults at rest it matched lab ECG almost perfectly.
 
 ## When is Garmin Venu 4 the right pick?
 

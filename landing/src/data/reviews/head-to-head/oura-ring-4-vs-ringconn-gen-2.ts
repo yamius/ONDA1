@@ -17,7 +17,7 @@ const ouraVsRingconn: HeadToHeadInput = {
   bestForB:
     'Choose RingConn Gen 2 if you want subscription-free smart-ring tracking with the longest battery in the category, at the lowest 3-year total cost.',
   axes: [
-    { name: 'HRV measurement', winner: 'a', note: 'Both use optical PPG. Oura Ring 4 has one independent overnight check against ECG; RingConn has only a preprint, so their precision cannot be compared directly (as of October 2026).' },
+    { name: 'HRV measurement', winner: 'a', note: 'Both use optical PPG. Oura Ring 4 has one independent study of overnight recordings against ECG; RingConn has only a preprint, so their precision cannot be compared directly (as of October 2026).' },
     { name: 'Sleep tracking', winner: 'tie', note: 'Practically equal on accuracy — neither has an independent validation of sleep staging (as of October 2026). Oura’s sleep staging has been validated only in maker-funded studies (no independent check of the Ring 4); wearable sleep stages are still estimates. RingConn is competent but a tier behind on staging granularity.' },
     { name: 'App maturity', winner: 'a', note: 'Oura: decade of iteration. RingConn: newer, cleaner-but-shallower. Oura wins decisively.' },
     { name: 'Battery life', winner: 'b', note: 'RingConn Gen 2: 10–12 days depending on size. Oura Ring 4: about 4–7 days. RingConn lasts roughly two to three times as long — the longest in the smart-ring category.' },
@@ -37,7 +37,7 @@ const ouraVsRingconn: HeadToHeadInput = {
     },
     {
       q: 'Which is more accurate?',
-      a: 'Oura Ring 4 has one independent overnight study; RingConn has only a preprint, so their precision cannot be compared (as of October 2026). Accuracy is not the main reason to pick one over the other. Pick on subscription model and battery life instead.',
+      a: 'Oura Ring 4 has one independent study of overnight recordings; RingConn has only a preprint, so their precision cannot be compared (as of October 2026). Accuracy is not the main reason to pick one over the other. Pick on subscription model and battery life instead.',
     },
     {
       q: 'Can RingConn replace Oura long-term?',

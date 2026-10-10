@@ -7,9 +7,9 @@ const withingsScanwatch: ToolReviewInput = {
   category: 'hrv-wearable',
   productType: 'Hybrid smartwatch',
   description:
-    'ONDA review of the Withings ScanWatch 2 as an HRV tracker — a hybrid analog watch with medical-grade ECG. Scored on accuracy, sleep, data and value.',
+    'ONDA review of the Withings ScanWatch 2 as an HRV tracker — a hybrid analog watch with a regulator-cleared ECG (per Withings). Scored on accuracy, sleep, data and value.',
   verdict:
-    'A hybrid analog watch with medical-grade ECG and a ~30-day battery — strong on clinical health metrics, competent rather than class-leading as a dedicated HRV tracker.',
+    'A hybrid analog watch with a regulator-cleared ECG (per Withings) and a ~30-day battery — strong on health-screening features, competent rather than class-leading as a dedicated HRV tracker.',
   summary:
     'The Withings ScanWatch 2 is the clinical-health pick here — a hybrid analog watch with a regulator-cleared single-lead ECG, SpO2, temperature and sleep-apnea detection, a roughly 30-day battery and no subscription. As a pure HRV tracker it is competent rather than class-leading.',
   scores: [
@@ -19,7 +19,7 @@ const withingsScanwatch: ToolReviewInput = {
     { criterionId: 'data-access', score: 7.0, note: 'The Withings Health Mate app, with reasonable export and a developer API.' },
     { criterionId: 'wearability', score: 8.5, note: 'A roughly 30-day battery in a discreet hybrid analog watch — the easiest device here to simply wear and forget.' },
     { criterionId: 'app-ux', score: 7.0, note: 'Health Mate is clean and clear, if less recovery-focused than Oura or Whoop.' },
-    { criterionId: 'value', score: 7.5, note: 'A one-time purchase around 350 USD, no subscription, with genuine clinical-grade features.' },
+    { criterionId: 'value', score: 7.5, note: 'A one-time purchase around 350 USD, no subscription, with a regulator-cleared ECG (per Withings).' },
   ],
   pros: [
     'Regulator-cleared single-lead ECG on the wrist',
@@ -33,7 +33,7 @@ const withingsScanwatch: ToolReviewInput = {
     'A small dial and no full touchscreen',
     'HRV is a secondary metric, not the headline',
   ],
-  bestFor: 'Best for a discreet hybrid watch with clinical-grade health screening and no subscription.',
+  bestFor: 'Best for a discreet hybrid watch with a regulator-cleared ECG (per Withings) and no subscription.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from manufacturer specifications, independent 2026 reviews and published validation literature. Not hands-on tested by ONDA.',
@@ -46,7 +46,7 @@ The Withings ScanWatch 2 is the clinical-health pick of this comparison. It look
 
 ## What are the downsides of Withings ScanWatch 2?
 
-For dedicated HRV work it is competent rather than class-leading. The ECG is an on-demand spot reading, not a continuous protocol, so the all-night HRV signal is still optical — fine for trends, short of the reference-grade accuracy of a chest strap. It is also less recovery-focused than Oura or Whoop: HRV is one health metric among many here, not the headline.
+For dedicated HRV work it is competent rather than class-leading. The ECG is an on-demand spot reading, not a continuous protocol, so the all-night HRV signal is still optical — fine for trends, less precise than a chest-strap ECG at rest. It is also less recovery-focused than Oura or Whoop: HRV is one health metric among many here, not the headline.
 
 ## Who should buy Withings ScanWatch 2?
 
@@ -67,8 +67,8 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
   relatedSlugs: ['apple-watch-series-11', 'garmin-venu-4', 'fitbit-charge-6'],
   faq: [
-    { q: "Does the Withings ScanWatch 2 need a subscription?", a: "No — it is $350 one-time with no subscription. It is a hybrid analog watch with clinical-grade screening (ECG, SpO2, AFib detection and body temperature) and multi-week battery." },
-    { q: "Is the Withings ScanWatch 2 good for HRV?", a: "It tracks overnight HRV and sleep competently for a hybrid watch and adds medical-grade ECG and AFib screening. For pure overnight HRV precision a finger ring still leads; ONDA scores it 7.4/10." },
+    { q: "Does the Withings ScanWatch 2 need a subscription?", a: "No — it is $350 one-time with no subscription. It is a hybrid analog watch with a regulator-cleared ECG and AFib detection (per Withings), plus SpO2 and body temperature, and multi-week battery." },
+    { q: "Is the Withings ScanWatch 2 good for HRV?", a: "It tracks overnight HRV and sleep competently for a hybrid watch and adds a regulator-cleared ECG with AFib screening (per Withings). ONDA scores it 7.4/10." },
     { q: "How long does the Withings ScanWatch 2 battery last?", a: "About 30 days per charge — far longer than a full smartwatch, because it is a hybrid analog design with physical hands. That makes continuous overnight HRV and sleep tracking easy without nightly charging." },
   ],
 

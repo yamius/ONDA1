@@ -13,7 +13,7 @@ const whoop5: ToolReviewInput = {
   summary:
     'The Whoop 5.0 is built around recovery. It builds its daily recovery signal from HRV measured during sleep rather than from a morning spot-check. The trade-off is the model: there is no hardware to own, only an ongoing membership.',
   scores: [
-    { criterionId: 'hrv-accuracy', score: 7.5, note: 'Recovery is built on HRV measured during sleep. The earlier WHOOP 4.0 was checked in one independent overnight study; the 5.0 itself has not been validated against ECG (as of October 2026). ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
+    { criterionId: 'hrv-accuracy', score: 7.5, note: 'Recovery is built on HRV measured during sleep. The earlier WHOOP 4.0 was checked in one independent study of overnight recordings; the 5.0 itself has not been validated against ECG (as of October 2026). ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'sensor', score: 8.0, note: 'A multi-wavelength optical band that holds heart-rate well when worn snugly.' },
     { criterionId: 'sleep-accuracy', score: 7.5, note: 'Recovery-grade sleep tracking; the 5.0 has no independent sleep validation, so it scores the same as the Oura rings. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'data-access', score: 6.5, note: 'A developer API exists, but like Oura the raw beat-to-beat stream stays largely closed.' },
@@ -71,7 +71,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   relatedSlugs: ['oura-ring-4', 'apple-watch-series-11'],
   faq: [
     { q: "Does Whoop 5.0 require a subscription?", a: "Yes. Whoop is subscription-only: $199 per year for WHOOP One, $239 for Peak or $359 for Life, each including the band — there is no separate hardware purchase. Stop paying and the band stops working." },
-    { q: "Is Whoop 5.0 accurate for HRV?", a: "Whoop builds its nightly HRV value from measurements taken during sleep. It is good enough to follow trends, but as a wrist band it is behind a finger ring or ECG chest strap for precision. The 5.0 itself has not been separately tested." },
+    { q: "Is Whoop 5.0 accurate for HRV?", a: "Whoop builds its nightly HRV value from measurements taken during sleep. It is good enough to follow trends, but an ECG chest strap is closer to lab ECG (at rest, in young healthy adults). The 5.0 itself has not been separately tested." },
     { q: "Who is Whoop 5.0 best for?", a: "Athletes and serious trainers who act on a daily recovery-and-strain score. The ~14-day battery and screenless band suit 24/7 wear; it is overkill for casual users who dislike subscriptions." },
   ],
 

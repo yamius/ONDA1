@@ -11,7 +11,7 @@ const series12VsVenu4: HeadToHeadInput = {
     'Two mainstream health smartwatches around the same money, pulling in different directions. The September 2026 Apple Watch Series 12 brings the all-new Health Sensing System — Recovery HRV sampled ~24× more often — plus ECG and hypertension notifications, but a ~1-day battery. The Garmin Venu 4 answers with HRV Status, a multi-day battery and the Garmin training ecosystem, and no ECG. Which mid-range watch fits depends on battery and ecosystem more than on the HRV number.',
   jobDependentVerdict: true,
   verdict:
-    'No overall winner — it splits by priorities. For the newest HRV system, an ECG and iPhone integration, the Series 12 leads; for multi-day battery that makes overnight wear effortless and the Garmin training world, the Venu 4 leads. Both are wrist optical, so a ring still beats either for a pure overnight record.',
+    'No overall winner — it splits by priorities. For the newest HRV system, an ECG and iPhone integration, the Series 12 leads; for multi-day battery that makes overnight wear effortless and the Garmin training world, the Venu 4 leads.',
   bestForA:
     'Choose the Series 12 if you want Apple’s new HRV system (Recovery HRV), a single-lead ECG and hypertension notifications, and the iPhone ecosystem — accepting a daily charge.',
   bestForB:
@@ -28,7 +28,7 @@ const series12VsVenu4: HeadToHeadInput = {
   faq: [
     {
       q: 'Is the Apple Watch Series 12 or Garmin Venu 4 better for HRV?',
-      a: 'For the HRV system itself the Series 12 edges it — it samples ~24× more often and reports Recovery HRV, while Garmin HRV Status is a single overnight-baseline model. The Venu 4’s advantage is a multi-day battery that lets you wear it every night without a charging window. Both are wrist optical; a ring is still more precise overnight.',
+      a: 'For the HRV system itself the Series 12 edges it — it samples ~24× more often and reports Recovery HRV, while Garmin HRV Status is a single overnight-baseline model. The Venu 4’s advantage is a multi-day battery that lets you wear it every night without a charging window. Both are wrist optical; the Oura ring line has more published overnight validation.',
     },
     {
       q: 'Does the Garmin Venu 4 have ECG like the Apple Watch?',
@@ -41,7 +41,7 @@ const series12VsVenu4: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Pick by battery and ecosystem, not the HRV number. The Series 12 wins for the newest HRV system, an ECG and iPhone integration. The Venu 4 wins for a multi-day battery that makes overnight wear effortless and the Garmin training world. Both are wrist optical, so a ring still beats either for a pure overnight record.
+Pick by battery and ecosystem, not the HRV number. The Series 12 wins for the newest HRV system, an ECG and iPhone integration. The Venu 4 wins for a multi-day battery that makes overnight wear effortless and the Garmin training world.
 
 ## Where the HRV comparison stands in 2026
 
@@ -49,7 +49,7 @@ The Series 12’s Health Sensing System samples HRV far more often and reports R
 
 ## The honest caveat
 
-Both measure; neither trains. If a clean overnight HRV trend is your single priority, a finger ring outperforms either watch — see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
+Both measure; neither trains. If a clean overnight HRV trend is your single priority, a ring you can wear every night may suit you better (in overnight recordings from 13 people, Dial 2025, Oura Ring 4 was among the closest to ECG) — see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-18',
   dateModified: '2026-10-10',

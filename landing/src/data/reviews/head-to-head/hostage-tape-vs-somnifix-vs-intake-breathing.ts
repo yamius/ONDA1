@@ -7,7 +7,7 @@ const hostageVsSomnifixVsIntake: HeadToHeadInput = {
   productCSlug: 'intake-breathing',
   title: 'Hostage Tape vs Somnifix vs Intake Breathing (2026)',
   description:
-    'Hostage Tape vs Somnifix vs Intake Breathing — the three category-defining nasal-breathing aids compared. Biohacker mouth tape vs FDA-registered medical mouth tape vs premium magnetic nasal dilator.',
+    'Hostage Tape vs Somnifix vs Intake Breathing — the three category-defining nasal-breathing aids compared. Biohacker mouth tape vs FDA-registered mouth tape vs premium magnetic nasal dilator.',
   intro:
     'The three nasal-breathing aids that define the 2026 category. Hostage Tape — viral biohacker mouth tape with beard-friendly acrylic adhesive. Somnifix — FDA-registered porous mouth tape with central breathing port. Intake Breathing — premium external magnetic nasal dilator (James Nestor-recommended).',
   jobDependentVerdict: true,
@@ -16,12 +16,12 @@ const hostageVsSomnifixVsIntake: HeadToHeadInput = {
   bestForA:
     'Choose Hostage Tape if you want beard-friendly biohacker-brand mouth tape with subscription convenience.',
   bestForB:
-    'Choose Somnifix if you want FDA-registered medical-credibility mouth tape with a porous design.',
+    'Choose Somnifix if you want FDA-registered (a listing, not clearance or approval) mouth tape with a porous design.',
   bestForC:
     'Choose Intake Breathing if you can\'t adapt to mouth tape and want premium external magnetic nasal dilation instead.',
   axes: [
     { name: 'Mechanism', winner: 'tie', note: 'Hostage Tape: full-seal mouth tape. Somnifix: porous mouth tape with breathing port. Intake: external magnetic nasal dilation. Different mechanisms; all force nasal breathing.' },
-    { name: 'Regulatory standing', winner: 'b', note: 'Somnifix: FDA-registered medical device. Hostage Tape and Intake: brand-funded studies. Somnifix wins.' },
+    { name: 'Regulatory standing', winner: 'b', note: 'Somnifix: FDA-registered (a listing, not clearance or approval). Hostage Tape and Intake: brand-funded studies. Somnifix wins.' },
     { name: 'Safety / sleep apnea', winner: 'tie', note: 'None is shown to be safe with sleep apnea. Somnifix (porous port) and Hostage Tape (corner cutout): designs not tested as safety features; not with a blocked nose. Intake: Dilators can also quieten snoring and hide possible sleep apnea — if apnea is possible, see a doctor first.' },
     { name: 'Beard friendliness', winner: 'a', note: 'Hostage Tape: best beard adhesion in category. Somnifix and Intake: not engineered for beards.' },
     { name: 'Subscription convenience', winner: 'a', note: 'Hostage Tape: $13/month subscription. Somnifix and Intake: per-pack purchase.' },
@@ -31,7 +31,7 @@ const hostageVsSomnifixVsIntake: HeadToHeadInput = {
   faq: [
     {
       q: 'Which nasal-breathing aid should I buy in 2026?',
-      a: 'Three questions resolve it. Beard + want subscription convenience? Hostage Tape. Want FDA-registered medical credibility with a porous design? Somnifix. Can\'t adapt to mouth tape? Intake Breathing.',
+      a: 'Three questions resolve it. Beard + want subscription convenience? Hostage Tape. Want FDA-registered (a listing, not clearance or approval) mouth tape with a porous design? Somnifix. Can\'t adapt to mouth tape? Intake Breathing.',
     },
     {
       q: 'Hostage Tape or Intake — which is the better starting point?',
@@ -60,7 +60,7 @@ If you have a beard and want subscription-convenient biohacker-brand mouth tape 
 
 ## When is Somnifix the right pick?
 
-If you want FDA-registered medical credibility with a porous design — Somnifix is the right shape. Multi-year track record.
+If you want FDA-registered (a listing, not clearance or approval) mouth tape with a porous design — Somnifix is the right shape. Multi-year track record.
 
 ## When is Intake Breathing the right pick?
 

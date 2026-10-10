@@ -7,14 +7,14 @@ const polarVsWhoopVsGarmin: HeadToHeadInput = {
   productCSlug: 'garmin-venu-4',
   title: 'Polar H10 vs Whoop 5.0 vs Garmin Venu 4 (2026)',
   description:
-    'Polar H10 vs Whoop 5.0 vs Garmin Venu 4 — three-way ONDA comparison of three training-focused HRV instruments. Chest-strap reference, recovery coaching band and training smartwatch.',
+    'Polar H10 vs Whoop 5.0 vs Garmin Venu 4 — three-way ONDA comparison of three training-focused HRV instruments. ECG chest strap, recovery coaching band and training smartwatch.',
   intro:
-    'Polar H10, Whoop 5.0 and Garmin Venu 4 are the three HRV instruments serious athletes compare when measurement quality and training analytics are the deciding factors. Three form factors, three roles: Polar H10 is the ECG chest-strap accuracy reference, Whoop is the continuous-coaching recovery band, Garmin is the do-everything training watch. Often paired rather than substituted.',
+    'Polar H10, Whoop 5.0 and Garmin Venu 4 are the three HRV instruments serious athletes compare when measurement quality and training analytics are the deciding factors. Three form factors, three roles: Polar H10 is the ECG chest strap (close to lab ECG in young healthy adults at rest), Whoop is the continuous-coaching recovery band, Garmin is the do-everything training watch. Often paired rather than substituted.',
   jobDependentVerdict: true,
   verdict:
-    'Three different roles. Polar H10 for reference accuracy. Whoop for daily recovery coaching. Garmin for training analytics with no subscription. Committed athletes often run two of three.',
+    'Three different roles. Polar H10 for resting readings close to lab ECG. Whoop for daily recovery coaching. Garmin for training analytics with no subscription. Committed athletes often run two of three.',
   bestForA:
-    'Choose Polar H10 if reference-grade HRV accuracy is the deciding criterion — the consumer ECG benchmark at the lowest price, app-agnostic.',
+    'Choose Polar H10 if resting HRV readings close to lab ECG are the deciding criterion — an ECG chest strap that matched lab ECG almost perfectly in young healthy adults at rest, at the lowest price, app-agnostic.',
   bestForB:
     'Choose Whoop 5.0 if the daily Recovery score is the coaching mechanism that changes your training — continuous overnight HRV with subscription-based coaching.',
   bestForC:
@@ -31,12 +31,12 @@ const polarVsWhoopVsGarmin: HeadToHeadInput = {
   ],
   faq: [
     {
-      q: 'Which is the most accurate — Polar H10, Whoop or Garmin?',
-      a: 'Polar H10, significantly. Electrical ECG measurement near-perfectly agrees with clinical reference; Whoop and Garmin use optical PPG which lags ECG by a real margin. For ground-truth HRV, H10 is the reference.',
+      q: 'Which gives the most precise HRV reading — Polar H10, Whoop or Garmin?',
+      a: 'Polar H10, at rest. Its electrical ECG matched a clinical reference almost perfectly in young healthy adults at rest; Whoop and Garmin use optical PPG, and neither the WHOOP 5.0 nor the Venu 4 has an independent HRV validation against ECG (as of October 2026). For a resting reference reading, use the H10.',
     },
     {
       q: 'Should I use a chest strap or a wearable for HRV?',
-      a: 'Depends on what you want. For a structured morning HRV protocol or for validating another device, chest strap (Polar H10) — reference accuracy. For continuous overnight tracking and lifestyle-friendly form factor, Whoop or Garmin. Many athletes run both.',
+      a: 'Depends on what you want. For a structured morning HRV protocol or for validating another device, chest strap (Polar H10) — closest to lab ECG at rest, in young healthy adults. For continuous overnight tracking and lifestyle-friendly form factor, Whoop or Garmin. Many athletes run both.',
     },
     {
       q: 'Which has the best long-term cost?',
@@ -53,11 +53,11 @@ const polarVsWhoopVsGarmin: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Three different roles. Polar H10 for reference HRV accuracy. Whoop for daily recovery coaching. Garmin for training analytics with no subscription. Committed athletes often own two of three.
+Three different roles. Polar H10 for resting HRV readings close to lab ECG. Whoop for daily recovery coaching. Garmin for training analytics with no subscription. Committed athletes often own two of three.
 
 ## When is Polar H10 the right pick?
 
-If reference-grade HRV accuracy is the deciding criterion — for a structured morning protocol, for validating another device, for app-agnostic measurement — Polar H10 is the right shape. At about $105 with a replaceable coin cell and a multi-year lifespan, it is the cheapest device in the HRV category and the most accurate at once.
+If a resting HRV reading close to lab ECG is the deciding criterion — for a structured morning protocol, for validating another device, for app-agnostic measurement — Polar H10 is the right shape. At about $105 with a replaceable coin cell and a multi-year lifespan, it is the cheapest device in the HRV category, and in young healthy adults at rest it matched lab ECG almost perfectly.
 
 ## When is Whoop 5.0 the right pick?
 

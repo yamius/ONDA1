@@ -9,12 +9,12 @@ const iqairVsMolekuleVsDyson: HeadToHeadInput = {
   description:
     'IQAir HealthPro Plus vs Molekule Air Pro vs Dyson Big+Quiet — the three category-defining premium air purifiers compared.',
   intro:
-    'The three premium air purifiers that define the 2026 category. IQAir HealthPro Plus — clinical-grade HyperHEPA H14 with multi-decade Swiss pedigree. Molekule Air Pro — PECO photocatalytic VOC destruction + True HEPA + premium app. Dyson Purifier Big+Quiet — consumer-brand polish + True HEPA + formaldehyde destruction + best smart features.',
+    'The three premium air purifiers that define the 2026 category. IQAir HealthPro Plus — maker-rated HyperHEPA H14 with multi-decade Swiss pedigree. Molekule Air Pro — PECO photocatalytic VOC destruction + True HEPA + premium app. Dyson Purifier Big+Quiet — consumer-brand polish + True HEPA + formaldehyde destruction + best smart features.',
   jobDependentVerdict: true,
   verdict:
     'Three different premium theses. IQAir for clinical filtration depth. Molekule for PECO VOC destruction. Dyson for premium smart + formaldehyde + quietest operation.',
   bestForA:
-    'Choose IQAir HealthPro Plus for clinical-grade HyperHEPA H14 filtration with multi-decade Swiss pedigree — accept no smart features.',
+    'Choose IQAir HealthPro Plus for maker-rated HyperHEPA H14 filtration with multi-decade Swiss pedigree — accept no smart features.',
   bestForB:
     'Choose Molekule Air Pro for PECO photocatalytic VOC destruction + premium smart features and app integration.',
   bestForC:
@@ -31,7 +31,7 @@ const iqairVsMolekuleVsDyson: HeadToHeadInput = {
   faq: [
     {
       q: 'Which premium air purifier should I buy in 2026?',
-      a: 'Three questions resolve it. Want clinical-grade HEPA depth + Swiss pedigree? IQAir HealthPro Plus. Want PECO VOC destruction + smart features? Molekule Air Pro. Want premium smart + formaldehyde + quietest + lowest price? Dyson Big+Quiet.',
+      a: 'Three questions resolve it. Want maker-rated H14 HEPA depth + Swiss pedigree? IQAir HealthPro Plus. Want PECO VOC destruction + smart features? Molekule Air Pro. Want premium smart + formaldehyde + quietest + lowest price? Dyson Big+Quiet.',
     },
     {
       q: 'IQAir vs Dyson — which premium fits most users?',
@@ -56,7 +56,7 @@ Three premium air purifiers, three different theses. IQAir = clinical HEPA depth
 
 ## When is IQAir HealthPro Plus the right pick?
 
-If your purchase decision is filtration-depth driven and you want clinical-grade HEPA with Swiss pedigree — IQAir is the right shape. Accept lack of smart features.
+If your purchase decision is filtration-depth driven and you want maker-rated H14 HEPA with Swiss pedigree — IQAir is the right shape. Accept lack of smart features.
 
 ## When is Molekule Air Pro the right pick?
 

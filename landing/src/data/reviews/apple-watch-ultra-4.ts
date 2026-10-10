@@ -11,7 +11,7 @@ const appleWatchUltra4: ToolReviewInput = {
   verdict:
     'The Apple Watch that finally suits overnight HRV: the new Health Sensing System plus a 50-hour battery and an athlete readiness score — if you can justify the size and $799 price.',
   summary:
-    'The Ultra 4 takes the Series 12’s all-new Health Sensing System — HRV up to 24× more often, Recovery HRV and Overall HRV — and adds the one thing the Series 12 lacks for HRV: battery. At up to 50 hours it can genuinely track HRV night after night without a charging window fighting your sleep, and it adds an athlete-focused readiness score. The catch is the size, the $799 price, and that a finger ring is still more precise for the overnight number itself.',
+    'The Ultra 4 takes the Series 12’s all-new Health Sensing System — HRV up to 24× more often, Recovery HRV and Overall HRV — and adds the one thing the Series 12 lacks for HRV: battery. At up to 50 hours it can genuinely track HRV night after night without a charging window fighting your sleep, and it adds an athlete-focused readiness score. The catch is the size and the $799 price.',
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.0, note: 'Same Health Sensing System as the Series 12 — HRV up to 24× more often, split into Recovery HRV and Overall HRV — plus a readiness score. Apple calls it its most accurate heart sensing, but no independent validation of Recovery or Overall HRV against ECG was found (as of October 2026), so it scores the same as the Series 12.' },
     { criterionId: 'sensor', score: 9.5, note: 'The most complete sensor package here: the new Health Sensing System with hypertension notifications, single-lead ECG, a 40 m depth/dive sensor and satellite connectivity.' },
@@ -30,7 +30,7 @@ const appleWatchUltra4: ToolReviewInput = {
   cons: [
     'From $799 — a lot of watch if HRV is all you want',
     'Large, heavy 49 mm case',
-    'Wrist optical HRV still trails a finger ring or ECG strap for a continuous overnight record',
+    'Wrist optical HRV is not independently validated yet; an ECG chest strap is closer to lab ECG (at rest, in young healthy adults)',
     'Recovery and Overall HRV are different metrics — easy to confuse',
   ],
   bestFor: 'Best for an athlete or outdoors user who wants the new HRV system with the battery to wear it every night.',
@@ -48,11 +48,11 @@ On top of that sits the most complete sensor package on any watch here: single-l
 
 ## What are the downsides of Apple Watch Ultra 4?
 
-The physics are still wrist-optical. Apple calls it its most accurate heart sensing; no independent validation of Recovery or Overall HRV against ECG was found (as of October 2026), and a finger-based ring or an ECG chest strap remains more precise for the overnight number itself. And it is a lot of watch: from $799, large and heavy, with much of the price going to dive, satellite and multisport features rather than HRV. If you want that HRV system in a smaller, cheaper package, the [Apple Watch Series 12](/reviews/apple-watch-series-12) has the same one — it just can’t match the battery.
+The physics are still wrist-optical. Apple calls it its most accurate heart sensing; no independent validation of Recovery or Overall HRV against ECG was found (as of October 2026), and an ECG chest strap is closer to lab ECG (at rest, in young healthy adults). And it is a lot of watch: from $799, large and heavy, with much of the price going to dive, satellite and multisport features rather than HRV. If you want that HRV system in a smaller, cheaper package, the [Apple Watch Series 12](/reviews/apple-watch-series-12) has the same one — it just can’t match the battery.
 
 ## Who should buy Apple Watch Ultra 4?
 
-Choose the Ultra 4 if you are an athlete or outdoors user who wants Apple’s new HRV system *and* the battery to wear it every night, and you will use the rugged, dive and satellite features. If HRV and everyday health are the point and you don’t need the ruggedness, the Series 12 is the smarter buy; if a clean overnight HRV trend is your single priority, a ring still leads — see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).
+Choose the Ultra 4 if you are an athlete or outdoors user who wants Apple’s new HRV system *and* the battery to wear it every night, and you will use the rugged, dive and satellite features. If HRV and everyday health are the point and you don’t need the ruggedness, the Series 12 is the smarter buy; if a clean overnight HRV trend is your single priority, a ring may suit you better (in overnight recordings from 13 people, Dial 2025, Oura Ring 4 was among the closest to ECG) — see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).
 
 ---
 
@@ -82,7 +82,7 @@ Choose the Ultra 4 if you are an athlete or outdoors user who wants Apple’s ne
     },
     {
       q: 'Is the Ultra 4 accurate enough for HRV, or should I get a ring?',
-      a: 'HealthKit now exposes an RMSSD value comparable in kind to Whoop and Oura (Apple hasn’t confirmed Recovery HRV itself is RMSSD), and the 50-hour battery lets you actually capture overnight trends. For the most precise overnight record, a finger ring or an ECG chest strap still leads — the Ultra 4 wins on being one rugged do-everything device.',
+      a: 'HealthKit now exposes an RMSSD value comparable in kind to Whoop and Oura (Apple hasn’t confirmed Recovery HRV itself is RMSSD), and the 50-hour battery lets you actually capture overnight trends. An ECG chest strap is closer to lab ECG (at rest, in young healthy adults) — the Ultra 4 wins on being one rugged do-everything device.',
     },
   ],
   relatedSlugs: ['apple-watch-series-12', 'garmin-fenix-8', 'oura-ring-4', 'whoop-5-0'],

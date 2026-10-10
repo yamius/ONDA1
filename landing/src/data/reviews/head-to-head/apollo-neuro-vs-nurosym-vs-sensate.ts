@@ -31,7 +31,7 @@ const apolloVsNurosymVsSensate: HeadToHeadInput = {
   faq: [
     {
       q: 'Apollo Neuro vs Nurosym vs Sensate — which works best?',
-      a: 'Three different jobs. Apollo for all-day passive vagal modulation. Nurosym for clinical-grade direct auricular tVNS with the deepest evidence. Sensate for an evening wind-down ritual with paired soundscapes. None substitutes for the others.',
+      a: 'Three different jobs. Apollo for all-day passive vagal modulation. Nurosym for direct auricular tVNS with the deepest evidence. Sensate for an evening wind-down ritual with paired soundscapes. None substitutes for the others.',
     },
     {
       q: 'Are all three really vagus nerve stimulators?',
@@ -52,7 +52,7 @@ const apolloVsNurosymVsSensate: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Three independent mechanisms targeting the same nerve. Apollo is all-day vibrotactile, Nurosym is clinical-grade electrical, Sensate is infrasonic-and-soundscape ritual. Pick on which mechanism fits your routine.
+Three independent mechanisms targeting the same nerve. Apollo is all-day vibrotactile, Nurosym is direct electrical, Sensate is infrasonic-and-soundscape ritual. Pick on which mechanism fits your routine.
 
 ## When is Apollo Neuro the right pick?
 

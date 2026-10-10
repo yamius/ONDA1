@@ -8,14 +8,14 @@ const whoopVsPolarH10: HeadToHeadInput = {
   description:
     'Whoop 5.0 vs Polar H10 for HRV: ECG chest strap ($105, no subscription) vs 24/7 recovery band ($199–$359/yr). Accuracy, cost and who should buy which.',
   intro:
-    'Whoop 5.0 and Polar H10 are not really the same kind of device, but they end up on the same shortlist for users who care about HRV signal quality. Whoop is an optical band sold as a membership with recovery coaching; Polar H10 is the ECG chest strap that sets the consumer-accuracy ceiling. The choice is between continuous lifestyle tracking and reference-grade measurement.',
+    'Whoop 5.0 and Polar H10 are not really the same kind of device, but they end up on the same shortlist for users who care about HRV signal quality. Whoop is an optical band sold as a membership with recovery coaching; Polar H10 is the ECG chest strap whose readings matched lab ECG closely at rest in young healthy adults. The choice is between continuous lifestyle tracking and an on-demand ECG reading.',
   jobDependentVerdict: true,
   verdict:
-    'They solve different jobs. Whoop for continuous overnight HRV with recovery coaching; Polar H10 for ECG-grade accuracy when you put the strap on. Many serious HRV users own both.',
+    'They solve different jobs. Whoop for continuous overnight HRV with recovery coaching; Polar H10 for chest-strap ECG readings that match lab ECG closely at rest when you put the strap on. Many serious HRV users own both.',
   bestForA:
     'Choose Whoop 5.0 if continuous overnight HRV and a daily Recovery score are the deciding criteria — you want a band you wear around the clock that coaches your training, and a yearly membership is acceptable.',
   bestForB:
-    'Choose Polar H10 if you want ground-truth HRV accuracy for a structured morning protocol or to validate another device — a one-time-purchase reference instrument, not a lifestyle wearable.',
+    'Choose Polar H10 if you want resting HRV readings close to lab ECG for a structured morning protocol or to validate another device — a one-time-purchase ECG strap, not a lifestyle wearable.',
   axes: [
     { name: 'HRV accuracy', winner: 'b', note: 'Polar H10: electrical ECG; RR intervals agree closely with an ECG Holter at rest and during exercise (Gilgen-Ammann 2019). Whoop: optical PPG; heart rate agrees well with ECG, but RMSSD error approached the smallest worthwhile change in validation (Bellenger 2021, on Whoop 2.0).' },
     { name: 'Continuous overnight tracking', winner: 'a', note: 'Whoop tracks HRV continuously overnight; H10 is a strap you put on for a measurement or workout, not a 24/7 wearable.' },
@@ -29,7 +29,7 @@ const whoopVsPolarH10: HeadToHeadInput = {
   faq: [
     {
       q: 'Is Polar H10 more accurate than Whoop for HRV?',
-      a: 'Yes. Polar H10 measures the heart’s electrical signal like an ECG, and a validation study found its RR intervals closely matched an ECG Holter at rest and during exercise (Gilgen-Ammann et al., 2019). Whoop uses optical sensors: in a validation of the earlier Whoop 2.0, heart rate agreed well with ECG, but HRV (RMSSD) error was larger (Bellenger et al., 2021); the 5.0 itself has no independent validation against ECG (as of October 2026). Whoop is fine for overnight trends; H10 is the reference.',
+      a: 'Yes. Polar H10 measures the heart’s electrical signal like an ECG, and a validation study found its RR intervals closely matched an ECG Holter at rest and during exercise (Gilgen-Ammann et al., 2019). Whoop uses optical sensors: in a validation of the earlier Whoop 2.0, heart rate agreed well with ECG, but HRV (RMSSD) error was larger (Bellenger et al., 2021); the 5.0 itself has no independent validation against ECG (as of October 2026). Whoop is fine for overnight trends; the H10 is the closer match to ECG (at rest, in young healthy adults).',
     },
     {
       q: 'How much does Whoop cost compared with Polar H10?',
@@ -45,17 +45,17 @@ const whoopVsPolarH10: HeadToHeadInput = {
     },
     {
       q: 'Should I use Whoop and Polar H10 together?',
-      a: 'Many serious HRV users do: Whoop for continuous overnight trends and recovery coaching, Polar H10 for a reference-grade morning reading or to check that the band’s numbers track reality. The two layer cleanly.',
+      a: 'Many serious HRV users do: Whoop for continuous overnight trends and recovery coaching, Polar H10 for a morning ECG reading or to check that the band’s numbers track reality. The two layer cleanly.',
     },
   ],
   content: `## The short answer
 
-Polar H10 is more accurate for HRV — it is an ECG chest strap that closely matches clinical ECG, costs about $105 once and has no subscription. Whoop 5.0 is less precise but tracks HRV and sleep automatically every night and turns them into a daily Recovery score, for $199–$359 a year. Buy Polar H10 for accuracy and open data; buy Whoop for effortless 24/7 tracking and coaching.
+Polar H10 is more precise for HRV at rest — it is an ECG chest strap that matched lab ECG almost perfectly in young healthy adults at rest, costs about $105 once and has no subscription. Whoop 5.0 is optical and less precise, but tracks HRV and sleep automatically every night and turns them into a daily Recovery score, for $199–$359 a year. Buy Polar H10 for resting precision and open data; buy Whoop for effortless 24/7 tracking and coaching.
 
 | | Whoop 5.0 | Polar H10 |
 |---|---|---|
 | Sensor | Optical (PPG) band | Electrical ECG chest strap |
-| HRV accuracy | Good for overnight trends | Reference-grade, close to clinical ECG |
+| HRV accuracy | Good for overnight trends | Close to lab ECG at rest (Gilgen-Ammann 2019) |
 | When it measures | Continuously, day and night | Only while you wear the strap |
 | Sleep tracking | Yes, automatic | No |
 | Battery | 14+ days, rechargeable | Up to 400 h, replaceable coin cell |
@@ -81,7 +81,7 @@ Full details in our [Polar H10 review](/reviews/polar-h10).
 
 ## What does the research say about accuracy?
 
-ECG chest straps are the consumer reference for HRV. In a validation study, Polar H10 RR intervals matched a medical ECG Holter closely at rest and during exercise. Whoop’s validation (on the earlier Whoop 2.0) found excellent heart-rate agreement with ECG, but HRV error close to the smallest change that matters day to day — fine for multi-day trends, less so for reading small single-day shifts. To put any number in context, see [normal HRV by age](/articles/normal-hrv-by-age).
+ECG chest straps are what we use as the reference for resting HRV. In a validation study, Polar H10 RR intervals matched a medical ECG Holter closely at rest and during exercise. Whoop’s validation (on the earlier Whoop 2.0) found excellent heart-rate agreement with ECG, but HRV error close to the smallest change that matters day to day — fine for multi-day trends, less so for reading small single-day shifts. To put any number in context, see [normal HRV by age](/articles/normal-hrv-by-age).
 
 ## The hybrid case
 

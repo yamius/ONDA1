@@ -117,7 +117,7 @@ Anti-entropy maintenance is measured at the HRV layer. The instruments that catc
 
 - [Oura Ring 4](/reviews/oura-ring-4) — continuous overnight HRV and sleep
 - [Whoop 5.0](/reviews/whoop-5-0) — daily recovery coach
-- [Polar H10](/reviews/polar-h10) — reference accuracy
+- [Polar H10](/reviews/polar-h10) — ECG chest strap, closest to lab ECG at rest in young healthy adults
 
 [Best HRV Trackers (2026) →](/reviews/hrv-trackers)
 `,

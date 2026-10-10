@@ -18,7 +18,7 @@ const hv3ProVsTheragunProPlus: HeadToHeadInput = {
     'Choose the Theragun PRO Plus if you want the deepest 16 mm amplitude, the fullest feature set (OLED, integrated heat, breathing training), multi-grip versatility and a 2-year warranty — and the premium price is acceptable.',
   axes: [
     { name: 'Stall force', winner: 'a', note: 'Hypervolt 3 Pro: up to ~70 lbs — a step above the Theragun PRO Plus’s 60. The Hyperice now pushes harder before stalling.' },
-    { name: 'Amplitude (depth)', winner: 'b', note: 'Theragun PRO Plus: 16 mm deep stroke, the category benchmark. The Hypervolt stays in the ~14 mm class, so Theragun reaches deeper into tissue.' },
+    { name: 'Amplitude (depth)', winner: 'b', note: 'Theragun PRO Plus: 16 mm deep stroke. The Hypervolt stays in the ~14 mm class, so Theragun reaches deeper into tissue.' },
     { name: 'Noise & battery', winner: 'a', note: 'Hypervolt 3 Pro: ~51 dB QuietGlide motor and four hours of battery. Theragun: 50–55 dB and shorter runtime. Edge Hyperice on both.' },
     { name: 'Features & display', winner: 'b', note: 'Theragun adds an OLED display, integrated heat, vibration and breathing training. The Hypervolt has a digital dial and pressure sensor but no display or heat.' },
     { name: 'Ergonomics', winner: 'b', note: 'Theragun’s multi-grip triangle reaches hard-to-hit muscles more ways; the Hypervolt’s single-grip handle is comfortable but less versatile.' },

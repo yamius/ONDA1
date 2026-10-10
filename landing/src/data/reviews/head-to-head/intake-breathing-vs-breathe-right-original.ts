@@ -15,7 +15,7 @@ const intakeVsBreatheRight: HeadToHeadInput = {
   bestForA:
     'Choose Intake Breathing if you want stronger external nasal dilation with reusable magnetic band and James Nestor-recommended brand.',
   bestForB:
-    'Choose Breathe Right Original if you want the FDA-cleared drugstore reference at lowest per-night cost — the first nasal dilator to try.',
+    'Choose Breathe Right Original if you want an FDA-cleared drugstore strip at lowest per-night cost — the first nasal dilator to try.',
   axes: [
     { name: 'Mechanism strength', winner: 'a', note: 'Intake: magnetic dilation — stronger leverage. Breathe Right: passive spring-tension via plastic strip — weaker.' },
     { name: 'Regulatory standing', winner: 'b', note: 'Breathe Right: FDA-cleared with multi-decade track record. Intake: brand-funded studies, no FDA Class II.' },
@@ -53,7 +53,7 @@ If you want stronger external magnetic dilation with reusable design and James N
 
 ## When is Breathe Right Original the right pick?
 
-If you want the FDA-cleared drugstore reference at lowest per-night cost — Breathe Right is the right shape. Try this first before committing to premium alternatives.`,
+If you want an FDA-cleared drugstore strip at lowest per-night cost — Breathe Right is the right shape. Try this first before committing to premium alternatives.`,
   relatedComparisonSlug: 'best-mouth-tape-nasal-breathing-2026',
   publishOn: '2026-07-13',
   datePublished: '2026-05-28',

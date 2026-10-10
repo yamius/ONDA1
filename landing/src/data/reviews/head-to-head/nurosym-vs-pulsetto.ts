@@ -6,7 +6,7 @@ const nurosymVsPulsetto: HeadToHeadInput = {
   productBSlug: 'pulsetto',
   title: 'Nurosym vs Pulsetto (2026)',
   description:
-    'Nurosym vs Pulsetto — side-by-side ONDA comparison of the two leading consumer tVNS devices. Auricular vs cervical, clinical-grade evidence vs accessible price.',
+    'Nurosym vs Pulsetto — side-by-side ONDA comparison of the two leading consumer tVNS devices. Auricular vs cervical, a larger (largely maker-funded) evidence base vs accessible price.',
   intro:
     'Nurosym and Pulsetto are the two consumer tVNS devices most users compare against each other. They stimulate different branches of the vagus nerve — Nurosym at the ear (auricular), Pulsetto at the neck (cervical) — and they come from different ends of the market: Nurosym is the rebranded Parasym hardware with the deepest published research base, Pulsetto is the consumer-accessible neck collar with the widest programme variety at a third of the price.',
   jobDependentVerdict: true,
@@ -17,7 +17,7 @@ const nurosymVsPulsetto: HeadToHeadInput = {
   bestForB:
     'Choose Pulsetto if you want a polished daily-use cervical tVNS device with four guided programmes at an accessible price, and you are comfortable with a thinner independent-evidence base.',
   axes: [
-    { name: 'Stimulation target', winner: 'tie', note: 'Different vagus branches: Nurosym at the auricular branch (ear), Pulsetto at the cervical vagal trunk (neck). Both validated; the cervical approach is more direct, the auricular has the deeper literature.' },
+    { name: 'Stimulation target', winner: 'tie', note: 'Different vagus branches: Nurosym at the auricular branch (ear), Pulsetto at the cervical vagal trunk (neck). Neither has strong independent trial evidence (Nurosym’s is largely maker-funded); the cervical approach is more direct, the auricular has the larger literature.' },
     { name: 'Independent evidence base', winner: 'a', note: 'Nurosym (Parasym hardware): 40+ peer-reviewed trials covering HRV, inflammation, depression, long-COVID. Pulsetto: one published pilot plus company-sponsored studies.' },
     { name: 'Stimulation parameters', winner: 'a', note: 'Nurosym: disclosed (25 Hz, 200–1000 µs). Pulsetto: documented in-app but less granular. Nurosym is the right pick for self-experimenters who reference the literature.' },
     { name: 'Protocol variety', winner: 'b', note: 'Pulsetto: four guided programmes (sleep, stress, anxiety, pain). Nurosym: a single deliberately-spartan programme with user-titrated intensity.' },
@@ -32,7 +32,7 @@ const nurosymVsPulsetto: HeadToHeadInput = {
     },
     {
       q: 'Auricular vs cervical tVNS — which is better?',
-      a: 'Both are validated; the practical difference is form factor and acute effect. The cervical approach (Pulsetto) produces a more direct effect on the vagal trunk; the auricular approach (Nurosym) has the deeper published research base. For most users the form factor decides — an ear clip versus a neck collar.',
+      a: 'Neither has strong independent trial evidence (Nurosym’s is largely maker-funded); the practical difference is form factor and acute effect. The cervical approach (Pulsetto) produces a more direct effect on the vagal trunk; the auricular approach (Nurosym) has the deeper published research base. For most users the form factor decides — an ear clip versus a neck collar.',
     },
     {
       q: 'Are either FDA-cleared?',
@@ -45,7 +45,7 @@ const nurosymVsPulsetto: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Nurosym is the clinical-grade auricular tVNS device with the deepest evidence base in consumer tVNS; Pulsetto is the accessible cervical tVNS collar with the widest protocol library at a third of the price. Pick on whether evidence depth or daily-use form factor matters more.
+Nurosym is the auricular tVNS device with the largest published evidence base in consumer tVNS (largely maker-funded); Pulsetto is the accessible cervical tVNS collar with the widest protocol library at a third of the price. Pick on whether evidence depth or daily-use form factor matters more.
 
 ## When is Nurosym the right pick?
 

@@ -8,16 +8,16 @@ const ouraRing5VsWhoop: HeadToHeadInput = {
   description:
     'Oura Ring 5 vs WHOOP 5.0 — the sleep-first ring vs the training-first band. ONDA compares HRV and sleep accuracy, recovery coaching, comfort and cost.',
   intro:
-    'The Oura Ring 5 and WHOOP 5.0 are the two screenless recovery trackers most people cross-shop, and they split cleanly by philosophy. Oura is the sleep-first ring — overnight HRV and sleep from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) in the smallest thing you can wear. WHOOP is the training-first band — continuous HRV and a full recovery-and-strain coaching layer. Both lock their best data behind a payment.',
+    'The Oura Ring 5 and WHOOP 5.0 are the two screenless recovery trackers most people cross-shop, and they split cleanly by philosophy. Oura is the sleep-first ring — overnight HRV and sleep from the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated) in the smallest thing you can wear. WHOOP is the training-first band — continuous HRV and a full recovery-and-strain coaching layer. Both lock their best data behind a payment.',
   jobDependentVerdict: true,
   verdict:
-    'Sleep-first ring vs training-first band. The Oura Ring 5 wins on sleep and overnight HRV accuracy and all-day comfort; WHOOP 5.0 wins on continuous in-exercise HRV and daily recovery-and-strain coaching. Both require ongoing payment — pick by whether your priority is precise sleep data or training guidance.',
+    'Sleep-first ring vs training-first band. The Oura Ring 5 wins on overnight focus, a longer research track record (mostly on earlier generations; the Ring 5 itself not validated) and all-day comfort; WHOOP 5.0 wins on continuous in-exercise HRV and daily recovery-and-strain coaching. Both require ongoing payment — pick by whether your priority is sleep data or training guidance.',
   bestForA:
-    'Choose the Oura Ring 5 if precise sleep staging and overnight HRV in a comfortable, always-on ring are the priority, and you accept the membership.',
+    'Choose the Oura Ring 5 if sleep staging and overnight HRV in a comfortable, always-on ring are the priority, and you accept the membership.',
   bestForB:
     'Choose WHOOP 5.0 if you train hard and want continuous HRV (including during workouts) plus a daily Recovery-and-Strain coaching loop, and a yearly membership is acceptable.',
   axes: [
-    { name: 'Sleep & HRV accuracy', winner: 'tie', note: 'Practically equal: neither the Ring 5 nor the WHOOP 5.0 has an independent validation of sleep staging or overnight HRV (as of October 2026). Their earlier generations (Oura Ring 4, WHOOP 4.0) were each checked in one overnight study; the current models were not.' },
+    { name: 'Sleep & HRV accuracy', winner: 'tie', note: 'Practically equal: neither the Ring 5 nor the WHOOP 5.0 has an independent validation of sleep staging or overnight HRV (as of October 2026). Their earlier generations (Oura Ring 4, WHOOP 4.0) were each checked in one study of overnight recordings (13 people); the current models were not.' },
     { name: 'Recovery & strain coaching', winner: 'b', note: 'WHOOP delivers a morning Recovery %, a daily Strain target, a behaviour journal and WHOOP Coach. Oura’s Readiness is excellent but not a closed-loop training coach.' },
     { name: 'Continuous / in-exercise HRV', winner: 'b', note: 'WHOOP samples continuously from the wrist, including during exercise. A ring reads overnight HRV cleanly but can slip and misread under hard training.' },
     { name: 'Comfort & all-day wear', winner: 'a', note: 'The Ring 5 is ~40% slimmer than the Ring 4 and disappears on the finger day and night. WHOOP’s band is comfortable but more noticeable.' },
@@ -27,7 +27,7 @@ const ouraRing5VsWhoop: HeadToHeadInput = {
   faq: [
     {
       q: 'Oura Ring 5 or WHOOP 5.0 — which is better?',
-      a: 'Neither wins outright. The Oura Ring 5 is the better sleep-and-HRV instrument and more comfortable; WHOOP 5.0 is the better training tool with continuous HRV and daily recovery-and-strain coaching. Both need ongoing payment. Pick by whether you want precise sleep data or training guidance.',
+      a: 'Neither wins outright. The Oura Ring 5 is the more sleep-focused instrument and more comfortable; WHOOP 5.0 is the better training tool with continuous HRV and daily recovery-and-strain coaching. Both need ongoing payment. Pick by whether you want sleep data or training guidance.',
     },
     {
       q: 'Does WHOOP track HRV more continuously than Oura?',
@@ -40,7 +40,7 @@ const ouraRing5VsWhoop: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Two screenless trackers, two philosophies. The [Oura Ring 5](/reviews/oura-ring-5) is the sleep-first ring from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated). [WHOOP 5.0](/reviews/whoop-5-0) is the training-first band with continuous HRV and daily recovery-and-strain coaching.
+Two screenless trackers, two philosophies. The [Oura Ring 5](/reviews/oura-ring-5) is the sleep-first ring from the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated). [WHOOP 5.0](/reviews/whoop-5-0) is the training-first band with continuous HRV and daily recovery-and-strain coaching.
 
 ## When is the Oura Ring 5 the right pick?
 

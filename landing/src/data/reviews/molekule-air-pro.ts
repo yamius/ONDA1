@@ -49,7 +49,7 @@ PECO efficacy beyond HEPA claims have been debated in independent reviews; Molek
 
 ## Who should buy Molekule Air Pro?
 
-Choose Molekule Air Pro for PECO technology + premium smart features. For clinical-grade HEPA without smart features, IQAir HealthPro Plus. For consumer-polished smart features at lower price, Dyson Big+Quiet or Coway Airmega 400.
+Choose Molekule Air Pro for PECO technology + premium smart features. For maker-rated H14 HEPA (company-stated) without smart features, IQAir HealthPro Plus. For consumer-polished smart features at lower price, Dyson Big+Quiet or Coway Airmega 400.
 
 ---
 

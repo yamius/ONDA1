@@ -17,7 +17,7 @@ const hostageTape: ToolReviewInput = {
     { criterionId: 'breathing-mechanism', score: 7.5, note: 'Full-seal single-piece design. Corner cutout leaves part of the lips uncovered; not tested as a safety feature. No porous-strip option.' },
     { criterionId: 'evidence-grounding', score: 6.0, note: 'Brand-funded testimonials and UFC fighter endorsements. Limited peer-reviewed studies on the specific tape. Honest sleep-apnea caveat in safety copy.' },
     { criterionId: 'form-factor', score: 8.5, note: 'Single-piece full-face strip — easy to apply, generous coverage. Newer "Hostage Mini" half-strip option for users wanting less coverage.' },
-    { criterionId: 'material-safety', score: 8.0, note: 'Hypoallergenic medical-grade adhesive. Skin-reaction reports rare in user feedback at scale. Latex-free.' },
+    { criterionId: 'material-safety', score: 8.0, note: 'Hypoallergenic adhesive. Skin-reaction reports rare in user feedback at scale. Latex-free.' },
     { criterionId: 'value', score: 8.5, note: '$13/month for ~30 strips = ~$0.43/night. Subscription convenience valued by users; absolute cost higher than DIY medical tape but reasonable for the brand polish.' },
   ],
   pros: [
@@ -49,7 +49,7 @@ Clinical evidence. Hostage Tape leans on brand-funded studies and testimonials r
 
 ## Who should buy Hostage Tape?
 
-Choose Hostage Tape if you have a beard and want subscription-convenient biohacker-brand mouth tape. For original medical-grade reference, Somnifix. For premium silicone alternative, Dream Recovery. For DIY budget, 3M Nexcare Surgical Tape.
+Choose Hostage Tape if you have a beard and want subscription-convenient biohacker-brand mouth tape. For the longest-running brand, Somnifix. For premium silicone alternative, Dream Recovery. For DIY budget, 3M Nexcare Surgical Tape.
 
 ---
 

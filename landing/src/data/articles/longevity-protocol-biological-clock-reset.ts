@@ -102,7 +102,7 @@ The body has always had the capacity for this. It simply needs the correct input
 
 Red-light protocols are part of most longevity stacks. The panels that actually deliver the dose they claim:
 
-- [Joovv Solo 3.0](/reviews/joovv-solo-3) — modular full-body reference
+- [Joovv Solo 3.0](/reviews/joovv-solo-3) — modular full-body panel
 - [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) — six-wavelength large panel (now sold as the 1500X)
 - [Hooga HG500](/reviews/hooga-hg500) — budget option that meets its specs
 

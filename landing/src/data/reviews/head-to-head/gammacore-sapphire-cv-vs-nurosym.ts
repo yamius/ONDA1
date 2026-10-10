@@ -15,11 +15,11 @@ const gammacoreVsNurosym: HeadToHeadInput = {
   bestForA:
     'Choose gammaCore Sapphire CV if you have a migraine or cluster-headache diagnosis and a prescriber willing to write for it — the only FDA-cleared non-invasive VNS device.',
   bestForB:
-    'Choose Nurosym if you want clinical-grade auricular tVNS at home, with the deepest peer-reviewed evidence base of any consumer device, and you do not have an FDA-indication condition.',
+    'Choose Nurosym if you want auricular tVNS at home, with the deepest peer-reviewed evidence base of any consumer device, and you do not have an FDA-indication condition.',
   axes: [
     { name: 'FDA clearance', winner: 'a', note: 'gammaCore Sapphire CV: FDA-cleared (prescription) for migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua. Nurosym: CE-marked as a Class IIa device in Europe, not FDA-cleared.' },
     { name: 'Stimulation target', winner: 'a', note: 'gammaCore: cervical vagal trunk directly (most direct possible non-invasive target). Nurosym: auricular branch (the most-studied non-invasive target).' },
-    { name: 'Trial evidence — within indication', winner: 'a', note: 'gammaCore: 30+ randomised trials for migraine/cluster headache, the regulatory reference. Nurosym hardware: 40+ broader-indication tVNS trials.' },
+    { name: 'Trial evidence — within indication', winner: 'a', note: 'gammaCore: 30+ randomised trials for migraine/cluster headache, the basis of its FDA clearance. Nurosym hardware: 40+ broader-indication tVNS trials.' },
     { name: 'Trial evidence — outside indication', winner: 'b', note: 'For HRV, stress, inflammation, depression — Nurosym hardware has the deeper published literature. gammaCore is studied specifically for headache.' },
     { name: 'Consumer accessibility', winner: 'b', note: 'gammaCore: prescription-only in the US, gated by a clinician. Nurosym: direct-to-consumer, CE-marked.' },
     { name: 'Protocol variety', winner: 'b', note: 'gammaCore: fixed 2-minute sessions, clinician-calibrated dose, no programme variety. Nurosym: single user-titrated programme with disclosed parameters.' },
@@ -29,7 +29,7 @@ const gammacoreVsNurosym: HeadToHeadInput = {
   faq: [
     {
       q: 'Is gammaCore better than Nurosym?',
-      a: 'For migraine and cluster headache, yes — gammaCore is the FDA-cleared reference and has the regulatory trial base for those specific indications. For everything else (HRV, stress, anxiety, general autonomic modulation), Nurosym’s broader auricular tVNS evidence base is stronger and you can buy it without a prescription.',
+      a: 'For migraine and cluster headache, yes — gammaCore is FDA-cleared for those indications and has the regulatory trial base for those specific indications. For everything else (HRV, stress, anxiety, general autonomic modulation), Nurosym’s broader auricular tVNS evidence base is stronger and you can buy it without a prescription.',
     },
     {
       q: 'Do I need a prescription for gammaCore?',
@@ -37,7 +37,7 @@ const gammacoreVsNurosym: HeadToHeadInput = {
     },
     {
       q: 'Which has more research behind it?',
-      a: 'Within their respective indications, both are strong. gammaCore has 30+ randomised trials specifically for migraine and cluster headache — the regulatory reference. The Nurosym (Parasym) hardware appears in 40+ published auricular tVNS studies across HRV, inflammation, depression and long-COVID. Different domains, both well-supported.',
+      a: 'Within their respective indications, both are strong. gammaCore has 30+ randomised trials specifically for migraine and cluster headache — the basis of its FDA clearance. The Nurosym (Parasym) hardware appears in 40+ published auricular tVNS studies across HRV, inflammation, depression and long-COVID. Different domains, both well-supported.',
     },
     {
       q: 'Are gammaCore and Nurosym hitting the same nerve?',
@@ -54,7 +54,7 @@ If you have a diagnosed migraine or cluster-headache condition and a clinician w
 
 ## When is Nurosym the right pick?
 
-If you want clinical-grade tVNS at home without going through a clinician — for HRV training, stress modulation, sleep-onset work, anxiety-related self-experimentation — Nurosym is the right shape. The Parasym hardware appears in dozens of peer-reviewed trials across exactly those indications; the parameters are disclosed; no prescription gate.`,
+If you want evidence-led tVNS at home without going through a clinician — for HRV training, stress modulation, sleep-onset work, anxiety-related self-experimentation — Nurosym is the right shape. The Parasym hardware appears in dozens of peer-reviewed trials across exactly those indications; the parameters are disclosed; no prescription gate.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
   dateModified: '2026-10-10',

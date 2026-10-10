@@ -8,14 +8,14 @@ const ringProVsOura5: HeadToHeadInput = {
   description:
     'Ultrahuman Ring Pro vs Oura Ring 5 — the subscription-free flagship with a ~15-day battery vs the best-supported ring line with a mandatory membership. ONDA on which smart ring to buy.',
   intro:
-    'This is the headline smart-ring decision of 2026: Ultrahuman’s redesigned, US-available Ring Pro against Oura’s flagship Ring 5. The Ring Pro is subscription-free with a category-leading ~15-day battery; the Ring 5 comes from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) with the best app, but charges a mandatory membership. It comes down to owning it outright vs paying for the reference experience.',
+    'This is the headline smart-ring decision of 2026: Ultrahuman’s redesigned, US-available Ring Pro against Oura’s flagship Ring 5. The Ring Pro is subscription-free with a category-leading ~15-day battery; the Ring 5 comes from the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated) with the best app, but charges a mandatory membership. It comes down to owning it outright vs paying for the reference experience.',
   jobDependentVerdict: true,
   verdict:
-    'No subscription and huge battery vs accuracy and app depth. The Ultrahuman Ring Pro wins on cost model (one-time $479, no fee) and battery (~15 days); the Oura Ring 5 wins on the best-supported ring line (the Ring 5 itself is not validated), sensors and the best app — for $399 plus a membership. Pick by whether you refuse a subscription or want the reference ring.',
+    'No subscription and huge battery vs research track record and app depth. The Ultrahuman Ring Pro wins on cost model (one-time $479, no fee) and battery (~15 days); the Oura Ring 5 wins on the best-supported ring line (the Ring 5 itself is not validated), sensors and the best app — for $399 plus a membership. Pick by whether you refuse a subscription or want the most established ring.',
   bestForA:
     'Choose the Ultrahuman Ring Pro if a one-time price with no subscription and an exceptional ~15-day battery matter most, and you are comfortable being an early adopter of a redesigned ring.',
   bestForB:
-    'Choose the Oura Ring 5 if you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated), the most polished app and upgraded sensors, and the ~$6/month membership is acceptable.',
+    'Choose the Oura Ring 5 if you want the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated), the most polished app and upgraded sensors, and the ~$6/month membership is acceptable.',
   axes: [
     { name: 'Subscription & cost', winner: 'a', note: 'Ring Pro: one-time $479, no subscription. Oura Ring 5: $399 + ~$6/month for full data. Over a few years the Ring Pro is cheaper and you owe nothing ongoing.' },
     { name: 'Battery', winner: 'a', note: 'Ring Pro: ~15 days — best in the category. Oura Ring 5: ~6–9 days. Not close.' },
@@ -27,11 +27,11 @@ const ringProVsOura5: HeadToHeadInput = {
   faq: [
     {
       q: 'Ultrahuman Ring Pro or Oura Ring 5 — which should I buy?',
-      a: 'If you refuse a subscription and want the longest battery, the Ring Pro (one-time $479, ~15 days). If you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) and the best app, the Oura Ring 5 ($399 + ~$6/month). The Ring Pro wins the cost model; Oura has better-supported accuracy for its earlier generations overnight (there is no independent check of the current model) and wins on polish.',
+      a: 'If you refuse a subscription and want the longest battery, the Ring Pro (one-time $479, ~15 days). If you want the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated) and the best app, the Oura Ring 5 ($399 + ~$6/month). The Ring Pro wins the cost model; Oura has more published research on its earlier generations (there is no independent check of the current model) and wins on polish.',
     },
     {
       q: 'Is the Ring Pro accurate enough to skip Oura?',
-      a: 'For most people, its HRV and sleep tracking are good and improved over the Ring Air. But earlier Oura generations have the best independent overnight evidence (the Ring 5 itself has not been validated), so if precision is your top priority, Oura is the better-supported line — at the cost of a subscription.',
+      a: 'For most people, its HRV and sleep tracking are good and improved over the Ring Air. But earlier Oura generations have more published research, including one small independent ECG study (the Ring 5 itself has not been validated), so if published evidence is your top priority, Oura is the better-supported line — at the cost of a subscription.',
     },
     {
       q: 'Does the Ring Pro really last 15 days?',
@@ -40,7 +40,7 @@ const ringProVsOura5: HeadToHeadInput = {
   ],
   content: `## The short version
 
-The [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) is the subscription-free flagship — one-time $479, ~15-day battery, on-ring processing. The [Oura Ring 5](/reviews/oura-ring-5) is the accuracy leader with the best app, at $399 plus a mandatory membership.
+The [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) is the subscription-free flagship — one-time $479, ~15-day battery, on-ring processing. The [Oura Ring 5](/reviews/oura-ring-5) has the more mature app, from a ring line with more research on earlier models (the Ring 5’s accuracy has not yet been independently validated), at $399 plus a mandatory membership.
 
 ## When is the Ultrahuman Ring Pro the right pick?
 

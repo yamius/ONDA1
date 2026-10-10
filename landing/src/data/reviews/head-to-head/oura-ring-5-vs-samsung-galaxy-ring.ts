@@ -8,12 +8,12 @@ const oura5VsGalaxy: HeadToHeadInput = {
   description:
     'Oura Ring 5 vs Samsung Galaxy Ring — the app leader from the best-supported ring line with a membership vs the subscription-free Android ring. Cross-platform app vs own-it-outright value.',
   intro:
-    'These two answer the same question — a comfortable ring for overnight HRV and sleep — with opposite trade-offs. The Oura Ring 5 is the 2026 flagship: 40% slimmer, upgraded sensors, overnight HRV and sleep from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated), but full data needs a monthly membership. The Samsung Galaxy Ring is the subscription-free alternative — every feature unlocked at purchase — but it is tied to Samsung Health and Android, and its accuracy trails Oura. The decision usually comes down to your phone and whether you accept an ongoing fee.',
+    'These two answer the same question — a comfortable ring for overnight HRV and sleep — with opposite trade-offs. The Oura Ring 5 is the 2026 flagship: 40% slimmer, upgraded sensors, overnight HRV and sleep from the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated), but full data needs a monthly membership. The Samsung Galaxy Ring is the subscription-free alternative — every feature unlocked at purchase — but it is tied to Samsung Health and Android, and it has less published validation than the Oura line. The decision usually comes down to your phone and whether you accept an ongoing fee.',
   jobDependentVerdict: true,
   verdict:
-    'Accuracy-and-app vs own-it-outright, cross-platform vs Samsung-locked. Oura has better-supported accuracy for its earlier generations overnight (there is no independent check of the current model); the Ring 5 wins on sensors and app depth and works on iPhone and Android, for $399 plus ~$6/month. The Samsung Galaxy Ring wins on cost model — $399 with no subscription, every feature unlocked — but only really fits Samsung/Android owners. Pick by your phone and whether the membership is acceptable.',
+    'Research-track-record-and-app vs own-it-outright, cross-platform vs Samsung-locked. Oura has more published research on its earlier generations (partly funded by Oura; there is no independent check of the current model); the Ring 5 wins on sensors and app depth and works on iPhone and Android, for $399 plus ~$6/month. The Samsung Galaxy Ring wins on cost model — $399 with no subscription, every feature unlocked — but only really fits Samsung/Android owners. Pick by your phone and whether the membership is acceptable.',
   bestForA:
-    'Choose the Oura Ring 5 if you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) and the most polished app, you may be on iPhone or Android, and the membership is acceptable.',
+    'Choose the Oura Ring 5 if you want the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated) and the most polished app, you may be on iPhone or Android, and the membership is acceptable.',
   bestForB:
     'Choose the Samsung Galaxy Ring if you are on a Samsung phone inside Samsung Health and want Oura-style tracking with no subscription — every feature unlocked for good at purchase.',
   axes: [
@@ -27,11 +27,11 @@ const oura5VsGalaxy: HeadToHeadInput = {
   faq: [
     {
       q: 'Oura Ring 5 or Samsung Galaxy Ring — which is better?',
-      a: 'For accuracy, app depth and cross-platform support, the Oura Ring 5 ($399 + ~$6/month). For subscription-free tracking on a Samsung phone, the Galaxy Ring ($399, no fee). Oura has better-supported accuracy for its earlier generations overnight (there is no independent check of the current model) and wins the app; the Galaxy Ring wins the cost model — if you are inside the Samsung ecosystem.',
+      a: 'For research track record, app depth and cross-platform support, the Oura Ring 5 ($399 + ~$6/month). For subscription-free tracking on a Samsung phone, the Galaxy Ring ($399, no fee). Oura has more published research on its earlier generations (partly funded by Oura; there is no independent check of the current model) and wins the app; the Galaxy Ring wins the cost model — if you are inside the Samsung ecosystem.',
     },
     {
       q: 'Is the Samsung Galaxy Ring accurate enough to replace Oura?',
-      a: 'For most people its overnight HRV and sleep tracking are competent and good enough day to day, but earlier Oura generations have the better independent overnight HRV evidence (the Ring 5 itself has not been validated). If precision is your priority, Oura has the edge — at the cost of a subscription.',
+      a: 'For most people its overnight HRV and sleep tracking are competent and good enough day to day, but earlier Oura generations have the better independent overnight HRV evidence (the Ring 5 itself has not been validated). If published evidence matters most to you, the Oura line has more of it (mostly on earlier generations, partly funded by Oura) — at the cost of a subscription.',
     },
     {
       q: 'Does the Samsung Galaxy Ring work with an iPhone?',
@@ -40,7 +40,7 @@ const oura5VsGalaxy: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Same job, opposite trade-offs. The [Oura Ring 5](/reviews/oura-ring-5) is the app leader from the best-supported ring line and works on any phone, but charges a membership. The [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) is subscription-free with every feature unlocked at purchase — but it is Samsung/Android-locked and less accurate.
+Same job, opposite trade-offs. The [Oura Ring 5](/reviews/oura-ring-5) is the app leader from the best-supported ring line and works on any phone, but charges a membership. The [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) is subscription-free with every feature unlocked at purchase — but it is Samsung/Android-locked and has less published validation.
 
 ## When is the Oura Ring 5 the right pick?
 

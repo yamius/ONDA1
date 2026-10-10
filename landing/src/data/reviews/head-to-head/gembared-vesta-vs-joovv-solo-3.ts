@@ -15,7 +15,7 @@ const gembaredVsJoovv: HeadToHeadInput = {
   bestForA:
     'Choose GembaRed Vesta if EMF discipline is a first-class criterion — fully-shielded build with the lowest EMF measurement in this list, six-wavelength coverage.',
   bestForB:
-    'Choose Joovv Solo 3.0 if modular full-body scaling and the larger brand’s support are the deciding criteria — the category reference for build.',
+    'Choose Joovv Solo 3.0 if modular full-body scaling and the larger brand’s support are the deciding criteria — a long-running, widely used modular panel.',
   axes: [
     { name: 'EMF / flicker discipline', winner: 'a', note: 'GembaRed: <0.1 mG at 6" — lowest in the category. Joovv: <0.5 mG at 6", also clean. GembaRed leads on EMF discipline; Joovv is still excellent.' },
     { name: 'Wavelength coverage', winner: 'a', note: 'GembaRed: six wavelengths (480 + 630 + 660 + 810 + 830 + 850 nm). Joovv: two (660 + 850 nm). GembaRed has dramatically broader spectrum.' },

@@ -9,7 +9,7 @@ const livanovaVnsTherapy: ToolReviewInput = {
   description:
     'ONDA review of LivaNova VNS Therapy (SenTiva) — the implanted vagus nerve stimulator used for drug-resistant epilepsy and treatment-resistant depression. Reference medical device.',
   verdict:
-    'The reference implanted VNS device — the clinical gold standard, not a consumer purchase.',
+    'The reference implanted VNS device — an FDA-approved implanted VNS device (for drug-resistant epilepsy and treatment-resistant depression) with twenty-plus years of evidence — not equivalent to consumer devices.',
   summary:
     'LivaNova VNS Therapy is the implanted vagus nerve stimulator that defined the modern VNS category. A pulse generator is surgically placed under the collarbone and wired to the left cervical vagus nerve; programming is done by a clinician. FDA-approved for drug-resistant epilepsy since 1997 and treatment-resistant depression since 2005. Included here as the medical reference point for understanding what non-invasive devices can and cannot replicate.',
   scores: [
@@ -21,7 +21,7 @@ const livanovaVnsTherapy: ToolReviewInput = {
     { criterionId: 'value', score: 4.5, note: 'Procedure typically $25,000–30,000 plus implant; covered by insurance for cleared indications. Not a consumer purchase.' },
   ],
   pros: [
-    'The clinical gold standard for VNS — twenty-plus years of evidence',
+    'An FDA-approved implanted VNS device (for drug-resistant epilepsy and treatment-resistant depression) with twenty-plus years of evidence — not equivalent to consumer devices',
     'Direct stimulation of the cervical vagus nerve — the most efficacious approach',
     'FDA-approved for drug-resistant epilepsy and treatment-resistant depression',
     'AutoStim closed-loop variant uses real-time biofeedback',
@@ -35,7 +35,7 @@ const livanovaVnsTherapy: ToolReviewInput = {
   bestFor: 'Reference medical device for understanding what non-invasive consumer VNS can and cannot replicate.',
   testStatus: 'evidence-based',
   testNote:
-    'Evidence-based assessment — scored from LivaNova clinical documentation, FDA-approved labelling and the published VNS Therapy registry literature. Included as the medical reference point for the category, not as a consumer recommendation.',
+    'Evidence-based assessment — scored from LivaNova clinical documentation, FDA-approved labelling and the published VNS Therapy registry literature. Included for context, as the implanted point of comparison, not as a consumer recommendation.',
   price: { usd: 27500, note: 'procedure + device; typically insurance-covered for indicated conditions', asOf: '2026-05-21' },
   link: 'https://www.livanova.com/epilepsy-vnstherapy/en-us',
   linkType: 'official',
@@ -71,7 +71,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "What is LivaNova VNS Therapy (SenTiva)?", a: "LivaNova VNS Therapy (SenTiva) is a surgically implanted device that directly stimulates the cervical vagus nerve. It is FDA-approved for drug-resistant epilepsy and treatment-resistant depression, and is restricted to clinically indicated patients with a prescribing specialist. It is not a consumer device, and decisions about it belong with that specialist." },
     { q: "How much does LivaNova VNS Therapy cost?", a: "The listed reference cost is around $27,500 for the procedure plus device, typically insurance-covered for indicated conditions. It cannot be bought directly: costs are insurance-mediated and access runs through a prescribing specialist, so the price a patient sees depends on their coverage rather than a retail price." },
     { q: "What are the downsides of LivaNova VNS Therapy?", a: "The main downsides are that it is a surgical implant rather than a consumer device, it is limited to clinically indicated patients with a prescribing specialist, and voice change and throat discomfort during stimulation are common. Procedure costs are insurance-mediated, so it is not directly purchasable." },
-    { q: "How does LivaNova VNS compare with consumer VNS devices?", a: "LivaNova is the clinical gold standard for VNS, with twenty-plus years of evidence and direct cervical vagus stimulation, the most efficacious approach. The review treats it as a reference point for understanding what non-invasive consumer VNS devices can and cannot replicate, not as an alternative you choose off the shelf." },
+    { q: "How does LivaNova VNS compare with consumer VNS devices?", a: "LivaNova is an FDA-approved implanted VNS device (for drug-resistant epilepsy and treatment-resistant depression) with twenty-plus years of evidence — not equivalent to consumer devices — and uses direct cervical vagus stimulation, the most efficacious approach. The review treats it as a reference point for understanding what non-invasive consumer VNS devices can and cannot replicate, not as an alternative you choose off the shelf." },
   ],
   datePublished: '2026-05-21',
   dateModified: '2026-10-10',

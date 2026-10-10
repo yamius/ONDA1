@@ -117,7 +117,7 @@ export const HR_ZONE_FAQ: Array<{ q: string; a: string }> = [
   },
   {
     q: 'How much Zone 2 should I do?',
-    a: 'A common target is 150–180+ minutes per week, often as 3–4 sessions of 45–60 minutes, kept strictly easy. The discipline is staying IN the zone — most people drift into Zone 3, which blunts the aerobic-base adaptation. A heart-rate monitor (chest strap is most accurate) keeps you honest.',
+    a: 'A common target is 150–180+ minutes per week, often as 3–4 sessions of 45–60 minutes, kept strictly easy. The discipline is staying IN the zone — most people drift into Zone 3, which blunts the aerobic-base adaptation. A heart-rate monitor (a chest strap is most accurate — validated at rest, in young healthy adults) keeps you honest.',
   },
   {
     q: 'Why use Tanaka instead of 220 minus age?',

@@ -120,7 +120,7 @@ Developing Interoceptive Precision delivers measurable system upgrades:
 Interoceptive calibration uses HRV as the external reference. Pick a device that returns clean data.
 
 - [Oura Ring 4](/reviews/oura-ring-4) — baseline calibration via overnight HRV
-- [Polar H10](/reviews/polar-h10) — ECG ground-truth measurement
+- [Polar H10](/reviews/polar-h10) — ECG chest strap, closest to lab ECG at rest in young healthy adults
 - [Whoop 5.0](/reviews/whoop-5-0) — recovery score as calibration feedback
 
 [Best HRV Trackers (2026) →](/reviews/hrv-trackers)

@@ -17,7 +17,7 @@ const ouraVsSamsungRing: HeadToHeadInput = {
   bestForB:
     'Choose Samsung Galaxy Ring if you are on Samsung — Galaxy phone plus Galaxy Watch — and you want a no-subscription ring tightly integrated into Samsung Health.',
   axes: [
-    { name: 'HRV measurement', winner: 'a', note: 'Both track HRV optically overnight. Oura Ring 4 has one independent overnight check against ECG; no independent validation of the Galaxy Ring was found (as of October 2026).' },
+    { name: 'HRV measurement', winner: 'a', note: 'Both track HRV optically overnight. Oura Ring 4 has one independent study of overnight recordings against ECG; no independent validation of the Galaxy Ring was found (as of October 2026).' },
     { name: 'Sleep tracking', winner: 'tie', note: 'Practically equal on accuracy — neither has an independent validation of sleep staging (as of October 2026). Oura’s sleep staging has been validated only in maker-funded studies (no independent check of the Ring 4); wearable sleep stages are still estimates. Samsung’s sleep analytics are competent but a tier behind.' },
     { name: 'Cross-platform support', winner: 'a', note: 'Oura runs natively on both iPhone and Android with full feature parity. Samsung Galaxy Ring works with Android only; there is no iPhone support.' },
     { name: 'Ecosystem integration', winner: 'b', note: 'Samsung Galaxy Ring composes natively with Galaxy Watch (the watch and ring can cross-check HRV and sleep — a cross-check, not a validation), Samsung Health and Samsung devices. The strongest single-brand health ecosystem.' },
@@ -41,7 +41,7 @@ const ouraVsSamsungRing: HeadToHeadInput = {
     },
     {
       q: 'Which has better sleep tracking?',
-      a: 'Oura, by a meaningful margin. Oura’s sleep staging has been validated only in maker-funded studies (no independent check of the Ring 4), and its recovery model is more developed. Samsung’s sleep tracking is competent but more general-purpose.',
+      a: 'Unknown on accuracy: Oura’s sleep staging has been validated only in maker-funded studies (no independent check of the Ring 4), and no independent Galaxy Ring validation was found. Oura’s recovery model is more developed. Samsung’s sleep tracking is competent but more general-purpose.',
     },
   ],
   content: `## The short version

@@ -11,7 +11,7 @@ const ringconnGen2: ToolReviewInput = {
   verdict:
     'The value smart ring — a 10–12-day battery, no subscription and solid tracking for roughly half the long-term cost of an Oura.',
   summary:
-    'The RingConn Gen 2 is the value pick of the smart-ring field — a 10–12-day battery, no subscription and accuracy in the same conversation as pricier rings, for roughly half the long-term cost. The trade-off is plainer software and more closed data.',
+    'The RingConn Gen 2 is the value pick of the smart-ring field — a 10–12-day battery, no subscription and overnight tracking that reviewers find usable for trends, for roughly half the long-term cost. The trade-off is plainer software and more closed data.',
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.0, note: 'Overnight optical HRV that reviewers find usable for trends; only a preprint exists, and no peer-reviewed independent validation against ECG was found (as of October 2026). ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'sensor', score: 7.0, note: 'Optical PPG in a light titanium ring.' },
@@ -42,17 +42,17 @@ const ringconnGen2: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-The RingConn Gen 2 is the value pick of the smart-ring field. It costs roughly half what an Oura Ring 4 does over time, takes no subscription, and its battery is the standout number in this entire comparison — around twelve days per charge, with a case that extends that to months. It is light, titanium, properly waterproof, and even adds sleep-apnea screening. For [HRV](/glossary/heart-rate-variability) and sleep its accuracy sits solidly in the same conversation as the pricier rings.
+The RingConn Gen 2 is the value pick of the smart-ring field. It costs roughly half what an Oura Ring 4 does over time, takes no subscription, and its battery is the standout number in this entire comparison — around twelve days per charge, with a case that extends that to months. It is light, titanium, properly waterproof, and even adds sleep-apnea screening. For [HRV](/glossary/heart-rate-variability) and sleep, reviewers find it usable for trends, though only a preprint exists and no peer-reviewed independent validation was found (as of October 2026).
 
 ## What are the downsides of RingConn Gen 2?
 
 You feel the budget in the software and the data. The app is functional rather than polished, there is no open API, and your data largely stays inside the RingConn app. None of the individual metrics is class-leading — this is a device that is good at everything and best, in this field, only at battery life and price.
 
-**2026 note.** The Gen 2 remains the value benchmark, but the field has moved on around it: the [RingConn Gen 3](/reviews/ringconn-gen-3) and Oura's Ring 5 now sit above it on accuracy and features. Independent 2026 testing still puts finger-based rings ahead of wrist wearables for overnight HRV, and the Gen 2's numbers hold up in that company — but if you want the sharpest ring, look at the newer generation rather than this one.
+**2026 note.** The Gen 2 remains the value benchmark, but the field has moved on around it: the [RingConn Gen 3](/reviews/ringconn-gen-3) and Oura's Ring 5 add features, though neither has independent accuracy data showing it beats the Gen 2. If you want the newest hardware, look at the newer generation rather than this one.
 
 ## Who should buy RingConn Gen 2?
 
-Choose the RingConn Gen 2 if you want most of what a premium ring does — overnight HRV, sleep, stress — for noticeably less money and with no recurring fee, and you care more about battery life than about polished software or open data. If you want the most accurate ring or the deepest app, the Oura Ring 4 still leads.
+Choose the RingConn Gen 2 if you want most of what a premium ring does — overnight HRV, sleep, stress — for noticeably less money and with no recurring fee, and you care more about battery life than about polished software or open data. If you want the deepest app and a ring with an independent (if small) ECG check, the Oura Ring 4 still leads.
 
 ---
 

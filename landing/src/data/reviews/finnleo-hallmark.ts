@@ -9,9 +9,9 @@ const finnleoHallmark: ToolReviewInput = {
   description:
     'ONDA review of the Finnleo Hallmark — the Finnish-built traditional indoor sauna with premium hemlock or nordic white spruce construction.',
   verdict:
-    'The traditional Finnish indoor sauna reference — premium Finnish-build, full convection heat, deepest sauna-research mechanism.',
+    'A Finnish-built traditional indoor sauna — premium Finnish-build, full convection heat, deepest sauna-research mechanism.',
   summary:
-    'Finnleo Hallmark is the Finnish-built traditional indoor sauna for users who want the real thing. Helo-engineered heater (3 kW–9 kW depending on cabin size), Finnish hemlock or nordic white spruce panelling, full convection heat (80–95°C) with löyly steam. The reference indoor traditional sauna — Finnish-engineered for the heat profile the Finnish cohort studies are built on.',
+    'Finnleo Hallmark is the Finnish-built traditional indoor sauna for users who want the real thing. Helo-engineered heater (3 kW–9 kW depending on cabin size), Finnish hemlock or nordic white spruce panelling, full convection heat (80–95°C) with löyly steam. Finnish-engineered for the heat profile the Finnish cohort studies are built on.',
   scores: [
     { criterionId: 'heat-source', score: 9.0, note: 'Finnish Helo-engineered convection heater — gold-standard Finnish-sauna heat delivery with löyly steam support.' },
     { criterionId: 'build', score: 9.0, note: 'Finnish hemlock or nordic white spruce. Multi-decade Finnish manufacturing pedigree. 5-year structural warranty.' },
@@ -21,7 +21,7 @@ const finnleoHallmark: ToolReviewInput = {
     { criterionId: 'value', score: 5.5, note: '$6,000–$12,000+ depending on configuration. Premium Finnish pedigree pricing.' },
   ],
   pros: [
-    'Premium Finnish manufacturing pedigree — the reference traditional sauna',
+    'Premium Finnish manufacturing pedigree',
     'Helo-engineered heater with löyly steam support',
     'Finnish hemlock or nordic white spruce construction',
     'Deepest published research evidence base (observational Finnish cohort studies)',

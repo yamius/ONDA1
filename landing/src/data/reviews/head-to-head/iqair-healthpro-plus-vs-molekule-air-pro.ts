@@ -13,13 +13,13 @@ const iqairVsMolekule: HeadToHeadInput = {
   verdict:
     'Clinical filtration vs PECO smart features. IQAir for deepest HEPA depth and multi-decade Swiss pedigree. Molekule for PECO VOC destruction + premium smart app.',
   bestForA:
-    'Choose IQAir HealthPro Plus for clinical-grade HyperHEPA H14 filtration with Swiss pedigree — accept no smart features.',
+    'Choose IQAir HealthPro Plus for maker-rated HyperHEPA H14 filtration with Swiss pedigree — accept no smart features.',
   bestForB:
     'Choose Molekule Air Pro for PECO photocatalytic VOC destruction + premium smart features and app integration.',
   axes: [
     { name: 'Filtration depth', winner: 'a', note: 'IQAir: HyperHEPA H14 (99.5% at 0.003 microns). Molekule: True HEPA H13 + PECO (99.97% at 0.3 microns + molecular VOC destruction). Different filtration theses.' },
     { name: 'Smart features', winner: 'b', note: 'Molekule: full app, PM2.5 / VOC sensors, HomeKit / Google Home. IQAir: no app, no sensors, manual control only.' },
-    { name: 'Build pedigree', winner: 'a', note: 'IQAir: multi-decade Swiss medical-grade pedigree. Molekule: newer consumer brand with FTC settlement context.' },
+    { name: 'Build pedigree', winner: 'a', note: 'IQAir: multi-decade Swiss pedigree. Molekule: newer consumer brand with FTC settlement context.' },
     { name: 'Coverage', winner: 'a', note: 'IQAir: 1125 sq ft. Molekule: 1000 sq ft. IQAir marginally larger.' },
     { name: 'Filter ownership cost', winner: 'a', note: 'IQAir: 2-4 year filter cartridges. Molekule: 6-month PECO + HEPA replacements. IQAir significantly cheaper long-term.' },
     { name: 'Price', winner: 'a', note: 'IQAir: $1,099. Molekule: $1,199. IQAir $100 cheaper.' },
@@ -48,7 +48,7 @@ Both premium $1,000+ air purifiers with different filtration theses. IQAir is cl
 
 ## When is IQAir HealthPro Plus the right pick?
 
-If you want clinical-grade HEPA filtration with Swiss pedigree and best long-term ownership economics — IQAir is the right shape. Accept lack of smart features.
+If you want maker-rated H14 HEPA filtration with Swiss pedigree and best long-term ownership economics — IQAir is the right shape. Accept lack of smart features.
 
 ## When is Molekule Air Pro the right pick?
 

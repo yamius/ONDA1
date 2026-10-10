@@ -11,7 +11,7 @@ const appleWatchSeries12: ToolReviewInput = {
   verdict:
     'The best Apple Watch yet for HRV: 24× more frequent sampling and a Recovery-vs-Overall HRV split — but still a smartwatch first, and battery still competes with overnight wear.',
   summary:
-    'The Series 12’s all-new Health Sensing System is the first Apple Watch update to take HRV seriously: it samples HRV up to 24× more often, splits it into Recovery HRV and Overall HRV, and adds hypertension notifications. It closes much of the gap to dedicated trackers — but a ~1-day battery still makes overnight wear a compromise, and a finger ring is still more precise for a continuous overnight record.',
+    'The Series 12’s all-new Health Sensing System is the first Apple Watch update to take HRV seriously: it samples HRV up to 24× more often, splits it into Recovery HRV and Overall HRV, and adds hypertension notifications. It closes much of the gap to dedicated trackers — but a ~1-day battery still makes overnight wear a compromise.',
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.0, note: 'HRV is now sampled about every 5 minutes (24× more often) and split into Recovery HRV and Overall HRV — a real step up from the Series 11’s sparse spot-checks, though still wrist optical rather than a continuous ring or ECG.' },
     { criterionId: 'sensor', score: 9.0, note: 'The all-new Health Sensing System: larger power-efficient green LEDs reading heart rate every 5 seconds, a single-lead ECG, and optical hypertension detection. The strongest sensor stack on any watch here.' },
@@ -29,7 +29,7 @@ const appleWatchSeries12: ToolReviewInput = {
   ],
   cons: [
     '~1-day battery still makes consistent overnight HRV a compromise',
-    'Wrist optical HRV trails a finger ring or ECG chest strap for a continuous overnight record',
+    'Wrist optical HRV is not independently validated yet; an ECG chest strap is closer to lab ECG (at rest, in young healthy adults)',
     'Recovery and Overall HRV are different metrics — easy to confuse',
     'Sleep tracking still behind dedicated sleep trackers',
   ],
@@ -52,7 +52,7 @@ The physics haven’t changed as much as the software. It is still a **wrist opt
 
 ## Who should buy Apple Watch Series 12?
 
-Choose the Series 12 if you want the best everyday smartwatch and you now want HRV you can actually act on — the more frequent sampling plus Recovery HRV against a baseline is a genuine step up from the Series 11. If a clean overnight HRV trend is your single priority, a finger ring still serves you better; see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).
+Choose the Series 12 if you want the best everyday smartwatch and you now want HRV you can actually act on — the more frequent sampling plus Recovery HRV against a baseline is a genuine step up from the Series 11. If a clean overnight HRV trend is your single priority, a ring you can wear every night may suit you better (in overnight recordings from 13 people, Dial 2025, Oura Ring 4 was among the closest to ECG); see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).
 
 ---
 
@@ -80,7 +80,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     },
     {
       q: 'Is the Apple Watch Series 12 accurate enough for HRV, or should I get a ring?',
-      a: 'In studies of earlier models heart rate was close to the reference, though less so right after weight-training sets for an earlier model (Series 8) in one study; in a study of earlier models HRV was underestimated, and Recovery HRV / Overall HRV have not been validated — so use it as a personal trend. To line it up with Whoop or Oura you can use the RMSSD value apps can now read from Apple Health (Apple hasn’t confirmed Recovery HRV is RMSSD). For a clean, continuous overnight HRV record, a finger ring or an ECG chest strap is still more precise, and its ~1-day battery competes with all-night wear.',
+      a: 'In studies of earlier models heart rate was close to the reference, though less so right after weight-training sets for an earlier model (Series 8) in one study; in a study of earlier models HRV was underestimated, and Recovery HRV / Overall HRV have not been validated — so use it as a personal trend. To line it up with Whoop or Oura you can use the RMSSD value apps can now read from Apple Health (Apple hasn’t confirmed Recovery HRV is RMSSD). An ECG chest strap is closer to lab ECG (at rest, in young healthy adults), and the Watch’s ~1-day battery competes with all-night wear.',
     },
     {
       q: 'Does the Apple Watch Series 12 detect high blood pressure?',

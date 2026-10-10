@@ -8,12 +8,12 @@ const ouraRing5VsUltrahuman: HeadToHeadInput = {
   description:
     'Oura Ring 5 vs Ultrahuman Ring Air — the accuracy-leading flagship (with a mandatory subscription) vs the subscription-free ring (with a battery-reliability question).',
   intro:
-    'The Oura Ring 5 and the Ultrahuman Ring Air are the two smart rings people weigh when accuracy matters. Oura is the flagship — upgraded sensors, the best-supported ring line for sleep and HRV (the Ring 5 itself is not validated) — but it charges a mandatory membership. Ultrahuman is the subscription-free alternative with strong sleep tracking, undercut by widespread reports of batteries failing within months. The trade is accuracy-plus-fee versus own-it-outright-with-a-risk.',
+    'The Oura Ring 5 and the Ultrahuman Ring Air are the two smart rings people weigh when accuracy matters. Oura is the flagship — upgraded sensors, the best-supported ring line for sleep and HRV (the Ring 5 itself is not validated) — but it charges a mandatory membership. Ultrahuman is the subscription-free alternative with strong sleep tracking, undercut by widespread reports of batteries failing within months. The trade is research-track-record-plus-fee versus own-it-outright-with-a-risk.',
   jobDependentVerdict: true,
   verdict:
-    'Accuracy with a subscription vs no subscription with a reliability question. The Oura Ring 5 is the more accurate, better-supported ring — if you accept the ~$6/month membership. The Ultrahuman Ring Air is subscription-free and lighter — if you accept its battery-reliability risk.',
+    'Research track record with a subscription vs no subscription with a reliability question. The Oura Ring 5 is the better-supported ring, with more research on earlier models (neither current model has been independently validated) — if you accept the ~$6/month membership. The Ultrahuman Ring Air is subscription-free and lighter — if you accept its battery-reliability risk.',
   bestForA:
-    'Choose the Oura Ring 5 if you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated), upgraded sensors and the best app experience, and the mandatory membership is acceptable.',
+    'Choose the Oura Ring 5 if you want the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated), upgraded sensors and the best app experience, and the mandatory membership is acceptable.',
   bestForB:
     'Choose the Ultrahuman Ring Air if avoiding a subscription is the priority, you want the lightest ring and cross-platform support, and you will accept the battery-reliability risk.',
   axes: [
@@ -27,11 +27,11 @@ const ouraRing5VsUltrahuman: HeadToHeadInput = {
   faq: [
     {
       q: 'Oura Ring 5 or Ultrahuman Ring Air — which is better?',
-      a: 'Oura is the more accurate and better-supported ring, but it charges a mandatory ~$6/month membership. Ultrahuman is subscription-free and lighter, but has widespread battery-reliability complaints. Pick by whether you prioritise accuracy-and-support or owning it outright with no fee.',
+      a: 'Oura is the better-supported ring, with more research on earlier models (neither current model has been independently validated), but it charges a mandatory ~$6/month membership. Ultrahuman is subscription-free and lighter, but has widespread battery-reliability complaints. Pick by whether you prioritise research-and-support or owning it outright with no fee.',
     },
     {
       q: 'Is the Oura Ring 5 worth the subscription over a subscription-free ring?',
-      a: 'If accuracy and app depth matter to you, yes — Oura is the best-supported ring line for sleep and HRV (the Ring 5 itself is not validated) and has the best software. If you mainly want trends and hate recurring fees, the Ultrahuman Ring Air (or Samsung Galaxy Ring) gets you most of the way without a subscription.',
+      a: 'If research track record and app depth matter to you, yes — Oura is the best-supported ring line for sleep and HRV (the Ring 5 itself is not validated) and has the best software. If you mainly want trends and hate recurring fees, the Ultrahuman Ring Air (or Samsung Galaxy Ring) gets you most of the way without a subscription.',
     },
     {
       q: 'How serious is the Ultrahuman battery issue?',

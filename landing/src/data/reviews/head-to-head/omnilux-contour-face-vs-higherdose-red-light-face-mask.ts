@@ -28,7 +28,7 @@ const omniluxContourFaceVsHigherdoseRedLightFaceMask: HeadToHeadInput = {
     { name: 'LEDs', winner: 'tie', note: 'Both use 66 dual-chip LEDs for 132 light sources across the face; neither includes a neck section.' },
     { name: 'Irradiance claim', winner: 'b', note: 'HigherDOSE claims 50 mW/cm² total (26 red + 24 near-infrared); Omnilux states about 30 mW/cm².' },
     { name: 'Treatment time', winner: 'b', note: 'Omnilux uses one 10-minute session; HigherDOSE offers 10- or 20-minute sessions, both 3–5 times a week.' },
-    { name: 'Comfort', winner: 'tie', note: 'Both are flexible medical-grade silicone masks with a rechargeable controller for hands-free wear.' },
+    { name: 'Comfort', winner: 'tie', note: 'Both are flexible silicone masks with a rechargeable controller for hands-free wear.' },
     { name: 'Price', winner: 'b', note: 'Omnilux Contour Face: $395. HigherDOSE Red Light Face Mask: $349 — $46 less.' },
   ],
   faq: [

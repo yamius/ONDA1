@@ -7,9 +7,9 @@ const joovvSolo3: ToolReviewInput = {
   category: 'red-light',
   productType: 'Modular full-panel red + NIR LED therapy device',
   description:
-    'ONDA review of the Joovv Solo 3.0 — the reference biohacker red light therapy panel, modular and well built. Scored on irradiance, wavelengths, EMF and value.',
+    'ONDA review of the Joovv Solo 3.0 — a long-running, widely used biohacker red light therapy panel, modular and well built. Scored on irradiance, wavelengths, EMF and value.',
   verdict:
-    'The category reference — modular, well-built, fairly measured irradiance. Most expensive in this list, mostly justified.',
+    'A long-running, widely used panel — modular, well-built, fairly measured irradiance. Most expensive in this list, mostly justified.',
   summary:
     'The Joovv Solo 3.0 is the panel that defined the consumer red-light category. Modular Solo panels link together to scale from a single half-body unit to a stand-mounted full-body wall. Combo 660 nm red + 850 nm NIR, registered with the FDA as a Class II device per Joovv (registration/listing, not clearance or approval; Joovv lists topical-heating indications such as temporary relief of minor muscle and joint pain), independently-verified irradiance close to advertised figures, low EMF and low flicker. The most expensive option here, with most of the premium going to build and verification rather than spec inflation.',
   scores: [
@@ -21,7 +21,7 @@ const joovvSolo3: ToolReviewInput = {
     { criterionId: 'value', score: 5.5, note: '$1,699 for Solo 3.0 (official US store, Oct 2026) — most expensive in this list: $400 more than the MitoPRO 1500X ($1,299) and $650 more than PlatinumLED BIOMAX 600 ($1,049), both with broader spectrum. You pay mainly for modularity and build.' },
   ],
   pros: [
-    'The category reference — verified irradiance, low EMF, low flicker',
+    'Verified irradiance, low EMF, low flicker',
     'Modular Solo system stacks vertically for full-body without buying a new panel',
     'Real published photobiomodulation researcher partnerships, not just marketing',
     '2-year warranty; HSA/FSA eligible',
@@ -32,7 +32,7 @@ const joovvSolo3: ToolReviewInput = {
     'No exotic wavelength options for users who want 810 / 830 / 940 nm',
     'Single front-emitter layout, not bidirectional',
   ],
-  bestFor: 'Best for biohackers who want the category-reference build and verified irradiance, and accept premium pricing for it.',
+  bestFor: 'Best for biohackers who want the premium modular build and verified irradiance, and accept premium pricing for it.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Joovv product documentation, independent irradiance/EMF/flicker test reports from biohacker review sites and the published photobiomodulation literature underlying the device claims. Not hands-on tested by ONDA.',
@@ -49,7 +49,7 @@ Price. $1,699 for a Solo 3.0 (official US store, checked 2026-10-01) is the most
 
 ## Who should buy Joovv Solo 3.0?
 
-Choose Joovv Solo 3.0 if you want the category-reference build and you accept that verification, EMF discipline and modular scalability have a price. If price is the deciding criterion, Mito Red MitoPRO 1500 or Hooga HG500 cover most of the spec at a fraction of the cost; if you want EMF-shielded premium with independent testing, GembaRed Vesta is the cleaner build at slightly lower price.
+Choose Joovv Solo 3.0 if you want the premium modular build and you accept that verification, EMF discipline and modular scalability have a price. If price is the deciding criterion, Mito Red MitoPRO 1500 or Hooga HG500 cover most of the spec at a fraction of the cost; if you want EMF-shielded premium with independent testing, GembaRed Vesta is the cleaner build at slightly lower price.
 
 ---
 
@@ -69,7 +69,7 @@ The photobiomodulation mechanism behind why red light therapy works.
   faq: [
     { q: "How much does the Joovv Solo 3.0 cost?", a: "The Joovv Solo 3.0 costs $1,699 on the official US store (checked October 2026), the most expensive panel in its comparison. Because Solo panels are modular, a stand-mounted full-body stack runs $3,000–$5,000 in total. Most of the premium goes to build quality and verification rather than inflated specs." },
     { q: "Is the Joovv Solo 3.0 FDA-registered?", a: "Joovv says the Solo 3.0 is registered with the FDA as a Class II medical device. Registration and listing only mean the company told the FDA about the device; they are not FDA clearance or approval. Joovv lists topical-heating indications such as temporary relief of minor muscle and joint pain. It pairs 660 nm red with 850 nm near-infrared, has independently verified irradiance close to advertised figures, and offers low EMF and low flicker." },
-    { q: "Is the Joovv Solo 3.0 worth it?", a: "Mostly, yes, if you want the category-reference build. It has verified irradiance, published researcher partnerships and a 2-year warranty, plus modular panels that grow into a full-body setup. If price decides it, the Mito Red MitoPRO 1500X ($1,299) or Hooga HG500 cover most of the spec for less." },
+    { q: "Is the Joovv Solo 3.0 worth it?", a: "Mostly, yes, if you want the premium modular build. It has verified irradiance, published researcher partnerships and a 2-year warranty, plus modular panels that grow into a full-body setup. If price decides it, the Mito Red MitoPRO 1500X ($1,299) or Hooga HG500 cover most of the spec for less." },
     { q: "What are the downsides of the Joovv Solo 3.0?", a: "Price is the main one: $1,699 per panel and $3,000–$5,000 for a full-body stack. It also offers no exotic wavelength options such as 810, 830 or 940 nm, and it uses a single front-emitter layout rather than a bidirectional design." },
   ],
   datePublished: '2026-05-23',

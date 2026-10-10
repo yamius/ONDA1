@@ -68,7 +68,7 @@ The photobiomodulation mechanism behind why red light therapy works.
   faq: [
     { q: "Is the Hooga HG500 worth it?", a: "Yes, for a first red-light panel. At $359 with a door mount, hanging kit, 3-year warranty and 60-day returns, the HG500 delivers independently tested irradiance close to its claims and EMF readings in the same range as panels three times the price. You give up hardware refinement and wavelength breadth, not core performance." },
     { q: "What wavelengths does the Hooga HG500 use?", a: "The HG500 uses two wavelengths, 660 nm red and 850 nm near-infrared, from 100 5W LEDs. It has no 630 nm, 810 nm or more exotic additions. Buyers who want broader spectrum coverage will need a pricier panel such as the GembaRed Vesta or Joovv." },
-    { q: "Hooga HG500 vs Joovv: which should I buy?", a: "The Hooga costs about a fifth of Joovv ($1,699) while keeping most of the basic spec: honest irradiance and low EMF. Joovv adds a more premium build, more LEDs and a modular system. Choose Hooga for value, Joovv if you want the category-reference build." },
+    { q: "Hooga HG500 vs Joovv: which should I buy?", a: "The Hooga costs about a fifth of Joovv ($1,699) while keeping most of the basic spec: honest irradiance and low EMF. Joovv adds a more premium build, more LEDs and a modular system. Choose Hooga for value, Joovv if you want the premium modular build." },
   ],
   datePublished: '2026-05-23',
   dateModified: '2026-10-10',

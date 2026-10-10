@@ -65,7 +65,7 @@ const bestRedLightFaceMasks2026: Comparison = {
   faq: [
     {
       q: 'What is the best red light face mask in 2026?',
-      a: 'Omnilux Contour Face overall — peer-reviewed dermatology studies, flexible medical-grade silicone, and FDA clearance per the brand. CurrentBody Series 2 for the consumer-market reference with neck flap. Dr. Dennis Gross for dermatology-brand dual-spectrum.',
+      a: 'Omnilux Contour Face overall — peer-reviewed dermatology studies, flexible silicone (medical-grade, per Omnilux), and FDA clearance per the brand. CurrentBody Series 2 for the consumer-market reference with neck flap. Dr. Dennis Gross for dermatology-brand dual-spectrum.',
     },
     {
       q: 'Is Omnilux worth the premium price?',

@@ -120,7 +120,7 @@ export const ONDA_FAQ: FaqGroup[] = [
       },
       {
         q: 'Do I need a chest strap for ONDA?',
-        a: 'No. ONDA is designed to work with the iPhone camera or an Apple Watch. A chest strap gives the most accurate HRV of any consumer sensor, but ONDA does not require one.',
+        a: 'No. ONDA is designed to work with the iPhone camera or an Apple Watch. A chest strap is close to lab ECG at rest in young healthy adults (less reliable during movement), but ONDA does not require one.',
         link: { to: '/compare/onda-vs-elite-hrv', label: 'ONDA vs Elite HRV' },
       },
       {
@@ -204,7 +204,7 @@ export const ONDA_FAQ: FaqGroup[] = [
     items: [
       {
         q: 'What is the best HRV biofeedback app?',
-        a: 'The main HRV-biofeedback apps are ONDA, Elite HRV and (in its premium tier) Breathwrk. ONDA works with the iPhone camera or Apple Watch inside a guided, progressive practice; Elite HRV is more measurement-focused and most accurate with a chest strap. The best one depends on whether you want a guided practice or the most precise measurement.',
+        a: 'The main HRV-biofeedback apps are ONDA, Elite HRV and (in its premium tier) Breathwrk. ONDA works with the iPhone camera or Apple Watch inside a guided, progressive practice; Elite HRV is more measurement-focused and gets its cleanest readings from a paired ECG chest strap, at rest. The best one depends on whether you want a guided practice or measurement-first numbers.',
         link: { to: '/compare/best-hrv-biofeedback-apps', label: 'Best HRV biofeedback apps' },
       },
       {

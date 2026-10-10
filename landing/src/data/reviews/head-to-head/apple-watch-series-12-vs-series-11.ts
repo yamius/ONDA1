@@ -50,7 +50,7 @@ For years Apple exposed only SDNN, sampled sparsely, which never lined up with W
 
 ## The honest caveat
 
-Both are wrist optical watches with ~1-day batteries. Neither matches a finger ring or an ECG chest strap for a continuous overnight HRV record, and on both, overnight measurement competes with the nightly charge. If a clean overnight trend is your single priority, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026) — a ring may serve you better than either watch.`,
+Both are wrist optical watches with ~1-day batteries. For readings closest to lab ECG, an ECG chest strap is the better tool (at rest, in young healthy adults), and on both watches overnight measurement competes with the nightly charge. If a clean overnight trend is your single priority, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026) — a ring may serve you better than either watch.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-18',
   dateModified: '2026-10-10',

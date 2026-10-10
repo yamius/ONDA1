@@ -87,7 +87,7 @@ Zombie cells are senescent cells — the product of Cellular Senescence, a prote
 Cellular-cleanup protocols pair with photobiomodulation routines. Three panels with verified specs:
 
 - [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) — broad-spectrum biohacker premium
-- [Joovv Solo 3.0](/reviews/joovv-solo-3) — modular reference
+- [Joovv Solo 3.0](/reviews/joovv-solo-3) — modular, widely used panel
 - [PlatinumLED BIOMAX 600](/reviews/platinumled-biomax-600) — seven-wavelength coverage with published EMF testing
 
 [Best Red Light Therapy Panels (2026) →](/reviews/red-light-therapy)

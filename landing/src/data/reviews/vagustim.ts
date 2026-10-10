@@ -49,7 +49,7 @@ Distribution is the constraint. Brand recognition outside the EU is thin, custom
 
 ## Who should buy Vagustim?
 
-Choose Vagustim if you are in an EU market, want clinical-grade evidence comparable to Nurosym, and prefer a wider protocol library to a single deliberately constrained programme. If you are outside the EU, Nurosym’s distribution and support are more reliable. If you want fewer electrodes and a phone-app driven UX, Pulsetto is closer to that shape.
+Choose Vagustim if you are in an EU market, want a published independent trial base second only to Nurosym’s among ear-clip devices, and prefer a wider protocol library to a single deliberately constrained programme. If you are outside the EU, Nurosym’s distribution and support are more reliable. If you want fewer electrodes and a phone-app driven UX, Pulsetto is closer to that shape.
 
 ---
 

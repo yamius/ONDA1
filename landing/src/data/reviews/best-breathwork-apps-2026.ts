@@ -61,7 +61,7 @@ const bestBreathworkApps2026: Comparison = {
     },
   ],
   verdict:
-    'Breathwrk wins overall as the structured-library reference with full technique coverage and science-informed copy, backed by one published study on cyclic sighing, at $49/year. Othership wins on production value and community for users buying breathwork as cinematic experience. Wim Hof Method app is the rational choice for committed WHM practitioners. Inhale closes the HRV-biofeedback loop. iBreathe and Breathe2Relax cover the free tier credibly. Pick on three questions: structured library breadth, music / community thesis, or biofeedback integration.',
+    'Breathwrk wins overall as the largest structured library, with full technique coverage and science-informed copy, backed by one published study on cyclic sighing, at $49/year. Othership wins on production value and community for users buying breathwork as cinematic experience. Wim Hof Method app is the rational choice for committed WHM practitioners. Inhale closes the HRV-biofeedback loop. iBreathe and Breathe2Relax cover the free tier credibly. Pick on three questions: structured library breadth, music / community thesis, or biofeedback integration.',
   faq: [
     {
       q: 'What is the best breathing app?',

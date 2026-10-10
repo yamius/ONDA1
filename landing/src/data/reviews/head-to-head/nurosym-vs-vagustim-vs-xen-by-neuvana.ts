@@ -7,13 +7,13 @@ const nurosymVsVagustimVsXen: HeadToHeadInput = {
   productCSlug: 'xen-by-neuvana',
   title: 'Nurosym vs Vagustim vs Xen by Neuvana (2026)',
   description:
-    'Nurosym vs Vagustim vs Xen by Neuvana — three-way ONDA comparison of three consumer auricular tVNS devices. Clinical-grade evidence, EU protocol library and music-paired earbuds in one decision.',
+    'Nurosym vs Vagustim vs Xen by Neuvana — three-way ONDA comparison of three consumer auricular tVNS devices. Published evidence, EU protocol library and music-paired earbuds in one decision.',
   intro:
     'Nurosym, Vagustim and Xen by Neuvana are the three consumer auricular tVNS devices users compare when ear-clip stimulation is the chosen mechanism. All three target the auricular branch of the vagus nerve electrically; the differences are evidence depth, protocol variety and form factor.',
   verdict:
     'Nurosym wins on evidence and disclosed parameters. Vagustim wins on protocol variety in EU markets. Xen wins on consumer-friendly earbud form factor with music pairing.',
   bestForA:
-    'Choose Nurosym if peer-reviewed evidence and clinical-grade auricular tVNS are the deciding criteria — the Parasym hardware platform behind 40+ published trials.',
+    'Choose Nurosym if peer-reviewed evidence and direct auricular tVNS are the deciding criteria — the Parasym hardware platform behind 40+ published trials.',
   bestForB:
     'Choose Vagustim if you are in an EU market and want auricular tVNS with a wider protocol preset library (stress, sleep, depression, anxiety, IBS) at a lower price.',
   bestForC:
@@ -56,7 +56,7 @@ Three consumer auricular tVNS devices targeting the same nerve via different for
 
 ## When is Nurosym the right pick?
 
-If clinical-grade evidence and disclosed parameters are the deciding criteria, Nurosym is the right shape. The Parasym hardware behind it is the most-cited consumer auricular tVNS platform in the literature.
+If published evidence and disclosed parameters are the deciding criteria, Nurosym is the right shape. The Parasym hardware behind it is the most-cited consumer auricular tVNS platform in the literature.
 
 ## When is Vagustim the right pick?
 

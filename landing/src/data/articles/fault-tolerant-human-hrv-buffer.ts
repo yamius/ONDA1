@@ -108,7 +108,7 @@ Three interventions to stress-test the system and expand the HRV buffer:
 Reading the buffer requires a device that resolves beat-to-beat intervals reliably. These three are the ones that do.
 
 - [Oura Ring 4](/reviews/oura-ring-4) — best overall for continuous overnight HRV
-- [Polar H10](/reviews/polar-h10) — reference-grade ECG accuracy
+- [Polar H10](/reviews/polar-h10) — ECG chest strap, closest to lab ECG at rest in young healthy adults
 - [Whoop 5.0](/reviews/whoop-5-0) — sharpest daily recovery coaching
 
 [Best HRV Trackers (2026) →](/reviews/hrv-trackers)

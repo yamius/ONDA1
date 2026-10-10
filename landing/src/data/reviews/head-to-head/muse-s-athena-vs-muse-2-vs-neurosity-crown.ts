@@ -43,7 +43,7 @@ const threeEeg: HeadToHeadInput = {
     },
     {
       q: 'Which has the deepest research backing?',
-      a: 'Muse hardware has the largest published consumer-EEG research base after a decade of academic use, mostly as a recording tool rather than as evidence that its feedback works. Neurosity Crown is newer with less academic citation history. For research-grade work, Crown’s open SDK still wins because you can implement your own analysis pipeline.',
+      a: 'Muse hardware has the largest published consumer-EEG research base after a decade of academic use, mostly as a recording tool rather than as evidence that its feedback works. Neurosity Crown is newer with less academic citation history. For custom research work, Crown’s open SDK still wins because you can implement your own analysis pipeline (its signal quality has not been independently validated).',
     },
     {
       q: 'Can I sleep with any of these?',

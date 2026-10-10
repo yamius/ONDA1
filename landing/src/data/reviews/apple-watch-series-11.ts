@@ -74,7 +74,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   faq: [
     { q: "Is the Apple Watch Series 11 good for HRV?", a: "It is the weakest of the flagship options for dedicated HRV: it records HRV in irregular background spot-checks, not a continuous overnight protocol, and its roughly one-day battery discourages all-night wear. It is a great smartwatch but a casual HRV tool." },
     { q: "Does the Apple Watch Series 11 need a subscription?", a: "No. It is a one-time $399 purchase with no subscription for its health and HRV features, and it includes a genuine single-lead ECG." },
-    { q: "Apple Watch or a ring for HRV?", a: "For overnight HRV precision, a finger ring such as Oura or RingConn beats the Apple Watch, which spot-checks rather than tracks continuously. Choose the Watch if you want one do-everything smartwatch with HRV as a bonus." },
+    { q: "Apple Watch or a ring for HRV?", a: "For continuous overnight HRV, a ring such as Oura or RingConn is easier to wear all night, while the Apple Watch spot-checks rather than tracks continuously; in overnight recordings from 13 people (Dial 2025), Oura Ring 4 was among the closest to ECG. Choose the Watch if you want one do-everything smartwatch with HRV as a bonus." },
   ],
 
   datePublished: '2026-05-15',

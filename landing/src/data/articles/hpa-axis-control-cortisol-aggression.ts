@@ -137,7 +137,7 @@ HPA dysregulation responds to vagal tone work. Three consumer devices that engag
 
 - [Apollo Neuro](/reviews/apollo-neuro) — all-day vagal modulation for stress regulation
 - [Sensate](/reviews/sensate) — evening wind-down ritual on the chest
-- [Nurosym](/reviews/nurosym) — clinical-grade auricular tVNS adjunct
+- [Nurosym](/reviews/nurosym) — auricular tVNS device, studied as an adjunct
 
 [Best Vagus Nerve Stimulators (2026) →](/reviews/vagus-nerve-stimulators)
 `,

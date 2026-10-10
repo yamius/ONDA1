@@ -11,7 +11,7 @@ const series12VsFenix8: HeadToHeadInput = {
     'These two rarely compete on price, but they meet on the HRV question. The September 2026 Series 12 brings Apple’s all-new Health Sensing System — HRV sampled about 24× more often, split into Recovery HRV and Overall HRV — for $399. The Garmin Fenix 8 is a ~$1,000 expedition watch with the Elevate v5 sensor, an ECG app, HRV Status and a battery that lasts weeks. Both are wrist optical; the real split is battery and what else you need the watch to do.',
   jobDependentVerdict: true,
   verdict:
-    'No overall winner — it splits by use. For the newest HRV system, the best everyday smartwatch and the lower price, the Series 12 leads. For multi-week battery that makes nightly HRV effortless, plus serious training, navigation and dive tools, the Fenix 8 leads. Neither beats a finger ring or chest strap for a pure overnight record.',
+    'No overall winner — it splits by use. For the newest HRV system, the best everyday smartwatch and the lower price, the Series 12 leads. For multi-week battery that makes nightly HRV effortless, plus serious training, navigation and dive tools, the Fenix 8 leads.',
   bestForA:
     'Choose the Series 12 if you want the best everyday smartwatch with Apple’s new Recovery HRV, ECG and hypertension notifications — at $399 with no subscription.',
   bestForB:

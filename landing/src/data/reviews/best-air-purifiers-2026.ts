@@ -12,7 +12,7 @@ const bestAirPurifiers2026: Comparison = {
     {
       reviewSlug: 'iqair-healthpro-plus',
       award: 'Best overall',
-      takeaway: 'HyperHEPA H14 clinical-grade filtration + multi-decade Swiss pedigree — the deepest spec in consumer category.',
+      takeaway: 'Maker-rated H14 HyperHEPA filtration (company-stated) + multi-decade Swiss pedigree — the deepest spec in consumer category.',
     },
     {
       reviewSlug: 'dyson-purifier-big-quiet',
@@ -61,15 +61,15 @@ const bestAirPurifiers2026: Comparison = {
     },
   ],
   verdict:
-    'IQAir HealthPro Plus wins overall as the clinical-grade reference with HyperHEPA H14 filtration unmatched in consumer category. Dyson Big+Quiet is the rational premium-smart choice with formaldehyde focus. Coway Airmega 400 is the mid-premium value sweet spot. Levoit Core 600S owns the mid-budget smart category. Coway Airmega AP-1512HH and Winix 5500-2 cover the credible budget tier. Levoit Core 300 at $99 is the starter device. Pick on three questions: filtration depth (HEPA grade), room coverage (CADR), smart features (sensor + app).',
+    'IQAir HealthPro Plus wins overall with maker-rated H14 HyperHEPA filtration (company-stated) — the deepest filtration spec in this round-up. Dyson Big+Quiet is the rational premium-smart choice with formaldehyde focus. Coway Airmega 400 is the mid-premium value sweet spot. Levoit Core 600S owns the mid-budget smart category. Coway Airmega AP-1512HH and Winix 5500-2 cover the credible budget tier. Levoit Core 300 at $99 is the starter device. Pick on three questions: filtration depth (HEPA grade), room coverage (CADR), smart features (sensor + app).',
   faq: [
     {
       q: 'What is the best air purifier in 2026?',
-      a: 'IQAir HealthPro Plus overall — HyperHEPA H14 clinical-grade filtration unmatched in consumer category. Dyson Big+Quiet for premium smart features. Coway Airmega 400 for best mid-premium value. Levoit Core 300 for $99 entry tier.',
+      a: 'IQAir HealthPro Plus overall — maker-rated H14 HyperHEPA filtration (company-stated). Dyson Big+Quiet for premium smart features. Coway Airmega 400 for best mid-premium value. Levoit Core 300 for $99 entry tier.',
     },
     {
       q: 'Is IQAir worth the premium price?',
-      a: 'For users wanting clinical-grade filtration with multi-decade Swiss pedigree — yes. HyperHEPA H14 captures particles down to 0.003 microns vs True HEPA at 0.3 microns. For consumer-polish + smart features at lower price, Dyson Big+Quiet better fit.',
+      a: 'For users wanting maker-rated H14 filtration (company-stated) with multi-decade Swiss pedigree — yes. HyperHEPA H14 captures particles down to 0.003 microns vs True HEPA at 0.3 microns. For consumer-polish + smart features at lower price, Dyson Big+Quiet better fit.',
     },
     {
       q: 'Coway Airmega 400 vs Dyson Big+Quiet — which is better?',
@@ -98,13 +98,13 @@ All ten were assessed from manufacturer documentation, AHAM certification record
 
 Three buying questions resolve the category cleanly:
 
-**Filtration depth?** Clinical-grade (HyperHEPA H14): IQAir HealthPro Plus. Premium True HEPA H13 + formaldehyde: Dyson Big+Quiet. PECO + HEPA: Molekule Air Pro. Mid-tier True HEPA H13: everyone else.
+**Filtration depth?** Maker-rated H14 (HyperHEPA, company-stated): IQAir HealthPro Plus. Premium True HEPA H13 + formaldehyde: Dyson Big+Quiet. PECO + HEPA: Molekule Air Pro. Mid-tier True HEPA H13: everyone else.
 
 **Room coverage (CADR)?** 1500+ sq ft: Coway Airmega 400 (~$479). 800-1500 sq ft: IQAir, Molekule, Dyson, Blueair (~$820-$1199). 400-700 sq ft: Levoit Core 600S, Honeywell HPA300 (~$249-$299). Bedroom-scale: Coway AP-1512HH, Winix 5500-2, Levoit Core 300 (~$99-$249).
 
 **Smart features needed?** Premium app + sensor + auto: Dyson, Molekule, Blueair, Coway 400, Levoit 600S. Sensor only (no app): Winix 5500-2, Coway AP-1512HH. None: Levoit Core 300, Honeywell HPA300, IQAir HealthPro Plus.
 
-IQAir dominates the clinical-grade tier; Dyson owns premium consumer smart; Coway Airmega 400 wins mid-premium value; Levoit + Coway AP-1512HH + Winix cover credible budget; Levoit Core 300 anchors the $99 entry tier.`,
+IQAir leads the maker-rated H14 tier; Dyson owns premium consumer smart; Coway Airmega 400 wins mid-premium value; Levoit + Coway AP-1512HH + Winix cover credible budget; Levoit Core 300 anchors the $99 entry tier.`,
   publishOn: '2026-07-27',
   datePublished: '2026-07-27',
   dateModified: '2026-10-10',
