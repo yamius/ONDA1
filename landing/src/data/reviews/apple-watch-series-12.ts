@@ -80,7 +80,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     },
     {
       q: 'Is the Apple Watch Series 12 accurate enough for HRV, or should I get a ring?',
-      a: 'Heart rate is close to the reference; in a study of earlier models HRV was underestimated, and Recovery HRV / Overall HRV have not been validated — so use it as a personal trend. To line it up with Whoop or Oura you can use the RMSSD value apps can now read from Apple Health (Apple hasn’t confirmed Recovery HRV is RMSSD). For a clean, continuous overnight HRV record, a finger ring or an ECG chest strap is still more precise, and its ~1-day battery competes with all-night wear.',
+      a: 'In studies of earlier models heart rate was close to the reference, though less so right after weight-training sets for an earlier model (Series 8) in one study; in a study of earlier models HRV was underestimated, and Recovery HRV / Overall HRV have not been validated — so use it as a personal trend. To line it up with Whoop or Oura you can use the RMSSD value apps can now read from Apple Health (Apple hasn’t confirmed Recovery HRV is RMSSD). For a clean, continuous overnight HRV record, a finger ring or an ECG chest strap is still more precise, and its ~1-day battery competes with all-night wear.',
     },
     {
       q: 'Does the Apple Watch Series 12 detect high blood pressure?',

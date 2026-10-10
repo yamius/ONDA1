@@ -41,7 +41,7 @@ Meditation apps practice without measuring, and fitness trackers measure without
 
 **Meditation apps** are content libraries. They're good at delivering guided sessions, but they're one-directional and blind: the app talks, you listen, and nothing comes back. You can't tell if a session landed, whether you're improving, or which practice actually helps *you*. Faith, not feedback.
 
-**Fitness trackers** are the mirror image. They measure beautifully — heart rate, [HRV](/glossary/heart-rate-variability), sleep, recovery — and then hand you a number and a shrug. A tracker tells you that you're stressed; it does nothing to help you *un*-stress. Measurement with no intervention is just a more precise way to worry.
+**Fitness trackers** are the mirror image. They measure plenty — heart rate, [HRV](/glossary/heart-rate-variability), sleep, recovery — and then hand you a number and a shrug. A tracker tells you that you're stressed; it does nothing to help you *un*-stress. Measurement with no intervention is just a more precise way to worry.
 
 Each half is missing exactly what the other has.
 
