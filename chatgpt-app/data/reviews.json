@@ -18,7 +18,7 @@
         {
           "id": "hrv-accuracy",
           "score": 8.5,
-          "note": "Nighttime RMSSD tracks an ECG within a few milliseconds in Oura validation work; daytime readings drift under motion."
+          "note": "Nighttime RMSSD stayed close to an ECG reference in overnight recordings from 13 people (Dial 2025); earlier close-agreement results come from Oura’s own validation work. Daytime readings drift under motion."
         },
         {
           "id": "sensor",
@@ -54,7 +54,7 @@
       "verdict": "Still an excellent overnight HRV and sleep tracker — now one step below the slimmer, upgraded-sensor Oura Ring 5, but sharing the same new software and often the better value discounted. Mandatory subscription remains.",
       "bestFor": "Best for overnight HRV with one independent ECG check (13 people) and sleep data at the lowest Oura price.",
       "pros": [
-        "In one overnight study (13 people), Oura Ring 4 was among the closest matches to ECG",
+        "In overnight recordings from 13 people (Dial 2025), Oura Ring 4 was among the closest matches to ECG",
         "Sleep staging of an earlier generation (Gen 3) was compared with polysomnography in Oura-funded studies; no independent validation of Ring 4 sleep staging",
         "Small, comfortable 24/7 form factor",
         "Gets the same new software as the Ring 5, for $50 less"
@@ -131,7 +131,7 @@
       "cons": [
         "From $799 — a lot of watch if HRV is all you want",
         "Large, heavy 49 mm case",
-        "Wrist optical HRV still trails a finger ring or ECG strap for a continuous overnight record",
+        "Wrist optical HRV is not independently validated yet; an ECG chest strap is closer to lab ECG (at rest, in young healthy adults)",
         "Recovery and Overall HRV are different metrics — easy to confuse"
       ],
       "testStatus": "evidence-based",
@@ -161,7 +161,7 @@
         {
           "id": "sensor",
           "score": 9.5,
-          "note": "A true ECG electrode pair — the gold-standard sensor type, not optical inference from blood flow."
+          "note": "A true ECG electrode pair, not optical inference from blood flow — close to lab ECG at rest in young healthy adults."
         },
         {
           "id": "sleep-accuracy",
@@ -190,7 +190,7 @@
         }
       ],
       "verdict": "A chest-strap ECG that matched lab ECG almost perfectly in young healthy adults at rest — a reference instrument, not an all-day wearable.",
-      "bestFor": "Best for ground-truth HRV accuracy — a measurement instrument, not an all-day wearable.",
+      "bestFor": "Best for near-lab HRV at rest — a measurement instrument, not an all-day wearable.",
       "pros": [
         "ECG electrodes, not optical — close to lab ECG at rest in young healthy adults",
         "Fully open: raw RR data over Bluetooth and ANT+, any app",
@@ -225,7 +225,7 @@
         {
           "id": "hrv-accuracy",
           "score": 7.5,
-          "note": "Earlier Oura generations agreed with ECG closely in one independent overnight study; the Ring 5 itself has not been validated. The redesigned sensors aim at more consistent contact across skin tones and finger types; daytime/exercise readings still drift under motion. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not."
+          "note": "Earlier Oura generations agreed with ECG closely in one independent study of overnight recordings; the Ring 5 itself has not been validated. The redesigned sensors aim at more consistent contact across skin tones and finger types; daytime/exercise readings still drift under motion. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not."
         },
         {
           "id": "sensor",
@@ -263,7 +263,7 @@
       "pros": [
         "Genuinely upgraded sensors — better contact across skin tones and finger types",
         "~40% slimmer and lighter than the Ring 4, 6–9 day battery",
-        "Earlier Oura generations agreed with ECG more closely than others in one overnight study (the Ring 5 itself has not been separately validated), plus the best sleep staging",
+        "Earlier Oura generations agreed with ECG more closely than others in one study of overnight recordings (13 people; the Ring 5 itself has not been separately validated), plus sleep staging compared with polysomnography only for Gen 3, in Oura-funded studies",
         "Clear, educational app"
       ],
       "cons": [
@@ -337,7 +337,7 @@
       ],
       "cons": [
         "~1-day battery still makes consistent overnight HRV a compromise",
-        "Wrist optical HRV trails a finger ring or ECG chest strap for a continuous overnight record",
+        "Wrist optical HRV is not independently validated yet; an ECG chest strap is closer to lab ECG (at rest, in young healthy adults)",
         "Recovery and Overall HRV are different metrics — easy to confuse",
         "Sleep tracking still behind dedicated sleep trackers"
       ],
@@ -462,11 +462,11 @@
         {
           "id": "value",
           "score": 7.5,
-          "note": "A one-time purchase around 350 USD, no subscription, with genuine clinical-grade features."
+          "note": "A one-time purchase around 350 USD, no subscription, with a regulator-cleared ECG (per Withings)."
         }
       ],
-      "verdict": "A hybrid analog watch with medical-grade ECG and a ~30-day battery — strong on clinical health metrics, competent rather than class-leading as a dedicated HRV tracker.",
-      "bestFor": "Best for a discreet hybrid watch with clinical-grade health screening and no subscription.",
+      "verdict": "A hybrid analog watch with a regulator-cleared ECG (per Withings) and a ~30-day battery — strong on health-screening features, competent rather than class-leading as a dedicated HRV tracker.",
+      "bestFor": "Best for a discreet hybrid watch with a regulator-cleared ECG (per Withings) and no subscription.",
       "pros": [
         "Regulator-cleared single-lead ECG on the wrist",
         "A discreet hybrid analog design with a ~30-day battery",
@@ -501,7 +501,7 @@
         {
           "id": "hrv-accuracy",
           "score": 7.5,
-          "note": "Recovery is built on HRV measured during sleep. The earlier WHOOP 4.0 was checked in one independent overnight study; the 5.0 itself has not been validated against ECG (as of October 2026). ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not."
+          "note": "Recovery is built on HRV measured during sleep. The earlier WHOOP 4.0 was checked in one independent study of overnight recordings; the 5.0 itself has not been validated against ECG (as of October 2026). ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not."
         },
         {
           "id": "sensor",
@@ -708,7 +708,7 @@
         {
           "id": "hrv-accuracy",
           "score": 7,
-          "note": "Continuous HRV for recovery and stress, improved over the Gen 2. Good, though not validated to Oura’s level."
+          "note": "Continuous HRV for recovery and stress, improved over the Gen 2. Good for trends, though only a preprint exists (on an earlier generation) and no peer-reviewed independent validation was found (as of October 2026)."
         },
         {
           "id": "sensor",
@@ -890,7 +890,7 @@
       "cons": [
         "Android and Samsung Health only — no iPhone support",
         "Closed data: no open API, limited export",
-        "Accuracy trails the Oura Ring 4",
+        "No independent accuracy check, unlike the Oura Ring 4",
         "Best value only realised inside the Samsung ecosystem"
       ],
       "testStatus": "evidence-based",
@@ -1191,7 +1191,7 @@
         {
           "id": "hrv-accuracy",
           "score": 6.5,
-          "note": "HRV tracking for recovery and stress — reasonable for the price, not validated to Oura’s level."
+          "note": "HRV tracking for recovery and stress — reasonable for the price; no independent validation against ECG was found (as of October 2026)."
         },
         {
           "id": "sensor",
@@ -1260,7 +1260,7 @@
         {
           "id": "hrv-accuracy",
           "score": 6.5,
-          "note": "Continuous HRV via RMSSD for recovery/readiness. Reasonable for a budget ring, but not validated to the level of Oura."
+          "note": "Continuous HRV via RMSSD for recovery/readiness. Reasonable for a budget ring; no independent validation against ECG was found (as of October 2026)."
         },
         {
           "id": "sensor",
@@ -1304,7 +1304,7 @@
       "cons": [
         "Only three sizes (8, 10, 12) — many people can’t get a good fit",
         "Short real-world battery (~2.5–3 days)",
-        "Budget sensors; accuracy below Oura",
+        "Budget sensors; no independent accuracy validation found",
         "Zepp app less polished; no open API"
       ],
       "testStatus": "evidence-based",
@@ -2226,7 +2226,7 @@
         {
           "id": "tracking-accuracy",
           "score": 7.5,
-          "note": "Solid phone-based tracking, more accurate when paired with a supported wearable."
+          "note": "Solid phone-based tracking; pairing a supported wearable adds heart-rate data, but accuracy has not been independently tested."
         },
         {
           "id": "wind-down-content",
@@ -2466,7 +2466,7 @@
           "note": "Costly direct, but free via some employers and health systems — and it treats a disorder."
         }
       ],
-      "verdict": "The most clinically serious app here — a validated CBT-I course that treats insomnia, not a tracker or a sound library; the strongest pick if you have a real sleep problem.",
+      "verdict": "The app here with the largest body of randomised trials (many run by its developer) — a CBT-I course that treats insomnia, not a tracker or a sound library; the strongest pick if you have a real sleep problem.",
       "bestFor": "Best for anyone with genuine insomnia who wants treatment, not tracking.",
       "pros": [
         "A genuine, clinically validated CBT-I program",
@@ -2806,10 +2806,10 @@
           "note": "Procedure typically $25,000–30,000 plus implant; covered by insurance for cleared indications. Not a consumer purchase."
         }
       ],
-      "verdict": "The reference implanted VNS device — the clinical gold standard, not a consumer purchase.",
+      "verdict": "The reference implanted VNS device — an FDA-approved implanted VNS device (for drug-resistant epilepsy and treatment-resistant depression) with twenty-plus years of evidence — not equivalent to consumer devices.",
       "bestFor": "Reference medical device for understanding what non-invasive consumer VNS can and cannot replicate.",
       "pros": [
-        "The clinical gold standard for VNS — twenty-plus years of evidence",
+        "An FDA-approved implanted VNS device (for drug-resistant epilepsy and treatment-resistant depression) with twenty-plus years of evidence — not equivalent to consumer devices",
         "Direct stimulation of the cervical vagus nerve — the most efficacious approach",
         "FDA-approved for drug-resistant epilepsy and treatment-resistant depression",
         "AutoStim closed-loop variant uses real-time biofeedback"
@@ -2870,8 +2870,8 @@
           "note": "€700 (about $820; US pricing varies by region) one-time, no subscription. Premium pricing for the largest independent trial record (mostly earlier Parasym models), not for casual experimenters."
         }
       ],
-      "verdict": "The most-studied consumer ear tVNS device — a research-grade ear clip with a price to match.",
-      "bestFor": "Best for research-grade auricular tVNS at home — when evidence matters more than form factor.",
+      "verdict": "The most-studied consumer ear tVNS device — an ear clip of the kind used in research studies, with a price to match.",
+      "bestFor": "Best for auricular tVNS of the kind used in research, at home — when evidence matters more than form factor.",
       "pros": [
         "Largest independent trial record of any consumer tVNS device (mostly earlier Parasym models)",
         "Frequency and pulse width reported in trials (waveform proprietary)",
@@ -3126,8 +3126,8 @@
           "note": "Prescription pricing varies — typically ~$600 device plus refill cards; insurance coverage uneven. Not a casual purchase."
         }
       ],
-      "verdict": "The FDA-cleared medical reference for non-invasive cervical VNS — a clinical tool, not a consumer wellness device.",
-      "bestFor": "Best for clinically-indicated migraine or cluster-headache patients — the medical reference for cervical VNS.",
+      "verdict": "An FDA-cleared, prescription-only non-invasive cervical VNS device for specific headache disorders — a clinical tool, not a consumer wellness device.",
+      "bestFor": "Best for clinically-indicated migraine or cluster-headache patients — an FDA-cleared, prescription-only cervical VNS device.",
       "pros": [
         "FDA-cleared — the only non-invasive VNS device with that status",
         "The deepest randomised-trial evidence base of any device here",
@@ -4611,7 +4611,7 @@
         {
           "id": "signal-quality",
           "score": 7.5,
-          "note": "tDCS — clinical-grade transcranial direct-current stimulation over the dorsolateral prefrontal cortex. Disclosed stimulation parameters (2 mA, 30-minute sessions); CE-marked Class IIa medical device."
+          "note": "tDCS — transcranial direct-current stimulation over the dorsolateral prefrontal cortex (the kind used in clinical trials). Disclosed stimulation parameters (2 mA, 30-minute sessions); CE-marked Class IIa medical device."
         },
         {
           "id": "training-content",
@@ -4631,7 +4631,7 @@
         {
           "id": "app-ux",
           "score": 7.5,
-          "note": "Polished app with daily check-ins and clinical-grade adherence tracking."
+          "note": "Polished app with daily check-ins and adherence tracking."
         },
         {
           "id": "open-data",
@@ -4649,7 +4649,7 @@
       "pros": [
         "FDA premarket approval (Dec 2025) plus CE-marked Class IIa medical device — the strongest regulatory backing in this list",
         "Real randomised-trial evidence for depression (including a fully remote randomised sham-controlled trial published in Nature Medicine (Woodham 2024))",
-        "Integrated 8-week behavioural-therapy programme — clinical-grade content scaffold",
+        "Integrated 8-week behavioural-therapy programme — structured content",
         "Prescribed within parts of the UK NHS as a depression-pathway option"
       ],
       "cons": [
@@ -4967,10 +4967,10 @@
           "note": "$1,699 for Solo 3.0 (official US store, Oct 2026) — most expensive in this list: $400 more than the MitoPRO 1500X ($1,299) and $650 more than PlatinumLED BIOMAX 600 ($1,049), both with broader spectrum. You pay mainly for modularity and build."
         }
       ],
-      "verdict": "The category reference — modular, well-built, fairly measured irradiance. Most expensive in this list, mostly justified.",
-      "bestFor": "Best for biohackers who want the category-reference build and verified irradiance, and accept premium pricing for it.",
+      "verdict": "A long-running, widely used panel — modular, well-built, fairly measured irradiance. Most expensive in this list, mostly justified.",
+      "bestFor": "Best for biohackers who want the premium modular build and verified irradiance, and accept premium pricing for it.",
       "pros": [
-        "The category reference — verified irradiance, low EMF, low flicker",
+        "Verified irradiance, low EMF, low flicker",
         "Modular Solo system stacks vertically for full-body without buying a new panel",
         "Real published photobiomodulation researcher partnerships, not just marketing",
         "2-year warranty; HSA/FSA eligible"
@@ -6114,10 +6114,10 @@
           "note": "$6,000–$12,000+ depending on configuration. Premium Finnish pedigree pricing."
         }
       ],
-      "verdict": "The traditional Finnish indoor sauna reference — premium Finnish-build, full convection heat, deepest sauna-research mechanism.",
+      "verdict": "A Finnish-built traditional indoor sauna — premium Finnish-build, full convection heat, deepest sauna-research mechanism.",
       "bestFor": "Best for users wanting the premium traditional Finnish sauna with Helo-engineered heat delivery.",
       "pros": [
-        "Premium Finnish manufacturing pedigree — the reference traditional sauna",
+        "Premium Finnish manufacturing pedigree",
         "Helo-engineered heater with löyly steam support",
         "Finnish hemlock or nordic white spruce construction",
         "Deepest published research evidence base (observational Finnish cohort studies)"
@@ -8231,7 +8231,7 @@
           "note": "$49/year (or $9/month) with a usable free tier, and included for Peloton All-Access, Guide and App+ members. Best value in premium breathwork — cheaper than Othership, far deeper library than free apps."
         }
       ],
-      "verdict": "Best breathwork library overall — biggest session catalogue, science-informed copy, backed by one published study on cyclic sighing, full technique coverage. The category reference for structured daily practice.",
+      "verdict": "Best breathwork library overall — biggest session catalogue, science-informed copy, backed by one published study on cyclic sighing, full technique coverage. A large, long-running library for structured daily practice.",
       "bestFor": "Best for users wanting the largest structured breathwork library, science-informed copy backed by one published study on cyclic sighing, and full technique coverage — the rational default for daily practice.",
       "pros": [
         "Largest structured breathwork library in the category",
@@ -8863,7 +8863,7 @@
         {
           "id": "comfort-fit",
           "score": 9,
-          "note": "Medical-grade flexible silicone, lighter than Omnilux. Strap design refined through multiple consumer-feedback cycles."
+          "note": "Flexible silicone, lighter than Omnilux. Strap design refined through multiple consumer-feedback cycles."
         },
         {
           "id": "value",
@@ -8876,7 +8876,7 @@
       "pros": [
         "Integrated neck flap — coverage from forehead to neck in one device",
         "Highest customer base in consumer red light masks — refined through user feedback",
-        "Flexible medical-grade silicone — among the most comfortable masks",
+        "Flexible silicone — among the most comfortable masks",
         "Polished consumer UX with clear session protocols"
       ],
       "cons": [
@@ -8927,7 +8927,7 @@
         {
           "id": "comfort-fit",
           "score": 8.5,
-          "note": "Medical-grade flexible silicone — comparable comfort to Omnilux and CurrentBody. 470 LEDs add weight but distribution keeps it wearable."
+          "note": "Flexible silicone — comparable comfort to Omnilux and CurrentBody. 470 LEDs add weight but distribution keeps it wearable."
         },
         {
           "id": "value",
@@ -8941,7 +8941,7 @@
         "470 LEDs — highest count in consumer red light masks",
         "Three-wavelength coverage (red + NIR + amber)",
         "Integrated neck flap",
-        "Flexible medical-grade silicone build"
+        "Flexible silicone build"
       ],
       "cons": [
         "No published trial of the mask itself",
@@ -8991,12 +8991,12 @@
         {
           "id": "comfort-fit",
           "score": 9,
-          "note": "Medical-grade flexible silicone — among the most comfortable wearable masks. Sits naturally on the face, adjustable strap, unattended wear OK."
+          "note": "Flexible silicone (medical-grade, per Omnilux) — among the most comfortable wearable masks. Sits naturally on the face, adjustable strap, unattended wear OK."
         },
         {
           "id": "value",
           "score": 7,
-          "note": "$395 — premium pricing for best-in-class silicone comfort and the standard red + near-infrared pair; no device-specific trial behind the price."
+          "note": "$395 — premium pricing for silicone comfort (the most comfortable in our assessment) and the standard red + near-infrared pair; no device-specific trial behind the price."
         }
       ],
       "verdict": "Flexible silicone with the standard red + near-infrared pair, FDA-cleared for wrinkles (510(k) K191629). No published trial of the Contour itself; Omnilux's published studies are on other models.",
@@ -9004,7 +9004,7 @@
       "pros": [
         "FDA-cleared for full-face wrinkles (510(k) K191629)",
         "Red 633 nm + near-infrared 830 nm — the pair most used in skin studies",
-        "Medical-grade flexible silicone — best comfort in category",
+        "Flexible silicone (medical-grade, per Omnilux) — the most comfortable mask in our assessment",
         "Moderate, plausible stated irradiance — no inflated peak claims"
       ],
       "cons": [
@@ -9504,7 +9504,7 @@
         {
           "id": "material-safety",
           "score": 8,
-          "note": "Hypoallergenic medical-grade adhesive. Skin-reaction reports rare in user feedback at scale. Latex-free."
+          "note": "Hypoallergenic adhesive. Skin-reaction reports rare in user feedback at scale. Latex-free."
         },
         {
           "id": "value",
@@ -9568,7 +9568,7 @@
         {
           "id": "material-safety",
           "score": 8,
-          "note": "Medical-grade adhesive tabs. Magnetic band hypoallergenic. Skin-reaction reports rare."
+          "note": "Adhesive tabs. Magnetic band hypoallergenic. Skin-reaction reports rare."
         },
         {
           "id": "value",
@@ -9696,7 +9696,7 @@
         {
           "id": "material-safety",
           "score": 8.5,
-          "note": "Hypoallergenic medical-grade adhesive. Latex-free. Skin-reaction reports rare across multi-year user base."
+          "note": "Hypoallergenic adhesive. Latex-free. Skin-reaction reports rare across multi-year user base."
         },
         {
           "id": "value",
@@ -9704,10 +9704,10 @@
           "note": "~$25 for 28 strips = ~$0.90/night. More expensive per night than Hostage Tape subscription; no subscription required."
         }
       ],
-      "verdict": "The original mouth tape — FDA-registered porous strip with central breathing port. Decade-long reference; less beard-friendly than Hostage Tape.",
-      "bestFor": "Best for users wanting FDA-registered medical-credibility mouth tape with a porous design — clinical credibility over biohacker brand marketing.",
+      "verdict": "The original mouth tape — FDA-registered porous strip with central breathing port. Decade-long track record; less beard-friendly than Hostage Tape.",
+      "bestFor": "Best for users wanting FDA-registered (a listing, not clearance or approval) mouth tape with a porous design over biohacker brand marketing.",
       "pros": [
-        "FDA-registered medical device — deepest regulatory standing",
+        "FDA-registered (a listing, not clearance or approval)",
         "Porous central breathing port — a less complete seal than full-coverage tape",
         "Multi-year track record predating the 2025 biohacker boom",
         "No subscription required"
@@ -9740,7 +9740,7 @@
         {
           "id": "adhesion-comfort",
           "score": 7.5,
-          "note": "Clinical-grade 3M medical adhesive — gentle on skin, painless removal. Less beard-friendly than Hostage Tape. Sensitive-skin variant is the right pick."
+          "note": "3M medical adhesive (the kind used on wound dressings) — gentle on skin, painless removal. Less beard-friendly than Hostage Tape. Sensitive-skin variant is the right pick."
         },
         {
           "id": "breathing-mechanism",
@@ -9760,7 +9760,7 @@
         {
           "id": "material-safety",
           "score": 8.5,
-          "note": "Hypoallergenic medical-grade adhesive. Latex-free. Sensitive Skin variant minimises reactions; multi-decade hospital track record."
+          "note": "Hypoallergenic 3M medical adhesive. Latex-free. Sensitive Skin variant minimises reactions; multi-decade hospital track record."
         },
         {
           "id": "value",
@@ -9768,11 +9768,11 @@
           "note": "~$5 for a roll lasting 3+ months = ~$0.05/night. Unbeatable per-night cost in mouth-tape category."
         }
       ],
-      "verdict": "Best DIY mouth-tape option — 3M medical paper tape at fraction of biohacker-brand cost. No brand polish; clinical-grade adhesive at $0.05/night.",
-      "bestFor": "Best for cost-conscious biohackers willing to trade brand convenience for clinical-grade DIY mouth tape at fraction of subscription-brand cost.",
+      "verdict": "Best DIY mouth-tape option — 3M medical paper tape at fraction of biohacker-brand cost. No brand polish; 3M medical adhesive at $0.05/night.",
+      "bestFor": "Best for cost-conscious biohackers willing to trade brand convenience for DIY mouth tape made from 3M medical paper tape at fraction of subscription-brand cost.",
       "pros": [
         "Unbeatable per-night cost (~$0.05/night)",
-        "Clinical-grade 3M medical adhesive — same as hospital wound dressings",
+        "3M medical adhesive (the kind used on wound dressings)",
         "Maximum form-factor flexibility — user cuts to preferred size",
         "Drugstore availability"
       ],
@@ -9832,8 +9832,8 @@
           "note": "~$10 for 30 strips = ~$0.33/night. Best per-night value in nasal-airway category by margin. Drugstore availability."
         }
       ],
-      "verdict": "Drugstore reference for nasal strips — decades-long track record, FDA-cleared, ubiquitous distribution. Weaker mechanism than magnetic or internal dilators.",
-      "bestFor": "Best for first-time nasal-airway-opener users wanting the drugstore reference at lowest per-night cost — try this before committing to premium magnetic / internal alternatives.",
+      "verdict": "The best-known drugstore nasal strip — decades-long track record, FDA-cleared, ubiquitous distribution. Weaker mechanism than magnetic or internal dilators.",
+      "bestFor": "Best for first-time nasal-airway-opener users wanting an FDA-cleared drugstore strip at lowest per-night cost — try this before committing to premium magnetic / internal alternatives.",
       "pros": [
         "Strongest regulatory standing — FDA-cleared decades-long track record",
         "Best per-night value in nasal-airway category",
@@ -9952,7 +9952,7 @@
         {
           "id": "material-safety",
           "score": 7.5,
-          "note": "Medical-grade polymer. Reusable ~1 week per stent. Nostril-irritation reports in subset of users — not all anatomies fit comfortably."
+          "note": "Polymer (medical-grade, per Mute). Reusable ~1 week per stent. Nostril-irritation reports in subset of users — not all anatomies fit comfortably."
         },
         {
           "id": "value",
@@ -10080,7 +10080,7 @@
         {
           "id": "material-safety",
           "score": 6.5,
-          "note": "Medical-grade polymer. Reusable for ~3 months per pair. Nostril-irritation reports moderate; cone design less anatomically optimised than Mute."
+          "note": "What the company calls medical-grade polymer. Reusable for ~3 months per pair. Nostril-irritation reports moderate; cone design less anatomically optimised than Mute."
         },
         {
           "id": "value",
@@ -10380,7 +10380,7 @@
         {
           "id": "stall-force-amplitude",
           "score": 9.5,
-          "note": "60 lbs stall force + 16 mm amplitude — top of category on both axes. The percussion-dose benchmark."
+          "note": "60 lbs stall force + 16 mm amplitude — top of category on both axes."
         },
         {
           "id": "build-attachments",
@@ -10408,7 +10408,7 @@
           "note": "$599 — premium pricing. Justified for users wanting the spec ceiling + Therabody ecosystem; expensive vs Bob and Brad / Renpho budget alternatives."
         }
       ],
-      "verdict": "The percussion-therapy reference — highest stall force, deepest amplitude, polished app. Premium pricing reflects the spec ceiling and Therabody ecosystem.",
+      "verdict": "Therabody’s flagship percussion gun — highest stall force, deepest amplitude, polished app. Premium pricing reflects the spec ceiling and Therabody ecosystem.",
       "bestFor": "Best for serious athletic recovery users wanting spec-ceiling percussion therapy with full Therabody app ecosystem — accept premium pricing.",
       "pros": [
         "Highest stall force (60 lbs) and deepest amplitude (16 mm) in category",
@@ -11009,7 +11009,7 @@
       "name": "IQAir HealthPro Plus",
       "brand": "IQAir",
       "category": "air-purifier",
-      "productType": "Clinical-grade HyperHEPA H14 air purifier",
+      "productType": "HyperHEPA air purifier (maker-rated H14)",
       "url": "https://onda-life.com/reviews/iqair-healthpro-plus",
       "categoryUrl": "https://onda-life.com/reviews/air-purifiers",
       "priceUsd": 1099,
@@ -11045,11 +11045,11 @@
         {
           "id": "value",
           "score": 7,
-          "note": "$1,099 — premium pricing. Justified by clinical-grade filtration; expensive vs Dyson / Coway alternatives with smart features."
+          "note": "$1,099 — premium pricing. Justified by maker-rated H14 filtration; expensive vs Dyson / Coway alternatives with smart features."
         }
       ],
       "verdict": "The clinical reference — HyperHEPA H14 filtration captures 99.5% of particles at 0.003 microns, multi-decade brand pedigree, used in COVID-19 hospital deployments.",
-      "bestFor": "Best for users wanting clinical-grade HEPA filtration with multi-decade Swiss pedigree — accept lack of smart features.",
+      "bestFor": "Best for users wanting maker-rated H14 HEPA filtration (company-stated) with multi-decade Swiss pedigree — accept lack of smart features.",
       "pros": [
         "HyperHEPA H14 — deepest filtration in consumer category",
         "Used in hospital / clinical deployments",
@@ -11237,7 +11237,7 @@
         {
           "id": "value",
           "score": 6.5,
-          "note": "$1,199 — premium pricing. Justified by PECO + smart features; expensive vs IQAir clinical reference or Coway / Dyson alternatives."
+          "note": "$1,199 — premium pricing. Justified by PECO + smart features; expensive vs IQAir (maker-rated H14, company-stated) or Coway / Dyson alternatives."
         }
       ],
       "verdict": "Best PECO technology premium — destroys VOCs and pathogens at molecular level, polished consumer UX. PECO efficacy claims debated; backed by Molekule patents.",
@@ -11545,7 +11545,7 @@
         {
           "name": "HRV measurement",
           "winner": "a",
-          "note": "Oura Ring 4: continuous overnight HRV, with one independent overnight check against ECG. Whoop 5.0: continuous overnight HRV, but the 5.0 itself has not been independently validated. Apple Watch: spot-checks only, not continuous. Apple is the outlier here."
+          "note": "Oura Ring 4: continuous overnight HRV, with one independent study of overnight recordings against ECG. Whoop 5.0: continuous overnight HRV, but the 5.0 itself has not been independently validated. Apple Watch: spot-checks only, not continuous. Apple is the outlier here."
         },
         {
           "name": "Sleep tracking",
@@ -11611,7 +11611,7 @@
         {
           "name": "HRV measurement",
           "winner": "a",
-          "note": "All three use optical PPG. Only the Oura Ring 4 has an independent overnight check against ECG; Ultrahuman has company-run preprints and RingConn a preprint (as of October 2026)."
+          "note": "All three use optical PPG. Only the Oura Ring 4 has an independent check against ECG (overnight recordings from 13 people, Dial 2025); Ultrahuman has company-run preprints and RingConn a preprint (as of October 2026)."
         },
         {
           "name": "Sleep tracking",
@@ -11677,7 +11677,7 @@
         "nurosym": 7.4,
         "apollo-neuro": 7.1
       },
-      "verdict": "Three different jobs. Pulsetto for guided daily-use cervical sessions, Nurosym for clinical-grade auricular evidence, Apollo Neuro for all-day passive vagal modulation.",
+      "verdict": "Three different jobs. Pulsetto for guided daily-use cervical sessions, Nurosym for the larger body of auricular evidence, Apollo Neuro for all-day passive vagal modulation.",
       "bestFor": {
         "a": "Choose Pulsetto if you want a polished daily-use neck collar with four guided programmes (sleep, stress, anxiety, pain) at the most accessible price in consumer tVNS.",
         "b": "Choose Nurosym if peer-reviewed evidence and disclosed stimulation parameters are the deciding criteria — the largest independent auricular tVNS trial record in consumer devices (mostly on earlier Parasym models).",
@@ -12170,7 +12170,7 @@
         {
           "name": "Comfort",
           "winner": "tie",
-          "note": "Both are flexible medical-grade silicone masks with a rechargeable controller for hands-free wear."
+          "note": "Both are flexible silicone masks with a rechargeable controller for hands-free wear."
         },
         {
           "name": "Price",
@@ -12269,7 +12269,7 @@
       },
       "verdict": "Three different problems. Sleepio for clinically-diagnosed insomnia treatment. Sleep Cycle for tracking sleep with a smart alarm. Pzizz for falling asleep tonight without a programme.",
       "bestFor": {
-        "a": "Choose Sleepio if you have chronic insomnia and want the most clinically-validated digital intervention — a 6-week structured CBT-I programme with NICE recommendation and NHS prescribing pathways.",
+        "a": "Choose Sleepio if you have chronic insomnia and want the digital intervention with the largest body of randomised trials (many run by its developer) — a 6-week structured CBT-I programme with NICE recommendation and NHS prescribing pathways.",
         "b": "Choose Sleep Cycle if you want to track sleep — smart alarm, sleep-stage estimates, snoring detection, multi-month trend analytics — without a clinical-treatment commitment.",
         "c": "Choose Pzizz if you want a nightly audio wind-down ritual — generative voice, music and tones to put you to sleep — without a structured programme."
       },
@@ -12277,7 +12277,7 @@
         {
           "name": "Clinical evidence",
           "winner": "a",
-          "note": "Sleepio: most clinically-validated digital sleep intervention, NICE-recommended, NHS-prescribed in some UK regions. Sleep Cycle: tracking accuracy validated. Pzizz: user satisfaction data only."
+          "note": "Sleepio: largest body of randomised trials among digital sleep interventions (many run by its developer), NICE-recommended, NHS-prescribed in some UK regions. Sleep Cycle: tracking not independently validated against polysomnography. Pzizz: user satisfaction data only."
         },
         {
           "name": "Intent",
@@ -12341,7 +12341,7 @@
         {
           "name": "HRV measurement accuracy",
           "winner": "a",
-          "note": "Oura Ring 4 has one independent overnight check against a chest-strap reference (Dial 2025, 13 people), where it agreed slightly more closely than the earlier WHOOP 4.0; the WHOOP 5.0 itself has no independent validation against ECG (as of October 2026)."
+          "note": "Oura Ring 4 has an independent check against a chest-strap reference (overnight recordings from 13 people, Dial 2025), where it agreed slightly more closely than the earlier WHOOP 4.0; the WHOOP 5.0 itself has no independent validation against ECG (as of October 2026)."
         },
         {
           "name": "Sleep tracking",
@@ -12592,7 +12592,7 @@
         {
           "name": "HRV measurement",
           "winner": "a",
-          "note": "Both track HRV optically overnight. Oura Ring 4 has one independent overnight check against ECG; Ultrahuman has only company-run preprints (as of October 2026)."
+          "note": "Both track HRV optically overnight. Oura Ring 4 has one independent study of overnight recordings against ECG; Ultrahuman has only company-run preprints (as of October 2026)."
         },
         {
           "name": "Sleep tracking",
@@ -12656,7 +12656,7 @@
         {
           "name": "HRV measurement",
           "winner": "a",
-          "note": "Both track HRV optically overnight. Oura Ring 4 has one independent overnight check against ECG; no independent validation of the Galaxy Ring was found (as of October 2026)."
+          "note": "Both track HRV optically overnight. Oura Ring 4 has one independent study of overnight recordings against ECG; no independent validation of the Galaxy Ring was found (as of October 2026)."
         },
         {
           "name": "Sleep tracking",
@@ -12710,10 +12710,10 @@
         "whoop-5-0": 7.3,
         "polar-h10": 7.6
       },
-      "verdict": "They solve different jobs. Whoop for continuous overnight HRV with recovery coaching; Polar H10 for ECG-grade accuracy when you put the strap on. Many serious HRV users own both.",
+      "verdict": "They solve different jobs. Whoop for continuous overnight HRV with recovery coaching; Polar H10 for chest-strap ECG readings that match lab ECG closely at rest when you put the strap on. Many serious HRV users own both.",
       "bestFor": {
         "a": "Choose Whoop 5.0 if continuous overnight HRV and a daily Recovery score are the deciding criteria — you want a band you wear around the clock that coaches your training, and a yearly membership is acceptable.",
-        "b": "Choose Polar H10 if you want ground-truth HRV accuracy for a structured morning protocol or to validate another device — a one-time-purchase reference instrument, not a lifestyle wearable.",
+        "b": "Choose Polar H10 if you want resting HRV readings close to lab ECG for a structured morning protocol or to validate another device — a one-time-purchase ECG strap, not a lifestyle wearable.",
         "c": null
       },
       "axes": [
@@ -12907,7 +12907,7 @@
         "polar-h10": 7.6,
         "garmin-venu-4": 7.5
       },
-      "verdict": "Different jobs. Polar H10 for ground-truth accuracy. Garmin Venu 4 for continuous lifestyle tracking and training analytics. Many athletes pair the two.",
+      "verdict": "Different jobs. Polar H10 for chest-strap ECG readings that matched lab ECG almost perfectly in young healthy adults at rest. Garmin Venu 4 for continuous lifestyle tracking and training analytics. Many athletes pair the two.",
       "bestFor": {
         "a": "Choose Polar H10 if accuracy is the deciding criterion — a structured morning HRV protocol, validating another device, or app-agnostic measurement at the lowest price.",
         "b": "Choose Garmin Venu 4 if you want a smartwatch with continuous HRV, training-load analytics and up to 12 days of battery — without an ongoing subscription.",
@@ -12981,7 +12981,7 @@
         {
           "name": "HRV measurement",
           "winner": "a",
-          "note": "Both use optical PPG. Oura Ring 4 has one independent overnight check against ECG; RingConn has only a preprint, so their precision cannot be compared directly (as of October 2026)."
+          "note": "Both use optical PPG. Oura Ring 4 has one independent study of overnight recordings against ECG; RingConn has only a preprint, so their precision cannot be compared directly (as of October 2026)."
         },
         {
           "name": "Sleep tracking",
@@ -13045,7 +13045,7 @@
         {
           "name": "HRV accuracy",
           "winner": "tie",
-          "note": "Practically equal: neither model has an independent validation of HRV against ECG (as of October 2026). The earlier WHOOP 4.0 was checked in one overnight study; the 5.0 and the brand-new Fitbit Air were not — unknown, not proven equal."
+          "note": "Practically equal: neither model has an independent validation of HRV against ECG (as of October 2026). The earlier WHOOP 4.0 was checked in one study of overnight recordings (13 people); the 5.0 and the brand-new Fitbit Air were not — unknown, not proven equal."
         },
         {
           "name": "Recovery coaching",
@@ -13335,17 +13335,17 @@
         "apple-watch-series-12": 7.6,
         "oura-ring-4": 7.7
       },
-      "verdict": "No overall winner — it splits by what you want. For the most precise, hands-off overnight HRV and sleep, the Oura Ring 4 leads on the finger and the multi-day battery. For an all-round smartwatch with ECG, hypertension notifications and no subscription, the Series 12 wins — its HRV is now usable as a personal trend.",
+      "verdict": "No overall winner — it splits by what you want. For hands-off overnight HRV and sleep, the Oura Ring 4 leads: it records continuously overnight, has an independent HRV check against ECG (overnight recordings from 13 people, Dial 2025), and its battery lasts days. For an all-round smartwatch with ECG, hypertension notifications and no subscription, the Series 12 wins — its HRV is now usable as a personal trend.",
       "bestFor": {
         "a": "Choose the Series 12 if you want one do-everything smartwatch — ECG, hypertension notifications, apps — with HRV that is now usable as a personal trend, and no subscription.",
-        "b": "Choose the Oura Ring 4 if overnight HRV and sleep are the point: finger measurement is more precise, the ring is easier to sleep in, and its battery lasts days.",
+        "b": "Choose the Oura Ring 4 if overnight HRV and sleep are the point: it has an independent HRV check against ECG (overnight recordings from 13 people, Dial 2025), the ring is easier to sleep in, and its battery lasts days.",
         "c": null
       },
       "axes": [
         {
           "name": "Overnight HRV precision",
           "winner": "b",
-          "note": "The Oura Ring 4 is the only one of the two with an independent overnight check of HRV against ECG (one study, 13 people); no independent check of its sleep staging was found. The Series 12’s Recovery/Overall HRV has not been independently validated (as of October 2026)."
+          "note": "The Oura Ring 4 is the only one of the two with an independent check of HRV against ECG (overnight recordings from 13 people, Dial 2025); no independent check of its sleep staging was found. The Series 12’s Recovery/Overall HRV has not been independently validated (as of October 2026)."
         },
         {
           "name": "Recovery-metric comparability",
@@ -13394,17 +13394,17 @@
         "apple-watch-series-12": 7.6,
         "oura-ring-5": 7.6
       },
-      "verdict": "No overall winner — it splits by what you want. For the most precise, hands-off overnight HRV and sleep, the Oura Ring 5 leads on the finger and the 6–9 day battery. For an all-round smartwatch with ECG, hypertension notifications and no subscription, the Series 12 wins — its HRV is now usable as a personal trend.",
+      "verdict": "No overall winner — it splits by what you want. For hands-off overnight HRV and sleep, the Oura Ring 5 leads on comfort and the 6–9 day battery (from a line with more published research; the Ring 5 itself has not been validated). For an all-round smartwatch with ECG, hypertension notifications and no subscription, the Series 12 wins — its HRV is now usable as a personal trend.",
       "bestFor": {
         "a": "Choose the Series 12 if you want one do-everything smartwatch — ECG, hypertension notifications, apps — with HRV that is now usable as a personal trend, and no subscription.",
-        "b": "Choose the Oura Ring 5 if overnight HRV and sleep are the point: finger measurement is more precise, the slim ring is easy to sleep in, and its battery lasts 6–9 days.",
+        "b": "Choose the Oura Ring 5 if overnight HRV and sleep are the point: in overnight recordings from 13 people (Dial 2025) the Oura Ring 4 was among the closest to ECG (the Ring 5 itself has not been validated), the slim ring is easy to sleep in, and its battery lasts 6–9 days.",
         "c": null
       },
       "axes": [
         {
           "name": "Overnight HRV precision",
           "winner": "tie",
-          "note": "Practically equal: neither model has an independent validation of overnight HRV against ECG (as of October 2026). Earlier Oura generations did well in one overnight study, but the Ring 5 itself has not been separately validated, and the Series 12’s Recovery/Overall HRV has not been either. Finger vs wrist is a design difference, not a measured accuracy gap."
+          "note": "Practically equal: neither model has an independent validation of overnight HRV against ECG (as of October 2026). Earlier Oura generations did well in one study of overnight recordings (13 people), but the Ring 5 itself has not been separately validated, and the Series 12’s Recovery/Overall HRV has not been either. Finger vs wrist is a design difference, not a measured accuracy gap."
         },
         {
           "name": "Recovery-metric comparability",
@@ -13630,7 +13630,7 @@
         "apple-watch-series-12": 7.6,
         "garmin-fenix-8": 7.3
       },
-      "verdict": "No overall winner — it splits by use. For the newest HRV system, the best everyday smartwatch and the lower price, the Series 12 leads. For multi-week battery that makes nightly HRV effortless, plus serious training, navigation and dive tools, the Fenix 8 leads. Neither beats a finger ring or chest strap for a pure overnight record.",
+      "verdict": "No overall winner — it splits by use. For the newest HRV system, the best everyday smartwatch and the lower price, the Series 12 leads. For multi-week battery that makes nightly HRV effortless, plus serious training, navigation and dive tools, the Fenix 8 leads.",
       "bestFor": {
         "a": "Choose the Series 12 if you want the best everyday smartwatch with Apple’s new Recovery HRV, ECG and hypertension notifications — at $399 with no subscription.",
         "b": "Choose the Fenix 8 if you want one no-subscription watch for serious training, outdoor navigation and diving, with a battery measured in weeks so overnight HRV is never interrupted.",
@@ -13807,9 +13807,9 @@
         "garmin-venu-4": 7.5,
         "oura-ring-5": 7.6
       },
-      "verdict": "No overall winner — it splits by use case. For overnight HRV and sleep in the most comfortable form, the Oura Ring 5 leads (previous Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated). For one device that also runs your training, shows a screen and never charges a fee, the Venu 4 leads. Wrist optical still trails the finger for absolute overnight precision.",
+      "verdict": "No overall winner — it splits by use case. For overnight HRV and sleep in the most comfortable form, the Oura Ring 5 leads (previous Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated). For one device that also runs your training, shows a screen and never charges a fee, the Venu 4 leads. Neither current model has been independently validated.",
       "bestFor": {
-        "a": "Choose the Garmin Venu 4 if you want one no-subscription device that handles training, everyday health and HRV competently, with the battery to wear it through the night — and you don’t need the most precise overnight number.",
+        "a": "Choose the Garmin Venu 4 if you want one no-subscription device that handles training, everyday health and HRV competently, with the battery to wear it through the night — and you don’t need a dedicated overnight ring.",
         "b": "Choose the Oura Ring 5 if accurate overnight HRV and sleep are the point, you want the slimmest always-on wearable, and the ~$6/month membership is acceptable.",
         "c": null
       },
@@ -13817,7 +13817,7 @@
         {
           "name": "Overnight HRV precision",
           "winner": "tie",
-          "note": "Practically equal: neither model has an independent validation of overnight HRV against ECG (as of October 2026). Earlier Oura generations did well in one overnight study and the older Garmin Fenix 6 was in the same study, but the Ring 5 and the Venu 4 themselves have not been validated. Finger vs wrist is a design difference, not a measured accuracy gap."
+          "note": "Practically equal: neither model has an independent validation of overnight HRV against ECG (as of October 2026). Earlier Oura generations did well in one study of overnight recordings (13 people) and the older Garmin Fenix 6 was in the same study, but the Ring 5 and the Venu 4 themselves have not been validated. Finger vs wrist is a design difference, not a measured accuracy gap."
         },
         {
           "name": "Sleep tracking",
@@ -13925,7 +13925,7 @@
         "apple-watch-ultra-4": 7.7,
         "garmin-fenix-8": 7.3
       },
-      "verdict": "No overall winner — it splits by life. For the newest HRV system, everyday smartwatch and iPhone ecosystem, the Ultra 4 leads; for multi-week battery, deep training and expedition tools, the Fenix 8 leads. Both are wrist-optical, so a ring or chest strap still beats either for a pure overnight record.",
+      "verdict": "No overall winner — it splits by life. For the newest HRV system, everyday smartwatch and iPhone ecosystem, the Ultra 4 leads; for multi-week battery, deep training and expedition tools, the Fenix 8 leads.",
       "bestFor": {
         "a": "Choose the Apple Watch Ultra 4 if you want Apple’s new HRV system (Recovery HRV), the best everyday smartwatch and iPhone integration, with a 50-hour battery and dive/satellite features.",
         "b": "Choose the Garmin Fenix 8 if you want multi-week battery, the deepest training and navigation tools, and HRV Status inside an expedition-grade watch — and you live in the Garmin/Strava world.",
@@ -13984,7 +13984,7 @@
         "apple-watch-series-12": 7.6,
         "garmin-venu-4": 7.5
       },
-      "verdict": "No overall winner — it splits by priorities. For the newest HRV system, an ECG and iPhone integration, the Series 12 leads; for multi-day battery that makes overnight wear effortless and the Garmin training world, the Venu 4 leads. Both are wrist optical, so a ring still beats either for a pure overnight record.",
+      "verdict": "No overall winner — it splits by priorities. For the newest HRV system, an ECG and iPhone integration, the Series 12 leads; for multi-day battery that makes overnight wear effortless and the Garmin training world, the Venu 4 leads.",
       "bestFor": {
         "a": "Choose the Series 12 if you want Apple’s new HRV system (Recovery HRV), a single-lead ECG and hypertension notifications, and the iPhone ecosystem — accepting a daily charge.",
         "b": "Choose the Garmin Venu 4 if you want multi-day battery so overnight HRV is never interrupted, the Garmin training and recovery ecosystem, and no subscription — and you don’t need an ECG.",
@@ -14779,7 +14779,7 @@
       "verdict": "Different roles. gammaCore for clinically-indicated headache patients with prescriber access. Nurosym for self-directed consumer tVNS users who want reported stimulation settings and the largest consumer trial record (mostly earlier Parasym models).",
       "bestFor": {
         "a": "Choose gammaCore Sapphire CV if you have a migraine or cluster-headache diagnosis and a prescriber willing to write for it — the only FDA-cleared non-invasive VNS device.",
-        "b": "Choose Nurosym if you want clinical-grade auricular tVNS at home, with the largest independent trial record of any consumer device (mostly earlier Parasym models), and you do not have an FDA-indication condition.",
+        "b": "Choose Nurosym if you want auricular tVNS at home, with the largest independent trial record of any consumer device (mostly earlier Parasym models), and you do not have an FDA-indication condition.",
         "c": null
       },
       "axes": [
@@ -14904,7 +14904,7 @@
         "flow-neuroscience": 6.7,
         "apollo-neuro": 7.1
       },
-      "verdict": "Not really substitutes. Flow Neuroscience for clinical-grade tDCS depression treatment under a structured programme. Apollo Neuro for all-day vibrotactile vagal modulation in general wellness use.",
+      "verdict": "Not really substitutes. Flow Neuroscience for tDCS depression treatment under a structured programme. Apollo Neuro for all-day vibrotactile vagal modulation in general wellness use.",
       "bestFor": {
         "a": "Choose Flow Neuroscience if you have major depression and a clinician open to a CE-marked tDCS option — the strongest regulatory and trial backing in take-home brain devices.",
         "b": "Choose Apollo Neuro if you want passive vagal modulation through your day — general wellness, recovery, stress — without a clinical indication or programme commitment.",
@@ -14929,7 +14929,7 @@
         {
           "name": "Clinical evidence",
           "winner": "a",
-          "note": "Flow: published RCTs in Lancet Digital Health and Brain Stimulation for tDCS in major depression. Apollo: University of Pittsburgh HRV/recovery RCTs. Both real; Flow is clinical-grade."
+          "note": "Flow: published RCTs in Lancet Digital Health and Brain Stimulation for tDCS in major depression. Apollo: University of Pittsburgh HRV/recovery RCTs. Both real; Flow’s trials are in a clinical population (major depression)."
         },
         {
           "name": "Day-to-day use frequency",
@@ -16067,7 +16067,7 @@
       },
       "verdict": "Different problems. Sleepio for users with insomnia who want a clinical CBT-I programme. Pzizz for users who want a nightly wind-down ritual without therapy-style commitment.",
       "bestFor": {
-        "a": "Choose Sleepio if you have chronic insomnia and want the most clinically-validated digital CBT-I programme — a 6-week structured intervention recommended by the UK NICE.",
+        "a": "Choose Sleepio if you have chronic insomnia and want the digital CBT-I programme with the largest body of randomised trials (many run by its developer) — a 6-week structured intervention recommended by the UK NICE.",
         "b": "Choose Pzizz if you want a nightly wind-down audio ritual — generative voice, music and tones to put you to sleep — without the commitment of a structured CBT-I programme.",
         "c": null
       },
@@ -16075,7 +16075,7 @@
         {
           "name": "Clinical evidence base",
           "winner": "a",
-          "note": "Sleepio is the most clinically-validated digital sleep intervention — multiple published RCTs, NICE recommendation, NHS prescribing pathways. Pzizz has user satisfaction data but no equivalent clinical trial base."
+          "note": "Sleepio has the largest body of randomised trials among digital sleep interventions (many run by its developer) — multiple published RCTs, NICE recommendation, NHS prescribing pathways. Pzizz has user satisfaction data but no equivalent clinical trial base."
         },
         {
           "name": "Mechanism",
@@ -16388,7 +16388,7 @@
       "verdict": "Value vs premium reference. The Hooga HG500 wins decisively on price and output-per-dollar — most of the core spec for roughly a fifth of the cost. The Joovv Solo 3.0 wins on build quality, brand maturity and a modular ecosystem you can expand. Pick Hooga if you want the results without the premium; Joovv if brand, build and expandability justify the spend.",
       "bestFor": {
         "a": "Choose the Hooga HG500 if you want honest irradiance and a solid panel for about a fifth of the Joovv price, and you don’t need the premium brand or modular stacking.",
-        "b": "Choose the Joovv Solo 3.0 if you want the category reference — premium build and a modular ecosystem — and the price is acceptable.",
+        "b": "Choose the Joovv Solo 3.0 if you want a premium build and a modular ecosystem — and the price is acceptable.",
         "c": null
       },
       "axes": [
@@ -16496,7 +16496,7 @@
       "verdict": "Different premium intents. GembaRed Vesta wins on EMF/flicker discipline and wavelength breadth. Joovv Solo 3.0 wins on modular full-body scaling and brand maturity.",
       "bestFor": {
         "a": "Choose GembaRed Vesta if EMF discipline is a first-class criterion — fully-shielded build with the lowest EMF measurement in this list, six-wavelength coverage.",
-        "b": "Choose Joovv Solo 3.0 if modular full-body scaling and the larger brand’s support are the deciding criteria — the category reference for build.",
+        "b": "Choose Joovv Solo 3.0 if modular full-body scaling and the larger brand’s support are the deciding criteria — a long-running, widely used modular panel.",
         "c": null
       },
       "axes": [
@@ -16625,7 +16625,7 @@
       },
       "verdict": "Best overall for most buyers: Mito Red MitoPRO 1500X — six wavelengths, a large panel, $400 cheaper than Joovv. PlatinumLED wins on price and spectrum; Joovv on modular scaling.",
       "bestFor": {
-        "a": "Choose Joovv Solo 3.0 if modular full-body scaling, the category-reference build and Joovv’s stated topical-heating indications are deciding factors — at $1,699, the premium price is accepted.",
+        "a": "Choose Joovv Solo 3.0 if modular full-body scaling, the premium modular build and Joovv’s stated topical-heating indications are deciding factors — at $1,699, the premium price is accepted.",
         "b": "Choose Mito Red MitoPRO 1500 (now sold as the 1500X) if you want a large panel with six wavelengths and a 3-year warranty at $1,299 — $400 below Joovv.",
         "c": "Choose PlatinumLED BIOMAX 600 if the lowest price ($1,049), seven-wavelength coverage and publicly posted third-party EMF testing matter more than panel size."
       },
@@ -17396,7 +17396,7 @@
         {
           "name": "Heater quality",
           "winner": "a",
-          "note": "Finnleo: Helo-engineered Finnish heater — gold standard for traditional Finnish sauna heat delivery. Almost Heaven Salem: 6 kW Harvia electric heater (240 V, hard-wired)."
+          "note": "Finnleo: Helo-engineered Finnish heater — a long-established name in traditional Finnish sauna heat. Almost Heaven Salem: 6 kW Harvia electric heater (240 V, hard-wired)."
         },
         {
           "name": "Form factor",
@@ -17584,7 +17584,7 @@
         {
           "name": "Sleep tracking",
           "winner": "a",
-          "note": "Oura’s sleep staging has the strongest published validation of the three (multi-night polysomnography, Svensson 2024, on Gen3; funded by Oura). Whoop and Garmin are competent but less validated."
+          "note": "Oura’s sleep staging has the strongest published validation of the three (multi-night polysomnography, Svensson 2024, on Gen3; funded by Oura). The Ring 4 also has an independent HRV check against ECG (overnight recordings from 13 people, Dial 2025); no independent validation was found for the WHOOP 5.0 or the Venu 4."
         },
         {
           "name": "Recovery coaching",
@@ -17640,9 +17640,9 @@
         "whoop-5-0": 7.3,
         "garmin-venu-4": 7.5
       },
-      "verdict": "Three different roles. Polar H10 for reference accuracy. Whoop for daily recovery coaching. Garmin for training analytics with no subscription. Committed athletes often run two of three.",
+      "verdict": "Three different roles. Polar H10 for resting readings close to lab ECG. Whoop for daily recovery coaching. Garmin for training analytics with no subscription. Committed athletes often run two of three.",
       "bestFor": {
-        "a": "Choose Polar H10 if reference-grade HRV accuracy is the deciding criterion — the consumer ECG benchmark at the lowest price, app-agnostic.",
+        "a": "Choose Polar H10 if resting HRV readings close to lab ECG are the deciding criterion — an ECG chest strap that matched lab ECG almost perfectly in young healthy adults at rest, at the lowest price, app-agnostic.",
         "b": "Choose Whoop 5.0 if the daily Recovery score is the coaching mechanism that changes your training — continuous overnight HRV with subscription-based coaching.",
         "c": "Choose Garmin Venu 4 if you want a smartwatch with first-party training analytics — training load, VO2 max, recovery hours — and no ongoing subscription."
       },
@@ -17840,7 +17840,7 @@
       },
       "verdict": "Nurosym wins on evidence and disclosed parameters. Vagustim wins on protocol variety in EU markets. Xen wins on consumer-friendly earbud form factor with music pairing.",
       "bestFor": {
-        "a": "Choose Nurosym if peer-reviewed evidence and clinical-grade auricular tVNS are the deciding criteria — Parasym devices, mostly earlier models, were used in about twenty independent published studies (50+ according to the manufacturer, as of October 2026).",
+        "a": "Choose Nurosym if peer-reviewed evidence and auricular tVNS are the deciding criteria — Parasym devices, mostly earlier models, were used in about twenty independent published studies (50+ according to the manufacturer, as of October 2026).",
         "b": "Choose Vagustim if you are in an EU market and want auricular tVNS with a wider protocol preset library (stress, sleep, depression, anxiety, IBS) at a lower price.",
         "c": "Choose Xen by Neuvana if you want auricular tVNS in a familiar earbud form factor paired with music — the most consumer-friendly shape of the three."
       },
@@ -18745,7 +18745,7 @@
         {
           "name": "Amplitude (depth)",
           "winner": "b",
-          "note": "Theragun PRO Plus: 16 mm deep stroke, the category benchmark. The Hypervolt stays in the ~14 mm class, so Theragun reaches deeper into tissue."
+          "note": "Theragun PRO Plus: 16 mm deep stroke. The Hypervolt stays in the ~14 mm class, so Theragun reaches deeper into tissue."
         },
         {
           "name": "Noise & battery",
@@ -18956,7 +18956,7 @@
         {
           "name": "Sensors & accuracy",
           "winner": "b",
-          "note": "The Ring 4 is the only one of the two with an independent overnight check of heart rate and HRV against ECG (one study, 13 people). The Ring 5 has redesigned sensors — stronger LEDs, low-profile domes, 12 signal pathways — for more consistent contact across skin tones and finger types, but it has not been validated yet (as of October 2026)."
+          "note": "The Ring 4 is the only one of the two with an independent check of heart rate and HRV against ECG (overnight recordings from 13 people, Dial 2025). The Ring 5 has redesigned sensors — stronger LEDs, low-profile domes, 12 signal pathways — for more consistent contact across skin tones and finger types, but it has not been validated yet (as of October 2026)."
         },
         {
           "name": "Size & comfort",
@@ -19000,9 +19000,9 @@
         "oura-ring-5": 7.6,
         "whoop-5-0": 7.3
       },
-      "verdict": "Sleep-first ring vs training-first band. The Oura Ring 5 wins on sleep and overnight HRV accuracy and all-day comfort; WHOOP 5.0 wins on continuous in-exercise HRV and daily recovery-and-strain coaching. Both require ongoing payment — pick by whether your priority is precise sleep data or training guidance.",
+      "verdict": "Sleep-first ring vs training-first band. The Oura Ring 5 wins on overnight focus, a longer research track record (mostly on earlier generations; the Ring 5 itself not validated) and all-day comfort; WHOOP 5.0 wins on continuous in-exercise HRV and daily recovery-and-strain coaching. Both require ongoing payment — pick by whether your priority is sleep data or training guidance.",
       "bestFor": {
-        "a": "Choose the Oura Ring 5 if precise sleep staging and overnight HRV in a comfortable, always-on ring are the priority, and you accept the membership.",
+        "a": "Choose the Oura Ring 5 if sleep staging and overnight HRV in a comfortable, always-on ring are the priority, and you accept the membership.",
         "b": "Choose WHOOP 5.0 if you train hard and want continuous HRV (including during workouts) plus a daily Recovery-and-Strain coaching loop, and a yearly membership is acceptable.",
         "c": null
       },
@@ -19010,7 +19010,7 @@
         {
           "name": "Sleep & HRV accuracy",
           "winner": "tie",
-          "note": "Practically equal: neither the Ring 5 nor the WHOOP 5.0 has an independent validation of sleep staging or overnight HRV (as of October 2026). Their earlier generations (Oura Ring 4, WHOOP 4.0) were each checked in one overnight study; the current models were not."
+          "note": "Practically equal: neither the Ring 5 nor the WHOOP 5.0 has an independent validation of sleep staging or overnight HRV (as of October 2026). Their earlier generations (Oura Ring 4, WHOOP 4.0) were each checked in one study of overnight recordings (13 people); the current models were not."
         },
         {
           "name": "Recovery & strain coaching",
@@ -19108,9 +19108,9 @@
         "oura-ring-5": 7.6,
         "ultrahuman-ring-air": 6.9
       },
-      "verdict": "Accuracy with a subscription vs no subscription with a reliability question. The Oura Ring 5 is the more accurate, better-supported ring — if you accept the ~$6/month membership. The Ultrahuman Ring Air is subscription-free and lighter — if you accept its battery-reliability risk.",
+      "verdict": "Research track record with a subscription vs no subscription with a reliability question. The Oura Ring 5 is the better-supported ring, with more research on earlier models (neither current model has been independently validated) — if you accept the ~$6/month membership. The Ultrahuman Ring Air is subscription-free and lighter — if you accept its battery-reliability risk.",
       "bestFor": {
-        "a": "Choose the Oura Ring 5 if you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated), upgraded sensors and the best app experience, and the mandatory membership is acceptable.",
+        "a": "Choose the Oura Ring 5 if you want the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated), upgraded sensors and the best app experience, and the mandatory membership is acceptable.",
         "b": "Choose the Ultrahuman Ring Air if avoiding a subscription is the priority, you want the lightest ring and cross-platform support, and you will accept the battery-reliability risk.",
         "c": null
       },
@@ -19162,10 +19162,10 @@
         "ultrahuman-ring-pro": 7.3,
         "oura-ring-5": 7.6
       },
-      "verdict": "No subscription and huge battery vs accuracy and app depth. The Ultrahuman Ring Pro wins on cost model (one-time $479, no fee) and battery (~15 days); the Oura Ring 5 wins on the best-supported ring line (the Ring 5 itself is not validated), sensors and the best app — for $399 plus a membership. Pick by whether you refuse a subscription or want the reference ring.",
+      "verdict": "No subscription and huge battery vs research track record and app depth. The Ultrahuman Ring Pro wins on cost model (one-time $479, no fee) and battery (~15 days); the Oura Ring 5 wins on the best-supported ring line (the Ring 5 itself is not validated), sensors and the best app — for $399 plus a membership. Pick by whether you refuse a subscription or want the most established ring.",
       "bestFor": {
         "a": "Choose the Ultrahuman Ring Pro if a one-time price with no subscription and an exceptional ~15-day battery matter most, and you are comfortable being an early adopter of a redesigned ring.",
-        "b": "Choose the Oura Ring 5 if you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated), the most polished app and upgraded sensors, and the ~$6/month membership is acceptable.",
+        "b": "Choose the Oura Ring 5 if you want the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated), the most polished app and upgraded sensors, and the ~$6/month membership is acceptable.",
         "c": null
       },
       "axes": [
@@ -19432,7 +19432,7 @@
         "amazfit-helio-ring": 6.6,
         "oura-ring-4": 7.7
       },
-      "verdict": "Budget vs reference. The Amazfit Helio Ring wins decisively on cost — $199, no subscription — and is light and comfortable. Oura Ring 4 has an independent overnight check against ECG (one study, 13 people); Amazfit Helio Ring has none. Oura also wins on battery, app polish and fit range, at $349 plus ~$6/month. If money and no-subscription are the priority, Helio; if accuracy and experience are, Oura.",
+      "verdict": "Budget vs reference. The Amazfit Helio Ring wins decisively on cost — $199, no subscription — and is light and comfortable. Oura Ring 4 has an independent check against ECG (overnight recordings from 13 people, Dial 2025); Amazfit Helio Ring has none. Oura also wins on battery, app polish and fit range, at $349 plus ~$6/month. If money and no-subscription are the priority, Helio; if accuracy and experience are, Oura.",
       "bestFor": {
         "a": "Choose the Amazfit Helio Ring if you want the cheapest subscription-free ring with decent sleep tracking, and one of its three sizes fits you.",
         "b": "Choose the Oura Ring 4 if you want the only independently checked overnight HRV of the two (one study) and the most detailed sleep data, the best app and longer battery, and the membership is acceptable.",
@@ -19447,7 +19447,7 @@
         {
           "name": "Accuracy",
           "winner": "b",
-          "note": "Oura Ring 4 has one independent overnight check of heart rate and HRV against ECG (one study, 13 people); no independent check of its sleep staging was found. The Helio has no independent validation."
+          "note": "Oura Ring 4 has an independent check of heart rate and HRV against ECG (overnight recordings from 13 people, Dial 2025); no independent check of its sleep staging was found. The Helio has no independent validation."
         },
         {
           "name": "Battery",
@@ -19594,10 +19594,10 @@
         "ringconn-gen-3": 7.2,
         "oura-ring-5": 7.6
       },
-      "verdict": "No subscription and more hardware features vs the best-supported ring line and the best app. The RingConn Gen 3 wins on cost model (one-time $349, no fee), battery and extras like haptic alerts; Oura has better-supported accuracy for its earlier generations overnight (there is no independent check of the current model), and the Ring 5 wins on sensors and app polish, for $399 plus ~$6/month. Pick by whether you refuse a subscription or want the reference ring.",
+      "verdict": "No subscription and more hardware features vs the best-supported ring line and the best app. The RingConn Gen 3 wins on cost model (one-time $349, no fee), battery and extras like haptic alerts; Oura has more published research on its earlier generations (there is no independent check of the current model), and the Ring 5 wins on sensors and app polish, for $399 plus ~$6/month. Pick by whether you refuse a subscription or want the most established ring.",
       "bestFor": {
         "a": "Choose the RingConn Gen 3 if you want a feature-rich, subscription-free ring with a long battery and silent haptic alerts, and you refuse an ongoing fee.",
-        "b": "Choose the Oura Ring 5 if you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) and the most polished app, and the membership is acceptable.",
+        "b": "Choose the Oura Ring 5 if you want the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated) and the most polished app, and the membership is acceptable.",
         "c": null
       },
       "axes": [
@@ -19629,7 +19629,7 @@
         {
           "name": "Track record",
           "winner": "b",
-          "note": "Oura has years of product history and support (earlier generations have the best independent overnight evidence; the Ring 5 itself is not validated); RingConn is newer to the premium tier, though the Gen 3 is well-reviewed."
+          "note": "Oura has years of product history and support (earlier generations have more published research, including one small independent ECG study; the Ring 5 itself is not validated); RingConn is newer to the premium tier, though the Gen 3 is well-reviewed."
         }
       ]
     },
@@ -19702,9 +19702,9 @@
         "oura-ring-5": 7.6,
         "samsung-galaxy-ring": 7.1
       },
-      "verdict": "Accuracy-and-app vs own-it-outright, cross-platform vs Samsung-locked. Oura has better-supported accuracy for its earlier generations overnight (there is no independent check of the current model); the Ring 5 wins on sensors and app depth and works on iPhone and Android, for $399 plus ~$6/month. The Samsung Galaxy Ring wins on cost model — $399 with no subscription, every feature unlocked — but only really fits Samsung/Android owners. Pick by your phone and whether the membership is acceptable.",
+      "verdict": "Research-track-record-and-app vs own-it-outright, cross-platform vs Samsung-locked. Oura has more published research on its earlier generations (partly funded by Oura; there is no independent check of the current model); the Ring 5 wins on sensors and app depth and works on iPhone and Android, for $399 plus ~$6/month. The Samsung Galaxy Ring wins on cost model — $399 with no subscription, every feature unlocked — but only really fits Samsung/Android owners. Pick by your phone and whether the membership is acceptable.",
       "bestFor": {
-        "a": "Choose the Oura Ring 5 if you want the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) and the most polished app, you may be on iPhone or Android, and the membership is acceptable.",
+        "a": "Choose the Oura Ring 5 if you want the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated) and the most polished app, you may be on iPhone or Android, and the membership is acceptable.",
         "b": "Choose the Samsung Galaxy Ring if you are on a Samsung phone inside Samsung Health and want Oura-style tracking with no subscription — every feature unlocked for good at purchase.",
         "c": null
       },
@@ -19867,7 +19867,7 @@
       "verdict": "Ambition vs execution. The Circular Ring 2 has unique hardware (ECG, AFib) and no subscription, but its software is unfinished and those features didn’t reliably work in testing. The Oura Ring 5 is less ambitious on paper but does everything well, accurately, with the best app — at $399 plus a membership. Today, buy Oura for a ring that works; consider Circular only as an early-adopter bet.",
       "bestFor": {
         "a": "Choose the Circular Ring 2 only if on-ring ECG/AFib and AI coaching excite you and you accept unfinished software as an early adopter.",
-        "b": "Choose the Oura Ring 5 if you want the most polished ring that works reliably today, from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated), and the membership is acceptable.",
+        "b": "Choose the Oura Ring 5 if you want the most polished ring that works reliably today, from the ring line with the most published research (mostly on earlier generations, partly funded by Oura; the Ring 5 itself has not been validated), and the membership is acceptable.",
         "c": null
       },
       "axes": [
@@ -20026,7 +20026,7 @@
         "luna-ring": 6.7,
         "oura-ring-4": 7.7
       },
-      "verdict": "Value vs reference. The Noise Luna Ring Gen 2 wins on cost — ~$300, no subscription — with competent sleep tracking and a charging case for long total battery. Oura Ring 4 has an independent overnight check against ECG (one study, 13 people); Luna Ring has none. Oura also wins on app polish, fit range and single-charge battery, at $349 plus ~$6/month. If price and no-subscription matter most, Luna; if accuracy and experience do, Oura.",
+      "verdict": "Value vs reference. The Noise Luna Ring Gen 2 wins on cost — ~$300, no subscription — with competent sleep tracking and a charging case for long total battery. Oura Ring 4 has an independent check against ECG (overnight recordings from 13 people, Dial 2025); Luna Ring has none. Oura also wins on app polish, fit range and single-charge battery, at $349 plus ~$6/month. If price and no-subscription matter most, Luna; if accuracy and experience do, Oura.",
       "bestFor": {
         "a": "Choose the Noise Luna Ring Gen 2 if you want a cheap, subscription-free ring with good sleep tracking and don’t mind leaning on the charging case.",
         "b": "Choose the Oura Ring 4 if you want the only independently checked overnight HRV of the two (one study) and the most detailed sleep data, the best app and longer single-charge battery, and the membership is acceptable.",
@@ -20041,7 +20041,7 @@
         {
           "name": "Accuracy",
           "winner": "b",
-          "note": "Oura Ring 4 has one independent overnight check of heart rate and HRV against ECG (one study, 13 people); no independent check of its sleep staging was found. The Luna has no independent validation."
+          "note": "Oura Ring 4 has an independent check of heart rate and HRV against ECG (overnight recordings from 13 people, Dial 2025); no independent check of its sleep staging was found. The Luna has no independent validation."
         },
         {
           "name": "Sleep tracking",
@@ -20412,7 +20412,7 @@
       "verdict": "Different budgets, different jobs. Oura Ring 4 is the stronger pick for sleep and HRV and the better recovery tool — if you accept ~$6/month on top of $349. Fitbit Charge 6 is the honest budget pick: $159, reliable, and enough to start, with real depth locked behind Premium.",
       "bestFor": {
         "a": "Choose the Oura Ring 4 if an independently checked overnight HRV and detailed sleep staging are the point, you want a genuine readiness/recovery tool, and the mandatory membership is acceptable.",
-        "b": "Choose the Fitbit Charge 6 if you want a cheap, reliable first step into HRV and activity tracking, prefer a screen and a one-time price, and do not need research-grade accuracy.",
+        "b": "Choose the Fitbit Charge 6 if you want a cheap, reliable first step into HRV and activity tracking, prefer a screen and a one-time price, and do not need a dedicated overnight ring.",
         "c": null
       },
       "axes": [
@@ -21234,7 +21234,7 @@
         {
           "name": "Comfort",
           "winner": "tie",
-          "note": "Both medical-grade flexible silicone — comparable comfort. Personal preference rather than product difference."
+          "note": "Both flexible silicone — comparable comfort. Personal preference rather than product difference."
         },
         {
           "name": "Consumer market scale",
@@ -21263,7 +21263,7 @@
         "omnilux-contour-face": 7.8,
         "dr-dennis-gross-spectralite": 7.3
       },
-      "verdict": "Comfort vs spectrum scope. Omnilux Contour Face for best-in-class silicone comfort and red + near-infrared light. Dr. Dennis Gross for dermatology-brand pedigree with dual red + blue protocols.",
+      "verdict": "Comfort vs spectrum scope. Omnilux Contour Face for silicone comfort (the most comfortable in our assessment) and red + near-infrared light. Dr. Dennis Gross for dermatology-brand pedigree with dual red + blue protocols.",
       "bestFor": {
         "a": "Choose Omnilux Contour Face if you want flexible-silicone comfort and red + near-infrared coverage.",
         "b": "Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand dual red + blue spectrum protocols (anti-aging + acne) and accept hard-shell comfort.",
@@ -21273,7 +21273,7 @@
         {
           "name": "Comfort",
           "winner": "a",
-          "note": "Omnilux: medical-grade flexible silicone — best in category. Dr. Dennis Gross: hard-shell, heavier, less comfortable for extended sessions."
+          "note": "Omnilux: flexible silicone — the most comfortable in our testing. Dr. Dennis Gross: hard-shell, heavier, less comfortable for extended sessions."
         },
         {
           "name": "Wavelength coverage",
@@ -21550,10 +21550,10 @@
         "hostage-tape": 8,
         "somnifix": 7.5
       },
-      "verdict": "Beard-friendliness vs medical credibility. Hostage Tape for beard-friendly acrylic adhesive and subscription convenience. Somnifix for an FDA-registered porous design.",
+      "verdict": "Beard-friendliness vs porous design. Hostage Tape for beard-friendly acrylic adhesive and subscription convenience. Somnifix for an FDA-registered porous design.",
       "bestFor": {
         "a": "Choose Hostage Tape if you have a beard and want subscription-convenient biohacker-brand mouth tape.",
-        "b": "Choose Somnifix if you want FDA-registered medical-credibility mouth tape with a porous design.",
+        "b": "Choose Somnifix if you want FDA-registered (a listing, not clearance or approval) mouth tape with a porous design.",
         "c": null
       },
       "axes": [
@@ -21570,7 +21570,7 @@
         {
           "name": "Regulatory standing",
           "winner": "b",
-          "note": "Somnifix: FDA-registered medical device. Hostage Tape: brand-funded studies, no FDA registration."
+          "note": "Somnifix: FDA-registered (a listing, not clearance or approval). Hostage Tape: brand-funded studies, no FDA registration."
         },
         {
           "name": "Brand recognition",
@@ -21580,7 +21580,7 @@
         {
           "name": "Skin tolerance",
           "winner": "tie",
-          "note": "Both hypoallergenic medical-grade adhesives. Comparable skin-reaction rates at scale."
+          "note": "Both use adhesives the makers describe as hypoallergenic. Comparable skin-reaction rates at scale."
         },
         {
           "name": "Subscription convenience",
@@ -21730,7 +21730,7 @@
       "verdict": "Premium mechanism vs drugstore economics. Intake Breathing for stronger magnetic dilation and reusable design. Breathe Right for FDA-cleared multi-decade track record at $0.33/night.",
       "bestFor": {
         "a": "Choose Intake Breathing if you want stronger external nasal dilation with reusable magnetic band and James Nestor-recommended brand.",
-        "b": "Choose Breathe Right Original if you want the FDA-cleared drugstore reference at lowest per-night cost — the first nasal dilator to try.",
+        "b": "Choose Breathe Right Original if you want an FDA-cleared drugstore strip at lowest per-night cost — the first nasal dilator to try.",
         "c": null
       },
       "axes": [
@@ -21845,7 +21845,7 @@
       "verdict": "Three different theses, three different right answers. Hostage Tape for beard-friendly biohacker mouth seal. Somnifix for an FDA-registered porous design. Intake Breathing for premium external magnetic dilation.",
       "bestFor": {
         "a": "Choose Hostage Tape if you want beard-friendly biohacker-brand mouth tape with subscription convenience.",
-        "b": "Choose Somnifix if you want FDA-registered medical-credibility mouth tape with a porous design.",
+        "b": "Choose Somnifix if you want FDA-registered (a listing, not clearance or approval) mouth tape with a porous design.",
         "c": "Choose Intake Breathing if you can't adapt to mouth tape and want premium external magnetic nasal dilation instead."
       },
       "axes": [
@@ -21857,7 +21857,7 @@
         {
           "name": "Regulatory standing",
           "winner": "b",
-          "note": "Somnifix: FDA-registered medical device. Hostage Tape and Intake: brand-funded studies. Somnifix wins."
+          "note": "Somnifix: FDA-registered (a listing, not clearance or approval). Hostage Tape and Intake: brand-funded studies. Somnifix wins."
         },
         {
           "name": "Safety / sleep apnea",
@@ -22200,7 +22200,7 @@
       },
       "verdict": "Three different theses. Theragun PRO Plus for spec ceiling + Therabody app. Hypervolt 2 Pro for same stall at lower price. Achedaway Pro for highest stall force at sub-Theragun pricing without app.",
       "bestFor": {
-        "a": "Choose Theragun PRO Plus if you want the category reference — spec ceiling + best app + longest warranty + Therabody ecosystem.",
+        "a": "Choose Theragun PRO Plus if you want the spec ceiling + best app + longest warranty + Therabody ecosystem.",
         "b": "Choose Hypervolt 2 Pro if you want matching premium stall force at $200 less with Hyperice ecosystem.",
         "c": "Choose Achedaway Pro if you want highest stall force at sub-Theragun pricing and no app needed."
       },
@@ -22259,7 +22259,7 @@
       },
       "verdict": "Clinical filtration vs PECO smart features. IQAir for deepest HEPA depth and multi-decade Swiss pedigree. Molekule for PECO VOC destruction + premium smart app.",
       "bestFor": {
-        "a": "Choose IQAir HealthPro Plus for clinical-grade HyperHEPA H14 filtration with Swiss pedigree — accept no smart features.",
+        "a": "Choose IQAir HealthPro Plus for maker-rated HyperHEPA H14 filtration with Swiss pedigree — accept no smart features.",
         "b": "Choose Molekule Air Pro for PECO photocatalytic VOC destruction + premium smart features and app integration.",
         "c": null
       },
@@ -22277,7 +22277,7 @@
         {
           "name": "Build pedigree",
           "winner": "a",
-          "note": "IQAir: multi-decade Swiss medical-grade pedigree. Molekule: newer consumer brand with FTC settlement context."
+          "note": "IQAir: multi-decade Swiss pedigree. Molekule: newer consumer brand with FTC settlement context."
         },
         {
           "name": "Coverage",
@@ -22486,7 +22486,7 @@
       "verdict": "Smart features vs clinical filtration. Dyson Big+Quiet for premium smart UX + formaldehyde + best-in-category app. IQAir for HyperHEPA H14 clinical depth.",
       "bestFor": {
         "a": "Choose Dyson Big+Quiet if you want premium consumer-brand polish, best smart features and formaldehyde destruction at $999.",
-        "b": "Choose IQAir HealthPro Plus if you want clinical-grade HyperHEPA H14 filtration depth with multi-decade Swiss pedigree.",
+        "b": "Choose IQAir HealthPro Plus if you want maker-rated HyperHEPA H14 filtration depth with multi-decade Swiss pedigree.",
         "c": null
       },
       "axes": [
@@ -22596,17 +22596,17 @@
         "coway-airmega-400": 8.4,
         "iqair-healthpro-plus": 8.3
       },
-      "verdict": "Value vs clinical reference. The Coway Airmega 400 wins on price and everyday value — verified large-room HEPA for less than half the cost. The IQAir HealthPro Plus wins on outright filtration: HyperHEPA H14 and heavy VOC/odor removal, the medical-grade choice. Pick Coway for excellent value; IQAir if you need the deepest, clinical-grade filtration.",
+      "verdict": "Value vs maker-rated H14 filtration. The Coway Airmega 400 wins on price and everyday value — verified large-room HEPA for less than half the cost. The IQAir HealthPro Plus wins on outright filtration: HyperHEPA H14 and heavy VOC/odor removal, the H14-rated choice (company-stated). Pick Coway for excellent value; IQAir if you need the deepest, maker-rated H14 filtration.",
       "bestFor": {
-        "a": "Choose the Coway Airmega 400 if you want verified large-room HEPA filtration and coverage at strong value, and don’t need medical-grade capture.",
-        "b": "Choose the IQAir HealthPro Plus if you want the deepest, clinical-grade filtration (HyperHEPA H14) for allergies, VOCs or sensitive health needs.",
+        "a": "Choose the Coway Airmega 400 if you want verified large-room HEPA filtration and coverage at strong value, and don’t need H14-rated capture.",
+        "b": "Choose the IQAir HealthPro Plus if you want the deepest, maker-rated H14 filtration (HyperHEPA H14) for allergies, VOCs or sensitive health needs.",
         "c": null
       },
       "axes": [
         {
           "name": "Filtration depth",
           "winner": "b",
-          "note": "IQAir’s HyperHEPA H14 captures 99.5% of particles down to 0.003 microns — beyond standard HEPA, the clinical reference. The Coway’s True HEPA H13 is excellent but a tier below."
+          "note": "IQAir’s HyperHEPA H14 captures 99.5% of particles down to 0.003 microns — beyond standard HEPA (company-stated). The Coway’s True HEPA H13 is excellent but a tier below."
         },
         {
           "name": "Price & value",
@@ -22616,7 +22616,7 @@
         {
           "name": "VOC / odor removal",
           "winner": "b",
-          "note": "IQAir excels at heavy VOC and odor removal; the Coway’s carbon stage is good but not clinical-grade."
+          "note": "IQAir excels at heavy VOC and odor removal; the Coway’s carbon stage is good but not as heavy-duty."
         },
         {
           "name": "Coverage / CADR",
@@ -22654,7 +22654,7 @@
       },
       "verdict": "Three different premium theses. IQAir for clinical filtration depth. Molekule for PECO VOC destruction. Dyson for premium smart + formaldehyde + quietest operation.",
       "bestFor": {
-        "a": "Choose IQAir HealthPro Plus for clinical-grade HyperHEPA H14 filtration with multi-decade Swiss pedigree — accept no smart features.",
+        "a": "Choose IQAir HealthPro Plus for maker-rated HyperHEPA H14 filtration with multi-decade Swiss pedigree — accept no smart features.",
         "b": "Choose Molekule Air Pro for PECO photocatalytic VOC destruction + premium smart features and app integration.",
         "c": "Choose Dyson Big+Quiet for premium consumer-brand polish + best smart features + formaldehyde destruction + quietest operation."
       },
@@ -22706,12 +22706,12 @@
         {
           "review": "polar-h10",
           "award": "Best for accuracy",
-          "takeaway": "ECG-grade accuracy and fully open data — a reference instrument, not an all-day wearable."
+          "takeaway": "ECG electrodes, not optical — close to lab ECG at rest in young healthy adults — and fully open data; a measuring tool, not an all-day wearable."
         },
         {
           "review": "oura-ring-5",
           "award": "Best overall",
-          "takeaway": "Overnight HRV and sleep from the best-validated ring line (the Ring 5 itself not yet separately validated), upgraded sensors and the best app — if you accept the subscription."
+          "takeaway": "Overnight HRV and sleep from the ring line with the most published research — mostly on earlier generations, partly funded by Oura (the Ring 5 itself not yet separately validated), upgraded sensors and the best app — if you accept the subscription."
         },
         {
           "review": "apple-watch-series-12",
@@ -22726,7 +22726,7 @@
         {
           "review": "withings-scanwatch",
           "award": "Best hybrid ECG watch",
-          "takeaway": "A discreet analog watch with medical-grade ECG and a ~30-day battery — clinical screening, no subscription."
+          "takeaway": "A discreet analog watch with a regulator-cleared single-lead ECG (per Withings) and a ~30-day battery — no subscription."
         },
         {
           "review": "whoop-5-0",
@@ -22865,7 +22865,7 @@
         {
           "review": "sleepio",
           "award": "Best for insomnia",
-          "takeaway": "A clinically validated CBT-I course — the one app here that treats a sleep disorder, not just tracks it."
+          "takeaway": "A CBT-I course with the largest body of randomised trials here (many run by its developer) — the one app here that treats a sleep disorder, not just tracks it."
         },
         {
           "review": "rise",
@@ -22897,7 +22897,7 @@
         {
           "review": "nurosym",
           "award": "Best overall",
-          "takeaway": "The largest independent trial record in consumer ear tVNS (mostly earlier Parasym models) — research-grade auricular stimulation in a deliberately spartan form (€700, about $820)."
+          "takeaway": "The largest independent trial record in consumer ear tVNS (mostly earlier Parasym models) — auricular stimulation of the kind used in research studies, in a deliberately spartan form (€700, about $820)."
         },
         {
           "review": "truvaga-350",
@@ -22917,7 +22917,7 @@
         {
           "review": "gammacore-sapphire-cv",
           "award": "Best clinical (prescription)",
-          "takeaway": "FDA-cleared prescription neck device for migraine (ages 12+), cluster headache and two rare headache disorders — the clinical reference for cervical stimulation."
+          "takeaway": "FDA-cleared prescription neck device for migraine (ages 12+), cluster headache and two rare headache disorders."
         },
         {
           "review": "pulsetto",
@@ -23431,7 +23431,7 @@
         {
           "review": "omnilux-contour-face",
           "award": "",
-          "takeaway": "Best-in-class flexible silicone + the standard red / near-infrared pair, FDA-cleared for wrinkles — no published trial of the mask itself."
+          "takeaway": "Flexible silicone (the most comfortable in our assessment) + the standard red / near-infrared pair, FDA-cleared for wrinkles — no published trial of the mask itself."
         },
         {
           "review": "theraface-mask",
@@ -23478,7 +23478,7 @@
         {
           "review": "hostage-tape",
           "award": "Best overall",
-          "takeaway": "Beard-friendly adhesive + subscription convenience + biohacker brand polish — the 2026 reference."
+          "takeaway": "Beard-friendly adhesive + subscription convenience + biohacker brand polish — our top overall pick for 2026."
         },
         {
           "review": "intake-breathing",
@@ -23493,16 +23493,16 @@
         {
           "review": "somnifix",
           "award": "Best FDA-registered",
-          "takeaway": "Original porous mouth tape with central breathing port and multi-year medical-credibility track record."
+          "takeaway": "Original porous mouth tape with central breathing port and FDA-registered (a listing, not clearance or approval)."
         },
         {
           "review": "nexcare-surgical-tape",
           "award": "Best DIY budget",
-          "takeaway": "3M clinical-grade medical paper tape at $0.05/night — unbeatable cost for biohackers willing to cut their own strips."
+          "takeaway": "3M surgical paper tape at $0.05/night — unbeatable cost for biohackers willing to cut their own strips."
         },
         {
           "review": "breathe-right-original",
-          "award": "Best drugstore reference",
+          "award": "Best drugstore option",
           "takeaway": "Decades-long FDA-cleared external strip at $0.33/night — try this first before premium dilators."
         },
         {
@@ -23550,7 +23550,7 @@
         {
           "review": "theragun-pro-plus",
           "award": "Best premium (deepest amplitude)",
-          "takeaway": "The deepest 16 mm stroke plus OLED, heat, breathing training and a 2-year warranty — the reference if amplitude and ecosystem matter more than price."
+          "takeaway": "The deepest 16 mm stroke plus OLED, heat, breathing training and a 2-year warranty — the pick if amplitude and ecosystem matter more than price."
         },
         {
           "review": "achedaway-pro",
@@ -23607,7 +23607,7 @@
         {
           "review": "iqair-healthpro-plus",
           "award": "Best overall",
-          "takeaway": "HyperHEPA H14 clinical-grade filtration + multi-decade Swiss pedigree — the deepest spec in consumer category."
+          "takeaway": "Maker-rated H14 HyperHEPA filtration (company-stated) + multi-decade Swiss pedigree — the deepest spec in consumer category."
         },
         {
           "review": "blueair-healthprotect-7770i",
