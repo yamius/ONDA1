@@ -17,10 +17,10 @@ const ouraVsSamsungRing: HeadToHeadInput = {
   bestForB:
     'Choose Samsung Galaxy Ring if you are on Samsung — Galaxy phone plus Galaxy Watch — and you want a no-subscription ring tightly integrated into Samsung Health.',
   axes: [
-    { name: 'HRV measurement', winner: 'a', note: 'Both track HRV optically overnight; Oura’s pipeline is marginally tighter in independent comparison. Small gap.' },
+    { name: 'HRV measurement', winner: 'a', note: 'Both track HRV optically overnight. Oura Ring 4 has one independent overnight check against ECG; no independent validation of the Galaxy Ring was found (as of October 2026).' },
     { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging is better-validated among consumer rings (manufacturer-funded studies); wearable sleep stages are still estimates. Samsung’s sleep analytics are competent but a tier behind.' },
     { name: 'Cross-platform support', winner: 'a', note: 'Oura runs natively on both iPhone and Android with full feature parity. Samsung Galaxy Ring works with Android only; there is no iPhone support.' },
-    { name: 'Ecosystem integration', winner: 'b', note: 'Samsung Galaxy Ring composes natively with Galaxy Watch (HRV + sleep cross-validation), Samsung Health and Samsung devices. The strongest single-brand health ecosystem.' },
+    { name: 'Ecosystem integration', winner: 'b', note: 'Samsung Galaxy Ring composes natively with Galaxy Watch (the watch and ring can cross-check HRV and sleep — a cross-check, not a validation), Samsung Health and Samsung devices. The strongest single-brand health ecosystem.' },
     { name: 'Battery life', winner: 'b', note: 'Samsung: ~7 days. Oura: about 4–7 days. Close, with a Samsung edge — especially in larger sizes.' },
     { name: 'Subscription', winner: 'b', note: 'Samsung: no subscription required. Oura: $5.99/month membership for full features. Over three years Samsung saves ~$215.' },
     { name: 'App maturity', winner: 'a', note: 'Oura app: a decade of iteration. Samsung Health: broader but younger for ring-specific features.' },

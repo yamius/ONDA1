@@ -19,7 +19,7 @@ const ouraVsWhoopVsApple: HeadToHeadInput = {
   bestForC:
     'Choose Apple Watch Series 11 if you want a do-everything smartwatch with HRV as one feature among many — and you are in the iPhone ecosystem.',
   axes: [
-    { name: 'HRV measurement', winner: 'a', note: 'Oura: continuous overnight HRV, marginally cleanest pipeline. Whoop: continuous overnight HRV, similar accuracy. Apple Watch: spot-checks only, not continuous. Apple is the outlier here.' },
+    { name: 'HRV measurement', winner: 'a', note: 'Oura Ring 4: continuous overnight HRV, with one independent overnight check against ECG. Whoop 5.0: continuous overnight HRV, but the 5.0 itself has not been independently validated. Apple Watch: spot-checks only, not continuous. Apple is the outlier here.' },
     { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep model has the strongest published validation of the three (in Oura-funded studies). Whoop tracks sleep automatically and competently. Apple Watch sleep is a secondary feature — competent, less granular.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s Recovery and Strain coaching is the sharpest daily-readiness signal. Oura has Readiness; Apple has nothing equivalent.' },
     { name: 'Form factor (passive wear)', winner: 'a', note: 'Ring is the most passive wearable — fits sleep, work, gym, social. Whoop band is wearable everywhere except when display matters. Apple Watch is visible.' },

@@ -20,7 +20,7 @@ const polarVsWhoopVsGarmin: HeadToHeadInput = {
   bestForC:
     'Choose Garmin Venu 4 if you want a smartwatch with first-party training analytics — training load, VO2 max, recovery hours — and no ongoing subscription.',
   axes: [
-    { name: 'HRV accuracy', winner: 'a', note: 'Polar H10: electrical ECG, near-perfect agreement with clinical reference. Whoop and Garmin: optical PPG, accurate enough for trending but lag ECG.' },
+    { name: 'HRV accuracy', winner: 'a', note: 'Polar H10: electrical ECG, near-perfect agreement with a clinical reference in young healthy adults at rest. Whoop and Garmin: optical PPG; neither the WHOOP 5.0 nor the Venu 4 has an independent validation of HRV against ECG (as of October 2026) — use them for trends.' },
     { name: 'Continuous overnight tracking', winner: 'tie', note: 'Whoop and Garmin track HRV continuously overnight. Polar H10 is a strap worn for sessions only — no continuous wear.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s Recovery and Strain coaching is the sharpest daily-readiness model. Garmin’s Body Battery is lighter. Polar H10 has no first-party coaching.' },
     { name: 'Training analytics', winner: 'c', note: 'Garmin: training load, VO2 max, recovery hours, structured workouts. Whoop: Strain-based. Polar H10: raw RR-intervals only.' },

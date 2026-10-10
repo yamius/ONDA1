@@ -2135,11 +2135,11 @@
         },
         {
           "q": "Jaka aplikacja do pracy z oddechem jest najlepsza w 2026?",
-          "a": "Ogólnie Breathwrk — największa uporządkowana biblioteka, najszerszy zakres technik, opisy oparte na nauce za $49/rok. Othership dla filmowego doświadczenia premium z muzyką za $129.99/rok. Aplikacja Wim Hof Method konkretnie do WHM."
+          "a": "Ogólnie Breathwrk — największa uporządkowana biblioteka, najszerszy zakres technik, opisy czerpiące z nauki (jedno opublikowane badanie nad cyklicznym westchnieniem) za $49/rok. Othership dla filmowego doświadczenia premium z muzyką za $129.99/rok. Aplikacja Wim Hof Method konkretnie do WHM."
         },
         {
           "q": "Czy subskrypcja Breathwrk jest warta swojej ceny?",
-          "a": "Tak, dla osób chcących uporządkowanej codziennej praktyki oddechowej z szerokim zakresem technik — biblioteka Breathwrk i opisy oparte na nauce nie mają sobie równych w tej cenie. Dla osób szukających filmowego doświadczenia Othership uzasadnia swoją wyższą subskrypcję."
+          "a": "Tak, dla osób chcących uporządkowanej codziennej praktyki oddechowej z szerokim zakresem technik — biblioteka Breathwrk i opisy czerpiące z nauki (jedno opublikowane badanie nad cyklicznym westchnieniem) nie mają sobie równych w tej cenie. Dla osób szukających filmowego doświadczenia Othership uzasadnia swoją wyższą subskrypcję."
         },
         {
           "q": "Breathwrk czy Othership — co lepsze?",
@@ -2414,7 +2414,7 @@
       "axes": [
         {
           "name": "Pomiar HRV",
-          "note": "Oba śledzą HRV w sposób ciągły w nocy za pomocą optycznego PPG; niezależne porównania stawiają je mniej więcej na równi. Remis na poziomie sygnału."
+          "note": "Praktycznie równe: oba mierzą HRV w nocy optycznym PPG, a ani WHOOP 5.0, ani Venu 4 nie mają niezależnej walidacji HRV względem EKG (stan na październik 2026), więc nie ma podstaw, by szeregować je pod względem dokładności."
         },
         {
           "name": "Coaching regeneracji",
@@ -2892,7 +2892,7 @@
         },
         {
           "name": "Pomiar snu i HRV",
-          "note": "Oba dają solidne nocne dane o śnie i HRV jak na swoją cenę; różnica w codziennym użyciu jest niewielka i żaden nie ma tylu opublikowanych walidacji co Oura."
+          "note": "Praktycznie równe: oba śledzą sen i nocną HRV w swojej cenie, a żaden nie ma niezależnej walidacji (stan na październik 2026); różnica w codziennym użyciu jest niewielka."
         },
         {
           "name": "Komfort",

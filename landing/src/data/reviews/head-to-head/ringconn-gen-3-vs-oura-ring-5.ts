@@ -22,7 +22,7 @@ const gen3VsOura5: HeadToHeadInput = {
     { name: 'App & ecosystem', winner: 'b', note: 'Oura’s app is the most polished and explanatory in the category, with the widest integrations. RingConn’s is capable but plainer.' },
     { name: 'Battery', winner: 'a', note: 'RingConn Gen 3: ~10-14 days. Oura Ring 5: ~6-9 days. RingConn lasts noticeably longer.' },
     { name: 'Extra hardware', winner: 'a', note: 'The Gen 3 adds a first-in-category haptic motor (silent alarm/alerts), plus vascular/blood-pressure trends and a wireless charging case — features the Ring 5 doesn’t have.' },
-    { name: 'Track record', winner: 'b', note: 'Oura has years of proven accuracy and support; RingConn is newer to the premium tier, though the Gen 3 is well-reviewed.' },
+    { name: 'Track record', winner: 'b', note: 'Oura has years of product history and support (earlier generations have the best independent overnight evidence; the Ring 5 itself is not validated); RingConn is newer to the premium tier, though the Gen 3 is well-reviewed.' },
   ],
   faq: [
     {

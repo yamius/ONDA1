@@ -16,7 +16,7 @@ const ouraVsUltrahuman: HeadToHeadInput = {
   bestForB:
     'Choose Ultrahuman Ring Air if no subscription is a hard requirement, or if you already own (or plan to own) the Ultrahuman M1 CGM for unified glucose + HRV + sleep data.',
   axes: [
-    { name: 'HRV measurement', winner: 'a', note: 'Both track HRV optically overnight; Oura’s pipeline is marginally cleaner in independent comparison, particularly during disturbed sleep.' },
+    { name: 'HRV measurement', winner: 'a', note: 'Both track HRV optically overnight. Oura Ring 4 has one independent overnight check against ECG; Ultrahuman has only company-run preprints (as of October 2026).' },
     { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging is better-validated among consumer rings (manufacturer-funded studies); wearable sleep stages are still estimates. Ultrahuman is competent but a tier behind on sleep-stage granularity and recovery analysis.' },
     { name: 'App and analytics', winner: 'a', note: 'Oura app is the most mature in the category after a decade of iteration. Ultrahuman is polished but newer and narrower.' },
     { name: 'Ring weight and comfort', winner: 'b', note: 'Ultrahuman Ring Air is roughly 2.4g — the lightest smart ring on the market. Oura Ring 4 is heavier at ~5g. The Ultrahuman is noticeably more comfortable for sensitive users.' },

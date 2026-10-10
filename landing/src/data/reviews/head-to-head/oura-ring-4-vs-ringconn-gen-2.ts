@@ -17,7 +17,7 @@ const ouraVsRingconn: HeadToHeadInput = {
   bestForB:
     'Choose RingConn Gen 2 if you want subscription-free smart-ring tracking with the longest battery in the category, at the lowest 3-year total cost.',
   axes: [
-    { name: 'HRV measurement', winner: 'a', note: 'Both optical PPG with comparable accuracy ceilings. Oura’s pipeline is marginally cleaner in independent comparison.' },
+    { name: 'HRV measurement', winner: 'a', note: 'Both use optical PPG. Oura Ring 4 has one independent overnight check against ECG; RingConn has only a preprint, so their precision cannot be compared directly (as of October 2026).' },
     { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging is better-validated among consumer rings (manufacturer-funded studies); wearable sleep stages are still estimates. RingConn is competent but a tier behind on staging granularity.' },
     { name: 'App maturity', winner: 'a', note: 'Oura: decade of iteration. RingConn: newer, cleaner-but-shallower. Oura wins decisively.' },
     { name: 'Battery life', winner: 'b', note: 'RingConn Gen 2: 10–12 days depending on size. Oura Ring 4: about 4–7 days. RingConn lasts roughly two to three times as long — the longest in the smart-ring category.' },

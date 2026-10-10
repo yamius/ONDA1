@@ -16,7 +16,7 @@ const whoop50VsGarminVenu4: HeadToHeadInput = {
   bestForB:
     'Choose Garmin Venu 4 if you want training analytics without an ongoing subscription, up to 12 days of battery and a smartwatch display — the better long-term economics for most users.',
   axes: [
-    { name: 'HRV measurement', winner: 'tie', note: 'Both track HRV continuously overnight on optical PPG; independent comparisons sit them roughly equal. Tie at the signal layer.' },
+    { name: 'HRV measurement', winner: 'tie', note: 'Practically equal: both track HRV overnight on optical PPG, and neither the WHOOP 5.0 nor the Venu 4 has an independent validation of HRV against ECG (as of October 2026), so there is no basis to rank their accuracy.' },
     { name: 'Recovery coaching', winner: 'a', note: 'Whoop’s Recovery and Strain coach is the sharpest daily-readiness model in the consumer space. Garmin’s Body Battery is competent but lighter-touch.' },
     { name: 'Training analytics', winner: 'b', note: 'Garmin has the deeper training-load, VO2 max, recovery-hours and structured-workout model. Whoop is coaching; Garmin is instrument.' },
     { name: 'Display and notifications', winner: 'b', note: 'Garmin: AMOLED smartwatch with notifications, music, apps. Whoop: displayless band that pairs to the phone.' },

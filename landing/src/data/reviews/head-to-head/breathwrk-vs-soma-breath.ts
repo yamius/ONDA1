@@ -11,7 +11,7 @@ const breathwrkVsSoma: HeadToHeadInput = {
     'Breathwrk and SOMA Breath are the two apps users compare when picking sub-$100/year breathwork. Both deliver structured guided practice. The defining difference is pacing: Breathwrk uses voice-guided structured sessions; SOMA Breath paces breath to rhythmic music with Wim Hof crossover.',
   jobDependentVerdict: true,
   verdict:
-    'Structured science vs rhythmic music. Breathwrk for the largest evidence-grounded library at $49/year. SOMA Breath for beat-paced rhythmic breathwork with facilitator certification community.',
+    'Structured library vs rhythmic music. Breathwrk for the largest science-informed library at $49/year. SOMA Breath for beat-paced rhythmic breathwork with facilitator certification community.',
   bestForA:
     'Choose Breathwrk if you want the largest structured breathwork library, science-informed copy backed by one published study on cyclic sighing, and the broadest technique coverage.',
   bestForB:

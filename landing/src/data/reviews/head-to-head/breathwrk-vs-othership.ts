@@ -28,7 +28,7 @@ const breathwrkVsOthership: HeadToHeadInput = {
   faq: [
     {
       q: 'Breathwrk or Othership — which is better?',
-      a: 'Different theses. Breathwrk wins on library depth, technique coverage, science grounding and price. Othership wins on production value, music-driven sessions and live community.',
+      a: 'Different theses. Breathwrk wins on library depth, technique coverage, science-informed copy (one published study on cyclic sighing) and price. Othership wins on production value, music-driven sessions and live community.',
     },
     {
       q: 'Is Othership worth $129.99/year?',
