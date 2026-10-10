@@ -23,7 +23,7 @@ const ouraRing4: ToolReviewInput = {
   ],
   pros: [
     'In overnight recordings from 13 people (Dial 2025), Oura Ring 4 was among the closest matches to ECG',
-    'Strong, published sleep-stage validation against polysomnography',
+    'Sleep staging of an earlier generation (Gen 3) was compared with polysomnography in Oura-funded studies; no independent validation of Ring 4 sleep staging',
     'Small, comfortable 24/7 form factor',
     'Gets the same new software as the Ring 5, for $50 less',
   ],
@@ -33,7 +33,7 @@ const ouraRing4: ToolReviewInput = {
     'Limited access to raw data',
     'No display — every glance means reaching for the phone',
   ],
-  bestFor: 'Best for accurate overnight HRV and sleep data at the lowest Oura price.',
+  bestFor: 'Best for overnight HRV with one independent ECG check (13 people) and sleep data at the lowest Oura price.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from manufacturer specifications, independent 2026 reviews and published validation literature. Not hands-on tested by ONDA.',

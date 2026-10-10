@@ -106,8 +106,8 @@ New section **9. ONDA App in ChatGPT**, inserted after §8 “Analytics & How We
 **Facts behind this text (verified in code):**
 - The server has no `console.*` calls and no outbound `fetch`. Errors return a generic message without echoing inputs; a test checks this.
 - The cards have no `<script src>`, no cookies or `localStorage`, and no `fetch`. Their CSP is empty (`connectDomains: []`, `resourceDomains: []`), and a test checks there are no external scripts.
-- The server ignores all fields ChatGPT adds under `_meta`, such as locale and user agent.
-- Links carry campaign tags only: `ct=chatgpt_*` for the App Store and `utm_*` for the website. Analytics happen only after the person leaves the card.
+- The server ignores the values of all fields ChatGPT adds under `_meta`, such as locale and user agent. To tag links by host (since 1.8.1) it reads only the request's `User-Agent` header (the platform's, e.g. `openai-mcp/1.0.0`), vendor header names, and whether `_meta` key names start with `openai/` — never their values.
+- Links carry campaign tags only: `ct=chatgpt_*` for the App Store and `utm_source=chatgpt` + `utm_*` for the website when the request comes from ChatGPT (`claude_*` from Claude, `ai_app_*` from an unrecognised host). Analytics happen only after the person leaves the card.
 
 ## 4. Test prompts for reviewers
 

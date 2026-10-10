@@ -1,5 +1,5 @@
 ---
-sourceHash: d8392f5cdd3e
+sourceHash: 8a419d7d40ce
 title: "Estresse agudo e HRV: o que acontece e como você se recupera"
 metaTitle: "Estresse agudo e HRV: o que os estudos mostram"
 metaDescription: "Como provas, entrevistas e testes de estresse mudam a HRV, como funciona a recuperação e o que as pontuações de estresse de um wearable podem ou não dizer."
@@ -133,6 +133,8 @@ A vida cotidiana é mais difícil. Em um estudo com {{fact:stress.uendes.design}
 - **Os estudos são pequenos e específicos.** Vários achados vêm de um único estudo em estudantes, homens ou palestrantes experientes.
 - **Nenhuma conclusão médica.** Nenhum desses estudos diagnostica uma condição, e nenhum mostra que uma reação ao estresse prevê doença cardíaca em uma pessoa específica.
 - **Ficar mais calmo não é o mesmo que ter HRV mais alta.** Respirar antes do estresse aliviou a frequência cardíaca e a ansiedade sem mudar a HRV [S7].
+
+Para as outras causas comuns de uma leitura baixa, veja [por que minha HRV está baixa?](/science/questions/why-is-my-hrv-low).
 
 ## No ONDA
 

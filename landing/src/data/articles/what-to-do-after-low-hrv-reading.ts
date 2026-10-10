@@ -55,6 +55,8 @@ When your HRV really is depressed for a few days, it's your [autonomic nervous s
 - **Stress that hasn't switched off**, carried into the evening and sleep.
 - **A bug coming on**, or just a rough, depleting stretch.
 
+For the causes and how strong the evidence for each is, see [why is my HRV low?](/science/questions/why-is-my-hrv-low).
+
 It's a "your body is carrying something — ease up and recover" signal, not a "something is medically wrong" alarm. If a low reading comes with symptoms that worry you, that's a conversation for a doctor, not an app: HRV tools are descriptive, not diagnostic, and not medical devices.
 
 ---

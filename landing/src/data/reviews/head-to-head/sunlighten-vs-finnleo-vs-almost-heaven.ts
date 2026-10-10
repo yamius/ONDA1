@@ -14,7 +14,7 @@ const irVsTraditional: HeadToHeadInput = {
   verdict:
     'Three different heat sources. Sunlighten for IR cabin and programmable wavelength control. Finnleo for premium Finnish indoor convection. Almost Heaven for traditional outdoor cedar barrel.',
   bestForA:
-    'Choose Sunlighten mPulse if you want IR cabin sauna with programmable per-wavelength control and the deepest IR research footprint.',
+    'Choose Sunlighten mPulse if you want IR cabin sauna with programmable per-wavelength control.',
   bestForB:
     'Choose Finnleo Hallmark if you want premium traditional Finnish indoor sauna — Helo-engineered heater, the format the Finnish cohort studies were run on.',
   bestForC:
@@ -52,7 +52,7 @@ Three premium saunas crossing the IR / traditional / outdoor barrel divide. Pick
 
 ## When is Sunlighten mPulse the right pick?
 
-If you want IR cabin sauna with programmable per-wavelength control and the deepest IR-sauna research footprint — Sunlighten is the right shape. The lower air temperatures (50–65°C) are easier to tolerate for some users.
+If you want IR cabin sauna with programmable per-wavelength control — Sunlighten is the right shape. The lower air temperatures (50–65°C) are easier to tolerate for some users.
 
 ## When is Finnleo Hallmark the right pick?
 

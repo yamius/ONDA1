@@ -49,7 +49,7 @@ LED dose and hybrid trade-offs. Cooling element shares the form factor with LEDs
 
 ## Who should buy Shark CryoGlow?
 
-Choose Shark CryoGlow if you want cooling + LED combined into one device for a soothing, de-puffing routine. For pure LED clinical evidence, Omnilux Contour Face. For pure LED consumer market leader, CurrentBody Series 2. For budget multi-modality handheld, Solawave Wand.
+Choose Shark CryoGlow if you want cooling + LED combined into one device for a soothing, de-puffing routine. For a pure-LED silicone mask, Omnilux Contour Face. For pure LED consumer market leader, CurrentBody Series 2. For budget multi-modality handheld, Solawave Wand.
 
 ---
 

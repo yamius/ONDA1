@@ -31,10 +31,11 @@ import { join, relative, basename, dirname, resolve } from 'node:path'
 import { FACTS } from '../src/data/science/facts'
 import { articles } from '../src/data/articles'
 import { glossaryTerms } from '../src/data/glossary'
+import { SCIENCE_KIND_IDS } from '../src/data/science/kinds'
 
 const ROOT = join(dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1')), '..')
 const DIR = join(ROOT, 'content', 'science')
-const KINDS = ['concepts', 'measurements', 'mechanisms', 'evidence']
+const KINDS: readonly string[] = SCIENCE_KIND_IDS // the one list: src/data/science/kinds.ts
 const SCIENTIFIC_TYPES = ['systematic-review', 'meta-analysis', 'randomized-trial', 'observational', 'review', 'guideline', 'other']
 /** official = manufacturer/regulator documents; product-documentation = ONDA's own docs (what the app does). Both: URL, no DOI, device/regulatory claims only. */
 const URL_TYPES = ['official', 'product-documentation']

@@ -1,5 +1,5 @@
 ---
-sourceHash: 26f74cb4722e
+sourceHash: 079098055e7f
 title: "Krankheit und HRV: was ein Wearable sehen kann und was nicht"
 metaTitle: "Krankheit und HRV: Frühsignal, keine Diagnose"
 metaDescription: "Wie Entzündung und Infektion HRV und Ruhepuls verschieben, was Wearable-Warnungen bedeuten und warum sie dir nicht sagen können, dass du krank bist."
@@ -101,6 +101,8 @@ Manche Menschen haben noch Monate nach einer Infektion Symptome; das nennt man L
 ## Was kannst du bei einem deutlichen Abfall tun?
 
 Wenn deine HRV mehrere Tage hintereinander deutlich unter deinem üblichen Bereich liegt und dein Ruhepuls höher ist, betrachte das als unspezifisches Frühsignal, dass der Körper belastet ist. Es ist ein Grund, dich auszuruhen und darauf zu achten, wie du dich fühlst. Wenn du Symptome hast, geh zu einer Ärztin oder einem Arzt, statt dich auf deine Uhr zu verlassen. Eine einzelne niedrige Nacht ist meist kein Grund zur Sorge ([HRV richtig deuten](/science/concepts/interpreting-hrv)).
+
+Stress, Alkohol und Reisen können denselben Abfall auslösen; [Warum ist meine HRV niedrig?](/science/questions/why-is-my-hrv-low) stellt sie nebeneinander.
 
 ## In ONDA
 

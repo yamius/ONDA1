@@ -49,7 +49,7 @@ That same regulatory and clinical rigour limits its use. It is prescription-only
 
 ## Who should buy gammaCore Sapphire CV?
 
-Choose gammaCore if you have a clinical migraine or cluster-headache diagnosis and a prescriber who will write for it. For general HRV training, stress reduction or experimental tVNS, Nurosym (auricular, evidence-backed) or Truvaga 350 (cervical, OTC) are the right tools — not this one.
+Choose gammaCore if you have a clinical migraine or cluster-headache diagnosis and a prescriber who will write for it. For general HRV training, stress reduction or experimental tVNS, Nurosym (auricular, the largest consumer trial record) or Truvaga 350 (cervical, OTC) are the right tools — not this one.
 
 ---
 

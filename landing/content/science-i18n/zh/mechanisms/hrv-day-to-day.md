@@ -1,5 +1,5 @@
 ---
-sourceHash: 9c002efa1ed5
+sourceHash: 477ca0c9b233
 title: "HRV 为什么每天都在变化"
 metaTitle: "HRV 为什么每天都在变：原因与证据"
 metaDescription: "心率变异性为什么每天都不一样：正常噪声、睡眠、饮酒、训练、疾病、压力和月经周期——背后的机制与研究证据。"
@@ -133,6 +133,8 @@ evidenceMap:
 - **指标不同，答案不同。** 在睡眠剥夺的荟萃分析中，RMSSD 显著下降，而 SDNN 没有 [S6]。报告 SDNN 的手表，可能不如使用 RMSSD 的研究那样清楚地反映某个原因的影响。
 
 **这对解读你自己的数据意味着什么。** 关注相对于你自己[个人基线](/science/concepts/hrv-baseline)的趋势，而不是单个数值，并记录当时的情境——睡眠、饮酒、疾病、训练负荷、月经周期阶段——这样才能把变化与发生的事情对应起来。持续数天并伴有症状的偏移，值得仔细看看；熬夜之后的一次下降，通常则不必。单次读数能说明什么、不能说明什么，详见[解读 HRV](/science/concepts/interpreting-hrv)。
+
+哪些因素会让读数偏低、证据有多强，可参阅[为什么我的 HRV 偏低？](/science/questions/why-is-my-hrv-low)。
 
 ## 在 ONDA 中
 

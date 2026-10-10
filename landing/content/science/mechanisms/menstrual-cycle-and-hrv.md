@@ -242,6 +242,8 @@ In the same review, HRV tended to decline after menopause with increasing age [S
 - **Company data carry a caveat.** The largest dataset was co-written by employees of the device maker [S3].
 - **One study inside a review is not two confirmations.** The ovulation study is probably part of the review's evidence base [S1] [S4].
 
+For other causes of a low reading, see [why is my HRV low?](/science/questions/why-is-my-hrv-low).
+
 ## In ONDA
 
 ONDA builds a personal baseline from nightly values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S8]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV trend is an SDNN trend. ONDA does not track the menstrual cycle, so the baseline does not adjust for cycle day. A lower HRV in the days before a period may be an ordinary cycle fluctuation rather than a warning. If you want to see your own pattern, note the cycle day yourself and compare the same days across several cycles, rather than comparing yourself with phase averages from other women ([your HRV baseline](/science/concepts/hrv-baseline); [how HRV is measured](/science/measurements/heart-rate-variability)). ONDA does not determine fertility, ovulation or contraception from HRV, and it does not diagnose any condition.

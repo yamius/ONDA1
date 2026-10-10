@@ -2,6 +2,9 @@
  * The four v1 tools of the ONDA ChatGPT app. Each tool is pure: arguments in,
  * { structuredContent, text } out. Nothing about the user is stored or logged.
  *
+ * Links: run(args, links) gets a per-request linksFor(client) (see links.js), so every
+ * App Store and site link is tagged with the calling host (chatgpt / claude / ai_app).
+ *
  * Facts come only from generated site data (see landing/scripts/export-chatgpt-data.ts):
  * HRV distribution (Natarajan 2020, Fitbit users), breathing patterns, adaptive practices and reviews. Bridge wording
  * follows landing/docs/onda-facts-source-of-truth.md — no numeric pacer claim,
@@ -10,17 +13,21 @@
 import { readFileSync } from 'node:fs';
 import { interpretHrvBoth, HRV_AGE_POINTS, HRV_VERDICT_TEXT, HRV_POSITION_TEXT, HRV_COMPARISON_DISCLAIMER, HRV_DEVICE_NOTE, HRV_NO_COMPARISON_NOTE } from './generated/hrv-norms.js';
 import { BREATHING_PATTERNS } from './generated/breathing.js';
-import { appStoreUrl, siteUrl } from './links.js';
+import { linksFor, UNKNOWN_CLIENT } from './links.js';
 
 // Literal paths so Vercel's file tracing bundles the data with the function.
 const REVIEWS = JSON.parse(readFileSync(new URL('../data/reviews.json', import.meta.url), 'utf8'));
 const PRACTICES = JSON.parse(readFileSync(new URL('../data/practices.json', import.meta.url), 'utf8'));
 
+/** Owner-approved emergency list (2026-10-10) — identical to the /science/questions/why-is-my-hrv-low hub. */
+export const RED_FLAG_LIST =
+  'chest pain or pressure; fainting or near-fainting; severe shortness of breath; fast, strong or irregular heartbeat that does not settle at rest (including with dizziness); sudden confusion, weakness on one side, trouble speaking';
+
 export const URGENT_MESSAGE =
-  'Chest pain, fainting or severe shortness of breath need medical attention now — call your local emergency number or see a doctor urgently. An HRV number cannot tell you whether these symptoms are serious.';
+  'These symptoms need medical attention now: ' + RED_FLAG_LIST + '. Call your local emergency number or see a doctor urgently. An HRV number cannot tell you whether these symptoms are serious.';
 
 export const SAFETY_NOTE =
-  'Not medical advice. If you have chest pain, fainting, severe shortness of breath or a racing heart that does not settle, contact emergency services or a doctor now.';
+  'Not medical advice. If you have any of these — ' + RED_FLAG_LIST + ' — contact emergency services or a doctor now.';
 
 /** Validation error whose message is safe to show (never contains the input values). */
 export class InputError extends Error {}
@@ -65,8 +72,7 @@ export const checkHrv = {
     "It is a comparison, not a medical norm: it says whether the value is lower than most, within the middle half, or higher than most users of the nearest age group (ages 20–61 in the data: 18–19 is compared with 20–21 and 62–64 with 60–61; above 64 no comparison is made and the 60–61 distribution is shown for information only). The distribution comes from Fitbit wrist data, so for other devices the comparison is approximate. " +
     "Oura, Whoop, Garmin, Fitbit and Polar report RMSSD and are compared; Apple Watch reports SDNN, a different measure that is not compared. Sex is optional; without it the value is shown against both women and men. " +
     "Use for: is my HRV normal for my age; good HRV for my age; Oura or Whoop HRV score; heart rate variability by age; Apple Watch HRV meaning. " +
-    "The optional red_flag_symptoms flag covers only acute symptoms: chest pain or pressure; fainting or nearly fainting; severe shortness of breath; " +
-    "a racing, pounding or irregular heartbeat that does not settle at rest; new confusion, weakness on one side or trouble speaking. " +
+    "The optional red_flag_symptoms flag covers only acute symptoms: " + RED_FLAG_LIST + ". " +
     "When the flag is true the tool returns urgent-care guidance only and no interpretation. It does not apply to ordinary questions about sleep, stress, tiredness, training or a low value on its own.",
   inputSchema: {
     type: 'object',
@@ -86,7 +92,7 @@ export const checkHrv = {
       red_flag_symptoms: {
         type: 'boolean',
         description:
-          'Whether the person reported one of the acute symptoms listed in the tool description (chest pain or pressure, fainting, severe shortness of breath, a racing or irregular heartbeat that does not settle, new confusion, one-sided weakness or trouble speaking). When true, the tool returns urgent-care guidance only. Defaults to false.',
+          'Whether the person reported one of the acute symptoms listed in the tool description (' + RED_FLAG_LIST + '). When true, the tool returns urgent-care guidance only. Defaults to false.',
       },
     },
     required: ['age', 'hrv_ms', 'device'],
@@ -96,7 +102,7 @@ export const checkHrv = {
   annotations: annotations('Compare HRV with Fitbit users your age'),
   invoking: 'Comparing HRV…',
   invoked: 'HRV compared',
-  run({ age, hrv_ms, device, sex, red_flag_symptoms }) {
+  run({ age, hrv_ms, device, sex, red_flag_symptoms }, links = linksFor(UNKNOWN_CLIENT)) {
     if (red_flag_symptoms === true || red_flag_symptoms === 'true') {
       return {
         structuredContent: { urgent: true, message: URGENT_MESSAGE },
@@ -123,9 +129,9 @@ export const checkHrv = {
       sex: sex || 'prefer_not_to_say',
       bridge: {
         text: 'ONDA builds your personal norm from your Apple Watch history and checks your HRV against it every day.',
-        url: appStoreUrl('chatgpt_hrv'),
+        url: links.appStore('hrv'),
       },
-      learnMore: siteUrl('/tools/hrv', 'chatgpt_hrv'),
+      learnMore: links.site('/tools/hrv', 'hrv'),
       safety: SAFETY_NOTE,
     };
     if (metric === 'sdnn') {
@@ -210,7 +216,7 @@ export const breatheNow = {
   annotations: annotations('Breathe now'),
   invoking: 'Preparing a breathing guide…',
   invoked: 'Breathing guide ready',
-  run({ technique = 'coherent', minutes = 3 } = {}) {
+  run({ technique = 'coherent', minutes = 3 } = {}, links = linksFor(UNKNOWN_CLIENT)) {
     const id = TECHNIQUES[String(technique)] ? String(technique) : 'coherent';
     const pattern = BREATHING_PATTERNS.find((p) => p.id === id);
     const m = Math.min(10, Math.max(1, Math.round(Number(minutes) || 3)));
@@ -228,9 +234,9 @@ export const breatheNow = {
           : 'If you feel dizzy, stop and breathe normally.',
       bridge: {
         text: 'In ONDA you breathe with a guided practice and see your pulse before and after — with just the iPhone camera, or with Apple Watch.',
-        url: appStoreUrl('chatgpt_breathe'),
+        url: links.appStore('breathe'),
       },
-      learnMore: siteUrl(`/tools/breathing?p=${id}`, 'chatgpt_breathe'),
+      learnMore: links.site(`/tools/breathing?p=${id}`, 'breathe'),
     };
     return { structuredContent: out, text: `${t.name} for ${m} min. ${t.how}` };
   },
@@ -269,7 +275,7 @@ export const findPractice = {
   annotations: annotations('Find an ONDA practice'),
   invoking: 'Finding a practice…',
   invoked: 'Practices found',
-  run({ goal, minutes, experience = 'beginner', position } = {}) {
+  run({ goal, minutes, experience = 'beginner', position } = {}, links = linksFor(UNKNOWN_CLIENT)) {
     if (!['calm', 'sleep', 'focus', 'energy'].includes(goal)) {
       throw new InputError('Invalid input: goal is required and must be one of calm, sleep, focus or energy.');
     }
@@ -298,9 +304,9 @@ export const findPractice = {
         why: p.line,
         firstSteps: p.firstSteps,
         position: p.setting,
-        playUrl: siteUrl(`/emoton?practice=${p.id}`, 'chatgpt_practice'),
+        playUrl: links.site(`/emoton?practice=${p.id}`, 'practice'),
       }));
-    const tryUrl = siteUrl('/emoton', 'chatgpt_practice');
+    const tryUrl = links.site('/emoton', 'practice');
     const out = {
       goal,
       practices: ranked,
@@ -309,7 +315,7 @@ export const findPractice = {
       bridge: {
         button: 'Full version with pulse — App Store',
         text: 'In the app the same practice shows your pulse before and after, and ONDA picks the next one for how you feel.',
-        url: appStoreUrl('chatgpt_practice'),
+        url: links.appStore('practice'),
       },
     };
     const names = ranked.map((r) => `${r.name} (${r.minutes} min)`).join(', ');
@@ -409,7 +415,7 @@ export const compare = {
   annotations: annotations('Compare devices or apps'),
   invoking: 'Pulling ONDA reviews…',
   invoked: 'Comparison ready',
-  run({ products = [], priority } = {}) {
+  run({ products = [], priority } = {}, links = linksFor(UNKNOWN_CLIENT)) {
     if (!Array.isArray(products) || products.length < 2 || products.length > 3 || !products.every((p) => typeof p === 'string' && p.trim())) {
       throw new InputError('Invalid input: products must be a list of 2 or 3 product names, e.g. ["Oura Ring 4", "Whoop 5.0"].');
     }
@@ -448,7 +454,7 @@ export const compare = {
       focus: focus ? r.scores.filter((s) => focus.includes(s.id)) : [],
       worksWithOnda: r.worksWithOnda,
       worksWithOndaNote: r.worksWithOndaNote,
-      reviewUrl: siteUrl(new URL(r.url).pathname, 'chatgpt_compare'),
+      reviewUrl: links.site(new URL(r.url).pathname, 'compare'),
       assessed: r.testStatus === 'hands-on' ? 'hands-on tested' : 'evidence-based review (not hands-on tested)',
     }));
 
@@ -463,7 +469,7 @@ export const compare = {
             label: duel.label,
             onda_scores: duel.onda_scores,
             axes: duel.axes,
-            url: siteUrl(new URL(duel.url).pathname, 'chatgpt_compare'),
+            url: links.site(new URL(duel.url).pathname, 'compare'),
           }
         : null,
       notFound: missing,
@@ -473,7 +479,7 @@ export const compare = {
       bridge: rows.some((r) => r.worksWithOnda !== 'not-a-device')
         ? {
             text: 'ONDA builds your personal baseline from Apple Health — Apple Watch, or another device that syncs heart data there. No device? ONDA measures your pulse with the iPhone camera.',
-            url: appStoreUrl('chatgpt_compare'),
+            url: links.appStore('compare'),
           }
         : null,
       source: 'ONDA Life editorial reviews — prices verified on the date shown.',

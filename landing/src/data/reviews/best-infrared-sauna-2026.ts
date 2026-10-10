@@ -12,7 +12,7 @@ const bestInfraredSauna2026: Comparison = {
     {
       reviewSlug: 'sunlighten-mpulse',
       award: 'Best overall (full-spectrum IR)',
-      takeaway: 'True 3-wavelength IR delivery, premium cedar build, verified low EMF, FDA Class II.',
+      takeaway: 'True 3-wavelength IR delivery, premium cedar build, verified low EMF.',
     },
     {
       reviewSlug: 'clearlight-sanctuary-2',

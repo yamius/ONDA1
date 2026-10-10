@@ -231,6 +231,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'altitude.lang.design': { display: "19 горняков-мужчин 35–55 лет, более 10 лет чередующих недели на уровне моря и на высоте около 3 800 м, которых записывали по четыре часа каждую ночь" },
     'altitude.gutknecht.design': { display: "12 человек с любительской тренированностью, выполнявших два формата повторных спринтов в обычном воздухе и при имитации недостатка кислорода" },
     'altitude.taboni.design': { display: "10 мужчин с ишемической болезнью сердца, ночевавших либо на имитированной высоте 1 900 м, либо на 250 м перед подъёмом на имитированные 3 000 м следующим утром" },
+    'travel.willoughby.sleepRecovery': { display: "примерно через два дня продолжительность сна отличалась от обычной не более чем примерно на 12 минут, а время отхода ко сну и пробуждения не вернулось к привычному и через 15 дней" },
   },
   uk: {
     'study.sramek2000.duration': { display: 'одну годину' },
@@ -445,6 +446,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'altitude.lang.design': { display: "19 чоловіків-гірників віком 35–55 років, які понад 10 років чергували тижні на рівні моря та на висоті близько 3 800 м і яких записували по чотири години щоночі" },
     'altitude.gutknecht.design': { display: "12 людей з аматорською тренованістю, які виконали два формати повторних спринтів у звичайному повітрі та за імітованої нестачі кисню" },
     'altitude.taboni.design': { display: "10 чоловіків з ішемічною хворобою серця, які спали або на імітованій висоті 1 900 м, або на 250 м, перш ніж наступного ранку їх підняли на імітовані 3 000 м" },
+    'travel.willoughby.sleepRecovery': { display: "тривалість сну поверталася в межі приблизно 12 хвилин від звичної приблизно за два дні, а час засинання й пробудження не повернувся до звичного й через 15 днів" },
   },
   es: {
     'study.sramek2000.duration': { display: 'una hora' },
@@ -653,6 +655,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'altitude.lang.design': { display: "19 mineros varones de 35 a 55 años con más de 10 años alternando semanas a nivel del mar y a unos 3800 m, registrados durante cuatro horas cada noche" },
     'altitude.gutknecht.design': { display: "12 personas con entrenamiento recreativo que hicieron dos formatos de sprints repetidos, con aire normal y con falta de oxígeno simulada" },
     'altitude.taboni.design': { display: "10 hombres con enfermedad coronaria que durmieron a una altitud simulada de 1900 m o a 250 m antes de ser llevados a 3000 m simulados a la mañana siguiente" },
+    'travel.willoughby.sleepRecovery': { display: "la duración del sueño volvió a quedar a unos 12 minutos de lo habitual tras unos dos días, pero el horario del sueño no había vuelto a su patrón habitual tras 15 días" },
   },
   de: {
     'study.sramek2000.duration': { display: 'eine Stunde' },
@@ -861,6 +864,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'altitude.lang.design': { display: "19 männlichen Bergarbeitern im Alter von 35–55 Jahren, die seit mehr als 10 Jahren wochenweise zwischen Meereshöhe und rund 3.800 m wechselten und jede Nacht vier Stunden lang aufgezeichnet wurden" },
     'altitude.gutknecht.design': { display: "12 freizeitmäßig trainierten Personen, die zwei Formate wiederholter Sprints absolvierten, in normaler Luft und bei simuliertem Sauerstoffmangel" },
     'altitude.taboni.design': { display: "10 Männern mit koronarer Herzkrankheit, die entweder auf simulierten 1.900 m oder auf 250 m schliefen, bevor sie am nächsten Morgen auf simulierte 3.000 m gebracht wurden" },
+    'travel.willoughby.sleepRecovery': { display: "die Schlafdauer lag nach etwa zwei Tagen wieder innerhalb von etwa 12 Minuten des üblichen Werts, der Schlafzeitpunkt war nach 15 Tagen aber noch nicht zu seinem üblichen Muster zurückgekehrt" },
   },
   fr: {
     'study.sramek2000.duration': { display: 'une heure' },
@@ -1069,6 +1073,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'altitude.lang.design': { display: "19 mineurs de sexe masculin âgés de 35 à 55 ans, alternant depuis plus de 10 ans des semaines au niveau de la mer et à environ 3 800 m, enregistrés pendant quatre heures chaque nuit" },
     'altitude.gutknecht.design': { display: "12 personnes entraînées en loisir qui ont effectué deux formats de sprints répétés, en air normal et en manque d’oxygène simulé" },
     'altitude.taboni.design': { display: "10 hommes atteints de maladie coronarienne qui ont dormi soit à 1 900 m simulés, soit à 250 m, avant d’être amenés à 3 000 m simulés le lendemain matin" },
+    'travel.willoughby.sleepRecovery': { display: "la durée du sommeil est revenue à environ 12 minutes près de sa valeur habituelle au bout d’environ deux jours, mais les horaires de sommeil n’avaient toujours pas retrouvé leur rythme habituel après 15 jours" },
   },
   it: {
     'study.sramek2000.duration': { display: 'un’ora' },
@@ -1277,6 +1282,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'altitude.lang.design': { display: "19 minatori maschi tra i 35 e i 55 anni con più di 10 anni di settimane alternate al livello del mare e a circa 3.800 m, registrati per quattro ore ogni notte" },
     'altitude.gutknecht.design': { display: "12 persone allenate a livello amatoriale che hanno svolto due formati di sprint ripetuti, in aria normale e in carenza di ossigeno simulata" },
     'altitude.taboni.design': { display: "10 uomini con malattia coronarica che hanno dormito a 1.900 m simulati oppure a 250 m prima di essere portati a 3.000 m simulati la mattina dopo" },
+    'travel.willoughby.sleepRecovery': { display: "la durata del sonno è tornata a circa 12 minuti dal valore abituale dopo circa due giorni, ma dopo 15 giorni gli orari del sonno non erano ancora tornati al loro andamento abituale" },
   },
   pt: {
     'study.sramek2000.duration': { display: 'uma hora' },
@@ -1485,6 +1491,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'altitude.lang.design': { display: "19 mineiros homens de 35 a 55 anos com mais de 10 anos alternando semanas no nível do mar e a cerca de 3.800 m, registrados durante quatro horas a cada noite" },
     'altitude.gutknecht.design': { display: "12 pessoas com treino recreativo que fizeram dois formatos de sprints repetidos, em ar normal e com falta de oxigênio simulada" },
     'altitude.taboni.design': { display: "10 homens com doença arterial coronariana que dormiram a 1.900 m simulados ou a 250 m antes de serem levados a 3.000 m simulados na manhã seguinte" },
+    'travel.willoughby.sleepRecovery': { display: "a duração do sono voltou a ficar a cerca de 12 minutos do habitual depois de uns dois dias, mas o horário do sono não tinha voltado ao padrão habitual depois de 15 dias" },
   },
   nl: {
     'study.sramek2000.duration': { display: 'een uur' },
@@ -1693,6 +1700,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'altitude.lang.design': { display: "19 mannelijke mijnwerkers van 35–55 jaar met meer dan 10 jaar afwisselende weken op zeeniveau en op ongeveer 3800 m, die elke nacht vier uur werden geregistreerd" },
     'altitude.gutknecht.design': { display: "12 recreatief getrainde mensen die twee vormen van herhaalde sprints deden, in normale lucht en bij gesimuleerd zuurstoftekort" },
     'altitude.taboni.design': { display: "10 mannen met coronaire hartziekte die op gesimuleerd 1900 m of op 250 m sliepen voordat ze de volgende ochtend naar gesimuleerd 3000 m werden gebracht" },
+    'travel.willoughby.sleepRecovery': { display: "keerde de slaapduur na ongeveer twee dagen terug tot binnen ongeveer 12 minuten van normaal, maar was het slaaptijdstip na 15 dagen nog niet terug bij het gebruikelijke patroon" },
   },
   pl: {
     'study.sramek2000.duration': { display: 'godzinę' },
@@ -1901,6 +1909,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'altitude.lang.design': { display: "19 górników w wieku 35–55 lat, od ponad 10 lat pracujących na zmianę tydzień na poziomie morza i tydzień na wysokości około 3800 m, nagrywanych przez cztery godziny każdej nocy" },
     'altitude.gutknecht.design': { display: "12 osób trenujących rekreacyjnie, które wykonały dwa formaty powtarzanych sprintów w zwykłym powietrzu i przy symulowanym niedoborze tlenu" },
     'altitude.taboni.design': { display: "10 mężczyzn z chorobą wieńcową, którzy spali na symulowanej wysokości 1900 m albo na 250 m, zanim następnego ranka przeniesiono ich na symulowane 3000 m" },
+    'travel.willoughby.sleepRecovery': { display: "długość snu po około dwóch dniach wróciła do poziomu różniącego się od zwykłego o około 12 minut, ale pora snu po 15 dniach wciąż nie wróciła do zwykłego rytmu" },
   },
   ja: {
     'study.sramek2000.duration': { display: '1時間' },
@@ -2109,6 +2118,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'altitude.lang.design': { display: "海抜ゼロ付近と約3,800mで週を交互に過ごす勤務を10年以上続けてきた35〜55歳の男性鉱山労働者19人（毎晩4時間記録）" },
     'altitude.gutknecht.design': { display: "通常の空気と模擬低酸素の両方で2種類の反復スプリントを行った、レクリエーションレベルで鍛えている12人" },
     'altitude.taboni.design': { display: "模擬1,900mまたは250mで眠り、翌朝に模擬3,000mへ移された冠動脈疾患のある男性10人" },
+    'travel.willoughby.sleepRecovery': { display: "睡眠時間は約2日後に普段との差が約12分以内に戻りましたが、睡眠のタイミングは15日後もまだ普段のパターンに戻っていませんでした" },
   },
   zh: {
     'study.sramek2000.duration': { display: '一小时' },
@@ -2317,5 +2327,6 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'altitude.lang.design': { display: "19 名 35–55 岁的男性矿工，他们 10 多年来每隔一周轮换于海平面和约 3,800 米之间，每晚记录四小时" },
     'altitude.gutknecht.design': { display: "12 名有业余训练基础的人，他们在正常空气和模拟缺氧条件下完成了两种形式的重复冲刺" },
     'altitude.taboni.design': { display: "10 名冠心病男性，他们先在模拟 1,900 米或 250 米处睡一晚，第二天早上再被带到模拟 3,000 米" },
+    'travel.willoughby.sleepRecovery': { display: "睡眠时长在大约两天后恢复到与平时相差约 12 分钟以内，但睡眠时间点在 15 天后仍未恢复到平时的模式" },
   },
 }

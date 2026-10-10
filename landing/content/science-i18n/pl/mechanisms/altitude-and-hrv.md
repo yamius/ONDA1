@@ -1,5 +1,5 @@
 ---
-sourceHash: 5c84bc6057f9
+sourceHash: 02e01673e8d2
 title: "Wysokość a HRV: co się zmienia i czego nie da się przewidzieć"
 metaTitle: "Wysokość a HRV: co pokazują badania"
 metaDescription: "Jak duża wysokość zmienia zmienność rytmu serca, czy HRV może przewidzieć chorobę wysokościową i dlaczego o zejściu decydują objawy, a nie zegarek."
@@ -207,6 +207,8 @@ To najważniejsza część tej strony. HRV i zegarki nie zastępują sprawdzania
 - **Większość dowodów pochodzi od młodych, sprawnych mężczyzn.** Danych o kobietach, osobach starszych i mniej sprawnych jest niewiele [S1].
 - **Stosunek LF/HF jest sporny.** Nawet autorzy, którzy opisują jego wzrost, dodają, że nie jest on bezpośrednią miarą napięcia układu współczulnego [S1].
 - **Żadnych wniosków medycznych.** Żadne z tych badań nie diagnozuje choroby ani nie podaje planu wejścia.
+
+Z dala od gór częste przyczyny niskiego odczytu opisuje strona [dlaczego moje HRV jest niskie?](/science/questions/why-is-my-hrv-low).
 
 ## W ONDA
 

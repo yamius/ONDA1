@@ -91,7 +91,7 @@ const CATEGORY_INTRO: Record<ReviewCategory, { h1: string; intro: string }> = {
   'red-light-mask': {
     h1: 'Red Light Face Mask Reviews (2026)',
     intro:
-      'Red light face masks split sharply across two tiers by 2026: clinical references whose makers say they are FDA-cleared (Omnilux Contour, Dr. Dennis Gross SpectraLite, LightStim) and consumer-brand premium devices (CurrentBody Series 2, HigherDOSE, TheraFace, Lumara Viso). Form factor is the second axis — flexible silicone vs hard shell vs handheld wand. ONDA scored the ten most credible masks of 2026 against the same six axes — irradiance, wavelength coverage, LED count and facial coverage, clinical evidence, comfort and value.',
+      'Red light face masks in 2026 range from long-running light-therapy lines (Omnilux Contour, LightStim) and a dermatologist\'s brand (Dr. Dennis Gross SpectraLite) to consumer-brand premium devices (CurrentBody Series 2, HigherDOSE, TheraFace, Lumara Viso). Form factor is the second axis — flexible silicone vs hard shell vs handheld wand. ONDA scored the ten most credible masks of 2026 against the same six axes — irradiance, wavelength coverage, LED count and facial coverage, clinical evidence, comfort and value.',
   },
   'breathing-aid': {
     h1: 'Mouth Tape & Nasal Breathing Aid Reviews (2026)',

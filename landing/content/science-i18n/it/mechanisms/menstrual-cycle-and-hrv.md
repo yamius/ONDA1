@@ -1,5 +1,5 @@
 ---
-sourceHash: f1306d188d51
+sourceHash: 1c231ffc17a5
 title: "Ciclo mestruale e HRV: perché la tua baseline si sposta"
 metaTitle: "Ciclo mestruale e HRV: che cosa cambia e perché"
 metaDescription: "Come varia la variabilità della frequenza cardiaca nel corso del ciclo mestruale, perché ogni donna ha il proprio andamento e che cosa cambiano la contraccezione ormonale e la menopausa."
@@ -103,6 +103,8 @@ Nella stessa revisione, l'HRV tendeva a diminuire dopo la menopausa con l'avanza
 - **I dati di popolazione non sono una previsione per te.** Le medie provengono da molte donne; il tuo ciclo può mostrare uno spostamento più grande, più piccolo o nessuno [S6].
 - **I dati aziendali hanno un limite.** Il set di dati più grande è stato scritto anche da dipendenti del produttore del dispositivo [S3].
 - **Uno studio dentro una revisione non vale come due conferme.** Lo studio sull'ovulazione fa probabilmente parte della base di prove della revisione [S1] [S4].
+
+Per le altre cause di una lettura bassa, vedi [perché la mia HRV è bassa?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

@@ -35,7 +35,7 @@ const ouraRing5VsRing4: HeadToHeadInput = {
     },
     {
       q: 'Is the Oura Ring 4 still worth buying in 2026?',
-      a: 'Yes — especially discounted. It shares the new software with the Ring 5, keeps best-in-class overnight HRV and sleep, and costs $50 less. The Ring 5’s edge is sensors and fit, not capability.',
+      a: 'Yes — especially discounted. It shares the new software with the Ring 5, keeps the overnight HRV (overnight recordings from 13 people, Dial 2025) and sleep tracking, and costs $50 less. The Ring 5’s edge is sensors and fit, not capability.',
     },
   ],
   content: `## The short version

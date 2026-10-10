@@ -1,5 +1,5 @@
 ---
-sourceHash: d1da038aff34
+sourceHash: 159ee240a2bb
 title: "Kofeina a HRV: co kawa robi, a czego nie robi"
 metaTitle: "Kofeina a HRV: czy kawa obniża Twoje HRV?"
 metaDescription: "Co badania mówią o kawie i zmienności rytmu serca w spoczynku i po wysiłku, czym różnią się napoje energetyczne i jak późna kofeina wpływa na HRV."
@@ -102,6 +102,8 @@ Nie ma tu więc sprzeczności. Poranna kawa raczej nie zmieni Twojego spoczynkow
 - **Dwa przeglądy to nie podwójne dowody.** Metaanalizy dotyczące okresu po wysiłku mają wspólne badania [S1] [S2].
 - **Badania dzienne to nie dane nocne.** Późna kofeina może wpływać na sen, a przez niego na nocne HRV [S7].
 - **Odczyt z urządzenia noszonego niczego nie diagnozuje.** Kołatanie serca, ból w klatce piersiowej lub omdlenie wymagają pomocy lekarskiej, niezależnie od tego, co pokazuje urządzenie noszone.
+
+Kofeina to tylko jedna z możliwych przyczyn niskiego odczytu; pozostałe zebrano na stronie [dlaczego moje HRV jest niskie?](/science/questions/why-is-my-hrv-low).
 
 ## W ONDA
 

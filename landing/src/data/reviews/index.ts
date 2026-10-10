@@ -82,10 +82,13 @@ const REVIEW_BY_SLUG_ALL = new Map(ALL_REVIEWS.map((r) => [r.slug, r]))
  *  stable for genuine ties). The array order in the comparison file is NOT
  *  the ranking. Picks without a review keep their place at the end. */
 function rankComparison(c: Comparison): Comparison {
-  const withReview = c.picks.filter((p) => REVIEW_BY_SLUG_ALL.has(p.reviewSlug))
-  const without = c.picks.filter((p) => !REVIEW_BY_SLUG_ALL.has(p.reviewSlug))
+  const competing = c.picks.filter((p) => !p.comparisonOnly)
+  const withReview = competing.filter((p) => REVIEW_BY_SLUG_ALL.has(p.reviewSlug))
+  const without = competing.filter((p) => !REVIEW_BY_SLUG_ALL.has(p.reviewSlug))
   const ranked = sortByRank(withReview.map((p) => ({ ...REVIEW_BY_SLUG_ALL.get(p.reviewSlug)!, pick: p }))).map((x) => x.pick)
-  return { ...c, picks: [...ranked, ...without] }
+  // Comparison-only picks (e.g. a prescription implant) sit after the ranked
+  // list and never take part in ranking or awards.
+  return { ...c, picks: [...ranked, ...without, ...c.picks.filter((p) => p.comparisonOnly)] }
 }
 
 /** Live product reviews — date-gated entries are excluded until their
@@ -144,6 +147,7 @@ export function getComparisonBySlug(slug: string): Comparison | undefined {
  *  reviewSlug has no matching review are dropped. */
 export function getReviewsForComparison(comparison: Comparison): ToolReview[] {
   return comparison.picks
+    .filter((p) => !p.comparisonOnly)
     .map((p) => getReviewBySlug(p.reviewSlug))
     .filter((r): r is ToolReview => r !== undefined)
 }

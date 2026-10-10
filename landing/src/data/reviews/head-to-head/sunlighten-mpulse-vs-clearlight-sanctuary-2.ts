@@ -10,9 +10,9 @@ const sunlightenVsClearlight: HeadToHeadInput = {
   intro:
     'Sunlighten mPulse and Clearlight Sanctuary 2 are the two premium full-spectrum IR cabin saunas serious buyers shortlist. Both ship credibly broad-spectrum IR delivery, premium cabin construction, low-EMF design and long warranties. Sunlighten is the wavelength-control reference; Clearlight is the Jacuzzi-backed lifetime-warranty alternative.',
   verdict:
-    'Sunlighten mPulse wins on wavelength rigour and FDA Class II registration. Clearlight Sanctuary 2 wins on its Jacuzzi-backed lifetime warranty, but now costs more (~$7,299 vs ~$6,000).',
+    'Sunlighten mPulse wins on wavelength rigour and published EMF figures. Clearlight Sanctuary 2 wins on its Jacuzzi-backed lifetime warranty, but now costs more (~$7,299 vs ~$6,000).',
   bestForA:
-    'Choose Sunlighten mPulse if true 3-wavelength control (programmable near / mid / far separately) and FDA Class II registration are the deciding criteria.',
+    'Choose Sunlighten mPulse if true 3-wavelength control (programmable near / mid / far separately) is the deciding criterion.',
   bestForB:
     'Choose Clearlight Sanctuary 2 if a Jacuzzi-backed lifetime warranty for comparable full-spectrum IR is worth the higher price.',
   axes: [
@@ -20,14 +20,13 @@ const sunlightenVsClearlight: HeadToHeadInput = {
     { name: 'EMF discipline', winner: 'a', note: 'Sunlighten: published <1 mG at seated position. Clearlight: marketed as low EMF/ELF, but we found no published third-party figures.' },
     { name: 'Cabin build', winner: 'tie', note: 'Both premium — Sunlighten cedar, Clearlight basswood or mahogany. Multi-decade brand pedigree on both.' },
     { name: 'Warranty', winner: 'b', note: 'Clearlight: lifetime heater warranty (Jacuzzi backing). Sunlighten: 7-year on most components. Clearlight edges on coverage period.' },
-    { name: 'FDA registration', winner: 'a', note: 'Sunlighten: FDA Class II registered. Clearlight: we found no FDA Class II registration claim for the Sanctuary 2.' },
-    { name: 'Brand and research footprint', winner: 'a', note: 'Sunlighten has the deepest published-research footprint and longest brand presence in the consumer IR sauna category.' },
+    { name: 'Model-specific research', winner: 'tie', note: 'Neither has an outcome trial of the reviewed model. Sunlighten: one 20-person 2010 before-and-after pilot on an older model (Sunlight Armana 3). Clearlight: one 12-person, single-session 2026 core-temperature study on the Sanctuary 2, with the sauna supplied by Clearlight.' },
     { name: 'Price', winner: 'a', note: 'Clearlight Sanctuary 2: $7,299 basswood / $7,699 mahogany (official store, 2026-10-01). Sunlighten mPulse: ~$6,000 (1-person from ~$5,000). Sunlighten is now cheaper at comparable size.' },
   ],
   faq: [
     {
       q: 'Sunlighten or Clearlight — which is better?',
-      a: 'Sunlighten mPulse wins on wavelength rigour (separate near/mid/far emitters) and FDA Class II. Clearlight Sanctuary 2 wins on its Jacuzzi-backed lifetime warranty, at a higher price. Comparable on cabin build; Sunlighten publishes more EMF data.',
+      a: 'Sunlighten mPulse wins on wavelength rigour (separate near/mid/far emitters). Clearlight Sanctuary 2 wins on its Jacuzzi-backed lifetime warranty, at a higher price. Comparable on cabin build; Sunlighten publishes more EMF data.',
     },
     {
       q: 'Does the 3-wavelength control matter?',
@@ -44,11 +43,11 @@ const sunlightenVsClearlight: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Two premium full-spectrum IR cabin saunas. Sunlighten wins on wavelength rigour, FDA registration and now price; Clearlight wins on its Jacuzzi-backed lifetime warranty.
+Two premium full-spectrum IR cabin saunas. Sunlighten wins on wavelength rigour, published EMF figures and now price; Clearlight wins on its Jacuzzi-backed lifetime warranty.
 
 ## When is Sunlighten mPulse the right pick?
 
-If true 3-wavelength control (programmable near / mid / far separately) is the deciding feature, or FDA Class II registration matters — Sunlighten is the right shape. The deepest published-research footprint is the bonus.
+If true 3-wavelength control (programmable near / mid / far separately) is the deciding feature — Sunlighten is the right shape. Its published EMF figures are the bonus.
 
 ## When is Clearlight Sanctuary 2 the right pick?
 

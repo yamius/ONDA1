@@ -349,6 +349,8 @@ Everyday life is harder. In a study of {{fact:stress.uendes.design}}, machine-le
 - **No medical conclusions.** None of these studies diagnoses a condition, and none shows that a stress reaction predicts heart disease for an individual.
 - **Calmer is not the same as higher HRV.** Breathing before stress eased heart rate and anxiety without changing HRV [S7].
 
+For the other everyday causes of a low reading, see [why is my HRV low?](/science/questions/why-is-my-hrv-low).
+
 ## In ONDA
 
 ONDA is built around practice rather than tracking: it offers guided breathing practices with spoken and visual guidance, and {{fact:onda.practice.livePulse}}. With an Apple Watch, or a device that syncs heart data to Apple Health, it compares your HRV, resting heart rate and breathing rate with your own baseline over {{fact:baseline.window}}. ONDA does not measure stress, shows no stress score and has no study of its own effectiveness; the studies on this page did not test ONDA. The closest evidence here — breathing before a laboratory stress test — eased heart rate and anxiety but did not change HRV [S7]. ONDA does not diagnose or treat any condition. See [what ONDA measures](/measurements).

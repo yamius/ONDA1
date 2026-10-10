@@ -1,5 +1,5 @@
 ---
-sourceHash: 9c002efa1ed5
+sourceHash: 477ca0c9b233
 title: "Dlaczego HRV zmienia się z dnia na dzień"
 metaTitle: "Dlaczego HRV zmienia się z dnia na dzień: przyczyny"
 metaDescription: "Dlaczego HRV zmienia się z dnia na dzień: naturalny szum, sen, alkohol, trening, choroba, stres i cykl — mechanizmy i dane naukowe."
@@ -139,6 +139,8 @@ Porównania z dnia na dzień mają sens tylko wtedy, gdy zapisy są porównywaln
 - **Różne miary, różne odpowiedzi.** W metaanalizie dotyczącej pozbawienia snu RMSSD spadło istotnie, a SDNN nie [S6]. Zegarek podający SDNN może pokazywać daną przyczynę mniej wyraźnie niż badanie, w którym użyto RMSSD.
 
 **Co z tego wynika dla czytania własnych danych.** Obserwuj trend na tle własnej [linii bazowej](/science/concepts/hrv-baseline), a nie pojedynczą wartość, i zapisuj kontekst — sen, alkohol, chorobę, obciążenie treningowe, fazę cyklu — tak by zmianę dało się zestawić z tym, co się wydarzyło. Zmiana, która trwa kilka dni i której towarzyszą objawy, to powód, by przyjrzeć się sprawie bliżej; pojedynczy spadek po późnej nocy zwykle nim nie jest. Co odczyt może, a czego nie może powiedzieć, wyjaśnia strona o [interpretowaniu HRV](/science/concepts/interpreting-hrv).
+
+Mapę tego, co może obniżyć odczyt, i siły dowodów przedstawia strona [dlaczego moje HRV jest niskie?](/science/questions/why-is-my-hrv-low).
 
 ## W ONDA
 

@@ -305,6 +305,8 @@ This page gives no training-load advice. Planning sessions is a matter for you a
 - **The best decision rule is unknown.** The trials used different thresholds and protocols [S2], and the long-term benefit for recreational exercisers has not been shown.
 - **Most data are aerobic.** Strength training is covered too thinly to apply the same time course [S1].
 
+If training does not explain a low reading, [why is my HRV low?](/science/questions/why-is-my-hrv-low) lists other common causes.
+
 ## In ONDA
 
 ONDA builds a personal baseline from nightly values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S5]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV trend is an SDNN trend. ONDA shows how your nights compare with your own range; it does not plan or adjust training, does not tell you when to train hard and does not diagnose any condition.

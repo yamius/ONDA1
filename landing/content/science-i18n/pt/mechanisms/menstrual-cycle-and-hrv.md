@@ -1,5 +1,5 @@
 ---
-sourceHash: f1306d188d51
+sourceHash: 1c231ffc17a5
 title: "Ciclo menstrual e HRV: por que a sua linha de base se move"
 metaTitle: "Ciclo menstrual e HRV: o que muda e por quê"
 metaDescription: "Como a variabilidade da frequência cardíaca muda ao longo do ciclo menstrual, por que cada mulher tem o seu próprio padrão e o que a contracepção hormonal e a menopausa mudam."
@@ -103,6 +103,8 @@ Na mesma revisão, a HRV tendia a diminuir depois da menopausa com o avanço da 
 - **Dados populacionais não são uma previsão para você.** As médias vêm de muitas mulheres; o seu próprio ciclo pode mostrar uma mudança maior, menor ou nenhuma [S6].
 - **Dados de empresas têm uma ressalva.** O maior conjunto de dados foi escrito em parte por funcionários da fabricante do dispositivo [S3].
 - **Um estudo dentro de uma revisão não são duas confirmações.** O estudo sobre a ovulação provavelmente faz parte da base de evidências da revisão [S1] [S4].
+
+Para outras causas de uma leitura baixa, veja [por que minha HRV está baixa?](/science/questions/why-is-my-hrv-low).
 
 ## No ONDA
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: 58de478c79ed
+sourceHash: f592ea962f6b
 title: "HRV e frequência cardíaca durante o sono: por que a noite é a melhor janela"
 metaTitle: "HRV e frequência cardíaca durante o sono"
 metaDescription: "O que acontece com a frequência cardíaca e a HRV ao longo da noite e dos estágios do sono, por que as medições noturnas são as mais estáveis e o que os wearables podem ou não dizer."
@@ -132,6 +132,8 @@ Sono curto ou interrompido, álcool, um dia de treino pesado, uma infecção, es
 - **Nenhuma noite isolada é um veredito.** Estágios, despertares e horários mexem no valor de uma noite para outra.
 - **Os dispositivos não são intercambiáveis.** Janelas, métricas e processamento são diferentes [S13, S14, S15], e os métodos usados na pesquisa também variam [S4, S5].
 - **Um wearable não é um exame do sono.** Ele não consegue diagnosticar apneia do sono nem insônia [S12].
+
+Dormir pouco é só uma das causas de uma leitura baixa; veja [por que minha HRV está baixa?](/science/questions/why-is-my-hrv-low).
 
 ## No ONDA
 

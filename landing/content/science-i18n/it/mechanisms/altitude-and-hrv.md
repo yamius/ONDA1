@@ -1,5 +1,5 @@
 ---
-sourceHash: 5c84bc6057f9
+sourceHash: 02e01673e8d2
 title: "Altitudine e HRV: che cosa cambia e che cosa non può prevedere"
 metaTitle: "Altitudine e HRV: che cosa mostrano gli studi"
 metaDescription: "Come l'alta quota cambia la variabilità della frequenza cardiaca, se l'HRV può prevedere il mal di montagna e perché a decidere quando scendere sono i sintomi, non un orologio."
@@ -207,6 +207,8 @@ Questa è la parte più importante della pagina. L'HRV e gli orologi non sostitu
 - **La maggior parte delle prove viene da uomini giovani e allenati.** I dati per donne, persone anziane e persone meno allenate sono limitati [S1].
 - **Il rapporto LF/HF è dibattuto.** Anche gli autori che ne riportano l'aumento aggiungono che non è una misura diretta del tono simpatico [S1].
 - **Nessuna conclusione medica.** Nessuno di questi studi diagnostica una condizione o fornisce un piano di salita.
+
+Lontano dalla montagna, le cause comuni di una lettura bassa sono in [perché la mia HRV è bassa?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

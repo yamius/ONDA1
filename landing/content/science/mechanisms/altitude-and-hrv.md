@@ -506,6 +506,8 @@ This is the most important part of the page. HRV and watches do not replace chec
 - **The LF/HF ratio is debated.** Even the authors who report its rise add that it is not a direct measure of sympathetic tone [S1].
 - **No medical conclusions.** None of these studies diagnoses a condition or gives an ascent plan.
 
+Away from the mountains, the common causes of a low reading are on [why is my HRV low?](/science/questions/why-is-my-hrv-low).
+
 ## In ONDA
 
 ONDA is built around practice rather than tracking: it offers guided breathing practices with spoken and visual guidance, and {{fact:onda.practice.livePulse}}. With an Apple Watch, or a device that syncs heart data to Apple Health, it compares your HRV, resting heart rate and breathing rate with your own baseline over {{fact:baseline.window}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV trend is an SDNN trend. In the first days after you travel to altitude, that baseline still reflects your nights at home, so a signal then says that your nights differ from home, which is expected at altitude, not that you are getting altitude sickness. Because the {{fact:baseline.window}} baseline is rolling, it gradually takes in the altitude nights, so what it compares against changes during the stay. ONDA does not assess or warn of altitude sickness, does not diagnose any condition and does not replace a doctor; the studies on this page did not test ONDA. See [what ONDA measures](/measurements).

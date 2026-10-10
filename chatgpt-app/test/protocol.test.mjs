@@ -3,7 +3,9 @@ import assert from 'node:assert/strict';
 import { handleRpc } from '../api/mcp.js';
 import { matchReview } from '../lib/tools.js';
 
-const call = (name, args) => handleRpc({ jsonrpc: '2.0', id: 1, method: 'tools/call', params: { name, arguments: args } });
+// `req` is the HTTP request (only its headers are read, to tag links by host); none → ai_app tags.
+const call = (name, args, req) => handleRpc({ jsonrpc: '2.0', id: 1, method: 'tools/call', params: { name, arguments: args } }, req);
+const CHATGPT = { headers: { 'user-agent': 'openai-mcp/1.0.0' } };
 
 test('initialize advertises tools and resources', async () => {
   const r = await handleRpc({ jsonrpc: '2.0', id: 1, method: 'initialize', params: {} });
@@ -27,7 +29,7 @@ test('every tool points at a readable MCP Apps card', async () => {
 });
 
 test('check_hrv: Apple Watch SDNN is not compared; RMSSD uses the nearest Natarajan age point', async () => {
-  const aw = (await call('check_hrv', { age: 42, hrv_ms: 38, device: 'apple_watch' })).result.structuredContent;
+  const aw = (await call('check_hrv', { age: 42, hrv_ms: 38, device: 'apple_watch' }, CHATGPT)).result.structuredContent;
   const oura = (await call('check_hrv', { age: 42, hrv_ms: 38, device: 'oura', sex: 'female' })).result.structuredContent;
   assert.equal(aw.metric, 'SDNN');
   assert.equal(aw.compared, false);
@@ -102,7 +104,7 @@ test('check_hrv (42, Apple Watch SDNN 38): not compared', async () => {
 
 test('breathe_now never promises a numeric pacer in the bridge', async () => {
   for (const technique of ['coherent', '478', 'box', 'sigh', 'calming']) {
-    const d = (await call('breathe_now', { technique })).result.structuredContent;
+    const d = (await call('breathe_now', { technique }, CHATGPT)).result.structuredContent;
     assert.ok(d.phases.length >= 2);
     assert.doesNotMatch(d.bridge.text, /\d+\s*(\/|per)\s*min|breaths? a minute/i);
     assert.match(d.bridge.url, /ct=chatgpt_breathe/);
@@ -111,7 +113,7 @@ test('breathe_now never promises a numeric pacer in the bridge', async () => {
 
 test('find_practice returns only adaptive practices and links to /emoton', async () => {
   for (const goal of ['calm', 'sleep', 'focus', 'energy']) {
-    const d = (await call('find_practice', { goal })).result.structuredContent;
+    const d = (await call('find_practice', { goal }, CHATGPT)).result.structuredContent;
     assert.ok(d.practices.length >= 1 && d.practices.length <= 3, goal);
     assert.ok(d.practices.every((p) => p.minutes === 6));
     assert.match(d.tryFree.url, /^https:\/\/onda-life\.com\/emoton\?.*utm_campaign=chatgpt_practice/);
@@ -144,9 +146,9 @@ test('compare: winner only when the duel page shows one; status, label and ONDA 
   const vns = (await run(['pulsetto', 'nurosym', 'apollo neuro'])).structuredContent;
   assert.equal(vns.duel.winner, null);
   assert.equal(vns.duel.winnerStatus, 'depends-on-the-job');
-  assert.equal(vns.duel.label, 'Higher ONDA score: Nurosym (7.9 vs 7.1 vs 6.9)');
-  assert.deepEqual(vns.duel.onda_scores, { pulsetto: 6.9, nurosym: 7.9, 'apollo-neuro': 7.1 });
-  assert.deepEqual(vns.products.map((p) => p.score), [6.9, 7.9, 7.1], 'product scores = the duel page scores');
+  assert.equal(vns.duel.label, 'Higher ONDA score: Nurosym (7.4 vs 7.1 vs 6.9)');
+  assert.deepEqual(vns.duel.onda_scores, { pulsetto: 6.9, nurosym: 7.4, 'apollo-neuro': 7.1 });
+  assert.deepEqual(vns.products.map((p) => p.score), [6.9, 7.4, 7.1], 'product scores = the duel page scores');
 
   const rings = (await run(['ringconn gen 2', 'ultrahuman ring air'])).structuredContent;
   assert.equal(rings.duel.winner, null);
@@ -188,7 +190,7 @@ test('errors do not echo the arguments', async () => {
 
 test('find_practice card has the App Store button next to the free try', async () => {
   const { WIDGETS } = await import('../lib/widgets.js');
-  const d = (await call('find_practice', { goal: 'calm' })).result.structuredContent;
+  const d = (await call('find_practice', { goal: 'calm' }, CHATGPT)).result.structuredContent;
   assert.match(d.bridge.url, /apps\.apple\.com.*ct=chatgpt_practice/);
   assert.ok(d.bridge.button);
   assert.match(WIDGETS.practice.html, /d\.tryFree\.url[\s\S]{0,200}d\.bridge\.url/);
@@ -316,7 +318,7 @@ test('descriptions start with the ONDA Life name and carry one "Use for:" line',
 });
 
 test('each suggested practice links to that exact practice on /emoton', async () => {
-  const d = (await call('find_practice', { goal: 'calm' })).result.structuredContent;
+  const d = (await call('find_practice', { goal: 'calm' }, CHATGPT)).result.structuredContent;
   for (const p of d.practices) assert.ok(p.playUrl.startsWith('https://onda-life.com/emoton?practice=' + p.id + '&utm_source=chatgpt'), p.playUrl);
   const { WIDGETS } = await import('../lib/widgets.js');
   assert.match(WIDGETS.practice.html, /p\.playUrl/);

@@ -1,5 +1,5 @@
 ---
-sourceHash: f1306d188d51
+sourceHash: 1c231ffc17a5
 title: "Menstruatiecyclus en HRV: waarom je baseline verschuift"
 metaTitle: "Menstruatiecyclus en HRV: wat verandert er en waarom"
 metaDescription: "Hoe hartslagvariabiliteit verschuift tijdens de menstruatiecyclus, waarom elke vrouw haar eigen patroon heeft en wat hormonale anticonceptie en de menopauze veranderen."
@@ -102,6 +102,8 @@ In dezelfde review nam HRV na de menopauze meestal af met het ouder worden [S1].
 - **Populatiegegevens zijn geen voorspelling voor jou.** De gemiddelden komen van veel vrouwen; je eigen cyclus kan een grotere verschuiving laten zien, een kleinere of geen [S6].
 - **Bedrijfsgegevens hebben een kanttekening.** De grootste dataset werd mede geschreven door medewerkers van de fabrikant van het apparaat [S3].
 - **Eén studie binnen een review is geen twee bevestigingen.** De ovulatiestudie maakt waarschijnlijk deel uit van de bewijsbasis van de review [S1] [S4].
+
+Andere oorzaken van een lage meting staan op [waarom is mijn HRV laag?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

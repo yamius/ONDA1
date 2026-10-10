@@ -1,6 +1,6 @@
 ---
 # ONE file per science page: landing/content/science/<kind>/<slug>.md
-# kind = concepts | measurements | mechanisms | evidence   (no questions, no research)
+# kind = concepts | measurements | mechanisms | evidence | questions   (no research)
 kind: concepts
 slug: example-entity
 title: "Example Entity — What It Is and What It Isn’t"   # page H1, ≤ 70 chars, no digits

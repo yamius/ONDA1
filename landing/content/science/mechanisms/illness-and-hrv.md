@@ -221,6 +221,8 @@ Some people have symptoms for months after an infection, which is called Long CO
 
 If your HRV is clearly below your usual range and your resting heart rate is higher for several days in a row, treat it as a non-specific early signal that the body is under strain. It is a reason to rest and to watch how you feel. If you have symptoms, see a doctor rather than relying on your watch. A single low night is usually not a cause for concern ([interpreting HRV](/science/concepts/interpreting-hrv)).
 
+Stress, alcohol and travel can produce the same dip; [why is my HRV low?](/science/questions/why-is-my-hrv-low) maps them side by side.
+
 ## In ONDA
 
 ONDA builds a personal baseline from nightly values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S7]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}: {{fact:baseline.floors}}, with {{fact:onda.signal.cadence}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV trend is an SDNN trend ([your HRV baseline](/science/concepts/hrv-baseline)). Such a signal is descriptive: it says that a night is outside your own corridor, not why. An infection, a short night, alcohol or travel can all produce it. ONDA does not identify illness, does not diagnose any condition and does not replace a doctor.

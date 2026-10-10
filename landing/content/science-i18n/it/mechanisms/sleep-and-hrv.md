@@ -1,5 +1,5 @@
 ---
-sourceHash: 58de478c79ed
+sourceHash: f592ea962f6b
 title: "HRV e frequenza cardiaca durante il sonno: perché la notte è la finestra migliore"
 metaTitle: "HRV e frequenza cardiaca durante il sonno"
 metaDescription: "Che cosa succede a frequenza cardiaca e HRV nel corso della notte e delle fasi del sonno, perché le misure notturne sono le più stabili e che cosa i wearable possono dire e cosa no."
@@ -132,6 +132,8 @@ Sonno breve o frammentato, alcol, una giornata di allenamento intenso, un'infezi
 - **Nessuna singola notte è un verdetto.** Fasi, risvegli e orari spostano il valore da una notte all'altra.
 - **I dispositivi non sono intercambiabili.** Finestre, indici ed elaborazione sono diversi [S13, S14, S15], e anche i metodi usati nella ricerca variano [S4, S5].
 - **Un wearable non è un esame del sonno.** Non può diagnosticare né l'apnea notturna né l'insonnia [S12].
+
+Dormire poco è solo una delle cause di una lettura bassa; vedi [perché la mia HRV è bassa?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: 9c002efa1ed5
+sourceHash: 477ca0c9b233
 title: "Waarom HRV van dag tot dag verandert"
 metaTitle: "Waarom HRV per dag verandert: oorzaken en bewijs"
 metaDescription: "Waarom hartslagvariabiliteit per dag verschuift: normale ruis, slaap, alcohol, training, ziekte, stress en de cyclus — mechanismen en bewijs."
@@ -139,6 +139,8 @@ Vergelijkingen van dag tot dag zijn alleen zinvol als de metingen vergelijkbaar 
 - **Andere maten, andere antwoorden.** In de meta-analyse over slaaptekort daalde de RMSSD significant, de SDNN niet [S6]. Een horloge dat SDNN rapporteert, laat een oorzaak mogelijk minder duidelijk zien dan een studie die RMSSD gebruikte.
 
 **Wat dit betekent voor het lezen van je eigen gegevens.** Volg de trend ten opzichte van je eigen [baseline](/science/concepts/hrv-baseline) in plaats van één waarde, en noteer de context — slaap, alcohol, ziekte, trainingsbelasting, fase van de cyclus — zodat je een verandering kunt koppelen aan wat er gebeurde. Een verschuiving die meerdere dagen aanhoudt en met klachten samengaat, is een reden om beter te kijken; één dip na een late avond meestal niet. Wat een meting wel en niet kan zeggen, staat op [HRV interpreteren](/science/concepts/interpreting-hrv).
+
+Een overzicht van wat een meting omlaag kan duwen en hoe sterk het bewijs is, staat op [waarom is mijn HRV laag?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

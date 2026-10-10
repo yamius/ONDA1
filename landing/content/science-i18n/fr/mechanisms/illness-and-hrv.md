@@ -1,5 +1,5 @@
 ---
-sourceHash: 26f74cb4722e
+sourceHash: 079098055e7f
 title: "Maladie et HRV : ce qu’un objet connecté peut voir ou non"
 metaTitle: "Maladie et HRV : signal précoce, pas diagnostic"
 metaDescription: "Comment l’inflammation et l’infection modifient la HRV et le pouls au repos. Votre montre ne peut pas dire si vous êtes malade."
@@ -102,6 +102,8 @@ Certaines personnes gardent des symptômes pendant des mois après une infection
 ## Que faire en cas de nette baisse ?
 
 Si votre HRV est nettement en dessous de votre plage habituelle et que votre fréquence cardiaque au repos est plus élevée plusieurs jours de suite, considérez-le comme un signal précoce non spécifique indiquant que votre corps est sollicité. C’est une raison de vous reposer et d’observer comment vous vous sentez. Si vous avez des symptômes, consultez un médecin plutôt que de vous fier à votre montre. Une seule nuit basse n’est généralement pas inquiétante ([interpréter la HRV](/science/concepts/interpreting-hrv)).
+
+Le stress, l’alcool et les voyages peuvent produire la même baisse ; ils sont comparés sur [pourquoi ma HRV est-elle basse ?](/science/questions/why-is-my-hrv-low).
 
 ## Dans ONDA
 

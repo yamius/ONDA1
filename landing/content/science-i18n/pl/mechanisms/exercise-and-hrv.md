@@ -1,5 +1,5 @@
 ---
-sourceHash: 68b096acdcad
+sourceHash: b9b0dddaa0a9
 title: "Wysiłek a HRV: co robi trening i co pokazuje trening sterowany HRV"
 metaTitle: "Wysiłek a HRV: dowody dla treningu sterowanego HRV"
 metaDescription: "Dlaczego HRV spada po ciężkim treningu i wraca do normy, ile to trwa i co pokazują badania treningu sterowanego HRV w porównaniu ze stałym planem treningowym."
@@ -129,6 +129,8 @@ Ta strona nie zawiera porad dotyczących obciążenia treningowego. Planowanie s
 - **Nie wykazano, że sterowanie HRV jest lepsze od dobrego stałego planu** pod względem wyników czy szczytowego poboru tlenu [S2], a w jednym małym badaniu u pacjentów kardiologicznych pierwszorzędowy punkt końcowy się nie różnił [S3].
 - **Najlepsza reguła decyzyjna jest nieznana.** Badania stosowały różne progi i protokoły [S2], a długofalowej korzyści dla osób trenujących rekreacyjnie nie wykazano.
 - **Większość danych dotyczy wysiłku aerobowego.** Trening siłowy jest zbadany zbyt słabo, by stosować ten sam przebieg w czasie [S1].
+
+Jeśli trening nie tłumaczy niskiego odczytu, inne częste przyczyny wymienia strona [dlaczego moje HRV jest niskie?](/science/questions/why-is-my-hrv-low).
 
 ## W ONDA
 

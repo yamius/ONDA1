@@ -49,7 +49,7 @@ Western clinical evidence and comfort. JOVS has K-beauty market credibility but 
 
 ## Who should buy JOVS DPL Photofacial Mask?
 
-Choose JOVS DPL for maximum wavelength coverage at mid-tier pricing. For Western clinical evidence reference, Omnilux Contour Face. For consumer market leader silicone, CurrentBody Series 2. For dermatology-brand dual-spectrum, Dr. Dennis Gross.
+Choose JOVS DPL for maximum wavelength coverage at mid-tier pricing. For a red + near-infrared silicone mask, Omnilux Contour Face. For consumer market leader silicone, CurrentBody Series 2. For dermatology-brand dual-spectrum, Dr. Dennis Gross.
 
 ---
 

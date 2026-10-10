@@ -1,5 +1,5 @@
 ---
-sourceHash: 5c84bc6057f9
+sourceHash: 02e01673e8d2
 title: "Hoogte en HRV: wat er verandert en wat ze niet kan voorspellen"
 metaTitle: "Hoogte en HRV: wat studies laten zien"
 metaDescription: "Hoe grote hoogte de hartslagvariabiliteit verandert, of HRV hoogteziekte kan voorspellen en waarom klachten, niet een horloge, bepalen wanneer je moet afdalen."
@@ -207,6 +207,8 @@ Dit is het belangrijkste deel van de pagina. HRV en horloges vervangen niet het 
 - **Het meeste bewijs komt van jonge, fitte mannen.** Gegevens over vrouwen, ouderen en minder fitte mensen zijn beperkt [S1].
 - **De LF/HF-ratio is omstreden.** Zelfs de auteurs die de stijging ervan melden, voegen toe dat ze geen directe maat is voor de sympathische tonus [S1].
 - **Geen medische conclusies.** Geen van deze studies stelt een diagnose of geeft een klimplan.
+
+Buiten de bergen staan de veelvoorkomende oorzaken van een lage meting op [waarom is mijn HRV laag?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

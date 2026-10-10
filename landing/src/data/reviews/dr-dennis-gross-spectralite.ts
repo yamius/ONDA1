@@ -49,7 +49,7 @@ Hard-shell comfort. The Pro is meaningfully better than the original FaceWare bu
 
 ## Who should buy Dr. Dennis Gross SpectraLite FaceWare Pro?
 
-Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand pedigree with dual red + blue spectrum and accept the hard-shell trade. For flexible silicone with peer-reviewed studies, Omnilux Contour Face. For consumer market reference with neck flap, CurrentBody Series 2. For premium spec maximalism, Lumara Viso.
+Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand pedigree with dual red + blue spectrum and accept the hard-shell trade. For flexible silicone at a lower price, Omnilux Contour Face. For consumer market reference with neck flap, CurrentBody Series 2. For premium spec maximalism, Lumara Viso.
 
 ---
 

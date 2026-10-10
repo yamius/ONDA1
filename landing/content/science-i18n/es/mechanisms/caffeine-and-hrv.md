@@ -1,5 +1,5 @@
 ---
-sourceHash: d1da038aff34
+sourceHash: 159ee240a2bb
 title: "Cafeína y HRV: lo que el café hace y lo que no"
 metaTitle: "Cafeína y HRV: ¿baja el café tu HRV?"
 metaDescription: "Qué muestra la investigación sobre el café y la HRV en reposo y tras el ejercicio, en qué se diferencian las bebidas energéticas y cómo la cafeína tardía llega a la HRV."
@@ -103,6 +103,8 @@ Así que no hay contradicción. Es poco probable que un café por la mañana cam
 - **Dos revisiones no son el doble de evidencia.** Los metaanálisis posteriores al ejercicio comparten ensayos [S1] [S2].
 - **Los ensayos diurnos no son datos nocturnos.** La cafeína tardía puede afectar al sueño y, a través de él, a la HRV de la noche [S7].
 - **Una lectura de un dispositivo ponible no diagnostica nada.** Las palpitaciones, el dolor en el pecho o los desmayos requieren atención médica, muestre lo que muestre un dispositivo ponible.
+
+La cafeína es solo una de las posibles causas de una lectura baja; las demás se recogen en [¿por qué tengo la HRV baja?](/science/questions/why-is-my-hrv-low).
 
 ## En ONDA
 

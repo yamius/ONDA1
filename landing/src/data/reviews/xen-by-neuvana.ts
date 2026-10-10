@@ -18,7 +18,7 @@ const xenByNeuvana: ToolReviewInput = {
     { criterionId: 'protocols', score: 7.5, note: 'Multiple modes (focus, calm, sleep) plus music-paired stimulation. Intensity user-adjustable.' },
     { criterionId: 'comfort', score: 7.0, note: 'Earbuds — familiar form factor, but in-ear electrode placement is fiddlier than a tragus clip. Cable to the control unit limits mobility.' },
     { criterionId: 'biofeedback', score: 5.5, note: 'App logs sessions; no on-device HRV. Optional Apple Health integration.' },
-    { criterionId: 'value', score: 6.5, note: '$399 hardware, no subscription required. More expensive than Pulsetto, less validated than Nurosym.' },
+    { criterionId: 'value', score: 6.5, note: '$399 hardware, no subscription required. More expensive than Pulsetto, less studied than Nurosym.' },
   ],
   pros: [
     'Earbud form factor — most familiar consumer shape in the category',
@@ -45,7 +45,7 @@ Xen by Neuvana takes the most consumer-friendly approach to auricular tVNS in th
 
 ## What are the downsides of Xen by Neuvana?
 
-The evidence base is the weak point. The auricular tVNS mechanism inherits credibility from the broader Parasym/Nurosym literature, but Xen-specific peer-reviewed RCTs do not yet exist; what is published is company-sponsored. The earbud form factor also has a practical downside — in-ear electrode placement is more finicky than a tragus clip, and the device tethers to a control unit by cable.
+The evidence base is the weak point. The auricular tVNS mechanism has been studied with other devices (mostly Parasym), but those trials are not evidence for Xen, and Xen-specific peer-reviewed RCTs do not yet exist; what is published is company-sponsored. The earbud form factor also has a practical downside — in-ear electrode placement is more finicky than a tragus clip, and the device tethers to a control unit by cable.
 
 ## Who should buy Xen by Neuvana?
 

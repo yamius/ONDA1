@@ -1,5 +1,5 @@
 ---
-sourceHash: f1306d188d51
+sourceHash: 1c231ffc17a5
 title: "Cycle menstruel et HRV : pourquoi votre référence bouge"
 metaTitle: "Cycle menstruel et HRV : ce qui change et pourquoi"
 metaDescription: "Comment la variabilité de la fréquence cardiaque évolue au fil du cycle menstruel, pourquoi chaque femme a son propre profil et ce que changent la contraception hormonale et la ménopause."
@@ -103,6 +103,8 @@ Dans la même revue, la HRV tendait à diminuer après la ménopause avec l’â
 - **Les données de population ne sont pas une prédiction pour vous.** Les moyennes viennent de nombreuses femmes ; votre propre cycle peut montrer un écart plus fort, plus faible ou aucun [S6].
 - **Les données d’entreprise appellent une réserve.** Le plus grand ensemble de données a été coécrit par des salariés du fabricant de l’appareil [S3].
 - **Une étude incluse dans une revue ne fait pas deux confirmations.** L’étude sur l’ovulation fait probablement partie de la base de preuves de la revue [S1] [S4].
+
+Pour les autres causes d’une valeur basse, voir [pourquoi ma HRV est-elle basse ?](/science/questions/why-is-my-hrv-low).
 
 ## Dans ONDA
 

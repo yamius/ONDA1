@@ -17,7 +17,7 @@ const sunHomeEquinox: ToolReviewInput = {
     { criterionId: 'build', score: 8.0, note: 'Cedar cabin construction with bundled chromotherapy and Bluetooth audio. 5-year warranty.' },
     { criterionId: 'emf', score: 8.0, note: 'Documented low EMF; third-party-verified. Comparable to Clearlight at seated position.' },
     { criterionId: 'form-factor', score: 7.5, note: '1–4-person cabin configurations. Standard 110V or 220V depending on size.' },
-    { criterionId: 'evidence', score: 6.0, note: 'Newer brand without the published-research footprint of Sunlighten. Honest marketing about being newer to market.' },
+    { criterionId: 'evidence', score: 7.0, note: 'No peer-reviewed trial of the Equinox found — 7.0, the base score for a product without trials of its own. Honest marketing about being newer to market.' },
     { criterionId: 'value', score: 7.5, note: '$4,500–$8,000 depending on configuration. Bundled features (chromotherapy, audio) at price below comparable Sunlighten / Clearlight configs.' },
   ],
   pros: [
@@ -29,7 +29,7 @@ const sunHomeEquinox: ToolReviewInput = {
   cons: [
     'Newer brand — multi-year reliability data still being built',
     'Less rigorous wavelength control than Sunlighten mPulse',
-    'Published-research footprint thinner than category leaders',
+    'No peer-reviewed trial of the Equinox itself',
     'Bundled features may not be reasons users actually buy a sauna',
   ],
   bestFor: 'Best for users wanting category-leader-tier full-spectrum IR at marginally lower price with bundled extras.',
@@ -45,7 +45,7 @@ Sun Home Equinox is the newer mid-premium IR sauna brand that bundles chromother
 
 ## What are the downsides of Sun Home Equinox?
 
-Newer brand presence means less multi-year reliability data and thinner published-research footprint than Sunlighten or Clearlight. The bundled features are competently implemented but unlikely to be the reason most users buy a sauna.
+Newer brand presence means less multi-year reliability data than Sunlighten or Clearlight. The bundled features are competently implemented but unlikely to be the reason most users buy a sauna.
 
 ## Who should buy Sun Home Equinox?
 
@@ -69,7 +69,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
   faq: [
     { q: "Is the Sun Home Equinox worth it?", a: "The Sun Home Equinox is worth it if you want full-spectrum IR near category-leader level at a lower price. It has separate near and far emitters, chromotherapy, Bluetooth audio and a cedar cabin with 5-year warranty. It is a newer brand with less rigorous wavelength control than Sunlighten mPulse." },
     { q: "How much does the Sun Home Equinox cost?", a: "The Sun Home Equinox starts at about $6,000 for the 2-person configuration. That sits in mid-premium territory, below comparable Sunlighten or Clearlight models, and includes chromotherapy lighting and Bluetooth audio." },
-    { q: "Sun Home Equinox vs Sunlighten mPulse: which is better?", a: "Sunlighten mPulse is the stronger pick for rigorous wavelength control and published research. Sun Home Equinox offers full-spectrum IR with bundled extras at mid-premium pricing below comparable Sunlighten models. Choose Equinox for value, mPulse for finer wavelength control." },
+    { q: "Sun Home Equinox vs Sunlighten mPulse: which is better?", a: "Sunlighten mPulse is the stronger pick for rigorous wavelength control. Sun Home Equinox offers full-spectrum IR with bundled extras at mid-premium pricing below comparable Sunlighten models. Choose Equinox for value, mPulse for finer wavelength control." },
   ],
   datePublished: '2026-05-25',
   dateModified: '2026-10-10',

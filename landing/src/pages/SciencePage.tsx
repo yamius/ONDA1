@@ -16,7 +16,7 @@ import { OptimizedImage } from '../components/OptimizedImage'
 import { langHref, type Lang } from '../i18n'
 import { scienceUi, fillUi, type ScienceUi } from '../data/science/i18n'
 import { readSciencePage } from '../lib/science-content'
-import { parseScienceRoute, scienceMeta, sciencePath, scienceShortName, indexFor, kindsWithPages, sourceHref, SITE_URL } from '../lib/science-meta'
+import { parseScienceRoute, scienceMeta, sciencePath, scienceShortName, indexFor, kindsWithPages, kindIndexed, sourceHref, SITE_URL } from '../lib/science-meta'
 
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
 
@@ -44,6 +44,11 @@ function useScienceMeta(route: string, page?: SciencePageData) {
     setMeta('og:type', m.ogType, true)
     setMeta('og:url', `${SITE_URL}${route}`, true)
     setMeta('og:image', m.image ?? OG_IMAGE, true)
+    // Section page below MIN_PAGES_FOR_INDEXED_KIND (the prerendered HTML already carries it via meta-inject).
+    if (!m.noindex) return
+    const prev = document.querySelector('meta[name="robots"]')?.getAttribute('content')
+    setMeta('robots', 'noindex, follow')
+    return () => { if (prev != null) setMeta('robots', prev) }
   }, [route, page])
 }
 
@@ -56,7 +61,7 @@ function Crumbs({ items }: { items: { to?: string; label: string }[] }) {
       {items.map((c, i) => (
         <span key={i}>
           {i > 0 && <span className="mx-1.5">/</span>}
-          {c.to ? <Link to={c.to} className="hover:text-white/70">{c.label}</Link> : <span className="text-white/60">{c.label}</span>}
+          {c.to ? <Link to={c.to} className="hover:text-white/70">{c.label}</Link> : <span className={i === items.length - 1 ? 'text-white/60' : undefined}>{c.label}</span>}
         </span>
       ))}
     </nav>
@@ -87,7 +92,9 @@ function Hub({ lang, ui }: { lang: string; ui: ScienceUi }) {
       </header>
       {kindsWithPages(lang).map((k) => (
         <section key={k}>
-          <h2 className={H2}><Link to={sciencePath(lang, `/${k}`)} className="hover:text-terminal-green">{ui.kinds[k].label}</Link></h2>
+          <h2 className={H2}>
+            {kindIndexed(k, lang) ? <Link to={sciencePath(lang, `/${k}`)} className="hover:text-terminal-green">{ui.kinds[k].label}</Link> : ui.kinds[k].label}
+          </h2>
           <p className={`${P} mb-4`}>{ui.kinds[k].desc}</p>
           <div className="grid gap-3 md:grid-cols-2">
             {indexFor(lang).filter((p) => p.kind === k).map((p) => <PageCard key={p.slug} p={p} lang={lang} ui={ui} />)}
@@ -138,7 +145,7 @@ function Entry({ p, lang, ui }: { p: SciencePageData; lang: string; ui: ScienceU
     <main className="mx-auto max-w-3xl px-4 pb-24 md:px-6">
       <article>
         <header className="border-b border-white/10 pt-6 pb-8">
-          <Crumbs items={[{ to: sciencePath(lang), label: ui.science }, { to: sciencePath(lang, `/${p.kind}`), label: ui.kinds[p.kind].label }, { label: scienceShortName(p.title) }]} />
+          <Crumbs items={[{ to: sciencePath(lang), label: ui.science }, { to: kindIndexed(p.kind, lang) ? sciencePath(lang, `/${p.kind}`) : undefined, label: ui.kinds[p.kind].label }, { label: scienceShortName(p.title) }]} />
           <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">{p.title}</h1>
           <p className="font-mono text-xs text-white/45">
             {fillUi(ui.editor, { name: p.editor })}
@@ -166,6 +173,20 @@ function Entry({ p, lang, ui }: { p: SciencePageData; lang: string; ui: ScienceU
         <div className="mt-4">
           <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]} components={mdComponents(lang) as never}>{linkCitations(p.body)}</Markdown>
         </div>
+
+        {p.faq?.length ? (
+          <section aria-label={ui.faq}>
+            <h2 className={H2}>{ui.faq}</h2>
+            <div className="space-y-5">
+              {p.faq.map((f, i) => (
+                <div key={i}>
+                  <h3 className="mb-1.5 font-semibold text-white/90">{f.q}</h3>
+                  <p className={P}>{f.a}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         <section aria-label={ui.evidenceAtAGlance}>
           <h2 className={H2}>{ui.evidenceAtAGlance}</h2>

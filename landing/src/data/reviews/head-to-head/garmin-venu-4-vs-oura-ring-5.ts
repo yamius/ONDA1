@@ -41,7 +41,7 @@ const venu4VsOura5: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Both can be worn every night, so this splits on what else you want. The Oura Ring 5 wins on overnight wear — redesigned sensors, best-in-class sleep staging — in the slimmest always-on form. The Garmin Venu 4 wins as a device — training tools, a screen, a developer API and no subscription — with HRV that is solid rather than best.
+Both can be worn every night, so this splits on what else you want. The Oura Ring 5 wins on overnight wear — redesigned sensors and the sleep staging of a ring line with the most published research (mostly earlier generations, partly Oura-funded; the Ring 5 itself not validated) — in the slimmest always-on form. The Garmin Venu 4 wins as a device — training tools, a screen, a developer API and no subscription — with HRV that is solid rather than best.
 
 ## Two different HRV models
 
