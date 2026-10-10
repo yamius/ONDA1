@@ -20,7 +20,7 @@ import { levelsData } from '../src/data/levels'
 import { parts } from '../src/pages/PartPage'
 import { ES_PILOT_ARTICLE_SLUGS, RU_PILOT_ARTICLE_SLUGS } from './prerender-routes'
 import { reviews, comparisons, headToHeads } from '../src/data/reviews'
-import { TOOLS } from '../src/data/tools'
+import { TOOLS, toolPath } from '../src/data/tools'
 import { SCIENCE_INDEX } from '../src/generated/science-pages'
 import { ARTICLE_TOPIC_HUBS } from '../src/data/article-topics'
 import { METRIC_DETAILS, metricSummary, metricPlainText } from '../src/data/bioMetrics'
@@ -204,7 +204,7 @@ ${glossLines.join('\n')}
   // locale index like Articles/Glossary/Reviews.
   const toolLines: string[] = []
   for (const t of TOOLS) {
-    toolLines.push(`- [${t.name}](${SITE_URL}/tools/${t.slug}): ${t.blurb}`)
+    toolLines.push(`- [${t.name}](${SITE_URL}${toolPath(t)}): ${t.blurb}`)
   }
   sections.push(`## Tools (free calculators)
 

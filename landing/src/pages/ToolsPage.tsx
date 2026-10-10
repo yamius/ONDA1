@@ -13,7 +13,7 @@
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath, langHref, homePathFor } from '../i18n'
-import { TOOLS } from '../data/tools'
+import { TOOLS, toolPath } from '../data/tools'
 import { TOOLS_I18N, TOOLS_EN } from '../data/tools-i18n'
 import { localizedToolCard } from '../data/tools-localized'
 import { hrvToolCopy } from '../data/hrv-tool-i18n'
@@ -119,7 +119,7 @@ export function ToolsPage() {
         {orderedTools.map((t) => (
           <Link
             key={t.slug}
-            to={langHref(`/tools/${t.slug}`, lang)}
+            to={langHref(toolPath(t), lang)}
             className="block rounded-xl border border-white/10 bg-white/5 p-5 transition-colors hover:border-terminal-green/40 hover:bg-terminal-green/5"
           >
             <div className="mb-1 flex items-center gap-3">

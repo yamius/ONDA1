@@ -35,7 +35,7 @@ import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
 import { SERP_OVERRIDES } from '../src/data/serp-overrides'
 import { PRODUCT_I18N } from '../src/data/product-i18n'
 import { FAQ_I18N } from '../src/data/faq-i18n'
-import { TOOLS } from '../src/data/tools'
+import { TOOLS, toolPath } from '../src/data/tools'
 import { TOOLS_I18N, TOOLS_EN } from '../src/data/tools-i18n'
 import { localizedToolCard } from '../src/data/tools-localized'
 import { COMPARE_I18N } from '../src/data/compare-i18n'
@@ -2010,7 +2010,7 @@ function getMetaForRouteBase(route: string): RouteMeta {
         url,
         items: TOOLS.map((t) => {
           const loc = localizedToolCard(t.slug, lang)
-          return { url: loc ? `${SITE_URL}/${lang}/tools/${t.slug}` : `${SITE_URL}/tools/${t.slug}`, name: loc ? loc.name : t.name }
+          return { url: loc ? `${SITE_URL}/${lang}${toolPath(t)}` : `${SITE_URL}${toolPath(t)}`, name: loc ? loc.name : t.name }
         }),
       },
     }
@@ -2026,7 +2026,7 @@ function getMetaForRouteBase(route: string): RouteMeta {
         name: TOOLS_EN.h1,
         description: TOOLS_EN.metaDescription,
         url,
-        items: TOOLS.map((t) => ({ url: `${SITE_URL}/tools/${t.slug}`, name: t.name })),
+        items: TOOLS.map((t) => ({ url: `${SITE_URL}${toolPath(t)}`, name: t.name })),
       },
     }
   }
