@@ -20,6 +20,13 @@ export interface ToolEntry {
   category: string
   /** Short unit/glyph shown in the card badge (kept ASCII-safe for the SVG mono fallback). */
   badge: string
+  /** Site path when the tool does not live at /tools/<slug> (e.g. '/emoton'). */
+  path?: string
+}
+
+/** Path of a tool's page (no locale prefix). */
+export function toolPath(t: Pick<ToolEntry, 'slug' | 'path'>): string {
+  return t.path ?? `/tools/${t.slug}`
 }
 
 export const TOOLS: ToolEntry[] = [
@@ -270,5 +277,14 @@ export const TOOLS: ToolEntry[] = [
     live: true,
     category: 'RECOVERY',
     badge: 'WATCH',
+  },
+  {
+    slug: 'emoton',
+    name: 'Emoton',
+    blurb: 'A free interactive feelings wheel. Name what you feel right now, then take a quiet moment to be with it — no sign-up, no diagnosis, no advice.',
+    live: true,
+    category: 'NERVOUS SYSTEM',
+    badge: 'FEEL',
+    path: '/emoton',
   },
 ]

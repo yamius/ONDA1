@@ -68,7 +68,7 @@
       "testStatus": "evidence-based",
       "hrvMetric": "SDNN+RMSSD",
       "worksWithOnda": "yes",
-      "worksWithOndaNote": "ONDA reads heart rate and HRV from Apple Watch and builds your personal baseline from its history.",
+      "worksWithOndaNote": "ONDA builds your personal baseline from Apple Health — from Apple Watch or another tracker that syncs there. Real-time breathing biofeedback needs Apple Watch.",
       "dateModified": "2026-10-10"
     },
     {
@@ -344,7 +344,7 @@
       "testStatus": "evidence-based",
       "hrvMetric": "SDNN+RMSSD",
       "worksWithOnda": "yes",
-      "worksWithOndaNote": "ONDA reads heart rate and HRV from Apple Watch and builds your personal baseline from its history.",
+      "worksWithOndaNote": "ONDA builds your personal baseline from Apple Health — from Apple Watch or another tracker that syncs there. Real-time breathing biofeedback needs Apple Watch.",
       "dateModified": "2026-10-10"
     },
     {
@@ -827,7 +827,7 @@
       "testStatus": "evidence-based",
       "hrvMetric": "SDNN",
       "worksWithOnda": "yes",
-      "worksWithOndaNote": "ONDA reads heart rate and HRV from Apple Watch and builds your personal baseline from its history.",
+      "worksWithOndaNote": "ONDA builds your personal baseline from Apple Health — from Apple Watch or another tracker that syncs there. Real-time breathing biofeedback needs Apple Watch.",
       "dateModified": "2026-10-04"
     },
     {

@@ -60,7 +60,7 @@ Older adults can practice safely by keeping it slow and gentle — it's low-dema
 
 ## See your own response
 
-Because everyone's baseline differs — especially with age — the useful measure is your own. ONDA reads your resting heart rate and HRV from your Apple Watch history and builds your personal baseline, then shows how today compares. You can watch your pulse settle as you breathe, and track whether your own numbers respond over weeks — which matters far more than any age-average chart.
+Because everyone's baseline differs — especially with age — the useful measure is your own. ONDA reads your resting heart rate and HRV from Apple Health — from Apple Watch or another tracker that syncs there — and builds your personal baseline, then shows how today compares. You can watch your pulse settle as you breathe, and track whether your own numbers respond over weeks — which matters far more than any age-average chart.
 `,
   howToSteps: [
     {

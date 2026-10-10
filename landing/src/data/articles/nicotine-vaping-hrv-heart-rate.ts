@@ -67,7 +67,7 @@ Vaping can make the pattern less visible: because it is easy to use continuously
 
 ## Can you see nicotine’s effect in your own numbers?
 
-You can often see it as a [resting heart rate](/science/measurements/resting-heart-rate) and HRV that sit worse on heavier-use days than on lighter ones. With an Apple Watch, ONDA reads resting heart rate and HRV from Apple Health and holds them against your **personal 14-day baseline**, so changes are compared with your own normal rather than a population average — [see what ONDA measures](/measurements). If you cut down or quit, the same baseline lets you watch your resting heart rate settle over the following weeks, which many people find motivating.
+You can often see it as a [resting heart rate](/science/measurements/resting-heart-rate) and HRV that sit worse on heavier-use days than on lighter ones. ONDA reads resting heart rate and HRV from Apple Health (Apple Watch or another tracker that syncs there) and holds them against your **personal 14-day baseline**, so changes are compared with your own normal rather than a population average — [see what ONDA measures](/measurements). If you cut down or quit, the same baseline lets you watch your resting heart rate settle over the following weeks, which many people find motivating.
 
 ONDA is descriptive, not medical, and this is not medical advice. It can show you the physiology; it can’t treat the dependence.
 

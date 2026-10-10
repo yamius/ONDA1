@@ -26,7 +26,7 @@ import { articles } from '../src/data/articles'
 import { glossaryTerms } from '../src/data/glossary'
 import { ARTICLE_DATES } from '../src/data/article-dates.generated'
 import { reviews, comparisons } from '../src/data/reviews'
-import { TOOLS } from '../src/data/tools'
+import { TOOLS, toolPath } from '../src/data/tools'
 import { METRIC_DETAILS, metricPlainText, metricSummary } from '../src/data/bioMetrics'
 import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
 import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
@@ -140,7 +140,7 @@ for (const t of TOOLS) {
     id: t.slug,
     type: 'tool',
     language: 'en',
-    url: `${SITE_URL}/tools/${t.slug}`,
+    url: `${SITE_URL}${toolPath(t)}`,
     title: t.name,
     description: t.blurb,
     category: t.category,

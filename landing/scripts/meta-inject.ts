@@ -35,7 +35,7 @@ import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
 import { SERP_OVERRIDES } from '../src/data/serp-overrides'
 import { PRODUCT_I18N } from '../src/data/product-i18n'
 import { FAQ_I18N } from '../src/data/faq-i18n'
-import { TOOLS } from '../src/data/tools'
+import { TOOLS, toolPath } from '../src/data/tools'
 import { TOOLS_I18N, TOOLS_EN } from '../src/data/tools-i18n'
 import { localizedToolCard } from '../src/data/tools-localized'
 import { COMPARE_I18N } from '../src/data/compare-i18n'
@@ -47,6 +47,7 @@ import { HRV_VS_COHERENCE_I18N } from '../src/data/hrv-vs-coherence-i18n'
 import { APPLE_WATCH_HRV_I18N } from '../src/data/apple-watch-hrv-i18n'
 import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
+import { CONNECT_INDEX_META, connectJsonLd, getConnectDevice } from '../src/data/connect-devices'
 import { appleWatchHrvJsonLd } from '../src/pages/AppleWatchHrvBiofeedbackPage'
 import { researchJsonLd } from '../src/pages/ResearchPage'
 import { founderJsonLd, PERSON_DESC } from '../src/pages/FounderPage'
@@ -548,6 +549,14 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
         name: term?.title ?? segments[1],
         url: `${SITE_URL}/glossary/${segments[1]}`,
       })
+    }
+    return items
+  }
+  if (segments[0] === 'connect') {
+    items.push({ name: 'Devices', url: `${SITE_URL}/connect` })
+    if (segments[1]) {
+      const d = getConnectDevice(segments[1])
+      items.push({ name: d?.name ?? segments[1], url: `${SITE_URL}/connect/${segments[1]}` })
     }
     return items
   }
@@ -1834,6 +1843,14 @@ function getMetaForRouteBase(route: string): RouteMeta {
       jsonLd: hrvVsCoherenceJsonLd(lang),
     }
   }
+  // /connect, /connect/<device> — how to read your device's HRV (task 071 2a). EN-only.
+  if (route === '/connect') {
+    return { title: CONNECT_INDEX_META.title, description: CONNECT_INDEX_META.description, url, breadcrumbs, ogType: 'website', jsonLd: connectJsonLd() }
+  }
+  if (route.startsWith('/connect/')) {
+    const d = getConnectDevice(route.slice('/connect/'.length))
+    if (d) return { title: d.metaTitle, description: d.metaDescription, url, breadcrumbs, ogType: 'article', jsonLd: connectJsonLd(d.slug) }
+  }
   // /hrv-vs-coherence — cornerstone explainer. EN-only.
   if (route === '/hrv-vs-coherence') {
     return {
@@ -2007,7 +2024,7 @@ function getMetaForRouteBase(route: string): RouteMeta {
         url,
         items: TOOLS.map((t) => {
           const loc = localizedToolCard(t.slug, lang)
-          return { url: loc ? `${SITE_URL}/${lang}/tools/${t.slug}` : `${SITE_URL}/tools/${t.slug}`, name: loc ? loc.name : t.name }
+          return { url: loc ? `${SITE_URL}/${lang}${toolPath(t)}` : `${SITE_URL}${toolPath(t)}`, name: loc ? loc.name : t.name }
         }),
       },
     }
@@ -2023,7 +2040,7 @@ function getMetaForRouteBase(route: string): RouteMeta {
         name: TOOLS_EN.h1,
         description: TOOLS_EN.metaDescription,
         url,
-        items: TOOLS.map((t) => ({ url: `${SITE_URL}/tools/${t.slug}`, name: t.name })),
+        items: TOOLS.map((t) => ({ url: `${SITE_URL}${toolPath(t)}`, name: t.name })),
       },
     }
   }

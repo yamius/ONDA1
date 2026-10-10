@@ -2,6 +2,7 @@
  * Route list for prerender. Used only at build time.
  * Imports all data to enumerate every URL that needs an HTML file.
  */
+import { CONNECT_DEVICES } from '../src/data/connect-devices'
 import { readFileSync } from 'fs'
 import { dirname, join } from 'path'
 import { fileURLToPath } from 'url'
@@ -966,6 +967,9 @@ const nonLocalizedStaticPaths = [
   '/ru/hrv-vs-coherence',
   '/es/hrv-vs-coherence',
   '/apple-watch-hrv-biofeedback',
+  // /connect — "how to read your device's HRV" pages (task 071 2a). EN-only.
+  '/connect',
+  ...CONNECT_DEVICES.map((d) => `/connect/${d.slug}`),
   '/ru/apple-watch-hrv-biofeedback',
   '/es/apple-watch-hrv-biofeedback',
   // /compare — ONDA's own "ONDA vs <competitor>" comparisons. Hub localized to

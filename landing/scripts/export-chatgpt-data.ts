@@ -64,7 +64,7 @@ function worksWithOnda(slug: string, category: string): WorksWithOnda {
 }
 
 const WORKS_NOTE: Record<WorksWithOnda, string> = {
-  yes: 'ONDA reads heart rate and HRV from Apple Watch and builds your personal baseline from its history.',
+  yes: 'ONDA builds your personal baseline from Apple Health — from Apple Watch or another tracker that syncs there. Real-time breathing biofeedback needs Apple Watch.',
   partly:
     'Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.',
   'not-a-device': '',
