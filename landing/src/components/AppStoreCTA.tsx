@@ -16,7 +16,7 @@ import { useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
 import { appStoreUrl } from '../config/appStore'
 
-export type CtaVariant = 'general' | 'hrv' | 'meditation' | 'glossary' | 'tool'
+export type CtaVariant = 'general' | 'hrv' | 'meditation' | 'glossary' | 'tool' | 'science'
 type L = 'en' | 'es' | 'ru' | 'uk' | 'zh' | 'de' | 'fr' | 'it' | 'nl' | 'ja' | 'pl' | 'pt'
 
 const COPY: Record<CtaVariant, Record<L, string>> = {
@@ -89,6 +89,20 @@ const COPY: Record<CtaVariant, Record<L, string>> = {
     ja: '一度きりではなく、何週間も追跡したいですか？Apple Watch があれば、ONDA があなた個人のベースラインを作ります。無料で始められます。',
     pl: 'Chcesz śledzić to tygodniami, a nie raz? Z Apple Watch ONDA buduje twoją osobistą linię bazową. Zacznij za darmo.',
     pt: 'Quer acompanhar isso por semanas, não só uma vez? Com Apple Watch, o ONDA constrói sua linha de base pessoal. Comece grátis.',
+  },
+  science: {
+    en: 'Track your own HRV trend: with Apple Watch, ONDA builds your personal baseline from Apple Health and offers guided breathing. Free to start.',
+    es: 'Sigue la tendencia de tu propia HRV: con Apple Watch, ONDA construye tu línea base personal a partir de Apple Health y ofrece respiración guiada. Gratis para empezar.',
+    ru: 'Следите за трендом своей HRV: с Apple Watch ONDA строит вашу личную норму по данным Apple Health и предлагает дыхательные практики. Начать можно бесплатно.',
+    uk: 'Стежте за трендом своєї HRV: з Apple Watch ONDA будує вашу особисту норму за даними Apple Health і пропонує дихальні практики. Почати можна безкоштовно.',
+    zh: '追踪你自己的 HRV 趋势：配合 Apple Watch，ONDA 会根据 Apple 健康数据建立你的个人基线，并提供引导式呼吸。免费开始。',
+    de: 'Verfolge deinen eigenen HRV-Trend: Mit der Apple Watch baut ONDA aus Apple Health deine persönliche Baseline auf und bietet geführte Atmung. Kostenlos starten.',
+    fr: 'Suivez la tendance de votre propre VFC : avec l’Apple Watch, ONDA établit votre ligne de base personnelle à partir d’Apple Santé et propose une respiration guidée. Gratuit pour commencer.',
+    it: 'Segui l’andamento della tua HRV: con Apple Watch, ONDA costruisce la tua baseline personale da Apple Salute e offre respirazione guidata. Inizia gratis.',
+    nl: 'Volg je eigen HRV-trend: met Apple Watch bouwt ONDA je persoonlijke baseline op uit Apple Gezondheid en biedt begeleide ademhaling. Gratis te beginnen.',
+    ja: '自分の HRV の傾向を追跡しましょう。Apple Watch があれば、ONDA が Apple ヘルスケアのデータから個人のベースラインを作り、ガイド付き呼吸を提供します。無料で始められます。',
+    pl: 'Śledź trend swojego HRV: z Apple Watch ONDA buduje twoją osobistą linię bazową na podstawie Apple Zdrowie i oferuje prowadzony oddech. Zacznij za darmo.',
+    pt: 'Acompanhe a tendência da sua própria VFC: com Apple Watch, o ONDA constrói sua linha de base pessoal a partir do app Saúde da Apple e oferece respiração guiada. Comece grátis.',
   },
 }
 

@@ -62,6 +62,8 @@ const bestRedLightFaceMasks2026: Comparison = {
   ],
   verdict:
     'CurrentBody Series 2 and Lumara Viso share first place by ONDA score (8.0 each, equal on the evidence tie-break): CurrentBody is the consumer-market default with integrated neck flap, Lumara the spec maximalist with 470 LEDs and three wavelengths. Omnilux Contour Face (7.8) has the best flexible-silicone comfort and a moderate, plausible stated irradiance, but no trial of the Contour itself has been published, and its product page claims clinical proof that does not exist for this mask, which costs it a 0.3-point marketing-honesty adjustment. Dr. Dennis Gross adds dual red + blue spectrum with dermatology brand pedigree. LightStim for Wrinkles is the four-wavelength handheld option at $249 if you accept handheld active use. Solawave Wand covers the $169 entry tier. Pick on three questions: comfort and price vs consumer polish, mask vs handheld form factor, single vs multi-wavelength coverage.',
+  topEqualWhoSuits:
+    'Who each suits: CurrentBody Series 2 ($470) if you want the lower price and the standard red + near-infrared pair; Lumara Viso ($650) if you want the most LEDs (470) and a third wavelength (amber). Both are flexible-silicone masks with an integrated neck flap.',
   faq: [
     {
       q: 'What is the best red light face mask in 2026?',

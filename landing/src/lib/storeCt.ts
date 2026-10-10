@@ -9,6 +9,7 @@
  *   vs_<a>_<b>      review head-to-head           cmp_<slug>     /compare/* (ONDA vs …)
  *   gl_<term>       glossary term                 tool_<name>    tool
  *   bio_<metric>    /bio/*                        pg_<name>      product pages
+ *   science_<slug>  /science/* page (science_hub_low_hrv = why-is-my-hrv-low)
  * Non-English pages get a `_<lang>` suffix (es/ru/uk/zh).
  *
  * If the slug doesn't fit, it's cut and a 4-char hash of the full slug is
@@ -18,7 +19,7 @@ import { appStoreUrl } from '../config/appStore'
 
 export type CtType =
   | 'hdr' | 'ftr' | 'home' | 'ar' | 'hub' | 'pillar' | 'rv' | 'rvhub'
-  | 'vs' | 'cmp' | 'gl' | 'tool' | 'bio' | 'pg'
+  | 'vs' | 'cmp' | 'gl' | 'tool' | 'bio' | 'pg' | 'science'
 
 const MAX = 40
 
@@ -55,5 +56,6 @@ export function pageTypeFromPath(pathname: string): string {
   if (p.startsWith('/glossary')) return 'gl'
   if (p.startsWith('/tools')) return 'tool'
   if (p.startsWith('/bio')) return 'bio'
+  if (p.startsWith('/science')) return 'science'
   return p.slice(1).split('/')[0].replace(/[^a-z0-9]+/g, '_').slice(0, 20) || 'page'
 }
