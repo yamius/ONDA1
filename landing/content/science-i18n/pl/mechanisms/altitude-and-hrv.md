@@ -1,5 +1,5 @@
 ---
-sourceHash: 3fe749fde6e8
+sourceHash: 894a41c93c3f
 title: "Wysokość a HRV: co się zmienia i czego nie da się przewidzieć"
 metaTitle: "Wysokość a HRV: co pokazują badania"
 metaDescription: "Jak duża wysokość zmienia zmienność rytmu serca, czy HRV może przewidzieć chorobę wysokościową i dlaczego o zejściu decydują objawy, a nie zegarek."
@@ -101,6 +101,20 @@ evidenceMap:
     limitation: "Zastrzeżenie autorów; czujników na nadgarstku nie testowano."
   - claim: "Badacze wybierali stabilne fragmenty snu na oko."
     limitation: "Zapisy w najlepszych warunkach; automatyczne przetwarzanie może wypadać gorzej."
+  - claim: "Wśród rdzennych mieszkańców jednego regionu Himalajów (fakt altitude.rai.design) osoby żyjące wyżej miały wyższe SDNN i RMSSD."
+    limitation: "Pojedyncze badanie przekrojowe rdzennych mieszkańców; porównuje różne osoby, a nie te same osoby w czasie; nie dotyczy przyjezdnych."
+  - claim: "Autorzy odczytują wyższe wartości jako możliwą adaptację do długotrwałego niedoboru tlenu."
+    limitation: "Interpretacja autorów; geny, warunki dorastania i otoczenie nie zostały rozdzielone."
+  - claim: "W mieście położonym wysoko (fakt altitude.ramirez.design) dorośli wychowani na niskich wysokościach mieli niższe HRV niż dorośli wychowani na dużych wysokościach."
+    limitation: "Pojedyncze badanie przekrojowe; związek, a nie przyczyna."
+  - claim: "Autorzy wiążą różnicę z ekspozycją na wysokość we wczesnym okresie życia, a nie z bezpośrednim przyczynowym wpływem niedoboru tlenu w dzieciństwie."
+    limitation: "Wniosek autorów; postulują badania podłużne."
+  - claim: "W grupie zawodowej regularnie dojeżdżającej na wysokość (fakt altitude.lang.design) nocne RMSSD na wysokości spadało, a SDNN rosło."
+    limitation: "Pojedyncze badanie mężczyzn pracujących od lat na zmianę tydzień na wysokości; to nie pierwszy wyjazd."
+  - claim: "Po powtarzanych sprintach przy symulowanym niedoborze tlenu (fakt altitude.gutknecht.design) HRV w pierwszych minutach regeneracji zmieniał format sprintów, a nie niedobór tlenu."
+    limitation: "Pojedyncze małe badanie; regeneracja po sprintach, a nie HRV w spoczynku na wysokości."
+  - claim: "W próbie klinicznej (fakt altitude.taboni.design) po nocy na umiarkowanej symulowanej wysokości przy kolejnym wejściu następowała aklimatyzacja oddechowa, bez zmiany HRV ani wrażliwości baroreceptorów."
+    limitation: "Pojedyncze małe badanie w komorze u mężczyzn z chorobą wieńcową; nie dotyczy zdrowych osób i nie jest planem wejścia."
 ---
 
 ## Co dzieje się z HRV na wysokości?
@@ -137,6 +151,16 @@ W badaniu, w którym uczestniczyło {{fact:altitude.perini.design}}, udział moc
 
 W tym jednym badaniu na bardzo dużej wysokości związany z oddechem udział rytmu serca nie wrócił więc do wzorca z poziomu morza nawet po długim pobycie. To pojedyncze małe badanie z 1996 roku na jednej wysokości, oparte wyłącznie na miarach widmowych. Nie podaje RMSSD, nic nie mówi o umiarkowanych wysokościach ani o objawach, a jego pełnego tekstu nie dało się sprawdzić pod kątem konfliktu interesów.
 
+**Próba kliniczna.** W badaniu w komorze, w którym uczestniczyło {{fact:altitude.taboni.design}}, po nocy na pośredniej wysokości przy kolejnym wejściu następowała mierzalna aklimatyzacja oddechowa, podczas gdy HRV i wrażliwość baroreceptorów się nie różniły [S11]. Oddech może więc zacząć się dostosowywać, zanim zmienią się miary rytmu serca. To pojedyncze małe badanie u mężczyzn z chorobą serca; nie dotyczy zdrowych osób i nie jest poradą co do planów wejścia.
+
+## A co z ludźmi, którzy mieszkają lub pracują na wysokości?
+
+Wszystko powyżej dotyczy mieszkańców nizin, którzy wyjeżdżają w góry. Ludzie mieszkający na wysokości to inny przypadek. W badaniu przekrojowym, w którym uczestniczyło {{fact:altitude.rai.design}}, osoby żyjące wyżej miały wyższe SDNN i RMSSD [S7]. Autorzy odczytują to jako możliwą adaptację do długotrwałego niedoboru tlenu [S7]. W Bogocie badanie porównało {{fact:altitude.ramirez.design}}: dorośli wychowani na niskich wysokościach mieli niższe HRV niż wychowani na dużych wysokościach [S8]. Autorzy wiążą to z wysokością we wczesnym okresie życia, a nie z bezpośrednim przyczynowym wpływem niedoboru tlenu w dzieciństwie [S8].
+
+Oba to pojedyncze badania przekrojowe. Porównują różne osoby w jednym momencie, nie potrafią oddzielić genów, warunków dorastania i otoczenia i nie pokazują, jak HRV przyjezdnego zmienia się w ciągu miesięcy. Obraz nie jest też jednolity: w małym badaniu z 1996 roku Szerpowie mieli wyniki porównywalne z mieszkańcami nizin [S5]. Nic z tego nie dotyczy wyjazdu w góry.
+
+**Grupa zawodowa.** W badaniu, w którym uczestniczyło {{fact:altitude.lang.design}}, RMSSD w tych godzinach spadało na wysokości, a SDNN rosło [S9], więc różne miary HRV mogą zmieniać się w przeciwnych kierunkach. Ci pracownicy od lat spędzają na zmianę tygodnie na wysokości i na poziomie morza, co nie jest tym samym co pierwszy wyjazd; to też pojedyncze badanie u mężczyzn.
+
 ## Czy urządzenie noszone może mierzyć HRV na wysokości?
 
 Może rejestrować HRV, ale szybkie, związane z oddechem szczegóły są mniej wiarygodne niż w EKG. Badanie metodologiczne porównało czujnik tętna na palcu, który mierzy tętno optycznie (fotopletyzmografia, PPG), z EKG podczas snu u {{fact:altitude.castiglioni.design}} [S6]; w najwyższym obozie zarejestrowano {{fact:altitude.castiglioni.highestCamp}} [S6]. Czujnik tętna dawał użyteczne HRV nawet tam [S6].
@@ -151,6 +175,8 @@ W pierwszych dniach na wysokości niższe HRV jest częste: w łączonych krótk
 
 Spadek jest częsty, ale nie zawsze widoczny. W badaniu żołnierzy HRV analizowano przez {{fact:altitude.boos.window}}. Żadna z miar w dziedzinie czasu, na przykład RMSSD, nie zmieniła się istotnie podczas snu [S4], ale wysokość była umiarkowana, a {{fact:altitude.boos.highestNights}}. W tym samym badaniu to, jak ciężki wydawał się poprzedni dzień, wiązało się z HRV następnej nocy [S4], więc wysiłek w ciągu dnia także wpływa na nocne wyniki ([wysiłek fizyczny a HRV](/science/mechanisms/exercise-and-hrv)).
 
+Regeneracja po ciężkim wysiłku to inna kwestia niż HRV w spoczynku. W badaniu, w którym uczestniczyło {{fact:altitude.gutknecht.design}}, HRV w pierwszych minutach regeneracji zmieniał format sprintów, a nie niedobór tlenu [S10]. Dotyczy to regeneracji po sprintach, a nie HRV w spoczynku w pierwszych dniach na wysokości, który opisuje metaanaliza powyżej [S1].
+
 Porównywanie tych nocy z Twoją zwykłą linią bazową z domu niewiele mówi. Różnica jest spodziewana i nie mówi Ci, czy dobrze się dostosowujesz, czy zaczynasz chorować. Bardziej przydatny jest trend z kilku dni na tej samej wysokości, odczytywany razem z tym, jak się czujesz. {{fact:claim.hrvNotStress}}. Krótki sen, alkohol, ciężki wysiłek i infekcja także wpływają na te wyniki ([dlaczego HRV zmienia się z dnia na dzień](/science/mechanisms/hrv-day-to-day); [sen a HRV](/science/mechanisms/sleep-and-hrv); [choroba a HRV](/science/mechanisms/illness-and-hrv); [interpretacja HRV](/science/concepts/interpreting-hrv)).
 
 ## Co pokazują dowody?
@@ -158,7 +184,7 @@ Porównywanie tych nocy z Twoją zwykłą linią bazową z domu niewiele mówi. 
 **Według klasy dowodów.**
 
 - **Zależy od kontekstu.** U zdrowych dorosłych w pierwszych dniach na wysokości HRV jest niższe niż na poziomie morza, zarówno u osób wytrenowanych, jak i niewytrenowanych [S1]. Wyżej SDNN spada bardziej, natomiast RMSSD i moc wysokiej częstotliwości nie różnią się istotnie między badaniami prowadzonymi niżej i wyżej [S1]. Część spadku wysokiej częstotliwości może odzwierciedlać szybszy oddech [S1].
-- **Wstępne dane.** Czujnik tętna na palcu rejestruje HRV na bardzo dużej wysokości, ale w szybkich składowych odbiega od EKG [S6]. W jednym małym badaniu na bardzo dużej wysokości związany z oddechem udział rytmu serca pozostał niski po długim pobycie [S5]. Nocne HRV w dziedzinie czasu nie zmieniło się istotnie na umiarkowanej wysokości w jednym badaniu [S4].
+- **Wstępne dane.** Czujnik tętna na palcu rejestruje HRV na bardzo dużej wysokości, ale w szybkich składowych odbiega od EKG [S6]. W jednym małym badaniu na bardzo dużej wysokości związany z oddechem udział rytmu serca pozostał niski po długim pobycie [S5]. Nocne HRV w dziedzinie czasu nie zmieniło się istotnie na umiarkowanej wysokości w jednym badaniu [S4]. Osoby mieszkające na wysokości różnią się od przyjezdnych: mieszkańcy żyjący wyżej mieli wyższe HRV [S7], a dorośli wychowani na niskiej wysokości mieli w mieście położonym wysoko niższe HRV niż wychowani tam [S8]. W grupie zawodowej nocne RMSSD na wysokości spadało, a SDNN rosło [S9]. W próbie klinicznej noc na umiarkowanej wysokości zmieniła oddech, ale nie HRV przy kolejnym wejściu [S11]. Po sprintach wczesną regenerację HRV zmieniał raczej format niż niedobór tlenu [S10].
 - **Sporne.** Czy HRV przewiduje ostrą chorobę górską: umiarkowane związki w metaanalizie [S2] i sygnał na jednej wysokości w badaniu terenowym [S3], wobec braku przewidywania w innym badaniu [S4]. Interpretacja zmiany jako przewagi układu współczulnego, oparta częściowo na LF/HF [S1].
 - **Nieznane lub niewykazane.** Że HRV z zegarka może ostrzec konkretną osobę przed chorobą wysokościową; że aklimatyzacja trwa kilka dni; jak czujniki na nadgarstku sprawdzają się na wysokości.
 
@@ -177,6 +203,7 @@ To najważniejsza część tej strony. HRV i zegarki nie zastępują sprawdzania
 - **HRV nie jest testem na chorobę wysokościową.** Badania są niezgodne i żadne nie pokazuje, że odczyt może ostrzec konkretną osobę [S2] [S3] [S4].
 - **Spadek na wysokości jest spodziewany i nie oznacza uszkodzenia.** To zwykła reakcja w pierwszych dniach [S1].
 - **Twoja linia bazowa z domu to w pierwszych dniach zła miara.** Różnica jest spodziewana i nie pokazuje, jak dobrze się dostosowujesz.
+- **Mieszkańcy to nie przyjezdni.** Wyniki u osób mieszkających na wysokości [S7] [S8] nie pokazują, co dzieje się podczas wyjazdu.
 - **Większość dowodów pochodzi od młodych, sprawnych mężczyzn.** Danych o kobietach, osobach starszych i mniej sprawnych jest niewiele [S1].
 - **Stosunek LF/HF jest sporny.** Nawet autorzy, którzy opisują jego wzrost, dodają, że nie jest on bezpośrednią miarą napięcia układu współczulnego [S1].
 - **Żadnych wniosków medycznych.** Żadne z tych badań nie diagnozuje choroby ani nie podaje planu wejścia.

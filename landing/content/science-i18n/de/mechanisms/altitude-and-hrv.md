@@ -1,5 +1,5 @@
 ---
-sourceHash: 3fe749fde6e8
+sourceHash: 894a41c93c3f
 title: "Höhe und HRV: Was sich verändert und was sie nicht vorhersagen kann"
 metaTitle: "Höhe und HRV: Was Studien zeigen"
 metaDescription: "Wie große Höhe die Herzratenvariabilität verändert, ob die HRV Höhenkrankheit vorhersagen kann und warum Symptome, nicht eine Uhr, über den Abstieg entscheiden."
@@ -102,6 +102,20 @@ evidenceMap:
     limitation: "Einschränkung der Autoren; Sensoren am Handgelenk wurden nicht getestet."
   - claim: "Die Forschenden wählten stabile Schlafabschnitte nach Augenmaß aus."
     limitation: "Aufzeichnungen unter besten Bedingungen; eine automatische Verarbeitung kann schlechter abschneiden."
+  - claim: "Unter Einheimischen einer Himalaya-Region (Fakt altitude.rai.design) hatten diejenigen, die höher lebten, höhere SDNN- und RMSSD-Werte."
+    limitation: "Einzelne Querschnittsstudie mit Einheimischen; vergleicht verschiedene Menschen, nicht dieselben Menschen im Zeitverlauf; gilt nicht für Besucher."
+  - claim: "Die Autoren deuten die höheren Werte als mögliche Anpassung an langfristigen Sauerstoffmangel."
+    limitation: "Deutung der Autoren; Gene, Herkunft und Umgebung werden nicht getrennt."
+  - claim: "In einer hochgelegenen Stadt (Fakt altitude.ramirez.design) hatten Erwachsene, die in niedrigen Höhen aufgewachsen waren, eine niedrigere HRV als Erwachsene, die in großen Höhen aufgewachsen waren."
+    limitation: "Einzelne Querschnittsstudie; Zusammenhang, keine Ursache."
+  - claim: "Die Autoren führen den Unterschied auf die Höhe in der frühen Lebensphase zurück, nicht auf eine direkte ursächliche Wirkung von Sauerstoffmangel in der Kindheit."
+    limitation: "Schlussfolgerung der Autoren; sie fordern Längsschnittstudien."
+  - claim: "In einer Berufsgruppe, die regelmäßig in die Höhe pendelt (Fakt altitude.lang.design), sank der nächtliche RMSSD in der Höhe, während der SDNN stieg."
+    limitation: "Einzelne Studie mit männlichen Arbeitern, die seit Jahren wochenweise in der Höhe arbeiten; keine erste Reise."
+  - claim: "Nach wiederholten Sprints bei simuliertem Sauerstoffmangel (Fakt altitude.gutknecht.design) veränderte das Sprintformat, nicht der Sauerstoffmangel, die HRV in den ersten Minuten der Erholung."
+    limitation: "Einzelne kleine Studie; Erholung nach Sprints, nicht die Ruhe-HRV in der Höhe."
+  - claim: "In einer klinischen Stichprobe (Fakt altitude.taboni.design) folgte auf eine Nacht in moderater simulierter Höhe beim nächsten Aufstieg eine Akklimatisierung der Atmung, ohne Veränderung der HRV oder der Baroreflexsensitivität."
+    limitation: "Einzelne kleine Kammerstudie mit Männern mit koronarer Herzkrankheit; gilt nicht für gesunde Menschen und ist kein Aufstiegsplan."
 ---
 
 ## Was passiert mit der HRV in der Höhe?
@@ -138,6 +152,16 @@ In einer Studie mit {{fact:altitude.perini.design}} sank der Anteil der hochfreq
 
 In dieser einen Studie in sehr großer Höhe war der atmungsgebundene Anteil des Herzrhythmus also auch nach dem langen Aufenthalt nicht zu seinem Muster auf Meereshöhe zurückgekehrt. Es ist eine einzelne kleine Studie aus dem Jahr 1996 in einer Höhe, nur mit spektralen Maßen. Sie berichtet keine RMSSD, sagt nichts über mittlere Höhen oder über Symptome, und ihr Volltext konnte nicht auf Interessenkonflikte geprüft werden.
 
+**Eine klinische Stichprobe.** In einer Kammerstudie mit {{fact:altitude.taboni.design}} folgte auf die Nacht in der mittleren Höhe beim nächsten Aufstieg eine messbare Akklimatisierung der Atmung, während sich die HRV und die Baroreflexsensitivität nicht unterschieden [S11]. Die Atmung kann sich also schon anpassen, während die Herzrhythmus-Maße unverändert bleiben. Das ist eine einzelne kleine Studie mit herzkranken Männern; sie gilt nicht für gesunde Menschen und ist kein Rat zu Aufstiegsplänen.
+
+## Und Menschen, die in der Höhe leben oder arbeiten?
+
+Alles oben betrifft Flachländer, die in die Höhe reisen. Menschen, die in der Höhe leben, sind ein anderer Fall. In einer Querschnittsstudie mit {{fact:altitude.rai.design}} hatten diejenigen, die höher lebten, höhere SDNN- und RMSSD-Werte [S7]. Die Autoren deuten das als mögliche Anpassung an langfristigen Sauerstoffmangel [S7]. In Bogotá verglich eine Studie {{fact:altitude.ramirez.design}}: Erwachsene, die in niedrigen Höhen aufgewachsen waren, zeigten eine niedrigere HRV als die in großen Höhen aufgewachsenen [S8]. Die Autoren führen das auf die Höhe in der frühen Lebensphase zurück, nicht auf eine direkte ursächliche Wirkung von Sauerstoffmangel in der Kindheit [S8].
+
+Beides sind einzelne Querschnittsstudien. Sie vergleichen verschiedene Menschen zu einem Zeitpunkt, können Gene, Herkunft und Umgebung nicht trennen und zeigen nicht, wie sich die HRV eines Besuchers über Monate verändert. Einheitlich ist das Bild auch nicht: In der kleinen Studie von 1996 zeigten die Sherpa ähnliche Ergebnisse wie die Flachländer [S5]. Nichts davon gilt für eine Reise in die Berge.
+
+**Eine Berufsgruppe.** In einer Studie mit {{fact:altitude.lang.design}} sank der RMSSD in diesen Stunden in der Höhe, während der SDNN stieg [S9]; verschiedene HRV-Maße können sich also gegenläufig bewegen. Diese Arbeiter wechseln seit Jahren wochenweise zwischen Höhe und Meereshöhe, und das ist nicht dasselbe wie eine erste Reise; zudem ist es eine einzelne Studie mit Männern.
+
 ## Kann ein Wearable die HRV in der Höhe messen?
 
 Es kann die HRV aufzeichnen, doch die schnellen, atmungsgebundenen Details sind weniger verlässlich als bei einem EKG. Eine Methodenstudie verglich einen Pulssensor am Finger, der den Puls optisch misst (Photoplethysmografie, PPG), mit einem EKG im Schlaf bei {{fact:altitude.castiglioni.design}} [S6]; {{fact:altitude.castiglioni.highestCamp}} wurden im höchsten Lager aufgezeichnet [S6]. Der Pulssensor lieferte selbst dort verwertbare HRV [S6].
@@ -152,6 +176,8 @@ In den ersten Tagen in der Höhe ist eine niedrigere HRV häufig: In zusammengef
 
 Ein Abfall ist häufig, zeigt sich aber nicht immer. In der Studie mit den Soldaten wurde die HRV für {{fact:altitude.boos.window}} ausgewertet. Keines der Maße im Zeitbereich, etwa die RMSSD, veränderte sich im Schlaf signifikant [S4], aber die Höhe war mittel, und {{fact:altitude.boos.highestNights}}. In derselben Studie hing die empfundene Anstrengung des Vortags mit der HRV der folgenden Nacht zusammen [S4]; die Belastung des Tages bewegt also auch die Werte der Nacht ([Training und HRV](/science/mechanisms/exercise-and-hrv)).
 
+Die Erholung nach harter Belastung ist eine andere Frage als die Ruhe-HRV. In einer Studie mit {{fact:altitude.gutknecht.design}} veränderte das Sprintformat, nicht der Sauerstoffmangel, die HRV in den ersten Minuten der Erholung [S10]. Das betrifft die Erholung nach Sprints, nicht die Ruhe-HRV in den ersten Tagen in der Höhe, die die oben genannte Metaanalyse beschreibt [S1].
+
 Diese Nächte mit deiner gewohnten Baseline von zu Hause zu vergleichen, sagt wenig. Eine Abweichung ist zu erwarten, und sie sagt dir nicht, ob du dich gut anpasst oder krank wirst. Aussagekräftiger ist der Trend über mehrere Tage in derselben Höhe, zusammen mit deinem Befinden gelesen. {{fact:claim.hrvNotStress}}. Kurzer Schlaf, Alkohol, harte Belastung und Infektionen bewegen diese Werte ebenfalls ([warum sich die HRV von Tag zu Tag verändert](/science/mechanisms/hrv-day-to-day); [Schlaf und HRV](/science/mechanisms/sleep-and-hrv); [Krankheit und HRV](/science/mechanisms/illness-and-hrv); [HRV interpretieren](/science/concepts/interpreting-hrv)).
 
 ## Was zeigt die Evidenz?
@@ -159,7 +185,7 @@ Diese Nächte mit deiner gewohnten Baseline von zu Hause zu vergleichen, sagt we
 **Nach Evidenzklasse.**
 
 - **Kontextabhängig.** Bei gesunden Erwachsenen in ihren ersten Tagen in der Höhe ist die HRV niedriger als auf Meereshöhe, bei trainierten wie untrainierten Menschen [S1]. Weiter oben sinkt die SDNN stärker, während sich RMSSD und Hochfrequenzleistung zwischen Studien in niedrigerer und größerer Höhe nicht signifikant unterscheiden [S1]. Ein Teil des Hochfrequenzabfalls kann die schnellere Atmung widerspiegeln [S1].
-- **Erste Hinweise.** Ein Pulssensor am Finger zeichnet die HRV in sehr großer Höhe auf, weicht aber bei den schnellen Anteilen vom EKG ab [S6]. In einer kleinen Studie in sehr großer Höhe blieb der atmungsgebundene Anteil des Herzrhythmus nach einem langen Aufenthalt niedrig [S5]. Die nächtliche HRV im Zeitbereich veränderte sich in einer Studie in mittlerer Höhe nicht signifikant [S4].
+- **Erste Hinweise.** Ein Pulssensor am Finger zeichnet die HRV in sehr großer Höhe auf, weicht aber bei den schnellen Anteilen vom EKG ab [S6]. In einer kleinen Studie in sehr großer Höhe blieb der atmungsgebundene Anteil des Herzrhythmus nach einem langen Aufenthalt niedrig [S5]. Die nächtliche HRV im Zeitbereich veränderte sich in einer Studie in mittlerer Höhe nicht signifikant [S4]. Menschen, die in der Höhe leben, unterscheiden sich von Besuchern: Einheimische, die höher lebten, hatten eine höhere HRV [S7], und Erwachsene, die in niedriger Höhe aufgewachsen waren, hatten in einer hochgelegenen Stadt eine niedrigere HRV als dort aufgewachsene [S8]. In einer Berufsgruppe sank der nächtliche RMSSD in der Höhe, während der SDNN stieg [S9]. In einer klinischen Stichprobe veränderte eine Nacht in moderater Höhe die Atmung, nicht aber die HRV beim nächsten Aufstieg [S11]. Nach Sprints veränderte eher das Format als der Sauerstoffmangel die HRV in der frühen Erholung [S10].
 - **Umstritten.** Ob die HRV die akute Bergkrankheit vorhersagt: moderate Zusammenhänge in einer Metaanalyse [S2] und ein Signal in einer bestimmten Höhe in einer Feldstudie [S3], gegenüber keiner Vorhersage in einer weiteren Studie [S4]. Die Deutung der Verschiebung als sympathische Dominanz, die sich teilweise auf LF/HF stützt [S1].
 - **Unbekannt oder nicht gezeigt.** Dass die HRV einer Uhr einen einzelnen Menschen vor Höhenkrankheit warnen kann; dass man sich in ein paar Tagen akklimatisiert; wie Sensoren am Handgelenk in der Höhe abschneiden.
 
@@ -178,6 +204,7 @@ Das ist der wichtigste Teil der Seite. HRV und Uhren ersetzen nicht die Prüfung
 - **Die HRV ist kein Test auf Höhenkrankheit.** Die Studien widersprechen sich, und keine zeigt, dass ein Messwert einen einzelnen Menschen warnen kann [S2] [S3] [S4].
 - **Ein Abfall in der Höhe ist zu erwarten und kein Schaden.** Er ist die übliche Reaktion in den ersten Tagen [S1].
 - **Deine Baseline von zu Hause ist in den ersten Tagen der falsche Maßstab.** Die Abweichung ist zu erwarten und zeigt nicht, wie gut du dich anpasst.
+- **Einheimische sind keine Besucher.** Befunde bei Menschen, die in der Höhe leben [S7] [S8], zeigen nicht, was auf einer Reise passiert.
 - **Der Großteil der Evidenz stammt von jungen, fitten Männern.** Daten zu Frauen, älteren Erwachsenen und weniger fitten Menschen sind begrenzt [S1].
 - **Das LF/HF-Verhältnis ist umstritten.** Selbst die Autoren, die seinen Anstieg berichten, ergänzen, dass es kein direktes Maß des Sympathikustonus ist [S1].
 - **Keine medizinischen Schlussfolgerungen.** Keine dieser Studien diagnostiziert eine Erkrankung oder gibt einen Aufstiegsplan vor.

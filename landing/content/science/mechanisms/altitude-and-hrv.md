@@ -85,6 +85,51 @@ sources:
     pmid: 35458875
     type: other
     note: "Method comparison with a research finger sensor, not a consumer wrist device; funded by the Italian Ministry of Health; authors declare no conflict of interest"
+  - id: S7
+    cite: "Rai et al. (2025)"
+    title: "Altitude-related variations in heart rate variability among native Sikkimese: A cross-sectional study"
+    journal: "The Indian Journal of Medical Research"
+    year: 2025
+    doi: "10.25259/ijmr_1432_2025"
+    pmid: 41648972
+    type: observational
+    note: "Single cross-sectional study of native residents; 5-minute resting ECG; the high-altitude group was the smallest; no external funding; authors declare no conflicts of interest"
+  - id: S8
+    cite: "Ramírez et al. (2026)"
+    title: "Heart Rate Variability in Adults from Low- and High-Altitude Origins Residing in a High-Altitude City: A Cross-Sectional Comparison"
+    journal: "High Altitude Medicine & Biology"
+    year: 2026
+    doi: "10.1177/15578682261438763"
+    pmid: 41913536
+    type: observational
+    note: "Single cross-sectional study; online ahead of print; the authors argue against a direct causal reading; COI not checked: no open full text"
+  - id: S9
+    cite: "Lang et al. (2026)"
+    title: "Cardiovascular and autonomic modulation during nighttime rest under real-world conditions in miners exposed to chronic intermittent hypoxia"
+    journal: "Frontiers in Physiology"
+    year: 2026
+    doi: "10.3389/fphys.2026.1747092"
+    pmid: 41983006
+    type: observational
+    note: "Single field study of an occupational group (male mine workers on rotating shifts, employees of one mining company, which holds the raw data under agreement); funded by ANID/FONDECYT (Chile); authors declare no conflict of interest"
+  - id: S10
+    cite: "Gutknecht et al. (2026)"
+    title: "Exercise modality but not hypoxia alters heart rate variability after a single repeated-sprint session"
+    journal: "European Journal of Applied Physiology"
+    year: 2026
+    doi: "10.1007/s00421-026-06138-4"
+    pmid: 41677847
+    type: randomized-trial
+    note: "Small randomized crossover trial; recovery after sprints in simulated low oxygen, not resting HRV at altitude; COI not checked: no open full text"
+  - id: S11
+    cite: "Taboni et al. (2026)"
+    title: "One night at 1,900 m prompts ventilatory acclimatization without altering cardiac autonomic regulation at 3,000 m in males with coronary artery disease"
+    journal: "Journal of Applied Physiology"
+    year: 2026
+    doi: "10.1152/japplphysiol.00416.2025"
+    pmid: 41455100
+    type: randomized-trial
+    note: "Clinical sample: ten men with coronary artery disease in an altitude chamber; placebo-controlled crossover; COI not checked: no open full text"
 evidenceMap:
   - claim: "In a meta-analysis of healthy adults in their first days at high altitude (facts altitude.li.studies, altitude.li.scope), SDNN, RMSSD, high-frequency power and related HRV measures were lower than at sea level."
     sources: [S1]
@@ -326,6 +371,48 @@ evidenceMap:
     claimType: measurement
     quote: "A segment of at least one-hour duration during sleep was visually selected looking for stable periods of the triaxial accelerometers in lying position."
     limitation: "Best-case recordings; automatic processing may do worse."
+  - claim: "Among native residents of one Himalayan region (fact altitude.rai.design), those living at higher altitudes had higher SDNN and RMSSD."
+    sources: [S7]
+    class: emerging
+    claimType: physiology
+    quote: "We found significantly higher values of time domain HR variability indices including standard deviation of all normal-to-normal intervals (SDNN) and root mean square of successive differences between normal heartbeats (RMSSD) among the people residing at higher altitudes in Sikkim (P<0.001)"
+    limitation: "Single cross-sectional study of native residents; compares different people, not the same people over time; does not apply to visitors."
+  - claim: "The authors read the higher values as a possible adaptive response to long-term low oxygen."
+    sources: [S7]
+    class: emerging
+    claimType: physiology
+    quote: "reflecting a possible adaptive response to chronic hypobaric hypoxia"
+    limitation: "Authors' interpretation; genes, upbringing and surroundings are not separated."
+  - claim: "In a high-altitude city (fact altitude.ramirez.design), adults raised at low altitudes had lower HRV than adults raised at high altitudes."
+    sources: [S8]
+    class: emerging
+    claimType: physiology
+    quote: "Adults raised at low altitudes showed lower HRV when living in Bogotá compared with those raised at high altitudes"
+    limitation: "Single cross-sectional study; association, not cause."
+  - claim: "The authors relate the difference to early-life altitude exposure rather than to a direct causal effect of low oxygen in childhood."
+    sources: [S8]
+    class: emerging
+    claimType: other
+    quote: "rather than a direct causal effect of chronic hypoxia during childhood"
+    limitation: "Authors' conclusion; they call for longitudinal studies."
+  - claim: "In an occupational group commuting to altitude (fact altitude.lang.design), night-time RMSSD fell at altitude while SDNN rose."
+    sources: [S9]
+    class: emerging
+    claimType: physiology
+    quote: "Parasympathetic-related HRV indices (RMSSD and SampEn) decreased significantly at HA, while SDNN increased under CIH exposure."
+    limitation: "Single study of male workers with years of alternating weeks at altitude; not a first trip."
+  - claim: "After repeated sprints in simulated low oxygen (fact altitude.gutknecht.design), the sprint format, not low oxygen, changed HRV in the first minutes of recovery."
+    sources: [S10]
+    class: emerging
+    claimType: physiology
+    quote: "During immediate recovery, modality (6:24 vs. 10:20), but not hypoxia had a significant effect on HRV indices, with the 10:20 condition delaying parasympathetic reactivation."
+    limitation: "Single small trial; recovery after sprints, not resting HRV at altitude."
+  - claim: "In a clinical sample (fact altitude.taboni.design), a night at moderate simulated altitude was followed by ventilatory acclimatisation on the next ascent, without a change in HRV or baroreflex sensitivity."
+    sources: [S11]
+    class: emerging
+    claimType: physiology
+    quote: "We conclude that a single night at 1,900 m is sufficient to trigger measurable ventilatory acclimatization in persons with CAD without altering BRS and HRV at 3,000 m"
+    limitation: "Single small chamber study in men with coronary artery disease; does not apply to healthy people and is not an ascent plan."
 ---
 
 ## What happens to HRV at altitude?
@@ -362,6 +449,16 @@ In a study of {{fact:altitude.perini.design}}, the share of high-frequency, brea
 
 So, in this one study at very high altitude, the breathing-linked share of the heart rhythm had not returned to its sea-level pattern after the long stay. It is a single small study from 1996 at one altitude, using spectral measures only. It reports no RMSSD, says nothing about moderate altitudes or about symptoms, and its full text could not be checked for conflicts of interest.
 
+**A clinical sample.** In a chamber study of {{fact:altitude.taboni.design}}, the night at the intermediate altitude was followed by measurable ventilatory acclimatisation on the next ascent, while HRV and baroreflex sensitivity showed no differences [S11]. So breathing can start to adjust while the heart-rhythm measures do not. This is a single small study in men with heart disease; it does not apply to healthy people and is not advice on ascent plans.
+
+## What about people who live or work at altitude?
+
+Everything above concerns lowlanders who travel up. People who live at altitude are a different case. In a cross-sectional study of {{fact:altitude.rai.design}}, those living higher up had higher SDNN and RMSSD [S7]. The authors read this as a possible adaptive response to long-term low oxygen [S7]. In Bogotá, a study compared {{fact:altitude.ramirez.design}}: adults raised at low altitudes showed lower HRV than those raised at high altitudes [S8]. The authors relate this to altitude in early life rather than to a direct causal effect of low oxygen in childhood [S8].
+
+Both are single cross-sectional studies. They compare different people at one point in time, cannot separate genes, upbringing and surroundings, and do not show how a visitor's HRV changes over months. The picture is not uniform either: in the small 1996 study, the Sherpas showed results comparable to the lowlanders [S5]. None of this applies to a trip to the mountains.
+
+**An occupational group.** In a study of {{fact:altitude.lang.design}}, RMSSD during those hours fell at altitude while SDNN rose [S9], so different HRV measures can move in opposite directions. These workers have spent years alternating weeks at altitude and at sea level, which is not the same as a first trip; it is a single study in men.
+
 ## Can a wearable measure HRV at altitude?
 
 It can record HRV, but the fast, breathing-linked details are less reliable than an ECG. A method study compared a finger pulse sensor, which reads the pulse optically (photoplethysmography, PPG), with an ECG during sleep in {{fact:altitude.castiglioni.design}} [S6]; {{fact:altitude.castiglioni.highestCamp}} were recorded at the highest camp [S6]. The pulse sensor gave usable HRV even there [S6].
@@ -376,6 +473,8 @@ In the first days at altitude, lower HRV is common: in pooled short ECG recordin
 
 A drop is common, but it does not always show. In the servicemen's study, HRV was analysed for {{fact:altitude.boos.window}}. None of the time-domain measures, such as RMSSD, changed significantly during sleep [S4], but the altitude was moderate, and {{fact:altitude.boos.highestNights}}. In the same study, how hard the previous day had felt was linked with the next night's HRV [S4], so the day's effort moves the night's numbers too ([exercise and HRV](/science/mechanisms/exercise-and-hrv)).
 
+Recovery after hard exercise is a separate question from resting HRV. In a trial of {{fact:altitude.gutknecht.design}}, the sprint format, not the low oxygen, changed HRV in the first minutes of recovery [S10]. That concerns recovery after sprints, not resting HRV in the first days at altitude, which the meta-analysis above describes [S1].
+
 Comparing these nights with your usual baseline from home says little. A gap is expected, and it does not tell you whether you are adjusting well or becoming ill. More useful is the trend over several days at the same altitude, read together with how you feel. {{fact:claim.hrvNotStress}}. Short sleep, alcohol, hard effort and infection also move these numbers ([why HRV changes from day to day](/science/mechanisms/hrv-day-to-day); [sleep and HRV](/science/mechanisms/sleep-and-hrv); [illness and HRV](/science/mechanisms/illness-and-hrv); [interpreting HRV](/science/concepts/interpreting-hrv)).
 
 ## What does the evidence show?
@@ -383,7 +482,7 @@ Comparing these nights with your usual baseline from home says little. A gap is 
 **By evidence class.**
 
 - **Context-dependent.** In healthy adults in their first days at altitude, HRV is lower than at sea level, in trained and untrained people alike [S1]. Higher up, SDNN falls further, while RMSSD and high-frequency power do not differ significantly between lower- and higher-altitude studies [S1]. Part of the high-frequency fall may reflect faster breathing [S1].
-- **Emerging.** A finger pulse sensor records HRV at very high altitude but diverges from the ECG on the fast components [S6]. In one small study at very high altitude, the breathing-linked share of the heart rhythm stayed low after a long stay [S5]. Night-time time-domain HRV did not change significantly at moderate altitude in one study [S4].
+- **Emerging.** A finger pulse sensor records HRV at very high altitude but diverges from the ECG on the fast components [S6]. In one small study at very high altitude, the breathing-linked share of the heart rhythm stayed low after a long stay [S5]. Night-time time-domain HRV did not change significantly at moderate altitude in one study [S4]. People who live at altitude differ from visitors: residents living higher had higher HRV [S7], and adults raised at low altitude had lower HRV in a high-altitude city than those raised there [S8]. In an occupational group, night-time RMSSD fell at altitude while SDNN rose [S9]. In a clinical sample, a night at moderate altitude changed breathing but not HRV on the next ascent [S11]. After sprints, the format rather than low oxygen changed early recovery HRV [S10].
 - **Debated.** Whether HRV predicts acute mountain sickness: modest associations in a meta-analysis [S2] and a signal at one altitude in a field study [S3], against no prediction in another study [S4]. The reading of the shift as sympathetic predominance, which rests partly on LF/HF [S1].
 - **Unknown or not shown.** That HRV from a watch can warn an individual of altitude sickness; that you acclimatise in a couple of days; how wrist sensors perform at altitude.
 
@@ -402,6 +501,7 @@ This is the most important part of the page. HRV and watches do not replace chec
 - **HRV is not a test for altitude sickness.** The studies disagree, and none shows that a reading can warn an individual [S2] [S3] [S4].
 - **A drop at altitude is expected, not damage.** It is the usual response in the first days [S1].
 - **Your baseline from home is the wrong yardstick in the first days.** The gap is expected and does not show how well you are adjusting.
+- **Residents are not visitors.** Findings in people who live at altitude [S7] [S8] do not show what happens on a trip.
 - **Most of the evidence comes from young, fit men.** Data for women, older adults and less fit people are limited [S1].
 - **The LF/HF ratio is debated.** Even the authors who report its rise add that it is not a direct measure of sympathetic tone [S1].
 - **No medical conclusions.** None of these studies diagnoses a condition or gives an ascent plan.

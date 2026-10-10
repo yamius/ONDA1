@@ -1,5 +1,5 @@
 ---
-sourceHash: 3fe749fde6e8
+sourceHash: 894a41c93c3f
 title: "Altitudine e HRV: che cosa cambia e che cosa non può prevedere"
 metaTitle: "Altitudine e HRV: che cosa mostrano gli studi"
 metaDescription: "Come l'alta quota cambia la variabilità della frequenza cardiaca, se l'HRV può prevedere il mal di montagna e perché a decidere quando scendere sono i sintomi, non un orologio."
@@ -101,6 +101,20 @@ evidenceMap:
     limitation: "Avvertenza degli autori; i sensori da polso non sono stati testati."
   - claim: "I ricercatori hanno selezionato a occhio tratti di sonno stabili."
     limitation: "Registrazioni nel caso migliore; l'elaborazione automatica può fare peggio."
+  - claim: "Tra i residenti nativi di una regione himalayana (fact altitude.rai.design), chi viveva a quote più alte aveva SDNN e RMSSD più alti."
+    limitation: "Singolo studio trasversale su residenti nativi; confronta persone diverse, non le stesse persone nel tempo; non vale per chi è in visita."
+  - claim: "Gli autori leggono i valori più alti come una possibile risposta adattativa a una carenza di ossigeno prolungata."
+    limitation: "Interpretazione degli autori; geni, crescita e ambiente non sono separati."
+  - claim: "In una città d'alta quota (fact altitude.ramirez.design), gli adulti cresciuti a bassa quota avevano un'HRV più bassa degli adulti cresciuti ad alta quota."
+    limitation: "Singolo studio trasversale; associazione, non causa."
+  - claim: "Gli autori collegano la differenza all'esposizione alla quota nei primi anni di vita piuttosto che a un effetto causale diretto della carenza di ossigeno nell'infanzia."
+    limitation: "Conclusione degli autori; chiedono studi longitudinali."
+  - claim: "In un gruppo di lavoratori che fanno la spola verso la quota (fact altitude.lang.design), la RMSSD notturna è calata in quota mentre la SDNN è aumentata."
+    limitation: "Singolo studio su lavoratori maschi con anni di settimane alternate in quota; non è un primo viaggio."
+  - claim: "Dopo sprint ripetuti in carenza di ossigeno simulata (fact altitude.gutknecht.design), a cambiare l'HRV nei primi minuti di recupero è stato il formato degli sprint, non la carenza di ossigeno."
+    limitation: "Singolo piccolo studio; recupero dopo sprint, non HRV a riposo in quota."
+  - claim: "In un campione clinico (fact altitude.taboni.design), una notte a una quota simulata moderata è stata seguita da acclimatazione ventilatoria nella salita successiva, senza cambiamenti dell'HRV o della sensibilità baroriflessa."
+    limitation: "Singolo piccolo studio in camera ipobarica su uomini con malattia coronarica; non vale per le persone sane e non è un piano di salita."
 ---
 
 ## Che cosa succede all'HRV in quota?
@@ -137,6 +151,16 @@ In uno studio su {{fact:altitude.perini.design}}, la percentuale di potenza ad a
 
 Quindi, in questo singolo studio ad altissima quota, la componente del ritmo cardiaco legata al respiro non era tornata al suo profilo del livello del mare dopo la lunga permanenza. È un singolo piccolo studio del 1996 a una sola quota, con sole misure spettrali. Non riporta la RMSSD, non dice nulla sulle quote moderate né sui sintomi, e il suo testo integrale non ha potuto essere verificato per i conflitti di interesse.
 
+**Un campione clinico.** In uno studio in camera ipobarica su {{fact:altitude.taboni.design}}, la notte alla quota intermedia è stata seguita da un'acclimatazione ventilatoria misurabile nella salita successiva, mentre HRV e sensibilità baroriflessa non hanno mostrato differenze [S11]. Quindi il respiro può iniziare ad adattarsi mentre le misure del ritmo cardiaco non cambiano. È un singolo piccolo studio su uomini con una malattia cardiaca; non vale per le persone sane e non è un consiglio sui piani di salita.
+
+## E chi vive o lavora in quota?
+
+Tutto ciò che precede riguarda chi vive in pianura e sale in quota. Chi vive in quota è un caso diverso. In uno studio trasversale su {{fact:altitude.rai.design}}, chi viveva più in alto aveva SDNN e RMSSD più alti [S7]. Gli autori lo leggono come una possibile risposta adattativa a una carenza di ossigeno prolungata [S7]. A Bogotá, uno studio ha confrontato {{fact:altitude.ramirez.design}}: gli adulti cresciuti a bassa quota avevano un'HRV più bassa di quelli cresciuti ad alta quota [S8]. Gli autori collegano questo dato alla quota nei primi anni di vita piuttosto che a un effetto causale diretto della carenza di ossigeno nell'infanzia [S8].
+
+Sono entrambi singoli studi trasversali. Confrontano persone diverse in un solo momento, non possono separare geni, crescita e ambiente, e non mostrano come cambia nel corso dei mesi l'HRV di chi arriva in quota. Il quadro non è nemmeno uniforme: nel piccolo studio del 1996 gli sherpa hanno mostrato risultati paragonabili a quelli di chi viveva in pianura [S5]. Niente di tutto questo vale per un viaggio in montagna.
+
+**Un gruppo di lavoratori.** In uno studio su {{fact:altitude.lang.design}}, la RMSSD in quelle ore è calata in quota mentre la SDNN è aumentata [S9], quindi misure diverse dell'HRV possono muoversi in direzioni opposte. Questi lavoratori alternano da anni settimane in quota e al livello del mare, il che non equivale a un primo viaggio; è un singolo studio su uomini.
+
 ## Un dispositivo indossabile può misurare l'HRV in quota?
 
 Può registrare l'HRV, ma i dettagli rapidi, legati al respiro, sono meno affidabili che con un ECG. Uno studio metodologico ha confrontato un sensore del polso al dito, che legge il polso otticamente (fotopletismografia, PPG), con un ECG durante il sonno in {{fact:altitude.castiglioni.design}} [S6]; {{fact:altitude.castiglioni.highestCamp}} sono state registrate al campo più alto [S6]. Il sensore del polso ha fornito un'HRV utilizzabile anche lassù [S6].
@@ -151,6 +175,8 @@ Nei primi giorni in quota un'HRV più bassa è comune: in brevi registrazioni EC
 
 Un calo è comune, ma non sempre si vede. Nello studio sui militari, l'HRV è stata analizzata per {{fact:altitude.boos.window}}. Nessuna delle misure nel dominio del tempo, come la RMSSD, è cambiata in modo significativo durante il sonno [S4], ma la quota era moderata e {{fact:altitude.boos.highestNights}}. Nello stesso studio, quanto era sembrata faticosa la giornata precedente era collegato all'HRV della notte successiva [S4], quindi anche lo sforzo della giornata sposta i numeri della notte ([esercizio e HRV](/science/mechanisms/exercise-and-hrv)).
 
+Il recupero dopo uno sforzo intenso è una questione diversa dall'HRV a riposo. In uno studio su {{fact:altitude.gutknecht.design}}, a cambiare l'HRV nei primi minuti di recupero è stato il formato degli sprint, non la carenza di ossigeno [S10]. Questo riguarda il recupero dopo gli sprint, non l'HRV a riposo nei primi giorni in quota, descritta dalla meta-analisi qui sopra [S1].
+
 Confrontare queste notti con la tua baseline abituale di casa dice poco. Uno scarto è atteso e non dice se ti stai adattando bene o se ti stai ammalando. Più utile è l'andamento su più giorni alla stessa quota, letto insieme a come ti senti. {{fact:claim.hrvNotStress}}. Anche poco sonno, alcol, sforzi intensi e infezioni spostano questi numeri ([perché l'HRV cambia da un giorno all'altro](/science/mechanisms/hrv-day-to-day); [sonno e HRV](/science/mechanisms/sleep-and-hrv); [malattia e HRV](/science/mechanisms/illness-and-hrv); [interpretare l'HRV](/science/concepts/interpreting-hrv)).
 
 ## Che cosa mostrano le prove?
@@ -158,7 +184,7 @@ Confrontare queste notti con la tua baseline abituale di casa dice poco. Uno sca
 **Per classe di evidenza.**
 
 - **Dipende dal contesto.** Negli adulti sani nei primi giorni in quota, l'HRV è più bassa che al livello del mare, sia nelle persone allenate sia nelle altre [S1]. Più in alto la SDNN cala di più, mentre RMSSD e potenza ad alta frequenza non differiscono in modo significativo tra studi a quota più bassa e più alta [S1]. Parte del calo ad alta frequenza può riflettere una respirazione più rapida [S1].
-- **Emergente.** Un sensore del polso al dito registra l'HRV ad altissima quota, ma si discosta dall'ECG nelle componenti rapide [S6]. In un piccolo studio ad altissima quota, la componente del ritmo cardiaco legata al respiro è rimasta bassa dopo una lunga permanenza [S5]. L'HRV notturna nel dominio del tempo non è cambiata in modo significativo a quota moderata in uno studio [S4].
+- **Emergente.** Un sensore del polso al dito registra l'HRV ad altissima quota, ma si discosta dall'ECG nelle componenti rapide [S6]. In un piccolo studio ad altissima quota, la componente del ritmo cardiaco legata al respiro è rimasta bassa dopo una lunga permanenza [S5]. L'HRV notturna nel dominio del tempo non è cambiata in modo significativo a quota moderata in uno studio [S4]. Chi vive in quota è diverso da chi è in visita: i residenti che vivevano più in alto avevano un'HRV più alta [S7], e in una città d'alta quota gli adulti cresciuti a bassa quota avevano un'HRV più bassa di quelli cresciuti lì [S8]. In un gruppo di lavoratori, la RMSSD notturna è calata in quota mentre la SDNN è aumentata [S9]. In un campione clinico, una notte a quota moderata ha cambiato il respiro ma non l'HRV nella salita successiva [S11]. Dopo gli sprint, è stato il formato, più che la carenza di ossigeno, a cambiare l'HRV nel primo recupero [S10].
 - **Dibattuta.** Se l'HRV preveda il male acuto di montagna: associazioni modeste in una meta-analisi [S2] e un segnale a una quota in uno studio sul campo [S3], contro nessuna previsione in un altro studio [S4]. La lettura del cambiamento come prevalenza simpatica, che poggia in parte sul rapporto LF/HF [S1].
 - **Sconosciuta o non dimostrata.** Che l'HRV di un orologio possa avvisare una singola persona del mal di montagna; che ci si acclimati in un paio di giorni; come si comportano i sensori da polso in quota.
 
@@ -177,6 +203,7 @@ Questa è la parte più importante della pagina. L'HRV e gli orologi non sostitu
 - **L'HRV non è un test per il mal di montagna.** Gli studi non concordano e nessuno dimostra che una misurazione possa avvisare una singola persona [S2] [S3] [S4].
 - **Un calo in quota è atteso, non è un danno.** È la risposta abituale dei primi giorni [S1].
 - **La tua baseline di casa è il metro sbagliato nei primi giorni.** Lo scarto è atteso e non mostra quanto bene ti stai adattando.
+- **Chi vive in quota non è chi è in visita.** I risultati su persone che vivono in quota [S7] [S8] non mostrano che cosa succede durante un viaggio.
 - **La maggior parte delle prove viene da uomini giovani e allenati.** I dati per donne, persone anziane e persone meno allenate sono limitati [S1].
 - **Il rapporto LF/HF è dibattuto.** Anche gli autori che ne riportano l'aumento aggiungono che non è una misura diretta del tono simpatico [S1].
 - **Nessuna conclusione medica.** Nessuno di questi studi diagnostica una condizione o fornisce un piano di salita.

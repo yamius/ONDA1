@@ -1,5 +1,5 @@
 ---
-sourceHash: 3fe749fde6e8
+sourceHash: 894a41c93c3f
 title: "Hoogte en HRV: wat er verandert en wat ze niet kan voorspellen"
 metaTitle: "Hoogte en HRV: wat studies laten zien"
 metaDescription: "Hoe grote hoogte de hartslagvariabiliteit verandert, of HRV hoogteziekte kan voorspellen en waarom klachten, niet een horloge, bepalen wanneer je moet afdalen."
@@ -101,6 +101,20 @@ evidenceMap:
     limitation: "Voorbehoud van de auteurs; sensoren om de pols zijn niet getest."
   - claim: "De onderzoekers kozen stabiele slaapfragmenten op het oog."
     limitation: "Registraties onder de beste omstandigheden; automatische verwerking kan slechter uitvallen."
+  - claim: "Bij inheemse bewoners van één Himalayaregio (fact altitude.rai.design) hadden mensen die hoger woonden een hogere SDNN en RMSSD."
+    limitation: "Eén cross-sectionele studie bij inheemse bewoners; vergelijkt verschillende mensen, niet dezelfde mensen in de tijd; geldt niet voor bezoekers."
+  - claim: "De auteurs zien de hogere waarden als een mogelijke aanpassing aan langdurig zuurstoftekort."
+    limitation: "Interpretatie van de auteurs; genen, opvoeding en omgeving zijn niet gescheiden."
+  - claim: "In een stad op grote hoogte (fact altitude.ramirez.design) hadden volwassenen die laag opgroeiden een lagere HRV dan volwassenen die hoog opgroeiden."
+    limitation: "Eén cross-sectionele studie; verband, geen oorzaak."
+  - claim: "De auteurs koppelen het verschil aan blootstelling aan hoogte vroeg in het leven, niet aan een direct oorzakelijk effect van zuurstoftekort in de kindertijd."
+    limitation: "Conclusie van de auteurs; zij vragen om longitudinale studies."
+  - claim: "In een beroepsgroep die naar hoogte pendelt (fact altitude.lang.design) daalde de nachtelijke RMSSD op hoogte, terwijl SDNN steeg."
+    limitation: "Eén studie bij mannelijke werknemers met jarenlang afwisselende weken op hoogte; geen eerste reis."
+  - claim: "Na herhaalde sprints bij gesimuleerd zuurstoftekort (fact altitude.gutknecht.design) veranderde de sprintvorm, niet het zuurstoftekort, de HRV in de eerste minuten van herstel."
+    limitation: "Eén kleine studie; herstel na sprints, niet HRV in rust op hoogte."
+  - claim: "In een klinische groep (fact altitude.taboni.design) volgde op een nacht op gematigde gesimuleerde hoogte ventilatoire acclimatisatie bij de volgende klim, zonder verandering in HRV of baroreflexgevoeligheid."
+    limitation: "Eén kleine kamerstudie bij mannen met coronaire hartziekte; geldt niet voor gezonde mensen en is geen klimplan."
 ---
 
 ## Wat gebeurt er met HRV op hoogte?
@@ -137,6 +151,16 @@ In een studie bij {{fact:altitude.perini.design}} daalde het aandeel van het hoo
 
 In deze ene studie op zeer grote hoogte was het aan de ademhaling gekoppelde aandeel van het hartritme na het lange verblijf dus niet teruggekeerd naar het patroon op zeeniveau. Het is één kleine studie uit 1996 op één hoogte, met alleen spectrale maten. Ze rapporteert geen RMSSD, zegt niets over matige hoogtes of over klachten, en de volledige tekst kon niet worden gecontroleerd op belangenconflicten.
 
+**Een klinische groep.** In een kamerstudie bij {{fact:altitude.taboni.design}} volgde op de nacht op de tussenliggende hoogte meetbare ventilatoire acclimatisatie bij de volgende klim, terwijl HRV en baroreflexgevoeligheid geen verschillen lieten zien [S11]. De ademhaling kan zich dus al aanpassen terwijl de maten van het hartritme niet veranderen. Dit is één kleine studie bij mannen met een hartziekte; ze geldt niet voor gezonde mensen en is geen advies over klimplannen.
+
+## En mensen die op hoogte wonen of werken?
+
+Alles hierboven gaat over laaglanders die naar boven reizen. Mensen die op hoogte wonen, zijn een ander geval. In een cross-sectionele studie bij {{fact:altitude.rai.design}} hadden mensen die hoger woonden een hogere SDNN en RMSSD [S7]. De auteurs zien dit als een mogelijke aanpassing aan langdurig zuurstoftekort [S7]. In Bogotá vergeleek een studie {{fact:altitude.ramirez.design}}: volwassenen die laag opgroeiden, hadden een lagere HRV dan wie hoog opgroeide [S8]. De auteurs koppelen dit aan hoogte vroeg in het leven, niet aan een direct oorzakelijk effect van zuurstoftekort in de kindertijd [S8].
+
+Het zijn allebei losse cross-sectionele studies. Ze vergelijken verschillende mensen op één moment, kunnen genen, opvoeding en omgeving niet scheiden, en laten niet zien hoe de HRV van een bezoeker in de loop van maanden verandert. Het beeld is ook niet eenduidig: in de kleine studie uit 1996 lieten de sherpa's resultaten zien die vergelijkbaar waren met die van de laaglanders [S5]. Niets hiervan geldt voor een reis naar de bergen.
+
+**Een beroepsgroep.** In een studie bij {{fact:altitude.lang.design}} daalde de RMSSD in die uren op hoogte, terwijl SDNN steeg [S9]; verschillende HRV-maten kunnen dus in tegengestelde richting bewegen. Deze werknemers wisselen al jaren weken op hoogte en op zeeniveau af, en dat is niet hetzelfde als een eerste reis; het is één studie bij mannen.
+
 ## Kan een wearable HRV op hoogte meten?
 
 Hij kan HRV registreren, maar de snelle, aan de ademhaling gekoppelde details zijn minder betrouwbaar dan bij een ECG. Een methodestudie vergeleek een optische hartslagsensor aan de vinger, die de pols met licht meet (fotoplethysmografie, PPG), met een ECG tijdens de slaap bij {{fact:altitude.castiglioni.design}} [S6]; {{fact:altitude.castiglioni.highestCamp}} werden in het hoogste kamp geregistreerd [S6]. Zelfs daar gaf de optische sensor bruikbare HRV [S6].
@@ -151,6 +175,8 @@ In de eerste dagen op hoogte is een lagere HRV gebruikelijk: in samengevoegde ko
 
 Een daling is gebruikelijk, maar is niet altijd te zien. In de studie bij militairen werd HRV geanalyseerd gedurende {{fact:altitude.boos.window}}. Geen van de maten in het tijdsdomein, zoals RMSSD, veranderde significant tijdens de slaap [S4], maar de hoogte was matig, en {{fact:altitude.boos.highestNights}}. In dezelfde studie hing hoe zwaar de vorige dag had gevoeld samen met de HRV van de nacht erna [S4], dus ook de inspanning van de dag beïnvloedt de cijfers van de nacht ([inspanning en HRV](/science/mechanisms/exercise-and-hrv)).
 
+Herstel na zware inspanning is een andere vraag dan HRV in rust. In een studie bij {{fact:altitude.gutknecht.design}} veranderde de sprintvorm, niet het zuurstoftekort, de HRV in de eerste minuten van herstel [S10]. Dat gaat over herstel na sprints, niet over HRV in rust in de eerste dagen op hoogte, die de meta-analyse hierboven beschrijft [S1].
+
 Deze nachten vergelijken met je gewone basislijn van thuis zegt weinig. Een verschil is te verwachten, en het vertelt je niet of je je goed aanpast of ziek wordt. Nuttiger is het verloop over meerdere dagen op dezelfde hoogte, samen met hoe je je voelt. {{fact:claim.hrvNotStress}}. Kort slapen, alcohol, zware inspanning en infecties beïnvloeden deze cijfers ook ([waarom HRV van dag tot dag verandert](/science/mechanisms/hrv-day-to-day); [slaap en HRV](/science/mechanisms/sleep-and-hrv); [ziekte en HRV](/science/mechanisms/illness-and-hrv); [HRV interpreteren](/science/concepts/interpreting-hrv)).
 
 ## Wat laat het bewijs zien?
@@ -158,7 +184,7 @@ Deze nachten vergelijken met je gewone basislijn van thuis zegt weinig. Een vers
 **Per bewijsklasse.**
 
 - **Afhankelijk van de context.** Bij gezonde volwassenen in hun eerste dagen op hoogte is HRV lager dan op zeeniveau, bij getrainde en ongetrainde mensen [S1]. Hoger daalt SDNN verder, terwijl RMSSD en het hoogfrequente vermogen niet significant verschillen tussen studies op lagere en grotere hoogte [S1]. Een deel van de hoogfrequente daling kan snellere ademhaling weerspiegelen [S1].
-- **Opkomend.** Een optische sensor aan de vinger registreert HRV op zeer grote hoogte, maar wijkt bij de snelle componenten af van het ECG [S6]. In één kleine studie op zeer grote hoogte bleef het aan de ademhaling gekoppelde aandeel van het hartritme na een lang verblijf laag [S5]. De nachtelijke HRV in het tijdsdomein veranderde in één studie op matige hoogte niet significant [S4].
+- **Opkomend.** Een optische sensor aan de vinger registreert HRV op zeer grote hoogte, maar wijkt bij de snelle componenten af van het ECG [S6]. In één kleine studie op zeer grote hoogte bleef het aan de ademhaling gekoppelde aandeel van het hartritme na een lang verblijf laag [S5]. De nachtelijke HRV in het tijdsdomein veranderde in één studie op matige hoogte niet significant [S4]. Mensen die op hoogte wonen, verschillen van bezoekers: bewoners die hoger woonden, hadden een hogere HRV [S7], en volwassenen die laag opgroeiden, hadden in een stad op grote hoogte een lagere HRV dan wie daar opgroeide [S8]. In een beroepsgroep daalde de nachtelijke RMSSD op hoogte, terwijl SDNN steeg [S9]. In een klinische groep veranderde een nacht op gematigde hoogte de ademhaling, maar niet de HRV bij de volgende klim [S11]. Na sprints veranderde de sprintvorm, eerder dan zuurstoftekort, de HRV in het vroege herstel [S10].
 - **Omstreden.** Of HRV acute bergziekte voorspelt: bescheiden verbanden in een meta-analyse [S2] en een signaal op één hoogte in een veldstudie [S3], tegenover geen voorspelling in een andere studie [S4]. De interpretatie van de verschuiving als sympathisch overwicht, die deels op LF/HF steunt [S1].
 - **Onbekend of niet aangetoond.** Dat HRV van een horloge een individu kan waarschuwen voor hoogteziekte; dat je in een paar dagen acclimatiseert; hoe sensoren om de pols op hoogte presteren.
 
@@ -177,6 +203,7 @@ Dit is het belangrijkste deel van de pagina. HRV en horloges vervangen niet het 
 - **HRV is geen test voor hoogteziekte.** De studies spreken elkaar tegen, en geen enkele laat zien dat een meting een individu kan waarschuwen [S2] [S3] [S4].
 - **Een daling op hoogte is te verwachten, geen schade.** Het is de gebruikelijke reactie in de eerste dagen [S1].
 - **Je basislijn van thuis is in de eerste dagen de verkeerde maatstaf.** Het verschil is te verwachten en laat niet zien hoe goed je je aanpast.
+- **Bewoners zijn geen bezoekers.** Bevindingen bij mensen die op hoogte wonen [S7] [S8] laten niet zien wat er tijdens een reis gebeurt.
 - **Het meeste bewijs komt van jonge, fitte mannen.** Gegevens over vrouwen, ouderen en minder fitte mensen zijn beperkt [S1].
 - **De LF/HF-ratio is omstreden.** Zelfs de auteurs die de stijging ervan melden, voegen toe dat ze geen directe maat is voor de sympathische tonus [S1].
 - **Geen medische conclusies.** Geen van deze studies stelt een diagnose of geeft een klimplan.
