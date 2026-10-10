@@ -3546,7 +3546,7 @@
         {
           "id": "sensor-accuracy",
           "score": 8.5,
-          "note": "Abbott sensors throughout: FreeStyle Libre 3 outside the US, Abbott Lingo (14-day wear, Libre-based) in the US via M2 Live. In an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate."
+          "note": "Abbott sensors throughout: FreeStyle Libre 3 outside the US, Abbott Lingo (14-day wear, Libre-based) in the US via M2 Live. In an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate. Ultrahuman links its own published studies from its homepage instead of citing only general research."
         },
         {
           "id": "insights",
@@ -3674,7 +3674,7 @@
         {
           "id": "sensor-accuracy",
           "score": 7.5,
-          "note": "Abbott Libre (2-week wear), maker-reported MARD ~9–11% (maker figures do not count as evidence in ONDA scores). Calibration-free; accuracy in the second week is the weakest point. Uses an earlier Libre version; no independent check of this exact combination."
+          "note": "Abbott Libre (2-week wear), maker-reported MARD ~9–11% (maker figures do not count as evidence in ONDA scores). Calibration-free; accuracy in the second week is the weakest point. Uses an earlier Libre version; no independent check of this exact combination. ZOE tested its programme in a randomised controlled trial and calls it exactly that on its homepage."
         },
         {
           "id": "insights",
@@ -4832,7 +4832,7 @@
         {
           "id": "evidence",
           "score": 7.5,
-          "note": "The current 1500X is FDA Class II registered (per Mito Red, Oct 2026), like Joovv — registration/listing, not clearance or approval. References the same underlying photobiomodulation literature; marketing is reasonably restrained compared to category norms."
+          "note": "The current 1500X is FDA Class II registered (per Mito Red, Oct 2026), like Joovv — registration/listing, not clearance or approval. References the same underlying photobiomodulation literature; marketing is reasonably restrained compared to category norms. Mito Red itself explains on its site that FDA registration and listing are not the same as 510(k) clearance."
         },
         {
           "id": "value",
@@ -5275,7 +5275,7 @@
         {
           "id": "evidence",
           "score": 7,
-          "note": "Bon Charge lists the Max as FDA Class II registered (registration/listing, not clearance or approval). Positioned as a wellness device; references the underlying photobiomodulation literature."
+          "note": "Bon Charge lists the Max as FDA Class II registered (registration/listing, not clearance or approval). Positioned as a wellness device; references the underlying photobiomodulation literature. Bon Charge states on the product page that the FDA “has not evaluated the statements” about its red light devices."
         },
         {
           "id": "value",
@@ -7499,7 +7499,7 @@
         {
           "id": "waveform-evidence",
           "score": 7,
-          "note": "Uses the high-intensity PEMF range studied in general PEMF research. We found no independent trials of this system itself — 7.0, the score for PEMF devices without device-specific trials."
+          "note": "Uses the high-intensity PEMF range studied in general PEMF research. We found no independent trials of this system itself — 7.0, the score for PEMF devices without device-specific trials. Pulse PEMF says plainly in its FAQ that its products “are wellness devices, not medical devices” and that it “has not sought any evaluations or clearances from the FDA”."
         },
         {
           "id": "build",
