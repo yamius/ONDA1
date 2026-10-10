@@ -2632,6 +2632,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1376,
     "height": 768
   },
+  "/images/science/mechanisms-altitude-and-hrv.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-altitude-and-hrv.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/mechanisms-altitude-and-hrv.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/mechanisms-breathing-and-hrv.avif": {
     "width": 1920,
     "height": 820
