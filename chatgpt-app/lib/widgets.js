@@ -190,6 +190,7 @@ boot((d) => {
   const row = (label, f) => '<tr><th>' + label + '</th>' + cell(f) + '</tr>';
   const winner = d.duel && d.duel.winner;
   let html = '<h2>' + esc(d.duel ? d.duel.title : P.map((p) => p.name).join(' vs ')) + '</h2>';
+  if (d.duel && d.duel.label) html += '<p class="small"><b>' + esc(d.duel.label) + '</b></p>';
   if (d.duel) html += '<p>' + esc(d.duel.verdict) + '</p>';
   if (P.length) {
     html += '<div class="wrap"><table><thead><tr><td></td>' + cell((p) => '<span class="' + (p.slug === winner ? 'win' : '') + '">' + esc(p.name) + (p.slug === winner ? ' ★' : '') + '</span>') + '</tr></thead><tbody>' +
@@ -216,5 +217,5 @@ export const WIDGETS = {
   hrv: { uri: 'ui://onda/hrv-v7.html', name: 'HRV compared with Fitbit users your age', html: hrv },
   breathe: { uri: 'ui://onda/breathe-v5.html', name: 'Breathing guide', html: breathe },
   practice: { uri: 'ui://onda/practice-v5.html', name: 'ONDA practices', html: practice },
-  compare: { uri: 'ui://onda/compare-v5.html', name: 'Device and app comparison', html: compare },
+  compare: { uri: 'ui://onda/compare-v6.html', name: 'Device and app comparison', html: compare },
 };

@@ -325,23 +325,51 @@ export const findPractice = {
 const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 const tokens = (s) => norm(s).split(' ').filter(Boolean);
 
-/** Best review for a free-text product name, or null. */
-export function matchReview(query) {
+/** Reviews a free-text product name can mean, best first: only those with the
+ *  highest share of the query's words (at least half), then tightest fit, then newest. */
+function reviewCandidates(query) {
   const q = tokens(query).filter((t) => !['the', 'app', 'vs'].includes(t));
-  if (!q.length) return null;
-  let best = null;
+  if (!q.length) return [];
+  const hits = [];
   for (const r of REVIEWS.reviews) {
     const hay = new Set([...tokens(r.name), ...tokens(r.slug), ...tokens(r.brand)]);
     const hit = q.filter((t) => hay.has(t)).length;
-    if (!hit) continue;
-    const cover = hit / q.length;
-    const tight = hit / hay.size;
-    const key = [cover, tight, r.dateModified];
-    if (!best || key[0] > best.key[0] || (key[0] === best.key[0] && (key[1] > best.key[1] || (key[1] === best.key[1] && key[2] > best.key[2])))) {
-      best = { r, key };
+    if (hit) hits.push({ r, key: [hit / q.length, hit / hay.size, r.dateModified] });
+  }
+  const top = Math.max(0, ...hits.map((h) => h.key[0]));
+  if (top < 0.5) return [];
+  return hits
+    .filter((h) => h.key[0] === top)
+    .sort((a, b) => b.key[1] - a.key[1] || (b.key[2] > a.key[2] ? 1 : b.key[2] < a.key[2] ? -1 : 0))
+    .map((h) => h.r);
+}
+
+/** Best review for a free-text product name, or null. */
+export function matchReview(query) {
+  return reviewCandidates(query)[0] ?? null;
+}
+
+const permutations = (xs) => (xs.length <= 1 ? [xs] : xs.flatMap((x, i) => permutations([...xs.slice(0, i), ...xs.slice(i + 1)]).map((p) => [x, ...p])));
+
+/** When a name is ambiguous ("HigherDOSE" is a face mask and a PEMF mat), prefer the
+ *  reading that is one of ONDA's head-to-head pages; fewest steps from each best match wins. */
+function pickDuelReading(cands) {
+  const present = cands.map((c, i) => (c.length ? i : -1)).filter((i) => i >= 0);
+  if (present.length < 2) return null;
+  let best = null;
+  for (const h of REVIEWS.headToHeads) {
+    if (h.products.length !== present.length) continue;
+    for (const order of permutations(h.products)) {
+      const ranks = order.map((slug, k) => cands[present[k]].findIndex((r) => r.slug === slug));
+      if (ranks.some((x) => x < 0)) continue;
+      const cost = ranks.reduce((a, b) => a + b, 0);
+      if (!best || cost < best.cost) best = { cost, picks: present.map((i, k) => [i, cands[i][ranks[k]]]) };
     }
   }
-  return best && best.key[0] >= 0.5 ? best.r : null;
+  if (!best) return null;
+  const out = cands.map((c) => c[0] ?? null);
+  for (const [i, r] of best.picks) out[i] = r;
+  return out;
 }
 
 const PRIORITY_CRITERIA = {
@@ -377,7 +405,7 @@ export const compare = {
     required: ['products'],
     additionalProperties: false,
   },
-  outputSchema: {"type":"object","properties":{"products":{"type":"array","items":{"type":"object","properties":{"slug":{"type":"string"},"name":{"type":"string"},"type":{"type":"string"},"priceUsd":{"type":["number","null"]},"priceNote":{"type":["string","null"]},"priceAsOf":{"type":["string","null"]},"score":{"type":"number"},"hrvMetric":{"type":["string","null"]},"verdict":{"type":"string"},"bestFor":{"type":"string"},"pros":{"type":"array","items":{"type":"string"}},"cons":{"type":"array","items":{"type":"string"}},"focus":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"score":{"type":"number"},"note":{"type":"string"}},"required":[]}},"worksWithOnda":{"type":"string","enum":["yes","partly","not-a-device"]},"worksWithOndaNote":{"type":["string","null"]},"reviewUrl":{"type":"string"},"assessed":{"type":"string"}},"required":[]}},"duel":{"type":["object","null"]},"notFound":{"type":"array","items":{"type":"string"}},"ownProductNote":{"type":["string","null"]},"bridge":{"type":["object","null"]},"source":{"type":"string"}},"required":["products","notFound"]},
+  outputSchema: {"type":"object","properties":{"products":{"type":"array","items":{"type":"object","properties":{"slug":{"type":"string"},"name":{"type":"string"},"type":{"type":"string"},"priceUsd":{"type":["number","null"]},"priceNote":{"type":["string","null"]},"priceAsOf":{"type":["string","null"]},"score":{"type":"number"},"hrvMetric":{"type":["string","null"]},"verdict":{"type":"string"},"bestFor":{"type":"string"},"pros":{"type":"array","items":{"type":"string"}},"cons":{"type":"array","items":{"type":"string"}},"focus":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"score":{"type":"number"},"note":{"type":"string"}},"required":[]}},"worksWithOnda":{"type":"string","enum":["yes","partly","not-a-device"]},"worksWithOndaNote":{"type":["string","null"]},"reviewUrl":{"type":"string"},"assessed":{"type":"string"}},"required":[]}},"duel":{"type":["object","null"],"properties":{"title":{"type":"string"},"verdict":{"type":"string"},"winner":{"type":["string","null"]},"winnerStatus":{"type":"string","enum":["winner","practically-equal","depends-on-the-job"]},"label":{"type":"string"},"onda_scores":{"type":"object"},"axes":{"type":"array"},"url":{"type":"string"}},"required":["winner","winnerStatus","label","onda_scores"]},"notFound":{"type":"array","items":{"type":"string"}},"ownProductNote":{"type":["string","null"]},"bridge":{"type":["object","null"]},"source":{"type":"string"}},"required":["products","notFound"]},
   annotations: annotations('Compare devices or apps'),
   invoking: 'Pulling ONDA reviews…',
   invoked: 'Comparison ready',
@@ -392,12 +420,14 @@ export const compare = {
     const ownProduct = asked.some((p) => /\bonda\b/i.test(p));
     const found = [];
     const missing = [];
-    for (const name of asked) {
-      if (/\bonda\b/i.test(name)) continue;
-      const r = matchReview(name);
+    const names = asked.filter((name) => !/\bonda\b/i.test(name));
+    const cands = names.map(reviewCandidates);
+    const picked = pickDuelReading(cands) ?? cands.map((c) => c[0] ?? null);
+    names.forEach((name, i) => {
+      const r = picked[i];
       if (r && !found.some((f) => f.slug === r.slug)) found.push(r);
       else if (!r) missing.push(name);
-    }
+    });
     const key = found.map((r) => r.slug).sort().join('|');
     const duel = REVIEWS.headToHeads.find((h) => [...h.products].sort().join('|') === key) ?? null;
     const focus = priority ? PRIORITY_CRITERIA[priority] : null;
@@ -429,6 +459,9 @@ export const compare = {
             title: duel.title,
             verdict: duel.verdict,
             winner: duel.winner,
+            winnerStatus: duel.winnerStatus,
+            label: duel.label,
+            onda_scores: duel.onda_scores,
             axes: duel.axes,
             url: siteUrl(new URL(duel.url).pathname, 'chatgpt_compare'),
           }
@@ -446,8 +479,8 @@ export const compare = {
       source: 'ONDA Life editorial reviews — prices verified on the date shown.',
     };
     const text = rows.length
-      ? (duel ? `${duel.title}: ${duel.verdict} ` : '') +
-        rows.map((r) => `${r.name} — ${r.score}/10, ${r.priceUsd ? `$${r.priceUsd}` : 'price n/a'}. ${r.verdict}`).join(' ')
+      ? (duel ? `${duel.title}: ${duel.label}. ${duel.verdict} ` : '') +
+        rows.map((r) => `${r.name} — ${Number(r.score).toFixed(1)}/10, ${r.priceUsd ? `$${r.priceUsd}` : 'price n/a'}. ${r.verdict}`).join(' ')
       : 'None of these products has an ONDA review.';
     return { structuredContent: out, text: missing.length ? `${text} Not reviewed by ONDA: ${missing.join(', ')}.` : text };
   },

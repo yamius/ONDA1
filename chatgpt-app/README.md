@@ -15,7 +15,7 @@ Public MCP server for the OpenAI Apps SDK. Spec: `D:\_PValley\_work\610_ONDA_Cha
 | `check_hrv` | One RMSSD value vs a published distribution from one wearable’s users (Natarajan 2020, Fitbit), nearest age point, optional sex; Apple Watch SDNN not compared | three zones (below / middle half / above) + disclaimer | `ct=chatgpt_hrv` |
 | `breathe_now` | Animated breathing guide with timer: coherent, 4-7-8, box, sigh, longer exhale | live circle | `ct=chatgpt_breathe` |
 | `find_practice` | 1–3 of the 18 free **adaptive** practices by goal / experience / position | practice list + “play free” → `/emoton` | `ct=chatgpt_practice`, `utm_campaign=chatgpt_practice` |
-| `compare` | 2–3 devices or apps from ONDA reviews: price, score, HRV metric, verdict, “works with ONDA” | side-by-side table | `ct=chatgpt_compare` |
+| `compare` | 2–3 devices or apps from ONDA reviews: price, score, HRV metric, verdict, “works with ONDA”; for a duel page, the line the page shows above the verdict (`label`: WINNER / Higher ONDA score / Practically equal by ONDA score), `winnerStatus`, `onda_scores`, and `winner` only when the page names one. An ambiguous name (“HigherDOSE”) resolves to the product of a duel page | side-by-side table | `ct=chatgpt_compare` |
 
 Cards follow the MCP Apps standard (`text/html;profile=mcp-app`, `_meta.ui.resourceUri`; bump the `-vN` in the URI on breaking card changes — it is a cache key). Bridges go to the App Store (no deep links yet). Wording follows `landing/docs/onda-facts-source-of-truth.md`: no numeric pacer claim; HRV and the personal baseline need Apple Watch; the camera pulse works on any iPhone. ONDA is never scored inside a comparison — if asked about it, the card labels it “Our product”.
 

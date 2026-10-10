@@ -133,6 +133,50 @@ test('compare finds the duel page and never scores ONDA', async () => {
   assert.equal(own.bridge, null, 'no device bridge on an app-only comparison');
 });
 
+test('compare: winner only when the duel page shows one; status, label and ONDA scores as on the page', async () => {
+  const run = async (products) => (await call('compare', { products })).result;
+  const oura = await run(['oura ring 4', 'whoop 5.0']);
+  assert.equal(oura.structuredContent.duel.winner, 'oura-ring-4');
+  assert.equal(oura.structuredContent.duel.winnerStatus, 'winner');
+  assert.equal(oura.structuredContent.duel.label, 'WINNER: Oura Ring 4');
+  assert.match(oura.content[0].text, /WINNER: Oura Ring 4\./);
+
+  const vns = (await run(['pulsetto', 'nurosym', 'apollo neuro'])).structuredContent;
+  assert.equal(vns.duel.winner, null);
+  assert.equal(vns.duel.winnerStatus, 'depends-on-the-job');
+  assert.equal(vns.duel.label, 'Higher ONDA score: Nurosym (7.9 vs 7.1 vs 6.9)');
+  assert.deepEqual(vns.duel.onda_scores, { pulsetto: 6.9, nurosym: 7.9, 'apollo-neuro': 7.1 });
+  assert.deepEqual(vns.products.map((p) => p.score), [6.9, 7.9, 7.1], 'product scores = the duel page scores');
+
+  const rings = (await run(['ringconn gen 2', 'ultrahuman ring air'])).structuredContent;
+  assert.equal(rings.duel.winner, null);
+  assert.equal(rings.duel.winnerStatus, 'practically-equal');
+  assert.equal(rings.duel.label, 'Practically equal by ONDA score (7.0 and 6.9)');
+
+  // "Depends on the job" duel with a top-two gap <= 0.1: the page shows "practically equal".
+  const polar = (await run(['polar h10', 'garmin venu 4'])).structuredContent;
+  assert.equal(polar.duel.winnerStatus, 'practically-equal');
+  assert.equal(polar.duel.label, 'Practically equal by ONDA score (7.6 and 7.5)');
+});
+
+test('compare: an ambiguous brand resolves to the product of an ONDA duel page', async () => {
+  const d = (await call('compare', { products: ['omnilux contour face', 'higherdose'] })).result.structuredContent;
+  assert.deepEqual(d.products.map((p) => p.slug), ['omnilux-contour-face', 'higherdose-red-light-face-mask']);
+  assert.equal(d.duel.winner, 'omnilux-contour-face');
+  assert.equal(d.duel.label, 'WINNER: Omnilux Contour Face');
+});
+
+test('every duel: winner only with status "winner", label matches status, scores cover its products', async () => {
+  const { readFileSync } = await import('node:fs');
+  const data = JSON.parse(readFileSync(new URL('../data/reviews.json', import.meta.url), 'utf8'));
+  for (const h of data.headToHeads) {
+    assert.equal(h.winner !== null, h.winnerStatus === 'winner', h.slug);
+    const prefix = { winner: 'WINNER: ', 'practically-equal': 'Practically equal by ONDA score (', 'depends-on-the-job': 'Higher ONDA score: ' }[h.winnerStatus];
+    assert.ok(prefix && h.label.startsWith(prefix), h.slug);
+    assert.deepEqual(Object.keys(h.onda_scores).sort(), [...h.products].sort(), h.slug);
+  }
+});
+
 test('unknown products are reported, not guessed', () => {
   assert.equal(matchReview('Foo Bar 9'), null);
 });

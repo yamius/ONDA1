@@ -84,7 +84,7 @@ In September 2026 Apple replaced the Series 11 with the [Apple Watch Series 12](
 
 ## How should you read wrist HRV?
 
-Both devices measure HRV optically at the wrist, which is fine for multi-day trends and less precise than a chest strap or a ring at night. Compare your numbers with your own baseline and with [normal HRV by age](/articles/normal-hrv-by-age), not with someone else’s device.
+Both devices measure HRV optically at the wrist, which is fine for multi-day trends and less precise than a chest strap or a ring at night. Heart rate around weight-training sets is a separate question: in one study, an earlier Apple Watch (Series 8) tracked it more closely than an earlier Fitbit (Charge 5), which underestimated heart rate right after sets, and both devices’ calorie estimates for the session were far off. Compare your numbers with your own baseline and with [normal HRV by age](/articles/normal-hrv-by-age), not with someone else’s device.
 
 ## Related comparisons
 
