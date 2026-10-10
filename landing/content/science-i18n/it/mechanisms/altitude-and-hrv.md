@@ -1,5 +1,5 @@
 ---
-sourceHash: 894a41c93c3f
+sourceHash: 5c84bc6057f9
 title: "Altitudine e HRV: che cosa cambia e che cosa non può prevedere"
 metaTitle: "Altitudine e HRV: che cosa mostrano gli studi"
 metaDescription: "Come l'alta quota cambia la variabilità della frequenza cardiaca, se l'HRV può prevedere il mal di montagna e perché a decidere quando scendere sono i sintomi, non un orologio."
@@ -121,7 +121,7 @@ evidenceMap:
 
 In alta quota ogni respiro porta meno ossigeno. La variabilità della frequenza cardiaca (HRV) è la variazione, da un battito all'altro, dell'intervallo tra i battiti cardiaci, e nei primi giorni in quota di solito cala. Le prove più solide vengono da una meta-analisi di {{fact:altitude.li.studies}}: {{fact:altitude.li.scope}} [S1]. Rispetto al livello del mare, SDNN, RMSSD, potenza ad alta frequenza e altre misure dell'HRV erano tutte più basse [S1].
 
-Gli autori interpretano questo profilo come una riduzione dell'attività vagale con una relativa prevalenza simpatica [S1]. La formulazione conta. {{fact:claim.vagalTone}}, quindi si tratta di una lettura dell'HRV misurata, non di una misura diretta dell'attività nervosa. Parte di questa lettura poggia su un aumento del rapporto tra potenza a bassa e ad alta frequenza (LF/HF). Nella loro stessa discussione, gli autori aggiungono che questo rapporto riflette soprattutto come si ridistribuisce la potenza spettrale rimanente, più piccola, più che una misura diretta del tono simpatico [S1]. Perché questo rapporto sia dibattuto è spiegato in [il sistema nervoso autonomo](/science/concepts/autonomic-nervous-system).
+Gli autori interpretano questo profilo come una riduzione dell'attività vagale con una relativa prevalenza simpatica [S1]. La formulazione conta. {{fact:claim.vagalTone}}, quindi si tratta di una lettura dell'HRV misurata, non di una misura diretta dell'attività nervosa. Parte di questa lettura poggia su un aumento del rapporto tra potenza a bassa e ad alta frequenza (LF/HF). Il rapporto LF/HF è una misura controversa dell'equilibrio tra sistema simpatico e parasimpatico. Nella loro stessa discussione, gli autori aggiungono che questo rapporto riflette soprattutto come si ridistribuisce la potenza spettrale rimanente, più piccola, più che una misura diretta del tono simpatico [S1]. Perché questo rapporto sia dibattuto è spiegato in [il sistema nervoso autonomo](/science/concepts/autonomic-nervous-system).
 
 Parte del calo può essere meccanica. La carenza di ossigeno accelera il respiro, e gli autori collegano parte del calo della potenza ad alta frequenza a questa respirazione più rapida [S1]. Il cambiamento riflette quindi come respiri, oltre a come viene regolato il cuore.
 

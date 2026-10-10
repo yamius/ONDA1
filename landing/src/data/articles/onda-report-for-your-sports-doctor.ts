@@ -64,7 +64,7 @@ Your data helps them answer the first two faster, and flags when the last two ma
 
 ## How accurate is wrist heart rate during hard exercise?
 
-- **Wrist heart rate is less reliable during hard exercise**, especially intervals and strength work. Resting and overnight values are more trustworthy than mid-workout readings.
+- **Wrist heart rate is less reliable during hard exercise**, especially intervals and strength work. In one strength-training study, most of the earlier watch models tested underestimated heart rate right after sets. Resting and overnight values are more trustworthy than mid-workout readings.
 - **Single days are noise.** One low HRV morning usually means a bad night or a glass of wine, not overtraining.
 - **Scores aren't diagnoses.** Readiness or recovery scores can't identify iron deficiency, thyroid problems or RED-S — only examination and tests can.
 - **Don't train through illness because your numbers look fine.** How you feel, fever and symptoms come first.

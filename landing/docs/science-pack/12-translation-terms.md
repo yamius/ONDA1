@@ -101,3 +101,28 @@ de: HRV is feminine — «die HRV» (owner decision 2026-10-09).
 In body text the 4-7-8 technique is written in words in every language (digit rule); titles of the /articles page keep their own style.
 
 Owner-confirmed 2026-10-09: fr «élèves officiers» (officer cadets) and it «spin bike» as used on breathing-techniques-compared. ja: サイクリック・サイ replaced site-wide by 周期的ため息呼吸 (gloss （cyclic sighing） at the first mention of each page).
+
+## Altitude terms (approved by Yakiv 2026-10-10, mechanisms/altitude-and-hrv)
+
+| Term | ru | uk | de | pl | es | pt | fr | it | nl | ja | zh |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| altitude sickness | высотная болезнь | висотна хвороба | Höhenkrankheit | choroba wysokościowa | mal de altura | mal da altitude | mal des montagnes | mal di montagna | hoogteziekte | 高山病 | 高原病 |
+| acute mountain sickness (AMS) | острая горная болезнь (ОГБ), then «ОГБ» | гостра гірська хвороба (ГГХ), then «ГГХ» | akute Bergkrankheit (AMS) | ostra choroba górska (AMS) | mal agudo de montaña (MAM) | doença aguda da montanha (DAM) | mal aigu des montagnes (MAM) | male acuto di montagna (AMS) | acute bergziekte (AMS) | 急性高山病（AMS） | 急性高原病（AMS） |
+| acclimatisation / acclimatise | акклиматизация / акклиматизироваться | акліматизація / акліматизуватися | Akklimatisierung / sich akklimatisieren | aklimatyzacja / aklimatyzować się | aclimatación / aclimatarse | aclimatação / aclimatar-se | acclimatation / s'acclimater | acclimatazione / acclimatarsi | acclimatisatie / acclimatiseren | 高所順応 / 順応する | 高原适应 / 适应 |
+| oxygen saturation | сатурация (насыщение крови кислородом) | сатурація (насичення крові киснем) | Sauerstoffsättigung | saturacja (wysycenie krwi tlenem) | saturación de oxígeno | saturação de oxigênio | saturation en oxygène | saturazione di ossigeno | zuurstofsaturatie | 酸素飽和度 | 血氧饱和度 |
+| hypoxia / low oxygen | гипоксия / недостаток кислорода | гіпоксія / нестача кисню | Hypoxie / Sauerstoffmangel | hipoksja / niedobór tlenu | hipoxia / falta de oxígeno | hipóxia / falta de oxigênio | hypoxie / manque d'oxygène | ipossia / carenza di ossigeno | hypoxie / zuurstoftekort | 低酸素 | 缺氧 |
+| Sherpa(s) | шерпы | шерпи | Sherpa | Szerpowie | sherpas | sherpas | Sherpas | sherpa | sherpa's | シェルパ | 夏尔巴人 |
+| photoplethysmography (PPG) / pulse sensor | фотоплетизмография (PPG) / оптический датчик пульса | фотоплетизмографія (PPG) / оптичний датчик пульсу | Photoplethysmografie (PPG) / optischer Pulssensor | fotopletyzmografia (PPG) / optyczny czujnik tętna | fotopletismografía (PPG) / sensor óptico de pulso | fotopletismografia (PPG) / sensor óptico de pulso | photopléthysmographie (PPG) / capteur optique de pouls | fotopletismografia (PPG) / sensore ottico del polso | fotoplethysmografie (PPG) / optische hartslagsensor | 光電容積脈波（PPG）/ 光学式脈拍センサー | 光电容积脉搏波（PPG）/ 光学脉搏传感器 |
+
+Extra rows from the altitude-and-hrv translators (approved by Yakiv 2026-10-10; only the languages listed were set, others follow existing usage):
+
+| Term | Approved renderings |
+|---|---|
+| standardized mean difference (SMD) | ru стандартизированная разность средних · uk стандартизована різниця середніх |
+| sensitivity / specificity | ru чувствительность / специфичность · uk чутливість / специфічність |
+| chest strap / chest patch | ru нагрудный датчик / нагрудный пластырь-датчик · uk нагрудний датчик / нагрудний пластир-датчик · fr patch thoracique · it cerotto toracico |
+| pulse wave velocity | ru скорость (распространения) пульсовой волны · uk швидкість (поширення) пульсової хвилі · zh 脉搏波传导速度 |
+| vagal withdrawal / sympathetic predominance | ru ослабление вагусного влияния / преобладание симпатической системы · uk послаблення вагусного впливу / переважання симпатичної системи · fr retrait vagal · it riduzione dell'attività vagale |
+| time-domain HRV measures | ru временные показатели HRV · uk часові показники HRV |
+| altitude chamber | ru/uk барокамера · fr chambre d’altitude · it camera ipobarica |
+| sea level | fr niveau de la mer · it livello del mare |

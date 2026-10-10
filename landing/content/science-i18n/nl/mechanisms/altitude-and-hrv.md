@@ -1,5 +1,5 @@
 ---
-sourceHash: 894a41c93c3f
+sourceHash: 5c84bc6057f9
 title: "Hoogte en HRV: wat er verandert en wat ze niet kan voorspellen"
 metaTitle: "Hoogte en HRV: wat studies laten zien"
 metaDescription: "Hoe grote hoogte de hartslagvariabiliteit verandert, of HRV hoogteziekte kan voorspellen en waarom klachten, niet een horloge, bepalen wanneer je moet afdalen."
@@ -121,7 +121,7 @@ evidenceMap:
 
 Op grote hoogte haal je met elke ademteug minder zuurstof binnen. Hartslagvariabiliteit (HRV) is de variatie van slag tot slag in de tijd tussen hartslagen, en in de eerste dagen op hoogte daalt ze meestal. Het betrouwbaarste bewijs is een meta-analyse van {{fact:altitude.li.studies}}: {{fact:altitude.li.scope}} [S1]. Vergeleken met zeeniveau waren SDNN, RMSSD, het hoogfrequente vermogen en verwante HRV-maten allemaal lager [S1].
 
-De auteurs interpreteren het patroon als vagale terugtrekking met relatief sympathisch overwicht [S1]. Die formulering doet ertoe. {{fact:claim.vagalTone}}, dus dit is een interpretatie van gemeten HRV, geen directe meting van zenuwactiviteit. Een deel van die interpretatie steunt op een stijging van de verhouding tussen laag- en hoogfrequent vermogen (LF/HF). In hun eigen discussie voegen de auteurs toe dat deze ratio vooral weerspiegelt hoe het resterende, kleinere spectrale vermogen wordt herverdeeld, en geen directe maat is voor de sympathische tonus [S1]. Waarom deze ratio omstreden is, lees je op [het autonome zenuwstelsel](/science/concepts/autonomic-nervous-system).
+De auteurs interpreteren het patroon als vagale terugtrekking met relatief sympathisch overwicht [S1]. Die formulering doet ertoe. {{fact:claim.vagalTone}}, dus dit is een interpretatie van gemeten HRV, geen directe meting van zenuwactiviteit. Een deel van die interpretatie steunt op een stijging van de verhouding tussen laag- en hoogfrequent vermogen (LF/HF). LF/HF is een omstreden maat voor de balans tussen het sympathische en het parasympathische zenuwstelsel. In hun eigen discussie voegen de auteurs toe dat deze ratio vooral weerspiegelt hoe het resterende, kleinere spectrale vermogen wordt herverdeeld, en geen directe maat is voor de sympathische tonus [S1]. Waarom deze ratio omstreden is, lees je op [het autonome zenuwstelsel](/science/concepts/autonomic-nervous-system).
 
 Een deel van de daling kan mechanisch zijn. Zuurstoftekort versnelt de ademhaling, en de auteurs verbinden een deel van de daling van het hoogfrequente vermogen met die snellere ademhaling [S1]. De verandering weerspiegelt dus net zo goed hoe je ademt als hoe het hart wordt geregeld.
 

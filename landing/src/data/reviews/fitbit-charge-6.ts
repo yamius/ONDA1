@@ -14,7 +14,7 @@ const fitbitCharge6: ToolReviewInput = {
     'The Fitbit Charge 6 is the affordable way into HRV tracking — a cheap, comfortable band with overnight HRV (now free) and the sleep tracking Fitbit has long been known for. It is a mainstream tracker, though, not a recovery instrument.',
   scores: [
     { criterionId: 'hrv-accuracy', score: 6.5, note: 'Overnight HRV is reported as a basic figure — fine for trends, without the depth of a dedicated recovery tracker.' },
-    { criterionId: 'sensor', score: 7.0, note: 'Optical PPG in a small band.' },
+    { criterionId: 'sensor', score: 7.0, note: 'Optical PPG in a small band; in one study, an earlier model (Charge 5) underestimated heart rate right after weight-training sets.' },
     { criterionId: 'sleep-accuracy', score: 7.0, note: 'Fitbit sleep tracking is long-refined and reliable for sleep/wake at the price; stage estimates are less consistent.' },
     { criterionId: 'data-access', score: 6.0, note: 'Data lives inside the Google Fitbit ecosystem, with limited export.' },
     { criterionId: 'wearability', score: 7.5, note: 'A small, light band with a multi-day battery — easy to wear every night.' },

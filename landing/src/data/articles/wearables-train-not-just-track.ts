@@ -57,7 +57,7 @@ The wearable you already own is a training instrument. Most people just never sw
 
 ## Section 3: Measurement and training are different jobs — use both
 
-Here's the honest framing that keeps you from buying the wrong thing. **Trackers** — Oura, WHOOP, Apple Watch — are the measurement layer, and they're very good at it. They own the overnight trend, the long-term baseline, the passive record. **Training apps** are the intervention layer: they take a live signal and let you *do* something with it in the moment. They are not competitors; they're two halves of a complete loop.
+Here's the honest framing that keeps you from buying the wrong thing. **Trackers** — Oura, WHOOP, Apple Watch — are the measurement layer, and they're good at much of it, though not everything (in one study, an earlier model, Apple Watch Series 8, gave calorie estimates for a strength-training session that were far off). They own the overnight trend, the long-term baseline, the passive record. **Training apps** are the intervention layer: they take a live signal and let you *do* something with it in the moment. They are not competitors; they're two halves of a complete loop.
 
 So the biohacker's setup isn't "which HRV gadget wins." It's a **self-tracking plus self-training system**: a passive tracker for the trend, paired with an active tool for the practice — the part a tracker structurally cannot do. Ask any "biohacking apps that use HRV" question honestly and the answer splits the same way: some measure it, some train it, and the strong setups use one of each.
 
