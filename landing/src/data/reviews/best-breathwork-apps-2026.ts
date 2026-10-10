@@ -57,7 +57,7 @@ const bestBreathworkApps2026: Comparison = {
     {
       reviewSlug: 'breathe-to-relax',
       award: 'Best evidence-backed free',
-      takeaway: 'US National Center for Telehealth-built free app with published PTSD / stress validation studies.',
+      takeaway: 'US National Center for Telehealth-built free app for diaphragmatic breathing; the highest evidence score among the free apps, though research on the app itself is limited to small pilot studies.',
     },
   ],
   verdict:
@@ -85,7 +85,7 @@ const bestBreathworkApps2026: Comparison = {
     },
     {
       q: 'Is there a free breathing app that works?',
-      a: 'Yes. A free timer is enough for the techniques with the best evidence, such as slow breathing and cyclic sighing. Two good options: iBreathe (clean minimalist timer with visual guide, Apple Watch native) and Breathe2Relax (US National Center for Telehealth-built with published PTSD / stress validation). Different theses; both free.',
+      a: 'Yes. A free timer is enough for the techniques with the best evidence, such as slow breathing and cyclic sighing. Two good options: iBreathe (clean minimalist timer with visual guide, Apple Watch native) and Breathe2Relax (US National Center for Telehealth-built for stress; only small pilot studies of the app itself). Different theses; both free.',
     },
     {
       q: 'What is the cyclic sighing technique everyone talks about?',
@@ -114,7 +114,7 @@ Read more: [the physiological sigh](/articles/physiological-sigh), [box breathin
 
 **Biofeedback.** A biofeedback app measures your body (usually heart rate variability from a watch or sensor) and shows how it responds while you breathe. It helps you find what calms you and track progress over weeks. In this list, Inhale is the biofeedback pick, and it needs an Apple Watch.
 
-**Free.** A free timer is fine for box breathing, 4-7-8 or cyclic sighing. iBreathe is a clean timer; Breathe2Relax was built by the US National Center for Telehealth & Technology for stress and has published validation work. Prana Breath has a large free tier and a one-time $10 unlock.
+**Free.** A free timer is fine for box breathing, 4-7-8 or cyclic sighing. iBreathe is a clean timer; Breathe2Relax was built by the US National Center for Telehealth & Technology for stress; research on the app itself is limited to small pilot studies. Prana Breath has a large free tier and a one-time $10 unlock.
 
 ## Breathing apps compared
 

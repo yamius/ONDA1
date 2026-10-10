@@ -13,7 +13,7 @@ const polarH10: ToolReviewInput = {
   summary:
     'The Polar H10 is a chest strap often used as the reference when other wearables are validated. Its electrical ECG sensor matched lab ECG almost perfectly for HRV in young healthy adults at rest, and it streams raw data to any app. The catch is by design — it is a deliberate measurement tool, not something you wear around the clock.',
   scores: [
-    { criterionId: 'hrv-accuracy', score: 9.7, note: 'Electrical ECG read directly from the chest; peer-reviewed work finds near-perfect agreement with clinical ECG in young healthy adults, at rest.' },
+    { criterionId: 'hrv-accuracy', score: 9.7, note: 'Electrical ECG read from the chest; close to lab ECG at rest, during cycling to exhaustion and while standing — in young healthy adults (two independent studies: Schaffarczyk 2022, Blalock 2026).' },
     { criterionId: 'sensor', score: 9.5, note: 'A true ECG electrode pair, not optical inference from blood flow — close to lab ECG at rest in young healthy adults.' },
     { criterionId: 'sleep-accuracy', score: 3.0, note: 'Not a sleep device — a chest strap does no sleep staging and is not worn overnight.' },
     { criterionId: 'data-access', score: 9.5, note: 'Broadcasts raw beat-to-beat (RR) intervals over Bluetooth and ANT+; pairs with virtually any HRV app.' },
