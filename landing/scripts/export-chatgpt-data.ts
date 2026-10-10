@@ -104,13 +104,23 @@ if (missing.length) {
   throw new Error(`hrvMetric not set for wearable review(s): ${missing.join(', ')}`)
 }
 
-// Winner is exported only when the duel page shows one: not for 'depends on the job'
-// duels and not when the top-two ONDA score gap is <= 0.1 (shown as practically equal).
+// Winner is exported only when the duel page shows one. Status and label mirror the
+// line above the verdict on HeadToHeadPage.tsx (English defaults): top-two ONDA score
+// gap <= 0.1 → "Practically equal by ONDA score (…)", also on 'depends on the job'
+// duels; other 'depends on the job' duels → "Higher ONDA score: X (…)"; else "WINNER: X".
 const reviewBySlug = new Map(reviews.map((r) => [r.slug, r]))
 const duelRows = headToHeads.map((h) => {
   const prods = [h.productASlug, h.productBSlug, h.productCSlug].filter((s): s is string => !!s).map((s) => reviewBySlug.get(s)!).filter(Boolean)
-  const { practicallyEqual } = scoreComparison(prods)
-  const status = h.jobDependentVerdict ? 'depends-on-the-job' : practicallyEqual || !h.winnerSlug ? 'practically-equal' : 'winner'
+  const { ranked, practicallyEqual } = scoreComparison(prods)
+  const winnerReview = prods.find((p) => p.slug === h.winnerSlug)
+  const status = practicallyEqual ? 'practically-equal' : h.jobDependentVerdict || !winnerReview ? 'depends-on-the-job' : 'winner'
+  const s = ranked.map((r) => r.overallScore.toFixed(1))
+  const label =
+    status === 'practically-equal'
+      ? `Practically equal by ONDA score (${s.length > 2 ? `${s.slice(0, -1).join(', ')} and ${s[s.length - 1]}` : s.join(' and ')})`
+      : status === 'depends-on-the-job'
+        ? `Higher ONDA score: ${ranked[0].name} (${s.join(' vs ')})`
+        : `WINNER: ${winnerReview!.name}`
   return {
   slug: h.slug,
   title: h.title,
@@ -118,6 +128,7 @@ const duelRows = headToHeads.map((h) => {
   products: [h.productASlug, h.productBSlug, h.productCSlug].filter(Boolean),
   winner: status === 'winner' ? h.winnerSlug : null,
   winnerStatus: status,
+  label,
   onda_scores: Object.fromEntries(prods.map((r) => [r.slug, r.overallScore])),
   verdict: h.verdict,
   bestFor: { a: h.bestForA, b: h.bestForB, c: h.bestForC ?? null },

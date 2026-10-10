@@ -11529,6 +11529,7 @@
       ],
       "winner": "oura-ring-4",
       "winnerStatus": "winner",
+      "label": "WINNER: Oura Ring 4",
       "onda_scores": {
         "oura-ring-4": 7.7,
         "whoop-5-0": 7.3,
@@ -11594,6 +11595,7 @@
       ],
       "winner": "oura-ring-4",
       "winnerStatus": "winner",
+      "label": "WINNER: Oura Ring 4",
       "onda_scores": {
         "oura-ring-4": 7.7,
         "ultrahuman-ring-air": 6.9,
@@ -11669,6 +11671,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Nurosym (7.9 vs 7.1 vs 6.9)",
       "onda_scores": {
         "pulsetto": 6.9,
         "nurosym": 7.9,
@@ -11734,6 +11737,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Truvaga 350 (7.3 vs 7.0 vs 6.9)",
       "onda_scores": {
         "gammacore-sapphire-cv": 7,
         "truvaga-350": 7.3,
@@ -11799,6 +11803,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Apollo Neuro (7.1 vs 6.6 vs 6.2)",
       "onda_scores": {
         "apollo-neuro": 7.1,
         "sensate": 6.2,
@@ -11864,6 +11869,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Levels (8.2 vs 7.9 vs 7.5)",
       "onda_scores": {
         "levels": 8.2,
         "nutrisense": 7.9,
@@ -11928,7 +11934,8 @@
         "ultrahuman-m1"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.6, 7.5 and 7.5)",
       "onda_scores": {
         "lingo": 7.5,
         "stelo": 7.5,
@@ -11994,6 +12001,7 @@
       ],
       "winner": "muse-s-athena",
       "winnerStatus": "winner",
+      "label": "WINNER: Muse S Athena",
       "onda_scores": {
         "muse-s-athena": 8.5,
         "muse-2": 7.8,
@@ -12058,6 +12066,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Muse S Athena (8.5 vs 7.6)",
       "onda_scores": {
         "muse-s-athena": 8.5,
         "neurosity-crown": 7.6
@@ -12121,6 +12130,7 @@
       ],
       "winner": "omnilux-contour-face",
       "winnerStatus": "winner",
+      "label": "WINNER: Omnilux Contour Face",
       "onda_scores": {
         "omnilux-contour-face": 8.6,
         "higherdose-red-light-face-mask": 7.3
@@ -12180,6 +12190,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Insight Timer (8.0 vs 7.8 vs 7.7)",
       "onda_scores": {
         "headspace": 7.8,
         "calm": 7.7,
@@ -12250,6 +12261,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Sleep Cycle (7.2 vs 6.5 vs 5.5)",
       "onda_scores": {
         "sleepio": 6.5,
         "sleep-cycle": 7.2,
@@ -12314,6 +12326,7 @@
       ],
       "winner": "oura-ring-4",
       "winnerStatus": "winner",
+      "label": "WINNER: Oura Ring 4",
       "onda_scores": {
         "oura-ring-4": 7.7,
         "whoop-5-0": 7.3
@@ -12372,6 +12385,7 @@
       ],
       "winner": "oura-ring-4",
       "winnerStatus": "winner",
+      "label": "WINNER: Oura Ring 4",
       "onda_scores": {
         "oura-ring-4": 7.7,
         "apple-watch-series-11": 7.2
@@ -12435,6 +12449,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Garmin Venu 4 (7.5 vs 7.2)",
       "onda_scores": {
         "apple-watch-series-11": 7.2,
         "garmin-venu-4": 7.5
@@ -12498,6 +12513,7 @@
       ],
       "winner": "garmin-venu-4",
       "winnerStatus": "winner",
+      "label": "WINNER: Garmin Venu 4",
       "onda_scores": {
         "whoop-5-0": 7.3,
         "garmin-venu-4": 7.5
@@ -12561,6 +12577,7 @@
       ],
       "winner": "oura-ring-4",
       "winnerStatus": "winner",
+      "label": "WINNER: Oura Ring 4",
       "onda_scores": {
         "oura-ring-4": 7.7,
         "ultrahuman-ring-air": 6.9
@@ -12624,6 +12641,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Oura Ring 4 (7.7 vs 7.1)",
       "onda_scores": {
         "oura-ring-4": 7.7,
         "samsung-galaxy-ring": 7.1
@@ -12687,6 +12705,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Polar H10 (7.6 vs 7.3)",
       "onda_scores": {
         "whoop-5-0": 7.3,
         "polar-h10": 7.6
@@ -12750,6 +12769,7 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.0 and 6.9)",
       "onda_scores": {
         "ringconn-gen-2": 7,
         "ultrahuman-ring-air": 6.9
@@ -12818,6 +12838,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Apple Watch Series 11 (7.2 vs 6.8)",
       "onda_scores": {
         "apple-watch-series-11": 7.2,
         "fitbit-charge-6": 6.8
@@ -12880,7 +12901,8 @@
         "garmin-venu-4"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.6 and 7.5)",
       "onda_scores": {
         "polar-h10": 7.6,
         "garmin-venu-4": 7.5
@@ -12944,6 +12966,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Oura Ring 4 (7.7 vs 7.0)",
       "onda_scores": {
         "oura-ring-4": 7.7,
         "ringconn-gen-2": 7
@@ -13007,6 +13030,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Whoop 5.0 (7.3 vs 6.8)",
       "onda_scores": {
         "fitbit-air": 6.8,
         "whoop-5-0": 7.3
@@ -13064,7 +13088,8 @@
         "apple-watch-series-11"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.3 and 7.2)",
       "onda_scores": {
         "garmin-fenix-8": 7.3,
         "apple-watch-series-11": 7.2
@@ -13128,6 +13153,7 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (6.8 and 6.8)",
       "onda_scores": {
         "fitbit-air": 6.8,
         "fitbit-charge-6": 6.8
@@ -13186,6 +13212,7 @@
       ],
       "winner": "garmin-venu-4",
       "winnerStatus": "winner",
+      "label": "WINNER: Garmin Venu 4",
       "onda_scores": {
         "garmin-fenix-8": 7.3,
         "garmin-venu-4": 7.5
@@ -13244,6 +13271,7 @@
       ],
       "winner": "apple-watch-series-12",
       "winnerStatus": "winner",
+      "label": "WINNER: Apple Watch Series 12",
       "onda_scores": {
         "apple-watch-series-12": 7.6,
         "apple-watch-series-11": 7.2
@@ -13301,7 +13329,8 @@
         "oura-ring-4"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.7 and 7.6)",
       "onda_scores": {
         "apple-watch-series-12": 7.6,
         "oura-ring-4": 7.7
@@ -13359,7 +13388,8 @@
         "oura-ring-5"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.6 and 7.6)",
       "onda_scores": {
         "apple-watch-series-12": 7.6,
         "oura-ring-5": 7.6
@@ -13417,7 +13447,8 @@
         "apple-watch-series-12"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.7 and 7.6)",
       "onda_scores": {
         "apple-watch-ultra-4": 7.7,
         "apple-watch-series-12": 7.6
@@ -13476,6 +13507,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Apple Watch Ultra 4 (7.7 vs 7.3)",
       "onda_scores": {
         "apple-watch-ultra-4": 7.7,
         "whoop-5-0": 7.3
@@ -13534,6 +13566,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Apple Watch Series 12 (7.6 vs 7.1)",
       "onda_scores": {
         "apple-watch-series-12": 7.6,
         "samsung-galaxy-ring": 7.1
@@ -13592,6 +13625,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Apple Watch Series 12 (7.6 vs 7.3)",
       "onda_scores": {
         "apple-watch-series-12": 7.6,
         "garmin-fenix-8": 7.3
@@ -13650,6 +13684,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Apple Watch Series 12 (7.6 vs 6.8)",
       "onda_scores": {
         "apple-watch-series-12": 7.6,
         "fitbit-charge-6": 6.8
@@ -13708,6 +13743,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Apple Watch Series 12 (7.6 vs 7.3)",
       "onda_scores": {
         "apple-watch-series-12": 7.6,
         "ultrahuman-ring-pro": 7.3
@@ -13765,7 +13801,8 @@
         "oura-ring-5"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.6 and 7.5)",
       "onda_scores": {
         "garmin-venu-4": 7.5,
         "oura-ring-5": 7.6
@@ -13824,6 +13861,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Apple Watch Series 12 (7.6 vs 7.3)",
       "onda_scores": {
         "apple-watch-series-12": 7.6,
         "whoop-5-0": 7.3
@@ -13882,6 +13920,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Apple Watch Ultra 4 (7.7 vs 7.3)",
       "onda_scores": {
         "apple-watch-ultra-4": 7.7,
         "garmin-fenix-8": 7.3
@@ -13939,7 +13978,8 @@
         "garmin-venu-4"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.6 and 7.5)",
       "onda_scores": {
         "apple-watch-series-12": 7.6,
         "garmin-venu-4": 7.5
@@ -13998,6 +14038,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Levels (8.2 vs 7.9)",
       "onda_scores": {
         "levels": 8.2,
         "nutrisense": 7.9
@@ -14051,6 +14092,7 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.5 and 7.5)",
       "onda_scores": {
         "stelo": 7.5,
         "lingo": 7.5
@@ -14109,6 +14151,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Levels (8.2 vs 7.6)",
       "onda_scores": {
         "levels": 8.2,
         "ultrahuman-m1": 7.6
@@ -14172,6 +14215,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Levels (8.2 vs 7.6)",
       "onda_scores": {
         "zoe": 7.6,
         "levels": 8.2
@@ -14235,6 +14279,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Levels (8.2 vs 7.5)",
       "onda_scores": {
         "signos": 7.5,
         "levels": 8.2
@@ -14298,6 +14343,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Levels (8.2 vs 7.6)",
       "onda_scores": {
         "veri": 7.6,
         "levels": 8.2
@@ -14361,6 +14407,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Nutrisense (7.9 vs 7.6)",
       "onda_scores": {
         "nutrisense": 7.9,
         "zoe": 7.6
@@ -14424,6 +14471,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Apollo Neuro (7.1 vs 6.9)",
       "onda_scores": {
         "apollo-neuro": 7.1,
         "pulsetto": 6.9
@@ -14482,6 +14530,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Nurosym (7.9 vs 6.9)",
       "onda_scores": {
         "nurosym": 7.9,
         "pulsetto": 6.9
@@ -14540,6 +14589,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Truvaga 350 (7.3 vs 6.9)",
       "onda_scores": {
         "truvaga-350": 7.3,
         "pulsetto": 6.9
@@ -14603,6 +14653,7 @@
       ],
       "winner": "apollo-neuro",
       "winnerStatus": "winner",
+      "label": "WINNER: Apollo Neuro",
       "onda_scores": {
         "sensate": 6.2,
         "apollo-neuro": 7.1
@@ -14666,6 +14717,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Pulsetto (6.9 vs 6.2)",
       "onda_scores": {
         "pulsetto": 6.9,
         "sensate": 6.2
@@ -14719,6 +14771,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Nurosym (7.9 vs 7.0)",
       "onda_scores": {
         "gammacore-sapphire-cv": 7,
         "nurosym": 7.9
@@ -14782,6 +14835,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Pulsetto (6.9 vs 6.6)",
       "onda_scores": {
         "hoolest-verelief-prime": 6.6,
         "pulsetto": 6.9
@@ -14845,6 +14899,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Apollo Neuro (7.1 vs 6.7)",
       "onda_scores": {
         "flow-neuroscience": 6.7,
         "apollo-neuro": 7.1
@@ -14908,6 +14963,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Nurosym (7.9 vs 7.2)",
       "onda_scores": {
         "nurosym": 7.9,
         "vagustim": 7.2
@@ -14971,6 +15027,7 @@
       ],
       "winner": "muse-s-athena",
       "winnerStatus": "winner",
+      "label": "WINNER: Muse S Athena",
       "onda_scores": {
         "muse-s-athena": 8.5,
         "muse-2": 7.8
@@ -15034,6 +15091,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Muse S Athena (8.5 vs 7.0)",
       "onda_scores": {
         "muse-s-athena": 8.5,
         "mendi": 7
@@ -15087,6 +15145,7 @@
       ],
       "winner": "neurosity-crown",
       "winnerStatus": "winner",
+      "label": "WINNER: Neurosity Crown",
       "onda_scores": {
         "neurosity-crown": 7.6,
         "emotiv-insight-2": 7.2
@@ -15150,6 +15209,7 @@
       ],
       "winner": "muse-2",
       "winnerStatus": "winner",
+      "label": "WINNER: Muse 2",
       "onda_scores": {
         "muse-2": 7.8,
         "focuscalm": 6.9
@@ -15213,6 +15273,7 @@
       ],
       "winner": "muse-s-athena",
       "winnerStatus": "winner",
+      "label": "WINNER: Muse S Athena",
       "onda_scores": {
         "sens-ai": 7.1,
         "muse-s-athena": 8.5
@@ -15276,6 +15337,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Muse 2 (7.8 vs 7.0)",
       "onda_scores": {
         "mendi": 7,
         "muse-2": 7.8
@@ -15339,6 +15401,7 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.8 and 7.7)",
       "onda_scores": {
         "headspace": 7.8,
         "calm": 7.7
@@ -15397,6 +15460,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Headspace (7.8 vs 7.4)",
       "onda_scores": {
         "headspace": 7.8,
         "waking-up": 7.4
@@ -15460,6 +15524,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Insight Timer (8.0 vs 7.7)",
       "onda_scores": {
         "calm": 7.7,
         "insight-timer": 8
@@ -15523,6 +15588,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Insight Timer (8.0 vs 7.4)",
       "onda_scores": {
         "medito": 7.4,
         "insight-timer": 8
@@ -15581,6 +15647,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Headspace (7.8 vs 7.5)",
       "onda_scores": {
         "balance": 7.5,
         "headspace": 7.8
@@ -15634,6 +15701,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Calm (7.7 vs 7.5)",
       "onda_scores": {
         "balance": 7.5,
         "calm": 7.7
@@ -15687,6 +15755,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Calm (7.7 vs 7.4)",
       "onda_scores": {
         "calm": 7.7,
         "waking-up": 7.4
@@ -15740,6 +15809,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Insight Timer (8.0 vs 7.8)",
       "onda_scores": {
         "headspace": 7.8,
         "insight-timer": 8
@@ -15803,6 +15873,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Headspace (7.8 vs 7.4)",
       "onda_scores": {
         "medito": 7.4,
         "headspace": 7.8
@@ -15861,6 +15932,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Healthy Minds Program (7.8 vs 7.4)",
       "onda_scores": {
         "healthy-minds-program": 7.8,
         "waking-up": 7.4
@@ -15924,6 +15996,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Sleep Cycle (7.2 vs 7.0)",
       "onda_scores": {
         "sleep-cycle": 7.2,
         "sleep-as-android": 7
@@ -15987,6 +16060,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Sleepio (6.5 vs 5.5)",
       "onda_scores": {
         "sleepio": 6.5,
         "pzizz": 5.5
@@ -16050,6 +16124,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Sleep Cycle (7.2 vs 6.8)",
       "onda_scores": {
         "bettersleep": 6.8,
         "sleep-cycle": 7.2
@@ -16112,7 +16187,8 @@
         "mito-red-mitopro-1500"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (8.1 and 8.0)",
       "onda_scores": {
         "joovv-solo-3": 8,
         "mito-red-mitopro-1500": 8.1
@@ -16176,6 +16252,7 @@
       ],
       "winner": "platinumled-biomax-600",
       "winnerStatus": "winner",
+      "label": "WINNER: PlatinumLED BIOMAX 600",
       "onda_scores": {
         "joovv-solo-3": 8,
         "platinumled-biomax-600": 8.2
@@ -16239,6 +16316,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Mito Red MitoPRO 1500 (8.1 vs 7.8)",
       "onda_scores": {
         "mito-red-mitopro-1500": 8.1,
         "hooga-hg500": 7.8
@@ -16302,6 +16380,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Joovv Solo 3.0 (8.0 vs 7.8)",
       "onda_scores": {
         "hooga-hg500": 7.8,
         "joovv-solo-3": 8
@@ -16355,6 +16434,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: PlatinumLED BIOMAX 600 (8.2 vs 7.8)",
       "onda_scores": {
         "hooga-hg500": 7.8,
         "platinumled-biomax-600": 8.2
@@ -16407,7 +16487,8 @@
         "joovv-solo-3"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (8.0 and 7.9)",
       "onda_scores": {
         "gembared-vesta": 7.9,
         "joovv-solo-3": 8
@@ -16471,6 +16552,7 @@
       ],
       "winner": "platinumled-biomax-600",
       "winnerStatus": "winner",
+      "label": "WINNER: PlatinumLED BIOMAX 600",
       "onda_scores": {
         "platinumled-biomax-600": 8.2,
         "biolight-pro-900": 7.8
@@ -16535,6 +16617,7 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (8.2, 8.1 and 8.0)",
       "onda_scores": {
         "joovv-solo-3": 8,
         "mito-red-mitopro-1500": 8.1,
@@ -16600,6 +16683,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Infraredi Pro 1500 (8.0 vs 7.8 vs 7.4)",
       "onda_scores": {
         "hooga-hg500": 7.8,
         "bon-charge-red-light-panel": 7.4,
@@ -16664,6 +16748,7 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (8.0 and 7.9)",
       "onda_scores": {
         "plunge": 8,
         "edge-tub": 7.9
@@ -16721,7 +16806,8 @@
         "coldture"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (8.0 and 7.9)",
       "onda_scores": {
         "plunge": 8,
         "coldture": 7.9
@@ -16775,6 +16861,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: The Plunge All-In (8.0 vs 6.6)",
       "onda_scores": {
         "plunge": 8,
         "ice-barrel-500": 6.6
@@ -16833,6 +16920,7 @@
       ],
       "winner": "plunge",
       "winnerStatus": "winner",
+      "label": "WINNER: The Plunge All-In",
       "onda_scores": {
         "morozko-forge": 7.5,
         "plunge": 8
@@ -16892,6 +16980,7 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (8.0, 7.9 and 7.6)",
       "onda_scores": {
         "plunge": 8,
         "coldture": 7.9,
@@ -16952,6 +17041,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Inergize Cold Tub (7.1 vs 6.6 vs 6.4)",
       "onda_scores": {
         "ice-barrel-500": 6.6,
         "cold-pod": 6.4,
@@ -17011,6 +17101,7 @@
       ],
       "winner": "sunlighten-mpulse",
       "winnerStatus": "winner",
+      "label": "WINNER: Sunlighten mPulse 3-in-1",
       "onda_scores": {
         "sunlighten-mpulse": 8.3,
         "clearlight-sanctuary-2": 7.7
@@ -17068,7 +17159,8 @@
         "clearlight-sanctuary-2"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.7 and 7.6)",
       "onda_scores": {
         "sun-home-equinox": 7.6,
         "clearlight-sanctuary-2": 7.7
@@ -17122,6 +17214,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Sunlighten mPulse 3-in-1 (8.3 vs 7.6)",
       "onda_scores": {
         "sun-home-equinox": 7.6,
         "sunlighten-mpulse": 8.3
@@ -17175,6 +17268,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Sunlighten mPulse 3-in-1 (8.3 vs 8.0)",
       "onda_scores": {
         "saunaspace-faraday": 8,
         "sunlighten-mpulse": 8.3
@@ -17233,6 +17327,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: HigherDose Infrared Sauna Blanket V4 (7.7 vs 7.4)",
       "onda_scores": {
         "higherdose-blanket-v4": 7.7,
         "therasage-thera-sauna-personal": 7.4
@@ -17290,7 +17385,8 @@
         "almost-heaven-salem"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (8.0 and 8.0)",
       "onda_scores": {
         "finnleo-hallmark": 8,
         "almost-heaven-salem": 8
@@ -17350,6 +17446,7 @@
       ],
       "winner": "sunlighten-mpulse",
       "winnerStatus": "winner",
+      "label": "WINNER: Sunlighten mPulse 3-in-1",
       "onda_scores": {
         "sunlighten-mpulse": 8.3,
         "clearlight-sanctuary-2": 7.7,
@@ -17410,6 +17507,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Sunlighten mPulse 3-in-1 (8.3 vs 8.0 vs 8.0)",
       "onda_scores": {
         "sunlighten-mpulse": 8.3,
         "finnleo-hallmark": 8,
@@ -17470,6 +17568,7 @@
       ],
       "winner": "oura-ring-4",
       "winnerStatus": "winner",
+      "label": "WINNER: Oura Ring 4",
       "onda_scores": {
         "oura-ring-4": 7.7,
         "whoop-5-0": 7.3,
@@ -17539,7 +17638,8 @@
         "garmin-venu-4"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.6, 7.5 and 7.3)",
       "onda_scores": {
         "polar-h10": 7.6,
         "whoop-5-0": 7.3,
@@ -17605,6 +17705,7 @@
       ],
       "winner": "nurosym",
       "winnerStatus": "winner",
+      "label": "WINNER: Nurosym",
       "onda_scores": {
         "apollo-neuro": 7.1,
         "nurosym": 7.9,
@@ -17670,6 +17771,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Truvaga 350 (7.3 vs 6.9 vs 6.6)",
       "onda_scores": {
         "pulsetto": 6.9,
         "truvaga-350": 7.3,
@@ -17735,6 +17837,7 @@
       ],
       "winner": "nurosym",
       "winnerStatus": "winner",
+      "label": "WINNER: Nurosym",
       "onda_scores": {
         "nurosym": 7.9,
         "vagustim": 7.2,
@@ -17800,6 +17903,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Levels (8.2 vs 7.9 vs 7.6)",
       "onda_scores": {
         "levels": 8.2,
         "zoe": 7.6,
@@ -17865,6 +17969,7 @@
       ],
       "winner": "muse-2",
       "winnerStatus": "winner",
+      "label": "WINNER: Muse 2",
       "onda_scores": {
         "muse-2": 7.8,
         "focuscalm": 6.9,
@@ -17929,7 +18034,8 @@
         "healthy-minds-program"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.8, 7.8 and 7.4)",
       "onda_scores": {
         "headspace": 7.8,
         "waking-up": 7.4,
@@ -17995,6 +18101,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Sleep Cycle (7.2 vs 7.0 vs 6.5)",
       "onda_scores": {
         "sleep-cycle": 7.2,
         "sleep-as-android": 7,
@@ -18060,6 +18167,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: BetterSleep (6.8 vs 5.5 vs 5.4)",
       "onda_scores": {
         "endel": 5.4,
         "pzizz": 5.5,
@@ -18124,6 +18232,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: ChiliPad Dock Pro (8.3 vs 7.7)",
       "onda_scores": {
         "eight-sleep-pod-4": 7.7,
         "chilipad-dock-pro": 8.3
@@ -18177,6 +18286,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Eight Sleep Pod Cover Pro (7.9 vs 7.7)",
       "onda_scores": {
         "eight-sleep-pod-4": 7.7,
         "eight-sleep-pod-cover-pro": 7.9
@@ -18230,6 +18340,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: ChiliPad Dock Pro (8.3 vs 7.8)",
       "onda_scores": {
         "chilipad-dock-pro": 8.3,
         "bedjet-3": 7.8
@@ -18283,6 +18394,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: ChiliPad Dock Pro (8.3 vs 7.8)",
       "onda_scores": {
         "chilipad-dock-pro": 8.3,
         "chilipad-cube": 7.8
@@ -18336,6 +18448,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Eight Sleep Pod Cover Pro (7.9 vs 7.5)",
       "onda_scores": {
         "eight-sleep-pod-3": 7.5,
         "eight-sleep-pod-cover-pro": 7.9
@@ -18390,6 +18503,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: ChiliPad Dock Pro (8.3 vs 7.8 vs 7.7)",
       "onda_scores": {
         "eight-sleep-pod-4": 7.7,
         "chilipad-dock-pro": 8.3,
@@ -18449,6 +18563,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Healthy Wave Multi-Wave PEMF Mat (8.2 vs 7.4)",
       "onda_scores": {
         "bemer-classic-evo": 7.4,
         "healthy-wave-multi-wave": 8.2
@@ -18507,6 +18622,7 @@
       ],
       "winner": "healthy-wave-multi-wave",
       "winnerStatus": "winner",
+      "label": "WINNER: Healthy Wave Multi-Wave PEMF Mat",
       "onda_scores": {
         "healthy-wave-multi-wave": 8.2,
         "qi-coil": 3.3
@@ -18560,6 +18676,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Whoop 5.0 (7.3 vs 6.9)",
       "onda_scores": {
         "whoop-5-0": 7.3,
         "ultrahuman-ring-air": 6.9
@@ -18613,6 +18730,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Hyperice Hypervolt 3 Pro (8.9 vs 8.3)",
       "onda_scores": {
         "hypervolt-3-pro": 8.9,
         "theragun-pro-plus": 8.3
@@ -18666,6 +18784,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Hyperice Hypervolt 3 Pro (8.9 vs 8.4)",
       "onda_scores": {
         "hypervolt-3-pro": 8.9,
         "hypervolt-2-pro": 8.4
@@ -18719,6 +18838,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Hyperice Hypervolt 3 Pro (8.9 vs 8.5)",
       "onda_scores": {
         "hypervolt-3-pro": 8.9,
         "theragun-elite": 8.5
@@ -18772,6 +18892,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Hyperice Hypervolt 3 Pro (8.9 vs 8.3)",
       "onda_scores": {
         "hypervolt-3-pro": 8.9,
         "achedaway-pro": 8.3
@@ -18824,7 +18945,8 @@
         "oura-ring-4"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.7 and 7.6)",
       "onda_scores": {
         "oura-ring-5": 7.6,
         "oura-ring-4": 7.7
@@ -18878,6 +19000,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Oura Ring 5 (7.6 vs 7.3)",
       "onda_scores": {
         "oura-ring-5": 7.6,
         "whoop-5-0": 7.3
@@ -18931,6 +19054,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Oura Ring 5 (7.6 vs 7.2)",
       "onda_scores": {
         "oura-ring-5": 7.6,
         "apple-watch-series-11": 7.2
@@ -18984,6 +19108,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Oura Ring 5 (7.6 vs 6.9)",
       "onda_scores": {
         "oura-ring-5": 7.6,
         "ultrahuman-ring-air": 6.9
@@ -19037,6 +19162,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Oura Ring 5 (7.6 vs 7.3)",
       "onda_scores": {
         "ultrahuman-ring-pro": 7.3,
         "oura-ring-5": 7.6
@@ -19090,6 +19216,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Ultrahuman Ring Pro (7.3 vs 7.1)",
       "onda_scores": {
         "ultrahuman-ring-pro": 7.3,
         "samsung-galaxy-ring": 7.1
@@ -19143,6 +19270,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Ultrahuman Ring Pro (7.3 vs 7.0)",
       "onda_scores": {
         "ultrahuman-ring-pro": 7.3,
         "ringconn-gen-2": 7
@@ -19196,6 +19324,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Ultrahuman Ring Pro (7.3 vs 6.9)",
       "onda_scores": {
         "ultrahuman-ring-pro": 7.3,
         "ultrahuman-ring-air": 6.9
@@ -19249,6 +19378,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: RingConn Gen 2 (7.0 vs 6.6)",
       "onda_scores": {
         "amazfit-helio-ring": 6.6,
         "ringconn-gen-2": 7
@@ -19302,6 +19432,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Oura Ring 4 (7.7 vs 6.6)",
       "onda_scores": {
         "amazfit-helio-ring": 6.6,
         "oura-ring-4": 7.7
@@ -19355,6 +19486,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Samsung Galaxy Ring (7.1 vs 6.6)",
       "onda_scores": {
         "amazfit-helio-ring": 6.6,
         "samsung-galaxy-ring": 7.1
@@ -19408,6 +19540,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: RingConn Gen 3 (7.2 vs 7.0)",
       "onda_scores": {
         "ringconn-gen-3": 7.2,
         "ringconn-gen-2": 7
@@ -19461,6 +19594,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Oura Ring 5 (7.6 vs 7.2)",
       "onda_scores": {
         "ringconn-gen-3": 7.2,
         "oura-ring-5": 7.6
@@ -19513,7 +19647,8 @@
         "whoop-5-0"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.3 and 7.2)",
       "onda_scores": {
         "ringconn-gen-3": 7.2,
         "whoop-5-0": 7.3
@@ -19567,6 +19702,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Oura Ring 5 (7.6 vs 7.1)",
       "onda_scores": {
         "oura-ring-5": 7.6,
         "samsung-galaxy-ring": 7.1
@@ -19619,7 +19755,8 @@
         "ultrahuman-ring-pro"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.3 and 7.3)",
       "onda_scores": {
         "whoop-5-0": 7.3,
         "ultrahuman-ring-pro": 7.3
@@ -19672,7 +19809,8 @@
         "ultrahuman-ring-pro"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.3 and 7.2)",
       "onda_scores": {
         "ringconn-gen-3": 7.2,
         "ultrahuman-ring-pro": 7.3
@@ -19726,6 +19864,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Oura Ring 5 (7.6 vs 6.4)",
       "onda_scores": {
         "circular-ring-2": 6.4,
         "oura-ring-5": 7.6
@@ -19779,6 +19918,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: RingConn Gen 3 (7.2 vs 6.4)",
       "onda_scores": {
         "circular-ring-2": 6.4,
         "ringconn-gen-3": 7.2
@@ -19831,7 +19971,8 @@
         "amazfit-helio-ring"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (6.7 and 6.6)",
       "onda_scores": {
         "luna-ring": 6.7,
         "amazfit-helio-ring": 6.6
@@ -19885,6 +20026,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Oura Ring 4 (7.7 vs 6.7)",
       "onda_scores": {
         "luna-ring": 6.7,
         "oura-ring-4": 7.7
@@ -19937,7 +20079,8 @@
         "eight-sleep-pod-5"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.7 and 7.6)",
       "onda_scores": {
         "eight-sleep-pod-4": 7.7,
         "eight-sleep-pod-5": 7.6
@@ -19991,6 +20134,7 @@
       ],
       "winner": "eight-sleep-pod-6",
       "winnerStatus": "winner",
+      "label": "WINNER: Eight Sleep Pod 6",
       "onda_scores": {
         "eight-sleep-pod-6": 8,
         "eight-sleep-pod-5": 7.6
@@ -20049,6 +20193,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: ChiliPad Dock Pro (8.3 vs 7.6)",
       "onda_scores": {
         "eight-sleep-pod-5": 7.6,
         "chilipad-dock-pro": 8.3
@@ -20102,6 +20247,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Eight Sleep Pod 5 (7.6 vs 7.2)",
       "onda_scores": {
         "eight-sleep-pod-5": 7.6,
         "sleep-number-climate360": 7.2
@@ -20155,6 +20301,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: BedJet 3 (7.8 vs 7.6)",
       "onda_scores": {
         "eight-sleep-pod-5": 7.6,
         "bedjet-3": 7.8
@@ -20208,6 +20355,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Samsung Galaxy Ring (7.1 vs 6.9)",
       "onda_scores": {
         "ultrahuman-ring-air": 6.9,
         "samsung-galaxy-ring": 7.1
@@ -20261,6 +20409,7 @@
       ],
       "winner": "oura-ring-4",
       "winnerStatus": "winner",
+      "label": "WINNER: Oura Ring 4",
       "onda_scores": {
         "oura-ring-4": 7.7,
         "fitbit-charge-6": 6.8
@@ -20314,6 +20463,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: The Plunge All-In (8.0 vs 6.4)",
       "onda_scores": {
         "plunge": 8,
         "cold-pod": 6.4
@@ -20367,6 +20517,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Pulse Centers Pulse XL Pro (7.8 vs 7.4)",
       "onda_scores": {
         "bemer-classic-evo": 7.4,
         "pulse-centers-pulse-xl-pro": 7.8
@@ -20425,6 +20576,7 @@
       ],
       "winner": "healthy-wave-multi-wave",
       "winnerStatus": "winner",
+      "label": "WINNER: Healthy Wave Multi-Wave PEMF Mat",
       "onda_scores": {
         "healthy-wave-multi-wave": 8.2,
         "higherdose-pemf-mat": 6.4
@@ -20478,6 +20630,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: iMRS Prime (7.6 vs 7.3)",
       "onda_scores": {
         "imrs-prime": 7.6,
         "omi-full-body-mat": 7.3
@@ -20536,6 +20689,7 @@
       ],
       "winner": "resona-health-vibe",
       "winnerStatus": "winner",
+      "label": "WINNER: Resona Health VIBE",
       "onda_scores": {
         "resona-health-vibe": 7.3,
         "olylife-tera-p90-plus": 6.5
@@ -20589,6 +20743,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Resona Health VIBE (7.3 vs 6.4)",
       "onda_scores": {
         "resona-health-vibe": 7.3,
         "higherdose-pemf-mat": 6.4
@@ -20648,6 +20803,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Healthy Wave Multi-Wave PEMF Mat (8.2 vs 7.8 vs 7.4)",
       "onda_scores": {
         "bemer-classic-evo": 7.4,
         "healthy-wave-multi-wave": 8.2,
@@ -20712,6 +20868,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Breathwrk (8.4 vs 7.7)",
       "onda_scores": {
         "breathwrk": 8.4,
         "othership": 7.7
@@ -20770,6 +20927,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Breathwrk (8.4 vs 7.3)",
       "onda_scores": {
         "breathwrk": 8.4,
         "soma-breath": 7.3
@@ -20823,6 +20981,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Othership (7.7 vs 7.2)",
       "onda_scores": {
         "othership": 7.7,
         "open-app": 7.2
@@ -20876,6 +21035,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: SOMA Breath (7.3 vs 6.9)",
       "onda_scores": {
         "wim-hof-method-app": 6.9,
         "soma-breath": 7.3
@@ -20929,6 +21089,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: iBreathe (6.2 vs 5.9)",
       "onda_scores": {
         "ibreathe": 6.2,
         "breathe-to-relax": 5.9
@@ -20983,6 +21144,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Breathwrk (8.4 vs 7.7 vs 6.9)",
       "onda_scores": {
         "breathwrk": 8.4,
         "othership": 7.7,
@@ -21042,6 +21204,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Omnilux Contour Face (8.6 vs 8.0)",
       "onda_scores": {
         "omnilux-contour-face": 8.6,
         "currentbody-series-2": 8
@@ -21100,6 +21263,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Omnilux Contour Face (8.6 vs 7.3)",
       "onda_scores": {
         "omnilux-contour-face": 8.6,
         "dr-dennis-gross-spectralite": 7.3
@@ -21158,6 +21322,7 @@
       ],
       "winner": "currentbody-series-2",
       "winnerStatus": "winner",
+      "label": "WINNER: CurrentBody Series 2 LED Light Therapy Face Mask",
       "onda_scores": {
         "currentbody-series-2": 8,
         "higherdose-red-light-face-mask": 7.3
@@ -21210,7 +21375,8 @@
         "higherdose-red-light-face-mask"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.4 and 7.3)",
       "onda_scores": {
         "theraface-mask": 7.4,
         "higherdose-red-light-face-mask": 7.3
@@ -21269,6 +21435,7 @@
       ],
       "winner": "lightstim-for-wrinkles",
       "winnerStatus": "winner",
+      "label": "WINNER: LightStim for Wrinkles",
       "onda_scores": {
         "lightstim-for-wrinkles": 7.6,
         "solawave-wand-4-in-1": 6.2
@@ -21323,6 +21490,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Omnilux Contour Face (8.6 vs 8.0 vs 7.3)",
       "onda_scores": {
         "omnilux-contour-face": 8.6,
         "currentbody-series-2": 8,
@@ -21382,6 +21550,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Hostage Tape (8.0 vs 7.5)",
       "onda_scores": {
         "hostage-tape": 8,
         "somnifix": 7.5
@@ -21440,6 +21609,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Hostage Tape (8.0 vs 7.6)",
       "onda_scores": {
         "hostage-tape": 8,
         "dream-recovery-mouth-tape": 7.6
@@ -21498,6 +21668,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Intake Breathing (7.7 vs 7.0)",
       "onda_scores": {
         "intake-breathing": 7.7,
         "mute-nasal-dilator": 7
@@ -21556,6 +21727,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Intake Breathing (7.7 vs 7.3)",
       "onda_scores": {
         "intake-breathing": 7.7,
         "breathe-right-original": 7.3
@@ -21614,6 +21786,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Hostage Tape (8.0 vs 7.7)",
       "onda_scores": {
         "hostage-tape": 8,
         "intake-breathing": 7.7
@@ -21668,6 +21841,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Hostage Tape (8.0 vs 7.7 vs 7.5)",
       "onda_scores": {
         "hostage-tape": 8,
         "somnifix": 7.5,
@@ -21726,7 +21900,8 @@
         "hypervolt-2-pro"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (8.4 and 8.3)",
       "onda_scores": {
         "theragun-pro-plus": 8.3,
         "hypervolt-2-pro": 8.4
@@ -21785,6 +21960,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Theragun Elite (8.5 vs 8.3)",
       "onda_scores": {
         "theragun-pro-plus": 8.3,
         "theragun-elite": 8.5
@@ -21842,7 +22018,8 @@
         "hypervolt-2-pro"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (8.5 and 8.4)",
       "onda_scores": {
         "theragun-elite": 8.5,
         "hypervolt-2-pro": 8.4
@@ -21900,7 +22077,8 @@
         "renpho-r3"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.4 and 7.3)",
       "onda_scores": {
         "bob-and-brad-q2-mini": 7.4,
         "renpho-r3": 7.3
@@ -21958,7 +22136,8 @@
         "bob-and-brad-q2-mini"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.5 and 7.4)",
       "onda_scores": {
         "hypervolt-go-2": 7.5,
         "bob-and-brad-q2-mini": 7.4
@@ -22017,7 +22196,8 @@
         "achedaway-pro"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (8.4, 8.3 and 8.3)",
       "onda_scores": {
         "theragun-pro-plus": 8.3,
         "hypervolt-2-pro": 8.4,
@@ -22077,6 +22257,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: IQAir HealthPro Plus (8.3 vs 7.7)",
       "onda_scores": {
         "iqair-healthpro-plus": 8.3,
         "molekule-air-pro": 7.7
@@ -22130,6 +22311,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Coway Airmega 400 (8.4 vs 8.0)",
       "onda_scores": {
         "coway-airmega-400": 8.4,
         "blueair-healthprotect-7770i": 8
@@ -22183,6 +22365,7 @@
       ],
       "winner": "levoit-core-600s",
       "winnerStatus": "winner",
+      "label": "WINNER: Levoit Core 600S",
       "onda_scores": {
         "levoit-core-600s": 8,
         "winix-5500-2": 7.6
@@ -22241,6 +22424,7 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Coway Airmega AP-1512HH (7.7 vs 7.3)",
       "onda_scores": {
         "coway-airmega-ap-1512hh": 7.7,
         "levoit-core-300": 7.3
@@ -22298,7 +22482,8 @@
         "iqair-healthpro-plus"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (8.4 and 8.3)",
       "onda_scores": {
         "dyson-purifier-big-quiet": 8.4,
         "iqair-healthpro-plus": 8.3
@@ -22356,7 +22541,8 @@
         "dyson-purifier-big-quiet"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (8.4 and 8.4)",
       "onda_scores": {
         "coway-airmega-400": 8.4,
         "dyson-purifier-big-quiet": 8.4
@@ -22409,7 +22595,8 @@
         "iqair-healthpro-plus"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (8.4 and 8.3)",
       "onda_scores": {
         "coway-airmega-400": 8.4,
         "iqair-healthpro-plus": 8.3
@@ -22463,7 +22650,8 @@
         "dyson-purifier-big-quiet"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (8.4, 8.3 and 7.7)",
       "onda_scores": {
         "iqair-healthpro-plus": 8.3,
         "molekule-air-pro": 7.7,
