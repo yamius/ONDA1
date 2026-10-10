@@ -1,5 +1,5 @@
 ---
-sourceHash: ad4473025ca5
+sourceHash: 41ee7285e2ba
 title: "Dlaczego mam niskie HRV? Najczęstsze przyczyny i co pokazują badania"
 metaTitle: "Niskie HRV: przyczyny i co oznaczają"
 metaDescription: "Dlaczego HRV jest niskie? Najczęściej to reakcja na sen, alkohol, infekcję, stres lub trening, a nie diagnoza. Każda przyczyna z dowodami i kiedy iść do lekarza."
@@ -17,12 +17,12 @@ keyPoints:
   - "Dla alkoholu, choroby, ostrego stresu, ciężkiego treningu i pierwszych dni na dużej wysokości wykazano niższe HRV; przed miesiączką na poziomie grupy występuje niewielki średni spadek, ale wzorce indywidualne się różnią."
   - "Przy krótkim śnie zmierzony spadek jest niewielki, przy długotrwałym stresie i pracy zmianowej dowody są niejednoznaczne, a u osób regularnie pijących kawę umiarkowana ilość kofeiny nie zmieniała spoczynkowego HRV."
   - "Wiek obniża HRV średnio na przestrzeni dziesięcioleci, ale nie wyjaśnia spadku z tygodnia na tydzień."
-  - "Kilka dni poniżej zwykłego zakresu, wyższe tętno spoczynkowe i złe samopoczucie to powód do odpoczynku. Pilnej pomocy wymagają: ból lub ucisk w klatce piersiowej; omdlenie lub uczucie bliskiego omdlenia; silna duszność; szybkie, mocne lub nieregularne bicie serca, które nie uspokaja się w spoczynku (także z zawrotami głowy); nagłe splątanie, osłabienie jednej strony ciała, trudności z mówieniem."
+  - "Kilka dni poniżej zwykłego zakresu, wyższe tętno spoczynkowe i złe samopoczucie to powód do odpoczynku. Wezwij pogotowie, jeśli występuje: ból lub ucisk w klatce piersiowej; omdlenie lub uczucie bliskiego omdlenia; silna duszność; szybkie, mocne lub nieregularne bicie serca, które nie uspokaja się w spoczynku (także z zawrotami głowy); nagła dezorientacja (trudność z jasnym myśleniem), osłabienie jednej strony ciała, trudności z mówieniem."
   - "ONDA porównuje Twoje noce z Twoją własną linią bazową, ale nie mówi, co spowodowało zmianę, i nie stawia diagnozy."
 imageAlt: "Cienka turkusowa linia bicia serca na ciemnogranatowym tle, otoczona małymi świecącymi beżowymi ikonami: księżycem, kieliszkiem, termometrem, butem do biegania, górą, filiżanką kawy i chmurami."
 faq:
   - q: "Czy niskie HRV jest groźne?"
-    a: "Pojedynczy niski odczyt nie jest diagnozą i sam w sobie nie wskazuje przyczyny; najczęściej to reakcja na coś konkretnego, na przykład krótką noc, alkohol, infekcję, stres lub ciężki trening. Powodem, by odpocząć i obserwować samopoczucie, staje się wtedy, gdy HRV przez kilka dni pozostaje poniżej zwykłego zakresu, tętno spoczynkowe jest wyższe, a Ty źle się czujesz. Przy objawach idź do lekarza, zamiast polegać na zegarku. Niezależnie od tego, co pokazuje zegarek, pilnej pomocy wymagają: ból lub ucisk w klatce piersiowej; omdlenie lub uczucie bliskiego omdlenia; silna duszność; szybkie, mocne lub nieregularne bicie serca, które nie uspokaja się w spoczynku (także z zawrotami głowy); nagłe splątanie, osłabienie jednej strony ciała, trudności z mówieniem."
+    a: "Pojedynczy niski odczyt nie jest diagnozą i sam w sobie nie wskazuje przyczyny; najczęściej to reakcja na coś konkretnego, na przykład krótką noc, alkohol, infekcję, stres lub ciężki trening. Powodem, by odpocząć i obserwować samopoczucie, staje się wtedy, gdy HRV przez kilka dni pozostaje poniżej zwykłego zakresu, tętno spoczynkowe jest wyższe, a Ty źle się czujesz. Przy objawach idź do lekarza, zamiast polegać na zegarku. Niezależnie od tego, co pokazuje zegarek, wezwij pogotowie, jeśli występuje: ból lub ucisk w klatce piersiowej; omdlenie lub uczucie bliskiego omdlenia; silna duszność; szybkie, mocne lub nieregularne bicie serca, które nie uspokaja się w spoczynku (także z zawrotami głowy); nagła dezorientacja (trudność z jasnym myśleniem), osłabienie jednej strony ciała, trudności z mówieniem."
   - q: "Czy stres obniża HRV?"
     a: "Tak, na pewien czas. Krótki, wyraźny stres, taki jak egzamin, obniża HRV. Powrót do normy po zadaniu to osobny proces, który różni się między ludźmi, a badania mierzą go w oknach czasowych różnej długości, więc nie ma jednego czasu powrotu. W wymagających okresach pracy HRV było niższe niż w czasie odpoczynku, ale w dużym badaniu długoterminowym stres w pracy nie wiązał się ze spoczynkowym HRV, więc trwałego spadku nie wykazano. Pojedynczy niski odczyt HRV sam w sobie nie oznacza, że jesteś zestresowany lub chory."
   - q: "Dlaczego HRV jest niskie po alkoholu?"
@@ -184,7 +184,7 @@ Nie znaleźliśmy badania o codziennym łagodnym odwodnieniu i odczycie HRV z ze
 
 Pojedyncza niska noc zwykle nie jest powodem do niepokoju. {{fact:claim.hrvNotStress}}. Jeśli Twoje HRV przez kilka dni z rzędu jest wyraźnie poniżej zwykłego zakresu, tętno spoczynkowe jest wyższe, a Ty źle się czujesz, potraktuj to jako niespecyficzny sygnał, że organizm jest obciążony. To powód, by odpocząć i obserwować samopoczucie, a nie diagnoza. Przy objawach idź do lekarza, zamiast polegać na zegarku.
 
-**Niezależnie od tego, co pokazuje zegarek, pilnej pomocy wymagają: ból lub ucisk w klatce piersiowej; omdlenie lub uczucie bliskiego omdlenia; silna duszność; szybkie, mocne lub nieregularne bicie serca, które nie uspokaja się w spoczynku (także z zawrotami głowy); nagłe splątanie, osłabienie jednej strony ciała, trudności z mówieniem.**
+**Niezależnie od tego, co pokazuje zegarek, wezwij pogotowie, jeśli występuje: ból lub ucisk w klatce piersiowej; omdlenie lub uczucie bliskiego omdlenia; silna duszność; szybkie, mocne lub nieregularne bicie serca, które nie uspokaja się w spoczynku (także z zawrotami głowy); nagła dezorientacja (trudność z jasnym myśleniem), osłabienie jednej strony ciała, trudności z mówieniem.**
 
 Odczyt wyglądający na normalny też nie wyklucza choroby: w opisanym wyżej badaniu ze smartwatchem nie każda zakażona osoba otrzymała alert [S8]. Jak mierzy się tętno spoczynkowe i co na nie wpływa, opisuje strona [tętno spoczynkowe](/science/measurements/resting-heart-rate).
 
