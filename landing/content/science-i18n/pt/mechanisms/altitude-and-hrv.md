@@ -1,5 +1,5 @@
 ---
-sourceHash: 894a41c93c3f
+sourceHash: 5c84bc6057f9
 title: "Altitude e HRV: o que muda e o que ela não consegue prever"
 metaTitle: "Altitude e HRV: o que os estudos mostram"
 metaDescription: "Como a altitude elevada muda a variabilidade da frequência cardíaca, se a HRV pode prever o mal da altitude e por que são os sintomas, não um relógio, que decidem quando descer."
@@ -122,7 +122,7 @@ evidenceMap:
 
 Em altitude elevada, cada respiração traz menos oxigênio. A variabilidade da frequência cardíaca (HRV ou VFC) é a variação, de um batimento para o outro, do intervalo entre batimentos cardíacos, e nos primeiros dias em altitude ela costuma cair. A evidência mais confiável é uma meta-análise de {{fact:altitude.li.studies}}: {{fact:altitude.li.scope}} [S1]. Em comparação com o nível do mar, o SDNN, o RMSSD, a potência de alta frequência e outras medidas de HRV relacionadas foram todos mais baixos [S1].
 
-Os autores interpretam o padrão como retirada vagal com predominância simpática relativa [S1]. A forma de dizer importa. {{fact:claim.vagalTone}}, então isso é uma leitura da HRV medida, não uma medição direta da atividade nervosa. Parte dessa leitura se apoia em um aumento da razão entre a potência de baixa e a de alta frequência (LF/HF). Na própria discussão, os autores acrescentam que essa razão reflete sobretudo como a potência espectral restante, menor, é redistribuída, e não é uma medida direta do tônus simpático [S1]. Por que essa razão é controversa é explicado em [o sistema nervoso autônomo](/science/concepts/autonomic-nervous-system).
+Os autores interpretam o padrão como retirada vagal com predominância simpática relativa [S1]. A forma de dizer importa. {{fact:claim.vagalTone}}, então isso é uma leitura da HRV medida, não uma medição direta da atividade nervosa. Parte dessa leitura se apoia em um aumento da razão entre a potência de baixa e a de alta frequência (LF/HF). A razão LF/HF é uma medida controversa do equilíbrio entre os sistemas simpático e parassimpático. Na própria discussão, os autores acrescentam que essa razão reflete sobretudo como a potência espectral restante, menor, é redistribuída, e não é uma medida direta do tônus simpático [S1]. Por que essa razão é controversa é explicado em [o sistema nervoso autônomo](/science/concepts/autonomic-nervous-system).
 
 Parte da queda pode ser mecânica. A falta de oxigênio acelera a respiração, e os autores relacionam parte da queda da potência de alta frequência a essa respiração mais rápida [S1]. Assim, a mudança reflete como você respira, além de como o coração é regulado.
 

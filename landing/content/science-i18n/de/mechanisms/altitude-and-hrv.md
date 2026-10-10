@@ -1,5 +1,5 @@
 ---
-sourceHash: 894a41c93c3f
+sourceHash: 5c84bc6057f9
 title: "Höhe und HRV: Was sich verändert und was sie nicht vorhersagen kann"
 metaTitle: "Höhe und HRV: Was Studien zeigen"
 metaDescription: "Wie große Höhe die Herzratenvariabilität verändert, ob die HRV Höhenkrankheit vorhersagen kann und warum Symptome, nicht eine Uhr, über den Abstieg entscheiden."
@@ -122,7 +122,7 @@ evidenceMap:
 
 In großer Höhe bringt jeder Atemzug weniger Sauerstoff. Die Herzratenvariabilität (HRV) ist die Schwankung des Abstands zwischen aufeinanderfolgenden Herzschlägen, und in den ersten Tagen in der Höhe sinkt sie meist. Die belastbarste Evidenz ist eine Metaanalyse von {{fact:altitude.li.studies}}: {{fact:altitude.li.scope}} [S1]. Im Vergleich zur Meereshöhe waren SDNN, RMSSD, die Hochfrequenzleistung und verwandte HRV-Maße alle niedriger [S1].
 
-Die Autoren deuten das Muster als vagalen Rückzug mit relativer sympathischer Dominanz [S1]. Die Einordnung ist wichtig. {{fact:claim.vagalTone}}, also ist dies eine Deutung der gemessenen HRV, keine direkte Messung der Nervenaktivität. Ein Teil dieser Deutung stützt sich auf einen Anstieg des Verhältnisses von Nieder- zu Hochfrequenzleistung (LF/HF). In ihrer eigenen Diskussion ergänzen die Autoren, dass dieses Verhältnis vor allem zeigt, wie die verbleibende, kleinere Spektralleistung umverteilt wird, und kein direktes Maß des Sympathikustonus ist [S1]. Warum dieses Verhältnis umstritten ist, erklärt die Seite [das autonome Nervensystem](/science/concepts/autonomic-nervous-system).
+Die Autoren deuten das Muster als vagalen Rückzug mit relativer sympathischer Dominanz [S1]. Die Einordnung ist wichtig. {{fact:claim.vagalTone}}, also ist dies eine Deutung der gemessenen HRV, keine direkte Messung der Nervenaktivität. Ein Teil dieser Deutung stützt sich auf einen Anstieg des Verhältnisses von Nieder- zu Hochfrequenzleistung (LF/HF). LF/HF ist ein umstrittenes Maß für das Gleichgewicht zwischen Sympathikus und Parasympathikus. In ihrer eigenen Diskussion ergänzen die Autoren, dass dieses Verhältnis vor allem zeigt, wie die verbleibende, kleinere Spektralleistung umverteilt wird, und kein direktes Maß des Sympathikustonus ist [S1]. Warum dieses Verhältnis umstritten ist, erklärt die Seite [das autonome Nervensystem](/science/concepts/autonomic-nervous-system).
 
 Ein Teil des Abfalls kann mechanisch sein. Sauerstoffmangel beschleunigt die Atmung, und die Autoren führen einen Teil des Abfalls der Hochfrequenzleistung auf diese schnellere Atmung zurück [S1]. Die Veränderung spiegelt also ebenso wider, wie du atmest, wie die Regulation des Herzens.
 

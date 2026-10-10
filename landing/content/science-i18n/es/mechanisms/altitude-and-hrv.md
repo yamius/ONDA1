@@ -1,5 +1,5 @@
 ---
-sourceHash: 894a41c93c3f
+sourceHash: 5c84bc6057f9
 title: "Altitud y HRV: qué cambia y qué no puede predecir"
 metaTitle: "Altitud y HRV: qué muestran los estudios"
 metaDescription: "Cómo cambia la variabilidad de la frecuencia cardíaca a gran altitud, si la HRV puede predecir el mal de altura y por qué deciden los síntomas, no un reloj, cuándo bajar."
@@ -122,7 +122,7 @@ evidenceMap:
 
 A gran altitud, cada respiración aporta menos oxígeno. La variabilidad de la frecuencia cardíaca (HRV o VFC) es la variación, latido a latido, del intervalo entre latidos, y en los primeros días en altitud suele bajar. La evidencia más sólida es un metaanálisis de {{fact:altitude.li.studies}}: {{fact:altitude.li.scope}} [S1]. Frente al nivel del mar, el SDNN, el RMSSD, la potencia de alta frecuencia y otras medidas de HRV relacionadas fueron todos más bajos [S1].
 
-Los autores interpretan el patrón como una retirada vagal con predominio simpático relativo [S1]. El matiz importa. {{fact:claim.vagalTone}}, así que se trata de una lectura de la HRV medida, no de una medición directa de la actividad nerviosa. Parte de esa lectura se apoya en un aumento del cociente entre la potencia de baja y de alta frecuencia (LF/HF). En su propia discusión, los autores añaden que este cociente refleja sobre todo cómo se redistribuye la potencia espectral restante, más pequeña, y no es una medida directa del tono simpático [S1]. Por qué se discute este cociente se explica en [el sistema nervioso autónomo](/science/concepts/autonomic-nervous-system).
+Los autores interpretan el patrón como una retirada vagal con predominio simpático relativo [S1]. El matiz importa. {{fact:claim.vagalTone}}, así que se trata de una lectura de la HRV medida, no de una medición directa de la actividad nerviosa. Parte de esa lectura se apoya en un aumento del cociente entre la potencia de baja y de alta frecuencia (LF/HF). El cociente LF/HF es una medida discutida del equilibrio entre el sistema simpático y el parasimpático. En su propia discusión, los autores añaden que este cociente refleja sobre todo cómo se redistribuye la potencia espectral restante, más pequeña, y no es una medida directa del tono simpático [S1]. Por qué se discute este cociente se explica en [el sistema nervioso autónomo](/science/concepts/autonomic-nervous-system).
 
 Parte de la caída puede ser mecánica. La falta de oxígeno acelera la respiración, y los autores relacionan parte de la caída de la potencia de alta frecuencia con esa respiración más rápida [S1]. Así que el cambio refleja cómo respiras, además de cómo se regula el corazón.
 
