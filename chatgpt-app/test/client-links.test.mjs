@@ -199,10 +199,10 @@ test('HTTP handler tags by the request User-Agent, for single and batch calls', 
   assert.equal(new URL(curl.body.result.structuredContent.bridge.url).searchParams.get('ct'), 'ai_app_practice');
 });
 
-test('server version is 1.8.2', async () => {
+test('server version is 1.8.3', async () => {
   const res = fakeRes();
   await handler({ method: 'GET', headers: {} }, res);
-  assert.equal(res.body.server.version, '1.8.2');
+  assert.equal(res.body.server.version, '1.8.3');
 });
 
 test('cards hold no link or tag of their own (every href comes from the tool result)', () => {

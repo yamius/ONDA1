@@ -8,7 +8,7 @@
  * Facts come only from generated site data (see landing/scripts/export-chatgpt-data.ts):
  * HRV distribution (Natarajan 2020, Fitbit users), breathing patterns, adaptive practices and reviews. Bridge wording
  * follows landing/docs/onda-facts-source-of-truth.md — no numeric pacer claim,
- * HRV + personal baseline need Apple Watch, the camera pulse works on any iPhone.
+ * Personal baseline comes from Apple Health (Apple Watch or any tracker syncing there); real-time biofeedback needs Apple Watch; the camera pulse works on any iPhone.
  */
 import { readFileSync } from 'node:fs';
 import { interpretHrvBoth, HRV_AGE_POINTS, HRV_VERDICT_TEXT, HRV_POSITION_TEXT, HRV_COMPARISON_DISCLAIMER, HRV_DEVICE_NOTE, HRV_NO_COMPARISON_NOTE } from './generated/hrv-norms.js';
@@ -128,7 +128,7 @@ export const checkHrv = {
       device,
       sex: sex || 'prefer_not_to_say',
       bridge: {
-        text: 'ONDA builds your personal norm from your Apple Watch history and checks your HRV against it every day.',
+        text: 'ONDA builds your personal baseline from Apple Health — from Apple Watch or another tracker that syncs there — and checks your HRV against it every day.',
         url: links.appStore('hrv'),
       },
       learnMore: links.site('/tools/hrv', 'hrv'),
@@ -474,7 +474,7 @@ export const compare = {
         : null,
       notFound: missing,
       ownProductNote: ownProduct
-        ? 'ONDA Life is our own product, so it is not scored against others here. It is an iPhone app for guided breathing and HRV biofeedback: pulse via the iPhone camera, HRV and a personal baseline with Apple Watch.'
+        ? 'ONDA Life is our own product, so it is not scored against others here. It is an iPhone app for guided breathing and HRV biofeedback: pulse via the iPhone camera, a personal baseline from Apple Health (Apple Watch or another tracker that syncs there), and real-time breathing biofeedback with Apple Watch.'
         : null,
       bridge: rows.some((r) => r.worksWithOnda !== 'not-a-device')
         ? {

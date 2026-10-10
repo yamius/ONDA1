@@ -98,7 +98,7 @@ A resting heart rate inside the normal range for your age and fitness is reassur
 
 ## See your resting heart rate trend
 
-A one-time reading tells you little; your trend tells you a lot. ONDA reads your resting heart rate and HRV from your Apple Watch history and builds your personal baseline — your normal range — then shows you when today drifts outside it. Instead of wondering whether 58 or 68 is "good," you see whether *your* resting heart rate is holding steady, dropping as you get fitter, or creeping up because something's off. That trend is what actually reflects your health.
+A one-time reading tells you little; your trend tells you a lot. ONDA reads your resting heart rate and HRV from Apple Health — from Apple Watch or another tracker that syncs there — and builds your personal baseline — your normal range — then shows you when today drifts outside it. Instead of wondering whether 58 or 68 is "good," you see whether *your* resting heart rate is holding steady, dropping as you get fitter, or creeping up because something's off. That trend is what actually reflects your health.
 `,
 }
 
