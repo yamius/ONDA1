@@ -8,6 +8,8 @@
  *
  * SCIENCE_UI: page chrome per language. Page texts themselves live in content/science-i18n/<lang>/<kind>/<slug>.md.
  */
+import type { ScienceKindId } from './kinds'
+
 /**
  * Rollout: one language per Monday (owner decision 2026-10-05). A language is live from the first build on or after its
  * date (UTC); every language is reviewed by native editors before its date. Same build-time gating as the article and
@@ -29,7 +31,8 @@ export const SCIENCE_ROLLOUT: readonly { lang: string; start: string }[] = [
 const SCIENCE_BUILD_DATE = new Date().toISOString().slice(0, 10)
 export const SCIENCE_LIVE_LANGS: readonly string[] = SCIENCE_ROLLOUT.filter((r) => r.start <= SCIENCE_BUILD_DATE).map((r) => r.lang)
 
-export type ScienceUiKind = 'concepts' | 'measurements' | 'mechanisms' | 'evidence'
+/** Every kind in src/data/science/kinds.ts needs a label and description in every language below. */
+export type ScienceUiKind = ScienceKindId
 
 export interface ScienceUi {
   hubTitle: string
@@ -78,6 +81,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       measurements: { label: 'Measurements', desc: 'How these signals are measured, by which methods, and how far to trust them.' },
       mechanisms: { label: 'Mechanisms', desc: 'How breathing, the heart and the nervous system interact.' },
       evidence: { label: 'Evidence', desc: 'What the research shows for specific methods, by strength of evidence.' },
+      questions: { label: 'Questions', desc: 'Plain answers to common HRV questions, built from the evidence pages.' },
     },
     kindMetaTitle: '{label} — ONDA Science',
     kindMetaDescription: 'ONDA Science {label}: {desc}',
@@ -123,6 +127,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       measurements: { label: 'Измерения', desc: 'Как измеряются эти сигналы, какими методами и насколько им можно доверять.' },
       mechanisms: { label: 'Механизмы', desc: 'Как взаимодействуют дыхание, сердце и нервная система.' },
       evidence: { label: 'Доказательства', desc: 'Что показывают исследования конкретных методов — с учётом силы доказательств.' },
+      questions: { label: 'Вопросы', desc: 'Простые ответы на частые вопросы о HRV, собранные из страниц с доказательствами.' },
     },
     kindMetaTitle: 'Наука: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, раздел «{label}»: {desc}',
@@ -168,6 +173,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       measurements: { label: 'Вимірювання', desc: 'Як вимірюють ці сигнали, якими методами і наскільки їм можна довіряти.' },
       mechanisms: { label: 'Механізми', desc: 'Як взаємодіють дихання, серце і нервова система.' },
       evidence: { label: 'Докази', desc: 'Що показують дослідження конкретних методів — з урахуванням сили доказів.' },
+      questions: { label: 'Питання', desc: 'Прості відповіді на поширені запитання про HRV, зібрані зі сторінок із доказами.' },
     },
     kindMetaTitle: 'Наука: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, розділ «{label}»: {desc}',
@@ -213,6 +219,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       measurements: { label: 'Mediciones', desc: 'Cómo se miden estas señales, con qué métodos y hasta qué punto fiarse de ellas.' },
       mechanisms: { label: 'Mecanismos', desc: 'Cómo interactúan la respiración, el corazón y el sistema nervioso.' },
       evidence: { label: 'Evidencia', desc: 'Qué muestra la investigación sobre métodos concretos, según la solidez de la evidencia.' },
+      questions: { label: 'Preguntas', desc: 'Respuestas sencillas a preguntas frecuentes sobre la HRV, basadas en las páginas de evidencia.' },
     },
     kindMetaTitle: 'Ciencia: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, sección «{label}»: {desc}',
@@ -258,6 +265,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       measurements: { label: 'Messung', desc: 'Wie diese Signale gemessen werden, mit welchen Methoden und wie weit man ihnen trauen kann.' },
       mechanisms: { label: 'Mechanismen', desc: 'Wie Atmung, Herz und Nervensystem zusammenwirken.' },
       evidence: { label: 'Evidenz', desc: 'Was die Forschung zu einzelnen Methoden zeigt – nach Stärke der Evidenz.' },
+      questions: { label: 'Fragen', desc: 'Einfache Antworten auf häufige Fragen zur HRV, aufgebaut auf den Evidenz-Seiten.' },
     },
     kindMetaTitle: 'Wissenschaft: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, Bereich „{label}“: {desc}',
@@ -303,6 +311,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       measurements: { label: 'Mesures', desc: 'Comment ces signaux sont mesurés, par quelles méthodes, et jusqu’où leur faire confiance.' },
       mechanisms: { label: 'Mécanismes', desc: 'Comment la respiration, le cœur et le système nerveux interagissent.' },
       evidence: { label: 'Données probantes', desc: 'Ce que montre la recherche sur des méthodes précises, selon la solidité des preuves.' },
+      questions: { label: 'Questions', desc: 'Des réponses simples aux questions fréquentes sur la HRV, tirées des pages de données probantes.' },
     },
     kindMetaTitle: 'Science : {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, rubrique « {label} » : {desc}',
@@ -348,6 +357,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       measurements: { label: 'Misurazioni', desc: 'Come si misurano questi segnali, con quali metodi e quanto fidarsene.' },
       mechanisms: { label: 'Meccanismi', desc: 'Come interagiscono respirazione, cuore e sistema nervoso.' },
       evidence: { label: 'Evidenze', desc: 'Cosa mostra la ricerca su metodi specifici, in base alla solidità delle prove.' },
+      questions: { label: 'Domande', desc: 'Risposte semplici alle domande più comuni sull’HRV, basate sulle pagine delle evidenze.' },
     },
     kindMetaTitle: 'Scienza: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, sezione «{label}»: {desc}',
@@ -393,6 +403,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       measurements: { label: 'Medições', desc: 'Como esses sinais são medidos, por quais métodos e até que ponto confiar neles.' },
       mechanisms: { label: 'Mecanismos', desc: 'Como a respiração, o coração e o sistema nervoso interagem.' },
       evidence: { label: 'Evidências', desc: 'O que a pesquisa mostra sobre métodos específicos, conforme a força das evidências.' },
+      questions: { label: 'Perguntas', desc: 'Respostas simples para perguntas comuns sobre a HRV, com base nas páginas de evidências.' },
     },
     kindMetaTitle: 'Ciência: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, seção «{label}»: {desc}',
@@ -438,6 +449,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       measurements: { label: 'Metingen', desc: 'Hoe deze signalen worden gemeten, met welke methoden en hoeveel je erop kunt vertrouwen.' },
       mechanisms: { label: 'Mechanismen', desc: 'Hoe ademhaling, hart en zenuwstelsel op elkaar inwerken.' },
       evidence: { label: 'Bewijs', desc: 'Wat onderzoek laat zien over specifieke methoden, naar sterkte van het bewijs.' },
+      questions: { label: 'Vragen', desc: 'Heldere antwoorden op veelgestelde vragen over HRV, gebaseerd op de bewijspagina’s.' },
     },
     kindMetaTitle: 'Wetenschap: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, rubriek ‘{label}’: {desc}',
@@ -483,6 +495,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       measurements: { label: 'Pomiary', desc: 'Jak mierzy się te sygnały, jakimi metodami i na ile można im ufać.' },
       mechanisms: { label: 'Mechanizmy', desc: 'Jak oddech, serce i układ nerwowy współdziałają.' },
       evidence: { label: 'Dowody', desc: 'Co pokazują badania konkretnych metod — według siły dowodów.' },
+      questions: { label: 'Pytania', desc: 'Proste odpowiedzi na częste pytania o HRV, oparte na stronach z dowodami.' },
     },
     kindMetaTitle: 'Nauka: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, dział „{label}”: {desc}',
@@ -528,6 +541,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       measurements: { label: '測定', desc: 'これらの信号をどの方法で測るのか、どこまで信頼できるのか。' },
       mechanisms: { label: 'メカニズム', desc: '呼吸、心臓、神経系がどのように関わり合うか。' },
       evidence: { label: 'エビデンス', desc: '特定の方法について研究が示していること（エビデンスの強さ別）。' },
+      questions: { label: 'よくある質問', desc: 'HRVについてよくある質問に、エビデンスのページをもとにわかりやすく答えます。' },
     },
     kindMetaTitle: 'サイエンス：{label} — ONDA Science',
     kindMetaDescription: 'ONDA Science「{label}」：{desc}',
@@ -573,6 +587,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       measurements: { label: '测量', desc: '这些信号如何测量、用什么方法，以及可以在多大程度上信任。' },
       mechanisms: { label: '机制', desc: '呼吸、心脏与神经系统如何相互作用。' },
       evidence: { label: '证据', desc: '研究对具体方法显示了什么——按证据强度划分。' },
+      questions: { label: '常见问题', desc: '用通俗的语言回答关于 HRV 的常见问题，内容基于证据页面。' },
     },
     kindMetaTitle: '科学：{label} — ONDA Science',
     kindMetaDescription: 'ONDA Science「{label}」：{desc}',

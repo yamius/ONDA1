@@ -319,6 +319,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1002/1348-9585.12409": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effect of extended shift work on autonomic function in occupational settings: A systematic review and meta-analysis",
+   "firstAuthor": "Jelmini",
+   "authors": [
+    "Jelmini",
+    "Ross",
+    "Whitehurst",
+    "Heebner"
+   ],
+   "year": 2023,
+   "journal": "Journal of Occupational Health",
+   "source": "crossref",
+   "verifiedAt": "2026-10-10"
+  },
   "doi:10.1002/14651858.cd001277.pub4": {
    "kind": "doi",
    "valid": true,
@@ -5693,6 +5709,28 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1088/1361-6579/aca0d9": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cardiovascular autonomic modulation during passive heating protocols: a systematic review",
+   "firstAuthor": "Ferreira",
+   "authors": [
+    "Ferreira",
+    "Vaz Padilha",
+    "Rocha",
+    "Lima",
+    "Carandina",
+    "Bellocchi",
+    "Tobaldini",
+    "Montano",
+    "Soares",
+    "Rodrigues"
+   ],
+   "year": 2023,
+   "journal": "Physiological Measurement",
+   "source": "crossref",
+   "verifiedAt": "2026-10-10"
+  },
   "doi:10.1089/acm.2006.6203": {
    "kind": "doi",
    "valid": true,
@@ -6044,6 +6082,24 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1093/occmed/kqaf101": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Continuous heart rate variability monitoring, stress and recovery in doctors: a systematic review and meta-analysis",
+   "firstAuthor": "Kane",
+   "authors": [
+    "Kane",
+    "Powell",
+    "Martin",
+    "Rees",
+    "Curran",
+    "Ball"
+   ],
+   "year": 2025,
+   "journal": "Occupational Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-10"
+  },
   "doi:10.1093/ptj/pzaa054": {
    "kind": "doi",
    "valid": true,
@@ -6132,6 +6188,22 @@
    "journal": "SLEEP",
    "source": "crossref",
    "verifiedAt": "2026-10-08"
+  },
+  "doi:10.1093/sleep/zsaf077": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Insights about travel-related sleep disruption from 1.5 million nights of data",
+   "firstAuthor": "Willoughby",
+   "authors": [
+    "Willoughby",
+    "Vallat",
+    "Ong",
+    "Chee"
+   ],
+   "year": 2025,
+   "journal": "SLEEP",
+   "source": "crossref",
+   "verifiedAt": "2026-10-10"
   },
   "doi:10.1097/01.ede.0000152903.55579.15": {
    "kind": "doi",
@@ -6380,6 +6452,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-10"
   },
+  "doi:10.1097/psy.0000000000000507": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Association of Cigarette Smoking With High-Frequency Heart Rate Variability: An Ecological Momentary Assessment Study",
+   "firstAuthor": "Bodin",
+   "authors": [
+    "Bodin",
+    "McIntyre",
+    "Schwartz",
+    "McKinley",
+    "Cardetti",
+    "Shapiro",
+    "Gorenstein",
+    "Sloan"
+   ],
+   "year": 2017,
+   "journal": "Psychosomatic Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-10"
+  },
   "doi:10.1097/psy.0000000000001065": {
    "kind": "doi",
    "valid": true,
@@ -6527,6 +6619,26 @@
    "journal": "Applied Psychology: Health and Well-Being",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1111/aphw.70107": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cardiac vagal tone is associated with physical activity but not with depressive symptoms, work stress, and social support: A large‐scale 10‐year follow‐up study",
+   "firstAuthor": "Li",
+   "authors": [
+    "Li",
+    "Chen",
+    "Rietzschel",
+    "Kozusznik",
+    "van Hoecke",
+    "Vanderhasselt",
+    "Pulopulos"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Applied Psychology: Health and Well-Being",
+   "source": "crossref",
+   "verifiedAt": "2026-10-10"
   },
   "doi:10.1111/aphw.70180": {
    "kind": "doi",
@@ -9298,6 +9410,33 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1371/journal.pone.0215053": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of smoking status, history and intensity on heart rate variability in the general population: The CHRIS study",
+   "firstAuthor": "Murgia",
+   "authors": [
+    "Murgia",
+    "Melotti",
+    "Foco",
+    "Gögele",
+    "Meraviglia",
+    "Motta",
+    "Steger",
+    "Toifl",
+    "Sinnecker",
+    "Müller",
+    "Merati",
+    "Schmidt",
+    "Rossini",
+    "Pramstaller",
+    "Pattaro"
+   ],
+   "year": 2019,
+   "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-10"
+  },
   "doi:10.1371/journal.pone.0227709": {
    "kind": "doi",
    "valid": true,
@@ -11158,6 +11297,21 @@
    "journal": "International Journal of Molecular Sciences",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.3390/jcdd11090280": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Influence of Night Shift Work on Heart Rate Variability in an Age- and Gender-Matched Study Group",
+   "firstAuthor": "Barckhan",
+   "authors": [
+    "Barckhan",
+    "Böckelmann",
+    "Sammito"
+   ],
+   "year": 2024,
+   "journal": "Journal of Cardiovascular Development and Disease",
+   "source": "crossref",
+   "verifiedAt": "2026-10-10"
   },
   "doi:10.3390/jcm13237178": {
    "kind": "doi",
@@ -16553,6 +16707,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:28731984": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Association of Cigarette Smoking With High-Frequency Heart Rate Variability: An Ecological Momentary Assessment Study.",
+   "firstAuthor": "Bodin",
+   "authors": [
+    "Bodin",
+    "McIntyre",
+    "Schwartz",
+    "McKinley",
+    "Cardetti",
+    "Shapiro",
+    "Gorenstein",
+    "Sloan"
+   ],
+   "year": 2017,
+   "journal": "Psychosom Med",
+   "doi": "10.1097/PSY.0000000000000507",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-10"
+  },
   "pmid:28779936": {
    "kind": "pmid",
    "valid": true,
@@ -17453,6 +17628,34 @@
    "doi": "10.3389/fpsyt.2019.00035",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:30964923": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of smoking status, history and intensity on heart rate variability in the general population: The CHRIS study.",
+   "firstAuthor": "Murgia",
+   "authors": [
+    "Murgia",
+    "Melotti",
+    "Foco",
+    "Gögele",
+    "Meraviglia",
+    "Motta",
+    "Steger",
+    "Toifl",
+    "Sinnecker",
+    "Müller",
+    "Merati",
+    "Schmidt",
+    "Rossini",
+    "Pramstaller",
+    "Pattaro"
+   ],
+   "year": 2019,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0215053",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-10"
   },
   "pmid:31051293": {
    "kind": "pmid",
@@ -19423,6 +19626,29 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:36343372": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cardiovascular autonomic modulation during passive heating protocols: a systematic review.",
+   "firstAuthor": "Ferreira",
+   "authors": [
+    "Ferreira",
+    "Vaz Padilha",
+    "Rocha TMDMS",
+    "Lima",
+    "Carandina",
+    "Bellocchi",
+    "Tobaldini",
+    "Montano",
+    "Soares",
+    "Rodrigues"
+   ],
+   "year": 2023,
+   "journal": "Physiol Meas",
+   "doi": "10.1088/1361-6579/aca0d9",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-10"
+  },
   "pmid:36371017": {
    "kind": "pmid",
    "valid": true,
@@ -19709,6 +19935,23 @@
    "doi": "10.1016/j.biopsycho.2023.108589",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:37287085": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effect of extended shift work on autonomic function in occupational settings: A systematic review and meta-analysis.",
+   "firstAuthor": "Jelmini",
+   "authors": [
+    "Jelmini",
+    "Ross",
+    "Whitehurst",
+    "Heebner"
+   ],
+   "year": 2023,
+   "journal": "J Occup Health",
+   "doi": "10.1002/1348-9585.12409",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-10"
   },
   "pmid:37372070": {
    "kind": "pmid",
@@ -20220,6 +20463,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:39330338": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Influence of Night Shift Work on Heart Rate Variability in an Age- and Gender-Matched Study Group.",
+   "firstAuthor": "Barckhan",
+   "authors": [
+    "Barckhan",
+    "Böckelmann",
+    "Sammito"
+   ],
+   "year": 2024,
+   "journal": "J Cardiovasc Dev Dis",
+   "doi": "10.3390/jcdd11090280",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-10"
+  },
   "pmid:39363568": {
    "kind": "pmid",
    "valid": true,
@@ -20494,6 +20753,23 @@
    "doi": "10.3390/dj13020076",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:40127035": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Insights about travel-related sleep disruption from 1.5 million nights of data.",
+   "firstAuthor": "Willoughby",
+   "authors": [
+    "Willoughby",
+    "Vallat",
+    "Ong",
+    "Chee"
+   ],
+   "year": 2025,
+   "journal": "Sleep",
+   "doi": "10.1093/sleep/zsaf077",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-10"
   },
   "pmid:40138298": {
    "kind": "pmid",
@@ -20883,6 +21159,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:41157926": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Continuous heart rate variability monitoring, stress and recovery in doctors: a systematic review and meta-analysis.",
+   "firstAuthor": "Kane",
+   "authors": [
+    "Kane",
+    "Powell",
+    "Martin",
+    "Rees",
+    "Curran",
+    "Ball"
+   ],
+   "year": 2025,
+   "journal": "Occup Med (Lond)",
+   "doi": "10.1093/occmed/kqaf101",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-10"
+  },
   "pmid:41187098": {
    "kind": "pmid",
    "valid": true,
@@ -21091,6 +21386,26 @@
    "yearAlt": 2025,
    "journal": "J Appl Physiol (1985)",
    "doi": "10.1152/japplphysiol.00416.2025",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-10"
+  },
+  "pmid:41460092": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cardiac vagal tone is associated with physical activity but not with depressive symptoms, work stress, and social support: A large-scale 10-year follow-up study.",
+   "firstAuthor": "Li",
+   "authors": [
+    "Li",
+    "Chen",
+    "Rietzschel",
+    "Kozusznik",
+    "van Hoecke",
+    "Vanderhasselt",
+    "Pulopulos"
+   ],
+   "year": 2026,
+   "journal": "Appl Psychol Health Well Being",
+   "doi": "10.1111/aphw.70107",
    "source": "pubmed",
    "verifiedAt": "2026-10-10"
   },

@@ -4,7 +4,7 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 
 - **Path.** One file per page: `landing/content/science/<kind>/<slug>.md`, URL `/science/<kind>/<slug>`.
 - **Language.** English only.
-- **Questions.** No `/questions/` pages: questions belong to articles and tools.
+- **Questions.** Kind `questions` (`/science/questions/<slug>`, added 2026-10-10 for task 064): plain answers to common HRV questions, built from the published evidence pages. Everyday how-to questions still belong to articles and tools. The section page `/science/questions` stays noindex and out of navigation and the sitemap until the kind has three published pages in that language (generic rule `MIN_PAGES_FOR_INDEXED_KIND`, `src/data/science/kinds.ts`).
 
 **Status — published:**
 - `concepts/rmssd` — 2026-10-04 (reference example of a finished page)
@@ -71,7 +71,7 @@ All other pages: not written yet. Yakiv names the next page. Put published pages
 | 13 | `/science/evidence/vagus-nerve-stimulation` | evidence — **flagship 2**: “Does Vagus Nerve Stimulation Really Work?” (spec 005) | Does non-invasive VNS (taVNS / tVNS) work, for what, how well | `/articles/vagus-nerve-exercises`, `/articles/electric-medicine-neuromodulation`, `/articles/cold-exposure-vagus-nerve`, `/articles/humming-breath-vagus`, `/reviews/compare/best-vagus-nerve-stimulators-2026`, stimulator reviews and comparisons | Evidence only, no device ranking. Covers: unstable HRV effect (Wolf 2021), sham problems (Yap 2020), anatomy (Butt 2020), sleep and depression meta-analyses, regulatory clearance for gammaCore headache indications only. Implanted-VNS evidence never supports non-invasive claims. |
 
 **Not in the MVP — do not write:**
-- the `/questions/` and `/research/` sections;
+- the `/research/` section (`questions` is a kind since task 064 — see the top of this file);
 - separate sympathetic and parasympathetic pages;
 - `concepts/resonance-breathing` (link only);
 - `concepts/slow-breathing` (merged into #12);

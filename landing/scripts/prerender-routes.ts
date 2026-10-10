@@ -927,6 +927,8 @@ const nonLocalizedStaticPaths = [
   '/ai-apps',
   // /science — ONDA Science: hub, kinds that have pages, publishable pages (content/science, docs/science-pack),
   // in EN and in every language of SCIENCE_LIVE_LANGS (src/data/science/i18n.ts) for the pages translated into it.
+  // A kind's section page with fewer than MIN_PAGES_FOR_INDEXED_KIND pages (src/data/science/kinds.ts) is still
+  // prerendered, but noindex and left out of the sitemap (isNoindexScienceRoute in src/lib/science-meta.ts).
   ...SCIENCE_LANGS.flatMap((l) => {
     const pre = l === 'en' ? '' : `/${l}`
     const pages = SCIENCE_INDEX.filter((p) => p.langs.includes(l))

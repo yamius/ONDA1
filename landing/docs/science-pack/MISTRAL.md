@@ -306,7 +306,7 @@ Copy everything inside the block below into a new file `landing/content/science/
 ````markdown
 ---
 # ONE file per science page: landing/content/science/<kind>/<slug>.md
-# kind = concepts | measurements | mechanisms | evidence   (no questions, no research)
+# kind = concepts | measurements | mechanisms | evidence | questions   (no research)
 kind: concepts
 slug: example-entity
 title: "Example Entity — What It Is and What It Isn’t"   # page H1, ≤ 70 chars, no digits
@@ -609,6 +609,7 @@ Need a value that is missing? Declare it in the page’s `proposals` block and w
 | `study.kalyani2011.participants` | twelve healthy volunteers | Participants in the Kalyani 2011 Om chanting fMRI pilot study. | approved | Kalyani 2011, Int J Yoga (Om chanting, pilot fMRI study) — DOI 10.4103/0973-6131.78171 |
 | `study.ghati2021.design` | seventy people with essential hypertension, one five-minute session | Ghati 2021 randomized trial of bee-humming breathing versus slow breathing. | approved | Ghati 2021, Explore (bee-humming breathing vs slow breathing in essential hypertension, RCT) — DOI 10.1016/j.explore.2020.03.009 |
 | `study.kuppusamy2018.studies` | six studies, none of them randomized | Studies of bhramari included in Kuppusamy 2018 (systematic review, searched to May 2016). | approved | Kuppusamy 2018, J Tradit Complement Med (bhramari pranayama, systematic review) — DOI 10.1016/j.jtcme.2017.02.003 |
+| `travel.willoughby.sleepRecovery` | sleep length came back to within about 12 minutes of usual after about two days, but sleep timing had not returned to its usual pattern after 15 days | Recovery of sleep after trips of at least 1,000 km (64,847 trips by 57,240 Oura Ring users, trips from North America and Europe; sleep measured by the ring; no HRV outcomes; one author an Oura employee, one on Oura's medical advisory board; Willoughby 2025). | proposed | Willoughby 2025, Sleep (travel-related sleep disruption in 64,847 trips by 57,240 Oura Ring users, observational; one author an Oura employee, one on Oura's medical advisory board; sleep only, no HRV) — DOI 10.1093/sleep/zsaf077 |
 | `vagus.fibres` | about 80% of its fibres carry signals from the organs to the brain, and about 20% carry signals from the brain to the organs | Fibre composition of the vagus nerve (afferent vs efferent), as summarised in Bonaz 2018 (review). | approved | Bonaz 2018, Front Neurosci (vagus nerve and the microbiota–gut–brain axis, review) — DOI 10.3389/fnins.2018.00049 |
 | `claim.vagalTone` | Vagal tone cannot be measured directly; HRV measures such as RMSSD reflect vagally mediated changes in heart rate | Use instead of “HRV measures vagal tone” or “X trains your vagal tone”. | approved | Task Force ESC/NASPE 1996, Circulation — DOI 10.1161/01.CIR.93.5.1043 |
 | `claim.slowExhale` | Slow breathing is associated with higher vagally mediated HRV; whether a longer exhale adds anything beyond slowing the breath is still debated | Use instead of “a long exhale stimulates/activates the vagus nerve”. Reworded 2026-10-05 (Yakiv): the exhale ratio is debated (Shaffer & Meehan 2020). Starts with a capital and has its own clause — use it as a full sentence. | approved | Lehrer 2003, Psychosomatic Medicine — DOI 10.1097/01.psy.0000089200.81962.19; Balban 2023, Cell Reports Medicine — DOI 10.1016/j.xcrm.2022.100895 |
@@ -1352,7 +1353,7 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 
 - **Path.** One file per page: `landing/content/science/<kind>/<slug>.md`, URL `/science/<kind>/<slug>`.
 - **Language.** English only.
-- **Questions.** No `/questions/` pages: questions belong to articles and tools.
+- **Questions.** Kind `questions` (`/science/questions/<slug>`, added 2026-10-10 for task 064): plain answers to common HRV questions, built from the published evidence pages. Everyday how-to questions still belong to articles and tools. The section page `/science/questions` stays noindex and out of navigation and the sitemap until the kind has three published pages in that language (generic rule `MIN_PAGES_FOR_INDEXED_KIND`, `src/data/science/kinds.ts`).
 
 **Status — published:**
 - `concepts/rmssd` — 2026-10-04 (reference example of a finished page)
@@ -1419,7 +1420,7 @@ All other pages: not written yet. Yakiv names the next page. Put published pages
 | 13 | `/science/evidence/vagus-nerve-stimulation` | evidence — **flagship 2**: “Does Vagus Nerve Stimulation Really Work?” (spec 005) | Does non-invasive VNS (taVNS / tVNS) work, for what, how well | `/articles/vagus-nerve-exercises`, `/articles/electric-medicine-neuromodulation`, `/articles/cold-exposure-vagus-nerve`, `/articles/humming-breath-vagus`, `/reviews/compare/best-vagus-nerve-stimulators-2026`, stimulator reviews and comparisons | Evidence only, no device ranking. Covers: unstable HRV effect (Wolf 2021), sham problems (Yap 2020), anatomy (Butt 2020), sleep and depression meta-analyses, regulatory clearance for gammaCore headache indications only. Implanted-VNS evidence never supports non-invasive claims. |
 
 **Not in the MVP — do not write:**
-- the `/questions/` and `/research/` sections;
+- the `/research/` section (`questions` is a kind since task 064 — see the top of this file);
 - separate sympathetic and parasympathetic pages;
 - `concepts/resonance-breathing` (link only);
 - `concepts/slow-breathing` (merged into #12);
@@ -1741,7 +1742,7 @@ Use https://onda-life.com/science/concepts/rmssd as the reference for structure 
 
 **Правило раздела (из аудита):** научный раздел владеет **сущностями, механизмами и доказательствами**. Практические «что делать» и бытовые вопросы остаются в статьях — научная страница на них ссылается, а не повторяет.
 
-Типы URL: `concepts/` (что это), `measurements/` (как измеряется и насколько точно), `mechanisms/` (как работает), `evidence/` (что показывают исследования).
+Типы URL: `concepts/` (что это), `measurements/` (как измеряется и насколько точно), `mechanisms/` (как работает), `evidence/` (что показывают исследования), `questions/` (простые ответы на частые вопросы о HRV, собранные из страниц с доказательствами; добавлен 2026-10-10, задача 064; страница раздела — noindex, пока в нём меньше трёх страниц).
 
 ---
 
@@ -1817,7 +1818,7 @@ Use https://onda-life.com/science/concepts/rmssd as the reference for structure 
 
 ## 6. Как это ложится на 5 кластеров из списка
 
-Кластеры — для хабов и навигации, а URL остаются по типам (`concepts/measurements/mechanisms/evidence`).
+Кластеры — для хабов и навигации, а URL остаются по типам (`concepts/measurements/mechanisms/evidence/questions`).
 
 | Кластер | Страницы |
 |---|---|

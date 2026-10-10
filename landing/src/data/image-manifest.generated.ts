@@ -2752,6 +2752,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1584,
     "height": 672
   },
+  "/images/science/questions-why-is-my-hrv-low.avif": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/questions-why-is-my-hrv-low.jpg": {
+    "width": 1376,
+    "height": 768
+  },
+  "/images/science/questions-why-is-my-hrv-low.webp": {
+    "width": 1376,
+    "height": 768
+  },
   "/images/science/rmssd.avif": {
     "width": 1024,
     "height": 768

@@ -434,8 +434,10 @@ export interface RouteMeta {
   breadcrumbs: BreadcrumbItem[]
   ogType?: 'article' | 'website' | 'profile'
   /** Force <meta name=robots content="noindex, nofollow"> on the page.
-   *  Used for placeholder topic hubs that haven't been reviewed yet. */
-  noindex?: boolean
+   *  Used for placeholder topic hubs that haven't been reviewed yet.
+   *  'follow' → "noindex, follow" (served list pages whose links should still be followed, e.g. ONDA Science section
+   *  pages below MIN_PAGES_FOR_INDEXED_KIND). */
+  noindex?: boolean | 'follow'
   /** Topic hub data — for ONDA Library /articles/topic/<t> hubs. */
   topicHub?: {
     name: string
@@ -1673,7 +1675,7 @@ function getMetaForRouteBase(route: string): RouteMeta {
   // MedicalWebPage (would imply medical claims).
   if (parseScienceRoute(route)) {
     const sm = scienceMeta(route, (l, k, s) => SCIENCE_FULL[l]?.find((p) => p.kind === k && p.slug === s))
-    if (sm) return { title: sm.title, description: sm.description, url, breadcrumbs: sm.breadcrumbs, ogType: sm.ogType, jsonLd: sm.jsonLd, ...(sm.image ? { image: sm.image, imageAlt: sm.imageAlt } : {}) }
+    if (sm) return { title: sm.title, description: sm.description, url, breadcrumbs: sm.breadcrumbs, ogType: sm.ogType, jsonLd: sm.jsonLd, ...(sm.image ? { image: sm.image, imageAlt: sm.imageAlt } : {}), ...(sm.noindex ? { noindex: 'follow' as const } : {}) }
   }
   if (route === '/ai-apps') {
     return {
@@ -3707,7 +3709,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   if (meta.noindex) {
     out = out.replace(
       /<meta\s+name="robots"\s+content="[^"]*">/i,
-      '<meta name="robots" content="noindex, nofollow">',
+      `<meta name="robots" content="${meta.noindex === 'follow' ? 'noindex, follow' : 'noindex, nofollow'}">`,
     )
   }
 

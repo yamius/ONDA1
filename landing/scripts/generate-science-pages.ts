@@ -27,6 +27,7 @@ import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSy
 import { basename, dirname, join } from 'node:path'
 import { FACTS, resolveFacts, type FactLang } from '../src/data/science/facts'
 import { SCIENCE_LIVE_LANGS } from '../src/data/science/i18n'
+import { SCIENCE_KIND_IDS } from '../src/data/science/kinds'
 import { glossaryTerms } from '../src/data/glossary'
 import { articles } from '../src/data/articles'
 import { TOOLS } from '../src/data/tools'
@@ -37,7 +38,7 @@ const I18N_DIR = join(ROOT, 'content', 'science-i18n')
 const OUT = join(ROOT, 'src', 'generated', 'science-pages.ts')
 const OUT_FULL = join(ROOT, 'src', 'generated', 'science-full.ts')
 const OUT_JSON = join(ROOT, 'public', '_content', 'science')
-const KINDS = ['concepts', 'measurements', 'mechanisms', 'evidence'] as const
+const KINDS = SCIENCE_KIND_IDS // the one list: src/data/science/kinds.ts
 
 /** Hash of an EN page file, stored in each translation as `sourceHash`. */
 export const scienceSourceHash = (text: string) => createHash('sha1').update(text.replace(/\r\n/g, '\n')).digest('hex').slice(0, 12)
