@@ -1,55 +1,80 @@
 {
   "tag": "[ ABOUT ]",
-  "title1": "What is ONDA Life",
-  "intro1": "ONDA Life is an HRV biofeedback and guided-breathing app for real-time physiological self-regulation and nervous-system training. Around that core sits a broader system of mindfulness and self-development practices for real life:",
-  "introList": [
-    "breathing, body, and meditation steps;",
-    "levels: from body support to higher states of consciousness;",
-    "short formats 1–12 minutes;",
-    "internal currency OND for practices and missions."
-  ],
-  "intro2": "Path: from body sensation — to clarity, inspiration, and strength.",
-  "disclaimer": "The evidence-backed part of ONDA is HRV biofeedback and paced (resonance) breathing — see the science behind ONDA and what ONDA measures. The ONDA Path — its levels and higher-state language — is an experiential framework, not a hierarchy of clinically validated biological states.",
-  "title2": "How it works",
-  "how1": "ONDA Life — routes (waves and levels) of simple daily steps.",
-  "howLead": "You learn to:",
-  "howList": [
-    "rely on body as a source of energy;",
-    "experience emotions as a language of connection;",
-    "use the mind for precise action;",
-    "kindle the soul by supporting others."
-  ],
-  "how2": "Each practice — short breathing, attention to body, micro-movements, or contemplation.",
-  "title3": "Resources, rewards, results",
-  "rewards1": "We provide routes, tips, and support. For practices and missions you earn OND — game currency:",
-  "rewardsList": [
-    "OND accumulates for regularity;",
-    "OND is an in-game currency only — it has no cash value;",
-    "early level skills — foundation for further growth."
-  ],
-  "rewards2": "Result: stable presence, calm, clarity, and inner support in life.",
-  "details": {
-    "heading": "ONDA Life is a practice of self-awareness and body awareness",
-    "p1": "Connect your Apple Watch (or any tracker that syncs to Apple Health) and watch your vitals change in real time during your practice.",
-    "p2": "The more successful you are — measured by time in practice and improvements in your state — the more OND you earn. Connecting a tracker or smartwatch will boost your earnings for completing practices.",
-    "p3": "Once you complete all practices in a part with over 40% success, you'll unlock the next level.",
-    "p4": "At the start of each part, you'll find general guidance before the Main Practices. At the end, there's a more detailed attunement to help you assess your current state.",
-    "p5": "In the Emotional Check window, you can discover your current emotional state and can complete an Adaptive practice.",
-    "p6": "Remember: the ONDA level system is a journey of realizations — experiencing yourself as an amoeba, fish, animal, primate, human, brain cell, DNA, and finally, an atom. Give each stage the attention it deserves, and your path will be effortless and fulfilling.",
-    "goodLuck": "Good luck on your journey!"
+  "meta": {
+    "title": "About ONDA Life — What It Does and Who Builds It",
+    "description": "ONDA Life is an iPhone app that helps you notice your nervous-system state and train it with breathing: your own trend, not a stress score. Who builds it and how.",
+    "ogImageAlt": "ONDA Life — an iPhone app for breathing with live heart-rhythm feedback."
   },
-  "back": "← Back to Home",
-  "author": {
-    "heading": "The person behind ONDA Life",
-    "lead": "ONDA Life was founded by Yakiv Bilenko — an architect and a psychologist.",
-    "p1": "For over 20 years he has designed physical environments — homes, commercial and industrial buildings, interiors, and the planning of entire territories. For over 10 years, in parallel, he has practised as a Gestalt therapist and coach, building structured programs for the recovery of people's mental, physical and emotional resources.",
-    "p2": "His work runs along the seam between those two fields — how the environment around a person and the environment inside them shape one another. ONDA Life is that question turned into a product: a system for working on your inner architecture with the same intent an architect brings to a building.",
-    "p3": "ONDA Life is a Spanish company based in Avilés. Its protocols and articles are educational tools for self-directed practice, grounded in applied psychology and systems design — not medical advice or a substitute for professional care.",
+  "title": "About ONDA Life",
+  "lead": "In short: ONDA Life is an iPhone app that helps you notice the state of your nervous system and train it with breathing. We don’t give scores like “stress 55%”. We show your own trend and give you a practice to work with it.",
+  "principle": "Our principle: don’t track stress — train self-regulation.",
+  "what": {
+    "heading": "What the app does",
+    "items": [
+      {
+        "t": "Your personal baseline.",
+        "d": "ONDA builds a baseline from your heart rate and HRV (heart rate variability) history in Apple Health — from Apple Watch or another device that syncs its data there. Every day it compares you with you, not with averaged tables."
+      },
+      {
+        "t": "Breathing with biofeedback.",
+        "d": "With Apple Watch you see in real time how your breathing changes your heart rhythm, and you learn to find a calm, even rhythm."
+      },
+      {
+        "t": "Pulse without a watch.",
+        "d": "No watch? ONDA measures your pulse with the iPhone camera."
+      },
+      {
+        "t": "Short practices.",
+        "d": "Mostly 3–12 minutes, a few up to 30: breathing, body attention, micro-movements, contemplation. If your readings stay steady, ONDA occasionally invites you to a short camera check-in or a practice."
+      },
+      {
+        "t": "A path of levels.",
+        "d": "The practices form a route: from grounding in the body to clarity and inner support. The level metaphors are figurative language for experience, not medical stages. Regular practice earns OND, the app’s game currency; it cannot be withdrawn as money."
+      }
+    ]
+  },
+  "basis": {
+    "heading": "What ONDA is built on",
+    "p1": "The evidence-based part of ONDA is slow (resonance) breathing and HRV biofeedback — among the most studied ways to influence the autonomic nervous system. The details, with sources, are in [Science](/science).",
+    "p2": "We are honest about the limits too: HRV from watches and rings is an estimate, not a medical measurement; one morning means nothing — your trend is what matters; low HRV is most often a reaction to short sleep, alcohol, illness or training load, not a diagnosis. See [Why is my HRV low?](/science/questions/why-is-my-hrv-low)"
+  },
+  "info": {
+    "heading": "How we handle information",
+    "items": [
+      {
+        "t": "Science.",
+        "d": "Every claim in the science section rests on a source with a DOI and a verbatim quote. We say who funded a study, flag single studies, and write “not shown” when there is no data."
+      },
+      {
+        "t": "Device and app reviews.",
+        "d": "[Scores](/reviews) follow one open [methodology](/reviews/methodology). Manufacturer-run studies don’t count as evidence. If a manufacturer claims clinical proof the product doesn’t have, we lower the score and quote their wording. Brands can’t pay for a score; any affiliate link is labelled and doesn’t affect the score."
+      },
+      {
+        "t": "AI assistants.",
+        "d": "Our tools are available in Claude and ChatGPT: device comparison, breathing practices, HRV by age. More on the [ONDA in AI apps](/ai-apps) page."
+      }
+    ]
+  },
+  "privacy": {
+    "heading": "Privacy",
+    "items": [
+      "Your progress and diary are stored on your device.",
+      "Heart rate and HRV values are not sent to analytics.",
+      "You don’t need an account to do the practices."
+    ]
+  },
+  "person": {
+    "heading": "The person behind ONDA",
+    "p1": "ONDA Life was created by Yakiv Bilenko — architect and Gestalt therapist.",
+    "p2": "For more than 20 years he has designed physical environments: housing, public and industrial buildings, interiors, landscapes. For more than 10 years he has also worked as a Gestalt therapist and coach, building programs to restore physical, mental and emotional resources.",
+    "p3": "ONDA continues a question that links both professions: how a person’s outer environment and inner state shape each other. The app is a tool for working with your “inner architecture” with the same care an architect brings to a building.",
     "linkedin": "Yakiv Bilenko on LinkedIn →"
   },
-  "meta": {
-    "title": "About ONDA Life — Who Builds It, and Why",
-    "description": "Built by Yakiv Bilenko, architect and Gestalt psychologist — HRV biofeedback and guided breathing, honest about what it can and can't do.",
-    "ogImageAlt": "ONDA Life — HRV biofeedback app. Guided breathing with live heart-rhythm feedback."
-  }
+  "company": {
+    "heading": "Company",
+    "p1": "ONDA Life is a product of Onda Life LLC (USA). The founder lives and works in Avilés (Asturias, Spain).",
+    "p2": "ONDA is a tool for self-guided practice and self-observation. It is not a medical device, not a diagnosis, and not a substitute for care from a doctor or psychotherapist.",
+    "emergency": "If you have worrying symptoms — chest pain, fainting, severe shortness of breath, or an irregular heartbeat that doesn’t settle — seek emergency care."
+  },
+  "back": "← Back to Home"
 }
