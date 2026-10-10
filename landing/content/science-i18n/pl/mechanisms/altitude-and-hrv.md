@@ -1,5 +1,5 @@
 ---
-sourceHash: 894a41c93c3f
+sourceHash: 5c84bc6057f9
 title: "Wysokość a HRV: co się zmienia i czego nie da się przewidzieć"
 metaTitle: "Wysokość a HRV: co pokazują badania"
 metaDescription: "Jak duża wysokość zmienia zmienność rytmu serca, czy HRV może przewidzieć chorobę wysokościową i dlaczego o zejściu decydują objawy, a nie zegarek."
@@ -121,7 +121,7 @@ evidenceMap:
 
 Na dużej wysokości każdy oddech dostarcza mniej tlenu. Zmienność rytmu serca (HRV) to wahania odstępu między kolejnymi uderzeniami serca, a w pierwszych dniach na wysokości zwykle spada. Najbardziej wiarygodnym dowodem jest metaanaliza {{fact:altitude.li.studies}}: {{fact:altitude.li.scope}} [S1]. W porównaniu z poziomem morza SDNN, RMSSD, moc wysokiej częstotliwości i pokrewne miary HRV były niższe [S1].
 
-Autorzy interpretują ten wzorzec jako wycofanie aktywności nerwu błędnego ze względną przewagą układu współczulnego [S1]. To ujęcie ma znaczenie. {{fact:claim.vagalTone}}, więc jest to interpretacja zmierzonego HRV, a nie bezpośredni pomiar aktywności nerwów. Część tej interpretacji opiera się na wzroście stosunku mocy niskiej do wysokiej częstotliwości (LF/HF). We własnej dyskusji autorzy dodają, że ten stosunek odzwierciedla głównie to, jak rozkłada się pozostała, mniejsza moc widmowa, a nie jest bezpośrednią miarą napięcia układu współczulnego [S1]. Dlaczego ten stosunek jest sporny, wyjaśnia strona [autonomiczny układ nerwowy](/science/concepts/autonomic-nervous-system).
+Autorzy interpretują ten wzorzec jako wycofanie aktywności nerwu błędnego ze względną przewagą układu współczulnego [S1]. To ujęcie ma znaczenie. {{fact:claim.vagalTone}}, więc jest to interpretacja zmierzonego HRV, a nie bezpośredni pomiar aktywności nerwów. Część tej interpretacji opiera się na wzroście stosunku mocy niskiej do wysokiej częstotliwości (LF/HF). LF/HF to sporna miara równowagi między układem współczulnym a przywspółczulnym. We własnej dyskusji autorzy dodają, że ten stosunek odzwierciedla głównie to, jak rozkłada się pozostała, mniejsza moc widmowa, a nie jest bezpośrednią miarą napięcia układu współczulnego [S1]. Dlaczego ten stosunek jest sporny, wyjaśnia strona [autonomiczny układ nerwowy](/science/concepts/autonomic-nervous-system).
 
 Część spadku może być mechaniczna. Niedobór tlenu przyspiesza oddech, a autorzy wiążą część spadku mocy wysokiej częstotliwości z tym szybszym oddychaniem [S1]. Zmiana odzwierciedla więc zarówno to, jak oddychasz, jak i to, jak regulowana jest praca serca.
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: 894a41c93c3f
+sourceHash: 5c84bc6057f9
 title: "Altitude et HRV : ce qui change et ce qu’elle ne peut pas prédire"
 metaTitle: "Altitude et HRV : ce que montrent les études"
 metaDescription: "Comment la haute altitude modifie la variabilité de la fréquence cardiaque, si la HRV peut prédire le mal des montagnes et pourquoi ce sont les symptômes, pas une montre, qui décident quand redescendre."
@@ -122,7 +122,7 @@ evidenceMap:
 
 En haute altitude, chaque respiration apporte moins d’oxygène. La variabilité de la fréquence cardiaque (HRV, ou VFC) est la variation, d’un battement à l’autre, de l’intervalle entre deux battements cardiaques, et dans les premiers jours en altitude elle baisse généralement. Les données les plus solides viennent d’une méta-analyse de {{fact:altitude.li.studies}} : {{fact:altitude.li.scope}} [S1]. Par rapport au niveau de la mer, le SDNN, le RMSSD, la puissance haute fréquence et d’autres mesures de la HRV étaient tous plus bas [S1].
 
-Les auteurs interprètent ce profil comme un retrait vagal avec une prédominance sympathique relative [S1]. La formulation compte. {{fact:claim.vagalTone}}, il s’agit donc d’une lecture de la HRV mesurée, pas d’une mesure directe de l’activité nerveuse. Une partie de cette lecture repose sur une hausse du rapport entre puissance basse et haute fréquence (LF/HF). Dans leur propre discussion, les auteurs ajoutent que ce rapport reflète surtout la façon dont la puissance spectrale restante, plus faible, se redistribue, plutôt qu’une mesure directe du tonus sympathique [S1]. Pourquoi ce rapport est débattu est expliqué dans [le système nerveux autonome](/science/concepts/autonomic-nervous-system).
+Les auteurs interprètent ce profil comme un retrait vagal avec une prédominance sympathique relative [S1]. La formulation compte. {{fact:claim.vagalTone}}, il s’agit donc d’une lecture de la HRV mesurée, pas d’une mesure directe de l’activité nerveuse. Une partie de cette lecture repose sur une hausse du rapport entre puissance basse et haute fréquence (LF/HF). Le rapport LF/HF est une mesure contestée de l’équilibre entre systèmes sympathique et parasympathique. Dans leur propre discussion, les auteurs ajoutent que ce rapport reflète surtout la façon dont la puissance spectrale restante, plus faible, se redistribue, plutôt qu’une mesure directe du tonus sympathique [S1]. Pourquoi ce rapport est débattu est expliqué dans [le système nerveux autonome](/science/concepts/autonomic-nervous-system).
 
 Une partie de la baisse peut être mécanique. Le manque d’oxygène accélère la respiration, et les auteurs relient une partie de la baisse de la puissance haute fréquence à cette respiration plus rapide [S1]. Le changement reflète donc votre façon de respirer autant que la régulation du cœur.
 
