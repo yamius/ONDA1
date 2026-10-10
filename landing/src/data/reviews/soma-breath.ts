@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const somaBreath: ToolReview = {
+const somaBreath: ToolReviewInput = {
   slug: 'soma-breath',
   name: 'SOMA Breath',
   brand: 'SOMA Breath',
@@ -9,10 +9,9 @@ const somaBreath: ToolReview = {
   description:
     'ONDA review of SOMA Breath — rhythmic music breathwork app from Niraj Naik with global practitioner certification network. Scored on library, technique coverage, evidence and value.',
   verdict:
-    'Best for music-paced rhythmic breathwork with global certification community. Less science-grounded than Breathwrk, deeper ceremony framing than Othership.',
+    'Best for music-paced rhythmic breathwork with global certification community. Less science-informed than Breathwrk, deeper ceremony framing than Othership.',
   summary:
     'SOMA Breath is the rhythmic music breathwork reference — Niraj Naik’s method paces breath to beat-driven tracks, often layered with Wim Hof rounds and pranayama elements. Distinguished by the global practitioner certification network (hundreds of SOMA-certified facilitators worldwide). Strong ceremony framing, moderate evidence grounding, mid-tier subscription pricing.',
-  overallScore: 7.9,
   scores: [
     { criterionId: 'session-library', score: 8.0, note: 'Solid library of rhythmic music-paced sessions across awakening, healing, calm and ceremony. Smaller than Breathwrk but deeper per-session production.' },
     { criterionId: 'technique-coverage', score: 7.5, note: 'Wim Hof rounds, pranayama, breath retentions, rhythmic-music pacing. Less Buteyko / clinical-modality coverage than Breathwrk; deeper into rhythmic crossover.' },
@@ -28,7 +27,7 @@ const somaBreath: ToolReview = {
     'Wim Hof crossover with pranayama elements',
   ],
   cons: [
-    'Less science-grounded than Breathwrk',
+    'Less science-informed than Breathwrk',
     'No HRV biofeedback',
     'Smaller library than Breathwrk',
     'Ceremony framing may not suit users seeking pure clinical breathwork',
@@ -66,13 +65,13 @@ Choose SOMA Breath for rhythmic music-paced breathwork with ceremony framing and
   relatedSlugs: ['breathwrk', 'othership', 'wim-hof-method-app'],
   publishOn: '2026-06-29',
   faq: [
-    { q: "Is SOMA Breath worth it?", a: "SOMA Breath is worth it if you want rhythmic, music-paced breathwork with ceremony framing and a global certified-facilitator community. It is less science-grounded than Breathwrk, has a smaller library and offers no HRV biofeedback, so clinically minded users may prefer alternatives." },
+    { q: "Is SOMA Breath worth it?", a: "SOMA Breath is worth it if you want rhythmic, music-paced breathwork with ceremony framing and a global certified-facilitator community. It is less science-informed than Breathwrk, has a smaller library and offers no HRV biofeedback, so clinically minded users may prefer alternatives." },
     { q: "How much does SOMA Breath cost?", a: "SOMA Breath costs about $99 as an annual subscription, and a free trial is available. The subscription covers its rhythmic music breathwork sessions and ceremony-style journeys, which blend Wim Hof crossover with pranayama elements." },
-    { q: "SOMA Breath vs Breathwrk: which is better?", a: "Breathwrk is more science-grounded and has a larger library. SOMA Breath stands out for rhythmic music-paced breathing, ceremony production and a global practitioner network. Choose Breathwrk for clinical breadth, SOMA for ritual and community." },
-    { q: "What are the downsides of SOMA Breath?", a: "SOMA Breath is less science-grounded than Breathwrk, has a smaller library and offers no HRV biofeedback. Its ceremony framing may also not suit users seeking pure clinical breathwork without the journey-style production." },
+    { q: "SOMA Breath vs Breathwrk: which is better?", a: "Breathwrk is more science-informed and has a larger library. SOMA Breath stands out for rhythmic music-paced breathing, ceremony production and a global practitioner network. Choose Breathwrk for clinical breadth, SOMA for ritual and community." },
+    { q: "What are the downsides of SOMA Breath?", a: "SOMA Breath is less science-informed than Breathwrk, has a smaller library and offers no HRV biofeedback. Its ceremony framing may also not suit users seeking pure clinical breathwork without the journey-style production." },
   ],
   datePublished: '2026-06-29',
-  dateModified: '2026-06-29',
+  dateModified: '2026-10-10',
 }
 
 export default somaBreath

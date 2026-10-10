@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const olylifeTera: ToolReview = {
+const olylifeTera: ToolReviewInput = {
   slug: 'olylife-tera-p90-plus',
   name: 'OlyLife TERA P90 Plus',
   brand: 'OlyLife',
@@ -12,7 +12,6 @@ const olylifeTera: ToolReview = {
     'Popular budget wand combining PEMF with terahertz claims — accessible price, but terahertz marketing overstates the published evidence.',
   summary:
     'OlyLife TERA P90 Plus is a popular budget PEMF + terahertz wand sold heavily via direct-marketing channels. The PEMF component is real and uses common PEMF frequencies, though we found no trials of this device; the terahertz wavelength claims are the editorial concern — consumer-device terahertz output and biological effect literature do not match the marketing. Accessible $400–$700 pricing keeps it in the conversation despite the caveats.',
-  overallScore: 6.3,
   scores: [
     { criterionId: 'field-strength', score: 6.5, note: 'Moderate PEMF output for a budget device. Terahertz claims are the editorial concern — consumer hardware terahertz output is not well-documented.' },
     { criterionId: 'waveform-evidence', score: 5.5, note: 'Uses common PEMF frequencies, with no trials of this device; terahertz biological-effect claims are not well-supported in consumer-device literature. The marketing overstates the evidence.' },
@@ -69,7 +68,7 @@ Choose OlyLife TERA P90 Plus only if you explicitly discount the terahertz marke
     { q: "What are the downsides of the OlyLife TERA P90 Plus?", a: "Its terahertz marketing claims overstate the published evidence, MLM-style distribution leads to inconsistent warranty support, it offers limited parameter exposure and protocol depth, and as a handheld wand it provides no whole-body mat coverage. Value it for PEMF alone." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default olylifeTera

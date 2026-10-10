@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const neuroskyMindwaveMobile2: ToolReview = {
+const neuroskyMindwaveMobile2: ToolReviewInput = {
   slug: 'neurosky-mindwave-mobile-2',
   name: 'NeuroSky MindWave Mobile 2',
   brand: 'NeuroSky',
@@ -12,7 +12,6 @@ const neuroskyMindwaveMobile2: ToolReview = {
     'The cheapest legitimate consumer EEG headset — single-channel, basic, but with an open SDK for developers and learners.',
   summary:
     'NeuroSky MindWave Mobile 2 is the entry-level consumer EEG product — a single forehead electrode plus reference ear-clip, paired with a developer SDK and a small library of third-party apps. The hardware is over a decade old and feels it; the value is the price tag (~$110) and the SDK that lets students, hobbyists and developers learn EEG basics without buying a $1,000+ device.',
-  overallScore: 5.6,
   scores: [
     { criterionId: 'signal-quality', score: 5.5, note: 'Single forehead electrode plus reference ear-clip. Sampling and signal handling reflect mid-2010s hardware — adequate to compute NeuroSky’s own attention and meditation indices (not validated measures), far behind multi-channel modern devices.' },
     { criterionId: 'training-content', score: 4.5, note: 'No first-party content library; experience depends on third-party apps. The platform is the device and the SDK, not a content offering.' },

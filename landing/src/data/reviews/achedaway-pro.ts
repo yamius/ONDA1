@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const achedawayPro: ToolReview = {
+const achedawayPro: ToolReviewInput = {
   slug: 'achedaway-pro',
   name: 'Achedaway Pro',
   brand: 'Achedaway',
@@ -12,7 +12,6 @@ const achedawayPro: ToolReview = {
     'Best spec-to-price ratio in premium percussion — 80 lbs stall force (highest in category) at $349. No premium-brand app ecosystem.',
   summary:
     'Achedaway Pro is the biohacker dark-horse — 80 lbs stall force (highest in category, exceeding Theragun PRO Plus and Hypervolt 2 Pro), 16 mm amplitude, 7 attachments, quiet brushless motor, $349. No Therabody / Hyperice app ecosystem; the trade is brand polish and smart features for raw spec maximalism and lower price.',
-  overallScore: 8.0,
   scores: [
     { criterionId: 'stall-force-amplitude', score: 9.5, note: '80 lbs stall force — highest in consumer category. 16 mm amplitude matches Theragun. Spec maximalism wins on percussion dose.' },
     { criterionId: 'build-attachments', score: 8.0, note: 'Brushless motor, 7 attachments included (most in category), 1-year warranty. Build quality solid; brand pedigree thinner than Therabody / Hyperice.' },
@@ -71,7 +70,7 @@ Choose Achedaway Pro for spec-maximalist percussion without paying for premium-b
     { q: "Who is the Achedaway Pro best for?", a: "The Achedaway Pro is best for spec-maximalist biohackers who want the highest stall force at sub-Theragun pricing. It suits buyers who do not need an app and are comfortable trading brand pedigree and smart features for 80 lbs of stall force, 16 mm amplitude and 7 attachments." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-07-20',
+  dateModified: '2026-10-10',
 }
 
 export default achedawayPro

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const oolerSleepSystem: ToolReview = {
+const oolerSleepSystem: ToolReviewInput = {
   slug: 'ooler-sleep-system',
   name: 'OOLER Sleep System',
   brand: 'Sleepme',
@@ -12,7 +12,6 @@ const oolerSleepSystem: ToolReview = {
     'Legacy Sleepme water-cooled system — solid track record, app scheduling, superseded by Dock Pro for new buyers.',
   summary:
     'OOLER Sleep System is the long-running Sleepme water-cooled mattress pad that introduced app-based climate scheduling to the consumer category. Superseded by Dock Pro for new buyers but still sold from inventory at discount. Solid multi-year reliability, comparable cooling to Dock Pro, narrower app feature set.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'climate-range', score: 8.0, note: 'Solid water-cooled range comparable to Dock Pro. Slightly less rigorous than Dock Pro in peak heat.' },
     { criterionId: 'build', score: 8.0, note: 'Legacy Sleepme hardware with strong multi-year reliability track record. 2-year warranty.' },
@@ -74,7 +73,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
   ],
 
   datePublished: '2026-06-15',
-  dateModified: '2026-09-17',
+  dateModified: '2026-10-10',
 }
 
 export default oolerSleepSystem

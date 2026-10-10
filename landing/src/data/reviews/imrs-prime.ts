@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const imrsPrime: ToolReview = {
+const imrsPrime: ToolReviewInput = {
   slug: 'imrs-prime',
   name: 'iMRS Prime',
   brand: 'Swiss Bionic Solutions',
@@ -12,10 +12,9 @@ const imrsPrime: ToolReview = {
     'Swiss-engineered Bemer alternative — sawtooth waveform, multi-applicator system, multi-decade brand. Lower price than Bemer with comparable build.',
   summary:
     'iMRS Prime is the Swiss Bionic Solutions Bemer-alternative — full-body mat plus pillow plus spot applicator, sawtooth waveform with Schumann (7.83 Hz) settings and morning/evening presets that the maker markets as energising and calming (not tested in controlled trials). Multi-decade brand, premium build, mid-premium pricing. Often cross-shopped against Bemer and chosen for the price differential.',
-  overallScore: 7.5,
   scores: [
     { criterionId: 'field-strength', score: 7.5, note: 'Low-to-moderate intensity (~150–200 µT mat output). Similar philosophy to Bemer — waveform shape over peak gauss.' },
-    { criterionId: 'waveform-evidence', score: 8.0, note: 'Sawtooth waveform with Schumann and bone-healing frequency presets. Relies on general PEMF research; we found no trials of the device itself.' },
+    { criterionId: 'waveform-evidence', score: 7.0, note: 'Sawtooth waveform with Schumann and bone-healing frequency presets; neither earns credit. Relies on general PEMF research; we found no trials of the device itself — 7.0, the score for PEMF devices without device-specific trials.' },
     { criterionId: 'build', score: 8.5, note: 'Swiss-engineered premium build, multi-decade brand pedigree, 3-year warranty.' },
     { criterionId: 'programmability', score: 7.5, note: 'Morning and evening preset protocols (marketed as energising and calming; not tested in controlled trials). Less parameter exposure than Healthy Wave; more polished than consumer mats.' },
     { criterionId: 'form-factor', score: 8.5, note: 'Coordinated multi-applicator system — full mat + pillow + spot applicator from single control unit.' },
@@ -70,7 +69,7 @@ Choose iMRS Prime if you're cross-shopping Bemer and want Swiss-engineered multi
     { q: "What frequencies does the iMRS Prime use?", a: "The iMRS Prime uses a sawtooth waveform with Schumann (7.83 Hz) settings and morning and evening presets that the maker markets as energising and calming, not tested in controlled trials. It exposes fewer adjustable parameters than the Healthy Wave Multi-Wave, so it suits users who prefer presets over manual tuning." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default imrsPrime

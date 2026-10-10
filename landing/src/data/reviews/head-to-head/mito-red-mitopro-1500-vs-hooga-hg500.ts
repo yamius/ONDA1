@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const mitoRedVsHooga: HeadToHead = {
+const mitoRedVsHooga: HeadToHeadInput = {
   slug: 'mito-red-mitopro-1500-vs-hooga-hg500',
   productASlug: 'mito-red-mitopro-1500',
   productBSlug: 'hooga-hg500',
@@ -9,7 +9,7 @@ const mitoRedVsHooga: HeadToHead = {
     'Mito Red MitoPRO 1500 vs Hooga HG500 — side-by-side ONDA comparison of premium biohacker panel versus budget biohacker entry. Six-wavelength large versus two-wavelength budget.',
   intro:
     'Mito Red MitoPRO 1500 and Hooga HG500 are the two red light panels users compare when the question is "premium spectrum versus budget access." MitoPRO (now sold as the 1500X) ships six-wavelength large-panel coverage; Hooga ships two-wavelength half-body coverage at about a quarter of the price. Different tiers; the question is whether the spec gap justifies the price gap.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Depends on what matters. MitoPRO wins on spectrum, build and coverage. Hooga wins on value by a wide margin — most biohackers do not need MitoPRO’s premium for typical use.',
   bestForA:
@@ -57,7 +57,7 @@ If broader six-wavelength coverage, larger half-body panel and premium build are
 If you want verified red-light therapy hardware at the lowest legitimate price, Hooga is the right shape. Most first-time buyers should start here; upgrade later if the use case justifies it.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default mitoRedVsHooga

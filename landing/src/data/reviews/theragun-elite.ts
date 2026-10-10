@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const theragunElite: ToolReview = {
+const theragunElite: ToolReviewInput = {
   slug: 'theragun-elite',
   name: 'Theragun Elite',
   brand: 'Therabody',
@@ -12,7 +12,6 @@ const theragunElite: ToolReview = {
     'Best Therabody value — 16 mm amplitude with 40 lbs stall force at $200 less than PRO Plus. The rational Therabody purchase for most users.',
   summary:
     'Theragun Elite is the rational Therabody buy — same 16 mm amplitude as the flagship PRO Plus, 40 lbs stall force (vs 60 lbs PRO Plus), same Therabody app, same multi-grip handle, $200 less. For 90% of users the spec difference vs PRO Plus is not material. Therabody pedigree and app at meaningfully accessible price.',
-  overallScore: 8.2,
   scores: [
     { criterionId: 'stall-force-amplitude', score: 8.5, note: '40 lbs stall force + 16 mm amplitude — same depth as PRO Plus, lower stall. Sufficient for non-elite-athlete use cases.' },
     { criterionId: 'build-attachments', score: 8.5, note: 'Premium brushless motor build, 5 attachments, 2-year warranty. Same Therabody pedigree as PRO Plus.' },
@@ -71,7 +70,7 @@ Choose Theragun Elite for rational Therabody value — same app, same amplitude,
     { q: "What are the downsides of the Theragun Elite?", a: "The Elite's stall force is 40 lbs versus 60 on the PRO Plus, it lacks the OLED display, and it includes 5 attachments rather than 6. At $399 it also matches the Hypervolt 2 Pro's price with lower stall force." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-07-20',
+  dateModified: '2026-10-10',
 }
 
 export default theragunElite

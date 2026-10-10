@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const magnawaveMini: ToolReview = {
+const magnawaveMini: ToolReviewInput = {
   slug: 'magnawave-mini',
   name: 'MagnaWave Mini',
   brand: 'MagnaWave',
@@ -12,7 +12,6 @@ const magnawaveMini: ToolReview = {
     'High-intensity loop-coil PEMF with real equine and athletic heritage — but MagnaWave no longer lists a “Mini”, and its smallest current machine, the Semi 10, starts at $8,360. For most people, that is too much money for evidence this thin.',
   summary:
     'MagnaWave builds high-intensity PEMF (pulsed electromagnetic field) machines that drive a hand-held loop or paddle coil. The brand is best known in horse and animal care. Its compact entry unit — once sold as a “Mini” — is today the Semi 10: a 9.4 lb digital machine with one output, 0.7–20 Hz pulses and a 10-year warranty, priced from $8,360 (starter bundle) to $13,339. MagnaWave states its machines are not intended to diagnose, treat, cure or prevent disease in animals; its separate home brand, AuraWell, is described by the company as the first FDA-cleared, high-powered over-the-counter PEMF device. It bridges consumer mats and full clinic systems — at clinic-system money.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'field-strength', score: 8.5, note: 'High-intensity loop-coil output designed for clinical and equine protocols — far above consumer mats. The Semi 10 sits at power level 5 of 10 in MagnaWave’s own range.' },
     { criterionId: 'waveform-evidence', score: 7.0, note: 'PEMF has modest evidence for musculoskeletal pain (systematic reviews). MagnaWave’s own human outcome data is not published; much of its use is equine.' },
@@ -131,7 +130,7 @@ The price comes first: from $8,360 for the smallest machine. The evidence is sec
     { q: "Who should not use PEMF?", a: "Do not use PEMF with a pacemaker, defibrillator or other active implant, during pregnancy, or if you have epilepsy. Ask a doctor before using it over metal implants, a tumour or an active bleed, and start at low intensity." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default magnawaveMini

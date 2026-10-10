@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const threeMeditation: HeadToHead = {
+const threeMeditation: HeadToHeadInput = {
   slug: 'headspace-vs-calm-vs-insight-timer',
   productASlug: 'headspace',
   productBSlug: 'calm',
@@ -10,7 +10,7 @@ const threeMeditation: HeadToHead = {
     'Headspace vs Calm vs Insight Timer — three-way ONDA comparison of the three top meditation apps. Curriculum, sleep content and the largest free library in one decision.',
   intro:
     'Headspace, Calm and Insight Timer are the three meditation apps users overwhelmingly shortlist together — together they cover most of the consumer meditation market. Three different philosophies: Headspace teaches a curriculum, Calm sells ambient wellness content with sleep stories, Insight Timer hosts the largest free meditation library on the market. The decision is which of those three jobs you actually have.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Three different products. Headspace for structured learning. Calm for sleep content and celebrity narration. Insight Timer for the largest free library.',
   bestForA:
@@ -69,7 +69,7 @@ If sleep content matters as much as meditation, or you respond to celebrity narr
 If you want the largest free meditation library on the market — and access to premier teachers (Tara Brach, Jack Kornfield, Sharon Salzberg) at no cost — Insight Timer is the right shape. The free tier is genuinely free; the optional Member Plus is cheaper than the other two.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default threeMeditation

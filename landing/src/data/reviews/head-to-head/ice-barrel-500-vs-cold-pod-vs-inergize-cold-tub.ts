@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const threeBudgetPlunge: HeadToHead = {
+const threeBudgetPlunge: HeadToHeadInput = {
   slug: 'ice-barrel-500-vs-cold-pod-vs-inergize-cold-tub',
   productASlug: 'ice-barrel-500',
   productBSlug: 'cold-pod',
@@ -10,7 +10,7 @@ const threeBudgetPlunge: HeadToHead = {
     'Ice Barrel vs Cold Pod vs Inergize — three-way ONDA comparison of three budget-tier cold-plunge options. Vertical barrel, inflatable portable and modular insulated tub.',
   intro:
     'Ice Barrel 500, Cold Pod and Inergize Cold Tub are the three sub-$1,500 cold-plunge options most buyers compare when premium chiller-built tier is not in budget. Three different form factors: vertical barrel, inflatable portable, and rigid insulated tub with optional chiller upgrade path.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Three different bets. Ice Barrel for the popular vertical-barrel form. Cold Pod for the cheapest portable entry. Inergize for the modular upgrade path to chiller-built.',
   bestForA:
@@ -63,7 +63,7 @@ If $220 upfront is the deciding price point or you need a tub that folds away wh
 If you want the option to upgrade to chiller-built later — start with ice-fill at $1,500 tub-only, add the chiller for ~$1,300 when daily-use intent is established. The modular path makes sense for users not sure they will commit to daily use.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default threeBudgetPlunge

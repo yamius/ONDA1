@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const sleepCycleVsSleepAsAndroid: HeadToHead = {
+const sleepCycleVsSleepAsAndroid: HeadToHeadInput = {
   slug: 'sleep-cycle-vs-sleep-as-android',
   productASlug: 'sleep-cycle',
   productBSlug: 'sleep-as-android',
@@ -9,7 +9,7 @@ const sleepCycleVsSleepAsAndroid: HeadToHead = {
     'Sleep Cycle vs Sleep as Android — side-by-side ONDA comparison of two phone-based sleep trackers. Polished cross-platform UX versus deep Android-only customisation.',
   intro:
     'Sleep Cycle and Sleep as Android are the two leading phone-based sleep trackers — the apps users compare when they want sleep data without buying a wearable. Both use the phone microphone and accelerometer to detect sleep stages and disturbances; the structural differences are platform reach and customisation depth. Sleep Cycle is the polished cross-platform incumbent; Sleep as Android is the deeply-customisable Android-only specialist.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Depends on your platform. Sleep Cycle for the polished iPhone and Android cross-platform experience. Sleep as Android for the deepest customisation, automation and integration if you are Android-only.',
   bestForA:
@@ -57,7 +57,7 @@ If you want a polished, low-friction sleep tracker that works the same on iPhone
 If you are on Android and you would rather have automation, plugin ecosystem and granular control than a polished out-of-box experience, Sleep as Android is the right shape. The Tasker integration alone is reason enough for power users. For iPhone users it is not an option.`,
   relatedComparisonSlug: 'best-sleep-apps-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-10',
 }
 
 export default sleepCycleVsSleepAsAndroid

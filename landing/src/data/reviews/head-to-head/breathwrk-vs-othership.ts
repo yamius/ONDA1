@@ -1,19 +1,19 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const breathwrkVsOthership: HeadToHead = {
+const breathwrkVsOthership: HeadToHeadInput = {
   slug: 'breathwrk-vs-othership',
   productASlug: 'breathwrk',
   productBSlug: 'othership',
   title: 'Breathwrk vs Othership (2026)',
   description:
-    'Breathwrk vs Othership — structured science-grounded library vs cinematic music-driven premium experience. ONDA breaks down the breathwork app top two.',
+    'Breathwrk vs Othership — structured, science-informed library vs cinematic music-driven premium experience. ONDA breaks down the breathwork app top two.',
   intro:
-    'Breathwrk and Othership are the two breathwork apps users compare when picking a premium daily practice tool. The defining difference is the thesis: Breathwrk bets on structured library depth and science-grounded copy; Othership bets on cinematic music-driven production and live community.',
-  winnerSlug: null,
+    'Breathwrk and Othership are the two breathwork apps users compare when picking a premium daily practice tool. The defining difference is the thesis: Breathwrk bets on structured library depth and science-informed copy, backed by one published study on cyclic sighing; Othership bets on cinematic music-driven production and live community.',
+  jobDependentVerdict: true,
   verdict:
-    'Structured library vs cinematic experience. Breathwrk for the largest structured catalogue with science-grounded copy at the best premium price. Othership for music-driven premium experience with live community.',
+    'Structured library vs cinematic experience. Breathwrk for the largest structured catalogue, with science-informed copy backed by one published study on cyclic sighing, at the best premium price. Othership for music-driven premium experience with live community.',
   bestForA:
-    'Choose Breathwrk if you want the largest structured breathwork library with full technique coverage and science-grounded copy at $49/year.',
+    'Choose Breathwrk if you want the largest structured breathwork library with full technique coverage and science-informed copy, backed by one published study on cyclic sighing, at $49/year.',
   bestForB:
     'Choose Othership if you want cinematic music-driven sessions with live community classes and you accept $129.99/year.',
   axes: [
@@ -28,7 +28,7 @@ const breathwrkVsOthership: HeadToHead = {
   faq: [
     {
       q: 'Breathwrk or Othership — which is better?',
-      a: 'Different theses. Breathwrk wins on library depth, technique coverage, science grounding and price. Othership wins on production value, music-driven sessions and live community.',
+      a: 'Different theses. Breathwrk wins on library depth, technique coverage, science-informed copy (one published study on cyclic sighing) and price. Othership wins on production value, music-driven sessions and live community.',
     },
     {
       q: 'Is Othership worth $129.99/year?',
@@ -49,7 +49,7 @@ Both are premium-tier breathwork apps. Breathwrk is the structured-library refer
 
 ## When is Breathwrk the right pick?
 
-If you want the largest structured catalogue, broadest technique coverage and science-grounded copy at the best price — Breathwrk is the right shape. The rational default for daily breathwork practice.
+If you want the largest structured catalogue, broadest technique coverage and science-informed copy, backed by one published study on cyclic sighing, at the best price — Breathwrk is the right shape. The rational default for daily breathwork practice.
 
 ## When is Othership the right pick?
 
@@ -57,7 +57,7 @@ If you want breathwork as cinematic music-driven experience with live community 
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default breathwrkVsOthership

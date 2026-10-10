@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const balanceVsCalm: HeadToHead = {
+const balanceVsCalm: HeadToHeadInput = {
   slug: 'balance-vs-calm',
   productASlug: 'balance',
   productBSlug: 'calm',
@@ -9,7 +9,7 @@ const balanceVsCalm: HeadToHead = {
     'Balance vs Calm — the adaptive, personalised meditation plan (with a free first year) vs the most polished sleep-and-relaxation library. Personalisation vs content and sleep.',
   intro:
     'Balance and Calm want different things for you. Balance builds a personalised daily plan that adapts to your goals and check-ins, with a famously generous free first year. Calm is the polished content leader — the best sleep stories and the biggest, most beautifully produced library. It’s a plan tuned to you versus a vast library to explore.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Personalisation vs content and sleep. Balance wins on an adaptive daily plan and a genuinely generous free first year. Calm wins on the biggest, most polished library and the best sleep content in the category. Choose Balance for a guided plan that adapts to you; Calm for sleep, relaxation and sheer breadth.',
   bestForA:
@@ -56,7 +56,7 @@ For the structured-teaching alternative, see [Balance vs Headspace](/reviews/vs/
   relatedComparisonSlug: 'best-meditation-apps-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default balanceVsCalm

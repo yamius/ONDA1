@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const ekrinB37: ToolReview = {
+const ekrinB37: ToolReviewInput = {
   slug: 'ekrin-b37',
   name: 'Ekrin B37',
   brand: 'Ekrin Athletics',
@@ -12,7 +12,6 @@ const ekrinB37: ToolReview = {
     'Best lifetime-warranty mid-tier — 56 lbs stall force with lifetime warranty at $249.99. Lower amplitude than premium tier; athlete-credibility positioning.',
   summary:
     'Ekrin B37 is the athlete-oriented mid-premium entry — 56 lbs stall force, 12 mm amplitude, brushless motor, 4 attachments, and the category\'s only lifetime warranty. Athlete-focused brand positioning with credible NFL / NCAA distribution. $249.99 list pricing slots between mid-budget OPOVE and premium Hyperice. The right buy for users who value warranty over amplitude.',
-  overallScore: 7.3,
   scores: [
     { criterionId: 'stall-force-amplitude', score: 7.5, note: '56 lbs stall force solid. 12 mm amplitude — lower than premium-tier 14–16 mm but functional.' },
     { criterionId: 'build-attachments', score: 9.0, note: 'Lifetime warranty — only in category. Brushless motor, 4 attachments. Build quality validated by warranty terms.' },
@@ -71,7 +70,7 @@ Choose Ekrin B37 for lifetime-warranty mid-tier percussion with athlete brand pe
     { q: "Who is the Ekrin B37 best for?", a: "The Ekrin B37 is best for athletes who want a lifetime-warranty mid-tier massage gun. It suits buyers who value long-term ownership, athlete-focused positioning and about 8 hours of battery over premium amplitude. It offers 56 lbs stall force for $249.99." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default ekrinB37

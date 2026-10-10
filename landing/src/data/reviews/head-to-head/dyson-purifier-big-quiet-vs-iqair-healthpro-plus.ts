@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const dysonVsIqair: HeadToHead = {
+const dysonVsIqair: HeadToHeadInput = {
   slug: 'dyson-purifier-big-quiet-vs-iqair-healthpro-plus',
   productASlug: 'dyson-purifier-big-quiet',
   productBSlug: 'iqair-healthpro-plus',
@@ -9,7 +9,7 @@ const dysonVsIqair: HeadToHead = {
     'Dyson Purifier Big+Quiet vs IQAir HealthPro Plus — premium consumer smart vs clinical HEPA. ONDA breaks down the premium duel.',
   intro:
     'Dyson Big+Quiet and IQAir HealthPro Plus are the two premium air purifiers users compare when picking $1,000+ hardware. The defining difference: Dyson bets on consumer-brand polish + smart features + formaldehyde destruction; IQAir bets on deepest clinical-grade filtration + multi-decade Swiss pedigree.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Smart features vs clinical filtration. Dyson Big+Quiet for premium smart UX + formaldehyde + best-in-category app. IQAir for HyperHEPA H14 clinical depth.',
   bestForA:
@@ -57,7 +57,7 @@ If you want clinical-grade HyperHEPA H14 depth + multi-decade Swiss pedigree —
   relatedComparisonSlug: 'best-air-purifiers-2026',
   publishOn: '2026-07-27',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-10',
 }
 
 export default dysonVsIqair

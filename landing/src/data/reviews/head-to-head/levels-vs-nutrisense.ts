@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const levelsVsNutrisense: HeadToHead = {
+const levelsVsNutrisense: HeadToHeadInput = {
   slug: 'levels-vs-nutrisense',
   productASlug: 'levels',
   productBSlug: 'nutrisense',
@@ -8,8 +8,8 @@ const levelsVsNutrisense: HeadToHead = {
   description:
     'Levels vs Nutrisense — side-by-side ONDA comparison of the two leading consumer CGM programmes. Same Dexcom G7 hardware; the difference is app intelligence vs a registered dietitian.',
   intro:
-    'Levels and Nutrisense are the two biohacker CGM programmes everyone shortlists. Both ship the same Dexcom G7 sensor — the most accurate consumer CGM hardware on the market — so the accuracy ceiling is identical. The real difference is the wrapper: Levels bets on app intelligence and a deep content library; Nutrisense bets on a registered dietitian who reviews your data weekly.',
-  winnerSlug: null,
+    'Levels and Nutrisense are the two biohacker CGM programmes everyone shortlists. Both ship the same Dexcom G7 sensor, so the accuracy ceiling is identical. The real difference is the wrapper: Levels bets on app intelligence and a deep content library; Nutrisense bets on a registered dietitian who reviews your data weekly.',
+  jobDependentVerdict: true,
   verdict:
     'It is a deliberate tie that depends on what you want. Levels for the deepest insight engine on your own; Nutrisense for a registered dietitian working through your data with you each week.',
   bestForA:
@@ -17,7 +17,7 @@ const levelsVsNutrisense: HeadToHead = {
   bestForB:
     'Choose Nutrisense if accountability through a registered dietitian is what makes the programme work for you, and you would rather have a person interpret the data weekly than an app.',
   axes: [
-    { name: 'Sensor and accuracy', winner: 'tie', note: 'Both ship Dexcom G7 — same hardware, same MARD ~8.2%, same 10-day wear. Indistinguishable on sensor.' },
+    { name: 'Sensor and accuracy', winner: 'tie', note: 'Both ship Dexcom G7 — same hardware, same accuracy, same 10-day wear. Indistinguishable on sensor.' },
     { name: 'Insight depth (app)', winner: 'a', note: 'Levels has the deeper meal-impact engine — AUC decomposition, food-by-food ranking history, time-in-range views. Nutrisense is competent but less granular.' },
     { name: 'Human coaching', winner: 'b', note: 'Nutrisense includes a registered dietitian (RD) for every subscriber with weekly written reviews and in-app messaging. Levels is app-only by default.' },
     { name: 'Content library', winner: 'a', note: 'Levels has a substantial editorial library backed by its medical advisory board. Nutrisense leans on the coach for guidance instead.' },
@@ -27,7 +27,7 @@ const levelsVsNutrisense: HeadToHead = {
   faq: [
     {
       q: 'Are Levels and Nutrisense really the same hardware?',
-      a: 'Yes. Both ship Dexcom G7 — the same sensor with the same 10-day wear, 30-minute warm-up and ~8.2% MARD accuracy versus reference plasma glucose. The differentiation is entirely in the app, the coaching layer, and the price.',
+      a: 'Yes. Both ship Dexcom G7 — the same sensor with the same 10-day wear, 30-minute warm-up and the same accuracy. The differentiation is entirely in the app, the coaching layer, and the price.',
     },
     {
       q: 'Is the Nutrisense dietitian worth $80/month over Levels?',
@@ -55,7 +55,7 @@ Levels is the right shape for users who treat CGM as a self-experiment instrumen
 Nutrisense is the right shape when accountability is the value. A registered dietitian reviewing your data weekly, sending written summaries and answering questions in-app is the difference between sustained behavioural change and a $200 month of charts for many users. Pay the premium only if you will use the coach.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default levelsVsNutrisense

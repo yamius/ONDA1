@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const breathwrkVsOthershipVsWhm: HeadToHead = {
+const breathwrkVsOthershipVsWhm: HeadToHeadInput = {
   slug: 'breathwrk-vs-othership-vs-wim-hof-method-app',
   productASlug: 'breathwrk',
   productBSlug: 'othership',
@@ -10,7 +10,7 @@ const breathwrkVsOthershipVsWhm: HeadToHead = {
     'Breathwrk ($49/yr) vs Othership ($129.99/yr) vs Wim Hof Method app ($42.99/yr): library, evidence, community, cold exposure and price compared.',
   intro:
     'Three breathwork apps that define the 2026 category. Breathwrk — now part of Peloton — has the broadest structured library. Othership offers music-driven sessions with live classes. The Wim Hof Method app is the official single-method app, built around Wim Hof breathing and cold exposure.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Three different jobs, three right answers. Breathwrk for the broadest structured library; Othership for music-driven sessions and live classes; the Wim Hof Method app for the Wim Hof method specifically — and, at $42.99 a year, the cheapest subscription of the three.',
   bestForA:
@@ -35,7 +35,7 @@ const breathwrkVsOthershipVsWhm: HeadToHead = {
     },
     {
       q: 'Is Breathwrk or Othership better?',
-      a: 'Breathwrk wins on technique coverage, evidence and price ($49 vs $129.99 a year). Othership wins on production and live community classes. Pick Breathwrk for structured daily practice; pick Othership if the music and community are what keep you practising.',
+      a: 'Breathwrk wins on technique coverage and price ($49 vs $129.99 a year). Othership wins on production and live community classes. Pick Breathwrk for structured daily practice; pick Othership if the music and community are what keep you practising.',
     },
     {
       q: 'How much do Breathwrk, Othership and the Wim Hof Method app cost?',
@@ -107,7 +107,7 @@ Two techniques in these apps have solid trial data. In a Stanford randomised tri
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default breathwrkVsOthershipVsWhm

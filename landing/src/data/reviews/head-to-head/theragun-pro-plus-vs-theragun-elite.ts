@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const proPlusVsElite: HeadToHead = {
+const proPlusVsElite: HeadToHeadInput = {
   slug: 'theragun-pro-plus-vs-theragun-elite',
   productASlug: 'theragun-pro-plus',
   productBSlug: 'theragun-elite',
@@ -9,7 +9,7 @@ const proPlusVsElite: HeadToHead = {
     'Theragun PRO Plus vs Theragun Elite — flagship vs mid-tier Therabody. ONDA breaks down the $200 within-brand price gap.',
   intro:
     'Theragun PRO Plus and Theragun Elite are the two Therabody flagships users compare. Same Therabody app, same 16 mm amplitude, same 2-year warranty, same multi-grip handle. The defining difference is stall force — PRO Plus delivers 60 lbs, Elite delivers 40 lbs — at a $200 price gap.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Within-brand tier — same Therabody ecosystem. PRO Plus for top stall force + OLED display. Elite for 90% of the value at $200 less.',
   bestForA:
@@ -57,7 +57,7 @@ If you want the full Therabody ecosystem and 16 mm amplitude without paying for 
   relatedComparisonSlug: 'best-massage-guns-2026',
   publishOn: '2026-07-20',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-10',
 }
 
 export default proPlusVsElite

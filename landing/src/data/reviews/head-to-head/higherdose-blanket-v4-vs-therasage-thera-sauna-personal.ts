@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const higherdoseVsTherasage: HeadToHead = {
+const higherdoseVsTherasage: HeadToHeadInput = {
   slug: 'higherdose-blanket-v4-vs-therasage-thera-sauna-personal',
   productASlug: 'higherdose-blanket-v4',
   productBSlug: 'therasage-thera-sauna-personal',
@@ -9,7 +9,7 @@ const higherdoseVsTherasage: HeadToHead = {
     'HigherDose Sauna Blanket V4 vs Therasage TheraSauna Personal — side-by-side ONDA comparison of two consumer-wellness IR sauna options at different form factors.',
   intro:
     'HigherDose Blanket and Therasage TheraSauna Personal are the two consumer-wellness IR sauna options users compare at the mid-budget tier. Different form factors — HigherDose is a portable blanket, Therasage is a tent or cabin — but both target the same consumer-wellness biohacker audience.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Different form factors. HigherDose Blanket for portable IR exposure with no install. Therasage for full-spectrum tent / cabin IR at mid-tier pricing.',
   bestForA:
@@ -57,7 +57,7 @@ If you have install space and want full-spectrum IR (near + mid + far) at mid-ti
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default higherdoseVsTherasage

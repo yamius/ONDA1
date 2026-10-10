@@ -155,7 +155,7 @@ Slow, paced breathing — about five to seven breaths a minute, often with a lon
 
 If the deciding criterion is evidence, choose Nurosym. If it is daily wearability, Apollo Neuro. If you need prescribed clinical use for headache, gammaCore. If price is the constraint, Pulsetto, or Truvaga 350 for a neck device from gammaCore’s maker. The category is small, the differentiation is real, and the scoring above maps directly onto which trade-off matters to you.`,
   datePublished: '2026-05-21',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default bestVagusNerveStimulators2026

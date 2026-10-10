@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const bioLightPro900: ToolReview = {
+const bioLightPro900: ToolReviewInput = {
   slug: 'biolight-pro-900',
   name: 'BioLight Pro 900',
   brand: 'BioLight',
@@ -12,7 +12,6 @@ const bioLightPro900: ToolReview = {
     'Solid mid-size Joovv alternative — competent build, two-wavelength coverage, no standout differentiator at the price.',
   summary:
     'The BioLight Pro 900 sits in the same mid-tier as the PlatinumLED BIOMAX 600 — full-spectrum (600 nm + 660 nm + 830 nm + 850 nm), half-body coverage, third-party EMF testing in the same range as Joovv. The pitch is "Joovv alternative" without the brand premium; the execution is competent rather than category-leading. Reasonable mid-premium pick if you want a four-wavelength panel under $1,000.',
-  overallScore: 7.6,
   scores: [
     { criterionId: 'irradiance', score: 8.0, note: 'Manufacturer-claimed ~120 mW/cm² at 0"; ~50 mW/cm² at 6". Independent verification within 10–15% of stated figures.' },
     { criterionId: 'wavelengths', score: 8.5, note: 'Four wavelengths (600 + 660 + 830 + 850 nm) — narrower than the six-wavelength MitoPRO 1500X but standard photobiomodulation coverage.' },
@@ -73,7 +72,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "Who is the BioLight Pro 900 best for?", a: "The BioLight Pro 900 is best for buyers who want a competent four-wavelength red light panel under $1,000 without paying the Joovv brand premium. It fits those who value published EMF testing and included mounting hardware over brand recognition." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default bioLightPro900

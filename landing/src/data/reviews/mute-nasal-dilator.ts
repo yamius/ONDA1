@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const muteNasal: ToolReview = {
+const muteNasal: ToolReviewInput = {
   slug: 'mute-nasal-dilator',
   name: 'Mute Nasal Dilator',
   brand: 'Rhinomed',
@@ -12,11 +12,10 @@ const muteNasal: ToolReview = {
     'Best internal nasal stent — mechanically holds airway from inside, clinical published evidence, reusable. Initial adaptation curve is real.',
   summary:
     'Mute Nasal Dilator is the Rhinomed internal nasal stent — small flexible polymer stent inserted into the nostrils that mechanically holds the airway open from inside. Published clinical studies on airflow improvement, FDA registered, reusable for ~1 week per stent. Initial adaptation curve is real (first nights feel strange) and some committed users report a bigger improvement than with external strips (user reports, not tested).',
-  overallScore: 7.2,
   scores: [
     { criterionId: 'adhesion-comfort', score: 7.0, note: 'No adhesive — friction-fit inside nostrils. Initial adaptation curve real; most users habituate within 3-5 nights.' },
     { criterionId: 'breathing-mechanism', score: 8.5, note: 'Internal mechanical stent — holds airway from inside more directly than external strip leverage. Strongest mechanical mechanism in category.' },
-    { criterionId: 'evidence-grounding', score: 8.0, note: 'Rhinomed published clinical studies on airflow improvement. FDA registered. Best peer-reviewed evidence base in nasal dilators.' },
+    { criterionId: 'evidence-grounding', score: 6.5, note: 'Rhinomed has published airflow studies, but studies run or funded by the maker do not count as evidence in ONDA scores, and we found no independent trials of the device. FDA registration is neutral.' },
     { criterionId: 'form-factor', score: 6.5, note: 'Internal stent — invisible externally but inserted into nostrils. Comes in three sizes (S/M/L) requiring fit determination.' },
     { criterionId: 'material-safety', score: 7.5, note: 'Medical-grade polymer. Reusable ~1 week per stent. Nostril-irritation reports in subset of users — not all anatomies fit comfortably.' },
     { criterionId: 'value', score: 6.0, note: '~$25 for 3-pack × 1 week each = ~$1.20/night. More expensive per night than mouth tape or Breathe Right.' },
@@ -70,7 +69,7 @@ Choose Mute Nasal Dilator if you tolerate internal devices and want clinical-evi
     { q: "What are the downsides of the Mute Nasal Dilator?", a: "Mute has an adaptation curve, and the first nights feel strange. Internal insertion is not tolerated by everyone, a sizing kit is needed because it comes in three sizes, and its per-night cost is higher than external strips." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default muteNasal

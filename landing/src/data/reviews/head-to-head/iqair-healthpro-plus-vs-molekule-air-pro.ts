@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const iqairVsMolekule: HeadToHead = {
+const iqairVsMolekule: HeadToHeadInput = {
   slug: 'iqair-healthpro-plus-vs-molekule-air-pro',
   productASlug: 'iqair-healthpro-plus',
   productBSlug: 'molekule-air-pro',
@@ -9,7 +9,7 @@ const iqairVsMolekule: HeadToHead = {
     'IQAir HealthPro Plus vs Molekule Air Pro — clinical HyperHEPA H14 vs PECO photocatalytic premium. ONDA breaks down the premium air-purifier duel.',
   intro:
     'IQAir HealthPro Plus and Molekule Air Pro are the two premium air purifiers users compare. Both deliver multi-layer filtration at $1,000+ pricing. The defining difference: IQAir bets on deepest HEPA filtration (HyperHEPA H14); Molekule bets on PECO photocatalytic VOC destruction + premium smart features.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Clinical filtration vs PECO smart features. IQAir for deepest HEPA depth and multi-decade Swiss pedigree. Molekule for PECO VOC destruction + premium smart app.',
   bestForA:
@@ -56,7 +56,7 @@ If you want PECO photocatalytic VOC destruction + premium smart-feature integrat
   relatedComparisonSlug: 'best-air-purifiers-2026',
   publishOn: '2026-07-27',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-10',
 }
 
 export default iqairVsMolekule

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const mendi: ToolReview = {
+const mendi: ToolReviewInput = {
   slug: 'mendi',
   name: 'Mendi',
   brand: 'Mendi',
@@ -12,7 +12,6 @@ const mendi: ToolReview = {
     'Not EEG — fNIRS prefrontal training in a simple game-based form. Easy to use, narrowly focused.',
   summary:
     'Mendi is a Swedish-built headband that measures prefrontal cortex blood-oxygenation via fNIRS (functional near-infrared spectroscopy) rather than EEG, and feeds the signal into a game-based neurofeedback experience: keep the ball flying by sustaining attention to your forehead activity. Included here because it is in the consumer brain-training buying conversation even though the modality is different. Simpler than EEG, easier to learn, narrower in scope.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'signal-quality', score: 6.5, note: 'fNIRS optodes over the prefrontal cortex — measures blood-oxygenation changes rather than electrical activity. Single-region measurement, simpler than EEG but less informationally rich.' },
     { criterionId: 'training-content', score: 7.5, note: 'Game-based neurofeedback: a ball rises with sustained prefrontal activity. Simple programme, no meditation library, no sleep — pure focus training.' },

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const omiFullBodyMat: ToolReview = {
+const omiFullBodyMat: ToolReviewInput = {
   slug: 'omi-full-body-mat',
   name: 'OMI Full Body PEMF Mat',
   brand: 'OMI',
@@ -12,10 +12,9 @@ const omiFullBodyMat: ToolReview = {
     'Solid mid-tier PEMF mat — simple operation, accessible pricing. Not FDA-cleared for bone healing, no trials of the mat itself, no multi-modality stacking.',
   summary:
     'OMI Full Body Mat is the mid-tier PEMF reference — single-modality PEMF mat with simple preset operation and accessible pricing. OMI is not FDA-cleared for bone healing: medical bone-growth stimulators are prescription devices with their own trials, and a consumer mat using similar frequencies does not inherit their status or evidence. No multi-modality stacking, no trials of the mat itself. The right product for users who want straightforward PEMF mat use at $1,500–$2,000.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'field-strength', score: 7.5, note: 'Moderate field intensity; the maker documents usable continuous output.' },
-    { criterionId: 'waveform-evidence', score: 7.5, note: 'Uses common PEMF frequencies. OMI is not FDA-cleared for bone healing, and we found no trials of the mat itself.' },
+    { criterionId: 'waveform-evidence', score: 7.0, note: 'Uses common PEMF frequencies. OMI is not FDA-cleared for bone healing, and borrowed medical-device status earns no credit; we found no trials of the mat itself — 7.0, the score for PEMF devices without device-specific trials.' },
     { criterionId: 'build', score: 7.5, note: 'Solid mat construction, 5-year warranty. Multi-year reliability track record positive in user reviews.' },
     { criterionId: 'programmability', score: 6.5, note: 'Simple preset operation — limited parameter exposure compared to Healthy Wave. Black-box-ish controller.' },
     { criterionId: 'form-factor', score: 7.5, note: 'Full-body mat, single-modality PEMF. Optional pillow applicator at upsell. No coil/spot system.' },
@@ -69,7 +68,7 @@ Choose OMI Full Body Mat for straightforward mid-tier single-modality PEMF at ac
     { q: "What are the downsides of the OMI Full Body PEMF Mat?", a: "The OMI mat relies on black-box presets with limited parameter exposure, is single-modality with no IR or red light stacking, has no trials of the mat itself, and carries less brand recognition than Bemer or HigherDOSE. It is a simple, single-purpose mat." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default omiFullBodyMat

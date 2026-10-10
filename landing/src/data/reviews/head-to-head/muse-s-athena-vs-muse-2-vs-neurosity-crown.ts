@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const threeEeg: HeadToHead = {
+const threeEeg: HeadToHeadInput = {
   slug: 'muse-s-athena-vs-muse-2-vs-neurosity-crown',
   productASlug: 'muse-s-athena',
   productBSlug: 'muse-2',
@@ -10,7 +10,6 @@ const threeEeg: HeadToHead = {
     'Muse S Athena vs Muse 2 vs Neurosity Crown — three-way ONDA comparison of the top consumer EEG headsets. Premium fusion, entry meditation and developer-grade in one decision.',
   intro:
     'Muse S Athena, Muse 2 and Neurosity Crown are the three consumer EEG headsets most users actually shortlist together. The trade-offs are clean: Muse S Athena is the flagship with sensor fusion and sleep tracking, Muse 2 is the entry-tier meditation reference, Neurosity Crown is the developer-grade platform with raw EEG access.',
-  winnerSlug: 'muse-s-athena',
   verdict:
     'Muse S Athena wins for most users on content maturity and sensor fusion. Muse 2 wins on value at the entry tier. Neurosity Crown wins for developers and biohackers who want raw EEG.',
   bestForA:

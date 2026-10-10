@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const calmVsWakingUp: HeadToHead = {
+const calmVsWakingUp: HeadToHeadInput = {
   slug: 'calm-vs-waking-up',
   productASlug: 'calm',
   productBSlug: 'waking-up',
@@ -9,7 +9,7 @@ const calmVsWakingUp: HeadToHead = {
     'Calm vs Waking Up — the polished sleep-and-relaxation library vs the deepest, most philosophical meditation app. Broad, easy content vs serious depth for experienced meditators.',
   intro:
     'Calm and Waking Up sit at opposite ends of the meditation world. Calm is the polished mainstream app — the best sleep stories and a huge, beautifully produced library, easy for anyone. Waking Up is Sam Harris’s deep, secular-philosophy course: rigorous instruction that connects practice to the nature of mind, aimed at people who want to go further. It’s breadth-and-relaxation versus depth-and-rigour.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Relaxation and breadth vs serious depth. Calm wins on sleep content, a vast polished library and ease for anyone. Waking Up wins on depth, rigour and a coherent philosophical path — but it costs more and isn’t for beginners. Choose Calm to wind down and explore; Waking Up to go deep.',
   bestForA:
@@ -56,7 +56,7 @@ For the structured-learning middle ground, see [Headspace vs Calm](/reviews/vs/h
   relatedComparisonSlug: 'best-meditation-apps-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default calmVsWakingUp

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const threeSleep: HeadToHead = {
+const threeSleep: HeadToHeadInput = {
   slug: 'sleepio-vs-sleep-cycle-vs-pzizz',
   productASlug: 'sleepio',
   productBSlug: 'sleep-cycle',
@@ -10,7 +10,7 @@ const threeSleep: HeadToHead = {
     'Sleepio vs Sleep Cycle vs Pzizz — three-way ONDA comparison covering three different sleep-app approaches. Clinical CBT-I, sleep tracking and generative wind-down audio.',
   intro:
     'Sleepio, Sleep Cycle and Pzizz are three sleep apps users compare when they realise the category divides on intent rather than features. Sleepio is a clinical digital CBT-I (cognitive-behavioural therapy for insomnia) intervention with the strongest evidence in the consumer space. Sleep Cycle is a phone-based sleep tracker with a smart alarm. Pzizz is a generative-audio wind-down ritual. Three different problems, three different products.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Three different problems. Sleepio for clinically-diagnosed insomnia treatment. Sleep Cycle for tracking sleep with a smart alarm. Pzizz for falling asleep tonight without a programme.',
   bestForA:
@@ -68,7 +68,7 @@ If you want to track sleep — smart alarm, sleep-stage estimates, snoring detec
 If you want help getting to sleep tonight without a programme, Pzizz is the right shape. Generative dreamscape audio purpose-built for sleep onset — press-play and the experience does the rest. For clinical insomnia it is not the right tool; for nightly wind-down it is.`,
   relatedComparisonSlug: 'best-sleep-apps-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-10',
 }
 
 export default threeSleep

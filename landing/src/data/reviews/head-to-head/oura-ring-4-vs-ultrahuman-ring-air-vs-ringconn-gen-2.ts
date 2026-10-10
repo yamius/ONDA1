@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const threeRings: HeadToHead = {
+const threeRings: HeadToHeadInput = {
   slug: 'oura-ring-4-vs-ultrahuman-ring-air-vs-ringconn-gen-2',
   productASlug: 'oura-ring-4',
   productBSlug: 'ultrahuman-ring-air',
@@ -10,7 +10,6 @@ const threeRings: HeadToHead = {
     'Oura vs Ultrahuman vs RingConn — three-way ONDA comparison of the leading smart rings. Premium polish, lightest form factor and longest battery in one decision.',
   intro:
     'Oura Ring 4, Ultrahuman Ring Air and RingConn Gen 2 are the three smart rings non-diabetic biohackers most actually shortlist together. All three run similar optical sensors for overnight HRV and sleep; the differences are app maturity, form factor and ownership economics. Premium with a subscription versus subscription-free with trade-offs.',
-  winnerSlug: 'oura-ring-4',
   verdict:
     'Oura Ring 4 wins for app maturity and analytics depth. Ultrahuman wins on form factor and ecosystem integration. RingConn wins on battery life and total cost of ownership.',
   bestForA:
@@ -20,8 +19,8 @@ const threeRings: HeadToHead = {
   bestForC:
     'Choose RingConn Gen 2 if you want subscription-free smart-ring tracking with the longest battery in the category (12 days) and the lowest 3-year cost of ownership.',
   axes: [
-    { name: 'HRV measurement', winner: 'a', note: 'All three optical PPG with comparable accuracy ceilings. Oura’s pipeline is marginally cleanest in independent comparison.' },
-    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging is better-validated among consumer rings (manufacturer-funded studies); wearable sleep stages are still estimates. Ultrahuman and RingConn are competent but a tier behind on staging granularity.' },
+    { name: 'HRV measurement', winner: 'a', note: 'All three use optical PPG. Only the Oura Ring 4 has an independent overnight check against ECG; Ultrahuman has company-run preprints and RingConn a preprint (as of October 2026).' },
+    { name: 'Sleep tracking', winner: 'tie', note: 'Practically equal on accuracy — neither has an independent validation of sleep staging (as of October 2026). Oura’s sleep staging has been validated only in maker-funded studies (no independent check of the Ring 4); wearable sleep stages are still estimates. Ultrahuman and RingConn are competent but a tier behind on staging granularity.' },
     { name: 'App and analytics', winner: 'a', note: 'Oura: most mature after a decade. Ultrahuman: polished, newer, narrower. RingConn: clean but the least mature of the three.' },
     { name: 'Ring weight', winner: 'b', note: 'Ultrahuman Ring Air: 2.4g — the lightest in the category. RingConn Gen 2: ~3.0g. Oura: ~5g. Ultrahuman is noticeably more comfortable for sensitive users.' },
     { name: 'Battery life', winner: 'c', note: 'RingConn Gen 2: 10–12 days depending on size — the longest in the smart-ring category. Oura: about 4–7 days. Ultrahuman: ~6 days.' },
@@ -34,7 +33,7 @@ const threeRings: HeadToHead = {
   faq: [
     {
       q: 'Which smart ring is the best — Oura, Ultrahuman or RingConn?',
-      a: 'Oura wins for app maturity and analytics depth — the better-validated sleep staging among consumer rings (manufacturer-funded studies) and the most polished experience. Ultrahuman wins on ring weight and CGM ecosystem integration. RingConn wins on battery life and 3-year ownership cost. Pick on which axis matters most.',
+      a: 'Oura wins for app maturity and analytics depth — the most detailed sleep staging among consumer rings (validated only in maker-funded studies) and the most polished experience. Ultrahuman wins on ring weight and CGM ecosystem integration. RingConn wins on battery life and 3-year ownership cost. Pick on which axis matters most.',
     },
     {
       q: 'Is Oura worth the subscription compared to subscription-free rings?',
@@ -72,7 +71,7 @@ If ring weight matters more than anything else, Ultrahuman is the lightest smart
 If subscription-free is a hard requirement and you want the longest battery in the category, RingConn is the right shape. It is also the cheapest over three years by a meaningful margin. The trade is a slightly less mature app and shallower sleep analytics than Oura.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default threeRings

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const hoogaHg500: ToolReview = {
+const hoogaHg500: ToolReviewInput = {
   slug: 'hooga-hg500',
   name: 'Hooga HG500',
   brand: 'Hooga',
@@ -12,7 +12,6 @@ const hoogaHg500: ToolReview = {
     'The budget biohacker reference — solid build, honest specs, about a fifth of the cost of Joovv with most of the basic spec intact.',
   summary:
     'The Hooga HG500 is the panel that turned consumer red-light therapy into a sub-$400 category. Two-wavelength coverage (660 + 850 nm), 100 5W LEDs, independently-tested irradiance close to claimed figures, EMF measurements in the same range as panels three times the price. The trade is hardware refinement — less polished aluminium, no exotic wavelengths, smaller community than Joovv or Mito Red — but on the criteria that matter (irradiance, EMF, wavelengths) it punches well above its price tier.',
-  overallScore: 7.5,
   scores: [
     { criterionId: 'irradiance', score: 8.0, note: 'Hooga now states 94 mW/cm² at 6" on the official product page (checked 2026-10-01). Earlier independent meter readings tracked the stated figures closely — honest specs at the price.' },
     { criterionId: 'wavelengths', score: 7.0, note: 'Two wavelengths (660 + 850 nm) — the basic biohacker default. No 630, 810, 830 or 940 nm.' },
@@ -72,7 +71,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "Hooga HG500 vs Joovv: which should I buy?", a: "The Hooga costs about a fifth of Joovv ($1,699) while keeping most of the basic spec: honest irradiance and low EMF. Joovv adds a more premium build, more LEDs and a modular system. Choose Hooga for value, Joovv if you want the category-reference build." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default hoogaHg500

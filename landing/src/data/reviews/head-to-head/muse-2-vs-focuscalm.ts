@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const muse2VsFocuscalm: HeadToHead = {
+const muse2VsFocuscalm: HeadToHeadInput = {
   slug: 'muse-2-vs-focuscalm',
   productASlug: 'muse-2',
   productBSlug: 'focuscalm',
@@ -9,7 +9,6 @@ const muse2VsFocuscalm: HeadToHead = {
     'Muse 2 vs FocusCalm — side-by-side ONDA comparison of two consumer EEG headbands. Mature 4-channel meditation reference versus single-channel content-driven focus training.',
   intro:
     'Muse 2 and FocusCalm are the two consumer EEG headbands buyers compare at the entry-tier price point. Both run polished apps with strong content libraries, both sit under $250, both ship dry EEG electrodes. The structural difference is signal density: Muse 2 carries four EEG channels, FocusCalm carries one. The decision comes down to whether multi-channel signal density matters for what you actually want to do.',
-  winnerSlug: 'muse-2',
   verdict:
     'Muse 2 wins overall — more channels, more mature ecosystem, broader meditation content. FocusCalm wins specifically on focus-and-calm training content at a slightly lower price.',
   bestForA:

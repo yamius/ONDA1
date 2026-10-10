@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ouraVsRingconn: HeadToHead = {
+const ouraVsRingconn: HeadToHeadInput = {
   slug: 'oura-ring-4-vs-ringconn-gen-2',
   productASlug: 'oura-ring-4',
   productBSlug: 'ringconn-gen-2',
@@ -9,7 +9,7 @@ const ouraVsRingconn: HeadToHead = {
     'Oura Ring 4 vs RingConn Gen 2 — side-by-side ONDA comparison of premium smart-ring incumbent versus the subscription-free challenger with the longest battery.',
   intro:
     'Oura Ring 4 and RingConn Gen 2 are the two smart rings users compare when subscription economics become the deciding factor. Oura is the polished category incumbent with the deepest analytics and a small monthly membership; RingConn Gen 2 is the subscription-free challenger with a 12-day battery and a meaningfully lower 3-year cost. Both run similar optical sensors; the wrappers and economics differ.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Depends on what you value. Oura Ring 4 wins on app maturity and analytics depth. RingConn Gen 2 wins on battery, subscription-free model and total cost of ownership.',
   bestForA:
@@ -17,8 +17,8 @@ const ouraVsRingconn: HeadToHead = {
   bestForB:
     'Choose RingConn Gen 2 if you want subscription-free smart-ring tracking with the longest battery in the category, at the lowest 3-year total cost.',
   axes: [
-    { name: 'HRV measurement', winner: 'a', note: 'Both optical PPG with comparable accuracy ceilings. Oura’s pipeline is marginally cleaner in independent comparison.' },
-    { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging is better-validated among consumer rings (manufacturer-funded studies); wearable sleep stages are still estimates. RingConn is competent but a tier behind on staging granularity.' },
+    { name: 'HRV measurement', winner: 'a', note: 'Both use optical PPG. Oura Ring 4 has one independent overnight check against ECG; RingConn has only a preprint, so their precision cannot be compared directly (as of October 2026).' },
+    { name: 'Sleep tracking', winner: 'tie', note: 'Practically equal on accuracy — neither has an independent validation of sleep staging (as of October 2026). Oura’s sleep staging has been validated only in maker-funded studies (no independent check of the Ring 4); wearable sleep stages are still estimates. RingConn is competent but a tier behind on staging granularity.' },
     { name: 'App maturity', winner: 'a', note: 'Oura: decade of iteration. RingConn: newer, cleaner-but-shallower. Oura wins decisively.' },
     { name: 'Battery life', winner: 'b', note: 'RingConn Gen 2: 10–12 days depending on size. Oura Ring 4: about 4–7 days. RingConn lasts roughly two to three times as long — the longest in the smart-ring category.' },
     { name: 'Subscription requirement', winner: 'b', note: 'RingConn: no subscription. Oura: $5.99/month membership required for full features. RingConn wins outright.' },
@@ -29,7 +29,7 @@ const ouraVsRingconn: HeadToHead = {
   faq: [
     {
       q: 'Is Oura Ring 4 worth twice the price of RingConn Gen 2 over three years?',
-      a: 'Only if you actually use the deeper analytics. Oura’s sleep model and Readiness score are the most developed in the category, with better-validated sleep staging (manufacturer-funded studies); the monthly membership is the cost of admission to that depth. If you would mostly use the ring as a passive HRV tracker, RingConn delivers most of that for half the price.',
+      a: 'Only if you actually use the deeper analytics. Oura’s sleep model and Readiness score are the most developed in the category, with detailed sleep staging (validated only in maker-funded studies); the monthly membership is the cost of admission to that depth. If you would mostly use the ring as a passive HRV tracker, RingConn delivers most of that for half the price.',
     },
     {
       q: 'Does RingConn really have a 12-day battery?',
@@ -57,7 +57,7 @@ If app maturity, the deepest consumer sleep model and Readiness scoring are the 
 If subscription-free is a hard requirement, you want the longest battery in the smart-ring category and the lowest 3-year total cost of ownership matters, RingConn is the right shape. The trade is a slightly less mature app and shallower sleep analytics.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default ouraVsRingconn

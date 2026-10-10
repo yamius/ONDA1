@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const pod5VsClimate360: HeadToHead = {
+const pod5VsClimate360: HeadToHeadInput = {
   slug: 'eight-sleep-pod-5-vs-sleep-number-climate360',
   productASlug: 'eight-sleep-pod-5',
   productBSlug: 'sleep-number-climate360',
@@ -9,7 +9,7 @@ const pod5VsClimate360: HeadToHead = {
     'Eight Sleep Pod 5 vs Sleep Number Climate360 — the biohacker smart-bed system vs the mainstream smart bed with climate built in. ONDA on cooling, tracking, adjustability and cost.',
   intro:
     'The Eight Sleep Pod 5 and the Sleep Number Climate360 are the two premium ways to buy a temperature-regulating smart bed in 2026, and they come from different worlds. Eight Sleep is the biohacker system — a dual-zone water-cooled cover (plus a top-down blanket on the Ultra), integrated HRV tracking and adaptive Autopilot software layered onto your bed. Sleep Number is the mainstream mattress brand, with climate and firmness built into the mattress itself and its mature SleepIQ tracking. The choice is aggressive, data-first climate vs an all-in-one adjustable smart bed.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Biohacker climate layer vs mainstream smart bed. The Eight Sleep Pod 5 wins on cooling aggressiveness, HRV depth and adaptive software; the Sleep Number Climate360 wins on being one integrated bed with adjustable firmness and DualAir comfort, no cover to add. Both are premium-priced. Pick by whether you want the sharpest recovery data or a complete adjustable smart bed.',
   bestForA:
@@ -58,7 +58,7 @@ For the subscription-free climate-only route, see [Pod 5 vs ChiliPad Dock Pro](/
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default pod5VsClimate360

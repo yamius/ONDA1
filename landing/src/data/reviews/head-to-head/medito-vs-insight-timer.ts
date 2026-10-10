@@ -1,4 +1,4 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
 /**
  * Medito vs Insight Timer — the two best free meditation apps, head to head.
@@ -8,7 +8,7 @@ import type { HeadToHead } from '../types'
  * free trial (insighttimer.com/member-plus): courses, offline listening, high-quality audio.
  * Evidence-based, not hands-on.
  */
-const meditoVsInsightTimer: HeadToHead = {
+const meditoVsInsightTimer: HeadToHeadInput = {
   slug: 'medito-vs-insight-timer',
   productASlug: 'medito',
   productBSlug: 'insight-timer',
@@ -17,7 +17,7 @@ const meditoVsInsightTimer: HeadToHead = {
     'Medito ($0, no paywall ever) is the cleanest free meditation app; Insight Timer (free, Member Plus $60/yr) wins on sheer library size.',
   intro:
     'Medito and Insight Timer are the two meditation apps you can genuinely use without paying. Medito is run by a nonprofit: every session is free, with no ads, no account and no premium tier. Insight Timer offers the world’s largest free library of guided meditations, with an optional Member Plus subscription for courses and offline listening. This comparison is evidence-based: ONDA has not tested either app hands-on.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'No single winner: Medito is the better pick if you want a fully free, private app with nothing to upgrade, while Insight Timer is the better pick if you want the largest free library and do not mind an optional paid tier.',
   bestForA:
@@ -78,7 +78,7 @@ Studies of app-based mindfulness show modest benefits for stress and wellbeing o
 Both apps make paying optional. **Medito** is the cleanest, most private free choice; **Insight Timer** gives you far more choice for free and a cheap upgrade if you want courses. For the wider field, see [our meditation app ranking](/reviews/compare/best-meditation-apps-2026) or [Calm vs Insight Timer](/reviews/vs/calm-vs-insight-timer).`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-10-04',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default meditoVsInsightTimer

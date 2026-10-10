@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const bonCharge: ToolReview = {
+const bonCharge: ToolReviewInput = {
   slug: 'bon-charge-red-light-panel',
   name: 'Bon Charge Red Light Therapy Panel',
   brand: 'Bon Charge',
@@ -12,7 +12,6 @@ const bonCharge: ToolReview = {
     'Wellness-positioned panel with broad consumer reach in EU/AU markets. Competent build, premium pricing, fewer technical specs disclosed than biohacker-focused brands.',
   summary:
     'Bon Charge is the wellness-positioned red-light brand most prominent in EU and Australian markets — sold alongside the company’s blue-blocker glasses and grounding sheets. The Red Light Therapy Panel range covers half-body sizes with two-wavelength coverage (660 + 850 nm). Build quality is solid; the technical disclosure (independent EMF testing, flicker rates) is less detailed than biohacker-targeted brands like Joovv or PlatinumLED. Strong consumer brand, less technical depth.',
-  overallScore: 7.4,
   scores: [
     { criterionId: 'irradiance', score: 7.5, note: 'For the current half-body Max panel (400 LEDs), Bon Charge states over 142 mW/cm² without giving a distance. Less independently re-verified than biohacker-targeted brands.' },
     { criterionId: 'wavelengths', score: 7.5, note: 'Two-wavelength coverage (660 + 850 nm) — standard biohacker default, no exotic additions like PlatinumLED or GembaRed.' },
@@ -73,7 +72,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "Who is the Bon Charge Red Light Therapy Panel best for?", a: "The Bon Charge panel is best for EU and Australian buyers who want a wellness-positioned red light panel from an established consumer brand. It suits those who prefer consistent build quality and brand presence over detailed technical specs." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default bonCharge

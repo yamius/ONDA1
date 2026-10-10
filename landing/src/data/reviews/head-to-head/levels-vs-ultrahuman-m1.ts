@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const levelsVsUltrahumanM1: HeadToHead = {
+const levelsVsUltrahumanM1: HeadToHeadInput = {
   slug: 'levels-vs-ultrahuman-m1',
   productASlug: 'levels',
   productBSlug: 'ultrahuman-m1',
@@ -9,15 +9,15 @@ const levelsVsUltrahumanM1: HeadToHead = {
     'Levels vs Ultrahuman M1 — side-by-side ONDA comparison of two biohacker CGM programmes. Deep glucose-only insights versus cross-signal glucose + HRV + sleep ecosystem.',
   intro:
     'Levels and Ultrahuman M1 are the two biohacker CGM programmes most often compared after Levels and Nutrisense. Different sensors — Dexcom Stelo, G7 platform (Levels) vs Abbott Libre 3, or Abbott Lingo in the US via M2 Live (Ultrahuman) — but the deeper difference is product philosophy. Levels is a glucose-focused insight engine; Ultrahuman is a CGM module inside a broader ecosystem that includes its smart rings and cross-signal analytics.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Depends on what you want. Levels for the deepest glucose-only insight engine on the best CGM hardware. Ultrahuman M1 for glucose composed with HRV, sleep and recovery from an Ultrahuman ring.',
   bestForA:
-    'Choose Levels if CGM is the central instrument and you want the deepest meal-impact analysis on Dexcom Stelo (G7 platform) — the most accurate sensor in the consumer category.',
+    'Choose Levels if CGM is the central instrument and you want the deepest meal-impact analysis on Dexcom Stelo (G7 platform).',
   bestForB:
     'Choose Ultrahuman M1 if you already own (or plan to own) an Ultrahuman ring and want glucose data composed with HRV, sleep and recovery in one app.',
   axes: [
-    { name: 'Sensor accuracy', winner: 'a', note: 'Levels ships Dexcom Stelo (G7 platform, MARD ~8.2%). Ultrahuman M1 uses Abbott Libre 3 (MARD ~9%), or Abbott Lingo in the US. Levels has the more accurate sensor.' },
+    { name: 'Sensor accuracy', winner: 'tie', note: 'Practically equal: maker accuracy figures do not count as evidence, and in an independent head-to-head study (Eichenlaub et al. 2025) the Dexcom G7 platform and FreeStyle Libre 3 were similarly accurate (MARD about 12% vs 11.6% against a lab reference).' },
     { name: 'Sensor wear time', winner: 'a', note: 'Levels (Dexcom Stelo): 15 days. Ultrahuman M1 (Libre 3 / Lingo): 14 days. Near-identical change cadence, slight Levels edge.' },
     { name: 'Glucose insight depth', winner: 'a', note: 'Levels has the deeper meal-impact engine — AUC decomposition, food-by-food ranking history, time-in-range views. Ultrahuman is competent but glucose-specific depth is shallower.' },
     { name: 'Cross-signal integration', winner: 'b', note: 'Ultrahuman M1 composes glucose with HRV, sleep and recovery from an Ultrahuman ring in one timeline — unique cross-modal view. Levels integrates with Oura via Apple Health but it is bolt-on.' },
@@ -29,11 +29,11 @@ const levelsVsUltrahumanM1: HeadToHead = {
   faq: [
     {
       q: 'Should I pick Levels or Ultrahuman M1?',
-      a: 'Levels if CGM is the deciding job and you want the deepest meal-impact analysis on the most accurate sensor platform (Dexcom Stelo, built on G7). Ultrahuman M1 if you already own (or plan to own) an Ultrahuman ring and want glucose composing with HRV and sleep in one app.',
+      a: 'Levels if CGM is the deciding job and you want the deepest meal-impact analysis on Dexcom Stelo (built on G7). Ultrahuman M1 if you already own (or plan to own) an Ultrahuman ring and want glucose composing with HRV and sleep in one app.',
     },
     {
       q: 'Is Dexcom Stelo/G7 (Levels) better than Libre 3 (Ultrahuman)?',
-      a: 'Marginally. Dexcom G7 sits at MARD ~8.2% versus Libre 3 at MARD ~9% in independent comparison. The gap is consistent but small — most non-diabetic biohacker use cases are well-served by either.',
+      a: 'Not on accuracy. The makers report different figures (about 8.2% MARD for G7, about 9% for Libre 3), but in an independent head-to-head study (Eichenlaub et al. 2025) the two were similarly accurate. Most non-diabetic biohacker use cases are well-served by either.',
     },
     {
       q: 'Can I use Ultrahuman M1 without an Ultrahuman ring?',
@@ -57,7 +57,7 @@ If you treat CGM as the primary instrument — running structured meal experimen
 If you already own an Ultrahuman ring or plan to, M1 is the right shape because glucose composed with HRV and sleep on one timeline is a meaningful cross-signal view nothing else in the consumer market offers. As a standalone CGM programme it is the wrong choice — go for Levels or Stelo instead.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default levelsVsUltrahumanM1

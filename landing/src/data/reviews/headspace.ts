@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const headspace: ToolReview = {
+const headspace: ToolReviewInput = {
   slug: 'headspace',
   name: 'Headspace',
   brand: 'Headspace',
@@ -12,7 +12,6 @@ const headspace: ToolReview = {
     'The best app for actually learning to meditate — structured courses and clear teaching, with a free tier that is barely a sample.',
   summary:
     'Headspace is the strongest app here for learning to meditate from scratch. Its courses are well-structured, the teaching is clear and beginner-friendly, and it has put real research behind its claims. The weak point is the free tier — essentially a product tour.',
-  overallScore: 7.8,
   scores: [
     { criterionId: 'content-library', score: 8.0, note: 'A large library covering meditation, breathing, focus, sleep and many life topics.' },
     { criterionId: 'teaching', score: 8.5, note: 'The clearest, most structured teaching here — built to take a complete beginner from zero.' },
@@ -20,7 +19,7 @@ const headspace: ToolReview = {
     { criterionId: 'app-experience', score: 8.5, note: 'A friendly, polished app — the signature animations make the practice approachable.' },
     { criterionId: 'free-tier', score: 5.0, note: 'Free content is essentially a product tour; a practice needs the subscription.' },
     { criterionId: 'value', score: 7.0, note: 'Around 70 USD a year — reasonable for the structured course library.' },
-    { criterionId: 'evidence', score: 8.0, note: 'Headspace has funded and published clinical research on its programs — strong for the category.' },
+    { criterionId: 'evidence', score: 7.5, note: 'Headspace has been tested in independent university trials; studies Headspace funded itself do not count as evidence in ONDA scores. Still strong for the category.' },
   ],
   pros: [
     'The best structured path for beginners',
@@ -74,7 +73,7 @@ The science of what meditation actually does at the nervous-system level.
     { q: "Headspace vs Insight Timer: which is better?", a: "Headspace is better for structured learning, with clear courses that guide beginners step by step. Insight Timer is better for breadth and value, with a far larger library and a genuinely usable free tier. Pick Headspace to learn the basics; pick Insight Timer if you want variety." },
   ],
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-10-10',
 }
 
 export default headspace

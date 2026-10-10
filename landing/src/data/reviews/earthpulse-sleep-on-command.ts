@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const earthpulse: ToolReview = {
+const earthpulse: ToolReviewInput = {
   slug: 'earthpulse-sleep-on-command',
   name: 'EarthPulse Sleep on Command',
   brand: 'EarthPulse',
@@ -12,10 +12,9 @@ const earthpulse: ToolReview = {
     'Sleep-marketed PEMF — under-mattress install, Schumann and delta settings, mid-tier pricing. Well built, but no controlled trials show better sleep.',
   summary:
     'EarthPulse Sleep on Command is the sleep-niche PEMF device — sits under your mattress, runs Schumann-resonance (7.83 Hz) and delta-band frequency settings overnight. The maker markets it for sleep onset and deep sleep; we found no controlled human trials showing better sleep from these settings. Single applicator, single use case, accessible $899 pricing.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'field-strength', score: 7.0, note: 'Moderate field intensity tuned for overnight low-dose exposure. Designed for hours-of-use sleep protocols, not high-intensity recovery sessions.' },
-    { criterionId: 'waveform-evidence', score: 7.5, note: 'EarthPulse markets Schumann (7.83 Hz) and delta settings for sleep. We found no controlled human trials showing better sleep from these settings, and none of the device itself.' },
+    { criterionId: 'waveform-evidence', score: 7.0, note: 'EarthPulse markets Schumann (7.83 Hz) and delta settings for sleep; Schumann settings earn no credit. We found no controlled human trials showing better sleep from these settings, and none of the device itself — 7.0, the score for PEMF devices without device-specific trials.' },
     { criterionId: 'build', score: 7.5, note: 'Solid build for under-mattress install. Multi-decade EarthPulse brand pedigree in sleep-focused PEMF. 1-year warranty.' },
     { criterionId: 'programmability', score: 7.0, note: 'Preset protocols the maker labels by sleep goal (sleep onset, deep sleep, recovery). Limited parameter customisation beyond presets.' },
     { criterionId: 'form-factor', score: 7.5, note: 'Under-mattress install — set once, runs overnight. Convenient for overnight use. Not suitable for active recovery sessions.' },
@@ -74,7 +73,7 @@ Choose EarthPulse if you want overnight PEMF — under-mattress install, Schuman
     { q: "Who is the EarthPulse Sleep on Command best for?", a: "EarthPulse is best for people who want overnight PEMF under the mattress rather than daytime sessions. The maker markets it for sleep onset and deep sleep, but this is not shown in controlled trials, so it is not a treatment for insomnia." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default earthpulse

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const sleepRightStrips: ToolReview = {
+const sleepRightStrips: ToolReviewInput = {
   slug: 'sleep-strips-by-sleepright',
   name: 'SleepRight Nasal Breathe Aid',
   brand: 'SleepRight',
@@ -12,7 +12,6 @@ const sleepRightStrips: ToolReview = {
     'Best budget internal nasal dilator — reusable cone design at sub-Mute pricing. Less clinical evidence than Mute; functional alternative for cost-conscious users.',
   summary:
     'SleepRight Nasal Breathe Aid is the budget internal nasal dilator — reusable polymer cone inserts that hold the nostrils open from inside, at sub-Mute pricing. Multi-year SleepRight brand pedigree. Less clinical evidence base than Rhinomed Mute but a functional cost-conscious alternative for users wanting internal mechanical dilation without premium pricing.',
-  overallScore: 5.5,
   scores: [
     { criterionId: 'adhesion-comfort', score: 6.5, note: 'No adhesive — friction-fit cone design. Initial adaptation similar to Mute; comfort varies by anatomy.' },
     { criterionId: 'breathing-mechanism', score: 7.5, note: 'Internal mechanical dilation. Less refined than Mute\'s polymer stent but the core mechanism is sound.' },
@@ -71,7 +70,7 @@ Choose SleepRight Nasal Breathe Aid for budget internal nasal dilation. For prem
     { q: "What are the downsides of the SleepRight Nasal Breathe Aid?", a: "SleepRight is less anatomically optimised than Mute, and its cone design is less refined than Mute's polymer stent. It has limited peer-reviewed clinical validation, and some users report moderate nostril irritation, so comfort varies from person to person." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default sleepRightStrips

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const levelsVsZoeVsNutrisense: HeadToHead = {
+const levelsVsZoeVsNutrisense: HeadToHeadInput = {
   slug: 'levels-vs-zoe-vs-nutrisense',
   productASlug: 'levels',
   productBSlug: 'zoe',
@@ -10,18 +10,18 @@ const levelsVsZoeVsNutrisense: HeadToHead = {
     'Levels vs Zoe vs Nutrisense — three-way ONDA comparison of three nutrition-focused CGM programmes. Continuous insight engine, multi-biomarker science fusion and registered-dietitian coaching in one decision.',
   intro:
     'Levels, Zoe and Nutrisense are the three CGM programmes nutrition-focused users compare when expert layers and methodological depth matter. Three different philosophies on the same input (CGM data): Levels bets on app intelligence and continuous depth, Zoe runs a multi-biomarker scientific reset, Nutrisense pairs continuous CGM with a registered dietitian.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Three different products. Levels for the deepest ongoing CGM insight engine. Zoe for science-backed personalised nutrition. Nutrisense for human dietitian coaching on continuous data.',
   bestForA:
-    'Choose Levels if you treat CGM as a self-experimentation instrument and want the deepest food-by-food insight engine on the most accurate sensor platform (Dexcom Stelo, built on G7).',
+    'Choose Levels if you treat CGM as a self-experimentation instrument and want the deepest food-by-food insight engine on Dexcom Stelo (built on G7).',
   bestForB:
     'Choose Zoe if you want personalised nutrition grounded in published science — CGM + gut microbiome + blood biomarkers fused into a single food-ranking model from the PREDICT studies.',
   bestForC:
     'Choose Nutrisense if accountability through a registered dietitian working with your data weekly is what makes the programme work for you.',
   axes: [
     { name: 'Continuous CGM use', winner: 'c', note: 'Nutrisense: continuous Dexcom G7 for as long as you subscribe. Levels: memberships include 1–2 months of CGM a year, extra months as an add-on. Zoe: 2-week Libre phase only. Nutrisense wins.' },
-    { name: 'Sensor accuracy', winner: 'tie', note: 'Levels (Stelo) and Nutrisense (G7) both run the Dexcom G7 platform (MARD ~8.2%). Zoe runs Libre (MARD ~9–11%). Levels and Nutrisense tie on hardware.' },
+    { name: 'Sensor accuracy', winner: 'tie', note: 'Levels (Stelo) and Nutrisense (G7) both run the Dexcom G7 platform; Zoe runs an older 2-week Abbott Libre. Maker accuracy figures do not count as evidence in ONDA scores, and no independent study compares Zoe’s sensor with the G7 head-to-head, so this axis is a tie.' },
     { name: 'App insight depth', winner: 'a', note: 'Levels has the deepest meal-impact engine — AUC decomposition, food-by-food ranking, time-in-range views. Nutrisense competent; Zoe lighter on glucose but unique multi-biomarker.' },
     { name: 'Human coaching', winner: 'c', note: 'Nutrisense: registered dietitian for every subscriber. Levels and Zoe: app-only by default. Nutrisense wins on human layer.' },
     { name: 'Scientific lineage', winner: 'b', note: 'Zoe: PREDICT-1 and PREDICT-2 studies from King’s College London (Tim Spector), published in Nature Medicine. Levels has a credible medical board; Nutrisense has RD involvement.' },
@@ -57,7 +57,7 @@ Three nutrition-focused CGM programmes that look adjacent but solve different jo
 
 ## When is Levels the right pick?
 
-If you treat CGM as a self-experimentation instrument — running meal protocols, tracking time-in-range, iterating week by week — Levels is the right shape. The deepest app insights on the most accurate sensor; the membership ($399–$1,329 a year, plus extra CGM months for continuous wear) is the cost.
+If you treat CGM as a self-experimentation instrument — running meal protocols, tracking time-in-range, iterating week by week — Levels is the right shape. The deepest app insights on the Dexcom G7 platform; the membership ($399–$1,329 a year, plus extra CGM months for continuous wear) is the cost.
 
 ## When is Zoe the right pick?
 
@@ -69,7 +69,7 @@ If accountability through a registered dietitian working through your data weekl
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default levelsVsZoeVsNutrisense

@@ -1,4 +1,4 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
 /**
  * Omnilux Contour Face vs HigherDOSE Red Light Face Mask — clinical reference vs lifestyle mask.
@@ -7,7 +7,7 @@ import type { HeadToHead } from '../types'
  * + 830 nm (24 mW/cm²), 50 mW/cm² total claimed, 132 diodes, 10 or 20-min sessions,
  * described as FDA-cleared, brand 8-week self-reported trial. Evidence-based, not hands-on.
  */
-const omniluxContourFaceVsHigherdoseRedLightFaceMask: HeadToHead = {
+const omniluxContourFaceVsHigherdoseRedLightFaceMask: HeadToHeadInput = {
   slug: 'omnilux-contour-face-vs-higherdose-red-light-face-mask',
   productASlug: 'omnilux-contour-face',
   productBSlug: 'higherdose-red-light-face-mask',
@@ -16,7 +16,6 @@ const omniluxContourFaceVsHigherdoseRedLightFaceMask: HeadToHead = {
     'Omnilux Contour Face ($395) has the stronger clinical record; HigherDOSE ($349) is cheaper, claims higher irradiance and offers 20-minute sessions.',
   intro:
     'Omnilux Contour Face and the HigherDOSE Red Light Face Mask are two flexible silicone LED masks that use almost the same red and near-infrared light. Omnilux comes from a brand whose devices are used in dermatology clinics and has the longer clinical record; HigherDOSE is the popular lifestyle mask from the maker of the sauna blanket and PEMF mat. This comparison is evidence-based: ONDA has not tested either mask hands-on.',
-  winnerSlug: 'omnilux-contour-face',
   verdict:
     'Omnilux Contour Face is the safer pick for most buyers because it pairs the same red and near-infrared light with a longer clinical record, while HigherDOSE is a reasonable cheaper alternative with higher claimed output.',
   bestForA:
@@ -75,7 +74,7 @@ Red and near-infrared light therapy has small clinical trials showing modest imp
 **Omnilux Contour Face** is the better default: the same light with a stronger clinical record for $46 more. **HigherDOSE** makes sense if price, a 20-minute option or the brand ecosystem matter more to you than published evidence.`,
   relatedComparisonSlug: 'best-red-light-face-masks-2026',
   datePublished: '2026-10-04',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default omniluxContourFaceVsHigherdoseRedLightFaceMask

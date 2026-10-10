@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const eightSleepVsChilipad: HeadToHead = {
+const eightSleepVsChilipad: HeadToHeadInput = {
   slug: 'eight-sleep-pod-4-vs-chilipad-dock-pro',
   productASlug: 'eight-sleep-pod-4',
   productBSlug: 'chilipad-dock-pro',
@@ -9,7 +9,7 @@ const eightSleepVsChilipad: HeadToHead = {
     'Eight Sleep Pod 4 vs ChiliPad Dock Pro — side-by-side ONDA comparison of the two category-defining smart sleep-climate systems. Integrated HRV tracking + subscription vs subscription-free dual-zone water cooling.',
   intro:
     'Eight Sleep Pod 4 and Sleepme ChiliPad Dock Pro are the two systems users compare when picking premium smart sleep-climate hardware in 2026. Both deliver dual-zone water cooling/heating with comparable climate range. The category-defining difference is the wrapper: Eight Sleep bundles integrated HRV and sleep-stage tracking behind an ongoing Autopilot subscription, ChiliPad ships clean hardware with no subscription and no built-in tracking.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Subscription preference decides. Eight Sleep Pod 4 for integrated HRV/sleep tracking and Autopilot climate scheduling — accept the ongoing membership. ChiliPad Dock Pro for the same water-cooled climate without subscription and without tracking (pair with an Oura or Whoop you already wear).',
   bestForA:
@@ -56,7 +56,7 @@ If you already wear an Oura or Whoop and you want the climate hardware alone wit
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-06-15',
   datePublished: '2026-05-27',
-  dateModified: '2026-05-27',
+  dateModified: '2026-10-10',
 }
 
 export default eightSleepVsChilipad

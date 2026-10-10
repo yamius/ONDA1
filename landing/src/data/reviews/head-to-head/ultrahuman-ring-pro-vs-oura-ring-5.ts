@@ -1,15 +1,15 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ringProVsOura5: HeadToHead = {
+const ringProVsOura5: HeadToHeadInput = {
   slug: 'ultrahuman-ring-pro-vs-oura-ring-5',
   productASlug: 'ultrahuman-ring-pro',
   productBSlug: 'oura-ring-5',
   title: 'Ultrahuman Ring Pro vs Oura Ring 5 (2026)',
   description:
-    'Ultrahuman Ring Pro vs Oura Ring 5 — the subscription-free flagship with a ~15-day battery vs the accuracy leader with a mandatory membership. ONDA on which smart ring to buy.',
+    'Ultrahuman Ring Pro vs Oura Ring 5 — the subscription-free flagship with a ~15-day battery vs the best-supported ring line with a mandatory membership. ONDA on which smart ring to buy.',
   intro:
     'This is the headline smart-ring decision of 2026: Ultrahuman’s redesigned, US-available Ring Pro against Oura’s flagship Ring 5. The Ring Pro is subscription-free with a category-leading ~15-day battery; the Ring 5 comes from the best-validated ring line (earlier Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) with the best app, but charges a mandatory membership. It comes down to owning it outright vs paying for the reference experience.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'No subscription and huge battery vs accuracy and app depth. The Ultrahuman Ring Pro wins on cost model (one-time $479, no fee) and battery (~15 days); the Oura Ring 5 wins on the best-supported ring line (the Ring 5 itself is not validated), sensors and the best app — for $399 plus a membership. Pick by whether you refuse a subscription or want the reference ring.',
   bestForA:
@@ -19,7 +19,7 @@ const ringProVsOura5: HeadToHead = {
   axes: [
     { name: 'Subscription & cost', winner: 'a', note: 'Ring Pro: one-time $479, no subscription. Oura Ring 5: $399 + ~$6/month for full data. Over a few years the Ring Pro is cheaper and you owe nothing ongoing.' },
     { name: 'Battery', winner: 'a', note: 'Ring Pro: ~15 days — best in the category. Oura Ring 5: ~6–9 days. Not close.' },
-    { name: 'Sleep & HRV accuracy', winner: 'b', note: 'Oura leads on validated sleep staging and overnight HRV with upgraded Ring 5 sensors. The Ring Pro is strong and improved over the Ring Air, but Oura remains the accuracy reference.' },
+    { name: 'Sleep & HRV accuracy', winner: 'tie', note: 'Practically equal: neither the Ring Pro nor the Ring 5 has an independent validation of sleep staging or overnight HRV (as of October 2026). Earlier Oura generations have the better independent overnight evidence; Ultrahuman has only company-run preprints.' },
     { name: 'App & ecosystem', winner: 'b', note: 'Oura’s app is the most polished and explanatory in the category, with the widest integrations. Ultrahuman’s is capable and metabolic-leaning but less refined.' },
     { name: 'Track record', winner: 'b', note: 'Oura has years of proven hardware reliability. The Ring Pro is new, and Ultrahuman’s previous Ring Air had widely reported battery failures — the redesign targets exactly that, but it is not yet proven long-term.' },
     { name: 'Processing & features', winner: 'a', note: 'The Ring Pro adds an on-ring dual-core processor and a real-time "Jade" biointelligence layer — more onboard capability than the Ring 5.' },
@@ -56,7 +56,7 @@ For the previous, cheaper Oura, see [Oura Ring 5 vs Oura Ring 4](/reviews/vs/our
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default ringProVsOura5

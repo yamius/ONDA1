@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ringconnVsUltrahuman: HeadToHead = {
+const ringconnVsUltrahuman: HeadToHeadInput = {
   slug: 'ringconn-gen-2-vs-ultrahuman-ring-air',
   productASlug: 'ringconn-gen-2',
   productBSlug: 'ultrahuman-ring-air',
@@ -9,7 +9,6 @@ const ringconnVsUltrahuman: HeadToHead = {
     'RingConn Gen 2 ($299, 10–12-day battery) vs Ultrahuman Ring Air (~$349, banned from US sale since Oct 2025). Two no-subscription rings compared.',
   intro:
     'RingConn Gen 2 and Ultrahuman Ring Air are two subscription-free smart rings that buyers compare when they want most of an Oura without a monthly fee. Both track overnight HRV and sleep well. The real differences are battery life, reliability, ring weight, ecosystem — and the fact that the Ring Air can no longer be sold new in the US.',
-  winnerSlug: 'ringconn-gen-2',
   verdict:
     'RingConn Gen 2 wins for most buyers: a longer battery, a cleaner reliability record, a lower price and US availability. Ultrahuman Ring Air only makes sense outside the US, if a very light ring or the Ultrahuman M1 CGM ecosystem is what you want.',
   bestForA:
@@ -98,7 +97,7 @@ Newer generation: [RingConn Gen 3 vs RingConn Gen 2](/reviews/vs/ringconn-gen-3-
 - [Oura: ITC patent ruling against Ultrahuman](https://ouraring.com/blog/oura-itc-case/)`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default ringconnVsUltrahuman

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const autosleep: ToolReview = {
+const autosleep: ToolReviewInput = {
   slug: 'autosleep',
   name: 'AutoSleep',
   brand: 'Tantsissa',
@@ -12,7 +12,6 @@ const autosleep: ToolReview = {
     'The purist Apple Watch sleep tracker — accurate, automatic and subscription-free — but it only measures sleep, it does not help you get it.',
   summary:
     'AutoSleep is the purist Apple Watch sleep tracker. It tracks automatically and accurately, it is detailed, and it is a rare one-time purchase with no subscription. The trade-off is total focus: it measures sleep and does nothing else — no wind-down content at all.',
-  overallScore: 6.5,
   scores: [
     { criterionId: 'tracking-accuracy', score: 8.5, note: 'Automatic, detailed Apple Watch tracking — accurate, with a devoted following among watch owners.' },
     { criterionId: 'wind-down-content', score: 3.0, note: 'None at all — no sounds, no stories; AutoSleep does not try to help you fall asleep.' },
@@ -75,7 +74,7 @@ The sleep biology behind what these apps measure and the protocols they support.
     { q: "Who is AutoSleep best for?", a: "AutoSleep is best for Apple Watch owners who want accurate, automatic sleep data and no subscription. It suits data-focused users who are happy with a purist tracker and do not need soundscapes, stories or other relaxation content." },
   ],
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-10-10',
 }
 
 export default autosleep

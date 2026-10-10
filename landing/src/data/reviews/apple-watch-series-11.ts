@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const appleWatchSeries11: ToolReview = {
+const appleWatchSeries11: ToolReviewInput = {
   slug: 'apple-watch-series-11',
   name: 'Apple Watch Series 11',
   brand: 'Apple',
@@ -12,7 +12,6 @@ const appleWatchSeries11: ToolReview = {
     'An outstanding all-round smartwatch, but a casual HRV tool — it spot-checks rather than tracks.',
   summary:
     'The Apple Watch Series 11 is the most capable device in this comparison and the only one with no subscription. As a dedicated HRV tracker, though, it is the weakest of the three: it records HRV in irregular background spot-checks rather than a structured overnight protocol.',
-  overallScore: 7.2,
   scores: [
     { criterionId: 'hrv-accuracy', score: 6.0, note: 'HRV is captured in irregular background spot-checks, not a continuous overnight protocol — a sparse, uneven record.' },
     { criterionId: 'sensor', score: 8.5, note: 'Strong hardware: an optical sensor paired with a genuine single-lead ECG.' },

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const dreamRecovery: ToolReview = {
+const dreamRecovery: ToolReviewInput = {
   slug: 'dream-recovery-mouth-tape',
   name: 'Dream Recovery Mouth Tape',
   brand: 'Dream Recovery',
@@ -12,11 +12,10 @@ const dreamRecovery: ToolReview = {
     'Best silicone-gel premium mouth tape — reusable, gentler skin contact, premium positioning. Subscription-style pricing without subscription lock-in.',
   summary:
     'Dream Recovery Mouth Tape is the premium silicone-gel entry — reusable silicone strip with gentler skin contact than acrylic-adhesive alternatives. Hypoallergenic, latex-free, multi-use per strip. Mid-premium pricing without subscription lock-in. Best fit for users with sensitive skin who reject Hostage Tape acrylic adhesive but want a premium brand experience.',
-  overallScore: 7.7,
   scores: [
     { criterionId: 'adhesion-comfort', score: 8.0, note: 'Silicone-gel adhesive is gentler on skin than acrylic; good adhesion on clean skin. Less beard-grip than Hostage Tape — silicone gel doesn\'t hold stubble.' },
     { criterionId: 'breathing-mechanism', score: 7.5, note: 'Full-seal design. No porous center port. Designed for users committed to nasal-only breathing.' },
-    { criterionId: 'evidence-grounding', score: 6.5, note: 'Brand-funded research and biohacker testimonials. No FDA registration. Less regulatory standing than Somnifix.' },
+    { criterionId: 'evidence-grounding', score: 6.0, note: 'Brand-funded research (which does not count as evidence in ONDA scores) and biohacker testimonials; no independent trials of the tape. On par with Hostage Tape.' },
     { criterionId: 'form-factor', score: 8.0, note: 'Single-piece strip with reusable silicone-gel construction — 2–3 uses per strip in practice. Reduces per-night cost meaningfully.' },
     { criterionId: 'material-safety', score: 9.0, note: 'Silicone-gel adhesive — among the gentlest in category. Hypoallergenic, latex-free, low skin-reaction reports. Best fit for sensitive skin.' },
     { criterionId: 'value', score: 7.0, note: '~$30 for 10 strips × ~3 uses = ~$1/night effective. Premium pricing offset by reusability.' },
@@ -71,7 +70,7 @@ Choose Dream Recovery for sensitive skin + premium silicone-gel mouth tape. For 
     { q: "Dream Recovery vs Hostage Tape: which is better?", a: "Dream Recovery is better for sensitive skin; Hostage Tape is better for beards. Dream Recovery's reusable, hypoallergenic silicone-gel adhesive is gentler on skin, while Hostage Tape's acrylic adhesive is more beard-friendly. Dream Recovery is also reusable 2-3 times per strip." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default dreamRecovery

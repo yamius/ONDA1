@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const theTapeCo: ToolReview = {
+const theTapeCo: ToolReviewInput = {
   slug: 'the-tape-co',
   name: 'The Tape Co.',
   brand: 'The Tape Co.',
@@ -12,10 +12,9 @@ const theTapeCo: ToolReview = {
     'Best X-pattern mouth tape — cross design leaves the mouth corners uncovered, indie biohacker positioning. Newer brand without multi-year track record.',
   summary:
     'The Tape Co. is the indie biohacker entry with the distinctive X-pattern design — two adhesive strips crossed over the mouth, leaving the corners of the mouth uncovered; this has not been tested as a safety feature. Newer brand (~2024 launch), modest brand recognition vs Hostage Tape but a distinctive design.',
-  overallScore: 6.0,
   scores: [
     { criterionId: 'adhesion-comfort', score: 6.5, note: 'Mid-tier acrylic adhesive — adequate grip on clean skin. X-pattern reduces total adhesive area per night. Less beard-friendly than Hostage Tape.' },
-    { criterionId: 'breathing-mechanism', score: 8.0, note: 'X-pattern cross design — leaves the corners of the mouth uncovered. This has not been tested as a safety feature; if sleep apnea is possible, see a doctor first.' },
+    { criterionId: 'breathing-mechanism', score: 7.5, note: 'X-pattern cross design — leaves the corners of the mouth uncovered. This has not been tested as a safety feature, so the design earns no extra credit: the same mechanism as other mouth tapes. If sleep apnea is possible, see a doctor first.' },
     { criterionId: 'evidence-grounding', score: 5.5, note: 'Indie brand without FDA registration or peer-reviewed studies. The X-pattern has not been tested as a safety feature.' },
     { criterionId: 'form-factor', score: 7.5, note: 'X-pattern cross design — distinctive in category. Two-piece application slightly higher friction than single-piece.' },
     { criterionId: 'material-safety', score: 7.0, note: 'Hypoallergenic adhesive. Latex-free. Skin-reaction reports moderate. X-pattern reduces adhesive contact area, helping sensitive skin.' },
@@ -70,7 +69,7 @@ Choose The Tape Co. if you want an X-pattern design that leaves the mouth corner
     { q: "What are the downsides of The Tape Co.?", a: "The Tape Co. has no FDA registration and, as a newer brand, lacks a multi-year track record. Its two-piece application is higher friction than single-piece strips, and it costs mid-tier without premium brand polish." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default theTapeCo

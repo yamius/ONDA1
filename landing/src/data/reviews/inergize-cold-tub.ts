@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const inergizeColdTub: ToolReview = {
+const inergizeColdTub: ToolReviewInput = {
   slug: 'inergize-cold-tub',
   name: 'Inergize Cold Tub',
   brand: 'Inergize',
@@ -12,7 +12,6 @@ const inergizeColdTub: ToolReview = {
     'A mid-tier tub that competes on configurability — buy the tub now, add a chiller later if needed.',
   summary:
     'Inergize sells an insulated tub that can run either as an ice-fill plunge or with their separate chiller unit added. The modular approach reduces upfront cost and lets users upgrade as practice solidifies. Build is solid; chiller (sold separately) is competent but less powerful than Plunge’s integrated unit.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'chiller-capacity', score: 6.5, note: 'Chiller sold separately. The optional chiller is competent but lower-power than Plunge’s 1 HP unit — slower recovery, weaker summer performance.' },
     { criterionId: 'build', score: 7.5, note: 'Insulated tub with stronger insulation than Cold Pod, lighter than Plunge. 1-year tub warranty, separate warranty on chiller.' },
@@ -108,7 +107,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { q: "Is a chiller worth it, or can I use ice?", a: "Ice is fine for testing the habit, but it takes several bags per session and the cost adds up. If you plunge three or more times a week, a chiller holds the temperature daily and saves the effort. Inergize's Elite Chiller covers 37 to 104°F and is sold alone ($2,690) or bundled with the tub ($2,990 on sale)." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default inergizeColdTub

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const ultrahumanM1: ToolReview = {
+const ultrahumanM1: ToolReviewInput = {
   slug: 'ultrahuman-m1',
   name: 'Ultrahuman M1',
   brand: 'Ultrahuman',
@@ -12,9 +12,8 @@ const ultrahumanM1: ToolReview = {
     'The best ecosystem play — glucose data composed with HRV, sleep and recovery from the Ultrahuman Ring in one app.',
   summary:
     'Ultrahuman M1 is the CGM arm of the Ultrahuman platform — the same app that runs the Ultrahuman rings. Outside the US it uses Abbott FreeStyle Libre sensors; in the US, Ultrahuman launched M2 Live on 18 June 2026, built on Abbott’s over-the-counter Lingo sensor with no prescription needed. The differentiator is integration: meals, glucose curves, sleep, HRV, movement and recovery live on one timeline. Strong for Ultrahuman ring owners; weaker as a standalone CGM.',
-  overallScore: 7.5,
   scores: [
-    { criterionId: 'sensor-accuracy', score: 8.5, note: 'Abbott sensors throughout: FreeStyle Libre (Libre 3 MARD ~9%) outside the US, Abbott Lingo (14-day wear, Libre-based) in the US via M2 Live. Marginally less accurate than Dexcom G7 in independent comparison.' },
+    { criterionId: 'sensor-accuracy', score: 8.5, note: 'Abbott sensors throughout: FreeStyle Libre 3 outside the US, Abbott Lingo (14-day wear, Libre-based) in the US via M2 Live. In an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate.' },
     { criterionId: 'insights', score: 7.5, note: 'Solid meal-impact analysis plus the unique cross-signal view: glucose composed with HRV, sleep and recovery on the same timeline.' },
     { criterionId: 'coaching', score: 6.5, note: 'Mostly AI-driven (Jade AI insights). Plans include access to performance coaches, not dietitians or clinicians.' },
     { criterionId: 'app-integration', score: 8.0, note: 'Native integration with Ultrahuman rings for HRV/sleep/recovery; Apple Health, Google Fit and food-log support. The richest single-app stack in the category.' },
@@ -29,7 +28,7 @@ const ultrahumanM1: ToolReview = {
   ],
   cons: [
     'Most of the extra value needs an Ultrahuman ring — and Ring Air is no longer sold in the US (Ring Pro is)',
-    'Abbott sensors trail Dexcom G7 slightly on accuracy',
+    '60-minute sensor warm-up (Dexcom G7: 30 minutes)',
     'Coaching is AI plus performance coaches — no dietitian or clinician',
     'US Lingo version is for adults 18+ not on insulin only',
   ],
@@ -52,7 +51,7 @@ You stick a small sensor on the back of your upper arm. A tiny filament under th
 
 ## What does the evidence say?
 
-Abbott’s Libre-family sensors are well validated in people with diabetes; Libre 3 shows a mean absolute error of about 9% against lab glucose. For people **without** diabetes, the evidence is weaker. Glucose in healthy people stays in a narrow range, and small rises after meals are normal. There is no strong proof yet that chasing flatter curves improves long-term health. A CGM is best used as a feedback tool for habits, not as a health verdict.
+Abbott’s Libre-family sensors are well validated in people with diabetes; the maker reports a mean absolute error of about 9% for Libre 3 against lab glucose (maker figures do not count as evidence in ONDA scores), and in an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate. For people **without** diabetes, the evidence is weaker. Glucose in healthy people stays in a narrow range, and small rises after meals are normal. There is no strong proof yet that chasing flatter curves improves long-term health. A CGM is best used as a feedback tool for habits, not as a health verdict.
 
 ## How much does Ultrahuman M1 cost?
 
@@ -67,7 +66,7 @@ If you also want the ring, the [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pr
 
 ## What are the downsides of Ultrahuman M1?
 
-Almost all the differentiation depends on also owning an Ultrahuman ring. As a standalone CGM, it is an Abbott sensor with a competent app — Abbott’s own Lingo app is cheaper per sensor, and Dexcom-based Stelo is slightly more accurate. Coaching is mostly AI. The US Lingo version is only for adults 18+ who do not use insulin.
+Almost all the differentiation depends on also owning an Ultrahuman ring. As a standalone CGM, it is an Abbott sensor with a competent app — Abbott’s own Lingo app is cheaper per sensor, and Dexcom-based Stelo is cheaper on subscription. Coaching is mostly AI. The US Lingo version is only for adults 18+ who do not use insulin.
 
 ## Who should buy Ultrahuman M1 — and who should not?
 
@@ -98,7 +97,7 @@ The metabolic biology these programmes surface — and the protocols the data un
   ],
   relatedSlugs: ['ultrahuman-ring-air', 'levels', 'lingo', 'veri'],
   faq: [
-    { q: "How accurate is the Ultrahuman M1 CGM?", a: "Ultrahuman M1 uses Abbott sensors: FreeStyle Libre outside the US (Libre 3 has a MARD of about 9%) and Abbott Lingo in the US via M2 Live. Both offer 14-day, calibration-free wear. It scores 8.5/10 on sensor accuracy, marginally behind the Dexcom G7, for an overall ONDA score of 7.5/10." },
+    { q: "How accurate is the Ultrahuman M1 CGM?", a: "Ultrahuman M1 uses Abbott sensors: FreeStyle Libre outside the US and Abbott Lingo in the US via M2 Live. Both offer 14-day, calibration-free wear. It scores 8.5/10 on sensor accuracy, the same as Dexcom G7 programmes, because in an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate. Its overall ONDA score is 7.5/10." },
     { q: "How much does Ultrahuman M1 cost?", a: "In the US, Ultrahuman’s CGM is now sold as M2 Live with Abbott’s Lingo sensor: a monthly subscription from $99 or $129 for a single 14-day sensor, no prescription needed (June 2026 pricing). The Ultrahuman ring is optional and sold separately; Ring Pro costs $479." },
     { q: "Is Ultrahuman M1 worth it as a standalone CGM?", a: "Ultrahuman M1 is best for users already inside the Ultrahuman ecosystem, not as a standalone CGM. Its differentiator is composing glucose with HRV, sleep and recovery on one timeline, which needs an Ultrahuman ring. Standalone, Lingo or Stelo give similar glucose data for the same or less money." },
     { q: "Is Ultrahuman M1 worth it?", a: "Yes, if you own an Ultrahuman ring and want glucose next to sleep and HRV in one app. For glucose alone it is not better than Stelo or Abbott’s own Lingo app, and for people without diabetes a CGM is a habit-feedback tool, not proof of better health." },
@@ -107,7 +106,7 @@ The metabolic biology these programmes surface — and the protocols the data un
   ],
 
   datePublished: '2026-05-21',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default ultrahumanM1

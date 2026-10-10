@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const flowNeuroscience: ToolReview = {
+const flowNeuroscience: ToolReviewInput = {
   slug: 'flow-neuroscience',
   name: 'Flow Neuroscience',
   brand: 'Flow Neuroscience',
@@ -12,7 +12,6 @@ const flowNeuroscience: ToolReview = {
     'Not EEG — clinical tDCS for depression, with the strongest regulatory and trial backing in this list.',
   summary:
     'Flow Neuroscience is a Swedish-built tDCS (transcranial direct-current stimulation) headset paired with a structured cognitive-behavioural programme app, indicated for major depression. CE-marked as a Class IIa medical device in the EU and prescribed within the UK NHS in some pathways; in the US it received FDA premarket approval (PMA P230024, 8 December 2025) for moderate-to-severe major depression in adults who are not treatment-resistant, and has been available by prescription only (in person or via telehealth) since September 2026. Not EEG — Flow stimulates, not measures — but lives in the consumer brain-training buying conversation. The clinical reference for take-home tDCS in this list.',
-  overallScore: 6.7,
   scores: [
     { criterionId: 'signal-quality', score: 7.5, note: 'tDCS — clinical-grade transcranial direct-current stimulation over the dorsolateral prefrontal cortex. Disclosed stimulation parameters (2 mA, 30-minute sessions); CE-marked Class IIa medical device.' },
     { criterionId: 'training-content', score: 8.0, note: 'Structured 8-week behavioural-therapy programme paired with stimulation sessions — the strongest content scaffolding in this list because it is built around a clinical protocol.' },

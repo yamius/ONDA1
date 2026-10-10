@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const pulsetto: ToolReview = {
+const pulsetto: ToolReviewInput = {
   slug: 'pulsetto',
   name: 'Pulsetto',
   brand: 'Pulsetto',
@@ -12,9 +12,8 @@ const pulsetto: ToolReview = {
     'The most accessible consumer tVNS device — strong on protocol variety and price, lighter on independent clinical evidence.',
   summary:
     'Pulsetto is a Lithuanian-made neck-worn tVNS collar that stimulates the cervical vagal branches transcutaneously through two electrode pads. It runs four guided programmes — sleep, stress, anxiety reduction, pain reduction — through a companion app. CE-marked as a wellness device. The clearest entry point into consumer tVNS at the price; the evidence base is mostly company-sponsored and early.',
-  overallScore: 7.4,
   scores: [
-    { criterionId: 'evidence', score: 6.0, note: 'CE-marked. Mostly company-sponsored studies and one published pilot on HRV/stress; thinner independent evidence than Nurosym or gammaCore.' },
+    { criterionId: 'evidence', score: 5.0, note: 'CE-marked. Mostly company-sponsored studies, which do not count as evidence in ONDA scores, plus one published pilot on HRV/stress.' },
     { criterionId: 'mechanism', score: 7.5, note: 'Cervical transcutaneous VNS via twin neck electrodes — targets the cervical vagal branches. Documented pulse parameters in the app.' },
     { criterionId: 'protocols', score: 8.5, note: 'Four distinct guided programmes plus a custom mode. The strongest protocol variety in this list.' },
     { criterionId: 'comfort', score: 7.5, note: 'Lightweight collar; daily 4–20 minute sessions tolerated well. Gel/saline pad maintenance is the main friction.' },
@@ -74,7 +73,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "Pulsetto vs Nurosym: which is better?", a: "Pulsetto is better for price and variety: $269 with four guided programmes and session logging. Nurosym is better for evidence, with the deepest peer-reviewed research base in consumer tVNS, but it costs €700 (about $820) and runs a single programme." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default pulsetto

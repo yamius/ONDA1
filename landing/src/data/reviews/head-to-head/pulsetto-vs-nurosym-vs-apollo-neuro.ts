@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const pulsettoVsNurosymVsApollo: HeadToHead = {
+const pulsettoVsNurosymVsApollo: HeadToHeadInput = {
   slug: 'pulsetto-vs-nurosym-vs-apollo-neuro',
   productASlug: 'pulsetto',
   productBSlug: 'nurosym',
@@ -10,7 +10,7 @@ const pulsettoVsNurosymVsApollo: HeadToHead = {
     'Pulsetto vs Nurosym vs Apollo Neuro — three-way ONDA comparison of the leading consumer vagus devices. Cervical tVNS, auricular tVNS and vibrotactile in one decision.',
   intro:
     'Pulsetto, Nurosym and Apollo Neuro are the three consumer vagus-modulation devices most users actually shortlist together. They sit on the same shelf but use three different mechanisms — cervical electrical tVNS (Pulsetto), auricular electrical tVNS (Nurosym), and vibrotactile modulation (Apollo). The decision is not about brand; it is about which mechanism fits your life.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Three different jobs. Pulsetto for guided daily-use cervical sessions, Nurosym for clinical-grade auricular evidence, Apollo Neuro for all-day passive vagal modulation.',
   bestForA:
@@ -72,7 +72,7 @@ If you want vagal modulation that runs in your day without ceremony — at work,
 Apollo as the daily passive baseline plus Pulsetto or Nurosym for targeted acute sessions is the most common multi-device configuration among serious users. The mechanisms hit different pathways, so the effects stack rather than redundant.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default pulsettoVsNurosymVsApollo

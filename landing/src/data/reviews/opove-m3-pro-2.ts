@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const opoveM3: ToolReview = {
+const opoveM3: ToolReviewInput = {
   slug: 'opove-m3-pro-2',
   name: 'OPOVE M3 Pro 2',
   brand: 'OPOVE',
@@ -12,7 +12,6 @@ const opoveM3: ToolReview = {
     'Best mid-budget value — 55 lbs stall force at $179 closes most of the spec gap to premium tier. No app; brand younger than Theragun / Hyperice.',
   summary:
     'OPOVE M3 Pro 2 is the mid-budget value reference — 55 lbs stall force, 15 mm amplitude, quiet brushless motor, 6 attachments, $179. Spec parity with premium brands at sub-$200 pricing. No app integration; brand recognition lower than Theragun / Hyperice. The right buy for users who want premium-tier percussion without paying premium-brand markup.',
-  overallScore: 7.5,
   scores: [
     { criterionId: 'stall-force-amplitude', score: 8.0, note: '55 lbs stall force + 15 mm amplitude. Close to premium-tier specs at fraction of price.' },
     { criterionId: 'build-attachments', score: 7.5, note: 'Brushless motor, 6 attachments included, 1-year warranty. Build quality solid; brand pedigree thinner than premium brands.' },
@@ -70,7 +69,7 @@ Choose OPOVE M3 Pro 2 for mid-budget premium-tier percussion. For higher stall f
     { q: "What are the downsides of the OPOVE M3 Pro 2?", a: "It has no app or smart features, lower brand recognition than Theragun or Hyperice, a 1-year warranty versus Therabody's 2 years, and a standard single grip without extra versatility. You are paying for raw specs, battery life and quiet operation rather than brand or smart features." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-07-20',
+  dateModified: '2026-10-10',
 }
 
 export default opoveM3

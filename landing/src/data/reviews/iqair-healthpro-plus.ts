@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const iqairHealthPro: ToolReview = {
+const iqairHealthPro: ToolReviewInput = {
   slug: 'iqair-healthpro-plus',
   name: 'IQAir HealthPro Plus',
   brand: 'IQAir',
@@ -12,7 +12,6 @@ const iqairHealthPro: ToolReview = {
     'The clinical reference — HyperHEPA H14 filtration captures 99.5% of particles at 0.003 microns, multi-decade brand pedigree, used in COVID-19 hospital deployments.',
   summary:
     'IQAir HealthPro Plus is the medical-grade reference — Swiss-engineered HyperHEPA H14 filter capturing 99.5% of particles down to 0.003 microns (vs True HEPA H13 at 0.3 microns), heavy V5-Cell activated-carbon module for VOC capture, multi-stage 1125 sq ft coverage. Used in hospital deployments and clinical contexts. Premium pricing reflects clinical-tier filtration; nothing else in consumer category matches the spec.',
-  overallScore: 8.8,
   scores: [
     { criterionId: 'filtration-technology', score: 9.8, note: 'HyperHEPA H14 — captures 99.5% at 0.003 microns (vs True HEPA H13 at 99.97% at 0.3 microns). Deepest consumer filtration spec. V5-Cell carbon module for VOC.' },
     { criterionId: 'cadr-coverage', score: 8.5, note: 'AHAM-verified CADR. 1125 sq ft coverage at 2 ACH; ~450 sq ft at 5 ACH. Conservative manufacturer stating.' },
@@ -71,7 +70,7 @@ Choose IQAir HealthPro Plus for clinical-grade HEPA filtration — accept lack o
     { q: "What are the downsides of the IQAir HealthPro Plus?", a: "It costs $1,099 and has no app, no sensors and no auto mode, so control is manual only. It is also loud on high speed, at around 65 dB. You are paying for filtration depth and multi-decade Swiss pedigree, not convenience features." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default iqairHealthPro

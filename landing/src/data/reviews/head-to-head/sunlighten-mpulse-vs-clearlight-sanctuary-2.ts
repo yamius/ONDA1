@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const sunlightenVsClearlight: HeadToHead = {
+const sunlightenVsClearlight: HeadToHeadInput = {
   slug: 'sunlighten-mpulse-vs-clearlight-sanctuary-2',
   productASlug: 'sunlighten-mpulse',
   productBSlug: 'clearlight-sanctuary-2',
@@ -9,7 +9,6 @@ const sunlightenVsClearlight: HeadToHead = {
     'Sunlighten mPulse vs Clearlight Sanctuary 2 — side-by-side ONDA comparison of the two premium full-spectrum IR cabin saunas.',
   intro:
     'Sunlighten mPulse and Clearlight Sanctuary 2 are the two premium full-spectrum IR cabin saunas serious buyers shortlist. Both ship credibly broad-spectrum IR delivery, premium cabin construction, low-EMF design and long warranties. Sunlighten is the wavelength-control reference; Clearlight is the Jacuzzi-backed lifetime-warranty alternative.',
-  winnerSlug: 'sunlighten-mpulse',
   verdict:
     'Sunlighten mPulse wins on wavelength rigour and FDA Class II registration. Clearlight Sanctuary 2 wins on its Jacuzzi-backed lifetime warranty, but now costs more (~$7,299 vs ~$6,000).',
   bestForA:
@@ -57,7 +56,7 @@ If a Jacuzzi-backed lifetime warranty for comparable full-spectrum IR is worth t
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-05-25',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default sunlightenVsClearlight

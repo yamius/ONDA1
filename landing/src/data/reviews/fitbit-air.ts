@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const fitbitAir: ToolReview = {
+const fitbitAir: ToolReviewInput = {
   slug: 'fitbit-air',
   name: 'Fitbit Air',
   brand: 'Google',
@@ -12,7 +12,6 @@ const fitbitAir: ToolReview = {
     'The cheapest way into continuous, all-day HRV without a subscription wall — a screenless WHOOP-style pod at a fifth of the price, with accuracy still unproven.',
   summary:
     'Launched May 2026 at $99.99, the Fitbit Air is a screenless, pebble-sized pod that tracks HRV, SpO2, breathing rate, skin temperature and sleep 24/7 for about a week per charge — and, unusually for Fitbit, the core metrics (HR, sleep, HRV, SpO2, AFib) work without Premium. It is the most affordable serious entry to continuous HRV, but it is a brand-new optical wrist device with no independent validation yet, and data export stays inside Google’s ecosystem.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'hrv-accuracy', score: 6.5, note: 'Optical PPG on the wrist, tracked 24/7 — plausible for trends, but this is a brand-new device with no independent HRV-validation data yet.' },
     { criterionId: 'sensor', score: 6.5, note: 'PPG heart sensor plus red/IR for SpO2 and breathing rate, skin-temperature and a 3-axis accelerometer/gyro. No ECG.' },
@@ -70,7 +69,7 @@ Choose the Fitbit Air if you want the cheapest honest way to start watching a 24
     { q: "Does the Fitbit Air have GPS?", a: "Not built-in — it uses your phone’s connected GPS. It is a screenless $99 pod built around 24/7 HRV and sleep, the cheapest honest entry to continuous HRV." },
   ],
   datePublished: '2026-09-12',
-  dateModified: '2026-09-12',
+  dateModified: '2026-10-10',
 }
 
 export default fitbitAir

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const platinumledVsBioLight: HeadToHead = {
+const platinumledVsBioLight: HeadToHeadInput = {
   slug: 'platinumled-biomax-600-vs-biolight-pro-900',
   productASlug: 'platinumled-biomax-600',
   productBSlug: 'biolight-pro-900',
@@ -9,7 +9,6 @@ const platinumledVsBioLight: HeadToHead = {
     'PlatinumLED BIOMAX 600 vs BioLight Pro 900 — side-by-side ONDA comparison of two mid-premium red light panels. Seven-wavelength established brand versus four-wavelength value pick.',
   intro:
     'PlatinumLED BIOMAX 600 and BioLight Pro 900 are the two panels users compare in the $900–$1,050 mid-premium tier. Both ship competent build and verified EMF testing; the structural differences are wavelength breadth, brand maturity and a $150 price gap. Pick on whether spectrum breadth or value is the deciding criterion.',
-  winnerSlug: 'platinumled-biomax-600',
   verdict:
     'PlatinumLED BIOMAX 600 wins on spectrum breadth and brand maturity. BioLight Pro 900 wins on price by $150 with a comparable four-wavelength spec.',
   bestForA:
@@ -57,7 +56,7 @@ If you want the broadest wavelength coverage in the mid-tier, published third-pa
 If you want competent four-wavelength mid-size coverage at the lowest mid-tier price and brand maturity is not deciding, BioLight is the right shape. Solid value play at $899.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default platinumledVsBioLight

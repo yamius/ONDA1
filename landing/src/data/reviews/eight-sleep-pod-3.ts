@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const eightSleepPod3: ToolReview = {
+const eightSleepPod3: ToolReviewInput = {
   slug: 'eight-sleep-pod-3',
   name: 'Eight Sleep Pod 3',
   brand: 'Eight Sleep',
@@ -12,7 +12,6 @@ const eightSleepPod3: ToolReview = {
     'Pod 4 capability at Pod 3 prices — solid value when discounted, slightly less rigorous climate range than Pod 4.',
   summary:
     'Eight Sleep Pod 3 is the previous-generation Pod still available at lower prices, especially when Eight Sleep discounts inventory. Climate range slightly narrower than Pod 4 (less aggressive recovery), same HRV/tracking model, same Autopilot subscription. Worth considering when discounted.',
-  overallScore: 7.8,
   scores: [
     { criterionId: 'climate-range', score: 8.5, note: 'Solid dual-zone range; slightly less aggressive than Pod 4 in peak summer heat. Same Autopilot framework.' },
     { criterionId: 'build', score: 8.0, note: 'Pod 3 cover and hub. Discontinued for new production but still sold from inventory. 2-year warranty if bought new.' },
@@ -74,7 +73,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
     { q: "Eight Sleep Pod 3 vs Pod 4: which is better?", a: "The Pod 4 is better for climate performance; the Pod 3 is better for value when discounted. Both share the app, tracking and Autopilot, but the Pod 3 has a slightly narrower climate range and costs about $1,800 versus $4,000." },
   ],
   datePublished: '2026-06-15',
-  dateModified: '2026-06-15',
+  dateModified: '2026-10-10',
 }
 
 export default eightSleepPod3

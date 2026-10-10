@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const pillow: ToolReview = {
+const pillow: ToolReviewInput = {
   slug: 'pillow',
   name: 'Pillow',
   brand: 'Pillow',
@@ -12,7 +12,6 @@ const pillow: ToolReview = {
     'A detailed, well-presented sleep tracker for the Apple Watch — excellent if you are on iOS, irrelevant if you are not.',
   summary:
     'Pillow is the sleep tracker built around the Apple Watch. Worn overnight, the watch lets it track automatically and in detail, and the app turns that into genuinely useful, well-presented analysis. It is also one of the easier sleep apps to navigate — but it is iOS-only.',
-  overallScore: 6.9,
   scores: [
     { criterionId: 'tracking-accuracy', score: 8.0, note: 'Automatic tracking via the Apple Watch heart-rate sensor and accelerometer — more precise than a phone on the nightstand.' },
     { criterionId: 'wind-down-content', score: 5.5, note: 'Minimal — a measurement app, not a fall-asleep aid.' },
@@ -74,7 +73,7 @@ The sleep biology behind what these apps measure and the protocols they support.
     { q: "What are the downsides of Pillow?", a: "Pillow is iOS-only with no Android version, leans heavily on owning an Apple Watch, has minimal wind-down content, and needs a subscription for its fuller features. It is best as a detailed analysis tool for Apple Watch owners rather than a relaxation or wind-down app." },
   ],
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-10-10',
 }
 
 export default pillow

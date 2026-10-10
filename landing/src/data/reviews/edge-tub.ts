@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const edgeTub: ToolReview = {
+const edgeTub: ToolReviewInput = {
   slug: 'edge-tub',
   name: 'Edge Tub',
   brand: 'Edge Tub',
@@ -12,7 +12,6 @@ const edgeTub: ToolReview = {
     'The best value in the chiller-built cold-plunge tier — comparable hardware to The Plunge, meaningfully cheaper.',
   summary:
     'Edge Tub is the most credible mid-tier cold-plunge option in 2026 — insulated acrylic tub with built-in chiller, holds 39°F under typical use, ozone filtration. Newer brand than The Plunge with a thinner multi-year reliability track record, but the core hardware is comparable at roughly half the price.',
-  overallScore: 7.8,
   scores: [
     { criterionId: 'chiller-capacity', score: 8.0, note: 'Capable chiller holds 39°F under typical use; slightly slower recovery than Plunge’s 1 HP unit in summer heat.' },
     { criterionId: 'build', score: 7.5, note: 'Insulated acrylic tub, 2-year warranty. Newer brand — multi-year reliability track record is still building.' },
@@ -73,7 +72,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { q: "Edge Tub vs The Plunge: which is better?", a: "The Edge Tub is better for value; The Plunge is better for track record and warranty. Edge offers comparable chiller hardware at roughly half the price, while Plunge has a 3-year warranty and more developed protocol guidance." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default edgeTub

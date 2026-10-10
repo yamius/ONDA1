@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const pod6VsPod5: HeadToHead = {
+const pod6VsPod5: HeadToHeadInput = {
   slug: 'eight-sleep-pod-6-vs-eight-sleep-pod-5',
   productASlug: 'eight-sleep-pod-6',
   productBSlug: 'eight-sleep-pod-5',
@@ -9,7 +9,6 @@ const pod6VsPod5: HeadToHead = {
     'Eight Sleep Pod 6 vs Pod 5 — the new $1,999 Solo / $2,899 queen Pod 6 vs the ~$6,099 Pod 5 Ultra it replaced. ONDA on what changed and which one makes sense now.',
   intro:
     'Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026, and for once the new generation is much cheaper: Solo from $1,999 and a dual-zone queen at $2,899, against the Pod 5 Ultra’s ~$6,099 last list price. The Pod 6 brings a smaller hub, 18 sensors and Solo sizes; the Pod 5 Ultra bundled the base, blanket and audio that the Pod 6 sells as optional extras.',
-  winnerSlug: 'eight-sleep-pod-6',
   verdict:
     'For most buyers the Pod 6 wins: a hub 50% smaller, 18 biometric sensors instead of 2, 20% faster temperature changes and new Solo sizes, at less than half the Pod 5 Ultra’s price. The Pod 5 Ultra only makes sense if you want the adjustable base, top-down blanket, built-in audio and snore mitigation in one bundle. Both require an Autopilot membership.',
   bestForA:
@@ -53,7 +52,7 @@ Keep it. The Pod 6 upgrade is mostly a smaller hub and more sensors, and a Pod 5
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-09-30',
   datePublished: '2026-09-30',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default pod6VsPod5

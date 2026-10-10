@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const therasageTheraSaunaPersonal: ToolReview = {
+const therasageTheraSaunaPersonal: ToolReviewInput = {
   slug: 'therasage-thera-sauna-personal',
   name: 'Therasage TheraSauna Personal',
   brand: 'Therasage',
@@ -12,7 +12,6 @@ const therasageTheraSaunaPersonal: ToolReview = {
     'A solid mid-tier biohacker IR sauna — full-spectrum, decent EMF discipline, accessible price for the tier.',
   summary:
     'Therasage TheraSauna Personal occupies the gap between budget portable (HigherDose) and premium cabin (Sunlighten, Clearlight). Full-spectrum IR delivery, low-EMF documentation, tent-style and cabin configurations. Biohacker-positioned brand without Sunlighten or SaunaSpace premium pricing.',
-  overallScore: 7.2,
   scores: [
     { criterionId: 'heat-source', score: 7.5, note: 'Full-spectrum IR via carbon-fibre and ceramic heaters. Less rigorous wavelength separation than Sunlighten but credibly broad-spectrum.' },
     { criterionId: 'build', score: 7.5, note: 'Tent or cabin configurations. 3-year warranty. Mid-tier build quality.' },
@@ -73,7 +72,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "What are the downsides of the Therasage TheraSauna?", a: "Its wavelength separation is less rigorous than Sunlighten mPulse, its EMF profile is higher than SaunaSpace Faraday, and its build is less premium than Sunlighten or Clearlight cabins. Brand recognition is also narrower than category leaders." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default therasageTheraSaunaPersonal

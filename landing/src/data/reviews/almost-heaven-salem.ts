@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const almostHeavenSalem: ToolReview = {
+const almostHeavenSalem: ToolReviewInput = {
   slug: 'almost-heaven-salem',
   name: 'Almost Heaven Salem Barrel Sauna',
   brand: 'Almost Heaven Saunas',
@@ -12,7 +12,6 @@ const almostHeavenSalem: ToolReview = {
     'The most affordable way into a real Finnish-style sauna from an established maker — a compact 2-person cedar barrel with a 6 kW electric heater, at well under the price of premium infrared cabins.',
   summary:
     'The Salem is Almost Heaven’s entry barrel sauna: a 6 × 4 ft, 2-person cedar barrel sold as a DIY kit, heated by a 6 kW Harvia electric heater (240 V, 30 A, hard-wired). It is traditional convection heat with water on the stones — the format the Finnish cohort studies were run on — not infrared. List price is $4,485 ($4,036.50 on sale on the official site as of October 2026). There is no wood-burning option for this model.',
-  overallScore: 7.5,
   scores: [
     { criterionId: 'heat-source', score: 8.0, note: '6 kW electric sauna heater (KIP with dials, or KIP / Spirit smart heaters with Fenix control). Traditional convection heat with löyly steam. No wood-burning option on the Salem — Almost Heaven offers wood heaters on larger barrels such as the Essex.' },
     { criterionId: 'build', score: 9.0, note: '1 ⅜-inch ball-and-socket cedar staves (Rustic Red Cedar or Onyx finish); limited lifetime warranty on manufacturing defects; Harvia heater warranty 1 year on elements, 5 years on other components.' },
@@ -111,7 +110,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "Is a traditional sauna better than infrared?", a: "Neither is better for everyone. Traditional saunas heat the air to roughly 80–100 °C and are the format behind the Finnish cohort studies; infrared cabins run cooler and feel gentler. If matching the research matters most, choose traditional; if comfort and easy indoor install matter more, infrared fits." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default almostHeavenSalem

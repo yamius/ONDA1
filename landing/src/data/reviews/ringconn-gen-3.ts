@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const ringconnGen3: ToolReview = {
+const ringconnGen3: ToolReviewInput = {
   slug: 'ringconn-gen-3',
   name: 'RingConn Gen 3',
   brand: 'RingConn',
@@ -12,11 +12,10 @@ const ringconnGen3: ToolReview = {
     'One of the strongest subscription-free rings — a ~10-14 day battery, a first-in-category haptic motor for silent alerts, and new vascular/sleep-apnea insights, all with no membership.',
   summary:
     'The RingConn Gen 3 is the most capable subscription-free ring RingConn has made. For a one-time $349 (no subscription) it tracks heart rate, HRV, SpO2, respiratory rate, skin temperature, stress and sleep, and adds genuinely new hardware: it is the first smart ring with a built-in haptic motor (silent alarms and alerts for elevated heart rate, inactivity and step goals), plus vascular-health and nighttime blood-pressure trend tracking, sleep-apnea pattern insights, a universal wireless charging case, and a longer battery ceiling (~10-14 days). It is cross-platform (iPhone and Android). It still is not the validated accuracy reference the way Oura is, but as a no-subscription package it is one of the best on the market.',
-  overallScore: 7.6,
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.0, note: 'Continuous HRV for recovery and stress, improved over the Gen 2. Good, though not validated to Oura’s level.' },
     { criterionId: 'sensor', score: 7.5, note: 'Broad sensor suite — HR, HRV, SpO2, respiratory rate, skin temperature — plus a first-in-category haptic motor and new vascular / nighttime blood-pressure trend tracking.' },
-    { criterionId: 'sleep-accuracy', score: 7.5, note: 'Solid sleep tracking with new sleep-apnea pattern insights. Among the better rings for sleep at this price.' },
+    { criterionId: 'sleep-accuracy', score: 7.0, note: 'Solid sleep tracking with new sleep-apnea pattern insights; no independent sleep validation was found. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'data-access', score: 6.5, note: 'Data lives in the RingConn app with export; no truly open API.' },
     { criterionId: 'wearability', score: 8.0, note: 'A standout: ~10-14 day battery, cross-platform, a haptic silent alarm, and a universal wireless charging case. Comfortable for 24/7 wear.' },
     { criterionId: 'app-ux', score: 7.0, note: 'Capable, improved app with the new vascular and sleep-apnea insight cards. Less polished and explanatory than Oura, but clear.' },
@@ -29,7 +28,7 @@ const ringconnGen3: ToolReview = {
     'New vascular / nighttime blood-pressure trends and sleep-apnea insights',
   ],
   cons: [
-    'Accuracy still a step below Oura’s validated reference',
+    'No independent validation of its HRV or sleep tracking yet',
     'App less polished than Oura’s',
     'No open API',
     'New health-insight features are trend-level, not diagnostic',
@@ -47,7 +46,7 @@ The RingConn Gen 3 is the most complete subscription-free ring RingConn has ship
 
 ## What are the downsides of RingConn Gen 3?
 
-Accuracy and polish. RingConn’s [HRV](/glossary/heart-rate-variability) and sleep tracking are good and improved, but Oura remains the validated reference, and the RingConn app is less explanatory. The new vascular and blood-pressure features are trend-level insights, not diagnostic tools — useful for spotting patterns, not for medical decisions.
+Accuracy and polish. RingConn’s [HRV](/glossary/heart-rate-variability) and sleep tracking have not been independently validated (only a preprint on an earlier generation), and the RingConn app is less explanatory. The new vascular and blood-pressure features are trend-level insights, not diagnostic tools — useful for spotting patterns, not for medical decisions.
 
 ## Who should buy RingConn Gen 3?
 
@@ -73,7 +72,7 @@ The science behind why HRV is the signal worth tracking.
     { q: "RingConn Gen 3 vs Oura — which is better?", a: "For a feature-rich, subscription-free ring with a long battery and silent haptic alerts, the Gen 3 is the strongest no-membership alternative to Oura. Oura still leads on the most refined app and sleep-stage accuracy." },
   ],
   datePublished: '2026-09-06',
-  dateModified: '2026-09-18',
+  dateModified: '2026-10-10',
 }
 
 export default ringconnGen3

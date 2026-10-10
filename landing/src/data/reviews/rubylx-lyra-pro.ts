@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const rubylxLyraPro: ToolReview = {
+const rubylxLyraPro: ToolReviewInput = {
   slug: 'rubylx-lyra-pro',
   name: 'RubyLx Lyra Pro',
   brand: 'RubyLx',
@@ -12,7 +12,6 @@ const rubylxLyraPro: ToolReview = {
     'The testing-transparency premium pick — third-party verified on every spec, premium-priced, smaller brand than Joovv.',
   summary:
     'The RubyLx Lyra Pro is the panel for buyers who want every published specification independently verified. RubyLx submits each model to third-party labs for irradiance, EMF, flicker and spectrum measurement and publishes the full reports. The Lyra Pro carries five wavelengths (630 + 660 + 810 + 830 + 850 nm) with build and EMF discipline in the Joovv-tier. Smaller brand than the category leaders; the testing transparency is the value.',
-  overallScore: 8.0,
   scores: [
     { criterionId: 'irradiance', score: 9.0, note: 'Third-party measured ~125 mW/cm² at 0" / ~62 mW/cm² at 6". Independent verification matches manufacturer claim within 5%.' },
     { criterionId: 'wavelengths', score: 8.5, note: 'Five wavelengths (630 + 660 + 810 + 830 + 850 nm) — covers the standard photobiomodulation range without exotic additions.' },
@@ -73,7 +72,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "RubyLx Lyra Pro vs Joovv: which is better?", a: "The Lyra Pro is cheaper than Joovv with comparable EMF discipline and more published third-party lab testing. Joovv offers a modular ecosystem and a longer reliability track record. Pick RubyLx for verified specs and value, Joovv for its ecosystem." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default rubylxLyraPro

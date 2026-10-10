@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const omniluxContourFace: ToolReview = {
+const omniluxContourFace: ToolReviewInput = {
   slug: 'omnilux-contour-face',
   name: 'Omnilux Contour Face',
   brand: 'Omnilux',
@@ -12,7 +12,6 @@ const omniluxContourFace: ToolReview = {
     'The clinical reference — peer-reviewed dermatology studies, flexible silicone, FDA-cleared per Omnilux. The benchmark every consumer red-light mask gets compared to.',
   summary:
     'Omnilux Contour Face is the red light mask used in dermatology practices, with peer-reviewed clinical studies behind it; Omnilux says it is FDA-cleared. Flexible medical-grade silicone for unattended wear, 132 LEDs (red 633 nm + near-infrared 830 nm), 10-minute session protocol. The clinical-evidence moat is what separates it from consumer-brand alternatives — Omnilux is the device dermatologists use in their own clinics.',
-  overallScore: 8.5,
   scores: [
     { criterionId: 'irradiance', score: 9.0, note: 'Documented irradiance honest to dermatology-clinic dose at 10-minute session. Among the most transparent specs in the category — not inflated peak figures.' },
     { criterionId: 'wavelength-coverage', score: 8.5, note: 'Red 633 nm + near-infrared 830 nm — the two wavelengths most used in skin studies. No blue / amber distraction.' },
@@ -72,7 +71,7 @@ Choose Omnilux Contour Face if you want the dermatology reference with peer-revi
     { q: "Omnilux Contour Face vs Lumara Viso: which is better?", a: "Omnilux is better for clinical evidence, with device-specific peer-reviewed studies. The Lumara Viso offers more LEDs, three wavelengths and an included neck flap, but has a lighter evidence moat and costs more at $650." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default omniluxContourFace

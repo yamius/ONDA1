@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const xenByNeuvana: ToolReview = {
+const xenByNeuvana: ToolReviewInput = {
   slug: 'xen-by-neuvana',
   name: 'Xen by Neuvana',
   brand: 'Neuvana',
@@ -12,9 +12,8 @@ const xenByNeuvana: ToolReview = {
     'Auricular tVNS packaged as earbuds — a clever consumer form factor, modest independent evidence.',
   summary:
     'Xen is a pair of earbuds that combine auricular tVNS — electrodes targeting the vagus nerve through the ear canal — with music playback, so the stimulation rides on top of audio. Controlled from a phone with adjustable intensity and several modes. Less clinical lineage than Nurosym, but the consumer experience is closer to wearing AirPods than wearing a medical device.',
-  overallScore: 6.7,
   scores: [
-    { criterionId: 'evidence', score: 5.5, note: 'Limited company-sponsored studies on HRV and sleep; no peer-reviewed RCTs of the Xen device specifically. Mechanism inherits from broader auricular tVNS evidence.' },
+    { criterionId: 'evidence', score: 4.5, note: 'Only company-sponsored studies on HRV and sleep, which do not count as evidence in ONDA scores; no peer-reviewed RCTs of the Xen device. Mechanism evidence comes from auricular tVNS in general.' },
     { criterionId: 'mechanism', score: 7.0, note: 'Auricular tVNS via in-ear electrodes — targets the auricular vagal branch. Stimulation is synchronised with music playback through the same earbuds.' },
     { criterionId: 'protocols', score: 7.5, note: 'Multiple modes (focus, calm, sleep) plus music-paired stimulation. Intensity user-adjustable.' },
     { criterionId: 'comfort', score: 7.0, note: 'Earbuds — familiar form factor, but in-ear electrode placement is fiddlier than a tragus clip. Cable to the control unit limits mobility.' },
@@ -73,7 +72,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "What are the downsides of Xen by Neuvana?", a: "Independent clinical evidence on the Xen device is thin. In-ear electrode placement is fiddlier than a tragus clip, the earbuds are cabled to a control unit, and there is no on-device HRV measurement." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-10',
 }
 
 export default xenByNeuvana

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const pulsettoVsTruvagaVsHoolest: HeadToHead = {
+const pulsettoVsTruvagaVsHoolest: HeadToHeadInput = {
   slug: 'pulsetto-vs-truvaga-350-vs-hoolest-verelief-prime',
   productASlug: 'pulsetto',
   productBSlug: 'truvaga-350',
@@ -10,7 +10,7 @@ const pulsettoVsTruvagaVsHoolest: HeadToHead = {
     'Pulsetto vs Truvaga 350 vs Hoolest VeRelief Prime — three-way ONDA comparison of three consumer cervical tVNS devices. Daily collar, gammaCore-platform consumer and athlete handheld in one decision.',
   intro:
     'Pulsetto, Truvaga 350 and Hoolest VeRelief Prime are the three consumer cervical/handheld tVNS devices that bracket the consumer market without needing a prescription. Three positioning angles on similar mechanism: Pulsetto is the daily-use neck collar, Truvaga is the gammaCore-platform OTC consumer line, Hoolest is the athlete-built handheld with dual ear/neck targeting.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Three different shapes. Pulsetto for daily-use guided programmes. Truvaga for the clinical-platform consumer version. Hoolest for short intense athletic-recovery sessions.',
   bestForA:
@@ -69,7 +69,7 @@ If you want short, intense parasympathetic priming around training and sleep —
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default pulsettoVsTruvagaVsHoolest

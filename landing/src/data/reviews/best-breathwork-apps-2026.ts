@@ -61,7 +61,7 @@ const bestBreathworkApps2026: Comparison = {
     },
   ],
   verdict:
-    'Breathwrk wins overall as the structured-library reference with full technique coverage and science-grounded copy at $49/year. Othership wins on production value and community for users buying breathwork as cinematic experience. Wim Hof Method app is the rational choice for committed WHM practitioners. Inhale closes the HRV-biofeedback loop. iBreathe and Breathe2Relax cover the free tier credibly. Pick on three questions: structured library breadth, music / community thesis, or biofeedback integration.',
+    'Breathwrk wins overall as the structured-library reference with full technique coverage and science-informed copy, backed by one published study on cyclic sighing, at $49/year. Othership wins on production value and community for users buying breathwork as cinematic experience. Wim Hof Method app is the rational choice for committed WHM practitioners. Inhale closes the HRV-biofeedback loop. iBreathe and Breathe2Relax cover the free tier credibly. Pick on three questions: structured library breadth, music / community thesis, or biofeedback integration.',
   faq: [
     {
       q: 'What is the best breathing app?',
@@ -73,15 +73,15 @@ const bestBreathworkApps2026: Comparison = {
     },
     {
       q: 'What is the best breathwork app in 2026?',
-      a: 'Breathwrk overall — largest structured library, broadest technique coverage, science-grounded copy at $49/year. Othership for music-driven cinematic premium experience at $129.99/year. Wim Hof Method app for the WHM specifically.',
+      a: 'Breathwrk overall — largest structured library, broadest technique coverage, science-informed copy backed by one published study on cyclic sighing, at $49/year. Othership for music-driven cinematic premium experience at $129.99/year. Wim Hof Method app for the WHM specifically.',
     },
     {
       q: 'Is Breathwrk worth the subscription?',
-      a: 'Yes for users wanting structured daily breathwork practice with broad technique coverage — Breathwrk\'s library and science-grounded copy are unmatched at the price point. For users wanting cinematic experience, Othership justifies its higher sub.',
+      a: 'Yes for users wanting structured daily breathwork practice with broad technique coverage — Breathwrk\'s library is unmatched at the price point, with science-informed copy backed by one published study on cyclic sighing. For users wanting cinematic experience, Othership justifies its higher sub.',
     },
     {
       q: 'Breathwrk vs Othership — which is better?',
-      a: 'Breathwrk wins on library depth, technique coverage, science grounding and price. Othership wins on production value, music-driven sessions and live community. Different theses about what breathwork should feel like.',
+      a: 'Breathwrk wins on library depth, technique coverage, science-informed copy (one published study on cyclic sighing) and price. Othership wins on production value, music-driven sessions and live community. Different theses about what breathwork should feel like.',
     },
     {
       q: 'Is there a free breathing app that works?',
@@ -152,7 +152,7 @@ Three buying questions resolve the category cleanly:
 Breathwrk dominates the structured-library default. Othership owns the cinematic-experience premium tier. The free tier (iBreathe, Breathe2Relax) is credible. Skip apps that overstate physiological claims or hide behind ceremony framing without instructor credentials.`,
   publishOn: '2026-06-29',
   datePublished: '2026-06-29',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default bestBreathworkApps2026

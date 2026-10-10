@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const steloVsLingo: HeadToHead = {
+const steloVsLingo: HeadToHeadInput = {
   slug: 'stelo-vs-lingo',
   productASlug: 'stelo',
   productBSlug: 'lingo',
@@ -8,16 +8,15 @@ const steloVsLingo: HeadToHead = {
   description:
     'Stelo vs Lingo — side-by-side ONDA comparison of the two FDA-cleared OTC CGMs. Dexcom G7 versus Abbott Libre 3 hardware, no prescription required for either.',
   intro:
-    'Stelo and Lingo are the two FDA-cleared over-the-counter CGMs in the US — the first consumer glucose monitors you can buy without a prescription. Stelo runs on Dexcom G7; Lingo runs on Abbott Libre 3. Both are OTC, both target non-diabetic biohackers, and both are deliberately simpler than the coached programmes (Levels, Nutrisense). The choice comes down to sensor accuracy versus price.',
-  winnerSlug: 'stelo',
+    'Stelo and Lingo are the two FDA-cleared over-the-counter CGMs in the US — the first consumer glucose monitors you can buy without a prescription. Stelo runs on Dexcom G7; Lingo runs on Abbott Libre 3. Both are OTC, both target non-diabetic biohackers, and both are deliberately simpler than the coached programmes (Levels, Nutrisense). The choice comes down to warm-up time and wear length versus price flexibility.',
   verdict:
-    'Stelo wins on hardware accuracy at a small price premium. Lingo wins on cost flexibility — buy single 2-week sensors as needed without subscription.',
+    'Stelo wins on warm-up time and wear length at a small price premium. Lingo wins on cost flexibility — buy single 2-week sensors as needed without subscription.',
   bestForA:
-    'Choose Stelo by Dexcom if sensor accuracy matters more than the last $50/month — you get the same Dexcom G7 hardware as Levels and Nutrisense at a third of the cost.',
+    'Choose Stelo by Dexcom if a 30-minute warm-up and 15-day wear matter more than the last $50/month — you get the same Dexcom G7 hardware as Levels and Nutrisense at a third of the cost.',
   bestForB:
     'Choose Lingo by Abbott if cost is the deciding factor or you want to wear a CGM occasionally rather than continuously — single 2-week sensors at $54 each.',
   axes: [
-    { name: 'Sensor accuracy', winner: 'a', note: 'Dexcom G7 (Stelo): MARD ~8.2%. Abbott Libre 3 (Lingo): MARD ~9%. Stelo wins marginally — independent comparisons consistently favour Dexcom at rest.' },
+    { name: 'Sensor accuracy', winner: 'tie', note: 'Practically equal: maker accuracy figures do not count as evidence, and in an independent head-to-head study (Eichenlaub et al. 2025) the Dexcom G7 platform and FreeStyle Libre 3 were similarly accurate (MARD about 12% vs 11.6% against a lab reference).' },
     { name: 'Sensor wear time', winner: 'a', note: 'Stelo: 15-day wear (longer than standard Dexcom G7). Lingo: 14 days. Tie in practice; slight Stelo edge.' },
     { name: 'Warm-up time', winner: 'a', note: 'Stelo: 30 minutes. Lingo: 60 minutes. Stelo back on data faster after each sensor swap.' },
     { name: 'Insight depth', winner: 'a', note: 'Stelo: meal-impact + daily time-in-range. Lingo: single "Lingo Count" spike score per meal — deliberately beginner-simple.' },
@@ -28,7 +27,7 @@ const steloVsLingo: HeadToHead = {
   faq: [
     {
       q: 'Is Stelo more accurate than Lingo?',
-      a: 'Yes, marginally. Stelo runs Dexcom G7 (MARD ~8.2%); Lingo runs Abbott Libre 3 (MARD ~9%). In independent comparison against reference plasma glucose, Dexcom edges Abbott consistently at rest. For most non-diabetic biohacker use cases both are accurate enough.',
+      a: 'Not meaningfully. Stelo runs Dexcom G7 and Lingo runs Abbott Libre 3. The makers report different figures (about 8.2% MARD for G7, about 9% for Libre 3), but maker figures do not count as evidence in ONDA scores; in an independent head-to-head study (Eichenlaub et al. 2025) the two were similarly accurate. For most non-diabetic biohacker use cases both are accurate enough.',
     },
     {
       q: 'Which is cheaper, Stelo or Lingo?',
@@ -45,18 +44,18 @@ const steloVsLingo: HeadToHead = {
   ],
   content: `## The short version
 
-Stelo wins on accuracy at a small price premium; Lingo wins on cost flexibility for occasional wear. Both are OTC — no prescription, no coaching subscription — which sets them apart from Levels, Nutrisense, Signos and the rest of the premium-tier CGM market.
+Stelo wins on warm-up time and wear length at a small price premium; Lingo wins on cost flexibility for occasional wear. Both are OTC — no prescription, no coaching subscription — which sets them apart from Levels, Nutrisense, Signos and the rest of the premium-tier CGM market.
 
 ## When is Stelo the right pick?
 
-If you want the most accurate consumer CGM hardware available — the same Dexcom G7 sensor underneath Levels and Nutrisense — at roughly a third of those programmes’ cost, Stelo is the right shape. The 30-minute warm-up versus Lingo’s 60-minute matters more than it sounds when you swap sensors every two weeks.
+If you want the Dexcom G7 sensor — the same one underneath Levels and Nutrisense — at roughly a third of those programmes’ cost, Stelo is the right shape. The 30-minute warm-up versus Lingo’s 60-minute matters more than it sounds when you swap sensors every two weeks.
 
 ## When is Lingo the right pick?
 
 If you are not sure CGM will change anything for you and want the cheapest legitimate way to find out, or you plan to wear a CGM occasionally rather than continuously, Lingo is the right shape. $54 single sensors with no subscription beats Stelo’s monthly model on flexibility.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default steloVsLingo

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const saunaspaceVsSunlighten: HeadToHead = {
+const saunaspaceVsSunlighten: HeadToHeadInput = {
   slug: 'saunaspace-faraday-vs-sunlighten-mpulse',
   productASlug: 'saunaspace-faraday',
   productBSlug: 'sunlighten-mpulse',
@@ -9,7 +9,7 @@ const saunaspaceVsSunlighten: HeadToHead = {
     'SaunaSpace Faraday vs Sunlighten mPulse — side-by-side ONDA comparison of near-IR incandescent vs full-spectrum IR premium saunas.',
   intro:
     'SaunaSpace Faraday and Sunlighten mPulse are the two premium IR saunas users compare when wavelength philosophy is the deciding factor. SaunaSpace bets on near-IR incandescent — tungsten-filament bulbs close to natural sunlight spectrum, with full Faraday-cage EMF shielding. Sunlighten bets on full-spectrum (near + mid + far) via mixed emitter systems. Different bets, different premium tiers.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Different bets. SaunaSpace Faraday for near-IR purists wanting full Faraday-cage EMF shielding. Sunlighten mPulse for full-spectrum buyers wanting per-wavelength programmable control.',
   bestForA:
@@ -57,7 +57,7 @@ If you want full-spectrum IR with the ability to programme near, mid and far sep
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default saunaspaceVsSunlighten

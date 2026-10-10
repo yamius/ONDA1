@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const dysonBigQuiet: ToolReview = {
+const dysonBigQuiet: ToolReviewInput = {
   slug: 'dyson-purifier-big-quiet',
   name: 'Dyson Purifier Big+Quiet Formaldehyde',
   brand: 'Dyson',
@@ -12,7 +12,6 @@ const dysonBigQuiet: ToolReview = {
     'Best premium consumer brand — Dyson polished UX with True HEPA + carbon + formaldehyde-destroying layer + full app. Less filtration depth than IQAir.',
   summary:
     'Dyson Purifier Big+Quiet Formaldehyde is the Dyson premium air purifier — True HEPA H13, activated carbon for VOC, dedicated formaldehyde-destruction catalyst layer, large-room coverage with Dyson airflow engineering, full app integration and built-in sensors. Polished consumer brand UX. Less filtration depth than IQAir HyperHEPA H14; trade is smart features + brand polish.',
-  overallScore: 8.2,
   scores: [
     { criterionId: 'filtration-technology', score: 8.5, note: 'True HEPA H13 + activated carbon + formaldehyde-destruction catalyst. Multi-layer approach without IQAir HyperHEPA H14 depth but with formaldehyde focus.' },
     { criterionId: 'cadr-coverage', score: 9.0, note: 'Large room coverage with Dyson airflow engineering. AHAM-verified figures.' },
@@ -71,7 +70,7 @@ Choose Dyson Big+Quiet for premium consumer brand + best smart features + formal
     { q: "Dyson Big+Quiet vs IQAir: which is better?", a: "IQAir is better for filtration depth; the Dyson is better for smart features and polish. IQAir uses HyperHEPA H14, while the Dyson uses H13 but adds formaldehyde destruction, a full app, built-in sensors and very quiet operation." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default dysonBigQuiet

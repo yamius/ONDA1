@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const eightSleepPod6: ToolReview = {
+const eightSleepPod6: ToolReviewInput = {
   slug: 'eight-sleep-pod-6',
   name: 'Eight Sleep Pod 6',
   brand: 'Eight Sleep',
@@ -12,7 +12,6 @@ const eightSleepPod6: ToolReview = {
     'The most sensible Eight Sleep yet — the Pod 6 shrinks the hub by half, adds 9x more sensors, changes temperature 20% faster and, for the first time, sells single-sleeper Solo sizes from $1,999, while the dual-zone queen drops to $2,899. The catch is unchanged: an Autopilot membership ($199–$399/year) is mandatory, and the warranty length depends on which tier you pay for.',
   summary:
     'The Eight Sleep Pod 6 is the sixth-generation Pod, launched on 23 September 2026 in more than 37 countries as the replacement for the Pod 5. Eight Sleep rebuilt the hub to be 50% smaller so it fits under most bed frames, raised the biometric sensor count from 2 to 18, and says temperature adjustments are 20% faster than any previous generation, with each side of the dual-zone cover working independently. New Solo sizes (Twin, or one side of a Queen, King or California King) start at $1,999; standard dual-zone sizes cost $2,699 (Full), $2,899 (Queen) and $2,999 (King/Cal King). The cover tracks heart rate, breathing rate, HRV, snoring and sleep stages without a wearable, and the sensors are designed to tell sleepers apart and ignore pets or children. Existing add-ons — Blanket, Pillow Cover and Base — are compatible but sold separately. Autopilot membership is required: Standard $199/year (2-year warranty), Enhanced $299/year and Elite $399/year (5-year warranty).',
-  overallScore: 8.7,
   scores: [
     { criterionId: 'climate-range', score: 9.5, note: 'Same dual-zone cover-based cooling and heating as the Pod 4/5 core, with Eight Sleep claiming 20% faster temperature changes. Top-down cooling needs the separate Blanket add-on (the Pod 5 Ultra scored 9.7 with it bundled). Eight Sleep has not published a new temperature range for the Pod 6.' },
     { criterionId: 'build', score: 8.5, note: 'Rebuilt hub is 50% smaller and fits under most bed frames. Warranty is tied to membership: 2 years on Standard, 5 years on Enhanced/Elite. Long-term reliability of the new hub is not yet known.' },
@@ -73,7 +72,7 @@ Choose the Pod 6 if you want Eight Sleep’s climate control and wearable-free s
     { q: "Does the Eight Sleep Pod 6 track HRV?", a: "Yes. The Pod 6 tracks heart rate, breathing rate, HRV, snoring and sleep stages from sensors in the cover, without a wearable. No independent validation of the Pod 6 sensors has been published yet, so treat it as a trend rather than a clinical reading." },
   ],
   datePublished: '2026-10-01',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default eightSleepPod6

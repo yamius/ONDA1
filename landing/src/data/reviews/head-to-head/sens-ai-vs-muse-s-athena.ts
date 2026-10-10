@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const sensAiVsMuse: HeadToHead = {
+const sensAiVsMuse: HeadToHeadInput = {
   slug: 'sens-ai-vs-muse-s-athena',
   productASlug: 'sens-ai',
   productBSlug: 'muse-s-athena',
@@ -9,7 +9,6 @@ const sensAiVsMuse: HeadToHead = {
     'Sens.ai vs Muse S Athena — side-by-side ONDA comparison of two premium brain-training headsets. Multi-modal EEG+PBM+HRV versus EEG+fNIRS flagship.',
   intro:
     'Sens.ai and Muse S Athena are the two premium brain-training headsets users compare when consumer-EEG depth is the deciding criterion. Both ship multi-modal sensor stacks; the structural difference is the scope. Muse S Athena adds prefrontal fNIRS to a mature meditation platform; Sens.ai layers EEG with photobiomodulation and HRV biofeedback in a single programme. Mature content versus multi-modal integration.',
-  winnerSlug: 'muse-s-athena',
   verdict:
     'Muse S Athena wins overall on content maturity, sleep tracking, comfort and price. Sens.ai wins specifically when the multi-modal EEG + PBM + HRV stack is what you want.',
   bestForA:

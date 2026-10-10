@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const headspaceVsInsight: HeadToHead = {
+const headspaceVsInsight: HeadToHeadInput = {
   slug: 'headspace-vs-insight-timer',
   productASlug: 'headspace',
   productBSlug: 'insight-timer',
@@ -9,7 +9,7 @@ const headspaceVsInsight: HeadToHead = {
     'Headspace vs Insight Timer — side-by-side ONDA comparison of two top meditation apps. Curriculum-driven teaching versus the largest free meditation library on the market.',
   intro:
     'Headspace and Insight Timer are the two meditation apps users compare when teaching structure meets library breadth. Headspace is the curriculum-led app with a consistent teaching voice and a structured beginner path; Insight Timer is the open library with thousands of teachers and a real free tier. The decision is between guided learning and exploratory breadth.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Different products. Headspace for structured learning under one teaching voice. Insight Timer for the largest free meditation library and access to thousands of teachers.',
   bestForA:
@@ -57,7 +57,7 @@ If you want a structured introduction to mindfulness with a clear curriculum and
 If you want the largest free meditation library on the market — access to Tara Brach, Jack Kornfield and thousands of other teachers at no cost — Insight Timer is the right shape. The free tier is genuinely free; Member Plus is optional.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default headspaceVsInsight

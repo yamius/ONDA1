@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const chilipadDockPro: ToolReview = {
+const chilipadDockPro: ToolReviewInput = {
   slug: 'chilipad-dock-pro',
   name: 'ChiliPad Dock Pro',
   brand: 'Sleepme',
@@ -12,7 +12,6 @@ const chilipadDockPro: ToolReview = {
     'The subscription-free water-cooled alternative to Eight Sleep — premium climate, no ongoing fees, no HRV tracking.',
   summary:
     'ChiliPad Dock Pro is Sleepme’s premium water-cooled / heated mattress pad. Active cooling and heating (13–46°C) through a water-filled pad, dual-zone optional, no subscription required for full features. Lacks Eight Sleep’s HRV tracking and sleep-stage detection, but the climate hardware is comparable and the ownership model is cleaner.',
-  overallScore: 7.9,
   scores: [
     { criterionId: 'climate-range', score: 9.0, note: 'Strong dual-zone range (13–46°C). Slightly slower recovery than Eight Sleep Pod 4 in peak heat; otherwise comparable climate.' },
     { criterionId: 'build', score: 8.5, note: 'Premium pad construction with quiet hub. 2-year warranty. Multi-year Sleepme/Chili reliability track record solid.' },
@@ -75,7 +74,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
     { q: "ChiliPad Dock Pro vs Eight Sleep Pod 4: which is better?", a: "The ChiliPad Dock Pro is better for subscription-free ownership; the Pod 4 is better for integrated HRV and sleep tracking. Climate hardware is comparable, but the Pod 4 costs about $4,000 plus roughly $20 per month, versus about $1,700 for Sleepme's current Chilipad 2.0 (queen) with no fees." },
   ],
   datePublished: '2026-06-15',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default chilipadDockPro

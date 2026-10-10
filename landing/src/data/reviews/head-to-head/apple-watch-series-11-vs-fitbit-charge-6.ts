@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const appleWatchVsFitbit: HeadToHead = {
+const appleWatchVsFitbit: HeadToHeadInput = {
   slug: 'apple-watch-series-11-vs-fitbit-charge-6',
   productASlug: 'apple-watch-series-11',
   productBSlug: 'fitbit-charge-6',
@@ -9,7 +9,7 @@ const appleWatchVsFitbit: HeadToHead = {
     'Apple Watch Series 11 ($399 at launch) vs Fitbit Charge 6 ($159): full smartwatch vs budget tracker for HRV, sleep, battery and price.',
   intro:
     'Apple Watch Series 11 and Fitbit Charge 6 sit at opposite ends of the wrist-wearable range, but people still weigh them against each other when HRV tracking is the question and price matters. Apple is a full smartwatch; the Fitbit Charge 6 is a cheap, reliable way into HRV and sleep trends. The decision is about what you actually need from the device.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Two different tiers. Apple Watch Series 11 for iPhone users who want a full smartwatch with HRV as one feature. Fitbit Charge 6 for anyone who wants overnight HRV and sleep trends at the lowest credible price, on iPhone or Android.',
   bestForA:
@@ -96,7 +96,7 @@ Both devices measure HRV optically at the wrist, which is fine for multi-day tre
 - [Fitbit Charge 6 — Google Store](https://store.google.com/product/fitbit_charge_6)`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default appleWatchVsFitbit

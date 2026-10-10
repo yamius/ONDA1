@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const nurosymVsVagustim: HeadToHead = {
+const nurosymVsVagustim: HeadToHeadInput = {
   slug: 'nurosym-vs-vagustim',
   productASlug: 'nurosym',
   productBSlug: 'vagustim',
@@ -9,7 +9,7 @@ const nurosymVsVagustim: HeadToHead = {
     'Nurosym vs Vagustim — side-by-side ONDA comparison of two evidence-backed auricular tVNS devices. UK-built clinical lineage versus EU protocol-rich research alternative.',
   intro:
     'Nurosym and Vagustim are the two auricular tVNS devices users compare when peer-reviewed evidence is the deciding criterion. Both are CE-marked Class IIa medical devices for ear-clip vagus stimulation; both have real trial bases. The structural difference is programme variety — Nurosym ships a single deliberately-spartan programme, Vagustim layers a library of protocol presets on top.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Comparable evidence; different philosophies. Nurosym for the spartan single-programme approach with the deepest published trial base. Vagustim for protocol-rich auricular tVNS with EU distribution.',
   bestForA:
@@ -57,7 +57,7 @@ If you are running structured tVNS self-experiments, want the deepest published 
 If you are in an EU market and want a wider library of disclosed-parameter presets covering sleep, stress, depression, anxiety and IBS protocols, Vagustim is the right shape. The lower price and the protocol variety are the differentiators; the trade is brand recognition and trial volume.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default nurosymVsVagustim

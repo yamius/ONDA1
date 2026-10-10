@@ -1,8 +1,15 @@
 /**
  * Scoring criteria per review category. Weights sum to 1.0 within a
- * category — a review's overallScore is the weighted mean of its
- * CriterionScores. These definitions are the single source of truth for
- * the public /reviews/methodology page.
+ * category. A review's overallScore is NEVER typed by hand: it is computed
+ * automatically (scoring.ts) as the weighted mean of its CriterionScores,
+ * rounded to one decimal, half up. An optional editorialAdjustment
+ * (max ±0.3) may be added, always with a reason shown on the review page;
+ * frequent adjustments mean the rubric itself needs changing.
+ * Ordering everywhere (category pages, round-ups, head-to-head winners):
+ * overall score, then the TIE_BREAK_CRITERION score, else a tie.
+ * scripts/check-review-scores.ts enforces this at build time.
+ * These definitions are the single source of truth for the public
+ * /reviews/methodology page.
  */
 import type { Criterion, ReviewCategory } from './types'
 
@@ -365,7 +372,7 @@ const RED_LIGHT_CRITERIA: Criterion[] = [
     label: 'Evidence and regulatory status',
     weight: 0.15,
     description:
-      'Quality of the published photobiomodulation literature backing the device’s claimed indications, FDA registration / Class II clearances where applicable, and how honestly the manufacturer represents what its panel does versus the published evidence.',
+      'Quality of the published photobiomodulation literature backing the device’s claimed indications, and how honestly the manufacturer represents what its panel does versus the published evidence. FDA registration or clearance is neutral (no points added or removed unless the maker misrepresents it), and studies run or funded by the manufacturer do not count as evidence.',
   },
   {
     id: 'value',
@@ -463,7 +470,7 @@ const SAUNA_CRITERIA: Criterion[] = [
     label: 'Evidence and regulatory status',
     weight: 0.1,
     description:
-      'Quality of the published sauna and IR-therapy literature backing the device’s claimed benefits, FDA Class II where applicable, and honest representation of indication versus marketing language.',
+      'Quality of the published sauna and IR-therapy literature backing the device’s claimed benefits, and honest representation of indication versus marketing language. FDA registration or clearance is neutral (no points added or removed unless the maker misrepresents it), and studies run or funded by the manufacturer do not count as evidence.',
   },
   {
     id: 'value',
@@ -660,7 +667,7 @@ const RED_LIGHT_MASK_CRITERIA: Criterion[] = [
     label: 'Clinical evidence and regulatory standing',
     weight: 0.2,
     description:
-      'FDA Class II clearance, published peer-reviewed studies on the specific device for the claimed indications (fine lines, collagen, pigmentation, acne), and how honestly the manufacturer represents the published evidence. The category is full of marketing claims weakly tied to what the hardware actually does.',
+      'Published peer-reviewed studies on the specific device for the claimed indications (fine lines, collagen, pigmentation, acne), and how honestly the manufacturer represents the published evidence. FDA registration or Class II clearance is neutral (no points added or removed unless the maker misrepresents it), and studies run or funded by the brand do not count as evidence. The category is full of marketing claims weakly tied to what the hardware actually does.',
   },
   {
     id: 'comfort-fit',
@@ -705,7 +712,7 @@ const BREATHING_AID_CRITERIA: Criterion[] = [
     label: 'Evidence grounding and safety',
     weight: 0.15,
     description:
-      'How honestly the brand represents the published evidence (sleep-apnea caution is real — undiagnosed OSA + full mouth seal is contraindicated), and whether FDA registration / Class II clearance backs claims. The category is full of viral wellness marketing weakly tied to clinical reality.',
+      'How honestly the brand represents the published evidence (sleep-apnea caution is real — undiagnosed OSA + full mouth seal is contraindicated), and whether independent studies back its claims. FDA registration or clearance is neutral (no points added or removed unless the maker misrepresents it), and studies run or funded by the brand do not count as evidence. The category is full of viral wellness marketing weakly tied to clinical reality.',
   },
   {
     id: 'form-factor',
@@ -852,6 +859,30 @@ export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'breathing-aid': BREATHING_AID_CRITERIA,
   'massage-gun': MASSAGE_GUN_CRITERIA,
   'air-purifier': AIR_PURIFIER_CRITERIA,
+}
+
+/** Tie-break criterion per category — used only when two reviews have the
+ *  same overall score (see scoring.ts). It is the category's evidence /
+ *  scientific-grounding criterion; categories without one use the
+ *  criterion that measures validated performance (accuracy, signal,
+ *  output, filtration). */
+export const TIE_BREAK_CRITERION: Record<ReviewCategory, string> = {
+  'hrv-wearable': 'hrv-accuracy',
+  'meditation-app': 'evidence',
+  'sleep-app': 'sleep-science',
+  'vagus-stim': 'evidence',
+  cgm: 'sensor-accuracy',
+  'eeg-headset': 'signal-quality',
+  'red-light': 'evidence',
+  'cold-plunge': 'evidence',
+  sauna: 'evidence',
+  'sleep-climate': 'climate-range',
+  pemf: 'waveform-evidence',
+  'breathwork-app': 'evidence-grounding',
+  'red-light-mask': 'clinical-evidence',
+  'breathing-aid': 'evidence-grounding',
+  'massage-gun': 'stall-force-amplitude',
+  'air-purifier': 'filtration-technology',
 }
 
 /** Human-readable category labels for the hub and the methodology page. */

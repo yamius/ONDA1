@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const bemerVsHealthyWave: HeadToHead = {
+const bemerVsHealthyWave: HeadToHeadInput = {
   slug: 'bemer-classic-evo-vs-healthy-wave-multi-wave',
   productASlug: 'bemer-classic-evo',
   productBSlug: 'healthy-wave-multi-wave',
@@ -9,7 +9,7 @@ const bemerVsHealthyWave: HeadToHead = {
     'Bemer Classic Evo vs Healthy Wave Multi-Wave PEMF Mat — proprietary signal at premium pricing vs multi-modality stacked mat at half the price. ONDA breaks down the trade.',
   intro:
     'Bemer Classic Evo and Healthy Wave Multi-Wave are the two PEMF mats users compare when picking premium recovery hardware. The defining difference is the thesis: Bemer bets on a single proprietary waveform with a long study list (mostly small or manufacturer-linked); Healthy Wave bets on stacking PEMF with far-infrared and red light in a single mat at half the price.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Proprietary signal vs modality stacking. Bemer Classic Evo for the most-studied single PEMF signal and premium build. Healthy Wave Multi-Wave for PEMF + IR + red light coverage at half the price. Neither has independent trials showing a health benefit.',
   bestForA:
@@ -57,7 +57,7 @@ If you want recovery-modality coverage per session and you don\'t need a proprie
   relatedComparisonSlug: 'best-pemf-devices-2026',
   publishOn: '2026-06-22',
   datePublished: '2026-05-27',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default bemerVsHealthyWave

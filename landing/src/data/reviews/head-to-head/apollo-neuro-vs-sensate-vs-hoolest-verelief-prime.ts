@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const threeVagusForms: HeadToHead = {
+const threeVagusForms: HeadToHeadInput = {
   slug: 'apollo-neuro-vs-sensate-vs-hoolest-verelief-prime',
   productASlug: 'apollo-neuro',
   productBSlug: 'sensate',
@@ -10,7 +10,7 @@ const threeVagusForms: HeadToHead = {
     'Apollo vs Sensate vs Hoolest — three-way ONDA comparison of three non-Nurosym, non-Pulsetto vagus devices. All-day vibrotactile, infrasonic wind-down and athlete-grade handheld.',
   intro:
     'Apollo Neuro, Sensate and Hoolest VeRelief Prime are the three consumer vagus-modulation devices users compare when neither the dominant ear-clip (Nurosym) nor the dominant collar (Pulsetto) is the right shape. Three different form factors and three different jobs: all-day vibrotactile (Apollo), infrasonic sit-down ritual (Sensate), athlete-grade handheld (Hoolest).',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Three different jobs. Apollo for all-day passive vagal modulation. Sensate for an evening wind-down audio ritual. Hoolest for short intense pre-sleep or post-training sessions.',
   bestForA:
@@ -68,7 +68,7 @@ If a focused evening wind-down ritual with paired soundscapes is the use case, S
 If you want short, intense parasympathetic priming around training and sleep, Hoolest is the right shape. The dual ear/neck targeting and the founder-published athletic-recovery research are the differentiators. Active engagement required for the session.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default threeVagusForms

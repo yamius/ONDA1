@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const jnhLifestylesJoyous: ToolReview = {
+const jnhLifestylesJoyous: ToolReviewInput = {
   slug: 'jnh-lifestyles-joyous',
   name: 'JNH Lifestyles Joyous',
   brand: 'JNH Lifestyles',
@@ -12,7 +12,6 @@ const jnhLifestylesJoyous: ToolReview = {
     'The credible budget cabin IR sauna — far-IR only, Canadian hemlock build, accessible price.',
   summary:
     'JNH Lifestyles Joyous is the credible budget cabin IR sauna. Canadian hemlock construction, far-IR-only via ceramic emitters, basic Bluetooth audio. The right shape for users who want a cabin form factor without the $5K+ premium tier. Far-IR-only spectrum and basic EMF discipline are the trades.',
-  overallScore: 6.7,
   scores: [
     { criterionId: 'heat-source', score: 6.5, note: 'Far-IR only via ceramic emitters. No near or mid IR. Comparable far-IR delivery to other budget cabins.' },
     { criterionId: 'build', score: 7.0, note: 'Canadian hemlock cabin, 1–3 person configurations. 5-year warranty on heaters.' },
@@ -73,7 +72,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "Who is the JNH Lifestyles Joyous best for?", a: "It suits buyers who want a real cabin IR sauna at the lowest credible price. It offers Canadian hemlock construction, a 5-year warranty on heaters and several capacity options. Buyers who want full-spectrum IR or strict low-EMF engineering should look at premium brands." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default jnhLifestylesJoyous

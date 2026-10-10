@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const joovvVsMitoRed: HeadToHead = {
+const joovvVsMitoRed: HeadToHeadInput = {
   slug: 'joovv-solo-3-vs-mito-red-mitopro-1500',
   productASlug: 'joovv-solo-3',
   productBSlug: 'mito-red-mitopro-1500',
@@ -9,7 +9,7 @@ const joovvVsMitoRed: HeadToHead = {
     'Joovv Solo 3.0 vs Mito Red MitoPRO 1500 — side-by-side ONDA comparison of the two top biohacker red light panels. Modular versus four-wavelength large panel.',
   intro:
     'Joovv Solo 3.0 and Mito Red MitoPRO 1500 are the two red light panels biohackers most actually compare. Both ship premium build, verified irradiance and clean EMF; the structural differences are modularity, wavelength count, and the brand premium. The choice is mostly about which axis you weight — modular Joovv ecosystem, or broader-spectrum MitoPRO at a discount.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Depends on the axis. Joovv Solo 3.0 wins for modular scaling. Mito Red MitoPRO 1500 wins for broader wavelength spectrum at $100 less.',
   bestForA:
@@ -57,7 +57,7 @@ If modular full-body scaling matters for your setup and the tightest published E
 If broader wavelength coverage (630 + 660 + 830 + 850 nm vs Joovv’s 660 + 850 nm) is what you actually want, and the $100 saving plus the cheaper full-body cost matter, MitoPRO is the right shape. Most biohackers land here.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-10',
 }
 
 export default joovvVsMitoRed

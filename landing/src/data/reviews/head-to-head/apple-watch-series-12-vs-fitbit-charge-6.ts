@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const series12VsCharge6: HeadToHead = {
+const series12VsCharge6: HeadToHeadInput = {
   slug: 'apple-watch-series-12-vs-fitbit-charge-6',
   productASlug: 'apple-watch-series-12',
   productBSlug: 'fitbit-charge-6',
@@ -9,7 +9,7 @@ const series12VsCharge6: HeadToHead = {
     'Apple Watch Series 12 vs Fitbit Charge 6 for HRV — Apple’s new Recovery HRV and full smartwatch versus the affordable band with free HRV trends and a multi-day battery.',
   intro:
     'This is the premium-versus-budget question for HRV. The September 2026 Series 12 finally takes HRV seriously — sampled about 24× more often, split into Recovery HRV and Overall HRV — inside a $399 smartwatch with ECG and hypertension notifications. The Fitbit Charge 6 is a $159 band with free overnight HRV trends, reliable Fitbit sleep tracking and a battery that lasts days. The decision is mostly about how much device you actually need.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'No overall winner — two different tiers. For the deeper HRV system, ECG, hypertension notifications and a full smartwatch, the Series 12 leads. For the cheapest credible way to track HRV and sleep trends, with a battery that suits every-night wear, the Charge 6 leads.',
   bestForA:
@@ -52,7 +52,7 @@ The Series 12 reports two HRV numbers — Recovery HRV and Overall HRV — which
 If HRV is one feature among many you want on your wrist, the Series 12 is the better device. If you only want cheap, reliable HRV and sleep trends, the Charge 6 is enough. If HRV is the main reason you are buying, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default series12VsCharge6

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const polarH10: ToolReview = {
+const polarH10: ToolReviewInput = {
   slug: 'polar-h10',
   name: 'Polar H10',
   brand: 'Polar',
@@ -12,7 +12,6 @@ const polarH10: ToolReview = {
     'The most accurate HRV device you can buy (validated in young healthy adults, at rest) — a reference instrument, not an all-day wearable.',
   summary:
     'The Polar H10 is the chest strap that the rest of this category is measured against. Its electrical ECG sensor delivers HRV accuracy (in young healthy adults, at rest) that no optical wearable matches, and it streams raw data to any app. The catch is by design — it is a deliberate measurement tool, not something you wear around the clock.',
-  overallScore: 7.6,
   scores: [
     { criterionId: 'hrv-accuracy', score: 9.7, note: 'Electrical ECG read directly from the chest; peer-reviewed work finds near-perfect agreement with clinical ECG in young healthy adults, at rest.' },
     { criterionId: 'sensor', score: 9.5, note: 'A true ECG electrode pair — the gold-standard sensor type, not optical inference from blood flow.' },
@@ -77,7 +76,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
 
   datePublished: '2026-05-15',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default polarH10

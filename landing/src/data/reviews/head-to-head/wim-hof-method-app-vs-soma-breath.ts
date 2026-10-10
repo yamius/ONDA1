@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const wimHofVsSoma: HeadToHead = {
+const wimHofVsSoma: HeadToHeadInput = {
   slug: 'wim-hof-method-app-vs-soma-breath',
   productASlug: 'wim-hof-method-app',
   productBSlug: 'soma-breath',
@@ -9,7 +9,7 @@ const wimHofVsSoma: HeadToHead = {
     'Wim Hof Method app vs SOMA Breath — official single-method app vs rhythmic music breathwork with global facilitator network. ONDA breaks down which method-focused app fits.',
   intro:
     'Wim Hof Method app and SOMA Breath are the two method-branded breathwork apps users compare. Both lean into structured rounds; both have community / certification components. The defining difference: WHM is the official single-method reference; SOMA layers Wim Hof rounds inside rhythmic music breathwork with broader pranayama context.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Method purity vs music layering. Wim Hof Method app for the official WHM with structured progression and cold-exposure integration. SOMA Breath for rhythmic music breathwork that includes WHM-style rounds inside broader pranayama context.',
   bestForA:
@@ -56,7 +56,7 @@ If you want rhythmic music-paced breathwork that includes WHM-style rounds withi
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default wimHofVsSoma

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const supersapiens: ToolReview = {
+const supersapiens: ToolReviewInput = {
   slug: 'supersapiens',
   name: 'Supersapiens',
   brand: 'TT1 Products / Abbott',
@@ -12,7 +12,6 @@ const supersapiens: ToolReview = {
     'The only CGM programme designed natively for athletic performance — race-day glucose pacing, restricted to EU markets.',
   summary:
     'Supersapiens is the only CGM programme in this list aimed at endurance athletic performance rather than general metabolic health. Hardware is Abbott’s Libre Sense — a sport-tuned variant of the Libre sensor. The app emphasises race-day glucose pacing, fuelling timing and intra-session fuelling rather than meal scoring. After regulatory friction in the US the programme is EU-only as of 2026. Niche but well-executed for its audience.',
-  overallScore: 6.7,
   scores: [
     { criterionId: 'sensor-accuracy', score: 8.0, note: 'Abbott Libre Sense — sport-tuned variant of Libre, MARD ~9%, 14-day wear. Adequate for performance trending; not a clinical instrument.' },
     { criterionId: 'insights', score: 7.5, note: 'Sport-specific: race-day glucose pacing, intra-session fuelling targets, recovery-window glycaemic profiles. No food-by-food meal scoring for general nutrition.' },
@@ -74,7 +73,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { q: "What are the downsides of Supersapiens?", a: "Supersapiens is EU only, with no general-nutrition meal scoring and no coaching layer at any tier. Its niche endurance audience also limits long-term product investment, which matters for a subscription you plan to keep." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-10',
 }
 
 export default supersapiens

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const platinumledBiomax600: ToolReview = {
+const platinumledBiomax600: ToolReviewInput = {
   slug: 'platinumled-biomax-600',
   name: 'PlatinumLED BIOMAX 600',
   brand: 'PlatinumLED',
@@ -12,7 +12,6 @@ const platinumledBiomax600: ToolReview = {
     'Strong mid-size panel with the richest wavelength spectrum and clean EMF discipline. Joovv-class build at a tier-lower price.',
   summary:
     'The PlatinumLED BIOMAX 600 is the smaller flagship of the BIOMAX line — seven-wavelength coverage (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm), independently-tested EMF and flicker, and a build quality close to Joovv at meaningfully lower price. PlatinumLED has been in the consumer photobiomodulation market longer than most and the line has matured. Mid-size means the panel pairs well with a stand for targeted-area work; full-body requires two.',
-  overallScore: 8.2,
   scores: [
     { criterionId: 'irradiance', score: 8.5, note: 'Manufacturer-claimed peak ~149 mW/cm² at 0"; ~70 mW/cm² at 6". Independent verification within 10% of stated 6" figures.' },
     { criterionId: 'wavelengths', score: 9.0, note: 'Seven-wavelength coverage (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm, per PlatinumLED’s current product page) — broader than even MitoPRO. The 480 nm blue is unusual and a small share of total output.' },
@@ -103,7 +102,7 @@ The photobiomodulation mechanism behind why red light therapy works.
   ],
 
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default platinumledBiomax600

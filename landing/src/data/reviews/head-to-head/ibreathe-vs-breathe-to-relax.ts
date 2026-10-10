@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ibreatheVsB2r: HeadToHead = {
+const ibreatheVsB2r: HeadToHeadInput = {
   slug: 'ibreathe-vs-breathe-to-relax',
   productASlug: 'ibreathe',
   productBSlug: 'breathe-to-relax',
@@ -9,7 +9,7 @@ const ibreatheVsB2r: HeadToHead = {
     'iBreathe vs Breathe2Relax — the two best free breathwork apps compared. Modern minimalist timer vs DoD-built diaphragmatic-breathing evidence base.',
   intro:
     'iBreathe and Breathe2Relax are the two free breathwork apps worth using in 2026. Both are completely free with no subscription. The defining difference: iBreathe is a modern minimalist breath timer; Breathe2Relax is a US National Center for Telehealth-built clinical app with published PTSD / stress validation studies.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Modern minimalist vs clinical evidence. iBreathe for clean modern UI with visual breath guide. Breathe2Relax for clinical evidence base in a dated UI.',
   bestForA:
@@ -56,7 +56,7 @@ If you want evidence-backed diaphragmatic breathing — especially in clinical, 
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default ibreatheVsB2r

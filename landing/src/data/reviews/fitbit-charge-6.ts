@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const fitbitCharge6: ToolReview = {
+const fitbitCharge6: ToolReviewInput = {
   slug: 'fitbit-charge-6',
   name: 'Fitbit Charge 6',
   brand: 'Fitbit',
@@ -12,7 +12,6 @@ const fitbitCharge6: ToolReview = {
     'The affordable on-ramp to HRV tracking — a cheap, reliable band, but a basic recovery tool with a persistent Premium upsell.',
   summary:
     'The Fitbit Charge 6 is the affordable way into HRV tracking — a cheap, comfortable band with overnight HRV (now free) and the sleep tracking Fitbit has long been known for. It is a mainstream tracker, though, not a recovery instrument.',
-  overallScore: 6.8,
   scores: [
     { criterionId: 'hrv-accuracy', score: 6.5, note: 'Overnight HRV is reported as a basic figure — fine for trends, without the depth of a dedicated recovery tracker.' },
     { criterionId: 'sensor', score: 7.0, note: 'Optical PPG in a small band.' },

@@ -11,7 +11,7 @@ const bestSmartSleepClimate2026: Comparison = {
   picks: [
     {
       reviewSlug: 'eight-sleep-pod-6',
-      award: 'Best overall',
+      award: '',
       takeaway: 'The new 2026 Eight Sleep: dual-zone water cooling and heating, a hub half the size, 18 sensors for sleep, heart rate, breathing and HRV tracking without a wearable, and Solo sizes — from $1,999 Solo or $2,899 queen, far below the Pod 5 Ultra. Membership still required.',
     },
     {
@@ -31,7 +31,7 @@ const bestSmartSleepClimate2026: Comparison = {
     },
     {
       reviewSlug: 'chilipad-dock-pro',
-      award: 'Best subscription-free',
+      award: 'Best overall',
       takeaway: 'Premium dual-zone water cooling without the Eight Sleep subscription tax. No HRV tracking.',
     },
     {
@@ -71,11 +71,11 @@ const bestSmartSleepClimate2026: Comparison = {
     },
   ],
   verdict:
-    'The Eight Sleep Pod 6 (September 2026) is the new top pick: the same dual-zone water cooling and heating with more tracking sensors, a much smaller hub and Solo sizes, from $1,999 Solo or $2,899 queen. Before it, the Pod 4 won on value as the category-defining smart sleep-climate system — dual-zone water cooling/heating with integrated HRV tracking and the new Autopilot 4.0 software, for less than half the price of the Pod 5 Ultra. The Pod 5 Ultra is the maximal system (adjustable base, top-down blanket, audio, snore mitigation) but its core climate/HRV tech is shared with the Pod 4, so it’s worth the jump only for the full-bed extras. ChiliPad Dock Pro is the subscription-free alternative for users who already wear an Oura or Whoop and want the climate alone. BedJet 3 is the affordable air-flow alternative; Sleep Number Climate360 the smart-bed integrated approach; Tempur-Breeze and Slumber Cloud DryLine the passive options. Pick on subscription preference first, then climate aggressiveness and tracking needs.',
+    'The ChiliPad Dock Pro ranks first on the ONDA score: premium dual-zone water cooling with no subscription (no HRV tracking). The Eight Sleep Pod 6 (September 2026) is the pick if you want tracking built in: the same dual-zone water cooling and heating with more tracking sensors, a much smaller hub and Solo sizes, from $1,999 Solo or $2,899 queen (membership required). Before it, the Pod 4 won on value as the category-defining smart sleep-climate system — dual-zone water cooling/heating with integrated HRV tracking and the new Autopilot 4.0 software, for less than half the price of the Pod 5 Ultra. The Pod 5 Ultra is the maximal system (adjustable base, top-down blanket, audio, snore mitigation) but its core climate/HRV tech is shared with the Pod 4, so it’s worth the jump only for the full-bed extras. ChiliPad Dock Pro is the subscription-free alternative for users who already wear an Oura or Whoop and want the climate alone. BedJet 3 is the affordable air-flow alternative; Sleep Number Climate360 the smart-bed integrated approach; Tempur-Breeze and Slumber Cloud DryLine the passive options. Pick on subscription preference first, then climate aggressiveness and tracking needs.',
   faq: [
     {
       q: 'What is the best smart sleep-climate system in 2026?',
-      a: 'Eight Sleep Pod 6 overall — dual-zone water cooling/heating, sleep, heart rate and HRV tracking without a wearable, Autopilot, from $1,999 Solo or $2,899 queen (membership required). The Pod 4 is worth it only at a clear discount. ChiliPad Dock Pro for the same water cooling without the Eight Sleep subscription. BedJet 3 for air-flow at lower price.',
+      a: 'ChiliPad Dock Pro overall — dual-zone water cooling without a subscription (no HRV tracking). Eight Sleep Pod 6 if you want sleep, heart rate and HRV tracking built in without a wearable, plus Autopilot, from $1,999 Solo or $2,899 queen (membership required). The Pod 4 is worth it only at a clear discount. BedJet 3 for air-flow at lower price.',
     },
     {
       q: 'Is Eight Sleep worth the subscription?',
@@ -119,7 +119,7 @@ Three buying questions resolve the category cleanly:
 Eight Sleep dominates the integrated-tracking premium tier; Sleepme dominates the subscription-free water-cooled tier; BedJet owns the air-flow niche. Below those, smart-bed and passive alternatives serve users not committing to active hardware.`,
   publishOn: '2026-06-15',
   datePublished: '2026-06-15',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default bestSmartSleepClimate2026

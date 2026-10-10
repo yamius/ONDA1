@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const ultrahumanRingPro: ToolReview = {
+const ultrahumanRingPro: ToolReviewInput = {
   slug: 'ultrahuman-ring-pro',
   name: 'Ultrahuman Ring Pro',
   brand: 'Ultrahuman',
@@ -12,11 +12,10 @@ const ultrahumanRingPro: ToolReview = {
     'The redesigned, subscription-free successor to the Ring Air — a category-leading 15-day battery and on-ring processing, and (unlike the Ring Air) available in the US. Promising, but too new for a long-term reliability verdict from a brand whose last ring had battery problems.',
   summary:
     'The Ultrahuman Ring Pro is Ultrahuman’s clean-sheet flagship, launched February 2026 for a one-time $479 with no subscription. It is also the company’s answer to a hard problem: the older Ultrahuman Ring Air is under a US import ban after Oura’s ITC patent win (effective October 2025), and the Ring Pro is the redesigned ring that gets Ultrahuman back on sale to US buyers. The headline is a category-defining ~15-day battery (versus 4–6 days on the Ring Air), plus a dual-core on-ring processor for localized machine-learning and improved heart-rate sensing, and "Jade," a real-time biointelligence layer. It keeps the Ring Air’s strengths — light, subscription-free, continuous HRV, strong sleep tracking — while directly targeting its worst flaw, battery reliability. The caveat is honesty: it is new, independent long-term validation is thin, and the brand’s previous ring was widely reported to fail within months, so the reliability win is promised, not yet proven.',
-  overallScore: 7.9,
   scores: [
-    { criterionId: 'hrv-accuracy', score: 8.0, note: 'Continuous HRV (SDNN/RMSSD), with improved sensors and an on-ring dual-core processor for localized processing. Continuous overnight signal in line with the better rings.' },
+    { criterionId: 'hrv-accuracy', score: 7.0, note: 'Continuous HRV (SDNN/RMSSD) with improved sensors and an on-ring processor. Only company-run preprints exist; no independent validation against ECG was found (as of October 2026). ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'sensor', score: 8.0, note: 'Upgraded optical sensor array and processing over the Ring Air; improved heart-rate data per Ultrahuman. Clean signal at rest.' },
-    { criterionId: 'sleep-accuracy', score: 8.0, note: 'Carries over the Ring Air’s strong sleep tracking — among the better rings for sleep-stage agreement — with the new processing pipeline.' },
+    { criterionId: 'sleep-accuracy', score: 7.0, note: 'Carries over the Ring Air’s sleep tracking with the new processing pipeline; sleep-stage figures come only from company-run preprints. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'data-access', score: 6.5, note: 'Lifelong access to your own data plus export, but still no truly open API. Unchanged from the Ring Air.' },
     { criterionId: 'wearability', score: 8.0, note: 'The ~15-day battery is the standout — roughly triple the Ring Air — and directly targets the reliability complaint. Light and comfortable for 24/7 wear. Long-term durability is still unproven this early.' },
     { criterionId: 'app-ux', score: 7.5, note: 'The capable Ultrahuman app with add-on "PowerPlugs," now with the "Jade" real-time biointelligence layer. Feature-rich; polish still short of Oura.' },
@@ -80,7 +79,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { q: "Ultrahuman Ring Pro vs Oura — which is better?", a: "Choose the Ring Pro to avoid a subscription and own your data outright; choose Oura for the more refined app and the most published sleep-stage research (on earlier generations, partly Oura-funded). There is no independent data to compare their overnight HRV accuracy. The Ring Pro is also the US-available successor to the Ring Air." },
   ],
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default ultrahumanRingPro

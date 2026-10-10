@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const eightSleepPodCoverPro: ToolReview = {
+const eightSleepPodCoverPro: ToolReviewInput = {
   slug: 'eight-sleep-pod-cover-pro',
   name: 'Eight Sleep Pod Cover Pro',
   brand: 'Eight Sleep',
@@ -12,7 +12,6 @@ const eightSleepPodCoverPro: ToolReview = {
     'Pod 4 climate and tracking on your existing mattress — cheaper entry into the Eight Sleep ecosystem.',
   summary:
     'Eight Sleep Pod Cover Pro is the Pod system stripped of the included mattress. Same dual-zone water cooling/heating (13–43°C), same HRV/sleep tracking, same Autopilot — sits on whatever mattress you already own. The right entry into Eight Sleep if you do not need to replace the mattress.',
-  overallScore: 8.3,
   scores: [
     { criterionId: 'climate-range', score: 9.5, note: 'Same dual-zone range as Pod 4 system — 13–43°C with Autopilot adjustment.' },
     { criterionId: 'build', score: 8.0, note: 'Premium cover. Compatible with most mattresses up to ~14 inch thickness. 2-year warranty.' },
@@ -74,7 +73,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
     { q: "Who is the Eight Sleep Pod Cover Pro best for?", a: "The Pod Cover Pro is best for people who want Pod 4 capability on their existing mattress. It gives entry to Eight Sleep's dual-zone climate, HRV and sleep tracking, and Autopilot without buying a new mattress." },
   ],
   datePublished: '2026-06-15',
-  dateModified: '2026-06-15',
+  dateModified: '2026-10-10',
 }
 
 export default eightSleepPodCoverPro

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const smilingMind: ToolReview = {
+const smilingMind: ToolReviewInput = {
   slug: 'smiling-mind',
   name: 'Smiling Mind',
   brand: 'Smiling Mind',
@@ -12,7 +12,6 @@ const smilingMind: ToolReview = {
     'A completely free, nonprofit app with age-specific programs — the standout choice for families and schools.',
   summary:
     'Smiling Mind is a completely free app from an Australian nonprofit, built with psychologists and educators. Its distinctive strength is age-specific programs — for children, teens, families and the workplace — which makes it the natural pick for families and classrooms.',
-  overallScore: 7.6,
   scores: [
     { criterionId: 'content-library', score: 7.0, note: 'A solid library with a distinctive spread of age-specific programs — children, teens, families, workplace.' },
     { criterionId: 'teaching', score: 7.5, note: 'Developed with psychologists and educators — sound, age-appropriate teaching.' },

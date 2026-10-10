@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const sleepAsAndroid: ToolReview = {
+const sleepAsAndroid: ToolReviewInput = {
   slug: 'sleep-as-android',
   name: 'Sleep as Android',
   brand: 'Urbandroid',
@@ -12,7 +12,6 @@ const sleepAsAndroid: ToolReview = {
     'The most complete sleep app on Android — tracking, smart alarm and wind-down sounds in one — if you do not mind a feature-dense interface.',
   summary:
     'Sleep as Android is the most complete sleep app on its platform: it tracks your night, wakes you with a sleep-cycle smart alarm, and bundles in wind-down sounds, snore detection and wide wearable support. The cost of all those features is an interface that feels techy and dense.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'tracking-accuracy', score: 7.5, note: 'Solid phone-based tracking, more accurate when paired with a supported wearable.' },
     { criterionId: 'wind-down-content', score: 6.0, note: 'Lullabies, nature sounds and binaural audio — more wind-down content than the pure trackers here.' },
@@ -74,7 +73,7 @@ The sleep biology behind what these apps measure and the protocols they support.
     { q: "What are the downsides of Sleep as Android?", a: "Sleep as Android is Android only, and it is feature-dense, so it rewards tinkering more than casual use. Phone-based tracking is an estimate unless you pair a wearable, and the app is less polished than the mainstream iOS sleep apps." },
   ],
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-10-10',
 }
 
 export default sleepAsAndroid

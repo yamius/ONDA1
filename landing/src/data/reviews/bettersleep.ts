@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const bettersleep: ToolReview = {
+const bettersleep: ToolReviewInput = {
   slug: 'bettersleep',
   name: 'BetterSleep',
   brand: 'BetterSleep',
@@ -12,7 +12,6 @@ const bettersleep: ToolReview = {
     'The richest wind-down library of any sleep app — soundscapes, stories and meditations — with light tracking bolted on; a relaxation app first, a tracker second.',
   summary:
     'BetterSleep leads on the thing most sleep apps treat as an afterthought: getting you to sleep. Its content library — mixable soundscapes, SleepTales, meditations and breathing — is the deepest here. It also tracks your night, but tracking is the lighter half of the app.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'tracking-accuracy', score: 5.5, note: 'Phone-based sound and movement tracking — present, but a secondary feature, not the focus.' },
     { criterionId: 'wind-down-content', score: 9.0, note: 'The deepest wind-down library here — mixable soundscapes, SleepTales, meditations and breathing.' },
@@ -75,7 +74,7 @@ The sleep biology behind what these apps measure and the protocols they support.
     { q: "BetterSleep vs AutoSleep: which is better?", a: "BetterSleep is better for getting to sleep; AutoSleep is better for measuring it. BetterSleep is a relaxation app first with the deepest wind-down content library, while AutoSleep is a purist Apple Watch tracker with no wind-down content at all." },
   ],
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-10-10',
 }
 
 export default bettersleep

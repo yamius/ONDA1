@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const cowayAirmega400: ToolReview = {
+const cowayAirmega400: ToolReviewInput = {
   slug: 'coway-airmega-400',
   name: 'Coway Airmega 400',
   brand: 'Coway',
@@ -12,7 +12,6 @@ const cowayAirmega400: ToolReview = {
     'Best mid-premium value — Coway Korean engineering with True HEPA H13 + carbon + smart features at $479. Closes the spec gap to premium tier meaningfully.',
   summary:
     'Coway Airmega 400 is the mid-premium reference — True HEPA H13, activated-carbon layer, 1560 sq ft AHAM-certified coverage, built-in PM2.5 sensor with auto mode, $479 pricing. Korean Coway brand pedigree with strong consumer track record. Closes 80% of the spec gap to premium tier at half the price. Best mid-premium value buy.',
-  overallScore: 8.0,
   scores: [
     { criterionId: 'filtration-technology', score: 8.0, note: 'True HEPA H13 + activated carbon layer. Standard premium spec without IQAir HyperHEPA or Molekule PECO differentiation.' },
     { criterionId: 'cadr-coverage', score: 9.5, note: 'AHAM-certified 350 CADR. 1560 sq ft coverage at 2 ACH; ~580 sq ft at 5 ACH — best coverage-per-dollar in category.' },
@@ -71,7 +70,7 @@ Choose Coway Airmega 400 for premium-tier coverage at mid-premium price. For cli
     { q: "Coway Airmega 400 vs Blueair HealthProtect 7770i: which is better?", a: "The Coway Airmega 400 is better for coverage and value. It costs $479 versus $820, covers more space and has a 12-month filter cycle versus Blueair's 6-month. The Blueair is better for its HEPASilent and GermShield modes." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default cowayAirmega400

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const medito: ToolReview = {
+const medito: ToolReviewInput = {
   slug: 'medito',
   name: 'Medito',
   brand: 'Medito Foundation',
@@ -12,7 +12,6 @@ const medito: ToolReview = {
     'Completely free, open-source and ad-free, with no account required — the no-strings choice, if you can accept a smaller library.',
   summary:
     'Medito is the no-strings app: completely free, open-source, ad-free, with no account required and no premium tier. Built by an Amsterdam nonprofit, it covers the fundamentals well. What it does not have is the depth or breadth of the paid giants.',
-  overallScore: 7.4,
   scores: [
     { criterionId: 'content-library', score: 6.5, note: 'Covers the fundamentals well — beginner courses, breathing, sleep, stress — but smaller than the giants.' },
     { criterionId: 'teaching', score: 7.0, note: 'Solid, with a diverse set of narrators; the quality is genuine if not deep.' },

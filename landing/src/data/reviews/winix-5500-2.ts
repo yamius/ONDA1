@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const winix5500: ToolReview = {
+const winix5500: ToolReviewInput = {
   slug: 'winix-5500-2',
   name: 'Winix 5500-2',
   brand: 'Winix',
@@ -12,7 +12,6 @@ const winix5500: ToolReview = {
     'Best budget HEPA with sensor — Winix Korean engineering at $249 with True HEPA + carbon + PlasmaWave + built-in sensor + auto mode.',
   summary:
     'Winix 5500-2 is the budget HEPA reference with sensor — True HEPA H13, activated-carbon layer, optional PlasmaWave ion-charge, built-in air-quality sensor with auto mode, $249. Korean Winix brand pedigree. Strong consumer reviews at scale; the right budget buy if you want auto-mode sensor without paying mid-budget smart-feature premium.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'filtration-technology', score: 7.5, note: 'True HEPA H13 + activated carbon + optional PlasmaWave ion-charge (can be disabled). Solid budget spec.' },
     { criterionId: 'cadr-coverage', score: 7.5, note: 'AHAM-certified 360 CADR. 360 sq ft coverage at 5 ACH.' },
@@ -71,7 +70,7 @@ Choose Winix 5500-2 for budget auto-mode sensor without paying app premium. For 
     { q: "Winix 5500-2 vs Levoit Core 600S: which is better?", a: "The Levoit Core 600S covers a larger area. The Winix 5500-2 is the budget choice at $249 with an auto-mode sensor and strong filter economics but no app. Choose Winix for value, Levoit for larger rooms." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default winix5500

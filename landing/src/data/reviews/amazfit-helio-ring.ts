@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const amazfitHelioRing: ToolReview = {
+const amazfitHelioRing: ToolReviewInput = {
   slug: 'amazfit-helio-ring',
   name: 'Amazfit Helio Ring',
   brand: 'Amazfit',
@@ -12,11 +12,10 @@ const amazfitHelioRing: ToolReview = {
     'A genuinely cheap, subscription-free ring with decent sleep and HRV tracking — but only three sizes and a short real-world battery keep it a budget pick, not an Oura rival.',
   summary:
     'The Amazfit Helio Ring is Zepp Health’s budget entry into the smart-ring space: a light titanium ring at $199 with no subscription for core metrics. It tracks heart rate, HRV (RMSSD), blood oxygen, skin temperature and sleep, syncing to the cross-platform Zepp app. Sleep tracking is respectable for the price, and being subscription-free at $199 makes it one of the cheapest capable rings. But it ships in just three sizes (8, 10, 12), so many people can’t get a proper fit, and real-world battery is only about 2.5–3 days — well short of Oura and RingConn.',
-  overallScore: 6.8,
   scores: [
     { criterionId: 'hrv-accuracy', score: 6.5, note: 'Continuous HRV via RMSSD for recovery/readiness. Reasonable for a budget ring, but not validated to the level of Oura.' },
     { criterionId: 'sensor', score: 6.5, note: 'Optical HR, SpO2 and skin-temperature sensors in a light titanium shell. Budget-tier optics; a clean signal at rest.' },
-    { criterionId: 'sleep-accuracy', score: 7.5, note: 'The strongest area — good sleep tracking for the price (stage estimates, not a sleep study).' },
+    { criterionId: 'sleep-accuracy', score: 7.0, note: 'Good sleep tracking for the price (stage estimates, not a sleep study); no independent validation was found. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'data-access', score: 6.0, note: 'Data lives in the Zepp app with basic export; no truly open API.' },
     { criterionId: 'wearability', score: 6.0, note: 'Very light (<4g) and thin (2.6mm), comfortable to sleep in — but only three sizes (8, 10, 12) means many fingers can’t get a proper fit, and real-world battery is only ~2.5–3 days.' },
     { criterionId: 'app-ux', score: 6.5, note: 'The Zepp app (iOS + Android) gives sleep scores, readiness and basic workout summaries. Capable but less polished and explanatory than Oura.' },
@@ -73,7 +72,7 @@ The science behind why HRV is the signal worth tracking.
     { q: "What are the downsides of the Amazfit Helio Ring?", a: "Only three sizes, so fit is hit-or-miss, and a short single-charge battery. If a size fits and you want the cheapest subscription-free ring, it delivers." },
   ],
   datePublished: '2026-09-06',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default amazfitHelioRing

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const iqairVsMolekuleVsDyson: HeadToHead = {
+const iqairVsMolekuleVsDyson: HeadToHeadInput = {
   slug: 'iqair-healthpro-plus-vs-molekule-air-pro-vs-dyson-purifier-big-quiet',
   productASlug: 'iqair-healthpro-plus',
   productBSlug: 'molekule-air-pro',
@@ -10,7 +10,7 @@ const iqairVsMolekuleVsDyson: HeadToHead = {
     'IQAir HealthPro Plus vs Molekule Air Pro vs Dyson Big+Quiet — the three category-defining premium air purifiers compared.',
   intro:
     'The three premium air purifiers that define the 2026 category. IQAir HealthPro Plus — clinical-grade HyperHEPA H14 with multi-decade Swiss pedigree. Molekule Air Pro — PECO photocatalytic VOC destruction + True HEPA + premium app. Dyson Purifier Big+Quiet — consumer-brand polish + True HEPA + formaldehyde destruction + best smart features.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Three different premium theses. IQAir for clinical filtration depth. Molekule for PECO VOC destruction. Dyson for premium smart + formaldehyde + quietest operation.',
   bestForA:
@@ -68,7 +68,7 @@ If you want premium consumer-brand polish + best smart features + formaldehyde d
   relatedComparisonSlug: 'best-air-purifiers-2026',
   publishOn: '2026-07-27',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-10',
 }
 
 export default iqairVsMolekuleVsDyson

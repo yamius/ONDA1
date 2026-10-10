@@ -1,4 +1,4 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
 /**
  * Resona Health VIBE vs HigherDOSE PEMF Mat — portable wearable PEMF vs full-body
@@ -10,7 +10,7 @@ import type { HeadToHead } from '../types'
  * 20 lb amethyst + obsidian, 185 × 73.5 cm, 19 kg, 120-day money-back, FSA/HSA eligible.
  * Evidence-based, not hands-on.
  */
-const resonaHealthVibeVsHigherdosePemfMat: HeadToHead = {
+const resonaHealthVibeVsHigherdosePemfMat: HeadToHeadInput = {
   slug: 'resona-health-vibe-vs-higherdose-pemf-mat',
   productASlug: 'resona-health-vibe',
   productBSlug: 'higherdose-pemf-mat',
@@ -19,7 +19,7 @@ const resonaHealthVibeVsHigherdosePemfMat: HeadToHead = {
     'Resona VIBE ($299) is the cheaper, portable way to try PEMF; HigherDOSE PEMF Mat ($1,295) wins for whole-body sessions with infrared heat.',
   intro:
     'Resona Health VIBE and the HigherDOSE PEMF Mat both use pulsed electromagnetic fields, but they are built for different routines. VIBE is a 75 g pocket device with 130 preset protocols that you carry or wear on a lanyard and place on one area. The HigherDOSE mat is a full-length mat that combines PEMF with far-infrared heat and a layer of amethyst and obsidian crystals for lie-down sessions at home. This comparison is evidence-based: ONDA has not tested either device hands-on.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'No overall winner — Resona VIBE is the smarter low-cost way to find out whether PEMF helps you, while the HigherDOSE PEMF Mat is for people who already want a daily whole-body, heated recovery session.',
   bestForA:
@@ -80,7 +80,7 @@ PEMF evidence for consumer devices is limited. The strongest signal is for osteo
 Start with **Resona Health VIBE** if you want to test PEMF for a fraction of the price. Choose **the HigherDOSE PEMF Mat** if a heated, whole-body session is what you are really buying. For more options, see [the best PEMF devices of 2026](/reviews/compare/best-pemf-devices-2026) and the [Healthy Wave vs HigherDOSE comparison](/reviews/vs/healthy-wave-multi-wave-vs-higherdose-pemf-mat).`,
   relatedComparisonSlug: 'best-pemf-devices-2026',
   datePublished: '2026-10-04',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default resonaHealthVibeVsHigherdosePemfMat

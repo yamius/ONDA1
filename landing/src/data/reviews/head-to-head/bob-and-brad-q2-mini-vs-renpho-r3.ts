@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const bobVsRenpho: HeadToHead = {
+const bobVsRenpho: HeadToHeadInput = {
   slug: 'bob-and-brad-q2-mini-vs-renpho-r3',
   productASlug: 'bob-and-brad-q2-mini',
   productBSlug: 'renpho-r3',
@@ -9,7 +9,7 @@ const bobVsRenpho: HeadToHead = {
     'Bob and Brad Q2 Mini vs Renpho R3 — the $99 budget massage-gun duel. PT-brand credibility vs Amazon-bestseller spec.',
   intro:
     'Bob and Brad Q2 Mini and Renpho R3 are the two $99 budget massage guns users compare. Both have brushless motors, both have ~6 hour batteries. The defining differences: Bob and Brad has PT-brand credibility from "Famous Physical Therapists" YouTube channel + mini form factor; Renpho has higher stall force + Amazon distribution scale.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'PT credibility vs raw spec at the same $99. Bob and Brad for brand framing + mini portability. Renpho R3 for higher stall force in full-size.',
   bestForA:
@@ -57,7 +57,7 @@ If you want higher stall force + deeper amplitude in full-size budget form — R
   relatedComparisonSlug: 'best-massage-guns-2026',
   publishOn: '2026-07-20',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-10',
 }
 
 export default bobVsRenpho

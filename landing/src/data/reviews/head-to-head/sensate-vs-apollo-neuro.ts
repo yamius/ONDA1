@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const sensateVsApollo: HeadToHead = {
+const sensateVsApollo: HeadToHeadInput = {
   slug: 'sensate-vs-apollo-neuro',
   productASlug: 'sensate',
   productBSlug: 'apollo-neuro',
@@ -9,7 +9,6 @@ const sensateVsApollo: HeadToHead = {
     'Sensate vs Apollo Neuro — side-by-side ONDA comparison of two passive vagus-modulation devices. Infrasonic chest pebble versus vibrotactile all-day wearable.',
   intro:
     'Sensate and Apollo Neuro are the two passive (non-electrical) vagus-modulation devices most commonly compared. Both target vagal tone without electrodes; the mechanisms and use cases differ. Sensate is a chest-placed infrasonic pebble paired with soundscape sessions; Apollo Neuro is a vibrotactile wrist or ankle band designed for continuous all-day wear. The decision is between a session-based wind-down ritual and ambient daily modulation.',
-  winnerSlug: 'apollo-neuro',
   verdict:
     'Apollo Neuro wins overall on evidence base, all-day wearability and use-case versatility. Sensate wins specifically as an evening wind-down ritual when paired sound is the part you actually want.',
   bestForA:
@@ -57,7 +56,7 @@ If pre-sleep wind-down is the primary use case and a paired-soundscape session i
 If you want vagal modulation that runs in your life — at work, in transit, while training, while sleeping — without any session ritual, Apollo is the right shape. The seven modes cover most use cases, the wrist/ankle/clip-on form factor is genuinely wearable around the clock, and the University of Pittsburgh research base is the strongest in non-electrical vagus modulation.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default sensateVsApollo

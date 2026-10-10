@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const threeCervical: HeadToHead = {
+const threeCervical: HeadToHeadInput = {
   slug: 'gammacore-sapphire-cv-vs-truvaga-350-vs-pulsetto',
   productASlug: 'gammacore-sapphire-cv',
   productBSlug: 'truvaga-350',
@@ -10,7 +10,7 @@ const threeCervical: HeadToHead = {
     'gammaCore vs Truvaga vs Pulsetto — three-way ONDA comparison of cervical tVNS devices. FDA-cleared prescription, consumer same-hardware and accessible collar in one decision.',
   intro:
     'gammaCore Sapphire CV, Truvaga 350 and Pulsetto are the three cervical tVNS devices users compare across the regulated–consumer spectrum. gammaCore is FDA-cleared prescription only; Truvaga is its consumer over-the-counter sibling on the same hardware platform; Pulsetto is the most accessible consumer collar with the broadest protocol library. Three regulatory tiers, one nerve target.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Different tiers. gammaCore for clinically-indicated headache patients with a prescriber. Truvaga 350 for consumers wanting the gammaCore platform without prescription. Pulsetto for the most accessible daily-use cervical tVNS.',
   bestForA:
@@ -68,7 +68,7 @@ If you want the gammaCore hardware platform — same 5 kHz cervical waveform, sa
 If you want a daily-use cervical tVNS collar with four guided programmes and no clinical commitment, Pulsetto is the right shape. The lowest price, the broadest protocol library, and the no-cap session lifetime are the differentiators. Most consumer users land here.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default threeCervical

@@ -107,7 +107,7 @@ Three buying questions resolve the category cleanly:
 The category is mature; these ten options cover the full landscape of consumer choices.`,
   publishOn: '2026-06-04',
   datePublished: '2026-05-25',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default bestInfraredSauna2026

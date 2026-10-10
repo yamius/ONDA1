@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const balanceVsHeadspace: HeadToHead = {
+const balanceVsHeadspace: HeadToHeadInput = {
   slug: 'balance-vs-headspace',
   productASlug: 'balance',
   productBSlug: 'headspace',
@@ -9,7 +9,7 @@ const balanceVsHeadspace: HeadToHead = {
     'Balance vs Headspace — the adaptive, personalised meditation app (with a free first year) vs the structured course that teaches you to meditate, backed by research.',
   intro:
     'These two split cleanly on philosophy. Balance builds a personalised daily plan that adapts to your goals and check-ins — and famously gives new users a full year free. Headspace is the structured teacher: courses that introduce one technique at a time, with the deepest research base in the category. It’s personalisation-and-adaptiveness versus structure-and-teaching.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Personalisation vs structured learning. Balance wins on an adaptive daily plan tuned to you and a genuinely generous free first year. Headspace wins on teaching you to meditate from scratch, a broader polished library and a large peer-reviewed evidence base. Beginners who want a guided path Headspace; people who want a plan that adapts to them, Balance.',
   bestForA:
@@ -56,7 +56,7 @@ For the sleep-and-content leader, see [Balance vs Calm](/reviews/vs/balance-vs-c
   relatedComparisonSlug: 'best-meditation-apps-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default balanceVsHeadspace

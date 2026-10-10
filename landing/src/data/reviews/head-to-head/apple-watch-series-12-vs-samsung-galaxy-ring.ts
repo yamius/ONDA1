@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const series12VsGalaxyRing: HeadToHead = {
+const series12VsGalaxyRing: HeadToHeadInput = {
   slug: 'apple-watch-series-12-vs-samsung-galaxy-ring',
   productASlug: 'apple-watch-series-12',
   productBSlug: 'samsung-galaxy-ring',
@@ -9,7 +9,7 @@ const series12VsGalaxyRing: HeadToHead = {
     'Apple Watch Series 12 vs Samsung Galaxy Ring for HRV and sleep — two subscription-free trackers from rival ecosystems. Watch vs ring, weighed axis by axis, starting with the phone you own.',
   intro:
     'Both start at $399 and neither needs a subscription, so this comparison comes down to form factor and ecosystem. The Series 12 brings the new Health Sensing System — HRV sampled 24× more often, Recovery HRV, ECG and hypertension notifications — in a full smartwatch. The Galaxy Ring is a comfortable multi-day ring for overnight HRV and sleep, built around Samsung Health and Android. The first question is which phone is in your pocket.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'No overall winner — it splits by phone and use case. On Android, and especially a Samsung phone, the Galaxy Ring is the easy, subscription-free pick for overnight HRV and sleep with a multi-day battery. For an all-round smartwatch with ECG, hypertension notifications, more open data and HRV now usable as a personal trend, the Series 12 wins — inside Apple’s iPhone ecosystem.',
   bestForA:
@@ -52,7 +52,7 @@ The Galaxy Ring has no iPhone support; it is built around Samsung Health and And
 The Series 12 samples HRV about 24× more often than before and reports Recovery HRV (Apple hasn’t published its formula), with Overall HRV reported separately — see [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) and [why HRV reads differently on every device](/articles/hrv-different-every-device). If the most precise overnight HRV is your only goal, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default series12VsGalaxyRing

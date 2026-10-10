@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const hv3ProVsAchedaway: HeadToHead = {
+const hv3ProVsAchedaway: HeadToHeadInput = {
   slug: 'hypervolt-3-pro-vs-achedaway-pro',
   productASlug: 'hypervolt-3-pro',
   productBSlug: 'achedaway-pro',
@@ -9,7 +9,7 @@ const hv3ProVsAchedaway: HeadToHead = {
     'Hyperice Hypervolt 3 Pro vs Achedaway Pro — same $349, two philosophies: quiet plus a full app ecosystem vs the highest stall force in the category and more attachments.',
   intro:
     'Priced identically at $349, these two make opposite bets. The Achedaway Pro chases raw specs — the highest stall force in the category (80 lbs) and seven attachments — but skips a polished app ecosystem. The Hypervolt 3 Pro trades a little peak force for the quietest motor, a refined Hyperice app with guided routines, and brand pedigree. Spec-hunters vs ecosystem-and-quiet.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Same price, opposite priorities. The Achedaway Pro wins on raw stall force (80 vs ~70 lbs) and attachment count; the Hypervolt 3 Pro wins on quiet operation, the Hyperice app and guided routines, and brand support. Pick by whether you want maximum specs or a quieter, more connected experience.',
   bestForA:
@@ -56,7 +56,7 @@ Cross-shop against [Theragun PRO Plus](/reviews/vs/hypervolt-3-pro-vs-theragun-p
   relatedComparisonSlug: 'best-massage-guns-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default hv3ProVsAchedaway

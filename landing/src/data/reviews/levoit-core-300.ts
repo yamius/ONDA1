@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const levoitCore300: ToolReview = {
+const levoitCore300: ToolReviewInput = {
   slug: 'levoit-core-300',
   name: 'Levoit Core 300',
   brand: 'Levoit',
@@ -12,7 +12,6 @@ const levoitCore300: ToolReview = {
     'Best entry-budget — True HEPA H13 + carbon at $99 with credible 219 sq ft coverage. The starter device for users entering the category.',
   summary:
     'Levoit Core 300 is the entry-budget reference — True HEPA H13, activated-carbon layer, 219 sq ft AHAM-certified coverage, basic 3-speed control, $99. Levoit consumer brand dominance with Amazon distribution. No app, no sensor, no auto mode — pure mechanical entry-level device. The right starter purifier for users entering the category.',
-  overallScore: 6.5,
   scores: [
     { criterionId: 'filtration-technology', score: 7.5, note: 'True HEPA H13 + activated carbon. Same core filtration spec as mid-budget devices at entry price.' },
     { criterionId: 'cadr-coverage', score: 6.5, note: 'AHAM-certified 141 CADR. 219 sq ft coverage at 2 ACH; ~85 sq ft at 5 ACH — bedroom-only scale.' },
@@ -70,7 +69,7 @@ Choose Levoit Core 300 as starter purifier for single bedroom at $99. For larger
     { q: "Does the Levoit Core 300 have an app or auto mode?", a: "No. The Core 300 has no app, no sensor and no auto mode, just three manual speeds. It is a purely mechanical entry-level device in a plastic budget build. For app control and auto mode, the Levoit Core 600S is the step up at $299." },
   ],
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-10-10',
 }
 
 export default levoitCore300

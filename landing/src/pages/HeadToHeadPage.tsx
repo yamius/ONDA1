@@ -24,6 +24,7 @@ import { useLocation, useParams, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
 import { readHeadToHead, getReviewBySlug, getComparisonBySlug } from '../lib/review-content'
+import { scoreComparison } from '../data/reviews/scoring'
 import { langFromPath, langHref, homePathFor } from '../i18n'
 import { NotFoundPage } from './NotFoundPage'
 
@@ -56,6 +57,25 @@ export function HeadToHeadPage() {
   const colsClass = products.length === 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2'
 
   const winner = products.find((p) => p.slug === h2h.winnerSlug) ?? null
+  // Score line above the verdict. "Depends on the job" duels and any duel
+  // whose top-two gap is ≤ 0.1 show the ONDA score comparison instead of a
+  // WINNER label (scoring.ts PRACTICALLY_EQUAL_GAP).
+  const { ranked, practicallyEqual } = scoreComparison(products)
+  const rankedScores = ranked.map((p) => p.overallScore.toFixed(1))
+  const andSep = tReviews('ui.scoresAnd', { defaultValue: ' and ' }) as string
+  const scoreLine = practicallyEqual
+    ? (tReviews('ui.practicallyEqual', {
+        scores: rankedScores.length > 2
+          ? `${rankedScores.slice(0, -1).join(', ')}${andSep}${rankedScores[rankedScores.length - 1]}`
+          : rankedScores.join(andSep),
+        defaultValue: 'Practically equal by ONDA score ({{scores}})',
+      }) as string)
+    : (tReviews('ui.higherScore', {
+        name: ranked[0].name,
+        scores: rankedScores.join(tReviews('ui.scoresVs', { defaultValue: ' vs ' }) as string),
+        defaultValue: 'Higher ONDA score: {{name}} ({{scores}})',
+      }) as string)
+  const showScoreLine = !!h2h.jobDependentVerdict || practicallyEqual || !winner
   const related = h2h.relatedComparisonSlug ? getComparisonBySlug(h2h.relatedComparisonSlug) : undefined
 
   return (
@@ -96,7 +116,7 @@ export function HeadToHeadPage() {
           </h2>
         )}
         <p className="mb-2 font-mono text-xs tracking-widest text-terminal-green/80">
-          {winner ? `WINNER: ${winner.name}` : 'VERDICT: TIE'}
+          {showScoreLine ? scoreLine : `WINNER: ${winner!.name}`}
         </p>
         <p className="text-sm leading-relaxed text-white/85">{tr('verdict', h2h.verdict)}</p>
       </section>

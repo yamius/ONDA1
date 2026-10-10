@@ -21,7 +21,7 @@ import { writeFileSync, readFileSync, mkdirSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { buildSync } from 'esbuild'
-import { reviews, headToHeads, comparisons, CATEGORY_URL_SLUGS } from '../src/data/reviews'
+import { reviews, headToHeads, comparisons, CATEGORY_URL_SLUGS, scoreComparison } from '../src/data/reviews'
 import { ADAPTIVE_PRACTICES } from '../src/data/adaptivePractices'
 
 const SITE = 'https://onda-life.com'
@@ -104,16 +104,25 @@ if (missing.length) {
   throw new Error(`hrvMetric not set for wearable review(s): ${missing.join(', ')}`)
 }
 
-const duelRows = headToHeads.map((h) => ({
+// Winner is exported only when the duel page shows one: not for 'depends on the job'
+// duels and not when the top-two ONDA score gap is <= 0.1 (shown as practically equal).
+const reviewBySlug = new Map(reviews.map((r) => [r.slug, r]))
+const duelRows = headToHeads.map((h) => {
+  const prods = [h.productASlug, h.productBSlug, h.productCSlug].filter((s): s is string => !!s).map((s) => reviewBySlug.get(s)!).filter(Boolean)
+  const { practicallyEqual } = scoreComparison(prods)
+  const status = h.jobDependentVerdict ? 'depends-on-the-job' : practicallyEqual || !h.winnerSlug ? 'practically-equal' : 'winner'
+  return {
   slug: h.slug,
   title: h.title,
   url: `${SITE}/reviews/vs/${h.slug}`,
   products: [h.productASlug, h.productBSlug, h.productCSlug].filter(Boolean),
-  winner: h.winnerSlug,
+  winner: status === 'winner' ? h.winnerSlug : null,
+  winnerStatus: status,
+  onda_scores: Object.fromEntries(prods.map((r) => [r.slug, r.overallScore])),
   verdict: h.verdict,
   bestFor: { a: h.bestForA, b: h.bestForB, c: h.bestForC ?? null },
   axes: h.axes,
-}))
+}})
 
 const roundupRows = comparisons.map((c) => ({
   slug: c.slug,

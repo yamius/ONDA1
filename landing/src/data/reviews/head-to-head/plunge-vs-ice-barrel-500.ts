@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const plungeVsIceBarrel: HeadToHead = {
+const plungeVsIceBarrel: HeadToHeadInput = {
   slug: 'plunge-vs-ice-barrel-500',
   productASlug: 'plunge',
   productBSlug: 'ice-barrel-500',
@@ -9,7 +9,7 @@ const plungeVsIceBarrel: HeadToHead = {
     'The Plunge vs Ice Barrel 500 — side-by-side ONDA comparison of chiller-built premium vs the popular barrel-style ice-fill cold plunge.',
   intro:
     'The Plunge and Ice Barrel 500 are the two most-compared cold-plunge tubs across the chiller-built vs ice-fill divide. Both deliver real cold-exposure; the structural difference is the operating model — Plunge holds 39°F automatically, Ice Barrel requires daily ice fill.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Different operating models. The Plunge for users who want set-and-forget daily-use convenience. Ice Barrel for cold climates or occasional use where the upfront savings matter more than daily ice cost.',
   bestForA:
@@ -56,7 +56,7 @@ If daily-use cold plunge is the goal and you want a set-and-forget tub that hold
 If you are in a cold climate where ice cost is negligible, or doing occasional cold-plunge practice — Ice Barrel saves $4,800 upfront. The vertical footprint also fits smaller spaces.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default plungeVsIceBarrel

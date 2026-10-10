@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const theragunVsHypervoltVsAchedaway: HeadToHead = {
+const theragunVsHypervoltVsAchedaway: HeadToHeadInput = {
   slug: 'theragun-pro-plus-vs-hypervolt-2-pro-vs-achedaway-pro',
   productASlug: 'theragun-pro-plus',
   productBSlug: 'hypervolt-2-pro',
@@ -10,7 +10,7 @@ const theragunVsHypervoltVsAchedaway: HeadToHead = {
     'Theragun PRO Plus vs Hypervolt 2 Pro vs Achedaway Pro — the three premium massage guns compared. Therabody ecosystem vs Hyperice value vs spec maximalist.',
   intro:
     'The three premium massage guns that define the 2026 category. Theragun PRO Plus — Therabody flagship with 60 lbs stall + 16 mm amplitude + best app + 2-year warranty. Hypervolt 2 Pro — Hyperice 60 lbs stall at $200 less. Achedaway Pro — 80 lbs stall (highest in category) at $349 with no app.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Three different theses. Theragun PRO Plus for spec ceiling + Therabody app. Hypervolt 2 Pro for same stall at lower price. Achedaway Pro for highest stall force at sub-Theragun pricing without app.',
   bestForA:
@@ -68,7 +68,7 @@ If you want highest stall force (80 lbs) at sub-Theragun pricing and you don\'t 
   relatedComparisonSlug: 'best-massage-guns-2026',
   publishOn: '2026-07-20',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-10',
 }
 
 export default theragunVsHypervoltVsAchedaway

@@ -39,7 +39,12 @@
     "seeFullRanking": "查看完整排名",
     "tie": "平手",
     "why": "原因",
-    "winner": "胜出"
+    "winner": "胜出",
+    "higherScore": "ONDA 评分更高：{{name}}（{{scores}}）",
+    "practicallyEqual": "按 ONDA 评分基本持平（{{scores}}）",
+    "scoresVs": " 对 ",
+    "scoresAnd": "和",
+    "editorialAdjustment": "编辑调整 {{value}}：{{reason}}"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
@@ -126,23 +131,23 @@
       ],
       "cons": [
         "大部分附加价值需要Ultrahuman戒指——而Ring Air已不在美国销售（Ring Pro在售）",
-        "雅培传感器在准确度上略逊于Dexcom G7",
+        "传感器预热60分钟（Dexcom G7：30分钟）",
         "指导由AI加表现教练提供——没有营养师或临床医生",
         "美国Lingo版本仅面向18岁以上且不使用胰岛素的成年人"
       ],
       "scoreNotes": {
-        "sensor-accuracy": "全部采用雅培传感器：美国以外为FreeStyle Libre（Libre 3的MARD约9%），美国通过M2 Live使用雅培Lingo（佩戴14天，基于Libre）。在独立比较中准确度略低于Dexcom G7。",
+        "sensor-accuracy": "全部采用雅培传感器：美国以外为FreeStyle Libre 3，美国通过M2 Live使用雅培Lingo（佩戴14天，基于Libre）。在一项独立的头对头研究（Eichenlaub et al. 2025）中，Libre 3与Dexcom G7的准确度相近。",
         "insights": "扎实的餐食影响分析，加上独特的跨信号视图：血糖与HRV、睡眠和恢复显示在同一时间线上。",
         "coaching": "主要由AI驱动（Jade AI洞察）。方案包含与表现教练的沟通，但不是营养师或临床医生。",
         "app-integration": "与Ultrahuman戒指原生集成，提供HRV/睡眠/恢复数据；支持Apple Health、Google Fit和饮食记录。是该类别中功能最丰富的单一App组合。",
         "flexibility": "美国：单个Lingo传感器$129，或每月$99起的订阅，可随时取消。戒指是可选的，但承载了大部分附加价值。",
         "value": "在美国每月$99起——与Stelo持平，比Levels便宜。如果你已有Ultrahuman戒指，性价比最高。"
       },
-      "content": "## 简要结论\n\nUltrahuman M1是一个连续血糖监测（CGM）计划，位于Ultrahuman App中，与Ultrahuman智能戒指的数据并列。这正是它的全部意义：你的血糖曲线与心率变异性（HRV）、睡眠和恢复处于同一时间线上。如果你拥有Ultrahuman戒指，它是整合度最高的CGM选择。如果你只想要血糖数据，更便宜或更简单的选项同样好用。\n\n**美国重要更新：** 2026年6月18日，Ultrahuman在美国推出了**M2 Live**。它使用雅培的非处方**Lingo**传感器，因此你不再需要处方或医疗咨询。订阅价格每月$99起，单个传感器$129。在美国以外，M1仍使用雅培FreeStyle Libre传感器。\n\n## Ultrahuman M1如何工作？\n\n你把一个小传感器贴在上臂后侧。皮下的细丝测量细胞间液（而非血液）中的葡萄糖，持续约14天。手机读取传感器，Ultrahuman App显示餐食、运动、压力和睡眠如何影响你的血糖。配合戒指，App还会把这些曲线与HRV、睡眠阶段和恢复联系起来——例如，深夜的丰盛晚餐是否表现为睡眠变差和次日早晨HRV降低。\n\n## 证据怎么说？\n\n雅培Libre系列传感器在糖尿病患者中经过充分验证；Libre 3相对于实验室血糖的平均绝对误差约为9%。对于**没有**糖尿病的人，证据较弱。健康人的血糖保持在狭窄范围内，餐后小幅上升是正常的。目前还没有有力证据表明追求更平缓的曲线能改善长期健康。CGM最好用作习惯的反馈工具，而不是健康的定论。\n\n## Ultrahuman M1多少钱？\n\n| 选项 | 价格（美国） | 备注 |\n|---|---|---|\n| Ultrahuman M2 Live（Lingo） | 每月$99起；单个传感器$129 | 无需处方，戒指可选 |\n| [Stelo](/reviews/stelo)（Dexcom） | 2个传感器$99（约30天） | 无需处方，App简单 |\n| [Lingo](/reviews/lingo)（雅培App） | 每个2周传感器$54起 | 同款传感器，雅培自家App |\n| [Levels](/reviews/levels) | Core会员$399/年 | 一个月CGM＋化验套餐 |\n\n如果你还想要戒指，[Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro)一次性售价$479。在Oura赢得专利诉讼后，旧款Ring Air已不在美国销售——CGM本身不在该禁令范围内。\n\n## Ultrahuman M1有哪些缺点？\n\n几乎所有差异化都取决于你是否同时拥有Ultrahuman戒指。作为独立CGM，它就是一个雅培传感器加一个合格的App——雅培自家的Lingo App每个传感器更便宜，而基于Dexcom的Stelo准确度略高。指导主要来自AI。美国Lingo版本仅面向18岁以上且不使用胰岛素的成年人。\n\n## 谁应该买Ultrahuman M1，谁不应该？\n\n**购买**：如果你已拥有（或计划购买）Ultrahuman戒指，并希望在一处查看血糖、睡眠和HRV。\n\n**不必考虑**：如果你只想要血糖数据（参见[Lingo vs Stelo vs Ultrahuman M1](/reviews/vs/lingo-vs-stelo-vs-ultrahuman-m1)），如果你想要真人营养师，或者你患有糖尿病或使用胰岛素——那就请在医生指导下使用医用CGM。\n\n## 安全提示\n\n消费级CGM不是诊断设备。它们无法诊断或排除糖尿病或糖尿病前期；如果你的数值让你担心，请让医生为你做HbA1c或空腹血糖检测。胶贴可能刺激皮肤；请轮换手臂，如出现皮疹或感染迹象请停止使用。\n\n更多选择请参阅[2026年生物黑客最佳CGM](/reviews/compare/best-cgm-for-biohackers-2026)和[Levels vs Ultrahuman M1](/reviews/vs/levels-vs-ultrahuman-m1)。\n\n---\n\n## 延伸阅读\n\n这些计划所呈现的代谢生物学——以及数据所开启的方案。\n\n- [AI生物标志物追踪](/articles/ai-biomarker-tracking-predictive) ——CGM是消费者可获得的最高密度生物标志物数据流\n- [皮质醇现在能连续监测了吗？](/articles/chm-continuous-hormone-monitoring) ——为什么与血糖不同，目前没有消费级可穿戴设备能测量激素\n- [作为数据链接的肠脑轴](/articles/gut-brain-axis-data-link) ——微生物组与血糖模式的交汇之处\n",
+      "content": "## 简要结论\n\nUltrahuman M1是一个连续血糖监测（CGM）计划，位于Ultrahuman App中，与Ultrahuman智能戒指的数据并列。这正是它的全部意义：你的血糖曲线与心率变异性（HRV）、睡眠和恢复处于同一时间线上。如果你拥有Ultrahuman戒指，它是整合度最高的CGM选择。如果你只想要血糖数据，更便宜或更简单的选项同样好用。\n\n**美国重要更新：** 2026年6月18日，Ultrahuman在美国推出了**M2 Live**。它使用雅培的非处方**Lingo**传感器，因此你不再需要处方或医疗咨询。订阅价格每月$99起，单个传感器$129。在美国以外，M1仍使用雅培FreeStyle Libre传感器。\n\n## Ultrahuman M1如何工作？\n\n你把一个小传感器贴在上臂后侧。皮下的细丝测量细胞间液（而非血液）中的葡萄糖，持续约14天。手机读取传感器，Ultrahuman App显示餐食、运动、压力和睡眠如何影响你的血糖。配合戒指，App还会把这些曲线与HRV、睡眠阶段和恢复联系起来——例如，深夜的丰盛晚餐是否表现为睡眠变差和次日早晨HRV降低。\n\n## 证据怎么说？\n\n雅培Libre系列传感器在糖尿病患者中经过充分验证；厂商报告Libre 3相对于实验室血糖的平均绝对误差约为9%（厂商数据在ONDA评分中不计为证据），而在一项独立的头对头研究（Eichenlaub et al. 2025）中，Libre 3与Dexcom G7的准确度相近。对于**没有**糖尿病的人，证据较弱。健康人的血糖保持在狭窄范围内，餐后小幅上升是正常的。目前还没有有力证据表明追求更平缓的曲线能改善长期健康。CGM最好用作习惯的反馈工具，而不是健康的定论。\n\n## Ultrahuman M1多少钱？\n\n| 选项 | 价格（美国） | 备注 |\n|---|---|---|\n| Ultrahuman M2 Live（Lingo） | 每月$99起；单个传感器$129 | 无需处方，戒指可选 |\n| [Stelo](/reviews/stelo)（Dexcom） | 2个传感器$99（约30天） | 无需处方，App简单 |\n| [Lingo](/reviews/lingo)（雅培App） | 每个2周传感器$54起 | 同款传感器，雅培自家App |\n| [Levels](/reviews/levels) | Core会员$399/年 | 一个月CGM＋化验套餐 |\n\n如果你还想要戒指，[Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro)一次性售价$479。在Oura赢得专利诉讼后，旧款Ring Air已不在美国销售——CGM本身不在该禁令范围内。\n\n## Ultrahuman M1有哪些缺点？\n\n几乎所有差异化都取决于你是否同时拥有Ultrahuman戒指。作为独立CGM，它就是一个雅培传感器加一个合格的App——雅培自家的Lingo App每个传感器更便宜，而基于Dexcom的Stelo订阅更便宜。指导主要来自AI。美国Lingo版本仅面向18岁以上且不使用胰岛素的成年人。\n\n## 谁应该买Ultrahuman M1，谁不应该？\n\n**购买**：如果你已拥有（或计划购买）Ultrahuman戒指，并希望在一处查看血糖、睡眠和HRV。\n\n**不必考虑**：如果你只想要血糖数据（参见[Lingo vs Stelo vs Ultrahuman M1](/reviews/vs/lingo-vs-stelo-vs-ultrahuman-m1)），如果你想要真人营养师，或者你患有糖尿病或使用胰岛素——那就请在医生指导下使用医用CGM。\n\n## 安全提示\n\n消费级CGM不是诊断设备。它们无法诊断或排除糖尿病或糖尿病前期；如果你的数值让你担心，请让医生为你做HbA1c或空腹血糖检测。胶贴可能刺激皮肤；请轮换手臂，如出现皮疹或感染迹象请停止使用。\n\n更多选择请参阅[2026年生物黑客最佳CGM](/reviews/compare/best-cgm-for-biohackers-2026)和[Levels vs Ultrahuman M1](/reviews/vs/levels-vs-ultrahuman-m1)。\n\n---\n\n## 延伸阅读\n\n这些计划所呈现的代谢生物学——以及数据所开启的方案。\n\n- [AI生物标志物追踪](/articles/ai-biomarker-tracking-predictive) ——CGM是消费者可获得的最高密度生物标志物数据流\n- [皮质醇现在能连续监测了吗？](/articles/chm-continuous-hormone-monitoring) ——为什么与血糖不同，目前没有消费级可穿戴设备能测量激素\n- [作为数据链接的肠脑轴](/articles/gut-brain-axis-data-link) ——微生物组与血糖模式的交汇之处\n",
       "faq": [
         {
           "q": "Ultrahuman M1 CGM的准确度如何？",
-          "a": "Ultrahuman M1使用雅培传感器：美国以外为FreeStyle Libre（Libre 3的MARD约9%），美国通过M2 Live使用雅培Lingo。两者都可佩戴14天，无需校准。其传感器准确度得分8.5/10，略逊于Dexcom G7，ONDA总评分为7.5/10。"
+          "a": "Ultrahuman M1使用雅培传感器：美国以外为FreeStyle Libre，美国通过M2 Live使用雅培Lingo。两者都可佩戴14天，无需校准。其传感器准确度得分8.5/10，与Dexcom G7方案相同，因为在一项独立的头对头研究（Eichenlaub et al. 2025）中，Libre 3与Dexcom G7的准确度相近；ONDA总评分为7.5/10。"
         },
         {
           "q": "Ultrahuman M1多少钱？",
@@ -188,7 +193,7 @@
       "scoreNotes": {
         "hrv-accuracy": "在 Oura 的验证研究中，夜间 RMSSD 与心电图相差仅几毫秒；白天读数会因运动而漂移。",
         "sensor": "来自手指的光学 PPG 在夜间保持干净信号——这正是 HRV 最关键的时段。",
-        "sleep-accuracy": "已发表的睡眠分期结果中相对较强；一项由 Oura 资助、针对 Oura 算法、96 人参与的多导睡眠图研究显示，各分期准确率为 76–91%。",
+        "sleep-accuracy": "一项针对 Oura 算法、96 人参与的多导睡眠图研究显示各分期准确率为 76–91%，但该研究由 Oura 资助，而厂商资助的研究在ONDA评分中不计为证据；未找到对 Ring 4 睡眠分期的独立检验。ONDA规则：没有自身的独立验证时，若前几代产品经过验证，设备最高得7.5分，否则最高7.0分。",
         "data-access": "提供开发者 API，但逐搏原始数据有限，更深入的分析需要会员。",
         "wearability": "同类中最小巧的全天候外形之一；续航 4 到 7 天，充电时间短。",
         "app-ux": "精致的 App，会解释 Readiness 和 HRV，而不是把一切压缩成一个不透明的数字。",
@@ -377,10 +382,10 @@
       ]
     },
     "stelo": {
-      "verdict": "无需处方的Dexcom G7硬件——以最低的价格获得最精准的消费级CGM。",
-      "summary": "Stelo是Dexcom面向非糖尿病生物黑客直接销售的CGM，2024年获FDA批准，成为美国首款非处方（OTC）CGM。硬件是Dexcom G7传感器——与Levels和Nutrisense底层使用的传感器相同——通过Dexcom自家应用销售，两枚传感器（一个月用量）$99。洞察功能比Levels简单，但数据相同。其价格与精度之比在消费级CGM市场中最佳。",
+      "verdict": "无需处方的Dexcom G7硬件——获得G7传感器最便宜的途径。",
+      "summary": "Stelo是Dexcom面向非糖尿病生物黑客直接销售的CGM，2024年获FDA批准，成为美国首款非处方（OTC）CGM。硬件是Dexcom G7传感器——与Levels和Nutrisense底层使用的传感器相同——通过Dexcom自家应用销售，两枚传感器（一个月用量）$99。洞察功能比Levels简单，但数据相同。这是获得Dexcom G7传感器最便宜的途径。",
       "description": "ONDA评测Stelo——Dexcom面向非糖尿病人群、获FDA批准的OTC CGM。无需处方的Dexcom G7传感器。按精度、洞察、灵活性和性价比评分。",
-      "bestFor": "最适合想以最优价格获得Dexcom G7精度、又不想订阅教练服务的生物黑客。",
+      "bestFor": "最适合想以最优价格获得Dexcom G7传感器、又不想订阅教练服务的生物黑客。",
       "testNote": "基于证据的评估——依据Dexcom Stelo产品资料、Dexcom G7验证文献及2026年独立评测评分。ONDA未进行实机测试。",
       "productType": "OTC CGM（Dexcom G7硬件，消费级应用）",
       "pros": [
@@ -396,18 +401,18 @@
         "与Levels相比，第三方应用集成有限"
       ],
       "scoreNotes": {
-        "sensor-accuracy": "Dexcom G7，与Levels和Nutrisense所用硬件相同——MARD约8.2%，Stelo版可佩戴15天，预热30分钟。",
+        "sensor-accuracy": "Dexcom G7硬件，Stelo版可佩戴15天，预热30分钟。在一项独立的头对头研究（Eichenlaub et al. 2025）中，G7与FreeStyle Libre 3的准确度相近；厂商公布的精度数据在ONDA评分中不计为证据。",
         "insights": "餐食影响和每日目标范围内时间（TIR）视图扎实。深度不及Levels——没有AUC分解或食物排名历史——但覆盖了大多数用户的需求。",
         "coaching": "没有真人教练；仅有应用内AI指导和教育内容。放弃教练服务换来了价格。",
         "app-integration": "iOS/Android版Dexcom Stelo应用，支持Apple Health集成。与Levels相比，第三方连接有限。",
         "flexibility": "可买一枚也可买多枚——无需订阅，按需购买传感器。15天佩戴比Nutrisense中10天的G7更灵活（Levels现已直接提供Stelo）。",
         "value": "两枚传感器（约30天）$99，订阅价$89。无需处方即可获得Dexcom G7硬件的最佳价格。"
       },
-      "content": "## 优势所在\n\nStelo是把Dexcom G7戴在手臂上、实时观察[血糖峰值](/glossary/glucose-spikes)的最便宜的正规途径。其硬件与Levels和Nutrisense以两到三倍价格提供的完全相同——同样的传感器、同样的精度上限（独立比较中MARD约8.2%）、同样的30分钟预热。你放弃的是外层包装：Stelo的应用称职但并非行业领先，教练层是应用内AI而非注册营养师，集成生态也比Levels窄。作为2024年获FDA批准的OTC产品，它无需处方，传感器可以一盒一盒地购买。\n\n## Stelo有哪些缺点？\n\nStelo的主要缺点是洞察功能较简单——这正是取舍所在。Stelo提供餐食影响和目标范围内时间视图；Levels还增加了AUC分解、逐个食物的排名历史和更深入的分析套件。没有真人教练，第三方集成列表较短，且仅限美国的Dexcom直发限制了海外购买。如果这些功能正是你购买的理由，Stelo就不是合适的工具。\n\n## 谁应该购买Stelo？\n\n如果你想以最优价格获得目前最精准的CGM硬件，并且相信自己能解读数据，就选Stelo。如果想在同一传感器之上获得最深入的洞察功能，选Levels。如果需要注册营养师，选Nutrisense。三者的硬件完全相同——你付费购买的是硬件之上的部分。\n\n---\n\n## 延伸阅读\n\n这些项目所揭示的代谢生物学——以及数据所开启的方案。\n\n- [作为数据链路的肠脑轴](/articles/gut-brain-axis-data-link)——微生物组与血糖模式的交汇点\n- [代谢灵活性：是什么以及如何判断](/articles/metabolic-flexibility-dual-fuel-system)——血糖曲线能告诉你、也不能告诉你哪些关于燃料切换的信息\n",
+      "content": "## 优势所在\n\nStelo是把Dexcom G7戴在手臂上、实时观察[血糖峰值](/glossary/glucose-spikes)的最便宜的正规途径。其硬件与Levels和Nutrisense以两到三倍价格提供的完全相同——同样的传感器、同样的精度上限（在一项独立的头对头研究（Eichenlaub et al. 2025）中，G7与Libre 3的准确度相近）、同样的30分钟预热。你放弃的是外层包装：Stelo的应用称职但并非行业领先，教练层是应用内AI而非注册营养师，集成生态也比Levels窄。作为2024年获FDA批准的OTC产品，它无需处方，传感器可以一盒一盒地购买。\n\n## Stelo有哪些缺点？\n\nStelo的主要缺点是洞察功能较简单——这正是取舍所在。Stelo提供餐食影响和目标范围内时间视图；Levels还增加了AUC分解、逐个食物的排名历史和更深入的分析套件。没有真人教练，第三方集成列表较短，且仅限美国的Dexcom直发限制了海外购买。如果这些功能正是你购买的理由，Stelo就不是合适的工具。\n\n## 谁应该购买Stelo？\n\n如果你想以最优价格获得Dexcom G7传感器，并且相信自己能解读数据，就选Stelo。如果想在同一传感器之上获得最深入的洞察功能，选Levels。如果需要注册营养师，选Nutrisense。三者的硬件完全相同——你付费购买的是硬件之上的部分。\n\n---\n\n## 延伸阅读\n\n这些项目所揭示的代谢生物学——以及数据所开启的方案。\n\n- [作为数据链路的肠脑轴](/articles/gut-brain-axis-data-link)——微生物组与血糖模式的交汇点\n- [代谢灵活性：是什么以及如何判断](/articles/metabolic-flexibility-dual-fuel-system)——血糖曲线能告诉你、也不能告诉你哪些关于燃料切换的信息\n",
       "faq": [
         {
           "q": "Dexcom的Stelo值得买吗？",
-          "a": "如果你想以最低价格获得Dexcom G7的精度、又不需要订阅教练服务，Stelo值得购买。它是FDA批准的OTC产品，无需处方，传感器可佩戴15天。其洞察功能比Levels简单，没有真人教练，且仅在美国发货。"
+          "a": "如果你想以最低价格获得Dexcom G7传感器、又不需要订阅教练服务，Stelo值得购买。它是FDA批准的OTC产品，无需处方，传感器可佩戴15天。其洞察功能比Levels简单，没有真人教练，且仅在美国发货。"
         },
         {
           "q": "Stelo多少钱？",
@@ -432,7 +437,7 @@
       "productType": "CGM指导项目（Dexcom Stelo）",
       "pros": [
         "同类中最深入的逐个食物洞察分析",
-        "Dexcom Stelo（G7平台）——顶级的消费级CGM精度，无需处方",
+        "Dexcom Stelo（G7平台）——Dexcom G7传感器平台，无需处方",
         "精致的应用和内容库，由可信的医学委员会支持",
         "开箱即用的Apple Health和Oura集成"
       ],
@@ -443,14 +448,14 @@
         "标价为年付；只有签订年度合约，按月计算才相同"
       ],
       "scoreNotes": {
-        "sensor-accuracy": "Dexcom Stelo——基于Dexcom G7平台的OTC传感器，在独立比较中属于最精准的消费级CGM之一（G7平台相对参考值的MARD约8.2%）。佩戴15天，预热30分钟，无需处方。评分不变：从G7换成Stelo，传感器平台保持不变。",
+        "sensor-accuracy": "Dexcom Stelo——基于Dexcom G7平台的OTC传感器；佩戴15天，预热30分钟，无需处方。厂商公布的精度数据在ONDA评分中不计为证据；在一项独立的头对头研究（Eichenlaub et al. 2025）中，G7与FreeStyle Libre 3的准确度相近（相对实验室参考值的MARD约为12%对11.6%），因此两者得分相同。",
         "insights": "市场上最深入的餐食影响分析——每餐评分、AUC、峰值、回到基线所需时间，以及每日/每周目标范围内时间和血糖波动视图。",
         "coaching": "默认不含真人教练；应用就是教练，背后有丰富的内容库和医学顾问委员会支持。教练服务可另行加购。",
         "app-integration": "精致的iOS/Android应用。与Apple Health和Oura集成；支持MyFitnessPal饮食记录。",
         "flexibility": "可按月或按年付费；可暂停。可应要求导出原始数据。除当月外无任何承诺。",
         "value": "现为分级：仅应用每年$80，Core每年$399（1个月CGM + 2次化验套餐），Complete每年$1,329（2个月CGM + 化验 + 营养师）。入门价远低于过去的每月$199，但持续佩戴CGM需额外付费。"
       },
-      "content": "## 优势所在\n\nLevels是把CGM变成面向非糖尿病人群的消费品类的项目，其应用至今仍是该领域设计最周到的软件。餐食不只是出现在时间线上——每一餐都会被评分、与你自己的历史比较排名、分解为[血糖峰值](/glossary/glucose-spikes)、AUC和回到基线所需时间，并汇总为每日和每周的目标范围内时间视图，帮助锻炼[代谢灵活性](/glossary/metabolic-flexibility)。随附的传感器现为Dexcom Stelo——基于Dexcom G7平台、无需处方的非处方传感器，独立的MARD比较将其列于消费级CGM精度排名前列。医学顾问委员会带来了大多数轻教练项目所没有的可信度。\n\n## Levels有哪些缺点？\n\n需要仔细看的是定价模式。Levels取消了过去每月约$199的全包项目，改为分级会员：仅应用每年$80（自备CGM），含一个月CGM和两次化验套餐的Core每年$399，含两个月CGM的Complete每年$1,329。入门门槛比以前低得多，但如果想持续佩戴传感器，就要额外购买CGM——或者购买非处方的Dexcom Stelo或Abbott Lingo，配合仅应用方案使用。默认没有真人教练；如果你需要注册营养师，Nutrisense更合适。\n\n## 谁应该购买Levels？\n\n如果你把CGM当作仪器而非实验——想要最深入的洞察引擎、相信应用智能胜过真人指导，并且更看重化验加阶段性CGM而非持续佩戴——就选Levels。如果只想要传感器和更简单的应用，单独使用Dexcom Stelo或Lingo更便宜。如果优先考虑真人指导，选Nutrisense。\n\n---\n\n## 延伸阅读\n\n这些项目所揭示的代谢生物学——以及数据所开启的方案。\n\n- [能量调节器：TSH](/articles/energy-governor-tsh)——甲状腺驱动的代谢是血糖处理能力的上游\n- [GLP-1生物学与肌肉保留](/articles/glp1-biology-muscle-preservation)——使用GLP-1方案期间CGM数据显示了什么\n- [AI生物标志物追踪](/articles/ai-biomarker-tracking-predictive)——CGM是目前密度最高的消费级生物标志物数据流\n",
+      "content": "## 优势所在\n\nLevels是把CGM变成面向非糖尿病人群的消费品类的项目，其应用至今仍是该领域设计最周到的软件。餐食不只是出现在时间线上——每一餐都会被评分、与你自己的历史比较排名、分解为[血糖峰值](/glossary/glucose-spikes)、AUC和回到基线所需时间，并汇总为每日和每周的目标范围内时间视图，帮助锻炼[代谢灵活性](/glossary/metabolic-flexibility)。随附的传感器现为Dexcom Stelo——基于Dexcom G7平台、无需处方的非处方传感器；在一项独立的头对头研究（Eichenlaub et al. 2025）中，G7与Libre 3的准确度相近。医学顾问委员会带来了大多数轻教练项目所没有的可信度。\n\n## Levels有哪些缺点？\n\n需要仔细看的是定价模式。Levels取消了过去每月约$199的全包项目，改为分级会员：仅应用每年$80（自备CGM），含一个月CGM和两次化验套餐的Core每年$399，含两个月CGM的Complete每年$1,329。入门门槛比以前低得多，但如果想持续佩戴传感器，就要额外购买CGM——或者购买非处方的Dexcom Stelo或Abbott Lingo，配合仅应用方案使用。默认没有真人教练；如果你需要注册营养师，Nutrisense更合适。\n\n## 谁应该购买Levels？\n\n如果你把CGM当作仪器而非实验——想要最深入的洞察引擎、相信应用智能胜过真人指导，并且更看重化验加阶段性CGM而非持续佩戴——就选Levels。如果只想要传感器和更简单的应用，单独使用Dexcom Stelo或Lingo更便宜。如果优先考虑真人指导，选Nutrisense。\n\n---\n\n## 延伸阅读\n\n这些项目所揭示的代谢生物学——以及数据所开启的方案。\n\n- [能量调节器：TSH](/articles/energy-governor-tsh)——甲状腺驱动的代谢是血糖处理能力的上游\n- [GLP-1生物学与肌肉保留](/articles/glp1-biology-muscle-preservation)——使用GLP-1方案期间CGM数据显示了什么\n- [AI生物标志物追踪](/articles/ai-biomarker-tracking-predictive)——CGM是目前密度最高的消费级生物标志物数据流\n",
       "faq": [
         {
           "q": "Levels多少钱？",
@@ -462,7 +467,7 @@
         },
         {
           "q": "Levels和Lingo：该选哪款CGM？",
-          "a": "Levels洞察最深入，使用Dexcom Stelo（G7平台，比Libre 3略精准），但采用会员制（从每年$80仅应用到每年$1,329），且仅限美国。Lingo无需订阅，是最便宜的正规入门方式，基于Libre 3提供较简单的每餐评分。看重深度选Levels，看重成本选Lingo。"
+          "a": "Levels洞察最深入，使用Dexcom Stelo（G7平台；在一项独立的头对头研究中，其准确度与Libre 3相近），但采用会员制（从每年$80仅应用到每年$1,329），且仅限美国。Lingo无需订阅，是最便宜的正规入门方式，基于Libre 3提供较简单的每餐评分。看重深度选Levels，看重成本选Lingo。"
         }
       ]
     },
@@ -483,17 +488,17 @@
         "洞察功能比Levels简单——仅有每餐峰值评分",
         "任何方案都没有真人教练",
         "与Levels相比，第三方集成有限",
-        "独立比较中Libre 3精度落后于Dexcom G7"
+        "传感器预热60分钟，是Stelo（30分钟）的两倍"
       ],
       "scoreNotes": {
-        "sensor-accuracy": "Abbott Libre 3——MARD约9%，佩戴14天，免校准，预热60分钟。独立比较中精度略低于Dexcom G7。",
+        "sensor-accuracy": "基于Abbott Libre 3的传感器——佩戴14天，免校准，预热60分钟。在一项独立的头对头研究（Eichenlaub et al. 2025）中，Libre 3与Dexcom G7的准确度相近。",
         "insights": "围绕每餐一个“Lingo Count”峰值评分构建。比Levels简单——对初学者更容易，对进阶用户则令人沮丧。",
         "coaching": "极少——仅有应用内指导，没有教练。Abbott选择了简单而非教练服务。",
         "app-integration": "简洁的iOS/Android应用，支持Apple Health和Google Fit。与Levels相比，第三方连接有限。",
         "flexibility": "无需订阅——按需购买单枚两周传感器，每枚$54，或选择多传感器方案。是本列表中最灵活的商用CGM。",
         "value": "每枚两周传感器$54，无任何承诺；多传感器和订阅方案可降低单枚成本。属于美国最便宜的正规CGM之一。"
       },
-      "content": "## 优势所在\n\nLingo是美国非糖尿病人群入门CGM最便宜的正规途径。Abbott的Libre 3传感器——与Ultrahuman M1、Veri和Hello Inside所用相同的可靠14天平台——以非处方形式销售，无需处方，也无需订阅。一枚两周传感器$54，无任何承诺；多传感器和订阅方案可降低单枚成本。应用刻意保持简单：每餐一个“Lingo Count”峰值评分，而非深度分析套件。对于想尝试一下、又不想绑定每月$200项目的首次CGM用户来说，这种简单正是价值所在。\n\n## Lingo有哪些缺点？\n\n它是一款初学者工具。一旦你学会解读自己的曲线，单一评分的洞察层就会让人沮丧——没有AUC分解，没有逐个食物的排名历史，没有教练指导。第三方集成列表较短，且在独立比较中Libre 3的精度略逊于Dexcom G7。作为生物黑客持续自我实验的仪器，Lingo是起点，而不是终点。\n\n## 谁应该购买Lingo？\n\n如果你从未戴过CGM，想以成本最低的正规方式弄清它是否会给你带来改变，就选Lingo。如果你已经超越了初学者框架、想要深度，Levels或Stelo是自然的下一步。\n\n---\n\n## 延伸阅读\n\n这些项目所揭示的代谢生物学——以及数据所开启的方案。\n\n- [现在能连续追踪皮质醇吗？](/articles/chm-continuous-hormone-monitoring)——为什么与血糖不同，目前没有消费级可穿戴设备能测量激素\n- [作为数据链路的肠脑轴](/articles/gut-brain-axis-data-link)——微生物组与血糖模式的交汇点\n- [代谢灵活性：是什么以及如何判断](/articles/metabolic-flexibility-dual-fuel-system)——血糖曲线能告诉你、也不能告诉你哪些关于燃料切换的信息\n",
+      "content": "## 优势所在\n\nLingo是美国非糖尿病人群入门CGM最便宜的正规途径。Abbott的Libre 3传感器——与Ultrahuman M1、Veri和Hello Inside所用相同的可靠14天平台——以非处方形式销售，无需处方，也无需订阅。一枚两周传感器$54，无任何承诺；多传感器和订阅方案可降低单枚成本。应用刻意保持简单：每餐一个“Lingo Count”峰值评分，而非深度分析套件。对于想尝试一下、又不想绑定每月$200项目的首次CGM用户来说，这种简单正是价值所在。\n\n## Lingo有哪些缺点？\n\n它是一款初学者工具。一旦你学会解读自己的曲线，单一评分的洞察层就会让人沮丧——没有AUC分解，没有逐个食物的排名历史，没有教练指导。第三方集成列表较短，且传感器预热需60分钟，是Stelo（30分钟）的两倍。作为生物黑客持续自我实验的仪器，Lingo是起点，而不是终点。\n\n## 谁应该购买Lingo？\n\n如果你从未戴过CGM，想以成本最低的正规方式弄清它是否会给你带来改变，就选Lingo。如果你已经超越了初学者框架、想要深度，Levels或Stelo是自然的下一步。\n\n---\n\n## 延伸阅读\n\n这些项目所揭示的代谢生物学——以及数据所开启的方案。\n\n- [现在能连续追踪皮质醇吗？](/articles/chm-continuous-hormone-monitoring)——为什么与血糖不同，目前没有消费级可穿戴设备能测量激素\n- [作为数据链路的肠脑轴](/articles/gut-brain-axis-data-link)——微生物组与血糖模式的交汇点\n- [代谢灵活性：是什么以及如何判断](/articles/metabolic-flexibility-dual-fuel-system)——血糖曲线能告诉你、也不能告诉你哪些关于燃料切换的信息\n",
       "faq": [
         {
           "q": "Lingo需要处方吗？",
@@ -505,7 +510,7 @@
         },
         {
           "q": "Lingo和Levels哪个更好？",
-          "a": "Lingo更便宜也更简单：无需订阅，每餐一个Lingo Count评分。Levels提供深入得多的分析和略精准的Dexcom Stelo（G7平台），采用会员制，从每年约$80（仅应用）到每年$1,329。两者都不含真人教练。如果成本和简单比洞察深度更重要，就选Lingo。"
+          "a": "Lingo更便宜也更简单：无需订阅，每餐一个Lingo Count评分。Levels基于Dexcom Stelo（G7平台）提供深入得多的分析，采用会员制，从每年约$80（仅应用）到每年$1,329。两者都不含真人教练。如果成本和简单比洞察深度更重要，就选Lingo。"
         }
       ]
     },
@@ -530,7 +535,7 @@
       ],
       "scoreNotes": {
         "field-strength": "PEMF强度可调，1–30 Hz；厂商称表面峰值可达5高斯以上，平均约1.5高斯。高于Bemer，但与临床线圈系统相比仍属低强度。",
-        "waveform-evidence": "使用一般PEMF文献中的常见频率（包括7.83 Hz舒曼频段）。没有针对该设备的试验。",
+        "waveform-evidence": "使用一般PEMF文献中的常见频率，其中包括7.83 Hz“舒曼”档位，该档位不加分。没有针对该设备本身的试验——7.0，即我们给予没有设备专属试验的PEMF设备的分数。",
         "build": "三折式垫子，5年有限质保（直购另加3个月），90天试用。客户服务口碑良好。",
         "programmability": "同类中可编程性最佳——三种脉宽、六种波形、12个预设或自定义程序；PEMF、热和红光可独立控制。",
         "form-factor": "全身垫，集PEMF + 远红外 + 红光 + 负离子 + 水晶于一体。Multi-Wave有四种尺寸，从32×20 in到74×28 in。一张垫子可替代多台单一模式设备。",
@@ -824,9 +829,9 @@
         "数据访问一般——没有完全开放的 API；没有屏幕"
       ],
       "scoreNotes": {
-        "hrv-accuracy": "连续监测 HRV（SDNN 和 RMSSD），静息时每隔几分钟更新——夜间是真正连续的信号。",
+        "hrv-accuracy": "连续监测 HRV（SDNN 和 RMSSD），静息时每隔几分钟更新。仅有公司自行开展的预印本研究；未找到与心电图对照的独立验证（截至2026年10月）。ONDA规则：没有自身的独立验证时，若前几代产品经过验证，设备最高得7.5分，否则最高7.0分。",
         "sensor": "极轻的戒指内置光学 PPG；静息时信号干净。",
-        "sleep-accuracy": "睡眠追踪出色——早期第三方检测显示睡眠分期一致性较高，在戒指中属于较好的一档。",
+        "sleep-accuracy": "睡眠分期数据来自公司自行开展的预印本研究，而非独立检验。ONDA规则：没有自身的独立验证时，若前几代产品经过验证，设备最高得7.5分，否则最高7.0分。",
         "data-access": "可终身访问自己的数据并支持部分导出，但没有真正开放的 API。",
         "wearability": "超轻且舒适——但大量关于电池几个月内失效的反馈，削弱了它作为 24 小时设备的可靠性。",
         "app-ux": "功能强大的 App，可通过附加的“PowerPlugs”扩展。",
@@ -1364,7 +1369,7 @@
       "scoreNotes": {
         "adhesion-comfort": "硅胶胶粘剂比丙烯酸对皮肤更温和；在干净皮肤上粘附良好。对胡须的抓附力不如 Hostage Tape——硅胶贴不住胡茬。",
         "breathing-mechanism": "完全封闭设计。中间没有透气孔。为坚持只用鼻呼吸的用户设计。",
-        "evidence-grounding": "品牌资助的研究和生物黑客用户的推荐。未经 FDA 注册。监管背书弱于 Somnifix。",
+        "evidence-grounding": "品牌资助的研究（在ONDA评分中不计为证据）和生物黑客用户的推荐；没有针对该胶带的独立试验。与Hostage Tape处于同一水平。",
         "form-factor": "一体式贴条，可重复使用的硅胶结构——实际每片可用 2–3 次。明显降低每晚成本。",
         "material-safety": "硅胶胶粘剂——属于本品类中最温和的一类。低敏、不含乳胶，皮肤反应报告少。最适合敏感肌。",
         "value": "约 $30 / 10 片 × 约 3 次 = 实际每晚约 $1。高端价格由可重复使用抵消。"
@@ -1454,7 +1459,7 @@
       "scoreNotes": {
         "adhesion-comfort": "临床级 3M 医用胶粘剂——对皮肤温和，揭下不痛。对胡须的友好度不如 Hostage Tape。敏感肌款是正确选择。",
         "breathing-mechanism": "用户自行裁剪贴条——可做完全封闭、部分封闭或交叉贴法。灵活性最大。",
-        "evidence-grounding": "经 FDA 许可的医用纸胶带。有关胶粘剂安全性的临床文献。医院使用数十年。",
+        "evidence-grounding": "经 FDA 许可的医用纸胶带（这是针对外科用途的许可，按中性计分），在医院使用数十年。作为口腔胶带，它没有自己的试验，而闭口胶带整体上也只有少数小型研究，结果不一——因此口腔胶带在此项最高 6.5 分。",
         "form-factor": "卷装，每次使用都要剪。没有预裁切贴条。每晚操作比专门的闭口胶带品牌更麻烦。",
         "material-safety": "低敏医用级胶粘剂。不含乳胶。敏感肌款将反应降到最低；数十年的医院使用记录。",
         "value": "约 $5 一卷，可用 3 个月以上 = 每晚约 $0.05。闭口胶带品类中每晚成本无可匹敌。"
@@ -1590,8 +1595,8 @@
       ],
       "scoreNotes": {
         "adhesion-comfort": "在清洁皮肤上粘附牢固。对胡须的友好度不如 Hostage Tape——胶粘剂是为皮肤接触而设计的，不是为胡茬。",
-        "breathing-mechanism": "透气设计，中央带呼吸口——让部分嘴唇不被覆盖，允许部分经口呼气。这一点并未作为安全功能进行过测试；如果可能存在睡眠呼吸暂停，请先看医生。",
-        "evidence-grounding": "FDA 注册医疗器械。多年使用记录，有临床语境下的引用。监管资质强于 Hostage Tape。",
+        "breathing-mechanism": "透气设计，中央带呼吸口——让部分嘴唇不被覆盖，允许部分经口呼气。这一点并未作为安全功能进行过测试，因此该设计不额外加分：与其他口腔胶带相同的鼻呼吸机制。如果可能存在睡眠呼吸暂停，请先看医生。",
+        "evidence-grounding": "FDA 注册只是登记备案，按中性计分。没有针对该胶带本身的试验，而闭口胶带整体上也只有少数小型研究，结果不一且伴有安全警示（见我们的鼻呼吸证据页面）——因此口腔胶带在此项最高 6.5 分，低于有一致独立证据支持的产品的 7.0 分。",
         "form-factor": "一体式贴条，中央为透气区域。易于贴用。覆盖面积不如 Hostage Tape 的整条贴宽。",
         "material-safety": "低敏医用级胶粘剂。不含乳胶。在多年的用户群中，皮肤反应报告很少。",
         "value": "约 $25 / 28 片 = 每晚约 $0.90。每晚成本高于 Hostage Tape 订阅；无需订阅。"
@@ -1637,7 +1642,7 @@
       ],
       "scoreNotes": {
         "adhesion-comfort": "中档丙烯酸胶粘剂——在清洁皮肤上粘性尚可。X 形减少了每晚的总胶面面积。对胡须的友好度不如 Hostage Tape。",
-        "breathing-mechanism": "X 形交叉设计——让嘴角不被覆盖。这一点并未作为安全功能进行过测试；如果可能存在睡眠呼吸暂停，请先看医生。",
+        "breathing-mechanism": "X 形交叉设计——让嘴角不被覆盖。这一点并未作为安全功能进行过测试，因此该设计不额外加分：与其他口腔胶带相同的机制。如果可能存在睡眠呼吸暂停，请先看医生。",
         "evidence-grounding": "独立品牌，没有 FDA 注册，也没有同行评审研究。X 形设计并未作为安全功能进行过测试。",
         "form-factor": "X 形交叉设计——在品类中辨识度高。两件式贴法比一体式略麻烦。",
         "material-safety": "低敏胶粘剂。不含乳胶。皮肤反应反馈中等。X 形减少了胶面接触面积，对敏感肌有帮助。",
@@ -1728,7 +1733,7 @@
       "scoreNotes": {
         "adhesion-comfort": "小胶片粘附牢固；磁吸带分散压力，而不是把张力集中在一个点上。就这种外形而言佩戴舒适。",
         "breathing-mechanism": "外置磁吸扩张——以机械方式撑宽鼻孔开口。最有效的外置鼻扩张方式；在用户报告的气流改善上优于 Breathe Right 这类被动鼻贴。",
-        "evidence-grounding": "James Nestor 在《Breath》一书中推荐。气流研究由品牌资助。定位接近睡眠医学，但没有 FDA II 类许可。",
+        "evidence-grounding": "James Nestor 在《Breath》一书中推荐了它（这是背书，不是证据）。其气流研究由品牌资助，在ONDA评分中不计为证据；我们未找到针对该设备的独立试验。",
         "form-factor": "可重复使用的磁吸带 + 可更换胶片——长期使用成本划算。外观低调。",
         "material-safety": "医用级胶片。磁吸带低敏。皮肤反应报告很少。",
         "value": "入门套装约 $40，更换胶片每月 $20 = 持续使用每晚约 $0.65。定价偏高，但可重复使用的磁吸带降低了长期成本。"
@@ -1771,7 +1776,7 @@
       "scoreNotes": {
         "adhesion-comfort": "无胶——靠摩擦固定在鼻孔内。初期确实需要适应；大多数用户在 3-5 晚内习惯。",
         "breathing-mechanism": "内置机械支架——比外贴鼻贴的杠杆作用更直接地从内部撑开气道。品类中机械原理最强。",
-        "evidence-grounding": "Rhinomed 有关于改善气流的已发表临床研究。已在 FDA 注册。鼻扩张器中同行评审证据基础最好。",
+        "evidence-grounding": "Rhinomed 发表过气流研究，但由厂商开展或资助的研究在ONDA评分中不计为证据，且我们未找到针对该设备的独立试验。FDA 注册视为中性。",
         "form-factor": "内置支架——外部看不见，但需插入鼻孔。有三种尺寸（S/M/L），需要确定合适尺寸。",
         "material-safety": "医用级聚合物。每个支架可重复使用约 1 周。部分用户反映鼻孔刺激——并非所有鼻腔结构都能舒适佩戴。",
         "value": "约 $25 一盒 3 个 × 每个用 1 周 = 每晚约 $1.20。每晚成本高于闭口胶带或 Breathe Right。"
@@ -2051,7 +2056,7 @@
       "title": "2026 年最佳呼吸练习 App 排名与对比",
       "description": "2026 年 10 款呼吸练习 App 对比：综合第一是约 $49/年的 Breathwrk；重音乐选 Othership，Apple Watch HRV 生物反馈选 Inhale，免费选 iBreathe。",
       "intro": "2024–2026 年，呼吸练习从小众的躯体疗法变成了主流的神经系统调节工具，推动力来自斯坦福的循环叹息研究，以及 Wim Hof / Othership 向恢复文化的渗透。App 市场分化成清晰的几个层级：高端结构化内容库（Breathwrk）、音乐驱动的电影级高端体验（Othership、SOMA Breath、Open）、官方单一方法 App（Wim Hof Method）、躯体/情绪释放细分（Pause）、HRV 生物反馈专精（Inhale）、模式自定义（Prana Breath），以及免费层（iBreathe、Breathe2Relax）。我们按同样的六个维度为 2026 年最可信的 10 款 App 打分：课程库、技巧覆盖、证据基础、应用体验、生物反馈集成和性价比。",
-      "verdict": "Breathwrk 综合胜出：作为结构化内容库的标杆，技巧覆盖全面、文案有科学依据，$49/年。对于把呼吸练习当作电影级体验的用户，Othership 在制作水准和社区上胜出。对认真修习 WHM 的人，Wim Hof Method App 是理性之选。Inhale 完成了 HRV 生物反馈闭环。iBreathe 和 Breathe2Relax 可靠地覆盖了免费层。按三个问题来选：结构化内容库的广度、音乐/社区理念，还是生物反馈集成。",
+      "verdict": "Breathwrk 综合胜出：作为结构化内容库的标杆，技巧覆盖全面、文案参考科学（有一项关于循环叹气的已发表研究支持），$49/年。对于把呼吸练习当作电影级体验的用户，Othership 在制作水准和社区上胜出。对认真修习 WHM 的人，Wim Hof Method App 是理性之选。Inhale 完成了 HRV 生物反馈闭环。iBreathe 和 Breathe2Relax 可靠地覆盖了免费层。按三个问题来选：结构化内容库的广度、音乐/社区理念，还是生物反馈集成。",
       "content": "## 简短回答\n\n对大多数人来说，最好的呼吸 App 是 **Breathwrk**：约 $49/年，拥有最大的结构化内容库和最广的技巧种类。如果你想要音乐引导的电影级课程，选 **Othership**。如果你想让 App 在你呼吸时测量身体反应，选 **Inhale**，它使用 Apple Watch 的 HRV。如果你不想付费，**iBreathe** 和 **Breathe2Relax** 免费，基础功能做得很好。\n\n## 呼吸练习到底有什么作用？\n\n缓慢、受控的呼吸是少数有明确生理机制的放松方法之一。一项关于慢呼吸研究的系统综述发现，以每分钟约六次的速度呼吸能提升副交感神经（“休息与消化”）活动和心率变异性，并与更好的情绪调节和幸福感相关（[Zaccaro et al., 2018, Frontiers in Human Neuroscience](https://doi.org/10.3389/fnhum.2018.00353)）。这些研究大多规模较小，所以应把这种效果看作真实但温和。\n\n斯坦福的一项随机研究比较了为期一个月、每天五分钟的三种呼吸练习与正念冥想。循环叹息（两次吸气，然后长长呼气）带来了最大的情绪改善和最大的呼吸频率下降（[Balban et al., 2023, Cell Reports Medicine](https://doi.org/10.1016/j.xcrm.2022.100895)）。实用结论是：每天花几分钟做带长呼气的慢呼吸，才是关键所在。App 能帮你坚持下去，但它本身不会额外增加什么特殊效果。\n\n延伸阅读：[生理性叹息](/articles/physiological-sigh)、[箱式呼吸](/articles/box-breathing-how-it-works)、[4-7-8 呼吸法](/articles/4-7-8-breathing)，以及[如何找到你的共振呼吸频率](/articles/find-your-resonance-breathing-rate)。\n\n## 如何选择呼吸 App\n\n**引导式节奏。** 大多数 App 会播放计时器或语音，提示你何时吸气、何时呼气。对大多数人来说这就够了。付费应该是为了更大的内容库、更好的音频或结构化课程，而不是为呼吸本身付费。\n\n**生物反馈。** 生物反馈 App 会测量你的身体（通常是来自手表或传感器的心率变异性），并显示你呼吸时身体如何反应。它能帮你找到让自己平静下来的方法，并追踪数周来的进展。本榜单中，Inhale 是生物反馈之选，需要 Apple Watch。\n\n**免费。** 做箱式呼吸、4-7-8 或循环叹息，免费计时器就够了。iBreathe 是简洁的计时器；Breathe2Relax 由美国 National Center for Telehealth & Technology 为缓解压力而开发，并有已发表的验证研究。Prana Breath 免费内容很多，$10 一次性解锁。\n\n## 呼吸 App 对比\n\n| App | 价格 | 平台说明 | 最适合 |\n|---|---|---|---|\n| [Breathwrk](/reviews/breathwrk) | $49/年，有免费版 | 手机 App | 结构化的日常练习 |\n| [Othership](/reviews/othership) | $129.99/年，免费试用 | 手机 App | 音乐引导课程、直播课 |\n| [SOMA Breath](/reviews/soma-breath) | $99/年，免费试用 | 手机 App | 有节奏、随音乐呼吸 |\n| [Wim Hof Method](/reviews/wim-hof-method-app) | $42.99/年，有免费版 | 手机 App | Wim Hof 呼吸轮次与冷暴露方案 |\n| [Open](/reviews/open-app) | $120/年，免费试用 | 手机 App | 呼吸 + 冥想 + 运动 |\n| [Pause](/reviews/pause-breathwork) | $90/年，免费试用 | 手机 App | 较长的躯体练习 |\n| [Inhale](/reviews/inhale-by-aero-health) | $60/年 | 生物反馈需要 Apple Watch | HRV 生物反馈 |\n| [Prana Breath](/reviews/prana-breath) | 免费，$10 一次性解锁 | 安卓优先 | 自定义呼吸节奏 |\n| [iBreathe](/reviews/ibreathe) | 免费（$5 去广告） | iPhone + Apple Watch | 简单的免费计时器 |\n| [Breathe2Relax](/reviews/breathe-to-relax) | 免费 | 手机 App | 有证据支持的免费减压工具 |\n\n价格为我们各篇测评中的标价，可能会变动；订阅前请先在应用商店核实。\n\n## 我们如何排名\n\n每款 App 都按 ONDA 公开的[测评方法](/reviews/methodology)打分：六项加权标准，其中课程库和技巧覆盖权重最高，因为它们决定了日常使用的深度和长期留存。\n\n全部十款都基于 App 文档、App Store 页面、创始人的公开发言以及 2026 年的独立用户评价进行评估，而非上手实测。\n\n## 最佳呼吸练习 App：该买哪一款？\n\n三个购买问题就能把这个品类理清楚：\n\n**你想从呼吸练习中得到什么？** 结构化的神经系统方案 → Breathwrk。电影级音乐 + 社区 → Othership。单一方法的深度（Wim Hof） → Wim Hof Method App。躯体/情绪释放 → Pause。HRV 生物反馈 → Inhale。呼吸 + 冥想 + 运动混合 → Open。\n\n**预算多少？** 免费：iBreathe、Breathe2Relax、Prana Breath（大部分免费）。$40–$60/年：Breathwrk、Wim Hof Method、Inhale。$90–$120/年：Pause、SOMA Breath、Open。$129.99/年：Othership。\n\n**什么平台？** 所有主流 App 都支持 iOS 和 Android。Prana Breath 是最好的安卓优先选择。Inhale 的生物反馈特色功能需要 Apple Watch。\n\nBreathwrk 是结构化内容库的默认首选。Othership 占据电影级体验的高端层。免费层（iBreathe、Breathe2Relax）也很可靠。避开那些夸大生理功效、或者没有导师资质却靠仪式感包装的 App。",
       "picks": {
         "breathwrk": {
@@ -2106,15 +2111,15 @@
         },
         {
           "q": "2026 年最好的呼吸练习 App 是哪款？",
-          "a": "综合来看是 Breathwrk——最大的结构化内容库、最广的技巧覆盖、有科学依据的文案，$49/年。想要音乐驱动的电影级高端体验选 Othership，$129.99/年。专门练 WHM 就选 Wim Hof Method App。"
+          "a": "综合来看是 Breathwrk——最大的结构化内容库、最广的技巧覆盖、参考科学的文案（有一项关于循环叹气的已发表研究支持），$49/年。想要音乐驱动的电影级高端体验选 Othership，$129.99/年。专门练 WHM 就选 Wim Hof Method App。"
         },
         {
           "q": "Breathwrk 的订阅值得买吗？",
-          "a": "对于想要技巧覆盖广、结构化日常呼吸练习的用户来说值得——在这个价位，Breathwrk 的内容库和有科学依据的文案无可匹敌。对于想要电影级体验的用户，Othership 的较高订阅价也物有所值。"
+          "a": "对于想要技巧覆盖广、结构化日常呼吸练习的用户来说值得——在这个价位，Breathwrk 的内容库和参考科学的文案（有一项关于循环叹气的已发表研究支持）无可匹敌。对于想要电影级体验的用户，Othership 的较高订阅价也物有所值。"
         },
         {
           "q": "Breathwrk 和 Othership 哪个更好？",
-          "a": "Breathwrk 在内容库深度、技巧覆盖、科学依据和价格上胜出。Othership 在制作水准、音乐驱动课程和社区直播上胜出。两者对呼吸练习应有的感受有着不同的理念。"
+          "a": "Breathwrk 在内容库深度、技巧覆盖、参考科学的文案（有一项关于循环叹气的已发表研究支持）和价格上胜出。Othership 在制作水准、音乐驱动课程和社区直播上胜出。两者对呼吸练习应有的感受有着不同的理念。"
         },
         {
           "q": "有真正好用的免费呼吸 App 吗？",
@@ -2332,7 +2337,7 @@
       "axes": [
         {
           "name": "夜间HRV精度",
-          "note": "Oura Ring 4在手指上连续测量，信号质量优于手腕光学测量，在独立研究中的睡眠阶段/HRV一致性也名列前茅。Series 12进步很大，但仍是手腕光学测量。"
+          "note": "两者中只有Oura Ring 4做过与心电图对照的夜间HRV独立检验（一项研究，13人）；未找到对其睡眠分期的独立检验。Series 12的恢复/整体HRV尚未经过独立验证（截至2026年10月）。"
         },
         {
           "name": "恢复指标的可比性",
@@ -2385,7 +2390,7 @@
       "axes": [
         {
           "name": "HRV 测量",
-          "note": "两者都通过光学 PPG 整夜连续追踪 HRV；独立比较认为两者大致相当。信号层面打平。"
+          "note": "基本持平：两者都通过光学 PPG 在夜间追踪 HRV，而 WHOOP 5.0 和 Venu 4 都没有以 ECG 为参照的独立 HRV 验证（截至 2026 年 10 月），因此无从比较两者的准确度。"
         },
         {
           "name": "恢复指导",
@@ -2863,7 +2868,7 @@
         },
         {
           "name": "睡眠与 HRV 追踪",
-          "note": "就价格而言，两款的夜间睡眠和 HRV 数据都很扎实；日常差别不大，两者都没有 Oura 那样多的已发表验证研究。"
+          "note": "基本持平：两者都能以各自的价位追踪夜间睡眠和 HRV，但都没有独立验证（截至 2026 年 10 月）；日常使用差别很小。"
         },
         {
           "name": "舒适度",
@@ -2939,7 +2944,7 @@
         },
         {
           "q": "Breathwrk 和 Othership 哪个好？",
-          "a": "Breathwrk 在技巧覆盖、科学依据和价格（每年 $49 对 $129.99）上胜出。Othership 在制作水准和社群直播课上胜出。想要结构化的日常练习选 Breathwrk；如果音乐和社群是让你坚持的动力，选 Othership。"
+          "a": "Breathwrk 在技巧覆盖和价格（每年 $49 对 $129.99）上胜出。Othership 在制作水准和社群直播课上胜出。想要结构化的日常练习选 Breathwrk；如果音乐和社群是让你坚持的动力，选 Othership。"
         },
         {
           "q": "Breathwrk、Othership 和 Wim Hof Method 应用多少钱？",

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const whoopVsPolarH10: HeadToHead = {
+const whoopVsPolarH10: HeadToHeadInput = {
   slug: 'whoop-5-0-vs-polar-h10',
   productASlug: 'whoop-5-0',
   productBSlug: 'polar-h10',
@@ -9,7 +9,7 @@ const whoopVsPolarH10: HeadToHead = {
     'Whoop 5.0 vs Polar H10 for HRV: ECG chest strap ($105, no subscription) vs 24/7 recovery band ($199–$359/yr). Accuracy, cost and who should buy which.',
   intro:
     'Whoop 5.0 and Polar H10 are not really the same kind of device, but they end up on the same shortlist for users who care about HRV signal quality. Whoop is an optical band sold as a membership with recovery coaching; Polar H10 is the ECG chest strap that sets the consumer-accuracy ceiling. The choice is between continuous lifestyle tracking and reference-grade measurement.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'They solve different jobs. Whoop for continuous overnight HRV with recovery coaching; Polar H10 for ECG-grade accuracy when you put the strap on. Many serious HRV users own both.',
   bestForA:
@@ -98,7 +98,7 @@ Adding a smartwatch to the decision? See [Polar H10 vs Whoop 5.0 vs Garmin Venu 
 - [WHOOP membership pricing](https://support.whoop.com/s/article/Membership-Pricing?language=en_US) and [Polar H10 product page](https://www.polar.com/us-en/sensors/h10-heart-rate-sensor), checked 2026-10-02`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default whoopVsPolarH10

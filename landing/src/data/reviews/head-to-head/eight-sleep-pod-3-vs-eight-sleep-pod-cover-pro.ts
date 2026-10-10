@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const pod3VsCoverPro: HeadToHead = {
+const pod3VsCoverPro: HeadToHeadInput = {
   slug: 'eight-sleep-pod-3-vs-eight-sleep-pod-cover-pro',
   productASlug: 'eight-sleep-pod-3',
   productBSlug: 'eight-sleep-pod-cover-pro',
@@ -9,7 +9,7 @@ const pod3VsCoverPro: HeadToHead = {
     'Eight Sleep Pod 3 vs Pod Cover Pro — previous-gen full system at clearance pricing vs current-gen cover for your existing mattress. ONDA breaks down which Eight Sleep entry tier is the rational buy.',
   intro:
     'Both are the value entry points into the Eight Sleep ecosystem. Pod 3 is the previous-gen full mattress system, still in inventory at meaningfully reduced pricing; Pod Cover Pro is the current-gen cover-only product that installs on your existing mattress.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Mattress status decides again. Pod 3 if you\'re replacing your mattress and the inventory discount is deep enough. Pod Cover Pro if you have a mattress you like and want the current-gen tracking/climate on it.',
   bestForA:
@@ -56,7 +56,7 @@ If you have a mattress you like, or you want the current-gen Pod 4-platform clim
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-06-15',
   datePublished: '2026-05-27',
-  dateModified: '2026-05-27',
+  dateModified: '2026-10-10',
 }
 
 export default pod3VsCoverPro

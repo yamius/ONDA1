@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const threeValuePanels: HeadToHead = {
+const threeValuePanels: HeadToHeadInput = {
   slug: 'hooga-hg500-vs-bon-charge-red-light-panel-vs-infraredi-pro-1500',
   productASlug: 'hooga-hg500',
   productBSlug: 'bon-charge-red-light-panel',
@@ -10,7 +10,7 @@ const threeValuePanels: HeadToHead = {
     'Hooga HG500 ($359) vs Bon Charge Max ($999) vs Infraredi Pro Max ($1,019): which value red light panel fits you? Prices, specs and warranties compared.',
   intro:
     'Hooga HG500, Bon Charge’s half-body panel and Infraredi’s large Pro panel are three value-tier red light panels people compare when they do not want to pay Joovv prices. Model names have shifted: Bon Charge now sells its half-body panel as the Max ($999), and Infraredi’s Pro 1500 has been replaced in its line-up by the Pro Max 2.0 ($1,019 on sale). The three still represent three different value philosophies — cheapest legitimate entry, wellness-brand mid-tier, and widest spectrum.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Three different value points. Hooga at $359 for most first-time buyers. Bon Charge for buyers already in the Bon Charge ecosystem. Infraredi for the broadest spectrum and a free-standing base at the top of the value tier.',
   bestForA:
@@ -83,7 +83,7 @@ If you want the broadest spectrum of the three, a base stand in the box and a 3-
 If $1,000 is already on the table, the [Mito Red MitoPRO 1500X](/reviews/mito-red-mitopro-1500) ($1,299, six wavelengths) is worth a look. For the whole market ranked on the same criteria, see the [best red light therapy panels of 2026](/reviews/compare/best-red-light-therapy-panels-2026).`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default threeValuePanels

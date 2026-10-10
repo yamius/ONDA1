@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const iceBarrel500: ToolReview = {
+const iceBarrel500: ToolReviewInput = {
   slug: 'ice-barrel-500',
   name: 'Ice Barrel 500',
   brand: 'Ice Barrel',
@@ -12,7 +12,6 @@ const iceBarrel500: ToolReview = {
     'The most popular barrel-style cold plunge — solid build, no chiller, ice-fill cost is the daily friction.',
   summary:
     'Ice Barrel 500 is the upright insulated barrel that turned cold plunge from a chest-freezer DIY into a clean consumer product. No chiller — you fill it with water and ice — so daily ice cost ($5–15/session depending on climate) is the operating-cost wildcard. Strong build, distinctive vertical form factor, 1-year warranty.',
-  overallScore: 6.8,
   scores: [
     { criterionId: 'chiller-capacity', score: 4.5, note: 'No chiller. Temperature depends entirely on ice fill, ambient temperature and insulation hold-time. Holds usable cold for ~30–60 minutes per fill.' },
     { criterionId: 'build', score: 8.0, note: 'Food-grade plastic barrel with insulation. UV-resistant exterior. 1-year warranty. Solid multi-year reliability track record.' },
@@ -72,7 +71,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { q: "Who is the Ice Barrel 500 best for?", a: "It suits people who want a clean, compact cold plunge without paying chiller-tier prices. Its vertical footprint fits small spaces, it is outdoor-rated and easy to drain, and it has proven multi-year reliability. The warranty is one year, versus three for The Plunge." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default iceBarrel500

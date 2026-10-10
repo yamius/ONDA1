@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const polarH10VsGarmin: HeadToHead = {
+const polarH10VsGarmin: HeadToHeadInput = {
   slug: 'polar-h10-vs-garmin-venu-4',
   productASlug: 'polar-h10',
   productBSlug: 'garmin-venu-4',
@@ -9,7 +9,7 @@ const polarH10VsGarmin: HeadToHead = {
     'Polar H10 vs Garmin Venu 4 — side-by-side ONDA comparison of the ECG chest-strap reference versus the Garmin training smartwatch.',
   intro:
     'Polar H10 and Garmin Venu 4 are the two training instruments serious athletes compare when sensor accuracy meets ecosystem. The Polar H10 is the ECG chest strap that sets the consumer-accuracy ceiling; Garmin Venu 4 is the smartwatch with the deepest first-party training-analytics stack. They are not really substitutes — most committed athletes own both.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Different jobs. Polar H10 for ground-truth accuracy. Garmin Venu 4 for continuous lifestyle tracking and training analytics. Many athletes pair the two.',
   bestForA:
@@ -17,7 +17,7 @@ const polarH10VsGarmin: HeadToHead = {
   bestForB:
     'Choose Garmin Venu 4 if you want a smartwatch with continuous HRV, training-load analytics and up to 12 days of battery — without an ongoing subscription.',
   axes: [
-    { name: 'HRV accuracy', winner: 'a', note: 'Polar H10: ECG, near-perfect agreement with clinical reference. Garmin: optical PPG, accurate enough for trending but lags ECG. H10 wins decisively.' },
+    { name: 'HRV accuracy', winner: 'a', note: 'Polar H10: ECG, near-perfect agreement with a clinical reference in young healthy adults at rest. Garmin: optical PPG; no independent validation of the Venu 4’s HRV against ECG was found (as of October 2026), so use it for trends. H10 wins decisively.' },
     { name: 'Continuous overnight tracking', winner: 'b', note: 'Garmin tracks HRV continuously overnight; Polar H10 is a strap put on for a measurement or workout. Garmin wins continuous-wear.' },
     { name: 'Training analytics', winner: 'b', note: 'Garmin: training load, VO2 max, recovery hours, body battery, structured workouts. Polar H10: raw RR-intervals — you bring the analysis.' },
     { name: 'Data openness', winner: 'a', note: 'Polar H10 streams raw RR over Bluetooth and ANT+ to virtually any HRV app. Garmin Connect is more closed but integrates with Strava, TrainingPeaks, Apple Health.' },
@@ -61,7 +61,7 @@ If you want continuous overnight HRV plus a training-analytics smartwatch — VO
 Garmin Venu 4 for the continuous signal; Polar H10 for reference measurements and chest-strap workouts. The H10 pairs directly to the Garmin watch over ANT+/Bluetooth so the configuration is clean.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-10',
 }
 
 export default polarH10VsGarmin

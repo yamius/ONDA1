@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const hostageVsDream: HeadToHead = {
+const hostageVsDream: HeadToHeadInput = {
   slug: 'hostage-tape-vs-dream-recovery-mouth-tape',
   productASlug: 'hostage-tape',
   productBSlug: 'dream-recovery-mouth-tape',
@@ -9,7 +9,7 @@ const hostageVsDream: HeadToHead = {
     'Hostage Tape vs Dream Recovery — viral biohacker acrylic vs premium silicone-gel reusable mouth tape. ONDA breaks down the premium duel.',
   intro:
     'Hostage Tape and Dream Recovery are the two premium biohacker mouth tapes users compare. The defining difference: Hostage Tape uses acrylic adhesive engineered for beard-grip; Dream Recovery uses silicone-gel for gentler skin contact and reusable design.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Beard adhesion vs sensitive skin. Hostage Tape for beard-friendly acrylic and subscription convenience. Dream Recovery for silicone-gel sensitive-skin tolerance and reusable design.',
   bestForA:
@@ -57,7 +57,7 @@ If you have sensitive skin or want premium silicone-gel reusable design — Drea
   relatedComparisonSlug: 'best-mouth-tape-nasal-breathing-2026',
   publishOn: '2026-07-13',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-10',
 }
 
 export default hostageVsDream

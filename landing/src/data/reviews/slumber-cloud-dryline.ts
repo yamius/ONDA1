@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const slumberCloudDryline: ToolReview = {
+const slumberCloudDryline: ToolReviewInput = {
   slug: 'slumber-cloud-dryline',
   name: 'Slumber Cloud DryLine Cooling Sheets',
   brand: 'Slumber Cloud',
@@ -12,7 +12,6 @@ const slumberCloudDryline: ToolReview = {
     'Cooling sheets, not active climate — meaningful passive heat dissipation at the budget tier.',
   summary:
     'Slumber Cloud DryLine sheets use NASA-derived Outlast phase-change materials embedded in the fabric to absorb and dissipate body heat through the night. Not active climate control, but the most-credible cooling-sheet option on the market. Budget tier — included as the entry alternative for users not committing to active climate hardware.',
-  overallScore: 5.5,
   scores: [
     { criterionId: 'climate-range', score: 3.5, note: 'Passive only — meaningful heat dissipation but no active cooling. Effective in early-night phase; loses effect over full sleep cycle.' },
     { criterionId: 'build', score: 8.0, note: 'NASA-derived Outlast phase-change materials. Long-running brand with solid sheet-fabric quality.' },
@@ -73,7 +72,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
   ],
 
   datePublished: '2026-06-15',
-  dateModified: '2026-09-17',
+  dateModified: '2026-10-10',
 }
 
 export default slumberCloudDryline

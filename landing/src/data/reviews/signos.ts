@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const signos: ToolReview = {
+const signos: ToolReviewInput = {
   slug: 'signos',
   name: 'Signos',
   brand: 'Signos',
@@ -12,9 +12,8 @@ const signos: ToolReview = {
     'The most weight-loss-focused CGM programme — Dexcom G7 plus an AI agent that pushes meal-by-meal recommendations.',
   summary:
     'Signos is the CGM programme built for weight loss rather than general biohacker insight. Hardware is Dexcom G7; the differentiator is an AI agent that watches glucose curves in real time and pushes meal-by-meal recommendations through the app. Insights focus on glucose spikes that drive insulin and weight gain, with strong food-logging and exercise-prompt integration. Less academic than Levels, more behaviourally directive.',
-  overallScore: 7.4,
   scores: [
-    { criterionId: 'sensor-accuracy', score: 9.0, note: 'Dexcom G7 — MARD ~8.2%, 10-day wear, 30-minute warm-up. Same hardware as Levels and Stelo.' },
+    { criterionId: 'sensor-accuracy', score: 8.5, note: 'Dexcom G7 — 10-day wear, 30-minute warm-up, the same hardware as Levels and Stelo. In an independent head-to-head study (Eichenlaub et al. 2025) the G7 and FreeStyle Libre 3 were similarly accurate.' },
     { criterionId: 'insights', score: 8.0, note: 'Strong on glucose-spike interpretation and meal scoring; weight-loss framing throughout. Less general-purpose than Levels.' },
     { criterionId: 'coaching', score: 7.0, note: 'AI agent surfaces meal-by-meal nudges and exercise prompts in real time. No human RD by default; some plans include access.' },
     { criterionId: 'app-integration', score: 7.5, note: 'Polished app with food logging and exercise integration. Apple Health support; narrower third-party stack than Levels.' },
@@ -75,7 +74,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { q: "Signos vs Levels: which is better?", a: "Choose Signos if weight loss is the goal and AI coaching nudges motivate you; it is cheaper than Levels on the same Dexcom G7 hardware. Choose Levels if you want deeper, more academic metabolic insight for general biohacking rather than a weight-loss programme." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-10',
 }
 
 export default signos

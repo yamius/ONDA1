@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const currentbodySeries2: ToolReview = {
+const currentbodySeries2: ToolReviewInput = {
   slug: 'currentbody-series-2',
   name: 'CurrentBody Series 2 LED Light Therapy Face Mask',
   brand: 'CurrentBody',
@@ -12,12 +12,11 @@ const currentbodySeries2: ToolReview = {
     'Best consumer-market reference — biggest customer base, polished silicone build, neck flap included. Less clinical-evidence moat than Omnilux.',
   summary:
     'CurrentBody Series 2 is the highest-volume consumer red light face mask of 2026 — flexible medical-grade silicone, 132+ LEDs across red 633 nm + near-infrared 830 nm, integrated neck flap (a category first), 10-minute session. CurrentBody owns the consumer market and the Series 2 is the polished iteration of the original best-seller. FDA registered (a listing, not clearance or approval); the brand leans on customer-base scale rather than clinical-evidence moat.',
-  overallScore: 8.3,
   scores: [
     { criterionId: 'irradiance', score: 8.0, note: 'Documented irradiance in dermatology-acceptable range. Less independently-verified than Omnilux but transparent at the spec level.' },
     { criterionId: 'wavelength-coverage', score: 8.5, note: 'Red 633 nm + near-infrared 830 nm — the pair most used in skin studies, matching the Omnilux spectrum.' },
     { criterionId: 'led-count-coverage', score: 9.0, note: 'Integrated neck flap is the differentiator — coverage extends from forehead through cheeks and jaw down the neck. 2026 spec war winner.' },
-    { criterionId: 'clinical-evidence', score: 7.5, note: 'FDA registered (a listing, not clearance). Brand-funded studies + customer-base scale rather than peer-reviewed dermatology moat.' },
+    { criterionId: 'clinical-evidence', score: 6.5, note: 'FDA registered (a listing, scored as neutral). Its studies are brand-funded, and studies run or funded by the maker do not count as evidence in ONDA scores — no independent peer-reviewed studies of this mask found.' },
     { criterionId: 'comfort-fit', score: 9.0, note: 'Medical-grade flexible silicone, lighter than Omnilux. Strap design refined through multiple consumer-feedback cycles.' },
     { criterionId: 'value', score: 7.5, note: '$470 — premium-tier pricing including neck flap. More expensive than Omnilux Contour Face alone but cheaper than Omnilux + neck add-on combined.' },
   ],
@@ -71,7 +70,7 @@ Choose CurrentBody Series 2 if you want the consumer-market reference with integ
     { q: "CurrentBody Series 2 vs Dr. Dennis Gross SpectraLite: which is better?", a: "CurrentBody Series 2 is better for comfort and neck coverage; SpectraLite is better for dermatology pedigree and acne. CurrentBody uses flexible silicone with a neck flap, while SpectraLite adds blue light but has a hard shell and no neck flap." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-10-10',
 }
 
 export default currentbodySeries2

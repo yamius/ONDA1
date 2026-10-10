@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const threePremiumPlunge: HeadToHead = {
+const threePremiumPlunge: HeadToHeadInput = {
   slug: 'plunge-vs-coldture-vs-renu-therapy-cold-stoic',
   productASlug: 'plunge',
   productBSlug: 'coldture',
@@ -10,7 +10,6 @@ const threePremiumPlunge: HeadToHead = {
     'The Plunge vs Coldture vs Renu Therapy — three-way ONDA comparison of the three top premium chiller-built cold-plunge tubs.',
   intro:
     'The Plunge, Coldture and Renu Therapy Cold Stoic are the three premium chiller-built cold-plunge tubs serious buyers shortlist. All three ship integrated chillers, ozone sanitation, premium insulated builds and 3-year warranties at comparable price points. The differentiation is positioning — US category leader, Canadian cold-climate specialist, indoor-quiet specialist.',
-  winnerSlug: 'plunge',
   verdict:
     'Three premium tubs at comparable price points; pick on install context. Plunge for US temperate; Coldture for cold-climate outdoor; Renu Therapy for quiet indoor placement.',
   bestForA:
@@ -63,7 +62,7 @@ If you are in Canada, EU or a cold-climate US region installing outdoors — Col
 If you are installing indoors and chiller noise matters (basement, garage near living spaces, wellness room) — Renu Therapy’s quiet chiller is the deciding feature. Temperature floor is marginally less aggressive than Plunge’s but rarely the deciding factor.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default threePremiumPlunge

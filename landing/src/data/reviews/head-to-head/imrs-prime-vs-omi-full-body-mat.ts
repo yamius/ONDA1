@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const imrsVsOmi: HeadToHead = {
+const imrsVsOmi: HeadToHeadInput = {
   slug: 'imrs-prime-vs-omi-full-body-mat',
   productASlug: 'imrs-prime',
   productBSlug: 'omi-full-body-mat',
@@ -9,7 +9,7 @@ const imrsVsOmi: HeadToHead = {
     'iMRS Prime vs OMI Full Body Mat — premium multi-applicator Swiss system vs mid-tier single-modality reference. ONDA breaks down which mid-market PEMF mat fits.',
   intro:
     'iMRS Prime and OMI Full Body Mat are the two mats users cross-shop in the $1,500–$4,000 PEMF mid-market. iMRS is the Swiss-engineered multi-applicator system; OMI is the simple single-mat reference. Different complexity, different price tiers.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Complexity vs simplicity. iMRS Prime for multi-applicator Swiss-engineered system with morning and evening presets. OMI Full Body Mat for straightforward single-modality at meaningfully lower price.',
   bestForA:
@@ -57,7 +57,7 @@ If you want straightforward single-modality PEMF mat use at accessible $1,500–
   relatedComparisonSlug: 'best-pemf-devices-2026',
   publishOn: '2026-06-22',
   datePublished: '2026-05-27',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default imrsVsOmi

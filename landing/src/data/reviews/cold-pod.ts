@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const coldPod: ToolReview = {
+const coldPod: ToolReviewInput = {
   slug: 'cold-pod',
   name: 'Cold Pod',
   brand: 'Cold Pod',
@@ -12,7 +12,6 @@ const coldPod: ToolReview = {
     'The cheapest legitimate cold-plunge entry — inflatable, portable, ice-fill operation.',
   summary:
     'Cold Pod is the inflatable portable cold-plunge tub that turned the category accessible. Folds down for storage, fills via garden hose, no chiller — ice-fill operation. UK-founded, now globally distributed. The right entry point for users testing cold-plunge practice before committing to fixed installation.',
-  overallScore: 6.4,
   scores: [
     { criterionId: 'chiller-capacity', score: 4.0, note: 'No chiller. Temperature held entirely by ice and ambient. Insulation is thinner than rigid tubs — hold time shorter.' },
     { criterionId: 'build', score: 6.0, note: 'Inflatable construction — durable for typical use but more vulnerable than rigid tubs over multi-year ownership. Replaceable parts available.' },

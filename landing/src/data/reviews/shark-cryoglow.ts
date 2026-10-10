@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const sharkCryoglow: ToolReview = {
+const sharkCryoglow: ToolReviewInput = {
   slug: 'shark-cryoglow',
   name: 'Shark CryoGlow',
   brand: 'Shark Beauty',
@@ -12,7 +12,6 @@ const sharkCryoglow: ToolReview = {
     'Most novel form factor in 2026 — active cooling combined with red + blue LED. Cooling is the differentiator; LED dose is modest by design.',
   summary:
     'Shark CryoGlow is the 2026 novelty entry — combining red + blue LED with active facial cooling via integrated thermoelectric elements. Shark Beauty brand crossover from vacuum / appliance pedigree. The cooling element may feel soothing and help with morning puffiness (it is not an anti-inflammatory treatment); LED dose is modest because the device prioritises cooling. Hybrid form factor compromises both modalities mildly to deliver them together.',
-  overallScore: 6.0,
   scores: [
     { criterionId: 'irradiance', score: 5.5, note: 'Modest LED irradiance — cooling element shares the form factor and limits dose. Designed for combined cooling + light rather than peak LED dose.' },
     { criterionId: 'wavelength-coverage', score: 7.0, note: 'Red 633 nm + blue 415 nm. Standard dual-spectrum coverage.' },
@@ -70,7 +69,7 @@ Choose Shark CryoGlow if you want cooling + LED combined into one device for a s
     { q: "What are the downsides of the Shark CryoGlow?", a: "The CryoGlow's cooling element compromises LED dose, and the hybrid design is heavier and more complex to use daily than a pure silicone mask. There is also limited peer-reviewed clinical evidence on the cooling-plus-LED combination specifically, so its benefits rest more on concept than proof." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-10-10',
 }
 
 export default sharkCryoglow

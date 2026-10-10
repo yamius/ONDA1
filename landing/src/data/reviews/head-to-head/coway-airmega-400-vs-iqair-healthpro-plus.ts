@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const cowayVsIqair: HeadToHead = {
+const cowayVsIqair: HeadToHeadInput = {
   slug: 'coway-airmega-400-vs-iqair-healthpro-plus',
   productASlug: 'coway-airmega-400',
   productBSlug: 'iqair-healthpro-plus',
@@ -9,7 +9,7 @@ const cowayVsIqair: HeadToHead = {
     'Coway Airmega 400 vs IQAir HealthPro Plus — the large-room value champion vs the clinical filtration reference. Best value vs medical-grade HyperHEPA, compared by ONDA.',
   intro:
     'This is value versus clinical-grade filtration. The Coway Airmega 400 delivers verified True HEPA H13 coverage for a large room at a mid-premium price. The IQAir HealthPro Plus is the clinical reference — HyperHEPA H14 filtration that captures particles down to 0.003 microns, with a hospital-deployment pedigree — at more than double the price. How much filtration do you actually need?',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Value vs clinical reference. The Coway Airmega 400 wins on price and everyday value — verified large-room HEPA for less than half the cost. The IQAir HealthPro Plus wins on outright filtration: HyperHEPA H14 and heavy VOC/odor removal, the medical-grade choice. Pick Coway for excellent value; IQAir if you need the deepest, clinical-grade filtration.',
   bestForA:
@@ -56,7 +56,7 @@ See [Coway Airmega 400 vs Dyson Big+Quiet](/reviews/vs/coway-airmega-400-vs-dyso
   relatedComparisonSlug: 'best-air-purifiers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default cowayVsIqair

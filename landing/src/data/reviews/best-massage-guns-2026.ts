@@ -112,7 +112,7 @@ Three buying questions resolve the category cleanly:
 Theragun PRO Plus dominates the spec-ceiling tier; Hypervolt 2 Pro is the rational premium alternative; Achedaway Pro owns the spec-maximalist sub-premium niche; Bob and Brad / Renpho cover the credible budget tier.`,
   publishOn: '2026-07-20',
   datePublished: '2026-07-20',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default bestMassageGuns2026

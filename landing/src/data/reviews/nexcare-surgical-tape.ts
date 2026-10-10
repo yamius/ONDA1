@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const nexcareSurgical: ToolReview = {
+const nexcareSurgical: ToolReviewInput = {
   slug: 'nexcare-surgical-tape',
   name: '3M Nexcare Sensitive Skin Surgical Tape',
   brand: '3M Nexcare',
@@ -12,11 +12,10 @@ const nexcareSurgical: ToolReview = {
     'Best DIY mouth-tape option — 3M medical paper tape at fraction of biohacker-brand cost. No brand polish; clinical-grade adhesive at $0.05/night.',
   summary:
     'The DIY biohacker secret — 3M Nexcare Sensitive Skin Surgical Tape, cut into 2-inch strips, serves as a clinical-grade mouth-tape alternative at fraction of the cost of Hostage Tape or Somnifix. 3M medical adhesive is the same chemistry used in hospital wound dressings. Effectively unbeatable on per-night cost; zero brand polish or convenience.',
-  overallScore: 6.5,
   scores: [
     { criterionId: 'adhesion-comfort', score: 7.5, note: 'Clinical-grade 3M medical adhesive — gentle on skin, painless removal. Less beard-friendly than Hostage Tape. Sensitive-skin variant is the right pick.' },
     { criterionId: 'breathing-mechanism', score: 7.0, note: 'User cuts strip to size — can do full seal, partial seal or cross design. Maximum flexibility.' },
-    { criterionId: 'evidence-grounding', score: 7.0, note: 'FDA-cleared medical paper tape. Clinical-context literature on adhesive safety. Decades of hospital use.' },
+    { criterionId: 'evidence-grounding', score: 6.5, note: 'FDA-cleared medical paper tape (a clearance for surgical use, scored as neutral) with decades of hospital use. As a mouth tape it has no trials of its own, and mouth taping overall has only a few small studies with mixed results — so mouth tapes score at most 6.5 here.' },
     { criterionId: 'form-factor', score: 5.5, note: 'Roll form requires cutting per use. No pre-cut strips. Higher friction per night than dedicated mouth-tape brands.' },
     { criterionId: 'material-safety', score: 8.5, note: 'Hypoallergenic medical-grade adhesive. Latex-free. Sensitive Skin variant minimises reactions; multi-decade hospital track record.' },
     { criterionId: 'value', score: 9.5, note: '~$5 for a roll lasting 3+ months = ~$0.05/night. Unbeatable per-night cost in mouth-tape category.' },
@@ -71,7 +70,7 @@ Choose 3M Nexcare for cost-conscious DIY mouth tape — clinical adhesive at low
     { q: "Nexcare vs Hostage Tape: which is better?", a: "Nexcare wins on cost, at about $0.05 per night, and lets you cut any size you prefer. Hostage Tape is more beard-friendly and offers brand convenience. Choose Nexcare for DIY value, Hostage Tape if a beard or pre-cut ease matters more." },
   ],
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-10-10',
 }
 
 export default nexcareSurgical

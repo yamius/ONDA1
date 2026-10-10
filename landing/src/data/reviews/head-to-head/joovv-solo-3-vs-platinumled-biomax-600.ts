@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const joovvVsPlatinumLed: HeadToHead = {
+const joovvVsPlatinumLed: HeadToHeadInput = {
   slug: 'joovv-solo-3-vs-platinumled-biomax-600',
   productASlug: 'joovv-solo-3',
   productBSlug: 'platinumled-biomax-600',
@@ -9,7 +9,6 @@ const joovvVsPlatinumLed: HeadToHead = {
     'Joovv Solo 3.0 vs PlatinumLED BIOMAX 600 — side-by-side ONDA comparison of two premium red light panels. Modular versus seven-wavelength testing-published.',
   intro:
     'Joovv Solo 3.0 and PlatinumLED BIOMAX 600 are the two panels users compare when the question is "premium build versus premium spectrum." Joovv ships modular scaling with two wavelengths; PlatinumLED ships seven wavelengths and published third-party EMF testing at $650 less. Different premium-tier philosophies.',
-  winnerSlug: 'platinumled-biomax-600',
   verdict:
     'PlatinumLED BIOMAX 600 is the better pick for most buyers — seven wavelengths, published EMF testing and $650 less. Joovv Solo 3.0 wins on modular scaling.',
   bestForA:
@@ -57,7 +56,7 @@ If you plan to scale to full-body via the modular Solo system, Joovv is the righ
 If wavelength breadth (seven bands vs Joovv’s two), published third-party EMF testing, and saving $650 are the deciding factors, PlatinumLED is the right shape. Most spec-focused biohacker buyers land here.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default joovvVsPlatinumLed

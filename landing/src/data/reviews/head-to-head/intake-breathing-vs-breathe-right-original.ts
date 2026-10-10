@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const intakeVsBreatheRight: HeadToHead = {
+const intakeVsBreatheRight: HeadToHeadInput = {
   slug: 'intake-breathing-vs-breathe-right-original',
   productASlug: 'intake-breathing',
   productBSlug: 'breathe-right-original',
@@ -9,7 +9,7 @@ const intakeVsBreatheRight: HeadToHead = {
     'Intake Breathing vs Breathe Right Original — premium magnetic external dilator vs drugstore spring-tension strip. ONDA breaks down the external nasal-dilator duel.',
   intro:
     'Intake Breathing and Breathe Right Original are the two external nasal dilators users compare. Both attach to the outside of the nose. The defining difference: Intake uses magnetic dilation with replaceable adhesive tabs; Breathe Right uses passive spring-tension leverage via a disposable adhesive strip.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Premium mechanism vs drugstore economics. Intake Breathing for stronger magnetic dilation and reusable design. Breathe Right for FDA-cleared multi-decade track record at $0.33/night.',
   bestForA:
@@ -57,7 +57,7 @@ If you want the FDA-cleared drugstore reference at lowest per-night cost — Bre
   relatedComparisonSlug: 'best-mouth-tape-nasal-breathing-2026',
   publishOn: '2026-07-13',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-10',
 }
 
 export default intakeVsBreatheRight

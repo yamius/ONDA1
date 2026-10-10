@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const renuTherapyColdStoic: ToolReview = {
+const renuTherapyColdStoic: ToolReviewInput = {
   slug: 'renu-therapy-cold-stoic',
   name: 'Renu Therapy Cold Stoic',
   brand: 'Renu Therapy',
@@ -12,7 +12,6 @@ const renuTherapyColdStoic: ToolReview = {
     'Premium-tier cold plunge with a deliberately quiet chiller — best for indoor installation where noise matters.',
   summary:
     'Renu Therapy Cold Stoic is the premium-tier cold-plunge tub designed around indoor installation — the chiller is among the quietest in the category, the build is insulated for indoor temperature control, and the form factor fits typical bathroom or basement spaces. Slightly less aggressive on temperature floor than Plunge but cleaner on noise and indoor compatibility.',
-  overallScore: 7.6,
   scores: [
     { criterionId: 'chiller-capacity', score: 8.0, note: 'Capable chiller holds 40°F reliably. Slightly less aggressive temperature floor than Plunge’s 39°F but quieter operation.' },
     { criterionId: 'build', score: 8.5, note: 'Premium insulated build with marine-grade hardware. Indoor-optimised. 3-year warranty.' },
@@ -73,7 +72,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { q: "Renu Cold Stoic vs Plunge: which is better?", a: "Choose the Renu Cold Stoic for indoor installs, since it has the quietest premium chiller. Choose The Plunge for a slightly colder 39°F floor and wider brand recognition. Pricing is comparable, and both include ozone and a 3-year warranty." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default renuTherapyColdStoic

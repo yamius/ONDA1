@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const coldture: ToolReview = {
+const coldture: ToolReviewInput = {
   slug: 'coldture',
   name: 'Coldture',
   brand: 'Coldture',
@@ -12,7 +12,6 @@ const coldture: ToolReview = {
     'The Canadian premium answer to The Plunge — built for cold climates, slightly cheaper, EU-friendly distribution.',
   summary:
     'Coldture is the Canadian-built premium cold-plunge tub designed around cold-climate durability. Integrated chiller with strong winter performance, ozone sanitation, outdoor-rated insulated build. Closest direct competitor to The Plunge in the premium tier — slightly cheaper, stronger EU/Canada distribution.',
-  overallScore: 8.0,
   scores: [
     { criterionId: 'chiller-capacity', score: 8.5, note: 'Capable integrated chiller. Strong winter performance — designed around cold-climate operation where Plunge sometimes underperforms.' },
     { criterionId: 'build', score: 8.5, note: 'Canadian-built insulated tub, outdoor-rated for cold-climate winters. 3-year warranty.' },
@@ -73,7 +72,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { q: "Coldture vs The Plunge: which is better?", a: "Coldture is better for cold-climate and EU or Canadian buyers; The Plunge has stronger brand recognition and protocol content. Coldture is slightly cheaper with an outdoor winter rating and better EU and Canada distribution, while its guidance library is less developed." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default coldture

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const appleWatchUltra4: ToolReview = {
+const appleWatchUltra4: ToolReviewInput = {
   slug: 'apple-watch-ultra-4',
   name: 'Apple Watch Ultra 4',
   brand: 'Apple',
@@ -12,9 +12,8 @@ const appleWatchUltra4: ToolReview = {
     'The Apple Watch that finally suits overnight HRV: the new Health Sensing System plus a 50-hour battery and an athlete readiness score — if you can justify the size and $799 price.',
   summary:
     'The Ultra 4 takes the Series 12’s all-new Health Sensing System — HRV up to 24× more often, Recovery HRV and Overall HRV — and adds the one thing the Series 12 lacks for HRV: battery. At up to 50 hours it can genuinely track HRV night after night without a charging window fighting your sleep, and it adds an athlete-focused readiness score. The catch is the size, the $799 price, and that a finger ring is still more precise for the overnight number itself.',
-  overallScore: 8.0,
   scores: [
-    { criterionId: 'hrv-accuracy', score: 7.5, note: 'Same Health Sensing System as the Series 12 — HRV up to 24× more often, split into Recovery HRV and Overall HRV — plus a new readiness score. Apple calls it its most accurate heart sensing; still wrist optical, so a finger ring or ECG strap edges it for a pure overnight record.' },
+    { criterionId: 'hrv-accuracy', score: 7.0, note: 'Same Health Sensing System as the Series 12 — HRV up to 24× more often, split into Recovery HRV and Overall HRV — plus a readiness score. Apple calls it its most accurate heart sensing, but no independent validation of Recovery or Overall HRV against ECG was found (as of October 2026), so it scores the same as the Series 12.' },
     { criterionId: 'sensor', score: 9.5, note: 'The most complete sensor package here: the new Health Sensing System with hypertension notifications, single-lead ECG, a 40 m depth/dive sensor and satellite connectivity.' },
     { criterionId: 'sleep-accuracy', score: 7.5, note: 'The 50-hour battery is the real story: it makes continuous night-after-night sleep and overnight-HRV tracking practical on an Apple Watch for the first time, analysed against your personal baseline.' },
     { criterionId: 'data-access', score: 8.0, note: 'HealthKit is comparatively open and now writes native heartRateVariabilityRMSSD alongside SDNN, so recovery apps can read the same metric family as Whoop, Oura and Garmin.' },
@@ -88,7 +87,7 @@ Choose the Ultra 4 if you are an athlete or outdoors user who wants Apple’s ne
   ],
   relatedSlugs: ['apple-watch-series-12', 'garmin-fenix-8', 'oura-ring-4', 'whoop-5-0'],
   datePublished: '2026-09-18',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default appleWatchUltra4

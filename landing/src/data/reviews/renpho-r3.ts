@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const renphoR3: ToolReview = {
+const renphoR3: ToolReviewInput = {
   slug: 'renpho-r3',
   name: 'Renpho R3',
   brand: 'Renpho',
@@ -12,7 +12,6 @@ const renphoR3: ToolReview = {
     'Best Amazon-bestseller budget — Renpho R3 delivers credible specs at $99 with 5 attachments and quiet brushless motor.',
   summary:
     'Renpho R3 is the Amazon-bestseller budget reference — 40 lbs stall force, 12 mm amplitude, 5 attachments, quiet brushless motor, $99. Strong consumer-feedback base from Amazon distribution at scale. Renpho brand pedigree from smart scale and other home-health categories. The right buy for users who want budget percussion without the Bob and Brad PT-credibility framing premium.',
-  overallScore: 6.5,
   scores: [
     { criterionId: 'stall-force-amplitude', score: 7.0, note: '40 lbs stall force + 12 mm amplitude. Better specs than Bob and Brad Q2 Mini at the same price.' },
     { criterionId: 'build-attachments', score: 7.0, note: 'Brushless motor, 5 attachments included, 1-year warranty. Solid Amazon-scale build quality.' },
@@ -69,7 +68,7 @@ Choose Renpho R3 for pure spec-per-dollar Amazon budget. For Bob and Brad PT cre
     { q: "What are the downsides of the Renpho R3?", a: "The Renpho R3 has no app or smart features, no brand credibility moat, a standard single-grip handle, and only a 1-year warranty. It is a spec-per-dollar play rather than a premium brand purchase. Expect only basic features." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-07-20',
+  dateModified: '2026-10-10',
 }
 
 export default renphoR3

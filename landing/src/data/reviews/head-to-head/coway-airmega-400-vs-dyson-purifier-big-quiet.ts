@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const cowayVsDyson: HeadToHead = {
+const cowayVsDyson: HeadToHeadInput = {
   slug: 'coway-airmega-400-vs-dyson-purifier-big-quiet',
   productASlug: 'coway-airmega-400',
   productBSlug: 'dyson-purifier-big-quiet',
@@ -9,7 +9,7 @@ const cowayVsDyson: HeadToHead = {
     'Coway Airmega 400 vs Dyson Purifier Big+Quiet — the large-room value champion vs the premium design brand with formaldehyde destruction. Coverage and value vs polish and features.',
   intro:
     'Both are large-room air purifiers, but they sell on different things. The Coway Airmega 400 is the value champion — verified True HEPA H13 filtration and big-room coverage for well under half the Dyson price. The Dyson Purifier Big+Quiet adds a polished app experience, a formaldehyde-destroying layer and cooling airflow — at a premium. It’s coverage-and-value vs design-and-features.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Value and coverage vs design and features. The Coway Airmega 400 wins on price and large-room CADR — most of the filtration for a fraction of the cost. The Dyson wins on polished UX, a formaldehyde-destroying layer and multi-function cooling. Pick Coway for pure air-cleaning value; Dyson if you want the design, app and extra functions.',
   bestForA:
@@ -56,7 +56,7 @@ Against the clinical reference, see [Coway Airmega 400 vs IQAir HealthPro Plus](
   relatedComparisonSlug: 'best-air-purifiers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default cowayVsDyson

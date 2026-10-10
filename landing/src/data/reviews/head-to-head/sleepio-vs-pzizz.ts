@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const sleepioVsPzizz: HeadToHead = {
+const sleepioVsPzizz: HeadToHeadInput = {
   slug: 'sleepio-vs-pzizz',
   productASlug: 'sleepio',
   productBSlug: 'pzizz',
@@ -9,7 +9,7 @@ const sleepioVsPzizz: HeadToHead = {
     'Sleepio vs Pzizz — side-by-side ONDA comparison of two sleep apps with opposite approaches. CBT-I clinical programme versus generative wind-down audio.',
   intro:
     'Sleepio and Pzizz are the two sleep apps users compare when the goal is sleeping better, not tracking sleep. They sit at opposite ends of the intervention spectrum. Sleepio is a NICE-recommended digital CBT-I (cognitive-behavioural therapy for insomnia) programme; Pzizz is a generative-audio wind-down library that uses overlapping voice, music and tones to ease you into sleep. Clinical programme versus audio ritual.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Different problems. Sleepio for users with insomnia who want a clinical CBT-I programme. Pzizz for users who want a nightly wind-down ritual without therapy-style commitment.',
   bestForA:
@@ -57,7 +57,7 @@ If you have chronic insomnia — six weeks of trouble falling or staying asleep,
 If you want help getting to sleep tonight, without a structured programme, Pzizz is the right shape. The generative dreamscape audio works as a press-play nightly ritual; the nap mode and focus mode add daytime use cases. For clinical insomnia it is not the right tool — but it is a good nightly companion for users who just want to wind down.`,
   relatedComparisonSlug: 'best-sleep-apps-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-10',
 }
 
 export default sleepioVsPzizz

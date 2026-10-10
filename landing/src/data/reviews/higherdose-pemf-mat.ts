@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const higherDosePemf: ToolReview = {
+const higherDosePemf: ToolReviewInput = {
   slug: 'higherdose-pemf-mat',
   name: 'HigherDOSE Infrared PEMF Pro Mat',
   brand: 'HigherDOSE',
@@ -12,7 +12,6 @@ const higherDosePemf: ToolReview = {
     'Best consumer-brand PEMF mat — multi-modality, premium consumer build, simple controls. Field intensity and research backing are weaker than Bemer or Healthy Wave.',
   summary:
     'HigherDOSE PEMF Mat is the consumer-brand reference — slick branding, multi-modality (PEMF + infrared + about 20 lb of amethyst and obsidian) at $1,295, with a 120-day money-back guarantee. Best consumer UX in the category. Field intensity is modest and waveform research backing is light vs Bemer or Healthy Wave; the trade is brand polish and consumer-friendliness for technical depth.',
-  overallScore: 6.0,
   scores: [
     { criterionId: 'field-strength', score: 5.5, note: 'Modest PEMF intensity — designed for daily wellness, not high-output recovery. Lower than Healthy Wave on raw PEMF spec.' },
     { criterionId: 'waveform-evidence', score: 5.5, note: 'PEMF across 4 frequency levels, 3–23 Hz (delta to beta bands) — documented ranges but no proprietary research moat. Marketing leans on the multi-modality stack, not PEMF specifics.' },
@@ -71,7 +70,7 @@ Choose HigherDOSE PEMF Mat for consumer-polished multi-modality recovery at $1,2
     { q: "What are the downsides of the HigherDOSE PEMF Mat?", a: "Its PEMF intensity is modest compared with Healthy Wave or clinical mats, and it offers only 4 preset frequency levels (3–23 Hz) with no protocol depth. Research backing is light, since the marketing leans on the multi-modality stack rather than PEMF specifics. The one-year warranty is also short." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default higherDosePemf

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const garminFenix8VsAppleWatch11: HeadToHead = {
+const garminFenix8VsAppleWatch11: HeadToHeadInput = {
   slug: 'garmin-fenix-8-vs-apple-watch-series-11',
   productASlug: 'garmin-fenix-8',
   productBSlug: 'apple-watch-series-11',
@@ -9,7 +9,7 @@ const garminFenix8VsAppleWatch11: HeadToHead = {
     'Garmin Fenix 8 vs Apple Watch Series 11 — flagship smartwatch showdown for HRV. Multi-week battery and outdoor depth versus the best everyday smartwatch and ecosystem.',
   intro:
     'Two flagship wrist computers people cross-shop in 2026 — but they optimise for opposite lives. The Fenix 8 is a rugged, multi-week-battery multisport instrument with an ECG-capable Elevate v5 sensor; the Apple Watch Series 11 is the best everyday smartwatch, with a polished health app and deep iPhone integration. For HRV specifically the gap is narrower than the price gap suggests.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'No overall winner — it splits by life. For continuous overnight HRV, outdoor/training depth and battery that never gets in the way, the Fenix 8 leads; for an everyday smartwatch, apps and iPhone ecosystem, the Series 11 wins — at a fraction of the price.',
   bestForA:
@@ -61,7 +61,7 @@ You want the best daily smartwatch, a polished health app and tight iPhone integ
 Both are trackers — they measure, they do not train. Whichever you wear, the [state-changing part](/articles/active-intervention-vs-passive-tracking) still comes from an active practice like [HRV biofeedback](/hrv-biofeedback). And if overnight HRV precision is your real goal, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026) — a ring will likely serve you better than either watch.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-12',
-  dateModified: '2026-09-12',
+  dateModified: '2026-10-10',
 }
 
 export default garminFenix8VsAppleWatch11

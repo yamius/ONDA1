@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const sunHomeVsSunlighten: HeadToHead = {
+const sunHomeVsSunlighten: HeadToHeadInput = {
   slug: 'sun-home-equinox-vs-sunlighten-mpulse',
   productASlug: 'sun-home-equinox',
   productBSlug: 'sunlighten-mpulse',
@@ -9,7 +9,7 @@ const sunHomeVsSunlighten: HeadToHead = {
     'Sun Home Equinox vs Sunlighten mPulse — the value-forward newcomer with integrated red light vs the premium category leader with true 3-wavelength control. Full-spectrum infrared compared.',
   intro:
     'The Sunlighten mPulse is the premium reference in full-spectrum infrared — true, independently-controlled three-wavelength delivery in a premium cedar cabin. The Sun Home Equinox is the value-forward challenger: the highest heat, integrated red light and chromotherapy, at a similar price. It’s wavelength precision and build vs heat and bundled features.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Premium reference vs value-forward challenger. The Sunlighten mPulse wins on true 3-wavelength control, premium cedar build and category pedigree; the Sun Home Equinox wins on heat output and bundled extras (integrated red light, chromotherapy). Both verify low EMF at a similar price. Pick Sunlighten for wavelength precision and build; Sun Home for heat and the feature bundle.',
   bestForA:
@@ -56,7 +56,7 @@ See [Sun Home Equinox vs Clearlight Sanctuary 2](/reviews/vs/sun-home-equinox-vs
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default sunHomeVsSunlighten

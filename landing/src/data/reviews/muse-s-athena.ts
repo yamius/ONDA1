@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const museSAthena: ToolReview = {
+const museSAthena: ToolReviewInput = {
   slug: 'muse-s-athena',
   name: 'Muse S Athena',
   brand: 'Interaxon',
@@ -12,7 +12,6 @@ const museSAthena: ToolReview = {
     'The most complete consumer brain-training headset — EEG plus fNIRS in a soft band you can sleep in.',
   summary:
     'Muse S Athena is Interaxon’s 2024 flagship — a soft sleep-friendly headband combining four-channel dry EEG with prefrontal fNIRS oxygenation and overnight sleep tracking. Inherits the mature Muse meditation content library, adds the most ambitious sensor fusion in the consumer category, and unlike most premium devices ships without a mandatory subscription. The best all-rounder in EEG / brain-training in 2026.',
-  overallScore: 8.5,
   scores: [
     { criterionId: 'signal-quality', score: 8.5, note: 'Four dry EEG electrodes plus prefrontal fNIRS optodes — the first consumer headset to fuse both signals in one device. Signal stability holds well during sit and lie-down sessions; a true research-grade reference it is not.' },
     { criterionId: 'training-content', score: 9.5, note: 'The deepest brain-training content library in the consumer space — guided meditations, breathwork, sleep journeys, focus sessions, mood tracking. Mature after a decade of iteration.' },

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const series12VsOura4: HeadToHead = {
+const series12VsOura4: HeadToHeadInput = {
   slug: 'apple-watch-series-12-vs-oura-ring-4',
   productASlug: 'apple-watch-series-12',
   productBSlug: 'oura-ring-4',
@@ -9,7 +9,7 @@ const series12VsOura4: HeadToHead = {
     'Apple Watch Series 12 vs Oura Ring 4 for HRV — now that Apple reports Recovery HRV and Apple Health adds an RMSSD value, the comparison is much fairer. Watch vs ring, weighed axis by axis.',
   intro:
     'For years this was an unfair fight: the Apple Watch reported sparse SDNN, the Oura Ring reported continuous RMSSD, and the numbers never matched. The September 2026 Series 12 changes that — it samples HRV about 24× more often, reports a separate Recovery HRV, and Apple Health now carries an RMSSD value — the statistic Oura uses. So the real question is now the honest one: a do-everything smartwatch, or a dedicated overnight ring?',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'No overall winner — it splits by what you want. For the most precise, hands-off overnight HRV and sleep, the Oura Ring 4 leads on the finger and the multi-day battery. For an all-round smartwatch with ECG, hypertension notifications and no subscription, the Series 12 wins — its HRV is now usable as a personal trend.',
   bestForA:
@@ -17,7 +17,7 @@ const series12VsOura4: HeadToHead = {
   bestForB:
     'Choose the Oura Ring 4 if overnight HRV and sleep are the point: finger measurement is more precise, the ring is easier to sleep in, and its battery lasts days.',
   axes: [
-    { name: 'Overnight HRV precision', winner: 'b', note: 'The Oura Ring 4 measures continuously from the finger, where signal quality beats wrist optical, and holds among the best independent sleep-stage/HRV agreement. The Series 12 is much improved but still wrist optical.' },
+    { name: 'Overnight HRV precision', winner: 'b', note: 'The Oura Ring 4 is the only one of the two with an independent overnight check of HRV against ECG (one study, 13 people); no independent check of its sleep staging was found. The Series 12’s Recovery/Overall HRV has not been independently validated (as of October 2026).' },
     { name: 'Recovery-metric comparability', winner: 'tie', note: 'Apple Health now carries an RMSSD value, the statistic Oura uses, so you can compare in kind — Apple hasn’t confirmed Recovery HRV itself is RMSSD, and absolute numbers still differ.' },
     { name: 'Battery / overnight wear', winner: 'b', note: 'Oura runs several days per charge and is easy to sleep in; the Series 12’s ~1-day battery means overnight measurement competes with the nightly charge.' },
     { name: 'Everyday smartwatch', winner: 'a', note: 'Apps, notifications, payments, a screen, ECG and hypertension notifications — the Series 12 is a full smartwatch; the Oura is a silent sensor.' },
@@ -52,7 +52,7 @@ Before September 2026, the Apple Watch reported SDNN sampled sparsely, while Our
 For many people the answer is both: an Oura Ring for the hands-off overnight trend, and an Apple Watch for everything a ring can’t do. If you only want the most precise overnight HRV, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-18',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default series12VsOura4

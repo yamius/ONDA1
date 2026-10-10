@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const series12VsFenix8: HeadToHead = {
+const series12VsFenix8: HeadToHeadInput = {
   slug: 'apple-watch-series-12-vs-garmin-fenix-8',
   productASlug: 'apple-watch-series-12',
   productBSlug: 'garmin-fenix-8',
@@ -9,7 +9,7 @@ const series12VsFenix8: HeadToHead = {
     'Apple Watch Series 12 vs Garmin Fenix 8 for HRV — Apple’s new Recovery HRV and everyday smartwatch versus Garmin’s multi-week battery and multisport depth. Weighed axis by axis.',
   intro:
     'These two rarely compete on price, but they meet on the HRV question. The September 2026 Series 12 brings Apple’s all-new Health Sensing System — HRV sampled about 24× more often, split into Recovery HRV and Overall HRV — for $399. The Garmin Fenix 8 is a ~$1,000 expedition watch with the Elevate v5 sensor, an ECG app, HRV Status and a battery that lasts weeks. Both are wrist optical; the real split is battery and what else you need the watch to do.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'No overall winner — it splits by use. For the newest HRV system, the best everyday smartwatch and the lower price, the Series 12 leads. For multi-week battery that makes nightly HRV effortless, plus serious training, navigation and dive tools, the Fenix 8 leads. Neither beats a finger ring or chest strap for a pure overnight record.',
   bestForA:
@@ -52,7 +52,7 @@ On paper the Series 12 has the newer HRV system: far more frequent sampling and 
 If you want one watch for everything and train casually, the Series 12 is the better buy. If you train seriously outdoors and want HRV along for the ride, the Fenix 8 earns its price. If overnight HRV precision is the only goal, neither is ideal — see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default series12VsFenix8

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const bedjet3: ToolReview = {
+const bedjet3: ToolReviewInput = {
   slug: 'bedjet-3',
   name: 'BedJet 3',
   brand: 'BedJet',
@@ -12,7 +12,6 @@ const bedjet3: ToolReview = {
     'The air-flow alternative to water-cooled systems — no water management, more affordable, less rigorous temperature control.',
   summary:
     'BedJet 3 is the air-flow alternative to water-cooled sleep climate. A fan unit pushes heated or cooled air through a duct under the sheet. No water-tank maintenance, cheaper than Eight Sleep or Sleepme premium tiers, and easier to install — but less rigorous temperature control and less effective in heavy ambient heat.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'climate-range', score: 7.0, note: 'Air-flow climate — effective for warming, less aggressive cooling than water systems. Best for mild-to-moderate climate intervention rather than peak summer.' },
     { criterionId: 'build', score: 8.0, note: 'Fan unit + air duct. No water tank, no pad. Multi-year BedJet brand reliability solid. 2-year warranty.' },
@@ -73,7 +72,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
     { q: "BedJet 3 vs Eight Sleep: which is better?", a: "Eight Sleep is better for rigorous temperature control, while the BedJet 3 is better for affordability and easy setup. BedJet pushes air through a duct under the sheet with no water tank, is cheaper and needs no subscription, but its temperature control is less rigorous." },
   ],
   datePublished: '2026-06-15',
-  dateModified: '2026-06-15',
+  dateModified: '2026-10-10',
 }
 
 export default bedjet3

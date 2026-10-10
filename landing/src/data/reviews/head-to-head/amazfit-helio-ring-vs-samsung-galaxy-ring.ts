@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const helioVsSamsung: HeadToHead = {
+const helioVsSamsung: HeadToHeadInput = {
   slug: 'amazfit-helio-ring-vs-samsung-galaxy-ring',
   productASlug: 'amazfit-helio-ring',
   productBSlug: 'samsung-galaxy-ring',
@@ -9,7 +9,7 @@ const helioVsSamsung: HeadToHead = {
     'Amazfit Helio Ring vs Samsung Galaxy Ring — two subscription-free rings at very different prices. Cheapest and cross-platform vs pricier with better battery and Samsung integration.',
   intro:
     'Both skip the subscription, but they sit at opposite ends of the budget. The Amazfit Helio Ring is $199 and works across iOS and Android; the Samsung Galaxy Ring is roughly double at ~$399, with a better battery, build and tight integration — at its best on a Samsung Galaxy phone. This is cheapest-and-cross-platform vs pricier-and-more-polished.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Both are subscription-free. The Amazfit Helio Ring wins on price (~half) and true cross-platform support; the Samsung Galaxy Ring wins on battery, build, fit range and ecosystem integration for Samsung users. Pick by budget and whether you live in the Samsung ecosystem.',
   bestForA:
@@ -56,7 +56,7 @@ For the longest-battery budget ring, see [Amazfit Helio vs RingConn Gen 2](/revi
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default helioVsSamsung

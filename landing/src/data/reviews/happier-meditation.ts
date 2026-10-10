@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const happierMeditation: ToolReview = {
+const happierMeditation: ToolReviewInput = {
   slug: 'happier-meditation',
   name: 'Happier Meditation',
   brand: 'Happier',
@@ -12,7 +12,6 @@ const happierMeditation: ToolReview = {
     'Excellent, relatable teachers and a polished app — formerly Ten Percent Happier — held back only by a premium price.',
   summary:
     'Happier Meditation — formerly Ten Percent Happier — is built around the quality of its teachers. Its 500-plus guided sessions come from a relatable, expert roster, and the app is polished and well-reviewed. The catch is price: at around 100 USD a year it is one of the more expensive options.',
-  overallScore: 7.4,
   scores: [
     { criterionId: 'content-library', score: 7.5, note: 'Over 500 guided meditations plus courses — a solid, well-curated library.' },
     { criterionId: 'teaching', score: 8.5, note: 'The strongest card here — a relatable, expert roster of teachers, consistently praised by reviewers.' },

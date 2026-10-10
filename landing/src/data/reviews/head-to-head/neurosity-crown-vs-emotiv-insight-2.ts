@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const neurosityVsEmotiv: HeadToHead = {
+const neurosityVsEmotiv: HeadToHeadInput = {
   slug: 'neurosity-crown-vs-emotiv-insight-2',
   productASlug: 'neurosity-crown',
   productBSlug: 'emotiv-insight-2',
@@ -9,7 +9,6 @@ const neurosityVsEmotiv: HeadToHead = {
     'Neurosity Crown vs Emotiv Insight 2 — side-by-side ONDA comparison of two developer-grade consumer EEG headsets. Open SDK versus academic toolchain.',
   intro:
     'Neurosity Crown and Emotiv Insight 2 are the two consumer EEG headsets developers and researchers most commonly weigh against each other. Both target the user who wants raw signal access, not a meditation app. The structural difference is the data model: Neurosity is open SDK with no gate; Emotiv has a deeper academic toolchain but gates raw-data access behind a Pro subscription.',
-  winnerSlug: 'neurosity-crown',
   verdict:
     'Neurosity Crown wins for developers and biohackers who want raw EEG access without subscription. Emotiv Insight 2 wins specifically for users running academic-style analysis where EmotivPRO’s toolchain is the deciding factor.',
   bestForA:

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const resonaVibe: ToolReview = {
+const resonaVibe: ToolReviewInput = {
   slug: 'resona-health-vibe',
   name: 'Resona Health VIBE',
   brand: 'Resona Health',
@@ -12,7 +12,6 @@ const resonaVibe: ToolReview = {
     'Best wearable PEMF entry point — $299, 130+ protocols, single-button operation, no app or subscription. Lower field intensity than full-body mats, by design.',
   summary:
     'Resona Health VIBE is the wearable PEMF entry tier — pocket-sized device with 130+ built-in protocols (60 core + 70 expansion), a single-button interface with no app or subscription, and $299 pricing. Field intensity is much lower than full-body mats — the design philosophy is targeted localised use rather than passive whole-body session. Best entry point for PEMF-curious users not ready to commit $1,750+ to a mat.',
-  overallScore: 6.8,
   scores: [
     { criterionId: 'field-strength', score: 6.0, note: 'Wearable form factor means lower peak intensity than full-body mats. Designed for targeted localised use, not whole-body field exposure.' },
     { criterionId: 'waveform-evidence', score: 7.0, note: '130+ protocols drawn from documented PEMF frequency research. No proprietary single-waveform research moat — uses the existing literature.' },
@@ -95,7 +94,7 @@ Choose Resona Health VIBE if you are curious about PEMF and want a low-commitmen
   ],
 
   datePublished: '2026-06-22',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default resonaVibe

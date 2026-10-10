@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const bemerClassicEvo: ToolReview = {
+const bemerClassicEvo: ToolReviewInput = {
   slug: 'bemer-classic-evo',
   name: 'Bemer Classic Evo',
   brand: 'Bemer',
@@ -12,10 +12,9 @@ const bemerClassicEvo: ToolReview = {
     'The best-known PEMF mat and the most-studied single signal — but most studies are small or manufacturer-linked, and independent controlled trials found no difference from control. Premium pricing.',
   summary:
     'Bemer Classic Evo is the best-known PEMF mat, with a 25-year brand track record. Bemer cites many studies of its specific biorhythmic signal, but most are small or manufacturer-linked; independent controlled trials of a BEMER device found no difference from an inactive device in fibromyalgia (Multanen 2018) or from the untreated leg in skin blood flow in healthy volunteers (Biermann 2020). Its FDA 510(k) clearance (K231368, product code NGX) is for a powered muscle stimulator used for non-medical muscle conditioning — not for treating any disease. Field intensity is deliberately low; the selling point is the proprietary waveform, not raw gauss. The main points of contention are price ($5,490) and a proprietary signal that locks you into the Bemer ecosystem.',
-  overallScore: 8.7,
   scores: [
     { criterionId: 'field-strength', score: 7.5, note: 'Low-intensity by design (~35–150 µT). Bemer’s thesis is that microcirculation responds to waveform shape, not peak gauss — a maker claim that independent controlled trials have not confirmed. Lower than coil systems on raw output.' },
-    { criterionId: 'waveform-evidence', score: 9.8, note: 'Bemer cites the longest study list of any consumer PEMF signal, but most studies are small, uncontrolled or manufacturer-linked. Independent controlled trials found no difference from an inactive device in fibromyalgia (Multanen 2018) or from a control leg in skin blood flow (Biermann 2020).' },
+    { criterionId: 'waveform-evidence', score: 6.5, note: 'Bemer cites the longest study list of any consumer PEMF signal, but most studies are small, uncontrolled or manufacturer-linked, and studies run or funded by the maker do not count as evidence here. Independent controlled trials found no difference from an inactive device in fibromyalgia (Multanen 2018) or from a control leg in skin blood flow (Biermann 2020) — that is why this scores below the 7.0 we give devices with no trials of their own.' },
     { criterionId: 'build', score: 9.0, note: 'Premium German build, 3-year warranty. Control unit electronics among the best in category. Multi-decade reliability track record. The FDA clearance covers non-medical muscle conditioning, not build quality or health effects.' },
     { criterionId: 'programmability', score: 8.0, note: 'Pre-set Bemer protocols with intensity steps (P1–P10). App-controlled. Programmes are documented but the waveform itself is proprietary and not user-customisable.' },
     { criterionId: 'form-factor', score: 8.5, note: 'Full-body mat + B.Spot pillow applicator + B.Pad spot applicator. Coordinated multi-applicator system from a single control unit.' },
@@ -73,7 +72,7 @@ Choose Bemer Classic Evo if you want the best-known PEMF signal in a well-built 
     { q: "Who is the Bemer Classic Evo best for?", a: "The Bemer Classic Evo is best for users who want the best-known PEMF signal in a coordinated multi-applicator system from a multi-decade brand. It suits buyers who can pay premium pricing and accept that health benefits are not proven." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default bemerClassicEvo

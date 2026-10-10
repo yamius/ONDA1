@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const sleepscore: ToolReview = {
+const sleepscore: ToolReviewInput = {
   slug: 'sleepscore',
   name: 'SleepScore',
   brand: 'SleepScore Labs',
@@ -12,7 +12,6 @@ const sleepscore: ToolReview = {
     'A research-led, contact-free tracker — the strongest here at turning your sleep data into something to actually act on.',
   summary:
     'SleepScore comes from a research-oriented company and it shows. It tracks without contact, breaks the night into dozens of parameters, and turns that into personalised recommendations rather than just a number — the strongest mainstream tracker for telling you what to change.',
-  overallScore: 7.1,
   scores: [
     { criterionId: 'tracking-accuracy', score: 8.0, note: 'Contact-free sonar tracking through the phone speaker and microphone — a clever, well-regarded approach.' },
     { criterionId: 'wind-down-content', score: 5.5, note: 'Light — some content, but the focus is measurement and advice.' },
@@ -74,7 +73,7 @@ The sleep biology behind what these apps measure and the protocols they support.
     { q: "What are the downsides of SleepScore?", a: "SleepScore's phone-based sonar is an estimate, not wearable-grade tracking. Wind-down content is light, the useful analysis sits behind Premium, and the app is less polished than Sleep Cycle, its closest mainstream alternative." },
   ],
   datePublished: '2026-05-16',
-  dateModified: '2026-05-16',
+  dateModified: '2026-10-10',
 }
 
 export default sleepscore

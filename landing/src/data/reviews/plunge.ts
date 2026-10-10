@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const plunge: ToolReview = {
+const plunge: ToolReviewInput = {
   slug: 'plunge',
   name: 'The Plunge All-In',
   brand: 'The Plunge Co',
@@ -12,7 +12,6 @@ const plunge: ToolReview = {
     'The category-defining cold plunge — premium build, capable chiller, polished consumer experience at a premium price.',
   summary:
     'The Plunge All-In is the cold-plunge tub that brought the category mainstream. Insulated acrylic tub with built-in 1 HP chiller, ozone water sanitation, programmable temperature down to 39°F, indoor/outdoor rated. The hardware that defined consumer-grade cold-plunge expectations — premium-priced and worth it for users who want a turnkey daily-use plunge.',
-  overallScore: 8.4,
   scores: [
     { criterionId: 'chiller-capacity', score: 9.0, note: '1 HP chiller, holds 39°F reliably even in summer ambient. Strong recovery time post-plunge. Among the most capable chillers in the consumer category.' },
     { criterionId: 'build', score: 8.5, note: 'Insulated acrylic tub, marine-grade hardware, 3-year warranty. Outdoor-rated. Multi-year reliability track record in the user base.' },
@@ -72,7 +71,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { q: "Plunge vs Renu Therapy Cold Stoic: which is better?", a: "The Plunge reaches a slightly colder floor, 39°F versus Renu's 40°F, and has wider brand recognition. The Renu Cold Stoic has the quietest chiller among premium plunges, making it better for indoor installs. Both include ozone and a 3-year warranty." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default plunge

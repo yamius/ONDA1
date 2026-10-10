@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const tolocoGun: ToolReview = {
+const tolocoGun: ToolReviewInput = {
   slug: 'toloco-massage-gun',
   name: 'TOLOCO Massage Gun',
   brand: 'TOLOCO',
@@ -12,7 +12,6 @@ const tolocoGun: ToolReview = {
     'Cheapest credible budget — TOLOCO at $69 with 10 attachments. Lowest stall force in roundup; brand pedigree thinnest. The right pick if absolute cost dominates.',
   summary:
     'TOLOCO Massage Gun is the absolute-cheapest credible budget — Amazon best-seller at $69 with 10 attachments (highest count in category), 25-30 lbs stall force, 10 mm amplitude. Thin brand pedigree; LCD touch screen as a flashy budget differentiator. Amazon distribution scale provides consumer-feedback validation. The right buy if $30 over Renpho R3 is meaningful.',
-  overallScore: 6.0,
   scores: [
     { criterionId: 'stall-force-amplitude', score: 5.5, note: '~25–30 lbs stall force + 10 mm amplitude. Lowest in roundup. Adequate for light-touch protocols; insufficient for deep tissue.' },
     { criterionId: 'build-attachments', score: 7.5, note: '10 attachments included (highest count). Brushless motor at budget price. 1-year warranty. Build quality variable in user reports.' },
@@ -69,7 +68,7 @@ Choose TOLOCO if $69 vs $99 is meaningful and you accept reduced stall force. Fo
     { q: "What are the downsides of the TOLOCO massage gun?", a: "TOLOCO has the lowest stall force in the roundup at 25–30 lbs, a thin brand pedigree, and variable build quality in user reports. It is also noisier than Renpho or Bob and Brad budget alternatives." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-07-20',
+  dateModified: '2026-10-10',
 }
 
 export default tolocoGun

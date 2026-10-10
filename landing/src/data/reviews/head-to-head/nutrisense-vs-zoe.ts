@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const nutrisenseVsZoe: HeadToHead = {
+const nutrisenseVsZoe: HeadToHeadInput = {
   slug: 'nutrisense-vs-zoe',
   productASlug: 'nutrisense',
   productBSlug: 'zoe',
@@ -9,7 +9,7 @@ const nutrisenseVsZoe: HeadToHead = {
     'Nutrisense vs Zoe — side-by-side ONDA comparison of two nutrition-led CGM programmes. Continuous CGM with a registered dietitian versus multi-biomarker personalised nutrition.',
   intro:
     'Nutrisense and Zoe are the two CGM programmes nutrition-focused users compare when expert advice matters more than the glucose data alone. Different models: Nutrisense runs continuous Dexcom G7 CGM with a registered dietitian assigned to every subscriber. Zoe runs a two-week Abbott Libre phase alongside microbiome and blood biomarker tests, then keeps you on personalised food rankings. Both go beyond raw CGM.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Different products. Nutrisense for ongoing CGM with a human dietitian. Zoe for a multi-biomarker personalised-nutrition reset grounded in published science.',
   bestForA:
@@ -18,7 +18,7 @@ const nutrisenseVsZoe: HeadToHead = {
     'Choose Zoe if you want personalised nutrition based on published science — CGM + gut microbiome + blood biomarkers fused into one food-ranking model.',
   axes: [
     { name: 'Continuous CGM', winner: 'a', note: 'Nutrisense: continuous Dexcom G7 for as long as you subscribe. Zoe: 2-week Libre phase only. Nutrisense wins on continuous data.' },
-    { name: 'Sensor accuracy', winner: 'a', note: 'Nutrisense: Dexcom G7 (MARD ~8.2%). Zoe: Libre (MARD ~9–11% in shorter-wear variant). Nutrisense has the more accurate sensor.' },
+    { name: 'Sensor accuracy', winner: 'tie', note: 'Nutrisense: Dexcom G7. Zoe: an older 2-week Abbott Libre variant. No independent study compares the two sensors head-to-head, and maker accuracy figures do not count as evidence in ONDA scores, so this axis is a tie.' },
     { name: 'Human expert involvement', winner: 'a', note: 'Nutrisense: registered dietitian assigned to every subscriber. Zoe: app-driven, no 1-on-1 coach by default. Nutrisense wins on human coaching.' },
     { name: 'Multi-biomarker view', winner: 'b', note: 'Zoe fuses CGM with gut microbiome and blood biomarker panels — uniquely multi-modal. Nutrisense is CGM-only.' },
     { name: 'Scientific lineage', winner: 'b', note: 'Zoe: PREDICT-1/PREDICT-2 studies from Tim Spector’s King’s College London group, published in Nature Medicine. Nutrisense: credible RDs, no equivalent published trial series.' },
@@ -50,14 +50,14 @@ Nutrisense is ongoing CGM with a human dietitian on the data. Zoe is a multi-bio
 
 ## When is Nutrisense the right pick?
 
-If you want continuous CGM data plus a registered dietitian working through it weekly — accountability through a person, on the most accurate consumer sensor — Nutrisense is the right shape. The coach is the value; the data is the input.
+If you want continuous CGM data plus a registered dietitian working through it weekly — accountability through a person, on the Dexcom G7 sensor — Nutrisense is the right shape. The coach is the value; the data is the input.
 
 ## When is Zoe the right pick?
 
 If you want personalised nutrition grounded in real published science, and a one-time multi-biomarker reset (CGM + gut microbiome + blood) followed by ongoing food-ranking guidance is what you want — Zoe is the right shape. The PREDICT studies are the scientific anchor; the food rankings are the deliverable.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-10',
 }
 
 export default nutrisenseVsZoe

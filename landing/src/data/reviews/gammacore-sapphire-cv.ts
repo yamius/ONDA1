@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const gammacoreSapphireCv: ToolReview = {
+const gammacoreSapphireCv: ToolReviewInput = {
   slug: 'gammacore-sapphire-cv',
   name: 'gammaCore Sapphire CV',
   brand: 'electroCore',
@@ -12,9 +12,8 @@ const gammacoreSapphireCv: ToolReview = {
     'The FDA-cleared medical reference for non-invasive cervical VNS — a clinical tool, not a consumer wellness device.',
   summary:
     'gammaCore is the only non-invasive vagus nerve stimulator with FDA clearance for headache disorders — migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua. It is a handheld device pressed against the side of the neck over the carotid artery, delivering a proprietary 5 kHz waveform burst for 2-minute sessions. Available by prescription only. Within its indications it is the most evidence-backed device in this list — and it is priced and gated accordingly.',
-  overallScore: 8.4,
   scores: [
-    { criterionId: 'evidence', score: 9.7, note: 'FDA-cleared for migraine prevention and acute treatment (age 12+), cluster-headache acute/preventive treatment, paroxysmal hemicrania and hemicrania continua; 30+ randomised trials. The clinical reference for non-invasive cervical VNS.' },
+    { criterionId: 'evidence', score: 8.5, note: 'FDA-cleared for migraine prevention and acute treatment (age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua. The pivotal randomised trials were sponsored by electroCore, and maker-sponsored studies do not count as evidence in ONDA scores; independent trials remain, so it is still the clinical reference for non-invasive cervical VNS.' },
     { criterionId: 'mechanism', score: 8.5, note: 'Cervical tVNS over the carotid sheath — targets the cervical vagal trunk directly. Proprietary 5 kHz burst waveform; parameters are fixed, not user-adjustable.' },
     { criterionId: 'protocols', score: 5.5, note: 'Two-minute fixed sessions, dose set by prescriber. No programme variety — by design, since dosing is clinically calibrated.' },
     { criterionId: 'comfort', score: 7.0, note: 'Handheld and ergonomic; the user controls placement and intensity. Some users report neck discomfort or jaw twitches at higher amplitudes.' },
@@ -75,7 +74,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "Is gammaCore worth it?", a: "For clinically indicated migraine or cluster-headache patients, yes: it has the deepest randomised-trial evidence base of any device in its category. For general stress relief or wellness it is the wrong tool, because it is a clinical device with narrow indications and prescription gating." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default gammacoreSapphireCv

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const curatron3d: ToolReview = {
+const curatron3d: ToolReviewInput = {
   slug: 'curatron-3d',
   name: 'Curatron 3D',
   brand: 'Curatronic',
@@ -12,10 +12,9 @@ const curatron3d: ToolReview = {
     'Clinic-style PEMF with documented protocols and dual applicator system. Mid-tier between Bemer mats and Pulse Centers coil clinics.',
   summary:
     'Curatron 3D is the Israeli-engineered alternative to Pulse Centers — clinic-style PEMF with coil and mat applicators and maker-documented bone-healing and osteoporosis protocols. It is registered with the FDA — a listing, not a clearance or approval — and we found no FDA clearance for bone healing. Field intensity sits between consumer mats and pure-coil clinic systems. Strong build, transparent published protocol parameters, mid-tier pricing.',
-  overallScore: 7.8,
   scores: [
     { criterionId: 'field-strength', score: 8.5, note: 'Strong field intensity, documented across coil and mat applicators, with usable continuous output.' },
-    { criterionId: 'waveform-evidence', score: 8.5, note: 'Published protocol parameters. Bone-healing protocols are modelled on bone-stimulation research, but the device itself has no FDA clearance for bone healing (none found in the 510(k) database), and we found no trials of it for osteoporosis.' },
+    { criterionId: 'waveform-evidence', score: 7.0, note: 'Published protocol parameters. Bone-healing protocols are modelled on bone-stimulation research, but borrowed medical-device status earns no credit: the device itself has no FDA clearance for bone healing (none found in the 510(k) database) and we found no trials of it for osteoporosis — 7.0, the score for PEMF devices without device-specific trials.' },
     { criterionId: 'build', score: 8.5, note: 'Solid clinic-style build, multi-decade Curatronic brand pedigree in clinical PEMF. FDA registration is a listing, not a clearance or approval.' },
     { criterionId: 'programmability', score: 8.0, note: 'Documented protocols with intensity and frequency parameters exposed. More transparent than consumer presets.' },
     { criterionId: 'form-factor', score: 7.5, note: 'Dual applicator system — full-body mat + coil paddle. Covers both passive whole-body and targeted spot use cases.' },
@@ -71,7 +70,7 @@ Choose Curatron 3D for clinic-style dual-applicator PEMF with transparent parame
     { q: "Curatron 3D vs Bemer Classic Evo: which is better?", a: "The Curatron 3D is better for transparent parameters and targeted coil use; Bemer is better for research depth and polish. Curatron costs about $4,500 versus Bemer's $5,490, while Bemer has a longer, mostly manufacturer-linked study list and an FDA clearance for non-medical muscle conditioning." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-10-07',
+  dateModified: '2026-10-10',
 }
 
 export default curatron3d

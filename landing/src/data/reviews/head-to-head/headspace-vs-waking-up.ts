@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const headspaceVsWakingUp: HeadToHead = {
+const headspaceVsWakingUp: HeadToHeadInput = {
   slug: 'headspace-vs-waking-up',
   productASlug: 'headspace',
   productBSlug: 'waking-up',
@@ -9,7 +9,7 @@ const headspaceVsWakingUp: HeadToHead = {
     'Headspace vs Waking Up — side-by-side ONDA comparison of two meditation apps with opposite philosophies. Friendly secular curriculum versus Sam Harris’ philosophical depth.',
   intro:
     'Headspace and Waking Up are the two meditation apps users most often weigh against each other when teaching philosophy is the deciding factor. Headspace is the friendly secular-mindfulness curriculum that defined the consumer category; Waking Up is Sam Harris’ philosophical project — meditation as inquiry into the nature of mind, paired with lectures from neuroscientists and philosophers. They sit on the same shelf and solve almost opposite jobs.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Different products. Headspace for an accessible, structured introduction to mindfulness. Waking Up for the philosophical and non-dual depth Headspace deliberately stays away from.',
   bestForA:
@@ -57,7 +57,7 @@ If you have never meditated and want a friendly, structured introduction — Bas
 If you want meditation as part of a wider inquiry into mind, consciousness and attention — and you want Sam Harris’ teaching voice plus lectures from neuroscientists and philosophers around it — Waking Up is the right shape. The library is non-linear and assumes intellectual engagement. The free-access policy means cost is never the blocker.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default headspaceVsWakingUp

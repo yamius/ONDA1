@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const sunHomeEquinox: ToolReview = {
+const sunHomeEquinox: ToolReviewInput = {
   slug: 'sun-home-equinox',
   name: 'Sun Home Equinox',
   brand: 'Sun Home Saunas',
@@ -12,7 +12,6 @@ const sunHomeEquinox: ToolReview = {
     'A capable newer entrant — full-spectrum IR with bundled chromotherapy and sound, price-disciplined relative to category leaders.',
   summary:
     'Sun Home Equinox is the newer mid-premium IR sauna brand competing with Sunlighten and Clearlight by bundling more features at lower price. Full-spectrum IR via separate near and far emitters, chromotherapy lighting, Bluetooth sound system, cedar cabin. Solid execution from a newer brand, multi-year reliability track record still being built.',
-  overallScore: 7.5,
   scores: [
     { criterionId: 'heat-source', score: 8.0, note: 'Full-spectrum IR with separate near and far emitter panels. More wavelength rigour than mid-tier; less granular than Sunlighten mPulse.' },
     { criterionId: 'build', score: 8.0, note: 'Cedar cabin construction with bundled chromotherapy and Bluetooth audio. 5-year warranty.' },
@@ -73,7 +72,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "Sun Home Equinox vs Sunlighten mPulse: which is better?", a: "Sunlighten mPulse is the stronger pick for rigorous wavelength control and published research. Sun Home Equinox offers full-spectrum IR with bundled extras at mid-premium pricing below comparable Sunlighten models. Choose Equinox for value, mPulse for finer wavelength control." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default sunHomeEquinox

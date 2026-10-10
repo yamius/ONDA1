@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const higherdoseBlanketV4: ToolReview = {
+const higherdoseBlanketV4: ToolReviewInput = {
   slug: 'higherdose-blanket-v4',
   name: 'HigherDose Infrared Sauna Blanket V4',
   brand: 'HigherDose',
@@ -12,7 +12,6 @@ const higherdoseBlanketV4: ToolReview = {
     'The portable IR sauna blanket that turned consumer IR mainstream — far IR only, low EMF, accessible price.',
   summary:
     'HigherDose Sauna Blanket V4 is the consumer-mainstream IR sauna in blanket form. Far-IR-only delivery, low EMF documented by the manufacturer, $599 entry price. The right shape for users without space for a cabin sauna or budget for premium tier. Limitations are real — far-IR-only spectrum and narrower clinical use case than cabin saunas.',
-  overallScore: 7.4,
   scores: [
     { criterionId: 'heat-source', score: 7.0, note: 'Far-IR-only delivery via carbon fibre heating elements. No near or mid IR. Narrower spectrum than cabin full-spectrum options.' },
     { criterionId: 'build', score: 7.5, note: 'Multi-layer construction with crystal-infused inner layer (charcoal, amethyst). Replaceable; 1-year warranty.' },
@@ -73,7 +72,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "Who should buy the HigherDose Sauna Blanket V4?", a: "It suits people who want IR sauna practice but lack the space or budget for a cabin. It is the most portable IR sauna form factor available, needs no install and has documented low EMF. Buyers who want full-spectrum IR or a long warranty should consider a cabin." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default higherdoseBlanketV4

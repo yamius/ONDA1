@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const buddhify: ToolReview = {
+const buddhify: ToolReviewInput = {
   slug: 'buddhify',
   name: 'Buddhify',
   category: 'meditation-app',
@@ -12,7 +12,6 @@ const buddhify: ToolReview = {
     'The rare meditation app you buy once and own — sessions organised around what you are actually doing, with no subscription.',
   summary:
     'Buddhify is the one-time-purchase meditation app: pay once, own it forever, no subscription. Its 200-plus meditations are organised by situation — commuting, a work break, can’t sleep — rather than by course, which makes it a natural pick for meditating on the go. The trade-off is a smaller library and a dated interface.',
-  overallScore: 6.7,
   scores: [
     { criterionId: 'content-library', score: 6.5, note: 'Over 200 meditations — a solid spread of situations, though smaller than the subscription giants.' },
     { criterionId: 'teaching', score: 7.0, note: 'Solid teaching across several voices, with a calm, practical, no-woo tone.' },

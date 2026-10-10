@@ -29,7 +29,9 @@
     "updatesBody": "Every review and round-up carries a last-updated date. We revise scores and rankings when a flagship launches, when a price or availability changes materially, or when new evidence emerges — not on a fixed schedule and not to chase a calendar. When a product is discontinued or, for example, banned from sale, we say so and adjust the ranking.",
     "authorHeading": "Who writes the reviews",
     "authorBody": "Reviews are written by Yakiv Bilenko, founder of ONDA Life.",
-    "authorLink": "About the author"
+    "authorLink": "About the author",
+    "scoreRulesBody": "Jak liczymy wynik: średnia ważona jest zaokrąglana do jednego miejsca po przecinku, połowa w górę (8,35 daje 8,4). Jeśli dwa produkty mają ten sam wynik, wyżej jest ten z wyższą oceną w kryterium dowodów danej kategorii; jeśli i ona jest równa, dzielą miejsce i pokazujemy remis. W porównaniach bezpośrednich różnica 0,1 lub mniejsza jest pokazywana jako praktycznie równe. Rzadko redakcja może skorygować średnią najwyżej o ±0,3 punktu; każda korekta jest pokazana w recenzji razem z powodem.",
+    "evidenceRulesBody": "Zasady dotyczące dowodów we wszystkich kategoriach: badania prowadzone lub finansowane przez producenta nie liczą się jako dowody. Urządzenie bez własnej niezależnej walidacji dostaje w kryterium dokładności najwyżej 7,5, jeśli wcześniejsze generacje były niezależnie zwalidowane, a najwyżej 7,0, jeśli nie. Rejestracja i clearance FDA są neutralne — niczego nie dodają ani nie odejmują; produkt traci punkty tylko wtedy, gdy producent przeinacza swój status regulacyjny (np. nazywa rejestrację „zatwierdzeniem FDA”), a recenzja to wskazuje."
   },
   "ui": {
     "updated": "Updated",
@@ -62,7 +64,12 @@
     "seeFullRanking": "Zobacz pełny ranking",
     "tie": "Remis",
     "why": "Dlaczego",
-    "winner": "Zwycięzca"
+    "winner": "Zwycięzca",
+    "higherScore": "Wyższa ocena ONDA: {{name}} ({{scores}})",
+    "practicallyEqual": "Według oceny ONDA praktycznie równe ({{scores}})",
+    "scoresVs": " vs ",
+    "scoresAnd": " i ",
+    "editorialAdjustment": "Korekta redakcyjna {{value}}: {{reason}}"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
@@ -149,23 +156,23 @@
       ],
       "cons": [
         "Większość dodatkowej wartości wymaga pierścienia Ultrahuman — a Ring Air nie jest już sprzedawany w USA (Ring Pro jest)",
-        "Sensory Abbott są nieco mniej dokładne niż Dexcom G7",
+        "60 minut rozgrzewki sensora (Dexcom G7: 30 minut)",
         "Coaching to AI plus trenerzy wydolności — bez dietetyka czy lekarza",
         "Amerykańska wersja Lingo tylko dla dorosłych 18+, którzy nie przyjmują insuliny"
       ],
       "scoreNotes": {
-        "sensor-accuracy": "Wyłącznie sensory Abbott: FreeStyle Libre (Libre 3 MARD ~9%) poza USA, Abbott Lingo (14 dni noszenia, oparty na Libre) w USA przez M2 Live. W niezależnym porównaniu nieznacznie mniej dokładne niż Dexcom G7.",
+        "sensor-accuracy": "Wyłącznie sensory Abbott: FreeStyle Libre 3 poza USA, Abbott Lingo (14 dni noszenia, oparty na Libre) w USA przez M2 Live. W niezależnym badaniu porównawczym (Eichenlaub et al. 2025) Libre 3 i Dexcom G7 okazały się podobnie dokładne.",
         "insights": "Solidna analiza wpływu posiłków plus unikalny widok wielu sygnałów: glukoza zestawiona z HRV, snem i regeneracją na tej samej osi czasu.",
         "coaching": "Głównie oparty na AI (wnioski Jade AI). Plany obejmują dostęp do trenerów wydolności, nie dietetyków ani lekarzy.",
         "app-integration": "Natywna integracja z pierścieniami Ultrahuman dla HRV/snu/regeneracji; obsługa Apple Health, Google Fit i dziennika posiłków. Najbogatszy zestaw w jednej aplikacji w tej kategorii.",
         "flexibility": "USA: pojedynczy sensor Lingo 129 $ lub subskrypcja miesięczna od 99 $, z możliwością rezygnacji w dowolnym momencie. Pierścień jest opcjonalny, ale daje większość dodatkowej wartości.",
         "value": "Od 99 $/mies. w USA — na poziomie Stelo, taniej niż Levels. Najlepsza wartość, jeśli masz już pierścień Ultrahuman."
       },
-      "content": "## Nasz werdykt w skrócie\n\nUltrahuman M1 to program ciągłego monitorowania glukozy (CGM) działający w aplikacji Ultrahuman, obok danych z inteligentnych pierścieni Ultrahuman. Na tym polega cały sens: twoja krzywa glukozy leży na tej samej osi czasu co zmienność rytmu serca (HRV), sen i regeneracja. Jeśli masz pierścień Ultrahuman, to najbardziej zintegrowana opcja CGM. Jeśli chcesz tylko danych o glukozie, tańsze lub prostsze opcje są równie dobre.\n\n**Ważna aktualizacja dla USA:** 18 czerwca 2026 Ultrahuman uruchomił w USA **M2 Live**. Korzysta on z dostępnego bez recepty sensora Abbott **Lingo**, więc nie potrzebujesz już recepty ani konsultacji medycznej. Ceny zaczynają się od 99 $ miesięcznie w subskrypcji lub 129 $ za pojedynczy sensor. Poza USA M1 nadal działa na sensorach Abbott FreeStyle Libre.\n\n## Jak działa Ultrahuman M1?\n\nPrzyklejasz mały sensor z tyłu ramienia. Cienki filament pod skórą mierzy glukozę w płynie między komórkami (nie we krwi) przez około 14 dni. Telefon odczytuje sensor, a aplikacja Ultrahuman pokazuje, jak posiłki, ćwiczenia, stres i sen wpływają na glukozę. Z pierścieniem aplikacja łączy też te krzywe z HRV, fazami snu i regeneracją — na przykład czy późna, ciężka kolacja przekłada się na gorszy sen i niższe HRV następnego ranka.\n\n## Co mówią dowody?\n\nSensory z rodziny Libre firmy Abbott są dobrze zwalidowane u osób z cukrzycą; Libre 3 wykazuje średni błąd bezwzględny około 9% względem glukozy laboratoryjnej. U osób **bez** cukrzycy dowody są słabsze. Glukoza u zdrowych osób utrzymuje się w wąskim zakresie, a niewielkie wzrosty po posiłkach są normalne. Nie ma jeszcze mocnych dowodów, że dążenie do bardziej płaskich krzywych poprawia zdrowie w długim okresie. CGM najlepiej traktować jako narzędzie informacji zwrotnej o nawykach, a nie werdykt o zdrowiu.\n\n## Ile kosztuje Ultrahuman M1?\n\n| Opcja | Cena (USA) | Uwagi |\n|---|---|---|\n| Ultrahuman M2 Live (Lingo) | od 99 $/mies.; 129 $ pojedynczy sensor | bez recepty, pierścień opcjonalny |\n| [Stelo](/reviews/stelo) (Dexcom) | 99 $ za 2 sensory (~30 dni) | bez recepty, prosta aplikacja |\n| [Lingo](/reviews/lingo) (aplikacja Abbott) | od 54 $ za sensor 2-tygodniowy | ten sam sensor, własna aplikacja Abbott |\n| [Levels](/reviews/levels) | członkostwo Core 399 $/rok | miesiąc CGM + panele badań |\n\nJeśli chcesz też pierścień, [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) kosztuje jednorazowo 479 $. Starszy Ring Air nie jest już sprzedawany w USA po wygranej Oury w sporze patentowym — sam CGM nie był objęty tym zakazem.\n\n## Jakie są wady Ultrahuman M1?\n\nNiemal cała przewaga zależy od posiadania również pierścienia Ultrahuman. Jako samodzielny CGM to sensor Abbott z kompetentną aplikacją — własna aplikacja Lingo firmy Abbott jest tańsza w przeliczeniu na sensor, a Stelo oparte na Dexcom jest nieco dokładniejsze. Coaching to głównie AI. Amerykańska wersja Lingo jest tylko dla dorosłych 18+, którzy nie przyjmują insuliny.\n\n## Kto powinien kupić Ultrahuman M1 — a kto nie?\n\n**Kup**, jeśli masz już (lub planujesz kupić) pierścień Ultrahuman i chcesz mieć glukozę, sen i HRV w jednym miejscu.\n\n**Odpuść**, jeśli chcesz tylko danych o glukozie (zobacz [Lingo vs Stelo vs Ultrahuman M1](/reviews/vs/lingo-vs-stelo-vs-ultrahuman-m1)), jeśli chcesz dietetyka-człowieka albo jeśli masz cukrzycę lub przyjmujesz insulinę — wtedy korzystaj z medycznego CGM razem z lekarzem.\n\n## Uwagi dotyczące bezpieczeństwa\n\nKonsumenckie CGM nie są urządzeniami diagnostycznymi. Nie mogą zdiagnozować ani wykluczyć cukrzycy czy stanu przedcukrzycowego; jeśli twoje wyniki cię niepokoją, poproś lekarza o badanie HbA1c lub glukozy na czczo. Klej może podrażniać skórę; zmieniaj ramiona i przerwij, jeśli zauważysz wysypkę lub oznaki infekcji.\n\nWięcej opcji: [najlepsze CGM dla biohakerów w 2026](/reviews/compare/best-cgm-for-biohackers-2026) i [Levels vs Ultrahuman M1](/reviews/vs/levels-vs-ultrahuman-m1).\n\n---\n\n## Do poczytania\n\nBiologia metaboliczna, którą odsłaniają te programy — i protokoły, które umożliwiają dane.\n\n- [Śledzenie biomarkerów z AI](/articles/ai-biomarker-tracking-predictive) — CGM jako najgęstszy dostępny konsumencki strumień biomarkerów\n- [Czy można już ciągle śledzić kortyzol?](/articles/chm-continuous-hormone-monitoring) — dlaczego żadne konsumenckie urządzenie noszone nie mierzy dziś hormonów, w przeciwieństwie do glukozy\n- [Oś jelitowo-mózgowa jako łącze danych](/articles/gut-brain-axis-data-link) — gdzie spotykają się wzorce mikrobiomu i glukozy\n",
+      "content": "## Nasz werdykt w skrócie\n\nUltrahuman M1 to program ciągłego monitorowania glukozy (CGM) działający w aplikacji Ultrahuman, obok danych z inteligentnych pierścieni Ultrahuman. Na tym polega cały sens: twoja krzywa glukozy leży na tej samej osi czasu co zmienność rytmu serca (HRV), sen i regeneracja. Jeśli masz pierścień Ultrahuman, to najbardziej zintegrowana opcja CGM. Jeśli chcesz tylko danych o glukozie, tańsze lub prostsze opcje są równie dobre.\n\n**Ważna aktualizacja dla USA:** 18 czerwca 2026 Ultrahuman uruchomił w USA **M2 Live**. Korzysta on z dostępnego bez recepty sensora Abbott **Lingo**, więc nie potrzebujesz już recepty ani konsultacji medycznej. Ceny zaczynają się od 99 $ miesięcznie w subskrypcji lub 129 $ za pojedynczy sensor. Poza USA M1 nadal działa na sensorach Abbott FreeStyle Libre.\n\n## Jak działa Ultrahuman M1?\n\nPrzyklejasz mały sensor z tyłu ramienia. Cienki filament pod skórą mierzy glukozę w płynie między komórkami (nie we krwi) przez około 14 dni. Telefon odczytuje sensor, a aplikacja Ultrahuman pokazuje, jak posiłki, ćwiczenia, stres i sen wpływają na glukozę. Z pierścieniem aplikacja łączy też te krzywe z HRV, fazami snu i regeneracją — na przykład czy późna, ciężka kolacja przekłada się na gorszy sen i niższe HRV następnego ranka.\n\n## Co mówią dowody?\n\nSensory z rodziny Libre firmy Abbott są dobrze zwalidowane u osób z cukrzycą; według producenta Libre 3 ma średni błąd bezwzględny około 9% względem glukozy laboratoryjnej (dane producenta nie liczą się jako dowody w ocenach ONDA), a w niezależnym badaniu porównawczym (Eichenlaub et al. 2025) Libre 3 i Dexcom G7 okazały się podobnie dokładne. U osób **bez** cukrzycy dowody są słabsze. Glukoza u zdrowych osób utrzymuje się w wąskim zakresie, a niewielkie wzrosty po posiłkach są normalne. Nie ma jeszcze mocnych dowodów, że dążenie do bardziej płaskich krzywych poprawia zdrowie w długim okresie. CGM najlepiej traktować jako narzędzie informacji zwrotnej o nawykach, a nie werdykt o zdrowiu.\n\n## Ile kosztuje Ultrahuman M1?\n\n| Opcja | Cena (USA) | Uwagi |\n|---|---|---|\n| Ultrahuman M2 Live (Lingo) | od 99 $/mies.; 129 $ pojedynczy sensor | bez recepty, pierścień opcjonalny |\n| [Stelo](/reviews/stelo) (Dexcom) | 99 $ za 2 sensory (~30 dni) | bez recepty, prosta aplikacja |\n| [Lingo](/reviews/lingo) (aplikacja Abbott) | od 54 $ za sensor 2-tygodniowy | ten sam sensor, własna aplikacja Abbott |\n| [Levels](/reviews/levels) | członkostwo Core 399 $/rok | miesiąc CGM + panele badań |\n\nJeśli chcesz też pierścień, [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) kosztuje jednorazowo 479 $. Starszy Ring Air nie jest już sprzedawany w USA po wygranej Oury w sporze patentowym — sam CGM nie był objęty tym zakazem.\n\n## Jakie są wady Ultrahuman M1?\n\nNiemal cała przewaga zależy od posiadania również pierścienia Ultrahuman. Jako samodzielny CGM to sensor Abbott z kompetentną aplikacją — własna aplikacja Lingo firmy Abbott jest tańsza w przeliczeniu na sensor, a Stelo oparte na Dexcom jest tańsze w subskrypcji. Coaching to głównie AI. Amerykańska wersja Lingo jest tylko dla dorosłych 18+, którzy nie przyjmują insuliny.\n\n## Kto powinien kupić Ultrahuman M1 — a kto nie?\n\n**Kup**, jeśli masz już (lub planujesz kupić) pierścień Ultrahuman i chcesz mieć glukozę, sen i HRV w jednym miejscu.\n\n**Odpuść**, jeśli chcesz tylko danych o glukozie (zobacz [Lingo vs Stelo vs Ultrahuman M1](/reviews/vs/lingo-vs-stelo-vs-ultrahuman-m1)), jeśli chcesz dietetyka-człowieka albo jeśli masz cukrzycę lub przyjmujesz insulinę — wtedy korzystaj z medycznego CGM razem z lekarzem.\n\n## Uwagi dotyczące bezpieczeństwa\n\nKonsumenckie CGM nie są urządzeniami diagnostycznymi. Nie mogą zdiagnozować ani wykluczyć cukrzycy czy stanu przedcukrzycowego; jeśli twoje wyniki cię niepokoją, poproś lekarza o badanie HbA1c lub glukozy na czczo. Klej może podrażniać skórę; zmieniaj ramiona i przerwij, jeśli zauważysz wysypkę lub oznaki infekcji.\n\nWięcej opcji: [najlepsze CGM dla biohakerów w 2026](/reviews/compare/best-cgm-for-biohackers-2026) i [Levels vs Ultrahuman M1](/reviews/vs/levels-vs-ultrahuman-m1).\n\n---\n\n## Do poczytania\n\nBiologia metaboliczna, którą odsłaniają te programy — i protokoły, które umożliwiają dane.\n\n- [Śledzenie biomarkerów z AI](/articles/ai-biomarker-tracking-predictive) — CGM jako najgęstszy dostępny konsumencki strumień biomarkerów\n- [Czy można już ciągle śledzić kortyzol?](/articles/chm-continuous-hormone-monitoring) — dlaczego żadne konsumenckie urządzenie noszone nie mierzy dziś hormonów, w przeciwieństwie do glukozy\n- [Oś jelitowo-mózgowa jako łącze danych](/articles/gut-brain-axis-data-link) — gdzie spotykają się wzorce mikrobiomu i glukozy\n",
       "faq": [
         {
           "q": "Jak dokładny jest CGM Ultrahuman M1?",
-          "a": "Ultrahuman M1 korzysta z sensorów Abbott: FreeStyle Libre poza USA (Libre 3 ma MARD około 9%) i Abbott Lingo w USA przez M2 Live. Oba pozwalają na 14 dni noszenia bez kalibracji. Otrzymuje 8,5/10 za dokładność sensora, nieznacznie za Dexcom G7, przy ogólnej ocenie ONDA 7,5/10."
+          "a": "Ultrahuman M1 korzysta z sensorów Abbott: FreeStyle Libre poza USA i Abbott Lingo w USA przez M2 Live. Oba pozwalają na 14 dni noszenia bez kalibracji. Otrzymuje 8,5/10 za dokładność sensora, tyle samo co programy na Dexcom G7, ponieważ w niezależnym badaniu porównawczym (Eichenlaub et al. 2025) Libre 3 i Dexcom G7 okazały się podobnie dokładne. Ogólna ocena ONDA wynosi 7,5/10."
         },
         {
           "q": "Ile kosztuje Ultrahuman M1?",
@@ -211,7 +218,7 @@
       "scoreNotes": {
         "hrv-accuracy": "W badaniach walidacyjnych Oura nocne RMSSD odpowiada EKG z dokładnością do kilku milisekund; odczyty dzienne rozjeżdżają się w ruchu.",
         "sensor": "Optyczny PPG z palca utrzymuje czysty sygnał przez noc — w oknie, które dla HRV liczy się najbardziej.",
-        "sleep-accuracy": "Jeden z mocniejszych opublikowanych wyników dla faz snu; sfinansowane przez Oura badanie polisomnograficzne algorytmu Oura na 96 osobach wykazało 76–91% trafności dla poszczególnych faz.",
+        "sleep-accuracy": "Badanie polisomnograficzne algorytmu Oura na 96 osobach wykazało 76–91% trafności dla poszczególnych faz, ale sfinansowała je Oura, a badania finansowane przez producenta nie liczą się jako dowody w ocenach ONDA; nie znaleziono niezależnej weryfikacji określania faz snu przez Ring 4. Zasada ONDA: bez własnej niezależnej walidacji urządzenie otrzymuje najwyżej 7,5, jeśli walidowano wcześniejsze generacje, a 7,0, jeśli nie.",
         "data-access": "Istnieje API dla deweloperów, ale surowe dane uderzenie po uderzeniu są ograniczone, a głębsza analiza wymaga członkostwa.",
         "wearability": "Jedna z najmniejszych obudów do ciągłego noszenia w tej kategorii; bateria na 4–7 dni i krótkie ładowanie.",
         "app-ux": "Dopracowana aplikacja, która wyjaśnia Gotowość i HRV zamiast sprowadzać wszystko do jednej nieprzejrzystej liczby.",
@@ -400,10 +407,10 @@
       ]
     },
     "stelo": {
-      "verdict": "Sprzęt Dexcom G7 bez bariery recepty — najdokładniejszy konsumencki CGM w najniższej dla niego cenie.",
-      "summary": "Stelo to sprzedawany bezpośrednio konsumentom CGM firmy Dexcom dla biohakerów bez cukrzycy, dopuszczony przez FDA w 2024 roku jako pierwszy CGM bez recepty (OTC) w USA. Sprzętem jest sensor Dexcom G7 — ten sam, który pracuje pod Levels i Nutrisense — sprzedawany przez własną aplikację Dexcom za $99 za dwa sensory (zapas na miesiąc). Silnik analiz jest prostszy niż w Levels, ale dane są te same. Stosunek ceny do dokładności jest najlepszy na rynku konsumenckich CGM.",
+      "verdict": "Sprzęt Dexcom G7 bez bariery recepty — najtańszy sposób, by zdobyć sensor G7.",
+      "summary": "Stelo to sprzedawany bezpośrednio konsumentom CGM firmy Dexcom dla biohakerów bez cukrzycy, dopuszczony przez FDA w 2024 roku jako pierwszy CGM bez recepty (OTC) w USA. Sprzętem jest sensor Dexcom G7 — ten sam, który pracuje pod Levels i Nutrisense — sprzedawany przez własną aplikację Dexcom za $99 za dwa sensory (zapas na miesiąc). Silnik analiz jest prostszy niż w Levels, ale dane są te same. To najtańszy sposób, by zdobyć sensor Dexcom G7.",
       "description": "Recenzja ONDA Stelo — dopuszczony przez FDA CGM bez recepty od Dexcom dla osób bez cukrzycy. Sensor Dexcom G7 bez recepty. Oceny: dokładność, analizy, elastyczność, wartość.",
-      "bestFor": "Najlepszy dla biohakerów, którzy chcą dokładności Dexcom G7 w najlepszej cenie, bez subskrypcji coachingu.",
+      "bestFor": "Najlepszy dla biohakerów, którzy chcą sensora Dexcom G7 w najlepszej cenie, bez subskrypcji coachingu.",
       "testNote": "Ocena oparta na dowodach — na podstawie dokumentacji produktu Dexcom Stelo, literatury walidacyjnej Dexcom G7 i niezależnych recenzji z 2026 roku. Nie testowany osobiście przez ONDA.",
       "productType": "CGM bez recepty (sprzęt Dexcom G7, aplikacja konsumencka)",
       "pros": [
@@ -419,18 +426,18 @@
         "Ograniczona integracja z aplikacjami zewnętrznymi w porównaniu z Levels"
       ],
       "scoreNotes": {
-        "sensor-accuracy": "Dexcom G7, ten sam sprzęt, na którym opierają się Levels i Nutrisense — MARD ~8,2%, 15 dni noszenia w wariancie Stelo, 30 minut rozgrzewki.",
+        "sensor-accuracy": "Sprzęt Dexcom G7, 15 dni noszenia w wariancie Stelo, 30 minut rozgrzewki. W niezależnym badaniu porównawczym (Eichenlaub et al. 2025) G7 i FreeStyle Libre 3 okazały się podobnie dokładne; dane producenta o dokładności nie liczą się jako dowody w ocenach ONDA.",
         "insights": "Solidne widoki wpływu posiłków i dziennego czasu w zakresie. Mniej głębi niż Levels — brak dekompozycji AUC i historii rankingu produktów — ale pokrywa to, czego potrzebuje większość użytkowników.",
         "coaching": "Brak ludzkiego coacha; tylko wskazówki AI w aplikacji i treści edukacyjne. Coaching to cena za niższą cenę.",
         "app-integration": "Aplikacja Dexcom Stelo na iOS/Android z integracją z Apple Health. Ograniczone łączniki zewnętrzne w porównaniu z Levels.",
         "flexibility": "Kup jeden lub wiele — bez wymaganej subskrypcji, sensory kupowane w miarę potrzeb. 15 dni noszenia daje większą elastyczność niż 10-dniowy G7 w Nutrisense (Levels sam wysyła teraz Stelo).",
         "value": "$99 za dwa sensory (~30 dni) lub $89 w subskrypcji. Najlepsza dostępna cena za sprzęt Dexcom G7, bez recepty."
       },
-      "content": "## Gdzie prowadzi\n\nStelo to najtańszy legalny sposób, by założyć Dexcom G7 na ramię i obserwować [skoki glukozy](/glossary/glucose-spikes) w czasie rzeczywistym. Sprzęt jest identyczny z tym, który Levels i Nutrisense wysyłają za dwu- lub trzykrotność ceny — ten sam sensor, ten sam pułap dokładności (MARD ~8,2% w niezależnym porównaniu), te same 30 minut rozgrzewki. Rezygnujesz z otoczki: aplikacja Stelo jest kompetentna, ale nie wiodąca w kategorii, warstwa coachingu to AI w aplikacji zamiast dyplomowanego dietetyka, a ekosystem integracji jest węższy niż w Levels. Jako produkt OTC dopuszczony przez FDA w 2024 roku nie wymaga recepty, a sensory można kupować po jednym opakowaniu.\n\n## Jakie są wady Stelo?\n\nGłówną wadą Stelo jest prostszy silnik analiz — to jest kompromis. Stelo daje widoki wpływu posiłków i czasu w zakresie; Levels dodaje dekompozycję AUC, historię rankingu produktów spożywczych i głębszy pakiet analityczny. Nie ma ludzkiego coacha, lista integracji zewnętrznych jest krótsza, a wysyłka tylko w USA bezpośrednio od Dexcom ogranicza dostępność międzynarodową. Jeśli to właśnie dla tych funkcji kupujesz, Stelo nie jest właściwym narzędziem.\n\n## Kto powinien kupić Stelo?\n\nWybierz Stelo, jeśli chcesz najdokładniejszego dostępnego sprzętu CGM w najlepszej cenie i ufasz sobie w interpretacji danych. Jeśli chcesz najgłębszego silnika analiz na tym samym sensorze — Levels. Jeśli chcesz dyplomowanego dietetyka — Nutrisense. We wszystkich trzech przypadkach sprzęt jest identyczny — płacisz za to, co jest nad nim.\n\n---\n\n## Lektura uzupełniająca\n\nBiologia metaboliczna, którą ujawniają te programy — i protokoły, które otwierają dane.\n\n- [Oś jelito-mózg jako łącze danych](/articles/gut-brain-axis-data-link) — gdzie spotykają się wzorce mikrobiomu i glukozy\n- [Elastyczność metaboliczna: czym jest i jak ją rozpoznać](/articles/metabolic-flexibility-dual-fuel-system) — co krzywa glukozy może, a czego nie może powiedzieć o przełączaniu paliwa\n",
+      "content": "## Gdzie prowadzi\n\nStelo to najtańszy legalny sposób, by założyć Dexcom G7 na ramię i obserwować [skoki glukozy](/glossary/glucose-spikes) w czasie rzeczywistym. Sprzęt jest identyczny z tym, który Levels i Nutrisense wysyłają za dwu- lub trzykrotność ceny — ten sam sensor, ten sam pułap dokładności (w niezależnym badaniu porównawczym (Eichenlaub et al. 2025) G7 i Libre 3 okazały się podobnie dokładne), te same 30 minut rozgrzewki. Rezygnujesz z otoczki: aplikacja Stelo jest kompetentna, ale nie wiodąca w kategorii, warstwa coachingu to AI w aplikacji zamiast dyplomowanego dietetyka, a ekosystem integracji jest węższy niż w Levels. Jako produkt OTC dopuszczony przez FDA w 2024 roku nie wymaga recepty, a sensory można kupować po jednym opakowaniu.\n\n## Jakie są wady Stelo?\n\nGłówną wadą Stelo jest prostszy silnik analiz — to jest kompromis. Stelo daje widoki wpływu posiłków i czasu w zakresie; Levels dodaje dekompozycję AUC, historię rankingu produktów spożywczych i głębszy pakiet analityczny. Nie ma ludzkiego coacha, lista integracji zewnętrznych jest krótsza, a wysyłka tylko w USA bezpośrednio od Dexcom ogranicza dostępność międzynarodową. Jeśli to właśnie dla tych funkcji kupujesz, Stelo nie jest właściwym narzędziem.\n\n## Kto powinien kupić Stelo?\n\nWybierz Stelo, jeśli chcesz sensora Dexcom G7 w najlepszej cenie i ufasz sobie w interpretacji danych. Jeśli chcesz najgłębszego silnika analiz na tym samym sensorze — Levels. Jeśli chcesz dyplomowanego dietetyka — Nutrisense. We wszystkich trzech przypadkach sprzęt jest identyczny — płacisz za to, co jest nad nim.\n\n---\n\n## Lektura uzupełniająca\n\nBiologia metaboliczna, którą ujawniają te programy — i protokoły, które otwierają dane.\n\n- [Oś jelito-mózg jako łącze danych](/articles/gut-brain-axis-data-link) — gdzie spotykają się wzorce mikrobiomu i glukozy\n- [Elastyczność metaboliczna: czym jest i jak ją rozpoznać](/articles/metabolic-flexibility-dual-fuel-system) — co krzywa glukozy może, a czego nie może powiedzieć o przełączaniu paliwa\n",
       "faq": [
         {
           "q": "Czy Stelo od Dexcom jest wart zakupu?",
-          "a": "Stelo jest wart zakupu, jeśli chcesz dokładności Dexcom G7 w najniższej cenie bez subskrypcji coachingu. Jest dopuszczony przez FDA bez recepty, nie wymaga recepty i oferuje 15 dni noszenia sensora. Jego silnik analiz jest prostszy niż w Levels, nie ma ludzkiego coacha, a wysyłka jest tylko w USA."
+          "a": "Stelo jest wart zakupu, jeśli chcesz sensora Dexcom G7 w najniższej cenie bez subskrypcji coachingu. Jest dopuszczony przez FDA bez recepty, nie wymaga recepty i oferuje 15 dni noszenia sensora. Jego silnik analiz jest prostszy niż w Levels, nie ma ludzkiego coacha, a wysyłka jest tylko w USA."
         },
         {
           "q": "Ile kosztuje Stelo?",
@@ -455,7 +462,7 @@
       "productType": "Program coachingowy CGM (Dexcom Stelo)",
       "pros": [
         "Najgłębsza analiza wpływu poszczególnych produktów w kategorii",
-        "Dexcom Stelo (platforma G7) — czołowa dokładność konsumenckiego CGM, bez recepty",
+        "Dexcom Stelo (platforma G7) — platforma sensorów Dexcom G7, bez recepty",
         "Dopracowana aplikacja i biblioteka treści wspierana przez wiarygodną radę medyczną",
         "Integracja z Apple Health i Oura od razu"
       ],
@@ -466,14 +473,14 @@
         "Cena nagłówkowa dotyczy rozliczenia rocznego; miesięczna wychodzi tak samo tylko przy zobowiązaniu rocznym"
       ],
       "scoreNotes": {
-        "sensor-accuracy": "Dexcom Stelo — sensor OTC zbudowany na platformie Dexcom G7, jeden z najdokładniejszych konsumenckich CGM w niezależnym porównaniu (MARD platformy G7 ~8,2% względem referencji). 15 dni noszenia, 30 minut rozgrzewki, bez recepty. Ocena bez zmian: przejście z G7 na Stelo zachowuje tę samą platformę sensora.",
+        "sensor-accuracy": "Dexcom Stelo — sensor OTC na platformie Dexcom G7; 15 dni noszenia, 30 minut rozgrzewki, bez recepty. Dane producenta o dokładności nie liczą się jako dowody w ocenach ONDA; w niezależnym badaniu porównawczym (Eichenlaub et al. 2025) G7 i FreeStyle Libre 3 okazały się podobnie dokładne (MARD około 12% wobec 11,6% względem referencji laboratoryjnej), więc oba otrzymują tę samą ocenę.",
         "insights": "Najgłębsza analiza wpływu posiłków na rynku — ocena każdego posiłku, AUC, szczyt, czas powrotu do wartości wyjściowej, plus dzienne/tygodniowe widoki czasu w zakresie i zmienności glukozy.",
         "coaching": "Domyślnie brak ludzkiego coacha; coachem jest aplikacja, wspierana głęboką biblioteką treści i medyczną radą doradczą. Coaching dodatkowy dostępny osobno.",
         "app-integration": "Dopracowana aplikacja iOS/Android. Integruje się z Apple Health i Oura; obsługuje logowanie jedzenia w MyFitnessPal.",
         "flexibility": "Rozliczenie miesięczne lub roczne; można wstrzymać. Eksport surowych danych dostępny na prośbę. Brak zobowiązania poza bieżącym miesiącem.",
         "value": "Teraz warstwowo: $80/rok tylko aplikacja, $399/rok Core (1 miesiąc CGM + 2 panele badań), $1,329/rok Complete (2 miesiące CGM + badania + dietetyk). Znacznie tańsze wejście niż dawne $199/miesiąc, ale ciągłe noszenie CGM kosztuje dodatkowo."
       },
-      "content": "## Gdzie prowadzi\n\nLevels to program, który zamienił CGM w kategorię konsumencką dla osób bez cukrzycy, a aplikacja wciąż jest najbardziej przemyślanym oprogramowaniem w tej dziedzinie. Posiłki nie tylko pojawiają się na osi czasu — każdy jest oceniany, porównywany z twoją własną historią, rozkładany na szczytowy [skok glukozy](/glossary/glucose-spikes), AUC i czas powrotu do wartości wyjściowej, a następnie łączony w dzienne i tygodniowe widoki czasu w zakresie, które trenują [elastyczność metaboliczną](/glossary/metabolic-flexibility). Wliczonym sensorem jest teraz Dexcom Stelo — sensor bez recepty zbudowany na platformie Dexcom G7, który niezależne porównanie MARD stawia na szczycie rankingu dokładności konsumenckich CGM. Medyczna rada doradcza dodaje wiarygodności, której nie ma większość programów z niewielkim coachingiem.\n\n## Jakie są wady Levels?\n\nModel cenowy trzeba przeczytać uważnie. Levels porzucił dawny program all-in za ~$199 miesięcznie na rzecz członkostw warstwowych: $80 rocznie za samą aplikację (z własnym CGM), $399 rocznie za Core z jednym miesiącem CGM i dwoma panelami badań oraz $1,329 rocznie za Complete z dwoma miesiącami CGM. Wejście jest znacznie tańsze niż wcześniej, ale jeśli chcesz nosić sensor ciągle, płacisz dodatkowo za CGM — albo kupujesz Dexcom Stelo lub Abbott Lingo bez recepty i korzystasz z planu tylko z aplikacją. Domyślnie nie ma ludzkiego coacha; jeśli potrzebujesz dyplomowanego dietetyka, właściwym wyborem jest Nutrisense.\n\n## Kto powinien kupić Levels?\n\nWybierz Levels, jeśli traktujesz CGM jako instrument, a nie eksperyment — chcesz najgłębszego silnika analiz, ufasz inteligencji aplikacji bardziej niż ludzkiemu coachingowi i cenisz badania plus okresowe bloki CGM bardziej niż ciągłe noszenie. Jeśli chcesz tylko sensora i prostszej aplikacji, tańszym narzędziem jest sam Dexcom Stelo lub Lingo. Jeśli priorytetem jest ludzki coaching — Nutrisense.\n\n---\n\n## Lektura uzupełniająca\n\nBiologia metaboliczna, którą ujawniają te programy — i protokoły, które otwierają dane.\n\n- [Regulator energii: TSH](/articles/energy-governor-tsh) — metabolizm sterowany przez tarczycę jako źródło zdolności przetwarzania glukozy\n- [Biologia GLP-1 i ochrona mięśni](/articles/glp1-biology-muscle-preservation) — co pokazują dane CGM podczas stosowania protokołu GLP-1\n- [Śledzenie biomarkerów z AI](/articles/ai-biomarker-tracking-predictive) — CGM jako najgęstszy dostępny konsumencki strumień biomarkerów\n",
+      "content": "## Gdzie prowadzi\n\nLevels to program, który zamienił CGM w kategorię konsumencką dla osób bez cukrzycy, a aplikacja wciąż jest najbardziej przemyślanym oprogramowaniem w tej dziedzinie. Posiłki nie tylko pojawiają się na osi czasu — każdy jest oceniany, porównywany z twoją własną historią, rozkładany na szczytowy [skok glukozy](/glossary/glucose-spikes), AUC i czas powrotu do wartości wyjściowej, a następnie łączony w dzienne i tygodniowe widoki czasu w zakresie, które trenują [elastyczność metaboliczną](/glossary/metabolic-flexibility). Wliczonym sensorem jest teraz Dexcom Stelo — sensor bez recepty zbudowany na platformie Dexcom G7, który w niezależnym badaniu porównawczym (Eichenlaub et al. 2025) okazał się podobnie dokładny jak Libre 3. Medyczna rada doradcza dodaje wiarygodności, której nie ma większość programów z niewielkim coachingiem.\n\n## Jakie są wady Levels?\n\nModel cenowy trzeba przeczytać uważnie. Levels porzucił dawny program all-in za ~$199 miesięcznie na rzecz członkostw warstwowych: $80 rocznie za samą aplikację (z własnym CGM), $399 rocznie za Core z jednym miesiącem CGM i dwoma panelami badań oraz $1,329 rocznie za Complete z dwoma miesiącami CGM. Wejście jest znacznie tańsze niż wcześniej, ale jeśli chcesz nosić sensor ciągle, płacisz dodatkowo za CGM — albo kupujesz Dexcom Stelo lub Abbott Lingo bez recepty i korzystasz z planu tylko z aplikacją. Domyślnie nie ma ludzkiego coacha; jeśli potrzebujesz dyplomowanego dietetyka, właściwym wyborem jest Nutrisense.\n\n## Kto powinien kupić Levels?\n\nWybierz Levels, jeśli traktujesz CGM jako instrument, a nie eksperyment — chcesz najgłębszego silnika analiz, ufasz inteligencji aplikacji bardziej niż ludzkiemu coachingowi i cenisz badania plus okresowe bloki CGM bardziej niż ciągłe noszenie. Jeśli chcesz tylko sensora i prostszej aplikacji, tańszym narzędziem jest sam Dexcom Stelo lub Lingo. Jeśli priorytetem jest ludzki coaching — Nutrisense.\n\n---\n\n## Lektura uzupełniająca\n\nBiologia metaboliczna, którą ujawniają te programy — i protokoły, które otwierają dane.\n\n- [Regulator energii: TSH](/articles/energy-governor-tsh) — metabolizm sterowany przez tarczycę jako źródło zdolności przetwarzania glukozy\n- [Biologia GLP-1 i ochrona mięśni](/articles/glp1-biology-muscle-preservation) — co pokazują dane CGM podczas stosowania protokołu GLP-1\n- [Śledzenie biomarkerów z AI](/articles/ai-biomarker-tracking-predictive) — CGM jako najgęstszy dostępny konsumencki strumień biomarkerów\n",
       "faq": [
         {
           "q": "Ile kosztuje Levels?",
@@ -485,7 +492,7 @@
         },
         {
           "q": "Levels czy Lingo: który CGM wybrać?",
-          "a": "Levels daje najgłębsze analizy i wysyła Dexcom Stelo (platforma G7, nieco dokładniejsza niż Libre 3), ale jest członkostwem (od $80 rocznie tylko aplikacja do $1,329 rocznie) i działa tylko w USA. Lingo nie wymaga subskrypcji i jest najtańszym legalnym wejściem, oferując prostszą ocenę posiłku na Libre 3. Wybierz Levels dla głębi, Lingo dla kosztów."
+          "a": "Levels daje najgłębsze analizy i wysyła Dexcom Stelo (platforma G7; w niezależnym badaniu porównawczym okazała się podobnie dokładna jak Libre 3), ale jest członkostwem (od $80 rocznie tylko aplikacja do $1,329 rocznie) i działa tylko w USA. Lingo nie wymaga subskrypcji i jest najtańszym legalnym wejściem, oferując prostszą ocenę posiłku na Libre 3. Wybierz Levels dla głębi, Lingo dla kosztów."
         }
       ]
     },
@@ -506,17 +513,17 @@
         "Silnik analiz prostszy niż w Levels — tylko ocena skoku dla każdego posiłku",
         "Brak ludzkiego coacha w żadnym planie",
         "Ograniczona integracja zewnętrzna w porównaniu z Levels",
-        "Dokładność Libre 3 ustępuje Dexcom G7 w niezależnym porównaniu"
+        "60 minut rozgrzewki sensora, dwa razy dłużej niż 30 minut w Stelo"
       ],
       "scoreNotes": {
-        "sensor-accuracy": "Abbott Libre 3 — MARD ~9%, 14 dni noszenia, bez kalibracji, 60 minut rozgrzewki. Nieznacznie mniej dokładny niż Dexcom G7 w niezależnym porównaniu.",
+        "sensor-accuracy": "Sensor oparty na Abbott Libre 3 — 14 dni noszenia, bez kalibracji, 60 minut rozgrzewki. W niezależnym badaniu porównawczym (Eichenlaub et al. 2025) Libre 3 i Dexcom G7 okazały się podobnie dokładne.",
         "insights": "Zbudowany wokół jednej oceny skoku na posiłek „Lingo Count”. Prostszy niż Levels — łatwiejszy dla początkujących, frustrujący dla zaawansowanych.",
         "coaching": "Minimalny — tylko wskazówki w aplikacji, bez coacha. Abbott postawił na prostotę zamiast coachingu.",
         "app-integration": "Przejrzysta aplikacja iOS/Android z obsługą Apple Health i Google Fit. Ograniczone łączniki zewnętrzne w porównaniu z Levels.",
         "flexibility": "Bez wymaganej subskrypcji — kupujesz pojedyncze 2-tygodniowe sensory w miarę potrzeb po $54 sztuka lub plany wielosensorowe. Najbardziej elastyczny komercyjny CGM na tej liście.",
         "value": "$54 za 2-tygodniowy sensor bez zobowiązań; plany wielosensorowe i subskrypcyjne obniżają koszt sensora. Jeden z najtańszych legalnych dostępów do CGM w USA."
       },
-      "content": "## Gdzie prowadzi\n\nLingo to najtańsza legalna droga do CGM dla osoby bez cukrzycy w USA. Sensor Abbott Libre 3 — ta sama niezawodna 14-dniowa platforma, której używają Ultrahuman M1, Veri i Hello Inside — sprzedawany bez recepty i bez wymogu subskrypcji. Pojedynczy dwutygodniowy sensor kosztuje $54 bez zobowiązań; plany wielosensorowe i subskrypcyjne obniżają koszt sensora. Aplikacja jest celowo prosta: ocena skoku na posiłek „Lingo Count” zamiast głębokiego pakietu analitycznego. Dla osoby po raz pierwszy używającej CGM, która chce poeksperymentować bez zobowiązania do programu za $200 miesięcznie, ta prostota jest wartością.\n\n## Jakie są wady Lingo?\n\nTo narzędzie dla początkujących. Warstwa analiz z jedną oceną zaczyna frustrować, gdy nauczysz się czytać własne krzywe — nie ma dekompozycji AUC, historii rankingu produktów ani coachingu. Lista integracji zewnętrznych jest krótka, a dokładność Libre 3 nieznacznie ustępuje Dexcom G7 w niezależnym porównaniu. Jako instrument do ciągłych biohakerskich samoeksperymentów Lingo jest punktem wejścia, nie celem.\n\n## Kto powinien kupić Lingo?\n\nWybierz Lingo, jeśli nigdy nie nosiłeś CGM i chcesz najtańszego legalnego sposobu, by sprawdzić, czy coś to dla ciebie zmienia. Jeśli wyrosłeś z ujęcia dla początkujących i chcesz głębi, naturalnymi kolejnymi krokami są Levels lub Stelo.\n\n---\n\n## Lektura uzupełniająca\n\nBiologia metaboliczna, którą ujawniają te programy — i protokoły, które otwierają dane.\n\n- [Czy można już śledzić kortyzol w sposób ciągły?](/articles/chm-continuous-hormone-monitoring) — dlaczego żadne konsumenckie urządzenie noszone nie mierzy dziś hormonów, w przeciwieństwie do glukozy\n- [Oś jelito-mózg jako łącze danych](/articles/gut-brain-axis-data-link) — gdzie spotykają się wzorce mikrobiomu i glukozy\n- [Elastyczność metaboliczna: czym jest i jak ją rozpoznać](/articles/metabolic-flexibility-dual-fuel-system) — co krzywa glukozy może, a czego nie może powiedzieć o przełączaniu paliwa\n",
+      "content": "## Gdzie prowadzi\n\nLingo to najtańsza legalna droga do CGM dla osoby bez cukrzycy w USA. Sensor Abbott Libre 3 — ta sama niezawodna 14-dniowa platforma, której używają Ultrahuman M1, Veri i Hello Inside — sprzedawany bez recepty i bez wymogu subskrypcji. Pojedynczy dwutygodniowy sensor kosztuje $54 bez zobowiązań; plany wielosensorowe i subskrypcyjne obniżają koszt sensora. Aplikacja jest celowo prosta: ocena skoku na posiłek „Lingo Count” zamiast głębokiego pakietu analitycznego. Dla osoby po raz pierwszy używającej CGM, która chce poeksperymentować bez zobowiązania do programu za $200 miesięcznie, ta prostota jest wartością.\n\n## Jakie są wady Lingo?\n\nTo narzędzie dla początkujących. Warstwa analiz z jedną oceną zaczyna frustrować, gdy nauczysz się czytać własne krzywe — nie ma dekompozycji AUC, historii rankingu produktów ani coachingu. Lista integracji zewnętrznych jest krótka, a 60 minut rozgrzewki sensora to dwa razy dłużej niż 30 minut w Stelo. Jako instrument do ciągłych biohakerskich samoeksperymentów Lingo jest punktem wejścia, nie celem.\n\n## Kto powinien kupić Lingo?\n\nWybierz Lingo, jeśli nigdy nie nosiłeś CGM i chcesz najtańszego legalnego sposobu, by sprawdzić, czy coś to dla ciebie zmienia. Jeśli wyrosłeś z ujęcia dla początkujących i chcesz głębi, naturalnymi kolejnymi krokami są Levels lub Stelo.\n\n---\n\n## Lektura uzupełniająca\n\nBiologia metaboliczna, którą ujawniają te programy — i protokoły, które otwierają dane.\n\n- [Czy można już śledzić kortyzol w sposób ciągły?](/articles/chm-continuous-hormone-monitoring) — dlaczego żadne konsumenckie urządzenie noszone nie mierzy dziś hormonów, w przeciwieństwie do glukozy\n- [Oś jelito-mózg jako łącze danych](/articles/gut-brain-axis-data-link) — gdzie spotykają się wzorce mikrobiomu i glukozy\n- [Elastyczność metaboliczna: czym jest i jak ją rozpoznać](/articles/metabolic-flexibility-dual-fuel-system) — co krzywa glukozy może, a czego nie może powiedzieć o przełączaniu paliwa\n",
       "faq": [
         {
           "q": "Czy na Lingo potrzebna jest recepta?",
@@ -528,7 +535,7 @@
         },
         {
           "q": "Lingo czy Levels: co lepsze?",
-          "a": "Lingo jest tańsze i prostsze: bez subskrypcji i z jedną oceną Lingo Count na posiłek. Levels oferuje znacznie głębszą analitykę i nieco dokładniejszy Dexcom Stelo (platforma G7), jako członkostwo od około $80 rocznie (tylko aplikacja) do $1,329 rocznie. Żadne nie obejmuje ludzkiego coacha. Wybierz Lingo, jeśli koszt i prostota są ważniejsze niż głębia analiz."
+          "a": "Lingo jest tańsze i prostsze: bez subskrypcji i z jedną oceną Lingo Count na posiłek. Levels oferuje znacznie głębszą analitykę na Dexcom Stelo (platforma G7), jako członkostwo od około $80 rocznie (tylko aplikacja) do $1,329 rocznie. Żadne nie obejmuje ludzkiego coacha. Wybierz Lingo, jeśli koszt i prostota są ważniejsze niż głębia analiz."
         }
       ]
     },
@@ -553,7 +560,7 @@
       ],
       "scoreNotes": {
         "field-strength": "Regulowana intensywność PEMF, 1–30 Hz; producent podaje do 5+ gaussów w szczycie i ok. 1,5 gaussa średnio na powierzchni. Więcej niż Bemer, ale wciąż niska intensywność w porównaniu z klinicznymi systemami cewek.",
-        "waveform-evidence": "Wykorzystuje typowe częstotliwości PEMF (w tym pasmo Schumanna 7,83 Hz) z ogólnej literatury o PEMF. Brak badań konkretnego urządzenia.",
+        "waveform-evidence": "Wykorzystuje typowe częstotliwości PEMF z ogólnej literatury o PEMF, w tym ustawienie „Schumanna” 7,83 Hz, za które nie przyznajemy punktów. Brak badań samego urządzenia — 7,0, ocena, którą dajemy urządzeniom PEMF bez badań konkretnego urządzenia.",
         "build": "Składana trzyczęściowa mata, 5 lat ograniczonej gwarancji (plus 3 miesiące przy zakupie bezpośrednim), 90 dni na próbę. Pozytywna historia obsługi klienta.",
         "programmability": "Najlepsza programowalność w kategorii — trzy szerokości impulsu, sześć przebiegów, 12 presetów lub własne programy; PEMF, ciepło i czerwone światło sterowane niezależnie.",
         "form-factor": "Mata na całe ciało z PEMF + daleką podczerwienią + czerwonym światłem + jonami ujemnymi + kryształami. Cztery rozmiary Multi-Wave od 32×20 in do 74×28 in. Jedna mata zastępuje kilka urządzeń jednomodalnych.",
@@ -847,9 +854,9 @@
         "Przeciętny dostęp do danych — brak w pełni otwartego API; brak wyświetlacza"
       ],
       "scoreNotes": {
-        "hrv-accuracy": "Ciągły pomiar HRV (SDNN i RMSSD), aktualizowany co kilka minut w spoczynku — naprawdę ciągły sygnał nocny.",
+        "hrv-accuracy": "Ciągły pomiar HRV (SDNN i RMSSD), aktualizowany co kilka minut w spoczynku. Istnieją tylko preprinty prowadzone przez firmę; nie znaleziono niezależnej walidacji względem EKG (stan na październik 2026). Zasada ONDA: bez własnej niezależnej walidacji urządzenie otrzymuje najwyżej 7,5, jeśli walidowano wcześniejsze generacje, a 7,0, jeśli nie.",
         "sensor": "Optyczny czujnik PPG w bardzo lekkim pierścieniu; czysty sygnał w spoczynku.",
-        "sleep-accuracy": "Mocne śledzenie snu — wczesne niezależne testy wskazują na wysoką zgodność faz snu, wśród lepszych pierścieni.",
+        "sleep-accuracy": "Dane o fazach snu pochodzą z preprintów prowadzonych przez firmę, a nie z niezależnych weryfikacji. Zasada ONDA: bez własnej niezależnej walidacji urządzenie otrzymuje najwyżej 7,5, jeśli walidowano wcześniejsze generacje, a 7,0, jeśli nie.",
         "data-access": "Dożywotni dostęp do własnych danych i częściowy eksport, ale brak naprawdę otwartego API.",
         "wearability": "Bardzo lekki i wygodny — ale liczne zgłoszenia awarii baterii w ciągu kilku miesięcy podważają jego niezawodność jako urządzenia 24/7.",
         "app-ux": "Rozbudowana aplikacja, rozszerzalna dodatkami „PowerPlugs”.",
@@ -1387,7 +1394,7 @@
       "scoreNotes": {
         "adhesion-comfort": "Klej z żelu silikonowego jest łagodniejszy dla skóry niż akryl; dobrze trzyma na czystej skórze. Słabiej trzyma się brody niż Hostage Tape — żel silikonowy nie łapie zarostu.",
         "breathing-mechanism": "Pełne uszczelnienie. Brak porowatego otworu pośrodku. Dla osób zdecydowanych oddychać wyłącznie nosem.",
-        "evidence-grounding": "Badania finansowane przez markę i opinie biohakerów. Brak rejestracji w FDA. Słabsza pozycja regulacyjna niż Somnifix.",
+        "evidence-grounding": "Badania finansowane przez markę (które nie liczą się jako dowody w ocenach ONDA) i opinie biohakerów; brak niezależnych badań tej taśmy. Na równi z Hostage Tape.",
         "form-factor": "Jednoczęściowy pasek z żelu silikonowego wielokrotnego użytku — w praktyce 2–3 użycia na pasek. Wyraźnie obniża koszt jednej nocy.",
         "material-safety": "Klej z żelu silikonowego — jeden z najdelikatniejszych w kategorii. Hipoalergiczny, bez lateksu, mało zgłoszeń reakcji skórnych. Najlepszy dla wrażliwej skóry.",
         "value": "~$30 za 10 pasków × ~3 użycia = efektywnie ~$1 za noc. Wyższą cenę równoważy wielokrotne użycie."
@@ -1477,7 +1484,7 @@
       "scoreNotes": {
         "adhesion-comfort": "Medyczny klej 3M klasy klinicznej — delikatny dla skóry, bezbolesne zdejmowanie. Gorzej trzyma się zarostu niż Hostage Tape. Właściwy wybór to wariant Sensitive Skin.",
         "breathing-mechanism": "Użytkownik sam tnie pasek — możliwe pełne uszczelnienie, częściowe lub układ na krzyż. Maksymalna elastyczność.",
-        "evidence-grounding": "Medyczna taśma papierowa dopuszczona przez FDA. Literatura kliniczna o bezpieczeństwie kleju. Dziesięciolecia stosowania w szpitalach.",
+        "evidence-grounding": "Medyczna taśma papierowa dopuszczona przez FDA (dopuszczenie do zastosowań chirurgicznych, oceniane neutralnie) z dziesięcioleciami stosowania w szpitalach. Jako taśma na usta nie ma własnych badań, a zaklejanie ust w ogóle ma tylko kilka małych badań z mieszanymi wynikami — dlatego taśmy na usta dostają tu najwyżej 6,5.",
         "form-factor": "Forma rolki wymaga cięcia przy każdym użyciu. Brak gotowych pasków. Więcej zachodu każdej nocy niż przy dedykowanych markach taśm na usta.",
         "material-safety": "Hipoalergiczny klej klasy medycznej. Bez lateksu. Wariant Sensitive Skin minimalizuje reakcje; wieloletnia historia stosowania w szpitalach.",
         "value": "~$5 za rolkę na ponad 3 miesiące = ~$0.05 za noc. Bezkonkurencyjny koszt nocy w kategorii taśm na usta."
@@ -1613,8 +1620,8 @@
       ],
       "scoreNotes": {
         "adhesion-comfort": "Solidna przyczepność na czystej skórze. Gorzej trzyma się zarostu niż Hostage Tape — klej zaprojektowano do kontaktu ze skórą, nie z zarostem.",
-        "breathing-mechanism": "Porowata konstrukcja z centralnym otworem oddechowym — zostawia część ust odkrytą i pozwala na częściowy wydech ustami. Nie testowano tego jako funkcji bezpieczeństwa; jeśli bezdech senny jest możliwy, najpierw skonsultuj się z lekarzem.",
-        "evidence-grounding": "Wyrób medyczny zarejestrowany w FDA. Wieloletnia historia z cytowaniami w kontekście klinicznym. Mocniejsza pozycja regulacyjna niż Hostage Tape.",
+        "breathing-mechanism": "Porowata konstrukcja z centralnym otworem oddechowym — zostawia część ust odkrytą i pozwala na częściowy wydech ustami. Nie testowano tego jako funkcji bezpieczeństwa, więc konstrukcja nie daje dodatkowych punktów: to ten sam mechanizm oddychania nosem co w innych taśmach na usta. Jeśli bezdech senny jest możliwy, najpierw skonsultuj się z lekarzem.",
+        "evidence-grounding": "Rejestracja w FDA to wpis do rejestru i oceniamy ją neutralnie. Brak badań samej taśmy, a zaklejanie ust w ogóle ma tylko kilka małych badań z mieszanymi wynikami i ostrzeżeniami dotyczącymi bezpieczeństwa (zob. naszą stronę o dowodach na oddychanie nosem) — dlatego taśmy na usta dostają tu najwyżej 6,5, poniżej 7,0 dla produktów popartych spójną niezależną bazą dowodów.",
         "form-factor": "Jednoczęściowy pasek z porowatą częścią centralną. Łatwy w aplikacji. Mniejsze pokrycie niż pełny pasek Hostage Tape.",
         "material-safety": "Hipoalergiczny klej klasy medycznej. Bez lateksu. Reakcje skórne zgłaszane rzadko w wieloletniej bazie użytkowników.",
         "value": "~$25 za 28 pasków = ~$0.90 za noc. Drożej za noc niż subskrypcja Hostage Tape; subskrypcja niewymagana."
@@ -1660,7 +1667,7 @@
       ],
       "scoreNotes": {
         "adhesion-comfort": "Klej akrylowy średniej klasy — wystarczająca przyczepność na czystej skórze. Układ X zmniejsza łączną powierzchnię kleju na noc. Gorzej trzyma się zarostu niż Hostage Tape.",
-        "breathing-mechanism": "Krzyżowy układ X — zostawia kąciki ust odkryte. Nie testowano tego jako funkcji bezpieczeństwa; jeśli bezdech senny jest możliwy, najpierw skonsultuj się z lekarzem.",
+        "breathing-mechanism": "Krzyżowy układ X — zostawia kąciki ust odkryte. Nie testowano tego jako funkcji bezpieczeństwa, więc konstrukcja nie daje dodatkowych punktów: to ten sam mechanizm co w innych taśmach na usta. Jeśli bezdech senny jest możliwy, najpierw skonsultuj się z lekarzem.",
         "evidence-grounding": "Niezależna marka bez rejestracji w FDA i bez recenzowanych badań. Układu X nie testowano jako funkcji bezpieczeństwa.",
         "form-factor": "Krzyżowy układ X — wyróżniający się w kategorii. Dwuczęściowa aplikacja to nieco więcej zachodu niż jeden pasek.",
         "material-safety": "Klej hipoalergiczny. Bez lateksu. Umiarkowana liczba zgłoszeń reakcji skórnych. Układ X zmniejsza powierzchnię kontaktu kleju, co pomaga wrażliwej skórze.",
@@ -1751,7 +1758,7 @@
       "scoreNotes": {
         "adhesion-comfort": "Małe zaczepy klejące dobrze trzymają; pasek magnetyczny rozkłada nacisk zamiast napinać skórę w jednym punkcie. Wygodny jak na tę formę.",
         "breathing-mechanism": "Zewnętrzne rozszerzanie magnetyczne — mechanicznie poszerza otwory nozdrzy. Najskuteczniejsze podejście wśród zewnętrznych rozszerzaczy; według relacji użytkowników daje lepszy przepływ powietrza niż pasywne plastry typu Breathe Right.",
-        "evidence-grounding": "Rekomendacja Jamesa Nestora w książce Breath. Badania przepływu powietrza finansowane przez producenta. Pozycjonowanie bliskie medycynie snu, ale bez dopuszczenia FDA klasy II.",
+        "evidence-grounding": "James Nestor poleca je w książce Breath (to rekomendacja, nie dowód). Badania przepływu powietrza są finansowane przez markę i nie liczą się jako dowody w ocenach ONDA; nie znaleźliśmy niezależnych badań tego urządzenia.",
         "form-factor": "Pasek magnetyczny wielokrotnego użytku z wymiennymi zaczepami klejącymi — opłaca się w dłuższym okresie. Dyskretny wygląd.",
         "material-safety": "Zaczepy z kleju klasy medycznej. Pasek magnetyczny hipoalergiczny. Zgłoszenia reakcji skórnych są rzadkie.",
         "value": "~40 $ za zestaw startowy, 20 $/miesiąc za wymienne zaczepy = ~0,65 $/noc na bieżąco. Cena premium, ale pasek wielokrotnego użytku obniża koszt w dłuższym okresie."
@@ -1794,7 +1801,7 @@
       "scoreNotes": {
         "adhesion-comfort": "Bez kleju — trzyma się w nozdrzach dzięki tarciu. Okres przyzwyczajania jest realny; większość użytkowników przywyka w ciągu 3-5 nocy.",
         "breathing-mechanism": "Wewnętrzny stent mechaniczny — podtrzymuje drogi oddechowe od środka bardziej bezpośrednio niż dźwignia plastra zewnętrznego. Najsilniejszy mechanizm mechaniczny w kategorii.",
-        "evidence-grounding": "Opublikowane badania kliniczne Rhinomed dotyczące poprawy przepływu powietrza. Rejestracja w FDA. Najlepsza baza recenzowanych dowodów wśród rozszerzaczy nosa.",
+        "evidence-grounding": "Rhinomed opublikował badania przepływu powietrza, ale badania prowadzone lub finansowane przez producenta nie liczą się jako dowody w ocenach ONDA, a nie znaleźliśmy niezależnych badań tego urządzenia. Rejestracja w FDA jest neutralna.",
         "form-factor": "Stent wewnętrzny — niewidoczny z zewnątrz, ale wkładany do nozdrzy. Dostępny w trzech rozmiarach (S/M/L), które trzeba dobrać.",
         "material-safety": "Polimer klasy medycznej. Jeden stent na ok. 1 tydzień. Część użytkowników zgłasza podrażnienie nozdrzy — nie każda anatomia pasuje wygodnie.",
         "value": "~25 $ za 3 sztuki × 1 tydzień każda = ~1,20 $/noc. Drożej za noc niż taśma na usta czy Breathe Right."
@@ -2129,11 +2136,11 @@
         },
         {
           "q": "Jaka aplikacja do pracy z oddechem jest najlepsza w 2026?",
-          "a": "Ogólnie Breathwrk — największa uporządkowana biblioteka, najszerszy zakres technik, opisy oparte na nauce za $49/rok. Othership dla filmowego doświadczenia premium z muzyką za $129.99/rok. Aplikacja Wim Hof Method konkretnie do WHM."
+          "a": "Ogólnie Breathwrk — największa uporządkowana biblioteka, najszerszy zakres technik, opisy czerpiące z nauki (jedno opublikowane badanie nad cyklicznym westchnieniem) za $49/rok. Othership dla filmowego doświadczenia premium z muzyką za $129.99/rok. Aplikacja Wim Hof Method konkretnie do WHM."
         },
         {
           "q": "Czy subskrypcja Breathwrk jest warta swojej ceny?",
-          "a": "Tak, dla osób chcących uporządkowanej codziennej praktyki oddechowej z szerokim zakresem technik — biblioteka Breathwrk i opisy oparte na nauce nie mają sobie równych w tej cenie. Dla osób szukających filmowego doświadczenia Othership uzasadnia swoją wyższą subskrypcję."
+          "a": "Tak, dla osób chcących uporządkowanej codziennej praktyki oddechowej z szerokim zakresem technik — biblioteka Breathwrk i opisy czerpiące z nauki (jedno opublikowane badanie nad cyklicznym westchnieniem) nie mają sobie równych w tej cenie. Dla osób szukających filmowego doświadczenia Othership uzasadnia swoją wyższą subskrypcję."
         },
         {
           "q": "Breathwrk czy Othership — co lepsze?",
@@ -2355,7 +2362,7 @@
       "axes": [
         {
           "name": "Precyzja nocnego HRV",
-          "note": "Oura Ring 4 mierzy w sposób ciągły z palca, gdzie jakość sygnału przewyższa optykę na nadgarstku, i ma jedną z najlepszych niezależnych zgodności faz snu/HRV. Series 12 jest znacznie lepszy, ale to wciąż optyka na nadgarstku."
+          "note": "Oura Ring 4 jako jedyny z tej dwójki ma niezależną nocną weryfikację HRV względem EKG (jedno badanie, 13 osób); nie znaleziono niezależnej weryfikacji określania faz snu. Recovery/Overall HRV w Series 12 nie zostały niezależnie zwalidowane (stan na październik 2026)."
         },
         {
           "name": "Porównywalność metryki regeneracji",
@@ -2408,7 +2415,7 @@
       "axes": [
         {
           "name": "Pomiar HRV",
-          "note": "Oba śledzą HRV w sposób ciągły w nocy za pomocą optycznego PPG; niezależne porównania stawiają je mniej więcej na równi. Remis na poziomie sygnału."
+          "note": "Praktycznie równe: oba mierzą HRV w nocy optycznym PPG, a ani WHOOP 5.0, ani Venu 4 nie mają niezależnej walidacji HRV względem EKG (stan na październik 2026), więc nie ma podstaw, by szeregować je pod względem dokładności."
         },
         {
           "name": "Coaching regeneracji",
@@ -2886,7 +2893,7 @@
         },
         {
           "name": "Pomiar snu i HRV",
-          "note": "Oba dają solidne nocne dane o śnie i HRV jak na swoją cenę; różnica w codziennym użyciu jest niewielka i żaden nie ma tylu opublikowanych walidacji co Oura."
+          "note": "Praktycznie równe: oba śledzą sen i nocną HRV w swojej cenie, a żaden nie ma niezależnej walidacji (stan na październik 2026); różnica w codziennym użyciu jest niewielka."
         },
         {
           "name": "Komfort",
@@ -2962,7 +2969,7 @@
         },
         {
           "q": "Breathwrk czy Othership — co lepsze?",
-          "a": "Breathwrk wygrywa zakresem technik, oparciem w badaniach i ceną ($49 wobec $129.99 rocznie). Othership wygrywa produkcją i zajęciami na żywo ze społecznością. Wybierz Breathwrk do uporządkowanej codziennej praktyki; Othership, jeśli to muzyka i społeczność utrzymują Cię w regularności."
+          "a": "Breathwrk wygrywa zakresem technik i ceną ($49 wobec $129.99 rocznie). Othership wygrywa produkcją i zajęciami na żywo ze społecznością. Wybierz Breathwrk do uporządkowanej codziennej praktyki; Othership, jeśli to muzyka i społeczność utrzymują Cię w regularności."
         },
         {
           "q": "Ile kosztują Breathwrk, Othership i aplikacja Wim Hof Method?",

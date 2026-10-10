@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const muse2: ToolReview = {
+const muse2: ToolReviewInput = {
   slug: 'muse-2',
   name: 'Muse 2',
   brand: 'Interaxon',
@@ -12,7 +12,6 @@ const muse2: ToolReview = {
     'The most popular consumer EEG headband — mature content, accessible price, the entry point of the category.',
   summary:
     'Muse 2 is the headband that put consumer EEG meditation on the map. Four dry EEG electrodes plus PPG heart-rate, a mature meditation content library, polished app, and the lowest price in this list outside the budget NeuroSky entry. Older hardware than the Athena and no sleep tracking — but for users who want meditation feedback only, it remains the most cost-effective choice.',
-  overallScore: 7.8,
   scores: [
     { criterionId: 'signal-quality', score: 7.5, note: 'Four dry EEG electrodes plus PPG heart rate — adequate consumer signal that holds well in sit-up sessions; lower stability than research wet-electrode systems.' },
     { criterionId: 'training-content', score: 8.5, note: 'Mature meditation library after a decade of releases — calm, focus, breath, body-scan, mood. Less depth than the Athena variant but covers the core daily use case fully.' },

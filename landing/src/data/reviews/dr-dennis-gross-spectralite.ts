@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const drDennisGross: ToolReview = {
+const drDennisGross: ToolReviewInput = {
   slug: 'dr-dennis-gross-spectralite',
   name: 'Dr. Dennis Gross SpectraLite FaceWare Pro',
   brand: 'Dr. Dennis Gross Skincare',
@@ -12,12 +12,11 @@ const drDennisGross: ToolReview = {
     'Best dermatology-brand pedigree — FDA-cleared per the brand, dual red + blue protocol (anti-aging + acne), hard-shell build. Less comfortable than silicone alternatives.',
   summary:
     'Dr. Dennis Gross SpectraLite FaceWare Pro is the dermatology-brand reference — backed by Dr. Dennis Gross\'s decades of dermatology practice, FDA-cleared per the brand, and one of the few masks combining red 633 nm (anti-aging) with blue 415 nm (acne) in alternating protocols. Hard-shell construction is the trade-off — less comfortable than silicone but cheaper to manufacture and proven over multiple device generations. 3-minute session protocol is the shortest in the category.',
-  overallScore: 8.0,
   scores: [
     { criterionId: 'irradiance', score: 8.0, note: 'Documented irradiance honest for the 3-minute protocol. Shorter session compensated by higher LED density.' },
     { criterionId: 'wavelength-coverage', score: 8.5, note: 'Red 633 nm + blue 415 nm — dual-spectrum approach unique among hard-shell masks. Covers anti-aging and acne in alternating protocols.' },
     { criterionId: 'led-count-coverage', score: 7.0, note: '162 LEDs across hard-shell coverage. Even distribution on the face surface; no neck flap.' },
-    { criterionId: 'clinical-evidence', score: 8.5, note: 'FDA-cleared per the brand (clearance is not FDA approval), backed by Dr. Dennis Gross dermatology practice. Brand-funded studies on the dual-spectrum protocol. Strong dermatology-brand credibility.' },
+    { criterionId: 'clinical-evidence', score: 6.5, note: 'FDA-cleared per the brand (clearance is not FDA approval; scored as neutral). The studies on the dual-spectrum protocol are brand-funded and do not count as evidence in ONDA scores, and dermatology-brand reputation is not evidence — no independent device studies found.' },
     { criterionId: 'comfort-fit', score: 6.5, note: 'Hard-shell construction — less comfortable than flexible silicone alternatives. Weight noticeable on extended sessions. Pro tier is more refined than the original FaceWare.' },
     { criterionId: 'value', score: 7.0, note: '$455 — premium pricing for the dermatology-brand pedigree. Comparable to Omnilux Contour with dual-spectrum trade.' },
   ],
@@ -71,7 +70,7 @@ Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand pedigree with 
     { q: "Who is the Dr. Dennis Gross SpectraLite best for?", a: "The SpectraLite FaceWare Pro is best for users who want dermatology-brand pedigree with dual red and blue light for anti-aging and acne. It suits those who accept a hard-shell comfort trade-off in exchange for a fast 3-minute protocol." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-10-10',
 }
 
 export default drDennisGross

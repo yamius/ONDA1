@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const higherDoseFaceMask: ToolReview = {
+const higherDoseFaceMask: ToolReviewInput = {
   slug: 'higherdose-red-light-face-mask',
   name: 'HigherDOSE Red Light Face Mask',
   brand: 'HigherDOSE',
@@ -12,7 +12,6 @@ const higherDoseFaceMask: ToolReview = {
     'Best consumer-brand UX in red light masks — simple controller, flexible silicone, brand-stated 50 mW/cm². Light clinical evidence; brand polish over technical depth.',
   summary:
     'HigherDOSE Red Light Face Mask is the consumer-brand reference — simple controller UX (no app), flexible silicone, 132 diodes, red 630 nm + near-infrared 830 nm at a brand-stated 50 mW/cm², 10- or 20-minute sessions, $349 pricing. Brand crossover from HigherDOSE PEMF mat and sauna blanket. Light clinical-evidence base; the thesis is consumer-friendliness and brand ecosystem rather than dermatology depth.',
-  overallScore: 7.3,
   scores: [
     { criterionId: 'irradiance', score: 7.0, note: 'HigherDOSE states 50 mW/cm² total (630 nm 26 + 830 nm 24 mW/cm²) — the brand’s figures, not independently measured.' },
     { criterionId: 'wavelength-coverage', score: 7.5, note: 'Red 630 nm + near-infrared 830 nm — the standard clinical pair. No blue / amber variants.' },
@@ -70,7 +69,7 @@ Choose HigherDOSE Red Light Face Mask for consumer-polished daily-use mask in th
     { q: "What are the downsides of the HigherDOSE Red Light Face Mask?", a: "Its clinical-evidence base is light, and its 50 mW/cm² irradiance is the brand’s own figure rather than an independent measurement. It has no neck flap and no multi-wavelength variants. The pitch is consumer-friendliness and the HigherDOSE ecosystem, which pairs with its PEMF mat and sauna blanket, rather than dermatology depth." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default higherDoseFaceMask

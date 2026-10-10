@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const sleepCycleVsSleepAsAndroidVsAutoSleep: HeadToHead = {
+const sleepCycleVsSleepAsAndroidVsAutoSleep: HeadToHeadInput = {
   slug: 'sleep-cycle-vs-sleep-as-android-vs-autosleep',
   productASlug: 'sleep-cycle',
   productBSlug: 'sleep-as-android',
@@ -10,7 +10,7 @@ const sleepCycleVsSleepAsAndroidVsAutoSleep: HeadToHead = {
     'Sleep Cycle vs Sleep as Android vs AutoSleep — three-way ONDA comparison of three phone-based sleep trackers. Cross-platform, Android-only and Apple Watch-paired in one decision.',
   intro:
     'Sleep Cycle, Sleep as Android and AutoSleep are the three phone-based sleep trackers users compare across platforms. Three different angles on the same goal: Sleep Cycle is the polished cross-platform incumbent, Sleep as Android is the Android-only customisation specialist, AutoSleep is the iPhone + Apple Watch native option. Pick on platform first.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Platform decides. Sleep Cycle for cross-platform (iPhone or Android). Sleep as Android for Android-only deep customisation. AutoSleep for iPhone users with an Apple Watch.',
   bestForA:
@@ -69,7 +69,7 @@ If you are an iPhone user with an Apple Watch and want native HealthKit-integrat
   relatedComparisonSlug: 'best-sleep-apps-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-06-04',
+  dateModified: '2026-10-10',
 }
 
 export default sleepCycleVsSleepAsAndroidVsAutoSleep

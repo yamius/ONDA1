@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const pulsettoVsSensate: HeadToHead = {
+const pulsettoVsSensate: HeadToHeadInput = {
   slug: 'pulsetto-vs-sensate',
   productASlug: 'pulsetto',
   productBSlug: 'sensate',
@@ -9,7 +9,7 @@ const pulsettoVsSensate: HeadToHead = {
     'Pulsetto vs Sensate — electrical vagus-nerve stimulation vs infrasonic resonance. Two very different technologies both marketed for calm and HRV, compared by ONDA.',
   intro:
     'These two are cross-shopped for the same goal — calming the nervous system — but they work in fundamentally different ways. Pulsetto delivers actual electrical stimulation (tVNS) to the vagus nerve at the neck, with HRV tracking and wearable integration. Sensate is not electrical at all: it uses infrasonic resonance — low-frequency sound vibrations on the chest — to induce a passive calm. The choice starts with which mechanism you believe in.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Electrical stimulation vs infrasonic resonance. Pulsetto is the more active, direct tVNS device — protocol variety, HRV tracking, Oura/Apple integration, and a lower price. Sensate is a gentle, passive, well-loved calming device whose sound-based mechanism has less direct evidence. Pick Pulsetto for active vagus stimulation and data; Sensate for a soothing, hands-off wind-down.',
   bestForA:
@@ -56,7 +56,7 @@ Against the vibration-based option, see [Sensate vs Apollo Neuro](/reviews/vs/se
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default pulsettoVsSensate

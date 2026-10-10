@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const calm: ToolReview = {
+const calm: ToolReviewInput = {
   slug: 'calm',
   name: 'Calm',
   brand: 'Calm',
@@ -12,7 +12,6 @@ const calm: ToolReview = {
     'The most polished sleep-and-relaxation app — a huge, beautifully made library, undercut by a thin free tier.',
   summary:
     'Calm is the most polished app in this category and the one to beat for sleep and relaxation — Sleep Stories, soundscapes and a vast library, all wrapped in a near-flawless interface. What it asks in return is a subscription: the free tier is thin.',
-  overallScore: 7.7,
   scores: [
     { criterionId: 'content-library', score: 9.0, note: 'A vast library spanning meditations, Sleep Stories, soundscapes, music and masterclasses.' },
     { criterionId: 'teaching', score: 7.5, note: 'Broad and well-produced, but tilted toward relaxation rather than rigorous instruction.' },

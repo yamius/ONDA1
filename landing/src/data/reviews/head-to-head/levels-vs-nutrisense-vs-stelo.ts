@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const threeCgm: HeadToHead = {
+const threeCgm: HeadToHeadInput = {
   slug: 'levels-vs-nutrisense-vs-stelo',
   productASlug: 'levels',
   productBSlug: 'nutrisense',
@@ -9,8 +9,8 @@ const threeCgm: HeadToHead = {
   description:
     'Levels vs Nutrisense vs Stelo — three-way ONDA comparison of the three top Dexcom G7 CGM programmes. App intelligence, human dietitian and OTC value in one decision.',
   intro:
-    'Levels, Nutrisense and Stelo are the three most-compared CGM programmes for non-diabetic biohackers — all three running on the Dexcom G7 sensor platform (Levels now ships Stelo, Dexcom’s OTC G7-platform sensor), the most accurate consumer sensor. Same hardware, three different wrappers: Levels bets on app intelligence, Nutrisense pairs a registered dietitian, Stelo is Dexcom’s own OTC consumer programme without coaching. The decision is purely about what sits above the sensor.',
-  winnerSlug: null,
+    'Levels, Nutrisense and Stelo are the three most-compared CGM programmes for non-diabetic biohackers — all three running on the Dexcom G7 sensor platform (Levels now ships Stelo, Dexcom’s OTC G7-platform sensor). Same hardware, three different wrappers: Levels bets on app intelligence, Nutrisense pairs a registered dietitian, Stelo is Dexcom’s own OTC consumer programme without coaching. The decision is purely about what sits above the sensor.',
+  jobDependentVerdict: true,
   verdict:
     'Three different jobs on the same hardware. Levels for the deepest app insights. Nutrisense for a registered dietitian. Stelo for the same sensor at a third of the cost.',
   bestForA:
@@ -20,7 +20,7 @@ const threeCgm: HeadToHead = {
   bestForC:
     'Choose Stelo by Dexcom if you want the same Dexcom G7 hardware at a third of the long-term cost, with no coaching subscription — OTC and FDA-cleared.',
   axes: [
-    { name: 'Sensor and accuracy', winner: 'tie', note: 'All three ship Dexcom G7 — same MARD ~8.2%, same 10–15 day wear. Indistinguishable on hardware.' },
+    { name: 'Sensor and accuracy', winner: 'tie', note: 'All three ship Dexcom G7 — same accuracy, same 10–15 day wear. Indistinguishable on hardware.' },
     { name: 'Insight depth (app)', winner: 'a', note: 'Levels has the deepest meal-impact engine — AUC decomposition, food-by-food ranking, time-in-range views. Nutrisense is competent; Stelo is simpler.' },
     { name: 'Human coaching', winner: 'b', note: 'Nutrisense: registered dietitian for every subscriber. Levels and Stelo: app-only, no human coach by default.' },
     { name: 'Sensor wear time', winner: 'c', note: 'Stelo: 15-day Dexcom G7 sensors. Levels and Nutrisense: 10-day. Stelo has the longer wear cycle.' },
@@ -68,7 +68,7 @@ If you need a person, not an app, helping you interpret the data, Nutrisense is 
 If you want Dexcom G7 hardware at the lowest legitimate price — no coaching, no premium analytics, just the sensor and a clean app — Stelo is the right shape. It is the cheapest path to ongoing CGM in 2026 and the right starting point for users not sure they want CGM long-term.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-10',
 }
 
 export default threeCgm

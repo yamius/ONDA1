@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const fitbitAirVsCharge6: HeadToHead = {
+const fitbitAirVsCharge6: HeadToHeadInput = {
   slug: 'fitbit-air-vs-fitbit-charge-6',
   productASlug: 'fitbit-air',
   productBSlug: 'fitbit-charge-6',
@@ -9,7 +9,6 @@ const fitbitAirVsCharge6: HeadToHead = {
     'Fitbit Air vs Fitbit Charge 6 — which Fitbit for HRV? The new $99 screenless pod with no-Premium basics versus the screen-and-GPS band. Where each one fits.',
   intro:
     'Two Fitbits, two philosophies. The 2026 Fitbit Air is a screenless $99 pod built around 24/7 HRV, sleep and SpO2 — with the core metrics unlocked without Premium. The Charge 6 is the familiar band with a touchscreen, built-in GPS and Google apps, but with more of its health depth gated behind the Fitbit Premium subscription. Which is the better HRV buy depends on whether you want a screen or just the signal.',
-  winnerSlug: 'fitbit-air',
   verdict:
     'For HRV specifically, the Fitbit Air is the better pick — cheaper, screenless-comfortable for 24/7 wear, and with HRV unlocked without Premium. Choose the Charge 6 only if you need the on-wrist screen and built-in GPS.',
   bestForA:
@@ -60,7 +59,7 @@ You want to glance at stats and notifications on your wrist, map runs with onboa
 The Air is brand-new (May 2026) with no independent HRV-accuracy validation yet, so read your own trend rather than trusting the absolute number. And either way, a Fitbit tells you how you recovered; the [state-changing part](/articles/active-intervention-vs-passive-tracking) comes from an active practice like [HRV biofeedback](/hrv-biofeedback).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-12',
-  dateModified: '2026-09-12',
+  dateModified: '2026-10-10',
 }
 
 export default fitbitAirVsCharge6

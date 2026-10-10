@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const hv3ProVsTheragunProPlus: HeadToHead = {
+const hv3ProVsTheragunProPlus: HeadToHeadInput = {
   slug: 'hypervolt-3-pro-vs-theragun-pro-plus',
   productASlug: 'hypervolt-3-pro',
   productBSlug: 'theragun-pro-plus',
@@ -9,7 +9,7 @@ const hv3ProVsTheragunProPlus: HeadToHead = {
     'Hyperice Hypervolt 3 Pro vs Theragun PRO Plus — the 2026 $349 Hyperice flagship vs the $599 Therabody reference. ONDA on stall force, amplitude, noise, features and value.',
   intro:
     'The Hyperice Hypervolt 3 Pro and the Theragun PRO Plus are the two premium percussion guns worth cross-shopping in 2026, and the March 2026 Hypervolt 3 update reshuffled the fight. The Hypervolt now out-muscles Theragun on stall force and undercuts it by $250, while Theragun keeps the deepest amplitude, the richest feature set and the longer warranty. It comes down to raw power and value versus stroke depth and extras.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Power and value vs amplitude and features. The Hypervolt 3 Pro wins on stall force (~70 vs 60 lbs), battery, and price ($349 vs $599). The Theragun PRO Plus wins on amplitude (16 mm deep stroke), extras (OLED, heat, breathing training), grip versatility and a 2-year warranty. Both are excellent — pick by whether you want the strongest-cheapest gun or the deepest-most-featured one.',
   bestForA:
@@ -56,7 +56,7 @@ For the previous Hyperice flagship, see the [Hypervolt 2 Pro](/reviews/hypervolt
   relatedComparisonSlug: 'best-massage-guns-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default hv3ProVsTheragunProPlus

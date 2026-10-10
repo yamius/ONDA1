@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const truvaga350: ToolReview = {
+const truvaga350: ToolReviewInput = {
   slug: 'truvaga-350',
   name: 'Truvaga 350',
   brand: 'electroCore',
@@ -12,7 +12,6 @@ const truvaga350: ToolReview = {
     'gammaCore’s clinical hardware repackaged as a consumer wellness device — strong provenance, modest evidence in the wellness indication.',
   summary:
     'Truvaga is electroCore’s consumer brand, using the same cervical tVNS hardware platform that powers the FDA-cleared gammaCore prescription line — repackaged as an over-the-counter wellness device. The 350 model delivers 350 two-minute sessions before retirement and uses the same 5 kHz burst waveform. Strong manufacturing pedigree; the wellness-indication clinical evidence is thinner than gammaCore’s headache record but real.',
-  overallScore: 7.7,
   scores: [
     { criterionId: 'evidence', score: 7.5, note: 'Inherits gammaCore’s safety record; wellness-indication evidence is a small but real set of HRV and stress studies. Not FDA-cleared for any indication — sold as a general wellness device.' },
     { criterionId: 'mechanism', score: 8.5, note: 'Same cervical tVNS approach as gammaCore: handheld unit over the carotid sheath, 5 kHz burst waveform. Targets the cervical vagal trunk directly.' },
@@ -74,7 +73,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "Truvaga 350 vs gammaCore: which is better?", a: "Truvaga uses the same hardware platform as the FDA-cleared gammaCore but needs no prescription or insurance approval. gammaCore holds the FDA clearance; Truvaga is sold as a wellness device. Choose Truvaga for easy access to cervical tVNS." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default truvaga350

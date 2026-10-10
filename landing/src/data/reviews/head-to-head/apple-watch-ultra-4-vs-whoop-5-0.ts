@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ultra4VsWhoop5: HeadToHead = {
+const ultra4VsWhoop5: HeadToHeadInput = {
   slug: 'apple-watch-ultra-4-vs-whoop-5-0',
   productASlug: 'apple-watch-ultra-4',
   productBSlug: 'whoop-5-0',
@@ -9,7 +9,7 @@ const ultra4VsWhoop5: HeadToHead = {
     'Apple Watch Ultra 4 vs Whoop 5.0 for HRV and recovery — a 50-hour rugged smartwatch with Recovery HRV against a screenless subscription recovery band. Weighed axis by axis.',
   intro:
     'The Ultra 4 is the first Apple Watch with the battery to wear night after night: up to about 50 hours, the new Health Sensing System, Recovery HRV and an athlete readiness score. That puts it squarely on Whoop’s turf. The Whoop 5.0 answers with continuous overnight HRV, a 14+-day battery and recovery-first coaching — but only as a membership. So the question is: one rugged do-everything watch you own, or a dedicated recovery band you rent?',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'No overall winner — it splits by use case. For a dedicated, hands-off recovery signal with daily coaching and a two-week battery, the Whoop 5.0 leads. For an athlete who wants one rugged device with ECG, hypertension notifications, dive, satellite and no subscription — and now the battery to track HRV every night — the Ultra 4 wins.',
   bestForA:
@@ -52,7 +52,7 @@ Older Apple Watches reported sparse SDNN, which never lined up with Whoop’s RM
 If you train on a daily recovery score and want nothing on your wrist but the sensor, Whoop is the purer tool. If you would use the Ultra’s rugged, outdoor and smartwatch features anyway, its HRV is now usable as a personal trend without paying a membership. If you only want the most precise overnight HRV, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default ultra4VsWhoop5

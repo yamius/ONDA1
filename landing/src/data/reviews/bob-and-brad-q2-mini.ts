@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const bobAndBradQ2: ToolReview = {
+const bobAndBradQ2: ToolReviewInput = {
   slug: 'bob-and-brad-q2-mini',
   name: 'Bob and Brad Q2 Mini',
   brand: 'Bob and Brad',
@@ -12,7 +12,6 @@ const bobAndBradQ2: ToolReview = {
     'Best budget mini value — Bob and Brad PT-credibility branding at $99. Limited stall force; brand pedigree from "Famous Physical Therapists" YouTube channel is the differentiator.',
   summary:
     'Bob and Brad Q2 Mini is the viral budget mini — credible-PT-brand branding from the "Famous Physical Therapists" YouTube channel, 35 lbs stall force, 10 mm amplitude, 4 attachments, $99. Strong consumer brand recognition from YouTube physical-therapy content. The budget-tier reference, especially for users who trust the Bob and Brad PT-credibility framing.',
-  overallScore: 6.8,
   scores: [
     { criterionId: 'stall-force-amplitude', score: 6.5, note: '35 lbs stall force + 10 mm amplitude. Modest by premium standards but credible for daily-use protocols.' },
     { criterionId: 'build-attachments', score: 7.0, note: 'Brushless motor at budget price. 4 attachments included. 1-year warranty.' },
@@ -70,7 +69,7 @@ Choose Bob and Brad Q2 Mini for budget mini with brand credibility. For premium 
     { q: "Who is the Bob and Brad Q2 Mini best for?", a: "The Bob and Brad Q2 Mini is best for budget-conscious buyers who want a credible-brand mini massage gun at $99. It suits people who trust the Bob and Brad physical-therapist framing and accept reduced stall force for the price." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-07-20',
+  dateModified: '2026-10-10',
 }
 
 export default bobAndBradQ2

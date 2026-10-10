@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const eightSleepVsChilipadVsBedjet: HeadToHead = {
+const eightSleepVsChilipadVsBedjet: HeadToHeadInput = {
   slug: 'eight-sleep-pod-4-vs-chilipad-dock-pro-vs-bedjet-3',
   productASlug: 'eight-sleep-pod-4',
   productBSlug: 'chilipad-dock-pro',
@@ -10,7 +10,7 @@ const eightSleepVsChilipadVsBedjet: HeadToHead = {
     'Eight Sleep Pod 4 vs ChiliPad Dock Pro vs BedJet 3 — the three category-defining smart sleep-climate systems compared. Premium-with-tracking vs subscription-free water vs no-water air-flow.',
   intro:
     'The three systems that resolve the smart sleep-climate category in 2026. Eight Sleep Pod 4 — water-cooled with integrated HRV tracking and required subscription. ChiliPad Dock Pro — same water cooling without the subscription, no tracking. BedJet 3 — air-flow alternative at the lowest price with no water management.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Three different buying questions resolve cleanly. Eight Sleep Pod 4 if you want integrated tracking and accept the subscription. ChiliPad Dock Pro if you want the same water cooling without the subscription. BedJet 3 if you want the air-flow alternative at the lowest price.',
   bestForA:
@@ -68,7 +68,7 @@ If you want the cheapest credible entry into active sleep-climate, you live in a
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-06-15',
   datePublished: '2026-05-27',
-  dateModified: '2026-05-27',
+  dateModified: '2026-10-10',
 }
 
 export default eightSleepVsChilipadVsBedjet

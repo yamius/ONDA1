@@ -119,6 +119,17 @@ export function ReviewPage() {
           <span className="text-white/60">{tBestFor}</span>
         </p>
       </div>
+      {/* Rare editorial adjustment to the weighted mean (|value| ≤ 0.3,
+          reason required — scripts/check-review-scores.ts). Always shown. */}
+      {review.editorialAdjustment && (
+        <p className="-mt-6 mb-8 font-mono text-xs text-white/50">
+          {tReviews('ui.editorialAdjustment', {
+            value: `${review.editorialAdjustment.value > 0 ? '+' : ''}${review.editorialAdjustment.value.toFixed(1)}`,
+            reason: review.editorialAdjustment.reason,
+            defaultValue: 'Editorial adjustment {{value}}: {{reason}}',
+          })}
+        </p>
+      )}
 
       {review.category === 'cold-plunge' && <ColdSafetyBlock lang={lang} />}
       {review.category === MOUTH_TAPE_SAFETY_CATEGORY && <MouthTapeSafetyBlock lang={lang} variant={mouthTapeSafetyVariant([review.slug])} />}

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const othership: ToolReview = {
+const othership: ToolReviewInput = {
   slug: 'othership',
   name: 'Othership',
   brand: 'Othership',
@@ -12,7 +12,6 @@ const othership: ToolReview = {
     'Best premium breathwork experience — music-driven cinematic sessions, live community classes, polished UX. Highest sub price in the category, justified by production value.',
   summary:
     'Othership is the premium breathwork brand crossover from physical sauna/cold-plunge spaces in Toronto. The app delivers cinematic music-driven journeys (down-regulation, up-regulation, ceremony) with live community classes scheduled daily. Production value is the highest in the category — voiceovers, soundscapes and session arcs feel curated, not generated. $129.99/year is the highest sub price; the music + community thesis justifies it for the right user.',
-  overallScore: 8.2,
   scores: [
     { criterionId: 'session-library', score: 8.5, note: 'Curated library organised around down-regulate (calm/sleep), up-regulate (energy/focus), ceremony (longer 30–60 min journeys). Smaller than Breathwrk in raw count but higher production value per session.' },
     { criterionId: 'technique-coverage', score: 7.5, note: 'Full breathwork modalities — box, Wim Hof, holotropic, cyclic sighing — but leans into rhythmic-music breathwork. Less Buteyko / clinical-research focus than Breathwrk.' },
@@ -46,7 +45,7 @@ Othership is the premium production-value reference in breathwork apps — cinem
 
 ## What are the downsides of Othership?
 
-Price and evidence depth. At $129.99/year Othership is the most expensive breathwork sub — over 2.5x Breathwrk’s $49; the production justifies it for the right user but it's a premium ask. Evidence citations lean on lived experience and ceremony framing rather than peer-reviewed depth — Breathwrk's science-grounded copy is more rigorous.
+Price and evidence depth. At $129.99/year Othership is the most expensive breathwork sub — over 2.5x Breathwrk’s $49; the production justifies it for the right user but it's a premium ask. Evidence citations lean on lived experience and ceremony framing rather than peer-reviewed depth — Breathwrk's science-informed copy, backed by one published study on cyclic sighing, is more rigorous.
 
 ## Who should buy Othership?
 
@@ -72,7 +71,7 @@ Choose Othership if you want breathwork as cinematic experience with music and l
     { q: "Othership vs Breathwrk: which is better?", a: "Othership is better for immersive, music-driven sessions and daily live classes. Breathwrk is better for evidence citation, raw session count and Buteyko or clinical-research focus. Pick based on whether you want an experience or structured, evidence-led practice." },
   ],
   datePublished: '2026-06-29',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default othership

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const hoolestVsPulsetto: HeadToHead = {
+const hoolestVsPulsetto: HeadToHeadInput = {
   slug: 'hoolest-verelief-prime-vs-pulsetto',
   productASlug: 'hoolest-verelief-prime',
   productBSlug: 'pulsetto',
@@ -9,7 +9,7 @@ const hoolestVsPulsetto: HeadToHead = {
     'Hoolest VeRelief Prime vs Pulsetto — side-by-side ONDA comparison of two consumer cervical tVNS devices. Athletic-recovery handheld versus daily-use neck collar.',
   intro:
     'Hoolest VeRelief Prime and Pulsetto are the two consumer cervical tVNS devices users compare when athletic recovery is on the table. Both target the cervical vagal branches transcutaneously at similar consumer-friendly prices. The structural difference is intent: Hoolest is the athlete-built handheld for short, intense sessions; Pulsetto is the daily-use collar with four guided programmes.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Depends on use case. Hoolest VeRelief Prime for short intense pre-sleep or post-training sessions. Pulsetto for daily-use programme-driven cervical tVNS.',
   bestForA:
@@ -57,7 +57,7 @@ If athletic recovery or pre-sleep parasympathetic priming is the reason you are 
 If you want a daily-use device with structured guided programmes you can run while reading, working or winding down — Pulsetto is the right shape. The four-mode library covers more use cases than Hoolest’s intensity-only adjustment, and the collar form factor makes it easier to engage with daily.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-10',
 }
 
 export default hoolestVsPulsetto

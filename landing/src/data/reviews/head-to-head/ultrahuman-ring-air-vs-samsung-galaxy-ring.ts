@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ultrahumanVsSamsungRing: HeadToHead = {
+const ultrahumanVsSamsungRing: HeadToHeadInput = {
   slug: 'ultrahuman-ring-air-vs-samsung-galaxy-ring',
   productASlug: 'ultrahuman-ring-air',
   productBSlug: 'samsung-galaxy-ring',
@@ -9,7 +9,7 @@ const ultrahumanVsSamsungRing: HeadToHead = {
     'Ultrahuman Ring Air vs Samsung Galaxy Ring — two subscription-free Oura alternatives. ONDA compares ecosystem lock-in, reliability, sleep tracking, weight and price.',
   intro:
     'The Ultrahuman Ring Air and the Samsung Galaxy Ring are the two subscription-free smart rings people weigh against Oura. Both skip the monthly fee; the real fork is ecosystem and reliability. Ultrahuman is cross-platform and the lightest ring on the market, but dogged by battery-failure reports. Samsung is comfortable and competent — as long as you live in the Galaxy ecosystem.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Both are subscription-free Oura alternatives with the same overall standing. Samsung Galaxy Ring is the safer, better-supported pick if you own a Galaxy phone; Ultrahuman Ring Air is the lighter, cross-platform choice — if you accept its battery-reliability question.',
   bestForA:
@@ -54,11 +54,11 @@ You already carry a Samsung Galaxy phone and want a reliable, subscription-free 
 
 ## Also worth comparing
 
-For the accuracy leader (with a subscription), see the [Oura Ring 4](/reviews/oura-ring-4), or the full field in the [best HRV trackers](/reviews/hrv-trackers).`,
+For the best-supported ring line (with a subscription), see the [Oura Ring 4](/reviews/oura-ring-4), or the full field in the [best HRV trackers](/reviews/hrv-trackers).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-10',
 }
 
 export default ultrahumanVsSamsungRing

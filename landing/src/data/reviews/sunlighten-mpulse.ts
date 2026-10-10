@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const sunlightenMpulse: ToolReview = {
+const sunlightenMpulse: ToolReviewInput = {
   slug: 'sunlighten-mpulse',
   name: 'Sunlighten mPulse 3-in-1',
   brand: 'Sunlighten',
@@ -12,7 +12,6 @@ const sunlightenMpulse: ToolReview = {
     'The premium category-leading IR sauna — true 3-wavelength delivery, premium cedar build, independently-measured low EMF.',
   summary:
     'Sunlighten mPulse 3-in-1 is the IR cabin sauna that defined the premium tier. Unlike most "full-spectrum" labels, mPulse actually delivers near, mid and far IR through three independent emitter systems — and you can program which wavelengths run per session. Cedar build, ultra-low EMF (verified by third-party measurement), 7-year warranty.',
-  overallScore: 8.6,
   scores: [
     { criterionId: 'heat-source', score: 9.5, note: 'True 3-wavelength IR delivery — near (LED), mid and far (heating panels) run independently. Most-rigorous wavelength implementation in the consumer market.' },
     { criterionId: 'build', score: 9.0, note: 'Premium cedar cabin, 1–4-person configurations, 7-year warranty. Multi-decade reliability track record.' },
@@ -73,7 +72,7 @@ Background reading on the ideas behind heat exposure — mostly hypotheses, not 
     { q: "What are the downsides of the Sunlighten mPulse?", a: "The mPulse costs $5,000 to $10,000+, needs dedicated install space of at least 4×4 ft, and larger configurations require 220V electrical. Lead times can also stretch during peak demand, so plan the purchase ahead." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-10',
 }
 
 export default sunlightenMpulse

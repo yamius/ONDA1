@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const gammacoreVsNurosym: HeadToHead = {
+const gammacoreVsNurosym: HeadToHeadInput = {
   slug: 'gammacore-sapphire-cv-vs-nurosym',
   productASlug: 'gammacore-sapphire-cv',
   productBSlug: 'nurosym',
@@ -9,7 +9,7 @@ const gammacoreVsNurosym: HeadToHead = {
     'gammaCore Sapphire CV vs Nurosym — side-by-side ONDA comparison of FDA-cleared prescription cervical tVNS versus the consumer auricular tVNS with the deepest evidence base.',
   intro:
     'gammaCore Sapphire CV and Nurosym are the two non-invasive vagus stimulators serious users compare when evidence depth is the deciding criterion. They target different branches of the vagus nerve — gammaCore at the cervical trunk, Nurosym at the auricular branch — and sit at opposite ends of the regulatory spectrum. gammaCore is FDA-cleared and prescription-only for migraine and cluster headache; Nurosym is consumer-accessible with the deepest published auricular tVNS evidence.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Different roles. gammaCore for clinically-indicated headache patients with prescriber access. Nurosym for self-directed consumer tVNS users who want disclosed parameters and the deepest evidence base.',
   bestForA:
@@ -57,7 +57,7 @@ If you have a diagnosed migraine or cluster-headache condition and a clinician w
 If you want clinical-grade tVNS at home without going through a clinician — for HRV training, stress modulation, sleep-onset work, anxiety-related self-experimentation — Nurosym is the right shape. The Parasym hardware appears in dozens of peer-reviewed trials across exactly those indications; the parameters are disclosed; no prescription gate.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default gammacoreVsNurosym

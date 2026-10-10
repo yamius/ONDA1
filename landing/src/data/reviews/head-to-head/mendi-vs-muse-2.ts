@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const mendiVsMuse2: HeadToHead = {
+const mendiVsMuse2: HeadToHeadInput = {
   slug: 'mendi-vs-muse-2',
   productASlug: 'mendi',
   productBSlug: 'muse-2',
@@ -9,7 +9,7 @@ const mendiVsMuse2: HeadToHead = {
     'Mendi vs Muse 2 — side-by-side ONDA comparison of two entry-tier brain-training headbands. fNIRS prefrontal focus training versus four-channel EEG meditation.',
   intro:
     'Mendi and Muse 2 are the two entry-tier brain-training headbands users compare across modalities. They are not the same kind of device: Mendi measures prefrontal blood oxygenation via fNIRS and feeds it into a single focus game; Muse 2 measures four-channel EEG and runs a mature meditation app on top of it. Different signals, different jobs.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Different modalities. Mendi for the simplest focus-training experience via fNIRS. Muse 2 for the mature consumer EEG meditation reference.',
   bestForA:
@@ -57,7 +57,7 @@ If you want the simplest possible neurofeedback experience — a single forehead
 If meditation is the use case, Muse 2 is the right shape — four-channel EEG, decade-old ecosystem, mature meditation library. The content library alone is reason enough.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-04',
+  dateModified: '2026-10-10',
 }
 
 export default mendiVsMuse2

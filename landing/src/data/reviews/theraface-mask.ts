@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const therafaceMask: ToolReview = {
+const therafaceMask: ToolReviewInput = {
   slug: 'theraface-mask',
   name: 'TheraFace Mask',
   brand: 'Therabody',
@@ -12,7 +12,6 @@ const therafaceMask: ToolReview = {
     'Best Therabody-brand crossover into face masks — three-wavelength coverage, premium build, brand pedigree from massage gun category. Less clinical moat than dermatology references.',
   summary:
     'TheraFace Mask is Therabody\'s 2026 face mask — leveraging the Theragun brand pedigree into the red light category. Three-wavelength coverage (red 633 nm + blue 415 nm + amber 590 nm), flexible-shell hybrid build, integrated session app, premium pricing. Brand-funded research; less peer-reviewed dermatology moat than Omnilux or Dr. Dennis Gross.',
-  overallScore: 7.5,
   scores: [
     { criterionId: 'irradiance', score: 7.5, note: 'Documented irradiance in dermatology-acceptable range. Brand-funded validation; less independent verification than category references.' },
     { criterionId: 'wavelength-coverage', score: 8.5, note: 'Red 633 nm + blue 415 nm + amber 590 nm — three-wavelength coverage with mode-switching protocols.' },
@@ -70,7 +69,7 @@ Choose TheraFace Mask if you\'re already in the Therabody ecosystem and want coo
     { q: "What are the downsides of the TheraFace Mask?", a: "The TheraFace Mask has no peer-reviewed dermatology evidence moat, costs a premium $649, and has no neck flap on the standard model. Its brand premium relies on Theragun pedigree more than red-light credibility." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-10-10',
 }
 
 export default therafaceMask

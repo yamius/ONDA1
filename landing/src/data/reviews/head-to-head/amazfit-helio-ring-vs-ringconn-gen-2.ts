@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const helioVsRingconn: HeadToHead = {
+const helioVsRingconn: HeadToHeadInput = {
   slug: 'amazfit-helio-ring-vs-ringconn-gen-2',
   productASlug: 'amazfit-helio-ring',
   productBSlug: 'ringconn-gen-2',
@@ -9,7 +9,7 @@ const helioVsRingconn: HeadToHead = {
     'Amazfit Helio Ring ($199, 3 sizes, ~3-day battery) vs RingConn Gen 2 ($299, sizes 6–14, 10–12 days). Two no-subscription smart rings compared.',
   intro:
     'These are the two rings people cross-shop when they want smart-ring tracking without a subscription and without Oura money. The Amazfit Helio Ring is the cheaper one at $199; the RingConn Gen 2 costs $100 more ($299) but fixes the Helio’s two biggest weaknesses — battery and fit — with a 10–12-day charge and sizes 6 to 14.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Both are subscription-free rings. The Amazfit Helio Ring is cheaper ($199) and very light; the RingConn Gen 2 wins day to day with a 10–12-day battery (vs about 2.5–3 days), nine sizes and solid tracking for $299. For most people RingConn is the better buy; the Helio wins on price and comfort if one of its three sizes fits.',
   bestForA:
@@ -21,7 +21,7 @@ const helioVsRingconn: HeadToHead = {
     { name: 'Subscription', winner: 'tie', note: 'Tie — both are one-time purchases with no membership for core metrics.' },
     { name: 'Battery', winner: 'b', note: 'RingConn Gen 2: 10–12 days depending on size, plus a charging case that adds about 150 days. Amazfit Helio: about 2.5–3 days in real-world use. Not close.' },
     { name: 'Fit & sizing', winner: 'b', note: 'The Helio ships in only three sizes (8, 10, 12), so many fingers can’t get a proper fit. RingConn Gen 2 comes in sizes 6 to 14.' },
-    { name: 'Sleep & HRV tracking', winner: 'tie', note: 'Both deliver solid overnight sleep and HRV for the price; the everyday difference is small and neither has Oura’s body of published validation.' },
+    { name: 'Sleep & HRV tracking', winner: 'tie', note: 'Practically equal: both track overnight sleep and HRV for the price, and neither has an independent validation (as of October 2026); the everyday difference is small.' },
     { name: 'Comfort', winner: 'a', note: 'The Helio is exceptionally light (under 4 g) and thin (2.6 mm) — a slight comfort edge if it fits.' },
   ],
   faq: [
@@ -90,7 +90,7 @@ Against Oura: [Amazfit Helio vs Oura Ring 4](/reviews/vs/amazfit-helio-ring-vs-o
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-10',
 }
 
 export default helioVsRingconn

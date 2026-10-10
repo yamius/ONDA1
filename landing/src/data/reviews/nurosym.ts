@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const nurosym: ToolReview = {
+const nurosym: ToolReviewInput = {
   slug: 'nurosym',
   name: 'Nurosym',
   brand: 'Parasym Health',
@@ -12,7 +12,6 @@ const nurosym: ToolReview = {
     'The most clinically-validated consumer tVNS device — a research-grade ear clip with a price to match.',
   summary:
     'Nurosym is the rebranded consumer line of Parasym, the UK company whose hardware has been used in dozens of peer-reviewed studies on auricular vagus nerve stimulation. It clips to the tragus of the left ear and delivers a calibrated electrical pulse to the auricular branch of the vagus nerve. There is no app gimmickry — a single dial, documented parameters, and an evidence base no other consumer device matches.',
-  overallScore: 8.6,
   scores: [
     { criterionId: 'evidence', score: 9.5, note: 'The Parasym/Nurosym hardware appears in 40+ peer-reviewed tVNS trials, covering HRV, inflammation, depression and long-COVID — the deepest research base of any consumer device here.' },
     { criterionId: 'mechanism', score: 9.0, note: 'Transcutaneous auricular VNS at the tragus, the most-studied non-invasive target, with disclosed pulse parameters (25 Hz, 200–1000 µs) rather than a black-box waveform.' },
@@ -75,7 +74,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "Nurosym vs Pulsetto: which is better?", a: "Nurosym is better for evidence: it has the deepest peer-reviewed research base in consumer tVNS. Pulsetto is cheaper at $269, is neck-worn and offers four guided programmes, but its independent clinical evidence is thinner than Nurosym's." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default nurosym

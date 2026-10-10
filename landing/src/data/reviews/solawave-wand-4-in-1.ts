@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const solawave: ToolReview = {
+const solawave: ToolReviewInput = {
   slug: 'solawave-wand-4-in-1',
   name: 'Solawave Wand 4-in-1',
   brand: 'Solawave',
@@ -12,7 +12,6 @@ const solawave: ToolReview = {
     'Best budget red light entry — $169 wand stacking red LED with microcurrent, warmth and massage. Modest dose, narrow LED coverage; consumer convenience over clinical depth.',
   summary:
     'Solawave Wand 4-in-1 is the budget consumer entry — handheld wand stacking red LED with microcurrent, gentle warmth and vibration massage at $169. Low LED count and modest irradiance by design; the multi-modality stack and accessible price are the value proposition. Best for users PEMF-curious about red light without committing $300+ to a mask.',
-  overallScore: 6.5,
   scores: [
     { criterionId: 'irradiance', score: 5.5, note: 'Modest irradiance — designed for daily light-touch use rather than clinical-dose sessions.' },
     { criterionId: 'wavelength-coverage', score: 6.0, note: 'Red 660 nm only — single wavelength. No near-infrared depth or amber / blue variants.' },
@@ -70,7 +69,7 @@ Choose Solawave Wand for budget-conscious entry to red light therapy with multi-
     { q: "What are the downsides of the Solawave Wand 4-in-1?", a: "The Solawave Wand has modest irradiance compared with clinical references and uses only one wavelength, red 660 nm. Its narrow per-zone coverage requires active use, and its clinical-evidence base is light compared with clinical-grade devices." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-10-10',
 }
 
 export default solawave

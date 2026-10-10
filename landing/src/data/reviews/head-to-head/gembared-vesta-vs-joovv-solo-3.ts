@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const gembaredVsJoovv: HeadToHead = {
+const gembaredVsJoovv: HeadToHeadInput = {
   slug: 'gembared-vesta-vs-joovv-solo-3',
   productASlug: 'gembared-vesta',
   productBSlug: 'joovv-solo-3',
@@ -9,7 +9,7 @@ const gembaredVsJoovv: HeadToHead = {
     'GembaRed Vesta vs Joovv Solo 3.0 — side-by-side ONDA comparison of two premium red light panels. EMF-shielded six-wavelength engineering versus the modular reference.',
   intro:
     'GembaRed Vesta and Joovv Solo 3.0 are the two red light panels users compare when premium-tier engineering matters. GembaRed is the founder-engineered EMF-shielded specialist; Joovv is the modular reference. Different paths to the premium tier: GembaRed buys you cleanest-possible build, Joovv buys you brand maturity and modular scaling.',
-  winnerSlug: null,
+  jobDependentVerdict: true,
   verdict:
     'Different premium intents. GembaRed Vesta wins on EMF/flicker discipline and wavelength breadth. Joovv Solo 3.0 wins on modular full-body scaling and brand maturity.',
   bestForA:
@@ -57,7 +57,7 @@ If EMF discipline is a first-class criterion (you are sensitive to it or running
 If modular full-body scaling fits your setup plan and the larger brand’s warranty/support footprint matters, Joovv is the right shape.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-10',
 }
 
 export default gembaredVsJoovv
