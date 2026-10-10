@@ -1746,7 +1746,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-10T03:45:41+02:00"
+    "modified": "2026-10-10T05:08:33+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",
