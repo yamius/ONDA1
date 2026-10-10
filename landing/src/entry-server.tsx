@@ -36,6 +36,7 @@ import { FounderPage } from './pages/FounderPage'
 import { HrvBiofeedbackPage } from './pages/HrvBiofeedbackPage'
 import { ResonanceBreathingGuidePage } from './pages/ResonanceBreathingGuidePage'
 import { HrvVsCoherencePage } from './pages/HrvVsCoherencePage'
+import { ConnectPage } from './pages/ConnectPage'
 import { AppleWatchHrvBiofeedbackPage } from './pages/AppleWatchHrvBiofeedbackPage'
 import { OndaComparePage } from './pages/OndaComparePage'
 import { CompareSlugRouter } from './components/CompareSlugRouter'
@@ -254,6 +255,8 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/resonance-breathing"   element={<ResonanceBreathingGuidePage />} />
           <Route path="/ru/resonance-breathing" element={<ResonanceBreathingGuidePage />} />
           <Route path="/es/resonance-breathing" element={<ResonanceBreathingGuidePage />} />
+          <Route path="/connect"               element={<ConnectPage />} />
+          <Route path="/connect/:device"       element={<ConnectPage />} />
           <Route path="/hrv-vs-coherence"      element={<HrvVsCoherencePage />} />
           <Route path="/ru/hrv-vs-coherence"   element={<HrvVsCoherencePage />} />
           <Route path="/es/hrv-vs-coherence"   element={<HrvVsCoherencePage />} />
