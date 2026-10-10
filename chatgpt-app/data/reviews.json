@@ -2891,70 +2891,6 @@
       "dateModified": "2026-10-10"
     },
     {
-      "slug": "truvaga-350",
-      "name": "Truvaga 350",
-      "brand": "electroCore",
-      "category": "vagus-stim",
-      "productType": "Consumer cervical tVNS (handheld)",
-      "url": "https://onda-life.com/reviews/truvaga-350",
-      "categoryUrl": "https://onda-life.com/reviews/vagus-nerve-stimulators",
-      "priceUsd": 325,
-      "priceNote": "one-time; 350 preloaded sessions; rechargeable Truvaga Plus (unlimited use) $499",
-      "priceAsOf": "2026-10-01",
-      "score": 7.3,
-      "scores": [
-        {
-          "id": "evidence",
-          "score": 7.5,
-          "note": "Inherits gammaCore’s safety record; wellness-indication evidence is a small but real set of HRV and stress studies. Not FDA-cleared for any indication — sold as a general wellness device."
-        },
-        {
-          "id": "mechanism",
-          "score": 8.5,
-          "note": "Same cervical tVNS approach as gammaCore: handheld unit over the carotid sheath, 5 kHz burst waveform. Targets the cervical vagal trunk directly."
-        },
-        {
-          "id": "protocols",
-          "score": 6.5,
-          "note": "Two-minute fixed sessions; intensity user-adjustable. The companion app suggests usage patterns rather than distinct programmes."
-        },
-        {
-          "id": "comfort",
-          "score": 7,
-          "note": "Ergonomic handheld; some users report jaw twitches or neck soreness at higher amplitudes — same as gammaCore."
-        },
-        {
-          "id": "biofeedback",
-          "score": 6,
-          "note": "App logs sessions and supports simple mood/stress journaling. No on-device HRV measurement."
-        },
-        {
-          "id": "value",
-          "score": 8,
-          "note": "$325 one-time for 350 preloaded sessions (about six months of daily use) — now only about $56 more than Pulsetto; the rechargeable Truvaga Plus is $499. No prescription. Roughly one-fifth the long-term cost of gammaCore."
-        }
-      ],
-      "verdict": "gammaCore’s clinical hardware repackaged as a consumer wellness device — strong provenance, modest evidence in the wellness indication.",
-      "bestFor": "Best for consumers who want gammaCore’s cervical tVNS approach without the prescription gate.",
-      "pros": [
-        "Same hardware platform as the FDA-cleared gammaCore — proven safety",
-        "No prescription, no insurance approval needed",
-        "Cervical tVNS — targets the vagal trunk directly, not just the ear branch",
-        "Companion app logs sessions and tracks self-rated stress"
-      ],
-      "cons": [
-        "Not FDA-cleared in its consumer indication — sold as a wellness device",
-        "Session lifetime cap (350 uses) makes long-term cost less obvious",
-        "Fixed 2-minute sessions; intensity is the only variable",
-        "No on-device HRV biofeedback"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
       "slug": "vagustim",
       "name": "Vagustim",
       "brand": "Vagustim Health",
@@ -3147,6 +3083,70 @@
       "dateModified": "2026-10-10"
     },
     {
+      "slug": "truvaga-350",
+      "name": "Truvaga 350",
+      "brand": "electroCore",
+      "category": "vagus-stim",
+      "productType": "Consumer cervical tVNS (handheld)",
+      "url": "https://onda-life.com/reviews/truvaga-350",
+      "categoryUrl": "https://onda-life.com/reviews/vagus-nerve-stimulators",
+      "priceUsd": 325,
+      "priceNote": "one-time; 350 preloaded sessions; rechargeable Truvaga Plus (unlimited use) $499",
+      "priceAsOf": "2026-10-01",
+      "score": 6.9,
+      "scores": [
+        {
+          "id": "evidence",
+          "score": 7,
+          "note": "No published trials of the Truvaga device itself (two registered trials, no results yet, October 2026). The gammaCore studies are of the prescription device and are not counted here, though the shared platform gives it gammaCore’s safety record — 7.0, the base score for a device without trials of its own. Not FDA-cleared for any indication — sold as a general wellness device."
+        },
+        {
+          "id": "mechanism",
+          "score": 8.5,
+          "note": "Same cervical tVNS approach as gammaCore: handheld unit over the carotid sheath, 5 kHz burst waveform. Targets the cervical vagal trunk directly."
+        },
+        {
+          "id": "protocols",
+          "score": 6.5,
+          "note": "Two-minute fixed sessions; intensity user-adjustable. The companion app suggests usage patterns rather than distinct programmes."
+        },
+        {
+          "id": "comfort",
+          "score": 7,
+          "note": "Ergonomic handheld; some users report jaw twitches or neck soreness at higher amplitudes — same as gammaCore."
+        },
+        {
+          "id": "biofeedback",
+          "score": 6,
+          "note": "App logs sessions and supports simple mood/stress journaling. No on-device HRV measurement."
+        },
+        {
+          "id": "value",
+          "score": 8,
+          "note": "$325 one-time for 350 preloaded sessions (about six months of daily use) — now only about $56 more than Pulsetto; the rechargeable Truvaga Plus is $499. No prescription. Roughly one-fifth the long-term cost of gammaCore."
+        }
+      ],
+      "verdict": "gammaCore’s clinical hardware repackaged as a consumer wellness device — strong provenance, modest evidence in the wellness indication.",
+      "bestFor": "Best for consumers who want gammaCore’s cervical tVNS approach without the prescription gate.",
+      "pros": [
+        "Same hardware platform as the FDA-cleared gammaCore — proven safety",
+        "No prescription, no insurance approval needed",
+        "Cervical tVNS — targets the vagal trunk directly, not just the ear branch",
+        "Companion app logs sessions and tracks self-rated stress"
+      ],
+      "cons": [
+        "Not FDA-cleared in its consumer indication — sold as a wellness device",
+        "Session lifetime cap (350 uses) makes long-term cost less obvious",
+        "Fixed 2-minute sessions; intensity is the only variable",
+        "No on-device HRV biofeedback"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-10"
+    },
+    {
       "slug": "pulsetto",
       "name": "Pulsetto",
       "brand": "Pulsetto",
@@ -3221,7 +3221,7 @@
       "priceUsd": 279,
       "priceNote": "one-time; no subscription",
       "priceAsOf": "2026-05-21",
-      "score": 6.6,
+      "score": 6.3,
       "scores": [
         {
           "id": "evidence",
@@ -3290,7 +3290,7 @@
         {
           "id": "evidence",
           "score": 5,
-          "note": "One published RCT showing stress/HRV improvement; its company-funded studies do not count as evidence in ONDA scores."
+          "note": "One published RCT showing stress/HRV improvement; its company-funded studies do not count as evidence in ONDA scores. Its “Research has proven” line is about vagus-nerve activation in general; its sleep figures come from a company study report."
         },
         {
           "id": "mechanism",
@@ -3349,7 +3349,7 @@
       "priceUsd": 399,
       "priceNote": "one-time; no subscription",
       "priceAsOf": "2026-05-21",
-      "score": 6.2,
+      "score": 5.9,
       "scores": [
         {
           "id": "evidence",
@@ -3418,7 +3418,7 @@
         {
           "id": "sensor-accuracy",
           "score": 8.5,
-          "note": "Dexcom Stelo — the OTC sensor on the Dexcom G7 platform; 15-day wear, 30-minute warm-up, no prescription. Maker accuracy figures do not count as evidence in ONDA scores; in an independent head-to-head study (Eichenlaub et al. 2025) the G7 and FreeStyle Libre 3 were similarly accurate (MARD about 12% vs 11.6% against a lab reference), so both get the same score."
+          "note": "Dexcom Stelo — the OTC sensor on the Dexcom G7 platform; 15-day wear, 30-minute warm-up, no prescription. Maker accuracy figures do not count as evidence in ONDA scores; in an independent head-to-head study (Eichenlaub et al. 2025) the G7 and FreeStyle Libre 3 were similarly accurate (MARD about 12% vs 11.6% against a lab reference), so both get the same score. Levels presents its evidence honestly: its outcome figures are labelled “Based on retrospective analysis of Levels members” and “Not a clinical trial”."
         },
         {
           "id": "insights",
@@ -3546,7 +3546,7 @@
         {
           "id": "sensor-accuracy",
           "score": 8.5,
-          "note": "Abbott sensors throughout: FreeStyle Libre 3 outside the US, Abbott Lingo (14-day wear, Libre-based) in the US via M2 Live. In an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate."
+          "note": "Abbott sensors throughout: FreeStyle Libre 3 outside the US, Abbott Lingo (14-day wear, Libre-based) in the US via M2 Live. In an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate. Ultrahuman links its own published studies from its homepage instead of citing only general research."
         },
         {
           "id": "insights",
@@ -3674,7 +3674,7 @@
         {
           "id": "sensor-accuracy",
           "score": 7.5,
-          "note": "Abbott Libre (2-week wear), maker-reported MARD ~9–11% (maker figures do not count as evidence in ONDA scores). Calibration-free; accuracy in the second week is the weakest point. Uses an earlier Libre version; no independent check of this exact combination."
+          "note": "Abbott Libre (2-week wear), maker-reported MARD ~9–11% (maker figures do not count as evidence in ONDA scores). Calibration-free; accuracy in the second week is the weakest point. Uses an earlier Libre version; no independent check of this exact combination. ZOE tested its programme in a randomised controlled trial and calls it exactly that on its homepage."
         },
         {
           "id": "insights",
@@ -3738,7 +3738,7 @@
         {
           "id": "sensor-accuracy",
           "score": 8.5,
-          "note": "Dexcom G7 hardware, 15-day wear in the Stelo variant, 30-minute warm-up. In an independent head-to-head study (Eichenlaub et al. 2025) the G7 and FreeStyle Libre 3 were similarly accurate; maker accuracy figures do not count as evidence in ONDA scores."
+          "note": "Dexcom G7 hardware, 15-day wear in the Stelo variant, 30-minute warm-up. In an independent head-to-head study (Eichenlaub et al. 2025) the G7 and FreeStyle Libre 3 were similarly accurate; maker accuracy figures do not count as evidence in ONDA scores. Dexcom presents Stelo’s evidence honestly: the site lists its references and discloses that 77.9% of sensors lasted the full 15 days."
         },
         {
           "id": "insights",
@@ -3802,7 +3802,7 @@
         {
           "id": "sensor-accuracy",
           "score": 8.5,
-          "note": "Dexcom G7 — 10-day wear, 30-minute warm-up, the same hardware as Levels and Stelo. In an independent head-to-head study (Eichenlaub et al. 2025) the G7 and FreeStyle Libre 3 were similarly accurate."
+          "note": "Dexcom G7 — 10-day wear, 30-minute warm-up, the same hardware as Levels and Stelo. In an independent head-to-head study (Eichenlaub et al. 2025) the G7 and FreeStyle Libre 3 were similarly accurate. The “FDA-Cleared” badge on its site refers to the Signos glucose monitoring system (app plus sensor) for glucose monitoring, not to weight loss."
         },
         {
           "id": "insights",
@@ -3866,7 +3866,7 @@
         {
           "id": "sensor-accuracy",
           "score": 8.5,
-          "note": "Abbott Libre 3-based sensor — 14-day wear, calibration-free, 60-minute warm-up. In an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate."
+          "note": "Abbott Libre 3-based sensor — 14-day wear, calibration-free, 60-minute warm-up. In an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate. Lingo presents itself honestly: the site says it is “NOT intended for diagnosis of diseases, including diabetes” and makes no clinical overclaims."
         },
         {
           "id": "insights",
@@ -4769,7 +4769,7 @@
         {
           "id": "evidence",
           "score": 7.5,
-          "note": "PlatinumLED references real photobiomodulation literature, and the marketing is restrained relative to category norms."
+          "note": "PlatinumLED references real photobiomodulation literature, and the marketing is restrained relative to category norms. “FDA Class II Registered” on its pages means registration/listing, not clearance."
         },
         {
           "id": "value",
@@ -4832,7 +4832,7 @@
         {
           "id": "evidence",
           "score": 7.5,
-          "note": "The current 1500X is FDA Class II registered (per Mito Red, Oct 2026), like Joovv — registration/listing, not clearance or approval. References the same underlying photobiomodulation literature; marketing is reasonably restrained compared to category norms."
+          "note": "The current 1500X is FDA Class II registered (per Mito Red, Oct 2026), like Joovv — registration/listing, not clearance or approval. References the same underlying photobiomodulation literature; marketing is reasonably restrained compared to category norms. Mito Red itself explains on its site that FDA registration and listing are not the same as 510(k) clearance."
         },
         {
           "id": "value",
@@ -4959,7 +4959,7 @@
         {
           "id": "evidence",
           "score": 8,
-          "note": "Registered with the FDA as a Class II device, per Joovv (registration/listing, not clearance or approval; listed indications: topical heating for temporary relief of minor muscle and joint pain). Joovv collaborates with published photobiomodulation researchers and cites real peer-reviewed studies on the underlying mechanism."
+          "note": "Registered with the FDA as a Class II device, per Joovv (registration/listing, not clearance or approval; listed indications: topical heating for temporary relief of minor muscle and joint pain). Joovv collaborates with published photobiomodulation researchers and cites real peer-reviewed studies on the underlying mechanism. Its “proven to heal” line is about red and near-infrared light in general, not about the Solo 3.0."
         },
         {
           "id": "value",
@@ -5187,7 +5187,7 @@
       "priceUsd": 359,
       "priceNote": "one-time on hoogahealth.com; door mount and hanging kit included, mobile stand sold separately; 3-year warranty, 60-day returns",
       "priceAsOf": "2026-10-01",
-      "score": 7.8,
+      "score": 7.5,
       "scores": [
         {
           "id": "irradiance",
@@ -5212,7 +5212,7 @@
         {
           "id": "evidence",
           "score": 6.5,
-          "note": "Marketing is conservative; Hooga does not overclaim — unusual at the budget tier."
+          "note": "Hooga’s FAQ states its status accurately (the panels “are not FDA Class II or 510(k)-cleared finished devices”), more precisely than most of the category; its sales page does not (see the score adjustment)."
         },
         {
           "id": "value",
@@ -5275,7 +5275,7 @@
         {
           "id": "evidence",
           "score": 7,
-          "note": "Bon Charge lists the Max as FDA Class II registered (registration/listing, not clearance or approval). Positioned as a wellness device; references the underlying photobiomodulation literature."
+          "note": "Bon Charge lists the Max as FDA Class II registered (registration/listing, not clearance or approval). Positioned as a wellness device; references the underlying photobiomodulation literature. Bon Charge states on the product page that the FDA “has not evaluated the statements” about its red light devices."
         },
         {
           "id": "value",
@@ -5339,7 +5339,7 @@
         {
           "id": "evidence",
           "score": 8,
-          "note": "Listed in the FDA device database (GUDID) as a Class II over-the-counter LED-plus-laser device for knee pain relief. Low-level laser therapy for knee osteoarthritis has meta-analytic support; no independent trial of the Move+ itself."
+          "note": "Listed in the FDA device database (GUDID) as a Class II over-the-counter LED-plus-laser device for knee pain relief. Low-level laser therapy for knee osteoarthritis has meta-analytic support; no independent trial of the Move+ itself. “Backed by 9,600+ research papers” on its product page refers to red-light research in general, not to trials of the Move+."
         },
         {
           "id": "value",
@@ -6170,7 +6170,7 @@
         {
           "id": "evidence",
           "score": 8,
-          "note": "Traditional Finnish sauna has the deepest sauna-research literature — observational Finnish cohort studies on cardiovascular and all-cause mortality."
+          "note": "Traditional Finnish sauna has the deepest sauna-research literature — observational Finnish cohort studies on cardiovascular and all-cause mortality. The maker’s “scientifically proven health benefits” line is about sauna bathing in general, and that evidence is observational."
         },
         {
           "id": "value",
@@ -6234,7 +6234,7 @@
         {
           "id": "evidence",
           "score": 7,
-          "note": "Founder-led with serious biohacker community presence. Honest about near-IR-vs-full-spectrum distinction; no overclaiming."
+          "note": "Founder-led with serious biohacker community presence. Honest about the near-IR-vs-full-spectrum distinction; its EMF page says “research shows” everyday EMFs harm cells without citing studies — a claim about EMFs in general, not about the sauna."
         },
         {
           "id": "value",
@@ -6255,70 +6255,6 @@
         "Tent-style configurations require assembly",
         "Premium pricing — $4K+ for the base setup",
         "Smaller user base than mainstream IR brands (Sunlighten, Clearlight)"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
-      "slug": "clearlight-sanctuary-2",
-      "name": "Clearlight Sanctuary 2",
-      "brand": "Clearlight (Jacuzzi)",
-      "category": "sauna",
-      "productType": "Premium full-spectrum IR cabin sauna (2-person)",
-      "url": "https://onda-life.com/reviews/clearlight-sanctuary-2",
-      "categoryUrl": "https://onda-life.com/reviews/infrared-sauna",
-      "priceUsd": 7299,
-      "priceNote": "Sanctuary 2 basswood sale price ($7,799 list); mahogany $7,699 ($8,199 list)",
-      "priceAsOf": "2026-10-01",
-      "score": 7.7,
-      "scores": [
-        {
-          "id": "heat-source",
-          "score": 8.5,
-          "note": "Carbon-ceramic far-IR heaters on side/back walls plus two 500 W full-spectrum heaters (near + mid + far) on the front glass. Credibly broad-spectrum, but less granular than Sunlighten mPulse’s separately programmable wavelengths."
-        },
-        {
-          "id": "build",
-          "score": 8.5,
-          "note": "Basswood or mahogany, double-wall tongue-and-groove construction, 8 mm tempered glass. Complete Limited Lifetime Warranty. 450 lb cabin."
-        },
-        {
-          "id": "emf",
-          "score": 8.5,
-          "note": "Clearlight markets the cabin as low EMF and low ELF. Treat specific EMF figures as the maker’s claims; ask for the current test report before buying if EMF is a deciding factor."
-        },
-        {
-          "id": "form-factor",
-          "score": 7.5,
-          "note": "2-person cabin: 52 × 48 × 77 in outside (47 × 44 × 74 in inside, 47 × 22 in bench). Runs on 120 V but needs a 20 A outlet (NEMA 5-20 plug, 2,250 W)."
-        },
-        {
-          "id": "evidence",
-          "score": 7,
-          "note": "Established brand with restrained claims relative to category norms; the strongest sauna evidence comes from traditional Finnish sauna cohorts, not infrared-specific trials."
-        },
-        {
-          "id": "value",
-          "score": 6,
-          "note": "$7,299 basswood / $7,699 mahogany (official store, Oct 2026, $500 below list) — now above Sunlighten mPulse (~$6,000) and Sun Home Equinox (~$6,000 2-person). The lifetime warranty offsets some, not all, of the premium."
-        }
-      ],
-      "verdict": "The closest premium competitor to Sunlighten — full-spectrum IR, low-EMF/ELF design and a lifetime warranty, in a compact 2-person cabin that runs on a 120 V/20 A circuit.",
-      "bestFor": "Best for buyers wanting Sunlighten-tier full-spectrum IR with a lifetime warranty and Jacuzzi brand backing in a compact 2-person cabin.",
-      "pros": [
-        "Full-spectrum IR with a Complete Limited Lifetime Warranty",
-        "Choice of basswood or mahogany cabin construction",
-        "Marketed as low EMF / low ELF",
-        "Runs on a 120 V supply (20 A outlet)"
-      ],
-      "cons": [
-        "Less granular wavelength control than Sunlighten mPulse (no separate near/mid/far programming)",
-        "Premium tier — $7,299+ for 2-person",
-        "Needs a 20 A circuit and roughly 4.5 × 4 ft of floor space",
-        "Lead times during peak demand"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": null,
@@ -6362,7 +6298,7 @@
         {
           "id": "evidence",
           "score": 7,
-          "note": "No peer-reviewed trial of the Equinox found — 7.0, the base score for a product without trials of its own. Honest marketing about being newer to market."
+          "note": "No peer-reviewed trial of the Equinox found — 7.0, the base score for a product without trials of its own. Honest marketing about being newer to market. Sun Home presents its evidence honestly: its research page says its products “have not been used in published clinical-outcome trials”."
         },
         {
           "id": "value",
@@ -6447,6 +6383,70 @@
         "Wellness-positioned rather than clinical-grade",
         "Blanket-research evidence base thinner than cabin IR",
         "1-year warranty (vs Sunlighten 7-year, Clearlight lifetime)"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-10"
+    },
+    {
+      "slug": "clearlight-sanctuary-2",
+      "name": "Clearlight Sanctuary 2",
+      "brand": "Clearlight (Jacuzzi)",
+      "category": "sauna",
+      "productType": "Premium full-spectrum IR cabin sauna (2-person)",
+      "url": "https://onda-life.com/reviews/clearlight-sanctuary-2",
+      "categoryUrl": "https://onda-life.com/reviews/infrared-sauna",
+      "priceUsd": 7299,
+      "priceNote": "Sanctuary 2 basswood sale price ($7,799 list); mahogany $7,699 ($8,199 list)",
+      "priceAsOf": "2026-10-01",
+      "score": 7.4,
+      "scores": [
+        {
+          "id": "heat-source",
+          "score": 8.5,
+          "note": "Carbon-ceramic far-IR heaters on side/back walls plus two 500 W full-spectrum heaters (near + mid + far) on the front glass. Credibly broad-spectrum, but less granular than Sunlighten mPulse’s separately programmable wavelengths."
+        },
+        {
+          "id": "build",
+          "score": 8.5,
+          "note": "Basswood or mahogany, double-wall tongue-and-groove construction, 8 mm tempered glass. Complete Limited Lifetime Warranty. 450 lb cabin."
+        },
+        {
+          "id": "emf",
+          "score": 8.5,
+          "note": "Clearlight markets the cabin as low EMF and low ELF. Treat specific EMF figures as the maker’s claims; ask for the current test report before buying if EMF is a deciding factor."
+        },
+        {
+          "id": "form-factor",
+          "score": 7.5,
+          "note": "2-person cabin: 52 × 48 × 77 in outside (47 × 44 × 74 in inside, 47 × 22 in bench). Runs on 120 V but needs a 20 A outlet (NEMA 5-20 plug, 2,250 W)."
+        },
+        {
+          "id": "evidence",
+          "score": 7,
+          "note": "Established brand; the strongest sauna evidence comes from traditional Finnish sauna cohorts, not infrared-specific trials."
+        },
+        {
+          "id": "value",
+          "score": 6,
+          "note": "$7,299 basswood / $7,699 mahogany (official store, Oct 2026, $500 below list) — now above Sunlighten mPulse (~$6,000) and Sun Home Equinox (~$6,000 2-person). The lifetime warranty offsets some, not all, of the premium."
+        }
+      ],
+      "verdict": "The closest premium competitor to Sunlighten — full-spectrum IR, low-EMF/ELF design and a lifetime warranty, in a compact 2-person cabin that runs on a 120 V/20 A circuit.",
+      "bestFor": "Best for buyers wanting Sunlighten-tier full-spectrum IR with a lifetime warranty and Jacuzzi brand backing in a compact 2-person cabin.",
+      "pros": [
+        "Full-spectrum IR with a Complete Limited Lifetime Warranty",
+        "Choice of basswood or mahogany cabin construction",
+        "Marketed as low EMF / low ELF",
+        "Runs on a 120 V supply (20 A outlet)"
+      ],
+      "cons": [
+        "Less granular wavelength control than Sunlighten mPulse (no separate near/mid/far programming)",
+        "Premium tier — $7,299+ for 2-person",
+        "Needs a 20 A circuit and roughly 4.5 × 4 ft of floor space",
+        "Lead times during peak demand"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": null,
@@ -7435,7 +7435,7 @@
         {
           "id": "waveform-evidence",
           "score": 7,
-          "note": "Uses common PEMF frequencies from the general PEMF literature, including a 7.83 Hz “Schumann” setting that earns no credit. No trials of the device itself — 7.0, the score we give PEMF devices without device-specific trials."
+          "note": "Uses common PEMF frequencies from the general PEMF literature, including a 7.83 Hz “Schumann” setting that earns no credit. No trials of the device itself — 7.0, the score we give PEMF devices without device-specific trials. “FDA registered as a Class II medical device” means registration/listing, not clearance; its “proven research” line is about PEMF in general."
         },
         {
           "id": "build",
@@ -7499,7 +7499,7 @@
         {
           "id": "waveform-evidence",
           "score": 7,
-          "note": "Uses the high-intensity PEMF range studied in general PEMF research. We found no independent trials of this system itself — 7.0, the score for PEMF devices without device-specific trials."
+          "note": "Uses the high-intensity PEMF range studied in general PEMF research. We found no independent trials of this system itself — 7.0, the score for PEMF devices without device-specific trials. Pulse PEMF says plainly in its FAQ that its products “are wellness devices, not medical devices” and that it “has not sought any evaluations or clearances from the FDA”."
         },
         {
           "id": "build",
@@ -7564,7 +7564,7 @@
         {
           "id": "waveform-evidence",
           "score": 7,
-          "note": "Published protocol parameters. Bone-healing protocols are modelled on bone-stimulation research, but borrowed medical-device status earns no credit: the device itself has no FDA clearance for bone healing (none found in the 510(k) database) and we found no trials of it for osteoporosis — 7.0, the score for PEMF devices without device-specific trials."
+          "note": "Published protocol parameters. Bone-healing protocols are modelled on bone-stimulation research, but borrowed medical-device status earns no credit: the device itself has no FDA clearance for bone healing (none found in the 510(k) database) and we found no trials of it for osteoporosis — 7.0, the score for PEMF devices without device-specific trials. “Registered with the FDA as manufacturer” is a company registration, not a device clearance."
         },
         {
           "id": "build",
@@ -7629,7 +7629,7 @@
         {
           "id": "waveform-evidence",
           "score": 7,
-          "note": "Sawtooth waveform with Schumann and bone-healing frequency presets; neither earns credit. Relies on general PEMF research; we found no trials of the device itself — 7.0, the score for PEMF devices without device-specific trials."
+          "note": "Sawtooth waveform with Schumann and bone-healing frequency presets; neither earns credit. Relies on general PEMF research; we found no trials of the device itself — 7.0, the score for PEMF devices without device-specific trials. The maker calls the device “certified medical”; which certification this means could not be established (10 October 2026)."
         },
         {
           "id": "build",
@@ -7693,7 +7693,7 @@
         {
           "id": "waveform-evidence",
           "score": 6.5,
-          "note": "Bemer cites the longest study list of any consumer PEMF signal, but most studies are small, uncontrolled or manufacturer-linked, and studies run or funded by the maker do not count as evidence here. Independent controlled trials found no difference from an inactive device in fibromyalgia (Multanen 2018) or from a control leg in skin blood flow (Biermann 2020) — that is why this scores below the 7.0 we give devices with no trials of their own."
+          "note": "Bemer cites the longest study list of any consumer PEMF signal, but most studies are small, uncontrolled or manufacturer-linked, and studies run or funded by the maker do not count as evidence here. Independent controlled trials found no difference from an inactive device in fibromyalgia (Multanen 2018) or from a control leg in skin blood flow (Biermann 2020) — that is why this scores below the 7.0 we give devices with no trials of their own. BEMER presents its regulatory status honestly: it calls the device “FDA Class II cleared” for stimulating healthy muscles, which matches its 510(k) (K210174)."
         },
         {
           "id": "build",
@@ -7822,7 +7822,7 @@
         {
           "id": "waveform-evidence",
           "score": 7,
-          "note": "EarthPulse markets Schumann (7.83 Hz) and delta settings for sleep; Schumann settings earn no credit. We found no controlled human trials showing better sleep from these settings, and none of the device itself — 7.0, the score for PEMF devices without device-specific trials."
+          "note": "EarthPulse markets Schumann (7.83 Hz) and delta settings for sleep; Schumann settings earn no credit. We found no controlled human trials showing better sleep from these settings, and none of the device itself — 7.0, the score for PEMF devices without device-specific trials. Its “5 decades of peer-reviewed” research is general PEMF/TMS literature, and its claim that only clinical machines “can out-perform” it is not backed by a study."
         },
         {
           "id": "build",
@@ -7867,6 +7867,70 @@
       "dateModified": "2026-10-10"
     },
     {
+      "slug": "magnawave-mini",
+      "name": "MagnaWave Mini",
+      "brand": "MagnaWave",
+      "category": "pemf",
+      "productType": "Compact high-intensity PEMF coil device (current entry model: Semi 10)",
+      "url": "https://onda-life.com/reviews/magnawave-mini",
+      "categoryUrl": "https://onda-life.com/reviews/pemf-devices",
+      "priceUsd": 8360,
+      "priceNote": "no “Mini” currently listed; compact entry model Semi 10 from $8,360 (starter) to $13,339 (elite bundle); 30-day trial $700, rental from $900/month",
+      "priceAsOf": "2026-10-01",
+      "score": 7.2,
+      "scores": [
+        {
+          "id": "field-strength",
+          "score": 8.5,
+          "note": "High-intensity loop-coil output designed for clinical and equine protocols — far above consumer mats. The Semi 10 sits at power level 5 of 10 in MagnaWave’s own range."
+        },
+        {
+          "id": "waveform-evidence",
+          "score": 7,
+          "note": "PEMF has modest evidence for musculoskeletal pain (systematic reviews). MagnaWave’s own human outcome data is not published; much of its use is equine. Its “clinical research” and “FDA approval” lines refer to PEMF in general (such as bone-growth stimulators), not to MagnaWave machines."
+        },
+        {
+          "id": "build",
+          "score": 8,
+          "note": "Rugged practitioner build in a carry case; 10-year warranty on the Semi 10. Multi-decade MagnaWave pedigree in equine and athletic PEMF."
+        },
+        {
+          "id": "programmability",
+          "score": 7.5,
+          "note": "Intensity 1–10 in half steps, 1–60 minute timer, 0.7–20 Hz pulse range and a Schumann setting. Clinician-style controls, not app-driven."
+        },
+        {
+          "id": "form-factor",
+          "score": 7,
+          "note": "9.4 lb portable unit with loop/paddle applicators. Targeted spot treatment, not whole-body. Travels, but is not pocket-sized."
+        },
+        {
+          "id": "value",
+          "score": 5.5,
+          "note": "From $8,360 (Semi 10 starter bundle) — almost double the $4,200 we previously listed for the Mini, and close to Pulse Centers XL Pro money. Rental and a $700 30-day trial lower the entry risk."
+        }
+      ],
+      "verdict": "High-intensity loop-coil PEMF with real equine and athletic heritage — but MagnaWave no longer lists a “Mini”, and its smallest current machine, the Semi 10, starts at $8,360. For most people, that is too much money for evidence this thin.",
+      "bestFor": "Best for equine and animal-care practitioners, and for athletes or clinics who want portable high-intensity coil PEMF and can justify practitioner pricing.",
+      "pros": [
+        "High-intensity coil output in a carry-case unit",
+        "Multi-decade equine and athletic PEMF pedigree",
+        "10-year warranty; 30-day trial and rental options",
+        "FEI-compliant for equine competition use"
+      ],
+      "cons": [
+        "No “Mini” in the current lineup — the smallest machine starts at $8,360",
+        "Marketed mainly for animals; little published human outcome data",
+        "Coil-only — no whole-body mat coverage",
+        "Clinician-style controls, no consumer app"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-10"
+    },
+    {
       "slug": "resona-health-vibe",
       "name": "Resona Health VIBE",
       "brand": "Resona Health",
@@ -7877,7 +7941,7 @@
       "priceUsd": 299,
       "priceNote": "standalone wearable, no app or subscription; 1-year warranty, 30-day money-back",
       "priceAsOf": "2026-10-04",
-      "score": 7.3,
+      "score": 7,
       "scores": [
         {
           "id": "field-strength",
@@ -7925,70 +7989,6 @@
         "New player without multi-decade brand pedigree",
         "Targeted-only use case — not a passive lie-on-mat session",
         "No app — no scheduling, tracking or custom parameters"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
-      "slug": "magnawave-mini",
-      "name": "MagnaWave Mini",
-      "brand": "MagnaWave",
-      "category": "pemf",
-      "productType": "Compact high-intensity PEMF coil device (current entry model: Semi 10)",
-      "url": "https://onda-life.com/reviews/magnawave-mini",
-      "categoryUrl": "https://onda-life.com/reviews/pemf-devices",
-      "priceUsd": 8360,
-      "priceNote": "no “Mini” currently listed; compact entry model Semi 10 from $8,360 (starter) to $13,339 (elite bundle); 30-day trial $700, rental from $900/month",
-      "priceAsOf": "2026-10-01",
-      "score": 7.2,
-      "scores": [
-        {
-          "id": "field-strength",
-          "score": 8.5,
-          "note": "High-intensity loop-coil output designed for clinical and equine protocols — far above consumer mats. The Semi 10 sits at power level 5 of 10 in MagnaWave’s own range."
-        },
-        {
-          "id": "waveform-evidence",
-          "score": 7,
-          "note": "PEMF has modest evidence for musculoskeletal pain (systematic reviews). MagnaWave’s own human outcome data is not published; much of its use is equine."
-        },
-        {
-          "id": "build",
-          "score": 8,
-          "note": "Rugged practitioner build in a carry case; 10-year warranty on the Semi 10. Multi-decade MagnaWave pedigree in equine and athletic PEMF."
-        },
-        {
-          "id": "programmability",
-          "score": 7.5,
-          "note": "Intensity 1–10 in half steps, 1–60 minute timer, 0.7–20 Hz pulse range and a Schumann setting. Clinician-style controls, not app-driven."
-        },
-        {
-          "id": "form-factor",
-          "score": 7,
-          "note": "9.4 lb portable unit with loop/paddle applicators. Targeted spot treatment, not whole-body. Travels, but is not pocket-sized."
-        },
-        {
-          "id": "value",
-          "score": 5.5,
-          "note": "From $8,360 (Semi 10 starter bundle) — almost double the $4,200 we previously listed for the Mini, and close to Pulse Centers XL Pro money. Rental and a $700 30-day trial lower the entry risk."
-        }
-      ],
-      "verdict": "High-intensity loop-coil PEMF with real equine and athletic heritage — but MagnaWave no longer lists a “Mini”, and its smallest current machine, the Semi 10, starts at $8,360. For most people, that is too much money for evidence this thin.",
-      "bestFor": "Best for equine and animal-care practitioners, and for athletes or clinics who want portable high-intensity coil PEMF and can justify practitioner pricing.",
-      "pros": [
-        "High-intensity coil output in a carry-case unit",
-        "Multi-decade equine and athletic PEMF pedigree",
-        "10-year warranty; 30-day trial and rental options",
-        "FEI-compliant for equine competition use"
-      ],
-      "cons": [
-        "No “Mini” in the current lineup — the smallest machine starts at $8,360",
-        "Marketed mainly for animals; little published human outcome data",
-        "Coil-only — no whole-body mat coverage",
-        "Clinician-style controls, no consumer app"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": null,
@@ -8146,7 +8146,7 @@
         {
           "id": "waveform-evidence",
           "score": 1.5,
-          "note": "The core is Rife-frequency and “scalar energy” theory. There is no reliable evidence that Rife devices treat any condition (Cancer Research UK), and scalar energy is not recognised by mainstream physics. Claims are anecdotal, with no peer-reviewed support for the device."
+          "note": "The core is Rife-frequency and “scalar energy” theory. There is no reliable evidence that Rife devices treat any condition (Cancer Research UK), and scalar energy is not recognised by mainstream physics. Claims are anecdotal, with no peer-reviewed support for the device. The maker’s own page says the products have not been evaluated by the FDA."
         },
         {
           "id": "build",
@@ -8857,7 +8857,7 @@
         {
           "id": "clinical-evidence",
           "score": 6.5,
-          "note": "FDA registered (a listing, scored as neutral). Its studies are brand-funded, and studies run or funded by the maker do not count as evidence in ONDA scores — no independent peer-reviewed studies of this mask found."
+          "note": "FDA registered (a listing, scored as neutral). Its studies are brand-funded, and studies run or funded by the maker do not count as evidence in ONDA scores — no independent peer-reviewed studies of this mask found. Its “clinically proven” wording refers to the LED wavelengths in general; the mask’s own studies (SGS 2024, Eurofins 2025) are contract-lab studies, not peer-reviewed."
         },
         {
           "id": "comfort-fit",
@@ -9020,70 +9020,6 @@
       "dateModified": "2026-10-10"
     },
     {
-      "slug": "theraface-mask",
-      "name": "TheraFace Mask",
-      "brand": "Therabody",
-      "category": "red-light-mask",
-      "productType": "Premium consumer-brand red + blue + amber LED face mask",
-      "url": "https://onda-life.com/reviews/theraface-mask",
-      "categoryUrl": "https://onda-life.com/reviews/red-light-face-masks",
-      "priceUsd": 649,
-      "priceNote": "TheraFace Mask standalone",
-      "priceAsOf": "2026-05-28",
-      "score": 7.4,
-      "scores": [
-        {
-          "id": "irradiance",
-          "score": 7.5,
-          "note": "Documented irradiance in dermatology-acceptable range. Brand-funded validation; less independent verification than category references."
-        },
-        {
-          "id": "wavelength-coverage",
-          "score": 8.5,
-          "note": "Red 633 nm + blue 415 nm + amber 590 nm — three-wavelength coverage with mode-switching protocols."
-        },
-        {
-          "id": "led-count-coverage",
-          "score": 7.5,
-          "note": "Solid LED count and even distribution. No neck flap on the standard model."
-        },
-        {
-          "id": "clinical-evidence",
-          "score": 6.5,
-          "note": "FDA registered (a listing, not clearance or approval), brand-funded research. Therabody pedigree from massage guns is real but doesn't carry into red-light clinical moat."
-        },
-        {
-          "id": "comfort-fit",
-          "score": 8,
-          "note": "Hybrid flexible-shell build — between hard plastic and full silicone. App-controlled session timing is the UX differentiator."
-        },
-        {
-          "id": "value",
-          "score": 6.5,
-          "note": "$649 — premium pricing reflecting Therabody brand premium. Justified for users in the Therabody ecosystem; expensive for users just buying a red light mask."
-        }
-      ],
-      "verdict": "Best Therabody-brand crossover into face masks — three-wavelength coverage, premium build, brand pedigree from massage gun category. Research is brand-funded.",
-      "bestFor": "Best for users already in the Therabody ecosystem who want a coordinated face-mask + TheraFace Pro stack with three-wavelength coverage and app control.",
-      "pros": [
-        "Therabody brand pedigree and ecosystem (pairs with TheraFace Pro)",
-        "Three-wavelength coverage (red + blue + amber)",
-        "App-controlled session protocols",
-        "Premium consumer build quality"
-      ],
-      "cons": [
-        "No peer-reviewed dermatology evidence moat",
-        "Premium pricing ($649)",
-        "No neck flap on standard model",
-        "Brand premium leans on Theragun pedigree rather than red-light credibility"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
       "slug": "dr-dennis-gross-spectralite",
       "name": "Dr. Dennis Gross SpectraLite FaceWare Pro",
       "brand": "Dr. Dennis Gross Skincare",
@@ -9148,6 +9084,70 @@
       "dateModified": "2026-10-10"
     },
     {
+      "slug": "theraface-mask",
+      "name": "TheraFace Mask",
+      "brand": "Therabody",
+      "category": "red-light-mask",
+      "productType": "Premium consumer-brand red + blue + amber LED face mask",
+      "url": "https://onda-life.com/reviews/theraface-mask",
+      "categoryUrl": "https://onda-life.com/reviews/red-light-face-masks",
+      "priceUsd": 649,
+      "priceNote": "TheraFace Mask standalone",
+      "priceAsOf": "2026-05-28",
+      "score": 7.1,
+      "scores": [
+        {
+          "id": "irradiance",
+          "score": 7.5,
+          "note": "Documented irradiance in dermatology-acceptable range. Brand-funded validation; less independent verification than category references."
+        },
+        {
+          "id": "wavelength-coverage",
+          "score": 8.5,
+          "note": "Red 633 nm + blue 415 nm + amber 590 nm — three-wavelength coverage with mode-switching protocols."
+        },
+        {
+          "id": "led-count-coverage",
+          "score": 7.5,
+          "note": "Solid LED count and even distribution. No neck flap on the standard model."
+        },
+        {
+          "id": "clinical-evidence",
+          "score": 6.5,
+          "note": "FDA-cleared for full-face wrinkles (510(k) K230293, 2023; the clearance summary lists no clinical studies), brand-funded research. Therabody pedigree from massage guns is real but doesn't carry into red-light clinical moat."
+        },
+        {
+          "id": "comfort-fit",
+          "score": 8,
+          "note": "Hybrid flexible-shell build — between hard plastic and full silicone. App-controlled session timing is the UX differentiator."
+        },
+        {
+          "id": "value",
+          "score": 6.5,
+          "note": "$649 — premium pricing reflecting Therabody brand premium. Justified for users in the Therabody ecosystem; expensive for users just buying a red light mask."
+        }
+      ],
+      "verdict": "Best Therabody-brand crossover into face masks — three-wavelength coverage, premium build, brand pedigree from massage gun category. Research is brand-funded.",
+      "bestFor": "Best for users already in the Therabody ecosystem who want a coordinated face-mask + TheraFace Pro stack with three-wavelength coverage and app control.",
+      "pros": [
+        "Therabody brand pedigree and ecosystem (pairs with TheraFace Pro)",
+        "Three-wavelength coverage (red + blue + amber)",
+        "App-controlled session protocols",
+        "Premium consumer build quality"
+      ],
+      "cons": [
+        "No peer-reviewed dermatology evidence moat",
+        "Premium pricing ($649)",
+        "No neck flap on standard model",
+        "Brand premium leans on Theragun pedigree rather than red-light credibility"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-10"
+    },
+    {
       "slug": "higherdose-red-light-face-mask",
       "name": "HigherDOSE Red Light Face Mask",
       "brand": "HigherDOSE",
@@ -9158,7 +9158,7 @@
       "priceUsd": 349,
       "priceNote": "Red Light Face Mask standalone",
       "priceAsOf": "2026-10-04",
-      "score": 7.3,
+      "score": 7,
       "scores": [
         {
           "id": "irradiance",
@@ -9178,7 +9178,7 @@
         {
           "id": "clinical-evidence",
           "score": 6,
-          "note": "FDA-cleared, per HigherDOSE. Light clinical evidence base; brand-funded research without peer-reviewed depth."
+          "note": "FDA-cleared for full-face wrinkles (510(k) K241933, 2024; the clearance summary says clinical testing was not needed). Light clinical evidence base; brand-funded research without peer-reviewed depth."
         },
         {
           "id": "comfort-fit",
@@ -9306,7 +9306,7 @@
         {
           "id": "clinical-evidence",
           "score": 5.5,
-          "note": "FDA registered (a listing, not clearance or approval). Strong K-beauty consumer market but limited Western peer-reviewed validation on the specific device."
+          "note": "FDA registered (a listing, not clearance or approval). 510(k) K261851 covers the OEM’s LED masks JML1–JML10; whether the DPL mask is included is not visible in the FDA database. Strong K-beauty consumer market but limited Western peer-reviewed validation on the specific device."
         },
         {
           "id": "comfort-fit",
@@ -9493,7 +9493,7 @@
         {
           "id": "evidence-grounding",
           "score": 6,
-          "note": "Brand-funded testimonials and UFC fighter endorsements. Limited peer-reviewed studies on the specific tape. Honest sleep-apnea caveat in safety copy."
+          "note": "Brand-funded testimonials and UFC fighter endorsements. Its “clinically studied” claim rests on a company study (three weeks, 45 participants, self-reported ratings); the maker discloses its limitations, and it has not been published in a peer-reviewed journal (October 2026). Honest sleep-apnea caveat in safety copy."
         },
         {
           "id": "form-factor",
@@ -9588,134 +9588,6 @@
         "Requires adhesive-tab replacement subscription",
         "External device — visible on the face",
         "No FDA Class II clearance"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
-      "slug": "dream-recovery-mouth-tape",
-      "name": "Dream Recovery Mouth Tape",
-      "brand": "Dream Recovery",
-      "category": "breathing-aid",
-      "productType": "Premium silicone-gel mouth tape",
-      "url": "https://onda-life.com/reviews/dream-recovery-mouth-tape",
-      "categoryUrl": "https://onda-life.com/reviews/mouth-tape-nasal-breathing",
-      "priceUsd": 30,
-      "priceNote": "10-strip pack; ~3 uses per strip",
-      "priceAsOf": "2026-05-28",
-      "score": 7.6,
-      "scores": [
-        {
-          "id": "adhesion-comfort",
-          "score": 8,
-          "note": "Silicone-gel adhesive is gentler on skin than acrylic; good adhesion on clean skin. Less beard-grip than Hostage Tape — silicone gel doesn't hold stubble."
-        },
-        {
-          "id": "breathing-mechanism",
-          "score": 7.5,
-          "note": "Full-seal design. No porous center port. Designed for users committed to nasal-only breathing."
-        },
-        {
-          "id": "evidence-grounding",
-          "score": 6,
-          "note": "Brand-funded research (which does not count as evidence in ONDA scores) and biohacker testimonials; no independent trials of the tape. On par with Hostage Tape."
-        },
-        {
-          "id": "form-factor",
-          "score": 8,
-          "note": "Single-piece strip with reusable silicone-gel construction — 2–3 uses per strip in practice. Reduces per-night cost meaningfully."
-        },
-        {
-          "id": "material-safety",
-          "score": 9,
-          "note": "Silicone-gel adhesive — among the gentlest in category. Hypoallergenic, latex-free, low skin-reaction reports. Best fit for sensitive skin."
-        },
-        {
-          "id": "value",
-          "score": 7,
-          "note": "~$30 for 10 strips × ~3 uses = ~$1/night effective. Premium pricing offset by reusability."
-        }
-      ],
-      "verdict": "Best silicone-gel premium mouth tape — reusable, gentler skin contact, premium positioning. Subscription-style pricing without subscription lock-in.",
-      "bestFor": "Best for users with sensitive skin wanting premium silicone-gel mouth tape — gentle adhesion + reusability over brand marketing.",
-      "pros": [
-        "Silicone-gel adhesive — gentlest on sensitive skin",
-        "Reusable design — 2-3 uses per strip",
-        "No subscription lock-in",
-        "Premium brand positioning"
-      ],
-      "cons": [
-        "No FDA registration — light regulatory standing",
-        "Less beard-friendly than Hostage Tape acrylic adhesive",
-        "Full-seal only — no porous safety variant",
-        "Brand newer than Somnifix without multi-year track record"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
-      "slug": "somnifix",
-      "name": "Somnifix",
-      "brand": "Somnifix",
-      "category": "breathing-aid",
-      "productType": "FDA-registered porous mouth tape strips",
-      "url": "https://onda-life.com/reviews/somnifix",
-      "categoryUrl": "https://onda-life.com/reviews/mouth-tape-nasal-breathing",
-      "priceUsd": 25,
-      "priceNote": "28-strip pack; ~$0.90/night",
-      "priceAsOf": "2026-05-28",
-      "score": 7.5,
-      "scores": [
-        {
-          "id": "adhesion-comfort",
-          "score": 7.5,
-          "note": "Solid adhesion on clean skin. Less beard-friendly than Hostage Tape — adhesive engineered for skin contact, not stubble."
-        },
-        {
-          "id": "breathing-mechanism",
-          "score": 7.5,
-          "note": "Porous design with central breathing port — leaves part of the lips uncovered and allows partial mouth exhale. This has not been tested as a safety feature, so the design earns no extra credit: the same nasal-breathing mechanism as other mouth tapes. If sleep apnea is possible, see a doctor first."
-        },
-        {
-          "id": "evidence-grounding",
-          "score": 6.5,
-          "note": "FDA registration is a listing and is scored as neutral. No trials of the tape itself, and mouth taping overall has only a few small studies with mixed results and safety warnings (see our nasal-breathing evidence page) — so mouth tapes score at most 6.5 here, below the 7.0 for products backed by a consistent independent evidence base."
-        },
-        {
-          "id": "form-factor",
-          "score": 7.5,
-          "note": "Single-piece strip with central porous section. Easy to apply. Less generous coverage than Hostage Tape full strip."
-        },
-        {
-          "id": "material-safety",
-          "score": 8.5,
-          "note": "Hypoallergenic adhesive. Latex-free. Skin-reaction reports rare across multi-year user base."
-        },
-        {
-          "id": "value",
-          "score": 7.5,
-          "note": "~$25 for 28 strips = ~$0.90/night. More expensive per night than Hostage Tape subscription; no subscription required."
-        }
-      ],
-      "verdict": "The original mouth tape — FDA-registered porous strip with central breathing port. Decade-long track record; less beard-friendly than Hostage Tape.",
-      "bestFor": "Best for users wanting FDA-registered (a listing, not clearance or approval) mouth tape with a porous design over biohacker brand marketing.",
-      "pros": [
-        "FDA-registered (a listing, not clearance or approval)",
-        "Porous central breathing port — a less complete seal than full-coverage tape",
-        "Multi-year track record predating the 2025 biohacker boom",
-        "No subscription required"
-      ],
-      "cons": [
-        "Less beard-friendly than Hostage Tape",
-        "~$0.90/night — more expensive per night than Hostage Tape",
-        "Smaller coverage than Hostage Tape full strip",
-        "Less aggressive consumer marketing — lower brand recognition than Hostage Tape"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": null,
@@ -9844,6 +9716,134 @@
         "Single-use disposable design",
         "Visible externally",
         "Adhesion fails with skincare products or sweat"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-10"
+    },
+    {
+      "slug": "dream-recovery-mouth-tape",
+      "name": "Dream Recovery Mouth Tape",
+      "brand": "Dream Recovery",
+      "category": "breathing-aid",
+      "productType": "Premium silicone-gel mouth tape",
+      "url": "https://onda-life.com/reviews/dream-recovery-mouth-tape",
+      "categoryUrl": "https://onda-life.com/reviews/mouth-tape-nasal-breathing",
+      "priceUsd": 30,
+      "priceNote": "10-strip pack; ~3 uses per strip",
+      "priceAsOf": "2026-05-28",
+      "score": 7.3,
+      "scores": [
+        {
+          "id": "adhesion-comfort",
+          "score": 8,
+          "note": "Silicone-gel adhesive is gentler on skin than acrylic; good adhesion on clean skin. Less beard-grip than Hostage Tape — silicone gel doesn't hold stubble."
+        },
+        {
+          "id": "breathing-mechanism",
+          "score": 7.5,
+          "note": "Full-seal design. No porous center port. Designed for users committed to nasal-only breathing."
+        },
+        {
+          "id": "evidence-grounding",
+          "score": 6,
+          "note": "Brand-funded research (which does not count as evidence in ONDA scores) and biohacker testimonials; no independent trials of the tape. On par with Hostage Tape."
+        },
+        {
+          "id": "form-factor",
+          "score": 8,
+          "note": "Single-piece strip with reusable silicone-gel construction — 2–3 uses per strip in practice. Reduces per-night cost meaningfully."
+        },
+        {
+          "id": "material-safety",
+          "score": 9,
+          "note": "Silicone-gel adhesive — among the gentlest in category. Hypoallergenic, latex-free, low skin-reaction reports. Best fit for sensitive skin."
+        },
+        {
+          "id": "value",
+          "score": 7,
+          "note": "~$30 for 10 strips × ~3 uses = ~$1/night effective. Premium pricing offset by reusability."
+        }
+      ],
+      "verdict": "Best silicone-gel premium mouth tape — reusable, gentler skin contact, premium positioning. Subscription-style pricing without subscription lock-in.",
+      "bestFor": "Best for users with sensitive skin wanting premium silicone-gel mouth tape — gentle adhesion + reusability over brand marketing.",
+      "pros": [
+        "Silicone-gel adhesive — gentlest on sensitive skin",
+        "Reusable design — 2-3 uses per strip",
+        "No subscription lock-in",
+        "Premium brand positioning"
+      ],
+      "cons": [
+        "No FDA registration — light regulatory standing",
+        "Less beard-friendly than Hostage Tape acrylic adhesive",
+        "Full-seal only — no porous safety variant",
+        "Brand newer than Somnifix without multi-year track record"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-10"
+    },
+    {
+      "slug": "somnifix",
+      "name": "Somnifix",
+      "brand": "Somnifix",
+      "category": "breathing-aid",
+      "productType": "FDA-registered porous mouth tape strips",
+      "url": "https://onda-life.com/reviews/somnifix",
+      "categoryUrl": "https://onda-life.com/reviews/mouth-tape-nasal-breathing",
+      "priceUsd": 25,
+      "priceNote": "28-strip pack; ~$0.90/night",
+      "priceAsOf": "2026-05-28",
+      "score": 7.2,
+      "scores": [
+        {
+          "id": "adhesion-comfort",
+          "score": 7.5,
+          "note": "Solid adhesion on clean skin. Less beard-friendly than Hostage Tape — adhesive engineered for skin contact, not stubble."
+        },
+        {
+          "id": "breathing-mechanism",
+          "score": 7.5,
+          "note": "Porous design with central breathing port — leaves part of the lips uncovered and allows partial mouth exhale. This has not been tested as a safety feature, so the design earns no extra credit: the same nasal-breathing mechanism as other mouth tapes. If sleep apnea is possible, see a doctor first."
+        },
+        {
+          "id": "evidence-grounding",
+          "score": 6.5,
+          "note": "FDA registration is a listing and is scored as neutral. No trials of the tape itself, and mouth taping overall has only a few small studies with mixed results and safety warnings (see our nasal-breathing evidence page) — so mouth tapes score at most 6.5 here, below the 7.0 for products backed by a consistent independent evidence base."
+        },
+        {
+          "id": "form-factor",
+          "score": 7.5,
+          "note": "Single-piece strip with central porous section. Easy to apply. Less generous coverage than Hostage Tape full strip."
+        },
+        {
+          "id": "material-safety",
+          "score": 8.5,
+          "note": "Hypoallergenic adhesive. Latex-free. Skin-reaction reports rare across multi-year user base."
+        },
+        {
+          "id": "value",
+          "score": 7.5,
+          "note": "~$25 for 28 strips = ~$0.90/night. More expensive per night than Hostage Tape subscription; no subscription required."
+        }
+      ],
+      "verdict": "The original mouth tape — FDA-registered porous strip with central breathing port. Decade-long track record; less beard-friendly than Hostage Tape.",
+      "bestFor": "Best for users wanting FDA-registered (a listing, not clearance or approval) mouth tape with a porous design over biohacker brand marketing.",
+      "pros": [
+        "FDA-registered (a listing, not clearance or approval)",
+        "Porous central breathing port — a less complete seal than full-coverage tape",
+        "Multi-year track record predating the 2025 biohacker boom",
+        "No subscription required"
+      ],
+      "cons": [
+        "Less beard-friendly than Hostage Tape",
+        "~$0.90/night — more expensive per night than Hostage Tape",
+        "Smaller coverage than Hostage Tape full strip",
+        "Less aggressive consumer marketing — lower brand recognition than Hostage Tape"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": null,
@@ -11735,11 +11735,11 @@
         "pulsetto"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Truvaga 350 (7.3 vs 7.0 vs 6.9)",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.0, 6.9 and 6.9)",
       "onda_scores": {
         "gammacore-sapphire-cv": 7,
-        "truvaga-350": 7.3,
+        "truvaga-350": 6.9,
         "pulsetto": 6.9
       },
       "verdict": "Different tiers. gammaCore for clinically-indicated headache patients with a prescriber. Truvaga 350 for consumers wanting the gammaCore platform without prescription. Pulsetto for the most accessible daily-use cervical tVNS.",
@@ -11802,11 +11802,11 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Apollo Neuro (7.1 vs 6.6 vs 6.2)",
+      "label": "Higher ONDA score: Apollo Neuro (7.1 vs 6.3 vs 6.2)",
       "onda_scores": {
         "apollo-neuro": 7.1,
         "sensate": 6.2,
-        "hoolest-verelief-prime": 6.6
+        "hoolest-verelief-prime": 6.3
       },
       "verdict": "Three different jobs. Apollo for all-day passive vagal modulation. Sensate for an evening wind-down audio ritual. Hoolest for short intense pre-sleep or post-training sessions.",
       "bestFor": {
@@ -12132,7 +12132,7 @@
       "label": "WINNER: Omnilux Contour Face",
       "onda_scores": {
         "omnilux-contour-face": 7.8,
-        "higherdose-red-light-face-mask": 7.3
+        "higherdose-red-light-face-mask": 7
       },
       "verdict": "Omnilux Contour Face has the higher ONDA score for $46 more, while HigherDOSE is a reasonable cheaper alternative with higher claimed output and a 20-minute option. Neither has a published independent trial of the mask itself.",
       "bestFor": {
@@ -14587,10 +14587,10 @@
         "pulsetto"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Truvaga 350 (7.3 vs 6.9)",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (6.9 and 6.9)",
       "onda_scores": {
-        "truvaga-350": 7.3,
+        "truvaga-350": 6.9,
         "pulsetto": 6.9
       },
       "verdict": "Depends on what you value. Truvaga 350 for clinical provenance (same hardware as FDA-cleared gammaCore). Pulsetto for protocol variety, daily-use form factor and lower price.",
@@ -14834,9 +14834,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Pulsetto (6.9 vs 6.6)",
+      "label": "Higher ONDA score: Pulsetto (6.9 vs 6.3)",
       "onda_scores": {
-        "hoolest-verelief-prime": 6.6,
+        "hoolest-verelief-prime": 6.3,
         "pulsetto": 6.9
       },
       "verdict": "Depends on use case. Hoolest VeRelief Prime for short intense pre-sleep or post-training sessions. Pulsetto for daily-use programme-driven cervical tVNS.",
@@ -16315,10 +16315,10 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Mito Red MitoPRO 1500 (8.1 vs 7.8)",
+      "label": "Higher ONDA score: Mito Red MitoPRO 1500 (8.1 vs 7.5)",
       "onda_scores": {
         "mito-red-mitopro-1500": 8.1,
-        "hooga-hg500": 7.8
+        "hooga-hg500": 7.5
       },
       "verdict": "Depends on what matters. MitoPRO wins on spectrum, build and coverage. Hooga wins on value by a wide margin — most biohackers do not need MitoPRO’s premium for typical use.",
       "bestFor": {
@@ -16379,9 +16379,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Joovv Solo 3.0 (8.0 vs 7.8)",
+      "label": "Higher ONDA score: Joovv Solo 3.0 (8.0 vs 7.5)",
       "onda_scores": {
-        "hooga-hg500": 7.8,
+        "hooga-hg500": 7.5,
         "joovv-solo-3": 8
       },
       "verdict": "Value vs premium reference. The Hooga HG500 wins decisively on price and output-per-dollar — most of the core spec for roughly a fifth of the cost. The Joovv Solo 3.0 wins on build quality, brand maturity and a modular ecosystem you can expand. Pick Hooga if you want the results without the premium; Joovv if brand, build and expandability justify the spend.",
@@ -16433,9 +16433,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: PlatinumLED BIOMAX 600 (8.2 vs 7.8)",
+      "label": "Higher ONDA score: PlatinumLED BIOMAX 600 (8.2 vs 7.5)",
       "onda_scores": {
-        "hooga-hg500": 7.8,
+        "hooga-hg500": 7.5,
         "platinumled-biomax-600": 8.2
       },
       "verdict": "Core value vs spectrum-rich mid-premium. The Hooga HG500 wins on price and output-per-dollar with the two wavelengths that cover most use. The PlatinumLED BIOMAX 600 wins on wavelength variety (seven bands), EMF discipline and a better build, at roughly three times the cost. Pick Hooga for the essentials cheaply; PlatinumLED if the extra wavelengths and build matter.",
@@ -16682,9 +16682,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Infraredi Pro 1500 (8.0 vs 7.8 vs 7.4)",
+      "label": "Higher ONDA score: Infraredi Pro 1500 (8.0 vs 7.5 vs 7.4)",
       "onda_scores": {
-        "hooga-hg500": 7.8,
+        "hooga-hg500": 7.5,
         "bon-charge-red-light-panel": 7.4,
         "infraredi-pro-1500": 8
       },
@@ -17103,7 +17103,7 @@
       "label": "WINNER: Sunlighten mPulse 3-in-1",
       "onda_scores": {
         "sunlighten-mpulse": 8.2,
-        "clearlight-sanctuary-2": 7.7
+        "clearlight-sanctuary-2": 7.4
       },
       "verdict": "Sunlighten mPulse wins on wavelength rigour and published EMF figures. Clearlight Sanctuary 2 wins on its Jacuzzi-backed lifetime warranty, but now costs more (~$7,299 vs ~$6,000).",
       "bestFor": {
@@ -17153,11 +17153,11 @@
         "clearlight-sanctuary-2"
       ],
       "winner": null,
-      "winnerStatus": "practically-equal",
-      "label": "Practically equal by ONDA score (7.7 and 7.7)",
+      "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Sun Home Equinox (7.7 vs 7.4)",
       "onda_scores": {
         "sun-home-equinox": 7.7,
-        "clearlight-sanctuary-2": 7.7
+        "clearlight-sanctuary-2": 7.4
       },
       "verdict": "Value and features vs pedigree and warranty. The Sun Home Equinox wins on heat output and bundled extras (integrated red light, chromotherapy, sound). The Clearlight Sanctuary 2 wins on build reputation and its Jacuzzi-backed lifetime warranty, but now costs more ($7,299 vs ~$6,000). Sun Home documents third-party EMF figures; Clearlight markets low EMF/ELF without published third-party numbers. Pick Sun Home for the feature bundle and heat; Clearlight for warranty and long brand history.",
       "bestFor": {
@@ -17443,7 +17443,7 @@
       "label": "WINNER: Sunlighten mPulse 3-in-1",
       "onda_scores": {
         "sunlighten-mpulse": 8.2,
-        "clearlight-sanctuary-2": 7.7,
+        "clearlight-sanctuary-2": 7.4,
         "saunaspace-faraday": 8
       },
       "verdict": "Sunlighten mPulse wins on wavelength rigour and per-wavelength control. Clearlight on its Jacuzzi-backed lifetime warranty. SaunaSpace on near-IR purity and EMF discipline. Three premium picks, three different philosophies.",
@@ -17764,12 +17764,12 @@
         "hoolest-verelief-prime"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Truvaga 350 (7.3 vs 6.9 vs 6.6)",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (6.9, 6.9 and 6.3)",
       "onda_scores": {
         "pulsetto": 6.9,
-        "truvaga-350": 7.3,
-        "hoolest-verelief-prime": 6.6
+        "truvaga-350": 6.9,
+        "hoolest-verelief-prime": 6.3
       },
       "verdict": "Three different shapes. Pulsetto for daily-use guided programmes. Truvaga for the clinical-platform consumer version. Hoolest for short intense athletic-recovery sessions.",
       "bestFor": {
@@ -17835,7 +17835,7 @@
       "onda_scores": {
         "nurosym": 7.4,
         "vagustim": 7.2,
-        "xen-by-neuvana": 6.2
+        "xen-by-neuvana": 5.9
       },
       "verdict": "Nurosym wins on evidence and disclosed parameters. Vagustim wins on protocol variety in EU markets. Xen wins on consumer-friendly earbud form factor with music pairing.",
       "bestFor": {
@@ -20685,7 +20685,7 @@
       "winnerStatus": "winner",
       "label": "WINNER: Resona Health VIBE",
       "onda_scores": {
-        "resona-health-vibe": 7.3,
+        "resona-health-vibe": 7,
         "olylife-tera-p90-plus": 6.5
       },
       "verdict": "Resona Health VIBE wins on protocol depth, research honesty and distribution model. OlyLife is acceptable only if you explicitly discount the terahertz marketing.",
@@ -20737,9 +20737,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Resona Health VIBE (7.3 vs 6.4)",
+      "label": "Higher ONDA score: Resona Health VIBE (7.0 vs 6.4)",
       "onda_scores": {
-        "resona-health-vibe": 7.3,
+        "resona-health-vibe": 7,
         "higherdose-pemf-mat": 6.4
       },
       "verdict": "No overall winner — Resona VIBE is the smarter low-cost way to find out whether PEMF helps you, while the HigherDOSE PEMF Mat is for people who already want a daily whole-body, heated recovery session.",
@@ -21319,7 +21319,7 @@
       "label": "WINNER: CurrentBody Series 2 LED Light Therapy Face Mask",
       "onda_scores": {
         "currentbody-series-2": 8,
-        "higherdose-red-light-face-mask": 7.3
+        "higherdose-red-light-face-mask": 7
       },
       "verdict": "CurrentBody Series 2 wins on integrated neck flap, higher LED dose and market-feedback refinement. HigherDOSE wins on price and HigherDOSE-ecosystem fit.",
       "bestFor": {
@@ -21370,10 +21370,10 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
-      "label": "Practically equal by ONDA score (7.4 and 7.3)",
+      "label": "Practically equal by ONDA score (7.1 and 7.0)",
       "onda_scores": {
-        "theraface-mask": 7.4,
-        "higherdose-red-light-face-mask": 7.3
+        "theraface-mask": 7.1,
+        "higherdose-red-light-face-mask": 7
       },
       "verdict": "Wavelength scope vs ecosystem price. TheraFace Mask for three-wavelength coverage with Therabody premium brand. HigherDOSE for HigherDOSE-ecosystem coordination at meaningfully lower price.",
       "bestFor": {
@@ -21410,7 +21410,7 @@
         {
           "name": "Clinical evidence",
           "winner": "tie",
-          "note": "Both rely on brand-funded research (HigherDOSE says its mask is FDA-cleared)."
+          "note": "Both rely on brand-funded research (both masks are FDA-cleared: TheraFace K230293, HigherDOSE K241933)."
         },
         {
           "name": "Price",
@@ -21544,10 +21544,10 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Hostage Tape (8.0 vs 7.5)",
+      "label": "Higher ONDA score: Hostage Tape (8.0 vs 7.2)",
       "onda_scores": {
         "hostage-tape": 8,
-        "somnifix": 7.5
+        "somnifix": 7.2
       },
       "verdict": "Beard-friendliness vs porous design. Hostage Tape for beard-friendly acrylic adhesive and subscription convenience. Somnifix for an FDA-registered porous design.",
       "bestFor": {
@@ -21603,10 +21603,10 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Hostage Tape (8.0 vs 7.6)",
+      "label": "Higher ONDA score: Hostage Tape (8.0 vs 7.3)",
       "onda_scores": {
         "hostage-tape": 8,
-        "dream-recovery-mouth-tape": 7.6
+        "dream-recovery-mouth-tape": 7.3
       },
       "verdict": "Beard adhesion vs sensitive skin. Hostage Tape for beard-friendly acrylic and subscription convenience. Dream Recovery for silicone-gel sensitive-skin tolerance and reusable design.",
       "bestFor": {
@@ -21835,10 +21835,10 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Hostage Tape (8.0 vs 7.7 vs 7.5)",
+      "label": "Higher ONDA score: Hostage Tape (8.0 vs 7.7 vs 7.2)",
       "onda_scores": {
         "hostage-tape": 8,
-        "somnifix": 7.5,
+        "somnifix": 7.2,
         "intake-breathing": 7.7
       },
       "verdict": "Three different theses, three different right answers. Hostage Tape for beard-friendly biohacker mouth seal. Somnifix for an FDA-registered porous design. Intake Breathing for premium external magnetic dilation.",
@@ -22899,11 +22899,6 @@
           "takeaway": "The largest independent trial record in consumer ear tVNS (mostly earlier Parasym models) — auricular stimulation of the kind used in research studies, in a deliberately spartan form (€700, about $820)."
         },
         {
-          "review": "truvaga-350",
-          "award": "Best cervical (consumer)",
-          "takeaway": "gammaCore’s maker’s over-the-counter wellness device — the same cervical platform without the prescription gate, now $325 for 350 sessions."
-        },
-        {
           "review": "vagustim",
           "award": "Best protocol library",
           "takeaway": "Auricular tVNS with the widest preset library and CE-marked EU regulatory backing — second only to Nurosym on evidence."
@@ -22917,6 +22912,11 @@
           "review": "gammacore-sapphire-cv",
           "award": "Best clinical (prescription)",
           "takeaway": "FDA-cleared prescription neck device for migraine (ages 12+), cluster headache and two rare headache disorders."
+        },
+        {
+          "review": "truvaga-350",
+          "award": "Best cervical (consumer)",
+          "takeaway": "gammaCore’s maker’s over-the-counter wellness device — the same cervical platform without the prescription gate, now $325 for 350 sessions."
         },
         {
           "review": "pulsetto",
@@ -23200,11 +23200,6 @@
           "takeaway": "Incandescent near-IR with full Faraday-cage EMF shielding. Distinct from full-spectrum IR."
         },
         {
-          "review": "clearlight-sanctuary-2",
-          "award": "Best alternative premium IR",
-          "takeaway": "Jacuzzi-backed full-spectrum IR with lifetime heater warranty, slightly cheaper than Sunlighten."
-        },
-        {
           "review": "sun-home-equinox",
           "award": "Best mid-premium IR",
           "takeaway": "Full-spectrum IR with bundled chromotherapy at lower price than Sunlighten / Clearlight."
@@ -23213,6 +23208,11 @@
           "review": "higherdose-blanket-v4",
           "award": "Best portable",
           "takeaway": "Far-IR blanket — the most accessible IR-sauna entry without install commitment."
+        },
+        {
+          "review": "clearlight-sanctuary-2",
+          "award": "Best alternative premium IR",
+          "takeaway": "Jacuzzi-backed full-spectrum IR with lifetime heater warranty, slightly cheaper than Sunlighten."
         },
         {
           "review": "therasage-thera-sauna-personal",
@@ -23339,14 +23339,14 @@
           "takeaway": "Under-mattress install with maker-marketed Schumann and delta sleep settings at $899 — no controlled trials show better sleep."
         },
         {
-          "review": "resona-health-vibe",
-          "award": "Best wearable / entry tier",
-          "takeaway": "$299 wearable with 130+ protocols — lowest commitment way to explore PEMF."
-        },
-        {
           "review": "magnawave-mini",
           "award": "Best portable coil",
           "takeaway": "Multi-decade equine/athletic recovery coil in a portable case — but no “Mini” is sold now; the compact Semi 10 starts at $8,360, close to Pulse Centers money."
+        },
+        {
+          "review": "resona-health-vibe",
+          "award": "Best wearable / entry tier",
+          "takeaway": "$299 wearable with 130+ protocols — lowest commitment way to explore PEMF."
         },
         {
           "review": "higherdose-pemf-mat",
@@ -23433,14 +23433,14 @@
           "takeaway": "Flexible silicone (the most comfortable in our assessment) + the standard red / near-infrared pair, FDA-cleared for wrinkles — no published trial of the mask itself."
         },
         {
-          "review": "theraface-mask",
-          "award": "Best for Therabody ecosystem",
-          "takeaway": "Three-wavelength coverage with app control — leverages Theragun brand crossover."
-        },
-        {
           "review": "dr-dennis-gross-spectralite",
           "award": "Best dermatology brand",
           "takeaway": "Dual red + blue spectrum + Dr. Dennis Gross dermatology pedigree (FDA-cleared, per the brand)."
+        },
+        {
+          "review": "theraface-mask",
+          "award": "Best for Therabody ecosystem",
+          "takeaway": "Three-wavelength coverage with app control — leverages Theragun brand crossover."
         },
         {
           "review": "higherdose-red-light-face-mask",
@@ -23485,16 +23485,6 @@
           "takeaway": "Magnetic external dilator, James Nestor-recommended, reusable design with replaceable tabs."
         },
         {
-          "review": "dream-recovery-mouth-tape",
-          "award": "Best for sensitive skin",
-          "takeaway": "Premium silicone-gel adhesive — gentlest in category, reusable design, no subscription lock-in."
-        },
-        {
-          "review": "somnifix",
-          "award": "Best FDA-registered",
-          "takeaway": "Original porous mouth tape with central breathing port and FDA-registered (a listing, not clearance or approval)."
-        },
-        {
           "review": "nexcare-surgical-tape",
           "award": "Best DIY budget",
           "takeaway": "3M surgical paper tape at $0.05/night — unbeatable cost for biohackers willing to cut their own strips."
@@ -23503,6 +23493,16 @@
           "review": "breathe-right-original",
           "award": "Best drugstore option",
           "takeaway": "Decades-long FDA-cleared external strip at $0.33/night — try this first before premium dilators."
+        },
+        {
+          "review": "dream-recovery-mouth-tape",
+          "award": "Best for sensitive skin",
+          "takeaway": "Premium silicone-gel adhesive — gentlest in category, reusable design, no subscription lock-in."
+        },
+        {
+          "review": "somnifix",
+          "award": "Best FDA-registered",
+          "takeaway": "Original porous mouth tape with central breathing port and FDA-registered (a listing, not clearance or approval)."
         },
         {
           "review": "ayo-sleep-tape",

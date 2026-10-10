@@ -20,6 +20,7 @@ const resonaVibe: ToolReviewInput = {
     { criterionId: 'form-factor', score: 7.5, note: 'Wearable / pocket form factor. Targeted localised use only — no whole-body mat coverage. Excellent for portability and on-the-go protocols.' },
     { criterionId: 'value', score: 8.5, note: '$299 — best value entry point in PEMF. Hard to argue with at the price for PEMF-curious users.' },
   ],
+  editorialAdjustment: { value: -0.3, reason: 'Marketing honesty — the Vibe product page says “Backed by 40+ Published Studies” and “Proven by results”, but it does not name the studies, and we found no published study of the Vibe itself (checked October 2026). This is scored here, not under evidence.' },
   pros: [
     'Best entry-tier value in PEMF — $299 vs $1,750+ mats',
     '130+ built-in protocols (60 core + 70 expansion)',
@@ -86,7 +87,7 @@ Choose Resona Health VIBE if you are curious about PEMF and want a low-commitmen
   publishOn: '2026-06-22',
   faq: [
     { q: "How much does the Resona Health VIBE cost?", a: "The Resona Health VIBE costs $299 as a standalone wearable, with no app or subscription, a 1-year warranty and a 30-day money-back guarantee. That is the best entry-tier value in PEMF, versus about $1,750 or more for full-body mats, making it the lowest-commitment way to explore PEMF. ONDA scores it 8.5/10 on value." },
-    { q: "What does the Resona Health VIBE do?", a: "The Resona Health VIBE is a pocket-sized wearable PEMF device with 130+ built-in protocols (60 core + 70 expansion), run from a single button with no app or subscription. It is designed for targeted, localised use rather than whole-body sessions, so field intensity is lower than full-body mats by design. ONDA scores it 6.8/10 overall." },
+    { q: "What does the Resona Health VIBE do?", a: "The Resona Health VIBE is a pocket-sized wearable PEMF device with 130+ built-in protocols (60 core + 70 expansion), run from a single button with no app or subscription. It is designed for targeted, localised use rather than whole-body sessions, so field intensity is lower than full-body mats by design. ONDA scores it 7.0/10 overall." },
     { q: "Who is the Resona Health VIBE best for?", a: "The Resona Health VIBE is best for PEMF-curious users wanting a low-commitment entry, portable wearable PEMF, or a protocol-rich targeted-use device under $300. It is not for whole-body simultaneous treatment, where a full-body mat is the better choice." },
     { q: "Does the Resona Health VIBE actually work?", a: "There are no independent clinical trials of the VIBE itself. For PEMF in general, the best evidence is for joint pain: a Cochrane review found electromagnetic field therapy may moderately reduce osteoarthritis pain, with uncertain effects on function. Claims about sleep, energy or recovery rest mostly on manufacturer data. Treat it as a low-risk experiment, not a proven treatment." },
     { q: "Is PEMF safe to use?", a: "For most healthy adults, low-intensity consumer PEMF appears low-risk. Do not use it with a pacemaker or other implanted electronic device, and ask a doctor first if you are pregnant, have epilepsy or are being treated for a medical condition." },

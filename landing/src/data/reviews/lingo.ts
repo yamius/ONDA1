@@ -13,7 +13,7 @@ const lingo: ToolReviewInput = {
   summary:
     'Lingo is Abbott’s direct-to-consumer CGM, sold over the counter (no prescription) with Libre 3 hardware and an app aimed at metabolic-health beginners. Two-week sensors at $54 each, no subscription required. The app focuses on a single “Lingo Count” metric per meal rather than the deep analytics of Levels. The right entry point if cost and simplicity matter more than insight depth.',
   scores: [
-    { criterionId: 'sensor-accuracy', score: 8.5, note: 'Abbott Libre 3-based sensor — 14-day wear, calibration-free, 60-minute warm-up. In an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate.' },
+    { criterionId: 'sensor-accuracy', score: 8.5, note: 'Abbott Libre 3-based sensor — 14-day wear, calibration-free, 60-minute warm-up. In an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate. Lingo presents itself honestly: the site says it is “NOT intended for diagnosis of diseases, including diabetes” and makes no clinical overclaims.' },
     { criterionId: 'insights', score: 7.0, note: 'Built around a single per-meal “Lingo Count” spike score. Simpler than Levels — easier for beginners, frustrating for advanced users.' },
     { criterionId: 'coaching', score: 5.0, note: 'Minimal — in-app guidance only, no coach. Abbott bet on simplicity over coaching.' },
     { criterionId: 'app-integration', score: 7.5, note: 'Clean iOS/Android app with Apple Health and Google Fit support. Limited third-party connectors compared with Levels.' },

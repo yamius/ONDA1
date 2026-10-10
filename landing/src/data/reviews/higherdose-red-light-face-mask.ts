@@ -16,10 +16,11 @@ const higherDoseFaceMask: ToolReviewInput = {
     { criterionId: 'irradiance', score: 7.0, note: 'HigherDOSE states 50 mW/cm² total (630 nm 26 + 830 nm 24 mW/cm²) — the brand’s figures, not independently measured.' },
     { criterionId: 'wavelength-coverage', score: 7.5, note: 'Red 630 nm + near-infrared 830 nm — the standard clinical pair. No blue / amber variants.' },
     { criterionId: 'led-count-coverage', score: 7.5, note: '66 dual-core LEDs (132 diodes) across face. No neck flap on standard model.' },
-    { criterionId: 'clinical-evidence', score: 6.0, note: 'FDA-cleared, per HigherDOSE. Light clinical evidence base; brand-funded research without peer-reviewed depth.' },
+    { criterionId: 'clinical-evidence', score: 6.0, note: 'FDA-cleared for full-face wrinkles (510(k) K241933, 2024; the clearance summary says clinical testing was not needed). Light clinical evidence base; brand-funded research without peer-reviewed depth.' },
     { criterionId: 'comfort-fit', score: 8.5, note: 'Flexible silicone comparable to Omnilux / CurrentBody comfort. Lighter than Lumara Viso.' },
     { criterionId: 'value', score: 8.0, note: '$349 — accessible mid-premium pricing. Cheaper than Omnilux / CurrentBody / TheraFace, justified by lighter spec.' },
   ],
+  editorialAdjustment: { value: -0.3, reason: 'Marketing honesty — the product page says the mask is “FDA-cleared and clinically proven to” reduce fine lines and wrinkles, but the proof is HigherDOSE’s own 8-week test with self-reported results, not a published study, and the FDA clearance (K241933) was granted without clinical testing (checked October 2026). This is scored here, not under evidence.' },
   pros: [
     'Best consumer-brand UX — simple rechargeable controller, 10 or 20-minute sessions',
     'Accessible $349 pricing — cheaper than dermatology references',
@@ -45,7 +46,7 @@ HigherDOSE Red Light Face Mask is the consumer-brand reference — polished UX, 
 
 ## What are the downsides of HigherDOSE Red Light Face Mask?
 
-Clinical evidence and irradiance. HigherDOSE says the mask is FDA-cleared, with brand-funded research; no peer-reviewed dermatology moat. The 50 mW/cm² irradiance is the brand’s figure, and there is no neck flap. Omnilux, CurrentBody and Lumara rank higher overall; Lumara leads on spec.
+Clinical evidence and irradiance. The mask is FDA-cleared (510(k) K241933), with brand-funded research; no peer-reviewed dermatology moat. The 50 mW/cm² irradiance is the brand’s figure, and there is no neck flap. Omnilux, CurrentBody and Lumara rank higher overall; Lumara leads on spec.
 
 ## Who should buy HigherDOSE Red Light Face Mask?
 

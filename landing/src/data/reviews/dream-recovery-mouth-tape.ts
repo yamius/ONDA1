@@ -20,6 +20,7 @@ const dreamRecovery: ToolReviewInput = {
     { criterionId: 'material-safety', score: 9.0, note: 'Silicone-gel adhesive — among the gentlest in category. Hypoallergenic, latex-free, low skin-reaction reports. Best fit for sensitive skin.' },
     { criterionId: 'value', score: 7.0, note: '~$30 for 10 strips × ~3 uses = ~$1/night effective. Premium pricing offset by reusability.' },
   ],
+  editorialAdjustment: { value: -0.3, reason: 'Marketing honesty — the homepage promises “Scientifically Proven Solutions”, but its research page lists only general breathing and sleep studies; we found no study of the tape itself (checked October 2026). This is scored here, not under evidence.' },
   pros: [
     'Silicone-gel adhesive — gentlest on sensitive skin',
     'Reusable design — 2-3 uses per strip',
