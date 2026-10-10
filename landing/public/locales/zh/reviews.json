@@ -137,7 +137,7 @@
         "美国Lingo版本仅面向18岁以上且不使用胰岛素的成年人"
       ],
       "scoreNotes": {
-        "sensor-accuracy": "全部采用雅培传感器：美国以外为FreeStyle Libre 3，美国通过M2 Live使用雅培Lingo（佩戴14天，基于Libre）。在一项独立的头对头研究（Eichenlaub et al. 2025）中，Libre 3与Dexcom G7的准确度相近。",
+        "sensor-accuracy": "全部采用雅培传感器：美国以外为FreeStyle Libre 3，美国通过M2 Live使用雅培Lingo（佩戴14天，基于Libre）。在一项独立的头对头研究（Eichenlaub et al. 2025）中，Libre 3与Dexcom G7的准确度相近。Ultrahuman 在首页链接了自己已发表的研究，而不是只引用一般性研究。",
         "insights": "扎实的餐食影响分析，加上独特的跨信号视图：血糖与HRV、睡眠和恢复显示在同一时间线上。",
         "coaching": "主要由AI驱动（Jade AI洞察）。方案包含与表现教练的沟通，但不是营养师或临床医生。",
         "app-integration": "与Ultrahuman戒指原生集成，提供HRV/睡眠/恢复数据；支持Apple Health、Google Fit和饮食记录。是该类别中功能最丰富的单一App组合。",

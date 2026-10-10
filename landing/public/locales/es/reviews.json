@@ -1182,7 +1182,7 @@
         "La versión Lingo de EE. UU. es solo para adultos de 18+ que no usan insulina"
       ],
       "scoreNotes": {
-        "sensor-accuracy": "Sensores Abbott en todos los casos: FreeStyle Libre 3 fuera de EE. UU. y Abbott Lingo (14 días de uso, basado en Libre) en EE. UU. vía M2 Live. En un estudio comparativo independiente (Eichenlaub et al. 2025) Libre 3 y Dexcom G7 tuvieron una precisión similar.",
+        "sensor-accuracy": "Sensores Abbott en todos los casos: FreeStyle Libre 3 fuera de EE. UU. y Abbott Lingo (14 días de uso, basado en Libre) en EE. UU. vía M2 Live. En un estudio comparativo independiente (Eichenlaub et al. 2025) Libre 3 y Dexcom G7 tuvieron una precisión similar. Ultrahuman enlaza sus propios estudios publicados desde su página de inicio en lugar de citar solo investigación general.",
         "insights": "Buen análisis del impacto de las comidas más la visión cruzada única: glucosa combinada con HRV, sueño y recuperación en la misma línea temporal.",
         "coaching": "Principalmente basado en IA (información de Jade AI). Los planes incluyen acceso a coaches de rendimiento, no a dietistas ni profesionales clínicos.",
         "app-integration": "Integración nativa con los anillos Ultrahuman para HRV/sueño/recuperación; compatibilidad con Apple Health, Google Fit y registro de comidas. El conjunto más completo en una sola app de la categoría.",

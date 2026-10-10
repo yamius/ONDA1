@@ -162,7 +162,7 @@
         "Amerikaanse Lingo-versie alleen voor volwassenen vanaf 18 die geen insuline gebruiken"
       ],
       "scoreNotes": {
-        "sensor-accuracy": "Overal Abbott-sensoren: FreeStyle Libre 3 buiten de VS, Abbott Lingo (14 dagen draagtijd, gebaseerd op Libre) in de VS via M2 Live. In een onafhankelijke head-to-head-studie (Eichenlaub et al. 2025) waren Libre 3 en Dexcom G7 vergelijkbaar nauwkeurig.",
+        "sensor-accuracy": "Overal Abbott-sensoren: FreeStyle Libre 3 buiten de VS, Abbott Lingo (14 dagen draagtijd, gebaseerd op Libre) in de VS via M2 Live. In een onafhankelijke head-to-head-studie (Eichenlaub et al. 2025) waren Libre 3 en Dexcom G7 vergelijkbaar nauwkeurig. Ultrahuman linkt vanaf de homepage naar zijn eigen gepubliceerde studies in plaats van alleen algemeen onderzoek te noemen.",
         "insights": "Degelijke analyse van het effect van maaltijden plus het unieke overzicht over meerdere signalen: glucose samen met HRV, slaap en herstel op dezelfde tijdlijn.",
         "coaching": "Grotendeels AI-gestuurd (Jade AI-inzichten). Abonnementen geven toegang tot performancecoaches, niet tot diëtisten of artsen.",
         "app-integration": "Native integratie met Ultrahuman-ringen voor HRV/slaap/herstel; ondersteuning voor Apple Health, Google Fit en voedingslogboek. De rijkste stack in één app in deze categorie.",

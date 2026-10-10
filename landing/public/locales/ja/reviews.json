@@ -162,7 +162,7 @@
         "米国のLingo版は、インスリンを使用していない18歳以上の成人のみ対象"
       ],
       "scoreNotes": {
-        "sensor-accuracy": "すべてAbbottのセンサー：米国外はFreeStyle Libre 3、米国はM2 Live経由のAbbott Lingo（14日間装着、Libreベース）。独立したヘッドツーヘッド研究（Eichenlaub et al. 2025）では、Libre 3とDexcom G7の精度は同程度でした。",
+        "sensor-accuracy": "すべてAbbottのセンサー：米国外はFreeStyle Libre 3、米国はM2 Live経由のAbbott Lingo（14日間装着、Libreベース）。独立したヘッドツーヘッド研究（Eichenlaub et al. 2025）では、Libre 3とDexcom G7の精度は同程度でした。Ultrahumanは一般的な研究だけを引用するのではなく、ホームページから自社の公表済み研究にリンクしています。",
         "insights": "しっかりした食事影響の分析に加え、独自の横断ビュー：血糖をHRV・睡眠・回復と同じタイムラインで表示。",
         "coaching": "主にAI主導（Jade AIのインサイト）。プランにはパフォーマンスコーチへのアクセスが含まれますが、管理栄養士や医療者ではありません。",
         "app-integration": "HRV・睡眠・回復のためのUltrahumanリングとのネイティブ連携。Apple Health、Google Fit、食事記録に対応。このカテゴリーで最も充実した単一アプリ構成。",
