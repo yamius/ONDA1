@@ -9,9 +9,9 @@ const breatheToRelax: ToolReviewInput = {
   description:
     'Breathe2Relax review: the most credible free breathwork app — built by US military telehealth for PTSD and stress. Dated UX, clinical pedigree unmatched for $0.',
   verdict:
-    'Best evidence-backed free breathwork app — built by US military telehealth for PTSD and stress; clinical credibility no other free app matches.',
+    'Best evidence-backed free breathwork app — built by US military telehealth for PTSD and stress; it teaches well-documented diaphragmatic breathing at zero cost.',
   summary:
-    'Breathe2Relax is the US Department of Defense / National Center for Telehealth & Technology free diaphragmatic-breathing app, originally developed for veteran PTSD and combat-stress management. Clinical-credibility framing no other free app matches — published validation studies on PTSD and stress outcomes. Library is narrow (diaphragmatic / paced breathing focused), UX is dated, but the evidence base is unmatched at zero cost.',
+    'Breathe2Relax is the US Department of Defense / National Center for Telehealth & Technology free diaphragmatic-breathing app, originally developed for veteran PTSD and combat-stress management. Published research on the app itself is limited to small pilot studies; the diaphragmatic-breathing technique it teaches is well documented. Library is narrow (diaphragmatic / paced breathing focused), UX is dated, but the evidence base is unmatched at zero cost.',
   scores: [
     { criterionId: 'session-library', score: 4.5, note: 'Narrow library — focused on diaphragmatic and paced breathing for stress / PTSD context. Not a content platform.' },
     { criterionId: 'technique-coverage', score: 4.5, note: 'Diaphragmatic and paced breathing only. No Wim Hof, holotropic or broader technique coverage.' },
@@ -24,7 +24,7 @@ const breatheToRelax: ToolReviewInput = {
     'Best evidence base of any free breathwork app — published PTSD / stress validation',
     'Completely free with no subscription or ads',
     'Built by US Department of Defense / National Center for Telehealth',
-    'Clinical credibility no consumer app matches at zero cost',
+    'Teaches a well-documented breathing technique at zero cost',
   ],
   cons: [
     'Dated UI from original government-build era',
@@ -41,7 +41,7 @@ const breatheToRelax: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Breathe2Relax is the evidence-backed free breathwork reference — built by the US National Center for Telehealth & Technology with published validation studies on PTSD and combat-stress outcomes. Clinical credibility no consumer-built free app matches.
+Breathe2Relax is the free breathwork app from a public source — developed by the US Department of Defense’s National Center for Telehealth & Technology for PTSD and combat-stress care. Published research on the app itself is limited to small pilot studies; the diaphragmatic breathing it teaches is well documented.
 
 ## What are the downsides of Breathe2Relax?
 

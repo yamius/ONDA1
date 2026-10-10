@@ -191,7 +191,7 @@
         "没有屏幕——每次查看都要拿出手机"
       ],
       "scoreNotes": {
-        "hrv-accuracy": "在一项独立检验中（13 人的夜间记录，Dial 2025），夜间 RMSSD 与心电图参考值接近；更早的高一致性结果来自 Oura 自己的验证研究。白天读数会因运动而漂移。",
+        "hrv-accuracy": "在唯一一项独立验证中（Dial 2025：夜间记录，13 人共 536 晚），夜间 RMSSD 与心电图参考值接近；更早的高一致性结果来自 Oura 自己的验证研究。白天读数会因运动而漂移。ONDA 规则：只有一项在狭窄条件下（此处仅限夜间）的独立验证时，准确度评分上限为 8.0。",
         "sensor": "来自手指的光学 PPG 在夜间保持干净信号——这正是 HRV 最关键的时段。",
         "sleep-accuracy": "一项针对 Oura 算法、96 人参与的多导睡眠图研究显示各分期准确率为 76–91%，但该研究由 Oura 资助，而厂商资助的研究在ONDA评分中不计为证据；未找到对 Ring 4 睡眠分期的独立检验。ONDA规则：没有自身的独立验证时，若前几代产品经过验证，设备最高得7.5分，否则最高7.0分。",
         "data-access": "提供开发者 API，但逐搏原始数据有限，更深入的分析需要会员。",
@@ -1245,7 +1245,7 @@
       "productType": "免费极简呼吸练习 App（箱式、4-7-8、自定义）"
     },
     "breathe-to-relax": {
-      "verdict": "最佳有证据支持的免费呼吸 App——由美军远程医疗部门针对 PTSD 和压力开发；临床可信度是其他免费 App 无法比拟的。",
+      "verdict": "最佳有证据支持的免费呼吸 App——由美军远程医疗部门针对 PTSD 和压力开发；免费教授有充分文献记载的腹式呼吸。",
       "productType": "美国国防部开发的免费腹式呼吸 App，用于缓解压力和 PTSD"
     },
     "polar-h10": {
@@ -1758,7 +1758,7 @@
     "mute-nasal-dilator": {
       "verdict": "最佳内置鼻支架——从内部以机械方式撑开气道，有已发表的临床证据，可重复使用。初期确实需要适应。",
       "summary": "Mute Nasal Dilator 是 Rhinomed 的内置鼻支架——插入鼻孔的小型柔性聚合物支架，从内部以机械方式撑开气道。有关于改善气流的已发表临床研究，已在 FDA 注册，每个支架可重复使用约 1 周。初期确实需要适应（头几晚会觉得别扭），部分坚持使用的用户反映，改善比外贴鼻贴更明显（用户反馈，未经测试）。",
-      "description": "ONDA 评测 Mute Nasal Dilator——Rhinomed 的临床型内置鼻支架，从内部以机械方式撑开鼻孔。从粘附、原理、证据和性价比打分。",
+      "description": "ONDA 评测 Mute Nasal Dilator——Rhinomed 的内置鼻扩张器，从内部以机械方式撑开鼻孔。从粘附、原理、证据和性价比打分。",
       "bestFor": "适合能接受内置器件、想要有临床证据支持的机械鼻扩张的顽固口呼吸者。",
       "testNote": "基于证据的评估——依据 Rhinomed 产品资料、FDA 注册信息及已发表的临床气流研究打分。ONDA 未进行实物测试。",
       "productType": "内置鼻支架扩张器",
@@ -1805,7 +1805,7 @@
       "description": "ONDA评选2026年十款最佳EEG与脑训练头戴设备——Muse、Neurosity Crown、Emotiv、Mendi、FocusCalm、Sens.ai、Myndlift、Flow、NeuroSky，涵盖EEG、fNIRS和tDCS，按信号、内容、开放性和性价比评分。",
       "intro": "2026年的消费级脑训练头戴设备市场并不是一种产品类型，而是三种：EEG测量头戴设备（Muse、Neurosity Crown、Emotiv、FocusCalm、NeuroSky）、fNIRS前额叶训练器（Mendi）以及tDCS刺激设备（Flow Neuroscience）。再加上临床处方的远程神经反馈平台（Myndlift）和高端多模态产品（Sens.ai），就是实际上决定购买讨论的十款设备。我们用同一套标准——信号质量、内容深度、洞察、舒适度、App体验、开放数据访问和性价比——为它们全部打分，使整个领域成为一份有序的清单，并让跨模态的取舍一目了然。",
       "verdict": "脑训练市场分为三种你不应混淆的模态。基于EEG的头戴设备——Muse S Athena、Muse 2、Neurosity Crown、Emotiv Insight 2、FocusCalm以及平价的NeuroSky——测量大脑电活动并实时反馈；大多数人说“脑训练”时指的就是这一类。fNIRS（Mendi）测量的则是前额叶血氧变化，这是不同的信号，用途也更窄。tDCS（Flow Neuroscience）根本不做测量——它作为临床抑郁症治疗手段，用微弱电流刺激背外侧前额叶皮层。Myndlift是建立在消费级硬件之上的临床处方参考平台，Sens.ai则是将EEG与光生物调节和HRV结合的多模态高端产品。在EEG中，Muse S Athena凭借内容深度、传感器融合和舒适度获得总冠军；想要原始数据的开发者选Neurosity Crown；性价比选Muse 2；学术工具链深度选Emotiv Insight 2。先选模态，再在其中选设备。",
-      "content": "## 快速回答\n\n2026年对大多数人来说最好的EEG头戴设备是**Muse S Athena**（$474.99）——最丰富的冥想反馈库、EEG加fNIRS，且无强制订阅。只用于冥想的话，**Muse 2**（$249.99）是性价比之选。如果你想要原始数据和开放SDK，选**Neurosity Crown**（$1,499）。如果你想要有监督的临床神经反馈，那就是通过持证服务提供者使用的**Myndlift**——它根本不是消费级头戴设备。\n\n## 对比表\n\n| 头戴设备 | 价格（美元） | 模态／传感器 | 最适合 |\n|---|---|---|---|\n| [Muse S Athena](/reviews/muse-s-athena) | $474.99 | 4通道干电极EEG + fNIRS | 冥想与睡眠，综合最佳 |\n| [Muse 2](/reviews/muse-2) | $249.99 | 4通道干电极EEG + PPG心率 | 预算有限的冥想反馈 |\n| [Neurosity Crown](/reviews/neurosity-crown) | $1,499 | 8个干电极EEG | 开发者、原始数据、专注 |\n| [Emotiv Insight 2](/reviews/emotiv-insight-2) | $499 + 原始数据Pro约$99/年 | 5个半干电极EEG | 研究与学术工具链 |\n| [Sens.ai](/reviews/sens-ai) | $1,250 + 会员（试用后$300/年或$75/月） | 5通道EEG + HRV + 近红外光 | 多模态高端训练 |\n| [Myndlift](/reviews/myndlift) | 通过服务提供者约$300–$600/月 | Muse 2硬件，临床医生方案 | 有监督的临床神经反馈 |\n| [Mendi](/reviews/mendi) | 标价$379（常有折扣） | fNIRS（非EEG） | 简单的前额叶训练游戏 |\n| [FocusCalm](/reviews/focuscalm) | $199 + 可选Plus | 1通道EEG | 最便宜的引导式EEG课程 |\n| [Flow Neuroscience](/reviews/flow-neuroscience) | 英国£399 + App订阅；美国仅限处方 | tDCS刺激（不测量） | 临床抑郁症治疗 |\n| [NeuroSky MindWave Mobile 2](/reviews/neurosky-mindwave-mobile-2) | 约$110 | 1通道EEG | 学生和业余开发者 |\n\n## 如何选择EEG头戴设备\n\n先从你想让头戴设备做什么开始，因为三种常见用途需要不同的硬件。\n\n**1. 冥想反馈。** 你想在走神时听到提示，并学会让心安定下来。重要的是App、引导内容和舒适度——而不是通道数。在这方面Muse S Athena和Muse 2领先；FocusCalm是更便宜的单通道替代品。对这一用途来说，原始数据无关紧要。\n\n**2. 神经反馈训练。** 你想在数周内训练特定的大脑模式（注意力、平静、临床医生的方案）。消费级App提供简化版本；针对ADHD、焦虑或睡眠问题的真正神经反馈由临床医生设计和调整，这正是Myndlift所提供的——不过盲法和假反馈对照试验显示，它对ADHD或失眠几乎没有特异性益处。Sens.ai介于两者之间，在EEG之上增加了光和HRV训练。\n\n**3. 开发者或原始数据工作。** 你想把信号流式传入自己的代码、做实验或开发App。根据SDK开放性和通道数来选：Neurosity Crown（8个电极、开放SDK、数据无需订阅）、Emotiv Insight 2（5通道，原始数据需Pro等级），或用极低预算学习的NeuroSky。\n\n购买前还有两项检查：**订阅模式**（Emotiv、Sens.ai和FocusCalm对部分体验额外收费；Muse和Crown不强制订阅）以及**舒适度**——如果你躺着冥想或想要睡眠数据，只有柔软的Muse S Athena头带是为此设计的。\n\n## 消费级EEG能测什么、不能测什么\n\n消费级EEG头戴设备通过干电极在头皮的少数几个位置测量微小的电压变化。这是真实的大脑信号：在2017年的一项验证研究中，Krigolson及其同事表明，四通道的Muse捕捉到的标准事件相关电位（N200和P300）可与研究级系统相媲美（[Frontiers in Neuroscience, doi:10.3389/fnins.2017.00109](https://doi.org/10.3389/fnins.2017.00109)）。\n\n它做不到的同样重要：\n\n- **通道少，大多在前额。** 四到八个电极无法像32或64通道的实验室电极帽那样定位活动。\n- **伪迹。** 眨眼、咬紧牙关、皱眉和身体移动产生的信号比大脑活动更大；好的App会过滤它们，但仍会出现噪声较大的训练。\n- **专有分数。** “平静”“专注”或“心流”数字是各公司自己的算法，不是经过验证的医学指标，不同品牌之间也无法比较。\n- **不能诊断。** 没有任何消费级头戴设备能诊断ADHD、焦虑、抑郁或睡眠障碍。\n\n诚实的说法是：把分数当作你自己训练中的趋势来使用。大多数人获得的益处来自反馈所鼓励的练习本身，任何效果都取决于规律练习。\n\n## 谁不必买EEG头戴设备\n\n- **想要压力或恢复数值的人。** 通过戒指或手表获得的心率变异性（HRV）更容易每天收集，而且在压力和恢复方面比消费级EEG分数研究得更充分——请参阅我们的[最佳HRV追踪器](/reviews/compare/best-hrv-trackers-2026)。\n- **寻求ADHD、抑郁或焦虑治疗的人**——请先找临床医生；Myndlift或Flow只有在这一途径中才有意义，而且神经反馈不能替代已确立的治疗。\n- **不会经常佩戴的买家。** 只用过两次的头戴设备，就是你拥有的最贵的冥想App。\n- **练习时不喜欢在头上戴任何东西的人**——单用一个引导式呼吸或冥想App可能就足够了。\n\n直接对比请参阅[Muse S Athena vs Muse 2 vs Neurosity Crown](/reviews/vs/muse-s-athena-vs-muse-2-vs-neurosity-crown)和[Neurosity Crown vs Emotiv Insight 2](/reviews/vs/neurosity-crown-vs-emotiv-insight-2)。\n\n## 我们如何排名\n\n每款设备都按照ONDA公开的[评测方法](/reviews/methodology)评分：七项加权标准，其中信号质量和训练内容深度权重最大。开放数据访问单独加权，因为生物黑客和研究者格外看重它，而消费级冥想用户几乎不会注意到——用一个掩盖这种差异的总分会产生误导。\n\n全部十款设备均依据制造商资料、可获得的已发表验证文献以及2026年独立评测进行评估，而非实物测试，因此请把这些分数当作基于证据的起点。\n\n## 最佳EEG与脑训练头戴设备：该买哪款？\n\n这一类别按模态和用途划分。\n\n**EEG测量（六款）：** Muse S Athena和Muse 2在内容深度上领先，Neurosity Crown在开发者访问上领先，Emotiv Insight 2在学术工具链集成上领先，FocusCalm在平价内容上领先，NeuroSky MindWave Mobile 2则撑起平价／教育层级。在这一组中，根据你的技术程度以及想要内容还是原始数据来选择。\n\n**fNIRS（Mendi）：** 不同的信号，不同的用途。只有当你想要的就是纯粹的前额叶注意力训练时才选它。\n\n**tDCS（Flow Neuroscience）：** 根本不是测量。仅用于临床抑郁症适应症。\n\n**多模态高端（Sens.ai）：** EEG + 光生物调节 + HRV集于一个课程。只有当你想要的正是多模态组合时才是正确选择。\n\n**临床参考（Myndlift）：** 在消费级硬件上居家进行处方神经反馈。是该类别中的临床参考选项。\n\n先决定模态，再在其中决定设备。这个类别足够小，这十款实际上就是2026年值得了解的全部头戴设备。",
+      "content": "## 快速回答\n\n2026年对大多数人来说最好的EEG头戴设备是**Muse S Athena**（$474.99）——最丰富的冥想反馈库、EEG加fNIRS，且无强制订阅。只用于冥想的话，**Muse 2**（$249.99）是性价比之选。如果你想要原始数据和开放SDK，选**Neurosity Crown**（$1,499）。如果你想要有监督的临床神经反馈，那就是通过持证服务提供者使用的**Myndlift**——它根本不是消费级头戴设备。\n\n## 对比表\n\n| 头戴设备 | 价格（美元） | 模态／传感器 | 最适合 |\n|---|---|---|---|\n| [Muse S Athena](/reviews/muse-s-athena) | $474.99 | 4通道干电极EEG + fNIRS | 冥想与睡眠，综合最佳 |\n| [Muse 2](/reviews/muse-2) | $249.99 | 4通道干电极EEG + PPG心率 | 预算有限的冥想反馈 |\n| [Neurosity Crown](/reviews/neurosity-crown) | $1,499 | 8个干电极EEG | 开发者、原始数据、专注 |\n| [Emotiv Insight 2](/reviews/emotiv-insight-2) | $499 + 原始数据Pro约$99/年 | 5个半干电极EEG | 研究与学术工具链 |\n| [Sens.ai](/reviews/sens-ai) | $1,250 + 会员（试用后$300/年或$75/月） | 5通道EEG + HRV + 近红外光 | 多模态高端训练 |\n| [Myndlift](/reviews/myndlift) | 通过服务提供者约$300–$600/月 | Muse 2硬件，临床医生方案 | 有监督的临床神经反馈 |\n| [Mendi](/reviews/mendi) | 标价$379（常有折扣） | fNIRS（非EEG） | 简单的前额叶训练游戏 |\n| [FocusCalm](/reviews/focuscalm) | $199 + 可选Plus | 1通道EEG | 最便宜的引导式EEG课程 |\n| [Flow Neuroscience](/reviews/flow-neuroscience) | 英国£399 + App订阅；美国仅限处方 | tDCS刺激（不测量） | 临床抑郁症治疗 |\n| [NeuroSky MindWave Mobile 2](/reviews/neurosky-mindwave-mobile-2) | 约$110 | 1通道EEG | 学生和业余开发者 |\n\n## 如何选择EEG头戴设备\n\n先从你想让头戴设备做什么开始，因为三种常见用途需要不同的硬件。\n\n**1. 冥想反馈。** 你想在走神时听到提示，并学会让心安定下来。重要的是App、引导内容和舒适度——而不是通道数。在这方面Muse S Athena和Muse 2领先；FocusCalm是更便宜的单通道替代品。对这一用途来说，原始数据无关紧要。\n\n**2. 神经反馈训练。** 你想在数周内训练特定的大脑模式（注意力、平静、临床医生的方案）。消费级App提供简化版本；针对ADHD、焦虑或睡眠问题的真正神经反馈由临床医生设计和调整，这正是Myndlift所提供的——不过盲法和假反馈对照试验显示，它对ADHD或失眠几乎没有特异性益处。Sens.ai介于两者之间，在EEG之上增加了光和HRV训练。\n\n**3. 开发者或原始数据工作。** 你想把信号流式传入自己的代码、做实验或开发App。根据SDK开放性和通道数来选：Neurosity Crown（8个电极、开放SDK、数据无需订阅）、Emotiv Insight 2（5通道，原始数据需Pro等级），或用极低预算学习的NeuroSky。\n\n购买前还有两项检查：**订阅模式**（Emotiv、Sens.ai和FocusCalm对部分体验额外收费；Muse和Crown不强制订阅）以及**舒适度**——如果你躺着冥想或想要睡眠数据，只有柔软的Muse S Athena头带是为此设计的。\n\n## 消费级EEG能测什么、不能测什么\n\n消费级EEG头戴设备通过干电极在头皮的少数几个位置测量微小的电压变化。这是真实的大脑信号：在2017年的一项验证研究中，Krigolson及其同事表明，四通道的Muse捕捉到的标准事件相关电位（N200和P300）可与研究级系统相媲美（[Frontiers in Neuroscience, doi:10.3389/fnins.2017.00109](https://doi.org/10.3389/fnins.2017.00109)）。\n\n它做不到的同样重要：\n\n- **通道少，大多在前额。** 四到八个电极无法像32或64通道的实验室电极帽那样定位活动。\n- **伪迹。** 眨眼、咬紧牙关、皱眉和身体移动产生的信号比大脑活动更大；好的App会过滤它们，但仍会出现噪声较大的训练。\n- **专有分数。** “平静”“专注”或“心流”数字是各公司自己的算法，不是经过验证的医学指标，不同品牌之间也无法比较。\n- **不能诊断。** 没有任何消费级头戴设备能诊断ADHD、焦虑、抑郁或睡眠障碍。\n\n诚实的说法是：把分数当作你自己训练中的趋势来使用。大多数人获得的益处来自反馈所鼓励的练习本身，任何效果都取决于规律练习。\n\n## 谁不必买EEG头戴设备\n\n- **想要压力或恢复数值的人。** 通过戒指或手表获得的心率变异性（HRV）更容易每天收集，而且在压力和恢复方面比消费级EEG分数研究得更充分——请参阅我们的[最佳HRV追踪器](/reviews/compare/best-hrv-trackers-2026)。\n- **寻求ADHD、抑郁或焦虑治疗的人**——请先找临床医生；Myndlift或Flow只有在这一途径中才有意义，而且神经反馈不能替代已确立的治疗。\n- **不会经常佩戴的买家。** 只用过两次的头戴设备，就是你拥有的最贵的冥想App。\n- **练习时不喜欢在头上戴任何东西的人**——单用一个引导式呼吸或冥想App可能就足够了。\n\n直接对比请参阅[Muse S Athena vs Muse 2 vs Neurosity Crown](/reviews/vs/muse-s-athena-vs-muse-2-vs-neurosity-crown)和[Neurosity Crown vs Emotiv Insight 2](/reviews/vs/neurosity-crown-vs-emotiv-insight-2)。\n\n## 我们如何排名\n\n每款设备都按照ONDA公开的[评测方法](/reviews/methodology)评分：七项加权标准，其中信号质量和训练内容深度权重最大。开放数据访问单独加权，因为生物黑客和研究者格外看重它，而消费级冥想用户几乎不会注意到——用一个掩盖这种差异的总分会产生误导。\n\n全部十款设备均依据制造商资料、可获得的已发表验证文献以及2026年独立评测进行评估，而非实物测试，因此请把这些分数当作基于证据的起点。\n\n## 最佳EEG与脑训练头戴设备：该买哪款？\n\n这一类别按模态和用途划分。\n\n**EEG测量（六款）：** Muse S Athena和Muse 2在内容深度上领先，Neurosity Crown在开发者访问上领先，Emotiv Insight 2在学术工具链集成上领先，FocusCalm在平价内容上领先，NeuroSky MindWave Mobile 2则撑起平价／教育层级。在这一组中，根据你的技术程度以及想要内容还是原始数据来选择。\n\n**fNIRS（Mendi）：** 不同的信号，不同的用途。只有当你想要的就是纯粹的前额叶注意力训练时才选它。\n\n**tDCS（Flow Neuroscience）：** 根本不是测量。仅用于临床抑郁症适应症。\n\n**多模态高端（Sens.ai）：** EEG + 光生物调节 + HRV集于一个课程。只有当你想要的正是多模态组合时才是正确选择。\n\n**临床医生监督（Myndlift）：** 在消费级硬件上居家进行处方神经反馈。是该类别中由临床医生监督的选项。\n\n先决定模态，再在其中决定设备。这个类别足够小，这十款实际上就是2026年值得了解的全部头戴设备。",
       "picks": {
         "muse-s-athena": {
           "award": "综合最佳",
@@ -2141,7 +2141,7 @@
       "title": "2026 年最佳闭口胶带与鼻呼吸辅助产品",
       "description": "ONDA 为 2026 年最佳闭口胶带与鼻呼吸辅助产品排名——Hostage Tape、Somnifix、Dream Recovery、Intake Breathing、Mute、Breathe Right、Nexcare、AYO、SomniFit、The Tape Co. 和 SleepRight。从粘附、原理、安全性和性价比打分。",
       "intro": "2024–2026 年，闭口贴（mouth taping）和鼻呼吸辅助产品走向大众，推动力来自 James Nestor 的《Breath》、Wim Hof 的跨界影响以及 Hostage Tape 的品牌爆红。这个品类已分化出清晰的层级：生物黑客品牌闭口胶带（Hostage Tape、Dream Recovery、The Tape Co.）、FDA 注册的闭口胶带（Somnifix）、DIY 医用胶带替代方案（3M Nexcare），以及与之并行的鼻扩张器品类（Intake Breathing 磁吸式、Mute 内置支架、Breathe Right 药店外贴式）。我们按同样的六个维度为 2026 年最可靠的十款产品打分：粘附舒适度、呼吸原理、证据基础与安全性、外形、材料安全和性价比。",
-      "verdict": "Hostage Tape 综合胜出，是定义 2026 年品类的生物黑客闭口胶带——胶粘剂对胡须友好，订阅便利，品牌精致。Somnifix 已在 FDA 注册（这是登记，不是许可或批准），采用透气设计。Intake Breathing 是高端外置鼻扩张器（James Nestor 推荐）。Mute 是临床型内置支架。Breathe Right 是每个人都应该先试的药店入门款。Nexcare 是无可匹敌的 DIY 省钱之选。按三个问题来选：闭口胶带还是鼻扩张器，对胡须友好还是适合敏感肌，订阅便利还是 DIY 省钱。",
+      "verdict": "Hostage Tape 综合胜出，是定义 2026 年品类的生物黑客闭口胶带——胶粘剂对胡须友好，订阅便利，品牌精致。Somnifix 已在 FDA 注册（这是登记，不是许可或批准），采用透气设计。Intake Breathing 是高端外置鼻扩张器（James Nestor 推荐）。Mute 是内置鼻扩张器。Breathe Right 是每个人都应该先试的药店入门款。Nexcare 是无可匹敌的 DIY 省钱之选。按三个问题来选：闭口胶带还是鼻扩张器，对胡须友好还是适合敏感肌，订阅便利还是 DIY 省钱。",
       "content": "## 我们如何排名\n\n每款产品都按 ONDA 公开的[评测方法](/reviews/methodology)打分：六项加权标准，其中粘附舒适度和材料安全被刻意赋予较高权重——这个品类中最容易让用户困惑的，正是皮肤刺激问题，以及与临床现实关联薄弱的网红健康营销。\n\n十款产品都是依据厂商资料、FDA 注册记录和 2026 年的大规模用户评价进行评估，而非实物测试。\n\n## 最佳闭口胶带与鼻呼吸辅助产品：该买哪款？\n\n三个购买问题就能把这个品类理清楚：\n\n**闭口胶带还是鼻扩张器？** 闭口胶带（封住嘴巴，迫使用鼻呼吸）：Hostage Tape、Somnifix、Dream Recovery、Nexcare DIY、AYO、SomniFit、The Tape Co.。鼻扩张器（撑宽鼻腔通道）：Intake Breathing、Mute、Breathe Right、SleepRight。\n\n**对胡须友好还是适合敏感肌？** 对胡须友好：Hostage Tape（明显胜出）。敏感肌：Dream Recovery 硅胶款、AYO K-beauty 低敏款。两者都不涉及：Somnifix、SomniFit、Nexcare DIY 都可以。\n\n**订阅便利还是 DIY 省钱？** 订阅：为了便利选 Hostage Tape（$13/月）。DIY 省钱：Nexcare Surgical Tape（每晚约 $0.05）。中档、无订阅：Somnifix、Dream Recovery、AYO、SomniFit、The Tape Co.。\n\nHostage Tape 主导消费品牌闭口胶带层级；Somnifix 是已在 FDA 注册的选择；Intake Breathing 和 Mute 平分高端鼻扩张器市场；Breathe Right 和 Nexcare 覆盖药店 / DIY 省钱层级。",
       "picks": {
         "hostage-tape": {
@@ -2161,7 +2161,7 @@
           "takeaway": "磁吸外置扩张器，James Nestor 推荐，可重复使用，胶片可更换。"
         },
         "mute-nasal-dilator": {
-          "award": "最佳临床型内置支架",
+          "award": "最佳内置鼻扩张器",
           "takeaway": "Rhinomed 内置聚合物支架，有已发表的气流研究——扩张器中原理最强。"
         },
         "breathe-right-original": {
@@ -3289,7 +3289,7 @@
       "bestForB": "如果你想要稍便宜、带 20 分钟选项且宣称辐照度更高的生活方式面罩，选择 HigherDOSE Red Light Face Mask。",
       "axes": [
         {
-          "name": "临床记录",
+          "name": "已发表试验",
           "note": "基本持平：两款面罩都没有针对自身的独立试验（截至 2026 年 10 月）。Omnilux 已发表的研究针对的是其他型号；HigherDOSE 引用的是自家为期 8 周、结果为自我报告的试验。两者都被描述为获得 FDA 许可（Omnilux：510(k) K191629）。"
         },
         {
@@ -3751,7 +3751,7 @@
     },
     "intake-breathing-vs-mute-nasal-dilator": {
       "title": "Intake Breathing 对比 Mute Nasal Dilator（2026）",
-      "description": "Intake Breathing 对比 Mute Nasal Dilator——高端外置磁吸扩张器 vs 临床型内置支架。ONDA 拆解高端鼻扩张器对决。",
+      "description": "Intake Breathing 对比 Mute Nasal Dilator——高端外置磁吸扩张器 vs 内置鼻扩张器。ONDA 拆解高端鼻扩张器对决。",
       "intro": "当外贴鼻贴不够用时，Intake Breathing 和 Mute Nasal Dilator 是用户最常比较的两款高端鼻扩张器。决定性差异在于：Intake 是外置磁吸扩张（脸上可见）；Mute 是内置聚合物支架（看不见，但需要插入鼻孔）。",
       "verdict": "外部可见 vs 内置耐受。想要无需插入的外置磁吸方案，选 Intake Breathing。想要看不见的内置支架、最强的机械原理和已发表的临床气流研究，选 Mute。",
       "bestForA": "如果你想要高端外置磁吸鼻扩张、不需要插入鼻内，选 Intake Breathing。",

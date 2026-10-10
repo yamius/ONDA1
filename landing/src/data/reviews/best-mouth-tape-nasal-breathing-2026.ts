@@ -31,7 +31,7 @@ const bestMouthTapeNasalBreathing2026: Comparison = {
     },
     {
       reviewSlug: 'mute-nasal-dilator',
-      award: 'Best clinical internal stent',
+      award: 'Best internal nasal dilator',
       takeaway: 'Rhinomed internal polymer stent with published airflow studies — strongest mechanism in dilators.',
     },
     {
@@ -61,7 +61,7 @@ const bestMouthTapeNasalBreathing2026: Comparison = {
     },
   ],
   verdict:
-    'Hostage Tape wins overall as the category-defining 2026 biohacker mouth tape — beard-friendly adhesive, subscription convenience, polished brand. Somnifix is FDA-registered (a listing, not clearance or approval) with a porous design. Intake Breathing is the premium external nasal dilator (James Nestor-recommended). Mute is the clinical internal stent. Breathe Right is the drugstore starting point everyone should try first. Nexcare is the unbeatable DIY budget pick. Pick on three questions: mouth tape vs nasal dilator, beard-friendly vs sensitive-skin, subscription convenience vs DIY economics.',
+    'Hostage Tape wins overall as the category-defining 2026 biohacker mouth tape — beard-friendly adhesive, subscription convenience, polished brand. Somnifix is FDA-registered (a listing, not clearance or approval) with a porous design. Intake Breathing is the premium external nasal dilator (James Nestor-recommended). Mute is the internal nasal dilator. Breathe Right is the drugstore starting point everyone should try first. Nexcare is the unbeatable DIY budget pick. Pick on three questions: mouth tape vs nasal dilator, beard-friendly vs sensitive-skin, subscription convenience vs DIY economics.',
   faq: [
     {
       q: 'What is the best mouth tape in 2026?',

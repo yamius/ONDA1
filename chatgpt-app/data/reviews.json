@@ -3,75 +3,6 @@
   "source": "https://onda-life.com/reviews",
   "reviews": [
     {
-      "slug": "oura-ring-4",
-      "name": "Oura Ring 4",
-      "brand": "Oura",
-      "category": "hrv-wearable",
-      "productType": "Smart ring",
-      "url": "https://onda-life.com/reviews/oura-ring-4",
-      "categoryUrl": "https://onda-life.com/reviews/hrv-trackers",
-      "priceUsd": 349,
-      "priceNote": "from $349 (Silver/Black; premium finishes $399–$499) — still sold by Oura alongside the Ring 5 (from $399) and often discounted at retailers; + $5.99/month or $69.99/year membership required for full data (first month free)",
-      "priceAsOf": "2026-10-01",
-      "score": 7.7,
-      "scores": [
-        {
-          "id": "hrv-accuracy",
-          "score": 8.5,
-          "note": "Nighttime RMSSD stayed close to an ECG reference in overnight recordings from 13 people (Dial 2025); earlier close-agreement results come from Oura’s own validation work. Daytime readings drift under motion."
-        },
-        {
-          "id": "sensor",
-          "score": 8,
-          "note": "Optical PPG from the finger holds a clean signal overnight — the window that matters most for HRV."
-        },
-        {
-          "id": "sleep-accuracy",
-          "score": 7.5,
-          "note": "A 96-person polysomnography study of the Oura algorithm found 76–91% per-stage accuracy, but it was funded by Oura, and maker-funded studies do not count as evidence in ONDA scores; no independent check of the Ring 4’s sleep staging was found. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not."
-        },
-        {
-          "id": "data-access",
-          "score": 6.5,
-          "note": "A developer API exists, but raw beat-to-beat data is limited and deeper analysis sits behind the membership."
-        },
-        {
-          "id": "wearability",
-          "score": 8.5,
-          "note": "One of the smallest always-on form factors in the category; a 4 to 7 day battery with brief charges."
-        },
-        {
-          "id": "app-ux",
-          "score": 8.5,
-          "note": "A polished app that explains Readiness and HRV rather than reducing everything to one opaque number."
-        },
-        {
-          "id": "value",
-          "score": 6,
-          "note": "From 349 USD plus a mandatory 5.99 USD/month membership — capable, but never fully owned."
-        }
-      ],
-      "verdict": "Still an excellent overnight HRV and sleep tracker — now one step below the slimmer, upgraded-sensor Oura Ring 5, but sharing the same new software and often the better value discounted. Mandatory subscription remains.",
-      "bestFor": "Best for overnight HRV with one independent ECG check (13 people) and sleep data at the lowest Oura price.",
-      "pros": [
-        "In overnight recordings from 13 people (Dial 2025), Oura Ring 4 was among the closest matches to ECG",
-        "Sleep staging of an earlier generation (Gen 3) was compared with polysomnography in Oura-funded studies; no independent validation of Ring 4 sleep staging",
-        "Small, comfortable 24/7 form factor",
-        "Gets the same new software as the Ring 5, for $50 less"
-      ],
-      "cons": [
-        "Advanced data requires a $5.99/month membership",
-        "Daytime and exercise HRV is unreliable under motion",
-        "Limited access to raw data",
-        "No display — every glance means reaching for the phone"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": "RMSSD",
-      "worksWithOnda": "partly",
-      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
-      "dateModified": "2026-10-10"
-    },
-    {
       "slug": "apple-watch-ultra-4",
       "name": "Apple Watch Ultra 4",
       "brand": "Apple",
@@ -205,6 +136,75 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "RR-intervals",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
+      "dateModified": "2026-10-10"
+    },
+    {
+      "slug": "oura-ring-4",
+      "name": "Oura Ring 4",
+      "brand": "Oura",
+      "category": "hrv-wearable",
+      "productType": "Smart ring",
+      "url": "https://onda-life.com/reviews/oura-ring-4",
+      "categoryUrl": "https://onda-life.com/reviews/hrv-trackers",
+      "priceUsd": 349,
+      "priceNote": "from $349 (Silver/Black; premium finishes $399–$499) — still sold by Oura alongside the Ring 5 (from $399) and often discounted at retailers; + $5.99/month or $69.99/year membership required for full data (first month free)",
+      "priceAsOf": "2026-10-01",
+      "score": 7.6,
+      "scores": [
+        {
+          "id": "hrv-accuracy",
+          "score": 8,
+          "note": "Nighttime RMSSD stayed close to an ECG reference in one independent validation (Dial 2025: overnight recordings, 536 nights from 13 people); earlier close-agreement results come from Oura’s own validation work. Daytime readings drift under motion. ONDA rule: a single independent validation under narrow conditions (here, night only) caps accuracy at 8.0."
+        },
+        {
+          "id": "sensor",
+          "score": 8,
+          "note": "Optical PPG from the finger holds a clean signal overnight — the window that matters most for HRV."
+        },
+        {
+          "id": "sleep-accuracy",
+          "score": 7.5,
+          "note": "A 96-person polysomnography study of the Oura algorithm found 76–91% per-stage accuracy, but it was funded by Oura, and maker-funded studies do not count as evidence in ONDA scores; no independent check of the Ring 4’s sleep staging was found. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not."
+        },
+        {
+          "id": "data-access",
+          "score": 6.5,
+          "note": "A developer API exists, but raw beat-to-beat data is limited and deeper analysis sits behind the membership."
+        },
+        {
+          "id": "wearability",
+          "score": 8.5,
+          "note": "One of the smallest always-on form factors in the category; a 4 to 7 day battery with brief charges."
+        },
+        {
+          "id": "app-ux",
+          "score": 8.5,
+          "note": "A polished app that explains Readiness and HRV rather than reducing everything to one opaque number."
+        },
+        {
+          "id": "value",
+          "score": 6,
+          "note": "From 349 USD plus a mandatory 5.99 USD/month membership — capable, but never fully owned."
+        }
+      ],
+      "verdict": "Still an excellent overnight HRV and sleep tracker — now one step below the slimmer, upgraded-sensor Oura Ring 5, but sharing the same new software and often the better value discounted. Mandatory subscription remains.",
+      "bestFor": "Best for overnight HRV with one independent ECG check (13 people) and sleep data at the lowest Oura price.",
+      "pros": [
+        "In overnight recordings from 13 people (Dial 2025), Oura Ring 4 was among the closest matches to ECG",
+        "Sleep staging of an earlier generation (Gen 3) was compared with polysomnography in Oura-funded studies; no independent validation of Ring 4 sleep staging",
+        "Small, comfortable 24/7 form factor",
+        "Gets the same new software as the Ring 5, for $50 less"
+      ],
+      "cons": [
+        "Advanced data requires a $5.99/month membership",
+        "Daytime and exercise HRV is unreliable under motion",
+        "Limited access to raw data",
+        "No display — every glance means reaching for the phone"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": "RMSSD",
       "worksWithOnda": "partly",
       "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-10-10"
@@ -8807,13 +8807,13 @@
           "note": "Completely free with no premium tier. Unbeatable value for the evidence base."
         }
       ],
-      "verdict": "Best evidence-backed free breathwork app — built by US military telehealth for PTSD and stress; clinical credibility no other free app matches.",
+      "verdict": "Best evidence-backed free breathwork app — built by US military telehealth for PTSD and stress; it teaches well-documented diaphragmatic breathing at zero cost.",
       "bestFor": "Best for users wanting evidence-backed diaphragmatic breathing at zero cost — especially in clinical / PTSD / stress-management contexts.",
       "pros": [
         "Best evidence base of any free breathwork app — published PTSD / stress validation",
         "Completely free with no subscription or ads",
         "Built by US Department of Defense / National Center for Telehealth",
-        "Clinical credibility no consumer app matches at zero cost"
+        "Teaches a well-documented breathing technique at zero cost"
       ],
       "cons": [
         "Dated UI from original government-build era",
@@ -9457,7 +9457,7 @@
         "Strong consumer brand recognition"
       ],
       "cons": [
-        "Modest irradiance vs clinical references",
+        "Modest irradiance vs in-clinic LED panels",
         "Single wavelength only (red 660 nm)",
         "Narrow per-zone coverage — requires active use",
         "Light clinical-evidence base"
@@ -11048,7 +11048,7 @@
           "note": "$1,099 — premium pricing. Justified by maker-rated H14 filtration; expensive vs Dyson / Coway alternatives with smart features."
         }
       ],
-      "verdict": "The clinical reference — HyperHEPA H14 filtration captures 99.5% of particles at 0.003 microns, multi-decade brand pedigree, used in COVID-19 hospital deployments.",
+      "verdict": "The premium filtration pick — HyperHEPA H14 filtration captures 99.5% of particles at 0.003 microns, multi-decade brand pedigree, used in COVID-19 hospital deployments.",
       "bestFor": "Best for users wanting maker-rated H14 HEPA filtration (company-stated) with multi-decade Swiss pedigree — accept lack of smart features.",
       "pros": [
         "HyperHEPA H14 — deepest filtration in consumer category",
@@ -11531,7 +11531,7 @@
       "winnerStatus": "winner",
       "label": "WINNER: Oura Ring 4",
       "onda_scores": {
-        "oura-ring-4": 7.7,
+        "oura-ring-4": 7.6,
         "whoop-5-0": 7.3,
         "apple-watch-series-11": 7.2
       },
@@ -11597,7 +11597,7 @@
       "winnerStatus": "winner",
       "label": "WINNER: Oura Ring 4",
       "onda_scores": {
-        "oura-ring-4": 7.7,
+        "oura-ring-4": 7.6,
         "ultrahuman-ring-air": 6.9,
         "ringconn-gen-2": 7
       },
@@ -12143,7 +12143,7 @@
       },
       "axes": [
         {
-          "name": "Clinical record",
+          "name": "Published trials",
           "winner": "tie",
           "note": "Practically equal: neither mask has an independent trial of its own (as of October 2026). Omnilux’s published studies are on other models; HigherDOSE cites its own 8-week trial with self-reported results. Both are described as FDA-cleared (Omnilux: 510(k) K191629)."
         },
@@ -12328,7 +12328,7 @@
       "winnerStatus": "winner",
       "label": "WINNER: Oura Ring 4",
       "onda_scores": {
-        "oura-ring-4": 7.7,
+        "oura-ring-4": 7.6,
         "whoop-5-0": 7.3
       },
       "verdict": "Oura Ring 4 wins for most users — the same overnight HRV signal in a smaller, more wearable package, with better sleep analytics. Whoop 5.0 wins for athletes whose training is structured around a daily recovery score.",
@@ -12387,7 +12387,7 @@
       "winnerStatus": "winner",
       "label": "WINNER: Oura Ring 4",
       "onda_scores": {
-        "oura-ring-4": 7.7,
+        "oura-ring-4": 7.6,
         "apple-watch-series-11": 7.2
       },
       "verdict": "Oura Ring 4 wins for HRV, sleep and passive recovery tracking. Apple Watch wins as a general-purpose smartwatch — but it is not really the right tool for the HRV job.",
@@ -12579,7 +12579,7 @@
       "winnerStatus": "winner",
       "label": "WINNER: Oura Ring 4",
       "onda_scores": {
-        "oura-ring-4": 7.7,
+        "oura-ring-4": 7.6,
         "ultrahuman-ring-air": 6.9
       },
       "verdict": "Oura Ring 4 wins overall — deeper analytics, cleaner sleep model, and the membership is small relative to the difference in software. Ultrahuman wins for users who want no subscription and full integration with the Ultrahuman M1 CGM.",
@@ -12641,9 +12641,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Oura Ring 4 (7.7 vs 7.1)",
+      "label": "Higher ONDA score: Oura Ring 4 (7.6 vs 7.1)",
       "onda_scores": {
-        "oura-ring-4": 7.7,
+        "oura-ring-4": 7.6,
         "samsung-galaxy-ring": 7.1
       },
       "verdict": "Tie that breaks on ecosystem. Oura Ring 4 wins for iPhone users and cross-platform households. Samsung Galaxy Ring wins for users already inside Samsung Health on Android with Galaxy Watch and Galaxy phones.",
@@ -12966,9 +12966,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Oura Ring 4 (7.7 vs 7.0)",
+      "label": "Higher ONDA score: Oura Ring 4 (7.6 vs 7.0)",
       "onda_scores": {
-        "oura-ring-4": 7.7,
+        "oura-ring-4": 7.6,
         "ringconn-gen-2": 7
       },
       "verdict": "Depends on what you value. Oura Ring 4 wins on app maturity and analytics depth. RingConn Gen 2 wins on battery, subscription-free model and total cost of ownership.",
@@ -13330,10 +13330,10 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
-      "label": "Practically equal by ONDA score (7.7 and 7.6)",
+      "label": "Practically equal by ONDA score (7.6 and 7.6)",
       "onda_scores": {
         "apple-watch-series-12": 7.6,
-        "oura-ring-4": 7.7
+        "oura-ring-4": 7.6
       },
       "verdict": "No overall winner — it splits by what you want. For hands-off overnight HRV and sleep, the Oura Ring 4 leads: it records continuously overnight, has an independent HRV check against ECG (overnight recordings from 13 people, Dial 2025), and its battery lasts days. For an all-round smartwatch with ECG, hypertension notifications and no subscription, the Series 12 wins — its HRV is now usable as a personal trend.",
       "bestFor": {
@@ -16095,7 +16095,7 @@
         {
           "name": "Insomnia outcomes",
           "winner": "a",
-          "note": "Sleepio is the clinical reference for digital CBT-I — RCT-validated improvement in insomnia severity. Pzizz does not target clinical insomnia."
+          "note": "Sleepio is the clinical reference for digital CBT-I (many of its trials were run by its developer) — RCT-validated improvement in insomnia severity. Pzizz does not target clinical insomnia."
         },
         {
           "name": "Sleep-onset audio quality",
@@ -17561,11 +17561,11 @@
         "whoop-5-0",
         "garmin-venu-4"
       ],
-      "winner": "oura-ring-4",
-      "winnerStatus": "winner",
-      "label": "WINNER: Oura Ring 4",
+      "winner": null,
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.6, 7.5 and 7.3)",
       "onda_scores": {
-        "oura-ring-4": 7.7,
+        "oura-ring-4": 7.6,
         "whoop-5-0": 7.3,
         "garmin-venu-4": 7.5
       },
@@ -18941,10 +18941,10 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
-      "label": "Practically equal by ONDA score (7.7 and 7.6)",
+      "label": "Practically equal by ONDA score (7.6 and 7.6)",
       "onda_scores": {
         "oura-ring-5": 7.6,
-        "oura-ring-4": 7.7
+        "oura-ring-4": 7.6
       },
       "verdict": "If you are buying fresh, the Oura Ring 5 is the one to get — slimmer, better sensors, longer battery. If you already own a Ring 4, hold: the new app features roll out to your ring too, so you would be paying for sensors and fit, not new capability. The mandatory subscription applies to both.",
       "bestFor": {
@@ -19427,10 +19427,10 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Oura Ring 4 (7.7 vs 6.6)",
+      "label": "Higher ONDA score: Oura Ring 4 (7.6 vs 6.6)",
       "onda_scores": {
         "amazfit-helio-ring": 6.6,
-        "oura-ring-4": 7.7
+        "oura-ring-4": 7.6
       },
       "verdict": "Budget vs reference. The Amazfit Helio Ring wins decisively on cost — $199, no subscription — and is light and comfortable. Oura Ring 4 has an independent check against ECG (overnight recordings from 13 people, Dial 2025); Amazfit Helio Ring has none. Oura also wins on battery, app polish and fit range, at $349 plus ~$6/month. If money and no-subscription are the priority, Helio; if accuracy and experience are, Oura.",
       "bestFor": {
@@ -20021,10 +20021,10 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Oura Ring 4 (7.7 vs 6.7)",
+      "label": "Higher ONDA score: Oura Ring 4 (7.6 vs 6.7)",
       "onda_scores": {
         "luna-ring": 6.7,
-        "oura-ring-4": 7.7
+        "oura-ring-4": 7.6
       },
       "verdict": "Value vs reference. The Noise Luna Ring Gen 2 wins on cost — ~$300, no subscription — with competent sleep tracking and a charging case for long total battery. Oura Ring 4 has an independent check against ECG (overnight recordings from 13 people, Dial 2025); Luna Ring has none. Oura also wins on app polish, fit range and single-charge battery, at $349 plus ~$6/month. If price and no-subscription matter most, Luna; if accuracy and experience do, Oura.",
       "bestFor": {
@@ -20406,7 +20406,7 @@
       "winnerStatus": "winner",
       "label": "WINNER: Oura Ring 4",
       "onda_scores": {
-        "oura-ring-4": 7.7,
+        "oura-ring-4": 7.6,
         "fitbit-charge-6": 6.8
       },
       "verdict": "Different budgets, different jobs. Oura Ring 4 is the stronger pick for sleep and HRV and the better recovery tool — if you accept ~$6/month on top of $349. Fitbit Charge 6 is the honest budget pick: $159, reliable, and enough to start, with real depth locked behind Premium.",
@@ -21117,9 +21117,9 @@
           "note": "iBreathe: box, 4-7-8, custom timings. Breathe2Relax: diaphragmatic / paced breathing only."
         },
         {
-          "name": "Clinical credibility",
+          "name": "Developer",
           "winner": "b",
-          "note": "Breathe2Relax: DoD / National Center for Telehealth pedigree. iBreathe: indie developer."
+          "note": "Breathe2Relax: developed by the US Department of Defense’s National Center for Telehealth & Technology. iBreathe: indie developer."
         },
         {
           "name": "Cost",
@@ -23512,7 +23512,7 @@
         },
         {
           "review": "mute-nasal-dilator",
-          "award": "Best clinical internal stent",
+          "award": "Best internal nasal dilator",
           "takeaway": "Rhinomed internal polymer stent with published airflow studies — strongest mechanism in dilators."
         },
         {

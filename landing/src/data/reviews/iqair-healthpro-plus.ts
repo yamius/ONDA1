@@ -9,7 +9,7 @@ const iqairHealthPro: ToolReviewInput = {
   description:
     'ONDA review of the IQAir HealthPro Plus — Swiss-engineered HyperHEPA H14 air purifier with maker-rated H14 filtration (company-stated). Scored on filtration, CADR, build and value.',
   verdict:
-    'The clinical reference — HyperHEPA H14 filtration captures 99.5% of particles at 0.003 microns, multi-decade brand pedigree, used in COVID-19 hospital deployments.',
+    'The premium filtration pick — HyperHEPA H14 filtration captures 99.5% of particles at 0.003 microns, multi-decade brand pedigree, used in COVID-19 hospital deployments.',
   summary:
     'IQAir HealthPro Plus is a Swiss-engineered purifier whose HyperHEPA filter is rated H14 by the maker (company-stated), capturing 99.5% of particles down to 0.003 microns (vs True HEPA H13 at 0.3 microns), heavy V5-Cell activated-carbon module for VOC capture, multi-stage 1125 sq ft coverage. Used in hospital deployments and clinical contexts. Premium pricing reflects that filtration spec.',
   scores: [

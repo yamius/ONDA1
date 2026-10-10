@@ -1,7 +1,7 @@
 import type { HeadToHeadInput } from '../types'
 
 /**
- * Omnilux Contour Face vs HigherDOSE Red Light Face Mask — clinical reference vs lifestyle mask.
+ * Omnilux Contour Face vs HigherDOSE Red Light Face Mask — higher-scored mask vs lifestyle mask.
  * Facts verified 2026-10-04 on official product pages: Omnilux $395, 633 nm + 830 nm,
  * 132 LEDs, ~30 mW/cm², 10-min sessions, FDA 510(k) K191629; HigherDOSE $349, 630 nm (26 mW/cm²)
  * + 830 nm (24 mW/cm²), 50 mW/cm² total claimed, 132 diodes, 10 or 20-min sessions,
@@ -23,7 +23,7 @@ const omniluxContourFaceVsHigherdoseRedLightFaceMask: HeadToHeadInput = {
   bestForB:
     'Choose HigherDOSE Red Light Face Mask if you want a slightly cheaper lifestyle mask with a 20-minute option and higher claimed irradiance.',
   axes: [
-    { name: 'Clinical record', winner: 'tie', note: 'Practically equal: neither mask has an independent trial of its own (as of October 2026). Omnilux’s published studies are on other models; HigherDOSE cites its own 8-week trial with self-reported results. Both are described as FDA-cleared (Omnilux: 510(k) K191629).' },
+    { name: 'Published trials', winner: 'tie', note: 'Practically equal: neither mask has an independent trial of its own (as of October 2026). Omnilux’s published studies are on other models; HigherDOSE cites its own 8-week trial with self-reported results. Both are described as FDA-cleared (Omnilux: 510(k) K191629).' },
     { name: 'Wavelengths', winner: 'tie', note: 'Omnilux: red 633 nm + near-infrared 830 nm. HigherDOSE: red 630 nm + near-infrared 830 nm — effectively the same pair.' },
     { name: 'LEDs', winner: 'tie', note: 'Both use 66 dual-chip LEDs for 132 light sources across the face; neither includes a neck section.' },
     { name: 'Irradiance claim', winner: 'b', note: 'HigherDOSE claims 50 mW/cm² total (26 red + 24 near-infrared); Omnilux states about 30 mW/cm².' },

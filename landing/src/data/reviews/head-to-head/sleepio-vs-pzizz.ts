@@ -21,7 +21,7 @@ const sleepioVsPzizz: HeadToHeadInput = {
     { name: 'Mechanism', winner: 'a', note: 'Sleepio: structured CBT-I (sleep restriction, stimulus control, cognitive techniques). Pzizz: generative audio with overlapping voice and music. Sleepio targets the disorder; Pzizz aids the moment.' },
     { name: 'Time to effect', winner: 'b', note: 'Sleepio: 6-week structured programme, effects build over weeks. Pzizz: immediate per-session use. Pzizz is the right shape if you want help tonight.' },
     { name: 'Commitment level', winner: 'b', note: 'Sleepio requires weekly engagement with a structured programme — sleep diary, exercises, sessions. Pzizz is press-play.' },
-    { name: 'Insomnia outcomes', winner: 'a', note: 'Sleepio is the clinical reference for digital CBT-I — RCT-validated improvement in insomnia severity. Pzizz does not target clinical insomnia.' },
+    { name: 'Insomnia outcomes', winner: 'a', note: 'Sleepio is the clinical reference for digital CBT-I (many of its trials were run by its developer) — RCT-validated improvement in insomnia severity. Pzizz does not target clinical insomnia.' },
     { name: 'Sleep-onset audio quality', winner: 'b', note: 'Pzizz’s generative dreamscape audio is purpose-built for sleep onset — overlapping narration plus tones. Sleepio is therapy programme; audio is not the centre.' },
     { name: 'Daytime use', winner: 'b', note: 'Pzizz includes a nap mode and focus mode. Sleepio is sleep-only.' },
     { name: 'Price', winner: 'b', note: 'Pzizz: $59/year. Sleepio: free where NHS-prescribed, otherwise enterprise/employer-routed in the US (varies). For most direct consumers Pzizz is the cheaper option.' },

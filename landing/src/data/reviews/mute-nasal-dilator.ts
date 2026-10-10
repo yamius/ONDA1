@@ -7,7 +7,7 @@ const muteNasal: ToolReviewInput = {
   category: 'breathing-aid',
   productType: 'Internal nasal stent dilator',
   description:
-    'ONDA review of the Mute Nasal Dilator — Rhinomed\'s clinical internal nasal stent that mechanically holds nostrils open from inside. Scored on adhesion, mechanism, evidence and value.',
+    'ONDA review of the Mute Nasal Dilator — Rhinomed\'s internal nasal dilator that mechanically holds nostrils open from inside. Scored on adhesion, mechanism, evidence and value.',
   verdict:
     'Best internal nasal stent — mechanically holds airway from inside, clinical published evidence, reusable. Initial adaptation curve is real.',
   summary:

@@ -21,7 +21,7 @@ const ibreatheVsB2r: HeadToHeadInput = {
     { name: 'Evidence base', winner: 'b', note: 'Breathe2Relax: published PTSD and stress validation studies via US National Center for Telehealth. iBreathe: no comparable validation.' },
     { name: 'Apple Watch', winner: 'a', note: 'iBreathe: native Apple Watch support. Breathe2Relax: phone-only.' },
     { name: 'Technique scope', winner: 'a', note: 'iBreathe: box, 4-7-8, custom timings. Breathe2Relax: diaphragmatic / paced breathing only.' },
-    { name: 'Clinical credibility', winner: 'b', note: 'Breathe2Relax: DoD / National Center for Telehealth pedigree. iBreathe: indie developer.' },
+    { name: 'Developer', winner: 'b', note: 'Breathe2Relax: developed by the US Department of Defense’s National Center for Telehealth & Technology. iBreathe: indie developer.' },
     { name: 'Cost', winner: 'tie', note: 'Both completely free. iBreathe has optional $5 premium for ad removal; Breathe2Relax has no premium tier.' },
   ],
   faq: [
@@ -30,8 +30,8 @@ const ibreatheVsB2r: HeadToHeadInput = {
       a: 'iBreathe for modern UI and Apple Watch support if you want a daily-use minimalist timer. Breathe2Relax for clinical evidence base in stress / PTSD contexts. Different use cases.',
     },
     {
-      q: 'Why is Breathe2Relax free with clinical credibility?',
-      a: 'Built by the US National Center for Telehealth & Technology (Department of Defense) for veteran PTSD and stress management. Tax-funded; published validation studies; no commercial pressure to monetise.',
+      q: 'Why is Breathe2Relax free?',
+      a: 'It was developed by the US Department of Defense’s National Center for Telehealth & Technology for veteran PTSD and stress management. It is tax-funded, with no commercial pressure to monetise. Published research on the app itself is limited to small pilot studies.',
     },
     {
       q: 'Will iBreathe try to upsell me?',

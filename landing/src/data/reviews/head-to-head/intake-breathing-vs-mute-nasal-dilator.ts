@@ -6,7 +6,7 @@ const intakeVsMute: HeadToHeadInput = {
   productBSlug: 'mute-nasal-dilator',
   title: 'Intake Breathing vs Mute Nasal Dilator (2026)',
   description:
-    'Intake Breathing vs Mute Nasal Dilator — premium external magnetic vs clinical internal stent. ONDA breaks down the premium nasal-dilator duel.',
+    'Intake Breathing vs Mute Nasal Dilator — premium external magnetic vs internal nasal dilator. ONDA breaks down the premium nasal-dilator duel.',
   intro:
     'Intake Breathing and Mute Nasal Dilator are the two premium nasal dilators users compare when external strips aren\'t enough. The defining difference: Intake is external magnetic dilation (visible on face); Mute is internal polymer stent (invisible but requires nostril insertion).',
   jobDependentVerdict: true,
