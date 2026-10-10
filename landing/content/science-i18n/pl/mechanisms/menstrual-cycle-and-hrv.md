@@ -1,5 +1,5 @@
 ---
-sourceHash: f1306d188d51
+sourceHash: 1c231ffc17a5
 title: "Cykl menstruacyjny a HRV: dlaczego Twoja linia bazowa się przesuwa"
 metaTitle: "Cykl menstruacyjny a HRV: co się zmienia i dlaczego"
 metaDescription: "Jak zmienność rytmu serca zmienia się w cyklu menstruacyjnym, dlaczego każda kobieta ma własny wzorzec i co zmieniają antykoncepcja hormonalna oraz menopauza."
@@ -102,6 +102,8 @@ W tym samym przeglądzie HRV po menopauzie zwykle spadało wraz z wiekiem [S1]. 
 - **Dane populacyjne nie są prognozą dla Ciebie.** Średnie pochodzą od wielu kobiet; Twój własny cykl może pokazywać większe przesunięcie, mniejsze albo żadne [S6].
 - **Dane firm wymagają zastrzeżenia.** Największy zbiór danych współtworzyli pracownicy producenta urządzenia [S3].
 - **Jedno badanie w przeglądzie to nie dwa potwierdzenia.** Badanie owulacji jest prawdopodobnie częścią bazy dowodowej przeglądu [S1] [S4].
+
+O innych przyczynach niskiego odczytu mówi strona [dlaczego moje HRV jest niskie?](/science/questions/why-is-my-hrv-low).
 
 ## W ONDA
 

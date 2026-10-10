@@ -52,6 +52,8 @@ export interface ScienceUi {
   updated: string // "Updated {date}"
   shortAnswer: string
   keyPoints: string
+  /** Heading of the visible FAQ block (pages with `faq` in front matter; also emitted as FAQPage JSON-LD). */
+  faq: string
   evidenceAtAGlance: string
   claim: string
   evidence: string
@@ -99,6 +101,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
     updated: 'Updated {date}',
     shortAnswer: 'Short answer',
     keyPoints: 'Key points',
+    faq: 'Frequently asked questions',
     evidenceAtAGlance: 'Evidence at a glance',
     claim: 'Claim',
     evidence: 'Evidence',
@@ -145,6 +148,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
     updated: 'Обновлено {date}',
     shortAnswer: 'Короткий ответ',
     keyPoints: 'Главное',
+    faq: 'Частые вопросы',
     evidenceAtAGlance: 'Доказательства кратко',
     claim: 'Утверждение',
     evidence: 'Доказательства',
@@ -191,6 +195,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
     updated: 'Оновлено {date}',
     shortAnswer: 'Коротка відповідь',
     keyPoints: 'Головне',
+    faq: 'Часті запитання',
     evidenceAtAGlance: 'Докази коротко',
     claim: 'Твердження',
     evidence: 'Докази',
@@ -237,6 +242,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
     updated: 'Actualizado el {date}',
     shortAnswer: 'Respuesta breve',
     keyPoints: 'Puntos clave',
+    faq: 'Preguntas frecuentes',
     evidenceAtAGlance: 'La evidencia de un vistazo',
     claim: 'Afirmación',
     evidence: 'Evidencia',
@@ -283,6 +289,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
     updated: 'Aktualisiert am {date}',
     shortAnswer: 'Kurze Antwort',
     keyPoints: 'Das Wichtigste',
+    faq: 'Häufige Fragen',
     evidenceAtAGlance: 'Evidenz auf einen Blick',
     claim: 'Aussage',
     evidence: 'Evidenz',
@@ -329,6 +336,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
     updated: 'Mis à jour le {date}',
     shortAnswer: 'Réponse courte',
     keyPoints: 'Points clés',
+    faq: 'Questions fréquentes',
     evidenceAtAGlance: 'Les preuves en un coup d’œil',
     claim: 'Affirmation',
     evidence: 'Niveau de preuve',
@@ -375,6 +383,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
     updated: 'Aggiornato il {date}',
     shortAnswer: 'Risposta breve',
     keyPoints: 'Punti chiave',
+    faq: 'Domande frequenti',
     evidenceAtAGlance: 'Le evidenze in sintesi',
     claim: 'Affermazione',
     evidence: 'Evidenza',
@@ -421,6 +430,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
     updated: 'Atualizado em {date}',
     shortAnswer: 'Resposta curta',
     keyPoints: 'Pontos-chave',
+    faq: 'Perguntas frequentes',
     evidenceAtAGlance: 'As evidências em resumo',
     claim: 'Afirmação',
     evidence: 'Evidência',
@@ -467,6 +477,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
     updated: 'Bijgewerkt op {date}',
     shortAnswer: 'Kort antwoord',
     keyPoints: 'Kernpunten',
+    faq: 'Veelgestelde vragen',
     evidenceAtAGlance: 'Het bewijs in één oogopslag',
     claim: 'Bewering',
     evidence: 'Bewijs',
@@ -513,6 +524,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
     updated: 'Zaktualizowano {date}',
     shortAnswer: 'Krótka odpowiedź',
     keyPoints: 'Najważniejsze',
+    faq: 'Najczęstsze pytania',
     evidenceAtAGlance: 'Dowody w skrócie',
     claim: 'Twierdzenie',
     evidence: 'Dowody',
@@ -559,6 +571,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
     updated: '更新日：{date}',
     shortAnswer: '短い答え',
     keyPoints: '要点',
+    faq: 'よくある質問',
     evidenceAtAGlance: 'エビデンスの概要',
     claim: '主張',
     evidence: 'エビデンス',
@@ -605,6 +618,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
     updated: '更新于 {date}',
     shortAnswer: '简短回答',
     keyPoints: '要点',
+    faq: '常见问题',
     evidenceAtAGlance: '证据一览',
     claim: '结论',
     evidence: '证据等级',

@@ -1,5 +1,5 @@
 ---
-sourceHash: d8392f5cdd3e
+sourceHash: 8a419d7d40ce
 title: "Acute stress en HRV: wat er gebeurt en hoe je herstelt"
 metaTitle: "Acute stress en HRV: wat studies laten zien"
 metaDescription: "Hoe examens, interviews en stresstests in het lab de hartslagvariabiliteit veranderen, hoe herstel werkt en wat stressscores van wearables wel en niet zeggen."
@@ -132,6 +132,8 @@ Het dagelijks leven is lastiger. In een studie met {{fact:stress.uendes.design}}
 - **De studies zijn klein en specifiek.** Verschillende bevindingen komen uit één studie bij studenten, mannen of ervaren sprekers.
 - **Geen medische conclusies.** Geen van deze studies stelt een aandoening vast, en geen ervan laat zien dat een stressreactie voor een individu hartziekte voorspelt.
 - **Rustiger is niet hetzelfde als een hogere HRV.** Ademhaling vóór stress verlichtte hartslag en angst zonder de HRV te veranderen [S7].
+
+De andere alledaagse oorzaken van een lage meting staan op [waarom is mijn HRV laag?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

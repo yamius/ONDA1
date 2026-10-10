@@ -174,6 +174,20 @@ function Entry({ p, lang, ui }: { p: SciencePageData; lang: string; ui: ScienceU
           <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]} components={mdComponents(lang) as never}>{linkCitations(p.body)}</Markdown>
         </div>
 
+        {p.faq?.length ? (
+          <section aria-label={ui.faq}>
+            <h2 className={H2}>{ui.faq}</h2>
+            <div className="space-y-5">
+              {p.faq.map((f, i) => (
+                <div key={i}>
+                  <h3 className="mb-1.5 font-semibold text-white/90">{f.q}</h3>
+                  <p className={P}>{f.a}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
         <section aria-label={ui.evidenceAtAGlance}>
           <h2 className={H2}>{ui.evidenceAtAGlance}</h2>
           <div className="overflow-x-auto">

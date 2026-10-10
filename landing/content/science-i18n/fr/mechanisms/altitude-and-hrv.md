@@ -1,5 +1,5 @@
 ---
-sourceHash: 5c84bc6057f9
+sourceHash: 02e01673e8d2
 title: "Altitude et HRV : ce qui change et ce qu’elle ne peut pas prédire"
 metaTitle: "Altitude et HRV : ce que montrent les études"
 metaDescription: "Comment la haute altitude modifie la variabilité de la fréquence cardiaque, si la HRV peut prédire le mal des montagnes et pourquoi ce sont les symptômes, pas une montre, qui décident quand redescendre."
@@ -208,6 +208,8 @@ C’est la partie la plus importante de cette page. La HRV et les montres ne rem
 - **La plupart des données viennent d’hommes jeunes et en forme.** Les données pour les femmes, les personnes âgées et les personnes moins en forme sont limitées [S1].
 - **Le rapport LF/HF est débattu.** Même les auteurs qui rapportent sa hausse ajoutent qu’il ne s’agit pas d’une mesure directe du tonus sympathique [S1].
 - **Aucune conclusion médicale.** Aucune de ces études ne pose de diagnostic ni ne propose de plan d’ascension.
+
+Loin des montagnes, les causes fréquentes d’une valeur basse sont sur [pourquoi ma HRV est-elle basse ?](/science/questions/why-is-my-hrv-low).
 
 ## Dans ONDA
 

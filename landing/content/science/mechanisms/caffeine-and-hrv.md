@@ -243,6 +243,8 @@ So there is no contradiction. A morning coffee is unlikely to change your restin
 - **Daytime trials are not night-time data.** Late caffeine can affect sleep and through it the night's HRV [S7].
 - **A wearable reading does not diagnose anything.** Palpitations, chest pain or fainting need medical attention, whatever a wearable shows.
 
+Caffeine is one of several suspects behind a low reading; the others are mapped on [why is my HRV low?](/science/questions/why-is-my-hrv-low).
+
 ## In ONDA
 
 ONDA builds a personal baseline from nightly values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S8]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV trend is an SDNN trend. If you want to know whether your own coffee habit matters, compare nights after a late cup with your usual nights over a few weeks rather than reading one night. ONDA does not track caffeine, give advice on coffee or diagnose any condition.

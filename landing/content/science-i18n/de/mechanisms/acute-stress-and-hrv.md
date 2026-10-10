@@ -1,5 +1,5 @@
 ---
-sourceHash: d8392f5cdd3e
+sourceHash: 8a419d7d40ce
 title: "Akuter Stress und HRV: Was passiert und wie du dich erholst"
 metaTitle: "Akuter Stress und HRV: Was Studien zeigen"
 metaDescription: "Wie Prüfungen, Interviews und Stresstests die Herzratenvariabilität verändern, wie Erholung abläuft und was Stresswerte von Wearables aussagen."
@@ -132,6 +132,8 @@ Der Alltag ist schwieriger. In einer Studie mit {{fact:stress.uendes.design}} un
 - **Die Studien sind klein und speziell.** Mehrere Ergebnisse stammen aus einer einzigen Studie mit Studierenden, Männern oder erfahrenen Sprechern.
 - **Keine medizinischen Schlüsse.** Keine dieser Studien diagnostiziert eine Erkrankung, und keine zeigt, dass eine Stressreaktion bei einem einzelnen Menschen Herzerkrankungen vorhersagt.
 - **Ruhiger ist nicht dasselbe wie eine höhere HRV.** Atmen vor Stress dämpfte Puls und Angst, ohne die HRV zu verändern [S7].
+
+Die anderen alltäglichen Ursachen eines niedrigen Werts zeigt [Warum ist meine HRV niedrig?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: 9c002efa1ed5
+sourceHash: 477ca0c9b233
 title: "Perché l'HRV cambia da un giorno all'altro"
 metaTitle: "Perché l'HRV cambia ogni giorno: cause e prove"
 metaDescription: "Perché la variabilità della frequenza cardiaca cambia ogni giorno: rumore normale, sonno, alcol, allenamento, malattia, stress e ciclo. Meccanismi e prove."
@@ -140,6 +140,8 @@ I confronti da un giorno all'altro hanno senso solo se la registrazione è confr
 - **Metriche diverse, risposte diverse.** Nella meta-analisi sulla privazione di sonno, l'RMSSD è calato in modo significativo mentre l'SDNN no [S6]. Un orologio che riporta l'SDNN può mostrare una causa meno chiaramente di uno studio che ha usato l'RMSSD.
 
 **Che cosa ne segue per leggere i tuoi dati.** Segui la tendenza rispetto alla tua [baseline](/science/concepts/hrv-baseline) invece di un singolo valore, e annota il contesto (sonno, alcol, malattia, carico di allenamento, fase del ciclo) così da poter collegare un cambiamento a ciò che è successo. Uno spostamento che dura diversi giorni e si accompagna a sintomi è un motivo per guardare meglio; un singolo calo dopo una notte tarda di solito non lo è. Che cosa una lettura può e non può dire è spiegato in [interpretare l'HRV](/science/concepts/interpreting-hrv).
+
+Per una mappa di ciò che può abbassare una lettura e di quanto sono solide le prove, vedi [perché la mia HRV è bassa?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

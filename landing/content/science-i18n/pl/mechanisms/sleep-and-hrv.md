@@ -1,5 +1,5 @@
 ---
-sourceHash: 58de478c79ed
+sourceHash: f592ea962f6b
 title: "HRV i tętno podczas snu: dlaczego noc to najlepsze okno pomiarowe"
 metaTitle: "HRV i tętno podczas snu"
 metaDescription: "Co dzieje się z tętnem i HRV w ciągu nocy i w fazach snu, dlaczego odczyty nocne są najstabilniejszym oknem i co urządzenia ubieralne mogą, a czego nie mogą powiedzieć."
@@ -132,6 +132,8 @@ Krótki lub przerywany sen, alkohol, ciężki dzień treningowy, infekcja, stres
 - **Żadna pojedyncza noc nie jest werdyktem.** Fazy, przebudzenia i pora snu przesuwają wartość z nocy na noc.
 - **Urządzenia nie są wymienne.** Okna, miary i przetwarzanie się różnią [S13, S14, S15], a metody stosowane w badaniach także są różne [S4, S5].
 - **Urządzenie ubieralne to nie badanie snu.** Nie może rozpoznać bezdechu sennego ani bezsenności [S12].
+
+Krótki sen to tylko jedna z przyczyn niskiego odczytu; zobacz [dlaczego moje HRV jest niskie?](/science/questions/why-is-my-hrv-low).
 
 ## W ONDA
 

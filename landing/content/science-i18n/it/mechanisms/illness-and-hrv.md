@@ -1,5 +1,5 @@
 ---
-sourceHash: 26f74cb4722e
+sourceHash: 079098055e7f
 title: "Malattia e HRV: che cosa un dispositivo indossabile può e non può vedere"
 metaTitle: "Malattia e HRV: segnale precoce, non diagnosi"
 metaDescription: "Come infiammazione e infezione spostano l'HRV e il battito a riposo, che cosa significano gli avvisi dei dispositivi e perché non dicono che sei malato."
@@ -102,6 +102,8 @@ Alcune persone hanno sintomi per mesi dopo un'infezione, ciò che si chiama Long
 ## Che cosa fare con un calo marcato?
 
 Se la tua HRV è chiaramente sotto il tuo intervallo abituale e la tua frequenza cardiaca a riposo è più alta per diversi giorni di fila, consideralo un segnale precoce aspecifico che il corpo è sotto carico. È un motivo per riposare e osservare come ti senti. Se hai sintomi, rivolgiti a un medico invece di affidarti al tuo orologio. Una singola notte bassa di solito non è motivo di preoccupazione ([come interpretare l'HRV](/science/concepts/interpreting-hrv)).
+
+Stress, alcol e viaggi possono dare lo stesso calo; sono messi a confronto in [perché la mia HRV è bassa?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

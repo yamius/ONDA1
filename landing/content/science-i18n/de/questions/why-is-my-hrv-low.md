@@ -1,5 +1,5 @@
 ---
-sourceHash: 872cae1c83e6
+sourceHash: ad4473025ca5
 title: "Warum ist meine HRV so niedrig? Häufige Ursachen und was die Evidenz zeigt"
 metaTitle: "HRV niedrig: Ursachen und was sie bedeuten"
 metaDescription: "Warum ist meine HRV niedrig? Meist eine Reaktion auf Schlaf, Alkohol, Infekt, Stress oder Training, keine Diagnose. Jede Ursache mit Evidenz und wann zum Arzt."
@@ -17,12 +17,12 @@ keyPoints:
   - "Für Alkohol, Krankheit, akuten Stress, hartes Training und die ersten Tage in großer Höhe ist jeweils eine niedrigere HRV belegt; vor der Periode gibt es auf Gruppenebene einen kleinen durchschnittlichen Rückgang, die individuellen Muster unterscheiden sich aber."
   - "Bei kurzem Schlaf ist der gemessene Rückgang klein, bei langfristigem Stress und Schichtarbeit ist die Evidenz uneinheitlich, und bei regelmäßigen Kaffeetrinkern ist nicht belegt, dass moderates Koffein die Ruhe-HRV verändert."
   - "Das Alter senkt die HRV im Durchschnitt über Jahrzehnte, erklärt aber keinen Rückgang von einer Woche zur nächsten."
-  - "Mehrere Tage unter deinem üblichen Bereich, ein höherer Ruhepuls und Unwohlsein sind ein Grund, dich auszuruhen; Brustschmerzen, Ohnmacht oder Atemnot brauchen sofort Notfallhilfe."
+  - "Mehrere Tage unter deinem üblichen Bereich, ein höherer Ruhepuls und Unwohlsein sind ein Grund, dich auszuruhen. Hol dir sofort Notfallhilfe bei: Schmerzen oder Druck in der Brust; Ohnmacht oder Beinahe-Ohnmacht; starker Atemnot; schnellem, kräftigem oder unregelmäßigem Herzschlag, der sich in Ruhe nicht beruhigt (auch mit Schwindel); plötzlicher Verwirrtheit, Schwäche auf einer Körperseite, Sprachstörungen."
   - "ONDA vergleicht deine Nächte mit deiner eigenen Baseline, sagt aber nicht, was eine Veränderung verursacht hat, und stellt keine Diagnose."
 imageAlt: "Eine dünne türkisfarbene Herzschlaglinie auf dunkelblauem Hintergrund, umgeben von kleinen leuchtend beigen Symbolen: ein Mond, ein Glas, ein Thermometer, ein Laufschuh, ein Berg, eine Kaffeetasse und Wolken."
 faq:
   - q: "Ist eine niedrige HRV gefährlich?"
-    a: "Ein einzelner niedriger Wert ist keine Diagnose und verrät für sich genommen nicht die Ursache; meist ist er eine Reaktion auf etwas Bestimmtes, etwa eine kurze Nacht, Alkohol, einen Infekt, Stress oder hartes Training. Ein Grund, dich auszuruhen und auf dein Befinden zu achten, wird er, wenn die HRV mehrere Tage unter deinem üblichen Bereich bleibt, dein Ruhepuls höher ist und du dich unwohl fühlst. Bei Beschwerden geh zum Arzt, statt dich auf deine Uhr zu verlassen; Brustschmerzen, Ohnmacht oder Atemnot brauchen sofort Notfallhilfe, egal was die Uhr anzeigt."
+    a: "Ein einzelner niedriger Wert ist keine Diagnose und verrät für sich genommen nicht die Ursache; meist ist er eine Reaktion auf etwas Bestimmtes, etwa eine kurze Nacht, Alkohol, einen Infekt, Stress oder hartes Training. Ein Grund, dich auszuruhen und auf dein Befinden zu achten, wird er, wenn die HRV mehrere Tage unter deinem üblichen Bereich bleibt, dein Ruhepuls höher ist und du dich unwohl fühlst. Bei Beschwerden geh zum Arzt, statt dich auf deine Uhr zu verlassen. Egal was die Uhr anzeigt, hol dir sofort Notfallhilfe bei: Schmerzen oder Druck in der Brust; Ohnmacht oder Beinahe-Ohnmacht; starker Atemnot; schnellem, kräftigem oder unregelmäßigem Herzschlag, der sich in Ruhe nicht beruhigt (auch mit Schwindel); plötzlicher Verwirrtheit, Schwäche auf einer Körperseite, Sprachstörungen."
   - q: "Kann Stress die HRV senken?"
     a: "Ja, für eine Weile. Kurzer, klarer Stress wie eine Prüfung senkt die HRV. Die Erholung danach ist ein eigener Vorgang, der sich von Mensch zu Mensch unterscheidet, und Studien messen sie über verschieden lange Zeitfenster, daher gibt es keine einheitliche Erholungszeit. In belastenden Arbeitsphasen war die HRV niedriger als in Erholungszeiten, doch in einer großen Langzeitstudie hing Arbeitsstress nicht mit der Ruhe-HRV zusammen, ein dauerhafter Rückgang ist also nicht belegt. Ein einzelner niedriger HRV-Wert bedeutet für sich genommen nicht, dass du gestresst oder krank bist."
   - q: "Warum ist meine HRV nach Alkohol niedrig?"
@@ -184,13 +184,13 @@ Wir haben keine Studie zu alltäglicher leichter Dehydrierung und dem HRV-Wert e
 
 Eine einzelne niedrige Nacht ist meist kein Grund zur Sorge. {{fact:claim.hrvNotStress}}. Liegt deine HRV mehrere Tage hintereinander deutlich unter deinem üblichen Bereich, ist dein Ruhepuls höher und fühlst du dich unwohl, dann nimm das als unspezifisches Signal, dass der Körper belastet ist. Es ist ein Grund, dich auszuruhen und auf dein Befinden zu achten, keine Diagnose. Bei Beschwerden geh zum Arzt, statt dich auf deine Uhr zu verlassen.
 
-**Brustschmerzen, Ohnmacht oder Atemnot brauchen sofort Notfallhilfe, egal was deine Uhr anzeigt.**
+**Egal was deine Uhr anzeigt, hol dir sofort Notfallhilfe bei: Schmerzen oder Druck in der Brust; Ohnmacht oder Beinahe-Ohnmacht; starker Atemnot; schnellem, kräftigem oder unregelmäßigem Herzschlag, der sich in Ruhe nicht beruhigt (auch mit Schwindel); plötzlicher Verwirrtheit, Schwäche auf einer Körperseite, Sprachstörungen.**
 
 Auch ein normal wirkender Wert schließt eine Krankheit nicht aus: In der Smartwatch-Studie oben erhielt nicht jede infizierte Person eine Warnung [S8]. Wie der Ruhepuls gemessen wird und was ihn verändert, steht unter [Ruhepuls](/science/measurements/resting-heart-rate).
 
 ## Was kannst du tun?
 
-Fang mit dem an, was du sehen kannst. War die Nacht kurz, hast du getrunken oder hart trainiert, hat der niedrige Wert schon eine wahrscheinliche Erklärung: Lass weg, was du weglassen kannst, gib deinem Körper Zeit zur Erholung und schau auf den Trend der nächsten Tage statt nur auf den nächsten Morgen.
+Fang mit dem an, was du sehen kannst. War die Nacht kurz, hast du getrunken oder hart trainiert, hat der niedrige Wert schon eine wahrscheinliche Erklärung: Lass weg, was du weglassen kannst, gib deinem Körper Zeit zur Erholung und schau auf den Trend der nächsten Tage statt nur auf den nächsten Morgen. Was du als Nächstes tun kannst, Schritt für Schritt, steht unter [was tun nach einem niedrigen HRV-Wert](/articles/what-to-do-after-low-hrv-reading).
 
 Langsames Atmen kannst du jederzeit üben. {{fact:claim.slowExhale}}. In einer großen Metaanalyse zeigte sich der Anstieg während langsamen Atmens, unmittelbar nach einer Sitzung und nach Programmen mit mehreren Sitzungen [S35]. Das ist eine Veränderung während und nach der Übung; sie beseitigt nicht, was deinen Wert gesenkt hat, und ist kein Test der Erholung. Die breitere Evidenz steht unter [langsames Atmen](/science/evidence/slow-breathing), und die direkt verglichenen Techniken unter [Atemtechniken im Vergleich](/science/mechanisms/breathing-techniques-compared).
 

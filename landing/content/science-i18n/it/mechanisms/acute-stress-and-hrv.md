@@ -1,5 +1,5 @@
 ---
-sourceHash: d8392f5cdd3e
+sourceHash: 8a419d7d40ce
 title: "Stress acuto e HRV: che cosa succede e come ci si riprende"
 metaTitle: "Stress acuto e HRV: che cosa mostrano gli studi"
 metaDescription: "Come esami, colloqui e test di stress cambiano l'HRV, come funziona il recupero e che cosa possono dire, e non dire, i punteggi di stress dei wearable."
@@ -133,6 +133,8 @@ La vita di tutti i giorni è più difficile. In uno studio su {{fact:stress.uend
 - **Gli studi sono piccoli e specifici.** Diversi risultati vengono da un solo studio su studenti, uomini o oratori esperti.
 - **Nessuna conclusione medica.** Nessuno di questi studi diagnostica una condizione, e nessuno mostra che una reazione allo stress predica una malattia cardiaca nel singolo individuo.
 - **Essere più calmi non equivale ad avere un'HRV più alta.** Respirare prima dello stress ha attenuato frequenza cardiaca e ansia senza cambiare l'HRV [S7].
+
+Per le altre cause comuni di una lettura bassa, vedi [perché la mia HRV è bassa?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

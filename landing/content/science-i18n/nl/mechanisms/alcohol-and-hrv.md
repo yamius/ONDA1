@@ -1,5 +1,5 @@
 ---
-sourceHash: 5b3483e41d2b
+sourceHash: 285e3bfba44f
 title: "Alcohol en HRV: wat een drankje met je nacht doet"
 metaTitle: "Alcohol en HRV: de nacht na het drinken"
 metaDescription: "Waarom je nachtelijke HRV daalt en je rusthartslag stijgt na het drinken, welke rol hoeveelheid en tijdstip spelen en wat onderzoek over alcohol nog niet weet."
@@ -99,6 +99,8 @@ Vaak wordt gezegd dat een drankje na het trainen helpt om te ontspannen en te he
 - **Bedrijfsgegevens hebben een kanttekening.** De grootste dataset werd gefinancierd en deels geschreven door WHOOP [S1]; de Finse studie gebruikte de index van een ander bedrijf [S8]; de studie met een nulresultaat over matig drinken werd deels gefinancierd door een centrum van de biersector [S5].
 - **Eén cohort is geen twee.** De MunichBREW II-artikelen zijn één dataset [S3] [S4].
 - **Een lagere HRV na het drinken stelt niets vast.** Hartkloppingen, een onregelmatige hartslag, pijn op de borst of flauwvallen na het drinken vragen om medische hulp, wat een wearable ook laat zien.
+
+Hoe alcohol zich verhoudt tot andere alledaagse oorzaken van een lage meting, lees je op [waarom is mijn HRV laag?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

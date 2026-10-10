@@ -1,5 +1,5 @@
 ---
-sourceHash: 872cae1c83e6
+sourceHash: ad4473025ca5
 title: "¿Por qué tengo la HRV baja? Causas frecuentes y qué dice la evidencia"
 metaTitle: "¿Por qué tengo la HRV baja? Causas y qué significan"
 metaDescription: "¿HRV baja? Casi siempre es una reacción al sueño, el alcohol, una enfermedad, el estrés o el entrenamiento, no un diagnóstico. Cada causa con su evidencia y cuándo ir al médico."
@@ -17,12 +17,12 @@ keyPoints:
   - "Se ha demostrado que el alcohol, la enfermedad, el estrés agudo, el entrenamiento duro y los primeros días a gran altitud van con una HRV más baja; antes de la regla hay una pequeña bajada media a nivel de grupo, pero los patrones individuales varían."
   - "Con el sueño corto la bajada medida es pequeña, con el estrés prolongado y el trabajo por turnos la evidencia es mixta, y en quienes toman café a diario no se ha demostrado que una cantidad moderada de cafeína cambie la HRV en reposo."
   - "La edad reduce la HRV de media a lo largo de décadas, pero no explica una bajada de una semana a otra."
-  - "Varios días por debajo de tu rango habitual, con la frecuencia cardíaca en reposo más alta y sintiéndote mal, son motivo para descansar; el dolor en el pecho, el desmayo o la falta de aire requieren atención urgente."
+  - "Varios días por debajo de tu rango habitual, con la frecuencia cardíaca en reposo más alta y sintiéndote mal, son motivo para descansar. Busca atención urgente si tienes: dolor o presión en el pecho; desmayo o sensación de que vas a desmayarte; falta de aire intensa; latidos rápidos, fuertes o irregulares que no se calman en reposo (también con mareo); confusión repentina, debilidad en un lado del cuerpo, dificultad para hablar."
   - "ONDA compara tus noches con tu propia línea base, pero no dice qué causó un cambio ni diagnostica."
 imageAlt: "Una fina línea turquesa de latidos sobre un fondo azul marino oscuro, rodeada de pequeños iconos beis luminosos: una luna, una copa, un termómetro, una zapatilla de correr, una montaña, una taza de café y nubes."
 faq:
   - q: "¿Es peligroso tener la HRV baja?"
-    a: "Una sola lectura baja no es un diagnóstico y por sí misma no te dice la causa; casi siempre es una reacción a algo concreto, como una noche corta, el alcohol, una infección, el estrés o un entrenamiento duro. Se convierte en un motivo para descansar y vigilar cómo te encuentras cuando la HRV se mantiene por debajo de tu rango habitual durante varios días, junto con una frecuencia cardíaca en reposo más alta, y te sientes mal. Si tienes síntomas, consulta a un médico en lugar de fiarte del reloj; el dolor en el pecho, el desmayo o la falta de aire requieren atención urgente, muestre lo que muestre el reloj."
+    a: "Una sola lectura baja no es un diagnóstico y por sí misma no te dice la causa; casi siempre es una reacción a algo concreto, como una noche corta, el alcohol, una infección, el estrés o un entrenamiento duro. Se convierte en un motivo para descansar y vigilar cómo te encuentras cuando la HRV se mantiene por debajo de tu rango habitual durante varios días, junto con una frecuencia cardíaca en reposo más alta, y te sientes mal. Si tienes síntomas, consulta a un médico en lugar de fiarte del reloj. Muestre lo que muestre el reloj, busca atención urgente si tienes: dolor o presión en el pecho; desmayo o sensación de que vas a desmayarte; falta de aire intensa; latidos rápidos, fuertes o irregulares que no se calman en reposo (también con mareo); confusión repentina, debilidad en un lado del cuerpo, dificultad para hablar."
   - q: "¿El estrés puede bajar la HRV?"
     a: "Sí, durante un tiempo. Un estrés corto y claro, como un examen, baja la HRV. La recuperación después de la tarea es un proceso aparte que varía entre personas, y los estudios la miden en ventanas distintas, así que no hay un único tiempo de recuperación. En los periodos de trabajo exigente la HRV fue más baja que en los de recuperación, pero en un gran estudio a largo plazo el estrés laboral no se relacionó con la HRV en reposo, así que no se ha demostrado una bajada duradera. Una sola lectura baja de HRV no significa por sí misma que estés estresado o enfermo."
   - q: "¿Por qué tengo la HRV baja después de beber alcohol?"
@@ -184,13 +184,13 @@ No encontramos ningún estudio sobre la deshidratación leve del día a día y l
 
 Una sola noche baja no suele ser motivo de preocupación. {{fact:claim.hrvNotStress}}. Si tu HRV está claramente por debajo de tu rango habitual y tu frecuencia cardíaca en reposo es más alta durante varios días seguidos, y te encuentras mal, tómalo como una señal inespecífica de que el cuerpo está bajo carga. Es un motivo para descansar y vigilar cómo te encuentras, no un diagnóstico. Si tienes síntomas, consulta a un médico en lugar de fiarte del reloj.
 
-**El dolor en el pecho, el desmayo o la falta de aire requieren atención urgente, muestre lo que muestre el reloj.**
+**Muestre lo que muestre el reloj, busca atención urgente si tienes: dolor o presión en el pecho; desmayo o sensación de que vas a desmayarte; falta de aire intensa; latidos rápidos, fuertes o irregulares que no se calman en reposo (también con mareo); confusión repentina, debilidad en un lado del cuerpo, dificultad para hablar.**
 
 Una lectura de aspecto normal tampoco descarta una enfermedad: en el estudio con relojes inteligentes de arriba, no todas las personas infectadas recibieron una alerta [S8]. Cómo se mide la frecuencia cardíaca en reposo y qué la hace cambiar se explica en [frecuencia cardíaca en reposo](/science/measurements/resting-heart-rate).
 
 ## ¿Qué puedes hacer?
 
-Empieza por lo que puedes ver. Si la noche fue corta, bebiste o entrenaste duro, la lectura baja ya tiene una explicación probable: elimina lo que puedas, da tiempo al cuerpo para recuperarse y mira la tendencia de los próximos días en lugar de solo la mañana siguiente.
+Empieza por lo que puedes ver. Si la noche fue corta, bebiste o entrenaste duro, la lectura baja ya tiene una explicación probable: elimina lo que puedas, da tiempo al cuerpo para recuperarse y mira la tendencia de los próximos días en lugar de solo la mañana siguiente. Qué hacer a continuación, paso a paso, está en [qué hacer tras una lectura baja de HRV](/articles/what-to-do-after-low-hrv-reading).
 
 La respiración lenta es algo que puedes hacer en cualquier momento. {{fact:claim.slowExhale}}. En un gran metaanálisis, la subida se vio durante la respiración lenta, justo después de una sesión y tras programas de varias sesiones [S35]. Es un cambio durante la práctica y después de ella; no elimina lo que bajó tu lectura y no es una prueba de recuperación. La evidencia más amplia está en [respiración lenta](/science/evidence/slow-breathing), y las técnicas que se han comparado directamente, en [técnicas de respiración comparadas](/science/mechanisms/breathing-techniques-compared).
 

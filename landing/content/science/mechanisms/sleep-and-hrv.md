@@ -343,6 +343,8 @@ Short or broken sleep, alcohol, a hard training day, infection, stress, a late m
 - **Devices are not interchangeable.** Windows, metrics and processing differ [S13, S14, S15], and the methods used in research vary as well [S4, S5].
 - **A wearable is not a sleep study.** It cannot diagnose sleep apnea or insomnia [S12].
 
+Short sleep is only one cause of a low reading; see [why is my HRV low?](/science/questions/why-is-my-hrv-low).
+
 ## In ONDA
 
 ONDA builds its personal baseline from nightly values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S16]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV baseline is an SDNN baseline. ONDA does not stage sleep from HRV and does not diagnose sleep apnea, insomnia or any other condition.

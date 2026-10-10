@@ -1,5 +1,5 @@
 ---
-sourceHash: 5b3483e41d2b
+sourceHash: 285e3bfba44f
 title: "Alcool et HRV : ce qu’un verre fait à votre nuit"
 metaTitle: "Alcool et HRV : la nuit après avoir bu"
 metaDescription: "Pourquoi la HRV nocturne baisse et la fréquence cardiaque au repos augmente après avoir bu, quel rôle jouent la dose et le moment, et ce que la recherche ne sait pas encore sur l’alcool."
@@ -100,6 +100,8 @@ On dit souvent qu’un verre après l’entraînement aide à se détendre et à
 - **Les données d’entreprises appellent une réserve.** Le plus grand ensemble de données a été financé et en partie rédigé par WHOOP [S1] ; l’étude finlandaise a utilisé l’indice d’une autre entreprise [S8] ; l’essai au résultat nul sur la consommation modérée a été financé en partie par un centre du secteur brassicole [S5].
 - **Une cohorte n’en fait pas deux.** Les articles MunichBREW II reposent sur un seul ensemble de données [S3] [S4].
 - **Une HRV plus basse après avoir bu ne diagnostique rien.** Des palpitations, un rythme cardiaque irrégulier, une douleur thoracique ou un évanouissement après avoir bu nécessitent une prise en charge médicale, quoi qu’affiche un objet connecté.
+
+Pour comparer l’alcool aux autres causes courantes d’une valeur basse, voir [pourquoi ma HRV est-elle basse ?](/science/questions/why-is-my-hrv-low).
 
 ## Dans ONDA
 

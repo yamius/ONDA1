@@ -1,5 +1,5 @@
 ---
-sourceHash: 68b096acdcad
+sourceHash: b9b0dddaa0a9
 title: "Training en HRV: wat inspanning doet en wat HRV-gestuurd trainen laat zien"
 metaTitle: "Training en HRV: bewijs voor HRV-gestuurd trainen"
 metaDescription: "Waarom HRV na een zware training daalt en weer herstelt, hoe lang dat duurt en wat studies naar HRV-gestuurd trainen laten zien vergeleken met een vast trainingsschema."
@@ -129,6 +129,8 @@ Deze pagina geeft geen advies over trainingsbelasting. Het plannen van traininge
 - **Het is niet aangetoond dat HRV-sturing beter werkt dan een goed vast schema** voor prestaties of maximale zuurstofopname [S2], en in één kleine studie bij hartpatiënten verschilde de primaire uitkomst niet [S3].
 - **De beste beslisregel is onbekend.** De studies gebruikten verschillende drempels en protocollen [S2], en het voordeel op lange termijn voor recreatieve sporters is niet aangetoond.
 - **De meeste gegevens zijn aeroob.** Krachttraining is te weinig onderzocht om hetzelfde tijdsverloop toe te passen [S1].
+
+Als training een lage meting niet verklaart, staan andere veelvoorkomende oorzaken op [waarom is mijn HRV laag?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

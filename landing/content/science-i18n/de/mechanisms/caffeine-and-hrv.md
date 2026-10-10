@@ -1,5 +1,5 @@
 ---
-sourceHash: d1da038aff34
+sourceHash: 159ee240a2bb
 title: "Koffein und HRV: Was Kaffee bewirkt und was nicht"
 metaTitle: "Koffein und HRV: Senkt Kaffee deine HRV?"
 metaDescription: "Was die Forschung zu Kaffee und HRV in Ruhe und nach dem Training zeigt, wo Energydrinks anders sind und wie spätes Koffein die HRV erreicht."
@@ -104,6 +104,8 @@ Es gibt also keinen Widerspruch. Ein Kaffee am Morgen verändert deine HRV in Ru
 - **Zwei Übersichtsarbeiten sind nicht doppelte Evidenz.** Die Metaanalysen zur Zeit nach dem Training teilen sich Studien [S1] [S2].
 - **Studien am Tag sind keine Nachtdaten.** Spätes Koffein kann den Schlaf und darüber die HRV der Nacht beeinflussen [S7].
 - **Ein Wearable-Wert diagnostiziert nichts.** Herzklopfen, Brustschmerzen oder Ohnmacht brauchen ärztliche Hilfe, egal was ein Wearable anzeigt.
+
+Koffein ist nur einer von mehreren möglichen Gründen für einen niedrigen Wert; die anderen zeigt [Warum ist meine HRV niedrig?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

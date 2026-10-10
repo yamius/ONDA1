@@ -1,5 +1,5 @@
 ---
-sourceHash: d1da038aff34
+sourceHash: 159ee240a2bb
 title: "Caféine et HRV : ce que le café fait et ne fait pas"
 metaTitle: "Caféine et HRV : le café fait-il baisser votre HRV ?"
 metaDescription: "Café et HRV au repos et après l’effort : ce que montre la recherche, en quoi les boissons énergisantes diffèrent, et le rôle de la caféine tardive."
@@ -104,6 +104,8 @@ Il n’y a donc pas de contradiction. Un café le matin a peu de chances de modi
 - **Deux revues ne font pas deux fois plus de preuves.** Les méta-analyses post-effort partagent des essais [S1] [S2].
 - **Des essais de jour ne sont pas des données de nuit.** La caféine tardive peut affecter le sommeil et, par lui, la HRV de la nuit [S7].
 - **Une mesure d’objet connecté ne diagnostique rien.** Des palpitations, une douleur thoracique ou un évanouissement nécessitent une prise en charge médicale, quoi qu’affiche un objet connecté.
+
+La caféine n’est qu’une des causes possibles d’une valeur basse ; les autres sont présentées sur [pourquoi ma HRV est-elle basse ?](/science/questions/why-is-my-hrv-low).
 
 ## Dans ONDA
 

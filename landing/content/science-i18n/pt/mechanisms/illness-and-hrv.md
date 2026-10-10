@@ -1,5 +1,5 @@
 ---
-sourceHash: 26f74cb4722e
+sourceHash: 079098055e7f
 title: "Doença e HRV: o que um dispositivo vestível consegue e não consegue ver"
 metaTitle: "Doença e HRV: sinal precoce, não diagnóstico"
 metaDescription: "Como inflamação e infecção movem a HRV e a frequência cardíaca de repouso, o que dizem os alertas dos vestíveis e por que não dizem que você está doente."
@@ -101,6 +101,8 @@ Algumas pessoas têm sintomas por meses depois de uma infecção, o que se chama
 ## O que fazer diante de uma queda acentuada?
 
 Se a sua HRV está claramente abaixo da sua faixa habitual e a sua frequência cardíaca de repouso está mais alta por vários dias seguidos, trate isso como um sinal precoce inespecífico de que o corpo está sob carga. É um motivo para descansar e observar como você se sente. Se você tem sintomas, procure um médico em vez de confiar no seu relógio. Uma única noite baixa geralmente não é motivo de preocupação ([como interpretar a HRV](/science/concepts/interpreting-hrv)).
+
+Estresse, álcool e viagens podem causar a mesma queda; eles são comparados em [por que minha HRV está baixa?](/science/questions/why-is-my-hrv-low).
 
 ## No ONDA
 

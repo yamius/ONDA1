@@ -1,5 +1,5 @@
 ---
-sourceHash: 5b3483e41d2b
+sourceHash: 285e3bfba44f
 title: "Alkohol und HRV: Was ein Drink mit deiner Nacht macht"
 metaTitle: "Alkohol und HRV: die Nacht nach dem Trinken"
 metaDescription: "Warum die nächtliche HRV nach Alkohol sinkt und der Ruhepuls steigt, welche Rolle Menge und Zeitpunkt spielen und was die Forschung zu Alkohol noch nicht weiß."
@@ -100,6 +100,8 @@ Oft heißt es, ein Drink nach dem Training helfe beim Entspannen und bei der Erh
 - **Unternehmensdaten haben einen Vorbehalt.** Der größte Datensatz wurde von WHOOP finanziert und teilweise verfasst [S1]; die finnische Studie nutzte den Index eines anderen Unternehmens [S8]; die Studie mit Nullergebnis zu moderatem Konsum wurde teilweise von einem Zentrum der Bierbranche finanziert [S5].
 - **Eine Kohorte ist nicht zwei.** Die MunichBREW-II-Arbeiten beruhen auf einem Datensatz [S3] [S4].
 - **Eine niedrigere HRV nach dem Trinken ist keine Diagnose.** Herzklopfen, ein unregelmäßiger Herzschlag, Brustschmerzen oder Ohnmacht nach dem Trinken brauchen ärztliche Hilfe, egal was ein Wearable anzeigt.
+
+Wie Alkohol im Vergleich zu anderen alltäglichen Ursachen eines niedrigen Werts dasteht, zeigt [Warum ist meine HRV niedrig?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

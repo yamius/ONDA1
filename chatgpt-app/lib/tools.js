@@ -19,11 +19,15 @@ import { linksFor, UNKNOWN_CLIENT } from './links.js';
 const REVIEWS = JSON.parse(readFileSync(new URL('../data/reviews.json', import.meta.url), 'utf8'));
 const PRACTICES = JSON.parse(readFileSync(new URL('../data/practices.json', import.meta.url), 'utf8'));
 
+/** Owner-approved emergency list (2026-10-10) — identical to the /science/questions/why-is-my-hrv-low hub. */
+export const RED_FLAG_LIST =
+  'chest pain or pressure; fainting or near-fainting; severe shortness of breath; fast, strong or irregular heartbeat that does not settle at rest (including with dizziness); sudden confusion, weakness on one side, trouble speaking';
+
 export const URGENT_MESSAGE =
-  'Chest pain, fainting or severe shortness of breath need medical attention now — call your local emergency number or see a doctor urgently. An HRV number cannot tell you whether these symptoms are serious.';
+  'These symptoms need medical attention now: ' + RED_FLAG_LIST + '. Call your local emergency number or see a doctor urgently. An HRV number cannot tell you whether these symptoms are serious.';
 
 export const SAFETY_NOTE =
-  'Not medical advice. If you have chest pain, fainting, severe shortness of breath or a racing heart that does not settle, contact emergency services or a doctor now.';
+  'Not medical advice. If you have any of these — ' + RED_FLAG_LIST + ' — contact emergency services or a doctor now.';
 
 /** Validation error whose message is safe to show (never contains the input values). */
 export class InputError extends Error {}
@@ -68,8 +72,7 @@ export const checkHrv = {
     "It is a comparison, not a medical norm: it says whether the value is lower than most, within the middle half, or higher than most users of the nearest age group (ages 20–61 in the data: 18–19 is compared with 20–21 and 62–64 with 60–61; above 64 no comparison is made and the 60–61 distribution is shown for information only). The distribution comes from Fitbit wrist data, so for other devices the comparison is approximate. " +
     "Oura, Whoop, Garmin, Fitbit and Polar report RMSSD and are compared; Apple Watch reports SDNN, a different measure that is not compared. Sex is optional; without it the value is shown against both women and men. " +
     "Use for: is my HRV normal for my age; good HRV for my age; Oura or Whoop HRV score; heart rate variability by age; Apple Watch HRV meaning. " +
-    "The optional red_flag_symptoms flag covers only acute symptoms: chest pain or pressure; fainting or nearly fainting; severe shortness of breath; " +
-    "a racing, pounding or irregular heartbeat that does not settle at rest; new confusion, weakness on one side or trouble speaking. " +
+    "The optional red_flag_symptoms flag covers only acute symptoms: " + RED_FLAG_LIST + ". " +
     "When the flag is true the tool returns urgent-care guidance only and no interpretation. It does not apply to ordinary questions about sleep, stress, tiredness, training or a low value on its own.",
   inputSchema: {
     type: 'object',
@@ -89,7 +92,7 @@ export const checkHrv = {
       red_flag_symptoms: {
         type: 'boolean',
         description:
-          'Whether the person reported one of the acute symptoms listed in the tool description (chest pain or pressure, fainting, severe shortness of breath, a racing or irregular heartbeat that does not settle, new confusion, one-sided weakness or trouble speaking). When true, the tool returns urgent-care guidance only. Defaults to false.',
+          'Whether the person reported one of the acute symptoms listed in the tool description (' + RED_FLAG_LIST + '). When true, the tool returns urgent-care guidance only. Defaults to false.',
       },
     },
     required: ['age', 'hrv_ms', 'device'],

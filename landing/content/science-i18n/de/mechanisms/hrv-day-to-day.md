@@ -1,5 +1,5 @@
 ---
-sourceHash: 9c002efa1ed5
+sourceHash: 477ca0c9b233
 title: "Warum sich die HRV von Tag zu Tag verändert"
 metaTitle: "Warum die HRV täglich schwankt: Ursachen und Evidenz"
 metaDescription: "Warum die Herzfrequenzvariabilität von Tag zu Tag schwankt: Rauschen, Schlaf, Alkohol, Training, Krankheit, Stress und Zyklus – Mechanismen und Evidenz."
@@ -140,6 +140,8 @@ Vergleiche von Tag zu Tag sind nur sinnvoll, wenn die Messungen vergleichbar sin
 - **Verschiedene Maße, verschiedene Antworten.** In der Metaanalyse zum Schlafentzug sank die RMSSD signifikant, die SDNN nicht [S6]. Eine Uhr, die die SDNN meldet, zeigt eine Ursache womöglich weniger deutlich als eine Studie, die die RMSSD verwendet hat.
 
 **Was daraus für das Lesen deiner eigenen Daten folgt.** Achte auf den Verlauf im Vergleich mit deiner eigenen [Baseline](/science/concepts/hrv-baseline) statt auf einen einzelnen Wert, und notiere den Kontext – Schlaf, Alkohol, Krankheit, Trainingsbelastung, Zyklusphase –, damit sich eine Veränderung dem zuordnen lässt, was passiert ist. Eine Verschiebung, die mehrere Tage anhält und mit Beschwerden einhergeht, ist ein Grund, genauer hinzusehen; ein einzelner Einbruch nach einer späten Nacht ist es meist nicht. Was ein Messwert sagen kann und was nicht, erklärt [HRV richtig deuten](/science/concepts/interpreting-hrv).
+
+Eine Übersicht, was einen Wert senken kann und wie stark die Belege sind, bietet [Warum ist meine HRV niedrig?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

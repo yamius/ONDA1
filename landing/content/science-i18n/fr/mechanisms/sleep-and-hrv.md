@@ -1,5 +1,5 @@
 ---
-sourceHash: 58de478c79ed
+sourceHash: f592ea962f6b
 title: "HRV et fréquence cardiaque pendant le sommeil : pourquoi la nuit est la meilleure fenêtre"
 metaTitle: "HRV et fréquence cardiaque pendant le sommeil"
 metaDescription: "Ce qui arrive à la fréquence cardiaque et à la HRV au fil de la nuit et des stades de sommeil, pourquoi les mesures nocturnes sont les plus stables et ce que les objets connectés peuvent dire ou non."
@@ -133,6 +133,8 @@ Un sommeil court ou entrecoupé, l’alcool, une journée d’entraînement inte
 - **Aucune nuit isolée n’est un verdict.** Les stades, les éveils et l’horaire font bouger la valeur d’une nuit à l’autre.
 - **Les appareils ne sont pas interchangeables.** Les fenêtres, les indicateurs et le traitement diffèrent [S13, S14, S15], et les méthodes utilisées en recherche varient aussi [S4, S5].
 - **Un objet connecté n’est pas un examen du sommeil.** Il ne peut diagnostiquer ni l’apnée du sommeil ni l’insomnie [S12].
+
+Un sommeil court n’est qu’une des causes d’une valeur basse ; voir [pourquoi ma HRV est-elle basse ?](/science/questions/why-is-my-hrv-low).
 
 ## Dans ONDA
 

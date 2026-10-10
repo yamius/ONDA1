@@ -1,5 +1,5 @@
 ---
-sourceHash: 5c84bc6057f9
+sourceHash: 02e01673e8d2
 title: "Höhe und HRV: Was sich verändert und was sie nicht vorhersagen kann"
 metaTitle: "Höhe und HRV: Was Studien zeigen"
 metaDescription: "Wie große Höhe die Herzratenvariabilität verändert, ob die HRV Höhenkrankheit vorhersagen kann und warum Symptome, nicht eine Uhr, über den Abstieg entscheiden."
@@ -208,6 +208,8 @@ Das ist der wichtigste Teil der Seite. HRV und Uhren ersetzen nicht die Prüfung
 - **Der Großteil der Evidenz stammt von jungen, fitten Männern.** Daten zu Frauen, älteren Erwachsenen und weniger fitten Menschen sind begrenzt [S1].
 - **Das LF/HF-Verhältnis ist umstritten.** Selbst die Autoren, die seinen Anstieg berichten, ergänzen, dass es kein direktes Maß des Sympathikustonus ist [S1].
 - **Keine medizinischen Schlussfolgerungen.** Keine dieser Studien diagnostiziert eine Erkrankung oder gibt einen Aufstiegsplan vor.
+
+Fern der Berge stehen die häufigen Ursachen eines niedrigen Werts unter [Warum ist meine HRV niedrig?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

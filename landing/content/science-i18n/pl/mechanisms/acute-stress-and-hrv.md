@@ -1,5 +1,5 @@
 ---
-sourceHash: d8392f5cdd3e
+sourceHash: 8a419d7d40ce
 title: "Ostry stres a HRV: co się dzieje i jak przebiega regeneracja"
 metaTitle: "Ostry stres a HRV: co pokazują badania"
 metaDescription: "Jak egzaminy, wywiady i laboratoryjne testy stresu zmieniają zmienność rytmu serca, jak przebiega regeneracja i co mówią wyniki stresu z urządzeń."
@@ -132,6 +132,8 @@ Codzienne życie jest trudniejsze. W badaniu (uczestnicy: {{fact:stress.uendes.d
 - **Badania są małe i specyficzne.** Kilka wyników pochodzi z jednego badania u studentów, mężczyzn lub doświadczonych mówców.
 - **Żadnych wniosków medycznych.** Żadne z tych badań nie diagnozuje choroby i żadne nie pokazuje, że reakcja na stres przewiduje choroby serca u konkretnej osoby.
 - **Spokojniej nie znaczy wyższe HRV.** Oddychanie przed stresem złagodziło tętno i lęk bez zmiany HRV [S7].
+
+O innych codziennych przyczynach niskiego odczytu mówi strona [dlaczego moje HRV jest niskie?](/science/questions/why-is-my-hrv-low).
 
 ## W ONDA
 

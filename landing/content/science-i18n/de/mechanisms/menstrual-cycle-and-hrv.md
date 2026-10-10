@@ -1,5 +1,5 @@
 ---
-sourceHash: f1306d188d51
+sourceHash: 1c231ffc17a5
 title: "Menstruationszyklus und HRV: warum sich deine Baseline verschiebt"
 metaTitle: "Menstruationszyklus und HRV: was sich ändert und warum"
 metaDescription: "Wie sich die Herzfrequenzvariabilität über den Menstruationszyklus verändert, warum jede Frau ihr eigenes Muster hat und was hormonelle Verhütung und Menopause ändern."
@@ -103,6 +103,8 @@ Im selben Review nahm die HRV nach der Menopause mit steigendem Alter tendenziel
 - **Bevölkerungsdaten sind keine Vorhersage für dich.** Die Durchschnittswerte stammen von vielen Frauen; dein eigener Zyklus kann eine größere, eine kleinere oder gar keine Verschiebung zeigen [S6].
 - **Unternehmensdaten haben einen Vorbehalt.** Der größte Datensatz wurde von Angestellten des Geräteherstellers mitverfasst [S3].
 - **Eine Studie innerhalb eines Reviews ist nicht zwei Bestätigungen.** Die Eisprung-Studie gehört wahrscheinlich zur Evidenzbasis des Reviews [S1] [S4].
+
+Andere Ursachen eines niedrigen Werts zeigt [Warum ist meine HRV niedrig?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

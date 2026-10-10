@@ -58,6 +58,8 @@ export interface ScienceMeta {
   langs: string[]
   /** Section page below MIN_PAGES_FOR_INDEXED_KIND — robots "noindex, follow". */
   noindex?: boolean
+  /** Page FAQ (front matter `faq`) — emitted as static FAQPage JSON-LD by meta-inject. */
+  faq?: { question: string; answer: string }[]
 }
 
 export function scienceMeta(route: string, getPage: (lang: string, kind: string, slug: string) => SciencePageData | undefined): ScienceMeta | undefined {
@@ -134,5 +136,5 @@ export function scienceMeta(route: string, getPage: (lang: string, kind: string,
   if (p.reviewer) { article.reviewedBy = { '@type': 'Person', name: p.reviewer }; if (p.lastReviewed) article.lastReviewed = p.lastReviewed }
   if (p.image) article.image = { '@type': 'ImageObject', url: `${SITE_URL}${p.image}`, ...(p.imageWidth ? { width: p.imageWidth, height: p.imageHeight } : {}), ...(p.imageAlt ? { caption: p.imageAlt } : {}) }
   crumbs.push({ name: scienceShortName(p.title), url: pageUrl(lang, p) })
-  return { title: `${p.metaTitle} | ONDA Life`, description: p.metaDescription, ogType: 'article', jsonLd: [article], breadcrumbs: crumbs, langs: p.langs, ...(p.image ? { image: `${SITE_URL}${p.image}`, imageAlt: p.imageAlt ?? undefined } : {}) }
+  return { title: `${p.metaTitle} | ONDA Life`, description: p.metaDescription, ogType: 'article', jsonLd: [article], breadcrumbs: crumbs, langs: p.langs, ...(p.faq?.length ? { faq: p.faq.map((f) => ({ question: f.q, answer: f.a })) } : {}), ...(p.image ? { image: `${SITE_URL}${p.image}`, imageAlt: p.imageAlt ?? undefined } : {}) }
 }

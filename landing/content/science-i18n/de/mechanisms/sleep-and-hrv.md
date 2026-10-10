@@ -1,5 +1,5 @@
 ---
-sourceHash: 58de478c79ed
+sourceHash: f592ea962f6b
 title: "HRV und Herzfrequenz im Schlaf: Warum die Nacht das beste Messfenster ist"
 metaTitle: "HRV und Herzfrequenz im Schlaf"
 metaDescription: "Was mit Herzfrequenz und HRV über die Nacht und die Schlafstadien passiert, warum Nachtwerte das stabilste Fenster sind und was Wearables sagen können und was nicht."
@@ -132,6 +132,8 @@ Kurzer oder unterbrochener Schlaf, Alkohol, ein harter Trainingstag, eine Infekt
 - **Keine einzelne Nacht ist ein Urteil.** Stadien, Wachphasen und Zeitpunkt bewegen den Wert von Nacht zu Nacht.
 - **Geräte sind nicht austauschbar.** Fenster, Maße und Verarbeitung unterscheiden sich [S13, S14, S15], und auch die Methoden in der Forschung variieren [S4, S5].
 - **Ein Wearable ist keine Schlafuntersuchung.** Es kann weder Schlafapnoe noch Insomnie diagnostizieren [S12].
+
+Kurzer Schlaf ist nur eine Ursache eines niedrigen Werts; siehe [Warum ist meine HRV niedrig?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

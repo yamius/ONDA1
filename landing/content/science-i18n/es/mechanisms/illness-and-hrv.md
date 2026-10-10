@@ -1,5 +1,5 @@
 ---
-sourceHash: 26f74cb4722e
+sourceHash: 079098055e7f
 title: "Enfermedad y HRV: lo que un dispositivo ponible puede y no puede ver"
 metaTitle: "Enfermedad y HRV: señal temprana, no diagnóstico"
 metaDescription: "Cómo la inflamación y la infección mueven la HRV y el pulso en reposo, qué significan las alertas de los relojes y por qué no dicen que estás enfermo."
@@ -102,6 +102,8 @@ Algunas personas tienen síntomas durante meses tras una infección, lo que se l
 ## ¿Qué puedes hacer ante un descenso marcado?
 
 Si tu HRV está claramente por debajo de tu rango habitual y tu frecuencia cardíaca en reposo es más alta varios días seguidos, tómalo como una señal temprana inespecífica de que el cuerpo está sometido a una carga. Es un motivo para descansar y observar cómo te sientes. Si tienes síntomas, consulta a un médico en lugar de fiarte de tu reloj. Una sola noche baja no suele ser motivo de preocupación ([cómo interpretar la HRV](/science/concepts/interpreting-hrv)).
+
+El estrés, el alcohol y los viajes pueden producir la misma bajada; se comparan en [¿por qué tengo la HRV baja?](/science/questions/why-is-my-hrv-low).
 
 ## En ONDA
 

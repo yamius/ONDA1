@@ -450,6 +450,8 @@ Day-to-day comparisons only make sense when the recording is comparable. Night-t
 
 **What follows for reading your own data.** Watch the trend against your own [baseline](/science/concepts/hrv-baseline) rather than one value, and record the context — sleep, alcohol, illness, training load, cycle phase — so that a change can be matched with what happened. A shift that lasts several days and comes with symptoms is a reason to look closer; a single dip after a late night usually is not. What a reading can and cannot say is set out on [interpreting HRV](/science/concepts/interpreting-hrv).
 
+For a map of what can push a reading low and how strong the evidence is, see [why is my HRV low?](/science/questions/why-is-my-hrv-low).
+
 ## In ONDA
 
 ONDA reads HRV (SDNN) and resting heart rate from Apple Health. {{fact:baseline.compare}} [S25]. These comparisons are descriptive, not a diagnosis: ONDA does not say which cause lies behind a change.

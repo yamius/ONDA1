@@ -1,5 +1,5 @@
 ---
-sourceHash: 872cae1c83e6
+sourceHash: ad4473025ca5
 title: "Waarom is mijn HRV laag? Veelvoorkomende oorzaken en wat het bewijs laat zien"
 metaTitle: "Waarom is mijn HRV laag? Oorzaken en wat ze betekenen"
 metaDescription: "Lage HRV? Meestal een reactie op slaap, alcohol, ziekte, stress of training, geen diagnose. Elke oorzaak met het bewijs, en wanneer je naar de dokter gaat."
@@ -17,12 +17,12 @@ keyPoints:
   - "Alcohol, ziekte, acute stress, zware training en de eerste dagen op grote hoogte gaan elk aantoonbaar samen met een lagere HRV; vóór de menstruatie is er op groepsniveau gemiddeld een kleine dip, maar individuele patronen verschillen."
   - "Bij een korte nacht is de gemeten daling klein, bij langdurige stress en ploegendienst is het bewijs gemengd, en bij vaste koffiedrinkers is niet aangetoond dat een matige hoeveelheid cafeïne de HRV in rust verandert."
   - "Leeftijd verlaagt HRV gemiddeld over decennia, maar verklaart geen daling van de ene week op de andere."
-  - "Meerdere dagen onder je gebruikelijke bandbreedte, met een hogere rusthartslag en je niet lekker voelen, zijn een reden om rust te nemen; pijn op de borst, flauwvallen of kortademigheid vragen om spoedhulp."
+  - "Meerdere dagen onder je gebruikelijke bandbreedte, met een hogere rusthartslag en je niet lekker voelen, zijn een reden om rust te nemen. Zoek spoedhulp bij: pijn of druk op de borst; flauwvallen of bijna flauwvallen; ernstige kortademigheid; een snelle, krachtige of onregelmatige hartslag die in rust niet bedaart (ook met duizeligheid); plotselinge verwardheid, zwakte aan één kant van het lichaam, moeite met praten."
   - "ONDA vergelijkt je nachten met je eigen basislijn, maar zegt niet wat een verandering veroorzaakte en stelt geen diagnose."
 imageAlt: "Een dunne blauwgroene hartslaglijn op een donker marineblauwe achtergrond, omringd door kleine, zacht gloeiende beige pictogrammen: een maan, een glas, een thermometer, een hardloopschoen, een berg, een koffiekop en wolken."
 faq:
   - q: "Is een lage HRV gevaarlijk?"
-    a: "Eén lage meting is geen diagnose en vertelt je op zichzelf niet wat de oorzaak is; meestal is het een reactie op iets concreets, zoals een korte nacht, alcohol, een infectie, stress of zware training. Het wordt een reden om rust te nemen en te letten op hoe je je voelt als je HRV meerdere dagen onder je gebruikelijke bandbreedte blijft, samen met een hogere rusthartslag, en je je niet lekker voelt. Heb je klachten, ga dan naar een arts in plaats van op je horloge te vertrouwen; pijn op de borst, flauwvallen of kortademigheid vragen om spoedhulp, wat het horloge ook laat zien."
+    a: "Eén lage meting is geen diagnose en vertelt je op zichzelf niet wat de oorzaak is; meestal is het een reactie op iets concreets, zoals een korte nacht, alcohol, een infectie, stress of zware training. Het wordt een reden om rust te nemen en te letten op hoe je je voelt als je HRV meerdere dagen onder je gebruikelijke bandbreedte blijft, samen met een hogere rusthartslag, en je je niet lekker voelt. Heb je klachten, ga dan naar een arts in plaats van op je horloge te vertrouwen. Wat het horloge ook laat zien, zoek spoedhulp bij: pijn of druk op de borst; flauwvallen of bijna flauwvallen; ernstige kortademigheid; een snelle, krachtige of onregelmatige hartslag die in rust niet bedaart (ook met duizeligheid); plotselinge verwardheid, zwakte aan één kant van het lichaam, moeite met praten."
   - q: "Kan stress mijn HRV verlagen?"
     a: "Ja, voor een tijdje. Korte, duidelijke stress zoals een examen verlaagt HRV. Het herstel na de taak is een apart proces dat per persoon verschilt, en studies meten het over verschillende tijdvensters, dus er is geen vaste hersteltijd. Tijdens veeleisende werkperiodes was HRV lager dan in hersteltijd, maar in een grote langetermijnstudie hing werkstress niet samen met de HRV in rust, dus een blijvende daling is niet aangetoond. Eén lage HRV-meting betekent op zichzelf niet dat je gestrest of ziek bent."
   - q: "Waarom is mijn HRV laag na alcohol?"
@@ -184,13 +184,13 @@ We vonden geen studie naar lichte uitdroging in het dagelijks leven en de HRV-me
 
 Eén lage nacht is meestal geen reden tot zorg. {{fact:claim.hrvNotStress}}. Ligt je HRV meerdere dagen achter elkaar duidelijk onder je gebruikelijke bandbreedte, is je rusthartslag hoger en voel je je niet lekker, beschouw het dan als een niet-specifiek signaal dat het lichaam onder druk staat. Het is een reden om rust te nemen en te letten op hoe je je voelt, geen diagnose. Heb je klachten, ga dan naar een arts in plaats van op je horloge te vertrouwen.
 
-**Pijn op de borst, flauwvallen of kortademigheid vragen om spoedhulp, wat je horloge ook laat zien.**
+**Wat je horloge ook laat zien, zoek spoedhulp bij: pijn of druk op de borst; flauwvallen of bijna flauwvallen; ernstige kortademigheid; een snelle, krachtige of onregelmatige hartslag die in rust niet bedaart (ook met duizeligheid); plotselinge verwardheid, zwakte aan één kant van het lichaam, moeite met praten.**
 
 Een normaal ogende meting sluit ziekte ook niet uit: in de smartwatchstudie hierboven kreeg niet elke besmette persoon een melding [S8]. Hoe de rusthartslag wordt gemeten en wat haar beïnvloedt, lees je op [rusthartslag](/science/measurements/resting-heart-rate).
 
 ## Wat kun je doen?
 
-Begin met wat je kunt zien. Was de nacht kort, heb je gedronken of zwaar getraind, dan heeft de lage meting al een waarschijnlijke verklaring: neem weg wat je kunt, geef je lichaam tijd om te herstellen en kijk naar de trend over de komende dagen in plaats van alleen naar de volgende ochtend.
+Begin met wat je kunt zien. Was de nacht kort, heb je gedronken of zwaar getraind, dan heeft de lage meting al een waarschijnlijke verklaring: neem weg wat je kunt, geef je lichaam tijd om te herstellen en kijk naar de trend over de komende dagen in plaats van alleen naar de volgende ochtend. Wat je daarna kunt doen, stap voor stap, staat bij [wat te doen na een lage HRV-meting](/articles/what-to-do-after-low-hrv-reading).
 
 Langzaam ademen kun je op elk moment doen. {{fact:claim.slowExhale}}. In een grote meta-analyse werd de stijging gezien tijdens langzaam ademen, direct na een sessie en na programma's van meerdere sessies [S35]. Dat is een verandering tijdens en na de oefening; ze neemt niet weg wat je meting verlaagde, en ze is geen test van herstel. Het bredere bewijs staat op [langzaam ademen](/science/evidence/slow-breathing), en de technieken die direct met elkaar zijn vergeleken, staan op [ademhalingstechnieken vergeleken](/science/mechanisms/breathing-techniques-compared).
 

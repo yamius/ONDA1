@@ -1,5 +1,5 @@
 ---
-sourceHash: d1da038aff34
+sourceHash: 159ee240a2bb
 title: "Cafeïne en HRV: wat koffie wel en niet doet"
 metaTitle: "Cafeïne en HRV: verlaagt koffie je HRV?"
 metaDescription: "Wat onderzoek laat zien over koffie en hartslagvariabiliteit in rust en na inspanning, waarin energiedrankjes verschillen en hoe late cafeïne HRV bereikt."
@@ -103,6 +103,8 @@ Er is dus geen tegenspraak. Een ochtendkoffie verandert je HRV in rust waarschij
 - **Twee reviews zijn geen dubbel bewijs.** De meta-analyses over de periode na inspanning delen studies [S1] [S2].
 - **Studies overdag zijn geen nachtelijke gegevens.** Late cafeïne kan de slaap beïnvloeden en daardoor de nachtelijke HRV [S7].
 - **Een meting van een wearable stelt niets vast.** Hartkloppingen, pijn op de borst of flauwvallen vragen om medische hulp, wat een wearable ook laat zien.
+
+Cafeïne is maar een van de mogelijke oorzaken van een lage meting; de andere staan op [waarom is mijn HRV laag?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

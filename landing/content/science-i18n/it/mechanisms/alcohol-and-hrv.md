@@ -1,5 +1,5 @@
 ---
-sourceHash: 5b3483e41d2b
+sourceHash: 285e3bfba44f
 title: "Alcol e HRV: che cosa fa un drink alla tua notte"
 metaTitle: "Alcol e HRV: la notte dopo aver bevuto"
 metaDescription: "Perché dopo aver bevuto l'HRV notturna scende e la frequenza cardiaca a riposo sale, come contano dose e orario e che cosa la ricerca sull'alcol non sa ancora."
@@ -100,6 +100,8 @@ Si dice spesso che un drink dopo l'allenamento aiuti a rilassarsi e a recuperare
 - **I dati aziendali hanno una riserva.** Il set di dati più ampio è stato finanziato e in parte scritto da WHOOP [S1]; lo studio finlandese ha usato l'indice di un'altra azienda [S8]; lo studio con risultato nullo sul consumo moderato è stato finanziato in parte da un centro del settore della birra [S5].
 - **Una coorte non fa due.** Gli articoli MunichBREW II sono un unico set di dati [S3] [S4].
 - **Un'HRV più bassa dopo aver bevuto non diagnostica nulla.** Palpitazioni, battito irregolare, dolore al petto o svenimento dopo aver bevuto richiedono assistenza medica, qualunque cosa mostri un dispositivo indossabile.
+
+Per capire come l’alcol si confronta con altre cause comuni di una lettura bassa, vedi [perché la mia HRV è bassa?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: 58de478c79ed
+sourceHash: f592ea962f6b
 title: "HRV en hartslag tijdens de slaap: waarom de nacht het beste meetvenster is"
 metaTitle: "HRV en hartslag tijdens de slaap"
 metaDescription: "Wat er 's nachts en in de slaapfasen gebeurt met hartslag en HRV, waarom nachtelijke metingen het stabielste venster zijn en wat wearables wel en niet zeggen."
@@ -132,6 +132,8 @@ Korte of onderbroken slaap, alcohol, een zware trainingsdag, een infectie, stres
 - **Geen enkele nacht is een eindoordeel.** Fasen, ontwaken en timing verschuiven de waarde van nacht tot nacht.
 - **Apparaten zijn niet uitwisselbaar.** Vensters, maten en verwerking verschillen [S13, S14, S15], en ook de methoden in onderzoek lopen uiteen [S4, S5].
 - **Een wearable is geen slaaponderzoek.** Hij kan geen slaapapneu of slapeloosheid vaststellen [S12].
+
+Kort slapen is maar één oorzaak van een lage meting; zie [waarom is mijn HRV laag?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 

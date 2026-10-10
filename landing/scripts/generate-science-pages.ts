@@ -200,6 +200,8 @@ function buildPage(r: Raw, lang: string) {
     metaDescription: String(tf.metaDescription),
     shortAnswer: resolveFacts(String(tf.shortAnswer).trim().replace(/\s+/g, ' '), where, L),
     keyPoints: (tf.keyPoints as string[]).map((x) => resolveFacts(x, where, L)),
+    // Visible FAQ block + static FAQPage JSON-LD (meta-inject). Translation's faq if present, else EN.
+    faq: ((tf.faq ?? fm.faq ?? []) as { q: string; a: string }[]).map((f) => ({ q: resolveFacts(String(f.q), where, L), a: resolveFacts(String(f.a), where, L) })),
     image: fm.image ? String(fm.image) : null,
     imageAlt: tf.imageAlt ? String(tf.imageAlt) : fm.imageAlt ? String(fm.imageAlt) : null,
     imageWidth: fm.image ? imageSize(String(fm.image))?.w ?? 1024 : null,
@@ -258,7 +260,7 @@ const TYPES =
   `export interface ScienceSource { id: string; cite: string; title: string; journal: string | null; year: number | null; doi: string | null; pmid: string | null; url: string | null; type: string; note?: string | null }\n` +
   `export interface ScienceEvidence { claim: string; sources: string[]; class: string; limitation: string }\n` +
   `export interface ScienceLink { href: string; label: string; type: string }\n` +
-  `export interface SciencePageData { lang: string; kind: ScienceKind; slug: string; langs: string[]; title: string; metaTitle: string; metaDescription: string; shortAnswer: string; keyPoints: string[]; image: string | null; imageAlt: string | null; imageWidth: number | null; imageHeight: number | null; editor: string; reviewer: string | null; lastReviewed: string | null; dateModified: string; body: string; sources: ScienceSource[]; evidenceMap: ScienceEvidence[]; related: ScienceLink[] }\n` +
+  `export interface SciencePageData { lang: string; kind: ScienceKind; slug: string; langs: string[]; title: string; metaTitle: string; metaDescription: string; shortAnswer: string; keyPoints: string[]; faq: { q: string; a: string }[]; image: string | null; imageAlt: string | null; imageWidth: number | null; imageHeight: number | null; editor: string; reviewer: string | null; lastReviewed: string | null; dateModified: string; body: string; sources: ScienceSource[]; evidenceMap: ScienceEvidence[]; related: ScienceLink[] }\n` +
   `export interface ScienceIndexEntry { kind: ScienceKind; slug: string; langs: string[]; i18n: Record<string, { title: string; metaDescription: string }> }\n`
 
 mkdirSync(dirname(OUT), { recursive: true })

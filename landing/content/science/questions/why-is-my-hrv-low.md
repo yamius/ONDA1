@@ -17,7 +17,7 @@ keyPoints:
   - "Alcohol, illness, acute stress, hard training and the first days at high altitude have each been shown to go with lower HRV; before a period there is a small average dip at group level, but individual patterns differ."
   - "For short sleep the measured drop is small, for long-term stress and shift work the evidence is mixed, and in regular coffee drinkers moderate caffeine has not been shown to change resting HRV."
   - "Age lowers HRV on average over decades, but it does not explain a drop from one week to the next."
-  - "Several days below your usual range with a higher resting heart rate and feeling unwell are a reason to rest; chest pain, fainting or shortness of breath need emergency care."
+  - "Several days below your usual range with a higher resting heart rate and feeling unwell are a reason to rest. Get emergency care for: chest pain or pressure; fainting or near-fainting; severe shortness of breath; fast, strong or irregular heartbeat that does not settle at rest (including with dizziness); sudden confusion, weakness on one side, trouble speaking."
   - "ONDA compares your nights with your own baseline, but it does not say what caused a change and does not diagnose."
 image: "/images/science/questions-why-is-my-hrv-low.jpg"
 imageAlt: "A thin teal heartbeat line on a dark navy background, ringed by small glowing beige icons: a moon, a glass, a thermometer, a running shoe, a mountain, a coffee cup and clouds."
@@ -32,7 +32,7 @@ related:
   science: [concepts/hrv-baseline, concepts/interpreting-hrv, mechanisms/hrv-day-to-day, measurements/heart-rate-variability, measurements/resting-heart-rate, evidence/slow-breathing]
 faq:
   - q: "Is low HRV dangerous?"
-    a: "A single low reading is not a diagnosis and does not by itself tell you the cause; it is most often a reaction to something specific, such as a short night, alcohol, an infection, stress or hard training. It becomes a reason to rest and watch how you feel when HRV stays below your usual range for several days together with a higher resting heart rate and you feel unwell. If you have symptoms, see a doctor rather than relying on your watch; chest pain, fainting or shortness of breath need emergency care, whatever the watch shows."
+    a: "A single low reading is not a diagnosis and does not by itself tell you the cause; it is most often a reaction to something specific, such as a short night, alcohol, an infection, stress or hard training. It becomes a reason to rest and watch how you feel when HRV stays below your usual range for several days together with a higher resting heart rate and you feel unwell. If you have symptoms, see a doctor rather than relying on your watch. Whatever the watch shows, get emergency care for: chest pain or pressure; fainting or near-fainting; severe shortness of breath; fast, strong or irregular heartbeat that does not settle at rest (including with dizziness); sudden confusion, weakness on one side, trouble speaking."
   - q: "Can stress lower my HRV?"
     a: "Yes, for a while. Short, clear stress such as an exam lowers HRV. Recovery after the task is a separate process that varies between people, and studies measure it over different windows, so there is no single recovery time. During demanding work periods HRV was lower than in recovery time, but in a large long-term study work stress was not linked with resting HRV, so a lasting drop has not been shown. A single low HRV reading does not by itself mean you are stressed or unwell."
   - q: "Why is my HRV low after drinking?"
@@ -723,13 +723,13 @@ We found no study of everyday mild dehydration and a watch's HRV reading, and no
 
 A single low night is usually not a cause for concern. {{fact:claim.hrvNotStress}}. If your HRV is clearly below your usual range and your resting heart rate is higher for several days in a row, and you feel unwell, treat it as a non-specific signal that the body is under strain. It is a reason to rest and to watch how you feel, not a diagnosis. If you have symptoms, see a doctor rather than relying on your watch.
 
-**Chest pain, fainting or shortness of breath need emergency care, whatever your watch shows.**
+**Whatever your watch shows, get emergency care for: chest pain or pressure; fainting or near-fainting; severe shortness of breath; fast, strong or irregular heartbeat that does not settle at rest (including with dizziness); sudden confusion, weakness on one side, trouble speaking.**
 
 A normal-looking reading does not rule out illness either: in the smartwatch study above, not every infected person received an alert [S8]. How resting heart rate is measured and what moves it is covered on [resting heart rate](/science/measurements/resting-heart-rate).
 
 ## What can you do?
 
-Start with what you can see. If the night was short, you drank or you trained hard, the low reading already has a likely explanation: remove what you can, give your body time to recover, and look at the trend over the next few days rather than at the next morning alone.
+Start with what you can see. If the night was short, you drank or you trained hard, the low reading already has a likely explanation: remove what you can, give your body time to recover, and look at the trend over the next few days rather than at the next morning alone. What to do next, step by step, is on [what to do after a low HRV reading](/articles/what-to-do-after-low-hrv-reading).
 
 Slow breathing is something you can do at any time. {{fact:claim.slowExhale}}. In a large meta-analysis, the rise was seen during slow breathing, immediately after a session and after programmes of several sessions [S35]. That is a change during and after the practice; it does not remove whatever lowered your reading, and it is no test of recovery. The wider evidence is on [slow breathing](/science/evidence/slow-breathing), and the techniques that have been compared directly are on [breathing techniques compared](/science/mechanisms/breathing-techniques-compared).
 

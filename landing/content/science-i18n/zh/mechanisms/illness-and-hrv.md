@@ -1,5 +1,5 @@
 ---
-sourceHash: 26f74cb4722e
+sourceHash: 079098055e7f
 title: "疾病与 HRV：可穿戴设备能看到什么、看不到什么"
 metaTitle: "疾病与 HRV：早期信号，而非诊断"
 metaDescription: "炎症和感染如何影响 HRV 与静息心率，可穿戴设备的提醒究竟意味着什么，以及为什么它们无法告诉你已经生病。"
@@ -95,6 +95,8 @@ evidenceMap:
 ## 出现明显下降时可以怎么做？
 
 如果你的 HRV 明显低于平常范围，而且静息心率连续几天偏高，请把它看作身体正承受负担的非特异性早期信号。这是一个让自己休息、留意自身感受的理由。如果你有症状，请去看医生，而不是依赖手表。单独一晚偏低通常无需担心（[如何解读 HRV](/science/concepts/interpreting-hrv)）。
+
+压力、饮酒和旅行也可能造成同样的下降；[为什么我的 HRV 偏低？](/science/questions/why-is-my-hrv-low)把它们放在一起对比。
 
 ## 在 ONDA 中
 

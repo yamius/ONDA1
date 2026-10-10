@@ -1,5 +1,5 @@
 ---
-sourceHash: 9c002efa1ed5
+sourceHash: 477ca0c9b233
 title: "Pourquoi la HRV change d’un jour à l’autre"
 metaTitle: "HRV d’un jour à l’autre : causes et données"
 metaDescription: "Pourquoi la HRV varie d’un jour à l’autre : bruit normal, sommeil, alcool, entraînement, maladie, stress et cycle menstruel — mécanismes et données."
@@ -140,6 +140,8 @@ Comparer un jour à l’autre n’a de sens que si les enregistrements sont comp
 - **Des mesures différentes, des réponses différentes.** Dans la méta-analyse sur la privation de sommeil, la RMSSD a baissé de façon significative, mais pas le SDNN [S6]. Une montre qui affiche le SDNN peut montrer une cause moins nettement qu’une étude qui a utilisé la RMSSD.
 
 **Ce qui en découle pour lire vos propres données.** Suivez la tendance par rapport à votre propre [référence](/science/concepts/hrv-baseline) plutôt qu’une valeur isolée, et notez le contexte — sommeil, alcool, maladie, charge d’entraînement, phase du cycle — pour pouvoir rapprocher un changement de ce qui s’est passé. Un écart qui dure plusieurs jours et s’accompagne de symptômes justifie d’y regarder de plus près ; une baisse isolée après une soirée tardive, généralement pas. Ce qu’une mesure peut ou ne peut pas dire est expliqué sur la page [interpréter la HRV](/science/concepts/interpreting-hrv).
+
+Pour une carte de ce qui peut faire baisser une valeur et de la solidité des preuves, voir [pourquoi ma HRV est-elle basse ?](/science/questions/why-is-my-hrv-low).
 
 ## Dans ONDA
 

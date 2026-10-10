@@ -1,5 +1,5 @@
 ---
-sourceHash: 68b096acdcad
+sourceHash: b9b0dddaa0a9
 title: "Exercício e HRV: o que o treino faz e o que mostra o treino guiado pela HRV"
 metaTitle: "Exercício e HRV: evidências sobre o treino guiado pela HRV"
 metaDescription: "Por que a HRV cai depois de um treino pesado e se recupera, quanto tempo isso leva e o que estudos de treino guiado pela HRV mostram em comparação com um plano fixo."
@@ -129,6 +129,8 @@ Esta página não dá orientação sobre carga de treino. Planejar as sessões c
 - **Não foi demonstrado que o treino guiado pela HRV supera um bom plano fixo** no desempenho ou no consumo máximo de oxigênio [S2], e em um pequeno estudo com pacientes cardíacos o desfecho primário não diferiu [S3].
 - **A melhor regra de decisão é desconhecida.** Os estudos usaram limiares e protocolos diferentes [S2], e o benefício de longo prazo para praticantes amadores não foi demonstrado.
 - **A maior parte dos dados é aeróbica.** O treino de força é pouco estudado para se aplicar o mesmo curso no tempo [S1].
+
+Se o treino não explica uma leitura baixa, outras causas comuns estão listadas em [por que minha HRV está baixa?](/science/questions/why-is-my-hrv-low).
 
 ## No ONDA
 

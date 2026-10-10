@@ -244,6 +244,8 @@ A drink after training is often said to help you relax and recover. In a single 
 - **One cohort is not two.** The MunichBREW II papers are one dataset [S3] [S4].
 - **A lower HRV after drinking does not diagnose anything.** Palpitations, an irregular heartbeat, chest pain or fainting after drinking need medical attention, whatever a wearable shows.
 
+For how alcohol compares with other everyday causes of a low reading, see [why is my HRV low?](/science/questions/why-is-my-hrv-low).
+
 ## In ONDA
 
 ONDA builds a personal baseline from nightly values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S9]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV trend is an SDNN trend. A night after drinking can show up as a lower HRV and a higher resting heart rate in that comparison; it is the normal reaction described above, not a cause for alarm. Look at the trend over several nights rather than at one night. ONDA does not track alcohol, give advice on drinking or diagnose any condition.

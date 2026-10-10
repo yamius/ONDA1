@@ -1,5 +1,5 @@
 ---
-sourceHash: 68b096acdcad
+sourceHash: b9b0dddaa0a9
 title: "Exercice et HRV : ce que fait l’entraînement et ce que montre le guidage par la HRV"
 metaTitle: "Exercice et HRV : données sur l’entraînement guidé par la HRV"
 metaDescription: "Pourquoi la HRV baisse après un entraînement intense puis récupère, combien de temps cela prend et ce que montrent les essais d’entraînement guidé par la HRV face à un plan fixe."
@@ -130,6 +130,8 @@ Cette page ne donne aucun conseil sur la charge d’entraînement. La planificat
 - **Il n’est pas démontré que le guidage par la HRV fasse mieux qu’un bon plan fixe** pour la performance ou la consommation maximale d’oxygène [S2], et dans un petit essai chez des patients cardiaques, le critère principal n’a pas différé [S3].
 - **La meilleure règle de décision est inconnue.** Les essais ont utilisé des seuils et des protocoles différents [S2], et le bénéfice à long terme pour les sportifs amateurs n’a pas été démontré.
 - **La plupart des données concernent l’effort aérobie.** L’entraînement en force est trop peu étudié pour lui appliquer la même évolution dans le temps [S1].
+
+Si l’entraînement n’explique pas une valeur basse, d’autres causes fréquentes sont listées sur [pourquoi ma HRV est-elle basse ?](/science/questions/why-is-my-hrv-low).
 
 ## Dans ONDA
 

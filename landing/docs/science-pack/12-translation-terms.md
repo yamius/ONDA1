@@ -126,3 +126,15 @@ Extra rows from the altitude-and-hrv translators (approved by Yakiv 2026-10-10; 
 | time-domain HRV measures | ru временные показатели HRV · uk часові показники HRV |
 | altitude chamber | ru/uk барокамера · fr chambre d’altitude · it camera ipobarica |
 | sea level | fr niveau de la mer · it livello del mare |
+
+## Why is my HRV low? terms (questions/why-is-my-hrv-low, published 2026-10-10)
+
+Rows proposed by the hub's translators (task 064), added at publication; only the languages listed were set, others follow existing usage.
+
+| Term | Approved renderings |
+|---|---|
+| evidence labels shown / mixed / not shown / no data | de belegt / uneinheitlich / nicht belegt / keine Daten · pl wykazano / niejednoznaczne / nie wykazano / brak danych · nl aangetoond / gemengd / niet aangetoond / geen gegevens |
+| baseline | pl linia bazowa |
+| shift work / 24-h shifts | nl ploegendienst / diensten van een etmaal |
+| Apple Health | nl Apple Gezondheid |
+| emergency list (owner decision 2026-10-10; same list as the MCP `check_hrv` red-flag text) | EN "chest pain or pressure; fainting or near-fainting; severe shortness of breath; fast, strong or irregular heartbeat that does not settle at rest (including with dizziness); sudden confusion, weakness on one side, trouble speaking" — translated once per language on the hub; reuse that wording for any other page that needs the list |

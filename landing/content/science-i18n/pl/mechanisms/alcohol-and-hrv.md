@@ -1,5 +1,5 @@
 ---
-sourceHash: 5b3483e41d2b
+sourceHash: 285e3bfba44f
 title: "Alkohol a HRV: co drink robi z Twoją nocą"
 metaTitle: "Alkohol a HRV: noc po piciu"
 metaDescription: "Dlaczego po piciu nocne HRV spada, a tętno spoczynkowe rośnie, jaką rolę odgrywają dawka i pora oraz czego badania nad alkoholem jeszcze nie wiedzą."
@@ -98,6 +98,8 @@ Często mówi się, że drink po treningu pomaga się rozluźnić i zregenerowa�
 - **Dane firm wymagają zastrzeżenia.** Największy zbiór danych sfinansowała i częściowo opisała firma WHOOP [S1]; badanie fińskie użyło wskaźnika innej firmy [S8]; badanie z wynikiem zerowym dotyczące umiarkowanego picia było częściowo finansowane przez centrum branży piwowarskiej [S5].
 - **Jedna kohorta to nie dwie.** Prace MunichBREW II opierają się na jednym zbiorze danych [S3] [S4].
 - **Niższe HRV po piciu niczego nie diagnozuje.** Kołatanie serca, nieregularny rytm, ból w klatce piersiowej lub omdlenie po piciu wymagają pomocy lekarskiej, niezależnie od tego, co pokazuje urządzenie noszone.
+
+Jak alkohol wypada na tle innych codziennych przyczyn niskiego odczytu, opisuje strona [dlaczego moje HRV jest niskie?](/science/questions/why-is-my-hrv-low).
 
 ## W ONDA
 

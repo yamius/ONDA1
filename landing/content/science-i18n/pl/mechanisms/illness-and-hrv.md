@@ -1,5 +1,5 @@
 ---
-sourceHash: 26f74cb4722e
+sourceHash: 079098055e7f
 title: "Choroba a HRV: co urządzenie noszone widzi, a czego nie"
 metaTitle: "Choroba a HRV: wczesny sygnał, nie diagnoza"
 metaDescription: "Jak stan zapalny i infekcja zmieniają HRV i tętno spoczynkowe, co naprawdę znaczą alerty urządzeń noszonych i dlaczego nie powiedzą Ci, że jesteś chory."
@@ -101,6 +101,8 @@ U niektórych osób objawy utrzymują się miesiącami po infekcji — nazywa si
 ## Co zrobić z wyraźnym spadkiem?
 
 Jeśli Twoje HRV jest wyraźnie poniżej zwykłego zakresu, a tętno spoczynkowe wyższe przez kilka dni z rzędu, traktuj to jako niespecyficzny wczesny sygnał, że organizm jest obciążony. To powód, by odpocząć i obserwować samopoczucie. Jeśli masz objawy, idź do lekarza, zamiast polegać na zegarku. Pojedyncza niska noc zwykle nie jest powodem do niepokoju ([jak interpretować HRV](/science/concepts/interpreting-hrv)).
+
+Stres, alkohol i podróże mogą dać taki sam spadek; zestawia je strona [dlaczego moje HRV jest niskie?](/science/questions/why-is-my-hrv-low).
 
 ## W ONDA
 

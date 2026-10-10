@@ -1,5 +1,5 @@
 ---
-sourceHash: 68b096acdcad
+sourceHash: b9b0dddaa0a9
 title: "Training und HRV: Was Belastung bewirkt und was HRV-gesteuertes Training zeigt"
 metaTitle: "Training und HRV: Evidenz zum HRV-gesteuerten Training"
 metaDescription: "Warum die HRV nach hartem Training sinkt und sich wieder erholt, wie lange das dauert und was Studien zu HRV-gesteuertem Training im Vergleich mit einem festen Trainingsplan zeigen."
@@ -130,6 +130,8 @@ Diese Seite gibt keine Empfehlungen zur Trainingsbelastung. Die Planung deiner E
 - **HRV-Steuerung ist einem guten festen Plan nachweislich nicht überlegen** bei Leistung oder maximaler Sauerstoffaufnahme [S2], und in einer kleinen Studie mit Herzpatientinnen und Herzpatienten unterschied sich der primäre Endpunkt nicht [S3].
 - **Die beste Entscheidungsregel ist unbekannt.** Die Studien nutzten unterschiedliche Schwellen und Protokolle [S2], und ein langfristiger Nutzen für Freizeitsportlerinnen und Freizeitsportler ist nicht gezeigt.
 - **Die meisten Daten sind aerob.** Krafttraining ist zu dünn abgedeckt, um denselben Zeitverlauf anzuwenden [S1].
+
+Wenn das Training einen niedrigen Wert nicht erklärt, nennt [Warum ist meine HRV niedrig?](/science/questions/why-is-my-hrv-low) weitere häufige Ursachen.
 
 ## In ONDA
 

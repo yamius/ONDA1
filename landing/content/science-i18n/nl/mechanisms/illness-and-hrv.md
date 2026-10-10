@@ -1,5 +1,5 @@
 ---
-sourceHash: 26f74cb4722e
+sourceHash: 079098055e7f
 title: "Ziekte en HRV: wat een wearable wel en niet kan zien"
 metaTitle: "Ziekte en HRV: vroeg signaal, geen diagnose"
 metaDescription: "Hoe ontsteking en infectie HRV en rusthartslag verschuiven, wat meldingen van wearables betekenen en waarom ze je niet kunnen vertellen dat je ziek bent."
@@ -101,6 +101,8 @@ Sommige mensen houden maandenlang klachten na een infectie; dat heet long covid.
 ## Wat kun je doen bij een duidelijke daling?
 
 Ligt je HRV een paar dagen achter elkaar duidelijk onder je gebruikelijke bereik en is je rusthartslag hoger, zie het dan als een niet-specifiek vroeg signaal dat je lichaam onder druk staat. Het is een reden om rust te nemen en te letten op hoe je je voelt. Heb je klachten, ga dan naar een arts in plaats van op je horloge te vertrouwen. Eén lage nacht is meestal geen reden tot zorg ([HRV interpreteren](/science/concepts/interpreting-hrv)).
+
+Stress, alcohol en reizen kunnen dezelfde daling geven; ze staan naast elkaar op [waarom is mijn HRV laag?](/science/questions/why-is-my-hrv-low).
 
 ## In ONDA
 
