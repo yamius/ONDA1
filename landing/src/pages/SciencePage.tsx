@@ -13,6 +13,8 @@ import rehypeSlug from 'rehype-slug'
 import { SCIENCE_KINDS, type SciencePageData, type ScienceKind, type ScienceIndexEntry } from '../generated/science-pages'
 import { NotFoundPage } from './NotFoundPage'
 import { OptimizedImage } from '../components/OptimizedImage'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { langHref, type Lang } from '../i18n'
 import { scienceUi, fillUi, type ScienceUi } from '../data/science/i18n'
 import { readSciencePage } from '../lib/science-content'
@@ -139,8 +141,27 @@ const mdComponents = (lang: string) => ({
   img: ({ src, alt }: { src?: string; alt?: string }) => <OptimizedImage src={src ?? ''} alt={alt ?? ''} className="my-6 w-full rounded" />,
 })
 
+/** Task 068: ONE App Store block per page — after the body (its last section is "In ONDA"), before
+ *  FAQ/evidence/sources; on the low-HRV hub right after "What can you do?" (the 5th H2 in every lang).
+ *  Never mid-text, never above the evidence. */
+const CTA_AFTER_H2: Record<string, number> = { 'questions/why-is-my-hrv-low': 5 }
+function scienceCtSlug(kind: string, slug: string): string {
+  if (kind === 'questions' && slug === 'why-is-my-hrv-low') return 'hub_low_hrv'
+  if (kind === 'measurements' && slug === 'heart-rate-variability') return 'wearable_hrv' // concepts/ has the same slug
+  return slug
+}
+function splitAfterH2(md: string, n: number): [string, string] {
+  let seen = 0
+  const re = /^## /gm
+  let m: RegExpExecArray | null
+  while ((m = re.exec(md))) if (++seen === n + 1) return [md.slice(0, m.index), md.slice(m.index)]
+  return [md, '']
+}
+
 function Entry({ p, lang, ui }: { p: SciencePageData; lang: string; ui: ScienceUi }) {
   useScienceMeta(sciencePath(lang, `/${p.kind}/${p.slug}`), p)
+  const at = CTA_AFTER_H2[`${p.kind}/${p.slug}`]
+  const [bodyA, bodyB] = at ? splitAfterH2(p.body, at) : [p.body, '']
   return (
     <main className="mx-auto max-w-3xl px-4 pb-24 md:px-6">
       <article>
@@ -171,8 +192,14 @@ function Entry({ p, lang, ui }: { p: SciencePageData; lang: string; ui: ScienceU
         </section>
 
         <div className="mt-4">
-          <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]} components={mdComponents(lang) as never}>{linkCitations(p.body)}</Markdown>
+          <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]} components={mdComponents(lang) as never}>{linkCitations(bodyA)}</Markdown>
         </div>
+        <AppStoreCTA ct={storeCt('science', scienceCtSlug(p.kind, p.slug), lang)} variant="science" lang={lang} />
+        {bodyB ? (
+          <div>
+            <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]} components={mdComponents(lang) as never}>{linkCitations(bodyB)}</Markdown>
+          </div>
+        ) : null}
 
         {p.faq?.length ? (
           <section aria-label={ui.faq}>
