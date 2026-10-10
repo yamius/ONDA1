@@ -19,7 +19,7 @@ import { appStoreUrl } from '../config/appStore'
 
 export type CtType =
   | 'hdr' | 'ftr' | 'home' | 'ar' | 'hub' | 'pillar' | 'rv' | 'rvhub'
-  | 'vs' | 'cmp' | 'gl' | 'tool' | 'bio' | 'pg' | 'science' | 'about'
+  | 'vs' | 'cmp' | 'gl' | 'tool' | 'bio' | 'pg' | 'science' | 'about' | 'connect'
 
 const MAX = 40
 

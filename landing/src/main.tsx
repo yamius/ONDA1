@@ -86,6 +86,7 @@ const FaqPage               = lazy(() => import('./pages/FaqPage').then(m => ({ 
 const FounderPage           = lazy(() => import('./pages/FounderPage').then(m => ({ default: m.FounderPage })))
 const HrvBiofeedbackPage    = lazy(() => import('./pages/HrvBiofeedbackPage').then(m => ({ default: m.HrvBiofeedbackPage })))
 const ResonanceBreathingGuidePage = lazy(() => import('./pages/ResonanceBreathingGuidePage').then(m => ({ default: m.ResonanceBreathingGuidePage })))
+const ConnectPage = lazy(() => import('./pages/ConnectPage').then(m => ({ default: m.ConnectPage })))
 const HrvVsCoherencePage    = lazy(() => import('./pages/HrvVsCoherencePage').then(m => ({ default: m.HrvVsCoherencePage })))
 const AppleWatchHrvBiofeedbackPage = lazy(() => import('./pages/AppleWatchHrvBiofeedbackPage').then(m => ({ default: m.AppleWatchHrvBiofeedbackPage })))
 const OndaComparePage       = lazy(() => import('./pages/OndaComparePage').then(m => ({ default: m.OndaComparePage })))
@@ -254,6 +255,8 @@ const routeElements = (
             <Route path="/resonance-breathing"   element={<ResonanceBreathingGuidePage />} />
             <Route path="/ru/resonance-breathing" element={<ResonanceBreathingGuidePage />} />
             <Route path="/es/resonance-breathing" element={<ResonanceBreathingGuidePage />} />
+            <Route path="/connect"               element={<ConnectPage />} />
+            <Route path="/connect/:device"       element={<ConnectPage />} />
             <Route path="/hrv-vs-coherence"      element={<HrvVsCoherencePage />} />
             <Route path="/ru/hrv-vs-coherence"   element={<HrvVsCoherencePage />} />
             <Route path="/es/hrv-vs-coherence"   element={<HrvVsCoherencePage />} />

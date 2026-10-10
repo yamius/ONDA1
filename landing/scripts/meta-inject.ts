@@ -47,6 +47,7 @@ import { HRV_VS_COHERENCE_I18N } from '../src/data/hrv-vs-coherence-i18n'
 import { APPLE_WATCH_HRV_I18N } from '../src/data/apple-watch-hrv-i18n'
 import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
+import { CONNECT_INDEX_META, connectJsonLd, getConnectDevice } from '../src/data/connect-devices'
 import { appleWatchHrvJsonLd } from '../src/pages/AppleWatchHrvBiofeedbackPage'
 import { researchJsonLd } from '../src/pages/ResearchPage'
 import { founderJsonLd } from '../src/pages/FounderPage'
@@ -548,6 +549,14 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
         name: term?.title ?? segments[1],
         url: `${SITE_URL}/glossary/${segments[1]}`,
       })
+    }
+    return items
+  }
+  if (segments[0] === 'connect') {
+    items.push({ name: 'Devices', url: `${SITE_URL}/connect` })
+    if (segments[1]) {
+      const d = getConnectDevice(segments[1])
+      items.push({ name: d?.name ?? segments[1], url: `${SITE_URL}/connect/${segments[1]}` })
     }
     return items
   }
@@ -1836,6 +1845,14 @@ function getMetaForRouteBase(route: string): RouteMeta {
       imageAlt: c.articleHeadline,
       jsonLd: hrvVsCoherenceJsonLd(lang),
     }
+  }
+  // /connect, /connect/<device> — how to read your device's HRV (task 071 2a). EN-only.
+  if (route === '/connect') {
+    return { title: CONNECT_INDEX_META.title, description: CONNECT_INDEX_META.description, url, breadcrumbs, ogType: 'website', jsonLd: connectJsonLd() }
+  }
+  if (route.startsWith('/connect/')) {
+    const d = getConnectDevice(route.slice('/connect/'.length))
+    if (d) return { title: d.metaTitle, description: d.metaDescription, url, breadcrumbs, ogType: 'article', jsonLd: connectJsonLd(d.slug) }
   }
   // /hrv-vs-coherence — cornerstone explainer. EN-only.
   if (route === '/hrv-vs-coherence') {
