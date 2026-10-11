@@ -170,7 +170,7 @@ function Entry({ p, lang, ui }: { p: SciencePageData; lang: string; ui: ScienceU
           <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">{p.title}</h1>
           <p className="font-mono text-xs text-white/45">
             {fillUi(ui.editor, { name: p.editor })}
-            {p.reviewer ? <> · {fillUi(ui.reviewedBy, { name: p.reviewer })}{p.lastReviewed ? fillUi(ui.reviewedOn, { date: fmtDate(p.lastReviewed, ui) }) : ''}</> : null}
+            {p.lastReviewed ? <> · {fillUi(ui.sourcesChecked, { date: fmtDate(p.lastReviewed, ui) })}</> : null}
             {' · '}{fillUi(ui.updated, { date: fmtDate(p.dateModified, ui) })}
           </p>
         </header>
