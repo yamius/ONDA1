@@ -7,7 +7,8 @@ import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localize
 import { storeUrl, pageTypeFromPath } from '../lib/storeCt'
 import { emotonCtaUrl } from '../config/appStore'
 import { rdtTrack } from '../lib/redditPixel'
-import { gtmPageView, gtmAppStoreClick } from '../lib/gtm'
+import { gtmPageView, gtmAppStoreClick, gtmNavClick } from '../lib/gtm'
+import { connectNav } from '../data/connect-nav'
 
 export function Layout() {
   const location = useLocation()
@@ -34,14 +35,6 @@ export function Layout() {
     ? emotonCtaUrl('emoton_footer')
     : storeUrl('ftr', pageType, currentLang)
 
-  // Tapping "Emoton" should always land on the START of the flow. Navigating
-  // from another page remounts EmotonPage fresh (begins at presence), but when
-  // already on /emoton the same-route click keeps the in-flow step — so fire an
-  // event EmotonPage listens for to reset itself. Also closes the mobile menu.
-  const goEmoton = () => {
-    setMenuOpen(false)
-    if (typeof window !== 'undefined') window.dispatchEvent(new Event('emoton:reset'))
-  }
 
   // Keep i18n + <html lang> in sync with the URL on every navigation
   useLayoutEffect(() => {
@@ -122,6 +115,20 @@ export function Layout() {
     return () => document.removeEventListener('click', onClick, true)
   }, [])
 
+  // GA4 nav_click (task 073): every header / menu / footer link carries
+  // data-nav="<item>" inside a [data-nav-area] container; one delegated
+  // listener pushes { item, placement } — fixed names only, no personal data.
+  useEffect(() => {
+    function onNav(e: MouseEvent) {
+      const el = (e.target as HTMLElement | null)?.closest?.('[data-nav]') as HTMLElement | null
+      if (!el) return
+      const area = (el.closest('[data-nav-area]') as HTMLElement | null)?.dataset.navArea || 'other'
+      gtmNavClick(el.dataset.nav || 'unknown', area, window.location.pathname)
+    }
+    document.addEventListener('click', onNav, true)
+    return () => document.removeEventListener('click', onNav, true)
+  }, [])
+
   useEffect(() => {
     if (!menuOpen) return
     const handleScroll = () => setMenuOpen(false)
@@ -156,6 +163,8 @@ export function Layout() {
     <div className="min-h-screen bg-[#050a0f] text-white">
       {/* Fixed burger */}
       <button
+        data-nav="menu_toggle"
+        data-nav-area="menu"
         onClick={() => setMenuOpen(!menuOpen)}
         className="burger-anchor-center fixed z-[60] flex h-[34px] w-[34px] items-center justify-center rounded-lg border border-white/10 bg-[#1a1b26]/90 backdrop-blur-sm text-cyan-400 shadow-lg transition-colors hover:bg-[#1a1b26] hover:text-cyan-300 md:h-[30px] md:w-[30px]"
         style={{
@@ -181,8 +190,8 @@ export function Layout() {
         }`}
         aria-hidden={!menuOpen}
       >
-        <nav aria-label="Main navigation" className="mx-4 w-full max-w-sm rounded-lg border border-white/10 bg-[#1a1b26] p-4">
-          <TransitionLink
+        <nav aria-label="Main navigation" data-nav-area="menu" className="mx-4 w-full max-w-sm rounded-lg border border-white/10 bg-[#1a1b26] p-4">
+          <TransitionLink data-nav="home"
             to={homePathFor(currentLang)}
             onClick={() => setMenuOpen(false)}
             className="mb-4 flex items-center gap-2 font-mono text-lg font-bold"
@@ -190,7 +199,7 @@ export function Layout() {
             <span className="text-cyan-400">ONDA</span>
             <span className="text-green-400"> LIFE</span>
           </TransitionLink>
-          <TransitionLink
+          <TransitionLink data-nav="about"
             to={localizedPathFor('/about', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
@@ -199,7 +208,7 @@ export function Layout() {
           >
             {t('menu.about')}<span className="sr-only">{t('menu.aboutSr')}</span>
           </TransitionLink>
-          <TransitionLink
+          <TransitionLink data-nav="inner_spectrum"
             to={localizedPathFor('/inner-spectrum', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
@@ -208,7 +217,7 @@ export function Layout() {
           >
             {t('menu.philosophy')}<span className="sr-only">{t('menu.philosophySr')}</span>
           </TransitionLink>
-          <TransitionLink
+          <TransitionLink data-nav="glossary"
             to={langHref('/glossary', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
@@ -217,7 +226,7 @@ export function Layout() {
           >
             {t('menu.glossary')}<span className="sr-only">{t('menu.glossarySr')}</span>
           </TransitionLink>
-          <TransitionLink
+          <TransitionLink data-nav="articles"
             to={langHref('/articles', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
@@ -226,7 +235,7 @@ export function Layout() {
           >
             {t('menu.articles')}<span className="sr-only">{t('menu.articlesSr')}</span>
           </TransitionLink>
-          <TransitionLink
+          <TransitionLink data-nav="reviews"
             to={langHref('/reviews', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
@@ -235,7 +244,7 @@ export function Layout() {
           >
             {t('menu.reviews')}<span className="sr-only">{t('menu.reviewsSr')}</span>
           </TransitionLink>
-          <TransitionLink
+          <TransitionLink data-nav="tools"
             to={langHref('/tools', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
@@ -245,6 +254,16 @@ export function Layout() {
             {t('menu.tools', { defaultValue: 'Tools' })}
           </TransitionLink>
           <TransitionLink
+            to={langHref('/connect', currentLang)}
+            data-nav="connect"
+            onClick={() => setMenuOpen(false)}
+            className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
+              /(^|\/)connect(\/|$)/.test(location.pathname) ? 'text-cyan-400' : 'text-white/70'
+            }`}
+          >
+            {connectNav(currentLang).nav}
+          </TransitionLink>
+          <TransitionLink data-nav="science"
             to="/science"
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
@@ -266,6 +285,7 @@ export function Layout() {
               return (
                 <button
                   key={lang}
+                  data-nav="language"
                   type="button"
                   onClick={() => switchLang(lang)}
                   aria-current={active ? 'true' : undefined}
@@ -280,7 +300,7 @@ export function Layout() {
               )
             })}
           </div>
-          <a
+          <a data-nav="download"
             href={downloadHref}
             target="_blank"
             rel="noopener"
@@ -289,7 +309,7 @@ export function Layout() {
           >
             {t('menu.download')}
           </a>
-          <TransitionLink
+          <TransitionLink data-nav="contact"
             to={langHref('/contact', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block py-3 text-sm font-medium transition-colors hover:text-white ${
@@ -303,13 +323,24 @@ export function Layout() {
 
       <main>
         {/* Scrolling header — logo + download */}
-        <header className="border-b border-white/5 bg-[#1a1b26]/70 backdrop-blur-xl pt-[max(env(safe-area-inset-top,0px),8px)] md:pt-2">
+        <header data-nav-area="header" className="border-b border-white/5 bg-[#1a1b26]/70 backdrop-blur-xl pt-[max(env(safe-area-inset-top,0px),8px)] md:pt-2">
           <div className="header-content-center mx-auto flex max-w-7xl items-center justify-between pr-5 py-2 md:py-2 md:pr-6">
-            <TransitionLink to={homePathFor(currentLang)} className="font-mono text-base font-bold md:text-lg" onClick={() => setMenuOpen(false)}>
+            <TransitionLink data-nav="home" to={homePathFor(currentLang)} className="font-mono text-base font-bold md:text-lg" onClick={() => setMenuOpen(false)}>
               <span className="text-cyan-400">ONDA</span>
               <span className="text-green-400"> LIFE</span>
             </TransitionLink>
-            {/* Header slot intentionally empty (task 073; step 2 adds "Connect"). */}
+            {/* Task 073 step 2: "Connect your device" → /connect hub (localized where built). */}
+            <TransitionLink
+              to={langHref('/connect', currentLang)}
+              data-nav="connect"
+              onClick={() => setMenuOpen(false)}
+              className={`rounded-md border border-green-400/30 px-3 py-1 font-mono text-xs font-semibold transition-colors hover:border-green-400/60 hover:text-green-300 md:text-sm ${
+                /(^|\/)connect(\/|$)/.test(location.pathname) ? 'text-green-300' : 'text-green-400/90'
+              }`}
+            >
+              <span className="md:hidden">{connectNav(currentLang).short}</span>
+              <span className="hidden md:inline">{connectNav(currentLang).nav}</span>
+            </TransitionLink>
           </div>
         </header>
         <div className="pt-6">
@@ -321,10 +352,10 @@ export function Layout() {
         {/(^|\/)tools(\/|$)/.test(location.pathname) && <AndroidWaitlist />}
       </main>
 
-      <footer className="border-t border-white/5 bg-[#1a1b26]/70 pb-[env(safe-area-inset-bottom,0px)] backdrop-blur-xl">
+      <footer data-nav-area="footer" className="border-t border-white/5 bg-[#1a1b26]/70 pb-[env(safe-area-inset-bottom,0px)] backdrop-blur-xl">
         <div className="mx-auto max-w-7xl px-5 py-8 md:px-6 md:py-12">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-            <Link
+            <Link data-nav="home"
               to={homePathFor(currentLang)}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="flex items-center gap-1 font-mono text-lg font-bold transition-colors hover:text-cyan-400/90"
@@ -334,40 +365,37 @@ export function Layout() {
             </Link>
             {/* Mirrors the main-menu items + order (minus the language picker). */}
             <div className="flex flex-wrap justify-center gap-6">
-              <Link to={localizedPathFor('/about', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link data-nav="about" to={localizedPathFor('/about', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.about')}<span className="sr-only">{t('menu.aboutSr')}</span>
               </Link>
-              <Link to={localizedPathFor('/inner-spectrum', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link data-nav="inner_spectrum" to={localizedPathFor('/inner-spectrum', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.philosophy')}<span className="sr-only">{t('menu.philosophySr')}</span>
               </Link>
-              <Link to={langHref('/glossary', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link data-nav="glossary" to={langHref('/glossary', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.glossary')}<span className="sr-only">{t('menu.glossarySr')}</span>
               </Link>
-              <Link to={langHref('/articles', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link data-nav="articles" to={langHref('/articles', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.articles')}<span className="sr-only">{t('menu.articlesSr')}</span>
               </Link>
-              <Link to={langHref('/reviews', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link data-nav="reviews" to={langHref('/reviews', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.reviews')}<span className="sr-only">{t('menu.reviewsSr')}</span>
               </Link>
-              <Link to={langHref('/tools', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link data-nav="tools" to={langHref('/tools', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.tools', { defaultValue: 'Tools' })}
               </Link>
-              <Link to="/science" className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link data-nav="science" to="/science" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.science', { defaultValue: 'Science' })}
               </Link>
-              <Link to="/research" className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link data-nav="research" to="/research" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.research', { defaultValue: 'Research' })}
               </Link>
-              <Link to={langHref('/emoton', currentLang)} onClick={goEmoton} className="text-xs text-green-400/70 transition-colors hover:text-green-400">
-                {t('footer.emoton', { defaultValue: 'Emoton' })}
-              </Link>
-              <Link to="/ai-apps" className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link data-nav="ai_apps" to="/ai-apps" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 ChatGPT &amp; Claude
               </Link>
-              <a href={footerDownloadHref} target="_blank" rel="noopener" className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <a data-nav="download" href={footerDownloadHref} target="_blank" rel="noopener" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.download')}
               </a>
-              <Link to={langHref('/contact', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link data-nav="contact" to={langHref('/contact', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.contacts')}<span className="sr-only">{t('menu.contactsSr')}</span>
               </Link>
             </div>
@@ -378,7 +406,7 @@ export function Layout() {
           <div className="mt-8 flex flex-col items-center gap-2 md:grid md:grid-cols-3 md:items-center md:gap-0">
             <div className="hidden md:block" />
             <div className="flex justify-center">
-              <Link
+              <Link data-nav="sitemap"
                 to={langHref('/sitemap', currentLang)}
                 className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
               >
@@ -386,13 +414,13 @@ export function Layout() {
               </Link>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 md:justify-end">
-              <Link
+              <Link data-nav="privacy"
                 to={langHref('/privacy', currentLang)}
                 className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
               >
                 {t('footer.privacy')}
               </Link>
-              <Link
+              <Link data-nav="terms"
                 to={langHref('/terms', currentLang)}
                 className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
               >

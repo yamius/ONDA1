@@ -398,18 +398,18 @@ export const CONNECT_RED_FLAGS =
 const SITE_URL = 'https://onda-life.com'
 
 /** Static JSON-LD (emitted by meta-inject; never effect-injected). */
-export function connectJsonLd(slug?: string): Record<string, unknown>[] {
+export function connectJsonLd(slug?: string, lang = 'en', loc?: { h1: string; description: string }): Record<string, unknown>[] {
   if (!slug) {
-    const url = `${SITE_URL}/connect`
+    const url = lang === 'en' ? `${SITE_URL}/connect` : `${SITE_URL}/${lang}/connect`
     return [
       {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
         '@id': `${url}#page`,
-        name: CONNECT_INDEX_META.h1,
-        description: CONNECT_INDEX_META.description,
+        name: loc?.h1 ?? CONNECT_INDEX_META.h1,
+        description: loc?.description ?? CONNECT_INDEX_META.description,
         url,
-        inLanguage: 'en',
+        inLanguage: lang,
         mainEntity: {
           '@type': 'ItemList',
           itemListElement: CONNECT_DEVICES.map((d, i) => ({

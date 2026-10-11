@@ -256,6 +256,9 @@ const routeElements = (
             <Route path="/ru/resonance-breathing" element={<ResonanceBreathingGuidePage />} />
             <Route path="/es/resonance-breathing" element={<ResonanceBreathingGuidePage />} />
             <Route path="/connect"               element={<ConnectPage />} />
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+              <Route key={`${l}-connect`} path={`/${l}/connect`} element={<ConnectPage />} />
+            ))}
             <Route path="/connect/:device"       element={<ConnectPage />} />
             <Route path="/hrv-vs-coherence"      element={<HrvVsCoherencePage />} />
             <Route path="/ru/hrv-vs-coherence"   element={<HrvVsCoherencePage />} />

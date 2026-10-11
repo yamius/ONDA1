@@ -48,6 +48,7 @@ import { APPLE_WATCH_HRV_I18N } from '../src/data/apple-watch-hrv-i18n'
 import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
 import { CONNECT_INDEX_META, connectJsonLd, getConnectDevice } from '../src/data/connect-devices'
+import { CONNECT_I18N } from '../src/data/connect-i18n'
 import { appleWatchHrvJsonLd } from '../src/pages/AppleWatchHrvBiofeedbackPage'
 import { researchJsonLd } from '../src/pages/ResearchPage'
 import { founderJsonLd, PERSON_DESC } from '../src/pages/FounderPage'
@@ -1846,6 +1847,11 @@ function getMetaForRouteBase(route: string): RouteMeta {
   // /connect, /connect/<device> — how to read your device's HRV (task 071 2a). EN-only.
   if (route === '/connect') {
     return { title: CONNECT_INDEX_META.title, description: CONNECT_INDEX_META.description, url, breadcrumbs, ogType: 'website', jsonLd: connectJsonLd() }
+  }
+  if (/^\/[a-z]{2}\/connect$/.test(route) && CONNECT_I18N[route.slice(1, 3)]) {
+    const lang = route.slice(1, 3)
+    const c = CONNECT_I18N[lang]
+    return { title: c.title, description: c.description, url, breadcrumbs, ogType: 'website', jsonLd: connectJsonLd(undefined, lang, c) }
   }
   if (route.startsWith('/connect/')) {
     const d = getConnectDevice(route.slice('/connect/'.length))
