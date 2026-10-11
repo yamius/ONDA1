@@ -9,6 +9,8 @@ import { langFromPath, langHref, type Lang } from '../i18n'
 import { connectI18n } from '../data/connect-i18n'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
+import { gtmFileAnalyzeStart } from '../lib/gtm'
+import { APPLE_HEALTH_FILE_PATH, APPLE_HEALTH_FILE_PUBLIC } from '../data/apple-health-file'
 import {
   CONNECT_DEVICES,
   CONNECT_INDEX_META,
@@ -210,6 +212,32 @@ function WindowCell({ slug, text }: { slug: string; text: string }) {
   )
 }
 
+/**
+ * Entry to /connect/apple-health/file (task 082 B2). Rendered ONLY while APPLE_HEALTH_FILE_PUBLIC is
+ * true (off until the owner publishes). A PLAIN <a> on purpose: the file page must load as a fresh
+ * document (its own strict CSP, no GTM), never via a client-side hop. file_analyze_start is the only
+ * event of the feature and carries no parameters; it fires here, never on the file page.
+ */
+function AppleHealthFileEntry({ compact = false }: { compact?: boolean }) {
+  if (!APPLE_HEALTH_FILE_PUBLIC) return null
+  return (
+    <section className={`${compact ? 'mt-6' : 'mt-10'} rounded-xl border border-terminal-green/25 bg-terminal-green/[0.04] p-5`}>
+      <h2 className={`mb-2 font-bold ${compact ? 'text-lg' : 'text-2xl'}`}>Apple Watch: see your Apple Health history against your own range</h2>
+      <p className="mb-4 font-mono text-sm leading-relaxed text-white/75">
+        Export your data from the Health app and choose the file. HRV (SDNN), resting heart rate and sleep are read in
+        your browser — the file never leaves your device.
+      </p>
+      <a
+        href={APPLE_HEALTH_FILE_PATH}
+        onClick={() => gtmFileAnalyzeStart()}
+        className="inline-block rounded-lg bg-terminal-green px-5 py-3 font-mono text-sm font-semibold text-[#080c16] hover:opacity-90"
+      >
+        Choose file
+      </a>
+    </section>
+  )
+}
+
 function useTitle(title: string) {
   useEffect(() => {
     document.title = title
@@ -296,6 +324,7 @@ function ConnectIndex() {
           </tbody>
         </table>
       </div>
+      <AppleHealthFileEntry compact />
       <AppStoreCTA ct={storeCt('connect', 'index')} variant="hrv" lang="en" />
       <ReadMore />
       <Emergency />
@@ -471,6 +500,7 @@ function ConnectEn({ device }: { device?: string }) {
         </div>
       </section>
 
+      {d.slug === 'apple-watch' && <AppleHealthFileEntry />}
       <AppStoreCTA ct={storeCt('connect', d.slug)} variant="hrv" lang="en" />
 
       <section className="mt-10">

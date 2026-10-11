@@ -52,3 +52,10 @@ export function gtmAiConnectorClick(pagePath: string, platform: 'claude' | 'chat
 export function gtmNavClick(item: string, placement: string, pagePath: string): void {
   push({ event: 'nav_click', item, placement, page_path: pagePath })
 }
+
+/** "Choose file" on /connect/apple-health (task 082 B2) → GA4 `file_analyze_start`. Deliberately
+ *  carries NO parameters at all — no device, no size, no file name. Fired on the landing page only;
+ *  the /file analysis page itself loads no analytics. */
+export function gtmFileAnalyzeStart(): void {
+  push({ event: 'file_analyze_start' })
+}

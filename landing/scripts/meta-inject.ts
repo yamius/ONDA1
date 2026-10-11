@@ -47,6 +47,7 @@ import { HRV_VS_COHERENCE_I18N } from '../src/data/hrv-vs-coherence-i18n'
 import { APPLE_WATCH_HRV_I18N } from '../src/data/apple-watch-hrv-i18n'
 import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
+import { APPLE_HEALTH_FILE_META, APPLE_HEALTH_FILE_PUBLIC } from '../src/data/apple-health-file'
 import { CONNECT_INDEX_META, connectJsonLd, getConnectDevice } from '../src/data/connect-devices'
 import { CONNECT_I18N } from '../src/data/connect-i18n'
 import { CONNECT_DEVICES_I18N } from '../src/data/connect-devices-i18n'
@@ -557,6 +558,11 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
   }
   if (segments[0] === 'connect') {
     items.push({ name: 'Devices', url: `${SITE_URL}/connect` })
+    if (route === '/connect/apple-health/file') {
+      items.push({ name: 'Apple Watch', url: `${SITE_URL}/connect/apple-watch` })
+      items.push({ name: 'Apple Health file', url: `${SITE_URL}/connect/apple-health/file` })
+      return items
+    }
     if (segments[1]) {
       const d = getConnectDevice(segments[1])
       items.push({ name: d?.name ?? segments[1], url: `${SITE_URL}/connect/${segments[1]}` })
@@ -1860,6 +1866,9 @@ function getMetaForRouteBase(route: string): RouteMeta {
     const d = getConnectDevice(route.slice(12))
     const t = d ? CONNECT_DEVICES_I18N[lang].devices[d.slug] : undefined
     if (d && t) return { title: t.metaTitle, description: t.metaDescription, url, breadcrumbs, ogType: 'article', jsonLd: connectJsonLd(d.slug, lang, undefined, t) }
+  }
+  if (route === '/connect/apple-health/file') {
+    return { title: APPLE_HEALTH_FILE_META.title, description: APPLE_HEALTH_FILE_META.description, url, breadcrumbs, ogType: 'website', ...(APPLE_HEALTH_FILE_PUBLIC ? {} : { noindex: true }) }
   }
   if (route.startsWith('/connect/')) {
     const d = getConnectDevice(route.slice('/connect/'.length))

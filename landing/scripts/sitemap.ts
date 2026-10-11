@@ -18,6 +18,7 @@ import { hubLastModified } from '../src/data/article-topic-listing'
 import { getArticleTopicHub, type ArticleTopicSlug } from '../src/data/article-topics'
 import { getReviewBySlug, getComparisonBySlug } from '../src/data/reviews'
 import { isNoindexScienceRoute } from '../src/lib/science-meta'
+import { APPLE_HEALTH_FILE_PATH, APPLE_HEALTH_FILE_PUBLIC } from '../src/data/apple-health-file'
 import { readFileSync } from 'fs'
 
 /** Minimal XML attribute/text escaper. Order matters: ampersand first. */
@@ -201,6 +202,8 @@ const allRoutes = getPrerenderRoutes()
 const routes = allRoutes.filter((r) => {
   // Embeddable widgets are noindex — keep them out of the sitemap.
   if (r.startsWith('/embed/')) return false
+  // Apple Health file page (task 082 B2) stays out until the owner publishes it.
+  if (r === APPLE_HEALTH_FILE_PATH && !APPLE_HEALTH_FILE_PUBLIC) return false
   // ONDA Science section pages below MIN_PAGES_FOR_INDEXED_KIND are served noindex — keep them out too.
   if (isNoindexScienceRoute(r)) return false
   if (LOCALIZED_PART_ROUTE_SET.has(r)) {

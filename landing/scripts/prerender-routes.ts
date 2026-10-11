@@ -1023,6 +1023,8 @@ const nonLocalizedStaticPaths = [
   // Localized /<lang>/connect hubs (task 073 step 2); device pages stay EN-only.
   ...['ru', 'es', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt'].map((l) => `/${l}/connect`),
   ...CONNECT_DEVICES.map((d) => `/connect/${d.slug}`),
+  // Apple Health export read in the browser (task 082 B2). Script-free + strict CSP (vercel.json).
+  '/connect/apple-health/file',
   ...LIVE_CONNECT_DEVICE_ENTRIES.map((e) => `/${e.lang}/connect/${e.slug}`),
   '/ru/apple-watch-hrv-biofeedback',
   '/es/apple-watch-hrv-biofeedback',

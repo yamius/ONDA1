@@ -42,6 +42,7 @@ import { OndaComparePage } from './pages/OndaComparePage'
 import { CompareSlugRouter } from './components/CompareSlugRouter'
 import { ToolsPage } from './pages/ToolsPage'
 import { BaselinePage } from './pages/BaselinePage'
+import { AppleHealthFilePage } from './pages/AppleHealthFilePage'
 import { HrvInterpreterPage } from './pages/HrvInterpreterPage'
 import { CaffeineCalculatorPage } from './pages/CaffeineCalculatorPage'
 import { SleepDebtCalculatorPage } from './pages/SleepDebtCalculatorPage'
@@ -141,6 +142,7 @@ export function createApp(location: string, lang?: Lang) {
         {/* Bare embeddable widgets — no Layout chrome (iframe-friendly). */}
         <Route path="/embed/hrv" element={<HrvEmbedPage />} />
         {/* Baseline: no Layout chrome — script-free health-fragment page (see BaselinePage). */}
+        <Route path="/connect/apple-health/file" element={<AppleHealthFilePage />} />
         <Route path="/tools/baseline" element={<BaselinePage />} />
         <Route path="/es/tools/baseline" element={<BaselinePage />} />
         <Route path="/ru/tools/baseline" element={<BaselinePage />} />

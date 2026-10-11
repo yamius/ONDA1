@@ -125,6 +125,7 @@ const RecoveryScorePage = lazy(() => import('./pages/RecoveryScorePage').then(m 
 const CameraHeartRatePage = lazy(() => import('./pages/CameraHeartRatePage').then(m => ({ default: m.CameraHeartRatePage })))
 const MicBreathingPage = lazy(() => import('./pages/MicBreathingPage').then(m => ({ default: m.MicBreathingPage })))
 const BreathHeartBiofeedbackPage = lazy(() => import('./pages/BreathHeartBiofeedbackPage').then(m => ({ default: m.BreathHeartBiofeedbackPage })))
+const AppleHealthFilePage = lazy(() => import('./pages/AppleHealthFilePage').then(m => ({ default: m.AppleHealthFilePage })))
 const HrvEmbedPage = lazy(() => import('./pages/HrvEmbedPage').then(m => ({ default: m.HrvEmbedPage })))
 const ReviewsPage           = lazyNs('reviews', () => import('./pages/ReviewsPage').then(m => ({ default: m.ReviewsPage })))
 const ReviewMethodologyPage = lazyNs('reviews', () => import('./pages/ReviewMethodologyPage').then(m => ({ default: m.ReviewMethodologyPage })))
@@ -142,6 +143,9 @@ const routeElements = (
           {/* Baseline reads a person's own Health figures from the URL fragment, so it MUST carry no
               third-party script: it lives outside Layout (no Reddit route tracker) and prerender.ts
               strips the pixel/GTM from its HTML. See BaselinePage + scripts/prerender.ts. */}
+          {/* Apple Health export read in-browser (task 082 B2): outside Layout, script-free + strict CSP
+              (vercel.json). See AppleHealthFilePage. */}
+          <Route path="/connect/apple-health/file" element={<AppleHealthFilePage />} />
           <Route path="/tools/baseline" element={<BaselinePage />} />
           <Route path="/es/tools/baseline" element={<BaselinePage />} />
           <Route path="/ru/tools/baseline" element={<BaselinePage />} />
@@ -516,7 +520,8 @@ void Promise.all(preloads)
     else createRoot(container).render(app)
   })
 
-if ('serviceWorker' in navigator && import.meta.env.PROD) {
+// Not on the Apple Health file page (task 082): it must make zero requests of its own after load.
+if ('serviceWorker' in navigator && import.meta.env.PROD && window.location.pathname !== '/connect/apple-health/file') {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js').catch(() => {})
   })

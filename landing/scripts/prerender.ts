@@ -83,7 +83,7 @@ const SHARD_LABEL = shardCount > 1 ? ` [${shardIndex + 1}/${shardCount}]` : ''
  * own Health figures from the URL fragment; a tag that sends location.href would leak them. Kept in
  * sync with the routes rendered outside Layout in main.tsx / entry-server.tsx.
  */
-const SCRIPT_FREE_ROUTES = new Set<string>(['/tools/baseline', ...SUPPORTED_LANGS.filter((l) => l !== 'en').map((l) => `/${l}/tools/baseline`)])
+const SCRIPT_FREE_ROUTES = new Set<string>(['/tools/baseline', '/connect/apple-health/file', ...SUPPORTED_LANGS.filter((l) => l !== 'en').map((l) => `/${l}/tools/baseline`)])
 
 // ── Build/version beacon ─────────────────────────────────────────────
 // Stamp the real built commit + UTC build time into every page's <head>,
@@ -1214,6 +1214,20 @@ for (const route of routes) {
     // ONDA Science: the template's og:locale:alternate list covers every site language; science pages exist only in
     // their translated languages (hreflang above), so drop it.
     if (/^\/(?:[a-z]{2}\/)?science(?:\/|$)/.test(route)) out = out.replace(/\s*<meta property="og:locale:alternate"[^>]*>/g, '')
+
+    // Strict-CSP route (vercel.json: script-src 'self', no 'unsafe-inline'). Last step before writing so
+    // nothing injected above slips through: drop the inline build-beacon console script (the
+    // onda-build-commit meta still carries the SHA) and load fonts.css as a plain stylesheet instead of
+    // the preload + inline onload handler, which the CSP would block.
+    if (route === '/connect/apple-health/file') {
+      out = out
+        .replace(/\s*<script>console\.info\('onda build'[^<]*<\/script>/g, '')
+        .replace(/<link rel="preload" href="\/fonts\/fonts\.css" as="style" onload="[^"]*"\s*\/?>/g, '<link rel="stylesheet" href="/fonts/fonts.css">')
+        .replace(/\s*<noscript><link rel="stylesheet" href="\/fonts\/fonts\.css"\s*\/?><\/noscript>/g, '')
+      if (/<script(?![^>]*(?:type="application\/ld\+json"|src=))[^>]*>/.test(out) || / on[a-z]+="/.test(out)) {
+        throw new Error('[prerender] inline script/handler left on strict-CSP route /connect/apple-health/file')
+      }
+    }
 
     const outDir = route === '/' ? distDir : join(distDir, route.slice(1))
     mkdirSync(outDir, { recursive: true })
