@@ -1,5 +1,5 @@
 ---
-sourceHash: 41ee7285e2ba
+sourceHash: ab58f7477955
 title: "Warum ist meine HRV so niedrig? Häufige Ursachen und was die Evidenz zeigt"
 metaTitle: "HRV niedrig: Ursachen und was sie bedeuten"
 metaDescription: "Warum ist meine HRV niedrig? Meist eine Reaktion auf Schlaf, Alkohol, Infekt, Stress oder Training, keine Diagnose. Jede Ursache mit Evidenz und wann zum Arzt."
@@ -148,7 +148,7 @@ Diese Seite ist eine Übersicht der häufigen Ursachen in der folgenden Reihenfo
 
 Prüfe das, bevor du nach einer Ursache suchst. Gesunde Menschen unterscheiden sich in der HRV enorm [S1], daher sagt eine Zahl wenig, solange du sie nicht mit deiner eigenen Baseline vergleichst: deinem üblichen Bereich, gebildet aus häufigen Messungen statt aus einer einzelnen [S2]. Vergleiche Gleiches mit Gleichem: dasselbe Gerät und dieselbe Messgröße unter denselben Bedingungen, etwa deinen nächtlichen Durchschnitt oder einen Wert direkt nach dem Aufwachen. Eingangssignal, Länge der Aufzeichnung, Atmung und Analysemethode verändern den Wert [S3]. Nicht alle Geräte melden dieselbe Messgröße — {{fact:applewatch.hrv.healthkit}}, und {{fact:applewatch.hrv.variants2026}}, während andere Geräte RMSSD oder eigene Scores verwenden können — daher sind Zahlen von zwei Geräten nicht austauschbar [S3].
 
-Viele experimentelle, persönliche und umweltbedingte Faktoren beeinflussen einen Messwert und seine Zuverlässigkeit [S3], daher kann ein einzelner niedriger Morgen gewöhnliche Schwankung sein, ohne dass sich eine Ursache zu suchen lohnt. Mehr dazu: [deine HRV-Baseline](/science/concepts/hrv-baseline), [was ein einzelner HRV-Wert sagen kann und was nicht](/science/concepts/interpreting-hrv), [wie Wearables die HRV messen](/science/measurements/heart-rate-variability), [warum sich die HRV von Tag zu Tag ändert](/science/mechanisms/hrv-day-to-day) und, für ein verbreitetes Gerät, [warum deine Apple-Watch-HRV niedrig wirken kann](/articles/why-is-my-apple-watch-hrv-low).
+Viele experimentelle, persönliche und umweltbedingte Faktoren beeinflussen einen Messwert und seine Zuverlässigkeit [S3], daher kann ein einzelner niedriger Morgen gewöhnliche Schwankung sein, ohne dass sich eine Ursache zu suchen lohnt. Mehr dazu: [deine HRV-Baseline](/science/concepts/hrv-baseline), [was ein einzelner HRV-Wert sagen kann und was nicht](/science/concepts/interpreting-hrv), [wie Wearables die HRV messen](/science/measurements/heart-rate-variability), [warum sich die HRV von Tag zu Tag ändert](/science/mechanisms/hrv-day-to-day) und, für ein verbreitetes Gerät, [warum deine Apple-Watch-HRV niedrig wirken kann](/articles/why-is-my-apple-watch-hrv-low). Was dein eigenes Gerät anzeigt und wie sein Hersteller HRV definiert, steht unter [so liest du die HRV deines Geräts](/connect).
 
 ## Was kann die HRV senken?
 

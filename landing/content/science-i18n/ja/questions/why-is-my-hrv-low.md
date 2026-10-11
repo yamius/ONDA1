@@ -1,5 +1,5 @@
 ---
-sourceHash: 41ee7285e2ba
+sourceHash: ab58f7477955
 title: "HRVが低いのはなぜ？よくある原因とエビデンスが示すこと"
 metaTitle: "HRVが低い原因は？考えられる理由とその意味"
 metaDescription: "HRV（心拍変動）が低いのは、多くの場合、睡眠・飲酒・体調不良・ストレス・運動への反応で、病気の診断ではありません。原因ごとのエビデンスと受診の目安を解説します。"
@@ -146,7 +146,7 @@ evidenceMap:
 
 原因を探す前に、まずこれを確認してください。健康な人でもHRVには非常に大きな個人差があるため [S1]、数値は、あなた自身のベースライン、つまり一回ではなく頻繁な測定から作られたいつもの範囲と比べるまで、ほとんど意味を持ちません [S2]。同じもの同士を比べましょう。同じ機器、同じ指標、同じ条件、たとえば夜間の平均値や起床時の測定値です。入力信号、記録の長さ、呼吸、解析方法はいずれも値を変えます [S3]。機器がすべて同じ指標を表示するわけではありません。{{fact:applewatch.hrv.healthkit}}。また、{{fact:applewatch.hrv.variants2026}}。一方、ほかの機器はRMSSDや独自のスコアを使うことがあります。そのため、二つの機器の数値は互換性がありません [S3]。
 
-実験的、個人的、環境的な多くの要因が、測定値とその信頼性に影響します [S3]。そのため、一回だけ低い朝は、探すべき原因のない普通の変動であることもあります。詳しくは、[HRVのベースライン](/science/concepts/hrv-baseline)、[一回のHRV値でわかること、わからないこと](/science/concepts/interpreting-hrv)、[ウェアラブルはHRVをどう測るのか](/science/measurements/heart-rate-variability)、[HRVが日によって変わる理由](/science/mechanisms/hrv-day-to-day)、そしてよく使われる機器については[Apple WatchのHRVが低く見える理由](/articles/why-is-my-apple-watch-hrv-low)をご覧ください。
+実験的、個人的、環境的な多くの要因が、測定値とその信頼性に影響します [S3]。そのため、一回だけ低い朝は、探すべき原因のない普通の変動であることもあります。詳しくは、[HRVのベースライン](/science/concepts/hrv-baseline)、[一回のHRV値でわかること、わからないこと](/science/concepts/interpreting-hrv)、[ウェアラブルはHRVをどう測るのか](/science/measurements/heart-rate-variability)、[HRVが日によって変わる理由](/science/mechanisms/hrv-day-to-day)、そしてよく使われる機器については[Apple WatchのHRVが低く見える理由](/articles/why-is-my-apple-watch-hrv-low)をご覧ください。ご自身のデバイスが何を表示し、メーカーがHRVをどう定義しているかは、[デバイスのHRVの読み方](/connect)をご覧ください。
 
 ## HRVを下げるものは何か？
 

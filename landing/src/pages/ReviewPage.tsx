@@ -31,6 +31,7 @@ import { NotFoundPage } from './NotFoundPage'
 import { readReview, getReviewBySlug, getHeadToHeadsForProduct } from '../lib/review-content'
 import { getCriterion } from '../data/reviews/criteria'
 import { langFromPath, langHref, homePathFor } from '../i18n'
+import { ConnectDeviceLink } from '../components/ConnectDeviceLink'
 import { splitAt, ui } from '../data/ui-i18n'
 
 export function ReviewPage() {
@@ -293,6 +294,7 @@ export function ReviewPage() {
       )}
 
       {review.category === 'hrv-wearable' && <HrvContextBox lang={lang} />}
+      <ConnectDeviceLink reviewSlug={review.slug} lang={lang} />
       <OtherLanguages className="mb-8" />
       <AppStoreCTA ct={storeCt('rv', `${review.slug}_end`, lang)} variant={ctaVariantForCategory(review.category)} lang={lang} />
 

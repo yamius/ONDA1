@@ -1,5 +1,5 @@
 ---
-sourceHash: 41ee7285e2ba
+sourceHash: ab58f7477955
 title: "¿Por qué tengo la HRV baja? Causas frecuentes y qué dice la evidencia"
 metaTitle: "¿Por qué tengo la HRV baja? Causas y qué significan"
 metaDescription: "¿HRV baja? Casi siempre es una reacción al sueño, el alcohol, una enfermedad, el estrés o el entrenamiento, no un diagnóstico. Cada causa con su evidencia y cuándo ir al médico."
@@ -148,7 +148,7 @@ Esta página es un mapa de las causas frecuentes, en el orden que sigue. Para ca
 
 Compruébalo antes de buscar una causa. Las personas sanas difieren enormemente en su HRV [S1], así que una cifra dice poco hasta que la comparas con tu propia línea base: tu rango habitual, construido a partir de lecturas frecuentes y no de una sola [S2]. Compara lo comparable: el mismo dispositivo y la misma medida, en las mismas condiciones, como tu media nocturna o una lectura al despertar. La señal de entrada, la duración del registro, la respiración y el método de análisis cambian el valor [S3]. No todos los dispositivos dan la misma medida —{{fact:applewatch.hrv.healthkit}}, y {{fact:applewatch.hrv.variants2026}}, mientras que otros dispositivos pueden usar el RMSSD o sus propias puntuaciones—, así que las cifras de dos dispositivos no son intercambiables [S3].
 
-Muchos factores experimentales, personales y ambientales influyen en una lectura y en su fiabilidad [S3], así que una sola mañana baja puede ser una variación corriente sin una causa que merezca la pena buscar. Más sobre esto: [tu línea base de HRV](/science/concepts/hrv-baseline), [qué puede y qué no puede decirte un solo valor de HRV](/science/concepts/interpreting-hrv), [cómo miden la HRV los wearables](/science/measurements/heart-rate-variability), [por qué cambia la HRV de un día a otro](/science/mechanisms/hrv-day-to-day) y, para un dispositivo muy común, [por qué la HRV de tu Apple Watch puede parecer baja](/articles/why-is-my-apple-watch-hrv-low).
+Muchos factores experimentales, personales y ambientales influyen en una lectura y en su fiabilidad [S3], así que una sola mañana baja puede ser una variación corriente sin una causa que merezca la pena buscar. Más sobre esto: [tu línea base de HRV](/science/concepts/hrv-baseline), [qué puede y qué no puede decirte un solo valor de HRV](/science/concepts/interpreting-hrv), [cómo miden la HRV los wearables](/science/measurements/heart-rate-variability), [por qué cambia la HRV de un día a otro](/science/mechanisms/hrv-day-to-day) y, para un dispositivo muy común, [por qué la HRV de tu Apple Watch puede parecer baja](/articles/why-is-my-apple-watch-hrv-low). Para saber qué muestra tu propio dispositivo y cómo define el HRV su fabricante, consulta [cómo leer el HRV de tu dispositivo](/connect).
 
 ## ¿Qué puede bajar la HRV?
 

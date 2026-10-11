@@ -1,5 +1,5 @@
 ---
-sourceHash: 41ee7285e2ba
+sourceHash: ab58f7477955
 title: "Waarom is mijn HRV laag? Veelvoorkomende oorzaken en wat het bewijs laat zien"
 metaTitle: "Waarom is mijn HRV laag? Oorzaken en wat ze betekenen"
 metaDescription: "Lage HRV? Meestal een reactie op slaap, alcohol, ziekte, stress of training, geen diagnose. Elke oorzaak met het bewijs, en wanneer je naar de dokter gaat."
@@ -148,7 +148,7 @@ Deze pagina is een overzicht van de veelvoorkomende oorzaken, in de volgorde hie
 
 Controleer dit voordat je een oorzaak zoekt. Gezonde mensen verschillen enorm in HRV [S1], dus een getal zegt weinig totdat je het vergelijkt met je eigen basislijn: je gebruikelijke bandbreedte, opgebouwd uit frequente metingen en niet uit één meting [S2]. Vergelijk gelijk met gelijk: hetzelfde apparaat en dezelfde maat, onder dezelfde omstandigheden, zoals je nachtelijke gemiddelde of een meting direct na het wakker worden. Het ingangssignaal, de lengte van de registratie, de ademhaling en de analysemethode veranderen allemaal de waarde [S3]. Niet alle apparaten rapporteren dezelfde maat — {{fact:applewatch.hrv.healthkit}}, en {{fact:applewatch.hrv.variants2026}}, terwijl andere apparaten RMSSD of eigen scores kunnen gebruiken — dus getallen van twee apparaten zijn niet uitwisselbaar [S3].
 
-Veel experimentele, persoonlijke en omgevingsfactoren beïnvloeden een meting en hoe betrouwbaar die is [S3], dus één lage ochtend kan gewone schommeling zijn zonder oorzaak die het zoeken waard is. Meer hierover: [je HRV-basislijn](/science/concepts/hrv-baseline), [wat één HRV-waarde wel en niet kan zeggen](/science/concepts/interpreting-hrv), [hoe wearables HRV meten](/science/measurements/heart-rate-variability), [waarom HRV van dag tot dag verandert](/science/mechanisms/hrv-day-to-day) en, voor één veelgebruikt apparaat, [waarom je HRV op de Apple Watch laag kan lijken](/articles/why-is-my-apple-watch-hrv-low).
+Veel experimentele, persoonlijke en omgevingsfactoren beïnvloeden een meting en hoe betrouwbaar die is [S3], dus één lage ochtend kan gewone schommeling zijn zonder oorzaak die het zoeken waard is. Meer hierover: [je HRV-basislijn](/science/concepts/hrv-baseline), [wat één HRV-waarde wel en niet kan zeggen](/science/concepts/interpreting-hrv), [hoe wearables HRV meten](/science/measurements/heart-rate-variability), [waarom HRV van dag tot dag verandert](/science/mechanisms/hrv-day-to-day) en, voor één veelgebruikt apparaat, [waarom je HRV op de Apple Watch laag kan lijken](/articles/why-is-my-apple-watch-hrv-low). Wat je eigen apparaat laat zien en hoe de fabrikant HRV definieert, lees je bij [zo lees je de HRV van je apparaat](/connect).
 
 ## Wat kan HRV verlagen?
 
