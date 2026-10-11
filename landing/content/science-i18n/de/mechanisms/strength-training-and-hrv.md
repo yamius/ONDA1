@@ -1,5 +1,5 @@
 ---
-sourceHash: 2ca53e2a4e73
+sourceHash: e83b1b460cc2
 title: "Krafttraining und HRV: kurzer Abfall, langsame Effekte, ehrliche Lücken"
 metaTitle: "Krafttraining und HRV: Was die Evidenz zeigt"
 metaDescription: "Was eine einzelne Krafteinheit mit der HRV macht, was über langfristiges Training bei älteren Menschen bekannt ist und warum ein Anstieg bei jungen Menschen nicht gezeigt ist."
@@ -53,7 +53,7 @@ evidenceMap:
     limitation: "Gesunde Männer; ältere Uhrenmodelle; von einem Unternehmen finanziert; nur Herzfrequenz und Kalorien, keine HRV."
   - claim: "Die Genauigkeit der Smartwatch-Schätzungen des Energieverbrauchs verschlechterte sich beim Krafttraining weiter."
     limitation: "Gesunde Männer; von einem Unternehmen finanziert."
-  - claim: "ONDA bildet seine Baseline aus Werten in Apple Health und vergleicht jede Nacht mit dem eigenen Korridor der Nutzerin oder des Nutzers."
+  - claim: "ONDA bildet seine Baseline aus Werten in Apple Health und vergleicht den letzten Tag mit Daten mit dem eigenen Korridor der Nutzerin oder des Nutzers."
     limitation: "Beschreibt nur das Verhalten der App; kein Beleg für eine Gesundheits- oder Trainingsaussage."
 ---
 

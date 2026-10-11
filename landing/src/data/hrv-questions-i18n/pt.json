@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "Devo olhar uma leitura isolada de HRV ou a tendência?",
-          "a": "A tendência. A HRV do dia a dia varia muito por motivos comuns, então uma manhã diz pouco. Compare cada leitura com a sua própria faixa recente: o app ONDA, por exemplo, compara cada noite com o seu corredor (a média das suas noites recentes ± um desvio padrão), precisa de pelo menos 7 noites e forma a linha de base ao longo de 14 dias. [Veja a sua faixa de duas semanas →](/tools/baseline)"
+          "a": "A tendência. A HRV do dia a dia varia muito por motivos comuns, então uma manhã diz pouco. Compare cada leitura com a sua própria faixa recente: o app ONDA, por exemplo, compara o seu dia de dados mais recente com o seu corredor (a média dos seus dias anteriores com dados suficientes ± um desvio padrão), precisa de pelo menos 7 dias anteriores com dados suficientes, mais o último dia e forma a linha de base ao longo de 14 dias. [Veja a sua faixa de duas semanas →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

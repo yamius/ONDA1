@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "Patrzeć na pojedynczy odczyt HRV czy na trend?",
-          "a": "Na trend. HRV z dnia na dzień zmienia się mocno z błahych powodów, więc jeden poranek mówi niewiele. Porównuj każdy odczyt z własnym niedawnym zakresem: aplikacja ONDA na przykład porównuje każdą noc z Twoim korytarzem (średnia z ostatnich nocy ± jedno odchylenie standardowe), potrzebuje co najmniej 7 nocy i buduje bazę przez 14 dni. [Zobacz swój zakres z dwóch tygodni →](/tools/baseline)"
+          "a": "Na trend. HRV z dnia na dzień zmienia się mocno z błahych powodów, więc jeden poranek mówi niewiele. Porównuj każdy odczyt z własnym niedawnym zakresem: aplikacja ONDA na przykład porównuje Twój ostatni dzień z danymi z Twoim korytarzem (średnia z wcześniejszych dni z wystarczającymi danymi ± jedno odchylenie standardowe), potrzebuje co najmniej 7 wcześniejszych dni z wystarczającymi danymi plus ostatni dzień i buduje bazę przez 14 dni. [Zobacz swój zakres z dwóch tygodni →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

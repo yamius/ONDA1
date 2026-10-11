@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "Faut-il regarder une mesure de HRV isolée ou la tendance ?",
-          "a": "La tendance. La HRV varie beaucoup d'un jour à l'autre pour des raisons banales, donc un seul matin en dit peu. Comparez chaque mesure à votre propre plage récente : l'appli ONDA, par exemple, compare chaque nuit à votre couloir (la moyenne de vos nuits récentes ± un écart-type), a besoin d'au moins 7 nuits et construit la ligne de base sur 14 jours. [Voir votre plage sur deux semaines →](/tools/baseline)"
+          "a": "La tendance. La HRV varie beaucoup d'un jour à l'autre pour des raisons banales, donc un seul matin en dit peu. Comparez chaque mesure à votre propre plage récente : l'appli ONDA, par exemple, compare votre dernier jour de données à votre couloir (la moyenne de vos jours précédents ayant assez de données ± un écart-type), a besoin d'au moins 7 jours précédents avec assez de données, plus le dernier jour et construit la ligne de base sur 14 jours. [Voir votre plage sur deux semaines →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

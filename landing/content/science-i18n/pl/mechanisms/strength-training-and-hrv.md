@@ -1,5 +1,5 @@
 ---
-sourceHash: 2ca53e2a4e73
+sourceHash: e83b1b460cc2
 title: "Trening siłowy a HRV: krótki spadek, powolne efekty, uczciwe luki"
 metaTitle: "Trening siłowy a HRV: co pokazują badania"
 metaDescription: "Co jedna sesja siłowa robi z HRV, co wiadomo o długotrwałym treningu u osób starszych i dlaczego wzrostu u młodych osób nie wykazano."
@@ -53,7 +53,7 @@ evidenceMap:
     limitation: "Zdrowi mężczyźni; starsze modele zegarków; finansowanie przez firmę; tylko tętno i kalorie, bez HRV."
   - claim: "Dokładność szacunków wydatku energii ze smartwatchy pogorszyła się jeszcze bardziej podczas treningu oporowego."
     limitation: "Zdrowi mężczyźni; finansowanie przez firmę."
-  - claim: "ONDA buduje swoją linię bazową z wartości w Apple Health i porównuje każdą noc z własnym korytarzem użytkownika."
+  - claim: "ONDA buduje swoją linię bazową z wartości w Apple Health i porównuje ostatni dzień z danymi z własnym korytarzem użytkownika."
     limitation: "Opisuje tylko działanie aplikacji; nie jest dowodem dla żadnego twierdzenia o zdrowiu ani treningu."
 ---
 

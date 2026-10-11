@@ -1,5 +1,5 @@
 ---
-sourceHash: 2ca53e2a4e73
+sourceHash: e83b1b460cc2
 title: "Krachttraining en HRV: korte dip, trage winst, eerlijke hiaten"
 metaTitle: "Krachttraining en HRV: wat het bewijs laat zien"
 metaDescription: "Wat één krachtsessie met HRV doet, wat bekend is over langdurig trainen bij ouderen en waarom een stijging bij jonge mensen niet is aangetoond."
@@ -53,7 +53,7 @@ evidenceMap:
     limitation: "Gezonde mannen; oudere horlogemodellen; gefinancierd door een bedrijf; alleen hartslag en calorieën, geen HRV."
   - claim: "De nauwkeurigheid van smartwatchschattingen van het energieverbruik werd tijdens krachttraining nog slechter."
     limitation: "Gezonde mannen; gefinancierd door een bedrijf."
-  - claim: "ONDA bouwt zijn baseline op uit waarden in Apple Health en vergelijkt elke nacht met de eigen bandbreedte van de gebruiker."
+  - claim: "ONDA bouwt zijn baseline op uit waarden in Apple Health en vergelijkt de laatste dag met gegevens met de eigen bandbreedte van de gebruiker."
     limitation: "Beschrijft alleen het gedrag van de app; geen bewijs voor een gezondheids- of trainingsclaim."
 ---
 

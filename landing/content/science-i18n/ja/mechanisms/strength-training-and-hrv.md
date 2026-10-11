@@ -1,5 +1,5 @@
 ---
-sourceHash: 2ca53e2a4e73
+sourceHash: e83b1b460cc2
 title: "筋力トレーニングとHRV：直後の変化、ゆっくりした効果、正直な空白"
 metaTitle: "筋力トレーニングとHRV：エビデンスのまとめ"
 metaDescription: "一回の筋力トレーニングがHRVに何をもたらすか、高齢者の長期的なトレーニングについて何がわかっているか、そして若い人でHRVの上昇が示されていない理由を解説します。"
@@ -51,7 +51,7 @@ evidenceMap:
     limitation: "健康な男性。古い腕時計モデル。企業の資金提供。心拍数とカロリーのみで、HRVは測定していない。"
   - claim: "スマートウォッチのエネルギー消費の精度は、レジスタンス運動中にさらに低下しました。"
     limitation: "健康な男性。企業の資金提供。"
-  - claim: "ONDAはApple Healthにある値からベースラインをつくり、毎晩をユーザー自身のコリドーと比較します（facts baseline.window, baseline.compare）。"
+  - claim: "ONDAはApple Healthにある値からベースラインをつくり、データのある最新の日をユーザー自身のコリドーと比較します（facts baseline.window, baseline.compare）。"
     limitation: "アプリの動作の説明にすぎず、健康やトレーニングに関する主張の根拠ではない。"
 ---
 

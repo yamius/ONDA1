@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "Moet ik naar één HRV-meting kijken of naar de trend?",
-          "a": "Naar de trend. HRV beweegt van dag tot dag flink om gewone redenen, dus één ochtend zegt weinig. Vergelijk elke meting met je eigen recente bereik: de ONDA-app vergelijkt bijvoorbeeld elke nacht met je corridor (het gemiddelde van je recente nachten ± één standaardafwijking), heeft minstens 7 nachten nodig en bouwt de baseline op over 14 dagen. [Bekijk je bereik over twee weken →](/tools/baseline)"
+          "a": "Naar de trend. HRV beweegt van dag tot dag flink om gewone redenen, dus één ochtend zegt weinig. Vergelijk elke meting met je eigen recente bereik: de ONDA-app vergelijkt bijvoorbeeld je laatste dag met gegevens met je corridor (het gemiddelde van je eerdere dagen met voldoende gegevens ± één standaardafwijking), heeft minstens 7 eerdere dagen met voldoende gegevens plus de laatste dag nodig en bouwt de baseline op over 14 dagen. [Bekijk je bereik over twee weken →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

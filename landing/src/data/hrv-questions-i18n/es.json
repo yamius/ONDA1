@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "¿Debo fijarme en una lectura de HRV o en la tendencia?",
-          "a": "En la tendencia. La HRV cambia mucho de un día a otro por motivos corrientes, así que una mañana dice poco. Compara cada lectura con tu propio rango reciente: la app ONDA, por ejemplo, compara cada noche con tu corredor (la media de tus noches recientes ± una desviación estándar), necesita al menos 7 noches y construye la línea base en 14 días. [Consulta tu rango de dos semanas →](/tools/baseline)"
+          "a": "En la tendencia. La HRV cambia mucho de un día a otro por motivos corrientes, así que una mañana dice poco. Compara cada lectura con tu propio rango reciente: la app ONDA, por ejemplo, compara tu último día con datos con tu corredor (la media de tus días anteriores con datos suficientes ± una desviación estándar), necesita al menos 7 días anteriores con datos suficientes más el último día y construye la línea base en 14 días. [Consulta tu rango de dos semanas →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

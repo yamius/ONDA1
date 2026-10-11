@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "Soll ich auf einen einzelnen HRV-Wert oder auf den Trend schauen?",
-          "a": "Auf den Trend. Die HRV schwankt von Tag zu Tag aus ganz gewöhnlichen Gründen stark, ein einzelner Morgen sagt also wenig. Vergleiche jeden Wert mit deinem eigenen jüngsten Bereich: Die ONDA-App etwa vergleicht jede Nacht mit deinem Korridor (Durchschnitt deiner letzten Nächte ± eine Standardabweichung), braucht mindestens 7 Nächte und baut die Baseline über 14 Tage auf. [Deinen Zwei-Wochen-Bereich ansehen →](/tools/baseline)"
+          "a": "Auf den Trend. Die HRV schwankt von Tag zu Tag aus ganz gewöhnlichen Gründen stark, ein einzelner Morgen sagt also wenig. Vergleiche jeden Wert mit deinem eigenen jüngsten Bereich: Die ONDA-App etwa vergleicht deinen letzten Tag mit Daten mit deinem Korridor (Durchschnitt deiner früheren Tage mit ausreichend Daten ± eine Standardabweichung), braucht mindestens 7 frühere Tage mit ausreichend Daten plus den letzten Tag und baut die Baseline über 14 Tage auf. [Deinen Zwei-Wochen-Bereich ansehen →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

@@ -1,5 +1,5 @@
 ---
-sourceHash: 2ca53e2a4e73
+sourceHash: e83b1b460cc2
 title: "Treino de força e HRV: queda aguda, ganhos lentos e lacunas assumidas"
 metaTitle: "Treino de força e HRV: o que diz a evidência"
 metaDescription: "O que uma sessão de força faz com a HRV, o que se sabe sobre o treino de longo prazo em idosos e por que um aumento em jovens não foi demonstrado."
@@ -53,7 +53,7 @@ evidenceMap:
     limitation: "Homens saudáveis; modelos de relógio mais antigos; financiado por uma empresa; apenas frequência cardíaca e calorias, sem HRV."
   - claim: "A precisão do gasto energético do relógio piorou ainda mais durante o exercício de força."
     limitation: "Homens saudáveis; financiado por uma empresa."
-  - claim: "O ONDA constrói a sua linha de base a partir dos valores no Apple Health e compara cada noite com a faixa própria do usuário (facts baseline.window, baseline.compare)."
+  - claim: "O ONDA constrói a sua linha de base a partir dos valores no Apple Health e compara o dia de dados mais recente com a faixa própria do usuário (facts baseline.window, baseline.compare)."
     limitation: "Descreve apenas o funcionamento do app; não é evidência para nenhuma afirmação sobre saúde ou treino."
 ---
 

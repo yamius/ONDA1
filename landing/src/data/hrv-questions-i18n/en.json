@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "Should I look at a single HRV reading or the trend?",
-          "a": "The trend. Day-to-day HRV moves a lot for ordinary reasons, so one morning tells you little. Compare each reading with your own recent range: the ONDA app, for example, compares each night with your corridor (the average of your recent nights ± one standard deviation), needs at least 7 nights and builds the baseline over 14 days. [See your two-week range →](/tools/baseline)"
+          "a": "The trend. Day-to-day HRV moves a lot for ordinary reasons, so one morning tells you little. Compare each reading with your own recent range: the ONDA app, for example, compares your latest day of data with your corridor (the average of your earlier days with enough data ± one standard deviation), needs at least 7 earlier days with enough data plus the latest day and builds the baseline over 14 days. [See your two-week range →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

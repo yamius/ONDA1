@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "Meglio guardare la singola misurazione di HRV o l'andamento?",
-          "a": "L'andamento. L'HRV giornaliero varia molto per motivi ordinari, quindi una mattina dice poco. Confronta ogni lettura con il tuo intervallo recente: l'app ONDA, per esempio, confronta ogni notte con il tuo corridoio (la media delle tue notti recenti ± una deviazione standard), richiede almeno 7 notti e costruisce la baseline in 14 giorni. [Scopri il tuo intervallo di due settimane →](/tools/baseline)"
+          "a": "L'andamento. L'HRV giornaliero varia molto per motivi ordinari, quindi una mattina dice poco. Confronta ogni lettura con il tuo intervallo recente: l'app ONDA, per esempio, confronta il tuo ultimo giorno con dati con il tuo corridoio (la media dei tuoi giorni precedenti con dati sufficienti ± una deviazione standard), richiede almeno 7 giorni precedenti con dati sufficienti più l'ultimo giorno e costruisce la baseline in 14 giorni. [Scopri il tuo intervallo di due settimane →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

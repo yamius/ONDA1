@@ -1,5 +1,5 @@
 ---
-sourceHash: 2ca53e2a4e73
+sourceHash: e83b1b460cc2
 title: "Musculation et HRV : baisse aiguë, gains lents et lacunes assumées"
 metaTitle: "Musculation et HRV : ce que disent les études"
 metaDescription: "Ce qu’une séance de musculation fait à la HRV, ce que l’on sait de l’entraînement au long cours chez les personnes âgées et pourquoi une hausse chez les jeunes n’a pas été démontrée."
@@ -54,7 +54,7 @@ evidenceMap:
     limitation: "Hommes en bonne santé ; modèles de montre plus anciens ; financée par une entreprise ; fréquence cardiaque et calories uniquement, pas de HRV."
   - claim: "La précision de la dépense énergétique des montres s’est encore dégradée pendant la musculation."
     limitation: "Hommes en bonne santé ; financée par une entreprise."
-  - claim: "ONDA construit sa ligne de base à partir des valeurs d’Apple Health et compare chaque nuit au couloir propre à l’utilisateur (facts baseline.window, baseline.compare)."
+  - claim: "ONDA construit sa ligne de base à partir des valeurs d’Apple Health et compare le dernier jour de données au couloir propre à l’utilisateur (facts baseline.window, baseline.compare)."
     limitation: "Décrit uniquement le fonctionnement de l’app ; ne constitue une preuve d’aucune affirmation sur la santé ou l’entraînement."
 ---
 

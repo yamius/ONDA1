@@ -1,5 +1,5 @@
 ---
-sourceHash: 2ca53e2a4e73
+sourceHash: e83b1b460cc2
 title: "力量训练与 HRV：短暂下降、缓慢获益与坦诚的空白"
 metaTitle: "力量训练与 HRV：证据怎么说"
 metaDescription: "一次力量训练会对 HRV 产生什么影响，关于老年人长期训练已知哪些结果，以及为什么在年轻人中尚未显示 HRV 升高。"
@@ -50,7 +50,7 @@ evidenceMap:
     limitation: "健康男性；较旧的手表型号；企业资助；仅心率和卡路里，没有 HRV。"
   - claim: "在抗阻运动期间，智能手表能量消耗估计的准确性进一步下降。"
     limitation: "健康男性；企业资助。"
-  - claim: "ONDA 根据 Apple 健康中的数值建立基线，并将每晚与用户自己的波动区间进行比较（facts baseline.window, baseline.compare）。"
+  - claim: "ONDA 根据 Apple 健康中的数值建立基线，并将最近一天的数据与用户自己的波动区间进行比较（facts baseline.window, baseline.compare）。"
     limitation: "仅描述应用的行为；不能作为任何健康或训练主张的证据。"
 ---
 
