@@ -21,15 +21,15 @@ export type FieldSpec =
   | { kind: 'markdown' } // links/URLs must match EN
   | { kind: 'textList' } // string[] — any length (pros/cons may be reworded)
   | { kind: 'qaList' } // QA[] — any length
-  | { kind: 'indexed'; keys: readonly string[] } // object[] matched to EN by position
+  | { kind: 'indexed'; keys: readonly string[] } // object[] matched to EN by position (values: string or string[])
   | { kind: 'keyed'; keys?: readonly string[] } // Record<enId, string | {keys…}>
   | { kind: 'object'; keys: readonly string[] } // one object of text fields
 
 export interface CollectionSchema {
   /** public/locales/<lang>/<file> */
-  file: 'articles.json' | 'reviews.json' | 'glossary.json'
+  file: 'articles.json' | 'reviews.json' | 'glossary.json' | 'onda-guides.json'
   /** top-level key holding `{ [slug]: entry }` */
-  path: 'bodies' | 'comparisons' | 'headToHeads' | 'categoryHubs'
+  path: 'bodies' | 'comparisons' | 'headToHeads' | 'categoryHubs' | 'roundups'
   fields: Record<string, FieldSpec>
   /** A PUBLISHED translation must have all of these (otherwise the page shows English). */
   required: readonly string[]
@@ -120,6 +120,21 @@ export const TRANSLATION_SCHEMA = {
     path: 'categoryHubs',
     fields: { h1: text, intro: text, description: text },
     required: ['h1', 'intro', 'description'],
+  },
+  /** ONDA's OWN ranked guides (/compare/<slug>, src/data/onda-roundups.ts). Deliberately NOT in
+   *  reviews.json: ONDA guides never sit in the independent /reviews system (honesty rule). */
+  roundups: {
+    file: 'onda-guides.json',
+    path: 'roundups',
+    fields: {
+      title: text,
+      description: text,
+      intro: text,
+      entries: { kind: 'indexed', keys: ['tag', 'blurb', 'pros', 'cons'] },
+      bottomLine: text,
+      faq: qaList,
+    },
+    required: ['title', 'description', 'intro', 'entries', 'bottomLine', 'faq'],
   },
   glossary: {
     file: 'glossary.json',

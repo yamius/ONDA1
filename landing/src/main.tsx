@@ -91,6 +91,8 @@ const HrvVsCoherencePage    = lazy(() => import('./pages/HrvVsCoherencePage').th
 const AppleWatchHrvBiofeedbackPage = lazy(() => import('./pages/AppleWatchHrvBiofeedbackPage').then(m => ({ default: m.AppleWatchHrvBiofeedbackPage })))
 const OndaComparePage       = lazy(() => import('./pages/OndaComparePage').then(m => ({ default: m.OndaComparePage })))
 const CompareSlugRouter     = lazy(() => import('./components/CompareSlugRouter').then(m => ({ default: m.CompareSlugRouter })))
+// /<lang>/compare/<guide>: also loads the ONDA-guides namespace (onda-guides.json).
+const CompareSlugRouterNs   = lazyNs('onda-guides', () => import('./components/CompareSlugRouter').then(m => ({ default: m.CompareSlugRouter })))
 const ToolsPage             = lazy(() => import('./pages/ToolsPage').then(m => ({ default: m.ToolsPage })))
 const BaselinePage          = lazy(() => import('./pages/BaselinePage').then(m => ({ default: m.BaselinePage })))
 const HrvInterpreterPage    = lazy(() => import('./pages/HrvInterpreterPage').then(m => ({ default: m.HrvInterpreterPage })))
@@ -270,6 +272,9 @@ const routeElements = (
             <Route path="/ru/compare"            element={<OndaComparePage />} />
             <Route path="/es/compare"            element={<OndaComparePage />} />
             <Route path="/compare/:slug"         element={<CompareSlugRouter />} />
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+              <Route key={`cmp-guide-${l}`} path={`/${l}/compare/:slug`} element={<CompareSlugRouterNs />} />
+            ))}
             <Route path="/tools"                 element={<ToolsPage />} />
             <Route path="/ru/tools"              element={<ToolsPage />} />
             <Route path="/uk/tools" element={<ToolsPage />} />

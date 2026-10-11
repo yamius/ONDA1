@@ -30,7 +30,7 @@ import i18n, {
   parsePartRoute,
   type Lang,
 } from '../src/i18n'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs, glossaryLocalizedLangs, REVIEW_PILOT_LANGS, GLOSSARY_INDEX_LANGS } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs, roundupLocalizedLangs, LOCALIZED_ROUNDUP_ROUTE_SET, glossaryLocalizedLangs, REVIEW_PILOT_LANGS, GLOSSARY_INDEX_LANGS } from './prerender-routes'
 import { getMetaForRoute, injectMetaIntoHtml, truncateForBudget, clampTitleToIdeal, TITLE_MAX, DESC_MAX } from './meta-inject'
 import { getReviewBySlug, getComparisonBySlug } from '../src/data/reviews'
 import { ARTICLE_TOPIC_HUBS } from '../src/data/article-topics'
@@ -433,6 +433,12 @@ function buildHreflangLinksForGlossary(
 // Part translations per language. The `parts` block is empty for languages
 // whose body content hasn't been translated yet — we use this presence check
 // to decide whether to apply localized meta + hreflang or fall back to EN.
+/** ONDA guides translations (public/locales/<lang>/onda-guides.json). */
+const guidesByLang: Partial<Record<Lang, { roundups?: Record<string, { title?: string; description?: string; faq?: { q: string; a: string }[] }> }>> = {}
+for (const lang of SUPPORTED_LANGS) {
+  try { guidesByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'onda-guides.json'), 'utf-8')) } catch { /* none */ }
+}
+
 const partByLang: Record<Lang, PartFile> = {} as Record<Lang, PartFile>
 for (const lang of SUPPORTED_LANGS) {
   partByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'part.json'), 'utf-8')) as PartFile
@@ -854,6 +860,8 @@ for (const route of routes) {
                 : `/reviews/${reviewInfo.slug}`)
         : isGlossaryLocalized && glossaryInfo
           ? (glossaryInfo.kind === 'index' ? '/glossary' : `/glossary/${glossaryInfo.slug}`)
+          : LOCALIZED_ROUNDUP_ROUTE_SET.has(route)
+            ? stripLangPrefix(route)
           : isLocalized && basePath === '/about'
             ? '/about'
             : route
@@ -1100,6 +1108,43 @@ for (const route of routes) {
         const hreflang = buildHreflangLinksForGlossary(glossaryInfo.kind, glossaryInfo.slug, glossaryLangs)
         out = out.replace('</head>', `  ${hreflang}\n</head>`)
       }
+    }
+
+    // ONDA guides (/compare/<roundup-slug>): localized title/description/canonical/FAQ on
+    // /<lang>/compare/<slug>, and the hreflang cluster on every language version (EN included).
+    const roundupMatch = route.match(/^(?:\/(es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/compare\/([^/]+)$/)
+    if (roundupMatch && roundupLocalizedLangs(roundupMatch[2]).length > 1 && !/hreflang=/.test(out)) {
+      const rLang = (roundupMatch[1] ?? 'en') as Lang
+      const rSlug = roundupMatch[2]
+      const rLangs = roundupLocalizedLangs(rSlug) as Lang[]
+      const rUrl = (l: Lang) => (l === 'en' ? `${SITE_URL}/compare/${rSlug}` : `${SITE_URL}/${l}/compare/${rSlug}`)
+      if (rLang !== 'en') {
+        const g = (guidesByLang[rLang]?.roundups ?? {})[rSlug]
+        const escUrl = escAttr(rUrl(rLang))
+        out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${rLang}"`)
+        out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
+        if (g?.title) {
+          const escTitle = escAttr(fitTitle(g.title, ' | ONDA Life'))
+          out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
+          out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${escTitle}">`)
+          out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${escTitle}">`)
+          out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*">/gi, `<meta property="twitter:title" content="${escTitle}">`)
+        }
+        if (g?.description) {
+          const escDesc = escAttr(g.description)
+          out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, `<meta name="description" content="${escDesc}">`)
+          out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${escDesc}">`)
+          out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${escDesc}">`)
+        }
+        out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escUrl}">`)
+        out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
+        out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
+        out = out.replace('</head>', `  <meta property="og:locale" content="${OG_LOCALE_MAP[rLang]}">\n</head>`)
+        out = localizeFaqJsonLd(out, rLang, rUrl(rLang), g?.faq)
+      }
+      const tags = rLangs.map((l) => `<link rel="alternate" hreflang="${l}" href="${rUrl(l)}">`)
+      tags.push(`<link rel="alternate" hreflang="x-default" href="${rUrl('en')}">`)
+      out = out.replace('</head>', `  ${tags.join('\n  ')}\n</head>`)
     }
 
     // Final-pass title + description truncate. Catches localized branches

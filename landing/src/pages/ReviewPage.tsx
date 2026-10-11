@@ -29,7 +29,8 @@ import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
 import { NotFoundPage } from './NotFoundPage'
 import { readReview, getReviewBySlug, getHeadToHeadsForProduct } from '../lib/review-content'
-import { getCriterion } from '../data/reviews/criteria'
+import { getCriterion, CATEGORY_URL_SLUGS } from '../data/reviews/criteria'
+import { LOCALIZED_COVERAGE } from '../data/localized-coverage.generated'
 import { langFromPath, langHref, homePathFor } from '../i18n'
 import { ConnectDeviceLink } from '../components/ConnectDeviceLink'
 import { splitAt, ui } from '../data/ui-i18n'
@@ -83,6 +84,15 @@ export function ReviewPage() {
         <span>/</span>
         <Link to={langHref(`/reviews`, lang)} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.reviews')}</Link>
         <span>/</span>
+        {/* Localized category hub crumb — only where that hub is prerendered in this language. */}
+        {lang !== 'en' && CATEGORY_URL_SLUGS[review.category] && LOCALIZED_COVERAGE[lang]?.reviews.has(CATEGORY_URL_SLUGS[review.category] as string) && (
+          <>
+            <Link to={langHref(`/reviews/${CATEGORY_URL_SLUGS[review.category]}`, lang)} className="transition-colors hover:text-white/50">
+              {tReviews(`categories.${review.category}`)}
+            </Link>
+            <span>/</span>
+          </>
+        )}
         <span className="text-terminal-green/60" aria-current="page">{review.name}</span>
       </nav>
 

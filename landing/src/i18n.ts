@@ -73,7 +73,7 @@ if (!i18n.isInitialized) {
       pl: { home: pl },
       pt: { home: pt },
     },
-    ns: ['home', 'about', 'inner-spectrum', 'bio', 'bio-metric', 'level', 'part', 'contact', 'sitemap', 'privacy', 'terms', 'glossary', 'articles', 'reviews', 'emoton'],
+    ns: ['home', 'about', 'inner-spectrum', 'bio', 'bio-metric', 'level', 'part', 'contact', 'sitemap', 'privacy', 'terms', 'glossary', 'articles', 'reviews', 'emoton', 'onda-guides'],
     defaultNS: 'home',
     interpolation: { escapeValue: false },
     // bindI18nStore 'added': re-render when a lazily loaded namespace bundle

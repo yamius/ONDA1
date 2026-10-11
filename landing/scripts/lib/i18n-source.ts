@@ -10,6 +10,7 @@ import { ALL_HEAD_TO_HEADS } from '../../src/data/reviews/head-to-head'
 import { CATEGORY_INTRO, CATEGORY_META_DESCRIPTION } from '../../src/data/reviews/category-hub-copy'
 import { CATEGORY_URL_SLUGS } from '../../src/data/reviews/criteria'
 import type { ReviewCategory } from '../../src/data/reviews/types'
+import { ONDA_ROUNDUPS } from '../../src/data/onda-roundups'
 import { glossaryTermsRaw as glossaryTerms } from '../../src/data/glossary'
 import type { TranslationCollection } from '../../src/data/i18n-schema'
 
@@ -94,6 +95,19 @@ function build(): Record<TranslationCollection, Map<string, Entry>> {
           CATEGORY_URL_SLUGS[c] as string,
           clean({ h1: CATEGORY_INTRO[c].h1, intro: CATEGORY_INTRO[c].intro, description: CATEGORY_META_DESCRIPTION[c] }),
         ]),
+    ),
+    roundups: new Map(
+      ONDA_ROUNDUPS.map((r) => [
+        r.slug,
+        clean({
+          title: r.title,
+          description: r.description,
+          intro: r.intro,
+          entries: r.entries.map((e) => ({ tag: e.tag, blurb: e.blurb, pros: e.pros, cons: e.cons })),
+          bottomLine: r.bottomLine,
+          faq: r.faq.map((f) => ({ q: f.q, a: f.a })),
+        }),
+      ]),
     ),
     glossary: new Map(glossaryTerms.map((t) => [t.slug, clean({ title: t.title, shortDescription: t.shortDescription, content: t.content })])),
   }

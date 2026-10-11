@@ -270,6 +270,9 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/ru/compare"            element={<OndaComparePage />} />
           <Route path="/es/compare"            element={<OndaComparePage />} />
           <Route path="/compare/:slug"         element={<CompareSlugRouter />} />
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={`cmp-guide-${l}`} path={`/${l}/compare/:slug`} element={<CompareSlugRouter />} />
+          ))}
           <Route path="/tools"                 element={<ToolsPage />} />
           <Route path="/ru/tools"              element={<ToolsPage />} />
           <Route path="/uk/tools" element={<ToolsPage />} />

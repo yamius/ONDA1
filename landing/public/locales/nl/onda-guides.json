@@ -1,0 +1,107 @@
+{
+  "ui": {
+    "home": "Home",
+    "compare": "Vergelijken",
+    "topPicks": "TOPKEUZES",
+    "transparency": "Dit is de eigen gids van ONDA Life, en ONDA is een van de apps erin — daarom zetten we het alleen op #1 waar het echt voorop loopt, noemen we waar elke concurrent wint en zeggen we hieronder eerlijk waar ONDA niet het beste in is.",
+    "capsHeading": "Functies in één oogopslag",
+    "yes": "ja",
+    "limited": "beperkt",
+    "no": "nee",
+    "capability": "Functie",
+    "ourApp": "Onze app",
+    "pros": "Pluspunten",
+    "cons": "Minpunten",
+    "bottomLine": "CONCLUSIE",
+    "questions": "Vragen",
+    "seeExactly": "Bekijk precies",
+    "whatMeasures": "wat ONDA meet",
+    "howItWorks": "hoe het werkt",
+    "moreOn": ", en meer rechtstreekse vergelijkingen op de",
+    "compareHub": "vergelijkingspagina"
+  },
+  "capabilities": [
+    "Realtime HRV-biofeedback (live feedback terwijl je ademt)",
+    "Live coherentiescore",
+    "Begeleide / gepaste ademhaling",
+    "Werkt zonder wearable of borstband (iPhone-camera)",
+    "Ondersteuning voor Apple Watch",
+    "Trend van rust-HRV in de tijd",
+    "Slaap / nachtelijke readiness bijhouden",
+    "Grote bibliotheek met meditatie- / slaapcontent",
+    "Gestructureerd, opbouwend programma"
+  ],
+  "roundups": {
+    "apps-combining-breathing-hrv-realtime-feedback": {
+      "title": "Beste apps voor ademhaling, HRV en live feedback",
+      "description": "Apps die je ademhaling begeleiden, je hart uitlezen en live terugkoppelen — gerangschikt met eerlijke plus- en minpunten door ONDA. Weinig doen alle drie.",
+      "intro": "Genoeg apps begeleiden je ademhaling. Genoeg apps lezen hartslagvariabiliteit (HRV) uit. Maar heel weinig sluiten de cirkel — je ademtempo aangeven terwijl je in realtime ziet hoe je hartritme reageert, zodat ademhaling en HRV samenkomen in één live feedbacksessie. Dat snijpunt is het nuttige, zeldzame deel. Hier zijn de apps die het dichtst in de buurt komen, gerangschikt, met wat elke app nodig heeft en voor wie hij echt bedoeld is.",
+      "entries": [
+        {
+          "tag": "Beste alles-in-één voor ademhaling + HRV + live feedback",
+          "blurb": "ONDA is precies rond deze cirkel gebouwd: het begeleidt je ademhaling en laat, met een Apple Watch, je hartslag en een live coherentiescore in realtime reageren, binnen een begeleide, opbouwende oefening van 8 niveaus. Zonder horloge kun je nog steeds beginnen met de iPhone-camera (een check van hartslag en ademfrequentie), en je baseline van 14 dagen komt uit Apple Gezondheid — van een Apple Watch of elk apparaat dat er hartgegevens naartoe synchroniseert. Geen borstband nodig, gratis te starten.",
+          "pros": [
+            "Ademhalingsbegeleiding, HRV-context en live feedback in één app — geen borstband",
+            "Live hartslag en coherentie tijdens de oefening met een Apple Watch",
+            "Begeleide, opbouwende oefening in plaats van een ruwe datatool"
+          ],
+          "cons": [
+            "Realtime ademhalingsbiofeedback vereist een Apple Watch; de camera geeft een check, niet de live cirkel",
+            "Voorlopig alleen iOS (Android via wachtlijst); 3 gratis oefeningen, daarna een abonnement"
+          ]
+        },
+        {
+          "tag": "Beste voor datagerichte gebruikers die een pacer willen",
+          "blurb": "Elite HRV combineert echt alle drie — een resonantie-ademhalingspacer met live HRV-feedback — maar het is een tool die meten vooropstelt, en elke HRV-meting vereist een gekoppelde hartslagsensor zoals een borstband of de eigen vingersensor. Zonder sensor werkt de pacer nog wel, maar alleen als ademhalingsbegeleiding. Geef je meer om precieze cijfers dan om een begeleide oefening, dan is het uitstekend.",
+          "pros": [
+            "Echte ademhalingspacer met live HRV-feedback",
+            "Hoge meetprecisie; gratis kernapp"
+          ],
+          "cons": [
+            "Vereist een borstband of vingersensor voor elke HRV-meting",
+            "Meer datatool dan begeleide, opbouwende oefening"
+          ]
+        },
+        {
+          "tag": "Beste voor een gevalideerde ochtendmeting",
+          "blurb": "HRV4Training leest HRV uit via de telefooncamera zonder wearable, en de kern is een wetenschappelijk gevalideerde ochtendmeting — geen cirkel van ademen en zien hoe het reageert. Live ademhalingsbiofeedback zit in een aparte app van dezelfde ontwikkelaar, HRV4Biofeedback, dus voor alle drie heb je twee apps nodig.",
+          "pros": [
+            "HRV via de camera, zonder wearable; wetenschappelijk gevalideerd",
+            "Begeleidende app HRV4Biofeedback voegt gepaste ademhaling met live feedback toe"
+          ],
+          "cons": [
+            "De ademhalingscirkel is een aparte app, geen onderdeel van HRV4Training",
+            "Gebouwd rond het dagelijkse getal, niet rond een begeleide oefening"
+          ]
+        },
+        {
+          "tag": "Beste ademhalingsbibliotheek, geen gedocumenteerde HRV-cirkel",
+          "blurb": "Breathwrk (nu onderdeel van Peloton) heeft een van de breedste aanbiedingen aan begeleide ademhalingsoefeningen, op iOS, Android en het web. De officiële materialen beschrijven momenteel geen hartslag- of HRV-feedback, dus zie het als een app met ademhalingscontent: uitstekend voor techniek, geen live HRV-cirkel.",
+          "pros": [
+            "Grote bibliotheek met begeleide ademhalingsoefeningen en lessen",
+            "iOS, Android en web; gratis versie, inbegrepen bij sommige Peloton-lidmaatschappen"
+          ],
+          "cons": [
+            "Momenteel geen gedocumenteerde HRV- of hartslagfeedback",
+            "Ademhalingscontent eerst; meten doe je elders"
+          ]
+        }
+      ],
+      "bottomLine": "Wil je ademhaling en realtime hartfeedback samengesmolten in één begeleide cirkel, dan loopt ONDA met een Apple Watch voorop. Wil je ruwe meetprecisie met een pacer, kies dan Elite HRV met een borstband of vingersensor. Voor een wetenschappelijk gevalideerde dagelijkse meting: HRV4Training (plus HRV4Biofeedback voor de ademhalingscirkel). Voor de grootste bibliotheek met ademhalingsoefeningen: Breathwrk. En geen van deze is een passieve tracker voor de hele dag — combineer er een met een Apple Watch, Oura of WHOOP voor de nachtelijke HRV-trend.",
+      "faq": [
+        {
+          "q": "Welke app combineert ademhaling, HRV en realtime feedback?",
+          "a": "ONDA is precies rond die cirkel gebouwd — het begeleidt je ademhaling en laat, met een Apple Watch, je hartslag en een live coherentiescore tijdens de sessie reageren, binnen een begeleide oefening en zonder borstband. Elite HRV combineert ook alle drie, maar stelt meten voorop en vereist een borstband of vingersensor. HRV4Training verdeelt het over twee apps (HRV4Training voor de meting, HRV4Biofeedback voor de ademhalingscirkel), en Breathwrk is een ademhalingsbibliotheek zonder gedocumenteerde HRV-feedback."
+        },
+        {
+          "q": "Waarom doen zo weinig apps alle drie?",
+          "a": "Omdat de meeste voor één taak zijn gebouwd. Meditatie- en ademhalingsapps begeleiden je maar meten niet; trackers meten maar begeleiden geen live oefening; en de cirkel sluiten — je ademtempo aangeven terwijl je hartgegevens in realtime terugkoppelt — is moeilijker te bouwen en vereist biometrische metingen met lage latentie. De apps die alle drie beheersen zijn de uitzondering, en juist daarom is dat snijpunt de moeite van het zoeken waard."
+        },
+        {
+          "q": "Heb ik een wearable nodig om ademhaling en HRV-feedback te combineren?",
+          "a": "Voor de live cirkel wel. In ONDA vereist realtime ademhalingsbiofeedback een Apple Watch; Elite HRV vereist een borstband of de eigen vingersensor. Met alleen een iPhone kun je beginnen: de camera van ONDA geeft een check van hartslag en ademfrequentie en HRV4Training een ochtendmeting via de camera — en de baseline van ONDA gebruikt gegevens uit Apple Gezondheid van elk apparaat dat ernaartoe synchroniseert. Voeg een wearable toe wanneer je de live feedback wilt."
+        }
+      ]
+    }
+  }
+}

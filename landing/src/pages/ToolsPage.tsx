@@ -10,6 +10,7 @@
  * tool cards (name + blurb) stay English because /tools/<slug> pages are
  * English-only, and internal Links keep EN paths — same as /product and /faq.
  */
+import { ONDA_GUIDE_LINKS } from '../data/onda-guides-links'
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath, langHref, homePathFor } from '../i18n'
@@ -174,6 +175,16 @@ export function ToolsPage() {
           <Link to={langHref('/compare', lang)} className="text-terminal-green hover:underline">{copy.compareLink}</Link>
           {copy.ctaPost}
         </p>
+        {ONDA_GUIDE_LINKS.map((g) => {
+          const to = langHref(`/compare/${g.slug}`, lang)
+          // Only where the guide exists in this language (EN, or a prerendered /<lang>/ copy).
+          if (lang !== 'en' && !to.startsWith(`/${lang}/`)) return null
+          return (
+            <p key={g.slug} className="mt-3 font-mono text-sm leading-relaxed">
+              <Link to={to} className="text-terminal-green hover:underline">{g.title[lang] ?? g.title.en} →</Link>
+            </p>
+          )
+        })}
       </section>
     </main>
   )

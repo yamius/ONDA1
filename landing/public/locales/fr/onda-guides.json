@@ -1,0 +1,107 @@
+{
+  "ui": {
+    "home": "Accueil",
+    "compare": "Comparer",
+    "topPicks": "MEILLEURS CHOIX",
+    "transparency": "Ce guide est celui d’ONDA Life, et ONDA fait partie des applications présentées : nous ne la classons donc n° 1 que là où elle est réellement en tête, nous indiquons où chaque concurrent l’emporte et nous disons clairement ci-dessous en quoi ONDA n’est pas la meilleure.",
+    "capsHeading": "Fonctionnalités en un coup d’œil",
+    "yes": "oui",
+    "limited": "limité",
+    "no": "non",
+    "capability": "Fonctionnalité",
+    "ourApp": "Notre application",
+    "pros": "Points forts",
+    "cons": "Points faibles",
+    "bottomLine": "EN RÉSUMÉ",
+    "questions": "Questions",
+    "seeExactly": "Découvrez précisément",
+    "whatMeasures": "ce que mesure ONDA",
+    "howItWorks": "comment ça marche",
+    "moreOn": ", et d’autres comparatifs face à face sur la",
+    "compareHub": "page des comparatifs"
+  },
+  "capabilities": [
+    "Biofeedback HRV en temps réel (retour en direct pendant que vous respirez)",
+    "Score de cohérence en direct",
+    "Respiration guidée / rythmée",
+    "Fonctionne sans objet connecté ni ceinture thoracique (caméra de l’iPhone)",
+    "Compatible Apple Watch",
+    "Tendance de la HRV au repos dans le temps",
+    "Suivi du sommeil / de la récupération nocturne",
+    "Grande bibliothèque de contenus de méditation / sommeil",
+    "Programme structuré et progressif"
+  ],
+  "roundups": {
+    "apps-combining-breathing-hrv-realtime-feedback": {
+      "title": "Meilleures applis respiration, HRV et retour en direct",
+      "description": "Les applis qui guident votre respiration, lisent votre cœur et vous le montrent en direct, classées par ONDA avec avantages et limites. Peu font les trois.",
+      "intro": "Beaucoup d’applications guident la respiration. Beaucoup lisent la variabilité de la fréquence cardiaque (HRV, ou VFC). Très peu bouclent la boucle : rythmer votre respiration tout en montrant votre rythme cardiaque réagir en temps réel, pour que respiration et HRV se rejoignent dans une seule séance de retour en direct. C’est cette intersection, utile et rare, qui compte. Voici les applications qui s’en approchent le plus, classées, avec ce dont chacune a besoin et à qui elle s’adresse vraiment.",
+      "entries": [
+        {
+          "tag": "Meilleure tout-en-un respiration + HRV + retour en direct",
+          "blurb": "ONDA est conçue précisément autour de cette boucle : elle guide votre respiration et, avec une Apple Watch, montre votre pouls et un score de cohérence en direct réagir en temps réel, au sein d’une pratique guidée et progressive en 8 niveaux. Sans montre, vous pouvez quand même commencer avec la caméra de l’iPhone (une vérification du pouls et de la fréquence respiratoire), et votre référence sur 14 jours provient d’Apple Santé — d’une Apple Watch ou de tout appareil qui y synchronise des données cardiaques. Sans ceinture thoracique, gratuite pour commencer.",
+          "pros": [
+            "Guidage respiratoire, contexte HRV et retour en direct dans une seule application, sans ceinture thoracique",
+            "Pouls et cohérence en direct pendant la pratique avec une Apple Watch",
+            "Pratique guidée et progressive plutôt qu’un outil de données brutes"
+          ],
+          "cons": [
+            "Le biofeedback respiratoire en temps réel nécessite une Apple Watch ; la caméra offre une vérification, pas la boucle en direct",
+            "iOS uniquement pour l’instant (Android en liste d’attente) ; 3 pratiques gratuites, puis un abonnement"
+          ]
+        },
+        {
+          "tag": "Meilleure pour les adeptes des données qui veulent un guide de rythme",
+          "blurb": "Elite HRV combine réellement les trois — un guide de respiration à la fréquence de résonance avec retour HRV en direct —, mais c’est un outil axé sur la mesure, et chaque lecture de HRV exige un capteur de fréquence cardiaque appairé, comme une ceinture thoracique ou son propre capteur au doigt. Sans capteur, le guide de rythme fonctionne toujours, mais uniquement comme guidage respiratoire. Si vous tenez davantage à des chiffres précis qu’à une pratique guidée, il est excellent.",
+          "pros": [
+            "Vrai guide de rythme respiratoire avec retour HRV en direct",
+            "Grande précision de mesure ; application de base gratuite"
+          ],
+          "cons": [
+            "Nécessite une ceinture thoracique ou un capteur au doigt pour toute lecture de HRV",
+            "Plus outil de données que pratique guidée et progressive"
+          ]
+        },
+        {
+          "tag": "Meilleure pour une mesure matinale validée",
+          "blurb": "HRV4Training lit la HRV avec la caméra du téléphone, sans objet connecté, et son cœur est une mesure matinale validée par la recherche — pas une boucle où l’on respire en regardant la réaction. Le biofeedback respiratoire en direct se trouve dans une application distincte du même développeur, HRV4Biofeedback : avoir les trois implique donc deux applications.",
+          "pros": [
+            "HRV par la caméra, sans objet connecté ; validée par la recherche",
+            "L’application compagnon HRV4Biofeedback ajoute une respiration rythmée avec retour en direct"
+          ],
+          "cons": [
+            "La boucle respiratoire est une application distincte, pas une partie de HRV4Training",
+            "Pensée autour du chiffre quotidien, pas d’une pratique guidée"
+          ]
+        },
+        {
+          "tag": "Meilleure bibliothèque de respiration, sans boucle HRV documentée",
+          "blurb": "Breathwrk (désormais intégrée à Peloton) propose l’une des plus larges gammes d’exercices de respiration guidés, sur iOS, Android et le web. Ses documents officiels ne décrivent actuellement aucun retour sur la fréquence cardiaque ou la HRV : considérez-la comme une application de contenus de respiration, excellente pour la technique, pas comme une boucle HRV en direct.",
+          "pros": [
+            "Grande bibliothèque d’exercices et de cours de respiration guidée",
+            "iOS, Android et web ; offre gratuite, incluse dans certains abonnements Peloton"
+          ],
+          "cons": [
+            "Aucun retour HRV ou de fréquence cardiaque documenté à ce jour",
+            "Contenus de respiration d’abord ; la mesure se fait ailleurs"
+          ]
+        }
+      ],
+      "bottomLine": "Si vous voulez la respiration et un retour cardiaque en temps réel réunis dans une seule boucle guidée, ONDA avec une Apple Watch est en tête. Pour une précision de mesure brute avec un guide de rythme, Elite HRV avec une ceinture thoracique ou un capteur au doigt. Pour une mesure quotidienne validée scientifiquement, HRV4Training (plus HRV4Biofeedback pour la boucle respiratoire). Pour la plus grande bibliothèque d’exercices de respiration, Breathwrk. Et aucune n’est un suivi passif toute la journée : pour la tendance nocturne de la HRV, associez-en une à une Apple Watch, un Oura ou un WHOOP.",
+      "faq": [
+        {
+          "q": "Quelle application combine respiration, HRV et retour en temps réel ?",
+          "a": "ONDA est conçue autour de cette boucle précise : elle guide votre respiration et, avec une Apple Watch, montre votre pouls et un score de cohérence en direct réagir pendant la séance, au sein d’une pratique guidée et sans ceinture thoracique. Elite HRV combine aussi les trois, mais elle est axée sur la mesure et nécessite une ceinture thoracique ou un capteur au doigt. HRV4Training répartit cela sur deux applications (HRV4Training pour la mesure, HRV4Biofeedback pour la boucle respiratoire), et Breathwrk est une bibliothèque de respiration sans retour HRV documenté."
+        },
+        {
+          "q": "Pourquoi si peu d’applications font-elles les trois ?",
+          "a": "Parce que la plupart sont conçues pour une seule tâche. Les applications de méditation et de respiration guident mais ne mesurent pas ; les trackers mesurent mais ne guident pas une pratique en direct ; et boucler la boucle — rythmer la respiration tout en renvoyant des données cardiaques en temps réel — est plus difficile à développer et exige une lecture biométrique à faible latence. Les applications qui réussissent les trois sont l’exception, et c’est justement pour cela que cette intersection vaut la peine d’être recherchée."
+        },
+        {
+          "q": "Faut-il un objet connecté pour combiner respiration et retour HRV ?",
+          "a": "Pour la boucle en direct, oui. Dans ONDA, le biofeedback respiratoire en temps réel nécessite une Apple Watch ; Elite HRV nécessite une ceinture thoracique ou son capteur au doigt. Avec un simple iPhone, vous pouvez commencer : la caméra d’ONDA offre une vérification du pouls et de la fréquence respiratoire, et HRV4Training une mesure matinale par la caméra — et la référence d’ONDA utilise les données d’Apple Santé de tout appareil qui s’y synchronise. Ajoutez un objet connecté quand vous voulez le retour en direct."
+        }
+      ]
+    }
+  }
+}

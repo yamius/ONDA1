@@ -19,7 +19,7 @@ import { join } from 'path'
 import { TRANSLATION_SCHEMA, type FieldSpec, type TranslationCollection } from '../src/data/i18n-schema'
 import { enSource } from './lib/i18n-source'
 import { CATEGORY_URL_SLUGS } from '../src/data/reviews/criteria'
-import { LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET } from './prerender-routes'
+import { LOCALIZED_ROUNDUP_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET } from './prerender-routes'
 
 const LANGS = ['es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt']
 const [onlyLang, onlyCol] = process.argv.slice(2)
@@ -40,6 +40,7 @@ const PUBLISHED: Record<TranslationCollection, Set<string>> = {
   articles: published(LOCALIZED_ARTICLE_ROUTE_SET, /^\/([a-z]{2})\/articles\/([^/]+)$/),
   reviews: onlyCats(reviewRoutes, false),
   categoryHubs: onlyCats(reviewRoutes, true),
+  roundups: published(LOCALIZED_ROUNDUP_ROUTE_SET, /^\/([a-z]{2})\/compare\/([^/]+)$/),
   comparisons: published(LOCALIZED_REVIEW_ROUTE_SET, /^\/([a-z]{2})\/reviews\/compare\/([^/]+)$/),
   h2h: published(LOCALIZED_REVIEW_ROUTE_SET, /^\/([a-z]{2})\/reviews\/vs\/([^/]+)$/),
   glossary: published(LOCALIZED_GLOSSARY_ROUTE_SET, /^\/([a-z]{2})\/glossary\/([^/]+)$/),
@@ -102,7 +103,13 @@ function checkField(spec: FieldSpec, v: unknown, en: unknown, where: (m: string)
       for (const x of v) {
         const extra = Object.keys(x ?? {}).filter((k) => !spec.keys.includes(k))
         if (extra.length) where(`item has non-translatable keys: ${extra.join(', ')}`)
-        for (const k of spec.keys) if (isStr(x?.[k])) texts.push(x[k])
+        for (const k of spec.keys) {
+          if (isStr(x?.[k])) texts.push(x[k])
+          else if (Array.isArray(x?.[k])) {
+            if (!x[k].every(isStr)) where(`item ${k} must be a string or a list of strings`)
+            else texts.push(...x[k])
+          }
+        }
       }
       return
     }

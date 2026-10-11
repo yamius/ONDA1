@@ -9,6 +9,7 @@
  *   h2h         → /<lang>/reviews/vs/<slug>
  *   glossary    → /<lang>/glossary/<slug>
  *   categoryHubs → /<lang>/reviews/<category-url-slug>
+ *   roundups    → /<lang>/compare/<slug>  (ONDA's own guides, onda-guides.json)
  *
  * The translation itself must already be in public/locales/<lang>/*.json
  * (scripts/i18n-import.ts adds it AND the entries here). The older schedules in
@@ -17,7 +18,7 @@
  */
 import { RELEASE_QUEUE_ENTRIES } from './article-release-queue'
 
-export type PublishCollection = 'articles' | 'reviews' | 'comparisons' | 'h2h' | 'glossary' | 'categoryHubs'
+export type PublishCollection = 'articles' | 'reviews' | 'comparisons' | 'h2h' | 'glossary' | 'categoryHubs' | 'roundups'
 export interface PublishEntry {
   collection: PublishCollection
   lang: string

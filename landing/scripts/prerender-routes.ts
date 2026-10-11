@@ -828,6 +828,23 @@ const translatedCategoryHubs: Record<string, Set<string>> = (() => {
 const liveCategoryHubLocale = livePublish('categoryHubs').filter(
   (e) => CATEGORY_HUB_URL_SLUGS.has(e.slug) && translatedCategoryHubs[e.lang]?.has(e.slug),
 )
+/** Localized ONDA guides (/<lang>/compare/<roundup-slug>) — ONDA's own round-ups, translated in
+ *  public/locales/<lang>/onda-guides.json#roundups (never in reviews.json). Released via the queue
+ *  (collection 'roundups') and only when the translation exists. */
+const liveRoundupLocale = livePublish('roundups').filter((e) => {
+  if (!ONDA_ROUNDUPS.some((r) => r.slug === e.slug)) return false
+  try {
+    const f = JSON.parse(readFileSync(join(__dirname, '..', 'public', 'locales', e.lang, 'onda-guides.json'), 'utf-8')) as { roundups?: Record<string, { title?: string }> }
+    return typeof f.roundups?.[e.slug]?.title === 'string'
+  } catch {
+    return false
+  }
+})
+const localizedRoundupRoutes = liveRoundupLocale.map((e) => `/${e.lang}/compare/${e.slug}`)
+/** Languages (incl. EN) with a prerendered URL for an ONDA guide slug. */
+export function roundupLocalizedLangs(slug: string): readonly string[] {
+  return ['en', ...liveRoundupLocale.filter((e) => e.slug === slug).map((e) => e.lang)]
+}
 const reviewSlugLangs: Record<string, string[]> = {}
 for (const e of [...liveReviewSlugLocale, ...liveComparisonLocale, ...liveCategoryHubLocale]) (reviewSlugLangs[e.slug] ??= []).push(e.lang)
 
@@ -1006,6 +1023,7 @@ const nonLocalizedStaticPaths = [
   '/es/compare',
   ...ONDA_VS.map((e) => `/compare/${e.slug}`),
   ...ONDA_ROUNDUPS.map((r) => `/compare/${r.slug}`),
+  ...localizedRoundupRoutes,
   // Interactive biohacking tools. Hub localized to ru + es; tool pages EN-only.
   '/tools',
   '/ru/tools',
@@ -1257,6 +1275,9 @@ export const LOCALIZED_ARTICLE_ROUTE_SET = new Set([
 
 /** Set of localized review/comparison/hub/methodology routes (all pilots). */
 export const LOCALIZED_REVIEW_ROUTE_SET = new Set([...localizedReviewRoutes, ...localizedHeadToHeadRoutes])
+
+/** Set of localized ONDA-guide routes (/<lang>/compare/<roundup-slug>). */
+export const LOCALIZED_ROUNDUP_ROUTE_SET = new Set(localizedRoundupRoutes)
 
 /** Set of localized glossary routes (ES + RU rollouts — index + due term pages). */
 export const LOCALIZED_GLOSSARY_ROUTE_SET = new Set(localizedGlossaryRoutes)

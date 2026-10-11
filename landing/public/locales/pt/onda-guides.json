@@ -1,0 +1,107 @@
+{
+  "ui": {
+    "home": "Início",
+    "compare": "Comparar",
+    "topPicks": "MELHORES ESCOLHAS",
+    "transparency": "Este é o guia da própria ONDA Life, e o ONDA é um dos apps incluídos — por isso só o colocamos em 1.º lugar onde ele realmente lidera, apontamos onde cada concorrente vence e dizemos claramente abaixo em que o ONDA não é o melhor.",
+    "capsHeading": "Recursos em resumo",
+    "yes": "sim",
+    "limited": "limitado",
+    "no": "não",
+    "capability": "Recurso",
+    "ourApp": "Nosso app",
+    "pros": "Prós",
+    "cons": "Contras",
+    "bottomLine": "CONCLUSÃO",
+    "questions": "Perguntas",
+    "seeExactly": "Veja exatamente",
+    "whatMeasures": "o que o ONDA mede",
+    "howItWorks": "como funciona",
+    "moreOn": " e mais comparações diretas na",
+    "compareHub": "central de comparações"
+  },
+  "capabilities": [
+    "Biofeedback de HRV em tempo real (resposta ao vivo enquanto você respira)",
+    "Pontuação de coerência ao vivo",
+    "Respiração guiada / com ritmo marcado",
+    "Funciona sem wearable nem cinta peitoral (câmera do iPhone)",
+    "Compatível com Apple Watch",
+    "Tendência da HRV em repouso ao longo do tempo",
+    "Acompanhamento do sono / da recuperação noturna",
+    "Grande biblioteca de conteúdo de meditação / sono",
+    "Programa estruturado e progressivo"
+  ],
+  "roundups": {
+    "apps-combining-breathing-hrv-realtime-feedback": {
+      "title": "Melhores apps de respiração, HRV e feedback ao vivo",
+      "description": "Apps que guiam sua respiração, leem seu coração e mostram a resposta ao vivo — classificados pelo ONDA com prós e contras honestos. Poucos fazem os três.",
+      "intro": "Muitos apps guiam a respiração. Muitos apps leem a variabilidade da frequência cardíaca (HRV ou VFC). Pouquíssimos fecham o circuito — marcar o ritmo da sua respiração enquanto mostram seu ritmo cardíaco respondendo em tempo real, para que respiração e HRV se encontrem em uma única sessão de feedback ao vivo. Essa interseção é o que é útil e raro. Aqui estão os apps que mais se aproximam, classificados, com o que cada um exige e para quem ele realmente serve.",
+      "entries": [
+        {
+          "tag": "Melhor tudo em um: respiração + HRV + feedback ao vivo",
+          "blurb": "O ONDA foi construído exatamente em torno desse circuito: ele guia sua respiração e, com um Apple Watch, mostra seu pulso e uma pontuação de coerência ao vivo respondendo em tempo real, dentro de uma prática guiada e progressiva de 8 níveis. Sem relógio, você ainda pode começar pela câmera do iPhone (uma verificação do pulso e da frequência respiratória), e sua linha de base de 14 dias vem do Apple Health — de um Apple Watch ou de qualquer dispositivo que sincronize dados cardíacos lá. Sem cinta peitoral e grátis para começar.",
+          "pros": [
+            "Orientação de respiração, contexto de HRV e feedback ao vivo em um só app — sem cinta peitoral",
+            "Pulso e coerência ao vivo durante a prática com um Apple Watch",
+            "Prática guiada e progressiva, não uma ferramenta de dados brutos"
+          ],
+          "cons": [
+            "O biofeedback respiratório em tempo real precisa de um Apple Watch; a câmera faz uma verificação, não o circuito ao vivo",
+            "Hoje só para iOS (Android em lista de espera); 3 práticas grátis, depois assinatura"
+          ]
+        },
+        {
+          "tag": "Melhor para quem prioriza dados e quer um marcador de ritmo",
+          "blurb": "O Elite HRV realmente combina os três — um marcador de ritmo de respiração ressonante com feedback de HRV ao vivo —, mas é uma ferramenta voltada à medição, e toda leitura de HRV precisa de um sensor de frequência cardíaca pareado, como uma cinta peitoral ou o próprio sensor de dedo. Sem ele, o marcador de ritmo continua funcionando, mas só como orientação respiratória. Se você se importa mais com números precisos do que com uma prática guiada, ele é excelente.",
+          "pros": [
+            "Marcador de ritmo respiratório de verdade com feedback de HRV ao vivo",
+            "Boa precisão de medição; app principal gratuito"
+          ],
+          "cons": [
+            "Precisa de cinta peitoral ou sensor de dedo para qualquer leitura de HRV",
+            "Mais ferramenta de dados do que prática guiada e progressiva"
+          ]
+        },
+        {
+          "tag": "Melhor para uma leitura matinal validada",
+          "blurb": "O HRV4Training lê a HRV pela câmera do celular, sem wearable, e seu foco é uma leitura matinal validada por pesquisas — não um circuito de respirar e ver a resposta. O biofeedback respiratório ao vivo fica em um app separado do mesmo desenvolvedor, o HRV4Biofeedback, então ter os três significa usar dois apps.",
+          "pros": [
+            "HRV pela câmera, sem wearable; validado por pesquisas",
+            "O app complementar HRV4Biofeedback adiciona respiração com ritmo marcado e feedback ao vivo"
+          ],
+          "cons": [
+            "O circuito respiratório é um app separado, não faz parte do HRV4Training",
+            "Construído em torno do número diário, não de uma prática guiada"
+          ]
+        },
+        {
+          "tag": "Melhor biblioteca de respiração, sem circuito de HRV documentado",
+          "blurb": "O Breathwrk (agora parte da Peloton) tem uma das maiores variedades de exercícios de respiração guiados, no iOS, no Android e na web. Seus materiais oficiais atualmente não descrevem feedback de frequência cardíaca ou de HRV, então considere-o um app de conteúdo de respiração: excelente para técnica, não um circuito de HRV ao vivo.",
+          "pros": [
+            "Grande biblioteca de exercícios e aulas de respiração guiada",
+            "iOS, Android e web; plano gratuito, incluído em algumas assinaturas da Peloton"
+          ],
+          "cons": [
+            "Nenhum feedback de HRV ou de frequência cardíaca documentado hoje",
+            "Conteúdo de respiração em primeiro lugar; a medição fica em outro lugar"
+          ]
+        }
+      ],
+      "bottomLine": "Se você quer respiração e feedback cardíaco em tempo real unidos em um único circuito guiado, o ONDA com um Apple Watch lidera. Se quer precisão de medição bruta com um marcador de ritmo, o Elite HRV com cinta peitoral ou sensor de dedo. Para uma leitura diária validada pela ciência, o HRV4Training (mais o HRV4Biofeedback para o circuito respiratório). Para a maior biblioteca de exercícios de respiração, o Breathwrk. E nenhum deles é um monitor passivo de dia inteiro — para a tendência noturna da HRV, combine um deles com um Apple Watch, Oura ou WHOOP.",
+      "faq": [
+        {
+          "q": "Qual app combina respiração, HRV e feedback em tempo real?",
+          "a": "O ONDA foi construído em torno exatamente desse circuito — ele guia sua respiração e, com um Apple Watch, mostra seu pulso e uma pontuação de coerência ao vivo respondendo durante a sessão, dentro de uma prática guiada e sem cinta peitoral. O Elite HRV também combina os três, mas é voltado à medição e precisa de cinta peitoral ou sensor de dedo. O HRV4Training divide isso em dois apps (HRV4Training para a leitura, HRV4Biofeedback para o circuito respiratório), e o Breathwrk é uma biblioteca de respiração sem feedback de HRV documentado."
+        },
+        {
+          "q": "Por que tão poucos apps fazem os três?",
+          "a": "Porque a maioria é feita para uma única tarefa. Apps de meditação e respiração guiam, mas não medem; monitores medem, mas não guiam uma prática ao vivo; e fechar o circuito — marcar o ritmo da respiração enquanto devolve dados cardíacos em tempo real — é mais difícil de construir e exige leitura biométrica de baixa latência. Os apps que conseguem os três são a exceção, e é exatamente por isso que vale a pena procurar essa interseção."
+        },
+        {
+          "q": "Preciso de um wearable para combinar respiração e feedback de HRV?",
+          "a": "Para o circuito ao vivo, sim. No ONDA, o biofeedback respiratório em tempo real precisa de um Apple Watch; o Elite HRV precisa de cinta peitoral ou do sensor de dedo. Só com um iPhone você pode começar: a câmera do ONDA faz uma verificação do pulso e da frequência respiratória, e o HRV4Training uma leitura matinal pela câmera — e a linha de base do ONDA usa dados do Apple Health de qualquer dispositivo que sincronize lá. Adicione um wearable quando quiser o feedback ao vivo."
+        }
+      ]
+    }
+  }
+}

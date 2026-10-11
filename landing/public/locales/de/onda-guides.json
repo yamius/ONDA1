@@ -1,0 +1,107 @@
+{
+  "ui": {
+    "home": "Startseite",
+    "compare": "Vergleiche",
+    "topPicks": "TOP-EMPFEHLUNGEN",
+    "transparency": "Dies ist der eigene Ratgeber von ONDA Life, und ONDA ist eine der Apps darin — deshalb setzen wir sie nur dort auf Platz 1, wo sie wirklich vorne liegt, nennen, wo jeder Konkurrent gewinnt, und sagen unten offen, worin ONDA nicht die Beste ist.",
+    "capsHeading": "Funktionen auf einen Blick",
+    "yes": "ja",
+    "limited": "eingeschränkt",
+    "no": "nein",
+    "capability": "Funktion",
+    "ourApp": "Unsere App",
+    "pros": "Vorteile",
+    "cons": "Nachteile",
+    "bottomLine": "FAZIT",
+    "questions": "Fragen",
+    "seeExactly": "Sieh dir genau an,",
+    "whatMeasures": "was ONDA misst",
+    "howItWorks": "wie es funktioniert",
+    "moreOn": ", und weitere Direktvergleiche findest du im",
+    "compareHub": "Vergleichsbereich"
+  },
+  "capabilities": [
+    "HRV-Biofeedback in Echtzeit (Live-Rückmeldung beim Atmen)",
+    "Live-Kohärenzwert",
+    "Geführtes Atmen / Atmen im vorgegebenen Tempo",
+    "Funktioniert ohne Wearable oder Brustgurt (iPhone-Kamera)",
+    "Apple-Watch-Unterstützung",
+    "Verlauf der Ruhe-HRV über die Zeit",
+    "Schlaf- / nächtliches Readiness-Tracking",
+    "Große Meditations- / Schlafbibliothek",
+    "Strukturiertes, aufbauendes Programm"
+  ],
+  "roundups": {
+    "apps-combining-breathing-hrv-realtime-feedback": {
+      "title": "Apps für Atmung, HRV & Echtzeit-Feedback",
+      "description": "Apps, die deine Atmung anleiten, dein Herz auslesen und live zurückmelden — von ONDA gerankt, mit Vor- und Nachteilen. Alle drei können nur wenige.",
+      "intro": "Viele Apps leiten die Atmung an. Viele Apps lesen die Herzfrequenzvariabilität (HRV) aus. Nur sehr wenige schließen den Kreis — sie geben das Atemtempo vor und zeigen dir dabei, wie dein Herzrhythmus in Echtzeit reagiert, sodass Atmung und HRV in einer Live-Feedback-Sitzung zusammenkommen. Genau diese Schnittmenge ist das Nützliche und Seltene. Hier sind die Apps, die ihr am nächsten kommen — als Rangliste, mit dem, was jede braucht und für wen sie wirklich ist.",
+      "entries": [
+        {
+          "tag": "Beste Komplettlösung: Atmung + HRV + Live-Feedback",
+          "blurb": "ONDA ist genau um diesen Kreislauf herum gebaut: Die App leitet deine Atmung an und zeigt mit einer Apple Watch, wie Puls und ein Live-Kohärenzwert in Echtzeit reagieren — innerhalb einer geführten, aufbauenden Praxis mit 8 Stufen. Ohne Uhr kannst du mit der iPhone-Kamera starten (ein Check von Puls und Atemfrequenz), und deine 14-Tage-Baseline stammt aus Apple Health — von einer Apple Watch oder jedem Gerät, das Herzdaten dorthin synchronisiert. Kein Brustgurt, kostenlos starten.",
+          "pros": [
+            "Atemanleitung, HRV-Kontext und Live-Feedback in einer App — ohne Brustgurt",
+            "Live-Puls und Kohärenz während der Praxis mit einer Apple Watch",
+            "Geführte, aufbauende Praxis statt eines reinen Datentools"
+          ],
+          "cons": [
+            "Atem-Biofeedback in Echtzeit braucht eine Apple Watch; die Kamera liefert einen Check, nicht den Live-Kreislauf",
+            "Derzeit nur iOS (für Android gibt es eine Warteliste); 3 kostenlose Übungen, danach ein Abo"
+          ]
+        },
+        {
+          "tag": "Am besten für datenorientierte Nutzer, die einen Pacer wollen",
+          "blurb": "Elite HRV verbindet tatsächlich alle drei — einen Resonanz-Atempacer mit Live-HRV-Feedback —, ist aber in erster Linie ein Messwerkzeug, und jede HRV-Messung braucht einen gekoppelten Herzfrequenzsensor, etwa einen Brustgurt oder den hauseigenen Fingersensor. Ohne ihn funktioniert der Pacer weiterhin, aber nur als Atemanleitung. Wenn dir präzise Zahlen wichtiger sind als eine geführte Praxis, ist sie hervorragend.",
+          "pros": [
+            "Echter Atempacer mit Live-HRV-Feedback",
+            "Hohe Messgenauigkeit; kostenlose Basis-App"
+          ],
+          "cons": [
+            "Braucht für jede HRV-Messung einen Brustgurt oder Fingersensor",
+            "Eher Datentool als geführte, aufbauende Praxis"
+          ]
+        },
+        {
+          "tag": "Am besten für eine validierte Morgenmessung",
+          "blurb": "HRV4Training liest die HRV über die Handykamera aus, ganz ohne Wearable, und ihr Kern ist eine wissenschaftlich validierte Morgenmessung — kein „Atmen und zusehen, wie es reagiert“-Kreislauf. Live-Atem-Biofeedback steckt in einer separaten App desselben Entwicklers, HRV4Biofeedback, für alle drei brauchst du also zwei Apps.",
+          "pros": [
+            "Kamerabasierte HRV, kein Wearable; wissenschaftlich validiert",
+            "Begleit-App HRV4Biofeedback ergänzt Atmen im vorgegebenen Tempo mit Live-Feedback"
+          ],
+          "cons": [
+            "Der Atem-Kreislauf ist eine separate App, nicht Teil von HRV4Training",
+            "Auf die tägliche Zahl ausgelegt, nicht auf eine geführte Praxis"
+          ]
+        },
+        {
+          "tag": "Beste Atembibliothek, kein dokumentierter HRV-Kreislauf",
+          "blurb": "Breathwrk (inzwischen Teil von Peloton) bietet eine der größten Auswahlen an geführten Atemübungen — auf iOS, Android und im Web. Die offiziellen Unterlagen beschreiben derzeit kein Herzfrequenz- oder HRV-Feedback, betrachte sie also als Atem-Content-App: hervorragend für die Technik, aber kein Live-HRV-Kreislauf.",
+          "pros": [
+            "Große Bibliothek geführter Atemübungen und Kurse",
+            "iOS, Android und Web; kostenlose Stufe, in manchen Peloton-Mitgliedschaften enthalten"
+          ],
+          "cons": [
+            "Derzeit kein dokumentiertes HRV- oder Herzfrequenz-Feedback",
+            "Vor allem Atem-Content; gemessen wird woanders"
+          ]
+        }
+      ],
+      "bottomLine": "Wenn du Atmung und Echtzeit-Herzfeedback in einem geführten Kreislauf vereint haben willst, liegt ONDA mit Apple Watch vorne. Willst du reine Messgenauigkeit mit Pacer: Elite HRV mit Brustgurt oder Fingersensor. Für eine wissenschaftlich validierte tägliche Messung: HRV4Training (plus HRV4Biofeedback für den Atem-Kreislauf). Für die größte Bibliothek an Atemübungen: Breathwrk. Und keine davon ist ein passiver Ganztages-Tracker — für den nächtlichen HRV-Verlauf kombiniere sie mit einer Apple Watch, Oura oder WHOOP.",
+      "faq": [
+        {
+          "q": "Welche App verbindet Atmung, HRV und Echtzeit-Feedback?",
+          "a": "ONDA ist genau um diesen Kreislauf herum gebaut — die App leitet deine Atmung an und zeigt mit einer Apple Watch, wie Puls und ein Live-Kohärenzwert während der Sitzung reagieren, innerhalb einer geführten Praxis und ohne Brustgurt. Elite HRV verbindet ebenfalls alle drei, ist aber messorientiert und braucht einen Brustgurt oder Fingersensor. HRV4Training teilt es auf zwei Apps auf (HRV4Training für die Messung, HRV4Biofeedback für den Atem-Kreislauf), und Breathwrk ist eine Atembibliothek ohne dokumentiertes HRV-Feedback."
+        },
+        {
+          "q": "Warum schaffen so wenige Apps alle drei?",
+          "a": "Weil die meisten für eine einzige Aufgabe gebaut sind. Meditations- und Atem-Apps leiten dich an, messen aber nicht; Tracker messen, leiten aber keine Live-Praxis an; und den Kreis zu schließen — das Atemtempo vorzugeben und gleichzeitig Herzdaten in Echtzeit zurückzumelden — ist schwieriger umzusetzen und erfordert eine biometrische Auslesung mit geringer Latenz. Apps, die alle drei schaffen, sind die Ausnahme, und genau deshalb lohnt es sich, nach dieser Schnittmenge zu suchen."
+        },
+        {
+          "q": "Brauche ich ein Wearable, um Atmung und HRV-Feedback zu verbinden?",
+          "a": "Für den Live-Kreislauf ja. Bei ONDA braucht Atem-Biofeedback in Echtzeit eine Apple Watch; Elite HRV braucht einen Brustgurt oder den eigenen Fingersensor. Mit einem iPhone allein kannst du starten: Die Kamera von ONDA liefert einen Check von Puls und Atemfrequenz, HRV4Training eine Morgenmessung per Kamera — und die Baseline von ONDA nutzt Apple-Health-Daten von jedem Gerät, das dorthin synchronisiert. Nimm ein Wearable dazu, wenn du das Live-Feedback willst."
+        }
+      ]
+    }
+  }
+}

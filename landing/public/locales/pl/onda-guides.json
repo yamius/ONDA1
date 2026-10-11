@@ -1,0 +1,107 @@
+{
+  "ui": {
+    "home": "Strona główna",
+    "compare": "Porównania",
+    "topPicks": "NAJLEPSZE WYBORY",
+    "transparency": "To własny przewodnik ONDA Life, a ONDA jest jedną z opisanych w nim aplikacji — dlatego dajemy jej 1. miejsce tylko tam, gdzie naprawdę prowadzi, wskazujemy, w czym wygrywa każdy konkurent, i poniżej mówimy wprost, w czym ONDA nie jest najlepsza.",
+    "capsHeading": "Funkcje w skrócie",
+    "yes": "tak",
+    "limited": "ograniczone",
+    "no": "nie",
+    "capability": "Funkcja",
+    "ourApp": "Nasza aplikacja",
+    "pros": "Zalety",
+    "cons": "Wady",
+    "bottomLine": "PODSUMOWANIE",
+    "questions": "Pytania",
+    "seeExactly": "Zobacz dokładnie,",
+    "whatMeasures": "co mierzy ONDA",
+    "howItWorks": "jak to działa",
+    "moreOn": ", a więcej bezpośrednich porównań znajdziesz w",
+    "compareHub": "centrum porównań"
+  },
+  "capabilities": [
+    "Biofeedback HRV w czasie rzeczywistym (informacja zwrotna na żywo podczas oddychania)",
+    "Wskaźnik koherencji na żywo",
+    "Oddychanie prowadzone / w zadanym tempie",
+    "Działa bez urządzenia ubieralnego i pasa piersiowego (aparat iPhone’a)",
+    "Obsługa Apple Watch",
+    "Trend HRV w spoczynku w czasie",
+    "Śledzenie snu / nocnej gotowości",
+    "Duża biblioteka medytacji / treści do snu",
+    "Uporządkowany program z progresją"
+  ],
+  "roundups": {
+    "apps-combining-breathing-hrv-realtime-feedback": {
+      "title": "Aplikacje łączące oddech, HRV i feedback na żywo",
+      "description": "Aplikacje, które prowadzą oddech, odczytują serce i pokazują reakcję na żywo — ranking ONDA z uczciwymi zaletami i wadami. Wszystkie trzy potrafi niewiele.",
+      "intro": "Wiele aplikacji prowadzi oddech. Wiele odczytuje zmienność rytmu serca (HRV). Bardzo niewiele zamyka pętlę — nadaje tempo oddechu i jednocześnie pokazuje, jak rytm serca reaguje w czasie rzeczywistym, tak że oddech i HRV spotykają się w jednej sesji informacji zwrotnej na żywo. To właśnie to połączenie jest przydatne i rzadkie. Oto aplikacje, które są najbliżej, w kolejności rankingu — z tym, czego każda potrzebuje i dla kogo naprawdę jest.",
+      "entries": [
+        {
+          "tag": "Najlepsza wszechstronna: oddech + HRV + reakcja na żywo",
+          "blurb": "ONDA jest zbudowana właśnie wokół tej pętli: prowadzi oddech, a z Apple Watch pokazuje, jak w czasie rzeczywistym reagują puls i wskaźnik koherencji na żywo — w ramach prowadzonej, 8-poziomowej praktyki z progresją. Bez zegarka możesz zacząć od aparatu iPhone’a (pomiar pulsu i częstości oddechu), a 14-dniowa linia bazowa pochodzi z Apple Health — z Apple Watch lub dowolnego urządzenia, które synchronizuje tam dane o sercu. Bez pasa piersiowego, na start za darmo.",
+          "pros": [
+            "Prowadzenie oddechu, kontekst HRV i reakcja na żywo w jednej aplikacji — bez pasa piersiowego",
+            "Puls i koherencja na żywo podczas praktyki z Apple Watch",
+            "Prowadzona praktyka z progresją, a nie surowe narzędzie do danych"
+          ],
+          "cons": [
+            "Biofeedback oddechowy w czasie rzeczywistym wymaga Apple Watch; aparat daje pomiar kontrolny, nie pętlę na żywo",
+            "Na razie tylko iOS (Android — lista oczekujących); 3 darmowe praktyki, potem subskrypcja"
+          ]
+        },
+        {
+          "tag": "Najlepsza dla nastawionych na dane, którzy chcą pacera",
+          "blurb": "Elite HRV naprawdę łączy wszystkie trzy elementy — rezonansowy pacer oddechowy z informacją zwrotną HRV na żywo — ale to przede wszystkim narzędzie pomiarowe, a każdy odczyt HRV wymaga sparowanego czujnika tętna, np. pasa piersiowego lub własnego czujnika na palec. Bez niego pacer działa, ale tylko jako prowadzenie oddechu. Jeśli precyzyjne liczby są dla ciebie ważniejsze niż prowadzona praktyka, to świetny wybór.",
+          "pros": [
+            "Prawdziwy pacer oddechowy z informacją zwrotną HRV na żywo",
+            "Wysoka precyzja pomiarów; darmowa podstawowa aplikacja"
+          ],
+          "cons": [
+            "Każdy odczyt HRV wymaga pasa piersiowego lub czujnika na palec",
+            "Bardziej narzędzie do danych niż prowadzona praktyka z progresją"
+          ]
+        },
+        {
+          "tag": "Najlepsza do zwalidowanego porannego pomiaru",
+          "blurb": "HRV4Training odczytuje HRV aparatem telefonu bez urządzenia ubieralnego, a jej sednem jest zwalidowany naukowo poranny pomiar — nie pętla „oddychaj i patrz, jak reaguje”. Biofeedback oddechowy na żywo znajduje się w osobnej aplikacji tego samego twórcy, HRV4Biofeedback, więc wszystkie trzy elementy oznaczają dwie aplikacje.",
+          "pros": [
+            "HRV z aparatu, bez urządzenia ubieralnego; zwalidowana naukowo",
+            "Towarzysząca aplikacja HRV4Biofeedback dodaje oddychanie w zadanym tempie z informacją zwrotną na żywo"
+          ],
+          "cons": [
+            "Pętla oddechowa to osobna aplikacja, nie część HRV4Training",
+            "Zbudowana wokół codziennej liczby, a nie prowadzonej praktyki"
+          ]
+        },
+        {
+          "tag": "Najlepsza biblioteka oddechu, bez udokumentowanej pętli HRV",
+          "blurb": "Breathwrk (obecnie część Peloton) ma jeden z najszerszych wyborów prowadzonych ćwiczeń oddechowych — na iOS, Androidzie i w przeglądarce. Jej oficjalne materiały nie opisują obecnie informacji zwrotnej z tętna ani HRV, więc traktuj ją jako aplikację z treściami oddechowymi: świetną do techniki, ale nie pętlę HRV na żywo.",
+          "pros": [
+            "Duża biblioteka prowadzonych ćwiczeń oddechowych i zajęć",
+            "iOS, Android i przeglądarka; darmowy plan, w pakiecie z niektórymi członkostwami Peloton"
+          ],
+          "cons": [
+            "Obecnie brak udokumentowanej informacji zwrotnej z HRV lub tętna",
+            "Przede wszystkim treści oddechowe; mierzysz gdzie indziej"
+          ]
+        }
+      ],
+      "bottomLine": "Jeśli chcesz, by oddech i informacja zwrotna z serca w czasie rzeczywistym połączyły się w jedną prowadzoną pętlę, prowadzi ONDA z Apple Watch. Jeśli chcesz surowej precyzji pomiaru z pacerem — Elite HRV z pasem piersiowym lub czujnikiem na palec. Do zwalidowanego naukowo codziennego pomiaru — HRV4Training (plus HRV4Biofeedback do pętli oddechowej). Do największej biblioteki ćwiczeń oddechowych — Breathwrk. I żadna z nich nie jest pasywnym całodobowym trackerem — do nocnego trendu HRV połącz ją z Apple Watch, Oura lub WHOOP.",
+      "faq": [
+        {
+          "q": "Która aplikacja łączy oddech, HRV i informację zwrotną w czasie rzeczywistym?",
+          "a": "ONDA jest zbudowana właśnie wokół tej pętli — prowadzi oddech, a z Apple Watch pokazuje, jak podczas sesji reagują puls i wskaźnik koherencji na żywo, w ramach prowadzonej praktyki i bez pasa piersiowego. Elite HRV również łączy te trzy elementy, ale jest nastawiona na pomiar i wymaga pasa piersiowego lub czujnika na palec. HRV4Training dzieli to na dwie aplikacje (HRV4Training do pomiaru, HRV4Biofeedback do pętli oddechowej), a Breathwrk to biblioteka oddechu bez udokumentowanej informacji zwrotnej HRV."
+        },
+        {
+          "q": "Dlaczego tak niewiele aplikacji robi wszystkie trzy rzeczy?",
+          "a": "Bo większość powstaje do jednego zadania. Aplikacje do medytacji i oddechu prowadzą, ale nie mierzą; trackery mierzą, ale nie prowadzą praktyki na żywo; a zamknięcie pętli — nadawanie tempa oddechu przy jednoczesnym zwracaniu danych o sercu w czasie rzeczywistym — jest trudniejsze do zbudowania i wymaga odczytu biometrii z niskim opóźnieniem. Aplikacje, którym udaje się wszystkie trzy, to wyjątek — i właśnie dlatego warto szukać tego połączenia."
+        },
+        {
+          "q": "Czy potrzebuję urządzenia ubieralnego, by łączyć oddech z informacją zwrotną HRV?",
+          "a": "Do pętli na żywo — tak. W ONDA biofeedback oddechowy w czasie rzeczywistym wymaga Apple Watch; Elite HRV potrzebuje pasa piersiowego lub swojego czujnika na palec. Z samym iPhone’em możesz zacząć: aparat w ONDA daje pomiar pulsu i częstości oddechu, a HRV4Training poranny pomiar aparatem — a linia bazowa ONDA korzysta z danych Apple Health z dowolnego urządzenia, które się tam synchronizuje. Dodaj urządzenie ubieralne, gdy zechcesz informacji zwrotnej na żywo."
+        }
+      ]
+    }
+  }
+}

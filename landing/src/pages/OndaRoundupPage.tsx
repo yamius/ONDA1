@@ -7,7 +7,10 @@
  * is ranked #1 only in categories where it genuinely leads, and the bottom
  * line states plainly what ONDA is NOT best at and who to buy instead.
  *
- * EN-only. Self-contained meta + ItemList + FAQPage JSON-LD.
+ * Localized at /<lang>/compare/<slug> from public/locales/<lang>/onda-guides.json
+ * (schema `roundups` in src/data/i18n-schema.ts; released via the queue). Never in
+ * reviews.json — ONDA's own guides stay out of the independent /reviews system.
+ * Self-contained meta + ItemList + FAQPage JSON-LD.
  */
 import AppStoreCTA, { ctaVariantForCompareSlug } from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
@@ -16,6 +19,8 @@ import { Link, useLocation, useParams } from 'react-router-dom'
 import { getRoundup, CAP_PROFILES } from '../data/onda-roundups'
 import { CAPABILITIES, type Cap } from '../data/onda-vs'
 import { NotFoundPage } from './NotFoundPage'
+import { useTranslation } from 'react-i18next'
+import { langFromPath, langHref, homePathFor } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
 
@@ -51,11 +56,39 @@ function setOrCreateScript(id: string, json: object) {
 export function OndaRoundupPage() {
   const { slug } = useParams<{ slug: string }>()
   const location = useLocation()
-  const roundup = slug ? getRoundup(slug) : undefined
+  const lang = langFromPath(location.pathname)
+  const { t } = useTranslation('onda-guides')
+  const base = slug ? getRoundup(slug) : undefined
+  const ui = (k: string, d: string) => t(`ui.${k}`, { defaultValue: d })
+  // Localized copy over the EN source (text only — ranks, links, caps stay EN data).
+  const roundup = (() => {
+    if (!base || lang === 'en') return base
+    const k = `roundups.${base.slug}`
+    const tr = (f: string, d: string) => t(`${k}.${f}`, { defaultValue: d })
+    const ents = t(`${k}.entries`, { returnObjects: true, defaultValue: [] }) as { tag?: string; blurb?: string; pros?: string[]; cons?: string[] }[]
+    const faq = t(`${k}.faq`, { returnObjects: true, defaultValue: [] }) as { q: string; a: string }[]
+    return {
+      ...base,
+      title: tr('title', base.title),
+      description: tr('description', base.description),
+      intro: tr('intro', base.intro),
+      bottomLine: tr('bottomLine', base.bottomLine),
+      entries: base.entries.map((e, i) => ({
+        ...e,
+        tag: ents[i]?.tag ?? e.tag,
+        blurb: ents[i]?.blurb ?? e.blurb,
+        pros: ents[i]?.pros ?? e.pros,
+        cons: ents[i]?.cons ?? e.cons,
+      })),
+      faq: Array.isArray(faq) && faq.length ? faq : base.faq,
+    }
+  })()
+  const capLabels = t('capabilities', { returnObjects: true, defaultValue: [] }) as string[]
+  const capLabel = (cap: string, i: number) => (lang !== 'en' && Array.isArray(capLabels) && capLabels[i]) || cap
 
   useEffect(() => {
     if (!roundup) return
-    const pageUrl = `${SITE_URL}/compare/${roundup.slug}`
+    const pageUrl = `${SITE_URL}${lang === 'en' ? '' : `/${lang}`}/compare/${roundup.slug}`
     const title = `${roundup.title} (2026) | ONDA Life`
     const desc = roundup.description
     document.title = title
@@ -79,7 +112,7 @@ export function OndaRoundupPage() {
         '@type': 'ListItem',
         position: e.rank,
         name: e.name,
-        url: e.href.startsWith('/') ? `${SITE_URL}${e.href}` : e.href,
+        url: e.href.startsWith('/') ? `${SITE_URL}${langHref(e.href, lang)}` : e.href,
       })),
     })
     setOrCreateScript('ld-roundup-faq', {
@@ -107,38 +140,36 @@ export function OndaRoundupPage() {
     <div className="mx-auto max-w-4xl px-4 pb-16 pt-6 md:px-6">
       {/* Breadcrumb */}
       <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
-        <Link to="/" className="transition-colors hover:text-white/50">Home</Link>
+        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">{ui('home', 'Home')}</Link>
         <span>/</span>
-        <Link to="/compare" className="transition-colors hover:text-white/50">Compare</Link>
+        <Link to={langHref('/compare', lang)} className="transition-colors hover:text-white/50">{ui('compare', 'Compare')}</Link>
         <span>/</span>
         <span className="text-terminal-green/60" aria-current="page">{roundup.title}</span>
       </nav>
 
-      <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">[ TOP PICKS ]</div>
+      <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">[ {ui('topPicks', 'TOP PICKS')} ]</div>
       <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">{roundup.title}</h1>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/55">{roundup.intro}</p>
 
       {/* Transparency banner */}
       <div className="mb-10 rounded-lg border border-white/10 bg-white/[0.02] p-4 font-mono text-xs leading-relaxed text-white/50">
-        This is ONDA Life&rsquo;s own guide, and ONDA is one of the apps in it — so we rank it #1 only
-        where it genuinely leads, name where each competitor wins, and say plainly below what ONDA is
-        <em> not</em> best at.
+        {ui('transparency', 'This is ONDA Life’s own guide, and ONDA is one of the apps in it — so we rank it #1 only where it genuinely leads, name where each competitor wins, and say plainly below what ONDA is not best at.')}
       </div>
 
       {/* Capabilities at a glance — the same matrix as the /compare hub, scoped
           to this list's apps. Reuses CAP_PROFILES so it can't drift. */}
       <section className="mb-10">
-        <h2 className="mb-1 text-lg font-bold tracking-tight md:text-xl">Capabilities at a glance</h2>
+        <h2 className="mb-1 text-lg font-bold tracking-tight md:text-xl">{ui('capsHeading', 'Capabilities at a glance')}</h2>
         <p className="mb-3 font-mono text-[11px] text-white/45">
-          <span className="text-terminal-green">✓</span> yes ·{' '}
-          <span className="text-amber-300">~</span> limited ·{' '}
-          <span className="text-white/30">—</span> no
+          <span className="text-terminal-green">✓</span> {ui('yes', 'yes')} ·{' '}
+          <span className="text-amber-300">~</span> {ui('limited', 'limited')} ·{' '}
+          <span className="text-white/30">—</span> {ui('no', 'no')}
         </p>
         <div className="overflow-x-auto">
           <table className="w-full border-collapse text-left text-sm">
             <thead>
               <tr className="border-b border-white/20 font-mono text-[11px] uppercase tracking-wider text-white/50">
-                <th className="py-3 pr-4 font-medium">Capability</th>
+                <th className="py-3 pr-4 font-medium">{ui('capability', 'Capability')}</th>
                 {roundup.entries.map((e) => (
                   <th
                     key={e.rank}
@@ -150,9 +181,9 @@ export function OndaRoundupPage() {
               </tr>
             </thead>
             <tbody>
-              {CAPABILITIES.map((cap) => (
+              {CAPABILITIES.map((cap, ci) => (
                 <tr key={cap} className="border-b border-white/10">
-                  <td className="min-w-[220px] py-3 pr-4 align-top text-white/75">{cap}</td>
+                  <td className="min-w-[220px] py-3 pr-4 align-top text-white/75">{capLabel(cap, ci)}</td>
                   {roundup.entries.map((e) => {
                     const v = CAP_PROFILES[e.capsKey][cap]
                     return (
@@ -179,12 +210,12 @@ export function OndaRoundupPage() {
           >
             <div className="mb-2 flex items-baseline gap-3">
               <span className="font-mono text-lg font-bold text-terminal-green">#{e.rank}</span>
-              <Link to={e.href} className="text-lg font-bold text-white hover:text-terminal-green">
+              <Link to={langHref(e.href, lang)} className="text-lg font-bold text-white hover:text-terminal-green">
                 {e.name}
               </Link>
               {e.isOnda && (
                 <span className="rounded border border-terminal-green/40 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-terminal-green">
-                  Our app
+                  {ui('ourApp', 'Our app')}
                 </span>
               )}
             </div>
@@ -192,7 +223,7 @@ export function OndaRoundupPage() {
             <p className="mb-3 font-mono text-sm leading-relaxed text-white/70">{e.blurb}</p>
             <div className="grid gap-3 sm:grid-cols-2">
               <div>
-                <div className="mb-1 font-mono text-[10px] uppercase tracking-widest text-terminal-green/70">Pros</div>
+                <div className="mb-1 font-mono text-[10px] uppercase tracking-widest text-terminal-green/70">{ui('pros', 'Pros')}</div>
                 <ul className="space-y-1 font-mono text-xs leading-relaxed text-white/65">
                   {e.pros.map((p) => (
                     <li key={p} className="flex gap-2"><span className="text-terminal-green">+</span><span>{p}</span></li>
@@ -200,7 +231,7 @@ export function OndaRoundupPage() {
                 </ul>
               </div>
               <div>
-                <div className="mb-1 font-mono text-[10px] uppercase tracking-widest text-amber-300/80">Cons</div>
+                <div className="mb-1 font-mono text-[10px] uppercase tracking-widest text-amber-300/80">{ui('cons', 'Cons')}</div>
                 <ul className="space-y-1 font-mono text-xs leading-relaxed text-white/55">
                   {e.cons.map((c) => (
                     <li key={c} className="flex gap-2"><span className="text-amber-300">−</span><span>{c}</span></li>
@@ -214,15 +245,15 @@ export function OndaRoundupPage() {
 
       {/* Bottom line — the honest boundary */}
       <section className="mb-10 rounded-xl border border-terminal-green/30 bg-terminal-green/5 p-6">
-        <p className="mb-2 font-mono text-xs tracking-widest text-terminal-green/80">THE BOTTOM LINE</p>
+        <p className="mb-2 font-mono text-xs tracking-widest text-terminal-green/80">{ui('bottomLine', 'THE BOTTOM LINE')}</p>
         <p className="text-sm leading-relaxed text-white/85">{roundup.bottomLine}</p>
       </section>
 
-      <AppStoreCTA ct={storeCt('cmp', roundup.slug)} variant={ctaVariantForCompareSlug(roundup.slug)} />
+      <AppStoreCTA ct={storeCt('cmp', roundup.slug, lang)} variant={ctaVariantForCompareSlug(roundup.slug)} lang={lang} />
 
       {/* FAQ */}
       <section className="mb-10">
-        <h2 className="mb-6 text-xl font-bold tracking-tight md:text-2xl">Questions</h2>
+        <h2 className="mb-6 text-xl font-bold tracking-tight md:text-2xl">{ui('questions', 'Questions')}</h2>
         <div className="space-y-6">
           {roundup.faq.map((f) => (
             <div key={f.q} className="border-b border-white/10 pb-6">
@@ -235,10 +266,10 @@ export function OndaRoundupPage() {
 
       {/* Cross-links */}
       <section className="rounded-lg border border-white/10 bg-white/[0.02] p-6 font-mono text-sm leading-relaxed text-white/70">
-        See exactly{' '}
-        <Link to="/measurements" className="text-terminal-green hover:underline">what ONDA measures</Link>,{' '}
-        <Link to="/how-it-works" className="text-terminal-green hover:underline">how it works</Link>, and more head-to-heads on the{' '}
-        <Link to="/compare" className="text-terminal-green hover:underline">compare hub</Link>.
+        {ui('seeExactly', 'See exactly')}{' '}
+        <Link to={langHref('/measurements', lang)} className="text-terminal-green hover:underline">{ui('whatMeasures', 'what ONDA measures')}</Link>,{' '}
+        <Link to={langHref('/how-it-works', lang)} className="text-terminal-green hover:underline">{ui('howItWorks', 'how it works')}</Link>{ui('moreOn', ', and more head-to-heads on the')}{' '}
+        <Link to={langHref('/compare', lang)} className="text-terminal-green hover:underline">{ui('compareHub', 'compare hub')}</Link>.
       </section>
     </div>
   )
