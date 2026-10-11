@@ -7,7 +7,7 @@ const ultrahumanRingPro: ToolReviewInput = {
   category: 'hrv-wearable',
   productType: 'Smart ring',
   description:
-    'ONDA review of the Ultrahuman Ring Pro — the redesigned, subscription-free successor to the Ring Air with a category-leading 15-day battery, now available in the US where the Ring Air is banned.',
+    'ONDA review of the Ultrahuman Ring Pro — the subscription-free Ring Air successor with a 15-day battery, sold in the US, where the Ring Air is banned.',
   verdict:
     'The redesigned, subscription-free successor to the Ring Air — a category-leading 15-day battery and on-ring processing, and (unlike the Ring Air) available in the US. Promising, but too new for a long-term reliability verdict from a brand whose last ring had battery problems.',
   summary:
@@ -54,7 +54,7 @@ Honesty matters here. The Ring Air’s defining problem was batteries failing wi
 
 ## Who should buy Ultrahuman Ring Pro?
 
-Choose the Ultrahuman Ring Pro if you want a subscription-free ring with an outstanding battery and you are comfortable being an early adopter of a redesigned product. If you want proven long-term reliability today, the [Oura Ring 4](/reviews/oura-ring-4) or [RingConn Gen 2](/reviews/ringconn-gen-2) are safer, and the [Oura Ring 5](/reviews/oura-ring-5) is the accuracy flagship if you accept its membership.
+Choose the Ultrahuman Ring Pro if you want a subscription-free ring with an outstanding battery and you are comfortable being an early adopter of a redesigned product. If you want a longer track record today, the [RingConn Gen 2](/reviews/ringconn-gen-2) is the safer subscription-free pick, and the [Oura Ring 5](/reviews/oura-ring-5) is the most polished ring if you accept its mandatory membership — earlier Oura generations agreed well with ECG overnight, though the Ring 5 itself has not been separately validated.
 
 ---
 

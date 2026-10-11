@@ -7,7 +7,7 @@ const joovvSolo3: ToolReviewInput = {
   category: 'red-light',
   productType: 'Modular full-panel red + NIR LED therapy device',
   description:
-    'ONDA review of the Joovv Solo 3.0 — a long-running, widely used biohacker red light therapy panel, modular and well built. Scored on irradiance, wavelengths, EMF and value.',
+    'ONDA review of the Joovv Solo 3.0 — a long-running, modular, well-built red light therapy panel. Scored on irradiance, wavelengths, EMF and value.',
   verdict:
     'A long-running, widely used panel — modular, well-built, fairly measured irradiance. Most expensive in this list, mostly justified.',
   summary:

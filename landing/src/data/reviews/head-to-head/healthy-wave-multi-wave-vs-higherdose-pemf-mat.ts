@@ -8,7 +8,7 @@ const healthyWaveVsHigherDose: HeadToHeadInput = {
   description:
     'Healthy Wave Multi-Wave vs HigherDOSE PEMF Mat — multi-modality recovery mats compared. ONDA breaks down the PEMF technical depth vs consumer brand polish trade.',
   intro:
-    'Healthy Wave Multi-Wave and HigherDOSE PEMF Mat are the two multi-modality recovery mats consumers cross-shop in 2026. Both stack PEMF with far-infrared and crystal/mineral layers. The defining difference is depth — Healthy Wave exposes real PEMF parameters and runs higher intensity; HigherDOSE wraps a simpler PEMF stack in a polished consumer brand experience.',
+    'Healthy Wave Multi-Wave and HigherDOSE PEMF Mat are the two multi-modality recovery mats consumers cross-shop in 2026. Both stack PEMF with far-infrared and crystal/mineral layers; Healthy Wave also adds red light. The defining difference is depth — Healthy Wave exposes real PEMF parameters and runs higher intensity; HigherDOSE wraps a simpler PEMF stack in a polished consumer brand experience.',
   verdict:
     'Healthy Wave wins on PEMF technical depth and intensity. HigherDOSE wins on consumer UX and brand polish. For PEMF-first buyers, Healthy Wave is the rational choice.',
   bestForA:
@@ -16,9 +16,9 @@ const healthyWaveVsHigherDose: HeadToHeadInput = {
   bestForB:
     'Choose HigherDOSE PEMF Mat if you want polished consumer UX with multi-modality recovery and you accept lighter PEMF technical depth.',
   axes: [
-    { name: 'PEMF intensity', winner: 'a', note: 'Healthy Wave: configurable across the frequency range used in PEMF research. HigherDOSE: modest intensity across 4 preset levels (3–23 Hz). Healthy Wave wins on raw PEMF capability.' },
+    { name: 'PEMF intensity', winner: 'a', note: 'Healthy Wave: configurable intensity; the maker quotes up to 5+ gauss peak (about 1.5 gauss average at the surface), 1–30 Hz. HigherDOSE: modest intensity across 4 preset levels (3–23 Hz); no gauss figure in our sources. Healthy Wave wins on raw PEMF capability.' },
     { name: 'PEMF programmability', winner: 'a', note: 'Healthy Wave: real parameter exposure (waveform, frequency, intensity). HigherDOSE: 4 preset frequency levels (3–23 Hz), no custom parameters.' },
-    { name: 'Modality stack', winner: 'tie', note: 'Both stack PEMF + infrared + crystals (HigherDOSE: about 20 lb of amethyst and obsidian). Comparable modality coverage.' },
+    { name: 'Modality stack', winner: 'tie', note: 'Both stack PEMF + infrared + crystals (HigherDOSE: about 20 lb of amethyst and obsidian); Healthy Wave also adds red light and negative ions. Comparable core coverage.' },
     { name: 'Consumer UX', winner: 'b', note: 'HigherDOSE: simple preset controls, premium consumer branding, easier daily use. Healthy Wave: more parameters = more setup friction.' },
     { name: 'Warranty', winner: 'a', note: 'Healthy Wave: 5-year limited warranty plus 90-day trial. HigherDOSE: 1-year warranty plus 120-day money-back guarantee. Healthy Wave significantly better on warranty.' },
     { name: 'Price', winner: 'b', note: 'HigherDOSE: $1,295. Healthy Wave: $995–$2,495 by size (full-size Pro $2,495). At full size, HigherDOSE is meaningfully cheaper for consumer-tier multi-modality.' },
