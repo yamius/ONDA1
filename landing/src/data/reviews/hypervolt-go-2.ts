@@ -11,7 +11,7 @@ const hypervoltGo2: ToolReviewInput = {
   verdict:
     'Best premium-brand travel mini — Hypervolt ecosystem in pocket form factor. Reduced stall force is the trade for portability.',
   summary:
-    'Hypervolt Go 2 is the premium travel mini — pocket-sized form factor with 30 lbs stall force, 12 mm amplitude, brushless motor, 2 attachments, Hyperice app integration, $129. Stall force is meaningfully reduced vs Hypervolt 2 Pro (60 lbs); the trade is portability and premium-brand ecosystem at sub-budget pricing. Best fit for users wanting Hyperice quality in travel form.',
+    'Hypervolt Go 2 is the premium travel mini — pocket-sized form factor with 30 lbs stall force, 12 mm amplitude, brushless motor, 2 attachments, Hyperice app integration, $129. Stall force is meaningfully reduced vs Hypervolt 2 Pro (60 lbs); the trade is portability and the premium-brand ecosystem at a mid-range price — $30 above the budget Bob and Brad Q2 Mini ($99). Best fit for users wanting Hyperice quality in travel form.',
   scores: [
     { criterionId: 'stall-force-amplitude', score: 6.5, note: '30 lbs stall force — half of Hypervolt 2 Pro. 12 mm amplitude. Reduced percussion dose by design.' },
     { criterionId: 'build-attachments', score: 7.5, note: 'Brushless motor, 2 attachments only, 1-year warranty. Premium Hyperice build at mini scale.' },

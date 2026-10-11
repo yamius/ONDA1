@@ -49,7 +49,7 @@ Price. $1,699 for a Solo 3.0 (official US store, checked 2026-10-01) is the most
 
 ## Who should buy Joovv Solo 3.0?
 
-Choose Joovv Solo 3.0 if you want the premium modular build and you accept that verification, EMF discipline and modular scalability have a price. If price is the deciding criterion, Mito Red MitoPRO 1500 or Hooga HG500 cover most of the spec at a fraction of the cost; if you want EMF-shielded premium with independent testing, GembaRed Vesta is the cleaner build at slightly lower price.
+Choose Joovv Solo 3.0 if you want the premium modular build and you accept that verification, EMF discipline and modular scalability have a price. If price is the deciding criterion, Mito Red MitoPRO 1500X or Hooga HG500 cover most of the spec at a fraction of the cost; if you want EMF-shielded premium with independent testing, GembaRed Vesta is the cleaner build at slightly lower price.
 
 ---
 
