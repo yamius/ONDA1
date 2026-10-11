@@ -25,7 +25,7 @@ export interface ConnectI18n {
 const H_NIGHT = 'Night-time average (during sleep)'
 const H_WHOOP = 'RMSSD, in milliseconds (in Recovery)'
 const H_POLAR = 'Night-time, first ~4 h of sleep (formula not confirmed)'
-const H_GARMIN = 'Night-time, vs your personal range (formula not confirmed)'
+const H_GARMIN = 'RMSSD, night-time, vs your personal range'
 const H_NCO = 'Not confirmed from official pages'
 const H_NC = 'Not confirmed'
 const H_APPLE = 'SDNN (Apple Health)'
@@ -50,7 +50,7 @@ export const CONNECT_I18N: Record<string, ConnectI18n> = {
     pick: 'Выберите устройство: какой HRV (вариабельность сердечного ритма) оно показывает и можно ли подключить его к ONDA. Страницы устройств пока на английском.',
     thDevice: 'Устройство', thHrv: 'Какой HRV', thStatus: 'Подключение к ONDA', inEnglish: '(на английском)',
     status: { app: 'Уже работает с приложением ONDA', planned: 'Прямое подключение в планах', reviewing: 'На проверке', closed: 'Доступ для разработчиков закрыт', 'no-api': 'Нет публичного веб-API' },
-    hrv: hrv('Среднее за ночь (во сне)', 'RMSSD, в миллисекундах (в Recovery)', 'Ночью, первые ~4 ч сна (формула не подтверждена)', 'Ночью, относительно вашего диапазона (формула не подтверждена)', 'Не подтверждено официальными страницами', 'Не подтверждено', 'SDNN (Apple Health)'),
+    hrv: hrv('Среднее за ночь (во сне)', 'RMSSD, в миллисекундах (в Recovery)', 'Ночью, первые ~4 ч сна (формула не подтверждена)', 'RMSSD, ночью, относительно вашего диапазона', 'Не подтверждено официальными страницами', 'Не подтверждено', 'SDNN (Apple Health)'),
   },
   uk: {
     title: 'Як читати HRV вашого пристрою | ONDA Life',
@@ -60,7 +60,7 @@ export const CONNECT_I18N: Record<string, ConnectI18n> = {
     pick: 'Оберіть пристрій: який HRV (варіабельність серцевого ритму) він показує і чи можна підключити його до ONDA. Сторінки пристроїв поки англійською.',
     thDevice: 'Пристрій', thHrv: 'Який HRV', thStatus: 'Підключення до ONDA', inEnglish: '(англійською)',
     status: { app: 'Вже працює з застосунком ONDA', planned: 'Пряме підключення в планах', reviewing: 'На перевірці', closed: 'Доступ для розробників закрито', 'no-api': 'Немає публічного веб-API' },
-    hrv: hrv('Середнє за ніч (уві сні)', 'RMSSD, у мілісекундах (у Recovery)', 'Вночі, перші ~4 год сну (формула не підтверджена)', 'Вночі, відносно вашого діапазону (формула не підтверджена)', 'Не підтверджено офіційними сторінками', 'Не підтверджено', 'SDNN (Apple Health)'),
+    hrv: hrv('Середнє за ніч (уві сні)', 'RMSSD, у мілісекундах (у Recovery)', 'Вночі, перші ~4 год сну (формула не підтверджена)', 'RMSSD, вночі, відносно вашого діапазону', 'Не підтверджено офіційними сторінками', 'Не підтверджено', 'SDNN (Apple Health)'),
   },
   es: {
     title: 'Cómo leer la HRV de tu dispositivo | ONDA Life',
@@ -70,7 +70,7 @@ export const CONNECT_I18N: Record<string, ConnectI18n> = {
     pick: 'Elige tu dispositivo para ver qué HRV (variabilidad de la frecuencia cardíaca, VFC) muestra y si puede conectarse a ONDA. Las páginas de cada dispositivo están en inglés.',
     thDevice: 'Dispositivo', thHrv: 'HRV que muestra', thStatus: 'Conexión con ONDA', inEnglish: '(en inglés)',
     status: { app: 'Ya funciona con la app ONDA', planned: 'Conexión directa prevista', reviewing: 'En revisión', closed: 'Acceso para desarrolladores cerrado', 'no-api': 'Sin API web pública' },
-    hrv: hrv('Promedio nocturno (durante el sueño)', 'RMSSD, en milisegundos (en Recovery)', 'Nocturna, primeras ~4 h de sueño (fórmula no confirmada)', 'Nocturna, frente a tu rango personal (fórmula no confirmada)', 'No confirmado en páginas oficiales', 'No confirmado', 'SDNN (Apple Health)'),
+    hrv: hrv('Promedio nocturno (durante el sueño)', 'RMSSD, en milisegundos (en Recovery)', 'Nocturna, primeras ~4 h de sueño (fórmula no confirmada)', 'RMSSD, nocturna, frente a tu rango personal', 'No confirmado en páginas oficiales', 'No confirmado', 'SDNN (Apple Health)'),
   },
   pt: {
     title: 'Como ler a HRV do seu dispositivo | ONDA Life',
@@ -80,7 +80,7 @@ export const CONNECT_I18N: Record<string, ConnectI18n> = {
     pick: 'Escolha seu dispositivo para ver qual HRV (variabilidade da frequência cardíaca, VFC) ele mostra e se pode se conectar ao ONDA. As páginas dos dispositivos estão em inglês.',
     thDevice: 'Dispositivo', thHrv: 'HRV exibida', thStatus: 'Conexão com o ONDA', inEnglish: '(em inglês)',
     status: { app: 'Já funciona com o app ONDA', planned: 'Conexão direta planejada', reviewing: 'Em análise', closed: 'Acesso para desenvolvedores fechado', 'no-api': 'Sem API web pública' },
-    hrv: hrv('Média noturna (durante o sono)', 'RMSSD, em milissegundos (no Recovery)', 'Noturna, primeiras ~4 h de sono (fórmula não confirmada)', 'Noturna, em relação à sua faixa pessoal (fórmula não confirmada)', 'Não confirmado em páginas oficiais', 'Não confirmado', 'SDNN (Apple Health)'),
+    hrv: hrv('Média noturna (durante o sono)', 'RMSSD, em milissegundos (no Recovery)', 'Noturna, primeiras ~4 h de sono (fórmula não confirmada)', 'RMSSD, noturna, em relação à sua faixa pessoal', 'Não confirmado em páginas oficiais', 'Não confirmado', 'SDNN (Apple Health)'),
   },
   fr: {
     title: 'Lire la HRV de votre appareil | ONDA Life',
@@ -90,7 +90,7 @@ export const CONNECT_I18N: Record<string, ConnectI18n> = {
     pick: 'Choisissez votre appareil pour voir quelle HRV (variabilité de la fréquence cardiaque, VFC) il affiche et s’il peut se connecter à ONDA. Les pages des appareils sont en anglais.',
     thDevice: 'Appareil', thHrv: 'HRV affichée', thStatus: 'Connexion à ONDA', inEnglish: '(en anglais)',
     status: { app: 'Fonctionne déjà avec l’app ONDA', planned: 'Connexion directe prévue', reviewing: 'En cours d’examen', closed: 'Accès développeurs fermé', 'no-api': 'Pas d’API web publique' },
-    hrv: hrv('Moyenne nocturne (pendant le sommeil)', 'RMSSD, en millisecondes (dans Recovery)', 'Nocturne, ~4 premières h de sommeil (formule non confirmée)', 'Nocturne, par rapport à votre plage personnelle (formule non confirmée)', 'Non confirmé par les pages officielles', 'Non confirmé', 'SDNN (Apple Health)'),
+    hrv: hrv('Moyenne nocturne (pendant le sommeil)', 'RMSSD, en millisecondes (dans Recovery)', 'Nocturne, ~4 premières h de sommeil (formule non confirmée)', 'RMSSD, nocturne, par rapport à votre plage personnelle', 'Non confirmé par les pages officielles', 'Non confirmé', 'SDNN (Apple Health)'),
   },
   de: {
     title: 'So liest du die HRV deines Geräts | ONDA Life',
@@ -100,7 +100,7 @@ export const CONNECT_I18N: Record<string, ConnectI18n> = {
     pick: 'Wähle dein Gerät, um zu sehen, welche HRV (Herzratenvariabilität) es zeigt und ob es sich mit ONDA verbinden lässt. Die Geräteseiten sind auf Englisch.',
     thDevice: 'Gerät', thHrv: 'Angezeigte HRV', thStatus: 'Verbindung mit ONDA', inEnglish: '(auf Englisch)',
     status: { app: 'Funktioniert schon mit der ONDA-App', planned: 'Direkte Verbindung geplant', reviewing: 'In Prüfung', closed: 'Entwicklerzugang geschlossen', 'no-api': 'Keine öffentliche Web-API' },
-    hrv: hrv('Nachtdurchschnitt (im Schlaf)', 'RMSSD, in Millisekunden (in Recovery)', 'Nachts, erste ~4 Std. Schlaf (Formel nicht bestätigt)', 'Nachts, im Vergleich zu deinem persönlichen Bereich (Formel nicht bestätigt)', 'Auf offiziellen Seiten nicht bestätigt', 'Nicht bestätigt', 'SDNN (Apple Health)'),
+    hrv: hrv('Nachtdurchschnitt (im Schlaf)', 'RMSSD, in Millisekunden (in Recovery)', 'Nachts, erste ~4 Std. Schlaf (Formel nicht bestätigt)', 'RMSSD, nachts, im Vergleich zu deinem persönlichen Bereich', 'Auf offiziellen Seiten nicht bestätigt', 'Nicht bestätigt', 'SDNN (Apple Health)'),
   },
   it: {
     title: 'Come leggere l’HRV del tuo dispositivo | ONDA Life',
@@ -110,7 +110,7 @@ export const CONNECT_I18N: Record<string, ConnectI18n> = {
     pick: 'Scegli il tuo dispositivo per vedere quale HRV (variabilità della frequenza cardiaca) mostra e se può collegarsi a ONDA. Le pagine dei dispositivi sono in inglese.',
     thDevice: 'Dispositivo', thHrv: 'HRV mostrata', thStatus: 'Collegamento a ONDA', inEnglish: '(in inglese)',
     status: { app: 'Funziona già con l’app ONDA', planned: 'Collegamento diretto previsto', reviewing: 'In verifica', closed: 'Accesso sviluppatori chiuso', 'no-api': 'Nessuna API web pubblica' },
-    hrv: hrv('Media notturna (durante il sonno)', 'RMSSD, in millisecondi (in Recovery)', 'Notturna, prime ~4 h di sonno (formula non confermata)', 'Notturna, rispetto al tuo intervallo personale (formula non confermata)', 'Non confermato dalle pagine ufficiali', 'Non confermato', 'SDNN (Apple Health)'),
+    hrv: hrv('Media notturna (durante il sonno)', 'RMSSD, in millisecondi (in Recovery)', 'Notturna, prime ~4 h di sonno (formula non confermata)', 'RMSSD, notturna, rispetto al tuo intervallo personale', 'Non confermato dalle pagine ufficiali', 'Non confermato', 'SDNN (Apple Health)'),
   },
   nl: {
     title: 'Zo lees je de HRV van je apparaat | ONDA Life',
@@ -120,7 +120,7 @@ export const CONNECT_I18N: Record<string, ConnectI18n> = {
     pick: 'Kies je apparaat om te zien welke HRV (hartslagvariabiliteit) het toont en of het met ONDA kan koppelen. De apparaatpagina’s zijn in het Engels.',
     thDevice: 'Apparaat', thHrv: 'Getoonde HRV', thStatus: 'Koppeling met ONDA', inEnglish: '(in het Engels)',
     status: { app: 'Werkt nu al met de ONDA-app', planned: 'Directe koppeling gepland', reviewing: 'Wordt beoordeeld', closed: 'Ontwikkelaarstoegang gesloten', 'no-api': 'Geen openbare web-API' },
-    hrv: hrv('Nachtgemiddelde (tijdens de slaap)', 'RMSSD, in milliseconden (in Recovery)', 'ʼs Nachts, eerste ~4 uur slaap (formule niet bevestigd)', 'ʼs Nachts, ten opzichte van je persoonlijke bereik (formule niet bevestigd)', 'Niet bevestigd op officiële pagina’s', 'Niet bevestigd', 'SDNN (Apple Health)'),
+    hrv: hrv('Nachtgemiddelde (tijdens de slaap)', 'RMSSD, in milliseconden (in Recovery)', 'ʼs Nachts, eerste ~4 uur slaap (formule niet bevestigd)', 'RMSSD, ʼs nachts, ten opzichte van je persoonlijke bereik', 'Niet bevestigd op officiële pagina’s', 'Niet bevestigd', 'SDNN (Apple Health)'),
   },
   pl: {
     title: 'Jak czytać HRV z Twojego urządzenia | ONDA Life',
@@ -130,7 +130,7 @@ export const CONNECT_I18N: Record<string, ConnectI18n> = {
     pick: 'Wybierz urządzenie, aby zobaczyć, jakie HRV (zmienność rytmu serca) pokazuje i czy można je połączyć z ONDA. Strony urządzeń są po angielsku.',
     thDevice: 'Urządzenie', thHrv: 'Pokazywane HRV', thStatus: 'Połączenie z ONDA', inEnglish: '(po angielsku)',
     status: { app: 'Już działa z aplikacją ONDA', planned: 'Bezpośrednie połączenie w planach', reviewing: 'W trakcie weryfikacji', closed: 'Dostęp dla deweloperów zamknięty', 'no-api': 'Brak publicznego web API' },
-    hrv: hrv('Średnia nocna (podczas snu)', 'RMSSD, w milisekundach (w Recovery)', 'Nocą, pierwsze ~4 h snu (wzór niepotwierdzony)', 'Nocą, względem Twojego zakresu (wzór niepotwierdzony)', 'Niepotwierdzone na oficjalnych stronach', 'Niepotwierdzone', 'SDNN (Apple Health)'),
+    hrv: hrv('Średnia nocna (podczas snu)', 'RMSSD, w milisekundach (w Recovery)', 'Nocą, pierwsze ~4 h snu (wzór niepotwierdzony)', 'RMSSD, nocą, względem Twojego zakresu', 'Niepotwierdzone na oficjalnych stronach', 'Niepotwierdzone', 'SDNN (Apple Health)'),
   },
   ja: {
     title: 'デバイスのHRVの読み方 | ONDA Life',
@@ -140,7 +140,7 @@ export const CONNECT_I18N: Record<string, ConnectI18n> = {
     pick: 'デバイスを選ぶと、表示されるHRV（心拍変動）の種類とONDAに接続できるかがわかります。各デバイスのページは英語です。',
     thDevice: 'デバイス', thHrv: '表示されるHRV', thStatus: 'ONDAとの接続', inEnglish: '（英語）',
     status: { app: 'ONDAアプリで利用可能', planned: '直接接続を予定', reviewing: '確認中', closed: '開発者アクセスは停止中', 'no-api': '公開Web APIなし' },
-    hrv: hrv('夜間平均（睡眠中）', 'RMSSD、ミリ秒（Recovery内）', '夜間、睡眠の最初の約4時間（計算式は未確認）', '夜間、あなたの個人範囲との比較（計算式は未確認）', '公式ページでは未確認', '未確認', 'SDNN（Apple Health）'),
+    hrv: hrv('夜間平均（睡眠中）', 'RMSSD、ミリ秒（Recovery内）', '夜間、睡眠の最初の約4時間（計算式は未確認）', 'RMSSD、夜間、あなたの個人範囲との比較', '公式ページでは未確認', '未確認', 'SDNN（Apple Health）'),
   },
   zh: {
     title: '如何读懂你设备的HRV | ONDA Life',
@@ -150,7 +150,7 @@ export const CONNECT_I18N: Record<string, ConnectI18n> = {
     pick: '选择你的设备，查看它显示哪种HRV（心率变异性）以及能否连接 ONDA。各设备页面为英文。',
     thDevice: '设备', thHrv: '显示的HRV', thStatus: '与 ONDA 的连接', inEnglish: '（英文）',
     status: { app: '已可用于 ONDA 应用', planned: '计划直接连接', reviewing: '审核中', closed: '开发者通道已关闭', 'no-api': '无公开 Web API' },
-    hrv: hrv('夜间平均值（睡眠期间）', 'RMSSD，单位毫秒（Recovery 中）', '夜间，睡眠前约4小时（公式未确认）', '夜间，与你的个人范围比较（公式未确认）', '官方页面未确认', '未确认', 'SDNN（Apple Health）'),
+    hrv: hrv('夜间平均值（睡眠期间）', 'RMSSD，单位毫秒（Recovery 中）', '夜间，睡眠前约4小时（公式未确认）', 'RMSSD，夜间，与你的个人范围比较', '官方页面未确认', '未确认', 'SDNN（Apple Health）'),
   },
 }
 

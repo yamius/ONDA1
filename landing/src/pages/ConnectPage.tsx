@@ -5,7 +5,7 @@
  */
 import { useEffect } from 'react'
 import { Link, useLocation, useParams } from 'react-router-dom'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref, type Lang } from '../i18n'
 import { connectI18n } from '../data/connect-i18n'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
@@ -17,6 +17,104 @@ import {
   getConnectDevice,
 } from '../data/connect-devices'
 import { NotFoundPage } from './NotFoundPage'
+import { CONNECT_ACCESSED, CONNECT_DEVICE_DETAILS, connectText, connectTextReady, type ConnectDeviceDetail } from '../data/connect-device-details'
+import type { FactLang } from '../data/science/facts'
+
+export interface DetailLabels {
+  calls: (name: string) => string
+  inputs: (name: string, composite?: string) => string
+  accuracy: string
+  weights: string
+  single: string
+  affiliated: string
+  accessed: string
+  quoteNote: string
+}
+
+export const DETAIL_LABELS_EN: DetailLabels = {
+  calls: (name) => `What ${name} calls HRV`,
+  inputs: (name, composite) => (composite ? `What goes into ${composite}` : `Does ${name} have a combined score?`),
+  accuracy: 'How accurate is it?',
+  weights: 'Weights of the inputs: not disclosed by the maker.',
+  single: 'single study',
+  affiliated: 'Studies funded by or affiliated with the maker (listed separately)',
+  accessed: 'accessed',
+  quoteNote: 'Quotes are verbatim from the maker’s pages, in English.',
+}
+
+/** Maker definition, composite inputs and independent accuracy checks (071 2c). Items with unapproved facts are not rendered. */
+export function DeviceDetails({ name, det, lang = 'en', L = DETAIL_LABELS_EN }: { name: string; det: ConnectDeviceDetail; lang?: FactLang; L?: DetailLabels }) {
+  const ok = (t: string) => connectTextReady(t, lang)
+  const tx = (t: string) => connectText(t, lang, `connect/${name}`)
+  const quotes = (qs: ConnectDeviceDetail['hrvQuotes']) => {
+    const live = qs.filter((q) => ok(q.quote))
+    if (!live.length) return null
+    return (
+      <div className="space-y-3">
+        {live.map((q) => (
+          <blockquote key={q.quote} className="border-l-2 border-terminal-green/40 pl-4 text-white/80">
+            <p>“{tx(q.quote)}”</p>
+            <footer className="mt-1 text-xs text-white/50">
+              — <a href={q.source.url} target="_blank" rel="noopener noreferrer nofollow" className="hover:underline">{q.source.label}</a>, {L.accessed} {CONNECT_ACCESSED}
+            </footer>
+          </blockquote>
+        ))}
+      </div>
+    )
+  }
+  const items = (list: ConnectDeviceDetail['independent']) => list.filter((a) => ok(a.text))
+  const ind = items(det.independent)
+  const aff = items(det.affiliated)
+  return (
+    <>
+      <section className="mt-10">
+        <h2 className="mb-4 text-2xl font-bold">{L.calls(name)}</h2>
+        <div className="space-y-4 font-mono text-sm leading-relaxed text-white/70 md:text-base">
+          {ok(det.hrvSummary) && <p>{tx(det.hrvSummary)}</p>}
+          {quotes(det.hrvQuotes)}
+          <p className="text-xs text-white/45">{L.quoteNote}</p>
+        </div>
+      </section>
+      <section className="mt-10">
+        <h2 className="mb-4 text-2xl font-bold">{L.inputs(name, det.compositeName)}</h2>
+        <div className="space-y-4 font-mono text-sm leading-relaxed text-white/70 md:text-base">
+          {ok(det.composite) && <p>{tx(det.composite)}</p>}
+          {quotes(det.compositeQuotes)}
+          {det.compositeName && <p className="text-white/90">{L.weights}</p>}
+        </div>
+      </section>
+      <section className="mt-10">
+        <h2 className="mb-4 text-2xl font-bold">{L.accuracy}</h2>
+        <div className="space-y-4 font-mono text-sm leading-relaxed text-white/70 md:text-base">
+          {det.independentNone && ok(det.independentNone) && <p>{tx(det.independentNone)}</p>}
+          {ind.length > 0 && (
+            <ul className="list-disc space-y-2 pl-5">
+              {ind.map((a) => (
+                <li key={a.text}>
+                  {tx(a.text)}{a.single && <span className="ml-1 text-xs text-amber-300/80">[{L.single}]</span>}{' '}
+                  <a href={a.cite.url} target="_blank" rel="noopener noreferrer nofollow" className="text-xs text-white/50 hover:underline">({a.cite.label})</a>
+                </li>
+              ))}
+            </ul>
+          )}
+          {aff.length > 0 && (
+            <>
+              <h3 className="pt-2 text-base font-semibold text-white">{L.affiliated}</h3>
+              <ul className="list-disc space-y-2 pl-5">
+                {aff.map((a) => (
+                  <li key={a.text}>
+                    {tx(a.text)}{' '}
+                    <a href={a.cite.url} target="_blank" rel="noopener noreferrer nofollow" className="text-xs text-white/50 hover:underline">({a.cite.label})</a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+        </div>
+      </section>
+    </>
+  )
+}
 
 const READ_MORE: { to: string; label: string }[] = [
   { to: '/science/questions/why-is-my-hrv-low', label: 'Why is my HRV low?' },
@@ -50,6 +148,45 @@ function ReadMore() {
         {READ_MORE.map((l) => (
           <li key={l.to}>
             <Link to={l.to} className="text-terminal-green hover:underline">{l.label}</Link>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}
+
+/** Localized hub → ONDA Science (071 2c step B). Links via langHref: /<lang>/science/… when live, else EN. */
+const READ_MORE_L: Record<string, [string, string, string, string, string]> = {
+  // heading, why-is-my-hrv-low, heart-rate-variability (measurements), hrv-baseline, interpreting-hrv
+  ru: ['Подробнее в ONDA Science', 'Почему у меня низкий HRV?', 'Насколько точно носимые устройства измеряют HRV', 'Ваша личная норма HRV', 'Как читать значение HRV'],
+  uk: ['Докладніше в ONDA Science', 'Чому в мене низький HRV?', 'Наскільки точно носимі пристрої вимірюють HRV', 'Ваша особиста норма HRV', 'Як читати значення HRV'],
+  es: ['Más en ONDA Science', '¿Por qué tengo el HRV bajo?', 'Qué tan precisos son los wearables al medir el HRV', 'Tu línea base de HRV', 'Cómo interpretar el HRV'],
+  pt: ['Mais no ONDA Science', 'Por que meu HRV está baixo?', 'Quão precisos são os wearables ao medir o HRV', 'Sua linha de base de HRV', 'Como interpretar o HRV'],
+  fr: ['En savoir plus sur ONDA Science', 'Pourquoi ma HRV est-elle basse ?', 'Quelle est la précision des objets connectés pour la HRV', 'Votre référence de HRV', 'Interpréter la HRV'],
+  de: ['Mehr bei ONDA Science', 'Warum ist meine HRV niedrig?', 'Wie genau messen Wearables die HRV?', 'Deine HRV-Baseline', 'HRV richtig deuten'],
+  it: ['Approfondisci su ONDA Science', 'Perché la mia HRV è bassa?', 'Quanto sono precisi i wearable nel misurare l’HRV', 'La tua baseline di HRV', 'Come interpretare l’HRV'],
+  nl: ['Meer op ONDA Science', 'Waarom is mijn HRV laag?', 'Hoe nauwkeurig meten wearables HRV?', 'Je HRV-basislijn', 'HRV interpreteren'],
+  pl: ['Więcej w ONDA Science', 'Dlaczego moje HRV jest niskie?', 'Jak dokładnie urządzenia ubieralne mierzą HRV', 'Twoja bazowa wartość HRV', 'Jak interpretować HRV'],
+  ja: ['ONDA Scienceでさらに詳しく', 'HRVが低いのはなぜ？', 'ウェアラブルのHRV測定はどれくらい正確か', 'あなたのHRVベースライン', 'HRVの読み方'],
+  zh: ['在 ONDA Science 了解更多', '为什么我的 HRV 偏低？', '可穿戴设备测量 HRV 有多准确', '你的 HRV 基线', '如何解读 HRV'],
+}
+
+function ReadMoreLocalized({ lang }: { lang: string }) {
+  const t = READ_MORE_L[lang]
+  if (!t) return null
+  const links: [string, string][] = [
+    ['/science/questions/why-is-my-hrv-low', t[1]],
+    ['/science/measurements/heart-rate-variability', t[2]],
+    ['/science/concepts/hrv-baseline', t[3]],
+    ['/science/concepts/interpreting-hrv', t[4]],
+  ]
+  return (
+    <section className="mt-12">
+      <h2 className="mb-4 text-xl font-bold">{t[0]}</h2>
+      <ul className="grid gap-2 font-mono text-sm sm:grid-cols-2">
+        {links.map(([to, label]) => (
+          <li key={to}>
+            <Link to={langHref(to, lang as Lang)} className="text-terminal-green hover:underline">{label}</Link>
           </li>
         ))}
       </ul>
@@ -98,6 +235,7 @@ function ConnectIndexLocalized({ lang }: { lang: string }) {
         </table>
       </div>
       <AppStoreCTA ct={storeCt('connect', 'index', lang)} variant="hrv" lang={lang} />
+      <ReadMoreLocalized lang={lang} />
     </main>
   )
 }
@@ -186,6 +324,8 @@ function ConnectEn({ device }: { device?: string }) {
           </div>
         )}
       </section>
+
+      {CONNECT_DEVICE_DETAILS[d.slug] && <DeviceDetails name={d.name} det={CONNECT_DEVICE_DETAILS[d.slug]} />}
 
       <section className="mt-10">
         <h2 className="mb-4 text-2xl font-bold">How to read it</h2>

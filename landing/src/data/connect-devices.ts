@@ -175,9 +175,9 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     shows: [
       'HRV Status places your recent night-time HRV against a personal range and labels it Balanced, Unbalanced or Low. Independent explainers describe the baseline as taking about three weeks of wear to form.',
       '“Unbalanced” only means you are outside your own range — above or below it. Garmin users often ask why it appears after a good stretch: the range itself moves as your readings change.',
-      'We have not confirmed from Garmin which HRV formula HRV Status uses, so we do not label it here.',
+      'Garmin’s own HRV Status page names the formula: RMSSD, measured while you sleep (quoted below).',
     ],
-    hrvType: 'Night-time, vs your personal range (formula not confirmed)',
+    hrvType: 'RMSSD, night-time, vs your personal range',
     sources: [
       { label: 'Wareable: Garmin HRV Status explained', url: 'https://www.wareable.com/garmin/garmin-hrv-status-explained-what-is-it-how-to-use' },
       { label: 'Garmin Connect Developer Program', url: 'https://developer.garmin.com/gc-developer-program/overview/' },
@@ -207,7 +207,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     lead:
       'Fitbit and Pixel Watch show HRV in the Fitbit app. The most useful way to read it is against your own recent nights, not against a single “good” number.',
     shows: [
-      'We have not verified from Fitbit’s own pages which HRV formula or time window the Fitbit app uses, or how its readiness score is built, so we do not label them here.',
+      'Google’s help pages list HRV among the night-time metrics and name the inputs of Readiness, but do not name the HRV formula, so we do not label it here.',
       'Whatever the label, compare a night with your own usual range over several weeks. A single night up or down says little on its own.',
     ],
     hrvType: 'Not confirmed from official pages',
@@ -236,7 +236,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     lead:
       'Samsung Health shows heart and recovery data from Galaxy Watch. Read any HRV number there against your own recent nights rather than a population figure.',
     shows: [
-      'We have not verified from Samsung’s own pages which HRV formula or time window Samsung Health uses, so we do not label it here.',
+      'Samsung’s help pages do not name the HRV formula or the time window Samsung Health uses, so we do not label it here.',
       'If you compare Samsung numbers with another device, expect them to differ: devices measure at different times and compute HRV differently.',
     ],
     hrvType: 'Not confirmed from official pages',
@@ -288,15 +288,15 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     lead:
       'Ultrahuman rings show HRV and recovery-style scores in their app. Read them against your own recent nights, not against another device or another person.',
     shows: [
-      'We have not verified from Ultrahuman’s own pages which HRV formula or time window its app uses, so we do not label it here.',
+      'Ultrahuman says the ring reads HRV overnight against your own range, but does not name the formula, so we do not label it here.',
       'Scores that combine several signals are the maker’s own algorithm; look at the HRV and resting heart rate underneath them.',
     ],
     hrvType: 'Not confirmed from official pages',
-    sources: [],
+    sources: [{ label: 'Ultrahuman blog: HRV data in Apple Health', url: 'https://www.ultrahuman.com/blog/how-to-access-your-hrv-data-on-apple-health/' }],
     status: 'no-api',
     connect:
       'We have not found an official public developer API from Ultrahuman, so we cannot offer a direct connection.',
-    appleHealth: UNCONFIRMED_HEALTH('Ultrahuman'),
+    appleHealth: `Ultrahuman’s own blog (a product blog, not a help page) says HRV from the Ring AIR can be found in the Apple Health app. If it is there, the ONDA app can read it from Apple Health with your permission; we have not checked this on a device ourselves. ${CAMERA}`,
     faq: [
       {
         q: 'Can ONDA read my Ultrahuman data?',

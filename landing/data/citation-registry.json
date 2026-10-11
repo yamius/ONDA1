@@ -8655,6 +8655,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1177/20552076251394960": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Agreement between Fitbit Versa 4 and a reference standard on time-domain nocturnal heart rate variability: A pilot study",
+   "firstAuthor": "Nasr",
+   "authors": [
+    "Nasr",
+    "Behbehani",
+    "Wang",
+    "Pierson",
+    "Jarrett",
+    "Greer",
+    "Zafereo"
+   ],
+   "year": 2025,
+   "journal": "DIGITAL HEALTH",
+   "source": "crossref",
+   "verifiedAt": "2026-10-11"
+  },
   "doi:10.1177/27536351241227261": {
    "kind": "doi",
    "valid": true,
@@ -9506,6 +9525,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.1371/journal.pone.0268361": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A comprehensive accuracy assessment of Samsung smartwatch heart rate and heart rate variability",
+   "firstAuthor": "Sarhaddi",
+   "authors": [
+    "Sarhaddi",
+    "Kazemi",
+    "Azimi",
+    "Cao",
+    "Niela-Vilén",
+    "Axelin",
+    "Liljeberg",
+    "Rahmani"
+   ],
+   "year": 2022,
+   "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-10-11"
+  },
   "doi:10.1371/journal.pone.0286023": {
    "kind": "doi",
    "valid": true,
@@ -9640,6 +9679,26 @@
    "journal": "PLOS One",
    "source": "crossref",
    "verifiedAt": "2026-10-09"
+  },
+  "doi:10.1371/journal.pone.0356808": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The accuracy of VO2 max, heart rate and energy expenditure measurements from Google Pixel Watch 3",
+   "firstAuthor": "Lambe",
+   "authors": [
+    "Lambe",
+    "Schumann",
+    "Hamilton",
+    "Donnelly",
+    "White",
+    "O’Reilly",
+    "Lally",
+    "Doherty"
+   ],
+   "year": 2026,
+   "journal": "PLOS One",
+   "source": "crossref",
+   "verifiedAt": "2026-10-11"
   },
   "doi:10.1378/chest.125.2.683": {
    "kind": "doi",
@@ -11631,6 +11690,25 @@
    "journal": "Sensors",
    "source": "crossref",
    "verifiedAt": "2026-10-08"
+  },
+  "doi:10.3390/s25082380": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Validity of Heart Rate Variability Measured with Apple Watch Series 6 Compared to Laboratory Measures",
+   "firstAuthor": "Bonneval",
+   "authors": [
+    "Bonneval",
+    "Wing",
+    "Sharp",
+    "Tristao Parra",
+    "Moran",
+    "LaCroix",
+    "Godino"
+   ],
+   "year": 2025,
+   "journal": "Sensors",
+   "source": "crossref",
+   "verifiedAt": "2026-10-11"
   },
   "doi:10.3390/s26010003": {
    "kind": "doi",
