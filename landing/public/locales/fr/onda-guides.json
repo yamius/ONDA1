@@ -75,8 +75,8 @@
           ]
         },
         {
-          "tag": "Meilleure bibliothèque de respiration, sans boucle HRV documentée",
-          "blurb": "Breathwrk (désormais intégrée à Peloton) propose l’une des plus larges gammes d’exercices de respiration guidés, sur iOS, Android et le web. Ses documents officiels ne décrivent actuellement aucun retour sur la fréquence cardiaque ou la HRV : considérez-la comme une application de contenus de respiration, excellente pour la technique, pas comme une boucle HRV en direct.",
+          "tag": "Bibliothèque de respiration guidée, sans boucle HRV documentée",
+          "blurb": "Breathwrk (désormais intégrée à Peloton) propose une bibliothèque guidée d’exercices de respiration (plus de 50, plus de 100 avec Pro), des cours quotidiens et des programmes, sur iOS, Android et le web. Ses documents officiels ne décrivent actuellement aucun retour sur la fréquence cardiaque ou la HRV : considérez-la comme une application de contenus de respiration, excellente pour la technique, pas comme une boucle HRV en direct.",
           "pros": [
             "Grande bibliothèque d’exercices et de cours de respiration guidée",
             "iOS, Android et web ; offre gratuite, incluse dans certains abonnements Peloton"
@@ -87,7 +87,7 @@
           ]
         }
       ],
-      "bottomLine": "Si vous voulez la respiration et un retour cardiaque en temps réel réunis dans une seule boucle guidée, ONDA avec une Apple Watch est en tête. Pour une précision de mesure brute avec un guide de rythme, Elite HRV avec une ceinture thoracique ou un capteur au doigt. Pour une mesure quotidienne validée scientifiquement, HRV4Training (plus HRV4Biofeedback pour la boucle respiratoire). Pour la plus grande bibliothèque d’exercices de respiration, Breathwrk. Et aucune n’est un suivi passif toute la journée : pour la tendance nocturne de la HRV, associez-en une à une Apple Watch, un Oura ou un WHOOP.",
+      "bottomLine": "Si vous voulez la respiration et un retour cardiaque en temps réel réunis dans une seule boucle guidée, ONDA avec une Apple Watch est en tête. Pour une précision de mesure brute avec un guide de rythme, Elite HRV avec une ceinture thoracique ou un capteur au doigt. Pour une mesure quotidienne validée scientifiquement, HRV4Training (plus HRV4Biofeedback pour la boucle respiratoire). Pour une bibliothèque de respiration guidée abordable, Breathwrk. Et aucune n’est un suivi passif toute la journée : pour la tendance nocturne de la HRV, associez-en une à une Apple Watch, un Oura ou un WHOOP.",
       "faq": [
         {
           "q": "Quelle application combine respiration, HRV et retour en temps réel ?",

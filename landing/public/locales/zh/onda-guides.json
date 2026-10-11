@@ -75,8 +75,8 @@
           ]
         },
         {
-          "tag": "最佳呼吸内容库，无已记载的 HRV 闭环",
-          "blurb": "Breathwrk（现属 Peloton）拥有最丰富的引导式呼吸练习之一，支持 iOS、Android 和网页版。其官方资料目前并未描述心率或 HRV 反馈，因此应把它视为呼吸内容应用：学习技巧很出色，但不是实时 HRV 闭环。",
+          "tag": "引导式呼吸内容库，无已记载的 HRV 闭环",
+          "blurb": "Breathwrk（现属 Peloton）提供引导式呼吸练习库（50 多个，Pro 版 100 多个）、每日课程和训练计划，支持 iOS、Android 和网页版。其官方资料目前并未描述心率或 HRV 反馈，因此应把它视为呼吸内容应用：学习技巧很出色，但不是实时 HRV 闭环。",
           "pros": [
             "大型引导式呼吸练习库和课程",
             "支持 iOS、Android 和网页；有免费版，部分 Peloton 会员已包含"
@@ -87,7 +87,7 @@
           ]
         }
       ],
-      "bottomLine": "如果你想把呼吸与实时心脏反馈融合进一个引导闭环，配合 Apple Watch 的 ONDA 领先。如果你想要带定速器的原始测量精度，选 Elite HRV 加胸带或指夹传感器。想要经过科学验证的每日读数，选 HRV4Training（呼吸闭环另加 HRV4Biofeedback）。想要最大的呼吸练习库，选 Breathwrk。这些都不是被动的全天追踪器——若要夜间 HRV 趋势，请搭配 Apple Watch、Oura 或 WHOOP。",
+      "bottomLine": "如果你想把呼吸与实时心脏反馈融合进一个引导闭环，配合 Apple Watch 的 ONDA 领先。如果你想要带定速器的原始测量精度，选 Elite HRV 加胸带或指夹传感器。想要经过科学验证的每日读数，选 HRV4Training（呼吸闭环另加 HRV4Biofeedback）。想要价格实惠的引导式呼吸练习库，选 Breathwrk。这些都不是被动的全天追踪器——若要夜间 HRV 趋势，请搭配 Apple Watch、Oura 或 WHOOP。",
       "faq": [
         {
           "q": "哪款应用结合了呼吸、HRV 和实时反馈？",

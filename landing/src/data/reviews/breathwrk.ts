@@ -5,51 +5,52 @@ const breathwrk: ToolReviewInput = {
   name: 'Breathwrk',
   brand: 'Breathwrk',
   category: 'breathwork-app',
-  productType: 'Guided breathwork app with structured library',
+  productType: 'Guided breathing-exercise app with classes and programs',
   description:
-    'ONDA review of Breathwrk — the largest structured breathwork library on the consumer market — science-informed copy, backed by one published study on cyclic sighing, across calm, energy, sleep and performance. Scored on library, technique coverage, evidence and value.',
+    'ONDA review of Breathwrk, the Peloton-owned guided breathing app: 50+ exercises (100+ on Pro), daily classes and programs, free tier. Scored on library, technique coverage, evidence and value.',
   verdict:
-    'Best breathwork library overall — biggest session catalogue, science-informed copy, backed by one published study on cyclic sighing, full technique coverage. A large, long-running library for structured daily practice.',
+    'A well-priced guided breathing library — exercises, daily classes and programs with a free tier and Peloton inclusion — but no heart-rate or HRV feedback, and its benefit claims go uncited.',
   summary:
-    'Breathwrk is a large structured-breathwork library — hundreds of guided sessions across calm, energy, sleep, focus and performance, science-informed copy backed by one published study on cyclic sighing, and the broadest technique coverage in the category (box, 4-7-8, Wim Hof rounds, Tummo, cyclic sighing, coherent breathing, Buteyko). Apple Watch support. $49/year. The biggest, most defensible app in the breathwork category.',
+    'Breathwrk (part of Peloton since its acquisition) is a guided breathing app: 50+ exercises on the free plan and 100+ on Pro, daily video classes and multi-day programs, on iOS, Android, the web, Mac and Vision. Official technique examples include box breathing, 4-7-8, humming and long-exhale patterns, plus breath-hold “lung score” tests. It logs Mindfulness Minutes to Apple Health but has no Apple Watch app and measures no heart rate or HRV. Pro costs $9/month or about $49/year after a 7-day trial, and is included for Peloton All-Access, Guide and App+ members.',
   scores: [
-    { criterionId: 'session-library', score: 9.0, note: 'Largest structured breathwork library — hundreds of guided sessions organised by goal (calm, sleep, energy, focus, performance) and technique. New content adds monthly.' },
-    { criterionId: 'technique-coverage', score: 9.0, note: 'Full coverage — box breathing, 4-7-8, Wim Hof rounds, Tummo, cyclic sighing (Stanford-validated), coherent breathing, Buteyko, alternate-nostril. Almost no documented technique missing.' },
-    { criterionId: 'evidence-grounding', score: 7.5, note: 'Copy cites the Stanford cyclic-sighing trial, a real peer-reviewed study. It also leans on polyvagal theory (a debated model) and Andrew Huberman protocols, which we do not count as peer-reviewed evidence.' },
-    { criterionId: 'app-experience', score: 8.5, note: 'Clean UI with animated breath guides, audio coaching and Apple Watch native support. Session-start friction low.' },
-    { criterionId: 'biofeedback', score: 6.5, note: 'Apple Health integration, Apple Watch breath rate, basic streak tracking. No HRV-driven session adaptation — guided rather than measurement-driven.' },
-    { criterionId: 'value', score: 8.5, note: '$49/year (or $9/month) with a usable free tier, and included for Peloton All-Access, Guide and App+ members. Best value in premium breathwork — cheaper than Othership, far deeper library than free apps.' },
+    { criterionId: 'session-library', score: 8.0, note: '50+ exercises on the free plan and 100+ on Pro, plus daily video classes and multi-day programs (official site and App Store, accessed 2026-10-11). Substantial, but smaller than Othership’s catalogue, so not the largest in the category.' },
+    { criterionId: 'technique-coverage', score: 7.5, note: 'Officially named techniques include box breathing, 4-7-8, humming and long-exhale patterns, plus breath-hold tests. A fuller technique list is not documented in official materials, so we do not credit techniques we cannot confirm.' },
+    { criterionId: 'evidence-grounding', score: 6.5, note: 'The App Store listing says the exercises improve HRV and lower heart rate and blood pressure, but cites no studies for those claims (accessed 2026-10-11). Slow breathing does have research support in general; the app’s own claims are uncited.' },
+    { criterionId: 'app-experience', score: 8.0, note: 'Clean UI with animated breath guides, audio coaching and video classes, on iOS, Android, web, Mac and Vision. No Apple Watch app (App Store compatibility list, accessed 2026-10-11).' },
+    { criterionId: 'biofeedback', score: 4.5, note: 'Logs Mindfulness Minutes to Apple Health and offers breath-hold “lung score” tests, but measures no heart rate or HRV and has no sensor integration (official site and App Store, accessed 2026-10-11).' },
+    { criterionId: 'value', score: 8.5, note: '$49/year (or $9/month) with a usable free tier, and included for Peloton All-Access, Guide and App+ members. Best value in premium breathwork — cheaper than Othership, with a 7-day trial and a usable free plan.' },
   ],
   pros: [
-    'Largest structured breathwork library in the category',
-    'Full technique coverage — box, 4-7-8, Wim Hof, Tummo, cyclic sighing, Buteyko',
-    'Science-informed copy, backed by one published study on cyclic sighing (Stanford)',
-    'Apple Watch native support with clean UI',
+    '50+ guided exercises (100+ on Pro), daily classes and multi-day programs',
+    'Free plan; Pro about $49/year with a 7-day trial, included with some Peloton memberships',
+    'Runs on iOS, Android, web, Mac and Vision',
+    'Clean UI with animated breath guides and audio coaching',
   ],
   cons: [
-    'No HRV-driven session adaptation (guided rather than biofeedback-driven)',
+    'No heart-rate or HRV measurement and no Apple Watch app',
+    'Benefit claims (HRV, heart rate, blood pressure) are not cited',
     'No community / live-session layer (vs Othership)',
-    'Subscription-required for the deep library',
+    'Subscription required for the full library',
     'Less holotropic / emotional-release focus than Pause or SOMA',
   ],
-  bestFor: 'Best for users wanting the largest structured breathwork library, science-informed copy backed by one published study on cyclic sighing, and full technique coverage — the rational default for daily practice.',
+  bestFor: 'Best for people who want an affordable guided breathing routine — exercises, daily classes and programs — and do not need to see their heart rate or HRV respond.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Breathwrk app documentation, App Store listing, founder public communications and 2026 user reviews. Not hands-on tested by ONDA.',
-  price: { usd: 49, note: 'Breathwrk Pro annual ($9/month monthly); free tier available; included with Peloton All-Access, Guide and App+ (Breathwrk is now part of Peloton)', asOf: '2026-10-03' },
+  price: { usd: 49, note: 'Breathwrk Pro annual ($9/month monthly); 7-day free trial; free plan available; included with Peloton All-Access, Guide and App+ (Breathwrk is now part of Peloton)', asOf: '2026-10-11' },
   link: 'https://www.breathwrk.com/',
   linkType: 'official',
   content: `## Where it leads
 
-Breathwrk is a large structured-breathwork library — biggest library, broadest technique coverage, science-informed copy backed by one published study on cyclic sighing. The Stanford cyclic-sighing trial is cited properly; the copy also leans on polyvagal theory (a debated model) and Huberman lab protocols, which earn no evidence credit in our scoring. The library size and Apple Watch native support make it the rational default for daily breathwork practice.
+Breathwrk is an affordable guided breathing library. The official site lists 50+ exercises on the free plan and 100+ on Pro, with daily video classes and multi-day programs; named techniques include box breathing, 4-7-8, humming and long-exhale patterns. It runs on iOS, Android, the web, Mac and Vision, and Pro is included for Peloton All-Access, Guide and App+ members (official site and App Store, accessed 2026-10-11).
 
 ## What are the downsides of Breathwrk?
 
-No community or live-session layer (Othership's differentiator), no HRV-driven session adaptation (Inhale's differentiator), and less holotropic / emotional-release focus than Pause or SOMA. Breathwrk is excellent for structured daily practice; it's not the right shape for deep emotional-release sessions or for community-driven breathwork culture.
+It measures no heart rate or HRV and has no Apple Watch app, so it cannot show how your body responds (Inhale's differentiator). Its App Store copy says the exercises improve HRV, heart rate and blood pressure without citing studies. There is no community or live-session layer (Othership's differentiator), and less holotropic / emotional-release focus than Pause or SOMA. Breathwrk is excellent for structured daily practice; it's not the right shape for deep emotional-release sessions or for community-driven breathwork culture.
 
 ## Who should buy Breathwrk?
 
-Choose Breathwrk if you want the largest structured library and science-informed copy, backed by one published study on cyclic sighing, at the best premium-tier price. For community + music-driven sessions, Othership. For HRV biofeedback, Inhale. For emotional release, Pause Breathwork. For free entry, iBreathe or Breathe2Relax.
+Choose Breathwrk if you want an affordable guided routine — exercises, daily classes and programs — with a free plan to start. For community + music-driven sessions, Othership. For HRV biofeedback, Inhale. For emotional release, Pause Breathwork. For free entry, iBreathe or Breathe2Relax.
 
 ---
 
@@ -61,17 +62,18 @@ Choose Breathwrk if you want the largest structured library and science-informed
 `,
   references: [
     { label: 'Breathwrk — official site', url: 'https://www.breathwrk.com/' },
+    { label: 'Breathwrk — App Store listing', url: 'https://apps.apple.com/us/app/breathwrk-breathing-exercises/id1481804500' },
   ],
   relatedSlugs: ['othership', 'soma-breath', 'wim-hof-method-app'],
   publishOn: '2026-06-29',
   faq: [
-    { q: "Is Breathwrk worth it?", a: "Yes, for structured daily breathwork. Breathwrk has the largest structured breathwork library in the category, full technique coverage and science-informed copy, backed by one published study on cyclic sighing, with native Apple Watch support. It is guided rather than HRV-driven, and the deep library requires a subscription." },
-    { q: "How much does Breathwrk cost?", a: "Breathwrk Pro costs $49 per year (or $9 per month), and a free tier is available. Breathwrk is now part of Peloton, and Pro is included for Peloton All-Access, Guide and App+ members. The subscription is required to access the deep library of hundreds of guided sessions across calm, energy, sleep, focus and performance." },
-    { q: "What are the downsides of Breathwrk?", a: "Breathwrk has no HRV-driven session adaptation and no community or live-session layer like Othership. The deep library needs a subscription, and it has less holotropic or emotional-release focus than Pause or SOMA. It is guided rather than biofeedback-driven." },
-    { q: "Who is Breathwrk best for?", a: "Breathwrk is best for users who want the largest structured breathwork library, science-informed copy backed by one published study on cyclic sighing, and full technique coverage, including box, 4-7-8, Wim Hof, Tummo, cyclic sighing and Buteyko. It is the rational default for daily practice." },
+    { q: "Is Breathwrk worth it?", a: "For an affordable guided routine, yes: 50+ exercises free and 100+ on Pro, daily classes and programs for about $49 a year, with a 7-day trial. It does not measure heart rate or HRV, and its claims that the exercises improve HRV, heart rate and blood pressure are not cited." },
+    { q: "How much does Breathwrk cost?", a: "Breathwrk Pro costs about $49 per year or $9 per month after a 7-day free trial, and a free plan is available. Breathwrk is now part of Peloton, and Pro is included for Peloton All-Access, Guide and App+ members." },
+    { q: "Does Breathwrk measure heart rate or HRV?", a: "No. Its official site and App Store listing (accessed 2026-10-11) describe guided exercises, classes, programs and breath-hold tests, and Apple Health logging of Mindfulness Minutes, but no heart-rate or HRV measurement and no Apple Watch app." },
+    { q: "Who is Breathwrk best for?", a: "People who want an affordable, guided daily breathing routine with box breathing, 4-7-8, humming and long-exhale exercises, and who do not need biofeedback. For music-led sessions choose Othership; for HRV biofeedback, Inhale." },
   ],
   datePublished: '2026-06-29',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-11',
 }
 
 export default breathwrk

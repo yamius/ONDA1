@@ -615,10 +615,10 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         rank: 4,
         name: 'Breathwrk',
         href: '/reviews/breathwrk',
-        tag: 'Best breathing library, no documented HRV loop',
+        tag: 'Guided breathing library, no documented HRV loop',
         capsKey: 'breathwrk',
         blurb:
-          'Breathwrk (now part of Peloton) has one of the widest ranges of guided breathing exercises, on iOS, Android and the web. Its official materials do not currently describe heart-rate or HRV feedback, so treat it as a breathing-content app: excellent for technique, not a live HRV loop.',
+          'Breathwrk (now part of Peloton) offers a guided library of breathing exercises (50+, 100+ on Pro), daily classes and programs, on iOS, Android and the web. Its official materials do not currently describe heart-rate or HRV feedback, so treat it as a breathing-content app: excellent for technique, not a live HRV loop.',
         pros: [
           'Large guided breathing-exercise library and classes',
           'iOS, Android and web; free tier, included with some Peloton memberships',
@@ -630,7 +630,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
       },
     ],
     bottomLine:
-      'If you want breathing and real-time heart feedback fused into one guided loop, ONDA with an Apple Watch leads. If you want raw measurement precision with a pacer, Elite HRV with a chest strap or finger sensor. For a science-validated daily reading, HRV4Training (plus HRV4Biofeedback for the breathing loop). For the biggest breathing-exercise library, Breathwrk. And none of these is a passive all-day tracker — for the overnight HRV trend, pair one with an Apple Watch, Oura or WHOOP.',
+      'If you want breathing and real-time heart feedback fused into one guided loop, ONDA with an Apple Watch leads. If you want raw measurement precision with a pacer, Elite HRV with a chest strap or finger sensor. For a science-validated daily reading, HRV4Training (plus HRV4Biofeedback for the breathing loop). For an affordable guided breathing library, Breathwrk. And none of these is a passive all-day tracker — for the overnight HRV trend, pair one with an Apple Watch, Oura or WHOOP.',
     faq: [
       {
         q: 'Which app combines breathing, HRV and real-time feedback?',

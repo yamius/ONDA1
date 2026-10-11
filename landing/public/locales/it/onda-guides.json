@@ -75,8 +75,8 @@
           ]
         },
         {
-          "tag": "Migliore libreria di respirazione, nessun ciclo HRV documentato",
-          "blurb": "Breathwrk (ora parte di Peloton) offre una delle gamme più ampie di esercizi di respirazione guidati, su iOS, Android e web. I suoi materiali ufficiali al momento non descrivono feedback sulla frequenza cardiaca o sull’HRV, quindi consideralo un’app di contenuti per la respirazione: eccellente per la tecnica, non un ciclo HRV dal vivo.",
+          "tag": "Libreria di respirazione guidata, nessun ciclo HRV documentato",
+          "blurb": "Breathwrk (ora parte di Peloton) offre una libreria guidata di esercizi di respirazione (oltre 50, oltre 100 con Pro), lezioni quotidiane e programmi, su iOS, Android e web. I suoi materiali ufficiali al momento non descrivono feedback sulla frequenza cardiaca o sull’HRV, quindi consideralo un’app di contenuti per la respirazione: eccellente per la tecnica, non un ciclo HRV dal vivo.",
           "pros": [
             "Ampia libreria di esercizi e lezioni di respirazione guidata",
             "iOS, Android e web; piano gratuito, incluso in alcuni abbonamenti Peloton"
@@ -87,7 +87,7 @@
           ]
         }
       ],
-      "bottomLine": "Se vuoi respirazione e feedback cardiaco in tempo reale fusi in un unico ciclo guidato, ONDA con un Apple Watch è in testa. Se vuoi la precisione di misura grezza con un pacer, Elite HRV con una fascia toracica o un sensore da dito. Per una lettura quotidiana validata scientificamente, HRV4Training (più HRV4Biofeedback per il ciclo respiratorio). Per la più grande libreria di esercizi di respirazione, Breathwrk. E nessuna di queste è un tracker passivo per tutto il giorno: per l’andamento notturno dell’HRV, abbinane una a un Apple Watch, Oura o WHOOP.",
+      "bottomLine": "Se vuoi respirazione e feedback cardiaco in tempo reale fusi in un unico ciclo guidato, ONDA con un Apple Watch è in testa. Se vuoi la precisione di misura grezza con un pacer, Elite HRV con una fascia toracica o un sensore da dito. Per una lettura quotidiana validata scientificamente, HRV4Training (più HRV4Biofeedback per il ciclo respiratorio). Per una libreria di respirazione guidata conveniente, Breathwrk. E nessuna di queste è un tracker passivo per tutto il giorno: per l’andamento notturno dell’HRV, abbinane una a un Apple Watch, Oura o WHOOP.",
       "faq": [
         {
           "q": "Quale app combina respirazione, HRV e feedback in tempo reale?",

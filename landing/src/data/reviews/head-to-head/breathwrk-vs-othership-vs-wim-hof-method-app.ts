@@ -9,20 +9,20 @@ const breathwrkVsOthershipVsWhm: HeadToHeadInput = {
   description:
     'Breathwrk ($49/yr) vs Othership ($129.99/yr) vs Wim Hof Method app ($42.99/yr): library, evidence, community, cold exposure and price compared.',
   intro:
-    'Three breathwork apps that define the 2026 category. Breathwrk — now part of Peloton — has the broadest structured library. Othership offers music-driven sessions with live classes. The Wim Hof Method app is the official single-method app, built around Wim Hof breathing and cold exposure.',
+    'Three breathwork apps that define the 2026 category. Breathwrk — now part of Peloton — is an affordable guided library of exercises, daily classes and programs. Othership offers the largest library, music-driven sessions and live classes. The Wim Hof Method app is the official single-method app, built around Wim Hof breathing and cold exposure.',
   jobDependentVerdict: true,
   verdict:
-    'Three different jobs, three right answers. Breathwrk for the broadest structured library; Othership for music-driven sessions and live classes; the Wim Hof Method app for the Wim Hof method specifically — and, at $42.99 a year, the cheapest subscription of the three.',
+    'Three different jobs, three right answers. Othership scores highest overall (7.7) for its library, music-driven sessions and live classes; Breathwrk (7.5) for an affordable guided routine with a free plan; the Wim Hof Method app for the Wim Hof method specifically — and, at $42.99 a year, the cheapest subscription of the three.',
   bestForA:
-    'Choose Breathwrk if you want the broadest structured breathwork library, covering most known techniques, for $49 a year — or free if you already pay for Peloton All-Access, Guide or App+.',
+    'Choose Breathwrk if you want an affordable guided routine — exercises, daily classes and programs — for about $49 a year, or free if you already pay for Peloton All-Access, Guide or App+.',
   bestForB:
     'Choose Othership if you want music-driven sessions and live community classes and are willing to pay $129.99 a year for that experience.',
   bestForC:
     'Choose the Wim Hof Method app if you are committed to the Wim Hof method specifically, want its structured progression and cold-exposure guidance, and can practise it safely.',
   axes: [
-    { name: 'Library size', winner: 'a', note: 'Breathwrk: 100+ exercises plus daily classes and programmes. Othership: 500+ on-demand sessions, but curated around one music-driven style. WHM: structured rounds at varying levels — narrow by design.' },
-    { name: 'Technique coverage', winner: 'a', note: 'Breathwrk: box, 4-7-8, cyclic sighing, coherent breathing, Wim Hof-style rounds and more. Othership: leans into rhythmic, music-led sessions. WHM: one method.' },
-    { name: 'Evidence grounding', winner: 'c', note: 'Wim Hof Method scores higher on evidence: the method itself has published research, including the Radboud University study (Kox 2014). Breathwrk cites one published study, on cyclic sighing (Balban 2023). Othership leans on experience and ceremony framing.' },
+    { name: 'Library size', winner: 'b', note: 'Othership: 500+ on-demand sessions, curated around one music-driven style. Breathwrk: 50+ exercises (100+ on Pro) plus daily classes and programmes (official site and App Store, accessed 2026-10-11). WHM: structured rounds at varying levels — narrow by design.' },
+    { name: 'Technique coverage', winner: 'tie', note: 'Breathwrk: officially named techniques include box breathing, 4-7-8, humming and long-exhale patterns. Othership: leans into rhythmic, music-led sessions. Both score 7.5; WHM teaches one method.' },
+    { name: 'Evidence grounding', winner: 'c', note: 'Wim Hof Method scores higher on evidence: the method itself has published research, including the Radboud University study (Kox 2014). Breathwrk’s App Store copy claims HRV, heart-rate and blood-pressure benefits without citing studies. Othership leans on experience and ceremony framing.' },
     { name: 'Production / UX', winner: 'b', note: 'Othership: cinematic, music-driven sessions. Breathwrk and WHM: cleaner, more functional apps.' },
     { name: 'Community', winner: 'b', note: 'Othership: live classes are central to the experience. Breathwrk and WHM: mostly solo practice.' },
     { name: 'Cold-exposure integration', winner: 'c', note: 'WHM: cold-exposure guidance built into the method. Breathwrk and Othership: breath only.' },
@@ -31,11 +31,11 @@ const breathwrkVsOthershipVsWhm: HeadToHeadInput = {
   faq: [
     {
       q: 'Which breathwork app is best in 2026?',
-      a: 'It depends on what you want. Breathwrk ($49/yr) has the broadest library of techniques. Othership ($129.99/yr) offers music-driven sessions and live classes. The Wim Hof Method app ($42.99/yr) is the official app for one specific method with cold exposure. For most people starting out, Breathwrk is the most versatile choice.',
+      a: 'It depends on what you want. Othership ($129.99/yr) scores highest overall, with the largest library, music-driven sessions and live classes. Breathwrk ($49/yr) is the affordable guided option with a free plan. The Wim Hof Method app ($42.99/yr) is the official app for one specific method with cold exposure.',
     },
     {
       q: 'Is Breathwrk or Othership better?',
-      a: 'Breathwrk wins on technique coverage and price ($49 vs $129.99 a year). Othership wins on production and live community classes. Pick Breathwrk for structured daily practice; pick Othership if the music and community are what keep you practising.',
+      a: 'Othership scores higher overall (7.7 vs 7.5) on library size, production and live community classes. Breathwrk wins on price ($49 vs $129.99 a year) and has a free plan. Pick Breathwrk for an affordable guided routine; pick Othership if the music and community are what keep you practising.',
     },
     {
       q: 'How much do Breathwrk, Othership and the Wim Hof Method app cost?',
@@ -47,17 +47,17 @@ const breathwrkVsOthershipVsWhm: HeadToHeadInput = {
     },
     {
       q: 'Do I need the Wim Hof Method app if I already use Breathwrk?',
-      a: 'Only if the Wim Hof method is your main practice. The official app adds structured progression and cold-exposure guidance. If you want Wim Hof-style rounds as one technique among many, Breathwrk covers it.',
+      a: 'Only if the Wim Hof method is your main practice. The official app adds structured progression and cold-exposure guidance. Breathwrk\'s official materials do not list Wim Hof-style rounds, so use the official app if that method is what you want.',
     },
   ],
   content: `## The short answer
 
-Breathwrk is the best all-round breathwork app: the broadest library of techniques for $49 a year, and free with some Peloton memberships. Othership costs $129.99 a year and is worth it only if music-driven sessions and live classes keep you practising. The Wim Hof Method app is the cheapest at $42.99 a year, but it teaches one method — choose it only if that method is what you want.
+Othership scores highest overall, for its large library, music-driven sessions and live classes — at $129.99 a year. Breathwrk is the affordable guided option: exercises, daily classes and programs for $49 a year, and free with some Peloton memberships. The Wim Hof Method app is the cheapest at $42.99 a year, but it teaches one method — choose it only if that method is what you want.
 
 | | Breathwrk | Othership | Wim Hof Method app |
 |---|---|---|---|
-| Best at | Broad technique library | Music-driven sessions, live classes | The Wim Hof method + cold exposure |
-| Techniques | Many (box, 4-7-8, cyclic sighing, coherent breathing…) | Mostly rhythmic, music-led | One method |
+| Best at | Affordable guided routine | Music-driven sessions, live classes | The Wim Hof method + cold exposure |
+| Techniques | Box, 4-7-8, humming, long exhale and more | Mostly rhythmic, music-led | One method |
 | Annual price (US) | $49 | $129.99 | $42.99 |
 | Monthly price (US) | $9 | $17.99 | $5.99 |
 | Free content | Free tier | 5 rotating free sessions | Free basic version |
@@ -65,7 +65,7 @@ Breathwrk is the best all-round breathwork app: the broadest library of techniqu
 
 ## Choose Breathwrk if…
 
-- you want to try many techniques and keep the ones that work for you;
+- you want an affordable guided routine with a free plan to start;
 - you want short, structured daily sessions;
 - you already pay for Peloton All-Access, Guide or App+ (Breathwrk is included).
 
@@ -93,7 +93,7 @@ Wim Hof breathing is rapid, deep breathing followed by breath-holds. It can caus
 
 ## What does the research say?
 
-Two techniques in these apps have solid trial data. In a Stanford randomised trial, five minutes a day of cyclic sighing improved mood and lowered breathing rate more than mindfulness meditation (Balban 2023). In a Radboud University trial, people trained in the Wim Hof method showed a smaller inflammatory response to an injected bacterial toxin (Kox 2014) — the [breathing, not the cold, appears to drive that effect](/articles/wim-hof-breathing-inflammation). Apps themselves have not been tested head to head. For the honest picture on what breathing does to HRV, see [what breathing and cold really do to your HRV](/articles/hrv-breathing-cold-honest-limits).
+Two breathing techniques have solid trial data. In a Stanford randomised trial, five minutes a day of cyclic sighing improved mood and lowered breathing rate more than mindfulness meditation (Balban 2023). In a Radboud University trial, people trained in the Wim Hof method showed a smaller inflammatory response to an injected bacterial toxin (Kox 2014) — the [breathing, not the cold, appears to drive that effect](/articles/wim-hof-breathing-inflammation). Apps themselves have not been tested head to head. For the honest picture on what breathing does to HRV, see [what breathing and cold really do to your HRV](/articles/hrv-breathing-cold-honest-limits).
 
 ## Related comparisons
 
@@ -103,11 +103,11 @@ Two techniques in these apps have solid trial data. In a Stanford randomised tri
 
 - Balban MY et al. (2023). Brief structured respiration practices enhance mood and reduce physiological arousal. *Cell Reports Medicine* 4(1):100895. [doi:10.1016/j.xcrm.2022.100895](https://doi.org/10.1016/j.xcrm.2022.100895)
 - Kox M et al. (2014). Voluntary activation of the sympathetic nervous system and attenuation of the innate immune response in humans. *PNAS* 111(20):7379–7384. [doi:10.1073/pnas.1322174111](https://doi.org/10.1073/pnas.1322174111)
-- [Breathwrk — official site](https://breathwrk.com/) (Pro pricing, Peloton membership), [Othership on the App Store](https://apps.apple.com/us/app/othership/id1590348936) and [Wim Hof Method on the App Store](https://apps.apple.com/us/app/wim-hof-method/id890471578), checked 2026-10-03`,
+- [Breathwrk — official site](https://breathwrk.com/) (Pro pricing, Peloton membership; checked 2026-10-11), [Breathwrk on the App Store](https://apps.apple.com/us/app/breathwrk-breathing-exercises/id1481804500) (checked 2026-10-11), [Othership on the App Store](https://apps.apple.com/us/app/othership/id1590348936) and [Wim Hof Method on the App Store](https://apps.apple.com/us/app/wim-hof-method/id890471578), checked 2026-10-03`,
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-11',
 }
 
 export default breathwrkVsOthershipVsWhm

@@ -13,7 +13,7 @@ const somaBreath: ToolReviewInput = {
   summary:
     'SOMA Breath is the rhythmic music breathwork reference — Niraj Naik’s method paces breath to beat-driven tracks, often layered with Wim Hof rounds and pranayama elements. Distinguished by the global practitioner certification network (hundreds of SOMA-certified facilitators worldwide). Strong ceremony framing, moderate evidence grounding, mid-tier subscription pricing.',
   scores: [
-    { criterionId: 'session-library', score: 8.0, note: 'Solid library of rhythmic music-paced sessions across awakening, healing, calm and ceremony. Smaller than Breathwrk but deeper per-session production.' },
+    { criterionId: 'session-library', score: 8.0, note: 'Solid library of rhythmic music-paced sessions across awakening, healing, calm and ceremony. Smaller than Othership’s catalogue, with deeper per-session production.' },
     { criterionId: 'technique-coverage', score: 7.5, note: 'Wim Hof rounds, pranayama, breath retentions, rhythmic-music pacing. Less Buteyko / clinical-modality coverage than Breathwrk; deeper into rhythmic crossover.' },
     { criterionId: 'evidence-grounding', score: 6.5, note: 'Cites general breath physiology and Wim Hof research; ceremony framing dominates the marketing. Less peer-reviewed citation depth than Breathwrk.' },
     { criterionId: 'app-experience', score: 7.5, note: 'Clean app experience, music-paced visual cues. Beat-driven sessions feel different from voice-guided counterparts.' },
@@ -71,7 +71,7 @@ Choose SOMA Breath for rhythmic music-paced breathwork with ceremony framing and
     { q: "What are the downsides of SOMA Breath?", a: "SOMA Breath is less science-informed than Breathwrk, has a smaller library and offers no HRV biofeedback. Its ceremony framing may also not suit users seeking pure clinical breathwork without the journey-style production." },
   ],
   datePublished: '2026-06-29',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-11',
 }
 
 export default somaBreath

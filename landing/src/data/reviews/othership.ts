@@ -13,7 +13,7 @@ const othership: ToolReviewInput = {
   summary:
     'Othership is the premium breathwork brand crossover from physical sauna/cold-plunge spaces in Toronto. The app delivers cinematic music-driven journeys (down-regulation, up-regulation, ceremony) with live community classes scheduled daily. Production value is the highest in the category — voiceovers, soundscapes and session arcs feel curated, not generated. $129.99/year is the highest sub price; the music + community thesis justifies it for the right user.',
   scores: [
-    { criterionId: 'session-library', score: 8.5, note: 'Curated library organised around down-regulate (calm/sleep), up-regulate (energy/focus), ceremony (longer 30–60 min journeys). Smaller than Breathwrk in raw count but higher production value per session.' },
+    { criterionId: 'session-library', score: 8.5, note: 'Curated library organised around down-regulate (calm/sleep), up-regulate (energy/focus), ceremony (longer 30–60 min journeys). 500+ on-demand sessions with high production value per session.' },
     { criterionId: 'technique-coverage', score: 7.5, note: 'Full breathwork modalities — box, Wim Hof, holotropic, cyclic sighing — but leans into rhythmic-music breathwork. Less Buteyko / clinical-research focus than Breathwrk.' },
     { criterionId: 'evidence-grounding', score: 7.0, note: 'Cites the Stanford cyclic-sighing trial and polyvagal theory (a debated model, so no evidence credit), but leans more on lived-experience and ceremony framing than peer-reviewed citations.' },
     { criterionId: 'app-experience', score: 9.0, note: 'Best UX in category — cinematic visuals, immersive audio, low session-start friction. Live class layer is unique in breathwork apps.' },
@@ -28,8 +28,7 @@ const othership: ToolReviewInput = {
   ],
   cons: [
     '$129.99/year — highest premium subscription in breathwork apps',
-    'Less peer-reviewed evidence citation than Breathwrk',
-    'Smaller raw session count than Breathwrk',
+    'Little peer-reviewed evidence citation; leans on ceremony framing',
     'Less Buteyko / clinical-research focus',
   ],
   bestFor: 'Best for users buying breathwork as an experience — music-driven, cinematic, with live community — and willing to absorb the premium subscription.',
@@ -71,7 +70,7 @@ Choose Othership if you want breathwork as cinematic experience with music and l
     { q: "Othership vs Breathwrk: which is better?", a: "Othership is better for immersive, music-driven sessions and daily live classes. Breathwrk is better for evidence citation, raw session count and Buteyko or clinical-research focus. Pick based on whether you want an experience or structured, evidence-led practice." },
   ],
   datePublished: '2026-06-29',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-11',
 }
 
 export default othership

@@ -13,7 +13,7 @@ const inhale: ToolReviewInput = {
   summary:
     'Inhale by Aero Health is the only breathwork app that closes the biofeedback loop with HRV measurement — pre-session Apple Watch HRV reading, guided breath protocol, post-session HRV reading, app adapts recommendations based on response. Library is narrower than Breathwrk but the HRV-driven personalisation is unique. Best fit for HRV-obsessed biohackers.',
   scores: [
-    { criterionId: 'session-library', score: 6.0, note: 'Modest library of structured protocols. Smaller than Breathwrk or Othership; designed around HRV-response measurement rather than content breadth.' },
+    { criterionId: 'session-library', score: 6.0, note: 'Modest library of structured protocols. Smaller than Othership’s or Breathwrk’s; designed around HRV-response measurement rather than content breadth.' },
     { criterionId: 'technique-coverage', score: 6.5, note: 'Core HRV-responsive techniques (coherent breathing, box, 4-7-8, cyclic sighing). Less holotropic / ceremony coverage.' },
     { criterionId: 'evidence-grounding', score: 7.5, note: 'Builds on HRV-biofeedback research (Lehrer, Vaschillo) and the resonant-breathing literature. Closer alignment with published HRV-protocol research than most apps.' },
     { criterionId: 'app-experience', score: 7.0, note: 'Apple Watch native, clean session UI. HRV reading integration is the differentiator.' },
@@ -70,7 +70,7 @@ Choose Inhale by Aero Health if you wear Apple Watch and want HRV-driven adaptiv
   ],
 
   datePublished: '2026-06-29',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-11',
 }
 
 export default inhale

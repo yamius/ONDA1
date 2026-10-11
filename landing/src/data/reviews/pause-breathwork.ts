@@ -13,7 +13,7 @@ const pauseBreathwork: ToolReviewInput = {
   summary:
     'Pause Breathwork is Samantha Skelly’s somatic / emotional-release-focused app — longer journey-style sessions (20–60 min) with trauma-informed framing, intentional emotional-release language and a strong female-founded community. The differentiator is somatic depth, not structured-protocol breadth. Best for users buying breathwork as emotional / somatic-release tool, not as nervous-system protocol.',
   scores: [
-    { criterionId: 'session-library', score: 7.0, note: 'Solid library of longer journey-style sessions (20–60 min). Smaller than Breathwrk in count; deeper in per-session length and emotional arc.' },
+    { criterionId: 'session-library', score: 7.0, note: 'Solid library of longer journey-style sessions (20–60 min). Smaller than Othership in count; deeper in per-session length and emotional arc.' },
     { criterionId: 'technique-coverage', score: 5.5, note: 'Somatic / holotropic-style breathwork dominates. Less coverage of box, 4-7-8, Buteyko or clinical-protocol techniques.' },
     { criterionId: 'evidence-grounding', score: 6.5, note: 'Trauma-informed framing draws on somatic-experiencing literature (Peter Levine, Bessel van der Kolk). Less peer-reviewed citation than Breathwrk; deeper somatic-therapy grounding.' },
     { criterionId: 'app-experience', score: 7.5, note: 'Clean, calm UX. Longer session format means less daily-snackable use; deeper journey arcs.' },
@@ -69,7 +69,7 @@ Choose Pause Breathwork if you're buying breathwork for somatic / emotional rele
     { q: "What are the downsides of Pause Breathwork?", a: "Pause has a narrow, somatic and holotropic-dominant technique scope, is less suited to daily structured breath practice, offers no HRV biofeedback, and its longer sessions do not fit short daily windows. It is built for emotional release, not a quick structured daily protocol." },
   ],
   datePublished: '2026-06-29',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-11',
 }
 
 export default pauseBreathwork

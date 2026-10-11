@@ -75,8 +75,8 @@
           ]
         },
         {
-          "tag": "Najlepsza biblioteka oddechu, bez udokumentowanej pętli HRV",
-          "blurb": "Breathwrk (obecnie część Peloton) ma jeden z najszerszych wyborów prowadzonych ćwiczeń oddechowych — na iOS, Androidzie i w przeglądarce. Jej oficjalne materiały nie opisują obecnie informacji zwrotnej z tętna ani HRV, więc traktuj ją jako aplikację z treściami oddechowymi: świetną do techniki, ale nie pętlę HRV na żywo.",
+          "tag": "Biblioteka prowadzonego oddechu, bez udokumentowanej pętli HRV",
+          "blurb": "Breathwrk (obecnie część Peloton) oferuje bibliotekę prowadzonych ćwiczeń oddechowych (ponad 50, ponad 100 w Pro), codzienne zajęcia i programy — na iOS, Androidzie i w przeglądarce. Jej oficjalne materiały nie opisują obecnie informacji zwrotnej z tętna ani HRV, więc traktuj ją jako aplikację z treściami oddechowymi: świetną do techniki, ale nie pętlę HRV na żywo.",
           "pros": [
             "Duża biblioteka prowadzonych ćwiczeń oddechowych i zajęć",
             "iOS, Android i przeglądarka; darmowy plan, w pakiecie z niektórymi członkostwami Peloton"
@@ -87,7 +87,7 @@
           ]
         }
       ],
-      "bottomLine": "Jeśli chcesz, by oddech i informacja zwrotna z serca w czasie rzeczywistym połączyły się w jedną prowadzoną pętlę, prowadzi ONDA z Apple Watch. Jeśli chcesz surowej precyzji pomiaru z pacerem — Elite HRV z pasem piersiowym lub czujnikiem na palec. Do zwalidowanego naukowo codziennego pomiaru — HRV4Training (plus HRV4Biofeedback do pętli oddechowej). Do największej biblioteki ćwiczeń oddechowych — Breathwrk. I żadna z nich nie jest pasywnym całodobowym trackerem — do nocnego trendu HRV połącz ją z Apple Watch, Oura lub WHOOP.",
+      "bottomLine": "Jeśli chcesz połączyć oddech i informację zwrotną z serca w czasie rzeczywistym w jedną prowadzoną pętlę, prowadzi ONDA z Apple Watch. Jeśli chcesz surowej precyzji pomiaru z pacerem — Elite HRV z pasem piersiowym lub czujnikiem na palec. Dla zwalidowanego naukowo codziennego odczytu — HRV4Training (plus HRV4Biofeedback do pętli oddechowej). Dla przystępnej cenowo biblioteki prowadzonego oddechu — Breathwrk. I żadna z nich nie jest pasywnym całodobowym trackerem — po nocny trend HRV połącz ją z Apple Watch, Oura lub WHOOP.",
       "faq": [
         {
           "q": "Która aplikacja łączy oddech, HRV i informację zwrotną w czasie rzeczywistym?",

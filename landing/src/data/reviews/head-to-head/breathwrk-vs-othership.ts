@@ -6,58 +6,58 @@ const breathwrkVsOthership: HeadToHeadInput = {
   productBSlug: 'othership',
   title: 'Breathwrk vs Othership (2026)',
   description:
-    'Breathwrk vs Othership — structured, science-informed library vs cinematic music-driven premium experience. ONDA breaks down the breathwork app top two.',
+    'Breathwrk vs Othership — affordable guided library vs cinematic music-driven premium experience. ONDA breaks down the two breathwork apps people compare most.',
   intro:
-    'Breathwrk and Othership are the two breathwork apps users compare when picking a premium daily practice tool. The defining difference is the thesis: Breathwrk bets on structured library depth and science-informed copy, backed by one published study on cyclic sighing; Othership bets on cinematic music-driven production and live community.',
+    'Breathwrk and Othership are the two breathwork apps users compare when picking a daily practice tool. The defining difference is the thesis: Breathwrk (now part of Peloton) is an affordable guided library of exercises, daily classes and programs; Othership bets on cinematic music-driven production and live community. Neither measures heart rate or HRV.',
   jobDependentVerdict: true,
   verdict:
-    'Structured library vs cinematic experience. Breathwrk for the largest structured catalogue, with science-informed copy backed by one published study on cyclic sighing, at the best premium price. Othership for music-driven premium experience with live community.',
+    'Othership scores higher overall (7.7 vs 7.5): a larger library, cinematic production and live community. Breathwrk is the budget pick — a guided library with a free plan at about $49/year.',
   bestForA:
-    'Choose Breathwrk if you want the largest structured breathwork library with full technique coverage and science-informed copy, backed by one published study on cyclic sighing, at $49/year.',
+    'Choose Breathwrk if you want an affordable guided routine — 50+ exercises free, 100+ on Pro, daily classes and programs — for about $49/year, or free with some Peloton memberships.',
   bestForB:
     'Choose Othership if you want cinematic music-driven sessions with live community classes and you accept $129.99/year.',
   axes: [
-    { name: 'Library size', winner: 'a', note: 'Breathwrk: hundreds of structured sessions across goals and techniques. Othership: curated smaller library with higher per-session production. Breathwrk wins on raw breadth.' },
-    { name: 'Technique coverage', winner: 'a', note: 'Breathwrk: full coverage (box, 4-7-8, Wim Hof, Tummo, cyclic sighing, Buteyko, coherent breathing). Othership: leans into rhythmic music breathwork.' },
-    { name: 'Evidence grounding', winner: 'a', note: 'Breathwrk: cites the peer-reviewed Stanford cyclic-sighing trial (its polyvagal and Huberman references earn no evidence credit). Othership: ceremony framing dominates over peer-reviewed citation.' },
-    { name: 'Production / UX', winner: 'b', note: 'Othership: cinematic visuals, immersive audio, live community classes. Breathwrk: clean functional UI without cinematic ambitions.' },
-    { name: 'Community', winner: 'b', note: 'Othership: live daily classes, brand crossover from Toronto sauna spaces. Breathwrk: solo practice — no community layer.' },
-    { name: 'Apple Watch / biofeedback', winner: 'tie', note: 'Both offer Apple Watch and Apple Health integration; neither closes a true HRV-driven biofeedback loop. Tie on this axis.' },
-    { name: 'Price', winner: 'a', note: 'Breathwrk: $49/year. Othership: $129.99/year. Breathwrk costs less than half as much.' },
+    { name: 'Library size', winner: 'b', note: 'Othership: 500+ on-demand sessions. Breathwrk: 50+ exercises (100+ on Pro) plus daily classes and programs (official site and App Store, accessed 2026-10-11). Othership is larger.' },
+    { name: 'Technique coverage', winner: 'tie', note: 'Breathwrk: officially named techniques include box breathing, 4-7-8, humming and long-exhale patterns. Othership: leans into rhythmic, music-led sessions. Both score 7.5 on this axis.' },
+    { name: 'Evidence grounding', winner: 'b', note: 'Breathwrk’s App Store copy says the exercises improve HRV, heart rate and blood pressure without citing studies. Othership leans on experience and ceremony framing; it scores slightly higher (7.0 vs 6.5).' },
+    { name: 'Production / UX', winner: 'b', note: 'Othership: cinematic visuals, immersive audio, live community classes. Breathwrk: clean functional UI with video classes.' },
+    { name: 'Community', winner: 'b', note: 'Othership: live daily classes. Breathwrk: mostly solo practice.' },
+    { name: 'Apple Watch / biofeedback', winner: 'b', note: 'Neither measures heart rate or HRV. Breathwrk has no Apple Watch app and logs only Mindfulness Minutes to Apple Health (official site and App Store, accessed 2026-10-11); Othership scores higher on this axis (6.0 vs 4.5).' },
+    { name: 'Price', winner: 'a', note: 'Breathwrk: about $49/year with a free plan and 7-day trial. Othership: $129.99/year. Breathwrk costs less than half as much.' },
   ],
   faq: [
     {
       q: 'Breathwrk or Othership — which is better?',
-      a: 'Different theses. Breathwrk wins on library depth, technique coverage, science-informed copy (one published study on cyclic sighing) and price. Othership wins on production value, music-driven sessions and live community.',
+      a: 'Othership scores higher overall (7.7 vs 7.5) on library size, production value and live community. Breathwrk wins on price, with a free plan and a guided library of exercises, classes and programs.',
     },
     {
       q: 'Is Othership worth $129.99/year?',
-      a: 'For users buying breathwork as cinematic experience with music + community — yes. For users who want structured nervous-system practice, Breathwrk delivers more depth for less than half the price.',
+      a: 'For users buying breathwork as a cinematic experience with music and community — yes. If you mainly want a guided daily routine, Breathwrk costs less than half as much.',
     },
     {
-      q: 'Which has better evidence base?',
-      a: 'Breathwrk — its copy cites the peer-reviewed Stanford cyclic-sighing trial; it also cites polyvagal theory, a debated model, and Huberman lab protocols, which we do not count as evidence. Othership leans on ceremony framing without comparable peer-reviewed citation.',
+      q: 'Does either app measure HRV?',
+      a: 'No. Neither closes an HRV biofeedback loop. Breathwrk measures no heart rate or HRV and has no Apple Watch app (official site and App Store, accessed 2026-10-11). For HRV biofeedback, look at Inhale in our breathwork round-up.',
     },
     {
       q: 'Can I use both?',
-      a: 'Yes — Breathwrk for structured daily practice, Othership for occasional cinematic / community journey sessions. At $49 + $129.99 ≈ $179/yr the stack is expensive but each fills the other\'s gap.',
+      a: 'Yes — Breathwrk for a short guided daily routine, Othership for occasional cinematic or community sessions. At $49 + $129.99 ≈ $179/yr the stack is expensive, but each fills the other\'s gap.',
     },
   ],
   content: `## The short version
 
-Both are premium-tier breathwork apps. Breathwrk is a large structured library. Othership is built around cinematic, experience-led sessions.
+Both are breathwork apps without heart-rate or HRV measurement. Othership scores higher overall for its larger library, cinematic sessions and live community. Breathwrk is the affordable guided library.
 
 ## When is Breathwrk the right pick?
 
-If you want the largest structured catalogue, broadest technique coverage and science-informed copy, backed by one published study on cyclic sighing, at the best price — Breathwrk is the right shape. The rational default for daily breathwork practice.
+If you want a guided daily routine — exercises, daily classes and programs — with a free plan and Pro at about $49 a year (or free with some Peloton memberships), Breathwrk is the right shape.
 
 ## When is Othership the right pick?
 
-If you want breathwork as cinematic music-driven experience with live community classes — Othership is the right shape. Production value the rest of the category cannot match. Accept the higher subscription.`,
+If you want breathwork as a cinematic, music-driven experience with live community classes — Othership is the right shape. Production value the rest of the category cannot match. Accept the higher subscription.`,
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-11',
 }
 
 export default breathwrkVsOthership

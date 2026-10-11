@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10",
+  "generatedAt": "2026-10-11",
   "source": "https://onda-life.com/reviews",
   "reviews": [
     {
@@ -117,7 +117,7 @@
         {
           "id": "value",
           "score": 9,
-          "note": "Around 90 USD, no subscription, and reliable for years — the cheapest device in this comparison."
+          "note": "About 105 USD, no subscription, and reliable for years — the cheapest device in this comparison."
         }
       ],
       "verdict": "A chest-strap ECG that matched lab ECG almost perfectly in young healthy adults at rest — a reference instrument, not an all-day wearable.",
@@ -2847,7 +2847,7 @@
         {
           "id": "mechanism",
           "score": 9,
-          "note": "Transcutaneous auricular VNS at the tragus, the most-studied non-invasive target, The trials that name Nurosym report its frequency and pulse width (20–25 Hz, 200–250 µs); the waveform itself is proprietary."
+          "note": "Transcutaneous auricular VNS at the tragus, the most-studied non-invasive target. The trials that name Nurosym report its frequency and pulse width (20–25 Hz, 200–250 µs); the waveform itself is proprietary."
         },
         {
           "id": "protocols",
@@ -8188,70 +8188,6 @@
       "dateModified": "2026-10-10"
     },
     {
-      "slug": "breathwrk",
-      "name": "Breathwrk",
-      "brand": "Breathwrk",
-      "category": "breathwork-app",
-      "productType": "Guided breathwork app with structured library",
-      "url": "https://onda-life.com/reviews/breathwrk",
-      "categoryUrl": "https://onda-life.com/reviews/breathwork-apps",
-      "priceUsd": 49,
-      "priceNote": "Breathwrk Pro annual ($9/month monthly); free tier available; included with Peloton All-Access, Guide and App+ (Breathwrk is now part of Peloton)",
-      "priceAsOf": "2026-10-03",
-      "score": 8.4,
-      "scores": [
-        {
-          "id": "session-library",
-          "score": 9,
-          "note": "Largest structured breathwork library — hundreds of guided sessions organised by goal (calm, sleep, energy, focus, performance) and technique. New content adds monthly."
-        },
-        {
-          "id": "technique-coverage",
-          "score": 9,
-          "note": "Full coverage — box breathing, 4-7-8, Wim Hof rounds, Tummo, cyclic sighing (Stanford-validated), coherent breathing, Buteyko, alternate-nostril. Almost no documented technique missing."
-        },
-        {
-          "id": "evidence-grounding",
-          "score": 7.5,
-          "note": "Copy cites the Stanford cyclic-sighing trial, a real peer-reviewed study. It also leans on polyvagal theory (a debated model) and Andrew Huberman protocols, which we do not count as peer-reviewed evidence."
-        },
-        {
-          "id": "app-experience",
-          "score": 8.5,
-          "note": "Clean UI with animated breath guides, audio coaching and Apple Watch native support. Session-start friction low."
-        },
-        {
-          "id": "biofeedback",
-          "score": 6.5,
-          "note": "Apple Health integration, Apple Watch breath rate, basic streak tracking. No HRV-driven session adaptation — guided rather than measurement-driven."
-        },
-        {
-          "id": "value",
-          "score": 8.5,
-          "note": "$49/year (or $9/month) with a usable free tier, and included for Peloton All-Access, Guide and App+ members. Best value in premium breathwork — cheaper than Othership, far deeper library than free apps."
-        }
-      ],
-      "verdict": "Best breathwork library overall — biggest session catalogue, science-informed copy, backed by one published study on cyclic sighing, full technique coverage. A large, long-running library for structured daily practice.",
-      "bestFor": "Best for users wanting the largest structured breathwork library, science-informed copy backed by one published study on cyclic sighing, and full technique coverage — the rational default for daily practice.",
-      "pros": [
-        "Largest structured breathwork library in the category",
-        "Full technique coverage — box, 4-7-8, Wim Hof, Tummo, cyclic sighing, Buteyko",
-        "Science-informed copy, backed by one published study on cyclic sighing (Stanford)",
-        "Apple Watch native support with clean UI"
-      ],
-      "cons": [
-        "No HRV-driven session adaptation (guided rather than biofeedback-driven)",
-        "No community / live-session layer (vs Othership)",
-        "Subscription-required for the deep library",
-        "Less holotropic / emotional-release focus than Pause or SOMA"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
       "slug": "othership",
       "name": "Othership",
       "brand": "Othership",
@@ -8267,7 +8203,7 @@
         {
           "id": "session-library",
           "score": 8.5,
-          "note": "Curated library organised around down-regulate (calm/sleep), up-regulate (energy/focus), ceremony (longer 30–60 min journeys). Smaller than Breathwrk in raw count but higher production value per session."
+          "note": "Curated library organised around down-regulate (calm/sleep), up-regulate (energy/focus), ceremony (longer 30–60 min journeys). 500+ on-demand sessions with high production value per session."
         },
         {
           "id": "technique-coverage",
@@ -8305,15 +8241,79 @@
       ],
       "cons": [
         "$129.99/year — highest premium subscription in breathwork apps",
-        "Less peer-reviewed evidence citation than Breathwrk",
-        "Smaller raw session count than Breathwrk",
+        "Little peer-reviewed evidence citation; leans on ceremony framing",
         "Less Buteyko / clinical-research focus"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": null,
       "worksWithOnda": "not-a-device",
       "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
+      "dateModified": "2026-10-11"
+    },
+    {
+      "slug": "breathwrk",
+      "name": "Breathwrk",
+      "brand": "Breathwrk",
+      "category": "breathwork-app",
+      "productType": "Guided breathing-exercise app with classes and programs",
+      "url": "https://onda-life.com/reviews/breathwrk",
+      "categoryUrl": "https://onda-life.com/reviews/breathwork-apps",
+      "priceUsd": 49,
+      "priceNote": "Breathwrk Pro annual ($9/month monthly); 7-day free trial; free plan available; included with Peloton All-Access, Guide and App+ (Breathwrk is now part of Peloton)",
+      "priceAsOf": "2026-10-11",
+      "score": 7.5,
+      "scores": [
+        {
+          "id": "session-library",
+          "score": 8,
+          "note": "50+ exercises on the free plan and 100+ on Pro, plus daily video classes and multi-day programs (official site and App Store, accessed 2026-10-11). Substantial, but smaller than Othership’s catalogue, so not the largest in the category."
+        },
+        {
+          "id": "technique-coverage",
+          "score": 7.5,
+          "note": "Officially named techniques include box breathing, 4-7-8, humming and long-exhale patterns, plus breath-hold tests. A fuller technique list is not documented in official materials, so we do not credit techniques we cannot confirm."
+        },
+        {
+          "id": "evidence-grounding",
+          "score": 6.5,
+          "note": "The App Store listing says the exercises improve HRV and lower heart rate and blood pressure, but cites no studies for those claims (accessed 2026-10-11). Slow breathing does have research support in general; the app’s own claims are uncited."
+        },
+        {
+          "id": "app-experience",
+          "score": 8,
+          "note": "Clean UI with animated breath guides, audio coaching and video classes, on iOS, Android, web, Mac and Vision. No Apple Watch app (App Store compatibility list, accessed 2026-10-11)."
+        },
+        {
+          "id": "biofeedback",
+          "score": 4.5,
+          "note": "Logs Mindfulness Minutes to Apple Health and offers breath-hold “lung score” tests, but measures no heart rate or HRV and has no sensor integration (official site and App Store, accessed 2026-10-11)."
+        },
+        {
+          "id": "value",
+          "score": 8.5,
+          "note": "$49/year (or $9/month) with a usable free tier, and included for Peloton All-Access, Guide and App+ members. Best value in premium breathwork — cheaper than Othership, with a 7-day trial and a usable free plan."
+        }
+      ],
+      "verdict": "A well-priced guided breathing library — exercises, daily classes and programs with a free tier and Peloton inclusion — but no heart-rate or HRV feedback, and its benefit claims go uncited.",
+      "bestFor": "Best for people who want an affordable guided breathing routine — exercises, daily classes and programs — and do not need to see their heart rate or HRV respond.",
+      "pros": [
+        "50+ guided exercises (100+ on Pro), daily classes and multi-day programs",
+        "Free plan; Pro about $49/year with a 7-day trial, included with some Peloton memberships",
+        "Runs on iOS, Android, web, Mac and Vision",
+        "Clean UI with animated breath guides and audio coaching"
+      ],
+      "cons": [
+        "No heart-rate or HRV measurement and no Apple Watch app",
+        "Benefit claims (HRV, heart rate, blood pressure) are not cited",
+        "No community / live-session layer (vs Othership)",
+        "Subscription required for the full library",
+        "Less holotropic / emotional-release focus than Pause or SOMA"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-11"
     },
     {
       "slug": "soma-breath",
@@ -8331,7 +8331,7 @@
         {
           "id": "session-library",
           "score": 8,
-          "note": "Solid library of rhythmic music-paced sessions across awakening, healing, calm and ceremony. Smaller than Breathwrk but deeper per-session production."
+          "note": "Solid library of rhythmic music-paced sessions across awakening, healing, calm and ceremony. Smaller than Othership’s catalogue, with deeper per-session production."
         },
         {
           "id": "technique-coverage",
@@ -8377,7 +8377,7 @@
       "hrvMetric": null,
       "worksWithOnda": "not-a-device",
       "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
+      "dateModified": "2026-10-11"
     },
     {
       "slug": "open-app",
@@ -8523,7 +8523,7 @@
         {
           "id": "session-library",
           "score": 6,
-          "note": "Modest library of structured protocols. Smaller than Breathwrk or Othership; designed around HRV-response measurement rather than content breadth."
+          "note": "Modest library of structured protocols. Smaller than Othership’s or Breathwrk’s; designed around HRV-response measurement rather than content breadth."
         },
         {
           "id": "technique-coverage",
@@ -8569,7 +8569,7 @@
       "hrvMetric": null,
       "worksWithOnda": "not-a-device",
       "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
+      "dateModified": "2026-10-11"
     },
     {
       "slug": "prana-breath",
@@ -8651,7 +8651,7 @@
         {
           "id": "session-library",
           "score": 7,
-          "note": "Solid library of longer journey-style sessions (20–60 min). Smaller than Breathwrk in count; deeper in per-session length and emotional arc."
+          "note": "Solid library of longer journey-style sessions (20–60 min). Smaller than Othership in count; deeper in per-session length and emotional arc."
         },
         {
           "id": "technique-coverage",
@@ -8697,7 +8697,7 @@
       "hrvMetric": null,
       "worksWithOnda": "not-a-device",
       "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
+      "dateModified": "2026-10-11"
     },
     {
       "slug": "ibreathe",
@@ -20862,52 +20862,52 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Breathwrk (8.4 vs 7.7)",
+      "label": "Higher ONDA score: Othership (7.7 vs 7.5)",
       "onda_scores": {
-        "breathwrk": 8.4,
+        "breathwrk": 7.5,
         "othership": 7.7
       },
-      "verdict": "Structured library vs cinematic experience. Breathwrk for the largest structured catalogue, with science-informed copy backed by one published study on cyclic sighing, at the best premium price. Othership for music-driven premium experience with live community.",
+      "verdict": "Othership scores higher overall (7.7 vs 7.5): a larger library, cinematic production and live community. Breathwrk is the budget pick — a guided library with a free plan at about $49/year.",
       "bestFor": {
-        "a": "Choose Breathwrk if you want the largest structured breathwork library with full technique coverage and science-informed copy, backed by one published study on cyclic sighing, at $49/year.",
+        "a": "Choose Breathwrk if you want an affordable guided routine — 50+ exercises free, 100+ on Pro, daily classes and programs — for about $49/year, or free with some Peloton memberships.",
         "b": "Choose Othership if you want cinematic music-driven sessions with live community classes and you accept $129.99/year.",
         "c": null
       },
       "axes": [
         {
           "name": "Library size",
-          "winner": "a",
-          "note": "Breathwrk: hundreds of structured sessions across goals and techniques. Othership: curated smaller library with higher per-session production. Breathwrk wins on raw breadth."
+          "winner": "b",
+          "note": "Othership: 500+ on-demand sessions. Breathwrk: 50+ exercises (100+ on Pro) plus daily classes and programs (official site and App Store, accessed 2026-10-11). Othership is larger."
         },
         {
           "name": "Technique coverage",
-          "winner": "a",
-          "note": "Breathwrk: full coverage (box, 4-7-8, Wim Hof, Tummo, cyclic sighing, Buteyko, coherent breathing). Othership: leans into rhythmic music breathwork."
+          "winner": "tie",
+          "note": "Breathwrk: officially named techniques include box breathing, 4-7-8, humming and long-exhale patterns. Othership: leans into rhythmic, music-led sessions. Both score 7.5 on this axis."
         },
         {
           "name": "Evidence grounding",
-          "winner": "a",
-          "note": "Breathwrk: cites the peer-reviewed Stanford cyclic-sighing trial (its polyvagal and Huberman references earn no evidence credit). Othership: ceremony framing dominates over peer-reviewed citation."
+          "winner": "b",
+          "note": "Breathwrk’s App Store copy says the exercises improve HRV, heart rate and blood pressure without citing studies. Othership leans on experience and ceremony framing; it scores slightly higher (7.0 vs 6.5)."
         },
         {
           "name": "Production / UX",
           "winner": "b",
-          "note": "Othership: cinematic visuals, immersive audio, live community classes. Breathwrk: clean functional UI without cinematic ambitions."
+          "note": "Othership: cinematic visuals, immersive audio, live community classes. Breathwrk: clean functional UI with video classes."
         },
         {
           "name": "Community",
           "winner": "b",
-          "note": "Othership: live daily classes, brand crossover from Toronto sauna spaces. Breathwrk: solo practice — no community layer."
+          "note": "Othership: live daily classes. Breathwrk: mostly solo practice."
         },
         {
           "name": "Apple Watch / biofeedback",
-          "winner": "tie",
-          "note": "Both offer Apple Watch and Apple Health integration; neither closes a true HRV-driven biofeedback loop. Tie on this axis."
+          "winner": "b",
+          "note": "Neither measures heart rate or HRV. Breathwrk has no Apple Watch app and logs only Mindfulness Minutes to Apple Health (official site and App Store, accessed 2026-10-11); Othership scores higher on this axis (6.0 vs 4.5)."
         },
         {
           "name": "Price",
           "winner": "a",
-          "note": "Breathwrk: $49/year. Othership: $129.99/year. Breathwrk costs less than half as much."
+          "note": "Breathwrk: about $49/year with a free plan and 7-day trial. Othership: $129.99/year. Breathwrk costs less than half as much."
         }
       ]
     },
@@ -20921,37 +20921,37 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Breathwrk (8.4 vs 7.3)",
+      "label": "Higher ONDA score: Breathwrk (7.5 vs 7.3)",
       "onda_scores": {
-        "breathwrk": 8.4,
+        "breathwrk": 7.5,
         "soma-breath": 7.3
       },
-      "verdict": "Structured library vs rhythmic music. Breathwrk for the largest science-informed library at $49/year. SOMA Breath for beat-paced rhythmic breathwork with facilitator certification community.",
+      "verdict": "Close overall (7.5 vs 7.3). Breathwrk for an affordable guided library with a free plan at about $49/year. SOMA Breath for beat-paced rhythmic breathwork with a facilitator certification community.",
       "bestFor": {
-        "a": "Choose Breathwrk if you want the largest structured breathwork library, science-informed copy backed by one published study on cyclic sighing, and the broadest technique coverage.",
+        "a": "Choose Breathwrk if you want an affordable, voice-guided routine — 50+ exercises free, 100+ on Pro, daily classes and programs — at about half SOMA’s price.",
         "b": "Choose SOMA Breath if you want rhythmic music-paced breathwork with ceremony framing and access to a global certified-facilitator community.",
         "c": null
       },
       "axes": [
         {
           "name": "Library size",
-          "winner": "a",
-          "note": "Breathwrk: hundreds of structured sessions. SOMA: smaller curated library focused on music-paced journeys. Breathwrk wins on raw breadth."
+          "winner": "tie",
+          "note": "Breathwrk: 50+ exercises (100+ on Pro) plus daily classes and programs (official site and App Store, accessed 2026-10-11). SOMA: curated library of music-paced journeys. Both score 8.0."
         },
         {
           "name": "Technique coverage",
-          "winner": "a",
-          "note": "Breathwrk: full coverage including Buteyko / cyclic sighing / coherent breathing. SOMA: Wim Hof crossover + pranayama, less clinical-modality coverage."
+          "winner": "tie",
+          "note": "Breathwrk: officially named techniques include box breathing, 4-7-8, humming and long-exhale patterns. SOMA: Wim Hof crossover plus pranayama. Both score 7.5."
         },
         {
           "name": "Evidence grounding",
-          "winner": "a",
-          "note": "Breathwrk: peer-reviewed citation. SOMA: ceremony framing dominates over clinical citation."
+          "winner": "tie",
+          "note": "Breathwrk’s App Store copy claims HRV, heart-rate and blood-pressure benefits without citations. SOMA leans on ceremony framing and general breath physiology. Both score 6.5."
         },
         {
           "name": "Music-paced approach",
           "winner": "b",
-          "note": "SOMA: beat-driven rhythmic breath pacing — unique in the category. Breathwrk: voice-guided structured sessions."
+          "note": "SOMA: beat-driven rhythmic breath pacing — unique in the category. Breathwrk: voice-guided sessions."
         },
         {
           "name": "Community / certification",
@@ -20961,7 +20961,7 @@
         {
           "name": "Price",
           "winner": "a",
-          "note": "Breathwrk: $49/yr. SOMA Breath: $99/yr. Breathwrk about half the price."
+          "note": "Breathwrk: about $49/yr with a free plan. SOMA Breath: $99/yr. Breathwrk about half the price."
         }
       ]
     },
@@ -21138,33 +21138,33 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Breathwrk (8.4 vs 7.7 vs 6.9)",
+      "label": "Higher ONDA score: Othership (7.7 vs 7.5 vs 6.9)",
       "onda_scores": {
-        "breathwrk": 8.4,
+        "breathwrk": 7.5,
         "othership": 7.7,
         "wim-hof-method-app": 6.9
       },
-      "verdict": "Three different jobs, three right answers. Breathwrk for the broadest structured library; Othership for music-driven sessions and live classes; the Wim Hof Method app for the Wim Hof method specifically — and, at $42.99 a year, the cheapest subscription of the three.",
+      "verdict": "Three different jobs, three right answers. Othership scores highest overall (7.7) for its library, music-driven sessions and live classes; Breathwrk (7.5) for an affordable guided routine with a free plan; the Wim Hof Method app for the Wim Hof method specifically — and, at $42.99 a year, the cheapest subscription of the three.",
       "bestFor": {
-        "a": "Choose Breathwrk if you want the broadest structured breathwork library, covering most known techniques, for $49 a year — or free if you already pay for Peloton All-Access, Guide or App+.",
+        "a": "Choose Breathwrk if you want an affordable guided routine — exercises, daily classes and programs — for about $49 a year, or free if you already pay for Peloton All-Access, Guide or App+.",
         "b": "Choose Othership if you want music-driven sessions and live community classes and are willing to pay $129.99 a year for that experience.",
         "c": "Choose the Wim Hof Method app if you are committed to the Wim Hof method specifically, want its structured progression and cold-exposure guidance, and can practise it safely."
       },
       "axes": [
         {
           "name": "Library size",
-          "winner": "a",
-          "note": "Breathwrk: 100+ exercises plus daily classes and programmes. Othership: 500+ on-demand sessions, but curated around one music-driven style. WHM: structured rounds at varying levels — narrow by design."
+          "winner": "b",
+          "note": "Othership: 500+ on-demand sessions, curated around one music-driven style. Breathwrk: 50+ exercises (100+ on Pro) plus daily classes and programmes (official site and App Store, accessed 2026-10-11). WHM: structured rounds at varying levels — narrow by design."
         },
         {
           "name": "Technique coverage",
-          "winner": "a",
-          "note": "Breathwrk: box, 4-7-8, cyclic sighing, coherent breathing, Wim Hof-style rounds and more. Othership: leans into rhythmic, music-led sessions. WHM: one method."
+          "winner": "tie",
+          "note": "Breathwrk: officially named techniques include box breathing, 4-7-8, humming and long-exhale patterns. Othership: leans into rhythmic, music-led sessions. Both score 7.5; WHM teaches one method."
         },
         {
           "name": "Evidence grounding",
           "winner": "c",
-          "note": "Wim Hof Method scores higher on evidence: the method itself has published research, including the Radboud University study (Kox 2014). Breathwrk cites one published study, on cyclic sighing (Balban 2023). Othership leans on experience and ceremony framing."
+          "note": "Wim Hof Method scores higher on evidence: the method itself has published research, including the Radboud University study (Kox 2014). Breathwrk’s App Store copy claims HRV, heart-rate and blood-pressure benefits without citing studies. Othership leans on experience and ceremony framing."
         },
         {
           "name": "Production / UX",
@@ -23361,14 +23361,14 @@
       "url": "https://onda-life.com/reviews/compare/best-breathwork-apps-2026",
       "picks": [
         {
-          "review": "breathwrk",
+          "review": "othership",
           "award": "Best overall",
-          "takeaway": "Largest structured library + broadest technique coverage + science-informed copy, backed by one published study on cyclic sighing, at the best premium-tier price."
+          "takeaway": "Cinematic music-driven journeys with live community classes — the production reference in breathwork apps, and the highest overall score here."
         },
         {
-          "review": "othership",
-          "award": "Best premium experience",
-          "takeaway": "Cinematic music-driven journeys with live community classes — the production reference in breathwork apps."
+          "review": "breathwrk",
+          "award": "Best value guided library",
+          "takeaway": "Guided exercises (50+, 100+ on Pro), daily classes and programs with a free tier, about $49/year and Peloton inclusion — no heart-rate or HRV feedback."
         },
         {
           "review": "soma-breath",

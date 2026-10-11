@@ -75,8 +75,8 @@
           ]
         },
         {
-          "tag": "Beste Atembibliothek, kein dokumentierter HRV-Kreislauf",
-          "blurb": "Breathwrk (inzwischen Teil von Peloton) bietet eine der größten Auswahlen an geführten Atemübungen — auf iOS, Android und im Web. Die offiziellen Unterlagen beschreiben derzeit kein Herzfrequenz- oder HRV-Feedback, betrachte sie also als Atem-Content-App: hervorragend für die Technik, aber kein Live-HRV-Kreislauf.",
+          "tag": "Geführte Atembibliothek, kein dokumentierter HRV-Kreislauf",
+          "blurb": "Breathwrk (inzwischen Teil von Peloton) bietet eine geführte Bibliothek mit Atemübungen (50+, mit Pro 100+), täglichen Kursen und Programmen — auf iOS, Android und im Web. Die offiziellen Unterlagen beschreiben derzeit kein Herzfrequenz- oder HRV-Feedback, betrachte sie also als Atem-Content-App: hervorragend für die Technik, aber kein Live-HRV-Kreislauf.",
           "pros": [
             "Große Bibliothek geführter Atemübungen und Kurse",
             "iOS, Android und Web; kostenlose Stufe, in manchen Peloton-Mitgliedschaften enthalten"
@@ -87,7 +87,7 @@
           ]
         }
       ],
-      "bottomLine": "Wenn du Atmung und Echtzeit-Herzfeedback in einem geführten Kreislauf vereint haben willst, liegt ONDA mit Apple Watch vorne. Willst du reine Messgenauigkeit mit Pacer: Elite HRV mit Brustgurt oder Fingersensor. Für eine wissenschaftlich validierte tägliche Messung: HRV4Training (plus HRV4Biofeedback für den Atem-Kreislauf). Für die größte Bibliothek an Atemübungen: Breathwrk. Und keine davon ist ein passiver Ganztages-Tracker — für den nächtlichen HRV-Verlauf kombiniere sie mit einer Apple Watch, Oura oder WHOOP.",
+      "bottomLine": "Wenn du Atmung und Echtzeit-Herzfeedback in einem geführten Kreislauf vereint haben willst, liegt ONDA mit Apple Watch vorne. Willst du reine Messgenauigkeit mit Pacer: Elite HRV mit Brustgurt oder Fingersensor. Für eine wissenschaftlich validierte tägliche Messung: HRV4Training (plus HRV4Biofeedback für den Atem-Kreislauf). Für eine preiswerte geführte Atembibliothek: Breathwrk. Und keine davon ist ein passiver Ganztages-Tracker — für den nächtlichen HRV-Verlauf kombiniere sie mit einer Apple Watch, Oura oder WHOOP.",
       "faq": [
         {
           "q": "Welche App verbindet Atmung, HRV und Echtzeit-Feedback?",

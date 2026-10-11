@@ -75,8 +75,8 @@
           ]
         },
         {
-          "tag": "Beste ademhalingsbibliotheek, geen gedocumenteerde HRV-cirkel",
-          "blurb": "Breathwrk (nu onderdeel van Peloton) heeft een van de breedste aanbiedingen aan begeleide ademhalingsoefeningen, op iOS, Android en het web. De officiële materialen beschrijven momenteel geen hartslag- of HRV-feedback, dus zie het als een app met ademhalingscontent: uitstekend voor techniek, geen live HRV-cirkel.",
+          "tag": "Begeleide ademhalingsbibliotheek, geen gedocumenteerde HRV-cirkel",
+          "blurb": "Breathwrk (inmiddels onderdeel van Peloton) biedt een begeleide bibliotheek met ademhalingsoefeningen (50+, 100+ met Pro), dagelijkse lessen en programma's, op iOS, Android en het web. De officiële materialen beschrijven momenteel geen feedback over hartslag of HRV, dus zie het als een app met ademhalingscontent: uitstekend voor techniek, geen live HRV-cirkel.",
           "pros": [
             "Grote bibliotheek met begeleide ademhalingsoefeningen en lessen",
             "iOS, Android en web; gratis versie, inbegrepen bij sommige Peloton-lidmaatschappen"
@@ -87,7 +87,7 @@
           ]
         }
       ],
-      "bottomLine": "Wil je ademhaling en realtime hartfeedback samengesmolten in één begeleide cirkel, dan loopt ONDA met een Apple Watch voorop. Wil je ruwe meetprecisie met een pacer, kies dan Elite HRV met een borstband of vingersensor. Voor een wetenschappelijk gevalideerde dagelijkse meting: HRV4Training (plus HRV4Biofeedback voor de ademhalingscirkel). Voor de grootste bibliotheek met ademhalingsoefeningen: Breathwrk. En geen van deze is een passieve tracker voor de hele dag — combineer er een met een Apple Watch, Oura of WHOOP voor de nachtelijke HRV-trend.",
+      "bottomLine": "Wil je ademhaling en realtime hartfeedback samengebracht in één begeleide cirkel, dan leidt ONDA met een Apple Watch. Wil je pure meetprecisie met een pacer, dan Elite HRV met een borstband of vingersensor. Voor een wetenschappelijk gevalideerde dagelijkse meting HRV4Training (plus HRV4Biofeedback voor de ademhalingscirkel). Voor een betaalbare begeleide ademhalingsbibliotheek Breathwrk. En geen van deze is een passieve tracker voor de hele dag — voor de nachtelijke HRV-trend combineer je er een met een Apple Watch, Oura of WHOOP.",
       "faq": [
         {
           "q": "Welke app combineert ademhaling, HRV en realtime feedback?",
