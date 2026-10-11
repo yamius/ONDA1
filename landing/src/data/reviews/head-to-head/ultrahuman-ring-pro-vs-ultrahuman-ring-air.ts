@@ -42,7 +42,7 @@ const ringProVsRingAir: HeadToHeadInput = {
 
 > The [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) is under a US import ban (October 2025) and can’t be bought in the US. The [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) is the redesigned, US-available successor.
 
-The Ring Pro roughly triples the battery, adds on-ring processing, and fixes the availability and reliability problems that dog the Ring Air.
+The Ring Pro roughly triples the battery, adds on-ring processing, and fixes the availability and reliability problems that dogged the Ring Air.
 
 ## When is the Ring Pro the right pick?
 

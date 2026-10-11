@@ -44,7 +44,7 @@ const threeCervical: HeadToHeadInput = {
     },
     {
       q: 'Which has the strongest acute effect?',
-      a: 'Roughly comparable across the three at peak intensity — all target the cervical vagal trunk. gammaCore and Truvaga deliver focused 2-minute high-intensity sessions; Pulsetto delivers longer, gentler 4–20 minute sessions. Different temporal shapes; comparable cumulative dose.',
+      a: 'No study compares the three head to head — all target the cervical vagal trunk. gammaCore and Truvaga deliver focused 2-minute high-intensity sessions; Pulsetto delivers longer, gentler 4–20 minute sessions. Different temporal shapes; no published data compare their total dose or acute effect.',
     },
     {
       q: 'Can Truvaga replace gammaCore for migraines?',

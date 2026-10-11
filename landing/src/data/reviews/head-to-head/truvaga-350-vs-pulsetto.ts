@@ -37,7 +37,7 @@ const truvagaVsPulsetto: HeadToHeadInput = {
     },
     {
       q: 'Which device delivers stronger stimulation?',
-      a: 'Subjectively similar at peak intensity. Both target the cervical vagal trunk. Truvaga’s 5 kHz burst waveform produces a focused 2-minute session; Pulsetto’s longer sessions deliver a gentler stimulation across 4–20 minutes. Different shapes, comparable cumulative dose.',
+      a: 'Subjectively similar at peak intensity. Both target the cervical vagal trunk. Truvaga’s 5 kHz burst waveform produces a focused 2-minute session; Pulsetto’s longer sessions deliver a gentler stimulation across 4–20 minutes. Different shapes; no published data compare their total dose.',
     },
     {
       q: 'What happens when Truvaga 350 runs out of sessions?',
