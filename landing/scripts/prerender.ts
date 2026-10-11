@@ -30,7 +30,8 @@ import i18n, {
   parsePartRoute,
   type Lang,
 } from '../src/i18n'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs, roundupLocalizedLangs, LOCALIZED_ROUNDUP_ROUTE_SET, glossaryLocalizedLangs, REVIEW_PILOT_LANGS, GLOSSARY_INDEX_LANGS } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs, roundupLocalizedLangs, LOCALIZED_ROUNDUP_ROUTE_SET, glossaryLocalizedLangs, REVIEW_PILOT_LANGS, GLOSSARY_INDEX_LANGS, connectDeviceLangs } from './prerender-routes'
+import { CONNECT_DEVICES as CONNECT_DEVICE_LIST } from '../src/data/connect-devices'
 import { getMetaForRoute, injectMetaIntoHtml, truncateForBudget, clampTitleToIdeal, TITLE_MAX, DESC_MAX } from './meta-inject'
 import { getReviewBySlug, getComparisonBySlug } from '../src/data/reviews'
 import { ARTICLE_TOPIC_HUBS } from '../src/data/article-topics'
@@ -496,6 +497,8 @@ const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
   '/science': SCIENCE_LANGS as Lang[],
   ...Object.fromEntries(SCIENCE_KINDS.map((k) => [`/science/${k}`, SCIENCE_LANGS.filter((l) => SCIENCE_INDEX.some((p) => p.kind === k && p.langs.includes(l))) as Lang[]])),
   ...Object.fromEntries(SCIENCE_INDEX.map((p) => [`/science/${p.kind}/${p.slug}`, p.langs as Lang[]])),
+  // /connect/<device>: EN + each language whose translation is live in the release queue (071 2c).
+  ...Object.fromEntries(CONNECT_DEVICE_LIST.map((d) => [`/connect/${d.slug}`, connectDeviceLangs(d.slug) as Lang[]])),
 }
 
 /** hreflang cluster for a custom-localized page, limited to its pilot langs.

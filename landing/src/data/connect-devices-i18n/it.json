@@ -1,0 +1,350 @@
+{
+  "ui": {
+    "allDevices": "Tutti i dispositivi",
+    "shows": "Cosa mostra {name}",
+    "hrvType": "Tipo di HRV:",
+    "sources": "Fonti",
+    "calls": "Cosa {name} chiama HRV",
+    "inputs": "Cosa entra in {composite}",
+    "inputsNone": "{name} ha un punteggio combinato?",
+    "accuracy": "Quanto è preciso?",
+    "weights": "Pesi dei fattori: non dichiarati dal produttore.",
+    "single": "studio singolo",
+    "affiliated": "Studi finanziati dal produttore o a esso affiliati (elencati a parte)",
+    "accessed": "consultato",
+    "quoteNote": "Le citazioni sono testuali dalle pagine del produttore, in inglese.",
+    "howToRead": "Come leggerlo",
+    "howToRead1": "Confronta una notte con il tuo intervallo abituale delle ultime settimane, non con un'altra persona o un altro dispositivo. Una singola notte bassa è il più delle volte la reazione a qualcosa di specifico: una notte corta, l'alcol, un'infezione, lo stress o un allenamento intenso. Diversi giorni sotto il tuo intervallo, insieme a una frequenza cardiaca a riposo più alta e al sentirti poco bene, sono un motivo per riposare.",
+    "howToRead2": "Punteggi come Readiness, Recovery, Nightly Recharge o HRV Status sono ciascuno l'algoritmo proprio del produttore. Due dispositivi nella stessa notte possono mostrare numeri di HRV diversi perché misurano in momenti diversi e con formule diverse; nessuno dei due è “sbagliato”.",
+    "canConnect": "{name} può collegarsi a ONDA?",
+    "throughAppleHealth": "Tramite Apple Health",
+    "questions": "Domande",
+    "readMore": "Leggi di più su ONDA Science",
+    "emergencyTitle": "Quando il numero non è il punto",
+    "emergencyText": "Nessuna lettura dell'HRV può dirti se i sintomi sono gravi. Qualunque cosa mostri il tuo dispositivo, chiama subito i soccorsi o vai al pronto soccorso in caso di: {flags}. Questa pagina non è un consiglio medico e non diagnostica nulla.",
+    "redFlags": "dolore o pressione al petto; svenimento o sensazione di stare per svenire; grave mancanza di fiato; battito cardiaco veloce, forte o irregolare che non si calma a riposo (anche con capogiri); confusione improvvisa, debolezza su un lato del corpo, difficoltà a parlare",
+    "trademark": "{name} è un marchio del rispettivo titolare. ONDA non è affiliata a {name} né da esso approvata.",
+    "otherDevices": "Altri dispositivi",
+    "status": {
+      "app": "Funziona già con l'app ONDA",
+      "planned": "Collegamento diretto previsto",
+      "reviewing": "In valutazione",
+      "closed": "Accesso per sviluppatori chiuso",
+      "no-api": "Nessuna API web pubblica"
+    }
+  },
+  "devices": {
+    "oura": {
+      "metaTitle": "Come leggere HRV e Readiness di Oura | ONDA Life",
+      "metaDescription": "Come leggere l'HRV di Oura: cosa significano HRV Balance e Readiness, quale HRV misura Oura di notte, se Oura si collega a ONDA e come confrontare una notte con la tua baseline.",
+      "h1": "Come leggere l'HRV del tuo Oura",
+      "lead": "Oura mostra la variabilità della frequenza cardiaca (HRV) dentro Readiness e come media notturna. Ecco cosa sono questi numeri, cosa non sono e come leggerli rispetto alla tua baseline personale, non a quella di qualcun altro.",
+      "shows": [
+        "Il punteggio Readiness di Oura combina diversi fattori: HRV, frequenza cardiaca a riposo, temperatura corporea, sonno, attività e, quando rilevante, il ciclo mestruale. È l'algoritmo proprio di Oura, non una misura medica.",
+        "Dentro Readiness, “HRV Balance” confronta la tua HRV recente con il tuo livello a più lungo termine: Oura la descrive come una media ponderata di 14 giorni confrontata con la tua media di circa due mesi.",
+        "La documentazione per sviluppatori di Oura espone l'HRV come media durante il sonno (average_hrv). Le pagine di aiuto di Oura descrivono le possibili ragioni di una variazione con “può”: una variazione è un segnale da osservare, non una causa.",
+        "I numeri di HRV non si possono confrontare direttamente tra dispositivi o app. WHOOP calcola l'RMSSD durante il sonno più profondo, Oura fa la media di campioni di cinque minuti su tutta la notte, Polar usa all'incirca le prime quattro ore di sonno e Apple Watch registra l'SDNN durante il giorno. Un confronto diretto di cinque dispositivi indossabili con un ECG di riferimento su 536 notti ha trovato differenze sistematiche tra i dispositivi. Quindi confronta i tuoi numeri solo con la tua baseline sullo stesso dispositivo: le medie di altre persone e le tabelle per età non sono uno standard personale."
+      ],
+      "connect": "Oura ha un'API pubblica. Prevediamo un collegamento diretto, ma non è ancora disponibile e non possiamo indicare una data. Oura dice che i dati degli anelli attuali sono disponibili tramite la sua API solo con un abbonamento Oura Membership attivo.",
+      "appleHealth": "Secondo la pagina di aiuto di Oura, l'HRV non è tra i dati che Oura esporta in Apple Health, quindi la tua HRV di Oura non arriverà a ONDA per questa via. Se il tuo dispositivo non è un Apple Watch, ONDA può comunque misurare il polso con la fotocamera dell'iPhone, insieme a una stima della frequenza respiratoria. La fotocamera fornisce il polso, non l'HRV.",
+      "faq": [
+        {
+          "q": "Quale HRV mostra Oura?",
+          "a": "Oura riporta l'HRV misurata durante il sonno e riassunta come media notturna. HRV Balance in Readiness confronta una media ponderata di 14 giorni con la tua media di circa due mesi."
+        },
+        {
+          "q": "Posso confrontare la mia HRV di Oura con un numero di Apple Watch?",
+          "a": "Non direttamente. Apple Health salva l'HRV come SDNN e i dispositivi calcolano l'HRV notturna su finestre diverse, quindi la stessa notte può dare numeri diversi su due dispositivi."
+        }
+      ],
+      "det": {
+        "hrvSummary": "Oura misura l'HRV solo durante il sonno e la campiona su tutta la notte. La sua pagina di aiuto non indica la formula (RMSSD o un'altra), quindi registriamo la metrica come non dichiarata.",
+        "composite": "Oura indica i fattori di Readiness: Resting Heart Rate, HRV Balance, Body Temperature, Recovery Index, Sleep, Sleep Balance, Sleep Regularity, Previous Day Activity e Activity Balance. Oura non pubblica quanto pesa ciascun fattore.",
+        "independent": [
+          "Rispetto a un ECG a casa durante la notte, l'anello Oura ha misurato con precisione la frequenza cardiaca notturna e l'RMSSD; le misure nel dominio della frequenza LF e LF:HF hanno avuto errori elevati. L'articolo non indica la generazione dell'anello ed è precedente al Ring 4.",
+          "Lo stesso studio ha incluso {{fact:study.cao2022.participants}}.",
+          "In un confronto di cinque dispositivi indossabili con un ECG di riferimento durante il sonno ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}), Oura Gen 3 e Gen 4 hanno avuto la concordanza più alta con l'ECG per l'HRV notturna tra i cinque dispositivi.",
+          "Concordanza con l'ECG per l'HRV notturna in quel confronto (coefficiente di correlazione di concordanza): {{fact:study.dial2025.hrvCcc.oura}}."
+        ],
+        "affiliated": []
+      }
+    },
+    "whoop": {
+      "metaTitle": "Come leggere HRV e Recovery di WHOOP | ONDA Life",
+      "metaDescription": "Come leggere l'HRV di WHOOP: da cosa nasce la percentuale Recovery, perché l'HRV di WHOOP è RMSSD, se WHOOP si collega a ONDA e come leggere una notte bassa rispetto alla tua baseline.",
+      "h1": "Come leggere l'HRV del tuo WHOOP",
+      "lead": "WHOOP trasforma la tua notte in una percentuale Recovery, e la variabilità della frequenza cardiaca (HRV) è uno dei suoi fattori. Ecco di cosa è fatto quel numero e come leggerlo con calma.",
+      "shows": [
+        "Recovery è un punteggio da 0 a 100%, mostrato in tre colori. WHOOP dice di usare HRV, frequenza cardiaca a riposo, sonno e frequenza respiratoria, confrontati con la tua baseline personale.",
+        "La documentazione per sviluppatori di WHOOP chiama il valore di HRV hrv_rmssd_milli: è l'RMSSD, in millisecondi, associato a ogni Recovery.",
+        "Recovery è l'algoritmo proprio di WHOOP. La formula dietro punteggi compositi come questo non è pubblicata dai produttori, quindi considera la percentuale un riassunto e guarda l'HRV e la frequenza cardiaca a riposo che ci sono sotto.",
+        "I numeri di HRV non si possono confrontare direttamente tra dispositivi o app. WHOOP calcola l'RMSSD durante il sonno più profondo, Oura fa la media di campioni di cinque minuti su tutta la notte, Polar usa all'incirca le prime quattro ore di sonno e Apple Watch registra l'SDNN durante il giorno. Un confronto diretto di cinque dispositivi indossabili con un ECG di riferimento su 536 notti ha trovato differenze sistematiche tra i dispositivi. Quindi confronta i tuoi numeri solo con la tua baseline sullo stesso dispositivo: le medie di altre persone e le tabelle per età non sono uno standard personale."
+      ],
+      "connect": "WHOOP ha un'API pubblica per sviluppatori. Prevediamo un collegamento diretto, ma non è ancora disponibile. WHOOP approva le app per fasi con una revisione manuale, quindi non possiamo indicare una data.",
+      "appleHealth": "Non abbiamo confermato che WHOOP scriva l'HRV in Apple Health, quindi non promettiamo che la tua HRV di WHOOP comparirà in ONDA. Se il tuo dispositivo non è un Apple Watch, ONDA può comunque misurare il polso con la fotocamera dell'iPhone, insieme a una stima della frequenza respiratoria. La fotocamera fornisce il polso, non l'HRV.",
+      "faq": [
+        {
+          "q": "L'HRV di WHOOP è RMSSD o SDNN?",
+          "a": "RMSSD. La documentazione per sviluppatori di WHOOP indica il valore di HRV come RMSSD in millisecondi."
+        },
+        {
+          "q": "La mia Recovery è rossa. C'è qualcosa che non va?",
+          "a": "Un singolo punteggio basso non è una diagnosi. Il più delle volte è la reazione a qualcosa di specifico, come una notte corta, l'alcol, una malattia, lo stress o un allenamento intenso. Guarda diversi giorni rispetto alla tua baseline e consulta l'elenco di emergenza qui sotto per i sintomi che richiedono cure subito."
+        }
+      ],
+      "det": {
+        "hrvSummary": "WHOOP indica la sua metrica di HRV: RMSSD, in millisecondi. Non è misurata su tutta la notte, ma durante il sonno più profondo.",
+        "composite": "WHOOP elenca i fattori di Recovery: HRV, frequenza cardiaca a riposo, sonno e frequenza respiratoria, più ossigeno nel sangue e temperatura cutanea. WHOOP non pubblica quanto pesa ciascun fattore.",
+        "independent": [
+          "Rispetto a un ECG, la frequenza cardiaca di WHOOP ha mostrato una concordanza accettabile. Per l'RMSSD log-trasformato, il bias e i limiti di concordanza si sono avvicinati o hanno superato la più piccola variazione rilevante della metrica stessa, quindi gli autori consigliano di leggerlo in rapporto al suo livello di precisione. Lo studio ha usato una generazione di WHOOP più vecchia, non WHOOP 4.0 o MG.",
+          "In un confronto di cinque dispositivi indossabili con un ECG di riferimento durante il sonno ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}), WHOOP ha avuto una concordanza alta con l'ECG per l'HRV notturna, inferiore a Oura Gen 3 e Gen 4.",
+          "Concordanza con l'ECG per l'HRV notturna in quel confronto (coefficiente di correlazione di concordanza): {{fact:study.dial2025.hrvCcc.whoop}}."
+        ],
+        "affiliated": [
+          "Uno studio sulla variabilità giorno per giorno dell'HRV derivata da WHOOP negli atleti (affidabilità, non precisione rispetto all'ECG), di un gruppo di ricerca sostenuto da WHOOP."
+        ]
+      }
+    },
+    "polar": {
+      "metaTitle": "Come leggere Nightly Recharge e HRV di Polar | ONDA Life",
+      "metaDescription": "Come leggere Nightly Recharge di Polar: cosa significa ANS charge da −10 a +10, quale parte della notte usa Polar, se Polar si collega a ONDA e perché l'HRV non arriva in Apple Health.",
+      "h1": "Come leggere il Nightly Recharge del tuo Polar",
+      "lead": "Polar mostra la variabilità della frequenza cardiaca (HRV) notturna tramite Nightly Recharge e il suo ANS charge. Ecco cosa significa la scala e come leggerla rispetto al tuo livello abituale.",
+      "shows": [
+        "Nightly Recharge include l'ANS charge, su una scala da −10 a +10, dove 0 è il tuo livello abituale degli ultimi 28 giorni.",
+        "Polar lo misura all'incirca sulle prime quattro ore di sonno, poi assegna uno stato complessivo da “molto scarso” a “molto buono”.",
+        "L'API per sviluppatori di Polar riporta una media notturna di HRV e gli intervalli battito-battito per Nightly Recharge. Non abbiamo avuto conferma da Polar di quale formula di HRV usi quella media, quindi qui non la etichettiamo come RMSSD o SDNN.",
+        "I numeri di HRV non si possono confrontare direttamente tra dispositivi o app. WHOOP calcola l'RMSSD durante il sonno più profondo, Oura fa la media di campioni di cinque minuti su tutta la notte, Polar usa all'incirca le prime quattro ore di sonno e Apple Watch registra l'SDNN durante il giorno. Un confronto diretto di cinque dispositivi indossabili con un ECG di riferimento su 536 notti ha trovato differenze sistematiche tra i dispositivi. Quindi confronta i tuoi numeri solo con la tua baseline sullo stesso dispositivo: le medie di altre persone e le tabelle per età non sono uno standard personale."
+      ],
+      "connect": "Polar ha un'API pubblica (AccessLink). Prevediamo un collegamento diretto, ma non è ancora disponibile e non possiamo indicare una data.",
+      "appleHealth": "Secondo la pagina di supporto di Polar, Polar Flow non scrive l'HRV in Apple Health, quindi la tua HRV di Polar non arriverà a ONDA per questa via. Se il tuo dispositivo non è un Apple Watch, ONDA può comunque misurare il polso con la fotocamera dell'iPhone, insieme a una stima della frequenza respiratoria. La fotocamera fornisce il polso, non l'HRV.",
+      "faq": [
+        {
+          "q": "Cosa significa ANS charge 0?",
+          "a": "Zero significa che la tua notte era al tuo livello abituale degli ultimi 28 giorni. I valori positivi sono sopra, quelli negativi sotto."
+        },
+        {
+          "q": "Polar invia l'HRV ad Apple Health?",
+          "a": "La pagina di supporto di Polar elenca i dati che Polar Flow condivide con Apple Health, e l'HRV non è tra questi."
+        }
+      ],
+      "det": {
+        "hrvSummary": "Polar mostra l'HRV notturna tramite la parte ANS charge di Nightly Recharge, costruita da HRV e frequenza respiratoria e confrontata con il tuo livello abituale. Non siamo riusciti ad aprire una pagina di aiuto completa di Polar che indichi la formula, quindi registriamo la metrica come non confermata. Polar non pubblica valori di popolazione.",
+        "composite": "Polar indica le due parti di Nightly Recharge: sleep charge (il tuo sonno confrontato con il tuo abituale) e ANS charge (HRV e frequenza respiratoria confrontate con il tuo abituale). Polar non pubblica la formula esatta né i pesi.",
+        "independent": [
+          "In un confronto di cinque dispositivi indossabili con un ECG di riferimento durante il sonno ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}), l'orologio Polar Grit X Pro ha avuto la concordanza più bassa con l'ECG per l'HRV notturna tra i cinque dispositivi.",
+          "Concordanza con l'ECG per l'HRV notturna in quel confronto (coefficiente di correlazione di concordanza): {{fact:study.dial2025.hrvCcc.polar}}."
+        ],
+        "independentNone": "Non abbiamo trovato alcuno studio indipendente che verifichi da solo l'HRV di un orologio Polar rispetto a un ECG. Le fasce toraciche Polar sono un dispositivo diverso e non sono trattate qui.",
+        "affiliated": []
+      }
+    },
+    "garmin": {
+      "metaTitle": "Come leggere HRV Status di Garmin | ONDA Life",
+      "metaDescription": "Come leggere HRV Status di Garmin: cosa significano Balanced, Unbalanced e Low, perché servono settimane per la baseline, se Garmin si collega a ONDA e come leggere una notte bassa.",
+      "h1": "Come leggere l'HRV Status del tuo Garmin",
+      "lead": "Garmin etichetta la tua variabilità della frequenza cardiaca (HRV) notturna come Balanced, Unbalanced o Low rispetto al tuo intervallo personale. Ecco cosa significano queste etichette e perché possono cambiare.",
+      "shows": [
+        "HRV Status colloca la tua HRV notturna recente rispetto a un intervallo personale e la etichetta come Balanced, Unbalanced o Low. Guide indipendenti descrivono che la baseline richiede circa tre settimane di utilizzo per formarsi.",
+        "“Unbalanced” significa solo che sei fuori dal tuo intervallo personale, sopra o sotto. Gli utenti Garmin chiedono spesso perché compaia dopo un buon periodo: l'intervallo stesso si sposta man mano che le tue letture cambiano.",
+        "La pagina HRV Status di Garmin indica la formula: RMSSD, misurato mentre dormi (citazione qui sotto)."
+      ],
+      "connect": "La pagina del programma per sviluppatori di Garmin al momento non ha un modulo di richiesta, solo un avviso di restare in attesa di aggiornamenti. Finché Garmin non riapre l'accesso, non possiamo costruire un collegamento diretto.",
+      "appleHealth": "Non abbiamo confermato che Garmin scriva l'HRV in Apple Health, quindi non promettiamo che la tua HRV di Garmin comparirà in ONDA. Se il tuo dispositivo non è un Apple Watch, ONDA può comunque misurare il polso con la fotocamera dell'iPhone, insieme a una stima della frequenza respiratoria. La fotocamera fornisce il polso, non l'HRV.",
+      "faq": [
+        {
+          "q": "Perché Garmin dice Unbalanced quando mi sento bene?",
+          "a": "Unbalanced significa fuori dal tuo intervallo personale recente, in una delle due direzioni. Descrive il numero, non la tua salute."
+        },
+        {
+          "q": "ONDA può leggere i miei dati Garmin?",
+          "a": "Non direttamente al momento: Garmin non accetta nuove richieste di sviluppatori. ONDA può misurare il polso con la fotocamera dell'iPhone e legge l'HRV da Apple Health (Apple Watch o un altro tracker che si sincronizza lì)."
+        }
+      ],
+      "det": {
+        "hrvSummary": "Garmin indica la sua metrica di HRV: RMSSD. HRV Status è misurato automaticamente mentre dormi e letto rispetto a un intervallo di baseline personale costruito dalla tua storia di misurazioni.",
+        "composite": "Garmin descrive Body Battery solo per categorie: attività fisica, stress, riposo e sonno. Se l'HRV vi entri direttamente, e quanto pesi ciascuna parte, non è dichiarato.",
+        "independent": [
+          "In un confronto di cinque dispositivi indossabili con un ECG di riferimento durante il sonno ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}), un Garmin Fenix 6 ha avuto una concordanza con l'ECG per l'HRV notturna più bassa di Oura e WHOOP.",
+          "Concordanza con l'ECG per l'HRV notturna in quel confronto (coefficiente di correlazione di concordanza): {{fact:study.dial2025.hrvCcc.garmin}}."
+        ],
+        "independentNone": "Non abbiamo trovato alcuno studio indipendente che verifichi lo stesso HRV Status di Garmin rispetto a un ECG.",
+        "affiliated": []
+      }
+    },
+    "fitbit": {
+      "metaTitle": "Come leggere l'HRV del tuo Fitbit | ONDA Life",
+      "metaDescription": "Come leggere l'HRV di Fitbit rispetto alla tua baseline, perché i dispositivi non concordano, se Fitbit e Pixel Watch si collegano a ONDA e cosa è cambiato nell'accesso di Google.",
+      "h1": "Come leggere l'HRV del tuo Fitbit",
+      "lead": "Fitbit e Pixel Watch mostrano la variabilità della frequenza cardiaca (HRV) nell'app Fitbit. Il modo più utile di leggerla è rispetto alle tue notti recenti, non rispetto a un singolo numero “buono”.",
+      "shows": [
+        "Le pagine di aiuto di Google elencano l'HRV tra le metriche notturne e indicano i fattori di Readiness, ma non indicano la formula dell'HRV, quindi qui non la etichettiamo.",
+        "Qualunque sia l'etichetta, confronta una notte con il tuo intervallo abituale su diverse settimane. Una singola notte in su o in giù dice poco da sola."
+      ],
+      "connect": "Google dice che la Google Health API al momento non accetta nuovi progetti, e la vecchia Fitbit Web API verrà dismessa il 2026-10-30. Quindi per ora un collegamento diretto non è possibile per noi.",
+      "appleHealth": "Secondo la pagina di aiuto di Google, l'app Google Health legge l'HRV da Apple Health ma non la scrive lì, quindi la tua HRV di Fitbit o Pixel Watch non arriverà a ONDA per questa via. Se il tuo dispositivo non è un Apple Watch, ONDA può comunque misurare il polso con la fotocamera dell'iPhone, insieme a una stima della frequenza respiratoria. La fotocamera fornisce il polso, non l'HRV.",
+      "faq": [
+        {
+          "q": "ONDA può leggere l'HRV del mio Fitbit o Pixel Watch?",
+          "a": "Non direttamente: Google non accetta nuovi progetti per la sua API per la salute. ONDA può misurare il polso con la fotocamera dell'iPhone e legge l'HRV da Apple Health (Apple Watch o un altro tracker che si sincronizza lì)."
+        }
+      ],
+      "det": {
+        "hrvSummary": "La pagina di aiuto di Google elenca l'HRV tra le metriche di salute notturne nell'app Google Health, ma non indica la formula, quindi registriamo la metrica come non dichiarata.",
+        "composite": "Google indica tre fattori di Readiness: HRV, sonno recente e frequenza cardiaca a riposo. Non pubblica quanto pesa ciascuno.",
+        "independent": [
+          "In un piccolo studio pilota, l'HRV notturna del Fitbit Versa 4 ha mostrato una forte correlazione e una concordanza accettabile con un riferimento basato sull'ECG.",
+          "Quello studio pilota ha incluso {{fact:study.nasr2025.participants}}."
+        ],
+        "affiliated": [
+          "Uno studio finanziato da Google sul Pixel Watch 3 ha verificato la frequenza cardiaca, non l'HRV.",
+          "Dati di popolazione finanziati da Fitbit sull'HRV per età (una descrizione degli utenti Fitbit, non una verifica della precisione)."
+        ]
+      }
+    },
+    "samsung": {
+      "metaTitle": "Come leggere l'HRV di Samsung Galaxy Watch | ONDA Life",
+      "metaDescription": "Come leggere l'HRV di Samsung Galaxy Watch rispetto alla tua baseline, perché i numeri differiscono tra dispositivi e se i dati di Samsung Health si collegano a ONDA.",
+      "h1": "Come leggere l'HRV del tuo Samsung Galaxy Watch",
+      "lead": "Samsung Health mostra dati cardiaci e di recupero dal Galaxy Watch. Leggi ogni numero di variabilità della frequenza cardiaca (HRV) lì rispetto alle tue notti recenti, non a un valore di popolazione.",
+      "shows": [
+        "Le pagine di aiuto di Samsung non indicano la formula dell'HRV né la finestra temporale usata da Samsung Health, quindi qui non la etichettiamo.",
+        "Se confronti i numeri di Samsung con un altro dispositivo, aspettati che differiscano: i dispositivi misurano in momenti diversi e calcolano l'HRV in modo diverso."
+      ],
+      "connect": "I dati di Samsung Health sono disponibili agli sviluppatori tramite un SDK Android sul telefono, non tramite un'API web a cui un sito possa collegarsi. Quindi non possiamo offrire un collegamento diretto da questo sito.",
+      "appleHealth": "Non abbiamo confermato che Samsung Health scriva l'HRV in Apple Health, quindi non promettiamo che la tua HRV di Samsung Health comparirà in ONDA. Se il tuo dispositivo non è un Apple Watch, ONDA può comunque misurare il polso con la fotocamera dell'iPhone, insieme a una stima della frequenza respiratoria. La fotocamera fornisce il polso, non l'HRV.",
+      "faq": [
+        {
+          "q": "ONDA può leggere Samsung Health?",
+          "a": "Non da questo sito: Samsung Health non ha un'API web pubblica. ONDA può misurare il polso con la fotocamera dell'iPhone e legge l'HRV da Apple Health (Apple Watch o un altro tracker che si sincronizza lì)."
+        }
+      ],
+      "det": {
+        "hrvSummary": "Le pagine di aiuto di Samsung non indicano la metrica di HRV né la finestra temporale. La pagina sul sonno di Galaxy Ring elenca frequenza cardiaca, ossigeno nel sangue e temperatura cutanea, senza HRV.",
+        "composite": "Samsung descrive Energy Score solo in un articolo della newsroom, non in una pagina di aiuto, e solo per categorie (sonno, attività e simili). Se l'HRV sia un fattore, e i pesi, non sono dichiarati.",
+        "independent": [
+          "Su un giorno e una notte interi di vita quotidiana rispetto a un ECG, un vecchio smartwatch Samsung (Gear Sport) ha dato frequenza cardiaca e HRV nel dominio del tempo accettabili durante il sonno; da svegli, la maggior parte delle misure di HRV ha avuto errori elevati. I modelli attuali di Galaxy Watch e Galaxy Ring non sono stati testati."
+        ],
+        "affiliated": []
+      }
+    },
+    "withings": {
+      "metaTitle": "Come leggere i dati cardiaci Withings | ONDA Life",
+      "metaDescription": "Come leggere i dati cardiaci e del sonno Withings rispetto alla tua baseline, se Withings riporta l'HRV tramite la sua API e se può collegarsi a ONDA.",
+      "h1": "Come leggere i dati cardiaci del tuo Withings",
+      "lead": "I dispositivi Withings registrano frequenza cardiaca e sonno. Ecco cosa abbiamo potuto e non potuto confermare sulla variabilità della frequenza cardiaca (HRV), e come leggere i tuoi numeri rispetto al tuo intervallo abituale.",
+      "shows": [
+        "Withings menziona i dati di HRV solo in termini generali nella sua documentazione per sviluppatori, senza indicare un campo. Non abbiamo confermato quale HRV riporti Withings né come venga calcolata.",
+        "Frequenza cardiaca a riposo e sonno sono utili di per sé: leggili rispetto alle tue ultime settimane."
+      ],
+      "connect": "Withings ha un'API pubblica che non richiede un contratto. Stiamo verificando se fornisce l'HRV prima di decidere su un collegamento, quindi per ora non è previsto nulla.",
+      "appleHealth": "Non abbiamo confermato che Withings scriva l'HRV in Apple Health, quindi non promettiamo che la tua HRV di Withings comparirà in ONDA. Se il tuo dispositivo non è un Apple Watch, ONDA può comunque misurare il polso con la fotocamera dell'iPhone, insieme a una stima della frequenza respiratoria. La fotocamera fornisce il polso, non l'HRV.",
+      "faq": [
+        {
+          "q": "Withings misura l'HRV?",
+          "a": "Non siamo riusciti a confermare un campo di HRV nella documentazione pubblica per sviluppatori di Withings, quindi non affermiamo né l'una né l'altra cosa."
+        }
+      ],
+      "det": {
+        "hrvSummary": "Withings dice che l'HRV è misurata durante il sonno ed espressa in millisecondi, ma la sua pagina di aiuto non indica la formula, quindi registriamo la metrica come non dichiarata.",
+        "composite": "Non abbiamo trovato un punteggio composito di readiness Withings nelle sue pagine di aiuto: l'app Withings mostra le singole misurazioni.",
+        "independent": [],
+        "independentNone": "Non abbiamo trovato alcuno studio indipendente che verifichi l'HRV di Withings rispetto a un ECG.",
+        "affiliated": []
+      }
+    },
+    "ultrahuman": {
+      "metaTitle": "Come leggere l'HRV del tuo anello Ultrahuman | ONDA Life",
+      "metaDescription": "Come leggere l'HRV dell'anello Ultrahuman rispetto alla tua baseline, perché i numeri di anelli e orologi differiscono e se i dati Ultrahuman si collegano a ONDA.",
+      "h1": "Come leggere l'HRV del tuo anello Ultrahuman",
+      "lead": "Gli anelli Ultrahuman mostrano la variabilità della frequenza cardiaca (HRV) e punteggi di tipo recupero nella loro app. Leggili rispetto alle tue notti recenti, non a un altro dispositivo o a un'altra persona.",
+      "shows": [
+        "Ultrahuman dice che l'anello legge l'HRV durante la notte rispetto al tuo intervallo personale, ma non indica la formula, quindi qui non la etichettiamo.",
+        "I punteggi che combinano diversi segnali sono l'algoritmo proprio del produttore; guarda l'HRV e la frequenza cardiaca a riposo che ci sono sotto."
+      ],
+      "connect": "Non abbiamo trovato un'API pubblica ufficiale per sviluppatori di Ultrahuman, quindi non possiamo offrire un collegamento diretto.",
+      "appleHealth": "Il blog di Ultrahuman (un blog di prodotto, non una pagina di aiuto) dice che l'HRV del Ring AIR si trova nell'app Apple Health. Se è lì, l'app ONDA può leggerla da Apple Health con il tuo permesso; non lo abbiamo verificato noi stessi su un dispositivo. Se il tuo dispositivo non è un Apple Watch, ONDA può comunque misurare il polso con la fotocamera dell'iPhone, insieme a una stima della frequenza respiratoria. La fotocamera fornisce il polso, non l'HRV.",
+      "faq": [
+        {
+          "q": "ONDA può leggere i miei dati Ultrahuman?",
+          "a": "Non direttamente: non abbiamo trovato un'API pubblica ufficiale. ONDA può misurare il polso con la fotocamera dell'iPhone e legge l'HRV da Apple Health (Apple Watch o un altro tracker che si sincronizza lì)."
+        }
+      ],
+      "det": {
+        "hrvSummary": "Ultrahuman dice che l'anello legge l'HRV durante la notte e confronta ogni notte con il tuo intervallo personale. Non indica la formula, quindi registriamo la metrica come non dichiarata. Queste citazioni provengono da una pagina di prodotto, non da una pagina di aiuto.",
+        "composite": "Ultrahuman elenca i fattori di Recovery: frequenza cardiaca, HRV, temperatura e il sonno della notte precedente, ciascuno rispetto alla tua baseline personale. Non pubblica quanto pesa ciascuno.",
+        "independent": [],
+        "independentNone": "Non abbiamo trovato alcuno studio indipendente che verifichi l'HRV dell'anello Ultrahuman rispetto a un ECG.",
+        "affiliated": []
+      }
+    },
+    "ringconn": {
+      "metaTitle": "Come leggere l'HRV del tuo RingConn | ONDA Life",
+      "metaDescription": "Come leggere l'HRV di RingConn rispetto alla tua baseline, perché i numeri di anelli e orologi differiscono e se i dati RingConn si collegano a ONDA.",
+      "h1": "Come leggere l'HRV del tuo RingConn",
+      "lead": "RingConn mostra la variabilità della frequenza cardiaca (HRV) e il sonno nella sua app. La domanda utile è come si confronta questa notte con il tuo intervallo abituale.",
+      "shows": [
+        "Non abbiamo verificato dalle pagine di RingConn quale formula di HRV o finestra temporale usi, quindi qui non la etichettiamo.",
+        "Confronta cose simili: lo stesso dispositivo, nello stesso momento della notte, su diverse settimane."
+      ],
+      "connect": "Per quanto abbiamo trovato, RingConn non offre un'API pubblica per sviluppatori, quindi un collegamento diretto non è possibile.",
+      "appleHealth": "Non abbiamo confermato che RingConn scriva l'HRV in Apple Health, quindi non promettiamo che la tua HRV di RingConn comparirà in ONDA. Se il tuo dispositivo non è un Apple Watch, ONDA può comunque misurare il polso con la fotocamera dell'iPhone, insieme a una stima della frequenza respiratoria. La fotocamera fornisce il polso, non l'HRV.",
+      "faq": [
+        {
+          "q": "ONDA può leggere i miei dati RingConn?",
+          "a": "Non direttamente: non c'è un'API pubblica che possiamo usare. ONDA può misurare il polso con la fotocamera dell'iPhone e legge l'HRV da Apple Health (Apple Watch o un altro tracker che si sincronizza lì)."
+        }
+      ]
+    },
+    "amazfit": {
+      "metaTitle": "Come leggere l'HRV del tuo Amazfit (Zepp) | ONDA Life",
+      "metaDescription": "Come leggere l'HRV di Amazfit e Zepp rispetto alla tua baseline, perché i dispositivi non concordano e se i dati Amazfit si collegano a ONDA.",
+      "h1": "Come leggere l'HRV del tuo Amazfit (Zepp)",
+      "lead": "I dispositivi Amazfit mostrano la variabilità della frequenza cardiaca (HRV) nell'app Zepp. Leggila rispetto alle tue notti recenti, non a un singolo numero obiettivo.",
+      "shows": [
+        "Non abbiamo verificato dalle pagine di Zepp quale formula di HRV o finestra temporale usi, quindi qui non la etichettiamo.",
+        "Se un punteggio combinato sembra strano, controlla l'HRV e la frequenza cardiaca a riposo che ci sono dietro su diversi giorni."
+      ],
+      "connect": "Per quanto abbiamo trovato, Amazfit / Zepp non offre un'API pubblica per sviluppatori, quindi un collegamento diretto non è possibile.",
+      "appleHealth": "Non abbiamo confermato che Amazfit scriva l'HRV in Apple Health, quindi non promettiamo che la tua HRV di Amazfit comparirà in ONDA. Se il tuo dispositivo non è un Apple Watch, ONDA può comunque misurare il polso con la fotocamera dell'iPhone, insieme a una stima della frequenza respiratoria. La fotocamera fornisce il polso, non l'HRV.",
+      "faq": [
+        {
+          "q": "ONDA può leggere i miei dati Amazfit?",
+          "a": "Non direttamente: non c'è un'API pubblica che possiamo usare. ONDA può misurare il polso con la fotocamera dell'iPhone e legge l'HRV da Apple Health (Apple Watch o un altro tracker che si sincronizza lì)."
+        }
+      ]
+    },
+    "apple-watch": {
+      "metaTitle": "Come leggere l'HRV di Apple Watch (SDNN) | ONDA Life",
+      "metaDescription": "Come leggere l'HRV di Apple Watch: perché Apple Health salva l'SDNN, perché non è confrontabile con l'RMSSD degli anelli e come l'app ONDA la legge per costruire la tua baseline.",
+      "h1": "Come leggere l'HRV del tuo Apple Watch",
+      "lead": "Apple Watch registra automaticamente la variabilità della frequenza cardiaca (HRV) e la salva in Apple Health. Ecco di quale HRV si tratta, perché differisce dai numeri degli anelli e come la usa ONDA.",
+      "shows": [
+        "Apple Health salva l'HRV come SDNN, la deviazione standard degli intervalli tra battiti cardiaci normali, registrata automaticamente da Apple Watch.",
+        "I modelli recenti di Apple Watch con watchOS mostrano anche due varianti, Recovery HRV e Overall HRV. Apple non ha dichiarato come viene calcolata Recovery HRV.",
+        "SDNN e RMSSD sono misure diverse, quindi un numero di Apple Watch non si può confrontare direttamente con l'RMSSD di WHOOP o di un anello."
+      ],
+      "connect": "Apple Watch non ha un'API web: i suoi dati restano in Apple Health sul tuo iPhone. L'app ONDA per iOS li legge lì, con il tuo permesso.",
+      "appleHealth": "Sì. L'app ONDA legge l'HRV di Apple Watch da Apple Health per costruire la tua baseline notturna personale (media ± SD sulle tue notti recenti, mai una norma di popolazione), e Apple Watch fornisce il polso in tempo reale durante la pratica. Il biofeedback respiratorio in tempo reale richiede Apple Watch; senza, ONDA misura il polso con la fotocamera dell'iPhone.",
+      "faq": [
+        {
+          "q": "Perché l'HRV del mio Apple Watch è più bassa di quella del mio anello?",
+          "a": "Apple Health salva l'SDNN; la maggior parte degli anelli riporta l'RMSSD, e i dispositivi misurano su finestre diverse. I numeri non sono sulla stessa scala."
+        },
+        {
+          "q": "ONDA legge l'HRV del mio Apple Watch?",
+          "a": "Sì, da Apple Health con il tuo permesso, per confrontare ogni notte con la tua baseline personale. Descrive i tuoi numeri e non diagnostica nulla."
+        }
+      ],
+      "det": {
+        "hrvSummary": "Apple Health salva l'HRV come SDNN, campionata automaticamente da Apple Watch durante la giornata mentre sei fermo, non solo di notte. I modelli più recenti mostrano anche Recovery HRV.",
+        "composite": "Apple Watch non ha un unico punteggio di tipo readiness costruito dall'HRV, quindi non ci sono pesi da dichiarare.",
+        "independent": [
+          "Rispetto a un ECG di laboratorio a riposo, un Apple Watch Series 6 ha mostrato una concordanza moderata per gli intervalli tra battiti usati per calcolare l'HRV. Recovery HRV sui modelli più recenti non è stata verificata in modo indipendente.",
+          "Quello studio ha incluso {{fact:study.bonneval2025.participants}}; l'errore percentuale assoluto medio per quegli intervalli a riposo è stato {{fact:study.bonneval2025.mapeRest}}."
+        ],
+        "affiliated": []
+      }
+    }
+  }
+}

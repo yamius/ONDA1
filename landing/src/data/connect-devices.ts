@@ -409,7 +409,12 @@ export const CONNECT_RED_FLAGS =
 const SITE_URL = 'https://onda-life.com'
 
 /** Static JSON-LD (emitted by meta-inject; never effect-injected). */
-export function connectJsonLd(slug?: string, lang = 'en', loc?: { h1: string; description: string }): Record<string, unknown>[] {
+export function connectJsonLd(
+  slug?: string,
+  lang = 'en',
+  loc?: { h1: string; description: string },
+  dev?: { h1: string; metaDescription: string; faq: { q: string; a: string }[] },
+): Record<string, unknown>[] {
   if (!slug) {
     const url = lang === 'en' ? `${SITE_URL}/connect` : `${SITE_URL}/${lang}/connect`
     return [
@@ -435,16 +440,17 @@ export function connectJsonLd(slug?: string, lang = 'en', loc?: { h1: string; de
   }
   const d = getConnectDevice(slug)
   if (!d) return []
-  const url = `${SITE_URL}/connect/${d.slug}`
+  const url = lang === 'en' ? `${SITE_URL}/connect/${d.slug}` : `${SITE_URL}/${lang}/connect/${d.slug}`
+  const faq = dev?.faq ?? d.faq
   return [
     {
       '@context': 'https://schema.org',
       '@type': 'Article',
       '@id': `${url}#article`,
-      headline: d.h1,
-      description: d.metaDescription,
+      headline: dev?.h1 ?? d.h1,
+      description: dev?.metaDescription ?? d.metaDescription,
       url,
-      inLanguage: 'en',
+      inLanguage: lang,
       author: { '@id': `${SITE_URL}/#author` },
       publisher: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
       about: [d.name, 'Heart rate variability'],
@@ -453,8 +459,8 @@ export function connectJsonLd(slug?: string, lang = 'en', loc?: { h1: string; de
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
       '@id': `${url}#faq`,
-      inLanguage: 'en',
-      mainEntity: d.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+      inLanguage: lang,
+      mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
     },
   ]
 }

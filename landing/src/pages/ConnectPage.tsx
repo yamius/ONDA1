@@ -19,6 +19,7 @@ import {
 import { NotFoundPage } from './NotFoundPage'
 import { CONNECT_ACCESSED, CONNECT_DEVICE_DETAILS, connectText, connectTextReady, type ConnectDeviceDetail } from '../data/connect-device-details'
 import type { FactLang } from '../data/science/facts'
+import { CONNECT_DEVICES_I18N, fillConnect } from '../data/connect-devices-i18n'
 
 export interface DetailLabels {
   calls: (name: string) => string
@@ -224,8 +225,8 @@ function ConnectIndexLocalized({ lang }: { lang: string }) {
             {CONNECT_DEVICES.map((d) => (
               <tr key={d.slug} className="border-b border-white/10 align-top">
                 <td className="py-3 pr-4">
-                  <Link to={`/connect/${d.slug}`} className="text-terminal-green hover:underline">{d.name}</Link>{' '}
-                  <span className="text-xs text-white/45">{c.inEnglish}</span>
+                  <Link to={langHref(`/connect/${d.slug}`, lang as Lang)} className="text-terminal-green hover:underline">{d.name}</Link>{' '}
+                  {!langHref(`/connect/${d.slug}`, lang as Lang).startsWith(`/${lang}/`) && <span className="text-xs text-white/45">{c.inEnglish}</span>}
                 </td>
                 <td className="py-3 pr-4 text-white/70">{c.hrv[d.hrvType] ?? d.hrvType}</td>
                 <td className="py-3 text-white/70">{c.status[d.status]}</td>
@@ -287,7 +288,102 @@ export function ConnectPage() {
   const { device } = useParams()
   const lang = langFromPath(useLocation().pathname)
   if (lang !== 'en' && !device) return <ConnectIndexLocalized lang={lang} />
+  if (lang !== 'en' && device && CONNECT_DEVICES_I18N[lang]) return <ConnectDeviceLocalized lang={lang} device={device} />
   return <ConnectEn device={device} />
+}
+
+/** /<lang>/connect/<device> (071 2c step C). Quotes stay verbatim English; facts gated per item as on EN. */
+function ConnectDeviceLocalized({ lang, device }: { lang: string; device: string }) {
+  const loc = CONNECT_DEVICES_I18N[lang]
+  const d = getConnectDevice(device)
+  const t = d ? loc.devices[d.slug] : undefined
+  useTitle(t ? t.metaTitle : '')
+  if (!d || !t) return <NotFoundPage />
+  const u = loc.ui
+  const v = { name: d.name }
+  const base = CONNECT_DEVICE_DETAILS[d.slug]
+  const det = base && t.det
+    ? {
+        ...base,
+        hrvSummary: t.det.hrvSummary,
+        composite: t.det.composite,
+        independentNone: base.independentNone ? t.det.independentNone ?? base.independentNone : undefined,
+        independent: base.independent.map((a, i) => ({ ...a, text: t.det!.independent[i] ?? a.text })),
+        affiliated: base.affiliated.map((a, i) => ({ ...a, text: t.det!.affiliated[i] ?? a.text })),
+      }
+    : undefined
+  const L: DetailLabels = {
+    calls: (name) => fillConnect(u.calls, { name }),
+    inputs: (name, composite) => (composite ? fillConnect(u.inputs, { name, composite }) : fillConnect(u.inputsNone, { name })),
+    accuracy: u.accuracy, weights: u.weights, single: u.single, affiliated: u.affiliated, accessed: u.accessed, quoteNote: u.quoteNote,
+  }
+  const l = lang as Lang
+  return (
+    <main className="mx-auto max-w-3xl px-4 pb-24 md:px-6">
+      <nav className="pt-6 font-mono text-xs text-white/50" aria-label="Breadcrumb">
+        <Link to={langHref('/connect', l)} className="hover:underline">{u.allDevices}</Link> / {d.name}
+      </nav>
+      <header className="border-b border-white/10 pt-4 pb-8">
+        <h1 className="mb-5 text-3xl font-bold tracking-tight md:text-5xl">{t.h1}</h1>
+        <p className="font-mono text-sm leading-relaxed text-white/75 md:text-base">{t.lead}</p>
+      </header>
+      <section className="mt-10">
+        <h2 className="mb-4 text-2xl font-bold">{fillConnect(u.shows, v)}</h2>
+        <div className="space-y-4 font-mono text-sm leading-relaxed text-white/70 md:text-base">
+          {t.shows.map((p, i) => <p key={i}>{p}</p>)}
+          <p><span className="text-white/90">{u.hrvType}</span> {connectI18n(lang).hrv[d.hrvType] ?? d.hrvType}.</p>
+        </div>
+        {d.sources.length > 0 && (
+          <div className="mt-5 font-mono text-xs text-white/55">
+            <div className="mb-1 uppercase tracking-widest">{u.sources}</div>
+            <ul className="space-y-1">
+              {d.sources.map((s) => (
+                <li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer nofollow" className="hover:underline">{s.label}</a></li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </section>
+      {det && <DeviceDetails name={d.name} det={det} lang={lang as FactLang} L={L} />}
+      <section className="mt-10">
+        <h2 className="mb-4 text-2xl font-bold">{u.howToRead}</h2>
+        <div className="space-y-4 font-mono text-sm leading-relaxed text-white/70 md:text-base">
+          <p>{u.howToRead1}</p>
+          <p>{u.howToRead2}</p>
+        </div>
+      </section>
+      <section className="mt-10">
+        <h2 className="mb-4 text-2xl font-bold">{fillConnect(u.canConnect, v)}</h2>
+        <p className="mb-3 inline-block rounded border border-white/20 px-3 py-1 font-mono text-xs text-white/80">{u.status[d.status]}</p>
+        <div className="space-y-4 font-mono text-sm leading-relaxed text-white/70 md:text-base">
+          <p>{t.connect}</p>
+          <h3 className="pt-2 text-lg font-semibold text-white">{u.throughAppleHealth}</h3>
+          <p>{t.appleHealth}</p>
+        </div>
+      </section>
+      <AppStoreCTA ct={storeCt('connect', d.slug, lang)} variant="hrv" lang={lang} />
+      <section className="mt-10">
+        <h2 className="mb-6 text-2xl font-bold">{u.questions}</h2>
+        <div className="space-y-6">
+          {t.faq.map((f) => (
+            <div key={f.q} className="border-b border-white/10 pb-6">
+              <h3 className="mb-2 font-semibold text-white">{f.q}</h3>
+              <p className="font-mono text-sm leading-relaxed text-white/70">{f.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+      <ReadMoreLocalized lang={lang} />
+      <section className="mt-12 rounded-xl border border-red-400/30 bg-red-400/[0.05] p-5" aria-label={u.emergencyTitle}>
+        <h2 className="mb-2 text-lg font-bold">{u.emergencyTitle}</h2>
+        <p className="font-mono text-sm leading-relaxed text-white/80">{fillConnect(u.emergencyText, { flags: u.redFlags })}</p>
+      </section>
+      <p className="mt-8 font-mono text-xs text-white/40">
+        {fillConnect(u.trademark, v)}{' '}
+        <Link to={langHref('/connect', l)} className="hover:underline">{u.otherDevices}</Link>
+      </p>
+    </main>
+  )
 }
 
 function ConnectEn({ device }: { device?: string }) {

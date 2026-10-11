@@ -1,0 +1,350 @@
+{
+  "ui": {
+    "allDevices": "すべてのデバイス",
+    "shows": "{name} が表示するもの",
+    "hrvType": "HRV の種類：",
+    "sources": "出典",
+    "calls": "{name} が HRV と呼ぶもの",
+    "inputs": "{composite} の構成要素",
+    "inputsNone": "{name} に総合スコアはありますか？",
+    "accuracy": "どのくらい正確ですか？",
+    "weights": "各要素の重み：メーカーは公開していません。",
+    "single": "単一の研究",
+    "affiliated": "メーカーが資金提供した、またはメーカーと関係のある研究（別に記載）",
+    "accessed": "閲覧日",
+    "quoteNote": "引用はメーカーのページからの原文（英語）のままです。",
+    "howToRead": "読み方",
+    "howToRead1": "ある夜の値は、ほかの人やほかのデバイスとではなく、ここ数週間のあなた自身のいつもの範囲と比べてください。一晩だけ低い値は、多くの場合、短い睡眠、飲酒、感染症、ストレス、きついトレーニングといった特定のことへの反応です。いつもの範囲を下回る日が数日続き、同時に安静時心拍数が高く、体調も悪いなら、休む理由になります。",
+    "howToRead2": "Readiness、Recovery、Nightly Recharge、HRV Status などのスコアは、それぞれのメーカー独自のアルゴリズムです。同じ夜でも、2つのデバイスは測る時間帯も計算式も違うため、異なる HRV の値を示すことがあります。どちらも「間違い」ではありません。",
+    "canConnect": "{name} は ONDA と連携できますか？",
+    "throughAppleHealth": "Apple Health 経由で",
+    "questions": "よくある質問",
+    "readMore": "ONDA Science で詳しく読む",
+    "emergencyTitle": "数値が問題ではないとき",
+    "emergencyText": "HRV の値から、症状が深刻かどうかはわかりません。デバイスの表示にかかわらず、次の症状があれば救急車を呼んでください（または救急外来を受診してください）：{flags}。このページは医学的助言ではなく、何かを診断するものでもありません。",
+    "redFlags": "胸の痛みや圧迫感；失神または失神しそうな感じ；強い息切れ；安静にしても治まらない速い・強い・不規則な動悸（めまいを伴う場合を含む）；突然の混乱（考えがまとまらない）、体の片側の脱力、話しにくさ",
+    "trademark": "{name} はその所有者の商標です。ONDA は {name} と提携しておらず、{name} から推奨を受けてもいません。",
+    "otherDevices": "ほかのデバイス",
+    "status": {
+      "app": "ONDA アプリで今すぐ使えます",
+      "planned": "直接連携を予定",
+      "reviewing": "検討中",
+      "closed": "開発者アクセスは受付停止中",
+      "no-api": "公開 Web API なし"
+    }
+  },
+  "devices": {
+    "oura": {
+      "metaTitle": "Oura の HRV と Readiness の読み方 | ONDA Life",
+      "metaDescription": "Oura の HRV の読み方：HRV Balance と Readiness の意味、Oura が夜間に示す HRV の種類、ONDA との連携可否、自分のベースラインとの比べ方。",
+      "h1": "Oura の HRV の読み方",
+      "lead": "Oura は心拍変動（HRV）を Readiness の中と、夜間の平均値として表示します。これらの数値が何であり、何ではないのか、そしてほかの人ではなくあなた自身のベースラインに照らしてどう読むかを説明します。",
+      "shows": [
+        "Oura の Readiness スコアは、HRV、安静時心拍数、体温、睡眠、活動、そして該当する場合は月経周期という複数の要素を組み合わせたものです。これは Oura 独自のアルゴリズムであり、医学的な指標ではありません。",
+        "Readiness の中の「HRV Balance」は、最近の HRV を長期的な水準と比べます。Oura は、14日間の加重平均を約2か月間の平均と比べるものだと説明しています。",
+        "Oura の開発者向けドキュメントでは、HRV は睡眠中の平均値（average_hrv）として提供されています。Oura のヘルプページは、変化の考えられる理由を「may（可能性がある）」という表現で説明しています。変化は確認すべきサインであって、原因ではありません。",
+        "HRV の数値は、デバイスやアプリの間で直接比べることはできません。WHOOP は最も深い睡眠中に RMSSD を計算し、Oura は夜間を通じた5分間のサンプルを平均し、Polar は睡眠の最初の約4時間を使い、Apple Watch は日中に SDNN を記録します。5種類のウェアラブルを536夜にわたって ECG（心電図）の基準と直接比べた研究では、デバイス間に系統的な差が見つかりました。ですから、数値は同じデバイスでのあなた自身のベースラインとだけ比べてください。ほかの人の平均値や年齢別の表は、個人の基準にはなりません。"
+      ],
+      "connect": "Oura には公開 API があります。直接連携を予定していますが、まだ利用できず、時期もお伝えできません。Oura によると、現行のリングのデータは、Oura Membership が有効な場合にのみ API 経由で利用できます。",
+      "appleHealth": "Oura 自身のヘルプページによると、Oura が Apple Health に書き出すデータに HRV は含まれていないため、Oura の HRV がこの経路で ONDA に届くことはありません。お使いのデバイスが Apple Watch でなくても、ONDA は iPhone のカメラで脈拍を測り、呼吸数の推定値も出せます。カメラで得られるのは脈拍であり、HRV ではありません。",
+      "faq": [
+        {
+          "q": "Oura はどの HRV を表示していますか？",
+          "a": "Oura は睡眠中に測った HRV を、夜間の平均値としてまとめて示します。Readiness の HRV Balance は、14日間の加重平均を約2か月間の平均と比べるものです。"
+        },
+        {
+          "q": "Oura の HRV を Apple Watch の数値と比べられますか？",
+          "a": "直接は比べられません。Apple Health は HRV を SDNN として保存しており、デバイスごとに夜間の HRV を計算する時間帯も異なるため、同じ夜でも2つのデバイスで違う数値になることがあります。"
+        }
+      ],
+      "det": {
+        "hrvSummary": "Oura は睡眠中にのみ HRV を測り、夜間全体にわたってサンプリングします。ヘルプページには計算式（RMSSD かそれ以外か）が書かれていないため、指標は「非公開」として記録しています。",
+        "composite": "Oura は Readiness の構成要素として、Resting Heart Rate、HRV Balance、Body Temperature、Recovery Index、Sleep、Sleep Balance、Sleep Regularity、Previous Day Activity、Activity Balance を挙げています。各要素の重みは公開していません。",
+        "independent": [
+          "自宅での一晩の測定で ECG（心電図）と比べたところ、Oura Ring は夜間の心拍数と RMSSD を正確に測定しました。一方、周波数領域の指標である LF と LF:HF は誤差が大きくなりました。論文はリングの世代を明記しておらず、Ring 4 より前の研究です。",
+          "同じ研究の対象は {{fact:study.cao2022.participants}} でした。",
+          "睡眠中に5種類のウェアラブルを ECG の基準と比べた研究（{{fact:study.dial2025.participants}}、{{fact:study.dial2025.nights}}）では、5つのデバイスのうち Oura Gen 3 と Gen 4 が、夜間の HRV で ECG との一致度が最も高くなりました。",
+          "この比較における夜間 HRV の ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.oura}}。"
+        ],
+        "affiliated": []
+      }
+    },
+    "whoop": {
+      "metaTitle": "WHOOP の HRV と Recovery の読み方 | ONDA Life",
+      "metaDescription": "WHOOP の HRV の読み方：Recovery のパーセンテージの構成要素、WHOOP の HRV が RMSSD である理由、ONDA との連携可否、低い夜を自分のベースラインに照らして読む方法。",
+      "h1": "WHOOP の HRV の読み方",
+      "lead": "WHOOP は夜の状態を Recovery のパーセンテージに変換し、心拍変動（HRV）はその要素の一つです。この数値が何からできているか、そして落ち着いて読む方法を説明します。",
+      "shows": [
+        "Recovery は 0〜100% のスコアで、3色で表示されます。WHOOP によると、HRV、安静時心拍数、睡眠、呼吸数を、あなた自身のベースラインと比べて使っています。",
+        "WHOOP の開発者向けドキュメントでは、HRV の値は hrv_rmssd_milli という名前です。これはミリ秒単位の RMSSD で、各 Recovery に紐づいています。",
+        "Recovery は WHOOP 独自のアルゴリズムです。こうした総合スコアの計算式はメーカーが公開していないため、パーセンテージは要約として扱い、その下にある HRV と安静時心拍数を見てください。",
+        "HRV の数値は、デバイスやアプリの間で直接比べることはできません。WHOOP は最も深い睡眠中に RMSSD を計算し、Oura は夜間を通じた5分間のサンプルを平均し、Polar は睡眠の最初の約4時間を使い、Apple Watch は日中に SDNN を記録します。5種類のウェアラブルを536夜にわたって ECG（心電図）の基準と直接比べた研究では、デバイス間に系統的な差が見つかりました。ですから、数値は同じデバイスでのあなた自身のベースラインとだけ比べてください。ほかの人の平均値や年齢別の表は、個人の基準にはなりません。"
+      ],
+      "connect": "WHOOP には公開の開発者 API があります。直接連携を予定していますが、まだ利用できません。WHOOP は手動の審査を伴う段階的な方法でアプリを承認しているため、時期はお伝えできません。",
+      "appleHealth": "WHOOP が HRV を Apple Health に書き込むことは確認できていないため、WHOOP の HRV が ONDA に表示されるとはお約束できません。お使いのデバイスが Apple Watch でなくても、ONDA は iPhone のカメラで脈拍を測り、呼吸数の推定値も出せます。カメラで得られるのは脈拍であり、HRV ではありません。",
+      "faq": [
+        {
+          "q": "WHOOP の HRV は RMSSD ですか、SDNN ですか？",
+          "a": "RMSSD です。WHOOP の開発者向けドキュメントでは、HRV の値はミリ秒単位の RMSSD とされています。"
+        },
+        {
+          "q": "Recovery が赤です。何か問題がありますか？",
+          "a": "一度だけ低いスコアが出ても、それは診断ではありません。多くの場合、短い睡眠、飲酒、病気、ストレス、きついトレーニングといった特定のことへの反応です。数日分をあなた自身のベースラインと比べて見てください。今すぐ受診が必要な症状については、下の緊急時リストをご覧ください。"
+        }
+      ],
+      "det": {
+        "hrvSummary": "WHOOP は HRV の指標を RMSSD（ミリ秒単位）と明示しています。夜間全体ではなく、最も深い睡眠中に測定されます。",
+        "composite": "WHOOP は Recovery の要素として、HRV、安静時心拍数、睡眠、呼吸数に加えて、血中酸素と皮膚温を挙げています。各要素の重みは公開していません。",
+        "independent": [
+          "ECG（心電図）と比べたところ、WHOOP の心拍数は許容できる一致を示しました。対数変換した RMSSD では、バイアスと一致限界がその指標自体の最小有意変化に近いか、それを上回ったため、著者らはその精度の水準を踏まえて読むよう勧めています。研究で使われたのは旧世代の WHOOP で、WHOOP 4.0 や MG ではありません。",
+          "睡眠中に5種類のウェアラブルを ECG の基準と比べた研究（{{fact:study.dial2025.participants}}、{{fact:study.dial2025.nights}}）では、WHOOP は夜間の HRV で ECG との一致度が高く、Oura Gen 3 と Gen 4 に次ぐ結果でした。",
+          "この比較における夜間 HRV の ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.whoop}}。"
+        ],
+        "affiliated": [
+          "アスリートにおける WHOOP 由来の HRV の日ごとの変動を調べた研究（ECG に対する正確さではなく、再現性の研究）。WHOOP の支援を受けた研究グループによるものです。"
+        ]
+      }
+    },
+    "polar": {
+      "metaTitle": "Polar の Nightly Recharge と HRV の読み方 | ONDA Life",
+      "metaDescription": "Polar の Nightly Recharge の読み方：−10〜+10 の ANS charge の意味、Polar が使う夜の時間帯、ONDA との連携可否、Polar の HRV が Apple Health に届かない理由。",
+      "h1": "Polar の Nightly Recharge の読み方",
+      "lead": "Polar は夜間の心拍変動（HRV）を Nightly Recharge とその ANS charge で示します。この尺度の意味と、あなた自身のいつもの水準に照らした読み方を説明します。",
+      "shows": [
+        "Nightly Recharge には ANS charge が含まれます。尺度は −10〜+10 で、0 は過去28日間のあなたのいつもの水準です。",
+        "Polar は睡眠の最初の約4時間で測定し、そのうえで「very poor（とても悪い）」から「very good（とても良い）」までの総合ステータスを示します。",
+        "Polar の開発者 API は、Nightly Recharge について夜間の HRV 平均と拍動間隔を提供しています。その平均がどの HRV の計算式によるものかは Polar から確認できていないため、ここでは RMSSD とも SDNN とも表記していません。",
+        "HRV の数値は、デバイスやアプリの間で直接比べることはできません。WHOOP は最も深い睡眠中に RMSSD を計算し、Oura は夜間を通じた5分間のサンプルを平均し、Polar は睡眠の最初の約4時間を使い、Apple Watch は日中に SDNN を記録します。5種類のウェアラブルを536夜にわたって ECG（心電図）の基準と直接比べた研究では、デバイス間に系統的な差が見つかりました。ですから、数値は同じデバイスでのあなた自身のベースラインとだけ比べてください。ほかの人の平均値や年齢別の表は、個人の基準にはなりません。"
+      ],
+      "connect": "Polar には公開 API（AccessLink）があります。直接連携を予定していますが、まだ利用できず、時期もお伝えできません。",
+      "appleHealth": "Polar 自身のサポートページによると、Polar Flow は HRV を Apple Health に書き込まないため、Polar の HRV がこの経路で ONDA に届くことはありません。お使いのデバイスが Apple Watch でなくても、ONDA は iPhone のカメラで脈拍を測り、呼吸数の推定値も出せます。カメラで得られるのは脈拍であり、HRV ではありません。",
+      "faq": [
+        {
+          "q": "ANS charge が 0 とはどういう意味ですか？",
+          "a": "0 は、その夜が過去28日間のあなたのいつもの水準だったという意味です。プラスの値はそれより上、マイナスの値はそれより下です。"
+        },
+        {
+          "q": "Polar は HRV を Apple Health に送りますか？",
+          "a": "Polar のサポートページには Polar Flow が Apple Health と共有するデータが載っていますが、その中に HRV は含まれていません。"
+        }
+      ],
+      "det": {
+        "hrvSummary": "Polar は夜間の HRV を Nightly Recharge の ANS charge の部分で示します。これは HRV と呼吸数から作られ、あなた自身のいつもの水準と比べられます。計算式を明記した Polar のヘルプページ全文は開けなかったため、指標は「未確認」として記録しています。Polar は集団の値を公開していません。",
+        "composite": "Polar は Nightly Recharge の2つの部分として、sleep charge（いつもと比べた睡眠）と ANS charge（いつもと比べた HRV と呼吸数）を挙げています。正確な計算式や重みは公開していません。",
+        "independent": [
+          "睡眠中に5種類のウェアラブルを ECG（心電図）の基準と比べた研究（{{fact:study.dial2025.participants}}、{{fact:study.dial2025.nights}}）では、Polar Grit X Pro ウォッチが、5つのデバイスのうち夜間の HRV で ECG との一致度が最も低くなりました。",
+          "この比較における夜間 HRV の ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.polar}}。"
+        ],
+        "independentNone": "Polar のウォッチの HRV を単独で ECG と比べた独立した研究は見つかりませんでした。Polar の胸ストラップは別のデバイスであり、ここでは扱っていません。",
+        "affiliated": []
+      }
+    },
+    "garmin": {
+      "metaTitle": "Garmin の HRV Status（Balanced・Low）の読み方 | ONDA Life",
+      "metaDescription": "Garmin の HRV Status の読み方：Balanced・Unbalanced・Low の意味、ベースライン作成に数週間かかる理由、ONDA との連携可否、低い夜の読み方。",
+      "h1": "Garmin の HRV Status の読み方",
+      "lead": "Garmin は夜間の心拍変動（HRV）を、あなた自身の範囲と比べて Balanced、Unbalanced、Low とラベル付けします。これらのラベルの意味と、変わることがある理由を説明します。",
+      "shows": [
+        "HRV Status は、最近の夜間 HRV を個人の範囲に照らして、Balanced、Unbalanced、Low のいずれかのラベルを付けます。独立した解説では、ベースラインができるまでに約3週間の装着が必要だとされています。",
+        "「Unbalanced」は、あなた自身の範囲の外（上または下）にあるという意味にすぎません。Garmin のユーザーは、調子の良い期間のあとになぜこれが表示されるのかとよく尋ねます。値が変わるにつれて、範囲そのものも動くためです。",
+        "Garmin 自身の HRV Status のページには、計算式が RMSSD で、睡眠中に測定されると書かれています（下に引用）。"
+      ],
+      "connect": "Garmin の開発者プログラムのページには現在申請フォームがなく、続報を待つようにという案内があるだけです。Garmin がアクセスを再開するまで、直接連携は作れません。",
+      "appleHealth": "Garmin が HRV を Apple Health に書き込むことは確認できていないため、Garmin の HRV が ONDA に表示されるとはお約束できません。お使いのデバイスが Apple Watch でなくても、ONDA は iPhone のカメラで脈拍を測り、呼吸数の推定値も出せます。カメラで得られるのは脈拍であり、HRV ではありません。",
+      "faq": [
+        {
+          "q": "体調は良いのに、なぜ Garmin は Unbalanced と表示するのですか？",
+          "a": "Unbalanced は、最近のあなた個人の範囲から上下どちらかに外れているという意味です。数値についての説明であって、あなたの健康についての説明ではありません。"
+        },
+        {
+          "q": "ONDA は Garmin のデータを読めますか？",
+          "a": "現時点では直接は読めません。Garmin は新しい開発者の申請を受け付けていないためです。ONDA は iPhone のカメラで脈拍を測ることができ、HRV は Apple Health（Apple Watch や、Apple Health に同期するほかのトラッカー）から読み取ります。"
+        }
+      ],
+      "det": {
+        "hrvSummary": "Garmin は HRV の指標を RMSSD と明示しています。HRV Status は睡眠中に自動で測定され、あなた自身の測定履歴から作られた個人のベースライン範囲に照らして読まれます。",
+        "composite": "Garmin は Body Battery を、身体活動、ストレス、休息、睡眠というカテゴリーでしか説明していません。HRV が直接入力されているかどうか、各部分の重みは公開されていません。",
+        "independent": [
+          "睡眠中に5種類のウェアラブルを ECG（心電図）の基準と比べた研究（{{fact:study.dial2025.participants}}、{{fact:study.dial2025.nights}}）では、Garmin Fenix 6 の夜間 HRV の ECG との一致度は、Oura や WHOOP より低くなりました。",
+          "この比較における夜間 HRV の ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.garmin}}。"
+        ],
+        "independentNone": "Garmin の HRV Status そのものを ECG と比べた独立した研究は見つかりませんでした。",
+        "affiliated": []
+      }
+    },
+    "fitbit": {
+      "metaTitle": "Fitbit の HRV の読み方 | ONDA Life",
+      "metaDescription": "Fitbit の HRV を自分のベースラインに照らして読む方法、デバイス間で値が違う理由、Fitbit と Pixel Watch のデータの ONDA との連携可否、Google の開発者アクセスの変更点。",
+      "h1": "Fitbit の HRV の読み方",
+      "lead": "Fitbit と Pixel Watch は Fitbit アプリで心拍変動（HRV）を表示します。最も役立つ読み方は、一つの「良い」数値とではなく、最近のあなた自身の夜と比べることです。",
+      "shows": [
+        "Google のヘルプページは夜間の指標の中に HRV を挙げ、Readiness の要素も示していますが、HRV の計算式は明記していないため、ここでは表記していません。",
+        "表記が何であれ、ある夜の値は数週間にわたるあなた自身のいつもの範囲と比べてください。一晩の上下だけでは、それ自体ではほとんど何もわかりません。"
+      ],
+      "connect": "Google によると、Google Health API は現在新しいプロジェクトを受け付けておらず、従来の Fitbit Web API は 2026-10-30 に終了します。そのため、現時点で直接連携はできません。",
+      "appleHealth": "Google 自身のヘルプページによると、Google Health アプリは Apple Health から HRV を読み取りますが、Apple Health に HRV を書き込みません。そのため、Fitbit や Pixel Watch の HRV がこの経路で ONDA に届くことはありません。お使いのデバイスが Apple Watch でなくても、ONDA は iPhone のカメラで脈拍を測り、呼吸数の推定値も出せます。カメラで得られるのは脈拍であり、HRV ではありません。",
+      "faq": [
+        {
+          "q": "ONDA は Fitbit や Pixel Watch の HRV を読めますか？",
+          "a": "直接は読めません。Google はヘルス API の新しいプロジェクトを受け付けていないためです。ONDA は iPhone のカメラで脈拍を測ることができ、HRV は Apple Health（Apple Watch や、Apple Health に同期するほかのトラッカー）から読み取ります。"
+        }
+      ],
+      "det": {
+        "hrvSummary": "Google のヘルプページは、Google Health アプリの夜間の健康指標の中に HRV を挙げていますが、計算式は明記していないため、指標は「非公開」として記録しています。",
+        "composite": "Google は Readiness の要素として、HRV、最近の睡眠、安静時心拍数の3つを挙げています。各要素の重みは公開していません。",
+        "independent": [
+          "小規模なパイロット研究では、Fitbit Versa 4 の夜間 HRV は、ECG（心電図）に基づく基準と強い相関と許容できる一致を示しました。",
+          "このパイロット研究の対象は {{fact:study.nasr2025.participants}} でした。"
+        ],
+        "affiliated": [
+          "Google が資金提供した Pixel Watch 3 の研究は、HRV ではなく心拍数を検証したものです。",
+          "Fitbit が資金提供した、年齢別 HRV の集団データ（Fitbit ユーザーの記述であり、正確さの検証ではありません）。"
+        ]
+      }
+    },
+    "samsung": {
+      "metaTitle": "Samsung Galaxy Watch の HRV の読み方 | ONDA Life",
+      "metaDescription": "Samsung Galaxy Watch の HRV を自分のベースラインに照らして読む方法、デバイス間で数値が違う理由、Samsung Health のデータの ONDA との連携可否。",
+      "h1": "Samsung Galaxy Watch の HRV の読み方",
+      "lead": "Samsung Health は Galaxy Watch の心臓と回復のデータを表示します。そこにある心拍変動（HRV）の数値は、集団の値ではなく、最近のあなた自身の夜と比べて読んでください。",
+      "shows": [
+        "Samsung のヘルプページは、Samsung Health が使う HRV の計算式も時間帯も明記していないため、ここでは表記していません。",
+        "Samsung の数値をほかのデバイスと比べると、違いが出ると考えてください。デバイスごとに測る時間帯も HRV の計算方法も異なります。"
+      ],
+      "connect": "Samsung Health のデータは、スマートフォン上の Android SDK を通じて開発者に提供されており、Web サイトから接続できる Web API ではありません。そのため、このサイトから直接連携を提供することはできません。",
+      "appleHealth": "Samsung Health が HRV を Apple Health に書き込むことは確認できていないため、Samsung Health の HRV が ONDA に表示されるとはお約束できません。お使いのデバイスが Apple Watch でなくても、ONDA は iPhone のカメラで脈拍を測り、呼吸数の推定値も出せます。カメラで得られるのは脈拍であり、HRV ではありません。",
+      "faq": [
+        {
+          "q": "ONDA は Samsung Health を読めますか？",
+          "a": "このサイトからは読めません。Samsung Health には公開 Web API がないためです。ONDA は iPhone のカメラで脈拍を測ることができ、HRV は Apple Health（Apple Watch や、Apple Health に同期するほかのトラッカー）から読み取ります。"
+        }
+      ],
+      "det": {
+        "hrvSummary": "Samsung のヘルプページは HRV の指標も時間帯も明記していません。Galaxy Ring の睡眠のページには心拍数、血中酸素、皮膚温が載っていますが、HRV はありません。",
+        "composite": "Samsung は Energy Score を、ヘルプページではなくニュースルームの記事でしか説明しておらず、それもカテゴリー（睡眠、活動など）だけです。HRV が要素かどうか、重みは公開されていません。",
+        "independent": [
+          "日常生活の丸一日（昼と夜）にわたって ECG（心電図）と比べたところ、旧型の Samsung スマートウォッチ（Gear Sport）は、睡眠中の心拍数と時間領域の HRV で許容できる結果を示しました。起きている間は、ほとんどの HRV 指標で誤差が大きくなりました。現行の Galaxy Watch と Galaxy Ring のモデルは検証されていません。"
+        ],
+        "affiliated": []
+      }
+    },
+    "withings": {
+      "metaTitle": "Withings の心臓データの読み方 | ONDA Life",
+      "metaDescription": "Withings の心臓と睡眠のデータを自分のベースラインに照らして読む方法、Withings が API で HRV を提供しているか、ONDA との連携可否。",
+      "h1": "Withings の心臓データの読み方",
+      "lead": "Withings のデバイスは心拍数と睡眠を記録します。心拍変動（HRV）について確認できたこと・できなかったこと、そしてあなた自身のいつもの範囲に照らした数値の読み方を説明します。",
+      "shows": [
+        "Withings は開発者向けドキュメントで HRV データに一般的な形でしか触れておらず、フィールド名を示していません。Withings がどの HRV を提供し、どう計算しているかは確認できていません。",
+        "安静時心拍数と睡眠は、それだけでも役立ちます。最近数週間のあなた自身の値と比べて読んでください。"
+      ],
+      "connect": "Withings には、契約なしで使える公開 API があります。連携を決める前に HRV を提供しているかを確認中のため、まだ何も予定していません。",
+      "appleHealth": "Withings が HRV を Apple Health に書き込むことは確認できていないため、Withings の HRV が ONDA に表示されるとはお約束できません。お使いのデバイスが Apple Watch でなくても、ONDA は iPhone のカメラで脈拍を測り、呼吸数の推定値も出せます。カメラで得られるのは脈拍であり、HRV ではありません。",
+      "faq": [
+        {
+          "q": "Withings は HRV を測りますか？",
+          "a": "Withings の公開開発者ドキュメントで HRV のフィールドを確認できなかったため、どちらとも述べていません。"
+        }
+      ],
+      "det": {
+        "hrvSummary": "Withings は、HRV は睡眠中に測定され、ミリ秒単位で示されるとしていますが、ヘルプページは計算式を明記していないため、指標は「非公開」として記録しています。",
+        "composite": "Withings のヘルプページに、総合的なレディネススコアは見つかりませんでした。Withings アプリは個々の測定値を表示します。",
+        "independent": [],
+        "independentNone": "Withings の HRV を ECG（心電図）と比べた独立した研究は見つかりませんでした。",
+        "affiliated": []
+      }
+    },
+    "ultrahuman": {
+      "metaTitle": "Ultrahuman Ring の HRV の読み方 | ONDA Life",
+      "metaDescription": "Ultrahuman Ring の HRV を自分のベースラインに照らして読む方法、リングとウォッチで数値が違う理由、Ultrahuman のデータの ONDA との連携可否。",
+      "h1": "Ultrahuman Ring の HRV の読み方",
+      "lead": "Ultrahuman のリングは、アプリで心拍変動（HRV）と回復系のスコアを表示します。ほかのデバイスやほかの人とではなく、最近のあなた自身の夜と比べて読んでください。",
+      "shows": [
+        "Ultrahuman によると、リングは夜間の HRV をあなた自身の範囲に照らして読み取りますが、計算式は明記していないため、ここでは表記していません。",
+        "複数の信号を組み合わせたスコアはメーカー独自のアルゴリズムです。その下にある HRV と安静時心拍数を見てください。"
+      ],
+      "connect": "Ultrahuman の公式な公開開発者 API は見つかっていないため、直接連携は提供できません。",
+      "appleHealth": "Ultrahuman 自身のブログ（ヘルプページではなく製品ブログ）では、Ring AIR の HRV は Apple Health アプリで確認できるとされています。そこにあれば、ONDA アプリはあなたの許可を得て Apple Health から読み取れます。ただし、私たち自身はこれをデバイスで確認していません。お使いのデバイスが Apple Watch でなくても、ONDA は iPhone のカメラで脈拍を測り、呼吸数の推定値も出せます。カメラで得られるのは脈拍であり、HRV ではありません。",
+      "faq": [
+        {
+          "q": "ONDA は Ultrahuman のデータを読めますか？",
+          "a": "直接は読めません。公式な公開 API が見つかっていないためです。ONDA は iPhone のカメラで脈拍を測ることができ、HRV は Apple Health（Apple Watch や、Apple Health に同期するほかのトラッカー）から読み取ります。"
+        }
+      ],
+      "det": {
+        "hrvSummary": "Ultrahuman によると、リングは夜間の HRV を読み取り、毎晩をあなた自身の範囲と比べます。計算式は明記していないため、指標は「非公開」として記録しています。これらの引用はヘルプページではなく製品ページからのものです。",
+        "composite": "Ultrahuman は Recovery の要素として、心拍数、HRV、体温、前夜の睡眠を挙げており、それぞれをあなた自身のベースラインと比べます。各要素の重みは公開していません。",
+        "independent": [],
+        "independentNone": "Ultrahuman のリングの HRV を ECG（心電図）と比べた独立した研究は見つかりませんでした。",
+        "affiliated": []
+      }
+    },
+    "ringconn": {
+      "metaTitle": "RingConn の HRV の読み方 | ONDA Life",
+      "metaDescription": "RingConn の HRV を自分のベースラインに照らして読む方法、リングとウォッチで数値が違う理由、RingConn のデータの ONDA との連携可否。",
+      "h1": "RingConn の HRV の読み方",
+      "lead": "RingConn はアプリで心拍変動（HRV）と睡眠を表示します。役に立つ問いは、今夜があなた自身のいつもの範囲と比べてどうか、です。",
+      "shows": [
+        "RingConn 自身のページから、どの HRV の計算式や時間帯を使っているかを確認できていないため、ここでは表記していません。",
+        "同じ条件で比べてください。同じデバイスで、夜の同じ時間帯に、数週間にわたって比べます。"
+      ],
+      "connect": "RingConn は、私たちが見つけられる範囲で公開の開発者 API を提供していないため、直接連携はできません。",
+      "appleHealth": "RingConn が HRV を Apple Health に書き込むことは確認できていないため、RingConn の HRV が ONDA に表示されるとはお約束できません。お使いのデバイスが Apple Watch でなくても、ONDA は iPhone のカメラで脈拍を測り、呼吸数の推定値も出せます。カメラで得られるのは脈拍であり、HRV ではありません。",
+      "faq": [
+        {
+          "q": "ONDA は RingConn のデータを読めますか？",
+          "a": "直接は読めません。私たちが使える公開 API がないためです。ONDA は iPhone のカメラで脈拍を測ることができ、HRV は Apple Health（Apple Watch や、Apple Health に同期するほかのトラッカー）から読み取ります。"
+        }
+      ]
+    },
+    "amazfit": {
+      "metaTitle": "Amazfit（Zepp）の HRV の読み方 | ONDA Life",
+      "metaDescription": "Amazfit と Zepp の HRV を自分のベースラインに照らして読む方法、デバイス間で値が違う理由、Amazfit のデータの ONDA との連携可否。",
+      "h1": "Amazfit（Zepp）の HRV の読み方",
+      "lead": "Amazfit のデバイスは Zepp アプリで心拍変動（HRV）を表示します。一つの目標値とではなく、最近のあなた自身の夜と比べて読んでください。",
+      "shows": [
+        "Zepp 自身のページから、どの HRV の計算式や時間帯を使っているかを確認できていないため、ここでは表記していません。",
+        "総合スコアがおかしく見えるときは、その背後にある HRV と安静時心拍数を数日にわたって確認してください。"
+      ],
+      "connect": "Amazfit / Zepp は、私たちが見つけられる範囲で公開の開発者 API を提供していないため、直接連携はできません。",
+      "appleHealth": "Amazfit が HRV を Apple Health に書き込むことは確認できていないため、Amazfit の HRV が ONDA に表示されるとはお約束できません。お使いのデバイスが Apple Watch でなくても、ONDA は iPhone のカメラで脈拍を測り、呼吸数の推定値も出せます。カメラで得られるのは脈拍であり、HRV ではありません。",
+      "faq": [
+        {
+          "q": "ONDA は Amazfit のデータを読めますか？",
+          "a": "直接は読めません。私たちが使える公開 API がないためです。ONDA は iPhone のカメラで脈拍を測ることができ、HRV は Apple Health（Apple Watch や、Apple Health に同期するほかのトラッカー）から読み取ります。"
+        }
+      ]
+    },
+    "apple-watch": {
+      "metaTitle": "Apple Watch の HRV（SDNN）の読み方 | ONDA Life",
+      "metaDescription": "Apple Watch の HRV の読み方：Apple Health が SDNN を保存する理由、リングの RMSSD と比べられない理由、ONDA アプリがそれを読み取ってあなた自身のベースラインを作る方法。",
+      "h1": "Apple Watch の HRV の読み方",
+      "lead": "Apple Watch は心拍変動（HRV）を自動で記録し、Apple Health に保存します。それがどの HRV なのか、なぜリングの数値と違うのか、そして ONDA がそれをどう使うかを説明します。",
+      "shows": [
+        "Apple Health は HRV を SDNN（正常な心拍の間隔の標準偏差）として保存します。これは Apple Watch によって自動で記録されます。",
+        "watchOS を搭載した最近の Apple Watch モデルでは、Recovery HRV と Overall HRV という2つの種類も表示されます。Apple は Recovery HRV の計算方法を明らかにしていません。",
+        "SDNN と RMSSD は異なる指標なので、Apple Watch の数値を WHOOP やリングの RMSSD と直接比べることはできません。"
+      ],
+      "connect": "Apple Watch には Web API がなく、データは iPhone の Apple Health に保存されたままです。ONDA の iOS アプリは、あなたの許可を得てそこから読み取ります。",
+      "appleHealth": "はい。ONDA アプリは Apple Health から Apple Watch の HRV を読み取り、あなた自身の夜間のベースライン（最近の夜の平均 ± SD。集団の基準値は決して使いません）を作ります。また、練習中は Apple Watch がリアルタイムの脈拍を提供します。リアルタイムの呼吸バイオフィードバックには Apple Watch が必要です。Apple Watch がない場合、ONDA は iPhone のカメラで脈拍を測ります。",
+      "faq": [
+        {
+          "q": "Apple Watch の HRV がリングより低いのはなぜですか？",
+          "a": "Apple Health は SDNN を保存しますが、ほとんどのリングは RMSSD を示し、デバイスごとに測る時間帯も異なります。数値は同じ尺度ではありません。"
+        },
+        {
+          "q": "ONDA は Apple Watch の HRV を読み取りますか？",
+          "a": "はい。あなたの許可を得て Apple Health から読み取り、毎晩をあなた自身のベースラインと比べます。あなたの数値を説明するものであり、何かを診断するものではありません。"
+        }
+      ],
+      "det": {
+        "hrvSummary": "Apple Health は HRV を SDNN として保存します。これは夜間だけでなく日中も、あなたが静止しているときに Apple Watch が自動でサンプリングしたものです。新しいモデルでは Recovery HRV も表示されます。",
+        "composite": "Apple Watch には HRV から作られるレディネス型の単一スコアがないため、公開すべき重みはありません。",
+        "independent": [
+          "安静時に検査室の ECG（心電図）と比べたところ、Apple Watch Series 6 は、HRV の計算に使われる心拍間の間隔で中程度の一致を示しました。新しいモデルの Recovery HRV は独立して検証されていません。",
+          "この研究の対象は {{fact:study.bonneval2025.participants}} で、安静時のこれらの間隔の平均絶対パーセント誤差は {{fact:study.bonneval2025.mapeRest}} でした。"
+        ],
+        "affiliated": []
+      }
+    }
+  }
+}

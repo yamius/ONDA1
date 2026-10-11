@@ -1,0 +1,350 @@
+{
+  "ui": {
+    "allDevices": "Alle apparaten",
+    "shows": "Wat {name} laat zien",
+    "hrvType": "Type HRV:",
+    "sources": "Bronnen",
+    "calls": "Wat {name} HRV noemt",
+    "inputs": "Wat er in {composite} meetelt",
+    "inputsNone": "Heeft {name} een gecombineerde score?",
+    "accuracy": "Hoe nauwkeurig is het?",
+    "weights": "Gewichten van de onderdelen: niet bekendgemaakt door de fabrikant.",
+    "single": "één studie",
+    "affiliated": "Studies gefinancierd door of verbonden aan de fabrikant (apart vermeld)",
+    "accessed": "geraadpleegd",
+    "quoteNote": "Citaten zijn letterlijk overgenomen van de pagina’s van de fabrikant, in het Engels.",
+    "howToRead": "Hoe je het leest",
+    "howToRead1": "Vergelijk een nacht met je eigen gebruikelijke bereik van de afgelopen weken, niet met iemand anders of met een ander apparaat. Eén lage nacht is meestal een reactie op iets specifieks: een korte nacht, alcohol, een infectie, stress of zware training. Meerdere dagen onder je bereik, samen met een hogere hartslag in rust en je niet goed voelen, zijn een reden om rust te nemen.",
+    "howToRead2": "Scores zoals Readiness, Recovery, Nightly Recharge of HRV Status zijn telkens het eigen algoritme van de fabrikant. Twee apparaten kunnen in dezelfde nacht verschillende HRV-waarden tonen, omdat ze op andere momenten en met andere formules meten; geen van beide is “fout”.",
+    "canConnect": "Kan {name} verbinden met ONDA?",
+    "throughAppleHealth": "Via Apple Health",
+    "questions": "Vragen",
+    "readMore": "Lees meer op ONDA Science",
+    "emergencyTitle": "Wanneer een getal er niet toe doet",
+    "emergencyText": "Geen enkele HRV-meting kan je vertellen of klachten ernstig zijn. Wat je apparaat ook laat zien, bel de hulpdiensten of zoek spoedhulp bij: {flags}. Deze pagina is geen medisch advies en stelt geen diagnose.",
+    "redFlags": "pijn of druk op de borst; flauwvallen of bijna flauwvallen; ernstige kortademigheid; een snelle, krachtige of onregelmatige hartslag die in rust niet bedaart (ook met duizeligheid); plotselinge verwardheid, zwakte aan één kant van het lichaam, moeite met praten",
+    "trademark": "{name} is een handelsmerk van de eigenaar. ONDA is niet verbonden aan of goedgekeurd door {name}.",
+    "otherDevices": "Andere apparaten",
+    "status": {
+      "app": "Werkt nu met de ONDA-app",
+      "planned": "Directe koppeling gepland",
+      "reviewing": "Wordt onderzocht",
+      "closed": "Toegang voor ontwikkelaars gesloten",
+      "no-api": "Geen openbare web-API"
+    }
+  },
+  "devices": {
+    "oura": {
+      "metaTitle": "Je Oura HRV en Readiness lezen | ONDA Life",
+      "metaDescription": "Oura HRV lezen: wat HRV Balance en Readiness betekenen, welke HRV Oura ’s nachts meldt, of Oura met ONDA kan verbinden en hoe je vergelijkt met je eigen basislijn.",
+      "h1": "Zo lees je je Oura HRV",
+      "lead": "Oura toont hartslagvariabiliteit (HRV) binnen Readiness en als nachtgemiddelde. Hier lees je wat die getallen zijn, wat ze niet zijn, en hoe je ze leest tegen je eigen basislijn in plaats van die van iemand anders.",
+      "shows": [
+        "De Readiness-score van Oura combineert meerdere onderdelen: HRV, hartslag in rust, lichaamstemperatuur, slaap, activiteit en, waar van toepassing, de menstruatiecyclus. Het is het eigen algoritme van Oura, geen medische meting.",
+        "Binnen Readiness vergelijkt “HRV Balance” je recente HRV met je niveau op langere termijn: Oura beschrijft het als een gewogen gemiddelde over 14 dagen, vergeleken met je gemiddelde over ongeveer twee maanden.",
+        "De documentatie voor ontwikkelaars van Oura geeft HRV als gemiddelde over je slaap (average_hrv). De hulppagina’s van Oura beschrijven mogelijke redenen voor een verandering met “kan”: een verandering is een signaal om naar te kijken, geen oorzaak.",
+        "HRV-waarden zijn niet direct te vergelijken tussen apparaten of apps. WHOOP berekent RMSSD tijdens je diepste slaap, Oura middelt metingen van vijf minuten over de hele nacht, Polar gebruikt ongeveer de eerste vier uur slaap en Apple Watch registreert SDNN overdag. Een directe vergelijking van vijf wearables met een ECG-referentie over 536 nachten vond systematische verschillen tussen apparaten. Vergelijk je waarden dus alleen met je eigen basislijn op hetzelfde apparaat: gemiddelden van anderen en tabellen per leeftijd zijn geen persoonlijke norm."
+      ],
+      "connect": "Oura heeft een openbare API. We plannen een directe koppeling, maar die is nog niet beschikbaar en we kunnen geen datum noemen. Oura zegt dat gegevens van huidige ringen alleen via de API beschikbaar zijn met een actief Oura-lidmaatschap.",
+      "appleHealth": "Volgens de eigen hulppagina van Oura hoort HRV niet bij de gegevens die Oura naar Apple Health exporteert, dus je Oura HRV komt op die manier niet in ONDA terecht. Als je apparaat geen Apple Watch is, kan ONDA je hartslag toch meten met de camera van je iPhone, samen met een schatting van je ademfrequentie. De camera geeft hartslag, geen HRV.",
+      "faq": [
+        {
+          "q": "Welke HRV toont Oura?",
+          "a": "Oura meldt HRV die tijdens de slaap is gemeten en samengevat als nachtgemiddelde. HRV Balance in Readiness vergelijkt een gewogen gemiddelde over 14 dagen met je gemiddelde over ongeveer twee maanden."
+        },
+        {
+          "q": "Kan ik mijn Oura HRV vergelijken met een getal van Apple Watch?",
+          "a": "Niet direct. Apple Health slaat HRV op als SDNN, en apparaten berekenen nachtelijke HRV over verschillende tijdvensters, dus dezelfde nacht kan op twee apparaten verschillende getallen geven."
+        }
+      ],
+      "det": {
+        "hrvSummary": "Oura meet HRV alleen tijdens de slaap en neemt metingen over de hele nacht. De hulppagina noemt de formule niet (RMSSD of een andere), dus we noteren de maat als niet bekendgemaakt.",
+        "composite": "Oura noemt de onderdelen van Readiness: Resting Heart Rate, HRV Balance, Body Temperature, Recovery Index, Sleep, Sleep Balance, Sleep Regularity, Previous Day Activity en Activity Balance. Oura publiceert niet hoe zwaar elk onderdeel meetelt.",
+        "independent": [
+          "Vergeleken met een ECG thuis tijdens de nacht mat de Oura Ring de nachtelijke hartslag en RMSSD nauwkeurig; de frequentiematen LF en LF:HF hadden grote fouten. Het artikel noemt de generatie van de ring niet en dateert van vóór Ring 4.",
+          "Aan dezelfde studie namen {{fact:study.cao2022.participants}} deel.",
+          "In een vergelijking van vijf wearables met een ECG-referentie tijdens de slaap ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}) hadden Oura Gen 3 en Gen 4 van de vijf apparaten de hoogste overeenstemming met ECG voor nachtelijke HRV.",
+          "Overeenstemming met ECG voor nachtelijke HRV in die vergelijking (concordantiecorrelatiecoëfficiënt): {{fact:study.dial2025.hrvCcc.oura}}."
+        ],
+        "affiliated": []
+      }
+    },
+    "whoop": {
+      "metaTitle": "Je WHOOP HRV en Recovery lezen | ONDA Life",
+      "metaDescription": "WHOOP HRV lezen: waaruit het Recovery-percentage bestaat, waarom WHOOP HRV RMSSD is, of WHOOP met ONDA kan verbinden en hoe je een lage nacht leest tegen je basislijn.",
+      "h1": "Zo lees je je WHOOP HRV",
+      "lead": "WHOOP zet je nacht om in een Recovery-percentage, en hartslagvariabiliteit (HRV) is een van de onderdelen. Hier lees je waaruit het getal bestaat en hoe je het rustig leest.",
+      "shows": [
+        "Recovery is een score van 0 tot 100%, weergegeven in drie kleuren. WHOOP zegt dat het HRV, hartslag in rust, slaap en ademfrequentie gebruikt, vergeleken met je eigen basislijn.",
+        "De documentatie voor ontwikkelaars van WHOOP noemt de HRV-waarde hrv_rmssd_milli: het is RMSSD, in milliseconden, gekoppeld aan elke Recovery.",
+        "Recovery is het eigen algoritme van WHOOP. De formule achter gecombineerde scores als deze wordt niet door de fabrikanten gepubliceerd, dus zie het percentage als een samenvatting en kijk naar de HRV en de hartslag in rust eronder.",
+        "HRV-waarden zijn niet direct te vergelijken tussen apparaten of apps. WHOOP berekent RMSSD tijdens je diepste slaap, Oura middelt metingen van vijf minuten over de hele nacht, Polar gebruikt ongeveer de eerste vier uur slaap en Apple Watch registreert SDNN overdag. Een directe vergelijking van vijf wearables met een ECG-referentie over 536 nachten vond systematische verschillen tussen apparaten. Vergelijk je waarden dus alleen met je eigen basislijn op hetzelfde apparaat: gemiddelden van anderen en tabellen per leeftijd zijn geen persoonlijke norm."
+      ],
+      "connect": "WHOOP heeft een openbare API voor ontwikkelaars. We plannen een directe koppeling, maar die is nog niet beschikbaar. WHOOP keurt apps in fasen goed met een handmatige beoordeling, dus we kunnen geen datum noemen.",
+      "appleHealth": "We hebben niet bevestigd dat WHOOP HRV naar Apple Health schrijft, dus we beloven niet dat je WHOOP HRV in ONDA verschijnt. Als je apparaat geen Apple Watch is, kan ONDA je hartslag toch meten met de camera van je iPhone, samen met een schatting van je ademfrequentie. De camera geeft hartslag, geen HRV.",
+      "faq": [
+        {
+          "q": "Is WHOOP HRV RMSSD of SDNN?",
+          "a": "RMSSD. De documentatie voor ontwikkelaars van WHOOP vermeldt de HRV-waarde als RMSSD in milliseconden."
+        },
+        {
+          "q": "Mijn Recovery is rood. Is er iets mis?",
+          "a": "Eén lage score is geen diagnose. Meestal is het een reactie op iets specifieks, zoals een korte nacht, alcohol, ziekte, stress of zware training. Bekijk meerdere dagen tegen je eigen basislijn, en zie de lijst hieronder voor klachten waarvoor je nu hulp nodig hebt."
+        }
+      ],
+      "det": {
+        "hrvSummary": "WHOOP noemt zijn HRV-maat: RMSSD, in milliseconden. Die wordt niet over de hele nacht gemeten, maar tijdens je diepste slaap.",
+        "composite": "WHOOP noemt de onderdelen van Recovery: HRV, hartslag in rust, slaap en ademfrequentie, plus zuurstof in het bloed en huidtemperatuur. WHOOP publiceert niet hoe zwaar elk onderdeel meetelt.",
+        "independent": [
+          "Vergeleken met een ECG toonde de hartslag van WHOOP een aanvaardbare overeenstemming. Voor log-getransformeerde RMSSD naderden of overschreden de bias en de grenzen van overeenstemming de kleinste zinvolle verandering van de maat zelf, dus de auteurs raden aan het te lezen tegen de eigen precisie. De studie gebruikte een oudere generatie WHOOP, niet WHOOP 4.0 of MG.",
+          "In een vergelijking van vijf wearables met een ECG-referentie tijdens de slaap ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}) had WHOOP een hoge overeenstemming met ECG voor nachtelijke HRV, lager dan Oura Gen 3 en Gen 4.",
+          "Overeenstemming met ECG voor nachtelijke HRV in die vergelijking (concordantiecorrelatiecoëfficiënt): {{fact:study.dial2025.hrvCcc.whoop}}."
+        ],
+        "affiliated": [
+          "Een studie naar de variatie van dag tot dag in door WHOOP afgeleide HRV bij sporters (betrouwbaarheid, geen nauwkeurigheid tegenover ECG), van een onderzoeksgroep die door WHOOP wordt ondersteund."
+        ]
+      }
+    },
+    "polar": {
+      "metaTitle": "Polar Nightly Recharge en HRV lezen | ONDA Life",
+      "metaDescription": "Polar Nightly Recharge lezen: wat ANS charge van −10 tot +10 betekent, welk deel van de nacht Polar gebruikt, of Polar met ONDA kan verbinden en waarom HRV niet in Apple Health komt.",
+      "h1": "Zo lees je je Polar Nightly Recharge",
+      "lead": "Polar toont nachtelijke hartslagvariabiliteit (HRV) via Nightly Recharge en de ANS charge. Hier lees je wat de schaal betekent en hoe je die leest tegen je eigen gebruikelijke niveau.",
+      "shows": [
+        "Nightly Recharge omvat ANS charge, op een schaal van −10 tot +10, waarbij 0 je gebruikelijke niveau over de laatste 28 dagen is.",
+        "Polar meet die over ongeveer de eerste vier uur slaap en geeft daarna een algemene status van “zeer slecht” tot “zeer goed”.",
+        "De API voor ontwikkelaars van Polar geeft voor Nightly Recharge een nachtelijk HRV-gemiddelde en de intervallen tussen hartslagen. We hebben bij Polar niet bevestigd welke HRV-formule dat gemiddelde gebruikt, dus we noemen het hier geen RMSSD of SDNN.",
+        "HRV-waarden zijn niet direct te vergelijken tussen apparaten of apps. WHOOP berekent RMSSD tijdens je diepste slaap, Oura middelt metingen van vijf minuten over de hele nacht, Polar gebruikt ongeveer de eerste vier uur slaap en Apple Watch registreert SDNN overdag. Een directe vergelijking van vijf wearables met een ECG-referentie over 536 nachten vond systematische verschillen tussen apparaten. Vergelijk je waarden dus alleen met je eigen basislijn op hetzelfde apparaat: gemiddelden van anderen en tabellen per leeftijd zijn geen persoonlijke norm."
+      ],
+      "connect": "Polar heeft een openbare API (AccessLink). We plannen een directe koppeling, maar die is nog niet beschikbaar en we kunnen geen datum noemen.",
+      "appleHealth": "Volgens de eigen supportpagina van Polar schrijft Polar Flow geen HRV naar Apple Health, dus je Polar HRV komt op die manier niet in ONDA terecht. Als je apparaat geen Apple Watch is, kan ONDA je hartslag toch meten met de camera van je iPhone, samen met een schatting van je ademfrequentie. De camera geeft hartslag, geen HRV.",
+      "faq": [
+        {
+          "q": "Wat betekent ANS charge 0?",
+          "a": "Nul betekent dat je nacht op je gebruikelijke niveau van de laatste 28 dagen lag. Positieve waarden liggen erboven, negatieve eronder."
+        },
+        {
+          "q": "Stuurt Polar HRV naar Apple Health?",
+          "a": "De supportpagina van Polar noemt de gegevens die Polar Flow met Apple Health deelt, en HRV hoort daar niet bij."
+        }
+      ],
+      "det": {
+        "hrvSummary": "Polar toont nachtelijke HRV via het onderdeel ANS charge van Nightly Recharge, opgebouwd uit HRV en ademfrequentie en vergeleken met je eigen gebruikelijke niveau. We konden geen volledige hulppagina van Polar openen die de formule noemt, dus we noteren de maat als niet bevestigd. Polar publiceert geen populatiewaarden.",
+        "composite": "Polar noemt de twee onderdelen van Nightly Recharge: sleep charge (je slaap vergeleken met wat gebruikelijk is voor jou) en ANS charge (HRV en ademfrequentie vergeleken met wat gebruikelijk is voor jou). Polar publiceert de exacte formule of gewichten niet.",
+        "independent": [
+          "In een vergelijking van vijf wearables met een ECG-referentie tijdens de slaap ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}) had het Polar Grit X Pro-horloge van de vijf apparaten de laagste overeenstemming met ECG voor nachtelijke HRV.",
+          "Overeenstemming met ECG voor nachtelijke HRV in die vergelijking (concordantiecorrelatiecoëfficiënt): {{fact:study.dial2025.hrvCcc.polar}}."
+        ],
+        "independentNone": "We vonden geen onafhankelijke studie die HRV van een Polar-horloge op zichzelf tegen een ECG toetst. De borstbanden van Polar zijn een ander apparaat en vallen hier niet onder.",
+        "affiliated": []
+      }
+    },
+    "garmin": {
+      "metaTitle": "Garmin HRV Status lezen (Balanced, Low) | ONDA Life",
+      "metaDescription": "Garmin HRV Status lezen: wat Balanced, Unbalanced en Low betekenen, waarom een basislijn weken nodig heeft, of Garmin met ONDA kan verbinden en hoe je een lage nacht leest.",
+      "h1": "Zo lees je je Garmin HRV Status",
+      "lead": "Garmin geeft je nachtelijke hartslagvariabiliteit (HRV) het label Balanced, Unbalanced of Low, vergeleken met je eigen bereik. Hier lees je wat die labels betekenen en waarom ze kunnen verschuiven.",
+      "shows": [
+        "HRV Status zet je recente nachtelijke HRV af tegen een persoonlijk bereik en geeft het label Balanced, Unbalanced of Low. Onafhankelijke uitleg beschrijft dat het ongeveer drie weken dragen kost voordat de basislijn gevormd is.",
+        "“Unbalanced” betekent alleen dat je buiten je eigen bereik zit, erboven of eronder. Garmin-gebruikers vragen vaak waarom het verschijnt na een goede periode: het bereik zelf verschuift als je metingen veranderen.",
+        "De eigen HRV Status-pagina van Garmin noemt de formule: RMSSD, gemeten terwijl je slaapt (hieronder geciteerd)."
+      ],
+      "connect": "De pagina van het ontwikkelaarsprogramma van Garmin heeft op dit moment geen aanvraagformulier, alleen een melding om op updates te wachten. Tot Garmin de toegang weer opent, kunnen we geen directe koppeling bouwen.",
+      "appleHealth": "We hebben niet bevestigd dat Garmin HRV naar Apple Health schrijft, dus we beloven niet dat je Garmin HRV in ONDA verschijnt. Als je apparaat geen Apple Watch is, kan ONDA je hartslag toch meten met de camera van je iPhone, samen met een schatting van je ademfrequentie. De camera geeft hartslag, geen HRV.",
+      "faq": [
+        {
+          "q": "Waarom zegt Garmin Unbalanced terwijl ik me goed voel?",
+          "a": "Unbalanced betekent buiten je recente persoonlijke bereik, in beide richtingen. Het beschrijft het getal, niet je gezondheid."
+        },
+        {
+          "q": "Kan ONDA mijn Garmin-gegevens lezen?",
+          "a": "Op dit moment niet direct: Garmin accepteert geen nieuwe aanvragen van ontwikkelaars. ONDA kan je hartslag meten met de camera van je iPhone en leest HRV uit Apple Health (Apple Watch of een andere tracker die daarmee synchroniseert)."
+        }
+      ],
+      "det": {
+        "hrvSummary": "Garmin noemt zijn HRV-maat: RMSSD. HRV Status wordt automatisch gemeten terwijl je slaapt en gelezen tegen een persoonlijk basisbereik dat uit je eigen meetgeschiedenis is opgebouwd.",
+        "composite": "Garmin beschrijft Body Battery alleen in categorieën: lichamelijke activiteit, stress, rust en slaap. Of HRV er direct in meetelt, en hoe zwaar elk deel weegt, is niet bekendgemaakt.",
+        "independent": [
+          "In een vergelijking van vijf wearables met een ECG-referentie tijdens de slaap ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}) had een Garmin Fenix 6 een lagere overeenstemming met ECG voor nachtelijke HRV dan Oura en WHOOP.",
+          "Overeenstemming met ECG voor nachtelijke HRV in die vergelijking (concordantiecorrelatiecoëfficiënt): {{fact:study.dial2025.hrvCcc.garmin}}."
+        ],
+        "independentNone": "We vonden geen onafhankelijke studie die Garmin HRV Status zelf tegen een ECG toetst.",
+        "affiliated": []
+      }
+    },
+    "fitbit": {
+      "metaTitle": "Je Fitbit HRV lezen | ONDA Life",
+      "metaDescription": "Fitbit HRV lezen tegen je eigen basislijn, waarom apparaten verschillen, of Fitbit- en Pixel Watch-gegevens met ONDA kunnen verbinden en wat er veranderde in Googles toegang.",
+      "h1": "Zo lees je je Fitbit HRV",
+      "lead": "Fitbit en Pixel Watch tonen hartslagvariabiliteit (HRV) in de Fitbit-app. De nuttigste manier om die te lezen is tegen je eigen recente nachten, niet tegen één “goed” getal.",
+      "shows": [
+        "De hulppagina’s van Google noemen HRV bij de nachtelijke metingen en noemen de onderdelen van Readiness, maar niet de HRV-formule, dus we geven die hier geen label.",
+        "Welk label het ook heeft: vergelijk een nacht met je eigen gebruikelijke bereik over meerdere weken. Eén nacht hoger of lager zegt op zichzelf weinig."
+      ],
+      "connect": "Google zegt dat de Google Health API op dit moment geen nieuwe projecten toelaat, en de oudere Fitbit Web API wordt op 2026-10-30 uitgeschakeld. Een directe koppeling is voor ons nu dus niet mogelijk.",
+      "appleHealth": "Volgens de eigen hulppagina van Google leest de Google Health-app HRV uit Apple Health, maar schrijft er geen HRV naartoe, dus je HRV van Fitbit of Pixel Watch komt op die manier niet in ONDA terecht. Als je apparaat geen Apple Watch is, kan ONDA je hartslag toch meten met de camera van je iPhone, samen met een schatting van je ademfrequentie. De camera geeft hartslag, geen HRV.",
+      "faq": [
+        {
+          "q": "Kan ONDA mijn HRV van Fitbit of Pixel Watch lezen?",
+          "a": "Niet direct: Google accepteert geen nieuwe projecten voor zijn gezondheids-API. ONDA kan je hartslag meten met de camera van je iPhone en leest HRV uit Apple Health (Apple Watch of een andere tracker die daarmee synchroniseert)."
+        }
+      ],
+      "det": {
+        "hrvSummary": "De hulppagina van Google noemt HRV bij de nachtelijke gezondheidsmetingen in de Google Health-app, maar noemt de formule niet, dus we noteren de maat als niet bekendgemaakt.",
+        "composite": "Google noemt drie onderdelen van Readiness: HRV, recente slaap en hartslag in rust. Het publiceert niet hoe zwaar elk onderdeel meetelt.",
+        "independent": [
+          "In een kleine pilotstudie toonde de nachtelijke HRV van de Fitbit Versa 4 een sterke correlatie en aanvaardbare overeenstemming met een referentie op basis van ECG.",
+          "Aan die pilot namen {{fact:study.nasr2025.participants}} deel."
+        ],
+        "affiliated": [
+          "Een door Google gefinancierde studie van de Pixel Watch 3 controleerde hartslag, niet HRV.",
+          "Door Fitbit gefinancierde populatiegegevens over HRV per leeftijd (een beschrijving van Fitbit-gebruikers, geen controle van nauwkeurigheid)."
+        ]
+      }
+    },
+    "samsung": {
+      "metaTitle": "Samsung Galaxy Watch HRV lezen | ONDA Life",
+      "metaDescription": "Samsung Galaxy Watch HRV lezen tegen je eigen basislijn, waarom waarden tussen apparaten verschillen en of gegevens van Samsung Health met ONDA kunnen verbinden.",
+      "h1": "Zo lees je je Samsung Galaxy Watch HRV",
+      "lead": "Samsung Health toont gegevens over hart en herstel van Galaxy Watch. Lees elk getal voor hartslagvariabiliteit (HRV) daar tegen je eigen recente nachten in plaats van tegen een populatiecijfer.",
+      "shows": [
+        "De hulppagina’s van Samsung noemen niet de HRV-formule of het tijdvenster dat Samsung Health gebruikt, dus we geven het hier geen label.",
+        "Als je waarden van Samsung vergelijkt met een ander apparaat, verwacht dan verschillen: apparaten meten op andere momenten en berekenen HRV anders."
+      ],
+      "connect": "Gegevens van Samsung Health zijn voor ontwikkelaars beschikbaar via een Android-SDK op de telefoon, niet via een web-API waarmee een website kan verbinden. Daarom kunnen we vanaf deze site geen directe koppeling aanbieden.",
+      "appleHealth": "We hebben niet bevestigd dat Samsung Health HRV naar Apple Health schrijft, dus we beloven niet dat je HRV uit Samsung Health in ONDA verschijnt. Als je apparaat geen Apple Watch is, kan ONDA je hartslag toch meten met de camera van je iPhone, samen met een schatting van je ademfrequentie. De camera geeft hartslag, geen HRV.",
+      "faq": [
+        {
+          "q": "Kan ONDA Samsung Health lezen?",
+          "a": "Niet vanaf deze website: Samsung Health heeft geen openbare web-API. ONDA kan je hartslag meten met de camera van je iPhone en leest HRV uit Apple Health (Apple Watch of een andere tracker die daarmee synchroniseert)."
+        }
+      ],
+      "det": {
+        "hrvSummary": "De hulppagina’s van Samsung noemen de HRV-maat of het tijdvenster niet. De slaappagina van Galaxy Ring noemt hartslag, zuurstof in het bloed en huidtemperatuur, zonder HRV.",
+        "composite": "Samsung beschrijft Energy Score alleen in een nieuwsartikel, niet op een hulppagina, en alleen in categorieën (slaap, activiteit en dergelijke). Of HRV een onderdeel is, en de gewichten, zijn niet bekendgemaakt.",
+        "independent": [
+          "Over een volledige dag en nacht in het dagelijks leven, vergeleken met een ECG, gaf een oudere smartwatch van Samsung (Gear Sport) een aanvaardbare hartslag en HRV in het tijdsdomein tijdens de slaap; in wakkere toestand hadden de meeste HRV-maten grote fouten. Huidige modellen van Galaxy Watch en Galaxy Ring zijn niet getest."
+        ],
+        "affiliated": []
+      }
+    },
+    "withings": {
+      "metaTitle": "Je hartgegevens van Withings lezen | ONDA Life",
+      "metaDescription": "Hart- en slaapgegevens van Withings lezen tegen je eigen basislijn, of Withings HRV via de API meldt en of het met ONDA kan verbinden.",
+      "h1": "Zo lees je je hartgegevens van Withings",
+      "lead": "Apparaten van Withings registreren hartslag en slaap. Hier lees je wat we wel en niet konden bevestigen over hartslagvariabiliteit (HRV), en hoe je je waarden leest tegen je eigen gebruikelijke bereik.",
+      "shows": [
+        "Withings noemt HRV-gegevens in de documentatie voor ontwikkelaars alleen in algemene termen, zonder een veld te noemen. We hebben niet bevestigd welke HRV Withings meldt of hoe die wordt berekend.",
+        "Hartslag in rust en slaap zijn op zichzelf nuttig: lees ze tegen je eigen recente weken."
+      ],
+      "connect": "Withings heeft een openbare API waarvoor geen contract nodig is. We zoeken uit of die HRV levert voordat we over een koppeling beslissen, dus er is nog niets gepland.",
+      "appleHealth": "We hebben niet bevestigd dat Withings HRV naar Apple Health schrijft, dus we beloven niet dat je Withings HRV in ONDA verschijnt. Als je apparaat geen Apple Watch is, kan ONDA je hartslag toch meten met de camera van je iPhone, samen met een schatting van je ademfrequentie. De camera geeft hartslag, geen HRV.",
+      "faq": [
+        {
+          "q": "Meet Withings HRV?",
+          "a": "We konden geen HRV-veld bevestigen in de openbare documentatie voor ontwikkelaars van Withings, dus we zeggen het in geen van beide richtingen."
+        }
+      ],
+      "det": {
+        "hrvSummary": "Withings zegt dat HRV tijdens de slaap wordt gemeten en in milliseconden wordt gegeven, maar de hulppagina noemt de formule niet, dus we noteren de maat als niet bekendgemaakt.",
+        "composite": "We vonden op de hulppagina’s van Withings geen gecombineerde readiness-score: de Withings-app toont de afzonderlijke metingen.",
+        "independent": [],
+        "independentNone": "We vonden geen onafhankelijke studie die HRV van Withings tegen een ECG toetst.",
+        "affiliated": []
+      }
+    },
+    "ultrahuman": {
+      "metaTitle": "Je Ultrahuman Ring HRV lezen | ONDA Life",
+      "metaDescription": "Ultrahuman Ring HRV lezen tegen je eigen basislijn, waarom waarden van ring en horloge verschillen en of gegevens van Ultrahuman met ONDA kunnen verbinden.",
+      "h1": "Zo lees je je Ultrahuman Ring HRV",
+      "lead": "Ringen van Ultrahuman tonen hartslagvariabiliteit (HRV) en herstelscores in hun app. Lees ze tegen je eigen recente nachten, niet tegen een ander apparaat of een ander persoon.",
+      "shows": [
+        "Ultrahuman zegt dat de ring HRV ’s nachts afleest tegen je eigen bereik, maar noemt de formule niet, dus we geven het hier geen label.",
+        "Scores die meerdere signalen combineren zijn het eigen algoritme van de fabrikant; kijk naar de HRV en de hartslag in rust eronder."
+      ],
+      "connect": "We hebben geen officiële openbare API voor ontwikkelaars van Ultrahuman gevonden, dus we kunnen geen directe koppeling aanbieden.",
+      "appleHealth": "Het eigen blog van Ultrahuman (een productblog, geen hulppagina) zegt dat HRV van de Ring AIR in de Apple Health-app te vinden is. Als die daar staat, kan de ONDA-app die met je toestemming uit Apple Health lezen; we hebben dit zelf niet op een apparaat gecontroleerd. Als je apparaat geen Apple Watch is, kan ONDA je hartslag toch meten met de camera van je iPhone, samen met een schatting van je ademfrequentie. De camera geeft hartslag, geen HRV.",
+      "faq": [
+        {
+          "q": "Kan ONDA mijn Ultrahuman-gegevens lezen?",
+          "a": "Niet direct: we hebben geen officiële openbare API gevonden. ONDA kan je hartslag meten met de camera van je iPhone en leest HRV uit Apple Health (Apple Watch of een andere tracker die daarmee synchroniseert)."
+        }
+      ],
+      "det": {
+        "hrvSummary": "Ultrahuman zegt dat de ring HRV ’s nachts afleest en elke nacht vergelijkt met je eigen bereik. Het noemt de formule niet, dus we noteren de maat als niet bekendgemaakt. Deze citaten komen van een productpagina, niet van een hulppagina.",
+        "composite": "Ultrahuman noemt de onderdelen van Recovery: hartslag, HRV, temperatuur en de slaap van de afgelopen nacht, elk tegen je eigen basislijn. Het publiceert niet hoe zwaar elk onderdeel meetelt.",
+        "independent": [],
+        "independentNone": "We vonden geen onafhankelijke studie die HRV van de Ultrahuman-ring tegen een ECG toetst.",
+        "affiliated": []
+      }
+    },
+    "ringconn": {
+      "metaTitle": "Je RingConn HRV lezen | ONDA Life",
+      "metaDescription": "RingConn HRV lezen tegen je eigen basislijn, waarom waarden van ring en horloge verschillen en of gegevens van RingConn met ONDA kunnen verbinden.",
+      "h1": "Zo lees je je RingConn HRV",
+      "lead": "RingConn toont hartslagvariabiliteit (HRV) en slaap in de app. De nuttige vraag is hoe vannacht zich verhoudt tot je eigen gebruikelijke bereik.",
+      "shows": [
+        "We hebben op de eigen pagina’s van RingConn niet kunnen nagaan welke HRV-formule of welk tijdvenster het gebruikt, dus we geven het hier geen label.",
+        "Vergelijk gelijk met gelijk: hetzelfde apparaat, op hetzelfde moment van de nacht, over meerdere weken."
+      ],
+      "connect": "RingConn biedt voor zover wij konden vinden geen openbare API voor ontwikkelaars, dus een directe koppeling is niet mogelijk.",
+      "appleHealth": "We hebben niet bevestigd dat RingConn HRV naar Apple Health schrijft, dus we beloven niet dat je RingConn HRV in ONDA verschijnt. Als je apparaat geen Apple Watch is, kan ONDA je hartslag toch meten met de camera van je iPhone, samen met een schatting van je ademfrequentie. De camera geeft hartslag, geen HRV.",
+      "faq": [
+        {
+          "q": "Kan ONDA mijn RingConn-gegevens lezen?",
+          "a": "Niet direct: er is geen openbare API die we kunnen gebruiken. ONDA kan je hartslag meten met de camera van je iPhone en leest HRV uit Apple Health (Apple Watch of een andere tracker die daarmee synchroniseert)."
+        }
+      ]
+    },
+    "amazfit": {
+      "metaTitle": "Je Amazfit (Zepp) HRV lezen | ONDA Life",
+      "metaDescription": "Amazfit- en Zepp-HRV lezen tegen je eigen basislijn, waarom apparaten verschillen en of gegevens van Amazfit met ONDA kunnen verbinden.",
+      "h1": "Zo lees je je Amazfit (Zepp) HRV",
+      "lead": "Apparaten van Amazfit tonen hartslagvariabiliteit (HRV) in de Zepp-app. Lees die tegen je eigen recente nachten in plaats van tegen één streefgetal.",
+      "shows": [
+        "We hebben op de eigen pagina’s van Zepp niet kunnen nagaan welke HRV-formule of welk tijdvenster het gebruikt, dus we geven het hier geen label.",
+        "Als een gecombineerde score niet lijkt te kloppen, bekijk dan de HRV en de hartslag in rust erachter over meerdere dagen."
+      ],
+      "connect": "Amazfit / Zepp biedt voor zover wij konden vinden geen openbare API voor ontwikkelaars, dus een directe koppeling is niet mogelijk.",
+      "appleHealth": "We hebben niet bevestigd dat Amazfit HRV naar Apple Health schrijft, dus we beloven niet dat je Amazfit HRV in ONDA verschijnt. Als je apparaat geen Apple Watch is, kan ONDA je hartslag toch meten met de camera van je iPhone, samen met een schatting van je ademfrequentie. De camera geeft hartslag, geen HRV.",
+      "faq": [
+        {
+          "q": "Kan ONDA mijn Amazfit-gegevens lezen?",
+          "a": "Niet direct: er is geen openbare API die we kunnen gebruiken. ONDA kan je hartslag meten met de camera van je iPhone en leest HRV uit Apple Health (Apple Watch of een andere tracker die daarmee synchroniseert)."
+        }
+      ]
+    },
+    "apple-watch": {
+      "metaTitle": "Je Apple Watch HRV (SDNN) lezen | ONDA Life",
+      "metaDescription": "Apple Watch HRV lezen: waarom Apple Health SDNN opslaat, waarom dat niet te vergelijken is met RMSSD van ringen en hoe de ONDA-app het leest voor je eigen basislijn.",
+      "h1": "Zo lees je je Apple Watch HRV",
+      "lead": "Apple Watch registreert hartslagvariabiliteit (HRV) automatisch en slaat die op in Apple Health. Hier lees je welke HRV dat is, waarom die verschilt van waarden van ringen en hoe ONDA die gebruikt.",
+      "shows": [
+        "Apple Health slaat HRV op als SDNN, de standaardafwijking van de intervallen tussen normale hartslagen, automatisch geregistreerd door Apple Watch.",
+        "Recente Apple Watch-modellen met watchOS tonen ook twee varianten, Recovery HRV en Overall HRV. Apple heeft niet gezegd hoe Recovery HRV wordt berekend.",
+        "SDNN en RMSSD zijn verschillende maten, dus een getal van Apple Watch is niet direct te vergelijken met RMSSD van WHOOP of een ring."
+      ],
+      "connect": "Apple Watch heeft geen web-API: de gegevens blijven in Apple Health op je iPhone. De ONDA-app voor iOS leest ze daar, met je toestemming.",
+      "appleHealth": "Ja. De ONDA-app leest de HRV van Apple Watch uit Apple Health om je eigen nachtelijke basislijn op te bouwen (gemiddelde ± SD over je recente nachten, nooit een populatienorm), en Apple Watch levert live hartslag tijdens de oefening. Live ademhalingsbiofeedback vereist Apple Watch; zonder Apple Watch meet ONDA je hartslag met de camera van je iPhone.",
+      "faq": [
+        {
+          "q": "Waarom is de HRV van mijn Apple Watch lager dan die van mijn ring?",
+          "a": "Apple Health slaat SDNN op; de meeste ringen melden RMSSD, en apparaten meten over verschillende tijdvensters. De getallen staan niet op dezelfde schaal."
+        },
+        {
+          "q": "Leest ONDA de HRV van mijn Apple Watch?",
+          "a": "Ja, uit Apple Health met je toestemming, om elke nacht te vergelijken met je eigen basislijn. Het beschrijft je waarden en stelt geen diagnose."
+        }
+      ],
+      "det": {
+        "hrvSummary": "Apple Health slaat HRV op als SDNN, automatisch gemeten door Apple Watch gedurende de dag wanneer je stilzit, niet alleen ’s nachts. Nieuwere modellen tonen ook Recovery HRV.",
+        "composite": "Apple Watch heeft geen afzonderlijke readiness-achtige score op basis van HRV, dus er zijn geen gewichten om bekend te maken.",
+        "independent": [
+          "Vergeleken met een laboratorium-ECG in rust toonde een Apple Watch Series 6 matige overeenstemming voor de intervallen tussen hartslagen waarmee HRV wordt berekend. Recovery HRV op nieuwere modellen is niet onafhankelijk gecontroleerd.",
+          "Aan die studie namen {{fact:study.bonneval2025.participants}} deel; de gemiddelde absolute procentuele fout voor die intervallen in rust was {{fact:study.bonneval2025.mapeRest}}."
+        ],
+        "affiliated": []
+      }
+    }
+  }
+}

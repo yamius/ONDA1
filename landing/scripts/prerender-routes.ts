@@ -371,6 +371,15 @@ const livePublish = (c: PublishCollection) => LOCALE_PUBLISH.filter((e) => e.col
 
 /** Article slugs with a live /ru/articles/<slug> URL — the base pilot plus
  *  rollout entries whose publishOn date has been reached at build time. */
+/** /<lang>/connect/<device> (071 2c): live from its release-queue date, only when the translation file exists. */
+import { CONNECT_DEVICE_I18N_LANGS } from '../src/data/connect-devices-i18n'
+export const LIVE_CONNECT_DEVICE_ENTRIES = livePublish('connectDevices').filter(
+  (e) => CONNECT_DEVICE_I18N_LANGS.includes(e.lang) && CONNECT_DEVICES.some((d) => d.slug === e.slug),
+)
+export function connectDeviceLangs(slug: string): readonly string[] {
+  return ['en', ...LIVE_CONNECT_DEVICE_ENTRIES.filter((e) => e.slug === slug).map((e) => e.lang)]
+}
+
 export const RU_PILOT_ARTICLE_SLUGS: readonly string[] = [
   ...RU_ARTICLE_PILOT_BASE,
   ...RU_ARTICLE_ROLLOUT.filter((e) => e.publishOn <= BUILD_DATE).map((e) => e.slug),
@@ -1014,6 +1023,7 @@ const nonLocalizedStaticPaths = [
   // Localized /<lang>/connect hubs (task 073 step 2); device pages stay EN-only.
   ...['ru', 'es', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt'].map((l) => `/${l}/connect`),
   ...CONNECT_DEVICES.map((d) => `/connect/${d.slug}`),
+  ...LIVE_CONNECT_DEVICE_ENTRIES.map((e) => `/${e.lang}/connect/${e.slug}`),
   '/ru/apple-watch-hrv-biofeedback',
   '/es/apple-watch-hrv-biofeedback',
   // /compare — ONDA's own "ONDA vs <competitor>" comparisons. Hub localized to

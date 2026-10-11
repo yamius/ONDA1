@@ -557,13 +557,37 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'apple-watch-ultra-4' },
   { collection: 'reviews', slug: 'bettersleep', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
   ],
-  // 077: localized red-light category hub (links only to children live in each language)
-  [
-  { collection: 'categoryHubs', slug: 'red-light-therapy' },
-  ],
+  // 077 red-light category hub: moved to PRIORITY_RELEASE_QUEUE (owner 2026-10-11)
   // 077 item 2: ONDA's own guide (onda-guides.json), all 11 languages in one block
   [
   { collection: 'roundups', slug: 'apps-combining-breathing-hrv-realtime-feedback' },
+  ],
+]
+
+/**
+ * Priority lane (owner 2026-10-11, task 071 2c). Its entries take the NEXT batch slots from
+ * PRIORITY_FROM onward; the total pace stays PER_BATCH pages every EVERY_DAYS days (priority
+ * entries displace regular ones, never added on top). Every entry dated before PRIORITY_FROM
+ * keeps its date (already live). Regular entries after the cut shift later by the priority count.
+ * Append-only within the lane; keep PRIORITY_FROM fixed once pages from the lane are live.
+ */
+export const PRIORITY_FROM = '2026-10-12'
+export const PRIORITY_RELEASE_QUEUE: readonly (readonly { collection: 'categoryHubs' | 'connectDevices'; slug: string; langs?: readonly string[] }[])[] = [
+  // 077: localized red-light category hub (links only to children live in each language)
+  [{ collection: 'categoryHubs', slug: 'red-light-therapy' }],
+  // 071 2c: /<lang>/connect/<device> translations (src/data/connect-devices-i18n/<lang>.json)
+  [
+  { collection: 'connectDevices', slug: 'oura' },
+  { collection: 'connectDevices', slug: 'whoop' },
+  { collection: 'connectDevices', slug: 'apple-watch' },
+  { collection: 'connectDevices', slug: 'garmin' },
+  { collection: 'connectDevices', slug: 'polar' },
+  { collection: 'connectDevices', slug: 'fitbit' },
+  { collection: 'connectDevices', slug: 'samsung' },
+  { collection: 'connectDevices', slug: 'ultrahuman' },
+  { collection: 'connectDevices', slug: 'withings' },
+  { collection: 'connectDevices', slug: 'ringconn' },
+  { collection: 'connectDevices', slug: 'amazfit' },
   ],
 ]
 
@@ -588,6 +612,15 @@ export const RELEASE_QUEUE_ENTRIES: PublishEntry[] = (() => {
   baseCount = order.length
   // Tail waves: each wave round-robins across languages and starts after everything before it.
   for (const wave of TAIL_RELEASE_QUEUE) for (const r of wave) for (const lang of LANG_ORDER) if (!r.langs || r.langs.includes(lang)) order.push({ lang, collection: r.collection as PublishCollection, slug: r.slug })
+  // Priority lane: insert at the first batch slot dated >= PRIORITY_FROM. Slots are positional,
+  // so nothing before the cut moves and every batch still holds at most PER_BATCH entries.
+  const prio: typeof order = []
+  for (const wave of PRIORITY_RELEASE_QUEUE) for (const r of wave) for (const lang of LANG_ORDER) if (!r.langs || r.langs.includes(lang)) prio.push({ lang, collection: r.collection as PublishCollection, slug: r.slug })
+  let cut = 0
+  while (addDays(QUEUE_START, Math.floor(cut / PER_BATCH) * EVERY_DAYS) < PRIORITY_FROM) cut += PER_BATCH
+  cut = Math.min(cut, order.length)
+  if (cut <= baseCount) baseCount += prio.length
+  order.splice(cut, 0, ...prio)
   return order.map((e, i) => ({ ...e, publishOn: addDays(QUEUE_START, Math.floor(i / PER_BATCH) * EVERY_DAYS) }))
 })()
 
