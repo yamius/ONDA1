@@ -11,6 +11,8 @@ import WatchConnectivity
 @main
 struct OndaWatchApp: App {
     @StateObject private var workoutManager = WorkoutManager.shared
+    // 076: set when the ONDA complication is tapped (ondalife://breathe).
+    @State private var showBreatheNow = false
     
     init() {
         let bundleId = Bundle.main.bundleIdentifier ?? "unknown"
@@ -34,6 +36,14 @@ struct OndaWatchApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(workoutManager)
+                .onOpenURL { url in
+                    if url.scheme == "ondalife" && url.host == "breathe" {
+                        showBreatheNow = true
+                    }
+                }
+                .sheet(isPresented: $showBreatheNow) {
+                    BreatheNowView()
+                }
         }
     }
 }
