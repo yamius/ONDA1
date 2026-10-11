@@ -8,6 +8,28 @@ use_frameworks!
 # Requires CocoaPods 1.6 or newer
 install! 'cocoapods', :disable_input_output_paths => true
 
+# 1.9.4: exclude GoogleAdsOnDeviceConversion (Google Ads on-device conversion
+# measurement). The Capacitor plugin depends on plain 'FirebaseAnalytics',
+# whose default subspec pulls GoogleAppMeasurement/Default ->
+# IdentitySupport + GoogleAdsOnDeviceConversion. 'FirebaseAnalytics/Core'
+# is Firebase's official no-ad-id variant (analytics still works). A Podfile
+# `pod 'FirebaseAnalytics/Core'` alone would NOT help (CocoaPods unions it with
+# the plugin's default subspec), so we rewrite the plugin's podspec dependency
+# here, before resolution. Runs on every `pod install` (CI does `npm ci` first,
+# so node_modules is fresh each time). Verify in CI log: no
+# "Installing GoogleAdsOnDeviceConversion" / "GoogleAppMeasurement/IdentitySupport".
+fa_podspec = File.join(__dir__, '../../node_modules/@capacitor-community/firebase-analytics/CapacitorCommunityFirebaseAnalytics.podspec')
+if File.exist?(fa_podspec)
+  fa_src = File.read(fa_podspec)
+  fa_new = fa_src.gsub(/s\.dependency\s+'FirebaseAnalytics'(?!\/)/, "s.dependency 'FirebaseAnalytics/Core'")
+  if fa_new != fa_src
+    File.write(fa_podspec, fa_new)
+    puts '[ONDA] firebase-analytics plugin -> FirebaseAnalytics/Core (no GoogleAdsOnDeviceConversion)'
+  end
+else
+  raise "[ONDA] firebase-analytics podspec not found: #{fa_podspec}"
+end
+
 def capacitor_pods
   pod 'Capacitor', :path => '../../node_modules/@capacitor/ios'
   pod 'CapacitorCordova', :path => '../../node_modules/@capacitor/ios'
