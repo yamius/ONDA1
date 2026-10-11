@@ -46,6 +46,10 @@ export const CONNECT_STATUS_LABEL: Record<ConnectStatus, string> = {
 const CAMERA =
   'If your device is not Apple Watch, ONDA can still measure your pulse with the iPhone camera, along with a breathing-rate estimate. The camera gives pulse, not HRV.'
 
+/** Digest 073 §4 (adapted): no cross-device / peer comparison for night-time HRV. */
+const CROSS_DEVICE_CAVEAT =
+  'HRV numbers cannot be compared directly between devices or apps. WHOOP calculates RMSSD during your deepest sleep, Oura averages five-minute samples across the night, Polar uses roughly the first four hours of sleep, and Apple Watch records SDNN during the day. A direct comparison of five wearables with an ECG reference over 536 nights found systematic differences between devices. So compare your numbers only with your own baseline on the same device: other people’s averages and age tables are not a personal standard.'
+
 const UNCONFIRMED_HEALTH = (name: string) =>
   `We have not confirmed that ${name} writes HRV to Apple Health, so we do not promise that your ${name} HRV will appear in ONDA. ${CAMERA}`
 
@@ -63,17 +67,19 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
       'Oura’s Readiness score combines several inputs: HRV, resting heart rate, body temperature, sleep, activity and, where relevant, the menstrual cycle. It is Oura’s own algorithm, not a medical measure.',
       'Inside Readiness, “HRV Balance” compares your recent HRV with your longer-term level: Oura describes it as a 14-day weighted average compared with your average over about two months.',
       'Oura’s developer documentation exposes HRV as an average over your sleep (average_hrv). Oura’s help pages describe possible reasons for a change with “may” — a change is a signal to look at, not a cause.',
+      CROSS_DEVICE_CAVEAT,
     ],
     hrvType: 'Night-time average (during sleep)',
     sources: [
       { label: 'Oura Help: Readiness Score', url: 'https://support.ouraring.com/hc/en-us/articles/360025589793' },
       { label: 'Oura API: authentication and data', url: 'https://cloud.ouraring.com/docs/authentication' },
       { label: 'Oura API Agreement', url: 'https://cloud.ouraring.com/legal/api-agreement' },
+      { label: 'Oura Help: Apple Health Integration', url: 'https://support.ouraring.com/hc/en-us/articles/360025438734-Apple-Health-Integration' },
     ],
     status: 'planned',
     connect:
       'Oura has a public API. We plan a direct connection, but it is not available yet and we cannot give a date. Oura says data from current rings is only available through its API with an active Oura Membership.',
-    appleHealth: UNCONFIRMED_HEALTH('Oura'),
+    appleHealth: `According to Oura’s own help page, HRV is not among the data Oura exports to Apple Health, so your Oura HRV will not reach ONDA that way. ${CAMERA}`,
     faq: [
       {
         q: 'Which HRV does Oura show?',
@@ -98,6 +104,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
       'Recovery is a score from 0 to 100%, shown in three colours. WHOOP says it uses HRV, resting heart rate, sleep and respiratory rate, compared with your own baseline.',
       'WHOOP’s developer documentation names the HRV value hrv_rmssd_milli: it is RMSSD, in milliseconds, attached to each Recovery.',
       'Recovery is WHOOP’s own algorithm. The formula behind composite scores like this is not published by the makers, so treat the percentage as a summary and look at the HRV and resting heart rate underneath it.',
+      CROSS_DEVICE_CAVEAT,
     ],
     hrvType: 'RMSSD, in milliseconds (in Recovery)',
     sources: [
@@ -133,6 +140,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
       'Nightly Recharge includes ANS charge, on a scale from −10 to +10, where 0 is your usual level over the last 28 days.',
       'Polar measures it over roughly the first four hours of sleep, then gives an overall status from “very poor” to “very good”.',
       'Polar’s developer API reports a night-time HRV average and beat-to-beat intervals for Nightly Recharge. We have not confirmed from Polar which HRV formula that average uses, so we do not label it RMSSD or SDNN here.',
+      CROSS_DEVICE_CAVEAT,
     ],
     hrvType: 'Night-time, first ~4 h of sleep (formula not confirmed)',
     sources: [
@@ -203,11 +211,14 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
       'Whatever the label, compare a night with your own usual range over several weeks. A single night up or down says little on its own.',
     ],
     hrvType: 'Not confirmed from official pages',
-    sources: [{ label: 'Google Health API (developer access)', url: 'https://developers.google.com/health' }],
+    sources: [
+      { label: 'Google Health API (developer access)', url: 'https://developers.google.com/health' },
+      { label: 'Google Health Help: Apple Health data types', url: 'https://support.google.com/googlehealth/answer/17037331' },
+    ],
     status: 'closed',
     connect:
       'Google says the Google Health API is not onboarding new projects at this time, and the older Fitbit Web API is being shut down on 2026-10-30. So a direct connection is not possible for us right now.',
-    appleHealth: UNCONFIRMED_HEALTH('Fitbit'),
+    appleHealth: `According to Google’s own help page, the Google Health app reads HRV from Apple Health but does not write HRV to it, so your Fitbit or Pixel Watch HRV will not reach ONDA that way. ${CAMERA}`,
     faq: [
       {
         q: 'Can ONDA read my Fitbit or Pixel Watch HRV?',

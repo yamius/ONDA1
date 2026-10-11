@@ -1412,6 +1412,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1007/s40279-025-02357-5": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of Exercise on Autonomic Cardiovascular Function in Older Adults: A Systematic Review and Meta-Analysis",
+   "firstAuthor": "Etayo-Urtasun",
+   "authors": [
+    "Etayo-Urtasun",
+    "Izquierdo",
+    "Sáez de Asteasu"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Sports Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-10-11"
+  },
   "doi:10.1007/s40279-025-02388-y": {
    "kind": "doi",
    "valid": true,
@@ -4960,6 +4976,23 @@
    "journal": "Scientific Reports",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1038/s41598-026-60475-0": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of blood flow restriction training on cardiovascular autonomic function in middle-aged and older adults: a meta-analysis",
+   "firstAuthor": "Liu",
+   "authors": [
+    "Liu",
+    "Zhang",
+    "Zhuang",
+    "Liu",
+    "Xie"
+   ],
+   "year": 2026,
+   "journal": "Scientific Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-10-11"
   },
   "doi:10.1038/s41746-020-00363-7": {
    "kind": "doi",
@@ -9739,6 +9772,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1519/jsc.0000000000005364": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart Rate Variability After Blood Flow Restriction Resistance Exercise and Traditional Resistance Exercise in Trained Men and Women",
+   "firstAuthor": "Perlet",
+   "authors": [
+    "Perlet",
+    "Mendonça",
+    "Hosick",
+    "Licameli",
+    "Matthews"
+   ],
+   "year": 2026,
+   "journal": "Journal of Strength &amp; Conditioning Research",
+   "source": "crossref",
+   "verifiedAt": "2026-10-11"
+  },
   "doi:10.1521/jscp.2018.37.10.751": {
    "kind": "doi",
    "valid": true,
@@ -9912,6 +9962,23 @@
    "journal": "International Journal of Yoga Therapy",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.20463/pan.2026.0031": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of two different types of resistance exercise on sleep quality and nocturnal physiological responses in young males",
+   "firstAuthor": "Suzuki",
+   "authors": [
+    "Suzuki",
+    "Natsui",
+    "Matsudo",
+    "Furukawa",
+    "Goto"
+   ],
+   "year": 2026,
+   "journal": "Physical Activity and Nutrition",
+   "source": "crossref",
+   "verifiedAt": "2026-10-11"
   },
   "doi:10.2147/jpr.s231778": {
    "kind": "doi",
@@ -11127,6 +11194,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.3390/bioengineering13101099": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Criterion Validity of Smartwatches for Measuring Heart Rate and Energy Expenditure During Resistance Exercise",
+   "firstAuthor": "Yun",
+   "authors": [
+    "Yun",
+    "Ko",
+    "Lee"
+   ],
+   "year": 2026,
+   "journal": "Bioengineering",
+   "source": "crossref",
+   "verifiedAt": "2026-10-11"
+  },
   "doi:10.3390/biology12060785": {
    "kind": "doi",
    "valid": true,
@@ -11582,6 +11664,23 @@
    "journal": "Sensors",
    "source": "crossref",
    "verifiedAt": "2026-10-08"
+  },
+  "doi:10.3390/s26082526": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Comparative Validity of Smartwatch-Derived Heart Rate and Energy Expenditure During Endurance and Resistance Exercise",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Jun",
+    "Bae",
+    "Roh",
+    "Cho"
+   ],
+   "year": 2026,
+   "journal": "Sensors",
+   "source": "crossref",
+   "verifiedAt": "2026-10-11"
   },
   "doi:10.3390/s26144486": {
    "kind": "doi",
@@ -21208,6 +21307,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:41264119": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of Exercise on Autonomic Cardiovascular Function in Older Adults: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Etayo-Urtasun",
+   "authors": [
+    "Etayo-Urtasun",
+    "Izquierdo",
+    "Sáez de Asteasu"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "Sports Med",
+   "doi": "10.1007/s40279-025-02357-5",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-11"
+  },
   "pmid:41264615": {
    "kind": "pmid",
    "valid": true,
@@ -21816,6 +21932,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:41885789": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart Rate Variability After Blood Flow Restriction Resistance Exercise and Traditional Resistance Exercise in Trained Men and Women.",
+   "firstAuthor": "Perlet",
+   "authors": [
+    "Perlet",
+    "Mendonça",
+    "Hosick",
+    "Licameli",
+    "Matthews"
+   ],
+   "year": 2026,
+   "journal": "J Strength Cond Res",
+   "doi": "10.1519/JSC.0000000000005364",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-11"
+  },
   "pmid:41886931": {
    "kind": "pmid",
    "valid": true,
@@ -22014,6 +22148,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:42076635": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Comparative Validity of Smartwatch-Derived Heart Rate and Energy Expenditure During Endurance and Resistance Exercise.",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Jun",
+    "Bae",
+    "Roh",
+    "Cho"
+   ],
+   "year": 2026,
+   "journal": "Sensors (Basel)",
+   "doi": "10.3390/s26082526",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-11"
+  },
   "pmid:42088781": {
    "kind": "pmid",
    "valid": true,
@@ -22181,6 +22333,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:42399690": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of blood flow restriction training on cardiovascular autonomic function in middle-aged and older adults: a meta-analysis.",
+   "firstAuthor": "Liu",
+   "authors": [
+    "Liu",
+    "Zhang",
+    "Zhuang",
+    "Liu",
+    "Xie"
+   ],
+   "year": 2026,
+   "journal": "Sci Rep",
+   "doi": "10.1038/s41598-026-60475-0",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-11"
+  },
   "pmid:42412242": {
    "kind": "pmid",
    "valid": true,
@@ -22202,6 +22372,24 @@
    "doi": "10.1007/s00737-026-01740-z",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
+  },
+  "pmid:42438854": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of two different types of resistance exercise on sleep quality and nocturnal physiological responses in young males.",
+   "firstAuthor": "Suzuki",
+   "authors": [
+    "Suzuki",
+    "Natsui",
+    "Matsudo",
+    "Furukawa",
+    "Goto"
+   ],
+   "year": 2026,
+   "journal": "Phys Act Nutr",
+   "doi": "10.20463/pan.2026.0031",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-11"
   },
   "pmid:42467418": {
    "kind": "pmid",
