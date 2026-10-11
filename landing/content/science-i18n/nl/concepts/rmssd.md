@@ -1,5 +1,5 @@
 ---
-sourceHash: "7b68393346e3"
+sourceHash: "572d635480f8"
 title: "RMSSD — wat deze HRV-maat weerspiegelt en wat niet"
 metaTitle: "RMSSD: definitie, betekenis en meting"
 metaDescription: "RMSSD is een HRV-maat die vagaal gemedieerde veranderingen in de hartslag weerspiegelt. Wat ze meet, hoe wearables haar schatten en wat ze niet zegt."
@@ -106,6 +106,6 @@ Wat nog onzeker is: hoe nauw waarden van het type RMSSD uit consumentenapparaten
 
 ## In ONDA
 
-ONDA gebruikt nachtelijke RMSSD als referentiemaat in zijn HRV-normtabellen en in de [HRV-calculator](/tools/hrv). De nachtelijke persoonlijke baseline van de app zelf leest echter de HRV-waarden die Apple Health opslaat, en {{fact:applewatch.hrv.healthkit}} [S9] — dus dat baselinesignaal is gebaseerd op SDNN en niet op RMSSD. De live-waarde tijdens een oefening is een vervangende maat, berekend uit de standaarddeviatie van de hartslag — geen RMSSD en geen SDNN — en de telefooncamera geeft je polsslag, geen HRV. ONDA beschrijft en vergelijkt je eigen getallen; het stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
+ONDA gebruikt nachtelijke RMSSD als referentiemaat in zijn HRV-normtabellen en in de [HRV-calculator](/tools/hrv). De persoonlijke baseline van de app zelf leest echter de HRV-waarden die Apple Health opslaat, en {{fact:applewatch.hrv.healthkit}} [S9] — dus dat baselinesignaal is gebaseerd op SDNN en niet op RMSSD. De live-waarde tijdens een oefening is een vervangende maat, berekend uit de standaarddeviatie van de hartslag — geen RMSSD en geen SDNN — en de telefooncamera geeft je polsslag, geen HRV. ONDA beschrijft en vergelijkt je eigen getallen; het stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "7b68393346e3"
+sourceHash: "572d635480f8"
 title: "RMSSD: o que esta métrica de HRV reflete e o que não reflete"
 metaTitle: "RMSSD: definição, significado e medição"
 metaDescription: "O RMSSD é uma métrica de HRV que reflete alterações da frequência cardíaca mediadas pelo nervo vago. O que mede, como os wearables o estimam e o que não diz."
@@ -89,7 +89,7 @@ O contexto faz parte da medição. O RMSSD depende da postura, da respiração, 
 
 Estabelecido. A definição, o cálculo e o papel do RMSSD como métrica de HRV de curto prazo vêm dos padrões de medição da área [S1]. Sua leitura como reflexo das alterações da frequência cardíaca mediadas pelo nervo vago — sendo que o tônus vagal em si não pode ser medido diretamente — é a interpretação padrão nas revisões metodológicas [S2, S3]. O contexto de medição é um fator de primeira ordem, não uma nota de rodapé: método, duração, postura, respiração e hora do dia moldam o valor [S5, S8]. Em média, o RMSSD diminui com a idade em adultos saudáveis [S4, S5].
 
-Depende do contexto. Estimativas de dispositivos vestíveis: os valores derivados da PPG podem acompanhar a HRV derivada do ECG em condições favoráveis, e os dois divergem com movimento, mau contato ou sinal fraco [S6, S7]. Valores de referência: a maioria das faixas clássicas vem de registros curtos diurnos, e não dos valores noturnos que os dispositivos de consumo informam [S5].
+Depende do contexto. Estimativas de dispositivos vestíveis: os valores derivados da PPG podem acompanhar a HRV derivada do ECG em condições favoráveis, e os dois divergem com movimento, mau contato ou sinal fraco [S6, S7]. Valores de referência: a maioria das faixas clássicas vem de registros curtos diurnos, e não dos valores que os dispositivos de consumo informam [S5].
 
 Diretriz / consenso de especialistas. As diretrizes atuais para pesquisa rigorosa sobre HRV recomendam condições de registro padronizadas e repetíveis e uma interpretação cautelosa de valores isolados [S8]. Isso é consenso de especialistas sobre como medir e interpretar — não dados experimentais diretos sobre o RMSSD em si.
 
@@ -105,6 +105,6 @@ O que continua incerto: o quanto os valores do tipo RMSSD de dispositivos de con
 
 ## No ONDA
 
-O ONDA usa o RMSSD noturno como métrica de referência em suas tabelas de normas de HRV e na [calculadora de HRV](/tools/hrv). A linha de base pessoal noturna do próprio app, porém, lê os valores de HRV armazenados pelo Apple Health, e {{fact:applewatch.hrv.healthkit}} [S9] — então esse sinal de base se apoia no SDNN, e não no RMSSD. A leitura ao vivo mostrada durante uma prática é um substituto calculado a partir do desvio padrão da frequência cardíaca, não RMSSD nem SDNN, e a câmera do celular fornece o pulso, não a HRV. O ONDA descreve e compara os seus próprios números; não diagnostica nada. Veja [o que o ONDA mede](/measurements).
+O ONDA usa o RMSSD noturno como métrica de referência em suas tabelas de normas de HRV e na [calculadora de HRV](/tools/hrv). A linha de base pessoal do próprio app, porém, lê os valores de HRV armazenados pelo Apple Health, e {{fact:applewatch.hrv.healthkit}} [S9] — então esse sinal de base se apoia no SDNN, e não no RMSSD. A leitura ao vivo mostrada durante uma prática é um substituto calculado a partir do desvio padrão da frequência cardíaca, não RMSSD nem SDNN, e a câmera do celular fornece o pulso, não a HRV. O ONDA descreve e compara os seus próprios números; não diagnostica nada. Veja [o que o ONDA mede](/measurements).
 
 > Informação educativa, não um diagnóstico nem um tratamento médico.

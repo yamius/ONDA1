@@ -1,5 +1,5 @@
 ---
-sourceHash: c9a1794847a3
+sourceHash: eea148772b58
 title: "Come ONDA misura e interpreta i segnali del tuo corpo"
 metaTitle: "Come ONDA misura e legge i segnali del tuo corpo"
 metaDescription: "Da dove ONDA prende i dati, come costruisce baseline e segnali personali, cosa resta sul telefono e i limiti di ogni numero che mostra."
@@ -50,7 +50,7 @@ ONDA è un'app di respirazione e biofeedback. Legge segnali già registrati da a
 
 ## Come si costruisce la tua baseline?
 
-La baseline è l'intervallo in cui di solito si trova il tuo corpo. ONDA la costruisce su {{fact:baseline.window}} a partire dai valori notturni di Apple Health [S1, S4]. A partire dalla versione 1.9.3, il grafico dell'HRV mostra l'intera finestra appena concedi l'accesso ad Apple Health, invece di riempirsi notte dopo notte. Le notti con troppo pochi campioni vengono scartate prima di qualsiasi calcolo, e l'HRV si ricava solo dai campioni notturni.
+La baseline è l'intervallo in cui di solito si trova il tuo corpo. ONDA la costruisce su {{fact:baseline.window}} a partire dai valori di Apple Health [S1, S4]. A partire dalla versione 1.9.3, il grafico dell'HRV mostra l'intera finestra appena concedi l'accesso ad Apple Health, invece di riempirsi notte dopo notte. Le notti con troppo pochi campioni vengono scartate prima di qualsiasi calcolo, e l'HRV si ricava solo dai campioni notturni.
 
 Per i segnali, {{fact:baseline.compare}} [S1]. ONDA resta in silenzio finché non ha almeno {{fact:baseline.minNights}}: nelle prime settimane vedi quindi una baseline ancora in costruzione, non un giudizio. Le variazioni minime richieste sono: {{fact:baseline.floors}}.
 

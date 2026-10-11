@@ -1,5 +1,5 @@
 ---
-sourceHash: "f848794fbee9"
+sourceHash: "290b64b3dec0"
 title: "SDNN: was dieses HRV-Maß misst und was nicht"
 metaTitle: "SDNN: Definition, Bedeutung und Apple Health"
 metaDescription: "Die SDNN ist das HRV-Maß, das Apple Health speichert. Was sie misst, wie sie sich von der RMSSD unterscheidet und warum sich beide Zahlen nicht vergleichen lassen."
@@ -120,6 +120,6 @@ Was offen bleibt: Wie eng nächtliche SDNN-Werte von Verbrauchergeräten der EKG
 
 ## In ONDA
 
-Die altersbezogenen HRV-Tabellen von ONDA sind Tabellen der nächtlichen RMSSD, doch der [HRV-Rechner](/tools/hrv) hat einen eigenen SDNN-Modus für Werte, die von der Apple Watch stammen, mit Bereichen aus kurzen Ruhe-EKG-Studien an gesunden Erwachsenen. Die nächtliche Baseline der App beruht auf den HRV-Werten, die in Apple Health gespeichert sind – von der Apple Watch oder von einem anderen Gerät, das Herzdaten dorthin synchronisiert. Die Dokumentation sagt das klar: {{fact:applewatch.hrv.healthkit}} [S8] – dieses Baseline-Signal beruht also auf der SDNN und nicht auf der RMSSD. Der Live-Wert während einer Übung ist ein Ersatzmaß, berechnet aus der Standardabweichung der Herzfrequenz – weder SDNN noch RMSSD –, und die Handykamera liefert den Puls, nicht die HRV. ONDA beschreibt und vergleicht deine eigenen Werte; es stellt keine Diagnosen. Siehe [was ONDA misst](/measurements).
+Die altersbezogenen HRV-Tabellen von ONDA sind Tabellen der nächtlichen RMSSD, doch der [HRV-Rechner](/tools/hrv) hat einen eigenen SDNN-Modus für Werte, die von der Apple Watch stammen, mit Bereichen aus kurzen Ruhe-EKG-Studien an gesunden Erwachsenen. Die Baseline der App beruht auf den HRV-Werten, die in Apple Health gespeichert sind – von der Apple Watch oder von einem anderen Gerät, das Herzdaten dorthin synchronisiert. Die Dokumentation sagt das klar: {{fact:applewatch.hrv.healthkit}} [S8] – dieses Baseline-Signal beruht also auf der SDNN und nicht auf der RMSSD. Der Live-Wert während einer Übung ist ein Ersatzmaß, berechnet aus der Standardabweichung der Herzfrequenz – weder SDNN noch RMSSD –, und die Handykamera liefert den Puls, nicht die HRV. ONDA beschreibt und vergleicht deine eigenen Werte; es stellt keine Diagnosen. Siehe [was ONDA misst](/measurements).
 
 > Bildungsinformation, keine Diagnose und keine medizinische Behandlung.

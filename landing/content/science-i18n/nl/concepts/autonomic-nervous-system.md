@@ -114,6 +114,6 @@ Voor het hart is [hartslagvariabiliteit](/science/concepts/heart-rate-variabilit
 
 ## In ONDA
 
-De oefeningen van ONDA gebruiken langzaam, begeleid ademen, dat via het hierboven beschreven ademgebonden ritme op het hart inwerkt. Met een Apple Watch toont ONDA live een coherentiescore — ONDA's eigen maat voor hoe gelijkmatig en ritmisch de schommeling van het hartritme is, geen klinische HRV-meting en geen maat voor autonome balans of vagale tonus. Nachtelijke baselines lezen de HRV die in Apple Health is opgeslagen als SDNN. ONDA meet het autonome zenuwstelsel niet rechtstreeks en stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
+De oefeningen van ONDA gebruiken langzaam, begeleid ademen, dat via het hierboven beschreven ademgebonden ritme op het hart inwerkt. Met een Apple Watch toont ONDA live een coherentiescore — ONDA's eigen maat voor hoe gelijkmatig en ritmisch de schommeling van het hartritme is, geen klinische HRV-meting en geen maat voor autonome balans of vagale tonus. Baselines lezen de HRV die in Apple Health is opgeslagen als SDNN. ONDA meet het autonome zenuwstelsel niet rechtstreeks en stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

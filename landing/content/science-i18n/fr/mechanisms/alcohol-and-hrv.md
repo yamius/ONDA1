@@ -1,5 +1,5 @@
 ---
-sourceHash: 285e3bfba44f
+sourceHash: 9e29577a7288
 title: "Alcool et HRV : ce qu’un verre fait à votre nuit"
 metaTitle: "Alcool et HRV : la nuit après avoir bu"
 metaDescription: "Pourquoi la HRV nocturne baisse et la fréquence cardiaque au repos augmente après avoir bu, quel rôle jouent la dose et le moment, et ce que la recherche ne sait pas encore sur l’alcool."
@@ -48,7 +48,7 @@ evidenceMap:
     limitation: "Mise en garde des auteurs ; reprend la limite."
   - claim: "Une revue narrative conclut que l’alcoolisation massive aiguë et la forte consommation chronique nuisent à la fréquence cardiaque et à la fonction autonome, tandis que les résultats sur une consommation légère à modérée sont contrastés."
     limitation: "Revue narrative, pas une revue systématique ni une méta-analyse ; couvre les critères cardiaques en général, pas spécifiquement la HRV."
-  - claim: "ONDA construit sa référence à partir des valeurs nocturnes d’Apple Health et compare chaque nuit au couloir propre de l’utilisateur (faits baseline.window, baseline.compare)."
+  - claim: "ONDA construit sa référence à partir des valeurs d’Apple Health et compare chaque nuit au couloir propre de l’utilisateur (faits baseline.window, baseline.compare)."
     limitation: "Décrit uniquement le fonctionnement de l’application ; n’est la preuve d’aucune affirmation de santé."
 ---
 
@@ -105,6 +105,6 @@ Pour comparer l’alcool aux autres causes courantes d’une valeur basse, voir 
 
 ## Dans ONDA
 
-ONDA construit une référence personnelle à partir des valeurs nocturnes enregistrées dans Apple Health, depuis l’Apple Watch ou un autre appareil qui y synchronise des données cardiaques [S9]. La fenêtre est de {{fact:baseline.window}}, et {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}} : la tendance de HRV dans ONDA est donc une tendance de SDNN. Une nuit après avoir bu peut apparaître dans cette comparaison sous la forme d’une HRV plus basse et d’une fréquence cardiaque au repos plus élevée ; c’est la réaction normale décrite plus haut, pas un motif d’inquiétude. Regardez la tendance sur plusieurs nuits plutôt qu’une seule nuit. ONDA ne suit pas la consommation d’alcool, ne donne pas de conseils sur la boisson et ne diagnostique aucune affection.
+ONDA construit une référence personnelle à partir des valeurs enregistrées dans Apple Health, depuis l’Apple Watch ou un autre appareil qui y synchronise des données cardiaques [S9]. La fenêtre est de {{fact:baseline.window}}, et {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}} : la tendance de HRV dans ONDA est donc une tendance de SDNN. Une nuit après avoir bu peut apparaître dans cette comparaison sous la forme d’une HRV plus basse et d’une fréquence cardiaque au repos plus élevée ; c’est la réaction normale décrite plus haut, pas un motif d’inquiétude. Regardez la tendance sur plusieurs nuits plutôt qu’une seule nuit. ONDA ne suit pas la consommation d’alcool, ne donne pas de conseils sur la boisson et ne diagnostique aucune affection.
 
 > Information éducative, pas un diagnostic ni un traitement médical.

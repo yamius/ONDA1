@@ -1,5 +1,5 @@
 ---
-sourceHash: 285e3bfba44f
+sourceHash: 9e29577a7288
 title: "Alcohol en HRV: wat een drankje met je nacht doet"
 metaTitle: "Alcohol en HRV: de nacht na het drinken"
 metaDescription: "Waarom je nachtelijke HRV daalt en je rusthartslag stijgt na het drinken, welke rol hoeveelheid en tijdstip spelen en wat onderzoek over alcohol nog niet weet."
@@ -47,7 +47,7 @@ evidenceMap:
     limitation: "Voorbehoud van de auteurs; herhaalt de beperking."
   - claim: "Een narratieve review concludeert dat acuut bingedrinken en chronisch zwaar drinken de hartslag en de autonome functie schaden, terwijl de bevindingen over licht tot matig drinken wisselend zijn."
     limitation: "Narratieve review, geen systematische review of meta-analyse; behandelt hartuitkomsten in het algemeen, niet specifiek HRV."
-  - claim: "ONDA bouwt zijn baseline op uit nachtelijke waarden uit Apple Health en vergelijkt elke nacht met de eigen bandbreedte van de gebruiker (feiten baseline.window, baseline.compare)."
+  - claim: "ONDA bouwt zijn baseline op uit waarden uit Apple Health en vergelijkt elke nacht met de eigen bandbreedte van de gebruiker (feiten baseline.window, baseline.compare)."
     limitation: "Beschrijft alleen hoe de app werkt; geen bewijs voor enige gezondheidsclaim."
 ---
 
@@ -104,6 +104,6 @@ Hoe alcohol zich verhoudt tot andere alledaagse oorzaken van een lage meting, le
 
 ## In ONDA
 
-ONDA bouwt een persoonlijke baseline op uit nachtelijke waarden die in Apple Health zijn opgeslagen — van een Apple Watch of een ander apparaat dat hartgegevens daarheen synchroniseert [S9]. Het venster is {{fact:baseline.window}}, en {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, dus de HRV-trend van ONDA is een SDNN-trend. Een nacht na het drinken kan in die vergelijking zichtbaar worden als een lagere HRV en een hogere rusthartslag; dat is de normale reactie die hierboven is beschreven, geen reden tot ongerustheid. Kijk naar de trend over meerdere nachten in plaats van naar één nacht. ONDA houdt geen alcohol bij, geeft geen advies over drinken en stelt geen aandoening vast.
+ONDA bouwt een persoonlijke baseline op uit waarden die in Apple Health zijn opgeslagen — van een Apple Watch of een ander apparaat dat hartgegevens daarheen synchroniseert [S9]. Het venster is {{fact:baseline.window}}, en {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, dus de HRV-trend van ONDA is een SDNN-trend. Een nacht na het drinken kan in die vergelijking zichtbaar worden als een lagere HRV en een hogere rusthartslag; dat is de normale reactie die hierboven is beschreven, geen reden tot ongerustheid. Kijk naar de trend over meerdere nachten in plaats van naar één nacht. ONDA houdt geen alcohol bij, geeft geen advies over drinken en stelt geen aandoening vast.
 
 > Educatieve informatie, geen diagnose of medische behandeling.

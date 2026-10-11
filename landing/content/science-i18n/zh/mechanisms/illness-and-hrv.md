@@ -1,5 +1,5 @@
 ---
-sourceHash: 079098055e7f
+sourceHash: 9b4dc57e7d2e
 title: "疾病与 HRV：可穿戴设备能看到什么、看不到什么"
 metaTitle: "疾病与 HRV：早期信号，而非诊断"
 metaDescription: "炎症和感染如何影响 HRV 与静息心率，可穿戴设备的提醒究竟意味着什么，以及为什么它们无法告诉你已经生病。"
@@ -37,7 +37,7 @@ evidenceMap:
     limitation: "叙述性综述；主要是疫情期间的研究；部分作者受雇于一家可穿戴数据分析公司。"
   - claim: "同一篇综述指出，可穿戴设备在真实世界环境中检测病毒感染的能力尚未得到证实。"
     limitation: "撰写于上述前瞻性研究正式发表之前；该研究也没有检验研究队列之外的日常使用。"
-  - claim: "ONDA 根据 Apple Health 中的夜间数值建立基线，并将每晚与用户自己的波动区间进行比较（事实 baseline.window、baseline.compare、baseline.floors、onda.signal.cadence）。"
+  - claim: "ONDA 根据 Apple Health 中的数值建立基线，并将每晚与用户自己的波动区间进行比较（事实 baseline.window、baseline.compare、baseline.floors、onda.signal.cadence）。"
     limitation: "仅描述应用的运作方式；不能作为任何健康主张的证据。"
 ---
 
@@ -100,6 +100,6 @@ evidenceMap:
 
 ## 在 ONDA 中
 
-ONDA 根据 Apple Health 中保存的夜间数值建立个人基线，这些数值来自 Apple Watch 或其他把心脏数据同步到 Apple Health 的设备 [S7]。时间窗口为{{fact:baseline.window}}，{{fact:baseline.compare}}：{{fact:baseline.floors}}，并且{{fact:onda.signal.cadence}}。{{fact:applewatch.hrv.healthkit}}，因此 ONDA 的 HRV 趋势就是 SDNN 趋势（[你的 HRV 基线](/science/concepts/hrv-baseline)）。这样的信号是描述性的：它说明某一晚落在你自己的波动区间之外，但不说明原因。感染、睡眠不足、饮酒或旅行都可能导致这种情况。ONDA 不会识别疾病，不诊断任何病症，也不能代替医生。
+ONDA 根据 Apple Health 中保存的数值建立个人基线，这些数值来自 Apple Watch 或其他把心脏数据同步到 Apple Health 的设备 [S7]。时间窗口为{{fact:baseline.window}}，{{fact:baseline.compare}}：{{fact:baseline.floors}}，并且{{fact:onda.signal.cadence}}。{{fact:applewatch.hrv.healthkit}}，因此 ONDA 的 HRV 趋势就是 SDNN 趋势（[你的 HRV 基线](/science/concepts/hrv-baseline)）。这样的信号是描述性的：它说明某一晚落在你自己的波动区间之外，但不说明原因。感染、睡眠不足、饮酒或旅行都可能导致这种情况。ONDA 不会识别疾病，不诊断任何病症，也不能代替医生。
 
 > 本文为科普信息，不构成诊断或医学治疗。

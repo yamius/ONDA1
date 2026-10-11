@@ -1,5 +1,5 @@
 ---
-sourceHash: 9528e5383d6f
+sourceHash: 94f41b941e62
 title: "Frequência respiratória em repouso: o que reflete e como é medida"
 metaTitle: "Frequência respiratória: o que é e como medir"
 metaDescription: "A frequência respiratória é quantas vezes você respira por minuto em repouso. Como medir, o que a altera e por que a sua tendência noturna vale mais."
@@ -47,7 +47,7 @@ evidenceMap:
     limitation: "Um único estudo retrospectivo com uma só marca de dispositivo vestível, em pessoas que já tinham sintomas; grupos de validação pequenos; vários autores empregados ou financiados pelo fabricante. Não é um teste diagnóstico."
   - claim: "Em uma grande amostra autosselecionada de usuários de dispositivos vestíveis com COVID, a frequência respiratória e a frequência cardíaca costumavam subir com a doença, enquanto a HRV caía."
     limitation: "Um único estudo observacional com usuários de um só fabricante e diagnósticos autorrelatados; todos os autores financiados pelo fabricante. Não é um teste diagnóstico."
-  - claim: "O ONDA lê a frequência respiratória no Apple Health como um dos três sinais noturnos da linha de base, compara as noites com uma faixa pessoal ao longo da janela da linha de base e com limites mínimos, e não faz diagnósticos."
+  - claim: "O ONDA lê a frequência respiratória no Apple Health como um dos três sinais da linha de base, compara as noites com uma faixa pessoal ao longo da janela da linha de base e com limites mínimos, e não faz diagnósticos."
     limitation: "Descreve apenas o comportamento do app; não é evidência para nenhuma afirmação de saúde nem para a precisão dos valores."
 ---
 
@@ -113,6 +113,6 @@ Nenhum dos dois estudos é um teste diagnóstico validado. Ambos apontam para o 
 
 ## No ONDA
 
-A frequência respiratória é um dos três sinais noturnos da linha de base do ONDA, junto com a frequência cardíaca de repouso e a HRV. O ONDA a lê no Apple Health — gravada pelo Apple Watch ou por qualquer dispositivo cujo app a sincronize lá — e constrói a sua linha de base pessoal ao longo de {{fact:baseline.window}}. O app compara cada noite com a sua própria faixa, nunca com uma norma populacional, e só sinaliza uma mudança quando ela também ultrapassa limites mínimos: {{fact:baseline.floors}}. O ONDA não calcula ele mesmo a frequência respiratória durante o sono, não faz nenhuma afirmação sobre a precisão dela e não diagnostica nada [S14]. Para mais contexto, veja [a sua frequência respiratória: o número da noite](/articles/respiratory-rate-hidden-signal) e [o que o ONDA mede](/measurements).
+A frequência respiratória é um dos três sinais da linha de base do ONDA, junto com a frequência cardíaca de repouso e a HRV. O ONDA a lê no Apple Health — gravada pelo Apple Watch ou por qualquer dispositivo cujo app a sincronize lá — e constrói a sua linha de base pessoal ao longo de {{fact:baseline.window}}. O app compara cada noite com a sua própria faixa, nunca com uma norma populacional, e só sinaliza uma mudança quando ela também ultrapassa limites mínimos: {{fact:baseline.floors}}. O ONDA não calcula ele mesmo a frequência respiratória durante o sono, não faz nenhuma afirmação sobre a precisão dela e não diagnostica nada [S14]. Para mais contexto, veja [a sua frequência respiratória: o número da noite](/articles/respiratory-rate-hidden-signal) e [o que o ONDA mede](/measurements).
 
 > Informação educativa, não um diagnóstico nem um tratamento médico.

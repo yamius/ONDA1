@@ -1,5 +1,5 @@
 ---
-sourceHash: f592ea962f6b
+sourceHash: e9bb7788219f
 title: "HRV et fréquence cardiaque pendant le sommeil : pourquoi la nuit est la meilleure fenêtre"
 metaTitle: "HRV et fréquence cardiaque pendant le sommeil"
 metaDescription: "Ce qui arrive à la fréquence cardiaque et à la HRV au fil de la nuit et des stades de sommeil, pourquoi les mesures nocturnes sont les plus stables et ce que les objets connectés peuvent dire ou non."
@@ -58,7 +58,7 @@ evidenceMap:
     limitation: "Études hétérogènes, pour la plupart à risque de biais élevé ; aucune méta-analyse possible."
   - claim: "L’apnée du sommeil se diagnostique par polysomnographie ou par un test d’apnée du sommeil à domicile techniquement adéquat, pas par des questionnaires ou des outils de prédiction seuls."
     limitation: "Recommandation de pratique clinique pour l’adulte ; elle n’évalue pas les objets connectés grand public."
-  - claim: "ONDA construit sa référence à partir des valeurs nocturnes d’Apple Health et compare chaque nuit au couloir propre à l’utilisateur."
+  - claim: "ONDA construit sa référence à partir des valeurs d’Apple Health et compare chaque nuit au couloir propre à l’utilisateur."
     limitation: "Décrit uniquement le comportement de l’application ; ce n’est la preuve d’aucune affirmation de santé."
 ---
 
@@ -138,6 +138,6 @@ Un sommeil court n’est qu’une des causes d’une valeur basse ; voir [pourqu
 
 ## Dans ONDA
 
-ONDA construit votre référence personnelle à partir des valeurs nocturnes enregistrées dans Apple Health — depuis l’Apple Watch ou un autre appareil qui y synchronise des données cardiaques [S16]. La fenêtre est de {{fact:baseline.window}}, et {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}} : la référence personnelle de HRV d’ONDA est donc une référence SDNN. ONDA ne détermine pas les stades de sommeil à partir de la HRV et ne diagnostique ni l’apnée du sommeil, ni l’insomnie, ni aucune autre maladie.
+ONDA construit votre référence personnelle à partir des valeurs enregistrées dans Apple Health — depuis l’Apple Watch ou un autre appareil qui y synchronise des données cardiaques [S16]. La fenêtre est de {{fact:baseline.window}}, et {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}} : la référence personnelle de HRV d’ONDA est donc une référence SDNN. ONDA ne détermine pas les stades de sommeil à partir de la HRV et ne diagnostique ni l’apnée du sommeil, ni l’insomnie, ni aucune autre maladie.
 
 > Information éducative, pas un diagnostic ni un traitement médical.

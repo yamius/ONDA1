@@ -1,5 +1,5 @@
 ---
-sourceHash: 8eab4cb30ee9
+sourceHash: 5b7474fd9981
 title: "Rusthartslag: wat hij weerspiegelt en hoe je hem meet"
 metaTitle: "Rusthartslag: betekenis en meting"
 metaDescription: "Je rusthartslag is je laagste hartslag in rust. Hoe je hem meet, wat normaal betekent, wat hem beïnvloedt en waarom je eigen trend meer zegt dan één getal."
@@ -110,6 +110,6 @@ Hoe rusthartslag en HRV samen bewegen bij zware training, lees je in [overtraini
 
 ## In ONDA
 
-De rusthartslag is een van de drie nachtelijke signalen in de baseline van ONDA, samen met HRV en ademfrequentie. ONDA leest hem uit Apple Health — vastgelegd door de Apple Watch of door elk apparaat waarvan de app hartgegevens daarheen synchroniseert — en bouwt je persoonlijke baseline op over {{fact:baseline.window}}. Elke nacht wordt vergeleken met je eigen bandbreedte, nooit met een norm voor de bevolking, en een verandering wordt alleen gemeld als ze ook boven minimale drempels uitkomt: {{fact:baseline.floors}}. Zonder horloge geeft de camera van de telefoon een meting van je polsslag in rust, maar zonder de extra’s van de baseline. ONDA beschrijft veranderingen; het stelt geen diagnoses [S8]. Zie [wat ONDA meet](/measurements).
+De rusthartslag is een van de drie signalen in de baseline van ONDA, samen met HRV en ademfrequentie. ONDA leest hem uit Apple Health — vastgelegd door de Apple Watch of door elk apparaat waarvan de app hartgegevens daarheen synchroniseert — en bouwt je persoonlijke baseline op over {{fact:baseline.window}}. Elke nacht wordt vergeleken met je eigen bandbreedte, nooit met een norm voor de bevolking, en een verandering wordt alleen gemeld als ze ook boven minimale drempels uitkomt: {{fact:baseline.floors}}. Zonder horloge geeft de camera van de telefoon een meting van je polsslag in rust, maar zonder de extra’s van de baseline. ONDA beschrijft veranderingen; het stelt geen diagnoses [S8]. Zie [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

@@ -1,5 +1,5 @@
 ---
-sourceHash: 079098055e7f
+sourceHash: 9b4dc57e7d2e
 title: "病気とHRV：ウェアラブルにわかること、わからないこと"
 metaTitle: "病気とHRV：早期のサインであって診断ではない"
 metaDescription: "炎症や感染症がHRVと安静時心拍数をどう動かすのか、ウェアラブルのアラートが実際に何を意味するのか、そしてなぜそれで病気だとはわからないのかを解説します。"
@@ -37,7 +37,7 @@ evidenceMap:
     limitation: "ナラティブレビュー。主にパンデミック期の研究。著者の一部はウェアラブルデータ解析企業の社員。"
   - claim: "同じレビューは、ウェアラブルが実生活の環境でウイルス感染症を検出できることは証明されていないと述べている。"
     limitation: "上記の前向き研究が最終版として発表される前に書かれた。その研究も、研究コホートの外での日常的な使用は検証していない。"
-  - claim: "ONDAは、Apple Healthの夜間の値からベースラインをつくり、毎晩をユーザー自身のコリドーと比較する（ファクト baseline.window、baseline.compare、baseline.floors、onda.signal.cadence）。"
+  - claim: "ONDAは、Apple Healthの値からベースラインをつくり、毎晩をユーザー自身のコリドーと比較する（ファクト baseline.window、baseline.compare、baseline.floors、onda.signal.cadence）。"
     limitation: "アプリの動作を説明しているだけで、健康に関するいかなる主張の根拠でもない。"
 ---
 
@@ -100,6 +100,6 @@ HRVがいつもの範囲をはっきり下回り、安静時心拍数が何日�
 
 ## ONDAでは
 
-ONDAは、Apple Healthに保存された夜間の値から、個人のベースラインをつくります。値はApple Watch、または心拍データをApple Healthに同期するほかの機器から得られます [S7]。期間は{{fact:baseline.window}}で、{{fact:baseline.compare}}。目安は{{fact:baseline.floors}}で、{{fact:onda.signal.cadence}}です。{{fact:applewatch.hrv.healthkit}}ため、ONDAのHRVの推移はSDNNの推移です（[あなたのHRVベースライン](/science/concepts/hrv-baseline)）。このようなシグナルは記述的なものです。ある夜がご自身のコリドーの外にあることを示しますが、その理由は示しません。感染、短い睡眠、飲酒、旅行のどれでも起こりえます。ONDAは病気を特定せず、いかなる病気も診断せず、医師の代わりにはなりません。
+ONDAは、Apple Healthに保存された値から、個人のベースラインをつくります。値はApple Watch、または心拍データをApple Healthに同期するほかの機器から得られます [S7]。期間は{{fact:baseline.window}}で、{{fact:baseline.compare}}。目安は{{fact:baseline.floors}}で、{{fact:onda.signal.cadence}}です。{{fact:applewatch.hrv.healthkit}}ため、ONDAのHRVの推移はSDNNの推移です（[あなたのHRVベースライン](/science/concepts/hrv-baseline)）。このようなシグナルは記述的なものです。ある夜がご自身のコリドーの外にあることを示しますが、その理由は示しません。感染、短い睡眠、飲酒、旅行のどれでも起こりえます。ONDAは病気を特定せず、いかなる病気も診断せず、医師の代わりにはなりません。
 
 > 教育目的の情報であり、診断や医療行為ではありません。

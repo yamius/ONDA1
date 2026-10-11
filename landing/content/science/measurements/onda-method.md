@@ -114,7 +114,7 @@ ONDA is a breathing and biofeedback app. It reads signals that other devices hav
 
 ## How is your baseline built?
 
-The baseline is the range your own body usually sits in. ONDA builds it over {{fact:baseline.window}} from nightly values in Apple Health [S1, S4]. Starting with version 1.9.3, the heart rate variability chart shows that whole window as soon as Apple Health access is granted, instead of filling in night by night. Nights with too few samples are dropped before any calculation, and heart rate variability is taken only from overnight samples.
+The baseline is the range your own body usually sits in. ONDA builds it over {{fact:baseline.window}} from values in Apple Health [S1, S4]. Starting with version 1.9.3, the heart rate variability chart shows that whole window as soon as Apple Health access is granted, instead of filling in night by night. Nights with too few samples are dropped before any calculation, and heart rate variability is taken only from overnight samples.
 
 For signals, {{fact:baseline.compare}} [S1]. ONDA stays silent until it has at least {{fact:baseline.minNights}}, so early weeks show a baseline that is still building rather than a judgement. The minimum changes it requires are: {{fact:baseline.floors}}.
 

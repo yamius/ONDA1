@@ -184,11 +184,11 @@ evidenceMap:
     claimType: device
     quote: "EE accuracy further deteriorated during resistance exercise, showing weak correlations with indirect calorimetry"
     limitation: "Healthy men; company-funded."
-  - claim: "ONDA builds its baseline from nightly Apple Health values and compares each night with the user's own corridor (facts baseline.window, baseline.compare)."
+  - claim: "ONDA builds its baseline from values in Apple Health and compares each night with the user's own corridor (facts baseline.window, baseline.compare)."
     sources: [S8]
     class: established
     claimType: device
-    quote: "From nightly Apple Health values — HRV, resting heart rate and breathing rate — ONDA builds your personal baseline"
+    quote: "From values in Apple Health — HRV, resting heart rate and breathing rate — ONDA builds your personal baseline"
     limitation: "Describes app behaviour only; not evidence for any health or training claim."
 ---
 
@@ -252,6 +252,6 @@ This page gives no training-load advice. If you have a heart condition or high b
 
 ## In ONDA
 
-ONDA builds a personal baseline from nightly values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S8]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. ONDA does not record workouts, does not count calories, does not plan or adjust strength training and does not diagnose any condition.
+ONDA builds a personal baseline from values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S8]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. ONDA does not record workouts, does not count calories, does not plan or adjust strength training and does not diagnose any condition.
 
 > Educational information, not a diagnosis or medical treatment.

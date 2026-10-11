@@ -1,5 +1,5 @@
 ---
-sourceHash: 8eab4cb30ee9
+sourceHash: 5b7474fd9981
 title: "Frecuencia cardíaca en reposo: qué refleja y cómo se mide"
 metaTitle: "Frecuencia cardíaca en reposo: significado y medición"
 metaDescription: "La frecuencia cardíaca en reposo es tu pulso más bajo en calma. Cómo se mide, qué es normal, qué la cambia y por qué tu tendencia vale más que un dato."
@@ -111,6 +111,6 @@ Cómo se mueven juntas la frecuencia cardíaca en reposo y la variabilidad de la
 
 ## En ONDA
 
-La frecuencia cardíaca en reposo es una de las tres señales nocturnas de la línea base de ONDA, junto con la HRV y la frecuencia respiratoria. ONDA la lee de Apple Health —donde la escribe el Apple Watch o cualquier dispositivo cuya app sincronice allí los datos cardíacos— y construye tu línea base personal a lo largo de {{fact:baseline.window}}. Compara cada noche con tu propio corredor, nunca con una norma poblacional, y solo señala un cambio cuando además supera unos umbrales mínimos: {{fact:baseline.floors}}. Sin reloj, la cámara del teléfono da una lectura del pulso en reposo, pero sin los extras de la línea base. ONDA describe cambios; no diagnostica nada [S8]. Consulta [qué mide ONDA](/measurements).
+La frecuencia cardíaca en reposo es una de las tres señales de la línea base de ONDA, junto con la HRV y la frecuencia respiratoria. ONDA la lee de Apple Health —donde la escribe el Apple Watch o cualquier dispositivo cuya app sincronice allí los datos cardíacos— y construye tu línea base personal a lo largo de {{fact:baseline.window}}. Compara cada noche con tu propio corredor, nunca con una norma poblacional, y solo señala un cambio cuando además supera unos umbrales mínimos: {{fact:baseline.floors}}. Sin reloj, la cámara del teléfono da una lectura del pulso en reposo, pero sin los extras de la línea base. ONDA describe cambios; no diagnostica nada [S8]. Consulta [qué mide ONDA](/measurements).
 
 > Información educativa, no un diagnóstico ni un tratamiento médico.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "4c0358773469"
+sourceHash: "fe57b9925cd0"
 title: "Variabilità della frequenza cardiaca: cos'è, cosa riflette e cosa non è"
 metaTitle: "Variabilità cardiaca (HRV): definizione e prove"
 metaDescription: "La variabilità della frequenza cardiaca è la naturale variazione del ritmo cardiaco da un battito all'altro. Cosa la modella, cosa riflette e cosa non ti dice."
@@ -118,6 +118,6 @@ La finestra fa parte del significato. Una breve registrazione in laboratorio, un
 
 ## In ONDA
 
-La baseline personale notturna di ONDA si basa sui valori di HRV scritti in Apple Health, da Apple Watch o da qualsiasi tracker la cui app vi sincronizzi i dati cardiaci. {{fact:applewatch.hrv.healthkit}} [S6], quindi quel segnale di base si fonda sullo SDNN e non sull'RMSSD, e i confronti notte per notte dell'app avvengono rispetto al tuo corridoio personale, non a obiettivi di popolazione. La lettura in tempo reale mostrata durante una pratica è un indicatore surrogato calcolato dalla deviazione standard della frequenza cardiaca, non RMSSD né SDNN, e la fotocamera del telefono rileva il polso, non l'HRV. ONDA usa il segnale per il biofeedback, cioè per osservare cosa succede al tuo segnale fisiologico mentre pratichi, e il [calcolatore HRV](/tools/hrv) mette in contesto i valori di Apple Watch. ONDA descrive e confronta i tuoi numeri; non diagnostica nulla. Vedi [cosa misura ONDA](/measurements).
+La baseline personale di ONDA si basa sui valori di HRV scritti in Apple Health, da Apple Watch o da qualsiasi tracker la cui app vi sincronizzi i dati cardiaci. {{fact:applewatch.hrv.healthkit}} [S6], quindi quel segnale di base si fonda sullo SDNN e non sull'RMSSD, e i confronti notte per notte dell'app avvengono rispetto al tuo corridoio personale, non a obiettivi di popolazione. La lettura in tempo reale mostrata durante una pratica è un indicatore surrogato calcolato dalla deviazione standard della frequenza cardiaca, non RMSSD né SDNN, e la fotocamera del telefono rileva il polso, non l'HRV. ONDA usa il segnale per il biofeedback, cioè per osservare cosa succede al tuo segnale fisiologico mentre pratichi, e il [calcolatore HRV](/tools/hrv) mette in contesto i valori di Apple Watch. ONDA descrive e confronta i tuoi numeri; non diagnostica nulla. Vedi [cosa misura ONDA](/measurements).
 
 > Informazioni a scopo educativo, non una diagnosi né un trattamento medico.

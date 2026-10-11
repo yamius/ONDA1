@@ -1,5 +1,5 @@
 ---
-sourceHash: 285e3bfba44f
+sourceHash: 9e29577a7288
 title: "Alkohol a HRV: co drink robi z Twoją nocą"
 metaTitle: "Alkohol a HRV: noc po piciu"
 metaDescription: "Dlaczego po piciu nocne HRV spada, a tętno spoczynkowe rośnie, jaką rolę odgrywają dawka i pora oraz czego badania nad alkoholem jeszcze nie wiedzą."
@@ -46,7 +46,7 @@ evidenceMap:
     limitation: "Zastrzeżenie autorów; powtarza ograniczenie."
   - claim: "Przegląd narracyjny stwierdza, że doraźne upijanie się i przewlekłe intensywne picie szkodzą tętnu i funkcji autonomicznej, a wyniki dotyczące picia lekkiego i umiarkowanego są niejednoznaczne."
     limitation: "Przegląd narracyjny, a nie przegląd systematyczny ani metaanaliza; obejmuje ogólnie wyniki sercowe, a nie konkretnie HRV."
-  - claim: "ONDA tworzy linię bazową z nocnych wartości z Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (fakty baseline.window, baseline.compare)."
+  - claim: "ONDA tworzy linię bazową z wartości z Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (fakty baseline.window, baseline.compare)."
     limitation: "Opisuje wyłącznie działanie aplikacji; nie jest dowodem na żadne twierdzenie zdrowotne."
 ---
 
@@ -103,6 +103,6 @@ Jak alkohol wypada na tle innych codziennych przyczyn niskiego odczytu, opisuje 
 
 ## W ONDA
 
-ONDA tworzy osobistą linię bazową z nocnych wartości zapisanych w Apple Health — z Apple Watch lub innego urządzenia, które synchronizuje tam dane o sercu [S9]. Okno wynosi {{fact:baseline.window}}, a {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, więc trend HRV w ONDA to trend SDNN. Noc po piciu może się pojawić w tym porównaniu jako niższe HRV i wyższe tętno spoczynkowe; to normalna reakcja opisana wyżej, a nie powód do niepokoju. Patrz na trend z kilku nocy, a nie na jedną noc. ONDA nie śledzi alkoholu, nie doradza w sprawie picia i nie diagnozuje żadnych schorzeń.
+ONDA tworzy osobistą linię bazową z wartości zapisanych w Apple Health — z Apple Watch lub innego urządzenia, które synchronizuje tam dane o sercu [S9]. Okno wynosi {{fact:baseline.window}}, a {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, więc trend HRV w ONDA to trend SDNN. Noc po piciu może się pojawić w tym porównaniu jako niższe HRV i wyższe tętno spoczynkowe; to normalna reakcja opisana wyżej, a nie powód do niepokoju. Patrz na trend z kilku nocy, a nie na jedną noc. ONDA nie śledzi alkoholu, nie doradza w sprawie picia i nie diagnozuje żadnych schorzeń.
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

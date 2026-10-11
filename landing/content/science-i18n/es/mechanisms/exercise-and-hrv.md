@@ -1,5 +1,5 @@
 ---
-sourceHash: a92f7982b6f6
+sourceHash: 385cb2c6ee15
 title: "Ejercicio y HRV: qué hace el entrenamiento y qué muestra el entrenamiento guiado por HRV"
 metaTitle: "Ejercicio y HRV: evidencia del entrenamiento guiado por HRV"
 metaDescription: "Por qué la HRV baja tras un entrenamiento duro y se recupera, cuánto tarda y qué muestran los ensayos de entrenamiento guiado por HRV frente a un plan fijo."
@@ -49,7 +49,7 @@ evidenceMap:
     limitation: "Resultado secundario de un ensayo pequeño; no puede sostener la conclusión cuando el resultado principal no mostró diferencias."
   - claim: "Muchos factores experimentales, demográficos y ambientales influyen en la evaluación de la HRV, así que las lecturas deben compararse en condiciones comparables."
     limitation: "Guía de rigor en investigación; consenso de expertos, no evidencia directa sobre decisiones de entrenamiento."
-  - claim: "ONDA construye su línea base a partir de los valores nocturnos de Apple Health y compara cada noche con el corredor propio del usuario (datos baseline.window, baseline.compare)."
+  - claim: "ONDA construye su línea base a partir de los valores de Apple Health y compara cada noche con el corredor propio del usuario (datos baseline.window, baseline.compare)."
     limitation: "Describe solo el funcionamiento de la app; no es evidencia de ninguna afirmación sobre salud o entrenamiento."
   - claim: "En un metaanálisis en deportistas de resistencia, el entrenamiento que mejoró el rendimiento se acompañó de aumentos de la HRV de origen vagal en reposo y tras el ejercicio y de la recuperación de la frecuencia cardíaca (datos study.bellenger2016.studies, study.bellenger2016.restingRmssd)."
     limitation: "Solo deportistas de resistencia; estudios pequeños agrupados; índices de frecuencia limitados a la potencia HF; promedios de grupo, no una prueba individual."
@@ -136,6 +136,6 @@ Si el entrenamiento no explica una lectura baja, otras causas frecuentes se reco
 
 ## En ONDA
 
-ONDA construye una línea base personal a partir de los valores nocturnos guardados en Apple Health, desde un Apple Watch u otro dispositivo que sincronice allí los datos cardíacos [S5]. La ventana es de {{fact:baseline.window}}, y {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, así que la tendencia de HRV de ONDA es una tendencia de SDNN. ONDA muestra cómo se comparan tus noches con tu propio rango; no planifica ni ajusta el entrenamiento, no te dice cuándo entrenar fuerte y no diagnostica ninguna afección.
+ONDA construye una línea base personal a partir de los valores guardados en Apple Health, desde un Apple Watch u otro dispositivo que sincronice allí los datos cardíacos [S5]. La ventana es de {{fact:baseline.window}}, y {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, así que la tendencia de HRV de ONDA es una tendencia de SDNN. ONDA muestra cómo se comparan tus noches con tu propio rango; no planifica ni ajusta el entrenamiento, no te dice cuándo entrenar fuerte y no diagnostica ninguna afección.
 
 > Información educativa, no un diagnóstico ni un tratamiento médico.

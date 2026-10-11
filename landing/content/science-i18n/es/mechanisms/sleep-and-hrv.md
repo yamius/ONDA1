@@ -1,5 +1,5 @@
 ---
-sourceHash: f592ea962f6b
+sourceHash: e9bb7788219f
 title: "HRV y frecuencia cardíaca durante el sueño: por qué la noche es la mejor ventana"
 metaTitle: "HRV y frecuencia cardíaca durante el sueño"
 metaDescription: "Qué ocurre con la frecuencia cardíaca y la HRV a lo largo de la noche y de las fases del sueño, por qué las lecturas nocturnas son las más estables y qué pueden y no pueden decir los wearables."
@@ -57,7 +57,7 @@ evidenceMap:
     limitation: "Estudios heterogéneos y en su mayoría con alto riesgo de sesgo; no fue posible un metaanálisis."
   - claim: "La apnea del sueño se diagnostica con polisomnografía o con una prueba domiciliaria de apnea del sueño técnicamente adecuada, no solo con cuestionarios o herramientas de predicción."
     limitation: "Guía de práctica clínica para adultos; no evalúa wearables de consumo."
-  - claim: "ONDA construye su línea base a partir de los valores nocturnos de Apple Health y compara cada noche con el propio corredor del usuario (datos baseline.window, baseline.compare)."
+  - claim: "ONDA construye su línea base a partir de los valores de Apple Health y compara cada noche con el propio corredor del usuario (datos baseline.window, baseline.compare)."
     limitation: "Describe solo el comportamiento de la app; no es evidencia de ninguna afirmación de salud."
 ---
 
@@ -137,6 +137,6 @@ Dormir poco es solo una de las causas de una lectura baja; consulta [¿por qué 
 
 ## En ONDA
 
-ONDA construye tu línea base personal a partir de los valores nocturnos guardados en Apple Health, desde un Apple Watch u otro dispositivo que sincronice allí los datos cardíacos [S16]. La ventana es de {{fact:baseline.window}}, y {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, así que la línea base de HRV de ONDA es una línea base de SDNN. ONDA no determina las fases del sueño a partir de la HRV y no diagnostica la apnea del sueño, el insomnio ni ninguna otra afección.
+ONDA construye tu línea base personal a partir de los valores guardados en Apple Health, desde un Apple Watch u otro dispositivo que sincronice allí los datos cardíacos [S16]. La ventana es de {{fact:baseline.window}}, y {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, así que la línea base de HRV de ONDA es una línea base de SDNN. ONDA no determina las fases del sueño a partir de la HRV y no diagnostica la apnea del sueño, el insomnio ni ninguna otra afección.
 
 > Información educativa, no un diagnóstico ni un tratamiento médico.

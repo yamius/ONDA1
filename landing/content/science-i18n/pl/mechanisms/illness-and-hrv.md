@@ -1,5 +1,5 @@
 ---
-sourceHash: 079098055e7f
+sourceHash: 9b4dc57e7d2e
 title: "Choroba a HRV: co urządzenie noszone widzi, a czego nie"
 metaTitle: "Choroba a HRV: wczesny sygnał, nie diagnoza"
 metaDescription: "Jak stan zapalny i infekcja zmieniają HRV i tętno spoczynkowe, co naprawdę znaczą alerty urządzeń noszonych i dlaczego nie powiedzą Ci, że jesteś chory."
@@ -43,7 +43,7 @@ evidenceMap:
     limitation: "Przegląd narracyjny; głównie badania z czasów pandemii; część autorów była zatrudniona w firmie analizującej dane z urządzeń noszonych."
   - claim: "Ten sam przegląd stwierdza, że zdolność urządzeń noszonych do wykrywania infekcji wirusowych w warunkach rzeczywistych nie została wykazana."
     limitation: "Napisany przed opublikowaniem ostatecznej wersji powyższego badania prospektywnego; tamto badanie nie sprawdza codziennego użycia poza kohortą badawczą."
-  - claim: "ONDA buduje linię bazową z nocnych wartości z Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (fakty baseline.window, baseline.compare, baseline.floors, onda.signal.cadence)."
+  - claim: "ONDA buduje linię bazową z wartości z Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (fakty baseline.window, baseline.compare, baseline.floors, onda.signal.cadence)."
     limitation: "Opisuje wyłącznie działanie aplikacji; nie jest dowodem na żadne twierdzenie zdrowotne."
 ---
 
@@ -106,6 +106,6 @@ Stres, alkohol i podróże mogą dać taki sam spadek; zestawia je strona [dlacz
 
 ## W ONDA
 
-ONDA buduje osobistą linię bazową z nocnych wartości zapisanych w Apple Health — z Apple Watch lub innego urządzenia, które przesyła tam dane o sercu [S7]. Okno wynosi {{fact:baseline.window}}, a {{fact:baseline.compare}}: {{fact:baseline.floors}}; przy tym ONDA wysyła {{fact:onda.signal.cadence}}. {{fact:applewatch.hrv.healthkit}}, więc trend HRV w ONDA to trend SDNN ([Twoja linia bazowa HRV](/science/concepts/hrv-baseline)). Taki sygnał jest opisowy: mówi, że noc wyszła poza Twój własny korytarz, ale nie mówi dlaczego. Może go wywołać infekcja, krótka noc, alkohol lub podróż. ONDA nie rozpoznaje choroby, nie diagnozuje żadnych schorzeń i nie zastępuje lekarza.
+ONDA buduje osobistą linię bazową z wartości zapisanych w Apple Health — z Apple Watch lub innego urządzenia, które przesyła tam dane o sercu [S7]. Okno wynosi {{fact:baseline.window}}, a {{fact:baseline.compare}}: {{fact:baseline.floors}}; przy tym ONDA wysyła {{fact:onda.signal.cadence}}. {{fact:applewatch.hrv.healthkit}}, więc trend HRV w ONDA to trend SDNN ([Twoja linia bazowa HRV](/science/concepts/hrv-baseline)). Taki sygnał jest opisowy: mówi, że noc wyszła poza Twój własny korytarz, ale nie mówi dlaczego. Może go wywołać infekcja, krótka noc, alkohol lub podróż. ONDA nie rozpoznaje choroby, nie diagnozuje żadnych schorzeń i nie zastępuje lekarza.
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

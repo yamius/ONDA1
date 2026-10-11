@@ -1,5 +1,5 @@
 ---
-sourceHash: 285e3bfba44f
+sourceHash: 9e29577a7288
 title: "Alcol e HRV: che cosa fa un drink alla tua notte"
 metaTitle: "Alcol e HRV: la notte dopo aver bevuto"
 metaDescription: "Perché dopo aver bevuto l'HRV notturna scende e la frequenza cardiaca a riposo sale, come contano dose e orario e che cosa la ricerca sull'alcol non sa ancora."
@@ -48,7 +48,7 @@ evidenceMap:
     limitation: "Avvertenza degli autori; ribadisce il limite."
   - claim: "Una revisione narrativa conclude che il binge drinking acuto e il consumo cronico elevato danneggiano la frequenza cardiaca e la funzione autonomica, mentre i risultati sul consumo da lieve a moderato sono contrastanti."
     limitation: "Revisione narrativa, non una revisione sistematica né una meta-analisi; tratta gli esiti cardiaci in generale, non specificamente l'HRV."
-  - claim: "ONDA costruisce la sua baseline dai valori notturni di Apple Health e confronta ogni notte con il corridoio personale dell'utente (dati baseline.window, baseline.compare)."
+  - claim: "ONDA costruisce la sua baseline dai valori di Apple Health e confronta ogni notte con il corridoio personale dell'utente (dati baseline.window, baseline.compare)."
     limitation: "Descrive solo il funzionamento dell'app; non è prova di alcuna affermazione sulla salute."
 ---
 
@@ -105,6 +105,6 @@ Per capire come l’alcol si confronta con altre cause comuni di una lettura bas
 
 ## In ONDA
 
-ONDA costruisce una baseline personale dai valori notturni salvati in Apple Health, da Apple Watch o da un altro dispositivo che vi sincronizza i dati cardiaci [S9]. La finestra è di {{fact:baseline.window}}, e {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, quindi l'andamento dell'HRV in ONDA è un andamento della SDNN. Una notte dopo aver bevuto può comparire in quel confronto come un'HRV più bassa e una frequenza cardiaca a riposo più alta; è la normale reazione descritta sopra, non un motivo di allarme. Guarda l'andamento su più notti invece che su una sola. ONDA non registra l'alcol, non dà consigli sul bere e non diagnostica alcuna condizione.
+ONDA costruisce una baseline personale dai valori salvati in Apple Health, da Apple Watch o da un altro dispositivo che vi sincronizza i dati cardiaci [S9]. La finestra è di {{fact:baseline.window}}, e {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, quindi l'andamento dell'HRV in ONDA è un andamento della SDNN. Una notte dopo aver bevuto può comparire in quel confronto come un'HRV più bassa e una frequenza cardiaca a riposo più alta; è la normale reazione descritta sopra, non un motivo di allarme. Guarda l'andamento su più notti invece che su una sola. ONDA non registra l'alcol, non dà consigli sul bere e non diagnostica alcuna condizione.
 
 > Informazioni a scopo educativo, non una diagnosi né un trattamento medico.

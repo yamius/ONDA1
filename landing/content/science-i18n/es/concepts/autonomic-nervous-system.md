@@ -114,6 +114,6 @@ En el caso del corazón, la [variabilidad de la frecuencia cardíaca](/science/c
 
 ## En ONDA
 
-Las prácticas de ONDA usan la respiración lenta y guiada, que actúa sobre el corazón a través del ritmo ligado a la respiración descrito arriba. Con un Apple Watch, ONDA muestra una puntuación de coherencia en directo: la medida propia de ONDA de lo regular y rítmica que es la oscilación del ritmo cardíaco, no una medición clínica de la HRV ni una medida del equilibrio autónomo o del tono vagal. Las líneas base nocturnas leen la HRV guardada en Apple Health como SDNN. ONDA no mide directamente el sistema nervioso autónomo y no diagnostica nada. Consulta [qué mide ONDA](/measurements).
+Las prácticas de ONDA usan la respiración lenta y guiada, que actúa sobre el corazón a través del ritmo ligado a la respiración descrito arriba. Con un Apple Watch, ONDA muestra una puntuación de coherencia en directo: la medida propia de ONDA de lo regular y rítmica que es la oscilación del ritmo cardíaco, no una medición clínica de la HRV ni una medida del equilibrio autónomo o del tono vagal. Las líneas base leen la HRV guardada en Apple Health como SDNN. ONDA no mide directamente el sistema nervioso autónomo y no diagnostica nada. Consulta [qué mide ONDA](/measurements).
 
 > Información educativa, no un diagnóstico ni un tratamiento médico.

@@ -114,6 +114,6 @@ Für das Herz ist die [Herzfrequenzvariabilität](/science/concepts/heart-rate-v
 
 ## In ONDA
 
-Die Übungen von ONDA setzen auf langsames, angeleitetes Atmen, das über den oben beschriebenen atemgekoppelten Rhythmus auf das Herz wirkt. Mit einer Apple Watch zeigt ONDA live einen Kohärenzwert – ONDAs eigenes Maß dafür, wie gleichmäßig und rhythmisch die Schwingung des Herzrhythmus ist, keine klinische HRV-Messung und kein Maß für autonomes Gleichgewicht oder Vagustonus. Die nächtlichen Baselines lesen die in Apple Health als SDNN gespeicherte HRV. ONDA misst das autonome Nervensystem nicht direkt und stellt keine Diagnosen. Siehe [was ONDA misst](/measurements).
+Die Übungen von ONDA setzen auf langsames, angeleitetes Atmen, das über den oben beschriebenen atemgekoppelten Rhythmus auf das Herz wirkt. Mit einer Apple Watch zeigt ONDA live einen Kohärenzwert – ONDAs eigenes Maß dafür, wie gleichmäßig und rhythmisch die Schwingung des Herzrhythmus ist, keine klinische HRV-Messung und kein Maß für autonomes Gleichgewicht oder Vagustonus. Die Baselines lesen die in Apple Health als SDNN gespeicherte HRV. ONDA misst das autonome Nervensystem nicht direkt und stellt keine Diagnosen. Siehe [was ONDA misst](/measurements).
 
 > Bildungsinformation, keine Diagnose und keine medizinische Behandlung.

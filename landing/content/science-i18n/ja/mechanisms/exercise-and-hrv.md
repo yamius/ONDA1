@@ -1,5 +1,5 @@
 ---
-sourceHash: a92f7982b6f6
+sourceHash: 385cb2c6ee15
 title: "運動とHRV：トレーニングが何をもたらし、HRVガイド下トレーニングで何がわかっているのか"
 metaTitle: "運動とHRV：HRVガイド下トレーニングのエビデンス"
 metaDescription: "激しいトレーニングの後にHRVが下がって回復する理由、それにかかる時間、そしてHRVガイド下トレーニングの試験が固定のトレーニング計画と比べて何を示しているのかを解説します。"
@@ -43,7 +43,7 @@ evidenceMap:
     limitation: "小規模な試験の副次的な結果であり、主要な結果に差がなかった以上、結論の根拠にはなりません。"
   - claim: "HRVの評価には実験的、人口統計学的、環境的な数多くの要因が影響するため、測定値は同等の条件で比べるべきです。"
     limitation: "研究の厳密性についてのガイドラインであり、専門家の合意です。トレーニングの判断についての直接のエビデンスではありません。"
-  - claim: "ONDAはApple Healthの夜間の値からベースラインをつくり、毎晩をユーザー自身のコリドーと比較します（facts baseline.window, baseline.compare）。"
+  - claim: "ONDAはApple Healthの値からベースラインをつくり、毎晩をユーザー自身のコリドーと比較します（facts baseline.window, baseline.compare）。"
     limitation: "アプリの動作を説明しているだけであり、健康やトレーニングについてのいかなる主張のエビデンスでもありません。"
   - claim: "持久系アスリートのメタ分析では、パフォーマンスを向上させたトレーニングに伴い、安静時と運動後の迷走神経関連HRVおよび心拍数回復が上昇しました（facts study.bellenger2016.studies, study.bellenger2016.restingRmssd）。"
     limitation: "持久系アスリートのみ。小規模研究の統合。周波数領域の指標はHFパワーに限られる。群の平均であり、個人の検査ではない。"
@@ -130,6 +130,6 @@ evidenceMap:
 
 ## ONDAでは
 
-ONDAは、Apple Healthに保存された夜間の値から個人のベースラインをつくります。値はApple Watch、または心拍データをそこに同期するほかの機器から得られます [S5]。期間は{{fact:baseline.window}}です。{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}。そのため、ONDAのHRVの推移はSDNNの推移です。ONDAは、あなたの夜があなた自身の範囲と比べてどうかを示すだけで、トレーニングを計画したり調整したりすることはなく、いつきついトレーニングをすべきかを伝えることも、いかなる病気を診断することもありません。
+ONDAは、Apple Healthに保存された値から個人のベースラインをつくります。値はApple Watch、または心拍データをそこに同期するほかの機器から得られます [S5]。期間は{{fact:baseline.window}}です。{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}。そのため、ONDAのHRVの推移はSDNNの推移です。ONDAは、あなたの夜があなた自身の範囲と比べてどうかを示すだけで、トレーニングを計画したり調整したりすることはなく、いつきついトレーニングをすべきかを伝えることも、いかなる病気を診断することもありません。
 
 > 教育目的の情報であり、診断や医療行為ではありません。

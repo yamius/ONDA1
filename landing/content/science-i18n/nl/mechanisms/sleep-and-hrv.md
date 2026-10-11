@@ -1,5 +1,5 @@
 ---
-sourceHash: f592ea962f6b
+sourceHash: e9bb7788219f
 title: "HRV en hartslag tijdens de slaap: waarom de nacht het beste meetvenster is"
 metaTitle: "HRV en hartslag tijdens de slaap"
 metaDescription: "Wat er 's nachts en in de slaapfasen gebeurt met hartslag en HRV, waarom nachtelijke metingen het stabielste venster zijn en wat wearables wel en niet zeggen."
@@ -57,7 +57,7 @@ evidenceMap:
     limitation: "Heterogene studies, meestal met een hoog risico op vertekening; geen meta-analyse mogelijk."
   - claim: "Slaapapneu wordt vastgesteld met polysomnografie of een technisch adequate thuistest voor slaapapneu, niet alleen met vragenlijsten of voorspellingsinstrumenten."
     limitation: "Klinische richtlijn voor volwassenen; beoordeelt geen wearables voor consumenten."
-  - claim: "ONDA bouwt zijn baseline op uit nachtelijke waarden in Apple Health en vergelijkt elke nacht met de eigen bandbreedte van de gebruiker (facts baseline.window, baseline.compare)."
+  - claim: "ONDA bouwt zijn baseline op uit waarden in Apple Health en vergelijkt elke nacht met de eigen bandbreedte van de gebruiker (facts baseline.window, baseline.compare)."
     limitation: "Beschrijft alleen het gedrag van de app; geen bewijs voor enige gezondheidsclaim."
 ---
 
@@ -137,6 +137,6 @@ Kort slapen is maar één oorzaak van een lage meting; zie [waarom is mijn HRV l
 
 ## In ONDA
 
-ONDA bouwt zijn persoonlijke baseline op uit nachtelijke waarden die in Apple Health zijn opgeslagen — van een Apple Watch of een ander apparaat dat hartgegevens daarheen synchroniseert [S16]. Het venster is {{fact:baseline.window}}, en {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, dus de HRV-baseline van ONDA is een SDNN-baseline. ONDA bepaalt geen slaapfasen uit HRV en stelt geen slaapapneu, slapeloosheid of andere aandoening vast.
+ONDA bouwt zijn persoonlijke baseline op uit waarden die in Apple Health zijn opgeslagen — van een Apple Watch of een ander apparaat dat hartgegevens daarheen synchroniseert [S16]. Het venster is {{fact:baseline.window}}, en {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, dus de HRV-baseline van ONDA is een SDNN-baseline. ONDA bepaalt geen slaapfasen uit HRV en stelt geen slaapapneu, slapeloosheid of andere aandoening vast.
 
 > Educatieve informatie, geen diagnose of medische behandeling.

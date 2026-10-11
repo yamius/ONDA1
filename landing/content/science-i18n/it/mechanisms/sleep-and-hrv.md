@@ -1,5 +1,5 @@
 ---
-sourceHash: f592ea962f6b
+sourceHash: e9bb7788219f
 title: "HRV e frequenza cardiaca durante il sonno: perché la notte è la finestra migliore"
 metaTitle: "HRV e frequenza cardiaca durante il sonno"
 metaDescription: "Che cosa succede a frequenza cardiaca e HRV nel corso della notte e delle fasi del sonno, perché le misure notturne sono le più stabili e che cosa i wearable possono dire e cosa no."
@@ -57,7 +57,7 @@ evidenceMap:
     limitation: "Studi eterogenei e per lo più ad alto rischio di bias; nessuna meta-analisi possibile."
   - claim: "L'apnea notturna si diagnostica con la polisonnografia o con un test domiciliare per l'apnea del sonno tecnicamente adeguato, non solo con questionari o strumenti predittivi."
     limitation: "Linea guida di pratica clinica per adulti; non valuta i wearable di consumo."
-  - claim: "ONDA costruisce la sua baseline dai valori notturni di Apple Health e confronta ogni notte con il corridoio personale dell'utente."
+  - claim: "ONDA costruisce la sua baseline dai valori di Apple Health e confronta ogni notte con il corridoio personale dell'utente."
     limitation: "Descrive solo il comportamento dell'app; non è una prova di alcuna affermazione sulla salute."
 ---
 
@@ -137,6 +137,6 @@ Dormire poco è solo una delle cause di una lettura bassa; vedi [perché la mia 
 
 ## In ONDA
 
-ONDA costruisce la tua baseline personale dai valori notturni salvati in Apple Health — da Apple Watch o da un altro dispositivo che vi sincronizza i dati cardiaci [S16]. La finestra è di {{fact:baseline.window}}, e {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, quindi la baseline dell'HRV di ONDA è una baseline di SDNN. ONDA non determina le fasi del sonno dall'HRV e non diagnostica l'apnea notturna, l'insonnia né alcun'altra condizione.
+ONDA costruisce la tua baseline personale dai valori salvati in Apple Health — da Apple Watch o da un altro dispositivo che vi sincronizza i dati cardiaci [S16]. La finestra è di {{fact:baseline.window}}, e {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, quindi la baseline dell'HRV di ONDA è una baseline di SDNN. ONDA non determina le fasi del sonno dall'HRV e non diagnostica l'apnea notturna, l'insonnia né alcun'altra condizione.
 
 > Informazioni a scopo educativo, non una diagnosi né un trattamento medico.

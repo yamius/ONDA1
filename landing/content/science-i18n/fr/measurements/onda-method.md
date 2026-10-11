@@ -1,5 +1,5 @@
 ---
-sourceHash: c9a1794847a3
+sourceHash: eea148772b58
 title: "Comment ONDA mesure et interprète les signaux de votre corps"
 metaTitle: "Comment ONDA mesure et lit les signaux du corps"
 metaDescription: "D’où viennent les données d’ONDA, comment elle construit votre référence et vos signaux, ce qui reste sur le téléphone, et les limites de chaque chiffre."
@@ -51,7 +51,7 @@ ONDA est une application de respiration et de biofeedback. Elle lit des signaux 
 
 ## Comment se construit votre référence ?
 
-La référence est la plage dans laquelle votre corps se situe habituellement. ONDA la construit sur {{fact:baseline.window}} à partir des valeurs nocturnes d’Apple Health [S1, S4]. À partir de la version 1.9.3, le graphique de HRV affiche toute cette fenêtre dès que l’accès à Apple Health est accordé, au lieu de se remplir nuit après nuit. Les nuits comptant trop peu d’échantillons sont écartées avant tout calcul, et la HRV n’est prise que dans les échantillons nocturnes.
+La référence est la plage dans laquelle votre corps se situe habituellement. ONDA la construit sur {{fact:baseline.window}} à partir des valeurs d’Apple Health [S1, S4]. À partir de la version 1.9.3, le graphique de HRV affiche toute cette fenêtre dès que l’accès à Apple Health est accordé, au lieu de se remplir nuit après nuit. Les nuits comptant trop peu d’échantillons sont écartées avant tout calcul, et la HRV n’est prise que dans les échantillons nocturnes.
 
 Pour les signaux, {{fact:baseline.compare}} [S1]. ONDA reste muette tant qu’elle ne dispose pas d’au moins {{fact:baseline.minNights}} : les premières semaines montrent donc une référence encore en construction plutôt qu’un jugement. Les changements minimaux exigés sont les suivants : {{fact:baseline.floors}}.
 

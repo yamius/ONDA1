@@ -1,5 +1,5 @@
 ---
-sourceHash: f592ea962f6b
+sourceHash: e9bb7788219f
 title: "睡眠中的 HRV 与心率：为什么夜间是最好的测量窗口"
 metaTitle: "睡眠中的 HRV 与心率"
 metaDescription: "整夜及各睡眠阶段中心率和 HRV 如何变化，为什么夜间读数最稳定，以及可穿戴设备能告诉你什么、不能告诉你什么。"
@@ -54,7 +54,7 @@ evidenceMap:
     limitation: "研究异质性大，且大多存在高偏倚风险；无法进行荟萃分析。"
   - claim: "睡眠呼吸暂停通过多导睡眠图或技术上合格的家庭睡眠呼吸暂停检测来诊断，而不能仅凭问卷或预测工具。"
     limitation: "针对成人的临床实践指南；未评估消费级可穿戴设备。"
-  - claim: "ONDA 根据 Apple Health 中的夜间数值建立基线，并将每晚与用户自己的波动区间进行比较（事实 baseline.window、baseline.compare）。"
+  - claim: "ONDA 根据 Apple Health 中的数值建立基线，并将每晚与用户自己的波动区间进行比较（事实 baseline.window、baseline.compare）。"
     limitation: "仅描述应用的行为；不构成任何健康声明的证据。"
 ---
 
@@ -134,6 +134,6 @@ evidenceMap:
 
 ## 在 ONDA 中
 
-ONDA 根据存储在 Apple Health 中的夜间数值建立你的个人基线，这些数据来自 Apple Watch 或其他把心脏数据同步到那里的设备 [S16]。时间窗口为 {{fact:baseline.window}}，{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}，因此 ONDA 的 HRV 基线是 SDNN 基线。ONDA 不根据 HRV 判断睡眠阶段，也不诊断睡眠呼吸暂停、失眠或任何其他疾病。
+ONDA 根据存储在 Apple Health 中的数值建立你的个人基线，这些数据来自 Apple Watch 或其他把心脏数据同步到那里的设备 [S16]。时间窗口为 {{fact:baseline.window}}，{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}，因此 ONDA 的 HRV 基线是 SDNN 基线。ONDA 不根据 HRV 判断睡眠阶段，也不诊断睡眠呼吸暂停、失眠或任何其他疾病。
 
 > 本文为科普信息，不构成诊断或医学治疗。

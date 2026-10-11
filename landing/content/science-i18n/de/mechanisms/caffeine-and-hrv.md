@@ -1,5 +1,5 @@
 ---
-sourceHash: 159ee240a2bb
+sourceHash: d38842ecad3c
 title: "Koffein und HRV: Was Kaffee bewirkt und was nicht"
 metaTitle: "Koffein und HRV: Senkt Kaffee deine HRV?"
 metaDescription: "Was die Forschung zu Kaffee und HRV in Ruhe und nach dem Training zeigt, wo Energydrinks anders sind und wie spätes Koffein die HRV erreicht."
@@ -47,7 +47,7 @@ evidenceMap:
     limitation: "Dieselbe einzelne kleine Studie; vier Stunden Nachbeobachtung; gesunde Freiwillige."
   - claim: "Koffein am Abend stört den Schlaf, und eine große Dosis vor dem Schlafengehen veränderte in einer kleinen Studie Schlag-zu-Schlag-Herzwerte im REM-Schlaf."
     limitation: "Hintergrundaussage einer kleinen Schlaflaborstudie mit einer großen Dosis kurz vor dem Schlafengehen; nur spektrale Werte."
-  - claim: "ONDA bildet seine Baseline aus nächtlichen Apple-Health-Werten und vergleicht jede Nacht mit dem eigenen Korridor der Nutzerin oder des Nutzers (Fakten baseline.window, baseline.compare)."
+  - claim: "ONDA bildet seine Baseline aus Apple-Health-Werten und vergleicht jede Nacht mit dem eigenen Korridor der Nutzerin oder des Nutzers (Fakten baseline.window, baseline.compare)."
     limitation: "Beschreibt nur das Verhalten der App; kein Beleg für irgendeine Gesundheitsaussage."
 ---
 
@@ -109,6 +109,6 @@ Koffein ist nur einer von mehreren möglichen Gründen für einen niedrigen Wert
 
 ## In ONDA
 
-ONDA bildet eine persönliche Baseline aus nächtlichen Werten, die in Apple Health gespeichert sind – von der Apple Watch oder einem anderen Gerät, das Herzdaten dorthin synchronisiert [S8]. Das Fenster beträgt {{fact:baseline.window}}, und {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, daher ist der HRV-Trend in ONDA ein SDNN-Trend. Wenn du wissen willst, ob deine eigene Kaffeegewohnheit eine Rolle spielt, vergleiche über einige Wochen die Nächte nach einer späten Tasse mit deinen üblichen Nächten, statt eine einzelne Nacht zu lesen. ONDA erfasst kein Koffein, gibt keine Ratschläge zu Kaffee und stellt keine Diagnosen.
+ONDA bildet eine persönliche Baseline aus Werten, die in Apple Health gespeichert sind – von der Apple Watch oder einem anderen Gerät, das Herzdaten dorthin synchronisiert [S8]. Das Fenster beträgt {{fact:baseline.window}}, und {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, daher ist der HRV-Trend in ONDA ein SDNN-Trend. Wenn du wissen willst, ob deine eigene Kaffeegewohnheit eine Rolle spielt, vergleiche über einige Wochen die Nächte nach einer späten Tasse mit deinen üblichen Nächten, statt eine einzelne Nacht zu lesen. ONDA erfasst kein Koffein, gibt keine Ratschläge zu Kaffee und stellt keine Diagnosen.
 
 > Bildungsinformation, keine Diagnose und keine medizinische Behandlung.

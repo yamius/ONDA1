@@ -1,5 +1,5 @@
 ---
-sourceHash: "4c0358773469"
+sourceHash: "fe57b9925cd0"
 title: "Hartslagvariabiliteit: wat het is, wat het weerspiegelt en wat het niet is"
 metaTitle: "Hartslagvariabiliteit: definitie en bewijs"
 metaDescription: "Hartslagvariabiliteit is de natuurlijke variatie van slag tot slag in het hartritme. Wat haar vormt, wat ze weerspiegelt en wat ze je niet vertelt."
@@ -117,6 +117,6 @@ Het venster hoort bij de betekenis. Een korte labmeting, een ecg over de hele da
 
 ## In ONDA
 
-De nachtelijke persoonlijke baseline van ONDA is gebaseerd op de HRV-waarden die in Apple Health worden opgeslagen — van de Apple Watch of van elke tracker waarvan de app hartgegevens daarheen synchroniseert. {{fact:applewatch.hrv.healthkit}} [S6], dus dat baselinesignaal is gebaseerd op SDNN en niet op RMSSD, en de app vergelijkt elke nacht met je eigen bandbreedte (corridor) in plaats van met bevolkingsdoelen. De live-waarde tijdens een oefening is een vervangende maat, berekend uit de standaarddeviatie van de hartslag — geen RMSSD en geen SDNN — en de telefooncamera geeft je polsslag, geen HRV. ONDA gebruikt het signaal voor biofeedback — kijken wat er met je fysiologische signaal gebeurt terwijl je oefent — en de [HRV-calculator](/tools/hrv) plaatst Apple Watch-waarden in context. ONDA beschrijft en vergelijkt je eigen getallen; het stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
+De persoonlijke baseline van ONDA is gebaseerd op de HRV-waarden die in Apple Health worden opgeslagen — van de Apple Watch of van elke tracker waarvan de app hartgegevens daarheen synchroniseert. {{fact:applewatch.hrv.healthkit}} [S6], dus dat baselinesignaal is gebaseerd op SDNN en niet op RMSSD, en de app vergelijkt elke nacht met je eigen bandbreedte (corridor) in plaats van met bevolkingsdoelen. De live-waarde tijdens een oefening is een vervangende maat, berekend uit de standaarddeviatie van de hartslag — geen RMSSD en geen SDNN — en de telefooncamera geeft je polsslag, geen HRV. ONDA gebruikt het signaal voor biofeedback — kijken wat er met je fysiologische signaal gebeurt terwijl je oefent — en de [HRV-calculator](/tools/hrv) plaatst Apple Watch-waarden in context. ONDA beschrijft en vergelijkt je eigen getallen; het stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

@@ -187,11 +187,11 @@ evidenceMap:
     claimType: physiology
     quote: "Findings are mixed for mild to moderate drinking and may be influenced by confounding factors, underscoring the need for further research."
     limitation: "Narrative review, not a systematic review or meta-analysis; covers heart outcomes broadly, not HRV specifically."
-  - claim: "ONDA builds its baseline from nightly Apple Health values and compares each night with the user's own corridor (facts baseline.window, baseline.compare)."
+  - claim: "ONDA builds its baseline from values in Apple Health and compares each night with the user's own corridor (facts baseline.window, baseline.compare)."
     sources: [S9]
     class: established
     claimType: device
-    quote: "From nightly Apple Health values — HRV, resting heart rate and breathing rate — ONDA builds your personal baseline"
+    quote: "From values in Apple Health — HRV, resting heart rate and breathing rate — ONDA builds your personal baseline"
     limitation: "Describes app behaviour only; not evidence for any health claim."
 ---
 
@@ -248,6 +248,6 @@ For how alcohol compares with other everyday causes of a low reading, see [why i
 
 ## In ONDA
 
-ONDA builds a personal baseline from nightly values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S9]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV trend is an SDNN trend. A night after drinking can show up as a lower HRV and a higher resting heart rate in that comparison; it is the normal reaction described above, not a cause for alarm. Look at the trend over several nights rather than at one night. ONDA does not track alcohol, give advice on drinking or diagnose any condition.
+ONDA builds a personal baseline from values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S9]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV trend is an SDNN trend. A night after drinking can show up as a lower HRV and a higher resting heart rate in that comparison; it is the normal reaction described above, not a cause for alarm. Look at the trend over several nights rather than at one night. ONDA does not track alcohol, give advice on drinking or diagnose any condition.
 
 > Educational information, not a diagnosis or medical treatment.

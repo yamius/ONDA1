@@ -1,5 +1,5 @@
 ---
-sourceHash: f592ea962f6b
+sourceHash: e9bb7788219f
 title: "HRV i tętno podczas snu: dlaczego noc to najlepsze okno pomiarowe"
 metaTitle: "HRV i tętno podczas snu"
 metaDescription: "Co dzieje się z tętnem i HRV w ciągu nocy i w fazach snu, dlaczego odczyty nocne są najstabilniejszym oknem i co urządzenia ubieralne mogą, a czego nie mogą powiedzieć."
@@ -57,7 +57,7 @@ evidenceMap:
     limitation: "Badania niejednorodne i w większości obarczone wysokim ryzykiem błędu systematycznego; metaanaliza nie była możliwa."
   - claim: "Bezdech senny rozpoznaje się za pomocą polisomnografii lub technicznie poprawnego domowego badania w kierunku bezdechu, a nie samymi kwestionariuszami czy narzędziami predykcyjnymi."
     limitation: "Wytyczne praktyki klinicznej dla dorosłych; nie oceniają konsumenckich urządzeń ubieralnych."
-  - claim: "ONDA tworzy linię bazową z nocnych wartości z Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (facts baseline.window, baseline.compare)."
+  - claim: "ONDA tworzy linię bazową z wartości z Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (facts baseline.window, baseline.compare)."
     limitation: "Opisuje wyłącznie działanie aplikacji; nie jest dowodem na żadne twierdzenie zdrowotne."
 ---
 
@@ -137,6 +137,6 @@ Krótki sen to tylko jedna z przyczyn niskiego odczytu; zobacz [dlaczego moje HR
 
 ## W ONDA
 
-ONDA tworzy osobistą linię bazową z nocnych wartości zapisanych w Apple Health — z Apple Watch albo innego urządzenia, które synchronizuje tam dane o pracy serca [S16]. Okno wynosi {{fact:baseline.window}}, a {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, więc linia bazowa HRV w ONDA jest linią bazową SDNN. ONDA nie określa faz snu na podstawie HRV i nie rozpoznaje bezdechu sennego, bezsenności ani żadnej innej choroby.
+ONDA tworzy osobistą linię bazową z wartości zapisanych w Apple Health — z Apple Watch albo innego urządzenia, które synchronizuje tam dane o pracy serca [S16]. Okno wynosi {{fact:baseline.window}}, a {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, więc linia bazowa HRV w ONDA jest linią bazową SDNN. ONDA nie określa faz snu na podstawie HRV i nie rozpoznaje bezdechu sennego, bezsenności ani żadnej innej choroby.
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

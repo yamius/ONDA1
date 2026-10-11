@@ -1,5 +1,5 @@
 ---
-sourceHash: "f848794fbee9"
+sourceHash: "290b64b3dec0"
 title: "SDNN : ce que mesure cet indicateur de la HRV, et ce qu’il ne mesure pas"
 metaTitle: "SDNN : définition, signification et le cas Apple"
 metaDescription: "Le SDNN est la mesure de la HRV que stocke Apple Health. Ce qu’il mesure, en quoi il diffère de la RMSSD, et pourquoi leurs valeurs ne se comparent pas."
@@ -121,6 +121,6 @@ Ce qui reste incertain : la fidélité avec laquelle les valeurs nocturnes de t
 
 ## Dans ONDA
 
-Les tableaux de HRV par âge d’ONDA sont des tableaux de RMSSD nocturne, mais le [calculateur de HRV](/tools/hrv) propose un mode SDNN distinct pour les chiffres issus de l’Apple Watch, avec des plages tirées d’études d’ECG courts au repos chez des adultes en bonne santé. La référence personnelle (baseline) nocturne de l’application repose sur les valeurs de HRV stockées dans Apple Health — par l’Apple Watch ou par un autre appareil qui y synchronise les données cardiaques. La documentation est claire à ce sujet : {{fact:applewatch.hrv.healthkit}} [S8] — ce signal de référence repose donc sur le SDNN plutôt que sur la RMSSD. La valeur en direct affichée pendant une pratique est un indicateur de substitution calculé à partir de l’écart type de la fréquence cardiaque, et non un SDNN ou une RMSSD, et la caméra du téléphone donne le pouls, pas la HRV. ONDA décrit et compare vos propres chiffres ; il ne pose aucun diagnostic. Voir [ce que mesure ONDA](/measurements).
+Les tableaux de HRV par âge d’ONDA sont des tableaux de RMSSD nocturne, mais le [calculateur de HRV](/tools/hrv) propose un mode SDNN distinct pour les chiffres issus de l’Apple Watch, avec des plages tirées d’études d’ECG courts au repos chez des adultes en bonne santé. La référence personnelle (baseline) de l’application repose sur les valeurs de HRV stockées dans Apple Health — par l’Apple Watch ou par un autre appareil qui y synchronise les données cardiaques. La documentation est claire à ce sujet : {{fact:applewatch.hrv.healthkit}} [S8] — ce signal de référence repose donc sur le SDNN plutôt que sur la RMSSD. La valeur en direct affichée pendant une pratique est un indicateur de substitution calculé à partir de l’écart type de la fréquence cardiaque, et non un SDNN ou une RMSSD, et la caméra du téléphone donne le pouls, pas la HRV. ONDA décrit et compare vos propres chiffres ; il ne pose aucun diagnostic. Voir [ce que mesure ONDA](/measurements).
 
 > Information éducative, pas un diagnostic ni un traitement médical.

@@ -1,5 +1,5 @@
 ---
-sourceHash: a92f7982b6f6
+sourceHash: 385cb2c6ee15
 title: "Wysiłek a HRV: co robi trening i co pokazuje trening sterowany HRV"
 metaTitle: "Wysiłek a HRV: dowody dla treningu sterowanego HRV"
 metaDescription: "Dlaczego HRV spada po ciężkim treningu i wraca do normy, ile to trwa i co pokazują badania treningu sterowanego HRV w porównaniu ze stałym planem treningowym."
@@ -49,7 +49,7 @@ evidenceMap:
     limitation: "Wynik drugorzędowy w małym badaniu; nie może przesądzać o wniosku, gdy pierwszorzędowy punkt końcowy nie wykazał różnicy."
   - claim: "Liczne czynniki eksperymentalne, demograficzne i środowiskowe wpływają na ocenę HRV, dlatego odczyty należy porównywać w porównywalnych warunkach."
     limitation: "Wytyczne dotyczące rzetelności badań; konsensus ekspertów, a nie bezpośrednie dowody dotyczące decyzji treningowych."
-  - claim: "ONDA tworzy linię bazową z nocnych wartości w Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (facts baseline.window, baseline.compare)."
+  - claim: "ONDA tworzy linię bazową z wartości w Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (facts baseline.window, baseline.compare)."
     limitation: "Opisuje wyłącznie działanie aplikacji; nie stanowi dowodu na żadne twierdzenie zdrowotne ani treningowe."
   - claim: "W metaanalizie u sportowców wytrzymałościowych trening, który poprawił wyniki, szedł w parze ze wzrostem zależnego od nerwu błędnego HRV w spoczynku i po wysiłku oraz powrotu tętna (facts study.bellenger2016.studies, study.bellenger2016.restingRmssd)."
     limitation: "Tylko sportowcy wytrzymałościowi; połączone małe badania; wskaźniki częstotliwościowe ograniczone do mocy HF; średnie grupowe, a nie test indywidualny."
@@ -136,6 +136,6 @@ Jeśli trening nie tłumaczy niskiego odczytu, inne częste przyczyny wymienia s
 
 ## W ONDA
 
-ONDA tworzy osobistą linię bazową z nocnych wartości zapisanych w Apple Health — z Apple Watch albo innego urządzenia, które synchronizuje tam dane o pracy serca [S5]. Okno wynosi {{fact:baseline.window}}, a {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, więc trend HRV w ONDA jest trendem SDNN. ONDA pokazuje, jak Twoje noce wypadają na tle Twojego własnego zakresu; nie planuje ani nie dostosowuje treningu, nie mówi, kiedy trenować ciężko, i nie rozpoznaje żadnej choroby.
+ONDA tworzy osobistą linię bazową z wartości zapisanych w Apple Health — z Apple Watch albo innego urządzenia, które synchronizuje tam dane o pracy serca [S5]. Okno wynosi {{fact:baseline.window}}, a {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, więc trend HRV w ONDA jest trendem SDNN. ONDA pokazuje, jak Twoje noce wypadają na tle Twojego własnego zakresu; nie planuje ani nie dostosowuje treningu, nie mówi, kiedy trenować ciężko, i nie rozpoznaje żadnej choroby.
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

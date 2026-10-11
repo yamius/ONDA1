@@ -1,5 +1,5 @@
 ---
-sourceHash: "f848794fbee9"
+sourceHash: "290b64b3dec0"
 title: "SDNN — co mierzy ta miara HRV, a czego nie"
 metaTitle: "SDNN: definicja, znaczenie i rola w Apple Health"
 metaDescription: "SDNN to miara HRV, którą zapisuje Apple Health. Co mierzy, czym różni się od RMSSD i dlaczego tych dwóch liczb nie można ze sobą porównywać."
@@ -119,6 +119,6 @@ Co pozostaje niepewne: na ile konsumenckie nocne wartości typu SDNN odpowiadaj�
 
 ## W ONDA
 
-Tabele HRV według wieku w ONDA to tabele nocnego RMSSD, ale [kalkulator HRV](/tools/hrv) ma osobny tryb SDNN dla liczb z Apple Watch, z przedziałami z badań krótkich spoczynkowych zapisów EKG u zdrowych dorosłych. Nocna osobista linia bazowa w samej aplikacji opiera się na wartościach HRV zapisanych w Apple Health — z Apple Watch lub z innego urządzenia, które synchronizuje tam dane o sercu. Dokumentacja mówi to wprost: {{fact:applewatch.hrv.healthkit}} [S8] — więc ten sygnał opiera się na SDNN, a nie na RMSSD. Odczyt na żywo w trakcie praktyki to wskaźnik zastępczy obliczany z odchylenia standardowego tętna, a nie SDNN ani RMSSD, a aparat telefonu podaje tętno, nie HRV. ONDA opisuje i porównuje twoje własne wyniki; niczego nie diagnozuje. Zobacz, [co mierzy ONDA](/measurements).
+Tabele HRV według wieku w ONDA to tabele nocnego RMSSD, ale [kalkulator HRV](/tools/hrv) ma osobny tryb SDNN dla liczb z Apple Watch, z przedziałami z badań krótkich spoczynkowych zapisów EKG u zdrowych dorosłych. Osobista linia bazowa w samej aplikacji opiera się na wartościach HRV zapisanych w Apple Health — z Apple Watch lub z innego urządzenia, które synchronizuje tam dane o sercu. Dokumentacja mówi to wprost: {{fact:applewatch.hrv.healthkit}} [S8] — więc ten sygnał opiera się na SDNN, a nie na RMSSD. Odczyt na żywo w trakcie praktyki to wskaźnik zastępczy obliczany z odchylenia standardowego tętna, a nie SDNN ani RMSSD, a aparat telefonu podaje tętno, nie HRV. ONDA opisuje i porównuje twoje własne wyniki; niczego nie diagnozuje. Zobacz, [co mierzy ONDA](/measurements).
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

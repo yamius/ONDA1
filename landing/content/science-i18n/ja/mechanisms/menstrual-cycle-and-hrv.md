@@ -1,5 +1,5 @@
 ---
-sourceHash: 1c231ffc17a5
+sourceHash: d3c51d8c300f
 title: "月経周期とHRV：ベースラインが動く理由"
 metaTitle: "月経周期とHRV：何がなぜ変わるのか"
 metaDescription: "月経周期のなかで心拍変動がどう変わるのか、なぜ女性一人ひとりに固有のパターンがあるのか、そしてホルモン避妊法と閉経で何が変わるのかを解説します。"
@@ -47,7 +47,7 @@ evidenceMap:
     limitation: "十一人の女性で二つの時期を比較。実験室での短い記録。"
   - claim: "レビューの著者は、女性にHRVを示す際には周期に関連した差を考慮すべきだと述べている。"
     limitation: "著者の提言であり、検証された方法ではない。"
-  - claim: "ONDAは、Apple Healthの夜間の値からベースラインをつくり、毎晩をユーザー自身のコリドーと比較する（ファクト baseline.window、baseline.compare）。"
+  - claim: "ONDAは、Apple Healthの値からベースラインをつくり、毎晩をユーザー自身のコリドーと比較する（ファクト baseline.window、baseline.compare）。"
     limitation: "アプリの動作を説明しているだけで、健康に関するいかなる主張の根拠でもない。"
 ---
 
@@ -105,6 +105,6 @@ evidenceMap:
 
 ## ONDAでは
 
-ONDAは、Apple Healthに保存された夜間の値から、個人のベースラインをつくります。値はApple Watch、または心拍データをApple Healthに同期するほかの機器から得られます [S8]。期間は{{fact:baseline.window}}で、{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}ため、ONDAのHRVの推移はSDNNの推移です。ONDAは月経周期を記録しないため、ベースラインは周期の日数を考慮しません。月経前の数日間のHRVの低さは、警告ではなく、ふつうの周期的なゆらぎであることがあります。ご自身のパターンを知りたい場合は、周期の日数をご自分で記録し、ほかの女性の時期別の平均と比べるのではなく、いくつかの周期にわたって同じ日どうしを比べてください（[あなたのHRVベースライン](/science/concepts/hrv-baseline)、[HRVの測定方法](/science/measurements/heart-rate-variability)）。ONDAは、HRVから妊よう性、排卵、避妊について判断することはなく、いかなる病気も診断しません。
+ONDAは、Apple Healthに保存された値から、個人のベースラインをつくります。値はApple Watch、または心拍データをApple Healthに同期するほかの機器から得られます [S8]。期間は{{fact:baseline.window}}で、{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}ため、ONDAのHRVの推移はSDNNの推移です。ONDAは月経周期を記録しないため、ベースラインは周期の日数を考慮しません。月経前の数日間のHRVの低さは、警告ではなく、ふつうの周期的なゆらぎであることがあります。ご自身のパターンを知りたい場合は、周期の日数をご自分で記録し、ほかの女性の時期別の平均と比べるのではなく、いくつかの周期にわたって同じ日どうしを比べてください（[あなたのHRVベースライン](/science/concepts/hrv-baseline)、[HRVの測定方法](/science/measurements/heart-rate-variability)）。ONDAは、HRVから妊よう性、排卵、避妊について判断することはなく、いかなる病気も診断しません。
 
 > 教育目的の情報であり、診断や医療行為ではありません。

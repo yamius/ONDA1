@@ -1,5 +1,5 @@
 ---
-sourceHash: "2cecd6f1dabf"
+sourceHash: "914a9faa457f"
 title: "Kann man der HRV von Smartwatch oder Ring trauen?"
 metaTitle: "HRV von Wearables: Kann man Uhr oder Ring trauen?"
 metaDescription: "Die HRV von Smartwatch und Ring ist eine Schätzung aus dem Pulssignal, keine EKG-Messung. Wo beide übereinstimmen, wo sie abweichen und wie du deine Werte liest."
@@ -165,6 +165,6 @@ Apples Ökosystem gehört hierher als Gerätetatsache: Apple Health speichert di
 
 ## In ONDA
 
-ONDA steht auf der Verbraucherseite dieser Evidenz, und seine Dokumentation sagt klar, woher jede Zahl stammt. Die nächtliche Baseline beruht auf den HRV-Werten, die in Apple Health geschrieben werden – von der Apple Watch oder von jedem Tracker, dessen App Herzdaten dorthin synchronisiert –, und diese Werte sind SDNN-Werte: {{fact:applewatch.hrv.healthkit}} [S6]. Der Live-Wert während einer Übung ist ein Ersatzmaß, berechnet aus der Standardabweichung der Herzfrequenz – weder RMSSD noch SDNN; die Handykamera liefert den Puls, nicht die HRV; und der mit der Apple Watch verfügbare Kohärenzwert ist ein proprietärer Feedback-Score, keine klinische HRV-Messung. ONDA nutzt das Signal für Biofeedback: Die Frage ist nicht nur, wie hoch die Zahl ist, sondern was mit ihr geschieht, während du übst. Die App vergleicht jede Nacht mit deinem eigenen jüngsten Korridor und stellt keine Diagnosen. Siehe [was ONDA misst](/measurements).
+ONDA steht auf der Verbraucherseite dieser Evidenz, und seine Dokumentation sagt klar, woher jede Zahl stammt. Die Baseline beruht auf den HRV-Werten, die in Apple Health geschrieben werden – von der Apple Watch oder von jedem Tracker, dessen App Herzdaten dorthin synchronisiert –, und diese Werte sind SDNN-Werte: {{fact:applewatch.hrv.healthkit}} [S6]. Der Live-Wert während einer Übung ist ein Ersatzmaß, berechnet aus der Standardabweichung der Herzfrequenz – weder RMSSD noch SDNN; die Handykamera liefert den Puls, nicht die HRV; und der mit der Apple Watch verfügbare Kohärenzwert ist ein proprietärer Feedback-Score, keine klinische HRV-Messung. ONDA nutzt das Signal für Biofeedback: Die Frage ist nicht nur, wie hoch die Zahl ist, sondern was mit ihr geschieht, während du übst. Die App vergleicht jede Nacht mit deinem eigenen jüngsten Korridor und stellt keine Diagnosen. Siehe [was ONDA misst](/measurements).
 
 > Bildungsinformation, keine Diagnose und keine medizinische Behandlung.

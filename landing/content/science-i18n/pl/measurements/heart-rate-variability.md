@@ -1,5 +1,5 @@
 ---
-sourceHash: "2cecd6f1dabf"
+sourceHash: "914a9faa457f"
 title: "Czy można ufać HRV ze smartwatcha lub pierścienia?"
 metaTitle: "HRV z zegarka lub pierścienia: czy można mu ufać?"
 metaDescription: "HRV ze smartwatcha lub pierścienia to szacunek z sygnału tętna, a nie odczyt EKG. Gdzie obie metody się zgadzają, gdzie rozchodzą i jak czytać swoje wyniki."
@@ -164,6 +164,6 @@ Fakty dotyczące ekosystemu Apple należą tutaj jako fakty o urządzeniach: App
 
 ## W ONDA
 
-ONDA stoi po konsumenckiej stronie tych danych, a jej dokumentacja jasno mówi, skąd pochodzi każda liczba. Nocna osobista linia bazowa opiera się na wartościach HRV zapisanych w Apple Health — przez Apple Watch lub dowolny tracker, którego aplikacja synchronizuje tam dane o sercu — a te wartości są typu SDNN: {{fact:applewatch.hrv.healthkit}} [S6]. Odczyt na żywo w trakcie praktyki to wskaźnik zastępczy obliczany z odchylenia standardowego tętna, a nie RMSSD ani SDNN; aparat telefonu podaje tętno, nie HRV; a wynik koherencji dostępny z Apple Watch to autorski wskaźnik informacji zwrotnej, a nie kliniczny pomiar HRV. ONDA wykorzystuje ten sygnał do biofeedbacku: pytanie brzmi nie tylko, jaka jest liczba, ale co dzieje się z nią podczas praktyki. Aplikacja porównuje każdą noc z twoim własnym niedawnym korytarzem i niczego nie diagnozuje. Zobacz, [co mierzy ONDA](/measurements).
+ONDA stoi po konsumenckiej stronie tych danych, a jej dokumentacja jasno mówi, skąd pochodzi każda liczba. Osobista linia bazowa opiera się na wartościach HRV zapisanych w Apple Health — przez Apple Watch lub dowolny tracker, którego aplikacja synchronizuje tam dane o sercu — a te wartości są typu SDNN: {{fact:applewatch.hrv.healthkit}} [S6]. Odczyt na żywo w trakcie praktyki to wskaźnik zastępczy obliczany z odchylenia standardowego tętna, a nie RMSSD ani SDNN; aparat telefonu podaje tętno, nie HRV; a wynik koherencji dostępny z Apple Watch to autorski wskaźnik informacji zwrotnej, a nie kliniczny pomiar HRV. ONDA wykorzystuje ten sygnał do biofeedbacku: pytanie brzmi nie tylko, jaka jest liczba, ale co dzieje się z nią podczas praktyki. Aplikacja porównuje każdą noc z twoim własnym niedawnym korytarzem i niczego nie diagnozuje. Zobacz, [co mierzy ONDA](/measurements).
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

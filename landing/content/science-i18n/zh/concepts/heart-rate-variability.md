@@ -1,5 +1,5 @@
 ---
-sourceHash: "4c0358773469"
+sourceHash: "fe57b9925cd0"
 title: "心率变异性：它是什么、反映什么、又不是什么"
 metaTitle: "心率变异性（HRV）：定义与证据"
 metaDescription: "心率变异性是心律在相邻心跳之间的自然波动。本文介绍哪些因素塑造它、它反映了什么，以及它无法告诉你什么。"
@@ -111,6 +111,6 @@ HRV 由一系列心搏间期计算而来，所以一切都取决于这些间期�
 
 ## 在 ONDA 中
 
-ONDA 的夜间个人基线建立在写入 Apple Health 的 HRV 数值之上——来自 Apple Watch，或任何将心脏数据同步到那里的追踪设备的应用。{{fact:applewatch.hrv.healthkit}} [S6]，因此这个基线信号基于 SDNN 而非 RMSSD，应用每晚的比较也是与你自己的波动区间对照，而不是与人群目标对照。练习过程中显示的实时读数，是由心率标准差计算出的替代值，既不是 RMSSD 也不是 SDNN；手机摄像头提供的是脉搏，而不是 HRV。ONDA 对这一信号的用法是生物反馈——观察你练习时生理信号发生了什么——而 [HRV 计算器](/tools/hrv)可以帮你把 Apple Watch 的数值放到情境中理解。ONDA 描述并比较你自己的数字，不做任何诊断。参见 [ONDA 测量什么](/measurements)。
+ONDA 的个人基线建立在写入 Apple Health 的 HRV 数值之上——来自 Apple Watch，或任何将心脏数据同步到那里的追踪设备的应用。{{fact:applewatch.hrv.healthkit}} [S6]，因此这个基线信号基于 SDNN 而非 RMSSD，应用每晚的比较也是与你自己的波动区间对照，而不是与人群目标对照。练习过程中显示的实时读数，是由心率标准差计算出的替代值，既不是 RMSSD 也不是 SDNN；手机摄像头提供的是脉搏，而不是 HRV。ONDA 对这一信号的用法是生物反馈——观察你练习时生理信号发生了什么——而 [HRV 计算器](/tools/hrv)可以帮你把 Apple Watch 的数值放到情境中理解。ONDA 描述并比较你自己的数字，不做任何诊断。参见 [ONDA 测量什么](/measurements)。
 
 > 本文为科普信息，不构成诊断或医学治疗。

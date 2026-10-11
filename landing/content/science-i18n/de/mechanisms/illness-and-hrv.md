@@ -1,5 +1,5 @@
 ---
-sourceHash: 079098055e7f
+sourceHash: 9b4dc57e7d2e
 title: "Krankheit und HRV: was ein Wearable sehen kann und was nicht"
 metaTitle: "Krankheit und HRV: Frühsignal, keine Diagnose"
 metaDescription: "Wie Entzündung und Infektion HRV und Ruhepuls verschieben, was Wearable-Warnungen bedeuten und warum sie dir nicht sagen können, dass du krank bist."
@@ -43,7 +43,7 @@ evidenceMap:
     limitation: "Narratives Review; überwiegend Studien aus der Pandemiezeit; einige Autoren bei einem Unternehmen für Wearable-Datenanalyse angestellt."
   - claim: "Dasselbe Review stellt fest, dass die Fähigkeit von Wearables, Virusinfektionen unter Alltagsbedingungen zu erkennen, nicht belegt ist."
     limitation: "Geschrieben, bevor die obige prospektive Studie in ihrer endgültigen Form erschien; diese Studie prüft nicht den Alltagsgebrauch außerhalb einer Forschungskohorte."
-  - claim: "ONDA bildet seine Baseline aus nächtlichen Apple-Health-Werten und vergleicht jede Nacht mit dem eigenen Korridor der Nutzerin oder des Nutzers (Fakten baseline.window, baseline.compare, baseline.floors, onda.signal.cadence)."
+  - claim: "ONDA bildet seine Baseline aus Apple-Health-Werten und vergleicht jede Nacht mit dem eigenen Korridor der Nutzerin oder des Nutzers (Fakten baseline.window, baseline.compare, baseline.floors, onda.signal.cadence)."
     limitation: "Beschreibt nur das Verhalten der App; kein Beleg für eine Gesundheitsaussage."
 ---
 
@@ -106,6 +106,6 @@ Stress, Alkohol und Reisen können denselben Abfall auslösen; [Warum ist meine 
 
 ## In ONDA
 
-ONDA bildet eine persönliche Baseline aus nächtlichen Werten, die in Apple Health gespeichert sind – von der Apple Watch oder einem anderen Gerät, das Herzdaten dorthin synchronisiert [S7]. Das Fenster beträgt {{fact:baseline.window}}, und {{fact:baseline.compare}}: {{fact:baseline.floors}}. Es gibt {{fact:onda.signal.cadence}}. {{fact:applewatch.hrv.healthkit}}, daher ist der HRV-Trend in ONDA ein SDNN-Trend ([deine HRV-Baseline](/science/concepts/hrv-baseline)). Ein solches Signal ist beschreibend: Es sagt, dass eine Nacht außerhalb deines eigenen Korridors liegt, nicht warum. Eine Infektion, eine kurze Nacht, Alkohol oder Reisen können es alle auslösen. ONDA erkennt keine Krankheiten, stellt keine Diagnosen und ersetzt keine Ärztin und keinen Arzt.
+ONDA bildet eine persönliche Baseline aus Werten, die in Apple Health gespeichert sind – von der Apple Watch oder einem anderen Gerät, das Herzdaten dorthin synchronisiert [S7]. Das Fenster beträgt {{fact:baseline.window}}, und {{fact:baseline.compare}}: {{fact:baseline.floors}}. Es gibt {{fact:onda.signal.cadence}}. {{fact:applewatch.hrv.healthkit}}, daher ist der HRV-Trend in ONDA ein SDNN-Trend ([deine HRV-Baseline](/science/concepts/hrv-baseline)). Ein solches Signal ist beschreibend: Es sagt, dass eine Nacht außerhalb deines eigenen Korridors liegt, nicht warum. Eine Infektion, eine kurze Nacht, Alkohol oder Reisen können es alle auslösen. ONDA erkennt keine Krankheiten, stellt keine Diagnosen und ersetzt keine Ärztin und keinen Arzt.
 
 > Bildungsinformation, keine Diagnose und keine medizinische Behandlung.

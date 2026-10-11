@@ -1,5 +1,5 @@
 ---
-sourceHash: "2cecd6f1dabf"
+sourceHash: "914a9faa457f"
 title: "スマートウォッチやリングのHRVは信頼できるのか？"
 metaTitle: "ウェアラブルのHRV：ウォッチやリングは信頼できるか"
 metaDescription: "スマートウォッチやリングのHRVは、心電図による測定値ではなく、脈波信号からの推定値です。両者が一致する場面、ずれる場面、そして自分の数値の読み方を解説します。"

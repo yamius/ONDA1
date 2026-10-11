@@ -1,5 +1,5 @@
 ---
-sourceHash: 1c231ffc17a5
+sourceHash: d3c51d8c300f
 title: "Ciclo mestruale e HRV: perché la tua baseline si sposta"
 metaTitle: "Ciclo mestruale e HRV: che cosa cambia e perché"
 metaDescription: "Come varia la variabilità della frequenza cardiaca nel corso del ciclo mestruale, perché ogni donna ha il proprio andamento e che cosa cambiano la contraccezione ormonale e la menopausa."
@@ -50,7 +50,7 @@ evidenceMap:
     limitation: "Due fasi confrontate in undici donne; registrazioni di laboratorio brevi."
   - claim: "Gli autori della revisione affermano che le differenze legate al ciclo andrebbero considerate quando l'HRV viene mostrata alle donne."
     limitation: "Raccomandazione degli autori, non un metodo verificato."
-  - claim: "ONDA costruisce la sua baseline dai valori notturni di Apple Health e confronta ogni notte con il corridoio personale dell'utente (dati baseline.window, baseline.compare)."
+  - claim: "ONDA costruisce la sua baseline dai valori di Apple Health e confronta ogni notte con il corridoio personale dell'utente (dati baseline.window, baseline.compare)."
     limitation: "Descrive solo il funzionamento dell'app; non è una prova per alcuna affermazione sulla salute."
 ---
 
@@ -108,6 +108,6 @@ Per le altre cause di una lettura bassa, vedi [perché la mia HRV è bassa?](/sc
 
 ## In ONDA
 
-ONDA costruisce una baseline personale dai valori notturni salvati in Apple Health, provenienti da Apple Watch o da un altro dispositivo che vi sincronizza i dati cardiaci [S8]. La finestra è di {{fact:baseline.window}}, e {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, quindi l'andamento dell'HRV in ONDA è un andamento della SDNN. ONDA non monitora il ciclo mestruale, quindi la baseline non si adatta al giorno del ciclo. Un'HRV più bassa nei giorni prima delle mestruazioni può essere una normale oscillazione del ciclo e non un campanello d'allarme. Se vuoi vedere il tuo andamento, annota tu stessa il giorno del ciclo e confronta gli stessi giorni su più cicli, invece di confrontarti con le medie per fase di altre donne ([la tua baseline di HRV](/science/concepts/hrv-baseline); [come si misura l'HRV](/science/measurements/heart-rate-variability)). ONDA non determina la fertilità, l'ovulazione né la contraccezione a partire dall'HRV e non diagnostica alcuna condizione.
+ONDA costruisce una baseline personale dai valori salvati in Apple Health, provenienti da Apple Watch o da un altro dispositivo che vi sincronizza i dati cardiaci [S8]. La finestra è di {{fact:baseline.window}}, e {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, quindi l'andamento dell'HRV in ONDA è un andamento della SDNN. ONDA non monitora il ciclo mestruale, quindi la baseline non si adatta al giorno del ciclo. Un'HRV più bassa nei giorni prima delle mestruazioni può essere una normale oscillazione del ciclo e non un campanello d'allarme. Se vuoi vedere il tuo andamento, annota tu stessa il giorno del ciclo e confronta gli stessi giorni su più cicli, invece di confrontarti con le medie per fase di altre donne ([la tua baseline di HRV](/science/concepts/hrv-baseline); [come si misura l'HRV](/science/measurements/heart-rate-variability)). ONDA non determina la fertilità, l'ovulazione né la contraccezione a partire dall'HRV e non diagnostica alcuna condizione.
 
 > Informazioni a scopo educativo, non una diagnosi né un trattamento medico.

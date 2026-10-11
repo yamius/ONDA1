@@ -1,5 +1,5 @@
 ---
-sourceHash: c9a1794847a3
+sourceHash: eea148772b58
 title: "ONDA 如何测量和解读你的身体信号"
 metaTitle: "ONDA 如何测量和解读你的身体信号"
 metaDescription: "ONDA 的数据从哪里来、如何建立你的个人基线和信号、哪些内容只留在你的手机上，以及它显示的每个数字都有哪些局限。"
@@ -44,7 +44,7 @@ ONDA 是一款呼吸与生物反馈应用。它读取其他设备已经记录下
 
 ## 个人基线是如何建立的？
 
-个人基线是你的身体通常所处的范围。ONDA 用 Apple Health 中{{fact:baseline.window}}的夜间数值来建立它 [S1, S4]。从 1.9.3 版本开始，一旦授予 Apple Health 访问权限，HRV 图表就会显示整个时间窗口，而不是一晚一晚地逐步填满。样本过少的夜晚会在任何计算之前被剔除，HRV 只取自夜间样本。
+个人基线是你的身体通常所处的范围。ONDA 用 Apple Health 中{{fact:baseline.window}}的数值来建立它 [S1, S4]。从 1.9.3 版本开始，一旦授予 Apple Health 访问权限，HRV 图表就会显示整个时间窗口，而不是一晚一晚地逐步填满。样本过少的夜晚会在任何计算之前被剔除，HRV 只取自夜间样本。
 
 就信号而言，{{fact:baseline.compare}} [S1]。在积累至少{{fact:baseline.minNights}}的数据之前，ONDA 不会给出任何提示，因此最初几周显示的是仍在建立中的个人基线，而不是评判。它要求的最低变化幅度是：{{fact:baseline.floors}}。
 

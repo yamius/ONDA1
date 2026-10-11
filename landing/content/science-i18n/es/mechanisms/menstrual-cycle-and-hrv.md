@@ -1,5 +1,5 @@
 ---
-sourceHash: 1c231ffc17a5
+sourceHash: d3c51d8c300f
 title: "Ciclo menstrual y HRV: por qué se mueve tu línea base"
 metaTitle: "Ciclo menstrual y HRV: qué cambia y por qué"
 metaDescription: "Cómo varía la variabilidad de la frecuencia cardíaca a lo largo del ciclo menstrual, por qué cada mujer tiene su propio patrón y qué cambian la anticoncepción hormonal y la menopausia."
@@ -50,7 +50,7 @@ evidenceMap:
     limitation: "Dos fases comparadas en once mujeres; registros de laboratorio cortos."
   - claim: "Los autores de la revisión dicen que las diferencias relacionadas con el ciclo deben tenerse en cuenta al mostrar la HRV a las mujeres."
     limitation: "Recomendación de los autores, no un método probado."
-  - claim: "ONDA construye su línea base a partir de valores nocturnos de Apple Health y compara cada noche con el corredor propio del usuario (datos baseline.window, baseline.compare)."
+  - claim: "ONDA construye su línea base a partir de valores de Apple Health y compara cada noche con el corredor propio del usuario (datos baseline.window, baseline.compare)."
     limitation: "Describe solo el funcionamiento de la app; no es evidencia de ninguna afirmación de salud."
 ---
 
@@ -108,6 +108,6 @@ Para otras causas de una lectura baja, consulta [¿por qué tengo la HRV baja?](
 
 ## En ONDA
 
-ONDA construye una línea base personal a partir de los valores nocturnos guardados en Apple Health, del Apple Watch o de otro dispositivo que sincronice allí datos cardíacos [S8]. La ventana es de {{fact:baseline.window}}, y {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, así que la tendencia de HRV de ONDA es una tendencia de SDNN. ONDA no hace seguimiento del ciclo menstrual, así que la línea base no se ajusta según el día del ciclo. Una HRV más baja en los días previos a la menstruación puede ser una fluctuación normal del ciclo y no una alarma. Si quieres ver tu propio patrón, anota tú misma el día del ciclo y compara los mismos días a lo largo de varios ciclos, en lugar de compararte con promedios por fase de otras mujeres ([tu línea base de HRV](/science/concepts/hrv-baseline); [cómo se mide la HRV](/science/measurements/heart-rate-variability)). ONDA no determina la fertilidad, la ovulación ni la anticoncepción a partir de la HRV, y no diagnostica ninguna afección.
+ONDA construye una línea base personal a partir de los valores guardados en Apple Health, del Apple Watch o de otro dispositivo que sincronice allí datos cardíacos [S8]. La ventana es de {{fact:baseline.window}}, y {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, así que la tendencia de HRV de ONDA es una tendencia de SDNN. ONDA no hace seguimiento del ciclo menstrual, así que la línea base no se ajusta según el día del ciclo. Una HRV más baja en los días previos a la menstruación puede ser una fluctuación normal del ciclo y no una alarma. Si quieres ver tu propio patrón, anota tú misma el día del ciclo y compara los mismos días a lo largo de varios ciclos, en lugar de compararte con promedios por fase de otras mujeres ([tu línea base de HRV](/science/concepts/hrv-baseline); [cómo se mide la HRV](/science/measurements/heart-rate-variability)). ONDA no determina la fertilidad, la ovulación ni la anticoncepción a partir de la HRV, y no diagnostica ninguna afección.
 
 > Información educativa, no un diagnóstico ni un tratamiento médico.

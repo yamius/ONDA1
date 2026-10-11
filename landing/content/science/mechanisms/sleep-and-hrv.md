@@ -263,11 +263,11 @@ evidenceMap:
     claimType: safety
     quote: "Polysomnography is the standard diagnostic test for the diagnosis of OSA in adult patients"
     limitation: "Clinical practice guideline for adults; does not evaluate consumer wearables."
-  - claim: "ONDA builds its baseline from nightly Apple Health values and compares each night with the user's own corridor (facts baseline.window, baseline.compare)."
+  - claim: "ONDA builds its baseline from values in Apple Health and compares each night with the user's own corridor (facts baseline.window, baseline.compare)."
     sources: [S16]
     class: established
     claimType: device
-    quote: "From nightly Apple Health values — HRV, resting heart rate and breathing rate — ONDA builds your personal baseline"
+    quote: "From values in Apple Health — HRV, resting heart rate and breathing rate — ONDA builds your personal baseline"
     limitation: "Describes app behaviour only; not evidence for any health claim."
 ---
 
@@ -347,6 +347,6 @@ Short sleep is only one cause of a low reading; see [why is my HRV low?](/scienc
 
 ## In ONDA
 
-ONDA builds its personal baseline from nightly values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S16]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV baseline is an SDNN baseline. ONDA does not stage sleep from HRV and does not diagnose sleep apnea, insomnia or any other condition.
+ONDA builds its personal baseline from values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S16]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV baseline is an SDNN baseline. ONDA does not stage sleep from HRV and does not diagnose sleep apnea, insomnia or any other condition.
 
 > Educational information, not a diagnosis or medical treatment.

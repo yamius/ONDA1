@@ -1,5 +1,5 @@
 ---
-sourceHash: "7b68393346e3"
+sourceHash: "572d635480f8"
 title: "RMSSD: was dieses HRV-Maß widerspiegelt und was nicht"
 metaTitle: "RMSSD: Definition, Bedeutung und Messung"
 metaDescription: "Die RMSSD ist ein HRV-Maß, das vagal vermittelte Veränderungen der Herzfrequenz widerspiegelt. Was sie misst, wie Wearables sie schätzen und was sie nicht verrät."
@@ -106,6 +106,6 @@ Was offen bleibt: Wie eng RMSSD-Werte von Verbrauchergeräten der EKG-basierten 
 
 ## In ONDA
 
-ONDA nutzt die nächtliche RMSSD als Referenzmaß in seinen HRV-Normtabellen und im [HRV-Rechner](/tools/hrv). Die nächtliche Baseline der App liest dagegen die HRV-Werte, die Apple Health speichert, und es gilt: {{fact:applewatch.hrv.healthkit}} [S9] – dieses Baseline-Signal beruht also auf der SDNN und nicht auf der RMSSD. Der Live-Wert während einer Übung ist ein Ersatzmaß, berechnet aus der Standardabweichung der Herzfrequenz – weder RMSSD noch SDNN –, und die Handykamera liefert den Puls, nicht die HRV. ONDA beschreibt und vergleicht deine eigenen Werte; es stellt keine Diagnosen. Siehe [was ONDA misst](/measurements).
+ONDA nutzt die nächtliche RMSSD als Referenzmaß in seinen HRV-Normtabellen und im [HRV-Rechner](/tools/hrv). Die Baseline der App liest dagegen die HRV-Werte, die Apple Health speichert, und es gilt: {{fact:applewatch.hrv.healthkit}} [S9] – dieses Baseline-Signal beruht also auf der SDNN und nicht auf der RMSSD. Der Live-Wert während einer Übung ist ein Ersatzmaß, berechnet aus der Standardabweichung der Herzfrequenz – weder RMSSD noch SDNN –, und die Handykamera liefert den Puls, nicht die HRV. ONDA beschreibt und vergleicht deine eigenen Werte; es stellt keine Diagnosen. Siehe [was ONDA misst](/measurements).
 
 > Bildungsinformation, keine Diagnose und keine medizinische Behandlung.

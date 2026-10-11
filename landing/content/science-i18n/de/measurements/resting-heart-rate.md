@@ -1,5 +1,5 @@
 ---
-sourceHash: 8eab4cb30ee9
+sourceHash: 5b7474fd9981
 title: "Ruhepuls: Was er widerspiegelt und wie er gemessen wird"
 metaTitle: "Ruhepuls: Bedeutung und Messung"
 metaDescription: "Der Ruhepuls ist deine niedrigste Herzfrequenz in Ruhe. Wie er gemessen wird, was normal heißt, was ihn bewegt und warum dein Verlauf mehr sagt als ein Wert."
@@ -111,6 +111,6 @@ Wie sich Ruhepuls und HRV bei hartem Training gemeinsam bewegen, beschreibt [Üb
 
 ## In ONDA
 
-Der Ruhepuls ist eines der drei nächtlichen Signale in der Baseline von ONDA, zusammen mit HRV und Atemfrequenz. ONDA liest ihn aus Apple Health – geschrieben von der Apple Watch oder von jedem Gerät, dessen App Herzdaten dorthin synchronisiert – und bildet deine persönliche Baseline über {{fact:baseline.window}}. Die App vergleicht jede Nacht mit deinem eigenen Korridor, nie mit einer Bevölkerungsnorm, und meldet eine Veränderung nur, wenn sie zusätzlich Mindestschwellen überschreitet: {{fact:baseline.floors}}. Ohne Uhr liefert die Handykamera einen Ruhepuls-Messwert, aber keine Baseline-Extras. ONDA beschreibt Veränderungen; die App stellt keine Diagnosen [S8]. Siehe [was ONDA misst](/measurements).
+Der Ruhepuls ist eines der drei Signale in der Baseline von ONDA, zusammen mit HRV und Atemfrequenz. ONDA liest ihn aus Apple Health – geschrieben von der Apple Watch oder von jedem Gerät, dessen App Herzdaten dorthin synchronisiert – und bildet deine persönliche Baseline über {{fact:baseline.window}}. Die App vergleicht jede Nacht mit deinem eigenen Korridor, nie mit einer Bevölkerungsnorm, und meldet eine Veränderung nur, wenn sie zusätzlich Mindestschwellen überschreitet: {{fact:baseline.floors}}. Ohne Uhr liefert die Handykamera einen Ruhepuls-Messwert, aber keine Baseline-Extras. ONDA beschreibt Veränderungen; die App stellt keine Diagnosen [S8]. Siehe [was ONDA misst](/measurements).
 
 > Bildungsinformation, keine Diagnose und keine medizinische Behandlung.

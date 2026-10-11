@@ -181,11 +181,11 @@ evidenceMap:
     claimType: physiology
     quote: "Administration of caffeine in the evening produces poor sleep."
     limitation: "Background statement of a small sleep-laboratory study with one large dose shortly before bed; spectral measures only."
-  - claim: "ONDA builds its baseline from nightly Apple Health values and compares each night with the user's own corridor (facts baseline.window, baseline.compare)."
+  - claim: "ONDA builds its baseline from values in Apple Health and compares each night with the user's own corridor (facts baseline.window, baseline.compare)."
     sources: [S8]
     class: established
     claimType: device
-    quote: "From nightly Apple Health values — HRV, resting heart rate and breathing rate — ONDA builds your personal baseline"
+    quote: "From values in Apple Health — HRV, resting heart rate and breathing rate — ONDA builds your personal baseline"
     limitation: "Describes app behaviour only; not evidence for any health claim."
 ---
 
@@ -247,6 +247,6 @@ Caffeine is one of several suspects behind a low reading; the others are mapped 
 
 ## In ONDA
 
-ONDA builds a personal baseline from nightly values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S8]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV trend is an SDNN trend. If you want to know whether your own coffee habit matters, compare nights after a late cup with your usual nights over a few weeks rather than reading one night. ONDA does not track caffeine, give advice on coffee or diagnose any condition.
+ONDA builds a personal baseline from values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S8]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV trend is an SDNN trend. If you want to know whether your own coffee habit matters, compare nights after a late cup with your usual nights over a few weeks rather than reading one night. ONDA does not track caffeine, give advice on coffee or diagnose any condition.
 
 > Educational information, not a diagnosis or medical treatment.

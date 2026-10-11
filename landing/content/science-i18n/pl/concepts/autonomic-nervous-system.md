@@ -114,6 +114,6 @@ W przypadku serca najczęstszym oknem jest [zmienność rytmu serca](/science/co
 
 ## W ONDA
 
-Praktyki ONDA opierają się na wolnym, prowadzonym oddychaniu, które działa na serce przez opisany wyżej rytm związany z oddechem. Z Apple Watch ONDA pokazuje na żywo wskaźnik koherencji — autorską miarę ONDA tego, jak płynna i rytmiczna jest oscylacja rytmu serca, a nie kliniczny pomiar HRV ani miarę równowagi autonomicznej czy napięcia nerwu błędnego. Nocne linie bazowe odczytują HRV zapisywane w Apple Health jako SDNN. ONDA nie mierzy bezpośrednio autonomicznego układu nerwowego i niczego nie diagnozuje. Zobacz, [co mierzy ONDA](/measurements).
+Praktyki ONDA opierają się na wolnym, prowadzonym oddychaniu, które działa na serce przez opisany wyżej rytm związany z oddechem. Z Apple Watch ONDA pokazuje na żywo wskaźnik koherencji — autorską miarę ONDA tego, jak płynna i rytmiczna jest oscylacja rytmu serca, a nie kliniczny pomiar HRV ani miarę równowagi autonomicznej czy napięcia nerwu błędnego. Linie bazowe odczytują HRV zapisywane w Apple Health jako SDNN. ONDA nie mierzy bezpośrednio autonomicznego układu nerwowego i niczego nie diagnozuje. Zobacz, [co mierzy ONDA](/measurements).
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "4c0358773469"
+sourceHash: "fe57b9925cd0"
 title: "Zmienność rytmu serca: czym jest, co odzwierciedla, a czym nie jest"
 metaTitle: "Zmienność rytmu serca: definicja i dane naukowe"
 metaDescription: "Zmienność rytmu serca to naturalne wahania odstępów między uderzeniami serca. Co ją kształtuje, co odzwierciedla i czego ci nie powie."
@@ -116,6 +116,6 @@ Okno pomiaru jest częścią znaczenia wyniku. Krótki zapis laboratoryjny, cał
 
 ## W ONDA
 
-Nocna osobista linia bazowa ONDA opiera się na wartościach HRV zapisanych w Apple Health — z Apple Watch lub dowolnego trackera, którego aplikacja synchronizuje tam dane o sercu. {{fact:applewatch.hrv.healthkit}} [S6], więc sygnał linii bazowej opiera się na SDNN, a nie na RMSSD, a porównania noc po nocy odbywają się względem twojego własnego korytarza, a nie celów populacyjnych. Odczyt na żywo w trakcie praktyki to wskaźnik zastępczy obliczany z odchylenia standardowego tętna, a nie RMSSD ani SDNN, a aparat telefonu podaje tętno, nie HRV. ONDA wykorzystuje ten sygnał do biofeedbacku — obserwowania, co dzieje się z twoim sygnałem fizjologicznym podczas praktyki — a [kalkulator HRV](/tools/hrv) pomaga osadzić liczby z Apple Watch w kontekście. ONDA opisuje i porównuje twoje własne wyniki; niczego nie diagnozuje. Zobacz, [co mierzy ONDA](/measurements).
+Osobista linia bazowa ONDA opiera się na wartościach HRV zapisanych w Apple Health — z Apple Watch lub dowolnego trackera, którego aplikacja synchronizuje tam dane o sercu. {{fact:applewatch.hrv.healthkit}} [S6], więc sygnał linii bazowej opiera się na SDNN, a nie na RMSSD, a porównania noc po nocy odbywają się względem twojego własnego korytarza, a nie celów populacyjnych. Odczyt na żywo w trakcie praktyki to wskaźnik zastępczy obliczany z odchylenia standardowego tętna, a nie RMSSD ani SDNN, a aparat telefonu podaje tętno, nie HRV. ONDA wykorzystuje ten sygnał do biofeedbacku — obserwowania, co dzieje się z twoim sygnałem fizjologicznym podczas praktyki — a [kalkulator HRV](/tools/hrv) pomaga osadzić liczby z Apple Watch w kontekście. ONDA opisuje i porównuje twoje własne wyniki; niczego nie diagnozuje. Zobacz, [co mierzy ONDA](/measurements).
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

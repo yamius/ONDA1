@@ -1,5 +1,5 @@
 ---
-sourceHash: 159ee240a2bb
+sourceHash: d38842ecad3c
 title: "Kofeina a HRV: co kawa robi, a czego nie robi"
 metaTitle: "Kofeina a HRV: czy kawa obniża Twoje HRV?"
 metaDescription: "Co badania mówią o kawie i zmienności rytmu serca w spoczynku i po wysiłku, czym różnią się napoje energetyczne i jak późna kofeina wpływa na HRV."
@@ -45,7 +45,7 @@ evidenceMap:
     limitation: "To samo jedno małe badanie; obserwacja przez cztery godziny; zdrowi ochotnicy."
   - claim: "Kofeina wieczorem zaburza sen, a duża dawka przed snem zmieniła w małym badaniu miary rytmu serca z uderzenia na uderzenie podczas snu REM."
     limitation: "Stwierdzenie wprowadzające z małego badania w laboratorium snu z jedną dużą dawką tuż przed snem; tylko miary spektralne."
-  - claim: "ONDA tworzy linię bazową z nocnych wartości z Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (fakty baseline.window, baseline.compare)."
+  - claim: "ONDA tworzy linię bazową z wartości z Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (fakty baseline.window, baseline.compare)."
     limitation: "Opisuje wyłącznie działanie aplikacji; nie jest dowodem na żadne twierdzenie zdrowotne."
 ---
 
@@ -107,6 +107,6 @@ Kofeina to tylko jedna z możliwych przyczyn niskiego odczytu; pozostałe zebran
 
 ## W ONDA
 
-ONDA tworzy osobistą linię bazową z nocnych wartości zapisanych w Apple Health — z Apple Watch lub innego urządzenia, które synchronizuje tam dane o sercu [S8]. Okno wynosi {{fact:baseline.window}}, a {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, więc trend HRV w ONDA to trend SDNN. Jeśli chcesz sprawdzić, czy Twój własny nawyk picia kawy ma znaczenie, porównuj przez kilka tygodni noce po późnej filiżance ze swoimi zwykłymi nocami, zamiast odczytywać jedną noc. ONDA nie śledzi kofeiny, nie doradza w sprawie kawy i nie diagnozuje żadnych schorzeń.
+ONDA tworzy osobistą linię bazową z wartości zapisanych w Apple Health — z Apple Watch lub innego urządzenia, które synchronizuje tam dane o sercu [S8]. Okno wynosi {{fact:baseline.window}}, a {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, więc trend HRV w ONDA to trend SDNN. Jeśli chcesz sprawdzić, czy Twój własny nawyk picia kawy ma znaczenie, porównuj przez kilka tygodni noce po późnej filiżance ze swoimi zwykłymi nocami, zamiast odczytywać jedną noc. ONDA nie śledzi kofeiny, nie doradza w sprawie kawy i nie diagnozuje żadnych schorzeń.
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

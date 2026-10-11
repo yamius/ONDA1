@@ -1,5 +1,5 @@
 ---
-sourceHash: f592ea962f6b
+sourceHash: e9bb7788219f
 title: "HRV und Herzfrequenz im Schlaf: Warum die Nacht das beste Messfenster ist"
 metaTitle: "HRV und Herzfrequenz im Schlaf"
 metaDescription: "Was mit Herzfrequenz und HRV über die Nacht und die Schlafstadien passiert, warum Nachtwerte das stabilste Fenster sind und was Wearables sagen können und was nicht."
@@ -57,7 +57,7 @@ evidenceMap:
     limitation: "Heterogene Studien mit überwiegend hohem Verzerrungsrisiko; keine Metaanalyse möglich."
   - claim: "Schlafapnoe wird mit Polysomnografie oder einer technisch adäquaten Schlafapnoe-Untersuchung zu Hause diagnostiziert, nicht allein mit Fragebögen oder Vorhersagewerkzeugen."
     limitation: "Klinische Praxisleitlinie für Erwachsene; Verbraucher-Wearables bewertet sie nicht."
-  - claim: "ONDA bildet seine Baseline aus nächtlichen Werten in Apple Health und vergleicht jede Nacht mit dem eigenen Korridor der Nutzerin oder des Nutzers."
+  - claim: "ONDA bildet seine Baseline aus Werten in Apple Health und vergleicht jede Nacht mit dem eigenen Korridor der Nutzerin oder des Nutzers."
     limitation: "Beschreibt nur das Verhalten der App; kein Beleg für eine gesundheitliche Aussage."
 ---
 
@@ -137,6 +137,6 @@ Kurzer Schlaf ist nur eine Ursache eines niedrigen Werts; siehe [Warum ist meine
 
 ## In ONDA
 
-ONDA bildet deine persönliche Baseline aus nächtlichen Werten, die in Apple Health gespeichert sind – von der Apple Watch oder einem anderen Gerät, das Herzdaten dorthin synchronisiert [S16]. Das Fenster beträgt {{fact:baseline.window}}, und {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, daher ist die HRV-Baseline von ONDA eine SDNN-Baseline. ONDA bestimmt keine Schlafstadien aus der HRV und diagnostiziert weder Schlafapnoe noch Insomnie oder eine andere Erkrankung.
+ONDA bildet deine persönliche Baseline aus Werten, die in Apple Health gespeichert sind – von der Apple Watch oder einem anderen Gerät, das Herzdaten dorthin synchronisiert [S16]. Das Fenster beträgt {{fact:baseline.window}}, und {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, daher ist die HRV-Baseline von ONDA eine SDNN-Baseline. ONDA bestimmt keine Schlafstadien aus der HRV und diagnostiziert weder Schlafapnoe noch Insomnie oder eine andere Erkrankung.
 
 > Bildungsinformation, keine Diagnose und keine medizinische Behandlung.

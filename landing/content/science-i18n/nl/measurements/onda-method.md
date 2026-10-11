@@ -1,5 +1,5 @@
 ---
-sourceHash: c9a1794847a3
+sourceHash: eea148772b58
 title: "Hoe ONDA de signalen van je lichaam meet en interpreteert"
 metaTitle: "Hoe ONDA je lichaamssignalen meet en leest"
 metaDescription: "Waar ONDA zijn gegevens vandaan haalt, hoe het je baseline en signalen opbouwt, wat op je telefoon blijft en waar de grenzen van elk getal liggen."
@@ -49,7 +49,7 @@ ONDA is een app voor ademhaling en biofeedback. Het leest signalen die andere ap
 
 ## Hoe wordt je baseline opgebouwd?
 
-De baseline is het bereik waarin je eigen lichaam zich gewoonlijk bevindt. ONDA bouwt haar op over {{fact:baseline.window}} aan nachtelijke waarden uit Apple Health [S1, S4]. Vanaf versie 1.9.3 toont de HRV-grafiek dat hele venster zodra je toegang tot Apple Health geeft, in plaats van zich nacht voor nacht te vullen. Nachten met te weinig metingen vallen weg voordat er iets wordt berekend, en HRV wordt alleen uit nachtelijke metingen genomen.
+De baseline is het bereik waarin je eigen lichaam zich gewoonlijk bevindt. ONDA bouwt haar op over {{fact:baseline.window}} aan waarden uit Apple Health [S1, S4]. Vanaf versie 1.9.3 toont de HRV-grafiek dat hele venster zodra je toegang tot Apple Health geeft, in plaats van zich nacht voor nacht te vullen. Nachten met te weinig metingen vallen weg voordat er iets wordt berekend, en HRV wordt alleen uit nachtelijke metingen genomen.
 
 Voor signalen geldt: {{fact:baseline.compare}} [S1]. ONDA blijft stil tot er minstens {{fact:baseline.minNights}} zijn, dus in de eerste weken zie je een baseline die nog wordt opgebouwd, geen oordeel. De minimale veranderingen die het vereist, zijn: {{fact:baseline.floors}}.
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: 8eab4cb30ee9
+sourceHash: 5b7474fd9981
 title: "Tętno spoczynkowe: co odzwierciedla i jak się je mierzy"
 metaTitle: "Tętno spoczynkowe: znaczenie i pomiar"
 metaDescription: "Tętno spoczynkowe to najniższe tętno w spoczynku. Jak się je mierzy, co znaczy „norma”, co je zmienia i czemu własny trend mówi więcej niż jedna liczba."
@@ -110,6 +110,6 @@ O tym, jak tętno spoczynkowe i HRV zmieniają się razem przy intensywnym treni
 
 ## W ONDA
 
-Tętno spoczynkowe to jeden z trzech nocnych sygnałów w linii bazowej ONDA, obok HRV i częstości oddechu. ONDA odczytuje je z Apple Health — gdzie zapisuje je Apple Watch lub dowolne urządzenie, którego aplikacja synchronizuje tam dane o sercu — i buduje twoją osobistą linię bazową z okresu {{fact:baseline.window}}. Każdą noc porównuje z twoim własnym korytarzem, nigdy z normą populacyjną, i sygnalizuje zmianę tylko wtedy, gdy przekracza ona także minimalne progi: {{fact:baseline.floors}}. Bez zegarka aparat telefonu daje odczyt tętna spoczynkowego, ale bez dodatkowych funkcji linii bazowej. ONDA opisuje zmiany; niczego nie diagnozuje [S8]. Zobacz, [co mierzy ONDA](/measurements).
+Tętno spoczynkowe to jeden z trzech sygnałów w linii bazowej ONDA, obok HRV i częstości oddechu. ONDA odczytuje je z Apple Health — gdzie zapisuje je Apple Watch lub dowolne urządzenie, którego aplikacja synchronizuje tam dane o sercu — i buduje twoją osobistą linię bazową z okresu {{fact:baseline.window}}. Każdą noc porównuje z twoim własnym korytarzem, nigdy z normą populacyjną, i sygnalizuje zmianę tylko wtedy, gdy przekracza ona także minimalne progi: {{fact:baseline.floors}}. Bez zegarka aparat telefonu daje odczyt tętna spoczynkowego, ale bez dodatkowych funkcji linii bazowej. ONDA opisuje zmiany; niczego nie diagnozuje [S8]. Zobacz, [co mierzy ONDA](/measurements).
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

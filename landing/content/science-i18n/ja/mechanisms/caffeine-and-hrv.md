@@ -1,5 +1,5 @@
 ---
-sourceHash: 159ee240a2bb
+sourceHash: d38842ecad3c
 title: "カフェインとHRV：コーヒーがすること、しないこと"
 metaTitle: "カフェインとHRV：コーヒーでHRVは下がるのか？"
 metaDescription: "安静時と運動後のコーヒーと心拍変動について研究が示すこと、エナジードリンクの違い、そして遅い時間のカフェインがHRVに届く経路を解説します。"
@@ -44,7 +44,7 @@ evidenceMap:
     limitation: "同じ単一の小規模試験。追跡は四時間。健康なボランティア。"
   - claim: "夕方のカフェインは睡眠を妨げ、小規模研究では就寝前の多量の摂取がレム睡眠中の拍動ごとの心臓指標を変化させました。"
     limitation: "就寝直前に多量を一回投与した小規模な睡眠実験室研究の背景記述。スペクトル指標のみ。"
-  - claim: "ONDAはApple Healthの夜間の値からベースラインを作り、毎晩をユーザー自身のコリドーと比較します（facts baseline.window, baseline.compare）。"
+  - claim: "ONDAはApple Healthの値からベースラインを作り、毎晩をユーザー自身のコリドーと比較します（facts baseline.window, baseline.compare）。"
     limitation: "アプリの動作を説明するのみで、健康に関する主張の根拠ではない。"
 ---
 
@@ -106,6 +106,6 @@ evidenceMap:
 
 ## ONDAでは
 
-ONDAは、Apple Healthに保存された夜間の値から個人のベースラインを作ります。値はApple Watch、または心臓のデータをそこに同期する他の機器から得られます [S8]。期間は{{fact:baseline.window}}で、{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}。そのため、ONDAのHRVの推移はSDNNの推移です。自分のコーヒー習慣が影響しているか知りたい場合は、一晩の数値を読むのではなく、数週間にわたって遅い時間に一杯飲んだ夜といつもの夜を比べてください。ONDAはカフェインを記録せず、コーヒーについて助言せず、いかなる病気も診断しません。
+ONDAは、Apple Healthに保存された値から個人のベースラインを作ります。値はApple Watch、または心臓のデータをそこに同期する他の機器から得られます [S8]。期間は{{fact:baseline.window}}で、{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}。そのため、ONDAのHRVの推移はSDNNの推移です。自分のコーヒー習慣が影響しているか知りたい場合は、一晩の数値を読むのではなく、数週間にわたって遅い時間に一杯飲んだ夜といつもの夜を比べてください。ONDAはカフェインを記録せず、コーヒーについて助言せず、いかなる病気も診断しません。
 
 > 教育目的の情報であり、診断や医療行為ではありません。

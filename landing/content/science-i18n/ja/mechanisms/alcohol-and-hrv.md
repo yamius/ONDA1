@@ -1,5 +1,5 @@
 ---
-sourceHash: 285e3bfba44f
+sourceHash: 9e29577a7288
 title: "アルコールとHRV：お酒はあなたの夜に何をもたらすのか"
 metaTitle: "アルコールとHRV：飲酒した夜"
 metaDescription: "飲酒後に夜間のHRVが下がり安静時心拍数が上がる理由、量とタイミングの影響、そしてアルコールについて研究がまだわかっていないことを解説します。"
@@ -46,7 +46,7 @@ evidenceMap:
     limitation: "著者による注意書きであり、限界をくり返したもの。"
   - claim: "ナラティブレビューは、急性の多量飲酒と慢性的な大量飲酒は心拍数と自律神経機能を損なう一方、軽度から中等度の飲酒についての結果は一致していないと結論づけている。"
     limitation: "システマティックレビューやメタアナリシスではなく、ナラティブレビュー。HRVに特化したものではなく、心臓のアウトカム全般を扱う。"
-  - claim: "ONDAは、Apple Healthの夜間の値からベースラインをつくり、毎晩をユーザー自身のコリドーと比較する（ファクト baseline.window、baseline.compare）。"
+  - claim: "ONDAは、Apple Healthの値からベースラインをつくり、毎晩をユーザー自身のコリドーと比較する（ファクト baseline.window、baseline.compare）。"
     limitation: "アプリの動作を説明しているだけで、健康に関するいかなる主張の根拠でもない。"
 ---
 
@@ -103,6 +103,6 @@ evidenceMap:
 
 ## ONDAでは
 
-ONDAは、Apple Healthに保存された夜間の値から個人のベースラインをつくります。値はApple Watch、または心拍データをそこに同期するほかの機器から得られます [S9]。期間は{{fact:baseline.window}}です。{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}。そのため、ONDAのHRVの推移はSDNNの推移です。飲酒した夜は、この比較のなかでHRVの低下と安静時心拍数の上昇として現れることがあります。これは上で説明したふつうの反応であり、心配する理由ではありません。一晩だけでなく、数晩にわたる推移を見てください。ONDAはアルコールを記録せず、飲酒についての助言もせず、いかなる病気も診断しません。
+ONDAは、Apple Healthに保存された値から個人のベースラインをつくります。値はApple Watch、または心拍データをそこに同期するほかの機器から得られます [S9]。期間は{{fact:baseline.window}}です。{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}。そのため、ONDAのHRVの推移はSDNNの推移です。飲酒した夜は、この比較のなかでHRVの低下と安静時心拍数の上昇として現れることがあります。これは上で説明したふつうの反応であり、心配する理由ではありません。一晩だけでなく、数晩にわたる推移を見てください。ONDAはアルコールを記録せず、飲酒についての助言もせず、いかなる病気も診断しません。
 
 > 教育目的の情報であり、診断や医療行為ではありません。

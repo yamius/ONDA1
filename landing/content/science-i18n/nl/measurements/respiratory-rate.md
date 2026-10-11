@@ -1,5 +1,5 @@
 ---
-sourceHash: 9528e5383d6f
+sourceHash: 94f41b941e62
 title: "Ademfrequentie in rust: wat ze weerspiegelt en hoe je haar meet"
 metaTitle: "Ademfrequentie: betekenis en meting"
 metaDescription: "Je ademfrequentie is het aantal ademhalingen per minuut in rust. Hoe je haar meet, wat haar beïnvloedt en waarom je eigen nachttrend meer zegt dan één meting."
@@ -46,7 +46,7 @@ evidenceMap:
     limitation: "Eén retrospectieve studie met één merk wearable bij mensen die al klachten hadden; kleine validatiesets; meerdere auteurs in dienst van of gefinancierd door de fabrikant. Geen diagnostische test."
   - claim: "In een grote zelfgeselecteerde groep gebruikers van wearables met COVID waren ademfrequentie en hartslag door de ziekte meestal verhoogd, terwijl de HRV daalde."
     limitation: "Eén observationele studie bij gebruikers van één fabrikant met zelf gerapporteerde diagnoses; alle auteurs gefinancierd door de fabrikant. Geen diagnostische test."
-  - claim: "ONDA leest de ademfrequentie uit Apple Health als een van de drie nachtelijke signalen van de baseline, vergelijkt nachten met een persoonlijke bandbreedte over het baselinevenster en met minimale drempels, en stelt geen diagnoses."
+  - claim: "ONDA leest de ademfrequentie uit Apple Health als een van de drie signalen van de baseline, vergelijkt nachten met een persoonlijke bandbreedte over het baselinevenster en met minimale drempels, en stelt geen diagnoses."
     limitation: "Beschrijft alleen het gedrag van de app; het is geen bewijs voor een gezondheidsclaim of voor de nauwkeurigheid van de waarden."
 ---
 
@@ -112,6 +112,6 @@ Geen van beide studies is een gevalideerde diagnostische test. Beide wijzen op h
 
 ## In ONDA
 
-De ademfrequentie is een van de drie nachtelijke signalen in de baseline van ONDA, samen met de rusthartslag en HRV. ONDA leest de ademfrequentie uit Apple Health — vastgelegd door de Apple Watch of door elk apparaat waarvan de app haar daarheen synchroniseert — en bouwt je persoonlijke baseline op over {{fact:baseline.window}}. Elke nacht wordt vergeleken met je eigen bandbreedte, nooit met een norm voor de bevolking, en een verandering wordt alleen gemeld als ze ook boven minimale drempels uitkomt: {{fact:baseline.floors}}. ONDA berekent de ademfrequentie tijdens de slaap niet zelf, doet geen uitspraak over hoe nauwkeurig ze is en stelt geen diagnoses [S14]. Meer achtergrond vind je in [je ademfrequentie: het getal van de nacht](/articles/respiratory-rate-hidden-signal) en [wat ONDA meet](/measurements).
+De ademfrequentie is een van de drie signalen in de baseline van ONDA, samen met de rusthartslag en HRV. ONDA leest de ademfrequentie uit Apple Health — vastgelegd door de Apple Watch of door elk apparaat waarvan de app haar daarheen synchroniseert — en bouwt je persoonlijke baseline op over {{fact:baseline.window}}. Elke nacht wordt vergeleken met je eigen bandbreedte, nooit met een norm voor de bevolking, en een verandering wordt alleen gemeld als ze ook boven minimale drempels uitkomt: {{fact:baseline.floors}}. ONDA berekent de ademfrequentie tijdens de slaap niet zelf, doet geen uitspraak over hoe nauwkeurig ze is en stelt geen diagnoses [S14]. Meer achtergrond vind je in [je ademfrequentie: het getal van de nacht](/articles/respiratory-rate-hidden-signal) en [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

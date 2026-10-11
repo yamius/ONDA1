@@ -1,5 +1,5 @@
 ---
-sourceHash: "f848794fbee9"
+sourceHash: "290b64b3dec0"
 title: "SDNN：这项 HRV 指标测量什么，又不测量什么"
 metaTitle: "SDNN：定义、含义与 Apple 的选择"
 metaDescription: "SDNN 是 Apple Health 存储的 HRV 指标。本文介绍它测量什么、与 RMSSD 有何不同，以及为什么这两种数值无法直接相互比较。"
@@ -114,6 +114,6 @@ Apple 正是在这里登场的。对 Apple Watch 用户的一个实际影响是�
 
 ## 在 ONDA 中
 
-ONDA 基于年龄的 HRV 表是夜间 RMSSD 表，但 [HRV 计算器](/tools/hrv)另设有针对 Apple Watch 数值的 SDNN 模式，其分档来自对健康成年人的短时静息心电图研究。应用自身的夜间个人基线建立在 Apple Health 中存储的 HRV 数值之上——来自 Apple Watch，或来自将心脏数据同步到那里的其他设备。文档对此说得很直白：{{fact:applewatch.hrv.healthkit}} [S8]——因此这个基线信号基于 SDNN 而非 RMSSD。练习过程中显示的实时读数，是由心率标准差计算出的替代值，既不是 SDNN 也不是 RMSSD；手机摄像头提供的是脉搏，而不是 HRV。ONDA 描述并比较你自己的数字，不做任何诊断。参见 [ONDA 测量什么](/measurements)。
+ONDA 基于年龄的 HRV 表是夜间 RMSSD 表，但 [HRV 计算器](/tools/hrv)另设有针对 Apple Watch 数值的 SDNN 模式，其分档来自对健康成年人的短时静息心电图研究。应用自身的个人基线建立在 Apple Health 中存储的 HRV 数值之上——来自 Apple Watch，或来自将心脏数据同步到那里的其他设备。文档对此说得很直白：{{fact:applewatch.hrv.healthkit}} [S8]——因此这个基线信号基于 SDNN 而非 RMSSD。练习过程中显示的实时读数，是由心率标准差计算出的替代值，既不是 SDNN 也不是 RMSSD；手机摄像头提供的是脉搏，而不是 HRV。ONDA 描述并比较你自己的数字，不做任何诊断。参见 [ONDA 测量什么](/measurements)。
 
 > 本文为科普信息，不构成诊断或医学治疗。

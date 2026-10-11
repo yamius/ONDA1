@@ -25,18 +25,18 @@ export const HOW_IT_WORKS_I18N: Record<'en' | 'ru' | 'es', HiwCopy> = {
   en: {
     metaTitle: 'How ONDA Works — HRV, Coherence & the Biofeedback Loop | ONDA Life',
     metaDescription:
-      'How ONDA works: pulse from an Apple Watch or the iPhone camera, HRV (SDNN) read from Apple Health, a live coherence score (Apple Watch) and a nightly personal baseline — explained with its limits.',
+      'How ONDA works: pulse from an Apple Watch or the iPhone camera, HRV (SDNN) read from Apple Health, a live coherence score (Apple Watch) and a personal baseline — explained with its limits.',
     kicker: '[ HOW ONDA WORKS ]',
     h1: 'How ONDA works.',
     heroLead:
-      'ONDA turns your heartbeat into a live signal you can train against. Here is the loop — from your pulse to HRV, the coherence score you see on screen and your nightly baseline — and, just as importantly, what each number is and is not.',
+      'ONDA turns your heartbeat into a live signal you can train against. Here is the loop — from your pulse to HRV, the coherence score you see on screen and your personal baseline — and, just as importantly, what each number is and is not.',
     loopHeading: 'The biofeedback loop',
     loop: [
       { n: '1', title: 'Signal in', body: 'ONDA reads your heartbeat — from the Apple Watch optical sensor (or Apple Health), or from the iPhone camera measuring the colour change in your fingertip (photoplethysmography, PPG).' },
       { n: '2', title: 'Pulse, not single beats', body: 'The iPhone camera estimates your pulse rate (heart rate) — it does not detect individual heartbeats and cannot measure HRV. With an Apple Watch, ONDA receives heart-rate readings from the watch.' },
       { n: '3', title: 'HRV from Apple Health', body: 'ONDA does not compute HRV itself. It reads HRV ready-made from Apple Health as SDNN — the value an Apple Watch (or another device that writes to Apple Health) records there.' },
       { n: '4', title: 'Live feedback', body: 'The current rhythm is shown live — plus a coherence score with an Apple Watch — so you can see your body respond to each breath, the biofeedback loop that makes ONDA an active trainer, not a passive tracker.' },
-      { n: '5', title: 'Your nightly baseline', body: 'From nightly Apple Health values — HRV, resting heart rate and breathing rate — ONDA builds your personal baseline over the last 14 days. It compares each night with your own corridor — the average of your recent nights plus or minus one standard deviation — and flags a night only when it is at least 1.5 standard deviations outside and has changed by a minimum amount.' },
+      { n: '5', title: 'Your personal baseline', body: 'From values in Apple Health — HRV, resting heart rate and breathing rate — ONDA builds your personal baseline over the last 14 days. It compares each night with your own corridor — the average of your recent nights plus or minus one standard deviation — and flags a night only when it is at least 1.5 standard deviations outside and has changed by a minimum amount. How the values are taken: the 14-day card averages all of a day’s samples, day by day. For signals, HRV counts only samples recorded before 09:00, at least three a day; resting heart rate is Apple’s daily value; breathing rate uses Apple’s samples, which are usually recorded during sleep.' },
     ],
     hrvHeading: 'Where ONDA’s HRV comes from',
     hrvParas: [
@@ -65,18 +65,18 @@ export const HOW_IT_WORKS_I18N: Record<'en' | 'ru' | 'es', HiwCopy> = {
   ru: {
     metaTitle: 'Как работает ONDA — HRV, когерентность и петля биофидбека | ONDA Life',
     metaDescription:
-      'Как работает ONDA: пульс с Apple Watch или камеры iPhone, HRV (SDNN) из Apple Health, живой показатель когерентности (Apple Watch) и ночной персональный базовый уровень — с оговорками о пределах.',
+      'Как работает ONDA: пульс с Apple Watch или камеры iPhone, HRV (SDNN) из Apple Health, живой показатель когерентности (Apple Watch) и персональный базовый уровень — с оговорками о пределах.',
     kicker: '[ КАК РАБОТАЕТ ONDA ]',
     h1: 'Как работает ONDA.',
     heroLead:
-      'ONDA превращает ваше сердцебиение в живой сигнал, против которого можно тренироваться. Вот петля — от пульса к HRV, показателю когерентности на экране и ночному базовому уровню — и, что не менее важно, что каждое число означает, а что нет.',
+      'ONDA превращает ваше сердцебиение в живой сигнал, против которого можно тренироваться. Вот петля — от пульса к HRV, показателю когерентности на экране и персональному базовому уровню — и, что не менее важно, что каждое число означает, а что нет.',
     loopHeading: 'Петля биофидбека',
     loop: [
       { n: '1', title: 'Сигнал на входе', body: 'ONDA считывает сердцебиение — с оптического датчика Apple Watch (или из Apple Health), либо с камеры iPhone, измеряющей изменение цвета кончика пальца (фотоплетизмография, PPG).' },
       { n: '2', title: 'Пульс, а не отдельные удары', body: 'Камера iPhone оценивает частоту пульса — отдельные удары сердца она не различает и HRV измерить не может. С Apple Watch ONDA получает значения пульса с часов.' },
       { n: '3', title: 'HRV из Apple Health', body: 'ONDA не вычисляет HRV сама. Она берёт готовый HRV из Apple Health в виде SDNN — значение, которое туда записывают Apple Watch (или другое устройство, пишущее в Apple Health).' },
       { n: '4', title: 'Живая обратная связь', body: 'Текущий ритм показывается вживую — а с Apple Watch ещё и показатель когерентности, — так что вы видите, как тело отвечает на каждый вдох, — та самая петля биофидбека, что делает ONDA активным тренажёром, а не пассивным трекером.' },
-      { n: '5', title: 'Ночной базовый уровень', body: 'По ночным значениям из Apple Health — HRV, пульсу в покое и частоте дыхания — ONDA строит ваш персональный базовый уровень за последние 14 дней. Каждую ночь она сравнивает с вашим собственным коридором — средним за последние ночи плюс-минус одно стандартное отклонение — и отмечает ночь, только если та выходит за него не менее чем на 1,5 стандартного отклонения и изменилась на минимальную величину.' },
+      { n: '5', title: 'Персональный базовый уровень', body: 'По значениям из Apple Health — HRV, пульсу в покое и частоте дыхания — ONDA строит ваш персональный базовый уровень за последние 14 дней. Каждую ночь она сравнивает с вашим собственным коридором — средним за последние ночи плюс-минус одно стандартное отклонение — и отмечает ночь, только если та выходит за него не менее чем на 1,5 стандартного отклонения и изменилась на минимальную величину. Как берутся значения: карточка за 14 дней усредняет все записи за день, день за днём. Для сигналов HRV учитывается только по записям до 09:00, не меньше трёх в день; пульс в покое — дневное значение Apple; частота дыхания — записи Apple, которые обычно делаются во сне.' },
     ],
     hrvHeading: 'Откуда ONDA берёт HRV',
     hrvParas: [
@@ -105,18 +105,18 @@ export const HOW_IT_WORKS_I18N: Record<'en' | 'ru' | 'es', HiwCopy> = {
   es: {
     metaTitle: 'Cómo funciona ONDA — HRV, coherencia y el bucle de biofeedback | ONDA Life',
     metaDescription:
-      'Cómo funciona ONDA: el pulso del Apple Watch o de la cámara del iPhone, la HRV (SDNN) leída de Apple Salud, una puntuación de coherencia en vivo (Apple Watch) y una línea base personal nocturna — con sus límites.',
+      'Cómo funciona ONDA: el pulso del Apple Watch o de la cámara del iPhone, la HRV (SDNN) leída de Apple Salud, una puntuación de coherencia en vivo (Apple Watch) y una línea base personal — con sus límites.',
     kicker: '[ CÓMO FUNCIONA ONDA ]',
     h1: 'Cómo funciona ONDA.',
     heroLead:
-      'ONDA convierte tu latido en una señal en vivo contra la que puedes entrenar. Aquí está el bucle — de tu pulso a la HRV, la puntuación de coherencia que ves en pantalla y tu línea base nocturna — y, igual de importante, qué es y qué no es cada número.',
+      'ONDA convierte tu latido en una señal en vivo contra la que puedes entrenar. Aquí está el bucle — de tu pulso a la HRV, la puntuación de coherencia que ves en pantalla y tu línea base personal — y, igual de importante, qué es y qué no es cada número.',
     loopHeading: 'El bucle de biofeedback',
     loop: [
       { n: '1', title: 'Señal de entrada', body: 'ONDA lee tu latido — desde el sensor óptico del Apple Watch (o Apple Salud), o desde la cámara del iPhone que mide el cambio de color en tu dedo (fotopletismografía, PPG).' },
       { n: '2', title: 'Pulso, no latidos sueltos', body: 'La cámara del iPhone estima tu pulso (frecuencia cardíaca): no detecta latidos individuales y no puede medir la HRV. Con un Apple Watch, ONDA recibe las lecturas de frecuencia cardíaca del reloj.' },
       { n: '3', title: 'HRV desde Apple Salud', body: 'ONDA no calcula la HRV por sí misma. La lee ya calculada de Apple Salud como SDNN, el valor que registra allí un Apple Watch (u otro dispositivo que escribe en Apple Salud).' },
       { n: '4', title: 'Feedback en vivo', body: 'El ritmo actual se muestra en vivo — y, con un Apple Watch, una puntuación de coherencia — para que veas cómo tu cuerpo responde a cada respiración: el bucle de biofeedback que hace de ONDA un entrenador activo, no un rastreador pasivo.' },
-      { n: '5', title: 'Tu línea base nocturna', body: 'Con los valores nocturnos de Apple Salud — HRV, frecuencia cardíaca en reposo y frecuencia respiratoria — ONDA construye tu línea base personal de los últimos 14 días. Compara cada noche con tu propio corredor — la media de tus noches recientes más o menos una desviación estándar — y marca una noche solo cuando queda al menos 1,5 desviaciones estándar fuera y ha cambiado en una cantidad mínima.' },
+      { n: '5', title: 'Tu línea base personal', body: 'Con los valores de Apple Salud — HRV, frecuencia cardíaca en reposo y frecuencia respiratoria — ONDA construye tu línea base personal de los últimos 14 días. Compara cada noche con tu propio corredor — la media de tus noches recientes más o menos una desviación estándar — y marca una noche solo cuando queda al menos 1,5 desviaciones estándar fuera y ha cambiado en una cantidad mínima. Cómo se toman los valores: la tarjeta de 14 días promedia todas las muestras de cada día. Para las señales, la HRV cuenta solo con muestras registradas antes de las 09:00, al menos tres al día; la frecuencia cardíaca en reposo es el valor diario de Apple; la frecuencia respiratoria usa las muestras de Apple, que suelen registrarse durante el sueño.' },
     ],
     hrvHeading: 'De dónde saca ONDA la HRV',
     hrvParas: [

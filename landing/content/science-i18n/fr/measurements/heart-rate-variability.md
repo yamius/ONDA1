@@ -1,5 +1,5 @@
 ---
-sourceHash: "2cecd6f1dabf"
+sourceHash: "914a9faa457f"
 title: "Peut-on se fier à la HRV d’une montre ou d’une bague connectée ?"
 metaTitle: "HRV d’une montre ou d’une bague : fiable ou non ?"
 metaDescription: "La HRV d’une montre ou d’une bague est une estimation tirée du pouls, pas un ECG. Où les deux concordent, où elles divergent, comment lire vos chiffres."
@@ -165,6 +165,6 @@ Les faits propres à l’écosystème Apple ont leur place ici en tant que faits
 
 ## Dans ONDA
 
-ONDA se situe du côté grand public de ces données, et sa documentation indique clairement d’où vient chaque chiffre. La référence personnelle (baseline) nocturne repose sur les valeurs de HRV inscrites dans Apple Health — par l’Apple Watch ou par tout autre appareil dont l’application y synchronise les données cardiaques — et {{fact:applewatch.hrv.healthkit}} [S6]. La valeur en direct affichée pendant une pratique est un indicateur de substitution calculé à partir de l’écart type de la fréquence cardiaque, et non une RMSSD ou un SDNN ; la caméra du téléphone donne le pouls, pas la HRV ; et le score de cohérence disponible avec l’Apple Watch est un score de feedback propriétaire, pas une mesure clinique de la HRV. ONDA utilise ce signal pour le biofeedback : la question n’est pas seulement ce que vaut le chiffre, mais ce qu’il devient pendant que vous pratiquez. L’application compare chaque nuit à votre propre couloir récent et ne pose aucun diagnostic. Voir [ce que mesure ONDA](/measurements).
+ONDA se situe du côté grand public de ces données, et sa documentation indique clairement d’où vient chaque chiffre. La référence personnelle (baseline) repose sur les valeurs de HRV inscrites dans Apple Health — par l’Apple Watch ou par tout autre appareil dont l’application y synchronise les données cardiaques — et {{fact:applewatch.hrv.healthkit}} [S6]. La valeur en direct affichée pendant une pratique est un indicateur de substitution calculé à partir de l’écart type de la fréquence cardiaque, et non une RMSSD ou un SDNN ; la caméra du téléphone donne le pouls, pas la HRV ; et le score de cohérence disponible avec l’Apple Watch est un score de feedback propriétaire, pas une mesure clinique de la HRV. ONDA utilise ce signal pour le biofeedback : la question n’est pas seulement ce que vaut le chiffre, mais ce qu’il devient pendant que vous pratiquez. L’application compare chaque nuit à votre propre couloir récent et ne pose aucun diagnostic. Voir [ce que mesure ONDA](/measurements).
 
 > Information éducative, pas un diagnostic ni un traitement médical.

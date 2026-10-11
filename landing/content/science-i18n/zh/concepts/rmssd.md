@@ -1,5 +1,5 @@
 ---
-sourceHash: "7b68393346e3"
+sourceHash: "572d635480f8"
 title: "RMSSD：这项 HRV 指标反映什么，又不反映什么"
 metaTitle: "RMSSD：定义、含义与测量"
 metaDescription: "RMSSD 是一项反映迷走神经介导的心率变化的 HRV 指标。本文介绍它测量什么、可穿戴设备如何估算它，以及它无法告诉你什么。"
@@ -100,6 +100,6 @@ RMSSD 是衡量[心率变异性](/glossary/heart-rate-variability)（HRV）的�
 
 ## 在 ONDA 中
 
-ONDA 在其 HRV 常模表和 [HRV 计算器](/tools/hrv)中，以夜间 RMSSD 作为参考指标。不过，应用自身的夜间个人基线读取的是 Apple Health 中存储的 HRV 数值，而{{fact:applewatch.hrv.healthkit}} [S9]——因此这个基线信号基于 SDNN 而非 RMSSD。练习过程中显示的实时读数，是由心率标准差计算出的替代值，既不是 RMSSD 也不是 SDNN；手机摄像头提供的是脉搏，而不是 HRV。ONDA 描述并比较你自己的数字，不做任何诊断。参见 [ONDA 测量什么](/measurements)。
+ONDA 在其 HRV 常模表和 [HRV 计算器](/tools/hrv)中，以夜间 RMSSD 作为参考指标。不过，应用自身的个人基线读取的是 Apple Health 中存储的 HRV 数值，而{{fact:applewatch.hrv.healthkit}} [S9]——因此这个基线信号基于 SDNN 而非 RMSSD。练习过程中显示的实时读数，是由心率标准差计算出的替代值，既不是 RMSSD 也不是 SDNN；手机摄像头提供的是脉搏，而不是 HRV。ONDA 描述并比较你自己的数字，不做任何诊断。参见 [ONDA 测量什么](/measurements)。
 
 > 本文为科普信息，不构成诊断或医学治疗。

@@ -1,5 +1,5 @@
 ---
-sourceHash: 8eab4cb30ee9
+sourceHash: 5b7474fd9981
 title: "Frequenza cardiaca a riposo: cosa riflette e come si misura"
 metaTitle: "Frequenza cardiaca a riposo: significato e misura"
 metaDescription: "La frequenza cardiaca a riposo è la tua frequenza più bassa da fermo. Come si misura, cosa vuol dire normale, cosa la sposta e perché conta la tendenza."
@@ -111,6 +111,6 @@ Per come frequenza cardiaca a riposo e HRV si muovono insieme durante l'allename
 
 ## In ONDA
 
-La frequenza cardiaca a riposo è uno dei tre segnali notturni della baseline di ONDA, insieme all'HRV e alla frequenza respiratoria. ONDA la legge da Apple Health, dove la scrive Apple Watch o qualsiasi dispositivo la cui app vi sincronizzi i dati cardiaci, e costruisce la tua baseline personale su {{fact:baseline.window}}. Confronta ogni notte con il tuo corridoio, mai con una norma di popolazione, e segnala un cambiamento solo quando supera anche delle soglie minime: {{fact:baseline.floors}}. Senza un orologio, la fotocamera del telefono fornisce una lettura del polso a riposo, ma senza le funzioni aggiuntive della baseline. ONDA descrive i cambiamenti; non diagnostica nulla [S8]. Vedi [cosa misura ONDA](/measurements).
+La frequenza cardiaca a riposo è uno dei tre segnali della baseline di ONDA, insieme all'HRV e alla frequenza respiratoria. ONDA la legge da Apple Health, dove la scrive Apple Watch o qualsiasi dispositivo la cui app vi sincronizzi i dati cardiaci, e costruisce la tua baseline personale su {{fact:baseline.window}}. Confronta ogni notte con il tuo corridoio, mai con una norma di popolazione, e segnala un cambiamento solo quando supera anche delle soglie minime: {{fact:baseline.floors}}. Senza un orologio, la fotocamera del telefono fornisce una lettura del polso a riposo, ma senza le funzioni aggiuntive della baseline. ONDA descrive i cambiamenti; non diagnostica nulla [S8]. Vedi [cosa misura ONDA](/measurements).
 
 > Informazioni a scopo educativo, non una diagnosi né un trattamento medico.

@@ -1,5 +1,5 @@
 ---
-sourceHash: 8eab4cb30ee9
+sourceHash: 5b7474fd9981
 title: "Frequência cardíaca de repouso: o que reflete e como é medida"
 metaTitle: "Frequência cardíaca de repouso: o que é e como medir"
 metaDescription: "A frequência cardíaca de repouso é a mais baixa em repouso. Como medir, o que é normal, o que a altera e por que sua tendência vale mais que um número."
@@ -112,6 +112,6 @@ Para ver como a frequência cardíaca de repouso e a variabilidade da frequênci
 
 ## No ONDA
 
-A frequência cardíaca de repouso é um dos três sinais noturnos da linha de base do ONDA, junto com a HRV e a frequência respiratória. O ONDA a lê no Apple Health — gravada pelo Apple Watch ou por qualquer dispositivo cujo app sincronize os dados cardíacos lá — e constrói a sua linha de base pessoal ao longo de {{fact:baseline.window}}. O app compara cada noite com a sua própria faixa, nunca com uma norma populacional, e só sinaliza uma mudança quando ela também ultrapassa limites mínimos: {{fact:baseline.floors}}. Sem relógio, a câmera do celular fornece uma leitura do pulso em repouso, mas sem os recursos extras da linha de base. O ONDA descreve mudanças; não diagnostica nada [S8]. Veja [o que o ONDA mede](/measurements).
+A frequência cardíaca de repouso é um dos três sinais da linha de base do ONDA, junto com a HRV e a frequência respiratória. O ONDA a lê no Apple Health — gravada pelo Apple Watch ou por qualquer dispositivo cujo app sincronize os dados cardíacos lá — e constrói a sua linha de base pessoal ao longo de {{fact:baseline.window}}. O app compara cada noite com a sua própria faixa, nunca com uma norma populacional, e só sinaliza uma mudança quando ela também ultrapassa limites mínimos: {{fact:baseline.floors}}. Sem relógio, a câmera do celular fornece uma leitura do pulso em repouso, mas sem os recursos extras da linha de base. O ONDA descreve mudanças; não diagnostica nada [S8]. Veja [o que o ONDA mede](/measurements).
 
 > Informação educativa, não um diagnóstico nem um tratamento médico.

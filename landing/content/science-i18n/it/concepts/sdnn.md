@@ -1,5 +1,5 @@
 ---
-sourceHash: "f848794fbee9"
+sourceHash: "290b64b3dec0"
 title: "SDNN: cosa misura questa metrica dell'HRV e cosa no"
 metaTitle: "SDNN: definizione, significato e il caso Apple"
 metaDescription: "Lo SDNN è la metrica dell'HRV che Apple Health memorizza. Cosa misura, in cosa differisce dall'RMSSD e perché i due numeri non si possono confrontare."
@@ -120,6 +120,6 @@ Cosa resta incerto: quanto fedelmente i valori notturni di tipo SDNN dei disposi
 
 ## In ONDA
 
-Le tabelle dell'HRV per età di ONDA sono tabelle dell'RMSSD notturno, ma il [calcolatore HRV](/tools/hrv) ha una modalità SDNN separata per i numeri che vengono da Apple Watch, con fasce tratte da studi su brevi ECG a riposo in adulti sani. La baseline personale notturna dell'app si basa sui valori di HRV memorizzati in Apple Health, da Apple Watch o da un altro dispositivo che vi sincronizza i dati cardiaci. La documentazione è chiara su questo punto. {{fact:applewatch.hrv.healthkit}} [S8], quindi quel segnale di base si fonda sullo SDNN e non sull'RMSSD. La lettura in tempo reale mostrata durante una pratica è un indicatore surrogato calcolato dalla deviazione standard della frequenza cardiaca, non SDNN né RMSSD, e la fotocamera del telefono rileva il polso, non l'HRV. ONDA descrive e confronta i tuoi numeri; non diagnostica nulla. Vedi [cosa misura ONDA](/measurements).
+Le tabelle dell'HRV per età di ONDA sono tabelle dell'RMSSD notturno, ma il [calcolatore HRV](/tools/hrv) ha una modalità SDNN separata per i numeri che vengono da Apple Watch, con fasce tratte da studi su brevi ECG a riposo in adulti sani. La baseline personale dell'app si basa sui valori di HRV memorizzati in Apple Health, da Apple Watch o da un altro dispositivo che vi sincronizza i dati cardiaci. La documentazione è chiara su questo punto. {{fact:applewatch.hrv.healthkit}} [S8], quindi quel segnale di base si fonda sullo SDNN e non sull'RMSSD. La lettura in tempo reale mostrata durante una pratica è un indicatore surrogato calcolato dalla deviazione standard della frequenza cardiaca, non SDNN né RMSSD, e la fotocamera del telefono rileva il polso, non l'HRV. ONDA descrive e confronta i tuoi numeri; non diagnostica nulla. Vedi [cosa misura ONDA](/measurements).
 
 > Informazioni a scopo educativo, non una diagnosi né un trattamento medico.

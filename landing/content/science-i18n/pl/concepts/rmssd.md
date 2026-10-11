@@ -1,5 +1,5 @@
 ---
-sourceHash: "7b68393346e3"
+sourceHash: "572d635480f8"
 title: "RMSSD: co odzwierciedla ta miara HRV, a czego nie"
 metaTitle: "RMSSD: definicja, znaczenie i pomiar"
 metaDescription: "RMSSD to miara HRV odzwierciedlająca zależne od nerwu błędnego zmiany częstości serca. Co mierzy, jak szacują ją urządzenia ubieralne i czego nie powie."
@@ -105,6 +105,6 @@ Co pozostaje niepewne: na ile wartości typu RMSSD z urządzeń konsumenckich od
 
 ## W ONDA
 
-ONDA używa nocnego RMSSD jako miary referencyjnej w swoich tabelach norm HRV i w [kalkulatorze HRV](/tools/hrv). Nocna osobista linia bazowa w samej aplikacji odczytuje jednak wartości HRV zapisane w Apple Health, a {{fact:applewatch.hrv.healthkit}} [S9] — więc ten sygnał opiera się na SDNN, a nie na RMSSD. Odczyt na żywo w trakcie praktyki to wskaźnik zastępczy obliczany z odchylenia standardowego tętna, a nie RMSSD ani SDNN, a aparat telefonu podaje tętno, nie HRV. ONDA opisuje i porównuje twoje własne wyniki; niczego nie diagnozuje. Zobacz, [co mierzy ONDA](/measurements).
+ONDA używa nocnego RMSSD jako miary referencyjnej w swoich tabelach norm HRV i w [kalkulatorze HRV](/tools/hrv). Osobista linia bazowa w samej aplikacji odczytuje jednak wartości HRV zapisane w Apple Health, a {{fact:applewatch.hrv.healthkit}} [S9] — więc ten sygnał opiera się na SDNN, a nie na RMSSD. Odczyt na żywo w trakcie praktyki to wskaźnik zastępczy obliczany z odchylenia standardowego tętna, a nie RMSSD ani SDNN, a aparat telefonu podaje tętno, nie HRV. ONDA opisuje i porównuje twoje własne wyniki; niczego nie diagnozuje. Zobacz, [co mierzy ONDA](/measurements).
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

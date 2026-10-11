@@ -1,5 +1,5 @@
 ---
-sourceHash: "2cecd6f1dabf"
+sourceHash: "914a9faa457f"
 title: "Kun je HRV van een smartwatch of ring vertrouwen?"
 metaTitle: "HRV van wearables: horloge of ring te vertrouwen?"
 metaDescription: "HRV van een smartwatch of ring is een schatting uit het polssignaal, geen ecg-meting. Waar ze overeenkomen, waar ze uiteenlopen en hoe je je getallen leest."
@@ -164,6 +164,6 @@ De feiten over het ecosysteem van Apple horen hier als apparaatfeiten: Apple Hea
 
 ## In ONDA
 
-ONDA staat aan de consumentenkant van dit bewijs, en de documentatie is duidelijk over waar elk getal vandaan komt. De nachtelijke persoonlijke baseline is gebaseerd op de HRV-waarden die in Apple Health worden opgeslagen — door de Apple Watch of door elke tracker waarvan de app hartgegevens daarheen synchroniseert — en {{fact:applewatch.hrv.healthkit}} [S6]. De live-waarde tijdens een oefening is een vervangende maat, berekend uit de standaarddeviatie van de hartslag — geen RMSSD en geen SDNN; de telefooncamera geeft je polsslag, geen HRV; en de coherentiescore die met een Apple Watch beschikbaar is, is een eigen feedbackscore, geen klinische HRV-meting. ONDA gebruikt het signaal voor biofeedback: de vraag is niet alleen wat het getal is, maar wat ermee gebeurt terwijl je oefent. Het vergelijkt elke nacht met je eigen recente bandbreedte (corridor) en stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
+ONDA staat aan de consumentenkant van dit bewijs, en de documentatie is duidelijk over waar elk getal vandaan komt. De persoonlijke baseline is gebaseerd op de HRV-waarden die in Apple Health worden opgeslagen — door de Apple Watch of door elke tracker waarvan de app hartgegevens daarheen synchroniseert — en {{fact:applewatch.hrv.healthkit}} [S6]. De live-waarde tijdens een oefening is een vervangende maat, berekend uit de standaarddeviatie van de hartslag — geen RMSSD en geen SDNN; de telefooncamera geeft je polsslag, geen HRV; en de coherentiescore die met een Apple Watch beschikbaar is, is een eigen feedbackscore, geen klinische HRV-meting. ONDA gebruikt het signaal voor biofeedback: de vraag is niet alleen wat het getal is, maar wat ermee gebeurt terwijl je oefent. Het vergelijkt elke nacht met je eigen recente bandbreedte (corridor) en stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

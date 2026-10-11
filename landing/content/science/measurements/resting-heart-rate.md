@@ -278,6 +278,6 @@ For how resting heart rate and HRV move together during heavy training, see [ove
 
 ## In ONDA
 
-Resting heart rate is one of the three nightly signals in ONDA's baseline, together with HRV and breathing rate. ONDA reads it from Apple Health — written by Apple Watch or by any device whose app syncs heart data there — and builds your personal baseline over {{fact:baseline.window}}. It compares each night with your own corridor, never with a population norm, and it flags a change only when it also passes minimum floors: {{fact:baseline.floors}}. Without a watch, the phone camera gives a resting pulse reading, but no baseline extras. ONDA describes changes; it does not diagnose anything [S8]. See [what ONDA measures](/measurements).
+Resting heart rate is one of the three signals in ONDA's baseline, together with HRV and breathing rate. ONDA reads it from Apple Health — written by Apple Watch or by any device whose app syncs heart data there — and builds your personal baseline over {{fact:baseline.window}}. It compares each night with your own corridor, never with a population norm, and it flags a change only when it also passes minimum floors: {{fact:baseline.floors}}. Without a watch, the phone camera gives a resting pulse reading, but no baseline extras. ONDA describes changes; it does not diagnose anything [S8]. See [what ONDA measures](/measurements).
 
 > Educational information, not a diagnosis or medical treatment.

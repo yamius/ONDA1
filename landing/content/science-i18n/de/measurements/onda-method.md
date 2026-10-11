@@ -1,5 +1,5 @@
 ---
-sourceHash: c9a1794847a3
+sourceHash: eea148772b58
 title: "Wie ONDA die Signale deines Körpers misst und deutet"
 metaTitle: "Wie ONDA deine Körpersignale misst und deutet"
 metaDescription: "Woher ONDA seine Daten bezieht, wie es deine Baseline und Signale bildet, was auf deinem Handy bleibt und wo die Grenzen jeder angezeigten Zahl liegen."
@@ -50,7 +50,7 @@ ONDA ist eine App für Atemübungen und Biofeedback. Sie liest Signale, die ande
 
 ## Wie entsteht deine Baseline?
 
-Die Baseline ist der Bereich, in dem sich dein Körper üblicherweise bewegt. ONDA bildet sie über {{fact:baseline.window}} aus nächtlichen Werten in Apple Health [S1, S4]. Ab Version 1.9.3 zeigt das HRV-Diagramm dieses ganze Fenster, sobald der Zugriff auf Apple Health erlaubt ist, statt sich Nacht für Nacht zu füllen. Nächte mit zu wenigen Messpunkten werden vor jeder Berechnung verworfen, und die HRV wird nur aus nächtlichen Messpunkten genommen.
+Die Baseline ist der Bereich, in dem sich dein Körper üblicherweise bewegt. ONDA bildet sie über {{fact:baseline.window}} aus Werten in Apple Health [S1, S4]. Ab Version 1.9.3 zeigt das HRV-Diagramm dieses ganze Fenster, sobald der Zugriff auf Apple Health erlaubt ist, statt sich Nacht für Nacht zu füllen. Nächte mit zu wenigen Messpunkten werden vor jeder Berechnung verworfen, und die HRV wird nur aus nächtlichen Messpunkten genommen.
 
 Für Signale gilt: {{fact:baseline.compare}} [S1]. ONDA bleibt stumm, bis mindestens {{fact:baseline.minNights}} vorliegen; in den ersten Wochen siehst du daher eine Baseline, die noch entsteht, kein Urteil. Die geforderten Mindestveränderungen sind: {{fact:baseline.floors}}.
 

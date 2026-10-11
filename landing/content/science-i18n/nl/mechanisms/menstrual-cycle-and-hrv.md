@@ -1,5 +1,5 @@
 ---
-sourceHash: 1c231ffc17a5
+sourceHash: d3c51d8c300f
 title: "Menstruatiecyclus en HRV: waarom je baseline verschuift"
 metaTitle: "Menstruatiecyclus en HRV: wat verandert er en waarom"
 metaDescription: "Hoe hartslagvariabiliteit verschuift tijdens de menstruatiecyclus, waarom elke vrouw haar eigen patroon heeft en wat hormonale anticonceptie en de menopauze veranderen."
@@ -49,7 +49,7 @@ evidenceMap:
     limitation: "Twee fasen vergeleken bij elf vrouwen; korte laboratoriummetingen."
   - claim: "De auteurs van de review schrijven dat met cyclusgebonden verschillen rekening moet worden gehouden wanneer HRV aan vrouwen wordt getoond."
     limitation: "Aanbeveling van de auteurs, geen geteste methode."
-  - claim: "ONDA bouwt zijn baseline op uit nachtelijke waarden uit Apple Health en vergelijkt elke nacht met de eigen bandbreedte van de gebruiker (feiten baseline.window, baseline.compare)."
+  - claim: "ONDA bouwt zijn baseline op uit waarden uit Apple Health en vergelijkt elke nacht met de eigen bandbreedte van de gebruiker (feiten baseline.window, baseline.compare)."
     limitation: "Beschrijft alleen hoe de app werkt; geen bewijs voor enige gezondheidsclaim."
 ---
 
@@ -107,6 +107,6 @@ Andere oorzaken van een lage meting staan op [waarom is mijn HRV laag?](/science
 
 ## In ONDA
 
-ONDA bouwt een persoonlijke baseline op uit nachtelijke waarden die in Apple Health zijn opgeslagen — van een Apple Watch of een ander apparaat dat hartgegevens daarheen synchroniseert [S8]. Het venster is {{fact:baseline.window}}, en {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, dus de HRV-trend van ONDA is een SDNN-trend. ONDA volgt de menstruatiecyclus niet, dus de baseline houdt geen rekening met de cyclusdag. Een lagere HRV in de dagen vóór een menstruatie kan een gewone schommeling van de cyclus zijn in plaats van een waarschuwing. Wil je je eigen patroon zien, noteer dan zelf de cyclusdag en vergelijk dezelfde dagen over meerdere cycli, in plaats van jezelf te vergelijken met fasegemiddelden van andere vrouwen ([je HRV-baseline](/science/concepts/hrv-baseline); [hoe HRV wordt gemeten](/science/measurements/heart-rate-variability)). ONDA bepaalt geen vruchtbaarheid, ovulatie of anticonceptie op basis van HRV, en stelt geen diagnose van welke aandoening dan ook.
+ONDA bouwt een persoonlijke baseline op uit waarden die in Apple Health zijn opgeslagen — van een Apple Watch of een ander apparaat dat hartgegevens daarheen synchroniseert [S8]. Het venster is {{fact:baseline.window}}, en {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, dus de HRV-trend van ONDA is een SDNN-trend. ONDA volgt de menstruatiecyclus niet, dus de baseline houdt geen rekening met de cyclusdag. Een lagere HRV in de dagen vóór een menstruatie kan een gewone schommeling van de cyclus zijn in plaats van een waarschuwing. Wil je je eigen patroon zien, noteer dan zelf de cyclusdag en vergelijk dezelfde dagen over meerdere cycli, in plaats van jezelf te vergelijken met fasegemiddelden van andere vrouwen ([je HRV-baseline](/science/concepts/hrv-baseline); [hoe HRV wordt gemeten](/science/measurements/heart-rate-variability)). ONDA bepaalt geen vruchtbaarheid, ovulatie of anticonceptie op basis van HRV, en stelt geen diagnose van welke aandoening dan ook.
 
 > Educatieve informatie, geen diagnose of medische behandeling.

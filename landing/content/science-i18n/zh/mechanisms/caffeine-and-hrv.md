@@ -1,5 +1,5 @@
 ---
-sourceHash: 159ee240a2bb
+sourceHash: d38842ecad3c
 title: "咖啡因与 HRV：咖啡做了什么，没做什么"
 metaTitle: "咖啡因与 HRV：咖啡会降低你的 HRV 吗？"
 metaDescription: "研究对咖啡与静息及运动后心率变异性的发现、能量饮料有何不同，以及晚间咖啡因如何影响 HRV。"
@@ -42,7 +42,7 @@ evidenceMap:
     limitation: "同一项小型试验；随访四个小时；健康志愿者。"
   - claim: "晚间咖啡因会干扰睡眠；在一项小型研究中，睡前大剂量摄入改变了快速眼动睡眠期间逐搏心脏指标。"
     limitation: "一项小型睡眠实验室研究中的背景陈述，睡前不久单次大剂量；仅频谱指标。"
-  - claim: "ONDA 根据 Apple Health 的夜间数值建立基线，并将每晚与用户自己的波动区间比较（事实 baseline.window, baseline.compare）。"
+  - claim: "ONDA 根据 Apple Health 的数值建立基线，并将每晚与用户自己的波动区间比较（事实 baseline.window, baseline.compare）。"
     limitation: "仅描述应用行为；不构成任何健康主张的证据。"
 ---
 
@@ -104,6 +104,6 @@ evidenceMap:
 
 ## 在 ONDA 中
 
-ONDA 根据存储在 Apple Health 中的夜间数值建立个人基线——数据来自 Apple Watch 或其他向 Apple Health 同步心脏数据的设备 [S8]。时间窗口为{{fact:baseline.window}}，{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}，因此 ONDA 中的 HRV 趋势是 SDNN 趋势。如果你想知道自己的喝咖啡习惯是否有影响，请在几周内把晚间喝过一杯后的夜晚与平常的夜晚进行比较，而不是只看某一晚。ONDA 不记录咖啡因摄入，不提供关于咖啡的建议，也不诊断任何疾病。
+ONDA 根据存储在 Apple Health 中的数值建立个人基线——数据来自 Apple Watch 或其他向 Apple Health 同步心脏数据的设备 [S8]。时间窗口为{{fact:baseline.window}}，{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}，因此 ONDA 中的 HRV 趋势是 SDNN 趋势。如果你想知道自己的喝咖啡习惯是否有影响，请在几周内把晚间喝过一杯后的夜晚与平常的夜晚进行比较，而不是只看某一晚。ONDA 不记录咖啡因摄入，不提供关于咖啡的建议，也不诊断任何疾病。
 
 > 本文为科普信息，不构成诊断或医学治疗。

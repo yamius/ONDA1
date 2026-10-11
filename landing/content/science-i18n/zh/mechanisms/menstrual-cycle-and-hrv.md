@@ -1,5 +1,5 @@
 ---
-sourceHash: 1c231ffc17a5
+sourceHash: d3c51d8c300f
 title: "月经周期与 HRV：为什么你的基线会变动"
 metaTitle: "月经周期与 HRV：什么在变化，为什么"
 metaDescription: "心率变异性如何随月经周期变化，为什么每位女性都有自己的模式，以及激素避孕和绝经会带来哪些改变。"
@@ -46,7 +46,7 @@ evidenceMap:
     limitation: "在十一位女性中比较了两个阶段；实验室记录时间短。"
   - claim: "综述作者指出，在向女性展示 HRV 时，应考虑与周期相关的差异。"
     limitation: "是作者的建议，而不是经过检验的方法。"
-  - claim: "ONDA 根据 Apple Health 中的夜间数值建立基线，并将每晚与用户自己的波动区间进行比较（事实 baseline.window、baseline.compare）。"
+  - claim: "ONDA 根据 Apple Health 中的数值建立基线，并将每晚与用户自己的波动区间进行比较（事实 baseline.window、baseline.compare）。"
     limitation: "仅描述应用的运作方式；不能作为任何健康主张的证据。"
 ---
 
@@ -104,6 +104,6 @@ evidenceMap:
 
 ## 在 ONDA 中
 
-ONDA 根据存储在 Apple Health 中的夜间数值建立个人基线，这些数值来自 Apple Watch 或其他把心脏数据同步到那里的设备 [S8]。时间窗为{{fact:baseline.window}}，并且{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}，因此 ONDA 的 HRV 趋势是 SDNN 趋势。ONDA 不追踪月经周期，因此基线不会根据周期中的第几天进行调整。月经前几天 HRV 较低，可能只是普通的周期波动，而不是警示。如果你想了解自己的模式，可以自己记下周期中的第几天，并在几个周期之间比较相同的日子，而不是把自己与其他女性的阶段平均值相比（[你的 HRV 基线](/science/concepts/hrv-baseline)；[HRV 是如何测量的](/science/measurements/heart-rate-variability)）。ONDA 不会根据 HRV 判断生育力、排卵或避孕，也不会诊断任何疾病。
+ONDA 根据存储在 Apple Health 中的数值建立个人基线，这些数值来自 Apple Watch 或其他把心脏数据同步到那里的设备 [S8]。时间窗为{{fact:baseline.window}}，并且{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}，因此 ONDA 的 HRV 趋势是 SDNN 趋势。ONDA 不追踪月经周期，因此基线不会根据周期中的第几天进行调整。月经前几天 HRV 较低，可能只是普通的周期波动，而不是警示。如果你想了解自己的模式，可以自己记下周期中的第几天，并在几个周期之间比较相同的日子，而不是把自己与其他女性的阶段平均值相比（[你的 HRV 基线](/science/concepts/hrv-baseline)；[HRV 是如何测量的](/science/measurements/heart-rate-variability)）。ONDA 不会根据 HRV 判断生育力、排卵或避孕，也不会诊断任何疾病。
 
 > 本文为科普信息，不构成诊断或医学治疗。

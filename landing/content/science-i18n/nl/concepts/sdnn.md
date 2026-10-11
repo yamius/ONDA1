@@ -1,5 +1,5 @@
 ---
-sourceHash: "f848794fbee9"
+sourceHash: "290b64b3dec0"
 title: "SDNN — wat deze HRV-maat meet en wat niet"
 metaTitle: "SDNN: definitie, betekenis en de rol van Apple"
 metaDescription: "SDNN is de HRV-maat die Apple Health opslaat. Wat ze meet, hoe ze verschilt van RMSSD en waarom je de twee getallen niet met elkaar kunt vergelijken."
@@ -119,6 +119,6 @@ Wat nog onzeker is: hoe nauw nachtelijke waarden van het type SDNN uit consument
 
 ## In ONDA
 
-De HRV-tabellen per leeftijd van ONDA zijn tabellen met nachtelijke RMSSD, maar de [HRV-calculator](/tools/hrv) heeft een aparte SDNN-modus voor getallen die van de Apple Watch komen, met bereiken uit korte ecg-rustmetingen bij gezonde volwassenen. De nachtelijke persoonlijke baseline van de app zelf is gebaseerd op de HRV-waarden die in Apple Health zijn opgeslagen — van de Apple Watch of van een ander apparaat dat hartgegevens daarheen synchroniseert. De documentatie is daar duidelijk over: {{fact:applewatch.hrv.healthkit}} [S8] — dus dat baselinesignaal is gebaseerd op SDNN en niet op RMSSD. De live-waarde tijdens een oefening is een vervangende maat, berekend uit de standaarddeviatie van de hartslag — geen SDNN en geen RMSSD — en de telefooncamera geeft je polsslag, geen HRV. ONDA beschrijft en vergelijkt je eigen getallen; het stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
+De HRV-tabellen per leeftijd van ONDA zijn tabellen met nachtelijke RMSSD, maar de [HRV-calculator](/tools/hrv) heeft een aparte SDNN-modus voor getallen die van de Apple Watch komen, met bereiken uit korte ecg-rustmetingen bij gezonde volwassenen. De persoonlijke baseline van de app zelf is gebaseerd op de HRV-waarden die in Apple Health zijn opgeslagen — van de Apple Watch of van een ander apparaat dat hartgegevens daarheen synchroniseert. De documentatie is daar duidelijk over: {{fact:applewatch.hrv.healthkit}} [S8] — dus dat baselinesignaal is gebaseerd op SDNN en niet op RMSSD. De live-waarde tijdens een oefening is een vervangende maat, berekend uit de standaarddeviatie van de hartslag — geen SDNN en geen RMSSD — en de telefooncamera geeft je polsslag, geen HRV. ONDA beschrijft en vergelijkt je eigen getallen; het stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

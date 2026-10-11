@@ -1,5 +1,5 @@
 ---
-sourceHash: c9a1794847a3
+sourceHash: eea148772b58
 title: "Como o ONDA mede e interpreta os sinais do seu corpo"
 metaTitle: "Como o ONDA mede e interpreta os sinais do corpo"
 metaDescription: "De onde o ONDA tira os dados, como monta sua linha de base e seus sinais, o que fica no celular e os limites de cada número que ele mostra."
@@ -50,7 +50,7 @@ O ONDA é um app de respiração e biofeedback. Ele lê sinais que outros dispos
 
 ## Como a sua linha de base é construída?
 
-A linha de base é a faixa em que o seu próprio corpo costuma ficar. O ONDA a constrói ao longo de {{fact:baseline.window}} a partir dos valores noturnos do Apple Health [S1, S4]. A partir da versão 1.9.3, o gráfico de HRV mostra essa janela inteira assim que o acesso ao Apple Health é concedido, em vez de se preencher noite após noite. Noites com poucas amostras são descartadas antes de qualquer cálculo, e a HRV é tirada apenas de amostras noturnas.
+A linha de base é a faixa em que o seu próprio corpo costuma ficar. O ONDA a constrói ao longo de {{fact:baseline.window}} a partir dos valores do Apple Health [S1, S4]. A partir da versão 1.9.3, o gráfico de HRV mostra essa janela inteira assim que o acesso ao Apple Health é concedido, em vez de se preencher noite após noite. Noites com poucas amostras são descartadas antes de qualquer cálculo, e a HRV é tirada apenas de amostras noturnas.
 
 Para os sinais, {{fact:baseline.compare}} [S1]. O ONDA fica em silêncio até ter pelo menos {{fact:baseline.minNights}}, então as primeiras semanas mostram uma linha de base ainda em construção, e não um julgamento. As variações mínimas exigidas são: {{fact:baseline.floors}}.
 

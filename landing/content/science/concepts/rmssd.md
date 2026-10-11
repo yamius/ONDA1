@@ -228,6 +228,6 @@ What remains uncertain: how closely consumer-device RMSSD-type values track ECG-
 
 ## In ONDA
 
-ONDA uses night-time RMSSD as the reference metric in its HRV norm tables and the [HRV calculator](/tools/hrv). The app's own nightly baseline, however, reads the HRV values stored by Apple Health, and {{fact:applewatch.hrv.healthkit}} [S9] — so that baseline signal is SDNN-based rather than RMSSD-based. The live reading shown during a practice is a surrogate computed from the standard deviation of heart rate, not RMSSD or SDNN, and the phone camera gives pulse, not HRV. ONDA describes and compares your own numbers; it does not diagnose anything. See [what ONDA measures](/measurements).
+ONDA uses night-time RMSSD as the reference metric in its HRV norm tables and the [HRV calculator](/tools/hrv). The app's own baseline, however, reads the HRV values stored by Apple Health, and {{fact:applewatch.hrv.healthkit}} [S9] — so that baseline signal is SDNN-based rather than RMSSD-based. The live reading shown during a practice is a surrogate computed from the standard deviation of heart rate, not RMSSD or SDNN, and the phone camera gives pulse, not HRV. ONDA describes and compares your own numbers; it does not diagnose anything. See [what ONDA measures](/measurements).
 
 > Educational information, not a diagnosis or medical treatment.

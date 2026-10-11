@@ -1,5 +1,5 @@
 ---
-sourceHash: 079098055e7f
+sourceHash: 9b4dc57e7d2e
 title: "Ziekte en HRV: wat een wearable wel en niet kan zien"
 metaTitle: "Ziekte en HRV: vroeg signaal, geen diagnose"
 metaDescription: "Hoe ontsteking en infectie HRV en rusthartslag verschuiven, wat meldingen van wearables betekenen en waarom ze je niet kunnen vertellen dat je ziek bent."
@@ -43,7 +43,7 @@ evidenceMap:
     limitation: "Narratieve review; vooral studies uit de pandemieperiode; enkele auteurs in dienst van een bedrijf dat wearablegegevens analyseert."
   - claim: "Dezelfde review stelt dat het vermogen van wearables om virusinfecties in een dagelijkse omgeving op te sporen niet is aangetoond."
     limitation: "Geschreven voordat de prospectieve studie hierboven in definitieve vorm verscheen; die studie test geen dagelijks gebruik buiten een onderzoekscohort."
-  - claim: "ONDA bouwt zijn baseline op uit nachtelijke Apple Health-waarden en vergelijkt elke nacht met de eigen bandbreedte van de gebruiker (feiten baseline.window, baseline.compare, baseline.floors, onda.signal.cadence)."
+  - claim: "ONDA bouwt zijn baseline op uit Apple Health-waarden en vergelijkt elke nacht met de eigen bandbreedte van de gebruiker (feiten baseline.window, baseline.compare, baseline.floors, onda.signal.cadence)."
     limitation: "Beschrijft alleen het gedrag van de app; geen bewijs voor een gezondheidsclaim."
 ---
 
@@ -106,6 +106,6 @@ Stress, alcohol en reizen kunnen dezelfde daling geven; ze staan naast elkaar op
 
 ## In ONDA
 
-ONDA bouwt een persoonlijke baseline op uit nachtelijke waarden die in Apple Health zijn opgeslagen — van een Apple Watch of een ander apparaat dat hartgegevens daarheen synchroniseert [S7]. Het venster is {{fact:baseline.window}}, en {{fact:baseline.compare}}: {{fact:baseline.floors}}, met {{fact:onda.signal.cadence}}. {{fact:applewatch.hrv.healthkit}}, dus de HRV-trend van ONDA is een SDNN-trend ([je HRV-baseline](/science/concepts/hrv-baseline)). Zo'n signaal is beschrijvend: het zegt dat een nacht buiten je eigen bandbreedte valt, niet waarom. Een infectie, een korte nacht, alcohol of reizen kunnen het allemaal veroorzaken. ONDA herkent geen ziekte, stelt geen diagnose van welke aandoening dan ook en vervangt geen arts.
+ONDA bouwt een persoonlijke baseline op uit waarden die in Apple Health zijn opgeslagen — van een Apple Watch of een ander apparaat dat hartgegevens daarheen synchroniseert [S7]. Het venster is {{fact:baseline.window}}, en {{fact:baseline.compare}}: {{fact:baseline.floors}}, met {{fact:onda.signal.cadence}}. {{fact:applewatch.hrv.healthkit}}, dus de HRV-trend van ONDA is een SDNN-trend ([je HRV-baseline](/science/concepts/hrv-baseline)). Zo'n signaal is beschrijvend: het zegt dat een nacht buiten je eigen bandbreedte valt, niet waarom. Een infectie, een korte nacht, alcohol of reizen kunnen het allemaal veroorzaken. ONDA herkent geen ziekte, stelt geen diagnose van welke aandoening dan ook en vervangt geen arts.
 
 > Educatieve informatie, geen diagnose of medische behandeling.

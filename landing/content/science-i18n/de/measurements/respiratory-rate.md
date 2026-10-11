@@ -1,5 +1,5 @@
 ---
-sourceHash: 9528e5383d6f
+sourceHash: 94f41b941e62
 title: "Atemfrequenz in Ruhe: Was sie widerspiegelt und wie sie gemessen wird"
 metaTitle: "Atemfrequenz: Bedeutung und Messung"
 metaDescription: "Die Atemfrequenz ist die Zahl deiner Atemzüge pro Minute in Ruhe. Wie sie gemessen wird, was sie bewegt und warum dein Nachtverlauf mehr sagt als ein Wert."
@@ -47,7 +47,7 @@ evidenceMap:
     limitation: "Eine einzelne retrospektive Studie mit Wearables einer Marke bei Menschen, die bereits Symptome hatten; kleine Validierungsgruppen; mehrere Autoren beim Hersteller angestellt oder von ihm finanziert. Kein diagnostischer Test."
   - claim: "In einer großen, selbst ausgewählten Stichprobe von Wearable-Nutzern mit COVID waren Atemfrequenz und Herzfrequenz durch die Krankheit typischerweise erhöht, während die HRV sank."
     limitation: "Eine einzelne Beobachtungsstudie mit Nutzern eines Herstellers und selbst angegebenen Diagnosen; alle Autoren vom Hersteller finanziert. Kein diagnostischer Test."
-  - claim: "ONDA liest die Atemfrequenz aus Apple Health als eines der drei nächtlichen Baseline-Signale, vergleicht Nächte mit einem persönlichen Korridor über das Baseline-Fenster und mit Mindestschwellen und stellt keine Diagnosen."
+  - claim: "ONDA liest die Atemfrequenz aus Apple Health als eines der drei Baseline-Signale, vergleicht Nächte mit einem persönlichen Korridor über das Baseline-Fenster und mit Mindestschwellen und stellt keine Diagnosen."
     limitation: "Beschreibt nur das Verhalten der App; kein Beleg für eine Gesundheitsaussage oder für die Genauigkeit der Werte."
 ---
 
@@ -113,6 +113,6 @@ Keine der beiden Studien ist ein validierter diagnostischer Test. Beide weisen a
 
 ## In ONDA
 
-Die Atemfrequenz ist eines der drei nächtlichen Signale in der Baseline von ONDA, zusammen mit Ruhepuls und HRV. ONDA liest die Atemfrequenz aus Apple Health – geschrieben von der Apple Watch oder von jedem Gerät, dessen App sie dorthin synchronisiert – und bildet deine persönliche Baseline über {{fact:baseline.window}}. Die App vergleicht jede Nacht mit deinem eigenen Korridor, nie mit einer Bevölkerungsnorm, und meldet eine Veränderung nur, wenn sie zusätzlich Mindestschwellen überschreitet: {{fact:baseline.floors}}. ONDA berechnet die Atemfrequenz im Schlaf nicht selbst, macht keine Aussage über ihre Genauigkeit und stellt keine Diagnosen [S14]. Mehr Hintergrund findest du unter [Deine Atemfrequenz: der Wert der Nacht](/articles/respiratory-rate-hidden-signal) und [was ONDA misst](/measurements).
+Die Atemfrequenz ist eines der drei Signale in der Baseline von ONDA, zusammen mit Ruhepuls und HRV. ONDA liest die Atemfrequenz aus Apple Health – geschrieben von der Apple Watch oder von jedem Gerät, dessen App sie dorthin synchronisiert – und bildet deine persönliche Baseline über {{fact:baseline.window}}. Die App vergleicht jede Nacht mit deinem eigenen Korridor, nie mit einer Bevölkerungsnorm, und meldet eine Veränderung nur, wenn sie zusätzlich Mindestschwellen überschreitet: {{fact:baseline.floors}}. ONDA berechnet die Atemfrequenz im Schlaf nicht selbst, macht keine Aussage über ihre Genauigkeit und stellt keine Diagnosen [S14]. Mehr Hintergrund findest du unter [Deine Atemfrequenz: der Wert der Nacht](/articles/respiratory-rate-hidden-signal) und [was ONDA misst](/measurements).
 
 > Bildungsinformation, keine Diagnose und keine medizinische Behandlung.

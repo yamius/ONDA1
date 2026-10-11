@@ -1,5 +1,5 @@
 ---
-sourceHash: 285e3bfba44f
+sourceHash: 9e29577a7288
 title: "酒精与 HRV：喝酒会让你的夜晚发生什么"
 metaTitle: "酒精与 HRV：喝酒后的那一夜"
 metaDescription: "为什么喝酒后夜间 HRV 会下降、静息心率会上升，饮酒量和时间有什么影响，以及关于酒精研究尚不清楚的地方。"
@@ -44,7 +44,7 @@ evidenceMap:
     limitation: "作者的提醒；重申了这一局限。"
   - claim: "一篇叙述性综述的结论是：急性狂饮和长期大量饮酒会损害心率和自主神经功能，而关于轻度至中度饮酒的研究结果不一。"
     limitation: "是叙述性综述，而不是系统综述或荟萃分析；涵盖的是一般心脏结局，并非专门针对 HRV。"
-  - claim: "ONDA 根据 Apple Health 中的夜间数值建立基线，并将每晚与用户自己的波动区间进行比较（事实 baseline.window、baseline.compare）。"
+  - claim: "ONDA 根据 Apple Health 中的数值建立基线，并将每晚与用户自己的波动区间进行比较（事实 baseline.window、baseline.compare）。"
     limitation: "仅描述应用的运作方式；不能作为任何健康主张的证据。"
 ---
 
@@ -101,6 +101,6 @@ evidenceMap:
 
 ## 在 ONDA 中
 
-ONDA 根据存储在 Apple Health 中的夜间数值建立个人基线，这些数值来自 Apple Watch 或其他将心脏数据同步到其中的设备 [S9]。时间窗口为{{fact:baseline.window}}，{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}，因此 ONDA 中的 HRV 趋势是 SDNN 趋势。喝酒后的夜晚可能会在这种比较中表现为 HRV 偏低、静息心率偏高；这是上文所述的正常反应，不必惊慌。请关注几个夜晚的趋势，而不是某一个夜晚。ONDA 不记录饮酒，不提供饮酒建议，也不诊断任何疾病。
+ONDA 根据存储在 Apple Health 中的数值建立个人基线，这些数值来自 Apple Watch 或其他将心脏数据同步到其中的设备 [S9]。时间窗口为{{fact:baseline.window}}，{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}，因此 ONDA 中的 HRV 趋势是 SDNN 趋势。喝酒后的夜晚可能会在这种比较中表现为 HRV 偏低、静息心率偏高；这是上文所述的正常反应，不必惊慌。请关注几个夜晚的趋势，而不是某一个夜晚。ONDA 不记录饮酒，不提供饮酒建议，也不诊断任何疾病。
 
 > 本文为科普信息，不构成诊断或医学治疗。

@@ -1,5 +1,5 @@
 ---
-sourceHash: "7b68393346e3"
+sourceHash: "572d635480f8"
 title: "RMSSD：このHRV指標が反映するもの、しないもの"
 metaTitle: "RMSSDとは：定義、意味、測定方法"
 metaDescription: "RMSSDは、迷走神経を介した心拍数の変化を反映するHRV指標です。何を測っているのか、ウェアラブルがどう推定するのか、そして何を教えてくれないのかを解説します。"

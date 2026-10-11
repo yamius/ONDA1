@@ -1,5 +1,5 @@
 ---
-sourceHash: f592ea962f6b
+sourceHash: e9bb7788219f
 title: "睡眠中のHRVと心拍数：なぜ夜がいちばんよい測定の窓なのか"
 metaTitle: "睡眠中のHRVと心拍数"
 metaDescription: "夜のあいだと睡眠段階ごとに心拍数とHRVに何が起きるのか、なぜ夜間の測定値がもっとも安定した窓なのか、ウェアラブルで何がわかり何がわからないのかを解説します。"
@@ -51,7 +51,7 @@ evidenceMap:
     limitation: "研究は異質で、多くはバイアスのリスクが高く、メタアナリシスは行えませんでした。"
   - claim: "睡眠時無呼吸は、質問票や予測ツールだけではなく、ポリソムノグラフィーまたは技術的に適切な在宅睡眠時無呼吸検査で診断されます。"
     limitation: "成人を対象とした診療ガイドラインで、一般向けのウェアラブルは評価していません。"
-  - claim: "ONDAはApple Healthの夜間の値からベースラインをつくり、毎晩をユーザー自身のコリドーと比較します（facts baseline.window, baseline.compare）。"
+  - claim: "ONDAはApple Healthの値からベースラインをつくり、毎晩をユーザー自身のコリドーと比較します（facts baseline.window, baseline.compare）。"
     limitation: "アプリの動作を説明しているだけで、健康に関するいかなる主張の証拠でもありません。"
 ---
 
@@ -131,6 +131,6 @@ evidenceMap:
 
 ## ONDAでは
 
-ONDAは、Apple Healthに保存された夜間の値から個人のベースラインをつくります。値はApple Watch、または心拍データをそこに同期するほかの機器から得られます [S16]。期間は{{fact:baseline.window}}です。{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}。そのため、ONDAのHRVのベースラインはSDNNのベースラインです。ONDAはHRVから睡眠段階を判定することはなく、睡眠時無呼吸、不眠症、その他いかなる病気も診断しません。
+ONDAは、Apple Healthに保存された値から個人のベースラインをつくります。値はApple Watch、または心拍データをそこに同期するほかの機器から得られます [S16]。期間は{{fact:baseline.window}}です。{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}。そのため、ONDAのHRVのベースラインはSDNNのベースラインです。ONDAはHRVから睡眠段階を判定することはなく、睡眠時無呼吸、不眠症、その他いかなる病気も診断しません。
 
 > 教育目的の情報であり、診断や医療行為ではありません。

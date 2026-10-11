@@ -192,11 +192,11 @@ evidenceMap:
     claimType: measurement
     quote: "Numerous experimental, demographic, and environmental factors influence HRV assessment, interpretation, and reliability."
     limitation: "Research-rigour guideline; expert consensus, not direct evidence about training decisions."
-  - claim: "ONDA builds its baseline from nightly Apple Health values and compares each night with the user's own corridor (facts baseline.window, baseline.compare)."
+  - claim: "ONDA builds its baseline from values in Apple Health and compares each night with the user's own corridor (facts baseline.window, baseline.compare)."
     sources: [S5]
     class: established
     claimType: device
-    quote: "From nightly Apple Health values — HRV, resting heart rate and breathing rate — ONDA builds your personal baseline"
+    quote: "From values in Apple Health — HRV, resting heart rate and breathing rate — ONDA builds your personal baseline"
     limitation: "Describes app behaviour only; not evidence for any health or training claim."
   - claim: "In a meta-analysis of endurance-trained athletes, training that improved performance came with increases in vagal-related resting and post-exercise HRV and heart rate recovery (facts study.bellenger2016.studies, study.bellenger2016.restingRmssd)."
     sources: [S6]
@@ -311,6 +311,6 @@ If training does not explain a low reading, [why is my HRV low?](/science/questi
 
 ## In ONDA
 
-ONDA builds a personal baseline from nightly values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S5]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV trend is an SDNN trend. ONDA shows how your nights compare with your own range; it does not plan or adjust training, does not tell you when to train hard and does not diagnose any condition.
+ONDA builds a personal baseline from values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S5]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV trend is an SDNN trend. ONDA shows how your nights compare with your own range; it does not plan or adjust training, does not tell you when to train hard and does not diagnose any condition.
 
 > Educational information, not a diagnosis or medical treatment.

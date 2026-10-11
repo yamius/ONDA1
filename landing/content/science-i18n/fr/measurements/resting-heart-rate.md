@@ -1,5 +1,5 @@
 ---
-sourceHash: 8eab4cb30ee9
+sourceHash: 5b7474fd9981
 title: "Fréquence cardiaque au repos : ce qu’elle reflète et comment la mesurer"
 metaTitle: "Fréquence cardiaque au repos : sens et mesure"
 metaDescription: "Fréquence cardiaque au repos : comment la mesurer, ce que « normal » veut dire, ce qui la fait varier, et pourquoi votre tendance compte plus qu’un chiffre."
@@ -112,6 +112,6 @@ Pour voir comment la fréquence cardiaque au repos et la variabilité de la fré
 
 ## Dans ONDA
 
-La fréquence cardiaque au repos est l’un des trois signaux nocturnes de la référence personnelle d’ONDA, avec la HRV et la fréquence respiratoire. ONDA la lit dans Apple Health — où l’inscrit l’Apple Watch ou tout appareil dont l’application y synchronise les données cardiaques — et construit votre référence personnelle sur {{fact:baseline.window}}. L’application compare chaque nuit à votre propre couloir, jamais à une norme de population, et ne signale un changement que s’il dépasse aussi des seuils minimaux : {{fact:baseline.floors}}. Sans montre, la caméra du téléphone donne une mesure du pouls au repos, mais sans les fonctions de référence personnelle. ONDA décrit des changements ; elle ne pose aucun diagnostic [S8]. Voir [ce que mesure ONDA](/measurements).
+La fréquence cardiaque au repos est l’un des trois signaux de la référence personnelle d’ONDA, avec la HRV et la fréquence respiratoire. ONDA la lit dans Apple Health — où l’inscrit l’Apple Watch ou tout appareil dont l’application y synchronise les données cardiaques — et construit votre référence personnelle sur {{fact:baseline.window}}. L’application compare chaque nuit à votre propre couloir, jamais à une norme de population, et ne signale un changement que s’il dépasse aussi des seuils minimaux : {{fact:baseline.floors}}. Sans montre, la caméra du téléphone donne une mesure du pouls au repos, mais sans les fonctions de référence personnelle. ONDA décrit des changements ; elle ne pose aucun diagnostic [S8]. Voir [ce que mesure ONDA](/measurements).
 
 > Information éducative, pas un diagnostic ni un traitement médical.

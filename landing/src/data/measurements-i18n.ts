@@ -36,7 +36,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
   en: {
     metaTitle: 'What ONDA Measures — HRV, Coherence & What’s Estimated | ONDA Life',
     metaDescription:
-      'Exactly what ONDA reads (heart rate, HRV from Apple Health), what it derives (coherence, your nightly baseline), how often it notifies you — and what it does not measure.',
+      'Exactly what ONDA reads (heart rate, HRV from Apple Health), what it derives (coherence, your personal baseline), how often it notifies you — and what it does not measure.',
     kicker: '[ WHAT ONDA MEASURES ]',
     h1: 'What ONDA actually measures.',
     heroLead:
@@ -65,9 +65,9 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       },
       {
         signal: 'Resting heart rate, breathing rate',
-        source: 'Read from Apple Health (nightly values recorded by an Apple Watch)',
+        source: 'Read from Apple Health (values recorded by an Apple Watch)',
         kind: 'health',
-        meaning: 'Two of the three nightly signals in your baseline, alongside HRV.',
+        meaning: 'Two of the three signals in your baseline, alongside HRV.',
       },
       {
         signal: 'VO₂max, walking heart rate, 1-minute heart-rate recovery',
@@ -77,10 +77,10 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       },
       {
         signal: 'Personal baseline',
-        source: 'Nightly HRV, resting heart rate and breathing rate from Apple Health over the last 14 days',
+        source: 'HRV, resting heart rate and breathing rate from Apple Health over the last 14 days',
         kind: 'derived',
         meaning:
-          'Your own corridor — the average of your recent nights plus or minus one standard deviation. ONDA flags a night only when it is at least 1.5 standard deviations outside and has changed by a minimum amount.',
+          'Your own corridor — the average of your recent nights plus or minus one standard deviation. ONDA flags a night only when it is at least 1.5 standard deviations outside and has changed by a minimum amount. How the values are taken: the 14-day card averages all of a day’s samples, day by day. For signals, HRV counts only samples recorded before 09:00, at least three a day; resting heart rate is Apple’s daily value; breathing rate uses Apple’s samples, which are usually recorded during sleep.',
       },
     ],
     notMeasuredPre: 'What ONDA does ',
@@ -101,7 +101,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
     faq: [
       {
         q: 'What does ONDA actually measure?',
-        a: 'ONDA measures heart rate via an Apple Watch, Apple Health or the iPhone camera (PPG) at rest, and reads heart-rate variability (HRV, SDNN) ready-made from Apple Health — written there by an Apple Watch or by another device that syncs heart data to Apple Health; ONDA does not compute HRV itself. It also reads resting heart rate, breathing rate, VO₂max, walking heart rate and 1-minute heart-rate recovery from Apple Health. From nightly values it builds your personal baseline and, with an Apple Watch, shows a live coherence score. It does not measure blood biomarkers, brain activity or sleep stages.',
+        a: 'ONDA measures heart rate via an Apple Watch, Apple Health or the iPhone camera (PPG) at rest, and reads heart-rate variability (HRV, SDNN) ready-made from Apple Health — written there by an Apple Watch or by another device that syncs heart data to Apple Health; ONDA does not compute HRV itself. It also reads resting heart rate, breathing rate, VO₂max, walking heart rate and 1-minute heart-rate recovery from Apple Health. From these values it builds your personal baseline and, with an Apple Watch, shows a live coherence score. It does not measure blood biomarkers, brain activity or sleep stages.',
       },
       {
         q: 'Is ONDA’s coherence score a medical or clinical measurement?',
@@ -134,7 +134,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
   ru: {
     metaTitle: 'Что измеряет ONDA — HRV, когерентность и что оценивается | ONDA Life',
     metaDescription:
-      'Что именно ONDA считывает (пульс, HRV из Apple Health), что выводит (когерентность, ночной базовый уровень), как часто присылает уведомления — и чего не измеряет.',
+      'Что именно ONDA считывает (пульс, HRV из Apple Health), что выводит (когерентность, персональный базовый уровень), как часто присылает уведомления — и чего не измеряет.',
     kicker: '[ ЧТО ИЗМЕРЯЕТ ONDA ]',
     h1: 'Что ONDA на самом деле измеряет.',
     heroLead:
@@ -163,9 +163,9 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       },
       {
         signal: 'Пульс в покое, частота дыхания',
-        source: 'Считываются из Apple Health (ночные значения, записанные Apple Watch)',
+        source: 'Считываются из Apple Health (значения, записанные Apple Watch)',
         kind: 'health',
-        meaning: 'Два из трёх ночных сигналов вашего базового уровня, вместе с HRV.',
+        meaning: 'Два из трёх сигналов вашего базового уровня, вместе с HRV.',
       },
       {
         signal: 'VO₂max, пульс при ходьбе, восстановление пульса за 1 минуту',
@@ -175,10 +175,10 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       },
       {
         signal: 'Персональный базовый уровень',
-        source: 'Ночные HRV, пульс в покое и частота дыхания из Apple Health за последние 14 дней',
+        source: 'HRV, пульс в покое и частота дыхания из Apple Health за последние 14 дней',
         kind: 'derived',
         meaning:
-          'Ваш собственный коридор — среднее за последние ночи плюс-минус одно стандартное отклонение. ONDA отмечает ночь, только если та выходит за него не менее чем на 1,5 стандартного отклонения и изменилась на минимальную величину.',
+          'Ваш собственный коридор — среднее за последние ночи плюс-минус одно стандартное отклонение. ONDA отмечает ночь, только если та выходит за него не менее чем на 1,5 стандартного отклонения и изменилась на минимальную величину. Как берутся значения: карточка за 14 дней усредняет все записи за день, день за днём. Для сигналов HRV учитывается только по записям до 09:00, не меньше трёх в день; пульс в покое — дневное значение Apple; частота дыхания — записи Apple, которые обычно делаются во сне.',
       },
     ],
     notMeasuredPre: 'Чего ONDA ',
@@ -199,7 +199,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
     faq: [
       {
         q: 'Что ONDA на самом деле измеряет?',
-        a: 'ONDA измеряет пульс через Apple Watch, Apple Health или камерой iPhone (PPG) в покое, а вариабельность сердечного ритма (HRV, SDNN) берёт готовой из Apple Health — туда её записывают Apple Watch или другое устройство, которое синхронизирует данные о сердце с Apple Health; сама ONDA HRV не вычисляет. Ещё она читает из Apple Health пульс в покое, частоту дыхания, VO₂max, пульс при ходьбе и восстановление пульса за 1 минуту. По ночным значениям она строит ваш персональный базовый уровень, а при подключённых Apple Watch показывает живой показатель когерентности. Она не измеряет кровяные биомаркеры, активность мозга или стадии сна.',
+        a: 'ONDA измеряет пульс через Apple Watch, Apple Health или камерой iPhone (PPG) в покое, а вариабельность сердечного ритма (HRV, SDNN) берёт готовой из Apple Health — туда её записывают Apple Watch или другое устройство, которое синхронизирует данные о сердце с Apple Health; сама ONDA HRV не вычисляет. Ещё она читает из Apple Health пульс в покое, частоту дыхания, VO₂max, пульс при ходьбе и восстановление пульса за 1 минуту. По этим значениям она строит ваш персональный базовый уровень, а при подключённых Apple Watch показывает живой показатель когерентности. Она не измеряет кровяные биомаркеры, активность мозга или стадии сна.',
       },
       {
         q: 'Показатель когерентности ONDA — это медицинское или клиническое измерение?',
@@ -232,7 +232,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
   es: {
     metaTitle: 'Qué mide ONDA — HRV, coherencia y qué se estima | ONDA Life',
     metaDescription:
-      'Qué lee ONDA exactamente (frecuencia cardíaca, HRV de Apple Salud), qué deriva (coherencia, tu línea base nocturna), con qué frecuencia te avisa — y lo que no mide.',
+      'Qué lee ONDA exactamente (frecuencia cardíaca, HRV de Apple Salud), qué deriva (coherencia, tu línea base personal), con qué frecuencia te avisa — y lo que no mide.',
     kicker: '[ QUÉ MIDE ONDA ]',
     h1: 'Qué mide realmente ONDA.',
     heroLead:
@@ -261,9 +261,9 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       },
       {
         signal: 'Frecuencia cardíaca en reposo, frecuencia respiratoria',
-        source: 'Se leen de Apple Salud (valores nocturnos registrados por un Apple Watch)',
+        source: 'Se leen de Apple Salud (valores registrados por un Apple Watch)',
         kind: 'health',
-        meaning: 'Dos de las tres señales nocturnas de tu línea base, junto con la HRV.',
+        meaning: 'Dos de las tres señales de tu línea base, junto con la HRV.',
       },
       {
         signal: 'VO₂máx, frecuencia cardíaca al caminar, recuperación de la frecuencia cardíaca en 1 minuto',
@@ -273,10 +273,10 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       },
       {
         signal: 'Línea base personal',
-        source: 'HRV, frecuencia cardíaca en reposo y frecuencia respiratoria nocturnas de Apple Salud de los últimos 14 días',
+        source: 'HRV, frecuencia cardíaca en reposo y frecuencia respiratoria de Apple Salud de los últimos 14 días',
         kind: 'derived',
         meaning:
-          'Tu propio corredor: la media de tus noches recientes más o menos una desviación estándar. ONDA marca una noche solo cuando queda al menos 1,5 desviaciones estándar fuera y ha cambiado en una cantidad mínima.',
+          'Tu propio corredor: la media de tus noches recientes más o menos una desviación estándar. ONDA marca una noche solo cuando queda al menos 1,5 desviaciones estándar fuera y ha cambiado en una cantidad mínima. Cómo se toman los valores: la tarjeta de 14 días promedia todas las muestras de cada día. Para las señales, la HRV cuenta solo con muestras registradas antes de las 09:00, al menos tres al día; la frecuencia cardíaca en reposo es el valor diario de Apple; la frecuencia respiratoria usa las muestras de Apple, que suelen registrarse durante el sueño.',
       },
     ],
     notMeasuredPre: 'Qué ',
@@ -297,7 +297,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
     faq: [
       {
         q: '¿Qué mide realmente ONDA?',
-        a: 'ONDA mide la frecuencia cardíaca vía Apple Watch, Apple Salud o la cámara del iPhone (PPG) en reposo, y lee la variabilidad de la frecuencia cardíaca (HRV, SDNN) ya calculada de Apple Salud, donde la escribe un Apple Watch u otro dispositivo que sincroniza datos del corazón con Apple Salud; ONDA no calcula la HRV por sí misma. También lee de Apple Salud la frecuencia cardíaca en reposo, la frecuencia respiratoria, el VO₂máx, la frecuencia cardíaca al caminar y la recuperación de la frecuencia cardíaca en 1 minuto. Con los valores nocturnos construye tu línea base personal y, con un Apple Watch, muestra una puntuación de coherencia en vivo. No mide biomarcadores en sangre, actividad cerebral ni fases del sueño.',
+        a: 'ONDA mide la frecuencia cardíaca vía Apple Watch, Apple Salud o la cámara del iPhone (PPG) en reposo, y lee la variabilidad de la frecuencia cardíaca (HRV, SDNN) ya calculada de Apple Salud, donde la escribe un Apple Watch u otro dispositivo que sincroniza datos del corazón con Apple Salud; ONDA no calcula la HRV por sí misma. También lee de Apple Salud la frecuencia cardíaca en reposo, la frecuencia respiratoria, el VO₂máx, la frecuencia cardíaca al caminar y la recuperación de la frecuencia cardíaca en 1 minuto. Con estos valores construye tu línea base personal y, con un Apple Watch, muestra una puntuación de coherencia en vivo. No mide biomarcadores en sangre, actividad cerebral ni fases del sueño.',
       },
       {
         q: '¿La puntuación de coherencia de ONDA es una medición médica o clínica?',
