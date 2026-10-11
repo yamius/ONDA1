@@ -65,7 +65,7 @@ SKY is unusual among the techniques on this site in that it's **taught, not self
 
 ## See your body respond
 
-The slow-breathing core of SKY is measurable. ONDA reads your pulse from your phone camera or Apple Watch, and your [HRV](/science/concepts/heart-rate-variability) from Apple Watch, so you can watch how slow Ujjayi-style breathing settles your heart and track whether [your baseline](/science/concepts/hrv-baseline) shifts with regular practice.
+The slow-breathing core of SKY is measurable. ONDA reads your pulse from your phone camera or Apple Watch, and your [HRV](/science/concepts/heart-rate-variability) from Apple Health (Apple Watch or another tracker that syncs there), so you can watch how slow Ujjayi-style breathing settles your heart and track whether [your baseline](/science/concepts/hrv-baseline) shifts with regular practice.
 
 *Sources include Janakiramaiah et al., 2000 (Journal of Affective Disorders) and Seppälä et al., 2014 (Journal of Traumatic Stress). ONDA is a breathing and HRV biofeedback app, not a medical device. SKY is not a replacement for professional treatment of depression or PTSD.*
 `,

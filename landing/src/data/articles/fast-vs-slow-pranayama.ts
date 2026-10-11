@@ -65,7 +65,7 @@ Interestingly, Indian research has also examined the two families' effects on co
 
 ## See which way your breath takes you
 
-Because fast and slow pranayama pull your nervous system in opposite directions, you can watch the difference. ONDA reads your pulse from your phone camera, or your HRV from your Apple Watch, so you can see your heart rate rise with fast breathing and settle with slow — in real time. Trying both and watching your own numbers makes the distinction obvious, and helps you pick the right tool for the moment.
+Because fast and slow pranayama pull your nervous system in opposite directions, you can watch the difference. ONDA reads your pulse from your phone camera, or your HRV from Apple Health (Apple Watch or another tracker that syncs there), so you can see your heart rate rise with fast breathing and settle with slow — in real time with an Apple Watch. Trying both and watching your own numbers makes the distinction obvious, and helps you pick the right tool for the moment.
 `,
 }
 

@@ -63,7 +63,7 @@ For a lot of people, closing their eyes to meditate backfires — they get sleep
 
 ## See its effect on your body
 
-Because Rajyoga produces measurable autonomic shifts, you can track them. ONDA reads your pulse from your phone camera, or your HRV from your Apple Watch, so you can see how an open-eyed meditative session settles your heart rhythm — and whether your [baseline strengthens over weeks](/articles/how-to-raise-hrv-naturally). It's a way to confirm that even an unfamiliar, eyes-open practice is genuinely shifting your nervous system.
+Because Rajyoga produces measurable autonomic shifts, you can track them. ONDA reads your pulse from your phone camera, or your HRV from Apple Health (Apple Watch or another tracker that syncs there), so you can see how an open-eyed meditative session settles your heart rhythm — and whether your [baseline strengthens over weeks](/articles/how-to-raise-hrv-naturally). It's a way to confirm that even an unfamiliar, eyes-open practice is genuinely shifting your nervous system.
 `,
   howToSteps: [
     {

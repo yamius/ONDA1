@@ -2461,7 +2461,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "How does ONDA track heart-rate recovery?",
       answer:
-        "ONDA reads a one-minute recovery figure as one of its baseline extras, alongside resting heart rate, HRV, estimated VO₂max and peak and walking heart rate, from an Apple Watch and against your own history. So you see recovery as a trend — speeding up as training pays off, or slowing as fatigue builds — rather than a one-off test.",
+        "ONDA reads a one-minute recovery figure as one of its baseline extras, alongside resting heart rate, HRV, estimated VO₂max and peak and walking heart rate, from Apple Health — from your Apple Watch or another tracker that syncs there — and against your own history. So you see recovery as a trend — speeding up as training pays off, or slowing as fatigue builds — rather than a one-off test.",
     },
     {
       question: "How do I improve my heart-rate recovery?",

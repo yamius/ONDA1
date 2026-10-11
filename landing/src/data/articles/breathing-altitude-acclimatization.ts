@@ -63,7 +63,7 @@ Altitude is not the place to experiment carelessly:
 
 ## See your body respond
 
-At altitude your [resting heart rate](/science/measurements/resting-heart-rate) rises and your [HRV](/science/concepts/heart-rate-variability) typically falls as your body works to adapt. ONDA reads your pulse from your phone camera, or your HRV from your Apple Watch, so you can watch how [your baseline](/science/concepts/hrv-baseline) shifts with altitude and how it changes as you stay: in some people it partly recovers, while at very high altitude the balance may not return even within several weeks. You can also see the immediate effect of a breathing session on your heart rhythm. Your own trend is a useful companion to how you feel, never a replacement for good mountain judgment.
+At altitude your [resting heart rate](/science/measurements/resting-heart-rate) rises and your [HRV](/science/concepts/heart-rate-variability) typically falls as your body works to adapt. ONDA reads your pulse from your phone camera, or your HRV from Apple Health (Apple Watch or another tracker that syncs there), so you can watch how [your baseline](/science/concepts/hrv-baseline) shifts with altitude and how it changes as you stay: in some people it partly recovers, while at very high altitude the balance may not return even within several weeks. You can also see the immediate effect of a breathing session on your heart rhythm. Your own trend is a useful companion to how you feel, never a replacement for good mountain judgment.
 `,
 }
 

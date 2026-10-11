@@ -57,7 +57,7 @@ This is the case for [meditation with measurable feedback](/articles/measuring-m
 
 ## Track the progress you can measure
 
-You can't record your gamma waves at home, but you can see how your body responds to practice. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from your Apple Watch (or your pulse from your phone camera) and shows how they respond during sessions and trend over weeks. A lasting rise in resting HRV from meditation is not guaranteed, and other habits that [can raise HRV](/articles/how-to-raise-hrv-naturally) matter too, so read the trend as feedback, not as proof of brain change.
+You can't record your gamma waves at home, but you can see how your body responds to practice. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from Apple Health (Apple Watch or another tracker that syncs there), or your pulse from your phone camera and shows how they respond during sessions and trend over weeks. A lasting rise in resting HRV from meditation is not guaranteed, and other habits that [can raise HRV](/articles/how-to-raise-hrv-naturally) matter too, so read the trend as feedback, not as proof of brain change.
 `,
 }
 

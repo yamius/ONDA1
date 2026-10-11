@@ -69,7 +69,7 @@ The steadiness matters as much as the depth: a calm, even rhythm centered low in
 
 ## See your own response
 
-The autonomic side of tanden breathing — the vagal, HRV-raising effect — is something you can watch directly. ONDA reads your pulse from your phone camera, or your HRV from your Apple Watch, so you can see your heart rate settle and, on the watch, your HRV rise as you breathe slowly from the tanden. While you can't see serotonin, you can confirm you've found the deep, slow rhythm the Japanese research describes.
+The autonomic side of tanden breathing — the vagal, HRV-raising effect — is something you can watch directly. ONDA reads your pulse from your phone camera, or your HRV from Apple Health (Apple Watch or another tracker that syncs there), so you can see your heart rate settle and, on the watch, your HRV rise as you breathe slowly from the tanden. While you can't see serotonin, you can confirm you've found the deep, slow rhythm the Japanese research describes.
 `,
   howToSteps: [
     {

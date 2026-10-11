@@ -185,7 +185,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
       },
       {
         q: 'Can ONDA read my Garmin data?',
-        a: 'Not directly at the moment: Garmin is not accepting new developer applications. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Watch.',
+        a: 'Not directly at the moment: Garmin is not accepting new developer applications. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Health (Apple Watch or another tracker that syncs there).',
       },
     ],
   },
@@ -211,7 +211,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     faq: [
       {
         q: 'Can ONDA read my Fitbit or Pixel Watch HRV?',
-        a: 'Not directly: Google is not accepting new projects for its health API. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Watch.',
+        a: 'Not directly: Google is not accepting new projects for its health API. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Health (Apple Watch or another tracker that syncs there).',
       },
     ],
   },
@@ -237,7 +237,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     faq: [
       {
         q: 'Can ONDA read Samsung Health?',
-        a: 'Not from this website: Samsung Health has no public web API. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Watch.',
+        a: 'Not from this website: Samsung Health has no public web API. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Health (Apple Watch or another tracker that syncs there).',
       },
     ],
   },
@@ -289,7 +289,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     faq: [
       {
         q: 'Can ONDA read my Ultrahuman data?',
-        a: 'Not directly: we have not found an official public API. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Watch.',
+        a: 'Not directly: we have not found an official public API. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Health (Apple Watch or another tracker that syncs there).',
       },
     ],
   },
@@ -314,7 +314,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     faq: [
       {
         q: 'Can ONDA read my RingConn data?',
-        a: 'Not directly: there is no public API we can use. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Watch.',
+        a: 'Not directly: there is no public API we can use. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Health (Apple Watch or another tracker that syncs there).',
       },
     ],
   },
@@ -339,7 +339,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     faq: [
       {
         q: 'Can ONDA read my Amazfit data?',
-        a: 'Not directly: there is no public API we can use. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Watch.',
+        a: 'Not directly: there is no public API we can use. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Health (Apple Watch or another tracker that syncs there).',
       },
     ],
   },

@@ -61,7 +61,7 @@ Meditation with visible progress isn't just more satisfying; it's more likely to
 
 ## Track your own adaptation
 
-You can't scan your own gray matter, but you can track the autonomic signs of the same underlying change. ONDA reads your resting heart rate and HRV from your Apple Watch (or your pulse from your phone camera), and shows how they respond during practice and trend over weeks. Instead of practicing blind and hoping, you see your nervous system adapting — the visible progress that turns meditation from a leap of faith into a trainable skill with feedback.
+You can't scan your own gray matter, but you can track the autonomic signs of the same underlying change. ONDA reads your resting heart rate and HRV from Apple Health (Apple Watch or another tracker that syncs there), or your pulse from your phone camera, and shows how they respond during practice and trend over weeks. Instead of practicing blind and hoping, you see your nervous system adapting — the visible progress that turns meditation from a leap of faith into a trainable skill with feedback.
 `,
 }
 

@@ -142,11 +142,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "chronotherapy-light-dark-timing": {
     "published": "2026-09-23T13:54:36+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "circadian-lighting-dark-therapy": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-10-08T01:38:48+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "circadian-reset-mastering-light": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -190,7 +190,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "doctors-and-your-data": {
     "published": "2026-09-26T13:37:15+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "does-dopamine-detox-work": {
     "published": "2026-06-04T15:03:27+02:00",
@@ -206,7 +206,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "eating-late-heart-rate-sleep": {
     "published": "2026-09-18T14:42:44+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "electric-medicine-neuromodulation": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -274,7 +274,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-much-meditation-do-you-need": {
     "published": "2026-09-23T15:19:19+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "how-much-sleep-do-you-need": {
     "published": "2026-06-04T17:34:04+02:00",
@@ -358,7 +358,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "jhana-meditation-stages": {
     "published": "2026-09-23T20:27:09+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "longevity-hardware-cellular-cleanup": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -374,7 +374,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "measuring-meditation-progress": {
     "published": "2026-09-23T15:19:19+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "meditation-adverse-effects-safety": {
     "published": "2026-09-23T23:36:32+02:00",
@@ -402,11 +402,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "meditation-neuroscience-expert-monks": {
     "published": "2026-09-23T20:27:09+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "meditation-vs-breathwork": {
     "published": "2026-09-23T18:39:06+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "meditation-with-apple-watch": {
     "published": "2026-09-19T00:21:25+02:00",
@@ -414,7 +414,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "meditation-with-measurable-progress": {
     "published": "2026-09-23T20:27:09+02:00",
-    "modified": "2026-10-07T20:44:19+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "metabolic-flexibility-dual-fuel-system": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -486,7 +486,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "normal-hrv-by-age": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-10-09T00:24:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "nose-vs-mouth-breathing": {
     "published": "2026-09-22T08:22:18+02:00",
@@ -498,47 +498,47 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "onda-report-for-your-cardiologist": {
     "published": "2026-09-26T13:37:15+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "onda-report-for-your-endocrinologist": {
     "published": "2026-09-26T19:23:02+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "onda-report-for-your-gp": {
     "published": "2026-09-26T13:37:15+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "onda-report-for-your-gynecologist": {
     "published": "2026-09-26T19:23:02+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "onda-report-for-your-neurologist": {
     "published": "2026-09-26T19:23:02+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "onda-report-for-your-occupational-health-doctor": {
     "published": "2026-09-26T19:23:02+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "onda-report-for-your-pulmonologist": {
     "published": "2026-09-26T19:23:02+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "onda-report-for-your-rehabilitation-team": {
     "published": "2026-09-26T19:23:02+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "onda-report-for-your-sleep-specialist": {
     "published": "2026-09-26T13:37:15+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "onda-report-for-your-sports-doctor": {
     "published": "2026-09-26T13:37:15+02:00",
-    "modified": "2026-10-10T05:57:01+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "onda-report-for-your-therapist-or-psychiatrist": {
     "published": "2026-09-26T16:06:06+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "overtraining-hrv-resting-heart-rate": {
     "published": "2026-09-18T14:42:44+02:00",
@@ -634,7 +634,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "talk-to-your-doctor-about-wearable-data": {
     "published": "2026-09-26T13:37:15+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "tanden-breathing-serotonin": {
     "published": "2026-09-23T14:20:18+02:00",
@@ -706,7 +706,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "yoga-nidra-sleep-science": {
     "published": "2026-09-24T12:39:03+02:00",
-    "modified": "2026-10-08T00:57:23+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "yoga-poses-heart-rate-blood-pressure": {
     "published": "2026-09-24T15:46:00+02:00",
@@ -718,7 +718,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "zazen-zen-meditation-brain": {
     "published": "2026-09-23T18:39:06+02:00",
-    "modified": "2026-10-06T14:45:35+02:00"
+    "modified": "2026-10-11T02:19:05+02:00"
   },
   "zen-koans-brain-cognition": {
     "published": "2026-09-23T19:44:44+02:00",
@@ -1618,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-11T01:25:25+02:00"
+    "modified": "2026-10-11T04:12:10+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1670,7 +1670,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/research": {
     "published": "2026-05-22T18:20:34+02:00",
-    "modified": "2026-10-05T23:51:56+02:00"
+    "modified": "2026-10-11T04:12:03+02:00"
   },
   "page:/science": {
     "published": "2026-10-04T21:18:25+02:00",
@@ -1706,7 +1706,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/people/yakiv-bilenko": {
     "published": "2026-09-06T20:46:58+02:00",
-    "modified": "2026-10-11T01:25:25+02:00"
+    "modified": "2026-10-11T04:12:03+02:00"
   },
   "page:/hrv-biofeedback": {
     "published": "2026-09-06T18:43:00+02:00",
@@ -1718,11 +1718,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/connect": {
     "published": "2026-10-11T01:10:33+02:00",
-    "modified": "2026-10-11T01:25:47+02:00"
+    "modified": "2026-10-11T04:12:10+02:00"
   },
   "page:/connect/:device": {
     "published": "2026-10-11T01:10:33+02:00",
-    "modified": "2026-10-11T01:25:47+02:00"
+    "modified": "2026-10-11T04:12:10+02:00"
   },
   "page:/hrv-vs-coherence": {
     "published": "2026-09-07T20:12:03+02:00",
@@ -1793,7 +1793,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/water": {
-    "published": "2026-10-10T23:54:38.285Z",
+    "published": "2026-10-11T02:14:15.622Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/alcohol": {
@@ -1841,15 +1841,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-27T20:00:23+02:00"
   },
   "tool:/tools/digital-detox": {
-    "published": "2026-10-10T23:54:38.240Z",
+    "published": "2026-10-11T02:14:15.589Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/burnout": {
-    "published": "2026-10-10T23:54:38.237Z",
+    "published": "2026-10-11T02:14:15.582Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/nervous-system": {
-    "published": "2026-10-10T23:54:38.249Z",
+    "published": "2026-10-11T02:14:15.603Z",
     "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/wim-hof": {

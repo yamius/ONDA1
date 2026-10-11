@@ -55,7 +55,7 @@ Across the studies, one signal recurs: the cellular effects, where present, scal
 
 ## Focus on what you can measure
 
-Telomere length isn't something you'll track at home, and its response to meditation is uncertain. What you *can* [track](/articles/measuring-meditation-progress) — and what reliably responds to practice — is your autonomic health. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from your Apple Watch (or your pulse from your phone camera), showing the stress-reducing, cardiovascular benefits that are both well-established and linked to healthier aging. Rather than chasing an uncertain cellular marker, you can watch the solid, measurable signs of a calmer, better-regulated system.
+Telomere length isn't something you'll track at home, and its response to meditation is uncertain. What you *can* [track](/articles/measuring-meditation-progress) — and what reliably responds to practice — is your autonomic health. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from Apple Health (Apple Watch or another tracker that syncs there), or your pulse from your phone camera, showing the stress-reducing, cardiovascular benefits that are both well-established and linked to healthier aging. Rather than chasing an uncertain cellular marker, you can watch the solid, measurable signs of a calmer, better-regulated system.
 `,
 }
 
