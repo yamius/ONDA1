@@ -47,4 +47,10 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
+  // Web Workers (task 082: Apple Health export reader) get their own folder so vercel.json can send
+  // them a strict CSP of their own — a worker's CSP comes from ITS response, not the page's.
+  worker: {
+    format: 'es',
+    rollupOptions: { output: { entryFileNames: 'assets/workers/[name]-[hash].js', chunkFileNames: 'assets/workers/[name]-[hash].js' } },
+  },
 })

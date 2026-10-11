@@ -25,6 +25,7 @@
     "@supabase/supabase-js": "^2.98.0",
     "compression": "^1.8.1",
     "express": "^5.2.1",
+    "fflate": "^0.8.2",
     "gray-matter": "^4.0.3",
     "helmet": "^8.1.0",
     "i18next": "^23.16.4",
@@ -38,6 +39,7 @@
     "react-i18next": "^15.4.0",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.1",
+    "saxes": "^6.0.0",
     "three": "^0.169.0",
     "tsx": "^4.21.0"
   },
