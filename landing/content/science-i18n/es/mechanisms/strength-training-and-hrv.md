@@ -1,7 +1,7 @@
 ---
 sourceHash: e83b1b460cc2
 title: "Entrenamiento de fuerza y HRV: bajada aguda, mejoras lentas y lagunas reconocidas"
-metaTitle: "Entrenamiento de fuerza y HRV: qué dice la evidencia"
+metaTitle: "Fuerza y HRV: qué dice la evidencia"
 metaDescription: "Qué le hace una sesión de fuerza a la HRV, qué se sabe del entrenamiento a largo plazo en personas mayores y por qué no se ha demostrado una subida en jóvenes."
 shortAnswer: >
   Justo después de una sesión de fuerza, la variabilidad de la frecuencia
