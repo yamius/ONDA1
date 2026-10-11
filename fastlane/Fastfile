@@ -207,13 +207,13 @@ platform :ios do
     notification(
       title: "ONDA iOS",
       message: "Successfully completed '#{lane}' lane!"
-    )
+    ) unless ENV["CI"]
   end
 
   error do |lane, exception|
     notification(
       title: "ONDA iOS Error",
       message: "Failed in '#{lane}' lane: #{exception.message}"
-    )
+    ) unless ENV["CI"]
   end
 end
