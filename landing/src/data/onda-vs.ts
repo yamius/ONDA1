@@ -286,7 +286,7 @@ export const ONDA_VS: OndaVsEntry[] = [
       'Guided / paced breathing': 'Breathwrk’s deep exercise library is its core strength.',
     },
     bestForOnda:
-      'Choose ONDA if you want HRV biofeedback and a coherence score as the core experience, using just your phone or Apple Watch — no Bluetooth sensor.',
+      'Choose ONDA if you want HRV biofeedback and a coherence score as the core experience, with an Apple Watch — no chest strap or Bluetooth sensor.',
     bestForThem:
       'Choose Breathwrk if you mainly want a large library of guided breathing exercises and classes, and only optionally add HRV monitoring.',
     verdict:
