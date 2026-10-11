@@ -36,7 +36,7 @@ export function ProofSection() {
             </p>
 
             <p className="mt-6 font-mono text-[11px] text-white/35">
-              {t('proof.advisor')} · {t('proof.ratingPending')}
+              {t('proof.ratingPending')}
             </p>
           </div>
 
