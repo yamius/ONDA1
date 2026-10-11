@@ -3,7 +3,7 @@ import type { Article } from './types'
 /**
  * Series "Doctors and Your Data" (tasks 595-600). Honest framing: watch data is context, never a
  * diagnosis; pulse is not rhythm; ONDA report = on-device PDF (baseline, signals, notes), shared only by
- * the user. HRV/breathing baseline from Apple Watch. Not a medical device.
+ * the user. HRV/breathing baseline from Apple Health (Apple Watch or any tracker syncing there). Not a medical device.
  */
 const article: Article = {
   slug: 'talk-to-your-doctor-about-wearable-data',
@@ -88,7 +88,7 @@ Two rules matter most: don't change or stop any medication based on watch data, 
 
 ## Bring your data in a form that works
 
-ONDA was built partly for this moment. It reads your resting heart rate, HRV and breathing from your Apple Watch, shows your personal baseline rather than a population average, and lets you add notes when something changes. You can export your timeline as a clean PDF — baseline, trends and your notes on one document, generated on your device and shared only by you. It's exactly the one-page summary a doctor can read in a minute.
+ONDA was built partly for this moment. It reads your resting heart rate, HRV and breathing from Apple Health — from your Apple Watch or another tracker that syncs there — shows your personal baseline rather than a population average, and lets you add notes when something changes. You can export your timeline as a clean PDF — baseline, trends and your notes on one document, generated on your device and shared only by you. It's exactly the one-page summary a doctor can read in a minute.
 
 *ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device. This article is general information, not medical advice. If you have urgent symptoms, seek medical care immediately.*
 `,

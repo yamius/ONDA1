@@ -80,7 +80,7 @@ If you're in crisis or thinking about harming yourself, contact your local emerg
 
 ## Your body's story, on one page
 
-ONDA builds your personal baseline for resting heart rate, HRV and breathing from your Apple Watch, marks the days you left your usual range, and lets you write a note when something happens. You can export any period as a PDF — generated on your device and shared only by you — so you can bring your body's side of the story into the room, on your terms.
+ONDA builds your personal baseline for resting heart rate, HRV and breathing from Apple Health — from your Apple Watch or another tracker that syncs there — marks the days you left your usual range, and lets you write a note when something happens. You can export any period as a PDF — generated on your device and shared only by you — so you can bring your body's side of the story into the room, on your terms.
 
 *ONDA is a breathing and HRV biofeedback app, not a medical device, and does not diagnose or treat mental health conditions. This article is general information, not medical advice. If you're in crisis, contact your local emergency number or a crisis line.*
 `,

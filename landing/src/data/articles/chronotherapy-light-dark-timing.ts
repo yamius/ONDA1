@@ -60,7 +60,7 @@ Clinical chronotherapy is a medical treatment: this article is educational, not 
 
 ## See your own rhythm
 
-Your circadian health shows up in your body's data — [resting heart rate](/science/measurements/resting-heart-rate), HRV, and sleep timing all follow the clock. ONDA reads these from your Apple Watch and builds your [personal baseline](/science/concepts/hrv-baseline), so a drifting rhythm or a run of poorly timed nights shows up as a real shift in your numbers. Seeing it makes the abstract idea of "body clock" concrete and trackable — a mirror on your own rhythm, not a diagnosis.
+Your circadian health shows up in your body's data — [resting heart rate](/science/measurements/resting-heart-rate), HRV, and sleep timing all follow the clock. ONDA reads these from Apple Health — from your Apple Watch or another tracker that syncs there — and builds your [personal baseline](/science/concepts/hrv-baseline), so a drifting rhythm or a run of poorly timed nights shows up as a real shift in your numbers. Seeing it makes the abstract idea of "body clock" concrete and trackable — a mirror on your own rhythm, not a diagnosis.
 `,
 }
 
