@@ -1,5 +1,5 @@
 ---
-sourceHash: 3e2d8ad38a9d
+sourceHash: 542338be7f2d
 title: "Fréquence respiratoire au repos : ce qu’elle reflète et comment la mesurer"
 metaTitle: "Fréquence respiratoire : sens et mesure"
 metaDescription: "Nombre de respirations par minute au repos : comment le mesurer, ce qui le fait varier, et pourquoi votre tendance nocturne vaut mieux qu’un chiffre isolé."
@@ -89,7 +89,7 @@ La respiration est commandée par le tronc cérébral, qui ajuste sa fréquence 
 
 ## Que montrent les données ?
 
-**Établi — un signal d’alerte clinique.** À l’hôpital, une fréquence respiratoire anormale prédit des événements potentiellement graves, et une fréquence élevée est l’un des tout premiers signes qu’un patient s’aggrave [S1]. La fréquence respiratoire figure couramment dans les systèmes de surveillance et d’alerte — des scores d’alerte précoce qui traduisent les signes vitaux en un niveau d’alerte unique [S2]. Au Royaume-Uni, le National Early Warning Score du Royal College of Physicians, aujourd’hui dans sa deuxième version actualisée, est le système standard utilisé par le NHS pour repérer les maladies aiguës et la dégradation clinique [S13]. Ces données concernent des patients et des écarts **marqués**, mesurés en milieu clinique. Elles ne signifient pas qu’un petit changement d’une nuit à l’autre sur une montre a la même portée.
+**Dépend du contexte — un signal d’alerte clinique.** À l’hôpital, une fréquence respiratoire anormale prédit des événements potentiellement graves, et une fréquence élevée est l’un des tout premiers signes qu’un patient s’aggrave [S1]. La fréquence respiratoire figure couramment dans les systèmes de surveillance et d’alerte — des scores d’alerte précoce qui traduisent les signes vitaux en un niveau d’alerte unique [S2]. Au Royaume-Uni, le National Early Warning Score du Royal College of Physicians, aujourd’hui dans sa deuxième version actualisée, est le système standard utilisé par le NHS pour repérer les maladies aiguës et la dégradation clinique [S13]. Ces données concernent des patients et des écarts **marqués**, mesurés en milieu clinique. Elles ne signifient pas qu’un petit changement d’une nuit à l’autre sur une montre a la même portée.
 
 **Dépend du contexte — la qualité du chiffre.** La valeur d’une fréquence respiratoire relevée dépend du soin avec lequel elle a été mesurée. Les comptages manuels sont sujets à des erreurs systématiques et aléatoires [S2], et un moniteur électronique de chevet n’a pas réglé le problème dans une étude menée aux urgences [S3].
 

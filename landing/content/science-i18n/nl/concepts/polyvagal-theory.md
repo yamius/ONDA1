@@ -1,5 +1,5 @@
 ---
-sourceHash: "928273b6fb80"
+sourceHash: "c9ad9e84df17"
 title: "Polyvagaaltheorie: wat ze stelt, wat standhoudt, wat omstreden is"
 metaTitle: "Polyvagaaltheorie: wat houdt stand?"
 metaDescription: "Wat de polyvagaaltheorie stelt, waarom therapeuten haar gebruiken, wat klopt met de fysiologie en waarom veel experts haar kernaannames onhoudbaar vinden."

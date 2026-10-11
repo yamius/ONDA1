@@ -1,5 +1,5 @@
 ---
-sourceHash: "b24949df5b56"
+sourceHash: "14937f196d56"
 title: "Nucenie, intonowanie i Om: co pokazują badania"
 metaTitle: "Nucenie, intonowanie i Om: badania"
 metaDescription: "Co badania mówią o nuceniu, intonowaniu Om, mantrach i śpiewie chóralnym: tlenek azotu w nosie, wolniejszy oddech, HRV, mózg i gdzie dowodów brakuje."

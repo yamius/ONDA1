@@ -181,7 +181,7 @@ evidenceMap:
     limitation: "Scoping review: it maps associations and does not pool effect sizes or test interventions."
   - claim: "Recovery measurements differ between studies in timing and conditions."
     sources: [S2]
-    class: established
+    class: context-dependent
     claimType: measurement
     quote: "Methodological challenges included variability in recovery timing (e.g., 5- vs. 30-minute windows) and inconsistent reporting of recovery conditions (e.g., posture)."
     limitation: "Describes methods across studies, not a recommended protocol."
@@ -335,8 +335,7 @@ Everyday life is harder. In a study of {{fact:stress.uendes.design}}, machine-le
 
 **By evidence class.**
 
-- **Established.** Studies of recovery after stress measure it in different ways, so their values are hard to compare [S2].
-- **Context-dependent.** Better recovery is associated with resilience, attentional control, reappraisal and nature, as a map of studied factors without effect sizes [S2]; wrist-sensor agreement with ECG comes mostly from resting conditions [S13].
+- **Context-dependent.** Studies of recovery after stress measure it in different ways, so their values are hard to compare [S2]. Better recovery is associated with resilience, attentional control, reappraisal and nature, as a map of studied factors without effect sizes [S2]; wrist-sensor agreement with ECG comes mostly from resting conditions [S13].
 - **Emerging.** Acute mental stress and real exams lower HRV [S1] [S4] [S5]; stressors leave different patterns [S1]; heart rate habituates to repeated stress while anticipation grows [S3]; breathing before stress eases heart rate and anxiety but not HRV or cortisol [S7]; poor sleep amplifies how stress feels, not the cardiovascular reaction [S8]; wearables detect stress in the laboratory [S11] but confuse it with physical activity in daily life [S12].
 - **Debated.** Stress reactivity and mortality, with associations in opposite directions [S10].
 - **Unknown or not shown.** Fitness as a buffer against the stress reaction [S4]; stress reactivity as a predictor of heart disease [S10]; whether anything you do speeds recovery.

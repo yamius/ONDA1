@@ -181,13 +181,13 @@ evidenceMap:
     limitation: "Narrative review; the first author teaches breathwork."
   - claim: "Wim Hof breathing combines periods of hyperventilation with breath-holds at low lung volume."
     sources: [S6]
-    class: established
+    class: emerging
     claimType: definition
     quote: "The Wim Hof breathing method (WHBM) combines periods of hyperventilation (HV) followed by voluntary breath-holds (BH) at low lung volume."
     limitation: "Describes the technique as used in one study; teaching varies."
   - claim: "Hypocapnia increases cerebrovascular resistance and decreases brain blood flow."
     sources: [S10]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "hypocapnia increases cerebrovascular resistance and decreases CBF"
     limitation: "Physiology review; the size of the effect during breathwork was not measured here."
@@ -211,13 +211,13 @@ evidenceMap:
     limitation: "Ten volunteers, three minutes of hyperventilation; old study."
   - claim: "Hyperventilation is a major risk factor for hypoxic blackout during breath-holding because it delays the breaking point, and serial breath-holds after hyperventilation produced progressively deeper falls in oxygen."
     sources: [S7]
-    class: established
+    class: emerging
     claimType: safety
     quote: "Hyperventilation is considered a major risk factor for hypoxic blackout during breath-hold diving, as it delays the apnea breaking point."
     limitation: "Laboratory study with face immersion; the risk statement reflects the field's consensus."
   - claim: "Healthy swimmers have died after becoming unconscious underwater following intentional hyperventilation before submersion."
     sources: [S8]
-    class: established
+    class: emerging
     claimType: safety
     quote: "The men became unconscious underwater after performing intentional hyperventilation before submersion."
     limitation: "Case review from one US state; small number of cases."
@@ -229,7 +229,7 @@ evidenceMap:
     limitation: "Narrative review of diving physiology."
   - claim: "Hyperventilation provokes absence seizures and spike-wave discharges in most children with absence epilepsy and is used as an activation test during EEG."
     sources: [S12]
-    class: established
+    class: context-dependent
     claimType: safety
     quote: "Hyperventilation produces generalized spike-wave discharges on EEG in >90% of patients with childhood absence epilepsy and provokes clinical absence seizures"
     limitation: "Childhood absence epilepsy; risk in other epilepsies differs."

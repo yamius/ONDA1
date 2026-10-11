@@ -1,5 +1,5 @@
 ---
-sourceHash: 3f90a409e444
+sourceHash: faee58737375
 title: "El nervio vago: qué hace y qué es mito"
 metaTitle: "El nervio vago: qué hace y qué es mito"
 metaDescription: "Qué hace de verdad el nervio vago —corazón, intestino, vías respiratorias, garganta, señales al cerebro— y qué ideas populares sobre el tono vagal se exceden."

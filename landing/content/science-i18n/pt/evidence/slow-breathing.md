@@ -1,5 +1,5 @@
 ---
-sourceHash: "57d18386abf8"
+sourceHash: "6f02fd56c607"
 title: "Respiração lenta: o que mostram as evidências"
 metaTitle: "Respiração lenta: o que mostram as evidências"
 metaDescription: "O que a pesquisa mostra sobre a respiração lenta sem retorno — HRV, pressão arterial, estresse, sono, dor — e o que se sabe sobre técnicas populares."

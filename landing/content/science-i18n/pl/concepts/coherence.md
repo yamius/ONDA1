@@ -1,5 +1,5 @@
 ---
-sourceHash: "afc6758ef846"
+sourceHash: "2744e8dc82ed"
 title: "Koherencja fizjologiczna: czym jest, a czym nie jest"
 metaTitle: "Koherencja fizjologiczna: czym jest"
 metaDescription: "Koherencja fizjologiczna to płynny, falowy rytm serca przy wolnym oddechu. Co mierzy, czym różni się od HRV i które twierdzenia o niej to mity."
@@ -70,9 +70,7 @@ W praktyce oznacza to, że:
 
 ## Co pokazują dane?
 
-**Ustalone.** Wolny oddech z indywidualną częstotliwością rezonansową wywołuje duże oscylacje częstości serca i ciśnienia krwi [S4], a w tym tempie oddech, ciśnienie krwi i częstość serca zaczynają działać w jednym rytmie [S3]. Koherencja to rozsądny sposób opisania tego wzorca.
-
-**Zależy od kontekstu.** Biofeedback HRV, który uczy oddychania w tempie rezonansowym i często korzysta z wizualizacji w stylu koherencji, wykazał w badaniach randomizowanych mały do umiarkowanego efekt, a jego autorzy piszą, że dla konkretnych zastosowań potrzeba dalszych badań [S6]. Szczegóły znajdziesz na stronie o [biofeedbacku HRV](/science/evidence/hrv-biofeedback). Te dane dotyczą programu treningowego jako całości.
+**Zależy od kontekstu.** Wolny oddech z indywidualną częstotliwością rezonansową wywołuje duże oscylacje częstości serca i ciśnienia krwi [S4], a w tym tempie oddech, ciśnienie krwi i częstość serca zaczynają działać w jednym rytmie [S3]. Koherencja to rozsądny sposób opisania tego wzorca. Biofeedback HRV, który uczy oddychania w tempie rezonansowym i często korzysta z wizualizacji w stylu koherencji, wykazał w badaniach randomizowanych mały do umiarkowanego efekt, a jego autorzy piszą, że dla konkretnych zastosowań potrzeba dalszych badań [S6]. Szczegóły znajdziesz na stronie o [biofeedbacku HRV](/science/evidence/hrv-biofeedback). Te dane dotyczą programu treningowego jako całości.
 
 **Nieznane.** Nie zostało niezależnie ustalone, czy sam wynik koherencji, jako osobna liczba, przewiduje stan zdrowia, stan emocjonalny lub sprawność. Duża część badań nad tym terminem i sposobem obliczania wyniku pochodzi od autorów związanych z HeartMath, firmą sprzedającą urządzenia do biofeedbacku koherencji [S1, S2]. Twierdzenie, że konkretne emocje przejawiają się w konkretnych wzorcach rytmu serca, to własny model tych autorów [S2].
 

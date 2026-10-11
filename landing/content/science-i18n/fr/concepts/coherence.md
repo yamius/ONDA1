@@ -1,5 +1,5 @@
 ---
-sourceHash: "afc6758ef846"
+sourceHash: "2744e8dc82ed"
 title: "Cohérence physiologique : ce qu’elle est, ce qu’elle n’est pas"
 metaTitle: "Cohérence physiologique : ce qu’elle est"
 metaDescription: "La cohérence physiologique est un rythme cardiaque lisse, en vague, pendant une respiration lente : ce qu’elle mesure, sa différence avec la HRV, les mythes."
@@ -71,9 +71,7 @@ Concrètement :
 
 ## Que montrent les données ?
 
-**Établi.** Une respiration lente à la fréquence de résonance individuelle produit de grandes oscillations de la fréquence cardiaque et de la pression artérielle [S4], et à ce rythme, respiration, pression artérielle et fréquence cardiaque se synchronisent [S3]. La cohérence est une manière raisonnable de décrire ce profil.
-
-**Dépend du contexte.** Le biofeedback de HRV, qui apprend à respirer à sa fréquence de résonance et s’appuie souvent sur un affichage de type cohérence, a montré un effet faible à modéré sur l’ensemble des études randomisées, et ses auteurs estiment que davantage de recherches sont nécessaires pour certains usages [S6]. Les détails figurent sur la page [biofeedback de HRV](/science/evidence/hrv-biofeedback). Ces données portent sur le programme d’entraînement dans son ensemble.
+**Dépend du contexte.** Une respiration lente à la fréquence de résonance individuelle produit de grandes oscillations de la fréquence cardiaque et de la pression artérielle [S4], et à ce rythme, respiration, pression artérielle et fréquence cardiaque se synchronisent [S3]. La cohérence est une manière raisonnable de décrire ce profil. Le biofeedback de HRV, qui apprend à respirer à sa fréquence de résonance et s’appuie souvent sur un affichage de type cohérence, a montré un effet faible à modéré sur l’ensemble des études randomisées, et ses auteurs estiment que davantage de recherches sont nécessaires pour certains usages [S6]. Les détails figurent sur la page [biofeedback de HRV](/science/evidence/hrv-biofeedback). Ces données portent sur le programme d’entraînement dans son ensemble.
 
 **Inconnu.** Il n’a pas été établi de façon indépendante que le score de cohérence lui-même, en tant que chiffre à part, prédise la santé, l’état émotionnel ou la performance. Une grande partie de la recherche à l’origine du terme et de son score vient d’auteurs affiliés à HeartMath, qui vend des appareils de rétroaction de la cohérence [S1, S2]. L’idée que des émotions précises se traduisent par des profils précis du rythme cardiaque est le modèle propre de ces auteurs [S2].
 

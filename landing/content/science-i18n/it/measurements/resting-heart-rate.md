@@ -1,5 +1,5 @@
 ---
-sourceHash: 21579ea1d5e6
+sourceHash: c6abda99ed2f
 title: "Frequenza cardiaca a riposo: cosa riflette e come si misura"
 metaTitle: "Frequenza cardiaca a riposo: significato e misura"
 metaDescription: "La frequenza cardiaca a riposo è la tua frequenza più bassa da fermo. Come si misura, cosa vuol dire normale, cosa la sposta e perché conta la tendenza."

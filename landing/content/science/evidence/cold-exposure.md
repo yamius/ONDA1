@@ -196,7 +196,7 @@ evidenceMap:
     limitation: "Habituation reduces but does not remove the response."
   - claim: "The diving response slows the heart through increased parasympathetic input to the cardiac pacemaker."
     sources: [S4]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "The bradycardia results from increased parasympathetic stimulus to the cardiac pacemaker."
     limitation: "Mechanistic review."

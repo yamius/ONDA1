@@ -1,5 +1,5 @@
 ---
-sourceHash: "140cd5257074"
+sourceHash: "088e2861f077"
 title: "Interocepcja: jak mózg odczuwa ciało"
 metaTitle: "Interocepcja: jak mózg odczuwa ciało"
 metaDescription: "Czym jest interocepcja, jak mierzy się jej odrębne wymiary, co mózg robi z sygnałami z ciała i co badania nad treningiem pokazują, a czego nie."

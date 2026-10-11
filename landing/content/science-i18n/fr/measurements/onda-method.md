@@ -1,5 +1,5 @@
 ---
-sourceHash: 507e4dc4d425
+sourceHash: a4f05e49ea69
 title: "Comment ONDA mesure et interprète les signaux de votre corps"
 metaTitle: "Comment ONDA mesure et lit les signaux du corps"
 metaDescription: "D’où viennent les données d’ONDA, comment elle construit votre référence et vos signaux, ce qui reste sur le téléphone, et les limites de chaque chiffre."

@@ -1,5 +1,5 @@
 ---
-sourceHash: "afc6758ef846"
+sourceHash: "2744e8dc82ed"
 title: "Physiologische Kohärenz: was sie ist und was nicht"
 metaTitle: "Physiologische Kohärenz: was sie ist"
 metaDescription: "Kohärenz ist ein gleichmäßiger, wellenförmiger Herzrhythmus beim langsamen Atmen. Was sie misst, wie sie sich von der HRV unterscheidet und was Mythos ist."
@@ -71,9 +71,7 @@ Praktisch heißt das:
 
 ## Was zeigt die Evidenz?
 
-**Gesichert.** Langsames Atmen mit der individuellen Resonanzfrequenz erzeugt große Schwingungen von Herzfrequenz und Blutdruck [S4], und Atmung, Blutdruck und Herzfrequenz geraten in diesem Tempo in Gleichtakt [S3]. Kohärenz ist eine sinnvolle Beschreibung dieses Musters.
-
-**Kontextabhängig.** HRV-Biofeedback, das Menschen darin trainiert, mit ihrer Resonanzfrequenz zu atmen, und oft eine kohärenzartige Anzeige nutzt, zeigte über randomisierte Studien hinweg einen kleinen bis mittleren Effekt; die Autoren halten für einzelne Anwendungen mehr Forschung für nötig [S6]. Details stehen auf der Seite [HRV-Biofeedback](/science/evidence/hrv-biofeedback). Diese Evidenz betrifft das Trainingsprogramm als Ganzes.
+**Kontextabhängig.** Langsames Atmen mit der individuellen Resonanzfrequenz erzeugt große Schwingungen von Herzfrequenz und Blutdruck [S4], und Atmung, Blutdruck und Herzfrequenz geraten in diesem Tempo in Gleichtakt [S3]. Kohärenz ist eine sinnvolle Beschreibung dieses Musters. HRV-Biofeedback, das Menschen darin trainiert, mit ihrer Resonanzfrequenz zu atmen, und oft eine kohärenzartige Anzeige nutzt, zeigte über randomisierte Studien hinweg einen kleinen bis mittleren Effekt; die Autoren halten für einzelne Anwendungen mehr Forschung für nötig [S6]. Details stehen auf der Seite [HRV-Biofeedback](/science/evidence/hrv-biofeedback). Diese Evidenz betrifft das Trainingsprogramm als Ganzes.
 
 **Unbekannt.** Ob der Kohärenzwert selbst, als eigene Zahl, Gesundheit, emotionalen Zustand oder Leistung vorhersagt, ist nicht unabhängig belegt. Ein großer Teil der Forschung hinter dem Begriff und seiner Bewertung stammt von Autoren, die mit HeartMath verbunden sind – einem Unternehmen, das Geräte für Kohärenz-Feedback verkauft [S1, S2]. Die Behauptung, bestimmte Emotionen zeigten sich als bestimmte Muster des Herzrhythmus, ist das eigene Modell dieser Autoren [S2].
 

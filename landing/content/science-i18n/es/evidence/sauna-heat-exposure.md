@@ -1,5 +1,5 @@
 ---
-sourceHash: "7b165f2bc469"
+sourceHash: "9a926ed2ac7a"
 title: "Sauna y exposición al calor: qué muestra la evidencia"
 metaTitle: "Sauna y exposición al calor: evidencia y riesgos"
 metaDescription: "Sauna finlandesa, cabinas de infrarrojos, baños calientes y terapia térmica clínica: qué muestran los estudios sobre el corazón, la presión arterial y el ánimo, y cuáles son los riesgos reales."

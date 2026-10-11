@@ -1,5 +1,5 @@
 ---
-sourceHash: "254aa41c4a50"
+sourceHash: "855b06082cb7"
 title: "Werkt nervus-vagusstimulatie echt? Wat het bewijs laat zien"
 metaTitle: "Nervus-vagusstimulatie: wat het bewijs laat zien"
 metaDescription: "Nervus-vagusstimulatie heeft door de FDA vrijgegeven medische toepassingen en wisselende resultaten. Wat elk bewijsniveau steunt en welke claims verder gaan."

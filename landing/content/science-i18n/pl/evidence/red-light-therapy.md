@@ -1,5 +1,5 @@
 ---
-sourceHash: "f6488e471877"
+sourceHash: "5e9bed91397e"
 title: "Terapia światłem czerwonym (fotobiomodulacja): co pokazują badania"
 metaTitle: "Terapia światłem czerwonym: co pokazują badania"
 metaDescription: "Fotobiomodulacja wyjaśniona: jak działa dawka, gdzie dowody są solidne (zapalenie błony śluzowej jamy ustnej, część bólu, łysienie), gdzie są wstępne, i bezpieczeństwo oczu."

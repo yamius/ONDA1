@@ -1,5 +1,5 @@
 ---
-sourceHash: "756d4a3d6d33"
+sourceHash: "c8cdf6f30c93"
 title: "Interakcja serca i mózgu: jak serce i mózg ze sobą rozmawiają"
 metaTitle: "Interakcja serca i mózgu: jak ze sobą rozmawiają"
 metaDescription: "Jak mózg steruje biciem serca i jak każde uderzenie wraca sygnałem do mózgu: co jest ustalone, co jest modelem, a które popularne twierdzenia to mity."
@@ -88,9 +88,9 @@ To, jak te sygnały mają się do świadomości ciała w ogóle, omawia strona o
 
 ## Co pokazują dane?
 
-**Ustalone.** Mózg reguluje częstość i siłę skurczu serca przez nerwy autonomiczne i hormony [S1], a baroreceptory przekazują mózgowi informację o każdym uderzeniu serca [S2]. Serce ma własną sieć komórek nerwowych [S11].
+**Ustalone.** Serce ma własną sieć komórek nerwowych [S11].
 
-**Zależy od kontekstu.** Potencjał wywołany biciem serca jest użyteczną miarą badawczą, gdy artefakty są kontrolowane [S3]. Koherencja fizjologiczna — płynna, regularna oscylacja rytmu serca, która pojawia się, gdy wolny oddech zgrywa oddech, ciśnienie krwi i częstość serca — jest mierzalnym wzorcem [S12]; jej mechanikę opisuje strona [oddech a HRV](/science/mechanisms/breathing-and-hrv), a to, czym różni się od samego HRV, wyjaśnia tekst [HRV a koherencja](/hrv-vs-coherence).
+**Zależy od kontekstu.** Mózg reguluje częstość i siłę skurczu serca przez nerwy autonomiczne i hormony [S1], a baroreceptory przekazują mózgowi informację o każdym uderzeniu serca [S2]. Potencjał wywołany biciem serca jest użyteczną miarą badawczą, gdy artefakty są kontrolowane [S3]. Koherencja fizjologiczna — płynna, regularna oscylacja rytmu serca, która pojawia się, gdy wolny oddech zgrywa oddech, ciśnienie krwi i częstość serca — jest mierzalnym wzorcem [S12]; jej mechanikę opisuje strona [oddech a HRV](/science/mechanisms/breathing-and-hrv), a to, czym różni się od samego HRV, wyjaśnia tekst [HRV a koherencja](/hrv-vs-coherence).
 
 **Model, a nie dowód: integracja neurotrzewna.** Model integracji neurotrzewnej zakłada, że te same sieci mózgowe, które pomagają kontrolować uwagę i emocje — w szczególności hamujące drogi od kory przedczołowej przez ciało migdałowate do pnia mózgu — dostosowują też częstość serca, a tym samym HRV [S6]. Jego autorzy podają, że osoby z wyższym HRV zależnym od nerwu błędnego wypadają zwykle lepiej w zadaniach na funkcje wykonawcze związanych z korą przedczołową [S7]. Większe syntezy znajdują związek, ale mały: w wielu badaniach HRV i samoregulacja wykazywały tylko słaby związek, przy czym wyniki były silniejsze w badaniach opublikowanych niż w nieopublikowanych, co wskazuje na błąd publikacyjny [S8]; metaanaliza badań korelacyjnych wykazała słaby związek między HRV zależnym od nerwu błędnego a funkcjami wykonawczymi [S9]; a przegląd systematyczny uznał, że badań jest za mało, by dobrze zrozumieć tę zależność [S10]. To są związki. Są zgodne z modelem, ale nie pokazują, że HRV powoduje lepsze myślenie, ani że podniesienie twojego HRV by je poprawiło. Tak mały związek mówi bardzo niewiele o konkretnej osobie.
 

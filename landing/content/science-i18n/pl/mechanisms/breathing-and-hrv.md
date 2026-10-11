@@ -1,5 +1,5 @@
 ---
-sourceHash: "41115ae9a660"
+sourceHash: "8f8acb125420"
 title: "Jak oddech zmienia HRV — i dlaczego wolny oddech je podnosi"
 metaTitle: "Oddech a HRV: dlaczego wolny oddech je podnosi"
 metaDescription: "Dlaczego zmienność rytmu serca rośnie, gdy oddychasz wolno: rytm serca powiązany z oddechem, odruch z baroreceptorów i rezonans — co ustalone, a co sporne."
@@ -88,9 +88,9 @@ Po pierwsze, wynik zależy od wzorca oddechu w czasie zapisu, więc odczyty z wo
 
 ## Co pokazują badania?
 
-**Ustalone.** Wolny oddech powiększa rytm serca powiązany z oddechem, a HRV i wrażliwość odruchu z baroreceptorów osiągają szczyt w pobliżu tempa rezonansowego [S2, S3]. Duży przegląd systematyczny z metaanalizą wykazał wzrost HRV zależnego od nerwu błędnego w czasie wolnego oddychania, bezpośrednio po pojedynczej sesji i po programach złożonych z wielu sesji [S8]. {{fact:claim.slowExhale}} [S8, S5].
+**Ustalone.** Duży przegląd systematyczny z metaanalizą wykazał wzrost HRV zależnego od nerwu błędnego w czasie wolnego oddychania, bezpośrednio po pojedynczej sesji i po programach złożonych z wielu sesji [S8]. {{fact:claim.slowExhale}} [S8, S5].
 
-**Zależy od kontekstu.** Wyjaśnienie wielkości efektu oparte na rezonansie i odruchu z baroreceptorów [S4, S5, S9]; indywidualne cechy tempa rezonansowego [S6]. W jednym badaniu naprzemiennym (crossover) dodanie elektrycznej stymulacji ucha w czasie wolnego oddychania w tempie rezonansowym nie podniosło HRV dodatkowo — wolny oddech już wywoływał ten efekt [S11].
+**Zależy od kontekstu.** Wolny oddech powiększa rytm serca powiązany z oddechem, a HRV i wrażliwość odruchu z baroreceptorów osiągają szczyt w pobliżu tempa rezonansowego [S2, S3]. Wyjaśnienie wielkości efektu oparte na rezonansie i odruchu z baroreceptorów [S4, S5, S9]; indywidualne cechy tempa rezonansowego [S6]. W jednym badaniu naprzemiennym (crossover) dodanie elektrycznej stymulacji ucha w czasie wolnego oddychania w tempie rezonansowym nie podniosło HRV dodatkowo — wolny oddech już wywoływał ten efekt [S11].
 
 **Wstępne dane.** W randomizowanym badaniu wolny oddech w czasie biofeedbacku doraźnie zwiększał wzmocnienie odruchu z baroreceptorów, a jego spoczynkowa wartość rosła z sesji na sesję [S7]. Czy takie zmiany po treningu mają trwałe skutki dla zdrowia, to osobne pytanie, któremu poświęcamy strony z przeglądem dowodów.
 

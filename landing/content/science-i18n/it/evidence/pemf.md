@@ -1,5 +1,5 @@
 ---
-sourceHash: "fdfd13042508"
+sourceHash: "9bfcf8e49dbe"
 title: "Terapia PEMF (campi elettromagnetici pulsati): cosa mostrano le evidenze"
 metaTitle: "Terapia PEMF: cosa mostrano le evidenze"
 metaDescription: "La terapia con campi elettromagnetici pulsati spiegata: stimolatori ossei medici e tappetini per uso domestico, dove gli studi mostrano sollievo dal dolore e chi dovrebbe evitarla."

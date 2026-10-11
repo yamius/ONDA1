@@ -1,5 +1,5 @@
 ---
-sourceHash: "756d4a3d6d33"
+sourceHash: "c8cdf6f30c93"
 title: "Interação coração–cérebro: como o coração e o cérebro conversam"
 metaTitle: "Interação coração–cérebro: como eles conversam"
 metaDescription: "Como o cérebro comanda o coração e como cada batimento responde ao cérebro: o que está estabelecido, o que é modelo e quais ideias populares são mitos."
@@ -89,9 +89,9 @@ Como esses sinais se relacionam com a consciência corporal em geral é tratado 
 
 ## O que mostram as evidências?
 
-**Estabelecido.** O cérebro regula a frequência e a força do coração por nervos autonômicos e hormônios [S1], e os barorreceptores informam cada batimento ao cérebro [S2]. O coração contém sua própria rede de células nervosas [S11].
+**Estabelecido.** O coração contém sua própria rede de células nervosas [S11].
 
-**Depende do contexto.** O potencial evocado pelo batimento cardíaco é uma medida de pesquisa utilizável quando os artefatos são controlados [S3]. A coerência fisiológica — uma oscilação suave e regular do ritmo cardíaco que aparece quando a respiração lenta faz a respiração, a pressão arterial e a frequência cardíaca entrarem em sincronia — é um padrão mensurável [S12]; a mecânica está na página sobre [respiração e HRV](/science/mechanisms/breathing-and-hrv), e a diferença entre ela e a própria HRV é explicada em [HRV vs. coerência](/hrv-vs-coherence).
+**Depende do contexto.** O cérebro regula a frequência e a força do coração por nervos autonômicos e hormônios [S1], e os barorreceptores informam cada batimento ao cérebro [S2]. O potencial evocado pelo batimento cardíaco é uma medida de pesquisa utilizável quando os artefatos são controlados [S3]. A coerência fisiológica — uma oscilação suave e regular do ritmo cardíaco que aparece quando a respiração lenta faz a respiração, a pressão arterial e a frequência cardíaca entrarem em sincronia — é um padrão mensurável [S12]; a mecânica está na página sobre [respiração e HRV](/science/mechanisms/breathing-and-hrv), e a diferença entre ela e a própria HRV é explicada em [HRV vs. coerência](/hrv-vs-coherence).
 
 **Um modelo, não uma prova: a integração neurovisceral.** O modelo de integração neurovisceral propõe que as mesmas redes cerebrais que ajudam a controlar a atenção e a emoção — em especial as vias inibitórias do córtex pré-frontal, passando pela amígdala, até o tronco encefálico — também ajustam a frequência cardíaca e, portanto, a HRV [S6]. Seus autores relatam que pessoas com HRV mediada pelo nervo vago mais alta tendem a se sair melhor em tarefas de função executiva ligadas ao córtex pré-frontal [S7]. Sínteses maiores encontram uma associação, mas pequena: no conjunto de muitos estudos, a HRV e a autorregulação mostraram apenas uma associação fraca, com resultados mais fortes em estudos publicados do que em não publicados, um sinal de viés de publicação [S8]; uma metanálise de estudos correlacionais encontrou uma associação fraca entre a HRV mediada pelo nervo vago e as funções executivas [S9]; e uma revisão sistemática julgou o número de estudos pequeno demais para entender bem essa relação [S10]. São associações. Elas são compatíveis com o modelo, mas não mostram que a HRV cause um pensamento melhor, nem que elevar a sua HRV o melhoraria. Uma associação tão pequena diz muito pouco sobre uma pessoa específica.
 

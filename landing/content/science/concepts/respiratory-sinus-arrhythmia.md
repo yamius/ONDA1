@@ -125,7 +125,7 @@ evidenceMap:
     limitation: "A summary of the main efferent pathway; other mechanical and reflex contributions exist."
   - claim: "The primary mechanisms are understood to be the modulation of cardiac vagal activity by the central respiratory drive and the lung inflation reflex, and RSA grows with cardiac vagal activity."
     sources: [S7]
-    class: established
+    class: emerging
     claimType: physiology
     quote: "The primary mechanisms of respiratory sinus arrhythmia (RSA) are understood to be the modulation of cardiac vagal efferent activity by the central respiratory drive and the lung inflation reflex, and the degree of RSA increases with cardiac vagal activity."
     limitation: "Background statement of an experimental paper; the relative weight of each mechanism remains debated."
@@ -149,19 +149,19 @@ evidenceMap:
     limitation: "One author's synthesis in a long-running debate; other researchers give the baroreflex a larger role."
   - claim: "RSA is small at fast breathing rates and large at slow breathing rates."
     sources: [S5, S4]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Respiratory sinus arrhythmia is small at rapid, and large at slow breathing rates."
     limitation: "A group-level relation; the breathing rate at which RSA peaks varies between individuals."
   - claim: "RSA and heart rate variability are maximised when breathing slows to around six breaths per minute, though this resonant frequency varies between individuals (fact breath.resonance.typical)."
     sources: [S4]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Further investigations therefore suggest that both HRV (RSA) and baroreflex sensitivity are maximised when respiration is slowed to ∼6 breaths per min ( figure 1 ), though this resonant frequency does vary between individuals"
     limitation: "Pooled from controlled-breathing studies in healthy adults; the individual peak rate has to be found, not assumed."
   - claim: "A larger breathing volume increases RSA, more so at slow breathing rates."
     sources: [S4, S6]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Increasing tidal volume [ 36 , 73 , 76 ] and diaphragmatic breathing [ 18 ] have also been shown to significantly increase RSA, significantly more so at slower respiration rates."
     limitation: "Laboratory breathing protocols; spontaneous breathing mixes rate and depth."
@@ -191,7 +191,7 @@ evidenceMap:
     limitation: "Cross-sectional population data; individuals vary widely at every age."
   - claim: "In short resting recordings, RSA is the primary source of heart rate variation, especially with slow paced breathing."
     sources: [S1]
-    class: established
+    class: context-dependent
     claimType: measurement
     quote: "In short-term resting recordings, the primary source of the variation is parasympathetically-mediated RSA, especially with slow, paced breathing (PB) protocols."
     limitation: "Applies to short resting recordings; over longer windows slower rhythms contribute as well."
@@ -266,9 +266,9 @@ RSA is read from the intervals between heartbeats recorded alongside breathing, 
 
 ## What does the evidence show?
 
-**Established.** RSA is a normal feature of the resting heart [S5], carried mainly by vagal regulation [S1, S7]. It is larger with slow and deep breathing and smaller with fast breathing [S4, S5], and it is the main source of heart rate variability in short resting recordings [S1].
+**Established.** RSA is a normal feature of the resting heart [S5], carried mainly by vagal regulation [S1, S7].
 
-**Context-dependent.** The size of the effect of posture, state and age comes from laboratory and review data with different protocols [S4, S6]; how much it changes for a given person is not something a population study can predict.
+**Context-dependent.** It is larger with slow and deep breathing and smaller with fast breathing [S4, S5], and it is the main source of heart rate variability in short resting recordings [S1]. The size of the effect of posture, state and age comes from laboratory and review data with different protocols [S4, S6]; how much it changes for a given person is not something a population study can predict.
 
 **Debated.** Whether a central respiratory rhythm generator or the baroreflex is the main generator of RSA [S4, S5].
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "928273b6fb80"
+sourceHash: "c9ad9e84df17"
 title: "Théorie polyvagale : ce qu’elle propose, ce qui tient, ce qui est débattu"
 metaTitle: "Théorie polyvagale : ce qui tient vraiment"
 metaDescription: "La théorie polyvagale : ce qu’elle propose, pourquoi les thérapeutes l’utilisent, ce qui concorde avec la physiologie, pourquoi tant d’experts la contestent."

@@ -1,5 +1,5 @@
 ---
-sourceHash: "b24949df5b56"
+sourceHash: "14937f196d56"
 title: "Tarareo, canto y Om: lo que muestra la evidencia"
 metaTitle: "Tarareo, canto y Om: la evidencia"
 metaDescription: "Qué muestran los estudios sobre el tarareo, el canto del Om, los mantras y el canto en coro: óxido nítrico nasal, respiración más lenta, HRV, el cerebro y dónde la evidencia es escasa."

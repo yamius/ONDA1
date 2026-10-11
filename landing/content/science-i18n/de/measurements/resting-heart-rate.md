@@ -1,5 +1,5 @@
 ---
-sourceHash: 21579ea1d5e6
+sourceHash: c6abda99ed2f
 title: "Ruhepuls: Was er widerspiegelt und wie er gemessen wird"
 metaTitle: "Ruhepuls: Bedeutung und Messung"
 metaDescription: "Der Ruhepuls ist deine niedrigste Herzfrequenz in Ruhe. Wie er gemessen wird, was normal heißt, was ihn bewegt und warum dein Verlauf mehr sagt als ein Wert."

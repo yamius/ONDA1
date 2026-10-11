@@ -1,5 +1,5 @@
 ---
-sourceHash: "afc6758ef846"
+sourceHash: "2744e8dc82ed"
 title: "Coerenza fisiologica: che cos'è e che cosa non è"
 metaTitle: "Coerenza fisiologica: che cos'è"
 metaDescription: "La coerenza fisiologica è un ritmo cardiaco morbido, a onda, durante il respiro lento. Cosa misura, come si distingue dall'HRV e quali affermazioni sono miti."
@@ -71,9 +71,7 @@ In pratica questo significa che:
 
 ## Cosa mostrano le prove?
 
-**Accertato.** Il respiro lento alla frequenza di risonanza individuale produce ampie oscillazioni della frequenza cardiaca e della pressione arteriosa [S4], e a quel ritmo respiro, pressione arteriosa e frequenza cardiaca si mettono al passo [S3]. La coerenza è un modo ragionevole per descrivere questo andamento.
-
-**Dipende dal contesto.** Il biofeedback HRV, che allena a respirare alla propria frequenza di risonanza e spesso usa una visualizzazione di tipo coerenza, ha mostrato un effetto da piccolo a moderato negli studi randomizzati, e i suoi autori affermano che servono altre ricerche per usi specifici [S6]. I dettagli sono nella pagina sul [biofeedback HRV](/science/evidence/hrv-biofeedback). Queste prove riguardano il programma di allenamento nel suo insieme.
+**Dipende dal contesto.** Il respiro lento alla frequenza di risonanza individuale produce ampie oscillazioni della frequenza cardiaca e della pressione arteriosa [S4], e a quel ritmo respiro, pressione arteriosa e frequenza cardiaca si mettono al passo [S3]. La coerenza è un modo ragionevole per descrivere questo andamento. Il biofeedback HRV, che allena a respirare alla propria frequenza di risonanza e spesso usa una visualizzazione di tipo coerenza, ha mostrato un effetto da piccolo a moderato negli studi randomizzati, e i suoi autori affermano che servono altre ricerche per usi specifici [S6]. I dettagli sono nella pagina sul [biofeedback HRV](/science/evidence/hrv-biofeedback). Queste prove riguardano il programma di allenamento nel suo insieme.
 
 **Sconosciuto.** Non è stato dimostrato in modo indipendente se il punteggio di coerenza in sé, come numero separato, predica la salute, lo stato emotivo o la prestazione. Gran parte della ricerca alla base del termine e del suo punteggio proviene da autori affiliati a HeartMath, che vende dispositivi di feedback della coerenza [S1, S2]. L'idea che emozioni specifiche si manifestino come andamenti specifici del ritmo cardiaco è il modello degli autori stessi [S2].
 

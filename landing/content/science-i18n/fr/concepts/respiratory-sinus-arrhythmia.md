@@ -1,5 +1,5 @@
 ---
-sourceHash: "c96db8623893"
+sourceHash: "c3660007032f"
 title: "Arythmie sinusale respiratoire : comment la respiration façonne votre rythme cardiaque"
 metaTitle: "Arythmie sinusale respiratoire (RSA) expliquée"
 metaDescription: "L’arythmie sinusale respiratoire : le cœur accélère à l’inspiration et ralentit à l’expiration. Son origine, ce qui la modifie et ses limites."
@@ -94,9 +94,9 @@ La RSA se lit à partir des intervalles entre battements cardiaques enregistrés
 
 ## Que montrent les données ?
 
-**Établi.** La RSA est une caractéristique normale du cœur au repos [S5], portée principalement par la régulation vagale [S1, S7]. Elle est plus ample avec une respiration lente et profonde et plus faible avec une respiration rapide [S4, S5], et elle est la principale source de HRV dans les enregistrements courts au repos [S1].
+**Établi.** La RSA est une caractéristique normale du cœur au repos [S5], portée principalement par la régulation vagale [S1, S7].
 
-**Dépend du contexte.** L’ampleur de l’effet de la posture, de l’état et de l’âge provient de données de laboratoire et de revues aux protocoles différents [S4, S6] ; une étude de population ne peut pas prédire à quel point elle change chez une personne donnée.
+**Dépend du contexte.** Elle est plus ample avec une respiration lente et profonde et plus faible avec une respiration rapide [S4, S5], et elle est la principale source de HRV dans les enregistrements courts au repos [S1]. L’ampleur de l’effet de la posture, de l’état et de l’âge provient de données de laboratoire et de revues aux protocoles différents [S4, S6] ; une étude de population ne peut pas prédire à quel point elle change chez une personne donnée.
 
 **Débattu.** Savoir si c’est un générateur central du rythme respiratoire ou le baroréflexe qui produit principalement la RSA [S4, S5].
 

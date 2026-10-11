@@ -1,5 +1,5 @@
 ---
-sourceHash: "fe57b9925cd0"
+sourceHash: "e96cdc17858e"
 title: "Variabilidad de la frecuencia cardíaca: qué es, qué refleja y qué no es"
 metaTitle: "Variabilidad de la frecuencia cardíaca: definición"
 metaDescription: "La variabilidad de la frecuencia cardíaca es la variación natural del ritmo del corazón latido a latido. Qué la moldea, qué refleja y qué no te dice."

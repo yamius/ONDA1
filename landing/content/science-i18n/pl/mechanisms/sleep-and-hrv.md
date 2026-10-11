@@ -1,5 +1,5 @@
 ---
-sourceHash: 6252dd3faeef
+sourceHash: b21ec4baa415
 title: "HRV i tętno podczas snu: dlaczego noc to najlepsze okno pomiarowe"
 metaTitle: "HRV i tętno podczas snu"
 metaDescription: "Co dzieje się z tętnem i HRV w ciągu nocy i w fazach snu, dlaczego odczyty nocne są najstabilniejszym oknem i co urządzenia ubieralne mogą, a czego nie mogą powiedzieć."
@@ -111,9 +111,9 @@ Krótki lub przerywany sen, alkohol, ciężki dzień treningowy, infekcja, stres
 
 ## Co pokazują dane?
 
-**Ustalone.** Sen NREM przesuwa regulację serca w stronę wpływu przywspółczulnego, a sen REM przypomina raczej czuwanie [S1, S3, S4]. Bezdech senny wywołuje cykliczny wzorzec najpierw wolniejszego, a potem szybszego tętna [S9]. Warunki zapisu wpływają na HRV, dlatego zaleca się porównywalne warunki (konsensus ekspertów) [S5]. Urządzenia konsumenckie mają znane ograniczenia w rozpoznawaniu czuwania w okresie snu [S7].
+**Ustalone.** Warunki zapisu wpływają na HRV, dlatego zaleca się porównywalne warunki (konsensus ekspertów) [S5].
 
-**Zależy od kontekstu.** Tętno i wysokoczęstotliwościowa składowa HRV podlegają rytmowi okołodobowemu w obrębie faz snu [S3]. U zdrowych młodych dorosłych w laboratorium urządzenia do śledzenia snu dobrze wykrywały sen, ale ich oceny faz były niespójne z PSG [S6]; próbę stanowiło {{fact:study.chinoy2021.participants}} [S6].
+**Zależy od kontekstu.** Sen NREM przesuwa regulację serca w stronę wpływu przywspółczulnego, a sen REM przypomina raczej czuwanie [S1, S3, S4]. Bezdech senny wywołuje cykliczny wzorzec najpierw wolniejszego, a potem szybszego tętna [S9]. Urządzenia konsumenckie mają znane ograniczenia w rozpoznawaniu czuwania w okresie snu [S7]. Tętno i wysokoczęstotliwościowa składowa HRV podlegają rytmowi okołodobowemu w obrębie faz snu [S3]. U zdrowych młodych dorosłych w laboratorium urządzenia do śledzenia snu dobrze wykrywały sen, ale ich oceny faz były niespójne z PSG [S6]; próbę stanowiło {{fact:study.chinoy2021.participants}} [S6].
 
 **Wstępne dane.** Analiza prowadzona przez producenta wykazała lepszą zgodność w rozpoznawaniu faz snu po dodaniu do ruchu sygnałów autonomicznych i okołodobowych [S8]. Utrzymująca się aktywność współczulna podczas snu w obturacyjnym bezdechu sennym pochodzi z małego badania [S10].
 

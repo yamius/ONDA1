@@ -1,5 +1,5 @@
 ---
-sourceHash: 507e4dc4d425
+sourceHash: a4f05e49ea69
 title: "Como o ONDA mede e interpreta os sinais do seu corpo"
 metaTitle: "Como o ONDA mede e interpreta os sinais do corpo"
 metaDescription: "De onde o ONDA tira os dados, como monta sua linha de base e seus sinais, o que fica no celular e os limites de cada número que ele mostra."

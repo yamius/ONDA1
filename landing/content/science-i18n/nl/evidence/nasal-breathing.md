@@ -1,5 +1,5 @@
 ---
-sourceHash: "7683ea5dce4b"
+sourceHash: "74e0a1403ee6"
 title: "Neusademhaling en mondtape: wat het bewijs laat zien"
 metaTitle: "Neusademhaling en mondtape: het bewijs"
 metaDescription: "Wat ademen door de neus doet, wat studies laten zien over slaap, focus, HRV, sport en astma, en waarom mondtape voorzichtigheid vraagt."

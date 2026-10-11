@@ -1,5 +1,5 @@
 ---
-sourceHash: "c96db8623893"
+sourceHash: "c3660007032f"
 title: "Respiratorische Sinusarrhythmie: Wie die Atmung den Herzrhythmus prägt"
 metaTitle: "Respiratorische Sinusarrhythmie (RSA) erklärt"
 metaDescription: "Respiratorische Sinusarrhythmie: das normale Schnellerwerden des Herzens beim Einatmen und Langsamerwerden beim Ausatmen – Entstehung, Einflüsse, Grenzen."
@@ -94,9 +94,9 @@ Die RSA wird aus den Abständen zwischen den Herzschlägen abgelesen, die zusamm
 
 ## Was zeigt die Evidenz?
 
-**Gesichert.** Die RSA ist ein normales Merkmal des Herzens in Ruhe [S5] und wird hauptsächlich von der vagalen Regulation getragen [S1, S7]. Bei langsamem und tiefem Atmen ist sie größer, bei schnellem Atmen kleiner [S4, S5], und in kurzen Ruhemessungen ist sie die Hauptquelle der HRV [S1].
+**Gesichert.** Die RSA ist ein normales Merkmal des Herzens in Ruhe [S5] und wird hauptsächlich von der vagalen Regulation getragen [S1, S7].
 
-**Kontextabhängig.** Die Angaben dazu, wie stark Körperhaltung, Zustand und Alter wirken, stammen aus Labor- und Übersichtsdaten mit unterschiedlichen Protokollen [S4, S6]; wie stark sich die RSA bei einer bestimmten Person verändert, kann eine Bevölkerungsstudie nicht vorhersagen.
+**Kontextabhängig.** Bei langsamem und tiefem Atmen ist sie größer, bei schnellem Atmen kleiner [S4, S5], und in kurzen Ruhemessungen ist sie die Hauptquelle der HRV [S1]. Die Angaben dazu, wie stark Körperhaltung, Zustand und Alter wirken, stammen aus Labor- und Übersichtsdaten mit unterschiedlichen Protokollen [S4, S6]; wie stark sich die RSA bei einer bestimmten Person verändert, kann eine Bevölkerungsstudie nicht vorhersagen.
 
 **Umstritten.** Ob ein zentraler Atemrhythmusgenerator oder der Baroreflex die RSA hauptsächlich erzeugt [S4, S5].
 

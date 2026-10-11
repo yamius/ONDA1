@@ -1,5 +1,5 @@
 ---
-sourceHash: "c96db8623893"
+sourceHash: "c3660007032f"
 title: "Arritmia sinusal respiratória: como a respiração molda o ritmo do coração"
 metaTitle: "Arritmia sinusal respiratória (RSA): o que é"
 metaDescription: "A arritmia sinusal respiratória é a aceleração normal do coração ao inspirar e a desaceleração ao expirar: como surge, o que a modifica e seus limites."
@@ -93,9 +93,9 @@ A RSA é lida a partir dos intervalos entre batimentos registrados junto com a r
 
 ## O que mostram as evidências?
 
-**Estabelecido.** A RSA é uma característica normal do coração em repouso [S5], conduzida principalmente pela regulação vagal [S1, S7]. Ela é maior com respiração lenta e profunda e menor com respiração rápida [S4, S5], e é a principal fonte da variabilidade da frequência cardíaca em registros curtos em repouso [S1].
+**Estabelecido.** A RSA é uma característica normal do coração em repouso [S5], conduzida principalmente pela regulação vagal [S1, S7].
 
-**Depende do contexto.** O tamanho do efeito da postura, do estado e da idade vem de dados de laboratório e de revisões com protocolos diferentes [S4, S6]; quanto ele muda em uma pessoa específica não é algo que um estudo populacional consiga prever.
+**Depende do contexto.** Ela é maior com respiração lenta e profunda e menor com respiração rápida [S4, S5], e é a principal fonte da variabilidade da frequência cardíaca em registros curtos em repouso [S1]. O tamanho do efeito da postura, do estado e da idade vem de dados de laboratório e de revisões com protocolos diferentes [S4, S6]; quanto ele muda em uma pessoa específica não é algo que um estudo populacional consiga prever.
 
 **Em debate.** Se o principal gerador da RSA é um gerador central do ritmo respiratório ou o barorreflexo [S4, S5].
 

@@ -467,7 +467,7 @@ evidenceMap:
     limitation: "One study in adolescents at Swiss schools; one exam."
   - claim: "Studies of recovery after acute stress measure it over windows of different length and in different conditions, so there is no single recovery time."
     sources: [S11]
-    class: established
+    class: context-dependent
     claimType: measurement
     quote: "Methodological challenges included variability in recovery timing (e.g., 5- vs. 30-minute windows) and inconsistent reporting of recovery conditions (e.g., posture)."
     limitation: "Scoping review describing methods across studies; no pooled recovery time."

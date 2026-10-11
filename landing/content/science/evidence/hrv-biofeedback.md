@@ -148,7 +148,7 @@ sources:
 evidenceMap:
   - claim: "HRV biofeedback is a form of cardiorespiratory feedback training that has been studied for conditions as varied as asthma and depression."
     sources: [S1]
-    class: established
+    class: context-dependent
     claimType: definition
     quote: "Since conditions as widely varied as asthma and depression seem to respond to this form of cardiorespiratory feedback training, the issue of possible mechanisms becomes more salient."
     limitation: "A narrative review by leading researchers in the field; it describes the method and its proposed mechanisms, not pooled outcomes."

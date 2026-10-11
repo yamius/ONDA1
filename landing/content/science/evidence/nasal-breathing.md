@@ -148,13 +148,13 @@ sources:
 evidenceMap:
   - claim: "Nasal breathing conditions inspired air and defends against particles, at the cost of higher resistance than mouth breathing."
     sources: [S1]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "The major functional roles of nasal breathing are defense against infiltrating particles and conditioning of the inspired air to nearly alveolar conditions in order to maintain the internal milieu of the lung."
     limitation: "Physiology review; says nothing about long-term health outcomes."
   - claim: "Healthy sinus lining continuously produces nitric oxide, which can be measured in nasally exhaled breath."
     sources: [S2]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "It was shown that healthy paranasal sinus epithelium expresses an inducible NO synthase that continuously generates large amounts of NO, a pluripotent gaseous messenger with potent vasodilating, and antimicrobial activity."
     limitation: "Physiology review."

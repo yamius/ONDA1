@@ -1,5 +1,5 @@
 ---
-sourceHash: "6fbea09b5622"
+sourceHash: "ea519c2b5915"
 title: "Le système nerveux autonome : sympathique et parasympathique"
 metaTitle: "Système nerveux autonome : pas un interrupteur"
 metaDescription: "Ce que fait le système nerveux autonome, comment ses deux branches pilotent le cœur, et pourquoi aucun chiffre, ratio LF/HF compris, ne mesure son état."
@@ -99,9 +99,9 @@ Pour le cœur, la [variabilité de la fréquence cardiaque](/science/concepts/he
 
 ## Que montrent les données ?
 
-**Établi.** Le système nerveux autonome commande les organes sans effort conscient et comporte des divisions sympathique, parasympathique et entérique [S1, S2]. Les signaux sympathiques accélèrent le cœur et le nerf vague le ralentit [S4]. Les branches peuvent être actives ensemble et varier indépendamment [S3, S4, S7]. La HRV à court terme au repos reflète surtout l’influence vagale, la RMSSD en étant la principale mesure temporelle [S5, S6]. Ni la composante basse fréquence ni le rapport LF/HF ne sont des mesures valables des branches ou de leur poids respectif [S7, S8, S9].
+**Établi.** Le système nerveux autonome commande les organes sans effort conscient et comporte des divisions sympathique, parasympathique et entérique [S1, S2]. Les signaux sympathiques accélèrent le cœur et le nerf vague le ralentit [S4]. Les branches peuvent être actives ensemble et varier indépendamment [S3, S4, S7]. La HRV à court terme au repos reflète surtout l’influence vagale, la RMSSD en étant la principale mesure temporelle [S5, S6].
 
-**Recommandations / consensus d’experts.** La HRV ne devrait pas être utilisée comme marqueur spécifique de l’activité sympathique cardiaque ou de l’équilibre sympathovagal [S10].
+**Recommandations / consensus d’experts.** Ni la composante basse fréquence ni le rapport LF/HF ne sont des mesures valables des branches ou de leur poids respectif [S7, S8, S9]. La HRV ne devrait pas être utilisée comme marqueur spécifique de l’activité sympathique cardiaque ou de l’équilibre sympathovagal [S10].
 
 **Débattu.** La théorie polyvagale propose que l’évolution des voies vagales a donné naissance à un « système d’engagement social » [S16]. Une revue critique soutient que chacune de ses prémisses fondamentales est intenable ou très peu plausible — y compris le fait de traiter le rythme cardiaque lié à la respiration comme une mesure du tonus vagal général [S15]. Considérez-la comme un modèle contesté, pas comme une physiologie établie ; le nerf vague lui-même fera l’objet d’une page dédiée.
 

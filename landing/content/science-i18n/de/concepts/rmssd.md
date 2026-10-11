@@ -1,5 +1,5 @@
 ---
-sourceHash: "572d635480f8"
+sourceHash: "5034501eb4bc"
 title: "RMSSD: was dieses HRV-Maß widerspiegelt und was nicht"
 metaTitle: "RMSSD: Definition, Bedeutung und Messung"
 metaDescription: "Die RMSSD ist ein HRV-Maß, das vagal vermittelte Veränderungen der Herzfrequenz widerspiegelt. Was sie misst, wie Wearables sie schätzen und was sie nicht verrät."

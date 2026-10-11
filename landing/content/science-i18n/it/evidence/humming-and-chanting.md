@@ -1,5 +1,5 @@
 ---
-sourceHash: "b24949df5b56"
+sourceHash: "14937f196d56"
 title: "Humming, canto e Om: che cosa mostrano le evidenze"
 metaTitle: "Humming, canto e Om: le evidenze"
 metaDescription: "Che cosa mostrano gli studi su humming, canto dell'Om, mantra e canto corale: ossido nitrico nasale, respiro più lento, HRV, cervello e dove le evidenze sono scarse."

@@ -1,5 +1,5 @@
 ---
-sourceHash: 3e2d8ad38a9d
+sourceHash: 542338be7f2d
 title: "Spoczynkowa częstość oddechów: co odzwierciedla i jak się ją mierzy"
 metaTitle: "Częstość oddechów: znaczenie i pomiar"
 metaDescription: "Częstość oddechów to liczba oddechów na minutę w spoczynku. Jak się ją mierzy, co ją zmienia i czemu twój nocny trend mówi więcej niż jeden odczyt."
@@ -88,7 +88,7 @@ Oddychaniem steruje pień mózgu, który dostosowuje częstość i głębokość
 
 ## Co pokazują dane?
 
-**Ustalone — kliniczny sygnał ostrzegawczy.** W szpitalach nieprawidłowa częstość oddechów pozwala przewidywać potencjalnie poważne zdarzenia, a jej wzrost to jeden z najwcześniejszych sygnałów, że stan pacjenta się pogarsza [S1]. Częstość oddechów często wchodzi w skład systemów typu track-and-trigger — skal wczesnego ostrzegania, które zamieniają parametry życiowe w jeden poziom alarmu [S2]. W Wielkiej Brytanii skala National Early Warning Score opracowana przez Royal College of Physicians, obecnie w zaktualizowanej drugiej wersji, to standardowy system, którego NHS używa do rozpoznawania ostrej choroby i pogorszenia stanu [S13]. Te dane dotyczą pacjentów i **wyraźnych** odchyleń mierzonych w warunkach klinicznych. Nie oznaczają, że mała zmiana z nocy na noc w zegarku ma taką samą wagę.
+**Zależy od kontekstu — kliniczny sygnał ostrzegawczy.** W szpitalach nieprawidłowa częstość oddechów pozwala przewidywać potencjalnie poważne zdarzenia, a jej wzrost to jeden z najwcześniejszych sygnałów, że stan pacjenta się pogarsza [S1]. Częstość oddechów często wchodzi w skład systemów typu track-and-trigger — skal wczesnego ostrzegania, które zamieniają parametry życiowe w jeden poziom alarmu [S2]. W Wielkiej Brytanii skala National Early Warning Score opracowana przez Royal College of Physicians, obecnie w zaktualizowanej drugiej wersji, to standardowy system, którego NHS używa do rozpoznawania ostrej choroby i pogorszenia stanu [S13]. Te dane dotyczą pacjentów i **wyraźnych** odchyleń mierzonych w warunkach klinicznych. Nie oznaczają, że mała zmiana z nocy na noc w zegarku ma taką samą wagę.
 
 **Zależy od kontekstu — jak dobra jest sama liczba.** Wartość zapisanej częstości oddechów zależy od tego, jak starannie ją zmierzono. Ręczne liczenie jest obarczone błędami systematycznymi i przypadkowymi [S2], a w jednym badaniu na oddziale ratunkowym elektroniczny monitor przyłóżkowy nie rozwiązał tego problemu [S3].
 

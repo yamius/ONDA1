@@ -1,5 +1,5 @@
 ---
-sourceHash: "572d635480f8"
+sourceHash: "5034501eb4bc"
 title: "RMSSD：这项 HRV 指标反映什么，又不反映什么"
 metaTitle: "RMSSD：定义、含义与测量"
 metaDescription: "RMSSD 是一项反映迷走神经介导的心率变化的 HRV 指标。本文介绍它测量什么、可穿戴设备如何估算它，以及它无法告诉你什么。"

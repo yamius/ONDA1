@@ -1,5 +1,5 @@
 ---
-sourceHash: a4a0bc06b042
+sourceHash: 952ca247f74b
 title: "Pourquoi ma HRV est-elle basse ? Causes fréquentes et ce que montrent les études"
 metaTitle: "HRV (VFC) basse : pourquoi, causes et quand s’inquiéter"
 metaDescription: "Pourquoi votre HRV (VFC) est basse : le plus souvent une réaction au sommeil, à l’alcool, à une maladie, au stress ou à l’entraînement, pas un diagnostic. Chaque cause avec ses preuves, et quand consulter."

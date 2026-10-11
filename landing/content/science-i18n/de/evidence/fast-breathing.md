@@ -1,5 +1,5 @@
 ---
-sourceHash: "3f61c4b110e2"
+sourceHash: "bf4ec5a45d58"
 title: "Schnelles Atmen: Was die Evidenz zeigt und wo die echten Risiken liegen"
 metaTitle: "Schnelles Atmen: Evidenz und echte Risiken"
 metaDescription: "Wim Hof, holotropes Atmen, Tummo und zyklische Hyperventilation: was Studien zu Entzündung, Stimmung und Sport zeigen – und warum Wasser tabu ist."

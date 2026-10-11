@@ -1,5 +1,5 @@
 ---
-sourceHash: "41115ae9a660"
+sourceHash: "8f8acb125420"
 title: "Hoe ademhaling HRV verandert — en waarom langzaam ademen die verhoogt"
 metaTitle: "Ademhaling en HRV: waarom langzaam ademen HRV verhoogt"
 metaDescription: "Waarom hartslagvariabiliteit stijgt als je langzaam ademt: het met de adem verbonden hartritme, de baroreflex en resonantie — wat vaststaat en wat omstreden is."
@@ -88,9 +88,9 @@ Ten eerste hangt de uitkomst af van het ademhalingspatroon tijdens de meting, du
 
 ## Wat laat het bewijs zien?
 
-**Vastgesteld.** Langzaam ademen vergroot het met de adem verbonden hartritme, en HRV en baroreflexgevoeligheid pieken rond het resonantietempo [S2, S3]. Een grote systematische review en meta-analyse vond een toename van vagaal gemedieerde HRV tijdens langzaam ademen, direct na één sessie en na programma's met meerdere sessies [S8]. {{fact:claim.slowExhale}} [S8, S5].
+**Vastgesteld.** Een grote systematische review en meta-analyse vond een toename van vagaal gemedieerde HRV tijdens langzaam ademen, direct na één sessie en na programma's met meerdere sessies [S8]. {{fact:claim.slowExhale}} [S8, S5].
 
-**Afhankelijk van de context.** De verklaring van de grootte van het effect via resonantie en baroreflex [S4, S5, S9]; de persoonlijke kenmerken van het resonantietempo [S6]. In één crossoverstudie verhoogde elektrische oorstimulatie tijdens langzaam ademen op het resonantietempo de HRV niet verder — het langzame ademen leverde het effect al [S11].
+**Afhankelijk van de context.** Langzaam ademen vergroot het met de adem verbonden hartritme, en HRV en baroreflexgevoeligheid pieken rond het resonantietempo [S2, S3]. De verklaring van de grootte van het effect via resonantie en baroreflex [S4, S5, S9]; de persoonlijke kenmerken van het resonantietempo [S6]. In één crossoverstudie verhoogde elektrische oorstimulatie tijdens langzaam ademen op het resonantietempo de HRV niet verder — het langzame ademen leverde het effect al [S11].
 
 **Opkomend.** In een gerandomiseerde studie verhoogde langzaam ademen tijdens biofeedback acuut de baroreflexversterking, en de baroreflexversterking in rust nam toe over de sessies heen [S7]. Of zulke trainingsveranderingen blijvende gezondheidseffecten hebben, is een aparte vraag voor de pagina's over bewijs.
 

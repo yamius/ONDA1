@@ -1,5 +1,5 @@
 ---
-sourceHash: "57d18386abf8"
+sourceHash: "6f02fd56c607"
 title: "Langsames Atmen: Was die Evidenz zeigt"
 metaTitle: "Langsames Atmen: Was die Evidenz zeigt"
 metaDescription: "Was die Forschung zu langsamem Atmen ohne Feedback zeigt – HRV, Blutdruck, Stress, Schlaf, Schmerz – und was über bekannte Atemtechniken bekannt ist."

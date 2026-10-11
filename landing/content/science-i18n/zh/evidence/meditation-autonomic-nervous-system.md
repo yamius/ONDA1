@@ -1,5 +1,5 @@
 ---
-sourceHash: "e47c25a97fdd"
+sourceHash: "cde100beb74f"
 title: "冥想与自主神经系统：证据显示了什么"
 metaTitle: "冥想与自主神经系统：证据显示了什么"
 metaDescription: "研究显示冥想对心率变异性、静息心率、血压和皮质醇有何作用，以及为什么慢呼吸让这幅图景变得模糊。"

@@ -1,5 +1,5 @@
 ---
-sourceHash: 21579ea1d5e6
+sourceHash: c6abda99ed2f
 title: "Fréquence cardiaque au repos : ce qu’elle reflète et comment la mesurer"
 metaTitle: "Fréquence cardiaque au repos : sens et mesure"
 metaDescription: "Fréquence cardiaque au repos : comment la mesurer, ce que « normal » veut dire, ce qui la fait varier, et pourquoi votre tendance compte plus qu’un chiffre."

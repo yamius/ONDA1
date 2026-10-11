@@ -1,5 +1,5 @@
 ---
-sourceHash: "e47c25a97fdd"
+sourceHash: "cde100beb74f"
 title: "Meditation und das autonome Nervensystem: Was die Evidenz zeigt"
 metaTitle: "Meditation und Nervensystem: Was die Evidenz zeigt"
 metaDescription: "Was Meditation laut Forschung mit HRV, Ruhepuls, Blutdruck und Cortisol macht – und warum langsames Atmen das Bild verzerrt."

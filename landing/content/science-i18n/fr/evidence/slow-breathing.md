@@ -1,5 +1,5 @@
 ---
-sourceHash: "57d18386abf8"
+sourceHash: "6f02fd56c607"
 title: "Respiration lente : ce que montrent les données"
 metaTitle: "Respiration lente : ce que montrent les données"
 metaDescription: "Ce que montre la recherche sur la respiration lente sans retour visuel — HRV, tension, stress, sommeil, douleur — et sur les techniques populaires."

@@ -1,5 +1,5 @@
 ---
-sourceHash: "fdfd13042508"
+sourceHash: "9bfcf8e49dbe"
 title: "Thérapie PEMF (champs électromagnétiques pulsés) : ce que montrent les données"
 metaTitle: "Thérapie PEMF : ce que montrent les données"
 metaDescription: "La thérapie par champs électromagnétiques pulsés expliquée : stimulateurs osseux médicaux et tapis à domicile, où les essais montrent un soulagement de la douleur, et qui doit s’abstenir."

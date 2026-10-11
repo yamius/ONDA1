@@ -1,5 +1,5 @@
 ---
-sourceHash: "c7c0e6f927d5"
+sourceHash: "1dcd3faa7b29"
 title: "Biofeedback de la HRV : ce que montrent les données"
 metaTitle: "Biofeedback de la HRV : ce que montrent les données"
 metaDescription: "Ce que montre la recherche sur le biofeedback de la HRV — stress, humeur, tension, sommeil, performance — et l’apport du retour visuel à la respiration lente."

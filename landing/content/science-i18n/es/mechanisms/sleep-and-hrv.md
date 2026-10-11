@@ -1,5 +1,5 @@
 ---
-sourceHash: 6252dd3faeef
+sourceHash: b21ec4baa415
 title: "HRV y frecuencia cardíaca durante el sueño: por qué la noche es la mejor ventana"
 metaTitle: "HRV y frecuencia cardíaca durante el sueño"
 metaDescription: "Qué ocurre con la frecuencia cardíaca y la HRV a lo largo de la noche y de las fases del sueño, por qué las lecturas nocturnas son las más estables y qué pueden y no pueden decir los wearables."
@@ -111,9 +111,9 @@ El sueño corto o entrecortado, el alcohol, un día de entrenamiento duro, una i
 
 ## ¿Qué muestra la evidencia?
 
-**Establecido.** El sueño no REM desplaza el corazón hacia la influencia parasimpática y el sueño REM se parece más a la vigilia [S1, S3, S4]. La apnea del sueño produce un patrón cíclico de frecuencia cardíaca lenta y luego rápida [S9]. Las condiciones de registro influyen en la HRV, por eso se recomiendan condiciones comparables (consenso de expertos) [S5]. Los dispositivos de consumo tienen límites conocidos para clasificar la vigilia durante el periodo de sueño [S7].
+**Establecido.** Las condiciones de registro influyen en la HRV, por eso se recomiendan condiciones comparables (consenso de expertos) [S5].
 
-**Depende del contexto.** La frecuencia cardíaca y la HRV de alta frecuencia siguen un ritmo circadiano dentro de las fases del sueño [S3]. En adultos jóvenes sanos en un laboratorio, los rastreadores de sueño detectaron bien el sueño, pero sus evaluaciones de las fases fueron inconsistentes con la PSG [S6]; la muestra fue de {{fact:study.chinoy2021.participants}} [S6].
+**Depende del contexto.** El sueño no REM desplaza el corazón hacia la influencia parasimpática y el sueño REM se parece más a la vigilia [S1, S3, S4]. La apnea del sueño produce un patrón cíclico de frecuencia cardíaca lenta y luego rápida [S9]. Los dispositivos de consumo tienen límites conocidos para clasificar la vigilia durante el periodo de sueño [S7]. La frecuencia cardíaca y la HRV de alta frecuencia siguen un ritmo circadiano dentro de las fases del sueño [S3]. En adultos jóvenes sanos en un laboratorio, los rastreadores de sueño detectaron bien el sueño, pero sus evaluaciones de las fases fueron inconsistentes con la PSG [S6]; la muestra fue de {{fact:study.chinoy2021.participants}} [S6].
 
 **Emergente.** Un análisis realizado por el fabricante informó de una mejor concordancia en las fases del sueño al añadir señales autonómicas y circadianas al movimiento [S8]. La actividad simpática sostenida durante el sueño en la apnea obstructiva del sueño procede de un estudio pequeño [S10].
 

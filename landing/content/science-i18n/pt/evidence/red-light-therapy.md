@@ -1,5 +1,5 @@
 ---
-sourceHash: "f6488e471877"
+sourceHash: "5e9bed91397e"
 title: "Terapia de luz vermelha (fotobiomodulação): o que as evidências mostram"
 metaTitle: "Luz vermelha: o que as evidências mostram"
 metaDescription: "Fotobiomodulação explicada: como a dose funciona, onde as evidências são sólidas (mucosite oral, algumas dores, queda de cabelo), onde são iniciais e a segurança dos olhos."

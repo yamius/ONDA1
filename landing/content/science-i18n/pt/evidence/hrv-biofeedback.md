@@ -1,5 +1,5 @@
 ---
-sourceHash: "c7c0e6f927d5"
+sourceHash: "1dcd3faa7b29"
 title: "Biofeedback de HRV: o que mostram as evidências"
 metaTitle: "Biofeedback de HRV: o que mostram as evidências"
 metaDescription: "O que a pesquisa mostra sobre o biofeedback de HRV — estresse, humor, pressão arterial, sono, desempenho — e quanto o retorno soma à respiração lenta."

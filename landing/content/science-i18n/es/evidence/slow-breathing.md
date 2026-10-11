@@ -1,5 +1,5 @@
 ---
-sourceHash: "57d18386abf8"
+sourceHash: "6f02fd56c607"
 title: "Respiración lenta: qué muestra la evidencia"
 metaTitle: "Respiración lenta: qué muestra la evidencia"
 metaDescription: "Qué muestra la investigación sobre la respiración lenta sin retroalimentación —HRV, presión arterial, estrés, sueño, dolor— y qué se sabe de las técnicas populares."

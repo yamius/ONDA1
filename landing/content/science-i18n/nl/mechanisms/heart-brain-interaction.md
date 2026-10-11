@@ -1,5 +1,5 @@
 ---
-sourceHash: "756d4a3d6d33"
+sourceHash: "c8cdf6f30c93"
 title: "Interactie tussen hart en hersenen: hoe hart en brein met elkaar praten"
 metaTitle: "Hart en hersenen: hoe ze met elkaar praten"
 metaDescription: "Hoe de hersenen de hartslag sturen en elke slag terugmeldt aan het brein: wat vaststaat, wat een model is en welke populaire beweringen mythes zijn."
@@ -88,9 +88,9 @@ Hoe deze signalen samenhangen met lichaamsbewustzijn in het algemeen, lees je op
 
 ## Wat laat het bewijs zien?
 
-**Vastgesteld.** De hersenen regelen het tempo en de kracht van het hart via autonome zenuwen en hormonen [S1], en baroreceptoren melden elke hartslag aan de hersenen [S2]. Het hart bevat een eigen netwerk van zenuwcellen [S11].
+**Vastgesteld.** Het hart bevat een eigen netwerk van zenuwcellen [S11].
 
-**Afhankelijk van de context.** De hartslag-opgewekte potentiaal is een bruikbare onderzoeksmaat als artefacten worden beheerst [S3]. Fysiologische coherentie, een gelijkmatige, regelmatige schommeling van het hartritme die verschijnt als langzaam ademen ademhaling, bloeddruk en hartslag met elkaar in de pas brengt, is een meetbaar patroon [S12]; het mechanisme staat op de pagina over [ademhaling en HRV](/science/mechanisms/breathing-and-hrv), en hoe coherentie verschilt van HRV zelf, lees je in [HRV versus coherentie](/hrv-vs-coherence).
+**Afhankelijk van de context.** De hersenen regelen het tempo en de kracht van het hart via autonome zenuwen en hormonen [S1], en baroreceptoren melden elke hartslag aan de hersenen [S2]. De hartslag-opgewekte potentiaal is een bruikbare onderzoeksmaat als artefacten worden beheerst [S3]. Fysiologische coherentie, een gelijkmatige, regelmatige schommeling van het hartritme die verschijnt als langzaam ademen ademhaling, bloeddruk en hartslag met elkaar in de pas brengt, is een meetbaar patroon [S12]; het mechanisme staat op de pagina over [ademhaling en HRV](/science/mechanisms/breathing-and-hrv), en hoe coherentie verschilt van HRV zelf, lees je in [HRV versus coherentie](/hrv-vs-coherence).
 
 **Een model, geen bewijs: neuroviscerale integratie.** Het model van neuroviscerale integratie stelt dat dezelfde hersennetwerken die helpen aandacht en emoties te sturen, in het bijzonder remmende routes van de prefrontale cortex via de amygdala naar de hersenstam, ook de hartslag en daarmee HRV bijsturen [S6]. De auteurs ervan melden dat mensen met een hogere vagaal gemedieerde HRV het vaak beter doen op taken voor executieve functies die met de prefrontale cortex samenhangen [S7]. Grotere syntheses vinden een verband, maar een klein: over veel studies heen hingen HRV en zelfregulatie maar zwak samen, met sterkere resultaten in gepubliceerde dan in ongepubliceerde studies, een teken van publicatiebias [S8]; een meta-analyse van correlationele studies vond een zwak verband tussen vagaal gemedieerde HRV en executieve functies [S9]; en een systematische review oordeelde dat er te weinig studies zijn om het verband goed te begrijpen [S10]. Dit zijn verbanden. Ze passen bij het model, maar ze laten niet zien dat HRV beter denken veroorzaakt, en ook niet dat het verhogen van je HRV je denken zou verbeteren. Een zo klein verband zegt heel weinig over één persoon.
 

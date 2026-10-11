@@ -1,5 +1,5 @@
 ---
-sourceHash: "290b64b3dec0"
+sourceHash: "4fe720fdb25b"
 title: "SDNN：このHRV指標が測るもの、測らないもの"
 metaTitle: "SDNNとは：定義、意味、Appleとの関係"
 metaDescription: "SDNNは、Apple Healthが保存しているHRV指標です。何を測っているのか、RMSSDとどう違うのか、そしてなぜ二つの数値を比較できないのかを解説します。"

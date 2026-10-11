@@ -1,5 +1,5 @@
 ---
-sourceHash: "fdfd13042508"
+sourceHash: "9bfcf8e49dbe"
 title: "PEMF-Therapie (gepulste elektromagnetische Felder): Was die Evidenz zeigt"
 metaTitle: "PEMF-Therapie: Was die Evidenz zeigt"
 metaDescription: "Therapie mit gepulsten elektromagnetischen Feldern erklärt: medizinische Knochenstimulatoren und Matten für zu Hause, wo Studien Schmerzlinderung zeigen und wer verzichten sollte."

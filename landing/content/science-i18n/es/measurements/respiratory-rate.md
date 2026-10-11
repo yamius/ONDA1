@@ -1,5 +1,5 @@
 ---
-sourceHash: 3e2d8ad38a9d
+sourceHash: 542338be7f2d
 title: "Frecuencia respiratoria en reposo: qué refleja y cómo se mide"
 metaTitle: "Frecuencia respiratoria: significado y medición"
 metaDescription: "La frecuencia respiratoria son las respiraciones por minuto en reposo. Cómo se mide, qué la cambia y por qué tu tendencia nocturna vale más que un dato."
@@ -89,7 +89,7 @@ La respiración la gobierna el tronco encefálico, que ajusta la frecuencia y la
 
 ## ¿Qué muestra la evidencia?
 
-**Establecido: una señal de alarma clínica.** En los hospitales, una frecuencia respiratoria anormal predice eventos potencialmente graves, y una frecuencia elevada es uno de los primeros signos de que un paciente empeora [S1]. La frecuencia respiratoria suele incluirse en los sistemas de seguimiento y activación, escalas de alerta temprana que convierten las constantes vitales en un único nivel de alerta [S2]. En el Reino Unido, la National Early Warning Score del Royal College of Physicians, ahora en su segunda versión actualizada, es el sistema estándar que usa el NHS para reconocer la enfermedad aguda y el deterioro clínico [S13]. Esta evidencia se refiere a pacientes y a desviaciones **marcadas** medidas en entornos clínicos. No significa que un pequeño cambio de una noche a otra en un reloj tenga el mismo peso.
+**Depende del contexto: una señal de alarma clínica.** En los hospitales, una frecuencia respiratoria anormal predice eventos potencialmente graves, y una frecuencia elevada es uno de los primeros signos de que un paciente empeora [S1]. La frecuencia respiratoria suele incluirse en los sistemas de seguimiento y activación, escalas de alerta temprana que convierten las constantes vitales en un único nivel de alerta [S2]. En el Reino Unido, la National Early Warning Score del Royal College of Physicians, ahora en su segunda versión actualizada, es el sistema estándar que usa el NHS para reconocer la enfermedad aguda y el deterioro clínico [S13]. Esta evidencia se refiere a pacientes y a desviaciones **marcadas** medidas en entornos clínicos. No significa que un pequeño cambio de una noche a otra en un reloj tenga el mismo peso.
 
 **Depende del contexto: la calidad del número.** El valor de una frecuencia respiratoria registrada depende del cuidado con que se midió. Los recuentos manuales son propensos a errores sistemáticos y aleatorios [S2], y en un estudio en urgencias un monitor electrónico de cabecera no resolvió el problema [S3].
 

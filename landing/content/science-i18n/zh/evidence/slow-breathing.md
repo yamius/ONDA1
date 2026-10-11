@@ -1,5 +1,5 @@
 ---
-sourceHash: "57d18386abf8"
+sourceHash: "6f02fd56c607"
 title: "慢呼吸：证据显示了什么"
 metaTitle: "慢呼吸：证据显示了什么"
 metaDescription: "不借助反馈的慢呼吸对HRV、血压、压力、睡眠和疼痛有何作用，研究显示了什么；以及关于「四-七-八」呼吸法、方块呼吸等流行技巧的已知证据。"

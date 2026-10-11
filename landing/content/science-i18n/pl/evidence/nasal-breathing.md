@@ -1,5 +1,5 @@
 ---
-sourceHash: "7683ea5dce4b"
+sourceHash: "74e0a1403ee6"
 title: "Oddychanie przez nos i zaklejanie ust: co pokazują badania"
 metaTitle: "Oddychanie nosem i zaklejanie ust: badania"
 metaDescription: "Co daje oddychanie przez nos, co badania mówią o śnie, skupieniu, HRV, wysiłku i astmie oraz dlaczego zaklejanie ust wymaga ostrożności."

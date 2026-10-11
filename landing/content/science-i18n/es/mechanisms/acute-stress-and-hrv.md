@@ -1,5 +1,5 @@
 ---
-sourceHash: 8a419d7d40ce
+sourceHash: f2910c8b743d
 title: "Estrés agudo y HRV: qué ocurre y cómo te recuperas"
 metaTitle: "Estrés agudo y HRV: qué muestran los estudios"
 metaDescription: "Cómo cambian la HRV los exámenes, las entrevistas y las pruebas de estrés, cómo es la recuperación y qué pueden decir las puntuaciones de estrés de un wearable."
@@ -120,8 +120,7 @@ La vida cotidiana es más difícil. En un estudio con {{fact:stress.uendes.desig
 
 **Por clase de evidencia.**
 
-- **Establecida.** Los estudios sobre la recuperación tras el estrés la miden de formas distintas, así que sus valores son difíciles de comparar [S2].
-- **Depende del contexto.** Una mejor recuperación se asocia con resiliencia, control atencional, reevaluación y naturaleza, como un mapa de factores estudiados sin tamaños del efecto [S2]; la concordancia del sensor de muñeca con el ECG procede sobre todo de condiciones de reposo [S13].
+- **Depende del contexto.** Los estudios sobre la recuperación tras el estrés la miden de formas distintas, así que sus valores son difíciles de comparar [S2]. Una mejor recuperación se asocia con resiliencia, control atencional, reevaluación y naturaleza, como un mapa de factores estudiados sin tamaños del efecto [S2]; la concordancia del sensor de muñeca con el ECG procede sobre todo de condiciones de reposo [S13].
 - **Emergente.** El estrés mental agudo y los exámenes reales bajan la HRV [S1] [S4] [S5]; los estresores dejan patrones distintos [S1]; la frecuencia cardíaca se habitúa al estrés repetido mientras la anticipación crece [S3]; respirar antes del estrés suaviza la frecuencia cardíaca y la ansiedad, pero no la HRV ni el cortisol [S7]; el mal sueño intensifica cómo se vive el estrés, no la reacción cardiovascular [S8]; los wearables detectan el estrés en el laboratorio [S11], pero lo confunden con la actividad física en la vida diaria [S12].
 - **Debatida.** La reactividad al estrés y la mortalidad, con asociaciones en direcciones opuestas [S10].
 - **Desconocida o no demostrada.** La forma física como amortiguador de la reacción al estrés [S4]; la reactividad al estrés como predictor de enfermedad cardíaca [S10]; si algo de lo que hagas acelera la recuperación.

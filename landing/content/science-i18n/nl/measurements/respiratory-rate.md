@@ -1,5 +1,5 @@
 ---
-sourceHash: 3e2d8ad38a9d
+sourceHash: 542338be7f2d
 title: "Ademfrequentie in rust: wat ze weerspiegelt en hoe je haar meet"
 metaTitle: "Ademfrequentie: betekenis en meting"
 metaDescription: "Je ademfrequentie is het aantal ademhalingen per minuut in rust. Hoe je haar meet, wat haar beïnvloedt en waarom je eigen nachttrend meer zegt dan één meting."
@@ -88,7 +88,7 @@ De ademhaling wordt aangestuurd door de hersenstam, die frequentie en diepte aan
 
 ## Wat laat het bewijs zien?
 
-**Vastgesteld — een klinisch waarschuwingsteken.** In ziekenhuizen voorspelt een afwijkende ademfrequentie mogelijk ernstige gebeurtenissen, en een verhoogde frequentie is een van de vroegste tekenen dat het slechter gaat met een patiënt [S1]. De ademfrequentie maakt vaak deel uit van track-and-triggersystemen — vroegwaarschuwingsscores die vitale functies omzetten in één alarmniveau [S2]. In het Verenigd Koninkrijk is de National Early Warning Score van het Royal College of Physicians, inmiddels in een bijgewerkte tweede versie, het standaardsysteem waarmee de NHS acute ziekte en verslechtering herkent [S13]. Dit bewijs gaat over patiënten en **duidelijke** afwijkingen, gemeten in klinische situaties. Het betekent niet dat een kleine verandering van nacht tot nacht op een horloge hetzelfde gewicht heeft.
+**Afhankelijk van de context — een klinisch waarschuwingsteken.** In ziekenhuizen voorspelt een afwijkende ademfrequentie mogelijk ernstige gebeurtenissen, en een verhoogde frequentie is een van de vroegste tekenen dat het slechter gaat met een patiënt [S1]. De ademfrequentie maakt vaak deel uit van track-and-triggersystemen — vroegwaarschuwingsscores die vitale functies omzetten in één alarmniveau [S2]. In het Verenigd Koninkrijk is de National Early Warning Score van het Royal College of Physicians, inmiddels in een bijgewerkte tweede versie, het standaardsysteem waarmee de NHS acute ziekte en verslechtering herkent [S13]. Dit bewijs gaat over patiënten en **duidelijke** afwijkingen, gemeten in klinische situaties. Het betekent niet dat een kleine verandering van nacht tot nacht op een horloge hetzelfde gewicht heeft.
 
 **Afhankelijk van de context — hoe goed het getal is.** De waarde van een genoteerde ademfrequentie hangt af van hoe zorgvuldig ze gemeten is. Tellingen met de hand zijn gevoelig voor systematische en toevallige fouten [S2], en een elektronische monitor aan het bed loste dat in één studie op een spoedeisende hulp niet op [S3].
 

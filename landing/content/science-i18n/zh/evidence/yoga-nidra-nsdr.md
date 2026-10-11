@@ -1,5 +1,5 @@
 ---
-sourceHash: "832e79dcef5f"
+sourceHash: "d8a1a7847676"
 title: "瑜伽休息术与NSDR（非睡眠深度休息）：证据显示了什么"
 metaTitle: "瑜伽休息术与NSDR：证据显示了什么"
 metaDescription: "瑜伽休息术和非睡眠深度休息：心率和脑电波会发生什么变化，关于睡眠和压力的试验显示了什么，以及多巴胺说法从何而来。"

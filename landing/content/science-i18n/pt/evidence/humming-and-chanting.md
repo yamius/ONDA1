@@ -1,5 +1,5 @@
 ---
-sourceHash: "b24949df5b56"
+sourceHash: "14937f196d56"
 title: "Cantarolar, entoar e Om: o que mostram as evidências"
 metaTitle: "Cantarolar, entoar e Om: as evidências"
 metaDescription: "O que os estudos mostram sobre cantarolar de boca fechada, entoar o Om, mantras e canto coral: óxido nítrico nasal, respiração mais lenta, HRV, cérebro e onde faltam evidências."

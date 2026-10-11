@@ -1,5 +1,5 @@
 ---
-sourceHash: "e47c25a97fdd"
+sourceHash: "cde100beb74f"
 title: "La meditación y el sistema nervioso autónomo: qué muestra la evidencia"
 metaTitle: "La meditación y el sistema nervioso: la evidencia"
 metaDescription: "Qué hace la meditación a la HRV, el pulso en reposo, la presión arterial y el cortisol según la investigación, y por qué la respiración lenta lo complica."

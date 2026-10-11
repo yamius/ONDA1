@@ -157,7 +157,7 @@ evidenceMap:
     limitation: "Mainly cell and animal data; the exact turning point in human tissue is not known."
   - claim: "The many illumination parameters (wavelength, fluence, power density, pulse structure, timing) make dosing complex and have produced both negative and positive studies."
     sources: [S2]
-    class: established
+    class: context-dependent
     claimType: measurement
     quote: "the complexity of rationally choosing amongst a large number of illumination parameters such as wavelength, fluence, power density, pulse structure and treatment timing"
     limitation: "Review statement about the field, not a measurement of any device."

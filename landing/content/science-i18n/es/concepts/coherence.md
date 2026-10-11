@@ -1,5 +1,5 @@
 ---
-sourceHash: "afc6758ef846"
+sourceHash: "2744e8dc82ed"
 title: "Coherencia fisiológica: qué es y qué no es"
 metaTitle: "Coherencia fisiológica: qué es y qué no es"
 metaDescription: "La coherencia fisiológica es un ritmo cardíaco suave y ondulante al respirar despacio. Qué mide, en qué se diferencia de la HRV y qué afirmaciones son mitos."
@@ -71,9 +71,7 @@ En la práctica, esto significa que:
 
 ## ¿Qué muestra la evidencia?
 
-**Establecido.** La respiración lenta a la frecuencia de resonancia de cada persona produce grandes oscilaciones de la frecuencia cardíaca y la presión arterial [S4], y a ese ritmo la respiración, la presión arterial y la frecuencia cardíaca se acompasan [S3]. La coherencia es una forma razonable de describir ese patrón.
-
-**Depende del contexto.** El biofeedback de HRV, que entrena a las personas a respirar a su frecuencia de resonancia y a menudo usa una visualización de tipo coherencia, mostró un efecto pequeño a moderado en el conjunto de estudios aleatorizados, y sus autores señalan que hace falta más investigación para usos concretos [S6]. Los detalles están en la página sobre el [biofeedback de HRV](/science/evidence/hrv-biofeedback). Esa evidencia se refiere al programa de entrenamiento en su conjunto.
+**Depende del contexto.** La respiración lenta a la frecuencia de resonancia de cada persona produce grandes oscilaciones de la frecuencia cardíaca y la presión arterial [S4], y a ese ritmo la respiración, la presión arterial y la frecuencia cardíaca se acompasan [S3]. La coherencia es una forma razonable de describir ese patrón. El biofeedback de HRV, que entrena a las personas a respirar a su frecuencia de resonancia y a menudo usa una visualización de tipo coherencia, mostró un efecto pequeño a moderado en el conjunto de estudios aleatorizados, y sus autores señalan que hace falta más investigación para usos concretos [S6]. Los detalles están en la página sobre el [biofeedback de HRV](/science/evidence/hrv-biofeedback). Esa evidencia se refiere al programa de entrenamiento en su conjunto.
 
 **Desconocido.** No se ha establecido de forma independiente si la puntuación de coherencia en sí, como número aparte, predice la salud, el estado emocional o el rendimiento. Buena parte de la investigación sobre el término y su puntuación procede de autores vinculados a HeartMath, que vende dispositivos de retroalimentación de coherencia [S1, S2]. La idea de que emociones concretas se manifiestan como patrones concretos del ritmo cardíaco es el modelo propio de esos autores [S2].
 

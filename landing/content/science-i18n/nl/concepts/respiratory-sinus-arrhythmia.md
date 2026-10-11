@@ -1,5 +1,5 @@
 ---
-sourceHash: "c96db8623893"
+sourceHash: "c3660007032f"
 title: "Respiratoire sinusaritmie: hoe je ademhaling je hartritme vormt"
 metaTitle: "Respiratoire sinusaritmie (RSA) uitgelegd"
 metaDescription: "Respiratoire sinusaritmie is het normale versnellen van het hart bij inademen en vertragen bij uitademen: hoe het ontstaat, wat het beïnvloedt en de grenzen."
@@ -93,9 +93,9 @@ RSA wordt afgelezen uit de intervallen tussen hartslagen die samen met de ademha
 
 ## Wat laat het bewijs zien?
 
-**Vastgesteld.** RSA is een normaal kenmerk van het hart in rust [S5] en komt vooral tot stand via vagale regulatie [S1, S7]. Het is groter bij langzaam en diep ademen en kleiner bij snel ademen [S4, S5], en in korte metingen in rust is het de belangrijkste bron van HRV [S1].
+**Vastgesteld.** RSA is een normaal kenmerk van het hart in rust [S5] en komt vooral tot stand via vagale regulatie [S1, S7].
 
-**Afhankelijk van de context.** Hoe groot het effect van houding, toestand en leeftijd is, komt uit laboratorium- en reviewgegevens met verschillende protocollen [S4, S6]; hoeveel het bij een bepaalde persoon verandert, kan een populatiestudie niet voorspellen.
+**Afhankelijk van de context.** Het is groter bij langzaam en diep ademen en kleiner bij snel ademen [S4, S5], en in korte metingen in rust is het de belangrijkste bron van HRV [S1]. Hoe groot het effect van houding, toestand en leeftijd is, komt uit laboratorium- en reviewgegevens met verschillende protocollen [S4, S6]; hoeveel het bij een bepaalde persoon verandert, kan een populatiestudie niet voorspellen.
 
 **Omstreden.** Of een centrale ritmegenerator voor de ademhaling of de baroreflex de belangrijkste bron van RSA is [S4, S5].
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "928273b6fb80"
+sourceHash: "c9ad9e84df17"
 title: "Teoria polivagal: o que propõe, o que se sustenta, o que está em debate"
 metaTitle: "Teoria polivagal: o que se sustenta"
 metaDescription: "O que a teoria polivagal propõe, por que terapeutas a usam, que partes batem com a fisiologia e por que muitos especialistas veem falhas em suas bases."

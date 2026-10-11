@@ -1,5 +1,5 @@
 ---
-sourceHash: "281e92fe3ffd"
+sourceHash: "aefe18eb9fcc"
 title: "Odruch z baroreceptorów: jak organizm utrzymuje stałe ciśnienie krwi"
 metaTitle: "Odruch z baroreceptorów: ciśnienie krwi pod kontrolą"
 metaDescription: "Jak odruch z baroreceptorów stabilizuje ciśnienie krwi z uderzenia na uderzenie, czym jest jego wrażliwość i jak wpływają na nią wolny oddech i trening."

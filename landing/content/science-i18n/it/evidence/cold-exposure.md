@@ -1,5 +1,5 @@
 ---
-sourceHash: "f7352829555e"
+sourceHash: "6f5f5a221096"
 title: "Esposizione al freddo: che cosa mostrano le evidenze e dove diventa rischiosa"
 metaTitle: "Esposizione al freddo: evidenze e rischi"
 metaDescription: "Bagni e docce fredde, viso raffreddato: che cosa dicono gli studi su stress, malattia, recupero e metabolismo, cosa tacciono i miti sulla dopamina e i rischi."

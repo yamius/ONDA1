@@ -1,5 +1,5 @@
 ---
-sourceHash: 8a419d7d40ce
+sourceHash: f2910c8b743d
 title: "Estresse agudo e HRV: o que acontece e como você se recupera"
 metaTitle: "Estresse agudo e HRV: o que os estudos mostram"
 metaDescription: "Como provas, entrevistas e testes de estresse mudam a HRV, como funciona a recuperação e o que as pontuações de estresse de um wearable podem ou não dizer."
@@ -120,8 +120,7 @@ A vida cotidiana é mais difícil. Em um estudo com {{fact:stress.uendes.design}
 
 **Por classe de evidência.**
 
-- **Estabelecida.** Os estudos sobre a recuperação depois do estresse a medem de formas diferentes, então seus valores são difíceis de comparar [S2].
-- **Depende do contexto.** Uma recuperação melhor está associada a resiliência, controle atencional, reavaliação e natureza, como um mapa de fatores estudados sem tamanhos de efeito [S2]; a concordância do sensor de pulso com o ECG vem principalmente de condições de repouso [S13].
+- **Depende do contexto.** Os estudos sobre a recuperação depois do estresse a medem de formas diferentes, então seus valores são difíceis de comparar [S2]. Uma recuperação melhor está associada a resiliência, controle atencional, reavaliação e natureza, como um mapa de fatores estudados sem tamanhos de efeito [S2]; a concordância do sensor de pulso com o ECG vem principalmente de condições de repouso [S13].
 - **Emergente.** O estresse mental agudo e as provas reais reduzem a HRV [S1] [S4] [S5]; os estressores deixam padrões diferentes [S1]; a frequência cardíaca se habitua ao estresse repetido enquanto a antecipação cresce [S3]; respirar antes do estresse alivia a frequência cardíaca e a ansiedade, mas não a HRV nem o cortisol [S7]; o sono ruim amplifica a forma como o estresse é sentido, não a reação cardiovascular [S8]; wearables detectam o estresse no laboratório [S11], mas o confundem com atividade física no dia a dia [S12].
 - **Debatida.** Reatividade ao estresse e mortalidade, com associações em direções opostas [S10].
 - **Desconhecida ou não demonstrada.** O condicionamento físico como amortecedor da reação ao estresse [S4]; a reatividade ao estresse como preditora de doença cardíaca [S10]; se algo que você faça acelera a recuperação.

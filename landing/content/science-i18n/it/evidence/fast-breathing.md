@@ -1,5 +1,5 @@
 ---
-sourceHash: "3f61c4b110e2"
+sourceHash: "bf4ec5a45d58"
 title: "Respirazione rapida: cosa mostrano le evidenze e quali sono i rischi reali"
 metaTitle: "Respirazione rapida: evidenze e rischi reali"
 metaDescription: "Wim Hof, respirazione olotropica, tummo e iperventilazione ciclica: cosa mostrano gli studi su infiammazione, umore e sport, e perché mai in acqua."

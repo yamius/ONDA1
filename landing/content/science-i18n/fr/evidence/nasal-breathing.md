@@ -1,5 +1,5 @@
 ---
-sourceHash: "7683ea5dce4b"
+sourceHash: "74e0a1403ee6"
 title: "Respiration nasale et bouche scotchée : ce que montrent les données"
 metaTitle: "Respiration nasale et bouche scotchée : les données"
 metaDescription: "Ce que fait la respiration par le nez, ce que disent les études sur le sommeil, l’attention, la HRV, le sport et l’asthme, et les risques de la bouche scotchée."

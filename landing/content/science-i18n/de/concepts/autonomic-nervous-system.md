@@ -1,5 +1,5 @@
 ---
-sourceHash: "6fbea09b5622"
+sourceHash: "ea519c2b5915"
 title: "Das autonome Nervensystem: Sympathikus und Parasympathikus"
 metaTitle: "Autonomes Nervensystem: kein Ein-Aus-Schalter"
 metaDescription: "Was das autonome Nervensystem tut, wie seine beiden Äste das Herz steuern und warum keine einzelne Zahl – auch nicht LF/HF – seinen Zustand misst."
@@ -99,9 +99,9 @@ Für das Herz ist die [Herzfrequenzvariabilität](/science/concepts/heart-rate-v
 
 ## Was zeigt die Evidenz?
 
-**Gesichert.** Das autonome Nervensystem steuert die Organe ohne bewusste Anstrengung und hat einen sympathischen, einen parasympathischen und einen enterischen Teil [S1, S2]. Sympathische Signale beschleunigen das Herz, der Vagus verlangsamt es [S4]. Die Äste können gemeinsam aktiv sein und sich unabhängig voneinander verändern [S3, S4, S7]. Die kurzfristige HRV in Ruhe spiegelt vor allem den vagalen Einfluss wider, mit der RMSSD als wichtigstem Zeitbereichsmaß [S5, S6]. Weder die niederfrequente Komponente noch das LF/HF-Verhältnis ist ein gültiges Maß für die Äste oder ihre Gewichtung [S7, S8, S9].
+**Gesichert.** Das autonome Nervensystem steuert die Organe ohne bewusste Anstrengung und hat einen sympathischen, einen parasympathischen und einen enterischen Teil [S1, S2]. Sympathische Signale beschleunigen das Herz, der Vagus verlangsamt es [S4]. Die Äste können gemeinsam aktiv sein und sich unabhängig voneinander verändern [S3, S4, S7]. Die kurzfristige HRV in Ruhe spiegelt vor allem den vagalen Einfluss wider, mit der RMSSD als wichtigstem Zeitbereichsmaß [S5, S6].
 
-**Leitlinie / Expertenkonsens.** Die HRV sollte nicht als spezifischer Marker des kardialen Sympathikusausstroms oder der sympathovagalen Balance verwendet werden [S10].
+**Leitlinie / Expertenkonsens.** Weder die niederfrequente Komponente noch das LF/HF-Verhältnis ist ein gültiges Maß für die Äste oder ihre Gewichtung [S7, S8, S9]. Die HRV sollte nicht als spezifischer Marker des kardialen Sympathikusausstroms oder der sympathovagalen Balance verwendet werden [S10].
 
 **Umstritten.** Die Polyvagal-Theorie postuliert, dass die Evolution vagaler Bahnen ein „System des sozialen Engagements“ hervorgebracht hat [S16]. Eine kritische Übersicht argumentiert, dass jede ihrer Grundprämissen unhaltbar oder höchst unplausibel ist – auch die Behandlung des atemgekoppelten Herzrhythmus als Maß des allgemeinen Vagustonus [S15]. Betrachte sie als umstrittenes Modell, nicht als gesicherte Physiologie; dem Vagusnerv selbst wird eine eigene Seite gewidmet.
 

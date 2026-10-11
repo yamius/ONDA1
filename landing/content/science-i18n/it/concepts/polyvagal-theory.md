@@ -1,5 +1,5 @@
 ---
-sourceHash: "928273b6fb80"
+sourceHash: "c9ad9e84df17"
 title: "Teoria polivagale: cosa propone, cosa regge, cosa è dibattuto"
 metaTitle: "Teoria polivagale: cosa regge davvero"
 metaDescription: "Cosa propone la teoria polivagale, perché i terapeuti la usano, cosa concorda con la fisiologia e perché per molti esperti le sue premesse non reggono."

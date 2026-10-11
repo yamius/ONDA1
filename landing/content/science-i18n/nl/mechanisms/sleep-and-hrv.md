@@ -1,5 +1,5 @@
 ---
-sourceHash: 6252dd3faeef
+sourceHash: b21ec4baa415
 title: "HRV en hartslag tijdens de slaap: waarom de nacht het beste meetvenster is"
 metaTitle: "HRV en hartslag tijdens de slaap"
 metaDescription: "Wat er 's nachts en in de slaapfasen gebeurt met hartslag en HRV, waarom nachtelijke metingen het stabielste venster zijn en wat wearables wel en niet zeggen."
@@ -111,9 +111,9 @@ Korte of onderbroken slaap, alcohol, een zware trainingsdag, een infectie, stres
 
 ## Wat laat het bewijs zien?
 
-**Vastgesteld.** De non-REM-slaap verschuift het hart naar parasympathische invloed en de REM-slaap lijkt meer op wakker zijn [S1, S3, S4]. Slaapapneu veroorzaakt een cyclisch patroon van een eerst tragere en dan snellere hartslag [S9]. Meetomstandigheden bepalen mede de HRV, en daarom worden vergelijkbare omstandigheden aanbevolen (consensus van experts) [S5]. Consumentenapparaten hebben bekende beperkingen bij het herkennen van wakker zijn tijdens de slaapperiode [S7].
+**Vastgesteld.** Meetomstandigheden bepalen mede de HRV, en daarom worden vergelijkbare omstandigheden aanbevolen (consensus van experts) [S5].
 
-**Afhankelijk van de context.** Hartslag en hoogfrequente HRV volgen een circadiaans ritme binnen de slaapfasen [S3]. Bij gezonde jonge volwassenen in een laboratorium detecteerden slaaptrackers slaap goed, maar was hun beoordeling van de fasen inconsistent met PSG [S6]; de steekproef bestond uit {{fact:study.chinoy2021.participants}} [S6].
+**Afhankelijk van de context.** De non-REM-slaap verschuift het hart naar parasympathische invloed en de REM-slaap lijkt meer op wakker zijn [S1, S3, S4]. Slaapapneu veroorzaakt een cyclisch patroon van een eerst tragere en dan snellere hartslag [S9]. Consumentenapparaten hebben bekende beperkingen bij het herkennen van wakker zijn tijdens de slaapperiode [S7]. Hartslag en hoogfrequente HRV volgen een circadiaans ritme binnen de slaapfasen [S3]. Bij gezonde jonge volwassenen in een laboratorium detecteerden slaaptrackers slaap goed, maar was hun beoordeling van de fasen inconsistent met PSG [S6]; de steekproef bestond uit {{fact:study.chinoy2021.participants}} [S6].
 
 **Opkomend.** Een analyse onder regie van de fabrikant meldde een betere overeenstemming voor slaapfasen wanneer autonome en circadiaanse signalen aan beweging werden toegevoegd [S8]. Aanhoudende sympathische activiteit tijdens de slaap bij obstructieve slaapapneu komt uit een kleine studie [S10].
 

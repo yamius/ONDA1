@@ -172,7 +172,7 @@ sources:
 evidenceMap:
   - claim: "Meditation classification types are still varied and largely subjective."
     sources: [S1]
-    class: established
+    class: context-dependent
     claimType: definition
     quote: "Meditation classification types are still varied and largely subjective."
     limitation: "A narrative review; it describes the state of classification, not outcomes."
@@ -256,7 +256,7 @@ evidenceMap:
     limitation: "Single small study without randomization; interpretation of spectral indices is debated."
   - claim: "That study used a paced-breathing control matched to each person's breathing rhythm during meditation."
     sources: [S7]
-    class: established
+    class: emerging
     claimType: measurement
     quote: "We also used as control a period of respiratory rhythm imposed by an auditory signal, with the imposed breathing rhythm being identical to the spontaneous rhythm recorded during meditation."
     limitation: "Describes the method of one study."

@@ -175,7 +175,7 @@ evidenceMap:
     limitation: "Review; LF power is still an indirect index."
   - claim: "Paced breathing at the individual resonant frequency produces large oscillations in heart rate and blood pressure."
     sources: [S6]
-    class: established
+    class: emerging
     claimType: physiology
     quote: "Biofeedback readily produces large oscillations in heart rate, blood pressure, vascular tone, and pulse amplitude via paced breathing at the specific natural resonant frequency of the cardiovascular system for each individual."
     limitation: "Laboratory studies; resonant frequency varies between people."
@@ -205,7 +205,7 @@ evidenceMap:
     limitation: "One trial in healthy adults; durability and health outcomes not tested."
   - claim: "Orthostatic hypotension is a persistent fall in blood pressure on standing; it is common, age-dependent, and can cause symptoms, faints and injuries."
     sources: [S10]
-    class: established
+    class: context-dependent
     claimType: safety
     quote: "OH may complicate treatment of hypertension, heart failure, and coronary heart disease; cause disabling symptoms, faints, and traumatic injuries; and substantially reduce quality of life."
     limitation: "Clinical review; causes include but are not limited to baroreflex failure."

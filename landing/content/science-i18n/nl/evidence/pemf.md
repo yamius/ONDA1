@@ -1,5 +1,5 @@
 ---
-sourceHash: "fdfd13042508"
+sourceHash: "9bfcf8e49dbe"
 title: "PEMF-therapie (gepulste elektromagnetische velden): wat het onderzoek laat zien"
 metaTitle: "PEMF-therapie: wat het onderzoek laat zien"
 metaDescription: "Therapie met gepulste elektromagnetische velden uitgelegd: medische botstimulatoren tegenover matten voor thuis, waar studies pijnverlichting laten zien en wie het beter niet gebruikt."

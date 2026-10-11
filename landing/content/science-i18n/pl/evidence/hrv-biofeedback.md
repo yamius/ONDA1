@@ -1,5 +1,5 @@
 ---
-sourceHash: "c7c0e6f927d5"
+sourceHash: "1dcd3faa7b29"
 title: "Biofeedback HRV: co pokazują badania"
 metaTitle: "Biofeedback HRV: co pokazują badania"
 metaDescription: "Co badania mówią o biofeedbacku HRV — stres, nastrój, ciśnienie krwi, sen, sprawność — i ile sama informacja zwrotna dodaje do wolnego oddychania."

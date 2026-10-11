@@ -230,7 +230,7 @@ evidenceMap:
     limitation: "Ambulatory ECG context."
   - claim: "Ectopic beats introduce mathematical artefact into time- and frequency-domain HRV; leaving them uncorrected significantly altered HRV in simulations."
     sources: [S9]
-    class: established
+    class: emerging
     claimType: measurement
     quote: "Ectopic beats can affect HRV by introducing mathematical artifact into the computations of time- and frequency-domain measures."
     limitation: "Computer simulation with added premature beats in short recordings; size of the effect depends on how many beats are abnormal."
@@ -266,7 +266,7 @@ evidenceMap:
     limitation: "Cross-sectional group averages; not individual predictions."
   - claim: "Many consumer HRV apps offer readiness or recovery scores based on proprietary algorithms that are not transparently described."
     sources: [S12]
-    class: established
+    class: emerging
     claimType: device
     quote: "Although 86% (80/93) offered contextual guidance (eg, readiness or recovery scores), many relied on proprietary algorithms that were not transparently described, limiting independent assessment of how these scores were derived and validated."
     limitation: "App store content analysis of English-language apps at one point in time; scores change with updates."
@@ -284,7 +284,7 @@ evidenceMap:
     limitation: "Narrative review."
   - claim: "After acute myocardial infarction, low all-day SDNN was associated with higher long-term mortality and remained a significant predictor after adjustment."
     sources: [S14]
-    class: established
+    class: emerging
     claimType: other
     quote: "HR variability remained a significant predictor of mortality after adjusting for clinical, demographic, other Holter features and ejection fraction."
     limitation: "Single cohort of post-infarction patients with all-day ECG; its SDNN is not comparable with short-reading wearable SDNN; a population association, not a prediction for a healthy person."

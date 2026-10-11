@@ -1,5 +1,5 @@
 ---
-sourceHash: "fdfd13042508"
+sourceHash: "9bfcf8e49dbe"
 title: "PEMF療法（パルス電磁場）：エビデンスが示すこと"
 metaTitle: "PEMF療法：エビデンスが示すこと"
 metaDescription: "パルス電磁場療法を解説：医療用の骨刺激装置と家庭用マットの違い、試験で痛みの軽減が示された領域、使用を避けるべき人。"

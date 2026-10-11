@@ -1,5 +1,5 @@
 ---
-sourceHash: "7683ea5dce4b"
+sourceHash: "74e0a1403ee6"
 title: "Nasenatmung und Mund-Tape: Was die Evidenz zeigt"
 metaTitle: "Nasenatmung und Mund-Tape: die Evidenz"
 metaDescription: "Was die Atmung durch die Nase bewirkt, was Studien zu Schlaf, Fokus, HRV, Sport und Asthma zeigen und warum beim Mund-Tape Vorsicht geboten ist."

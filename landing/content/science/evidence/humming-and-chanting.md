@@ -177,7 +177,7 @@ evidenceMap:
     limitation: "No controlled trial of humming for sinus disease was found."
   - claim: "The paranasal sinuses are a major source of the nitric oxide found in nasal air."
     sources: [S5, S1]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "The paranasal sinuses are major producers of nitric oxide (NO)."
     limitation: "Physiology; does not by itself establish a benefit of raising it."

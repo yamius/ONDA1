@@ -1,5 +1,5 @@
 ---
-sourceHash: "254aa41c4a50"
+sourceHash: "855b06082cb7"
 title: "¿Funciona de verdad la estimulación del nervio vago? Qué muestra la evidencia"
 metaTitle: "Estimulación del nervio vago: qué muestra la evidencia"
 metaDescription: "La estimulación del nervio vago tiene usos médicos autorizados por la FDA y resultados dispares. Qué respalda cada nivel de evidencia y qué afirmaciones lo exceden."

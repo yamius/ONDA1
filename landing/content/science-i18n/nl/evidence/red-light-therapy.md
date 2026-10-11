@@ -1,5 +1,5 @@
 ---
-sourceHash: "f6488e471877"
+sourceHash: "5e9bed91397e"
 title: "Roodlichttherapie (fotobiomodulatie): wat het bewijs laat zien"
 metaTitle: "Roodlichttherapie: wat het bewijs laat zien"
 metaDescription: "Fotobiomodulatie uitgelegd: hoe de dosis werkt, waar het bewijs stevig is (orale mucositis, sommige pijn, haaruitval), waar het nog pril is, en oogveiligheid."

@@ -1,5 +1,5 @@
 ---
-sourceHash: "6fbea09b5622"
+sourceHash: "ea519c2b5915"
 title: "Autonomiczny układ nerwowy: część współczulna i przywspółczulna"
 metaTitle: "Autonomiczny układ nerwowy: to nie przełącznik"
 metaDescription: "Czym zajmuje się autonomiczny układ nerwowy, jak jego dwie gałęzie sterują sercem i dlaczego żadna liczba, także LF/HF, nie mierzy jego stanu."
@@ -99,9 +99,9 @@ W przypadku serca najczęstszym oknem jest [zmienność rytmu serca](/science/co
 
 ## Co pokazują dane?
 
-**Ustalone.** Autonomiczny układ nerwowy steruje narządami bez świadomego wysiłku i ma część współczulną, przywspółczulną i jelitową [S1, S2]. Sygnały współczulne przyspieszają serce, a nerw błędny je zwalnia [S4]. Gałęzie mogą być aktywne razem i zmieniać się niezależnie [S3, S4, S7]. Krótkoterminowe HRV w spoczynku odzwierciedla głównie wpływ nerwu błędnego, a główną miarą w dziedzinie czasu jest RMSSD [S5, S6]. Ani składowa niskoczęstotliwościowa, ani stosunek LF/HF nie są trafną miarą gałęzi ani ich wzajemnego udziału [S7, S8, S9].
+**Ustalone.** Autonomiczny układ nerwowy steruje narządami bez świadomego wysiłku i ma część współczulną, przywspółczulną i jelitową [S1, S2]. Sygnały współczulne przyspieszają serce, a nerw błędny je zwalnia [S4]. Gałęzie mogą być aktywne razem i zmieniać się niezależnie [S3, S4, S7]. Krótkoterminowe HRV w spoczynku odzwierciedla głównie wpływ nerwu błędnego, a główną miarą w dziedzinie czasu jest RMSSD [S5, S6].
 
-**Wytyczne / konsensus ekspertów.** HRV nie należy używać jako swoistego markera współczulnego pobudzenia serca ani równowagi współczulno-przywspółczulnej [S10].
+**Wytyczne / konsensus ekspertów.** Ani składowa niskoczęstotliwościowa, ani stosunek LF/HF nie są trafną miarą gałęzi ani ich wzajemnego udziału [S7, S8, S9]. HRV nie należy używać jako swoistego markera współczulnego pobudzenia serca ani równowagi współczulno-przywspółczulnej [S10].
 
 **Sporne.** Teoria poliwagalna zakłada, że ewolucja dróg nerwu błędnego dała początek „systemowi zaangażowania społecznego” [S16]. Krytyczny przegląd dowodzi, że każde z jej podstawowych założeń jest nie do obrony lub wysoce nieprawdopodobne — w tym traktowanie związanego z oddechem rytmu serca jako miary ogólnego napięcia nerwu błędnego [S15]. Traktuj ją jako kwestionowany model, a nie ugruntowaną fizjologię; samemu nerwowi błędnemu poświęcimy osobną stronę.
 

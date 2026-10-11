@@ -1,5 +1,5 @@
 ---
-sourceHash: "6fbea09b5622"
+sourceHash: "ea519c2b5915"
 title: "El sistema nervioso autónomo: simpático y parasimpático"
 metaTitle: "Sistema nervioso autónomo: no es un interruptor"
 metaDescription: "Qué hace el sistema nervioso autónomo, cómo sus dos ramas gobiernan el corazón y por qué ningún número, tampoco el cociente LF/HF, mide su estado."
@@ -99,9 +99,9 @@ En el caso del corazón, la [variabilidad de la frecuencia cardíaca](/science/c
 
 ## ¿Qué muestra la evidencia?
 
-**Establecido.** El sistema nervioso autónomo controla los órganos sin esfuerzo consciente y tiene divisiones simpática, parasimpática y entérica [S1, S2]. Las señales simpáticas aceleran el corazón y el vago lo ralentiza [S4]. Las ramas pueden estar activas a la vez y cambiar de forma independiente [S3, S4, S7]. La HRV a corto plazo en reposo refleja sobre todo la influencia vagal, con el RMSSD como principal medida del dominio del tiempo [S5, S6]. Ni el componente de baja frecuencia ni el cociente LF/HF son una medida válida de las ramas ni de su peso relativo [S7, S8, S9].
+**Establecido.** El sistema nervioso autónomo controla los órganos sin esfuerzo consciente y tiene divisiones simpática, parasimpática y entérica [S1, S2]. Las señales simpáticas aceleran el corazón y el vago lo ralentiza [S4]. Las ramas pueden estar activas a la vez y cambiar de forma independiente [S3, S4, S7]. La HRV a corto plazo en reposo refleja sobre todo la influencia vagal, con el RMSSD como principal medida del dominio del tiempo [S5, S6].
 
-**Guía / consenso de expertos.** La HRV no debe usarse como marcador específico de la actividad simpática cardíaca ni del equilibrio simpático-vagal [S10].
+**Guía / consenso de expertos.** Ni el componente de baja frecuencia ni el cociente LF/HF son una medida válida de las ramas ni de su peso relativo [S7, S8, S9]. La HRV no debe usarse como marcador específico de la actividad simpática cardíaca ni del equilibrio simpático-vagal [S10].
 
 **En debate.** La teoría polivagal propone que la evolución de las vías vagales dio lugar a un «sistema de implicación social» [S16]. Una revisión crítica sostiene que cada una de sus premisas básicas es insostenible o muy improbable, incluido el uso del ritmo cardíaco ligado a la respiración como medida del tono vagal general [S15]. Conviene tratarla como un modelo discutido, no como fisiología establecida; el nervio vago en sí tendrá su propia página.
 

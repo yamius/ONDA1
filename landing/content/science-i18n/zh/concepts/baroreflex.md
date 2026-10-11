@@ -1,5 +1,5 @@
 ---
-sourceHash: "281e92fe3ffd"
+sourceHash: "aefe18eb9fcc"
 title: "压力反射：身体如何让血压保持稳定"
 metaTitle: "压力反射：逐搏调节血压的机制"
 metaDescription: "压力反射如何逐搏稳定血压、压力反射敏感性意味着什么，以及慢呼吸和训练会对它产生怎样的影响。"

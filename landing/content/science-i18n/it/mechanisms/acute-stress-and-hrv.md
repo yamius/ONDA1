@@ -1,5 +1,5 @@
 ---
-sourceHash: 8a419d7d40ce
+sourceHash: f2910c8b743d
 title: "Stress acuto e HRV: che cosa succede e come ci si riprende"
 metaTitle: "Stress acuto e HRV: che cosa mostrano gli studi"
 metaDescription: "Come esami, colloqui e test di stress cambiano l'HRV, come funziona il recupero e che cosa possono dire, e non dire, i punteggi di stress dei wearable."
@@ -120,8 +120,7 @@ La vita di tutti i giorni è più difficile. In uno studio su {{fact:stress.uend
 
 **Per classe di evidenza.**
 
-- **Consolidata.** Gli studi sul recupero dopo lo stress lo misurano in modi diversi, quindi i loro valori sono difficili da confrontare [S2].
-- **Dipende dal contesto.** Un recupero migliore è associato a resilienza, controllo attentivo, rivalutazione e natura, come mappa dei fattori studiati senza dimensioni dell'effetto [S2]; la concordanza del sensore da polso con l'ECG deriva soprattutto da condizioni di riposo [S13].
+- **Dipende dal contesto.** Gli studi sul recupero dopo lo stress lo misurano in modi diversi, quindi i loro valori sono difficili da confrontare [S2]. Un recupero migliore è associato a resilienza, controllo attentivo, rivalutazione e natura, come mappa dei fattori studiati senza dimensioni dell'effetto [S2]; la concordanza del sensore da polso con l'ECG deriva soprattutto da condizioni di riposo [S13].
 - **Emergente.** Lo stress mentale acuto e gli esami veri abbassano l'HRV [S1] [S4] [S5]; i fattori di stress lasciano andamenti diversi [S1]; la frequenza cardiaca si abitua allo stress ripetuto mentre l'attesa cresce [S3]; respirare prima dello stress attenua frequenza cardiaca e ansia, ma non HRV né cortisolo [S7]; il sonno scarso amplifica il modo in cui lo stress viene vissuto, non la reazione cardiovascolare [S8]; i wearable rilevano lo stress in laboratorio [S11] ma lo confondono con l'attività fisica nella vita quotidiana [S12].
 - **Dibattuta.** Reattività allo stress e mortalità, con associazioni in direzioni opposte [S10].
 - **Sconosciuta o non dimostrata.** La forma fisica come cuscinetto contro la reazione allo stress [S4]; la reattività allo stress come predittore di malattie cardiache [S10]; se qualcosa che fai acceleri il recupero.

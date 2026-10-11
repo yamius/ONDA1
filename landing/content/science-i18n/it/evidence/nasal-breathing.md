@@ -1,5 +1,5 @@
 ---
-sourceHash: "7683ea5dce4b"
+sourceHash: "74e0a1403ee6"
 title: "Respirazione nasale e bocca chiusa col nastro: che cosa mostrano le evidenze"
 metaTitle: "Respirazione nasale e mouth taping: le evidenze"
 metaDescription: "Che cosa fa la respirazione dal naso, che cosa dicono gli studi su sonno, concentrazione, HRV, sport e asma, e perché il mouth taping richiede cautela."

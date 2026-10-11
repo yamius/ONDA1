@@ -1,5 +1,5 @@
 ---
-sourceHash: 6252dd3faeef
+sourceHash: b21ec4baa415
 title: "HRV und Herzfrequenz im Schlaf: Warum die Nacht das beste Messfenster ist"
 metaTitle: "HRV und Herzfrequenz im Schlaf"
 metaDescription: "Was mit Herzfrequenz und HRV über die Nacht und die Schlafstadien passiert, warum Nachtwerte das stabilste Fenster sind und was Wearables sagen können und was nicht."
@@ -111,9 +111,9 @@ Kurzer oder unterbrochener Schlaf, Alkohol, ein harter Trainingstag, eine Infekt
 
 ## Was zeigt die Evidenz?
 
-**Gesichert.** Non-REM-Schlaf verschiebt das Herz hin zu parasympathischem Einfluss, und der REM-Schlaf ähnelt eher dem Wachzustand [S1, S3, S4]. Schlafapnoe erzeugt ein zyklisches Muster aus langsamer und dann schneller Herzfrequenz [S9]. Die Aufzeichnungsbedingungen prägen die HRV, deshalb werden vergleichbare Bedingungen empfohlen (Expertenkonsens) [S5]. Verbrauchergeräte haben bekannte Grenzen dabei, Wachphasen während der Schlafperiode einzuordnen [S7].
+**Gesichert.** Die Aufzeichnungsbedingungen prägen die HRV, deshalb werden vergleichbare Bedingungen empfohlen (Expertenkonsens) [S5].
 
-**Kontextabhängig.** Herzfrequenz und hochfrequente HRV folgen innerhalb der Schlafstadien einem zirkadianen Rhythmus [S3]. Bei gesunden jungen Erwachsenen im Labor erkannten Schlaftracker Schlaf gut, doch ihre Einschätzung der Stadien war im Vergleich zur PSG uneinheitlich [S6]; die Stichprobe umfasste {{fact:study.chinoy2021.participants}} [S6].
+**Kontextabhängig.** Non-REM-Schlaf verschiebt das Herz hin zu parasympathischem Einfluss, und der REM-Schlaf ähnelt eher dem Wachzustand [S1, S3, S4]. Schlafapnoe erzeugt ein zyklisches Muster aus langsamer und dann schneller Herzfrequenz [S9]. Verbrauchergeräte haben bekannte Grenzen dabei, Wachphasen während der Schlafperiode einzuordnen [S7]. Herzfrequenz und hochfrequente HRV folgen innerhalb der Schlafstadien einem zirkadianen Rhythmus [S3]. Bei gesunden jungen Erwachsenen im Labor erkannten Schlaftracker Schlaf gut, doch ihre Einschätzung der Stadien war im Vergleich zur PSG uneinheitlich [S6]; die Stichprobe umfasste {{fact:study.chinoy2021.participants}} [S6].
 
 **Erste Hinweise.** Eine vom Hersteller durchgeführte Analyse berichtete eine bessere Übereinstimmung bei den Schlafstadien, wenn zur Bewegung autonome und zirkadiane Signale hinzukamen [S8]. Dass die sympathische Aktivität bei obstruktiver Schlafapnoe im Schlaf erhöht bleibt, stammt aus einer kleinen Studie [S10].
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: 3f90a409e444
+sourceHash: faee58737375
 title: "Nerw błędny: co naprawdę robi, a co jest mitem"
 metaTitle: "Nerw błędny: co naprawdę robi, a co jest mitem"
 metaDescription: "Co robi nerw błędny — serce, jelita, drogi oddechowe, gardło, sygnały do mózgu — i które modne twierdzenia o jego napięciu i ćwiczeniach idą za daleko."

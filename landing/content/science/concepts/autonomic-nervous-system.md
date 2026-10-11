@@ -175,7 +175,7 @@ evidenceMap:
     limitation: "A general description of function."
   - claim: "The autonomic nervous system innervates nearly every organ system; it is often described by 'fight or flight' and 'rest and digest', but finely tunes responses to nearly any situation."
     sources: [S2]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Frequently considered to control the \"fight or flight\" and \"rest and digest\" functions, the autonomic nervous system has an intricate network of connections to finely tune the systemic response to nearly any situation."
     limitation: "Review of basic physiology; the popular labels are simplifications."
@@ -247,13 +247,13 @@ evidenceMap:
     limitation: "Opinion article built on experimental literature."
   - claim: "Available data challenge LF and LF/HF as indices of sympathetic control and autonomic balance; the power spectrum, including LF, is mainly determined by the parasympathetic system."
     sources: [S8]
-    class: established
+    class: debated
     claimType: measurement
     quote: "Available data challenge the interpretation of the LF and LF/HF ratio as indices of sympathetic cardiac control and autonomic balance, respectively, and suggest that the HRV power spectrum, including its LF component, is mainly determined by the parasympathetic system."
     limitation: "Review with reanalysis of earlier studies."
   - claim: "Low-frequency power seems to index baroreflex function rather than cardiac sympathetic tone."
     sources: [S9]
-    class: established
+    class: debated
     claimType: measurement
     quote: "LF power seems to provide an index not of cardiac sympathetic tone but of baroreflex function."
     limitation: "Review; it proposes an alternative interpretation rather than a new measure."
@@ -265,7 +265,7 @@ evidenceMap:
     limitation: "Expert consensus on methods, not outcome data."
   - claim: "The breath-linked heart rhythm is largest during sleep, relaxation, slow deep breathing and lying down, and smaller during exercise and anxiety."
     sources: [S11]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "RSA maximises during sleep, relaxation, slow, deep respiration, and when supine, and is reduced during exercise and states of anxiety"
     limitation: "Review of healthy adults; individual responses vary."
@@ -326,9 +326,9 @@ For the heart, [heart rate variability](/science/concepts/heart-rate-variability
 
 ## What does the evidence show?
 
-**Established.** The autonomic nervous system controls the organs without conscious effort and has sympathetic, parasympathetic and enteric divisions [S1, S2]. Sympathetic signals speed the heart and the vagus slows it [S4]. The branches can be active together and change independently [S3, S4, S7]. Short-term resting HRV mainly reflects vagal influence, with RMSSD as the main time-domain measure [S5, S6]. Neither the low-frequency component nor the LF/HF ratio is a valid measure of the branches or their weighting [S7, S8, S9].
+**Established.** The autonomic nervous system controls the organs without conscious effort and has sympathetic, parasympathetic and enteric divisions [S1, S2]. Sympathetic signals speed the heart and the vagus slows it [S4]. The branches can be active together and change independently [S3, S4, S7]. Short-term resting HRV mainly reflects vagal influence, with RMSSD as the main time-domain measure [S5, S6].
 
-**Guideline / expert consensus.** HRV should not be used as a specific marker of cardiac sympathetic outflow or sympathovagal balance [S10].
+**Guideline / expert consensus.** Neither the low-frequency component nor the LF/HF ratio is a valid measure of the branches or their weighting [S7, S8, S9]. HRV should not be used as a specific marker of cardiac sympathetic outflow or sympathovagal balance [S10].
 
 **Debated.** Polyvagal theory proposes that the evolution of vagal pathways produced a "social engagement system" [S16]. A critical review argues that each of its basic premises is untenable or highly implausible — including the treatment of the breath-linked heart rhythm as a measure of general vagal tone [S15]. Treat it as a contested model, not as established physiology; the vagus nerve itself will be covered on its own page.
 

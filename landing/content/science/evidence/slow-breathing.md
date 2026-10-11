@@ -148,7 +148,7 @@ sources:
 evidenceMap:
   - claim: "Heart rate variability and baroreflex sensitivity are maximised when breathing slows to around the resonant rate, which varies between individuals (fact breath.resonance.typical)."
     sources: [S1]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Further investigations therefore suggest that both HRV (RSA) and baroreflex sensitivity are maximised when respiration is slowed to ∼6 breaths per min ( figure 1 ), though this resonant frequency does vary between individuals"
     limitation: "Pooled from controlled-breathing studies in healthy adults; the individual rate must be assessed."

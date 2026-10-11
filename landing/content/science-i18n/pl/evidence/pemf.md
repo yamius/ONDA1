@@ -1,5 +1,5 @@
 ---
-sourceHash: "fdfd13042508"
+sourceHash: "9bfcf8e49dbe"
 title: "Terapia PEMF (pulsujące pola elektromagnetyczne): co pokazują badania"
 metaTitle: "Terapia PEMF: co pokazują badania"
 metaDescription: "Terapia pulsującym polem elektromagnetycznym wyjaśniona: medyczne stymulatory kości a maty domowe, gdzie badania pokazują ulgę w bólu i kto nie powinien jej stosować."

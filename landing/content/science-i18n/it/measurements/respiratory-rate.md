@@ -1,5 +1,5 @@
 ---
-sourceHash: 3e2d8ad38a9d
+sourceHash: 542338be7f2d
 title: "Frequenza respiratoria a riposo: cosa riflette e come si misura"
 metaTitle: "Frequenza respiratoria: significato e misura"
 metaDescription: "La frequenza respiratoria è il numero di respiri al minuto a riposo. Come si misura, cosa la sposta e perché la tua tendenza notturna vale più di una lettura."
@@ -89,7 +89,7 @@ Il respiro è comandato dal tronco encefalico, che regola frequenza e profondit�
 
 ## Cosa mostrano le prove?
 
-**Accertato: un segnale d'allarme clinico.** Negli ospedali una frequenza respiratoria anomala predice eventi potenzialmente gravi, e una frequenza elevata è uno dei primi segni che le condizioni di un paziente stanno peggiorando [S1]. La frequenza respiratoria è comunemente inclusa nei sistemi track-and-trigger, punteggi di allerta precoce che traducono i parametri vitali in un unico livello di allarme [S2]. Nel Regno Unito il National Early Warning Score del Royal College of Physicians, oggi nella sua seconda versione aggiornata, è il sistema standard con cui il NHS riconosce la malattia acuta e il deterioramento clinico [S13]. Queste prove riguardano pazienti e deviazioni **marcate** misurate in contesti clinici. Non significano che una piccola variazione da una notte all'altra su un orologio abbia lo stesso peso.
+**Dipende dal contesto: un segnale d'allarme clinico.** Negli ospedali una frequenza respiratoria anomala predice eventi potenzialmente gravi, e una frequenza elevata è uno dei primi segni che le condizioni di un paziente stanno peggiorando [S1]. La frequenza respiratoria è comunemente inclusa nei sistemi track-and-trigger, punteggi di allerta precoce che traducono i parametri vitali in un unico livello di allarme [S2]. Nel Regno Unito il National Early Warning Score del Royal College of Physicians, oggi nella sua seconda versione aggiornata, è il sistema standard con cui il NHS riconosce la malattia acuta e il deterioramento clinico [S13]. Queste prove riguardano pazienti e deviazioni **marcate** misurate in contesti clinici. Non significano che una piccola variazione da una notte all'altra su un orologio abbia lo stesso peso.
 
 **Dipende dal contesto: quanto è buono il numero.** Il valore di una frequenza respiratoria registrata dipende da quanto accuratamente è stata misurata. I conteggi manuali sono soggetti a errori sistematici e casuali [S2], e in uno studio in pronto soccorso un monitor elettronico al letto del paziente non ha risolto il problema [S3].
 

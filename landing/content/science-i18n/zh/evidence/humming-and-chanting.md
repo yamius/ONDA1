@@ -1,5 +1,5 @@
 ---
-sourceHash: "b24949df5b56"
+sourceHash: "14937f196d56"
 title: "哼鸣、吟唱与 Om：证据显示了什么"
 metaTitle: "哼鸣、吟唱与 Om：证据"
 metaDescription: "关于哼鸣、Om 吟唱、念诵咒语和合唱的研究显示了什么：鼻腔一氧化氮、呼吸变慢、HRV、大脑，以及哪些方面证据薄弱。"

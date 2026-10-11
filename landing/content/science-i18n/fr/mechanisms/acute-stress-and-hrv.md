@@ -1,5 +1,5 @@
 ---
-sourceHash: 8a419d7d40ce
+sourceHash: f2910c8b743d
 title: "Stress aigu et HRV : ce qui se passe et comment on récupère"
 metaTitle: "Stress aigu et HRV : ce que montrent les études"
 metaDescription: "Comment examens, entretiens et tests de stress modifient la HRV, comment se fait la récupération et ce que les scores de stress d’un wearable peuvent dire."
@@ -120,8 +120,7 @@ La vie quotidienne est plus difficile. Dans une étude portant sur {{fact:stress
 
 **Par niveau de preuve.**
 
-- **Établi.** Les études sur la récupération après un stress la mesurent de manières différentes, si bien que leurs valeurs sont difficiles à comparer [S2].
-- **Dépend du contexte.** Une meilleure récupération est associée à la résilience, au contrôle attentionnel, à la réévaluation et à la nature, sous forme d’une carte des facteurs étudiés sans tailles d’effet [S2] ; la concordance du capteur de poignet avec l’ECG provient surtout de conditions de repos [S13].
+- **Dépend du contexte.** Les études sur la récupération après un stress la mesurent de manières différentes, si bien que leurs valeurs sont difficiles à comparer [S2]. Une meilleure récupération est associée à la résilience, au contrôle attentionnel, à la réévaluation et à la nature, sous forme d’une carte des facteurs étudiés sans tailles d’effet [S2] ; la concordance du capteur de poignet avec l’ECG provient surtout de conditions de repos [S13].
 - **Émergent.** Le stress mental aigu et les vrais examens font baisser la HRV [S1] [S4] [S5] ; les facteurs de stress laissent des profils différents [S1] ; la fréquence cardiaque s’habitue au stress répété tandis que l’appréhension augmente [S3] ; respirer avant un stress apaise la fréquence cardiaque et l’anxiété, mais pas la HRV ni le cortisol [S7] ; un mauvais sommeil amplifie la façon dont le stress est ressenti, pas la réaction cardiovasculaire [S8] ; les wearables détectent le stress en laboratoire [S11] mais le confondent avec l’activité physique dans la vie quotidienne [S12].
 - **Débattu.** La réactivité au stress et la mortalité, avec des associations dans des sens opposés [S10].
 - **Inconnu ou non démontré.** La condition physique comme tampon contre la réaction au stress [S4] ; la réactivité au stress comme facteur prédictif des maladies cardiaques [S10] ; le fait que quoi que ce soit accélère la récupération.

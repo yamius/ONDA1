@@ -1,0 +1,1263 @@
+{
+ "_comment": "Review type for every source of type \"review\" on science pages (task 081, 2026-10-11). kind: systematic | meta-analysis | narrative | guideline | textbook | unclear. Derived from PubMed publication types and titles; \"unclear\" entries await a check by Mistral (see D:/_ONDA/_Sciense/081_unclear_review_types.md). Rule: an established row on a narrative review needs long-settled textbook physiology and a classic reference review.",
+ "entries": {
+  "doi:10.1002/cphy.c150037": {
+   "kind": "narrative",
+   "cite": "Wehrwein, Orer & Barman (2016)",
+   "year": 2016,
+   "title": "Overview of the Anatomy, Physiology, and Pharmacology of the Autonomic Nervous System",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system"
+   ]
+  },
+  "doi:10.1016/b978-0-444-64032-1.00027-8": {
+   "kind": "narrative",
+   "cite": "Gibbons (2019)",
+   "year": 2019,
+   "title": "Basics of autonomic nervous system function",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system"
+   ]
+  },
+  "doi:10.1037/0033-295x.98.4.459": {
+   "kind": "narrative",
+   "cite": "Berntson, Cacioppo & Quigley (1991)",
+   "year": 1991,
+   "title": "Autonomic determinism: the modes of autonomic control, the doctrine of autonomic space, and the laws of autonomic constraint",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system"
+   ]
+  },
+  "doi:10.3389/fpsyg.2014.01040": {
+   "kind": "narrative",
+   "cite": "Shaffer, McCraty & Zerr (2014)",
+   "year": 2014,
+   "title": "A healthy heart is not a metronome: an integrative review of the heart's anatomy and heart rate variability",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system",
+    "concepts/coherence",
+    "concepts/vagus-nerve"
+   ]
+  },
+  "doi:10.3389/fpubh.2017.00258": {
+   "kind": "narrative",
+   "cite": "Shaffer & Ginsberg (2017)",
+   "year": 2017,
+   "title": "An overview of heart rate variability metrics and norms",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system",
+    "concepts/heart-rate-variability",
+    "concepts/hrv-baseline",
+    "concepts/interpreting-hrv",
+    "concepts/respiratory-sinus-arrhythmia",
+    "concepts/rmssd",
+    "concepts/sdnn",
+    "concepts/vagus-nerve",
+    "measurements/heart-rate-variability",
+    "mechanisms/breathing-and-hrv"
+   ]
+  },
+  "doi:10.3389/fpsyg.2017.00213": {
+   "kind": "narrative",
+   "cite": "Laborde, Mosley & Thayer (2017)",
+   "year": 2017,
+   "title": "Heart Rate Variability and Cardiac Vagal Tone in Psychophysiological Research — Recommendations for Experiment Planning, Data Analysis, and Data Reporting",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system",
+    "concepts/hrv-baseline",
+    "concepts/interpreting-hrv",
+    "concepts/respiratory-sinus-arrhythmia",
+    "concepts/rmssd",
+    "concepts/sdnn",
+    "concepts/vagus-nerve",
+    "evidence/vagus-nerve-stimulation"
+   ]
+  },
+  "doi:10.3389/fphys.2013.00026": {
+   "kind": "unclear",
+   "cite": "Billman (2013)",
+   "year": 2013,
+   "title": "The LF/HF ratio does not accurately measure cardiac sympatho-vagal balance",
+   "pubmedTypes": [
+    "Journal Article"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system"
+   ]
+  },
+  "doi:10.1111/psyp.12027": {
+   "kind": "narrative",
+   "cite": "Reyes del Paso et al. (2013)",
+   "year": 2013,
+   "title": "The utility of low frequency heart rate variability as an index of sympathetic cardiac tone: a review with emphasis on a reanalysis of previous studies",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system",
+    "concepts/coherence"
+   ]
+  },
+  "doi:10.1113/expphysiol.2010.056259": {
+   "kind": "narrative",
+   "cite": "Goldstein et al. (2011)",
+   "year": 2011,
+   "title": "Low-frequency power of heart rate variability is not a measure of cardiac sympathetic tone but may be a measure of modulation of cardiac autonomic outflows by baroreflexes",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, N.I.H., Intramural",
+    "Review"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system",
+    "concepts/baroreflex"
+   ]
+  },
+  "doi:10.1183/20734735.009817": {
+   "kind": "unclear",
+   "cite": "Russo, Santarelli & O’Rourke (2017)",
+   "year": 2017,
+   "title": "The physiological effects of slow breathing in the healthy human",
+   "pubmedTypes": [
+    "Journal Article"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system",
+    "concepts/baroreflex",
+    "concepts/respiratory-sinus-arrhythmia",
+    "evidence/slow-breathing",
+    "mechanisms/breathing-and-hrv"
+   ]
+  },
+  "doi:10.1007/s10286-006-0352-5": {
+   "kind": "narrative",
+   "cite": "Diaz & Taylor (2006)",
+   "year": 2006,
+   "title": "Probing the arterial baroreflex: is there a 'spontaneous' baroreflex?",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural",
+    "Review"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system",
+    "concepts/baroreflex"
+   ]
+  },
+  "doi:10.4330/wjc.v7.i4.204": {
+   "kind": "narrative",
+   "cite": "Gordan, Gwathmey & Xie (2015)",
+   "year": 2015,
+   "title": "Autonomic and endocrine control of cardiovascular function",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system",
+    "mechanisms/heart-brain-interaction"
+   ]
+  },
+  "doi:10.1038/nrgastro.2012.32": {
+   "kind": "narrative",
+   "cite": "Furness (2012)",
+   "year": 2012,
+   "title": "The enteric nervous system and neurogastroenterology",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system"
+   ]
+  },
+  "doi:10.1016/j.biopsycho.2023.108589": {
+   "kind": "narrative",
+   "cite": "Grossman (2023)",
+   "year": 2023,
+   "title": "Fundamental challenges and likely refutations of the five basic premises of the polyvagal theory",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system",
+    "concepts/polyvagal-theory",
+    "concepts/vagus-nerve"
+   ]
+  },
+  "doi:10.3949/ccjm.76.s2.17": {
+   "kind": "narrative",
+   "cite": "Porges (2009)",
+   "year": 2009,
+   "title": "The polyvagal theory: new insights into adaptive reactions of the autonomic nervous system",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural",
+    "Review"
+   ],
+   "pages": [
+    "concepts/autonomic-nervous-system",
+    "concepts/polyvagal-theory"
+   ]
+  },
+  "doi:10.1111/j.1542-474x.2008.00219.x": {
+   "kind": "narrative",
+   "cite": "La Rovere, Pinna & Raczak (2008)",
+   "year": 2008,
+   "title": "Baroreflex sensitivity: measurement and clinical implications",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/baroreflex"
+   ]
+  },
+  "doi:10.1152/ajpregu.00031.2007": {
+   "kind": "narrative",
+   "cite": "Monahan (2007)",
+   "year": 2007,
+   "title": "Effect of aging on baroreflex function in humans",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "concepts/baroreflex"
+   ]
+  },
+  "doi:10.1113/jphysiol.2002.037192": {
+   "kind": "narrative",
+   "cite": "Eckberg (2003)",
+   "year": 2003,
+   "title": "The human respiratory gate",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "concepts/baroreflex",
+    "concepts/respiratory-sinus-arrhythmia",
+    "mechanisms/breathing-and-hrv"
+   ]
+  },
+  "doi:10.1016/j.jacc.2015.06.1084": {
+   "kind": "narrative",
+   "cite": "Ricci, De Caterina & Fedorowski (2015)",
+   "year": 2015,
+   "title": "Orthostatic hypotension: epidemiology, prognosis, and treatment",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/baroreflex"
+   ]
+  },
+  "doi:10.7453/gahmj.2014.073": {
+   "kind": "narrative",
+   "cite": "McCraty & Shaffer (2015)",
+   "year": 2015,
+   "title": "Heart rate variability: new perspectives on physiological mechanisms, assessment of self-regulatory capacity, and health risk",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/coherence",
+    "mechanisms/heart-brain-interaction"
+   ]
+  },
+  "doi:10.1016/j.neubiorev.2022.104576": {
+   "kind": "narrative",
+   "cite": "Sevoz-Couche & Laborde (2022)",
+   "year": 2022,
+   "title": "Heart rate variability and slow-paced breathing: when coherence meets resonance",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "concepts/coherence",
+    "mechanisms/breathing-and-hrv",
+    "mechanisms/heart-brain-interaction"
+   ]
+  },
+  "doi:10.3389/fpubh.2017.00267": {
+   "kind": "unclear",
+   "cite": "McCraty (2017)",
+   "year": 2017,
+   "title": "New frontiers in heart rate variability and social coherence research: techniques, technologies, and implications for improving group dynamics and outcomes",
+   "pubmedTypes": [
+    "Journal Article"
+   ],
+   "pages": [
+    "concepts/coherence",
+    "mechanisms/heart-brain-interaction"
+   ]
+  },
+  "doi:10.1038/nrendo.2009.106": {
+   "kind": "narrative",
+   "cite": "Chrousos (2009)",
+   "year": 2009,
+   "title": "Stress and disorders of the stress system",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/cortisol-and-stress-response"
+   ]
+  },
+  "doi:10.1016/j.bbi.2012.02.002": {
+   "kind": "narrative",
+   "cite": "Stalder & Kirschbaum (2012)",
+   "year": 2012,
+   "title": "Analysis of cortisol in hair — state of the art and future directions",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "concepts/cortisol-and-stress-response"
+   ]
+  },
+  "doi:10.3390/s26010003": {
+   "kind": "narrative",
+   "cite": "Esco, Fields, Mohammadnabi & Kliszczewicz (2026)",
+   "year": 2026,
+   "title": "Monitoring training adaptation and recovery status in athletes using heart rate variability via mobile devices: a narrative review",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/hrv-baseline",
+    "concepts/interpreting-hrv",
+    "mechanisms/hrv-day-to-day",
+    "questions/why-is-my-hrv-low"
+   ]
+  },
+  "doi:10.1016/j.bpsc.2017.12.004": {
+   "kind": "narrative",
+   "cite": "Khalsa et al. (2018)",
+   "year": 2018,
+   "title": "Interoception and Mental Health: A Roadmap",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "concepts/interoception"
+   ]
+  },
+  "doi:10.1016/j.tins.2020.10.007": {
+   "kind": "narrative",
+   "cite": "Chen et al. (2021)",
+   "year": 2021,
+   "title": "The Emerging Science of Interoception: Sensing, Integrating, Interpreting, and Regulating Signals within the Self",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "concepts/interoception"
+   ]
+  },
+  "doi:10.1038/nrn894": {
+   "kind": "narrative",
+   "cite": "Craig (2002)",
+   "year": 2002,
+   "title": "How do you feel? Interoception: the sense of the physiological condition of the body",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/interoception"
+   ]
+  },
+  "doi:10.1098/rstb.2016.0015": {
+   "kind": "narrative",
+   "cite": "Brener & Ring (2016)",
+   "year": 2016,
+   "title": "Towards a psychophysics of interoceptive processes: the measurement of heartbeat detection",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/interoception"
+   ]
+  },
+  "doi:10.1038/nrn2555": {
+   "kind": "narrative",
+   "cite": "Craig (2009)",
+   "year": 2009,
+   "title": "How do you feel--now? The anterior insula and human awareness",
+   "pubmedTypes": [
+    "Research Support, Non-U.S. Gov't",
+    "Review",
+    "Journal Article"
+   ],
+   "pages": [
+    "concepts/interoception"
+   ]
+  },
+  "doi:10.1016/j.tics.2013.09.007": {
+   "kind": "unclear",
+   "cite": "Seth (2013)",
+   "year": 2013,
+   "title": "Interoceptive inference, emotion, and the embodied self",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "pages": [
+    "concepts/interoception"
+   ]
+  },
+  "doi:10.1038/nrn3950": {
+   "kind": "narrative",
+   "cite": "Barrett & Simmons (2015)",
+   "year": 2015,
+   "title": "Interoceptive predictions in the brain",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, Non-P.H.S.",
+    "Review"
+   ],
+   "pages": [
+    "concepts/interoception"
+   ]
+  },
+  "doi:10.1016/j.copsyc.2017.04.020": {
+   "kind": "narrative",
+   "cite": "Critchley & Garfinkel (2017)",
+   "year": 2017,
+   "title": "Interoception and emotion",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/interoception"
+   ]
+  },
+  "doi:10.3389/fphys.2012.00148": {
+   "kind": "unclear",
+   "cite": "Peltola (2012)",
+   "year": 2012,
+   "title": "Role of editing of R-R intervals in the analysis of heart rate variability",
+   "pubmedTypes": [
+    "Journal Article"
+   ],
+   "pages": [
+    "concepts/interpreting-hrv"
+   ]
+  },
+  "doi:10.3390/s26144486": {
+   "kind": "narrative",
+   "cite": "Lepley et al. (2026)",
+   "year": 2026,
+   "title": "Consumer Smartwatch Technology in Health and Performance Research: Validity, Limitations, and Real-World Applications",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/interpreting-hrv"
+   ]
+  },
+  "pmid:40735382": {
+   "kind": "unclear",
+   "cite": "Porges (2025)",
+   "year": 2025,
+   "title": "Polyvagal theory: current status, clinical applications, and future directions",
+   "pubmedTypes": [
+    "Journal Article"
+   ],
+   "pages": [
+    "concepts/polyvagal-theory"
+   ]
+  },
+  "pmid:41768017": {
+   "kind": "unclear",
+   "cite": "Grossman et al. (2026)",
+   "year": 2026,
+   "title": "Why the polyvagal theory is untenable: an international expert evaluation of the polyvagal theory and commentary upon Porges (2025)",
+   "pubmedTypes": [
+    "Journal Article"
+   ],
+   "pages": [
+    "concepts/polyvagal-theory"
+   ]
+  },
+  "pmid:41768026": {
+   "kind": "unclear",
+   "cite": "Porges (2026)",
+   "year": 2026,
+   "title": "When a critique becomes untenable: a scholarly response to Grossman et al.'s evaluation of polyvagal theory",
+   "pubmedTypes": [
+    "Journal Article"
+   ],
+   "pages": [
+    "concepts/polyvagal-theory"
+   ]
+  },
+  "doi:10.1016/j.biopsycho.2022.108382": {
+   "kind": "narrative",
+   "cite": "Taylor, Wang & Leite (2022)",
+   "year": 2022,
+   "title": "An overview of the phylogeny of cardiorespiratory control in vertebrates with some reflections on the 'Polyvagal Theory'",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/polyvagal-theory"
+   ]
+  },
+  "doi:10.1016/j.biopsycho.2005.11.014": {
+   "kind": "narrative",
+   "cite": "Grossman & Taylor (2007)",
+   "year": 2007,
+   "title": "Toward understanding respiratory sinus arrhythmia: relations to cardiac vagal tone, evolution and biobehavioral functions",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "concepts/polyvagal-theory",
+    "concepts/respiratory-sinus-arrhythmia",
+    "concepts/vagus-nerve",
+    "mechanisms/breathing-and-hrv"
+   ]
+  },
+  "doi:10.3389/fpsyg.2014.00756": {
+   "kind": "unclear",
+   "cite": "Lehrer & Gevirtz (2014)",
+   "year": 2014,
+   "title": "Heart rate variability biofeedback: how and why does it work?",
+   "pubmedTypes": [
+    "Journal Article"
+   ],
+   "pages": [
+    "concepts/respiratory-sinus-arrhythmia",
+    "evidence/hrv-biofeedback",
+    "mechanisms/breathing-and-hrv"
+   ]
+  },
+  "doi:10.3389/fpsyt.2018.00044": {
+   "kind": "narrative",
+   "cite": "Breit et al. (2018)",
+   "year": 2018,
+   "title": "Vagus Nerve as Modulator of the Brain–Gut Axis in Psychiatric and Inflammatory Disorders",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/vagus-nerve",
+    "evidence/humming-and-chanting"
+   ]
+  },
+  "doi:10.3389/fnins.2018.00049": {
+   "kind": "narrative",
+   "cite": "Bonaz, Bazin & Pellissier (2018)",
+   "year": 2018,
+   "title": "The Vagus Nerve at the Interface of the Microbiota-Gut-Brain Axis",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/vagus-nerve"
+   ]
+  },
+  "doi:10.1016/s1566-0702(00)00215-0": {
+   "kind": "narrative",
+   "cite": "Berthoud & Neuhuber (2000)",
+   "year": 2000,
+   "title": "Functional and chemical anatomy of the afferent vagal system",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Research Support, U.S. Gov't, P.H.S.",
+    "Review"
+   ],
+   "pages": [
+    "concepts/vagus-nerve"
+   ]
+  },
+  "doi:10.1038/nature01321": {
+   "kind": "narrative",
+   "cite": "Tracey (2002)",
+   "year": 2002,
+   "title": "The inflammatory reflex",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, U.S. Gov't, Non-P.H.S.",
+    "Research Support, U.S. Gov't, P.H.S.",
+    "Review"
+   ],
+   "pages": [
+    "concepts/vagus-nerve"
+   ]
+  },
+  "doi:10.1016/j.ejim.2023.03.025": {
+   "kind": "narrative",
+   "cite": "Longo et al. (2023)",
+   "year": 2023,
+   "title": "Vasovagal syncope: An overview of pathophysiological mechanisms",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/vagus-nerve"
+   ]
+  },
+  "doi:10.1007/bf02691277": {
+   "kind": "narrative",
+   "cite": "Gooden (1994)",
+   "year": 1994,
+   "title": "Mechanism of the human diving response",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "concepts/vagus-nerve",
+    "evidence/cold-exposure"
+   ]
+  },
+  "doi:10.1080/22423982.2022.2111789": {
+   "kind": "narrative",
+   "cite": "Esperland, de Weerd & Mercer (2022)",
+   "year": 2022,
+   "title": "Health effects of voluntary exposure to cold water — a continuing subject of debate",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/cold-exposure"
+   ]
+  },
+  "doi:10.1113/jphysiol.2012.229864": {
+   "kind": "narrative",
+   "cite": "Shattock & Tipton (2012)",
+   "year": 2012,
+   "title": "'Autonomic conflict': a different way to die during cold water immersion?",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/cold-exposure"
+   ]
+  },
+  "doi:10.1152/japplphysiol.00578.2026": {
+   "kind": "narrative",
+   "cite": "Leuci et al. (2026)",
+   "year": 2026,
+   "title": "Beyond hypothermia: mechanisms of death, rescue, and prevention in cold water immersion",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/cold-exposure"
+   ]
+  },
+  "doi:10.1037/amp0000118": {
+   "kind": "narrative",
+   "cite": "Thibault & Raz (2017)",
+   "year": 2017,
+   "title": "The psychology of neurofeedback: Clinical intervention even if applied placebo",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/eeg-neurofeedback"
+   ]
+  },
+  "doi:10.1016/j.neubiorev.2023.105453": {
+   "kind": "narrative",
+   "cite": "Fincham et al. (2023)",
+   "year": 2023,
+   "title": "High ventilation breathwork practices: an overview of their effects, mechanisms, and considerations for clinical applications",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "pages": [
+    "evidence/fast-breathing"
+   ]
+  },
+  "doi:10.1152/japplphysiol.90991.2008": {
+   "kind": "narrative",
+   "cite": "Lindholm & Lundgren (2009)",
+   "year": 2009,
+   "title": "The physiology and pathophysiology of human breath-hold diving",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/fast-breathing"
+   ]
+  },
+  "doi:10.1113/jphysiol.2013.268953": {
+   "kind": "narrative",
+   "cite": "Willie et al. (2014)",
+   "year": 2014,
+   "title": "Integrative regulation of human brain blood flow",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "evidence/fast-breathing"
+   ]
+  },
+  "doi:10.1177/08830738241273347": {
+   "kind": "narrative",
+   "cite": "Rao & Kuperman (2024)",
+   "year": 2024,
+   "title": "A review of hyperventilation activation in diagnosis and management of childhood absence epilepsy",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/fast-breathing"
+   ]
+  },
+  "doi:10.1089/acm.2006.6203": {
+   "kind": "narrative",
+   "cite": "Rhinewine & Williams (2007)",
+   "year": 2007,
+   "title": "Holotropic Breathwork: the potential role of a prolonged, voluntary hyperventilation procedure as an adjunct to psychotherapy",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "evidence/fast-breathing"
+   ]
+  },
+  "doi:10.3389/fnins.2020.570400": {
+   "kind": "narrative",
+   "cite": "Shaffer & Meehan (2020)",
+   "year": 2020,
+   "title": "A practical guide to resonance frequency assessment for heart rate variability biofeedback",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/hrv-biofeedback",
+    "evidence/slow-breathing",
+    "mechanisms/breathing-and-hrv"
+   ]
+  },
+  "doi:10.1002/ar.20782": {
+   "kind": "unclear",
+   "cite": "Lundberg (2008)",
+   "year": 2008,
+   "title": "Nitric oxide and the paranasal sinuses",
+   "pubmedTypes": [
+    "Journal Article"
+   ],
+   "pages": [
+    "evidence/humming-and-chanting",
+    "evidence/nasal-breathing"
+   ]
+  },
+  "doi:10.1016/bs.pbr.2018.10.020": {
+   "kind": "narrative",
+   "cite": "Brandmeyer, Delorme & Wahbeh (2019)",
+   "year": 2019,
+   "title": "The neuroscience of meditation: classification, phenomenology, correlates, and mechanisms",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/meditation-autonomic-nervous-system"
+   ]
+  },
+  "doi:10.1016/j.resp.2008.05.002": {
+   "kind": "narrative",
+   "cite": "Elad, Wolf & Keck (2008)",
+   "year": 2008,
+   "title": "Air-conditioning in the human nasal cavity",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/nasal-breathing"
+   ]
+  },
+  "doi:10.3109/15368378.2013.776335": {
+   "kind": "narrative",
+   "cite": "Pilla (2013)",
+   "year": 2013,
+   "title": "Nonthermal electromagnetic fields: from first messenger to therapeutic applications",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/pemf"
+   ]
+  },
+  "doi:10.3390/bioengineering11121223": {
+   "kind": "narrative",
+   "cite": "Kaadan et al. (2024)",
+   "year": 2024,
+   "title": "Augmentation of Deficient Bone Healing by Pulsed Electromagnetic Fields — From Mechanisms to Clinical Outcomes",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/pemf"
+   ]
+  },
+  "doi:10.1111/php.12864": {
+   "kind": "narrative",
+   "cite": "Hamblin (2018)",
+   "year": 2018,
+   "title": "Mechanisms and Mitochondrial Redox Signaling in Photobiomodulation",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, N.I.H., Extramural",
+    "Research Support, U.S. Gov't, Non-P.H.S.",
+    "Review"
+   ],
+   "pages": [
+    "evidence/red-light-therapy"
+   ]
+  },
+  "doi:10.2203/dose-response.09-027.hamblin": {
+   "kind": "unclear",
+   "cite": "Huang et al. (2009)",
+   "year": 2009,
+   "title": "Biphasic dose response in low level light therapy",
+   "pubmedTypes": [
+    "Journal Article"
+   ],
+   "pages": [
+    "evidence/red-light-therapy"
+   ]
+  },
+  "doi:10.1016/j.mayocp.2018.04.008": {
+   "kind": "narrative",
+   "cite": "Laukkanen, Laukkanen & Kunutsor (2018)",
+   "year": 2018,
+   "title": "Cardiovascular and other health benefits of sauna bathing: a review of the evidence",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/sauna-heat-exposure"
+   ]
+  },
+  "doi:10.1016/s0002-9343(00)00671-9": {
+   "kind": "narrative",
+   "cite": "Hannuksela & Ellahham (2001)",
+   "year": 2001,
+   "title": "Benefits and risks of sauna bathing",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/sauna-heat-exposure"
+   ]
+  },
+  "doi:10.1111/joa.13122": {
+   "kind": "narrative",
+   "cite": "Butt et al. (2020)",
+   "year": 2020,
+   "title": "The anatomical basis for transcutaneous auricular vagus nerve stimulation",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/vagus-nerve-stimulation"
+   ]
+  },
+  "doi:10.3389/fnins.2020.00284": {
+   "kind": "narrative",
+   "cite": "Yap et al. (2020)",
+   "year": 2020,
+   "title": "Critical Review of Transcutaneous Vagus Nerve Stimulation: Challenges for Translation to Clinical Practice",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/vagus-nerve-stimulation"
+   ]
+  },
+  "doi:10.1080/09638288.2024.2313123": {
+   "kind": "unclear",
+   "cite": "Gerges et al. (2024)",
+   "year": 2024,
+   "title": "Clinical application of transcutaneous auricular vagus nerve stimulation: a scoping review",
+   "pubmedTypes": [
+    "Journal Article",
+    "Scoping Review",
+    "Research Support, Non-U.S. Gov't"
+   ],
+   "pages": [
+    "evidence/vagus-nerve-stimulation"
+   ]
+  },
+  "doi:10.1007/s41782-022-00202-7": {
+   "kind": "narrative",
+   "cite": "Pandi-Perumal et al. (2022)",
+   "year": 2022,
+   "title": "The Origin and Clinical Relevance of Yoga Nidra",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "evidence/yoga-nidra-nsdr"
+   ]
+  },
+  "doi:10.17761/2024-d-24-00021": {
+   "kind": "unclear",
+   "cite": "Luu (2024)",
+   "year": 2024,
+   "title": "Key Components of Trauma-Informed Yoga Nidra",
+   "pubmedTypes": [
+    "Journal Article"
+   ],
+   "pages": [
+    "evidence/yoga-nidra-nsdr"
+   ]
+  },
+  "doi:10.1109/rbme.2017.2763681": {
+   "kind": "narrative",
+   "cite": "Charlton et al. (2018)",
+   "year": 2018,
+   "title": "Breathing Rate Estimation From the Electrocardiogram and Photoplethysmogram: A Review",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "measurements/onda-method",
+    "measurements/respiratory-rate"
+   ]
+  },
+  "doi:10.5694/j.1326-5377.2008.tb01825.x": {
+   "kind": "narrative",
+   "cite": "Cretikos et al. (2008)",
+   "year": 2008,
+   "title": "Respiratory rate: the neglected vital sign",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "measurements/respiratory-rate"
+   ]
+  },
+  "doi:10.1097/aln.0b013e3181c38c25": {
+   "kind": "narrative",
+   "cite": "Dahan, Aarts & Smith (2010)",
+   "year": 2010,
+   "title": "Incidence, Reversal, and Prevention of Opioid-induced Respiratory Depression",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "measurements/respiratory-rate"
+   ]
+  },
+  "doi:10.7861/clinmed.2022-news-concept": {
+   "kind": "narrative",
+   "cite": "Williams (2022)",
+   "year": 2022,
+   "title": "The National Early Warning Score: from concept to NHS implementation",
+   "pubmedTypes": [
+    "Review",
+    "Journal Article"
+   ],
+   "pages": [
+    "measurements/respiratory-rate"
+   ]
+  },
+  "pmid:31985921": {
+   "kind": "textbook",
+   "cite": "Henning & Krawiec (2023)",
+   "year": 2023,
+   "title": "Sinus Tachycardia",
+   "pubmedTypes": [
+    "Study Guide"
+   ],
+   "pages": [
+    "measurements/resting-heart-rate"
+   ]
+  },
+  "doi:10.1016/j.tcm.2019.07.001": {
+   "kind": "narrative",
+   "cite": "Sidhu & Marine (2020)",
+   "year": 2020,
+   "title": "Evaluating and managing bradycardia",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "measurements/resting-heart-rate"
+   ]
+  },
+  "doi:10.1016/j.jacc.2007.04.079": {
+   "kind": "narrative",
+   "cite": "Fox et al., Heart Rate Working Group (2007)",
+   "year": 2007,
+   "title": "Resting heart rate in cardiovascular disease",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "measurements/resting-heart-rate"
+   ]
+  },
+  "doi:10.1007/bf02883398": {
+   "kind": "unclear",
+   "cite": "Green, Kirby & Suls (1996)",
+   "year": 1996,
+   "title": "The effects of caffeine on blood pressure and heart rate: A review",
+   "pubmedTypes": [
+    "Journal Article"
+   ],
+   "pages": [
+    "measurements/resting-heart-rate",
+    "mechanisms/hrv-day-to-day"
+   ]
+  },
+  "doi:10.1016/j.neubiorev.2025.106268": {
+   "kind": "unclear",
+   "cite": "Roddick et al. (2025)",
+   "year": 2025,
+   "title": "Cardiac vagal recovery following acute psychological stress in human adults: A scoping review",
+   "pubmedTypes": [
+    "Journal Article",
+    "Scoping Review"
+   ],
+   "pages": [
+    "mechanisms/acute-stress-and-hrv",
+    "questions/why-is-my-hrv-low"
+   ]
+  },
+  "doi:10.31083/rcm47953": {
+   "kind": "narrative",
+   "cite": "Johnston et al. (2026)",
+   "year": 2026,
+   "title": "Cardiac Responses to Alcohol: A Review of Mechanisms and Clinical Implications",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "mechanisms/alcohol-and-hrv"
+   ]
+  },
+  "doi:10.1007/s40279-013-0083-4": {
+   "kind": "narrative",
+   "cite": "Stanley, Peake & Buchheit (2013)",
+   "year": 2013,
+   "title": "Cardiac parasympathetic reactivation following exercise: implications for training prescription",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "mechanisms/exercise-and-hrv",
+    "mechanisms/hrv-day-to-day",
+    "mechanisms/strength-training-and-hrv",
+    "questions/why-is-my-hrv-low"
+   ]
+  },
+  "doi:10.1007/s40279-013-0071-8": {
+   "kind": "narrative",
+   "cite": "Plews et al. (2013)",
+   "year": 2013,
+   "title": "Training adaptation and heart rate variability in elite endurance athletes: opening the door to effective monitoring",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "mechanisms/exercise-and-hrv"
+   ]
+  },
+  "doi:10.1016/j.neubiorev.2008.08.004": {
+   "kind": "narrative",
+   "cite": "Thayer & Lane (2009)",
+   "year": 2009,
+   "title": "Claude Bernard and the heart-brain connection: further elaboration of a model of neurovisceral integration",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "mechanisms/heart-brain-interaction"
+   ]
+  },
+  "doi:10.1007/s12160-009-9101-z": {
+   "kind": "unclear",
+   "cite": "Thayer et al. (2009)",
+   "year": 2009,
+   "title": "Heart rate variability, prefrontal neural function, and cognitive performance: the neurovisceral integration perspective on self-regulation, adaptation, and health",
+   "pubmedTypes": [
+    "Journal Article"
+   ],
+   "pages": [
+    "mechanisms/heart-brain-interaction"
+   ]
+  },
+  "doi:10.1113/expphysiol.2007.041178": {
+   "kind": "narrative",
+   "cite": "Armour (2008)",
+   "year": 2008,
+   "title": "Potential clinical relevance of the 'little brain' on the mammalian heart",
+   "pubmedTypes": [
+    "Journal Article",
+    "Research Support, Non-U.S. Gov't",
+    "Review"
+   ],
+   "pages": [
+    "mechanisms/heart-brain-interaction"
+   ]
+  },
+  "doi:10.1016/s1474-4422(18)30336-3": {
+   "kind": "narrative",
+   "cite": "Scheitz et al. (2018)",
+   "year": 2018,
+   "title": "Stroke-heart syndrome: clinical presentation and underlying mechanisms",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "mechanisms/heart-brain-interaction"
+   ]
+  },
+  "doi:10.30773/pi.2017.08.17": {
+   "kind": "meta-analysis",
+   "cite": "Kim et al. (2018)",
+   "year": 2018,
+   "title": "Stress and Heart Rate Variability: A Meta-Analysis and Review of the Literature",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "mechanisms/hrv-day-to-day"
+   ]
+  },
+  "doi:10.1146/annurev-bioeng-103020-040136": {
+   "kind": "narrative",
+   "cite": "Goergen et al. (2022)",
+   "year": 2022,
+   "title": "Detection and Monitoring of Viral Infections via Wearable Devices and Biometric Data",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review",
+    "Research Support, N.I.H., Extramural"
+   ],
+   "pages": [
+    "mechanisms/illness-and-hrv"
+   ]
+  },
+  "doi:10.1016/j.smrv.2011.02.005": {
+   "kind": "narrative",
+   "cite": "Stein & Pu (2012)",
+   "year": 2012,
+   "title": "Heart rate variability, sleep and sleep disorders",
+   "pubmedTypes": [
+    "Journal Article",
+    "Review"
+   ],
+   "pages": [
+    "mechanisms/sleep-and-hrv"
+   ]
+  },
+  "doi:10.1093/sleep/zsad325": {
+   "kind": "unclear",
+   "cite": "de Zambotti et al. (2024)",
+   "year": 2024,
+   "title": "State of the science and recommendations for using wearable technology in sleep and circadian research",
+   "pubmedTypes": [
+    "Journal Article"
+   ],
+   "pages": [
+    "mechanisms/sleep-and-hrv"
+   ]
+  }
+ }
+}

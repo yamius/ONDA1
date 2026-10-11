@@ -1,5 +1,5 @@
 ---
-sourceHash: "57d18386abf8"
+sourceHash: "6f02fd56c607"
 title: "Langzaam ademen: wat het bewijs laat zien"
 metaTitle: "Langzaam ademen: wat het bewijs laat zien"
 metaDescription: "Wat onderzoek laat zien over langzaam ademen zonder feedback — HRV, bloeddruk, stress, slaap, pijn — en wat er bekend is over populaire technieken."

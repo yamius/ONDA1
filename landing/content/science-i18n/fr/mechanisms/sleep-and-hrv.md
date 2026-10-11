@@ -1,5 +1,5 @@
 ---
-sourceHash: 6252dd3faeef
+sourceHash: b21ec4baa415
 title: "HRV et fréquence cardiaque pendant le sommeil : pourquoi la nuit est la meilleure fenêtre"
 metaTitle: "HRV et fréquence cardiaque pendant le sommeil"
 metaDescription: "Ce qui arrive à la fréquence cardiaque et à la HRV au fil de la nuit et des stades de sommeil, pourquoi les mesures nocturnes sont les plus stables et ce que les objets connectés peuvent dire ou non."
@@ -112,9 +112,9 @@ Un sommeil court ou entrecoupé, l’alcool, une journée d’entraînement inte
 
 ## Que montrent les données ?
 
-**Établi.** Le sommeil lent oriente le cœur vers une influence parasympathique, et le sommeil paradoxal ressemble davantage à l’éveil [S1, S3, S4]. L’apnée du sommeil produit un schéma cyclique de ralentissement puis d’accélération du cœur [S9]. Les conditions d’enregistrement façonnent la HRV, c’est pourquoi des conditions comparables sont recommandées (consensus d’experts) [S5]. Les appareils grand public ont des limites connues pour classer l’éveil pendant la période de sommeil [S7].
+**Établi.** Les conditions d’enregistrement façonnent la HRV, c’est pourquoi des conditions comparables sont recommandées (consensus d’experts) [S5].
 
-**Dépend du contexte.** La fréquence cardiaque et la HRV haute fréquence suivent un rythme circadien au sein des stades de sommeil [S3]. Chez de jeunes adultes en bonne santé en laboratoire, les trackers de sommeil détectaient bien le sommeil, mais leurs évaluations des stades étaient incohérentes par rapport à la PSG [S6] ; l’échantillon comptait {{fact:study.chinoy2021.participants}} [S6].
+**Dépend du contexte.** Le sommeil lent oriente le cœur vers une influence parasympathique, et le sommeil paradoxal ressemble davantage à l’éveil [S1, S3, S4]. L’apnée du sommeil produit un schéma cyclique de ralentissement puis d’accélération du cœur [S9]. Les appareils grand public ont des limites connues pour classer l’éveil pendant la période de sommeil [S7]. La fréquence cardiaque et la HRV haute fréquence suivent un rythme circadien au sein des stades de sommeil [S3]. Chez de jeunes adultes en bonne santé en laboratoire, les trackers de sommeil détectaient bien le sommeil, mais leurs évaluations des stades étaient incohérentes par rapport à la PSG [S6] ; l’échantillon comptait {{fact:study.chinoy2021.participants}} [S6].
 
 **Émergent.** Une analyse menée par un fabricant a rapporté une meilleure concordance des stades de sommeil quand des signaux autonomes et circadiens étaient ajoutés au mouvement [S8]. L’activité sympathique soutenue pendant le sommeil dans l’apnée obstructive du sommeil provient d’une petite étude [S10].
 

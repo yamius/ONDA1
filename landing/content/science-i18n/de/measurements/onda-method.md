@@ -1,5 +1,5 @@
 ---
-sourceHash: 507e4dc4d425
+sourceHash: a4f05e49ea69
 title: "Wie ONDA die Signale deines Körpers misst und deutet"
 metaTitle: "Wie ONDA deine Körpersignale misst und deutet"
 metaDescription: "Woher ONDA seine Daten bezieht, wie es deine Baseline und Signale bildet, was auf deinem Handy bleibt und wo die Grenzen jeder angezeigten Zahl liegen."

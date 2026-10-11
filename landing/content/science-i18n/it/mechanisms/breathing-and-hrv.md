@@ -1,5 +1,5 @@
 ---
-sourceHash: "41115ae9a660"
+sourceHash: "8f8acb125420"
 title: "Come il respiro cambia l'HRV — e perché la respirazione lenta la aumenta"
 metaTitle: "Respiro e HRV: perché respirare lentamente la aumenta"
 metaDescription: "Perché la variabilità della frequenza cardiaca aumenta quando respiri lentamente: il ritmo cardiaco legato al respiro, il baroriflesso e la risonanza."
@@ -89,9 +89,9 @@ Primo, il risultato dipende dal modo di respirare durante la registrazione, quin
 
 ## Che cosa mostrano le evidenze?
 
-**Accertato.** La respirazione lenta amplia il ritmo cardiaco legato al respiro, e l'HRV e la sensibilità del baroriflesso raggiungono il massimo vicino alla frequenza di risonanza [S2, S3]. Un'ampia revisione sistematica con meta-analisi ha trovato aumenti dell'HRV di mediazione vagale durante la respirazione lenta, subito dopo una singola sessione e dopo programmi di più sessioni [S8]. {{fact:claim.slowExhale}} [S8, S5].
+**Accertato.** Un'ampia revisione sistematica con meta-analisi ha trovato aumenti dell'HRV di mediazione vagale durante la respirazione lenta, subito dopo una singola sessione e dopo programmi di più sessioni [S8]. {{fact:claim.slowExhale}} [S8, S5].
 
-**Dipende dal contesto.** Il modello di risonanza e baroriflesso che spiega l'entità dell'effetto [S4, S5, S9]; le caratteristiche individuali della frequenza di risonanza [S6]. In uno studio crossover, aggiungere una stimolazione elettrica dell'orecchio durante la respirazione lenta alla frequenza di risonanza non ha aumentato ulteriormente l'HRV: la respirazione lenta stava già producendo l'effetto [S11].
+**Dipende dal contesto.** La respirazione lenta amplia il ritmo cardiaco legato al respiro, e l'HRV e la sensibilità del baroriflesso raggiungono il massimo vicino alla frequenza di risonanza [S2, S3]. Il modello di risonanza e baroriflesso che spiega l'entità dell'effetto [S4, S5, S9]; le caratteristiche individuali della frequenza di risonanza [S6]. In uno studio crossover, aggiungere una stimolazione elettrica dell'orecchio durante la respirazione lenta alla frequenza di risonanza non ha aumentato ulteriormente l'HRV: la respirazione lenta stava già producendo l'effetto [S11].
 
 **Emergente.** In uno studio randomizzato controllato, la respirazione lenta durante il biofeedback ha aumentato in acuto il guadagno del baroriflesso, e il guadagno del baroriflesso a riposo è cresciuto nel corso delle sessioni [S7]. Se questi cambiamenti dovuti all'allenamento abbiano effetti duraturi sulla salute è una domanda separata, per le pagine sulle evidenze.
 

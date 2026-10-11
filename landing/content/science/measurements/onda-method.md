@@ -88,7 +88,7 @@ evidenceMap:
     limitation: "Ten studies in the quantitative synthesis, healthy adults, mostly at rest; not specific to the iPhone camera."
   - claim: "Breathing rate can be estimated from the ECG or the pulse signal by many different algorithms."
     sources: [S3]
-    class: established
+    class: context-dependent
     claimType: measurement
     quote: "A plethora of algorithms have been proposed to estimate BR from the electrocardiogram (ECG) and pulse oximetry (photoplethysmogram, PPG) signals."
     limitation: "A methods review; it does not validate any consumer device or ONDA's estimate."

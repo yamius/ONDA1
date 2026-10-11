@@ -1,5 +1,5 @@
 ---
-sourceHash: "fe57b9925cd0"
+sourceHash: "e96cdc17858e"
 title: "Herzfrequenzvariabilität: was sie ist, was sie widerspiegelt und was nicht"
 metaTitle: "Herzfrequenzvariabilität: Definition und Evidenz"
 metaDescription: "Die Herzfrequenzvariabilität ist die natürliche Schwankung des Herzrhythmus von Schlag zu Schlag. Was sie prägt, was sie widerspiegelt und was sie nicht verrät."

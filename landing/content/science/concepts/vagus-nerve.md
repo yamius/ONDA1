@@ -211,7 +211,7 @@ evidenceMap:
     limitation: "Cardiac effect only."
   - claim: "Heart rate variability indexes cardiac vagal tone, the parasympathetic contribution to heart regulation."
     sources: [S5]
-    class: established
+    class: context-dependent
     claimType: measurement
     quote: "Cardiac vagal tone, which represents the contribution of the parasympathetic nervous system to cardiac regulation"
     limitation: "An index of vagal tone, not a direct measurement of it."
@@ -223,7 +223,7 @@ evidenceMap:
     limitation: "Short-term resting recordings."
   - claim: "Respiratory parameters can confound the relation between the breath-linked heart rhythm and cardiac vagal tone, and the two can dissociate."
     sources: [S6]
-    class: established
+    class: context-dependent
     claimType: measurement
     quote: "Respiratory parameters can confound relations between RSA and cardiac vagal tone."
     limitation: "Methodological caution; the rhythm is often a reasonable reflection when these factors are handled."
@@ -259,7 +259,7 @@ evidenceMap:
     limitation: "Implanted device, small open-label study; it says nothing about breathing or consumer devices."
   - claim: "The microbiota, the gut and the brain communicate in both directions through the microbiota–gut–brain axis, which involves the autonomic nervous system."
     sources: [S2]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "The microbiota, the gut, and the brain communicate through the microbiota-gut-brain axis in a bidirectional way that involves the autonomic nervous system."
     limitation: "Describes the pathway, not the size of effects in people."
@@ -295,19 +295,19 @@ evidenceMap:
     limitation: "One critical review; proponents disagree."
   - claim: "Syncope is a short transient loss of consciousness with rapid onset and complete spontaneous recovery."
     sources: [S15]
-    class: established
+    class: context-dependent
     claimType: definition
     quote: "Syncope is a short-term transient loss of consciousness, characterized by rapid onset and complete spontaneous recovery."
     limitation: "Definition only; causes differ."
   - claim: "Vasovagal syncope is the most common form of syncope and is generally harmless, though frequent episodes affect quality of life."
     sources: [S15]
-    class: established
+    class: context-dependent
     claimType: safety
     quote: "The vasovagal syncope (VVS) is the most common form of syncope. Although, VVS is generally harmless, its frequent occurrence can negatively affect quality of life and increase the risk of adverse events."
     limitation: "A review statement; fainting can also have serious causes that need medical assessment."
   - claim: "In the human diving response, the heart slows because of increased parasympathetic input to the cardiac pacemaker; the response is produced by water touching the face together with breath-holding."
     sources: [S16]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "The bradycardia results from increased parasympathetic stimulus to the cardiac pacemaker."
     limitation: "A mechanistic review; the response is modified by water temperature, oxygen levels and emotion."

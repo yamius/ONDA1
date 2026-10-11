@@ -1,5 +1,5 @@
 ---
-sourceHash: 8a419d7d40ce
+sourceHash: f2910c8b743d
 title: "Acute stress en HRV: wat er gebeurt en hoe je herstelt"
 metaTitle: "Acute stress en HRV: wat studies laten zien"
 metaDescription: "Hoe examens, interviews en stresstests in het lab de hartslagvariabiliteit veranderen, hoe herstel werkt en wat stressscores van wearables wel en niet zeggen."
@@ -119,8 +119,7 @@ Het dagelijks leven is lastiger. In een studie met {{fact:stress.uendes.design}}
 
 **Per bewijsklasse.**
 
-- **Vastgesteld.** Studies naar herstel na stress meten het op verschillende manieren, waardoor hun waarden moeilijk te vergelijken zijn [S2].
-- **Contextafhankelijk.** Beter herstel gaat samen met veerkracht, aandachtscontrole, herwaardering en natuur, als overzicht van onderzochte factoren zonder effectgroottes [S2]; de overeenstemming van polssensoren met een ECG komt vooral uit rustomstandigheden [S13].
+- **Contextafhankelijk.** Studies naar herstel na stress meten het op verschillende manieren, waardoor hun waarden moeilijk te vergelijken zijn [S2]. Beter herstel gaat samen met veerkracht, aandachtscontrole, herwaardering en natuur, als overzicht van onderzochte factoren zonder effectgroottes [S2]; de overeenstemming van polssensoren met een ECG komt vooral uit rustomstandigheden [S13].
 - **Opkomend.** Acute mentale stress en echte examens verlagen HRV [S1] [S4] [S5]; stressoren laten verschillende patronen achter [S1]; de hartslag went aan herhaalde stress terwijl de verwachting toeneemt [S3]; ademhaling vóór stress verlicht hartslag en angst, maar niet HRV of cortisol [S7]; slecht slapen versterkt hoe stress voelt, niet de cardiovasculaire reactie [S8]; wearables herkennen stress in het lab [S11], maar verwarren die in het dagelijks leven met lichamelijke activiteit [S12].
 - **Omstreden.** Stressreactiviteit en sterfte, met verbanden in tegengestelde richtingen [S10].
 - **Onbekend of niet aangetoond.** Conditie als buffer tegen de stressreactie [S4]; stressreactiviteit als voorspeller van hartziekte [S10]; of iets wat je doet het herstel versnelt.

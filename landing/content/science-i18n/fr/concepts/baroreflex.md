@@ -1,5 +1,5 @@
 ---
-sourceHash: "281e92fe3ffd"
+sourceHash: "aefe18eb9fcc"
 title: "Le baroréflexe : comment le corps stabilise la pression artérielle"
 metaTitle: "Le baroréflexe : la tension, battement par battement"
 metaDescription: "Comment le baroréflexe stabilise la pression artérielle à chaque battement, ce qu’est sa sensibilité et ce qu’y changent la respiration lente et l’entraînement."

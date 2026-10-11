@@ -1,5 +1,5 @@
 ---
-sourceHash: "c96db8623893"
+sourceHash: "c3660007032f"
 title: "Oddechowa niemiarowość zatokowa: jak oddech kształtuje rytm serca"
 metaTitle: "Oddechowa niemiarowość zatokowa (RSA) — wyjaśnienie"
 metaDescription: "Oddechowa niemiarowość zatokowa to naturalne przyspieszanie serca na wdechu i zwalnianie na wydechu: skąd się bierze, co na nią wpływa i jakie ma granice."
@@ -93,9 +93,9 @@ RSA odczytuje się z odstępów między uderzeniami serca rejestrowanych razem z
 
 ## Co pokazują badania?
 
-**Ustalone.** RSA jest normalną cechą serca w spoczynku [S5], zależną głównie od regulacji przez nerw błędny [S1, S7]. Jest większa przy wolnym i głębokim oddychaniu, a mniejsza przy szybkim [S4, S5], i w krótkich zapisach spoczynkowych stanowi główne źródło HRV [S1].
+**Ustalone.** RSA jest normalną cechą serca w spoczynku [S5], zależną głównie od regulacji przez nerw błędny [S1, S7].
 
-**Zależy od kontekstu.** Wielkość wpływu pozycji ciała, stanu i wieku pochodzi z danych laboratoryjnych i przeglądów o różnych protokołach [S4, S6]; badanie populacyjne nie przewidzi, jak bardzo zmieni się ona u konkretnej osoby.
+**Zależy od kontekstu.** Jest większa przy wolnym i głębokim oddychaniu, a mniejsza przy szybkim [S4, S5], i w krótkich zapisach spoczynkowych stanowi główne źródło HRV [S1]. Wielkość wpływu pozycji ciała, stanu i wieku pochodzi z danych laboratoryjnych i przeglądów o różnych protokołach [S4, S6]; badanie populacyjne nie przewidzi, jak bardzo zmieni się ona u konkretnej osoby.
 
 **Sporne.** Czy głównym źródłem RSA jest ośrodkowy generator rytmu oddechowego, czy odruch z baroreceptorów [S4, S5].
 

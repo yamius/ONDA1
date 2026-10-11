@@ -1,5 +1,5 @@
 ---
-sourceHash: "e47c25a97fdd"
+sourceHash: "cde100beb74f"
 title: "Méditation et système nerveux autonome : ce que montrent les données"
 metaTitle: "Méditation et système nerveux : les données"
 metaDescription: "Les effets de la méditation sur la HRV, la fréquence cardiaque au repos, la tension et le cortisol, et pourquoi la respiration lente brouille les résultats."

@@ -124,25 +124,25 @@ sources:
 evidenceMap:
   - claim: "In short resting recordings, the breath-linked heart rhythm is the primary source of heart rate variation, especially with slow paced breathing."
     sources: [S1]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "In short-term resting recordings, the primary source of the variation is parasympathetically-mediated RSA, especially with slow, paced breathing (PB) protocols."
     limitation: "Short resting recordings; over longer windows slower rhythms also contribute."
   - claim: "The breath-linked heart rhythm is small at fast breathing rates and large at slow ones."
     sources: [S3]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Respiratory sinus arrhythmia is small at rapid, and large at slow breathing rates."
     limitation: "A group-level relation; the rate at which it peaks varies between individuals."
   - claim: "Heart rate variability and baroreflex sensitivity are maximised when breathing slows to around six breaths per minute, a resonant frequency that varies between individuals (fact breath.resonance.typical)."
     sources: [S2]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Further investigations therefore suggest that both HRV (RSA) and baroreflex sensitivity are maximised when respiration is slowed to ∼6 breaths per min ( figure 1 ), though this resonant frequency does vary between individuals"
     limitation: "Pooled from controlled-breathing studies in healthy adults; the individual rate must be assessed."
   - claim: "Resonance is an amplification process: stimulating a negative-feedback system at its intrinsic frequency produces high-amplitude oscillations, and it is a property of the baroreflex system."
     sources: [S5]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Resonance is an amplification process in which stimulating a negative feedback, self-corrective system at its intrinsic frequency generates high-amplitude oscillations at that frequency"
     limitation: "A systems-level model; the details of how breathing, heart rate and blood pressure combine are still studied."
@@ -214,7 +214,7 @@ evidenceMap:
     limitation: "Small studies with different protocols; the exhale-ratio question is open."
   - claim: "Breathing parameters can confound the relation between the breath-linked heart rhythm and cardiac vagal tone."
     sources: [S10]
-    class: established
+    class: context-dependent
     claimType: measurement
     quote: "Respiratory parameters can confound relations between RSA and cardiac vagal tone."
     limitation: "A methodological caution; the rhythm remains informative when breathing is accounted for."
@@ -257,9 +257,9 @@ First, the result depends on the breathing pattern during the recording, so read
 
 ## What does the evidence show?
 
-**Established.** Slow breathing enlarges the breath-linked heart rhythm, and HRV and baroreflex sensitivity peak near the resonance rate [S2, S3]. A large systematic review and meta-analysis found increases in vagally mediated HRV during slow breathing, immediately after a single session and after multi-session programmes [S8]. {{fact:claim.slowExhale}} [S8, S5].
+**Established.** A large systematic review and meta-analysis found increases in vagally mediated HRV during slow breathing, immediately after a single session and after multi-session programmes [S8]. {{fact:claim.slowExhale}} [S8, S5].
 
-**Context-dependent.** The resonance and baroreflex account of the size of the effect [S4, S5, S9]; the individual characteristics of the resonance rate [S6]. In one crossover study, adding electrical ear stimulation during slow breathing at the resonance rate did not raise HRV further — slow breathing was already producing the effect [S11].
+**Context-dependent.** Slow breathing enlarges the breath-linked heart rhythm, and HRV and baroreflex sensitivity peak near the resonance rate [S2, S3]. The resonance and baroreflex account of the size of the effect [S4, S5, S9]; the individual characteristics of the resonance rate [S6]. In one crossover study, adding electrical ear stimulation during slow breathing at the resonance rate did not raise HRV further — slow breathing was already producing the effect [S11].
 
 **Emerging.** In a randomized trial, slow breathing during biofeedback raised baroreflex gain acutely, and resting baroreflex gain increased across sessions [S7]. Whether such training changes have lasting health effects is a separate question for the evidence pages.
 

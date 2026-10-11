@@ -1,5 +1,5 @@
 ---
-sourceHash: "b24949df5b56"
+sourceHash: "14937f196d56"
 title: "Fredonnement, chant et Om : ce que montrent les données"
 metaTitle: "Fredonnement, chant et Om : les données"
 metaDescription: "Ce que montrent les études sur le fredonnement, le chant du Om, les mantras et le chant choral : monoxyde d’azote nasal, respiration plus lente, HRV, cerveau et limites des données."

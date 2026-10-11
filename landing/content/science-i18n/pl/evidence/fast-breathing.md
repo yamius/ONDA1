@@ -1,5 +1,5 @@
 ---
-sourceHash: "3f61c4b110e2"
+sourceHash: "bf4ec5a45d58"
 title: "Szybkie oddychanie: co pokazują badania i jakie są realne zagrożenia"
 metaTitle: "Szybkie oddychanie: badania i realne zagrożenia"
 metaDescription: "Oddychanie metodą Wima Hofa, oddychanie holotropowe, tummo i cykliczna hiperwentylacja: co badania mówią o stanie zapalnym, nastroju i sporcie oraz dlaczego woda jest wykluczona."

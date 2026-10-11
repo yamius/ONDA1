@@ -212,7 +212,7 @@ evidenceMap:
     limitation: "Consensus definition; other groups word it differently."
   - claim: "Interoception includes sensing, interpreting, integrating and regulating internal signals; a research framework exists but terms are still being defined."
     sources: [S2]
-    class: established
+    class: context-dependent
     claimType: definition
     quote: "Interoception refers to the representation of the internal states of an organism, and includes the processes by which it senses, interprets, integrates, and regulates signals from within itself."
     limitation: "Framework review; it also lists major research gaps."
@@ -236,7 +236,7 @@ evidenceMap:
     limitation: "One study in a healthy sample; the three-dimension model is widely used but the terms are not used identically across labs."
   - claim: "In the heartbeat counting task people count their heartbeats without external cues, and accuracy scores compare counted and recorded beats."
     sources: [S6]
-    class: established
+    class: emerging
     claimType: measurement
     quote: "In this task participants are requested to count their heartbeats without relying on external cues."
     limitation: "Describes the method only."

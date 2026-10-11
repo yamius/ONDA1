@@ -1,5 +1,5 @@
 ---
-sourceHash: 8a419d7d40ce
+sourceHash: f2910c8b743d
 title: "Ostry stres a HRV: co się dzieje i jak przebiega regeneracja"
 metaTitle: "Ostry stres a HRV: co pokazują badania"
 metaDescription: "Jak egzaminy, wywiady i laboratoryjne testy stresu zmieniają zmienność rytmu serca, jak przebiega regeneracja i co mówią wyniki stresu z urządzeń."
@@ -119,8 +119,7 @@ Codzienne życie jest trudniejsze. W badaniu (uczestnicy: {{fact:stress.uendes.d
 
 **Według klasy dowodów.**
 
-- **Ustalone.** Badania regeneracji po stresie mierzą ją różnie, więc ich wartości trudno porównywać [S2].
-- **Zależy od kontekstu.** Lepsza regeneracja wiąże się z odpornością psychiczną, kontrolą uwagi, przewartościowaniem i naturą — jako mapa badanych czynników bez wielkości efektów [S2]; zgodność czujnika na nadgarstku z EKG pochodzi głównie z warunków spoczynkowych [S13].
+- **Zależy od kontekstu.** Badania regeneracji po stresie mierzą ją różnie, więc ich wartości trudno porównywać [S2]. Lepsza regeneracja wiąże się z odpornością psychiczną, kontrolą uwagi, przewartościowaniem i naturą — jako mapa badanych czynników bez wielkości efektów [S2]; zgodność czujnika na nadgarstku z EKG pochodzi głównie z warunków spoczynkowych [S13].
 - **Wstępne dane.** Ostry stres psychiczny i prawdziwe egzaminy obniżają HRV [S1] [S4] [S5]; stresory zostawiają różne wzorce [S1]; tętno przyzwyczaja się do powtarzanego stresu, a oczekiwanie rośnie [S3]; oddychanie przed stresem łagodzi tętno i lęk, ale nie HRV ani kortyzol [S7]; słaby sen nasila odczuwanie stresu, a nie reakcję sercowo-naczyniową [S8]; urządzenia noszone wykrywają stres w laboratorium [S11], ale w codziennym życiu mylą go z aktywnością fizyczną [S12].
 - **Sporne.** Reaktywność na stres a śmiertelność — związki w przeciwnych kierunkach [S10].
 - **Nieznane lub niewykazane.** Kondycja jako bufor przed reakcją na stres [S4]; reaktywność na stres jako predyktor chorób serca [S10]; czy cokolwiek, co robisz, przyspiesza regenerację.

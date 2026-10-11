@@ -1,5 +1,5 @@
 ---
-sourceHash: "41115ae9a660"
+sourceHash: "8f8acb125420"
 title: "Wie die Atmung die HRV verändert – und warum langsames Atmen sie erhöht"
 metaTitle: "Atmung und HRV: Warum langsames Atmen sie erhöht"
 metaDescription: "Warum die Herzfrequenzvariabilität steigt, wenn du langsam atmest: atemgekoppelter Herzrhythmus, Baroreflex, Resonanz – gesichert und umstritten."
@@ -89,9 +89,9 @@ Erstens hängt das Ergebnis vom Atemmuster während der Messung ab, sodass Werte
 
 ## Was zeigt die Evidenz?
 
-**Gesichert.** Langsames Atmen vergrößert den atemgekoppelten Herzrhythmus, und HRV und Baroreflex-Sensitivität erreichen ihr Maximum nahe der Resonanzfrequenz [S2, S3]. Eine große systematische Übersichtsarbeit mit Metaanalyse fand Anstiege der vagal vermittelten HRV während langsamen Atmens, unmittelbar nach einer einzelnen Sitzung und nach Programmen mit mehreren Sitzungen [S8]. {{fact:claim.slowExhale}} [S8, S5].
+**Gesichert.** Eine große systematische Übersichtsarbeit mit Metaanalyse fand Anstiege der vagal vermittelten HRV während langsamen Atmens, unmittelbar nach einer einzelnen Sitzung und nach Programmen mit mehreren Sitzungen [S8]. {{fact:claim.slowExhale}} [S8, S5].
 
-**Kontextabhängig.** Die Erklärung der Effektgröße über Resonanz und Baroreflex [S4, S5, S9]; die individuellen Merkmale der Resonanzfrequenz [S6]. In einer Crossover-Studie erhöhte eine zusätzliche elektrische Ohrstimulation während langsamen Atmens bei der Resonanzfrequenz die HRV nicht weiter – das langsame Atmen erzeugte den Effekt bereits [S11].
+**Kontextabhängig.** Langsames Atmen vergrößert den atemgekoppelten Herzrhythmus, und HRV und Baroreflex-Sensitivität erreichen ihr Maximum nahe der Resonanzfrequenz [S2, S3]. Die Erklärung der Effektgröße über Resonanz und Baroreflex [S4, S5, S9]; die individuellen Merkmale der Resonanzfrequenz [S6]. In einer Crossover-Studie erhöhte eine zusätzliche elektrische Ohrstimulation während langsamen Atmens bei der Resonanzfrequenz die HRV nicht weiter – das langsame Atmen erzeugte den Effekt bereits [S11].
 
 **Erste Hinweise.** In einer randomisierten Studie erhöhte langsames Atmen während des Biofeedbacks akut die Baroreflex-Verstärkung, und die Baroreflex-Verstärkung in Ruhe stieg über die Sitzungen hinweg [S7]. Ob solche Trainingsveränderungen dauerhafte gesundheitliche Wirkungen haben, ist eine eigene Frage für die Evidenzseiten.
 

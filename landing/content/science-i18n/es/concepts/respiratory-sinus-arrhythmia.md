@@ -1,5 +1,5 @@
 ---
-sourceHash: "c96db8623893"
+sourceHash: "c3660007032f"
 title: "Arritmia sinusal respiratoria: cómo la respiración moldea el ritmo cardíaco"
 metaTitle: "Arritmia sinusal respiratoria (RSA): qué es"
 metaDescription: "La arritmia sinusal respiratoria es la aceleración normal del corazón al inhalar y su enlentecimiento al exhalar: cómo surge, qué la modifica y sus límites."
@@ -93,9 +93,9 @@ La RSA se obtiene de los intervalos entre latidos registrados junto con la respi
 
 ## ¿Qué muestra la evidencia?
 
-**Establecido.** La RSA es un rasgo normal del corazón en reposo [S5] y depende sobre todo de la regulación vagal [S1, S7]. Es mayor con una respiración lenta y profunda y menor con una respiración rápida [S4, S5], y es la principal fuente de la HRV en registros cortos en reposo [S1].
+**Establecido.** La RSA es un rasgo normal del corazón en reposo [S5] y depende sobre todo de la regulación vagal [S1, S7].
 
-**Depende del contexto.** El tamaño del efecto de la postura, el estado y la edad procede de datos de laboratorio y de revisiones con protocolos distintos [S4, S6]; cuánto cambia en una persona concreta no es algo que un estudio poblacional pueda predecir.
+**Depende del contexto.** Es mayor con una respiración lenta y profunda y menor con una respiración rápida [S4, S5], y es la principal fuente de la HRV en registros cortos en reposo [S1]. El tamaño del efecto de la postura, el estado y la edad procede de datos de laboratorio y de revisiones con protocolos distintos [S4, S6]; cuánto cambia en una persona concreta no es algo que un estudio poblacional pueda predecir.
 
 **En debate.** Si el principal generador de la RSA es un generador central del ritmo respiratorio o el barorreflejo [S4, S5].
 

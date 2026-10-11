@@ -1,5 +1,5 @@
 ---
-sourceHash: "e47c25a97fdd"
+sourceHash: "cde100beb74f"
 title: "Meditatie en het autonome zenuwstelsel: wat het bewijs laat zien"
 metaTitle: "Meditatie en het zenuwstelsel: het bewijs"
 metaDescription: "Wat onderzoek laat zien over meditatie en HRV, rusthartslag, bloeddruk en cortisol — en waarom langzaam ademen het beeld vertroebelt."

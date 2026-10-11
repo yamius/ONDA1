@@ -1,5 +1,5 @@
 ---
-sourceHash: "6fbea09b5622"
+sourceHash: "ea519c2b5915"
 title: "O sistema nervoso autônomo: simpático e parassimpático"
 metaTitle: "Sistema nervoso autônomo: não é um interruptor"
 metaDescription: "O que o sistema nervoso autônomo faz, como seus dois ramos comandam o coração e por que nenhum número isolado, nem a razão LF/HF, mede o seu estado."
@@ -99,9 +99,9 @@ No caso do coração, a [variabilidade da frequência cardíaca](/science/concep
 
 ## O que mostram as evidências?
 
-**Estabelecido.** O sistema nervoso autônomo controla os órgãos sem esforço consciente e tem divisões simpática, parassimpática e entérica [S1, S2]. Os sinais simpáticos aceleram o coração, e o vago o desacelera [S4]. Os ramos podem estar ativos juntos e mudar de forma independente [S3, S4, S7]. A HRV de curto prazo em repouso reflete sobretudo a influência vagal, e o RMSSD é a principal medida no domínio do tempo [S5, S6]. Nem o componente de baixa frequência nem a razão LF/HF são uma medida válida dos ramos ou do peso relativo entre eles [S7, S8, S9].
+**Estabelecido.** O sistema nervoso autônomo controla os órgãos sem esforço consciente e tem divisões simpática, parassimpática e entérica [S1, S2]. Os sinais simpáticos aceleram o coração, e o vago o desacelera [S4]. Os ramos podem estar ativos juntos e mudar de forma independente [S3, S4, S7]. A HRV de curto prazo em repouso reflete sobretudo a influência vagal, e o RMSSD é a principal medida no domínio do tempo [S5, S6].
 
-**Diretriz / consenso de especialistas.** A HRV não deve ser usada como marcador específico do fluxo simpático cardíaco nem do equilíbrio simpatovagal [S10].
+**Diretriz / consenso de especialistas.** Nem o componente de baixa frequência nem a razão LF/HF são uma medida válida dos ramos ou do peso relativo entre eles [S7, S8, S9]. A HRV não deve ser usada como marcador específico do fluxo simpático cardíaco nem do equilíbrio simpatovagal [S10].
 
 **Em debate.** A teoria polivagal propõe que a evolução das vias vagais deu origem a um «sistema de engajamento social» [S16]. Uma revisão crítica argumenta que cada uma de suas premissas básicas é insustentável ou altamente implausível — incluindo tratar o ritmo cardíaco ligado à respiração como medida do tônus vagal geral [S15]. Trate-a como um modelo contestado, não como fisiologia estabelecida; o próprio nervo vago terá uma página só sua.
 

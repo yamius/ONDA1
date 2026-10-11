@@ -183,7 +183,7 @@ evidenceMap:
     limitation: "General physiology review; says nothing about any individual's heart."
   - claim: "At systole, arterial baroreceptors signal the strength and timing of each heartbeat to the brain; between beats they are quiescent."
     sources: [S2]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Emotional and neutral faces were presented to human volunteers at cardiac systole, when ejection of blood from the heart causes arterial baroreceptors to signal centrally the strength and timing of each heartbeat, and at diastole, the period between heartbeats when baroreceptors are quiescent."
     limitation: "Background physiology stated in an experimental paper."
@@ -273,13 +273,13 @@ evidenceMap:
     limitation: "Narrative review with a commercial affiliation; 'can influence' is a possibility, not a measured effect size."
   - claim: "In a large registry, takotsubo (stress) cardiomyopathy followed emotional or physical triggers, physical ones being more common, and some patients had no evident trigger; it is an acute heart failure syndrome with substantial morbidity and mortality."
     sources: [S15]
-    class: established
+    class: emerging
     claimType: safety
     quote: "This condition represents an acute heart failure syndrome with substantial morbidity and mortality."
     limitation: "Registry of hospital patients; not about everyday stress."
   - claim: "Cardiac complications including arrhythmia are frequent in the first days after an ischaemic stroke, and dysregulated central autonomic control is the assumed mechanism."
     sources: [S16]
-    class: established
+    class: context-dependent
     claimType: safety
     quote: "Cardiac complications are a frequent medical problem during the first few days after an ischaemic stroke, and patients present with a broad range of symptoms including myocardial injury, cardiac dysfunction, and arrhythmia, with varying overlap between these three conditions."
     limitation: "The mechanism is assumed, not fully established; clinical setting."
@@ -318,9 +318,9 @@ How these signals relate to body awareness in general is covered on the [interoc
 
 ## What does the evidence show?
 
-**Established.** The brain regulates heart rate and force through autonomic nerves and hormones [S1], and baroreceptors signal each heartbeat to the brain [S2]. The heart contains its own network of nerve cells [S11].
+**Established.** The heart contains its own network of nerve cells [S11].
 
-**Context-dependent.** The heartbeat-evoked potential is a usable research measure when artefacts are controlled [S3]. Physiological coherence, a smooth, regular heart-rhythm oscillation that appears when slow breathing brings breathing, blood pressure and heart rate into step, is a measurable pattern [S12]; the mechanics are on the [breathing and HRV](/science/mechanisms/breathing-and-hrv) page, and how it differs from HRV itself is explained in [HRV vs coherence](/hrv-vs-coherence).
+**Context-dependent.** The brain regulates heart rate and force through autonomic nerves and hormones [S1], and baroreceptors signal each heartbeat to the brain [S2]. The heartbeat-evoked potential is a usable research measure when artefacts are controlled [S3]. Physiological coherence, a smooth, regular heart-rhythm oscillation that appears when slow breathing brings breathing, blood pressure and heart rate into step, is a measurable pattern [S12]; the mechanics are on the [breathing and HRV](/science/mechanisms/breathing-and-hrv) page, and how it differs from HRV itself is explained in [HRV vs coherence](/hrv-vs-coherence).
 
 **A model, not a proof: neurovisceral integration.** The neurovisceral integration model proposes that the same brain networks that help control attention and emotion, in particular inhibitory pathways from the prefrontal cortex through the amygdala to the brainstem, also adjust heart rate and therefore HRV [S6]. Its authors report that people with higher vagally mediated HRV tend to do better on executive-function tasks linked to the prefrontal cortex [S7]. Larger syntheses find a link, but a small one: across many studies, HRV and self-regulation showed only a weak association, with stronger results in published than unpublished studies, a sign of publication bias [S8]; a meta-analysis of correlational studies found a weak association between vagally mediated HRV and executive function [S9]; and a systematic review judged the number of studies too small to understand the relationship well [S10]. These are associations. They are consistent with the model, but they do not show that HRV causes better thinking, and they do not show that raising your HRV would improve it. A link this small says very little about any one person.
 

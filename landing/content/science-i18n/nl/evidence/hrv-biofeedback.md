@@ -1,5 +1,5 @@
 ---
-sourceHash: "c7c0e6f927d5"
+sourceHash: "1dcd3faa7b29"
 title: "HRV-biofeedback: wat het bewijs laat zien"
 metaTitle: "HRV-biofeedback: wat het bewijs laat zien"
 metaDescription: "Wat onderzoek laat zien over HRV-biofeedback — stress, stemming, bloeddruk, slaap, prestaties — en hoeveel de feedback toevoegt bovenop langzaam ademen."

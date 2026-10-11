@@ -280,7 +280,7 @@ evidenceMap:
     limitation: "Twenty young men; no control group; the abstract reports no clear heat shock protein outcome; nothing links it to health or lifespan."
   - claim: "Death in a sauna is rare even in Finland; half of those who died were under the influence of alcohol."
     sources: [S15]
-    class: established
+    class: emerging
     claimType: safety
     quote: "The prevention of these deaths should focus on less drinking of alcohol and avoid leaving a drunken bather alone in the sauna."
     limitation: "Finnish forensic records, 1990–2002."

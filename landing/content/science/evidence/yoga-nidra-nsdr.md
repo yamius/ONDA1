@@ -283,7 +283,7 @@ evidenceMap:
     limitation: "Narrative review describing the tradition; not outcome evidence."
   - claim: "NSDR is described in research as a brief guided relaxation with slow breathing and sequential body awareness."
     sources: [S22]
-    class: established
+    class: emerging
     claimType: definition
     quote: "Non-sleep deep rest (NSDR), a brief guided relaxation technique involving slow breathing and sequential body awareness, has recently been proposed as a practical rest strategy."
     limitation: "One research group's operational definition; commercial NSDR scripts vary."
@@ -409,7 +409,7 @@ evidenceMap:
     limitation: "No control group; a third of enrolled women dropped out."
   - claim: "A report on iRest for active-duty military members with PTSD was co-written by authors affiliated with the iRest Institute."
     sources: [S20]
-    class: established
+    class: emerging
     claimType: other
     quote: "iRest Institute, San Rafael, CA, USA."
     limitation: "Author affiliation from the PubMed record; no abstract available."

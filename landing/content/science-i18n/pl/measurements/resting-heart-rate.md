@@ -1,5 +1,5 @@
 ---
-sourceHash: 21579ea1d5e6
+sourceHash: c6abda99ed2f
 title: "Tętno spoczynkowe: co odzwierciedla i jak się je mierzy"
 metaTitle: "Tętno spoczynkowe: znaczenie i pomiar"
 metaDescription: "Tętno spoczynkowe to najniższe tętno w spoczynku. Jak się je mierzy, co znaczy „norma”, co je zmienia i czemu własny trend mówi więcej niż jedna liczba."

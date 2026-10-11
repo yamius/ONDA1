@@ -1,5 +1,5 @@
 ---
-sourceHash: "281e92fe3ffd"
+sourceHash: "aefe18eb9fcc"
 title: "Il baroriflesso: come il corpo mantiene stabile la pressione"
 metaTitle: "Il baroriflesso: la pressione, battito per battito"
 metaDescription: "Come il baroriflesso stabilizza la pressione arteriosa battito per battito, che cosa indica la sua sensibilità e che effetto hanno respiro lento e allenamento."

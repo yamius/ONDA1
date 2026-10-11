@@ -1,5 +1,5 @@
 ---
-sourceHash: "b24949df5b56"
+sourceHash: "14937f196d56"
 title: "Neuriën, chanten en Om: wat het bewijs laat zien"
 metaTitle: "Neuriën, chanten en Om: het bewijs"
 metaDescription: "Wat studies laten zien over neuriën, Om-chanten, mantra's en koorzang: stikstofmonoxide in de neus, trager ademen, HRV, de hersenen en waar het bewijs dun is."

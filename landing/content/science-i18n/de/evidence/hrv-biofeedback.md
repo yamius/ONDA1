@@ -1,5 +1,5 @@
 ---
-sourceHash: "c7c0e6f927d5"
+sourceHash: "1dcd3faa7b29"
 title: "HRV-Biofeedback: Was die Evidenz zeigt"
 metaTitle: "HRV-Biofeedback: Was die Evidenz zeigt"
 metaDescription: "Was die Forschung zu HRV-Biofeedback zeigt – Stress, Stimmung, Blutdruck, Schlaf, Leistung – und wie viel das Feedback über langsames Atmen hinaus beiträgt."

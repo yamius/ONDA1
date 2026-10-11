@@ -156,7 +156,7 @@ evidenceMap:
     limitation: "Explains why window and time of day matter, not what any single window says about a person."
   - claim: "The ECG is the reference method for interval measurement, while consumer wearables estimate the same quantities from the optical pulse signal."
     sources: [S3]
-    class: established
+    class: emerging
     claimType: measurement
     quote: "While electrocardiography (ECG) remains the gold standard for HRV assessment, photoplethysmography (PPG)-based wearables offer an alternative for monitoring."
     limitation: "A statement about methods, not about any device's accuracy; the agreement evidence is the measurements page's question."
@@ -197,7 +197,7 @@ evidenceMap:
     quote: "autonomic activities diminish with age in both genders"
     limitation: "Cross-sectional population averages; wide individual variation at every age; this page carries no age tables."
   - claim: "In clinical cardiology, HRV computed from all-day ECG recordings is a risk-stratification measure in patient populations — a measurement regime consumer readings do not reproduce."
-    sources: [S2]
+    sources: [S1, S2]
     class: established
     claimType: other
     quote: "The SDNN is the \"gold standard\" for medical stratification of cardiac risk when recorded over a 24 h period."

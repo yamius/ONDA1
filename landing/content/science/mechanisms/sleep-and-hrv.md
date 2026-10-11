@@ -157,7 +157,7 @@ sources:
 evidenceMap:
   - claim: "In non-REM sleep the autonomic balance of the heart shifts toward parasympathetic influence, while REM sleep resembles wakefulness."
     sources: [S1, S3]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "During non-rapid eye movement (NREM) sleep autonomic balance shifted from sympathetic to parasympathetic dominance"
     limitation: "Small laboratory studies in young healthy adults, using spectral HRV indices whose autonomic meaning is debated; consistent with the wider literature reviewed in S4."
@@ -229,7 +229,7 @@ evidenceMap:
     limitation: "Healthy young adults in a laboratory; seven devices of that generation; performance worse on disrupted nights."
   - claim: "Wearables misclassify wakefulness during the sleep period and their performance may not translate to people with certain characteristics or conditions."
     sources: [S7]
-    class: established
+    class: context-dependent
     claimType: measurement
     quote: "clear limitations exist, for example, the misclassification of wakefulness during the sleep period"
     limitation: "Expert review; device performance changes with models and firmware."
@@ -241,7 +241,7 @@ evidenceMap:
     limitation: "Authors employed by or advising the manufacturer; cross-validated model, not an independent test of the shipped product."
   - claim: "In sleep apnea, heart rate slows during each breathing pause and speeds up abruptly when breathing resumes, a pattern mediated by the autonomic nervous system."
     sources: [S9]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "At onset of sleep apnoea all showed progressive bradycardia, followed by abrupt tachycardia on resumption of breathing."
     limitation: "Classic large clinical series with ECG and polygraphy; not wearable data."
@@ -321,9 +321,9 @@ Short or broken sleep, alcohol, a hard training day, infection, stress, a late m
 
 ## What does the evidence show?
 
-**Established.** Non-REM sleep shifts the heart toward parasympathetic influence and REM sleep looks more like wakefulness [S1, S3, S4]. Sleep apnea produces a cyclical slow-then-fast heart rate pattern [S9]. Recording conditions shape HRV, which is why comparable conditions are recommended (expert consensus) [S5]. Consumer devices have known limits in classifying wake during the sleep period [S7].
+**Established.** Recording conditions shape HRV, which is why comparable conditions are recommended (expert consensus) [S5].
 
-**Context-dependent.** Heart rate and high-frequency HRV follow a circadian rhythm within sleep stages [S3]. In healthy young adults in a laboratory, sleep trackers detected sleep well but their stage assessments were inconsistent with PSG [S6]; the sample was {{fact:study.chinoy2021.participants}} [S6].
+**Context-dependent.** Non-REM sleep shifts the heart toward parasympathetic influence and REM sleep looks more like wakefulness [S1, S3, S4]. Sleep apnea produces a cyclical slow-then-fast heart rate pattern [S9]. Consumer devices have known limits in classifying wake during the sleep period [S7]. Heart rate and high-frequency HRV follow a circadian rhythm within sleep stages [S3]. In healthy young adults in a laboratory, sleep trackers detected sleep well but their stage assessments were inconsistent with PSG [S6]; the sample was {{fact:study.chinoy2021.participants}} [S6].
 
 **Emerging.** A manufacturer-run analysis reported better sleep-stage agreement when autonomic and circadian signals were added to movement [S8]. Sustained sympathetic activity during sleep in obstructive sleep apnea comes from a small study [S10].
 

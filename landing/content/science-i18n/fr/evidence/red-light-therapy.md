@@ -1,5 +1,5 @@
 ---
-sourceHash: "f6488e471877"
+sourceHash: "5e9bed91397e"
 title: "Thérapie par lumière rouge (photobiomodulation) : ce que montrent les données"
 metaTitle: "Lumière rouge : ce que montrent les données"
 metaDescription: "La photobiomodulation expliquée : le rôle de la dose, où les preuves sont solides (mucite buccale, certaines douleurs, chute de cheveux), où elles sont précoces, et la sécurité des yeux."

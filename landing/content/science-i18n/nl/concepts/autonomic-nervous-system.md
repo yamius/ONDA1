@@ -1,5 +1,5 @@
 ---
-sourceHash: "6fbea09b5622"
+sourceHash: "ea519c2b5915"
 title: "Het autonome zenuwstelsel: sympathicus en parasympathicus"
 metaTitle: "Autonoom zenuwstelsel: geen aan-uitschakelaar"
 metaDescription: "Wat het autonome zenuwstelsel doet, hoe zijn twee takken het hart sturen en waarom geen enkel getal, ook LF/HF niet, de toestand ervan meet."
@@ -99,9 +99,9 @@ Voor het hart is [hartslagvariabiliteit](/science/concepts/heart-rate-variabilit
 
 ## Wat laat het bewijs zien?
 
-**Vastgesteld.** Het autonome zenuwstelsel stuurt de organen aan zonder bewuste inspanning en heeft een sympathisch, een parasympathisch en een enterisch deel [S1, S2]. Sympathische signalen versnellen het hart en de nervus vagus vertraagt het [S4]. De takken kunnen samen actief zijn en onafhankelijk van elkaar veranderen [S3, S4, S7]. Kortetermijn-HRV in rust weerspiegelt vooral de vagale invloed, met RMSSD als belangrijkste tijdsdomeinmaat [S5, S6]. Noch de laagfrequente component, noch de LF/HF-verhouding is een geldige maat voor de takken of voor hun onderlinge gewicht [S7, S8, S9].
+**Vastgesteld.** Het autonome zenuwstelsel stuurt de organen aan zonder bewuste inspanning en heeft een sympathisch, een parasympathisch en een enterisch deel [S1, S2]. Sympathische signalen versnellen het hart en de nervus vagus vertraagt het [S4]. De takken kunnen samen actief zijn en onafhankelijk van elkaar veranderen [S3, S4, S7]. Kortetermijn-HRV in rust weerspiegelt vooral de vagale invloed, met RMSSD als belangrijkste tijdsdomeinmaat [S5, S6].
 
-**Richtlijn / consensus van experts.** HRV moet niet worden gebruikt als specifieke marker van de sympathische output naar het hart of van de sympathovagale balans [S10].
+**Richtlijn / consensus van experts.** Noch de laagfrequente component, noch de LF/HF-verhouding is een geldige maat voor de takken of voor hun onderlinge gewicht [S7, S8, S9]. HRV moet niet worden gebruikt als specifieke marker van de sympathische output naar het hart of van de sympathovagale balans [S10].
 
 **Omstreden.** De polyvagaaltheorie stelt dat de evolutie van vagale banen een ‘sociaal betrokkenheidssysteem’ (social engagement system) heeft opgeleverd [S16]. Een kritische review stelt dat elk van haar basisuitgangspunten onhoudbaar of hoogst onwaarschijnlijk is — waaronder het opvatten van het ademgebonden hartritme als maat voor algemene vagale tonus [S15]. Beschouw haar als een omstreden model, niet als vastgestelde fysiologie; de nervus vagus zelf krijgt een eigen pagina.
 

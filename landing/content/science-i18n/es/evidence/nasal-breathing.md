@@ -1,5 +1,5 @@
 ---
-sourceHash: "7683ea5dce4b"
+sourceHash: "74e0a1403ee6"
 title: "Respiración nasal y cinta en la boca: qué muestra la evidencia"
 metaTitle: "Respiración nasal y cinta en la boca: evidencia"
 metaDescription: "Qué hace la nariz, qué muestran los estudios sobre sueño, atención, HRV, ejercicio y asma, y por qué la cinta en la boca exige precaución."

@@ -121,7 +121,7 @@ evidenceMap:
     limitation: "An indirect proxy under the measurement conditions, not a direct measure of parasympathetic activity."
   - claim: "Breathing is written into the beat-to-beat intervals through respiratory sinus arrhythmia, so breathing rate and depth during the recording strongly shape RMSSD."
     sources: [S2, S3]
-    class: established
+    class: context-dependent
     limitation: "The effect is present during the recording; sustained changes after practice are a separate question."
   - claim: "RMSSD depends on the measurement context: recording method, duration, posture, breathing and time of day."
     sources: [S5, S8]

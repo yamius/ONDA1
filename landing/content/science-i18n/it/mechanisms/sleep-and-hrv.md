@@ -1,5 +1,5 @@
 ---
-sourceHash: 6252dd3faeef
+sourceHash: b21ec4baa415
 title: "HRV e frequenza cardiaca durante il sonno: perché la notte è la finestra migliore"
 metaTitle: "HRV e frequenza cardiaca durante il sonno"
 metaDescription: "Che cosa succede a frequenza cardiaca e HRV nel corso della notte e delle fasi del sonno, perché le misure notturne sono le più stabili e che cosa i wearable possono dire e cosa no."
@@ -111,9 +111,9 @@ Sonno breve o frammentato, alcol, una giornata di allenamento intenso, un'infezi
 
 ## Cosa mostrano le prove?
 
-**Accertato.** Il sonno non-REM sposta il cuore verso l'influenza parasimpatica, e il sonno REM somiglia di più alla veglia [S1, S3, S4]. L'apnea notturna produce un andamento ciclico della frequenza cardiaca, prima lento e poi rapido [S9]. Le condizioni di registrazione influenzano l'HRV, ed è per questo che si raccomandano condizioni confrontabili (consenso di esperti) [S5]. I dispositivi di consumo hanno limiti noti nel classificare la veglia durante il periodo di sonno [S7].
+**Accertato.** Le condizioni di registrazione influenzano l'HRV, ed è per questo che si raccomandano condizioni confrontabili (consenso di esperti) [S5].
 
-**Dipende dal contesto.** Frequenza cardiaca e HRV ad alta frequenza seguono un ritmo circadiano all'interno delle fasi del sonno [S3]. In giovani adulti sani in laboratorio, i tracker del sonno rilevavano bene il sonno, ma le loro valutazioni delle fasi erano incoerenti rispetto alla PSG [S6]; il campione era di {{fact:study.chinoy2021.participants}} [S6].
+**Dipende dal contesto.** Il sonno non-REM sposta il cuore verso l'influenza parasimpatica, e il sonno REM somiglia di più alla veglia [S1, S3, S4]. L'apnea notturna produce un andamento ciclico della frequenza cardiaca, prima lento e poi rapido [S9]. I dispositivi di consumo hanno limiti noti nel classificare la veglia durante il periodo di sonno [S7]. Frequenza cardiaca e HRV ad alta frequenza seguono un ritmo circadiano all'interno delle fasi del sonno [S3]. In giovani adulti sani in laboratorio, i tracker del sonno rilevavano bene il sonno, ma le loro valutazioni delle fasi erano incoerenti rispetto alla PSG [S6]; il campione era di {{fact:study.chinoy2021.participants}} [S6].
 
 **Emergente.** Un'analisi condotta dal produttore ha riportato una migliore concordanza delle fasi del sonno aggiungendo al movimento segnali autonomici e circadiani [S8]. L'attività simpatica sostenuta durante il sonno nell'apnea ostruttiva del sonno proviene da un piccolo studio [S10].
 

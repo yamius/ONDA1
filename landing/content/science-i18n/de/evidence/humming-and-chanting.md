@@ -1,5 +1,5 @@
 ---
-sourceHash: "b24949df5b56"
+sourceHash: "14937f196d56"
 title: "Summen, Chanten und Om: Was die Evidenz zeigt"
 metaTitle: "Summen, Chanten und Om: die Evidenz"
 metaDescription: "Was Studien zu Summen, Om-Chanten, Mantras und Chorsingen zeigen: Stickstoffmonoxid in der Nase, langsameres Atmen, HRV, das Gehirn und wo die Evidenz dünn ist."

@@ -1,5 +1,5 @@
 ---
-sourceHash: "140cd5257074"
+sourceHash: "088e2861f077"
 title: "Interocepción: cómo percibe el cerebro el cuerpo"
 metaTitle: "Interocepción: cómo percibe el cerebro el cuerpo"
 metaDescription: "Qué es la interocepción, cómo se miden sus dimensiones, qué hace el cerebro con las señales del cuerpo y qué muestra, y qué no, la evidencia sobre entrenarla."

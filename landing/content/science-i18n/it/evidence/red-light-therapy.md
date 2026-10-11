@@ -1,5 +1,5 @@
 ---
-sourceHash: "f6488e471877"
+sourceHash: "5e9bed91397e"
 title: "Terapia a luce rossa (fotobiomodulazione): che cosa mostrano le evidenze"
 metaTitle: "Terapia a luce rossa: che cosa mostrano le evidenze"
 metaDescription: "La fotobiomodulazione spiegata: come funziona la dose, dove le evidenze sono solide (mucosite orale, alcuni dolori, caduta dei capelli), dove sono iniziali, e la sicurezza degli occhi."

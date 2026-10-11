@@ -1,5 +1,5 @@
 ---
-sourceHash: "7683ea5dce4b"
+sourceHash: "74e0a1403ee6"
 title: "鼻呼吸と口テープ：エビデンスが示すこと"
 metaTitle: "鼻呼吸と口テープ：エビデンス"
 metaDescription: "鼻で呼吸すると何が起こるのか、睡眠、集中、HRV、運動、ぜんそくについて研究が示すこと、そして口テープに注意が必要な理由を解説します。"

@@ -1,5 +1,5 @@
 ---
-sourceHash: "fdfd13042508"
+sourceHash: "9bfcf8e49dbe"
 title: "Terapia PEMF (campos eletromagnéticos pulsados): o que as evidências mostram"
 metaTitle: "Terapia PEMF: o que as evidências mostram"
 metaDescription: "A terapia com campos eletromagnéticos pulsados explicada: estimuladores ósseos médicos e tapetes de uso doméstico, onde os ensaios mostram alívio da dor e quem deve evitá-la."

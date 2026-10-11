@@ -1,5 +1,5 @@
 ---
-sourceHash: 21579ea1d5e6
+sourceHash: c6abda99ed2f
 title: "Frecuencia cardíaca en reposo: qué refleja y cómo se mide"
 metaTitle: "Frecuencia cardíaca en reposo: significado y medición"
 metaDescription: "La frecuencia cardíaca en reposo es tu pulso más bajo en calma. Cómo se mide, qué es normal, qué la cambia y por qué tu tendencia vale más que un dato."

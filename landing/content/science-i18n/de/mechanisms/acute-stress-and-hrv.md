@@ -1,5 +1,5 @@
 ---
-sourceHash: 8a419d7d40ce
+sourceHash: f2910c8b743d
 title: "Akuter Stress und HRV: Was passiert und wie du dich erholst"
 metaTitle: "Akuter Stress und HRV: Was Studien zeigen"
 metaDescription: "Wie Prüfungen, Interviews und Stresstests die Herzratenvariabilität verändern, wie Erholung abläuft und was Stresswerte von Wearables aussagen."
@@ -119,8 +119,7 @@ Der Alltag ist schwieriger. In einer Studie mit {{fact:stress.uendes.design}} un
 
 **Nach Evidenzklasse.**
 
-- **Etabliert.** Studien zur Erholung nach Stress messen sie auf unterschiedliche Weise, daher sind ihre Werte schwer vergleichbar [S2].
-- **Kontextabhängig.** Bessere Erholung hängt mit Resilienz, Aufmerksamkeitskontrolle, Neubewertung und Natur zusammen, als Karte untersuchter Faktoren ohne Effektstärken [S2]; die Übereinstimmung von Handgelenkssensoren mit dem EKG stammt überwiegend aus Ruhebedingungen [S13].
+- **Kontextabhängig.** Studien zur Erholung nach Stress messen sie auf unterschiedliche Weise, daher sind ihre Werte schwer vergleichbar [S2]. Bessere Erholung hängt mit Resilienz, Aufmerksamkeitskontrolle, Neubewertung und Natur zusammen, als Karte untersuchter Faktoren ohne Effektstärken [S2]; die Übereinstimmung von Handgelenkssensoren mit dem EKG stammt überwiegend aus Ruhebedingungen [S13].
 - **Erste Hinweise.** Akuter mentaler Stress und echte Prüfungen senken die HRV [S1] [S4] [S5]; Stressoren hinterlassen unterschiedliche Muster [S1]; der Puls gewöhnt sich an wiederholten Stress, während die Erwartungsangst wächst [S3]; Atmen vor Stress dämpft Puls und Angst, aber nicht HRV oder Cortisol [S7]; schlechter Schlaf verstärkt das Stresserleben, nicht die kardiovaskuläre Reaktion [S8]; Wearables erkennen Stress im Labor [S11], verwechseln ihn im Alltag aber mit körperlicher Aktivität [S12].
 - **Umstritten.** Stressreaktivität und Sterblichkeit, mit Zusammenhängen in entgegengesetzte Richtungen [S10].
 - **Unbekannt oder nicht gezeigt.** Fitness als Puffer gegen die Stressreaktion [S4]; Stressreaktivität als Vorhersage von Herzerkrankungen [S10]; ob irgendetwas, das du tust, die Erholung beschleunigt.

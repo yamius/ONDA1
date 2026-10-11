@@ -1,5 +1,5 @@
 ---
-sourceHash: "140cd5257074"
+sourceHash: "088e2861f077"
 title: "Interoceptie: hoe de hersenen het lichaam waarnemen"
 metaTitle: "Interoceptie: hoe de hersenen je lichaam voelen"
 metaDescription: "Wat interoceptie is, hoe je de afzonderlijke dimensies meet, wat de hersenen met lichaamssignalen doen en wat trainingsonderzoek wel en niet laat zien."

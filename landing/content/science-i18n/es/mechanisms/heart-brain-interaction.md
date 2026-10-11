@@ -1,5 +1,5 @@
 ---
-sourceHash: "756d4a3d6d33"
+sourceHash: "c8cdf6f30c93"
 title: "Interacción corazón-cerebro: cómo se comunican el corazón y el cerebro"
 metaTitle: "Interacción corazón-cerebro: cómo se comunican"
 metaDescription: "Cómo el cerebro regula el latido y cómo cada latido informa al cerebro: qué está establecido, qué es un modelo y qué afirmaciones populares son mitos."
@@ -89,9 +89,9 @@ La relación de estas señales con la conciencia corporal en general se trata en
 
 ## ¿Qué muestra la evidencia?
 
-**Establecido.** El cerebro regula la frecuencia y la fuerza del latido mediante los nervios autónomos y las hormonas [S1], y los barorreceptores comunican cada latido al cerebro [S2]. El corazón contiene su propia red de células nerviosas [S11].
+**Establecido.** El corazón contiene su propia red de células nerviosas [S11].
 
-**Depende del contexto.** El potencial evocado por el latido es una medida de investigación útil cuando se controlan los artefactos [S3]. La coherencia fisiológica, una oscilación suave y regular del ritmo cardíaco que aparece cuando la respiración lenta acompasa la respiración, la presión arterial y la frecuencia cardíaca, es un patrón medible [S12]; la mecánica se explica en la página sobre [la respiración y la HRV](/science/mechanisms/breathing-and-hrv), y en qué se diferencia de la propia HRV se explica en [HRV frente a coherencia](/hrv-vs-coherence).
+**Depende del contexto.** El cerebro regula la frecuencia y la fuerza del latido mediante los nervios autónomos y las hormonas [S1], y los barorreceptores comunican cada latido al cerebro [S2]. El potencial evocado por el latido es una medida de investigación útil cuando se controlan los artefactos [S3]. La coherencia fisiológica, una oscilación suave y regular del ritmo cardíaco que aparece cuando la respiración lenta acompasa la respiración, la presión arterial y la frecuencia cardíaca, es un patrón medible [S12]; la mecánica se explica en la página sobre [la respiración y la HRV](/science/mechanisms/breathing-and-hrv), y en qué se diferencia de la propia HRV se explica en [HRV frente a coherencia](/hrv-vs-coherence).
 
 **Un modelo, no una prueba: la integración neurovisceral.** El modelo de integración neurovisceral propone que las mismas redes cerebrales que ayudan a controlar la atención y la emoción, en particular las vías inhibidoras que van de la corteza prefrontal a través de la amígdala hasta el tronco encefálico, también ajustan la frecuencia cardíaca y, por tanto, la HRV [S6]. Sus autores señalan que las personas con una HRV de mediación vagal más alta tienden a rendir mejor en tareas de función ejecutiva ligadas a la corteza prefrontal [S7]. Las síntesis más amplias encuentran un vínculo, pero pequeño: en muchos estudios, la HRV y la autorregulación mostraron solo una asociación débil, con resultados más fuertes en los estudios publicados que en los no publicados, señal de un sesgo de publicación [S8]; un metaanálisis de estudios correlacionales encontró una asociación débil entre la HRV de mediación vagal y la función ejecutiva [S9]; y una revisión sistemática consideró que el número de estudios era demasiado pequeño para entender bien la relación [S10]. Se trata de asociaciones. Encajan con el modelo, pero no demuestran que la HRV haga pensar mejor ni que aumentar tu HRV vaya a mejorar el pensamiento. Un vínculo tan pequeño dice muy poco de una persona concreta.
 

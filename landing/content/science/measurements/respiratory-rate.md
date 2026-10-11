@@ -158,7 +158,7 @@ evidenceMap:
     limitation: "One emergency-department study with one impedance monitor; it does not describe chest bands or modern devices."
   - claim: "Many algorithms estimate breathing rate from the ECG or the optical pulse (PPG) signal, and their performance needs a common assessment framework."
     sources: [S4]
-    class: established
+    class: context-dependent
     claimType: measurement
     quote: "A plethora of algorithms have been proposed to estimate BR from the electrocardiogram (ECG) and pulse oximetry (photoplethysmogram, PPG) signals."
     limitation: "A methods review; it does not validate any specific watch or ring."
@@ -182,7 +182,7 @@ evidenceMap:
     limitation: "Ten healthy men in a laboratory; it shows that REM breathing is irregular, not a value for any person."
   - claim: "Opioids can depress breathing; fatal cases are regularly reported even though serious events are uncommon in pain treatment."
     sources: [S9]
-    class: established
+    class: context-dependent
     claimType: safety
     quote: "Opioid treatment of pain is generally safe with 0.5% or less events from respiratory depression. However, fatalities are regularly reported."
     limitation: "A clinical review about opioid treatment; it is not advice about any medicine."
@@ -194,7 +194,7 @@ evidenceMap:
     limitation: "One UK cohort of women without significant comorbidities, measured by standardised clinical observation; not a wearable or a sleeping value."
   - claim: "An abnormal respiratory rate predicts potentially serious clinical events, and hospital systems that respond to an elevated rate can be implemented."
     sources: [S1]
-    class: established
+    class: context-dependent
     claimType: other
     quote: "Hospital systems that encourage appropriate responses to an elevated respiratory rate and other abnormal vital signs can be rapidly implemented."
     limitation: "Hospital inpatients; it says nothing about small changes in healthy people or wearable values."
@@ -206,7 +206,7 @@ evidenceMap:
     limitation: "Clinical context; the value of a single recorded number depends on how accurately it was counted."
   - claim: "The National Early Warning Score, launched by the Royal College of Physicians and adopted by the NHS in its updated form, is a standardised early-warning system for acute illness and deterioration."
     sources: [S13]
-    class: established
+    class: context-dependent
     claimType: other
     quote: "Ten years on, via NEWS/NEWS2, the NHS is the first healthcare system globally with a 'common language' of illness severity and a standardised early warning system for acute clinical illness and deterioration"
     limitation: "A review by the chair of the development group; the abstract does not list the score's components. That respiratory rate is one of them is supported here by S2 (track-and-trigger systems)."
@@ -268,7 +268,7 @@ Breathing is driven by the brainstem, which adjusts rate and depth to keep carbo
 
 ## What does the evidence show?
 
-**Established — a clinical warning sign.** In hospitals an abnormal respiratory rate predicts potentially serious events, and a raised rate is one of the earliest signs that a patient is getting worse [S1]. Respiratory rate is commonly included in track-and-trigger systems — early-warning scores that turn vital signs into a single alert level [S2]. In the UK, the Royal College of Physicians' National Early Warning Score, now in its updated second version, is the standard system the NHS uses to recognise acute illness and deterioration [S13]. This evidence is about patients and **marked** deviations measured in clinical settings. It does not mean that a small night-to-night change on a watch carries the same weight.
+**Context-dependent — a clinical warning sign.** In hospitals an abnormal respiratory rate predicts potentially serious events, and a raised rate is one of the earliest signs that a patient is getting worse [S1]. Respiratory rate is commonly included in track-and-trigger systems — early-warning scores that turn vital signs into a single alert level [S2]. In the UK, the Royal College of Physicians' National Early Warning Score, now in its updated second version, is the standard system the NHS uses to recognise acute illness and deterioration [S13]. This evidence is about patients and **marked** deviations measured in clinical settings. It does not mean that a small night-to-night change on a watch carries the same weight.
 
 **Context-dependent — how good the number is.** The value of a recorded respiratory rate depends on how carefully it was measured. Manual counts are prone to systematic and random error [S2], and a bedside electronic monitor did not solve this in one emergency-department study [S3].
 

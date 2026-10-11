@@ -1,5 +1,5 @@
 ---
-sourceHash: "756d4a3d6d33"
+sourceHash: "c8cdf6f30c93"
 title: "Interaction cœur–cerveau : comment le cœur et le cerveau dialoguent"
 metaTitle: "Interaction cœur–cerveau : comment ils dialoguent"
 metaDescription: "Comment le cerveau règle le cœur et comment chaque battement lui répond : ce qui est établi, ce qui relève d’un modèle et quelles idées reçues sont des mythes."
@@ -89,9 +89,9 @@ Le lien entre ces signaux et la conscience du corps en général est traité sur
 
 ## Que montrent les données ?
 
-**Établi.** Le cerveau régule la fréquence et la force des battements par les nerfs autonomes et les hormones [S1], et les barorécepteurs signalent chaque battement au cerveau [S2]. Le cœur contient son propre réseau de cellules nerveuses [S11].
+**Établi.** Le cœur contient son propre réseau de cellules nerveuses [S11].
 
-**Dépend du contexte.** Le potentiel évoqué par le battement cardiaque est une mesure de recherche utilisable lorsque les artefacts sont contrôlés [S3]. La cohérence physiologique — une oscillation régulière et harmonieuse du rythme cardiaque qui apparaît lorsqu’une respiration lente met en phase respiration, pression artérielle et fréquence cardiaque — est un profil mesurable [S12] ; le mécanisme est décrit sur la page [respiration et HRV](/science/mechanisms/breathing-and-hrv), et ce qui la distingue de la HRV elle-même est expliqué dans [HRV ou cohérence](/hrv-vs-coherence).
+**Dépend du contexte.** Le cerveau régule la fréquence et la force des battements par les nerfs autonomes et les hormones [S1], et les barorécepteurs signalent chaque battement au cerveau [S2]. Le potentiel évoqué par le battement cardiaque est une mesure de recherche utilisable lorsque les artefacts sont contrôlés [S3]. La cohérence physiologique — une oscillation régulière et harmonieuse du rythme cardiaque qui apparaît lorsqu’une respiration lente met en phase respiration, pression artérielle et fréquence cardiaque — est un profil mesurable [S12] ; le mécanisme est décrit sur la page [respiration et HRV](/science/mechanisms/breathing-and-hrv), et ce qui la distingue de la HRV elle-même est expliqué dans [HRV ou cohérence](/hrv-vs-coherence).
 
 **Un modèle, pas une preuve : l’intégration neuroviscérale.** Le modèle de l’intégration neuroviscérale propose que les réseaux cérébraux qui contribuent au contrôle de l’attention et des émotions — en particulier des voies inhibitrices allant du cortex préfrontal au tronc cérébral en passant par l’amygdale — ajustent aussi la fréquence cardiaque, et donc la HRV [S6]. Ses auteurs rapportent que les personnes dont la HRV d’origine vagale est plus élevée tendent à mieux réussir les tâches de fonctions exécutives liées au cortex préfrontal [S7]. Des synthèses plus larges trouvent un lien, mais faible : sur l’ensemble de nombreuses études, HRV et autorégulation ne montraient qu’une faible association, avec des résultats plus marqués dans les études publiées que dans les études non publiées, signe d’un biais de publication [S8] ; une méta-analyse d’études corrélationnelles a trouvé une faible association entre la HRV d’origine vagale et les fonctions exécutives [S9] ; et une revue systématique a jugé le nombre d’études trop faible pour bien comprendre cette relation [S10]. Ce sont des associations. Elles sont compatibles avec le modèle, mais elles ne montrent pas que la HRV soit la cause d’une meilleure pensée, ni qu’augmenter votre HRV l’améliorerait. Un lien aussi faible dit très peu de chose d’une personne donnée.
 

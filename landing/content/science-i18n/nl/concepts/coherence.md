@@ -1,5 +1,5 @@
 ---
-sourceHash: "afc6758ef846"
+sourceHash: "2744e8dc82ed"
 title: "Fysiologische coherentie: wat het is en wat het niet is"
 metaTitle: "Fysiologische coherentie: wat het is"
 metaDescription: "Fysiologische coherentie is een vloeiend, golvend hartritme bij langzaam ademen. Wat het meet, hoe het verschilt van HRV en welke claims mythes zijn."
@@ -70,9 +70,7 @@ In de praktijk betekent dit:
 
 ## Wat laat het bewijs zien?
 
-**Vastgesteld.** Langzaam ademen op iemands resonantiefrequentie geeft grote schommelingen in hartslag en bloeddruk [S4], en in dat tempo lopen ademhaling, bloeddruk en hartslag in de pas [S3]. Coherentie is een redelijke manier om dat patroon te beschrijven.
-
-**Afhankelijk van de context.** HRV-biofeedback, die mensen traint om op hun resonantietempo te ademen en vaak een weergave in coherentiestijl gebruikt, liet over gerandomiseerde studies heen een klein tot matig effect zien, en de auteurs zeggen dat voor specifieke toepassingen meer onderzoek nodig is [S6]. Details staan op de pagina over [HRV-biofeedback](/science/evidence/hrv-biofeedback). Dat bewijs gaat over het trainingsprogramma als geheel.
+**Afhankelijk van de context.** Langzaam ademen op iemands resonantiefrequentie geeft grote schommelingen in hartslag en bloeddruk [S4], en in dat tempo lopen ademhaling, bloeddruk en hartslag in de pas [S3]. Coherentie is een redelijke manier om dat patroon te beschrijven. HRV-biofeedback, die mensen traint om op hun resonantietempo te ademen en vaak een weergave in coherentiestijl gebruikt, liet over gerandomiseerde studies heen een klein tot matig effect zien, en de auteurs zeggen dat voor specifieke toepassingen meer onderzoek nodig is [S6]. Details staan op de pagina over [HRV-biofeedback](/science/evidence/hrv-biofeedback). Dat bewijs gaat over het trainingsprogramma als geheel.
 
 **Onbekend.** Of de coherentiescore zelf, als afzonderlijk getal, gezondheid, emotionele toestand of prestaties voorspelt, is niet onafhankelijk aangetoond. Een groot deel van het onderzoek achter de term en de scoring komt van auteurs die verbonden zijn aan HeartMath, dat apparaten voor coherentiefeedback verkoopt [S1, S2]. Het idee dat bepaalde emoties zich tonen als bepaalde hartritmepatronen, is het eigen model van de auteurs [S2].
 

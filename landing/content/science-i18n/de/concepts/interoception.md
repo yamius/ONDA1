@@ -1,5 +1,5 @@
 ---
-sourceHash: "140cd5257074"
+sourceHash: "088e2861f077"
 title: "Interozeption: Wie das Gehirn den Körper wahrnimmt"
 metaTitle: "Interozeption: Wie das Gehirn den Körper wahrnimmt"
 metaDescription: "Was Interozeption ist, wie ihre getrennten Dimensionen gemessen werden, was das Gehirn mit Körpersignalen tut und was Trainingsstudien zeigen und was nicht."

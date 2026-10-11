@@ -1,5 +1,5 @@
 ---
-sourceHash: "e47c25a97fdd"
+sourceHash: "cde100beb74f"
 title: "Medytacja a autonomiczny układ nerwowy: co pokazują badania"
 metaTitle: "Medytacja a układ nerwowy: co pokazują badania"
 metaDescription: "Jak medytacja wpływa według badań na HRV, tętno spoczynkowe, ciśnienie krwi i kortyzol — i dlaczego wolny oddech zaciemnia ten obraz."

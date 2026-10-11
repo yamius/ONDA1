@@ -1,5 +1,5 @@
 ---
-sourceHash: "f7352829555e"
+sourceHash: "6f5f5a221096"
 title: "Ekspozycja na zimno: co pokazują badania i gdzie zaczyna się ryzyko"
 metaTitle: "Ekspozycja na zimno: badania i ryzyko"
 metaDescription: "Zimne kąpiele, prysznic i chłodzenie twarzy: co badania mówią o stresie, chorobie, regeneracji i metabolizmie, co pomijają mity o dopaminie i jakie są ryzyka."

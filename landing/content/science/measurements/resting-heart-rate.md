@@ -146,7 +146,7 @@ evidenceMap:
     limitation: "Second supporting quote (S10): Studies have found a continuous increase in risk with HR above 60 beats/min. The mortality link is a population association (S2), not an individual prediction."
   - claim: "Well-trained people often have a resting heart rate below the conventional lower limit, and many elite endurance athletes reach a lowest daily heart rate of forty bpm or less, which was well tolerated (fact rhr.trained)."
     sources: [S9, S13]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Resting bradycardia (HR ≤40 bpm) and pauses of 2 to 3 s are present in a significant proportion of endurance athletes and are well tolerated."
     limitation: "S13 measured the minimum heart rate on a Holter monitor (including sleep) in elite endurance athletes, not a daytime resting reading; S9 supports bradycardia as a normal finding in young athletic people. A low rate with symptoms is a separate question."
@@ -188,7 +188,7 @@ evidenceMap:
     limitation: "One small study of young men with uncomplicated infections, using 24-hour ECG; the size of the effect in other people may differ."
   - claim: "Beta-blockers and other heart-rate-lowering drugs lower heart rate, and that reduction is thought to be part of how they work in heart disease."
     sources: [S10]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Clinical trial data suggest that HR reduction itself is an important mechanism of benefit of beta-blockers and other heart-rate lowering drugs used after acute myocardial infarction, in chronic heart failure, and in stable angina pectoris."
     limitation: "Evidence from patients with heart disease; it is not advice about taking or stopping any medicine."

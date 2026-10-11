@@ -1,5 +1,5 @@
 ---
-sourceHash: 507e4dc4d425
+sourceHash: a4f05e49ea69
 title: "Hoe ONDA de signalen van je lichaam meet en interpreteert"
 metaTitle: "Hoe ONDA je lichaamssignalen meet en leest"
 metaDescription: "Waar ONDA zijn gegevens vandaan haalt, hoe het je baseline en signalen opbouwt, wat op je telefoon blijft en waar de grenzen van elk getal liggen."

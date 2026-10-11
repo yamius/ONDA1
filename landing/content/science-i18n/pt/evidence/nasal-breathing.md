@@ -1,5 +1,5 @@
 ---
-sourceHash: "7683ea5dce4b"
+sourceHash: "74e0a1403ee6"
 title: "Respiração nasal e fita na boca: o que mostram as evidências"
 metaTitle: "Respiração nasal e fita na boca: evidências"
 metaDescription: "O que a respiração pelo nariz faz, o que os estudos mostram sobre sono, foco, HRV, exercício e asma, e por que a fita na boca exige cautela."

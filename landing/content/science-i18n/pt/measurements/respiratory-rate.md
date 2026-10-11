@@ -1,5 +1,5 @@
 ---
-sourceHash: 3e2d8ad38a9d
+sourceHash: 542338be7f2d
 title: "Frequência respiratória em repouso: o que reflete e como é medida"
 metaTitle: "Frequência respiratória: o que é e como medir"
 metaDescription: "A frequência respiratória é quantas vezes você respira por minuto em repouso. Como medir, o que a altera e por que a sua tendência noturna vale mais."
@@ -89,7 +89,7 @@ A respiração é comandada pelo tronco encefálico, que ajusta a frequência e 
 
 ## O que mostram as evidências?
 
-**Estabelecido — um sinal de alerta clínico.** Nos hospitais, uma frequência respiratória anormal prevê eventos potencialmente graves, e uma frequência elevada é um dos primeiros sinais de que um paciente está piorando [S1]. A frequência respiratória costuma fazer parte dos sistemas de rastreamento e acionamento — escores de alerta precoce que transformam os sinais vitais em um único nível de alerta [S2]. No Reino Unido, o National Early Warning Score do Royal College of Physicians, hoje em sua segunda versão atualizada, é o sistema padrão que o NHS usa para reconhecer doença aguda e piora clínica [S13]. Essas evidências tratam de pacientes e de desvios **acentuados** medidos em ambiente clínico. Elas não significam que uma pequena mudança de uma noite para outra em um relógio tenha o mesmo peso.
+**Depende do contexto — um sinal de alerta clínico.** Nos hospitais, uma frequência respiratória anormal prevê eventos potencialmente graves, e uma frequência elevada é um dos primeiros sinais de que um paciente está piorando [S1]. A frequência respiratória costuma fazer parte dos sistemas de rastreamento e acionamento — escores de alerta precoce que transformam os sinais vitais em um único nível de alerta [S2]. No Reino Unido, o National Early Warning Score do Royal College of Physicians, hoje em sua segunda versão atualizada, é o sistema padrão que o NHS usa para reconhecer doença aguda e piora clínica [S13]. Essas evidências tratam de pacientes e de desvios **acentuados** medidos em ambiente clínico. Elas não significam que uma pequena mudança de uma noite para outra em um relógio tenha o mesmo peso.
 
 **Depende do contexto — a qualidade do número.** O valor de uma frequência respiratória registrada depende do cuidado com que foi medida. As contagens manuais estão sujeitas a erros sistemáticos e aleatórios [S2], e um monitor eletrônico de beira de leito não resolveu isso em um estudo em pronto-socorro [S3].
 

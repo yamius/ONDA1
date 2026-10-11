@@ -140,25 +140,25 @@ sources:
 evidenceMap:
   - claim: "Non-invasive delivery relies on the skin territory of vagal afferent fibres, at the external ear or at the neck."
     sources: [S1]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Transcutaneous VNS (tVNS) delivery systems rely on the cutaneous distribution of vagal afferents, either at the external ear (auricular branch of the vagus nerve) or at the neck (cervical branch of the vagus nerve)"
     limitation: "An anatomical rationale for stimulation targets; it says nothing about clinical effects."
   - claim: "The concha and the inner tragus are considered suitable locations for vagal modulation."
     sources: [S1]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "At present, it is reasonable to surmise that the concha and inner tragus are suitable locations for vagal modulation."
     limitation: "Reasonable-to-surmise wording, not proof that these sites are optimal for every person."
   - claim: "There is no consensus on which auricular sites are most densely innervated by the auricular branch of the vagus nerve, and this anatomy varies between individuals."
     sources: [S1]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "the current literature lacks a clear consensus on the auricular sites that are most densely innervated by the ABVN"
     limitation: "Anatomical variability complicates both active and sham electrode placement; it does not by itself rule effects in or out."
   - claim: "Implanted VNS is described as an approved therapy for epilepsy and for severe, intervention-resistant depression, reserved for second- or third-line use because of implantation risks."
     sources: [S2]
-    class: established
+    class: context-dependent
     claimType: regulatory
     quote: "VNS is an FDA-approved therapy for the treatment of both depression and epilepsy, but it is limited to the management of more severe, intervention-resistant cases as a second or third-line treatment option due to perioperative risks involved with device implantation."
     limitation: "A review's summary of the surgical therapy; this evidence never transfers to non-invasive or consumer devices."
@@ -248,19 +248,19 @@ evidenceMap:
     limitation: "Low-to-very-low evidence grades and a small number of trials; scale scores, not confirmed long-term outcomes."
   - claim: "Reporting of stimulation parameters across the clinical literature has been limited and inconsistent."
     sources: [S8]
-    class: established
+    class: context-dependent
     claimType: other
     quote: "Reporting of stimulation parameters was limited and inconsistent."
     limitation: "A documentation gap across the field; it limits pooling and replication."
   - claim: "The effectiveness of sham protocols was documented in only a small minority of sham-controlled studies."
     sources: [S8]
-    class: established
+    class: context-dependent
     claimType: other
     quote: "Three sham protocols were reported but their effectiveness was documented in only two of the 54 sham-controlled studies."
     limitation: "Documentation of blinding quality; it does not by itself prove that blinding fails in every trial."
   - claim: "Most reported adverse events were localized to the stimulation site."
     sources: [S8]
-    class: established
+    class: context-dependent
     claimType: safety
     quote: "Most reported adverse events were localised to stimulation site."
     limitation: "Passive reporting across heterogeneous trials; rare events may be under-detected."

@@ -1,5 +1,5 @@
 ---
-sourceHash: "6fbea09b5622"
+sourceHash: "ea519c2b5915"
 title: "Il sistema nervoso autonomo: simpatico e parasimpatico"
 metaTitle: "Sistema nervoso autonomo: non è un interruttore"
 metaDescription: "Che cosa fa il sistema nervoso autonomo, come le sue due branche regolano il cuore e perché nessun singolo numero, nemmeno LF/HF, ne misura lo stato."
@@ -98,9 +98,9 @@ Per il cuore, la [variabilità della frequenza cardiaca](/science/concepts/heart
 
 ## Che cosa mostrano le evidenze?
 
-**Accertato.** Il sistema nervoso autonomo controlla gli organi senza sforzo cosciente e ha divisioni simpatica, parasimpatica ed enterica [S1, S2]. I segnali simpatici accelerano il cuore e il vago lo rallenta [S4]. Le branche possono essere attive insieme e cambiare in modo indipendente [S3, S4, S7]. L'HRV a breve termine a riposo riflette soprattutto l'influenza vagale, e l'RMSSD ne è la principale misura nel dominio del tempo [S5, S6]. Né la componente a bassa frequenza né il rapporto LF/HF sono una misura valida delle branche o del loro peso relativo [S7, S8, S9].
+**Accertato.** Il sistema nervoso autonomo controlla gli organi senza sforzo cosciente e ha divisioni simpatica, parasimpatica ed enterica [S1, S2]. I segnali simpatici accelerano il cuore e il vago lo rallenta [S4]. Le branche possono essere attive insieme e cambiare in modo indipendente [S3, S4, S7]. L'HRV a breve termine a riposo riflette soprattutto l'influenza vagale, e l'RMSSD ne è la principale misura nel dominio del tempo [S5, S6].
 
-**Linee guida / consenso di esperti.** L'HRV non va usata come marcatore specifico dell'efferenza simpatica cardiaca né dell'equilibrio simpato-vagale [S10].
+**Linee guida / consenso di esperti.** Né la componente a bassa frequenza né il rapporto LF/HF sono una misura valida delle branche o del loro peso relativo [S7, S8, S9]. L'HRV non va usata come marcatore specifico dell'efferenza simpatica cardiaca né dell'equilibrio simpato-vagale [S10].
 
 **Dibattuto.** La teoria polivagale propone che l'evoluzione delle vie vagali abbia prodotto un «sistema di coinvolgimento sociale» [S16]. Una revisione critica sostiene che ciascuna delle sue premesse di base sia insostenibile o molto improbabile, compreso il trattare il ritmo cardiaco legato al respiro come misura del tono vagale generale [S15]. Va considerata un modello contestato, non fisiologia accertata; al nervo vago in sé sarà dedicata una pagina a parte.
 

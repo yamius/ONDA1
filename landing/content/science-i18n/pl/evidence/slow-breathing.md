@@ -1,5 +1,5 @@
 ---
-sourceHash: "57d18386abf8"
+sourceHash: "6f02fd56c607"
 title: "Wolne oddychanie: co pokazują badania"
 metaTitle: "Wolne oddychanie: co pokazują badania"
 metaDescription: "Co badania mówią o wolnym oddychaniu bez informacji zwrotnej — HRV, ciśnienie krwi, stres, sen, ból — i co wiadomo o popularnych technikach oddechowych."

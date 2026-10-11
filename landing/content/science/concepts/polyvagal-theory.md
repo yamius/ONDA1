@@ -134,13 +134,13 @@ evidenceMap:
     limitation: "The author's own position."
   - claim: "In mammals, the breath-linked heart rhythm is controlled partly by vagal neurons in the nucleus ambiguus through fast, myelinated fibres."
     sources: [S6]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "This originates from preganglionic neurons in the nucleus ambiguous that supply phasic, respiration-related activity to the cardiac branch of the vagus nerve, via myelinated, efferent fibres with rapid conduction velocities."
     limitation: "Describes mammalian anatomy; says nothing about social behaviour."
   - claim: "Other vertebrate groups also show vagal control of heart rate through fast myelinated fibres and breathing-linked heart-rate changes."
     sources: [S6]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Long-term study of cardiorespiratory interactions (CRI) in other major groups of vertebrates has established that they all show both tonic and phasic control of heart rate, imposed by the PNS."
     limitation: "Comparative physiology across species."
@@ -158,7 +158,7 @@ evidenceMap:
     limitation: "A joint critique organised by the theory's leading critic; answered by the theory's author."
   - claim: "The joint critique states that the breath-linked heart rhythm is not a direct and reliable measure of central vagal outflow to the heart."
     sources: [S4, S7]
-    class: established
+    class: context-dependent
     claimType: measurement
     quote: "Respiratory parameters can confound relations between RSA and cardiac vagal tone."
     limitation: "Methodological point about the breath-linked heart rhythm as an index."
@@ -170,7 +170,7 @@ evidenceMap:
     limitation: "Absence of evidence stated by critics; animal data on the dorsal nucleus are mixed."
   - claim: "The joint critique notes that every vertebrate group has species with myelinated cardiac vagal fibres and cardiac vagal neurons in two or more brainstem locations."
     sources: [S4]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "All vertebrate groups have species shown to possess: 1) a tonic cardiac inhibition via the parasympathetic vagus, 2) CVPN in 2 or more locations in the brainstem, plus 3) myelinated axons in the cardiac efferent supply, providing rapid conduction rates."
     limitation: "Comparative anatomy; does not address psychology."

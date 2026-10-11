@@ -1,5 +1,5 @@
 ---
-sourceHash: "254aa41c4a50"
+sourceHash: "855b06082cb7"
 title: "La stimolazione del nervo vago funziona davvero? Che cosa mostrano le evidenze"
 metaTitle: "Stimolazione del nervo vago: che cosa dicono le evidenze"
 metaDescription: "La stimolazione del nervo vago ha usi medici autorizzati dalla FDA e risultati di ricerca contrastanti. Ecco che cosa sostiene ogni livello di evidenza, e cosa no."

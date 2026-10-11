@@ -1,5 +1,5 @@
 ---
-sourceHash: a4a0bc06b042
+sourceHash: 952ca247f74b
 title: "Dlaczego mam niskie HRV? Najczęstsze przyczyny i co pokazują badania"
 metaTitle: "Niskie HRV: przyczyny i co oznaczają"
 metaDescription: "Dlaczego HRV jest niskie? Najczęściej to reakcja na sen, alkohol, infekcję, stres lub trening, a nie diagnoza. Każda przyczyna z dowodami i kiedy iść do lekarza."

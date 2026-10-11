@@ -1,5 +1,5 @@
 ---
-sourceHash: "832e79dcef5f"
+sourceHash: "d8a1a7847676"
 title: "Yoga Nidra und NSDR (Non-Sleep Deep Rest): Was die Evidenz zeigt"
 metaTitle: "Yoga Nidra und NSDR: Was die Evidenz zeigt"
 metaDescription: "Yoga Nidra und Non-Sleep Deep Rest erklärt: was mit Herzfrequenz und Hirnwellen passiert, was Studien zu Schlaf und Stress zeigen und was hinter der Dopamin-Behauptung steckt."

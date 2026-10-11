@@ -123,13 +123,13 @@ evidenceMap:
     limitation: "Mechanistic review; the downstream benefits it names are partly hypotheses."
   - claim: "Paced breathing at an individual's resonant frequency produces large oscillations in heart rate and blood pressure."
     sources: [S4]
-    class: established
+    class: emerging
     claimType: physiology
     quote: "Biofeedback readily produces large oscillations in heart rate, blood pressure, vascular tone, and pulse amplitude via paced breathing at the specific natural resonant frequency of the cardiovascular system for each individual."
     limitation: "Laboratory studies in healthy adults and asthma patients; the resonant frequency differs between people."
   - claim: "The low-frequency part of the heart-rate spectrum, where the coherence peak sits, is mainly determined by the parasympathetic system, and the LF/HF ratio is not a valid balance index."
     sources: [S5]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Available data challenge the interpretation of the LF and LF/HF ratio as indices of sympathetic cardiac control and autonomic balance, respectively, and suggest that the HRV power spectrum, including its LF component, is mainly determined by the parasympathetic system."
     limitation: "Review with reanalysis; applies to resting and laboratory conditions."
@@ -187,9 +187,7 @@ In practice this means:
 
 ## What does the evidence show?
 
-**Established.** Slow breathing at an individual's resonant frequency produces large oscillations in heart rate and blood pressure [S4], and breathing, blood pressure and heart rate come into step at that pace [S3]. Coherence is a reasonable way to describe that pattern.
-
-**Context-dependent.** HRV biofeedback, which trains people to breathe at their resonance rate and often uses a coherence-style display, showed a small to moderate effect across randomised studies, and its authors say more research is needed for particular uses [S6]. Details are on the [HRV biofeedback](/science/evidence/hrv-biofeedback) page. That evidence is about the training programme as a whole.
+**Context-dependent.** Slow breathing at an individual's resonant frequency produces large oscillations in heart rate and blood pressure [S4], and breathing, blood pressure and heart rate come into step at that pace [S3]. Coherence is a reasonable way to describe that pattern. HRV biofeedback, which trains people to breathe at their resonance rate and often uses a coherence-style display, showed a small to moderate effect across randomised studies, and its authors say more research is needed for particular uses [S6]. Details are on the [HRV biofeedback](/science/evidence/hrv-biofeedback) page. That evidence is about the training programme as a whole.
 
 **Unknown.** Whether the coherence score itself, as a separate number, predicts health, emotional state or performance has not been independently established. Much of the research behind the term and its scoring comes from authors affiliated with HeartMath, which sells coherence-feedback devices [S1, S2]. The claim that specific emotions show up as specific heart-rhythm patterns is the authors' own model [S2].
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "928273b6fb80"
+sourceHash: "c9ad9e84df17"
 title: "Teoria poliwagalna: co zakłada, co się broni, co budzi spór"
 metaTitle: "Teoria poliwagalna: co się broni"
 metaDescription: "Co zakłada teoria poliwagalna, czemu sięgają po nią terapeuci, co zgadza się z fizjologią i czemu wielu ekspertów uważa jej założenia za nie do obrony."

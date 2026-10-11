@@ -1,5 +1,5 @@
 ---
-sourceHash: "c7c0e6f927d5"
+sourceHash: "1dcd3faa7b29"
 title: "HRV生物反馈：证据显示了什么"
 metaTitle: "HRV生物反馈：证据显示了什么"
 metaDescription: "HRV生物反馈对压力、情绪、血压、睡眠和运动表现有何作用，研究目前显示了什么；以及反馈本身在慢呼吸之外还能额外带来多少益处。"

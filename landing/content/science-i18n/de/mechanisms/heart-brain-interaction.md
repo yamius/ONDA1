@@ -1,5 +1,5 @@
 ---
-sourceHash: "756d4a3d6d33"
+sourceHash: "c8cdf6f30c93"
 title: "Herz-Hirn-Interaktion: Wie Herz und Gehirn miteinander kommunizieren"
 metaTitle: "Herz und Gehirn: wie sie miteinander kommunizieren"
 metaDescription: "Wie das Gehirn den Herzschlag steuert und jeder Schlag ans Gehirn zurückmeldet: was gesichert ist, was ein Modell ist und welche populären Aussagen Mythen sind."
@@ -89,9 +89,9 @@ Wie diese Signale mit der Körperwahrnehmung im Allgemeinen zusammenhängen, beh
 
 ## Was zeigt die Evidenz?
 
-**Gesichert.** Das Gehirn reguliert Herzfrequenz und Schlagkraft über autonome Nerven und Hormone [S1], und Barorezeptoren melden jeden Herzschlag an das Gehirn [S2]. Das Herz besitzt ein eigenes Netzwerk aus Nervenzellen [S11].
+**Gesichert.** Das Herz besitzt ein eigenes Netzwerk aus Nervenzellen [S11].
 
-**Kontextabhängig.** Das herzschlagevozierte Potenzial ist ein brauchbares Forschungsmaß, wenn Artefakte kontrolliert werden [S3]. Physiologische Kohärenz – eine gleichmäßige, regelmäßige Schwingung des Herzrhythmus, die entsteht, wenn langsames Atmen Atmung, Blutdruck und Herzfrequenz in Gleichtakt bringt – ist ein messbares Muster [S12]; die Mechanik steht auf der Seite [Atmung und HRV](/science/mechanisms/breathing-and-hrv), und worin sie sich von der HRV selbst unterscheidet, erklärt [HRV und Kohärenz](/hrv-vs-coherence).
+**Kontextabhängig.** Das Gehirn reguliert Herzfrequenz und Schlagkraft über autonome Nerven und Hormone [S1], und Barorezeptoren melden jeden Herzschlag an das Gehirn [S2]. Das herzschlagevozierte Potenzial ist ein brauchbares Forschungsmaß, wenn Artefakte kontrolliert werden [S3]. Physiologische Kohärenz – eine gleichmäßige, regelmäßige Schwingung des Herzrhythmus, die entsteht, wenn langsames Atmen Atmung, Blutdruck und Herzfrequenz in Gleichtakt bringt – ist ein messbares Muster [S12]; die Mechanik steht auf der Seite [Atmung und HRV](/science/mechanisms/breathing-and-hrv), und worin sie sich von der HRV selbst unterscheidet, erklärt [HRV und Kohärenz](/hrv-vs-coherence).
 
 **Ein Modell, kein Beweis: neuroviszerale Integration.** Das Modell der neuroviszeralen Integration besagt, dass dieselben Hirnnetzwerke, die Aufmerksamkeit und Emotionen steuern helfen – insbesondere hemmende Bahnen vom präfrontalen Kortex über die Amygdala zum Hirnstamm –, auch die Herzfrequenz und damit die HRV anpassen [S6]. Seine Autoren berichten, dass Menschen mit höherer vagal vermittelter HRV in Aufgaben zu exekutiven Funktionen, die mit dem präfrontalen Kortex verbunden sind, tendenziell besser abschneiden [S7]. Größere Synthesen finden einen Zusammenhang, aber einen kleinen: Über viele Studien hinweg zeigten HRV und Selbstregulation nur einen schwachen Zusammenhang, mit stärkeren Ergebnissen in veröffentlichten als in unveröffentlichten Studien – ein Zeichen für Publikationsbias [S8]; eine Metaanalyse korrelativer Studien fand einen schwachen Zusammenhang zwischen vagal vermittelter HRV und exekutiven Funktionen [S9]; und eine systematische Übersichtsarbeit hielt die Zahl der Studien für zu gering, um den Zusammenhang gut zu verstehen [S10]. Das sind Zusammenhänge. Sie passen zum Modell, zeigen aber nicht, dass die HRV besseres Denken verursacht, und auch nicht, dass es sich verbessern würde, wenn du deine HRV steigerst. Ein so kleiner Zusammenhang sagt über einen einzelnen Menschen sehr wenig aus.
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "f6488e471877"
+sourceHash: "5e9bed91397e"
 title: "Rotlichttherapie (Photobiomodulation): Was die Evidenz zeigt"
 metaTitle: "Rotlichttherapie: Was die Evidenz zeigt"
 metaDescription: "Photobiomodulation erklärt: wie die Dosis wirkt, wo die Evidenz solide ist (orale Mukositis, manche Schmerzen, Haarausfall), wo sie früh ist – und Augenschutz."

@@ -66,7 +66,7 @@ Every row of `evidenceMap` has exactly one class. There are no numeric grades an
 
 | Class | Use when |
 |---|---|
-| `established` | Consistent meta-analytic or large-scale evidence. Never for a single small trial. |
+| `established` | Consistent meta-analytic or large-scale evidence, or long-settled textbook physiology (anatomy and basic mechanisms, not the effects of interventions). Never for a single small trial. A row kept established on the textbook basis must cite a guideline, a textbook or a classic review; a recent narrative review about an effect never makes a row established. Effects of breathing, cold, heat, practices, devices or drugs are never established by textbook (owner decision 2026-10-11). |
 | `guideline` | Guideline / expert consensus. Use it for recommendations and methodological standards (for example, how HRV should be recorded: Carter 2026, Task Force 1996). The row must cite a source of type `guideline`. This is the strength of agreement among experts, not of outcome data. |
 | `context-dependent` | Supported, but only in a stated population, condition or measurement setting. |
 | `emerging` | Early or small studies point one way; the evidence is not yet consistent. |

@@ -1,5 +1,5 @@
 ---
-sourceHash: 3e2d8ad38a9d
+sourceHash: 542338be7f2d
 title: "Atemfrequenz in Ruhe: Was sie widerspiegelt und wie sie gemessen wird"
 metaTitle: "Atemfrequenz: Bedeutung und Messung"
 metaDescription: "Die Atemfrequenz ist die Zahl deiner Atemzüge pro Minute in Ruhe. Wie sie gemessen wird, was sie bewegt und warum dein Nachtverlauf mehr sagt als ein Wert."
@@ -89,7 +89,7 @@ Die Atmung wird vom Hirnstamm gesteuert, der Frequenz und Tiefe so anpasst, dass
 
 ## Was zeigt die Evidenz?
 
-**Gesichert – ein klinisches Warnzeichen.** In Kliniken sagt eine abweichende Atemfrequenz potenziell schwere Ereignisse voraus, und eine erhöhte Frequenz ist eines der frühesten Zeichen, dass sich der Zustand eines Patienten verschlechtert [S1]. Die Atemfrequenz wird häufig in Track-and-Trigger-Systeme einbezogen – Frühwarnscores, die Vitalzeichen zu einer einzigen Alarmstufe zusammenfassen [S2]. In Großbritannien ist der National Early Warning Score des Royal College of Physicians, inzwischen in seiner aktualisierten zweiten Version, das Standardsystem, mit dem der NHS akute Erkrankung und Verschlechterung erkennt [S13]. Diese Evidenz betrifft Patientinnen und Patienten und **deutliche** Abweichungen, gemessen in klinischen Situationen. Sie bedeutet nicht, dass eine kleine Veränderung von Nacht zu Nacht auf einer Uhr dasselbe Gewicht hat.
+**Kontextabhängig – ein klinisches Warnzeichen.** In Kliniken sagt eine abweichende Atemfrequenz potenziell schwere Ereignisse voraus, und eine erhöhte Frequenz ist eines der frühesten Zeichen, dass sich der Zustand eines Patienten verschlechtert [S1]. Die Atemfrequenz wird häufig in Track-and-Trigger-Systeme einbezogen – Frühwarnscores, die Vitalzeichen zu einer einzigen Alarmstufe zusammenfassen [S2]. In Großbritannien ist der National Early Warning Score des Royal College of Physicians, inzwischen in seiner aktualisierten zweiten Version, das Standardsystem, mit dem der NHS akute Erkrankung und Verschlechterung erkennt [S13]. Diese Evidenz betrifft Patientinnen und Patienten und **deutliche** Abweichungen, gemessen in klinischen Situationen. Sie bedeutet nicht, dass eine kleine Veränderung von Nacht zu Nacht auf einer Uhr dasselbe Gewicht hat.
 
 **Kontextabhängig – wie gut die Zahl ist.** Was eine dokumentierte Atemfrequenz wert ist, hängt davon ab, wie sorgfältig sie gemessen wurde. Zählungen von Hand sind anfällig für systematische und zufällige Fehler [S2], und ein elektronischer Monitor am Krankenbett löste das in einer Studie in einer Notaufnahme nicht [S3].
 

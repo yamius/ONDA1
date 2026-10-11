@@ -1,5 +1,5 @@
 ---
-sourceHash: "7683ea5dce4b"
+sourceHash: "74e0a1403ee6"
 title: "鼻呼吸与封口胶带：证据显示了什么"
 metaTitle: "鼻呼吸与封口胶带：证据"
 metaDescription: "用鼻子呼吸有什么作用，研究对睡眠、专注、HRV、运动和哮喘显示了什么，以及为什么用胶带封口需要谨慎。"

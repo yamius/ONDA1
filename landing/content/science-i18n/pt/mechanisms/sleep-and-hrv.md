@@ -1,5 +1,5 @@
 ---
-sourceHash: 6252dd3faeef
+sourceHash: b21ec4baa415
 title: "HRV e frequência cardíaca durante o sono: por que a noite é a melhor janela"
 metaTitle: "HRV e frequência cardíaca durante o sono"
 metaDescription: "O que acontece com a frequência cardíaca e a HRV ao longo da noite e dos estágios do sono, por que as medições noturnas são as mais estáveis e o que os wearables podem ou não dizer."
@@ -111,9 +111,9 @@ Sono curto ou interrompido, álcool, um dia de treino pesado, uma infecção, es
 
 ## O que mostram as evidências?
 
-**Estabelecido.** O sono não REM desloca o coração para a influência parassimpática, e o sono REM se parece mais com a vigília [S1, S3, S4]. A apneia do sono produz um padrão cíclico de frequência cardíaca que desacelera e depois acelera [S9]. As condições de registro moldam a HRV, e por isso se recomendam condições comparáveis (consenso de especialistas) [S5]. Os dispositivos de consumo têm limites conhecidos para classificar a vigília durante o período de sono [S7].
+**Estabelecido.** As condições de registro moldam a HRV, e por isso se recomendam condições comparáveis (consenso de especialistas) [S5].
 
-**Depende do contexto.** A frequência cardíaca e a HRV de alta frequência seguem um ritmo circadiano dentro dos estágios do sono [S3]. Em adultos jovens saudáveis em laboratório, os rastreadores de sono detectaram bem o sono, mas suas avaliações dos estágios foram inconsistentes em comparação com a PSG [S6]; a amostra foi de {{fact:study.chinoy2021.participants}} [S6].
+**Depende do contexto.** O sono não REM desloca o coração para a influência parassimpática, e o sono REM se parece mais com a vigília [S1, S3, S4]. A apneia do sono produz um padrão cíclico de frequência cardíaca que desacelera e depois acelera [S9]. Os dispositivos de consumo têm limites conhecidos para classificar a vigília durante o período de sono [S7]. A frequência cardíaca e a HRV de alta frequência seguem um ritmo circadiano dentro dos estágios do sono [S3]. Em adultos jovens saudáveis em laboratório, os rastreadores de sono detectaram bem o sono, mas suas avaliações dos estágios foram inconsistentes em comparação com a PSG [S6]; a amostra foi de {{fact:study.chinoy2021.participants}} [S6].
 
 **Emergente.** Uma análise conduzida pelo fabricante relatou melhor concordância dos estágios do sono quando sinais autonômicos e circadianos foram somados ao movimento [S8]. A atividade simpática mantida durante o sono na apneia obstrutiva do sono vem de um estudo pequeno [S10].
 

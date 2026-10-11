@@ -1,5 +1,5 @@
 ---
-sourceHash: "572d635480f8"
+sourceHash: "5034501eb4bc"
 title: "RMSSD: co odzwierciedla ta miara HRV, a czego nie"
 metaTitle: "RMSSD: definicja, znaczenie i pomiar"
 metaDescription: "RMSSD to miara HRV odzwierciedlająca zależne od nerwu błędnego zmiany częstości serca. Co mierzy, jak szacują ją urządzenia ubieralne i czego nie powie."

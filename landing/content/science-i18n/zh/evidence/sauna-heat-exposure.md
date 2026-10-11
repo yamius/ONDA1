@@ -1,5 +1,5 @@
 ---
-sourceHash: "7b165f2bc469"
+sourceHash: "9a926ed2ac7a"
 title: "桑拿与热暴露：研究证据显示了什么"
 metaTitle: "桑拿与热暴露：证据与风险"
 metaDescription: "芬兰式桑拿、红外线桑拿房、热水浴和临床热疗：研究对心脏、血压和情绪有何发现，真正的风险又是什么。"

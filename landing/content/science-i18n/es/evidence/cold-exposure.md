@@ -1,5 +1,5 @@
 ---
-sourceHash: "f7352829555e"
+sourceHash: "6f5f5a221096"
 title: "Exposición al frío: qué muestra la evidencia y dónde empieza el riesgo"
 metaTitle: "Exposición al frío: evidencia y riesgos"
 metaDescription: "Baños y duchas fríos, frío en la cara: qué muestran los estudios sobre estrés, bajas, recuperación y metabolismo, qué omite la cifra de dopamina y los riesgos."

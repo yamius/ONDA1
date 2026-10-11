@@ -1,5 +1,5 @@
 ---
-sourceHash: "fdfd13042508"
+sourceHash: "9bfcf8e49dbe"
 title: "PEMF疗法（脉冲电磁场）：研究证据显示了什么"
 metaTitle: "PEMF疗法：研究证据显示了什么"
 metaDescription: "脉冲电磁场疗法解读：医用骨刺激器与家用垫子的区别，哪些试验显示能缓解疼痛，以及哪些人应避免使用。"

@@ -1,5 +1,5 @@
 ---
-sourceHash: "e47c25a97fdd"
+sourceHash: "cde100beb74f"
 title: "Meditazione e sistema nervoso autonomo: che cosa mostrano le evidenze"
 metaTitle: "Meditazione e sistema nervoso: le evidenze"
 metaDescription: "Che cosa fa la meditazione a HRV, frequenza cardiaca a riposo, pressione arteriosa e cortisolo secondo la ricerca, e perché il respiro lento confonde il quadro."

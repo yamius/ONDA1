@@ -1,5 +1,5 @@
 ---
-sourceHash: "3f61c4b110e2"
+sourceHash: "bf4ec5a45d58"
 title: "Respiración rápida: qué muestra la evidencia y cuáles son los riesgos reales"
 metaTitle: "Respiración rápida: evidencia y riesgos reales"
 metaDescription: "Wim Hof, respiración holotrópica, tummo e hiperventilación cíclica: qué muestran los estudios sobre inflamación, ánimo y deporte. Nunca lo practiques en el agua."

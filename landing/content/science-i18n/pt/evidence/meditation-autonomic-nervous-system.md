@@ -1,5 +1,5 @@
 ---
-sourceHash: "e47c25a97fdd"
+sourceHash: "cde100beb74f"
 title: "Meditação e sistema nervoso autônomo: o que mostram as evidências"
 metaTitle: "Meditação e sistema nervoso: as evidências"
 metaDescription: "O que a pesquisa mostra sobre a meditação e a HRV, a frequência cardíaca em repouso, a pressão arterial e o cortisol, e por que a respiração lenta confunde."
