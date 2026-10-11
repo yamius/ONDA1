@@ -10,5 +10,5 @@ export const APPLE_HEALTH_FILE_META = {
  * NOT PUBLIC until the owner's explicit OK reaches this repo: while false the page is noindex +
  * nofollow, stays out of the sitemap, and no public page links to it. Flip to true to publish.
  */
-export const APPLE_HEALTH_FILE_PUBLIC = false
+export const APPLE_HEALTH_FILE_PUBLIC = true
 export const APPLE_HEALTH_FILE_PATH = '/connect/apple-health/file'
