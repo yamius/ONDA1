@@ -40,7 +40,7 @@ const bemerVsHealthyWave: HeadToHeadInput = {
     },
     {
       q: 'Total ownership cost comparison?',
-      a: 'Bemer Classic Evo: $5,490 one-time, no subscription. Healthy Wave Multi-Wave: $995–$2,495 one-time depending on size. Healthy Wave less than half the total cost, and you get three modalities.',
+      a: 'Bemer Classic Evo: $5,490 one-time, no subscription. Healthy Wave Multi-Wave: $995–$2,495 one-time depending on size. Healthy Wave less than half the total cost, and you get several modalities (PEMF, far-infrared, red light, negative ions, crystals).',
     },
   ],
   content: `## The short version
@@ -53,7 +53,7 @@ If you want the best-known proprietary signal and a premium multi-applicator bui
 
 ## When is Healthy Wave Multi-Wave the right pick?
 
-If you want recovery-modality coverage per session and you don\'t need a proprietary signal — Healthy Wave stacks PEMF with far-infrared and red light therapy at meaningfully lower price. Three modalities in one mat, real parameter control, half the Bemer cost.`,
+If you want recovery-modality coverage per session and you don\'t need a proprietary signal — Healthy Wave stacks PEMF with far-infrared and red light therapy at meaningfully lower price. Several modalities in one mat, real parameter control, half the Bemer cost.`,
   relatedComparisonSlug: 'best-pemf-devices-2026',
   publishOn: '2026-06-22',
   datePublished: '2026-05-27',
