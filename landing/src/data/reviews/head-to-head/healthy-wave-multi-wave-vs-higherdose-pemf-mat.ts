@@ -26,7 +26,7 @@ const healthyWaveVsHigherDose: HeadToHeadInput = {
   faq: [
     {
       q: 'Healthy Wave or HigherDOSE — which is better?',
-      a: 'For PEMF-first buyers, Healthy Wave — higher intensity, real parameter control, 5-year warranty. For UX-first consumer-brand buyers, HigherDOSE — simple controls, cheaper, easier daily use, shorter warranty.',
+      a: 'For PEMF-first buyers, Healthy Wave — higher intensity, real parameter control, 5-year warranty. For UX-first consumer-brand buyers, HigherDOSE — simple controls, cheaper than a full-size Healthy Wave, easier daily use, shorter warranty.',
     },
     {
       q: 'Is HigherDOSE PEMF "real"?',
@@ -51,7 +51,7 @@ If you\'re buying for the PEMF capability — Healthy Wave delivers real paramet
 
 ## When is HigherDOSE PEMF Mat the right pick?
 
-If you want a polished consumer recovery experience at lower price — HigherDOSE wraps a simpler PEMF stack in better consumer UX and brand polish. Accept the 1-year warranty and the light PEMF depth.`,
+If you want a polished consumer recovery experience at a lower price than a full-size Healthy Wave — HigherDOSE wraps a simpler PEMF stack in better consumer UX and brand polish. Accept the 1-year warranty and the light PEMF depth.`,
   relatedComparisonSlug: 'best-pemf-devices-2026',
   publishOn: '2026-06-22',
   datePublished: '2026-05-27',
