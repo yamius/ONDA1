@@ -285,3 +285,10 @@ export function rolling(days: SeriesDay[], pick: (d: SeriesDay) => number | unde
   }
   return out
 }
+
+/** A sleep range wider than this (hours, high − low = 2 SD) is flagged as "varies a lot" on the page. */
+export const SLEEP_WIDE_RANGE_H = 3
+
+export function sleepRangeIsWide(n: PersonalNorm): boolean {
+  return n.ok && n.high! - n.low! > SLEEP_WIDE_RANGE_H
+}

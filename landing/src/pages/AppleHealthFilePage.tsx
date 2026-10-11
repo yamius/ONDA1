@@ -11,7 +11,7 @@
  *     sessionStorage / IndexedDB — reload and it is gone.
  *  3. No event, no error reporting. An error is shown to the person as a code + byte offset only.
  *  4. No peer comparison, no verdict, no manufacturer score, no medical claim. HRV is labelled
- *     exactly "HRV (SDNN), daytime Apple Watch readings" — never "nightly".
+ *     exactly "HRV (SDNN), Apple Watch background readings" — never "nightly" or "daytime".
  *  5. Links out are plain <a href> (full page load): a client-side hop would carry this document's
  *     state into a page that has GTM, or bring GTM's document into this one.
  */
@@ -20,6 +20,8 @@ import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import {
   NORM,
+  SLEEP_WIDE_RANGE_H,
+  sleepRangeIsWide,
   personalNorm,
   rolling,
   type AnalysisResult,
@@ -31,10 +33,9 @@ import type { ErrorCode, WorkerOut } from '../workers/appleHealth.worker'
 import { APPLE_HEALTH_FILE_META } from '../data/apple-health-file'
 
 
-const HRV_LABEL = 'HRV (SDNN), daytime Apple Watch readings'
+const HRV_LABEL = 'HRV (SDNN), Apple Watch background readings'
 const WHY_LOW = '/science/questions/why-is-my-hrv-low'
 const CHART_DAYS = 180
-const OUTSIDE_DAYS = 30
 
 const ERROR_TEXT: Record<ErrorCode, string> = {
   E_TYPE: 'This does not look like an Apple Health export. Choose export.zip or export.xml.',
@@ -196,11 +197,13 @@ export function AppleHealthFilePage() {
               For each day we average that day’s readings. “Last {NORM.recentDays} days” is the average of the most recent{' '}
               {NORM.recentDays} days in the file. Your usual range is the average ± one standard deviation of the{' '}
               {NORM.refDays} days before them, so the recent days are never compared with themselves. With fewer than{' '}
-              {NORM.minRefDays} days of readings in that window we show no range.
+              {NORM.minRefDays} days of readings in that window we show no range. “Days outside your usual range” looks only
+              at those last {NORM.recentDays} days, never at the days the range was built from. For sleep, if the range is
+              wider than {SLEEP_WIDE_RANGE_H} hours we say so: it then tells you little about any one night.
             </p>
             <p>
               The range is yours alone: no comparison with other people, and no medical meaning. Apple Watch takes HRV
-              readings (SDNN) a few times a day while you are still, so it is a daytime value, not a night-time one.
+              readings (SDNN) in the background at various times of day and night; it is not a dedicated overnight measurement.
               Sleep is the time Apple Health marks as asleep (core, deep, REM or the older “asleep”) for the night that
               ended on that day; overlapping records are counted once.
             </p>
@@ -307,7 +310,7 @@ function Metric({
   outsideLink?: boolean
 }) {
   const norm = useMemo(() => personalNorm(days, pick), [days, pick])
-  const recentWindow = lastDays(days, OUTSIDE_DAYS).filter((d) => pick(d) !== undefined)
+  const recentWindow = lastDays(days, NORM.recentDays).filter((d) => pick(d) !== undefined)
   const below = norm.ok ? recentWindow.filter((d) => pick(d)! < norm.low!) : []
   const above = norm.ok ? recentWindow.filter((d) => pick(d)! > norm.high!) : []
   const where =
@@ -347,7 +350,7 @@ function Metric({
       <Chart days={days} pick={pick} norm={norm} unit={unit} />
       {norm.ok && (
         <p className="mt-2 font-mono text-xs leading-relaxed text-white/60">
-          Last {OUTSIDE_DAYS} days outside your usual range: {below.length} below, {above.length} above
+          Last {NORM.recentDays} days outside your usual range: {below.length} below, {above.length} above
           {below.length > 0 && <> ({below.map((d) => d.day.slice(5)).join(', ')} below)</>}.
           {outsideLink && below.length > 0 && (
             <>
@@ -383,6 +386,7 @@ function Sleep({ days }: { days: SeriesDay[] }) {
             Your usual range: {r1(norm.low!)}–{r1(norm.high!)} h ({norm.refN} nights).
           </p>
         )}
+        {sleepRangeIsWide(norm) && <p>Your sleep varies a lot from night to night, so the range is wide.</p>}
         {inBedOnly && <p className="text-xs text-white/50">Some older nights have only “in bed” time, not “asleep”; those are shown as time in bed.</p>}
       </div>
       <Chart days={days} pick={pick} norm={norm} unit="h" />
