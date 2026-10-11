@@ -65,7 +65,7 @@ No — your numbers will bounce around day to day. HRV is sensitive to sleep, al
 
 ## See your progress with ONDA
 
-This is exactly what ONDA is built for. It reads your resting heart rate, HRV and breathing from your Apple Watch (or your pulse from your phone camera), establishes your personal baseline, and shows how your practice moves your numbers — in the moment and over weeks. Instead of meditating in the dark and hoping, you get the scoreboard meditation has always lacked: visible, objective progress that reflects your nervous system genuinely adapting. It pairs naturally with a [biofeedback-guided meditation practice](/articles/meditation-app-with-biofeedback) — meditation you can actually see working, which is meditation you're far more likely to keep doing.
+This is exactly what ONDA is built for. It reads your resting heart rate, HRV and breathing from Apple Health (Apple Watch or another tracker that syncs there), or your pulse from your phone camera, establishes your personal baseline, and shows how your practice moves your numbers — in the moment and over weeks. Instead of meditating in the dark and hoping, you get the scoreboard meditation has always lacked: visible, objective progress that reflects your nervous system genuinely adapting. It pairs naturally with a [biofeedback-guided meditation practice](/articles/meditation-app-with-biofeedback) — meditation you can actually see working, which is meditation you're far more likely to keep doing.
 `,
   howToSteps: [
     {

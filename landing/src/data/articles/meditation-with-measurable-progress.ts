@@ -103,7 +103,7 @@ Meditation is safe and beneficial for most people — but not for everyone, and 
 
 ## See your meditation actually working
 
-This is what ONDA is built for. It reads your resting heart rate, HRV and breathing from your Apple Watch (or your pulse from your phone camera), establishes your [personal baseline](/science/concepts/hrv-baseline), and shows how your practice moves your numbers — in the moment and over weeks. Instead of meditating in the dark and hoping, you get the scoreboard meditation has always lacked: visible, objective progress reflecting your nervous system genuinely adapting. It's meditation you can see working — which is meditation you're far more likely to keep doing.
+This is what ONDA is built for. It reads your resting heart rate, HRV and breathing from Apple Health (Apple Watch or another tracker that syncs there), or your pulse from your phone camera, establishes your [personal baseline](/science/concepts/hrv-baseline), and shows how your practice moves your numbers — in the moment and over weeks. Instead of meditating in the dark and hoping, you get the scoreboard meditation has always lacked: visible, objective progress reflecting your nervous system genuinely adapting. It's meditation you can see working — which is meditation you're far more likely to keep doing.
 
 *This guide summarizes research on meditation and is not medical advice; for a health condition, consult a qualified professional.*
 `,

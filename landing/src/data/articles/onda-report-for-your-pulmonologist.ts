@@ -3,7 +3,7 @@ import type { Article } from './types'
 /**
  * Series "Doctors and Your Data" (tasks 602-607). Honest framing: watch data is context, never a
  * diagnosis; ONDA report = on-device PDF (baseline, signals, notes), shared only by the user. HRV and
- * breathing baseline from Apple Watch. Not a medical device.
+ * breathing baseline from Apple Health (Apple Watch or any tracker syncing there). Not a medical device.
  */
 const article: Article = {
   slug: 'onda-report-for-your-pulmonologist',
@@ -76,7 +76,7 @@ Seek emergency care for severe breathlessness, difficulty speaking in full sente
 
 ## Your breathing, on one page
 
-ONDA builds your personal baseline for night-time breathing rate, resting heart rate and HRV from your Apple Watch, marks the days you left your usual range, and lets you note triggers and symptoms. You can export any period as a PDF, generated on your device and shared only by you, so a lung specialist sees how your breathing behaved over weeks — not just on the day of the test.
+ONDA builds your personal baseline for night-time breathing rate, resting heart rate and HRV from Apple Health — from your Apple Watch or another tracker that syncs there — marks the days you left your usual range, and lets you note triggers and symptoms. You can export any period as a PDF, generated on your device and shared only by you, so a lung specialist sees how your breathing behaved over weeks — not just on the day of the test.
 
 *ONDA is a breathing and HRV biofeedback app, not a medical device, and does not diagnose lung conditions. This article is general information, not medical advice. During an asthma attack, use your reliever and follow your action plan; seek emergency care for severe breathlessness.*
 `,
