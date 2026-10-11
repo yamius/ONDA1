@@ -1,5 +1,5 @@
 ---
-sourceHash: 02e01673e8d2
+sourceHash: 0a5bb76126f6
 title: "Altitude et HRV : ce qui change et ce qu’elle ne peut pas prédire"
 metaTitle: "Altitude et HRV : ce que montrent les études"
 metaDescription: "Comment la haute altitude modifie la variabilité de la fréquence cardiaque, si la HRV peut prédire le mal des montagnes et pourquoi ce sont les symptômes, pas une montre, qui décident quand redescendre."
@@ -19,7 +19,7 @@ keyPoints:
   - "Dans une petite étude à très haute altitude, la part du rythme cardiaque liée à la respiration n’était pas revenue à son profil du niveau de la mer après un long séjour."
   - "Un capteur de pouls au doigt a enregistré la variabilité de la fréquence cardiaque même à une altitude extrême, mais ses composantes rapides, liées à la respiration, s’écartaient de l’ECG."
   - "La variabilité de la fréquence cardiaque et les montres ne remplacent pas la surveillance des symptômes du mal des montagnes ; en cas de symptômes, redescendez et consultez."
-  - "Avec une Apple Watch ou des données cardiaques d’Apple Santé, ONDA compare vos nuits à votre propre ligne de base ; il n’évalue pas le mal des montagnes et ne vous en avertit pas."
+  - "Avec une Apple Watch ou des données cardiaques d’Apple Santé, ONDA compare vos dernières données à votre propre ligne de base ; il n’évalue pas le mal des montagnes et ne vous en avertit pas."
 imageAlt: "Une fine ligne de rythme cardiaque bleu canard sur fond bleu marine sombre gravit une pente en forme de montagne ; ses battements se resserrent près du sommet parmi de faibles points, puis se posent en battements calmes."
 evidenceMap:
   - claim: "Dans une méta-analyse d’adultes en bonne santé dans leurs premiers jours en haute altitude (faits altitude.li.studies, altitude.li.scope), le SDNN, le RMSSD, la puissance haute fréquence et d’autres mesures de la HRV étaient plus bas qu’au niveau de la mer."
@@ -213,6 +213,6 @@ Loin des montagnes, les causes fréquentes d’une valeur basse sont sur [pourqu
 
 ## Dans ONDA
 
-ONDA est conçu autour de la pratique plutôt que du suivi : il propose des pratiques de respiration guidées avec un guidage vocal et visuel, et {{fact:onda.practice.livePulse}}. Avec une Apple Watch, ou un appareil qui synchronise ses données cardiaques avec Apple Santé, il compare votre HRV, votre fréquence cardiaque au repos et votre fréquence respiratoire à votre propre ligne de base sur {{fact:baseline.window}}. {{fact:applewatch.hrv.healthkit}} : la tendance de HRV d’ONDA est donc une tendance du SDNN. Dans les premiers jours après votre arrivée en altitude, cette ligne de base reflète encore vos nuits à la maison ; un signal indique alors que vos nuits diffèrent de celles de chez vous, ce qui est attendu en altitude, et non que vous développez un mal des montagnes. Comme la ligne de base sur {{fact:baseline.window}} est glissante, elle intègre peu à peu les nuits en altitude, si bien que sa référence change pendant le séjour. ONDA n’évalue pas le mal des montagnes et ne vous en avertit pas, ne diagnostique aucune affection et ne remplace pas un médecin ; les études de cette page n’ont pas testé ONDA. Voir [ce que mesure ONDA](/measurements).
+ONDA est conçu autour de la pratique plutôt que du suivi : il propose des pratiques de respiration guidées avec un guidage vocal et visuel, et {{fact:onda.practice.livePulse}}. Avec une Apple Watch, ou un appareil qui synchronise ses données cardiaques avec Apple Santé, il compare votre HRV, votre fréquence cardiaque au repos et votre fréquence respiratoire à votre propre ligne de base sur {{fact:baseline.window}}. {{fact:applewatch.hrv.healthkit}} : la tendance de HRV d’ONDA est donc une tendance du SDNN. Dans les premiers jours après votre arrivée en altitude, cette ligne de base reflète encore vos données de la maison ; un signal indique alors que vos dernières valeurs diffèrent de celles de chez vous, ce qui est attendu en altitude, et non que vous développez un mal des montagnes. Comme la ligne de base sur {{fact:baseline.window}} est glissante, elle intègre peu à peu les jours en altitude, si bien que sa référence change pendant le séjour. ONDA n’évalue pas le mal des montagnes et ne vous en avertit pas, ne diagnostique aucune affection et ne remplace pas un médecin ; les études de cette page n’ont pas testé ONDA. Voir [ce que mesure ONDA](/measurements).
 
 > Information éducative, pas un diagnostic ni un traitement médical.

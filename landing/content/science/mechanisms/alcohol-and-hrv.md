@@ -187,7 +187,7 @@ evidenceMap:
     claimType: physiology
     quote: "Findings are mixed for mild to moderate drinking and may be influenced by confounding factors, underscoring the need for further research."
     limitation: "Narrative review, not a systematic review or meta-analysis; covers heart outcomes broadly, not HRV specifically."
-  - claim: "ONDA builds its baseline from values in Apple Health and compares each night with the user's own corridor (facts baseline.window, baseline.compare)."
+  - claim: "ONDA builds its baseline from values in Apple Health and compares the latest day of data with the user's own corridor (facts baseline.window, baseline.compare)."
     sources: [S9]
     class: established
     claimType: device

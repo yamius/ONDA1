@@ -1,5 +1,5 @@
 ---
-sourceHash: ab58f7477955
+sourceHash: a4a0bc06b042
 title: "HRV 低是什么原因？常见原因与证据说明"
 metaTitle: "HRV 偏低是什么原因？原因与含义"
 metaDescription: "HRV（心率变异性）偏低大多是对睡眠、饮酒、生病、压力或训练的反应，而不是疾病诊断。逐一说明各个原因的证据，以及什么时候该去看医生。"
@@ -15,7 +15,7 @@ keyPoints:
   - "睡眠不足时测得的下降幅度很小；长期压力和轮班工作的证据结论不一；对经常喝咖啡的人来说，适量咖啡因尚未被证明会改变静息 HRV。"
   - "年龄会在几十年间使 HRV 平均下降，但无法解释一周与一周之间的下降。"
   - "连续几天低于你的平常范围、静息心率偏高并且感觉不适，就是该休息的理由。出现以下情况请立即呼叫急救或紧急就医：胸痛或胸闷；晕厥或接近晕厥；严重呼吸急促；静息时不能平复的心跳过快、过强或不规则（包括伴有头晕）；突然意识混乱、一侧身体无力、说话困难。"
-  - "ONDA 会把你的每个夜晚与你自己的基线比较，但它不会说明变化的原因，也不做诊断。"
+  - "ONDA 会把你最近的数据与你自己的基线比较，但它不会说明变化的原因，也不做诊断。"
 imageAlt: "深海军蓝背景上有一条细细的青绿色心跳线，周围环绕着一圈发出米色微光的小图标：月亮、玻璃杯、体温计、跑鞋、山峰、咖啡杯和云朵。"
 faq:
   - q: "HRV 低危险吗？"
@@ -211,6 +211,6 @@ evidenceMap:
 
 ## 在 ONDA 中
 
-ONDA 围绕练习而不是追踪来设计。借助 Apple Watch 或能把心脏数据同步到 Apple 健康的设备，ONDA 从 Apple 健康读取你的 HRV 和静息心率 [S36]，在{{fact:baseline.window}}内建立你自己的基线，并且至少积累{{fact:baseline.minNights}}后才开始读取信号。{{fact:baseline.compare}}：最低变化幅度为{{fact:baseline.floors}}，并且{{fact:onda.signal.cadence}}。基线使用的是 Apple 健康中存储的 HRV 数值（{{fact:applewatch.hrv.healthkit}}；{{fact:applewatch.hrv.variants2026}}）。这样的信号是描述性的：它说明某一晚超出了你自己的范围，但不说明原因 [S36]。ONDA 不会判断变化背后是哪个原因。在练习方面，ONDA 提供有语音和视觉引导的呼吸练习，没有数字节拍器，而且{{fact:onda.practice.livePulse}}。ONDA 没有针对自身效果的研究，不诊断任何疾病，也不能代替医生。见 [ONDA 测量什么](/measurements)。
+ONDA 围绕练习而不是追踪来设计。借助 Apple Watch 或能把心脏数据同步到 Apple 健康的设备，ONDA 从 Apple 健康读取你的 HRV 和静息心率 [S36]，在{{fact:baseline.window}}内建立你自己的基线，并且至少积累{{fact:baseline.minNights}}后才开始读取信号。{{fact:baseline.compare}}：最低变化幅度为{{fact:baseline.floors}}，并且{{fact:onda.signal.cadence}}。基线使用的是 Apple 健康中存储的 HRV 数值（{{fact:applewatch.hrv.healthkit}}；{{fact:applewatch.hrv.variants2026}}）。这样的信号是描述性的：它说明你最近的数值超出了你自己的范围，但不说明原因 [S36]。ONDA 不会判断变化背后是哪个原因。在练习方面，ONDA 提供有语音和视觉引导的呼吸练习，没有数字节拍器，而且{{fact:onda.practice.livePulse}}。ONDA 没有针对自身效果的研究，不诊断任何疾病，也不能代替医生。见 [ONDA 测量什么](/measurements)。
 
 > 本文为科普信息，不构成诊断或医学治疗。

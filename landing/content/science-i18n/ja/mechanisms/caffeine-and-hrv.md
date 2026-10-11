@@ -1,5 +1,5 @@
 ---
-sourceHash: d38842ecad3c
+sourceHash: 79cf13031244
 title: "カフェインとHRV：コーヒーがすること、しないこと"
 metaTitle: "カフェインとHRV：コーヒーでHRVは下がるのか？"
 metaDescription: "安静時と運動後のコーヒーと心拍変動について研究が示すこと、エナジードリンクの違い、そして遅い時間のカフェインがHRVに届く経路を解説します。"
@@ -44,7 +44,7 @@ evidenceMap:
     limitation: "同じ単一の小規模試験。追跡は四時間。健康なボランティア。"
   - claim: "夕方のカフェインは睡眠を妨げ、小規模研究では就寝前の多量の摂取がレム睡眠中の拍動ごとの心臓指標を変化させました。"
     limitation: "就寝直前に多量を一回投与した小規模な睡眠実験室研究の背景記述。スペクトル指標のみ。"
-  - claim: "ONDAはApple Healthの値からベースラインを作り、毎晩をユーザー自身のコリドーと比較します（facts baseline.window, baseline.compare）。"
+  - claim: "ONDAはApple Healthの値からベースラインを作り、データのある最新の日をユーザー自身のコリドーと比較します（facts baseline.window, baseline.compare）。"
     limitation: "アプリの動作を説明するのみで、健康に関する主張の根拠ではない。"
 ---
 

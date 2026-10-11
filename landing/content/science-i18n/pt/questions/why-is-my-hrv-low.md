@@ -1,5 +1,5 @@
 ---
-sourceHash: ab58f7477955
+sourceHash: a4a0bc06b042
 title: "Por que minha HRV está baixa? Causas comuns e o que a evidência mostra"
 metaTitle: "Por que minha HRV está baixa? Causas e o que significam"
 metaDescription: "HRV baixa quase sempre é uma reação ao sono, ao álcool, a uma doença, ao estresse ou ao treino, não um diagnóstico. Cada causa com sua evidência e quando procurar um médico."
@@ -18,7 +18,7 @@ keyPoints:
   - "Com o sono curto a queda medida é pequena, com o estresse prolongado e o trabalho em turnos a evidência é mista, e em quem toma café todos os dias não se mostrou que uma quantidade moderada de cafeína mude a HRV de repouso."
   - "A idade reduz a HRV em média ao longo de décadas, mas não explica uma queda de uma semana para outra."
   - "Vários dias abaixo da sua faixa habitual, com a frequência cardíaca de repouso mais alta e mal-estar, são motivo para descansar. Ligue para os serviços de emergência ou procure atendimento de urgência se tiver: dor ou pressão no peito; desmaio ou sensação de que vai desmaiar; falta de ar intensa; batimentos cardíacos rápidos, fortes ou irregulares que não se acalmam em repouso (inclusive com tontura); confusão súbita, fraqueza de um lado do corpo, dificuldade para falar."
-  - "O ONDA compara as suas noites com a sua própria linha de base, mas não diz o que causou uma mudança e não faz diagnóstico."
+  - "O ONDA compara os seus dados mais recentes com a sua própria linha de base, mas não diz o que causou uma mudança e não faz diagnóstico."
 imageAlt: "Uma fina linha verde-azulada de batimentos sobre um fundo azul-marinho escuro, cercada por pequenos ícones bege brilhantes: uma lua, um copo, um termômetro, um tênis de corrida, uma montanha, uma xícara de café e nuvens."
 faq:
   - q: "HRV baixa é perigoso?"
@@ -214,6 +214,6 @@ A respiração lenta é algo que você pode fazer a qualquer momento. {{fact:cla
 
 ## No ONDA
 
-O ONDA é construído em torno da prática, e não do monitoramento. Com um Apple Watch, ou um dispositivo que sincroniza dados cardíacos com o Apple Health, ele lê a sua HRV e a sua frequência cardíaca de repouso do Apple Health [S36] e constrói a sua própria linha de base ao longo de {{fact:baseline.window}}, só passando a ler sinais após pelo menos {{fact:baseline.minNights}}. Depois, {{fact:baseline.compare}}; os limites mínimos são: {{fact:baseline.floors}}, com {{fact:onda.signal.cadence}}. A linha de base usa o valor de HRV que o Apple Health armazena ({{fact:applewatch.hrv.healthkit}}; {{fact:applewatch.hrv.variants2026}}). Um sinal assim é descritivo: ele diz que uma noite está fora da sua própria faixa, não o porquê [S36]. O ONDA não identifica qual causa está por trás de uma mudança. Para a prática, o ONDA oferece respiração guiada com orientação falada e visual e sem marcador numérico de ritmo. {{fact:onda.practice.livePulse}}. O ONDA não tem um estudo próprio da sua eficácia, não diagnostica nenhuma condição e não substitui um médico. Veja [o que o ONDA mede](/measurements).
+O ONDA é construído em torno da prática, e não do monitoramento. Com um Apple Watch, ou um dispositivo que sincroniza dados cardíacos com o Apple Health, ele lê a sua HRV e a sua frequência cardíaca de repouso do Apple Health [S36] e constrói a sua própria linha de base ao longo de {{fact:baseline.window}}, só passando a ler sinais após pelo menos {{fact:baseline.minNights}}. Depois, {{fact:baseline.compare}}; os limites mínimos são: {{fact:baseline.floors}}, com {{fact:onda.signal.cadence}}. A linha de base usa o valor de HRV que o Apple Health armazena ({{fact:applewatch.hrv.healthkit}}; {{fact:applewatch.hrv.variants2026}}). Um sinal assim é descritivo: ele diz que os seus valores mais recentes estão fora da sua própria faixa, não o porquê [S36]. O ONDA não identifica qual causa está por trás de uma mudança. Para a prática, o ONDA oferece respiração guiada com orientação falada e visual e sem marcador numérico de ritmo. {{fact:onda.practice.livePulse}}. O ONDA não tem um estudo próprio da sua eficácia, não diagnostica nenhuma condição e não substitui um médico. Veja [o que o ONDA mede](/measurements).
 
 > Informação educativa, não um diagnóstico nem um tratamento médico.

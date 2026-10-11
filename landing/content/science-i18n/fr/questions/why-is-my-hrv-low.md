@@ -1,5 +1,5 @@
 ---
-sourceHash: ab58f7477955
+sourceHash: a4a0bc06b042
 title: "Pourquoi ma HRV est-elle basse ? Causes fréquentes et ce que montrent les études"
 metaTitle: "HRV (VFC) basse : pourquoi, causes et quand s’inquiéter"
 metaDescription: "Pourquoi votre HRV (VFC) est basse : le plus souvent une réaction au sommeil, à l’alcool, à une maladie, au stress ou à l’entraînement, pas un diagnostic. Chaque cause avec ses preuves, et quand consulter."
@@ -19,7 +19,7 @@ keyPoints:
   - "Pour le manque de sommeil, la baisse mesurée est faible ; pour le stress de longue durée et le travail posté, les preuves sont mitigées ; et chez les buveurs réguliers de café, il n’a pas été montré qu’une dose modérée de caféine modifie la HRV au repos."
   - "L’âge abaisse la HRV en moyenne au fil des décennies, mais il n’explique pas une baisse d’une semaine à l’autre."
   - "Plusieurs jours sous votre plage habituelle avec une fréquence cardiaque au repos plus élevée et un sentiment de malaise sont une raison de vous reposer. Appelez les urgences ou rendez-vous aux urgences en cas de : douleur ou pression dans la poitrine ; évanouissement ou sensation d’être sur le point de s’évanouir ; essoufflement sévère ; battements de cœur rapides, forts ou irréguliers qui ne se calment pas au repos (y compris avec des vertiges) ; confusion soudaine, faiblesse d’un côté du corps, difficulté à parler."
-  - "ONDA compare vos nuits à votre propre ligne de base, mais il ne dit pas ce qui a causé un changement et ne pose pas de diagnostic."
+  - "ONDA compare vos dernières données à votre propre ligne de base, mais il ne dit pas ce qui a causé un changement et ne pose pas de diagnostic."
 imageAlt: "Une fine ligne de rythme cardiaque bleu canard sur fond bleu marine sombre, entourée de petites icônes beiges lumineuses : une lune, un verre, un thermomètre, une chaussure de course, une montagne, une tasse de café et des nuages."
 faq:
   - q: "Une HRV basse, est-ce dangereux ?"
@@ -215,6 +215,6 @@ La respiration lente est quelque chose que vous pouvez faire à tout moment. {{f
 
 ## Dans ONDA
 
-ONDA est conçu autour de la pratique plutôt que du suivi. Avec une Apple Watch, ou un appareil qui synchronise ses données cardiaques avec Apple Santé, il lit votre HRV et votre fréquence cardiaque au repos dans Apple Santé [S36] et construit votre propre ligne de base sur {{fact:baseline.window}}, en ne lisant des signaux qu’après au moins {{fact:baseline.minNights}}. {{fact:baseline.compare}} : {{fact:baseline.floors}}, avec {{fact:onda.signal.cadence}}. La ligne de base utilise la valeur de HRV qu’enregistre Apple Santé ({{fact:applewatch.hrv.healthkit}} ; {{fact:applewatch.hrv.variants2026}}). Un tel signal est descriptif : il dit qu’une nuit sort de votre propre plage, pas pourquoi [S36]. ONDA n’identifie pas la cause d’un changement. Pour la pratique, ONDA propose une respiration guidée avec un guidage vocal et visuel, sans rythme chiffré, et {{fact:onda.practice.livePulse}}. ONDA n’a pas d’étude sur sa propre efficacité, ne diagnostique aucune affection et ne remplace pas un médecin. Voir [ce que mesure ONDA](/measurements).
+ONDA est conçu autour de la pratique plutôt que du suivi. Avec une Apple Watch, ou un appareil qui synchronise ses données cardiaques avec Apple Santé, il lit votre HRV et votre fréquence cardiaque au repos dans Apple Santé [S36] et construit votre propre ligne de base sur {{fact:baseline.window}}, en ne lisant des signaux qu’après au moins {{fact:baseline.minNights}}. {{fact:baseline.compare}} : {{fact:baseline.floors}}, avec {{fact:onda.signal.cadence}}. La ligne de base utilise la valeur de HRV qu’enregistre Apple Santé ({{fact:applewatch.hrv.healthkit}} ; {{fact:applewatch.hrv.variants2026}}). Un tel signal est descriptif : il dit que vos dernières valeurs sortent de votre propre plage, pas pourquoi [S36]. ONDA n’identifie pas la cause d’un changement. Pour la pratique, ONDA propose une respiration guidée avec un guidage vocal et visuel, sans rythme chiffré, et {{fact:onda.practice.livePulse}}. ONDA n’a pas d’étude sur sa propre efficacité, ne diagnostique aucune affection et ne remplace pas un médecin. Voir [ce que mesure ONDA](/measurements).
 
 > Information éducative, pas un diagnostic ni un traitement médical.

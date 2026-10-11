@@ -222,7 +222,7 @@ evidenceMap:
     claimType: measurement
     quote: "Respiration rate and heart rate are typically elevated by illness, while HRV is decreased."
     limitation: "A single observational study from one manufacturer's users with self-reported diagnoses; all authors funded by the manufacturer. Not a diagnostic test."
-  - claim: "ONDA reads respiratory rate from Apple Health as one of the three baseline signals, compares nights with a personal corridor over the baseline window and minimum floors (fact baseline.window) (fact baseline.floors), and does not diagnose."
+  - claim: "ONDA reads respiratory rate from Apple Health as one of the three baseline signals, compares days of data with a personal corridor over the baseline window and minimum floors (fact baseline.window) (fact baseline.floors), and does not diagnose."
     sources: [S14]
     class: established
     claimType: device
@@ -292,6 +292,6 @@ Neither study is a validated diagnostic test. Both point to the same pattern see
 
 ## In ONDA
 
-Breathing rate is one of the three signals in ONDA's baseline, together with resting heart rate and HRV. ONDA reads respiratory rate from Apple Health — written by Apple Watch or by any device whose app syncs it there — and builds your personal baseline over {{fact:baseline.window}}. It compares each night with your own corridor, never with a population norm, and it flags a change only when it also passes minimum floors: {{fact:baseline.floors}}. ONDA does not compute the sleeping breathing rate itself, makes no claim about how accurate it is, and does not diagnose anything [S14]. For more background, see [your respiratory rate: the overnight number](/articles/respiratory-rate-hidden-signal) and [what ONDA measures](/measurements).
+Breathing rate is one of the three signals in ONDA's baseline, together with resting heart rate and HRV. ONDA reads respiratory rate from Apple Health — written by Apple Watch or by any device whose app syncs it there — and builds your personal baseline over {{fact:baseline.window}}. It compares your latest day of data with your own corridor, never with a population norm, and it flags a change only when it also passes minimum floors: {{fact:baseline.floors}}. ONDA does not compute the sleeping breathing rate itself, makes no claim about how accurate it is, and does not diagnose anything [S14]. For more background, see [your respiratory rate: the overnight number](/articles/respiratory-rate-hidden-signal) and [what ONDA measures](/measurements).
 
 > Educational information, not a diagnosis or medical treatment.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "40724fd3796f"
+sourceHash: "f7352829555e"
 title: "Blootstelling aan kou: wat het bewijs laat zien en waar het riskant wordt"
 metaTitle: "Blootstelling aan kou: bewijs en risico's"
 metaDescription: "IJsbaden, koude douches en gezichtskoeling: wat studies laten zien over stress, ziekte, herstel en stofwisseling, wat dopamineclaims weglaten en de risico's."

@@ -1,5 +1,5 @@
 ---
-sourceHash: ab58f7477955
+sourceHash: a4a0bc06b042
 title: "Warum ist meine HRV so niedrig? Häufige Ursachen und was die Evidenz zeigt"
 metaTitle: "HRV niedrig: Ursachen und was sie bedeuten"
 metaDescription: "Warum ist meine HRV niedrig? Meist eine Reaktion auf Schlaf, Alkohol, Infekt, Stress oder Training, keine Diagnose. Jede Ursache mit Evidenz und wann zum Arzt."
@@ -18,7 +18,7 @@ keyPoints:
   - "Bei kurzem Schlaf ist der gemessene Rückgang klein, bei langfristigem Stress und Schichtarbeit ist die Evidenz uneinheitlich, und bei regelmäßigen Kaffeetrinkern ist nicht belegt, dass moderates Koffein die Ruhe-HRV verändert."
   - "Das Alter senkt die HRV im Durchschnitt über Jahrzehnte, erklärt aber keinen Rückgang von einer Woche zur nächsten."
   - "Mehrere Tage unter deinem üblichen Bereich, ein höherer Ruhepuls und Unwohlsein sind ein Grund, dich auszuruhen. Ruf den Notruf oder hol dir sofort Notfallhilfe bei: Schmerzen oder Druck in der Brust; Ohnmacht oder Beinahe-Ohnmacht; starker Atemnot; schnellem, kräftigem oder unregelmäßigem Herzschlag, der sich in Ruhe nicht beruhigt (auch mit Schwindel); plötzlicher Verwirrtheit, Schwäche auf einer Körperseite, Schwierigkeiten beim Sprechen."
-  - "ONDA vergleicht deine Nächte mit deiner eigenen Baseline, sagt aber nicht, was eine Veränderung verursacht hat, und stellt keine Diagnose."
+  - "ONDA vergleicht deine letzten Daten mit deiner eigenen Baseline, sagt aber nicht, was eine Veränderung verursacht hat, und stellt keine Diagnose."
 imageAlt: "Eine dünne türkisfarbene Herzschlaglinie auf dunkelblauem Hintergrund, umgeben von kleinen leuchtend beigen Symbolen: ein Mond, ein Glas, ein Thermometer, ein Laufschuh, ein Berg, eine Kaffeetasse und Wolken."
 faq:
   - q: "Ist eine niedrige HRV gefährlich?"
@@ -214,6 +214,6 @@ Langsames Atmen kannst du jederzeit üben. {{fact:claim.slowExhale}}. In einer g
 
 ## In ONDA
 
-ONDA ist auf Übung ausgerichtet statt auf Tracking. Mit einer Apple Watch oder einem Gerät, das Herzdaten mit Apple Health synchronisiert, liest ONDA deine HRV und deinen Ruhepuls aus Apple Health [S36] und bildet deine eigene Baseline über {{fact:baseline.window}}; Signale gibt es erst, wenn mindestens {{fact:baseline.minNights}} vorliegen. {{fact:baseline.compare}}: {{fact:baseline.floors}}, und es gibt {{fact:onda.signal.cadence}}. Die Baseline nutzt den HRV-Wert, den Apple Health speichert ({{fact:applewatch.hrv.healthkit}}; {{fact:applewatch.hrv.variants2026}}). Ein solches Signal ist beschreibend: Es sagt, dass eine Nacht außerhalb deines eigenen Bereichs liegt, nicht warum [S36]. ONDA erkennt nicht, welche Ursache hinter einer Veränderung steckt. Zum Üben bietet ONDA geführtes Atmen mit gesprochener und visueller Anleitung und ohne numerischen Taktgeber. {{fact:onda.practice.livePulse}}. ONDA hat keine eigene Studie zu seiner Wirksamkeit, stellt keine Diagnose und ersetzt keinen Arzt. Siehe [was ONDA misst](/measurements).
+ONDA ist auf Übung ausgerichtet statt auf Tracking. Mit einer Apple Watch oder einem Gerät, das Herzdaten mit Apple Health synchronisiert, liest ONDA deine HRV und deinen Ruhepuls aus Apple Health [S36] und bildet deine eigene Baseline über {{fact:baseline.window}}; Signale gibt es erst, wenn mindestens {{fact:baseline.minNights}} vorliegen. {{fact:baseline.compare}}: {{fact:baseline.floors}}, und es gibt {{fact:onda.signal.cadence}}. Die Baseline nutzt den HRV-Wert, den Apple Health speichert ({{fact:applewatch.hrv.healthkit}}; {{fact:applewatch.hrv.variants2026}}). Ein solches Signal ist beschreibend: Es sagt, dass deine letzten Werte außerhalb deines eigenen Bereichs liegt, nicht warum [S36]. ONDA erkennt nicht, welche Ursache hinter einer Veränderung steckt. Zum Üben bietet ONDA geführtes Atmen mit gesprochener und visueller Anleitung und ohne numerischen Taktgeber. {{fact:onda.practice.livePulse}}. ONDA hat keine eigene Studie zu seiner Wirksamkeit, stellt keine Diagnose und ersetzt keinen Arzt. Siehe [was ONDA misst](/measurements).
 
 > Bildungsinformation, keine Diagnose und keine medizinische Behandlung.

@@ -1,5 +1,5 @@
 ---
-sourceHash: 534dc086a30e
+sourceHash: 4adca9f46e09
 title: "Wat één HRV-waarde je wel en niet kan vertellen"
 metaTitle: "HRV interpreteren: wat één waarde je vertelt"
 metaDescription: "Wat één HRV-meting echt laat zien, waarom laag geen diagnose is, waarom hoog niet altijd goed is en waarom vergelijken met anderen misleidt."

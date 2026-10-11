@@ -1,5 +1,5 @@
 ---
-sourceHash: "491202e4b937"
+sourceHash: "832e79dcef5f"
 title: "Joga nidra i NSDR (non-sleep deep rest): co pokazują badania"
 metaTitle: "Joga nidra i NSDR: co pokazują badania"
 metaDescription: "Joga nidra i głęboki odpoczynek bez snu wyjaśnione: co dzieje się z tętnem i falami mózgowymi, co badania pokazują dla snu i stresu oraz skąd twierdzenie o dopaminie."

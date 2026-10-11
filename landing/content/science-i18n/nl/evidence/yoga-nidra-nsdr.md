@@ -1,5 +1,5 @@
 ---
-sourceHash: "491202e4b937"
+sourceHash: "832e79dcef5f"
 title: "Yoga nidra en NSDR (non-sleep deep rest): wat het bewijs laat zien"
 metaTitle: "Yoga nidra en NSDR: wat het bewijs laat zien"
 metaDescription: "Yoga nidra en non-sleep deep rest uitgelegd: wat er gebeurt met hartslag en hersengolven, wat studies laten zien voor slaap en stress, en de dopamineclaim."

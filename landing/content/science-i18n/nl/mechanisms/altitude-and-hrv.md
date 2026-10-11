@@ -1,5 +1,5 @@
 ---
-sourceHash: 02e01673e8d2
+sourceHash: 0a5bb76126f6
 title: "Hoogte en HRV: wat er verandert en wat ze niet kan voorspellen"
 metaTitle: "Hoogte en HRV: wat studies laten zien"
 metaDescription: "Hoe grote hoogte de hartslagvariabiliteit verandert, of HRV hoogteziekte kan voorspellen en waarom klachten, niet een horloge, bepalen wanneer je moet afdalen."
@@ -18,7 +18,7 @@ keyPoints:
   - "In één kleine studie op zeer grote hoogte was het aan de ademhaling gekoppelde aandeel van het hartritme na een lang verblijf niet teruggekeerd naar het patroon op zeeniveau."
   - "Een optische hartslagsensor aan de vinger registreerde de hartslagvariabiliteit zelfs op extreme hoogte, maar de snelle, aan de ademhaling gekoppelde componenten weken af van het ECG."
   - "Hartslagvariabiliteit en horloges vervangen niet het letten op klachten van hoogteziekte; bij klachten daal je af en zoek je medische hulp."
-  - "Met een Apple Watch of hartgegevens uit Apple Gezondheid vergelijkt ONDA je nachten met je eigen basislijn; de app beoordeelt hoogteziekte niet en waarschuwt er niet voor."
+  - "Met een Apple Watch of hartgegevens uit Apple Gezondheid vergelijkt ONDA je laatste gegevens met je eigen basislijn; de app beoordeelt hoogteziekte niet en waarschuwt er niet voor."
 imageAlt: "Een dunne blauwgroene hartritmelijn op een donker marineblauwe achtergrond klimt langs een bergvormige helling, de slagen worden dichter bij de top tussen vage stippen, en gaan daarna over in rustige slagen."
 evidenceMap:
   - claim: "In een meta-analyse bij gezonde volwassenen in hun eerste dagen op grote hoogte (facts altitude.li.studies, altitude.li.scope) waren SDNN, RMSSD, het hoogfrequente vermogen en verwante HRV-maten lager dan op zeeniveau."
@@ -212,6 +212,6 @@ Buiten de bergen staan de veelvoorkomende oorzaken van een lage meting op [waaro
 
 ## In ONDA
 
-ONDA draait om oefenen, niet om bijhouden: de app biedt begeleide ademhalingsoefeningen met gesproken en visuele begeleiding, en {{fact:onda.practice.livePulse}}. Met een Apple Watch, of een apparaat dat hartgegevens naar Apple Gezondheid synchroniseert, vergelijkt de app je HRV, rusthartslag en ademfrequentie met je eigen basislijn over {{fact:baseline.window}}. {{fact:applewatch.hrv.healthkit}}, dus de HRV-trend van ONDA is een SDNN-trend. In de eerste dagen nadat je naar hoogte bent gereisd, weerspiegelt die basislijn nog je nachten thuis; een signaal zegt dan dat je nachten van thuis verschillen, wat op hoogte te verwachten is, niet dat je hoogteziekte krijgt. Omdat de basislijn van {{fact:baseline.window}} meeschuift, neemt ze geleidelijk de nachten op hoogte op, zodat waarmee wordt vergeleken tijdens het verblijf verandert. ONDA beoordeelt hoogteziekte niet en waarschuwt er niet voor, stelt geen diagnoses en vervangt geen arts; de studies op deze pagina hebben ONDA niet getest. Zie [wat ONDA meet](/measurements).
+ONDA draait om oefenen, niet om bijhouden: de app biedt begeleide ademhalingsoefeningen met gesproken en visuele begeleiding, en {{fact:onda.practice.livePulse}}. Met een Apple Watch, of een apparaat dat hartgegevens naar Apple Gezondheid synchroniseert, vergelijkt de app je HRV, rusthartslag en ademfrequentie met je eigen basislijn over {{fact:baseline.window}}. {{fact:applewatch.hrv.healthkit}}, dus de HRV-trend van ONDA is een SDNN-trend. In de eerste dagen nadat je naar hoogte bent gereisd, weerspiegelt die basislijn nog je gegevens van thuis; een signaal zegt dan dat je laatste waarden van thuis verschillen, wat op hoogte te verwachten is, niet dat je hoogteziekte krijgt. Omdat de basislijn van {{fact:baseline.window}} meeschuift, neemt ze geleidelijk de dagen op hoogte op, zodat waarmee wordt vergeleken tijdens het verblijf verandert. ONDA beoordeelt hoogteziekte niet en waarschuwt er niet voor, stelt geen diagnoses en vervangt geen arts; de studies op deze pagina hebben ONDA niet getest. Zie [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

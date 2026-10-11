@@ -1,5 +1,5 @@
 ---
-sourceHash: d3c51d8c300f
+sourceHash: 49beca2392b4
 title: "Cycle menstruel et HRV : pourquoi votre référence bouge"
 metaTitle: "Cycle menstruel et HRV : ce qui change et pourquoi"
 metaDescription: "Comment la variabilité de la fréquence cardiaque évolue au fil du cycle menstruel, pourquoi chaque femme a son propre profil et ce que changent la contraception hormonale et la ménopause."
@@ -50,7 +50,7 @@ evidenceMap:
     limitation: "Deux phases comparées chez onze femmes ; enregistrements de laboratoire courts."
   - claim: "Les auteurs de la revue indiquent que les différences liées au cycle doivent être prises en compte lorsque la HRV est présentée aux femmes."
     limitation: "Recommandation des auteurs, pas une méthode éprouvée."
-  - claim: "ONDA construit sa référence à partir des valeurs d’Apple Health et compare chaque nuit au couloir propre de l’utilisateur (faits baseline.window, baseline.compare)."
+  - claim: "ONDA construit sa référence à partir des valeurs d’Apple Health et compare le dernier jour de données au couloir propre de l’utilisateur (faits baseline.window, baseline.compare)."
     limitation: "Décrit uniquement le fonctionnement de l’application ; ne constitue une preuve d’aucune allégation de santé."
 ---
 

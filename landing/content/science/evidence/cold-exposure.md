@@ -178,7 +178,7 @@ evidenceMap:
     limitation: "Describes the studies, not their results."
   - claim: "Studies of voluntary cold-water immersion are hampered by small groups, often of one sex, and differing temperatures."
     sources: [S2]
-    class: established
+    class: context-dependent
     claimType: other
     quote: "Clear conclusions from most studies were hampered by the fact that they were carried out in small groups, often of one gender and with differences in exposure temperature and salt composition of the water."
     limitation: "Narrative review."
@@ -286,7 +286,7 @@ evidenceMap:
     limitation: "Small group of young men; one-hour immersion; plasma levels, not brain dopamine."
   - claim: "The cold shock response can cause death through aspiration, reduced brain blood flow and arrhythmia before core temperature falls; alcohol modifies the risks."
     sources: [S6]
-    class: established
+    class: context-dependent
     claimType: safety
     quote: "The cold shock response, triggered within seconds of immersion, can cause death through aspiration, hypocapnia-induced cerebral hypoperfusion, and cardiac arrhythmia before core temperature begins to fall"
     limitation: "Narrative review of drowning physiology."

@@ -1,5 +1,5 @@
 ---
-sourceHash: 5b7474fd9981
+sourceHash: 21579ea1d5e6
 title: "Fréquence cardiaque au repos : ce qu’elle reflète et comment la mesurer"
 metaTitle: "Fréquence cardiaque au repos : sens et mesure"
 metaDescription: "Fréquence cardiaque au repos : comment la mesurer, ce que « normal » veut dire, ce qui la fait varier, et pourquoi votre tendance compte plus qu’un chiffre."
@@ -48,7 +48,7 @@ evidenceMap:
     limitation: "Une seule étude de surveillance à l’échelle de la population, sur une seule marque d’objet connecté ; elle suit la maladie à l’échelle des États, pas chez les individus."
   - claim: "Dans une petite cohorte équipée de montres connectées, des hausses extrêmes de la fréquence cardiaque au repos par rapport à la référence propre à chaque personne ont signalé de nombreux cas de COVID-19, certains avant les symptômes."
     limitation: "Une seule étude rétrospective avec peu de participants infectés ; ce n’est pas un test diagnostique validé, et une hausse a bien d’autres causes qu’une infection."
-  - claim: "ONDA lit la fréquence cardiaque au repos dans Apple Health, compare chaque nuit à un couloir personnel et ne pose aucun diagnostic ; la fenêtre et les variations minimales sont définies dans les faits de l’application."
+  - claim: "ONDA lit la fréquence cardiaque au repos dans Apple Health, compare le dernier jour de données à un couloir personnel et ne pose aucun diagnostic ; la fenêtre et les variations minimales sont définies dans les faits de l’application."
     limitation: "Décrit uniquement le comportement de l’application ; ce n’est une preuve d’aucune affirmation de santé."
 ---
 
@@ -112,6 +112,6 @@ Pour voir comment la fréquence cardiaque au repos et la variabilité de la fré
 
 ## Dans ONDA
 
-La fréquence cardiaque au repos est l’un des trois signaux de la référence personnelle d’ONDA, avec la HRV et la fréquence respiratoire. ONDA la lit dans Apple Health — où l’inscrit l’Apple Watch ou tout appareil dont l’application y synchronise les données cardiaques — et construit votre référence personnelle sur {{fact:baseline.window}}. L’application compare chaque nuit à votre propre couloir, jamais à une norme de population, et ne signale un changement que s’il dépasse aussi des seuils minimaux : {{fact:baseline.floors}}. Sans montre, la caméra du téléphone donne une mesure du pouls au repos, mais sans les fonctions de référence personnelle. ONDA décrit des changements ; elle ne pose aucun diagnostic [S8]. Voir [ce que mesure ONDA](/measurements).
+La fréquence cardiaque au repos est l’un des trois signaux de la référence personnelle d’ONDA, avec la HRV et la fréquence respiratoire. ONDA la lit dans Apple Health — où l’inscrit l’Apple Watch ou tout appareil dont l’application y synchronise les données cardiaques — et construit votre référence personnelle sur {{fact:baseline.window}}. L’application compare votre dernier jour de données à votre propre couloir, jamais à une norme de population, et ne signale un changement que s’il dépasse aussi des seuils minimaux : {{fact:baseline.floors}}. Sans montre, la caméra du téléphone donne une mesure du pouls au repos, mais sans les fonctions de référence personnelle. ONDA décrit des changements ; elle ne pose aucun diagnostic [S8]. Voir [ce que mesure ONDA](/measurements).
 
 > Information éducative, pas un diagnostic ni un traitement médical.

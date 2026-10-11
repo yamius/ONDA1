@@ -1,5 +1,5 @@
 ---
-sourceHash: 02e01673e8d2
+sourceHash: 0a5bb76126f6
 title: "Altitudine e HRV: che cosa cambia e che cosa non può prevedere"
 metaTitle: "Altitudine e HRV: che cosa mostrano gli studi"
 metaDescription: "Come l'alta quota cambia la variabilità della frequenza cardiaca, se l'HRV può prevedere il mal di montagna e perché a decidere quando scendere sono i sintomi, non un orologio."
@@ -18,7 +18,7 @@ keyPoints:
   - "In un piccolo studio ad altissima quota, la componente del ritmo cardiaco legata al respiro non era tornata al suo profilo del livello del mare dopo una lunga permanenza."
   - "Un sensore del polso al dito ha registrato la variabilità della frequenza cardiaca anche a quote estreme, ma le sue componenti rapide, legate al respiro, si discostavano dall'ECG."
   - "La variabilità della frequenza cardiaca e gli orologi non sostituiscono il controllo dei sintomi del mal di montagna; con dei sintomi, scendi e cerca assistenza medica."
-  - "Con un Apple Watch o i dati cardiaci di Apple Salute, ONDA confronta le tue notti con la tua baseline personale; non valuta il mal di montagna e non avvisa del suo arrivo."
+  - "Con un Apple Watch o i dati cardiaci di Apple Salute, ONDA confronta i tuoi ultimi dati con la tua baseline personale; non valuta il mal di montagna e non avvisa del suo arrivo."
 imageAlt: "Una sottile linea del ritmo cardiaco verde acqua su sfondo blu notte risale un pendio a forma di montagna; i battiti si infittiscono vicino alla cima tra deboli puntini, poi si distendono in battiti calmi."
 evidenceMap:
   - claim: "In una meta-analisi di adulti sani nei primi giorni in alta quota (fatti altitude.li.studies, altitude.li.scope), SDNN, RMSSD, potenza ad alta frequenza e altre misure dell'HRV erano più bassi che al livello del mare."
@@ -212,6 +212,6 @@ Lontano dalla montagna, le cause comuni di una lettura bassa sono in [perché la
 
 ## In ONDA
 
-ONDA è costruita attorno alla pratica più che al monitoraggio: offre pratiche di respirazione guidate con indicazioni vocali e visive, e {{fact:onda.practice.livePulse}}. Con un Apple Watch, o un dispositivo che sincronizza i dati cardiaci con Apple Salute, confronta la tua HRV, la frequenza cardiaca a riposo e la frequenza respiratoria con la tua baseline personale su {{fact:baseline.window}}. {{fact:applewatch.hrv.healthkit}}, quindi l'andamento dell'HRV in ONDA è un andamento della SDNN. Nei primi giorni dopo l'arrivo in quota, quella baseline riflette ancora le tue notti a casa, quindi un segnale in quel momento dice che le tue notti sono diverse da quelle di casa, cosa attesa in quota, non che stai sviluppando il mal di montagna. Poiché la baseline di {{fact:baseline.window}} è mobile, incorpora gradualmente le notti in quota, quindi il riferimento del confronto cambia durante la permanenza. ONDA non valuta il mal di montagna e non avvisa del suo arrivo, non diagnostica alcuna condizione e non sostituisce un medico; gli studi di questa pagina non hanno testato ONDA. Vedi [che cosa misura ONDA](/measurements).
+ONDA è costruita attorno alla pratica più che al monitoraggio: offre pratiche di respirazione guidate con indicazioni vocali e visive, e {{fact:onda.practice.livePulse}}. Con un Apple Watch, o un dispositivo che sincronizza i dati cardiaci con Apple Salute, confronta la tua HRV, la frequenza cardiaca a riposo e la frequenza respiratoria con la tua baseline personale su {{fact:baseline.window}}. {{fact:applewatch.hrv.healthkit}}, quindi l'andamento dell'HRV in ONDA è un andamento della SDNN. Nei primi giorni dopo l'arrivo in quota, quella baseline riflette ancora i tuoi dati di casa, quindi un segnale in quel momento dice che i tuoi ultimi valori sono diversi da quelli di casa, cosa attesa in quota, non che stai sviluppando il mal di montagna. Poiché la baseline di {{fact:baseline.window}} è mobile, incorpora gradualmente i giorni in quota, quindi il riferimento del confronto cambia durante la permanenza. ONDA non valuta il mal di montagna e non avvisa del suo arrivo, non diagnostica alcuna condizione e non sostituisce un medico; gli studi di questa pagina non hanno testato ONDA. Vedi [che cosa misura ONDA](/measurements).
 
 > Informazioni a scopo educativo, non una diagnosi né un trattamento medico.

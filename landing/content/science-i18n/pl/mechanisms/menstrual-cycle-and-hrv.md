@@ -1,5 +1,5 @@
 ---
-sourceHash: d3c51d8c300f
+sourceHash: 49beca2392b4
 title: "Cykl menstruacyjny a HRV: dlaczego Twoja linia bazowa się przesuwa"
 metaTitle: "Cykl menstruacyjny a HRV: co się zmienia i dlaczego"
 metaDescription: "Jak zmienność rytmu serca zmienia się w cyklu menstruacyjnym, dlaczego każda kobieta ma własny wzorzec i co zmieniają antykoncepcja hormonalna oraz menopauza."
@@ -49,7 +49,7 @@ evidenceMap:
     limitation: "Porównano dwie fazy u jedenastu kobiet; krótkie zapisy laboratoryjne."
   - claim: "Autorzy przeglądu uważają, że różnice związane z cyklem należy uwzględniać, gdy HRV pokazuje się kobietom."
     limitation: "Zalecenie autorów, a nie sprawdzona metoda."
-  - claim: "ONDA tworzy linię bazową z wartości z Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (fakty baseline.window, baseline.compare)."
+  - claim: "ONDA tworzy linię bazową z wartości z Apple Health i porównuje ostatni dzień z danymi z własnym korytarzem użytkownika (fakty baseline.window, baseline.compare)."
     limitation: "Opisuje wyłącznie działanie aplikacji; nie jest dowodem na żadne twierdzenie zdrowotne."
 ---
 

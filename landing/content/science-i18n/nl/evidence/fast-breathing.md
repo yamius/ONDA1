@@ -1,5 +1,5 @@
 ---
-sourceHash: "0b230da8f884"
+sourceHash: "3f61c4b110e2"
 title: "Snel ademen: wat het bewijs laat zien en de echte risico’s"
 metaTitle: "Snel ademen: bewijs en echte risico’s"
 metaDescription: "Wim Hof-ademhaling, holotropisch ademwerk, tummo en cyclische hyperventilatie: wat studies laten zien voor ontsteking, stemming en sport, en waarom water verboden terrein is."

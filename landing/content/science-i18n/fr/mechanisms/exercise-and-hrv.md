@@ -1,5 +1,5 @@
 ---
-sourceHash: 385cb2c6ee15
+sourceHash: faaa9b748d00
 title: "Exercice et HRV : ce que fait l’entraînement et ce que montre le guidage par la HRV"
 metaTitle: "Exercice et HRV : données sur l’entraînement guidé par la HRV"
 metaDescription: "Pourquoi la HRV baisse après un entraînement intense puis récupère, combien de temps cela prend et ce que montrent les essais d’entraînement guidé par la HRV face à un plan fixe."
@@ -50,7 +50,7 @@ evidenceMap:
     limitation: "Critère secondaire d’un petit essai ; il ne peut pas porter la conclusion quand le critère principal n’a montré aucune différence."
   - claim: "De nombreux facteurs expérimentaux, démographiques et environnementaux influencent la mesure de la HRV ; les valeurs doivent donc être comparées dans des conditions comparables."
     limitation: "Recommandation sur la rigueur de la recherche ; consensus d’experts, pas une preuve directe sur les décisions d’entraînement."
-  - claim: "ONDA construit sa référence personnelle à partir des valeurs d’Apple Health et compare chaque nuit au couloir propre de l’utilisateur."
+  - claim: "ONDA construit sa référence personnelle à partir des valeurs d’Apple Health et compare le dernier jour de données au couloir propre de l’utilisateur."
     limitation: "Décrit uniquement le fonctionnement de l’application ; ne constitue une preuve d’aucune affirmation de santé ou d’entraînement."
   - claim: "Dans une méta-analyse chez des sportifs d’endurance, l’entraînement qui améliorait la performance s’accompagnait d’une hausse de la HRV d’origine vagale au repos et après l’effort et de la récupération de la fréquence cardiaque."
     limitation: "Sportifs d’endurance uniquement ; petites études regroupées ; indices fréquentiels limités à la puissance HF ; moyennes de groupe, pas un test individuel."
@@ -137,6 +137,6 @@ Si l’entraînement n’explique pas une valeur basse, d’autres causes fréqu
 
 ## Dans ONDA
 
-ONDA construit une référence personnelle à partir des valeurs enregistrées dans Apple Health — depuis l’Apple Watch ou un autre appareil qui y synchronise des données cardiaques [S5]. La fenêtre est de {{fact:baseline.window}}, et {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}} : la tendance de HRV d’ONDA est donc une tendance SDNN. ONDA montre comment vos nuits se situent par rapport à votre propre plage ; il ne planifie ni n’ajuste l’entraînement, ne vous dit pas quand vous entraîner dur et ne diagnostique aucune maladie.
+ONDA construit une référence personnelle à partir des valeurs enregistrées dans Apple Health — depuis l’Apple Watch ou un autre appareil qui y synchronise des données cardiaques [S5]. La fenêtre est de {{fact:baseline.window}}, et {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}} : la tendance de HRV d’ONDA est donc une tendance SDNN. ONDA montre comment vos dernières données se situent par rapport à votre propre plage ; il ne planifie ni n’ajuste l’entraînement, ne vous dit pas quand vous entraîner dur et ne diagnostique aucune maladie.
 
 > Information éducative, pas un diagnostic ni un traitement médical.

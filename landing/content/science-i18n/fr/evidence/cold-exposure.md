@@ -1,5 +1,5 @@
 ---
-sourceHash: "40724fd3796f"
+sourceHash: "f7352829555e"
 title: "Exposition au froid : ce que montrent les données et où sont les risques"
 metaTitle: "Exposition au froid : données et risques"
 metaDescription: "Bain froid, douche froide, visage refroidi : ce que montrent les études sur le stress, les arrêts maladie, la récupération et le métabolisme, et les risques."

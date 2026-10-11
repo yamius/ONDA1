@@ -1,5 +1,5 @@
 ---
-sourceHash: 9e29577a7288
+sourceHash: 93c36ac07742
 title: "Alcohol y HRV: lo que una copa le hace a tu noche"
 metaTitle: "Alcohol y HRV: la noche después de beber"
 metaDescription: "Por qué la HRV nocturna baja y la frecuencia cardíaca en reposo sube después de beber, cómo influyen la dosis y el momento y qué no sabe aún la investigación sobre el alcohol."
@@ -47,7 +47,7 @@ evidenceMap:
     limitation: "Advertencia de los autores; repite la limitación."
   - claim: "Una revisión narrativa concluye que el consumo intensivo agudo y el consumo crónico elevado perjudican la frecuencia cardíaca y la función autonómica, mientras que los resultados sobre el consumo leve a moderado son dispares."
     limitation: "Revisión narrativa, no una revisión sistemática ni un metaanálisis; abarca resultados cardíacos en general, no específicamente la HRV."
-  - claim: "ONDA construye su línea base a partir de valores de Apple Health y compara cada noche con el corredor propio del usuario (datos baseline.window, baseline.compare)."
+  - claim: "ONDA construye su línea base a partir de valores de Apple Health y compara el último día con datos con el corredor propio del usuario (datos baseline.window, baseline.compare)."
     limitation: "Describe solo el funcionamiento de la app; no es evidencia de ninguna afirmación de salud."
 ---
 

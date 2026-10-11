@@ -1,5 +1,5 @@
 ---
-sourceHash: 477ca0c9b233
+sourceHash: f70effe83d62
 title: "Perché l'HRV cambia da un giorno all'altro"
 metaTitle: "Perché l'HRV cambia ogni giorno: cause e prove"
 metaDescription: "Perché la variabilità della frequenza cardiaca cambia ogni giorno: rumore normale, sonno, alcol, allenamento, malattia, stress e ciclo. Meccanismi e prove."
@@ -74,7 +74,7 @@ evidenceMap:
     limitation: "Dodici uomini allenati alla forza, attorno a una sola sessione di esercizio; unità spettrali normalizzate."
   - claim: "Il tono vagale non può essere misurato direttamente; misure dell'HRV come l'RMSSD riflettono le variazioni della frequenza cardiaca mediate dal vago."
     limitation: "Definizione; non quantifica l'attività vagale."
-  - claim: "ONDA confronta ogni notte con il corridoio della baseline personale dell'utente e legge l'HRV (SDNN) da Apple Health."
+  - claim: "ONDA confronta l'ultimo giorno con dati con il corridoio della baseline personale dell'utente e legge l'HRV (SDNN) da Apple Health."
     limitation: "Documentazione del prodotto; descrive solo il comportamento dell'app."
 ---
 

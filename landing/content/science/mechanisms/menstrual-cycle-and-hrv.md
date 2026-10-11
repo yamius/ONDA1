@@ -184,7 +184,7 @@ evidenceMap:
     claimType: physiology
     quote: "This should be considered when presenting HRV metrics to female users."
     limitation: "Author recommendation, not a tested method."
-  - claim: "ONDA builds its baseline from values in Apple Health and compares each night with the user's own corridor (facts baseline.window, baseline.compare)."
+  - claim: "ONDA builds its baseline from values in Apple Health and compares the latest day of data with the user's own corridor (facts baseline.window, baseline.compare)."
     sources: [S8]
     class: established
     claimType: device

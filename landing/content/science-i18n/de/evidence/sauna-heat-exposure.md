@@ -1,5 +1,5 @@
 ---
-sourceHash: "6a056afa89f5"
+sourceHash: "7b165f2bc469"
 title: "Sauna und Hitzeexposition: Was die Evidenz zeigt"
 metaTitle: "Sauna und Hitzeexposition: Evidenz und Risiken"
 metaDescription: "Finnische Sauna, Infrarotkabine, heißes Bad und klinische Wärmetherapie: was Studien zu Herz, Blutdruck und Stimmung zeigen – und die echten Risiken."

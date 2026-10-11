@@ -1,5 +1,5 @@
 ---
-sourceHash: 9e29577a7288
+sourceHash: 93c36ac07742
 title: "酒精与 HRV：喝酒会让你的夜晚发生什么"
 metaTitle: "酒精与 HRV：喝酒后的那一夜"
 metaDescription: "为什么喝酒后夜间 HRV 会下降、静息心率会上升，饮酒量和时间有什么影响，以及关于酒精研究尚不清楚的地方。"
@@ -44,7 +44,7 @@ evidenceMap:
     limitation: "作者的提醒；重申了这一局限。"
   - claim: "一篇叙述性综述的结论是：急性狂饮和长期大量饮酒会损害心率和自主神经功能，而关于轻度至中度饮酒的研究结果不一。"
     limitation: "是叙述性综述，而不是系统综述或荟萃分析；涵盖的是一般心脏结局，并非专门针对 HRV。"
-  - claim: "ONDA 根据 Apple Health 中的数值建立基线，并将每晚与用户自己的波动区间进行比较（事实 baseline.window、baseline.compare）。"
+  - claim: "ONDA 根据 Apple Health 中的数值建立基线，并将最近一天的数据与用户自己的波动区间进行比较（事实 baseline.window、baseline.compare）。"
     limitation: "仅描述应用的运作方式；不能作为任何健康主张的证据。"
 ---
 

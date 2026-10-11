@@ -1,5 +1,5 @@
 ---
-sourceHash: e9bb7788219f
+sourceHash: 6252dd3faeef
 title: "HRV e frequência cardíaca durante o sono: por que a noite é a melhor janela"
 metaTitle: "HRV e frequência cardíaca durante o sono"
 metaDescription: "O que acontece com a frequência cardíaca e a HRV ao longo da noite e dos estágios do sono, por que as medições noturnas são as mais estáveis e o que os wearables podem ou não dizer."
@@ -57,7 +57,7 @@ evidenceMap:
     limitation: "Estudos heterogêneos e, em sua maioria, com alto risco de viés; nenhuma metanálise foi possível."
   - claim: "A apneia do sono é diagnosticada por polissonografia ou por um teste domiciliar de apneia do sono tecnicamente adequado, não apenas por questionários ou ferramentas de predição."
     limitation: "Diretriz de prática clínica para adultos; não avalia wearables de consumo."
-  - claim: "O ONDA constrói sua linha de base a partir dos valores do Apple Health e compara cada noite com a faixa pessoal do usuário."
+  - claim: "O ONDA constrói sua linha de base a partir dos valores do Apple Health e compara o dia de dados mais recente com a faixa pessoal do usuário."
     limitation: "Descreve apenas o comportamento do app; não é evidência de nenhuma alegação de saúde."
 ---
 

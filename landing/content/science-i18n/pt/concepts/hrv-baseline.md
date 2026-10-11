@@ -1,5 +1,5 @@
 ---
-sourceHash: "55f2a6818cc5"
+sourceHash: "3c391a42bca8"
 title: "Linha de base da HRV: por que o seu próprio normal importa mais do que qualquer norma"
 metaTitle: "Linha de base da HRV: o seu normal, não uma norma"
 metaDescription: "Sua linha de base da HRV é a sua faixa típica, não uma média populacional: por que supera as normas por idade, como o ONDA a constrói e o que uma mudança indica."
@@ -15,7 +15,7 @@ shortAnswer: >
 keyPoints:
   - "A linha de base da HRV é o seu próprio nível típico de HRV e a dispersão normal em torno dele, construídos a partir de muitas leituras — nunca de uma só."
   - "Pessoas da mesma idade diferem tanto, e dispositivos e métricas variam tanto, que comparar a sua HRV com a de outra pessoa quase não tem sentido."
-  - "O ONDA constrói a linha de base a partir de uma janela de várias noites das suas próprias leituras e compara cada noite com a sua faixa pessoal."
+  - "O ONDA constrói a linha de base a partir de uma janela de vários dias das suas próprias leituras e compara o seu dia de dados mais recente com a sua faixa pessoal."
   - "Uma leitura fora da faixa costuma ser ruído; o que merece atenção é uma mudança sustentada ao longo de dias ou semanas."
   - "Condições de medição instáveis, uma doença, uma mudança no treino, um novo dispositivo ou outra métrica podem mover as leituras ou invalidar a linha de base."
   - "Sair da faixa não significa que você esteja estressado ou doente, e permanecer dentro dela não garante saúde."
@@ -90,9 +90,9 @@ A métrica precisa ficar fixa. O RMSSD e o SDNN resumem aspectos diferentes do r
 
 ## O que mostram as evidências?
 
-**Estabelecido.** Adultos saudáveis diferem enormemente na HRV, e não existem valores normativos consensuais para as medidas de curta duração [S3]. Em média, o valor cai com a idade, enquanto os indivíduos variam muito em qualquer idade [S2]. Valores de dispositivos, métricas e condições de registro diferentes não são intercambiáveis [S6, S7], e registros de durações diferentes não podem ser comparados diretamente [S5]. Uma linha de base pessoal precisa de muitas leituras; registros isolados não a estabelecem [S10].
+**Estabelecido.** Adultos saudáveis diferem enormemente na HRV, e não existem valores normativos consensuais para as medidas de curta duração [S3]. Em média, o valor cai com a idade, enquanto os indivíduos variam muito em qualquer idade [S2]. Valores de dispositivos, métricas e condições de registro diferentes não são intercambiáveis [S6, S7], e registros de durações diferentes não podem ser comparados diretamente [S5].
 
-**Depende do contexto.** A prática específica de monitoramento com médias semanais móveis e coeficiente de variação vem da ciência do esporte, em que um valor mais baixo que o de um colega não indica necessariamente um estado fisiológico pior [S10]. A PPG de pulso acompanha os valores derivados do ECG em condições controladas de repouso [S8]. A variação sazonal, quando relatada, é fraca [S11]. E, como os achados de HRV são fáceis de superinterpretar, as revisões metodológicas alertam contra tirar conclusões demais deles [S4].
+**Depende do contexto.** Uma linha de base pessoal precisa de muitas leituras; registros isolados não a estabelecem [S10]. A prática específica de monitoramento com médias semanais móveis e coeficiente de variação vem da ciência do esporte, em que um valor mais baixo que o de um colega não indica necessariamente um estado fisiológico pior [S10]. A PPG de pulso acompanha os valores derivados do ECG em condições controladas de repouso [S8]. A variação sazonal, quando relatada, é fraca [S11]. E, como os achados de HRV são fáceis de superinterpretar, as revisões metodológicas alertam contra tirar conclusões demais deles [S4].
 
 **Em debate.** A janela exata que uma linha de base deve usar é uma escolha prática, não uma constante científica: os protocolos de pesquisa diferem da lógica de um app. As janelas do ONDA são lógica do app — documentadas abaixo, definidas uma única vez e não um consenso da área [S9].
 
@@ -107,7 +107,7 @@ A interpretação é realmente difícil — uma revisão de métodos alerta que 
 O ONDA constrói a linha de base exatamente como esta página descreve, e as janelas são definidas uma única vez, aqui:
 
 - **A janela da linha de base.** A linha de base pessoal da HRV, da frequência cardíaca de repouso e da frequência respiratória é construída ao longo de {{fact:baseline.window}} das suas próprias leituras.
-- **O mínimo.** São necessárias pelo menos {{fact:baseline.minNights}} com dados válidos antes que qualquer sinal seja lido.
+- **O mínimo.** São necessários pelo menos {{fact:baseline.minNights}} antes que qualquer sinal seja lido.
 - **A comparação:** {{fact:baseline.compare}}.
 - **A janela da faixa.** A faixa do semáforo é calculada ao longo de {{fact:baseline.corridor}}.
 - **A métrica.** A linha de base lê os valores de HRV armazenados no Apple Health — vindos do Apple Watch ou de outro dispositivo que sincronize os dados cardíacos lá [S9] —, e {{fact:applewatch.hrv.healthkit}}.

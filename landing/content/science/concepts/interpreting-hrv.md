@@ -272,7 +272,7 @@ evidenceMap:
     limitation: "App store content analysis of English-language apps at one point in time; scores change with updates."
   - claim: "Many smartwatch outputs, including readiness scores, are algorithmic estimates rather than direct physiological measurements; their validity varies by device and algorithm."
     sources: [S13]
-    class: established
+    class: context-dependent
     claimType: device
     quote: "many user-facing outputs are not direct physiological measurements, but estimates generated from sensor signals, proprietary algorithms, user characteristics, and contextual assumptions"
     limitation: "Narrative review; does not evaluate any single product."

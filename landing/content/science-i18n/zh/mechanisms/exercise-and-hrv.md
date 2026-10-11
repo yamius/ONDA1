@@ -1,5 +1,5 @@
 ---
-sourceHash: 385cb2c6ee15
+sourceHash: faaa9b748d00
 title: "运动与 HRV：训练带来什么变化，HRV 指导训练又显示了什么"
 metaTitle: "运动与 HRV：HRV 指导训练的证据"
 metaDescription: "为什么高强度训练后 HRV 会下降又恢复、需要多长时间，以及与固定训练计划相比，HRV 指导训练的研究显示了什么。"
@@ -46,7 +46,7 @@ evidenceMap:
     limitation: "小型试验的次要结局；当主要结局没有差异时，不能据此得出结论。"
   - claim: "许多实验、人口学和环境因素会影响 HRV 评估，因此应在可比的条件下比较读数。"
     limitation: "研究严谨性指南；属于专家共识，而非关于训练决策的直接证据。"
-  - claim: "ONDA 根据 Apple Health 中的数值建立基线，并将每晚与用户自己的波动区间进行比较（事实 baseline.window、baseline.compare）。"
+  - claim: "ONDA 根据 Apple Health 中的数值建立基线，并将最近一天的数据与用户自己的波动区间进行比较（事实 baseline.window、baseline.compare）。"
     limitation: "仅描述应用的功能；不构成任何健康或训练相关说法的证据。"
   - claim: "一项针对耐力训练运动员的荟萃分析显示，带来成绩提升的训练伴随静息和运动后与迷走神经相关的 HRV 以及心率恢复的上升（事实 study.bellenger2016.studies、study.bellenger2016.restingRmssd）。"
     limitation: "仅限耐力训练运动员；合并的是小型研究；频域指标仅限 HF 功率；为组平均值，而非个人检测。"
@@ -133,6 +133,6 @@ evidenceMap:
 
 ## 在 ONDA 中
 
-ONDA 根据存储在 Apple Health 中的数值建立个人基线，这些数据来自 Apple Watch 或其他把心脏数据同步到那里的设备 [S5]。时间窗口为 {{fact:baseline.window}}，{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}，因此 ONDA 的 HRV 趋势是 SDNN 趋势。ONDA 显示你的夜间数值与你自身范围的对比；它不制定也不调整训练，不会告诉你何时该高强度训练，也不诊断任何疾病。
+ONDA 根据存储在 Apple Health 中的数值建立个人基线，这些数据来自 Apple Watch 或其他把心脏数据同步到那里的设备 [S5]。时间窗口为 {{fact:baseline.window}}，{{fact:baseline.compare}}。{{fact:applewatch.hrv.healthkit}}，因此 ONDA 的 HRV 趋势是 SDNN 趋势。ONDA 显示你最近的数值与你自身范围的对比；它不制定也不调整训练，不会告诉你何时该高强度训练，也不诊断任何疾病。
 
 > 本文为科普信息，不构成诊断或医学治疗。

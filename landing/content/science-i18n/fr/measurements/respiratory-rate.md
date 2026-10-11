@@ -1,5 +1,5 @@
 ---
-sourceHash: 94f41b941e62
+sourceHash: 3e2d8ad38a9d
 title: "Fréquence respiratoire au repos : ce qu’elle reflète et comment la mesurer"
 metaTitle: "Fréquence respiratoire : sens et mesure"
 metaDescription: "Nombre de respirations par minute au repos : comment le mesurer, ce qui le fait varier, et pourquoi votre tendance nocturne vaut mieux qu’un chiffre isolé."
@@ -47,7 +47,7 @@ evidenceMap:
     limitation: "Une seule étude rétrospective sur une seule marque d’objet connecté, chez des personnes qui avaient déjà des symptômes ; petits groupes de validation ; plusieurs auteurs employés ou financés par le fabricant. Ce n’est pas un test diagnostique."
   - claim: "Dans un large échantillon auto-sélectionné d’utilisateurs d’objets connectés atteints du COVID, la fréquence respiratoire et la fréquence cardiaque étaient généralement élevées sous l’effet de la maladie, tandis que la HRV baissait."
     limitation: "Une seule étude observationnelle portant sur les utilisateurs d’un seul fabricant, avec des diagnostics déclarés par les participants ; tous les auteurs financés par le fabricant. Ce n’est pas un test diagnostique."
-  - claim: "ONDA lit la fréquence respiratoire dans Apple Health comme l’un des trois signaux de la référence personnelle, compare les nuits à un couloir personnel établi sur la fenêtre de référence et à des seuils minimaux, et ne pose aucun diagnostic."
+  - claim: "ONDA lit la fréquence respiratoire dans Apple Health comme l’un des trois signaux de la référence personnelle, compare les jours de données à un couloir personnel établi sur la fenêtre de référence et à des seuils minimaux, et ne pose aucun diagnostic."
     limitation: "Décrit uniquement le comportement de l’application ; ce n’est une preuve ni d’une affirmation de santé ni de la précision des valeurs."
 ---
 
@@ -113,6 +113,6 @@ Aucune de ces deux études n’est un test diagnostique validé. Toutes deux von
 
 ## Dans ONDA
 
-La fréquence respiratoire est l’un des trois signaux de la référence personnelle d’ONDA, avec la fréquence cardiaque au repos et la HRV. ONDA la lit dans Apple Health — où l’inscrit l’Apple Watch ou tout appareil dont l’application l’y synchronise — et construit votre référence personnelle sur {{fact:baseline.window}}. L’application compare chaque nuit à votre propre couloir, jamais à une norme de population, et ne signale un changement que s’il dépasse aussi des seuils minimaux : {{fact:baseline.floors}}. ONDA ne calcule pas elle-même la fréquence respiratoire nocturne, ne revendique aucune précision pour cette valeur et ne pose aucun diagnostic [S14]. Pour aller plus loin, voir [votre fréquence respiratoire : le chiffre de la nuit](/articles/respiratory-rate-hidden-signal) et [ce que mesure ONDA](/measurements).
+La fréquence respiratoire est l’un des trois signaux de la référence personnelle d’ONDA, avec la fréquence cardiaque au repos et la HRV. ONDA la lit dans Apple Health — où l’inscrit l’Apple Watch ou tout appareil dont l’application l’y synchronise — et construit votre référence personnelle sur {{fact:baseline.window}}. L’application compare votre dernier jour de données à votre propre couloir, jamais à une norme de population, et ne signale un changement que s’il dépasse aussi des seuils minimaux : {{fact:baseline.floors}}. ONDA ne calcule pas elle-même la fréquence respiratoire nocturne, ne revendique aucune précision pour cette valeur et ne pose aucun diagnostic [S14]. Pour aller plus loin, voir [votre fréquence respiratoire : le chiffre de la nuit](/articles/respiratory-rate-hidden-signal) et [ce que mesure ONDA](/measurements).
 
 > Information éducative, pas un diagnostic ni un traitement médical.

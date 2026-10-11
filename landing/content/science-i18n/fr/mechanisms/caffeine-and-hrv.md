@@ -1,5 +1,5 @@
 ---
-sourceHash: d38842ecad3c
+sourceHash: 79cf13031244
 title: "Caféine et HRV : ce que le café fait et ne fait pas"
 metaTitle: "Caféine et HRV : le café fait-il baisser votre HRV ?"
 metaDescription: "Café et HRV au repos et après l’effort : ce que montre la recherche, en quoi les boissons énergisantes diffèrent, et le rôle de la caféine tardive."
@@ -47,7 +47,7 @@ evidenceMap:
     limitation: "Le même petit essai unique ; suivi de quatre heures ; volontaires en bonne santé."
   - claim: "La caféine le soir perturbe le sommeil, et une forte dose avant le coucher a modifié des mesures cardiaques battement par battement pendant le sommeil paradoxal dans une petite étude."
     limitation: "Énoncé de contexte d’une petite étude en laboratoire du sommeil avec une forte dose unique peu avant le coucher ; mesures spectrales uniquement."
-  - claim: "ONDA construit sa référence à partir des valeurs d’Apple Health et compare chaque nuit au couloir propre de l’utilisateur (faits baseline.window, baseline.compare)."
+  - claim: "ONDA construit sa référence à partir des valeurs d’Apple Health et compare le dernier jour de données au couloir propre de l’utilisateur (faits baseline.window, baseline.compare)."
     limitation: "Décrit uniquement le comportement de l’application ; ne constitue une preuve d’aucune affirmation de santé."
 ---
 

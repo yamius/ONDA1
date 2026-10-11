@@ -223,7 +223,7 @@ evidenceMap:
     limitation: "Case review from one US state; small number of cases."
   - claim: "Breath-hold diving deaths are concentrated in divers who fall victim to hypoxia, and hyperventilation is among the mechanisms of loss of consciousness."
     sources: [S9]
-    class: established
+    class: context-dependent
     claimType: safety
     quote: "Mortality connected with breath-hold diving is primarily concentrated to less well-trained recreational divers and competitive spearfishermen who fall victim to hypoxia."
     limitation: "Narrative review of diving physiology."

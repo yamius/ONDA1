@@ -1,19 +1,19 @@
 ---
-sourceHash: eea148772b58
+sourceHash: 507e4dc4d425
 title: "Hoe ONDA de signalen van je lichaam meet en interpreteert"
 metaTitle: "Hoe ONDA je lichaamssignalen meet en leest"
 metaDescription: "Waar ONDA zijn gegevens vandaan haalt, hoe het je baseline en signalen opbouwt, wat op je telefoon blijft en waar de grenzen van elk getal liggen."
 shortAnswer: >
   ONDA leest hartslagvariabiliteit, rusthartslag en ademfrequentie uit Apple
   Health en kan met de iPhone-camera je pols via je vingertop meten. Uit je eigen
-  nachten bouwt het een persoonlijke bandbreedte op, en het wijst op nachten die
+  dagen met gegevens bouwt het een persoonlijke bandbreedte op, en het wijst op dagen die
   er duidelijk buiten vallen. Dat zijn beschrijvende vergelijkingen, geen
   diagnose. ONDA heeft zelf geen onderzoek naar nauwkeurigheid of werkzaamheid
   gedaan, en zijn getallen zijn maar zo goed als het apparaat dat ze vastlegde.
 keyPoints:
   - "ONDA leest hartslagvariabiliteit als SDNN, rusthartslag en ademfrequentie uit Apple Health, vastgelegd door de Apple Watch of een ander apparaat dat daarheen synchroniseert; het leest alleen en schrijft nooit iets weg."
   - "De iPhone-camera geeft een polsmeting en een schatting van de ademhaling, geen hartslagvariabiliteit, en de live coherentiescore werkt niet met de camera."
-  - "Je baseline en signalen vergelijken je met je eigen recente nachten, nooit met een bevolkingsnorm, en ze blijven stil tot er genoeg nachten zijn."
+  - "Je baseline en signalen vergelijken je met je eigen recente dagen met gegevens, nooit met een bevolkingsnorm, en ze blijven stil tot er genoeg dagen met gegevens zijn."
   - "Voor een signaal is een grote verandering nodig, gemeten in je eigen spreiding, plus een minimale absolute of relatieve verandering, zodat kleine schommelingen worden genegeerd."
   - "De baseline, de signalen en de rapporten worden op je telefoon berekend. Vanaf versie 1.9.3 blijft je oefenvoortgang zonder account op het apparaat en wordt ze pas gesynchroniseerd nadat je inlogt, en het dagboek blijft alleen op het apparaat."
   - "ONDA is geen medisch hulpmiddel, heeft geen eigen gepubliceerd onderzoek naar nauwkeurigheid of nut en stelt geen enkele diagnose."
@@ -23,7 +23,7 @@ evidenceMap:
     limitation: "Beschrijft alleen het gedrag van de app; ONDA berekent SDNN niet zelf en kan niet nagaan hoe het meetapparaat te werk ging."
   - claim: "De iPhone-camera geeft een rustpols en een schatting van de ademhaling; hartslagvariabiliteit verschijnt pas als een horloge of andere tracker die naar Apple Health schrijft."
     limitation: "Beschrijft alleen het gedrag van de app; geen validatie van de camerameting."
-  - claim: "ONDA bouwt een persoonlijke baseline op, vergelijkt nachten met een persoonlijke bandbreedte, wacht op genoeg nachten en vereist minimale veranderingen; het verkeerslicht gebruikt een langere bandbreedte."
+  - claim: "ONDA bouwt een persoonlijke baseline op, vergelijkt dagen met gegevens met een persoonlijke bandbreedte, wacht op genoeg dagen met gegevens en vereist minimale veranderingen; het verkeerslicht gebruikt een langere bandbreedte."
     limitation: "Productdocumentatie; de drempels zijn ontwerpkeuzes van ONDA, geen klinisch gevalideerde grenswaarden."
   - claim: "ONDA is geen medisch hulpmiddel en stelt geen diagnose van en bewaakt geen enkele aandoening."
     limitation: "Afbakening van het product; geen regelgevende classificatie door een instantie."
@@ -37,7 +37,7 @@ evidenceMap:
 
 ## Wat is de methode van ONDA?
 
-ONDA is een app voor ademhaling en biofeedback. Het leest signalen die andere apparaten al hebben vastgelegd, vergelijkt ze met je eigen geschiedenis en laat zien waar een nacht staat. Deze pagina beschrijft die methode zoals ze in de app is geprogrammeerd, inclusief waar ze ophoudt. Het is een beschrijving van een product, geen wetenschappelijke bevinding, en elke regel hieronder is een ontwerpkeuze, geen gevalideerde klinische drempel.
+ONDA is een app voor ademhaling en biofeedback. Het leest signalen die andere apparaten al hebben vastgelegd, vergelijkt ze met je eigen geschiedenis en laat zien waar je laatste dag staat. Deze pagina beschrijft die methode zoals ze in de app is geprogrammeerd, inclusief waar ze ophoudt. Het is een beschrijving van een product, geen wetenschappelijke bevinding, en elke regel hieronder is een ontwerpkeuze, geen gevalideerde klinische drempel.
 
 ## Waar komen de gegevens vandaan?
 
@@ -49,17 +49,17 @@ ONDA is een app voor ademhaling en biofeedback. Het leest signalen die andere ap
 
 ## Hoe wordt je baseline opgebouwd?
 
-De baseline is het bereik waarin je eigen lichaam zich gewoonlijk bevindt. ONDA bouwt haar op over {{fact:baseline.window}} aan waarden uit Apple Health [S1, S4]. Vanaf versie 1.9.3 toont de HRV-grafiek dat hele venster zodra je toegang tot Apple Health geeft, in plaats van zich nacht voor nacht te vullen. Nachten met te weinig metingen vallen weg voordat er iets wordt berekend, en HRV wordt alleen uit nachtelijke metingen genomen.
+De baseline is het bereik waarin je eigen lichaam zich gewoonlijk bevindt. ONDA bouwt haar op over {{fact:baseline.window}} aan waarden uit Apple Health [S1, S4]. Vanaf versie 1.9.3 toont de HRV-grafiek dat hele venster zodra je toegang tot Apple Health geeft, in plaats van zich dag voor dag te vullen. Dagen met te weinig metingen vallen weg voordat er iets wordt berekend, en voor signalen wordt HRV alleen uit {{fact:onda.signal.hrvWindow}} genomen.
 
 Voor signalen geldt: {{fact:baseline.compare}} [S1]. ONDA blijft stil tot er minstens {{fact:baseline.minNights}} zijn, dus in de eerste weken zie je een baseline die nog wordt opgebouwd, geen oordeel. De minimale veranderingen die het vereist, zijn: {{fact:baseline.floors}}.
 
-In de eenvoudige modus stuurt dezelfde regel een verkeerslicht aan. De bandbreedte daarvan wordt berekend over {{fact:baseline.corridor}}, zodat een paar ongewone nachten haar nauwelijks verschuiven. Groen betekent dat elk signaal binnen je bandbreedte valt; geel betekent één nacht erbuiten; rood betekent twee of meer nachten op rij erbuiten. Deze kleuren beschrijven de afstand tot je eigen geschiedenis. Ze geven geen cijfer voor je gezondheid. Hoe je zulke vergelijkingen leest, staat op [je HRV-baseline](/science/concepts/hrv-baseline) en [HRV interpreteren](/science/concepts/interpreting-hrv).
+In de eenvoudige modus stuurt dezelfde regel een verkeerslicht aan. De bandbreedte daarvan wordt berekend over {{fact:baseline.corridor}}, zodat een paar ongewone dagen haar nauwelijks verschuiven. Groen betekent dat elk signaal binnen je bandbreedte valt; geel betekent één dag erbuiten; rood betekent twee of meer dagen op rij erbuiten. Deze kleuren beschrijven de afstand tot je eigen geschiedenis. Ze geven geen cijfer voor je gezondheid. Hoe je zulke vergelijkingen leest, staat op [je HRV-baseline](/science/concepts/hrv-baseline) en [HRV interpreteren](/science/concepts/interpreting-hrv).
 
 ## Wanneer toont ONDA een signaal?
 
-Een signaal verschijnt als afgelopen nacht je rusthartslag steeg, je HRV daalde of je ademfrequentie steeg, voorbij zowel de drempel van de spreiding als de minimale verandering die hierboven is beschreven. Bewogen er meerdere signalen, dan toont ONDA alleen het grootste. Je krijgt {{fact:onda.signal.cadence}}, en de melding bevat geen getallen; die staan in de app.
+Een signaal verschijnt als op je laatste dag met gegevens je rusthartslag steeg, je HRV daalde of je ademfrequentie steeg, voorbij zowel de drempel van de spreiding als de minimale verandering die hierboven is beschreven. Bewogen er meerdere signalen, dan toont ONDA alleen het grootste. Je krijgt {{fact:onda.signal.cadence}}, en de melding bevat geen getallen; die staan in de app.
 
-Blijven je nachten binnen de bandbreedte, dan stuurt ONDA in plaats daarvan {{fact:onda.checkin.steadyCadence}} — {{fact:onda.checkin.dailyCap}}. Zonder gegevens van een horloge komen ze {{fact:onda.checkin.noWatchCadence}}. Rustige berichten kun je uitzetten in de instellingen.
+Blijven je waarden binnen de bandbreedte, dan stuurt ONDA in plaats daarvan {{fact:onda.checkin.steadyCadence}} — {{fact:onda.checkin.dailyCap}}. Zonder gegevens van een horloge komen ze {{fact:onda.checkin.noWatchCadence}}. Rustige berichten kun je uitzetten in de instellingen.
 
 Nachtelijke waarden bewegen om gewone redenen, zoals alcohol, een late maaltijd, training, reizen of een korte nacht; daarom wordt één nacht nooit als oordeel gelezen. Zie [waarom HRV van dag tot dag verandert](/science/mechanisms/hrv-day-to-day). Specifiek over alcohol, zie [alcohol en HRV](/science/mechanisms/alcohol-and-hrv).
 

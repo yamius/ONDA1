@@ -1,5 +1,5 @@
 ---
-sourceHash: 477ca0c9b233
+sourceHash: f70effe83d62
 title: "Warum sich die HRV von Tag zu Tag verändert"
 metaTitle: "Warum die HRV täglich schwankt: Ursachen und Evidenz"
 metaDescription: "Warum die Herzfrequenzvariabilität von Tag zu Tag schwankt: Rauschen, Schlaf, Alkohol, Training, Krankheit, Stress und Zyklus – Mechanismen und Evidenz."
@@ -74,7 +74,7 @@ evidenceMap:
     limitation: "Zwölf kraftsporttrainierte Männer rund um eine einzelne Trainingseinheit; normalisierte spektrale Einheiten."
   - claim: "Der Vagustonus lässt sich nicht direkt messen; HRV-Maße wie RMSSD spiegeln vagal vermittelte Veränderungen der Herzfrequenz wider."
     limitation: "Definition; sie beziffert keine vagale Aktivität."
-  - claim: "ONDA vergleicht jede Nacht mit dem eigenen Baseline-Korridor der Nutzerin oder des Nutzers und liest die HRV (SDNN) aus Apple Health."
+  - claim: "ONDA vergleicht den letzten Tag mit Daten mit dem eigenen Baseline-Korridor der Nutzerin oder des Nutzers und liest die HRV (SDNN) aus Apple Health."
     limitation: "Produktdokumentation; beschreibt nur das Verhalten der App."
 ---
 

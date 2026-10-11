@@ -1,5 +1,5 @@
 ---
-sourceHash: 02e01673e8d2
+sourceHash: 0a5bb76126f6
 title: "Wysokość a HRV: co się zmienia i czego nie da się przewidzieć"
 metaTitle: "Wysokość a HRV: co pokazują badania"
 metaDescription: "Jak duża wysokość zmienia zmienność rytmu serca, czy HRV może przewidzieć chorobę wysokościową i dlaczego o zejściu decydują objawy, a nie zegarek."
@@ -18,7 +18,7 @@ keyPoints:
   - "W jednym małym badaniu na bardzo dużej wysokości związany z oddechem udział rytmu serca nie wrócił do wzorca z poziomu morza nawet po długim pobycie."
   - "Czujnik tętna na palcu rejestrował zmienność rytmu serca nawet na ekstremalnej wysokości, ale jego szybkie, związane z oddechem składowe odbiegały od EKG."
   - "Zmienność rytmu serca i zegarki nie zastępują sprawdzania objawów choroby wysokościowej; przy objawach zejdź niżej i szukaj pomocy medycznej."
-  - "Z Apple Watch lub danymi o sercu w Apple Health ONDA porównuje Twoje noce z Twoją własną linią bazową; nie ocenia choroby wysokościowej ani przed nią nie ostrzega."
+  - "Z Apple Watch lub danymi o sercu w Apple Health ONDA porównuje Twoje ostatnie dane z Twoją własną linią bazową; nie ocenia choroby wysokościowej ani przed nią nie ostrzega."
 imageAlt: "Cienka turkusowa linia rytmu serca na granatowym tle wspina się po zboczu w kształcie góry; przy szczycie uderzenia zagęszczają się wśród bladych kropek, a potem uspokajają."
 evidenceMap:
   - claim: "W metaanalizie zdrowych dorosłych w pierwszych dniach na dużej wysokości (fakty altitude.li.studies, altitude.li.scope) SDNN, RMSSD, moc wysokiej częstotliwości i pokrewne miary HRV były niższe niż na poziomie morza."
@@ -212,6 +212,6 @@ Z dala od gór częste przyczyny niskiego odczytu opisuje strona [dlaczego moje 
 
 ## W ONDA
 
-ONDA opiera się na praktyce, a nie na śledzeniu: oferuje prowadzone praktyki oddechowe z instrukcjami głosowymi i wizualnymi, a {{fact:onda.practice.livePulse}}. Z Apple Watch lub urządzeniem, które synchronizuje dane o sercu z Apple Health, porównuje Twoje HRV, tętno spoczynkowe i częstość oddechu z Twoją własną linią bazową z {{fact:baseline.window}}. {{fact:applewatch.hrv.healthkit}}, więc trend HRV w ONDA to trend SDNN. W pierwszych dniach po przyjeździe na wysokość ta linia bazowa wciąż odzwierciedla Twoje noce w domu, więc sygnał oznacza wtedy, że Twoje noce różnią się od tych w domu, co na wysokości jest spodziewane, a nie że zaczyna się u Ciebie choroba wysokościowa. Ponieważ linia bazowa z {{fact:baseline.window}} jest krocząca, stopniowo obejmuje noce na wysokości, więc punkt odniesienia zmienia się w trakcie pobytu. ONDA nie ocenia choroby wysokościowej ani przed nią nie ostrzega, nie diagnozuje żadnych schorzeń i nie zastępuje lekarza; badania na tej stronie nie testowały ONDA. Zobacz [co mierzy ONDA](/measurements).
+ONDA opiera się na praktyce, a nie na śledzeniu: oferuje prowadzone praktyki oddechowe z instrukcjami głosowymi i wizualnymi, a {{fact:onda.practice.livePulse}}. Z Apple Watch lub urządzeniem, które synchronizuje dane o sercu z Apple Health, porównuje Twoje HRV, tętno spoczynkowe i częstość oddechu z Twoją własną linią bazową z {{fact:baseline.window}}. {{fact:applewatch.hrv.healthkit}}, więc trend HRV w ONDA to trend SDNN. W pierwszych dniach po przyjeździe na wysokość ta linia bazowa wciąż odzwierciedla Twoje dane z domu, więc sygnał oznacza wtedy, że Twoje ostatnie wartości różnią się od tych z domu, co na wysokości jest spodziewane, a nie że zaczyna się u Ciebie choroba wysokościowa. Ponieważ linia bazowa z {{fact:baseline.window}} jest krocząca, stopniowo obejmuje dni na wysokości, więc punkt odniesienia zmienia się w trakcie pobytu. ONDA nie ocenia choroby wysokościowej ani przed nią nie ostrzega, nie diagnozuje żadnych schorzeń i nie zastępuje lekarza; badania na tej stronie nie testowały ONDA. Zobacz [co mierzy ONDA](/measurements).
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

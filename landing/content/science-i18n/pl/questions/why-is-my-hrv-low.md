@@ -1,5 +1,5 @@
 ---
-sourceHash: ab58f7477955
+sourceHash: a4a0bc06b042
 title: "Dlaczego mam niskie HRV? Najczęstsze przyczyny i co pokazują badania"
 metaTitle: "Niskie HRV: przyczyny i co oznaczają"
 metaDescription: "Dlaczego HRV jest niskie? Najczęściej to reakcja na sen, alkohol, infekcję, stres lub trening, a nie diagnoza. Każda przyczyna z dowodami i kiedy iść do lekarza."
@@ -18,7 +18,7 @@ keyPoints:
   - "Przy krótkim śnie zmierzony spadek jest niewielki, przy długotrwałym stresie i pracy zmianowej dowody są niejednoznaczne, a u osób regularnie pijących kawę umiarkowana ilość kofeiny nie zmieniała spoczynkowego HRV."
   - "Wiek obniża HRV średnio na przestrzeni dziesięcioleci, ale nie wyjaśnia spadku z tygodnia na tydzień."
   - "Kilka dni poniżej zwykłego zakresu, wyższe tętno spoczynkowe i złe samopoczucie to powód do odpoczynku. Wezwij pogotowie, jeśli występuje: ból lub ucisk w klatce piersiowej; omdlenie lub uczucie bliskiego omdlenia; silna duszność; szybkie, mocne lub nieregularne bicie serca, które nie uspokaja się w spoczynku (także z zawrotami głowy); nagła dezorientacja (trudność z jasnym myśleniem), osłabienie jednej strony ciała, trudności z mówieniem."
-  - "ONDA porównuje Twoje noce z Twoją własną linią bazową, ale nie mówi, co spowodowało zmianę, i nie stawia diagnozy."
+  - "ONDA porównuje Twoje ostatnie dane z Twoją własną linią bazową, ale nie mówi, co spowodowało zmianę, i nie stawia diagnozy."
 imageAlt: "Cienka turkusowa linia bicia serca na ciemnogranatowym tle, otoczona małymi świecącymi beżowymi ikonami: księżycem, kieliszkiem, termometrem, butem do biegania, górą, filiżanką kawy i chmurami."
 faq:
   - q: "Czy niskie HRV jest groźne?"
@@ -214,6 +214,6 @@ Wolne oddychanie możesz ćwiczyć w każdej chwili. {{fact:claim.slowExhale}}. 
 
 ## W ONDA
 
-ONDA koncentruje się na praktyce, a nie na śledzeniu. Z Apple Watch lub urządzeniem, które synchronizuje dane o pracy serca z Apple Health, odczytuje Twoje HRV i tętno spoczynkowe z Apple Health [S36] i buduje Twoją własną linię bazową przez {{fact:baseline.window}}, a sygnały odczytuje dopiero wtedy, gdy zebrane jest co najmniej {{fact:baseline.minNights}}. {{fact:baseline.compare}}: {{fact:baseline.floors}}, przy czym wysyła {{fact:onda.signal.cadence}}. Linia bazowa korzysta z wartości HRV zapisywanej przez Apple Health ({{fact:applewatch.hrv.healthkit}}; {{fact:applewatch.hrv.variants2026}}). Taki sygnał jest opisowy: mówi, że noc wykracza poza Twój własny zakres, a nie dlaczego [S36]. ONDA nie ustala, jaka przyczyna stoi za zmianą. Do praktyki ONDA oferuje prowadzone oddychanie z instrukcjami głosowymi i wizualnymi, bez liczbowego metronomu. {{fact:onda.practice.livePulse}}. ONDA nie ma własnego badania skuteczności, nie diagnozuje żadnej choroby i nie zastępuje lekarza. Zobacz [co mierzy ONDA](/measurements).
+ONDA koncentruje się na praktyce, a nie na śledzeniu. Z Apple Watch lub urządzeniem, które synchronizuje dane o pracy serca z Apple Health, odczytuje Twoje HRV i tętno spoczynkowe z Apple Health [S36] i buduje Twoją własną linię bazową przez {{fact:baseline.window}}, a sygnały odczytuje dopiero wtedy, gdy zebrane jest co najmniej {{fact:baseline.minNights}}. {{fact:baseline.compare}}: {{fact:baseline.floors}}, przy czym wysyła {{fact:onda.signal.cadence}}. Linia bazowa korzysta z wartości HRV zapisywanej przez Apple Health ({{fact:applewatch.hrv.healthkit}}; {{fact:applewatch.hrv.variants2026}}). Taki sygnał jest opisowy: mówi, że Twoje ostatnie wartości wykraczają poza Twój własny zakres, a nie dlaczego [S36]. ONDA nie ustala, jaka przyczyna stoi za zmianą. Do praktyki ONDA oferuje prowadzone oddychanie z instrukcjami głosowymi i wizualnymi, bez liczbowego metronomu. {{fact:onda.practice.livePulse}}. ONDA nie ma własnego badania skuteczności, nie diagnozuje żadnej choroby i nie zastępuje lekarza. Zobacz [co mierzy ONDA](/measurements).
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

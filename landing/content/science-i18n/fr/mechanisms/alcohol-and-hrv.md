@@ -1,5 +1,5 @@
 ---
-sourceHash: 9e29577a7288
+sourceHash: 93c36ac07742
 title: "Alcool et HRV : ce qu’un verre fait à votre nuit"
 metaTitle: "Alcool et HRV : la nuit après avoir bu"
 metaDescription: "Pourquoi la HRV nocturne baisse et la fréquence cardiaque au repos augmente après avoir bu, quel rôle jouent la dose et le moment, et ce que la recherche ne sait pas encore sur l’alcool."
@@ -48,7 +48,7 @@ evidenceMap:
     limitation: "Mise en garde des auteurs ; reprend la limite."
   - claim: "Une revue narrative conclut que l’alcoolisation massive aiguë et la forte consommation chronique nuisent à la fréquence cardiaque et à la fonction autonome, tandis que les résultats sur une consommation légère à modérée sont contrastés."
     limitation: "Revue narrative, pas une revue systématique ni une méta-analyse ; couvre les critères cardiaques en général, pas spécifiquement la HRV."
-  - claim: "ONDA construit sa référence à partir des valeurs d’Apple Health et compare chaque nuit au couloir propre de l’utilisateur (faits baseline.window, baseline.compare)."
+  - claim: "ONDA construit sa référence à partir des valeurs d’Apple Health et compare le dernier jour de données au couloir propre de l’utilisateur (faits baseline.window, baseline.compare)."
     limitation: "Décrit uniquement le fonctionnement de l’application ; n’est la preuve d’aucune affirmation de santé."
 ---
 

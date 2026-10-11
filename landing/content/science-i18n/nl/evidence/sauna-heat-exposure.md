@@ -1,5 +1,5 @@
 ---
-sourceHash: "6a056afa89f5"
+sourceHash: "7b165f2bc469"
 title: "Sauna en warmteblootstelling: wat het onderzoek laat zien"
 metaTitle: "Sauna en warmte: onderzoek en risico’s"
 metaDescription: "Finse sauna, infraroodcabines, hete baden en klinische warmtetherapie: wat studies laten zien voor hart, bloeddruk en stemming, en wat de echte risico’s zijn."

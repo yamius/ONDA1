@@ -7,14 +7,14 @@ metaDescription: "Where ONDA gets its data, how it builds your personal baseline
 shortAnswer: >
   ONDA reads heart rate variability, resting heart rate and breathing rate from
   Apple Health, and can take a fingertip pulse with the iPhone camera. It builds
-  a personal corridor from your own nights and points out nights that fall well
+  a personal corridor from your own days of data and points out days that fall well
   outside it. These are descriptive comparisons, not a diagnosis. ONDA has run
   no accuracy or efficacy study of its own, and its numbers are only as good as
   the device that recorded them.
 keyPoints:
   - "ONDA reads heart rate variability as SDNN, resting heart rate and breathing rate from Apple Health, written by Apple Watch or another device that syncs there; it only reads, never writes."
   - "The iPhone camera gives a pulse reading and a breathing estimate, not heart rate variability, and the live coherence score does not work on the camera."
-  - "Your baseline and signals compare you with your own recent nights, never with a population norm, and they stay silent until enough nights exist."
+  - "Your baseline and signals compare you with your own recent days of data, never with a population norm, and they stay silent until enough days with data exist."
   - "A signal needs a large change measured in your own spread and a minimum absolute or relative change, so small wobbles are ignored."
   - "The baseline, signals and reports are calculated on your phone. Starting with version 1.9.3, practice progress stays on the device without an account and syncs only after you sign in, and the diary is device-only."
   - "ONDA is not a medical device, has no published study of its own on accuracy or benefit, and does not diagnose anything."
@@ -68,7 +68,7 @@ evidenceMap:
     claimType: device
     quote: "the iPhone camera measures your resting pulse and a breathing estimate; HRV appears once an Apple Watch (or another tracker writing HRV to Apple Health) is connected"
     limitation: "Describes app behaviour only; not a validation of the camera reading."
-  - claim: "ONDA builds a personal baseline (fact baseline.window), compares nights with a personal corridor (fact baseline.compare), waits for enough nights (fact baseline.minNights), and requires minimum changes (fact baseline.floors); the traffic light uses a longer corridor (fact baseline.corridor)."
+  - claim: "ONDA builds a personal baseline (fact baseline.window), compares days of data with a personal corridor (fact baseline.compare), waits for enough days with data (fact baseline.minNights), and requires minimum changes (fact baseline.floors); the traffic light uses a longer corridor (fact baseline.corridor)."
     sources: [S1]
     class: established
     claimType: device
@@ -102,7 +102,7 @@ evidenceMap:
 
 ## What is ONDA's method?
 
-ONDA is a breathing and biofeedback app. It reads signals that other devices have already recorded, compares them with your own history and shows you where a night stands. This page describes that method as it is written in the app, including where it stops. It is a description of a product, not a scientific finding, and every rule below is a design choice rather than a validated clinical threshold.
+ONDA is a breathing and biofeedback app. It reads signals that other devices have already recorded, compares them with your own history and shows you where your latest day stands. This page describes that method as it is written in the app, including where it stops. It is a description of a product, not a scientific finding, and every rule below is a design choice rather than a validated clinical threshold.
 
 ## Where does the data come from?
 
@@ -114,19 +114,19 @@ ONDA is a breathing and biofeedback app. It reads signals that other devices hav
 
 ## How is your baseline built?
 
-The baseline is the range your own body usually sits in. ONDA builds it over {{fact:baseline.window}} from values in Apple Health [S1, S4]. Starting with version 1.9.3, the heart rate variability chart shows that whole window as soon as Apple Health access is granted, instead of filling in night by night. Nights with too few samples are dropped before any calculation, and heart rate variability is taken only from overnight samples.
+The baseline is the range your own body usually sits in. ONDA builds it over {{fact:baseline.window}} from values in Apple Health [S1, S4]. Starting with version 1.9.3, the heart rate variability chart shows that whole window as soon as Apple Health access is granted, instead of filling in day by day. Days with too few samples are dropped before any calculation, and for signals heart rate variability is taken only from {{fact:onda.signal.hrvWindow}}.
 
 For signals, {{fact:baseline.compare}} [S1]. ONDA stays silent until it has at least {{fact:baseline.minNights}}, so early weeks show a baseline that is still building rather than a judgement. The minimum changes it requires are: {{fact:baseline.floors}}.
 
-In Simple mode the same rule drives a traffic light. Its corridor uses {{fact:baseline.corridor}} of nights, so that a few unusual nights barely move it. Green means every signal is inside your corridor; yellow means one night outside; red means two or more nights in a row outside. These colours describe distance from your own history. They do not grade your health. For how to read such comparisons, see [your HRV baseline](/science/concepts/hrv-baseline) and [interpreting HRV](/science/concepts/interpreting-hrv).
+In Simple mode the same rule drives a traffic light. Its corridor uses {{fact:baseline.corridor}} of data, so that a few unusual days barely move it. Green means every signal is inside your corridor; yellow means one day outside; red means two or more days in a row outside. These colours describe distance from your own history. They do not grade your health. For how to read such comparisons, see [your HRV baseline](/science/concepts/hrv-baseline) and [interpreting HRV](/science/concepts/interpreting-hrv).
 
 ## When does ONDA show a signal?
 
-A signal appears when last night's resting heart rate rose, heart rate variability fell, or breathing rate rose past both the spread gate and the minimum change described above. If several signals moved, ONDA shows only the largest one. Signals are limited to {{fact:onda.signal.cadence}}, and the notification carries no numbers; the numbers are in the app.
+A signal appears when the latest day's resting heart rate rose, heart rate variability fell, or breathing rate rose past both the spread gate and the minimum change described above. If several signals moved, ONDA shows only the largest one. Signals are limited to {{fact:onda.signal.cadence}}, and the notification carries no numbers; the numbers are in the app.
 
-When your nights stay inside the corridor, ONDA sends a calm check-in instead, {{fact:onda.checkin.steadyCadence}}, with {{fact:onda.checkin.dailyCap}}. Without watch data, check-ins come {{fact:onda.checkin.noWatchCadence}}. Calm check-ins can be turned off in Settings.
+When your values stay inside the corridor, ONDA sends a calm check-in instead, {{fact:onda.checkin.steadyCadence}}, with {{fact:onda.checkin.dailyCap}}. Without watch data, check-ins come {{fact:onda.checkin.noWatchCadence}}. Calm check-ins can be turned off in Settings.
 
-Nightly values move for ordinary reasons such as alcohol, a late meal, training, travel or a short night, which is why one night is never read as a verdict. See [why HRV changes from day to day](/science/mechanisms/hrv-day-to-day). For alcohol in particular, see [alcohol and HRV](/science/mechanisms/alcohol-and-hrv).
+Values move for ordinary reasons such as alcohol, a late meal, training, travel or a short night, which is why one day is never read as a verdict. See [why HRV changes from day to day](/science/mechanisms/hrv-day-to-day). For alcohol in particular, see [alcohol and HRV](/science/mechanisms/alcohol-and-hrv).
 
 ## What do you see during a practice?
 

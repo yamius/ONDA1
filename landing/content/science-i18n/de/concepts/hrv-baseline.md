@@ -1,5 +1,5 @@
 ---
-sourceHash: "55f2a6818cc5"
+sourceHash: "3c391a42bca8"
 title: "HRV-Baseline: Warum dein eigenes Normal mehr zählt als jede Norm"
 metaTitle: "HRV-Baseline: dein eigenes Normal statt einer Norm"
 metaDescription: "Deine HRV-Baseline ist dein eigener typischer Bereich, kein Bevölkerungsdurchschnitt. Warum sie Altersnormen schlägt, wie ONDA sie bildet und was eine Abweichung bedeutet."
@@ -15,7 +15,7 @@ shortAnswer: >
 keyPoints:
   - "Eine HRV-Baseline ist dein eigenes typisches HRV-Niveau samt seiner normalen Streuung, gebildet aus vielen Messungen – nie aus einer einzigen."
   - "Menschen gleichen Alters unterscheiden sich so stark, und Geräte und Maße variieren so sehr, dass ein Vergleich deiner HRV mit der eines anderen Menschen kaum Aussagekraft hat."
-  - "ONDA bildet die Baseline aus einem Fenster mehrerer Nächte deiner eigenen Messungen und vergleicht jede Nacht mit deinem persönlichen Korridor."
+  - "ONDA bildet die Baseline aus einem Fenster mehrerer Tage deiner eigenen Messungen und vergleicht deinen letzten Tag mit Daten mit deinem persönlichen Korridor."
   - "Ein einzelner Wert außerhalb deines Korridors ist meist Rauschen; Aufmerksamkeit verdient eine anhaltende Verschiebung über Tage oder Wochen."
   - "Instabile Messbedingungen, Krankheit, eine Trainingsänderung, ein neues Gerät oder ein anderes Maß können Messwerte verschieben oder die Baseline unbrauchbar machen."
   - "Den Korridor zu verlassen heißt nicht, dass du gestresst oder krank bist, und darin zu bleiben garantiert keine Gesundheit."
@@ -90,9 +90,9 @@ Das Maß muss gleich bleiben. RMSSD und SDNN fassen unterschiedliche Aspekte des
 
 ## Was zeigt die Evidenz?
 
-**Gesichert.** Gesunde Erwachsene unterscheiden sich in der HRV enorm, und für Kurzzeitmaße gibt es keine anerkannten Normwerte [S3]. Im Durchschnitt sinkt der Wert mit dem Alter, während sich Einzelne in jedem Alter stark unterscheiden [S2]. Werte aus verschiedenen Geräten, Maßen und Messbedingungen sind nicht austauschbar [S6, S7], und Aufzeichnungen unterschiedlicher Länge lassen sich nicht direkt vergleichen [S5]. Eine persönliche Baseline braucht viele Messungen; einzelne Aufzeichnungen begründen keine [S10].
+**Gesichert.** Gesunde Erwachsene unterscheiden sich in der HRV enorm, und für Kurzzeitmaße gibt es keine anerkannten Normwerte [S3]. Im Durchschnitt sinkt der Wert mit dem Alter, während sich Einzelne in jedem Alter stark unterscheiden [S2]. Werte aus verschiedenen Geräten, Maßen und Messbedingungen sind nicht austauschbar [S6, S7], und Aufzeichnungen unterschiedlicher Länge lassen sich nicht direkt vergleichen [S5].
 
-**Kontextabhängig.** Die konkrete Monitoring-Praxis mit gleitenden Wochenmitteln und dem Variationskoeffizienten stammt aus der Sportwissenschaft, wo ein niedrigerer Wert als der einer anderen Person nicht unbedingt einen schlechteren physiologischen Zustand bedeutet [S10]. Die PPG am Handgelenk folgt EKG-basierten Werten unter kontrollierten Ruhebedingungen [S8]. Eine jahreszeitliche Schwankung ist, wo sie berichtet wurde, schwach [S11]. Und weil HRV-Befunde leicht überinterpretiert werden, warnen Methodenübersichten davor, zu viel in sie hineinzulesen [S4].
+**Kontextabhängig.** Eine persönliche Baseline braucht viele Messungen; einzelne Aufzeichnungen begründen keine [S10]. Die konkrete Monitoring-Praxis mit gleitenden Wochenmitteln und dem Variationskoeffizienten stammt aus der Sportwissenschaft, wo ein niedrigerer Wert als der einer anderen Person nicht unbedingt einen schlechteren physiologischen Zustand bedeutet [S10]. Die PPG am Handgelenk folgt EKG-basierten Werten unter kontrollierten Ruhebedingungen [S8]. Eine jahreszeitliche Schwankung ist, wo sie berichtet wurde, schwach [S11]. Und weil HRV-Befunde leicht überinterpretiert werden, warnen Methodenübersichten davor, zu viel in sie hineinzulesen [S4].
 
 **Unbekannt.** Das genaue Fenster einer Baseline ist eine praktische Wahl, keine wissenschaftliche Konstante: Forschungsprotokolle unterscheiden sich von der Logik einer App. Die Fenster von ONDA sind App-Logik – unten dokumentiert, einmal definiert und kein Konsens des Fachgebiets [S9].
 
@@ -107,7 +107,7 @@ Die Interpretation ist wirklich schwierig – eine Methodenübersicht warnt, das
 ONDA bildet die Baseline genau so, wie diese Seite es beschreibt, und die Fenster werden hier einmal definiert:
 
 - **Das Baseline-Fenster.** Die persönliche Baseline für HRV, Ruhepuls und Atemfrequenz wird aus deinen eigenen Messwerten über {{fact:baseline.window}} gebildet.
-- **Das Minimum.** Mindestens {{fact:baseline.minNights}} mit gültigen Daten müssen vorliegen, bevor überhaupt ein Signal gelesen wird.
+- **Das Minimum.** Mindestens {{fact:baseline.minNights}} müssen vorliegen, bevor überhaupt ein Signal gelesen wird.
 - **Der Vergleich.** {{fact:baseline.compare}}.
 - **Das Korridor-Fenster.** Der Ampel-Korridor wird über {{fact:baseline.corridor}} berechnet.
 - **Das Maß.** Die Baseline liest die in Apple Health gespeicherten HRV-Werte – von der Apple Watch oder einem anderen Gerät, das Herzdaten dorthin synchronisiert [S9] –, und es gilt: {{fact:applewatch.hrv.healthkit}}.

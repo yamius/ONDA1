@@ -1,5 +1,5 @@
 ---
-sourceHash: e9bb7788219f
+sourceHash: 6252dd3faeef
 title: "睡眠中のHRVと心拍数：なぜ夜がいちばんよい測定の窓なのか"
 metaTitle: "睡眠中のHRVと心拍数"
 metaDescription: "夜のあいだと睡眠段階ごとに心拍数とHRVに何が起きるのか、なぜ夜間の測定値がもっとも安定した窓なのか、ウェアラブルで何がわかり何がわからないのかを解説します。"
@@ -51,7 +51,7 @@ evidenceMap:
     limitation: "研究は異質で、多くはバイアスのリスクが高く、メタアナリシスは行えませんでした。"
   - claim: "睡眠時無呼吸は、質問票や予測ツールだけではなく、ポリソムノグラフィーまたは技術的に適切な在宅睡眠時無呼吸検査で診断されます。"
     limitation: "成人を対象とした診療ガイドラインで、一般向けのウェアラブルは評価していません。"
-  - claim: "ONDAはApple Healthの値からベースラインをつくり、毎晩をユーザー自身のコリドーと比較します（facts baseline.window, baseline.compare）。"
+  - claim: "ONDAはApple Healthの値からベースラインをつくり、データのある最新の日をユーザー自身のコリドーと比較します（facts baseline.window, baseline.compare）。"
     limitation: "アプリの動作を説明しているだけで、健康に関するいかなる主張の証拠でもありません。"
 ---
 

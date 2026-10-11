@@ -1,5 +1,5 @@
 ---
-sourceHash: ab58f7477955
+sourceHash: a4a0bc06b042
 title: "Perché la mia HRV è bassa? Cause comuni e cosa dicono gli studi"
 metaTitle: "HRV bassa: perché, cause e quando preoccuparsi"
 metaDescription: "Perché l'HRV è bassa: di solito è una reazione a sonno, alcol, malattia, stress o allenamento, non una diagnosi. Ogni causa con le sue prove, e quando andare dal medico."
@@ -18,7 +18,7 @@ keyPoints:
   - "Per il sonno ridotto il calo misurato è piccolo, per lo stress prolungato e il lavoro a turni le prove sono contrastanti, e in chi beve caffè abitualmente non è stato dimostrato che una dose moderata di caffeina modifichi l'HRV a riposo."
   - "L'età abbassa l'HRV in media nel corso dei decenni, ma non spiega un calo da una settimana all'altra."
   - "Diversi giorni sotto il tuo intervallo abituale con una frequenza cardiaca a riposo più alta e la sensazione di non stare bene sono un motivo per riposare. Chiama subito i soccorsi o vai al pronto soccorso in caso di: dolore o pressione al petto; svenimento o sensazione di stare per svenire; grave mancanza di fiato; battito cardiaco veloce, forte o irregolare che non si calma a riposo (anche con capogiri); confusione improvvisa, debolezza su un lato del corpo, difficoltà a parlare."
-  - "ONDA confronta le tue notti con la tua baseline personale, ma non dice che cosa abbia causato un cambiamento e non fa diagnosi."
+  - "ONDA confronta i tuoi ultimi dati con la tua baseline personale, ma non dice che cosa abbia causato un cambiamento e non fa diagnosi."
 imageAlt: "Una sottile linea del battito cardiaco color verde acqua su sfondo blu notte, circondata da piccole icone beige luminose: una luna, un bicchiere, un termometro, una scarpa da corsa, una montagna, una tazza di caffè e delle nuvole."
 faq:
   - q: "L'HRV bassa è pericolosa?"

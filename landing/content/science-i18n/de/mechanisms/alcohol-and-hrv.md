@@ -1,5 +1,5 @@
 ---
-sourceHash: 9e29577a7288
+sourceHash: 93c36ac07742
 title: "Alkohol und HRV: Was ein Drink mit deiner Nacht macht"
 metaTitle: "Alkohol und HRV: die Nacht nach dem Trinken"
 metaDescription: "Warum die nächtliche HRV nach Alkohol sinkt und der Ruhepuls steigt, welche Rolle Menge und Zeitpunkt spielen und was die Forschung zu Alkohol noch nicht weiß."
@@ -48,7 +48,7 @@ evidenceMap:
     limitation: "Einschränkung der Autoren; wiederholt die Limitation."
   - claim: "Eine narrative Übersichtsarbeit kommt zu dem Schluss, dass akutes Rauschtrinken und chronisch starker Konsum Herzfrequenz und autonome Funktion beeinträchtigen, während die Befunde zu leichtem bis moderatem Konsum uneinheitlich sind."
     limitation: "Narrative Übersichtsarbeit, keine systematische Übersichtsarbeit oder Metaanalyse; behandelt Herz-Endpunkte allgemein, nicht speziell die HRV."
-  - claim: "ONDA bildet seine Baseline aus Apple-Health-Werten und vergleicht jede Nacht mit dem eigenen Korridor der Nutzerin oder des Nutzers (Fakten baseline.window, baseline.compare)."
+  - claim: "ONDA bildet seine Baseline aus Apple-Health-Werten und vergleicht den letzten Tag mit Daten mit dem eigenen Korridor der Nutzerin oder des Nutzers (Fakten baseline.window, baseline.compare)."
     limitation: "Beschreibt nur das Verhalten der App; kein Beleg für irgendeine Gesundheitsaussage."
 ---
 

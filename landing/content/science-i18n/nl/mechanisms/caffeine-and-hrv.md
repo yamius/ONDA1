@@ -1,5 +1,5 @@
 ---
-sourceHash: d38842ecad3c
+sourceHash: 79cf13031244
 title: "Cafeïne en HRV: wat koffie wel en niet doet"
 metaTitle: "Cafeïne en HRV: verlaagt koffie je HRV?"
 metaDescription: "Wat onderzoek laat zien over koffie en hartslagvariabiliteit in rust en na inspanning, waarin energiedrankjes verschillen en hoe late cafeïne HRV bereikt."
@@ -46,7 +46,7 @@ evidenceMap:
     limitation: "Dezelfde ene kleine studie; vier uur follow-up; gezonde vrijwilligers."
   - claim: "Cafeïne in de avond verstoort de slaap, en een grote dosis voor het slapengaan veranderde in een kleine studie maten van het hartritme van slag tot slag tijdens de REM-slaap."
     limitation: "Inleidende uitspraak van een kleine slaaplaboratoriumstudie met één grote dosis vlak voor het slapengaan; alleen spectrale maten."
-  - claim: "ONDA bouwt zijn baseline op uit waarden uit Apple Health en vergelijkt elke nacht met de eigen bandbreedte van de gebruiker (feiten baseline.window, baseline.compare)."
+  - claim: "ONDA bouwt zijn baseline op uit waarden uit Apple Health en vergelijkt de laatste dag met gegevens met de eigen bandbreedte van de gebruiker (feiten baseline.window, baseline.compare)."
     limitation: "Beschrijft alleen het gedrag van de app; geen bewijs voor enige gezondheidsclaim."
 ---
 

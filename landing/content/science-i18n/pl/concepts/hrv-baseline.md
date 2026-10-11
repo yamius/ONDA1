@@ -1,5 +1,5 @@
 ---
-sourceHash: "55f2a6818cc5"
+sourceHash: "3c391a42bca8"
 title: "Linia bazowa HRV: dlaczego twoja własna norma znaczy więcej niż jakakolwiek tabela"
 metaTitle: "Linia bazowa HRV: twoja norma, nie tabela"
 metaDescription: "Linia bazowa HRV to twój własny typowy zakres, a nie średnia populacyjna. Dlaczego wygrywa z normami wiekowymi, jak buduje ją ONDA i co zmiana może, a czego nie może znaczyć."
@@ -14,7 +14,7 @@ shortAnswer: >
 keyPoints:
   - "Osobista linia bazowa HRV to twój typowy poziom HRV i jego normalny rozrzut, zbudowane z wielu odczytów — nigdy z jednego."
   - "Ludzie w tym samym wieku różnią się tak bardzo, a urządzenia i miary są tak niejednolite, że porównywanie twojego HRV z cudzym jest niemal bez sensu."
-  - "ONDA buduje linię bazową z okna obejmującego wiele nocy twoich własnych odczytów i porównuje każdą noc z twoim osobistym korytarzem."
+  - "ONDA buduje linię bazową z okna obejmującego wiele dni twoich własnych odczytów i porównuje twój ostatni dzień z danymi z twoim osobistym korytarzem."
   - "Jeden odczyt poza korytarzem to zwykle szum; uwagi wymaga utrzymujące się przesunięcie przez dni lub tygodnie."
   - "Niestabilne warunki pomiaru, choroba, zmiana treningu, nowe urządzenie lub inna miara mogą przesuwać odczyty albo psuć linię bazową."
   - "Wyjście poza korytarz nie oznacza, że jesteś zestresowany lub chory, a pozostawanie w nim nie gwarantuje zdrowia."
@@ -89,9 +89,9 @@ Miara musi pozostać ta sama. RMSSD i SDNN opisują różne aspekty rytmu serca 
 
 ## Co pokazują dane?
 
-**Ustalone.** Zdrowi dorośli ogromnie różnią się pod względem HRV, a dla miar krótkoterminowych nie ma uzgodnionych wartości normatywnych [S3]. Średnio wartość spada z wiekiem, a różnice między ludźmi są duże w każdym wieku [S2]. Wartości z różnych urządzeń, miar i warunków zapisu nie są wymienne [S6, S7], a zapisów o różnej długości nie można porównywać wprost [S5]. Osobista linia bazowa wymaga wielu odczytów; pojedyncze zapisy jej nie wyznaczają [S10].
+**Ustalone.** Zdrowi dorośli ogromnie różnią się pod względem HRV, a dla miar krótkoterminowych nie ma uzgodnionych wartości normatywnych [S3]. Średnio wartość spada z wiekiem, a różnice między ludźmi są duże w każdym wieku [S2]. Wartości z różnych urządzeń, miar i warunków zapisu nie są wymienne [S6, S7], a zapisów o różnej długości nie można porównywać wprost [S5].
 
-**Zależy od kontekstu.** Konkretna praktyka monitorowania — kroczące średnie tygodniowe ze współczynnikiem zmienności — pochodzi z nauk o sporcie, gdzie wartość niższa niż u kolegi niekoniecznie oznacza gorszy stan fizjologiczny [S10]. PPG na nadgarstku odpowiada wartościom z EKG w kontrolowanych warunkach spoczynkowych [S8]. Zmienność sezonowa, tam gdzie ją opisano, jest słaba [S11]. A ponieważ wyniki dotyczące HRV łatwo nadinterpretować, przeglądy metodologiczne przestrzegają przed wyczytywaniem z nich zbyt wiele [S4].
+**Zależy od kontekstu.** Osobista linia bazowa wymaga wielu odczytów; pojedyncze zapisy jej nie wyznaczają [S10]. Konkretna praktyka monitorowania — kroczące średnie tygodniowe ze współczynnikiem zmienności — pochodzi z nauk o sporcie, gdzie wartość niższa niż u kolegi niekoniecznie oznacza gorszy stan fizjologiczny [S10]. PPG na nadgarstku odpowiada wartościom z EKG w kontrolowanych warunkach spoczynkowych [S8]. Zmienność sezonowa, tam gdzie ją opisano, jest słaba [S11]. A ponieważ wyniki dotyczące HRV łatwo nadinterpretować, przeglądy metodologiczne przestrzegają przed wyczytywaniem z nich zbyt wiele [S4].
 
 **Nierozstrzygnięte.** Dokładne okno, z którego powinna korzystać linia bazowa, to wybór praktyczny, a nie stała naukowa: protokoły badawcze różnią się od logiki aplikacji. Okna w ONDA to logika aplikacji — opisana poniżej, zdefiniowana w jednym miejscu i niebędąca konsensusem dziedziny [S9].
 
@@ -106,7 +106,7 @@ Interpretacja jest naprawdę trudna — przegląd metod ostrzega, że łatwy dos
 ONDA buduje linię bazową dokładnie tak, jak opisuje ta strona, a okna są zdefiniowane w jednym miejscu, tutaj:
 
 - **Okno linii bazowej.** Osobista linia bazowa dla HRV, tętna spoczynkowego i częstości oddechu powstaje z twoich własnych odczytów z okresu {{fact:baseline.window}}.
-- **Minimum.** Zanim jakikolwiek sygnał zostanie w ogóle odczytany, potrzeba co najmniej {{fact:baseline.minNights}} z prawidłowymi danymi.
+- **Minimum.** Zanim jakikolwiek sygnał zostanie w ogóle odczytany, potrzeba co najmniej {{fact:baseline.minNights}}.
 - **Porównanie.** {{fact:baseline.compare}}.
 - **Okno korytarza.** Korytarz sygnalizacji świetlnej oblicza się z okresu {{fact:baseline.corridor}}.
 - **Miara.** Linia bazowa odczytuje wartości HRV zapisane w Apple Health — z Apple Watch lub innego urządzenia, które synchronizuje tam dane o sercu [S9] — a {{fact:applewatch.hrv.healthkit}}.

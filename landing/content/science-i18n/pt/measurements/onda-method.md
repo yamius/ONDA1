@@ -1,5 +1,5 @@
 ---
-sourceHash: eea148772b58
+sourceHash: 507e4dc4d425
 title: "Como o ONDA mede e interpreta os sinais do seu corpo"
 metaTitle: "Como o ONDA mede e interpreta os sinais do corpo"
 metaDescription: "De onde o ONDA tira os dados, como monta sua linha de base e seus sinais, o que fica no celular e os limites de cada número que ele mostra."
@@ -7,14 +7,14 @@ shortAnswer: >
   O ONDA lê a variabilidade da frequência cardíaca, a frequência cardíaca de
   repouso e a frequência respiratória no Apple Health, e pode medir o pulso na
   ponta do dedo com a câmera do iPhone. Ele constrói uma faixa pessoal a partir
-  das suas próprias noites e aponta as noites que ficam bem fora dela. São
+  dos seus próprios dias com dados e aponta os dias que ficam bem fora dela. São
   comparações descritivas, não um diagnóstico. O ONDA não realizou nenhum
   estudo próprio de precisão ou de eficácia, e seus números são tão bons quanto
   o dispositivo que os registrou.
 keyPoints:
   - "O ONDA lê no Apple Health a variabilidade da frequência cardíaca como SDNN, a frequência cardíaca de repouso e a frequência respiratória, gravadas pelo Apple Watch ou por outro dispositivo que sincronize com ele; o app apenas lê, nunca grava."
   - "A câmera do iPhone fornece uma leitura de pulso e uma estimativa da respiração, não a variabilidade da frequência cardíaca, e a pontuação de coerência ao vivo não funciona com a câmera."
-  - "A sua linha de base e os seus sinais comparam você com as suas próprias noites recentes, nunca com uma norma populacional, e ficam em silêncio até haver noites suficientes."
+  - "A sua linha de base e os seus sinais comparam você com os seus próprios dias recentes com dados, nunca com uma norma populacional, e ficam em silêncio até haver dias com dados suficientes."
   - "Um sinal exige uma mudança grande, medida pela sua própria dispersão, e uma variação mínima absoluta ou relativa, então pequenas oscilações são ignoradas."
   - "A linha de base, os sinais e os relatórios são calculados no seu celular. A partir da versão 1.9.3, o progresso das práticas fica no aparelho sem conta e só é sincronizado depois que você entra na conta, e o diário fica apenas no aparelho."
   - "O ONDA não é um dispositivo médico, não tem nenhum estudo próprio publicado sobre precisão ou benefício e não diagnostica nada."
@@ -24,7 +24,7 @@ evidenceMap:
     limitation: "Descreve apenas o comportamento do app; o ONDA não calcula o SDNN por conta própria e não pode verificar como o dispositivo de registro o fez."
   - claim: "A câmera do iPhone fornece o pulso em repouso e uma estimativa da respiração; a variabilidade da frequência cardíaca só aparece com um relógio ou outro rastreador que a grave no Apple Health."
     limitation: "Descreve apenas o comportamento do app; não é uma validação da leitura da câmera."
-  - claim: "O ONDA constrói uma linha de base pessoal, compara as noites com uma faixa pessoal, espera até haver noites suficientes e exige variações mínimas; o semáforo usa uma faixa mais longa."
+  - claim: "O ONDA constrói uma linha de base pessoal, compara os dias com dados com uma faixa pessoal, espera até haver dias com dados suficientes e exige variações mínimas; o semáforo usa uma faixa mais longa."
     limitation: "Documentação do produto; os limiares são escolhas de design do ONDA, não pontos de corte clinicamente validados."
   - claim: "O ONDA não é um dispositivo médico e não diagnostica nem monitora nenhuma condição."
     limitation: "Declaração de posicionamento; não é uma classificação regulatória de nenhuma autoridade."
@@ -38,7 +38,7 @@ evidenceMap:
 
 ## Qual é o método do ONDA?
 
-O ONDA é um app de respiração e biofeedback. Ele lê sinais que outros dispositivos já registraram, compara-os com o seu próprio histórico e mostra onde está cada noite. Esta página descreve esse método tal como está escrito no app, inclusive onde ele para. É a descrição de um produto, não um achado científico, e cada regra abaixo é uma escolha de design, e não um limiar clínico validado.
+O ONDA é um app de respiração e biofeedback. Ele lê sinais que outros dispositivos já registraram, compara-os com o seu próprio histórico e mostra onde está o seu dia mais recente. Esta página descreve esse método tal como está escrito no app, inclusive onde ele para. É a descrição de um produto, não um achado científico, e cada regra abaixo é uma escolha de design, e não um limiar clínico validado.
 
 ## De onde vêm os dados?
 
@@ -50,17 +50,17 @@ O ONDA é um app de respiração e biofeedback. Ele lê sinais que outros dispos
 
 ## Como a sua linha de base é construída?
 
-A linha de base é a faixa em que o seu próprio corpo costuma ficar. O ONDA a constrói ao longo de {{fact:baseline.window}} a partir dos valores do Apple Health [S1, S4]. A partir da versão 1.9.3, o gráfico de HRV mostra essa janela inteira assim que o acesso ao Apple Health é concedido, em vez de se preencher noite após noite. Noites com poucas amostras são descartadas antes de qualquer cálculo, e a HRV é tirada apenas de amostras noturnas.
+A linha de base é a faixa em que o seu próprio corpo costuma ficar. O ONDA a constrói ao longo de {{fact:baseline.window}} a partir dos valores do Apple Health [S1, S4]. A partir da versão 1.9.3, o gráfico de HRV mostra essa janela inteira assim que o acesso ao Apple Health é concedido, em vez de se preencher dia após dia. Dias com poucas amostras são descartadas antes de qualquer cálculo, e para os sinais, a HRV é tirada apenas de {{fact:onda.signal.hrvWindow}}.
 
 Para os sinais, {{fact:baseline.compare}} [S1]. O ONDA fica em silêncio até ter pelo menos {{fact:baseline.minNights}}, então as primeiras semanas mostram uma linha de base ainda em construção, e não um julgamento. As variações mínimas exigidas são: {{fact:baseline.floors}}.
 
-No modo Simples, a mesma regra comanda um semáforo. A faixa dele abrange as noites de {{fact:baseline.corridor}}, de modo que algumas noites incomuns quase não a movem. Verde significa que todos os sinais estão dentro da sua faixa; amarelo, uma noite fora dela; vermelho, duas ou mais noites seguidas fora. Essas cores descrevem a distância em relação ao seu próprio histórico. Elas não avaliam a sua saúde. Para entender como ler essas comparações, veja [a sua linha de base da HRV](/science/concepts/hrv-baseline) e [como interpretar a HRV](/science/concepts/interpreting-hrv).
+No modo Simples, a mesma regra comanda um semáforo. A faixa dele abrange os dados de {{fact:baseline.corridor}}, de modo que alguns dias incomuns quase não a movem. Verde significa que todos os sinais estão dentro da sua faixa; amarelo, um dia fora dela; vermelho, dois ou mais dias seguidos fora. Essas cores descrevem a distância em relação ao seu próprio histórico. Elas não avaliam a sua saúde. Para entender como ler essas comparações, veja [a sua linha de base da HRV](/science/concepts/hrv-baseline) e [como interpretar a HRV](/science/concepts/interpreting-hrv).
 
 ## Quando o ONDA mostra um sinal?
 
-Um sinal aparece quando, na última noite, a frequência cardíaca de repouso subiu, a HRV caiu ou a frequência respiratória subiu além do limiar de dispersão e da variação mínima descritos acima. Se vários sinais se moveram, o ONDA mostra apenas o maior. Há {{fact:onda.signal.cadence}}, e a notificação não traz números; os números ficam no app.
+Um sinal aparece quando, no último dia com dados, a frequência cardíaca de repouso subiu, a HRV caiu ou a frequência respiratória subiu além do limiar de dispersão e da variação mínima descritos acima. Se vários sinais se moveram, o ONDA mostra apenas o maior. Há {{fact:onda.signal.cadence}}, e a notificação não traz números; os números ficam no app.
 
-Quando as suas noites ficam dentro da faixa, o ONDA envia, em vez disso, {{fact:onda.checkin.steadyCadence}}, com {{fact:onda.checkin.dailyCap}}. Sem dados do relógio, as mensagens chegam {{fact:onda.checkin.noWatchCadence}}. As mensagens tranquilas podem ser desativadas nos Ajustes.
+Quando os seus valores ficam dentro da faixa, o ONDA envia, em vez disso, {{fact:onda.checkin.steadyCadence}}, com {{fact:onda.checkin.dailyCap}}. Sem dados do relógio, as mensagens chegam {{fact:onda.checkin.noWatchCadence}}. As mensagens tranquilas podem ser desativadas nos Ajustes.
 
 Os valores noturnos mudam por motivos comuns, como álcool, uma refeição tardia, treino, viagem ou uma noite curta, e é por isso que uma única noite nunca é lida como um veredito. Veja [por que a HRV muda de um dia para o outro](/science/mechanisms/hrv-day-to-day). Sobre o álcool em particular, veja [álcool e HRV](/science/mechanisms/alcohol-and-hrv).
 

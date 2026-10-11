@@ -1,5 +1,5 @@
 ---
-sourceHash: e9bb7788219f
+sourceHash: 6252dd3faeef
 title: "HRV i tętno podczas snu: dlaczego noc to najlepsze okno pomiarowe"
 metaTitle: "HRV i tętno podczas snu"
 metaDescription: "Co dzieje się z tętnem i HRV w ciągu nocy i w fazach snu, dlaczego odczyty nocne są najstabilniejszym oknem i co urządzenia ubieralne mogą, a czego nie mogą powiedzieć."
@@ -57,7 +57,7 @@ evidenceMap:
     limitation: "Badania niejednorodne i w większości obarczone wysokim ryzykiem błędu systematycznego; metaanaliza nie była możliwa."
   - claim: "Bezdech senny rozpoznaje się za pomocą polisomnografii lub technicznie poprawnego domowego badania w kierunku bezdechu, a nie samymi kwestionariuszami czy narzędziami predykcyjnymi."
     limitation: "Wytyczne praktyki klinicznej dla dorosłych; nie oceniają konsumenckich urządzeń ubieralnych."
-  - claim: "ONDA tworzy linię bazową z wartości z Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (facts baseline.window, baseline.compare)."
+  - claim: "ONDA tworzy linię bazową z wartości z Apple Health i porównuje ostatni dzień z danymi z własnym korytarzem użytkownika (facts baseline.window, baseline.compare)."
     limitation: "Opisuje wyłącznie działanie aplikacji; nie jest dowodem na żadne twierdzenie zdrowotne."
 ---
 

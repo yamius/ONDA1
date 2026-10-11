@@ -1,5 +1,5 @@
 ---
-sourceHash: d3c51d8c300f
+sourceHash: 49beca2392b4
 title: "月经周期与 HRV：为什么你的基线会变动"
 metaTitle: "月经周期与 HRV：什么在变化，为什么"
 metaDescription: "心率变异性如何随月经周期变化，为什么每位女性都有自己的模式，以及激素避孕和绝经会带来哪些改变。"
@@ -46,7 +46,7 @@ evidenceMap:
     limitation: "在十一位女性中比较了两个阶段；实验室记录时间短。"
   - claim: "综述作者指出，在向女性展示 HRV 时，应考虑与周期相关的差异。"
     limitation: "是作者的建议，而不是经过检验的方法。"
-  - claim: "ONDA 根据 Apple Health 中的数值建立基线，并将每晚与用户自己的波动区间进行比较（事实 baseline.window、baseline.compare）。"
+  - claim: "ONDA 根据 Apple Health 中的数值建立基线，并将最近一天的数据与用户自己的波动区间进行比较（事实 baseline.window、baseline.compare）。"
     limitation: "仅描述应用的运作方式；不能作为任何健康主张的证据。"
 ---
 

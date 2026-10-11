@@ -1,5 +1,5 @@
 ---
-sourceHash: 385cb2c6ee15
+sourceHash: faaa9b748d00
 title: "Training und HRV: Was Belastung bewirkt und was HRV-gesteuertes Training zeigt"
 metaTitle: "Training und HRV: Evidenz zum HRV-gesteuerten Training"
 metaDescription: "Warum die HRV nach hartem Training sinkt und sich wieder erholt, wie lange das dauert und was Studien zu HRV-gesteuertem Training im Vergleich mit einem festen Trainingsplan zeigen."
@@ -50,7 +50,7 @@ evidenceMap:
     limitation: "Sekundärer Endpunkt einer kleinen Studie; er kann die Schlussfolgerung nicht tragen, wenn der primäre Endpunkt keinen Unterschied zeigte."
   - claim: "Zahlreiche experimentelle, demografische und umweltbedingte Faktoren beeinflussen die HRV-Messung, daher sollten Werte unter vergleichbaren Bedingungen verglichen werden."
     limitation: "Leitlinie zur Forschungsqualität; Expertenkonsens, kein direkter Beleg zu Trainingsentscheidungen."
-  - claim: "ONDA bildet seine Baseline aus Werten in Apple Health und vergleicht jede Nacht mit dem eigenen Korridor der Nutzerin oder des Nutzers."
+  - claim: "ONDA bildet seine Baseline aus Werten in Apple Health und vergleicht den letzten Tag mit Daten mit dem eigenen Korridor der Nutzerin oder des Nutzers."
     limitation: "Beschreibt nur das Verhalten der App; kein Beleg für eine Gesundheits- oder Trainingsaussage."
   - claim: "In einer Metaanalyse bei Ausdauersportlern ging Training, das die Leistung verbesserte, mit Anstiegen der vagal vermittelten HRV in Ruhe und nach Belastung sowie der Herzfrequenzerholung einher."
     limitation: "Nur Ausdauersportler; gepoolte kleine Studien; Frequenzbereichsindizes auf die HF-Leistung beschränkt; Gruppenmittelwerte, kein individueller Test."
@@ -137,6 +137,6 @@ Wenn das Training einen niedrigen Wert nicht erklärt, nennt [Warum ist meine HR
 
 ## In ONDA
 
-ONDA bildet eine persönliche Baseline aus Werten, die in Apple Health gespeichert sind – von der Apple Watch oder einem anderen Gerät, das Herzdaten dorthin synchronisiert [S5]. Das Fenster beträgt {{fact:baseline.window}}, und {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, daher ist der HRV-Verlauf von ONDA ein SDNN-Verlauf. ONDA zeigt, wie deine Nächte im Vergleich zu deinem eigenen Bereich liegen; es plant oder steuert kein Training, sagt dir nicht, wann du hart trainieren sollst, und diagnostiziert keine Erkrankung.
+ONDA bildet eine persönliche Baseline aus Werten, die in Apple Health gespeichert sind – von der Apple Watch oder einem anderen Gerät, das Herzdaten dorthin synchronisiert [S5]. Das Fenster beträgt {{fact:baseline.window}}, und {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, daher ist der HRV-Verlauf von ONDA ein SDNN-Verlauf. ONDA zeigt, wie deine letzten Daten im Vergleich zu deinem eigenen Bereich liegen; es plant oder steuert kein Training, sagt dir nicht, wann du hart trainieren sollst, und diagnostiziert keine Erkrankung.
 
 > Bildungsinformation, keine Diagnose und keine medizinische Behandlung.

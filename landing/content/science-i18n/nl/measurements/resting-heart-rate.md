@@ -1,5 +1,5 @@
 ---
-sourceHash: 5b7474fd9981
+sourceHash: 21579ea1d5e6
 title: "Rusthartslag: wat hij weerspiegelt en hoe je hem meet"
 metaTitle: "Rusthartslag: betekenis en meting"
 metaDescription: "Je rusthartslag is je laagste hartslag in rust. Hoe je hem meet, wat normaal betekent, wat hem beïnvloedt en waarom je eigen trend meer zegt dan één getal."
@@ -46,7 +46,7 @@ evidenceMap:
     limitation: "Eén surveillancestudie op bevolkingsniveau met één merk wearable; ze volgt ziekte per staat, niet bij individuen."
   - claim: "In een klein smartwatchcohort signaleerden extreme stijgingen van de rusthartslag ten opzichte van de eigen baseline veel gevallen van COVID-19, sommige al vóór de klachten."
     limitation: "Eén retrospectieve studie met weinig besmette deelnemers; geen gevalideerde diagnostische test, en een stijging heeft veel andere oorzaken dan een infectie."
-  - claim: "ONDA leest de rusthartslag uit Apple Health, vergelijkt nachten met een persoonlijke bandbreedte en stelt geen diagnoses; het venster en de minimale veranderingen liggen vast en zijn gedocumenteerd."
+  - claim: "ONDA leest de rusthartslag uit Apple Health, vergelijkt dagen met gegevens met een persoonlijke bandbreedte en stelt geen diagnoses; het venster en de minimale veranderingen liggen vast en zijn gedocumenteerd."
     limitation: "Beschrijft alleen het gedrag van de app; het is geen bewijs voor een gezondheidsclaim."
 ---
 

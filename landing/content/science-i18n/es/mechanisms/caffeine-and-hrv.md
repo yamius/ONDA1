@@ -1,5 +1,5 @@
 ---
-sourceHash: d38842ecad3c
+sourceHash: 79cf13031244
 title: "Cafeína y HRV: lo que el café hace y lo que no"
 metaTitle: "Cafeína y HRV: ¿baja el café tu HRV?"
 metaDescription: "Qué muestra la investigación sobre el café y la HRV en reposo y tras el ejercicio, en qué se diferencian las bebidas energéticas y cómo la cafeína tardía llega a la HRV."
@@ -46,7 +46,7 @@ evidenceMap:
     limitation: "El mismo ensayo pequeño; seguimiento de cuatro horas; voluntarios sanos."
   - claim: "La cafeína por la noche altera el sueño, y una dosis grande antes de acostarse cambió medidas cardíacas latido a latido durante el sueño REM en un estudio pequeño."
     limitation: "Afirmación de contexto de un pequeño estudio de laboratorio del sueño con una sola dosis grande poco antes de acostarse; solo medidas espectrales."
-  - claim: "ONDA construye su línea base a partir de valores de Apple Health y compara cada noche con el corredor propio del usuario (datos baseline.window, baseline.compare)."
+  - claim: "ONDA construye su línea base a partir de valores de Apple Health y compara el último día con datos con el corredor propio del usuario (datos baseline.window, baseline.compare)."
     limitation: "Describe solo el funcionamiento de la app; no es evidencia de ninguna afirmación de salud."
 ---
 

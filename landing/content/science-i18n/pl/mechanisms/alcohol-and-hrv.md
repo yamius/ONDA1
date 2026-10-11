@@ -1,5 +1,5 @@
 ---
-sourceHash: 9e29577a7288
+sourceHash: 93c36ac07742
 title: "Alkohol a HRV: co drink robi z Twoją nocą"
 metaTitle: "Alkohol a HRV: noc po piciu"
 metaDescription: "Dlaczego po piciu nocne HRV spada, a tętno spoczynkowe rośnie, jaką rolę odgrywają dawka i pora oraz czego badania nad alkoholem jeszcze nie wiedzą."
@@ -46,7 +46,7 @@ evidenceMap:
     limitation: "Zastrzeżenie autorów; powtarza ograniczenie."
   - claim: "Przegląd narracyjny stwierdza, że doraźne upijanie się i przewlekłe intensywne picie szkodzą tętnu i funkcji autonomicznej, a wyniki dotyczące picia lekkiego i umiarkowanego są niejednoznaczne."
     limitation: "Przegląd narracyjny, a nie przegląd systematyczny ani metaanaliza; obejmuje ogólnie wyniki sercowe, a nie konkretnie HRV."
-  - claim: "ONDA tworzy linię bazową z wartości z Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (fakty baseline.window, baseline.compare)."
+  - claim: "ONDA tworzy linię bazową z wartości z Apple Health i porównuje ostatni dzień z danymi z własnym korytarzem użytkownika (fakty baseline.window, baseline.compare)."
     limitation: "Opisuje wyłącznie działanie aplikacji; nie jest dowodem na żadne twierdzenie zdrowotne."
 ---
 

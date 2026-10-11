@@ -1,5 +1,5 @@
 ---
-sourceHash: 385cb2c6ee15
+sourceHash: faaa9b748d00
 title: "Training en HRV: wat inspanning doet en wat HRV-gestuurd trainen laat zien"
 metaTitle: "Training en HRV: bewijs voor HRV-gestuurd trainen"
 metaDescription: "Waarom HRV na een zware training daalt en weer herstelt, hoe lang dat duurt en wat studies naar HRV-gestuurd trainen laten zien vergeleken met een vast trainingsschema."
@@ -49,7 +49,7 @@ evidenceMap:
     limitation: "Secundaire uitkomst in een kleine studie; kan de conclusie niet dragen wanneer de primaire uitkomst geen verschil liet zien."
   - claim: "Talloze experimentele, demografische en omgevingsfactoren beïnvloeden de beoordeling van HRV, dus metingen moeten onder vergelijkbare omstandigheden worden vergeleken."
     limitation: "Richtlijn voor zorgvuldig onderzoek; consensus van experts, geen direct bewijs over trainingsbeslissingen."
-  - claim: "ONDA bouwt zijn baseline op uit waarden in Apple Health en vergelijkt elke nacht met de eigen bandbreedte van de gebruiker (facts baseline.window, baseline.compare)."
+  - claim: "ONDA bouwt zijn baseline op uit waarden in Apple Health en vergelijkt de laatste dag met gegevens met de eigen bandbreedte van de gebruiker (facts baseline.window, baseline.compare)."
     limitation: "Beschrijft alleen het gedrag van de app; geen bewijs voor enige gezondheids- of trainingsclaim."
   - claim: "In een meta-analyse bij duursporters ging training die de prestaties verbeterde samen met stijgingen van vagaal gemedieerde HRV in rust en na inspanning en van het hartslagherstel (facts study.bellenger2016.studies, study.bellenger2016.restingRmssd)."
     limitation: "Alleen duursporters; gepoolde kleine studies; frequentiedomeinindices beperkt tot HF-vermogen; groepsgemiddelden, geen individuele test."
@@ -136,6 +136,6 @@ Als training een lage meting niet verklaart, staan andere veelvoorkomende oorzak
 
 ## In ONDA
 
-ONDA bouwt een persoonlijke baseline op uit waarden die in Apple Health zijn opgeslagen — van een Apple Watch of een ander apparaat dat hartgegevens daarheen synchroniseert [S5]. Het venster is {{fact:baseline.window}}, en {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, dus de HRV-trend van ONDA is een SDNN-trend. ONDA laat zien hoe je nachten zich verhouden tot je eigen bandbreedte; het plant of past geen trainingen aan, vertelt je niet wanneer je zwaar moet trainen en stelt geen aandoening vast.
+ONDA bouwt een persoonlijke baseline op uit waarden die in Apple Health zijn opgeslagen — van een Apple Watch of een ander apparaat dat hartgegevens daarheen synchroniseert [S5]. Het venster is {{fact:baseline.window}}, en {{fact:baseline.compare}}. {{fact:applewatch.hrv.healthkit}}, dus de HRV-trend van ONDA is een SDNN-trend. ONDA laat zien hoe je laatste gegevens zich verhouden tot je eigen bandbreedte; het plant of past geen trainingen aan, vertelt je niet wanneer je zwaar moet trainen en stelt geen aandoening vast.
 
 > Educatieve informatie, geen diagnose of medische behandeling.

@@ -1,12 +1,12 @@
 ---
-sourceHash: eea148772b58
+sourceHash: 507e4dc4d425
 title: "Jak ONDA mierzy i interpretuje sygnały twojego ciała"
 metaTitle: "Jak ONDA mierzy i odczytuje sygnały twojego ciała"
 metaDescription: "Skąd ONDA bierze dane, jak buduje twoją osobistą linię bazową i sygnały, co zostaje w telefonie i jakie są granice każdej pokazywanej liczby."
 shortAnswer: >
   ONDA odczytuje z Apple Health zmienność rytmu serca, tętno spoczynkowe i
   częstość oddechów, a aparatem iPhone’a może zmierzyć puls z opuszka palca.
-  Z twoich własnych nocy buduje osobisty korytarz i wskazuje noce, które
+  Z twoich własnych dni z danymi buduje osobisty korytarz i wskazuje dni, które
   wyraźnie z niego wychodzą. To opisowe porównania, a nie diagnoza. ONDA nie
   przeprowadziła żadnego własnego badania dokładności ani skuteczności, a jej
   liczby są tylko tak dobre jak urządzenie, które je zarejestrowało.
@@ -23,7 +23,7 @@ evidenceMap:
     limitation: "Opisuje wyłącznie działanie aplikacji; ONDA sama nie oblicza SDNN i nie może sprawdzić, jak poradziło sobie urządzenie rejestrujące."
   - claim: "Aparat iPhone’a daje puls spoczynkowy i szacunek częstości oddechów; zmienność rytmu serca pojawia się dopiero wtedy, gdy zegarek lub inny tracker zapisuje ją w Apple Health."
     limitation: "Opisuje wyłącznie działanie aplikacji; nie jest walidacją odczytu z aparatu."
-  - claim: "ONDA buduje osobistą linię bazową, porównuje noce z osobistym korytarzem, czeka na wystarczającą liczbę nocy i wymaga minimalnych zmian; sygnalizacja świetlna korzysta z dłuższego korytarza."
+  - claim: "ONDA buduje osobistą linię bazową, porównuje dni z danymi z osobistym korytarzem, czeka na wystarczającą liczbę dni z danymi i wymaga minimalnych zmian; sygnalizacja świetlna korzysta z dłuższego korytarza."
     limitation: "Dokumentacja produktu; progi to decyzje projektowe ONDA, a nie klinicznie zwalidowane wartości graniczne."
   - claim: "ONDA nie jest wyrobem medycznym i nie diagnozuje ani nie monitoruje żadnej choroby."
     limitation: "Deklaracja pozycjonująca; nie jest to klasyfikacja regulacyjna nadana przez jakikolwiek organ."
@@ -37,7 +37,7 @@ evidenceMap:
 
 ## Na czym polega metoda ONDA?
 
-ONDA to aplikacja do ćwiczeń oddechowych i biofeedbacku. Odczytuje sygnały, które zarejestrowały już inne urządzenia, porównuje je z twoją własną historią i pokazuje, gdzie wypada dana noc. Ta strona opisuje tę metodę tak, jak jest zapisana w aplikacji, łącznie z jej granicami. To opis produktu, a nie wynik naukowy, a każda opisana niżej reguła jest decyzją projektową, a nie zwalidowanym progiem klinicznym.
+ONDA to aplikacja do ćwiczeń oddechowych i biofeedbacku. Odczytuje sygnały, które zarejestrowały już inne urządzenia, porównuje je z twoją własną historią i pokazuje, gdzie wypada twój ostatni dzień. Ta strona opisuje tę metodę tak, jak jest zapisana w aplikacji, łącznie z jej granicami. To opis produktu, a nie wynik naukowy, a każda opisana niżej reguła jest decyzją projektową, a nie zwalidowanym progiem klinicznym.
 
 ## Skąd pochodzą dane?
 
@@ -49,17 +49,17 @@ ONDA to aplikacja do ćwiczeń oddechowych i biofeedbacku. Odczytuje sygnały, k
 
 ## Jak powstaje twoja linia bazowa?
 
-Linia bazowa to zakres, w którym zwykle mieści się twój organizm. ONDA buduje ją z wartości w Apple Health z okresu {{fact:baseline.window}} [S1, S4]. Od wersji 1.9.3 wykres HRV pokazuje całe to okno od razu po przyznaniu dostępu do Apple Health, zamiast wypełniać się noc po nocy. Noce ze zbyt małą liczbą próbek są odrzucane przed jakimikolwiek obliczeniami, a HRV jest brane wyłącznie z próbek nocnych.
+Linia bazowa to zakres, w którym zwykle mieści się twój organizm. ONDA buduje ją z wartości w Apple Health z okresu {{fact:baseline.window}} [S1, S4]. Od wersji 1.9.3 wykres HRV pokazuje całe to okno od razu po przyznaniu dostępu do Apple Health, zamiast wypełniać się dzień po dniu. Dni ze zbyt małą liczbą próbek są odrzucane przed jakimikolwiek obliczeniami, a dla sygnałów HRV jest brane wyłącznie z {{fact:onda.signal.hrvWindow}}.
 
 W przypadku sygnałów {{fact:baseline.compare}} [S1]. ONDA milczy, dopóki nie ma co najmniej {{fact:baseline.minNights}}, więc w pierwszych tygodniach widzisz linię bazową, która dopiero powstaje, a nie ocenę. Wymagane minimalne zmiany to: {{fact:baseline.floors}}.
 
-W trybie prostym ta sama reguła steruje sygnalizacją świetlną. Jej korytarz obejmuje noce z okresu {{fact:baseline.corridor}}, więc kilka nietypowych nocy ledwo go przesuwa. Zielony oznacza, że każdy sygnał mieści się w twoim korytarzu; żółty — jedną noc poza nim; czerwony — dwie lub więcej nocy z rzędu poza nim. Te kolory opisują odległość od twojej własnej historii. Nie oceniają twojego zdrowia. Jak czytać takie porównania, wyjaśniają strony [twoja linia bazowa HRV](/science/concepts/hrv-baseline) i [interpretacja HRV](/science/concepts/interpreting-hrv).
+W trybie prostym ta sama reguła steruje sygnalizacją świetlną. Jej korytarz obejmuje dane z okresu {{fact:baseline.corridor}}, więc kilka nietypowych dni ledwo go przesuwa. Zielony oznacza, że każdy sygnał mieści się w twoim korytarzu; żółty — jeden dzień poza nim; czerwony — dwa lub więcej dni z rzędu poza nim. Te kolory opisują odległość od twojej własnej historii. Nie oceniają twojego zdrowia. Jak czytać takie porównania, wyjaśniają strony [twoja linia bazowa HRV](/science/concepts/hrv-baseline) i [interpretacja HRV](/science/concepts/interpreting-hrv).
 
 ## Kiedy ONDA pokazuje sygnał?
 
-Sygnał pojawia się, gdy ostatniej nocy tętno spoczynkowe wzrosło, HRV spadło albo częstość oddechów wzrosła ponad oba opisane wyżej progi: próg rozrzutu i minimalną zmianę. Jeśli przesunęło się kilka sygnałów, ONDA pokazuje tylko największy z nich. Częstotliwość sygnałów jest ograniczona: {{fact:onda.signal.cadence}}, a powiadomienie nie zawiera liczb; liczby są w aplikacji.
+Sygnał pojawia się, gdy w ostatnim dniu z danymi tętno spoczynkowe wzrosło, HRV spadło albo częstość oddechów wzrosła ponad oba opisane wyżej progi: próg rozrzutu i minimalną zmianę. Jeśli przesunęło się kilka sygnałów, ONDA pokazuje tylko największy z nich. Częstotliwość sygnałów jest ograniczona: {{fact:onda.signal.cadence}}, a powiadomienie nie zawiera liczb; liczby są w aplikacji.
 
-Gdy twoje noce pozostają w korytarzu, zamiast sygnałów obowiązuje inny rytm: {{fact:onda.checkin.steadyCadence}}, {{fact:onda.checkin.dailyCap}}. Bez danych z zegarka spokojne wiadomości przychodzą {{fact:onda.checkin.noWatchCadence}}. Spokojne wiadomości można wyłączyć w Ustawieniach.
+Gdy twoje wartości pozostają w korytarzu, zamiast sygnałów obowiązuje inny rytm: {{fact:onda.checkin.steadyCadence}}, {{fact:onda.checkin.dailyCap}}. Bez danych z zegarka spokojne wiadomości przychodzą {{fact:onda.checkin.noWatchCadence}}. Spokojne wiadomości można wyłączyć w Ustawieniach.
 
 Wartości nocne zmieniają się z codziennych powodów, takich jak alkohol, późny posiłek, trening, podróż czy krótka noc — dlatego jedna noc nigdy nie jest traktowana jak werdykt. Zobacz, [dlaczego HRV zmienia się z dnia na dzień](/science/mechanisms/hrv-day-to-day). O samym alkoholu: [alkohol a HRV](/science/mechanisms/alcohol-and-hrv).
 

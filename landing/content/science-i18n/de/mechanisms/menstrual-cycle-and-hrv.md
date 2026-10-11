@@ -1,5 +1,5 @@
 ---
-sourceHash: d3c51d8c300f
+sourceHash: 49beca2392b4
 title: "Menstruationszyklus und HRV: warum sich deine Baseline verschiebt"
 metaTitle: "Menstruationszyklus und HRV: was sich ändert und warum"
 metaDescription: "Wie sich die Herzfrequenzvariabilität über den Menstruationszyklus verändert, warum jede Frau ihr eigenes Muster hat und was hormonelle Verhütung und Menopause ändern."
@@ -50,7 +50,7 @@ evidenceMap:
     limitation: "Zwei Phasen bei elf Frauen verglichen; kurze Laboraufzeichnungen."
   - claim: "Die Autorinnen und Autoren des Reviews sagen, dass zyklusbedingte Unterschiede berücksichtigt werden sollten, wenn Frauen ihre HRV angezeigt bekommen."
     limitation: "Empfehlung der Autoren, keine geprüfte Methode."
-  - claim: "ONDA bildet seine Baseline aus Apple-Health-Werten und vergleicht jede Nacht mit dem eigenen Korridor der Nutzerin oder des Nutzers (Fakten baseline.window, baseline.compare)."
+  - claim: "ONDA bildet seine Baseline aus Apple-Health-Werten und vergleicht den letzten Tag mit Daten mit dem eigenen Korridor der Nutzerin oder des Nutzers (Fakten baseline.window, baseline.compare)."
     limitation: "Beschreibt nur das Verhalten der App; kein Beleg für eine Gesundheitsaussage."
 ---
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: 477ca0c9b233
+sourceHash: f70effe83d62
 title: "Por que a HRV muda de um dia para o outro"
 metaTitle: "Por que a HRV muda de um dia para o outro"
 metaDescription: "Por que a HRV varia de um dia para o outro: ruído normal, sono, álcool, treino, doença, estresse e ciclo menstrual — mecanismos e evidências."
@@ -73,7 +73,7 @@ evidenceMap:
     limitation: "Doze homens treinados em musculação, em torno de uma única sessão de exercício; unidades espectrais normalizadas."
   - claim: "O tônus vagal não pode ser medido diretamente; medidas de HRV como o RMSSD refletem alterações da frequência cardíaca mediadas pelo nervo vago."
     limitation: "Definição; não quantifica a atividade vagal."
-  - claim: "O ONDA compara cada noite com a faixa da linha de base do próprio usuário e lê a HRV (SDNN) no Apple Health."
+  - claim: "O ONDA compara o dia de dados mais recente com a faixa da linha de base do próprio usuário e lê a HRV (SDNN) no Apple Health."
     limitation: "Documentação do produto; descreve apenas o comportamento do app."
 ---
 

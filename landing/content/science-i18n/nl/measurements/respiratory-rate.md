@@ -1,5 +1,5 @@
 ---
-sourceHash: 94f41b941e62
+sourceHash: 3e2d8ad38a9d
 title: "Ademfrequentie in rust: wat ze weerspiegelt en hoe je haar meet"
 metaTitle: "Ademfrequentie: betekenis en meting"
 metaDescription: "Je ademfrequentie is het aantal ademhalingen per minuut in rust. Hoe je haar meet, wat haar beïnvloedt en waarom je eigen nachttrend meer zegt dan één meting."
@@ -46,7 +46,7 @@ evidenceMap:
     limitation: "Eén retrospectieve studie met één merk wearable bij mensen die al klachten hadden; kleine validatiesets; meerdere auteurs in dienst van of gefinancierd door de fabrikant. Geen diagnostische test."
   - claim: "In een grote zelfgeselecteerde groep gebruikers van wearables met COVID waren ademfrequentie en hartslag door de ziekte meestal verhoogd, terwijl de HRV daalde."
     limitation: "Eén observationele studie bij gebruikers van één fabrikant met zelf gerapporteerde diagnoses; alle auteurs gefinancierd door de fabrikant. Geen diagnostische test."
-  - claim: "ONDA leest de ademfrequentie uit Apple Health als een van de drie signalen van de baseline, vergelijkt nachten met een persoonlijke bandbreedte over het baselinevenster en met minimale drempels, en stelt geen diagnoses."
+  - claim: "ONDA leest de ademfrequentie uit Apple Health als een van de drie signalen van de baseline, vergelijkt dagen met gegevens met een persoonlijke bandbreedte over het baselinevenster en met minimale drempels, en stelt geen diagnoses."
     limitation: "Beschrijft alleen het gedrag van de app; het is geen bewijs voor een gezondheidsclaim of voor de nauwkeurigheid van de waarden."
 ---
 

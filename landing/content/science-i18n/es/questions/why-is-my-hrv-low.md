@@ -1,5 +1,5 @@
 ---
-sourceHash: ab58f7477955
+sourceHash: a4a0bc06b042
 title: "¿Por qué tengo la HRV baja? Causas frecuentes y qué dice la evidencia"
 metaTitle: "¿Por qué tengo la HRV baja? Causas y qué significan"
 metaDescription: "¿HRV baja? Casi siempre es una reacción al sueño, el alcohol, una enfermedad, el estrés o el entrenamiento, no un diagnóstico. Cada causa con su evidencia y cuándo ir al médico."
@@ -18,7 +18,7 @@ keyPoints:
   - "Con el sueño corto la bajada medida es pequeña, con el estrés prolongado y el trabajo por turnos la evidencia es mixta, y en quienes toman café a diario no se ha demostrado que una cantidad moderada de cafeína cambie la HRV en reposo."
   - "La edad reduce la HRV de media a lo largo de décadas, pero no explica una bajada de una semana a otra."
   - "Varios días por debajo de tu rango habitual, con la frecuencia cardíaca en reposo más alta y sintiéndote mal, son motivo para descansar. Llama a emergencias o ve a urgencias si tienes: dolor o presión en el pecho; desmayo o sensación de que vas a desmayarte; falta de aire intensa; latidos rápidos, fuertes o irregulares que no se calman en reposo (incluso con mareo); confusión repentina, debilidad en un lado del cuerpo, dificultad para hablar."
-  - "ONDA compara tus noches con tu propia línea base, pero no dice qué causó un cambio ni diagnostica."
+  - "ONDA compara tus últimos datos con tu propia línea base, pero no dice qué causó un cambio ni diagnostica."
 imageAlt: "Una fina línea turquesa de latidos sobre un fondo azul marino oscuro, rodeada de pequeños iconos beis luminosos: una luna, una copa, un termómetro, una zapatilla de correr, una montaña, una taza de café y nubes."
 faq:
   - q: "¿Es peligroso tener la HRV baja?"
@@ -214,6 +214,6 @@ La respiración lenta es algo que puedes hacer en cualquier momento. {{fact:clai
 
 ## En ONDA
 
-ONDA se centra en la práctica más que en el seguimiento. Con un Apple Watch, o con un dispositivo que sincronice los datos cardíacos con Apple Health, lee tu HRV y tu frecuencia cardíaca en reposo de Apple Health [S36] y construye tu propia línea base a lo largo de {{fact:baseline.window}}, y solo empieza a leer señales tras al menos {{fact:baseline.minNights}}. {{fact:baseline.compare}}: {{fact:baseline.floors}}, con {{fact:onda.signal.cadence}}. La línea base usa el valor de HRV que guarda Apple Health ({{fact:applewatch.hrv.healthkit}}; {{fact:applewatch.hrv.variants2026}}). Una señal así es descriptiva: dice que una noche está fuera de tu propio rango, no por qué [S36]. ONDA no identifica qué causa hay detrás de un cambio. Para practicar, ONDA ofrece respiración guiada con indicaciones habladas y visuales y sin marcador numérico de ritmo, y {{fact:onda.practice.livePulse}}. ONDA no tiene un estudio propio de su eficacia, no diagnostica ninguna enfermedad y no sustituye a un médico. Consulta [qué mide ONDA](/measurements).
+ONDA se centra en la práctica más que en el seguimiento. Con un Apple Watch, o con un dispositivo que sincronice los datos cardíacos con Apple Health, lee tu HRV y tu frecuencia cardíaca en reposo de Apple Health [S36] y construye tu propia línea base a lo largo de {{fact:baseline.window}}, y solo empieza a leer señales tras al menos {{fact:baseline.minNights}}. {{fact:baseline.compare}}: {{fact:baseline.floors}}, con {{fact:onda.signal.cadence}}. La línea base usa el valor de HRV que guarda Apple Health ({{fact:applewatch.hrv.healthkit}}; {{fact:applewatch.hrv.variants2026}}). Una señal así es descriptiva: dice que tus últimos valores están fuera de tu propio rango, no por qué [S36]. ONDA no identifica qué causa hay detrás de un cambio. Para practicar, ONDA ofrece respiración guiada con indicaciones habladas y visuales y sin marcador numérico de ritmo, y {{fact:onda.practice.livePulse}}. ONDA no tiene un estudio propio de su eficacia, no diagnostica ninguna enfermedad y no sustituye a un médico. Consulta [qué mide ONDA](/measurements).
 
 > Información educativa, no un diagnóstico ni un tratamiento médico.

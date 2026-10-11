@@ -1,5 +1,5 @@
 ---
-sourceHash: 02e01673e8d2
+sourceHash: 0a5bb76126f6
 title: "Altitud y HRV: qué cambia y qué no puede predecir"
 metaTitle: "Altitud y HRV: qué muestran los estudios"
 metaDescription: "Cómo cambia la variabilidad de la frecuencia cardíaca a gran altitud, si la HRV puede predecir el mal de altura y por qué deciden los síntomas, no un reloj, cuándo bajar."
@@ -19,7 +19,7 @@ keyPoints:
   - "En un estudio pequeño a muy gran altitud, la parte del ritmo cardíaco ligada a la respiración no había vuelto a su patrón del nivel del mar tras una estancia larga."
   - "Un sensor de pulso en el dedo registró la variabilidad de la frecuencia cardíaca incluso a altitud extrema, pero sus componentes rápidos, ligados a la respiración, se apartaron del ECG."
   - "La variabilidad de la frecuencia cardíaca y los relojes no sustituyen a vigilar los síntomas del mal de altura; si hay síntomas, baja y busca ayuda médica."
-  - "Con un Apple Watch o con datos cardíacos de Apple Health, ONDA compara tus noches con tu propia línea base; no evalúa el mal de altura ni avisa de él."
+  - "Con un Apple Watch o con datos cardíacos de Apple Health, ONDA compara tus últimos datos con tu propia línea base; no evalúa el mal de altura ni avisa de él."
 imageAlt: "Una fina línea turquesa de ritmo cardíaco sobre un fondo azul marino oscuro sube por una pendiente con forma de montaña; sus latidos se aprietan cerca de la cima entre puntos tenues y luego se asientan en latidos tranquilos."
 evidenceMap:
   - claim: "En un metaanálisis de adultos sanos en sus primeros días a gran altitud (datos altitude.li.studies, altitude.li.scope), el SDNN, el RMSSD, la potencia de alta frecuencia y otras medidas de HRV relacionadas fueron más bajos que a nivel del mar."
@@ -213,6 +213,6 @@ Lejos de la montaña, las causas frecuentes de una lectura baja están en [¿por
 
 ## En ONDA
 
-ONDA se centra en la práctica más que en el seguimiento: ofrece prácticas de respiración guiada con indicaciones habladas y visuales, y {{fact:onda.practice.livePulse}}. Con un Apple Watch, o con un dispositivo que sincronice los datos cardíacos con Apple Health, compara tu HRV, tu frecuencia cardíaca en reposo y tu frecuencia respiratoria con tu propia línea base de {{fact:baseline.window}}. {{fact:applewatch.hrv.healthkit}}, así que la tendencia de HRV de ONDA es una tendencia de SDNN. En los primeros días después de viajar a altitud, esa línea base todavía refleja tus noches en casa, así que una señal en ese momento indica que tus noches difieren de las de casa, algo esperable en altitud, no que estés desarrollando mal de altura. Como la línea base de {{fact:baseline.window}} es móvil, va incorporando poco a poco las noches en altitud, así que la referencia con la que compara cambia durante la estancia. ONDA no evalúa el mal de altura ni avisa de él, no diagnostica ninguna enfermedad y no sustituye a un médico; los estudios de esta página no probaron ONDA. Consulta [qué mide ONDA](/measurements).
+ONDA se centra en la práctica más que en el seguimiento: ofrece prácticas de respiración guiada con indicaciones habladas y visuales, y {{fact:onda.practice.livePulse}}. Con un Apple Watch, o con un dispositivo que sincronice los datos cardíacos con Apple Health, compara tu HRV, tu frecuencia cardíaca en reposo y tu frecuencia respiratoria con tu propia línea base de {{fact:baseline.window}}. {{fact:applewatch.hrv.healthkit}}, así que la tendencia de HRV de ONDA es una tendencia de SDNN. En los primeros días después de viajar a altitud, esa línea base todavía refleja tus datos de casa, así que una señal en ese momento indica que tus últimos valores difieren de los de casa, algo esperable en altitud, no que estés desarrollando mal de altura. Como la línea base de {{fact:baseline.window}} es móvil, va incorporando poco a poco los días en altitud, así que la referencia con la que compara cambia durante la estancia. ONDA no evalúa el mal de altura ni avisa de él, no diagnostica ninguna enfermedad y no sustituye a un médico; los estudios de esta página no probaron ONDA. Consulta [qué mide ONDA](/measurements).
 
 > Información educativa, no un diagnóstico ni un tratamiento médico.

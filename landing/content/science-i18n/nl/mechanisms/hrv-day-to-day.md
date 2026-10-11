@@ -1,5 +1,5 @@
 ---
-sourceHash: 477ca0c9b233
+sourceHash: f70effe83d62
 title: "Waarom HRV van dag tot dag verandert"
 metaTitle: "Waarom HRV per dag verandert: oorzaken en bewijs"
 metaDescription: "Waarom hartslagvariabiliteit per dag verschuift: normale ruis, slaap, alcohol, training, ziekte, stress en de cyclus — mechanismen en bewijs."
@@ -73,7 +73,7 @@ evidenceMap:
     limitation: "Twaalf mannen met krachttrainingservaring rond één trainingssessie; genormaliseerde spectrale eenheden."
   - claim: "Vagale tonus is niet rechtstreeks te meten; HRV-maten zoals RMSSD weerspiegelen vagaal gemedieerde veranderingen in de hartslag."
     limitation: "Definitie; ze kwantificeert de vagale activiteit niet."
-  - claim: "ONDA vergelijkt elke nacht met de persoonlijke bandbreedte van de gebruiker en leest HRV (SDNN) uit Apple Health."
+  - claim: "ONDA vergelijkt de laatste dag met gegevens met de persoonlijke bandbreedte van de gebruiker en leest HRV (SDNN) uit Apple Health."
     limitation: "Productdocumentatie; beschrijft alleen het gedrag van de app."
 ---
 

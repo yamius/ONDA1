@@ -1,5 +1,5 @@
 ---
-sourceHash: ab58f7477955
+sourceHash: a4a0bc06b042
 title: "Waarom is mijn HRV laag? Veelvoorkomende oorzaken en wat het bewijs laat zien"
 metaTitle: "Waarom is mijn HRV laag? Oorzaken en wat ze betekenen"
 metaDescription: "Lage HRV? Meestal een reactie op slaap, alcohol, ziekte, stress of training, geen diagnose. Elke oorzaak met het bewijs, en wanneer je naar de dokter gaat."
@@ -18,7 +18,7 @@ keyPoints:
   - "Bij een korte nacht is de gemeten daling klein, bij langdurige stress en ploegendienst is het bewijs gemengd, en bij vaste koffiedrinkers is niet aangetoond dat een matige hoeveelheid cafeïne de HRV in rust verandert."
   - "Leeftijd verlaagt HRV gemiddeld over decennia, maar verklaart geen daling van de ene week op de andere."
   - "Meerdere dagen onder je gebruikelijke bandbreedte, met een hogere rusthartslag en je niet lekker voelen, zijn een reden om rust te nemen. Bel de hulpdiensten of zoek spoedhulp bij: pijn of druk op de borst; flauwvallen of bijna flauwvallen; ernstige kortademigheid; een snelle, krachtige of onregelmatige hartslag die in rust niet bedaart (ook met duizeligheid); plotselinge verwardheid, zwakte aan één kant van het lichaam, moeite met praten."
-  - "ONDA vergelijkt je nachten met je eigen basislijn, maar zegt niet wat een verandering veroorzaakte en stelt geen diagnose."
+  - "ONDA vergelijkt je laatste gegevens met je eigen basislijn, maar zegt niet wat een verandering veroorzaakte en stelt geen diagnose."
 imageAlt: "Een dunne blauwgroene hartslaglijn op een donker marineblauwe achtergrond, omringd door kleine, zacht gloeiende beige pictogrammen: een maan, een glas, een thermometer, een hardloopschoen, een berg, een koffiekop en wolken."
 faq:
   - q: "Is een lage HRV gevaarlijk?"
@@ -214,6 +214,6 @@ Langzaam ademen kun je op elk moment doen. {{fact:claim.slowExhale}}. In een gro
 
 ## In ONDA
 
-ONDA draait om oefenen, niet om bijhouden. Met een Apple Watch, of een apparaat dat hartgegevens naar Apple Gezondheid synchroniseert, leest de app je HRV en rusthartslag uit Apple Gezondheid [S36] en bouwt je eigen basislijn op over {{fact:baseline.window}}, waarbij signalen pas worden gelezen na minstens {{fact:baseline.minNights}}. {{fact:baseline.compare}}: {{fact:baseline.floors}}, met {{fact:onda.signal.cadence}}. De basislijn gebruikt de HRV-waarde die Apple Gezondheid opslaat ({{fact:applewatch.hrv.healthkit}}; {{fact:applewatch.hrv.variants2026}}). Zo'n signaal is beschrijvend: het zegt dat een nacht buiten je eigen bandbreedte valt, niet waarom [S36]. ONDA stelt niet vast welke oorzaak achter een verandering zit. Om te oefenen biedt ONDA begeleide ademhaling met gesproken en visuele begeleiding en zonder numerieke pacer, en {{fact:onda.practice.livePulse}}. ONDA heeft geen eigen studie naar zijn effectiviteit, stelt geen diagnoses en vervangt geen arts. Zie [wat ONDA meet](/measurements).
+ONDA draait om oefenen, niet om bijhouden. Met een Apple Watch, of een apparaat dat hartgegevens naar Apple Gezondheid synchroniseert, leest de app je HRV en rusthartslag uit Apple Gezondheid [S36] en bouwt je eigen basislijn op over {{fact:baseline.window}}, waarbij signalen pas worden gelezen na minstens {{fact:baseline.minNights}}. {{fact:baseline.compare}}: {{fact:baseline.floors}}, met {{fact:onda.signal.cadence}}. De basislijn gebruikt de HRV-waarde die Apple Gezondheid opslaat ({{fact:applewatch.hrv.healthkit}}; {{fact:applewatch.hrv.variants2026}}). Zo'n signaal is beschrijvend: het zegt dat je laatste waarden buiten je eigen bandbreedte vallen, niet waarom [S36]. ONDA stelt niet vast welke oorzaak achter een verandering zit. Om te oefenen biedt ONDA begeleide ademhaling met gesproken en visuele begeleiding en zonder numerieke pacer, en {{fact:onda.practice.livePulse}}. ONDA heeft geen eigen studie naar zijn effectiviteit, stelt geen diagnoses en vervangt geen arts. Zie [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

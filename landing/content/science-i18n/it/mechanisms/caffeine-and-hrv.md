@@ -1,5 +1,5 @@
 ---
-sourceHash: d38842ecad3c
+sourceHash: 79cf13031244
 title: "Caffeina e HRV: che cosa fa il caffè e che cosa no"
 metaTitle: "Caffeina e HRV: il caffè abbassa la tua HRV?"
 metaDescription: "Caffè e HRV a riposo e dopo l'esercizio: che cosa mostra la ricerca, in che cosa differiscono gli energy drink e il ruolo della caffeina serale."
@@ -46,7 +46,7 @@ evidenceMap:
     limitation: "Lo stesso unico piccolo studio; quattro ore di osservazione; volontari sani."
   - claim: "La caffeina serale disturba il sonno, e in un piccolo studio una dose elevata prima di dormire ha modificato le misure cardiache battito per battito durante il sonno REM."
     limitation: "Affermazione di contesto di un piccolo studio in laboratorio del sonno con un'unica dose elevata poco prima di dormire; solo misure spettrali."
-  - claim: "ONDA costruisce la sua baseline dai valori di Apple Health e confronta ogni notte con il corridoio personale dell'utente (fatti baseline.window, baseline.compare)."
+  - claim: "ONDA costruisce la sua baseline dai valori di Apple Health e confronta l'ultimo giorno con dati con il corridoio personale dell'utente (fatti baseline.window, baseline.compare)."
     limitation: "Descrive solo il comportamento dell'app; non è una prova a sostegno di alcuna affermazione sulla salute."
 ---
 

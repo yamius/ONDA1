@@ -1,5 +1,5 @@
 ---
-sourceHash: 02e01673e8d2
+sourceHash: 0a5bb76126f6
 title: "Höhe und HRV: Was sich verändert und was sie nicht vorhersagen kann"
 metaTitle: "Höhe und HRV: Was Studien zeigen"
 metaDescription: "Wie große Höhe die Herzratenvariabilität verändert, ob die HRV Höhenkrankheit vorhersagen kann und warum Symptome, nicht eine Uhr, über den Abstieg entscheiden."
@@ -19,7 +19,7 @@ keyPoints:
   - "In einer kleinen Studie in sehr großer Höhe war der atmungsgebundene Anteil des Herzrhythmus auch nach einem langen Aufenthalt nicht zu seinem Muster auf Meereshöhe zurückgekehrt."
   - "Ein Pulssensor am Finger erfasste die Herzratenvariabilität selbst in extremer Höhe, doch seine schnellen, atmungsgebundenen Anteile wichen vom EKG ab."
   - "Herzratenvariabilität und Uhren ersetzen nicht die Prüfung auf Symptome der Höhenkrankheit; bei Symptomen steig ab und such ärztliche Hilfe."
-  - "Mit einer Apple Watch oder Herzdaten in Apple Health vergleicht ONDA deine Nächte mit deiner eigenen Baseline; Höhenkrankheit bewertet ONDA nicht und warnt auch nicht davor."
+  - "Mit einer Apple Watch oder Herzdaten in Apple Health vergleicht ONDA deine letzten Daten mit deiner eigenen Baseline; Höhenkrankheit bewertet ONDA nicht und warnt auch nicht davor."
 imageAlt: "Eine dünne türkisfarbene Herzrhythmuslinie auf dunkelblauem Hintergrund steigt einen bergförmigen Hang hinauf; nahe dem Gipfel rücken die Schläge zwischen blassen Punkten dicht zusammen, dann beruhigen sie sich wieder."
 evidenceMap:
   - claim: "In einer Metaanalyse gesunder Erwachsener in ihren ersten Tagen in großer Höhe (Fakten altitude.li.studies, altitude.li.scope) waren SDNN, RMSSD, die Hochfrequenzleistung und verwandte HRV-Maße niedriger als auf Meereshöhe."
@@ -213,6 +213,6 @@ Fern der Berge stehen die häufigen Ursachen eines niedrigen Werts unter [Warum 
 
 ## In ONDA
 
-ONDA ist auf Übung statt auf Tracking ausgerichtet: Es bietet geführte Atemübungen mit gesprochener und visueller Anleitung, und {{fact:onda.practice.livePulse}}. Mit einer Apple Watch oder einem Gerät, das Herzdaten mit Apple Health synchronisiert, vergleicht es deine HRV, deinen Ruhepuls und deine Atemfrequenz mit deiner eigenen Baseline über {{fact:baseline.window}}. {{fact:applewatch.hrv.healthkit}}, daher ist der HRV-Trend von ONDA ein SDNN-Trend. In den ersten Tagen nach deiner Reise in die Höhe spiegelt diese Baseline noch deine Nächte zu Hause wider; ein Signal sagt dann, dass sich deine Nächte von zu Hause unterscheiden, was in der Höhe zu erwarten ist, und nicht, dass du Höhenkrankheit bekommst. Da die Baseline über {{fact:baseline.window}} rollierend ist, nimmt sie nach und nach die Nächte in der Höhe auf, sodass sich das, womit sie vergleicht, während des Aufenthalts verändert. ONDA bewertet Höhenkrankheit nicht und warnt nicht davor, diagnostiziert keine Erkrankung und ersetzt keinen Arzt; die Studien auf dieser Seite haben ONDA nicht getestet. Siehe [was ONDA misst](/measurements).
+ONDA ist auf Übung statt auf Tracking ausgerichtet: Es bietet geführte Atemübungen mit gesprochener und visueller Anleitung, und {{fact:onda.practice.livePulse}}. Mit einer Apple Watch oder einem Gerät, das Herzdaten mit Apple Health synchronisiert, vergleicht es deine HRV, deinen Ruhepuls und deine Atemfrequenz mit deiner eigenen Baseline über {{fact:baseline.window}}. {{fact:applewatch.hrv.healthkit}}, daher ist der HRV-Trend von ONDA ein SDNN-Trend. In den ersten Tagen nach deiner Reise in die Höhe spiegelt diese Baseline noch deine Daten von zu Hause wider; ein Signal sagt dann, dass sich deine letzten Werte von zu Hause unterscheiden, was in der Höhe zu erwarten ist, und nicht, dass du Höhenkrankheit bekommst. Da die Baseline über {{fact:baseline.window}} rollierend ist, nimmt sie nach und nach die Tage in der Höhe auf, sodass sich das, womit sie vergleicht, während des Aufenthalts verändert. ONDA bewertet Höhenkrankheit nicht und warnt nicht davor, diagnostiziert keine Erkrankung und ersetzt keinen Arzt; die Studien auf dieser Seite haben ONDA nicht getestet. Siehe [was ONDA misst](/measurements).
 
 > Informationen zur Aufklärung, keine Diagnose und keine medizinische Behandlung.

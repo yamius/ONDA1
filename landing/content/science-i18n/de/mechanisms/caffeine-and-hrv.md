@@ -1,5 +1,5 @@
 ---
-sourceHash: d38842ecad3c
+sourceHash: 79cf13031244
 title: "Koffein und HRV: Was Kaffee bewirkt und was nicht"
 metaTitle: "Koffein und HRV: Senkt Kaffee deine HRV?"
 metaDescription: "Was die Forschung zu Kaffee und HRV in Ruhe und nach dem Training zeigt, wo Energydrinks anders sind und wie spätes Koffein die HRV erreicht."
@@ -47,7 +47,7 @@ evidenceMap:
     limitation: "Dieselbe einzelne kleine Studie; vier Stunden Nachbeobachtung; gesunde Freiwillige."
   - claim: "Koffein am Abend stört den Schlaf, und eine große Dosis vor dem Schlafengehen veränderte in einer kleinen Studie Schlag-zu-Schlag-Herzwerte im REM-Schlaf."
     limitation: "Hintergrundaussage einer kleinen Schlaflaborstudie mit einer großen Dosis kurz vor dem Schlafengehen; nur spektrale Werte."
-  - claim: "ONDA bildet seine Baseline aus Apple-Health-Werten und vergleicht jede Nacht mit dem eigenen Korridor der Nutzerin oder des Nutzers (Fakten baseline.window, baseline.compare)."
+  - claim: "ONDA bildet seine Baseline aus Apple-Health-Werten und vergleicht den letzten Tag mit Daten mit dem eigenen Korridor der Nutzerin oder des Nutzers (Fakten baseline.window, baseline.compare)."
     limitation: "Beschreibt nur das Verhalten der App; kein Beleg für irgendeine Gesundheitsaussage."
 ---
 

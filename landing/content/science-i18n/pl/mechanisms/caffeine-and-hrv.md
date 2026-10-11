@@ -1,5 +1,5 @@
 ---
-sourceHash: d38842ecad3c
+sourceHash: 79cf13031244
 title: "Kofeina a HRV: co kawa robi, a czego nie robi"
 metaTitle: "Kofeina a HRV: czy kawa obniża Twoje HRV?"
 metaDescription: "Co badania mówią o kawie i zmienności rytmu serca w spoczynku i po wysiłku, czym różnią się napoje energetyczne i jak późna kofeina wpływa na HRV."
@@ -45,7 +45,7 @@ evidenceMap:
     limitation: "To samo jedno małe badanie; obserwacja przez cztery godziny; zdrowi ochotnicy."
   - claim: "Kofeina wieczorem zaburza sen, a duża dawka przed snem zmieniła w małym badaniu miary rytmu serca z uderzenia na uderzenie podczas snu REM."
     limitation: "Stwierdzenie wprowadzające z małego badania w laboratorium snu z jedną dużą dawką tuż przed snem; tylko miary spektralne."
-  - claim: "ONDA tworzy linię bazową z wartości z Apple Health i porównuje każdą noc z własnym korytarzem użytkownika (fakty baseline.window, baseline.compare)."
+  - claim: "ONDA tworzy linię bazową z wartości z Apple Health i porównuje ostatni dzień z danymi z własnym korytarzem użytkownika (fakty baseline.window, baseline.compare)."
     limitation: "Opisuje wyłącznie działanie aplikacji; nie jest dowodem na żadne twierdzenie zdrowotne."
 ---
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "55f2a6818cc5"
+sourceHash: "3c391a42bca8"
 title: "Baseline dell'HRV: perché la tua normalità conta più di qualsiasi norma"
 metaTitle: "Baseline dell'HRV: la tua normalità, non una norma"
 metaDescription: "La baseline dell'HRV è il tuo intervallo abituale, non una media. Perché vale più delle norme per età, come la crea ONDA, cosa dice uno scostamento."
@@ -15,7 +15,7 @@ shortAnswer: >
 keyPoints:
   - "La baseline dell'HRV è il tuo livello abituale di HRV con la sua normale dispersione, costruito da molte letture: mai da una sola."
   - "Le persone della stessa età differiscono così tanto, e dispositivi e metriche variano così tanto, che confrontare la tua HRV con quella di un altro non ha quasi senso."
-  - "ONDA costruisce la baseline da una finestra di più notti delle tue letture e confronta ogni notte con il tuo corridoio personale."
+  - "ONDA costruisce la baseline da una finestra di più giorni delle tue letture e confronta il tuo ultimo giorno con dati con il tuo corridoio personale."
   - "Una lettura fuori dal corridoio è di solito rumore; uno spostamento che dura giorni o settimane è ciò che merita attenzione."
   - "Condizioni di misura instabili, una malattia, un cambiamento nell'allenamento, un nuovo dispositivo o una metrica diversa possono spostare le letture o rendere inutilizzabile la baseline."
   - "Uscire dal corridoio non significa che tu sia stressato o malato, e restarci dentro non garantisce la salute."
@@ -90,9 +90,9 @@ La metrica deve restare fissa. RMSSD e SDNN riassumono aspetti diversi del ritmo
 
 ## Cosa mostrano le prove?
 
-**Accertato.** Gli adulti sani differiscono enormemente nell'HRV, e non esistono valori normativi condivisi per le misure a breve termine [S3]. In media il valore diminuisce con l'età, mentre le differenze tra individui sono ampie a ogni età [S2]. I valori di dispositivi, metriche e condizioni di registrazione diversi non sono intercambiabili [S6, S7], e le registrazioni di durata diversa non si possono confrontare direttamente [S5]. Una baseline personale richiede molte letture; le registrazioni isolate non bastano a stabilirla [S10].
+**Accertato.** Gli adulti sani differiscono enormemente nell'HRV, e non esistono valori normativi condivisi per le misure a breve termine [S3]. In media il valore diminuisce con l'età, mentre le differenze tra individui sono ampie a ogni età [S2]. I valori di dispositivi, metriche e condizioni di registrazione diversi non sono intercambiabili [S6, S7], e le registrazioni di durata diversa non si possono confrontare direttamente [S5].
 
-**Dipende dal contesto.** La pratica specifica di monitoraggio con medie settimanali mobili e coefficiente di variazione viene dalle scienze dello sport, dove un valore più basso di quello di un compagno non indica necessariamente uno stato fisiologico peggiore [S10]. La PPG al polso segue i valori derivati dall'ECG in condizioni di riposo controllate [S8]. La variazione stagionale, dove riportata, è debole [S11]. E poiché i risultati sull'HRV sono facili da sovrainterpretare, le revisioni metodologiche mettono in guardia dal leggervi troppo [S4].
+**Dipende dal contesto.** Una baseline personale richiede molte letture; le registrazioni isolate non bastano a stabilirla [S10]. La pratica specifica di monitoraggio con medie settimanali mobili e coefficiente di variazione viene dalle scienze dello sport, dove un valore più basso di quello di un compagno non indica necessariamente uno stato fisiologico peggiore [S10]. La PPG al polso segue i valori derivati dall'ECG in condizioni di riposo controllate [S8]. La variazione stagionale, dove riportata, è debole [S11]. E poiché i risultati sull'HRV sono facili da sovrainterpretare, le revisioni metodologiche mettono in guardia dal leggervi troppo [S4].
 
 **Non risolto.** La finestra esatta da usare per una baseline è una scelta pratica, non una costante scientifica: i protocolli di ricerca differiscono dalla logica delle app. Le finestre di ONDA sono logica dell'app, documentate più sotto, definite una sola volta e non frutto di un consenso del settore [S9].
 
@@ -107,7 +107,7 @@ Interpretare è davvero difficile: una revisione metodologica avverte che la fac
 ONDA costruisce la baseline esattamente come descritto in questa pagina, e le finestre sono definite una sola volta, qui:
 
 - **La finestra della baseline.** La baseline personale per HRV, frequenza cardiaca a riposo e frequenza respiratoria si costruisce su {{fact:baseline.window}} delle tue letture.
-- **Il minimo.** Servono almeno {{fact:baseline.minNights}} con dati validi prima che venga letto qualsiasi segnale.
+- **Il minimo.** Servono almeno {{fact:baseline.minNights}} prima che venga letto qualsiasi segnale.
 - **Il confronto.** {{fact:baseline.compare}}.
 - **La finestra del corridoio.** Il corridoio a semaforo si calcola su {{fact:baseline.corridor}}.
 - **La metrica.** La baseline legge i valori di HRV memorizzati in Apple Health, da Apple Watch o da un altro dispositivo che vi sincronizza i dati cardiaci [S9], e {{fact:applewatch.hrv.healthkit}}.

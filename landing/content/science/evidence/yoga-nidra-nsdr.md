@@ -277,7 +277,7 @@ sources:
 evidenceMap:
   - claim: "Yoga nidra combines guided imagery with the lying 'corpse pose' and aims at deep relaxation with awareness of the surroundings retained; it was systematised by Swami Satyananda Saraswati from the 1960s."
     sources: [S3]
-    class: established
+    class: context-dependent
     claimType: definition
     quote: "it was not until the 1960s that an updated and systematized system of practice was introduced to the public through the writings of Swami Satyananda Saraswati"
     limitation: "Narrative review describing the tradition; not outcome evidence."

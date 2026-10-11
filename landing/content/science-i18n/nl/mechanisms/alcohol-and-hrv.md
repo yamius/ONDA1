@@ -1,5 +1,5 @@
 ---
-sourceHash: 9e29577a7288
+sourceHash: 93c36ac07742
 title: "Alcohol en HRV: wat een drankje met je nacht doet"
 metaTitle: "Alcohol en HRV: de nacht na het drinken"
 metaDescription: "Waarom je nachtelijke HRV daalt en je rusthartslag stijgt na het drinken, welke rol hoeveelheid en tijdstip spelen en wat onderzoek over alcohol nog niet weet."
@@ -47,7 +47,7 @@ evidenceMap:
     limitation: "Voorbehoud van de auteurs; herhaalt de beperking."
   - claim: "Een narratieve review concludeert dat acuut bingedrinken en chronisch zwaar drinken de hartslag en de autonome functie schaden, terwijl de bevindingen over licht tot matig drinken wisselend zijn."
     limitation: "Narratieve review, geen systematische review of meta-analyse; behandelt hartuitkomsten in het algemeen, niet specifiek HRV."
-  - claim: "ONDA bouwt zijn baseline op uit waarden uit Apple Health en vergelijkt elke nacht met de eigen bandbreedte van de gebruiker (feiten baseline.window, baseline.compare)."
+  - claim: "ONDA bouwt zijn baseline op uit waarden uit Apple Health en vergelijkt de laatste dag met gegevens met de eigen bandbreedte van de gebruiker (feiten baseline.window, baseline.compare)."
     limitation: "Beschrijft alleen hoe de app werkt; geen bewijs voor enige gezondheidsclaim."
 ---
 

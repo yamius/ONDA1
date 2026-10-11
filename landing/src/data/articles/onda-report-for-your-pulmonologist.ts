@@ -76,7 +76,7 @@ Seek emergency care for severe breathlessness, difficulty speaking in full sente
 
 ## Your breathing, on one page
 
-ONDA builds your personal baseline for night-time breathing rate, resting heart rate and HRV from Apple Health — from your Apple Watch or another tracker that syncs there — marks the days you left your usual range, and lets you note triggers and symptoms. You can export any period as a PDF, generated on your device and shared only by you, so a lung specialist sees how your breathing behaved over weeks — not just on the day of the test.
+ONDA builds your personal baseline for breathing rate, resting heart rate and HRV from values in Apple Health — from your Apple Watch or another tracker that syncs there — marks the days you left your usual range, and lets you note triggers and symptoms. You can export any period as a PDF, generated on your device and shared only by you, so a lung specialist sees how your breathing behaved over weeks — not just on the day of the test.
 
 *ONDA is a breathing and HRV biofeedback app, not a medical device, and does not diagnose lung conditions. This article is general information, not medical advice. During an asthma attack, use your reliever and follow your action plan; seek emergency care for severe breathlessness.*
 `,

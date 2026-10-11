@@ -15,7 +15,7 @@ shortAnswer: >
 keyPoints:
   - "An HRV baseline is your own typical HRV level and its normal spread, built from many readings — never from one."
   - "People of the same age differ so widely, and devices and metrics vary so much, that comparing your HRV with someone else's is close to meaningless."
-  - "ONDA builds the baseline from a multi-night window of your own readings and compares each night with your personal corridor."
+  - "ONDA builds the baseline from a multi-day window of your own readings and compares your latest day of data with your personal corridor."
   - "One reading outside your corridor is usually noise; a sustained shift over days or weeks is what deserves attention."
   - "Unstable measurement conditions, illness, a training change, a new device or a different metric can move readings or break the baseline."
   - "Leaving the corridor does not mean you are stressed or ill, and staying inside it does not guarantee health."
@@ -117,7 +117,7 @@ sources:
 evidenceMap:
   - claim: "A personal baseline needs many readings; isolated recordings do not establish one."
     sources: [S10]
-    class: established
+    class: context-dependent
     claimType: measurement
     quote: "isolated recordings do not account for baseline HRV, which requires frequent measurements over at least a week to establish"
     limitation: "Narrative review of athlete monitoring; the principle is general, but the specific protocols target sport practice."
@@ -259,9 +259,9 @@ The metric must stay fixed. RMSSD and SDNN summarize different aspects of the he
 
 ## What does the evidence show?
 
-**Established.** Healthy adults differ enormously in HRV, and no agreed normative values exist for short-term measures [S3]. On average the value falls with age, while individuals vary widely at every age [S2]. Values from different devices, metrics and recording conditions are not interchangeable [S6, S7], and recordings of different lengths cannot be compared directly [S5]. A personal baseline needs many readings; isolated recordings do not establish one [S10].
+**Established.** Healthy adults differ enormously in HRV, and no agreed normative values exist for short-term measures [S3]. On average the value falls with age, while individuals vary widely at every age [S2]. Values from different devices, metrics and recording conditions are not interchangeable [S6, S7], and recordings of different lengths cannot be compared directly [S5].
 
-**Context-dependent.** The specific monitoring practice of rolling weekly means with the coefficient of variation comes from sports science, where a lower value than a peer's does not necessarily indicate a poorer physiological state [S10]. Wrist PPG tracks ECG-derived values under controlled resting conditions [S8]. Seasonal variation, where reported, is weak [S11]. And because HRV findings are easy to over-interpret, methodology reviews warn against reading too much into them [S4].
+**Context-dependent.** A personal baseline needs many readings; isolated recordings do not establish one [S10]. The specific monitoring practice of rolling weekly means with the coefficient of variation comes from sports science, where a lower value than a peer's does not necessarily indicate a poorer physiological state [S10]. Wrist PPG tracks ECG-derived values under controlled resting conditions [S8]. Seasonal variation, where reported, is weak [S11]. And because HRV findings are easy to over-interpret, methodology reviews warn against reading too much into them [S4].
 
 **Not settled.** The exact window a baseline should use is a practical choice, not a scientific constant: research protocols differ from app logic. ONDA's windows are app logic — documented below, defined once, and not a consensus of the field [S9].
 
@@ -276,7 +276,7 @@ Interpretation is genuinely hard — a methods review warns that the ease of acc
 ONDA builds the baseline exactly as this page describes, and the windows are defined once, here:
 
 - **The baseline window.** The personal baseline for HRV, resting heart rate and breathing rate is built over {{fact:baseline.window}} of your own readings.
-- **The minimum.** At least {{fact:baseline.minNights}} with valid data must be there before any signal is read at all.
+- **The minimum.** At least {{fact:baseline.minNights}} must be there before any signal is read at all.
 - **The comparison.** {{fact:baseline.compare}}.
 - **The corridor window.** The traffic-light corridor is computed over {{fact:baseline.corridor}}.
 - **The metric.** The baseline reads the HRV values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S9] — and {{fact:applewatch.hrv.healthkit}}.

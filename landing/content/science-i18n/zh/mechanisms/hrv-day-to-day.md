@@ -1,5 +1,5 @@
 ---
-sourceHash: 477ca0c9b233
+sourceHash: f70effe83d62
 title: "HRV 为什么每天都在变化"
 metaTitle: "HRV 为什么每天都在变：原因与证据"
 metaDescription: "心率变异性为什么每天都不一样：正常噪声、睡眠、饮酒、训练、疾病、压力和月经周期——背后的机制与研究证据。"
@@ -67,7 +67,7 @@ evidenceMap:
     limitation: "十二名有抗阻训练习惯的男性，围绕一次运动；使用标准化频域单位。"
   - claim: "迷走神经张力无法直接测量；RMSSD 等 HRV 指标反映的是由迷走神经介导的心率变化。"
     limitation: "定义；它没有量化迷走神经活动。"
-  - claim: "ONDA 把每一晚与用户自己的个人基线波动区间进行比较，并从 Apple Health 读取 HRV（SDNN）。"
+  - claim: "ONDA 把最近一天的数据与用户自己的个人基线波动区间进行比较，并从 Apple Health 读取 HRV（SDNN）。"
     limitation: "产品文档；只描述应用的行为。"
 ---
 

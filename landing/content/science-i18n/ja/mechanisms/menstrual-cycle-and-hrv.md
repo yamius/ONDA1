@@ -1,5 +1,5 @@
 ---
-sourceHash: d3c51d8c300f
+sourceHash: 49beca2392b4
 title: "月経周期とHRV：ベースラインが動く理由"
 metaTitle: "月経周期とHRV：何がなぜ変わるのか"
 metaDescription: "月経周期のなかで心拍変動がどう変わるのか、なぜ女性一人ひとりに固有のパターンがあるのか、そしてホルモン避妊法と閉経で何が変わるのかを解説します。"
@@ -47,7 +47,7 @@ evidenceMap:
     limitation: "十一人の女性で二つの時期を比較。実験室での短い記録。"
   - claim: "レビューの著者は、女性にHRVを示す際には周期に関連した差を考慮すべきだと述べている。"
     limitation: "著者の提言であり、検証された方法ではない。"
-  - claim: "ONDAは、Apple Healthの値からベースラインをつくり、毎晩をユーザー自身のコリドーと比較する（ファクト baseline.window、baseline.compare）。"
+  - claim: "ONDAは、Apple Healthの値からベースラインをつくり、データのある最新の日をユーザー自身のコリドーと比較する（ファクト baseline.window、baseline.compare）。"
     limitation: "アプリの動作を説明しているだけで、健康に関するいかなる主張の根拠でもない。"
 ---
 

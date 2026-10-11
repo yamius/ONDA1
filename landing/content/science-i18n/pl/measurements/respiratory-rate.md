@@ -1,5 +1,5 @@
 ---
-sourceHash: 94f41b941e62
+sourceHash: 3e2d8ad38a9d
 title: "Spoczynkowa częstość oddechów: co odzwierciedla i jak się ją mierzy"
 metaTitle: "Częstość oddechów: znaczenie i pomiar"
 metaDescription: "Częstość oddechów to liczba oddechów na minutę w spoczynku. Jak się ją mierzy, co ją zmienia i czemu twój nocny trend mówi więcej niż jeden odczyt."
@@ -46,7 +46,7 @@ evidenceMap:
     limitation: "Jedno retrospektywne badanie urządzeń jednej marki u osób, które już miały objawy; małe zbiory walidacyjne; kilku autorów zatrudnionych lub finansowanych przez producenta. To nie jest test diagnostyczny."
   - claim: "W dużej, samodzielnie zgłaszającej się próbie użytkowników urządzeń ubieralnych chorych na COVID częstość oddechów i tętno zwykle rosły w czasie choroby, a HRV spadało."
     limitation: "Jedno badanie obserwacyjne użytkowników jednego producenta z samodzielnie zgłaszanymi diagnozami; wszyscy autorzy finansowani przez producenta. To nie jest test diagnostyczny."
-  - claim: "ONDA odczytuje częstość oddechów z Apple Health jako jeden z trzech sygnałów linii bazowej, porównuje noce z osobistym korytarzem z okna linii bazowej i z minimalnymi progami, i niczego nie diagnozuje."
+  - claim: "ONDA odczytuje częstość oddechów z Apple Health jako jeden z trzech sygnałów linii bazowej, porównuje dni z danymi z osobistym korytarzem z okna linii bazowej i z minimalnymi progami, i niczego nie diagnozuje."
     limitation: "Opisuje wyłącznie działanie aplikacji; nie jest dowodem na żadne twierdzenie zdrowotne ani na dokładność wartości."
 ---
 
@@ -112,6 +112,6 @@ Oddychaniem steruje pień mózgu, który dostosowuje częstość i głębokość
 
 ## W ONDA
 
-Częstość oddechów to jeden z trzech sygnałów w linii bazowej ONDA, obok tętna spoczynkowego i HRV. ONDA odczytuje ją z Apple Health — gdzie zapisuje ją Apple Watch lub dowolne urządzenie, którego aplikacja synchronizuje tam te dane — i buduje twoją osobistą linię bazową z okresu {{fact:baseline.window}}. Każdą noc porównuje z twoim własnym korytarzem, nigdy z normą populacyjną, i sygnalizuje zmianę tylko wtedy, gdy przekracza ona także minimalne progi: {{fact:baseline.floors}}. ONDA sama nie oblicza częstości oddechów w czasie snu, nie twierdzi niczego o jej dokładności i niczego nie diagnozuje [S14]. Więcej informacji znajdziesz w artykule [twoja częstość oddechów: nocna liczba](/articles/respiratory-rate-hidden-signal) oraz na stronie [co mierzy ONDA](/measurements).
+Częstość oddechów to jeden z trzech sygnałów w linii bazowej ONDA, obok tętna spoczynkowego i HRV. ONDA odczytuje ją z Apple Health — gdzie zapisuje ją Apple Watch lub dowolne urządzenie, którego aplikacja synchronizuje tam te dane — i buduje twoją osobistą linię bazową z okresu {{fact:baseline.window}}. Twój ostatni dzień z danymi porównuje z twoim własnym korytarzem, nigdy z normą populacyjną, i sygnalizuje zmianę tylko wtedy, gdy przekracza ona także minimalne progi: {{fact:baseline.floors}}. ONDA sama nie oblicza częstości oddechów w czasie snu, nie twierdzi niczego o jej dokładności i niczego nie diagnozuje [S14]. Więcej informacji znajdziesz w artykule [twoja częstość oddechów: nocna liczba](/articles/respiratory-rate-hidden-signal) oraz na stronie [co mierzy ONDA](/measurements).
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

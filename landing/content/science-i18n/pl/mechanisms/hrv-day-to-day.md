@@ -1,5 +1,5 @@
 ---
-sourceHash: 477ca0c9b233
+sourceHash: f70effe83d62
 title: "Dlaczego HRV zmienia się z dnia na dzień"
 metaTitle: "Dlaczego HRV zmienia się z dnia na dzień: przyczyny"
 metaDescription: "Dlaczego HRV zmienia się z dnia na dzień: naturalny szum, sen, alkohol, trening, choroba, stres i cykl — mechanizmy i dane naukowe."
@@ -73,7 +73,7 @@ evidenceMap:
     limitation: "Dwunastu mężczyzn trenujących siłowo, jedna sesja wysiłku; znormalizowane jednostki spektralne."
   - claim: "Napięcia nerwu błędnego nie da się zmierzyć bezpośrednio; miary HRV, takie jak RMSSD, odzwierciedlają zależne od nerwu błędnego zmiany częstości serca."
     limitation: "Definicja; nie określa ilościowo aktywności nerwu błędnego."
-  - claim: "ONDA porównuje każdą noc z osobistym korytarzem linii bazowej użytkownika i odczytuje HRV (SDNN) z Apple Health."
+  - claim: "ONDA porównuje ostatni dzień z danymi z osobistym korytarzem linii bazowej użytkownika i odczytuje HRV (SDNN) z Apple Health."
     limitation: "Dokumentacja produktu; opisuje wyłącznie działanie aplikacji."
 ---
 

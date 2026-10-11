@@ -286,7 +286,7 @@ evidenceMap:
     limitation: "Finnish forensic records, 1990–2002."
   - claim: "Alcohol during sauna bathing raises the risk of low blood pressure, arrhythmia and sudden death; unstable angina, recent heart attack and severe aortic stenosis are contraindications."
     sources: [S16]
-    class: established
+    class: context-dependent
     claimType: safety
     quote: "alcohol consumption during sauna bathing increases the risk of hypotension, arrhythmia, and sudden death, and should be avoided."
     limitation: "Narrative review."

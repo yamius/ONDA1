@@ -1,5 +1,5 @@
 ---
-sourceHash: "55f2a6818cc5"
+sourceHash: "3c391a42bca8"
 title: "Référence personnelle de HRV : pourquoi votre propre normalité compte plus que toute norme"
 metaTitle: "Référence de HRV : votre normalité, pas une norme"
 metaDescription: "Votre référence de HRV est votre propre plage habituelle, pas une moyenne de population. Pourquoi elle prime sur les normes d’âge et comment ONDA la construit."
@@ -16,7 +16,7 @@ shortAnswer: >
 keyPoints:
   - "Une référence personnelle de HRV est votre propre niveau habituel de HRV et sa dispersion normale, construits à partir de nombreuses mesures — jamais d’une seule."
   - "Les personnes du même âge diffèrent tellement, et les appareils et les mesures varient tant, que comparer votre HRV à celle de quelqu’un d’autre n’a presque aucun sens."
-  - "ONDA construit la référence personnelle à partir d’une fenêtre de plusieurs nuits de vos propres mesures et compare chaque nuit à votre couloir personnel."
+  - "ONDA construit la référence personnelle à partir d’une fenêtre de plusieurs jours de vos propres mesures et compare votre dernier jour de données à votre couloir personnel."
   - "Une mesure isolée hors de votre couloir relève généralement du bruit ; c’est un écart durable sur plusieurs jours ou semaines qui mérite l’attention."
   - "Des conditions de mesure instables, une maladie, un changement d’entraînement, un nouvel appareil ou une autre mesure peuvent faire bouger les valeurs ou rompre la référence."
   - "Sortir du couloir ne signifie pas que vous êtes stressé ou malade, et y rester ne garantit pas la santé."
@@ -91,9 +91,9 @@ La mesure doit rester la même. La RMSSD et le SDNN résument des aspects diffé
 
 ## Que montrent les données ?
 
-**Établi.** La HRV des adultes en bonne santé varie énormément, et il n’existe aucune valeur normative consensuelle pour les mesures à court terme [S3]. En moyenne, la valeur diminue avec l’âge, mais les écarts entre individus sont grands à tout âge [S2]. Les valeurs issues d’appareils, de mesures et de conditions d’enregistrement différents ne sont pas interchangeables [S6, S7], et des enregistrements de durées différentes ne se comparent pas directement [S5]. Une référence personnelle exige de nombreuses mesures ; des enregistrements isolés ne suffisent pas à l’établir [S10].
+**Établi.** La HRV des adultes en bonne santé varie énormément, et il n’existe aucune valeur normative consensuelle pour les mesures à court terme [S3]. En moyenne, la valeur diminue avec l’âge, mais les écarts entre individus sont grands à tout âge [S2]. Les valeurs issues d’appareils, de mesures et de conditions d’enregistrement différents ne sont pas interchangeables [S6, S7], et des enregistrements de durées différentes ne se comparent pas directement [S5].
 
-**Dépend du contexte.** La pratique de suivi précise — moyennes hebdomadaires glissantes avec coefficient de variation — vient des sciences du sport, où une valeur plus basse que celle d’un pair ne traduit pas forcément un état physiologique moins bon [S10]. La PPG au poignet suit les valeurs dérivées de l’ECG dans des conditions de repos contrôlées [S8]. La variation saisonnière, lorsqu’elle est rapportée, est faible [S11]. Et parce que les résultats de HRV sont faciles à surinterpréter, les revues méthodologiques mettent en garde contre une lecture excessive [S4].
+**Dépend du contexte.** Une référence personnelle exige de nombreuses mesures ; des enregistrements isolés ne suffisent pas à l’établir [S10]. La pratique de suivi précise — moyennes hebdomadaires glissantes avec coefficient de variation — vient des sciences du sport, où une valeur plus basse que celle d’un pair ne traduit pas forcément un état physiologique moins bon [S10]. La PPG au poignet suit les valeurs dérivées de l’ECG dans des conditions de repos contrôlées [S8]. La variation saisonnière, lorsqu’elle est rapportée, est faible [S11]. Et parce que les résultats de HRV sont faciles à surinterpréter, les revues méthodologiques mettent en garde contre une lecture excessive [S4].
 
 **Non tranché.** La fenêtre exacte qu’une référence personnelle devrait utiliser est un choix pratique, pas une constante scientifique : les protocoles de recherche diffèrent de la logique des applications. Les fenêtres d’ONDA relèvent de la logique de l’application — documentées ci-dessous, définies une seule fois, et non issues d’un consensus du domaine [S9].
 
@@ -108,7 +108,7 @@ L’interprétation est réellement difficile — une revue méthodologique aver
 ONDA construit la référence personnelle exactement comme le décrit cette page, et les fenêtres sont définies une seule fois, ici :
 
 - **La fenêtre de référence.** La référence personnelle de la HRV, de la fréquence cardiaque au repos et de la fréquence respiratoire se construit sur {{fact:baseline.window}} de vos propres mesures.
-- **Le minimum.** Il faut au moins {{fact:baseline.minNights}} avec des données valides avant qu’un quelconque signal soit lu.
+- **Le minimum.** Il faut au moins {{fact:baseline.minNights}} avant qu’un quelconque signal soit lu.
 - **La comparaison.** {{fact:baseline.compare}}.
 - **La fenêtre du couloir.** Le couloir du feu tricolore est calculé sur {{fact:baseline.corridor}}.
 - **La mesure.** La référence lit les valeurs de HRV stockées dans Apple Health — par l’Apple Watch ou par un autre appareil qui y synchronise les données cardiaques [S9]. {{fact:applewatch.hrv.healthkit}}.

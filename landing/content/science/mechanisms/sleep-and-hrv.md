@@ -193,7 +193,7 @@ evidenceMap:
     limitation: "Two small laboratory studies with different protocols and conclusions."
   - claim: "HRV has been studied across sleep stages and in sleep-disordered breathing, insomnia and limb movements; its interpretation needs caveats."
     sources: [S4]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "HRV has been applied to understand autonomic changes during different sleep stages."
     limitation: "Narrative review; mostly ECG recordings from polysomnography, not wrist devices."
@@ -263,7 +263,7 @@ evidenceMap:
     claimType: safety
     quote: "Polysomnography is the standard diagnostic test for the diagnosis of OSA in adult patients"
     limitation: "Clinical practice guideline for adults; does not evaluate consumer wearables."
-  - claim: "ONDA builds its baseline from values in Apple Health and compares each night with the user's own corridor (facts baseline.window, baseline.compare)."
+  - claim: "ONDA builds its baseline from values in Apple Health and compares the latest day of data with the user's own corridor (facts baseline.window, baseline.compare)."
     sources: [S16]
     class: established
     claimType: device

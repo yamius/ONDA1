@@ -1,5 +1,5 @@
 ---
-sourceHash: 9b4dc57e7d2e
+sourceHash: d143535846e0
 title: "Doença e HRV: o que um dispositivo vestível consegue e não consegue ver"
 metaTitle: "Doença e HRV: sinal precoce, não diagnóstico"
 metaDescription: "Como inflamação e infecção movem a HRV e a frequência cardíaca de repouso, o que dizem os alertas dos vestíveis e por que não dizem que você está doente."
@@ -43,7 +43,7 @@ evidenceMap:
     limitation: "Revisão narrativa; sobretudo estudos da época da pandemia; alguns autores eram funcionários de uma empresa de análise de dados de vestíveis."
   - claim: "A mesma revisão afirma que a capacidade dos vestíveis de detectar infecções virais em condições reais não foi comprovada."
     limitation: "Escrita antes de o estudo prospectivo acima ser publicado na forma final; esse estudo não testa o uso cotidiano fora de uma coorte de pesquisa."
-  - claim: "O ONDA constrói a sua linha de base a partir de valores do Apple Health e compara cada noite com a faixa própria do usuário (dados baseline.window, baseline.compare, baseline.floors, onda.signal.cadence)."
+  - claim: "O ONDA constrói a sua linha de base a partir de valores do Apple Health e compara o dia de dados mais recente com a faixa própria do usuário (dados baseline.window, baseline.compare, baseline.floors, onda.signal.cadence)."
     limitation: "Descreve apenas o funcionamento do app; não é evidência para nenhuma afirmação de saúde."
 ---
 
@@ -106,6 +106,6 @@ Estresse, álcool e viagens podem causar a mesma queda; eles são comparados em 
 
 ## No ONDA
 
-O ONDA constrói uma linha de base pessoal a partir de valores armazenados no Apple Health, vindos do Apple Watch ou de outro dispositivo que sincronize dados cardíacos com ele [S7]. A janela é de {{fact:baseline.window}}, e {{fact:baseline.compare}}: {{fact:baseline.floors}}, com {{fact:onda.signal.cadence}}. Como {{fact:applewatch.hrv.healthkit}}, a tendência de HRV do ONDA é uma tendência de SDNN ([a sua linha de base de HRV](/science/concepts/hrv-baseline)). Um sinal assim é descritivo: diz que uma noite está fora da sua própria faixa, não o porquê. Uma infecção, uma noite curta, álcool ou uma viagem podem produzi-lo. O ONDA não identifica doenças, não diagnostica nenhuma condição e não substitui um médico.
+O ONDA constrói uma linha de base pessoal a partir de valores armazenados no Apple Health, vindos do Apple Watch ou de outro dispositivo que sincronize dados cardíacos com ele [S7]. A janela é de {{fact:baseline.window}}, e {{fact:baseline.compare}}: {{fact:baseline.floors}}, com {{fact:onda.signal.cadence}}. Como {{fact:applewatch.hrv.healthkit}}, a tendência de HRV do ONDA é uma tendência de SDNN ([a sua linha de base de HRV](/science/concepts/hrv-baseline)). Um sinal assim é descritivo: diz que os seus valores mais recentes estão fora da sua própria faixa, não o porquê. Uma infecção, uma noite curta, álcool ou uma viagem podem produzi-lo. O ONDA não identifica doenças, não diagnostica nenhuma condição e não substitui um médico.
 
 > Informação educativa, não um diagnóstico nem um tratamento médico.

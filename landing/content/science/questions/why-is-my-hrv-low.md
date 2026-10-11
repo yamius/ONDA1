@@ -18,7 +18,7 @@ keyPoints:
   - "For short sleep the measured drop is small, for long-term stress and shift work the evidence is mixed, and in regular coffee drinkers moderate caffeine has not been shown to change resting HRV."
   - "Age lowers HRV on average over decades, but it does not explain a drop from one week to the next."
   - "Several days below your usual range with a higher resting heart rate and feeling unwell are a reason to rest. Call emergency services or get emergency care for: chest pain or pressure; fainting or near-fainting; severe shortness of breath; fast, strong or irregular heartbeat that does not settle at rest (including with dizziness); sudden confusion, weakness on one side, trouble speaking."
-  - "ONDA compares your nights with your own baseline, but it does not say what caused a change and does not diagnose."
+  - "ONDA compares your latest data with your own baseline, but it does not say what caused a change and does not diagnose."
 image: "/images/science/questions-why-is-my-hrv-low.jpg"
 imageAlt: "A thin teal heartbeat line on a dark navy background, ringed by small glowing beige icons: a moon, a glass, a thermometer, a running shoe, a mountain, a coffee cup and clouds."
 imagePrompt: "Minimal scientific line illustration on a dark navy background, 16:9 landscape: a single thin teal heartbeat trace in the centre, surrounded at a distance by a loose ring of small thin-line icons glowing soft warm beige, evenly spaced like a clock face: a crescent moon, a glass, a thermometer, a running shoe, a mountain peak, a coffee cup and two small clouds; lots of empty space, no text, no numbers, no people, no devices."
@@ -371,7 +371,7 @@ evidenceMap:
     limitation: "Reported for short-term daytime protocols and spectral measures; night-time wearable values are a different context."
   - claim: "A personal baseline needs frequent measurements; isolated recordings do not establish one."
     sources: [S2]
-    class: established
+    class: context-dependent
     claimType: measurement
     quote: "isolated recordings do not account for baseline HRV, which requires frequent measurements over at least a week to establish"
     limitation: "Narrative review of athlete monitoring; the principle is general, but the specific protocols target sport practice."
@@ -753,6 +753,6 @@ Slow breathing is something you can do at any time. {{fact:claim.slowExhale}}. I
 
 ## In ONDA
 
-ONDA is built around practice rather than tracking. With an Apple Watch, or a device that syncs heart data to Apple Health, it reads your HRV and resting heart rate from Apple Health [S36] and builds your own baseline over {{fact:baseline.window}}, reading signals only after at least {{fact:baseline.minNights}}. {{fact:baseline.compare}}: {{fact:baseline.floors}}, with {{fact:onda.signal.cadence}}. The baseline uses the HRV value that Apple Health stores ({{fact:applewatch.hrv.healthkit}}; {{fact:applewatch.hrv.variants2026}}). Such a signal is descriptive: it says that a night is outside your own range, not why [S36]. ONDA does not identify which cause lies behind a change. For practice, ONDA offers guided breathing with spoken and visual guidance and no numeric pacer, and {{fact:onda.practice.livePulse}}. ONDA has no study of its own effectiveness, does not diagnose any condition and does not replace a doctor. See [what ONDA measures](/measurements).
+ONDA is built around practice rather than tracking. With an Apple Watch, or a device that syncs heart data to Apple Health, it reads your HRV and resting heart rate from Apple Health [S36] and builds your own baseline over {{fact:baseline.window}}, reading signals only after at least {{fact:baseline.minNights}}. {{fact:baseline.compare}}: {{fact:baseline.floors}}, with {{fact:onda.signal.cadence}}. The baseline uses the HRV value that Apple Health stores ({{fact:applewatch.hrv.healthkit}}; {{fact:applewatch.hrv.variants2026}}). Such a signal is descriptive: it says that your latest values are outside your own range, not why [S36]. ONDA does not identify which cause lies behind a change. For practice, ONDA offers guided breathing with spoken and visual guidance and no numeric pacer, and {{fact:onda.practice.livePulse}}. ONDA has no study of its own effectiveness, does not diagnose any condition and does not replace a doctor. See [what ONDA measures](/measurements).
 
 > Educational information, not a diagnosis or medical treatment.

@@ -1,5 +1,5 @@
 ---
-sourceHash: "40724fd3796f"
+sourceHash: "f7352829555e"
 title: "Exposição ao frio: o que mostram as evidências e onde está o risco"
 metaTitle: "Exposição ao frio: evidências e riscos"
 metaDescription: "Imersão fria, banho frio e frio no rosto: o que os estudos mostram sobre estresse, doença, recuperação e metabolismo, o que a dopamina omite e os riscos."

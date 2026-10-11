@@ -1,5 +1,5 @@
 ---
-sourceHash: "55f2a6818cc5"
+sourceHash: "3c391a42bca8"
 title: "HRV-baseline: waarom je eigen normaal meer zegt dan welke norm ook"
 metaTitle: "HRV-baseline: je eigen normaal, geen norm"
 metaDescription: "Je HRV-baseline is je eigen bereik, geen bevolkingsgemiddelde. Waarom die meer zegt dan normen, hoe ONDA haar opbouwt en wat een afwijking betekent."
@@ -15,7 +15,7 @@ shortAnswer: >
 keyPoints:
   - "Een HRV-baseline is je eigen gebruikelijke HRV-niveau met de normale spreiding eromheen, opgebouwd uit veel metingen — nooit uit één."
   - "Mensen van dezelfde leeftijd verschillen zo sterk, en apparaten en maten lopen zo uiteen, dat je HRV vergelijken met die van een ander vrijwel zinloos is."
-  - "ONDA bouwt de persoonlijke baseline op uit een venster van meerdere nachten met je eigen metingen en vergelijkt elke nacht met je persoonlijke bandbreedte (corridor)."
+  - "ONDA bouwt de persoonlijke baseline op uit een venster van meerdere dagen met je eigen metingen en vergelijkt je laatste dag met gegevens met je persoonlijke bandbreedte (corridor)."
   - "Eén meting buiten je bandbreedte is meestal ruis; een aanhoudende verschuiving over dagen of weken verdient aandacht."
   - "Instabiele meetomstandigheden, ziekte, een verandering in training, een nieuw apparaat of een andere maat kunnen metingen verschuiven of de baseline onbruikbaar maken."
   - "Buiten de bandbreedte vallen betekent niet dat je gestrest of ziek bent, en erbinnen blijven garandeert geen gezondheid."
@@ -90,9 +90,9 @@ De maat moet vast blijven. RMSSD en SDNN vatten verschillende aspecten van het h
 
 ## Wat laat het bewijs zien?
 
-**Vastgesteld.** Gezonde volwassenen verschillen enorm in HRV, en voor korte maten bestaan geen afgesproken normwaarden [S3]. Gemiddeld daalt de waarde met de leeftijd, terwijl mensen op elke leeftijd sterk verschillen [S2]. Waarden van verschillende apparaten, maten en meetomstandigheden zijn niet uitwisselbaar [S6, S7], en metingen van verschillende duur zijn niet direct vergelijkbaar [S5]. Een persoonlijke baseline vraagt om veel metingen; losse registraties leveren er geen op [S10].
+**Vastgesteld.** Gezonde volwassenen verschillen enorm in HRV, en voor korte maten bestaan geen afgesproken normwaarden [S3]. Gemiddeld daalt de waarde met de leeftijd, terwijl mensen op elke leeftijd sterk verschillen [S2]. Waarden van verschillende apparaten, maten en meetomstandigheden zijn niet uitwisselbaar [S6, S7], en metingen van verschillende duur zijn niet direct vergelijkbaar [S5].
 
-**Afhankelijk van de context.** De specifieke monitoringpraktijk met voortschrijdende weekgemiddelden en de variatiecoëfficiënt komt uit de sportwetenschap, waar een lagere waarde dan die van een ander niet noodzakelijk op een slechtere fysiologische toestand wijst [S10]. PPG aan de pols volgt de waarden uit het ecg onder gecontroleerde rustomstandigheden [S8]. Seizoensvariatie is, waar ze is gemeld, zwak [S11]. En omdat HRV-bevindingen gemakkelijk worden overgeïnterpreteerd, waarschuwen methodologische reviews ervoor er te veel in te lezen [S4].
+**Afhankelijk van de context.** Een persoonlijke baseline vraagt om veel metingen; losse registraties leveren er geen op [S10]. De specifieke monitoringpraktijk met voortschrijdende weekgemiddelden en de variatiecoëfficiënt komt uit de sportwetenschap, waar een lagere waarde dan die van een ander niet noodzakelijk op een slechtere fysiologische toestand wijst [S10]. PPG aan de pols volgt de waarden uit het ecg onder gecontroleerde rustomstandigheden [S8]. Seizoensvariatie is, waar ze is gemeld, zwak [S11]. En omdat HRV-bevindingen gemakkelijk worden overgeïnterpreteerd, waarschuwen methodologische reviews ervoor er te veel in te lezen [S4].
 
 **Niet beslecht.** Het precieze venster dat een baseline moet gebruiken, is een praktische keuze, geen wetenschappelijke constante: onderzoeksprotocollen verschillen van de logica van apps. De vensters van ONDA zijn app-logica — hieronder beschreven, op één plek vastgelegd, en geen consensus van het vakgebied [S9].
 
@@ -107,7 +107,7 @@ Interpreteren is echt lastig — een methodologische review waarschuwt dat het g
 ONDA bouwt de persoonlijke baseline precies op zoals deze pagina beschrijft, en de vensters worden hier op één plek vastgelegd:
 
 - **Het baselinevenster.** De persoonlijke baseline voor HRV, hartslag in rust en ademfrequentie wordt opgebouwd over {{fact:baseline.window}} aan eigen metingen.
-- **Het minimum.** Er moeten minstens {{fact:baseline.minNights}} met geldige gegevens zijn voordat er überhaupt een signaal wordt gelezen.
+- **Het minimum.** Er moeten minstens {{fact:baseline.minNights}} zijn voordat er überhaupt een signaal wordt gelezen.
 - **De vergelijking.** {{fact:baseline.compare}}.
 - **Het venster van de bandbreedte.** De verkeerslichtbandbreedte wordt berekend over {{fact:baseline.corridor}}.
 - **De maat.** De baseline leest de HRV-waarden die in Apple Health zijn opgeslagen — van de Apple Watch of van een ander apparaat dat hartgegevens daarheen synchroniseert [S9] — en {{fact:applewatch.hrv.healthkit}}.

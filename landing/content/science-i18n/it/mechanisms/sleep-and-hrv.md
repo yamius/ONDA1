@@ -1,5 +1,5 @@
 ---
-sourceHash: e9bb7788219f
+sourceHash: 6252dd3faeef
 title: "HRV e frequenza cardiaca durante il sonno: perché la notte è la finestra migliore"
 metaTitle: "HRV e frequenza cardiaca durante il sonno"
 metaDescription: "Che cosa succede a frequenza cardiaca e HRV nel corso della notte e delle fasi del sonno, perché le misure notturne sono le più stabili e che cosa i wearable possono dire e cosa no."
@@ -57,7 +57,7 @@ evidenceMap:
     limitation: "Studi eterogenei e per lo più ad alto rischio di bias; nessuna meta-analisi possibile."
   - claim: "L'apnea notturna si diagnostica con la polisonnografia o con un test domiciliare per l'apnea del sonno tecnicamente adeguato, non solo con questionari o strumenti predittivi."
     limitation: "Linea guida di pratica clinica per adulti; non valuta i wearable di consumo."
-  - claim: "ONDA costruisce la sua baseline dai valori di Apple Health e confronta ogni notte con il corridoio personale dell'utente."
+  - claim: "ONDA costruisce la sua baseline dai valori di Apple Health e confronta l'ultimo giorno con dati con il corridoio personale dell'utente."
     limitation: "Descrive solo il comportamento dell'app; non è una prova di alcuna affermazione sulla salute."
 ---
 

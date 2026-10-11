@@ -1,20 +1,20 @@
 ---
-sourceHash: eea148772b58
+sourceHash: 507e4dc4d425
 title: "Wie ONDA die Signale deines Körpers misst und deutet"
 metaTitle: "Wie ONDA deine Körpersignale misst und deutet"
 metaDescription: "Woher ONDA seine Daten bezieht, wie es deine Baseline und Signale bildet, was auf deinem Handy bleibt und wo die Grenzen jeder angezeigten Zahl liegen."
 shortAnswer: >
   ONDA liest Herzfrequenzvariabilität, Ruhepuls und Atemfrequenz aus Apple
   Health und kann mit der iPhone-Kamera den Puls an der Fingerkuppe messen.
-  Aus deinen eigenen Nächten bildet es einen persönlichen Korridor und weist
-  auf Nächte hin, die deutlich außerhalb liegen. Das sind beschreibende
+  Aus deinen eigenen Tagen mit Daten bildet es einen persönlichen Korridor und weist
+  auf Tage hin, die deutlich außerhalb liegen. Das sind beschreibende
   Vergleiche, keine Diagnose. ONDA hat keine eigene Studie zu Genauigkeit oder
   Wirksamkeit durchgeführt, und seine Zahlen sind nur so gut wie das Gerät,
   das sie aufgezeichnet hat.
 keyPoints:
   - "ONDA liest die Herzfrequenzvariabilität als SDNN, den Ruhepuls und die Atemfrequenz aus Apple Health – geschrieben von der Apple Watch oder einem anderen Gerät, das dorthin synchronisiert; es liest nur und schreibt nie."
   - "Die iPhone-Kamera liefert einen Pulswert und eine Atemschätzung, aber keine Herzfrequenzvariabilität, und der Live-Kohärenzwert funktioniert mit der Kamera nicht."
-  - "Deine Baseline und deine Signale vergleichen dich mit deinen eigenen letzten Nächten, nie mit einer Bevölkerungsnorm, und sie bleiben stumm, bis genug Nächte vorliegen."
+  - "Deine Baseline und deine Signale vergleichen dich mit deinen eigenen letzten Tagen mit Daten, nie mit einer Bevölkerungsnorm, und sie bleiben stumm, bis genug Tage mit Daten vorliegen."
   - "Ein Signal braucht eine große Veränderung, gemessen an deiner eigenen Streuung, und eine absolute oder relative Mindestveränderung – kleine Schwankungen werden ignoriert."
   - "Baseline, Signale und Berichte werden auf deinem Handy berechnet. Ab Version 1.9.3 bleibt der Übungsfortschritt ohne Konto auf dem Gerät und wird erst nach der Anmeldung synchronisiert, und das Tagebuch bleibt nur auf dem Gerät."
   - "ONDA ist kein Medizinprodukt, hat keine eigene veröffentlichte Studie zu Genauigkeit oder Nutzen und stellt keine Diagnosen."
@@ -24,7 +24,7 @@ evidenceMap:
     limitation: "Beschreibt nur das Verhalten der App; ONDA berechnet die SDNN nicht selbst und kann nicht prüfen, wie gut das aufzeichnende Gerät gemessen hat."
   - claim: "Die iPhone-Kamera liefert einen Ruhepuls und eine Atemschätzung; Herzfrequenzvariabilität erscheint nur mit einer Uhr oder einem anderen Tracker, der sie in Apple Health schreibt."
     limitation: "Beschreibt nur das Verhalten der App; keine Validierung des Kamerawerts."
-  - claim: "ONDA bildet eine persönliche Baseline, vergleicht Nächte mit einem persönlichen Korridor, wartet auf genug Nächte und verlangt Mindestveränderungen; die Ampel nutzt einen längeren Korridor."
+  - claim: "ONDA bildet eine persönliche Baseline, vergleicht Tage mit Daten mit einem persönlichen Korridor, wartet auf genug Tage mit Daten und verlangt Mindestveränderungen; die Ampel nutzt einen längeren Korridor."
     limitation: "Produktdokumentation; die Schwellen sind Designentscheidungen von ONDA, keine klinisch validierten Grenzwerte."
   - claim: "ONDA ist kein Medizinprodukt und diagnostiziert oder überwacht keine Erkrankung."
     limitation: "Eine Positionierungsaussage; keine regulatorische Einstufung durch eine Behörde."
@@ -38,7 +38,7 @@ evidenceMap:
 
 ## Was ist die Methode von ONDA?
 
-ONDA ist eine App für Atemübungen und Biofeedback. Sie liest Signale, die andere Geräte bereits aufgezeichnet haben, vergleicht sie mit deinem eigenen Verlauf und zeigt dir, wo eine Nacht steht. Diese Seite beschreibt die Methode so, wie sie in der App umgesetzt ist – einschließlich ihrer Grenzen. Sie beschreibt ein Produkt, keinen wissenschaftlichen Befund, und jede Regel unten ist eine Designentscheidung, kein validierter klinischer Schwellenwert.
+ONDA ist eine App für Atemübungen und Biofeedback. Sie liest Signale, die andere Geräte bereits aufgezeichnet haben, vergleicht sie mit deinem eigenen Verlauf und zeigt dir, wo dein letzter Tag steht. Diese Seite beschreibt die Methode so, wie sie in der App umgesetzt ist – einschließlich ihrer Grenzen. Sie beschreibt ein Produkt, keinen wissenschaftlichen Befund, und jede Regel unten ist eine Designentscheidung, kein validierter klinischer Schwellenwert.
 
 ## Woher kommen die Daten?
 
@@ -50,17 +50,17 @@ ONDA ist eine App für Atemübungen und Biofeedback. Sie liest Signale, die ande
 
 ## Wie entsteht deine Baseline?
 
-Die Baseline ist der Bereich, in dem sich dein Körper üblicherweise bewegt. ONDA bildet sie über {{fact:baseline.window}} aus Werten in Apple Health [S1, S4]. Ab Version 1.9.3 zeigt das HRV-Diagramm dieses ganze Fenster, sobald der Zugriff auf Apple Health erlaubt ist, statt sich Nacht für Nacht zu füllen. Nächte mit zu wenigen Messpunkten werden vor jeder Berechnung verworfen, und die HRV wird nur aus nächtlichen Messpunkten genommen.
+Die Baseline ist der Bereich, in dem sich dein Körper üblicherweise bewegt. ONDA bildet sie über {{fact:baseline.window}} aus Werten in Apple Health [S1, S4]. Ab Version 1.9.3 zeigt das HRV-Diagramm dieses ganze Fenster, sobald der Zugriff auf Apple Health erlaubt ist, statt sich Tag für Tag zu füllen. Tage mit zu wenigen Messpunkten werden vor jeder Berechnung verworfen, und für Signale wird die HRV nur aus {{fact:onda.signal.hrvWindow}} genommen.
 
 Für Signale gilt: {{fact:baseline.compare}} [S1]. ONDA bleibt stumm, bis mindestens {{fact:baseline.minNights}} vorliegen; in den ersten Wochen siehst du daher eine Baseline, die noch entsteht, kein Urteil. Die geforderten Mindestveränderungen sind: {{fact:baseline.floors}}.
 
-Im einfachen Modus steuert dieselbe Regel eine Ampel. Ihr Korridor umfasst {{fact:baseline.corridor}}, sodass ein paar ungewöhnliche Nächte ihn kaum verschieben. Grün heißt, dass jedes Signal in deinem Korridor liegt; Gelb heißt, dass eine Nacht außerhalb liegt; Rot heißt, dass zwei oder mehr Nächte hintereinander außerhalb liegen. Diese Farben beschreiben den Abstand zu deinem eigenen Verlauf. Sie benoten nicht deine Gesundheit. Wie man solche Vergleiche liest, erklären [deine HRV-Baseline](/science/concepts/hrv-baseline) und [HRV richtig deuten](/science/concepts/interpreting-hrv).
+Im einfachen Modus steuert dieselbe Regel eine Ampel. Ihr Korridor umfasst {{fact:baseline.corridor}}, sodass ein paar ungewöhnliche Tage ihn kaum verschieben. Grün heißt, dass jedes Signal in deinem Korridor liegt; Gelb heißt, dass ein Tag außerhalb liegt; Rot heißt, dass zwei oder mehr Tage hintereinander außerhalb liegen. Diese Farben beschreiben den Abstand zu deinem eigenen Verlauf. Sie benoten nicht deine Gesundheit. Wie man solche Vergleiche liest, erklären [deine HRV-Baseline](/science/concepts/hrv-baseline) und [HRV richtig deuten](/science/concepts/interpreting-hrv).
 
 ## Wann zeigt ONDA ein Signal?
 
-Ein Signal erscheint, wenn in der letzten Nacht der Ruhepuls gestiegen, die HRV gesunken oder die Atemfrequenz gestiegen ist – und zwar über die Streuungsschwelle und die oben beschriebene Mindestveränderung hinaus. Haben sich mehrere Werte bewegt, zeigt ONDA nur das größte Signal. Es gibt {{fact:onda.signal.cadence}}, und die Benachrichtigung enthält keine Zahlen; die Zahlen stehen in der App.
+Ein Signal erscheint, wenn am letzten Tag mit Daten der Ruhepuls gestiegen, die HRV gesunken oder die Atemfrequenz gestiegen ist – und zwar über die Streuungsschwelle und die oben beschriebene Mindestveränderung hinaus. Haben sich mehrere Werte bewegt, zeigt ONDA nur das größte Signal. Es gibt {{fact:onda.signal.cadence}}, und die Benachrichtigung enthält keine Zahlen; die Zahlen stehen in der App.
 
-Bleiben deine Nächte im Korridor, schickt ONDA stattdessen einen ruhigen Check-in – {{fact:onda.checkin.steadyCadence}}, dabei {{fact:onda.checkin.dailyCap}}. Ohne Daten einer Uhr kommen Check-ins {{fact:onda.checkin.noWatchCadence}}. Ruhige Check-ins lassen sich in den Einstellungen ausschalten.
+Bleiben deine Werte im Korridor, schickt ONDA stattdessen einen ruhigen Check-in – {{fact:onda.checkin.steadyCadence}}, dabei {{fact:onda.checkin.dailyCap}}. Ohne Daten einer Uhr kommen Check-ins {{fact:onda.checkin.noWatchCadence}}. Ruhige Check-ins lassen sich in den Einstellungen ausschalten.
 
 Nächtliche Werte bewegen sich aus gewöhnlichen Gründen wie Alkohol, einer späten Mahlzeit, Training, Reisen oder einer kurzen Nacht – deshalb gilt eine einzelne Nacht nie als Urteil. Siehe [warum sich die HRV von Tag zu Tag ändert](/science/mechanisms/hrv-day-to-day). Speziell zu Alkohol siehe [Alkohol und HRV](/science/mechanisms/alcohol-and-hrv).
 

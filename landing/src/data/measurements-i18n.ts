@@ -80,7 +80,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
         source: 'HRV, resting heart rate and breathing rate from Apple Health over the last 14 days',
         kind: 'derived',
         meaning:
-          'Your own corridor — the average of your recent nights plus or minus one standard deviation. ONDA flags a night only when it is at least 1.5 standard deviations outside and has changed by a minimum amount. How the values are taken: the 14-day card averages all of a day’s samples, day by day. For signals, HRV counts only samples recorded before 09:00, at least three a day; resting heart rate is Apple’s daily value; breathing rate uses Apple’s samples, which are usually recorded during sleep.',
+          'Your own corridor — the average of your earlier days with enough data plus or minus one standard deviation. ONDA flags a day only when it is at least 1.5 standard deviations outside and has changed by a minimum amount. How the values are taken: the 14-day card averages all of a day’s samples, day by day. For signals, HRV counts only samples recorded before 09:00, at least three a day; resting heart rate is Apple’s daily value; breathing rate uses Apple’s samples, which are usually recorded during sleep.',
       },
     ],
     notMeasuredPre: 'What ONDA does ',
@@ -117,7 +117,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       },
       {
         q: 'How often does ONDA send notifications?',
-        a: 'Rarely. ONDA sends at most one signal every two days. With watch data, it sends a calm check-in every four steady nights. Without watch data, a calm check-in comes about every three days, and is skipped if you practised or measured in the last 24 hours. There is at most one calm message a day, and never on a day with a signal.',
+        a: 'Rarely. ONDA sends at most one signal every two days. With watch data, it sends a calm check-in every four steady days in a row. Without watch data, a calm check-in comes about every three days, and is skipped if you practised or measured in the last 24 hours. There is at most one calm message a day, and never on a day with a signal.',
       },
       {
         q: 'Is ONDA a medical device?',
@@ -178,7 +178,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
         source: 'HRV, пульс в покое и частота дыхания из Apple Health за последние 14 дней',
         kind: 'derived',
         meaning:
-          'Ваш собственный коридор — среднее за последние ночи плюс-минус одно стандартное отклонение. ONDA отмечает ночь, только если та выходит за него не менее чем на 1,5 стандартного отклонения и изменилась на минимальную величину. Как берутся значения: карточка за 14 дней усредняет все записи за день, день за днём. Для сигналов HRV учитывается только по записям до 09:00, не меньше трёх в день; пульс в покое — дневное значение Apple; частота дыхания — записи Apple, которые обычно делаются во сне.',
+          'Ваш собственный коридор — среднее за предыдущие дни с достаточными данными плюс-минус одно стандартное отклонение. ONDA отмечает день, только если он выходит за коридор не менее чем на 1,5 стандартного отклонения и изменился на минимальную величину. Как берутся значения: карточка за 14 дней усредняет все записи за день, день за днём. Для сигналов HRV учитывается только по записям до 09:00, не меньше трёх в день; пульс в покое — дневное значение Apple; частота дыхания — записи Apple, которые обычно делаются во сне.',
       },
     ],
     notMeasuredPre: 'Чего ONDA ',
@@ -215,7 +215,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       },
       {
         q: 'Как часто ONDA присылает уведомления?',
-        a: 'Редко. ONDA присылает не чаще одного сигнала раз в два дня. С данными часов — спокойное сообщение каждые четыре ровные ночи. Без данных часов спокойное сообщение приходит примерно раз в три дня и пропускается, если за последние 24 часа вы делали практику или замер. Спокойных сообщений не больше одного в день, и никогда — в день сигнала.',
+        a: 'Редко. ONDA присылает не чаще одного сигнала раз в два дня. С данными часов — спокойное сообщение каждые четыре ровных дня подряд. Без данных часов спокойное сообщение приходит примерно раз в три дня и пропускается, если за последние 24 часа вы делали практику или замер. Спокойных сообщений не больше одного в день, и никогда — в день сигнала.',
       },
       {
         q: 'ONDA — это медицинский прибор?',
@@ -276,7 +276,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
         source: 'HRV, frecuencia cardíaca en reposo y frecuencia respiratoria de Apple Salud de los últimos 14 días',
         kind: 'derived',
         meaning:
-          'Tu propio corredor: la media de tus noches recientes más o menos una desviación estándar. ONDA marca una noche solo cuando queda al menos 1,5 desviaciones estándar fuera y ha cambiado en una cantidad mínima. Cómo se toman los valores: la tarjeta de 14 días promedia todas las muestras de cada día. Para las señales, la HRV cuenta solo con muestras registradas antes de las 09:00, al menos tres al día; la frecuencia cardíaca en reposo es el valor diario de Apple; la frecuencia respiratoria usa las muestras de Apple, que suelen registrarse durante el sueño.',
+          'Tu propio corredor: la media de tus días anteriores con datos suficientes más o menos una desviación estándar. ONDA marca un día solo cuando queda al menos 1,5 desviaciones estándar fuera y ha cambiado en una cantidad mínima. Cómo se toman los valores: la tarjeta de 14 días promedia todas las muestras de cada día. Para las señales, la HRV cuenta solo con muestras registradas antes de las 09:00, al menos tres al día; la frecuencia cardíaca en reposo es el valor diario de Apple; la frecuencia respiratoria usa las muestras de Apple, que suelen registrarse durante el sueño.',
       },
     ],
     notMeasuredPre: 'Qué ',
@@ -313,7 +313,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       },
       {
         q: '¿Con qué frecuencia envía notificaciones ONDA?',
-        a: 'Pocas veces. ONDA envía como máximo una señal cada dos días. Con datos del reloj, envía un mensaje tranquilo cada cuatro noches estables. Sin datos del reloj, el mensaje tranquilo llega aproximadamente cada tres días y se omite si practicaste o te mediste en las últimas 24 horas. Hay como máximo un mensaje tranquilo al día, y nunca un día con señal.',
+        a: 'Pocas veces. ONDA envía como máximo una señal cada dos días. Con datos del reloj, envía un mensaje tranquilo cada cuatro días estables seguidos. Sin datos del reloj, el mensaje tranquilo llega aproximadamente cada tres días y se omite si practicaste o te mediste en las últimas 24 horas. Hay como máximo un mensaje tranquilo al día, y nunca un día con señal.',
       },
       {
         q: '¿ONDA es un dispositivo médico?',

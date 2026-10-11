@@ -181,7 +181,7 @@ evidenceMap:
     claimType: physiology
     quote: "Administration of caffeine in the evening produces poor sleep."
     limitation: "Background statement of a small sleep-laboratory study with one large dose shortly before bed; spectral measures only."
-  - claim: "ONDA builds its baseline from values in Apple Health and compares each night with the user's own corridor (facts baseline.window, baseline.compare)."
+  - claim: "ONDA builds its baseline from values in Apple Health and compares the latest day of data with the user's own corridor (facts baseline.window, baseline.compare)."
     sources: [S8]
     class: established
     claimType: device

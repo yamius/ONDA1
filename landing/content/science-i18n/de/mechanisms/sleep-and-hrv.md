@@ -1,5 +1,5 @@
 ---
-sourceHash: e9bb7788219f
+sourceHash: 6252dd3faeef
 title: "HRV und Herzfrequenz im Schlaf: Warum die Nacht das beste Messfenster ist"
 metaTitle: "HRV und Herzfrequenz im Schlaf"
 metaDescription: "Was mit Herzfrequenz und HRV über die Nacht und die Schlafstadien passiert, warum Nachtwerte das stabilste Fenster sind und was Wearables sagen können und was nicht."
@@ -57,7 +57,7 @@ evidenceMap:
     limitation: "Heterogene Studien mit überwiegend hohem Verzerrungsrisiko; keine Metaanalyse möglich."
   - claim: "Schlafapnoe wird mit Polysomnografie oder einer technisch adäquaten Schlafapnoe-Untersuchung zu Hause diagnostiziert, nicht allein mit Fragebögen oder Vorhersagewerkzeugen."
     limitation: "Klinische Praxisleitlinie für Erwachsene; Verbraucher-Wearables bewertet sie nicht."
-  - claim: "ONDA bildet seine Baseline aus Werten in Apple Health und vergleicht jede Nacht mit dem eigenen Korridor der Nutzerin oder des Nutzers."
+  - claim: "ONDA bildet seine Baseline aus Werten in Apple Health und vergleicht den letzten Tag mit Daten mit dem eigenen Korridor der Nutzerin oder des Nutzers."
     limitation: "Beschreibt nur das Verhalten der App; kein Beleg für eine gesundheitliche Aussage."
 ---
 

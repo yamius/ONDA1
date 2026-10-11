@@ -1,5 +1,5 @@
 ---
-sourceHash: "40724fd3796f"
+sourceHash: "f7352829555e"
 title: "Kälteexposition: Was die Evidenz zeigt und wo es riskant wird"
 metaTitle: "Kälteexposition: Evidenz und Risiken"
 metaDescription: "Eisbad, kalte Dusche, Gesichtskühlung: was Studien zu Stress, Krankheit, Erholung und Stoffwechsel zeigen, was Dopamin-Mythen auslassen und wo Risiken liegen."

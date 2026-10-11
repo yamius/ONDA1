@@ -379,7 +379,7 @@ evidenceMap:
     claimType: definition
     quote: "RMSSD, the square root of the mean squared differences of successive NN intervals"
     limitation: "Definition; it does not quantify vagal activity."
-  - claim: "ONDA compares each night with the user's own baseline corridor and reads HRV (SDNN) from Apple Health (fact baseline.compare)."
+  - claim: "ONDA compares the latest day of data with the user's own baseline corridor and reads HRV (SDNN) from Apple Health (fact baseline.compare)."
     sources: [S25]
     class: established
     claimType: device

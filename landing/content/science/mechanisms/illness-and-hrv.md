@@ -158,7 +158,7 @@ evidenceMap:
     claimType: physiology
     quote: "the ability of wearable devices to detect viral infections in a real-world setting has yet to be proven"
     limitation: "Written before the prospective study above was published in its final form; that study does not test everyday use outside a research cohort."
-  - claim: "ONDA builds its baseline from values in Apple Health and compares each night with the user's own corridor (facts baseline.window, baseline.compare, baseline.floors, onda.signal.cadence)."
+  - claim: "ONDA builds its baseline from values in Apple Health and compares the latest day of data with the user's own corridor (facts baseline.window, baseline.compare, baseline.floors, onda.signal.cadence)."
     sources: [S7]
     class: established
     claimType: device
@@ -225,6 +225,6 @@ Stress, alcohol and travel can produce the same dip; [why is my HRV low?](/scien
 
 ## In ONDA
 
-ONDA builds a personal baseline from values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S7]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}: {{fact:baseline.floors}}, with {{fact:onda.signal.cadence}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV trend is an SDNN trend ([your HRV baseline](/science/concepts/hrv-baseline)). Such a signal is descriptive: it says that a night is outside your own corridor, not why. An infection, a short night, alcohol or travel can all produce it. ONDA does not identify illness, does not diagnose any condition and does not replace a doctor.
+ONDA builds a personal baseline from values stored in Apple Health — from Apple Watch or another device that syncs heart data there [S7]. The window is {{fact:baseline.window}}, and {{fact:baseline.compare}}: {{fact:baseline.floors}}, with {{fact:onda.signal.cadence}}. {{fact:applewatch.hrv.healthkit}}, so ONDA's HRV trend is an SDNN trend ([your HRV baseline](/science/concepts/hrv-baseline)). Such a signal is descriptive: it says that your latest values are outside your own corridor, not why. An infection, a short night, alcohol or travel can all produce it. ONDA does not identify illness, does not diagnose any condition and does not replace a doctor.
 
 > Educational information, not a diagnosis or medical treatment.
