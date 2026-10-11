@@ -44,9 +44,12 @@ platform :ios do
     # Get actual profile names from match ENV variables (handles suffixes automatically)
     app_profile = ENV["sigh_com.onda-life.ios_appstore_profile-name"] || "match AppStore com.onda-life.ios"
     watch_profile = ENV["sigh_com.onda-life.ios.watchkitapp_appstore_profile-name"] || "match AppStore com.onda-life.ios.watchkitapp"
+    # 076: watchOS WidgetKit complication extension (embedded in the watch app)
+    complications_profile = ENV["sigh_com.onda-life.ios.watchkitapp.complications_appstore_profile-name"] || "match AppStore com.onda-life.ios.watchkitapp.complications"
     
     UI.message("Using iOS profile: #{app_profile}")
     UI.message("Using watchOS profile: #{watch_profile}")
+    UI.message("Using complications profile: #{complications_profile}")
     
     # Configure code signing for App target
     update_code_signing_settings(
@@ -68,6 +71,16 @@ platform :ios do
       code_sign_identity: "Apple Distribution"
     )
     
+    # Configure code signing for the watchOS complication extension (076)
+    update_code_signing_settings(
+      use_automatic_signing: false,
+      path: "ios/App/App.xcodeproj",
+      targets: ["OndaComplications"],
+      team_id: ENV['FASTLANE_TEAM_ID'],
+      profile_name: complications_profile,
+      code_sign_identity: "Apple Distribution"
+    )
+
     # Build the app with watchOS
     # IMPORTANT: Do NOT use -sdk iphoneos as it overrides watchOS SDK settings!
     # Let Xcode use the correct SDK for each target automatically
@@ -86,7 +99,8 @@ platform :ios do
         signingStyle: "manual",
         provisioningProfiles: {
           "com.onda-life.ios" => app_profile,
-          "com.onda-life.ios.watchkitapp" => watch_profile
+          "com.onda-life.ios.watchkitapp" => watch_profile,
+          "com.onda-life.ios.watchkitapp.complications" => complications_profile
         }
       }
     )
@@ -128,6 +142,22 @@ platform :ios do
       keychain_password: ENV['CI'] ? "" : nil
     )
     
+    # Match for the watchOS complication extension (076).
+    # Requires the App ID com.onda-life.ios.watchkitapp.complications to exist
+    # in the Apple Developer portal (created manually by the owner).
+    match(
+      type: "appstore",
+      app_identifier: "com.onda-life.ios.watchkitapp.complications",
+      team_id: ENV['FASTLANE_TEAM_ID'],
+      readonly: false,
+      force: true,
+      force_for_new_devices: true,
+      git_basic_authorization: git_auth,
+      api_key_path: nil,
+      keychain_name: ENV['CI'] ? "build.keychain" : nil,
+      keychain_password: ENV['CI'] ? "" : nil
+    )
+
     # Build the app
     build
     
