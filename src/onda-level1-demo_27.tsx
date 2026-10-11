@@ -784,7 +784,7 @@ const OndaLevel1 = () => {
   const fireEntryEventsDebug = () => {
     try {
       track('baseline_filled', { source: 'watch', coverage_days: 14, debug: true });
-      track('first_signal_received', { metric: 'rhr', color: 'amber', debug: true });
+      track('first_signal_received', { debug: true });
     } catch { /* noop */ }
     setEntryEventsSent(true);
     window.setTimeout(() => setEntryEventsSent(false), 2500);
@@ -859,7 +859,7 @@ const OndaLevel1 = () => {
           if (ts.light !== 'green' && localStorage.getItem('onda_first_signal_tracked') !== '1') {
             localStorage.setItem('onda_first_signal_tracked', '1');
             const metric = ts.metric ?? ts.metrics?.[0];
-            track('first_signal_received', { metric, color: ts.light === 'red' ? 'red' : 'amber' });
+            track('first_signal_received', {});
           }
         } catch { /* noop */ }
         // Compact mode shows no Timeline button (that tap used to record a point),
@@ -897,7 +897,7 @@ const OndaLevel1 = () => {
         if (done || !e.isIntersecting) continue;
         done = true;
         try { localStorage.setItem('onda_first_signal_opened', '1'); } catch { /* noop */ }
-        try { track('first_signal_opened', { color: trafficState.light === 'red' ? 'red' : 'amber' }); } catch { /* noop */ }
+        try { track('first_signal_opened', {}); } catch { /* noop */ }
         obs.disconnect();
       }
     }, { threshold: 0.5 });
@@ -998,8 +998,8 @@ const OndaLevel1 = () => {
         saveAnomalyState({ lastSignalAt: at, signalCount, pending });
         setAnomalyPrompt(pending);
         // Only WHICH signal fired — no deviation size/direction (1.9.3, privacy).
-      try { track('anomaly_detected', { metric: anomaly.metric }); } catch { /* noop */ }
-        try { track('anomaly_prompt_shown', { metric: anomaly.metric }); } catch { /* noop */ }
+      try { track('anomaly_detected', {}); } catch { /* noop */ }
+        try { track('anomaly_prompt_shown', {}); } catch { /* noop */ }
       }
       // Calm check-ins, Segment A (task 16) is decided + posted NATIVELY from the
       // HealthKit background delivery (see setCheckinStrings + startAnomalyMonitoring),
@@ -1043,7 +1043,7 @@ const OndaLevel1 = () => {
     LocalNotifications.addListener('localNotificationActionPerformed', (a) => {
       const extra = (a?.notification as { extra?: Record<string, unknown> })?.extra;
       const metric = (extra?.anomaly_metric as string) ?? 'unknown';
-      try { track('anomaly_push_opened', { metric }); } catch { /* noop */ }
+      try { track('anomaly_push_opened', {}); } catch { /* noop */ }
     }).then((h) => { handle = h; }).catch(() => { /* noop */ });
     return () => { try { handle?.remove(); } catch { /* noop */ } };
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -3327,13 +3327,13 @@ const OndaLevel1 = () => {
     const pid = metric ? ANOMALY_PRACTICE[metric] : SIGNAL_PRACTICE_ORDER[0];
     const pr = currentCircuit.practices.find((p) => p.id === pid) as { id: string; maxQnt: number } | undefined;
     if (metric) {
-      try { track('anomaly_practice_started', { metric }); } catch { /* noop */ }
+      try { track('anomaly_practice_started', {}); } catch { /* noop */ }
       // first_signal_practice (task 87): reacted to the first signal with a
       // practice. Once per install (first reaction wins, practice or dismiss).
       try {
         if (localStorage.getItem('onda_first_signal_reacted') !== '1') {
           localStorage.setItem('onda_first_signal_reacted', '1');
-          track('first_signal_practice', { metric, color: trafficState.light === 'red' ? 'red' : 'amber' });
+          track('first_signal_practice', {});
         }
       } catch { /* noop */ }
       const st = loadAnomalyState();
@@ -3360,7 +3360,7 @@ const OndaLevel1 = () => {
     try {
       if (localStorage.getItem('onda_first_signal_reacted') !== '1') {
         localStorage.setItem('onda_first_signal_reacted', '1');
-        track('first_signal_dismissed', { metric: a.metric, color: trafficState.light === 'red' ? 'red' : 'amber' });
+        track('first_signal_dismissed', {});
       }
     } catch { /* noop */ }
     setDiaryAnomaly({ metric: a.metric, delta: a.delta });

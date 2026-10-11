@@ -62,10 +62,10 @@ export type AnalyticsEventName =
   | 'coachmark_back'                 // tapped Back on a coachmark — params: step (2|3).
   | 'coachmark_completed'            // finished all three (Next on step 3). Drop-off = coachmark_shown{step:1} WITHOUT this.
   | 'baseline_filled'                // the watch baseline actually BUILT (real coverage) — params: coverage_days, source (watch|camera). Activation heart (replaces practice_start for the new entry).
-  | 'first_signal_received'          // the traffic light first left green (yellow/red) for this install — params: metric, color (amber|red).
-  | 'first_signal_opened'            // the first signal's block entered the viewport (the user actually reached it) — params: color.
-  | 'first_signal_practice'          // started the offered practice from the first signal — params: metric, color.
-  | 'first_signal_dismissed'         // acknowledged/recorded the first signal without practising — params: metric, color.
+  | 'first_signal_received'          // the traffic light first left green (yellow/red) for this install — no params (health-state params removed 1.9.4, privacy).
+  | 'first_signal_opened'            // the first signal's block entered the viewport (the user actually reached it) — no params (health-state params removed 1.9.4, privacy).
+  | 'first_signal_practice'          // started the offered practice from the first signal — no params (health-state params removed 1.9.4, privacy).
+  | 'first_signal_dismissed'         // acknowledged/recorded the first signal without practising — no params (health-state params removed 1.9.4, privacy).
   // Baseline (retention — Health-baseline onboarding)
   | 'baseline_shown'                 // baseline card shown — params: coverage_days (real days behind the numbers), source (watch|camera). Declared now; fired in Phase 2.
   | 'baseline_debug'                 // diagnostic: exactly what the 14-day HealthKit read returned — per-signal days/has + per-extra PRESENCE flags (no values, 1.9.3). Lets us see which numbers Health actually gave without a device session.
@@ -75,13 +75,13 @@ export type AnalyticsEventName =
   | 'diary_entry_created'            // a note was saved — params: type (text|voice|text_voice), backdated (bool).
   | 'diary_synced'                   // local drafts migrated into Supabase on sign-in — params: count.
   // Anomaly trigger (retention step 4 — baseline deviation → diary prompt)
-  | 'anomaly_detected'               // a personal corridor caught a deviation — params: metric (no deviation size/direction, 1.9.3).
-  | 'anomaly_prompt_shown'           // the in-app "record your day" prompt was shown — params: metric.
-  | 'anomaly_prompt_answered'        // user wrote an entry from the prompt — params: metric.
-  | 'anomaly_prompt_dismissed'       // user dismissed the prompt without writing — params: metric.
-  | 'anomaly_push_sent'              // a local notification was scheduled/posted — params: metric.
-  | 'anomaly_push_opened'            // user opened the app from that notification — params: metric.
-  | 'anomaly_practice_started'       // user started the offered slow-down practice from a signal — params: metric.
+  | 'anomaly_detected'               // a personal corridor caught a deviation — no params (health-state params removed 1.9.4, privacy).
+  | 'anomaly_prompt_shown'           // the in-app "record your day" prompt was shown — no params (health-state params removed 1.9.4, privacy).
+  | 'anomaly_prompt_answered'        // user wrote an entry from the prompt — no params (health-state params removed 1.9.4, privacy).
+  | 'anomaly_prompt_dismissed'       // user dismissed the prompt without writing — no params (health-state params removed 1.9.4, privacy).
+  | 'anomaly_push_sent'              // a local notification was scheduled/posted — no params (health-state params removed 1.9.4, privacy).
+  | 'anomaly_push_opened'            // user opened the app from that notification — no params (health-state params removed 1.9.4, privacy).
+  | 'anomaly_practice_started'       // user started the offered slow-down practice from a signal — no params (health-state params removed 1.9.4, privacy).
   // Calm check-ins (task 16) — the gentle counterpart to signals (steady/no-watch nudges)
   | 'checkin_push_sent'              // a calm check-in was scheduled — params: segment (watch|no_watch), type (A1|A2|A3|B1|B2).
   | 'checkin_push_opened'           // user opened the app from a calm check-in — params: segment, type.

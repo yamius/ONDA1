@@ -469,8 +469,8 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
         ...(anomaly ? { fromAnomaly: true, anomalyMetric: anomaly.metric, anomalyDelta: anomaly.delta } : {}),
       }, ...entries]);
       try {
-        trackEvent('diary_entry_created', { type: source, backdated, from_anomaly: !!anomaly });
-        if (anomaly) trackEvent('anomaly_prompt_answered', { metric: anomaly.metric });
+        trackEvent('diary_entry_created', { type: source, backdated });
+        if (anomaly) trackEvent('anomaly_prompt_answered', {});
       } catch { /* noop */ }
     }
     resetEditor(); setEditorOpen(false);
