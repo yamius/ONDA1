@@ -64,7 +64,7 @@
           "自宅での一晩の測定で ECG（心電図）と比べたところ、Oura Ring は夜間の心拍数と RMSSD を正確に測定しました。一方、周波数領域の指標である LF と LF:HF は誤差が大きくなりました。論文はリングの世代を明記しておらず、Ring 4 より前の研究です。",
           "同じ研究の対象は {{fact:study.cao2022.participants}} でした。",
           "睡眠中に5種類のウェアラブルを ECG の基準と比べた研究（{{fact:study.dial2025.participants}}、{{fact:study.dial2025.nights}}）では、5つのデバイスのうち Oura Gen 3 と Gen 4 が、夜間の HRV で ECG との一致度が最も高くなりました。",
-          "この比較における夜間 HRV の ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.oura}}。"
+          "この比較における夜間 HRV の Oura Gen 3 および Gen 4 と ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.oura}}。"
         ],
         "affiliated": []
       }
@@ -97,8 +97,8 @@
         "composite": "WHOOP は Recovery の要素として、HRV、安静時心拍数、睡眠、呼吸数に加えて、血中酸素と皮膚温を挙げています。各要素の重みは公開していません。",
         "independent": [
           "ECG（心電図）と比べたところ、WHOOP の心拍数は許容できる一致を示しました。対数変換した RMSSD では、バイアスと一致限界がその指標自体の最小有意変化に近いか、それを上回ったため、著者らはその精度の水準を踏まえて読むよう勧めています。研究で使われたのは旧世代の WHOOP で、WHOOP 4.0 や MG ではありません。",
-          "睡眠中に5種類のウェアラブルを ECG の基準と比べた研究（{{fact:study.dial2025.participants}}、{{fact:study.dial2025.nights}}）では、WHOOP は夜間の HRV で ECG との一致度が高く、Oura Gen 3 と Gen 4 に次ぐ結果でした。",
-          "この比較における夜間 HRV の ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.whoop}}。"
+          "睡眠中に5種類のウェアラブルを ECG の基準と比べた研究（{{fact:study.dial2025.participants}}、{{fact:study.dial2025.nights}}）では、WHOOP 4.0 は夜間の HRV で ECG との一致度が高く、Oura Gen 3 と Gen 4 に次ぐ結果でした。",
+          "この比較における夜間 HRV の WHOOP 4.0 と ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.whoop}}。"
         ],
         "affiliated": [
           "アスリートにおける WHOOP 由来の HRV の日ごとの変動を調べた研究（ECG に対する正確さではなく、再現性の研究）。WHOOP の支援を受けた研究グループによるものです。"
@@ -113,11 +113,11 @@
       "shows": [
         "Nightly Recharge には ANS charge が含まれます。尺度は −10〜+10 で、0 は過去28日間のあなたのいつもの水準です。",
         "Polar は睡眠の最初の約4時間で測定し、そのうえで「very poor（とても悪い）」から「very good（とても良い）」までの総合ステータスを示します。",
-        "Polar の開発者 API は、Nightly Recharge について夜間の HRV 平均と拍動間隔を提供しています。その平均がどの HRV の計算式によるものかは Polar から確認できていないため、ここでは RMSSD とも SDNN とも表記していません。",
+        "Nightly Recharge は、その夜を過去28日間のいつもの水準と比べます。Polar のヘルプページによると、HRV は睡眠の最初のおよそ4時間にわたり RMSSD として測定されます。Polar の開発者 API の夜間 HRV のフィールドは、明示的に RMSSD とは名付けられていません。",
         "HRV の数値は、デバイスやアプリの間で直接比べることはできません。WHOOP は最も深い睡眠中に RMSSD を計算し、Oura は夜間を通じた5分間のサンプルを平均し、Polar は睡眠の最初の約4時間を使い、Apple Watch は日中に SDNN を記録します。5種類のウェアラブルを536夜にわたって ECG（心電図）の基準と直接比べた研究では、デバイス間に系統的な差が見つかりました。ですから、数値は同じデバイスでのあなた自身のベースラインとだけ比べてください。ほかの人の平均値や年齢別の表は、個人の基準にはなりません。"
       ],
       "connect": "Polar には公開 API（AccessLink）があります。直接連携を予定していますが、まだ利用できず、時期もお伝えできません。",
-      "appleHealth": "Polar 自身のサポートページによると、Polar Flow は HRV を Apple Health に書き込まないため、Polar の HRV がこの経路で ONDA に届くことはありません。お使いのデバイスが Apple Watch でなくても、ONDA は iPhone のカメラで脈拍を測り、呼吸数の推定値も出せます。カメラで得られるのは脈拍であり、HRV ではありません。",
+      "appleHealth": "Polar のヘルプページには、Polar Flow が Apple Health に同期する項目として、アクティブエネルギー、ワークアウト中のみの心拍数、安静時エネルギー、睡眠、歩数、体重、ワークアウトが挙げられています。HRV はこのリストにないため、Polar の HRV がこの経路で ONDA に届くことは想定していません。お使いのデバイスが Apple Watch でなくても、ONDA は iPhone のカメラで脈拍を測り、呼吸数の推定値も出せます。カメラで得られるのは脈拍であり、HRV ではありません。",
       "faq": [
         {
           "q": "ANS charge が 0 とはどういう意味ですか？",
@@ -129,11 +129,11 @@
         }
       ],
       "det": {
-        "hrvSummary": "Polar は夜間の HRV を Nightly Recharge の ANS charge の部分で示します。これは HRV と呼吸数から作られ、あなた自身のいつもの水準と比べられます。計算式を明記した Polar のヘルプページ全文は開けなかったため、指標は「未確認」として記録しています。Polar は集団の値を公開していません。",
+        "hrvSummary": "Polar は夜間の HRV を Nightly Recharge の ANS charge の部分で示します。これは HRV と呼吸数から作られ、あなた自身のいつもの水準と比べられます。Polar のヘルプページによると、HRV は RMSSD で、睡眠の最初のおよそ数時間にわたり測定されます。Polar の開発者 API の HRV フィールドは、明示的に RMSSD とは名付けられていません。Polar は集団の値を公開していません。",
         "composite": "Polar は Nightly Recharge の2つの部分として、sleep charge（いつもと比べた睡眠）と ANS charge（いつもと比べた HRV と呼吸数）を挙げています。正確な計算式や重みは公開していません。",
         "independent": [
           "睡眠中に5種類のウェアラブルを ECG（心電図）の基準と比べた研究（{{fact:study.dial2025.participants}}、{{fact:study.dial2025.nights}}）では、Polar Grit X Pro ウォッチが、5つのデバイスのうち夜間の HRV で ECG との一致度が最も低くなりました。",
-          "この比較における夜間 HRV の ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.polar}}。"
+          "この比較における夜間 HRV の Polar Grit X Pro と ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.polar}}。"
         ],
         "independentNone": "Polar のウォッチの HRV を単独で ECG と比べた独立した研究は見つかりませんでした。Polar の胸ストラップは別のデバイスであり、ここでは扱っていません。",
         "affiliated": []
@@ -166,7 +166,7 @@
         "composite": "Garmin は Body Battery を、身体活動、ストレス、休息、睡眠というカテゴリーでしか説明していません。HRV が直接入力されているかどうか、各部分の重みは公開されていません。",
         "independent": [
           "睡眠中に5種類のウェアラブルを ECG（心電図）の基準と比べた研究（{{fact:study.dial2025.participants}}、{{fact:study.dial2025.nights}}）では、Garmin Fenix 6 の夜間 HRV の ECG との一致度は、Oura や WHOOP より低くなりました。",
-          "この比較における夜間 HRV の ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.garmin}}。"
+          "この比較における夜間 HRV の Garmin Fenix 6 と ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.garmin}}。"
         ],
         "independentNone": "Garmin の HRV Status そのものを ECG と比べた独立した研究は見つかりませんでした。",
         "affiliated": []
@@ -194,7 +194,7 @@
         "composite": "Google は Readiness の要素として、HRV、最近の睡眠、安静時心拍数の3つを挙げています。各要素の重みは公開していません。",
         "independent": [
           "小規模なパイロット研究では、Fitbit Versa 4 の夜間 HRV は、ECG（心電図）に基づく基準と強い相関と許容できる一致を示しました。",
-          "このパイロット研究の対象は {{fact:study.nasr2025.participants}} でした。"
+          "これは {{fact:study.nasr2025.participants}} を対象としたパイロット研究でした。"
         ],
         "affiliated": [
           "Google が資金提供した Pixel Watch 3 の研究は、HRV ではなく心拍数を検証したものです。",
@@ -341,7 +341,7 @@
         "composite": "Apple Watch には HRV から作られるレディネス型の単一スコアがないため、公開すべき重みはありません。",
         "independent": [
           "安静時に検査室の ECG（心電図）と比べたところ、Apple Watch Series 6 は、HRV の計算に使われる心拍間の間隔で中程度の一致を示しました。新しいモデルの Recovery HRV は独立して検証されていません。",
-          "この研究の対象は {{fact:study.bonneval2025.participants}} で、安静時のこれらの間隔の平均絶対パーセント誤差は {{fact:study.bonneval2025.mapeRest}} でした。"
+          "安静時の Apple Watch Series 6 について、ラボでの測定（{{fact:study.bonneval2025.participants}}）では、これらの間隔の平均絶対パーセント誤差は {{fact:study.bonneval2025.mapeRest}} でした。"
         ],
         "affiliated": []
       }

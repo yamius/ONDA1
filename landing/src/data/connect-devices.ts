@@ -139,10 +139,10 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     shows: [
       'Nightly Recharge includes ANS charge, on a scale from −10 to +10, where 0 is your usual level over the last 28 days.',
       'Polar measures it over roughly the first four hours of sleep, then gives an overall status from “very poor” to “very good”.',
-      'Polar’s developer API reports a night-time HRV average and beat-to-beat intervals for Nightly Recharge. We have not confirmed from Polar which HRV formula that average uses, so we do not label it RMSSD or SDNN here.',
+      'Nightly Recharge compares the night with your usual levels over the past 28 days. According to Polar’s help, HRV is measured as RMSSD over roughly the first four hours of sleep. Polar’s developer API field for night-time HRV is not explicitly named RMSSD.',
       CROSS_DEVICE_CAVEAT,
     ],
-    hrvType: 'Night-time, first ~4 h of sleep (formula not confirmed)',
+    hrvType: 'RMSSD, first ~4 h of sleep (per Polar Help)',
     sources: [
       { label: 'Polar Support: Nightly Recharge', url: 'https://support.polar.com/en/nightly-recharge-recovery-measurement' },
       { label: 'Polar AccessLink API', url: 'https://www.polar.com/accesslink-api/' },
@@ -151,7 +151,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     status: 'planned',
     connect:
       'Polar has a public API (AccessLink). We plan a direct connection, but it is not available yet and we cannot give a date.',
-    appleHealth: `According to Polar’s own support page, Polar Flow does not write HRV to Apple Health, so your Polar HRV will not reach ONDA that way. ${CAMERA}`,
+    appleHealth: `Polar’s help page lists what Polar Flow syncs to Apple Health: active energy, heart rate during workouts only, resting energy, sleep, steps, weight and workouts. HRV is not on that list, so we do not expect Polar HRV to reach ONDA that way. ${CAMERA}`,
     faq: [
       {
         q: 'What does ANS charge 0 mean?',

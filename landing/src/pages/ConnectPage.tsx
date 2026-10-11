@@ -17,7 +17,7 @@ import {
   getConnectDevice,
 } from '../data/connect-devices'
 import { NotFoundPage } from './NotFoundPage'
-import { CONNECT_ACCESSED, CONNECT_DEVICE_DETAILS, connectText, connectTextReady, type ConnectDeviceDetail } from '../data/connect-device-details'
+import { CONNECT_ACCESSED, CONNECT_DEVICE_DETAILS, CONNECT_WINDOW_METRIC, connectText, connectTextReady, type ConnectDeviceDetail } from '../data/connect-device-details'
 import type { FactLang } from '../data/science/facts'
 import { CONNECT_DEVICES_I18N, fillConnect } from '../data/connect-devices-i18n'
 
@@ -195,6 +195,21 @@ function ReadMoreLocalized({ lang }: { lang: string }) {
   )
 }
 
+function WindowCell({ slug, text }: { slug: string; text: string }) {
+  const w = CONNECT_WINDOW_METRIC[slug]
+  return (
+    <td className="py-3 pr-4 text-white/70">
+      {text}
+      {w?.source && (
+        <>
+          {' '}
+          <a href={w.source.url} target="_blank" rel="noopener noreferrer nofollow" className="text-xs text-white/45 hover:underline">[↗]</a>
+        </>
+      )}
+    </td>
+  )
+}
+
 function useTitle(title: string) {
   useEffect(() => {
     document.title = title
@@ -218,6 +233,7 @@ function ConnectIndexLocalized({ lang }: { lang: string }) {
             <tr className="border-b border-white/15 text-left text-white/60">
               <th className="py-2 pr-4">{c.thDevice}</th>
               <th className="py-2 pr-4">{c.thHrv}</th>
+              <th className="py-2 pr-4">{c.thWindow}</th>
               <th className="py-2">{c.thStatus}</th>
             </tr>
           </thead>
@@ -229,6 +245,7 @@ function ConnectIndexLocalized({ lang }: { lang: string }) {
                   {!langHref(`/connect/${d.slug}`, lang as Lang).startsWith(`/${lang}/`) && <span className="text-xs text-white/45">{c.inEnglish}</span>}
                 </td>
                 <td className="py-3 pr-4 text-white/70">{c.hrv[d.hrvType] ?? d.hrvType}</td>
+                <WindowCell slug={d.slug} text={c.window[d.slug] ?? CONNECT_WINDOW_METRIC[d.slug]?.text ?? ''} />
                 <td className="py-3 text-white/70">{c.status[d.status]}</td>
               </tr>
             ))}
@@ -261,6 +278,7 @@ function ConnectIndex() {
             <tr className="border-b border-white/15 text-left text-white/60">
               <th className="py-2 pr-4">Device</th>
               <th className="py-2 pr-4">HRV shown</th>
+              <th className="py-2 pr-4">Window / metric per maker docs</th>
               <th className="py-2">Connection to ONDA</th>
             </tr>
           </thead>
@@ -271,6 +289,7 @@ function ConnectIndex() {
                   <Link to={`/connect/${d.slug}`} className="text-terminal-green hover:underline">{d.name}</Link>
                 </td>
                 <td className="py-3 pr-4 text-white/70">{d.hrvType}</td>
+                <WindowCell slug={d.slug} text={CONNECT_WINDOW_METRIC[d.slug]?.text ?? ''} />
                 <td className="py-3 text-white/70">{CONNECT_STATUS_LABEL[d.status]}</td>
               </tr>
             ))}

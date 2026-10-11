@@ -57,6 +57,7 @@ const OURA_READINESS: SourceLink = { label: 'Oura Help: Readiness Contributors',
 const WHOOP_HRV: SourceLink = { label: 'WHOOP: Heart rate variability (The Locker)', url: 'https://www.whoop.com/us/en/thelocker/heart-rate-variability-hrv/' }
 const WHOOP_RECOVERY: SourceLink = { label: 'WHOOP: How does Recovery work (The Locker)', url: 'https://www.whoop.com/us/en/thelocker/how-does-whoop-recovery-work-101/' }
 const POLAR_MANUAL: SourceLink = { label: 'Polar Vantage V3 user manual: Nightly Recharge', url: 'https://support.polar.com/e_manuals/vantage-v3' }
+const POLAR_HELP: SourceLink = { label: 'Polar Support: Nightly Recharge', url: 'https://support.polar.com/en/nightly-recharge-recovery-measurement' }
 const GARMIN_HRV: SourceLink = { label: 'Garmin: HRV Status', url: 'https://www.garmin.com/en-US/garmin-technology/health-science/hrv-status/' }
 const GARMIN_BB: SourceLink = { label: 'Garmin: Body Battery', url: 'https://www.garmin.com/en-US/garmin-technology/health-science/body-battery/' }
 const GOOGLE_METRICS: SourceLink = { label: 'Google Health Help: health metrics', url: 'https://support.google.com/googlehealth/answer/14237107' }
@@ -93,7 +94,7 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
       },
       { text: 'The same study included {{fact:study.cao2022.participants}}.', single: true, cite: CAO },
       { text: `${DIAL_RANK('Oura Gen 3 and Gen 4 had the highest agreement with ECG for night-time HRV of the five devices.')}`, single: true, cite: DIAL },
-      { text: 'Agreement with ECG for night-time HRV in that comparison (concordance correlation coefficient): {{fact:study.dial2025.hrvCcc.oura}}.', single: true, cite: DIAL },
+      { text: 'Agreement of Oura Gen 3 and Gen 4 with ECG for night-time HRV in that comparison (concordance correlation coefficient): {{fact:study.dial2025.hrvCcc.oura}}.', single: true, cite: DIAL },
     ],
     affiliated: [],
   },
@@ -117,8 +118,8 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
         single: true,
         cite: BELLENGER21,
       },
-      { text: `${DIAL_RANK('WHOOP had high agreement with ECG for night-time HRV, below Oura Gen 3 and Gen 4.')}`, single: true, cite: DIAL },
-      { text: 'Agreement with ECG for night-time HRV in that comparison (concordance correlation coefficient): {{fact:study.dial2025.hrvCcc.whoop}}.', single: true, cite: DIAL },
+      { text: `${DIAL_RANK('WHOOP 4.0 had high agreement with ECG for night-time HRV, below Oura Gen 3 and Gen 4.')}`, single: true, cite: DIAL },
+      { text: 'Agreement of WHOOP 4.0 with ECG for night-time HRV in that comparison (concordance correlation coefficient): {{fact:study.dial2025.hrvCcc.whoop}}.', single: true, cite: DIAL },
     ],
     affiliated: [
       {
@@ -129,8 +130,10 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
   },
   polar: {
     hrvSummary:
-      'Polar shows night-time HRV through the ANS charge part of Nightly Recharge, built from HRV and breathing rate and compared with your own usual level. We could not open a full Polar help page that names the formula, so we record the metric as not confirmed. Polar does not publish population values.',
+      'Polar shows night-time HRV through the ANS charge part of Nightly Recharge, built from HRV and breathing rate and compared with your own usual level. Per Polar’s help, HRV is RMSSD, measured over roughly the first hours of sleep; the HRV field in Polar’s developer API is not explicitly named RMSSD. Polar does not publish population values.',
     hrvQuotes: [
+      { quote: 'is measured with a parameter called RMSSD', source: POLAR_HELP },
+      { quote: 'measured during roughly the first four hours of your sleep', source: POLAR_HELP },
       { quote: 'Both components are formed by comparing your last night to your usual levels from {{fact:connect.polar.baselineWindow}}.', source: POLAR_MANUAL },
     ],
     compositeName: 'Nightly Recharge',
@@ -139,7 +142,7 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
     compositeQuotes: [],
     independent: [
       { text: `${DIAL_RANK('the Polar Grit X Pro watch had the lowest agreement with ECG for night-time HRV of the five devices.')}`, single: true, cite: DIAL },
-      { text: 'Agreement with ECG for night-time HRV in that comparison (concordance correlation coefficient): {{fact:study.dial2025.hrvCcc.polar}}.', single: true, cite: DIAL },
+      { text: 'Agreement of the Polar Grit X Pro with ECG for night-time HRV in that comparison (concordance correlation coefficient): {{fact:study.dial2025.hrvCcc.polar}}.', single: true, cite: DIAL },
     ],
     independentNone:
       'We found no independent study that checks HRV from a Polar watch against an ECG on its own. Polar’s chest straps are a different device and are not covered here.',
@@ -160,7 +163,7 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
     ],
     independent: [
       { text: `${DIAL_RANK('a Garmin Fenix 6 had lower agreement with ECG for night-time HRV than Oura and WHOOP.')}`, single: true, cite: DIAL },
-      { text: 'Agreement with ECG for night-time HRV in that comparison (concordance correlation coefficient): {{fact:study.dial2025.hrvCcc.garmin}}.', single: true, cite: DIAL },
+      { text: 'Agreement of the Garmin Fenix 6 with ECG for night-time HRV in that comparison (concordance correlation coefficient): {{fact:study.dial2025.hrvCcc.garmin}}.', single: true, cite: DIAL },
     ],
     independentNone: 'We found no independent study that checks Garmin HRV Status itself against an ECG.',
     affiliated: [],
@@ -183,7 +186,7 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
         single: true,
         cite: NASR,
       },
-      { text: 'That pilot included {{fact:study.nasr2025.participants}}.', single: true, cite: NASR },
+      { text: 'It was a pilot study with {{fact:study.nasr2025.participants}}.', single: true, cite: NASR },
     ],
     affiliated: [
       { text: 'A Google-funded study of the Pixel Watch 3 checked heart rate, not HRV.', cite: LAMBE },
@@ -254,7 +257,7 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
         single: true,
         cite: BONNEVAL,
       },
-      { text: 'That study included {{fact:study.bonneval2025.participants}}; the mean absolute percentage error for those intervals at rest was {{fact:study.bonneval2025.mapeRest}}.', single: true, cite: BONNEVAL },
+      { text: 'For the Apple Watch Series 6 at rest, in the lab ({{fact:study.bonneval2025.participants}}), the mean absolute percentage error for those intervals was {{fact:study.bonneval2025.mapeRest}}.', single: true, cite: BONNEVAL },
     ],
     affiliated: [],
   },
@@ -291,4 +294,22 @@ export function connectDetailFactIds(): string[] {
     for (const a of [...d.independent, ...d.affiliated]) scan(a.text)
   }
   return [...ids]
+}
+
+/**
+ * B8 (owner 2026-10-11, option 2): "measurement window / metric per vendor docs" column on /connect
+ * and the localized hubs. Data: digest 072 (snapshot 2026-10-11). Localized texts: connect-i18n `window`.
+ */
+export const CONNECT_WINDOW_METRIC: Record<string, { text: string; source?: SourceLink }> = {
+  oura: { text: 'During sleep, sampled through the night; metric not named', source: OURA_HRV },
+  whoop: { text: 'RMSSD, during deepest sleep', source: WHOOP_HRV },
+  polar: { text: 'RMSSD, roughly the first hours of sleep, vs your usual level', source: POLAR_HELP },
+  garmin: { text: 'RMSSD, overnight, vs your personal baseline', source: GARMIN_HRV },
+  fitbit: { text: 'Night-time; metric not named', source: GOOGLE_METRICS },
+  samsung: { text: 'Not disclosed on Samsung help pages' },
+  withings: { text: 'During sleep, in ms; metric not named', source: WITHINGS_HRV },
+  ultrahuman: { text: 'Overnight, vs your own range; metric not named (product page)', source: ULTRAHUMAN_HOW },
+  ringconn: { text: 'Not reviewed yet' },
+  amazfit: { text: 'Not reviewed yet' },
+  'apple-watch': { text: 'SDNN, sampled automatically at rest through the day', source: APPLE_SDNN },
 }

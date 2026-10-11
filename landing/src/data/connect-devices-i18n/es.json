@@ -36,7 +36,7 @@
   "devices": {
     "oura": {
       "metaTitle": "Cómo leer la HRV y el Readiness de Oura | ONDA Life",
-      "metaDescription": "Cómo leer la HRV de Oura: qué significan HRV Balance y Readiness, qué HRV mide Oura por la noche, si Oura se conecta a ONDA y cómo comparar con tu línea base.",
+      "metaDescription": "Cómo leer la HRV de Oura: qué significan HRV Balance y Readiness, qué HRV mide Oura de noche, si Oura se conecta a ONDA y cómo comparar con tu línea base.",
       "h1": "Cómo leer la HRV de tu Oura",
       "lead": "Oura muestra la variabilidad de la frecuencia cardíaca (VFC, HRV) dentro de Readiness y como media nocturna. Aquí tienes qué son esas cifras, qué no son y cómo leerlas frente a tu propia línea base y no la de otra persona.",
       "shows": [
@@ -64,14 +64,14 @@
           "Frente a un ECG en casa durante la noche, el anillo Oura midió con precisión la frecuencia cardíaca nocturna y el RMSSD; las medidas del dominio de la frecuencia LF y LF:HF tuvieron errores altos. El artículo no indica la generación del anillo y es anterior al Ring 4.",
           "El mismo estudio incluyó {{fact:study.cao2022.participants}}.",
           "En una comparación de cinco wearables frente a un ECG de referencia durante el sueño ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}), Oura Gen 3 y Gen 4 tuvieron la mayor concordancia con el ECG para la HRV nocturna de los cinco dispositivos.",
-          "Concordancia con el ECG para la HRV nocturna en esa comparación (coeficiente de correlación de concordancia): {{fact:study.dial2025.hrvCcc.oura}}."
+          "Concordancia de Oura Gen 3 y Gen 4 con el ECG para la HRV nocturna en esa comparación (coeficiente de correlación de concordancia): {{fact:study.dial2025.hrvCcc.oura}}."
         ],
         "affiliated": []
       }
     },
     "whoop": {
       "metaTitle": "Cómo leer la HRV y el Recovery de WHOOP | ONDA Life",
-      "metaDescription": "Cómo leer la HRV de WHOOP: de qué se compone Recovery, por qué su HRV es RMSSD, si WHOOP se conecta a ONDA y cómo leer una noche baja frente a tu línea base.",
+      "metaDescription": "Cómo leer la HRV de WHOOP: de qué se compone Recovery, por qué su HRV es RMSSD, si WHOOP se conecta a ONDA y cómo leer una noche baja ante tu línea base.",
       "h1": "Cómo leer la HRV de tu WHOOP",
       "lead": "WHOOP convierte tu noche en un porcentaje de Recovery, y la variabilidad de la frecuencia cardíaca (VFC, HRV) es uno de sus datos. Aquí tienes de qué se compone esa cifra y cómo leerla con calma.",
       "shows": [
@@ -97,8 +97,8 @@
         "composite": "WHOOP enumera los datos de Recovery: HRV, frecuencia cardíaca en reposo, sueño y frecuencia respiratoria, además de oxígeno en sangre y temperatura de la piel. WHOOP no publica cuánto pesa cada dato.",
         "independent": [
           "Frente a un ECG, la frecuencia cardíaca de WHOOP mostró una concordancia aceptable. Para el RMSSD con transformación logarítmica, el sesgo y los límites de concordancia se acercaron o superaron el cambio mínimo relevante de la propia métrica, así que los autores aconsejan leerlo teniendo en cuenta su propio nivel de precisión. El estudio usó una generación anterior de WHOOP, no WHOOP 4.0 ni MG.",
-          "En una comparación de cinco wearables frente a un ECG de referencia durante el sueño ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}), WHOOP tuvo una concordancia alta con el ECG para la HRV nocturna, por debajo de Oura Gen 3 y Gen 4.",
-          "Concordancia con el ECG para la HRV nocturna en esa comparación (coeficiente de correlación de concordancia): {{fact:study.dial2025.hrvCcc.whoop}}."
+          "En una comparación de cinco wearables frente a un ECG de referencia durante el sueño ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}), WHOOP 4.0 tuvo una concordancia alta con el ECG para la HRV nocturna, por debajo de Oura Gen 3 y Gen 4.",
+          "Concordancia de WHOOP 4.0 con el ECG para la HRV nocturna en esa comparación (coeficiente de correlación de concordancia): {{fact:study.dial2025.hrvCcc.whoop}}."
         ],
         "affiliated": [
           "Un estudio de la variabilidad día a día de la HRV obtenida con WHOOP en deportistas (fiabilidad, no precisión frente a un ECG), de un grupo de investigación con apoyo de WHOOP."
@@ -107,17 +107,17 @@
     },
     "polar": {
       "metaTitle": "Cómo leer Nightly Recharge y la HRV de Polar | ONDA Life",
-      "metaDescription": "Cómo leer Nightly Recharge de Polar: qué significa ANS charge de −10 a +10, qué parte de la noche usa Polar, si se conecta a ONDA y por qué su HRV no llega a Apple Health.",
+      "metaDescription": "Nightly Recharge de Polar: qué significa ANS charge de −10 a +10, qué parte de la noche usa, si se conecta a ONDA y por qué su HRV no llega a Apple Health.",
       "h1": "Cómo leer el Nightly Recharge de tu Polar",
       "lead": "Polar muestra la variabilidad de la frecuencia cardíaca (VFC, HRV) nocturna a través de Nightly Recharge y su ANS charge. Aquí tienes qué significa la escala y cómo leerla frente a tu propio nivel habitual.",
       "shows": [
         "Nightly Recharge incluye ANS charge, en una escala de −10 a +10, donde 0 es tu nivel habitual de los últimos 28 días.",
         "Polar lo mide durante aproximadamente las primeras cuatro horas de sueño y después da un estado general de «muy malo» a «muy bueno».",
-        "La API para desarrolladores de Polar ofrece una media de HRV nocturna y los intervalos latido a latido de Nightly Recharge. No hemos confirmado con Polar qué fórmula de HRV usa esa media, así que aquí no la etiquetamos como RMSSD ni SDNN.",
+        "Nightly Recharge compara la noche con tus niveles habituales de los últimos 28 días. Según la ayuda de Polar, la HRV se mide como RMSSD durante aproximadamente las primeras cuatro horas de sueño. El campo de la API para desarrolladores de Polar para la HRV nocturna no se denomina explícitamente RMSSD.",
         "Las cifras de HRV no se pueden comparar directamente entre dispositivos o apps. WHOOP calcula el RMSSD durante tu sueño más profundo, Oura promedia muestras de cinco minutos a lo largo de la noche, Polar usa aproximadamente las primeras cuatro horas de sueño y Apple Watch registra el SDNN durante el día. Una comparación directa de cinco wearables con un ECG de referencia a lo largo de 536 noches encontró diferencias sistemáticas entre dispositivos. Así que compara tus cifras solo con tu propia línea base en el mismo dispositivo: las medias de otras personas y las tablas por edad no son un estándar personal."
       ],
       "connect": "Polar tiene una API pública (AccessLink). Prevemos una conexión directa, pero aún no está disponible y no podemos dar una fecha.",
-      "appleHealth": "Según la propia página de soporte de Polar, Polar Flow no escribe la HRV en Apple Health, así que tu HRV de Polar no llegará a ONDA por esa vía. Si tu dispositivo no es un Apple Watch, ONDA puede medir igualmente tu pulso con la cámara del iPhone, junto con una estimación de la frecuencia respiratoria. La cámara da el pulso, no la HRV.",
+      "appleHealth": "La página de ayuda de Polar enumera lo que Polar Flow sincroniza con Apple Health: energía activa, frecuencia cardíaca solo durante los entrenamientos, energía en reposo, sueño, pasos, peso y entrenamientos. La HRV no está en esa lista, así que no esperamos que la HRV de Polar llegue a ONDA por esa vía. Si tu dispositivo no es un Apple Watch, ONDA puede medir igualmente tu pulso con la cámara del iPhone, junto con una estimación de la frecuencia respiratoria. La cámara da el pulso, no la HRV.",
       "faq": [
         {
           "q": "¿Qué significa un ANS charge de 0?",
@@ -129,11 +129,11 @@
         }
       ],
       "det": {
-        "hrvSummary": "Polar muestra la HRV nocturna mediante la parte ANS charge de Nightly Recharge, construida a partir de la HRV y la frecuencia respiratoria y comparada con tu propio nivel habitual. No pudimos abrir una página de ayuda completa de Polar que nombre la fórmula, así que registramos la métrica como no confirmada. Polar no publica valores de población.",
+        "hrvSummary": "Polar muestra la HRV nocturna mediante la parte ANS charge de Nightly Recharge, construida a partir de la HRV y la frecuencia respiratoria y comparada con tu propio nivel habitual. Según la ayuda de Polar, la HRV es RMSSD, medida durante aproximadamente las primeras horas de sueño; el campo de HRV de la API para desarrolladores de Polar no se denomina explícitamente RMSSD. Polar no publica valores de población.",
         "composite": "Polar nombra las dos partes de Nightly Recharge: sleep charge (tu sueño comparado con lo habitual) y ANS charge (HRV y frecuencia respiratoria comparadas con lo habitual). Polar no publica la fórmula exacta ni los pesos.",
         "independent": [
           "En una comparación de cinco wearables frente a un ECG de referencia durante el sueño ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}), el reloj Polar Grit X Pro tuvo la menor concordancia con el ECG para la HRV nocturna de los cinco dispositivos.",
-          "Concordancia con el ECG para la HRV nocturna en esa comparación (coeficiente de correlación de concordancia): {{fact:study.dial2025.hrvCcc.polar}}."
+          "Concordancia del Polar Grit X Pro con el ECG para la HRV nocturna en esa comparación (coeficiente de correlación de concordancia): {{fact:study.dial2025.hrvCcc.polar}}."
         ],
         "independentNone": "No encontramos ningún estudio independiente que compruebe por sí solo la HRV de un reloj Polar frente a un ECG. Las bandas de pecho de Polar son otro dispositivo y no se tratan aquí.",
         "affiliated": []
@@ -141,7 +141,7 @@
     },
     "garmin": {
       "metaTitle": "Cómo leer el HRV Status de Garmin | ONDA Life",
-      "metaDescription": "Cómo leer el HRV Status de Garmin: qué significan Balanced, Unbalanced y Low, por qué necesita semanas para fijar la línea base, si Garmin se conecta a ONDA y cómo leer una noche baja.",
+      "metaDescription": "HRV Status de Garmin: qué significan Balanced, Unbalanced y Low, por qué la base tarda semanas, si Garmin se conecta a ONDA y cómo leer una noche baja.",
       "h1": "Cómo leer el HRV Status de tu Garmin",
       "lead": "Garmin etiqueta tu variabilidad de la frecuencia cardíaca (VFC, HRV) nocturna como Balanced, Unbalanced o Low en comparación con tu propio rango. Aquí tienes qué significan esas etiquetas y por qué pueden cambiar.",
       "shows": [
@@ -166,7 +166,7 @@
         "composite": "Garmin describe Body Battery solo por categorías: actividad física, estrés, descanso y sueño. No se revela si la HRV entra directamente ni cuánto pesa cada parte.",
         "independent": [
           "En una comparación de cinco wearables frente a un ECG de referencia durante el sueño ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}), un Garmin Fenix 6 tuvo menor concordancia con el ECG para la HRV nocturna que Oura y WHOOP.",
-          "Concordancia con el ECG para la HRV nocturna en esa comparación (coeficiente de correlación de concordancia): {{fact:study.dial2025.hrvCcc.garmin}}."
+          "Concordancia del Garmin Fenix 6 con el ECG para la HRV nocturna en esa comparación (coeficiente de correlación de concordancia): {{fact:study.dial2025.hrvCcc.garmin}}."
         ],
         "independentNone": "No encontramos ningún estudio independiente que compruebe el propio HRV Status de Garmin frente a un ECG.",
         "affiliated": []
@@ -174,7 +174,7 @@
     },
     "fitbit": {
       "metaTitle": "Cómo leer la HRV de tu Fitbit | ONDA Life",
-      "metaDescription": "Cómo leer la HRV de Fitbit frente a tu línea base, por qué los dispositivos no coinciden, si Fitbit y Pixel Watch se conectan a ONDA y qué cambió en el acceso de Google.",
+      "metaDescription": "HRV de Fitbit frente a tu línea base: por qué los equipos no coinciden, si Fitbit y Pixel Watch se conectan a ONDA y qué cambió en el acceso de Google.",
       "h1": "Cómo leer la HRV de tu Fitbit",
       "lead": "Fitbit y Pixel Watch muestran la variabilidad de la frecuencia cardíaca (VFC, HRV) en la app de Fitbit. La forma más útil de leerla es frente a tus propias noches recientes, no frente a una única cifra «buena».",
       "shows": [
@@ -194,7 +194,7 @@
         "composite": "Google nombra tres datos de Readiness: HRV, sueño reciente y frecuencia cardíaca en reposo. No publica cuánto pesa cada uno.",
         "independent": [
           "En un pequeño estudio piloto, la HRV nocturna del Fitbit Versa 4 mostró una correlación fuerte y una concordancia aceptable con una referencia basada en ECG.",
-          "Ese piloto incluyó {{fact:study.nasr2025.participants}}."
+          "Fue un estudio piloto con {{fact:study.nasr2025.participants}}."
         ],
         "affiliated": [
           "Un estudio financiado por Google sobre el Pixel Watch 3 comprobó la frecuencia cardíaca, no la HRV.",
@@ -204,7 +204,7 @@
     },
     "samsung": {
       "metaTitle": "Cómo leer la HRV del Samsung Galaxy Watch | ONDA Life",
-      "metaDescription": "Cómo leer la HRV del Samsung Galaxy Watch frente a tu línea base, por qué las cifras difieren entre dispositivos y si los datos de Samsung Health se conectan a ONDA.",
+      "metaDescription": "Cómo leer la HRV del Samsung Galaxy Watch frente a tu línea base, por qué las cifras difieren entre dispositivos y si Samsung Health se conecta a ONDA.",
       "h1": "Cómo leer la HRV de tu Samsung Galaxy Watch",
       "lead": "Samsung Health muestra datos cardíacos y de recuperación del Galaxy Watch. Lee cualquier cifra de variabilidad de la frecuencia cardíaca (VFC, HRV) frente a tus propias noches recientes y no frente a una cifra de población.",
       "shows": [
@@ -255,7 +255,7 @@
     },
     "ultrahuman": {
       "metaTitle": "Cómo leer la HRV de tu anillo Ultrahuman | ONDA Life",
-      "metaDescription": "Cómo leer la HRV del anillo Ultrahuman frente a tu línea base, por qué difieren las cifras de anillos y relojes y si los datos de Ultrahuman se conectan a ONDA.",
+      "metaDescription": "Cómo leer la HRV del anillo Ultrahuman frente a tu línea base, por qué difieren las cifras de anillos y relojes y si Ultrahuman se conecta a ONDA.",
       "h1": "Cómo leer la HRV de tu anillo Ultrahuman",
       "lead": "Los anillos Ultrahuman muestran la variabilidad de la frecuencia cardíaca (VFC, HRV) y puntuaciones de tipo recuperación en su app. Léelas frente a tus propias noches recientes, no frente a otro dispositivo ni a otra persona.",
       "shows": [
@@ -316,7 +316,7 @@
     },
     "apple-watch": {
       "metaTitle": "Cómo leer la HRV de tu Apple Watch (SDNN) | ONDA Life",
-      "metaDescription": "Cómo leer la HRV del Apple Watch: por qué Apple Health guarda SDNN, por qué no es comparable con el RMSSD de los anillos y cómo la app ONDA la lee para tu línea base.",
+      "metaDescription": "HRV del Apple Watch: por qué Apple Health guarda SDNN, por qué no es comparable con el RMSSD de los anillos y cómo la app ONDA la lee para tu línea base.",
       "h1": "Cómo leer la HRV de tu Apple Watch",
       "lead": "El Apple Watch registra automáticamente la variabilidad de la frecuencia cardíaca (VFC, HRV) y la guarda en Apple Health. Aquí tienes qué HRV es, por qué difiere de las cifras de los anillos y cómo la usa ONDA.",
       "shows": [
@@ -341,7 +341,7 @@
         "composite": "El Apple Watch no tiene una única puntuación de tipo preparación construida a partir de la HRV, así que no hay pesos que revelar.",
         "independent": [
           "Frente a un ECG de laboratorio en reposo, un Apple Watch Series 6 mostró una concordancia moderada para los intervalos entre latidos que se usan para calcular la HRV. Recovery HRV en los modelos más nuevos no se ha comprobado de forma independiente.",
-          "Ese estudio incluyó {{fact:study.bonneval2025.participants}}; el error porcentual absoluto medio de esos intervalos en reposo fue {{fact:study.bonneval2025.mapeRest}}."
+          "Para el Apple Watch Series 6 en reposo, en laboratorio ({{fact:study.bonneval2025.participants}}), el error porcentual absoluto medio de esos intervalos fue {{fact:study.bonneval2025.mapeRest}}."
         ],
         "affiliated": []
       }
