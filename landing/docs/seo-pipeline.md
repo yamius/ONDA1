@@ -35,7 +35,7 @@ Note that **`prerender.ts` itself fans out to a second chain at its tail** (site
 | 10c | `feed.ts` | tsx (called by prerender) | `dist/feed.xml` (RSS 2.0) + `dist/atom.xml` (Atom 1.0) |
 | 10d | `llms-txt.ts` | tsx (called by prerender) | `dist/llms.txt`, `dist/llms-full.txt`, `dist/<lang>/llms.txt` |
 | 10e | `rag-corpus.ts` | tsx (called by prerender) | `dist/datasets/onda-corpus.jsonl` + `.gz` |
-| 10f | `indexnow.ts` | tsx (called by prerender, non-fatal) | POSTs changed URLs to IndexNow; writes `.cache/indexnow-state.json` |
+| 10f | `indexnow.ts` | tsx (called by prerender, non-fatal) | OPT-IN: only with `INDEXNOW_ENABLED=1` on Vercel production (`vercel-build` script); POSTs changed URLs to IndexNow; writes `.cache/indexnow-state.json`. Local/preview/CI builds never submit |
 | 11 | `validate-seo.mjs` | node | (guard — no output; fails build on structural SEO defects) |
 
 `build:fast` is a dev shortcut: `optimize-images → article-dates → tsc -b → vite build → check-budget`. It does **not** prerender, so it does not exercise the GEO/sitemap stages or `validate-seo`.

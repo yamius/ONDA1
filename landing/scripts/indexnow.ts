@@ -7,8 +7,15 @@
  * IndexNow is a single-endpoint protocol that fans out to Bing, Yandex,
  * Seznam, Naver and others. We submit to api.indexnow.org which forwards.
  *
+ * OPT-IN ONLY (owner rule 2026-10-11, after a local build submitted 2,066 URLs):
+ * submits only when INDEXNOW_ENABLED=1 AND VERCEL=1 AND VERCEL_ENV=production.
+ * Prod gets INDEXNOW_ENABLED=1 from the `vercel-build` npm script (Vercel runs
+ * it instead of `build`). Local / preview / CI builds never submit.
+ * INDEXNOW_DRY_RUN=1 runs the gate + diff and logs what WOULD be sent, no POST,
+ * no state write.
+ *
  * Skip cases:
- *   - INDEXNOW_DISABLED=1 in env
+ *   - not opted in (see above), or INDEXNOW_DISABLED=1 kill-switch
  *   - dist/sitemap.xml missing
  *   - no URL changes since last run
  *
@@ -32,8 +39,15 @@ const BATCH_SIZE = 10000 // IndexNow per-request URL limit
 const FETCH_TIMEOUT_MS = 15000 // hard ceiling per batch; never let a hanging
 //                                socket block the deploy pipeline
 
-if (process.env.INDEXNOW_DISABLED === '1') {
-  console.log('[indexnow] disabled via INDEXNOW_DISABLED=1, skipping')
+const env = process.env
+const DRY_RUN = env.INDEXNOW_DRY_RUN === '1'
+let skipReason = ''
+if (env.INDEXNOW_DISABLED === '1') skipReason = 'INDEXNOW_DISABLED=1 kill-switch'
+else if (env.INDEXNOW_ENABLED !== '1') skipReason = 'INDEXNOW_ENABLED!=1 (opt-in; only the Vercel production build sets it)'
+else if (env.VERCEL !== '1' || env.VERCEL_ENV !== 'production')
+  skipReason = `not a Vercel production build (VERCEL=${env.VERCEL ?? 'unset'}, VERCEL_ENV=${env.VERCEL_ENV ?? 'unset'})`
+if (skipReason) {
+  console.log(`[indexnow] skipped: ${skipReason}`)
   process.exit(0)
 }
 
@@ -76,6 +90,11 @@ for (const [loc, lastmod] of current) {
 
 if (changed.length === 0) {
   console.log('[indexnow] no URL changes since last submission, skipping')
+  process.exit(0)
+}
+
+if (DRY_RUN) {
+  console.log(`[indexnow] DRY RUN: would submit ${changed.length} URL(s); no request sent, state not saved`)
   process.exit(0)
 }
 

@@ -1271,8 +1271,8 @@ execSync('tsx scripts/llms-txt.ts', { cwd: join(__dirname, '..'), stdio: 'inheri
 // Single-fetch RAG corpus (JSONL + .gz) for AI ingestion pipelines.
 console.log('[build] rag-corpus')
 execSync('tsx scripts/rag-corpus.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
-// IndexNow ping (Bing/Yandex/Seznam/Naver). Skipped automatically when
-// INDEXNOW_DISABLED=1 or when nothing changed since last submission.
+// IndexNow ping (Bing/Yandex/Seznam/Naver). OPT-IN: runs only with
+// INDEXNOW_ENABLED=1 on a Vercel production build (set by `vercel-build`).
 console.log('[build] indexnow')
 try {
   execSync('tsx scripts/indexnow.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })

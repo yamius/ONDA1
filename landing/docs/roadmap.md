@@ -237,8 +237,9 @@ Must exist before serious Google traffic on health queries:
 # Full build (as in CI)
 cd landing && npm run build
 
-# Quiet build (no IndexNow ping)
-INDEXNOW_DISABLED=1 npm run build
+# Local builds NEVER ping IndexNow (opt-in: INDEXNOW_ENABLED=1 + Vercel production only,
+# set by the `vercel-build` script). Dry-run the gate/diff without sending:
+# VERCEL=1 VERCEL_ENV=production INDEXNOW_ENABLED=1 INDEXNOW_DRY_RUN=1 npx tsx scripts/indexnow.ts
 
 # SEO crawl audit
 SEO_AUDIT_LABEL=manual SEO_STRICT=0 tsx scripts/seo-crawl.mjs

@@ -42,7 +42,7 @@ Preview). All client-read vars must be prefixed `VITE_` to be inlined at build.
 |---|---|---|
 | `VITE_POSTHOG_KEY` | yes | PostHog client analytics key |
 | `VITE_POSTHOG_HOST` | optional | defaults to `https://us.i.posthog.com` |
-| `INDEXNOW_DISABLED` | **`1` during migration** | suppresses IndexNow pings while the domain still points at the old host. **Remove (or set `0`) only after DNS has cut over to Vercel.** |
+| `INDEXNOW_DISABLED` | optional kill-switch | `1` stops IndexNow even on production. IndexNow is OPT-IN: it only submits when `INDEXNOW_ENABLED=1` (set by the `vercel-build` npm script, no dashboard var needed) AND `VERCEL=1` AND `VERCEL_ENV=production`. Local, preview and CI builds never submit. |
 | `VITE_SUPABASE_URL` | optional | safe to set; only used if the client talks to Supabase directly. Not read at build. |
 | `VITE_SUPABASE_ANON_KEY` | optional | as above |
 | `VITE_PPG_DEBUG` | no | leave unset in production |
@@ -76,8 +76,8 @@ Then, in GoDaddy → **DNS Management** for `onda-life.com`:
 - Lower the TTL to **60 s** a day before cutover for a fast rollback window.
 - SSL: Vercel auto-provisions a Let's Encrypt certificate once the records
   resolve — no action needed.
-- After DNS propagates and the site is verified live on Vercel, **remove
-  `INDEXNOW_DISABLED`** and redeploy so IndexNow pings resume on the new host.
+- IndexNow pings only from Vercel production builds (opt-in via `vercel-build`);
+  `INDEXNOW_DISABLED=1` remains an emergency kill-switch.
 
 ## 5. Post-deploy smoke test
 
