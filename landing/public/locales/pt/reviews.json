@@ -135,8 +135,52 @@
       "editorialAdjustment": "Honestidade do marketing — a página do produto Vibe diz “respaldado por mais de 40 estudos publicados” e “comprovado pelos resultados”, mas não nomeia os estudos, e não encontramos nenhum estudo publicado sobre o próprio Vibe (verificado em outubro de 2026). Isso é pontuado aqui, não no critério de evidências. (no original: “Backed by 40+ Published Studies”)"
     },
     "apple-watch-series-12": {
-      "verdict": "O melhor Apple Watch até agora para variabilidade da frequência cardíaca (HRV ou VFC): medição 24× mais frequente e separação entre Recovery e Overall HRV — mas ainda é antes de tudo um smartwatch, e a bateria ainda compete com o uso noturno.",
-      "productType": "Smartwatch"
+      "verdict": "O melhor Apple Watch até agora para a variabilidade da frequência cardíaca (HRV ou VFC): amostragem 24× mais frequente e HRV dividida em Recovery e Overall, mas ainda é antes de tudo um smartwatch, e a bateria ainda compete com o uso noturno.",
+      "summary": "O novo Health Sensing System do Series 12 é a primeira atualização do Apple Watch a levar a HRV a sério: mede a HRV até 24× mais vezes, divide em Recovery HRV e Overall HRV e adiciona notificações de hipertensão. Reduz boa parte da distância para os monitores dedicados, mas uma bateria de ~1 dia ainda torna o uso noturno um meio-termo.",
+      "description": "Análise da ONDA do Apple Watch Series 12 como monitor de HRV: o novo Health Sensing System enfim a leva a sério. Precisão, sensor, sono e custo-benefício.",
+      "bestFor": "Ideal como smartwatch completo cuja HRV agora serve como tendência pessoal (a Recovery HRV em si não foi validada).",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir do anúncio e das especificações da Apple de setembro de 2026, de análises independentes com uso real e da literatura publicada de validação de HRV do Apple Watch. Não foi testado na prática pela ONDA.",
+      "productType": "Smartwatch",
+      "pros": [
+        "HRV medida 24× mais vezes, dividida em Recovery e Overall",
+        "Novo Health Sensing System: ECG mais notificações ópticas de hipertensão",
+        "RMSSD nativo no HealthKit: apps de recuperação de terceiros finalmente conseguem ler",
+        "Sem assinatura; o smartwatch de uso diário mais capaz desta lista"
+      ],
+      "cons": [
+        "A bateria de ~1 dia ainda torna a HRV noturna consistente um meio-termo",
+        "A HRV óptica de pulso ainda não tem validação independente; uma cinta peitoral com ECG fica mais próxima do ECG de laboratório (em repouso, em adultos jovens saudáveis)",
+        "Recovery HRV e Overall HRV são métricas diferentes, fáceis de confundir",
+        "O monitoramento do sono ainda fica atrás dos monitores de sono dedicados"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "A HRV agora é medida mais ou menos a cada 5 minutos (24× mais vezes) e dividida em Recovery HRV e Overall HRV: um avanço real em relação às medições pontuais e esparsas do Series 11, embora continue sendo óptica de pulso, e não um anel contínuo ou um ECG.",
+        "sensor": "O novo Health Sensing System: LEDs verdes maiores e mais eficientes que leem a frequência cardíaca a cada 5 segundos, um ECG de derivação única e detecção óptica de hipertensão. O conjunto de sensores mais forte entre os relógios desta lista.",
+        "sleep-accuracy": "Os Sinais Vitais noturnos (Overnight Vitals) agora analisam a Recovery HRV em relação à sua linha de base pessoal. O monitoramento do sono melhorou, mas ainda fica atrás dos monitores de sono dedicados, e a bateria desestimula o uso todas as noites.",
+        "data-access": "O HealthKit é comparativamente aberto e agora grava um tipo RMSSD nativo (heartRateVariabilityRMSSD) ao lado do SDNN, então apps de terceiros finalmente conseguem ler a métrica de nível de recuperação.",
+        "wearability": "Até ~24 horas de bateria (12 horas com uma carga rápida de 15 minutos) ainda significam uma recarga diária que compete com a medição noturna: o único ponto em que um anel ou um relógio de várias semanas vence claramente.",
+        "app-ux": "A HRV finalmente aparece, com uma seção dedicada no app Frequência Cardíaca com Recovery e Overall HRV, em vez de ficar escondida como no Series 11. O Apple Saúde continua sendo a interface de saúde mais limpa desta lista.",
+        "value": "A partir de $399, compra única sem assinatura, e um aparelho de fato multiuso com ECG e notificações de hipertensão pelo preço."
+      },
+      "content": "## Onde se destaca\n\nO Apple Watch Series 12, anunciado em setembro de 2026, é o primeiro Apple Watch cuja principal novidade é a *medição de saúde*, e não a tela ou o chip. O novo Health Sensing System usa LEDs verdes maiores e mais eficientes para ler a frequência cardíaca a cada cinco segundos e medir a [HRV](/glossary/heart-rate-variability) até **24× mais vezes** do que antes, quando os relógios anteriores a captavam mais ou menos uma vez a cada duas horas.\n\nMais importante, ele muda *qual* número de HRV você recebe. O Series 12 agora mostra dois: **Recovery HRV** (para estresse e recuperação diários, analisada em relação à sua linha de base pessoal nos Sinais Vitais noturnos) e **Overall HRV** (para informações de saúde mais amplas, incluindo a saúde cardiovascular). A Apple não publicou a fórmula de nenhuma das duas. Por baixo, o HealthKit ganhou um tipo nativo `heartRateVariabilityRMSSD` ao lado do tradicional SDNN (a mesma estatística em que Whoop, Oura e Garmin baseiam suas pontuações de recuperação), então apps de terceiros finalmente conseguem ler um valor de RMSSD de um Apple Watch. Ele também adiciona **notificações de hipertensão**, usando o sensor óptico para analisar como os vasos sanguíneos respondem aos batimentos em janelas de 30 dias. Para a explicação completa da mudança para dois números, veja [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv).\n\n## Quais são as desvantagens do Apple Watch Series 12?\n\nA física não mudou tanto quanto o software. Continua sendo um **sensor óptico de pulso**, que fica atrás de um anel no dedo ou de uma cinta peitoral com ECG para um registro de HRV noturno limpo e contínuo. E a bateria (até cerca de 24 horas, com uma carga rápida de 15 minutos dando cerca de 12 horas) ainda significa uma recarga diária que compete com o uso a noite toda, o único ponto em que um anel ou um Garmin de várias semanas vence claramente. Os dois números de HRV também são fáceis de confundir: a Recovery HRV dá valores mais altos que a Overall HRV, e as duas não devem ser plotadas como uma única linha.\n\n## Quem deve comprar o Apple Watch Series 12?\n\nEscolha o Series 12 se você quer o melhor smartwatch para o dia a dia e agora quer uma HRV com a qual dá para agir de verdade: a amostragem mais frequente mais a Recovery HRV em relação a uma linha de base é um avanço real em relação ao Series 11. Se uma tendência limpa de HRV noturna é sua única prioridade, um anel que você possa usar todas as noites pode servir melhor (em gravações noturnas de 13 pessoas, Dial 2025, o Oura Ring 4 ficou entre os mais próximos do ECG); veja os [melhores monitores de HRV de 2026](/reviews/compare/best-hrv-trackers-2026).\n\n---\n\n## Leitura de contexto\n\nA ciência de por que a HRV é o sinal que vale a pena acompanhar e de como o corpo a produz.\n\n- [Por que a HRV dá valores diferentes em cada aparelho](/articles/hrv-different-every-device): SDNN vs RMSSD, e por que os números não batem entre marcas\n- [Apple Watch: Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv): a mudança para dois números de 2026, explicada\n- [A HRV prevê o tempo de reação e o foco?](/articles/nervous-system-ping-latency): o que a HRV em repouso diz e não diz sobre atenção e autocontrole\n",
+      "faq": [
+        {
+          "q": "O Apple Watch Series 12 é melhor para medir HRV que o Series 11?",
+          "a": "Sim, claramente. O Health Sensing System do Series 12 mede a HRV cerca de 24× mais vezes e divide em Recovery HRV e Overall HRV, analisadas em relação à sua linha de base: um avanço real em relação às medições pontuais e esparsas do Series 11. Ele também mostra a HRV no app Frequência Cardíaca em vez de escondê-la."
+        },
+        {
+          "q": "Quanto custa o Apple Watch Series 12 e precisa de assinatura?",
+          "a": "O Series 12 começa em $399 na versão de alumínio (titânio e cerâmica custam mais) e não precisa de assinatura para os recursos de HRV, ECG ou hipertensão. Foi lançado em 18 de setembro de 2026."
+        },
+        {
+          "q": "O Apple Watch Series 12 é preciso o suficiente para HRV ou é melhor comprar um anel?",
+          "a": "Em estudos de modelos anteriores a frequência cardíaca ficou próxima da referência, embora menos logo após séries de musculação em um modelo anterior (Series 8) em um estudo; em um estudo de modelos anteriores a HRV foi subestimada, e a Recovery HRV / Overall HRV não foram validadas, então use como tendência pessoal. Para comparar com Whoop ou Oura, você pode usar o valor de RMSSD que os apps agora conseguem ler do Apple Saúde (a Apple não confirmou que a Recovery HRV é RMSSD). Uma cinta peitoral com ECG fica mais próxima do ECG de laboratório (em repouso, em adultos jovens saudáveis), e a bateria de ~1 dia do Watch compete com o uso a noite toda."
+        },
+        {
+          "q": "O Apple Watch Series 12 detecta pressão alta?",
+          "a": "Ele adiciona notificações de hipertensão: o sensor óptico analisa como seus vasos sanguíneos respondem aos batimentos em janelas de cerca de 30 dias e pode sinalizar possível hipertensão. É um sinal de triagem, não um diagnóstico nem um substituto do medidor de pressão de braçadeira."
+        }
+      ]
     },
     "whoop-5-0": {
       "verdict": "Um coach de recuperação no seu pulso: variabilidade da frequência cardíaca (HRV ou VFC) noturna contínua e boa leitura do esforço, presos a uma assinatura sem fim.",
@@ -258,8 +302,52 @@
       "productType": "Smartwatch"
     },
     "muse-s-athena": {
-      "verdict": "O headset de treino cerebral de consumo mais completo — EEG mais fNIRS numa faixa macia com a qual você pode dormir.",
-      "productType": "Faixa de EEG + fNIRS de consumo (meditação, sono, foco)"
+      "verdict": "O headset de treino cerebral de consumo mais completo: EEG mais fNIRS em uma faixa macia com a qual dá para dormir.",
+      "summary": "O Muse S Athena é o carro-chefe da Interaxon de 2024: uma faixa macia própria para dormir que combina EEG seco de quatro canais com oxigenação pré-frontal por fNIRS e monitoramento do sono noturno. Herda a biblioteca madura de conteúdo de meditação do Muse, acrescenta a fusão de sensores mais ambiciosa da categoria de consumo e, ao contrário da maioria dos aparelhos premium, não exige assinatura obrigatória. O melhor completo em EEG / treino cerebral em 2026.",
+      "description": "Análise da ONDA do Muse S Athena, a faixa premium da Interaxon que une EEG, fNIRS e monitoramento do sono. Sinal, conteúdo, conforto e custo-benefício.",
+      "bestFor": "Ideal para usuários sérios de treino cerebral de consumo que querem a biblioteca de conteúdo mais ampla com monitoramento do sono incluído.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da documentação de produto da Interaxon, da literatura publicada de validação do EEG do Muse e de análises independentes de 2026. Não foi testado na prática pela ONDA.",
+      "productType": "Faixa de consumo EEG + fNIRS (meditação, sono, foco)",
+      "pros": [
+        "EEG + fNIRS + sono em uma única faixa macia: único no mercado de consumo",
+        "A biblioteca de conteúdo de treino cerebral mais ampla após uma década de evolução",
+        "Sem assinatura obrigatória: os recursos básicos de meditação, sono e foco funcionam sem ela",
+        "O único headset EEG premium confortável o bastante para dormir a noite toda"
+      ],
+      "cons": [
+        "O SDK próprio é limitado: desenvolvedores preferem o Neurosity Crown",
+        "Preço premium: cerca do dobro do Muse 2 de entrada",
+        "Eletrodos secos: adequados para uso de consumo, não de nível de pesquisa",
+        "A fusão de sensores (EEG + fNIRS) ainda está evoluindo na interpretação do app"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Quatro eletrodos EEG secos mais optodos fNIRS pré-frontais: o primeiro headset de consumo a fundir os dois sinais em um só aparelho. A estabilidade do sinal se mantém bem em sessões sentado e deitado; não é uma referência real de nível de pesquisa.",
+        "training-content": "A biblioteca de conteúdo de treino cerebral mais ampla do mercado de consumo: meditações guiadas, respiração, jornadas para dormir, sessões de foco, registro de humor. Madura após uma década de evolução.",
+        "insights": "Os relatórios por sessão classificam o tempo da sessão como calmo, neutro ou ativo com o algoritmo próprio da Interaxon; o estadiamento do sono combina EEG e movimento. A melhor análise pós-sessão desta lista.",
+        "comfort": "Faixa de tecido macio projetada para uso noturno: o único headset EEG premium desta lista com o qual dá para dormir de verdade.",
+        "app-ux": "App refinado para iOS/Android com integração ao Apple Health e ao Google Fit. Ecossistema maduro após uma década de lançamentos do Muse.",
+        "open-data": "Exportação de EEG bruto disponível pelo Muse Direct (app de terceiros), mas o SDK próprio da Interaxon é limitado. O acesso para desenvolvedores fica muito atrás do Neurosity Crown.",
+        "value": "$474.99 pelo hardware, sem assinatura obrigatória. Preço premium, mas é o único aparelho de consumo com EEG + fNIRS + sono; os recursos básicos funcionam sem assinatura, embora o Smart Wakeup, o coach com IA e os programas selecionados exijam o Muse Premium."
+      },
+      "content": "## Onde se destaca\n\nO Muse S Athena é o headset de treino cerebral de consumo mais completo de 2026. A Interaxon manteve tudo o que fazia a linha Muse original funcionar (faixa macia, ampla biblioteca de meditação, formato próprio para dormir) e acrescentou duas coisas que quase nenhum concorrente tem: detecção de oxigenação [pré-frontal](/glossary/prefrontal-cortex) por fNIRS junto ao EEG de quatro canais, e estadiamento explícito do sono, incluindo o [sono de ondas lentas](/glossary/slow-wave-sleep), derivado do próprio sinal de EEG. A combinação é realmente inédita no mercado de consumo; os módulos de meditação, foco e sono se apoiam nela.\n\n## Quais são as desvantagens do Muse S Athena?\n\nPara desenvolvedores e biohackers que querem acesso ao sinal bruto, é a ferramenta errada. O SDK próprio é limitado e a prioridade da Interaxon sempre foi o acabamento em vez da abertura; o Muse Direct permite exportar EEG bruto, mas é de terceiros e pouco prático. A qualidade do sinal de EEG puro também é adequada, não de nível de pesquisa: são eletrodos secos em uma faixa macia, não sensores clínicos com gel.\n\n## Quem deve comprar o Muse S Athena?\n\nEscolha o Muse S Athena se você quer um único aparelho de consumo para meditação, foco e sono, com a biblioteca de conteúdo mais ampla do mercado e sem assinatura obrigatória para os recursos básicos. Se o acesso ao EEG bruto é o fator decisivo, o Neurosity Crown é a escolha certa. Se o preço é o fator decisivo, o Muse 2 cobre quase o mesmo uso de meditação pela metade do custo.\n\n---\n\n## Leituras de apoio\n\nA neurociência que esses headsets refletem, e o que o sinal de EEG pode e não pode dizer sobre estados mentais.\n\n- [Ondas cerebrais alfa: calma, criatividade e flow](/articles/neural-bridge-alpha-flow-gateway) — o que o ritmo alfa faz e o que headsets, apps e músicas alfa podem e não podem mudar\n- [A acetilcolina como lente da atenção](/articles/acetylcholine-lens-neuro-mechanics) — a neuroquímica por trás do foco\n- [Arquitetura cognitiva: capacidade neural](/articles/cognitive-architecture-neural-throughput) — uma metáfora de quanta informação a mente consegue processar\n",
+      "faq": [
+        {
+          "q": "O Muse S Athena vale a pena?",
+          "a": "O Muse S Athena vale a pena para usuários sérios de treino cerebral de consumo. Ele combina EEG, fNIRS e monitoramento do sono em uma única faixa macia, oferece a biblioteca de conteúdo de treino cerebral mais ampla após uma década de evolução e não exige assinatura obrigatória. Desenvolvedores que querem dados brutos podem preferir o Neurosity Crown."
+        },
+        {
+          "q": "Quanto custa o Muse S Athena?",
+          "a": "O Muse S Athena custa $474.99 pela faixa, sem assinatura obrigatória: os recursos básicos funcionam sem ela, mas o Smart Wakeup, o coach com IA e os programas selecionados exigem o Muse Premium. Isso é cerca do dobro do Muse 2 de entrada. Ele traz EEG, fNIRS e monitoramento do sono em uma única faixa macia."
+        },
+        {
+          "q": "Quais são as desvantagens do Muse S Athena?",
+          "a": "O SDK próprio é limitado, o preço premium é o dobro do Muse 2 e os eletrodos secos são adequados para uso de consumo, mas não de nível de pesquisa. Além disso, a forma como o app interpreta a fusão dos sensores de EEG e fNIRS ainda está evoluindo."
+        },
+        {
+          "q": "Muse S Athena ou Neurosity Crown: qual é melhor?",
+          "a": "O Muse S Athena é melhor para treino cerebral guiado e sono, com a biblioteca de conteúdo mais ampla e conforto para a noite toda. O Neurosity Crown é melhor para desenvolvedores, com SDK aberto e oito eletrodos, mas custa cerca de três vezes mais e não tem uma biblioteca de conteúdo ampla."
+        }
+      ]
     },
     "muse-2": {
       "verdict": "A faixa de EEG de consumo mais popular — conteúdo maduro, preço acessível, a porta de entrada da categoria.",
@@ -338,16 +426,104 @@
       "productType": "Neurofeedback clínico em casa (com prescrição)"
     },
     "mendi": {
-      "verdict": "Não é EEG — treino pré-frontal por fNIRS num formato simples baseado em jogos. Fácil de usar, foco restrito.",
-      "productType": "Faixa de treino cerebral pré-frontal por fNIRS"
+      "verdict": "Não é EEG: treino pré-frontal com fNIRS em um formato simples de jogo. Fácil de usar e de foco restrito.",
+      "summary": "O Mendi é uma faixa de cabeça de fabricação sueca que mede a oxigenação sanguínea do córtex pré-frontal por fNIRS (espectroscopia funcional no infravermelho próximo) em vez de EEG, e leva o sinal a uma experiência de neurofeedback em forma de jogo: mantenha a bola no ar sustentando a atenção na atividade da sua testa. Está incluído aqui porque faz parte da decisão de compra de aparelhos de treino cerebral de consumo, mesmo com uma modalidade diferente. Mais simples que o EEG, mais fácil de aprender e de alcance mais restrito.",
+      "description": "Análise da ONDA do Mendi: faixa fNIRS (não EEG) do córtex pré-frontal com neurofeedback em forma de jogo. Sinal, conteúdo e custo-benefício.",
+      "bestFor": "Ideal para quem busca a experiência de neurofeedback mais simples, focada apenas no treino da atenção pré-frontal.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da documentação de produto do Mendi, da literatura publicada sobre neurofeedback com fNIRS e de análises independentes de 2026. Não foi testado na prática pela ONDA.",
+      "productType": "Faixa de treino cerebral pré-frontal com fNIRS",
+      "pros": [
+        "Neurofeedback em forma de jogo: a curva de aprendizado mais fácil da categoria",
+        "Uma única faixa na testa: o formato mais confortável para sessões de foco",
+        "Não exige assinatura",
+        "O fNIRS oferece uma modalidade de sinal diferente do EEG: pode servir para quem não se adaptou ao EEG"
+      ],
+      "cons": [
+        "Não é EEG: o fNIRS é um sinal diferente (e mais restrito)",
+        "Mede uma única região (córtex pré-frontal)",
+        "Sem biblioteca de meditação nem monitoramento do sono",
+        "Plataforma de dados fechada: sem acesso para desenvolvedores"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Optodos fNIRS sobre o córtex pré-frontal: medem mudanças na oxigenação sanguínea em vez de atividade elétrica. Medição de uma única região, mais simples que o EEG, mas com menos informação.",
+        "training-content": "Neurofeedback em forma de jogo: uma bola sobe com a atividade pré-frontal sustentada. Programa simples, sem biblioteca de meditação nem sono: treino puro de foco.",
+        "insights": "Pontuação própria do Mendi por sessão mais dados de tendência agregados. Menos profundidade analítica que os aparelhos baseados em EEG.",
+        "comfort": "Faixa simples para a testa: confortável em sessões de 10–15 minutos, fácil de colocar e tirar.",
+        "app-ux": "App refinado para iOS/Android com fluxo de sessão limpo baseado no jogo.",
+        "open-data": "Sistema fechado: sem exportação de dados brutos nem SDK. Não é uma plataforma para desenvolvedores.",
+        "value": "$379 de preço de tabela (frequentemente em promoção), sem assinatura. Mais barato que o Muse S Athena, mais caro que o Muse 2."
+      },
+      "content": "## Onde se destaca\n\nO Mendi é a porta de entrada mais suave para o neurofeedback. O sensor fNIRS na testa mede mudanças na oxigenação sanguínea do córtex pré-frontal (um sinal diferente do EEG e mais simples de interpretar) e o leva a um único jogo: uma bola sobe quando o sinal de oxigenação pré-frontal aumenta e desce quando ele cai. Não há mais nada a aprender. As sessões são curtas, o app é limpo e o aparelho é o mais confortável desta lista.\n\n## Quais são as desvantagens do Mendi?\n\nO Mendi também é a opção mais restrita. fNIRS não é EEG (modalidade diferente, interpretação diferente, medição de uma única região) e a plataforma não oferece biblioteca de meditação, nem monitoramento do sono, nem acesso para desenvolvedores. Para quem quer algo além do treino puro da atenção pré-frontal, o Mendi não é o formato certo.\n\n## Quem deve comprar o Mendi?\n\nEscolha o Mendi se a experiência de neurofeedback mais simples possível é exatamente o que você quer, ou se aparelhos baseados em EEG não deram um sinal claro para você e vale a pena testar outra modalidade. Para variedade de meditação, Muse S Athena ou Muse 2. Para EEG de verdade com acesso para desenvolvedores, Neurosity Crown ou Emotiv Insight 2.\n\n---\n\n## Leituras de apoio\n\nA neurociência por trás do sinal do Mendi (o fNIRS mede a oxigenação sanguínea no córtex pré-frontal, não a atividade elétrica do cérebro) e o que o treino com feedback pode e não pode fazer.\n\n- [Neurofeedback por EEG e headsets de consumo](/science/evidence/eeg-neurofeedback) — como o fNIRS difere do EEG e o que mostram os ensaios de feedback cegos\n- [Respiração para foco e atenção](/articles/breathing-for-focus-and-attention) — formas simples de estabilizar a atenção sem aparelho\n- [Demência digital e controle atencional](/articles/digital-dementia-attentional-control) — reconstruir a atenção com prática guiada por feedback\n",
+      "faq": [
+        {
+          "q": "O Mendi vale a pena?",
+          "a": "O Mendi vale a pena se você quer a experiência de neurofeedback mais simples, focada no treino da atenção pré-frontal. O formato de jogo tem a curva de aprendizado mais fácil da categoria, usa uma faixa única e confortável na testa e não tem assinatura. Não inclui biblioteca de meditação nem monitoramento do sono."
+        },
+        {
+          "q": "Quanto custa o Mendi?",
+          "a": "O Mendi tem preço de tabela de $379 (frequentemente com desconto, cerca de $284 em uma promoção de setembro de 2026) em pagamento único, sem assinatura. Isso cobre a faixa para a testa e o treino de neurofeedback em forma de jogo, mas não inclui biblioteca de meditação nem monitoramento do sono."
+        },
+        {
+          "q": "Quais são as desvantagens do Mendi?",
+          "a": "O Mendi não é EEG: usa fNIRS, um sinal diferente e mais restrito, e mede uma única região, o córtex pré-frontal. Não tem biblioteca de meditação nem monitoramento do sono, e sua plataforma de dados é fechada, sem acesso para desenvolvedores."
+        },
+        {
+          "q": "Para quem o Mendi é mais indicado?",
+          "a": "O Mendi é ideal para quem busca a experiência de neurofeedback mais simples, focada apenas no treino da atenção pré-frontal. Como o fNIRS mede um sinal diferente, pode servir para algumas pessoas que não se adaptaram aos headsets de EEG, embora nenhum estudo compare os dois para isso."
+        }
+      ]
     },
     "focuscalm": {
       "verdict": "Faixa de EEG centrada em conteúdo — preço acessível, app razoável, o sinal de um único canal limita a profundidade.",
       "productType": "Faixa de EEG de consumo (treino de foco e calma)"
     },
     "flow-neuroscience": {
-      "verdict": "Não é EEG — tDCS clínica para depressão, com o maior respaldo regulatório e de ensaios desta lista.",
-      "productType": "Headset de tDCS para depressão aprovado pela FDA (PMA) e com marcação CE (só com receita nos EUA)"
+      "verdict": "Não é EEG: tDCS clínica para depressão, com o maior respaldo regulatório e de ensaios desta lista.",
+      "summary": "O Flow Neuroscience é um headset de tDCS (estimulação transcraniana por corrente contínua) fabricado na Suécia, combinado com um app de programa cognitivo-comportamental estruturado, indicado para depressão maior. Tem marcação CE como dispositivo médico Classe IIa na UE e é prescrito dentro do NHS do Reino Unido em algumas linhas de cuidado; nos EUA recebeu a aprovação pré-comercialização da FDA (PMA P230024, 8 de dezembro de 2025) para depressão maior moderada a grave em adultos sem resistência ao tratamento, e está disponível apenas com prescrição (presencial ou por telessaúde) desde setembro de 2026. Não é EEG — o Flow estimula, não mede —, mas faz parte da conversa de compra do treinamento cerebral de consumo. É a referência clínica de tDCS para uso em casa nesta lista (seu principal ensaio foi financiado pela Flow).",
+      "description": "Análise da ONDA do Flow Neuroscience: headset de tDCS aprovado pela FDA e com marcação CE para depressão maior, com app de terapia comportamental.",
+      "bestFor": "A tDCS clínica de referência: para pessoas com depressão maior que querem um dispositivo para uso em casa com respaldo regulatório e de ensaios.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da documentação de produto da Flow Neuroscience, do registro publicado de ensaios de tDCS da Flow e de avaliações independentes de 2026. Não foi testado na prática pela ONDA. Incluído como ponto de referência clínico de tDCS nesta categoria.",
+      "productType": "Headset de tDCS para depressão aprovado pela FDA (PMA) e com marcação CE (apenas com prescrição nos EUA)",
+      "pros": [
+        "Aprovação pré-comercialização da FDA (dez. 2025) mais marcação CE como dispositivo médico Classe IIa: o maior respaldo regulatório desta lista",
+        "Evidência real de ensaios randomizados para depressão (incluindo um ensaio randomizado totalmente remoto e controlado por simulação publicado na Nature Medicine (Woodham 2024))",
+        "Programa integrado de terapia comportamental de 8 semanas: conteúdo estruturado",
+        "Prescrito em partes do NHS do Reino Unido como opção na linha de cuidado da depressão"
+      ],
+      "cons": [
+        "Não é EEG: o Flow estimula em vez de medir; incluído por completude editorial",
+        "Indicação restrita à depressão maior; apenas com prescrição nos EUA",
+        "Assinatura mensal além do custo do hardware",
+        "Plataforma fechada: sem acesso para desenvolvedores nem dados brutos"
+      ],
+      "scoreNotes": {
+        "signal-quality": "tDCS: estimulação transcraniana por corrente contínua sobre o córtex pré-frontal dorsolateral (o tipo usado em ensaios clínicos). Parâmetros de estimulação divulgados (2 mA, sessões de 30 minutos); dispositivo médico Classe IIa com marcação CE.",
+        "training-content": "Programa estruturado de terapia comportamental de 8 semanas combinado com sessões de estimulação: a estrutura de conteúdo mais sólida desta lista, porque é construída em torno de um protocolo clínico.",
+        "insights": "Acompanhamento de humor e adesão com escalas validadas (PHQ-9). Menos detalhado que headsets de EEG: o Flow acompanha sintomas, não sinal cerebral.",
+        "comfort": "Headset rígido; sessões de 30 minutos sentado. Alguns usuários relatam formigamento ou coceira passageira no couro cabeludo durante a estimulação: bem documentado e reversível.",
+        "app-ux": "App bem acabado com check-ins diários e acompanhamento da adesão.",
+        "open-data": "Plataforma fechada: desenho de programa clínico, não um ambiente para desenvolvedores.",
+        "value": "£399 (~$499) pelo hardware mais assinatura mensal do app de terapia no Reino Unido. As vias do NHS disponíveis em algumas regiões do Reino Unido reduzem o custo do próprio bolso. Preço nos EUA ainda não divulgado."
+      },
+      "content": "## Onde se destaca\n\nO Flow Neuroscience é a referência clínica de tDCS para uso em casa: o dispositivo mais regulado e com mais respaldo de ensaios desta lista, embora seu principal ensaio randomizado (Woodham 2024) tenha sido financiado pela Flow. Tem marcação CE como dispositivo médico Classe IIa na UE, recebeu aprovação pré-comercialização da FDA (PMA P230024, 8 de dezembro de 2025) para depressão maior moderada a grave em adultos (sem resistência ao tratamento), é combinado com um programa estruturado de terapia comportamental de oito semanas e é prescrito em partes do NHS do Reino Unido como opção na linha de cuidado da depressão. Desde setembro de 2026 está disponível em todos os EUA apenas com prescrição, após avaliação presencial ou por telessaúde. A evidência publicada de ensaios randomizados sobre tDCS na depressão maior é real e crescente; a contribuição da Flow é transformá-la num protocolo para casa que os pacientes de fato concluem.\n\n## Quais são as desvantagens do Flow Neuroscience?\n\nNão é um headset de EEG. O Flow estimula o córtex pré-frontal dorsolateral com 2 mA de corrente contínua; ele não mede a atividade cerebral. A indicação é restrita à depressão maior: para foco geral, meditação ou sono, o Flow é a ferramenta errada. A plataforma é fechada, o preço inclui uma assinatura mensal do app de terapia além do hardware e, fora das vias do NHS do Reino Unido, o custo total sai do próprio bolso. Nos EUA, a Flow ainda não divulgou preço nem cobertura por plano de saúde.\n\n## Quem deve comprar o Flow Neuroscience?\n\nEscolha o Flow Neuroscience se você tem depressão maior e um profissional de saúde aberto a discuti-lo como opção para casa: nos EUA ele exige prescrição, e é um tratamento para usar sob orientação clínica, não um substituto do cuidado médico. Para treinamento cerebral geral, feedback de meditação ou monitoramento do sono, esta é a categoria errada: o Muse S Athena e os dispositivos baseados em EEG são a opção certa. O Flow está incluído aqui como referência clínica de como é um hardware regulado, respaldado por ensaios e voltado ao cérebro.\n\n---\n\n## Leitura complementar\n\nContexto sobre os sistemas cerebrais por trás do humor e da atenção. O Flow estimula o cérebro com uma corrente fraca; ele não registra EEG.\n\n- [Demência digital e controle atencional](/articles/digital-dementia-attentional-control): reconstruir a atenção com prática guiada por feedback\n- [Neuroplasticidade e estados de flow](/articles/neuroplasticity-flow-overclocking): o que são estados de flow e como se formam\n- [Calibração do ACC: protocolo de controle cognitivo](/articles/acc-calibration-protocol-cognitive-control): os circuitos de controle pré-frontais por trás do controle cognitivo\n",
+      "faq": [
+        {
+          "q": "O Flow Neuroscience é um headset de EEG?",
+          "a": "Não. O Flow Neuroscience é um headset de tDCS: ele estimula o cérebro com corrente contínua em vez de medir a atividade cerebral. É indicado para depressão maior, tem marcação CE como dispositivo médico Classe IIa na UE, é aprovado pela FDA nos EUA (apenas com prescrição) e é combinado com um app de programa cognitivo-comportamental estruturado."
+        },
+        {
+          "q": "Quanto custa o Flow Neuroscience?",
+          "a": "No Reino Unido, o Flow custa £399 (cerca de $499) pelo dispositivo, mais uma assinatura mensal do app de terapia. Nos EUA é apenas com prescrição e a Flow ainda não divulgou preço. Essa assinatura cobre o programa integrado de terapia comportamental de 8 semanas. Considere os dois no orçamento, porque a taxa contínua do app se soma ao preço do hardware."
+        },
+        {
+          "q": "O Flow Neuroscience funciona para depressão?",
+          "a": "O Flow tem evidência real de ensaios randomizados para depressão, incluindo um ensaio randomizado totalmente remoto e controlado por simulação publicado na Nature Medicine (Woodham 2024); é prescrito em partes do NHS do Reino Unido como opção na linha de cuidado da depressão, e em dezembro de 2025 a FDA o aprovou para depressão maior moderada a grave em adultos. Isso lhe dá o maior respaldo regulatório e de ensaios da categoria, embora sua indicação seja restrita à depressão maior."
+        },
+        {
+          "q": "Para quem o Flow Neuroscience é mais indicado?",
+          "a": "O Flow é mais indicado para pessoas com depressão maior que querem um dispositivo para uso em casa com respaldo regulatório e de ensaios. Não serve bem para treinamento cerebral geral ou para experimentar: a plataforma é fechada, sem acesso para desenvolvedores nem dados brutos, e não é indicado para nada além da depressão."
+        }
+      ]
     },
     "neurosky-mindwave-mobile-2": {
       "verdict": "O headset de EEG de consumo legítimo mais barato — um canal, básico, mas com SDK aberto para desenvolvedores e estudantes.",
@@ -796,28 +972,192 @@
       ]
     },
     "theragun-pro-plus": {
-      "verdict": "A pistola de massagem topo de linha da Therabody — maior força de travamento, amplitude mais profunda, app refinado. O preço premium reflete as especificações máximas e o ecossistema Therabody.",
-      "productType": "Pistola de massagem de percussão premium com app inteligente"
+      "verdict": "A pistola de percussão topo de linha da Therabody: maior força de travamento, maior amplitude e app refinado. O preço premium reflete o teto de especificações e o ecossistema Therabody.",
+      "summary": "A Theragun PRO Plus é a pistola de massagem premium que define a categoria: 60 lbs de força de travamento (faixa mais alta), 16 mm de amplitude, motor brushless operando a 50–55 dB, tela OLED com sensor de pressão e integração completa com o app da Therabody com rotinas guiadas. Marca com décadas de história. O preço premium ($599) reflete o teto de especificações; concorrentes chegam perto em especificações isoladas, mas nenhum outro aparelho combina força de travamento + amplitude + app neste nível.",
+      "description": "Análise ONDA da Theragun PRO Plus: pistola de massagem da Therabody com 60 lbs de força, 16 mm de amplitude, OLED e app. Força e custo-benefício.",
+      "bestFor": "Ideal para quem leva a sério a recuperação esportiva e quer terapia de percussão no teto de especificações com o ecossistema completo do app Therabody, aceitando o preço premium.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da documentação de produto da Therabody e de análises esportivas / de fitness de 2026 em larga escala. Não foi testada na prática pela ONDA.",
+      "productType": "Pistola de massagem por percussão premium com app inteligente",
+      "pros": [
+        "Maior força de travamento (60 lbs) e maior amplitude (16 mm) da categoria",
+        "Melhor app e recursos inteligentes: rotinas guiadas da Therabody",
+        "Motor brushless mais silencioso (50–55 dB)",
+        "Décadas de história da marca Therabody com garantia de 2 anos"
+      ],
+      "cons": [
+        "Preço premium ($599)",
+        "Pesada (~2,9 lbs): sessões com uma mão só parecem longas",
+        "Melhoria marginal do motor em relação à Theragun Elite por 50% a mais",
+        "O app da Therabody empurra vendas adicionais do ecossistema"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "60 lbs de força de travamento + 16 mm de amplitude: topo da categoria nos dois eixos.",
+        "build-attachments": "Construção premium com motor brushless, 6 acessórios inclusos, garantia de 2 anos. Décadas de história da Therabody.",
+        "battery-noise": "Motor brushless a 50–55 dB: o mais silencioso da categoria. ~2,5 horas por carga. Carregamento USB-C.",
+        "app-smart-features": "Melhor app da categoria: rotinas guiadas da Therabody, sensor de pressão, feedback no OLED, integração Bluetooth com TheraFace.",
+        "ergonomics-portability": "Pesada (~2,9 lbs): o melhor motor da categoria tem um custo em peso. O cabo multipegada ajuda; sessões de 20 minutos com uma mão só parecem longas.",
+        "value": "$599: preço premium. Justificado para quem quer o teto de especificações + o ecossistema Therabody; cara frente às alternativas econômicas Bob and Brad / Renpho."
+      },
+      "content": "## Onde se destaca\n\nA Theragun PRO Plus é a pistola de percussão topo de linha da Therabody: maior força de travamento, maior amplitude, motor brushless mais silencioso e melhor app da categoria.\n\n## Quais são as desvantagens da Theragun PRO Plus?\n\nPeso e preço. Com ~2,9 lbs, o aparelho é pesado para sessões de 20 minutos com uma mão só; a $599, é a pistola de massagem de consumo mais cara. Para quem não busca o teto de especificações, a Theragun Elite por $399 cobre 90% dos casos de uso.\n\n## Quem deve comprar a Theragun PRO Plus?\n\nEscolha a Theragun PRO Plus para terapia de percussão no teto de especificações com o ecossistema Therabody. Para uma Therabody intermediária, Theragun Elite. Como alternativa da Hyperice, Hypervolt 2 Pro. Como alternativa econômica, Achedaway Pro ou OPOVE M3 Pro 2.\n\n---\n\n## Leitura complementar\n\n- [Biogênese mitocondrial](/articles/mitochondrial-biogenesis-cellular-power-grid) — percussão + circulação na recuperação muscular\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [O sono realmente limpa o cérebro? A evidência glinfática](/articles/nightly-flush-glymphatic-neural-cache) — o que foi demonstrado em pessoas e o que ainda está em debate\n",
+      "faq": [
+        {
+          "q": "A Theragun PRO Plus vale a pena?",
+          "a": "A PRO Plus vale a pena para quem leva a recuperação a sério e quer o teto de especificações: 60 lbs de força de travamento, 16 mm de amplitude, motor brushless silencioso e o app guiado da Therabody. Para a maioria, a Theragun Elite entrega quase o mesmo por $200 a menos."
+        },
+        {
+          "q": "Quanto custa a Theragun PRO Plus?",
+          "a": "A Theragun PRO Plus custa $599 avulsa, com 6 acessórios. É um preço premium, cerca de 50% a mais que a Theragun Elite, pelo que a análise chama de melhoria marginal do motor."
+        },
+        {
+          "q": "Quais são as desvantagens da Theragun PRO Plus?",
+          "a": "A PRO Plus custa $599, é pesada (cerca de 2,9 lbs), então sessões com uma mão só parecem longas, e oferece só uma melhoria marginal do motor em relação à Elite por 50% a mais. O app também empurra vendas adicionais do ecossistema."
+        }
+      ]
     },
     "hypervolt-2-pro": {
-      "verdict": "A rival da Theragun — força de travamento comparável, mais leve, ecossistema Hyperice. Um pouco menos de amplitude que a Theragun PRO Plus por um preço bem menor.",
-      "productType": "Pistola de massagem de percussão premium com ecossistema Hyperice"
+      "verdict": "A rival da Theragun: força de travamento comparável, menos peso e o ecossistema Hyperice. Um pouco menos de amplitude que a Theragun PRO Plus por um preço bem menor.",
+      "summary": "A Hypervolt 2 Pro é o carro-chefe da Hyperice: 60 lbs de força de travamento, igual à Theragun PRO Plus, 14 mm de amplitude (um pouco menos que os 16 mm da Theragun), motor brushless silencioso e o app completo da Hyperice com rotinas guiadas. Mais leve que a Theragun (~2,6 lbs contra 2,9). Forte presença entre atletas da NBA e da NFL. A escolha premium certa para quem rejeita os preços da Therabody.",
+      "description": "Análise da ONDA da Hyperice Hypervolt 2 Pro: pistola de percussão premium com 60 lbs de força de travamento, 14 mm de amplitude e app Hyperice completo.",
+      "bestFor": "Ideal para quem compra pistola de massagem premium e rejeita os preços da Therabody: especificações máximas comparáveis por $200 a menos, menos peso e pedigree esportivo.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da documentação de produto da Hyperice e de análises esportivas / de fitness de 2026. Não foi testada na prática pela ONDA.",
+      "productType": "Pistola de massagem por percussão premium com ecossistema Hyperice",
+      "pros": [
+        "60 lbs de força de travamento, igual à Theragun PRO Plus, por $200 a menos",
+        "Mais leve que a Theragun (~2,6 lbs contra 2,9)",
+        "A mais silenciosa da categoria premium (48–52 dB)",
+        "Presença entre atletas da NBA e da NFL"
+      ],
+      "cons": [
+        "14 mm de amplitude contra 16 mm da Theragun",
+        "Garantia de 1 ano contra 2 anos da Theragun",
+        "5 ponteiras contra 6 da Theragun",
+        "Cabo de pegada única menos versátil que o multipegada da Theragun"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "60 lbs de força de travamento, igual à Theragun PRO Plus. 14 mm de amplitude: um pouco menos que os 16 mm da Theragun, mas mais que qualquer outro aparelho Hyperice.",
+        "build-attachments": "Construção premium com motor brushless, 5 ponteiras incluídas, garantia de 1 ano. Pedigree Hyperice na NBA e na NFL.",
+        "battery-noise": "Motor brushless a 48–52 dB: um pouco mais silenciosa que a Theragun. ~3 horas por carga.",
+        "app-smart-features": "App Hyperice com rotinas guiadas, indicador de pressão e Bluetooth. Menos refinado que o app da Therabody, mas funcionalmente equivalente.",
+        "ergonomics-portability": "Mais leve que a Theragun (~2,6 lbs). O cabo de pegada única é mais simples que o multipegada da Theragun, porém menos versátil.",
+        "value": "$399: preço premium, mas $200 a menos que a Theragun PRO Plus com especificações comparáveis. O melhor custo-benefício da faixa premium."
+      },
+      "content": "## Atualização: a Hypervolt 3 Pro foi lançada\n\n> A Hyperice lançou a linha Hypervolt 3 em março de 2026. A nova [Hypervolt 3 Pro](/reviews/hypervolt-3-pro) eleva a força de travamento para ~70 lbs, é mais silenciosa (~51 dB), dura quatro horas por carga e vem com ponteiras maiores, por um preço menor de $349. Se você vai comprar nova, ela é a melhor escolha; a Hypervolt 2 Pro continua valendo a pena se estiver com desconto abaixo dela.\n\n## O que a Hyperice Hypervolt 2 Pro faz bem?\n\nA Hypervolt 2 Pro é a rival da Theragun: iguala o teto de especificações em força de travamento, é um pouco mais silenciosa, mais leve e $200 mais barata. Forte presença entre atletas da NBA e da NFL. A escolha premium racional para quem rejeita os preços da Therabody.\n\n## Quais são as desvantagens da Hyperice Hypervolt 2 Pro?\n\nAmplitude e garantia. Os 14 mm de amplitude ficam atrás dos 16 mm da Theragun; a garantia de 1 ano fica atrás dos 2 anos da Theragun. O cabo de pegada única é menos versátil que o design multipegada da Theragun.\n\n## Quem deve comprar a Hyperice Hypervolt 2 Pro?\n\nEscolha a Hypervolt 2 Pro se quer percussão premium por $200 a menos que a Theragun PRO Plus. Para a maior amplitude e a melhor garantia, Theragun PRO Plus. Para premium intermediária, Theragun Elite. Para uma mini de viagem, Hypervolt Go 2.\n\n---\n\n## Leituras de apoio\n\n- [Biogênese mitocondrial](/articles/mitochondrial-biogenesis-cellular-power-grid)\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n",
+      "faq": [
+        {
+          "q": "Hypervolt 2 Pro ou Theragun PRO Plus: qual é melhor?",
+          "a": "A Hypervolt 2 Pro iguala a Theragun PRO Plus em força de travamento, com 60 lbs, custa $200 a menos e é mais leve: cerca de 2,6 lbs contra 2,9. A Theragun mantém uma amplitude um pouco maior, de 16 mm contra 14 mm, garantia de 2 anos, seis ponteiras e cabo multipegada."
+        },
+        {
+          "q": "Quanto custa a Hypervolt 2 Pro?",
+          "a": "A Hypervolt 2 Pro custa $399 com cinco ponteiras. Por esse valor você leva 60 lbs de força de travamento, motor brushless e o app completo da Hyperice com rotinas guiadas. A garantia é de um ano, metade dos dois anos da Theragun."
+        },
+        {
+          "q": "A Hypervolt 2 Pro é silenciosa?",
+          "a": "Sim. Com 48–52 dB, a Hypervolt 2 Pro é a pistola mais silenciosa da categoria premium, graças ao motor brushless. Somando o app completo da Hyperice com rotinas guiadas e um corpo mais leve que o da Theragun, é a escolha premium para quem rejeita os preços da Therabody."
+        }
+      ]
     },
     "theragun-elite": {
       "verdict": "Melhor custo-benefício da Therabody — 16 mm de amplitude com 40 lbs de força de travamento por $200 a menos que a PRO Plus. A compra racional da Therabody para a maioria.",
       "productType": "Pistola de massagem premium intermediária"
     },
     "achedaway-pro": {
-      "verdict": "A melhor relação especificações-preço em percussão premium — 80 lbs de força de travamento (a maior da categoria) por $349. Sem ecossistema de app de marca premium.",
-      "productType": "Pistola de massagem premium de especificações máximas"
+      "verdict": "A melhor relação especificação-preço em percussão premium: 80 lbs de força de bloqueio (a mais alta da categoria) por $349. Sem ecossistema de app de marca premium.",
+      "summary": "A Achedaway Pro é a azarona dos biohackers: 80 lbs de força de bloqueio (a mais alta da categoria, acima da Theragun PRO Plus e da Hypervolt 2 Pro), 16 mm de amplitude, 7 acessórios, motor brushless silencioso e $349. Sem ecossistema de app Therabody / Hyperice; troca o acabamento de marca e os recursos inteligentes por especificações no máximo e preço menor.",
+      "description": "Análise ONDA da Achedaway Pro: 80 lbs de força de bloqueio e 16 mm de amplitude por menos que uma Theragun. Força, construção, bateria e custo-benefício.",
+      "bestFor": "Ideal para biohackers que querem especificação máxima e a maior força de bloqueio por menos que uma Theragun: não precisam de app e aceitam abrir mão do prestígio da marca.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da documentação de produto da Achedaway e de análises de biohacking / fitness de 2026. Não foi testado na prática pela ONDA.",
+      "productType": "Pistola de massagem premium de especificação máxima",
+      "pros": [
+        "A maior força de bloqueio da categoria de consumo (80 lbs)",
+        "16 mm de amplitude, igual à especificação da Theragun",
+        "7 acessórios: o maior número da categoria",
+        "Preço menor que o da Theragun Elite com especificações superiores"
+      ],
+      "cons": [
+        "Sem app nem recursos inteligentes",
+        "Garantia de 1 ano contra 2 anos da Therabody",
+        "Histórico de marca menor que o da Therabody / Hyperice",
+        "Um pouco mais barulhenta que as concorrentes de marcas premium"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "80 lbs de força de bloqueio: a mais alta da categoria de consumo. 16 mm de amplitude, igual à Theragun. A especificação no máximo vence em dose de percussão.",
+        "build-attachments": "Motor brushless, 7 acessórios inclusos (o maior número da categoria), garantia de 1 ano. Construção sólida; histórico de marca menor que o da Therabody / Hyperice.",
+        "battery-noise": "Motor brushless a 55–60 dB. ~3 horas por carga. Um pouco mais barulhenta que as premium Theragun / Hypervolt.",
+        "app-smart-features": "Sem app, sem Bluetooth, sem recursos inteligentes. Aparelho puramente mecânico. É a grande concessão em troca do preço menor + maior força de bloqueio.",
+        "ergonomics-portability": "~2,4 lbs. Cabo confortável. Sem múltiplas pegadas, mas ergonomia de pegada única adequada.",
+        "value": "$349: a maior força de bloqueio da categoria por um preço menor que o da Theragun Elite. A melhor especificação por dólar em percussão premium."
+      },
+      "content": "## Onde se destaca\n\nA Achedaway Pro é a azarona dos biohackers que buscam especificação máxima: 80 lbs de força de bloqueio (a mais alta da categoria), 16 mm de amplitude, 7 acessórios, $349. A melhor especificação por dólar em percussão premium.\n\n## Quais são as desvantagens da Achedaway Pro?\n\nApp e acabamento de marca. Sem ecossistema de app Therabody / Hyperice; sem Bluetooth nem recursos inteligentes. Histórico de marca menor que o das concorrentes premium. Para quem compra pelo app + ecossistema, Therabody ou Hyperice servem melhor.\n\n## Quem deve comprar a Achedaway Pro?\n\nEscolha a Achedaway Pro para percussão com especificação máxima sem pagar pelo acabamento de marca premium. Para o app + ecossistema da Therabody, Theragun Elite. Como alternativa da Hyperice, Hypervolt 2 Pro. Para orçamento apertado, Bob and Brad Q2 Mini ou OPOVE M3 Pro 2.\n\n---\n\n## Leitura de contexto\n\n- [Biogênese mitocondrial](/articles/mitochondrial-biogenesis-cellular-power-grid)\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n",
+      "faq": [
+        {
+          "q": "A Achedaway Pro vale a pena?",
+          "a": "Sim, se especificações importam mais que acabamento de marca. A Achedaway Pro entrega 80 lbs de força de bloqueio, a mais alta da categoria de consumo, além de 16 mm de amplitude e 7 acessórios por $349, menos que uma Theragun Elite. Você abre mão de qualquer app ou recurso inteligente e do ecossistema de uma marca premium."
+        },
+        {
+          "q": "Quanto custa a Achedaway Pro?",
+          "a": "A Achedaway Pro custa $349, com 7 acessórios inclusos. Esse preço fica abaixo do da Theragun Elite e oferece mais força de bloqueio (80 lbs) e 16 mm de amplitude, igual à especificação da Theragun. A concessão é uma garantia de 1 ano em vez dos 2 anos que a Therabody oferece."
+        },
+        {
+          "q": "Quais são as desvantagens da Achedaway Pro?",
+          "a": "As principais desvantagens são a falta de app ou recursos inteligentes e a garantia de 1 ano contra os 2 anos da Therabody. O histórico da marca é menor que o da Therabody ou da Hyperice, e ela é um pouco mais barulhenta que as concorrentes de marcas premium. Nada disso afeta seu ponto forte: a maior força de bloqueio da categoria."
+        },
+        {
+          "q": "Para quem a Achedaway Pro é ideal?",
+          "a": "A Achedaway Pro é ideal para biohackers que querem especificação máxima e a maior força de bloqueio por menos que uma Theragun. Serve para quem não precisa de app e aceita trocar prestígio de marca e recursos inteligentes por 80 lbs de força de bloqueio, 16 mm de amplitude e 7 acessórios."
+        }
+      ]
     },
     "opove-m3-pro-2": {
       "verdict": "Melhor custo-benefício intermediário-econômico — 55 lbs de força de travamento por $179 eliminam boa parte da diferença para o nível premium. Sem app; marca mais jovem que Theragun / Hyperice.",
       "productType": "Pistola de massagem intermediária-econômica com especificações premium"
     },
     "ekrin-b37": {
-      "verdict": "Melhor intermediária com garantia vitalícia — 56 lbs de força de travamento com garantia vitalícia por $249.99. Amplitude menor que o nível premium; posicionamento voltado a atletas.",
-      "productType": "Pistola de massagem intermediária-premium voltada a atletas"
+      "verdict": "A melhor intermediária com garantia vitalícia: 56 lbs de força de travamento com garantia vitalícia por $249.99. Amplitude menor que a da linha premium; posicionamento com credibilidade entre atletas.",
+      "summary": "A Ekrin B37 é a opção intermediária-premium voltada a atletas: 56 lbs de força de travamento, 12 mm de amplitude, motor brushless, 4 ponteiras e a única garantia vitalícia da categoria. Posicionamento de marca focado em atletas, com distribuição crível na NFL / NCAA. O preço de tabela de $249.99 a coloca entre a OPOVE intermediária-econômica e a Hyperice premium. A compra certa para quem valoriza garantia acima de amplitude.",
+      "description": "Análise da ONDA da Ekrin B37: pistola de massagem para atletas com 56 lbs de força de travamento, 12 mm de amplitude e garantia vitalícia por $249.99.",
+      "bestFor": "Ideal para atletas que querem percussão intermediária com garantia vitalícia: valor de propriedade a longo prazo acima de amplitude premium.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da documentação de produto da Ekrin Athletics e de avaliações de 2026 voltadas a atletas. Não foi testado na prática pela ONDA.",
+      "productType": "Pistola de massagem intermediária-premium voltada a atletas",
+      "pros": [
+        "Garantia vitalícia: única na categoria",
+        "~8 horas de bateria: a mais longa da faixa intermediária",
+        "Posicionamento de marca focado em atletas",
+        "Motor brushless por um preço abaixo do premium"
+      ],
+      "cons": [
+        "12 mm de amplitude vs 14–16 mm da linha premium",
+        "Sem app nem recursos inteligentes",
+        "4 ponteiras: menos que concorrentes econômicos",
+        "Pegada única padrão, sem versatilidade"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "56 lbs de força de travamento, sólida. 12 mm de amplitude: menor que os 14–16 mm da linha premium, mas funcional.",
+        "build-attachments": "Garantia vitalícia: única na categoria. Motor brushless, 4 ponteiras. Qualidade de construção respaldada pelos termos da garantia.",
+        "battery-noise": "Motor brushless a 55 dB. ~8 horas por carga: entre as mais longas da categoria.",
+        "app-smart-features": "Sem app nem Bluetooth. Indicador LED de bateria + velocidade.",
+        "ergonomics-portability": "~2,2 lbs. Cabo padrão de pegada única.",
+        "value": "$249.99 de tabela, com descontos frequentes: preço de intermediária alta justificado pela garantia vitalícia. O melhor custo de propriedade a longo prazo."
+      },
+      "content": "## Onde se destaca\n\nA Ekrin B37 é a intermediária com garantia vitalícia: marca focada em atletas, motor brushless, a bateria mais longa da faixa intermediária e garantia vitalícia (única na categoria). O melhor valor de propriedade a longo prazo.\n\n## Quais são as desvantagens da Ekrin B37?\n\nAmplitude e app. Os 12 mm de amplitude ficam atrás dos 14–16 mm premium; não há integração com app. Para quem quer amplitude premium, Theragun Elite ou Hypervolt 2 Pro se encaixam melhor.\n\n## Quem deve comprar a Ekrin B37?\n\nEscolha a Ekrin B37 para percussão intermediária com garantia vitalícia e tradição de marca esportiva. Para mais amplitude pelo mesmo preço, OPOVE M3 Pro 2. Para app + amplitude premium, Theragun Elite.\n\n---\n\n## Leitura complementar\n\n- [Biogênese mitocondrial](/articles/mitochondrial-biogenesis-cellular-power-grid)\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n",
+      "faq": [
+        {
+          "q": "A Ekrin B37 vale a pena?",
+          "a": "Sim, pelo valor de propriedade a longo prazo. A Ekrin B37 oferece 56 lbs de força de travamento, motor brushless, cerca de 8 horas de bateria e a única garantia vitalícia da categoria por $249.99. Seus 12 mm de amplitude são menores que os 14–16 mm das pistolas premium."
+        },
+        {
+          "q": "Quanto custa a Ekrin B37?",
+          "a": "A Ekrin B37 tem preço de tabela de $249.99 (com descontos frequentes), com 4 ponteiras e garantia vitalícia. Isso a coloca na faixa intermediária, abaixo das pistolas de percussão premium, oferecendo ainda motor brushless e cerca de 8 horas de bateria."
+        },
+        {
+          "q": "Quais são as desvantagens da Ekrin B37?",
+          "a": "A Ekrin B37 tem 12 mm de amplitude vs 14–16 mm das pistolas premium e não tem app nem recursos inteligentes. Inclui apenas 4 ponteiras, menos que concorrentes econômicos, e uma pegada única padrão sem versatilidade."
+        },
+        {
+          "q": "Para quem a Ekrin B37 é mais indicada?",
+          "a": "A Ekrin B37 é mais indicada para atletas que querem uma pistola de massagem intermediária com garantia vitalícia. Atende quem valoriza propriedade a longo prazo, foco esportivo e cerca de 8 horas de bateria acima de amplitude premium. Oferece 56 lbs de força de travamento por $249.99."
+        }
+      ]
     },
     "hypervolt-go-2": {
       "verdict": "Melhor mini de viagem de marca premium — o ecossistema Hypervolt em formato de bolso. A menor força de travamento é o preço da portabilidade.",
@@ -1125,8 +1465,51 @@
       ]
     },
     "nurosym": {
-      "verdict": "O dispositivo tVNS auricular de consumo mais estudado — um clipe de orelha do tipo usado em estudos de pesquisa, com preço à altura.",
-      "productType": "tVNS auricular (clipe de orelha)"
+      "verdict": "O dispositivo tVNS auricular de consumo mais estudado: um clipe de orelha do tipo usado em estudos de pesquisa, com um preço à altura.",
+      "summary": "O Nurosym é a linha de consumo da Parasym, a empresa londrina cujos estimuladores auriculares, em sua maioria modelos anteriores, foram usados em cerca de vinte estudos independentes revisados por pares sobre estimulação auricular do nervo vago (mais de 50 segundo o fabricante, em outubro de 2026). Ele se prende ao trago da orelha esquerda e aplica um pulso elétrico calibrado ao ramo auricular do nervo vago. Sem firulas de app: um único botão giratório, parâmetros de estimulação relatados nos ensaios e o maior registro de ensaios independentes de qualquer aparelho de consumo, embora em sua maioria sejam estudos pequenos com modelos Parasym anteriores.",
+      "description": "Análise ONDA do Nurosym, tVNS auricular da Parasym; modelos antigos foram usados em ensaios publicados. Evidência, mecanismo, protocolos e custo-benefício.",
+      "bestFor": "Ideal para tVNS auricular em casa do tipo usado em pesquisa, quando a evidência importa mais que o formato.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir das especificações do fabricante, do registro de ensaios publicados da Parasym/Nurosym e de análises independentes de 2026. Não foi testado na prática pela ONDA.",
+      "productType": "tVNS auricular (clipe de orelha)",
+      "pros": [
+        "O maior registro de ensaios independentes de qualquer aparelho tVNS de consumo (em sua maioria modelos Parasym anteriores)",
+        "Frequência e largura de pulso relatadas nos ensaios (forma de onda proprietária)",
+        "Sem assinatura e sem necessidade de app para usar",
+        "Dispositivo médico com marcação CE (Classe IIa segundo o fabricante)"
+      ],
+      "cons": [
+        "Um único programa: menos variedade que concorrentes baseados em app",
+        "Sem medição de variabilidade da frequência cardíaca (HRV ou VFC) no aparelho nem registro de sessões",
+        "€700 (cerca de $820) o deixam fora do alcance de usuários casuais",
+        "O clipe com fio é menos prático que um wearable sem fio"
+      ],
+      "scoreNotes": {
+        "evidence": "Os ensaios foram feitos sobretudo com o Parasym (uma versão anterior do mesmo fabricante, com financiamento acadêmico) e as amostras eram pequenas; onde o próprio Nurosym é citado, os resultados são em sua maioria nulos. Cerca de vinte estudos independentes revisados por pares usaram estimuladores auriculares Parasym (mais de 50 segundo o fabricante, em outubro de 2026); a maioria tinha um braço simulado ou de controle. Nenhum foi financiado pelo fabricante, embora a Parasym tenha fornecido aparelhos para alguns. Os resultados positivos mais claros vêm de pequenos ensaios controlados por simulação em pacientes cardiovasculares com modelos anteriores (carga de FA, TNF-alfa, taquicardia na POTS, pressão arterial). O fabricante diz que o Nurosym usa a mesma tecnologia, mas nenhum dado publicado mostra que ele funcione como esses modelos. Nenhum ensaio tem a depressão como desfecho principal, e os dados sobre COVID longa vêm de pilotos não controlados. Regra da ONDA: uma versão anterior do mesmo aparelho conta quando o fabricante e o método de estimulação são os mesmos, com teto de 7.5.",
+        "mechanism": "VNS auricular transcutânea no trago, o alvo não invasivo mais estudado. Os ensaios que citam o Nurosym relatam sua frequência e largura de pulso (20–25 Hz, 200–250 µs); a forma de onda em si é proprietária.",
+        "protocols": "Um único programa de estimulação bem definido; a intensidade é ajustada pelo usuário no botão giratório. Menos variedade de programas que o Pulsetto, mas a frequência e a largura de pulso são relatadas nos ensaios.",
+        "comfort": "Um clipe no trago é bem tolerado em sessões de 30–60 minutos; não foi feito para horas de uso, e o cabo mantém você preso à unidade.",
+        "biofeedback": "Sem medição de HRV embutida: combine com uma cinta peitoral ou um anel para acompanhamento em circuito fechado.",
+        "value": "€700 (cerca de $820; o preço nos EUA varia por região) em pagamento único, sem assinatura. Preço premium pelo maior registro de ensaios independentes (em sua maioria modelos Parasym anteriores); não é para quem só quer experimentar casualmente."
+      },
+      "content": "## Onde se destaca\n\nEntre os aparelhos de consumo, o Nurosym lidera no critério que mais importa para dispositivos médicos: a evidência. Aparelhos Parasym, em sua maioria modelos anteriores, foram usados em cerca de vinte estudos independentes publicados sobre VNS auricular transcutânea, ou seja, a estimulação do [nervo vago](/glossary/vagus-nerve). Os resultados positivos mais claros vêm de pequenos ensaios controlados por simulação em pacientes cardiovasculares (fibrilação atrial, POTS, pressão alta). Há também estudos agudos de [HRV](/glossary/heart-rate-variability) em adultos saudáveis e pilotos não controlados em COVID longa. Os ensaios mais recentes que citam o Nurosym (2025–26) em sua maioria não encontraram efeito em comparação com a simulação e, embora o fabricante diga que o Nurosym usa a mesma tecnologia, nenhum dado publicado mostra que ele funcione como os modelos anteriores; por isso a ONDA limita sua nota de evidência a 7,5. Mas ser estudado não é o mesmo que ser comprovado: uma metanálise viva de 16 estudos controlados por simulação em pessoas saudáveis (Wolf 2021, *Psychophysiology*) não encontrou efeito confiável da tVNS auricular sobre a HRV de mediação vagal, então não compre esperando que sua HRV suba. Os ensaios que citam o Nurosym relatam sua frequência e largura de pulso (20–25 Hz, 200–250 µs; intensidade ajustada pelo usuário), de modo que um clínico ou quem faz autoexperimentação consegue descrever a maior parte da dose; a forma de onda em si é proprietária.\n\n## Quais são as desvantagens do Nurosym?\n\nA mesma austeridade que dá credibilidade ao Nurosym o torna espartano. Há um único programa de estimulação, nenhum app, nenhuma HRV no aparelho, nenhum registro de sessões, e a unidade fica presa ao clipe de orelha por um cabo. Por €700 (cerca de $820), ele também é o aparelho de clipe de orelha mais caro desta lista. Se você quer modos guiados para sono, foco e estresse, o Pulsetto oferece mais variedade de programas por um preço menor, mesmo que sua base de evidências seja mais fraca.\n\n## Quem deve comprar o Nurosym?\n\nEscolha o Nurosym se você está fazendo uma autoexperimentação estruturada com tVNS, quer parâmetros de estimulação que possa comparar com os ensaios publicados e está disposto a pagar preço clínico por procedência clínica. Se você quer uma experiência de consumo refinada, com modos e app no celular, Pulsetto, Xen by Neuvana ou Truvaga se encaixam melhor.\n\n---\n\n## Leituras de apoio\n\nA biologia por trás do que esses aparelhos buscam, e os protocolos que se somam ao hardware.\n\n- [Exercícios para o nervo vago](/articles/vagus-nerve-exercises) — por que o nervo vago fica a montante da HRV, do sono, do humor e da inflamação\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation) — o panorama regulatório e de mecanismos por trás da VNS não invasiva\n- [CCA e monitoramento da coerência](/articles/anterior-cingulate-core-coherence-monitoring) — como o tônus vagal molda a atenção e a regulação emocional\n",
+      "faq": [
+        {
+          "q": "O Nurosym vale a pena?",
+          "a": "O Nurosym vale a pena se a evidência importa mais para você que o formato. Ele tem o maior registro de ensaios independentes de qualquer aparelho tVNS de consumo (em sua maioria modelos Parasym anteriores), frequência e largura de pulso relatadas nos ensaios, e é um dispositivo médico com marcação CE (Classe IIa segundo o fabricante). Conte com um único programa e um clipe de orelha com fio."
+        },
+        {
+          "q": "Quanto custa o Nurosym?",
+          "a": "O Nurosym custa €700 na loja oficial, cerca de $820 (o preço varia por região), em pagamento único, sem assinatura e sem necessidade de app para usar. A análise observa que esse preço o deixa fora do alcance de usuários casuais. Ele tem marcação CE (Classe IIa segundo o fabricante)."
+        },
+        {
+          "q": "Quais são as desvantagens do Nurosym?",
+          "a": "O Nurosym oferece um único programa, com menos variedade que concorrentes baseados em app, sem medição de HRV no aparelho nem registro de sessões, um preço de €700 (cerca de $820) que o deixa fora do alcance de usuários casuais e um clipe com fio menos prático que um wearable sem fio."
+        },
+        {
+          "q": "Nurosym ou Pulsetto: qual é melhor?",
+          "a": "O Nurosym é melhor em evidência: tem o maior registro de ensaios independentes em tVNS de consumo (em sua maioria com modelos Parasym anteriores). O Pulsetto é mais barato, $269, é usado no pescoço e oferece quatro programas guiados, mas sua evidência clínica independente é mais fraca que a do Nurosym."
+        }
+      ]
     },
     "gammacore-sapphire-cv": {
       "verdict": "Um dispositivo de VNS cervical não invasiva liberado (cleared) pela FDA, só com receita, para cefaleias específicas — uma ferramenta clínica, não um dispositivo de bem-estar de consumo.",
@@ -1150,18 +1533,96 @@
       "productType": "tVNS cervical de consumo (colar de pescoço)"
     },
     "hoolest-verelief-prime": {
-      "verdict": "O dispositivo de tVNS mais voltado a atletas — sessões curtas e intensas para recuperação e para pegar no sono.",
-      "productType": "tVNS portátil (pegada nos dedos / pescoço)",
-      "editorialAdjustment": "Honestidade do marketing — a página inicial chama o VeRelief de “clinicamente comprovado” e a página de pesquisa diz “comprovado para interromper o pânico”, mas os estudos são dos próprios fundadores e não foram publicados, e usaram um protocolo de 10 minutos em vez do modo de 3 minutos do dispositivo; não encontramos nenhum ensaio publicado do VeRelief (verificado em outubro de 2026). Isso é pontuado aqui, não no critério de evidências. (no original: “Clinically Proven”)"
+      "verdict": "O dispositivo tVNS mais voltado a atletas: sessões curtas e intensas para recuperação e para pegar no sono.",
+      "summary": "O Hoolest VeRelief Prime é um dispositivo tVNS portátil criado pela Hoolest Performance, spin-out da Arizona State University. Seus eletrodos de pegada atuam no ramo auricular (segurando junto à orelha) ou no ramo cervical (segurando no pescoço), com sessões de alta intensidade de 3–5 minutos. Foi pensado para a recuperação esportiva e para preparar o sistema parassimpático antes de dormir, com pesquisas publicadas pelos fundadores.",
+      "description": "Análise da ONDA do Hoolest VeRelief Prime, estimulador do nervo vago portátil para recuperação e sono. Evidência, mecanismo e custo-benefício.",
+      "bestFor": "Ideal para atletas que querem uma ativação parassimpática curta e intensa antes de dormir ou depois do treino.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da documentação de produto da Hoolest, do registro de pesquisas publicado pelos fundadores e de análises independentes de 2026. Não foi testado na prática pela ONDA.",
+      "productType": "tVNS portátil (pegada com os dedos / no pescoço)",
+      "pros": [
+        "Pesquisas sobre variabilidade da frequência cardíaca (HRV ou VFC) e início do sono publicadas pelos fundadores",
+        "Alta intensidade máxima em sessões curtas: combina com rotinas de recuperação esportiva",
+        "Pode ser usado na orelha ou no pescoço: dois alvos de estimulação em um só aparelho",
+        "Não exige assinatura"
+      ],
+      "cons": [
+        "Precisa ser segurado ativamente: não é um wearable passivo",
+        "Menos variedade de protocolos que o Pulsetto",
+        "A intensidade máxima mais alta pode ser desconfortável",
+        "A evidência independente de terceiros ainda está surgindo"
+      ],
+      "scoreNotes": {
+        "evidence": "As pesquisas sobre recuperação da HRV e início do sono foram publicadas pelos fundadores (spin-out da ASU), e estudos conduzidos pelo fabricante não contam como evidência nas notas da ONDA.",
+        "mechanism": "VNS transcutânea portátil, usada na orelha ou no pescoço por meio de eletrodos de pegada com os dedos. Intensidades máximas mais altas que as dos aparelhos de clipe na orelha, em sessões mais curtas.",
+        "protocols": "Três modos de intensidade; sessões de 3–5 minutos. Menos variedade de programas que o Pulsetto, porém mais intenso por minuto.",
+        "comfort": "Precisa ser segurado durante toda a sessão: não é um wearable passivo. A intensidade máxima mais alta pode parecer aguda.",
+        "biofeedback": "O app complementar registra as sessões e se integra ao Apple Health para correlação com a HRV; sem medição de HRV no aparelho.",
+        "value": "$279 em pagamento único, sem assinatura. Comparável ao Pulsetto na faixa de entrada."
+      },
+      "editorialAdjustment": "Honestidade do marketing: a página inicial chama o VeRelief de “Clinically Proven” (clinicamente comprovado) e a página de pesquisas diz “Proven to Reset Panic” (comprovado para reiniciar o pânico), mas os estudos são dos próprios fundadores e não foram publicados, e usaram um protocolo de 10 minutos em vez do modo de 3 minutos do aparelho; não encontramos nenhum ensaio publicado do VeRelief (verificado em outubro de 2026). Isso é pontuado aqui, não em evidência.",
+      "content": "## Onde se destaca\n\nO Hoolest VeRelief Prime é o aparelho mais voltado a atletas desta categoria. É um estimulador portátil que você segura na mão e pressiona contra a orelha ou a lateral do pescoço, aplicando uma sessão de tVNS curta (3–5 minutos) e de alta intensidade. A empresa é uma spin-out da Arizona State University, e a equipe fundadora publicou pesquisas sobre recuperação da HRV e início do sono com o próprio aparelho, um nível de transparência dos pesquisadores incomum nessa faixa de preço.\n\n## Quais são as desvantagens do Hoolest VeRelief Prime?\n\nNão é um wearable passivo. É preciso segurar o aparelho contra o local escolhido durante toda a sessão, o que o torna menos adequado para uso diário de fundo do que o Apollo Neuro ou um wearable como o Pulsetto. As intensidades máximas são mais altas que as dos aparelhos de clipe na orelha, então a sensação pode ser aguda para quem usa pela primeira vez. A variedade de programas é menor que a biblioteca de quatro modos do Pulsetto.\n\n## Quem deve comprar o Hoolest VeRelief Prime?\n\nEscolha o Hoolest VeRelief Prime se você quer uma sessão parassimpática curta e intensa antes de dormir ou depois do treino, e prefere uma ferramenta feita para atletas a um wearable de bem-estar. Se você quer modulação vagal passiva o dia todo, o Apollo Neuro tem o formato certo. Se quer um aparelho diário guiado e baseado em programas, o Pulsetto oferece mais variedade por um preço parecido.\n\n---\n\n## Leituras de apoio\n\nA biologia por trás do que esses aparelhos buscam, e os protocolos que se somam ao hardware.\n\n- [Exercícios para o nervo vago](/articles/vagus-nerve-exercises) — por que o nervo vago fica a montante da HRV, do sono, do humor e da inflamação\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation) — o panorama regulatório e de mecanismos por trás da VNS não invasiva\n- [CCA e monitoramento da coerência](/articles/anterior-cingulate-core-coherence-monitoring) — como o tônus vagal molda a atenção e a regulação emocional\n",
+      "faq": [
+        {
+          "q": "Como funciona o Hoolest VeRelief Prime?",
+          "a": "O VeRelief Prime é um dispositivo tVNS portátil com eletrodos de pegada. Você o segura junto à orelha para atingir o ramo auricular do nervo vago, ou no pescoço para o ramo cervical, em sessões de alta intensidade de 3–5 minutos voltadas à recuperação e ao relaxamento antes de dormir."
+        },
+        {
+          "q": "O Hoolest VeRelief Prime precisa de assinatura?",
+          "a": "Não. O VeRelief Prime custa $279 em pagamento único, sem assinatura. Ele foi criado pela Hoolest Performance, spin-out da Arizona State University, e os fundadores publicaram suas próprias pesquisas sobre HRV e início do sono com o aparelho."
+        },
+        {
+          "q": "Hoolest VeRelief Prime ou Pulsetto: qual é melhor?",
+          "a": "O Pulsetto oferece mais variedade de protocolos e funciona como wearable passivo. O VeRelief Prime é feito para atletas: sessões curtas e intensas que cabem em rotinas de recuperação. A contrapartida é que você precisa segurá-lo durante as sessões, e a intensidade máxima mais alta pode ser desconfortável."
+        }
+      ]
     },
     "sensate": {
       "verdict": "Um dispositivo infrassônico passivo e calmante — suave e muito querido, com evidências sobre o mecanismo abaixo do entusiasmo dos usuários.",
       "productType": "Pedra infrassônica usada no peito, vendida como modulador vagal"
     },
     "xen-by-neuvana": {
-      "verdict": "tVNS auricular em forma de fones de ouvido — um formato de consumo inteligente, com evidências independentes modestas.",
-      "productType": "tVNS auricular (fones de ouvido, com áudio)",
-      "editorialAdjustment": "Honestidade do marketing — a página inicial diz “respaldado por pesquisas, comprovado pelos resultados”, mas os números do Xen vêm de estudos piloto da própria Neuvana, que sua lista de referências descreve como “não provenientes de publicações revisadas por pares” (verificado em outubro de 2026). Isso é pontuado aqui, não no critério de evidências. (no original: “Backed by Research, Proven by Results”)"
+      "verdict": "tVNS auricular em formato de fones de ouvido: um formato de consumo engenhoso, com evidência independente modesta.",
+      "summary": "O Xen é um par de fones de ouvido que combina tVNS auricular — eletrodos que estimulam o nervo vago pelo canal auditivo — com reprodução de música, de modo que a estimulação acompanha o áudio. É controlado pelo celular, com intensidade ajustável e vários modos. Tem menos histórico clínico que o Nurosym, mas a experiência de uso fica mais perto de usar AirPods do que um aparelho médico.",
+      "description": "Análise ONDA do Xen by Neuvana: tVNS auricular por fones de ouvido combinada com música. Avaliado em evidência, mecanismo, protocolos e custo-benefício.",
+      "bestFor": "Ideal para quem quer tVNS auricular num formato de fones de ouvido familiar, combinada com música.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da documentação de produto da Neuvana, da literatura geral sobre tVNS auricular e de análises independentes de 2026. Não foi testado na prática pela ONDA.",
+      "productType": "tVNS auricular (fones de ouvido, combinada com áudio)",
+      "pros": [
+        "Formato de fones de ouvido: o formato de consumo mais familiar da categoria",
+        "Estimulação combinada com música: transforma as sessões em algo agradável",
+        "Sem assinatura para a funcionalidade completa",
+        "Vários modos para foco, calma e sono"
+      ],
+      "cons": [
+        "A evidência clínica independente sobre o próprio aparelho Xen é escassa",
+        "Posicionar os eletrodos no ouvido é mais chato do que um clipe de trago",
+        "Preso a uma unidade de controle por cabo",
+        "Sem medição da variabilidade da frequência cardíaca (HRV ou VFC) no aparelho"
+      ],
+      "scoreNotes": {
+        "evidence": "Só há estudos patrocinados pela empresa sobre HRV e sono, que não contam como evidência nas notas da ONDA; não há ECRs revisados por pares do aparelho Xen. A evidência do mecanismo vem da tVNS auricular em geral.",
+        "mechanism": "tVNS auricular por eletrodos intra-auriculares: atua no ramo auricular do vago. A estimulação é sincronizada com a música tocada pelos mesmos fones.",
+        "protocols": "Vários modos (foco, calma, sono) mais estimulação combinada com música. Intensidade ajustável pelo usuário.",
+        "comfort": "Fones de ouvido: formato familiar, mas posicionar os eletrodos no ouvido é mais chato do que um clipe de trago. O cabo até a unidade de controle limita a mobilidade.",
+        "biofeedback": "O app registra as sessões; sem HRV no aparelho. Integração opcional com Apple Health.",
+        "value": "$399 pelo hardware, sem assinatura. Mais caro que o Pulsetto, menos estudado que o Nurosym."
+      },
+      "editorialAdjustment": "Honestidade do marketing: a página inicial diz “Backed by Research, Proven by Results” (respaldado por pesquisas, comprovado por resultados), mas os números do Xen vêm de estudos-piloto da própria Neuvana, que sua lista de referências descreve como “not from peer-reviewed publications” (não provenientes de publicações revisadas por pares) (verificado em outubro de 2026). Isso é pontuado aqui, não em evidência.",
+      "content": "## Onde se destaca\n\nO Xen by Neuvana adota a abordagem mais amigável ao consumidor para a tVNS auricular nesta lista. Ele embute o estimulador como eletrodos intra-auriculares em fones de ouvido, com o parâmetro tocando junto com a música do celular, então uma sessão parece mais usar AirPods do que um aparelho médico. Os modos cobrem foco, calma e sono, e a intensidade é controlada pelo usuário. Não é preciso assinatura para o funcionamento completo.\n\n## Quais são as desvantagens do Xen by Neuvana?\n\nA base de evidências é o ponto fraco. O mecanismo da tVNS auricular foi estudado com outros aparelhos (principalmente o Parasym), mas esses ensaios não são evidência para o Xen, e ainda não existem ECRs revisados por pares específicos do Xen; o que está publicado é patrocinado pela empresa. O formato de fones também tem uma desvantagem prática: posicionar os eletrodos no ouvido é mais delicado do que um clipe de trago, e o aparelho fica preso por cabo a uma unidade de controle.\n\n## Quem deve comprar o Xen by Neuvana?\n\nEscolha o Xen by Neuvana se o formato de fones e as sessões com música tornam o uso diário realista para você, e se você aceita uma base de evidências específica do aparelho mais escassa. Se o critério decisivo for a base de ensaios maior (em grande parte financiada pelo fabricante), o Nurosym é a escolha certa. Se você quer uma biblioteca de protocolos maior por um preço menor, o Pulsetto entrega mais por menos.\n\n---\n\n## Leitura complementar\n\nA biologia que esses aparelhos têm como alvo — e os protocolos que se somam ao hardware.\n\n- [Tolerância ao CO₂ e o limite de oxigênio](/articles/co2-tolerance-expanding-oxygen-limit) — por que a respiração lenta reconstrói o tônus vagal pela química do CO₂\n- [Respiração como interface de linha de comando](/articles/breathwork-command-line-interface) — os protocolos com que a estimulação se combina\n- [Controle do eixo HPA e regulação do cortisol](/articles/hpa-axis-control-cortisol-aggression) — por que o trabalho de tônus vagal atua no cortisol mais adiante\n",
+      "faq": [
+        {
+          "q": "O Xen by Neuvana vale a pena?",
+          "a": "O Xen vale a pena se você quer tVNS auricular num formato de fones familiar combinado com música. Não exige assinatura e oferece modos de foco, calma e sono. A evidência clínica independente sobre o próprio aparelho Xen é escassa, e os eletrodos são mais chatos de posicionar do que um clipe de trago."
+        },
+        {
+          "q": "Quanto custa o Xen by Neuvana?",
+          "a": "O Xen by Neuvana custa $399 em pagamento único, sem assinatura para a funcionalidade completa. Isso inclui vários modos de foco, calma e sono, com estimulação combinada com música."
+        },
+        {
+          "q": "Quais são as desvantagens do Xen by Neuvana?",
+          "a": "A evidência clínica independente sobre o aparelho Xen é escassa. Posicionar os eletrodos no ouvido é mais chato do que um clipe de trago, os fones ficam presos por cabo a uma unidade de controle e não há medição de HRV no aparelho."
+        }
+      ]
     },
     "livanova-vns-therapy": {
       "verdict": "O dispositivo de VNS implantado de referência — um dispositivo de VNS implantado aprovado (approved) pela FDA (para epilepsia farmacorresistente e depressão resistente ao tratamento), com mais de vinte anos de evidências — não equivalente aos dispositivos de consumo.",
@@ -1831,6 +2292,384 @@
           "a": "O Mute tem uma curva de adaptação, e as primeiras noites são estranhas. Nem todo mundo tolera a inserção interna, é preciso um kit de tamanhos porque ele vem em três tamanhos, e seu custo por noite é maior que o das tiras externas."
         }
       ]
+    },
+    "currentbody-series-2": {
+      "verdict": "A melhor referência do mercado de consumo — maior base de clientes, construção caprichada em silicone, aba para o pescoço incluída. Nenhum ensaio independente da própria máscara.",
+      "productType": "Máscara facial LED de consumo em silicone flexível com aba para o pescoço"
+    },
+    "lumara-viso": {
+      "verdict": "O maior número de LEDs em 2026 — 470 LEDs em silicone flexível com cobertura do pescoço. Preço premium; nenhum ensaio publicado da própria máscara.",
+      "productType": "Máscara facial de luz vermelha premium em silicone flexível com muitos LEDs"
+    },
+    "dr-dennis-gross-spectralite": {
+      "verdict": "O melhor respaldo de marca dermatológica — liberada pela FDA segundo a marca, protocolo duplo vermelho + azul (antienvelhecimento + acne), carcaça rígida. Menos confortável que as alternativas de silicone.",
+      "productType": "Máscara facial LED vermelha + azul de carcaça rígida de marca dermatológica"
+    },
+    "theraface-mask": {
+      "verdict": "A melhor entrada da marca Therabody nas máscaras faciais — três comprimentos de onda, construção premium, prestígio de marca vindo da categoria de pistolas de massagem. A pesquisa é financiada pela marca.",
+      "productType": "Máscara facial LED vermelha + azul + âmbar premium de marca de consumo"
+    },
+    "lightstim-for-wrinkles": {
+      "verdict": "Aparelho de mão vermelho + infravermelho próximo com quatro comprimentos de onda, liberado pela FDA (K120775; modelo atual K261482), por um preço acessível — mas sem ensaios publicados do próprio aparelho. O formato de mão exige posicionamento ativo a cada sessão.",
+      "productType": "Aparelho LED de mão vermelho + infravermelho próximo"
+    },
+    "jovs-dpl-photofacial-mask": {
+      "verdict": "As melhores especificações multionda pelo preço — tecnologia K-beauty coreana com sete modos de comprimento de onda. Pouca vantagem em evidências clínicas; marca mais nova que as referências da categoria.",
+      "productType": "Máscara facial LED multionda fabricada na Coreia"
+    },
+    "shark-cryoglow": {
+      "verdict": "O formato mais inovador de 2026 — resfriamento ativo combinado com LED vermelho + azul. O resfriamento é o diferencial; a dose de LED é modesta por projeto.",
+      "productType": "Máscara facial híbrida de resfriamento + LED"
+    },
+    "solawave-wand-4-in-1": {
+      "verdict": "A melhor entrada econômica na luz vermelha — bastão de $169 que combina LED vermelho com microcorrente, calor e massagem. Dose modesta, cobertura de LED estreita; praticidade de consumo acima de profundidade clínica.",
+      "productType": "Bastão de luz vermelha de mão multimodalidade econômico"
+    },
+    "rubylx-lyra-pro": {
+      "verdict": "A escolha premium em transparência nos testes — cada especificação verificada por terceiros, preço premium, marca menor que a Joovv.",
+      "productType": "Painel LED vermelho + NIR premium testado de forma independente"
+    },
+    "gembared-vesta": {
+      "verdict": "O especialista em construção e EMF da categoria — totalmente blindado, seis comprimentos de onda, projetado pelo fundador. Preço premium por rigor de engenharia premium.",
+      "productType": "Painel de terapia LED de espectro completo com blindagem EMF"
+    },
+    "biolight-pro-900": {
+      "verdict": "Alternativa média sólida ao Joovv — construção competente, dois comprimentos de onda, sem um diferencial marcante pelo preço.",
+      "productType": "Painel de terapia LED vermelho + NIR de tamanho médio"
+    },
+    "pulse-centers-pulse-xl-pro": {
+      "verdict": "O PEMF de maior potência acessível ao consumidor. Aplicadores de bobina estilo clínica vendidos a centros esportivos e de quiropraxia — um canal de vendas, não evidência; não encontramos ensaios independentes deste sistema. O preço o coloca na faixa prosumer/clínica.",
+      "productType": "Sistema de bobina PEMF de nível profissional"
+    },
+    "curatron-3d": {
+      "verdict": "PEMF estilo clínica com protocolos documentados e sistema de aplicador duplo. Faixa intermediária entre os tapetes Bemer e as clínicas de bobina da Pulse Centers.",
+      "productType": "Sistema PEMF de alta intensidade com bobina + tapete"
+    },
+    "imrs-prime": {
+      "verdict": "Alternativa ao Bemer de engenharia suíça — forma de onda dente de serra, sistema multiaplicador, marca com décadas de história. Mais barato que o Bemer com construção comparável.",
+      "productType": "Sistema PEMF de engenharia suíça com tapete + travesseiro + aplicador localizado"
+    },
+    "bemer-classic-evo": {
+      "verdict": "O tapete PEMF mais conhecido e o sinal individual mais estudado — mas a maioria dos estudos é pequena ou ligada ao fabricante, e ensaios controlados independentes não encontraram diferença em relação ao controle. Preço premium.",
+      "productType": "Sistema de tapete PEMF de nível profissional"
+    },
+    "omi-full-body-mat": {
+      "verdict": "Tapete PEMF intermediário sólido — operação simples, preço acessível. Não é liberado pela FDA para consolidação óssea, não há ensaios do próprio tapete e não combina modalidades.",
+      "productType": "Tapete PEMF de corpo inteiro intermediário"
+    },
+    "earthpulse-sleep-on-command": {
+      "verdict": "PEMF vendido para o sono — instalação sob o colchão, ajustes Schumann e delta, preço intermediário. Bem construído, mas nenhum ensaio controlado mostra sono melhor.",
+      "productType": "Aparelho PEMF sob o colchão focado em sono"
+    },
+    "sunlighten-mpulse": {
+      "verdict": "A sauna IR premium líder da categoria — emissão real de 3 comprimentos de onda, construção premium em cedro, EMF baixo medido de forma independente.",
+      "productType": "Sauna de cabine IR premium 3 em 1 (próximo, médio, distante)"
+    },
+    "finnleo-hallmark": {
+      "verdict": "Uma sauna tradicional de interior fabricada na Finlândia — construção finlandesa premium, calor de convecção completo, o mecanismo com mais pesquisa sobre sauna.",
+      "productType": "Sauna finlandesa tradicional de interior (convecção)"
+    },
+    "saunaspace-faraday": {
+      "verdict": "A sauna premium de IR próximo para biohackers — emissores incandescentes, gaiola de Faraday completa, diferente do IR de espectro completo.",
+      "productType": "Sauna de IR próximo incandescente com gaiola de Faraday"
+    },
+    "sun-home-equinox": {
+      "verdict": "Uma novata competente — IR de espectro completo com cromoterapia e som incluídos, com preço contido em relação às líderes da categoria.",
+      "productType": "Sauna de cabine IR de espectro completo intermediária-premium"
+    },
+    "higherdose-blanket-v4": {
+      "verdict": "O cobertor de sauna IR portátil que popularizou o IR para o consumidor — só IR distante, EMF baixo, preço acessível.",
+      "productType": "Cobertor de sauna IR portátil"
+    },
+    "therasage-thera-sauna-personal": {
+      "verdict": "Uma sólida sauna IR intermediária para biohackers — espectro completo, controle de EMF razoável, preço acessível para a faixa.",
+      "productType": "Sauna IR intermediária (configurações tenda / cabine)"
+    },
+    "jnh-lifestyles-joyous": {
+      "verdict": "A sauna de cabine IR econômica confiável — só IR distante, construção em tsuga canadense, preço acessível.",
+      "productType": "Sauna de cabine de IR distante econômica (1–3 pessoas)"
+    },
+    "relax-sauna-portable": {
+      "verdict": "A veterana sauna portátil de IR distante — design de cadeira e tenda, EMF baixo, produto de nicho, mas real.",
+      "productType": "Sauna portátil de IR distante (configuração tenda / cadeira)"
+    },
+    "olylife-tera-p90-plus": {
+      "verdict": "Bastão econômico popular que combina PEMF com alegações de terahertz: preço acessível, mas o marketing de terahertz exagera a evidência publicada.",
+      "summary": "O OlyLife TERA P90 Plus é um bastão econômico popular de PEMF + terahertz vendido principalmente por canais de marketing direto. O componente PEMF é real e usa frequências PEMF comuns, embora não tenhamos encontrado ensaios com este aparelho; as alegações sobre comprimentos de onda de terahertz são a preocupação editorial: a emissão de terahertz de aparelhos de consumo e a literatura sobre efeitos biológicos não correspondem ao marketing. O preço acessível de $400–$700 o mantém na conversa apesar das ressalvas.",
+      "description": "Análise ONDA do OlyLife TERA P90 Plus, bastão econômico de PEMF + terahertz. Avaliado em intensidade de campo, evidência, construção e custo-benefício.",
+      "bestFor": "Ideal para quem tem orçamento apertado, valoriza só o componente PEMF e descarta explicitamente o marketing de terahertz: PEMF portátil de mão por menos de $700.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da documentação de produto da OlyLife e de análises independentes de PEMF de 2026. As alegações de marketing sobre terahertz são sinalizadas como preocupação editorial. Não foi testado na prática pela ONDA.",
+      "productType": "Sistema de bastão econômico PEMF + terahertz",
+      "pros": [
+        "Preço econômico acessível ($400–$700)",
+        "Formato de bastão de mão portátil",
+        "Componente PEMF real com frequências PEMF comuns",
+        "Ampla disponibilidade de distribuição"
+      ],
+      "cons": [
+        "Alegações de marketing sobre terahertz exageram a evidência publicada",
+        "Distribuição no estilo MLM: garantia inconsistente",
+        "Pouco acesso a parâmetros e pouca profundidade de protocolos",
+        "Sem cobertura de esteira de corpo inteiro"
+      ],
+      "scoreNotes": {
+        "field-strength": "Emissão PEMF moderada para um aparelho econômico. As alegações de terahertz são a preocupação editorial: a emissão de terahertz de hardware de consumo não é bem documentada.",
+        "waveform-evidence": "Usa frequências PEMF comuns, sem ensaios com este aparelho; as alegações de efeitos biológicos do terahertz não têm bom respaldo na literatura sobre aparelhos de consumo. O marketing exagera a evidência.",
+        "build": "Construção de bastão razoável pelo preço. Os canais de distribuição tendem ao estilo MLM: o suporte de garantia varia conforme o vendedor.",
+        "programmability": "Operação com predefinições limitadas. Sem acesso real a parâmetros.",
+        "form-factor": "Bastão de mão: portátil, uso direcionado. Sem cobertura de esteira de corpo inteiro.",
+        "value": "$400–$700: preço econômico acessível se você aceitar as ressalvas sobre terahertz e valorizar só o componente PEMF."
+      },
+      "content": "## Onde se destaca\n\nO OlyLife TERA P90 Plus é o popular bastão econômico de PEMF + terahertz: preço acessível, formato portátil de mão e um componente PEMF real que usa frequências PEMF comuns (sem ensaios com este aparelho). Amplamente distribuído por canais de marketing direto.\n\n## Quais são as desvantagens do OlyLife TERA P90 Plus?\n\nO marketing de terahertz. A emissão de terahertz de aparelhos de consumo e a literatura sobre efeitos biológicos não correspondem às alegações de marketing: o componente PEMF é real; o componente de terahertz é a preocupação editorial. Os canais de distribuição no estilo MLM também geram inconsistência na garantia.\n\n## Quem deve comprar o OlyLife TERA P90 Plus?\n\nEscolha o OlyLife TERA P90 Plus só se você descartar explicitamente o marketing de terahertz e valorizar o componente de bastão PEMF econômico. Para um wearable econômico com marketing honesto, Resona Health VIBE. Para esteira de corpo inteiro, OMI ou Healthy Wave.\n\n---\n\n## Leitura complementar\n\n- [Terapia PEMF: o que a evidência mostra](/science/evidence/pemf) — o que foi demonstrado em pessoas, o que vem de estudos com células e o que significam registro, liberação e aprovação pela FDA\n",
+      "faq": [
+        {
+          "q": "O OlyLife TERA P90 Plus vale a pena?",
+          "a": "Só vale a pena para quem tem orçamento apertado, valoriza o componente PEMF e descarta o marketing de terahertz. Você recebe um bastão portátil de mão com PEMF real em frequências comuns, sem ensaios que o testem. As alegações de terahertz exageram a evidência, e a distribuição no estilo MLM torna a garantia inconsistente."
+        },
+        {
+          "q": "Quanto custa o OlyLife TERA P90 Plus?",
+          "a": "O bastão TERA P90 Plus avulso custa $550, dentro de uma faixa econômica de $400 a $700. Como é vendido por distribuição no estilo MLM, o suporte de garantia pode variar conforme onde você compra."
+        },
+        {
+          "q": "Quais são as desvantagens do OlyLife TERA P90 Plus?",
+          "a": "As alegações de marketing sobre terahertz exageram a evidência publicada, a distribuição no estilo MLM leva a suporte de garantia inconsistente, há pouco acesso a parâmetros e pouca profundidade de protocolos e, por ser um bastão de mão, não oferece cobertura de esteira de corpo inteiro. Valorize-o só pelo PEMF."
+        }
+      ]
+    },
+    "eight-sleep-pod-5": {
+      "verdict": "O Eight Sleep mais completo: o Pod 5 Ultra acrescenta base ajustável, manta hidráulica que atua de cima, áudio integrado e mitigação de ronco, mas a partir de $6,099 o preço quase dobra. O clima de zona dupla e a tecnologia de variabilidade da frequência cardíaca (HRV ou VFC) são os mesmos do Pod 4, que continua sendo o melhor custo-benefício. Observação: a Eight Sleep substituiu o Pod 5 pelo Pod 6 em 23 de setembro de 2026; compare o estoque restante do Pod 5 com o preço do Pod 6.",
+      "summary": "O Eight Sleep Pod 5 é a geração de 2026 do sistema de climatização do sono líder da categoria. O carro-chefe, o Pod 5 Ultra, é um sistema de cama mais completo: base ajustável, manta hidráulica que acrescenta resfriamento/aquecimento por cima além de por baixo, paisagens sonoras e alto-falantes integrados e mitigação automática de ronco que eleva suavemente a cabeça. O Pod 5 Core (só a capa) acrescenta aquecimento/resfriamento mais rápido e uma IA mais inteligente. Mas o essencial — temperatura de zona dupla, AI Autopilot, monitoramento de HRV e de estágios do sono, alarme por vibração — é idêntico ao do Pod 4, e o \"sleep agent\" do Autopilot 4.0 de abril de 2026 (integração com Apple/Google Health e resumo matinal em linguagem simples) também chega ao Pod 4. O Pod 5 Ultra custa a partir de cerca de $6,099 (queen) até $6,300 (king), contra $2,449–$2,649 do Pod 4, e a assinatura continua obrigatória. Em 23 de setembro de 2026 a Eight Sleep lançou o Pod 6 como substituto do Pod 5 em todos os mercados, a partir de $1,999 (Solo) e $2,899 (queen, zona dupla), então o Pod 5 agora é a geração anterior.",
+      "description": "Análise da ONDA do Eight Sleep Pod 5 Ultra: base ajustável e áudio por $6,099+; núcleo igual ao Pod 4. Substituído pelo Pod 6 (desde $1,999) em 2026.",
+      "bestFor": "Ideal para quem quer o sistema de cama mais completo — base ajustável, clima por cima, áudio e mitigação de ronco — e aceita o preço e a assinatura. Para a experiência essencial, o Pod 4 ou o Pod 5 Core é a compra mais inteligente.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir das especificações da Eight Sleep e de avaliações independentes de 2026 do Pod 5 Ultra e do Pod 4. Não foi testado na prática pela ONDA.",
+      "productType": "Sistema premium inteligente de capa + colchão para climatização do sono",
+      "pros": [
+        "O controle de clima mais completo da categoria: manta hidráulica por cima mais capa de zona dupla (Ultra)",
+        "Base ajustável, áudio integrado e mitigação automática de ronco no Ultra",
+        "O melhor monitoramento de sono/HRV entre os sistemas de climatização, agora com o sleep agent do Autopilot 4.0",
+        "Histórico de confiabilidade de vários anos majoritariamente positivo"
+      ],
+      "cons": [
+        "O Pod 5 Ultra quase dobra o preço ($6,099+) por recursos adicionais, não essenciais",
+        "A assinatura do Autopilot continua obrigatória para todos os recursos",
+        "O software principal (Autopilot 4.0) também chega ao Pod 4: menos motivo para trocar",
+        "Instalação e espaço maiores; preso ao ecossistema da Eight Sleep"
+      ],
+      "scoreNotes": {
+        "climate-range": "O Pod 5 Ultra acrescenta uma manta hidráulica para controle de temperatura por cima, além da capa de zona dupla: a faixa climática mais completa da categoria. O Pod 5 Core acrescenta aquecimento/resfriamento mais rápido. A zona dupla (um lado para cada pessoa) continua.",
+        "build": "Capa premium e, no Ultra, base ajustável e central mais silenciosa. Controles físicos refinados. Histórico de confiabilidade de vários anos majoritariamente positivo.",
+        "app-tracking": "O mesmo monitoramento de sono/HRV de ponta, agora com o Autopilot 4.0: um \"sleep agent\" que integra Apple Health / Google Health Connect e escreve um resumo matinal em linguagem simples. Vale notar que esse software também chega ao Pod 4.",
+        "form-factor": "O Ultra é um sistema mais completo: base ajustável, alto-falantes integrados e mitigação automática de ronco (eleva a cabeça). Mais capaz, mas com instalação e espaço maiores que um Pod só de capa.",
+        "subscription": "Sem mudanças: a assinatura do Autopilot continua obrigatória para todos os recursos (~$15–25/mês). Hardware premium atrás de uma assinatura contínua segue sendo o ponto de atrito editorial.",
+        "value": "Pod 5 Ultra a $6,099–$6,300 (queen/king) mais assinatura: cerca do dobro do Pod 4. Para a experiência essencial de climatização do sono, o Pod 4 (ou o Pod 5 Core) entrega a maior parte do valor por muito menos."
+      },
+      "content": "> Atualização (setembro de 2026): a Eight Sleep substituiu o Pod 5 pelo Pod 6 em 23 de setembro de 2026, com central menor, mais sensores biométricos e preço inicial mais baixo ($1,999 Solo; $2,899 queen zona dupla). O Pod 5 agora é a geração anterior; compare o estoque restante do Pod 5 com o preço do Pod 6.\n\n## Onde se destaca\n\nO Eight Sleep Pod 5 amplia a liderança de categoria que o [Pod 4](/reviews/eight-sleep-pod-4) estabeleceu. No carro-chefe Pod 5 Ultra, uma manta hidráulica acrescenta resfriamento e aquecimento por cima à capa de zona dupla por baixo — a faixa de temperatura mais completa de qualquer sistema inteligente de sono —, junto com base ajustável, áudio integrado e mitigação automática de ronco. O monitoramento continua o melhor da categoria, agora movido pelo \"sleep agent\" do Autopilot 4.0, que lê dados do Apple/Google Health e escreve um resumo matinal em linguagem simples.\n\n## O que realmente mudou em relação ao Pod 4\n\nAs novidades são reais, mas ficam sobre um núcleo inalterado. Temperatura de zona dupla, AI Autopilot, monitoramento de HRV e de estágios do sono e alarme por vibração são idênticos aos do Pod 4 — e o software Autopilot 4.0 também chega ao Pod 4. Assim, as vantagens reais do Pod 5 Ultra são a base ajustável, a manta por cima, o áudio e a mitigação de ronco, não os fundamentos da climatização do sono. Veja a comparação completa [Pod 4 vs Pod 5](/reviews/vs/eight-sleep-pod-4-vs-eight-sleep-pod-5).\n\n## O porém\n\nPreço e assinatura. O Pod 5 Ultra começa em cerca de $6,099 (queen) — mais ou menos o dobro do Pod 4 — e ainda exige a assinatura do Autopilot para todos os recursos. É muito dinheiro por confortos adicionais quando a experiência essencial é a mesma.\n\n## Quem deve comprar o Eight Sleep Pod 5?\n\nEscolha o Pod 5 Ultra se você quer o sistema de cama mais completo e o preço não é o fator decisivo. Se você quer a experiência de climatização do sono da Eight Sleep com o melhor custo-benefício, o [Pod 4](/reviews/eight-sleep-pod-4) — ou o mais barato Pod 5 Core — é a compra mais inteligente. Para o panorama completo, veja os [melhores sistemas inteligentes de climatização do sono](/reviews/smart-sleep-climate).\n",
+      "faq": [
+        {
+          "q": "O Eight Sleep Pod 5 vale a pena?",
+          "a": "Só se você quer o sistema de cama mais completo. O Pod 5 Ultra acrescenta base ajustável, manta hidráulica por cima, áudio integrado e mitigação de ronco, mas quase dobra o preço. O clima de zona dupla e a tecnologia de HRV são os mesmos do Pod 4, que continua sendo o melhor custo-benefício."
+        },
+        {
+          "q": "Quanto custa o Eight Sleep Pod 5?",
+          "a": "O Eight Sleep Pod 5 Ultra custava $6,099 no tamanho queen e cerca de $6,300 no king, mais aproximadamente $20 por mês pela assinatura do Autopilot. O Pod 5 Core, só de capa, era mais barato. Desde 23 de setembro de 2026 o Pod 5 foi substituído pelo Pod 6, que começa em $1,999 (Solo) e $2,899 (queen)."
+        },
+        {
+          "q": "Quais são as desvantagens do Eight Sleep Pod 5?",
+          "a": "O Pod 5 Ultra quase dobra o preço por recursos adicionais, e não essenciais, e a assinatura do Autopilot continua obrigatória. O Autopilot 4.0 também chega ao Pod 4, o que reduz o motivo para trocar, e a instalação é maior, com aprisionamento ao ecossistema."
+        },
+        {
+          "q": "Eight Sleep Pod 5 vs Pod 4: qual é melhor?",
+          "a": "O Pod 4 tem melhor custo-benefício; o Pod 5 Ultra só é melhor se você quer um sistema de cama completo com base ajustável, manta por cima, áudio e mitigação de ronco. Ambos compartilham o clima de zona dupla e a tecnologia de HRV, e o Autopilot 4.0 também chega ao Pod 4."
+        }
+      ]
+    },
+    "chilipad-dock-pro": {
+      "verdict": "A alternativa resfriada a água e sem assinatura ao Eight Sleep: clima premium, sem mensalidades e sem monitoramento da variabilidade da frequência cardíaca (HRV ou VFC).",
+      "summary": "O ChiliPad Dock Pro é a capa de colchão premium da Sleepme resfriada / aquecida a água. Resfriamento e aquecimento ativos (13–46°C) por meio de uma manta cheia de água, zona dupla opcional e sem assinatura para todos os recursos. Não tem o monitoramento de HRV nem a detecção de estágios do sono do Eight Sleep, mas o hardware de climatização é comparável e o modelo de propriedade é mais simples.",
+      "description": "Análise da ONDA do ChiliPad Dock Pro: a manta premium de climatização do sono da Sleepme, resfriada a água e sem assinatura.",
+      "bestFor": "Ideal para quem quer resfriamento a água do nível do Eight Sleep sem modelo de assinatura, sem a bagagem do monitoramento.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da documentação de produto da Sleepme/Chili e de avaliações independentes de 2026. Não foi testado na prática pela ONDA.",
+      "productType": "Capa de colchão premium resfriada / aquecida a água (sem assinatura)",
+      "pros": [
+        "Sem assinatura: todos os recursos incluídos no hardware",
+        "Resfriamento/aquecimento a água de zona dupla comparável ao Eight Sleep",
+        "Histórico sólido de confiabilidade ao longo de vários anos",
+        "Modelo de propriedade mais simples que o do Eight Sleep"
+      ],
+      "cons": [
+        "Sem monitoramento de HRV nem detecção de estágios do sono",
+        "O app da Sleepme é mais simples que o do Eight Sleep",
+        "Recuperação térmica um pouco mais lenta que a do Pod 4",
+        "A manta sobre o colchão muda levemente a sensação"
+      ],
+      "scoreNotes": {
+        "climate-range": "Faixa sólida de zona dupla (13–46°C). Recuperação um pouco mais lenta que a do Eight Sleep Pod 4 no calor máximo; fora isso, clima comparável.",
+        "build": "Construção premium da manta com central silenciosa. Garantia de 2 anos. Histórico sólido de confiabilidade da Sleepme/Chili ao longo de vários anos.",
+        "app-tracking": "App da Sleepme para programar temperaturas; sem monitoramento de HRV, sem detecção de estágios do sono. Apenas importação para o Apple Health.",
+        "form-factor": "Manta sobre o colchão existente. Zona dupla disponível. Tamanho da central comparável ao do Eight Sleep.",
+        "subscription": "Sem assinatura. Todos os recursos vêm com o hardware. O maior diferencial editorial em relação ao Eight Sleep.",
+        "value": "O estoque restante do Dock Pro (agora \"Chilipad 1.0\") é vendido com desconto; seu sucessor, o Chilipad 2.0, custa $1,599-1,799, sem mensalidades. Em 3 anos, significativamente mais barato que o custo total do Eight Sleep."
+      },
+      "content": "> Atualização (setembro de 2026): a Sleepme agora vende o Dock Pro como \"Chilipad 1.0\", com 30% de desconto enquanto durarem os estoques, e seu sucessor é o Chilipad 2.0, que a Sleepme descreve como uma evolução desde a base do sistema Dock Pro (a partir de $1,599; $1,699 tamanho queen; sem assinatura). Esta análise cobre o hardware do Dock Pro.\n\n## Onde se destaca\n\nO ChiliPad Dock Pro é a resposta sem assinatura da Sleepme ao Eight Sleep. Resfriamento/aquecimento a água de zona dupla comparável, sem mensalidades, com histórico de confiabilidade de vários anos e um modelo de propriedade mais simples. Em troca, não há monitoramento de HRV e o app é mais simples: o dispositivo é uma ferramenta de climatização, não um rastreador.\n\n## Quais são as desvantagens do ChiliPad Dock Pro?\n\nSem HRV. Sem detecção de estágios do sono. O app da Sleepme programa o clima, não faz biofeedback. Para quem já usa um Oura ou um Whoop, isso é irrelevante; para quem quer monitoramento integrado, o Eight Sleep é o formato certo.\n\n## Quem deve comprar o ChiliPad Dock Pro?\n\nEscolha o ChiliPad Dock Pro se você quer clima de sono premium resfriado a água sem assinatura. Para HRV/monitoramento integrado, Eight Sleep Pod 4. Para fluxo de ar por um preço menor, BedJet 3.\n\n---\n\n## Leitura complementar\n\nA biologia de por que a regulação da temperatura da cama influencia a profundidade do sono e a recuperação.\n\n- [O sono realmente limpa o cérebro? A evidência glinfática](/articles/nightly-flush-glymphatic-neural-cache): o que está comprovado em pessoas e o que ainda é debatido\n- [Protocolo: o reset circadiano completo](/articles/protocol-circadian-hard-reset): onde o resfriamento entra numa rotina para reajustar o ritmo do sono\n",
+      "faq": [
+        {
+          "q": "O ChiliPad Dock Pro vale a pena?",
+          "a": "Sim, se você quer resfriamento a água premium sem assinatura. O ChiliPad Dock Pro oferece resfriamento e aquecimento ativos de zona dupla de 13 a 46°C, comparável ao Eight Sleep, com todos os recursos e sem mensalidades. Não tem monitoramento de HRV nem detecção de estágios do sono."
+        },
+        {
+          "q": "Quanto custa o ChiliPad Dock Pro?",
+          "a": "A Sleepme agora vende as unidades restantes do Dock Pro como 'Chilipad 1.0' com 30% de desconto enquanto durarem os estoques; seu sucessor, o Chilipad 2.0, custa $1,599-1,799 conforme o tamanho ($1,699 queen), sem assinatura. Todos os recursos vêm com o hardware, o que dá um modelo de propriedade mais simples que a assinatura do Eight Sleep. Não inclui monitoramento de HRV."
+        },
+        {
+          "q": "Quais são as desvantagens do ChiliPad Dock Pro?",
+          "a": "O ChiliPad Dock Pro não tem monitoramento de HRV nem detecção de estágios do sono, e o app da Sleepme é mais simples que o do Eight Sleep. A recuperação térmica é um pouco mais lenta que a do Pod 4, e a manta sobre o colchão muda levemente a sensação dele."
+        },
+        {
+          "q": "ChiliPad Dock Pro vs Eight Sleep Pod 4: qual é melhor?",
+          "a": "O ChiliPad Dock Pro é melhor para quem quer propriedade sem assinatura; o Pod 4 é melhor para monitoramento integrado de HRV e sono. O hardware de climatização é comparável, mas o Pod 4 custa cerca de $4,000 mais aproximadamente $20 por mês, contra cerca de $1,700 do atual Chilipad 2.0 da Sleepme (queen), sem mensalidades."
+        }
+      ]
+    },
+    "sleep-number-climate360": {
+      "verdict": "A abordagem de cama inteligente para o clima do sono — clima embutido no colchão, não adicionado como camada. Preço premium.",
+      "productType": "Cama inteligente com clima embutido (integrado ao colchão)"
+    },
+    "iqair-healthpro-plus": {
+      "verdict": "A escolha premium em filtragem: filtragem HyperHEPA H14 que captura 99,5% das partículas de 0,003 mícron, décadas de tradição da marca e uso em hospitais durante a COVID-19.",
+      "summary": "O IQAir HealthPro Plus é um purificador de engenharia suíça cujo filtro HyperHEPA tem classificação H14 segundo o fabricante (informação da empresa), capturando 99,5% das partículas de até 0,003 mícron (contra True HEPA H13 a 0,3 mícron), com um robusto módulo de carvão ativado V5-Cell para captura de COVs e cobertura em múltiplos estágios de 1125 sq ft. É usado em hospitais e contextos clínicos. O preço premium reflete essa especificação de filtragem.",
+      "description": "Análise ONDA do IQAir HealthPro Plus: purificador suíço HyperHEPA H14 com filtragem H14 segundo a marca. Filtragem, CADR, construção e custo-benefício.",
+      "bestFor": "Ideal para quem quer filtragem HEPA H14 segundo o fabricante (informação da empresa) com décadas de tradição suíça, e aceita não ter recursos inteligentes.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da documentação de produto da IQAir, da certificação AHAM e de análises de qualidade do ar / de consumo de 2026. Não foi testado na prática pela ONDA.",
+      "productType": "Purificador de ar HyperHEPA (H14 segundo o fabricante)",
+      "pros": [
+        "HyperHEPA H14: a filtragem mais profunda da categoria de consumo",
+        "Usado em hospitais e contextos clínicos",
+        "Décadas de tradição da marca suíça",
+        "Cartuchos de filtro com vida útil de 2-4 anos"
+      ],
+      "cons": [
+        "Preço premium ($1,099)",
+        "Sem app, sem sensores, sem recursos inteligentes",
+        "Barulhento na velocidade máxima (~65 dB)",
+        "Só controle manual: sem modo automático"
+      ],
+      "scoreNotes": {
+        "filtration-technology": "HyperHEPA H14: captura 99,5% a 0,003 mícron (contra True HEPA H13 com 99,97% a 0,3 mícron). A especificação de filtragem mais profunda do mercado de consumo. Módulo de carvão V5-Cell para COVs.",
+        "cadr-coverage": "CADR verificado pela AHAM. Cobertura de 1125 sq ft a 2 ACH; ~450 sq ft a 5 ACH. Números do fabricante conservadores.",
+        "build-noise": "Construção suíça premium, confiabilidade de décadas. Silencioso na velocidade baixa (~30 dB); mais barulhento na alta (~65 dB), um compromisso pelo tamanho do ventilador.",
+        "smart-features": "Sem app e sem sensores integrados. A lacuna mais notável frente a concorrentes premium com app como Dyson / Molekule.",
+        "maintenance-cost": "Cartuchos de filtro com vida útil de 2-4 anos. ~$200-300/ano em filtros. Custo de propriedade a longo prazo favorável.",
+        "value": "$1,099: preço premium. Justificado pela filtragem H14 segundo o fabricante; caro frente a alternativas da Dyson / Coway com recursos inteligentes."
+      },
+      "content": "## Onde se destaca\n\nO IQAir HealthPro Plus tem um filtro H14 segundo o fabricante (informação da empresa): o HyperHEPA captura partículas de até 0,003 mícron, com décadas de tradição da marca suíça e uso em hospitais e contextos clínicos. Poucos purificadores de consumo declaram uma especificação de filtragem comparável.\n\n## Quais são as desvantagens do IQAir HealthPro Plus?\n\nRecursos inteligentes e ruído na velocidade alta. Sem app, sem sensores, sem modo automático: o IQAir é um aparelho de filtragem puramente mecânico. O ruído do ventilador na velocidade alta (~65 dB) é alto. Para quem quer integração inteligente, Dyson ou Molekule se encaixam melhor.\n\n## Quem deve comprar o IQAir HealthPro Plus?\n\nEscolha o IQAir HealthPro Plus pela filtragem HEPA H14 segundo o fabricante (informação da empresa), aceitando a falta de recursos inteligentes. Para recursos inteligentes premium, Dyson Big+Quiet. Para PECO premium, Molekule Air Pro. Para inteligente intermediário-premium, Coway Airmega 400.\n\n---\n\n## Leituras de apoio\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [Sono acústico sincronizado com a fase](/articles/phase-locked-acoustic-sleep)\n- [O sono realmente limpa o cérebro? A evidência glinfática](/articles/nightly-flush-glymphatic-neural-cache) — o que está demonstrado em pessoas e o que ainda é debatido\n",
+      "faq": [
+        {
+          "q": "O IQAir HealthPro Plus vale $1,099?",
+          "a": "Vale, se você quer filtragem H14 segundo o fabricante (informação da empresa). O filtro HyperHEPA H14 captura 99,5% das partículas de até 0,003 mícron, é usado em hospitais e os cartuchos de filtro duram 2–4 anos. Se você quer app, sensores ou modo automático, esse preço não inclui nada disso."
+        },
+        {
+          "q": "Qual a diferença entre HyperHEPA e True HEPA?",
+          "a": "O filtro HyperHEPA H14 do IQAir HealthPro Plus captura 99,5% das partículas de até 0,003 mícron, enquanto os filtros True HEPA H13 são classificados a 0,3 mícron. Ele também acrescenta um robusto módulo de carvão ativado V5-Cell para COVs. Nada mais na categoria de consumo iguala essa especificação."
+        },
+        {
+          "q": "Quais são as desvantagens do IQAir HealthPro Plus?",
+          "a": "Ele custa $1,099 e não tem app, sensores nem modo automático, então o controle é só manual. Também é barulhento na velocidade alta, em torno de 65 dB. Você paga pela profundidade de filtragem e por décadas de tradição suíça, não por recursos de conveniência."
+        }
+      ]
+    },
+    "blueair-healthprotect-7770i": {
+      "verdict": "O melhor premium sueco: a filtragem por carga iônica HEPASilent oferece captura equivalente a HEPA com menos ruído e o modo GermShield sempre ativo. Preço premium.",
+      "summary": "O Blueair HealthProtect 7770i é a referência premium sueca: a tecnologia de carga iônica HEPASilent oferece captura equivalente a HEPA com menos ruído que os ventiladores HEPA tradicionais, além do modo contínuo GermShield sempre ativo e de baixo consumo, sensores de PM2.5 / VOC em tempo real e integração com app. Décadas de tradição da marca Blueair no mercado europeu.",
+      "description": "Análise da ONDA do Blueair HealthProtect 7770i: purificador de ar premium de engenharia sueca com filtragem iônica HEPASilent e modo GermShield 24/7.",
+      "bestFor": "Ideal para quem quer engenharia premium sueca com os modos HEPASilent + GermShield, aceitando cobertura menor e custo de filtro maior que o Coway.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da documentação de produto da Blueair, da certificação AHAM e de avaliações de consumidores europeus de 2026. Não foi testado na prática pela ONDA.",
+      "productType": "Purificador de ar premium sueco HEPASilent + GermShield",
+      "pros": [
+        "Tecnologia HEPASilent: equivalente a HEPA com menos ruído",
+        "Modo contínuo GermShield sempre ativo",
+        "Décadas de tradição da marca sueca Blueair",
+        "Entre os mais silenciosos da categoria premium, ao lado da Dyson"
+      ],
+      "cons": [
+        "Preço premium ($820)",
+        "Sem diferencial HyperHEPA / PECO",
+        "Ciclo de filtro de 6 meses vs 12 meses do Coway",
+        "Cobertura menor que a do Coway Airmega 400"
+      ],
+      "scoreNotes": {
+        "filtration-technology": "Combinação de carga iônica HEPASilent + HEPA: captura partículas por atração de carga, reduzindo a velocidade de ventilador necessária. Equivalente a HEPA sem a profundidade do HyperHEPA.",
+        "cadr-coverage": "CADR com certificação AHAM. Cobertura de 540 sq ft a 5 ACH.",
+        "build-noise": "Construção premium sueca. ~23 dB no mínimo (entre os mais silenciosos), 47 dB no máximo. A tecnologia HEPASilent reduz a velocidade de ventilador necessária.",
+        "smart-features": "Sensores de PM2.5 / VOC, modo GermShield sempre ativo, integração com app, compatível com Alexa / Google Home.",
+        "maintenance-cost": "Ciclo de filtro de 6 meses. ~$120-180/ano em filtros. Mais que o Coway, mas menos que o Molekule.",
+        "value": "$820: preço premium. Justificado pela engenharia sueca + HEPASilent + GermShield; caro frente ao Coway Airmega, de faixa intermediária-premium."
+      },
+      "content": "## Onde se destaca\n\nO Blueair HealthProtect 7770i é a referência premium sueca: a filtragem por carga iônica HEPASilent oferece captura equivalente a HEPA com menos ruído, modo contínuo GermShield sempre ativo e integração completa de recursos inteligentes. Décadas de tradição como marca europeia.\n\n## Quais são as desvantagens do Blueair HealthProtect 7770i?\n\nCobertura e custo de filtro frente ao Coway. 540 sq ft vs 1560 sq ft de cobertura AHAM do Coway Airmega 400. Ciclo de filtro de 6 meses vs 12 meses do Coway.\n\n## Quem deve comprar o Blueair HealthProtect 7770i?\n\nEscolha o Blueair 7770i se você quer o premium sueco com HEPASilent + GermShield. Para mais cobertura por menos, Coway Airmega 400. Para HEPA de nível clínico, IQAir HealthPro Plus. Para o acabamento da Dyson, Dyson Big+Quiet.\n\n---\n\n## Leitura complementar\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [Sono acústico com sincronia de fase](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "O Blueair HealthProtect 7770i vale a pena?",
+          "a": "Sim, se funcionamento silencioso e engenharia premium sueca são importantes para você. A filtragem por carga iônica HEPASilent oferece captura equivalente a HEPA com menos ruído, além de um modo GermShield sempre ativo. Você paga $820 e aceita cobertura menor e custo de filtro maior que o Coway Airmega 400."
+        },
+        {
+          "q": "Quanto custa o Blueair HealthProtect 7770i?",
+          "a": "O Blueair HealthProtect 7770i custa $820 avulso. Seus filtros seguem um ciclo de 6 meses, contra o ciclo de 12 meses do Coway, então o custo contínuo de filtros é maior que o de modelos Coway de classe semelhante. Inclui sensores de PM2.5 e VOC em tempo real e integração com app."
+        },
+        {
+          "q": "Quais são as desvantagens do Blueair HealthProtect 7770i?",
+          "a": "O Blueair HealthProtect 7770i tem preço premium de $820 e não tem diferencial HyperHEPA ou PECO. Seu ciclo de filtro de 6 meses é mais curto que os 12 meses do Coway, e sua cobertura é menor que a do Coway Airmega 400. O ruído, por outro lado, está entre os mais baixos da categoria premium."
+        },
+        {
+          "q": "Blueair HealthProtect 7770i vs Coway Airmega 400: qual é melhor?",
+          "a": "O Coway Airmega 400 é melhor em cobertura e custo-benefício; o Blueair é melhor em engenharia premium silenciosa. O Coway cobre mais espaço por $479 com ciclo de filtro de 12 meses, enquanto o Blueair acrescenta os modos HEPASilent e GermShield por $820."
+        }
+      ]
+    },
+    "zoe": {
+      "verdict": "O programa de CGM com mais respaldo científico — e o único que une glicose, microbioma e biomarcadores sanguíneos num único plano de nutrição.",
+      "summary": "O Zoe é o programa de nutrição personalizada criado no Reino Unido e liderado pelo epidemiologista Tim Spector. Ele combina um período de duas semanas com CGM Abbott Libre, um teste de microbioma intestinal feito em casa e um painel de biomarcadores sanguíneos, e transforma os três sinais em rankings de alimentos personalizados para a sua fisiologia. Depois da fase de medição de 2 semanas, você mantém o app e os rankings com uma assinatura de £60/mês. Ciência sólida, conteúdo sólido, menos indicado para uso contínuo de CGM.",
+      "description": "Análise ONDA do Zoe, nutrição personalizada de Tim Spector com CGM, teste de microbioma e biomarcadores sanguíneos. Insights, precisão e custo-benefício.",
+      "bestFor": "Ideal para quem quer nutrição personalizada baseada em ciência publicada de verdade, não só em curvas de glicose.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da documentação de produto do Zoe, da série publicada de ensaios PREDICT e de análises independentes de 2026. Não foi testado na prática pela ONDA.",
+      "productType": "Programa de nutrição personalizada (Libre + microbioma + sangue)",
+      "pros": [
+        "O único programa que une CGM, microbioma intestinal e biomarcadores sanguíneos numa só análise",
+        "Liderado por Tim Spector — a referência científica mais confiável no setor de nutrição para o consumidor",
+        "Rankings de alimentos personalizados respaldados pelos estudos PREDICT publicados",
+        "Custo de longo prazo menor que Levels ou Nutrisense"
+      ],
+      "cons": [
+        "A fase de CGM é fixa em duas semanas — não é uma ferramenta de CGM contínua",
+        "Sem exportação de dados brutos de glicose",
+        "Variante mais antiga do Libre de 2 semanas — a precisão é mais fraca na segunda semana",
+        "Disponibilidade focada no Reino Unido, expansão mais lenta nos EUA"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "Abbott Libre (uso de 2 semanas), MARD informado pelo fabricante ~9–11% (números do fabricante não contam como evidência nas notas da ONDA). Sem calibração; a precisão na segunda semana é o ponto mais fraco. Usa uma versão anterior do Libre; não há verificação independente desta combinação exata. A ZOE testou seu programa num ensaio clínico randomizado controlado e o chama exatamente assim na página inicial.",
+        "insights": "O único programa aqui que une CGM com microbioma intestinal e biomarcadores sanguíneos numa única pontuação de ranking de alimentos — uma visão multibiomarcador única respaldada pelos estudos PREDICT publicados.",
+        "coaching": "Sem coach individual por padrão, mas a biblioteca de conteúdo e os rankings personalizados de alimentos substituem a orientação contínua. Spector e a equipe são autoridades científicas confiáveis.",
+        "app-integration": "App refinado com rankings personalizados de alimentos, receitas e registro de refeições. Integração com Apple Health disponível.",
+        "flexibility": "A fase de CGM é fixa em duas semanas; depois disso, o programa são os rankings e o app, não um CGM contínuo. Sem exportação de dados brutos de glicose. Compromisso anual após a configuração inicial.",
+        "value": "£300 (~$370) de configuração inicial incluindo o kit de testes, depois £60/mês (~$75). Mais barato no longo prazo que o Levels, mais caro que o Stelo."
+      },
+      "content": "## Onde se destaca\n\nO Zoe é o único programa desta lista que não finge que a glicose é a história toda. A fase de CGM de 2 semanas acompanha seus [picos de glicose](/glossary/glucose-spikes) junto com um teste de fezes do [microbioma](/glossary/microbiome) intestinal e um painel de biomarcadores sanguíneos, e os três sinais são unidos num único conjunto de rankings de alimentos personalizados — respaldados pelos estudos publicados PREDICT-1 e PREDICT-2 do grupo de Tim Spector no King’s College London. O histórico científico é o mais forte da categoria por uma margem considerável.\n\n## Quais são as desvantagens do Zoe?\n\nO CGM é um retrato pontual, não um instrumento. Duas semanas de Abbott Libre alimentam o modelo inicial de ranking e depois acabam; se você quer dados de CGM contínuos, o Zoe não tem o formato certo. Não há exportação de dados brutos, a variante mais antiga do Libre é menos precisa na segunda semana, e o compromisso de assinatura anual após a configuração de £300 é alto para um programa que deixa de fornecer novos dados de glicose depois da segunda semana.\n\n## Quem deve comprar o Zoe?\n\nEscolha o Zoe se você quer nutrição personalizada baseada em ciência publicada e uma única fase de CGM é suficiente — é o formato certo para uma reformulação profunda dos seus hábitos alimentares com base na sua própria fisiologia, não para acompanhamento contínuo da glicose. Se o objetivo é CGM contínuo, Levels (premium) ou Stelo (custo-benefício) são escolhas melhores.\n\n---\n\n## Leitura complementar\n\nA biologia metabólica que esses programas revelam — e os protocolos que os dados destravam.\n\n- [O regulador de energia: TSH](/articles/energy-governor-tsh) — o metabolismo comandado pela tireoide como origem da capacidade de lidar com a glicose\n- [Biologia do GLP-1 e preservação muscular](/articles/glp1-biology-muscle-preservation) — o que os dados de CGM mostram durante o uso de protocolos com GLP-1\n- [Monitoramento de biomarcadores com IA](/articles/ai-biomarker-tracking-predictive) — o CGM como o fluxo de biomarcadores de consumo de maior densidade disponível\n",
+      "faq": [
+        {
+          "q": "O Zoe vale a pena?",
+          "a": "O Zoe vale a pena se você quer nutrição personalizada baseada em ciência publicada, não só em curvas de glicose. É o único programa que une CGM, microbioma intestinal e biomarcadores sanguíneos, liderado por Tim Spector e com rankings de alimentos respaldados pelo PREDICT. A fase de CGM dura só duas semanas."
+        },
+        {
+          "q": "Quanto custa o Zoe?",
+          "a": "O Zoe custa £300 de configuração inicial mais £60 por mês pelo programa multibiomarcador. A parte de CGM dura só duas semanas. A análise considera seu custo de longo prazo menor que o do Levels ou do Nutrisense."
+        },
+        {
+          "q": "Zoe ou Levels: qual é melhor?",
+          "a": "O Zoe é melhor para nutrição personalizada com respaldo científico combinando CGM, microbioma e biomarcadores sanguíneos, com custo menor no longo prazo. O Levels serve para acompanhamento contínuo da glicose; o CGM do Zoe dura só duas semanas, não exporta dados brutos e usa Libre em vez do Dexcom Stelo (plataforma G7) do Levels."
+        },
+        {
+          "q": "Quais são as desvantagens do Zoe?",
+          "a": "A fase de CGM do Zoe é fixa em duas semanas, então não é uma ferramenta de CGM contínua. Não há exportação de dados brutos de glicose, a variante mais antiga do Libre é menos precisa na segunda semana, e a disponibilidade é focada no Reino Unido, com expansão mais lenta nos EUA."
+        }
+      ]
     }
   },
   "comparisons": {
@@ -2245,6 +3084,306 @@
           "a": "Nexcare faça-você-mesmo: ~US$ 20 por ano. Breathe Right: ~US$ 120 por ano. SomniFit de marca: ~US$ 100 por ano. Assinatura Hostage Tape: ~US$ 156 por ano. Somnifix: ~US$ 330 por ano. Intake Breathing: ~US$ 240 por ano com as abas de reposição. Mute: ~US$ 435 por ano. Faixa total de ~US$ 20–435 por ano, dependendo do nível."
         }
       ]
+    },
+    "best-red-light-face-masks-2026": {
+      "title": "Melhores máscaras LED de luz vermelha (2026): comparativo",
+      "description": "A ONDA classifica as dez melhores máscaras de luz vermelha de 2026: Omnilux, CurrentBody, Dr. Dennis Gross e mais. Irradiância, onda e evidências.",
+      "intro": "As máscaras faciais de luz vermelha em 2026 vão de linhas de fototerapia com longa trajetória (Omnilux Contour, LightStim) e a marca de um dermatologista (Dr. Dennis Gross SpectraLite) a aparelhos premium de marcas de consumo (CurrentBody Series 2, HigherDOSE, TheraFace, Lumara Viso). O status na FDA é neutro nas nossas notas: verificamos os 510(k) da Omnilux (K191629), LightStim (K120775; modelo atual K261482), TheraFace (K230293) e HigherDOSE (K241933); a Dr. Dennis Gross afirma que sua máscara é liberada. O K-beauty coreano (JOVS) e os portáteis de mão econômicos (Solawave) cobrem a faixa de entrada; novos formatos híbridos (Shark CryoGlow, resfriamento + LED) completam a categoria. Pontuamos as dez máscaras mais confiáveis de 2026 nos mesmos seis eixos: irradiância, cobertura de comprimentos de onda, número de LEDs e cobertura facial, evidências clínicas, conforto e custo-benefício.",
+      "verdict": "CurrentBody Series 2 e Lumara Viso dividem o primeiro lugar na pontuação ONDA (8,0 cada, empatadas também no desempate por evidências): a CurrentBody é o padrão do mercado de consumo, com aba integrada para o pescoço, e a Lumara é a maximalista de especificações, com 470 LEDs e três comprimentos de onda. A Omnilux Contour Face (7,8) tem o melhor conforto em silicone flexível e uma irradiância declarada moderada e plausível, mas nenhum ensaio da própria Contour foi publicado, e a página do produto alega uma comprovação clínica que não existe para esta máscara, o que lhe custa um ajuste de 0,3 ponto por honestidade de marketing. A Dr. Dennis Gross acrescenta espectro duplo vermelho + azul com o respaldo de uma marca dermatológica. O LightStim for Wrinkles é a opção de mão com quatro comprimentos de onda por $249, se você aceitar o uso ativo com a mão. A Solawave Wand cobre a faixa de entrada de $169. Escolha com três perguntas: conforto e preço vs. acabamento de consumo, máscara vs. aparelho de mão, um ou vários comprimentos de onda.",
+      "content": "## Como classificamos\n\nCada máscara foi pontuada segundo a [metodologia de análises](/reviews/methodology) publicada pela ONDA: seis critérios ponderados, com a honestidade da irradiância e a base de evidências clínicas tendo peso de propósito — as maiores fontes de confusão para o usuário na categoria são especificações de irradiância de pico infladas e estudos financiados pelas marcas vendidos como evidência clínica.\n\nAs dez foram avaliadas a partir da documentação dos fabricantes, das declarações dos fabricantes sobre o status na FDA e de análises independentes dermatológicas e de consumo de 2026, e não por testes práticos.\n\n## Melhores máscaras de luz vermelha: qual você deve comprar?\n\nTrês perguntas de compra resolvem a categoria com clareza:\n\n**O que mais importa para você são as evidências?** Nenhum dos aparelhos que verificamos nesse aspecto tem um ensaio independente próprio: os estudos publicados da Omnilux são de outros modelos da Omnilux, os únicos dados da LightStim sobre rugas são um estudo não publicado da empresa com um modelo anterior, e não foram encontrados estudos independentes dos aparelhos da CurrentBody, Dr. Dennis Gross ou Lumara. Escolha por conforto, honestidade na dose e preço.\n\n**Máscara ou aparelho de mão?** Máscara (dose passiva no rosto inteiro, praticidade no uso diário): Omnilux, CurrentBody, Dr. Dennis Gross, Lumara, TheraFace, HigherDOSE, JOVS, Shark CryoGlow. De mão (posicionamento ativo, uma área por vez): LightStim, Solawave.\n\n**Qual faixa de orçamento?** Menos de $250: Solawave Wand ($169), LightStim ($249). $300–$500: HigherDOSE ($349), Shark CryoGlow ($349), Omnilux ($395), JOVS ($399), Dr. Dennis Gross ($455), CurrentBody ($470). $600+: TheraFace ($649), Lumara Viso ($650).\n\nCurrentBody e Lumara dividem o primeiro lugar na pontuação geral (8,0), com a Omnilux logo atrás (7,8); a CurrentBody é o padrão do mercado de consumo; LightStim e Solawave cobrem as alternativas de mão; a Lumara vence o segmento de especificações máximas.",
+      "picks": {
+        "currentbody-series-2": {
+          "award": "Melhor líder do mercado de consumo",
+          "takeaway": "Maior base de clientes + aba integrada para o pescoço + construção caprichada em silicone — o padrão de consumo."
+        },
+        "lumara-viso": {
+          "award": "Melhores especificações premium",
+          "takeaway": "470 LEDs + três comprimentos de onda + silicone flexível com aba para o pescoço — a maximalista de especificações."
+        },
+        "omnilux-contour-face": {
+          "award": "",
+          "takeaway": "Silicone flexível (a mais confortável na nossa avaliação) + o par padrão vermelho / infravermelho próximo, liberada pela FDA para rugas — nenhum ensaio publicado da própria máscara."
+        },
+        "dr-dennis-gross-spectralite": {
+          "award": "Melhor marca dermatológica",
+          "takeaway": "Espectro duplo vermelho + azul + respaldo dermatológico da Dr. Dennis Gross (liberada pela FDA, segundo a marca)."
+        },
+        "theraface-mask": {
+          "award": "Melhor para o ecossistema Therabody",
+          "takeaway": "Três comprimentos de onda com controle por app — aproveita o cruzamento com a marca Theragun."
+        },
+        "higherdose-red-light-face-mask": {
+          "award": "Melhor experiência de marca de consumo",
+          "takeaway": "Controle simples + silicone flexível por um preço acessível de $349 — a entrada no ecossistema HigherDOSE."
+        },
+        "lightstim-for-wrinkles": {
+          "award": "",
+          "takeaway": "Aparelho de mão de quatro comprimentos de onda por $249, liberado pela FDA (modelo atual K261482) — nenhum ensaio publicado do próprio aparelho."
+        },
+        "jovs-dpl-photofacial-mask": {
+          "award": "Melhor custo-benefício multionda",
+          "takeaway": "Sete modos de comprimento de onda com engenharia K-beauty por um preço intermediário de $399."
+        },
+        "shark-cryoglow": {
+          "award": "Melhor formato híbrido",
+          "takeaway": "Resfriamento ativo combinado com LED vermelho + azul — formato inovador para inchaço + luz."
+        },
+        "solawave-wand-4-in-1": {
+          "award": "Melhor entrada econômica",
+          "takeaway": "Aparelho de mão de $169 com LED vermelho + microcorrente + calor + massagem — a entrada na categoria."
+        }
+      },
+      "faq": [
+        {
+          "q": "Qual é a melhor máscara de luz vermelha em 2026?",
+          "a": "CurrentBody Series 2 e Lumara Viso dividem a maior pontuação ONDA (8,0): a CurrentBody como referência do mercado de consumo com aba para o pescoço, a Lumara por ter mais LEDs e três comprimentos de onda. A Omnilux Contour Face (7,8) pelo conforto do silicone flexível e pela liberação da FDA para rugas; nenhum ensaio de qualquer dessas máscaras em si foi publicado. A Dr. Dennis Gross para espectro duplo com respaldo de marca dermatológica."
+        },
+        {
+          "q": "A Omnilux vale o preço premium?",
+          "a": "Pelo conforto, sim. Não pague a mais pelas evidências: nenhum ensaio da própria Contour foi publicado, e os estudos publicados da Omnilux são de outros modelos. Para praticidade de consumo, a CurrentBody Series 2 cobre mais casos de uso por um preço comparável."
+        },
+        {
+          "q": "Máscara de luz vermelha ou aparelho de mão: qual é melhor?",
+          "a": "Máscaras entregam dose passiva no rosto inteiro, sem posicionamento ativo — mais práticas no uso diário. Aparelhos de mão (LightStim, Solawave) tratam uma área por vez e exigem uso ativo. A maioria dos usuários começa com uma máscara; nenhum dos aparelhos de mão da nossa classificação tem ensaios publicados do próprio aparelho."
+        },
+        {
+          "q": "Quais comprimentos de onda uma máscara de luz vermelha deve ter?",
+          "a": "O par clínico padrão é vermelho de 633 nm (superfície, colágeno) + infravermelho próximo de 830 nm (tecido mais profundo). Algumas máscaras acrescentam azul de 415 nm (acne), âmbar de 590 nm (pigmentação) ou verde. Mais comprimentos de onda não é necessariamente melhor — o par padrão vermelho + NIR tem a base de evidências dermatológicas mais sólida."
+        },
+        {
+          "q": "A liberação da FDA importa mesmo?",
+          "a": "Menos do que o marketing sugere. A liberação da FDA (510(k)) significa que a FDA considerou um aparelho substancialmente equivalente a outro já comercializado legalmente, para um uso específico; não é aprovação da FDA nem prova de que o aparelho funciona. Verificamos duas liberações: Omnilux Contour (510(k) K191629, venda livre para rugas, liberada por equivalência com uma máscara LED anterior sem dados clínicos) e LightStim for Wrinkles (K120775; modelo atual K261482, liberado com testes de segurança e técnicos sem dados clínicos). A Dr. Dennis Gross afirma que seu aparelho é liberado; não verificamos o número do 510(k). Muitas máscaras de consumo são apenas registradas ou listadas na FDA, o que significa que a empresa informou à FDA que o aparelho existe; isso não é liberação nem aprovação e não diz nada sobre qualidade."
+        },
+        {
+          "q": "Quanto a categoria custa de verdade em 3 anos?",
+          "a": "A maioria das máscaras é compra única, sem assinatura. Omnilux Contour Face: $395. CurrentBody Series 2: $470. Dr. Dennis Gross: $455. Lumara Viso: $650. TheraFace: $649. HigherDOSE: $349. LightStim: $249. JOVS: $399. Solawave: $169. Shark CryoGlow: $349. Escolha o aparelho uma vez e use-o por mais de 5 anos."
+        }
+      ]
+    },
+    "best-red-light-therapy-panels-2026": {
+      "title": "Melhores painéis de terapia de luz vermelha (2026): comparativo",
+      "description": "A ONDA classifica os dez melhores painéis de luz vermelha de 2026 (Joovv, Mito Red, PlatinumLED e mais) por irradiância, ondas, EMF e custo-benefício.",
+      "intro": "A categoria de luz vermelha de consumo é conhecida por alegações de irradiância infladas, EMF e cintilação escondidos atrás da ficha técnica e preços premium que nem sempre a construção justifica. A ONDA pontuou os dez painéis mais confiáveis de 2026 nos mesmos seis eixos — verificação independente da irradiância, cobertura de comprimentos de onda, controle de EMF e cintilação, área de tratamento coberta, evidências e custo-benefício. A medição independente tem peso de propósito. A lista vai da referência premium (Joovv) à opção econômica para biohackers (Hooga) e ao especialista em articulações (Kineon), para que as escolhas se leiam como um único mapa ordenado do mercado.",
+      "verdict": "O Mito Red MitoPRO 1500X vence no geral — seis comprimentos de onda, irradiância verificada e garantia de 3 anos por $1,299. O Joovv Solo 3.0 continua sendo a referência modular com a construção mais limpa, mas a $1,699 agora custa $400 a mais por um espectro mais estreito. O PlatinumLED BIOMAX 600 lidera em número de comprimentos de onda e transparência sobre EMF no tamanho médio; o GembaRed Vesta é o especialista em controle de EMF; o RubyLx Lyra Pro é para quem precisa de cada especificação verificada em laboratório. O Infraredi entrega tamanho classe MitoPRO com desconto; o BioLight cobre o ponto de valor intermediário; o Hooga é a entrada econômica que realmente cumpre suas especificações. O Bon Charge atende compradores de consumo da UE/Austrália; o Kineon Move+ é outra classe de produto, para uso localizado em articulações. Escolha pelo eixo que mais importa — cobertura, espectro, EMF, evidências ou preço.",
+      "content": "## Como classificamos\n\nCada painel foi pontuado segundo a [metodologia de análises](/reviews/methodology) publicada pela ONDA: seis critérios ponderados, com a verificação da irradiância e o custo-benefício tendo o maior peso. Cobertura de comprimentos de onda, controle de EMF e cintilação, área de tratamento coberta e evidências pesam 15% cada. A medição independente tem peso de propósito porque a categoria é dominada por especificações infladas dos fabricantes.\n\nOs dez painéis foram avaliados a partir da documentação dos fabricantes, de relatórios de testes de irradiância e EMF de terceiros publicados em sites de análises para biohackers, da literatura publicada sobre fotobiomodulação que embasa as alegações dos aparelhos e de análises independentes de 2026. A ONDA não os testou na prática. Considere as notas um ponto de partida baseado em evidências.\n\n## Melhores painéis de terapia de luz vermelha: qual você deve comprar?\n\nA categoria se divide em três faixas honestas e um especialista:\n\n**Referência premium ($1,000+):** Joovv Solo 3.0, Mito Red MitoPRO 1500, PlatinumLED BIOMAX 600, GembaRed Vesta, RubyLx Lyra Pro. Todos trazem especificações verificadas, controle de EMF e construção séria. Escolha pelo eixo que importa para você — equilíbrio geral e espectro (MitoPRO 1500X), modularidade (Joovv), número de comprimentos de onda (PlatinumLED), EMF (GembaRed), transparência nos testes (RubyLx).\n\n**Valor intermediário (~$900–$1,050):** BioLight Pro 900, Infraredi Pro Max 2.0 (o Pro 1500 foi descontinuado), Bon Charge Red Light Panel Max ($999). Painéis sólidos de quatro comprimentos de onda com a maior parte das especificações premium por um preço bem menor. A troca é uma marca menos madura e menos verificação independente.\n\n**Econômico para biohackers (menos de $400):** Hooga HG500 ($359). Dois comprimentos de onda, especificações honestas, suporte de porta e kit para pendurar incluídos (suporte móvel à parte). A entrada que transformou a luz vermelha de consumo numa categoria abaixo de $400.\n\n**Especialista em articulações:** Kineon Move+. Outra classe de produto — uma faixa de laser mais LED para dor articular. Não substitui um painel.\n\nEscolha a faixa e o eixo. A categoria é pequena o bastante para que estes dez painéis cubram praticamente todo o mercado de consumo sério em 2026.",
+      "picks": {
+        "platinumled-biomax-600": {
+          "award": "Melhor espectro de comprimentos de onda",
+          "takeaway": "Sete comprimentos de onda e testes de EMF de terceiros publicados por $1,049 — o líder em espectro."
+        },
+        "mito-red-mitopro-1500": {
+          "award": "Melhor no geral",
+          "takeaway": "MitoPRO 1500X: painel grande de seis comprimentos de onda, garantia de 3 anos — $400 mais barato que o Joovv, por $1,299."
+        },
+        "rubylx-lyra-pro": {
+          "award": "Melhor transparência nos testes",
+          "takeaway": "Cada especificação publicada verificada de forma independente em laboratório — o painel mais testado da categoria de consumo."
+        },
+        "joovv-solo-3": {
+          "award": "Melhor sistema modular",
+          "takeaway": "Modular, irradiância verificada e EMF limpo — a referência empilhável, mas agora por $1,699."
+        },
+        "infraredi-pro-1500": {
+          "award": "Melhor valor em painel grande",
+          "takeaway": "Cobertura de meio corpo classe MitoPRO por $300 a menos — a troca é uma marca mais nova."
+        },
+        "gembared-vesta": {
+          "award": "Melhor controle de EMF",
+          "takeaway": "Construção totalmente blindada com o menor EMF desta lista — projetada por um fundador do setor."
+        },
+        "biolight-pro-900": {
+          "award": "Melhor valor intermediário",
+          "takeaway": "Painel médio de quatro comprimentos de onda por menos de $1,000, com suporte e montagem de porta incluídos."
+        },
+        "hooga-hg500": {
+          "award": "Melhor opção econômica",
+          "takeaway": "Especificações verificadas de dois comprimentos de onda por $349 — a entrada econômica para biohackers."
+        },
+        "bon-charge-red-light-panel": {
+          "award": "Melhor para compradores da UE / Austrália",
+          "takeaway": "Painel voltado ao bem-estar, com construção consistente, de uma marca de consumo consolidada na UE/Austrália."
+        },
+        "kineon-move-plus": {
+          "award": "Melhor para uso localizado em articulações",
+          "takeaway": "Faixa de laser mais LED para fotobiomodulação de joelho, cotovelo e ombro — listada na FDA, não liberada."
+        }
+      },
+      "faq": [
+        {
+          "q": "Qual é o melhor painel de terapia de luz vermelha em 2026?",
+          "a": "O Mito Red MitoPRO 1500X vence no geral — seis comprimentos de onda, irradiância verificada, $1,299. O Joovv Solo 3.0 ($1,699) é a escolha premium modular e empilhável. O Hooga HG500 é a entrada econômica. Escolha pelo eixo (construção, espectro, EMF, preço) que mais importa."
+        },
+        {
+          "q": "Quanta irradiância um painel de luz vermelha realmente precisa?",
+          "a": "Os estudos usam uma ampla faixa de densidades de potência, e mais não é melhor: a fototerapia muitas vezes mostra uma resposta à dose em que \"menos pode ser mais\", e painéis domésticos raramente entregam a dose usada nos estudos. Os fabricantes costumam citar a irradiância de pico a 0 polegadas — que não é uma distância real de tratamento. Procure o número a 6 polegadas e compare com medições independentes. A maioria dos painéis desta lista entrega 40–70 mW/cm² a 6 polegadas."
+        },
+        {
+          "q": "Quais comprimentos de onda importam: 660 nm ou 850 nm?",
+          "a": "Os dois. 660 nm (vermelho) é o padrão para pele e tecido superficial; 850 nm (infravermelho próximo) penetra mais fundo para uso em músculos e articulações. A convenção entre biohackers é querer os dois; alguns painéis acrescentam 630, 810, 830 ou 940 nm para cobertura mais ampla. A combinação padrão 660 + 850 basta para a maioria dos usos."
+        },
+        {
+          "q": "Painéis de terapia de luz vermelha são aprovados pela FDA?",
+          "a": "Não. Nenhum dos painéis desta lista é aprovado pela FDA. Joovv e Mito Red afirmam que o Solo 3.0 e o atual MitoPRO 1500X são registrados na FDA como dispositivos Classe II, e a Bon Charge diz o mesmo do seu painel. Registro e listagem só significam que a empresa informou à FDA que o aparelho existe; não são liberação nem aprovação, nem selo de qualidade. A liberação (510(k)) é uma etapa separada: a FDA considera um aparelho substancialmente equivalente a outro já no mercado, para um uso específico. O Kineon Move+ tem apenas listagem Classe II — nenhuma liberação 510(k) foi encontrada. Os demais são vendidos como aparelhos de bem-estar de consumo; a literatura sobre fotobiomodulação não prova que algum painel doméstico específico funcione."
+        },
+        {
+          "q": "Qual a importância de EMF e cintilação em painéis de luz vermelha?",
+          "a": "Real, mas controversa. O EMF (campo eletromagnético) da fonte de alimentação e a frequência de cintilação do driver de LED são exposições biológicas que se somam à própria luz. Painéis premium (Joovv, GembaRed, PlatinumLED) publicam testes de EMF e cintilação de terceiros e projetam o hardware para minimizar os dois. Para quem é sensível a isso, o GembaRed Vesta é a construção mais limpa. Para a maioria, painéis que atendem ao limite de <0,5 mG a 6\" e informam a frequência de cintilação são aceitáveis."
+        },
+        {
+          "q": "Qual painel de luz vermelha tem o melhor custo-benefício?",
+          "a": "O Hooga HG500 por $359 — especificações verificadas na faixa econômica. No ponto de valor intermediário, o BioLight Pro 900 ($899) ou o Infraredi Pro Max 2.0 (sucessor do descontinuado Pro 1500; $1,019 em promoção, $1,199 de preço de tabela) oferecem hardware comparável ao MitoPRO 1500X ($1,299) por menos."
+        }
+      ]
+    },
+    "best-pemf-devices-2026": {
+      "title": "Melhores aparelhos PEMF (2026): comparativo",
+      "description": "A ONDA classifica os melhores aparelhos PEMF de 2026: Bemer, Healthy Wave, Pulse Centers, Curatron e mais. Intensidade de campo, estudos e custo-benefício.",
+      "intro": "Em 2026, o hardware de campos eletromagnéticos pulsados se dividiu em três faixas claras: tapetes premium com sinal proprietário (Bemer, iMRS), tapetes de consumo multimodalidade (Healthy Wave, HigherDOSE) e sistemas de bobina clínicos / portáteis (Pulse Centers, Curatron, MagnaWave). A nova faixa de vestíveis (Resona Health VIBE por $299) abre uma porta de entrada abaixo de $500 que não existia três anos atrás. Pontuamos os dez sistemas mais buscados de 2026 nos mesmos seis eixos: intensidade de campo, pesquisa sobre a forma de onda, construção, programabilidade, formato e custo-benefício.",
+      "verdict": "O Healthy Wave Multi-Wave fica em primeiro lugar na pontuação ONDA: PEMF mais infravermelho distante e luz vermelha por menos da metade do preço do Bemer, com a programabilidade mais completa da categoria. O Bemer Classic Evo tem a melhor construção, sistema de aplicadores e marca, e a lista de estudos mais longa, embora a maioria dos estudos seja ligada ao fabricante e ensaios controlados independentes não tenham encontrado diferença em relação ao controle. O Pulse Centers Pulse XL Pro domina o nicho de bobinas clínicas de alta intensidade. O Resona Health VIBE, por $299, redefine a faixa de entrada — quem tem curiosidade sobre PEMF não precisa mais investir mais de $2,000 para experimentar a modalidade. Escolha com três perguntas: sinal proprietário e construção (Bemer), combinação de modalidades (Healthy Wave) ou nível de compromisso (Resona VIBE).",
+      "content": "## Como classificamos\n\nCada sistema foi pontuado segundo a [metodologia de análises](/reviews/methodology) publicada pela ONDA: seis critérios ponderados, com intensidade de campo e pesquisa sobre a forma de onda tendo peso de propósito — as maiores fontes de confusão para o usuário na categoria são alegações de intensidade infladas e marketing de formas de onda proprietárias sem respaldo de pesquisa independente. O que a pesquisa mostra e o que não mostra está resumido em [Terapia PEMF — as evidências](/science/evidence/pemf).\n\nOs dez foram avaliados a partir da documentação dos fabricantes, das bases de dados da FDA e de análises independentes de consumidores e clínicos de 2026, e não por testes práticos. Um registro na FDA é só uma listagem; uma liberação 510(k) cobre um uso declarado e não comprova benefícios à saúde. Estimuladores médicos PEMF de crescimento ósseo eram aprovados por aprovação pré-comercialização (PMA) até maio de 2026 e, desde então, são dispositivos de classe II (510(k)) — nenhum dos aparelhos de consumo abaixo é um deles.\n\n## Melhores aparelhos PEMF: qual você deve comprar?\n\nTrês perguntas de compra resolvem a categoria com clareza:\n\n**Você quer um sinal proprietário com lista própria de estudos?** Sim → Bemer Classic Evo (muitos estudos, em sua maioria pequenos ou ligados ao fabricante; ensaios controlados independentes não encontraram diferença em relação ao controle). Não → Healthy Wave, iMRS, OMI (frequências PEMF comuns, sem ensaios dos próprios aparelhos).\n\n**Qual formato?** Tapete de corpo inteiro (Bemer, Healthy Wave, OMI, HigherDOSE). Bobina localizada (Pulse Centers, MagnaWave, Curatron). Sob o colchão, vendido para o sono (EarthPulse). Vestível (Resona VIBE, OlyLife).\n\n**Qual faixa de orçamento?** Menos de $500: vestível Resona VIBE, bastão OlyLife. $1,000–$2,500: OMI, HigherDOSE, EarthPulse, Healthy Wave (tamanho completo $2,495; tamanhos menores a partir de $995). $3,000–$5,000: iMRS, Curatron. $5,000+: Bemer, Pulse Centers, MagnaWave (o compacto Semi 10 a partir de $8,360; linha de $5,500–$39,660).\n\nO Bemer lidera a faixa premium em construção e marca; o Healthy Wave vence na combinação de modalidades; Pulse Centers e MagnaWave dominam o nicho de bobinas clínicas; o Resona VIBE redefine a faixa de entrada por $299.",
+      "picks": {
+        "healthy-wave-multi-wave": {
+          "award": "Melhor no geral",
+          "takeaway": "PEMF + infravermelho distante + luz vermelha por menos que o Bemer — a melhor cobertura de modalidades por sessão."
+        },
+        "pulse-centers-pulse-xl-pro": {
+          "award": "Melhor clínico de alta intensidade",
+          "takeaway": "A maior intensidade de campo acessível ao consumidor por meio de aplicadores de bobina, vendido principalmente a clínicas. Não há ensaios independentes deste sistema."
+        },
+        "curatron-3d": {
+          "award": "Melhor com aplicador duplo (tapete + bobina)",
+          "takeaway": "Tapete + bobina num único controlador, com parâmetros transparentes e preço intermediário. Registro na FDA é uma listagem, não uma liberação."
+        },
+        "imrs-prime": {
+          "award": "Melhor alternativa ao Bemer",
+          "takeaway": "Sistema multiaplicador de engenharia suíça por um preço bem menor que o Bemer."
+        },
+        "bemer-classic-evo": {
+          "award": "",
+          "takeaway": "O tapete PEMF mais conhecido e o sinal individual mais estudado, construção premium, marca com décadas de história. A maioria dos estudos é ligada ao fabricante; sua liberação da FDA é para condicionamento muscular não médico."
+        },
+        "omi-full-body-mat": {
+          "award": "Melhor tapete intermediário",
+          "takeaway": "Tapete simples de modalidade única por um preço acessível de $1,500–$2,000. Não é liberado pela FDA para consolidação óssea."
+        },
+        "earthpulse-sleep-on-command": {
+          "award": "Melhor focado em sono",
+          "takeaway": "Instalação sob o colchão com ajustes de sono Schumann e delta divulgados pelo fabricante, por $899 — nenhum ensaio controlado mostra sono melhor."
+        },
+        "magnawave-mini": {
+          "award": "Melhor bobina portátil",
+          "takeaway": "Bobina com décadas de uso em recuperação equina e esportiva, numa maleta portátil — mas nenhum “Mini” é vendido hoje; o compacto Semi 10 começa em $8,360, perto do preço do Pulse Centers."
+        },
+        "resona-health-vibe": {
+          "award": "Melhor vestível / faixa de entrada",
+          "takeaway": "Vestível de $299 com mais de 130 protocolos — o jeito de menor compromisso para explorar o PEMF."
+        },
+        "higherdose-pemf-mat": {
+          "award": "Melhor marca de consumo",
+          "takeaway": "Experiência de uso caprichada e combinação de modalidades por um preço acessível de $1,295 — experiência acima de profundidade técnica."
+        }
+      },
+      "faq": [
+        {
+          "q": "Qual é o melhor aparelho PEMF em 2026?",
+          "a": "O Healthy Wave Multi-Wave no geral — multimodalidade (PEMF + IR + luz vermelha) por menos da metade do preço do Bemer. O Bemer Classic Evo pela construção e pelo sinal mais estudado, embora as evidências sejam em sua maioria ligadas ao fabricante e ensaios controlados independentes não tenham encontrado diferença em relação ao controle. Pulse Centers para bobina de alta intensidade. Resona Health VIBE como entrada vestível de $299."
+        },
+        {
+          "q": "O Bemer vale o preço premium?",
+          "a": "Só se você valoriza a construção e a marca. O Bemer cita mais estudos do que qualquer outro PEMF de consumo, mas a maioria é pequena ou ligada ao fabricante, e ensaios controlados independentes não encontraram diferença em relação ao controle. Para combinar modalidades ou para intensidade pura, as alternativas entregam mais por menos."
+        },
+        {
+          "q": "Tapete PEMF ou bobina: qual comprar?",
+          "a": "Tapetes para sessões passivas de recuperação de corpo inteiro (Bemer, Healthy Wave, OMI). Bobinas para tratamento localizado de alta intensidade (Pulse Centers, MagnaWave, Curatron). A maioria dos usuários começa com um tapete; a recuperação esportiva séria passa para as bobinas."
+        },
+        {
+          "q": "PEMF funciona mesmo?",
+          "a": "Em parte. Ensaios com aparelhos clínicos sugerem alívio da dor a curto prazo na osteoartrite e na dor lombar; para fraturas que não consolidam, uma revisão Cochrane considerou as evidências inconclusivas. Estimuladores ósseos médicos são dispositivos de prescrição, não estes tapetes. Para bem-estar, recuperação e sono, as evidências são fracas."
+        },
+        {
+          "q": "Qual é o aparelho PEMF confiável mais barato?",
+          "a": "O Resona Health VIBE por $299 — formato vestível, mais de 130 protocolos predefinidos, componente PEMF real. A melhor porta de entrada para quem tem curiosidade sobre PEMF antes de se comprometer com um tapete. O EarthPulse Sleep on Command ($899) é vendido para o sono, mas sono melhor não aparece nos ensaios."
+        },
+        {
+          "q": "Quanto o Bemer custa de verdade em 3 anos?",
+          "a": "Bemer Classic Evo: $5,490 em pagamento único, sem assinatura. Mais ou menos o mesmo que o Pulse Centers Pulse XL Pro na configuração de bobina de entrada. O Healthy Wave Multi-Wave ($995–$2,495 conforme o tamanho) ou o iMRS Prime ($4,000) oferecem cobertura multiaplicador ou multimodalidade com custo em 3 anos bem menor."
+        }
+      ]
+    },
+    "best-infrared-sauna-2026": {
+      "title": "Melhores saunas infravermelhas e tradicionais (2026): comparativo",
+      "description": "A ONDA classifica as dez melhores saunas de 2026: Sunlighten, Clearlight, HigherDose, SaunaSpace e mais. Fonte de calor, construção, EMF e custo-benefício.",
+      "intro": "O mercado de saunas domésticas em 2026 se divide por fonte de calor — IR de espectro completo (Sunlighten, Clearlight, Sun Home, Therasage), IR próximo incandescente (SaunaSpace), convecção finlandesa tradicional (Almost Heaven, Finnleo) — e por formato, da cabine ao cobertor portátil. Pontuamos as dez opções mais confiáveis nos mesmos seis eixos: fonte de calor, construção, EMF, formato, evidências e custo-benefício.",
+      "verdict": "A Sunlighten mPulse vence no geral pelo IR de espectro completo real de 3 comprimentos de onda com EMF baixo verificado. A Clearlight Sanctuary 2 é a alternativa premium apoiada pela Jacuzzi; a SaunaSpace Faraday é a especialista em IR próximo para biohackers; a Finnleo Hallmark é a referência premium em sauna tradicional de interior. A Sun Home Equinox é a aposta de espectro completo intermediária-premium; a Almost Heaven Salem é a opção tradicional para área externa; Therasage e JNH cobrem os nichos de cabine IR intermediária e econômica, respectivamente. HigherDose Blanket e Relax Sauna Portable cobrem a faixa portátil. Escolha primeiro pela fonte de calor (IR de espectro completo vs. IR próximo vs. tradicional), depois pelo formato e pelo orçamento.",
+      "content": "## Como classificamos\n\nCada dispositivo foi pontuado segundo a [metodologia de análises](/reviews/methodology) publicada pela ONDA: seis critérios ponderados, com a qualidade da fonte de calor e o custo-benefício tendo o maior peso, porque determinam a experiência real de sauna e a economia de posse a longo prazo.\n\nAs dez foram avaliadas a partir da documentação dos fabricantes, de análises independentes de 2026 e da literatura publicada sobre sauna e terapia IR, e não por testes práticos.\n\n## Melhor sauna infravermelha e sauna: qual você deve comprar?\n\nTrês perguntas de compra resolvem a categoria com clareza:\n\n**Qual fonte de calor você quer?** IR de espectro completo → Sunlighten mPulse, Clearlight Sanctuary 2, Sun Home Equinox, Therasage. IR próximo incandescente → SaunaSpace Faraday. Só IR distante → JNH Joyous (cabine econômica), HigherDose Blanket (portátil), Relax Sauna (portátil). Convecção finlandesa tradicional → Finnleo Hallmark (interior), Almost Heaven Salem (barril externo).\n\n**Qual formato?** Cabine (4×4 ft ou mais) → Sunlighten, Clearlight, Sun Home, JNH, Therasage. Barril externo → Almost Heaven Salem. Tradicional de interior → Finnleo Hallmark. Portátil → HigherDose Blanket, Relax Sauna Portable.\n\n**Qual faixa de orçamento?** Menos de $1,000 → HigherDose Blanket. $1,500–$3,500 → JNH Joyous, Therasage. $4,000–$6,500 → Almost Heaven Salem (barril para 2 pessoas, $4,485 de preço de tabela com aquecedor incluído), Sun Home Equinox, SaunaSpace Faraday. $5,000–$10,000+ → Sunlighten mPulse, Clearlight Sanctuary 2, Finnleo Hallmark.\n\nA categoria é madura; essas dez opções cobrem todo o panorama de escolhas do consumidor.",
+      "picks": {
+        "sunlighten-mpulse": {
+          "award": "Melhor no geral (IR de espectro completo)",
+          "takeaway": "IR real de 3 comprimentos de onda, construção premium em cedro, EMF baixo verificado."
+        },
+        "finnleo-hallmark": {
+          "award": "Melhor tradicional de interior",
+          "takeaway": "Sauna tradicional de interior fabricada na Finlândia com engenharia Helo — a base de evidências publicada mais profunda."
+        },
+        "almost-heaven-salem": {
+          "award": "Melhor tradicional externa",
+          "takeaway": "Barril de cedro vermelho para 2 pessoas fabricado nos EUA, com aquecedor elétrico de 6 kW e vapor löyly — a sauna tradicional mais barata desta lista ($4,485 de preço de tabela)."
+        },
+        "saunaspace-faraday": {
+          "award": "Melhor para biohackers (IR próximo)",
+          "takeaway": "IR próximo incandescente com blindagem EMF de gaiola de Faraday completa. Diferente do IR de espectro completo."
+        },
+        "sun-home-equinox": {
+          "award": "Melhor IR intermediária-premium",
+          "takeaway": "IR de espectro completo com cromoterapia incluída, por um preço menor que Sunlighten / Clearlight."
+        },
+        "higherdose-blanket-v4": {
+          "award": "Melhor portátil",
+          "takeaway": "Cobertor de IR distante — a entrada mais acessível na sauna IR, sem compromisso de instalação."
+        },
+        "clearlight-sanctuary-2": {
+          "award": "Melhor alternativa IR premium",
+          "takeaway": "IR de espectro completo apoiado pela Jacuzzi, com garantia vitalícia no aquecedor, um pouco mais barato que a Sunlighten."
+        },
+        "therasage-thera-sauna-personal": {
+          "award": "Melhor IR intermediária",
+          "takeaway": "IR de espectro completo com preço intermediário e posicionamento de marca para biohackers."
+        },
+        "jnh-lifestyles-joyous": {
+          "award": "Melhor cabine econômica",
+          "takeaway": "Sauna de cabine de IR distante em tsuga canadense — a opção de cabine IR confiável mais barata."
+        },
+        "relax-sauna-portable": {
+          "award": "Melhor portátil vertical",
+          "takeaway": "Sauna portátil de IR distante de cadeira e tenda, com longa trajetória, para quem não fica confortável deitado num cobertor."
+        }
+      },
+      "faq": [
+        {
+          "q": "Qual é a melhor sauna infravermelha em 2026?",
+          "a": "Para IR de espectro completo com rigor verificado, a Sunlighten mPulse — emissão real de 3 comprimentos de onda, EMF baixo, construção premium em cedro. A Clearlight Sanctuary 2 é a alternativa apoiada pela Jacuzzi. Para apenas IR próximo, a SaunaSpace Faraday. Para sauna finlandesa tradicional, a Finnleo Hallmark (interior) ou a Almost Heaven Salem (externa)."
+        },
+        {
+          "q": "Sauna infravermelha é melhor que sauna finlandesa tradicional?",
+          "a": "Mecanismos diferentes, bases de evidências diferentes. A convecção finlandesa tradicional tem a pesquisa publicada mais profunda (estudos observacionais de coortes finlandesas sobre saúde cardiovascular e demência — associações, não causalidade). A pesquisa sobre sauna infravermelha é mais recente, menor e mais restrita, e os resultados das coortes finlandesas não se aplicam às cabines infravermelhas. Veja [as evidências sobre sauna e calor](/science/evidence/sauna-heat-exposure). Qualquer uma é uma escolha razoável; escolha pela preferência de fonte de calor e pelas condições de instalação."
+        },
+        {
+          "q": "Qual é a diferença entre IR próximo e IR de espectro completo?",
+          "a": "O IR próximo (700–1200 nm) fica mais perto dos comprimentos de onda da luz solar natural e, segundo os fabricantes, penetra mais fundo no tecido; um benefício à saúde disso não foi demonstrado. O espectro completo (próximo + médio + distante) acrescenta aquecimento de comprimento de onda mais longo, que basicamente faz você suar. A SaunaSpace usa apenas IR próximo por meio de lâmpadas incandescentes; Sunlighten e Clearlight entregam espectro completo por meio de elementos de aquecimento combinados."
+        },
+        {
+          "q": "Devo me preocupar com EMF em saunas infravermelhas?",
+          "a": "O EMF varia bastante entre marcas e configurações. Marcas premium como Sunlighten e SaunaSpace publicam números de EMF baixo na posição sentada; a Clearlight divulga EMF/ELF baixo, então peça o relatório de testes atual. Marcas econômicas muitas vezes não publicam — presuma valores mais altos, a menos que estejam documentados. A SaunaSpace Faraday tem o controle de EMF mais rigoroso (gaiola de Faraday completa)."
+        },
+        {
+          "q": "Dá para instalar uma sauna infravermelha dentro de casa?",
+          "a": "Sim — a maioria das saunas de cabine IR de espectro completo (Sunlighten, Clearlight, Sun Home, JNH) é projetada para instalação interna. Exige espaço dedicado mínimo de 4×4 ft, 110V ou 220V conforme o tamanho e ventilação adequada. Saunas tradicionais de convecção (Finnleo) exigem um planejamento de ventilação mais elaborado."
+        },
+        {
+          "q": "Como um cobertor de sauna se compara a uma sauna de cabine?",
+          "a": "Cobertores de sauna (HigherDose) aplicam IR em contato com o corpo em sessões de ~40 minutos, mas apenas em comprimentos de onda de IR distante e com menor cobertura da superfície corporal do que as cabines. Saunas de cabine atingem temperaturas internas do corpo mais altas e acrescentam opções de espectro completo. Cobertores são o formato certo para quem não tem espaço; cabines, para quem quer a experiência completa de sauna."
+        }
+      ]
     }
   },
   "criteria": {
@@ -2293,7 +3432,14 @@
     "open-data": "Dados abertos e acesso para desenvolvedores",
     "adhesion-comfort": "Adesão e conforto",
     "breathing-mechanism": "Mecanismo e abordagem respiratória",
-    "material-safety": "Segurança dos materiais e tolerância da pele"
+    "material-safety": "Segurança dos materiais e tolerância da pele",
+    "mechanism": "Mecanismo de estimulação",
+    "protocols": "Flexibilidade de protocolos",
+    "filtration-technology": "Tecnologia e grau de filtragem",
+    "cadr-coverage": "CADR e cobertura do ambiente",
+    "build-noise": "Qualidade de construção e ruído",
+    "smart-features": "Recursos inteligentes e sensores",
+    "maintenance-cost": "Troca de filtros e manutenção"
   },
   "categories": {
     "pemf": "Dispositivos PEMF",
@@ -2307,7 +3453,9 @@
     "hrv-wearable": "Monitores de HRV",
     "sauna": "Saunas e saunas de infravermelho",
     "vagus-stim": "Estimuladores do nervo vago",
-    "breathing-aid": "Fita bucal e respiração nasal"
+    "breathing-aid": "Fita bucal e respiração nasal",
+    "red-light-mask": "Máscaras faciais de luz vermelha",
+    "air-purifier": "Purificadores de ar"
   },
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {
@@ -3839,6 +4987,235 @@
         }
       ],
       "content": "## Resumo\n\nOs dois são dilatadores nasais premium. O Intake é magnético externo. O Mute é um stent interno de polímero. Mecanismos diferentes, perfis de tolerância diferentes.\n\n## Quando escolher o Intake Breathing?\n\nSe você quer uma dilatação magnética externa premium sem inserção interna, o Intake é a escolha certa. Confortável desde a primeira noite, custo anual menor, recomendado por James Nestor.\n\n## Quando escolher o Mute Nasal Dilator?\n\nSe você tolera dispositivos internos e quer o mecanismo mais forte, com estudos clínicos publicados sobre fluxo de ar, o Mute é a escolha certa. Invisível por fora, a dilatação mecânica mais direta."
+    },
+    "muse-s-athena-vs-mendi": {
+      "title": "Muse S Athena vs Mendi: comparativo (2026)",
+      "description": "Muse S Athena vs Mendi: a faixa de treino cerebral EEG + fNIRS contra o treinador de foco fNIRS simples. Mais dados e sono ou o hábito mais fácil.",
+      "intro": "Os dois são usados na testa para treinar o cérebro, mas medem coisas diferentes. O Muse S Athena é o aparelho de consumo mais completo: combina EEG com fNIRS, adiciona monitoramento do sono e oferece neurofeedback em áudio em tempo real. O Mendi é propositalmente mais simples: só fNIRS (fluxo sanguíneo pré-frontal), exibido como uma única barra estilo jogo, sem assinatura e quase sem curva de aprendizado. É profundidade e versatilidade contra o hábito mais fácil possível.",
+      "verdict": "Completo e rico contra simples e fácil. O Muse S Athena vence em medição (EEG + fNIRS), monitoramento do sono e versatilidade; o Mendi vence em simplicidade, preço e criação de hábito para o treino puro de foco. Escolha o Muse se quer o aparelho mais completo e capaz; o Mendi se só quer um treinador de foco fácil, mais barato e baseado em jogo.",
+      "bestForA": "Escolha o Muse S Athena se quer a faixa de treino cerebral mais completa: EEG mais fNIRS, monitoramento do sono e neurofeedback em tempo real numa faixa com a qual dá para dormir.",
+      "bestForB": "Escolha o Mendi se quer o jeito mais simples e barato de criar um hábito diário de treino de foco, sem assinatura e sem curva de aprendizado.",
+      "axes": [
+        {
+          "name": "Medição",
+          "note": "O Muse S Athena combina EEG (atividade elétrica do cérebro) com fNIRS (fluxo sanguíneo): a primeira faixa de consumo a fazer as duas coisas. O Mendi é só fNIRS, que é menos detalhado que o EEG."
+        },
+        {
+          "name": "Monitoramento do sono",
+          "note": "O Muse S Athena é uma faixa macia com a qual dá para dormir, com monitoramento do sono baseado em EEG. O Mendi é só um treinador de foco: não monitora o sono."
+        },
+        {
+          "name": "Simplicidade e hábito",
+          "note": "O Mendi é o aparelho com que é mais fácil criar um hábito: uma única barra visual, útil desde a primeira sessão, sem curva de aprendizado. O Muse oferece mais, o que também significa mais coisa para aprender."
+        },
+        {
+          "name": "Assinatura",
+          "note": "Nenhum obriga a assinar: o Muse S Athena não tem taxa obrigatória e o Mendi é compra única. Empate."
+        },
+        {
+          "name": "Preço",
+          "note": "Mendi: $379 de preço de tabela (muitas vezes com desconto). Muse S Athena: $474.99. O Mendi é mais barato para o treino puro de foco."
+        },
+        {
+          "name": "Versatilidade",
+          "note": "O Muse cobre meditação, foco e sono com dados mais ricos; o Mendi faz uma coisa só (treino de foco pré-frontal) e faz de forma simples."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Muse S Athena ou Mendi: qual comprar?",
+          "a": "O Muse S Athena é o aparelho mais completo: EEG mais fNIRS, monitoramento do sono e neurofeedback em tempo real para meditação, foco e sono, por $474.99. O Mendi é um treinador de foco fNIRS mais simples e barato ($379 de tabela, muitas vezes com desconto) com uma barra estilo jogo e sem curva de aprendizado. Escolha o Muse por profundidade e versatilidade, o Mendi pelo hábito de foco mais fácil."
+        },
+        {
+          "q": "Qual a diferença entre EEG e fNIRS nesses aparelhos?",
+          "a": "O EEG mede a atividade elétrica do cérebro; o fNIRS mede mudanças no fluxo sanguíneo/oxigenação. O Muse S Athena usa os dois (mais detalhado); o Mendi usa só fNIRS, que é mais simples, porém menos detalhado. Para dados cerebrais mais ricos, Muse; para um sinal de foco fácil, Mendi."
+        },
+        {
+          "q": "Qual é melhor para o sono?",
+          "a": "O Muse S Athena: é uma faixa macia com a qual dá para dormir, com monitoramento do sono baseado em EEG. O Mendi é só um treinador de foco e não foi feito para o sono."
+        }
+      ],
+      "content": "## Resumo rápido\n\nO [Muse S Athena](/reviews/muse-s-athena) é a faixa mais completa: EEG mais fNIRS, monitoramento do sono e neurofeedback; o [Mendi](/reviews/mendi) é um treinador de foco fNIRS simples e mais barato, com uma barra estilo jogo e sem curva de aprendizado.\n\n## Quando o Muse S Athena é a escolha certa?\n\nVocê quer o aparelho de treino cerebral mais completo: medição mais rica, monitoramento do sono e versatilidade para meditação, foco e sono.\n\n## Quando o Mendi é a escolha certa?\n\nVocê quer o jeito mais simples e barato de criar um hábito diário de foco, sem assinatura e sem curva de aprendizado.\n\n## Também vale comparar\n\nContra a opção EEG gamificada, veja [Muse 2 vs FocusCalm vs Mendi](/reviews/vs/muse-2-vs-focuscalm-vs-mendi) e [Muse S Athena vs Muse 2](/reviews/vs/muse-s-athena-vs-muse-2). Panorama completo: [melhores faixas EEG](/reviews/eeg-headsets)."
+    },
+    "theragun-pro-plus-vs-hypervolt-2-pro": {
+      "title": "Theragun PRO Plus vs Hypervolt 2 Pro: comparativo (2026)",
+      "description": "Theragun PRO Plus vs Hypervolt 2 Pro: duelo de pistolas de massagem premium 2026. Força de bloqueio, amplitude, app e a diferença de $200.",
+      "intro": "Theragun PRO Plus e Hypervolt 2 Pro são as duas pistolas de massagem premium que os usuários mais comparam. As duas entregam 60 lbs de força de bloqueio, as duas usam motores brushless silenciosos e as duas têm integração completa com app. As diferenças principais: a Theragun tem 16 mm de amplitude (contra 14 mm da Hypervolt), 2 anos de garantia (contra 1 ano) e preço $200 mais alto.",
+      "verdict": "Mesmo teto de especificação em força de bloqueio. Theragun PRO Plus para a maior amplitude e a garantia mais longa. Hypervolt 2 Pro para a mesma força de bloqueio + menos peso por $200 a menos.",
+      "bestForA": "Escolha a Theragun PRO Plus se quer a maior amplitude (16 mm), 2 anos de garantia e o ecossistema Therabody.",
+      "bestForB": "Escolha a Hypervolt 2 Pro se quer força de bloqueio comparável por $200 a menos, com menos peso e o histórico com atletas da NBA/NFL.",
+      "axes": [
+        {
+          "name": "Força de bloqueio",
+          "note": "As duas 60 lbs. Empate no teto de pressão de percussão."
+        },
+        {
+          "name": "Amplitude",
+          "note": "Theragun: 16 mm. Hypervolt: 14 mm. Percussão 2 mm mais profunda na Theragun."
+        },
+        {
+          "name": "Peso",
+          "note": "Hypervolt: ~2,6 lbs. Theragun: ~2,9 lbs. A Hypervolt é mais leve para sessões com uma mão só."
+        },
+        {
+          "name": "Ruído",
+          "note": "Hypervolt: 48–52 dB. Theragun: 50–55 dB. A Hypervolt é um pouco mais silenciosa."
+        },
+        {
+          "name": "App / ecossistema",
+          "note": "As duas têm apps completos com rotinas guiadas. O app da Therabody é um pouco mais refinado e se integra com o TheraFace."
+        },
+        {
+          "name": "Garantia",
+          "note": "Theragun: 2 anos. Hypervolt: 1 ano. A Theragun tem o dobro do período de garantia."
+        },
+        {
+          "name": "Preço",
+          "note": "Hypervolt 2 Pro: $399. Theragun PRO Plus: $599. Hypervolt $200 mais barata."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Theragun PRO Plus ou Hypervolt 2 Pro: qual é melhor?",
+          "a": "Mesmo teto de força de bloqueio. A Theragun vence em amplitude (+2 mm) e garantia (+1 ano). A Hypervolt vence em peso, ruído e preço $200 menor. Decida se os 2 mm de amplitude + o ano extra de garantia valem $200."
+        },
+        {
+          "q": "2 mm a mais de amplitude fazem diferença de verdade?",
+          "a": "Para quem busca especificamente tecido profundo: sim, um pouco. Para a maioria dos usuários em rotinas diárias de recuperação: não de forma significativa."
+        },
+        {
+          "q": "Qual tem o melhor app?",
+          "a": "Os dois empatam em rotinas guiadas e integração Bluetooth. O app da Therabody é um pouco mais refinado e se integra ao ecossistema TheraFace + TheraGun. O app da Hyperice é mais limpo e faz menos pressão para vender produtos do ecossistema."
+        },
+        {
+          "q": "Qual o custo total de propriedade?",
+          "a": "Theragun PRO Plus: $599. Hypervolt 2 Pro: $399. A garantia de 1 ano da Hypervolt significa possíveis reparos pagos do próprio bolso depois do primeiro ano, contra a cobertura de 2 anos da Theragun."
+        }
+      ],
+      "content": "## Resumo rápido\n\nAs duas são pistolas de massagem premium com 60 lbs de força de bloqueio. A Theragun PRO Plus tem 16 mm de amplitude + 2 anos de garantia. A Hypervolt 2 Pro tem 14 mm de amplitude + 1 ano de garantia por $200 a menos.\n\n## Quando a Theragun PRO Plus é a escolha certa?\n\nSe você quer a maior amplitude (16 mm) e a garantia mais longa da categoria, a Theragun é a opção certa. O ecossistema e o histórico da Therabody somam valor.\n\n## Quando a Hypervolt 2 Pro é a escolha certa?\n\nSe você quer força de bloqueio comparável por $200 a menos, a Hypervolt é a opção certa. Mais leve, mais silenciosa e com histórico com atletas da NBA/NFL."
+    },
+    "eight-sleep-pod-5-vs-sleep-number-climate360": {
+      "title": "Eight Sleep Pod 5 vs Sleep Number Climate360 (2026): comparativo",
+      "description": "Eight Sleep Pod 5 vs Sleep Number Climate360: sistema biohacker contra cama inteligente com clima embutido. A ONDA compara resfriamento, sensores e custo.",
+      "intro": "O Eight Sleep Pod 5 e o Sleep Number Climate360 são as duas formas premium de comprar uma cama inteligente com regulação de temperatura em 2026, e vêm de mundos diferentes. A Eight Sleep é o sistema para biohackers — uma capa resfriada a água de duas zonas (mais uma manta superior no Ultra), monitoramento integrado da variabilidade da frequência cardíaca (HRV ou VFC) e o software adaptativo Autopilot sobre a sua cama. A Sleep Number é a marca de colchões tradicional, com clima e firmeza embutidos no próprio colchão e seu consolidado monitoramento SleepIQ. A escolha é entre um clima agressivo e focado em dados ou uma cama inteligente ajustável tudo em um.",
+      "verdict": "Camada de clima para biohackers contra cama inteligente tradicional. O Eight Sleep Pod 5 vence em potência de resfriamento, profundidade de HRV e software adaptativo; o Sleep Number Climate360 vence por ser uma única cama integrada com firmeza ajustável e conforto DualAir, sem capa para adicionar. Os dois têm preço premium. Escolha conforme você queira os dados de recuperação mais precisos ou uma cama inteligente ajustável completa.",
+      "bestForA": "Escolha o Eight Sleep Pod 5 se resfriamento agressivo de duas zonas, monitoramento integrado de HRV e o software adaptativo Autopilot são a prioridade — e você aceita a assinatura e a abordagem de capa sobreposta.",
+      "bestForB": "Escolha o Sleep Number Climate360 se você quer uma única cama inteligente integrada com firmeza ajustável (DualAir) e clima embutido, o consolidado monitoramento SleepIQ e nenhuma assinatura para a experiência básica.",
+      "axes": [
+        {
+          "name": "Controle de clima",
+          "note": "O sistema de duas zonas resfriado a água da Eight Sleep (mais a manta superior do Ultra) resfria com mais força e precisão do que a camada de temperatura embutida da Sleep Number, que é mais suave e menos agressiva."
+        },
+        {
+          "name": "Profundidade do monitoramento",
+          "note": "A Eight Sleep lidera em HRV e no detalhe das fases do sono com os insights do Autopilot. O SleepIQ da Sleep Number é maduro e confiável, mas mais de nível consumidor — menos focado em recuperação que o do Pod."
+        },
+        {
+          "name": "Conforto ajustável",
+          "note": "O ponto forte da Sleep Number: firmeza ajustável DualAir por lado e uma cama que também se articula. O Pod é uma camada de clima/monitoramento sobre o colchão que você já tem; ele não muda a firmeza."
+        },
+        {
+          "name": "Integração",
+          "note": "O Climate360 é uma só cama — colchão, firmeza e clima integrados, nada para adicionar. O Pod 5 é uma capa (mais hub, mais base opcional) adicionada a um colchão existente."
+        },
+        {
+          "name": "Software e automação",
+          "note": "O agente de sono Autopilot 4.0 do Pod 5 (Apple/Google Health, programação por fases, resumo matinal) é mais adaptativo que o app do SleepIQ, focado em relatórios."
+        },
+        {
+          "name": "Assinatura e custo",
+          "note": "Sleep Number Climate360 ~$5,500+ sem assinatura obrigatória para o uso básico. Pod 5 Ultra ~$6,099 mais a assinatura contínua do Autopilot. A Sleep Number evita a cobrança recorrente."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Eight Sleep Pod 5 ou Sleep Number Climate360: qual comprar?",
+          "a": "Compre o Pod 5 se você quer o resfriamento mais agressivo, o monitoramento de HRV e do sono mais profundo e software adaptativo — e aceita a assinatura. Compre o Climate360 se você quer uma cama inteligente completa com firmeza ajustável e clima embutido, o consolidado monitoramento SleepIQ e sem assinatura. Um é uma camada de clima focada em dados; o outro, uma cama ajustável tudo em um."
+        },
+        {
+          "q": "O Climate360 resfria tão forte quanto a Eight Sleep?",
+          "a": "Não. A regulação de temperatura embutida da Sleep Number é mais suave que o sistema de duas zonas resfriado a água da Eight Sleep. Se resfriamento agressivo e preciso é a prioridade, o Pod 5 é o aparelho de clima mais forte."
+        },
+        {
+          "q": "Qual tem o melhor monitoramento do sono?",
+          "a": "A Eight Sleep, pela profundidade em HRV e recuperação. O SleepIQ da Sleep Number é maduro e confiável, mas mais de nível consumidor — bom para tendências, menos focado em métricas de recuperação que o do Pod."
+        }
+      ],
+      "content": "> Atualização (setembro de 2026): a Eight Sleep substituiu o Pod 5 pelo Pod 6 em 23 de setembro de 2026 (a partir de $1,999 o Solo; $2,899 o queen de duas zonas). Os preços do Pod 5 abaixo são seus últimos preços de tabela — compare qualquer estoque restante do Pod 5 com os preços do Pod 6.\n\n## A versão curta\n\nDuas camas inteligentes premium, duas filosofias. O [Eight Sleep Pod 5](/reviews/eight-sleep-pod-5) é a camada de clima e monitoramento para biohackers — resfriamento agressivo de duas zonas, HRV em profundidade, Autopilot adaptativo — adicionada à sua cama, com assinatura. O [Sleep Number Climate360](/reviews/sleep-number-climate360) é uma cama inteligente tradicional tudo em um, com firmeza ajustável e clima embutidos no colchão, e o consolidado monitoramento SleepIQ.\n\n## Quando o Eight Sleep Pod 5 é a escolha certa?\n\nQuando potência de resfriamento, profundidade de HRV e software adaptativo são a prioridade e você quer que a sua cama gerencie ativamente a recuperação. A assinatura é o preço de entrada.\n\n## Quando o Sleep Number Climate360 é a escolha certa?\n\nQuando você quer uma única cama inteligente integrada — firmeza ajustável por lado mais clima, nada para sobrepor — com monitoramento confiável e sem assinatura para a experiência básica.\n\n## Também vale comparar\n\nPara o caminho só de clima e sem assinatura, veja [Pod 5 vs ChiliPad Dock Pro](/reviews/vs/eight-sleep-pod-5-vs-chilipad-dock-pro). Panorama completo: [melhores sistemas inteligentes de climatização do sono](/reviews/smart-sleep-climate)."
+    },
+    "oura-ring-4-vs-ultrahuman-ring-air-vs-ringconn-gen-2": {
+      "title": "Oura Ring 4 vs Ultrahuman vs RingConn: comparação (2026)",
+      "description": "Oura vs Ultrahuman vs RingConn: comparativo da ONDA dos principais anéis inteligentes. Acabamento premium, o mais leve e a maior bateria numa decisão.",
+      "intro": "Oura Ring 4, Ultrahuman Ring Air e RingConn Gen 2 são os três anéis inteligentes que biohackers não diabéticos mais colocam lado a lado na hora de escolher. Os três usam sensores ópticos parecidos para medir a variabilidade da frequência cardíaca (HRV ou VFC) noturna e o sono; as diferenças estão na maturidade do app, no formato e no custo de propriedade. Premium com assinatura contra sem assinatura com concessões.",
+      "verdict": "O Oura Ring 4 vence em maturidade do app e profundidade de análise. O Ultrahuman vence em formato e integração com o ecossistema. O RingConn vence em duração da bateria e custo total de propriedade.",
+      "bestForA": "Escolha o Oura Ring 4 se quer a experiência de anel inteligente mais refinada (o modelo de sono mais detalhado, o app mais maduro, uma década de evolução) e acha aceitável a assinatura de $5.99/mês.",
+      "bestForB": "Escolha o Ultrahuman Ring Air se o anel mais leve possível é o fator decisivo (2,4g), ou se você já tem ou pretende ter o CGM Ultrahuman M1 para integração nativa num ecossistema unificado.",
+      "bestForC": "Escolha o RingConn Gen 2 se quer monitoramento com anel inteligente sem assinatura, com a bateria mais duradoura da categoria (12 dias) e o menor custo de propriedade em 3 anos.",
+      "axes": [
+        {
+          "name": "Medição de HRV",
+          "note": "Os três usam PPG óptico. Só o Oura Ring 4 tem uma verificação independente contra ECG (gravações noturnas de 13 pessoas, Dial 2025); o Ultrahuman tem preprints feitos pela própria empresa e o RingConn um preprint (em outubro de 2026)."
+        },
+        {
+          "name": "Monitoramento do sono",
+          "note": "Praticamente iguais em precisão: nenhum tem validação independente das fases do sono (em outubro de 2026). As fases do sono do Oura só foram validadas em estudos financiados pelo fabricante (sem verificação independente do Ring 4); fases do sono de wearables ainda são estimativas. Ultrahuman e RingConn são competentes, mas ficam um degrau atrás no detalhamento das fases."
+        },
+        {
+          "name": "App e análises",
+          "note": "Oura: o mais maduro depois de uma década. Ultrahuman: refinado, mais novo, mais limitado. RingConn: limpo, mas o menos maduro dos três."
+        },
+        {
+          "name": "Peso do anel",
+          "note": "Ultrahuman Ring Air: 2,4g, o mais leve da categoria. RingConn Gen 2: ~3,0g. Oura: ~5g. O Ultrahuman é visivelmente mais confortável para usuários sensíveis."
+        },
+        {
+          "name": "Duração da bateria",
+          "note": "RingConn Gen 2: 10–12 dias dependendo do tamanho, a maior da categoria de anéis inteligentes. Oura: cerca de 4–7 dias. Ultrahuman: ~6 dias."
+        },
+        {
+          "name": "Confiabilidade da bateria (vários anos)",
+          "note": "O Ultrahuman tem relatos documentados de degradação da bateria depois de 12 meses. Oura e RingConn têm um histórico mais limpo ao longo de vários anos."
+        },
+        {
+          "name": "Exigência de assinatura",
+          "note": "Oura: assinatura de $5.99/mês para todos os recursos. RingConn e Ultrahuman: sem assinatura. O RingConn vence com folga no valor sem assinatura."
+        },
+        {
+          "name": "Integração com ecossistema",
+          "note": "Ultrahuman: pareamento nativo exclusivo com o CGM Ultrahuman M1. Oura: Apple Health e Levels. RingConn: Apple Health / Google Fit padrão."
+        },
+        {
+          "name": "Preço do hardware",
+          "note": "RingConn Gen 2: $299. Oura Ring 4: ~$349 + $5.99/mês. Ultrahuman: ~$400. O RingConn é o mais barato na compra."
+        },
+        {
+          "name": "Custo total em 3 anos",
+          "note": "RingConn: ~$299. Ultrahuman: ~$400. Oura: ~$565 com assinatura. O RingConn é claramente o mais barato em vários anos de uso."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Qual é o melhor anel inteligente: Oura, Ultrahuman ou RingConn?",
+          "a": "O Oura vence em maturidade do app e profundidade de análise: as fases do sono mais detalhadas entre os anéis de consumo (validadas só em estudos financiados pelo fabricante) e a experiência mais refinada. O Ultrahuman vence em peso do anel e integração com o ecossistema CGM. O RingConn vence em bateria e custo de propriedade em 3 anos. Escolha pelo critério que mais importa para você."
+        },
+        {
+          "q": "A assinatura do Oura vale a pena em comparação com anéis sem assinatura?",
+          "a": "Para a maioria sim, pela profundidade de análise, mas a diferença diminuiu. Em três anos o Oura custa ~$565 contra ~$299 do RingConn e ~$400 do Ultrahuman. Se você não vai usar muito o modelo de sono mais detalhado e a pontuação Readiness, a assinatura é difícil de justificar."
+        },
+        {
+          "q": "Qual é mais confortável para usar todo dia?",
+          "a": "O Ultrahuman Ring Air com 2,4g, o anel inteligente mais leve do mercado. O RingConn com ~3,0g também é bem mais leve que os ~5g do Oura. Para usuários sensíveis, as duas opções sem assinatura vencem em conforto."
+        },
+        {
+          "q": "A bateria do RingConn dura mesmo 12 dias?",
+          "a": "Avaliações independentes e a base de usuários confirmam, em geral, 10–12 dias por carga, cerca do dobro do Oura e do Ultrahuman. Bateria de vários dias significa menos lacunas de recarga nos dados noturnos de HRV."
+        },
+        {
+          "q": "Devo me preocupar com a confiabilidade da bateria do Ultrahuman?",
+          "a": "Existe um conjunto documentado de casos de degradação acelerada da bateria depois de cerca de 12 meses em parte das unidades. A Ultrahuman melhorou as condições de garantia em resposta. Oura e RingConn não tiveram problemas de confiabilidade equivalentes."
+        }
+      ],
+      "content": "## Resumo rápido\n\n> Observação: o Ultrahuman Ring Air está sob proibição de importação nos EUA (outubro de 2025, vitória de patente da Oura na ITC) e não pode ser comprado nos EUA. O sucessor da Ultrahuman disponível nos EUA é o [Ring Pro](/reviews/ultrahuman-ring-pro): sem assinatura e com bateria de ~15 dias. Se você está nos EUA, leia este comparativo com isso em mente.\n\nTrês pontos ótimos diferentes no equilíbrio de concessões dos anéis inteligentes. Oura pelo acabamento, Ultrahuman pelo formato + ecossistema CGM, RingConn pelo custo-benefício + bateria. A maioria dos usuários não precisa pensar muito além disso.\n\n## Quando o Oura Ring 4 é a escolha certa?\n\nSe você quer a experiência de anel de consumo mais madura e o modelo de sono mais detalhado, o Oura é a opção certa. A assinatura de $5.99/mês é o preço de entrada para uma década de evolução e as análises mais desenvolvidas da categoria. A maioria dos usuários ainda acaba aqui.\n\n## Quando o Ultrahuman Ring Air é a escolha certa?\n\nSe o peso do anel importa mais que tudo, o Ultrahuman é o anel inteligente mais leve do mercado. Se você usa ou pretende usar o CGM Ultrahuman M1, a visão nativa de ecossistema unificado é única. Só vá ciente da ressalva sobre a confiabilidade da bateria.\n\n## Quando o RingConn Gen 2 é a escolha certa?\n\nSe não ter assinatura é requisito obrigatório e você quer a bateria mais duradoura da categoria, o RingConn é a opção certa. Ele também é claramente o mais barato em três anos. Em troca, o app é um pouco menos maduro e a análise do sono menos profunda que a do Oura."
     }
   }
 }

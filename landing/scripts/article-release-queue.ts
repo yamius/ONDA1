@@ -491,6 +491,42 @@ export const EXTRA_RELEASE_QUEUE: Record<string, readonly { collection: 'reviews
   ],
 }
 
+/**
+ * Translation wave A (074, owner 2026-10-11): translated into all 11 languages at once.
+ * Released AFTER everything above (the whole existing round-robin order), so no existing date moves.
+ * Append-only: later waves add their own tail block after this one.
+ */
+export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'reviews' | 'comparisons' | 'h2h'; slug: string }[])[] = [
+  // wave A (074)
+  [
+  { collection: 'comparisons', slug: 'best-red-light-face-masks-2026' },
+  { collection: 'comparisons', slug: 'best-red-light-therapy-panels-2026' },
+  { collection: 'comparisons', slug: 'best-pemf-devices-2026' },
+  { collection: 'comparisons', slug: 'best-infrared-sauna-2026' },
+  { collection: 'reviews', slug: 'nurosym' },
+  { collection: 'reviews', slug: 'olylife-tera-p90-plus' },
+  { collection: 'reviews', slug: 'muse-s-athena' },
+  { collection: 'reviews', slug: 'mendi' },
+  { collection: 'reviews', slug: 'flow-neuroscience' },
+  { collection: 'reviews', slug: 'xen-by-neuvana' },
+  { collection: 'h2h', slug: 'muse-s-athena-vs-mendi' },
+  { collection: 'reviews', slug: 'theragun-pro-plus' },
+  { collection: 'reviews', slug: 'achedaway-pro' },
+  { collection: 'reviews', slug: 'hypervolt-2-pro' },
+  { collection: 'h2h', slug: 'theragun-pro-plus-vs-hypervolt-2-pro' },
+  { collection: 'reviews', slug: 'hoolest-verelief-prime' },
+  { collection: 'reviews', slug: 'eight-sleep-pod-5' },
+  { collection: 'reviews', slug: 'chilipad-dock-pro' },
+  { collection: 'h2h', slug: 'eight-sleep-pod-5-vs-sleep-number-climate360' },
+  { collection: 'reviews', slug: 'apple-watch-series-12' },
+  { collection: 'h2h', slug: 'oura-ring-4-vs-ultrahuman-ring-air-vs-ringconn-gen-2' },
+  { collection: 'reviews', slug: 'ekrin-b37' },
+  { collection: 'reviews', slug: 'iqair-healthpro-plus' },
+  { collection: 'reviews', slug: 'blueair-healthprotect-7770i' },
+  { collection: 'reviews', slug: 'zoe' },
+  ],
+]
+
 function addDays(iso: string, days: number): string {
   const d = new Date(`${iso}T00:00:00Z`)
   d.setUTCDate(d.getUTCDate() + days)
@@ -504,9 +540,16 @@ const streams: { lang: string; collection: PublishCollection; slug: string }[][]
 ])
 
 /** Round-robin across languages → one ordered site-wide list → dates by position. */
+let baseCount = 0
 export const RELEASE_QUEUE_ENTRIES: PublishEntry[] = (() => {
   const order: { lang: string; collection: PublishCollection; slug: string }[] = []
   const longest = Math.max(...streams.map((s) => s.length))
   for (let i = 0; i < longest; i++) for (const s of streams) if (s[i]) order.push(s[i])
+  baseCount = order.length
+  // Tail waves: each wave round-robins across languages and starts after everything before it.
+  for (const wave of TAIL_RELEASE_QUEUE) for (const r of wave) for (const lang of LANG_ORDER) order.push({ lang, collection: r.collection as PublishCollection, slug: r.slug })
   return order.map((e, i) => ({ ...e, publishOn: addDays(QUEUE_START, Math.floor(i / PER_BATCH) * EVERY_DAYS) }))
 })()
+
+/** Tail-wave entries (after the original stream). Category pilots must not publish these before their date. */
+export const TAIL_QUEUE_ENTRIES: PublishEntry[] = RELEASE_QUEUE_ENTRIES.slice(baseCount)

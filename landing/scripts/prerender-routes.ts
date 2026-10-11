@@ -33,6 +33,7 @@ import { localizedRouteVariants, metricRouteVariants, levelRouteVariants, partRo
 // Pages localized into all 5 languages — each gets its own prerendered HTML
 // per language. Generated from LOCALIZED_PAGES (single source of truth in i18n.ts).
 import { LOCALE_PUBLISH, type PublishCollection } from './locale-publish'
+import { TAIL_QUEUE_ENTRIES } from './article-release-queue'
 import { SCIENCE_INDEX, SCIENCE_KINDS, SCIENCE_LANGS } from '../src/generated/science-pages'
 const localizedRoutes = localizedRouteVariants()
 
@@ -775,9 +776,11 @@ const translatedReviewSlugs: Record<string, { reviews: Set<string>; comparisons:
     try {
       f = JSON.parse(readFileSync(join(__dirname, '..', 'public', 'locales', lang, 'reviews.json'), 'utf-8'))
     } catch { /* no reviews file */ }
+    // Tail-queue pages (scripts/article-release-queue.ts) stay unpublished until their date even in a live category pilot.
+    const held = new Set(TAIL_QUEUE_ENTRIES.filter((e) => e.lang === lang && e.publishOn > REVIEW_BUILD_DATE).map((e) => `${e.collection}:${e.slug}`))
     out[lang] = {
-      reviews: new Set(Object.entries(f.bodies ?? {}).filter(([, b]) => typeof b?.content === 'string').map(([s]) => s)),
-      comparisons: new Set(Object.keys(f.comparisons ?? {})),
+      reviews: new Set(Object.entries(f.bodies ?? {}).filter(([s, b]) => typeof b?.content === 'string' && !held.has(`reviews:${s}`)).map(([s]) => s)),
+      comparisons: new Set(Object.keys(f.comparisons ?? {}).filter((s) => !held.has(`comparisons:${s}`))),
     }
   }
   return out

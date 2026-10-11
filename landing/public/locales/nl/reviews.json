@@ -135,8 +135,52 @@
       "editorialAdjustment": "Eerlijkheid in marketing — de productpagina van de Vibe zegt ‘Ondersteund door 40+ gepubliceerde studies’ en ‘Bewezen door resultaten’, maar noemt de studies niet, en we vonden geen gepubliceerde studie naar de Vibe zelf (gecontroleerd in oktober 2026). Dit wordt hier gescoord, niet onder bewijs. (in het origineel: “Backed by 40+ Published Studies”)"
     },
     "apple-watch-series-12": {
-      "verdict": "De beste Apple Watch tot nu toe voor HRV: 24× vaker meten en een splitsing in Recovery- en Overall HRV — maar nog altijd in de eerste plaats een smartwatch, en de batterij concurreert nog steeds met 's nachts dragen.",
-      "productType": "Smartwatch"
+      "verdict": "De beste Apple Watch tot nu toe voor hartslagvariabiliteit (HRV): 24× vaker gemeten en een splitsing in Recovery en Overall HRV — maar nog steeds eerst een smartwatch, en de accu concurreert nog steeds met 's nachts dragen.",
+      "summary": "Het volledig nieuwe Health Sensing System van de Series 12 is de eerste Apple Watch-update die HRV serieus neemt: hij meet HRV tot 24× vaker, splitst het op in Recovery HRV en Overall HRV en voegt meldingen voor hypertensie toe. Daarmee dicht hij een groot deel van het gat met gespecialiseerde trackers — maar met ~1 dag accuduur blijft 's nachts dragen een compromis.",
+      "description": "ONDA-review van de Apple Watch Series 12 als HRV-tracker — het Health Sensing System neemt HRV eindelijk serieus. Nauwkeurigheid, sensor, slaap en prijs.",
+      "bestFor": "Ideaal als allround smartwatch waarvan de HRV nu bruikbaar is als persoonlijke trend (Recovery HRV zelf is niet gevalideerd).",
+      "testNote": "Evidence-based beoordeling — gebaseerd op Apples aankondiging en specificaties van september 2026, onafhankelijke hands-on reviews en gepubliceerde validatieliteratuur over Apple Watch-HRV. Niet zelf hands-on getest door ONDA.",
+      "productType": "Smartwatch",
+      "pros": [
+        "HRV 24× vaker gemeten, opgesplitst in Recovery en Overall",
+        "Volledig nieuw Health Sensing System: ECG plus optische hypertensiemeldingen",
+        "Native RMSSD in HealthKit — herstel-apps van derden kunnen het eindelijk uitlezen",
+        "Geen abonnement; de meest capabele alledaagse smartwatch hier"
+      ],
+      "cons": [
+        "~1 dag accuduur maakt consistente nachtelijke HRV nog steeds een compromis",
+        "Optische HRV aan de pols is nog niet onafhankelijk gevalideerd; een ECG-borstband zit dichter bij een lab-ECG (in rust, bij jonge gezonde volwassenen)",
+        "Recovery en Overall HRV zijn verschillende metrics — makkelijk te verwarren",
+        "Slaaptracking nog steeds achter op gespecialiseerde slaaptrackers"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "HRV wordt nu ongeveer elke 5 minuten gemeten (24× vaker) en opgesplitst in Recovery HRV en Overall HRV — een echte stap vooruit ten opzichte van de schaarse steekproeven van de Series 11, al blijft het optisch aan de pols in plaats van continu via ring of ECG.",
+        "sensor": "Het volledig nieuwe Health Sensing System: grotere, energiezuinige groene leds die elke 5 seconden de hartslag meten, een single-lead ECG en optische detectie van hypertensie. De sterkste sensorset van alle horloges hier.",
+        "sleep-accuracy": "De nachtelijke Vitale functies analyseren Recovery HRV nu ten opzichte van je persoonlijke baseline. Slaaptracking is verbeterd maar loopt nog achter op gespecialiseerde slaaptrackers, en de accu ontmoedigt elke nacht dragen.",
+        "data-access": "HealthKit is relatief open en schrijft nu een native RMSSD-type (heartRateVariabilityRMSSD) naast SDNN — zodat apps van derden eindelijk de herstelwaardige metric kunnen uitlezen.",
+        "wearability": "Tot ~24 uur accuduur (12 uur na 15 minuten snelladen) betekent nog steeds dagelijks opladen dat concurreert met nachtelijke metingen — het enige punt waar een ring of een horloge met meerdere weken accu duidelijk wint.",
+        "app-ux": "HRV wordt eindelijk zichtbaar gemaakt — een eigen sectie in de Hartslag-app met Recovery en Overall HRV — in plaats van weggestopt zoals bij de Series 11. Apple Gezondheid blijft hier de overzichtelijkste gezondheidsinterface.",
+        "value": "Vanaf $399, een eenmalige aankoop zonder abonnement, en voor dat geld een echt multifunctioneel apparaat met ECG en hypertensiemeldingen."
+      },
+      "content": "## Waar hij voorloopt\n\nDe Apple Watch Series 12, aangekondigd in september 2026, is de eerste Apple Watch waarvan de belangrijkste upgrade *gezondheidssensoren* zijn, niet het scherm of de chip. Het volledig nieuwe Health Sensing System gebruikt grotere, energiezuinige groene leds om elke vijf seconden de hartslag te meten en [HRV](/glossary/heart-rate-variability) tot **24× vaker** te meten dan voorheen — eerdere horloges legden het ongeveer eens per twee uur vast.\n\nBelangrijker nog: het verandert *welk* HRV-getal je krijgt. De Series 12 rapporteert er nu twee: **Recovery HRV** (voor dagelijkse stress en herstel, geanalyseerd ten opzichte van je persoonlijke baseline in de nachtelijke Vitale functies) en **Overall HRV** (voor bredere gezondheidsinzichten, waaronder hart- en vaatgezondheid). Apple heeft de formule achter geen van beide gepubliceerd. Onder de motorkap kreeg HealthKit een native type `heartRateVariabilityRMSSD` naast het al lang bestaande SDNN — dezelfde statistiek waarop Whoop, Oura en Garmin hun herstelscores baseren — zodat apps van derden eindelijk een RMSSD-waarde van een Apple Watch kunnen uitlezen. Daarnaast komen er **hypertensiemeldingen**: de optische sensor analyseert over periodes van 30 dagen hoe bloedvaten reageren op hartslagen. Voor de volledige uitleg van de twee-getallen-verandering, zie [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv).\n\n## Wat zijn de nadelen van de Apple Watch Series 12?\n\nDe natuurkunde is minder veranderd dan de software. Het blijft een **optische sensor aan de pols**, die voor een schone, continue nachtelijke HRV-registratie achterloopt op een ring aan de vinger of een ECG-borstband. En de accu — tot ongeveer 24 uur, waarbij 15 minuten snelladen zo'n 12 uur oplevert — betekent nog steeds dagelijks opladen dat concurreert met de hele nacht dragen; precies daar wint een ring of een Garmin met meerdere weken accu duidelijk. De twee HRV-getallen zijn ook makkelijk te verwarren: Recovery HRV valt hoger uit dan Overall HRV, en ze horen niet als één lijn in een grafiek.\n\n## Voor wie is de Apple Watch Series 12?\n\nKies de Series 12 als je de beste alledaagse smartwatch wilt en nu HRV wilt waar je echt iets mee kunt — de frequentere meting plus Recovery HRV ten opzichte van een baseline is een echte stap vooruit ten opzichte van de Series 11. Is een schone nachtelijke HRV-trend je enige prioriteit, dan past een ring die je elke nacht kunt dragen misschien beter (in nachtelijke opnames van 13 mensen, Dial 2025, hoorde de Oura Ring 4 bij de apparaten die het dichtst bij ECG zaten); zie de [beste HRV-trackers van 2026](/reviews/compare/best-hrv-trackers-2026).\n\n---\n\n## Achtergrondinformatie\n\nDe wetenschap achter waarom HRV het signaal is dat het volgen waard is — en hoe het lichaam het produceert.\n\n- [Waarom HRV op elk apparaat anders uitvalt](/articles/hrv-different-every-device) — SDNN vs RMSSD, en waarom getallen tussen merken niet overeenkomen\n- [Apple Watch Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) — de twee-getallen-verandering van 2026 uitgelegd\n- [Voorspelt HRV reactietijd en focus?](/articles/nervous-system-ping-latency) — wat HRV in rust wel en niet zegt over aandacht en zelfbeheersing\n",
+      "faq": [
+        {
+          "q": "Is de Apple Watch Series 12 beter voor HRV dan de Series 11?",
+          "a": "Ja, duidelijk. Het Health Sensing System van de Series 12 meet HRV ongeveer 24× vaker en splitst het op in Recovery HRV en Overall HRV, geanalyseerd ten opzichte van je baseline — een echte upgrade ten opzichte van de schaarse steekproeven van de Series 11. Ook toont hij HRV in de Hartslag-app in plaats van het weg te stoppen."
+        },
+        {
+          "q": "Hoeveel kost de Apple Watch Series 12 en heb je een abonnement nodig?",
+          "a": "De Series 12 begint bij $399 voor aluminium (titanium en keramiek kosten meer) en heeft geen abonnement nodig voor de HRV-, ECG- of hypertensiefuncties. Hij kwam uit op 18 september 2026."
+        },
+        {
+          "q": "Is de Apple Watch Series 12 nauwkeurig genoeg voor HRV, of kan ik beter een ring nemen?",
+          "a": "In studies naar eerdere modellen lag de hartslag dicht bij de referentie, al minder direct na krachttrainingssets bij een eerder model (Series 8) in één studie; in een studie naar eerdere modellen werd HRV onderschat, en Recovery HRV / Overall HRV zijn niet gevalideerd — gebruik het dus als persoonlijke trend. Om het naast Whoop of Oura te leggen kun je de RMSSD-waarde gebruiken die apps nu uit Apple Gezondheid kunnen uitlezen (Apple heeft niet bevestigd dat Recovery HRV RMSSD is). Een ECG-borstband zit dichter bij een lab-ECG (in rust, bij jonge gezonde volwassenen), en de ~1-daagse accu van de Watch concurreert met de hele nacht dragen."
+        },
+        {
+          "q": "Detecteert de Apple Watch Series 12 hoge bloeddruk?",
+          "a": "Hij voegt hypertensiemeldingen toe: de optische sensor analyseert over periodes van ongeveer 30 dagen hoe je bloedvaten reageren op hartslagen en kan wijzen op mogelijke hypertensie. Het is een screeningsignaal, geen diagnose en geen vervanging van een bloeddrukmeter."
+        }
+      ]
     },
     "whoop-5-0": {
       "verdict": "Een herstelcoach om je pols: continue nachtelijke HRV en scherp inzicht in belasting, achter een eeuwigdurend lidmaatschap.",
@@ -258,8 +302,52 @@
       "productType": "Smartwatch"
     },
     "muse-s-athena": {
-      "verdict": "De meest complete braintraining-headset voor consumenten — EEG plus fNIRS in een zachte band waarmee je kunt slapen.",
-      "productType": "EEG- + fNIRS-hoofdband voor consumenten (meditatie, slaap, focus)"
+      "verdict": "De meest complete consumenten-headset voor hersentraining — EEG plus fNIRS in een zachte band waarin je kunt slapen.",
+      "summary": "Muse S Athena is het vlaggenschip uit 2024 van Interaxon — een zachte, slaapvriendelijke hoofdband die vierkanaals droge EEG combineert met prefrontale fNIRS-oxygenatiemeting en slaaptracking 's nachts. Hij erft de volwassen meditatiebibliotheek van Muse, voegt de meest ambitieuze sensorfusie in de consumentencategorie toe en wordt, anders dan de meeste premiumapparaten, geleverd zonder verplicht abonnement. De beste allrounder in EEG / hersentraining in 2026.",
+      "description": "ONDA-review van de Muse S Athena — premium hoofdband van Interaxon met EEG, fNIRS en slaaptracking in één band. Signaal, inhoud, comfort en prijs.",
+      "bestFor": "Ideaal voor serieuze gebruikers van consumenten-hersentraining die de grootste inhoudsbibliotheek willen, inclusief slaaptracking.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op productdocumentatie van Interaxon, gepubliceerde validatieliteratuur over Muse-EEG en onafhankelijke reviews uit 2026. Niet zelf hands-on getest door ONDA.",
+      "productType": "Consumentenhoofdband met EEG + fNIRS (meditatie, slaap, focus)",
+      "pros": [
+        "EEG + fNIRS + slaap in één zachte band — uniek op de consumentenmarkt",
+        "De grootste bibliotheek voor hersentraining na tien jaar doorontwikkeling",
+        "Geen verplicht abonnement — de kernfuncties voor meditatie, slaap en focus werken zonder",
+        "De enige premium EEG-headset die comfortabel genoeg is om 's nachts mee te slapen"
+      ],
+      "cons": [
+        "Eigen SDK is beperkt — ontwikkelaars kiezen liever voor Neurosity Crown",
+        "Premiumprijs — ongeveer twee keer zo duur als de instap-Muse 2",
+        "Droge elektroden — prima voor consumentengebruik, niet van onderzoekskwaliteit",
+        "Sensorfusie (EEG + fNIRS) is in de interpretatie door de app nog in ontwikkeling"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Vier droge EEG-elektroden plus prefrontale fNIRS-optodes — de eerste consumentenheadset die beide signalen in één apparaat combineert. Het signaal blijft goed stabiel tijdens zittende en liggende sessies; een echte referentie van onderzoekskwaliteit is het niet.",
+        "training-content": "De grootste bibliotheek voor hersentraining in het consumentensegment — begeleide meditaties, ademwerk, slaapreizen, focussessies, stemmingsregistratie. Volwassen na tien jaar doorontwikkeling.",
+        "insights": "Rapporten per sessie labelen de sessietijd als kalm, neutraal of actief met Interaxons eigen algoritme; slaapfasen combineren EEG met beweging. De beste analyse na de sessie in dit overzicht.",
+        "comfort": "Zachte stoffen band ontworpen om 's nachts te dragen — de enige premium EEG-headset in dit overzicht waarin je realistisch gezien kunt slapen.",
+        "app-ux": "Verzorgde iOS-/Android-app met integratie van Apple Health en Google Fit. Volwassen ecosysteem na tien jaar Muse-releases.",
+        "open-data": "Export van ruwe EEG mogelijk via Muse Direct (app van derden), maar de eigen SDK van Interaxon is beperkt. Toegang voor ontwikkelaars loopt ver achter op Neurosity Crown.",
+        "value": "$474.99 voor de hardware, geen verplicht abonnement. Premiumprijs, maar het enige consumentenapparaat met EEG + fNIRS + slaap — de kernfuncties werken zonder abonnement, al vragen Smart Wakeup, de AI-coach en samengestelde programma's om Muse Premium."
+      },
+      "content": "## Waar hij in uitblinkt\n\nMuse S Athena is de meest complete consumentenheadset voor hersentraining in 2026. Interaxon behield alles wat de oorspronkelijke Muse-lijn sterk maakte — zachte hoofdband, grote meditatiebibliotheek, slaapvriendelijke vormfactor — en voegde twee dingen toe die bijna geen concurrent heeft: [prefrontale](/glossary/prefrontal-cortex) fNIRS-oxygenatiemeting naast de vierkanaals EEG, en expliciete indeling in slaapfasen — inclusief [diepe slaap (slow-wave sleep)](/glossary/slow-wave-sleep) — afgeleid van het EEG-signaal zelf. Die combinatie is echt nieuw in het consumentensegment; de modules voor meditatie, focus en slaap maken er allemaal gebruik van.\n\n## Wat zijn de nadelen van Muse S Athena?\n\nVoor ontwikkelaars en biohackers die toegang tot het ruwe signaal willen, is dit het verkeerde gereedschap. De eigen SDK is beperkt en Interaxon kiest consequent voor afwerking boven openheid; Muse Direct bestaat voor export van ruwe EEG, maar is van een derde partij en omslachtig. Ook de pure EEG-signaalkwaliteit is voldoende in plaats van onderzoekswaardig — dit zijn droge elektroden in een zachte band, geen klinische sensoren met gel.\n\n## Voor wie is Muse S Athena geschikt?\n\nKies Muse S Athena als je één consumentenapparaat wilt voor meditatie, focus en slaap, met de grootste inhoudsbibliotheek op de markt en zonder verplicht abonnement voor de kernfuncties. Is toegang tot ruwe EEG doorslaggevend, dan is Neurosity Crown de juiste keuze. Is de prijs doorslaggevend, dan dekt Muse 2 grotendeels hetzelfde meditatiegebruik voor de helft van het geld.\n\n---\n\n## Achtergrond\n\nDe neurowetenschap die deze headsets terugkoppelen — en wat het EEG-signaal wel en niet kan vertellen over mentale toestanden.\n\n- [Alfa-hersengolven: rust, creativiteit en flow](/articles/neural-bridge-alpha-flow-gateway) — wat het alfaritme doet, en wat alfa-headsets, apps en muziek wel en niet kunnen veranderen\n- [Acetylcholine als lens van de aandacht](/articles/acetylcholine-lens-neuro-mechanics) — de neurochemie achter focus\n- [Cognitieve architectuur: neurale doorvoer](/articles/cognitive-architecture-neural-throughput) — een metafoor voor hoeveel informatie de geest aankan\n",
+      "faq": [
+        {
+          "q": "Is de Muse S Athena het geld waard?",
+          "a": "De Muse S Athena is het waard voor serieuze gebruikers van consumenten-hersentraining. Hij combineert EEG, fNIRS en slaaptracking in één zachte band, biedt de grootste bibliotheek voor hersentraining na tien jaar doorontwikkeling en vraagt geen verplicht abonnement. Ontwikkelaars die ruwe data willen, kiezen misschien liever Neurosity Crown."
+        },
+        {
+          "q": "Wat kost de Muse S Athena?",
+          "a": "De Muse S Athena staat geprijsd op $474.99 voor de hoofdband, zonder verplicht abonnement: de kernfuncties werken zonder, maar Smart Wakeup, de AI-coach en samengestelde programma's vragen om Muse Premium. Dat is ongeveer twee keer zo duur als de instap-Muse 2. Je krijgt er EEG, fNIRS en slaaptracking in één zachte band voor."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Muse S Athena?",
+          "a": "De eigen SDK is beperkt, de premiumprijs is het dubbele van de Muse 2 en de droge elektroden zijn prima voor consumentengebruik maar niet van onderzoekskwaliteit. Ook de sensorfusie van EEG en fNIRS is nog in ontwikkeling wat betreft de interpretatie door de app."
+        },
+        {
+          "q": "Muse S Athena of Neurosity Crown: welke is beter?",
+          "a": "De Muse S Athena is beter voor begeleide hersentraining en slaap, met de grootste inhoudsbibliotheek en comfort voor de hele nacht. De Neurosity Crown is beter voor ontwikkelaars, met een open SDK en acht elektroden, maar kost ongeveer drie keer zoveel en heeft geen uitgebreide inhoudsbibliotheek."
+        }
+      ]
     },
     "muse-2": {
       "verdict": "De populairste EEG-hoofdband voor consumenten — volwassen inhoud, betaalbare prijs, de instap in de categorie.",
@@ -338,16 +426,104 @@
       "productType": "Klinische neurofeedback thuis (voorgeschreven)"
     },
     "mendi": {
-      "verdict": "Geen EEG — fNIRS-training van de prefrontale cortex in een eenvoudige gamevorm. Makkelijk in gebruik, smal gericht.",
-      "productType": "fNIRS-hoofdband voor prefrontale braintraining"
+      "verdict": "Geen EEG — fNIRS-training van de prefrontale cortex in een eenvoudige spelvorm. Makkelijk in gebruik, smal gericht.",
+      "summary": "Mendi is een in Zweden ontwikkelde hoofdband die de bloedoxygenatie van de prefrontale cortex meet via fNIRS (functionele nabij-infraroodspectroscopie) in plaats van EEG, en dat signaal gebruikt voor neurofeedback in spelvorm: houd de bal in de lucht door je aandacht vast te houden op de activiteit achter je voorhoofd. Hij staat in dit overzicht omdat hij meedoet in de koopoverweging rond consumenten-hersentraining, ook al is de meetmethode anders. Eenvoudiger dan EEG, makkelijker te leren, beperkter in reikwijdte.",
+      "description": "ONDA-review van Mendi — fNIRS-hoofdband (geen EEG) voor de prefrontale cortex met neurofeedback in spelvorm. Beoordeeld op signaal, inhoud en prijs.",
+      "bestFor": "Ideaal voor wie de eenvoudigste neurofeedbackervaring zoekt, puur gericht op prefrontale aandachtstraining.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op productdocumentatie van Mendi, de gepubliceerde literatuur over fNIRS-neurofeedback en onafhankelijke reviews uit 2026. Niet zelf hands-on getest door ONDA.",
+      "productType": "fNIRS-hoofdband voor prefrontale hersentraining",
+      "pros": [
+        "Neurofeedback in spelvorm — de makkelijkste leercurve in de categorie",
+        "Eén voorhoofdband — de meest comfortabele vormfactor voor focussessies",
+        "Geen abonnement nodig",
+        "fNIRS levert een ander type signaal dan EEG — kan passen bij gebruikers bij wie EEG niet werkte"
+      ],
+      "cons": [
+        "Geen EEG — fNIRS is een ander (en smaller) signaal",
+        "Meting van slechts één hersengebied (prefrontale cortex)",
+        "Geen meditatiebibliotheek of slaaptracking",
+        "Gesloten dataplatform — geen toegang voor ontwikkelaars"
+      ],
+      "scoreNotes": {
+        "signal-quality": "fNIRS-optodes boven de prefrontale cortex — meet veranderingen in bloedoxygenatie in plaats van elektrische activiteit. Meting van één gebied, eenvoudiger dan EEG maar minder informatierijk.",
+        "training-content": "Neurofeedback in spelvorm: een bal stijgt bij aanhoudende prefrontale activiteit. Eenvoudig programma, geen meditatiebibliotheek, geen slaap — pure focustraining.",
+        "insights": "Mendi’s eigen score per sessie plus trendgegevens over tijd. Minder analytische diepgang dan EEG-apparaten.",
+        "comfort": "Eenvoudige voorhoofdband — comfortabel voor sessies van 10–15 minuten, makkelijk op te zetten en af te doen.",
+        "app-ux": "Verzorgde iOS-/Android-app met een overzichtelijke, spelgedreven sessieflow.",
+        "open-data": "Gesloten systeem — geen export van ruwe data of SDK. Geen ontwikkelaarsplatform.",
+        "value": "$379 adviesprijs (vaak in de aanbieding), geen abonnement nodig. Goedkoper dan Muse S Athena, duurder dan Muse 2."
+      },
+      "content": "## Waar hij in uitblinkt\n\nMendi is de zachtste instap in neurofeedback. De fNIRS-sensor op het voorhoofd meet veranderingen in de bloedoxygenatie van de prefrontale cortex — een ander signaal dan EEG, eenvoudiger te interpreteren — en voert dat in één spel: een bal stijgt als het prefrontale oxygenatiesignaal oploopt en zakt als het daalt. Meer valt er niet te leren. Sessies zijn kort, de app is overzichtelijk en het apparaat is het comfortabelste in dit overzicht.\n\n## Wat zijn de nadelen van Mendi?\n\nMendi is ook de smalste instap. fNIRS is geen EEG — andere meetmethode, andere interpretatie, meting van slechts één gebied — en het platform biedt geen meditatiebibliotheek, geen slaaptracking en geen toegang voor ontwikkelaars. Voor gebruikers die meer willen dan pure prefrontale aandachtstraining past Mendi niet.\n\n## Voor wie is Mendi geschikt?\n\nKies Mendi als de eenvoudigst mogelijke neurofeedbackervaring precies is wat je zoekt, of als EEG-apparaten bij jou geen duidelijk signaal opleverden en een andere meetmethode het proberen waard is. Voor meer meditatie-aanbod: Muse S Athena of Muse 2. Voor echte EEG met toegang voor ontwikkelaars: Neurosity Crown of Emotiv Insight 2.\n\n---\n\n## Achtergrond\n\nDe neurowetenschap achter het signaal van Mendi — fNIRS meet de bloedoxygenatie in de prefrontale cortex, niet de elektrische hersenactiviteit — en wat feedbacktraining wel en niet kan.\n\n- [EEG-neurofeedback en consumentenheadsets](/science/evidence/eeg-neurofeedback) — hoe fNIRS verschilt van EEG, en wat geblindeerde feedbackstudies laten zien\n- [Ademhaling voor focus en aandacht](/articles/breathing-for-focus-and-attention) — eenvoudige manieren om je aandacht te stabiliseren zonder apparaat\n- [Digitale dementie en aandachtscontrole](/articles/digital-dementia-attentional-control) — aandacht weer opbouwen met feedbackgestuurde oefening\n",
+      "faq": [
+        {
+          "q": "Is Mendi het geld waard?",
+          "a": "Mendi is het waard als je de eenvoudigste neurofeedbackervaring wilt, gericht op prefrontale aandachtstraining. De spelvorm heeft de makkelijkste leercurve in de categorie, de voorhoofdband is comfortabel en er is geen abonnement. Een meditatiebibliotheek of slaaptracking zit er niet bij."
+        },
+        {
+          "q": "Wat kost Mendi?",
+          "a": "Mendi heeft een adviesprijs van $379 (vaak afgeprijsd, ongeveer $284 in een uitverkoop in september 2026) als eenmalige aankoop, zonder abonnement. Daarvoor krijg je de voorhoofdband en de neurofeedbacktraining in spelvorm, maar geen meditatiebibliotheek of slaaptracking."
+        },
+        {
+          "q": "Wat zijn de nadelen van Mendi?",
+          "a": "Mendi is geen EEG: het gebruikt fNIRS, een ander en smaller signaal, en meet slechts één gebied, de prefrontale cortex. Er is geen meditatiebibliotheek of slaaptracking, en het dataplatform is gesloten, zonder toegang voor ontwikkelaars."
+        },
+        {
+          "q": "Voor wie is Mendi het meest geschikt?",
+          "a": "Mendi is het meest geschikt voor wie de eenvoudigste neurofeedbackervaring zoekt, puur gericht op prefrontale aandachtstraining. Omdat fNIRS een ander signaal meet, kan het passen bij mensen bij wie EEG-headsets niet werkten, al vergelijkt geen enkele studie de twee hierop."
+        }
+      ]
     },
     "focuscalm": {
       "verdict": "EEG-hoofdband met begeleide inhoud — betaalbare prijs, degelijke app, het signaal van één kanaal beperkt de diepgang.",
       "productType": "EEG-hoofdband voor consumenten (focus- en rusttraining)"
     },
     "flow-neuroscience": {
-      "verdict": "Geen EEG — klinische tDCS tegen depressie, met de sterkste onderbouwing qua regelgeving en studies in deze lijst.",
-      "productType": "Door de FDA goedgekeurde (PMA) en CE-gemarkeerde tDCS-headset tegen depressie (in de VS alleen op recept)"
+      "verdict": "Geen EEG — klinische tDCS voor depressie, met de sterkste regelgevende en onderzoeksbasis in deze lijst.",
+      "summary": "Flow Neuroscience is een in Zweden ontwikkelde tDCS-headset (transcraniële gelijkstroomstimulatie) gecombineerd met een app met een gestructureerd cognitief-gedragstherapeutisch programma, geïndiceerd voor depressie (major depression). In de EU CE-gemarkeerd als medisch hulpmiddel klasse IIa en binnen de Britse NHS in sommige zorgpaden voorgeschreven; in de VS kreeg hij FDA-markttoelating (premarket approval, PMA P230024, 8 december 2025) voor matige tot ernstige depressie bij volwassenen die niet therapieresistent zijn, en is hij sinds september 2026 alleen op recept verkrijgbaar (fysiek of via telezorg). Geen EEG — Flow stimuleert in plaats van meet — maar hij speelt wel mee bij aankoopbeslissingen rond consumenten-hersentraining. De klinische referentie voor tDCS thuis in deze lijst (de hoofdstudie werd door Flow gefinancierd).",
+      "description": "ONDA-review van Flow Neuroscience — FDA-goedgekeurde, CE-gemarkeerde tDCS-headset voor depressie met therapie-app. Bewijs, programma’s en prijs.",
+      "bestFor": "Klinische tDCS-referentie — voor mensen met depressie die een apparaat voor thuis willen met regelgevende en onderzoeksbasis.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op productdocumentatie van Flow Neuroscience, de gepubliceerde onderzoeksgegevens over Flow-tDCS en onafhankelijke reviews uit 2026. Niet zelf hands-on getest door ONDA. Opgenomen als klinisch tDCS-referentiepunt in deze categorie.",
+      "productType": "FDA-goedgekeurde (PMA) en CE-gemarkeerde tDCS-headset voor depressie (in de VS alleen op recept)",
+      "pros": [
+        "FDA-markttoelating (dec. 2025) plus CE-gemarkeerd medisch hulpmiddel klasse IIa — de sterkste regelgevende basis in deze lijst",
+        "Echt gerandomiseerd onderzoeksbewijs voor depressie (waaronder een volledig op afstand uitgevoerde gerandomiseerde, sham-gecontroleerde studie in Nature Medicine (Woodham 2024))",
+        "Geïntegreerd gedragstherapieprogramma van 8 weken — gestructureerde inhoud",
+        "In delen van de Britse NHS voorgeschreven als optie binnen het depressiezorgpad"
+      ],
+      "cons": [
+        "Geen EEG — Flow stimuleert in plaats van meet; opgenomen voor redactionele volledigheid",
+        "Indicatie beperkt tot depressie; in de VS alleen op recept",
+        "Maandelijks abonnement bovenop de hardwarekosten",
+        "Gesloten platform — geen toegang voor ontwikkelaars of ruwe data"
+      ],
+      "scoreNotes": {
+        "signal-quality": "tDCS — transcraniële gelijkstroomstimulatie boven de dorsolaterale prefrontale cortex (het soort dat in klinische studies wordt gebruikt). Openbaar gemaakte stimulatieparameters (2 mA, sessies van 30 minuten); CE-gemarkeerd medisch hulpmiddel klasse IIa.",
+        "training-content": "Gestructureerd gedragstherapieprogramma van 8 weken gecombineerd met stimulatiesessies — de sterkste inhoudelijke structuur in deze lijst, omdat het rond een klinisch protocol is gebouwd.",
+        "insights": "Tracking van stemming en therapietrouw met gevalideerde schalen (PHQ-9). Minder gedetailleerd dan EEG-headsets — Flow volgt symptomen, geen hersensignaal.",
+        "comfort": "Stevige headset; zittende sessies van 30 minuten. Sommige gebruikers melden tijdens stimulatie een tijdelijk tintelend of jeukend gevoel op de hoofdhuid — goed gedocumenteerd en omkeerbaar.",
+        "app-ux": "Verzorgde app met dagelijkse check-ins en tracking van therapietrouw.",
+        "open-data": "Gesloten platform — klinisch programmaontwerp, geen ontwikkelomgeving.",
+        "value": "£399 (~$499) voor de hardware plus een maandelijks abonnement op de therapie-app in het VK. NHS-routes in sommige Britse regio's verlagen de eigen kosten. Prijs in de VS nog niet gepubliceerd."
+      },
+      "content": "## Waar hij voorloopt\n\nFlow Neuroscience is de klinische referentie voor tDCS thuis — het meest gereguleerde en best door onderzoek onderbouwde apparaat in deze lijst, al werd de belangrijkste gerandomiseerde studie (Woodham 2024) door Flow gefinancierd. In de EU CE-gemarkeerd als medisch hulpmiddel klasse IIa, met FDA-markttoelating (premarket approval, PMA P230024, 8 december 2025) voor matige tot ernstige depressie bij volwassenen (niet therapieresistent), gecombineerd met een gestructureerd gedragstherapieprogramma van acht weken en in delen van de Britse NHS voorgeschreven als optie binnen het depressiezorgpad. Sinds september 2026 is hij in de hele VS alleen op recept verkrijgbaar, na een fysieke of telezorgbeoordeling. Het gepubliceerde gerandomiseerde onderzoeksbewijs voor tDCS bij depressie is echt en groeit; de bijdrage van Flow is dat het in een protocol voor thuis is verpakt dat patiënten ook echt afmaken.\n\n## Wat zijn de nadelen van Flow Neuroscience?\n\nHet is geen EEG-headset. Flow stimuleert de dorsolaterale prefrontale cortex met 2 mA gelijkstroom; hij meet geen hersenactiviteit. De indicatie is beperkt tot depressie — voor algemene focus, meditatie of slaap is Flow het verkeerde hulpmiddel. Het platform is gesloten, de prijs omvat naast de hardware een maandelijks abonnement op de therapie-app, en buiten de NHS-zorgpaden in het VK betaal je de volledige kosten zelf. In de VS heeft Flow nog geen prijs of verzekeringsroute gepubliceerd.\n\n## Voor wie is Flow Neuroscience?\n\nKies Flow Neuroscience als je depressie hebt en een behandelaar die openstaat om het als optie voor thuis te bespreken — in de VS is een recept nodig, en het is een behandeling om onder klinische begeleiding te gebruiken, geen vervanging van zorg. Voor algemene hersentraining, meditatiefeedback of slaaptracking is dit de verkeerde categorie — Muse S Athena en de EEG-apparaten passen daar beter. Flow is hier opgenomen als klinische referentie voor hoe gereguleerde, door onderzoek onderbouwde hardware voor het brein eruitziet.\n\n---\n\n## Achtergrondinformatie\n\nAchtergrond over de hersensystemen achter stemming en aandacht. Flow stimuleert het brein met een zwakke stroom; hij registreert geen EEG.\n\n- [Digitale dementie en aandachtscontrole](/articles/digital-dementia-attentional-control) — aandacht herstellen met feedbackgestuurde oefening\n- [Neuroplasticiteit en flow-overklokken](/articles/neuroplasticity-flow-overclocking) — wat flowtoestanden zijn en hoe ze ontstaan\n- [ACC-kalibratie: protocol voor cognitieve controle](/articles/acc-calibration-protocol-cognitive-control) — de prefrontale controlelussen achter cognitieve controle\n",
+      "faq": [
+        {
+          "q": "Is Flow Neuroscience een EEG-headset?",
+          "a": "Nee. Flow Neuroscience is een tDCS-headset: hij stimuleert het brein met gelijkstroom in plaats van hersenactiviteit te meten. Hij is geïndiceerd voor depressie, in de EU CE-gemarkeerd als medisch hulpmiddel klasse IIa, in de VS door de FDA goedgekeurd (alleen op recept) en gecombineerd met een app met een gestructureerd cognitief-gedragstherapeutisch programma."
+        },
+        {
+          "q": "Hoeveel kost Flow Neuroscience?",
+          "a": "In het VK kost Flow £399 (ongeveer $499) voor het apparaat, plus een maandelijks abonnement op de therapie-app. In de VS is hij alleen op recept verkrijgbaar en heeft Flow nog geen prijs gepubliceerd. Dat abonnement dekt het geïntegreerde gedragstherapieprogramma van 8 weken. Reken op beide, want de doorlopende app-kosten komen bovenop de hardwareprijs."
+        },
+        {
+          "q": "Werkt Flow Neuroscience tegen depressie?",
+          "a": "Voor Flow is er echt gerandomiseerd onderzoeksbewijs bij depressie, waaronder een volledig op afstand uitgevoerde gerandomiseerde, sham-gecontroleerde studie in Nature Medicine (Woodham 2024); hij wordt in delen van de Britse NHS voorgeschreven als optie binnen het depressiezorgpad, en in december 2025 keurde de FDA hem goed voor matige tot ernstige depressie bij volwassenen. Dat geeft hem de sterkste regelgevende en onderzoeksbasis in zijn categorie, al is de indicatie beperkt tot depressie."
+        },
+        {
+          "q": "Voor wie is Flow Neuroscience het meest geschikt?",
+          "a": "Flow is het meest geschikt voor mensen met depressie die een apparaat voor thuis willen met regelgevende en onderzoeksbasis. Voor algemene hersentraining of experimenteren past hij slecht: het platform is gesloten, zonder toegang voor ontwikkelaars of ruwe data, en hij is voor niets anders dan depressie geïndiceerd."
+        }
+      ]
     },
     "neurosky-mindwave-mobile-2": {
       "verdict": "De goedkoopste serieuze EEG-headset voor consumenten — één kanaal, eenvoudig, maar met een open SDK voor ontwikkelaars en leerlingen.",
@@ -796,28 +972,192 @@
       ]
     },
     "theragun-pro-plus": {
-      "verdict": "Het vlaggenschip-massagepistool van Therabody — hoogste stallkracht, diepste slag, verfijnde app. De premiumprijs weerspiegelt de topspecificaties en het Therabody-ecosysteem.",
-      "productType": "Premium percussiemassagegun met slimme app"
+      "verdict": "Het vlaggenschip onder de percussieguns van Therabody — hoogste stall force, grootste amplitude, verzorgde app. De premiumprijs weerspiegelt de topspecificaties en het Therabody-ecosysteem.",
+      "summary": "Theragun PRO Plus is de massagegun die de premiumcategorie definieert — 60 lbs stall force (hoogste klasse), 16 mm amplitude, borstelloze motor op 50–55 dB, OLED-scherm met druksensor, volledige integratie met de Therabody-app inclusief begeleide routines. Tientallen jaren merkgeschiedenis. De premiumprijs ($599) weerspiegelt de topspecificaties; concurrenten komen op afzonderlijke specs dichterbij, maar geen ander apparaat combineert stall force + amplitude + app op dit niveau.",
+      "description": "ONDA-review van de Theragun PRO Plus — vlaggenschip van Therabody: 60 lbs stall force, 16 mm amplitude, OLED-scherm en app. Kracht, bouw, accu en prijs.",
+      "bestFor": "Ideaal voor serieuze sporters die herstel willen met percussietherapie op topniveau en het volledige Therabody-app-ecosysteem — en de premiumprijs accepteren.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op productdocumentatie van Therabody en een groot aantal sport-/fitnessreviews uit 2026. Niet zelf hands-on getest door ONDA.",
+      "productType": "Premium percussiemassagegun met slimme app",
+      "pros": [
+        "Hoogste stall force (60 lbs) en grootste amplitude (16 mm) in de categorie",
+        "Beste app en slimme functies — begeleide routines van Therabody",
+        "Stilste borstelloze motor (50–55 dB)",
+        "Tientallen jaren merkgeschiedenis van Therabody, met 2 jaar garantie"
+      ],
+      "cons": [
+        "Premiumprijs ($599)",
+        "Zwaar (~2,9 lbs) — sessies met één hand voelen lang",
+        "Marginaal betere motor dan de Theragun Elite voor 50% meer geld",
+        "Therabody-app pusht extra aankopen binnen het ecosysteem"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "60 lbs stall force + 16 mm amplitude — top van de categorie op beide vlakken.",
+        "build-attachments": "Premium bouw met borstelloze motor, 6 opzetstukken inbegrepen, 2 jaar garantie. Tientallen jaren merkgeschiedenis van Therabody.",
+        "battery-noise": "Borstelloze motor op 50–55 dB — stilste in de categorie. ~2,5 uur per lading. Opladen via USB-C.",
+        "app-smart-features": "Beste app in de categorie — begeleide routines van Therabody, druksensor, OLED-feedback, Bluetooth-koppeling met TheraFace.",
+        "ergonomics-portability": "Zwaar (~2,9 lbs) — de beste motor in de categorie kost gewicht. Het multigrip-handvat helpt; sessies van 20 minuten met één hand voelen lang.",
+        "value": "$599 — premiumprijs. Gerechtvaardigd voor wie de topspecificaties + het Therabody-ecosysteem wil; duur vergeleken met budgetalternatieven van Bob and Brad / Renpho."
+      },
+      "content": "## Waar hij in uitblinkt\n\nTheragun PRO Plus is de vlaggenschip-percussiegun van Therabody — hoogste stall force, grootste amplitude, stilste borstelloze motor, beste app in de categorie.\n\n## Wat zijn de nadelen van Theragun PRO Plus?\n\nGewicht en prijs. Met ~2,9 lbs is het apparaat zwaar voor sessies van 20 minuten met één hand; met $599 is het de duurste massagegun voor consumenten. Voor wie niet per se de topspecificaties zoekt, dekt de Theragun Elite van $399 90% van de toepassingen.\n\n## Voor wie is Theragun PRO Plus geschikt?\n\nKies Theragun PRO Plus voor percussietherapie op topniveau binnen het Therabody-ecosysteem. Voor de middenklasse van Therabody: Theragun Elite. Als alternatief van Hyperice: Hypervolt 2 Pro. Als budgetalternatief: Achedaway Pro of OPOVE M3 Pro 2.\n\n---\n\n## Achtergrond\n\n- [Mitochondriale biogenese](/articles/mitochondrial-biogenesis-cellular-power-grid) — percussie + doorbloeding bij spierherstel\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Reinigt slaap echt je hersenen? Het bewijs voor het glymfatisch systeem](/articles/nightly-flush-glymphatic-neural-cache) — wat bij mensen is aangetoond, en wat nog ter discussie staat\n",
+      "faq": [
+        {
+          "q": "Is de Theragun PRO Plus het geld waard?",
+          "a": "De PRO Plus is het waard voor serieuze herstelgebruikers die de topspecificaties willen: 60 lbs stall force, 16 mm amplitude, een stille borstelloze motor en de begeleide app van Therabody. Voor de meeste mensen levert de Theragun Elite bijna hetzelfde voor $200 minder."
+        },
+        {
+          "q": "Wat kost de Theragun PRO Plus?",
+          "a": "De Theragun PRO Plus kost los $599 met 6 opzetstukken. Dat is een premiumprijs en ongeveer 50% meer dan de Theragun Elite, voor wat de review een marginaal betere motor noemt."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Theragun PRO Plus?",
+          "a": "De PRO Plus kost $599, is met ongeveer 2,9 lbs zwaar waardoor sessies met één hand lang voelen, en biedt maar een marginaal betere motor dan de Elite voor 50% meer geld. De app pusht ook extra aankopen binnen het ecosysteem."
+        }
+      ]
     },
     "hypervolt-2-pro": {
-      "verdict": "De Theragun-rivaal — vergelijkbare stallkracht, lager gewicht, Hyperice-ecosysteem. Iets minder slaglengte dan de Theragun PRO Plus voor een duidelijk lagere prijs.",
-      "productType": "Premium percussiemassagegun met Hyperice-ecosysteem"
+      "verdict": "De Theragun-rivaal — vergelijkbare stall force, lichter, Hyperice-ecosysteem. Iets minder amplitude dan de Theragun PRO Plus voor een flink lagere prijs.",
+      "summary": "De Hypervolt 2 Pro is het vlaggenschip van Hyperice — 60 lbs stall force, gelijk aan de Theragun PRO Plus, 14 mm amplitude (iets minder dan de 16 mm van Theragun), stille borstelloze motor, volledige Hyperice-app met begeleide routines. Lichter dan Theragun (~2,6 lbs vs 2.9). Sterke distributiegeschiedenis bij NBA-/NFL-atleten. De juiste premiumkeuze als je de prijzen van Therabody niet wilt betalen.",
+      "description": "ONDA-review van de Hyperice Hypervolt 2 Pro — premium massagegun met 60 lbs stall force, 14 mm amplitude en app. Beoordeeld op kracht, accu en prijs.",
+      "bestFor": "Ideaal voor kopers van een premium massagegun die Therabody te duur vinden — vergelijkbare topspecs voor $200 minder, lichter, atletenmerk.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op productdocumentatie van Hyperice en sport-/fitnessreviews uit 2026. Niet zelf hands-on getest door ONDA.",
+      "productType": "Premium percussiemassagegun met Hyperice-ecosysteem",
+      "pros": [
+        "60 lbs stall force gelijk aan Theragun PRO Plus voor $200 minder",
+        "Lichter dan Theragun (~2,6 lbs vs 2.9)",
+        "Stilste in de premiumcategorie (48–52 dB)",
+        "Distributiegeschiedenis bij NBA-/NFL-atleten"
+      ],
+      "cons": [
+        "14 mm amplitude vs 16 mm bij Theragun",
+        "1 jaar garantie vs 2 jaar bij Theragun",
+        "5 opzetstukken vs 6 bij Theragun",
+        "Handvat met enkele greep minder veelzijdig dan de multi-grip van Theragun"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "60 lbs stall force gelijk aan Theragun PRO Plus. 14 mm amplitude — iets minder dan de 16 mm van Theragun, maar meer dan elk ander Hyperice-apparaat.",
+        "build-attachments": "Premium bouw met borstelloze motor, 5 opzetstukken inbegrepen, 1 jaar garantie. Hyperice-geschiedenis bij NBA/NFL.",
+        "battery-noise": "Borstelloze motor op 48–52 dB — iets stiller dan Theragun. ~3 uur per lading.",
+        "app-smart-features": "Hyperice-app met begeleide routines, drukfeedback, Bluetooth. Minder verfijnd dan de Therabody-app maar functioneel gelijkwaardig.",
+        "ergonomics-portability": "Lichter dan Theragun (~2,6 lbs). Het handvat met enkele greep is eenvoudiger dan de multi-grip van Theragun, maar minder veelzijdig.",
+        "value": "$399 — premiumprijs, maar $200 minder dan Theragun PRO Plus voor vergelijkbare specs. Beste prijs-kwaliteit in de premiumklasse."
+      },
+      "content": "## Update: de Hypervolt 3 Pro is uit\n\n> Hyperice bracht de Hypervolt 3-lijn uit in maart 2026. De nieuwe [Hypervolt 3 Pro](/reviews/hypervolt-3-pro) verhoogt de stall force naar ~70 lbs, is stiller (~51 dB), gaat vier uur mee per lading en heeft grotere opzetstukken — voor een lagere $349. Koop je nieuw, dan is dat de betere keuze; de Hypervolt 2 Pro blijft een goede deal als hij daaronder is afgeprijsd.\n\n## Wat doet de Hyperice Hypervolt 2 Pro goed?\n\nDe Hypervolt 2 Pro is de Theragun-rivaal — haalt de topspecs op stall force, is iets stiller, lichter en $200 goedkoper. Sterke distributiegeschiedenis bij NBA/NFL. De rationele premiumkeuze als je de prijzen van Therabody niet wilt betalen.\n\n## Wat zijn de nadelen van de Hyperice Hypervolt 2 Pro?\n\nAmplitude en garantie. 14 mm amplitude blijft achter bij de 16 mm van Theragun; 1 jaar garantie bij de 2 jaar van Theragun. Het handvat met enkele greep is minder veelzijdig dan het multi-grip-ontwerp van Theragun.\n\n## Voor wie is de Hyperice Hypervolt 2 Pro?\n\nKies de Hypervolt 2 Pro als je premium percussie wilt voor $200 minder dan de Theragun PRO Plus. Voor de diepste amplitude + beste garantie: Theragun PRO Plus. Voor het hogere middensegment: Theragun Elite. Als mini voor onderweg: Hypervolt Go 2.\n\n---\n\n## Achtergrondinformatie\n\n- [Mitochondriale biogenese](/articles/mitochondrial-biogenesis-cellular-power-grid)\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n",
+      "faq": [
+        {
+          "q": "Hypervolt 2 Pro vs Theragun PRO Plus: welke is beter?",
+          "a": "De Hypervolt 2 Pro haalt met 60 lbs dezelfde stall force als de Theragun PRO Plus, kost $200 minder en is lichter met ongeveer 2,6 lbs tegenover 2,9. Theragun houdt een iets diepere amplitude van 16 mm tegenover 14 mm, 2 jaar garantie, zes opzetstukken en een multi-grip-handvat."
+        },
+        {
+          "q": "Hoeveel kost de Hypervolt 2 Pro?",
+          "a": "De Hypervolt 2 Pro kost $399 met vijf opzetstukken. Daarvoor krijg je 60 lbs stall force, een borstelloze motor en de volledige Hyperice-app met begeleide routines. De garantie is één jaar, de helft van de twee jaar bij Theragun."
+        },
+        {
+          "q": "Is de Hypervolt 2 Pro stil?",
+          "a": "Ja. Met 48–52 dB is de Hypervolt 2 Pro dankzij de borstelloze motor de stilste gun in de premiumcategorie. Tel daar de volledige Hyperice-app met begeleide routines en een lichtere behuizing dan Theragun bij op, en je hebt de premiumkeuze voor kopers die Therabody te duur vinden."
+        }
+      ]
     },
     "theragun-elite": {
       "verdict": "Beste prijs-kwaliteit van Therabody — 16 mm slag met 40 lbs stallkracht voor $200 minder dan de PRO Plus. De verstandige Therabody-aankoop voor de meeste gebruikers.",
       "productType": "Premium massagegun uit het middensegment"
     },
     "achedaway-pro": {
-      "verdict": "Beste verhouding tussen specificaties en prijs in premium percussie — 80 lbs stallkracht (hoogste in de categorie) voor $349. Geen app-ecosysteem van een premiummerk.",
-      "productType": "Premium massagegun voor specificatiemaximalisten"
+      "verdict": "Beste specs-prijsverhouding bij premium massageguns — 80 lbs stall force (hoogste in de categorie) voor $349. Geen app-ecosysteem van een premiummerk.",
+      "summary": "De Achedaway Pro is de onderschatte biohacker-favoriet — 80 lbs stall force (hoogste in de categorie, meer dan Theragun PRO Plus en Hypervolt 2 Pro), 16 mm amplitude, 7 opzetstukken, stille borstelloze motor, $349. Geen Therabody-/Hyperice-app-ecosysteem; je ruilt merkafwerking en slimme functies in voor maximale specs en een lagere prijs.",
+      "description": "ONDA-review van de Achedaway Pro: massagegun met 80 lbs stall force en 16 mm amplitude onder Theragun-prijs. Beoordeeld op kracht, bouw, accu en prijs.",
+      "bestFor": "Ideaal voor spec-gerichte biohackers die de hoogste stall force onder Theragun-prijs willen — geen app nodig, minder merkprestige geaccepteerd.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op productdocumentatie van Achedaway en biohacker-/fitnessreviews uit 2026. Niet zelf hands-on getest door ONDA.",
+      "productType": "Spec-gemaximaliseerde premium massagegun",
+      "pros": [
+        "Hoogste stall force in de consumentencategorie (80 lbs)",
+        "16 mm amplitude, gelijk aan Theragun",
+        "7 opzetstukken — de meeste in de categorie",
+        "Goedkoper dan Theragun Elite met hogere specs"
+      ],
+      "cons": [
+        "Geen app of slimme functies",
+        "1 jaar garantie vs. 2 jaar bij Therabody",
+        "Minder merkprestige dan Therabody / Hyperice",
+        "Iets luider dan concurrenten van premiummerken"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "80 lbs stall force — hoogste in de consumentencategorie. 16 mm amplitude gelijk aan Theragun. Maximale specs winnen op percussiedosis.",
+        "build-attachments": "Borstelloze motor, 7 opzetstukken inbegrepen (de meeste in de categorie), 1 jaar garantie. Solide bouwkwaliteit; minder merkprestige dan Therabody / Hyperice.",
+        "battery-noise": "Borstelloze motor op 55–60 dB. ~3 uur per lading. Iets luider dan de premiummodellen van Theragun / Hypervolt.",
+        "app-smart-features": "Geen app, geen Bluetooth, geen slimme functies. Puur mechanisch apparaat. Het grote compromis voor de lagere prijs + hogere stall force.",
+        "ergonomics-portability": "~2,4 lbs. Comfortabel handvat. Geen multi-grip, maar voldoende ergonomie met één greep.",
+        "value": "$349 — hoogste stall force in de categorie voor minder dan een Theragun Elite. Beste specs per dollar bij premium percussie."
+      },
+      "content": "## Waar hij voorloopt\n\nDe Achedaway Pro is de spec-gemaximaliseerde biohacker-outsider — 80 lbs stall force (hoogste in de categorie), 16 mm amplitude, 7 opzetstukken, $349. Beste specs per dollar bij premium percussie.\n\n## Wat zijn de nadelen van de Achedaway Pro?\n\nApp en merkafwerking. Geen Therabody-/Hyperice-app-ecosysteem; geen Bluetooth of slimme functies. Minder merkprestige dan concurrenten uit de premiumklasse. Koop je op app + ecosysteem, dan passen Therabody of Hyperice beter.\n\n## Voor wie is de Achedaway Pro?\n\nKies de Achedaway Pro voor maximale percussiespecs zonder te betalen voor premium merkafwerking. Voor de Therabody-app + ecosysteem: Theragun Elite. Als Hyperice-alternatief: Hypervolt 2 Pro. Voor een klein budget: Bob and Brad Q2 Mini of OPOVE M3 Pro 2.\n\n---\n\n## Achtergrondinformatie\n\n- [Mitochondriale biogenese](/articles/mitochondrial-biogenesis-cellular-power-grid)\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n",
+      "faq": [
+        {
+          "q": "Is de Achedaway Pro het geld waard?",
+          "a": "Ja, als ruwe specs voor jou belangrijker zijn dan merkafwerking. De Achedaway Pro levert 80 lbs stall force, de hoogste in de consumentencategorie, plus 16 mm amplitude en 7 opzetstukken voor $349 — minder dan een Theragun Elite. Je levert in op een app, slimme functies en het ecosysteem van een premiummerk."
+        },
+        {
+          "q": "Hoeveel kost de Achedaway Pro?",
+          "a": "De Achedaway Pro kost $349, inclusief 7 opzetstukken. Daarmee is hij goedkoper dan de Theragun Elite, met een hogere stall force (80 lbs) en een 16 mm amplitude die gelijk is aan Theragun. Het compromis is 1 jaar garantie in plaats van de 2 jaar die Therabody biedt."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Achedaway Pro?",
+          "a": "De belangrijkste nadelen zijn geen app of slimme functies en 1 jaar garantie tegenover 2 jaar bij Therabody. Het merkprestige is kleiner dan dat van Therabody of Hyperice, en hij is iets luider dan concurrenten van premiummerken. Niets daarvan raakt zijn kernsterkte: de hoogste stall force in de categorie."
+        },
+        {
+          "q": "Voor wie is de Achedaway Pro het meest geschikt?",
+          "a": "De Achedaway Pro is het meest geschikt voor spec-gerichte biohackers die de hoogste stall force onder Theragun-prijs willen. Hij past bij kopers die geen app nodig hebben en merkprestige en slimme functies graag inruilen voor 80 lbs stall force, 16 mm amplitude en 7 opzetstukken."
+        }
+      ]
     },
     "opove-m3-pro-2": {
       "verdict": "Beste prijs-kwaliteit in het lagere middensegment — 55 lbs stallkracht voor $179 dicht het grootste deel van het verschil met de premiumklasse. Geen app; jonger merk dan Theragun / Hyperice.",
       "productType": "Massagegun uit het lagere middensegment met premiumspecificaties"
     },
     "ekrin-b37": {
-      "verdict": "Beste middensegment met levenslange garantie — 56 lbs stallkracht met levenslange garantie voor $249.99. Minder slaglengte dan de premiumklasse; gepositioneerd op geloofwaardigheid bij sporters.",
-      "productType": "Op sporters gerichte massagegun uit het hogere middensegment"
+      "verdict": "Beste middenklasser met levenslange garantie — 56 lbs stall force met levenslange garantie voor $249.99. Lagere amplitude dan de premiumklasse; gepositioneerd met geloofwaardigheid bij atleten.",
+      "summary": "De Ekrin B37 is de op atleten gerichte instap in het hogere middensegment — 56 lbs stall force, 12 mm amplitude, borstelloze motor, 4 opzetstukken en de enige levenslange garantie in de categorie. Op atleten gerichte merkpositionering met geloofwaardige distributie in de NFL / NCAA. De adviesprijs van $249.99 zit tussen het budget-middensegment van OPOVE en premium Hyperice. De juiste koop als je garantie belangrijker vindt dan amplitude.",
+      "description": "ONDA-review van de Ekrin B37 — massagegun voor atleten: 56 lbs stall force, 12 mm amplitude, levenslange garantie, $249.99. Kracht, accu en prijs.",
+      "bestFor": "Ideaal voor atleten die percussie uit de middenklasse met levenslange garantie willen — langetermijnwaarde boven premium amplitude.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op productdocumentatie van Ekrin Athletics en op atleten gerichte reviews uit 2026. Niet zelf hands-on getest door ONDA.",
+      "productType": "Op atleten gerichte massagegun uit het hogere middensegment",
+      "pros": [
+        "Levenslange garantie — enige in de categorie",
+        "~8 uur accuduur — langste in de middenklasse",
+        "Op atleten gerichte merkpositionering",
+        "Borstelloze motor onder premiumprijs"
+      ],
+      "cons": [
+        "12 mm amplitude vs. 14–16 mm bij premium",
+        "Geen app of slimme functies",
+        "4 opzetstukken — minder dan budgetconcurrenten",
+        "Standaard enkele greep zonder veelzijdigheid"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "56 lbs stall force, solide. 12 mm amplitude — lager dan de 14–16 mm van de premiumklasse, maar functioneel.",
+        "build-attachments": "Levenslange garantie — enige in de categorie. Borstelloze motor, 4 opzetstukken. De bouwkwaliteit wordt onderstreept door de garantievoorwaarden.",
+        "battery-noise": "Borstelloze motor op 55 dB. ~8 uur per lading — bij de langste in de categorie.",
+        "app-smart-features": "Geen app of Bluetooth. Led-indicator voor accu + snelheid.",
+        "ergonomics-portability": "~2,2 lbs. Standaard handvat met enkele greep.",
+        "value": "$249.99 adviesprijs, vaak afgeprijsd — prijs uit het hogere middensegment, gerechtvaardigd door de levenslange garantie. Laagste eigendomskosten op lange termijn."
+      },
+      "content": "## Waar hij voorloopt\n\nDe Ekrin B37 is de middenklasser met levenslange garantie — atletenmerk, borstelloze motor, langste accu in de middenklasse, levenslange garantie (enige in de categorie). Beste waarde voor langdurig bezit.\n\n## Wat zijn de nadelen van de Ekrin B37?\n\nAmplitude en app. 12 mm amplitude blijft achter bij de 14–16 mm van premium; geen app-integratie. Wil je premium amplitude, dan passen Theragun Elite of Hypervolt 2 Pro beter.\n\n## Voor wie is de Ekrin B37?\n\nKies de Ekrin B37 voor percussie uit de middenklasse met levenslange garantie en een atletenmerk. Voor hogere amplitude tegen dezelfde prijs: OPOVE M3 Pro 2. Voor premium app + amplitude: Theragun Elite.\n\n---\n\n## Achtergrondinformatie\n\n- [Mitochondriale biogenese](/articles/mitochondrial-biogenesis-cellular-power-grid)\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n",
+      "faq": [
+        {
+          "q": "Is de Ekrin B37 het geld waard?",
+          "a": "Ja, voor de waarde op lange termijn. De Ekrin B37 biedt 56 lbs stall force, een borstelloze motor, ongeveer 8 uur accuduur en de enige levenslange garantie in de categorie voor $249.99. De amplitude van 12 mm is lager dan de 14–16 mm van premium massageguns."
+        },
+        {
+          "q": "Hoeveel kost de Ekrin B37?",
+          "a": "De Ekrin B37 heeft een adviesprijs van $249.99 (vaak afgeprijsd), inclusief 4 opzetstukken en levenslange garantie. Daarmee zit hij in de middenklasse, onder premium massageguns, met toch een borstelloze motor en zo'n 8 uur accuduur."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Ekrin B37?",
+          "a": "De Ekrin B37 heeft een amplitude van 12 mm tegenover 14–16 mm bij premium guns en geen app of slimme functies. Er zitten maar 4 opzetstukken bij, minder dan bij budgetconcurrenten, en een standaard enkele greep zonder veelzijdigheid."
+        },
+        {
+          "q": "Voor wie is de Ekrin B37 het meest geschikt?",
+          "a": "De Ekrin B37 is het meest geschikt voor atleten die een massagegun uit de middenklasse met levenslange garantie willen. Hij past bij kopers die langdurig bezit, op atleten gerichte positionering en ongeveer 8 uur accu belangrijker vinden dan premium amplitude. Hij biedt 56 lbs stall force voor $249.99."
+        }
+      ]
     },
     "hypervolt-go-2": {
       "verdict": "Beste reismini van een premiummerk — het Hypervolt-ecosysteem in zakformaat. Minder stallkracht is de prijs voor draagbaarheid.",
@@ -1125,8 +1465,51 @@
       ]
     },
     "nurosym": {
-      "verdict": "Het best onderzochte oor-tVNS-apparaat voor consumenten — een oorclip van het type dat in onderzoeksstudies wordt gebruikt, met een prijs die daarbij past.",
-      "productType": "Auriculaire tVNS (oorclip)"
+      "verdict": "Het best onderzochte tVNS-apparaat voor het oor voor consumenten — een oorclip van het type dat in onderzoek wordt gebruikt, met een prijs die daarbij past.",
+      "summary": "Nurosym is de consumentenlijn van Parasym, het Londense bedrijf waarvan de oorstimulatoren, grotendeels eerdere modellen, werden gebruikt in ongeveer twintig onafhankelijke peerreviewed studies naar auriculaire nervus-vagusstimulatie (50+ volgens de fabrikant, stand oktober 2026). Hij klemt op de tragus van het linkeroor en geeft een gekalibreerde elektrische puls af aan de auriculaire tak van de nervus vagus. Geen app-gimmicks — één draaiknop, stimulatie-instellingen zoals gerapporteerd in de studies, en het grootste onafhankelijke studiedossier van alle consumentenapparaten, al gaat het vooral om kleine studies met eerdere Parasym-modellen.",
+      "description": "ONDA-review van de Nurosym, het tVNS-oorapparaat van Parasym; eerdere modellen zaten in studies naar hart, HRV en ontsteking. Bewijs en prijs.",
+      "bestFor": "Ideaal voor auriculaire tVNS zoals gebruikt in onderzoek, thuis — als bewijs zwaarder weegt dan de vormfactor.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op specificaties van de fabrikant, het gepubliceerde studiedossier van Parasym/Nurosym en onafhankelijke reviews uit 2026. Niet zelf hands-on getest door ONDA.",
+      "productType": "Auriculaire tVNS (oorclip)",
+      "pros": [
+        "Grootste onafhankelijke studiedossier van alle tVNS-apparaten voor consumenten (grotendeels eerdere Parasym-modellen)",
+        "Frequentie en pulsbreedte gerapporteerd in studies (golfvorm is eigendom van de fabrikant)",
+        "Geen abonnement, geen app nodig om te gebruiken",
+        "Medisch hulpmiddel met CE-markering (klasse IIa volgens de fabrikant)"
+      ],
+      "cons": [
+        "Eén programma — minder variatie dan concurrenten met een app",
+        "Geen meting van hartslagvariabiliteit (HRV) op het apparaat en geen sessielog",
+        "€700 (ongeveer $820) maakt hem onbereikbaar voor de gelegenheidsgebruiker",
+        "Clip met kabel is minder handig dan een draadloze wearable"
+      ],
+      "scoreNotes": {
+        "evidence": "De studies gingen grotendeels over Parasym — een eerdere versie van dezelfde fabrikant, met academische financiering — en de steekproeven waren klein; waar Nurosym zelf wordt genoemd, zijn de resultaten meestal nul. Ongeveer twintig onafhankelijke peerreviewed studies gebruikten oorstimulatoren van Parasym (50+ volgens de fabrikant, stand oktober 2026); de meeste hadden een sham- of controlearm. Geen enkele werd door de fabrikant gefinancierd, al leverde Parasym voor sommige de apparaten. De duidelijkste positieve resultaten komen uit kleine sham-gecontroleerde studies bij hartpatiënten met eerdere modellen (AF-last, TNF-alfa, POTS-tachycardie, bloeddruk). De fabrikant zegt dat Nurosym dezelfde technologie gebruikt, maar geen gepubliceerde data tonen aan dat hij presteert zoals die modellen. Geen enkele studie heeft depressie als primaire uitkomst, en de data over long covid komen uit ongecontroleerde pilots. ONDA-regel: een eerdere versie van hetzelfde apparaat telt mee als fabrikant en stimulatiemethode gelijk zijn, met een maximum van 7,5.",
+        "mechanism": "Transcutane auriculaire VNS aan de tragus, het best onderzochte niet-invasieve doelwit. De studies die Nurosym noemen, rapporteren de frequentie en pulsbreedte (20–25 Hz, 200–250 µs); de golfvorm zelf is eigendom van de fabrikant.",
+        "protocols": "Eén duidelijk omschreven stimulatieprogramma; de intensiteit stelt de gebruiker zelf in. Minder programmavariatie dan Pulsetto, maar frequentie en pulsbreedte zijn in de studies gerapporteerd.",
+        "comfort": "Een tragusclip wordt goed verdragen tijdens sessies van 30–60 minuten; niet bedoeld om urenlang te dragen, en de kabel houdt je aan het apparaat vast.",
+        "biofeedback": "Geen ingebouwde HRV-meting — combineer met een borstband of ring voor gesloten-lusregistratie.",
+        "value": "€700 (ongeveer $820; prijzen in de VS verschillen per regio) eenmalig, geen abonnement. Premiumprijs voor het grootste onafhankelijke studiedossier (grotendeels eerdere Parasym-modellen), niet voor wie er wat mee wil experimenteren."
+      },
+      "content": "## Waar hij in uitblinkt\n\nOnder de consumentenapparaten scoort Nurosym het best op het criterium dat voor medische hulpmiddelen het zwaarst weegt: bewijs. Parasym-apparaten, grotendeels eerdere modellen, werden gebruikt in ongeveer twintig onafhankelijke gepubliceerde studies naar transcutane auriculaire VNS — stimulatie van de [nervus vagus](/glossary/vagus-nerve). De duidelijkste positieve resultaten komen uit kleine sham-gecontroleerde studies bij hartpatiënten (boezemfibrilleren, POTS, hoge bloeddruk). Daarnaast zijn er acute [HRV](/glossary/heart-rate-variability)-studies bij gezonde volwassenen en ongecontroleerde pilots bij long covid. De nieuwere studies die Nurosym noemen (2025–26) vonden meestal geen effect ten opzichte van sham, en hoewel de fabrikant zegt dat Nurosym dezelfde technologie gebruikt, tonen geen gepubliceerde data aan dat hij presteert zoals de oudere modellen — daarom begrenst ONDA de bewijsscore op 7,5. Onderzocht zijn is echter niet hetzelfde als bewezen zijn: een living meta-analyse van 16 sham-gecontroleerde studies bij gezonde mensen (Wolf 2021, *Psychophysiology*) vond geen betrouwbaar effect van tVNS aan het oor op vagaal gemedieerde HRV, dus koop hem niet in de verwachting dat je HRV stijgt. De studies die Nurosym noemen, rapporteren de frequentie en pulsbreedte (20–25 Hz, 200–250 µs; intensiteit door de gebruiker ingesteld), zodat een arts of zelfexperimenteerder het grootste deel van de dosis kan beschrijven — de golfvorm zelf is eigendom van de fabrikant.\n\n## Wat zijn de nadelen van Nurosym?\n\nDezelfde soberheid die Nurosym geloofwaardig maakt, maakt hem ook kaal. Er is één stimulatieprogramma, geen app, geen HRV op het apparaat, geen sessielog, en het apparaat zit via een kabel vast aan de oorclip. Met €700 (ongeveer $820) is het ook het duurste oorclip-apparaat in dit overzicht. Wil je begeleide modi voor slaap, focus en stress, dan biedt Pulsetto meer programmavariatie voor een lagere prijs — ook al is de bewijsbasis dunner.\n\n## Voor wie is Nurosym geschikt?\n\nKies Nurosym als je een gestructureerd tVNS-zelfexperiment doet, stimulatie-instellingen wilt die je naast de gepubliceerde studies kunt leggen, en bereid bent een klinische prijs te betalen voor een klinische herkomst. Wil je een verzorgde consumentenervaring met modi en een telefoonapp, dan passen Pulsetto, Xen by Neuvana of Truvaga beter.\n\n---\n\n## Achtergrond\n\nDe biologie achter waar deze apparaten op mikken — en de protocollen die het effect van de hardware versterken.\n\n- [Oefeningen voor de nervus vagus](/articles/vagus-nerve-exercises) — waarom de nervus vagus stroomopwaarts ligt van HRV, slaap, stemming en ontsteking\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation) — het regelgevende en mechanistische landschap achter niet-invasieve VNS\n- [ACC en coherentiemonitoring](/articles/anterior-cingulate-core-coherence-monitoring) — hoe de vagale tonus aandacht en emotieregulatie stroomopwaarts vormgeeft\n",
+      "faq": [
+        {
+          "q": "Is Nurosym het geld waard?",
+          "a": "Nurosym is het waard als bewijs zwaarder weegt dan de vormfactor. Het heeft het grootste onafhankelijke studiedossier van alle tVNS-apparaten voor consumenten (grotendeels eerdere Parasym-modellen), frequentie en pulsbreedte zijn in studies gerapporteerd, en het is een medisch hulpmiddel met CE-markering (klasse IIa volgens de fabrikant). Reken op één programma en een oorclip met kabel."
+        },
+        {
+          "q": "Wat kost Nurosym?",
+          "a": "Nurosym kost €700 in de officiële webshop, ongeveer $820 (prijzen verschillen per regio), als eenmalige aankoop zonder abonnement en zonder dat je een app nodig hebt. De review merkt op dat die prijs hem onbereikbaar maakt voor de gelegenheidsgebruiker. Het apparaat heeft een CE-markering (klasse IIa volgens de fabrikant)."
+        },
+        {
+          "q": "Wat zijn de nadelen van Nurosym?",
+          "a": "Nurosym biedt één programma met minder variatie dan concurrenten met een app, geen HRV-meting op het apparaat of sessielog, een prijs van €700 (ongeveer $820) die hem onbereikbaar maakt voor de gelegenheidsgebruiker, en een clip met kabel die minder handig is dan een draadloze wearable."
+        },
+        {
+          "q": "Nurosym of Pulsetto: welke is beter?",
+          "a": "Nurosym is beter wat bewijs betreft: het heeft het grootste onafhankelijke studiedossier in consumenten-tVNS (grotendeels met eerdere Parasym-modellen). Pulsetto is goedkoper met $269, wordt om de nek gedragen en biedt vier begeleide programma's, maar het onafhankelijke klinische bewijs is dunner dan dat van Nurosym."
+        }
+      ]
     },
     "gammacore-sapphire-cv": {
       "verdict": "Een door de FDA vrijgegeven (cleared) niet-invasief cervicaal VNS-apparaat, alleen op recept, voor specifieke hoofdpijnaandoeningen — een klinisch hulpmiddel, geen welzijnsapparaat voor consumenten.",
@@ -1150,18 +1533,96 @@
       "productType": "Cervicale tVNS voor consumenten (nekbeugel)"
     },
     "hoolest-verelief-prime": {
-      "verdict": "Het meest op sporters gerichte tVNS-apparaat — korte, intensieve sessies voor herstel en inslapen.",
-      "productType": "Handgehouden tVNS (vinger-/nekgreep)",
-      "editorialAdjustment": "Eerlijkheid in marketing — de homepage noemt VeRelief ‘klinisch bewezen’ en de onderzoekspagina zegt ‘Bewezen om paniek te resetten’, maar de studies zijn eigen, ongepubliceerde studies van de oprichters, en ze gebruikten een protocol van 10 minuten in plaats van de 3-minutenmodus van het apparaat; we vonden geen gepubliceerde studie naar VeRelief (gecontroleerd in oktober 2026). Dit wordt hier gescoord, niet onder bewijs. (in het origineel: “Clinically Proven”)"
+      "verdict": "Het meest op atleten gerichte tVNS-apparaat — korte, intensieve sessies voor herstel en inslapen.",
+      "summary": "De Hoolest VeRelief Prime is een handheld tVNS-apparaat van Hoolest Performance, een spin-off van Arizona State University. Gripelektroden richten zich op de auriculaire tak (tegen het oor gehouden) of de cervicale tak (tegen de hals gehouden) en leveren intensieve sessies van 3–5 minuten. Ontworpen rond sportherstel en parasympathische voorbereiding vóór het slapen, met door de oprichters gepubliceerd onderzoek.",
+      "description": "ONDA-review van de Hoolest VeRelief Prime — handheld nervus-vagusstimulator voor sportherstel en inslapen. Beoordeeld op bewijs, mechanisme en prijs.",
+      "bestFor": "Ideaal voor atleten die een korte, intensieve parasympathische voorbereiding vóór het slapen of na de training willen.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op productdocumentatie van Hoolest, het door de oprichters gepubliceerde onderzoek en onafhankelijke reviews uit 2026. Niet zelf hands-on getest door ONDA.",
+      "productType": "Handheld tVNS (vinger-/halsgreep)",
+      "pros": [
+        "Door de oprichters gepubliceerd onderzoek naar hartslagvariabiliteit (HRV) en inslapen",
+        "Hoge piekintensiteit in korte sessies — past in herstelroutines voor sporters",
+        "Bruikbaar bij oor of hals — twee stimulatiedoelen in één apparaat",
+        "Geen abonnement nodig"
+      ],
+      "cons": [
+        "Moet actief vastgehouden worden — geen passieve wearable",
+        "Minder protocolvariatie dan Pulsetto",
+        "Hogere piekintensiteit kan oncomfortabel zijn",
+        "Onafhankelijk bewijs van derden is nog in opkomst"
+      ],
+      "scoreNotes": {
+        "evidence": "Het onderzoek naar HRV-herstel en inslapen is door de oprichters gepubliceerd (ASU-spin-off), en studies die de fabrikant zelf uitvoert tellen in ONDA-scores niet als bewijs.",
+        "mechanism": "Handheld transcutane VNS — bruikbaar bij oor of hals via vingergreep-elektroden. Hogere piekintensiteiten dan oorclipapparaten, in kortere sessies.",
+        "protocols": "Drie intensiteitsstanden; sessies van 3–5 minuten. Minder programmavariatie dan Pulsetto, maar intensiever per minuut.",
+        "comfort": "Moet de hele sessie actief vastgehouden worden — geen passieve wearable. Hogere piekintensiteit kan scherp aanvoelen.",
+        "biofeedback": "De bijbehorende app logt sessies en koppelt met Apple Gezondheid voor HRV-correlatie; geen HRV-meting op het apparaat.",
+        "value": "$279 eenmalig, geen abonnement. Vergelijkbaar met Pulsetto in het instapsegment."
+      },
+      "editorialAdjustment": "Eerlijkheid van marketing — de homepage noemt VeRelief “Clinically Proven” (klinisch bewezen) en de onderzoekspagina zegt “Proven to Reset Panic” (bewezen paniek te resetten), maar de studies zijn van de oprichters zelf en ongepubliceerd, en ze gebruikten een protocol van 10 minuten in plaats van de 3-minutenmodus van het apparaat; we vonden geen gepubliceerde studie naar VeRelief (gecontroleerd in oktober 2026). Dat wordt hier gescoord, niet onder bewijs.",
+      "content": "## Waar hij voorloopt\n\nDe Hoolest VeRelief Prime is het meest op atleten toegesneden apparaat in deze categorie. Het is een handheld stimulator die je in je hand houdt en tegen het oor of de zijkant van de hals drukt, voor een korte (3–5 minuten), intensieve tVNS-sessie. Het bedrijf is een spin-off van Arizona State University, en het oprichtersteam heeft onderzoek naar HRV-herstel en inslapen met het apparaat zelf gepubliceerd — een mate van transparantie van onderzoekers die in deze prijsklasse ongebruikelijk is.\n\n## Wat zijn de nadelen van de Hoolest VeRelief Prime?\n\nHet is geen passieve wearable. Je moet het apparaat de hele sessie actief tegen de gekozen plek houden, waardoor het minder geschikt is voor terloops dagelijks gebruik dan Apollo Neuro of een wearable zoals Pulsetto. De piekintensiteiten zijn hoger dan bij oorclipapparaten, dus de sensatie kan voor nieuwe gebruikers scherp aanvoelen. De programmavariatie is kleiner dan de bibliotheek met vier modi van Pulsetto.\n\n## Voor wie is de Hoolest VeRelief Prime?\n\nKies de Hoolest VeRelief Prime als je een korte, intensieve parasympathische sessie wilt vóór het slapen of na de training, en je een door atleten gebouwd hulpmiddel verkiest boven een wellness-wearable. Wil je passieve vagale modulatie de hele dag, dan is Apollo Neuro de juiste vorm. Wil je een begeleid, programmagestuurd apparaat voor elke dag, dan biedt Pulsetto meer variatie voor vergelijkbaar geld.\n\n---\n\n## Achtergrondinformatie\n\nDe biologie achter waar deze apparaten op mikken — en de protocollen die de hardware versterken.\n\n- [Oefeningen voor de nervus vagus](/articles/vagus-nerve-exercises) — waarom de nervus vagus stroomopwaarts zit van HRV, slaap, stemming en ontsteking\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation) — het regelgevende en mechanistische landschap achter niet-invasieve VNS\n- [ACC en coherentiemonitoring](/articles/anterior-cingulate-core-coherence-monitoring) — hoe vagale tonus aandacht en emotieregulatie stroomopwaarts vormt\n",
+      "faq": [
+        {
+          "q": "Hoe werkt de Hoolest VeRelief Prime?",
+          "a": "De VeRelief Prime is een handheld tVNS-apparaat met gripelektroden. Je houdt hem tegen het oor om de auriculaire tak van de nervus vagus aan te spreken, of tegen de hals voor de cervicale tak, voor intensieve sessies van 3–5 minuten gericht op herstel en ontspanning vóór het slapen."
+        },
+        {
+          "q": "Heeft de Hoolest VeRelief Prime een abonnement nodig?",
+          "a": "Nee. De VeRelief Prime kost $279 als eenmalige aankoop, zonder abonnement. Hij is ontworpen door Hoolest Performance, een spin-off van Arizona State University, en de oprichters hebben hun eigen onderzoek naar HRV en inslapen met het apparaat gepubliceerd."
+        },
+        {
+          "q": "Hoolest VeRelief Prime vs Pulsetto: welke is beter?",
+          "a": "Pulsetto biedt meer protocolvariatie en werkt als passieve wearable. De VeRelief Prime is gebouwd voor atleten: korte, intensieve sessies die in herstelroutines passen. Het compromis is dat je hem tijdens sessies moet vasthouden, en de hogere piekintensiteit kan oncomfortabel zijn."
+        }
+      ]
     },
     "sensate": {
       "verdict": "Een passief, kalmerend infrasoon apparaat — zacht, geliefd, met bewijs voor het mechanisme dat achterblijft bij het enthousiasme van gebruikers.",
       "productType": "Infrasone kiezel op de borst, op de markt gebracht als vagusmodulator"
     },
     "xen-by-neuvana": {
-      "verdict": "Oor-tVNS verpakt als oordopjes — een slimme vormfactor voor consumenten, bescheiden onafhankelijk bewijs.",
+      "verdict": "Auriculaire tVNS verpakt als oordopjes — een slimme consumentenvorm, bescheiden onafhankelijk bewijs.",
+      "summary": "Xen is een paar oordopjes dat auriculaire tVNS — elektroden die via de gehoorgang de nervus vagus aanspreken — combineert met het afspelen van muziek, zodat de stimulatie bovenop het geluid meeloopt. Bediening via een telefoon met instelbare intensiteit en meerdere modi. Minder klinische herkomst dan Nurosym, maar de ervaring lijkt meer op het dragen van AirPods dan op het dragen van een medisch hulpmiddel.",
+      "description": "ONDA-review van Xen by Neuvana — auriculaire tVNS via oordopjes, gecombineerd met muziek. Beoordeeld op bewijs, mechanisme, protocollen en prijs.",
+      "bestFor": "Ideaal voor wie auriculaire tVNS wil in de vertrouwde vorm van oordopjes, gecombineerd met muziek.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op productdocumentatie van Neuvana, de bredere literatuur over auriculaire tVNS en onafhankelijke reviews uit 2026. Niet zelf hands-on getest door ONDA.",
       "productType": "Auriculaire tVNS (oordopjes, gekoppeld aan audio)",
-      "editorialAdjustment": "Eerlijkheid in marketing — de homepage zegt ‘Ondersteund door onderzoek, bewezen door resultaten’, maar de Xen-cijfers komen uit eigen pilotstudies van Neuvana, die volgens de eigen bronnenlijst ‘niet afkomstig zijn uit peer-reviewed publicaties’ (gecontroleerd in oktober 2026). Dit wordt hier gescoord, niet onder bewijs. (in het origineel: “Backed by Research, Proven by Results”)"
+      "pros": [
+        "Vorm van oordopjes — de meest vertrouwde consumentenvorm in de categorie",
+        "Stimulatie gecombineerd met muziek — maakt van sessies iets wat je leuk vindt",
+        "Geen abonnement nodig voor de volledige functionaliteit",
+        "Meerdere modi voor focus, rust en slaap"
+      ],
+      "cons": [
+        "Onafhankelijk klinisch bewijs voor het Xen-apparaat zelf is dun",
+        "Plaatsing van de elektroden in het oor is lastiger dan een tragusclip",
+        "Via een kabel verbonden met een bedieningseenheid",
+        "Geen meting van hartslagvariabiliteit (HRV) op het apparaat"
+      ],
+      "scoreNotes": {
+        "evidence": "Alleen door het bedrijf gesponsorde studies naar HRV en slaap, die in ONDA-scores niet als bewijs tellen; geen peerreviewed RCT's met het Xen-apparaat. Bewijs voor het mechanisme komt van auriculaire tVNS in het algemeen.",
+        "mechanism": "Auriculaire tVNS via elektroden in het oor — richt zich op de auriculaire vagustak. De stimulatie is gesynchroniseerd met muziek die via dezelfde oordopjes speelt.",
+        "protocols": "Meerdere modi (focus, rust, slaap) plus stimulatie gekoppeld aan muziek. Intensiteit door de gebruiker instelbaar.",
+        "comfort": "Oordopjes — vertrouwde vorm, maar de plaatsing van de elektroden in het oor is lastiger dan een tragusclip. De kabel naar de bedieningseenheid beperkt de bewegingsvrijheid.",
+        "biofeedback": "App registreert sessies; geen HRV op het apparaat. Optionele integratie met Apple Health.",
+        "value": "$399 voor de hardware, geen abonnement nodig. Duurder dan Pulsetto, minder onderzocht dan Nurosym."
+      },
+      "editorialAdjustment": "Eerlijkheid van de marketing — de homepage zegt “Backed by Research, Proven by Results” (onderbouwd door onderzoek, bewezen door resultaten), maar de Xen-cijfers komen uit Neuvana’s eigen pilotstudies, die de eigen literatuurlijst omschrijft als “not from peer-reviewed publications” (niet uit peerreviewed publicaties) (gecontroleerd in oktober 2026). Dit wordt hier meegewogen, niet onder bewijs.",
+      "content": "## Waar hij in uitblinkt\n\nXen by Neuvana kiest de meest consumentvriendelijke aanpak van auriculaire tVNS in dit overzicht. De stimulator zit als elektroden in oordopjes, en de stimulatie speelt bovenop muziek vanaf een telefoon — een sessie voelt daardoor meer als het dragen van AirPods dan van een medisch hulpmiddel. De modi dekken focus, rust en slaap, en de intensiteit regelt de gebruiker zelf. Voor volledig gebruik is geen abonnement nodig.\n\n## Wat zijn de nadelen van Xen by Neuvana?\n\nDe bewijsbasis is het zwakke punt. Het mechanisme van auriculaire tVNS is onderzocht met andere apparaten (grotendeels Parasym), maar die studies zijn geen bewijs voor Xen, en peerreviewed RCT's specifiek voor Xen bestaan nog niet; wat gepubliceerd is, is door het bedrijf gesponsord. De vorm van oordopjes heeft ook een praktisch nadeel — elektroden in het oor plaatsen is lastiger dan een tragusclip, en het apparaat zit met een kabel vast aan een bedieningseenheid.\n\n## Voor wie is Xen by Neuvana geschikt?\n\nKies Xen by Neuvana als de oordopjes en sessies met muziek dagelijks gebruik voor jou realistisch maken, en je kunt leven met een dunnere bewijsbasis voor het apparaat zelf. Is de grotere (grotendeels door de fabrikant gefinancierde) studiebasis doorslaggevend, dan is Nurosym de juiste keuze. Wil je een bredere protocolbibliotheek voor een lagere prijs, dan biedt Pulsetto meer voor minder.\n\n---\n\n## Achtergrond\n\nDe biologie achter waar deze apparaten op mikken — en de protocollen die het effect van de hardware versterken.\n\n- [CO₂-tolerantie en de zuurstofgrens](/articles/co2-tolerance-expanding-oxygen-limit) — waarom langzaam ademen de vagale tonus via CO₂-chemie herstelt\n- [Ademwerk als commandoregel](/articles/breathwork-command-line-interface) — de protocollen waarmee stimulatie wordt gecombineerd\n- [Controle over de HPA-as en cortisolregulatie](/articles/hpa-axis-control-cortisol-aggression) — waarom werken aan vagale tonus stroomafwaarts op cortisol mikt\n",
+      "faq": [
+        {
+          "q": "Is Xen by Neuvana het geld waard?",
+          "a": "Xen is het waard als je auriculaire tVNS wilt in de vertrouwde vorm van oordopjes, gecombineerd met muziek. Er is geen abonnement nodig en er zijn modi voor focus, rust en slaap. Onafhankelijk klinisch bewijs voor het Xen-apparaat zelf is dun, en de elektroden zijn lastiger te plaatsen dan een tragusclip."
+        },
+        {
+          "q": "Wat kost Xen by Neuvana?",
+          "a": "Xen by Neuvana kost eenmalig $399, zonder abonnement voor de volledige functionaliteit. Daarbij horen meerdere modi voor focus, rust en slaap, met stimulatie gekoppeld aan muziek."
+        },
+        {
+          "q": "Wat zijn de nadelen van Xen by Neuvana?",
+          "a": "Onafhankelijk klinisch bewijs voor het Xen-apparaat is dun. Elektroden in het oor plaatsen is lastiger dan een tragusclip, de oordopjes zitten met een kabel vast aan een bedieningseenheid, en er is geen HRV-meting op het apparaat."
+        }
+      ]
     },
     "livanova-vns-therapy": {
       "verdict": "Het geïmplanteerde VNS-referentieapparaat — een door de FDA goedgekeurd (approved) geïmplanteerd VNS-apparaat (voor medicatieresistente epilepsie en behandelingsresistente depressie) met meer dan twintig jaar bewijs — niet gelijkwaardig aan consumentenapparaten.",
@@ -1831,6 +2292,384 @@
           "a": "Mute heeft een gewenningsperiode en de eerste nachten voelen vreemd. Niet iedereen verdraagt plaatsing in de neus, er is een maatset nodig omdat er drie maten zijn, en de kosten per nacht zijn hoger dan bij externe strips."
         }
       ]
+    },
+    "currentbody-series-2": {
+      "verdict": "Beste referentie op de consumentenmarkt — grootste klantenbestand, verzorgde siliconen bouw, halsflap inbegrepen. Geen onafhankelijke studie met het masker zelf.",
+      "productType": "Flexibel siliconen LED-gezichtsmasker voor consumenten met halsflap"
+    },
+    "lumara-viso": {
+      "verdict": "Hoogste aantal LED's in 2026 — 470 LED's in flexibele siliconen met dekking van de hals. Premiumprijs; geen gepubliceerde studie met het masker zelf.",
+      "productType": "Premium flexibel siliconen roodlicht-gezichtsmasker met veel LED's"
+    },
+    "dr-dennis-gross-spectralite": {
+      "verdict": "Beste herkomst als dermatologiemerk — volgens het merk door de FDA gecleard, dubbel protocol rood + blauw (anti-aging + acne), harde schaal. Minder comfortabel dan alternatieven van siliconen.",
+      "productType": "LED-gezichtsmasker rood + blauw met harde schaal van een dermatologiemerk"
+    },
+    "theraface-mask": {
+      "verdict": "Beste crossover van het merk Therabody naar gezichtsmaskers — drie golflengten, premium bouw, merkherkomst uit de categorie massageguns. Het onderzoek is door het merk gefinancierd.",
+      "productType": "Premium LED-gezichtsmasker rood + blauw + amber van een consumentenmerk"
+    },
+    "lightstim-for-wrinkles": {
+      "verdict": "Apparaat voor in de hand met vier golflengten rood + nabij-infrarood, door de FDA gecleard (K120775; huidig model K261482), voor een toegankelijke prijs — maar geen gepubliceerde studies met het apparaat zelf. De handvorm betekent actief positioneren per sessie.",
+      "productType": "LED-apparaat voor in de hand, rood + nabij-infrarood"
+    },
+    "jovs-dpl-photofacial-mask": {
+      "verdict": "Beste specificaties met meerdere golflengten voor de prijs — Koreaanse K-beauty-techniek met zeven golflengtemodi. Weinig voorsprong in klinisch bewijs; merk is nieuwer dan de referenties in de categorie.",
+      "productType": "In Korea gebouwd LED-gezichtsmasker met meerdere golflengten"
+    },
+    "shark-cryoglow": {
+      "verdict": "Meest vernieuwende vormfactor in 2026 — actieve koeling gecombineerd met rode + blauwe LED. De koeling is het onderscheidende punt; de LED-dosis is bewust bescheiden.",
+      "productType": "Hybride gezichtsmasker met koeling + LED"
+    },
+    "solawave-wand-4-in-1": {
+      "verdict": "Beste budgetinstap in rood licht — staafje van $169 dat rode LED combineert met microstroom, warmte en massage. Bescheiden dosis, smalle LED-dekking; consumentengemak boven klinische diepgang.",
+      "productType": "Budgetstaafje voor in de hand met rood licht en meerdere modaliteiten"
+    },
+    "rubylx-lyra-pro": {
+      "verdict": "De premiumkeuze voor transparantie van tests — elke specificatie door derden geverifieerd, premiumprijs, kleiner merk dan Joovv.",
+      "productType": "Onafhankelijk getest premium LED-paneel rood + NIR"
+    },
+    "gembared-vesta": {
+      "verdict": "De specialist in bouw en EMF van de categorie — volledig afgeschermd, zes golflengten, ontworpen door de oprichter. Premiumprijs voor premium technische zorgvuldigheid.",
+      "productType": "EMF-afgeschermd full-spectrum LED-therapiepaneel"
+    },
+    "biolight-pro-900": {
+      "verdict": "Degelijk middelgroot alternatief voor Joovv — goede bouw, twee golflengten, geen opvallend onderscheidend punt voor de prijs.",
+      "productType": "Middelgroot LED-therapiepaneel rood + NIR"
+    },
+    "pulse-centers-pulse-xl-pro": {
+      "verdict": "Hoogste output onder de voor consumenten bereikbare PEMF. Spoelapplicatoren in klinische stijl, verkocht aan sport- en chiropractiepraktijken — een verkoopkanaal, geen bewijs; we vonden geen onafhankelijke studies met dit systeem. De prijs plaatst hem in het prosumer-/kliniekssegment.",
+      "productType": "Professioneel PEMF-spoelsysteem"
+    },
+    "curatron-3d": {
+      "verdict": "PEMF in klinische stijl met gedocumenteerde protocollen en een systeem met dubbele applicator. Middensegment tussen Bemer-matten en de spoelklinieken van Pulse Centers.",
+      "productType": "PEMF-systeem met spoel + mat en hoge intensiteit"
+    },
+    "imrs-prime": {
+      "verdict": "Zwitsers ontworpen alternatief voor Bemer — zaagtandgolfvorm, systeem met meerdere applicatoren, merk met tientallen jaren geschiedenis. Lagere prijs dan Bemer met vergelijkbare bouw.",
+      "productType": "Zwitsers ontworpen PEMF-systeem met mat + kussen + spotapplicator"
+    },
+    "bemer-classic-evo": {
+      "verdict": "De bekendste PEMF-mat en het best onderzochte afzonderlijke signaal — maar de meeste studies zijn klein of aan de fabrikant gelinkt, en onafhankelijke gecontroleerde studies vonden geen verschil met de controlegroep. Premiumprijs.",
+      "productType": "Professioneel PEMF-matsysteem"
+    },
+    "omi-full-body-mat": {
+      "verdict": "Degelijke PEMF-mat in het middensegment — eenvoudige bediening, toegankelijke prijs. Niet door de FDA gecleard voor botgenezing, geen studies met de mat zelf, geen combinatie van modaliteiten.",
+      "productType": "PEMF-mat voor het hele lichaam in het middensegment"
+    },
+    "earthpulse-sleep-on-command": {
+      "verdict": "PEMF gepromoot voor slaap — installatie onder het matras, Schumann- en delta-instellingen, middenprijs. Goed gebouwd, maar geen gecontroleerde studies tonen betere slaap aan.",
+      "productType": "PEMF-apparaat onder het matras, gericht op slaap"
+    },
+    "sunlighten-mpulse": {
+      "verdict": "De premium IR-sauna die de categorie aanvoert — echte 3 golflengten, premium cederhouten bouw, onafhankelijk gemeten lage EMF.",
+      "productType": "Premium 3-in-1 IR-cabinesauna (nabij, midden, ver)"
+    },
+    "finnleo-hallmark": {
+      "verdict": "Een in Finland gebouwde traditionele binnensauna — premium Finse bouw, volledige convectiewarmte, het best onderzochte saunamechanisme.",
+      "productType": "Traditionele Finse binnensauna (convectie)"
+    },
+    "saunaspace-faraday": {
+      "verdict": "De premium nabij-IR-sauna voor biohackers — gloeilampstralers, volledige kooi van Faraday, iets anders dan full-spectrum-IR.",
+      "productType": "Nabij-IR-sauna met gloeilampen en kooi van Faraday"
+    },
+    "sun-home-equinox": {
+      "verdict": "Een capabele nieuwkomer — full-spectrum-IR met ingebouwde chromotherapie en geluid, scherp geprijsd ten opzichte van de marktleiders.",
+      "productType": "Full-spectrum-IR-cabinesauna in het hogere middensegment"
+    },
+    "higherdose-blanket-v4": {
+      "verdict": "De draagbare IR-saunadeken die consumenten-IR mainstream maakte — alleen ver-IR, lage EMF, toegankelijke prijs.",
+      "productType": "Draagbare IR-saunadeken"
+    },
+    "therasage-thera-sauna-personal": {
+      "verdict": "Een degelijke IR-sauna voor biohackers in het middensegment — full-spectrum, behoorlijke EMF-discipline, toegankelijke prijs voor dit segment.",
+      "productType": "IR-sauna in het middensegment (tent- / cabineconfiguraties)"
+    },
+    "jnh-lifestyles-joyous": {
+      "verdict": "De geloofwaardige budget-IR-cabinesauna — alleen ver-IR, bouw van Canadese hemlock, toegankelijke prijs.",
+      "productType": "Budget-ver-IR-cabinesauna (1–3 personen)"
+    },
+    "relax-sauna-portable": {
+      "verdict": "De veteraan onder de draagbare ver-IR-sauna's — ontwerp met stoel en tent, lage EMF, niche maar een echt product.",
+      "productType": "Draagbare ver-IR-sauna (tent- / stoelconfiguratie)"
+    },
+    "olylife-tera-p90-plus": {
+      "verdict": "Populaire budgetstaaf die PEMF combineert met terahertzclaims — toegankelijke prijs, maar de terahertzmarketing overdrijft het gepubliceerde bewijs.",
+      "summary": "OlyLife TERA P90 Plus is een populaire budgetstaaf met PEMF + terahertz die vooral via direct-marketingkanalen wordt verkocht. Het PEMF-deel is echt en gebruikt gangbare PEMF-frequenties, al vonden we geen studies met dit apparaat; de claims over terahertzgolflengten zijn het redactionele probleem — de terahertzoutput van consumentenapparaten en de literatuur over biologische effecten sluiten niet aan bij de marketing. De toegankelijke prijs van $400–$700 houdt hem ondanks de kanttekeningen in beeld.",
+      "description": "ONDA-review van de OlyLife TERA P90 Plus — budgetstaaf met PEMF + terahertz. Veldsterkte, onderzoek, bouw en prijs; de terahertzclaims zijn het probleem.",
+      "bestFor": "Ideaal voor kopers met een klein budget die alleen het PEMF-deel waarderen en de terahertzmarketing bewust negeren — draagbare PEMF in handformaat onder de $700.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op productdocumentatie van OlyLife en onafhankelijke PEMF-reviews uit 2026. De terahertzclaims in de marketing zijn als redactioneel probleem gemarkeerd. Niet zelf hands-on getest door ONDA.",
+      "productType": "Budgetsysteem met PEMF- + terahertzstaaf",
+      "pros": [
+        "Toegankelijke budgetprijs ($400–$700)",
+        "Draagbare staaf in handformaat",
+        "Echt PEMF-deel met gangbare PEMF-frequenties",
+        "Breed verkrijgbaar"
+      ],
+      "cons": [
+        "Terahertzclaims in de marketing overdrijven het gepubliceerde bewijs",
+        "Verkoop in MLM-stijl — garantie wisselend",
+        "Weinig instelbare parameters en beperkte protocoldiepte",
+        "Geen dekking van het hele lichaam zoals een mat"
+      ],
+      "scoreNotes": {
+        "field-strength": "Gemiddelde PEMF-output voor een budgetapparaat. De terahertzclaims zijn het redactionele probleem — de terahertzoutput van consumentenhardware is slecht gedocumenteerd.",
+        "waveform-evidence": "Gebruikt gangbare PEMF-frequenties, zonder studies met dit apparaat; claims over biologische effecten van terahertz worden in de literatuur over consumentenapparaten niet goed onderbouwd. De marketing overdrijft het bewijs.",
+        "build": "Degelijke staaf voor de prijs. Verkoopkanalen neigen naar MLM — garantieondersteuning wisselt per verkoper.",
+        "programmability": "Beperkte bediening via presets. Geen echte toegang tot parameters.",
+        "form-factor": "Staaf in handformaat — draagbaar, voor gericht gebruik. Geen dekking van het hele lichaam zoals een mat.",
+        "value": "$400–$700 — toegankelijke budgetprijs als je de kanttekeningen bij terahertz accepteert en alleen het PEMF-deel waardeert."
+      },
+      "content": "## Waar hij in uitblinkt\n\nOlyLife TERA P90 Plus is de populaire budgetstaaf met PEMF + terahertz — toegankelijke prijs, draagbare staaf in handformaat en een echt PEMF-deel met gangbare PEMF-frequenties (geen studies met dit apparaat). Breed verkrijgbaar via direct-marketingkanalen.\n\n## Wat zijn de nadelen van OlyLife TERA P90 Plus?\n\nDe terahertzmarketing. De terahertzoutput van consumentenapparaten en de literatuur over biologische effecten sluiten niet aan bij de marketingclaims — het PEMF-deel is echt, het terahertzdeel is het redactionele probleem. Verkoopkanalen in MLM-stijl zorgen bovendien voor een wisselende garantie.\n\n## Voor wie is OlyLife TERA P90 Plus geschikt?\n\nKies OlyLife TERA P90 Plus alleen als je de terahertzmarketing bewust negeert en de PEMF-staaf voor een budgetprijs waardeert. Voor een eerlijk gepromote budgetwearable: Resona Health VIBE. Voor een mat voor het hele lichaam: OMI of Healthy Wave.\n\n---\n\n## Achtergrond\n\n- [PEMF-therapie — wat het bewijs laat zien](/science/evidence/pemf) — wat bij mensen is aangetoond, wat uit celstudies komt, en wat FDA-registratie, -clearance en -goedkeuring betekenen\n",
+      "faq": [
+        {
+          "q": "Is de OlyLife TERA P90 Plus het geld waard?",
+          "a": "Alleen voor kopers met een klein budget die het PEMF-deel waarderen en de terahertzmarketing negeren. Je krijgt een draagbare staaf met echte PEMF op gangbare frequenties, niet getest in studies. De terahertzclaims overdrijven het bewijs, en de verkoop in MLM-stijl maakt de garantie wisselend."
+        },
+        {
+          "q": "Wat kost de OlyLife TERA P90 Plus?",
+          "a": "De losse TERA P90 Plus-staaf staat geprijsd op $550, binnen een budgetbereik van $400 tot $700. Omdat hij via MLM-achtige kanalen wordt verkocht, kan de garantieondersteuning verschillen per plek waar je koopt."
+        },
+        {
+          "q": "Wat zijn de nadelen van de OlyLife TERA P90 Plus?",
+          "a": "De terahertzclaims in de marketing overdrijven het gepubliceerde bewijs, verkoop in MLM-stijl leidt tot wisselende garantieondersteuning, er zijn weinig instelbare parameters en beperkte protocoldiepte, en als staaf in handformaat biedt hij geen dekking van het hele lichaam zoals een mat. Waardeer hem alleen om de PEMF."
+        }
+      ]
+    },
+    "eight-sleep-pod-5": {
+      "verdict": "De maximale Eight Sleep — de Pod 5 Ultra voegt een verstelbare bodem, een hydro-aangedreven deken voor klimaat van bovenaf, ingebouwde audio en snurkbeperking toe, maar met $6,099+ verdubbelt de prijs ongeveer. Het klimaat met twee zones en de technologie voor hartslagvariabiliteit (HRV) zijn hetzelfde als bij de Pod 4, die de beste prijs-kwaliteit blijft. Let op: Eight Sleep verving de Pod 5 op 23 september 2026 door de Pod 6 — vergelijk resterende Pod 5-voorraad met de prijzen van de Pod 6.",
+      "summary": "De Eight Sleep Pod 5 is de 2026-generatie van het toonaangevende slaapklimaatsysteem in de categorie. Het vlaggenschip Pod 5 Ultra is een vollediger bedsysteem: een verstelbare bodem, een hydro-aangedreven deken die koeling/verwarming van boven én van onder toevoegt, ingebouwde soundscapes en speakers, en automatische snurkbeperking die je hoofd zachtjes optilt. De Pod 5 Core (alleen hoes) voegt sneller verwarmen/koelen en slimmere AI toe. Maar de basis — temperatuur met twee zones, AI Autopilot, HRV- en slaapfasetracking, trilwekker — is identiek aan de Pod 4, en de \"slaapagent\" Autopilot 4.0 van april 2026 (integratie met Apple/Google Health, ochtendbriefing in gewone taal) komt ook naar de Pod 4. De Pod 5 Ultra begint rond $6,099 (queen) tot $6,300 (king) tegenover $2,449–$2,649 voor de Pod 4, en het abonnement blijft verplicht. Op 23 september 2026 lanceerde Eight Sleep de Pod 6 als vervanger van de Pod 5 in alle markten, vanaf $1,999 (Solo) en $2,899 (queen, twee zones), dus de Pod 5 is nu de vorige generatie.",
+      "description": "ONDA-review van de Eight Sleep Pod 5: de Ultra voegt verstelbare bodem en audio toe voor $6,099+. Sinds 09/2026 vervangen door Pod 6 (vanaf $1,999).",
+      "bestFor": "Ideaal voor kopers die het maximale volledige bedsysteem willen — verstelbare bodem, klimaat van bovenaf, audio en snurkbeperking — en de prijs en het abonnement accepteren. Voor de kernervaring zijn de Pod 4 of Pod 5 Core de slimmere koop.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op specificaties van Eight Sleep en onafhankelijke reviews uit 2026 van de Pod 5 Ultra en Pod 4. Niet zelf hands-on getest door ONDA.",
+      "productType": "Premium slim slaapklimaatsysteem met hoes + matras",
+      "pros": [
+        "Meest volledige klimaatregeling in de categorie — hydrodeken van bovenaf plus hoes met twee zones (Ultra)",
+        "Verstelbare bodem, ingebouwde audio en automatische snurkbeperking op de Ultra",
+        "Beste slaap-/HRV-tracking van alle klimaatsystemen, nu met de slaapagent Autopilot 4.0",
+        "Betrouwbaarheid over meerdere jaren overwegend positief"
+      ],
+      "cons": [
+        "Pod 5 Ultra verdubbelt ongeveer de prijs ($6,099+) voor extra, geen kernfuncties",
+        "Autopilot-abonnement nog steeds nodig voor alle functies",
+        "De paradepaardje-software (Autopilot 4.0) komt ook naar de Pod 4 — minder reden om te upgraden",
+        "Grotere installatie en footprint; vast in het Eight Sleep-ecosysteem"
+      ],
+      "scoreNotes": {
+        "climate-range": "De Pod 5 Ultra voegt bovenop de hoes met twee zones een hydro-aangedreven deken toe voor temperatuurregeling van bovenaf — het meest volledige klimaatbereik in de categorie. De Pod 5 Core voegt sneller verwarmen/koelen toe. Twee zones (voor jou en je partner) blijven.",
+        "build": "Premium hoes plus, op de Ultra, een verstelbare bodem en stillere hub. Verfijnde fysieke bediening. Betrouwbaarheid over meerdere jaren overwegend positief.",
+        "app-tracking": "Dezelfde toonaangevende slaap-/HRV-tracking, nu met Autopilot 4.0 — een \"slaapagent\" die Apple Health / Google Health Connect integreert en een ochtendbriefing in gewone taal schrijft. Opvallend: die software komt ook naar de Pod 4.",
+        "form-factor": "De Ultra is een vollediger systeem: verstelbare bodem, ingebouwde speakers en automatische snurkbeperking (tilt het hoofd op). Capabeler, maar een grotere installatie en footprint dan een Pod met alleen een hoes.",
+        "subscription": "Ongewijzigd — het Autopilot-abonnement is nog steeds nodig voor alle functies (~$15–25/maand). Premium hardware achter een doorlopend lidmaatschap blijft het redactionele struikelblok.",
+        "value": "Pod 5 Ultra $6,099–$6,300 (queen/king) plus abonnement — ongeveer het dubbele van de Pod 4. Voor de kern-slaapklimaatervaring levert de Pod 4 (of Pod 5 Core) het grootste deel van de waarde voor veel minder."
+      },
+      "content": "> Update (september 2026): Eight Sleep verving de Pod 5 op 23 september 2026 door de Pod 6 — een kleinere hub, meer biometrische sensoren en een lagere instapprijs ($1,999 Solo; $2,899 queen met twee zones). De Pod 5 is nu de vorige generatie; vergelijk eventuele resterende Pod 5-voorraad met de prijzen van de Pod 6.\n\n## Waar hij voorloopt\n\nDe Eight Sleep Pod 5 bouwt de voorsprong in de categorie uit die de [Pod 4](/reviews/eight-sleep-pod-4) neerzette. Op het vlaggenschip Pod 5 Ultra voegt een hydro-aangedreven deken koeling en verwarming van bovenaf toe aan de hoes met twee zones eronder — het meest volledige temperatuurbereik van alle slimme slaapsystemen — samen met een verstelbare bodem, ingebouwde audio en automatische snurkbeperking. De tracking is nog steeds de beste in zijn klasse, nu aangedreven door de \"slaapagent\" Autopilot 4.0, die data uit Apple/Google Health leest en een ochtendbriefing in gewone taal schrijft.\n\n## Wat er echt veranderde ten opzichte van de Pod 4\n\nDe toevoegingen zijn echt, maar ze zitten bovenop een ongewijzigde kern. Temperatuur met twee zones, AI Autopilot, HRV- en slaapfasetracking en de trilwekker zijn identiek aan de Pod 4 — en de Autopilot 4.0-software komt ook naar de Pod 4. De echte voordelen van de Pod 5 Ultra zijn dus de verstelbare bodem, de deken van bovenaf, de audio en de snurkbeperking, niet de basis van het slaapklimaat. Zie de volledige vergelijking [Pod 4 vs Pod 5](/reviews/vs/eight-sleep-pod-4-vs-eight-sleep-pod-5).\n\n## Het addertje\n\nPrijs en abonnement. De Pod 5 Ultra begint rond $6,099 (queen) — ongeveer het dubbele van de Pod 4 — en vereist nog steeds het Autopilot-lidmaatschap voor alle functies. Dat is veel geld voor extra comfort als de kernervaring gedeeld wordt.\n\n## Voor wie is de Eight Sleep Pod 5?\n\nKies de Pod 5 Ultra als je het maximale volledige bedsysteem wilt en de prijs niet doorslaggevend is. Wil je de Eight Sleep-slaapklimaatervaring met de beste prijs-kwaliteit, dan is de [Pod 4](/reviews/eight-sleep-pod-4) — of de goedkopere Pod 5 Core — de slimmere koop. Voor het bredere veld, zie de [beste slimme slaapklimaatsystemen](/reviews/smart-sleep-climate).\n",
+      "faq": [
+        {
+          "q": "Is de Eight Sleep Pod 5 het geld waard?",
+          "a": "Alleen als je het maximale volledige bedsysteem wilt. De Pod 5 Ultra voegt een verstelbare bodem, hydrodeken van bovenaf, ingebouwde audio en snurkbeperking toe, maar verdubbelt ongeveer de prijs. Het klimaat met twee zones en de HRV-technologie zijn gelijk aan de Pod 4, die de beste prijs-kwaliteit blijft."
+        },
+        {
+          "q": "Hoeveel kost de Eight Sleep Pod 5?",
+          "a": "De Eight Sleep Pod 5 Ultra had een adviesprijs van $6,099 voor queen en ongeveer $6,300 voor king, plus zo'n $20 per maand voor het Autopilot-abonnement. De Pod 5 Core (alleen hoes) was goedkoper. Sinds 23 september 2026 is de Pod 5 vervangen door de Pod 6, die begint bij $1,999 (Solo) en $2,899 (queen)."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Eight Sleep Pod 5?",
+          "a": "De Pod 5 Ultra verdubbelt ongeveer de prijs voor extra in plaats van kernfuncties, en het Autopilot-abonnement blijft verplicht. Autopilot 4.0 komt ook naar de Pod 4, wat de reden om te upgraden verkleint, en de installatie is groter, met ecosysteem-lock-in."
+        },
+        {
+          "q": "Eight Sleep Pod 5 vs Pod 4: welke is beter?",
+          "a": "De Pod 4 biedt betere prijs-kwaliteit; de Pod 5 Ultra is alleen beter als je een volledig bedsysteem wilt met verstelbare bodem, deken van bovenaf, audio en snurkbeperking. Beide delen het klimaat met twee zones en de HRV-technologie, en Autopilot 4.0 komt ook naar de Pod 4."
+        }
+      ]
+    },
+    "chilipad-dock-pro": {
+      "verdict": "Het abonnementsvrije watergekoelde alternatief voor Eight Sleep — premium klimaat, geen doorlopende kosten, geen tracking van hartslagvariabiliteit (HRV).",
+      "summary": "De ChiliPad Dock Pro is de premium watergekoelde / verwarmde matrasoplegger van Sleepme. Actieve koeling en verwarming (13–46°C) via een met water gevulde oplegger, optioneel met twee zones, geen abonnement nodig voor alle functies. Hij mist de HRV-tracking en slaapfasedetectie van Eight Sleep, maar de klimaathardware is vergelijkbaar en het eigendomsmodel is overzichtelijker.",
+      "description": "ONDA-review van de ChiliPad Dock Pro — de premium watergekoelde slaapklimaat-oplegger van Sleepme, zonder verplicht abonnement.",
+      "bestFor": "Ideaal voor wie waterkoeling op Eight Sleep-niveau wil zonder abonnementsmodel — zonder trackingballast.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op productdocumentatie van Sleepme/Chili en onafhankelijke reviews uit 2026. Niet zelf hands-on getest door ONDA.",
+      "productType": "Premium watergekoelde / verwarmde matrasoplegger (zonder abonnement)",
+      "pros": [
+        "Geen abonnement nodig — alle functies bij de hardware",
+        "Waterkoeling/-verwarming met twee zones, vergelijkbaar met Eight Sleep",
+        "Solide betrouwbaarheid over meerdere jaren",
+        "Overzichtelijker eigendomsmodel dan Eight Sleep"
+      ],
+      "cons": [
+        "Geen HRV-tracking of slaapfasedetectie",
+        "Sleepme-app is lichter dan die van Eight Sleep",
+        "Klimaatherstel iets trager dan bij de Pod 4",
+        "Oplegger op de matras verandert het ligcomfort iets"
+      ],
+      "scoreNotes": {
+        "climate-range": "Sterk bereik met twee zones (13–46°C). Bij piekhitte iets trager herstel dan Eight Sleep Pod 4; verder vergelijkbaar klimaat.",
+        "build": "Premium oplegger met stille hub. 2 jaar garantie. Solide betrouwbaarheid van Sleepme/Chili over meerdere jaren.",
+        "app-tracking": "Sleepme-app voor temperatuurschema's; geen HRV-tracking, geen slaapfasedetectie. Alleen import uit Apple Gezondheid.",
+        "form-factor": "Oplegger op de bestaande matras. Twee zones beschikbaar. Hub vergelijkbaar in formaat met Eight Sleep.",
+        "subscription": "Geen abonnement nodig. Alle functies worden met de hardware geleverd. Het grootste redactionele verschil met Eight Sleep.",
+        "value": "Resterende voorraad Dock Pro (nu \"Chilipad 1.0\") wordt met korting verkocht; opvolger Chilipad 2.0 heeft een adviesprijs van $1,599-1,799 — geen doorlopende kosten. Over 3 jaar flink goedkoper dan de totale kosten van Eight Sleep."
+      },
+      "content": "> Update (september 2026): Sleepme verkoopt de Dock Pro nu als \"Chilipad 1.0\" — 30% korting zolang de voorraad strekt — en de opvolger is de Chilipad 2.0, die Sleepme omschrijft als een volledig doorontwikkeld Dock Pro-systeem (vanaf $1,599; $1,699 queen; geen abonnement). Deze review gaat over de Dock Pro-hardware.\n\n## Waar hij voorloopt\n\nDe ChiliPad Dock Pro is het abonnementsvrije antwoord van Sleepme op Eight Sleep. Vergelijkbare waterkoeling/-verwarming met twee zones zonder doorlopende kosten, betrouwbaarheid over meerdere jaren en een overzichtelijker eigendomsmodel. Het compromis: geen HRV-tracking en een lichtere app — het apparaat is een klimaattool, geen tracker.\n\n## Wat zijn de nadelen van de ChiliPad Dock Pro?\n\nGeen HRV. Geen slaapfasedetectie. De Sleepme-app regelt klimaatschema's, geen biofeedback. Draag je al een Oura of Whoop, dan maakt dat niet uit; wil je geïntegreerde tracking, dan is Eight Sleep de juiste vorm.\n\n## Voor wie is de ChiliPad Dock Pro?\n\nKies de ChiliPad Dock Pro als je premium watergekoeld slaapklimaat wilt zonder abonnement. Voor geïntegreerde HRV/tracking: Eight Sleep Pod 4. Voor luchtstroom tegen een lagere prijs: BedJet 3.\n\n---\n\n## Achtergrondinformatie\n\nDe biologie achter waarom regeling van de bedtemperatuur slaapdiepte en herstel stuurt.\n\n- [Reinigt slaap echt je brein? Het glymfatische bewijs](/articles/nightly-flush-glymphatic-neural-cache) — wat bij mensen is aangetoond en wat nog omstreden is\n- [Protocol: de circadiane harde reset](/articles/protocol-circadian-hard-reset) — waar koeling past in een routine om je slaapritme te resetten\n",
+      "faq": [
+        {
+          "q": "Is de ChiliPad Dock Pro het geld waard?",
+          "a": "Ja, als je premium waterkoeling wilt zonder abonnement. De ChiliPad Dock Pro biedt actieve koeling en verwarming met twee zones van 13 tot 46°C, vergelijkbaar met Eight Sleep, met alle functies en zonder doorlopende kosten. HRV-tracking en slaapfasedetectie ontbreken."
+        },
+        {
+          "q": "Hoeveel kost de ChiliPad Dock Pro?",
+          "a": "Sleepme verkoopt resterende Dock Pro-exemplaren nu als 'Chilipad 1.0' met 30% korting zolang de voorraad strekt; de opvolger, de Chilipad 2.0, kost $1,599-1,799 afhankelijk van het formaat ($1,699 queen), zonder abonnement. Alle functies komen met de hardware, wat een overzichtelijker eigendomsmodel geeft dan de lidmaatschapsaanpak van Eight Sleep. HRV-tracking zit er niet in."
+        },
+        {
+          "q": "Wat zijn de nadelen van de ChiliPad Dock Pro?",
+          "a": "De ChiliPad Dock Pro heeft geen HRV-tracking of slaapfasedetectie, en de Sleepme-app is lichter dan die van Eight Sleep. Het klimaatherstel is iets trager dan bij de Pod 4, en de oplegger op de matras verandert het ligcomfort iets."
+        },
+        {
+          "q": "ChiliPad Dock Pro vs Eight Sleep Pod 4: welke is beter?",
+          "a": "De ChiliPad Dock Pro is beter voor abonnementsvrij eigendom; de Pod 4 is beter voor geïntegreerde HRV- en slaaptracking. De klimaathardware is vergelijkbaar, maar de Pod 4 kost ongeveer $4,000 plus zo'n $20 per maand, tegenover ongeveer $1,700 voor de huidige Chilipad 2.0 van Sleepme (queen) zonder kosten."
+        }
+      ]
+    },
+    "sleep-number-climate360": {
+      "verdict": "Slim-bedaanpak van slaapklimaat — klimaat ingebouwd in het matras, niet toegevoegd als laag. Premiumprijs.",
+      "productType": "Slim bed met ingebouwd klimaat (geïntegreerd in het matras)"
+    },
+    "iqair-healthpro-plus": {
+      "verdict": "De premiumkeuze voor filtratie — HyperHEPA H14-filtratie vangt 99,5% van de deeltjes bij 0.003 micron, decennialange merkgeschiedenis, ingezet in ziekenhuizen tijdens COVID-19.",
+      "summary": "De IQAir HealthPro Plus is een in Zwitserland ontwikkelde luchtreiniger waarvan het HyperHEPA-filter door de fabrikant als H14 is geclassificeerd (volgens de fabrikant), en die 99,5% van de deeltjes tot 0.003 micron afvangt (vs True HEPA H13 bij 0,3 micron), met een zware V5-Cell-module met actieve kool tegen VOS en meertraps dekking van 1125 sq ft. Ingezet in ziekenhuizen en klinische omgevingen. De premiumprijs weerspiegelt die filtratiespecificatie.",
+      "description": "ONDA-review van de IQAir HealthPro Plus — Zwitserse HyperHEPA-luchtreiniger met volgens de fabrikant H14-filtratie. Filtratie, CADR en prijs.",
+      "bestFor": "Ideaal voor wie door de fabrikant als H14 geclassificeerde HEPA-filtratie (volgens de fabrikant) wil met decennialange Zwitserse geschiedenis — zonder slimme functies.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op productdocumentatie van IQAir, AHAM-certificering en luchtkwaliteits-/consumentenreviews uit 2026. Niet zelf hands-on getest door ONDA.",
+      "productType": "HyperHEPA-luchtreiniger (door de fabrikant als H14 geclassificeerd)",
+      "pros": [
+        "HyperHEPA H14 — diepste filtratie in de consumentencategorie",
+        "Ingezet in ziekenhuizen / klinische omgevingen",
+        "Decennialange Zwitserse merkgeschiedenis",
+        "Filtercassettes gaan 2-4 jaar mee"
+      ],
+      "cons": [
+        "Premiumprijs ($1,099)",
+        "Geen app, geen sensoren, geen slimme functies",
+        "Luid op hoge stand (~65 dB)",
+        "Alleen handmatige bediening — geen automodus"
+      ],
+      "scoreNotes": {
+        "filtration-technology": "HyperHEPA H14 — vangt 99,5% bij 0.003 micron (vs True HEPA H13 met 99,97% bij 0,3 micron). Diepste filtratiespecificatie voor consumenten. V5-Cell-koolmodule tegen VOS.",
+        "cadr-coverage": "AHAM-geverifieerde CADR. 1125 sq ft dekking bij 2 ACH; ~450 sq ft bij 5 ACH. Conservatieve opgave van de fabrikant.",
+        "build-noise": "Zwitserse premiumbouw, decennialange betrouwbaarheid. Stil op laag (~30 dB); luider op hoog (~65 dB) — compromis door de ventilatorgrootte.",
+        "smart-features": "Geen app, geen ingebouwde sensoren. Het opvallende gat ten opzichte van premiumconcurrenten met app zoals Dyson / Molekule.",
+        "maintenance-cost": "Filtercassettes gaan 2-4 jaar mee. ~$200-300/jaar aan filterkosten. Gunstige eigendomskosten op lange termijn.",
+        "value": "$1,099 — premiumprijs. Gerechtvaardigd door de door de fabrikant als H14 geclassificeerde filtratie; duur vergeleken met alternatieven van Dyson / Coway met slimme functies."
+      },
+      "content": "## Waar hij voorloopt\n\nDe IQAir HealthPro Plus heeft een door de fabrikant als H14 geclassificeerd filter (volgens de fabrikant) — HyperHEPA vangt deeltjes tot 0.003 micron, decennialange Zwitserse merkgeschiedenis, ingezet in ziekenhuizen en klinische omgevingen. Weinig luchtreinigers voor consumenten vermelden een vergelijkbare filtratiespecificatie.\n\n## Wat zijn de nadelen van de IQAir HealthPro Plus?\n\nSlimme functies en geluid op hoge stand. Geen app, geen sensoren, geen automodus — IQAir is een puur mechanisch filterapparaat. Het ventilatorgeluid op hoge stand (~65 dB) is luid. Wil je slimme integratie, dan passen Dyson of Molekule beter.\n\n## Voor wie is de IQAir HealthPro Plus?\n\nKies de IQAir HealthPro Plus voor door de fabrikant als H14 geclassificeerde HEPA-filtratie (volgens de fabrikant) — zonder slimme functies. Voor premium slimme functies: Dyson Big+Quiet. Voor premium PECO: Molekule Air Pro. Voor slim uit het hogere middensegment: Coway Airmega 400.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Fase-gekoppelde akoestische slaapstimulatie](/articles/phase-locked-acoustic-sleep)\n- [Reinigt slaap echt je brein? Het glymfatische bewijs](/articles/nightly-flush-glymphatic-neural-cache) — wat bij mensen is aangetoond en wat nog omstreden is\n",
+      "faq": [
+        {
+          "q": "Is de IQAir HealthPro Plus $1,099 waard?",
+          "a": "Ja, als je door de fabrikant als H14 geclassificeerde filtratie (volgens de fabrikant) wilt. Het HyperHEPA H14-filter vangt 99,5% van de deeltjes tot 0.003 micron, hij wordt in ziekenhuizen ingezet en de filtercassettes gaan 2–4 jaar mee. Wil je een app, sensoren of automodus, dan krijg je voor die prijs niets daarvan."
+        },
+        {
+          "q": "Wat is het verschil tussen HyperHEPA en True HEPA?",
+          "a": "Het HyperHEPA H14-filter van de IQAir HealthPro Plus vangt 99,5% van de deeltjes tot 0.003 micron, terwijl True HEPA H13-filters zijn geclassificeerd voor 0,3 micron. Daarnaast is er een zware V5-Cell-module met actieve kool tegen VOS. Niets anders in de consumentencategorie haalt die specificatie."
+        },
+        {
+          "q": "Wat zijn de nadelen van de IQAir HealthPro Plus?",
+          "a": "Hij kost $1,099 en heeft geen app, geen sensoren en geen automodus, dus de bediening is alleen handmatig. Hij is ook luid op hoge stand, rond 65 dB. Je betaalt voor filtratiediepte en decennialange Zwitserse geschiedenis, niet voor gemaksfuncties."
+        }
+      ]
+    },
+    "blueair-healthprotect-7770i": {
+      "verdict": "Beste Zweedse premium — HEPASilent-ionenladingsfiltratie levert HEPA-equivalente afvang bij minder geluid, plus de altijd-aan-modus GermShield. Premiumprijs.",
+      "summary": "De Blueair HealthProtect 7770i is de Zweedse premiumreferentie — HEPASilent-ionenladingstechnologie levert HEPA-equivalente afvang bij minder geluid dan klassieke HEPA-ventilatoren, plus de zuinige altijd-aan-modus GermShield, realtime PM2.5- / VOC-sensoren en app-integratie. Decennialange merkgeschiedenis van Blueair op de Europese markt.",
+      "description": "ONDA-review van de Blueair HealthProtect 7770i — Zweedse premium luchtreiniger met HEPASilent en GermShield 24/7-modus. Filtratie, CADR en prijs.",
+      "bestFor": "Ideaal voor wie Zweedse premiumtechniek met HEPASilent- en GermShield-modi wil — met kleinere dekking en hogere filterkosten dan Coway.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op productdocumentatie van Blueair, AHAM-certificering en Europese consumentenreviews uit 2026. Niet zelf hands-on getest door ONDA.",
+      "productType": "Zweedse premium luchtreiniger met HEPASilent + GermShield",
+      "pros": [
+        "HEPASilent-technologie — HEPA-equivalent bij minder geluid",
+        "GermShield altijd-aan-modus",
+        "Decennialange Zweedse merkgeschiedenis van Blueair",
+        "Naast Dyson de stilste in de premiumcategorie"
+      ],
+      "cons": [
+        "Premiumprijs ($820)",
+        "Geen onderscheid via HyperHEPA / PECO",
+        "Filter elke 6 maanden vs. 12 maanden bij Coway",
+        "Kleinere dekking dan Coway Airmega 400"
+      ],
+      "scoreNotes": {
+        "filtration-technology": "Combinatie van HEPASilent-ionenlading + HEPA — vangt deeltjes via ladingsaantrekking, waardoor een lagere ventilatorsnelheid nodig is. HEPA-equivalent zonder de diepte van HyperHEPA.",
+        "cadr-coverage": "AHAM-gecertificeerde CADR. 540 sq ft dekking bij 5 ACH.",
+        "build-noise": "Zweedse premiumbouw. ~23 dB op laag (bij de stilste), 47 dB op hoog. HEPASilent-technologie verlaagt de benodigde ventilatorsnelheid.",
+        "smart-features": "PM2.5- / VOC-sensoren, GermShield altijd-aan-modus, app-integratie, ondersteuning voor Alexa / Google Home.",
+        "maintenance-cost": "Filter elke 6 maanden. ~$120-180/jaar aan filterkosten. Hoger dan Coway maar lager dan Molekule.",
+        "value": "$820 — premiumprijs. Gerechtvaardigd door Zweedse techniek + HEPASilent + GermShield; duur vergeleken met de Coway Airmega uit het hogere middensegment."
+      },
+      "content": "## Waar hij voorloopt\n\nDe Blueair HealthProtect 7770i is de Zweedse premiumreferentie — HEPASilent-ionenladingsfiltratie levert HEPA-equivalente afvang bij minder geluid, GermShield altijd-aan-modus en volledige slimme functies. Decennialange Europese merkgeschiedenis.\n\n## Wat zijn de nadelen van de Blueair HealthProtect 7770i?\n\nDekking en filterkosten vergeleken met Coway. 540 sq ft vs. 1560 sq ft AHAM-dekking bij de Coway Airmega 400. Filter elke 6 maanden vs. 12 maanden bij Coway.\n\n## Voor wie is de Blueair HealthProtect 7770i?\n\nKies de Blueair 7770i voor Zweedse premium HEPASilent + GermShield. Voor meer dekking tegen een lagere prijs: Coway Airmega 400. Voor klinische HEPA: IQAir HealthPro Plus. Voor Dyson-afwerking: Dyson Big+Quiet.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Fase-gekoppelde akoestische slaapstimulatie](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "Is de Blueair HealthProtect 7770i het geld waard?",
+          "a": "Ja, als stille werking en Zweedse premiumtechniek belangrijk voor je zijn. HEPASilent-ionenladingsfiltratie levert HEPA-equivalente afvang bij minder geluid, plus een GermShield altijd-aan-modus. Je betaalt $820 en accepteert een kleinere dekking en hogere filterkosten dan de Coway Airmega 400."
+        },
+        {
+          "q": "Hoeveel kost de Blueair HealthProtect 7770i?",
+          "a": "De Blueair HealthProtect 7770i kost los $820. De filters gaan 6 maanden mee, tegenover 12 maanden bij Coway, dus de doorlopende filterkosten zijn hoger dan bij Coway-modellen uit dezelfde klasse. Hij heeft realtime PM2.5- en VOC-sensoren en app-integratie."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Blueair HealthProtect 7770i?",
+          "a": "De Blueair HealthProtect 7770i heeft een premiumprijs van $820 en mist onderscheid via HyperHEPA of PECO. De filtercyclus van 6 maanden is korter dan de 12 maanden van Coway, en de dekking is kleiner dan bij de Coway Airmega 400. Het geluidsniveau hoort wel bij de laagste in de premiumcategorie."
+        },
+        {
+          "q": "Blueair HealthProtect 7770i vs Coway Airmega 400: welke is beter?",
+          "a": "De Coway Airmega 400 is beter voor dekking en prijs-kwaliteit; de Blueair is beter voor stille premiumtechniek. Coway dekt meer ruimte voor $479 met een filtercyclus van 12 maanden, terwijl Blueair voor $820 de HEPASilent- en GermShield-modi toevoegt."
+        }
+      ]
+    },
+    "zoe": {
+      "verdict": "Het wetenschappelijk best onderbouwde CGM-programma — en het enige dat glucose, microbioom en bloedwaarden samenbrengt in één voedingsplan.",
+      "summary": "Zoe is het in het VK ontwikkelde programma voor gepersonaliseerde voeding onder leiding van epidemioloog Tim Spector. Het combineert twee weken met een Abbott Libre-CGM met een thuistest van het darmmicrobioom en een panel bloedwaarden, en zet die drie signalen om in voedingsrankings die zijn afgestemd op jouw fysiologie. Na de meetfase van 2 weken houd je de app en de rankings met een abonnement van £60/maand. Sterke wetenschap, sterke inhoud, minder geschikt voor doorlopend CGM-gebruik.",
+      "description": "ONDA-review van Zoe — het voedingsprogramma van Tim Spector met CGM, darmmicrobioomtest en bloedwaarden. Beoordeeld op inzichten, nauwkeurigheid en prijs.",
+      "bestFor": "Ideaal voor wie gepersonaliseerde voeding wil die gebaseerd is op echte gepubliceerde wetenschap, niet alleen op glucosecurves.",
+      "testNote": "Evidence-based beoordeling — gebaseerd op productdocumentatie van Zoe, de gepubliceerde PREDICT-studiereeks en onafhankelijke reviews uit 2026. Niet zelf hands-on getest door ONDA.",
+      "productType": "Programma voor gepersonaliseerde voeding (Libre + microbioom + bloed)",
+      "pros": [
+        "Het enige programma dat CGM, darmmicrobioom en bloedwaarden in één analyse samenbrengt",
+        "Onder leiding van Tim Spector — de meest geloofwaardige wetenschappelijke leider in consumentenvoeding",
+        "Gepersonaliseerde voedingsrankings onderbouwd door de gepubliceerde PREDICT-studies",
+        "Op lange termijn goedkoper dan Levels of Nutrisense"
+      ],
+      "cons": [
+        "De CGM-fase duurt vast twee weken — geen tool voor doorlopende CGM",
+        "Geen export van ruwe glucosedata",
+        "Oudere Libre-variant voor 2 weken — de nauwkeurigheid is het zwakst in de tweede week",
+        "Vooral beschikbaar in het VK, langzamere uitbreiding in de VS"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "Abbott Libre (2 weken dragen), door de fabrikant opgegeven MARD ~9–11% (cijfers van de fabrikant tellen in ONDA-scores niet als bewijs). Geen kalibratie nodig; de nauwkeurigheid in de tweede week is het zwakke punt. Gebruikt een eerdere Libre-versie; geen onafhankelijke controle van precies deze combinatie. ZOE testte zijn programma in een gerandomiseerde gecontroleerde studie en noemt het op de homepage ook precies zo.",
+        "insights": "Het enige programma hier dat CGM samenbrengt met darmmicrobioom en bloedwaarden in één voedingsscore — een unieke blik op meerdere biomarkers, onderbouwd door de gepubliceerde PREDICT-studies.",
+        "coaching": "Standaard geen 1-op-1-coach, maar de inhoudsbibliotheek en de gepersonaliseerde voedingsrankings vervangen doorlopende begeleiding. Spector en het team zijn geloofwaardige wetenschappelijke autoriteiten.",
+        "app-integration": "Verzorgde app met gepersonaliseerde voedingsrankings, recepten en maaltijdregistratie. Integratie met Apple Health beschikbaar.",
+        "flexibility": "De CGM-fase duurt vast twee weken; daarna bestaat het programma uit de rankings en de app in plaats van doorlopende CGM. Geen export van ruwe glucosedata. Jaarverplichting na de start.",
+        "value": "£300 (~$370) startkosten inclusief testkit, daarna £60/maand (~$75). Op de lange termijn goedkoper dan Levels, duurder dan Stelo."
+      },
+      "content": "## Waar het in uitblinkt\n\nZoe is het enige programma in dit overzicht dat niet doet alsof glucose het hele verhaal is. De CGM-fase van 2 weken volgt je [glucosepieken](/glossary/glucose-spikes) naast een ontlastingstest van je darm[microbioom](/glossary/microbiome) en een panel bloedwaarden, en de drie signalen worden samengevoegd tot één set gepersonaliseerde voedingsrankings — onderbouwd door de gepubliceerde PREDICT-1- en PREDICT-2-studies van de groep van Tim Spector aan King’s College London. De wetenschappelijke afkomst is met duidelijke afstand de sterkste in deze categorie.\n\n## Wat zijn de nadelen van Zoe?\n\nDe CGM is een momentopname, geen meetinstrument. Twee weken Abbott Libre voeden het eerste rankingmodel en stoppen dan; wil je doorlopende CGM-data, dan past Zoe niet. Er is geen export van ruwe data, de oudere Libre-variant is het minst nauwkeurig in de tweede week, en de jaarverplichting na de startkosten van £300 is fors voor een programma dat na week twee geen nieuwe glucosedata meer levert.\n\n## Voor wie is Zoe geschikt?\n\nKies Zoe als je gepersonaliseerde voeding wilt op basis van gepubliceerde wetenschap en de eenmalige CGM-fase volstaat — het past bij een grondige reset van je eetpatroon op basis van je eigen fysiologie, niet bij doorlopende glucosetracking. Gaat het je juist om continue CGM, dan passen Levels (premium) of Stelo (voordelig) beter.\n\n---\n\n## Achtergrond\n\nDe metabole biologie die deze programma's zichtbaar maken — en de protocollen die de data mogelijk maken.\n\n- [Energieregelaar: TSH](/articles/energy-governor-tsh) — schildkliergestuurde stofwisseling als bron van het vermogen om glucose te verwerken\n- [GLP-1-biologie en spierbehoud](/articles/glp1-biology-muscle-preservation) — wat CGM-data laten zien tijdens een GLP-1-protocol\n- [AI-tracking van biomarkers](/articles/ai-biomarker-tracking-predictive) — CGM als de rijkste biomarkerstroom die consumenten kunnen krijgen\n",
+      "faq": [
+        {
+          "q": "Is Zoe het geld waard?",
+          "a": "Zoe is het waard als je gepersonaliseerde voeding wilt op basis van gepubliceerde wetenschap, niet alleen glucosecurves. Het is het enige programma dat CGM, darmmicrobioom en bloedwaarden samenbrengt, onder leiding van Tim Spector en met voedingsrankings onderbouwd door PREDICT. De CGM-fase duurt maar twee weken."
+        },
+        {
+          "q": "Wat kost Zoe?",
+          "a": "Zoe kost £300 aan startkosten plus £60 per maand voor het programma met meerdere biomarkers. Het CGM-deel duurt maar twee weken. De review beoordeelt de kosten op lange termijn als lager dan Levels of Nutrisense."
+        },
+        {
+          "q": "Zoe of Levels: wat is beter?",
+          "a": "Zoe is beter voor wetenschappelijk onderbouwde gepersonaliseerde voeding met CGM, microbioom en bloedwaarden, tegen lagere kosten op lange termijn. Levels past bij doorlopende glucosetracking; de CGM van Zoe duurt maar twee weken, heeft geen export van ruwe data en gebruikt Libre in plaats van de Dexcom Stelo (G7-platform) van Levels."
+        },
+        {
+          "q": "Wat zijn de nadelen van Zoe?",
+          "a": "De CGM-fase van Zoe duurt vast twee weken, dus het is geen tool voor doorlopende CGM. Er is geen export van ruwe glucosedata, de oudere Libre-variant is het minst nauwkeurig in de tweede week, en het is vooral beschikbaar in het VK, met een langzamere uitbreiding in de VS."
+        }
+      ]
     }
   },
   "comparisons": {
@@ -2245,6 +3084,306 @@
           "a": "Nexcare doe-het-zelf: ~$20 per jaar. Breathe Right: ~$120 per jaar. SomniFit-merk: ~$100 per jaar. Hostage Tape-abonnement: ~$156 per jaar. Somnifix: ~$330 per jaar. Intake Breathing: ~$240 per jaar met vervangende plaatjes. Mute: ~$435 per jaar. Totale bandbreedte ~$20–$435 per jaar, afhankelijk van de laag."
         }
       ]
+    },
+    "best-red-light-face-masks-2026": {
+      "title": "Beste roodlicht-gezichtsmaskers: vergelijking (2026)",
+      "description": "Roodlichtmaskers 2026 vergeleken door ONDA: Omnilux, CurrentBody, Dr. Dennis Gross, Lumara, TheraFace, HigherDOSE, LightStim, JOVS, Solawave, Shark.",
+      "intro": "Roodlicht-gezichtsmaskers lopen in 2026 uiteen van al lang bestaande lichttherapielijnen (Omnilux Contour, LightStim) en het merk van een dermatoloog (Dr. Dennis Gross SpectraLite) tot premiumapparaten van consumentenmerken (CurrentBody Series 2, HigherDOSE, TheraFace, Lumara Viso). De FDA-status is neutraal in onze scores: we controleerden de 510(k)'s van Omnilux (K191629), LightStim (K120775; huidig model K261482), TheraFace (K230293) en HigherDOSE (K241933); Dr. Dennis Gross zegt dat zijn masker gecleard is. Koreaanse K-beauty (JOVS) en budgetapparaten voor in de hand (Solawave) dekken het instapsegment; nieuwe hybride vormen (Shark CryoGlow met koeling + LED) maken de categorie compleet. We beoordeelden de tien meest geloofwaardige maskers van 2026 op dezelfde zes criteria: bestralingssterkte, dekking van golflengten, aantal LED's en dekking van het gezicht, klinisch bewijs, comfort en prijs.",
+      "verdict": "CurrentBody Series 2 en Lumara Viso delen de eerste plaats op de ONDA-score (elk 8,0, gelijk op de tiebreak voor bewijs): CurrentBody is de standaardkeuze op de consumentenmarkt met geïntegreerde halsflap, Lumara de specificatiemaximalist met 470 LED's en drie golflengten. Omnilux Contour Face (7.8) heeft het beste comfort van flexibele siliconen en een gematigde, plausibele opgegeven bestralingssterkte, maar er is geen studie met de Contour zelf gepubliceerd, en de productpagina claimt klinisch bewijs dat voor dit masker niet bestaat, wat hem een correctie van 0,3 punt voor eerlijkheid van de marketing kost. Dr. Dennis Gross voegt een dubbel spectrum van rood + blauw toe met de herkomst van een dermatologiemerk. LightStim for Wrinkles is de optie voor in de hand met vier golflengten voor $249, als je actief gebruik met de hand accepteert. Solawave Wand dekt het instapsegment van $169. Kies op basis van drie vragen: comfort en prijs vs consumentenafwerking, masker vs apparaat voor in de hand, één vs meerdere golflengten.",
+      "content": "## Hoe we ze rangschikten\n\nElk masker werd beoordeeld volgens ONDA's gepubliceerde [beoordelingsmethodiek](/reviews/methodology): zes gewogen criteria, waarbij eerlijkheid over bestralingssterkte en de klinische bewijsbasis bewust gewicht krijgen — de grootste bronnen van verwarring in deze categorie zijn opgeblazen specificaties voor piekbestralingssterkte en door merken gefinancierde studies die als klinisch bewijs worden verkocht.\n\nAlle tien zijn beoordeeld op basis van documentatie van de fabrikant, verklaringen van fabrikanten over de FDA-status en onafhankelijke dermatologische / consumentenreviews uit 2026, niet op basis van eigen hands-on tests.\n\n## Beste roodlicht-gezichtsmaskers: welke moet je kopen?\n\nDrie koopvragen maken de categorie overzichtelijk:\n\n**Weegt bewijs voor jou het zwaarst?** Geen van de apparaten die we hierop controleerden heeft een eigen onafhankelijke studie: de gepubliceerde studies van Omnilux gaan over andere Omnilux-modellen, de enige rimpeldata van LightStim komen uit een ongepubliceerde bedrijfsstudie met een eerder model, en voor CurrentBody, Dr. Dennis Gross of Lumara zijn geen onafhankelijke studies met het apparaat gevonden. Kies op comfort, eerlijkheid over de dosis en prijs.\n\n**Masker of apparaat voor in de hand?** Masker (passieve dosis voor het hele gezicht, gemak bij dagelijks gebruik): Omnilux, CurrentBody, Dr. Dennis Gross, Lumara, TheraFace, HigherDOSE, JOVS, Shark CryoGlow. Voor in de hand (actief positioneren, één zone tegelijk): LightStim, Solawave.\n\n**Welk budget?** Onder $250: Solawave Wand ($169), LightStim ($249). $300–$500: HigherDOSE ($349), Shark CryoGlow ($349), Omnilux ($395), JOVS ($399), Dr. Dennis Gross ($455), CurrentBody ($470). $600+: TheraFace ($649), Lumara Viso ($650).\n\nCurrentBody en Lumara delen de eerste plaats op totaalscore (8.0), met Omnilux net daarachter (7.8); CurrentBody is de standaardkeuze op de consumentenmarkt; LightStim en Solawave dekken de alternatieven voor in de hand; Lumara wint het segment van de specificatiemaximalisten.",
+      "picks": {
+        "currentbody-series-2": {
+          "award": "Beste marktleider voor consumenten",
+          "takeaway": "Grootste klantenbestand + geïntegreerde halsflap + verzorgde siliconen bouw — de standaardkeuze voor consumenten."
+        },
+        "lumara-viso": {
+          "award": "Beste premiumspecificaties",
+          "takeaway": "470 LED's + drie golflengten + flexibele siliconen met halsflap — specificatiemaximalist."
+        },
+        "omnilux-contour-face": {
+          "award": "",
+          "takeaway": "Flexibele siliconen (het comfortabelst in onze beoordeling) + het standaardpaar rood / nabij-infrarood, door de FDA gecleard voor rimpels — geen gepubliceerde studie met het masker zelf."
+        },
+        "dr-dennis-gross-spectralite": {
+          "award": "Beste dermatologiemerk",
+          "takeaway": "Dubbel spectrum rood + blauw + de dermatologische herkomst van Dr. Dennis Gross (volgens het merk door de FDA gecleard)."
+        },
+        "theraface-mask": {
+          "award": "Beste voor het Therabody-ecosysteem",
+          "takeaway": "Drie golflengten met bediening via de app — profiteert van de crossover met het merk Theragun."
+        },
+        "higherdose-red-light-face-mask": {
+          "award": "Beste gebruikservaring van een consumentenmerk",
+          "takeaway": "Eenvoudige bediening + flexibele siliconen voor een toegankelijke $349 — instap in het HigherDOSE-ecosysteem."
+        },
+        "lightstim-for-wrinkles": {
+          "award": "",
+          "takeaway": "Apparaat voor in de hand met vier golflengten voor $249, door de FDA gecleard (huidig model K261482) — geen gepubliceerde studies met het apparaat zelf."
+        },
+        "jovs-dpl-photofacial-mask": {
+          "award": "Beste prijs-kwaliteit met meerdere golflengten",
+          "takeaway": "Zeven golflengtemodi uit K-beauty-techniek voor een middenprijs van $399."
+        },
+        "shark-cryoglow": {
+          "award": "Beste hybride vormfactor",
+          "takeaway": "Actieve koeling gecombineerd met rode + blauwe LED — nieuwe vormfactor voor zwelling + licht."
+        },
+        "solawave-wand-4-in-1": {
+          "award": "Beste budgetinstap",
+          "takeaway": "Apparaat voor in de hand van $169 met rode LED + microstroom + warmte + massage — instap in de categorie."
+        }
+      },
+      "faq": [
+        {
+          "q": "Wat is het beste roodlicht-gezichtsmasker in 2026?",
+          "a": "CurrentBody Series 2 en Lumara Viso delen de hoogste ONDA-score (8.0): CurrentBody als referentie op de consumentenmarkt met halsflap, Lumara voor de meeste LED's en drie golflengten. Omnilux Contour Face (7.8) voor comfort van flexibele siliconen en FDA-clearance voor rimpels; van geen van deze maskers zelf is een studie gepubliceerd. Dr. Dennis Gross voor een dubbel spectrum van een dermatologiemerk."
+        },
+        {
+          "q": "Is Omnilux de premiumprijs waard?",
+          "a": "Voor comfort wel. Betaal de meerprijs niet voor bewijs: er is geen studie met de Contour zelf gepubliceerd, en de gepubliceerde studies van Omnilux gaan over andere modellen. Voor consumentengemak dekt CurrentBody Series 2 meer toepassingen voor een vergelijkbare prijs."
+        },
+        {
+          "q": "Roodlichtmasker of apparaat voor in de hand — wat is beter?",
+          "a": "Maskers geven een passieve dosis voor het hele gezicht zonder actief positioneren — handiger bij dagelijks gebruik. Apparaten voor in de hand (LightStim, Solawave) behandelen één zone tegelijk en vragen actief gebruik. De meeste gebruikers beginnen met een masker; geen van de handapparaten in onze ranglijst heeft gepubliceerde studies met het apparaat zelf."
+        },
+        {
+          "q": "Welke golflengten moet een roodlicht-gezichtsmasker hebben?",
+          "a": "Het klinische standaardpaar is rood 633 nm (oppervlak, collageen) + nabij-infrarood 830 nm (dieper weefsel). Sommige maskers voegen blauw 415 nm (acne), amber 590 nm (pigmentatie) of groen toe. Meer golflengten is niet per se beter — het standaardpaar rood + NIR heeft de breedste dermatologische bewijsbasis."
+        },
+        {
+          "q": "Maakt FDA-clearance echt uit?",
+          "a": "Minder dan de marketing doet geloven. FDA-clearance (510(k)) betekent dat de FDA een apparaat in wezen gelijkwaardig vond aan een apparaat dat al legaal op de markt is, voor een genoemde toepassing; het is geen FDA-goedkeuring en geen bewijs dat het apparaat werkt. We controleerden twee clearances: Omnilux Contour (510(k) K191629, vrij verkrijgbaar voor rimpels, gecleard op basis van gelijkwaardigheid aan een eerder LED-masker zonder klinische data) en LightStim for Wrinkles (K120775; huidig model K261482, gecleard op basis van veiligheids- en technische tests zonder klinische data). Dr. Dennis Gross zegt dat zijn apparaat gecleard is; het 510(k)-nummer hebben we niet gecontroleerd. Veel consumentenmaskers zijn alleen bij de FDA geregistreerd of vermeld, wat betekent dat het bedrijf de FDA heeft laten weten dat het apparaat bestaat; dat is geen clearance of goedkeuring en zegt niets over kwaliteit."
+        },
+        {
+          "q": "Wat kost de categorie echt over 3 jaar?",
+          "a": "De meeste maskers zijn eenmalige aankopen zonder abonnement. Omnilux Contour Face: $395. CurrentBody Series 2: $470. Dr. Dennis Gross: $455. Lumara Viso: $650. TheraFace: $649. HigherDOSE: $349. LightStim: $249. JOVS: $399. Solawave: $169. Shark CryoGlow: $349. Kies het apparaat één keer en gebruik het 5+ jaar."
+        }
+      ]
+    },
+    "best-red-light-therapy-panels-2026": {
+      "title": "Beste roodlichttherapiepanelen: vergelijking (2026)",
+      "description": "ONDA vergelijkt de tien beste roodlichtpanelen van 2026 — Joovv, Mito Red, PlatinumLED, GembaRed e.a. — op bestralingssterkte, golflengten, EMF en prijs.",
+      "intro": "De consumentencategorie rood licht staat bekend om opgeblazen claims over bestralingssterkte, EMF en flikkering die achter het specificatieblad verstopt zitten, en premiumprijzen die niet altijd door de bouw worden gedragen. ONDA beoordeelde de tien meest geloofwaardige panelen van 2026 op dezelfde zes criteria — onafhankelijke verificatie van de bestralingssterkte, dekking van golflengten, discipline rond EMF en flikkering, dekking van het behandelgebied, bewijs en prijs. Onafhankelijke metingen wegen bewust zwaar. De lijst loopt van premiumreferentie (Joovv) via budget voor biohackers (Hooga) tot specialist voor gerichte gewrichtsbehandeling (Kineon), zodat de afwegingen lezen als één geordende kaart van de markt.",
+      "verdict": "Mito Red MitoPRO 1500X wint overall — zes golflengten, geverifieerde bestralingssterkte en 3 jaar garantie voor $1,299. Joovv Solo 3.0 blijft de modulaire referentie met de schoonste bouw, maar kost met $1,699 nu $400 meer voor een smaller spectrum. PlatinumLED BIOMAX 600 leidt op aantal golflengten en EMF-transparantie in het middenformaat; GembaRed Vesta is de specialist in EMF-discipline; RubyLx Lyra Pro is voor kopers die elke specificatie in het lab geverifieerd willen zien. Infraredi levert het formaat van een MitoPRO met korting; BioLight dekt het middensegment; Hooga is de budgetinstap die zijn specificaties echt haalt. Bon Charge past bij consumenten in de EU/AU; Kineon Move+ is een andere productklasse voor gerichte gewrichtsbehandeling. Kies op het criterium dat voor jou het zwaarst weegt — dekking, spectrum, EMF, bewijs of prijs.",
+      "content": "## Hoe we ze rangschikten\n\nElk paneel werd beoordeeld volgens ONDA’s gepubliceerde [beoordelingsmethodiek](/reviews/methodology): zes gewogen criteria, waarbij verificatie van de bestralingssterkte en prijs-kwaliteit het zwaarst wegen. Dekking van golflengten, discipline rond EMF en flikkering, dekking van het behandelgebied en bewijs wegen elk 15%. Onafhankelijke metingen wegen bewust zwaar, omdat de categorie wordt gedomineerd door opgeblazen specificaties van fabrikanten.\n\nAlle tien panelen zijn beoordeeld op basis van documentatie van de fabrikant, testrapporten van derden over bestralingssterkte en EMF van reviewsites voor biohackers, de gepubliceerde literatuur over fotobiomodulatie achter de claims van de apparaten, en onafhankelijke reviews uit 2026. Niet zelf hands-on getest door ONDA. Zie de scores als een evidence-based startpunt.\n\n## Beste roodlichttherapiepanelen: welke moet je kopen?\n\nDe categorie valt uiteen in drie eerlijke segmenten en één specialist:\n\n**Premiumreferentie ($1,000+):** Joovv Solo 3.0, Mito Red MitoPRO 1500, PlatinumLED BIOMAX 600, GembaRed Vesta, RubyLx Lyra Pro. Allemaal met geverifieerde specificaties, EMF-discipline en serieuze bouw. Kies op het criterium dat je belangrijk vindt — algehele balans en spectrum (MitoPRO 1500X), modulariteit (Joovv), aantal golflengten (PlatinumLED), EMF (GembaRed), transparantie van tests (RubyLx).\n\n**Middensegment (~$900–$1,050):** BioLight Pro 900, Infraredi Pro Max 2.0 (de Pro 1500 is uit productie), Bon Charge Red Light Panel Max ($999). Degelijke panelen met vier golflengten en het grootste deel van de premiumspecificaties voor een duidelijk lagere prijs. De keerzijde is minder merkvolwassenheid en minder onafhankelijke verificatie.\n\n**Budget voor biohackers (onder $400):** Hooga HG500 ($359). Twee golflengten, eerlijke specificaties, deurbevestiging en ophangset inbegrepen (mobiele standaard apart). De instap die consumenten-rood licht tot een categorie onder de $400 maakte.\n\n**Specialist voor gerichte gewrichtsbehandeling:** Kineon Move+. Andere productklasse — wikkel met laser plus LED voor gewrichtspijn. Geen vervanging voor een paneel.\n\nKies het segment en het criterium. De categorie is klein genoeg dat deze tien panelen in 2026 in feite de hele serieuze consumentenmarkt dekken.",
+      "picks": {
+        "platinumled-biomax-600": {
+          "award": "Beste golflengtespectrum",
+          "takeaway": "Zeven golflengten en gepubliceerde EMF-tests van derden voor $1,049 — de leider in spectrum."
+        },
+        "mito-red-mitopro-1500": {
+          "award": "Beste overall",
+          "takeaway": "MitoPRO 1500X: groot paneel met zes golflengten, 3 jaar garantie — $400 goedkoper dan Joovv voor $1,299."
+        },
+        "rubylx-lyra-pro": {
+          "award": "Beste transparantie van tests",
+          "takeaway": "Elke gepubliceerde specificatie onafhankelijk in het lab geverifieerd — het meest geteste paneel in de consumentencategorie."
+        },
+        "joovv-solo-3": {
+          "award": "Beste modulaire systeem",
+          "takeaway": "Modulair, geverifieerde bestralingssterkte en schone EMF — de stapelbare referentie, maar nu $1,699."
+        },
+        "infraredi-pro-1500": {
+          "award": "Beste prijs-kwaliteit groot paneel",
+          "takeaway": "Dekking van het halve lichaam op MitoPRO-niveau voor $300 minder — een nieuwer merk is de keerzijde."
+        },
+        "gembared-vesta": {
+          "award": "Beste EMF-discipline",
+          "takeaway": "Volledig afgeschermde bouw met de laagste EMF in dit overzicht — ontworpen door een oprichter uit de branche."
+        },
+        "biolight-pro-900": {
+          "award": "Beste prijs-kwaliteit middensegment",
+          "takeaway": "Middelgroot paneel met vier golflengten onder de $1,000, standaard en deurbevestiging inbegrepen."
+        },
+        "hooga-hg500": {
+          "award": "Beste budgetkeuze",
+          "takeaway": "Geverifieerde specificaties met twee golflengten voor $349 — de budgetinstap voor biohackers."
+        },
+        "bon-charge-red-light-panel": {
+          "award": "Beste voor kopers in de EU / AU",
+          "takeaway": "Paneel gepositioneerd voor welzijn met consistente bouw, van een gevestigd consumentenmerk in de EU/AU."
+        },
+        "kineon-move-plus": {
+          "award": "Beste voor gerichte gewrichtsbehandeling",
+          "takeaway": "Wikkel met laser plus LED voor fotobiomodulatie van knie, elleboog en schouder — bij de FDA vermeld, niet gecleard."
+        }
+      },
+      "faq": [
+        {
+          "q": "Welk roodlichttherapiepaneel is het beste in 2026?",
+          "a": "Mito Red MitoPRO 1500X wint overall — zes golflengten, geverifieerde bestralingssterkte, $1,299. Joovv Solo 3.0 ($1,699) is de modulaire, stapelbare premiumkeuze. Hooga HG500 is de budgetinstap. Kies op het criterium (bouw, spectrum, EMF, prijs) dat voor jou het zwaarst weegt."
+        },
+        {
+          "q": "Hoeveel bestralingssterkte heeft een roodlichtpaneel echt nodig?",
+          "a": "Studies gebruiken een breed bereik aan vermogensdichtheden, en meer is niet beter: lichttherapie laat vaak een dosis-respons zien waarbij \"minder meer kan zijn\", en thuispanelen leveren zelden de dosis die in studies wordt gebruikt. Fabrikanten noemen vaak de piekbestralingssterkte op 0 inch — geen echte behandelafstand. Kijk naar het cijfer op 6 inch en vergelijk het met onafhankelijke meterwaarden. De meeste panelen in dit overzicht leveren 40–70 mW/cm² op 6 inch."
+        },
+        {
+          "q": "Welke golflengten doen ertoe — 660 nm of 850 nm?",
+          "a": "Allebei. 660 nm (rood) is de standaard voor huid en oppervlakkig weefsel; 850 nm (nabij-infrarood) dringt dieper door voor spieren en gewrichten. Onder biohackers is het gebruikelijk om beide te willen; sommige panelen voegen 630, 810, 830 of 940 nm toe voor bredere dekking. De standaardcombinatie 660 + 850 volstaat voor de meeste toepassingen."
+        },
+        {
+          "q": "Zijn roodlichttherapiepanelen door de FDA goedgekeurd?",
+          "a": "Nee. Geen van de panelen in dit overzicht is door de FDA goedgekeurd. Joovv en Mito Red zeggen dat de Solo 3.0 en de huidige MitoPRO 1500X bij de FDA geregistreerd zijn als klasse II-hulpmiddelen, en Bon Charge zegt hetzelfde over zijn paneel. Registratie en vermelding betekenen alleen dat het bedrijf de FDA heeft laten weten dat het apparaat bestaat; het is geen clearance of goedkeuring en geen kwaliteitskeurmerk. Clearance (510(k)) is een aparte stap: de FDA vindt een apparaat in wezen gelijkwaardig aan een apparaat dat al op de markt is, voor een genoemde toepassing. De Kineon Move+ heeft alleen een klasse II-vermelding — er is geen 510(k)-clearance gevonden. Andere worden verkocht als welzijnsapparaten voor consumenten; de literatuur over fotobiomodulatie bewijst niet dat een specifiek thuispaneel werkt."
+        },
+        {
+          "q": "Hoe belangrijk zijn EMF en flikkering bij roodlichtpanelen?",
+          "a": "Reëel maar omstreden. EMF (elektromagnetisch veld) van de voeding en de flikkerfrequentie van de LED-driver zijn biologische blootstellingen naast het licht zelf. Premiumpanelen (Joovv, GembaRed, PlatinumLED) publiceren EMF- en flikkertests van derden en ontwerpen de hardware om beide te minimaliseren. Voor gebruikers die hier gevoelig voor zijn, heeft GembaRed Vesta de schoonste bouw. Voor de meeste gebruikers zijn panelen die onder de drempel van <0,5 mG op 6\" blijven en hun flikkerfrequentie vermelden acceptabel."
+        },
+        {
+          "q": "Welk roodlichtpaneel biedt de beste prijs-kwaliteit?",
+          "a": "Hooga HG500 voor $359 — geverifieerde specificaties in het budgetsegment. In het middensegment bieden BioLight Pro 900 ($899) of de Infraredi Pro Max 2.0 (opvolger van de stopgezette Pro 1500; $1,019 in de aanbieding, $1,199 adviesprijs) hardware die vergelijkbaar is met de MitoPRO 1500X ($1,299), voor minder."
+        }
+      ]
+    },
+    "best-pemf-devices-2026": {
+      "title": "Beste PEMF-apparaten: vergelijking (2026)",
+      "description": "ONDA vergelijkt PEMF-apparaten van 2026 — Bemer, Healthy Wave, Pulse Centers, Curatron, iMRS, OMI, EarthPulse, Resona, OlyLife, HigherDOSE en MagnaWave.",
+      "intro": "Hardware voor gepulseerde elektromagnetische velden viel in 2026 uiteen in drie duidelijke segmenten: premium matten met een eigen signaal (Bemer, iMRS), consumentenmatten met meerdere modaliteiten (Healthy Wave, HigherDOSE) en klinische / draagbare spoelsystemen (Pulse Centers, Curatron, MagnaWave). Het nieuwe wearable-segment (Resona Health VIBE voor $299) opent een instap onder de $500 die drie jaar geleden niet bestond. We beoordeelden de tien meest gezochte systemen van 2026 op dezelfde zes criteria: veldsterkte, onderzoek naar de golfvorm, bouw, programmeerbaarheid, vormfactor en prijs.",
+      "verdict": "Healthy Wave Multi-Wave staat bovenaan op de ONDA-score: PEMF plus ver-infrarood en rood licht voor minder dan de helft van de Bemer-prijs, met de meeste programmeermogelijkheden in de categorie. Bemer Classic Evo heeft de beste bouw, het beste applicatorsysteem en merk en de langste studielijst, al zijn de meeste studies aan de fabrikant gelinkt en vonden onafhankelijke gecontroleerde studies geen verschil met de controlegroep. Pulse Centers Pulse XL Pro bezit de niche van klinische spoelen met hoge intensiteit. Resona Health VIBE voor $299 herdefinieert het instapsegment — wie nieuwsgierig is naar PEMF hoeft niet langer $2,000+ uit te geven om het te proberen. Kies op basis van drie vragen: eigen signaal en bouw (Bemer), combinatie van modaliteiten (Healthy Wave) of mate van commitment (Resona VIBE).",
+      "content": "## Hoe we ze rangschikten\n\nElk systeem werd beoordeeld volgens ONDA's gepubliceerde [beoordelingsmethodiek](/reviews/methodology): zes gewogen criteria, waarbij veldsterkte en onderzoek naar de golfvorm bewust gewicht krijgen — de grootste bronnen van verwarring in deze categorie zijn opgeblazen intensiteitsclaims en marketing rond eigen golfvormen zonder onafhankelijk onderzoek. Wat het onderzoek wel en niet laat zien, staat samengevat in [PEMF-therapie — het bewijs](/science/evidence/pemf).\n\nAlle tien zijn beoordeeld op basis van documentatie van de fabrikant, FDA-databases en onafhankelijke reviews door consumenten/behandelaars uit 2026, niet op basis van eigen hands-on tests. Een FDA-registratie is slechts een vermelding; een 510(k)-clearance geldt voor één opgegeven toepassing en is geen bewijs van gezondheidsvoordelen. Medische PEMF-botgroeistimulatoren werden tot mei 2026 goedgekeurd via premarket approval (PMA) en zijn sindsdien klasse II-hulpmiddelen (510(k)) — geen van de consumentenapparaten hieronder is er een.\n\n## Beste PEMF-apparaten: welke moet je kopen?\n\nDrie koopvragen maken de categorie overzichtelijk:\n\n**Wil je een eigen signaal met een eigen studielijst?** Ja → Bemer Classic Evo (veel studies, grotendeels klein of aan de fabrikant gelinkt; onafhankelijke gecontroleerde studies vonden geen verschil met de controlegroep). Nee → Healthy Wave, iMRS, OMI (gangbare PEMF-frequenties, geen studies met de apparaten zelf).\n\n**Welke vormfactor?** Mat voor het hele lichaam (Bemer, Healthy Wave, OMI, HigherDOSE). Lokale spoel (Pulse Centers, MagnaWave, Curatron). Onder het matras, gepromoot voor slaap (EarthPulse). Wearable (Resona VIBE, OlyLife).\n\n**Welk budget?** Onder $500: Resona VIBE-wearable, OlyLife-staaf. $1,000–$2,500: OMI, HigherDOSE, EarthPulse, Healthy Wave (volledige maat $2,495; kleinere maten vanaf $995). $3,000–$5,000: iMRS, Curatron. $5,000+: Bemer, Pulse Centers, MagnaWave (compacte Semi 10 vanaf $8,360; assortiment $5,500–$39,660).\n\nBemer leidt het premiumsegment op bouw en merk; Healthy Wave wint op combinatie van modaliteiten; Pulse Centers en MagnaWave bezitten de niche van klinische spoelen; Resona VIBE herdefinieert het instapsegment voor $299.",
+      "picks": {
+        "healthy-wave-multi-wave": {
+          "award": "Beste overall",
+          "takeaway": "PEMF + ver-infrarood + rood licht voor minder dan Bemer — de beste dekking van modaliteiten per sessie."
+        },
+        "pulse-centers-pulse-xl-pro": {
+          "award": "Beste klinisch met hoge intensiteit",
+          "takeaway": "Hoogste veldintensiteit die voor consumenten bereikbaar is via spoelapplicatoren, vooral verkocht aan klinieken. Geen onafhankelijke studies met dit systeem."
+        },
+        "curatron-3d": {
+          "award": "Beste met dubbele applicator (mat + spoel)",
+          "takeaway": "Mat + spoel vanuit één controller met transparante parameters voor een middenprijs. FDA-registratie is een vermelding, geen clearance."
+        },
+        "imrs-prime": {
+          "award": "Beste alternatief voor Bemer",
+          "takeaway": "Zwitsers ontworpen systeem met meerdere applicatoren voor een duidelijk lagere prijs dan Bemer."
+        },
+        "bemer-classic-evo": {
+          "award": "",
+          "takeaway": "Bekendste PEMF-mat en best onderzochte afzonderlijke signaal, premium bouw, merk met tientallen jaren geschiedenis. De meeste studies zijn aan de fabrikant gelinkt; de FDA-clearance geldt voor niet-medische spiertraining."
+        },
+        "omi-full-body-mat": {
+          "award": "Beste mat in het middensegment",
+          "takeaway": "Eenvoudige mat met één modaliteit voor een toegankelijke $1,500–$2,000. Niet door de FDA gecleard voor botgenezing."
+        },
+        "earthpulse-sleep-on-command": {
+          "award": "Beste voor slaap",
+          "takeaway": "Installatie onder het matras met door de fabrikant gepromote Schumann- en delta-slaapinstellingen voor $899 — geen gecontroleerde studies tonen betere slaap aan."
+        },
+        "magnawave-mini": {
+          "award": "Beste draagbare spoel",
+          "takeaway": "Spoel voor herstel van paarden/sporters met tientallen jaren geschiedenis, in een draagbare koffer — maar er wordt nu geen “Mini” meer verkocht; de compacte Semi 10 begint bij $8,360, dicht bij het prijsniveau van Pulse Centers."
+        },
+        "resona-health-vibe": {
+          "award": "Beste wearable / instap",
+          "takeaway": "Wearable van $299 met 130+ protocollen — de manier met de minste commitment om PEMF te verkennen."
+        },
+        "higherdose-pemf-mat": {
+          "award": "Beste consumentenmerk",
+          "takeaway": "Verzorgde gebruikservaring en combinatie van modaliteiten voor een voor consumenten toegankelijke $1,295 — gebruiksgemak boven technische diepgang."
+        }
+      },
+      "faq": [
+        {
+          "q": "Wat is het beste PEMF-apparaat in 2026?",
+          "a": "Healthy Wave Multi-Wave overall — meerdere modaliteiten (PEMF + IR + rood licht) voor minder dan de helft van de Bemer-prijs. Bemer Classic Evo voor bouw en het best onderzochte signaal, al is het bewijs grotendeels aan de fabrikant gelinkt en vonden onafhankelijke gecontroleerde studies geen verschil met de controlegroep. Pulse Centers voor een spoel met hoge intensiteit. Resona Health VIBE als wearable-instap van $299."
+        },
+        {
+          "q": "Is Bemer de premiumprijs waard?",
+          "a": "Alleen als je de bouw en het merk waardeert. Bemer citeert meer studies dan elk ander PEMF-apparaat voor consumenten, maar de meeste zijn klein of aan de fabrikant gelinkt, en onafhankelijke gecontroleerde studies vonden geen verschil met de controlegroep. Voor een combinatie van modaliteiten of pure intensiteit leveren alternatieven meer voor minder."
+        },
+        {
+          "q": "PEMF-mat of spoel — wat moet ik kopen?",
+          "a": "Matten voor passieve herstelsessies voor het hele lichaam (Bemer, Healthy Wave, OMI). Spoelen voor gerichte behandeling met hoge intensiteit op één plek (Pulse Centers, MagnaWave, Curatron). De meeste gebruikers beginnen met een mat; serieus sportherstel stapt over op spoelen."
+        },
+        {
+          "q": "Werkt PEMF echt?",
+          "a": "Gedeeltelijk. Studies met klinische apparaten wijzen op kortdurende pijnverlichting bij artrose en lage rugpijn; voor niet-genezende botbreuken noemde een Cochrane-review het bewijs onduidelijk. Medische botstimulatoren zijn apparaten op voorschrift, niet deze matten. Voor welzijn, herstel en slaap is het bewijs zwak."
+        },
+        {
+          "q": "Wat is het goedkoopste geloofwaardige PEMF-apparaat?",
+          "a": "Resona Health VIBE voor $299 — wearable, 130+ vooraf ingestelde protocollen, echt PEMF-deel. De beste instap voor wie nieuwsgierig is naar PEMF, voordat je in een mat investeert. EarthPulse Sleep on Command ($899) wordt gepromoot voor slaap, maar betere slaap is in studies niet aangetoond."
+        },
+        {
+          "q": "Wat kost Bemer echt over 3 jaar?",
+          "a": "Bemer Classic Evo: eenmalig $5,490, geen abonnement. Ongeveer gelijk aan Pulse Centers Pulse XL Pro in de instapconfiguratie met spoel. Healthy Wave Multi-Wave ($995–$2,495 afhankelijk van de maat) of iMRS Prime ($4,000) bieden meerdere applicatoren of modaliteiten tegen duidelijk lagere kosten over 3 jaar."
+        }
+      ]
+    },
+    "best-infrared-sauna-2026": {
+      "title": "Beste infraroodsauna & sauna: vergelijking (2026)",
+      "description": "ONDA vergelijkt de tien beste sauna's van 2026 — Sunlighten, Clearlight, HigherDose, SaunaSpace, Therasage, Sun Home, JNH, Almost Heaven, Relax en Finnleo.",
+      "intro": "De markt voor thuissauna's valt in 2026 uiteen naar warmtebron — full-spectrum-IR (Sunlighten, Clearlight, Sun Home, Therasage), nabij-IR met gloeilampen (SaunaSpace), traditionele Finse convectie (Almost Heaven, Finnleo) — en naar vormfactor, van cabine tot draagbare deken. We beoordeelden de tien meest geloofwaardige opties op dezelfde zes criteria: warmtebron, bouw, EMF, vormfactor, bewijs en prijs.",
+      "verdict": "Sunlighten mPulse wint overall dankzij echte full-spectrum-IR met 3 golflengten en geverifieerd lage EMF. Clearlight Sanctuary 2 is het premium alternatief met Jacuzzi als moederbedrijf; SaunaSpace Faraday is de nabij-IR-specialist voor biohackers; Finnleo Hallmark is de premium referentie voor traditioneel binnen. Sun Home Equinox is de full-spectrum-keuze in het hogere middensegment; Almost Heaven Salem is de traditionele optie voor buiten; Therasage en JNH dekken respectievelijk het middensegment en de budgetcabine met IR. HigherDose Blanket en Relax Sauna Portable vullen het draagbare segment. Kies eerst op warmtebron (full-spectrum-IR vs nabij-IR vs traditioneel), daarna op vormfactor en budget.",
+      "content": "## Hoe we ze rangschikten\n\nElk apparaat werd beoordeeld volgens ONDA's gepubliceerde [beoordelingsmethodiek](/reviews/methodology): zes gewogen criteria, waarbij de kwaliteit van de warmtebron en de prijs-kwaliteit het zwaarst wegen, omdat die de echte saunabeleving en de kosten van bezit op lange termijn bepalen.\n\nAlle tien zijn beoordeeld op basis van documentatie van de fabrikant, onafhankelijke reviews uit 2026 en de gepubliceerde literatuur over sauna en IR-therapie, niet op basis van eigen hands-on tests.\n\n## Beste infraroodsauna & sauna: welke moet je kopen?\n\nDrie koopvragen maken de categorie overzichtelijk:\n\n**Welke warmtebron wil je?** Full-spectrum-IR → Sunlighten mPulse, Clearlight Sanctuary 2, Sun Home Equinox, Therasage. Nabij-IR met gloeilampen → SaunaSpace Faraday. Alleen ver-IR → JNH Joyous (budgetcabine), HigherDose Blanket (draagbaar), Relax Sauna (draagbaar). Traditionele Finse convectie → Finnleo Hallmark (binnen), Almost Heaven Salem (buitenton).\n\n**Welke vormfactor?** Cabine (4×4 ft+) → Sunlighten, Clearlight, Sun Home, JNH, Therasage. Buitenton → Almost Heaven Salem. Traditioneel binnen → Finnleo Hallmark. Draagbaar → HigherDose Blanket, Relax Sauna Portable.\n\n**Welk budget?** Onder $1,000 → HigherDose Blanket. $1,500–$3,500 → JNH Joyous, Therasage. $4,000–$6,500 → Almost Heaven Salem (ton voor 2 personen, $4,485 adviesprijs incl. kachel), Sun Home Equinox, SaunaSpace Faraday. $5,000–$10,000+ → Sunlighten mPulse, Clearlight Sanctuary 2, Finnleo Hallmark.\n\nDe categorie is volwassen; deze tien opties dekken het volledige keuzelandschap voor consumenten.",
+      "picks": {
+        "sunlighten-mpulse": {
+          "award": "Beste overall (full-spectrum-IR)",
+          "takeaway": "Echte IR met 3 golflengten, premium bouw van cederhout, geverifieerd lage EMF."
+        },
+        "finnleo-hallmark": {
+          "award": "Beste traditioneel binnen",
+          "takeaway": "In Finland gebouwde traditionele binnensauna met Helo-techniek — de breedste gepubliceerde bewijsbasis."
+        },
+        "almost-heaven-salem": {
+          "award": "Beste traditioneel buiten",
+          "takeaway": "Amerikaanse ton van rode ceder voor 2 personen met een elektrische kachel van 6 kW en löyly-stoom — de goedkoopste traditionele sauna hier ($4,485 adviesprijs)."
+        },
+        "saunaspace-faraday": {
+          "award": "Beste voor biohackers (nabij-IR)",
+          "takeaway": "Nabij-IR met gloeilampen en volledige EMF-afscherming via een kooi van Faraday. Iets anders dan full-spectrum-IR."
+        },
+        "sun-home-equinox": {
+          "award": "Beste IR in het hogere middensegment",
+          "takeaway": "Full-spectrum-IR met ingebouwde chromotherapie voor een lagere prijs dan Sunlighten / Clearlight."
+        },
+        "higherdose-blanket-v4": {
+          "award": "Beste draagbare",
+          "takeaway": "Ver-IR-deken — de meest toegankelijke instap in de IR-sauna zonder installatie."
+        },
+        "clearlight-sanctuary-2": {
+          "award": "Beste alternatieve premium IR",
+          "takeaway": "Full-spectrum-IR van een Jacuzzi-dochter met levenslange garantie op de stralers, iets goedkoper dan Sunlighten."
+        },
+        "therasage-thera-sauna-personal": {
+          "award": "Beste IR in het middensegment",
+          "takeaway": "Full-spectrum-IR voor een middenprijs, met een merkpositionering gericht op biohackers."
+        },
+        "jnh-lifestyles-joyous": {
+          "award": "Beste budgetcabine",
+          "takeaway": "Ver-IR-cabinesauna van Canadese hemlock — de goedkoopste geloofwaardige IR-cabine."
+        },
+        "relax-sauna-portable": {
+          "award": "Beste rechtopstaande draagbare",
+          "takeaway": "Al lang bestaande draagbare ver-IR-sauna met stoel en tent, voor wie niet graag liggend in een deken zit."
+        }
+      },
+      "faq": [
+        {
+          "q": "Wat is de beste infraroodsauna in 2026?",
+          "a": "Voor full-spectrum-IR met aantoonbare discipline: Sunlighten mPulse — echte 3 golflengten, lage EMF, premium cederhouten bouw. Clearlight Sanctuary 2 is het alternatief met Jacuzzi als moederbedrijf. Voor alleen nabij-IR: SaunaSpace Faraday. Voor een traditionele Finse sauna: Finnleo Hallmark (binnen) of Almost Heaven Salem (buiten)."
+        },
+        {
+          "q": "Is een infraroodsauna beter dan een traditionele Finse sauna?",
+          "a": "Andere mechanismen, andere bewijsbasis. Traditionele Finse convectie heeft het uitgebreidste gepubliceerde onderzoek (observationele Finse cohortstudies naar hart- en vaatziekten en dementie — verbanden, geen oorzaak). Onderzoek naar infraroodsauna's is nieuwer, kleiner en beperkter, en de Finse cohortresultaten gelden niet voor infraroodcabines. Zie [het bewijs over sauna en hitte](/science/evidence/sauna-heat-exposure). Beide zijn een redelijke keuze; kies op basis van je voorkeur voor warmtebron en de installatiemogelijkheden."
+        },
+        {
+          "q": "Wat is het verschil tussen nabij-IR en full-spectrum-IR?",
+          "a": "Nabij-IR (700–1200 nm) ligt dichter bij de golflengten van natuurlijk zonlicht en dringt volgens fabrikanten dieper in het weefsel door; een gezondheidsvoordeel daarvan is niet aangetoond. Full-spectrum (nabij + midden + ver) voegt verwarming met langere golflengten toe, waardoor je vooral zweet. SaunaSpace gebruikt alleen nabij-IR via gloeilampen; Sunlighten en Clearlight leveren full-spectrum via gecombineerde verwarmingselementen."
+        },
+        {
+          "q": "Moet ik me zorgen maken over EMF in infraroodsauna's?",
+          "a": "EMF verschilt sterk per merk en configuratie. Premiummerken zoals Sunlighten en SaunaSpace publiceren lage EMF-waarden op de zitpositie; Clearlight adverteert met lage EMF/ELF, dus vraag naar het actuele testrapport. Budgetmerken doen dat vaak niet — ga uit van hogere waarden tenzij gedocumenteerd. SaunaSpace Faraday heeft de strengste EMF-discipline (volledige kooi van Faraday)."
+        },
+        {
+          "q": "Kan ik een infraroodsauna binnen installeren?",
+          "a": "Ja — de meeste full-spectrum-IR-cabinesauna's (Sunlighten, Clearlight, Sun Home, JNH) zijn ontworpen voor binnen. Je hebt minimaal een vrije ruimte van 4×4 ft nodig, 110V of 220V afhankelijk van de grootte, en voldoende ventilatie. Traditionele convectiesauna's (Finnleo) vragen om een uitgebreidere ventilatieplanning."
+        },
+        {
+          "q": "Hoe verhoudt een saunadeken zich tot een cabinesauna?",
+          "a": "Saunadekens (HigherDose) leveren IR met lichaamscontact tijdens sessies van ~40 minuten, maar alleen met ver-IR-golflengten en met minder dekking van het lichaamsoppervlak dan cabines. Cabinesauna's bereiken hogere kerntemperaturen en bieden full-spectrum-opties. Dekens passen bij wie weinig ruimte heeft; cabines bij wie de volledige saunabeleving wil."
+        }
+      ]
     }
   },
   "criteria": {
@@ -2293,7 +3432,14 @@
     "open-data": "Open data en toegang voor developers",
     "adhesion-comfort": "Hechting en comfort",
     "breathing-mechanism": "Ademmechanisme en aanpak",
-    "material-safety": "Materiaalveiligheid en huidverdraagzaamheid"
+    "material-safety": "Materiaalveiligheid en huidverdraagzaamheid",
+    "mechanism": "Stimulatiemechanisme",
+    "protocols": "Flexibiliteit van protocollen",
+    "filtration-technology": "Filtratietechnologie en -klasse",
+    "cadr-coverage": "CADR en ruimtedekking",
+    "build-noise": "Bouwkwaliteit en geluid",
+    "smart-features": "Slimme functies en sensoren",
+    "maintenance-cost": "Filtervervanging en onderhoud"
   },
   "categories": {
     "pemf": "PEMF-apparaten",
@@ -2307,7 +3453,9 @@
     "hrv-wearable": "HRV-trackers",
     "sauna": "Sauna's & infraroodsauna's",
     "vagus-stim": "Nervus vagus stimulatoren",
-    "breathing-aid": "Mondtape & neusademhaling"
+    "breathing-aid": "Mondtape & neusademhaling",
+    "red-light-mask": "Roodlicht-gezichtsmaskers",
+    "air-purifier": "Luchtreinigers"
   },
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {
@@ -3839,6 +4987,235 @@
         }
       ],
       "content": "## De korte versie\n\nBeide zijn premium neusspreiders. Intake is extern en magnetisch. Mute is een interne polymeer stent. Verschillende mechanismen; verschillende profielen qua verdraagbaarheid.\n\n## Wanneer is Intake Breathing de juiste keuze?\n\nAls je premium externe magnetische verwijding wilt zonder iets in de neus te plaatsen — dan past Intake het best. Comfortabel vanaf de eerste nacht, lagere jaarlijkse kosten, aanbevolen door James Nestor.\n\n## Wanneer is Mute Nasal Dilator de juiste keuze?\n\nAls je interne hulpmiddelen verdraagt en de sterkste werking met gepubliceerde klinische luchtstroomstudies wilt — dan past Mute het best. Van buitenaf onzichtbaar, de meest directe mechanische verwijding."
+    },
+    "muse-s-athena-vs-mendi": {
+      "title": "Muse S Athena vs Mendi: vergelijking (2026)",
+      "description": "Muse S Athena vs Mendi vergeleken: hoofdband met EEG plus fNIRS tegen de eenvoudige fNIRS-focustrainer. Rijkere data en slaap of de makkelijkste gewoonte?",
+      "intro": "Beide draag je op het voorhoofd om je brein te trainen, maar ze meten verschillende dingen. De Muse S Athena is de meest complete consumentenheadset — hij combineert EEG met fNIRS, voegt slaaptracking toe en geeft realtime neurofeedback via geluid. Mendi is bewust eenvoudiger: alleen fNIRS (doorbloeding van de prefrontale cortex), weergegeven als één spelachtige balk, zonder abonnement en met bijna geen leercurve. Diepgang en veelzijdigheid tegenover de makkelijkst mogelijke gewoonte.",
+      "verdict": "Compleet en rijk tegenover eenvoudig en makkelijk. De Muse S Athena wint op meting (EEG + fNIRS), slaaptracking en veelzijdigheid; Mendi wint op eenvoud, prijs en het opbouwen van een gewoonte voor pure focustraining. Kies Muse voor het vollere, capabelere apparaat; Mendi als je gewoon een makkelijke, goedkopere focustrainer in spelvorm wilt.",
+      "bestForA": "Kies de Muse S Athena als je de meest complete headset voor hersentraining wilt — EEG plus fNIRS, slaaptracking en realtime neurofeedback in een band waarin je kunt slapen.",
+      "bestForB": "Kies Mendi als je de eenvoudigste, goedkoopste manier wilt om een dagelijkse gewoonte van focustraining op te bouwen, zonder abonnement en zonder leercurve.",
+      "axes": [
+        {
+          "name": "Meting",
+          "note": "Muse S Athena combineert EEG (elektrische hersenactiviteit) met fNIRS (doorbloeding) — de eerste consumentenband die beide doet. Mendi is alleen fNIRS, dat minder gedetailleerd is dan EEG."
+        },
+        {
+          "name": "Slaaptracking",
+          "note": "De Muse S Athena is een zachte band waarin je kunt slapen, met slaaptracking op basis van EEG. Mendi is alleen een focustrainer — geen slaap."
+        },
+        {
+          "name": "Eenvoud & gewoonte",
+          "note": "Mendi is het makkelijkste apparaat om een gewoonte mee op te bouwen — één visuele balk, productief vanaf de eerste sessie, geen leercurve. Muse biedt meer, en dus ook meer om te leren."
+        },
+        {
+          "name": "Abonnement",
+          "note": "Geen van beide dwingt een abonnement af — de Muse S Athena heeft geen verplichte kosten, en Mendi is een eenmalige aankoop. Gelijkspel."
+        },
+        {
+          "name": "Prijs",
+          "note": "Mendi: $379 adviesprijs (vaak afgeprijsd). Muse S Athena: $474.99. Mendi is goedkoper voor pure focustraining."
+        },
+        {
+          "name": "Veelzijdigheid",
+          "note": "Muse bestrijkt meditatie, focus en slaap met rijkere data; Mendi doet één ding (prefrontale focustraining) en doet dat eenvoudig."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Muse S Athena of Mendi — welke moet ik kopen?",
+          "a": "De Muse S Athena is het completere apparaat — EEG plus fNIRS, slaaptracking en realtime neurofeedback voor meditatie, focus en slaap, voor $474.99. Mendi is een eenvoudigere, goedkopere ($379 adviesprijs, vaak afgeprijsd) fNIRS-focustrainer met een spelachtige balk en geen leercurve. Kies Muse voor diepgang en veelzijdigheid, Mendi voor de makkelijkste focusgewoonte."
+        },
+        {
+          "q": "Wat is hier het verschil tussen EEG en fNIRS?",
+          "a": "EEG meet de elektrische activiteit van de hersenen; fNIRS meet veranderingen in doorbloeding/oxygenatie. De Muse S Athena gebruikt beide (gedetailleerder); Mendi gebruikt alleen fNIRS, wat eenvoudiger maar minder gedetailleerd is. Voor rijkere hersendata Muse; voor een makkelijk focussignaal Mendi."
+        },
+        {
+          "q": "Welke is beter voor slaap?",
+          "a": "De Muse S Athena — het is een zachte band waarin je kunt slapen, met slaaptracking op basis van EEG. Mendi is alleen een focustrainer en niet gemaakt voor slaap."
+        }
+      ],
+      "content": "## De korte versie\n\nDe [Muse S Athena](/reviews/muse-s-athena) is de meest complete headset — EEG plus fNIRS, slaaptracking en neurofeedback; [Mendi](/reviews/mendi) is een eenvoudige, goedkopere fNIRS-focustrainer met een spelachtige balk en geen leercurve.\n\n## Wanneer is de Muse S Athena de juiste keuze?\n\nJe wilt het meest volledige apparaat voor hersentraining — rijkere meting, slaaptracking en veelzijdigheid in meditatie, focus en slaap.\n\n## Wanneer is Mendi de juiste keuze?\n\nJe wilt de eenvoudigste, goedkoopste manier om een dagelijkse focusgewoonte op te bouwen, zonder abonnement en zonder leercurve.\n\n## Ook het vergelijken waard\n\nTegenover de gamified EEG-optie: zie [Muse 2 vs FocusCalm vs Mendi](/reviews/vs/muse-2-vs-focuscalm-vs-mendi) en [Muse S Athena vs Muse 2](/reviews/vs/muse-s-athena-vs-muse-2). Het hele veld: [beste EEG-headsets](/reviews/eeg-headsets)."
+    },
+    "theragun-pro-plus-vs-hypervolt-2-pro": {
+      "title": "Theragun PRO Plus vs Hypervolt 2 Pro: vergelijking (2026)",
+      "description": "Theragun PRO Plus vs Hyperice Hypervolt 2 Pro — het premium-massagegunduel van 2026. ONDA vergelijkt stall force, amplitude, app en $200 prijsverschil.",
+      "intro": "Theragun PRO Plus en Hypervolt 2 Pro zijn de twee premium massageguns die gebruikers met elkaar vergelijken. Beide leveren 60 lbs stall force, beide hebben een stille borstelloze motor, beide hebben volledige app-integratie. De bepalende verschillen: Theragun heeft 16 mm amplitude (tegen 14 mm bij Hypervolt), 2 jaar garantie (tegen 1 jaar) en een $200 hogere prijs.",
+      "verdict": "Hetzelfde plafond qua stall force. Theragun PRO Plus voor de grootste amplitude en de langste garantie. Hypervolt 2 Pro voor dezelfde stall force + lager gewicht voor $200 minder.",
+      "bestForA": "Kies Theragun PRO Plus als je de grootste amplitude (16 mm), 2 jaar garantie en het Therabody-ecosysteem wilt.",
+      "bestForB": "Kies Hypervolt 2 Pro als je vergelijkbare stall force wilt voor $200 minder, met een lager gewicht en een geschiedenis bij NBA-/NFL-atleten.",
+      "axes": [
+        {
+          "name": "Stall force",
+          "note": "Beide 60 lbs. Gelijk op het plafond van percussiedruk."
+        },
+        {
+          "name": "Amplitude",
+          "note": "Theragun: 16 mm. Hypervolt: 14 mm. 2 mm diepere percussie bij Theragun."
+        },
+        {
+          "name": "Gewicht",
+          "note": "Hypervolt: ~2,6 lbs. Theragun: ~2,9 lbs. Hypervolt is lichter voor sessies met één hand."
+        },
+        {
+          "name": "Geluid",
+          "note": "Hypervolt: 48–52 dB. Theragun: 50–55 dB. Hypervolt is iets stiller."
+        },
+        {
+          "name": "App / ecosysteem",
+          "note": "Beide hebben volledige apps met begeleide routines. De Therabody-app is iets verzorgder en werkt samen met TheraFace."
+        },
+        {
+          "name": "Garantie",
+          "note": "Theragun: 2 jaar. Hypervolt: 1 jaar. Theragun biedt een dubbel zo lange garantie."
+        },
+        {
+          "name": "Prijs",
+          "note": "Hypervolt 2 Pro: $399. Theragun PRO Plus: $599. Hypervolt is $200 goedkoper."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Theragun PRO Plus of Hypervolt 2 Pro — welke is beter?",
+          "a": "Hetzelfde plafond qua stall force. Theragun wint op amplitude (+2 mm) en garantie (+1 jaar). Hypervolt wint op gewicht, geluid en een $200 lagere prijs. Kies op basis van de vraag of 2 mm amplitude + een extra jaar garantie $200 waard zijn."
+        },
+        {
+          "q": "Merk je 2 mm meer amplitude echt?",
+          "a": "Voor gebruikers die specifiek op diep weefsel mikken — ja, een beetje. Voor de meeste gebruikers met dagelijkse herstelroutines — niet wezenlijk."
+        },
+        {
+          "q": "Welke heeft de betere app?",
+          "a": "Beide zijn gelijkwaardig qua begeleide routines en Bluetooth-integratie. De Therabody-app is iets verzorgder en werkt samen met het TheraFace- + TheraGun-ecosysteem. De Hyperice-app is overzichtelijker, met minder druk om extra producten te kopen."
+        },
+        {
+          "q": "Wat zijn de totale kosten?",
+          "a": "Theragun PRO Plus: $599. Hypervolt 2 Pro: $399. Door de garantie van 1 jaar bij Hypervolt betaal je na jaar 1 mogelijk zelf voor reparaties, tegen 2 jaar dekking bij Theragun."
+        }
+      ],
+      "content": "## De korte versie\n\nBeide zijn premium massageguns met 60 lbs stall force. Theragun PRO Plus heeft 16 mm amplitude + 2 jaar garantie. Hypervolt 2 Pro heeft 14 mm amplitude + 1 jaar garantie voor $200 minder.\n\n## Wanneer is Theragun PRO Plus de juiste keuze?\n\nAls je de grootste amplitude (16 mm) en de langste garantie in de categorie wilt — dan past Theragun. Het Therabody-ecosysteem en de merkgeschiedenis vergroten de waarde.\n\n## Wanneer is Hypervolt 2 Pro de juiste keuze?\n\nAls je vergelijkbare stall force wilt voor $200 minder — dan past Hypervolt. Lichter, stiller, met een geschiedenis bij NBA-/NFL-atleten."
+    },
+    "eight-sleep-pod-5-vs-sleep-number-climate360": {
+      "title": "Eight Sleep Pod 5 vs Sleep Number Climate360: vergelijking (2026)",
+      "description": "Eight Sleep Pod 5 vs Sleep Number Climate360: biohacker-bedsysteem tegen gangbaar slim bed met ingebouwd klimaat. ONDA-vergelijking van koeling en kosten.",
+      "intro": "De Eight Sleep Pod 5 en het Sleep Number Climate360 zijn in 2026 de twee premium manieren om een slim bed met temperatuurregeling te kopen, en ze komen uit verschillende werelden. Eight Sleep is het systeem voor biohackers — een watergekoelde hoes met twee zones (plus een deken van bovenaf bij de Ultra), geïntegreerde tracking van hartslagvariabiliteit (HRV) en adaptieve Autopilot-software, als laag op je bed. Sleep Number is het gangbare matrassenmerk, met klimaat en hardheid ingebouwd in het matras zelf en de volwassen SleepIQ-tracking. De keuze is: krachtig klimaat met data voorop tegenover een alles-in-één verstelbaar slim bed.",
+      "verdict": "Klimaatlaag voor biohackers tegenover een gangbaar slim bed. De Eight Sleep Pod 5 wint op koelkracht, diepgang van de HRV en adaptieve software; het Sleep Number Climate360 wint doordat het één geïntegreerd bed is met verstelbare hardheid en DualAir-comfort, zonder hoes erbij. Beide hebben een premiumprijs. Kies op basis van de vraag of je de scherpste herstel-data wilt of een compleet verstelbaar slim bed.",
+      "bestForA": "Kies de Eight Sleep Pod 5 als krachtige koeling met twee zones, geïntegreerde HRV-tracking en adaptieve Autopilot-software voorop staan — en je het abonnement en de aanpak met een hoes als extra laag accepteert.",
+      "bestForB": "Kies het Sleep Number Climate360 als je één geïntegreerd slim bed wilt met verstelbare hardheid (DualAir) en ingebouwd klimaat, volwassen SleepIQ-tracking en geen abonnement voor de kernervaring.",
+      "axes": [
+        {
+          "name": "Klimaatregeling",
+          "note": "Het watergekoelde systeem met twee zones van Eight Sleep (plus de deken van bovenaf bij de Ultra) koelt sterker en preciezer dan de ingebouwde temperatuurlaag van Sleep Number, die milder en minder krachtig is."
+        },
+        {
+          "name": "Diepgang van tracking",
+          "note": "Eight Sleep loopt voorop in diepgang van HRV en slaapfasen, met inzichten van Autopilot. SleepIQ van Sleep Number is volwassen en betrouwbaar, maar meer op consumenten gericht — minder gefocust op herstel dan de Pod."
+        },
+        {
+          "name": "Verstelbaar comfort",
+          "note": "De kernsterkte van Sleep Number: DualAir met verstelbare hardheid per kant en een bed dat ook kan verstellen. De Pod is een klimaat-/trackinglaag op het matras dat je al hebt; hij verandert de hardheid niet."
+        },
+        {
+          "name": "Integratie",
+          "note": "Climate360 is één bed — matras, hardheid en klimaat geïntegreerd, niets toe te voegen. De Pod 5 is een hoes (plus hub, plus optionele bodem) bovenop een bestaand matras."
+        },
+        {
+          "name": "Software & automatisering",
+          "note": "De slaapagent Autopilot 4.0 van de Pod 5 (Apple/Google Health, planning op basis van slaapfasen, ochtendoverzicht) is adaptiever dan de op rapportage gerichte app van SleepIQ."
+        },
+        {
+          "name": "Abonnement & kosten",
+          "note": "Sleep Number Climate360 ~$5,500+ zonder verplicht lidmaatschap voor de kernfuncties. Pod 5 Ultra ~$6,099 plus het doorlopende Autopilot-abonnement. Sleep Number vermijdt de terugkerende kosten."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Eight Sleep Pod 5 of Sleep Number Climate360 — welke moet ik kopen?",
+          "a": "Koop de Pod 5 als je de krachtigste koeling, de diepste HRV-/slaaptracking en adaptieve software wilt — en het abonnement accepteert. Koop de Climate360 als je een compleet slim bed wilt met verstelbare hardheid en ingebouwd klimaat, volwassen SleepIQ-tracking en geen lidmaatschap. Het ene is een klimaatlaag met data voorop; het andere een alles-in-één verstelbaar bed."
+        },
+        {
+          "q": "Koelt de Climate360 net zo krachtig als Eight Sleep?",
+          "a": "Nee. De ingebouwde temperatuurregeling van Sleep Number is milder dan het watergekoelde systeem met twee zones van Eight Sleep. Staat krachtige, precieze koeling voorop, dan is de Pod 5 het sterkere klimaatapparaat."
+        },
+        {
+          "q": "Welke heeft de betere slaaptracking?",
+          "a": "Eight Sleep, wat betreft diepgang van HRV en herstel. SleepIQ van Sleep Number is volwassen en betrouwbaar, maar meer op consumenten gericht — goed voor trends, minder gefocust op herstelmetingen dan de Pod."
+        }
+      ],
+      "content": "> Update (september 2026): Eight Sleep verving de Pod 5 op 23 september 2026 door de Pod 6 (vanaf $1,999 Solo; $2,899 queen met twee zones). De Pod 5-prijzen hieronder zijn de laatste adviesprijzen — vergelijk resterende Pod 5-voorraad met de prijzen van de Pod 6.\n\n## De korte versie\n\nTwee premium slimme bedden, twee filosofieën. De [Eight Sleep Pod 5](/reviews/eight-sleep-pod-5) is de klimaat- en trackinglaag voor biohackers — krachtige koeling met twee zones, diepe HRV, adaptieve Autopilot — bovenop je bed, met een abonnement. Het [Sleep Number Climate360](/reviews/sleep-number-climate360) is een gangbaar alles-in-één slim bed met verstelbare hardheid en klimaat ingebouwd in het matras, en volwassen SleepIQ-tracking.\n\n## Wanneer is de Eight Sleep Pod 5 de juiste keuze?\n\nKoelkracht, diepgang van HRV en adaptieve software staan voorop, en je wilt dat je bed actief je herstel stuurt. Het abonnement is de toegangsprijs.\n\n## Wanneer is het Sleep Number Climate360 de juiste keuze?\n\nJe wilt één geïntegreerd slim bed — verstelbare hardheid per kant plus klimaat, niets erbovenop — met betrouwbare tracking en geen lidmaatschap voor de kernervaring.\n\n## Ook het vergelijken waard\n\nVoor de route met alleen klimaat en zonder abonnement: zie [Pod 5 vs ChiliPad Dock Pro](/reviews/vs/eight-sleep-pod-5-vs-chilipad-dock-pro). Het hele veld: [beste slimme slaapklimaatsystemen](/reviews/smart-sleep-climate)."
+    },
+    "oura-ring-4-vs-ultrahuman-ring-air-vs-ringconn-gen-2": {
+      "title": "Oura Ring 4 vs Ultrahuman Ring Air vs RingConn Gen 2: vergelijking (2026)",
+      "description": "Oura vs Ultrahuman vs RingConn — ONDA-vergelijking van de beste slimme ringen: premium afwerking, lichtste vormfactor of langste accuduur.",
+      "intro": "Oura Ring 4, Ultrahuman Ring Air en RingConn Gen 2 zijn de drie slimme ringen die biohackers zonder diabetes het vaakst samen op hun shortlist zetten. Alle drie gebruiken vergelijkbare optische sensoren voor hartslagvariabiliteit (HRV) en slaap 's nachts; de verschillen zitten in de volwassenheid van de app, de vormfactor en de kosten van bezit. Premium met abonnement tegenover abonnementsvrij met compromissen.",
+      "verdict": "Oura Ring 4 wint op volwassenheid van de app en diepgang van de analyses. Ultrahuman wint op vormfactor en integratie in het ecosysteem. RingConn wint op accuduur en totale eigendomskosten.",
+      "bestForA": "Kies Oura Ring 4 als je de meest verzorgde slimme-ringervaring wilt — het diepste slaapmodel, de meest volwassen app, tien jaar doorontwikkeling — en het lidmaatschap van $5.99/maand acceptabel vindt.",
+      "bestForB": "Kies Ultrahuman Ring Air als de lichtst mogelijke ring doorslaggevend is (2,4g), of als je de Ultrahuman M1-CGM al hebt of wilt aanschaffen voor native integratie in één ecosysteem.",
+      "bestForC": "Kies RingConn Gen 2 als je abonnementsvrije tracking met een slimme ring wilt, met de langste accuduur in de categorie (12 dagen) en de laagste eigendomskosten over 3 jaar.",
+      "axes": [
+        {
+          "name": "HRV-meting",
+          "note": "Alle drie gebruiken optische PPG. Alleen de Oura Ring 4 heeft een onafhankelijke controle tegenover ECG (nachtelijke metingen bij 13 mensen, Dial 2025); Ultrahuman heeft door het bedrijf uitgevoerde preprints en RingConn één preprint (stand oktober 2026)."
+        },
+        {
+          "name": "Slaaptracking",
+          "note": "Qua nauwkeurigheid vrijwel gelijk — geen van beide heeft een onafhankelijke validatie van de slaapfasen (stand oktober 2026). De slaapfasen van Oura zijn alleen gevalideerd in door de fabrikant gefinancierde studies (geen onafhankelijke controle van de Ring 4); slaapfasen van wearables blijven schattingen. Ultrahuman en RingConn zijn degelijk, maar lopen een niveau achter in de detaillering van de slaapfasen."
+        },
+        {
+          "name": "App en analyses",
+          "note": "Oura: het meest volwassen na tien jaar. Ultrahuman: verzorgd, nieuwer, smaller. RingConn: overzichtelijk, maar de minst volwassen van de drie."
+        },
+        {
+          "name": "Gewicht van de ring",
+          "note": "Ultrahuman Ring Air: 2,4g — de lichtste in de categorie. RingConn Gen 2: ~3,0g. Oura: ~5g. Ultrahuman is merkbaar comfortabeler voor gevoelige gebruikers."
+        },
+        {
+          "name": "Accuduur",
+          "note": "RingConn Gen 2: 10–12 dagen afhankelijk van de maat — de langste in de categorie slimme ringen. Oura: ongeveer 4–7 dagen. Ultrahuman: ~6 dagen."
+        },
+        {
+          "name": "Betrouwbaarheid van de accu (meerdere jaren)",
+          "note": "Bij Ultrahuman zijn er gedocumenteerde meldingen van accuslijtage na 12 maanden. Oura en RingConn hebben een schonere staat van dienst over meerdere jaren."
+        },
+        {
+          "name": "Abonnement vereist",
+          "note": "Oura: lidmaatschap van $5.99/maand voor alle functies. RingConn en Ultrahuman: geen abonnement. RingConn wint ronduit op waarde zonder abonnement."
+        },
+        {
+          "name": "Integratie in het ecosysteem",
+          "note": "Ultrahuman: unieke native koppeling met de Ultrahuman M1-CGM. Oura: Apple Health en Levels. RingConn: standaard Apple Health / Google Fit."
+        },
+        {
+          "name": "Prijs van de hardware",
+          "note": "RingConn Gen 2: $299. Oura Ring 4: ~$349 + $5.99/mnd. Ultrahuman: ~$400. RingConn is vooraf het goedkoopst."
+        },
+        {
+          "name": "Totale kosten over 3 jaar",
+          "note": "RingConn: ~$299. Ultrahuman: ~$400. Oura: ~$565 met lidmaatschap. RingConn is over meerdere jaren duidelijk het goedkoopst."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Welke slimme ring is de beste — Oura, Ultrahuman of RingConn?",
+          "a": "Oura wint op volwassenheid van de app en diepgang van de analyses — de meest gedetailleerde slaapfasen onder consumentenringen (alleen gevalideerd in door de fabrikant gefinancierde studies) en de meest verzorgde ervaring. Ultrahuman wint op gewicht van de ring en integratie met het CGM-ecosysteem. RingConn wint op accuduur en eigendomskosten over 3 jaar. Kies op basis van wat voor jou het zwaarst weegt."
+        },
+        {
+          "q": "Is het Oura-abonnement het waard vergeleken met ringen zonder abonnement?",
+          "a": "Voor de meeste gebruikers wel, vanwege de diepgang van de analyses — maar het verschil is kleiner geworden. Over drie jaar kost Oura ~$565 tegenover ~$299 voor RingConn en ~$400 voor Ultrahuman. Gebruik je het diepere slaapmodel en de Readiness-score niet intensief, dan is het abonnement moeilijk te rechtvaardigen."
+        },
+        {
+          "q": "Welke draagt het prettigst voor dagelijks gebruik?",
+          "a": "Ultrahuman Ring Air met 2,4g — de lichtste slimme ring op de markt. RingConn met ~3,0g is ook duidelijk lichter dan de ~5g van Oura. Voor gevoelige gebruikers winnen beide abonnementsvrije opties op comfort."
+        },
+        {
+          "q": "Gaat de accu van RingConn echt 12 dagen mee?",
+          "a": "Onafhankelijke reviews en gebruikers bevestigen grotendeels 10–12 dagen per lading — ongeveer het dubbele van Oura en Ultrahuman. Een accu die meerdere dagen meegaat, betekent minder gaten door opladen in de nachtelijke HRV-reeks."
+        },
+        {
+          "q": "Moet ik me zorgen maken over de betrouwbaarheid van de accu van Ultrahuman?",
+          "a": "Er is een gedocumenteerde reeks gevallen van versnelde accuslijtage na ongeveer 12 maanden bij een deel van de exemplaren. Ultrahuman heeft daarop de garantievoorwaarden verbeterd. Oura en RingConn hebben geen vergelijkbare reeksen betrouwbaarheidsproblemen gehad."
+        }
+      ],
+      "content": "## De korte versie\n\n> Let op: voor de Ultrahuman Ring Air geldt een importverbod in de VS (oktober 2025, octrooizaak bij de ITC gewonnen door Oura) en hij is in de VS niet te koop. De in de VS verkrijgbare opvolger van Ultrahuman is de [Ring Pro](/reviews/ultrahuman-ring-pro) — zonder abonnement, met een accu van ~15 dagen. Lees deze vergelijking met dat in gedachten als je in de VS woont.\n\nDrie verschillende optimale punten op het afwegingsvlak van slimme ringen. Oura voor afwerking, Ultrahuman voor vormfactor + CGM-ecosysteem, RingConn voor prijs + accu. De meeste gebruikers hoeven niet veel verder te denken dan dat.\n\n## Wanneer is Oura Ring 4 de juiste keuze?\n\nAls je de meest volwassen ringervaring en het diepste slaapmodel wilt, past Oura. Het lidmaatschap van $5.99/maand is de toegangsprijs tot tien jaar doorontwikkeling en de meest uitgewerkte analyses in de categorie. De meeste gebruikers komen nog steeds hier uit.\n\n## Wanneer is Ultrahuman Ring Air de juiste keuze?\n\nAls het gewicht van de ring zwaarder weegt dan al het andere, is Ultrahuman de lichtste slimme ring op de markt. Gebruik je de Ultrahuman M1-CGM of ben je dat van plan, dan is de native weergave in één ecosysteem uniek. Wees je wel bewust van de kanttekening over de betrouwbaarheid van de accu.\n\n## Wanneer is RingConn Gen 2 de juiste keuze?\n\nAls geen abonnement een harde eis is en je de langste accuduur in de categorie wilt, past RingConn. Het is over drie jaar ook met duidelijke afstand het goedkoopst. De keerzijde is een iets minder volwassen app en minder diepgaande slaapanalyses dan Oura."
     }
   }
 }

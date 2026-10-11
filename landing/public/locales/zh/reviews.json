@@ -110,8 +110,52 @@
       "editorialAdjustment": "营销诚信——Vibe产品页称“有40多项已发表研究支持”和“效果证明一切”，但没有列出这些研究的名称，我们也没有找到针对Vibe本身的已发表研究（2026年10月核查）。此项在这里计分，而不计入证据评分。（原文：“Backed by 40+ Published Studies”）"
     },
     "apple-watch-series-12": {
-      "verdict": "迄今为止测 HRV 最好的 Apple Watch：采样频率提高 24 倍，并区分 Recovery HRV 与 Overall HRV——但它首先仍是一款智能手表，续航依然与夜间佩戴相冲突。",
-      "productType": "智能手表"
+      "verdict": "迄今为止最适合心率变异性（HRV）的 Apple Watch：采样频率提高 24 倍，并拆分为 Recovery HRV 与 Overall HRV——但它首先仍是一款智能手表，续航仍与夜间佩戴相冲突。",
+      "summary": "Series 12 全新的 Health Sensing System 是 Apple Watch 首次认真对待 HRV 的更新：HRV 采样频率最高提升 24 倍，拆分为 Recovery HRV 和 Overall HRV，并新增高血压通知。它缩小了与专用追踪设备的大部分差距——但约 1 天的续航仍让夜间佩戴需要妥协。",
+      "description": "ONDA 评测 Apple Watch Series 12 作为 HRV 追踪设备的表现——全新 Health Sensing System 终于认真对待 HRV。从准确度、传感器、睡眠、数据和性价比评分。",
+      "bestFor": "最适合想要一款全能智能手表、其 HRV 如今可作为个人趋势使用的用户（Recovery HRV 本身尚未经过验证）。",
+      "testNote": "基于证据的评估——依据 Apple 2026 年 9 月的发布会与规格、独立上手评测，以及已发表的 Apple Watch HRV 验证文献打分。ONDA 未进行上手实测。",
+      "productType": "智能手表",
+      "pros": [
+        "HRV 采样频率提高 24 倍，拆分为 Recovery 和 Overall",
+        "全新 Health Sensing System：ECG 加光学高血压通知",
+        "HealthKit 原生 RMSSD——第三方恢复类 App 终于可以读取",
+        "无需订阅；本榜中功能最强的日常智能手表"
+      ],
+      "cons": [
+        "约 1 天的续航仍让每晚持续测量 HRV 需要妥协",
+        "手腕光学 HRV 尚未经过独立验证；ECG 胸带更接近实验室 ECG（静息状态下，在年轻健康成人中）",
+        "Recovery HRV 和 Overall HRV 是不同的指标——容易混淆",
+        "睡眠追踪仍落后于专用睡眠追踪设备"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "HRV 现在约每 5 分钟采样一次（频率提高 24 倍），并拆分为 Recovery HRV 和 Overall HRV——相比 Series 11 稀疏的抽查是实实在在的进步，但仍是手腕光学测量，而非连续测量的戒指或 ECG。",
+        "sensor": "全新的 Health Sensing System：更大、更省电的绿色 LED 每 5 秒读取一次心率，单导联 ECG，以及光学高血压检测。本榜所有手表中最强的传感器组合。",
+        "sleep-accuracy": "夜间生命体征现在会将 Recovery HRV 与你的个人基线对比分析。睡眠追踪有所改进，但仍落后于专用睡眠追踪设备，而续航也让人难以每晚佩戴。",
+        "data-access": "HealthKit 相对开放，现在除 SDNN 外还会写入原生 RMSSD 类型（heartRateVariabilityRMSSD）——第三方 App 终于可以读取恢复级指标。",
+        "wearability": "最长约 24 小时的续航（快充 15 分钟可用 12 小时）仍意味着每天充电会与夜间测量冲突——这是戒指或多周续航手表明显胜出的唯一方面。",
+        "app-ux": "HRV 终于被突出展示——心率 App 中有 Recovery HRV 和 Overall HRV 的专属板块——而不是像 Series 11 那样被埋没。Apple 健康仍是本榜最简洁的健康界面。",
+        "value": "起售价 $399，一次性购买，无需订阅，以这个价格获得一款带 ECG 和高血压通知的真正多用途设备。"
+      },
+      "content": "## 领先之处\n\n2026 年 9 月发布的 Apple Watch Series 12 是首款以*健康感知*而非屏幕或芯片作为主打升级的 Apple Watch。全新的 Health Sensing System 使用更大、更省电的绿色 LED，每五秒读取一次心率，并以比以往**最高 24 倍的频率**采样[HRV](/glossary/heart-rate-variability)——此前的手表大约每两小时才记录一次。\n\n更重要的是，它改变了你得到的是*哪一个* HRV 数值。Series 12 现在报告两个：**Recovery HRV**（用于日常压力与恢复，在夜间生命体征中与你的个人基线对比分析）和 **Overall HRV**（用于更广泛的健康洞察，包括心血管健康）。Apple 尚未公布两者背后的计算公式。在底层，HealthKit 在长期存在的 SDNN 之外新增了原生 `heartRateVariabilityRMSSD` 类型——这正是 Whoop、Oura 和 Garmin 构建恢复评分所用的统计量——因此第三方 App 终于可以从 Apple Watch 读取 RMSSD 值。它还新增了**高血压通知**，利用光学传感器在 30 天的时间窗口内分析血管对心跳的反应。关于两个数值变化的完整解析，请看 [Recovery HRV 与 Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv)。\n\n## Apple Watch Series 12 有哪些缺点？\n\n物理原理的变化不如软件那么大。它仍然是**手腕光学传感器**，在获得干净、连续的夜间 HRV 记录方面，不及基于手指的戒指或 ECG 胸带。而续航——最长约 24 小时，快充 15 分钟约可用 12 小时——仍意味着每天充电会与整晚佩戴冲突，这是戒指或多周续航的 Garmin 明显胜出的唯一方面。两个 HRV 数值也容易混为一谈：Recovery HRV 的读数高于 Overall HRV，不应画成同一条曲线。\n\n## 谁应该买 Apple Watch Series 12？\n\n如果你想要最好的日常智能手表，并且现在想要真正可以据此行动的 HRV，选 Series 12——更频繁的采样加上与基线对比的 Recovery HRV，是相对 Series 11 的真正进步。如果干净的夜间 HRV 趋势是你唯一的优先事项，一枚可以每晚佩戴的戒指可能更适合你（在 13 人的夜间记录中，Dial 2025，Oura Ring 4 属于最接近 ECG 的设备之一）；请看 [2026 年最佳 HRV 追踪设备](/reviews/compare/best-hrv-trackers-2026)。\n\n---\n\n## 延伸阅读\n\n为什么 HRV 是值得追踪的信号——以及身体如何产生它背后的科学。\n\n- [为什么每台设备上的 HRV 读数都不同](/articles/hrv-different-every-device)——SDNN 与 RMSSD，以及为何各品牌数值对不上\n- [Apple Watch Recovery HRV 与 Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv)——解读 2026 年的双数值变化\n- [HRV 能预测反应时间和专注力吗？](/articles/nervous-system-ping-latency)——静息 HRV 能说明和不能说明哪些关于注意力与自控力的问题\n",
+      "faq": [
+        {
+          "q": "Apple Watch Series 12 测 HRV 比 Series 11 更好吗？",
+          "a": "是的，明显更好。Series 12 的 Health Sensing System 以约 24 倍的频率采样 HRV，并拆分为与你的基线对比分析的 Recovery HRV 和 Overall HRV——相对 Series 11 稀疏的抽查是真正的升级。它还在心率 App 中展示 HRV，而不是将其埋没。"
+        },
+        {
+          "q": "Apple Watch Series 12 多少钱？需要订阅吗？",
+          "a": "Series 12 铝金属款起售价 $399（钛金属和陶瓷款更贵），HRV、ECG 和高血压功能都无需订阅。它于 2026 年 9 月 18 日上市。"
+        },
+        {
+          "q": "Apple Watch Series 12 测 HRV 够准吗？还是该买戒指？",
+          "a": "在针对旧款的研究中，心率接近参考值，但在一项研究中，旧款（Series 8）在力量训练组刚结束时准确度较低；在一项针对旧款的研究中 HRV 被低估，而 Recovery HRV / Overall HRV 尚未经过验证——因此请将其作为个人趋势使用。若要与 Whoop 或 Oura 对齐，你可以使用 App 现在能从 Apple 健康读取的 RMSSD 值（Apple 尚未确认 Recovery HRV 就是 RMSSD）。ECG 胸带更接近实验室 ECG（静息状态下，在年轻健康成人中），而手表约 1 天的续航会与整晚佩戴冲突。"
+        },
+        {
+          "q": "Apple Watch Series 12 能检测高血压吗？",
+          "a": "它新增了高血压通知：光学传感器在约 30 天的时间窗口内分析你的血管对心跳的反应，并可能提示可能存在高血压。这是一个筛查信号，不是诊断，也不能替代血压计。"
+        }
+      ]
     },
     "whoop-5-0": {
       "verdict": "戴在手腕上的恢复教练：连续夜间 HRV 与精准的负荷洞察，但必须绑定永久会员。",
@@ -233,8 +277,52 @@
       "productType": "智能手表"
     },
     "muse-s-athena": {
-      "verdict": "最完整的消费级脑训练头戴设备——可戴着睡觉的柔软头带集成EEG和fNIRS。",
-      "productType": "消费级EEG + fNIRS头带（冥想、睡眠、专注）"
+      "verdict": "最全面的消费级脑训练头戴设备——EEG加fNIRS，集成在可戴着入睡的柔软头带中。",
+      "summary": "Muse S Athena是Interaxon的2024年旗舰——一款适合睡眠的柔软头带，结合了四通道干电极EEG、前额叶fNIRS血氧检测和夜间睡眠追踪。它继承了成熟的Muse冥想内容库，加入了消费级中最具雄心的传感器融合，并且与大多数高端设备不同，出厂时没有强制订阅。2026年EEG/脑训练领域最佳全能之选。",
+      "description": "ONDA评测Muse S Athena——Interaxon最新高端头带，将EEG、fNIRS和睡眠追踪融合在一条柔软头带中。从信号、内容、舒适度和性价比评分。",
+      "bestFor": "最适合想要最丰富内容库并包含睡眠追踪的认真的消费级脑训练用户。",
+      "testNote": "基于证据的评估——依据Interaxon产品资料、已发表的Muse EEG验证文献及2026年独立评测评分。ONDA未进行上手实测。",
+      "productType": "消费级EEG + fNIRS头带（冥想、睡眠、专注）",
+      "pros": [
+        "EEG + fNIRS + 睡眠集于一条柔软头带——消费市场中独一无二",
+        "经过十年迭代、最丰富的脑训练内容库",
+        "无强制订阅——核心冥想、睡眠和专注功能无需订阅即可使用",
+        "唯一舒适到可整夜佩戴入睡的高端EEG头戴设备"
+      ],
+      "cons": [
+        "官方SDK有限——开发者更倾向于选择Neurosity Crown",
+        "高端定价——约为入门款Muse 2的两倍",
+        "干电极——满足消费级使用，但非科研级",
+        "传感器融合（EEG + fNIRS）在App中的解读仍在完善"
+      ],
+      "scoreNotes": {
+        "signal-quality": "四个干EEG电极加前额叶fNIRS光极——首款在一台设备中融合两种信号的消费级头戴设备。坐姿和躺姿训练时信号保持稳定；但它并不是真正的科研级参考标准。",
+        "training-content": "消费级中最丰富的脑训练内容库——引导冥想、呼吸练习、睡眠旅程、专注训练、情绪追踪。经过十年迭代已很成熟。",
+        "insights": "单次训练报告使用Interaxon自有算法，将训练时间标记为平静、中性或活跃；睡眠分期结合EEG与身体活动。本榜单中最好的训练后分析。",
+        "comfort": "专为整夜佩戴设计的柔软织物头带——本榜单中唯一真正可以戴着入睡的高端EEG头戴设备。",
+        "app-ux": "精致的iOS/Android App，集成Apple Health和Google Fit。经过十年Muse产品迭代，生态成熟。",
+        "open-data": "可通过Muse Direct（第三方App）导出原始EEG，但Interaxon的官方SDK有限。开发者接入远远落后于Neurosity Crown。",
+        "value": "硬件$474.99，无强制订阅。高端定价，但它是唯一具备EEG + fNIRS + 睡眠的消费级设备——核心功能无需订阅即可使用，不过Smart Wakeup、AI教练和精选课程需要Muse Premium。"
+      },
+      "content": "## 优势所在\n\nMuse S Athena是2026年最全面的消费级脑训练头戴设备。Interaxon保留了让初代Muse系列成功的一切——柔软头带、丰富的冥想内容库、适合睡眠的外形——并加入了几乎没有竞品具备的两项能力：与四通道EEG并行的[前额叶](/glossary/prefrontal-cortex)fNIRS血氧检测，以及直接由EEG信号得出的明确睡眠分期——包括[慢波睡眠](/glossary/slow-wave-sleep)。这一组合在消费领域确属新颖；冥想、专注和睡眠模块都以此为基础。\n\n## Muse S Athena有哪些缺点？\n\n对于想要获取原始信号的开发者和生物黑客，它是不合适的工具。官方SDK有限，Interaxon一贯优先打磨体验而非开放性；Muse Direct可导出原始EEG，但它是第三方的，且使用笨拙。纯EEG信号质量也只是够用而非科研级——这是柔软头带中的干电极，而不是涂凝胶的临床传感器。\n\n## 谁适合买Muse S Athena？\n\n如果你想要一台能兼顾冥想、专注和睡眠、拥有市场上最丰富内容库、且核心功能无强制订阅的消费级设备，选Muse S Athena。如果原始EEG访问是决定因素，Neurosity Crown才是对的选择。如果价格是决定因素，Muse 2以一半的价格覆盖大部分相同的冥想用途。\n\n---\n\n## 延伸阅读\n\n这些头戴设备所反馈的神经科学——以及EEG信号能告诉你和不能告诉你的心理状态信息。\n\n- [α脑波：平静、创造力与心流](/articles/neural-bridge-alpha-flow-gateway) ——α节律的作用，以及α头戴设备、App和音乐能改变与不能改变的\n- [乙酰胆碱：注意力的透镜](/articles/acetylcholine-lens-neuro-mechanics) ——专注背后的神经化学\n- [认知架构：神经吞吐量](/articles/cognitive-architecture-neural-throughput) ——用来比喻大脑能处理多少信息\n",
+      "faq": [
+        {
+          "q": "Muse S Athena值得买吗？",
+          "a": "对于认真的消费级脑训练用户，Muse S Athena值得买。它将EEG、fNIRS和睡眠追踪集成在一条柔软头带中，拥有经过十年迭代、最丰富的脑训练内容库，且无强制订阅。想要原始数据的开发者可能更喜欢Neurosity Crown。"
+        },
+        {
+          "q": "Muse S Athena多少钱？",
+          "a": "Muse S Athena头带标价$474.99，无强制订阅：核心功能无需订阅即可使用，但Smart Wakeup、AI教练和精选课程需要Muse Premium。价格约为入门款Muse 2的两倍。它在一条柔软头带中增加了EEG、fNIRS和睡眠追踪。"
+        },
+        {
+          "q": "Muse S Athena有哪些缺点？",
+          "a": "其官方SDK有限，高端价格是Muse 2的两倍，干电极满足消费级使用但非科研级。EEG与fNIRS的传感器融合在App中的解读方式也仍在完善。"
+        },
+        {
+          "q": "Muse S Athena和Neurosity Crown哪个好？",
+          "a": "Muse S Athena更适合引导式脑训练和睡眠，拥有最丰富的内容库和整夜佩戴的舒适度。Neurosity Crown更适合开发者，提供开放SDK和八个电极，但价格约为三倍，也没有丰富的内容库。"
+        }
+      ]
     },
     "muse-2": {
       "verdict": "最受欢迎的消费级EEG头带——内容成熟，价格亲民，是该类别的入门之选。",
@@ -313,16 +401,104 @@
       "productType": "居家临床神经反馈（处方）"
     },
     "mendi": {
-      "verdict": "不是EEG——以简单游戏形式进行的fNIRS前额叶训练。易于使用，用途聚焦。",
-      "productType": "fNIRS前额叶脑训练头带"
+      "verdict": "不是EEG——以简单游戏形式进行的fNIRS前额叶训练。易于使用，定位较窄。",
+      "summary": "Mendi是一款瑞典制造的头带，通过fNIRS（功能性近红外光谱）而非EEG测量前额叶皮层的血氧变化，并将信号用于游戏化的神经反馈体验：持续关注前额活动，让小球保持飞行。虽然测量方式不同，但它属于消费级脑训练的选购范围，因此收录在此。比EEG更简单、更容易上手，范围也更窄。",
+      "description": "ONDA评测Mendi——采用前额叶fNIRS（非EEG）、以游戏形式进行神经反馈训练的头带。从信号、内容和性价比评分。",
+      "bestFor": "最适合想要最简单的神经反馈体验、只专注于前额叶注意力训练的用户。",
+      "testNote": "基于证据的评估——依据Mendi产品资料、已发表的fNIRS神经反馈文献及2026年独立评测评分。ONDA未进行上手实测。",
+      "productType": "fNIRS前额叶脑训练头带",
+      "pros": [
+        "游戏化神经反馈——品类中最易上手",
+        "单条额头带——专注训练时最舒适的形态",
+        "无需订阅",
+        "fNIRS提供与EEG不同的信号方式——可能适合一些用不惯EEG的用户"
+      ],
+      "cons": [
+        "不是EEG——fNIRS是一种不同（且更窄）的信号",
+        "仅测量单一区域（前额叶皮层）",
+        "没有冥想内容库或睡眠追踪",
+        "封闭的数据平台——无开发者接口"
+      ],
+      "scoreNotes": {
+        "signal-quality": "前额叶皮层上方的fNIRS光极——测量血氧变化而非电活动。单区域测量，比EEG简单，但信息量较少。",
+        "training-content": "游戏化神经反馈：前额叶活动持续时小球上升。方案简单，没有冥想内容库，没有睡眠功能——纯粹的专注训练。",
+        "insights": "Mendi自有的单次训练评分及汇总趋势数据。分析深度不及基于EEG的设备。",
+        "comfort": "简单的额头带——10–15分钟的训练很舒适，穿戴和取下都方便。",
+        "app-ux": "精致的iOS/Android App，游戏驱动的训练流程清晰。",
+        "open-data": "封闭系统——无原始数据导出或SDK。不是开发者平台。",
+        "value": "标价$379（经常打折），无需订阅。比Muse S Athena便宜，比Muse 2贵。"
+      },
+      "content": "## 优势所在\n\nMendi是进入神经反馈最温和的入口。额头上的fNIRS传感器测量前额叶皮层的血氧变化——一种不同于EEG、更易解读的信号——并将其输入一个游戏：前额叶血氧信号上升时小球升起，下降时小球落下。没有别的需要学。训练时间短，App简洁，设备是本榜单中最舒适的。\n\n## Mendi有哪些缺点？\n\nMendi也是定位最窄的选择。fNIRS不是EEG——方式不同、解读不同、仅测量单一区域——平台也没有冥想内容库、没有睡眠追踪、没有开发者接口。对于想要纯粹前额叶注意力训练以外功能的用户，Mendi并不合适。\n\n## 谁适合买Mendi？\n\n如果你想要的恰恰是最简单的神经反馈体验，或者基于EEG的设备没能给你清晰的信号、值得尝试另一种方式，就选Mendi。想要更广的冥想内容，选Muse S Athena或Muse 2。想要带开发者接口的真正EEG，选Neurosity Crown或Emotiv Insight 2。\n\n---\n\n## 延伸阅读\n\nMendi信号背后的神经科学——fNIRS测量的是前额叶皮层的血氧，而非大脑电活动——以及反馈训练能做到和做不到的事。\n\n- [EEG神经反馈与消费级头戴设备](/science/evidence/eeg-neurofeedback) ——fNIRS与EEG有何不同，以及盲法反馈试验显示了什么\n- [提升专注与注意力的呼吸法](/articles/breathing-for-focus-and-attention) ——无需设备稳定注意力的简单方法\n- [数字痴呆与注意力控制](/articles/digital-dementia-attentional-control) ——通过反馈驱动的练习重建注意力\n",
+      "faq": [
+        {
+          "q": "Mendi值得买吗？",
+          "a": "如果你想要专注于前额叶注意力训练的最简单神经反馈体验，Mendi值得买。它的游戏形式是品类中最易上手的，使用一条舒适的额头带，且无需订阅。它不包含冥想内容库或睡眠追踪。"
+        },
+        {
+          "q": "Mendi多少钱？",
+          "a": "Mendi标价$379（常有折扣，2026年9月促销时约$284），一次性购买，无需订阅。包含一条额头带及其游戏化神经反馈训练，但不包含冥想内容库或睡眠追踪。"
+        },
+        {
+          "q": "Mendi有哪些缺点？",
+          "a": "Mendi不是EEG：它使用fNIRS，一种不同且更窄的信号，并且只测量一个区域，即前额叶皮层。它没有冥想内容库或睡眠追踪，数据平台是封闭的，没有开发者接口。"
+        },
+        {
+          "q": "Mendi最适合谁？",
+          "a": "Mendi最适合想要最简单的神经反馈体验、只专注于前额叶注意力训练的用户。由于fNIRS测量的是不同的信号，它可能适合一些用不惯EEG头戴设备的人，不过目前没有研究就此对两者进行比较。"
+        }
+      ]
     },
     "focuscalm": {
       "verdict": "内容驱动的EEG头带——价格亲民，App不错，单通道信号限制了深度。",
       "productType": "消费级EEG头带（专注与平静训练）"
     },
     "flow-neuroscience": {
-      "verdict": "不是EEG——用于抑郁症的临床tDCS，本清单中监管和试验支持最强。",
-      "productType": "获FDA批准（PMA）和CE认证的抑郁症tDCS头戴设备（美国仅限处方）"
+      "verdict": "不是EEG——用于抑郁症的临床tDCS，在本榜单中拥有最强的监管和临床试验支持。",
+      "summary": "Flow Neuroscience是一款瑞典制造的tDCS（经颅直流电刺激）头戴设备，搭配结构化的认知行为疗法应用，适应症为重度抑郁症。在欧盟获得CE标志，属IIa类医疗器械，并在英国NHS的部分诊疗路径中开具处方；在美国，它获得了FDA上市前批准（PMA P230024，2025年12月8日），用于非难治性成人的中重度重度抑郁症，自2026年9月起仅凭处方（线下或远程医疗）提供。它不是EEG——Flow是刺激而非测量——但会出现在消费级脑训练产品的选购讨论中。它是本榜单中居家tDCS的临床参照（其主要试验由Flow资助）。",
+      "description": "ONDA评测Flow Neuroscience：获FDA批准、CE标志的重度抑郁症tDCS头戴设备，结合经颅直流电刺激与结构化行为疗法应用。按证据、课程与性价比评分。",
+      "bestFor": "临床tDCS参照——适合想要具备监管和临床试验支持的居家设备的重度抑郁症患者。",
+      "testNote": "基于证据的评估——依据Flow Neuroscience产品资料、已发表的Flow tDCS试验记录及2026年独立评测评分。ONDA未进行上手实测。作为本品类的临床tDCS参照点收录。",
+      "productType": "获FDA批准（PMA）和CE标志的抑郁症tDCS头戴设备（美国仅凭处方）",
+      "pros": [
+        "FDA上市前批准（2025年12月）外加CE标志IIa类医疗器械——本榜单中最强的监管支持",
+        "针对抑郁症的真实随机试验证据（包括发表于Nature Medicine的完全远程随机假刺激对照试验（Woodham 2024））",
+        "集成8周行为疗法课程——内容结构化",
+        "在英国NHS部分地区作为抑郁症诊疗路径选项开具处方"
+      ],
+      "cons": [
+        "不是EEG——Flow是刺激而非测量，出于编辑完整性收录",
+        "适应症仅限重度抑郁症；美国仅凭处方",
+        "硬件费用之外还有月度订阅",
+        "封闭平台——没有开发者访问或原始数据"
+      ],
+      "scoreNotes": {
+        "signal-quality": "tDCS——对背外侧前额叶皮层进行经颅直流电刺激（临床试验中使用的类型）。公开了刺激参数（2 mA，30分钟一次）；CE标志IIa类医疗器械。",
+        "training-content": "结构化的8周行为疗法课程与刺激疗程配套——由于围绕临床方案构建，是本榜单中内容框架最强的。",
+        "insights": "依据经过验证的量表（PHQ-9）追踪情绪和依从性。不如EEG头戴设备精细——Flow追踪的是症状，而不是脑信号。",
+        "comfort": "头戴设备较硬；需坐着进行30分钟。部分用户反映刺激期间头皮有短暂的刺痛或瘙痒——这已有充分记录且可逆。",
+        "app-ux": "精致的应用，提供每日打卡和依从性追踪。",
+        "open-data": "封闭平台——为临床课程而设计，而非开发者环境。",
+        "value": "在英国，硬件£399（约$499），外加疗法应用月度订阅。英国部分地区可通过NHS途径降低自付费用。美国价格尚未公布。"
+      },
+      "content": "## 领先之处\n\nFlow Neuroscience是居家tDCS的临床参照——本榜单中监管最严格、试验支持最多的设备，不过其主要随机试验（Woodham 2024）由Flow资助。它在欧盟获得CE标志，属IIa类医疗器械；获得FDA上市前批准（PMA P230024，2025年12月8日），用于成人（非难治性）中重度重度抑郁症；配套结构化的八周行为疗法课程；并在英国NHS部分地区作为抑郁症诊疗路径选项开具处方。自2026年9月起，经线下或远程医疗评估后，可在全美凭处方获得。tDCS治疗重度抑郁症的已发表随机试验证据是真实的，且在不断增加；Flow的贡献在于把它打包成患者真正能完成的居家方案。\n\n## Flow Neuroscience有哪些缺点？\n\n它不是EEG头戴设备。Flow用2 mA直流电刺激背外侧前额叶皮层；它不测量脑活动。适应症仅限重度抑郁症——如果用于一般专注、冥想或睡眠，Flow是错误的工具。平台封闭，价格在硬件之外还包含疗法应用的月度订阅，在英国NHS路径之外需全额自付。在美国，Flow尚未公布价格或医保途径。\n\n## 谁适合买Flow Neuroscience？\n\n如果你患有重度抑郁症，并且有愿意把它作为居家选项来讨论的临床医生，选择Flow Neuroscience——在美国需要处方，它是一种应在临床指导下使用的治疗手段，不能替代医疗护理。如果是一般脑训练、冥想反馈或睡眠追踪，这是错误的品类——Muse S Athena和基于EEG的设备才是合适的形态。Flow在这里作为临床参照收录，展示受监管、有试验支持的脑部靶向硬件是什么样子。\n\n---\n\n## 延伸阅读\n\n关于情绪和注意力背后的大脑系统的背景知识。Flow用微弱电流刺激大脑；它不记录EEG。\n\n- [数字痴呆与注意力控制](/articles/digital-dementia-attentional-control)——用反馈驱动的练习重建注意力\n- [神经可塑性与心流超频](/articles/neuroplasticity-flow-overclocking)——心流状态是什么以及如何形成\n- [ACC校准：认知控制方案](/articles/acc-calibration-protocol-cognitive-control)——认知控制背后的前额叶控制回路\n",
+      "faq": [
+        {
+          "q": "Flow Neuroscience是EEG头戴设备吗？",
+          "a": "不是。Flow Neuroscience是tDCS头戴设备：它用直流电刺激大脑，而不是测量脑活动。其适应症为重度抑郁症，在欧盟获得CE标志（IIa类医疗器械），在美国获FDA批准（仅凭处方），并配套结构化的认知行为疗法应用。"
+        },
+        {
+          "q": "Flow Neuroscience多少钱？",
+          "a": "在英国，Flow设备售价£399（约$499），外加疗法应用的月度订阅。在美国仅凭处方提供，Flow尚未公布价格。该订阅涵盖集成的8周行为疗法课程。请把两者都算进预算，因为持续的应用费用叠加在硬件价格之上。"
+        },
+        {
+          "q": "Flow Neuroscience对抑郁症有效吗？",
+          "a": "Flow拥有针对抑郁症的真实随机试验证据，包括发表于Nature Medicine的完全远程随机假刺激对照试验（Woodham 2024）；它在英国NHS部分地区作为抑郁症诊疗路径选项开具处方；2025年12月，FDA批准其用于成人中重度重度抑郁症。这使它在同品类中拥有最强的监管和试验支持，不过适应症仅限重度抑郁症。"
+        },
+        {
+          "q": "Flow Neuroscience适合什么人？",
+          "a": "Flow最适合想要具备监管和试验支持的居家设备的重度抑郁症患者。它不适合一般脑训练或折腾玩法：平台封闭，没有开发者访问或原始数据，且除抑郁症外没有其他适应症。"
+        }
+      ]
     },
     "neurosky-mindwave-mobile-2": {
       "verdict": "最便宜的正规消费级EEG头戴设备——单通道、功能基础，但为开发者和学习者提供开放SDK。",
@@ -771,28 +947,192 @@
       ]
     },
     "theragun-pro-plus": {
-      "verdict": "Therabody 的旗舰筋膜枪——最高的堵转力、最深的振幅、精致的应用。高价反映了参数天花板和Therabody生态。",
-      "productType": "配智能应用的高端冲击式筋膜枪"
+      "verdict": "Therabody 的旗舰筋膜枪——堵转力最高、振幅最深、App 精致。溢价反映了规格天花板和 Therabody 生态。",
+      "summary": "Theragun PRO Plus 是定义这一品类的高端筋膜枪——60 lbs 堵转力（最高档）、16 mm 振幅、运行噪音 50–55 dB 的无刷电机、带压力传感器的 OLED 屏幕，并与 Therabody App 完全集成，提供引导式练习。品牌积累数十年。溢价（$599）反映的是规格天花板；竞品在单项规格上正在缩小差距，但没有其他设备能在这一水平上同时兼顾堵转力、振幅和 App。",
+      "description": "ONDA 评测 Theragun PRO Plus——Therabody 旗舰筋膜枪，60 lbs 堵转力、16 mm 振幅、OLED 屏幕，完整集成 Therabody App。按堵转力、做工、续航和性价比评分。",
+      "bestFor": "最适合追求规格天花板、并想要完整 Therabody App 生态的认真运动恢复用户——能接受高价者。",
+      "testNote": "基于证据的评估——依据 Therabody 产品资料和 2026 年大量运动/健身评测评分。ONDA 未进行上手实测。",
+      "productType": "带智能 App 的高端筋膜枪",
+      "pros": [
+        "品类中最高的堵转力（60 lbs）和最深的振幅（16 mm）",
+        "最好的 App 和智能功能——Therabody 引导式练习",
+        "最安静的无刷电机（50–55 dB）",
+        "数十年 Therabody 品牌积累，2 年保修"
+      ],
+      "cons": [
+        "高端定价（$599）",
+        "较重（约 2.9 lbs）——单手使用时显得漫长",
+        "比 Theragun Elite 贵 50%，电机提升却很有限",
+        "Therabody App 会推销生态产品"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "60 lbs 堵转力 + 16 mm 振幅——两项均为品类最高。",
+        "build-attachments": "高端无刷电机做工，附带 6 个按摩头，2 年保修。Therabody 数十年积累。",
+        "battery-noise": "无刷电机，50–55 dB——品类中最安静。每次充电约 2.5 小时。USB-C 充电。",
+        "app-smart-features": "品类最佳 App——Therabody 引导式练习、压力传感器、OLED 反馈，以及与 TheraFace 的蓝牙联动。",
+        "ergonomics-portability": "较重（约 2.9 lbs）——品类最强电机带来了重量代价。多握位手柄有帮助；单手 20 分钟会显得漫长。",
+        "value": "$599——高端定价。对想要规格天花板和 Therabody 生态的用户来说物有所值；与 Bob and Brad / Renpho 等平价替代品相比则偏贵。"
+      },
+      "content": "## 领先之处\n\nTheragun PRO Plus 是 Therabody 的旗舰筋膜枪——堵转力最高、振幅最深、无刷电机最安静、App 为品类最佳。\n\n## Theragun PRO Plus 有哪些缺点？\n\n重量和价格。约 2.9 lbs 的机身对单手 20 分钟使用来说偏重；$599 的售价使它成为最贵的消费级筋膜枪。不追求规格天花板的用户，$399 的 Theragun Elite 就能覆盖 90% 的使用场景。\n\n## 谁适合买 Theragun PRO Plus？\n\n想在 Therabody 生态中获得规格天花板级的冲击按摩，选 Theragun PRO Plus。想要 Therabody 中端款，选 Theragun Elite。想要 Hyperice 的替代选择，选 Hypervolt 2 Pro。想要平价替代，选 Achedaway Pro 或 OPOVE M3 Pro 2。\n\n---\n\n## 延伸阅读\n\n- [线粒体生物发生](/articles/mitochondrial-biogenesis-cellular-power-grid) — 冲击按摩与血液循环在肌肉恢复中的作用\n- [电医学与神经调控](/articles/electric-medicine-neuromodulation)\n- [睡眠真的会清洗大脑吗？类淋巴系统的证据](/articles/nightly-flush-glymphatic-neural-cache) — 哪些在人体中得到证实，哪些仍有争议\n",
+      "faq": [
+        {
+          "q": "Theragun PRO Plus 值得买吗？",
+          "a": "对追求规格天花板的认真恢复用户来说值得：60 lbs 堵转力、16 mm 振幅、安静的无刷电机，以及 Therabody 的引导式 App。对大多数人而言，Theragun Elite 能以便宜 $200 的价格提供几乎相同的体验。"
+        },
+        {
+          "q": "Theragun PRO Plus 多少钱？",
+          "a": "Theragun PRO Plus 单机售价 $599，附带 6 个按摩头。这是高端定价，比 Theragun Elite 贵约 50%，而评测认为其电机提升很有限。"
+        },
+        {
+          "q": "Theragun PRO Plus 有哪些缺点？",
+          "a": "PRO Plus 售价 $599，重约 2.9 lbs，单手使用时显得漫长；比 Elite 贵 50%，电机提升却很有限。它的 App 还会推销生态产品。"
+        }
+      ]
     },
     "hypervolt-2-pro": {
-      "verdict": "Theragun的对手——相当的堵转力、更轻的重量、Hyperice生态。振幅略小于Theragun PRO Plus，价格却低不少。",
-      "productType": "支持Hyperice生态的高端冲击式筋膜枪"
+      "verdict": "Theragun的对手——堵转力相当、更轻、Hyperice生态。振幅略低于Theragun PRO Plus，但价格明显更低。",
+      "summary": "Hypervolt 2 Pro是Hyperice的旗舰——60 lbs堵转力与Theragun PRO Plus持平，14 mm振幅（略低于Theragun的16 mm），安静的无刷电机，完整的Hyperice App及引导式训练流程。比Theragun更轻（约2.6 lbs对2.9）。在NBA/NFL运动员中普及度高。对于不接受Therabody价格的用户，它是正确的高端选择。",
+      "description": "ONDA评测Hyperice Hypervolt 2 Pro——60 lbs堵转力、14 mm振幅、完整Hyperice App集成的高端筋膜枪。从堵转力、做工、续航和性价比评分。",
+      "bestFor": "最适合不接受Therabody价格的高端筋膜枪买家——规格上限相当却便宜$200，更轻，有运动员品牌背书。",
+      "testNote": "基于证据的评估——依据Hyperice产品资料及2026年运动/健身类评测评分。ONDA未进行上手实测。",
+      "productType": "带Hyperice生态的高端冲击式筋膜枪",
+      "pros": [
+        "60 lbs堵转力与Theragun PRO Plus持平，却便宜$200",
+        "比Theragun更轻（约2.6 lbs对2.9）",
+        "高端级别中最安静（48–52 dB）",
+        "在NBA/NFL运动员中普及度高"
+      ],
+      "cons": [
+        "振幅14 mm，Theragun为16 mm",
+        "保修1年，Theragun为2年",
+        "5个按摩头，Theragun为6个",
+        "单握把不如Theragun多握位设计灵活"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "60 lbs堵转力与Theragun PRO Plus持平。14 mm振幅——略低于Theragun的16 mm，但高于其他任何Hyperice设备。",
+        "build-attachments": "高端无刷电机做工，附5个按摩头，保修1年。Hyperice有NBA/NFL背书。",
+        "battery-noise": "无刷电机48–52 dB——比Theragun略安静。每次充电约3小时。",
+        "app-smart-features": "Hyperice App提供引导式训练流程、压力反馈和蓝牙。不如Therabody App精致，但功能上相当。",
+        "ergonomics-portability": "比Theragun更轻（约2.6 lbs）。单握把比Theragun的多握位更简单，但不够灵活。",
+        "value": "$399——高端定价，但比规格相当的Theragun PRO Plus便宜$200。高端档性价比最佳。"
+      },
+      "content": "## 更新：Hypervolt 3 Pro已发布\n\n> Hyperice于2026年3月发布了Hypervolt 3系列。新款[Hypervolt 3 Pro](/reviews/hypervolt-3-pro)将堵转力提升至约70 lbs，运行更安静（约51 dB），每次充电续航四小时，并配有更大的按摩头——售价更低，为$349。如果你买新机，它是更好的选择；如果Hypervolt 2 Pro折后价低于它，仍然很有性价比。\n\n## Hyperice Hypervolt 2 Pro有哪些优点？\n\nHypervolt 2 Pro是Theragun的对手——堵转力规格上限持平，略安静，更轻，便宜$200。在NBA/NFL中普及度高。对于不接受Therabody价格的用户，它是理性的高端选择。\n\n## Hyperice Hypervolt 2 Pro有哪些缺点？\n\n振幅和保修。14 mm振幅不及Theragun的16 mm；1年保修不及Theragun的2年。单握把不如Theragun的多握位设计灵活。\n\n## 谁适合买Hyperice Hypervolt 2 Pro？\n\n如果你想以比Theragun PRO Plus便宜$200的价格获得高端冲击按摩，选Hypervolt 2 Pro。想要最深振幅和最好保修，选Theragun PRO Plus。中档高端，选Theragun Elite。旅行迷你款，选Hypervolt Go 2。\n\n---\n\n## 延伸阅读\n\n- [线粒体生物合成](/articles/mitochondrial-biogenesis-cellular-power-grid)\n- [电医学与神经调控](/articles/electric-medicine-neuromodulation)\n",
+      "faq": [
+        {
+          "q": "Hypervolt 2 Pro和Theragun PRO Plus哪个好？",
+          "a": "Hypervolt 2 Pro的堵转力为60 lbs，与Theragun PRO Plus持平，便宜$200，且更轻，约2.6 lbs对2.9。Theragun则保有略深的16 mm振幅（对14 mm）、2年保修、六个按摩头和多握位握把。"
+        },
+        {
+          "q": "Hypervolt 2 Pro多少钱？",
+          "a": "Hypervolt 2 Pro售价$399，附五个按摩头。你将获得60 lbs堵转力、无刷电机和带引导式训练流程的完整Hyperice App。保修为一年，是Theragun两年的一半。"
+        },
+        {
+          "q": "Hypervolt 2 Pro安静吗？",
+          "a": "安静。得益于无刷电机，Hypervolt 2 Pro在48–52 dB，是高端级别中最安静的筋膜枪。再加上带引导式训练流程的完整Hyperice App和比Theragun更轻的机身，它是不接受Therabody价格的买家的高端之选。"
+        }
+      ]
     },
     "theragun-elite": {
       "verdict": "最佳Therabody性价比——16 mm振幅、40 lbs堵转力，比PRO Plus便宜$200。对大多数用户来说是理性的Therabody之选。",
       "productType": "中端高端筋膜枪"
     },
     "achedaway-pro": {
-      "verdict": "高端冲击式设备中参数价格比最佳——80 lbs堵转力（品类最高），售价$349。没有高端品牌的应用生态。",
-      "productType": "参数至上的高端筋膜枪"
+      "verdict": "高端冲击式按摩中规格价格比最佳——80 lbs 堵转力（同类最高），售价 $349。没有高端品牌的 App 生态。",
+      "summary": "Achedaway Pro 是生物黑客圈的黑马——80 lbs 堵转力（同类最高，超过 Theragun PRO Plus 和 Hypervolt 2 Pro）、16 mm 振幅、7 个按摩头、安静的无刷电机，售价 $349。没有 Therabody / Hyperice 那样的 App 生态；它以品牌精致度和智能功能，换取极致的硬件规格和更低的价格。",
+      "description": "ONDA 评测 Achedaway Pro——以低于 Theragun 的价格提供 80 lbs 堵转力和 16 mm 振幅的黑马筋膜枪。从堵转力、做工、续航和性价比评分。",
+      "bestFor": "最适合追求极致规格的生物黑客，想以低于 Theragun 的价格获得最高堵转力——不需要 App，能接受品牌背书上的取舍。",
+      "testNote": "基于证据的评估——依据 Achedaway 产品资料和 2026 年生物黑客/健身类评测打分。ONDA 未进行上手实测。",
+      "productType": "极致规格高端筋膜枪",
+      "pros": [
+        "消费级同类中最高的堵转力（80 lbs）",
+        "16 mm 振幅，与 Theragun 规格相当",
+        "7 个按摩头——同类最多",
+        "规格高于 Theragun Elite，价格却更低"
+      ],
+      "cons": [
+        "没有 App 或智能功能",
+        "1 年保修，而 Therabody 为 2 年",
+        "品牌背书不如 Therabody / Hyperice",
+        "比高端品牌竞品略吵"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "80 lbs 堵转力——消费级同类最高。16 mm 振幅与 Theragun 相当。在冲击强度上，极致规格胜出。",
+        "build-attachments": "无刷电机，附带 7 个按摩头（同类最多），1 年保修。做工扎实；品牌背书不如 Therabody / Hyperice。",
+        "battery-noise": "无刷电机，55–60 dB。每次充电约 3 小时。比 Theragun / Hypervolt 高端款略吵。",
+        "app-smart-features": "没有 App，没有蓝牙，没有智能功能。纯机械设备。这是换取更低价格和更高堵转力的主要代价。",
+        "ergonomics-portability": "约 2.4 lbs。握把舒适。没有多握把设计，但单握把的人体工学表现足够。",
+        "value": "$349——以低于 Theragun Elite 的价格提供同类最高堵转力。高端冲击式按摩中每美元规格最高。"
+      },
+      "content": "## 领先之处\n\nAchedaway Pro 是追求极致规格的生物黑客黑马——80 lbs 堵转力（同类最高）、16 mm 振幅、7 个按摩头，售价 $349。高端冲击式按摩中每美元规格最高。\n\n## Achedaway Pro 有哪些缺点？\n\nApp 和品牌精致度。没有 Therabody / Hyperice 那样的 App 生态；没有蓝牙或智能功能。品牌背书不如高端竞品。对于看重 App 和生态的用户，Therabody 或 Hyperice 更合适。\n\n## 谁应该买 Achedaway Pro？\n\n如果你想要极致规格的冲击式按摩，又不想为高端品牌的精致度买单，选 Achedaway Pro。想要 Therabody App 和生态，选 Theragun Elite。想要 Hyperice 的替代选择，选 Hypervolt 2 Pro。预算有限，选 Bob and Brad Q2 Mini 或 OPOVE M3 Pro 2。\n\n---\n\n## 延伸阅读\n\n- [线粒体生物发生](/articles/mitochondrial-biogenesis-cellular-power-grid)\n- [电医学与神经调控](/articles/electric-medicine-neuromodulation)\n",
+      "faq": [
+        {
+          "q": "Achedaway Pro 值得买吗？",
+          "a": "如果你更看重硬件规格而非品牌精致度，值得。Achedaway Pro 提供 80 lbs 堵转力（消费级同类最高），外加 16 mm 振幅和 7 个按摩头，售价 $349，比 Theragun Elite 便宜。你需要放弃 App、智能功能和高端品牌生态。"
+        },
+        {
+          "q": "Achedaway Pro 多少钱？",
+          "a": "Achedaway Pro 售价 $349，含 7 个按摩头。这个价格低于 Theragun Elite，同时提供更高的堵转力（80 lbs）和与 Theragun 规格相当的 16 mm 振幅。代价是 1 年保修，而非 Therabody 提供的 2 年保修。"
+        },
+        {
+          "q": "Achedaway Pro 有哪些缺点？",
+          "a": "主要缺点是没有 App 或智能功能，以及 1 年保修（Therabody 为 2 年）。品牌背书不如 Therabody 或 Hyperice，运行时也比高端品牌竞品略吵。这些都不影响它的核心优势：同类最高的堵转力。"
+        },
+        {
+          "q": "Achedaway Pro 最适合谁？",
+          "a": "Achedaway Pro 最适合追求极致规格、想以低于 Theragun 的价格获得最高堵转力的生物黑客。它适合不需要 App、愿意用品牌背书和智能功能换取 80 lbs 堵转力、16 mm 振幅和 7 个按摩头的买家。"
+        }
+      ]
     },
     "opove-m3-pro-2": {
       "verdict": "最佳中低价位性价比——$179、55 lbs堵转力，弥补了与高端档的大部分参数差距。无应用；品牌比Theragun / Hyperice年轻。",
       "productType": "高端参数的中低价位筋膜枪"
     },
     "ekrin-b37": {
-      "verdict": "最佳终身质保中端款——56 lbs堵转力，终身质保，售价$249.99。振幅低于高端档；主打运动员认可的定位。",
-      "productType": "面向运动员的次高端筋膜枪"
+      "verdict": "最佳终身保修中端机——56 lbs失速力，终身保修，售价$249.99。振幅低于高端档；主打运动员公信力定位。",
+      "summary": "Ekrin B37是面向运动员的中高端入门机——56 lbs失速力、12 mm振幅、无刷电机、4个按摩头，以及品类中唯一的终身保修。品牌定位聚焦运动员，在NFL / NCAA拥有可信的渠道。$249.99的标价介于中低端的OPOVE和高端的Hyperice之间。对看重保修胜过振幅的用户来说是正确之选。",
+      "description": "ONDA评测Ekrin B37：面向运动员的筋膜枪，56 lbs失速力、12 mm振幅、终身保修，售价$249.99。按失速力、做工、续航与性价比评分。",
+      "bestFor": "最适合想要终身保修中端冲击按摩的运动员买家——看重长期拥有价值胜过高端振幅。",
+      "testNote": "基于证据的评估——依据Ekrin Athletics产品资料及2026年面向运动员的评测评分。ONDA未进行上手实测。",
+      "productType": "面向运动员的中高端筋膜枪",
+      "pros": [
+        "终身保修——品类中唯一",
+        "约8小时续航——中端档最长",
+        "聚焦运动员的品牌定位",
+        "低于高端的价格配备无刷电机"
+      ],
+      "cons": [
+        "12 mm振幅，高端为14–16 mm",
+        "没有应用或智能功能",
+        "4个按摩头——少于低价竞品",
+        "标准单握把，缺乏多样性"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "56 lbs失速力扎实。12 mm振幅——低于高端档的14–16 mm，但够用。",
+        "build-attachments": "终身保修——品类中唯一。无刷电机，4个按摩头。做工质量由保修条款背书。",
+        "battery-noise": "无刷电机，55 dB。单次充电约8小时——品类中最长之列。",
+        "app-smart-features": "没有应用或蓝牙。LED电量＋档位指示。",
+        "ergonomics-portability": "约2.2 lbs。标准单握把手柄。",
+        "value": "标价$249.99，经常打折——终身保修支撑了偏高的中端定价。长期拥有成本最佳。"
+      },
+      "content": "## 领先之处\n\nEkrin B37是终身保修的中端机——聚焦运动员的品牌、无刷电机、中端档最长续航、终身保修（品类中唯一）。长期拥有价值最佳。\n\n## Ekrin B37有哪些缺点？\n\n振幅和应用。12 mm振幅落后于高端的14–16 mm；没有应用集成。想要高端振幅的用户，Theragun Elite或Hypervolt 2 Pro更合适。\n\n## 谁适合买Ekrin B37？\n\n想要具备运动员品牌背景、终身保修的中端冲击按摩，选Ekrin B37。同价位想要更大振幅，选OPOVE M3 Pro 2。想要高端应用＋振幅，选Theragun Elite。\n\n---\n\n## 延伸阅读\n\n- [线粒体生物合成](/articles/mitochondrial-biogenesis-cellular-power-grid)\n- [电医学与神经调控](/articles/electric-medicine-neuromodulation)\n",
+      "faq": [
+        {
+          "q": "Ekrin B37值得买吗？",
+          "a": "从长期拥有价值来看，值得。Ekrin B37以$249.99提供56 lbs失速力、无刷电机、约8小时续航以及品类中唯一的终身保修。其12 mm振幅低于高端筋膜枪的14–16 mm。"
+        },
+        {
+          "q": "Ekrin B37多少钱？",
+          "a": "Ekrin B37标价$249.99（经常打折），含4个按摩头和终身保修。这使它处于中端档，低于高端冲击筋膜枪，同时仍配备无刷电机和约8小时续航。"
+        },
+        {
+          "q": "Ekrin B37有哪些缺点？",
+          "a": "Ekrin B37振幅为12 mm，而高端筋膜枪为14–16 mm，且没有应用或智能功能。它只含4个按摩头，少于低价竞品，并且是缺乏多样性的标准单握把。"
+        },
+        {
+          "q": "Ekrin B37适合什么人？",
+          "a": "Ekrin B37最适合想要终身保修中端筋膜枪的运动员。它适合看重长期拥有、运动员定位和约8小时续航胜过高端振幅的买家。它以$249.99提供56 lbs失速力。"
+        }
+      ]
     },
     "hypervolt-go-2": {
       "verdict": "最佳高端品牌便携迷你——口袋尺寸的Hypervolt生态。较低的堵转力是便携性的代价。",
@@ -1100,8 +1440,51 @@
       ]
     },
     "nurosym": {
-      "verdict": "研究最多的消费级耳部tVNS设备——研究中所用类型的耳夹，价格也与之相称。",
-      "productType": "耳廓tVNS（耳夹）"
+      "verdict": "研究最多的消费级耳部 tVNS 设备——一款研究中所用类型的耳夹，价格也与之相称。",
+      "summary": "Nurosym 是伦敦公司 Parasym 的消费级产品线。该公司的耳部刺激器（主要是早期型号）曾被约二十项关于耳廓迷走神经刺激的独立同行评审研究采用（据制造商称，截至 2026 年 10 月超过 50 项）。它夹在左耳耳屏上，向迷走神经耳支输出经过校准的电脉冲。没有花哨的 App 功能——只有一个旋钮，刺激参数在试验中有报告，并拥有消费级设备中最多的独立试验记录，不过大多是基于 Parasym 早期型号的小型研究。",
+      "description": "ONDA 评测 Nurosym——Parasym 的消费级耳部 tVNS 设备；其早期型号曾用于已发表的心血管、HRV 和炎症标志物试验。按证据、机制、方案和性价比评分。",
+      "bestFor": "最适合在家进行研究中所用类型的耳廓 tVNS——当证据比外形更重要时。",
+      "testNote": "基于证据的评估——依据制造商规格、已发表的 Parasym/Nurosym 试验记录以及 2026 年的独立评测评分。ONDA 未进行上手实测。",
+      "productType": "耳廓 tVNS（耳夹）",
+      "pros": [
+        "消费级 tVNS 设备中独立试验记录最多（主要是 Parasym 早期型号）",
+        "频率和脉宽在试验中有报告（波形为专有）",
+        "无需订阅，使用无需 App",
+        "CE 认证医疗器械（制造商称为 IIa 类）"
+      ],
+      "cons": [
+        "只有一个程序——不如 App 驱动的竞品丰富",
+        "设备本身不测量心率变异性（HRV），也不记录疗程",
+        "€700（约 $820）的价格让普通用户望而却步",
+        "有线耳夹不如无线可穿戴设备方便"
+      ],
+      "scoreNotes": {
+        "evidence": "试验大多使用的是 Parasym——同一制造商的早期版本，由学术机构资助——且样本量较小；在明确使用 Nurosym 的研究中，结果大多为阴性。约二十项独立同行评审研究使用了 Parasym 耳部刺激器（据制造商称，截至 2026 年 10 月超过 50 项）；其中大多数设有假刺激组或对照组。没有一项由制造商资助，但部分研究的设备由 Parasym 提供。最明确的阳性结果来自早期型号在心血管患者中的小型假刺激对照试验（房颤负荷、TNF-α、POTS 心动过速、血压）。制造商称 Nurosym 采用相同技术，但没有已发表数据表明它的表现与那些型号相当。没有以抑郁为主要结局的试验，长新冠数据来自无对照的试点研究。ONDA 规则：当制造商和刺激方式相同时，同一设备的早期版本可计入，但上限为 7.5。",
+        "mechanism": "在耳屏进行经皮耳廓迷走神经刺激，这是研究最多的非侵入性靶点。明确使用 Nurosym 的试验报告了其频率和脉宽（20–25 Hz，200–250 µs）；波形本身是专有的。",
+        "protocols": "一个定义明确的刺激程序；强度由用户通过旋钮调节。程序种类不如 Pulsetto，但频率和脉宽在试验中有报告。",
+        "comfort": "耳屏夹在 30–60 分钟的疗程中耐受良好；并非为连续佩戴数小时而设计，且线缆会把你拴在主机上。",
+        "biofeedback": "没有内置 HRV 测量——如需闭环追踪，请搭配胸带或智能戒指。",
+        "value": "€700（约 $820；美国价格因地区而异）一次性购买，无订阅。这是为最多的独立试验记录（主要是 Parasym 早期型号）支付的溢价，不适合随便尝试的用户。"
+      },
+      "content": "## 领先之处\n\n在消费级设备中，Nurosym 在医疗器械最重要的标准——证据——上处于领先。Parasym 设备（主要是早期型号）曾被约二十项关于经皮耳廓迷走神经刺激（即刺激[迷走神经](/glossary/vagus-nerve)）的独立已发表研究采用。最明确的阳性结果来自心血管患者（房颤、POTS、高血压）的小型假刺激对照试验。此外还有健康成人的急性[心率变异性](/glossary/heart-rate-variability)（HRV）研究，以及无对照的长新冠试点研究。明确使用 Nurosym 的较新试验（2025–26 年）大多发现与假刺激相比没有效果；尽管制造商称 Nurosym 采用相同技术，但没有已发表数据表明它的表现与旧型号相当——因此 ONDA 将其证据评分上限定为 7.5。不过，被研究并不等于被证实：一项纳入 16 项健康人群假刺激对照研究的动态荟萃分析（Wolf 2021，*Psychophysiology*）未发现耳部 tVNS 对迷走神经介导的 HRV 有可靠影响，所以不要指望买了它 HRV 就会上升。明确使用 Nurosym 的试验报告了其频率和脉宽（20–25 Hz，200–250 µs；强度由用户调节），因此临床医生或自我实验者可以描述大部分剂量——波形本身是专有的。\n\n## Nurosym 有哪些缺点？\n\n让 Nurosym 可信的简朴，也让它显得简陋。只有一个刺激程序，没有 App，设备本身不测 HRV，不记录疗程，主机还通过线缆连着耳夹。€700（约 $820）的价格也使它成为本榜单中最贵的耳夹设备。如果你想要针对睡眠、专注和压力的引导模式，Pulsetto 程序种类更多、价格更低——尽管其证据基础更薄弱。\n\n## 谁适合买 Nurosym？\n\n如果你要进行结构化的 tVNS 自我实验，想要能与已发表试验对照的刺激参数，并愿意为临床出身支付临床级价格，就选 Nurosym。如果你想要带模式和手机 App 的精致消费体验，Pulsetto、Xen by Neuvana 或 Truvaga 更合适。\n\n---\n\n## 延伸阅读\n\n这些设备所针对的生物学原理——以及与硬件相互叠加的练习方案。\n\n- [迷走神经练习](/articles/vagus-nerve-exercises) — 为什么迷走神经位于 HRV、睡眠、情绪和炎症的上游\n- [电医学与神经调控](/articles/electric-medicine-neuromodulation) — 非侵入性迷走神经刺激背后的监管与机制全景\n- [ACC 与相干性监测](/articles/anterior-cingulate-core-coherence-monitoring) — 迷走神经张力如何从上游塑造注意力和情绪调节\n",
+      "faq": [
+        {
+          "q": "Nurosym 值得买吗？",
+          "a": "如果证据比外形更重要，Nurosym 值得买。它拥有消费级 tVNS 设备中最多的独立试验记录（主要是 Parasym 早期型号），频率和脉宽在试验中有报告，并且是 CE 认证医疗器械（制造商称为 IIa 类）。它只有一个程序，耳夹为有线。"
+        },
+        {
+          "q": "Nurosym 多少钱？",
+          "a": "Nurosym 在官方商店标价 €700，约 $820（各地区价格不同），一次性购买，无需订阅，使用也无需 App。评测指出这个价格让普通用户望而却步。它已获 CE 认证（制造商称为 IIa 类）。"
+        },
+        {
+          "q": "Nurosym 有哪些缺点？",
+          "a": "Nurosym 只有一个程序，不如 App 驱动的竞品丰富；设备本身不测量 HRV、不记录疗程；€700（约 $820）的价格让普通用户望而却步；有线耳夹也不如无线可穿戴设备方便。"
+        },
+        {
+          "q": "Nurosym 和 Pulsetto 哪个更好？",
+          "a": "论证据，Nurosym 更好：它拥有消费级 tVNS 中最多的独立试验记录（主要基于 Parasym 早期型号）。Pulsetto 更便宜，售价 $269，戴在颈部，提供四个引导程序，但其独立临床证据比 Nurosym 更薄弱。"
+        }
+      ]
     },
     "gammacore-sapphire-cv": {
       "verdict": "获FDA许可（cleared）、仅凭处方使用、针对特定头痛疾病的非侵入颈部VNS设备——是临床工具，不是消费级保健设备。",
@@ -1125,18 +1508,96 @@
       "productType": "消费级颈部tVNS（颈圈）"
     },
     "hoolest-verelief-prime": {
-      "verdict": "最面向运动员的tVNS设备——短时高强度训练，用于恢复和入睡。",
-      "productType": "手持式tVNS（手指 / 颈部握持）",
-      "editorialAdjustment": "营销诚信——主页称VeRelief“经临床证实”，其研究页称“经证实可重置惊恐”，但这些研究是创始人自己的、未发表的，且使用的是10分钟方案，而非设备的3分钟模式；我们没有找到针对VeRelief的已发表试验（2026年10月核查）。此项在这里计分，而不计入证据评分。（原文：“Clinically Proven”）"
+      "verdict": "最面向运动员的tVNS设备——短时、高强度的疗程，用于恢复和入睡。",
+      "summary": "Hoolest VeRelief Prime是一款手持式tVNS设备，由亚利桑那州立大学衍生公司Hoolest Performance设计。握持电极贴在耳部可作用于耳支，贴在颈部可作用于颈支，提供3–5分钟的高强度疗程。其设计围绕运动恢复和睡前副交感神经预激活，并有创始人发表的研究。",
+      "description": "ONDA评测Hoolest VeRelief Prime——专为运动恢复和入睡打造的手持式迷走神经刺激仪。从证据、作用机制和性价比评分。",
+      "bestFor": "最适合希望在睡前或训练后进行短时、高强度副交感神经预激活的运动员。",
+      "testNote": "基于证据的评估——依据Hoolest产品资料、创始人发表的研究记录及2026年独立评测评分。ONDA未进行上手实测。",
+      "productType": "手持式tVNS（手指/颈部握持）",
+      "pros": [
+        "创始人发表的心率变异性（HRV）与入睡研究",
+        "短时疗程中峰值强度高——契合运动恢复流程",
+        "可用于耳部或颈部——一台设备两个刺激部位",
+        "无需订阅"
+      ],
+      "cons": [
+        "需要手持——不是被动佩戴式设备",
+        "方案种类少于Pulsetto",
+        "峰值强度较高，可能不舒服",
+        "独立第三方证据仍在逐步出现"
+      ],
+      "scoreNotes": {
+        "evidence": "关于HRV恢复和入睡的研究由创始人（ASU衍生公司）发表，而厂商自行开展的研究在ONDA评分中不计为证据。",
+        "mechanism": "手持式经皮迷走神经刺激（VNS）——通过手指握持电极可用于耳部或颈部。峰值强度高于耳夹式设备，疗程更短。",
+        "protocols": "三种强度模式；疗程3–5分钟。方案种类少于Pulsetto，但每分钟强度更高。",
+        "comfort": "整个疗程都需手持——不是被动佩戴式设备。峰值强度较高时可能有刺痛感。",
+        "biofeedback": "配套App记录疗程，并与Apple Health集成以查看与HRV的关联；设备本身不测HRV。",
+        "value": "一次性$279，无需订阅。与入门档Pulsetto相当。"
+      },
+      "editorialAdjustment": "营销诚信——官网首页称VeRelief “Clinically Proven”（经临床证实），研究页称“Proven to Reset Panic”（经证实可重置惊恐），但这些研究是创始人自己的且未发表，使用的是10分钟方案而非设备的3分钟模式；我们没有找到任何已发表的VeRelief试验（2026年10月核查）。此项在这里扣分，而非计入证据项。",
+      "content": "## 优势所在\n\nHoolest VeRelief Prime是该品类中最贴合运动员的设备。它是一款手持式刺激仪，握在手中贴于耳部或颈侧，提供短时（3–5分钟）、高强度的tVNS疗程。公司是亚利桑那州立大学的衍生企业，创始团队已就该设备本身发表了HRV恢复和入睡研究——在这个价位上，这种研究者层面的透明度并不常见。\n\n## Hoolest VeRelief Prime有哪些缺点？\n\n它不是被动佩戴式设备。用户必须在整个疗程中将设备按在所选部位，因此与Apollo Neuro或Pulsetto这类可佩戴设备相比，不太适合日常随时使用。峰值强度高于耳夹式设备，初次使用者可能感到刺痛。方案种类也比Pulsetto的四模式库更少。\n\n## 谁适合买Hoolest VeRelief Prime？\n\n如果你想在睡前或训练后进行一次短时、高强度的副交感神经疗程，并且更喜欢运动员打造的工具而非健康类可穿戴设备，就选Hoolest VeRelief Prime。如果你想要全天被动的迷走神经调节，Apollo Neuro更合适。如果你想要有引导、以方案驱动的日常设备，Pulsetto以相近价格提供更多选择。\n\n---\n\n## 延伸阅读\n\n这些设备所针对的生理机制——以及与硬件相辅相成的练习方案。\n\n- [迷走神经练习](/articles/vagus-nerve-exercises) ——为什么迷走神经位于HRV、睡眠、情绪和炎症的上游\n- [电医学与神经调控](/articles/electric-medicine-neuromodulation) ——无创VNS背后的监管与机制概况\n- [ACC与相干性监测](/articles/anterior-cingulate-core-coherence-monitoring) ——迷走神经张力如何在上游塑造注意力和情绪调节\n",
+      "faq": [
+        {
+          "q": "Hoolest VeRelief Prime的工作原理是什么？",
+          "a": "VeRelief Prime是一款带握持电极的手持式tVNS设备。贴在耳部可作用于迷走神经耳支，贴在颈部可作用于颈支，进行3–5分钟的高强度疗程，旨在帮助恢复和睡前放松。"
+        },
+        {
+          "q": "Hoolest VeRelief Prime需要订阅吗？",
+          "a": "不需要。VeRelief Prime一次性购买价格为$279，无需订阅。它由亚利桑那州立大学衍生公司Hoolest Performance设计，创始人已就该设备发表了自己的HRV与入睡研究。"
+        },
+        {
+          "q": "Hoolest VeRelief Prime和Pulsetto哪个好？",
+          "a": "Pulsetto方案种类更多，且可作为被动佩戴设备使用。VeRelief Prime为运动员打造：短时、高强度的疗程契合恢复流程。代价是疗程中必须手持，且较高的峰值强度可能令人不适。"
+        }
+      ]
     },
     "sensate": {
       "verdict": "被动式、令人平静的次声设备——温和、广受喜爱，但机制证据落后于用户的热情。",
       "productType": "次声胸前鹅卵石形设备，以迷走神经调节器为卖点"
     },
     "xen-by-neuvana": {
-      "verdict": "包装成耳机的耳廓tVNS——巧妙的消费级外形，独立证据有限。",
-      "productType": "耳廓tVNS（耳机，搭配音频）",
-      "editorialAdjustment": "营销诚信——主页称“有研究支持，效果证明一切”，但其Xen数据来自Neuvana自己的试点研究，而其参考文献列表注明这些研究“并非来自同行评审出版物”（2026年10月核查）。此项在这里计分，而不计入证据评分。（原文：“Backed by Research, Proven by Results”）"
+      "verdict": "以耳机形式呈现的耳廓 tVNS——巧妙的消费级外形，独立证据有限。",
+      "summary": "Xen 是一副耳机，将耳廓 tVNS（通过耳道刺激迷走神经的电极）与音乐播放结合，让刺激叠加在音频之上。通过手机控制，强度可调，并有多种模式。它的临床渊源不如 Nurosym，但使用体验更像戴 AirPods，而不像戴医疗器械。",
+      "description": "ONDA 评测 Xen by Neuvana——通过耳机实现、与音乐搭配的耳廓 tVNS。按证据、机制、方案和性价比评分。",
+      "bestFor": "最适合想以熟悉的耳机外形使用耳廓 tVNS、并搭配音乐的用户。",
+      "testNote": "基于证据的评估——依据 Neuvana 产品资料、更广泛的耳廓 tVNS 文献以及 2026 年的独立评测评分。ONDA 未进行上手实测。",
+      "productType": "耳廓 tVNS（耳机，搭配音频）",
+      "pros": [
+        "耳机外形——品类中消费者最熟悉的形态",
+        "刺激搭配音乐——让疗程变得享受",
+        "无需订阅即可使用全部功能",
+        "多种模式，涵盖专注、放松、睡眠"
+      ],
+      "cons": [
+        "针对 Xen 设备本身的独立临床证据很少",
+        "入耳式电极的放置比耳屏夹更麻烦",
+        "通过线缆连接控制单元",
+        "设备本身不测量心率变异性（HRV）"
+      ],
+      "scoreNotes": {
+        "evidence": "关于HRV和睡眠的研究只有公司赞助的，在 ONDA 评分中不计为证据；没有针对 Xen 设备的同行评审 RCT。机制证据来自一般的耳廓 tVNS。",
+        "mechanism": "通过入耳式电极进行耳廓 tVNS——针对迷走神经耳支。刺激与同一副耳机中的音乐播放同步。",
+        "protocols": "多种模式（专注、放松、睡眠）以及与音乐搭配的刺激。强度用户可调。",
+        "comfort": "耳机——外形熟悉，但入耳式电极的放置比耳屏夹更麻烦。连接控制单元的线缆限制了活动。",
+        "biofeedback": "App 记录疗程；设备本身不测 HRV。可选接入 Apple Health。",
+        "value": "硬件 $399，无需订阅。比 Pulsetto 贵，研究不如 Nurosym 多。"
+      },
+      "editorialAdjustment": "营销诚信——其官网称“Backed by Research, Proven by Results”（有研究支持，经结果证明），但其 Xen 数据来自 Neuvana 自己的试点研究，其参考文献列表注明这些研究“not from peer-reviewed publications”（并非来自同行评审出版物）（2026 年 10 月核查）。此项在这里计分，而不计入证据项。",
+      "content": "## 领先之处\n\nXen by Neuvana 在本榜单中以最友好的消费方式提供耳廓 tVNS。它把刺激器做成内置于耳机的入耳式电极，刺激叠加在手机播放的音乐之上——因此疗程感觉更像戴 AirPods，而不像戴医疗器械。模式涵盖专注、放松和睡眠，强度由用户控制。无需订阅即可使用全部功能。\n\n## Xen by Neuvana 有哪些缺点？\n\n证据基础是弱点。耳廓 tVNS 的机制已经在其他设备（主要是 Parasym）上被研究过，但这些试验并不能作为 Xen 的证据，而且目前还没有针对 Xen 的同行评审 RCT；已发表的都是公司赞助的研究。耳机外形也有实际缺点——入耳式电极的放置比耳屏夹更讲究，而且设备通过线缆连接控制单元。\n\n## 谁适合买 Xen by Neuvana？\n\n如果耳机外形和搭配音乐的疗程能让你真正坚持每天使用，并且你能接受较薄弱的设备专属证据基础，就选 Xen by Neuvana。如果更大规模（大部分由制造商资助）的试验基础是决定性标准，Nurosym 是正确选择。如果你想以更低价格获得更丰富的方案库，Pulsetto 花得更少、给得更多。\n\n---\n\n## 延伸阅读\n\n这些设备所针对的生物学原理——以及与硬件相互叠加的练习方案。\n\n- [CO₂ 耐受与氧气极限](/articles/co2-tolerance-expanding-oxygen-limit) — 为什么慢呼吸会通过 CO₂ 化学重建迷走神经张力\n- [把呼吸练习当作命令行](/articles/breathwork-command-line-interface) — 与刺激搭配的练习方案\n- [HPA 轴控制与皮质醇调节](/articles/hpa-axis-control-cortisol-aggression) — 为什么迷走神经张力训练针对的是下游的皮质醇\n",
+      "faq": [
+        {
+          "q": "Xen by Neuvana 值得买吗？",
+          "a": "如果你想以熟悉的耳机外形使用耳廓 tVNS 并搭配音乐，Xen 值得买。它无需订阅，提供专注、放松和睡眠模式。针对 Xen 设备本身的独立临床证据很少，电极也比耳屏夹更麻烦。"
+        },
+        {
+          "q": "Xen by Neuvana 多少钱？",
+          "a": "Xen by Neuvana 一次性售价 $399，无需订阅即可使用全部功能。包括涵盖专注、放松和睡眠的多种模式，刺激与音乐搭配。"
+        },
+        {
+          "q": "Xen by Neuvana 有哪些缺点？",
+          "a": "针对 Xen 设备的独立临床证据很少。入耳式电极的放置比耳屏夹更麻烦，耳机通过线缆连接控制单元，而且设备本身不测量 HRV。"
+        }
+      ]
     },
     "livanova-vns-therapy": {
       "verdict": "参照级植入式VNS设备——经 FDA 批准（approved）的植入式 VNS 设备（用于药物难治性癫痫和难治性抑郁症），有二十多年的证据——不等同于消费级设备。",
@@ -1806,6 +2267,384 @@
           "a": "Mute 需要适应期，头几晚会觉得别扭。并非人人都能接受插入鼻内；因为有三种尺寸，需要试码套装；每晚成本也高于外贴鼻贴。"
         }
       ]
+    },
+    "currentbody-series-2": {
+      "verdict": "最佳消费市场标杆——最大用户群、精致硅胶做工、附带颈部延伸片。面罩本身没有独立试验。",
+      "productType": "带颈部延伸片的消费级柔性硅胶LED面罩"
+    },
+    "lumara-viso": {
+      "verdict": "2026年LED数量最多——柔性硅胶上470颗LED，覆盖颈部。高端定价；面罩本身没有已发表的试验。",
+      "productType": "高端高LED数柔性硅胶红光面罩"
+    },
+    "dr-dennis-gross-spectralite": {
+      "verdict": "皮肤科品牌背景最佳——据品牌称获FDA许可，红+蓝双方案（抗衰+痤疮），硬壳做工。不如硅胶竞品舒适。",
+      "productType": "硬壳皮肤科品牌红+蓝LED面罩"
+    },
+    "theraface-mask": {
+      "verdict": "Therabody品牌跨界面罩的最佳之作——三波长覆盖、高端做工、来自筋膜枪品类的品牌背景。研究由品牌资助。",
+      "productType": "高端消费品牌红+蓝+琥珀LED面罩"
+    },
+    "lightstim-for-wrinkles": {
+      "verdict": "四波长红光+近红外手持设备，获FDA许可（K120775；当前型号K261482），价格亲民——但设备本身没有已发表的试验。手持形态意味着每次都要主动定位。",
+      "productType": "手持红光+近红外LED设备"
+    },
+    "jovs-dpl-photofacial-mask": {
+      "verdict": "同价位多波长参数最佳——韩国K-beauty技术，七种波长模式。临床证据护城河薄弱；品牌比品类标杆更新。",
+      "productType": "韩国制造多波长LED面罩"
+    },
+    "shark-cryoglow": {
+      "verdict": "2026年最新颖的形态——主动冷却结合红+蓝LED。冷却是差异点；LED剂量按设计较为温和。",
+      "productType": "冷却+LED混合面罩"
+    },
+    "solawave-wand-4-in-1": {
+      "verdict": "最佳红光入门款——$169的理疗棒，叠加红光LED、微电流、温热和按摩。剂量温和、LED覆盖窄；重消费便利，轻临床深度。",
+      "productType": "入门多模式手持红光理疗棒"
+    },
+    "rubylx-lyra-pro": {
+      "verdict": "以测试透明度取胜的高端之选——每项参数都经第三方验证，高端定价，品牌规模小于Joovv。",
+      "productType": "经独立测试的高端红光+近红外LED理疗板"
+    },
+    "gembared-vesta": {
+      "verdict": "品类中的做工和EMF专家——全屏蔽、六波长、创始人亲自设计。高端价格对应高端的工程严谨度。",
+      "productType": "EMF屏蔽全光谱LED理疗板"
+    },
+    "biolight-pro-900": {
+      "verdict": "扎实的中尺寸Joovv替代品——做工合格、双波长覆盖，在这个价位没有突出亮点。",
+      "productType": "中尺寸红光+近红外LED理疗板"
+    },
+    "pulse-centers-pulse-xl-pro": {
+      "verdict": "消费者可获得的最高输出PEMF。诊所式线圈施用器销售给运动和脊椎按摩机构——这是销售渠道，不是证据；我们没有找到针对该系统的独立试验。价格属于专业消费者/诊所档。",
+      "productType": "专业级PEMF线圈系统"
+    },
+    "curatron-3d": {
+      "verdict": "诊所式PEMF，有文档化方案和双施用器系统。介于Bemer垫和Pulse Centers线圈诊所之间的中端。",
+      "productType": "高强度PEMF线圈 + 垫系统"
+    },
+    "imrs-prime": {
+      "verdict": "瑞士工程设计的Bemer替代——锯齿波形、多施用器系统、数十年品牌。价格低于Bemer，做工相当。",
+      "productType": "瑞士工程设计的PEMF垫 + 枕 + 点状施用器系统"
+    },
+    "bemer-classic-evo": {
+      "verdict": "最知名的PEMF垫和研究最多的单一信号——但大多数研究规模小或与厂商有关，独立对照试验未发现与对照组有差异。高端定价。",
+      "productType": "专业级PEMF垫系统"
+    },
+    "omi-full-body-mat": {
+      "verdict": "扎实的中端PEMF垫——操作简单，价格亲民。未获FDA骨愈合许可，没有针对垫本身的试验，没有多模式叠加。",
+      "productType": "中端全身PEMF垫"
+    },
+    "earthpulse-sleep-on-command": {
+      "verdict": "主打睡眠的PEMF——床垫下安装，舒曼和δ波设置，中端价格。做工不错，但没有对照试验显示能改善睡眠。",
+      "productType": "睡眠专用床垫下PEMF设备"
+    },
+    "sunlighten-mpulse": {
+      "verdict": "引领品类的高端红外桑拿——真正的三波段、高端雪松木做工、经独立测量的低EMF。",
+      "productType": "高端三合一红外桑拿房（近、中、远红外）"
+    },
+    "finnleo-hallmark": {
+      "verdict": "芬兰制造的传统室内桑拿——高端芬兰做工、完整对流热、桑拿研究中依据最深厚的机制。",
+      "productType": "传统芬兰式室内桑拿（对流）"
+    },
+    "saunaspace-faraday": {
+      "verdict": "面向生物黑客的高端近红外桑拿——白炽灯发射器、完整法拉第笼，与全光谱红外不同。",
+      "productType": "带法拉第笼的白炽灯近红外桑拿"
+    },
+    "sun-home-equinox": {
+      "verdict": "实力不俗的新晋品牌——全光谱红外，附带色光疗法和音响，价格相对品类领导者更克制。",
+      "productType": "中高端全光谱红外桑拿房"
+    },
+    "higherdose-blanket-v4": {
+      "verdict": "让消费级红外走向大众的便携红外桑拿毯——仅远红外、低EMF、价格亲民。",
+      "productType": "便携红外桑拿毯"
+    },
+    "therasage-thera-sauna-personal": {
+      "verdict": "扎实的中端生物黑客红外桑拿——全光谱、EMF控制尚可、在同档位中价格亲民。",
+      "productType": "中端红外桑拿（帐篷 / 桑拿房配置）"
+    },
+    "jnh-lifestyles-joyous": {
+      "verdict": "可信的入门红外桑拿房——仅远红外、加拿大铁杉做工、价格亲民。",
+      "productType": "入门远红外桑拿房（1–3人）"
+    },
+    "relax-sauna-portable": {
+      "verdict": "老牌便携远红外桑拿——椅子+帐篷设计、低EMF，小众但货真价实。",
+      "productType": "便携远红外桑拿（帐篷 / 椅子配置）"
+    },
+    "olylife-tera-p90-plus": {
+      "verdict": "结合 PEMF 与太赫兹宣传的热门平价理疗棒——价格亲民，但太赫兹宣传夸大了已发表的证据。",
+      "summary": "OlyLife TERA P90 Plus 是一款热门的平价 PEMF + 太赫兹理疗棒，主要通过直销渠道销售。其 PEMF 部分是真实的，使用常见的 PEMF 频率，但我们没有找到针对该设备的试验；编辑关注的问题在于太赫兹波长的宣传——消费级设备的太赫兹输出及其生物学效应文献与宣传内容并不相符。$400–$700 的亲民价格让它尽管存在这些问题仍值得一提。",
+      "description": "ONDA 评测 OlyLife TERA P90 Plus——热门平价 PEMF + 太赫兹理疗棒。按场强、波形研究、做工和性价比评分。太赫兹宣传是编辑关注的问题。",
+      "bestFor": "最适合只看重 PEMF 部分、明确不采信太赫兹宣传的预算型买家——$700 以下的便携手持 PEMF。",
+      "testNote": "基于证据的评估——依据 OlyLife 产品资料和 2026 年独立 PEMF 评测评分。太赫兹宣传被标记为编辑关注的问题。ONDA 未进行上手实测。",
+      "productType": "平价 PEMF + 太赫兹理疗棒系统",
+      "pros": [
+        "亲民的平价定价（$400–$700）",
+        "便携的手持棒外形",
+        "使用常见 PEMF 频率的真实 PEMF 部分",
+        "分销广泛，容易买到"
+      ],
+      "cons": [
+        "太赫兹宣传夸大了已发表的证据",
+        "类 MLM 的分销模式——保修不一致",
+        "参数开放程度和方案深度有限",
+        "无全身垫式覆盖"
+      ],
+      "scoreNotes": {
+        "field-strength": "就平价设备而言 PEMF 输出中等。太赫兹宣传是编辑关注的问题——消费级硬件的太赫兹输出缺乏充分记录。",
+        "waveform-evidence": "使用常见 PEMF 频率，但没有针对该设备的试验；太赫兹生物学效应的说法在消费级设备文献中缺乏充分支持。宣传夸大了证据。",
+        "build": "就价格而言做工尚可。分销渠道偏向类 MLM 模式——保修支持因卖家而异。",
+        "programmability": "以有限的预设操作为主，没有真正开放参数。",
+        "form-factor": "手持理疗棒——便携，适合局部使用。无全身垫式覆盖。",
+        "value": "$400–$700——如果你接受太赫兹方面的问题、只看重 PEMF 部分，这是亲民的平价价格。"
+      },
+      "content": "## 领先之处\n\nOlyLife TERA P90 Plus 是热门的平价 PEMF + 太赫兹理疗棒——价格亲民、手持便携，并有使用常见 PEMF 频率的真实 PEMF 部分（没有针对该设备的试验）。通过直销渠道广泛分销。\n\n## OlyLife TERA P90 Plus 有哪些缺点？\n\n问题在于太赫兹宣传。消费级设备的太赫兹输出及其生物学效应文献与宣传说法并不相符——PEMF 部分是真实的，太赫兹部分是编辑关注的问题。类 MLM 的分销渠道也导致保修不一致。\n\n## 谁适合买 OlyLife TERA P90 Plus？\n\n只有当你明确不采信太赫兹宣传、并看重其平价 PEMF 理疗棒部分时，才选择 OlyLife TERA P90 Plus。想要宣传诚实的平价可穿戴设备，选 Resona Health VIBE。想要全身垫，选 OMI 或 Healthy Wave。\n\n---\n\n## 延伸阅读\n\n- [PEMF 疗法——证据说明了什么](/science/evidence/pemf) — 哪些在人体中得到证实、哪些来自细胞研究，以及 FDA 注册、许可和批准分别意味着什么\n",
+      "faq": [
+        {
+          "q": "OlyLife TERA P90 Plus 值得买吗？",
+          "a": "只有对看重 PEMF 部分、不采信太赫兹宣传的预算型买家才值得。你得到的是一款便携手持理疗棒，具有常见频率的真实 PEMF，但未经试验验证。太赫兹说法夸大了证据，类 MLM 的分销也让保修不一致。"
+        },
+        {
+          "q": "OlyLife TERA P90 Plus 多少钱？",
+          "a": "TERA P90 Plus 单独理疗棒标价 $550，处于 $400 到 $700 的平价区间。由于通过类 MLM 模式分销，保修支持可能因购买渠道而不一致。"
+        },
+        {
+          "q": "OlyLife TERA P90 Plus 有哪些缺点？",
+          "a": "其太赫兹宣传夸大了已发表的证据，类 MLM 分销导致保修支持不一致，参数开放程度和方案深度有限，而且作为手持理疗棒无法提供全身垫式覆盖。只把它当作 PEMF 设备来评估。"
+        }
+      ]
+    },
+    "eight-sleep-pod-5": {
+      "verdict": "顶配版Eight Sleep——Pod 5 Ultra增加了可调节床架、自上而下的水循环毯、内置音响和打鼾缓解功能，但售价$6,099+，几乎翻倍。核心的双区温控和心率变异性（HRV）技术与Pod 4相同，Pod 4仍是性价比之选。注意：Eight Sleep已于2026年9月23日用Pod 6取代Pod 5——请将剩余Pod 5库存与Pod 6价格对比。",
+      "summary": "Eight Sleep Pod 5是这一品类领先睡眠温控系统的2026年款。旗舰Pod 5 Ultra是更完整的床品系统：可调节床架、在下方之外再从上方制冷／加热的水循环毯、内置音景和扬声器，以及会轻轻抬高头部的自动打鼾缓解功能。Pod 5 Core（仅床罩）则带来更快的加热／制冷和更智能的AI。但基础功能——双区温度、AI Autopilot、HRV与睡眠阶段追踪、震动闹钟——与Pod 4完全相同，2026年4月推出的Autopilot 4.0“sleep agent”（Apple/Google Health集成、通俗语言的晨间简报）也覆盖Pod 4。Pod 5 Ultra起价约$6,099（Queen）至$6,300（King），而Pod 4为$2,449–$2,649，且仍需订阅。2026年9月23日，Eight Sleep在所有市场推出Pod 6取代Pod 5，起价$1,999（Solo）和$2,899（Queen，双区），Pod 5现已成为上一代产品。",
+      "description": "ONDA评测Eight Sleep Pod 5：旗舰Pod 5 Ultra增加可调节床架、上方降温和音响，但价格升至$6,099+。核心技术与Pod 4共享。2026年9月由Pod 6（$1,999起）取代。",
+      "bestFor": "最适合想要顶配整床系统——可调节床架、上方温控、音响和打鼾缓解——并能承受价格和订阅的买家。若只要核心体验，Pod 4或Pod 5 Core更明智。",
+      "testNote": "基于证据的评估——依据Eight Sleep规格以及2026年对Pod 5 Ultra和Pod 4的独立评测评分。ONDA未进行上手实测。",
+      "productType": "高端智能睡眠温控床罩＋床垫系统",
+      "pros": [
+        "品类中最全面的温控——自上而下的水循环毯加双区床罩（Ultra）",
+        "Ultra配备可调节床架、内置音响和自动打鼾缓解",
+        "温控系统中最好的睡眠/HRV追踪，现配Autopilot 4.0 sleep agent",
+        "多年可靠性记录总体良好"
+      ],
+      "cons": [
+        "Pod 5 Ultra价格几乎翻倍（$6,099+），换来的是附加而非核心功能",
+        "完整功能仍需Autopilot订阅",
+        "主打软件（Autopilot 4.0）Pod 4也能用——升级理由更少",
+        "安装更复杂、占地更大；被锁定在Eight Sleep生态中"
+      ],
+      "scoreNotes": {
+        "climate-range": "Pod 5 Ultra在双区床罩之上增加了水循环毯，实现自上而下的温度控制——品类中最全面的温控范围。Pod 5 Core增加了更快的加热／制冷。双区（左右分别）延续。",
+        "build": "高端床罩，Ultra另配可调节床架和更安静的主机。实体控件更精致。多年可靠性记录总体良好。",
+        "app-tracking": "同样一流的睡眠/HRV追踪，现配Autopilot 4.0——一个集成Apple Health / Google Health Connect并用通俗语言撰写晨间简报的“sleep agent”。值得注意的是，该软件也覆盖Pod 4。",
+        "form-factor": "Ultra是更完整的系统：可调节床架、内置扬声器和自动打鼾缓解（抬高头部）。功能更强，但安装和占地比仅床罩的Pod更大。",
+        "subscription": "没有变化——完整功能仍需Autopilot订阅（每月约$15–25）。高端硬件绑定持续会员制，仍是编辑方面的主要症结。",
+        "value": "Pod 5 Ultra $6,099–$6,300（Queen/King）外加订阅——约为Pod 4的两倍。就核心睡眠温控体验而言，Pod 4（或Pod 5 Core）以低得多的价格提供了大部分价值。"
+      },
+      "content": "> 更新（2026年9月）：Eight Sleep于2026年9月23日用Pod 6取代了Pod 5——主机更小、生物识别传感器更多、起价更低（Solo $1,999；Queen双区$2,899）。Pod 5现为上一代产品；请将剩余Pod 5库存与Pod 6价格对比。\n\n## 领先之处\n\nEight Sleep Pod 5延续并扩大了[Pod 4](/reviews/eight-sleep-pod-4)确立的品类领先地位。在旗舰Pod 5 Ultra上，水循环毯在下方双区床罩之外增加了来自上方的制冷和加热——这是所有智能睡眠系统中最全面的温度范围——同时配备可调节床架、内置音响和自动打鼾缓解。追踪依然一流，现由Autopilot 4.0“sleep agent”驱动，它跨Apple/Google Health读取数据并用通俗语言撰写晨间简报。\n\n## 与Pod 4相比实际变化了什么\n\n新增功能是实打实的，但它们叠加在不变的核心之上。双区温度、AI Autopilot、HRV与睡眠阶段追踪以及震动闹钟与Pod 4完全相同——Autopilot 4.0软件也覆盖Pod 4。因此Pod 5 Ultra真正的优势在于可调节床架、上方的毯子、音响和打鼾缓解，而不是睡眠温控的基础能力。完整对比见[Pod 4 vs Pod 5](/reviews/vs/eight-sleep-pod-4-vs-eight-sleep-pod-5)。\n\n## 问题所在\n\n价格和订阅。Pod 5 Ultra起价约$6,099（Queen）——约为Pod 4的两倍——且完整功能仍需Autopilot会员。在核心体验相同的情况下，为附加的舒适功能花这么多钱代价不小。\n\n## 谁适合买Eight Sleep Pod 5？\n\n如果你想要顶配整床系统且价格不是决定因素，选Pod 5 Ultra。如果你想以最佳性价比获得Eight Sleep的睡眠温控体验，[Pod 4](/reviews/eight-sleep-pod-4)——或更便宜的Pod 5 Core——是更明智的选择。更多选择见[最佳智能睡眠温控系统](/reviews/smart-sleep-climate)。\n",
+      "faq": [
+        {
+          "q": "Eight Sleep Pod 5值得买吗？",
+          "a": "只有在你想要顶配整床系统时才值得。Pod 5 Ultra增加了可调节床架、自上而下的水循环毯、内置音响和打鼾缓解，但价格几乎翻倍。核心双区温控和HRV技术与Pod 4相同，Pod 4仍是性价比之选。"
+        },
+        {
+          "q": "Eight Sleep Pod 5多少钱？",
+          "a": "Eight Sleep Pod 5 Ultra的标价为Queen尺寸$6,099、King尺寸约$6,300，另加Autopilot订阅每月约$20。仅床罩的Pod 5 Core更便宜。自2026年9月23日起，Pod 5已被Pod 6取代，Pod 6起价$1,999（Solo）和$2,899（Queen）。"
+        },
+        {
+          "q": "Eight Sleep Pod 5有哪些缺点？",
+          "a": "Pod 5 Ultra价格几乎翻倍，换来的是附加而非核心功能，且仍需Autopilot订阅。Autopilot 4.0也覆盖Pod 4，削弱了升级理由；安装也更复杂，并会被锁定在生态中。"
+        },
+        {
+          "q": "Eight Sleep Pod 5和Pod 4哪个好？",
+          "a": "Pod 4性价比更高；只有当你想要配备可调节床架、上方毯子、音响和打鼾缓解的整床系统时，Pod 5 Ultra才更好。两者共享核心双区温控和HRV技术，Autopilot 4.0也覆盖Pod 4。"
+        }
+      ]
+    },
+    "chilipad-dock-pro": {
+      "verdict": "Eight Sleep的免订阅水冷替代品——高端温控，无持续费用，无心率变异性（HRV）追踪。",
+      "summary": "ChiliPad Dock Pro是Sleepme的高端水冷／加热床垫垫。通过充水垫进行主动制冷和加热（13–46°C），可选双区，完整功能无需订阅。它没有Eight Sleep那样的HRV追踪和睡眠阶段检测，但温控硬件相当，拥有模式也更简洁。",
+      "description": "ONDA评测ChiliPad Dock Pro：Sleepme无需订阅的高端水冷睡眠温控垫。",
+      "bestFor": "最适合想要Eight Sleep级水冷却不想订阅的用户——没有追踪功能的包袱。",
+      "testNote": "基于证据的评估——依据Sleepme/Chili产品资料及2026年独立评测评分。ONDA未进行上手实测。",
+      "productType": "高端水冷／加热床垫垫（无需订阅）",
+      "pros": [
+        "无需订阅——买硬件即享完整功能",
+        "双区水冷／加热，可与Eight Sleep相当",
+        "多年可靠性记录扎实",
+        "拥有模式比Eight Sleep更简洁"
+      ],
+      "cons": [
+        "没有HRV追踪或睡眠阶段检测",
+        "Sleepme应用比Eight Sleep的轻量",
+        "温度恢复略慢于Pod 4",
+        "铺在床垫上的垫子会略微改变睡感"
+      ],
+      "scoreNotes": {
+        "climate-range": "强大的双区温度范围（13–46°C）。酷暑峰值时恢复略慢于Eight Sleep Pod 4；其他方面温控相当。",
+        "build": "高端垫体结构，配静音主机。2年保修。Sleepme/Chili多年可靠性记录扎实。",
+        "app-tracking": "Sleepme应用用于温度定时；没有HRV追踪，没有睡眠阶段检测。仅支持导入Apple Health。",
+        "form-factor": "铺在现有床垫上的垫子。可选双区。主机尺寸与Eight Sleep相当。",
+        "subscription": "无需订阅。完整功能随硬件提供。这是相对Eight Sleep最大的编辑差异点。",
+        "value": "剩余的Dock Pro（现称\"Chilipad 1.0\"）库存正在打折销售；其后继型号Chilipad 2.0标价$1,599-1,799——无持续费用。按3年计，总成本明显低于Eight Sleep。"
+      },
+      "content": "> 更新（2026年9月）：Sleepme现以\"Chilipad 1.0\"名义销售Dock Pro——售完即止，优惠30%；其后继型号为Chilipad 2.0，Sleepme称其为对Dock Pro系统的彻底升级（$1,599起；Queen尺寸$1,699；无需订阅）。本评测针对Dock Pro硬件。\n\n## 领先之处\n\nChiliPad Dock Pro是Sleepme对Eight Sleep给出的免订阅答案。双区水冷／加热能力相当，无持续费用，拥有多年可靠性记录和更简洁的拥有模式。代价是没有HRV追踪、应用较轻量——这台设备是温控工具，而不是追踪器。\n\n## ChiliPad Dock Pro有哪些缺点？\n\n没有HRV。没有睡眠阶段检测。Sleepme应用只做温度定时，不做生物反馈。对已经佩戴Oura或Whoop的用户来说这无关紧要；对想要一体化追踪的用户，Eight Sleep才是合适的形态。\n\n## 谁适合买ChiliPad Dock Pro？\n\n如果你想要不需订阅的高端水冷睡眠温控，选ChiliPad Dock Pro。想要一体化HRV/追踪，选Eight Sleep Pod 4。想要更低价的送风方案，选BedJet 3。\n\n---\n\n## 延伸阅读\n\n为什么床温调节会影响睡眠深度和恢复：背后的生物学。\n\n- [睡眠真的会清洁大脑吗？类淋巴系统的证据](/articles/nightly-flush-glymphatic-neural-cache)——哪些已在人体中得到证实，哪些仍有争议\n- [方案：昼夜节律硬重置](/articles/protocol-circadian-hard-reset)——降温在睡眠节律重置流程中的位置\n",
+      "faq": [
+        {
+          "q": "ChiliPad Dock Pro值得买吗？",
+          "a": "如果你想要不需订阅的高端水冷，值得。ChiliPad Dock Pro提供13至46°C的双区主动制冷和加热，可与Eight Sleep相当，完整功能，无持续费用。它没有HRV追踪和睡眠阶段检测。"
+        },
+        {
+          "q": "ChiliPad Dock Pro多少钱？",
+          "a": "Sleepme现以'Chilipad 1.0'名义销售剩余的Dock Pro，售完即止，优惠30%；其后继型号Chilipad 2.0根据尺寸售价$1,599-1,799（Queen尺寸$1,699），无需订阅。所有功能随硬件提供，拥有模式比Eight Sleep的会员制更简洁。不包含HRV追踪。"
+        },
+        {
+          "q": "ChiliPad Dock Pro有哪些缺点？",
+          "a": "ChiliPad Dock Pro没有HRV追踪或睡眠阶段检测，Sleepme应用也比Eight Sleep的轻量。温度恢复略慢于Pod 4，铺在床垫上的垫子会略微改变睡感。"
+        },
+        {
+          "q": "ChiliPad Dock Pro和Eight Sleep Pod 4哪个好？",
+          "a": "想要免订阅拥有，ChiliPad Dock Pro更好；想要一体化HRV和睡眠追踪，Pod 4更好。两者温控硬件相当，但Pod 4约需$4,000外加每月约$20，而Sleepme当前的Chilipad 2.0（Queen尺寸）约$1,700，无任何费用。"
+        }
+      ]
+    },
+    "sleep-number-climate360": {
+      "verdict": "以智能床方式实现睡眠温控——温控内置在床垫中，而不是作为一层额外添加。高端定价。",
+      "productType": "内置温控的智能床（床垫集成）"
+    },
+    "iqair-healthpro-plus": {
+      "verdict": "高端过滤之选——HyperHEPA H14过滤可捕获99.5%的0.003微米颗粒，数十年品牌积淀，曾用于COVID-19医院部署。",
+      "summary": "IQAir HealthPro Plus是一款瑞士设计的空气净化器，其HyperHEPA滤网被厂商评为H14（厂商声称），可捕获99.5%低至0.003微米的颗粒（True HEPA H13为0.3微米），配有用于吸附VOC的厚重V5-Cell活性炭模块，多级过滤覆盖1125 sq ft。用于医院部署和临床场景。高端定价反映了这一过滤规格。",
+      "description": "ONDA评测IQAir HealthPro Plus——瑞士设计、厂商评定H14过滤（厂商声称）的HyperHEPA H14空气净化器。从过滤、CADR、做工和性价比评分。",
+      "bestFor": "最适合想要厂商评定H14 HEPA过滤（厂商声称）及数十年瑞士品牌积淀的用户——需接受没有智能功能。",
+      "testNote": "基于证据的评估——依据IQAir产品资料、AHAM认证及2026年空气质量/消费者评测评分。ONDA未进行上手实测。",
+      "productType": "HyperHEPA空气净化器（厂商评定H14）",
+      "pros": [
+        "HyperHEPA H14——消费级中过滤最深",
+        "用于医院/临床部署",
+        "数十年瑞士品牌积淀",
+        "滤芯寿命2-4年"
+      ],
+      "cons": [
+        "高端定价（$1,099）",
+        "无App、无传感器、无智能功能",
+        "高速档噪音大（约65 dB）",
+        "仅手动控制——无自动模式"
+      ],
+      "scoreNotes": {
+        "filtration-technology": "HyperHEPA H14——在0.003微米处捕获99.5%（True HEPA H13在0.3微米处为99.97%）。消费级最深的过滤规格。配V5-Cell活性炭模块用于VOC。",
+        "cadr-coverage": "AHAM验证的CADR。2 ACH下覆盖1125 sq ft；5 ACH下约450 sq ft。厂商标称偏保守。",
+        "build-noise": "高端瑞士做工，数十年可靠性。低速档安静（约30 dB）；高速档较吵（约65 dB）——风扇尺寸的折衷。",
+        "smart-features": "无App，无内置传感器。与Dyson/Molekule等高端App竞品相比的明显规格差距。",
+        "maintenance-cost": "滤芯寿命2-4年。滤网费用约每年$200-300。长期持有成本划算。",
+        "value": "$1,099——高端定价。厂商评定的H14过滤可以支撑这个价格；但与带智能功能的Dyson/Coway相比偏贵。"
+      },
+      "content": "## 优势所在\n\nIQAir HealthPro Plus配有厂商评定H14的滤网（厂商声称）——HyperHEPA可捕获低至0.003微米的颗粒，拥有数十年瑞士品牌积淀，用于医院和临床部署。很少有消费级净化器标出相当的过滤规格。\n\n## IQAir HealthPro Plus有哪些缺点？\n\n智能功能和高速档噪音。无App、无传感器、无自动模式——IQAir是纯机械过滤设备。高速档风扇噪音（约65 dB）较大。想要智能联动的用户，Dyson或Molekule更合适。\n\n## 谁适合买IQAir HealthPro Plus？\n\n想要厂商评定H14 HEPA过滤（厂商声称），选IQAir HealthPro Plus——需接受没有智能功能。高端智能功能选Dyson Big+Quiet。PECO高端选Molekule Air Pro。中高端智能选Coway Airmega 400。\n\n---\n\n## 延伸阅读\n\n- [电医学与神经调控](/articles/electric-medicine-neuromodulation)\n- [相位锁定声学睡眠](/articles/phase-locked-acoustic-sleep)\n- [睡眠真的能清洗大脑吗？类淋巴系统的证据](/articles/nightly-flush-glymphatic-neural-cache) ——哪些已在人体中得到证实，哪些仍有争议\n",
+      "faq": [
+        {
+          "q": "IQAir HealthPro Plus值$1,099吗？",
+          "a": "如果你想要厂商评定的H14过滤（厂商声称），就值。其HyperHEPA H14滤网可捕获99.5%低至0.003微米的颗粒，用于医院部署，滤芯可用2–4年。如果你想要App、传感器或自动模式，这个价格一样都买不到。"
+        },
+        {
+          "q": "HyperHEPA和True HEPA有什么区别？",
+          "a": "IQAir HealthPro Plus的HyperHEPA H14滤网可捕获99.5%低至0.003微米的颗粒，而True HEPA H13滤网的额定粒径为0.3微米。它还增加了用于VOC的厚重V5-Cell活性炭模块。消费级中没有其他产品能达到这一规格。"
+        },
+        {
+          "q": "IQAir HealthPro Plus有哪些缺点？",
+          "a": "售价$1,099，没有App、没有传感器、没有自动模式，只能手动控制。高速档也很吵，约65 dB。你花钱买的是过滤深度和数十年瑞士品牌积淀，而不是便利功能。"
+        }
+      ]
+    },
+    "blueair-healthprotect-7770i": {
+      "verdict": "最佳瑞典高端之选——HEPASilent离子荷电过滤以更低噪音实现相当于HEPA的捕集效果，并带GermShield常开模式。定价偏高端。",
+      "summary": "Blueair HealthProtect 7770i是瑞典高端空气净化器的标杆——HEPASilent离子荷电技术以低于传统HEPA风扇的噪音实现相当于HEPA的捕集效果，另有GermShield常开低功耗持续模式、实时PM2.5 / VOC传感器和应用集成。Blueair品牌在欧洲市场拥有数十年积淀。",
+      "description": "ONDA评测Blueair HealthProtect 7770i：瑞典设计的高端空气净化器，配备HEPASilent离子荷电过滤和GermShield全天候模式。按过滤、CADR、做工与性价比评分。",
+      "bestFor": "最适合想要瑞典高端工程、HEPASilent＋GermShield模式的用户——需接受比Coway更小的覆盖面积和更高的滤网成本。",
+      "testNote": "基于证据的评估——依据Blueair产品资料、AHAM认证及2026年欧洲消费者评价评分。ONDA未进行上手实测。",
+      "productType": "瑞典高端HEPASilent＋GermShield空气净化器",
+      "pros": [
+        "HEPASilent技术——以更低噪音达到HEPA同等效果",
+        "GermShield常开持续模式",
+        "瑞典Blueair品牌数十年积淀",
+        "与Dyson并列高端品类中最安静的"
+      ],
+      "cons": [
+        "高端定价（$820）",
+        "没有HyperHEPA / PECO之类的差异化技术",
+        "滤网6个月更换一次，Coway为12个月",
+        "覆盖面积小于Coway Airmega 400"
+      ],
+      "scoreNotes": {
+        "filtration-technology": "HEPASilent离子荷电＋HEPA组合——通过电荷吸引捕集颗粒，降低所需风扇转速。达到HEPA同等水平，但没有HyperHEPA的深度。",
+        "cadr-coverage": "AHAM认证CADR。在5 ACH下覆盖540平方英尺。",
+        "build-noise": "瑞典高端做工。低档约23 dB（属最安静之列），高档47 dB。HEPASilent技术降低了所需风扇转速。",
+        "smart-features": "PM2.5 / VOC传感器、GermShield常开模式、应用集成、支持Alexa / Google Home。",
+        "maintenance-cost": "滤网6个月一换。滤网费用约每年$120-180。高于Coway，低于Molekule。",
+        "value": "$820——高端定价。瑞典工程＋HEPASilent＋GermShield可以支撑这一价格；但与中高端的Coway Airmega相比偏贵。"
+      },
+      "content": "## 领先之处\n\nBlueair HealthProtect 7770i是瑞典高端标杆——HEPASilent离子荷电过滤以更低噪音实现相当于HEPA的捕集效果，配备GermShield常开持续模式和完整的智能功能集成。品牌在欧洲拥有数十年积淀。\n\n## Blueair HealthProtect 7770i有哪些缺点？\n\n与Coway相比，覆盖面积和滤网成本处于劣势。AHAM覆盖面积为540平方英尺，而Coway Airmega 400为1560平方英尺。滤网6个月一换，Coway为12个月。\n\n## 谁适合买Blueair HealthProtect 7770i？\n\n想要瑞典高端HEPASilent＋GermShield，选Blueair 7770i。想以更低价格覆盖更大面积，选Coway Airmega 400。想要医疗级HEPA，选IQAir HealthPro Plus。想要Dyson的精致，选Dyson Big+Quiet。\n\n---\n\n## 延伸阅读\n\n- [电医学与神经调控](/articles/electric-medicine-neuromodulation)\n- [锁相声学睡眠](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "Blueair HealthProtect 7770i值得买吗？",
+          "a": "如果你看重安静运行和瑞典高端工程，值得。HEPASilent离子荷电过滤以更低噪音实现相当于HEPA的捕集效果，另有GermShield常开模式。你需要支付$820，并接受比Coway Airmega 400更小的覆盖面积和更高的滤网成本。"
+        },
+        {
+          "q": "Blueair HealthProtect 7770i多少钱？",
+          "a": "Blueair HealthProtect 7770i单机售价$820。滤网按6个月周期更换，而Coway为12个月周期，因此持续的滤网成本高于同级Coway机型。它配备实时PM2.5和VOC传感器以及应用集成。"
+        },
+        {
+          "q": "Blueair HealthProtect 7770i有哪些缺点？",
+          "a": "Blueair HealthProtect 7770i定价$820属高端，且缺少HyperHEPA或PECO之类的差异化技术。6个月的滤网周期短于Coway的12个月，覆盖面积也小于Coway Airmega 400。不过其噪音在高端品类中属最低之列。"
+        },
+        {
+          "q": "Blueair HealthProtect 7770i和Coway Airmega 400哪个好？",
+          "a": "论覆盖面积和性价比，Coway Airmega 400更好；论安静的高端工程，Blueair更好。Coway售价$479即可覆盖更大空间，滤网周期12个月；Blueair则以$820增加了HEPASilent和GermShield模式。"
+        }
+      ]
+    },
+    "zoe": {
+      "verdict": "科学依据最充分的 CGM 项目——也是唯一将血糖、肠道菌群和血液生物标志物融合进同一营养方案的项目。",
+      "summary": "Zoe 是由流行病学家 Tim Spector 主导、源自英国的个性化营养项目。它将为期两周的 Abbott Libre CGM 佩戴，与居家肠道菌群检测和血液生物标志物检测相结合，再把这三类信号转化为根据你的生理状况个性化的食物排名。两周测量阶段结束后，你可以通过每月 £60 的订阅继续使用 App 和排名。科学扎实、内容丰富，但不太适合持续使用 CGM。",
+      "description": "ONDA 评测 Zoe——Tim Spector 有科学依据的个性化营养项目，结合 CGM、肠道菌群检测和血液生物标志物分析。按洞察、准确度和性价比评分。",
+      "bestFor": "最适合想要基于真正已发表科学（而不只是血糖曲线）的个性化营养的用户。",
+      "testNote": "基于证据的评估——依据 Zoe 产品资料、已发表的 PREDICT 系列试验以及 2026 年的独立评测评分。ONDA 未进行上手实测。",
+      "productType": "个性化营养项目（Libre + 肠道菌群 + 血液）",
+      "pros": [
+        "唯一在一次分析中融合 CGM、肠道菌群和血液生物标志物的项目",
+        "由 Tim Spector 主导——消费级营养领域最可信的科学带头人",
+        "个性化食物排名有已发表的 PREDICT 研究支持",
+        "长期成本低于 Levels 或 Nutrisense"
+      ],
+      "cons": [
+        "CGM 阶段固定为两周——不是持续使用的 CGM 工具",
+        "无法导出原始血糖数据",
+        "较旧的两周版 Libre——第二周准确度最差",
+        "主要面向英国，美国扩张较慢"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "Abbott Libre（佩戴 2 周），制造商公布的 MARD 约 9–11%（制造商数据在 ONDA 评分中不计为证据）。无需校准；第二周的准确度是最弱的环节。使用的是较早版本的 Libre；没有针对这一具体组合的独立验证。ZOE 用随机对照试验检验了其项目，并在官网上正是这样表述的。",
+        "insights": "本榜单中唯一将 CGM 与肠道菌群和血液生物标志物融合为单一食物排名评分的项目——有已发表 PREDICT 研究支持的独特多生物标志物视角。",
+        "coaching": "默认没有一对一教练，但内容库和个性化食物排名可替代持续指导。Spector 和团队是可信的科学权威。",
+        "app-integration": "App 精致，提供个性化食物排名、食谱和饮食记录。支持接入 Apple Health。",
+        "flexibility": "CGM 阶段固定为两周；之后项目以排名和 App 为主，而非持续 CGM。无法导出原始血糖数据。开通后需签年约。",
+        "value": "开通费 £300（约 $370），含检测套件，之后每月 £60（约 $75）。长期看比 Levels 便宜，比 Stelo 贵。"
+      },
+      "content": "## 领先之处\n\nZoe 是本榜单中唯一不假装血糖就是全部的项目。两周的 CGM 阶段追踪你的[血糖飙升](/glossary/glucose-spikes)，同时进行肠道[菌群](/glossary/microbiome)粪便检测和血液生物标志物检测，三类信号融合为一套个性化食物排名——背后是 Tim Spector 的伦敦国王学院团队已发表的 PREDICT-1 和 PREDICT-2 研究。其科学渊源在该品类中明显领先。\n\n## Zoe 有哪些缺点？\n\n这里的 CGM 是一次快照，而不是一件工具。两周的 Abbott Libre 佩戴为初始排名模型提供数据，然后就结束了；如果你想要持续的 CGM 数据，Zoe 并不合适。无法导出原始数据，较旧的 Libre 版本在第二周准确度最差，而且在 £300 开通费之后还要签年度订阅——对一个第二周后就不再提供新血糖数据的项目来说代价不低。\n\n## 谁适合买 Zoe？\n\n如果你想要基于已发表科学的个性化营养，而一次性的 CGM 阶段就已足够，就选 Zoe——它适合根据你自身生理彻底重置饮食习惯，而不适合持续追踪血糖。如果持续 CGM 才是目的，Levels（高端）或 Stelo（性价比）更合适。\n\n---\n\n## 延伸阅读\n\n这些项目揭示的代谢生物学——以及数据所开启的方案。\n\n- [能量调节器：TSH](/articles/energy-governor-tsh) — 甲状腺驱动的代谢是血糖处理能力的上游\n- [GLP-1 生物学与肌肉保护](/articles/glp1-biology-muscle-preservation) — 使用 GLP-1 方案期间 CGM 数据显示了什么\n- [AI 生物标志物追踪](/articles/ai-biomarker-tracking-predictive) — CGM 是消费者可获得的最高密度生物标志物数据流\n",
+      "faq": [
+        {
+          "q": "Zoe 值得买吗？",
+          "a": "如果你想要基于已发表科学、而不只是血糖曲线的个性化营养，Zoe 值得。它是唯一融合 CGM、肠道菌群和血液生物标志物的项目，由 Tim Spector 主导，食物排名有 PREDICT 研究支持。它的 CGM 阶段只有两周。"
+        },
+        {
+          "q": "Zoe 多少钱？",
+          "a": "Zoe 的多生物标志物项目开通费 £300，另加每月 £60。CGM 部分仅持续两周。评测认为其长期成本低于 Levels 或 Nutrisense。"
+        },
+        {
+          "q": "Zoe 和 Levels 哪个更好？",
+          "a": "如果想要结合 CGM、菌群和血液生物标志物、有科学依据的个性化营养，且长期成本更低，Zoe 更好。Levels 适合持续追踪血糖；Zoe 的 CGM 只有两周，无法导出原始数据，使用的是 Libre 而不是 Levels 的 Dexcom Stelo（G7 平台）。"
+        },
+        {
+          "q": "Zoe 有哪些缺点？",
+          "a": "Zoe 的 CGM 阶段固定为两周，因此不是持续使用的 CGM 工具。无法导出原始血糖数据，较旧的 Libre 版本第二周准确度最差，而且主要面向英国，美国扩张较慢。"
+        }
+      ]
     }
   },
   "comparisons": {
@@ -2220,6 +3059,306 @@
           "a": "Nexcare DIY：约 $20/年。Breathe Right：约 $120/年。SomniFit 品牌款：约 $100/年。Hostage Tape 订阅：约 $156/年。Somnifix：约 $330/年。Intake Breathing（含更换胶片）：约 $240/年。Mute：约 $435/年。根据层级不同，总体范围约 $20–$435/年。"
         }
       ]
+    },
+    "best-red-light-face-masks-2026": {
+      "title": "红光面罩推荐对比（2026）",
+      "description": "ONDA评选2026年十佳红光面罩：Omnilux Contour、CurrentBody Series 2、Dr. Dennis Gross、Lumara Viso、TheraFace、HigherDOSE、LightStim、JOVS、Solawave等，按辐照度、波长、证据和性价比评分。",
+      "intro": "2026年的红光面罩既有长期经营的光疗产品线（Omnilux Contour、LightStim）和皮肤科医生品牌（Dr. Dennis Gross SpectraLite），也有消费品牌的高端设备（CurrentBody Series 2、HigherDOSE、TheraFace、Lumara Viso）。FDA状态在我们的评分中保持中立：我们核实了Omnilux（K191629）、LightStim（K120775；当前型号K261482）、TheraFace（K230293）和HigherDOSE（K241933）的510(k)；Dr. Dennis Gross称其面罩已获许可。韩国K-beauty（JOVS）和入门手持设备（Solawave）覆盖入门档；新颖的混合形态（Shark CryoGlow冷却+LED）补全了这个品类。我们用同样的六个维度为2026年最可信的十款面罩评分：辐照度、波长覆盖、LED数量与面部覆盖、临床证据、舒适度和性价比。",
+      "verdict": "按ONDA评分，CurrentBody Series 2和Lumara Viso并列第一（均为8.0，证据平局判定也相同）：CurrentBody是自带颈部延伸片的消费市场首选，Lumara是拥有470颗LED和三种波长的参数狂。Omnilux Contour Face（7.8）的柔性硅胶舒适度最好，标称辐照度适中且可信，但Contour本身没有发表过试验，其产品页面声称拥有这款面罩并不存在的临床证明，因此在营销诚信方面被扣0.3分。Dr. Dennis Gross以皮肤科品牌背景加上红+蓝双光谱。如果你能接受手持主动使用，LightStim for Wrinkles是$249的四波长手持选择。Solawave Wand覆盖$169的入门档。按三个问题来选：舒适度和价格还是消费级精致度、面罩还是手持、单波长还是多波长。",
+      "content": "## 我们如何排名\n\n每款面罩都按ONDA公开的[评测方法](/reviews/methodology)评分：六项加权标准中，我们有意给辐照度诚信和临床证据基础较高权重——这个品类最让用户困惑的，正是夸大的峰值辐照度参数和被包装成临床证据的品牌资助研究。\n\n全部十款均依据厂商资料、厂商关于FDA状态的说明以及2026年的独立皮肤科/消费者评测进行评估，而非上手实测。\n\n## 红光面罩：该买哪款？\n\n三个购买问题就能把这个品类理清楚：\n\n**你最看重证据吗？** 我们就此核查的设备中，没有一款拥有针对自身的独立试验：Omnilux已发表的研究针对的是其他Omnilux型号，LightStim唯一的皱纹数据是一项针对旧型号的未发表公司研究，而CurrentBody、Dr. Dennis Gross和Lumara均未找到独立的设备研究。按舒适度、剂量标注诚信和价格来选。\n\n**面罩还是手持？** 面罩（被动全脸照射，日常使用方便）：Omnilux、CurrentBody、Dr. Dennis Gross、Lumara、TheraFace、HigherDOSE、JOVS、Shark CryoGlow。手持（需主动定位，一次一个区域）：LightStim、Solawave。\n\n**预算档位？** $250以下：Solawave Wand（$169）、LightStim（$249）。$300–$500：HigherDOSE（$349）、Shark CryoGlow（$349）、Omnilux（$395）、JOVS（$399）、Dr. Dennis Gross（$455）、CurrentBody（$470）。$600+：TheraFace（$649）、Lumara Viso（$650）。\n\nCurrentBody和Lumara综合得分并列第一（8.0），Omnilux紧随其后（7.8）；CurrentBody是消费市场首选；LightStim和Solawave覆盖手持选项；Lumara赢下参数至上的细分市场。",
+      "picks": {
+        "currentbody-series-2": {
+          "award": "最佳消费市场领导者",
+          "takeaway": "最大用户群 + 一体式颈部延伸片 + 精致硅胶做工——消费者首选。"
+        },
+        "lumara-viso": {
+          "award": "最佳高端参数",
+          "takeaway": "470颗LED + 三波长覆盖 + 带颈部延伸片的柔性硅胶——参数至上。"
+        },
+        "omnilux-contour-face": {
+          "award": "",
+          "takeaway": "柔性硅胶（我们评估中最舒适）+ 标准红光/近红外组合，获FDA皱纹适应症许可——面罩本身没有已发表的试验。"
+        },
+        "dr-dennis-gross-spectralite": {
+          "award": "最佳皮肤科品牌",
+          "takeaway": "红+蓝双光谱 + Dr. Dennis Gross皮肤科背景（据品牌称获FDA许可）。"
+        },
+        "theraface-mask": {
+          "award": "最适合Therabody生态",
+          "takeaway": "三波长覆盖，支持App控制——借力Theragun品牌延伸。"
+        },
+        "higherdose-red-light-face-mask": {
+          "award": "最佳消费品牌体验",
+          "takeaway": "简单控制器 + 柔性硅胶，亲民的$349——HigherDOSE生态入门。"
+        },
+        "lightstim-for-wrinkles": {
+          "award": "",
+          "takeaway": "$249的四波长手持设备，获FDA许可（当前型号K261482）——设备本身没有已发表的试验。"
+        },
+        "jovs-dpl-photofacial-mask": {
+          "award": "最佳多波长性价比",
+          "takeaway": "K-beauty工程打造的七种波长模式，中端价格$399。"
+        },
+        "shark-cryoglow": {
+          "award": "最佳混合形态",
+          "takeaway": "主动冷却结合红+蓝LED——针对浮肿+光照的新颖形态。"
+        },
+        "solawave-wand-4-in-1": {
+          "award": "最佳入门款",
+          "takeaway": "$169的手持设备，集红光LED + 微电流 + 温热 + 按摩——品类入门。"
+        }
+      },
+      "faq": [
+        {
+          "q": "2026年最好的红光面罩是哪款？",
+          "a": "CurrentBody Series 2和Lumara Viso并列ONDA最高分（8.0）：CurrentBody是带颈部延伸片的消费市场标杆，Lumara拥有最多LED和三种波长。Omnilux Contour Face（7.8）胜在柔性硅胶舒适度和FDA皱纹适应症许可；这些面罩本身都没有发表过试验。想要皮肤科品牌的双光谱，选Dr. Dennis Gross。"
+        },
+        {
+          "q": "Omnilux值这个高价吗？",
+          "a": "为了舒适度，值。不要为证据付溢价：Contour本身没有发表过试验，Omnilux已发表的研究针对的是其他型号。论消费级便利性，CurrentBody Series 2以相近价格覆盖更多使用场景。"
+        },
+        {
+          "q": "红光面罩和手持设备哪个更好？",
+          "a": "面罩被动照射全脸，无需主动定位——日常使用更方便。手持设备（LightStim、Solawave）一次处理一个区域，需要主动使用。大多数用户从面罩开始；我们排名中的两款手持设备都没有针对设备本身的已发表试验。"
+        },
+        {
+          "q": "红光面罩应该有哪些波长？",
+          "a": "标准临床组合是红光633 nm（表层、胶原蛋白）+ 近红外830 nm（更深组织）。有些面罩会加入蓝光415 nm（痤疮）、琥珀光590 nm（色素沉着）或绿光。波长并非越多越好——标准的红光+近红外组合拥有最深厚的皮肤科证据基础。"
+        },
+        {
+          "q": "FDA许可真的重要吗？",
+          "a": "没有营销说的那么重要。FDA许可（510(k)）意味着FDA认定某设备在指定用途上与已合法上市的设备实质等同；它不是FDA批准，也不能证明设备有效。我们核实了两项许可：Omnilux Contour（510(k) K191629，非处方皱纹适应症，凭借与早期LED面罩的等同性获许可，无临床数据）和LightStim for Wrinkles（K120775；当前型号K261482，凭安全性和技术测试获许可，无临床数据）。Dr. Dennis Gross称其设备已获许可；我们未核实其510(k)编号。许多消费级面罩只是在FDA注册或登记，这只表示公司告知FDA该设备存在；这既不是许可也不是批准，也说明不了任何质量问题。"
+        },
+        {
+          "q": "这个品类三年下来实际要花多少钱？",
+          "a": "大多数面罩是一次性购买，无订阅。Omnilux Contour Face：$395。CurrentBody Series 2：$470。Dr. Dennis Gross：$455。Lumara Viso：$650。TheraFace：$649。HigherDOSE：$349。LightStim：$249。JOVS：$399。Solawave：$169。Shark CryoGlow：$349。买一次，用5年以上。"
+        }
+      ]
+    },
+    "best-red-light-therapy-panels-2026": {
+      "title": "红光理疗板推荐对比（2026）",
+      "description": "ONDA评选2026年十佳红光理疗板：Joovv、Mito Red、PlatinumLED、GembaRed等，按辐照度、波长覆盖、EMF和性价比评分。",
+      "intro": "消费级红光品类以夸大的辐照度宣传、藏在参数表背后的EMF和频闪，以及并非总有做工支撑的高端定价而臭名昭著。ONDA用同样的六个维度为2026年最可信的十款理疗板评分——独立辐照度验证、波长覆盖、EMF和频闪控制、照射面积覆盖、证据和性价比。我们有意加重独立测量的权重。榜单涵盖从高端标杆（Joovv）到入门生物黑客款（Hooga）再到关节专用设备（Kineon），因此各种取舍可以读作一张有序的市场全景图。",
+      "verdict": "Mito Red MitoPRO 1500X综合第一——六种波长、经验证的辐照度和3年保修，售价$1,299。Joovv Solo 3.0仍是做工最干净的模块化标杆，但现价$1,699，要多花$400却得到更窄的光谱。PlatinumLED BIOMAX 600在中等尺寸中以波长数量和EMF透明度领先；GembaRed Vesta是EMF控制专家；RubyLx Lyra Pro适合需要每项参数都经实验室验证的买家。Infraredi以折扣价提供MitoPRO级尺寸；BioLight覆盖中端性价比档；Hooga是真正达到标称参数的入门款。Bon Charge适合欧盟/澳洲消费者；Kineon Move+是用于针对性关节使用的另一类产品。按你最在意的维度来选——覆盖面积、光谱、EMF、证据还是价格。",
+      "content": "## 我们如何排名\n\n每款理疗板都按ONDA公开的[评测方法](/reviews/methodology)评分：六项加权标准中，辐照度验证和性价比权重最高。波长覆盖、EMF和频闪控制、照射面积覆盖以及证据各占15%。我们有意加重独立测量的权重，因为这个品类充斥着夸大的厂商参数。\n\n全部十款均依据厂商资料、生物黑客评测网站的第三方辐照度和EMF测试报告、设备宣传所依据的已发表光生物调节文献，以及2026年的独立评测进行评估。ONDA未上手实测。请把分数当作基于证据的起点。\n\n## 红光理疗板：该买哪款？\n\n这个品类分为三个诚实的档位和一个专用类别：\n\n**高端标杆（$1,000+）：** Joovv Solo 3.0、Mito Red MitoPRO 1500、PlatinumLED BIOMAX 600、GembaRed Vesta、RubyLx Lyra Pro。全部提供经验证的参数、EMF控制和扎实做工。按你在意的维度挑选——综合平衡和光谱（MitoPRO 1500X）、模块化（Joovv）、波长数量（PlatinumLED）、EMF（GembaRed）、测试透明度（RubyLx）。\n\n**中端性价比（约$900–$1,050）：** BioLight Pro 900、Infraredi Pro Max 2.0（Pro 1500已停产）、Bon Charge Red Light Panel Max（$999）。扎实的四波长理疗板，以明显更低的价格提供高端款的大部分参数。代价是品牌成熟度较低、独立验证较少。\n\n**入门生物黑客款（$400以下）：** Hooga HG500（$359）。双波长、参数诚实，含门挂和吊挂套件（移动支架另购）。正是它让消费级红光成为$400以下的品类。\n\n**关节专用：** Kineon Move+。不同的产品类别——用于关节疼痛的激光加LED绑带。不能替代理疗板。\n\n选好档位和维度即可。这个品类规模不大，这十款基本覆盖了2026年整个严肃的消费级市场。",
+      "picks": {
+        "platinumled-biomax-600": {
+          "award": "最佳波长光谱",
+          "takeaway": "七种波长并公开第三方EMF测试，售价$1,049——光谱领先者。"
+        },
+        "mito-red-mitopro-1500": {
+          "award": "综合最佳",
+          "takeaway": "MitoPRO 1500X：六波长大尺寸理疗板，3年保修——$1,299，比Joovv便宜$400。"
+        },
+        "rubylx-lyra-pro": {
+          "award": "最佳测试透明度",
+          "takeaway": "每项公布参数都经独立实验室验证——消费级品类中测试最多的理疗板。"
+        },
+        "joovv-solo-3": {
+          "award": "最佳模块化系统",
+          "takeaway": "模块化、经验证的辐照度、低EMF——可拼接的标杆，但现价$1,699。"
+        },
+        "infraredi-pro-1500": {
+          "award": "最佳大尺寸性价比",
+          "takeaway": "MitoPRO级半身覆盖，便宜$300——代价是品牌较新。"
+        },
+        "gembared-vesta": {
+          "award": "最佳EMF控制",
+          "takeaway": "全屏蔽做工，本榜EMF最低——由行业创始人设计。"
+        },
+        "biolight-pro-900": {
+          "award": "最佳中端性价比",
+          "takeaway": "$1,000以下的四波长中尺寸理疗板，含支架和门挂。"
+        },
+        "hooga-hg500": {
+          "award": "最佳入门款",
+          "takeaway": "经验证的双波长参数，$349——入门生物黑客之选。"
+        },
+        "bon-charge-red-light-panel": {
+          "award": "最适合欧盟/澳洲买家",
+          "takeaway": "来自成熟欧盟/澳洲消费品牌、做工稳定的保健定位理疗板。"
+        },
+        "kineon-move-plus": {
+          "award": "最适合针对性关节使用",
+          "takeaway": "用于膝、肘、肩光生物调节的激光加LED绑带——在FDA登记，未获许可。"
+        }
+      },
+      "faq": [
+        {
+          "q": "2026年哪款红光理疗板最好？",
+          "a": "Mito Red MitoPRO 1500X综合第一——六种波长、经验证的辐照度、$1,299。Joovv Solo 3.0（$1,699）是模块化、可拼接的高端之选。Hooga HG500是入门款。按你最在意的维度（做工、光谱、EMF、价格）来选。"
+        },
+        {
+          "q": "红光理疗板实际需要多大的辐照度？",
+          "a": "研究使用的功率密度范围很广，而且并非越多越好：光疗常表现出“少即是多”的剂量反应，家用理疗板也很少能达到研究中使用的剂量。厂商常常标注0英寸处的峰值辐照度——这不是实际的照射距离。请找6英寸处的数值，并与独立测量读数核对。本榜大多数理疗板在6英寸处提供40–70 mW/cm²。"
+        },
+        {
+          "q": "哪个波长更重要——660 nm还是850 nm？",
+          "a": "两者都重要。660 nm（红光）是皮肤和表层组织的标准；850 nm（近红外）穿透更深，适用于肌肉和关节。生物黑客的惯例是两者都要；有些理疗板会加入630、810、830或940 nm以扩大覆盖。标准的660 + 850组合足以满足大多数用途。"
+        },
+        {
+          "q": "红光理疗板获得FDA批准了吗？",
+          "a": "没有。本榜中没有一款理疗板获得FDA批准。Joovv和Mito Red称Solo 3.0和当前的MitoPRO 1500X已作为II类器械在FDA注册，Bon Charge对其理疗板也有同样说法。注册和登记只表示公司告知FDA该设备存在；它们既不是许可也不是批准，也不代表质量。许可（510(k)）是另一个步骤：FDA认定某设备在指定用途上与已上市设备实质等同。Kineon Move+只有II类登记——未找到510(k)许可。其他产品作为消费级保健设备销售；光生物调节文献并不能证明任何特定的家用理疗板有效。"
+        },
+        {
+          "q": "红光理疗板的EMF和频闪有多重要？",
+          "a": "确实存在，但有争议。电源产生的EMF（电磁场）和LED驱动器带来的频闪，是与光本身并存的生物暴露。高端理疗板（Joovv、GembaRed、PlatinumLED）公开第三方EMF和频闪测试，并在硬件设计上尽量降低两者。对这些敏感的用户，GembaRed Vesta做工最干净。对大多数用户来说，满足6\"处<0.5 mG阈值并公开频闪率的理疗板即可接受。"
+        },
+        {
+          "q": "哪款红光理疗板性价比最高？",
+          "a": "$359的Hooga HG500——入门档中参数经过验证。中端性价比档可选BioLight Pro 900（$899）或Infraredi Pro Max 2.0（已停产Pro 1500的继任者；促销价$1,019，标价$1,199），以更低价格提供与MitoPRO 1500X（$1,299）相当的硬件。"
+        }
+      ]
+    },
+    "best-pemf-devices-2026": {
+      "title": "PEMF设备推荐对比（2026）",
+      "description": "ONDA评选2026年十佳PEMF设备：Bemer Classic Evo、Healthy Wave、Pulse Centers、Curatron、iMRS、OMI、EarthPulse、Resona Health、OlyLife、HigherDOSE和MagnaWave，按场强、波形研究、做工和性价比评分。",
+      "intro": "到2026年，脉冲电磁场（PEMF）设备已清晰分为三层：专有信号的高端垫（Bemer、iMRS）、多模式消费级垫（Healthy Wave、HigherDOSE），以及临床/便携线圈系统（Pulse Centers、Curatron、MagnaWave）。新的可穿戴层（$299的Resona Health VIBE）开辟了三年前还不存在的$500以下入门档。我们用同样的六个维度为2026年搜索量最高的十套系统评分：场强、波形研究、做工、可编程性、形态和性价比。",
+      "verdict": "Healthy Wave Multi-Wave在ONDA评分中排名第一：PEMF加远红外和红光，价格不到Bemer的一半，可编程性在品类中最丰富。Bemer Classic Evo的做工、施用器系统和品牌最好，研究清单也最长，但大多数研究与厂商有关，独立对照试验未发现与对照组有差异。Pulse Centers Pulse XL Pro占据高强度临床线圈细分市场。$299的Resona Health VIBE重新定义了入门档——对PEMF好奇的用户不再需要投入$2,000+来尝试。按三个问题来选：专有信号与做工（Bemer）、多模式叠加（Healthy Wave），还是投入程度（Resona VIBE）。",
+      "content": "## 我们如何排名\n\n每套系统都按ONDA公开的[评测方法](/reviews/methodology)评分：六项加权标准中，我们有意给场强和波形研究较高权重——这个品类最让用户困惑的，正是夸大的强度宣传和缺乏独立研究支持的专有波形营销。研究证明了什么、没证明什么，汇总在[PEMF疗法——证据](/science/evidence/pemf)中。\n\n全部十款均依据厂商资料、FDA数据库以及2026年的独立消费者/临床医生评测进行评估，而非上手实测。FDA注册只是一个登记；510(k)许可仅覆盖一项声明的用途，并不能证明健康益处。医用PEMF骨生长刺激器在2026年5月之前通过上市前批准（PMA）获批，此后归为II类（510(k)）器械——下面的消费级设备都不属于此类。\n\n## PEMF设备：该买哪款？\n\n三个购买问题就能把这个品类理清楚：\n\n**想要拥有自己研究清单的专有信号吗？** 是 → Bemer Classic Evo（研究很多，但大多规模小或与厂商有关；独立对照试验未发现与对照组有差异）。否 → Healthy Wave、iMRS、OMI（常见PEMF频率，没有针对设备本身的试验）。\n\n**哪种形态？** 全身垫（Bemer、Healthy Wave、OMI、HigherDOSE）。局部线圈（Pulse Centers、MagnaWave、Curatron）。床垫下安装、主打睡眠（EarthPulse）。可穿戴（Resona VIBE、OlyLife）。\n\n**预算档位？** $500以下：Resona VIBE可穿戴、OlyLife理疗棒。$1,000–$2,500：OMI、HigherDOSE、EarthPulse、Healthy Wave（全尺寸$2,495；小尺寸$995起）。$3,000–$5,000：iMRS、Curatron。$5,000+：Bemer、Pulse Centers、MagnaWave（紧凑型Semi 10 $8,360起；产品线$5,500–$39,660）。\n\nBemer凭做工和品牌领跑高端档；Healthy Wave胜在多模式叠加；Pulse Centers和MagnaWave占据临床线圈细分市场；Resona VIBE以$299重新定义了入门档。",
+      "picks": {
+        "healthy-wave-multi-wave": {
+          "award": "综合最佳",
+          "takeaway": "PEMF + 远红外 + 红光，价格低于Bemer——每次使用覆盖的模式最多。"
+        },
+        "pulse-centers-pulse-xl-pro": {
+          "award": "最佳高强度临床款",
+          "takeaway": "通过线圈施用器提供消费者可获得的最高场强，主要销售给诊所。没有针对该系统的独立试验。"
+        },
+        "curatron-3d": {
+          "award": "最佳双施用器（垫+线圈）",
+          "takeaway": "一个控制器带垫+线圈，参数透明，中端价格。FDA注册只是登记，不是许可。"
+        },
+        "imrs-prime": {
+          "award": "最佳Bemer替代",
+          "takeaway": "瑞士工程设计的多施用器系统，价格明显低于Bemer。"
+        },
+        "bemer-classic-evo": {
+          "award": "",
+          "takeaway": "最知名的PEMF垫，研究最多的单一信号，高端做工，数十年品牌。大多数研究与厂商有关；其FDA许可用于非医疗的肌肉调理。"
+        },
+        "omi-full-body-mat": {
+          "award": "最佳中端垫",
+          "takeaway": "简单的单模式垫，$1,500–$2,000的亲民价格。未获FDA骨愈合许可。"
+        },
+        "earthpulse-sleep-on-command": {
+          "award": "最佳睡眠专用",
+          "takeaway": "床垫下安装，厂商宣传的舒曼和δ波睡眠设置，$899——没有对照试验显示能改善睡眠。"
+        },
+        "magnawave-mini": {
+          "award": "最佳便携线圈",
+          "takeaway": "数十年用于马匹/运动恢复的线圈，装在便携箱中——但现在已不再销售“Mini”；紧凑型Semi 10 $8,360起，接近Pulse Centers的价位。"
+        },
+        "resona-health-vibe": {
+          "award": "最佳可穿戴/入门款",
+          "takeaway": "$299的可穿戴设备，130+方案——尝试PEMF门槛最低的方式。"
+        },
+        "higherdose-pemf-mat": {
+          "award": "最佳消费品牌",
+          "takeaway": "精致的用户体验和多模式叠加，消费者可接受的$1,295——重体验，轻技术深度。"
+        }
+      },
+      "faq": [
+        {
+          "q": "2026年最好的PEMF设备是哪款？",
+          "a": "综合选Healthy Wave Multi-Wave——多模式（PEMF + 红外 + 红光），价格不到Bemer的一半。看重做工和研究最多的信号选Bemer Classic Evo，不过证据大多与厂商有关，独立对照试验未发现与对照组有差异。高强度线圈选Pulse Centers。$299可穿戴入门选Resona Health VIBE。"
+        },
+        {
+          "q": "Bemer值这个高价吗？",
+          "a": "只有当你看重它的做工和品牌时才值。Bemer引用的研究比任何其他消费级PEMF都多，但大多规模小或与厂商有关，独立对照试验未发现与对照组有差异。若追求多模式叠加或纯粹强度，其他选择花得更少、给得更多。"
+        },
+        {
+          "q": "PEMF垫和线圈，该买哪种？",
+          "a": "被动的全身恢复使用选垫（Bemer、Healthy Wave、OMI）。针对局部的高强度点状处理选线圈（Pulse Centers、MagnaWave、Curatron）。大多数用户从垫开始；认真做运动恢复的人会转向线圈。"
+        },
+        {
+          "q": "PEMF真的有效吗？",
+          "a": "部分有效。使用临床设备的试验提示可短期缓解骨关节炎和腰痛的疼痛；对于不愈合骨折，Cochrane综述认为证据尚无定论。医用骨刺激器是处方器械，而不是这些垫子。在保健、恢复和睡眠方面，证据很弱。"
+        },
+        {
+          "q": "最便宜的可信PEMF设备是哪款？",
+          "a": "$299的Resona Health VIBE——可穿戴形态，130+预设方案，真正的PEMF组件。是对PEMF好奇的用户在投入买垫之前最好的入门。EarthPulse Sleep on Command（$899）主打睡眠，但试验并未显示能改善睡眠。"
+        },
+        {
+          "q": "Bemer三年下来实际要花多少钱？",
+          "a": "Bemer Classic Evo：一次性$5,490，无订阅。大致相当于入门线圈配置的Pulse Centers Pulse XL Pro。Healthy Wave Multi-Wave（按尺寸$995–$2,495）或iMRS Prime（$4,000）能以明显更低的三年成本提供多施用器或多模式覆盖。"
+        }
+      ]
+    },
+    "best-infrared-sauna-2026": {
+      "title": "红外桑拿房与桑拿推荐对比（2026）",
+      "description": "ONDA评选2026年十佳桑拿：Sunlighten、Clearlight、HigherDose、SaunaSpace、Therasage、Sun Home、JNH、Almost Heaven、Relax Sauna和Finnleo，按热源、做工、EMF和性价比评分。",
+      "intro": "2026年的家用桑拿市场按热源划分：全光谱红外（Sunlighten、Clearlight、Sun Home、Therasage）、白炽灯近红外（SaunaSpace）、传统芬兰式对流（Almost Heaven、Finnleo）；形态从桑拿房到便携毯不等。我们用同样的六个维度为最可信的十款产品评分：热源、做工、EMF、形态、证据和性价比。",
+      "verdict": "Sunlighten mPulse综合第一，凭借真正的三波段全光谱红外和经核实的低EMF。Clearlight Sanctuary 2是Jacuzzi旗下的高端替代选择；SaunaSpace Faraday是面向生物黑客的近红外专家；Finnleo Hallmark是高端传统室内桑拿的标杆。Sun Home Equinox是中高端全光谱之选；Almost Heaven Salem是传统户外选项；Therasage和JNH分别覆盖中端和入门级红外桑拿房。HigherDose Blanket和Relax Sauna Portable负责便携档。先按热源（全光谱红外、近红外还是传统式）挑选，再看形态和预算。",
+      "content": "## 我们如何排名\n\n每款设备都按ONDA公开的[评测方法](/reviews/methodology)评分：六项加权标准中，热源质量和性价比权重最高，因为它们决定了实际桑拿体验和长期拥有成本。\n\n全部十款均依据厂商资料、2026年的独立评测以及已发表的桑拿和红外疗法文献进行评估，而非上手实测。\n\n## 红外桑拿房与桑拿：该买哪款？\n\n三个购买问题就能把这个品类理清楚：\n\n**想要哪种热源？** 全光谱红外 → Sunlighten mPulse、Clearlight Sanctuary 2、Sun Home Equinox、Therasage。白炽灯近红外 → SaunaSpace Faraday。仅远红外 → JNH Joyous（入门桑拿房）、HigherDose Blanket（便携）、Relax Sauna（便携）。传统芬兰式对流 → Finnleo Hallmark（室内）、Almost Heaven Salem（户外桶形）。\n\n**哪种形态？** 桑拿房（4×4 ft及以上）→ Sunlighten、Clearlight、Sun Home、JNH、Therasage。户外桶形 → Almost Heaven Salem。室内传统式 → Finnleo Hallmark。便携 → HigherDose Blanket、Relax Sauna Portable。\n\n**预算档位？** $1,000以下 → HigherDose Blanket。$1,500–$3,500 → JNH Joyous、Therasage。$4,000–$6,500 → Almost Heaven Salem（双人桶形，含加热器标价$4,485）、Sun Home Equinox、SaunaSpace Faraday。$5,000–$10,000+ → Sunlighten mPulse、Clearlight Sanctuary 2、Finnleo Hallmark。\n\n这个品类已经成熟；这十款覆盖了消费者可选的全部主要选项。",
+      "picks": {
+        "sunlighten-mpulse": {
+          "award": "综合最佳（全光谱红外）",
+          "takeaway": "真正的三波段红外、高端雪松木做工、经核实的低EMF。"
+        },
+        "finnleo-hallmark": {
+          "award": "最佳传统室内桑拿",
+          "takeaway": "芬兰制造、Helo设计的传统室内桑拿——已发表证据基础最深厚。"
+        },
+        "almost-heaven-salem": {
+          "award": "最佳传统户外桑拿",
+          "takeaway": "美国制造的双人红雪松桶形桑拿，配6 kW电加热器，可泼水产生löyly蒸汽——本榜最便宜的传统桑拿（标价$4,485）。"
+        },
+        "saunaspace-faraday": {
+          "award": "最适合生物黑客（近红外）",
+          "takeaway": "白炽灯近红外，配完整法拉第笼EMF屏蔽。与全光谱红外不同。"
+        },
+        "sun-home-equinox": {
+          "award": "最佳中高端红外",
+          "takeaway": "全光谱红外并附带色光疗法，价格低于Sunlighten / Clearlight。"
+        },
+        "higherdose-blanket-v4": {
+          "award": "最佳便携款",
+          "takeaway": "远红外桑拿毯——无需安装、门槛最低的红外桑拿入门。"
+        },
+        "clearlight-sanctuary-2": {
+          "award": "最佳高端红外替代",
+          "takeaway": "Jacuzzi旗下全光谱红外，加热器终身保修，比Sunlighten略便宜。"
+        },
+        "therasage-thera-sauna-personal": {
+          "award": "最佳中端红外",
+          "takeaway": "中端价格的全光谱红外，品牌定位面向生物黑客。"
+        },
+        "jnh-lifestyles-joyous": {
+          "award": "最佳入门桑拿房",
+          "takeaway": "加拿大铁杉远红外桑拿房——可信的红外桑拿房中最便宜的选择。"
+        },
+        "relax-sauna-portable": {
+          "award": "最佳坐式便携款",
+          "takeaway": "长期在售的椅子+帐篷式远红外便携桑拿，适合不习惯躺着用桑拿毯的人。"
+        }
+      },
+      "faq": [
+        {
+          "q": "2026年最好的红外桑拿房是哪款？",
+          "a": "想要做工扎实的全光谱红外，选Sunlighten mPulse——真正的三波段、低EMF、高端雪松木做工。Clearlight Sanctuary 2是Jacuzzi旗下的替代选择。只要近红外，选SaunaSpace Faraday。传统芬兰式桑拿，选Finnleo Hallmark（室内）或Almost Heaven Salem（户外）。"
+        },
+        {
+          "q": "红外桑拿比传统芬兰桑拿好吗？",
+          "a": "机制不同，证据基础也不同。传统芬兰式对流桑拿的研究最深厚（芬兰心血管和痴呆症观察性队列研究——显示的是关联，而非因果）。红外桑拿的研究更新、规模更小、范围更窄，芬兰队列研究的结果并不适用于红外桑拿房。参见[桑拿与热暴露的证据](/science/evidence/sauna-heat-exposure)。两者都是合理选择；按热源偏好和安装条件来挑。"
+        },
+        {
+          "q": "近红外和全光谱红外有什么区别？",
+          "a": "近红外（700–1200 nm）更接近自然阳光的波长，厂商称其能更深地穿透组织；但这能带来健康益处尚未得到证实。全光谱（近+中+远）加入了更长波长的加热，主要作用是让你出汗。SaunaSpace仅通过白炽灯提供近红外；Sunlighten和Clearlight通过组合加热元件提供全光谱。"
+        },
+        {
+          "q": "需要担心红外桑拿的EMF吗？",
+          "a": "不同品牌和配置的EMF差异很大。Sunlighten和SaunaSpace等高端品牌公布了坐姿位置的低EMF数值；Clearlight宣传低EMF/ELF，可以向其索取最新检测报告。入门品牌往往不公布——没有文件证明时，按偏高来假设。SaunaSpace Faraday的EMF控制最严格（完整法拉第笼）。"
+        },
+        {
+          "q": "红外桑拿房可以装在室内吗？",
+          "a": "可以——大多数全光谱红外桑拿房（Sunlighten、Clearlight、Sun Home、JNH）都为室内安装设计。需要至少4×4 ft的专用空间，根据尺寸使用110V或220V，并保证足够通风。传统对流桑拿（Finnleo）需要更复杂的通风规划。"
+        },
+        {
+          "q": "桑拿毯和桑拿房相比怎么样？",
+          "a": "桑拿毯（HigherDose）贴身提供红外，每次约40分钟，但只有远红外波段，覆盖的体表面积也比桑拿房小。桑拿房能让核心体温升得更高，还有全光谱选项。没有空间的人适合桑拿毯；想要完整桑拿体验的人适合桑拿房。"
+        }
+      ]
     }
   },
   "criteria": {
@@ -2268,7 +3407,14 @@
     "open-data": "开放数据与开发者接入",
     "adhesion-comfort": "粘附与舒适度",
     "breathing-mechanism": "呼吸原理与方式",
-    "material-safety": "材料安全与皮肤耐受"
+    "material-safety": "材料安全与皮肤耐受",
+    "mechanism": "刺激机制",
+    "protocols": "方案灵活性",
+    "filtration-technology": "过滤技术与等级",
+    "cadr-coverage": "CADR与适用面积",
+    "build-noise": "做工与噪音",
+    "smart-features": "智能功能与传感器",
+    "maintenance-cost": "滤网更换与维护"
   },
   "categories": {
     "pemf": "PEMF 设备",
@@ -2282,7 +3428,9 @@
     "hrv-wearable": "HRV 追踪设备",
     "sauna": "桑拿与红外桑拿",
     "vagus-stim": "迷走神经刺激仪",
-    "breathing-aid": "闭口胶带与鼻呼吸"
+    "breathing-aid": "闭口胶带与鼻呼吸",
+    "red-light-mask": "红光面罩",
+    "air-purifier": "空气净化器"
   },
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {
@@ -3814,6 +4962,235 @@
         }
       ],
       "content": "## 简要结论\n\n两者都是高端鼻扩张器。Intake 是外置磁吸款。Mute 是内置聚合物支架。原理不同；耐受特点也不同。\n\n## 什么时候选 Intake Breathing？\n\n如果你想要无需插入鼻内的高端外置磁吸扩张——Intake 正合适。第一晚就舒适，年成本更低，James Nestor 推荐。\n\n## 什么时候选 Mute Nasal Dilator？\n\n如果你能接受内置器件，想要原理最强、有已发表临床气流研究的产品——Mute 正合适。外部看不见，机械扩张最直接。"
+    },
+    "muse-s-athena-vs-mendi": {
+      "title": "Muse S Athena 对比 Mendi（2026）",
+      "description": "Muse S Athena 对比 Mendi——EEG+fNIRS 脑训练头带与简单的 fNIRS 专注训练器。更丰富的数据和睡眠，还是最容易养成的习惯？ONDA 对比。",
+      "intro": "两者都戴在额头上训练大脑，但测量的内容不同。Muse S Athena 是功能最完整的消费级头戴设备——它将 EEG 与 fNIRS 结合，增加了睡眠追踪，并提供实时音频神经反馈。Mendi 则刻意保持简单：仅使用 fNIRS（前额叶血流），以单一的游戏式进度条呈现，无需订阅，几乎没有学习成本。这是深度与多用途对比最轻松的习惯养成。",
+      "verdict": "完整丰富 vs 简单易用。Muse S Athena 在测量（EEG + fNIRS）、睡眠追踪和多用途性上胜出；Mendi 在纯专注训练的简单性、价格和习惯养成上胜出。想要更完整、更强大的设备选 Muse；只想要一款简单、更便宜、游戏化的专注训练器选 Mendi。",
+      "bestForA": "如果你想要功能最完整的脑训练头戴设备——EEG 加 fNIRS、睡眠追踪和实时神经反馈，而且头带可以戴着睡觉，选 Muse S Athena。",
+      "bestForB": "如果你想用最简单、最便宜的方式养成每日专注训练习惯，无需订阅、没有学习成本，选 Mendi。",
+      "axes": [
+        {
+          "name": "测量",
+          "note": "Muse S Athena 将 EEG（大脑电活动）与 fNIRS（血流）结合——首款同时具备两者的消费级头带。Mendi 仅有 fNIRS，精细度不如 EEG。"
+        },
+        {
+          "name": "睡眠追踪",
+          "note": "Muse S Athena 是可以戴着睡觉的柔软头带，具备基于 EEG 的睡眠追踪。Mendi 仅是专注训练器——不支持睡眠。"
+        },
+        {
+          "name": "简单性与习惯",
+          "note": "Mendi 是最容易养成习惯的设备——单一视觉进度条，第一次使用就能上手，没有学习成本。Muse 功能更多，需要学的也更多。"
+        },
+        {
+          "name": "订阅",
+          "note": "两者都不强制订阅——Muse S Athena 没有必需费用，Mendi 是一次性购买。打平。"
+        },
+        {
+          "name": "价格",
+          "note": "Mendi：标价 $379（常有折扣）。Muse S Athena：$474.99。纯专注训练的话 Mendi 更便宜。"
+        },
+        {
+          "name": "多用途性",
+          "note": "Muse 覆盖冥想、专注和睡眠，数据更丰富；Mendi 只做一件事（前额叶专注训练），而且做得简单。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Muse S Athena 和 Mendi 买哪个好？",
+          "a": "Muse S Athena 是更完整的设备——EEG 加 fNIRS、睡眠追踪，以及覆盖冥想、专注和睡眠的实时神经反馈，售价 $474.99。Mendi 是更简单、更便宜（标价 $379，常有折扣）的 fNIRS 专注训练器，采用游戏式进度条，没有学习成本。追求深度与多用途选 Muse，想要最轻松的专注习惯选 Mendi。"
+        },
+        {
+          "q": "这里的 EEG 和 fNIRS 有什么区别？",
+          "a": "EEG 测量大脑的电活动；fNIRS 测量血流/氧合变化。Muse S Athena 两者都用（更精细）；Mendi 仅用 fNIRS，更简单但细节较少。想要更丰富的大脑数据选 Muse；想要简单的专注信号选 Mendi。"
+        },
+        {
+          "q": "哪个更适合睡眠？",
+          "a": "Muse S Athena——它是可以戴着睡觉的柔软头带，具备基于 EEG 的睡眠追踪。Mendi 仅是专注训练器，并非为睡眠设计。"
+        }
+      ],
+      "content": "## 简要结论\n\n[Muse S Athena](/reviews/muse-s-athena) 是功能最完整的头戴设备——EEG 加 fNIRS、睡眠追踪和神经反馈；[Mendi](/reviews/mendi) 是简单、更便宜的 fNIRS 专注训练器，采用游戏式进度条，没有学习成本。\n\n## 什么时候选 Muse S Athena？\n\n你想要最完整的脑训练设备——更丰富的测量、睡眠追踪，以及覆盖冥想、专注和睡眠的多用途性。\n\n## 什么时候选 Mendi？\n\n你想用最简单、最便宜的方式养成每日专注习惯，无需订阅，没有学习成本。\n\n## 也值得对比\n\n与游戏化 EEG 选项对比，请看 [Muse 2 vs FocusCalm vs Mendi](/reviews/vs/muse-2-vs-focuscalm-vs-mendi) 和 [Muse S Athena vs Muse 2](/reviews/vs/muse-s-athena-vs-muse-2)。完整榜单：[最佳 EEG 头戴设备](/reviews/eeg-headsets)。"
+    },
+    "theragun-pro-plus-vs-hypervolt-2-pro": {
+      "title": "Theragun PRO Plus 对比 Hypervolt 2 Pro（2026）",
+      "description": "Theragun PRO Plus 对比 Hyperice Hypervolt 2 Pro——2026 年高端筋膜枪对决。ONDA 解析堵转力、振幅、App 以及 $200 的价差。",
+      "intro": "Theragun PRO Plus 和 Hypervolt 2 Pro 是用户最常对比的两款高端筋膜枪。两者都有 60 lbs 堵转力，都采用安静的无刷电机，都有完整的 App 集成。关键差异：Theragun 振幅 16 mm（Hypervolt 为 14 mm），2 年保修（Hypervolt 为 1 年），价格高 $200。",
+      "verdict": "堵转力的规格上限相同。想要最深振幅和最长保修选 Theragun PRO Plus。想要同样堵转力、更轻重量、便宜 $200 选 Hypervolt 2 Pro。",
+      "bestForA": "如果你想要最深的振幅（16 mm）、2 年保修和 Therabody 生态，选 Theragun PRO Plus。",
+      "bestForB": "如果你想以便宜 $200 的价格获得相当的堵转力，同时重量更轻，并拥有 NBA/NFL 运动员背书，选 Hypervolt 2 Pro。",
+      "axes": [
+        {
+          "name": "堵转力",
+          "note": "两者均为 60 lbs。冲击压力上限打平。"
+        },
+        {
+          "name": "振幅",
+          "note": "Theragun：16 mm。Hypervolt：14 mm。Theragun 的冲击深 2 mm。"
+        },
+        {
+          "name": "重量",
+          "note": "Hypervolt：约 2.6 lbs。Theragun：约 2.9 lbs。单手使用时 Hypervolt 更轻。"
+        },
+        {
+          "name": "噪音",
+          "note": "Hypervolt：48–52 dB。Theragun：50–55 dB。Hypervolt 略安静。"
+        },
+        {
+          "name": "App / 生态",
+          "note": "两者都有带引导程序的完整 App。Therabody App 略精致一些，并与 TheraFace 集成。"
+        },
+        {
+          "name": "保修",
+          "note": "Theragun：2 年。Hypervolt：1 年。Theragun 保修期是两倍。"
+        },
+        {
+          "name": "价格",
+          "note": "Hypervolt 2 Pro：$399。Theragun PRO Plus：$599。Hypervolt 便宜 $200。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Theragun PRO Plus 和 Hypervolt 2 Pro 哪个更好？",
+          "a": "堵转力上限相同。Theragun 在振幅（+2 mm）和保修（+1 年）上胜出。Hypervolt 在重量、噪音和便宜 $200 的价格上胜出。关键看多出的 2 mm 振幅加一年保修是否值 $200。"
+        },
+        {
+          "q": "多 2 mm 振幅真的能感觉出来吗？",
+          "a": "对专门针对深层组织的用户——能，但只是略微。对日常恢复使用的大多数用户——差别不大。"
+        },
+        {
+          "q": "哪个 App 更好？",
+          "a": "两者在引导程序和蓝牙集成上功能相当。Therabody App 略精致，并与 TheraFace + TheraGun 生态集成。Hyperice App 更简洁，生态推销压力更小。"
+        },
+        {
+          "q": "总拥有成本如何？",
+          "a": "Theragun PRO Plus：$599。Hypervolt 2 Pro：$399。Hypervolt 只有 1 年保修，意味着第一年后可能需要自费维修，而 Theragun 有 2 年保障。"
+        }
+      ],
+      "content": "## 简要结论\n\n两者都是 60 lbs 堵转力的高端筋膜枪。Theragun PRO Plus 拥有 16 mm 振幅 + 2 年保修。Hypervolt 2 Pro 拥有 14 mm 振幅 + 1 年保修，便宜 $200。\n\n## 什么时候选 Theragun PRO Plus？\n\n如果你想要最深的振幅（16 mm）和同类中最长的保修——Theragun 是合适之选。Therabody 生态和品牌积淀进一步提升价值。\n\n## 什么时候选 Hypervolt 2 Pro？\n\n如果你想以便宜 $200 的价格获得相当的堵转力——Hypervolt 是合适之选。更轻、更安静，并有 NBA/NFL 运动员背书。"
+    },
+    "eight-sleep-pod-5-vs-sleep-number-climate360": {
+      "title": "Eight Sleep Pod 5 vs Sleep Number Climate360 对比（2026）",
+      "description": "Eight Sleep Pod 5对比Sleep Number Climate360——生物黑客智能床系统与内置温控的主流智能床。ONDA从降温、监测、可调性和成本分析。",
+      "intro": "Eight Sleep Pod 5和Sleep Number Climate360是2026年购买温控智能床的两种高端方式，出身完全不同。Eight Sleep是生物黑客系统——双区水冷床罩（Ultra版还有从上方覆盖的毯子）、集成的心率变异性（HRV）监测和自适应Autopilot软件，叠加在你现有的床上。Sleep Number是主流床垫品牌，温控和软硬度都内置在床垫本身，配有成熟的SleepIQ监测。这是在激进、数据优先的温控和一体化可调智能床之间做选择。",
+      "verdict": "生物黑客温控层对比主流智能床。Eight Sleep Pod 5在降温力度、HRV深度和自适应软件上胜出；Sleep Number Climate360胜在是一张集成的床，软硬可调、DualAir舒适，无需另加床罩。两者都是高端定价。按你想要最敏锐的恢复数据，还是一张完整的可调智能床来选。",
+      "bestForA": "如果你优先考虑激进的双区降温、集成的HRV监测和自适应Autopilot软件——并能接受订阅和叠加床罩的方式，选Eight Sleep Pod 5。",
+      "bestForB": "如果你想要一张内置可调软硬度（DualAir）和温控的集成智能床、成熟的SleepIQ监测，且核心体验无需订阅，选Sleep Number Climate360。",
+      "axes": [
+        {
+          "name": "温度控制",
+          "note": "Eight Sleep的水冷双区系统（加上Ultra的上覆毯子）比Sleep Number内置的温控层降温更强、更精准，后者更温和、不那么激进。"
+        },
+        {
+          "name": "监测深度",
+          "note": "Eight Sleep在HRV和睡眠阶段深度以及Autopilot洞察方面领先。Sleep Number的SleepIQ成熟可靠，但更偏消费级——不如Pod那样专注恢复。"
+        },
+        {
+          "name": "舒适度调节",
+          "note": "Sleep Number的核心优势：每侧可调的DualAir软硬度，床还能调节角度。Pod是加在你现有床垫上的温控/监测层；它不改变软硬度。"
+        },
+        {
+          "name": "集成度",
+          "note": "Climate360就是一张床——床垫、软硬度和温控集成在一起，无需另加任何东西。Pod 5是加在现有床垫上的床罩（外加主机，外加可选底座）。"
+        },
+        {
+          "name": "软件与自动化",
+          "note": "Pod 5的Autopilot 4.0睡眠代理（Apple/Google Health、基于睡眠阶段的调度、晨间简报）比以报告为主的SleepIQ应用更具自适应性。"
+        },
+        {
+          "name": "订阅与成本",
+          "note": "Sleep Number Climate360约$5,500+，核心使用无需会员。Pod 5 Ultra约$6,099，外加持续的Autopilot订阅。Sleep Number免去了定期费用。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Eight Sleep Pod 5和Sleep Number Climate360，该买哪个？",
+          "a": "如果你想要最激进的降温、最深入的HRV/睡眠监测和自适应软件——并能接受订阅，买Pod 5。如果你想要一张内置可调软硬度和温控的完整智能床、成熟的SleepIQ监测且无需会员，买Climate360。一个是数据优先的温控层；另一个是一体化可调床。"
+        },
+        {
+          "q": "Climate360的降温力度和Eight Sleep一样吗？",
+          "a": "不一样。Sleep Number内置的温度调节比Eight Sleep的水冷双区系统更温和。如果优先考虑激进、精准的降温，Pod 5是更强的温控设备。"
+        },
+        {
+          "q": "哪个睡眠监测更好？",
+          "a": "论HRV和恢复深度，Eight Sleep更好。Sleep Number的SleepIQ成熟可靠，但更偏消费级——适合看趋势，不如Pod那样专注恢复指标。"
+        }
+      ],
+      "content": "> 更新（2026年9月）：Eight Sleep已于2026年9月23日用Pod 6取代Pod 5（Solo版$1,999起；Queen双区版$2,899）。下文Pod 5价格为其最后标价——请将剩余Pod 5库存与Pod 6价格进行比较。\n\n## 简要结论\n\n两款高端智能床，两种理念。[Eight Sleep Pod 5](/reviews/eight-sleep-pod-5)是生物黑客温控加监测层——激进的双区降温、深入的HRV、自适应Autopilot——加在你的床上，需要订阅。[Sleep Number Climate360](/reviews/sleep-number-climate360)是主流的一体化智能床，可调软硬度和温控内置在床垫中，并配有成熟的SleepIQ监测。\n\n## 什么情况下Eight Sleep Pod 5是正确选择？\n\n降温力度、HRV深度和自适应软件是首要考虑，并且你希望床能主动管理恢复。订阅就是入场费。\n\n## 什么情况下Sleep Number Climate360是正确选择？\n\n你想要一张集成的智能床——每侧可调软硬度加温控，无需叠加任何东西——监测可靠，核心体验无需会员。\n\n## 同样值得比较\n\n想走无订阅、仅温控的路线，请看[Pod 5 vs ChiliPad Dock Pro](/reviews/vs/eight-sleep-pod-5-vs-chilipad-dock-pro)。完整阵容：[最佳智能睡眠温控系统](/reviews/smart-sleep-climate)。"
+    },
+    "oura-ring-4-vs-ultrahuman-ring-air-vs-ringconn-gen-2": {
+      "title": "Oura Ring 4、Ultrahuman Ring Air、RingConn Gen 2 对比（2026）",
+      "description": "Oura、Ultrahuman 与 RingConn——ONDA 三方对比主流智能戒指。高端打磨、最轻外形与最长续航，一次做出选择。",
+      "intro": "Oura Ring 4、Ultrahuman Ring Air 和 RingConn Gen 2 是非糖尿病生物黑客最常一起列入候选名单的三款智能戒指。三者都采用类似的光学传感器来监测夜间心率变异性（HRV）和睡眠；差异在于 App 成熟度、外形和拥有成本。这是带订阅的高端产品与有所取舍的免订阅产品之间的选择。",
+      "verdict": "Oura Ring 4 在 App 成熟度和分析深度上胜出。Ultrahuman 在外形和生态集成上胜出。RingConn 在续航和总拥有成本上胜出。",
+      "bestForA": "如果你想要最精致的智能戒指体验——最深入的睡眠模型、最成熟的 App、十年的迭代——并且能接受每月 $5.99 的会员费，选 Oura Ring 4。",
+      "bestForB": "如果尽可能轻的戒指是决定因素（2.4g），或者你已经拥有/计划购买 Ultrahuman M1 CGM 以获得原生统一生态集成，选 Ultrahuman Ring Air。",
+      "bestForC": "如果你想要免订阅的智能戒指追踪，同时拥有同类最长续航（12 天）和最低的 3 年拥有成本，选 RingConn Gen 2。",
+      "axes": [
+        {
+          "name": "HRV 测量",
+          "note": "三者都使用光学 PPG。只有 Oura Ring 4 有对照 ECG 的独立验证（13 人的夜间记录，Dial 2025）；Ultrahuman 有公司自己进行的预印本研究，RingConn 有一篇预印本（截至 2026 年 10 月）。"
+        },
+        {
+          "name": "睡眠追踪",
+          "note": "准确度上几乎相同——都没有睡眠分期的独立验证（截至 2026 年 10 月）。Oura 的睡眠分期仅在厂商资助的研究中得到验证（Ring 4 没有独立验证）；可穿戴设备的睡眠阶段仍然只是估算。Ultrahuman 和 RingConn 表现合格，但在分期精细度上落后一档。"
+        },
+        {
+          "name": "App 与分析",
+          "note": "Oura：经过十年最为成熟。Ultrahuman：精致、较新、范围较窄。RingConn：简洁，但三者中最不成熟。"
+        },
+        {
+          "name": "戒指重量",
+          "note": "Ultrahuman Ring Air：2.4g——同类最轻。RingConn Gen 2：约 3.0g。Oura：约 5g。对敏感用户来说 Ultrahuman 明显更舒适。"
+        },
+        {
+          "name": "续航",
+          "note": "RingConn Gen 2：视尺寸 10–12 天——智能戒指类别中最长。Oura：约 4–7 天。Ultrahuman：约 6 天。"
+        },
+        {
+          "name": "电池可靠性（多年）",
+          "note": "Ultrahuman 有 12 个月后电池衰减的记录报告。Oura 和 RingConn 的多年记录更良好。"
+        },
+        {
+          "name": "订阅要求",
+          "note": "Oura：完整功能需每月 $5.99 会员。RingConn 和 Ultrahuman：无需订阅。在免订阅价值上 RingConn 完胜。"
+        },
+        {
+          "name": "生态集成",
+          "note": "Ultrahuman：与 Ultrahuman M1 CGM 独有的原生配对。Oura：Apple Health 和 Levels。RingConn：标准的 Apple Health / Google Fit。"
+        },
+        {
+          "name": "硬件价格",
+          "note": "RingConn Gen 2：$299。Oura Ring 4：约 $349 + 每月 $5.99。Ultrahuman：约 $400。RingConn 前期最便宜。"
+        },
+        {
+          "name": "3 年总成本",
+          "note": "RingConn：约 $299。Ultrahuman：约 $400。Oura：含会员约 $565。多年拥有下 RingConn 明显最便宜。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "哪款智能戒指最好——Oura、Ultrahuman 还是 RingConn？",
+          "a": "Oura 在 App 成熟度和分析深度上胜出——消费级戒指中最详细的睡眠分期（仅在厂商资助的研究中得到验证）和最精致的体验。Ultrahuman 在戒指重量和 CGM 生态集成上胜出。RingConn 在续航和 3 年拥有成本上胜出。根据你最看重的维度来选。"
+        },
+        {
+          "q": "和免订阅戒指相比，Oura 的订阅值得吗？",
+          "a": "就分析深度而言，对大多数用户值得——但差距已经缩小。三年下来 Oura 约 $565，RingConn 约 $299，Ultrahuman 约 $400。如果你不会大量使用更深入的睡眠模型和 Readiness 评分，订阅就很难说值得。"
+        },
+        {
+          "q": "哪款日常佩戴最舒适？",
+          "a": "2.4g 的 Ultrahuman Ring Air——市面上最轻的智能戒指。约 3.0g 的 RingConn 也明显比约 5g 的 Oura 轻。对敏感用户来说，两款免订阅选项在舒适度上胜出。"
+        },
+        {
+          "q": "RingConn 续航真的有 12 天吗？",
+          "a": "独立评测和用户群体大体证实每次充电可用 10–12 天——约为 Oura 和 Ultrahuman 的两倍。多日续航意味着夜间 HRV 数据流中的充电空档更少。"
+        },
+        {
+          "q": "需要担心 Ultrahuman 的电池可靠性吗？",
+          "a": "有记录显示，部分设备在约 12 个月后出现集中的电池加速衰减。Ultrahuman 已因此改善了保修条款。Oura 和 RingConn 没有出现类似的可靠性集中问题。"
+        }
+      ],
+      "content": "## 简要结论\n\n> 注意：Ultrahuman Ring Air 在美国受到进口禁令（2025 年 10 月，Oura 赢得 ITC 专利案），在美国无法购买。Ultrahuman 在美国可购买的后继产品是 [Ring Pro](/reviews/ultrahuman-ring-pro)——免订阅，续航约 15 天。如果你在美国，请结合这一点阅读本对比。\n\n这是智能戒指取舍中的三个不同最优点。追求精致选 Oura，追求外形 + CGM 生态选 Ultrahuman，追求性价比 + 续航选 RingConn。大多数用户无需想得更复杂。\n\n## 什么时候选 Oura Ring 4？\n\n如果你想要最成熟的消费级戒指体验和最深入的睡眠模型，Oura 是合适之选。每月 $5.99 的会员费是享用十年迭代和同类最完善分析的门票。大多数用户最终仍会选择它。\n\n## 什么时候选 Ultrahuman Ring Air？\n\n如果戒指重量比什么都重要，Ultrahuman 是市面上最轻的智能戒指。如果你正在使用或计划使用 Ultrahuman M1 CGM，原生统一生态视图是独一无二的。只是购买前要清楚电池可靠性方面的隐患。\n\n## 什么时候选 RingConn Gen 2？\n\n如果免订阅是硬性要求，并且你想要同类最长的续航，RingConn 是合适之选。三年下来它也明显是最便宜的。代价是 App 略不成熟，睡眠分析也比 Oura 浅。"
     }
   }
 }
