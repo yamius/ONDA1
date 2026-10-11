@@ -100,7 +100,7 @@ A single low reading usually means one bad night. A run of low readings against 
 
 ## See your own HRV and trend
 
-Because HRV only means something against your own baseline, a chart of age averages can't tell you what you actually need to know. ONDA reads your resting heart rate, HRV and breathing from your Apple Watch history and builds your personal corridor — your normal range — then shows you when today drifts outside it. Instead of asking "is 45 ms good?", you see whether *your* HRV is holding, climbing, or dropping, and what tends to move it. That's the number that actually reflects your recovery.
+Because HRV only means something against your own baseline, a chart of age averages can't tell you what you actually need to know. ONDA reads your resting heart rate, HRV and breathing from Apple Health — from your Apple Watch or another tracker that syncs there — and builds your personal corridor — your normal range — then shows you when today drifts outside it. Instead of asking "is 45 ms good?", you see whether *your* HRV is holding, climbing, or dropping, and what tends to move it. That's the number that actually reflects your recovery.
 `,
 }
 

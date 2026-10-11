@@ -71,7 +71,7 @@ You can test your response by comparing early-dinner nights with late-dinner nig
 4. **Compare overnight resting heart rate and HRV** on the two kinds of nights against [your normal range](/science/concepts/hrv-baseline), plus how you slept.
 5. **Look for a consistent pattern**, not one bad night — single nights are noisy.
 
-ONDA reads overnight heart rate, HRV and [respiratory rate](/science/measurements/respiratory-rate) from Apple Health when you wear an Apple Watch, and holds a personal 14-day baseline, so a late, heavy dinner shows up as a departure from your own corridor rather than from a population average — [see what ONDA measures](/measurements). It is descriptive, not diagnostic: ONDA doesn’t diagnose reflux, metabolic conditions or anything else.
+ONDA reads overnight heart rate, HRV and [respiratory rate](/science/measurements/respiratory-rate) from Apple Health (Apple Watch or another tracker that syncs there) and holds a personal 14-day baseline, so a late, heavy dinner shows up as a departure from your own corridor rather than from a population average — [see what ONDA measures](/measurements). It is descriptive, not diagnostic: ONDA doesn’t diagnose reflux, metabolic conditions or anything else.
 
 ---
 

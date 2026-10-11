@@ -4,7 +4,7 @@ import type { Article } from './types'
  * Yoga Nidra ("yogic sleep"): guided lying-down relaxation held at the hypnagogic threshold. Evidence
  * framed modestly: EEG = awake state with some local slow waves (not sleep); vagally mediated HRV / arousal
  * effects of slow breathing; sleep meta-analysis (Singh 2026) = five studies, very low certainty.
- * Insomnia often involves arousal; CBT-I is first-line. ONDA: resting HR + HRV trend via Apple Watch (no overnight sleep-staging claim).
+ * Insomnia often involves arousal; CBT-I is first-line. ONDA: resting HR + HRV trend via Apple Health (Apple Watch or another tracker) (no overnight sleep-staging claim).
  */
 const article: Article = {
   slug: 'yoga-nidra-sleep-science',
@@ -60,7 +60,7 @@ Use it as a daytime reset or as an on-ramp to sleep — ideally alongside a cons
 
 ## See your body settle
 
-The calming behind Yoga Nidra shows up in your heart rhythm. ONDA shows your live pulse through the phone camera or an Apple Watch and reads resting heart rate and HRV from your Apple Watch, so you can see how a session settles your pulse and track whether [your baseline](/science/concepts/hrv-baseline) improves as the practice becomes a habit.
+The calming behind Yoga Nidra shows up in your heart rhythm. ONDA shows your live pulse through the phone camera or an Apple Watch and reads resting heart rate and HRV from Apple Health (Apple Watch or another tracker that syncs there), so you can see how a session settles your pulse and track whether [your baseline](/science/concepts/hrv-baseline) improves as the practice becomes a habit.
 
 *ONDA is a breathing and HRV biofeedback app, not a medical device. This article draws on neurophysiological research on Yoga Nidra, OM chanting and pranayama, and on sleep-quality outcomes of yoga programs. Persistent insomnia deserves a conversation with a clinician; cognitive behavioural therapy for insomnia (CBT-I) is the recommended first-line approach.*
 `,

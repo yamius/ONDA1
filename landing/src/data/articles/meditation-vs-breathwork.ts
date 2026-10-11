@@ -79,7 +79,7 @@ It also solves meditation's adherence problem. Breathwork gives you immediate, f
 
 ## Measure either — or both
 
-Whichever door you choose, the underlying shift toward parasympathetic calm is measurable. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from your Apple Watch (or your pulse from your phone camera), so you can see breathwork's immediate effect in real time and track meditation's slower baseline improvement over weeks. Seeing both — the fast lever and the deep training — in your own numbers helps you use each for what it does best, and confirms the combined approach is working.
+Whichever door you choose, the underlying shift toward parasympathetic calm is measurable. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from Apple Health (Apple Watch or another tracker that syncs there), or your pulse from your phone camera, so you can see breathwork's immediate effect in real time and track meditation's slower baseline improvement over weeks. Seeing both — the fast lever and the deep training — in your own numbers helps you use each for what it does best, and confirms the combined approach is working.
 `,
 }
 
