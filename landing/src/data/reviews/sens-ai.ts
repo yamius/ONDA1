@@ -7,7 +7,7 @@ const sensAi: ToolReviewInput = {
   category: 'eeg-headset',
   productType: 'Multi-modal headset (EEG + photobiomodulation + HRV)',
   description:
-    'ONDA review of Sens.ai — the premium multi-modal headset fusing five-channel EEG with intracranial photobiomodulation and HRV training. Scored on signal, content and value.',
+    'ONDA review of Sens.ai — the premium multi-modal headset fusing five-channel EEG with transcranial photobiomodulation and HRV training. Scored on signal, content and value.',
   verdict:
     'The most ambitious multi-modal headset — EEG plus photobiomodulation plus HRV, at a premium price that demands the use case.',
   summary:

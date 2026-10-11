@@ -365,8 +365,53 @@
       ]
     },
     "muse-2": {
-      "verdict": "最受欢迎的消费级EEG头带——内容成熟，价格亲民，是该类别的入门之选。",
-      "productType": "消费级EEG头带（冥想）"
+      "verdict": "最受欢迎的消费级 EEG 头带——内容成熟、价格亲民，是该品类的入门之选。",
+      "summary": "Muse 2 是让消费级 EEG 冥想广为人知的头带。四个干式 EEG 电极加 PPG 心率、成熟的冥想内容库、精致的应用，价格在本榜单中仅高于平价的 NeuroSky。硬件比 Athena 旧，也没有睡眠追踪——但对于只想要冥想反馈的用户，它仍是性价比最高的选择。",
+      "description": "ONDA 评测 Muse 2：成熟的大众 EEG 冥想头带，价格约为旗舰 Athena 的一半。按信号、内容和性价比评分。",
+      "bestFor": "最适合初次尝试 EEG 冥想、想以亲民价格获得最成熟消费设备的用户。",
+      "testNote": "基于证据的评估——依据 Interaxon 产品文档、已发表的 Muse EEG 验证文献以及 2026 年独立评测进行评分。ONDA 未进行实际上手测试。",
+      "productType": "消费级 EEG 头带（冥想）",
+      "pros": [
+        "最受欢迎的消费级 EEG 头带——生态和社区成熟",
+        "真正基于 EEG 的冥想设备中价格最低",
+        "无强制订阅——核心冥想反馈、心率、呼吸和姿势功能无需订阅即可使用",
+        "一台设备同时提供心率和 EEG 信号"
+      ],
+      "cons": [
+        "没有睡眠追踪——那是 Athena 的升级点",
+        "硬件比 Muse S Athena 旧（没有 fNIRS，不能过夜佩戴）",
+        "开发者 SDK 有限",
+        "Enso AI 教练、认知表现追踪、外部音频和精选课程需要 Muse Premium",
+        "硬质头带不如软带款舒适"
+      ],
+      "scoreNotes": {
+        "signal-quality": "四个干式 EEG 电极加 PPG 心率——消费级信号足够，在坐姿课程中表现稳定；稳定性低于研究用湿电极系统。",
+        "training-content": "经过十年发布积累的成熟冥想库——平静、专注、呼吸、身体扫描、情绪。深度不及 Athena 版本，但完整覆盖核心日常用途。",
+        "insights": "每次课程的平静/中性/活跃百分比加心率趋势；叙述性不如 Athena 的分析器。足以追踪数月的练习情况。",
+        "comfort": "硬质头带——10–20 分钟的冥想课程佩戴舒适，但不是为过夜佩戴设计的。",
+        "app-ux": "精致的 iOS/Android 应用；生态成熟，可集成 Apple Health。界面有些地方显得过时。",
+        "open-data": "可通过 Muse Direct（第三方）导出原始 EEG；官方 SDK 有限。",
+        "value": "$249.99 硬件，核心冥想反馈无强制订阅（Muse Premium 增加 AI 教练、认知追踪和课程）——进入真正消费级 EEG 冥想反馈最具性价比的方式。"
+      },
+      "content": "## 优势所在\n\nMuse 2 是让消费级 EEG 市场明白什么是好产品的设备。四个干电极虽然不是研究级，但足够用；冥想内容库是消费领域中最深的；应用经过十多年的迭代打磨。$249.99 的价格使它成为市场上最便宜、且背后仍有真正生态的正规 EEG 冥想头带。\n\n## Muse 2 有哪些缺点？\n\n问题在于时间。Muse 2 的硬件早于 Athena 版本，缺少 fNIRS、睡眠追踪和过夜佩戴。对于纯冥想用途，这一差距没有价格差所暗示的那么重要——但如果你想要睡眠功能，你就已经超出了这款设备的范围。开发者 SDK 有限，所以想要访问原始信号的生物黑客会转而选择 Neurosity Crown。\n\n## 谁应该购买 Muse 2？\n\n如果你对 EEG 头戴设备只想要冥想反馈，并且在意价格，请选择 Muse 2。如果你还想要睡眠追踪，选 Muse S Athena。如果你想要原始 EEG 数据用于自我实验，选 Neurosity Crown。\n\n---\n\n## 延伸阅读\n\n这些头戴设备所反馈的神经科学——以及 EEG 信号能告诉你、又不能告诉你哪些关于心理状态的信息。\n\n- [神经可塑性与心流超频](/articles/neuroplasticity-flow-overclocking)——心流状态是什么以及如何形成\n- [ACC 校准：认知控制方案](/articles/acc-calibration-protocol-cognitive-control)——认知控制背后的前额叶控制回路\n- [适应与范围分割](/articles/adaptation-hack-range-fractionation)——通过刻意变化训练认知状态\n",
+      "faq": [
+        {
+          "q": "Muse 2 值得买吗？",
+          "a": "对于初次尝试 EEG 冥想的用户，Muse 2 值得买。它是最受欢迎的消费级 EEG 头带，生态成熟，在真正基于 EEG 的冥想设备中价格最低，一台设备同时提供心率和 EEG，且无强制订阅。它不追踪睡眠。"
+        },
+        {
+          "q": "Muse 2 多少钱？",
+          "a": "Muse 2 头带标价 $249.99。核心冥想反馈、心率、呼吸和姿势检测无需订阅即可使用；Enso AI 教练、认知表现追踪、外部音频（Spotify、Calm、Headspace）和精选课程需要 Muse Premium。这是本评测中真正基于 EEG 的冥想设备里的最低价格。它还在一条头带中结合了心率和 EEG 感测。"
+        },
+        {
+          "q": "Muse 2 有哪些缺点？",
+          "a": "Muse 2 没有睡眠追踪，硬件比 Muse S Athena 旧，没有 fNIRS，不能过夜佩戴，开发者 SDK 有限，硬质头带不如软带款舒适。"
+        },
+        {
+          "q": "Muse 2 与 Muse S Athena：哪个更好？",
+          "a": "想以 $249.99 最便宜地入门 EEG 冥想，选 Muse 2。如果你想要睡眠追踪、fNIRS 和舒适到可以过夜佩戴的软头带，选 $474.99 的 Muse S Athena，因为 Muse 2 这三样都没有。"
+        }
+      ]
     },
     "neurosity-crown": {
       "verdict": "最适合开发者和生物黑客的EEG头戴设备——八通道、开放SDK、原始数据、无需订阅。但售价$1,499、续航约三小时，用来随便冥想并不合适。",
@@ -429,12 +474,96 @@
       ]
     },
     "emotiv-insight-2": {
-      "verdict": "研究-消费级混合产品——五通道和真正的学术工具链，原始数据需订阅。",
-      "productType": "研究-消费级混合EEG头戴设备（5通道）"
+      "verdict": "研究与消费的混合体——五通道和真正的学术工具链，原始数据需要订阅。",
+      "summary": "Emotiv Insight 2 是 Emotiv 研究产品线的消费分支，介于以开发者为中心的 Neurosity Crown 和以冥想为导向的 Muse 之间。五个 EEG 电极、成熟的学术工具链（EmotivPRO 被用于数百项已发表研究），以及专注、压力、投入和兴奋的实时表现分数——这些是 Emotiv 自己的公式，并非对这些状态经过验证的测量。代价在于数据模式：原始 EEG 访问需要 Pro 档订阅。",
+      "description": "ONDA 评测 Emotiv Insight 2：拥有成熟学术工具链的五通道消费-研究型 EEG 头戴设备。按信号、内容和性价比评分。",
+      "bestFor": "最适合想以消费级价格获得学术级 EEG 工具链的研究人员和认真的自我实验者。",
+      "testNote": "基于证据的评估——依据 Emotiv 产品文档、EmotivPRO 的学术发表记录以及 2026 年独立评测进行评分。ONDA 未进行实际上手测试。",
+      "productType": "研究-消费混合型 EEG 头戴设备（5 通道）",
+      "pros": [
+        "五个 EEG 通道——皮层覆盖优于 Muse，比 Crown 更简单",
+        "EmotivPRO 工具链在已发表研究中被广泛使用",
+        "六项实时表现分数（Emotiv 自己的公式）",
+        "成熟的 SDK，支持多种语言绑定"
+      ],
+      "cons": [
+        "原始数据访问需要 Pro 订阅——感觉像付了两次钱",
+        "与 Muse 相比，引导内容库较少",
+        "用户体验带有研究血统——不如消费类替代品精致",
+        "没有睡眠追踪"
+      ],
+      "scoreNotes": {
+        "signal-quality": "五个半干式 EEG 电极——介于 Muse（4 个干电极）和 Crown（8 个干电极）之间。坐姿课程中信号稳定。",
+        "training-content": "引导内容不多；Emotiv 把这款设备定位为测量仪器，而不是内容平台。",
+        "insights": "实时表现分数——专注、压力、投入、兴奋、兴趣、放松——来自 Emotiv 自己的算法，并非经过验证的测量。实时分数比 Muse 多，课程总结较简略。",
+        "comfort": "轻便的五臂头冠设计。适合 30–60 分钟的课程；不是为过夜佩戴设计的。",
+        "app-ux": "Emotiv App 和 EmotivPRO 网页仪表板。用户体验实用，但带有研究血统——比 Muse 更细致，不如 Athena 精致。",
+        "open-data": "开放 SDK 和 EmotivPRO 原始 EEG 导出——被用于数百项已发表的学术研究。解锁原始数据访问需要 Pro 档订阅。",
+        "value": "$499 硬件加获取原始数据所需的 Pro 订阅（约 $99/年）。比 Crown 便宜，比 Muse 2 贵。"
+      },
+      "content": "## 优势所在\n\nEmotiv Insight 2 占据了 EEG 市场中介于消费和研究之间的细分领域。五个半干电极比 Muse 多、比 Crown 少，学术工具链（EmotivPRO）在该品类中被引用最多、遥遥领先，应用显示六项实时表现分数——专注、压力、投入、兴奋、兴趣、放松——这些是 Emotiv 自己的公式，并非对压力或注意力经过验证的测量。对于想做真正 EEG 分析、又不想购买医疗级设备的爱好者，这是合适的选择。\n\n## Emotiv Insight 2 有哪些缺点？\n\n数据模式。原始 EEG 访问需要在 $499 硬件之外再订阅 EmotivPRO，与包含 SDK 的 Neurosity Crown 模式相比，感觉像付了两次钱。引导内容不多——Emotiv 把这款设备当作仪器，而不是内容平台。而且没有睡眠追踪。\n\n## 谁应该购买 Emotiv Insight 2？\n\n如果你想以消费级价格获得面向研究的工具链，并且能接受为原始数据订阅的取舍，请选择 Emotiv Insight 2。如果无订阅获取原始数据是决定性标准，选 Neurosity Crown。如果冥想内容是决定性标准，选 Muse S Athena 或 Muse 2。\n\n---\n\n## 延伸阅读\n\n这些头戴设备所反馈的神经科学——以及 EEG 信号能告诉你、又不能告诉你哪些关于心理状态的信息。\n\n- [乙酰胆碱：注意力的透镜](/articles/acetylcholine-lens-neuro-mechanics)——专注背后的神经化学\n- [认知架构：神经吞吐量](/articles/cognitive-architecture-neural-throughput)——关于大脑能处理多少信息的一个比喻\n- [认知架构：益智药组合](/articles/cognitive-architecture-nootropic-stacks)——益智药组合能做什么、不能做什么，以及为什么头戴设备的分数无法显示其效果\n",
+      "faq": [
+        {
+          "q": "Emotiv Insight 2 值得买吗？",
+          "a": "对于研究人员和认真的自我实验者，值得。Emotiv Insight 2 有五个 EEG 通道、被数百项已发表研究使用的 EmotivPRO 工具链，以及成熟的 SDK。原始数据访问需要 Pro 订阅，其引导内容也不及 Muse。"
+        },
+        {
+          "q": "Emotiv Insight 2 多少钱？",
+          "a": "Emotiv Insight 2 设备售价 $499，另需每年约 $99 的 Pro 订阅才能访问原始数据。没有 Pro，你仍能获得 Emotiv 的实时表现分数，如专注、压力和投入——这些是公司自己的公式，并非经过验证的测量。"
+        },
+        {
+          "q": "Emotiv Insight 2 有哪些缺点？",
+          "a": "Emotiv Insight 2 的原始数据访问需要 Pro 订阅，感觉像付了两次钱。与 Muse 相比，它的引导内容库较少，用户体验不如消费类替代品精致，也没有睡眠追踪。"
+        },
+        {
+          "q": "Emotiv Insight 2 与 Muse：哪个更好？",
+          "a": "Emotiv Insight 2 更适合 EEG 研究和原始数据工作；Muse 更适合引导冥想。Emotiv 的五通道比 Muse 提供更好的皮层覆盖，并有学术工具链，而 Muse 的引导内容库更大。"
+        }
+      ]
     },
     "sens-ai": {
-      "verdict": "最具雄心的多模态头戴设备——EEG加光生物调节加HRV，高端价格需要明确的用途才值得。",
-      "productType": "多模态头戴设备（EEG + 光生物调节 + HRV）"
+      "verdict": "最具野心的多模态头戴设备——EEG 加光生物调节加 HRV，高端价格要求你确实有这样的使用需求。",
+      "summary": "Sens.ai 是本榜单中唯一将被动测量（五通道 EEG 和心率变异性（HRV））与主动干预（经颅光生物调节——近红外光）结合在一起的头戴设备。其课程把三种模态叠加成 EEG 神经反馈 + 光照 + HRV 的组合课程，围绕专注、平静、情绪和清晰度设计。高端定位，在 $1,250 硬件之外还需会员。只有当你想要的正是多模态用途时，它才是合适的选择。",
+      "description": "ONDA 评测 Sens.ai：将五通道 EEG 与经颅光生物调节和 HRV 训练融合的高端多模态头戴设备。按信号、内容和性价比评分。",
+      "bestFor": "最适合专门寻求在一台设备中集成 EEG + 光生物调节 + HRV、并愿意支付高价的用户。",
+      "testNote": "基于证据的评估——依据 Sens.ai 产品文档、已发表的光生物调节文献以及 2026 年独立评测进行评分。ONDA 未进行实际上手测试。",
+      "productType": "多模态头戴设备（EEG + 光生物调节 + HRV）",
+      "pros": [
+        "唯一在单一设备和课程中结合 EEG + PBM + HRV 的头戴设备",
+        "强大的跨模态课程分析——三项生物标志物在同一时间轴上",
+        "高端硬件做工和带进度追踪的内容",
+        "在 EEG 神经反馈之外增加第二种干预（光生物调节）——对大脑作用的证据仍在形成中"
+      ],
+      "cons": [
+        "价格高昂——$1,250 外加持续会员费",
+        "封闭式数据模式——不适合开发者或研究人员",
+        "头戴设备较重——不适合过夜佩戴或运动中使用",
+        "较新的市场进入者——生态不如 Muse 或 Emotiv 成熟"
+      ],
+      "scoreNotes": {
+        "signal-quality": "五通道干式 EEG，加上耳夹传感器提供的 HRV，以及前额叶皮层上方的 PBM 近红外 LED。三种模态的信号质量均为消费级。",
+        "training-content": "多模态课程，在单次 25 分钟课程中叠加 EEG 神经反馈、光生物调节和 HRV 训练。没有其他消费设备提供这种组合。",
+        "insights": "每次课程后对全部三种信号进行分析，并提供汇总趋势数据。本榜单中最强的跨模态解读。",
+        "comfort": "带有多组传感器阵列的厚重头戴设备——比 Muse 或 Crown 更重。只适合坐姿课程；不适合运动或睡眠。",
+        "app-ux": "精致的应用，带进度追踪。生态不如 Muse 成熟——设备上市较晚。",
+        "open-data": "原始数据导出有限；课程在设计上是闭环的。不是开发者平台。",
+        "value": "$1,250 硬件加会员（60 天试用后 $300/年或 $75/月）。计入会员费后，属于该品类中最贵的产品之一。"
+      },
+      "content": "## 优势所在\n\nSens.ai 是本榜单中唯一以多模态设备形式推出的头戴设备。头皮上的五通道干式 EEG、耳夹式 HRV 传感器，以及前额叶皮层上方用于经颅光生物调节的近红外 LED 阵列——三项独立的生物标志物和一项独立的干预，融合进单个 25 分钟课程中。跨模态课程分析确实利用了全部三种信号；消费领域没有其他产品这样做。\n\n## Sens.ai 有哪些缺点？\n\n首先是价格。$1,250 外加持续会员费（60 天试用后每年 $300），Sens.ai 属于该品类中最贵的产品之一——几年下来比 Neurosity Crown 更贵，却没有 Crown 的开发者访问权限。数据模式在设计上是封闭的；原始数据导出有限。头戴设备本身也很厚重，只在坐姿课程中舒适，不适合运动或睡眠。对于只想要其中一两种模态、而非全部三种的用户，单一用途设备性价比更高。\n\n## 谁应该购买 Sens.ai？\n\n如果你想要的正是多模态组合——在单一课程中实现 EEG + 光生物调节 + HRV——并且能接受价格，请选择 Sens.ai。如果你只想要内容最丰富的 EEG，选 Muse S Athena。如果你想要开放数据的 EEG，选 Neurosity Crown。\n\n---\n\n## 延伸阅读\n\n这些头戴设备所反馈的神经科学——以及 EEG 信号能告诉你、又不能告诉你哪些关于心理状态的信息。\n\n- [数字痴呆与注意力控制](/articles/digital-dementia-attentional-control)——用反馈驱动的练习重建注意力\n- [神经可塑性与心流超频](/articles/neuroplasticity-flow-overclocking)——心流状态是什么以及如何形成\n- [ACC 校准：认知控制方案](/articles/acc-calibration-protocol-cognitive-control)——认知控制背后的前额叶控制回路\n",
+      "faq": [
+        {
+          "q": "Sens.ai 值得买吗？",
+          "a": "只有当你专门想要在一台头戴设备中集成 EEG、光生物调节和 HRV 时，Sens.ai 才值得买。它是唯一在单一课程中结合三者的设备，跨模态课程分析强大、做工高端，但加上持续会员费，它也属于该品类中最贵的头戴设备之一，生态也不如 Muse 或 Emotiv 成熟。"
+        },
+        {
+          "q": "Sens.ai 多少钱？",
+          "a": "Sens.ai 设备售价 $1,250，含 60 天试用会员；之后会员费为每年 $300 或每月 $75。计入会员费后，它属于该品类中最贵的头戴设备之一。这个价格买到的是带进度追踪内容的 EEG、光生物调节和 HRV 组合系统，而不是基础冥想头带。"
+        },
+        {
+          "q": "Sens.ai 有哪些缺点？",
+          "a": "主要缺点是价格——$1,250 外加每年 $300 的会员费——以及不适合开发者或研究人员的封闭数据模式。头戴设备较重，不适合过夜佩戴或运动中使用；作为较新的产品，其生态不如 Muse 或 Emotiv 成熟。"
+        }
+      ]
     },
     "myndlift": {
       "verdict": "在临床医生监督下居家进行的神经反馈——需通过持证服务提供者，采用既定方案并追踪症状。",
@@ -541,8 +670,48 @@
       ]
     },
     "neurosky-mindwave-mobile-2": {
-      "verdict": "最便宜的正规消费级EEG头戴设备——单通道、功能基础，但为开发者和学习者提供开放SDK。",
-      "productType": "平价教育用EEG头戴设备（单通道）"
+      "verdict": "最便宜的正规消费级 EEG 头戴设备——单通道、功能基础，但为开发者和学习者提供开放 SDK。",
+      "summary": "NeuroSky MindWave Mobile 2 是入门级消费 EEG 产品——一个前额电极加一个参考耳夹，搭配开发者 SDK 和少量第三方应用。硬件已有十多年历史，也能感觉出来；它的价值在于价格（约 $110）以及 SDK，让学生、爱好者和开发者无需购买 $1,000 以上的设备就能学习 EEG 基础知识。",
+      "description": "ONDA 评测 NeuroSky MindWave Mobile 2：长期在售的单通道教育用 EEG 头戴设备，品类中价格最低。按信号、开放性和性价比评分。",
+      "bestFor": "最适合想以最便宜的正规方式学习 EEG 基础知识的学生、爱好者和开发者。",
+      "testNote": "基于证据的评估——依据 NeuroSky 产品文档、ThinkGear SDK 参考资料以及 2026 年教育级产品的独立评测进行评分。ONDA 未进行实际上手测试。",
+      "productType": "平价教育用 EEG 头戴设备（单通道）",
+      "pros": [
+        "遥遥领先的最便宜正规消费级 EEG 头戴设备",
+        "开放 SDK（ThinkGear），可通过蓝牙访问原始数据",
+        "成熟平台——十多年使用积累的代码、教程和示例",
+        "无需订阅"
+      ],
+      "cons": [
+        "单通道 EEG——信息量单薄",
+        "没有官方内容库——依赖第三方应用",
+        "硬件设计和 SDK 停留在 2010 年代中期的水平",
+        "官方应用基本已被 NeuroSky 放弃"
+      ],
+      "scoreNotes": {
+        "signal-quality": "一个前额电极加一个参考耳夹。采样和信号处理停留在 2010 年代中期硬件水平——足以计算 NeuroSky 自己的专注和冥想指数（并非经过验证的测量），远远落后于现代多通道设备。",
+        "training-content": "没有官方内容库；体验取决于第三方应用。这个平台就是设备和 SDK，而不是内容服务。",
+        "insights": "基础的专注/冥想 eSense 指标。现代分析功能有限——生态大多是遗留产品。",
+        "comfort": "轻便头戴设备，带硬质支臂；短时间使用尚可，外形过时。",
+        "app-ux": "依赖第三方应用——官方应用基本已被放弃。不同开发者的用户体验差异巨大。",
+        "open-data": "开放 SDK（ThinkGear），蓝牙原始数据访问，无需订阅。就其本身而言已很成熟，但早于现代网络/云 SDK。",
+        "value": "约 $110 硬件——2026 年市场上最便宜的正规 EEG 头戴设备。"
+      },
+      "content": "## 优势所在\n\nMindWave Mobile 2 是进入消费级 EEG 最便宜的正规途径。经过十多年的社区使用，ThinkGear SDK 文档完善，蓝牙原始数据流是开放的，约 $110 的设备是本榜单中唯一一款学生或爱好者用小预算就能买到的产品。作为学习工具，它依然有用。\n\n## NeuroSky MindWave Mobile 2 有哪些缺点？\n\n除此之外的所有方面。与 Muse 的四通道、Emotiv Insight 的五通道或 Neurosity Crown 的八通道相比，单通道 EEG 信息量单薄。官方内容库实际上已被放弃；第三方应用质量参差不齐。整个平台都显出老态——这可不是一款 2024 年的设备。\n\n## 谁应该购买 NeuroSky MindWave Mobile 2？\n\n如果你是学生、开发者或爱好者，想以最便宜的正规方式学习 EEG 基础知识并在 SDK 之上构建一些东西，请选择 NeuroSky MindWave Mobile 2。想要现代消费体验，选 Muse 2 或 FocusCalm。想做严肃的开发工作，选 Neurosity Crown 或 Emotiv Insight 2。\n\n---\n\n## 延伸阅读\n\n这些头戴设备所反馈的神经科学——以及 EEG 信号能告诉你、又不能告诉你哪些关于心理状态的信息。\n\n- [乙酰胆碱：注意力的透镜](/articles/acetylcholine-lens-neuro-mechanics)——专注背后的神经化学\n- [认知架构：神经吞吐量](/articles/cognitive-architecture-neural-throughput)——关于大脑能处理多少信息的一个比喻\n- [认知架构：益智药组合](/articles/cognitive-architecture-nootropic-stacks)——益智药组合能做什么、不能做什么，以及为什么头戴设备的分数无法显示其效果\n",
+      "faq": [
+        {
+          "q": "NeuroSky MindWave Mobile 2 值得买吗？",
+          "a": "对于想以最便宜的正规方式学习 EEG 基础知识的学生、爱好者和开发者来说，它值得买。它提供开放的 ThinkGear SDK、蓝牙原始数据和十年积累的教程。不过它是单通道的，官方应用也基本已被放弃。"
+        },
+        {
+          "q": "NeuroSky MindWave Mobile 2 多少钱？",
+          "a": "NeuroSky MindWave Mobile 2 标价 $110，一次性购买，无需订阅。这使它成为遥遥领先的最便宜正规消费级 EEG 头戴设备，开放的 ThinkGear SDK 也不额外收费。"
+        },
+        {
+          "q": "NeuroSky MindWave Mobile 2 有哪些缺点？",
+          "a": "它的单通道 EEG 信息量单薄，没有官方内容库，硬件和 SDK 停留在 2010 年代中期的水平，NeuroSky 也基本放弃了官方应用，让你只能依赖第三方软件。它仍然是学习工具，而不是精致的消费产品。"
+        }
+      ]
     },
     "platinumled-biomax-600": {
       "verdict": "强劲的中等尺寸面板，波长光谱最丰富，EMF 控制干净。Joovv 级做工，低一档的价格。",
@@ -1752,12 +1921,90 @@
       "productType": "免费极简呼吸练习 App（箱式、4-7-8、自定义）"
     },
     "breathe-to-relax": {
-      "verdict": "由美军远程医疗部门针对 PTSD 和压力开发的免费呼吸 App；免费教授有充分文献记载的腹式呼吸，但针对 App 本身的研究只有小型试点研究。",
-      "productType": "美国国防部开发的免费腹式呼吸 App，用于缓解压力和 PTSD"
+      "verdict": "由美国军方远程医疗机构为 PTSD 和压力开发的免费呼吸练习应用；它零成本教授有充分文献记载的腹式呼吸，但应用本身只有小型试点研究。",
+      "summary": "Breathe2Relax 是美国国防部/国家远程医疗与技术中心推出的免费腹式呼吸应用，最初为退伍军人 PTSD 和战斗压力管理而开发。关于应用本身的已发表研究仅限于小型试点研究；它所教授的腹式呼吸技巧有充分的文献记载。内容库狭窄（专注于腹式/节律呼吸），用户体验过时，但完全免费。",
+      "description": "Breathe2Relax 评测：美国军方远程医疗机构为 PTSD 和压力开发的免费呼吸练习应用。应用本身只有小型试点研究；体验过时，$0。",
+      "bestFor": "最适合想零成本练习有证据支持的腹式呼吸的用户——尤其是在临床/PTSD/压力管理场景中。",
+      "testNote": "基于证据的评估——依据 Breathe2Relax 在 App Store/Play Store 的页面、美国国家远程医疗与技术中心的文档以及已发表的该应用试点研究进行评分。ONDA 未进行实际上手测试。",
+      "productType": "美国国防部开发的免费腹式呼吸应用，用于压力和 PTSD",
+      "pros": [
+        "教授腹式呼吸这一有充分文献记载的技巧——应用本身只有小型试点研究",
+        "完全免费，无订阅、无广告",
+        "由美国国防部/国家远程医疗中心开发"
+      ],
+      "cons": [
+        "界面过时，停留在最初政府开发时期",
+        "技巧范围狭窄——仅限腹式/节律呼吸",
+        "没有 HRV 或现代生物反馈",
+        "没有内容库，也不再持续开发"
+      ],
+      "scoreNotes": {
+        "session-library": "内容库狭窄——专注于压力/PTSD 场景下的腹式和节律呼吸。不是内容平台。",
+        "technique-coverage": "仅限腹式和节律呼吸。没有 Wim Hof、全息呼吸或更广泛的技巧覆盖。",
+        "evidence-grounding": "没有针对应用本身的随机试验。关于该应用的已发表研究仅限于小型试点研究：一项在 31 名军人中进行的无对照试点，Breathe2Relax 与创伤敏感瑜伽一起使用（Skopp et al. 2024, Military Psychology），以及一项成本分析（Luxton et al. 2014）。按没有自身试验的产品给出基础分；它所教授的腹式呼吸有充分的文献记载。",
+        "app-experience": "界面过时，停留在最初政府开发时期。功能可用，但缺乏 2026 年水准的打磨。",
+        "biofeedback": "没有心率变异性（HRV）。基础的课程追踪。",
+        "value": "完全免费，没有高级版。"
+      },
+      "content": "## 优势所在\n\nBreathe2Relax 是来自公共机构的免费呼吸练习应用——由美国国防部国家远程医疗与技术中心为 PTSD 和战斗压力护理而开发。关于应用本身的已发表研究仅限于小型试点研究；它所教授的腹式呼吸有充分的文献记载。\n\n## Breathe2Relax 有哪些缺点？\n\n主要缺点在于用户体验和范围。Breathe2Relax 是为特定临床目的（针对压力和 PTSD 的腹式呼吸）而开发的；界面过时，内容库狭窄，应用也不再积极迭代。它是一款有临床理念的免费工具，而不是 2026 年的内容平台。\n\n## 谁应该使用 Breathe2Relax？\n\n如果你想要有证据支持的免费腹式呼吸——尤其是在临床、PTSD 或压力管理场景中，请选择 Breathe2Relax。想要精选内容库，选 Breathwrk。想要现代化的免费界面，选 iBreathe。想要 Android 上的自定义功能，选 Prana Breath。\n\n---\n\n## 延伸阅读\n\n- [电医学与神经调控](/articles/electric-medicine-neuromodulation)——腹式呼吸与迷走神经张力\n- [锁相声学睡眠](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "Breathe2Relax 真的有效吗？",
+          "a": "它所教授的腹式呼吸有充分的文献记载，但关于应用本身的研究仅限于小型试点研究，例如一项在 31 名军人中将其与瑜伽结合的无对照试点；没有针对该应用的随机试验。它由美国国家远程医疗与技术中心为退伍军人 PTSD 和战斗压力管理而开发。它在证据基础上得分 7.0/10，总分 5.9/10。"
+        },
+        {
+          "q": "Breathe2Relax 多少钱？",
+          "a": "Breathe2Relax 完全免费，没有高级版、订阅或广告。在 ONDA 的评估中它的性价比得分为 9.5/10，是最好的价格。代价是界面过时，范围狭窄，仅限腹式和节律呼吸。"
+        },
+        {
+          "q": "Breathe2Relax 最适合谁？",
+          "a": "Breathe2Relax 最适合想零成本练习有证据支持的腹式呼吸的用户，尤其是在临床、PTSD 或压力管理场景中。它的设计本身就很专一，只涵盖腹式和节律呼吸，没有 HRV 生物反馈、没有内容库，也不再持续开发。"
+        }
+      ]
     },
     "polar-h10": {
-      "verdict": "一款 ECG 胸带，在健康年轻成人的静息状态下与实验室心电图几乎完全一致——一件参考仪器，而非全天佩戴的可穿戴设备。",
-      "productType": "ECG 胸带"
+      "verdict": "一款胸带式 ECG，在健康年轻成人静息状态下与实验室 ECG 几乎完全一致——是参考仪器，而不是全天候可穿戴设备。",
+      "summary": "Polar H10 是一款常在验证其他可穿戴设备时被用作参考的胸带。在健康年轻成人静息状态下，其电学 ECG 传感器测得的心率变异性（HRV）与实验室 ECG 几乎完全一致，并可将原始数据传输到任何应用。代价是设计使然——它是一款刻意的测量工具，而不是全天候佩戴的设备。",
+      "description": "ONDA 评测 Polar H10：在健康年轻成人静息状态下 HRV 与实验室 ECG 高度一致的 ECG 胸带。按准确性、数据访问、佩戴性和性价比评分。",
+      "bestFor": "最适合静息状态下接近实验室水平的 HRV——测量仪器，而非全天候可穿戴设备。",
+      "testNote": "基于证据的评估——依据厂商规格、2026 年独立评测和已发表的验证文献进行评分。ONDA 未进行实际上手测试。",
+      "productType": "ECG 胸带",
+      "pros": [
+        "ECG 电极，而非光学——在健康年轻成人静息状态下接近实验室 ECG",
+        "完全开放：通过蓝牙和 ANT+ 输出原始 RR 数据，适用任何应用",
+        "这里最便宜的设备，无需订阅",
+        "可靠耐用多年"
+      ],
+      "cons": [
+        "胸带——不能全天候佩戴",
+        "没有睡眠追踪或全天被动数据",
+        "需要第三方应用进行真正的 HRV 分析",
+        "必须紧贴皮肤才能读数清晰"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "从胸部读取电学 ECG；在静息、骑行至力竭以及站立时都接近实验室 ECG——对象为健康年轻成人（两项独立研究：Schaffarczyk 2022、Blalock 2026）。",
+        "sensor": "真正的 ECG 电极对，而不是从血流进行光学推算——在健康年轻成人静息状态下接近实验室 ECG。",
+        "sleep-accuracy": "不是睡眠设备——胸带不做睡眠分期，也不会过夜佩戴。",
+        "data-access": "通过蓝牙和 ANT+ 广播原始逐搏（RR）间期；几乎可与任何 HRV 应用配对。",
+        "wearability": "测量或训练时佩戴的胸带——不是 24/7 被动追踪。",
+        "app-ux": "Polar Flow 够用，但 H10 与专门的第三方 HRV 应用配对时表现最佳。",
+        "value": "约 105 USD，无需订阅，可靠耐用多年——本次对比中最便宜的设备。"
+      },
+      "content": "## 优势所在\n\nPolar H10 其实不算可穿戴设备——它是测量仪器，在本次对比中我们把它作为静息状态下的参考。它的电学 ECG 传感器直接读取心脏信号，而不是从血流推算，经同行评审的验证发现，在健康年轻成人中，静息[心率变异性（HRV）](/glossary/heart-rate-variability)与临床 ECG 几乎完全一致。它还通过蓝牙和 ANT+ 广播原始逐搏（RR）间期，因此几乎可以与任何 HRV 应用配对。约 105 USD、无需订阅，这里没有其他产品拥有这种静息状态下的 ECG 验证，或如此开放。\n\n## Polar H10 有哪些缺点？\n\n这种取舍是刻意的。胸带不是全天候佩戴的东西——没有全天被动追踪，也完全不做睡眠分期，这让它在围绕 24/7 生活方式使用而设的两项标准上大幅失分。用于早晨直立测量或训练课程，它非常理想；作为持续的恢复监测器，它是错误的工具。\n\n**2026 年说明。** 没有任何产品取代它。整个 2026 年，H10 仍常在可穿戴设备验证研究中与临床 ECG 一起用作参考胸带。如果你买了任何光学可穿戴设备，想知道它的 HRV 数字有多可信，H10 仍是在静息状态下将其与基于 ECG 的读数进行核对的最便宜方式。\n\n## 谁应该购买 Polar H10？\n\n如果你想要静息状态下接近实验室 ECG 的 HRV 读数——用于结构化早晨方案、或验证其他设备的干净、不依赖特定应用的信号——并且愿意为此戴上胸带，请选择 Polar H10。如果你想在睡眠时被动收集 HRV，请把它与这里的某款戒指或手环搭配，或者干脆选择它们。\n\n---\n\n## 延伸阅读\n\n为什么 HRV 是值得追踪的信号背后的科学——以及身体如何产生它。\n\n- [HRV 能预测反应时间和专注力吗？](/articles/nervous-system-ping-latency)——静息 HRV 关于注意力和自控力能说明什么、不能说明什么\n- [共振频率系统相干](/articles/resonant-frequency-system-coherence)——为什么每分钟 5.5–6 次呼吸是 HRV 训练的最佳点\n- [内感受精度与传感器校准](/articles/interoceptive-precision-sensor-calibration)——为什么你自己的感知是 HRV 测量所依据的上游基线\n",
+      "faq": [
+        {
+          "q": "Polar H10 测 HRV 有多准确？",
+          "a": "在健康年轻成人静息状态下，它与实验室 ECG 几乎完全一致：这是一款直接读取心脏电信号的 ECG 胸带。运动期间或老年人、临床人群中没有可比数据。"
+        },
+        {
+          "q": "Polar H10 能追踪夜间 HRV 或睡眠吗？",
+          "a": "基本不能。它是用于测量和训练的胸带，不做睡眠分期，也不是为 24/7 佩戴设计的。如需被动夜间数据，请搭配戒指或手环。"
+        },
+        {
+          "q": "Polar H10 多少钱，需要订阅吗？",
+          "a": "一次性约 $105（Polar 美国官网 $104.95），无需订阅。它通过蓝牙和 ANT+ 向几乎任何 HRV 应用传输原始逐搏（RR）间期——最便宜、最开放的 ECG 胸带选择。"
+        }
+      ]
     },
     "calm": {
       "verdict": "最精致的睡眠与放松应用——内容库庞大且制作精美，但免费版过于单薄。",
@@ -1772,12 +2019,92 @@
       "productType": "智能戒指"
     },
     "ringconn-gen-2": {
-      "verdict": "高性价比智能戒指——约 12 天续航、无需订阅、追踪扎实，长期成本约为 Oura 的一半。",
-      "productType": "智能戒指"
+      "verdict": "高性价比智能戒指——10–12 天续航、无需订阅、追踪扎实，长期成本约为 Oura 的一半。",
+      "summary": "RingConn Gen 2 是智能戒指领域的性价比之选——10–12 天续航、无需订阅，夜间追踪被评测者认为可用于观察趋势，长期成本约为一半。代价是软件更朴素、数据更封闭。",
+      "description": "ONDA 评测 RingConn Gen 2：高性价比智能戒指，10–12 天续航，无需订阅，HRV 扎实。按准确性、睡眠、数据访问和性价比评分。",
+      "bestFor": "最适合想在智能戒指中获得最长续航和最高性价比、且无需订阅的用户。",
+      "testNote": "基于证据的评估——依据厂商规格、2026 年独立评测和已发表的验证文献进行评分。ONDA 未进行实际上手测试。",
+      "productType": "智能戒指",
+      "pros": [
+        "10–12 天续航（视尺码而定）——本次对比中最长",
+        "无需订阅，长期使用比 Oura 便宜得多",
+        "轻质钛金属机身，完全防水",
+        "增加了睡眠呼吸暂停筛查"
+      ],
+      "cons": [
+        "应用实用但不够精致",
+        "数据封闭——没有开放 API，导出有限",
+        "没有任何单项指标是同类领先",
+        "生态不如 Oura 或 Samsung 精细"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "夜间光学 HRV，评测者认为可用于观察趋势；只有一篇预印本，未找到经同行评审、对照 ECG 的独立验证（截至 2026 年 10 月）。ONDA 规则：没有自身独立验证的设备，如果早期型号经过验证，最高 7.5 分，否则最高 7.0 分。",
+        "sensor": "轻质钛金属戒指中的光学 PPG。",
+        "sleep-accuracy": "睡眠追踪称职，并增加了睡眠呼吸暂停筛查。",
+        "data-access": "封闭的应用——没有开放 API，导出有限；数据留在 RingConn。",
+        "wearability": "10–12 天续航（视尺码而定）——本次对比中最佳——2mm 钛金属、完全防水的戒指。",
+        "app-ux": "应用实用但不够精致。",
+        "value": "长期成本约为 Oura 的一半，无需订阅——这里的性价比领先者。"
+      },
+      "content": "## 优势所在\n\nRingConn Gen 2 是智能戒指领域的性价比之选。长期来看，它的花费约为 Oura Ring 4 的一半，无需订阅，续航是整个对比中最突出的数字——每次充电约十二天，充电盒还能把这一时间延长到数月。它轻巧、钛金属、真正防水，甚至增加了睡眠呼吸暂停筛查。在[心率变异性（HRV）](/glossary/heart-rate-variability)和睡眠方面，评测者认为它可用于观察趋势，不过只有一篇预印本，未找到经同行评审的独立验证（截至 2026 年 10 月）。\n\n## RingConn Gen 2 有哪些缺点？\n\n预算的局限体现在软件和数据上。应用实用但不够精致，没有开放 API，你的数据基本留在 RingConn 应用内。没有任何单项指标是同类领先——这是一款样样都不错的设备，在这个领域里只在续航和价格上做到最好。\n\n**2026 年说明。** Gen 2 仍是性价比标杆，但周围的市场已经向前发展：[RingConn Gen 3](/reviews/ringconn-gen-3) 和 Oura 的 Ring 5 增加了功能，不过两者都没有独立的准确性数据表明它们胜过 Gen 2。如果你想要最新的硬件，请看新一代，而不是这一款。\n\n## 谁应该购买 RingConn Gen 2？\n\n如果你想以明显更少的钱、且无需定期付费，获得高端戒指的大部分功能——夜间 HRV、睡眠、压力——并且你更在意续航而不是精致的软件或开放数据，请选择 RingConn Gen 2。如果你想要最深入的应用，以及经过独立（尽管规模较小）ECG 核查的戒指，Oura Ring 4 仍然领先。\n\n---\n\n## 延伸阅读\n\n为什么 HRV 是值得追踪的信号背后的科学——以及身体如何产生它。\n\n- [抗熵神经架构](/articles/anti-entropy-neural-architecture)——HRV 作为自主神经系统的日常维护信号\n- [HRV 能预测反应时间和专注力吗？](/articles/nervous-system-ping-latency)——静息 HRV 关于注意力和自控力能说明什么、不能说明什么\n- [HRV 作为容错缓冲](/articles/fault-tolerant-human-hrv-buffer)——为什么宽广的 HRV 范围才是你真正训练的目标\n",
+      "faq": [
+        {
+          "q": "RingConn Gen 2 需要订阅吗？",
+          "a": "不需要——一次性 $299，无需订阅，长期成本约为 Oura 的一半。所有功能在购买时即全部解锁。"
+        },
+        {
+          "q": "RingConn Gen 2 的电池能用多久？",
+          "a": "视尺码而定，每次充电约 10–12 天——其充电盒还能把这一时间延长到数月。"
+        },
+        {
+          "q": "RingConn Gen 2 的 HRV 准确吗？",
+          "a": "评测者认为它可用于观察趋势，但只有一篇预印本：未找到经同行评审、对照 ECG 的独立 HRV 验证（截至 2026 年 10 月）。它还增加了睡眠呼吸暂停筛查。选择它最好是为了续航和性价比，而不是最精准的单项指标。"
+        }
+      ]
     },
     "apple-watch-series-11": {
-      "verdict": "出色的全能智能手表，但只是一个随意的 HRV 工具——它是抽测，而非持续追踪。",
-      "productType": "智能手表"
+      "verdict": "一款出色的全能智能手表，但只是一个随意的 HRV 工具——它是抽查，而不是追踪。",
+      "summary": "Apple Watch Series 11 是本次对比中功能最强的设备，也是唯一无需订阅的设备。但作为专门的心率变异性（HRV）追踪器，它是三者中最弱的：它通过不规律的后台抽查记录 HRV，而不是结构化的夜间方案。",
+      "description": "ONDA 将 Apple Watch Series 11 作为 HRV 追踪器评测：出色的全能智能手表，但只是随意的恢复工具。按准确性、数据和性价比评分。",
+      "bestFor": "最适合想要一台包办一切的设备——HRV 作为次要指标。",
+      "testNote": "基于证据的评估——依据厂商规格、2026 年独立评测和已发表的验证文献进行评分。ONDA 未进行实际上手测试。",
+      "productType": "智能手表",
+      "pros": [
+        "这里功能最强的硬件——光学传感器加真正的 ECG",
+        "无需订阅；你完全拥有设备",
+        "通过 HealthKit 开放数据，第三方生态深厚",
+        "真正的多用途设备，而不是单一任务追踪器"
+      ],
+      "cons": [
+        "HRV 是抽查，而不是整夜连续追踪",
+        "Apple 并不把 HRV 当作主要指标",
+        "续航约一天，难以坚持整夜佩戴",
+        "睡眠追踪落后于专用设备"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "HRV 通过不规律的后台抽查采集，而不是连续的夜间方案——记录稀疏且不均匀。",
+        "sensor": "强大的硬件：光学传感器搭配真正的单导联 ECG。",
+        "sleep-accuracy": "睡眠追踪够用，但落后于专用追踪器，而且续航让人不愿整夜佩戴。",
+        "data-access": "HealthKit 相对开放——第三方应用支持广泛，导出简便。",
+        "wearability": "续航约一天，意味着每天充电，这不利于坚持夜间测量。",
+        "app-ux": "软件整体出色，但 HRV 被埋没——Vitals 视图没有把它作为主要指标展示。",
+        "value": "一次性购买，无需订阅，物有所值的真正多用途设备。"
+      },
+      "content": "## 优势所在\n\n就硬件而言，Apple Watch Series 11 是本次对比中功能最强的设备：光学传感器搭配真正的单导联 ECG、明亮的显示屏，以及通过 HealthKit 实现的最深厚第三方生态。它也是这里唯一无需订阅的设备——购买价格即可完全拥有设备。对于想要一台可穿戴设备处理通知、锻炼、支付和健康的人，这里没有其他产品能与之竞争。\n\n## Apple Watch Series 11 有哪些缺点？\n\n对于专门的心率变异性（HRV）工作，它是三者中最弱的。手表通过不规律的后台抽查记录 HRV，而不是结构化的夜间方案，Apple 自己的 Vitals 视图甚至没有把 HRV 作为主要指标展示。再加上实际上需要每天充电的续航——难以坚持整夜佩戴——与 Oura 或 Whoop 相比，它产生的 HRV 记录稀疏且不均匀。\n\n**2026 年说明。** 整个 2026 年的独立对比并未改变这一情况：Series 11 的光学 HRV 读数单独来看是合理的，但限制在于稀疏的抽查式采样——而不是传感器质量。想要干净的夜间趋势，整夜连续测量的戒指仍然胜过它，无论手表硬件多么出色。\n\n**已被取代（2026 年 9 月）。** [Apple Watch Series 12](/reviews/apple-watch-series-12) 已取代这款型号成为 Apple 当前的手表，并直接解决了上述 HRV 弱点：其新的健康感测系统采样 HRV 的频率提高了约 24 倍，并将其分为 Recovery HRV 和 Overall HRV。如果 HRV 是你购买的理由，[Series 12 就是升级之选](/reviews/vs/apple-watch-series-12-vs-series-11)；Series 11 在打折期间仍有不错的性价比。\n\n## 谁应该购买 Apple Watch Series 11？\n\n如果你想要一款出色的全能智能手表，并把 HRV 当作有用的附加功能而不是重点，请选择 Apple Watch Series 11。如果夜间 HRV 和恢复是你购买的主要理由，专用追踪器会给你干净得多的信号。\n\n---\n\n## 延伸阅读\n\n为什么 HRV 是值得追踪的信号背后的科学——以及身体如何产生它。\n\n- [HRV 能预测反应时间和专注力吗？](/articles/nervous-system-ping-latency)——静息 HRV 关于注意力和自控力能说明什么、不能说明什么\n- [HRV 作为容错缓冲](/articles/fault-tolerant-human-hrv-buffer)——为什么宽广的 HRV 范围才是你真正训练的目标\n- [压力感受性反射与 0.1 Hz 偏移](/articles/baroreflex-01hz-shift)——你的 HRV 曲线中的共振频率呼吸特征\n",
+      "faq": [
+        {
+          "q": "Apple Watch Series 11 适合测 HRV 吗？",
+          "a": "就专门的 HRV 而言，它是旗舰选项中最弱的：它通过不规律的后台抽查记录 HRV，而不是连续的夜间方案，约一天的续航也让人不愿整夜佩戴。它是一款很棒的智能手表，但只是随意的 HRV 工具。"
+        },
+        {
+          "q": "Apple Watch Series 11 需要订阅吗？",
+          "a": "不需要。一次性购买 $399，健康和 HRV 功能无需订阅，并且包含真正的单导联 ECG。"
+        },
+        {
+          "q": "测 HRV 用 Apple Watch 还是戒指？",
+          "a": "对于连续的夜间 HRV，Oura 或 RingConn 这样的戒指更容易整夜佩戴，而 Apple Watch 是抽查而非连续追踪；在 13 人的夜间记录中（Dial 2025），Oura Ring 4 是最接近 ECG 的设备之一。如果你想要一款包办一切、HRV 作为附加功能的智能手表，选 Watch。"
+        }
+      ]
     },
     "fitbit-charge-6": {
       "verdict": "入门 HRV 追踪的实惠之选——便宜可靠的手环，但作为恢复工具较为基础，而且总在推销 Premium。",
@@ -1792,9 +2119,53 @@
       "productType": "消费级多功能 PEMF + 红外 + 晶体垫"
     },
     "omnilux-contour-face": {
-      "verdict": "柔性硅胶，采用标准的红光 + 近红外组合，获 FDA 许可用于皱纹（510(k) K191629）。Contour 本身没有已发表的试验；Omnilux 已发表的研究针对的是其他型号。",
+      "verdict": "柔性硅胶面罩，采用标准的红光 + 近红外组合，获 FDA 皱纹适应症许可（510(k) K191629）。Contour 本身没有已发表的试验；Omnilux 已发表的研究针对的是其他型号。",
+      "summary": "Omnilux Contour Face 是一款家用 LED 面罩，其品牌的大型诊所面板用于皮肤科诊所。它获得 FDA 全脸皱纹适应症许可（510(k) K191629，凭借与一款早期 LED 面罩的等效性获批，无临床数据）。柔性硅胶（Omnilux 称之为医用级），可无人看管佩戴，132 颗 LED（红光 633 nm + 近红外 830 nm），10 分钟疗程方案。Contour 本身尚无已发表的同行评审试验；Omnilux 已发表的研究针对的是其他型号。",
+      "description": "ONDA 评测 Omnilux Contour Face：柔性硅胶红光面罩，获 FDA 皱纹许可，但面罩本身无已发表试验。按辐照度、波长、证据和性价比评分。",
+      "bestFor": "最适合想要一款舒适的红光 + 近红外硅胶面罩、并采用简单 10 分钟流程的用户。",
+      "testNote": "基于证据的评估——依据 Omnilux 产品文档、FDA 510(k) K191629 及其 FDA 器械记录，以及对已发表试验的检索进行评分（Contour 本身没有试验；也核查了其他 Omnilux 型号的研究）。ONDA 未进行实际上手测试。",
       "productType": "柔性硅胶红光面罩",
-      "editorialAdjustment": "营销诚信——Contour产品页称Omnilux技术“经临床证实”，并提到“40多项同行评审临床研究”，但没有一项针对Contour本身；已发表的研究针对的是其他Omnilux型号（2026年10月核查）。此项在这里计分，而不计入证据评分。"
+      "pros": [
+        "获 FDA 全脸皱纹适应症许可（510(k) K191629）",
+        "红光 633 nm + 近红外 830 nm——皮肤研究中最常用的组合",
+        "柔性硅胶（据 Omnilux 称为医用级）——在我们的评估中是最舒适的面罩",
+        "标称辐照度适中、可信——没有夸大的峰值宣传"
+      ],
+      "cons": [
+        "Contour 本身没有已发表的试验；Omnilux 已发表的研究针对的是其他型号",
+        "高端定价（$395）",
+        "标准版 Contour 没有颈部延伸片（需另购）",
+        "只有一个 10 分钟方案——没有高级可编程性",
+        "没有蓝光/琥珀光波长版本（设计如此）"
+      ],
+      "scoreNotes": {
+        "irradiance": "Omnilux 标称 10 分钟疗程约 30 mW/cm²——一个适中、可信的数值，而非夸大的峰值宣传。这是品牌给出的数字；未找到独立测量。",
+        "wavelength-coverage": "红光 633 nm + 近红外 830 nm——皮肤研究中最常用的两种波长。没有蓝光/琥珀光分散注意力。",
+        "led-count-coverage": "132 颗 LED 均匀分布于额头、脸颊和下颌。标准版 Contour 没有颈部延伸片；颈部配件需另购。",
+        "clinical-evidence": "Contour FACE 本身没有已发表或已注册的试验（检索 Europe PMC、ClinicalTrials.gov 及 Omnilux 自己的文献列表，2026 年 10 月）。Omnilux 已发表的研究针对的是其他型号，因此不计入 Contour；我们核查过的那些——Revive 诊所面板（2005）、Omnilux 列为 Omnilux Men 的男士面罩（2023）以及 Omnilux Clear 痤疮面罩（2025）——也都与厂商有关联（员工作者、Omnilux 顾问委员会作者、GlobalMed 资助）。品牌自己的 Contour 研究未发表，结果为自我报告（公司声明）。FDA 510(k) K191629（非处方，全脸皱纹；凭借与一款早期 LED 面罩的等效性获批，无临床数据）按中性计分。",
+        "comfort-fit": "柔性硅胶（据 Omnilux 称为医用级）——最舒适的可穿戴面罩之一。自然贴合面部，绑带可调，可无人看管佩戴。",
+        "value": "$395——为硅胶舒适度（在我们的评估中最舒适）和标准红光 + 近红外组合支付的高端价格；价格背后没有针对该设备的试验。"
+      },
+      "editorialAdjustment": "营销诚信——Contour 产品页称 Omnilux 技术“经临床验证”，并引用“超过 40 项同行评审临床研究”，但其中没有一项针对 Contour 本身；已发表的研究针对的是其他 Omnilux 型号（2026 年 10 月核查）。此项在这里计分，而非计入证据项。",
+      "content": "## 优势所在\n\nOmnilux Contour Face 在舒适度上领先，并采用标准的红光 + 近红外组合。它获得 FDA 全脸皱纹适应症许可（510(k) K191629）；许可意味着 FDA 认定它与一款早期 LED 面罩实质等效——此处无临床数据——而不是 FDA 批准。Contour 本身尚无已发表的同行评审试验。Omnilux 已发表的研究针对的是其他型号；我们核查过的那些（Revive 诊所面板，2005；Omnilux 列为 Omnilux Men 的男士面罩，2023；Omnilux Clear 痤疮面罩，2025）也都与厂商有关联。品牌自己的 Contour 研究未发表，结果为自我报告。柔性硅胶（据 Omnilux 称为医用级）带来了该品类中最佳的佩戴舒适度。\n\n## Omnilux Contour Face 有哪些缺点？\n\n价格和适用范围。$395 的 Omnilux 属于高端档；价格只有一半的竞品（LightStim、Solawave）可满足较轻度的使用场景。只有一个 10 分钟方案——对想要多种模式/疗程的用户没有可编程性。标准版 Contour 不额外付费就没有颈部延伸片。\n\n## 谁应该购买 Omnilux Contour Face？\n\n如果你想要在我们评估中贴合度最舒适的硅胶红光 + 近红外面罩，请选择 Omnilux Contour Face。想要更大市场份额的消费品牌，选 CurrentBody Series 2。想要皮肤科品牌的替代品，选 Dr. Dennis Gross SpectraLite。想要价格更低的手持设备，选 LightStim。\n\n---\n\n## 延伸阅读\n\n- [电医学与神经调控](/articles/electric-medicine-neuromodulation)——光生物调节与细胞 ATP\n- [线粒体生物发生](/articles/mitochondrial-biogenesis-cellular-power-grid)——红光作为线粒体能量的辅助手段\n- [祖先同步——昼夜节律锚点](/articles/ancestral-sync-circadian-anchors)\n",
+      "faq": [
+        {
+          "q": "Omnilux Contour Face 值得买吗？",
+          "a": "如果你最看重舒适度，Omnilux Contour Face 值得买。它获得 FDA 皱纹适应症许可（510(k) K191629），但这款面罩本身没有已发表的试验；Omnilux 已发表的研究针对的是其他型号。它的标称辐照度适中、可信，在我们的评估中贴合度最舒适，采用柔性硅胶（据 Omnilux 称为医用级）。可编程性很少。"
+        },
+        {
+          "q": "Omnilux Contour Face 多少钱？",
+          "a": "Omnilux Contour Face 标价 $395。标准版 Contour 不含颈部延伸片，需另购，所以如果你除了面部还想覆盖颈部，需要额外预算。"
+        },
+        {
+          "q": "Omnilux Contour Face 有哪些缺点？",
+          "a": "它定价高达 $395，标准版没有颈部延伸片，只提供一个 10 分钟方案、没有高级可编程性，也没有蓝光或琥珀光波长版本（设计如此）。面罩本身没有已发表的试验。"
+        },
+        {
+          "q": "Omnilux Contour Face 与 Lumara Viso：哪个更好？",
+          "a": "两款面罩都没有自己的已发表试验。Omnilux 更便宜（$395）；Lumara Viso 提供更多 LED、三种波长并包含颈部延伸片，价格更高，为 $650。"
+        }
+      ]
     },
     "higherdose-red-light-face-mask": {
       "verdict": "红光面罩中消费品牌体验最佳——控制器简单、柔性硅胶、品牌标称 50 mW/cm²。临床证据较少；品牌包装胜过技术深度。",
@@ -2425,8 +2796,47 @@
       "productType": "高端三合一红外桑拿房（近、中、远红外）"
     },
     "finnleo-hallmark": {
-      "verdict": "芬兰制造的传统室内桑拿——高端芬兰做工、完整对流热、桑拿研究中依据最深厚的机制。",
-      "productType": "传统芬兰式室内桑拿（对流）"
+      "verdict": "芬兰制造的传统室内桑拿——高端芬兰工艺、完全对流加热、桑拿研究中机制最深厚的一类。",
+      "summary": "Finnleo Hallmark 是芬兰制造的传统室内桑拿，面向想要正宗体验的用户。Helo 设计的加热器（视桑拿房大小 3 kW–9 kW）、芬兰铁杉或北欧白云杉护墙板、完全对流加热（80–95°C）并支持 löyly 蒸汽。按芬兰队列研究所依据的热环境进行芬兰式设计。",
+      "description": "ONDA 评测 Finnleo Hallmark：芬兰制造的传统室内桑拿，采用高端铁杉或北欧白云杉结构。",
+      "bestFor": "最适合想要采用 Helo 设计加热的高端传统芬兰桑拿的用户。",
+      "testNote": "基于证据的评估——依据 Finnleo 产品文档、芬兰桑拿研究文献以及 2026 年独立评测进行评分。ONDA 未进行实际上手测试。",
+      "productType": "传统芬兰室内桑拿（对流）",
+      "pros": [
+        "高端芬兰制造背景",
+        "Helo 设计的加热器，支持 löyly 蒸汽",
+        "芬兰铁杉或北欧白云杉结构",
+        "已发表研究证据基础最深厚（芬兰观察性队列研究）"
+      ],
+      "cons": [
+        "不是红外——与红外桑拿房机制不同",
+        "高端定价——入门配置 $6K 以上",
+        "仅限室内，有通风要求",
+        "较大的加热器需要 220V 电源"
+      ],
+      "scoreNotes": {
+        "heat-source": "芬兰 Helo 设计的对流加热器——芬兰桑拿加热的黄金标准，支持 löyly 蒸汽。",
+        "build": "芬兰铁杉或北欧白云杉。数十年的芬兰制造背景。5 年结构保修。",
+        "emf": "传统对流——加热过程中没有电子元件。不存在 EMF 问题。",
+        "form-factor": "室内桑拿房安装。1–6 人配置。需要规划通风，较大的加热器需要 220V。",
+        "evidence": "关于心血管死亡率和痴呆风险的芬兰队列研究就是在这种桑拿上进行的。桑拿品类中证据基础最深厚，但属于观察性研究（仅男性；关联，而非因果）。",
+        "value": "视配置而定 $6,000–$12,000 以上。高端芬兰背景的定价。"
+      },
+      "content": "## 优势所在\n\nFinnleo Hallmark 是高端传统室内芬兰桑拿。芬兰制造、Helo 设计的加热器、铁杉或北欧云杉结构、支持 löyly 的完全对流加热。芬兰心血管和认知队列研究正是基于这种形式——桑拿品类中最深厚的证据基础就在这种形式背后。这些研究是观察性的，对象为中年芬兰男性：它们显示的是关联，而不是桑拿带来益处的证明。\n\n## Finnleo Hallmark 有哪些缺点？\n\n不是红外。高端定价。室内安装，有通风要求。大多数首次购买桑拿的用户会选择红外或平价对流桑拿；Finnleo 面向专门想要芬兰背景传统体验的用户。\n\n## 谁应该购买 Finnleo Hallmark？\n\n如果拥有高端芬兰工艺的传统芬兰室内桑拿是你的决定性标准，请选择 Finnleo Hallmark。想要传统户外桶式桑拿，选 Almost Heaven Salem。想要红外桑拿房，选 Sunlighten 或 Clearlight。\n\n---\n\n## 延伸阅读\n\n关于热暴露背后理念的延伸阅读——大多是假说，而非在人体中已证实的效果。\n\n- [线粒体生物发生：细胞电网](/articles/mitochondrial-biogenesis-cellular-power-grid)——热应激影响线粒体的观点（未在人体中证实）\n- [线粒体 DNA 与红光](/articles/mitochondrial-dna-red-light)——近红外光子如何到达线粒体——红外桑拿厂商所援引的机制（未在桑拿中证实）\n- [长寿硬件与细胞清理](/articles/longevity-hardware-cellular-cleanup)——桑拿在更广泛的自噬/线粒体自噬组合中的位置\n",
+      "faq": [
+        {
+          "q": "Finnleo Hallmark 桑拿多少钱？",
+          "a": "2 人室内 Finnleo Hallmark 约 $8,000，即使入门配置也超过 $6,000。这个价格买到的是芬兰制造的铁杉或北欧白云杉护墙板和 Helo 设计的加热器。较大的加热器还需要 220V 电源，可能会增加安装预算。"
+        },
+        {
+          "q": "Finnleo Hallmark 是红外桑拿吗？",
+          "a": "不是。Finnleo Hallmark 是传统芬兰桑拿，而不是红外桑拿房。它由 Helo 设计的加热器提供 80–95°C 的完全对流加热，往石头上浇水时会产生 löyly 蒸汽。这正是关于桑拿使用的芬兰队列研究所依据的热环境。"
+        },
+        {
+          "q": "Finnleo Hallmark 有哪些缺点？",
+          "a": "主要缺点是价格、安装位置和电源。它定价高端，仅限室内且有通风要求，较大的加热器需要 220V 电源。它的作用机制也与红外桑拿房不同，所以专门想要红外的买家应该另寻他处。"
+        }
+      ]
     },
     "saunaspace-faraday": {
       "verdict": "面向生物黑客的高端近红外桑拿——白炽灯发射器、完整法拉第笼，与全光谱红外不同。",
@@ -2441,8 +2851,47 @@
       "productType": "便携红外桑拿毯"
     },
     "therasage-thera-sauna-personal": {
-      "verdict": "扎实的中端生物黑客红外桑拿——全光谱、EMF控制尚可、在同档位中价格亲民。",
-      "productType": "中端红外桑拿（帐篷 / 桑拿房配置）"
+      "verdict": "一款扎实的中端生物黑客红外桑拿——全光谱、EMF 控制不错，在同档中价格亲民。",
+      "summary": "Therasage TheraSauna Personal 填补了平价便携款（HigherDose）和高端桑拿房（Sunlighten、Clearlight）之间的空档。全光谱红外输出、低 EMF 文档、帐篷式和桑拿房两种配置。定位生物黑客的品牌，却没有 Sunlighten 或 SaunaSpace 的高端定价。",
+      "description": "ONDA 评测 Therasage TheraSauna Personal：提供帐篷式和桑拿房配置、定位生物黑客品牌的中端红外桑拿。",
+      "bestFor": "最适合想以中端价格获得全光谱桑拿房或帐篷式红外桑拿的生物黑客。",
+      "testNote": "基于证据的评估——依据 Therasage 产品文档和 2026 年独立评测进行评分。ONDA 未进行实际上手测试。",
+      "productType": "中端红外桑拿（帐篷式/桑拿房配置）",
+      "pros": [
+        "中端价格的全光谱红外",
+        "帐篷式和桑拿房配置覆盖不同的安装场景",
+        "有文档记录的低 EMF，并经第三方验证",
+        "生物黑客品牌定位，社区影响力强"
+      ],
+      "cons": [
+        "波长区分不如 Sunlighten mPulse 严谨",
+        "EMF 水平高于 SaunaSpace Faraday",
+        "做工不如 Sunlighten 或 Clearlight 桑拿房高端",
+        "品牌知名度不如品类领导者广泛"
+      ],
+      "scoreNotes": {
+        "heat-source": "通过碳纤维和陶瓷加热器实现全光谱红外。波长区分不如 Sunlighten 严谨，但宽光谱可信。",
+        "build": "帐篷式或桑拿房配置。3 年保修。中端做工质量。",
+        "emf": "有文档记录的低 EMF；抽查中经第三方验证。不如 SaunaSpace Faraday 严格，但可以接受。",
+        "form-factor": "提供帐篷式和桑拿房配置。通常供 1–2 人使用。",
+        "evidence": "定位生物黑客的营销。属于保健级，而非临床级。",
+        "value": "视配置而定 $1,500–$3,500。中端价格与中端做工相匹配。"
+      },
+      "content": "## 优势所在\n\nTherasage 占据了中端红外桑拿的最佳位置——以 Sunlighten 或 Clearlight 一半的价格提供全光谱输出，并有可信的 EMF 文档。生物黑客社区熟悉这个品牌，帐篷式/桑拿房配置的选择比固定桑拿房的竞品覆盖更多安装场景。\n\n## Therasage TheraSauna Personal 有哪些缺点？\n\n波长严谨度和 EMF 控制都比品类领导者低一档。品牌知名度较窄。桑拿房做工不如 Sunlighten 的雪松木高端。\n\n## 谁应该购买 Therasage TheraSauna Personal？\n\n如果你想以中端价格获得全光谱生物黑客红外桑拿，请选择 Therasage TheraSauna Personal。想要高端全光谱，选 Sunlighten 或 Clearlight。想要专注近红外，选 SaunaSpace。\n\n---\n\n## 延伸阅读\n\n关于热暴露背后理念的延伸阅读——大多是假说，而非在人体中已证实的效果。\n\n- [长寿方案：生物钟重置](/articles/longevity-protocol-biological-clock-reset)——桑拿在重置流程中的位置\n- [HPA 轴控制与皮质醇调节](/articles/hpa-axis-control-cortisol-aggression)——应激反应中的热休克一面\n- [抗熵神经架构](/articles/anti-entropy-neural-architecture)——桑拿作为每日的抗熵压力剂量\n",
+      "faq": [
+        {
+          "q": "Therasage TheraSauna 值得买吗？",
+          "a": "如果你想以中端价格获得全光谱红外，TheraSauna 值得买。它有帐篷式和桑拿房两种形式，低 EMF 经第三方验证。波长区分不如 Sunlighten mPulse 严谨，做工也不如 Sunlighten 或 Clearlight 高端。"
+        },
+        {
+          "q": "Therasage TheraSauna 多少钱？",
+          "a": "Therasage TheraSauna 帐篷式起价约 $1,500，桑拿房配置约 $3,500。这让全光谱红外处于中端价位，帐篷式和桑拿房选项覆盖不同的安装场景。"
+        },
+        {
+          "q": "Therasage TheraSauna 有哪些缺点？",
+          "a": "它的波长区分不如 Sunlighten mPulse 严谨，EMF 水平高于 SaunaSpace Faraday，做工不如 Sunlighten 或 Clearlight 桑拿房高端。品牌知名度也不如品类领导者广泛。"
+        }
+      ]
     },
     "jnh-lifestyles-joyous": {
       "verdict": "可信的入门红外桑拿房——仅远红外、加拿大铁杉做工、价格亲民。",
@@ -2775,6 +3224,217 @@
         {
           "q": "Sleep Cycle 和 SleepScore 哪个更好？",
           "a": "想要更精致、省心、带智能闹钟和实用免费版的追踪器，选 Sleep Cycle。想要非接触式声呐追踪和最具体、以科学为依据的建议，选 SleepScore，但要接受它有用的分析都在高级版里。"
+        }
+      ]
+    },
+    "bedjet-3": {
+      "verdict": "水冷系统的气流替代品——无需管理用水，更实惠，温度控制没那么精确。",
+      "productType": "气流温控系统（床单下送风）"
+    },
+    "luna-ring": {
+      "verdict": "一款实用、实惠、免订阅的 Oura 替代品——睡眠追踪不错，借助充电盒实现长总续航，但单次充电续航和应用的一些粗糙之处使它只是性价比之选，而非同类领先者。",
+      "productType": "智能戒指"
+    },
+    "plunge": {
+      "verdict": "定义品类的冷水浴缸——高端做工、性能出色的制冷机、精致的消费体验，价格也属高端。",
+      "productType": "内置制冷机的高端冷水浴缸"
+    },
+    "coldture": {
+      "verdict": "加拿大对 The Plunge 的高端回应——为寒冷气候打造，略便宜，欧盟渠道友好。",
+      "productType": "加拿大制造的高端冷水浴缸"
+    },
+    "ultrahuman-ring-pro": {
+      "verdict": "Ring Air 重新设计的免订阅继任者——同类领先的 15 天续航和戒指内置处理，并且（与 Ring Air 不同）在美国有售。前景可期，但对于一个上一款戒指有电池问题的品牌来说，它太新了，还无法给出长期可靠性结论。",
+      "productType": "智能戒指"
+    },
+    "oura-ring-5": {
+      "verdict": "2026 年旗舰——薄了 40%，传感器确实升级。早期 Oura 型号在夜间与 ECG 一致性良好；Ring 5 本身尚未单独验证。强制订阅仍是唯一真正的缺点。",
+      "productType": "智能戒指"
+    },
+    "apple-watch-ultra-4": {
+      "verdict": "终于适合夜间 HRV 的 Apple Watch：新的健康感测系统，加上 50 小时续航和运动员准备度评分——前提是你能接受它的尺寸和 $799 的价格。",
+      "summary": "Ultra 4 采用 Series 12 全新的健康感测系统——HRV 采样频率最高提升 24 倍，提供 Recovery HRV 和 Overall HRV——并补上了 Series 12 在心率变异性（HRV）方面唯一欠缺的东西：续航。最长 50 小时的续航让它真正能夜复一夜追踪 HRV，不必让充电时段与睡眠冲突，还增加了面向运动员的准备度评分。代价是尺寸和 $799 的价格。",
+      "description": "ONDA 将 Apple Watch Ultra 4 作为 HRV 追踪器评测：坚固旗舰将新健康感测系统与 50 小时续航结合，让夜间 HRV 终于变得可行。按准确性、传感器、睡眠、数据和性价比评分。",
+      "bestFor": "最适合想要新 HRV 系统、并有足够续航每晚佩戴的运动员或户外用户。",
+      "testNote": "基于证据的评估——依据 Apple 2026 年 9 月的发布信息和规格、独立上手评测，以及已发表的 Apple Watch HRV 验证文献进行评分。ONDA 未进行实际上手测试。",
+      "productType": "坚固型智能手表",
+      "pros": [
+        "新健康感测系统——HRV 采样频率提高 24 倍，提供 Recovery + Overall",
+        "约 50 小时续航终于让夜复一夜的夜间 HRV 变得可行",
+        "运动员准备度评分，外加 ECG 和高血压通知",
+        "坚固的 49 mm 钛金属、40 m 潜水、卫星 SOS——无需订阅"
+      ],
+      "cons": [
+        "$799 起——如果你只想要 HRV，这块手表太多余",
+        "49 mm 表壳又大又重",
+        "腕部光学 HRV 尚未经过独立验证；ECG 胸带更接近实验室 ECG（静息状态、健康年轻成人）",
+        "Recovery HRV 和 Overall HRV 是不同的指标——容易混淆"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "与 Series 12 相同的健康感测系统——HRV 采样频率最高提升 24 倍，分为 Recovery HRV 和 Overall HRV——外加准备度评分。Apple 称这是它最准确的心脏感测，但未找到 Recovery HRV 或 Overall HRV 对照 ECG 的独立验证（截至 2026 年 10 月），因此得分与 Series 12 相同。",
+        "sensor": "这里最完整的传感器组合：新健康感测系统及高血压通知、单导联 ECG、40 m 深度/潜水传感器和卫星连接。",
+        "sleep-accuracy": "50 小时续航才是真正的亮点：它首次让 Apple Watch 能够实际进行夜复一夜的连续睡眠和夜间 HRV 追踪，并对照你的个人基线进行分析。",
+        "data-access": "HealthKit 相对开放，现在除 SDNN 外还会写入原生 heartRateVariabilityRMSSD，因此恢复类应用可以读取与 Whoop、Oura 和 Garmin 同一类别的指标。",
+        "wearability": "最长约 50 小时（低电量模式下 84 小时）终于消除了每晚充电的冲突——这是 Ultra 相对 Series 12 的最大 HRV 优势。代价是又大又重的 49 mm 表壳。",
+        "app-ux": "HRV 在心率应用中展示，提供 Recovery HRV 和 Overall HRV，外加运动员准备度评分；Apple 健康仍是这里最简洁的健康界面。",
+        "value": "$799 起，一次性购买，无需订阅——但你是在为多频 GPS、潜水、卫星和坚固做工付费。只为 HRV 的话这块手表太多余；Series 12 以更低价格提供相同的 HRV 系统。"
+      },
+      "content": "## 优势所在\n\n2026 年 9 月发布的 Apple Watch Ultra 4 将 Series 12 全新的健康感测系统，与智能手表在[心率变异性（HRV）](/glossary/heart-rate-variability)方面一直欠缺的东西结合在一起：续航。它的 HRV 采样频率最高是 Series 11 的 24 倍，分为 **Recovery HRV** 和 **Overall HRV**，新增**运动员准备度评分**，而且——关键是——续航最长约 **50 小时**（低电量模式下 84 小时）。正是这样的续航，让 Ultra 4 成为第一款你真正可以夜复一夜佩戴、获得连续夜间 HRV 记录、而不必让每日充电时段与睡眠冲突的 Apple Watch。\n\n此外，它拥有这里所有手表中最完整的传感器组合：单导联 ECG、高血压通知、40 m 深度和潜水传感器、多频 GPS 和卫星连接，采用坚固的 49 mm 钛金属表壳，无需订阅。\n\n## Apple Watch Ultra 4 有哪些缺点？\n\n物理原理仍是腕部光学。Apple 称这是它最准确的心脏感测；但未找到 Recovery HRV 或 Overall HRV 对照 ECG 的独立验证（截至 2026 年 10 月），而 ECG 胸带更接近实验室 ECG（静息状态、健康年轻成人）。而且这块手表很“多”：$799 起，又大又重，价格中很大一部分花在潜水、卫星和多运动功能上，而不是 HRV。如果你想要这套 HRV 系统、但希望更小更便宜，[Apple Watch Series 12](/reviews/apple-watch-series-12) 有同样的系统——只是续航比不上。\n\n## 谁应该购买 Apple Watch Ultra 4？\n\n如果你是运动员或户外用户，既想要 Apple 的新 HRV 系统，*又*想要足以每晚佩戴的续航，并且会用到坚固、潜水和卫星功能，请选择 Ultra 4。如果 HRV 和日常健康才是重点、你不需要坚固性，Series 12 是更明智的选择；如果干净的夜间 HRV 趋势是你唯一的优先事项，戒指可能更适合你（在 13 人的夜间记录中，Dial 2025，Oura Ring 4 是最接近 ECG 的设备之一）——请看 [2026 年最佳 HRV 追踪器](/reviews/compare/best-hrv-trackers-2026)。\n\n---\n\n## 延伸阅读\n\n- [Apple Watch Recovery HRV 与 Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv)——解读 2026 年的双数值变化\n- [为什么每台设备的 HRV 读数都不同](/articles/hrv-different-every-device)——各品牌的 SDNN 与 RMSSD\n- [HRV 能预测反应时间和专注力吗？](/articles/nervous-system-ping-latency)——静息 HRV 关于注意力和自控力能说明什么、不能说明什么\n",
+      "faq": [
+        {
+          "q": "测 HRV 的话，Apple Watch Ultra 4 比 Series 12 更好吗？",
+          "a": "它们共用相同的健康感测系统和 HRV 指标，所以读数在类型上相同。Ultra 4 的优势在于续航——最长约 50 小时对比约 24 小时——这让夜复一夜的连续夜间 HRV 变得可行，不必让充电时段与睡眠冲突。只为 HRV 的话，Series 12 以更低价格提供相同的系统。"
+        },
+        {
+          "q": "Apple Watch Ultra 4 多少钱？",
+          "a": "$799 起，一次性购买，无需订阅。它于 2026 年 9 月 18 日上市，采用 49 mm 钛金属表壳、GPS + 蜂窝网络、卫星功能，并支持 40 m 潜水。"
+        },
+        {
+          "q": "Apple Watch Ultra 4 的电池能用多久？",
+          "a": "正常使用下最长约 50 小时（低电量模式下约 84 小时，锻炼追踪最长约 45 小时）。对于想整夜佩戴测 HRV 的人来说，这是它与续航约 1 天的 Series 12 的关键区别。"
+        },
+        {
+          "q": "Ultra 4 测 HRV 够准确吗，还是应该买戒指？",
+          "a": "HealthKit 现在提供与 Whoop 和 Oura 同类可比的 RMSSD 数值（Apple 尚未确认 Recovery HRV 本身就是 RMSSD），50 小时续航让你能真正捕捉夜间趋势。ECG 胸带更接近实验室 ECG（静息状态、健康年轻成人）——Ultra 4 的胜出之处在于它是一台坚固、包办一切的设备。"
+        }
+      ]
+    },
+    "bettersleep": {
+      "verdict": "所有睡眠应用中最丰富的睡前放松内容库——声景、故事和冥想——附带简单的追踪功能；首先是放松应用，其次才是追踪器。",
+      "summary": "BetterSleep 在大多数睡眠应用视为次要的事情上领先：帮助你入睡。它的内容库——可混合的声景、SleepTales、冥想和呼吸练习——是这里最深的。它也会追踪你的夜间睡眠，但追踪只是应用中较弱的一半。",
+      "description": "ONDA 评测 BetterSleep：所有睡眠应用中最深的睡前放松内容库，提供声景、SleepTales 和追踪。按内容和性价比评分。",
+      "bestFor": "最适合主要问题是难以入睡、而不是测量睡眠的人。",
+      "testNote": "基于证据的评估——依据公开信息、应用商店数据和 2026 年独立评测。并非基于 ONDA 的长期实际上手试用。",
+      "productType": "睡眠追踪应用",
+      "pros": [
+        "这里最深的睡前放松内容库",
+        "可按喜好调节的混合声景",
+        "SleepTales、冥想和呼吸练习集于一个应用",
+        "精致，使用愉快"
+      ],
+      "cons": [
+        "追踪功能较弱——不是严肃的测量工具",
+        "内容量之大可能让人无所适从",
+        "完整内容库需要订阅",
+        "没有独特的临床睡眠方法"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "基于手机的声音和动作追踪——有，但属于次要功能，不是重点。",
+        "wind-down-content": "这里最深的睡前放松内容库——可混合的声景、SleepTales、冥想和呼吸练习。",
+        "sleep-science": "合理的睡眠卫生内容和日常流程，但没有独特的临床方法。",
+        "insights": "基础的夜间统计——够用，但不是选择它的理由。",
+        "app-experience": "精致、愉快，但内容量之大可能让人无所适从。",
+        "free-tier": "有免费版；完整内容库和追踪需要订阅。",
+        "value": "每年约 60 USD——对这么大的内容库来说价格公道。"
+      },
+      "content": "## 优势所在\n\nBetterSleep 围绕大多数追踪器忽视的夜晚环节而打造——睡前放松。它的内容库是这里所有睡眠应用中最深的：可自己调节的混合声景、SleepTales、引导冥想和呼吸练习。如果你的问题是躺着睡不着，而不是不了解自己的睡眠数据，这就是直接解决问题的应用。\n\n## BetterSleep 有哪些缺点？\n\n追踪功能有，但只是应用中较弱的一半——基于手机、功能基础，不是严肃的测量工具。内容量之大可能让人无所适从，完整内容库需要订阅。它没有独特的临床方法，只有制作精良的放松内容。\n\n## 谁应该使用 BetterSleep？\n\n如果你主要需要帮助入睡，并想要尽可能丰富的声音和故事内容库，请选择 BetterSleep。如果你想要准确的追踪或临床方案，专用追踪器或 Sleepio 会更适合你。\n\n---\n\n## 延伸阅读\n\n这些应用所测量的内容及其支持的方案背后的睡眠生物学。\n\n- [方案：昼夜节律硬重置](/articles/protocol-circadian-hard-reset)——在不得不调整时如何真正调整节律\n- [锁相声学睡眠](/articles/phase-locked-acoustic-sleep)——为什么配合音频入睡有效\n- [睡眠真的会清洁大脑吗？类淋巴系统的证据](/articles/nightly-flush-glymphatic-neural-cache)——哪些已在人体中证实，哪些仍有争议\n",
+      "faq": [
+        {
+          "q": "BetterSleep 值得用吗？",
+          "a": "如果你的主要问题是难以入睡，值得。BetterSleep 拥有所有睡眠应用中最深的睡前放松内容库，包括可混合的声景、SleepTales、冥想和呼吸练习。作为测量工具它不值得，因为睡眠追踪只是应用中较弱的一半。"
+        },
+        {
+          "q": "BetterSleep 多少钱？",
+          "a": "BetterSleep Premium 每年约 $60，也有免费版。完整内容库——包括全部可混合声景、SleepTales 和冥想——需要 Premium 订阅。追踪功能包含在内，但只是应用中较弱的一半。"
+        },
+        {
+          "q": "BetterSleep 有哪些缺点？",
+          "a": "BetterSleep 的追踪功能较弱，不是严肃的测量工具。内容量之大可能让新用户无所适从，完整内容库需要订阅，也没有独特的临床睡眠方法。它首先是放松应用，其次才是追踪器。"
+        },
+        {
+          "q": "BetterSleep 与 AutoSleep：哪个更好？",
+          "a": "BetterSleep 更适合帮助入睡；AutoSleep 更适合测量睡眠。BetterSleep 首先是放松应用，拥有最深的睡前放松内容库，而 AutoSleep 是纯粹的 Apple Watch 追踪器，完全没有睡前放松内容。"
+        }
+      ]
+    },
+    "eight-sleep-pod-6": {
+      "verdict": "迄今最务实的 Eight Sleep——Pod 6 把主机缩小一半，传感器增加到 9 倍，温度调节快 20%，并首次推出单人 Solo 尺寸，起价 $1,999，双区 Queen 降至 $2,899。代价没变：Autopilot 会员（$199–$399/年）是强制的，保修期长短取决于你支付的档位。",
+      "summary": "Eight Sleep Pod 6 是第六代 Pod，于 2026 年 9 月 23 日在 37 个以上国家发布，取代 Pod 5。Eight Sleep 重新设计了主机，体积缩小 50%，可放进大多数床架下方；生物识别传感器数量从 2 个增加到 18 个；并称温度调节比以往任何一代快 20%，双区床罩的每一侧独立工作。新的 Solo 尺寸（Twin，或 Queen、King、California King 的单侧）起价 $1,999；标准双区尺寸为 $2,699（Full）、$2,899（Queen）和 $2,999（King/Cal King）。床罩无需可穿戴设备即可追踪心率、呼吸频率、心率变异性（HRV）、打鼾和睡眠阶段，传感器设计为能区分睡眠者并忽略宠物或儿童。现有配件——Blanket、Pillow Cover 和 Base——均兼容，但需另购。Autopilot 会员是必需的：Standard $199/年（2 年保修），Enhanced $299/年和 Elite $399/年（5 年保修）。",
+      "description": "ONDA 评测 Eight Sleep Pod 6：2026 年 9 月 23 日发布，取代 Pod 5。主机缩小 50%，18 个传感器（原为 2 个），温度调节快 20%，Solo 起价 $1,999。仍需 Autopilot 会员。",
+      "bestFor": "最适合想以品牌史上最低价格获得 Eight Sleep 双区温控和无需可穿戴设备的 HRV 追踪的睡眠者——尤其是现在可以购买 Solo 尺寸的单人睡眠者——并且能接受年度会员。",
+      "testNote": "基于证据的评估——依据 Eight Sleep 官方规格、2026 年 9 月的发布报道和早期独立评测进行评分。ONDA 未进行实际上手测试。",
+      "productType": "智能睡眠温控床罩系统（双区或 Solo）",
+      "pros": [
+        "Eight Sleep 史上最低起价——Solo 起价 $1,999，Queen 双区 $2,899",
+        "18 个生物识别传感器（原为 2 个），无需可穿戴设备即可追踪心率、呼吸、HRV、打鼾和睡眠阶段",
+        "主机缩小 50%——可放进大多数床架下方",
+        "温度调节快 20%；双区两侧独立；兼容现有配件"
+      ],
+      "cons": [
+        "Autopilot 会员是强制的（$199–$399/年）",
+        "保修期长短取决于会员档位（Standard 为 2 年）",
+        "Blanket、Base 和 Pillow Cover 需额外付费——不含自上而下的制冷",
+        "新传感器尚无独立验证；被锁定在 Eight Sleep 生态中"
+      ],
+      "scoreNotes": {
+        "climate-range": "与 Pod 4/5 核心相同的双区床罩式制冷和加热，Eight Sleep 称温度调节快 20%。自上而下的制冷需要单独的 Blanket 配件（捆绑了它的 Pod 5 Ultra 得分 9.7）。Eight Sleep 尚未公布 Pod 6 的新温度范围。",
+        "build": "重新设计的主机缩小 50%，可放进大多数床架下方。保修与会员挂钩：Standard 2 年，Enhanced/Elite 5 年。新主机的长期可靠性尚不清楚。",
+        "app-tracking": "18 个生物识别传感器（原为 2 个），追踪心率、呼吸频率、HRV、打鼾和睡眠阶段，并能区分睡眠者、忽略宠物或儿童。纸面上略优于 Pod 5；Pod 6 传感器尚无已发表的独立验证。",
+        "form-factor": "半尺寸主机和新的 Solo 尺寸使它成为最容易放进卧室的 Pod。默认仅含床罩；Base、Blanket 和 Pillow Cover 是可选配件，而不像 Pod 5 Ultra 那样捆绑。",
+        "subscription": "结论不变——Autopilot 是强制的：Standard $199/年、Enhanced $299/年、Elite $399/年。保修期长短现在取决于你支付的档位。",
+        "value": "起价 $1,999（Solo）和 $2,899（Queen 双区）——按每位睡眠者计算低于 Pod 4 床罩 $2,449–$2,649 的价格，也远低于 $6,099 起的 Pod 5 Ultra。强制会员在三年内仍会增加 $600–$1,200。"
+      },
+      "content": "## Pod 6 是什么\n\nEight Sleep Pod 6 是第六代 Pod，于 2026 年 9 月 23 日在 37 个以上国家发布。它取代了 [Pod 5](/reviews/eight-sleep-pod-5)，而且与 Pod 5 Ultra 不同，它让产品线的价格向下而非向上移动：Solo 尺寸起价 $1,999，双区 Queen 为 $2,899。\n\n## 与 Pod 5 相比实际变化了什么\n\n三项硬件变化。主机缩小 50%，可放进大多数床架下方。床罩配有 18 个生物识别传感器而不是 2 个，Eight Sleep 称这让它能区分睡眠者并忽略宠物或儿童。温度调节比以往任何一代 Pod 快 20%，床的每一侧独立控制。Solo 尺寸也是新增的：Twin，或 Queen、King、California King 的单侧，适合独自睡觉或伴侣不想要 Pod 的人。早期型号的 Blanket、Pillow Cover 和 Base 仍然可用，但需另购，因此 Pod 5 Ultra 捆绑的自上而下制冷和可调节底座现在成了可选附加项。\n\n## 追踪\n\nPod 6 无需可穿戴设备，通过床罩测量心率、呼吸频率、心率变异性（HRV）、打鼾和睡眠阶段，Autopilot 利用这些数据在夜间调节温度。Eight Sleep 称其平台背后有 50 多项临床研究，但新的 18 传感器 Pod 6 尚无已发表的独立验证。与 [Pod 4](/reviews/eight-sleep-pod-4) 一样，请把它的 HRV 视为有用的夜间趋势，而不是临床测量。\n\n## 代价\n\n会员。Autopilot 是必需的：Standard $199/年，2 年保修；Enhanced $299/年和 Elite $399/年，均为 5 年保修。三年下来，这会在硬件价格之外增加 $600 到 $1,200。\n\n## 谁应该购买 Eight Sleep Pod 6？\n\n如果你想以品牌史上最低价格获得 Eight Sleep 的温控和无需可穿戴设备的睡眠追踪，尤其是如果你独自睡觉、可以使用 Solo 尺寸，请选择 Pod 6。如果你已经拥有 Pod 4 或 Pod 5，升级主要是更小的主机和更多传感器。更广泛的选择，请看[最佳智能睡眠温控系统](/reviews/smart-sleep-climate)。\n",
+      "faq": [
+        {
+          "q": "Eight Sleep Pod 6 多少钱？",
+          "a": "Pod 6 Solo 任何尺寸均为 $1,999。双区 Pod 6 尺寸为 $2,699（Full）、$2,899（Queen）和 $2,999（King 或 California King）。此外还需要 Autopilot 会员，每年 $199 起。"
+        },
+        {
+          "q": "Pod 6 与 Pod 5——有什么变化？",
+          "a": "Pod 6 的主机比 Pod 5 小 50%，传感器为 18 个而不是 2 个，温度调节快 20%。它新增了单人 Solo 尺寸，起价也低得多。Blanket、Base 和 Pillow Cover 是兼容的配件，需另购。"
+        },
+        {
+          "q": "Eight Sleep Pod 6 需要订阅吗？",
+          "a": "需要。Autopilot 会员是强制的：Standard $199/年（$17/月），2 年保修；Enhanced $299/年，5 年保修；或 Elite $399/年，5 年保修并附加额外监测。"
+        },
+        {
+          "q": "Eight Sleep Pod 6 能追踪 HRV 吗？",
+          "a": "能。Pod 6 无需可穿戴设备，通过床罩中的传感器追踪心率、呼吸频率、HRV、打鼾和睡眠阶段。Pod 6 传感器尚无已发表的独立验证，所以请把它视为趋势，而不是临床读数。"
+        }
+      ]
+    },
+    "sleep-as-android": {
+      "verdict": "Android 上功能最全的睡眠应用——追踪、智能闹钟和睡前放松声音合而为一——前提是你不介意功能密集的界面。",
+      "summary": "Sleep as Android 是其平台上功能最全的睡眠应用：它追踪你的夜间睡眠，用基于睡眠周期的智能闹钟唤醒你，还集成了睡前放松声音、打鼾检测和广泛的可穿戴设备支持。这些功能的代价是界面显得技术化、信息密集。",
+      "description": "ONDA 评测 Sleep as Android：Android 上功能最全的睡眠应用，具备追踪、智能闹钟和睡前放松声音。按追踪和性价比评分。",
+      "bestFor": "最适合想要一款强大、可配置的一体化睡眠应用的 Android 用户。",
+      "testNote": "基于证据的评估——依据公开信息、应用商店数据和 2026 年独立评测。并非基于 ONDA 的长期实际上手试用。",
+      "productType": "睡眠追踪应用",
+      "pros": [
+        "Android 上功能最全的睡眠应用",
+        "追踪、智能闹钟和睡前放松声音集于一身",
+        "打鼾和梦话录音",
+        "广泛的可穿戴设备集成；价格低"
+      ],
+      "cons": [
+        "仅限 Android",
+        "功能密集——适合爱折腾的用户",
+        "没有可穿戴设备时，基于手机的追踪只是估算",
+        "不如主流 iOS 应用精致"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "基于手机的追踪扎实；配对受支持的可穿戴设备可增加心率数据，但准确性尚未经过独立测试。",
+        "wind-down-content": "摇篮曲、自然声音和双耳节拍音频——睡前放松内容比这里的纯追踪应用更多。",
+        "sleep-science": "基于睡眠周期的智能闹钟和打鼾追踪，以及合理的睡眠卫生功能。",
+        "insights": "深入的统计和趋势，外加打鼾和梦话录音。",
+        "app-experience": "强大且可配置，但功能密集——适合爱折腾的用户。",
+        "free-tier": "先免费试用，然后低价解锁；实际上是免费增值模式。",
+        "value": "以近乎一次性的低价获得异常完整的功能集。"
+      },
+      "content": "## 优势所在\n\nSleep as Android 是 Android 上功能最全的睡眠应用。它追踪你的夜间睡眠，用基于睡眠周期的智能闹钟唤醒你，并集成了异常丰富的功能——摇篮曲和自然声音、打鼾和梦话录音、止鼾提醒，以及与多种可穿戴设备的集成。对于想用一款应用搞定大多数事情的 Android 用户，平台上没有其他应用能与之匹敌。\n\n## Sleep as Android 有哪些缺点？\n\n这么多功能让它显得技术化、信息密集——它比精致的主流应用更适合爱折腾的人。除非配对可穿戴设备，否则基于手机的追踪只是估算，而且应用仅限 Android。\n\n## 谁应该使用 Sleep as Android？\n\n如果你使用 Android，想要一款强大、可配置的一体化应用——追踪、智能闹钟和睡前放松声音集于一身——请选择 Sleep as Android。iPhone 用户，或者更想要简单而非选项多的人，应该另寻他处。\n\n---\n\n## 延伸阅读\n\n这些应用所测量的内容及其支持的方案背后的睡眠生物学。\n\n- [祖先同步与昼夜节律锚点](/articles/ancestral-sync-circadian-anchors)——在旅行和轮班中保持昼夜节律稳定的输入因素\n- [方案：昼夜节律硬重置](/articles/protocol-circadian-hard-reset)——在不得不调整时如何真正调整节律\n- [锁相声学睡眠](/articles/phase-locked-acoustic-sleep)——为什么配合音频入睡有效\n",
+      "faq": [
+        {
+          "q": "Sleep as Android 值得用吗？",
+          "a": "对 Android 用户来说，值得。Sleep as Android 是该平台上功能最全的睡眠应用，以低价结合了追踪、智能闹钟、睡前放松声音以及打鼾和梦话录音，并广泛集成可穿戴设备。它适合爱折腾的用户，没有可穿戴设备时，手机追踪只是估算。"
+        },
+        {
+          "q": "Sleep as Android 多少钱？",
+          "a": "Sleep as Android 约 $12，是一个低廉、基本上近乎一次性的价格。它仅在 Android 上提供。你可以在一款应用中获得追踪、智能闹钟、睡前放松声音、打鼾录音和广泛的可穿戴设备集成。"
+        },
+        {
+          "q": "Sleep as Android 有哪些缺点？",
+          "a": "Sleep as Android 仅限 Android，而且功能密集，所以更适合爱折腾的人而不是随便用用。除非配对可穿戴设备，否则基于手机的追踪只是估算，应用也不如主流 iOS 睡眠应用精致。"
         }
       ]
     }
@@ -3553,7 +4213,11 @@
     "free-tier": "免费版",
     "tracking-accuracy": "追踪准确度",
     "wind-down-content": "睡前放松内容",
-    "sleep-science": "睡眠科学"
+    "sleep-science": "睡眠科学",
+    "wavelength-coverage": "波长覆盖",
+    "led-count-coverage": "LED 数量与面部覆盖",
+    "clinical-evidence": "临床证据与监管状态",
+    "comfort-fit": "舒适度与佩戴贴合"
   },
   "categories": {
     "pemf": "PEMF 设备",
@@ -5385,6 +6049,271 @@
         }
       ],
       "content": "## 简短结论\n\n按续航和生态来选，而不是看心率变异性（HRV）数值。Series 12 胜在最新的 HRV 系统、心电图和 iPhone 整合。Venu 4 胜在让夜间佩戴毫不费力的多日续航，以及 Garmin 训练世界。\n\n## 2026 年 HRV 对比现状\n\nSeries 12 的 Health Sensing System 采样 HRV 的频率高得多，并提供 Recovery HRV，而 Garmin HRV Status 是可靠的单一模型。参见 [Recovery HRV 与 Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) 以及 [为什么每台设备的 HRV 读数都不同](/articles/hrv-different-every-device)。\n\n## 坦诚的提醒\n\n两者都只是测量，都不做训练。如果干净的夜间 HRV 趋势是你唯一的优先事项，一枚可以每晚佩戴的戒指可能更适合你（在 13 人的夜间记录中，Dial 2025，Oura Ring 4 是最接近心电图的设备之一）——参见 [2026 年最佳 HRV 追踪器](/reviews/compare/best-hrv-trackers-2026)。"
+    },
+    "chilipad-dock-pro-vs-bedjet-3": {
+      "title": "ChiliPad Dock Pro 与 BedJet 3 对比（2026）",
+      "description": "ChiliPad Dock Pro 与 BedJet 3：ONDA 并排对比水冷与气流睡眠温控。高价位的强力双区制冷，对比半价、无需加水的气流系统。",
+      "intro": "当 Eight Sleep 不在考虑范围内时，ChiliPad Dock Pro 和 BedJet 3 是用户最常比较的两款免订阅睡眠温控系统。决定品类的差异在于温控方式：ChiliPad 是带储水箱和制冷机的双区水冷系统；BedJet 则把室温或冷却后的空气吹进床单下方，没有水箱需要打理。",
+      "verdict": "制冷强度与维护简便之间的取舍。想要夏季强力制冷和双区控制，选 ChiliPad Dock Pro；想要安装简洁、无需管理用水、价格约为一半，选 BedJet 3。",
+      "bestForA": "如果你想要强力的水冷温控和双区（双人分区）控制，并且接受管理用水，请选择 ChiliPad Dock Pro。",
+      "bestForB": "如果你想要干净的气流温控，没有水箱、无需储水箱维护，且价格明显更低，请选择 BedJet 3。",
+      "axes": [
+        {
+          "name": "温控范围",
+          "note": "ChiliPad：双区水冷，在盛夏高温下制冷强劲（可降至低于室温）。BedJet：气流式，在温和到中等气候下有效，面对潮湿的夏季高温较弱。"
+        },
+        {
+          "name": "双区",
+          "note": "ChiliPad Dock Pro：两侧温度独立调节。BedJet 3：每台为单区（可以用两台 BedJet，但成本翻倍，床边也更杂乱）。"
+        },
+        {
+          "name": "维护",
+          "note": "ChiliPad：需要给储水箱加水、管理水管、定期清洁。BedJet：纯空气，完全无需管理用水。"
+        },
+        {
+          "name": "安装",
+          "note": "ChiliPad：床垫上的罩式垫子 + 主机。BedJet：床架上的支架 + 床单下的送风软管。BedJet 安装更简单。"
+        },
+        {
+          "name": "加热",
+          "note": "两者都能加热和制冷。ChiliPad：水加热范围。BedJet：空气加热，升温明显更快（空气比水升温快）。"
+        },
+        {
+          "name": "价格",
+          "note": "ChiliPad Dock Pro：约 $1,700。BedJet 3：约 $600-900。BedJet 价格约为一半，且没有持续的液体成本。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "ChiliPad 还是 BedJet——哪个制冷效果更好？",
+          "a": "ChiliPad——水比空气制冷更强，尤其是在盛夏高温和高湿度时。BedJet 在温和气候和较温和的夏季条件下有效，但在炎热潮湿的夜晚没那么强劲。"
+        },
+        {
+          "q": "哪个日常使用更省心？",
+          "a": "BedJet——无需给水箱加水、无需管理水管、无需清洁储水箱。ChiliPad 需要定期管理用水。追求低维护的话，BedJet 胜出。"
+        },
+        {
+          "q": "BedJet 的加热效果能和 ChiliPad 一样吗？",
+          "a": "BedJet 升温更快——空气比水升温快。ChiliPad 的加热范围略宽，但在实际可用的床温下，这一差异很少有实际意义。"
+        },
+        {
+          "q": "BedJet 适合情侣/夫妻吗？",
+          "a": "每台为单区。想要两侧独立温度的情侣需要两台 BedJet（约 $1,400-1,800）——到这个价位，ChiliPad Dock Pro 单套系统的双区方案在价格上也有竞争力了。"
+        }
+      ],
+      "content": "## 简要结论\n\n两者都是免订阅的睡眠温控系统。ChiliPad 是双区水冷——对抗夏季高温最强劲，但需要管理用水。BedJet 是气流式——安装干净、日常更省心，面对夏季高湿度较弱，价格约为一半。\n\n## 什么情况下选 ChiliPad Dock Pro？\n\n如果你生活在炎热潮湿的气候中，需要在盛夏夜晚强力制冷，并且想要两侧独立温度而不必买两台设备——ChiliPad 就是合适的选择。接受管理用水即可。\n\n## 什么情况下选 BedJet 3？\n\n如果你生活在温和到中等的气候中，想要尽可能简单、无需管理用水的安装，并且想花 $600-900 而不是 $1,700——BedJet 就是合适的选择。除了夏季高峰期，气流方案对大多数用户已经足够。"
+    },
+    "luna-ring-vs-amazfit-helio-ring": {
+      "title": "Noise Luna Ring 与 Amazfit Helio Ring 对比（2026）",
+      "description": "Noise Luna Ring Gen 2 与 Amazfit Helio Ring：两款实惠的免订阅智能戒指。靠充电盒实现长总续航，对比最轻、最便宜的戒指。",
+      "intro": "这是两款最便宜的免订阅智能戒指，都面向想要 Oura 式核心追踪、却不想付高价和会员费的人。Noise Luna Ring Gen 2（约 $300）依靠便携充电盒实现较长的总续航，睡眠追踪准确；Amazfit Helio Ring（$199）更便宜、更轻，但只有三个尺码。两者都是各有取舍的性价比之选。",
+      "verdict": "两款平价免订阅戒指。Amazfit Helio Ring 更便宜（$199）、更轻；Noise Luna Ring Gen 2（约 $300）尺码范围更广，有充电盒带来长总续航，睡眠追踪同样出色。如果尺码合适、追求最低价，选 Helio；想要更多尺码选择和充电盒的便利，选 Luna。",
+      "bestForA": "如果你想要良好的睡眠追踪、更广的尺码范围和带来长总续航的充电盒，并且能接受 $300，请选择 Noise Luna Ring Gen 2。",
+      "bestForB": "如果你想要最便宜、最轻的免订阅戒指，并且它的三个尺码之一适合你，请选择 Amazfit Helio Ring。",
+      "axes": [
+        {
+          "name": "价格",
+          "note": "Amazfit Helio：$199。Noise Luna Gen 2：约 $300。Helio 更便宜。"
+        },
+        {
+          "name": "订阅",
+          "note": "平手——两者都是一次性购买，无需会员。"
+        },
+        {
+          "name": "单次充电续航",
+          "note": "据厂商称：Luna Ring 单次充电最长 7 天（Gen 2 据 Wareable 为最长 5 天），Helio 最长 4 天。评测者报告实际使用中更短（Luna 约 4 天，Helio 约 2.5–3 天），而 Luna 宣传的约 30 天依赖充电盒。"
+        },
+        {
+          "name": "佩戴与尺码",
+          "note": "Helio 只有三个尺码（8、10、12）；Luna 尺码范围更广，更多人能戴得合适。"
+        },
+        {
+          "name": "睡眠追踪",
+          "note": "就价格而言，两者的睡眠追踪都不错——睡眠分期是各自的强项。"
+        },
+        {
+          "name": "附加功能",
+          "note": "Luna 增加了语音激活的 Luna AI 助手和便携充电盒；Helio 更为简朴。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Noise Luna Ring 还是 Amazfit Helio Ring？",
+          "a": "两者都是睡眠追踪不错的便宜免订阅戒指。Amazfit Helio 更便宜（$199）、更轻，但只有三个尺码；Noise Luna（约 $300）尺码范围更广，有带来长总续航的充电盒和语音助手。如果尺码合适、追求最低价，选 Helio；想要尺码选择和附加功能，选 Luna。"
+        },
+        {
+          "q": "哪个续航更好？",
+          "a": "Luna。据厂商称，Luna Ring 单次充电最长 7 天（Gen 2 据 Wareable 为最长 5 天），Helio 最长 4 天（评测者报告实际使用中约 4 天和 2.5–3 天），而 Luna 的便携充电盒让其总续航高得多，所以总体上你给戒指充电的次数更少。"
+        },
+        {
+          "q": "这些戒指适合我吗？",
+          "a": "Amazfit Helio 只有三个尺码（8、10、12），可能不合适；Noise Luna 尺码范围更广，在佩戴上更稳妥。"
+        }
+      ],
+      "content": "## 简要结论\n\n两款平价免订阅戒指。[Amazfit Helio Ring](/reviews/amazfit-helio-ring) 更便宜（$199）、更轻，但只有三个尺码；[Noise Luna Ring Gen 2](/reviews/luna-ring)（约 $300）尺码范围更广，有带来长总续航的充电盒和语音助手。\n\n## 什么情况下选 Noise Luna Ring？\n\n你想要良好的睡眠追踪、更多尺码选择和充电盒的便利，并且 $300 可以接受。\n\n## 什么情况下选 Amazfit Helio Ring？\n\n你想要最便宜、最轻的免订阅戒指，并且有合适的尺码。\n\n## 同样值得对比\n\n想要相近价格下更长的单次充电续航，请看 [RingConn Gen 2](/reviews/ringconn-gen-2)；与 Oura 的对比见 [Noise Luna 与 Oura Ring 4](/reviews/vs/luna-ring-vs-oura-ring-4)。完整阵容：[最佳 HRV 追踪器](/reviews/hrv-trackers)。"
+    },
+    "neurosity-crown-vs-emotiv-insight-2": {
+      "title": "Neurosity Crown 与 Emotiv Insight 2 对比（2026）",
+      "description": "Neurosity Crown 与 Emotiv Insight 2：ONDA 并排对比两款开发者级消费 EEG 头戴设备。开放 SDK 对比学术工具链。",
+      "intro": "Neurosity Crown 和 Emotiv Insight 2 是开发者和研究人员最常相互比较的两款消费级 EEG 头戴设备。两者都面向想要访问原始信号、而不是冥想应用的用户。结构性差异在于数据模式：Neurosity 是开放 SDK，没有门槛；Emotiv 拥有更深厚的学术工具链，但原始数据访问需要 Pro 订阅。",
+      "verdict": "对于想要无订阅访问原始 EEG 的开发者和生物黑客，Neurosity Crown 胜出。对于进行学术式分析、以 EmotivPRO 工具链为决定因素的用户，Emotiv Insight 2 胜出。",
+      "bestForA": "如果你想通过 JavaScript 或 Python（以及 BrainFlow、LSL 和 OSC）获取原始 EEG，且没有订阅门槛——消费级 EEG 市场中最开放的 SDK，请选择 Neurosity Crown。",
+      "bestForB": "如果你需要 EmotivPRO 工具链及其深厚的学术发表基础，并且能接受为原始数据访问支付 Pro 订阅，请选择 Emotiv Insight 2。",
+      "axes": [
+        {
+          "name": "EEG 通道",
+          "note": "Neurosity Crown：8 个干电极，覆盖多个皮层位置。Emotiv Insight 2：5 个半干电极。Neurosity 的皮层覆盖更广。"
+        },
+        {
+          "name": "信号质量",
+          "note": "两者都是消费级干/半干系统。Neurosity 通道更多；Emotiv 静息时单通道信号略干净。基本持平。"
+        },
+        {
+          "name": "开放 SDK 访问",
+          "note": "Neurosity：通过 JavaScript 和 Python（以及 BrainFlow、LSL 和 OSC）获取原始 EEG，无需订阅。Emotiv：提供 SDK，但原始数据访问需要 EmotivPRO 订阅。Neurosity 是更开放的平台。"
+        },
+        {
+          "name": "学术工具链",
+          "note": "EmotivPRO 被数百项已发表的学术研究引用。Neurosity 的研究足迹较小——平台更年轻。"
+        },
+        {
+          "name": "实时认知指标",
+          "note": "Emotiv：实时专注、压力、投入、兴奋、兴趣、放松——六个维度。Neurosity：专注、平静和心流。Emotiv 显示的实时分数更多；这些都是各公司自己的公式，并非经过验证的测量。"
+        },
+        {
+          "name": "内置用户体验",
+          "note": "Neurosity 开箱即带自适应专注音乐流媒体功能。Emotiv 依赖 SDK 生态提供面向用户的应用。"
+        },
+        {
+          "name": "舒适度",
+          "note": "Emotiv Insight 2 更轻，五臂头冠适合较长时间佩戴。Neurosity Crown 更厚重。"
+        },
+        {
+          "name": "价格",
+          "note": "Emotiv Insight 2：$499 + 获取原始数据所需的 Pro 订阅（约 $99/年）。Neurosity Crown：$1,499，无订阅。Emotiv 前期更便宜；如果你需要原始数据，多年使用下来 Neurosity 更便宜。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "对开发者来说哪个更好——Neurosity Crown 还是 Emotiv Insight 2？",
+          "a": "一般来说是 Neurosity Crown。它的 SDK 是真正开放的——通过 JavaScript 和 Python（以及 BrainFlow、LSL 和 OSC）获取原始 EEG，没有订阅门槛。Emotiv 的 SDK 相当，但原始数据访问需要 Pro 订阅，感觉像是付了两次钱。"
+        },
+        {
+          "q": "哪个更适合学术研究？",
+          "a": "Emotiv Insight 2——EmotivPRO 工具链被数百项已发表研究引用，这让你在自己的研究中引用它更容易。Neurosity 的研究足迹较小，因为平台更年轻。"
+        },
+        {
+          "q": "为什么 Neurosity Crown 贵这么多？",
+          "a": "$1,499 对比 $499，反映的是八通道硬件和无订阅模式。如果使用 Emotiv Pro 三年，差距缩小到约 $700。对于需要原始数据的用户，Neurosity 的总成本最终大致相当。"
+        },
+        {
+          "q": "这两款头戴设备能用于冥想吗？",
+          "a": "都可以，但都不是做这件事的合适工具。消费级冥想体验属于 Muse——Muse 2（$249.99）或 Muse S Athena（$474.99）。Neurosity 和 Emotiv 是开发者级硬件，需要你自带应用。"
+        }
+      ],
+      "content": "## 简要结论\n\n对于想要无订阅访问原始 EEG 的开发者和生物黑客，Neurosity Crown 胜出。对于看重 EmotivPRO 工具链发表基础的学术式研究，Emotiv Insight 2 胜出。\n\n## 什么情况下选 Neurosity Crown？\n\n如果你想在 EEG 之上构建一些东西——专注应用、生产力工具、研究项目——并且宁愿一次性付费，也不愿为原始数据持续订阅，Neurosity Crown 就是合适的选择。八通道硬件和 JavaScript/Python SDK（以及 BrainFlow/LSL）是其差异化优势。\n\n## 什么情况下选 Emotiv Insight 2？\n\n如果你在进行学术式分析，并希望在研究中引用 EmotivPRO 工具链，Emotiv 就是合适的选择。五通道硬件足以应对大多数皮层区域的研究，实时（专有）认知分数比 Neurosity 更丰富，当你付费购买的正是学术工具链的深度时，Pro 订阅是可以接受的。"
+    },
+    "plunge-vs-coldture": {
+      "title": "The Plunge 与 Coldture 冷水浴缸对比（2026）",
+      "description": "The Plunge 与 Coldture：ONDA 对两款内置制冷机的高端冷水浴缸进行并排对比。美国品类领导者对比加拿大寒冷气候专家。",
+      "intro": "当买家想要一套开箱即用的高端安装方案时，The Plunge 和 Coldture 是两款正面交锋的高端内置制冷机冷水浴缸。两者都配备集成制冷机、臭氧消毒、高端保温结构和 3 年保修。结构性差异在于地域定位：Plunge 是美国品类领导者，Coldture 是加拿大制造的寒冷气候专家。",
+      "verdict": "地域决定选择。美国买家和温和气候安装选 The Plunge；寒冷气候户外安装以及加拿大/欧盟市场选 Coldture。",
+      "bestForA": "如果你在美国、想要历史最悠久的消费品牌背景、在温和气候下安装，并且看重创始人内容生态，请选择 The Plunge。",
+      "bestForB": "如果你在加拿大、欧盟或美国寒冷地区，请选择 Coldture——冬季户外运行正是 Coldture 的设计强项。",
+      "axes": [
+        {
+          "name": "制冷机能力",
+          "note": "Plunge：1 HP，最低温度略低一些（39°F）。Coldture：性能足够，但在盛夏高温下略逊一筹。"
+        },
+        {
+          "name": "寒冷气候冬季表现",
+          "note": "Coldture 围绕冬季户外运行而设计；Plunge 有户外使用认证，但在温和气候下表现最佳。"
+        },
+        {
+          "name": "做工",
+          "note": "两者均为高端保温结构；多年可靠性相当。Plunge 在美国有 5 年以上的使用记录；Coldture 在加拿大/欧盟有同等的背景。"
+        },
+        {
+          "name": "保修",
+          "note": "两者：制冷机和浴缸均提供 3 年保修。"
+        },
+        {
+          "name": "销售渠道与支持",
+          "note": "Plunge 在美国的渠道和内容更强。Coldture 在加拿大/欧盟的渠道更强。"
+        },
+        {
+          "name": "价格",
+          "note": "Coldture：约 $4,500。Plunge：$5,990。在同等高端硬件下，Coldture 明显更便宜。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "The Plunge 和 Coldture 哪个更好？",
+          "a": "地域决定选择。温和气候下的美国买家选 The Plunge；寒冷气候户外安装（加拿大、欧盟、美国寒冷地区）选 Coldture。硬件水平相当，工程侧重点不同。"
+        },
+        {
+          "q": "Coldture 能在冬季户外使用吗？",
+          "a": "能——这正是它的设计重点。它在加拿大制造，围绕寒冷气候户外运行而设计。The Plunge 有户外使用认证，但其工程设计以温和气候为基准条件。"
+        },
+        {
+          "q": "哪一款在美国的销售渠道更好？",
+          "a": "The Plunge 遥遥领先——创始人在美国，内容生态以美国为中心。Coldture 可发货到美国，但支持重心在加拿大。"
+        },
+        {
+          "q": "两者保修是否相当？",
+          "a": "是的——两者的制冷机和浴缸都是 3 年保修，保修期相同。"
+        }
+      ],
+      "content": "## 简要结论\n\nThe Plunge 和 Coldture 是两款高端内置制冷机冷水浴缸。Plunge 是美国品类领导者，拥有最丰富的内容生态；Coldture 是加拿大制造的寒冷气候专家，价格略低。\n\n## 什么情况下选 The Plunge？\n\n如果你在美国，想要历史最悠久的品牌背景和最丰富的创始人内容库——The Plunge 就是合适的选择。温和气候的基准条件正是其工程设计的优势所在。\n\n## 什么情况下选 Coldture？\n\n如果你在加拿大、欧盟或美国寒冷地区进行户外安装，Coldture 专为冬季设计的制冷机和保温层表现优于 Plunge。更低的价格是额外的好处。"
+    },
+    "ultrahuman-ring-pro-vs-oura-ring-5": {
+      "title": "Ultrahuman Ring Pro 与 Oura Ring 5 对比（2026）",
+      "description": "Ultrahuman Ring Pro 与 Oura Ring 5：约 15 天续航的免订阅旗舰，对比需强制会员、支持最完善的戒指系列。ONDA 帮你选智能戒指。",
+      "intro": "这是 2026 年最受关注的智能戒指之争：Ultrahuman 重新设计、在美国有售的 Ring Pro，对阵 Oura 的旗舰 Ring 5。Ring Pro 免订阅，拥有同类领先的约 15 天续航；Ring 5 来自已发表研究最多的戒指系列（主要针对早期型号，部分由 Oura 资助；Ring 5 本身尚未经过验证），应用最好，但需要强制会员。归根结底是一次性买断，还是为标杆体验付费。",
+      "verdict": "无订阅加超长续航，对比研究记录和应用深度。Ultrahuman Ring Pro 在费用模式（一次性 $479，无月费）和续航（约 15 天）上胜出；Oura Ring 5 在支持最完善的戒指系列（Ring 5 本身尚未经过验证）、传感器和最佳应用上胜出——价格 $399 加会员费。根据你是拒绝订阅，还是想要最成熟的戒指来选择。",
+      "bestForA": "如果一次性价格、无订阅和出色的约 15 天续航对你最重要，并且你愿意做重新设计戒指的早期用户，请选择 Ultrahuman Ring Pro。",
+      "bestForB": "如果你想要已发表研究最多的戒指系列（主要针对早期型号，部分由 Oura 资助；Ring 5 本身尚未经过验证）、最精致的应用和升级的传感器，并且能接受约 $6/月的会员费，请选择 Oura Ring 5。",
+      "axes": [
+        {
+          "name": "订阅与费用",
+          "note": "Ring Pro：一次性 $479，无订阅。Oura Ring 5：$399 + 获取完整数据约 $6/月。几年下来 Ring Pro 更便宜，且没有任何持续费用。"
+        },
+        {
+          "name": "续航",
+          "note": "Ring Pro：约 15 天——同类最佳。Oura Ring 5：约 6–9 天。差距明显。"
+        },
+        {
+          "name": "睡眠与 HRV 准确性",
+          "note": "实际上持平：截至 2026 年 10 月，Ring Pro 和 Ring 5 都没有对睡眠分期或夜间心率变异性（HRV）的独立验证。早期 Oura 型号的夜间独立证据更好；Ultrahuman 只有公司自己进行的预印本研究。"
+        },
+        {
+          "name": "应用与生态",
+          "note": "Oura 的应用是同类中最精致、解释最清楚的，集成也最广。Ultrahuman 的应用功能齐全、偏重代谢，但不够精细。"
+        },
+        {
+          "name": "过往记录",
+          "note": "Oura 多年来硬件可靠性已得到证明。Ring Pro 是新品，而 Ultrahuman 上一代 Ring Air 曾被广泛报告电池故障——重新设计正是针对这一点，但长期表现尚未得到证明。"
+        },
+        {
+          "name": "处理能力与功能",
+          "note": "Ring Pro 增加了戒指内置双核处理器和实时“Jade”生物智能层——板载能力比 Ring 5 更强。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ultrahuman Ring Pro 还是 Oura Ring 5——该买哪个？",
+          "a": "如果你拒绝订阅并想要最长续航，选 Ring Pro（一次性 $479，约 15 天）。如果你想要已发表研究最多的戒指系列（主要针对早期型号，部分由 Oura 资助；Ring 5 本身尚未经过验证）和最好的应用，选 Oura Ring 5（$399 + 约 $6/月）。Ring Pro 在费用模式上胜出；Oura 早期型号的已发表研究更多（当前型号没有独立核查），并在精致度上胜出。"
+        },
+        {
+          "q": "Ring Pro 的准确度足以让我放弃 Oura 吗？",
+          "a": "对大多数人来说，它的 HRV 和睡眠追踪不错，并且比 Ring Air 有所改进。但早期 Oura 型号的已发表研究更多，包括一项小型独立 ECG 研究（Ring 5 本身尚未经过验证），所以如果已发表证据是你的首要考虑，Oura 是支持更完善的系列——代价是订阅费。"
+        },
+        {
+          "q": "Ring Pro 真的能用 15 天吗？",
+          "a": "Ultrahuman 宣传最长约 15 天，大约是 Ring 5 的 6–9 天的两倍。实际续航因使用情况而异，但 Ring Pro 显然是续航更长的戒指，纸面上也是同类领先。"
+        }
+      ],
+      "content": "## 简要结论\n\n[Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) 是免订阅旗舰——一次性 $479，约 15 天续航，戒指内置处理。[Oura Ring 5](/reviews/oura-ring-5) 的应用更成熟，来自早期型号研究更多的戒指系列（Ring 5 的准确性尚未经过独立验证），价格 $399 加强制会员。\n\n## 什么情况下选 Ultrahuman Ring Pro？\n\n你拒绝定期付费，想要同类最长的续航，并且不介意做重新设计戒指的早期用户。\n\n## 什么情况下选 Oura Ring 5？\n\n准确性和应用深度是首要考虑，你想要升级的传感器和最精致的体验，并且能接受会员费。\n\n## 同样值得对比\n\n更便宜的上一代 Oura 见 [Oura Ring 5 与 Oura Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4)；其他免订阅戒指见 [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) 和 [RingConn Gen 2](/reviews/ringconn-gen-2)。完整阵容：[最佳 HRV 追踪器](/reviews/hrv-trackers)。"
     }
   }
 }

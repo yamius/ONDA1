@@ -390,8 +390,53 @@
       ]
     },
     "muse-2": {
-      "verdict": "De populairste EEG-hoofdband voor consumenten — volwassen inhoud, betaalbare prijs, de instap in de categorie.",
-      "productType": "EEG-hoofdband voor consumenten (meditatie)"
+      "verdict": "De populairste EEG-hoofdband voor consumenten – volwassen content, toegankelijke prijs, de instap van de categorie.",
+      "summary": "Muse 2 is de hoofdband die EEG-meditatie voor consumenten op de kaart zette. Vier droge EEG-elektroden plus PPG-hartslag, een volwassen meditatiebibliotheek, een verzorgde app en de laagste prijs in dit overzicht buiten de budgetinstap van NeuroSky. Oudere hardware dan de Athena en geen slaaptracking – maar voor wie alleen feedback bij meditatie wil, blijft het de voordeligste keuze.",
+      "description": "ONDA-review van de Muse 2: de volwassen, breed verkochte EEG-meditatiehoofdband voor ongeveer de helft van de prijs van het topmodel Athena.",
+      "bestFor": "Het best voor wie voor het eerst EEG-meditatie probeert en het meest volwassen consumentenapparaat wil tegen een toegankelijke prijs.",
+      "testNote": "Evidence-based beoordeling – gescoord op basis van productdocumentatie van Interaxon, gepubliceerde validatieliteratuur over Muse-EEG en onafhankelijke reviews uit 2026. Niet hands-on getest door ONDA.",
+      "productType": "EEG-hoofdband voor consumenten (meditatie)",
+      "pros": [
+        "De populairste EEG-hoofdband voor consumenten – volwassen ecosysteem en community",
+        "Laagste prijs onder echte EEG-meditatieapparaten",
+        "Geen verplicht abonnement – de kernfeedback bij meditatie, hartslag, ademhaling en houding werken zonder",
+        "Hartslag plus EEG-signaal in één apparaat"
+      ],
+      "cons": [
+        "Geen slaaptracking – dat is de upgrade naar de Athena",
+        "Oudere hardware dan Muse S Athena (geen fNIRS, niet voor 's nachts)",
+        "Beperkte SDK voor ontwikkelaars",
+        "Enso AI-coach, tracking van cognitieve prestaties, externe audio en samengestelde programma's vereisen Muse Premium",
+        "Stijve band minder comfortabel dan alternatieven met een zachte band"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Vier droge EEG-elektroden plus PPG-hartslag – voldoende consumentensignaal dat goed standhoudt in zittende sessies; minder stabiel dan onderzoekssystemen met natte elektroden.",
+        "training-content": "Volwassen meditatiebibliotheek na tien jaar aan releases – kalmte, focus, ademhaling, bodyscan, stemming. Minder diepgang dan de Athena-variant, maar dekt het dagelijkse kerngebruik volledig.",
+        "insights": "Percentage kalm / neutraal / actief per sessie plus hartslagtrend; minder verhalend dan de analyse van de Athena. Voldoende om je oefening over maanden te volgen.",
+        "comfort": "Stijve hoofdband – comfortabel voor meditatiesessies van 10–20 minuten, maar niet ontworpen om 's nachts te dragen.",
+        "app-ux": "Verzorgde iOS/Android-app; volwassen ecosysteem met integratie met Apple Health. De interface toont hier en daar zijn leeftijd.",
+        "open-data": "Export van ruwe EEG beschikbaar via Muse Direct (derde partij); eigen SDK beperkt.",
+        "value": "Hardware van $249.99, geen verplicht abonnement voor de kernfeedback bij meditatie (Muse Premium voegt de AI-coach, cognitieve tracking en programma's toe) – de voordeligste instap in echte EEG-feedback bij meditatie voor consumenten."
+      },
+      "content": "## Waar het voorop loopt\n\nMuse 2 is het apparaat dat de consumenten-EEG-markt liet zien hoe het goed moet. De vier droge elektroden zijn niet van onderzoekskwaliteit, maar wel voldoende; de meditatiebibliotheek is de diepste in het consumentensegment; de app is verfijnd in meer dan tien jaar aan iteraties. Met $249.99 is het de goedkoopste serieuze EEG-meditatiehoofdband op de markt die nog een echt ecosysteem achter zich heeft.\n\n## Wat zijn de nadelen van Muse 2?\n\nDe tijd is het probleem. De hardware van de Muse 2 is ouder dan de Athena-variant en mist fNIRS, slaaptracking en draagbaarheid 's nachts. Voor puur meditatiegebruik maakt dat verschil minder uit dan het prijsverschil doet vermoeden – maar als je slaap wilt meten, ben je dit apparaat ontgroeid. De SDK voor ontwikkelaars is beperkt, dus biohackers die toegang willen tot het ruwe signaal kiezen eerder voor Neurosity Crown.\n\n## Voor wie is Muse 2?\n\nKies Muse 2 als feedback bij meditatie het enige is wat je van een EEG-headset wilt en de prijs telt. Wil je er ook slaaptracking bij: Muse S Athena. Wil je ruwe EEG-data voor zelfexperimenten: Neurosity Crown.\n\n---\n\n## Achtergrond\n\nDe neurowetenschap waarop deze headsets feedback geven – en wat het EEG-signaal wel en niet kan zeggen over mentale toestanden.\n\n- [Neuroplasticiteit en flow-overklokken](/articles/neuroplasticity-flow-overclocking) – wat flowtoestanden zijn en hoe ze ontstaan\n- [ACC-kalibratie: protocol voor cognitieve controle](/articles/acc-calibration-protocol-cognitive-control) – de prefrontale regelkringen achter cognitieve controle\n- [Adaptatie en range fractionation](/articles/adaptation-hack-range-fractionation) – cognitieve toestanden trainen door bewuste variatie\n",
+      "faq": [
+        {
+          "q": "Is de Muse 2 het geld waard?",
+          "a": "De Muse 2 is het waard voor wie voor het eerst EEG-meditatie probeert. Het is de populairste EEG-hoofdband voor consumenten, met een volwassen ecosysteem, de laagste prijs onder echte EEG-meditatieapparaten, hartslag plus EEG in één apparaat en geen verplicht abonnement. Slaap meet hij niet."
+        },
+        {
+          "q": "Hoeveel kost de Muse 2?",
+          "a": "De Muse 2 staat vermeld voor $249.99 voor de hoofdband. De kernfeedback bij meditatie, hartslag, ademhaling en houdingsdetectie werken zonder abonnement; de Enso AI-coach, tracking van cognitieve prestaties, externe audio (Spotify, Calm, Headspace) en samengestelde programma's vereisen Muse Premium. Dat is de laagste prijs onder echte op EEG gebaseerde meditatieapparaten in deze review. Hij combineert ook hartslag- en EEG-meting in één band."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Muse 2?",
+          "a": "De Muse 2 heeft geen slaaptracking, oudere hardware dan de Muse S Athena zonder fNIRS of draagbaarheid 's nachts, een beperkte SDK voor ontwikkelaars en een stijve band die minder comfortabel is dan alternatieven met een zachte band."
+        },
+        {
+          "q": "Muse 2 vs Muse S Athena: wat is beter?",
+          "a": "Kies de Muse 2 voor de goedkoopste instap in EEG-meditatie voor $249.99. Kies de Muse S Athena voor $474.99 als je slaaptracking, fNIRS en een zachte band wilt die comfortabel genoeg is om 's nachts te dragen, want de Muse 2 mist alle drie."
+        }
+      ]
     },
     "neurosity-crown": {
       "verdict": "De beste EEG-headset voor developers en biohackers — acht kanalen, een open SDK, ruwe data en geen abonnement. Voor $1.499 en ongeveer drie uur accu is het de verkeerde aankoop voor af en toe mediteren.",
@@ -454,12 +499,96 @@
       ]
     },
     "emotiv-insight-2": {
-      "verdict": "De hybride van onderzoek en consument — vijf kanalen en een echte academische toolchain, ruwe data alleen met een abonnement.",
-      "productType": "Hybride EEG-headset voor onderzoek en consument (5 kanalen)"
+      "verdict": "De hybride tussen onderzoek en consument – vijf kanalen en een echte academische toolchain, met een abonnement als drempel voor ruwe data.",
+      "summary": "Emotiv Insight 2 is de consumentenversie van Emotivs onderzoekslijn en zit tussen de ontwikkelaarsfocus van Neurosity Crown en de meditatiegerichtheid van Muse. Vijf EEG-elektroden, een gevestigde academische toolchain (EmotivPRO wordt gebruikt in honderden gepubliceerde studies) en live prestatiescores voor focus, stress, betrokkenheid en opwinding – Emotivs eigen formules, geen gevalideerde metingen van die toestanden. Het addertje is het datamodel: toegang tot ruwe EEG vereist een abonnement op het Pro-niveau.",
+      "description": "ONDA-review van de Emotiv Insight 2: EEG-headset met vijf kanalen voor consument en onderzoek, met een gevestigde academische toolchain.",
+      "bestFor": "Het best voor onderzoekers en serieuze zelfexperimenteerders die een EEG-toolchain van academisch niveau willen tegen een consumentenprijs.",
+      "testNote": "Evidence-based beoordeling – gescoord op basis van productdocumentatie van Emotiv, het academische publicatiebestand van EmotivPRO en onafhankelijke reviews uit 2026. Niet hands-on getest door ONDA.",
+      "productType": "Hybride EEG-headset voor onderzoek en consument (5 kanalen)",
+      "pros": [
+        "Vijf EEG-kanalen – betere corticale dekking dan Muse, eenvoudiger dan Crown",
+        "De EmotivPRO-toolchain wordt veel gebruikt in gepubliceerd onderzoek",
+        "Zes live prestatiescores (Emotivs eigen formules)",
+        "Gevestigde SDK met bindings voor meerdere talen"
+      ],
+      "cons": [
+        "Toegang tot ruwe data vereist een Pro-abonnement – voelt als dubbel betalen",
+        "Bescheiden bibliotheek met begeleide content vergeleken met Muse",
+        "De gebruikerservaring weerspiegelt de onderzoeksachtergrond – minder verzorgd dan consumentenalternatieven",
+        "Geen slaaptracking"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Vijf semi-droge EEG-elektroden – de middenweg tussen Muse (4 droog) en Crown (8 droog). Stabiel signaal in zittende sessies.",
+        "training-content": "Bescheiden begeleide content; Emotiv positioneert het apparaat als meetinstrument in plaats van als contentplatform.",
+        "insights": "Live prestatiescores – focus, stress, betrokkenheid, opwinding, interesse, ontspanning – uit Emotivs eigen algoritmen, geen gevalideerde metingen. Meer live scores dan Muse, lichtere sessiesamenvattingen.",
+        "comfort": "Licht kroonontwerp met vijf armen. Voldoende voor sessies van 30–60 minuten; niet ontworpen om 's nachts te dragen.",
+        "app-ux": "Emotiv App en het webdashboard van EmotivPRO. De gebruikerservaring is functioneel maar weerspiegelt de onderzoeksachtergrond – gedetailleerder dan Muse, minder verzorgd dan Athena.",
+        "open-data": "Open SDK en EmotivPRO-export voor ruwe EEG – gebruikt in honderden gepubliceerde academische studies. Een abonnement op het Pro-niveau is nodig om ruwe toegang te ontgrendelen.",
+        "value": "Hardware van $499 plus Pro-abonnement (~$99/jaar) voor toegang tot ruwe data. Goedkoper dan Crown, duurder dan Muse 2."
+      },
+      "content": "## Waar het voorop loopt\n\nEmotiv Insight 2 bezet het smalle stukje van de EEG-markt tussen consument en onderzoek. Vijf semi-droge elektroden zijn meer dan Muse en minder dan Crown, de academische toolchain (EmotivPRO) is met ruime voorsprong de meest geciteerde in deze categorie, en de app toont zes live prestatiescores – focus, stress, betrokkenheid, opwinding, interesse, ontspanning – die Emotivs eigen formules zijn, geen gevalideerde metingen van stress of aandacht. Voor een hobbyist die echte EEG-analyse wil doen zonder apparatuur van medische kwaliteit te kopen, is dit de juiste vorm.\n\n## Wat zijn de nadelen van Emotiv Insight 2?\n\nHet datamodel. Toegang tot ruwe EEG vereist het EmotivPRO-abonnement bovenop de aankoop van de hardware van $499, wat voelt als dubbel betalen vergeleken met het model van Neurosity Crown, waar de SDK is inbegrepen. De begeleide content is bescheiden – Emotiv behandelt het apparaat als instrument, niet als contentplatform. En er is geen slaaptracking.\n\n## Voor wie is Emotiv Insight 2?\n\nKies Emotiv Insight 2 als je een onderzoeksgerichte toolchain wilt tegen een consumentenprijs en de ruil abonnement-voor-ruwe-data acceptabel vindt. Is ruwe data zonder abonnement het beslissende criterium: Neurosity Crown. Is meditatiecontent het beslissende criterium: Muse S Athena of Muse 2.\n\n---\n\n## Achtergrond\n\nDe neurowetenschap waarop deze headsets feedback geven – en wat het EEG-signaal wel en niet kan zeggen over mentale toestanden.\n\n- [Acetylcholine als lens van de aandacht](/articles/acetylcholine-lens-neuro-mechanics) – de neurochemie achter focus\n- [Cognitieve architectuur: neurale doorvoer](/articles/cognitive-architecture-neural-throughput) – een metafoor voor hoeveel informatie de geest aankan\n- [Cognitieve architectuur: nootropische stacks](/articles/cognitive-architecture-nootropic-stacks) – wat nootropische stacks wel en niet kunnen, en waarom headsetscores hun effect niet kunnen tonen\n",
+      "faq": [
+        {
+          "q": "Is de Emotiv Insight 2 het geld waard?",
+          "a": "Ja, voor onderzoekers en serieuze zelfexperimenteerders. De Emotiv Insight 2 heeft vijf EEG-kanalen, de EmotivPRO-toolchain die in honderden gepubliceerde studies wordt gebruikt, en een gevestigde SDK. Toegang tot ruwe data vereist een Pro-abonnement, en de begeleide content blijft achter bij Muse."
+        },
+        {
+          "q": "Hoeveel kost de Emotiv Insight 2?",
+          "a": "De Emotiv Insight 2 kost $499 voor het apparaat, plus ongeveer $99 per jaar voor het Pro-abonnement dat nodig is voor toegang tot ruwe data. Zonder Pro krijg je nog steeds Emotivs live prestatiescores, zoals focus, stress en betrokkenheid – de eigen formules van het bedrijf, geen gevalideerde metingen."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Emotiv Insight 2?",
+          "a": "Toegang tot ruwe data op de Emotiv Insight 2 vereist een Pro-abonnement, wat voelt als dubbel betalen. De bibliotheek met begeleide content is bescheiden vergeleken met Muse, de gebruikerservaring is minder verzorgd dan bij consumentenalternatieven, en er is geen slaaptracking."
+        },
+        {
+          "q": "Emotiv Insight 2 vs Muse: wat is beter?",
+          "a": "De Emotiv Insight 2 is beter voor EEG-onderzoek en werk met ruwe data; Muse is beter voor begeleide meditatie. De vijf kanalen van Emotiv geven een betere corticale dekking dan Muse plus een academische toolchain, terwijl Muse een grotere bibliotheek met begeleide content heeft."
+        }
+      ]
     },
     "sens-ai": {
-      "verdict": "De meest ambitieuze multimodale headset — EEG plus fotobiomodulatie plus hartslagvariabiliteit (HRV), tegen een premiumprijs die om het juiste gebruiksdoel vraagt.",
-      "productType": "Multimodale headset (EEG + fotobiomodulatie + HRV)"
+      "verdict": "De meest ambitieuze multimodale headset – EEG plus fotobiomodulatie plus HRV, tegen een premium prijs die alleen past bij die specifieke toepassing.",
+      "summary": "Sens.ai is de enige headset in dit overzicht die passieve meting (EEG met vijf kanalen en hartslagvariabiliteit (HRV)) combineert met actieve interventie (transcraniële fotobiomodulatie – nabij-infrarood licht). De programma's combineren de drie modaliteiten in gecombineerde sessies van neurofeedback + licht + HRV, gericht op focus, kalmte, stemming en helderheid. Premium positionering met een lidmaatschap bovenop de hardware van $1,250. Alleen de juiste keuze als je precies die multimodale toepassing zoekt.",
+      "description": "ONDA-review van Sens.ai: premium multimodale headset die EEG met vijf kanalen combineert met transcraniële fotobiomodulatie en HRV-training.",
+      "bestFor": "Het best voor wie specifiek de combinatie EEG + fotobiomodulatie + HRV in één apparaat zoekt en bereid is premium te betalen.",
+      "testNote": "Evidence-based beoordeling – gescoord op basis van productdocumentatie van Sens.ai, de gepubliceerde literatuur over fotobiomodulatie en onafhankelijke reviews uit 2026. Niet hands-on getest door ONDA.",
+      "productType": "Multimodale headset (EEG + fotobiomodulatie + HRV)",
+      "pros": [
+        "De enige headset die EEG + PBM + HRV combineert in één apparaat en programma",
+        "Sterke sessieanalyse over modaliteiten heen – drie biomarkers op één tijdlijn",
+        "Premium afwerking van de hardware en content met voortgangstracking",
+        "Voegt een tweede interventie (fotobiomodulatie) toe aan EEG-neurofeedback – het bewijs voor effecten op de hersenen is nog in opkomst"
+      ],
+      "cons": [
+        "Premium prijs – $1,250 plus een doorlopend lidmaatschap",
+        "Gesloten datamodel – niet voor ontwikkelaars of onderzoekers",
+        "Zware headset – niet om 's nachts te dragen of tijdens beweging",
+        "Nieuwere speler op de markt – ecosysteem minder volwassen dan Muse of Emotiv"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Droge EEG met vijf kanalen plus HRV via een oorclipsensor, plus nabij-infrarode PBM-LED's boven de prefrontale cortex. Signaalkwaliteit van consumentenniveau voor alle drie de modaliteiten.",
+        "training-content": "Multimodale programma's die EEG-neurofeedback, fotobiomodulatie en HRV-training combineren in sessies van 25 minuten. Geen ander consumentenapparaat biedt deze combinatie.",
+        "insights": "Analyse na elke sessie over alle drie de signalen plus geaggregeerde trenddata. De sterkste interpretatie over modaliteiten heen in dit overzicht.",
+        "comfort": "Stevige headset met meerdere sensorarrays – zwaarder dan Muse of Crown. Alleen zittende sessies; niet voor beweging of slaap.",
+        "app-ux": "Verzorgde app met voortgangstracking. Minder volwassen ecosysteem dan Muse – het apparaat is nieuwer op de markt.",
+        "open-data": "Beperkte export van ruwe data; het programma is bewust een gesloten systeem. Geen platform voor ontwikkelaars.",
+        "value": "Hardware van $1,250 plus lidmaatschap ($300/jaar of $75/maand na een proefperiode van 60 dagen). Met het lidmaatschap meegerekend een van de duurste opties in deze categorie."
+      },
+      "content": "## Waar het voorop loopt\n\nSens.ai is de enige headset in dit overzicht die als multimodaal apparaat wordt geleverd. Droge EEG met vijf kanalen over de hoofdhuid, een oorclipsensor voor hartslagvariabiliteit (HRV) en een reeks nabij-infrarode LED's boven de prefrontale cortex voor transcraniële fotobiomodulatie – drie onafhankelijke biomarkers en één onafhankelijke interventie, verweven in één programma van 25 minuten. De sessieanalyse over modaliteiten heen gebruikt echt alle drie de signalen; niets anders in het consumentensegment doet dit.\n\n## Wat zijn de nadelen van Sens.ai?\n\nAllereerst de prijs. Met $1,250 plus een doorlopend lidmaatschap ($300 per jaar na de proefperiode van 60 dagen) is Sens.ai een van de duurste opties in deze categorie – over een paar jaar kost het meer dan de Neurosity Crown, zonder de toegang voor ontwikkelaars van de Crown. Het datamodel is bewust gesloten; export van ruwe data is beperkt. De headset is ook fysiek fors en alleen comfortabel tijdens een zittende sessie, niet bij beweging of slaap. Voor wie één of twee van de modaliteiten wil maar niet alle drie, bieden apparaten met één functie meer waar voor je geld.\n\n## Voor wie is Sens.ai?\n\nKies Sens.ai als je specifiek de multimodale combinatie wilt – EEG + fotobiomodulatie + HRV in één programma – en de prijs acceptabel vindt. Wil je alleen EEG met de diepste content: Muse S Athena. Wil je EEG met open data: Neurosity Crown.\n\n---\n\n## Achtergrond\n\nDe neurowetenschap waarop deze headsets feedback geven – en wat het EEG-signaal wel en niet kan zeggen over mentale toestanden.\n\n- [Digitale dementie en aandachtscontrole](/articles/digital-dementia-attentional-control) – aandacht herstellen met oefening op basis van feedback\n- [Neuroplasticiteit en flow-overklokken](/articles/neuroplasticity-flow-overclocking) – wat flowtoestanden zijn en hoe ze ontstaan\n- [ACC-kalibratie: protocol voor cognitieve controle](/articles/acc-calibration-protocol-cognitive-control) – de prefrontale regelkringen achter cognitieve controle\n",
+      "faq": [
+        {
+          "q": "Is Sens.ai het geld waard?",
+          "a": "Sens.ai is het alleen waard als je specifiek EEG, fotobiomodulatie en HRV in één headset wilt. Het is het enige apparaat dat alle drie combineert in één programma, met sterke sessieanalyse over modaliteiten heen en een premium afwerking, maar met het doorlopende lidmaatschap is het ook een van de duurste headsets in de categorie, en het ecosysteem is minder volwassen dan dat van Muse of Emotiv."
+        },
+        {
+          "q": "Hoeveel kost Sens.ai?",
+          "a": "Sens.ai kost $1,250 voor het apparaat, inclusief een proeflidmaatschap van 60 dagen; daarna kost het lidmaatschap $300 per jaar of $75 per maand. Met het lidmaatschap meegerekend is het een van de duurste headsets in deze categorie. Voor die prijs krijg je een gecombineerd systeem voor EEG, fotobiomodulatie en HRV met content met voortgangstracking, geen eenvoudige meditatiehoofdband."
+        },
+        {
+          "q": "Wat zijn de nadelen van Sens.ai?",
+          "a": "De belangrijkste nadelen zijn de prijs, $1,250 plus een lidmaatschap van $300 per jaar, en een gesloten datamodel dat niet geschikt is voor ontwikkelaars of onderzoekers. De headset is zwaar, dus niet om 's nachts te dragen of tijdens beweging, en als nieuwere speler is het ecosysteem minder volwassen dan dat van Muse of Emotiv."
+        }
+      ]
     },
     "myndlift": {
       "verdict": "Neurofeedback thuis onder klinisch toezicht — toegang via een erkende zorgverlener, met vaste protocollen en het bijhouden van symptomen.",
@@ -566,8 +695,48 @@
       ]
     },
     "neurosky-mindwave-mobile-2": {
-      "verdict": "De goedkoopste serieuze EEG-headset voor consumenten — één kanaal, eenvoudig, maar met een open SDK voor ontwikkelaars en leerlingen.",
-      "productType": "Budget-EEG-headset voor educatie (één kanaal)"
+      "verdict": "De goedkoopste serieuze EEG-headset voor consumenten – één kanaal, eenvoudig, maar met een open SDK voor ontwikkelaars en wie wil leren.",
+      "summary": "NeuroSky MindWave Mobile 2 is het instapproduct voor consumenten-EEG – één elektrode op het voorhoofd plus een referentie-oorclip, gecombineerd met een SDK voor ontwikkelaars en een kleine bibliotheek met apps van derden. De hardware is meer dan tien jaar oud en dat merk je; de waarde zit in het prijskaartje (~$110) en de SDK waarmee studenten, hobbyisten en ontwikkelaars de basis van EEG kunnen leren zonder een apparaat van $1,000+ te kopen.",
+      "description": "ONDA-review van de NeuroSky MindWave Mobile 2: de bekende educatieve EEG-headset met één kanaal en de laagste prijs in de categorie.",
+      "bestFor": "Het best voor studenten, hobbyisten en ontwikkelaars die de goedkoopste serieuze manier zoeken om de basis van EEG te leren.",
+      "testNote": "Evidence-based beoordeling – gescoord op basis van productdocumentatie van NeuroSky, de referentie van de ThinkGear SDK en onafhankelijke reviews uit 2026 van educatieve apparaten. Niet hands-on getest door ONDA.",
+      "productType": "Budget educatieve EEG-headset (één kanaal)",
+      "pros": [
+        "Met ruime voorsprong de goedkoopste serieuze EEG-headset voor consumenten",
+        "Open SDK (ThinkGear) met toegang tot ruwe data via Bluetooth",
+        "Volwassen platform – code, tutorials en voorbeelden uit meer dan tien jaar gebruik",
+        "Geen abonnement nodig"
+      ],
+      "cons": [
+        "EEG met één kanaal – informatief mager",
+        "Geen eigen contentbibliotheek – afhankelijk van apps van derden",
+        "Hardwareontwerp en SDK weerspiegelen de verwachtingen van midden jaren 2010",
+        "Eigen apps grotendeels verlaten door NeuroSky"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Eén elektrode op het voorhoofd plus een referentie-oorclip. Bemonstering en signaalverwerking weerspiegelen hardware van midden jaren 2010 – voldoende om NeuroSky's eigen aandachts- en meditatie-indexen te berekenen (geen gevalideerde metingen), ver achter moderne apparaten met meerdere kanalen.",
+        "training-content": "Geen eigen contentbibliotheek; de ervaring hangt af van apps van derden. Het platform is het apparaat en de SDK, geen contentaanbod.",
+        "insights": "Eenvoudige eSense-metrics voor aandacht / meditatie. Beperkte moderne analyse – een groot deel van het ecosysteem is verouderd.",
+        "comfort": "Lichte headset met een stijve arm; acceptabel voor korte sessies, gedateerde vormgeving.",
+        "app-ux": "Afhankelijk van apps van derden – eigen apps grotendeels verlaten. De gebruikerservaring verschilt sterk per ontwikkelaar.",
+        "open-data": "Open SDK (ThinkGear), toegang tot ruwe data via Bluetooth, geen abonnement. Volwassen in absolute zin, maar ouder dan moderne web-/cloud-SDK's.",
+        "value": "Hardware van ~$110 – de goedkoopste serieuze EEG-headset op de markt in 2026."
+      },
+      "content": "## Waar het voorop loopt\n\nDe MindWave Mobile 2 is de goedkoopste serieuze toegang tot consumenten-EEG. De ThinkGear SDK is goed gedocumenteerd na meer dan tien jaar gebruik door de community, de Bluetooth-stream met ruwe data is open, en met ~$110 is het apparaat de enige optie in dit overzicht die een student of hobbyist met een klein budget kan kopen. Als leerinstrument blijft het nuttig.\n\n## Wat zijn de nadelen van NeuroSky MindWave Mobile 2?\n\nOveral elders. EEG met één kanaal is informatief mager vergeleken met de vier kanalen van Muse, de vijf van Emotiv Insight of de acht van Neurosity Crown. De eigen contentbibliotheek is feitelijk verlaten; de kwaliteit van apps van derden verschilt sterk. Het hele platform begint zijn leeftijd te tonen – dit is geen apparaat van 2024.\n\n## Voor wie is NeuroSky MindWave Mobile 2?\n\nKies NeuroSky MindWave Mobile 2 als je student, ontwikkelaar of hobbyist bent en de goedkoopste serieuze manier zoekt om de basis van EEG te leren en iets te bouwen op de SDK. Voor een moderne consumentenervaring: Muse 2 of FocusCalm. Voor serieus ontwikkelwerk: Neurosity Crown of Emotiv Insight 2.\n\n---\n\n## Achtergrond\n\nDe neurowetenschap waarop deze headsets feedback geven – en wat het EEG-signaal wel en niet kan zeggen over mentale toestanden.\n\n- [Acetylcholine als lens van de aandacht](/articles/acetylcholine-lens-neuro-mechanics) – de neurochemie achter focus\n- [Cognitieve architectuur: neurale doorvoer](/articles/cognitive-architecture-neural-throughput) – een metafoor voor hoeveel informatie de geest aankan\n- [Cognitieve architectuur: nootropische stacks](/articles/cognitive-architecture-nootropic-stacks) – wat nootropische stacks wel en niet kunnen, en waarom headsetscores hun effect niet kunnen tonen\n",
+      "faq": [
+        {
+          "q": "Is de NeuroSky MindWave Mobile 2 het geld waard?",
+          "a": "Het is de moeite waard voor studenten, hobbyisten en ontwikkelaars die de goedkoopste serieuze manier zoeken om de basis van EEG te leren. Het biedt een open ThinkGear SDK met ruwe data via Bluetooth en tien jaar aan tutorials. Het heeft wel maar één kanaal, en de eigen apps zijn grotendeels verlaten."
+        },
+        {
+          "q": "Hoeveel kost de NeuroSky MindWave Mobile 2?",
+          "a": "De NeuroSky MindWave Mobile 2 staat vermeld voor eenmalig $110, zonder abonnement. Daarmee is het met ruime voorsprong de goedkoopste serieuze EEG-headset voor consumenten, en de open ThinkGear SDK kost niets extra."
+        },
+        {
+          "q": "Wat zijn de nadelen van de NeuroSky MindWave Mobile 2?",
+          "a": "De EEG met één kanaal is informatief mager, er is geen eigen contentbibliotheek, hardware en SDK weerspiegelen de verwachtingen van midden jaren 2010, en NeuroSky heeft de eigen apps grotendeels verlaten, waardoor je afhankelijk bent van software van derden. Het blijft een leerinstrument, geen verzorgd consumentenproduct."
+        }
+      ]
     },
     "platinumled-biomax-600": {
       "verdict": "Sterk middelgroot paneel met het rijkste golflengtespectrum en schone EMF-discipline. Bouwkwaliteit van Joovv-niveau voor een prijs een klasse lager.",
@@ -1777,12 +1946,90 @@
       "productType": "Gratis minimalistische ademhalingsapp (box, 4-7-8, eigen patronen)"
     },
     "breathe-to-relax": {
-      "verdict": "Gratis ademhalingsapp, gemaakt door de Amerikaanse militaire telehealth tegen PTSS en stress; leert goed gedocumenteerde buikademhaling, gratis, al is de app zelf alleen in kleine pilotstudies onderzocht.",
-      "productType": "Gratis app van het Amerikaanse ministerie van Defensie voor buikademhaling tegen stress en PTSS"
+      "verdict": "Gratis ademwerk-app, gebouwd door Amerikaanse militaire telezorg voor PTSS en stress; leert kosteloos de goed gedocumenteerde buikademhaling, al bestaan er van de app zelf alleen kleine pilotstudies.",
+      "summary": "Breathe2Relax is de gratis app voor buikademhaling van het Amerikaanse ministerie van Defensie / National Center for Telehealth & Technology, oorspronkelijk ontwikkeld voor de aanpak van PTSS en gevechtsstress bij veteranen. Gepubliceerd onderzoek naar de app zelf beperkt zich tot kleine pilotstudies; de techniek van buikademhaling die hij aanleert is goed gedocumenteerd. De bibliotheek is smal (gericht op buikademhaling / ademhaling in een vast tempo), de gebruikerservaring is gedateerd, maar hij kost niets.",
+      "description": "Breathe2Relax review: gratis ademwerk-app van Amerikaanse militaire telezorg voor PTSS en stress. Alleen kleine pilotstudies; gedateerde app, $0.",
+      "bestFor": "Het best voor wie kosteloos onderbouwde buikademhaling wil leren – vooral in een klinische context of bij PTSS en stressmanagement.",
+      "testNote": "Evidence-based beoordeling – gescoord op basis van de vermeldingen van Breathe2Relax in de App Store / Play Store, documentatie van het US National Center for Telehealth & Technology en gepubliceerde pilotstudies naar de app. Niet hands-on getest door ONDA.",
+      "productType": "Gratis door DoD gebouwde app voor buikademhaling bij stress en PTSS",
+      "pros": [
+        "Leert buikademhaling aan, een goed gedocumenteerde techniek – van de app zelf bestaan alleen kleine pilotstudies",
+        "Volledig gratis, zonder abonnement of advertenties",
+        "Gebouwd door het Amerikaanse ministerie van Defensie / National Center for Telehealth"
+      ],
+      "cons": [
+        "Gedateerde interface uit de tijd van de oorspronkelijke overheidsbouw",
+        "Smal aanbod aan technieken – alleen buikademhaling / ademhaling in een vast tempo",
+        "Geen HRV of moderne biofeedback",
+        "Geen contentbibliotheek of doorlopende ontwikkeling"
+      ],
+      "scoreNotes": {
+        "session-library": "Smalle bibliotheek – gericht op buikademhaling en ademhaling in een vast tempo voor stress / PTSS. Geen contentplatform.",
+        "technique-coverage": "Alleen buikademhaling en ademhaling in een vast tempo. Geen Wim Hof, holotroop ademen of bredere dekking van technieken.",
+        "evidence-grounding": "Geen gerandomiseerde studie naar de app zelf. Gepubliceerd onderzoek naar de app beperkt zich tot kleine pilotstudies: een ongecontroleerde pilot met 31 militairen waarin Breathe2Relax samen met traumasensitieve yoga werd gebruikt (Skopp et al. 2024, Military Psychology) en een kostenanalyse (Luxton et al. 2014). Basisscore voor een product zonder eigen studies; de buikademhaling die hij aanleert is goed gedocumenteerd.",
+        "app-experience": "Gedateerde interface uit de tijd van de oorspronkelijke overheidsbouw. Functioneel, maar mist de afwerking van 2026.",
+        "biofeedback": "Geen HRV. Eenvoudige tracking van sessies.",
+        "value": "Volledig gratis, zonder premiumversie."
+      },
+      "content": "## Waar het voorop loopt\n\nBreathe2Relax is de gratis ademwerk-app van een publieke bron – ontwikkeld door het National Center for Telehealth & Technology van het Amerikaanse ministerie van Defensie voor de zorg bij PTSS en gevechtsstress. Gepubliceerd onderzoek naar de app zelf beperkt zich tot kleine pilotstudies; de buikademhaling die hij aanleert is goed gedocumenteerd.\n\n## Wat zijn de nadelen van Breathe2Relax?\n\nDe belangrijkste nadelen zijn de gebruikerservaring en de reikwijdte. Breathe2Relax is gebouwd voor een specifiek klinisch doel (buikademhaling bij stress en PTSS); de interface is gedateerd, de bibliotheek is smal en de app wordt niet meer actief doorontwikkeld. Het is een gratis hulpmiddel met een klinische insteek, geen contentplatform van 2026.\n\n## Voor wie is Breathe2Relax?\n\nKies Breathe2Relax als je gratis, onderbouwde buikademhaling wilt – vooral in een klinische context of bij PTSS en stressmanagement. Voor een samengestelde bibliotheek: Breathwrk. Voor een moderne gratis interface: iBreathe. Voor aanpasbaarheid op Android: Prana Breath.\n\n---\n\n## Achtergrond\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation) – buikademhaling en vagale tonus\n- [Fasegekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "Werkt Breathe2Relax echt?",
+          "a": "De buikademhaling die hij aanleert is goed gedocumenteerd, maar onderzoek naar de app zelf beperkt zich tot kleine pilotstudies, zoals een ongecontroleerde pilot met 31 militairen waarin hij werd gecombineerd met yoga; er is geen gerandomiseerde studie naar de app. Hij is gebouwd door het US National Center for Telehealth & Technology voor de aanpak van PTSS en gevechtsstress bij veteranen. Hij scoort 7,0/10 op wetenschappelijke onderbouwing en 5,9/10 in totaal."
+        },
+        {
+          "q": "Hoeveel kost Breathe2Relax?",
+          "a": "Breathe2Relax is volledig gratis, zonder premiumversie, abonnement of advertenties. Hij scoort 9,5/10 op prijs-kwaliteit in de beoordeling van ONDA, de best mogelijke prijs. Het compromis is een gedateerde interface en een smalle reikwijdte, beperkt tot buikademhaling en ademhaling in een vast tempo."
+        },
+        {
+          "q": "Voor wie is Breathe2Relax het meest geschikt?",
+          "a": "Breathe2Relax is het meest geschikt voor wie kosteloos onderbouwde buikademhaling wil, vooral in een klinische context of bij PTSS en stressmanagement. Hij is bewust smal en dekt alleen buikademhaling en ademhaling in een vast tempo, zonder HRV-biofeedback, zonder contentbibliotheek en zonder doorlopende ontwikkeling."
+        }
+      ]
     },
     "polar-h10": {
-      "verdict": "Een ECG-borstband die bij jonge gezonde volwassenen in rust vrijwel perfect overeenkwam met een laboratorium-ECG — een referentie-instrument, geen wearable voor de hele dag.",
-      "productType": "ECG-borstband"
+      "verdict": "Een ecg-borstband die bij jonge gezonde volwassenen in rust vrijwel perfect overeenkwam met lab-ecg – een referentie-instrument, geen wearable voor de hele dag.",
+      "summary": "De Polar H10 is een borstband die vaak als referentie dient wanneer andere wearables worden gevalideerd. Zijn elektrische ecg-sensor kwam voor hartslagvariabiliteit (HRV) bij jonge gezonde volwassenen in rust vrijwel perfect overeen met lab-ecg, en hij streamt ruwe data naar elke app. Het nadeel is bewust zo ontworpen – het is een doelbewust meetinstrument, niet iets wat je dag en nacht draagt.",
+      "description": "ONDA-review van de Polar H10: de ecg-borstband die bij jonge gezonde volwassenen in rust nauw overeenkwam met lab-ecg voor HRV.",
+      "bestFor": "Het best voor HRV in rust van bijna labniveau – een meetinstrument, geen wearable voor de hele dag.",
+      "testNote": "Evidence-based beoordeling – gescoord op basis van specificaties van de fabrikant, onafhankelijke reviews uit 2026 en gepubliceerde validatieliteratuur. Niet hands-on getest door ONDA.",
+      "productType": "Ecg-borstband",
+      "pros": [
+        "Ecg-elektroden, niet optisch – dicht bij lab-ecg in rust bij jonge gezonde volwassenen",
+        "Volledig open: ruwe RR-data via Bluetooth en ANT+, met elke app",
+        "Het goedkoopste apparaat hier, zonder abonnement",
+        "Jarenlang betrouwbaar in gebruik"
+      ],
+      "cons": [
+        "Een borstband – niet om dag en nacht te dragen",
+        "Geen slaaptracking of passieve data over de hele dag",
+        "Heeft een app van derden nodig voor echte HRV-analyse",
+        "Moet strak tegen de huid zitten voor een schone meting"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Elektrische ecg gemeten op de borst; dicht bij lab-ecg in rust, tijdens fietsen tot uitputting en staand – bij jonge gezonde volwassenen (twee onafhankelijke studies: Schaffarczyk 2022, Blalock 2026).",
+        "sensor": "Een echt paar ecg-elektroden, geen optische afleiding uit de bloedstroom – dicht bij lab-ecg in rust bij jonge gezonde volwassenen.",
+        "sleep-accuracy": "Geen slaapapparaat – een borstband bepaalt geen slaapfasen en wordt 's nachts niet gedragen.",
+        "data-access": "Zendt ruwe slag-tot-slag-intervallen (RR) uit via Bluetooth en ANT+; werkt met vrijwel elke HRV-app.",
+        "wearability": "Een borstband die je draagt voor een meting of een training – geen passieve tracking 24/7.",
+        "app-ux": "Polar Flow is bruikbaar, maar de H10 komt het best tot zijn recht in combinatie met gespecialiseerde HRV-apps van derden.",
+        "value": "Rond 105 USD, geen abonnement en jarenlang betrouwbaar – het goedkoopste apparaat in deze vergelijking."
+      },
+      "content": "## Waar het voorop loopt\n\nDe Polar H10 is eigenlijk geen wearable – het is een meetinstrument, en in deze vergelijking gebruiken we hem als referentie in rust. Zijn elektrische ecg-sensor leest het signaal van het hart direct af in plaats van het af te leiden uit de bloedstroom, en peer-reviewed validatie vindt een vrijwel perfecte overeenkomst met klinische ecg voor [hartslagvariabiliteit (HRV)](/glossary/heart-rate-variability) in rust bij jonge gezonde volwassenen. Hij zendt ook ruwe slag-tot-slag-intervallen (RR) uit via zowel Bluetooth als ANT+, dus hij werkt met feitelijk elke HRV-app. Voor ongeveer 105 USD zonder abonnement heeft niets anders hier dit soort ecg-validatie in rust of is zo open.\n\n## Wat zijn de nadelen van Polar H10?\n\nHet compromis is bewust. Een borstband draag je niet dag en nacht – er is geen passieve tracking over de hele dag en hij bepaalt helemaal geen slaapfasen, wat hem flink kost op de twee criteria die draaien om 24/7 gebruik in het dagelijks leven. Voor een orthostatische meting 's ochtends of een trainingssessie is hij ideaal; als continue herstelmonitor is het het verkeerde gereedschap.\n\n**Noot 2026.** Niets heeft hem verdrongen. Ook in 2026 wordt de H10 vaak als referentieband gebruikt in validatiestudies van wearables, naast klinische ecg. Als je een optische wearable koopt en wilt weten hoeveel je zijn HRV-getal kunt vertrouwen, is de H10 nog steeds de goedkoopste manier om dat in rust te vergelijken met een meting op basis van ecg.\n\n## Voor wie is Polar H10?\n\nKies de Polar H10 als je HRV-metingen in rust wilt van bijna lab-ecg-niveau – een schoon, app-onafhankelijk signaal voor een gestructureerd ochtendprotocol, of om een ander apparaat te valideren – en je bereid bent daarvoor een band om te doen. Wil je HRV passief verzamelen terwijl je slaapt, combineer hem dan met een van de ringen of banden hier, of kies in plaats daarvan een van die.\n\n---\n\n## Achtergrond\n\nDe wetenschap achter waarom HRV het signaal is dat het volgen waard is – en hoe het lichaam het voortbrengt.\n\n- [Voorspelt HRV reactietijd en focus?](/articles/nervous-system-ping-latency) – wat HRV in rust wel en niet zegt over aandacht en zelfbeheersing\n- [Systeemcoherentie op resonantiefrequentie](/articles/resonant-frequency-system-coherence) – waarom 5,5–6 ademhalingen per minuut de sweet spot is voor HRV-training\n- [Interoceptieve precisie en sensorkalibratie](/articles/interoceptive-precision-sensor-calibration) – waarom je eigen waarneming de onderliggende basislijn is waartegen HRV meet\n",
+      "faq": [
+        {
+          "q": "Hoe nauwkeurig is de Polar H10 voor HRV?",
+          "a": "Bij jonge gezonde volwassenen in rust kwam hij vrijwel perfect overeen met lab-ecg: het is een ecg-borstband die het elektrische signaal van het hart direct afleest. Er zijn geen vergelijkbare data tijdens inspanning of bij oudere of klinische groepen."
+        },
+        {
+          "q": "Kan de Polar H10 HRV 's nachts of slaap meten?",
+          "a": "Niet echt. Het is een borstband voor metingen en trainingen, bepaalt geen slaapfasen en is niet ontworpen om 24/7 te dragen. Combineer hem met een ring of band voor passieve nachtelijke data."
+        },
+        {
+          "q": "Hoeveel kost de Polar H10 en heeft hij een abonnement nodig?",
+          "a": "Ongeveer $105 eenmalig ($104.95 bij Polar US), geen abonnement. Hij streamt ruwe slag-tot-slag-intervallen (RR) via Bluetooth en ANT+ naar bijna elke HRV-app – de goedkoopste, meest open ecg-borstband."
+        }
+      ]
     },
     "calm": {
       "verdict": "De meest verzorgde app voor slaap en ontspanning — een enorme, prachtig gemaakte bibliotheek, ondermijnd door een magere gratis versie.",
@@ -1797,12 +2044,92 @@
       "productType": "Slimme ring"
     },
     "ringconn-gen-2": {
-      "verdict": "De slimme ring met de beste prijs-kwaliteit — ~12 dagen batterij, geen abonnement en degelijke tracking voor ongeveer de helft van de langetermijnkosten van een Oura.",
-      "productType": "Slimme ring"
+      "verdict": "De slimme ring met de beste prijs-kwaliteit – een accu van 10–12 dagen, geen abonnement en degelijke tracking voor ongeveer de helft van de kosten van een Oura op lange termijn.",
+      "summary": "De RingConn Gen 2 is de prijs-kwaliteitkeuze onder de slimme ringen – een accu van 10–12 dagen, geen abonnement en nachtelijke tracking die reviewers bruikbaar vinden voor trends, voor ongeveer de helft van de kosten op lange termijn. Het compromis: eenvoudigere software en meer gesloten data.",
+      "description": "ONDA-review van de RingConn Gen 2, de slimme ring met de beste prijs-kwaliteit: accu van 10–12 dagen, geen abonnement, degelijke HRV.",
+      "bestFor": "Het best voor de langste accuduur en de beste prijs-kwaliteit in een slimme ring, zonder abonnement.",
+      "testNote": "Evidence-based beoordeling – gescoord op basis van specificaties van de fabrikant, onafhankelijke reviews uit 2026 en gepubliceerde validatieliteratuur. Niet hands-on getest door ONDA.",
+      "productType": "Slimme ring",
+      "pros": [
+        "Een accu van 10–12 dagen (afhankelijk van de maat) – de langste in deze vergelijking",
+        "Geen abonnement, en op lange termijn veel goedkoper dan een Oura",
+        "Lichte titanium constructie, volledig waterdicht",
+        "Voegt screening op slaapapneu toe"
+      ],
+      "cons": [
+        "Functionele in plaats van verzorgde app",
+        "Gesloten data – geen open API, beperkte export",
+        "Geen enkele metric is de beste in zijn klasse",
+        "Minder verfijnd ecosysteem dan Oura of Samsung"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Optische nachtelijke HRV die reviewers bruikbaar vinden voor trends; er bestaat alleen een preprint, en er is geen peer-reviewed onafhankelijke validatie tegen ecg gevonden (stand oktober 2026). ONDA-regel: zonder eigen onafhankelijke validatie scoort een apparaat maximaal 7.5 als eerdere generaties zijn gevalideerd, 7.0 als dat niet zo is.",
+        "sensor": "Optische PPG in een lichte titanium ring.",
+        "sleep-accuracy": "Bekwame slaaptracking, en hij voegt screening op slaapapneu toe.",
+        "data-access": "Een gesloten app – geen open API en beperkte export; de data blijft bij RingConn.",
+        "wearability": "Een accu van 10–12 dagen (afhankelijk van de maat) – de beste in deze vergelijking – in een titanium ring van 2mm die volledig waterdicht is.",
+        "app-ux": "Een functionele app in plaats van een verzorgde.",
+        "value": "Ongeveer de helft van de kosten van een Oura op lange termijn, zonder abonnement – hier de leider in prijs-kwaliteit."
+      },
+      "content": "## Waar het voorop loopt\n\nDe RingConn Gen 2 is de prijs-kwaliteitkeuze onder de slimme ringen. Op termijn kost hij ongeveer de helft van een Oura Ring 4, vraagt hij geen abonnement, en zijn accu is het opvallendste cijfer in deze hele vergelijking – ongeveer twaalf dagen per lading, met een case die dat tot maanden verlengt. Hij is licht, van titanium, goed waterdicht en voegt zelfs screening op slaapapneu toe. Voor [hartslagvariabiliteit (HRV)](/glossary/heart-rate-variability) en slaap vinden reviewers hem bruikbaar voor trends, al bestaat er alleen een preprint en is er geen peer-reviewed onafhankelijke validatie gevonden (stand oktober 2026).\n\n## Wat zijn de nadelen van RingConn Gen 2?\n\nHet budget merk je aan de software en de data. De app is functioneel in plaats van verzorgd, er is geen open API, en je data blijft grotendeels in de RingConn-app. Geen van de afzonderlijke metrics is de beste in zijn klasse – dit is een apparaat dat in alles goed is en in dit veld alleen het best is in accuduur en prijs.\n\n**Noot 2026.** De Gen 2 blijft de maatstaf voor prijs-kwaliteit, maar het veld eromheen is verder gegaan: de [RingConn Gen 3](/reviews/ringconn-gen-3) en Oura's Ring 5 voegen functies toe, al heeft geen van beide onafhankelijke nauwkeurigheidsdata die laten zien dat ze de Gen 2 verslaan. Wil je de nieuwste hardware, kijk dan naar de nieuwere generatie in plaats van deze.\n\n## Voor wie is RingConn Gen 2?\n\nKies de RingConn Gen 2 als je het meeste wilt van wat een premium ring doet – nachtelijke HRV, slaap, stress – voor merkbaar minder geld en zonder terugkerende kosten, en accuduur belangrijker vindt dan verzorgde software of open data. Wil je de diepste app en een ring met een onafhankelijke (zij het kleine) ecg-controle, dan loopt de Oura Ring 4 nog steeds voorop.\n\n---\n\n## Achtergrond\n\nDe wetenschap achter waarom HRV het signaal is dat het volgen waard is – en hoe het lichaam het voortbrengt.\n\n- [Anti-entropie neurale architectuur](/articles/anti-entropy-neural-architecture) – HRV als dagelijks onderhoudssignaal van het autonome zenuwstelsel\n- [Voorspelt HRV reactietijd en focus?](/articles/nervous-system-ping-latency) – wat HRV in rust wel en niet zegt over aandacht en zelfbeheersing\n- [HRV als fouttolerante buffer](/articles/fault-tolerant-human-hrv-buffer) – waarom een brede HRV-bandbreedte is waar je eigenlijk voor traint\n",
+      "faq": [
+        {
+          "q": "Werkt de RingConn Gen 2 zonder abonnement?",
+          "a": "Ja – eenmalig $299 zonder abonnement, ongeveer de helft van de kosten van een Oura op lange termijn. Alle functies zijn bij aankoop ontgrendeld."
+        },
+        {
+          "q": "Hoe lang gaat de accu van de RingConn Gen 2 mee?",
+          "a": "Ongeveer 10–12 dagen per lading, afhankelijk van de maat – en de oplaadcase verlengt dat tot maanden."
+        },
+        {
+          "q": "Is de RingConn Gen 2 nauwkeurig voor HRV?",
+          "a": "Reviewers vinden hem bruikbaar voor trends, maar er bestaat alleen een preprint: er is geen peer-reviewed onafhankelijke validatie van zijn HRV tegen ecg gevonden (stand oktober 2026). Hij voegt ook screening op slaapapneu toe. Je kiest hem het best voor accuduur en prijs-kwaliteit, niet voor de scherpste afzonderlijke metric."
+        }
+      ]
     },
     "apple-watch-series-11": {
-      "verdict": "Een uitstekende allround smartwatch, maar een vrijblijvend HRV-hulpmiddel — hij neemt steekproeven in plaats van te tracken.",
-      "productType": "Smartwatch"
+      "verdict": "Een uitstekende allround smartwatch, maar een vrijblijvend HRV-hulpmiddel – hij doet steekproeven in plaats van te tracken.",
+      "summary": "De Apple Watch Series 11 is het meest capabele apparaat in deze vergelijking en het enige zonder abonnement. Als specifieke tracker voor hartslagvariabiliteit (HRV) is hij echter de zwakste van de drie: hij registreert HRV in onregelmatige steekproeven op de achtergrond in plaats van via een gestructureerd nachtelijk protocol.",
+      "description": "ONDA-review van de Apple Watch Series 11 als HRV-tracker: een uitstekende allround smartwatch, maar een vrijblijvend hulpmiddel voor herstel.",
+      "bestFor": "Het best voor één apparaat dat alles doet – met HRV als bijkomende metric.",
+      "testNote": "Evidence-based beoordeling – gescoord op basis van specificaties van de fabrikant, onafhankelijke reviews uit 2026 en gepubliceerde validatieliteratuur. Niet hands-on getest door ONDA.",
+      "productType": "Smartwatch",
+      "pros": [
+        "De meest capabele hardware hier – optische sensor plus een echte ecg",
+        "Geen abonnement; het apparaat is volledig van jou",
+        "Open data via HealthKit en een diep ecosysteem van derden",
+        "Een echt multifunctioneel apparaat, geen tracker voor één taak"
+      ],
+      "cons": [
+        "HRV wordt steekproefsgewijs gemeten, niet continu 's nachts gevolgd",
+        "Apple behandelt HRV niet als primaire metric",
+        "Een accu die een dag meegaat maakt consequent 's nachts dragen lastig",
+        "Slaaptracking blijft achter bij de gespecialiseerde apparaten"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "HRV wordt vastgelegd in onregelmatige steekproeven op de achtergrond, niet via een continu nachtelijk protocol – een schaars, ongelijkmatig verslag.",
+        "sensor": "Sterke hardware: een optische sensor gecombineerd met een echte ecg met één afleiding.",
+        "sleep-accuracy": "Slaaptracking is bruikbaar maar loopt achter op de gespecialiseerde trackers, en de accuduur ontmoedigt dragen gedurende de hele nacht.",
+        "data-access": "HealthKit is relatief open – brede ondersteuning voor apps van derden en eenvoudige export.",
+        "wearability": "Een accu die ongeveer een dag meegaat betekent dagelijks opladen, wat consequente nachtelijke meting tegenwerkt.",
+        "app-ux": "Uitstekende software over het geheel, maar HRV zit verstopt – de Vitals-weergave toont het niet als hoofdmetric.",
+        "value": "Een eenmalige aankoop zonder abonnement, en een echt multifunctioneel apparaat voor het geld."
+      },
+      "content": "## Waar het voorop loopt\n\nAls stuk hardware is de Apple Watch Series 11 het meest capabele apparaat in deze vergelijking: een optische sensor gecombineerd met een echte ecg met één afleiding, een helder scherm en het diepste ecosysteem van derden via HealthKit. Het is ook het enige apparaat hier zonder abonnement – met de aankoopprijs is het apparaat volledig van jou. Voor wie één wearable wil die meldingen, trainingen, betalingen en gezondheid afhandelt, kan niets anders hier concurreren.\n\n## Wat zijn de nadelen van Apple Watch Series 11?\n\nVoor gericht werk met hartslagvariabiliteit (HRV) is hij de zwakste van de drie. Het horloge registreert HRV in onregelmatige steekproeven op de achtergrond in plaats van via een gestructureerd nachtelijk protocol, en Apples eigen Vitals-weergave toont HRV niet eens als hoofdmetric. Samen met een accu die in de praktijk dagelijks moet worden opgeladen – lastig voor consequent dragen gedurende de hele nacht – levert dat een schaars, ongelijkmatig HRV-verslag op naast Oura of Whoop.\n\n**Noot 2026.** Onafhankelijke vergelijkingen in 2026 hebben dit beeld niet veranderd: de optische HRV-metingen van de Series 11 zijn op zichzelf redelijk, maar de schaarse steekproefsgewijze bemonstering – niet de sensorkwaliteit – is de beperking. Voor een schone nachtelijke trend presteert een ring die de hele nacht continu meet nog steeds beter, hoe goed de hardware van het horloge ook is.\n\n**Opgevolgd (september 2026).** De [Apple Watch Series 12](/reviews/apple-watch-series-12) heeft dit model vervangen als Apples huidige horloge en pakt de HRV-zwakte hierboven direct aan: het nieuwe Health Sensing System meet HRV ongeveer 24× vaker en splitst het in Recovery HRV en Overall HRV. Als HRV je reden is om te kopen, [is de Series 12 de upgrade](/reviews/vs/apple-watch-series-12-vs-series-11); de Series 11 blijft een goede koop zolang hij in de aanbieding is.\n\n## Voor wie is Apple Watch Series 11?\n\nKies de Apple Watch Series 11 als je één uitstekende allround smartwatch wilt en HRV ziet als nuttige bonus in plaats van als hoofddoel. Als nachtelijke HRV en herstel je belangrijkste reden zijn om te kopen, geeft een gespecialiseerde tracker je een veel schoner signaal.\n\n---\n\n## Achtergrond\n\nDe wetenschap achter waarom HRV het signaal is dat het volgen waard is – en hoe het lichaam het voortbrengt.\n\n- [Voorspelt HRV reactietijd en focus?](/articles/nervous-system-ping-latency) – wat HRV in rust wel en niet zegt over aandacht en zelfbeheersing\n- [HRV als fouttolerante buffer](/articles/fault-tolerant-human-hrv-buffer) – waarom een brede HRV-bandbreedte is waar je eigenlijk voor traint\n- [De baroreflex en de verschuiving naar 0.1 Hz](/articles/baroreflex-01hz-shift) – de signatuur van ademhaling op resonantiefrequentie in je HRV-curve\n",
+      "faq": [
+        {
+          "q": "Is de Apple Watch Series 11 goed voor HRV?",
+          "a": "Voor gericht HRV-gebruik is hij de zwakste van de topopties: hij registreert HRV in onregelmatige steekproeven op de achtergrond, niet via een continu nachtelijk protocol, en zijn accu van ongeveer één dag ontmoedigt dragen gedurende de hele nacht. Het is een geweldige smartwatch, maar een vrijblijvend HRV-hulpmiddel."
+        },
+        {
+          "q": "Heeft de Apple Watch Series 11 een abonnement nodig?",
+          "a": "Nee. Het is een eenmalige aankoop van $399 zonder abonnement voor de gezondheids- en HRV-functies, en hij heeft een echte ecg met één afleiding."
+        },
+        {
+          "q": "Apple Watch of een ring voor HRV?",
+          "a": "Voor continue nachtelijke HRV is een ring zoals Oura of RingConn makkelijker de hele nacht te dragen, terwijl de Apple Watch steekproeven doet in plaats van continu te tracken; in nachtelijke metingen bij 13 mensen (Dial 2025) behoorde de Oura Ring 4 tot de apparaten die het dichtst bij ecg zaten. Kies het horloge als je één smartwatch wilt die alles doet, met HRV als bonus."
+        }
+      ]
     },
     "fitbit-charge-6": {
       "verdict": "De betaalbare instap in HRV-tracking — een goedkoop, betrouwbaar bandje, maar een basaal hersteltool met een hardnekkige Premium-upsell.",
@@ -1817,9 +2144,53 @@
       "productType": "Consumentenmat met PEMF + infrarood + kristallen"
     },
     "omnilux-contour-face": {
-      "verdict": "Flexibel siliconen met het standaardpaar rood + nabij-infrarood, FDA-cleared voor rimpels (510(k) K191629). Er is geen studie naar de Contour zelf gepubliceerd; de gepubliceerde studies van Omnilux gaan over andere modellen.",
-      "productType": "Flexibel siliconen roodlicht-gezichtsmasker",
-      "editorialAdjustment": "Eerlijkheid in marketing — de productpagina van de Contour noemt de Omnilux-technologie ‘klinisch bewezen’ en verwijst naar ‘meer dan 40 peer-reviewed klinische studies’, maar geen daarvan gaat over de Contour zelf; de gepubliceerde studies gaan over andere Omnilux-modellen (gecontroleerd in oktober 2026). Dit wordt hier gescoord, niet onder bewijs."
+      "verdict": "Flexibele siliconen met het standaardpaar rood + nabij-infrarood, door de FDA toegelaten voor rimpels (510(k) K191629). Geen gepubliceerde studie naar de Contour zelf; de gepubliceerde studies van Omnilux gaan over andere modellen.",
+      "summary": "Omnilux Contour Face is een LED-masker voor thuis van een merk waarvan de grotere klinische panelen in dermatologiepraktijken worden gebruikt. Het is door de FDA toegelaten voor rimpels in het hele gezicht (510(k) K191629, toegelaten op basis van gelijkwaardigheid aan een eerder LED-masker zonder klinische data). Flexibele siliconen (Omnilux noemt het medische kwaliteit) voor gebruik zonder toezicht, 132 LED's (rood 633 nm + nabij-infrarood 830 nm), sessieprotocol van 10 minuten. Er is geen peer-reviewed studie naar de Contour zelf gepubliceerd; de gepubliceerde studies van Omnilux gaan over andere modellen.",
+      "description": "ONDA-review van de Omnilux Contour Face: flexibel siliconen roodlichtmasker, FDA-toegelaten voor rimpels, zonder gepubliceerde studie naar het masker zelf.",
+      "bestFor": "Het best voor wie een comfortabel siliconen masker met rood + nabij-infrarood wil en een eenvoudige routine van 10 minuten.",
+      "testNote": "Evidence-based beoordeling – gescoord op basis van productdocumentatie van Omnilux, FDA 510(k) K191629 en het bijbehorende apparaatdossier van de FDA, en een zoektocht naar gepubliceerde studies (geen naar de Contour zelf; studies naar andere Omnilux-modellen zijn ook gecontroleerd). Niet hands-on getest door ONDA.",
+      "productType": "Flexibel siliconen roodlichtmasker voor het gezicht",
+      "pros": [
+        "Door de FDA toegelaten voor rimpels in het hele gezicht (510(k) K191629)",
+        "Rood 633 nm + nabij-infrarood 830 nm – het paar dat het meest wordt gebruikt in huidstudies",
+        "Flexibele siliconen (medische kwaliteit, volgens Omnilux) – het comfortabelste masker in onze beoordeling",
+        "Gematigde, plausibele opgegeven bestralingssterkte – geen opgeblazen piekclaims"
+      ],
+      "cons": [
+        "Geen gepubliceerde studie naar de Contour zelf; de gepubliceerde studies van Omnilux gaan over andere modellen",
+        "Premium prijs ($395)",
+        "Geen nekflap bij de standaard Contour (apart verkrijgbaar)",
+        "Eén protocol van 10 minuten – geen geavanceerde programmeerbaarheid",
+        "Geen varianten met blauw / amber licht (bewust zo ontworpen)"
+      ],
+      "scoreNotes": {
+        "irradiance": "Omnilux geeft ongeveer 30 mW/cm² op voor een sessie van 10 minuten – een gematigd, plausibel cijfer in plaats van een opgeblazen piekclaim. Het cijfer van het merk; geen onafhankelijke meting gevonden.",
+        "wavelength-coverage": "Rood 633 nm + nabij-infrarood 830 nm – de twee golflengten die het meest worden gebruikt in huidstudies. Geen afleiding met blauw / amber.",
+        "led-count-coverage": "132 LED's gelijkmatig verdeeld over voorhoofd, wangen en kaak. Geen nekflap bij de standaard Contour; de nekuitbreiding is apart verkrijgbaar.",
+        "clinical-evidence": "Geen gepubliceerde of geregistreerde studie naar de Contour FACE zelf (Europe PMC, ClinicalTrials.gov en de eigen bibliografie van Omnilux, doorzocht in oktober 2026). Gepubliceerde Omnilux-studies gaan over andere modellen en tellen dus niet voor de Contour; de studies die we hebben gecontroleerd – het klinische Revive-paneel (2005), een herenmasker dat Omnilux vermeldt als Omnilux Men (2023) en het Omnilux Clear-acnemasker (2025) – zijn bovendien elk verbonden aan de fabrikant (auteurs in dienst, een auteur uit de adviesraad van Omnilux, financiering door GlobalMed). De eigen Contour-studie van het merk is niet gepubliceerd en werkt met zelfgerapporteerde resultaten (volgens het bedrijf). FDA 510(k) K191629 (vrij verkrijgbaar, rimpels in het hele gezicht; toegelaten op basis van gelijkwaardigheid aan een eerder LED-masker zonder klinische data) wordt neutraal gescoord.",
+        "comfort-fit": "Flexibele siliconen (medische kwaliteit, volgens Omnilux) – een van de comfortabelste draagbare maskers. Sluit natuurlijk aan op het gezicht, verstelbare band, gebruik zonder toezicht is prima.",
+        "value": "$395 – premium prijs voor siliconencomfort (het comfortabelste in onze beoordeling) en het standaardpaar rood + nabij-infrarood; geen apparaatspecifieke studie achter de prijs."
+      },
+      "editorialAdjustment": "Eerlijkheid in marketing – de productpagina van de Contour noemt de technologie van Omnilux “klinisch bewezen” en verwijst naar “meer dan 40 peer-reviewed klinische studies”, maar geen daarvan gaat over de Contour zelf; de gepubliceerde studies gaan over andere Omnilux-modellen (gecontroleerd in oktober 2026). Dit wordt hier gescoord, niet onder bewijs.",
+      "content": "## Waar het voorop loopt\n\nOmnilux Contour Face loopt voorop in comfort en gebruikt het standaardpaar rood + nabij-infrarood. Het masker is door de FDA toegelaten voor rimpels in het hele gezicht (510(k) K191629); toelating betekent dat de FDA het in wezen gelijkwaardig vond aan een eerder LED-masker – hier zonder klinische data – niet een goedkeuring door de FDA. Er is geen peer-reviewed studie naar de Contour zelf gepubliceerd. De gepubliceerde studies van Omnilux gaan over andere modellen; de studies die we hebben gecontroleerd (het klinische Revive-paneel, 2005; een herenmasker dat Omnilux vermeldt als Omnilux Men, 2023; het Omnilux Clear-acnemasker, 2025) zijn bovendien elk verbonden aan de fabrikant. De eigen Contour-studie van het merk is niet gepubliceerd en werkt met zelfgerapporteerde resultaten. Flexibele siliconen (medische kwaliteit, volgens Omnilux) bieden het beste draagcomfort in de categorie.\n\n## Wat zijn de nadelen van Omnilux Contour Face?\n\nPrijs en reikwijdte. Met $395 zit Omnilux in het premiumsegment; concurrenten voor de helft van de prijs (LightStim, Solawave) dekken lichtere toepassingen. Eén protocol van 10 minuten – geen programmeerbaarheid voor wie modi / sessies wil. Geen nekflap bij de standaard Contour zonder bij te betalen.\n\n## Voor wie is Omnilux Contour Face?\n\nKies Omnilux Contour Face als je de comfortabelste siliconen pasvorm in onze beoordeling wilt, in een masker met rood + nabij-infrarood. Voor een groter marktaandeel bij consumenten: CurrentBody Series 2. Voor een alternatief van een dermatologiemerk: Dr. Dennis Gross SpectraLite. Voor een handapparaat tegen een lagere prijs: LightStim.\n\n---\n\n## Achtergrond\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation) – fotobiomodulatie en cellulair ATP\n- [Mitochondriale biogenese](/articles/mitochondrial-biogenesis-cellular-power-grid) – rood licht als aanvulling voor mitochondriale energie\n- [Ancestrale synchronisatie – circadiane ankers](/articles/ancestral-sync-circadian-anchors)\n",
+      "faq": [
+        {
+          "q": "Is de Omnilux Contour Face het geld waard?",
+          "a": "De Omnilux Contour Face is het waard als comfort voor jou het belangrijkst is. Het masker is door de FDA toegelaten voor rimpels (510(k) K191629), maar er is geen studie naar dit masker zelf gepubliceerd; de gepubliceerde studies van Omnilux gaan over andere modellen. Het heeft een gematigde, plausibele opgegeven bestralingssterkte en, in onze beoordeling, de comfortabelste pasvorm, dankzij flexibele siliconen (medische kwaliteit, volgens Omnilux). Programmeerbaarheid is minimaal."
+        },
+        {
+          "q": "Hoeveel kost de Omnilux Contour Face?",
+          "a": "De Omnilux Contour Face staat vermeld voor $395. De nekflap zit niet bij de standaard Contour en is apart verkrijgbaar, dus reken op extra kosten als je naast het gezicht ook de nek wilt behandelen."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Omnilux Contour Face?",
+          "a": "Het heeft een premium prijs van $395, de standaardversie heeft geen nekflap, er is maar één protocol van 10 minuten zonder geavanceerde programmeerbaarheid, en er zijn geen varianten met blauw of amber licht (bewust zo ontworpen). Er is geen studie naar het masker zelf gepubliceerd."
+        },
+        {
+          "q": "Omnilux Contour Face vs Lumara Viso: wat is beter?",
+          "a": "Geen van beide maskers heeft een eigen gepubliceerde studie. Omnilux is goedkoper ($395); de Lumara Viso biedt meer LED's, drie golflengten en een meegeleverde nekflap, en kost meer: $650."
+        }
+      ]
     },
     "higherdose-red-light-face-mask": {
       "verdict": "Beste gebruikservaring van een consumentenmerk onder de roodlichtmaskers — eenvoudige controller, flexibele siliconen, volgens het merk 50 mW/cm². Weinig klinisch bewijs; merkuitstraling boven technische diepgang.",
@@ -2450,8 +2821,47 @@
       "productType": "Premium 3-in-1 IR-cabinesauna (nabij, midden, ver)"
     },
     "finnleo-hallmark": {
-      "verdict": "Een in Finland gebouwde traditionele binnensauna — premium Finse bouw, volledige convectiewarmte, het best onderzochte saunamechanisme.",
-      "productType": "Traditionele Finse binnensauna (convectie)"
+      "verdict": "Een in Finland gebouwde traditionele binnensauna – premium Finse constructie, volledige convectiewarmte, het diepste onderzoeksmechanisme rond sauna's.",
+      "summary": "Finnleo Hallmark is de in Finland gebouwde traditionele binnensauna voor wie het echte werk wil. Kachel ontworpen door Helo (3 kW–9 kW afhankelijk van de cabinegrootte), betimmering van Fins hemlock of Noordse witte spar, volledige convectiewarmte (80–95°C) met löyly-stoom. In Finland ontworpen voor het warmteprofiel waarop de Finse cohortstudies zijn gebaseerd.",
+      "description": "ONDA-review van de Finnleo Hallmark: de in Finland gebouwde traditionele binnensauna met premium constructie van hemlock of Noordse witte spar.",
+      "bestFor": "Het best voor wie de premium traditionele Finse sauna wil met warmteafgifte ontworpen door Helo.",
+      "testNote": "Evidence-based beoordeling – gescoord op basis van productdocumentatie van Finnleo, de Finse onderzoeksliteratuur over sauna's en onafhankelijke reviews uit 2026. Niet hands-on getest door ONDA.",
+      "productType": "Traditionele Finse binnensauna (convectie)",
+      "pros": [
+        "Premium Finse productieachtergrond",
+        "Kachel ontworpen door Helo met ondersteuning voor löyly-stoom",
+        "Constructie van Fins hemlock of Noordse witte spar",
+        "Diepste gepubliceerde onderzoeksbasis (observationele Finse cohortstudies)"
+      ],
+      "cons": [
+        "Geen infrarood – ander mechanisme dan infraroodcabines",
+        "Premium prijs – $6K+ voor de instapconfiguratie",
+        "Alleen voor binnen, met eisen aan ventilatie",
+        "Grotere kachels vereisen een 220V-aansluiting"
+      ],
+      "scoreNotes": {
+        "heat-source": "Finse convectiekachel ontworpen door Helo – de gouden standaard voor warmteafgifte in een Finse sauna, met ondersteuning voor löyly-stoom.",
+        "build": "Fins hemlock of Noordse witte spar. Tientallen jaren Finse productieachtergrond. 5 jaar garantie op de constructie.",
+        "emf": "Traditionele convectie – geen elektronica in de warmteafgifte. EMF is geen issue.",
+        "form-factor": "Installatie als binnencabine. Configuraties voor 1–6 personen. Vereist planning van ventilatie en 220V voor grotere kachels.",
+        "evidence": "De Finse cohortstudies naar cardiovasculaire sterfte en dementierisico zijn uitgevoerd met dit type sauna. De diepste bewijsbasis in de saunacategorie, al is die observationeel (alleen mannen; verbanden, geen oorzaak).",
+        "value": "$6,000–$12,000+ afhankelijk van de configuratie. Premium prijs passend bij de Finse achtergrond."
+      },
+      "content": "## Waar het voorop loopt\n\nFinnleo Hallmark is de premium traditionele Finse binnensauna. In Finland gebouwd, kachel ontworpen door Helo, constructie van hemlock of Noordse spar, volledige convectiewarmte met löyly. Dit is het formaat waarop de Finse cohortstudies naar hart en vaten en cognitie zijn gebaseerd – de diepste bewijsbasis in de saunacategorie zit achter dit formaat. Die studies zijn observationeel, bij Finse mannen van middelbare leeftijd: ze tonen verbanden, geen bewijs dat de sauna het voordeel veroorzaakt.\n\n## Wat zijn de nadelen van Finnleo Hallmark?\n\nGeen infrarood. Premium prijs. Installatie binnen met eisen aan ventilatie. De meeste kopers van een eerste sauna komen uit bij infrarood of budgetconvectie; Finnleo is voor wie specifiek de traditionele ervaring met Finse achtergrond wil.\n\n## Voor wie is Finnleo Hallmark?\n\nKies Finnleo Hallmark als een traditionele Finse binnensauna met premium Finse productie het beslissende criterium is. Voor een traditionele buitensauna in tonvorm: Almost Heaven Salem. Voor een infraroodcabine: Sunlighten of Clearlight.\n\n---\n\n## Achtergrond\n\nAchtergrond bij de ideeën achter blootstelling aan warmte – grotendeels hypothesen, geen effecten die bij mensen zijn aangetoond.\n\n- [Mitochondriale biogenese: het cellulaire stroomnet](/articles/mitochondrial-biogenesis-cellular-power-grid) – het idee dat hittestress mitochondriën beïnvloedt (niet aangetoond bij mensen)\n- [Mitochondriaal DNA en rood licht](/articles/mitochondrial-dna-red-light) – hoe nabij-infrarode fotonen mitochondriën bereiken – het mechanisme waar makers van infraroodsauna's naar verwijzen (niet aangetoond voor sauna's)\n- [Longevity-hardware en cellulaire opruiming](/articles/longevity-hardware-cellular-cleanup) – hoe de sauna past in de bredere stack van autofagie / mitofagie\n",
+      "faq": [
+        {
+          "q": "Hoeveel kost een Finnleo Hallmark-sauna?",
+          "a": "Een Finnleo Hallmark voor 2 personen binnen kost ongeveer $8,000, en zelfs de instapconfiguratie kost meer dan $6,000. Daarvoor krijg je in Finland gebouwde betimmering van hemlock of Noordse witte spar en een kachel ontworpen door Helo. Grotere kachels hebben ook een 220V-aansluiting nodig, wat het installatiebudget kan verhogen."
+        },
+        {
+          "q": "Is de Finnleo Hallmark een infraroodsauna?",
+          "a": "Nee. De Finnleo Hallmark is een traditionele Finse sauna, geen infraroodcabine. Hij gebruikt volledige convectiewarmte van 80–95°C uit een kachel ontworpen door Helo, met löyly-stoom wanneer je water op de stenen giet. Dat is het warmteprofiel waarop de Finse cohortstudies naar saunagebruik zijn gebaseerd."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Finnleo Hallmark?",
+          "a": "De belangrijkste nadelen zijn prijs, plaatsing en stroom. Hij heeft een premium prijs, is alleen voor binnen met eisen aan ventilatie, en grotere kachels vereisen een 220V-aansluiting. Hij werkt ook via een ander mechanisme dan infraroodcabines, dus wie specifiek infrarood zoekt, kan beter elders kijken."
+        }
+      ]
     },
     "saunaspace-faraday": {
       "verdict": "De premium nabij-IR-sauna voor biohackers — gloeilampstralers, volledige kooi van Faraday, iets anders dan full-spectrum-IR.",
@@ -2466,8 +2876,47 @@
       "productType": "Draagbare IR-saunadeken"
     },
     "therasage-thera-sauna-personal": {
-      "verdict": "Een degelijke IR-sauna voor biohackers in het middensegment — full-spectrum, behoorlijke EMF-discipline, toegankelijke prijs voor dit segment.",
-      "productType": "IR-sauna in het middensegment (tent- / cabineconfiguraties)"
+      "verdict": "Een degelijke infraroodsauna in het middensegment voor biohackers – volledig spectrum, behoorlijke EMF-discipline, toegankelijke prijs voor het segment.",
+      "summary": "Therasage TheraSauna Personal vult het gat tussen draagbare budgetmodellen (HigherDose) en premium cabines (Sunlighten, Clearlight). Infrarood met volledig spectrum, documentatie van lage EMF, configuraties als tent en als cabine. Een merk dat zich op biohackers richt, zonder de premium prijzen van Sunlighten of SaunaSpace.",
+      "description": "ONDA-review van Therasage TheraSauna Personal: infraroodsauna in het middensegment, als tent of cabine, gepositioneerd voor biohackers.",
+      "bestFor": "Het best voor biohackers die infrarood met volledig spectrum willen in een cabine of tent tegen een prijs in het middensegment.",
+      "testNote": "Evidence-based beoordeling – gescoord op basis van productdocumentatie van Therasage en onafhankelijke reviews uit 2026. Niet hands-on getest door ONDA.",
+      "productType": "Infraroodsauna in het middensegment (tent / cabine)",
+      "pros": [
+        "Infrarood met volledig spectrum tegen een prijs in het middensegment",
+        "Configuraties als tent en cabine dekken verschillende installatiesituaties",
+        "Gedocumenteerde lage EMF met verificatie door derden",
+        "Op biohackers gericht merk met een sterke aanwezigheid in de community"
+      ],
+      "cons": [
+        "Minder strikte scheiding van golflengten dan Sunlighten mPulse",
+        "EMF-profiel hoger dan SaunaSpace Faraday",
+        "Constructie minder premium dan de cabines van Sunlighten of Clearlight",
+        "Smallere naamsbekendheid dan de leiders in de categorie"
+      ],
+      "scoreNotes": {
+        "heat-source": "Infrarood met volledig spectrum via koolstofvezel- en keramische verwarmingselementen. Minder strikte scheiding van golflengten dan Sunlighten, maar geloofwaardig breedspectrum.",
+        "build": "Configuraties als tent of cabine. 3 jaar garantie. Bouwkwaliteit van het middensegment.",
+        "emf": "Gedocumenteerde lage EMF; bij steekproeven door derden geverifieerd. Minder strikt dan SaunaSpace Faraday, maar acceptabel.",
+        "form-factor": "Configuraties als tent en cabine beschikbaar. Doorgaans voor 1–2 personen.",
+        "evidence": "Marketing gericht op biohackers. Wellnessniveau in plaats van klinische kwaliteit.",
+        "value": "$1,500–$3,500 afhankelijk van de configuratie. Prijs van het middensegment passend bij een constructie van het middensegment."
+      },
+      "content": "## Waar het voorop loopt\n\nTherasage zit op de sweet spot van infraroodsauna's in het middensegment – volledig spectrum voor de helft van de prijs van Sunlighten of Clearlight, met geloofwaardige EMF-documentatie. De biohackercommunity kent het merk, en de keuze tussen tent en cabine dekt meer installatiesituaties dan concurrenten met alleen een vaste cabine.\n\n## Wat zijn de nadelen van Therasage TheraSauna Personal?\n\nDe strengheid in golflengten en de EMF-discipline zitten allebei een niveau onder de leiders in de categorie. De naamsbekendheid is kleiner. De cabine is minder premium dan het cederhout van Sunlighten.\n\n## Voor wie is Therasage TheraSauna Personal?\n\nKies Therasage TheraSauna Personal als je infrarood met volledig spectrum voor biohackers wilt tegen een prijs in het middensegment. Voor premium volledig spectrum: Sunlighten of Clearlight. Specifiek voor nabij-infrarood: SaunaSpace.\n\n---\n\n## Achtergrond\n\nAchtergrond bij de ideeën achter blootstelling aan warmte – grotendeels hypothesen, geen effecten die bij mensen zijn aangetoond.\n\n- [Longevity-protocol: reset van de biologische klok](/articles/longevity-protocol-biological-clock-reset) – waar de sauna past in een resetroutine\n- [Controle over de HPA-as en cortisolregulatie](/articles/hpa-axis-control-cortisol-aggression) – de hitteschokkant van de stressrespons\n- [Anti-entropie neurale architectuur](/articles/anti-entropy-neural-architecture) – de sauna als dagelijkse anti-entropische stressdosis\n",
+      "faq": [
+        {
+          "q": "Is de Therasage TheraSauna het geld waard?",
+          "a": "De TheraSauna is het waard als je infrarood met volledig spectrum wilt tegen een prijs in het middensegment. Hij komt als tent en als cabine, met door derden geverifieerde lage EMF. De scheiding van golflengten is minder strikt dan bij Sunlighten mPulse, en de constructie is minder premium dan bij Sunlighten of Clearlight."
+        },
+        {
+          "q": "Hoeveel kost de Therasage TheraSauna?",
+          "a": "De Therasage TheraSauna begint bij ongeveer $1,500 voor de tent en $3,500 voor de cabineconfiguratie. Daarmee kost infrarood met volledig spectrum een prijs in het middensegment, met tent- en cabineopties voor verschillende installatiesituaties."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Therasage TheraSauna?",
+          "a": "De scheiding van golflengten is minder strikt dan bij Sunlighten mPulse, het EMF-profiel is hoger dan bij SaunaSpace Faraday en de constructie is minder premium dan de cabines van Sunlighten of Clearlight. Ook is de naamsbekendheid kleiner dan die van de leiders in de categorie."
+        }
+      ]
     },
     "jnh-lifestyles-joyous": {
       "verdict": "De geloofwaardige budget-IR-cabinesauna — alleen ver-IR, bouw van Canadese hemlock, toegankelijke prijs.",
@@ -2800,6 +3249,217 @@
         {
           "q": "Sleep Cycle of SleepScore: welke is beter?",
           "a": "Kies Sleep Cycle voor een verfijndere tracker die weinig moeite kost, met slimme wekker en een bruikbare gratis versie. Kies SleepScore als je contactloze sonartracking en de meest concrete, wetenschappelijk onderbouwde aanbevelingen wilt, en accepteert dat de bruikbare analyse achter Premium zit."
+        }
+      ]
+    },
+    "bedjet-3": {
+      "verdict": "Het luchtstroomalternatief voor watergekoelde systemen – geen waterbeheer, betaalbaarder, minder nauwkeurige temperatuurregeling.",
+      "productType": "Bedklimaatsysteem met luchtstroom (onder de lakens)"
+    },
+    "luna-ring": {
+      "verdict": "Een praktisch, betaalbaar Oura-alternatief zonder abonnement – goede slaapmeting en een lange totale accuduur via de case, al houden de accu per lading en wat ruwe randjes in de app het een prijs-kwaliteitkeuze in plaats van een klasseleider.",
+      "productType": "Slimme ring"
+    },
+    "plunge": {
+      "verdict": "Het ijsbad dat de categorie definieerde – premium constructie, capabele koeler, verzorgde gebruikerservaring tegen een premium prijs.",
+      "productType": "Premium ijsbad met ingebouwde koeler"
+    },
+    "coldture": {
+      "verdict": "Het Canadese premium antwoord op The Plunge – gebouwd voor koude klimaten, iets goedkoper, distributie die goed bij de EU past.",
+      "productType": "Premium in Canada gebouwd ijsbad"
+    },
+    "ultrahuman-ring-pro": {
+      "verdict": "De vernieuwde opvolger van de Ring Air zonder abonnement – een accu van 15 dagen, de beste in de categorie, verwerking in de ring en (anders dan de Ring Air) verkrijgbaar in de VS. Veelbelovend, maar te nieuw voor een oordeel over betrouwbaarheid op lange termijn van een merk waarvan de vorige ring accuproblemen had.",
+      "productType": "Slimme ring"
+    },
+    "oura-ring-5": {
+      "verdict": "Het topmodel van 2026 – 40% slanker met echt verbeterde sensoren. Eerdere Oura-generaties kwamen 's nachts goed overeen met ecg; de Ring 5 zelf is niet apart gevalideerd. Het verplichte abonnement blijft het enige echte nadeel.",
+      "productType": "Slimme ring"
+    },
+    "apple-watch-ultra-4": {
+      "verdict": "De Apple Watch die eindelijk geschikt is voor nachtelijke HRV: het nieuwe Health Sensing System plus een accu van 50 uur en een paraatheidsscore voor sporters – als je het formaat en de prijs van $799 kunt verantwoorden.",
+      "summary": "De Ultra 4 neemt het volledig nieuwe Health Sensing System van de Series 12 over – hartslagvariabiliteit (HRV) tot 24× vaker gemeten, Recovery HRV en Overall HRV – en voegt het enige toe wat de Series 12 voor HRV mist: accuduur. Met tot 50 uur kan hij HRV echt nacht na nacht volgen zonder dat een oplaadmoment met je slaap concurreert, en hij voegt een op sporters gerichte paraatheidsscore toe. Het nadeel is het formaat en de prijs van $799.",
+      "description": "ONDA-review van de Apple Watch Ultra 4 als HRV-tracker: het nieuwe Health Sensing System plus een accu van 50 uur maakt nachtelijke HRV praktisch.",
+      "bestFor": "Het best voor een sporter of buitenmens die het nieuwe HRV-systeem wil met de accuduur om het elke nacht te dragen.",
+      "testNote": "Evidence-based beoordeling – gescoord op basis van Apples aankondiging en specificaties van september 2026, onafhankelijke hands-on reviews en gepubliceerde validatieliteratuur over HRV op de Apple Watch. Niet hands-on getest door ONDA.",
+      "productType": "Robuuste smartwatch",
+      "pros": [
+        "Nieuw Health Sensing System – HRV 24× vaker gemeten, Recovery + Overall",
+        "Accu van ~50 uur maakt nachtelijke HRV nacht na nacht eindelijk praktisch",
+        "Paraatheidsscore voor sporters, plus ecg en meldingen over hoge bloeddruk",
+        "Robuust titanium van 49 mm, duiken tot 40 m, SOS via satelliet – geen abonnement"
+      ],
+      "cons": [
+        "Vanaf $799 – veel horloge als je alleen HRV wilt",
+        "Grote, zware kast van 49 mm",
+        "Optische HRV aan de pols is nog niet onafhankelijk gevalideerd; een ecg-borstband zit dichter bij lab-ecg (in rust, bij jonge gezonde volwassenen)",
+        "Recovery HRV en Overall HRV zijn verschillende metrics – makkelijk te verwarren"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Hetzelfde Health Sensing System als de Series 12 – HRV tot 24× vaker gemeten, gesplitst in Recovery HRV en Overall HRV – plus een paraatheidsscore. Apple noemt het zijn nauwkeurigste hartmeting, maar er is geen onafhankelijke validatie van Recovery of Overall HRV tegen ecg gevonden (stand oktober 2026), dus hij scoort hetzelfde als de Series 12.",
+        "sensor": "Het meest complete sensorpakket hier: het nieuwe Health Sensing System met meldingen over hoge bloeddruk, ecg met één afleiding, een diepte-/duiksensor tot 40 m en satellietverbinding.",
+        "sleep-accuracy": "De accu van 50 uur is het echte verhaal: daarmee wordt continue slaap- en nachtelijke HRV-tracking nacht na nacht voor het eerst praktisch op een Apple Watch, geanalyseerd tegen je persoonlijke basislijn.",
+        "data-access": "HealthKit is relatief open en schrijft nu native heartRateVariabilityRMSSD naast SDNN, zodat herstel-apps dezelfde familie van metrics kunnen lezen als Whoop, Oura en Garmin.",
+        "wearability": "Tot ~50 uur (84 in de energiebesparingsmodus) neemt eindelijk het conflict met nachtelijk opladen weg – het grote HRV-voordeel van de Ultra ten opzichte van de Series 12. Het compromis is een grote, zware kast van 49 mm.",
+        "app-ux": "HRV wordt getoond in de Hartslag-app met Recovery HRV en Overall HRV, plus een paraatheidsscore voor sporters; Apple Health blijft hier de overzichtelijkste gezondheidsinterface.",
+        "value": "Vanaf $799, eenmalig, geen abonnement – maar je betaalt voor multiband-gps, duiken, satelliet en een robuuste constructie. Voor alleen HRV is het veel horloge; de Series 12 biedt hetzelfde HRV-systeem voor minder."
+      },
+      "content": "## Waar het voorop loopt\n\nDe Apple Watch Ultra 4, aangekondigd in september 2026, combineert het volledig nieuwe Health Sensing System van de Series 12 met het enige wat een smartwatch altijd miste voor [hartslagvariabiliteit (HRV)](/glossary/heart-rate-variability): uithoudingsvermogen. Hij meet HRV tot 24× vaker dan de Series 11, splitst het in **Recovery HRV** en **Overall HRV**, voegt een nieuwe **paraatheidsscore voor sporters** toe en – cruciaal – gaat tot ongeveer **50 uur** mee (84 in de energiebesparingsmodus). Die accu maakt de Ultra 4 tot de eerste Apple Watch die je echt nacht na nacht kunt dragen voor een continu nachtelijk HRV-verslag, zonder dat een dagelijks oplaadmoment met je slaap concurreert.\n\nDaarbovenop komt het meest complete sensorpakket van alle horloges hier: ecg met één afleiding, meldingen over hoge bloeddruk, een diepte- en duiksensor tot 40 m, multiband-gps en satellietverbinding, in een robuuste titanium kast van 49 mm zonder abonnement.\n\n## Wat zijn de nadelen van Apple Watch Ultra 4?\n\nDe natuurkunde is nog steeds optisch aan de pols. Apple noemt het zijn nauwkeurigste hartmeting; er is geen onafhankelijke validatie van Recovery of Overall HRV tegen ecg gevonden (stand oktober 2026), en een ecg-borstband zit dichter bij lab-ecg (in rust, bij jonge gezonde volwassenen). En het is veel horloge: vanaf $799, groot en zwaar, waarbij een groot deel van de prijs naar duik-, satelliet- en multisportfuncties gaat in plaats van naar HRV. Wil je dat HRV-systeem in een kleiner, goedkoper pakket, dan heeft de [Apple Watch Series 12](/reviews/apple-watch-series-12) hetzelfde – alleen de accu kan hij niet evenaren.\n\n## Voor wie is Apple Watch Ultra 4?\n\nKies de Ultra 4 als je een sporter of buitenmens bent die Apples nieuwe HRV-systeem wil *én* de accuduur om het elke nacht te dragen, en je de robuuste, duik- en satellietfuncties gaat gebruiken. Als HRV en dagelijkse gezondheid het doel zijn en je de robuustheid niet nodig hebt, is de Series 12 de slimmere koop; als een schone nachtelijke HRV-trend je enige prioriteit is, past een ring misschien beter (in nachtelijke metingen bij 13 mensen, Dial 2025, behoorde de Oura Ring 4 tot de apparaten die het dichtst bij ecg zaten) – zie de [beste HRV-trackers van 2026](/reviews/compare/best-hrv-trackers-2026).\n\n---\n\n## Achtergrond\n\n- [Apple Watch Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) – de verandering naar twee getallen in 2026, uitgelegd\n- [Waarom HRV op elk apparaat anders uitvalt](/articles/hrv-different-every-device) – SDNN vs RMSSD bij verschillende merken\n- [Voorspelt HRV reactietijd en focus?](/articles/nervous-system-ping-latency) – wat HRV in rust wel en niet zegt over aandacht en zelfbeheersing\n",
+      "faq": [
+        {
+          "q": "Is de Apple Watch Ultra 4 beter dan de Series 12 voor HRV?",
+          "a": "Ze delen hetzelfde Health Sensing System en dezelfde HRV-metrics, dus de metingen zijn van dezelfde soort. Het voordeel van de Ultra 4 is de accu – tot ~50 uur tegenover ~24 – waardoor continue nachtelijke HRV nacht na nacht praktisch wordt zonder dat een oplaadmoment met je slaap concurreert. Voor alleen HRV biedt de Series 12 hetzelfde systeem voor minder."
+        },
+        {
+          "q": "Hoeveel kost de Apple Watch Ultra 4?",
+          "a": "Vanaf $799, een eenmalige aankoop zonder abonnement. Hij kwam uit op 18 september 2026 met een titanium kast van 49 mm, GPS + Cellular, satellietfuncties en ondersteuning voor duiken tot 40 m."
+        },
+        {
+          "q": "Hoe lang gaat de accu van de Apple Watch Ultra 4 mee?",
+          "a": "Tot ongeveer 50 uur bij normaal gebruik (ongeveer 84 in de energiebesparingsmodus, en tot ~45 uur trainingstracking). Dat is het belangrijkste verschil met de Series 12 van ~1 dag voor iedereen die hem 's nachts wil dragen voor HRV."
+        },
+        {
+          "q": "Is de Ultra 4 nauwkeurig genoeg voor HRV, of moet ik een ring nemen?",
+          "a": "HealthKit geeft nu een RMSSD-waarde vrij die qua soort vergelijkbaar is met Whoop en Oura (Apple heeft niet bevestigd dat Recovery HRV zelf RMSSD is), en de accu van 50 uur laat je nachtelijke trends echt vastleggen. Een ecg-borstband zit dichter bij lab-ecg (in rust, bij jonge gezonde volwassenen) – de Ultra 4 wint doordat hij één robuust apparaat is dat alles doet."
+        }
+      ]
+    },
+    "bettersleep": {
+      "verdict": "De rijkste bibliotheek om tot rust te komen van alle slaap-apps – geluidslandschappen, verhalen en meditaties – met lichte tracking erbij; eerst een ontspanningsapp, pas daarna een tracker.",
+      "summary": "BetterSleep loopt voorop in iets wat de meeste slaap-apps als bijzaak zien: je in slaap helpen. De contentbibliotheek – mixbare geluidslandschappen, SleepTales, meditaties en ademhaling – is hier de diepste. De app volgt ook je nacht, maar tracking is de lichtere helft.",
+      "description": "ONDA-review van BetterSleep: de diepste bibliotheek om tot rust te komen van alle slaap-apps, met geluidslandschappen, SleepTales en tracking.",
+      "bestFor": "Het best voor iedereen bij wie het grootste probleem in slaap vallen is, niet slaap meten.",
+      "testNote": "Evidence-based beoordeling – op basis van openbare informatie, gegevens uit de app stores en onafhankelijke reviews uit 2026. Niet gebaseerd op een lange hands-on test door ONDA.",
+      "productType": "Slaaptracking-app",
+      "pros": [
+        "De diepste bibliotheek om tot rust te komen hier",
+        "Mixbare geluidslandschappen die je naar smaak kunt afstellen",
+        "SleepTales, meditaties en ademhaling in één app",
+        "Verzorgd en prettig in gebruik"
+      ],
+      "cons": [
+        "Tracking is licht – geen serieus meetinstrument",
+        "De hoeveelheid content kan overweldigend zijn",
+        "De volledige bibliotheek vereist een abonnement",
+        "Geen onderscheidende klinische slaapmethode"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Tracking van geluid en beweging via de telefoon – aanwezig, maar een bijfunctie, niet de focus.",
+        "wind-down-content": "De diepste bibliotheek om tot rust te komen hier – mixbare geluidslandschappen, SleepTales, meditaties en ademhaling.",
+        "sleep-science": "Degelijke content en routines over slaaphygiëne, zonder een onderscheidende klinische methode.",
+        "insights": "Eenvoudige statistieken per nacht – voldoende, maar niet de reden om voor deze app te kiezen.",
+        "app-experience": "Verzorgd en prettig, al kan de enorme hoeveelheid content overweldigend zijn.",
+        "free-tier": "Er is een gratis versie; de volledige bibliotheek en tracking vereisen het abonnement.",
+        "value": "Rond 60 USD per jaar – redelijk voor zo'n grote bibliotheek."
+      },
+      "content": "## Waar het voorop loopt\n\nBetterSleep is gebouwd rond het deel van de nacht dat de meeste trackers negeren – tot rust komen. De contentbibliotheek is de diepste van alle slaap-apps hier: mixbare geluidslandschappen die je zelf afstelt, SleepTales, begeleide meditaties en ademhalingsoefeningen. Als je probleem wakker liggen is in plaats van je slaapstatistieken niet kennen, is dit de app die dat direct aanpakt.\n\n## Wat zijn de nadelen van BetterSleep?\n\nTracking is er wel, maar het is de lichtere helft van de app – via de telefoon, eenvoudig, geen serieus meetinstrument. De hoeveelheid content kan overweldigend zijn, en de volledige bibliotheek zit achter een abonnement. Er is geen onderscheidende klinische methode, alleen goedgemaakte ontspanningscontent.\n\n## Voor wie is BetterSleep?\n\nKies BetterSleep als je vooral hulp nodig hebt bij het in slaap vallen en daarvoor de rijkst mogelijke bibliotheek aan geluiden en verhalen wilt. Wil je nauwkeurige tracking of een klinisch programma, dan heb je meer aan een gespecialiseerde tracker of Sleepio.\n\n---\n\n## Achtergrond\n\nDe slaapbiologie achter wat deze apps meten en de protocollen die ze ondersteunen.\n\n- [Protocol: de circadiane harde reset](/articles/protocol-circadian-hard-reset) – hoe je je ritme echt verschuift als het moet\n- [Fasegekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep) – waarom inslapen met audio werkt\n- [Reinigt slaap echt je hersenen? Het glymfatische bewijs](/articles/nightly-flush-glymphatic-neural-cache) – wat bij mensen is aangetoond en wat nog ter discussie staat\n",
+      "faq": [
+        {
+          "q": "Is BetterSleep het geld waard?",
+          "a": "Ja, als in slaap vallen je grootste probleem is. BetterSleep heeft de diepste bibliotheek om tot rust te komen van alle slaap-apps, met mixbare geluidslandschappen, SleepTales, meditaties en ademhaling. Als meetinstrument is hij het niet waard, want de slaaptracking is de lichtere helft van de app."
+        },
+        {
+          "q": "Hoeveel kost BetterSleep?",
+          "a": "BetterSleep Premium kost ongeveer $60 per jaar, en er is een gratis versie. De volledige contentbibliotheek, inclusief het complete aanbod aan mixbare geluidslandschappen, SleepTales en meditaties, vereist het Premium-abonnement. Tracking is inbegrepen, maar is de lichtere helft van de app."
+        },
+        {
+          "q": "Wat zijn de nadelen van BetterSleep?",
+          "a": "De tracking van BetterSleep is licht en geen serieus meetinstrument. De hoeveelheid content kan nieuwe gebruikers overweldigen, de volledige bibliotheek vereist een abonnement en er is geen onderscheidende klinische slaapmethode. Het is eerst een ontspanningsapp en pas daarna een tracker."
+        },
+        {
+          "q": "BetterSleep vs AutoSleep: wat is beter?",
+          "a": "BetterSleep is beter om in slaap te komen; AutoSleep is beter om slaap te meten. BetterSleep is in de eerste plaats een ontspanningsapp met de diepste bibliotheek om tot rust te komen, terwijl AutoSleep een pure tracker voor de Apple Watch is zonder enige content om tot rust te komen."
+        }
+      ]
+    },
+    "eight-sleep-pod-6": {
+      "verdict": "De verstandigste Eight Sleep tot nu toe – de Pod 6 halveert de hub, voegt 9x meer sensoren toe, verandert de temperatuur 20% sneller en verkoopt voor het eerst Solo-maten voor één slaper vanaf $1,999, terwijl de queen met twee zones zakt naar $2,899. Het nadeel is onveranderd: een Autopilot-lidmaatschap ($199–$399/jaar) is verplicht, en de duur van de garantie hangt af van het niveau waarvoor je betaalt.",
+      "summary": "De Eight Sleep Pod 6 is de zesde generatie Pod, gelanceerd op 23 september 2026 in meer dan 37 landen als vervanger van de Pod 5. Eight Sleep heeft de hub opnieuw ontworpen zodat hij 50% kleiner is en onder de meeste bedframes past, het aantal biometrische sensoren verhoogd van 2 naar 18, en zegt dat temperatuuraanpassingen 20% sneller gaan dan bij elke vorige generatie, waarbij elke kant van de hoes met twee zones onafhankelijk werkt. Nieuwe Solo-maten (Twin, of één kant van een Queen, King of California King) beginnen bij $1,999; standaardmaten met twee zones kosten $2,699 (Full), $2,899 (Queen) en $2,999 (King/Cal King). De hoes meet hartslag, ademfrequentie, hartslagvariabiliteit (HRV), snurken en slaapfasen zonder wearable, en de sensoren zijn ontworpen om slapers van elkaar te onderscheiden en huisdieren of kinderen te negeren. Bestaande accessoires – Blanket, Pillow Cover en Base – zijn compatibel, maar apart verkrijgbaar. Een Autopilot-lidmaatschap is verplicht: Standard $199/jaar (2 jaar garantie), Enhanced $299/jaar en Elite $399/jaar (5 jaar garantie).",
+      "description": "Eight Sleep Pod 6 review (sept. 2026): hub 50% kleiner, 18 sensoren, 20% snellere temperatuurwissel, Solo vanaf $1,999. Autopilot blijft verplicht.",
+      "bestFor": "Het best voor slapers die het klimaat met twee zones en HRV-tracking zonder wearable van Eight Sleep willen tegen de laagste prijs die het merk ooit heeft gevraagd – vooral alleenslapers, die nu een Solo-maat kunnen kopen – en een jaarlijks lidmaatschap accepteren.",
+      "testNote": "Evidence-based beoordeling – gescoord op basis van de officiële specificaties van Eight Sleep, berichtgeving rond de lancering in september 2026 en vroege onafhankelijke reviews. Niet hands-on getest door ONDA.",
+      "productType": "Slim bedklimaatsysteem met hoes (twee zones of Solo)",
+      "pros": [
+        "Laagste instapprijs in de geschiedenis van Eight Sleep – Solo vanaf $1,999, queen met twee zones $2,899",
+        "18 biometrische sensoren (was 2) meten hartslag, ademhaling, HRV, snurken en slaapfasen zonder wearable",
+        "Hub 50% kleiner – past onder de meeste bedframes",
+        "20% snellere temperatuurwisselingen; onafhankelijke kanten met twee zones; werkt met bestaande accessoires"
+      ],
+      "cons": [
+        "Autopilot-lidmaatschap is verplicht ($199–$399/jaar)",
+        "Duur van de garantie hangt af van het lidmaatschapsniveau (2 jaar bij Standard)",
+        "Blanket, Base en Pillow Cover kosten extra – koeling van bovenaf is niet inbegrepen",
+        "Nog geen onafhankelijke validatie van de nieuwe sensoren; vast aan het ecosysteem van Eight Sleep"
+      ],
+      "scoreNotes": {
+        "climate-range": "Dezelfde koeling en verwarming met twee zones via de hoes als de kern van de Pod 4/5, waarbij Eight Sleep 20% snellere temperatuurwisselingen claimt. Koeling van bovenaf vereist het aparte Blanket-accessoire (de Pod 5 Ultra scoorde 9.7 met dat accessoire inbegrepen). Eight Sleep heeft geen nieuw temperatuurbereik voor de Pod 6 gepubliceerd.",
+        "build": "De opnieuw ontworpen hub is 50% kleiner en past onder de meeste bedframes. De garantie is gekoppeld aan het lidmaatschap: 2 jaar bij Standard, 5 jaar bij Enhanced/Elite. De betrouwbaarheid van de nieuwe hub op lange termijn is nog niet bekend.",
+        "app-tracking": "18 biometrische sensoren (was 2) voor hartslag, ademfrequentie, HRV, snurken en slaapfasen, met scheiding van slapers die huisdieren of kinderen negeert. Op papier iets beter dan de Pod 5; er is nog geen onafhankelijke validatie van de sensoren van de Pod 6 gepubliceerd.",
+        "form-factor": "De hub van halve grootte en de nieuwe Solo-maten maken dit de makkelijkste Pod om in een slaapkamer te passen. Standaard alleen de hoes; Base, Blanket en Pillow Cover zijn optionele accessoires in plaats van meegeleverd zoals bij de Pod 5 Ultra.",
+        "subscription": "Onveranderd oordeel – Autopilot is verplicht: Standard $199/jaar, Enhanced $299/jaar, Elite $399/jaar. De duur van de garantie hangt nu af van het niveau waarvoor je betaalt.",
+        "value": "Vanaf $1,999 (Solo) en $2,899 (queen met twee zones) – onder de hoesprijs van de Pod 4 van $2,449–$2,649 per slaper en ver onder de $6,099+ van de Pod 5 Ultra. Het verplichte lidmaatschap voegt over drie jaar nog steeds $600–$1,200 toe."
+      },
+      "content": "## Wat de Pod 6 is\n\nDe Eight Sleep Pod 6 is de zesde generatie Pod, gelanceerd op 23 september 2026 in meer dan 37 landen. Hij vervangt de [Pod 5](/reviews/eight-sleep-pod-5), en anders dan de Pod 5 Ultra brengt hij de lijn omlaag in prijs in plaats van omhoog: Solo-maten beginnen bij $1,999, en de queen met twee zones kost $2,899.\n\n## Wat er echt is veranderd ten opzichte van de Pod 5\n\nDrie hardwarewijzigingen. De hub is 50% kleiner en past onder de meeste bedframes. De hoes heeft 18 biometrische sensoren in plaats van 2, waarmee hij volgens Eight Sleep slapers van elkaar kan onderscheiden en huisdieren of kinderen kan negeren. En temperatuurwisselingen gaan 20% sneller dan bij elke vorige Pod, waarbij elke kant van het bed onafhankelijk wordt geregeld. Ook nieuw zijn de Solo-maten: een Twin, of één kant van een Queen, King of California King, voor mensen die alleen slapen of van wie de partner geen Pod wil. De Blanket, Pillow Cover en Base van eerdere generaties werken nog, maar zijn apart verkrijgbaar, dus de koeling van bovenaf en de verstelbare bodem die bij de Pod 5 Ultra waren inbegrepen, zijn nu optionele extra's.\n\n## Tracking\n\nDe Pod 6 meet hartslag, ademfrequentie, hartslagvariabiliteit (HRV), snurken en slaapfasen via de hoes, zonder wearable, en Autopilot gebruikt die data om de temperatuur gedurende de nacht aan te passen. Eight Sleep verwijst naar meer dan 50 klinische studies achter zijn platform, maar er is nog geen onafhankelijke validatie van de nieuwe Pod 6 met 18 sensoren gepubliceerd. Behandel de HRV als een nuttige nachtelijke trend in plaats van een klinische meting, net als bij de [Pod 4](/reviews/eight-sleep-pod-4).\n\n## Het nadeel\n\nHet lidmaatschap. Autopilot is verplicht: Standard $199/jaar met 2 jaar garantie, Enhanced $299/jaar en Elite $399/jaar, beide met 5 jaar garantie. Over drie jaar komt daarmee $600 tot $1,200 bovenop de prijs van de hardware.\n\n## Voor wie is Eight Sleep Pod 6?\n\nKies de Pod 6 als je de klimaatregeling en slaaptracking zonder wearable van Eight Sleep wilt tegen de laagste prijs die het merk ooit heeft gevraagd, en zeker als je alleen slaapt en een Solo-maat kunt gebruiken. Heb je al een Pod 4 of Pod 5, dan is de upgrade vooral een kleinere hub en meer sensoren. Voor het bredere veld, zie de [beste slimme bedklimaatsystemen](/reviews/smart-sleep-climate).\n",
+      "faq": [
+        {
+          "q": "Hoeveel kost de Eight Sleep Pod 6?",
+          "a": "De Pod 6 Solo kost $1,999 in elke maat. Maten van de Pod 6 met twee zones kosten $2,699 (Full), $2,899 (Queen) en $2,999 (King of California King). Daarnaast is een Autopilot-lidmaatschap verplicht, vanaf $199 per jaar."
+        },
+        {
+          "q": "Pod 6 vs Pod 5 – wat is er veranderd?",
+          "a": "De Pod 6 heeft een hub die 50% kleiner is dan die van de Pod 5, 18 biometrische sensoren in plaats van 2 en 20% snellere temperatuurwisselingen. Hij voegt Solo-maten voor één slaper toe en begint bij een veel lagere prijs. De Blanket, Base en Pillow Cover zijn compatibele accessoires die apart worden verkocht."
+        },
+        {
+          "q": "Heeft de Eight Sleep Pod 6 een abonnement nodig?",
+          "a": "Ja. Een Autopilot-lidmaatschap is verplicht: Standard $199/jaar ($17/maand) met 2 jaar garantie, Enhanced $299/jaar met 5 jaar garantie, of Elite $399/jaar met 5 jaar garantie en extra monitoring."
+        },
+        {
+          "q": "Meet de Eight Sleep Pod 6 HRV?",
+          "a": "Ja. De Pod 6 meet hartslag, ademfrequentie, HRV, snurken en slaapfasen met sensoren in de hoes, zonder wearable. Er is nog geen onafhankelijke validatie van de sensoren van de Pod 6 gepubliceerd, dus behandel het als een trend in plaats van een klinische meting."
+        }
+      ]
+    },
+    "sleep-as-android": {
+      "verdict": "De meest complete slaap-app op Android – tracking, slimme wekker en geluiden om tot rust te komen in één – als je een interface vol functies niet erg vindt.",
+      "summary": "Sleep as Android is de meest complete slaap-app op zijn platform: hij volgt je nacht, wekt je met een slimme wekker op basis van slaapcycli en bundelt geluiden om tot rust te komen, snurkdetectie en brede ondersteuning voor wearables. De prijs voor al die functies is een interface die technisch en vol aanvoelt.",
+      "description": "ONDA-review van Sleep as Android: de meest complete slaap-app op Android, met tracking, een slimme wekker en geluiden om tot rust te komen.",
+      "bestFor": "Het best voor Android-gebruikers die een krachtige, configureerbare alles-in-één slaap-app willen.",
+      "testNote": "Evidence-based beoordeling – op basis van openbare informatie, gegevens uit de app stores en onafhankelijke reviews uit 2026. Niet gebaseerd op een lange hands-on test door ONDA.",
+      "productType": "Slaaptracking-app",
+      "pros": [
+        "De meest complete slaap-app op Android",
+        "Tracking, slimme wekker en geluiden om tot rust te komen samen",
+        "Opname van snurken en praten in je slaap",
+        "Brede integratie met wearables; lage kosten"
+      ],
+      "cons": [
+        "Alleen voor Android",
+        "Vol functies – beloont wie graag sleutelt",
+        "Tracking via de telefoon is een schatting zonder wearable",
+        "Minder verzorgd dan de gangbare iOS-apps"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Degelijke tracking via de telefoon; een ondersteunde wearable koppelen voegt hartslagdata toe, maar de nauwkeurigheid is niet onafhankelijk getest.",
+        "wind-down-content": "Slaapliedjes, natuurgeluiden en binaurale audio – meer content om tot rust te komen dan de pure trackers hier.",
+        "sleep-science": "Een slimme wekker op basis van slaapcycli en snurktracking, met verstandige functies voor slaaphygiëne.",
+        "insights": "Diepgaande statistieken en trends, plus opnames van snurken en praten in je slaap.",
+        "app-experience": "Krachtig en configureerbaar, maar vol functies – beloont wie graag sleutelt.",
+        "free-tier": "Een gratis proefperiode en daarna een goedkope ontgrendeling; in de praktijk freemium.",
+        "value": "Lage, min of meer eenmalige kosten voor een ongewoon volledig pakket functies."
+      },
+      "content": "## Waar het voorop loopt\n\nSleep as Android is de meest complete slaap-app op Android. Hij volgt je nacht, wekt je met een slimme wekker op basis van slaapcycli en biedt een ongewone diepte aan functies – slaapliedjes en natuurgeluiden, opname van snurken en praten in je slaap, seintjes tegen snurken en integratie met allerlei wearables. Voor een Android-gebruiker die één app wil die het meeste doet, kan niets anders op het platform eraan tippen.\n\n## Wat zijn de nadelen van Sleep as Android?\n\nAl die functies maken hem technisch en vol – hij beloont sleutelen meer dan de verzorgde gangbare apps. Tracking via de telefoon is een schatting tenzij je een wearable koppelt, en de app is alleen voor Android.\n\n## Voor wie is Sleep as Android?\n\nKies Sleep as Android als je Android gebruikt en een krachtige, configureerbare alles-in-één wilt – tracking, slimme wekker en geluiden om tot rust te komen samen. iPhone-gebruikers, of wie eenvoud verkiest boven opties, kunnen beter elders kijken.\n\n---\n\n## Achtergrond\n\nDe slaapbiologie achter wat deze apps meten en de protocollen die ze ondersteunen.\n\n- [Ancestrale synchronisatie en circadiane ankers](/articles/ancestral-sync-circadian-anchors) – de prikkels die de circadiane timing stabiel houden bij reizen en ploegendienst\n- [Protocol: de circadiane harde reset](/articles/protocol-circadian-hard-reset) – hoe je je ritme echt verschuift als het moet\n- [Fasegekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep) – waarom inslapen met audio werkt\n",
+      "faq": [
+        {
+          "q": "Is Sleep as Android het geld waard?",
+          "a": "Ja, voor Android-gebruikers. Sleep as Android is de meest complete slaap-app op het platform en combineert tracking, een slimme wekker, geluiden om tot rust te komen en opname van snurken en praten in je slaap, tegen lage kosten en met brede integratie met wearables. Hij beloont sleutelen, en zonder wearable is de tracking via de telefoon slechts een schatting."
+        },
+        {
+          "q": "Hoeveel kost Sleep as Android?",
+          "a": "Sleep as Android kost ongeveer $12, een lage, in wezen eenmalige prijs. Hij is alleen beschikbaar voor Android. Daarvoor krijg je tracking, een slimme wekker, geluiden om tot rust te komen, snurkopname en brede integratie met wearables in één app."
+        },
+        {
+          "q": "Wat zijn de nadelen van Sleep as Android?",
+          "a": "Sleep as Android is alleen voor Android en zit vol functies, dus hij beloont sleutelen meer dan casual gebruik. Tracking via de telefoon is een schatting tenzij je een wearable koppelt, en de app is minder verzorgd dan de gangbare slaap-apps voor iOS."
         }
       ]
     }
@@ -3578,7 +4238,11 @@
     "free-tier": "Gratis versie",
     "tracking-accuracy": "Nauwkeurigheid van tracking",
     "wind-down-content": "Content om tot rust te komen",
-    "sleep-science": "Slaapwetenschap"
+    "sleep-science": "Slaapwetenschap",
+    "wavelength-coverage": "Dekking van golflengten",
+    "led-count-coverage": "Aantal LED's en dekking van het gezicht",
+    "clinical-evidence": "Klinisch bewijs en regelgevende status",
+    "comfort-fit": "Comfort en pasvorm"
   },
   "categories": {
     "pemf": "PEMF-apparaten",
@@ -5410,6 +6074,271 @@
         }
       ],
       "content": "## In het kort\n\nKies op batterij en ecosysteem, niet op het HRV-getal. De Series 12 wint voor het nieuwste systeem voor hartslagvariabiliteit (HRV), een ECG en iPhone-integratie. De Venu 4 wint voor een meerdaagse batterij die nachtelijk dragen moeiteloos maakt en de Garmin-trainingswereld.\n\n## Waar de HRV-vergelijking staat in 2026\n\nHet Health Sensing System van de Series 12 meet HRV veel vaker en rapporteert Recovery HRV, terwijl Garmin HRV Status één betrouwbaar model is. Zie [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) en [waarom HRV op elk apparaat anders uitvalt](/articles/hrv-different-every-device).\n\n## De eerlijke kanttekening\n\nBeide meten; geen van beide traint. Als een zuivere nachtelijke HRV-trend je enige prioriteit is, past een ring die je elke nacht kunt dragen misschien beter bij je (in nachtelijke metingen bij 13 mensen, Dial 2025, hoorde Oura Ring 4 bij de modellen die het dichtst bij ECG lagen) — zie de [beste HRV-trackers van 2026](/reviews/compare/best-hrv-trackers-2026)."
+    },
+    "chilipad-dock-pro-vs-bedjet-3": {
+      "title": "ChiliPad Dock Pro vs BedJet 3: vergelijking (2026)",
+      "description": "ChiliPad Dock Pro vs BedJet 3: waterkoeling met twee zones tegen een premium prijs, of een luchtsysteem zonder water voor ongeveer de helft.",
+      "intro": "ChiliPad Dock Pro en BedJet 3 zijn de twee bedklimaatsystemen zonder abonnement die gebruikers vergelijken wanneer Eight Sleep geen optie is. Het bepalende verschil is de klimaatmethode: ChiliPad gebruikt waterkoeling met twee zones, een vloeistofreservoir en een koeler; BedJet blaast omgevingslucht of gekoelde lucht onder de lakens, zonder watertank om te beheren.",
+      "verdict": "Krachtige koeling tegenover eenvoudig onderhoud. ChiliPad Dock Pro voor krachtige zomerkoeling en bediening met twee zones. BedJet 3 voor een schone installatie zonder waterbeheer en ongeveer de halve prijs.",
+      "bestForA": "Kies ChiliPad Dock Pro als je krachtige waterkoeling met twee zones (voor elke partner apart) wilt en waterbeheer voor lief neemt.",
+      "bestForB": "Kies BedJet 3 als je een schoon luchtstroomsysteem wilt zonder watertank of reservoironderhoud, tegen een duidelijk lagere prijs.",
+      "axes": [
+        {
+          "name": "Klimaatbereik",
+          "note": "ChiliPad: waterkoeling met twee zones, krachtig bij piekhitte in de zomer (koelt onder de omgevingstemperatuur). BedJet: luchtstroom, effectief in milde tot gematigde klimaten, zwakker tegen vochtige zomerpieken."
+        },
+        {
+          "name": "Twee zones",
+          "note": "ChiliPad Dock Pro: onafhankelijke temperatuur per partner. BedJet 3: één zone per apparaat (twee BedJets kan, maar verdubbelt de kosten en de rommel rond het bed)."
+        },
+        {
+          "name": "Onderhoud",
+          "note": "ChiliPad: waterreservoir vullen, slangen, periodiek reinigen. BedJet: alleen lucht, helemaal geen waterbeheer."
+        },
+        {
+          "name": "Installatie",
+          "note": "ChiliPad: hoes op de matras + hub. BedJet: beugel aan het bedframe + luchtslang onder de lakens. De installatie van BedJet is eenvoudiger."
+        },
+        {
+          "name": "Verwarmen",
+          "note": "Beide verwarmen én koelen. ChiliPad: verwarming via water. BedJet: verwarming via lucht en merkbaar sneller warm (lucht warmt sneller op dan water)."
+        },
+        {
+          "name": "Prijs",
+          "note": "ChiliPad Dock Pro: ~$1,700. BedJet 3: ~$600-900. BedJet kost ongeveer de helft en heeft geen doorlopende kosten voor vloeistof."
+        }
+      ],
+      "faq": [
+        {
+          "q": "ChiliPad of BedJet – welke koelt beter?",
+          "a": "ChiliPad – water koelt krachtiger dan lucht, vooral bij piekhitte in de zomer en hoge luchtvochtigheid. BedJet is effectief in een gematigd klimaat en bij mildere zomers, maar minder krachtig op hete, vochtige nachten."
+        },
+        {
+          "q": "Met welke valt het makkelijkst te leven?",
+          "a": "BedJet – geen watertank om te vullen, geen slangen om te beheren, geen reservoir om te reinigen. ChiliPad vraagt periodiek waterbeheer. Voor een onderhoudsarme opstelling wint BedJet."
+        },
+        {
+          "q": "Kan BedJet net zo goed verwarmen als ChiliPad?",
+          "a": "BedJet verwarmt sneller – lucht warmt sneller op dan water. ChiliPad heeft een iets breder warm bereik, maar bij bruikbare bedtemperaturen maakt dat verschil zelden uit."
+        },
+        {
+          "q": "Werkt BedJet voor stellen?",
+          "a": "Eén zone per apparaat. Stellen die elk een eigen temperatuur willen, hebben twee BedJets nodig (~$1,400-1,800) – en dan wordt het ene systeem met twee zones van ChiliPad Dock Pro ook qua prijs concurrerend."
+        }
+      ],
+      "content": "## De korte versie\n\nBeide zijn bedklimaatsystemen zonder abonnement. ChiliPad is waterkoeling met twee zones – het krachtigst tegen zomerhitte, maar met waterbeheer. BedJet werkt met luchtstroom – schone installatie, makkelijker in gebruik, zwakker tegen vochtige zomerpieken, ongeveer de halve prijs.\n\n## Wanneer is ChiliPad Dock Pro de juiste keuze?\n\nAls je in een heet, vochtig klimaat woont waar je krachtige koeling nodig hebt op de warmste zomernachten, en je zonder twee apparaten te kopen elk een eigen temperatuur wilt – dan past ChiliPad. Neem het waterbeheer voor lief.\n\n## Wanneer is BedJet 3 de juiste keuze?\n\nAls je in een mild tot gematigd klimaat woont, de eenvoudigst mogelijke installatie zonder waterbeheer wilt en $600-900 wilt uitgeven in plaats van $1,700 – dan past BedJet. Buiten zomerpieken is luchtstroom voor de meeste gebruikers voldoende."
+    },
+    "luna-ring-vs-amazfit-helio-ring": {
+      "title": "Noise Luna Ring vs Amazfit Helio Ring: vergelijking",
+      "description": "Noise Luna Ring Gen 2 vs Amazfit Helio Ring: twee betaalbare slimme ringen zonder abonnement. Lange totale accu via een case of de lichtste, goedkoopste.",
+      "intro": "Dit zijn twee van de goedkoopste slimme ringen zonder abonnement, beide bedoeld voor wie de kernfuncties van Oura wil zonder de prijs of het lidmaatschap. De Noise Luna Ring Gen 2 (~$300) leunt op een oplaadcase voor in je zak voor een lange totale accuduur en nauwkeurige slaapmeting; de Amazfit Helio Ring ($199) is goedkoper en lichter, maar komt in slechts drie maten. Beide zijn prijs-kwaliteitkeuzes met compromissen.",
+      "verdict": "Twee budgetringen zonder abonnement. De Amazfit Helio Ring is goedkoper ($199) en lichter; de Noise Luna Ring Gen 2 (~$300) heeft meer maten, een oplaadcase voor een lange totale accuduur en een even goede slaapmeting. Kies de Helio voor de laagste prijs als hij past, de Luna voor meer pasvormopties en het gemak van de oplaadcase.",
+      "bestForA": "Kies de Noise Luna Ring Gen 2 als je goede slaapmeting, meer maten en een oplaadcase voor een lange totale accuduur wilt, en $300 acceptabel vindt.",
+      "bestForB": "Kies de Amazfit Helio Ring als je de goedkoopste, lichtste ring zonder abonnement wilt en een van de drie maten je past.",
+      "axes": [
+        {
+          "name": "Prijs",
+          "note": "Amazfit Helio: $199. Noise Luna Gen 2: ~$300. De Helio is de goedkopere ring."
+        },
+        {
+          "name": "Abonnement",
+          "note": "Gelijkspel – beide zijn eenmalige aankopen zonder lidmaatschap."
+        },
+        {
+          "name": "Accu per lading",
+          "note": "Volgens de fabrikanten: tot 7 dagen voor de Luna Ring (voor de Gen 2 tot 5 dagen volgens Wareable) en tot 4 dagen voor de Helio per lading. Reviewers melden minder in de praktijk (Luna ~4, Helio ~2,5–3), en de geclaimde ~30 dagen van de Luna hangen af van de oplaadcase."
+        },
+        {
+          "name": "Pasvorm en maten",
+          "note": "De Helio komt in slechts drie maten (8, 10, 12); de Luna biedt meer maten, dus meer mensen vinden een goede pasvorm."
+        },
+        {
+          "name": "Slaapmeting",
+          "note": "Beide meten slaap goed voor de prijs – slaapfasen zijn bij allebei een sterk punt."
+        },
+        {
+          "name": "Extra's",
+          "note": "De Luna voegt een spraakgestuurde Luna AI-assistent en een oplaadcase voor in je zak toe; de Helio is soberder."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Noise Luna Ring of Amazfit Helio Ring?",
+          "a": "Beide zijn goedkope ringen zonder abonnement met goede slaapmeting. De Amazfit Helio is goedkoper ($199) en lichter, maar komt in slechts drie maten; de Noise Luna (~$300) heeft meer maten, een oplaadcase voor een lange totale accuduur en een spraakassistent. Kies de Helio voor de laagste prijs als hij past, de Luna voor pasvormopties en extra's."
+        },
+        {
+          "q": "Welke heeft de betere accu?",
+          "a": "De Luna. Volgens de fabrikanten gaat de Luna Ring tot 7 dagen mee (voor de Gen 2 tot 5 dagen volgens Wareable) en de Helio tot 4 dagen per lading (reviewers melden in de praktijk ongeveer 4 en 2,5–3 dagen), en de oplaadcase van de Luna verlengt de totale accuduur flink, zodat je de ring in totaal minder vaak oplaadt."
+        },
+        {
+          "q": "Passen deze ringen mij?",
+          "a": "De Amazfit Helio komt in slechts drie maten (8, 10, 12), dus hij past misschien niet; de Noise Luna biedt meer maten en is qua pasvorm de veiligere keuze."
+        }
+      ],
+      "content": "## De korte versie\n\nTwee budgetringen zonder abonnement. De [Amazfit Helio Ring](/reviews/amazfit-helio-ring) is goedkoper ($199) en lichter, maar beperkt tot drie maten; de [Noise Luna Ring Gen 2](/reviews/luna-ring) (~$300) heeft meer maten, een oplaadcase voor een lange totale accuduur en een spraakassistent.\n\n## Wanneer is de Noise Luna Ring de juiste keuze?\n\nJe wilt goede slaapmeting, meer pasvormopties en het gemak van de oplaadcase, en $300 is prima.\n\n## Wanneer is de Amazfit Helio Ring de juiste keuze?\n\nJe wilt de goedkoopste, lichtste ring zonder abonnement en een van de maten past je.\n\n## Ook het vergelijken waard\n\nVoor een langere accuduur per lading tegen een vergelijkbare prijs, zie de [RingConn Gen 2](/reviews/ringconn-gen-2); tegenover Oura: [Noise Luna vs Oura Ring 4](/reviews/vs/luna-ring-vs-oura-ring-4). Het volledige veld: [beste HRV-trackers](/reviews/hrv-trackers)."
+    },
+    "neurosity-crown-vs-emotiv-insight-2": {
+      "title": "Neurosity Crown vs Emotiv Insight 2: vergelijking (2026)",
+      "description": "Neurosity Crown vs Emotiv Insight 2: twee EEG-headsets voor ontwikkelaars naast elkaar. Open SDK tegenover een academische toolchain.",
+      "intro": "Neurosity Crown en Emotiv Insight 2 zijn de twee consumenten-EEG-headsets die ontwikkelaars en onderzoekers het vaakst tegen elkaar afwegen. Beide richten zich op wie toegang wil tot het ruwe signaal, niet op een meditatie-app. Het structurele verschil is het datamodel: Neurosity is een open SDK zonder drempel; Emotiv heeft een diepere academische toolchain, maar zet toegang tot ruwe data achter een Pro-abonnement.",
+      "verdict": "Neurosity Crown wint voor ontwikkelaars en biohackers die toegang willen tot ruwe EEG zonder abonnement. Emotiv Insight 2 wint specifiek voor gebruikers die analyses in academische stijl doen, waarbij de toolchain van EmotivPRO de doorslag geeft.",
+      "bestForA": "Kies Neurosity Crown als je ruwe EEG wilt via JavaScript of Python (plus BrainFlow, LSL en OSC) zonder abonnementsdrempel – de meest open SDK op de consumenten-EEG-markt.",
+      "bestForB": "Kies Emotiv Insight 2 als je de toolchain van EmotivPRO en de brede academische publicatiebasis nodig hebt, en het Pro-abonnement voor toegang tot ruwe data acceptabel vindt.",
+      "axes": [
+        {
+          "name": "EEG-kanalen",
+          "note": "Neurosity Crown: 8 droge elektroden verspreid over meerdere corticale locaties. Emotiv Insight 2: 5 semi-droge elektroden. Neurosity heeft een bredere corticale dekking."
+        },
+        {
+          "name": "Signaalkwaliteit",
+          "note": "Beide zijn droge/semi-droge systemen van consumentenniveau. Neurosity heeft meer kanalen; Emotiv heeft in rust een iets schoner signaal per kanaal. Feitelijk gelijk."
+        },
+        {
+          "name": "Toegang tot open SDK",
+          "note": "Neurosity: ruwe EEG via JavaScript en Python (plus BrainFlow, LSL en OSC), zonder abonnement. Emotiv: SDK beschikbaar, maar toegang tot ruwe data vereist een EmotivPRO-abonnement. Neurosity is het opener platform."
+        },
+        {
+          "name": "Academische toolchain",
+          "note": "EmotivPRO wordt geciteerd in honderden gepubliceerde academische studies. Neurosity heeft een kleinere onderzoeksvoetafdruk – het platform is jonger."
+        },
+        {
+          "name": "Live cognitieve metrics",
+          "note": "Emotiv: live focus, stress, betrokkenheid, opwinding, interesse, ontspanning – zes dimensies. Neurosity: focus, kalmte en flow. Emotiv toont meer live scores; het zijn allemaal eigen formules van elk bedrijf, geen gevalideerde metingen."
+        },
+        {
+          "name": "Ingebouwde gebruikerservaring",
+          "note": "Neurosity levert direct een adaptieve streamingfunctie met focusmuziek. Emotiv leunt voor apps voor eindgebruikers op het SDK-ecosysteem."
+        },
+        {
+          "name": "Comfort",
+          "note": "Emotiv Insight 2 is lichter en de kroon met vijf armen is comfortabel bij langere sessies. Neurosity Crown is steviger."
+        },
+        {
+          "name": "Prijs",
+          "note": "Emotiv Insight 2: $499 + Pro-abonnement (~$99/jaar) voor ruwe data. Neurosity Crown: $1,499 zonder abonnement. Emotiv is vooraf goedkoper; Neurosity is over meerdere jaren goedkoper als je ruwe data nodig hebt."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wat is beter voor ontwikkelaars – Neurosity Crown of Emotiv Insight 2?",
+          "a": "Over het algemeen Neurosity Crown. De SDK is echt open – ruwe EEG via JavaScript en Python (plus BrainFlow, LSL en OSC) zonder abonnementsdrempel. Emotiv heeft een vergelijkbare SDK, maar zet toegang tot ruwe data achter een Pro-abonnement, wat voelt als dubbel betalen."
+        },
+        {
+          "q": "Wat is beter voor academisch onderzoek?",
+          "a": "Emotiv Insight 2 – de toolchain van EmotivPRO wordt geciteerd in honderden gepubliceerde studies, wat het makkelijker maakt om ernaar te verwijzen in je eigen werk. De onderzoeksvoetafdruk van Neurosity is kleiner omdat het platform jonger is."
+        },
+        {
+          "q": "Waarom is Neurosity Crown zoveel duurder?",
+          "a": "$1,499 tegenover $499 weerspiegelt de hardware met acht kanalen en het model zonder abonnement. Over drie jaar met Emotiv Pro krimpt het verschil tot ongeveer $700. Voor gebruikers die ruwe data nodig hebben, komt Neurosity in totale kosten ongeveer op hetzelfde uit."
+        },
+        {
+          "q": "Kan een van beide headsets gebruikt worden voor meditatie?",
+          "a": "Beide kunnen het, maar geen van beide is daarvoor het juiste gereedschap. De meditatie-ervaring voor consumenten is het terrein van Muse – Muse 2 ($249.99) of Muse S Athena ($474.99). Neurosity en Emotiv zijn hardware voor ontwikkelaars waarvoor je zelf een toepassing moet meebrengen."
+        }
+      ],
+      "content": "## De korte versie\n\nNeurosity Crown wint voor ontwikkelaars en biohackers die toegang willen tot ruwe EEG zonder abonnement. Emotiv Insight 2 wint specifiek voor onderzoek in academische stijl, waarbij de publicatiebasis van de EmotivPRO-toolchain telt.\n\n## Wanneer is Neurosity Crown de juiste keuze?\n\nAls je iets wilt bouwen bovenop EEG – een focus-app, een productiviteitstool, een onderzoeksproject – en je liever één keer betaalt dan een doorlopend abonnement voor ruwe data aanhoudt, dan past Neurosity Crown. De hardware met acht kanalen en de JavaScript/Python-SDK (plus BrainFlow/LSL) maken het verschil.\n\n## Wanneer is Emotiv Insight 2 de juiste keuze?\n\nAls je analyses in academische stijl doet en in je werk naar de EmotivPRO-toolchain wilt verwijzen, dan past Emotiv. De hardware met vijf kanalen is goed genoeg voor het meeste werk per corticale regio, de live (eigen) cognitieve scores zijn breder dan die van Neurosity, en het Pro-abonnement is acceptabel wanneer de diepte van de academische toolchain is waarvoor je betaalt."
+    },
+    "plunge-vs-coldture": {
+      "title": "The Plunge vs Coldture: vergelijking (2026)",
+      "description": "The Plunge vs Coldture: twee premium ijsbaden met ingebouwde koeler vergeleken. Amerikaanse marktleider tegenover Canadese specialist voor koude klimaten.",
+      "intro": "The Plunge en Coldture zijn de twee premium ijsbaden met ingebouwde koeler die tegenover elkaar staan wanneer kopers een kant-en-klare high-end installatie willen. Beide leveren een geïntegreerde koeler, ozonreiniging, een premium geïsoleerde constructie en 3 jaar garantie. Het structurele verschil zit in de geografische positionering: Plunge is de Amerikaanse marktleider, Coldture de in Canada gebouwde specialist voor koude klimaten.",
+      "verdict": "Geografie beslist. The Plunge voor kopers in de VS en installaties in een gematigd klimaat. Coldture voor buiteninstallaties in koude klimaten en de Canadese/Europese markt.",
+      "bestForA": "Kies The Plunge als je in de VS woont, het langst gevestigde consumentenmerk wilt en installeert in een gematigd klimaat – en het content-ecosysteem van de oprichter voor je telt.",
+      "bestForB": "Kies Coldture als je in Canada, de EU of een koude regio van de VS woont – buitengebruik in de winter is waar Coldture is ontworpen om beter te presteren.",
+      "axes": [
+        {
+          "name": "Koelcapaciteit",
+          "note": "Plunge: 1 HP, iets agressievere minimumtemperatuur (39°F). Coldture: capabel, maar net iets minder krachtig bij piekhitte in de zomer."
+        },
+        {
+          "name": "Prestaties in koude winters",
+          "note": "Coldture is ontworpen rond buitengebruik in de winter; Plunge is geschikt voor buiten, maar presteert het best in een gematigd klimaat."
+        },
+        {
+          "name": "Constructie",
+          "note": "Beide premium geïsoleerd; vergelijkbare betrouwbaarheid over meerdere jaren. Plunge heeft 5+ jaar trackrecord in de VS; Coldture heeft een vergelijkbare staat van dienst in Canada / de EU."
+        },
+        {
+          "name": "Garantie",
+          "note": "Beide: 3 jaar garantie op koeler en bad."
+        },
+        {
+          "name": "Distributie en support",
+          "note": "Plunge heeft sterkere distributie en content in de VS. Coldture heeft sterkere distributie in Canada / de EU."
+        },
+        {
+          "name": "Prijs",
+          "note": "Coldture: ~$4,500. Plunge: $5,990. Coldture is duidelijk goedkoper voor vergelijkbare premium hardware."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wat is beter – The Plunge of Coldture?",
+          "a": "Geografie beslist. The Plunge voor kopers in de VS in een gematigd klimaat; Coldture voor buiteninstallaties in koude klimaten (Canada, EU, koude regio's van de VS). De hardware is vergelijkbaar; de technische prioriteiten verschillen."
+        },
+        {
+          "q": "Werkt Coldture in de winter buiten?",
+          "a": "Ja – dat is de ontwerpprioriteit. In Canada gebouwd rond buitengebruik in koude klimaten. The Plunge is geschikt voor buiten, maar is ontworpen rond de omstandigheden van een gematigd klimaat."
+        },
+        {
+          "q": "Welke heeft betere distributie in de VS?",
+          "a": "The Plunge, met ruime voorsprong – Amerikaanse oprichter, op de VS gericht content-ecosysteem. Coldture levert naar de VS, maar de support is op Canada gericht."
+        },
+        {
+          "q": "Zijn de garanties vergelijkbaar?",
+          "a": "Ja – beide 3 jaar op de koeler en het bad. Gelijke dekkingsperiode."
+        }
+      ],
+      "content": "## De korte versie\n\nThe Plunge en Coldture zijn de twee premium ijsbaden met ingebouwde koeler. Plunge is de Amerikaanse marktleider met het diepste content-ecosysteem; Coldture is de in Canada gebouwde specialist voor koude klimaten, tegen een iets lagere prijs.\n\n## Wanneer is The Plunge de juiste keuze?\n\nAls je in de VS woont en het langst gevestigde merk en de grootste contentbibliotheek van de oprichter wilt – dan past The Plunge. In een gematigd klimaat komt de techniek het best tot zijn recht.\n\n## Wanneer is Coldture de juiste keuze?\n\nAls je in Canada, de EU of een koude regio van de VS buiten installeert, presteren de op de winter ontworpen koeler en isolatie van Coldture beter dan Plunge. De lagere prijs is een bonus."
+    },
+    "ultrahuman-ring-pro-vs-oura-ring-5": {
+      "title": "Ultrahuman Ring Pro vs Oura Ring 5: vergelijking (2026)",
+      "description": "Ultrahuman Ring Pro vs Oura Ring 5: de topring zonder abonnement met ~15 dagen accu, of de best onderbouwde ringlijn met verplicht lidmaatschap.",
+      "intro": "Dit is dé keuze tussen slimme ringen van 2026: de vernieuwde, in de VS verkrijgbare Ring Pro van Ultrahuman tegenover Oura's topmodel Ring 5. De Ring Pro werkt zonder abonnement en heeft een accu van ~15 dagen, de beste in de categorie; de Ring 5 komt uit de ringlijn met het meeste gepubliceerde onderzoek (vooral naar eerdere generaties, deels gefinancierd door Oura; de Ring 5 zelf is niet gevalideerd) en de beste app, maar rekent een verplicht lidmaatschap. Het komt neer op het apparaat volledig bezitten of betalen voor de referentie-ervaring.",
+      "verdict": "Geen abonnement en een enorme accu tegenover een onderzoekstrackrecord en een diepe app. De Ultrahuman Ring Pro wint op kostenmodel (eenmalig $479, geen kosten daarna) en accu (~15 dagen); de Oura Ring 5 wint op de best onderbouwde ringlijn (de Ring 5 zelf is niet gevalideerd), sensoren en de beste app – voor $399 plus een lidmaatschap. Kies op basis van of je een abonnement weigert of de meest gevestigde ring wilt.",
+      "bestForA": "Kies de Ultrahuman Ring Pro als een eenmalige prijs zonder abonnement en een uitzonderlijke accu van ~15 dagen voor jou het zwaarst wegen, en je het geen probleem vindt om early adopter te zijn van een vernieuwde ring.",
+      "bestForB": "Kies de Oura Ring 5 als je de ringlijn wilt met het meeste gepubliceerde onderzoek (vooral naar eerdere generaties, deels gefinancierd door Oura; de Ring 5 zelf is niet gevalideerd), de meest verzorgde app en verbeterde sensoren, en het lidmaatschap van ~$6/maand acceptabel vindt.",
+      "axes": [
+        {
+          "name": "Abonnement en kosten",
+          "note": "Ring Pro: eenmalig $479, geen abonnement. Oura Ring 5: $399 + ~$6/maand voor alle data. Over een paar jaar is de Ring Pro goedkoper en ben je niets doorlopends verschuldigd."
+        },
+        {
+          "name": "Accu",
+          "note": "Ring Pro: ~15 dagen – de beste in de categorie. Oura Ring 5: ~6–9 dagen. Geen wedstrijd."
+        },
+        {
+          "name": "Nauwkeurigheid slaap en HRV",
+          "note": "Praktisch gelijk: noch de Ring Pro noch de Ring 5 heeft een onafhankelijke validatie van slaapfasen of nachtelijke hartslagvariabiliteit (HRV) (stand oktober 2026). Eerdere Oura-generaties hebben het betere onafhankelijke bewijs voor de nacht; Ultrahuman heeft alleen preprints van het bedrijf zelf."
+        },
+        {
+          "name": "App en ecosysteem",
+          "note": "De app van Oura is de meest verzorgde en uitleggende in de categorie, met de meeste integraties. Die van Ultrahuman is capabel en meer op metabolisme gericht, maar minder verfijnd."
+        },
+        {
+          "name": "Trackrecord",
+          "note": "Oura heeft jaren aan bewezen betrouwbaarheid van de hardware. De Ring Pro is nieuw, en de vorige Ring Air van Ultrahuman had veelgemelde accuproblemen – het herontwerp richt zich precies daarop, maar is op lange termijn nog niet bewezen."
+        },
+        {
+          "name": "Verwerking en functies",
+          "note": "De Ring Pro voegt een dual-core processor in de ring toe en een realtime \"Jade\"-laag voor biointelligentie – meer ingebouwde capaciteit dan de Ring 5."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ultrahuman Ring Pro of Oura Ring 5 – welke moet ik kopen?",
+          "a": "Als je geen abonnement wilt en de langste accuduur zoekt: de Ring Pro (eenmalig $479, ~15 dagen). Als je de ringlijn wilt met het meeste gepubliceerde onderzoek (vooral naar eerdere generaties, deels gefinancierd door Oura; de Ring 5 zelf is niet gevalideerd) en de beste app: de Oura Ring 5 ($399 + ~$6/maand). De Ring Pro wint op kostenmodel; Oura heeft meer gepubliceerd onderzoek naar eerdere generaties (er is geen onafhankelijke controle van het huidige model) en wint op afwerking."
+        },
+        {
+          "q": "Is de Ring Pro nauwkeurig genoeg om Oura over te slaan?",
+          "a": "Voor de meeste mensen is de HRV- en slaapmeting goed en verbeterd ten opzichte van de Ring Air. Maar eerdere Oura-generaties hebben meer gepubliceerd onderzoek, waaronder één kleine onafhankelijke ecg-studie (de Ring 5 zelf is niet gevalideerd), dus als gepubliceerd bewijs je hoogste prioriteit is, is Oura de beter onderbouwde lijn – ten koste van een abonnement."
+        },
+        {
+          "q": "Gaat de Ring Pro echt 15 dagen mee?",
+          "a": "Ultrahuman adverteert met tot ~15 dagen, ongeveer het dubbele van de 6–9 van de Ring 5. De accuduur in de praktijk hangt af van het gebruik, maar de Ring Pro is duidelijk de ring die langer meegaat en op papier de leider in de categorie."
+        }
+      ],
+      "content": "## De korte versie\n\nDe [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) is het topmodel zonder abonnement – eenmalig $479, accu van ~15 dagen, verwerking in de ring. De [Oura Ring 5](/reviews/oura-ring-5) heeft de volwassenere app, uit een ringlijn met meer onderzoek naar eerdere modellen (de nauwkeurigheid van de Ring 5 is nog niet onafhankelijk gevalideerd), voor $399 plus een verplicht lidmaatschap.\n\n## Wanneer is de Ultrahuman Ring Pro de juiste keuze?\n\nJe weigert terugkerende kosten, je wilt de langste accuduur in de categorie en je vindt het prima om early adopter te zijn van een vernieuwde ring.\n\n## Wanneer is de Oura Ring 5 de juiste keuze?\n\nNauwkeurigheid en een diepe app hebben prioriteit, je wilt verbeterde sensoren en de meest verzorgde ervaring, en het lidmaatschap is acceptabel.\n\n## Ook het vergelijken waard\n\nVoor de vorige, goedkopere Oura, zie [Oura Ring 5 vs Oura Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4); voor andere ringen zonder abonnement de [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) en [RingConn Gen 2](/reviews/ringconn-gen-2). Het volledige veld: [beste HRV-trackers](/reviews/hrv-trackers)."
     }
   }
 }

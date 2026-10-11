@@ -534,6 +534,29 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'articles', slug: 'caffeine-hrv-resting-heart-rate', langs: ['uk', 'zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
   { collection: 'h2h', slug: 'apple-watch-series-12-vs-garmin-venu-4', langs: ['uk', 'zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
   ],
+  // wave C (078)
+  [
+  { collection: 'h2h', slug: 'neurosity-crown-vs-emotiv-insight-2' },
+  { collection: 'reviews', slug: 'omnilux-contour-face' },
+  { collection: 'reviews', slug: 'sens-ai' },
+  { collection: 'reviews', slug: 'neurosky-mindwave-mobile-2' },
+  { collection: 'reviews', slug: 'ringconn-gen-2', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'reviews', slug: 'muse-2' },
+  { collection: 'reviews', slug: 'polar-h10', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'h2h', slug: 'chilipad-dock-pro-vs-bedjet-3' },
+  { collection: 'reviews', slug: 'breathe-to-relax' },
+  { collection: 'reviews', slug: 'eight-sleep-pod-6' },
+  { collection: 'h2h', slug: 'ultrahuman-ring-pro-vs-oura-ring-5' },
+  { collection: 'reviews', slug: 'emotiv-insight-2' },
+  { collection: 'h2h', slug: 'luna-ring-vs-amazfit-helio-ring' },
+  { collection: 'reviews', slug: 'apple-watch-series-11', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'reviews', slug: 'therasage-thera-sauna-personal' },
+  { collection: 'h2h', slug: 'plunge-vs-coldture' },
+  { collection: 'reviews', slug: 'sleep-as-android', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'reviews', slug: 'finnleo-hallmark' },
+  { collection: 'reviews', slug: 'apple-watch-ultra-4' },
+  { collection: 'reviews', slug: 'bettersleep', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  ],
 ]
 
 function addDays(iso: string, days: number): string {

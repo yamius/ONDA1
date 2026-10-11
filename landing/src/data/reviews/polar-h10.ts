@@ -19,7 +19,7 @@ const polarH10: ToolReviewInput = {
     { criterionId: 'data-access', score: 9.5, note: 'Broadcasts raw beat-to-beat (RR) intervals over Bluetooth and ANT+; pairs with virtually any HRV app.' },
     { criterionId: 'wearability', score: 3.5, note: 'A chest strap worn for a measurement or a workout — not 24/7 passive tracking.' },
     { criterionId: 'app-ux', score: 6.5, note: 'Polar Flow is serviceable, but the H10 is at its best paired with dedicated third-party HRV apps.' },
-    { criterionId: 'value', score: 9.0, note: 'Around 90 USD, no subscription, and reliable for years — the cheapest device in this comparison.' },
+    { criterionId: 'value', score: 9.0, note: 'About 105 USD, no subscription, and reliable for years — the cheapest device in this comparison.' },
   ],
   pros: [
     'ECG electrodes, not optical — close to lab ECG at rest in young healthy adults',

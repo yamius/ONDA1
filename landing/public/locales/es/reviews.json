@@ -174,7 +174,11 @@
     "cadr-coverage": "CADR y cobertura de la estancia",
     "build-noise": "Calidad de construcción y ruido",
     "smart-features": "Funciones inteligentes y sensores",
-    "maintenance-cost": "Cambio de filtros y mantenimiento"
+    "maintenance-cost": "Cambio de filtros y mantenimiento",
+    "wavelength-coverage": "Cobertura de longitudes de onda",
+    "led-count-coverage": "Número de LED y cobertura facial",
+    "clinical-evidence": "Evidencia clínica y situación regulatoria",
+    "comfort-fit": "Comodidad y ajuste"
   },
   "bodies": {
     "sleep-cycle": {
@@ -608,7 +612,7 @@
         "data-access": "Emite los intervalos en bruto latido a latido (RR) por Bluetooth y ANT+; se empareja con prácticamente cualquier app de HRV.",
         "wearability": "Una banda pectoral que se lleva para una medición o un entrenamiento — no un seguimiento pasivo 24/7.",
         "app-ux": "Polar Flow es aceptable, pero el H10 rinde mejor emparejado con apps de HRV de terceros dedicadas.",
-        "value": "En torno a 90 USD, sin suscripción, y fiable durante años — el dispositivo más barato de esta comparativa."
+        "value": "En torno a 105 USD, sin suscripción, y fiable durante años — el dispositivo más barato de esta comparativa."
       },
       "content": "## En qué destaca\n\nEl Polar H10 no es realmente un wearable — es un instrumento de medición, y dentro de esta comparativa lo usamos como referencia en reposo. Su sensor de ECG eléctrico lee la señal del corazón directamente en lugar de inferirla del flujo sanguíneo, y la validación revisada por pares encuentra una concordancia casi perfecta con el ECG clínico para la variabilidad de la frecuencia cardíaca (HRV o VFC) en reposo, en adultos jóvenes sanos. Además emite los intervalos en bruto latido a latido (RR) tanto por Bluetooth como por ANT+, así que se empareja con prácticamente cualquier app de HRV. A unos 90 USD y sin suscripción, nada más de aquí tiene este tipo de validación frente a ECG en reposo ni es tan abierto.\n\n## En qué se queda corto\n\nLa contrapartida es deliberada. Una banda pectoral no es algo que lleves a todas horas — no hay seguimiento pasivo de todo el día, y no detecta fases de sueño en absoluto, lo que le cuesta caro en los dos criterios construidos en torno al uso 24/7. Para una medición ortostática matinal o una sesión de entrenamiento es ideal; como monitor de recuperación continuo, es la herramienta equivocada.\n\n## Para quién es\n\nElige el Polar H10 si quieres lecturas de HRV cercanas a un ECG de laboratorio en reposo — una señal limpia e independiente de la app para un protocolo matinal estructurado, o para validar otro dispositivo — y estás dispuesto a ponerte una banda para conseguirlo. Si quieres que el HRV se recoja de forma pasiva mientras duermes, empárejalo con uno de los anillos o bandas de aquí, o elige uno de ellos.",
       "productType": "Banda pectoral ECG"
@@ -1289,8 +1293,53 @@
       ]
     },
     "muse-2": {
-      "verdict": "La banda EEG de consumo más popular: contenido maduro, precio asequible, la puerta de entrada a la categoría.",
-      "productType": "Banda EEG de consumo (meditación)"
+      "verdict": "La diadema EEG de consumo más popular: contenido maduro, precio accesible, la puerta de entrada a la categoría.",
+      "summary": "Muse 2 es la diadema que puso en el mapa la meditación con EEG de consumo. Cuatro electrodos EEG secos más frecuencia cardiaca por PPG, una biblioteca madura de meditación, una app pulida y el precio más bajo de esta lista fuera del económico NeuroSky. Hardware más antiguo que el Athena y sin seguimiento del sueño, pero para quien solo quiere feedback de meditación sigue siendo la opción con mejor relación coste-eficacia.",
+      "description": "Análisis ONDA de Muse 2: la diadema EEG de meditación madura y de gran consumo, a cerca de la mitad del precio del Athena. Señal, contenido y valor.",
+      "bestFor": "Ideal para quien se inicia en la meditación con EEG y quiere el dispositivo de consumo más maduro a un precio accesible.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de Interaxon, la literatura publicada de validación del EEG de Muse y análisis independientes de 2026. ONDA no lo ha probado en persona.",
+      "productType": "Diadema EEG de consumo (meditación)",
+      "pros": [
+        "La diadema EEG de consumo más popular: ecosistema y comunidad maduros",
+        "El precio más bajo entre los dispositivos de meditación con EEG real",
+        "Sin suscripción obligatoria: el feedback básico de meditación, frecuencia cardiaca, respiración y postura funcionan sin ella",
+        "Frecuencia cardiaca más señal EEG en un solo dispositivo"
+      ],
+      "cons": [
+        "Sin seguimiento del sueño: eso es la mejora del Athena",
+        "Hardware más antiguo que Muse S Athena (sin fNIRS, sin uso nocturno)",
+        "SDK para desarrolladores limitado",
+        "El coach con IA Enso, el seguimiento del rendimiento cognitivo, el audio externo y los programas guiados requieren Muse Premium",
+        "Banda rígida, menos cómoda que las alternativas de banda blanda"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Cuatro electrodos EEG secos más frecuencia cardiaca por PPG: señal de consumo adecuada que se mantiene bien en sesiones sentado; menos estable que los sistemas de investigación con electrodos húmedos.",
+        "training-content": "Biblioteca de meditación madura tras una década de lanzamientos: calma, concentración, respiración, escaneo corporal, estado de ánimo. Menos profunda que la variante Athena, pero cubre por completo el uso diario básico.",
+        "insights": "Porcentaje de calma / neutral / activo por sesión más tendencia de frecuencia cardiaca; menos narrativo que el analizador del Athena. Suficiente para seguir la práctica durante meses.",
+        "comfort": "Diadema rígida: cómoda en sesiones de meditación de 10–20 minutos, pero no diseñada para uso nocturno.",
+        "app-ux": "App pulida para iOS/Android; ecosistema maduro con integración con Apple Health. La interfaz acusa la edad en algunos puntos.",
+        "open-data": "Exportación de EEG en bruto disponible vía Muse Direct (de terceros); SDK propio limitado.",
+        "value": "$249.99 de hardware, sin suscripción obligatoria para el feedback básico de meditación (Muse Premium añade el coach con IA, el seguimiento cognitivo y los programas): la entrada con mejor relación coste-eficacia al feedback real de meditación con EEG de consumo."
+      },
+      "content": "## En qué destaca\n\nMuse 2 es el dispositivo que enseñó al mercado EEG de consumo cómo es hacerlo bien. Los cuatro electrodos secos no son de nivel de investigación, pero son adecuados; la biblioteca de meditación es la más amplia del mercado de consumo; la app se ha pulido durante más de una década de iteraciones. A $249.99 es la diadema EEG de meditación legítima más barata del mercado que aún tiene un ecosistema real detrás.\n\n## ¿Cuáles son las desventajas de Muse 2?\n\nEl problema es el tiempo. El hardware de Muse 2 es anterior a la variante Athena y carece de fNIRS, seguimiento del sueño y uso nocturno. Para meditación pura, la diferencia importa menos de lo que sugiere el precio, pero si quieres el sueño, este dispositivo se te ha quedado pequeño. El SDK para desarrolladores es limitado, así que los biohackers que quieren acceso a la señal en bruto optan por Neurosity Crown.\n\n## ¿Quién debería comprar Muse 2?\n\nElige Muse 2 si lo único que quieres de un casco EEG es feedback de meditación y el precio importa. Si además quieres seguimiento del sueño, Muse S Athena. Si quieres datos EEG en bruto para autoexperimentación, Neurosity Crown.\n\n---\n\n## Lecturas de contexto\n\nLa neurociencia que estos cascos devuelven como feedback, y lo que la señal EEG puede y no puede decirte sobre los estados mentales.\n\n- [Neuroplasticidad y estados de flow](/articles/neuroplasticity-flow-overclocking) — qué son los estados de flow y cómo se forman\n- [Calibración de la CCA: protocolo de control cognitivo](/articles/acc-calibration-protocol-cognitive-control) — los circuitos de control prefrontal detrás del control cognitivo\n- [Adaptación y fraccionamiento del rango](/articles/adaptation-hack-range-fractionation) — entrenar estados cognitivos mediante variación deliberada\n",
+      "faq": [
+        {
+          "q": "¿Merece la pena Muse 2?",
+          "a": "Muse 2 merece la pena para quien se inicia en la meditación con EEG. Es la diadema EEG de consumo más popular, con un ecosistema maduro, el precio más bajo entre los dispositivos de meditación con EEG real, frecuencia cardiaca más EEG en un solo dispositivo y sin suscripción obligatoria. No hace seguimiento del sueño."
+        },
+        {
+          "q": "¿Cuánto cuesta Muse 2?",
+          "a": "Muse 2 cuesta $249.99 la diadema. El feedback básico de meditación y la detección de frecuencia cardiaca, respiración y postura funcionan sin suscripción; el coach con IA Enso, el seguimiento del rendimiento cognitivo, el audio externo (Spotify, Calm, Headspace) y los programas guiados requieren Muse Premium. Es el precio más bajo entre los dispositivos de meditación con EEG real del análisis. Además combina sensores de frecuencia cardiaca y EEG en una sola banda."
+        },
+        {
+          "q": "¿Cuáles son las desventajas de Muse 2?",
+          "a": "Muse 2 no hace seguimiento del sueño, tiene hardware más antiguo que Muse S Athena sin fNIRS ni uso nocturno, un SDK para desarrolladores limitado y una banda rígida menos cómoda que las alternativas de banda blanda."
+        },
+        {
+          "q": "Muse 2 vs Muse S Athena: ¿cuál es mejor?",
+          "a": "Elige Muse 2 para la entrada más barata a la meditación con EEG, a $249.99. Elige Muse S Athena, a $474.99, si quieres seguimiento del sueño, fNIRS y una banda blanda lo bastante cómoda para llevarla de noche, ya que Muse 2 carece de las tres cosas."
+        }
+      ]
     },
     "neurosity-crown": {
       "verdict": "El mejor casco EEG para desarrolladores y biohackers: ocho canales, SDK abierto, datos en bruto y sin suscripción. Por $1,499 y unas tres horas de batería, no es la compra adecuada para meditar de forma ocasional.",
@@ -1353,12 +1402,96 @@
       ]
     },
     "emotiv-insight-2": {
-      "verdict": "El híbrido investigación-consumo: cinco canales y herramientas académicas reales, con los datos en bruto tras una suscripción.",
-      "productType": "Casco EEG híbrido investigación-consumo (5 canales)"
+      "verdict": "El híbrido entre investigación y consumo: cinco canales y herramientas académicas reales, con los datos en bruto tras una suscripción.",
+      "summary": "Emotiv Insight 2 es la rama de consumo de la línea de investigación de Emotiv, situada entre el enfoque para desarrolladores de Neurosity Crown y la orientación a la meditación de Muse. Cinco electrodos EEG, unas herramientas académicas consolidadas (EmotivPRO se usa en cientos de estudios publicados) y puntuaciones de rendimiento en vivo de concentración, estrés, implicación y excitación: fórmulas propias de Emotiv, no medidas validadas de esos estados. El inconveniente es el modelo de datos: el acceso al EEG en bruto requiere la suscripción Pro.",
+      "description": "Análisis ONDA de Emotiv Insight 2: casco EEG de cinco canales entre consumo e investigación, con herramientas académicas. Señal, contenido y valor.",
+      "bestFor": "Ideal para investigadores y autoexperimentadores serios que quieren herramientas EEG de nivel académico a precio de consumo.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de Emotiv, el historial de publicaciones académicas con EmotivPRO y análisis independientes de 2026. ONDA no lo ha probado en persona.",
+      "productType": "Diadema EEG híbrida investigación-consumo (5 canales)",
+      "pros": [
+        "Cinco canales EEG: mejor cobertura cortical que Muse, más sencillo que Crown",
+        "Las herramientas de EmotivPRO se usan ampliamente en investigación publicada",
+        "Seis puntuaciones de rendimiento en vivo (fórmulas propias de Emotiv)",
+        "SDK consolidado con bindings para varios lenguajes"
+      ],
+      "cons": [
+        "El acceso a datos en bruto requiere suscripción Pro: se siente como pagar dos veces",
+        "Biblioteca de contenido guiado modesta en comparación con Muse",
+        "La experiencia de uso refleja su origen investigador: menos pulida que las alternativas de consumo",
+        "Sin seguimiento del sueño"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Cinco electrodos EEG semisecos: punto intermedio entre Muse (4 secos) y Crown (8 secos). Señal estable en sesiones sentado.",
+        "training-content": "Contenido guiado modesto; Emotiv posiciona el dispositivo como instrumento de medición más que como plataforma de contenido.",
+        "insights": "Puntuaciones de rendimiento en vivo —concentración, estrés, implicación, excitación, interés, relajación— de algoritmos propios de Emotiv, no medidas validadas. Más puntuaciones en vivo que Muse, resúmenes de sesión más ligeros.",
+        "comfort": "Diseño ligero de corona de cinco brazos. Adecuado para sesiones de 30–60 minutos; no diseñado para uso nocturno.",
+        "app-ux": "Emotiv App y panel web de EmotivPRO. La experiencia es funcional, pero refleja su origen investigador: más detallada que Muse, menos pulida que Athena.",
+        "open-data": "SDK abierto y exportación de EmotivPRO para EEG en bruto, usado en cientos de estudios académicos publicados. Se requiere la suscripción Pro para desbloquear el acceso en bruto.",
+        "value": "$499 de hardware más suscripción Pro (~$99/año) para acceder a datos en bruto. Más barato que Crown, más caro que Muse 2."
+      },
+      "content": "## En qué destaca\n\nEmotiv Insight 2 ocupa la estrecha franja del mercado EEG entre el consumo y la investigación. Cinco electrodos semisecos son más que Muse y menos que Crown, sus herramientas académicas (EmotivPRO) son con mucha diferencia las más citadas de esta categoría, y la app muestra seis puntuaciones de rendimiento en vivo —concentración, estrés, implicación, excitación, interés, relajación— que son fórmulas propias de Emotiv, no medidas validadas de estrés o atención. Para un aficionado que quiere hacer análisis EEG real sin comprar equipo de grado médico, es la opción adecuada.\n\n## ¿Cuáles son las desventajas de Emotiv Insight 2?\n\nEl modelo de datos. El acceso al EEG en bruto requiere la suscripción a EmotivPRO además de la compra del hardware de $499, lo que se siente como pagar dos veces frente al modelo de Neurosity Crown con SDK incluido. El contenido guiado es modesto: Emotiv trata el dispositivo como instrumento, no como plataforma de contenido. Y no hay seguimiento del sueño.\n\n## ¿Quién debería comprar Emotiv Insight 2?\n\nElige Emotiv Insight 2 si quieres herramientas orientadas a la investigación a precio de consumo y aceptas pagar una suscripción por los datos en bruto. Si el criterio decisivo son los datos en bruto sin suscripción, Neurosity Crown. Si el criterio decisivo es el contenido de meditación, Muse S Athena o Muse 2.\n\n---\n\n## Lecturas de contexto\n\nLa neurociencia que estos cascos devuelven como feedback, y lo que la señal EEG puede y no puede decirte sobre los estados mentales.\n\n- [La acetilcolina como lente de la atención](/articles/acetylcholine-lens-neuro-mechanics) — la neuroquímica detrás de la concentración\n- [Arquitectura cognitiva: rendimiento neural](/articles/cognitive-architecture-neural-throughput) — una metáfora de cuánta información puede manejar la mente\n- [Arquitectura cognitiva: combinaciones de nootrópicos](/articles/cognitive-architecture-nootropic-stacks) — lo que pueden y no pueden hacer las combinaciones de nootrópicos, y por qué las puntuaciones de un casco no pueden mostrar su efecto\n",
+      "faq": [
+        {
+          "q": "¿Merece la pena Emotiv Insight 2?",
+          "a": "Sí, para investigadores y autoexperimentadores serios. Emotiv Insight 2 tiene cinco canales EEG, las herramientas de EmotivPRO usadas en cientos de estudios publicados y un SDK consolidado. El acceso a datos en bruto requiere una suscripción Pro, y su contenido guiado va por detrás de Muse."
+        },
+        {
+          "q": "¿Cuánto cuesta Emotiv Insight 2?",
+          "a": "Emotiv Insight 2 cuesta $499 el dispositivo, más unos $99 al año por la suscripción Pro necesaria para acceder a los datos en bruto. Sin Pro sigues teniendo las puntuaciones de rendimiento en vivo de Emotiv, como concentración, estrés e implicación: fórmulas propias de la empresa, no medidas validadas."
+        },
+        {
+          "q": "¿Cuáles son las desventajas de Emotiv Insight 2?",
+          "a": "El acceso a datos en bruto en Emotiv Insight 2 requiere una suscripción Pro, lo que se siente como pagar dos veces. Su biblioteca de contenido guiado es modesta comparada con Muse, su experiencia de uso es menos pulida que la de las alternativas de consumo y no hace seguimiento del sueño."
+        },
+        {
+          "q": "Emotiv Insight 2 vs Muse: ¿cuál es mejor?",
+          "a": "Emotiv Insight 2 es mejor para investigación EEG y trabajo con datos en bruto; Muse es mejor para meditación guiada. Los cinco canales de Emotiv ofrecen mejor cobertura cortical que Muse, además de herramientas académicas, mientras que Muse tiene una biblioteca de contenido guiado más amplia."
+        }
+      ]
     },
     "sens-ai": {
-      "verdict": "El casco multimodal más ambicioso: EEG más fotobiomodulación más HRV, a un precio premium que exige tener claro el uso.",
-      "productType": "Casco multimodal (EEG + fotobiomodulación + HRV)"
+      "verdict": "El casco multimodal más ambicioso: EEG más fotobiomodulación más HRV, a un precio premium que exige ese caso de uso.",
+      "summary": "Sens.ai es el único casco de esta lista que combina medición pasiva (EEG de cinco canales y variabilidad de la frecuencia cardiaca, VFC/HRV) con intervención activa (fotobiomodulación transcraneal: luz de infrarrojo cercano). Los programas superponen las tres modalidades en sesiones combinadas de neurofeedback + luz + HRV, orientadas a concentración, calma, estado de ánimo y claridad. Posicionamiento premium con una membresía además del hardware de $1,250. Solo es la opción adecuada cuando lo que quieres es precisamente el uso multimodal.",
+      "description": "Análisis ONDA de Sens.ai: casco premium que une EEG de cinco canales, fotobiomodulación transcraneal y entrenamiento de HRV. Señal, contenido y valor.",
+      "bestFor": "Ideal para quien busca específicamente EEG + fotobiomodulación + HRV en un solo dispositivo y está dispuesto a pagar un precio premium.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de Sens.ai, la literatura publicada sobre fotobiomodulación y análisis independientes de 2026. ONDA no lo ha probado en persona.",
+      "productType": "Casco multimodal (EEG + fotobiomodulación + HRV)",
+      "pros": [
+        "El único casco que combina EEG + PBM + HRV en un solo dispositivo y programa",
+        "Sólido análisis de sesión multimodal: tres biomarcadores en una misma línea temporal",
+        "Hardware premium y contenido con seguimiento de progreso",
+        "Añade una segunda intervención (fotobiomodulación) al neurofeedback EEG; la evidencia de efectos cerebrales aún está emergiendo"
+      ],
+      "cons": [
+        "Precio premium: $1,250 más una membresía continua",
+        "Modelo de datos cerrado: no es para desarrolladores ni investigadores",
+        "Casco pesado: no sirve para dormir ni para moverse",
+        "Llegada más reciente al mercado: ecosistema menos maduro que Muse o Emotiv"
+      ],
+      "scoreNotes": {
+        "signal-quality": "EEG seco de cinco canales más HRV desde un sensor de clip en la oreja, más LED de infrarrojo cercano para PBM sobre la corteza prefrontal. Calidad de señal de nivel de consumo en las tres modalidades.",
+        "training-content": "Programas multimodales que superponen neurofeedback EEG, fotobiomodulación y entrenamiento de HRV en sesiones únicas de 25 minutos. Ningún otro dispositivo de consumo ofrece esta combinación.",
+        "insights": "Análisis posterior por sesión de las tres señales más datos de tendencia agregados. La interpretación multimodal más sólida de esta lista.",
+        "comfort": "Casco voluminoso con varias matrices de sensores, más pesado que Muse o Crown. Solo sesiones sentado; no para moverse ni dormir.",
+        "app-ux": "App pulida con seguimiento del progreso. Ecosistema menos maduro que Muse: el dispositivo es más reciente en el mercado.",
+        "open-data": "Exportación de datos en bruto limitada; el programa es cerrado por diseño. No es una plataforma para desarrolladores.",
+        "value": "$1,250 de hardware más membresía ($300/año o $75/mes tras una prueba de 60 días). De los más caros de esta categoría si se cuenta la membresía."
+      },
+      "content": "## En qué destaca\n\nSens.ai es el único casco de esta lista que se vende como dispositivo multimodal. EEG seco de cinco canales sobre el cuero cabelludo, un sensor de HRV de clip en la oreja y una matriz de LED de infrarrojo cercano sobre la corteza prefrontal para fotobiomodulación transcraneal: tres biomarcadores independientes y una intervención independiente, integrados en un único programa de 25 minutos. El análisis de sesión multimodal usa realmente las tres señales; nada más en el mercado de consumo lo hace.\n\n## ¿Cuáles son las desventajas de Sens.ai?\n\nPrimero, el precio. A $1,250 más una membresía continua ($300 al año tras la prueba de 60 días), Sens.ai es de los más caros de esta categoría: a unos años vista cuesta más que Neurosity Crown sin el acceso para desarrolladores de Crown. El modelo de datos es cerrado por diseño; la exportación en bruto es limitada. El casco además es voluminoso y solo resulta cómodo en sesiones sentado, no para moverse ni dormir. Para quien quiere una o dos de las modalidades pero no las tres, los dispositivos de un solo propósito ofrecen mejor valor.\n\n## ¿Quién debería comprar Sens.ai?\n\nElige Sens.ai si lo que quieres es precisamente la combinación multimodal —EEG + fotobiomodulación + HRV en un solo programa— y el precio te parece aceptable. Si quieres solo EEG con el contenido más completo, Muse S Athena. Si quieres EEG con datos abiertos, Neurosity Crown.\n\n---\n\n## Lecturas de contexto\n\nLa neurociencia que estos cascos devuelven como feedback, y lo que la señal EEG puede y no puede decirte sobre los estados mentales.\n\n- [Demencia digital y control atencional](/articles/digital-dementia-attentional-control) — reconstruir la atención con práctica guiada por feedback\n- [Neuroplasticidad y estados de flow](/articles/neuroplasticity-flow-overclocking) — qué son los estados de flow y cómo se forman\n- [Calibración de la CCA: protocolo de control cognitivo](/articles/acc-calibration-protocol-cognitive-control) — los circuitos de control prefrontal detrás del control cognitivo\n",
+      "faq": [
+        {
+          "q": "¿Merece la pena Sens.ai?",
+          "a": "Sens.ai solo merece la pena si quieres específicamente EEG, fotobiomodulación y HRV en un solo casco. Es el único dispositivo que combina los tres en un único programa, con un sólido análisis de sesión multimodal y construcción premium, pero con su membresía continua también es de los cascos más caros de la categoría y su ecosistema es menos maduro que Muse o Emotiv."
+        },
+        {
+          "q": "¿Cuánto cuesta Sens.ai?",
+          "a": "Sens.ai cuesta $1,250 por el dispositivo, que incluye una membresía de prueba de 60 días; después, la membresía cuesta $300 al año o $75 al mes. Contando la membresía, es de los cascos más caros de esta categoría. El precio compra un sistema combinado de EEG, fotobiomodulación y HRV con contenido con seguimiento del progreso, no una diadema básica de meditación."
+        },
+        {
+          "q": "¿Cuáles son las desventajas de Sens.ai?",
+          "a": "Las principales desventajas son el precio, $1,250 más una membresía de $300 al año, y un modelo de datos cerrado que no conviene a desarrolladores ni investigadores. El casco es pesado, así que no sirve para dormir ni para usarlo en movimiento, y como producto más reciente su ecosistema es menos maduro que Muse o Emotiv."
+        }
+      ]
     },
     "myndlift": {
       "verdict": "Neurofeedback supervisado por un profesional clínico en casa: a través de un profesional autorizado, con protocolos definidos y seguimiento de síntomas.",
@@ -1466,7 +1599,47 @@
     },
     "neurosky-mindwave-mobile-2": {
       "verdict": "El casco EEG de consumo legítimo más barato: un solo canal, básico, pero con SDK abierto para desarrolladores y estudiantes.",
-      "productType": "Casco EEG educativo económico (un canal)"
+      "summary": "NeuroSky MindWave Mobile 2 es el producto EEG de consumo de nivel de entrada: un único electrodo en la frente más un clip de referencia en la oreja, con un SDK para desarrolladores y una pequeña biblioteca de apps de terceros. El hardware tiene más de una década y se nota; su valor está en el precio (~$110) y en el SDK, que permite a estudiantes, aficionados y desarrolladores aprender lo básico del EEG sin comprar un dispositivo de más de $1,000.",
+      "description": "Análisis ONDA de NeuroSky MindWave Mobile 2: el veterano casco EEG educativo de un canal, el más barato de la categoría. Señal, apertura y valor.",
+      "bestFor": "Ideal para estudiantes, aficionados y desarrolladores que quieren la forma legítima más barata de aprender lo básico del EEG.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de NeuroSky, la referencia del SDK ThinkGear y análisis independientes de 2026 de la gama educativa. ONDA no lo ha probado en persona.",
+      "productType": "Casco EEG educativo económico (un canal)",
+      "pros": [
+        "El casco EEG de consumo legítimo más barato, con mucha diferencia",
+        "SDK abierto (ThinkGear) con acceso a datos en bruto vía Bluetooth",
+        "Plataforma madura: código, tutoriales y ejemplos de más de una década de uso",
+        "No requiere suscripción"
+      ],
+      "cons": [
+        "EEG de un solo canal: pobre en información",
+        "Sin biblioteca de contenido propia; depende de apps de terceros",
+        "El diseño del hardware y el SDK responden a expectativas de mediados de la década de 2010",
+        "NeuroSky ha abandonado en gran parte sus apps propias"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Un único electrodo en la frente más clip de referencia en la oreja. El muestreo y el manejo de la señal reflejan hardware de mediados de la década de 2010: suficiente para calcular los índices propios de atención y meditación de NeuroSky (no son medidas validadas), muy por detrás de los dispositivos modernos multicanal.",
+        "training-content": "Sin biblioteca de contenido propia; la experiencia depende de apps de terceros. La plataforma es el dispositivo y el SDK, no una oferta de contenido.",
+        "insights": "Métricas eSense básicas de atención / meditación. Analítica moderna limitada: gran parte del ecosistema es heredado.",
+        "comfort": "Casco ligero con brazo rígido; tolerable en sesiones cortas, formato anticuado.",
+        "app-ux": "Depende de apps de terceros; las apps propias están en gran parte abandonadas. La experiencia varía muchísimo entre desarrolladores.",
+        "open-data": "SDK abierto (ThinkGear), acceso a datos en bruto por Bluetooth, sin suscripción. Maduro en términos absolutos, pero anterior a los SDK modernos web/nube.",
+        "value": "~$110 de hardware: el casco EEG legítimo más barato del mercado en 2026."
+      },
+      "content": "## En qué destaca\n\nMindWave Mobile 2 es la vía legítima más barata para entrar en el EEG de consumo. El SDK ThinkGear está bien documentado tras más de una década de uso comunitario, el flujo de datos en bruto por Bluetooth es abierto, y el dispositivo, a ~$110, es el único de esta lista que un estudiante o aficionado puede comprar con un presupuesto pequeño. Como instrumento de aprendizaje sigue siendo útil.\n\n## ¿Cuáles son las desventajas de NeuroSky MindWave Mobile 2?\n\nTodo lo demás. El EEG de un solo canal es pobre en información frente a los cuatro canales de Muse, los cinco de Emotiv Insight o los ocho de Neurosity Crown. La biblioteca de contenido propia está prácticamente abandonada; la calidad de las apps de terceros varía muchísimo. Toda la plataforma acusa la edad: no es un dispositivo de 2024.\n\n## ¿Quién debería comprar NeuroSky MindWave Mobile 2?\n\nElige NeuroSky MindWave Mobile 2 si eres estudiante, desarrollador o aficionado y quieres la forma legítima más barata de aprender lo básico del EEG y construir algo sobre el SDK. Para una experiencia de consumo moderna, Muse 2 o FocusCalm. Para trabajo serio de desarrollo, Neurosity Crown o Emotiv Insight 2.\n\n---\n\n## Lecturas de contexto\n\nLa neurociencia que estos cascos devuelven como feedback, y lo que la señal EEG puede y no puede decirte sobre los estados mentales.\n\n- [La acetilcolina como lente de la atención](/articles/acetylcholine-lens-neuro-mechanics) — la neuroquímica detrás de la concentración\n- [Arquitectura cognitiva: rendimiento neural](/articles/cognitive-architecture-neural-throughput) — una metáfora de cuánta información puede manejar la mente\n- [Arquitectura cognitiva: combinaciones de nootrópicos](/articles/cognitive-architecture-nootropic-stacks) — lo que pueden y no pueden hacer las combinaciones de nootrópicos, y por qué las puntuaciones de un casco no pueden mostrar su efecto\n",
+      "faq": [
+        {
+          "q": "¿Merece la pena NeuroSky MindWave Mobile 2?",
+          "a": "Merece la pena para estudiantes, aficionados y desarrolladores que quieren la forma legítima más barata de aprender lo básico del EEG. Ofrece un SDK ThinkGear abierto con datos en bruto por Bluetooth y una década de tutoriales. Eso sí, es de un solo canal y sus apps propias están en gran parte abandonadas."
+        },
+        {
+          "q": "¿Cuánto cuesta NeuroSky MindWave Mobile 2?",
+          "a": "NeuroSky MindWave Mobile 2 cuesta $110 en un pago único, sin suscripción. Eso lo convierte en el casco EEG de consumo legítimo más barato con mucha diferencia, y su SDK ThinkGear abierto no tiene coste adicional."
+        },
+        {
+          "q": "¿Cuáles son las desventajas de NeuroSky MindWave Mobile 2?",
+          "a": "Su EEG de un solo canal es pobre en información, no tiene biblioteca de contenido propia, su hardware y su SDK responden a expectativas de mediados de la década de 2010, y NeuroSky ha abandonado en gran parte sus apps propias, por lo que dependes de software de terceros. Sigue siendo una herramienta de aprendizaje, no un producto de consumo pulido."
+        }
+      ]
     },
     "platinumled-biomax-600": {
       "verdict": "Un sólido panel de tamaño medio con el espectro de longitudes de onda más rico y un buen control del EMF. Construcción de nivel Joovv a un precio de una gama inferior.",
@@ -2612,8 +2785,46 @@
       "productType": "App de respiración gratuita y minimalista (cuadrada, 4-7-8, personalizada)"
     },
     "breathe-to-relax": {
-      "verdict": "App de respiración gratuita creada por la telemedicina militar de EE. UU. para el TEPT y el estrés; enseña respiración diafragmática bien documentada a coste cero, aunque de la propia app solo hay pequeños estudios piloto.",
-      "productType": "App gratuita de respiración diafragmática creada por el Departamento de Defensa de EE. UU. para el estrés y el TEPT"
+      "verdict": "App gratuita de respiración creada por la telemedicina militar de EE. UU. para el TEPT y el estrés; enseña la respiración diafragmática, bien documentada, sin coste, aunque la app en sí solo cuenta con pequeños estudios piloto.",
+      "summary": "Breathe2Relax es la app gratuita de respiración diafragmática del Departamento de Defensa de EE. UU. / National Center for Telehealth & Technology, desarrollada originalmente para el manejo del TEPT y del estrés de combate en veteranos. La investigación publicada sobre la app se limita a pequeños estudios piloto; la técnica de respiración diafragmática que enseña está bien documentada. La biblioteca es limitada (centrada en respiración diafragmática / pautada) y la experiencia de uso está anticuada, pero no cuesta nada.",
+      "description": "Análisis de Breathe2Relax: app gratuita de respiración de la telemedicina militar de EE. UU. para TEPT y estrés. Solo estudios piloto; interfaz anticuada.",
+      "bestFor": "Ideal para quien quiere respiración diafragmática respaldada por evidencia sin coste, sobre todo en contextos clínicos, de TEPT o de manejo del estrés.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de las fichas de Breathe2Relax en App Store / Play Store, la documentación del US National Center for Telehealth & Technology y los estudios piloto publicados sobre la app. ONDA no la ha probado en persona.",
+      "productType": "App gratuita de respiración diafragmática del DoD para estrés y TEPT",
+      "pros": [
+        "Enseña la respiración diafragmática, una técnica bien documentada; la app en sí solo tiene pequeños estudios piloto",
+        "Totalmente gratuita, sin suscripción ni anuncios",
+        "Creada por el Departamento de Defensa de EE. UU. / National Center for Telehealth"
+      ],
+      "cons": [
+        "Interfaz anticuada de su época original de desarrollo gubernamental",
+        "Alcance de técnicas limitado: solo respiración diafragmática / pautada",
+        "Sin HRV ni biofeedback moderno",
+        "Sin biblioteca de contenido ni desarrollo continuo"
+      ],
+      "scoreNotes": {
+        "session-library": "Biblioteca limitada, centrada en respiración diafragmática y pautada para contextos de estrés / TEPT. No es una plataforma de contenido.",
+        "technique-coverage": "Solo respiración diafragmática y pautada. Sin Wim Hof, holotrópica ni una cobertura de técnicas más amplia.",
+        "evidence-grounding": "No hay ensayo aleatorizado de la app en sí. La investigación publicada sobre la app se limita a pequeños estudios piloto: un piloto no controlado con 31 militares en el que Breathe2Relax se usó junto con yoga sensible al trauma (Skopp et al. 2024, Military Psychology) y un análisis de costes (Luxton et al. 2014). Puntuación base para un producto sin ensayos propios; la respiración diafragmática que enseña está bien documentada.",
+        "app-experience": "Interfaz anticuada de su época original de desarrollo gubernamental. Funcional, pero sin el pulido de 2026.",
+        "biofeedback": "Sin variabilidad de la frecuencia cardiaca (HRV o VFC). Seguimiento básico de sesiones.",
+        "value": "Totalmente gratuita, sin plan premium."
+      },
+      "content": "## En qué destaca\n\nBreathe2Relax es la app gratuita de respiración de origen público, desarrollada por el National Center for Telehealth & Technology del Departamento de Defensa de EE. UU. para la atención del TEPT y del estrés de combate. La investigación publicada sobre la app se limita a pequeños estudios piloto; la respiración diafragmática que enseña está bien documentada.\n\n## ¿Cuáles son las desventajas de Breathe2Relax?\n\nSus principales desventajas son la experiencia de uso y el alcance. Breathe2Relax está creada para un fin clínico concreto (respiración diafragmática para estrés y TEPT); la interfaz está anticuada, la biblioteca es limitada y la app ya no se desarrolla activamente. Es una herramienta gratuita con un planteamiento clínico, no una plataforma de contenido de 2026.\n\n## ¿Quién debería usar Breathe2Relax?\n\nElige Breathe2Relax si quieres respiración diafragmática gratuita y respaldada por evidencia, sobre todo en contextos clínicos, de TEPT o de manejo del estrés. Para una biblioteca curada, Breathwrk. Para una interfaz gratuita moderna, iBreathe. Para personalización en Android, Prana Breath.\n\n---\n\n## Lecturas de contexto\n\n- [Medicina eléctrica y neuromodulación](/articles/electric-medicine-neuromodulation) — respiración diafragmática y tono vagal\n- [Sueño acústico en fase](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "¿Funciona realmente Breathe2Relax?",
+          "a": "La respiración diafragmática que enseña está bien documentada, pero la investigación sobre la app en sí se limita a pequeños estudios piloto, como un piloto no controlado con 31 militares que la combinó con yoga; no hay ensayo aleatorizado de la app. Fue creada por el US National Center for Telehealth & Technology para el manejo del TEPT y del estrés de combate en veteranos. Obtiene 7,0/10 en base científica y 5,9/10 en total."
+        },
+        {
+          "q": "¿Cuánto cuesta Breathe2Relax?",
+          "a": "Breathe2Relax es totalmente gratuita, sin plan premium, suscripción ni anuncios. Obtiene 9,5/10 en valor en la evaluación de ONDA, el mejor precio posible. La contrapartida es una interfaz anticuada y un alcance limitado a la respiración diafragmática y pautada."
+        },
+        {
+          "q": "¿Para quién es mejor Breathe2Relax?",
+          "a": "Breathe2Relax es mejor para quien quiere respiración diafragmática respaldada por evidencia sin coste, sobre todo en contextos clínicos, de TEPT o de manejo del estrés. Es limitada por diseño: cubre solo respiración diafragmática y pautada, sin biofeedback de HRV, sin biblioteca de contenido y sin desarrollo continuo."
+        }
+      ]
     },
     "apple-watch-series-12": {
       "verdict": "El mejor Apple Watch hasta ahora para la variabilidad de la frecuencia cardíaca (HRV o VFC): muestreo 24× más frecuente y HRV dividida en Recovery y Overall, pero sigue siendo ante todo un smartwatch, y la batería aún compite con el uso nocturno.",
@@ -2676,9 +2887,53 @@
       "productType": "Esterilla de consumo multimodal PEMF + infrarrojo + cristales"
     },
     "omnilux-contour-face": {
-      "verdict": "Silicona flexible con el par estándar de luz roja e infrarroja cercana, autorizada por la FDA para arrugas (510(k) K191629). No hay ningún ensayo publicado de la propia Contour; los estudios publicados de Omnilux son de otros modelos.",
-      "productType": "Máscara facial de luz roja de silicona flexible",
-      "editorialAdjustment": "Honestidad del marketing: la página del producto Contour dice que la tecnología Omnilux está «clínicamente probada» y cita «más de 40 estudios clínicos revisados por pares», pero ninguno es sobre la Contour; los estudios publicados son de otros modelos Omnilux (comprobado en octubre de 2026). Esto se puntúa aquí, no en la evidencia."
+      "verdict": "Silicona flexible con el par estándar rojo + infrarrojo cercano, con autorización de la FDA para arrugas (510(k) K191629). No hay ningún ensayo publicado del propio Contour; los estudios publicados de Omnilux son de otros modelos.",
+      "summary": "Omnilux Contour Face es una mascarilla LED para casa de una marca cuyos paneles clínicos más grandes se usan en consultas de dermatología. Tiene autorización de la FDA para arrugas en todo el rostro (510(k) K191629, autorizada por equivalencia con una mascarilla LED anterior sin datos clínicos). Silicona flexible (Omnilux la llama de grado médico) para usarla sin supervisión, 132 LED (rojo 633 nm + infrarrojo cercano 830 nm), protocolo de sesión de 10 minutos. No se ha publicado ningún ensayo revisado por pares del propio Contour; los estudios publicados de Omnilux son de otros modelos.",
+      "description": "Análisis ONDA de Omnilux Contour Face: mascarilla de luz roja de silicona flexible con autorización FDA para arrugas, sin ensayo publicado propio.",
+      "bestFor": "Ideal para quien quiere una mascarilla de silicona cómoda con rojo + infrarrojo cercano y una rutina sencilla de 10 minutos.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de Omnilux, la FDA 510(k) K191629 y su registro de dispositivo en la FDA, y una búsqueda de ensayos publicados (ninguno del propio Contour; también se revisaron estudios de otros modelos de Omnilux). ONDA no lo ha probado en persona.",
+      "productType": "Mascarilla facial de luz roja de silicona flexible",
+      "pros": [
+        "Autorizada por la FDA para arrugas en todo el rostro (510(k) K191629)",
+        "Rojo 633 nm + infrarrojo cercano 830 nm: el par más usado en estudios de piel",
+        "Silicona flexible (de grado médico, según Omnilux): la mascarilla más cómoda de nuestra evaluación",
+        "Irradiancia declarada moderada y plausible, sin cifras de pico infladas"
+      ],
+      "cons": [
+        "No hay ningún ensayo publicado del propio Contour; los estudios publicados de Omnilux son de otros modelos",
+        "Precio premium ($395)",
+        "Sin extensión para el cuello en el Contour estándar (se vende aparte)",
+        "Un único protocolo de 10 minutos, sin programación avanzada",
+        "Sin variantes de longitud de onda azul / ámbar (por diseño)"
+      ],
+      "scoreNotes": {
+        "irradiance": "Omnilux declara unos 30 mW/cm² en una sesión de 10 minutos: una cifra moderada y plausible, no un pico inflado. Es la cifra de la marca; no encontramos medición independiente.",
+        "wavelength-coverage": "Rojo 633 nm + infrarrojo cercano 830 nm: las dos longitudes de onda más usadas en estudios de piel. Sin distracciones azules / ámbar.",
+        "led-count-coverage": "132 LED repartidos uniformemente por frente, mejillas y mandíbula. Sin extensión para el cuello en el Contour estándar; el complemento para el cuello se vende aparte.",
+        "clinical-evidence": "No hay ningún ensayo publicado ni registrado del propio Contour FACE (Europe PMC, ClinicalTrials.gov y la bibliografía de Omnilux, búsqueda de octubre de 2026). Los estudios publicados de Omnilux son de otros modelos, así que no cuentan para el Contour; los que revisamos —el panel clínico Revive (2005), una mascarilla masculina que Omnilux presenta como Omnilux Men (2023) y la mascarilla para el acné Omnilux Clear (2025)— están además vinculados al fabricante (autores empleados, un autor del consejo asesor de Omnilux, financiación de GlobalMed). El estudio propio de la marca sobre el Contour no está publicado y sus resultados son autodeclarados (según la empresa). La FDA 510(k) K191629 (venta libre, arrugas en todo el rostro; autorizada por equivalencia con una mascarilla LED anterior sin datos clínicos) se puntúa como neutra.",
+        "comfort-fit": "Silicona flexible (de grado médico, según Omnilux): de las mascarillas más cómodas. Se adapta de forma natural al rostro, correa ajustable, se puede usar sin supervisión.",
+        "value": "$395: precio premium por la comodidad de la silicona (la más cómoda de nuestra evaluación) y el par estándar rojo + infrarrojo cercano; no hay un ensayo específico del dispositivo que respalde el precio."
+      },
+      "editorialAdjustment": "Honestidad del marketing: la página del Contour llama a la tecnología de Omnilux «clínicamente probada» y cita «más de 40 estudios clínicos revisados por pares», pero ninguno es del propio Contour; los estudios publicados son de otros modelos de Omnilux (comprobado en octubre de 2026). Esto se puntúa aquí, no en evidencia.",
+      "content": "## En qué destaca\n\nOmnilux Contour Face destaca en comodidad y usa el par estándar rojo + infrarrojo cercano. Tiene autorización de la FDA para arrugas en todo el rostro (510(k) K191629); la autorización significa que la FDA la consideró sustancialmente equivalente a una mascarilla LED anterior —en este caso sin datos clínicos—, no una aprobación de la FDA. No se ha publicado ningún ensayo revisado por pares del propio Contour. Los estudios publicados de Omnilux son de otros modelos; los que revisamos (el panel clínico Revive, 2005; una mascarilla masculina que Omnilux presenta como Omnilux Men, 2023; la mascarilla para el acné Omnilux Clear, 2025) están además vinculados al fabricante. El estudio propio de la marca sobre el Contour no está publicado y sus resultados son autodeclarados. La silicona flexible (de grado médico, según Omnilux) ofrece la mejor comodidad de uso de la categoría.\n\n## ¿Cuáles son las desventajas de Omnilux Contour Face?\n\nPrecio y alcance. A $395, Omnilux está en la gama premium; competidores a mitad de precio (LightStim, Solawave) cubren usos más ligeros. Un único protocolo de 10 minutos, sin programación para quien quiera modos / sesiones. Sin extensión para el cuello en el Contour estándar salvo pagando aparte.\n\n## ¿Quién debería comprar Omnilux Contour Face?\n\nElige Omnilux Contour Face si quieres el ajuste de silicona más cómodo de nuestra evaluación en una mascarilla de rojo + infrarrojo cercano. Para la mayor cuota de mercado de consumo, CurrentBody Series 2. Como alternativa de marca dermatológica, Dr. Dennis Gross SpectraLite. Para un dispositivo de mano más barato, LightStim.\n\n---\n\n## Lecturas de contexto\n\n- [Medicina eléctrica y neuromodulación](/articles/electric-medicine-neuromodulation) — fotobiomodulación y ATP celular\n- [Biogénesis mitocondrial](/articles/mitochondrial-biogenesis-cellular-power-grid) — la luz roja como complemento de la energía mitocondrial\n- [Sincronía ancestral: anclas circadianas](/articles/ancestral-sync-circadian-anchors)\n",
+      "faq": [
+        {
+          "q": "¿Merece la pena Omnilux Contour Face?",
+          "a": "Omnilux Contour Face merece la pena si lo que más te importa es la comodidad. Tiene autorización de la FDA para arrugas (510(k) K191629), pero no se ha publicado ningún ensayo de esta mascarilla; los estudios publicados de Omnilux son de otros modelos. Tiene una irradiancia declarada moderada y plausible y, en nuestra evaluación, el ajuste más cómodo, gracias a la silicona flexible (de grado médico, según Omnilux). La programación es mínima."
+        },
+        {
+          "q": "¿Cuánto cuesta Omnilux Contour Face?",
+          "a": "Omnilux Contour Face cuesta $395. La extensión para el cuello no se incluye con el Contour estándar y se vende aparte, así que reserva algo más si quieres cubrir el cuello además del rostro."
+        },
+        {
+          "q": "¿Cuáles son las desventajas de Omnilux Contour Face?",
+          "a": "Tiene un precio premium de $395, la versión estándar no incluye extensión para el cuello, ofrece un único protocolo de 10 minutos sin programación avanzada y no tiene variantes de longitud de onda azul ni ámbar (por diseño). No se ha publicado ningún ensayo de la propia mascarilla."
+        },
+        {
+          "q": "Omnilux Contour Face vs Lumara Viso: ¿cuál es mejor?",
+          "a": "Ninguna de las dos mascarillas tiene un ensayo publicado propio. Omnilux es más barata ($395); la Lumara Viso ofrece más LED, tres longitudes de onda y extensión para el cuello incluida, y cuesta más, $650."
+        }
+      ]
     },
     "higherdose-red-light-face-mask": {
       "verdict": "La mejor experiencia de uso de marca de consumo en máscaras de luz roja: controlador sencillo, silicona flexible, 50 mW/cm² según la marca. Evidencia clínica escasa; más acabado de marca que profundidad técnica.",
@@ -3257,8 +3512,47 @@
       "productType": "Sauna de cabina IR premium 3 en 1 (cercano, medio, lejano)"
     },
     "finnleo-hallmark": {
-      "verdict": "Una sauna tradicional de interior de fabricación finlandesa: construcción finlandesa premium, calor de convección completo y el mecanismo con más investigación sobre sauna.",
-      "productType": "Sauna finlandesa tradicional de interior (convección)"
+      "verdict": "Una sauna tradicional de interior fabricada en Finlandia: construcción finlandesa premium, calor por convección completo y el mecanismo con más investigación en saunas.",
+      "summary": "Finnleo Hallmark es la sauna tradicional de interior fabricada en Finlandia para quien quiere la auténtica. Calefactor diseñado por Helo (3 kW–9 kW según el tamaño de la cabina), revestimiento de hemlock finlandés o abeto blanco nórdico, calor por convección completo (80–95°C) con vapor löyly. Diseñada en Finlandia para el perfil de calor en el que se basan los estudios de cohortes finlandeses.",
+      "description": "Análisis ONDA de Finnleo Hallmark: la sauna tradicional de interior fabricada en Finlandia, con construcción premium en hemlock o abeto blanco nórdico.",
+      "bestFor": "Ideal para quien quiere la sauna finlandesa tradicional premium con calor de un calefactor diseñado por Helo.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de Finnleo, la literatura de investigación sobre la sauna finlandesa y análisis independientes de 2026. ONDA no la ha probado en persona.",
+      "productType": "Sauna finlandesa tradicional de interior (convección)",
+      "pros": [
+        "Trayectoria de fabricación finlandesa premium",
+        "Calefactor diseñado por Helo con soporte para vapor löyly",
+        "Construcción en hemlock finlandés o abeto blanco nórdico",
+        "La base de evidencia publicada más amplia (estudios de cohortes finlandeses observacionales)"
+      ],
+      "cons": [
+        "No es de infrarrojos: mecanismo distinto al de las cabinas de infrarrojos",
+        "Precio premium: más de $6K en la configuración de entrada",
+        "Solo para interior, con requisitos de ventilación",
+        "Los calefactores más grandes requieren instalación eléctrica de 220V"
+      ],
+      "scoreNotes": {
+        "heat-source": "Calefactor de convección finlandés diseñado por Helo: el estándar de referencia del calor de sauna finlandesa, con soporte para vapor löyly.",
+        "build": "Hemlock finlandés o abeto blanco nórdico. Décadas de trayectoria de fabricación finlandesa. Garantía estructural de 5 años.",
+        "emf": "Convección tradicional: sin electrónica en la emisión de calor. Los CEM no son un problema.",
+        "form-factor": "Instalación de cabina en interior. Configuraciones para 1–6 personas. Requiere planificar la ventilación y 220V para los calefactores más grandes.",
+        "evidence": "Los estudios de cohortes finlandeses sobre mortalidad cardiovascular y riesgo de demencia se hicieron con este tipo de sauna. La base de evidencia más amplia de la categoría de saunas, aunque observacional (solo hombres; asociaciones, no causa).",
+        "value": "$6,000–$12,000+ según la configuración. Precio premium de trayectoria finlandesa."
+      },
+      "content": "## En qué destaca\n\nFinnleo Hallmark es la sauna finlandesa tradicional de interior premium. Fabricada en Finlandia, con calefactor diseñado por Helo, construcción en hemlock o abeto nórdico y calor por convección completo apto para löyly. Es el formato en el que se basaron los estudios de cohortes finlandeses cardiovasculares y cognitivos: detrás de este formato está la base de evidencia más amplia de la categoría de saunas. Esos estudios son observacionales, en hombres finlandeses de mediana edad: muestran asociaciones, no prueban que la sauna cause el beneficio.\n\n## ¿Cuáles son las desventajas de Finnleo Hallmark?\n\nNo es de infrarrojos. Precio premium. Instalación en interior con requisitos de ventilación. La mayoría de quienes compran su primera sauna acaban en infrarrojos o en convección económica; Finnleo es para quien quiere específicamente la experiencia tradicional con trayectoria finlandesa.\n\n## ¿Quién debería comprar Finnleo Hallmark?\n\nElige Finnleo Hallmark si el criterio decisivo es una sauna finlandesa tradicional de interior con fabricación finlandesa premium. Para un barril tradicional de exterior, Almost Heaven Salem. Para cabina de infrarrojos, Sunlighten o Clearlight.\n\n---\n\n## Lecturas de contexto\n\nLecturas de contexto sobre las ideas detrás de la exposición al calor: sobre todo hipótesis, no efectos demostrados en personas.\n\n- [Biogénesis mitocondrial: la red eléctrica celular](/articles/mitochondrial-biogenesis-cellular-power-grid) — la idea de que el estrés térmico afecta a las mitocondrias (no demostrado en personas)\n- [ADN mitocondrial y luz roja](/articles/mitochondrial-dna-red-light) — cómo llegan los fotones de infrarrojo cercano a las mitocondrias, el mecanismo que citan los fabricantes de saunas de infrarrojos (no demostrado para saunas)\n- [Hardware de longevidad y limpieza celular](/articles/longevity-hardware-cellular-cleanup) — cómo encaja la sauna en el conjunto más amplio de autofagia / mitofagia\n",
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta una sauna Finnleo Hallmark?",
+          "a": "Una Finnleo Hallmark de interior para 2 personas cuesta unos $8,000, e incluso la configuración de entrada supera los $6,000. Eso incluye revestimiento de hemlock o abeto blanco nórdico fabricado en Finlandia y un calefactor diseñado por Helo. Los calefactores más grandes también necesitan instalación eléctrica de 220V, lo que puede encarecer la instalación."
+        },
+        {
+          "q": "¿Es Finnleo Hallmark una sauna de infrarrojos?",
+          "a": "No. Finnleo Hallmark es una sauna finlandesa tradicional, no una cabina de infrarrojos. Usa calor por convección completo a 80–95°C de un calefactor diseñado por Helo, con vapor löyly al echar agua sobre las piedras. Es el perfil de calor en el que se basan los estudios de cohortes finlandeses sobre el uso de la sauna."
+        },
+        {
+          "q": "¿Cuáles son las desventajas de Finnleo Hallmark?",
+          "a": "Las principales desventajas son el precio, la ubicación y la electricidad. Tiene precio premium, es solo para interior con requisitos de ventilación, y los calefactores más grandes requieren 220V. Además funciona con un mecanismo distinto al de las cabinas de infrarrojos, así que quien busque específicamente infrarrojos debería mirar otras opciones."
+        }
+      ]
     },
     "saunaspace-faraday": {
       "verdict": "La sauna premium de IR cercano para biohackers: emisores incandescentes, jaula de Faraday completa, distinta del IR de espectro completo.",
@@ -3273,8 +3567,47 @@
       "productType": "Manta sauna IR portátil"
     },
     "therasage-thera-sauna-personal": {
-      "verdict": "Una sólida sauna IR de gama media para biohackers: espectro completo, control de EMF decente y precio accesible para su gama.",
-      "productType": "Sauna IR de gama media (configuraciones de carpa / cabina)"
+      "verdict": "Una sólida sauna de infrarrojos de gama media para biohackers: espectro completo, control razonable de los CEM y precio accesible para su gama.",
+      "summary": "Therasage TheraSauna Personal ocupa el hueco entre la portátil económica (HigherDose) y la cabina premium (Sunlighten, Clearlight). Infrarrojo de espectro completo, documentación de bajos CEM y configuraciones tipo tienda y cabina. Marca orientada a biohackers sin el precio premium de Sunlighten o SaunaSpace.",
+      "description": "Análisis ONDA de Therasage TheraSauna Personal: sauna de infrarrojos de gama media en tienda o cabina, orientada a biohackers.",
+      "bestFor": "Ideal para biohackers que quieren infrarrojo de espectro completo en cabina o tienda a precio de gama media.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de Therasage y análisis independientes de 2026. ONDA no la ha probado en persona.",
+      "productType": "Sauna de infrarrojos de gama media (configuraciones tienda / cabina)",
+      "pros": [
+        "Infrarrojo de espectro completo a precio de gama media",
+        "Las configuraciones tienda y cabina cubren distintos escenarios de instalación",
+        "Bajos CEM documentados con verificación de terceros",
+        "Posicionamiento de marca para biohackers con fuerte presencia en la comunidad"
+      ],
+      "cons": [
+        "Separación de longitudes de onda menos rigurosa que Sunlighten mPulse",
+        "Perfil de CEM más alto que SaunaSpace Faraday",
+        "Construcción menos premium que las cabinas de Sunlighten o Clearlight",
+        "Reconocimiento de marca más limitado que los líderes de la categoría"
+      ],
+      "scoreNotes": {
+        "heat-source": "Infrarrojo de espectro completo mediante calefactores de fibra de carbono y cerámica. Separación de longitudes de onda menos rigurosa que Sunlighten, pero creíblemente de espectro amplio.",
+        "build": "Configuraciones tienda o cabina. Garantía de 3 años. Calidad de construcción de gama media.",
+        "emf": "Bajos CEM documentados; verificados por terceros en comprobaciones puntuales. Menos riguroso que SaunaSpace Faraday, pero aceptable.",
+        "form-factor": "Configuraciones tienda y cabina disponibles. Uso típico para 1–2 personas.",
+        "evidence": "Marketing orientado a biohackers. De nivel bienestar más que de grado clínico.",
+        "value": "$1,500–$3,500 según la configuración. Precio de gama media acorde con una construcción de gama media."
+      },
+      "content": "## En qué destaca\n\nTherasage ocupa el punto óptimo de la gama media en saunas de infrarrojos: espectro completo a la mitad del coste de Sunlighten o Clearlight, con documentación creíble de CEM. La comunidad biohacker conoce la marca, y poder elegir entre tienda y cabina cubre más escenarios de instalación que los competidores de cabina fija.\n\n## ¿Cuáles son las desventajas de Therasage TheraSauna Personal?\n\nEl rigor en longitudes de onda y el control de los CEM están ambos un escalón por debajo de los líderes de la categoría. El reconocimiento de marca es más limitado. La construcción de la cabina es menos premium que el cedro de Sunlighten.\n\n## ¿Quién debería comprar Therasage TheraSauna Personal?\n\nElige Therasage TheraSauna Personal si quieres infrarrojo de espectro completo para biohackers a precio de gama media. Para espectro completo premium, Sunlighten o Clearlight. Para infrarrojo cercano específicamente, SaunaSpace.\n\n---\n\n## Lecturas de contexto\n\nLecturas de contexto sobre las ideas detrás de la exposición al calor: sobre todo hipótesis, no efectos demostrados en personas.\n\n- [Protocolo de longevidad: reinicio del reloj biológico](/articles/longevity-protocol-biological-clock-reset) — dónde encaja la sauna en una rutina de reinicio\n- [Control del eje HPA y regulación del cortisol](/articles/hpa-axis-control-cortisol-aggression) — el lado del choque térmico en la respuesta al estrés\n- [Arquitectura neural antientropía](/articles/anti-entropy-neural-architecture) — la sauna como dosis diaria de estrés antientropía\n",
+      "faq": [
+        {
+          "q": "¿Merece la pena Therasage TheraSauna?",
+          "a": "TheraSauna merece la pena si quieres infrarrojo de espectro completo a precio de gama media. Se vende en formato tienda y cabina con bajos CEM verificados por terceros. La separación de longitudes de onda es menos rigurosa que en Sunlighten mPulse y la construcción es menos premium que Sunlighten o Clearlight."
+        },
+        {
+          "q": "¿Cuánto cuesta Therasage TheraSauna?",
+          "a": "Therasage TheraSauna parte de unos $1,500 en la configuración de tienda y $3,500 en la de cabina. Eso sitúa el infrarrojo de espectro completo a precio de gama media, con opciones de tienda y cabina para distintos escenarios de instalación."
+        },
+        {
+          "q": "¿Cuáles son las desventajas de Therasage TheraSauna?",
+          "a": "Su separación de longitudes de onda es menos rigurosa que Sunlighten mPulse, su perfil de CEM es más alto que SaunaSpace Faraday y su construcción es menos premium que las cabinas de Sunlighten o Clearlight. El reconocimiento de marca también es más limitado que el de los líderes de la categoría."
+        }
+      ]
     },
     "jnh-lifestyles-joyous": {
       "verdict": "La sauna de cabina IR económica creíble: solo IR lejano, construcción en tsuga canadiense, precio accesible.",
@@ -3559,6 +3892,125 @@
         {
           "q": "¿Qué desventajas tiene Zoe?",
           "a": "La fase CGM de Zoe está fijada en dos semanas, así que no es una herramienta de CGM continua. No hay exportación de datos brutos de glucosa, la variante antigua de Libre es menos precisa en su segunda semana y la disponibilidad se centra en el Reino Unido, con una expansión más lenta en EE. UU."
+        }
+      ]
+    },
+    "bedjet-3": {
+      "verdict": "La alternativa por flujo de aire a los sistemas refrigerados por agua: sin gestión de agua, más asequible, control de temperatura menos riguroso.",
+      "productType": "Sistema de climatización por aire (bajo las sábanas)"
+    },
+    "luna-ring": {
+      "verdict": "Una alternativa a Oura práctica, asequible y sin suscripción: buen seguimiento del sueño y batería total larga gracias a su estuche, aunque la batería por carga y algunas asperezas de la app lo dejan como opción de buena relación calidad-precio, no como líder de la clase.",
+      "productType": "Anillo inteligente"
+    },
+    "plunge": {
+      "verdict": "La bañera de inmersión en frío que definió la categoría: construcción premium, enfriador capaz y experiencia de consumo pulida a un precio premium.",
+      "productType": "Bañera de inmersión en frío premium con enfriador integrado"
+    },
+    "coldture": {
+      "verdict": "La respuesta premium canadiense a The Plunge: pensada para climas fríos, algo más barata y con distribución favorable en la UE.",
+      "productType": "Bañera de inmersión en frío premium fabricada en Canadá"
+    },
+    "ultrahuman-ring-pro": {
+      "verdict": "El sucesor rediseñado y sin suscripción del Ring Air: batería de 15 días líder de la categoría, procesamiento en el anillo y (a diferencia del Ring Air) disponible en EE. UU. Prometedor, pero demasiado nuevo para un veredicto de fiabilidad a largo plazo de una marca cuyo último anillo tuvo problemas de batería.",
+      "productType": "Anillo inteligente"
+    },
+    "oura-ring-5": {
+      "verdict": "El buque insignia de 2026: un 40% más delgado y con sensores realmente mejorados. Las generaciones anteriores de Oura coincidieron bien con el ECG durante la noche; el Ring 5 en sí no se ha validado por separado. La suscripción obligatoria sigue siendo el único inconveniente real.",
+      "productType": "Anillo inteligente"
+    },
+    "apple-watch-ultra-4": {
+      "verdict": "El Apple Watch que por fin encaja con el HRV nocturno: el nuevo Health Sensing System más una batería de 50 horas y una puntuación de preparación para deportistas, si puedes justificar el tamaño y el precio de $799.",
+      "summary": "El Ultra 4 toma el nuevo Health Sensing System del Series 12 —variabilidad de la frecuencia cardiaca (HRV o VFC) hasta 24× más a menudo, Recovery HRV y Overall HRV— y añade lo único que le falta al Series 12 para el HRV: batería. Con hasta 50 horas puede registrar el HRV noche tras noche sin que una ventana de carga compita con tu sueño, y añade una puntuación de preparación orientada a deportistas. El inconveniente es el tamaño y el precio de $799.",
+      "description": "Análisis ONDA del Apple Watch Ultra 4 como monitor de HRV: nuevo Health Sensing System y batería de 50 horas que por fin hace práctico el HRV nocturno.",
+      "bestFor": "Ideal para deportistas o amantes del aire libre que quieren el nuevo sistema de HRV con batería para llevarlo todas las noches.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir del anuncio y las especificaciones de Apple de septiembre de 2026, análisis prácticos independientes y la literatura publicada de validación del HRV del Apple Watch. ONDA no lo ha probado en persona.",
+      "productType": "Reloj inteligente resistente",
+      "pros": [
+        "Nuevo Health Sensing System: HRV 24× más frecuente, Recovery + Overall",
+        "Batería de ~50 horas que por fin hace práctico el HRV nocturno noche tras noche",
+        "Puntuación de preparación para deportistas, además de ECG y notificaciones de hipertensión",
+        "Titanio resistente de 49 mm, buceo a 40 m, SOS por satélite, sin suscripción"
+      ],
+      "cons": [
+        "Desde $799: mucho reloj si solo quieres el HRV",
+        "Caja de 49 mm grande y pesada",
+        "El HRV óptico de muñeca aún no está validado de forma independiente; una banda de pecho con ECG se acerca más al ECG de laboratorio (en reposo, en adultos jóvenes sanos)",
+        "Recovery HRV y Overall HRV son métricas distintas, fáciles de confundir"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "El mismo Health Sensing System que el Series 12 —HRV hasta 24× más a menudo, dividido en Recovery HRV y Overall HRV— más una puntuación de preparación. Apple lo llama su medición cardiaca más precisa, pero no se encontró ninguna validación independiente de Recovery u Overall HRV frente a ECG (a octubre de 2026), así que puntúa igual que el Series 12.",
+        "sensor": "El paquete de sensores más completo de esta lista: el nuevo Health Sensing System con notificaciones de hipertensión, ECG de una derivación, sensor de profundidad/buceo de 40 m y conectividad por satélite.",
+        "sleep-accuracy": "La batería de 50 horas es la verdadera noticia: por primera vez hace práctico en un Apple Watch el seguimiento continuo del sueño y del HRV nocturno noche tras noche, analizado frente a tu línea base personal.",
+        "data-access": "HealthKit es comparativamente abierto y ahora escribe heartRateVariabilityRMSSD nativo junto a SDNN, así que las apps de recuperación pueden leer la misma familia de métricas que Whoop, Oura y Garmin.",
+        "wearability": "Hasta ~50 horas (84 en modo de bajo consumo) eliminan por fin el conflicto de la carga nocturna: la gran ventaja del Ultra en HRV frente al Series 12. La contrapartida es una caja de 49 mm grande y pesada.",
+        "app-ux": "El HRV aparece en la app Frecuencia cardiaca con Recovery HRV y Overall HRV, más una puntuación de preparación para deportistas; Apple Salud sigue siendo la interfaz de salud más limpia de esta lista.",
+        "value": "Desde $799, pago único, sin suscripción, pero pagas GPS multibanda, buceo, satélite y construcción resistente. Solo para el HRV es mucho reloj; el Series 12 ofrece el mismo sistema de HRV por menos."
+      },
+      "content": "## En qué destaca\n\nEl Apple Watch Ultra 4, anunciado en septiembre de 2026, combina el nuevo Health Sensing System del Series 12 con lo único que siempre le faltó a un reloj inteligente para el [HRV](/glossary/heart-rate-variability): autonomía. Mide el HRV hasta 24× más a menudo que el Series 11, lo divide en **Recovery HRV** y **Overall HRV**, añade una nueva **puntuación de preparación para deportistas** y, lo más importante, funciona hasta unas **50 horas** (84 en modo de bajo consumo). Esa batería es lo que convierte al Ultra 4 en el primer Apple Watch que puedes llevar de verdad noche tras noche para un registro continuo del HRV nocturno sin que una ventana de carga diaria compita con tu sueño.\n\nA eso se suma el paquete de sensores más completo de cualquier reloj de esta lista: ECG de una derivación, notificaciones de hipertensión, sensor de profundidad y buceo de 40 m, GPS multibanda y conectividad por satélite, en una caja resistente de titanio de 49 mm y sin suscripción.\n\n## ¿Cuáles son las desventajas del Apple Watch Ultra 4?\n\nLa física sigue siendo óptica de muñeca. Apple lo llama su medición cardiaca más precisa; no se encontró ninguna validación independiente de Recovery u Overall HRV frente a ECG (a octubre de 2026), y una banda de pecho con ECG se acerca más al ECG de laboratorio (en reposo, en adultos jóvenes sanos). Y es mucho reloj: desde $799, grande y pesado, con gran parte del precio destinada a buceo, satélite y funciones multideporte más que al HRV. Si quieres ese sistema de HRV en un formato más pequeño y barato, el [Apple Watch Series 12](/reviews/apple-watch-series-12) tiene el mismo; simplemente no iguala la batería.\n\n## ¿Quién debería comprar el Apple Watch Ultra 4?\n\nElige el Ultra 4 si eres deportista o amante del aire libre y quieres el nuevo sistema de HRV de Apple *y* la batería para llevarlo todas las noches, y vas a usar las funciones resistentes, de buceo y satélite. Si lo que buscas es el HRV y la salud diaria y no necesitas la resistencia, el Series 12 es la compra más inteligente; si tu única prioridad es una tendencia limpia del HRV nocturno, puede que un anillo te convenga más (en registros nocturnos de 13 personas, Dial 2025, Oura Ring 4 estuvo entre los más cercanos al ECG): mira los [mejores monitores de HRV de 2026](/reviews/compare/best-hrv-trackers-2026).\n\n---\n\n## Lecturas de contexto\n\n- [Recovery HRV vs Overall HRV del Apple Watch](/articles/apple-watch-recovery-hrv-vs-overall-hrv) — el cambio a dos cifras de 2026, explicado\n- [Por qué el HRV da valores distintos en cada dispositivo](/articles/hrv-different-every-device) — SDNN vs RMSSD entre marcas\n- [¿Predice el HRV el tiempo de reacción y la concentración?](/articles/nervous-system-ping-latency) — lo que el HRV en reposo dice y no dice sobre la atención y el autocontrol\n",
+      "faq": [
+        {
+          "q": "¿Es el Apple Watch Ultra 4 mejor que el Series 12 para el HRV?",
+          "a": "Comparten el mismo Health Sensing System y las mismas métricas de HRV, así que las lecturas son del mismo tipo. La ventaja del Ultra 4 es la batería —hasta ~50 horas frente a ~24—, que hace práctico el HRV nocturno continuo noche tras noche sin una ventana de carga que compita con el sueño. Solo para el HRV, el Series 12 ofrece el mismo sistema por menos."
+        },
+        {
+          "q": "¿Cuánto cuesta el Apple Watch Ultra 4?",
+          "a": "Desde $799, en un pago único sin suscripción. Salió a la venta el 18 de septiembre de 2026 con caja de titanio de 49 mm, GPS + Cellular, funciones por satélite y buceo hasta 40 m."
+        },
+        {
+          "q": "¿Cuánto dura la batería del Apple Watch Ultra 4?",
+          "a": "Hasta unas 50 horas en uso normal (unas 84 en modo de bajo consumo, y hasta ~45 horas registrando entrenamientos). Es la diferencia clave frente al Series 12 de ~1 día para quien quiere llevarlo durante la noche para el HRV."
+        },
+        {
+          "q": "¿Es el Ultra 4 lo bastante preciso para el HRV, o debería comprar un anillo?",
+          "a": "HealthKit ahora expone un valor RMSSD comparable en tipo al de Whoop y Oura (Apple no ha confirmado que Recovery HRV en sí sea RMSSD), y la batería de 50 horas te permite captar de verdad las tendencias nocturnas. Una banda de pecho con ECG se acerca más al ECG de laboratorio (en reposo, en adultos jóvenes sanos); el Ultra 4 gana por ser un único dispositivo resistente que lo hace todo."
+        }
+      ]
+    },
+    "eight-sleep-pod-6": {
+      "verdict": "El Eight Sleep más sensato hasta ahora: el Pod 6 reduce la unidad central a la mitad, añade 9 veces más sensores, cambia la temperatura un 20% más rápido y, por primera vez, vende tamaños Solo para una persona desde $1,999, mientras que el queen de doble zona baja a $2,899. El inconveniente no cambia: la membresía Autopilot ($199–$399/año) es obligatoria, y la duración de la garantía depende del plan que pagues.",
+      "summary": "El Eight Sleep Pod 6 es el Pod de sexta generación, lanzado el 23 de septiembre de 2026 en más de 37 países como sustituto del Pod 5. Eight Sleep rediseñó la unidad central para que sea un 50% más pequeña y quepa bajo la mayoría de las camas, aumentó los sensores biométricos de 2 a 18 y afirma que los ajustes de temperatura son un 20% más rápidos que en cualquier generación anterior, con cada lado de la funda de doble zona funcionando de forma independiente. Los nuevos tamaños Solo (Twin, o un lado de una Queen, King o California King) parten de $1,999; los tamaños estándar de doble zona cuestan $2,699 (Full), $2,899 (Queen) y $2,999 (King/Cal King). La funda registra frecuencia cardiaca, frecuencia respiratoria, variabilidad de la frecuencia cardiaca (HRV o VFC), ronquidos y fases del sueño sin wearable, y los sensores están diseñados para distinguir a quienes duermen e ignorar mascotas o niños. Los complementos existentes —Blanket, Pillow Cover y Base— son compatibles, pero se venden aparte. La membresía Autopilot es obligatoria: Standard $199/año (garantía de 2 años), Enhanced $299/año y Elite $399/año (garantía de 5 años).",
+      "description": "Análisis ONDA del Eight Sleep Pod 6: unidad central un 50% menor, 18 sensores, temperatura un 20% más rápida y tamaños Solo desde $1,999. Con membresía.",
+      "bestFor": "Ideal para quien quiere la climatización de doble zona de Eight Sleep y el seguimiento del HRV sin wearable al precio más bajo que ha ofrecido la marca —sobre todo quien duerme solo, que ahora puede comprar un tamaño Solo— y acepta una membresía anual.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de las especificaciones oficiales de Eight Sleep, la cobertura del lanzamiento de septiembre de 2026 y los primeros análisis independientes. ONDA no lo ha probado en persona.",
+      "productType": "Sistema de funda inteligente de climatización del sueño (doble zona o Solo)",
+      "pros": [
+        "El precio de entrada más bajo de la historia de Eight Sleep: Solo desde $1,999, queen de doble zona $2,899",
+        "18 sensores biométricos (antes 2) registran FC, respiración, HRV, ronquidos y fases del sueño sin wearable",
+        "Unidad central un 50% más pequeña: cabe bajo la mayoría de las camas",
+        "Cambios de temperatura un 20% más rápidos; lados de doble zona independientes; compatible con los complementos existentes"
+      ],
+      "cons": [
+        "La membresía Autopilot es obligatoria ($199–$399/año)",
+        "La duración de la garantía depende del plan de membresía (2 años en Standard)",
+        "Blanket, Base y Pillow Cover cuestan aparte: la refrigeración desde arriba no está incluida",
+        "Aún no hay validación independiente de los nuevos sensores; atado al ecosistema de Eight Sleep"
+      ],
+      "scoreNotes": {
+        "climate-range": "La misma refrigeración y calefacción de doble zona basada en funda que el núcleo del Pod 4/5, y Eight Sleep afirma cambios de temperatura un 20% más rápidos. La refrigeración desde arriba requiere el complemento Blanket aparte (el Pod 5 Ultra obtuvo 9.7 con él incluido). Eight Sleep no ha publicado un nuevo rango de temperatura para el Pod 6.",
+        "build": "La unidad central rediseñada es un 50% más pequeña y cabe bajo la mayoría de las camas. La garantía depende de la membresía: 2 años en Standard, 5 años en Enhanced/Elite. La fiabilidad a largo plazo de la nueva unidad aún no se conoce.",
+        "app-tracking": "18 sensores biométricos (antes 2) para frecuencia cardiaca, frecuencia respiratoria, HRV, ronquidos y fases del sueño, con separación de durmientes que ignora mascotas o niños. Ligeramente por encima del Pod 5 sobre el papel; aún no se ha publicado ninguna validación independiente de los sensores del Pod 6.",
+        "form-factor": "La unidad central de la mitad de tamaño y los nuevos tamaños Solo lo convierten en el Pod más fácil de encajar en un dormitorio. Solo funda por defecto; Base, Blanket y Pillow Cover son complementos opcionales en lugar de venir incluidos como en el Pod 5 Ultra.",
+        "subscription": "Veredicto sin cambios: Autopilot es obligatorio: Standard $199/año, Enhanced $299/año, Elite $399/año. La duración de la garantía ahora depende del plan que pagues.",
+        "value": "Desde $1,999 (Solo) y $2,899 (queen de doble zona): por debajo del precio de funda del Pod 4, $2,449–$2,649 por durmiente, y muy por debajo de los $6,099+ del Pod 5 Ultra. La membresía obligatoria sigue añadiendo $600–$1,200 en tres años."
+      },
+      "content": "## Qué es el Pod 6\n\nEl Eight Sleep Pod 6 es el Pod de sexta generación, lanzado el 23 de septiembre de 2026 en más de 37 países. Sustituye al [Pod 5](/reviews/eight-sleep-pod-5) y, a diferencia del Pod 5 Ultra, mueve la gama hacia abajo en precio en lugar de hacia arriba: los tamaños Solo parten de $1,999 y el queen de doble zona cuesta $2,899.\n\n## Qué ha cambiado realmente frente al Pod 5\n\nTres cambios de hardware. La unidad central es un 50% más pequeña y cabe bajo la mayoría de las camas. La funda tiene 18 sensores biométricos en lugar de 2, lo que según Eight Sleep le permite distinguir a quienes duermen e ignorar mascotas o niños. Y los cambios de temperatura son un 20% más rápidos que en cualquier Pod anterior, con cada lado de la cama controlado de forma independiente. También son nuevos los tamaños Solo: una Twin, o un lado de una Queen, King o California King, para quien duerme solo o cuya pareja no quiere un Pod. Blanket, Pillow Cover y Base de generaciones anteriores siguen funcionando, pero se venden aparte, así que la refrigeración desde arriba y la base ajustable que venían incluidas con el Pod 5 Ultra ahora son extras opcionales.\n\n## Seguimiento\n\nEl Pod 6 mide frecuencia cardiaca, frecuencia respiratoria, HRV, ronquidos y fases del sueño desde la funda, sin wearable, y Autopilot usa esos datos para ajustar la temperatura durante la noche. Eight Sleep cita más de 50 estudios clínicos detrás de su plataforma, pero aún no se ha publicado ninguna validación independiente del nuevo Pod 6 de 18 sensores. Toma su HRV como una tendencia nocturna útil, no como una medición clínica, igual que con el [Pod 4](/reviews/eight-sleep-pod-4).\n\n## El inconveniente\n\nLa membresía. Autopilot es obligatorio: Standard $199/año con garantía de 2 años, Enhanced $299/año y Elite $399/año, ambos con garantía de 5 años. En tres años eso añade de $600 a $1,200 al precio del hardware.\n\n## ¿Quién debería comprar Eight Sleep Pod 6?\n\nElige el Pod 6 si quieres la climatización y el seguimiento del sueño sin wearable de Eight Sleep al precio más bajo que ha ofrecido la marca, y sobre todo si duermes solo y puedes usar un tamaño Solo. Si ya tienes un Pod 4 o Pod 5, la mejora es sobre todo una unidad central más pequeña y más sensores. Para el panorama completo, mira los [mejores sistemas inteligentes de climatización del sueño](/reviews/smart-sleep-climate).\n",
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta el Eight Sleep Pod 6?",
+          "a": "El Pod 6 Solo cuesta $1,999 en cualquier tamaño. Los tamaños de doble zona del Pod 6 cuestan $2,699 (Full), $2,899 (Queen) y $2,999 (King o California King). También se requiere una membresía Autopilot, desde $199 al año."
+        },
+        {
+          "q": "Pod 6 vs Pod 5: ¿qué ha cambiado?",
+          "a": "El Pod 6 tiene una unidad central un 50% más pequeña que el Pod 5, 18 sensores biométricos en lugar de 2 y cambios de temperatura un 20% más rápidos. Añade tamaños Solo para una persona y parte de un precio mucho más bajo. Blanket, Base y Pillow Cover son complementos compatibles que se venden aparte."
+        },
+        {
+          "q": "¿Necesita suscripción el Eight Sleep Pod 6?",
+          "a": "Sí. La membresía Autopilot es obligatoria: Standard $199/año ($17/mes) con garantía de 2 años, Enhanced $299/año con garantía de 5 años, o Elite $399/año con garantía de 5 años y monitorización adicional."
+        },
+        {
+          "q": "¿Registra el HRV el Eight Sleep Pod 6?",
+          "a": "Sí. El Pod 6 registra frecuencia cardiaca, frecuencia respiratoria, HRV, ronquidos y fases del sueño con sensores en la funda, sin wearable. Aún no se ha publicado ninguna validación independiente de los sensores del Pod 6, así que tómalo como una tendencia, no como una lectura clínica."
         }
       ]
     }
@@ -8092,6 +8544,271 @@
         }
       ],
       "content": "## Resumen rápido\n\n> Nota: el Ultrahuman Ring Air está sujeto a una prohibición de importación en EE. UU. (octubre de 2025, victoria de Oura por patentes ante la ITC) y no se puede comprar en EE. UU. El sucesor de Ultrahuman disponible en EE. UU. es el [Ring Pro](/reviews/ultrahuman-ring-pro): sin suscripción y con ~15 días de batería. Si estás en EE. UU., lee esta comparativa teniendo esto en cuenta.\n\nTres puntos óptimos distintos en el equilibrio de concesiones de los anillos inteligentes. Oura por acabado, Ultrahuman por formato + ecosistema CGM, RingConn por relación calidad-precio + batería. La mayoría de usuarios no necesita pensarlo mucho más.\n\n## ¿Cuándo conviene el Oura Ring 4?\n\nSi quieres la experiencia de anillo de consumo más madura y el modelo de sueño más detallado, Oura es la opción adecuada. La membresía de $5.99/mes es el precio de entrada a una década de iteración y al análisis más desarrollado de la categoría. La mayoría de usuarios sigue acabando aquí.\n\n## ¿Cuándo conviene el Ultrahuman Ring Air?\n\nSi el peso del anillo importa más que nada, Ultrahuman es el anillo inteligente más ligero del mercado. Si usas o piensas usar el CGM Ultrahuman M1, la vista nativa de ecosistema unificado es única. Eso sí, ten presente la advertencia sobre la fiabilidad de la batería.\n\n## ¿Cuándo conviene el RingConn Gen 2?\n\nSi no tener suscripción es un requisito imprescindible y quieres la batería más duradera de la categoría, RingConn es la opción adecuada. También es claramente el más barato a tres años. A cambio, la app es algo menos madura y el análisis del sueño menos profundo que en Oura."
+    },
+    "chilipad-dock-pro-vs-bedjet-3": {
+      "title": "ChiliPad Dock Pro vs BedJet 3: comparativa (2026)",
+      "description": "ChiliPad Dock Pro vs BedJet 3: climatización del sueño por agua o por aire. Doble zona premium frente a un sistema sin agua a mitad de precio.",
+      "intro": "ChiliPad Dock Pro y BedJet 3 son los dos sistemas de climatización del sueño sin suscripción que se comparan cuando Eight Sleep queda descartado. La diferencia que define la categoría es el método: ChiliPad usa refrigeración por agua de doble zona con depósito y enfriador; BedJet impulsa aire ambiente o enfriado bajo las sábanas, sin depósito de agua que mantener.",
+      "verdict": "Potencia de climatización frente a mantenimiento sencillo. ChiliPad Dock Pro para refrigeración intensa en verano y control de doble zona. BedJet 3 para una instalación limpia sin gestión de agua y aproximadamente a mitad de precio.",
+      "bestForA": "Elige ChiliPad Dock Pro si quieres climatización intensa por agua con control de doble zona (uno para cada lado) y aceptas gestionar el agua.",
+      "bestForB": "Elige BedJet 3 si quieres climatización limpia por aire, sin depósito de agua ni mantenimiento del reservorio, y un precio notablemente más bajo.",
+      "axes": [
+        {
+          "name": "Rango de climatización",
+          "note": "ChiliPad: refrigeración por agua de doble zona, intensa en el pico de calor del verano (enfría por debajo de la temperatura ambiente). BedJet: flujo de aire, eficaz en climas suaves a moderados, más débil frente a los picos húmedos del verano."
+        },
+        {
+          "name": "Doble zona",
+          "note": "ChiliPad Dock Pro: temperatura independiente para cada lado. BedJet 3: una zona por unidad (se pueden usar dos BedJet, pero duplica el coste y el engorro en la cama)."
+        },
+        {
+          "name": "Mantenimiento",
+          "note": "ChiliPad: depósito de agua que rellenar, mangueras y limpieza periódica. BedJet: solo aire, sin gestión de agua."
+        },
+        {
+          "name": "Instalación",
+          "note": "ChiliPad: funda sobre el colchón + unidad central. BedJet: soporte en el somier + manguera de aire bajo las sábanas. La instalación de BedJet es más sencilla."
+        },
+        {
+          "name": "Calefacción",
+          "note": "Ambos calientan además de enfriar. ChiliPad: rango calentado por agua. BedJet: calentado por aire y notablemente más rápido al calentar (el aire se calienta antes que el agua)."
+        },
+        {
+          "name": "Precio",
+          "note": "ChiliPad Dock Pro: ~$1,700. BedJet 3: ~$600-900. BedJet cuesta aproximadamente la mitad y sin gasto continuo en líquido."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿ChiliPad o BedJet: cuál enfría mejor?",
+          "a": "ChiliPad: el agua enfría con más intensidad que el aire, sobre todo en el pico de calor del verano y con mucha humedad. BedJet es eficaz en climas templados y veranos más suaves, pero no es tan intenso en noches calurosas y húmedas."
+        },
+        {
+          "q": "¿Con cuál es más fácil convivir?",
+          "a": "BedJet: sin depósito que rellenar, sin mangueras que gestionar, sin limpieza del reservorio. ChiliPad requiere gestionar el agua periódicamente. Para configuraciones de bajo mantenimiento, gana BedJet."
+        },
+        {
+          "q": "¿Calienta BedJet tan bien como ChiliPad?",
+          "a": "BedJet calienta más rápido: el aire se calienta antes que el agua. ChiliPad tiene un rango cálido algo más amplio, pero la diferencia rara vez importa a temperaturas de cama útiles."
+        },
+        {
+          "q": "¿Sirve BedJet para parejas?",
+          "a": "Una zona por unidad. Las parejas que quieran temperatura independiente para cada lado necesitan dos BedJet (~$1,400-1,800), y entonces el sistema único de doble zona de ChiliPad Dock Pro también resulta competitivo en precio."
+        }
+      ],
+      "content": "## La versión corta\n\nAmbos son sistemas de climatización del sueño sin suscripción. ChiliPad es refrigeración por agua de doble zona: lo más intenso contra el calor del verano, pero requiere gestionar el agua. BedJet es flujo de aire: instalación limpia, más fácil de convivir, más débil frente a la humedad del pico del verano, y aproximadamente a mitad de precio.\n\n## ¿Cuándo es ChiliPad Dock Pro la elección correcta?\n\nSi vives en un clima caluroso y húmedo donde necesitas refrigeración intensa en las noches más calurosas del verano, y quieres temperatura independiente para cada lado sin comprar dos dispositivos, ChiliPad es la opción adecuada. Acepta la gestión del agua.\n\n## ¿Cuándo es BedJet 3 la elección correcta?\n\nSi vives en un clima suave o moderado, quieres la instalación más sencilla posible sin gestión de agua y prefieres gastar $600-900 en lugar de $1,700, BedJet es la opción adecuada. El enfoque de flujo de aire basta para la mayoría fuera de los picos del verano."
+    },
+    "luna-ring-vs-amazfit-helio-ring": {
+      "title": "Noise Luna Ring vs Amazfit Helio Ring (2026)",
+      "description": "Noise Luna Ring Gen 2 vs Amazfit Helio Ring: dos anillos asequibles sin suscripción. Batería larga con estuche frente al anillo más ligero y barato.",
+      "intro": "Son dos de los anillos inteligentes sin suscripción más baratos, ambos pensados para quien quiere el seguimiento básico al estilo Oura sin su precio ni su membresía. El Noise Luna Ring Gen 2 (~$300) se apoya en un estuche de carga de bolsillo para lograr una batería total larga y un buen seguimiento del sueño; el Amazfit Helio Ring ($199) es más barato y ligero, pero solo se vende en tres tallas. Ambos son opciones de buena relación calidad-precio con concesiones.",
+      "verdict": "Dos anillos económicos sin suscripción. El Amazfit Helio Ring es más barato ($199) y ligero; el Noise Luna Ring Gen 2 (~$300) tiene más tallas, un estuche de carga para una batería total larga e igual de buen seguimiento del sueño. Elige el Helio por el precio más bajo si te queda bien; el Luna por más opciones de talla y la comodidad del estuche.",
+      "bestForA": "Elige el Noise Luna Ring Gen 2 si quieres buen seguimiento del sueño, más tallas y un estuche de carga para una batería total larga, y $300 te parece aceptable.",
+      "bestForB": "Elige el Amazfit Helio Ring si quieres el anillo sin suscripción más barato y ligero y una de sus tres tallas te sirve.",
+      "axes": [
+        {
+          "name": "Precio",
+          "note": "Amazfit Helio: $199. Noise Luna Gen 2: ~$300. El Helio es el más barato."
+        },
+        {
+          "name": "Suscripción",
+          "note": "Empate: ambos son una compra única sin membresía."
+        },
+        {
+          "name": "Batería por carga",
+          "note": "Según los fabricantes: hasta 7 días para el Luna Ring (para el Gen 2, hasta 5 días según Wareable) y hasta 4 días por carga para el Helio. Los analistas reportan menos en uso real (Luna ~4, Helio ~2,5–3), y los ~30 días anunciados del Luna dependen del estuche de carga."
+        },
+        {
+          "name": "Ajuste y tallas",
+          "note": "El Helio solo se vende en tres tallas (8, 10, 12); el Luna ofrece un rango más amplio, así que a más gente le queda bien."
+        },
+        {
+          "name": "Seguimiento del sueño",
+          "note": "Ambos siguen bien el sueño para su precio: las fases del sueño son un punto fuerte de los dos."
+        },
+        {
+          "name": "Extras",
+          "note": "El Luna añade un asistente de voz Luna AI y un estuche de carga de bolsillo; el Helio es más básico."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Noise Luna Ring o Amazfit Helio Ring?",
+          "a": "Ambos son anillos baratos sin suscripción con buen seguimiento del sueño. El Amazfit Helio es más barato ($199) y ligero, pero solo tiene tres tallas; el Noise Luna (~$300) tiene más tallas, un estuche de carga para una batería total larga y un asistente de voz. Elige el Helio por el precio más bajo si te queda bien; el Luna por opciones de talla y extras."
+        },
+        {
+          "q": "¿Cuál tiene mejor batería?",
+          "a": "El Luna. Según los fabricantes, el Luna Ring dura hasta 7 días (para el Gen 2, hasta 5 días según Wareable) y el Helio hasta 4 días por carga (los analistas reportan unos 4 y 2,5–3 días en uso real), y el estuche de carga de bolsillo del Luna eleva mucho su batería total, así que recargas el anillo con menos frecuencia."
+        },
+        {
+          "q": "¿Me quedarán bien estos anillos?",
+          "a": "El Amazfit Helio solo viene en tres tallas (8, 10, 12), así que puede no quedarte bien; el Noise Luna ofrece un rango más amplio y es la apuesta más segura en ajuste."
+        }
+      ],
+      "content": "## La versión corta\n\nDos anillos económicos sin suscripción. El [Amazfit Helio Ring](/reviews/amazfit-helio-ring) es más barato ($199) y ligero, pero limitado a tres tallas; el [Noise Luna Ring Gen 2](/reviews/luna-ring) (~$300) tiene más tallas, un estuche de carga para una batería total larga y un asistente de voz.\n\n## ¿Cuándo es el Noise Luna Ring la elección correcta?\n\nQuieres buen seguimiento del sueño, más opciones de talla y la comodidad del estuche de carga, y $300 te parece bien.\n\n## ¿Cuándo es el Amazfit Helio Ring la elección correcta?\n\nQuieres el anillo sin suscripción más barato y ligero y alguna talla te sirve.\n\n## También vale la pena comparar\n\nPara una batería por carga más larga a un precio similar, mira el [RingConn Gen 2](/reviews/ringconn-gen-2); frente a Oura, [Noise Luna vs Oura Ring 4](/reviews/vs/luna-ring-vs-oura-ring-4). Panorama completo: [mejores monitores de HRV](/reviews/hrv-trackers)."
+    },
+    "neurosity-crown-vs-emotiv-insight-2": {
+      "title": "Neurosity Crown vs Emotiv Insight 2 (2026)",
+      "description": "Neurosity Crown vs Emotiv Insight 2: comparativa ONDA de dos diademas EEG de consumo para desarrolladores. SDK abierto frente a herramientas académicas.",
+      "intro": "Neurosity Crown y Emotiv Insight 2 son las dos diademas EEG de consumo que desarrolladores e investigadores comparan con más frecuencia. Ambas se dirigen a quien quiere acceso a la señal en bruto, no una app de meditación. La diferencia estructural es el modelo de datos: Neurosity ofrece un SDK abierto sin restricciones; Emotiv tiene un conjunto de herramientas académicas más profundo, pero restringe el acceso a los datos en bruto tras una suscripción Pro.",
+      "verdict": "Neurosity Crown gana para desarrolladores y biohackers que quieren acceso al EEG en bruto sin suscripción. Emotiv Insight 2 gana específicamente para quien hace análisis de tipo académico, donde las herramientas de EmotivPRO son el factor decisivo.",
+      "bestForA": "Elige Neurosity Crown si quieres EEG en bruto vía JavaScript o Python (además de BrainFlow, LSL y OSC) sin suscripción: el SDK más abierto del mercado EEG de consumo.",
+      "bestForB": "Elige Emotiv Insight 2 si necesitas las herramientas de EmotivPRO y su amplia base de publicaciones académicas, y aceptas la suscripción Pro para acceder a los datos en bruto.",
+      "axes": [
+        {
+          "name": "Canales EEG",
+          "note": "Neurosity Crown: 8 electrodos secos en varias zonas corticales. Emotiv Insight 2: 5 electrodos semisecos. Neurosity tiene mayor cobertura cortical."
+        },
+        {
+          "name": "Calidad de la señal",
+          "note": "Ambos son sistemas de consumo secos/semisecos. Neurosity tiene más canales; Emotiv tiene una señal por canal algo más limpia en reposo. Prácticamente empatados."
+        },
+        {
+          "name": "Acceso abierto al SDK",
+          "note": "Neurosity: EEG en bruto vía JavaScript y Python (además de BrainFlow, LSL y OSC), sin suscripción. Emotiv: SDK disponible, pero el acceso a datos en bruto requiere suscripción a EmotivPRO. Neurosity es la plataforma más abierta."
+        },
+        {
+          "name": "Herramientas académicas",
+          "note": "EmotivPRO se cita en cientos de estudios académicos publicados. Neurosity tiene una huella investigadora menor: la plataforma es más joven."
+        },
+        {
+          "name": "Métricas cognitivas en vivo",
+          "note": "Emotiv: concentración, estrés, implicación, excitación, interés y relajación en vivo, seis dimensiones. Neurosity: concentración, calma y flow. Emotiv muestra más puntuaciones en vivo; todas son fórmulas propias de cada empresa, no medidas validadas."
+        },
+        {
+          "name": "Experiencia de usuario integrada",
+          "note": "Neurosity incluye de serie una función de música adaptativa para la concentración. Emotiv se apoya en el ecosistema del SDK para las apps de usuario."
+        },
+        {
+          "name": "Comodidad",
+          "note": "Emotiv Insight 2 es más ligera y su corona de cinco brazos resulta cómoda en sesiones largas. Neurosity Crown es más voluminosa."
+        },
+        {
+          "name": "Precio",
+          "note": "Emotiv Insight 2: $499 + suscripción Pro (~$99/año) para datos en bruto. Neurosity Crown: $1,499 sin suscripción. Emotiv es más barata al principio; Neurosity sale más barata a varios años si necesitas datos en bruto."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es mejor para desarrolladores: Neurosity Crown o Emotiv Insight 2?",
+          "a": "Neurosity Crown, en general. El SDK es realmente abierto: EEG en bruto vía JavaScript y Python (además de BrainFlow, LSL y OSC) sin suscripción. Emotiv tiene un SDK comparable, pero restringe el acceso a datos en bruto tras una suscripción Pro, lo que se siente como pagar dos veces."
+        },
+        {
+          "q": "¿Cuál es mejor para investigación académica?",
+          "a": "Emotiv Insight 2: las herramientas de EmotivPRO se citan en cientos de estudios publicados, lo que facilita citarlas en tu propio trabajo. La huella investigadora de Neurosity es menor porque la plataforma es más joven."
+        },
+        {
+          "q": "¿Por qué Neurosity Crown es mucho más cara?",
+          "a": "$1,499 frente a $499 refleja el hardware de ocho canales y el modelo sin suscripción. A tres años con Emotiv Pro la diferencia se reduce a unos $700. Para quien necesita datos en bruto, Neurosity acaba costando aproximadamente lo mismo en total."
+        },
+        {
+          "q": "¿Se puede usar alguna de las dos para meditar?",
+          "a": "Ambas pueden, pero ninguna es la herramienta adecuada para ello. La experiencia de meditación de consumo es terreno de Muse: Muse 2 ($249.99) o Muse S Athena ($474.99). Neurosity y Emotiv son hardware para desarrolladores que requiere que aportes tu propia aplicación."
+        }
+      ],
+      "content": "## La versión corta\n\nNeurosity Crown gana para desarrolladores y biohackers que quieren acceso al EEG en bruto sin suscripción. Emotiv Insight 2 gana específicamente en investigación de tipo académico, donde importa la base de publicaciones de las herramientas de EmotivPRO.\n\n## ¿Cuándo es Neurosity Crown la elección correcta?\n\nSi quieres construir algo sobre el EEG (una app de concentración, una herramienta de productividad, un proyecto de investigación) y prefieres pagar una vez a mantener una suscripción continua para los datos en bruto, Neurosity Crown es la opción adecuada. El hardware de ocho canales y el SDK de JavaScript/Python (además de BrainFlow/LSL) son lo que la diferencia.\n\n## ¿Cuándo es Emotiv Insight 2 la elección correcta?\n\nSi haces análisis de tipo académico y quieres citar las herramientas de EmotivPRO en tu trabajo, Emotiv es la opción adecuada. El hardware de cinco canales basta para la mayoría del trabajo por regiones corticales, las puntuaciones cognitivas en vivo (propietarias) son más amplias que las de Neurosity, y la suscripción Pro es aceptable cuando lo que pagas es la profundidad de las herramientas académicas."
+    },
+    "plunge-vs-coldture": {
+      "title": "The Plunge vs Coldture: comparativa (2026)",
+      "description": "The Plunge vs Coldture: dos bañeras de inmersión en frío premium con enfriador. Líder de EE. UU. frente a especialista canadiense en clima frío.",
+      "intro": "The Plunge y Coldture son las dos bañeras de inmersión en frío premium con enfriador integrado que compiten cuando el comprador quiere una instalación de gama alta llave en mano. Ambas incluyen enfriador integrado, desinfección por ozono, construcción aislada premium y garantía de 3 años. La diferencia estructural es el posicionamiento geográfico: Plunge es el líder de la categoría en EE. UU.; Coldture es el especialista canadiense en climas fríos.",
+      "verdict": "Decide la geografía. The Plunge para compradores en EE. UU. e instalaciones en clima templado. Coldture para instalaciones exteriores en clima frío y mercados de Canadá/UE.",
+      "bestForA": "Elige The Plunge si estás en EE. UU., quieres la marca de consumo con más trayectoria y una instalación en clima templado, y te importa el ecosistema de contenido del fundador.",
+      "bestForB": "Elige Coldture si estás en Canadá, la UE o una región fría de EE. UU.: el uso exterior en invierno es donde Coldture está diseñada para rendir más.",
+      "axes": [
+        {
+          "name": "Capacidad del enfriador",
+          "note": "Plunge: 1 HP, límite de temperatura algo más agresivo (39°F). Coldture: capaz, pero ligeramente menos potente en el pico de calor del verano."
+        },
+        {
+          "name": "Rendimiento invernal en clima frío",
+          "note": "Coldture está diseñada para el uso exterior en invierno; Plunge está homologada para exterior, pero rinde mejor en climas templados."
+        },
+        {
+          "name": "Construcción",
+          "note": "Ambas premium y aisladas; fiabilidad plurianual comparable. Plunge tiene más de 5 años de trayectoria en EE. UU.; Coldture tiene un historial equivalente en Canadá / UE."
+        },
+        {
+          "name": "Garantía",
+          "note": "Ambas: 3 años de garantía en enfriador y bañera."
+        },
+        {
+          "name": "Distribución y soporte",
+          "note": "Plunge tiene mejor distribución y contenido en EE. UU. Coldture tiene mejor distribución en Canadá / UE."
+        },
+        {
+          "name": "Precio",
+          "note": "Coldture: ~$4,500. Plunge: $5,990. Coldture es claramente más barata por un hardware premium comparable."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Qué es mejor, The Plunge o Coldture?",
+          "a": "Decide la geografía. The Plunge para compradores de EE. UU. en climas templados; Coldture para instalaciones exteriores en clima frío (Canadá, UE, zonas frías de EE. UU.). El hardware es comparable; las prioridades de ingeniería difieren."
+        },
+        {
+          "q": "¿Funciona Coldture al aire libre en invierno?",
+          "a": "Sí, esa es su prioridad de diseño. Fabricada en Canadá pensando en el uso exterior en clima frío. The Plunge está homologada para exterior, pero diseñada en torno a condiciones de clima templado."
+        },
+        {
+          "q": "¿Cuál tiene mejor distribución en EE. UU.?",
+          "a": "The Plunge, con mucha diferencia: fundador estadounidense y ecosistema de contenido centrado en EE. UU. Coldture envía a EE. UU., pero su soporte se centra en Canadá."
+        },
+        {
+          "q": "¿Son comparables las garantías?",
+          "a": "Sí, ambas de 3 años en enfriador y bañera. Periodo de cobertura equivalente."
+        }
+      ],
+      "content": "## La versión corta\n\nThe Plunge y Coldture son las dos bañeras de inmersión en frío premium con enfriador. Plunge es el líder de la categoría en EE. UU. con el ecosistema de contenido más amplio; Coldture es el especialista canadiense en clima frío a un precio algo menor.\n\n## ¿Cuándo es The Plunge la elección correcta?\n\nSi estás en EE. UU., quieres la marca con más trayectoria y la biblioteca de contenido del fundador más completa, The Plunge es la opción adecuada. Su ingeniería brilla en condiciones de clima templado.\n\n## ¿Cuándo es Coldture la elección correcta?\n\nSi estás en Canadá, la UE o una región fría de EE. UU. e instalas al aire libre, el enfriador y el aislamiento de Coldture, diseñados para el invierno, rinden más que Plunge. El precio más bajo es un extra."
+    },
+    "ultrahuman-ring-pro-vs-oura-ring-5": {
+      "title": "Ultrahuman Ring Pro vs Oura Ring 5 (2026)",
+      "description": "Ultrahuman Ring Pro vs Oura Ring 5: buque insignia sin suscripción con ~15 días de batería frente a la línea mejor respaldada con membresía obligatoria.",
+      "intro": "Esta es la gran decisión de anillos inteligentes de 2026: el rediseñado Ring Pro de Ultrahuman, disponible en EE. UU., frente al buque insignia Ring 5 de Oura. El Ring Pro no tiene suscripción y ofrece una batería de ~15 días, líder de la categoría; el Ring 5 procede de la línea de anillos con más investigación publicada (sobre todo de generaciones anteriores, en parte financiada por Oura; el Ring 5 en sí no ha sido validado) y la mejor app, pero cobra una membresía obligatoria. Se reduce a ser dueño del dispositivo sin más pagos o pagar por la experiencia de referencia.",
+      "verdict": "Sin suscripción y batería enorme frente a historial de investigación y profundidad de la app. El Ultrahuman Ring Pro gana en modelo de coste (pago único de $479, sin cuota) y batería (~15 días); el Oura Ring 5 gana por la línea de anillos mejor respaldada (el Ring 5 en sí no está validado), los sensores y la mejor app, por $399 más una membresía. Elige según si rechazas una suscripción o quieres el anillo más consolidado.",
+      "bestForA": "Elige el Ultrahuman Ring Pro si lo que más te importa es un precio único sin suscripción y una batería excepcional de ~15 días, y te sientes cómodo siendo de los primeros en usar un anillo rediseñado.",
+      "bestForB": "Elige el Oura Ring 5 si quieres la línea de anillos con más investigación publicada (sobre todo de generaciones anteriores, en parte financiada por Oura; el Ring 5 en sí no ha sido validado), la app más pulida y sensores mejorados, y aceptas la membresía de ~$6/mes.",
+      "axes": [
+        {
+          "name": "Suscripción y coste",
+          "note": "Ring Pro: pago único de $479, sin suscripción. Oura Ring 5: $399 + ~$6/mes para todos los datos. A unos años vista el Ring Pro sale más barato y no debes nada de forma continua."
+        },
+        {
+          "name": "Batería",
+          "note": "Ring Pro: ~15 días, el mejor de la categoría. Oura Ring 5: ~6–9 días. No hay comparación."
+        },
+        {
+          "name": "Precisión del sueño y del HRV",
+          "note": "Prácticamente iguales: ni el Ring Pro ni el Ring 5 tienen una validación independiente de las fases del sueño ni de la variabilidad de la frecuencia cardiaca (HRV o VFC) nocturna (a octubre de 2026). Las generaciones anteriores de Oura tienen la mejor evidencia nocturna independiente; Ultrahuman solo tiene preprints realizados por la propia empresa."
+        },
+        {
+          "name": "App y ecosistema",
+          "note": "La app de Oura es la más pulida y explicativa de la categoría, con las integraciones más amplias. La de Ultrahuman es capaz y con enfoque metabólico, pero menos refinada."
+        },
+        {
+          "name": "Historial",
+          "note": "Oura tiene años de fiabilidad de hardware demostrada. El Ring Pro es nuevo, y el anterior Ring Air de Ultrahuman tuvo fallos de batería ampliamente reportados; el rediseño apunta justo a eso, pero aún no está probado a largo plazo."
+        },
+        {
+          "name": "Procesamiento y funciones",
+          "note": "El Ring Pro añade un procesador de doble núcleo en el anillo y una capa de biointeligencia en tiempo real «Jade»: más capacidad integrada que el Ring 5."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Ultrahuman Ring Pro u Oura Ring 5: cuál comprar?",
+          "a": "Si rechazas una suscripción y quieres la batería más larga, el Ring Pro (pago único de $479, ~15 días). Si quieres la línea de anillos con más investigación publicada (sobre todo de generaciones anteriores, en parte financiada por Oura; el Ring 5 en sí no ha sido validado) y la mejor app, el Oura Ring 5 ($399 + ~$6/mes). El Ring Pro gana en modelo de coste; Oura tiene más investigación publicada sobre sus generaciones anteriores (no hay comprobación independiente del modelo actual) y gana en pulido."
+        },
+        {
+          "q": "¿Es el Ring Pro lo bastante preciso como para prescindir de Oura?",
+          "a": "Para la mayoría, su seguimiento del HRV y del sueño es bueno y ha mejorado respecto al Ring Air. Pero las generaciones anteriores de Oura tienen más investigación publicada, incluido un pequeño estudio independiente con ECG (el Ring 5 en sí no ha sido validado), así que si la evidencia publicada es tu prioridad, Oura es la línea mejor respaldada, a costa de una suscripción."
+        },
+        {
+          "q": "¿De verdad dura 15 días el Ring Pro?",
+          "a": "Ultrahuman anuncia hasta ~15 días, aproximadamente el doble que los 6–9 del Ring 5. La batería real varía con el uso, pero el Ring Pro es claramente el anillo que más dura y el líder de la categoría sobre el papel."
+        }
+      ],
+      "content": "## La versión corta\n\nEl [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) es el buque insignia sin suscripción: pago único de $479, batería de ~15 días, procesamiento en el anillo. El [Oura Ring 5](/reviews/oura-ring-5) tiene la app más madura, de una línea de anillos con más investigación sobre modelos anteriores (la precisión del Ring 5 aún no se ha validado de forma independiente), por $399 más una membresía obligatoria.\n\n## ¿Cuándo es el Ultrahuman Ring Pro la elección correcta?\n\nRechazas una cuota recurrente, quieres la batería más larga de la categoría y no te importa ser de los primeros en usar un anillo rediseñado.\n\n## ¿Cuándo es el Oura Ring 5 la elección correcta?\n\nLa precisión y la profundidad de la app son la prioridad, quieres sensores mejorados y la experiencia más pulida, y aceptas la membresía.\n\n## También vale la pena comparar\n\nPara el Oura anterior y más barato, mira [Oura Ring 5 vs Oura Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4); para otros anillos sin suscripción, el [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) y el [RingConn Gen 2](/reviews/ringconn-gen-2). Panorama completo: [mejores monitores de HRV](/reviews/hrv-trackers)."
     }
   }
 }
