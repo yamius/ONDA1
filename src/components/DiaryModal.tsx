@@ -470,7 +470,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
       }, ...entries]);
       try {
         trackEvent('diary_entry_created', { type: source, backdated });
-        if (anomaly) trackEvent('anomaly_prompt_answered', {});
+        if (anomaly) trackEvent('signal_prompt_answered', {});
       } catch { /* noop */ }
     }
     resetEditor(); setEditorOpen(false);
