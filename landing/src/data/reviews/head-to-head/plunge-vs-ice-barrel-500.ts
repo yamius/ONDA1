@@ -32,7 +32,7 @@ const plungeVsIceBarrel: HeadToHeadInput = {
     },
     {
       q: 'How much does ice for Ice Barrel cost?',
-      a: 'Depends on ambient temperature. In warm climates ($5–15/day in ice during summer). In cold climates (winter / snow), zero to negligible. At $5–15 a day, a year of daily warm-weather use adds up to roughly $1,800–5,500 — enough to erase Ice Barrel’s $4,800 upfront saving within about one to three years.',
+      a: 'Depends on ambient temperature. In warm climates ($5–15/day in ice during summer). In cold climates (winter / snow), zero to negligible. In a climate that stays warm all year, $5–15 a day adds up to roughly $1,800–5,500 a year — enough to erase Ice Barrel’s $4,800 upfront saving within about one to three years; with a cold winter it takes longer.',
     },
     {
       q: 'Can The Plunge work indoors?',
