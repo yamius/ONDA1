@@ -7,6 +7,9 @@ import { articlesRaw as articles } from '../../src/data/articles'
 import { ARTICLE_FAQ_RAW as ARTICLE_FAQ, ARTICLE_FAQ_SCHEMA_ONLY_RAW as ARTICLE_FAQ_SCHEMA_ONLY } from '../../src/data/article-faq'
 import { ALL_REVIEWS, ALL_COMPARISONS } from '../../src/data/reviews'
 import { ALL_HEAD_TO_HEADS } from '../../src/data/reviews/head-to-head'
+import { CATEGORY_INTRO, CATEGORY_META_DESCRIPTION } from '../../src/data/reviews/category-hub-copy'
+import { CATEGORY_URL_SLUGS } from '../../src/data/reviews/criteria'
+import type { ReviewCategory } from '../../src/data/reviews/types'
 import { glossaryTermsRaw as glossaryTerms } from '../../src/data/glossary'
 import type { TranslationCollection } from '../../src/data/i18n-schema'
 
@@ -83,6 +86,14 @@ function build(): Record<TranslationCollection, Map<string, Entry>> {
           content: h.content,
         }),
       ]),
+    ),
+    categoryHubs: new Map(
+      (Object.keys(CATEGORY_INTRO) as ReviewCategory[])
+        .filter((c) => CATEGORY_URL_SLUGS[c])
+        .map((c) => [
+          CATEGORY_URL_SLUGS[c] as string,
+          clean({ h1: CATEGORY_INTRO[c].h1, intro: CATEGORY_INTRO[c].intro, description: CATEGORY_META_DESCRIPTION[c] }),
+        ]),
     ),
     glossary: new Map(glossaryTerms.map((t) => [t.slug, clean({ title: t.title, shortDescription: t.shortDescription, content: t.content })])),
   }

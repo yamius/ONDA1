@@ -29,7 +29,7 @@ export interface CollectionSchema {
   /** public/locales/<lang>/<file> */
   file: 'articles.json' | 'reviews.json' | 'glossary.json'
   /** top-level key holding `{ [slug]: entry }` */
-  path: 'bodies' | 'comparisons' | 'headToHeads'
+  path: 'bodies' | 'comparisons' | 'headToHeads' | 'categoryHubs'
   fields: Record<string, FieldSpec>
   /** A PUBLISHED translation must have all of these (otherwise the page shows English). */
   required: readonly string[]
@@ -113,6 +113,13 @@ export const TRANSLATION_SCHEMA = {
       content: markdown,
     },
     required: ['title', 'description', 'intro', 'verdict', 'bestForA', 'bestForB', 'axes', 'content'],
+  },
+  /** Per-category review hubs, keyed by category URL slug (/reviews/<slug>). */
+  categoryHubs: {
+    file: 'reviews.json',
+    path: 'categoryHubs',
+    fields: { h1: text, intro: text, description: text },
+    required: ['h1', 'intro', 'description'],
   },
   glossary: {
     file: 'glossary.json',

@@ -298,6 +298,7 @@ interface ReviewsFile {
   bodies?: Record<string, { description?: string; faq?: { q: string; a: string }[] }>
   comparisons?: Record<string, { title?: string; description?: string }>
   headToHeads?: Record<string, { title?: string; description?: string; faq?: { q: string; a: string }[] }>
+  categoryHubs?: Record<string, { h1?: string; intro?: string; description?: string }>
 }
 const reviewsByLang: Record<Lang, ReviewsFile> = {} as Record<Lang, ReviewsFile>
 for (const lang of SUPPORTED_LANGS) {
@@ -1006,6 +1007,11 @@ for (const route of routes) {
           title = h?.title ? fitTitle(h.title, ' | ONDA Life') : ''
           desc = h?.description ?? ''
           out = localizeFaqJsonLd(out, reviewInfo.lang, reviewUrlFor('headToHead', reviewInfo.slug, reviewInfo.lang), h?.faq)
+        } else if (rf.categoryHubs?.[reviewInfo.slug]?.h1) {
+          // Localized category hub (/<lang>/reviews/<category-url-slug>).
+          const hub = rf.categoryHubs[reviewInfo.slug]
+          title = fitTitle(hub.h1, ' | ONDA Life')
+          desc = hub.description ?? hub.intro ?? ''
         } else {
           const review = getReviewBySlug(reviewInfo.slug)
           if (review) {

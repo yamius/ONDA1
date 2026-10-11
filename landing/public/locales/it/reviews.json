@@ -69,7 +69,10 @@
     "practicallyEqual": "Praticamente alla pari per punteggio ONDA ({{scores}})",
     "scoresVs": " contro ",
     "scoresAnd": " e ",
-    "editorialAdjustment": "Correzione editoriale {{value}}: {{reason}}"
+    "editorialAdjustment": "Correzione editoriale {{value}}: {{reason}}",
+    "roundUpHeading": "Classifica comparativa",
+    "allReviewsHeading": "Tutte le recensioni",
+    "otherCategoriesHeading": "Altre categorie di recensioni"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
@@ -6339,6 +6342,13 @@
         }
       ],
       "content": "## In breve\n\nL’[Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) è l’ammiraglia senza abbonamento — 479 $ una tantum, ~15 giorni di autonomia, elaborazione sull’anello. L’[Oura Ring 5](/reviews/oura-ring-5) ha l’app più matura, da una linea di anelli con più ricerca sui modelli precedenti (la precisione del Ring 5 non è ancora stata validata in modo indipendente), a 399 $ più un abbonamento obbligatorio.\n\n## Quando l’Ultrahuman Ring Pro è la scelta giusta?\n\nRifiuti un canone ricorrente, vuoi l’autonomia più lunga della categoria e ti va bene essere tra i primi ad adottare un anello riprogettato.\n\n## Quando l’Oura Ring 5 è la scelta giusta?\n\nPrecisione e profondità dell’app sono la priorità, vuoi sensori migliorati e l’esperienza più curata, e l’abbonamento è accettabile.\n\n## Da confrontare anche\n\nPer l’Oura precedente e più economico, vedi [Oura Ring 5 vs Oura Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4); per altri anelli senza abbonamento, il [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) e il [RingConn Gen 2](/reviews/ringconn-gen-2). Panoramica completa: [migliori tracker HRV](/reviews/hrv-trackers)."
+    }
+  },
+  "categoryHubs": {
+    "red-light-therapy": {
+      "h1": "Recensioni pannelli a luce rossa (2026)",
+      "intro": "La terapia a luce rossa è una delle categorie biohacker più rumorose sul piano del marketing: valori di irradianza gonfiati, campi elettromagnetici e sfarfallio nascosti dietro la scheda tecnica, prezzi premium non sempre giustificati dalla costruzione. ONDA ha valutato i dieci pannelli più credibili del 2026 sugli stessi sei criteri, dando volutamente peso alle misure indipendenti di irradianza e alla disciplina su campi elettromagnetici e sfarfallio.",
+      "description": "Recensioni indipendenti ONDA di pannelli a luce rossa – Joovv, Mito Red, PlatinumLED e altri – valutati su irradianza, lunghezze d’onda, EMF e valore."
     }
   }
 }

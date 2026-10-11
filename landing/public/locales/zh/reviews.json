@@ -44,7 +44,10 @@
     "practicallyEqual": "按 ONDA 评分基本持平（{{scores}}）",
     "scoresVs": " 对 ",
     "scoresAnd": "和",
-    "editorialAdjustment": "编辑调整 {{value}}：{{reason}}"
+    "editorialAdjustment": "编辑调整 {{value}}：{{reason}}",
+    "roundUpHeading": "排名汇总",
+    "allReviewsHeading": "全部评测",
+    "otherCategoriesHeading": "其他评测类别"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
@@ -6314,6 +6317,13 @@
         }
       ],
       "content": "## 简要结论\n\n[Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) 是免订阅旗舰——一次性 $479，约 15 天续航，戒指内置处理。[Oura Ring 5](/reviews/oura-ring-5) 的应用更成熟，来自早期型号研究更多的戒指系列（Ring 5 的准确性尚未经过独立验证），价格 $399 加强制会员。\n\n## 什么情况下选 Ultrahuman Ring Pro？\n\n你拒绝定期付费，想要同类最长的续航，并且不介意做重新设计戒指的早期用户。\n\n## 什么情况下选 Oura Ring 5？\n\n准确性和应用深度是首要考虑，你想要升级的传感器和最精致的体验，并且能接受会员费。\n\n## 同样值得对比\n\n更便宜的上一代 Oura 见 [Oura Ring 5 与 Oura Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4)；其他免订阅戒指见 [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) 和 [RingConn Gen 2](/reviews/ringconn-gen-2)。完整阵容：[最佳 HRV 追踪器](/reviews/hrv-trackers)。"
+    }
+  },
+  "categoryHubs": {
+    "red-light-therapy": {
+      "h1": "红光疗法面板评测（2026）",
+      "intro": "红光疗法是营销噪音最大的生物黑客品类之一：辐照度数据被夸大，电磁场与频闪问题藏在参数表背后，高端定价也并不总有做工支撑。ONDA 按同样的六项标准为 2026 年最可信的十款面板打分，并有意加重独立辐照度测量数据以及电磁场/频闪控制的权重。",
+      "description": "ONDA 对红光疗法面板的独立评测——Joovv、Mito Red、PlatinumLED 等——按辐照度、波长覆盖、电磁场和性价比评分。"
     }
   }
 }

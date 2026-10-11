@@ -69,7 +69,10 @@
     "practicallyEqual": "Volgens de ONDA-score vrijwel gelijk ({{scores}})",
     "scoresVs": " vs. ",
     "scoresAnd": " en ",
-    "editorialAdjustment": "Redactionele correctie {{value}}: {{reason}}"
+    "editorialAdjustment": "Redactionele correctie {{value}}: {{reason}}",
+    "roundUpHeading": "Gerangschikte vergelijking",
+    "allReviewsHeading": "Alle reviews",
+    "otherCategoriesHeading": "Andere reviewcategorieën"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
@@ -6339,6 +6342,13 @@
         }
       ],
       "content": "## De korte versie\n\nDe [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) is het topmodel zonder abonnement – eenmalig $479, accu van ~15 dagen, verwerking in de ring. De [Oura Ring 5](/reviews/oura-ring-5) heeft de volwassenere app, uit een ringlijn met meer onderzoek naar eerdere modellen (de nauwkeurigheid van de Ring 5 is nog niet onafhankelijk gevalideerd), voor $399 plus een verplicht lidmaatschap.\n\n## Wanneer is de Ultrahuman Ring Pro de juiste keuze?\n\nJe weigert terugkerende kosten, je wilt de langste accuduur in de categorie en je vindt het prima om early adopter te zijn van een vernieuwde ring.\n\n## Wanneer is de Oura Ring 5 de juiste keuze?\n\nNauwkeurigheid en een diepe app hebben prioriteit, je wilt verbeterde sensoren en de meest verzorgde ervaring, en het lidmaatschap is acceptabel.\n\n## Ook het vergelijken waard\n\nVoor de vorige, goedkopere Oura, zie [Oura Ring 5 vs Oura Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4); voor andere ringen zonder abonnement de [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) en [RingConn Gen 2](/reviews/ringconn-gen-2). Het volledige veld: [beste HRV-trackers](/reviews/hrv-trackers)."
+    }
+  },
+  "categoryHubs": {
+    "red-light-therapy": {
+      "h1": "Reviews van roodlichtpanelen (2026)",
+      "intro": "Roodlichttherapie is een van de biohackcategorieën met de meeste marketingruis: opgeblazen claims over bestralingssterkte, EMV en flikkering verstopt achter het specificatieblad, premiumprijzen die niet altijd door de bouwkwaliteit worden gedragen. ONDA scoorde de tien meest geloofwaardige panelen van 2026 op dezelfde zes criteria, waarbij onafhankelijke metingen van de bestralingssterkte en discipline rond EMV en flikkering bewust zwaar meewegen.",
+      "description": "Onafhankelijke ONDA-reviews van roodlichtpanelen – Joovv, Mito Red, PlatinumLED en meer – gescoord op bestralingssterkte, golflengtes, EMV en waarde."
     }
   }
 }

@@ -363,7 +363,8 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
-const BUILD_DATE = new Date().toISOString().slice(0, 10)
+// ONDA_BUILD_DATE=YYYY-MM-DD simulates a later daily rebuild (scripts/check-category-hub-gate.ts); never set in CI.
+const BUILD_DATE = process.env.ONDA_BUILD_DATE ?? new Date().toISOString().slice(0, 10)
 
 /** Entries of scripts/locale-publish.ts that are due at build time, per collection. */
 const livePublish = (c: PublishCollection) => LOCALE_PUBLISH.filter((e) => e.collection === c && e.publishOn <= BUILD_DATE)
@@ -810,8 +811,25 @@ const liveReviewSlugLocale = REVIEW_SLUG_ROLLOUT.filter(
   (e) => e.publishOn <= REVIEW_BUILD_DATE && reviews.some((r) => r.slug === e.slug),
 )
 const liveComparisonLocale = livePublish('comparisons').filter((e) => comparisons.some((c) => c.slug === e.slug))
+/** Localized category hubs (/<lang>/reviews/<category-url-slug>) — released via the
+ *  queue (collection 'categoryHubs') and only when reviews.json#categoryHubs.<slug> exists. */
+const CATEGORY_HUB_URL_SLUGS = new Set<string>(Object.values(CATEGORY_URL_SLUGS).filter(Boolean) as string[])
+const translatedCategoryHubs: Record<string, Set<string>> = (() => {
+  const out: Record<string, Set<string>> = {}
+  for (const lang of ['es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt']) {
+    let f: { categoryHubs?: Record<string, { h1?: string }> } = {}
+    try {
+      f = JSON.parse(readFileSync(join(__dirname, '..', 'public', 'locales', lang, 'reviews.json'), 'utf-8'))
+    } catch { /* no reviews file */ }
+    out[lang] = new Set(Object.entries(f.categoryHubs ?? {}).filter(([, h]) => typeof h?.h1 === 'string').map(([s]) => s))
+  }
+  return out
+})()
+const liveCategoryHubLocale = livePublish('categoryHubs').filter(
+  (e) => CATEGORY_HUB_URL_SLUGS.has(e.slug) && translatedCategoryHubs[e.lang]?.has(e.slug),
+)
 const reviewSlugLangs: Record<string, string[]> = {}
-for (const e of [...liveReviewSlugLocale, ...liveComparisonLocale]) (reviewSlugLangs[e.slug] ??= []).push(e.lang)
+for (const e of [...liveReviewSlugLocale, ...liveComparisonLocale, ...liveCategoryHubLocale]) (reviewSlugLangs[e.slug] ??= []).push(e.lang)
 
 const localizedReviewRoutes = [
   ...Object.entries(REVIEW_PILOTS).flatMap(([lang, cats]) => pilotReviewRoutes(lang, cats)),
@@ -821,6 +839,7 @@ const localizedReviewRoutes = [
   ...liveComparisonLocale
     .filter((e) => !REVIEW_PILOTS[e.lang]?.has(comparisons.find((c) => c.slug === e.slug)!.category))
     .map((e) => `/${e.lang}/reviews/compare/${e.slug}`),
+  ...liveCategoryHubLocale.map((e) => `/${e.lang}/reviews/${e.slug}`),
 ]
 
 /**

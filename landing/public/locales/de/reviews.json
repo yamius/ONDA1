@@ -69,7 +69,10 @@
     "practicallyEqual": "Laut ONDA-Score praktisch gleichauf ({{scores}})",
     "scoresVs": " vs. ",
     "scoresAnd": " und ",
-    "editorialAdjustment": "Redaktionelle Anpassung {{value}}: {{reason}}"
+    "editorialAdjustment": "Redaktionelle Anpassung {{value}}: {{reason}}",
+    "roundUpHeading": "Rangliste",
+    "allReviewsHeading": "Alle Tests",
+    "otherCategoriesHeading": "Weitere Testkategorien"
   },
   "testStatus": {
     "hands-on": "Praxistest",
@@ -6339,6 +6342,13 @@
         }
       ],
       "content": "## Die Kurzfassung\n\nDer [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) ist das Flaggschiff ohne Abo – einmalig $479, ~15 Tage Akku, Datenverarbeitung im Ring. Der [Oura Ring 5](/reviews/oura-ring-5) hat die ausgereiftere App und stammt aus einer Ringserie mit mehr Forschung zu früheren Modellen (die Genauigkeit des Ring 5 ist noch nicht unabhängig validiert), für $399 plus Pflicht-Mitgliedschaft.\n\n## Wann ist der Ultrahuman Ring Pro die richtige Wahl?\n\nDu lehnst wiederkehrende Gebühren ab, willst den längsten Akku der Kategorie und hast kein Problem damit, zu den ersten Nutzern eines neu gestalteten Rings zu gehören.\n\n## Wann ist der Oura Ring 5 die richtige Wahl?\n\nGenauigkeit und App-Tiefe haben Priorität, du willst verbesserte Sensoren und das ausgereifteste Erlebnis, und die Mitgliedschaft ist für dich in Ordnung.\n\n## Ebenfalls einen Vergleich wert\n\nFür den vorherigen, günstigeren Oura siehe [Oura Ring 5 vs. Oura Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4); für andere Ringe ohne Abo den [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) und den [RingConn Gen 2](/reviews/ringconn-gen-2). Das ganze Feld: [die besten HRV-Tracker](/reviews/hrv-trackers)."
+    }
+  },
+  "categoryHubs": {
+    "red-light-therapy": {
+      "h1": "Rotlichttherapie-Panels: Bewertungen (2026)",
+      "intro": "Rotlichttherapie ist eine der marketinglautesten Biohacking-Kategorien überhaupt: aufgeblähte Angaben zur Bestrahlungsstärke, EMF und Flimmern hinter dem Datenblatt versteckt, Premiumpreise, die die Verarbeitung nicht immer rechtfertigt. ONDA hat die zehn glaubwürdigsten Panels 2026 nach denselben sechs Kriterien bewertet – unabhängige Messwerte zur Bestrahlungsstärke und die EMF-/Flimmer-Disziplin fallen bewusst ins Gewicht.",
+      "description": "Unabhängige ONDA-Bewertungen von Rotlichttherapie-Panels – Joovv, Mito Red, PlatinumLED u. a. – nach Bestrahlungsstärke, Wellenlängen, EMF und Preis."
     }
   }
 }

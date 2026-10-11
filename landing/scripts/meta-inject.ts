@@ -93,6 +93,7 @@ import {
   getCategoryByUrlSlug,
   CATEGORY_LABELS,
 } from '../src/data/reviews'
+import { CATEGORY_META_DESCRIPTION } from '../src/data/reviews/category-hub-copy'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
@@ -3534,40 +3535,7 @@ function getMetaForRouteBase(route: string): RouteMeta {
       } as Record<typeof category, string>
       const noun = nounByCat[category] ?? label
       const titleByCat = { [category]: `${noun} Reviews: ${catReviews.length} Scored (2026) | ONDA Life` } as Record<typeof category, string>
-      const descriptionByCat: Record<typeof category, string> = {
-        'hrv-wearable':
-          'Independent ONDA reviews of HRV trackers — rings, bands, smartwatches and chest straps — scored on measurement accuracy, sleep, data access, wearability and value.',
-        'meditation-app':
-          'Independent ONDA reviews of meditation apps — scored on library, teaching quality, personalisation, free tier, evidence base and value.',
-        'sleep-app':
-          'Independent ONDA reviews of sleep apps — trackers and wind-down tools — scored on tracking accuracy, content, sleep-science grounding, insights and value.',
-        'vagus-stim':
-          'Independent ONDA reviews of vagus nerve stimulators — auricular and cervical tVNS, vibrotactile and infrasonic devices — scored on evidence, mechanism, protocols and value.',
-        cgm:
-          'Independent ONDA reviews of CGMs for biohackers — Levels, Nutrisense, Stelo, Lingo, Ultrahuman, Signos, Veri, Zoe and more — scored on insights, accuracy, coaching and value.',
-        'eeg-headset':
-          'Independent ONDA reviews of EEG and brain-training headsets — Muse, Neurosity Crown, Emotiv, Mendi, FocusCalm and more — scored on signal, content, openness and value.',
-        'red-light':
-          'Independent ONDA reviews of red light therapy panels — Joovv, Mito Red, PlatinumLED, GembaRed, Hooga and more — scored on irradiance, wavelength coverage, EMF and value.',
-        'cold-plunge':
-          'Independent ONDA reviews of cold plunge tubs and ice baths — Plunge, BlueCube, Ice Barrel, Cold Pod, Edge and more — scored on chiller capacity, build, filtration and value.',
-        sauna:
-          'Independent ONDA reviews of infrared and traditional saunas — Sunlighten, Clearlight, HigherDose, SaunaSpace, Therasage and more — scored on heat source, EMF, build and value.',
-        'sleep-climate':
-          'Independent ONDA reviews of smart sleep climate systems — Eight Sleep Pod, ChiliPad, BedJet, Sleepme, OOLER and more — scored on climate range, build, app and value.',
-        pemf:
-          'Independent ONDA reviews of PEMF devices — Bemer, Healthy Wave, Pulse Centers, Curatron, iMRS, OMI, EarthPulse and more — scored on field strength, waveform research, build and value.',
-        'breathwork-app':
-          'Independent ONDA reviews of breathwork apps — Breathwrk, Othership, SOMA Breath, Wim Hof Method, Open, Pause and more — scored on library, technique coverage, evidence and value.',
-        'red-light-mask':
-          'Independent ONDA reviews of red light face masks — Omnilux Contour, CurrentBody Series 2, Dr. Dennis Gross, Lumara Viso, TheraFace, HigherDOSE and more — scored on irradiance, wavelength, evidence and value.',
-        'breathing-aid':
-          'Independent ONDA reviews of mouth tape and nasal breathing aids — Hostage Tape, Somnifix, Dream Recovery, Intake Breathing, Mute, Breathe Right and more — scored on adhesion, mechanism, safety and value.',
-        'massage-gun':
-          'Independent ONDA reviews of massage guns — Theragun PRO Plus, Hypervolt 2 Pro, Theragun Elite, Achedaway, Bob and Brad, Renpho, OPOVE and more — scored on stall force, amplitude, build and value.',
-        'air-purifier':
-          'Independent ONDA reviews of air purifiers — IQAir, Molekule, Dyson, Coway Airmega, Blueair, Levoit, Winix, Honeywell and more — scored on filtration, CADR, noise and value.',
-      } as Record<typeof category, string>
+      const descriptionByCat = CATEGORY_META_DESCRIPTION as Record<string, string>
       const itemListEntries = [
         ...(catComparison
           ? [{ url: `${SITE_URL}/reviews/compare/${catComparison.slug}`, name: catComparison.title }]

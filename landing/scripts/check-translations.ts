@@ -18,6 +18,7 @@ import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'fs'
 import { join } from 'path'
 import { TRANSLATION_SCHEMA, type FieldSpec, type TranslationCollection } from '../src/data/i18n-schema'
 import { enSource } from './lib/i18n-source'
+import { CATEGORY_URL_SLUGS } from '../src/data/reviews/criteria'
 import { LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET } from './prerender-routes'
 
 const LANGS = ['es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt']
@@ -32,9 +33,13 @@ const published = (set: Set<string>, re: RegExp) => {
   }
   return out
 }
+const CATEGORY_HUB_SLUGS = new Set<string>(Object.values(CATEGORY_URL_SLUGS).filter(Boolean) as string[])
+const onlyCats = (set: Set<string>, keep: boolean) => new Set([...set].filter((k) => CATEGORY_HUB_SLUGS.has(k.split(':')[1]) === keep))
+const reviewRoutes = published(LOCALIZED_REVIEW_ROUTE_SET, /^\/([a-z]{2})\/reviews\/(?!compare\/|vs\/|methodology$)([^/]+)$/)
 const PUBLISHED: Record<TranslationCollection, Set<string>> = {
   articles: published(LOCALIZED_ARTICLE_ROUTE_SET, /^\/([a-z]{2})\/articles\/([^/]+)$/),
-  reviews: published(LOCALIZED_REVIEW_ROUTE_SET, /^\/([a-z]{2})\/reviews\/(?!compare\/|vs\/|methodology$)([^/]+)$/),
+  reviews: onlyCats(reviewRoutes, false),
+  categoryHubs: onlyCats(reviewRoutes, true),
   comparisons: published(LOCALIZED_REVIEW_ROUTE_SET, /^\/([a-z]{2})\/reviews\/compare\/([^/]+)$/),
   h2h: published(LOCALIZED_REVIEW_ROUTE_SET, /^\/([a-z]{2})\/reviews\/vs\/([^/]+)$/),
   glossary: published(LOCALIZED_GLOSSARY_ROUTE_SET, /^\/([a-z]{2})\/glossary\/([^/]+)$/),

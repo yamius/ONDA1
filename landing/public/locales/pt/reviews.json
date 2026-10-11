@@ -69,7 +69,10 @@
     "practicallyEqual": "Praticamente iguais pela pontuação ONDA ({{scores}})",
     "scoresVs": " vs. ",
     "scoresAnd": " e ",
-    "editorialAdjustment": "Ajuste editorial {{value}}: {{reason}}"
+    "editorialAdjustment": "Ajuste editorial {{value}}: {{reason}}",
+    "roundUpHeading": "Comparativo classificado",
+    "allReviewsHeading": "Todas as análises",
+    "otherCategoriesHeading": "Outras categorias de análises"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
@@ -6339,6 +6342,13 @@
         }
       ],
       "content": "## Resumo\n\nO [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) é o carro-chefe sem assinatura — pagamento único de $479, bateria de ~15 dias, processamento no anel. O [Oura Ring 5](/reviews/oura-ring-5) tem o app mais maduro, de uma linha de anéis com mais pesquisas sobre modelos anteriores (a precisão do Ring 5 ainda não foi validada de forma independente), por $399 mais uma assinatura obrigatória.\n\n## Quando o Ultrahuman Ring Pro é a escolha certa?\n\nVocê recusa mensalidades, quer a bateria mais longa da categoria e não se incomoda em ser um dos primeiros a adotar um anel redesenhado.\n\n## Quando o Oura Ring 5 é a escolha certa?\n\nPrecisão e profundidade do app são a prioridade, você quer sensores melhorados e a experiência mais refinada, e a assinatura é aceitável.\n\n## Também vale comparar\n\nPara o Oura anterior e mais barato, veja [Oura Ring 5 vs Oura Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4); para outros anéis sem assinatura, o [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) e o [RingConn Gen 2](/reviews/ringconn-gen-2). Panorama completo: [melhores monitores de HRV](/reviews/hrv-trackers)."
+    }
+  },
+  "categoryHubs": {
+    "red-light-therapy": {
+      "h1": "Análises de painéis de luz vermelha (2026)",
+      "intro": "A terapia de luz vermelha é uma das categorias biohacker com mais ruído de marketing: valores de irradiância inflacionados, CEM e cintilação escondidos atrás da ficha técnica, preços premium nem sempre sustentados pela construção. A ONDA pontuou os dez painéis mais credíveis de 2026 com os mesmos seis critérios, dando peso deliberado às medições independentes de irradiância e à disciplina em CEM e cintilação.",
+      "description": "Análises independentes da ONDA de painéis de luz vermelha — Joovv, Mito Red, PlatinumLED e mais — pontuados em irradiância, ondas, CEM e valor."
     }
   }
 }

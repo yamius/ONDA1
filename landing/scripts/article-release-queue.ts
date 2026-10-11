@@ -496,7 +496,7 @@ export const EXTRA_RELEASE_QUEUE: Record<string, readonly { collection: 'reviews
  * Released AFTER everything above (the whole existing round-robin order), so no existing date moves.
  * Append-only: later waves add their own tail block after this one.
  */
-export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | 'reviews' | 'comparisons' | 'h2h'; slug: string; langs?: readonly string[] }[])[] = [
+export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | 'reviews' | 'comparisons' | 'h2h' | 'categoryHubs'; slug: string; langs?: readonly string[] }[])[] = [
   // wave A (074)
   [
   { collection: 'comparisons', slug: 'best-red-light-face-masks-2026' },
@@ -556,6 +556,10 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'finnleo-hallmark' },
   { collection: 'reviews', slug: 'apple-watch-ultra-4' },
   { collection: 'reviews', slug: 'bettersleep', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  ],
+  // 077: localized red-light category hub (links only to children live in each language)
+  [
+  { collection: 'categoryHubs', slug: 'red-light-therapy' },
   ],
 ]
 

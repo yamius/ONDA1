@@ -69,7 +69,10 @@
     "practicallyEqual": "Według oceny ONDA praktycznie równe ({{scores}})",
     "scoresVs": " vs ",
     "scoresAnd": " i ",
-    "editorialAdjustment": "Korekta redakcyjna {{value}}: {{reason}}"
+    "editorialAdjustment": "Korekta redakcyjna {{value}}: {{reason}}",
+    "roundUpHeading": "Ranking porównawczy",
+    "allReviewsHeading": "Wszystkie recenzje",
+    "otherCategoriesHeading": "Inne kategorie recenzji"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
@@ -6339,6 +6342,13 @@
         }
       ],
       "content": "## W skrócie\n\n[Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) to flagowiec bez abonamentu — jednorazowo $479, bateria ~15 dni, przetwarzanie w pierścieniu. [Oura Ring 5](/reviews/oura-ring-5) ma dojrzalszą aplikację i pochodzi z linii pierścieni z większą liczbą badań nad wcześniejszymi modelami (dokładność Ring 5 nie została jeszcze niezależnie zwalidowana), za 399 $ plus obowiązkowe członkostwo.\n\n## Kiedy Ultrahuman Ring Pro to dobry wybór?\n\nOdrzucasz cykliczne opłaty, chcesz najdłuższej baterii w kategorii i nie przeszkadza ci rola wczesnego użytkownika przeprojektowanego pierścienia.\n\n## Kiedy Oura Ring 5 to dobry wybór?\n\nPriorytetem są dokładność i głębia aplikacji, chcesz ulepszonych czujników i najbardziej dopracowanego doświadczenia, a członkostwo jest akceptowalne.\n\n## Warto też porównać\n\nPoprzedni, tańszy Oura: [Oura Ring 5 vs Oura Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4); inne pierścienie bez abonamentu: [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) i [RingConn Gen 2](/reviews/ringconn-gen-2). Pełne zestawienie: [najlepsze trackery HRV](/reviews/hrv-trackers)."
+    }
+  },
+  "categoryHubs": {
+    "red-light-therapy": {
+      "h1": "Recenzje paneli światła czerwonego (2026)",
+      "intro": "Terapia światłem czerwonym to jedna z najbardziej zaszumionych marketingowo kategorii biohackingu: zawyżone deklaracje natężenia napromienienia, pole elektromagnetyczne i migotanie ukryte za specyfikacją, ceny premium nie zawsze uzasadnione jakością wykonania. ONDA oceniła dziesięć najbardziej wiarygodnych paneli 2026 roku według tych samych sześciu kryteriów, celowo przykładając wagę do niezależnych pomiarów natężenia napromienienia oraz dyscypliny w zakresie PEM i migotania.",
+      "description": "Niezależne recenzje ONDA paneli światła czerwonego – Joovv, Mito Red, PlatinumLED i inne – oceniane pod kątem natężenia, długości fal, PEM i ceny."
     }
   }
 }

@@ -69,7 +69,10 @@
     "practicallyEqual": "Pratiquement à égalité selon le score ONDA ({{scores}})",
     "scoresVs": " contre ",
     "scoresAnd": " et ",
-    "editorialAdjustment": "Ajustement éditorial {{value}} : {{reason}}"
+    "editorialAdjustment": "Ajustement éditorial {{value}} : {{reason}}",
+    "roundUpHeading": "Classement comparatif",
+    "allReviewsHeading": "Tous les tests",
+    "otherCategoriesHeading": "Autres catégories de tests"
   },
   "testStatus": {
     "hands-on": "Testé en conditions réelles",
@@ -6339,6 +6342,13 @@
         }
       ],
       "content": "## En bref\n\nL’[Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) est la bague phare sans abonnement — 479 $ en une fois, ~15 jours d’autonomie, traitement intégré à la bague. L’[Oura Ring 5](/reviews/oura-ring-5) a l’app la plus mature, issue d’une gamme davantage étudiée sur ses modèles précédents (la précision de la Ring 5 n’a pas encore été validée de manière indépendante), à 399 $ plus un abonnement obligatoire.\n\n## Quand l’Ultrahuman Ring Pro est-elle le bon choix ?\n\nVous refusez les frais récurrents, voulez la plus longue autonomie de la catégorie et acceptez d’être parmi les premiers à adopter une bague repensée.\n\n## Quand l’Oura Ring 5 est-elle le bon choix ?\n\nLa précision et la profondeur de l’app sont prioritaires, vous voulez des capteurs améliorés et l’expérience la plus aboutie, et l’abonnement vous convient.\n\n## À comparer aussi\n\nPour l’Oura précédente, moins chère, voyez [Oura Ring 5 vs Oura Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4) ; pour d’autres bagues sans abonnement, la [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) et la [RingConn Gen 2](/reviews/ringconn-gen-2). Panorama complet : [meilleurs trackers HRV](/reviews/hrv-trackers)."
+    }
+  },
+  "categoryHubs": {
+    "red-light-therapy": {
+      "h1": "Panneaux de lumière rouge : avis (2026)",
+      "intro": "La luminothérapie rouge est l’une des catégories biohacking les plus bruyantes en marketing : irradiance gonflée, CEM et scintillement cachés derrière la fiche technique, prix premium pas toujours justifiés par la fabrication. ONDA a noté les dix panneaux les plus crédibles de 2026 selon les six mêmes critères, en donnant volontairement du poids aux mesures d’irradiance indépendantes et à la maîtrise des CEM et du scintillement.",
+      "description": "Tests indépendants ONDA de panneaux de lumière rouge – Joovv, Mito Red, PlatinumLED, etc. – notés sur l’irradiance, les longueurs d’onde, les CEM, le prix."
     }
   }
 }
