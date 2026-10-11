@@ -12150,6 +12150,24 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "pmcid:PMC12982300": {
+   "kind": "pmcid",
+   "valid": true,
+   "title": "Effects of Exercise on Autonomic Cardiovascular Function in Older Adults: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Etayo-Urtasun",
+   "authors": [
+    "Etayo-Urtasun",
+    "Izquierdo",
+    "Sáez de Asteasu"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "Sports Med",
+   "doi": "10.1007/s40279-025-02357-5",
+   "source": "pmc-idconv+pubmed",
+   "verifiedAt": "2026-10-11",
+   "pmid": "41264119"
+  },
   "pmcid:PMC5654415": {
    "kind": "pmcid",
    "valid": false,
