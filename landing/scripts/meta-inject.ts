@@ -1912,7 +1912,7 @@ function getMetaForRouteBase(route: string): RouteMeta {
     return {
       title: 'Yakiv Bilenko — Founder & CEO of ONDA Life',
       description:
-        'Yakiv Bilenko, founder & CEO of ONDA Life — architect (KNUCA, 2006) and Gestalt therapist (MIGIS, 2018) who builds the product. ONDA’s physiology and neuroscience are led by its scientific advisor.',
+        'Yakiv Bilenko, founder & CEO of ONDA Life — architect (KNUCA, 2006) and Gestalt therapist (MIGIS, 2018) who builds the product.',
       url,
       breadcrumbs,
       ogType: 'profile',
