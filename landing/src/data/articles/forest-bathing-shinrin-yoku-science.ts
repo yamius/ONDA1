@@ -64,7 +64,7 @@ You don't need a remote wilderness — a quiet park with real trees delivers muc
 
 ## See your own shift
 
-The calm that forest bathing produces is a measurable autonomic change — exactly the kind ONDA tracks. Read your [resting heart rate](/science/measurements/resting-heart-rate) from your phone camera, or your HRV from your Apple Watch, before and after time among trees, and you can watch your own parasympathetic shift: pulse settling, HRV rising. It turns "I feel better after the woods" into something you can actually see in your numbers.
+The calm that forest bathing produces is a measurable autonomic change — exactly the kind ONDA tracks. Read your [resting heart rate](/science/measurements/resting-heart-rate) from your phone camera, or your HRV from Apple Health (Apple Watch or another tracker that syncs there), before and after time among trees, and you can watch your own parasympathetic shift: pulse settling, HRV rising. It turns "I feel better after the woods" into something you can actually see in your numbers.
 `,
   howToSteps: [
     {

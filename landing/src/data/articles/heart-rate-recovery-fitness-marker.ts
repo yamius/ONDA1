@@ -67,7 +67,7 @@ When HRR slows *and* resting heart rate creeps up *and* HRV drops together, that
 
 ## Section 4: How ONDA tracks it
 
-ONDA reads a **one-minute recovery** figure as one of its baseline extras, alongside resting heart rate, [HRV](/glossary/heart-rate-variability), estimated VO₂max, and peak and walking heart rate — pulled from an Apple Watch and held against your own history. So instead of a one-off gym test, you get your recovery as a trend: is your pulse dropping faster as your training pays off, or slowing as fatigue accumulates? That's [your own data over time](/measurements), not a generic benchmark.
+ONDA reads a **one-minute recovery** figure as one of its baseline extras, alongside resting heart rate, [HRV](/glossary/heart-rate-variability), estimated VO₂max, and peak and walking heart rate — pulled from Apple Health — from your Apple Watch or another tracker that syncs there — and held against your own history. So instead of a one-off gym test, you get your recovery as a trend: is your pulse dropping faster as your training pays off, or slowing as fatigue accumulates? That's [your own data over time](/measurements), not a generic benchmark.
 
 The firewall: this is a **descriptive fitness signal, not a medical screening**. ONDA is not a medical device and does not diagnose cardiovascular conditions. A persistently slow recovery, or one that worsens without an obvious training reason, is a conversation for a clinician — the app shows the trend, it doesn't interpret your heart health.
 

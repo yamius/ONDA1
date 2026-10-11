@@ -972,6 +972,8 @@ const nonLocalizedStaticPaths = [
   '/apple-watch-hrv-biofeedback',
   // /connect — "how to read your device's HRV" pages (task 071 2a). EN-only.
   '/connect',
+  // Localized /<lang>/connect hubs (task 073 step 2); device pages stay EN-only.
+  ...['ru', 'es', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt'].map((l) => `/${l}/connect`),
   ...CONNECT_DEVICES.map((d) => `/connect/${d.slug}`),
   '/ru/apple-watch-hrv-biofeedback',
   '/es/apple-watch-hrv-biofeedback',

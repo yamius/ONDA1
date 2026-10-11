@@ -5,7 +5,7 @@ import type { Article } from './types'
  * drugs vs drugs alone (HRV, sympathovagal balance, cardiometabolic risk); yoga+pranayama added to
  * medicine improved glucose/insulin/lipids; Niyantrita Madhumeha Bharat prevention trial in high-risk
  * adults; observational SKY program. Participant counts from draft dropped (not verified). HONEST:
- * adjunct only, never adjust medication; ONDA does not measure glucose. HRV via Apple Watch.
+ * adjunct only, never adjust medication; ONDA does not measure glucose. HRV via Apple Health (Apple Watch or another tracker that syncs there).
  */
 const article: Article = {
   slug: 'yoga-breathing-diabetes-blood-sugar',
@@ -61,7 +61,7 @@ Several mechanisms overlap. [Slow breathing](/science/evidence/slow-breathing) a
 
 ## Track your HRV over time
 
-One of the benefits in the research — improved HRV — is something you can follow with ONDA. It reads your resting heart rate and HRV from your Apple Watch, so you can track how they change as you build a regular breathing practice (see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally)). ONDA does not measure blood sugar; HRV is an indirect autonomic marker, not a measure of "sympathovagal balance" ([why](/science/concepts/autonomic-nervous-system)).
+One of the benefits in the research — improved HRV — is something you can follow with ONDA. It reads your resting heart rate and HRV from Apple Health — from your Apple Watch or another tracker that syncs there — so you can track how they change as you build a regular breathing practice (see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally)). ONDA does not measure blood sugar; HRV is an indirect autonomic marker, not a measure of "sympathovagal balance" ([why](/science/concepts/autonomic-nervous-system)).
 
 *ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device. This article draws on Indian randomized trials of yoga and pranayama in type 2 diabetes. It is not a substitute for diabetes care; consult your doctor.*
 `,

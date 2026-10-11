@@ -59,7 +59,7 @@ Because it's an intense technique, it should be done seated or lying down — ne
 
 ## See your own response
 
-The autonomic shifts behind this research show up in your heart rhythm. ONDA reads your pulse from your phone camera, or your [HRV](/science/concepts/heart-rate-variability) from your Apple Watch, so you can watch how intense breathing drives your heart rate up — the sympathetic activation these studies measured — versus how slow breathing settles it back down. Seeing the two opposite effects in your own numbers makes the difference between "priming" and "calming" breathwork concrete.
+The autonomic shifts behind this research show up in your heart rhythm. ONDA reads your pulse from your phone camera, or your [HRV](/science/concepts/heart-rate-variability) from Apple Health (Apple Watch or another tracker that syncs there), so you can watch how intense breathing drives your heart rate up — the sympathetic activation these studies measured — versus how slow breathing settles it back down. Seeing the two opposite effects in your own numbers makes the difference between "priming" and "calming" breathwork concrete.
 `,
 }
 

@@ -3,7 +3,7 @@ import type { Article } from './types'
 /**
  * Series "Doctors and Your Data" (tasks 602-607). Honest framing: watch data is context, never a
  * diagnosis; ONDA report = on-device PDF (baseline, signals, notes), shared only by the user. HRV and
- * breathing baseline from Apple Watch. Not a medical device.
+ * breathing baseline from Apple Health (Apple Watch or any tracker syncing there). Not a medical device.
  */
 const article: Article = {
   slug: 'onda-report-for-your-endocrinologist',
@@ -88,7 +88,7 @@ Seek urgent care for a very fast or irregular heartbeat with feeling unwell, che
 
 ## Your heart's response to your hormones, on one page
 
-ONDA builds your [personal baseline](/science/concepts/hrv-baseline) for resting heart rate, HRV and breathing from your Apple Watch, marks the days you left your usual range, and lets you add notes on symptoms and treatment. You can export any period as a PDF — generated on your device and shared only by you — so an endocrinologist sees how your body responded over weeks, alongside your lab results.
+ONDA builds your [personal baseline](/science/concepts/hrv-baseline) for resting heart rate, HRV and breathing from Apple Health — from your Apple Watch or another tracker that syncs there — marks the days you left your usual range, and lets you add notes on symptoms and treatment. You can export any period as a PDF — generated on your device and shared only by you — so an endocrinologist sees how your body responded over weeks, alongside your lab results.
 
 *ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device, and does not measure hormones or blood sugar. This article is general information, not medical advice. If you have a very fast or irregular heartbeat with feeling unwell or symptoms of severe low or high blood sugar, seek urgent care.*
 `,

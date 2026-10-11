@@ -58,7 +58,7 @@ There's a practical thread here that connects to wellbeing. So much distress com
 
 ## Track the calm beneath the practice
 
-While the network-level brain effects of Zen need a lab, the calmer nervous system that comes with the practice is [measurable](/articles/measuring-meditation-progress). ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/science/concepts/heart-rate-variability) from your Apple Watch (or your pulse from your phone camera), so you can track how sitting practice — koan-based or simple breath awareness — settles your system over weeks. As you grow less captured by mental narration, that steadier calm tends to show in a stronger HRV baseline.
+While the network-level brain effects of Zen need a lab, the calmer nervous system that comes with the practice is [measurable](/articles/measuring-meditation-progress). ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/science/concepts/heart-rate-variability) from Apple Health (Apple Watch or another tracker that syncs there), or your pulse from your phone camera, so you can track how sitting practice — koan-based or simple breath awareness — settles your system over weeks. As you grow less captured by mental narration, that steadier calm tends to show in a stronger HRV baseline.
 `,
 }
 

@@ -3,7 +3,7 @@ import type { Article } from './types'
 /**
  * Series "Doctors and Your Data" (tasks 595-600). Honest framing: watch data is context, never a
  * diagnosis; pulse is not rhythm; ONDA report = on-device PDF (baseline, signals, notes), shared only by
- * the user. HRV/breathing baseline from Apple Watch. Not a medical device.
+ * the user. HRV/breathing baseline from Apple Health (Apple Watch or any tracker syncing there). Not a medical device.
  */
 const article: Article = {
   slug: 'onda-report-for-your-cardiologist',
@@ -79,7 +79,7 @@ If you have chest pain, fainting, a very fast or irregular heartbeat with feelin
 
 ## Your trends, ready for a specialist
 
-ONDA builds your personal baseline for resting heart rate, HRV and breathing from your Apple Watch history, marks the days you left your usual range, and lets you add notes when something happens. You can export the timeline for any period as a PDF — generated on your device and shared only by you — so a cardiologist sees your history at a glance before choosing the next test.
+ONDA builds your personal baseline for resting heart rate, HRV and breathing from Apple Health — from your Apple Watch or another tracker that syncs there — marks the days you left your usual range, and lets you add notes when something happens. You can export the timeline for any period as a PDF — generated on your device and shared only by you — so a cardiologist sees your history at a glance before choosing the next test.
 
 *ONDA is a breathing and HRV biofeedback app, not a medical device, and does not detect or diagnose heart conditions. This article is general information, not medical advice. If you have urgent symptoms, seek emergency care.*
 `,

@@ -6,8 +6,7 @@
  * wrapper carries inLanguage.
  *
  * Honesty: Yakiv's expertise is architecture, psychology and Gestalt therapy
- * plus product engineering — NOT clinical neuroscience; that authority is the
- * scientific advisor's. Never imply the founder is the scientific authority.
+ * plus product engineering — NOT clinical neuroscience. Never imply the founder is the scientific authority.
  */
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'

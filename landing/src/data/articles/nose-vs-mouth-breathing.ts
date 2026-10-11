@@ -53,7 +53,7 @@ This small study linked nasal breathing to slightly steadier sustained attention
 
 ## See how your breathing shifts you
 
-Because the effect of breathing route shows up in your autonomic balance, you can observe it. ONDA reads your pulse from your phone camera, or your HRV from your Apple Watch, so you can watch how nasal versus mouth breathing changes your heart rhythm in real time. Trying it yourself — a minute each way — often makes the difference obvious in your own numbers.
+Because the effect of breathing route shows up in your autonomic balance, you can observe it. ONDA reads your pulse from your phone camera, or your HRV from Apple Health (Apple Watch or another tracker that syncs there), so you can watch how nasal versus mouth breathing changes your heart rhythm in real time with an Apple Watch. Trying it yourself — a minute each way — often makes the difference obvious in your own numbers.
 `,
 }
 

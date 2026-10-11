@@ -46,3 +46,9 @@ export function gtmAppStoreClick(pagePath: string, campaign: string): void {
 export function gtmAiConnectorClick(pagePath: string, platform: 'claude' | 'chatgpt'): void {
   push({ event: 'ai_connector_click', platform, page_path: pagePath })
 }
+
+/** Header / menu / footer navigation click → GA4 `nav_click` (task 073).
+ *  `item` is a fixed link name (e.g. connect, tools) plus where it sits — no personal data. */
+export function gtmNavClick(item: string, placement: string, pagePath: string): void {
+  push({ event: 'nav_click', item, placement, page_path: pagePath })
+}

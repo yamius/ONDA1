@@ -185,7 +185,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
       },
       {
         q: 'Can ONDA read my Garmin data?',
-        a: 'Not directly at the moment: Garmin is not accepting new developer applications. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Watch.',
+        a: 'Not directly at the moment: Garmin is not accepting new developer applications. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Health (Apple Watch or another tracker that syncs there).',
       },
     ],
   },
@@ -211,7 +211,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     faq: [
       {
         q: 'Can ONDA read my Fitbit or Pixel Watch HRV?',
-        a: 'Not directly: Google is not accepting new projects for its health API. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Watch.',
+        a: 'Not directly: Google is not accepting new projects for its health API. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Health (Apple Watch or another tracker that syncs there).',
       },
     ],
   },
@@ -237,7 +237,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     faq: [
       {
         q: 'Can ONDA read Samsung Health?',
-        a: 'Not from this website: Samsung Health has no public web API. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Watch.',
+        a: 'Not from this website: Samsung Health has no public web API. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Health (Apple Watch or another tracker that syncs there).',
       },
     ],
   },
@@ -289,7 +289,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     faq: [
       {
         q: 'Can ONDA read my Ultrahuman data?',
-        a: 'Not directly: we have not found an official public API. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Watch.',
+        a: 'Not directly: we have not found an official public API. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Health (Apple Watch or another tracker that syncs there).',
       },
     ],
   },
@@ -314,7 +314,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     faq: [
       {
         q: 'Can ONDA read my RingConn data?',
-        a: 'Not directly: there is no public API we can use. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Watch.',
+        a: 'Not directly: there is no public API we can use. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Health (Apple Watch or another tracker that syncs there).',
       },
     ],
   },
@@ -339,7 +339,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     faq: [
       {
         q: 'Can ONDA read my Amazfit data?',
-        a: 'Not directly: there is no public API we can use. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Watch.',
+        a: 'Not directly: there is no public API we can use. ONDA can measure your pulse with the iPhone camera, and reads HRV from Apple Health (Apple Watch or another tracker that syncs there).',
       },
     ],
   },
@@ -398,18 +398,18 @@ export const CONNECT_RED_FLAGS =
 const SITE_URL = 'https://onda-life.com'
 
 /** Static JSON-LD (emitted by meta-inject; never effect-injected). */
-export function connectJsonLd(slug?: string): Record<string, unknown>[] {
+export function connectJsonLd(slug?: string, lang = 'en', loc?: { h1: string; description: string }): Record<string, unknown>[] {
   if (!slug) {
-    const url = `${SITE_URL}/connect`
+    const url = lang === 'en' ? `${SITE_URL}/connect` : `${SITE_URL}/${lang}/connect`
     return [
       {
         '@context': 'https://schema.org',
         '@type': 'CollectionPage',
         '@id': `${url}#page`,
-        name: CONNECT_INDEX_META.h1,
-        description: CONNECT_INDEX_META.description,
+        name: loc?.h1 ?? CONNECT_INDEX_META.h1,
+        description: loc?.description ?? CONNECT_INDEX_META.description,
         url,
-        inLanguage: 'en',
+        inLanguage: lang,
         mainEntity: {
           '@type': 'ItemList',
           itemListElement: CONNECT_DEVICES.map((d, i) => ({

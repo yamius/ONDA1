@@ -3,7 +3,7 @@ import type { Article } from './types'
 /**
  * Series "Doctors and Your Data" (tasks 602-607). Honest framing: watch data is context, never a
  * diagnosis; ONDA report = on-device PDF (baseline, signals, notes), shared only by the user. HRV and
- * breathing baseline from Apple Watch. Not a medical device.
+ * breathing baseline from Apple Health (Apple Watch or any tracker syncing there). Not a medical device.
  */
 const article: Article = {
   slug: 'onda-report-for-your-neurologist',
@@ -89,7 +89,7 @@ Seek urgent care if you faint and injure yourself, faint during exercise, or hav
 
 ## Your nervous system's history, on one page
 
-ONDA builds your personal baseline for resting heart rate, HRV and breathing from your Apple Watch, marks the days you left your usual range, and lets you note flares, triggers and recovery as they happen. You can export any period as a PDF — generated on your device and shared only by you — so a neurologist sees months of patterns, not just how you feel on the day of the visit.
+ONDA builds your personal baseline for resting heart rate, HRV and breathing from Apple Health — from your Apple Watch or another tracker that syncs there — marks the days you left your usual range, and lets you note flares, triggers and recovery as they happen. You can export any period as a PDF — generated on your device and shared only by you — so a neurologist sees months of patterns, not just how you feel on the day of the visit.
 
 *ONDA is a breathing and HRV biofeedback app, not a medical device, and does not diagnose autonomic or neurological conditions. This article is general information, not medical advice. If you faint with injury, have chest pain or new neurological symptoms, seek urgent care.*
 `,

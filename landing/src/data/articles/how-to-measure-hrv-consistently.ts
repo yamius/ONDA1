@@ -70,7 +70,7 @@ Get those right and your day-to-day readings become comparable. Get them wrong a
 
 ## Section 4: How ONDA keeps it honest
 
-ONDA reads your pulse from the phone camera or an Apple Watch and, crucially, builds a **personal baseline** rather than judging any single number — because a single number is exactly the thing you shouldn't trust. It learns your own normal and the spread around it, so what you react to is a *departure from your corridor*, not a raw value. With an Apple Watch, overnight HRV feeds that baseline under the most standardized conditions you have; from the camera, a consistent daily reading works too, as long as you take it the same way each time — [your data, read properly](/measurements).
+ONDA reads your pulse from the phone camera or an Apple Watch and, crucially, builds a **personal baseline** rather than judging any single number — because a single number is exactly the thing you shouldn't trust. It learns your own normal and the spread around it, so what you react to is a *departure from your corridor*, not a raw value. With an Apple Watch or another tracker that syncs to Apple Health, overnight HRV feeds that baseline under the most standardized conditions you have; from the camera, a consistent daily reading works too, as long as you take it the same way each time — [your data, read properly](/measurements).
 
 And don't compare across devices. Each one uses different sensors and math, so your Watch HRV and another tracker's won't match — that's expected, not an error. Pick one source and follow its trend; the full explanation is in [why your HRV is different on every device](/articles/hrv-different-every-device).
 

@@ -3,7 +3,7 @@ import type { Article } from './types'
 /**
  * Series "Doctors and Your Data" (tasks 602-607). Honest framing: watch data is context, never a
  * diagnosis; ONDA report = on-device PDF (baseline, signals, notes), shared only by the user. HRV and
- * breathing baseline from Apple Watch. Not a medical device.
+ * breathing baseline from Apple Health (Apple Watch or any tracker syncing there). Not a medical device.
  */
 const article: Article = {
   slug: 'onda-report-for-your-occupational-health-doctor',
@@ -87,7 +87,7 @@ If work stress has left you feeling hopeless or thinking about harming yourself,
 
 ## Your work week, on one page
 
-ONDA builds your [personal baseline](/science/concepts/hrv-baseline) for resting heart rate, HRV and breathing from your Apple Watch, marks the days you left your usual range, and lets you note shifts, deadlines and days off. You can export any period as a PDF — generated on your device and shared only by you — so you decide exactly what an occupational health doctor sees.
+ONDA builds your [personal baseline](/science/concepts/hrv-baseline) for resting heart rate, HRV and breathing from Apple Health — from your Apple Watch or another tracker that syncs there — marks the days you left your usual range, and lets you note shifts, deadlines and days off. You can export any period as a PDF — generated on your device and shared only by you — so you decide exactly what an occupational health doctor sees.
 
 *ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device, and does not diagnose burnout or sleep disorders. This article is general information, not medical or legal advice. If you're in crisis, contact your local emergency number or a crisis line.*
 `,

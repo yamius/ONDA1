@@ -60,7 +60,7 @@ For older adults specifically, pairing it with gentle [slow breathing](/science/
 
 ## Track the calm that supports your brain
 
-The stress reduction that underlies much of meditation's brain benefit is measurable. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/science/concepts/heart-rate-variability) from your Apple Watch (or your pulse from your phone camera), so you can track how your practice lowers stress and strengthens your autonomic balance over weeks — the well-established foundation of healthy brain aging, visible in your own numbers, while the structural benefits accrue underneath.
+The stress reduction that underlies much of meditation's brain benefit is measurable. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/science/concepts/heart-rate-variability) from Apple Health (Apple Watch or another tracker that syncs there), or your pulse from your phone camera, so you can track how your practice lowers stress and strengthens your autonomic balance over weeks — the well-established foundation of healthy brain aging, visible in your own numbers, while the structural benefits accrue underneath.
 `,
 }
 

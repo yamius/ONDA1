@@ -55,7 +55,7 @@ Not sure which state you're actually in? The [Nervous System State quiz](/tools/
 
 Vagal tone can't be measured directly in everyday life; it is estimated from heart-rate variability. The usual indices are [RMSSD](/science/concepts/rmssd) (beat-to-beat variation), high-frequency HRV, and [respiratory sinus arrhythmia](/science/concepts/respiratory-sinus-arrhythmia) — the heart speeding up slightly on the inhale and slowing on the exhale. These are indirect proxies, not a gold standard: breathing rate and depth, posture, time of day, caffeine, alcohol and illness all move them, which is why researchers recommend controlling or at least reporting breathing when HRV is used as a vagal marker (Laborde 2017).
 
-In practice, that means comparing like with like: a morning reading taken the same way each day, watched as a trend over weeks, tells you more than any single number. ONDA reads HRV from Apple Watch via Apple Health for exactly this kind of baseline.
+In practice, that means comparing like with like: a morning reading taken the same way each day, watched as a trend over weeks, tells you more than any single number. ONDA reads HRV from Apple Health — from your Apple Watch or another tracker that syncs there — for exactly this kind of baseline.
 
 ---
 

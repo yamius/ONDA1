@@ -241,21 +241,9 @@ export function ResearchPage() {
 
         <h3 className="mt-8 mb-4 text-lg font-bold text-white">Who&rsquo;s behind it</h3>
         <p className="mb-6 font-mono text-sm leading-relaxed text-white/70 md:text-base">
-          ONDA was built method-first, by a two-person founding team — the
-          science held to account on one side, the engineering owned end-to-end
-          on the other.
+          ONDA was built method-first, with the engineering owned end-to-end.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <TeamCard
-            name="Valentin"
-            role="Co-founder & Scientific Advisor"
-            badge="PH.D. PHYSICS & NEUROSCIENCE"
-            points={[
-              'Expertise in biometric feedback loops and neural-optimization mechanisms.',
-              'Oversees scientific methodology and study design.',
-              'Bridges fundamental research and digital-health application.',
-            ]}
-          />
           <TeamCard
             name="Yakiv"
             role="Founder & CEO"
@@ -273,8 +261,7 @@ export function ResearchPage() {
             Yakiv Bilenko
           </Link>{' '}
           — architect and Gestalt therapist who builds ONDA. His expertise is architecture,
-          psychology and engineering, not clinical neuroscience; the science is held to account by
-          the scientific advisor above.
+          psychology and engineering, not clinical neuroscience.
         </p>
       </section>
 

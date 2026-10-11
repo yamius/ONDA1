@@ -66,7 +66,7 @@ There's a reason "just meditate 10 minutes a day" is easy to say and hard to kee
 
 ## See your dose add up
 
-ONDA turns a daily practice into something you can watch accumulate. It reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from your Apple Watch (or your pulse from your phone camera), showing how each session shifts your nervous system and how [your baseline](/science/concepts/hrv-baseline) trends over weeks of consistent practice. Instead of wondering whether your 10 minutes a day is "enough," you see the dose-response in your own numbers — the feedback that makes a small, sustainable habit stick.
+ONDA turns a daily practice into something you can watch accumulate. It reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from Apple Health (Apple Watch or another tracker that syncs there), or your pulse from your phone camera, showing how each session shifts your nervous system and how [your baseline](/science/concepts/hrv-baseline) trends over weeks of consistent practice. Instead of wondering whether your 10 minutes a day is "enough," you see the dose-response in your own numbers — the feedback that makes a small, sustainable habit stick.
 `,
   howToSteps: [
     {

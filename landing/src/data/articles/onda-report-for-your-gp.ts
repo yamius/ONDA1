@@ -3,7 +3,7 @@ import type { Article } from './types'
 /**
  * Series "Doctors and Your Data" (tasks 595-600). Honest framing: watch data is context, never a
  * diagnosis; pulse is not rhythm; ONDA report = on-device PDF (baseline, signals, notes), shared only by
- * the user. HRV/breathing baseline from Apple Watch. Not a medical device.
+ * the user. HRV/breathing baseline from Apple Health (Apple Watch or any tracker syncing there). Not a medical device.
  */
 const article: Article = {
   slug: 'onda-report-for-your-gp',
@@ -77,7 +77,7 @@ If you have urgent symptoms — chest pain, fainting, severe breathlessness — 
 
 ## Your report, ready for the appointment
 
-ONDA builds your personal baseline from your Apple Watch history, marks the days you left your usual range, and lets you add notes when something changes. From the timeline you can export a clean PDF — baseline, day-by-day values, signals and your notes, for the period you choose — generated on your device and shared only by you. It's designed to be read by a GP in a minute.
+ONDA builds your personal baseline from Apple Health — from your Apple Watch or another tracker that syncs there — marks the days you left your usual range, and lets you add notes when something changes. From the timeline you can export a clean PDF — baseline, day-by-day values, signals and your notes, for the period you choose — generated on your device and shared only by you. It's designed to be read by a GP in a minute.
 
 *ONDA is a breathing and HRV biofeedback app, not a medical device. This article is general information, not medical advice. If you have urgent symptoms, seek medical care immediately.*
 `,

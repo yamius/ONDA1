@@ -3,7 +3,7 @@ import type { Article } from './types'
 /**
  * Series "Doctors and Your Data" (tasks 602-607). Honest framing: watch data is context, never a
  * diagnosis; ONDA report = on-device PDF (baseline, signals, notes), shared only by the user. HRV and
- * breathing baseline from Apple Watch. Not a medical device.
+ * breathing baseline from Apple Health (Apple Watch or any tracker syncing there). Not a medical device.
  */
 const article: Article = {
   slug: 'onda-report-for-your-rehabilitation-team',
@@ -84,7 +84,7 @@ Stop and seek urgent care for chest pain, fainting, severe breathlessness, a ver
 
 ## Your recovery, on one page
 
-ONDA builds your [personal baseline](/science/concepts/hrv-baseline) for resting heart rate, HRV and breathing from your Apple Watch history, marks the days you left your usual range, and lets you log activity and symptoms. You can export any period as a PDF, generated on your device and shared only by you, so your rehabilitation team sees the real shape of your recovery.
+ONDA builds your [personal baseline](/science/concepts/hrv-baseline) for resting heart rate, HRV and breathing from Apple Health — from your Apple Watch or another tracker that syncs there — marks the days you left your usual range, and lets you log activity and symptoms. You can export any period as a PDF, generated on your device and shared only by you, so your rehabilitation team sees the real shape of your recovery.
 
 *ONDA is a breathing and HRV biofeedback app, not a medical device. This article is general information, not medical advice. Follow the targets set by your clinicians, and seek urgent care for chest pain, fainting or severe breathlessness.*
 `,

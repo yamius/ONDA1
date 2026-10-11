@@ -3,7 +3,7 @@ import type { Article } from './types'
 /**
  * Series "Doctors and Your Data" (tasks 595-600). Honest framing: watch data is context, never a
  * diagnosis; pulse is not rhythm; ONDA report = on-device PDF (baseline, signals, notes), shared only by
- * the user. HRV/breathing baseline from Apple Watch. Not a medical device.
+ * the user. HRV/breathing baseline from Apple Health (Apple Watch or any tracker syncing there). Not a medical device.
  */
 const article: Article = {
   slug: 'onda-report-for-your-sleep-specialist',
@@ -89,7 +89,7 @@ If you stop breathing during sleep according to a partner, wake up choking or ga
 
 ## Your nights, ready for a specialist
 
-ONDA builds your [personal baseline](/science/concepts/hrv-baseline) for nightly resting heart rate, HRV and breathing from your Apple Watch, marks the nights you left your usual range, and lets you add notes on what happened. You can export any period as a PDF — generated on your device and shared only by you — so a sleep specialist sees weeks of your nights, not just one night's memory.
+ONDA builds your [personal baseline](/science/concepts/hrv-baseline) for nightly resting heart rate, HRV and breathing from Apple Health — from your Apple Watch or another tracker that syncs there — marks the nights you left your usual range, and lets you add notes on what happened. You can export any period as a PDF — generated on your device and shared only by you — so a sleep specialist sees weeks of your nights, not just one night's memory.
 
 *ONDA is a breathing and HRV biofeedback app, not a medical device, and does not diagnose sleep disorders. This article is general information, not medical advice. If you have symptoms such as breathing pauses in sleep or dangerous daytime sleepiness, see a doctor promptly.*
 `,

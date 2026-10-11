@@ -59,7 +59,7 @@ MBSR is a strong, evidence-based entry point to meditation, especially if you va
 
 ## Track your MBSR progress
 
-Whether you follow full MBSR or a lighter practice, objective feedback keeps you honest and motivated. ONDA reads your resting heart rate and HRV from your Apple Watch (or your pulse from your phone camera) and shows how they trend over your practice weeks. Across an 8-week arc, you can watch [your baseline](/science/concepts/hrv-baseline) strengthen — turning MBSR's structured timeline into visible, physiological progress alongside how you feel.
+Whether you follow full MBSR or a lighter practice, objective feedback keeps you honest and motivated. ONDA reads your resting heart rate and HRV from Apple Health (Apple Watch or another tracker that syncs there), or your pulse from your phone camera and shows how they trend over your practice weeks. Across an 8-week arc, you can watch [your baseline](/science/concepts/hrv-baseline) strengthen — turning MBSR's structured timeline into visible, physiological progress alongside how you feel.
 `,
 }
 

@@ -5,7 +5,7 @@ import type { Article } from './types'
  * with raised BMI and/or blood pressure — pranayama improved clinical predictors of metabolic syndrome.
  * Draft's exact screening numbers dropped (not verified). Mechanism = stress axis (cortisol, sympathetic
  * tone → BP, abdominal fat, insulin resistance). HONEST: complement to diet/movement, small evidence.
- * HRV via Apple Watch.
+ * HRV via Apple Health (Apple Watch or another tracker that syncs there).
  */
 const article: Article = {
   slug: 'pranayama-metabolic-syndrome',
@@ -53,7 +53,7 @@ It sounds surprising that breathing could touch a metabolic condition, but the l
 
 ## Track the autonomic side
 
-The autonomic side of these benefits is measurable. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from your Apple Watch, so you can track how these markers change as you build a breathing habit alongside better diet and movement (see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally)). ONDA does not measure blood pressure, glucose or cholesterol — keep those with your doctor.
+The autonomic side of these benefits is measurable. ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and HRV from Apple Health — from your Apple Watch or another tracker that syncs there — so you can track how these markers change as you build a breathing habit alongside better diet and movement (see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally)). ONDA does not measure blood pressure, glucose or cholesterol — keep those with your doctor.
 
 *ONDA is a breathing and [HRV biofeedback](/science/evidence/hrv-biofeedback) app, not a medical device. This article draws on Indian research on pranayama and metabolic-syndrome predictors in young adults. It complements, not replaces, medical care and lifestyle change.*
 `,

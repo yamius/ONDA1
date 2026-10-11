@@ -56,7 +56,7 @@ Zen's use of koans points at something the brain research echoes: the practice w
 
 ## Track the calm zazen builds
 
-The deep EEG signature of zazen needs a lab, but its autonomic effects — the calm, slowed, regulated state — are [measurable at home](/articles/measuring-meditation-progress). ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/science/concepts/heart-rate-variability) from your Apple Watch (or your pulse from your phone camera), so you can track how sitting practice settles your nervous system and whether [your baseline](/science/concepts/hrv-baseline) strengthens over weeks. Just as theta deepens with zazen experience, your HRV tends to reflect the accumulating calm — an accessible marker of a practice whose brain signature is famously experience-dependent.
+The deep EEG signature of zazen needs a lab, but its autonomic effects — the calm, slowed, regulated state — are [measurable at home](/articles/measuring-meditation-progress). ONDA reads your [resting heart rate](/science/measurements/resting-heart-rate) and [HRV](/science/concepts/heart-rate-variability) from Apple Health (Apple Watch or another tracker that syncs there), or your pulse from your phone camera, so you can track how sitting practice settles your nervous system and whether [your baseline](/science/concepts/hrv-baseline) strengthens over weeks. Just as theta deepens with zazen experience, your HRV tends to reflect the accumulating calm — an accessible marker of a practice whose brain signature is famously experience-dependent.
 `,
 }
 

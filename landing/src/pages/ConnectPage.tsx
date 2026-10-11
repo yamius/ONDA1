@@ -4,7 +4,9 @@
  * effect below only keeps the tab title right on client-side navigation.
  */
 import { useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useLocation, useParams } from 'react-router-dom'
+import { langFromPath } from '../i18n'
+import { connectI18n } from '../data/connect-i18n'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import {
@@ -61,6 +63,45 @@ function useTitle(title: string) {
   }, [title])
 }
 
+function ConnectIndexLocalized({ lang }: { lang: string }) {
+  const c = connectI18n(lang)
+  useTitle(c.title)
+  return (
+    <main className="mx-auto max-w-3xl px-4 pb-24 md:px-6">
+      <header className="border-b border-white/10 pt-6 pb-8">
+        <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/70">{c.eyebrow}</div>
+        <h1 className="mb-5 text-3xl font-bold tracking-tight md:text-5xl">{c.h1}</h1>
+        <p className="mb-4 font-mono text-sm leading-relaxed text-white/90 md:text-base">{c.intro}</p>
+        <p className="font-mono text-sm leading-relaxed text-white/75 md:text-base">{c.pick}</p>
+      </header>
+      <div className="mt-8 overflow-x-auto">
+        <table className="w-full font-mono text-sm">
+          <thead>
+            <tr className="border-b border-white/15 text-left text-white/60">
+              <th className="py-2 pr-4">{c.thDevice}</th>
+              <th className="py-2 pr-4">{c.thHrv}</th>
+              <th className="py-2">{c.thStatus}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {CONNECT_DEVICES.map((d) => (
+              <tr key={d.slug} className="border-b border-white/10 align-top">
+                <td className="py-3 pr-4">
+                  <Link to={`/connect/${d.slug}`} className="text-terminal-green hover:underline">{d.name}</Link>{' '}
+                  <span className="text-xs text-white/45">{c.inEnglish}</span>
+                </td>
+                <td className="py-3 pr-4 text-white/70">{c.hrv[d.hrvType] ?? d.hrvType}</td>
+                <td className="py-3 text-white/70">{c.status[d.status]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <AppStoreCTA ct={storeCt('connect', 'index', lang)} variant="hrv" lang={lang} />
+    </main>
+  )
+}
+
 function ConnectIndex() {
   useTitle(CONNECT_INDEX_META.title)
   return (
@@ -68,6 +109,7 @@ function ConnectIndex() {
       <header className="border-b border-white/10 pt-6 pb-8">
         <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/70">YOUR DEVICE</div>
         <h1 className="mb-5 text-3xl font-bold tracking-tight md:text-5xl">{CONNECT_INDEX_META.h1}</h1>
+        <p className="mb-4 font-mono text-sm leading-relaxed text-white/90 md:text-base">{connectI18n('en').intro}</p>
         <p className="font-mono text-sm leading-relaxed text-white/75 md:text-base">
           Every wearable names HRV differently and measures it at a different time. Pick your device to see which HRV it
           shows, where the maker explains it, and whether it can connect to ONDA. The best comparison is always with your
@@ -105,6 +147,12 @@ function ConnectIndex() {
 
 export function ConnectPage() {
   const { device } = useParams()
+  const lang = langFromPath(useLocation().pathname)
+  if (lang !== 'en' && !device) return <ConnectIndexLocalized lang={lang} />
+  return <ConnectEn device={device} />
+}
+
+function ConnectEn({ device }: { device?: string }) {
   const d = device ? getConnectDevice(device) : undefined
   useTitle(d ? d.metaTitle : CONNECT_INDEX_META.title)
   if (!device) return <ConnectIndex />

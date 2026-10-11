@@ -70,7 +70,7 @@ So a population rule is the wrong tool. The only cutoff that means anything is *
 
 This is a measurement problem, and it's a solvable one. Build a **[personal baseline](/science/concepts/hrv-baseline)** — your normal resting heart rate, variability and breathing rate — then watch what a late cup does to it. A night after a 4 p.m. coffee that reads with a higher resting pulse or a lower [HRV](/glossary/heart-rate-variability) than your corridor is your body drawing the line for you.
 
-ONDA reads those overnight signals from an Apple Watch (or your resting numbers from the phone camera) and holds your corridor, so a late-caffeine night shows up as a visible departure from *your* normal rather than an abstract worry — [your data, your line](/measurements). Move the cup earlier, watch the night come back into the corridor, and you've found your cutoff empirically instead of guessing.
+ONDA reads those overnight signals from Apple Health (Apple Watch or another tracker that syncs there), or your resting numbers from the phone camera, and holds your corridor, so a late-caffeine night shows up as a visible departure from *your* normal rather than an abstract worry — [your data, your line](/measurements). Move the cup earlier, watch the night come back into the corridor, and you've found your cutoff empirically instead of guessing.
 
 The honest caveat: caffeine affects sleep and recovery, but it isn't a medical hazard for most people and ONDA isn't diagnosing anything — it's showing you a lifestyle input written into your own numbers. For the adenosine-and-sleep-pressure side of the same molecule, see [caffeine's half-life and sleep pressure](/articles/caffeine-half-life-sleep-pressure).
 

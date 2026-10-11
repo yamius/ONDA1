@@ -24,7 +24,7 @@ export const PEOPLE_I18N: Record<'en' | 'ru' | 'es', PeopleCopy> = {
   en: {
     metaTitle: 'Yakiv Bilenko — Founder & CEO of ONDA Life',
     metaDescription:
-      'Yakiv Bilenko, founder & CEO of ONDA Life — architect (KNUCA, 2006) and Gestalt therapist (MIGIS, 2018) who builds the product. ONDA’s physiology and neuroscience are led by its scientific advisor.',
+      'Yakiv Bilenko, founder & CEO of ONDA Life — architect (KNUCA, 2006) and Gestalt therapist (MIGIS, 2018) who builds the product.',
     breadcrumbAbout: 'About',
     kicker: '[ FOUNDER ]',
     role: 'Founder & CEO, ONDA Life',
@@ -36,7 +36,7 @@ export const PEOPLE_I18N: Record<'en' | 'ru' | 'es', PeopleCopy> = {
     ],
     scopeHeading: 'FOUNDER — NOT THE SCIENTIFIC AUTHORITY',
     scopeBody:
-      'Yakiv’s expertise is architecture, psychology and Gestalt therapy, plus full-stack engineering — not clinical neuroscience or physiology. ONDA’s scientific methodology and validation are overseen by its scientific advisor. We keep that line explicit on purpose: the product is built method-first, with the science held to account by someone whose field it is. See {{researchLink}} for the evidence base and the advisor’s role.',
+      'Yakiv’s expertise is architecture, psychology and Gestalt therapy, plus full-stack engineering — not clinical neuroscience or physiology. See {{researchLink}} for the evidence base.',
     elsewhereHeading: '[ ELSEWHERE ]',
     linkedinLabel: 'LinkedIn — linkedin.com/in/yamius',
     kukoomLabel: 'KUKOOM — architectural forms project',
@@ -52,7 +52,7 @@ export const PEOPLE_I18N: Record<'en' | 'ru' | 'es', PeopleCopy> = {
   ru: {
     metaTitle: 'Яков Биленко — основатель и CEO ONDA Life',
     metaDescription:
-      'Яков Биленко, основатель и CEO ONDA Life — архитектор (КНУБА, 2006) и гештальт-терапевт (МИГИС, 2018), который строит продукт. Физиологию и нейронауку ONDA ведёт научный советник.',
+      'Яков Биленко, основатель и CEO ONDA Life — архитектор (КНУБА, 2006) и гештальт-терапевт (МИГИС, 2018), который строит продукт.',
     breadcrumbAbout: 'О проекте',
     kicker: '[ ОСНОВАТЕЛЬ ]',
     role: 'Основатель и CEO, ONDA Life',
@@ -64,7 +64,7 @@ export const PEOPLE_I18N: Record<'en' | 'ru' | 'es', PeopleCopy> = {
     ],
     scopeHeading: 'ОСНОВАТЕЛЬ — НЕ НАУЧНЫЙ АВТОРИТЕТ',
     scopeBody:
-      'Экспертиза Якова — архитектура, психология и гештальт-терапия плюс full-stack инженерия, а не клиническая нейронаука или физиология. Научную методологию и валидацию ONDA курирует её научный советник. Мы намеренно держим эту границу явной: продукт строится «метод прежде всего», а за науку отвечает тот, чья это область. Смотрите {{researchLink}} — доказательная база и роль советника.',
+      'Экспертиза Якова — архитектура, психология и гештальт-терапия плюс full-stack инженерия, а не клиническая нейронаука или физиология. Смотрите {{researchLink}} — доказательная база.',
     elsewhereHeading: '[ ГДЕ ЕЩЁ ]',
     linkedinLabel: 'LinkedIn — linkedin.com/in/yamius',
     kukoomLabel: 'KUKOOM — проект архитектурных форм',
@@ -80,7 +80,7 @@ export const PEOPLE_I18N: Record<'en' | 'ru' | 'es', PeopleCopy> = {
   es: {
     metaTitle: 'Yakiv Bilenko — Fundador y CEO de ONDA Life',
     metaDescription:
-      'Yakiv Bilenko, fundador y CEO de ONDA Life — arquitecto (KNUCA, 2006) y terapeuta Gestalt (MIGIS, 2018) que construye el producto. La fisiología y neurociencia de ONDA las lidera su asesor científico.',
+      'Yakiv Bilenko, fundador y CEO de ONDA Life — arquitecto (KNUCA, 2006) y terapeuta Gestalt (MIGIS, 2018) que construye el producto.',
     breadcrumbAbout: 'Acerca de',
     kicker: '[ FUNDADOR ]',
     role: 'Fundador y CEO, ONDA Life',
@@ -92,7 +92,7 @@ export const PEOPLE_I18N: Record<'en' | 'ru' | 'es', PeopleCopy> = {
     ],
     scopeHeading: 'FUNDADOR — NO LA AUTORIDAD CIENTÍFICA',
     scopeBody:
-      'La experiencia de Yakiv es la arquitectura, la psicología y la terapia Gestalt, más la ingeniería full-stack — no la neurociencia clínica ni la fisiología. La metodología científica y la validación de ONDA las supervisa su asesor científico. Mantenemos esa línea explícita a propósito: el producto se construye con el método primero, y la ciencia rinde cuentas ante alguien de cuyo campo se trata. Mira {{researchLink}} para la base de evidencia y el papel del asesor.',
+      'La experiencia de Yakiv es la arquitectura, la psicología y la terapia Gestalt, más la ingeniería full-stack — no la neurociencia clínica ni la fisiología. Mira {{researchLink}} para la base de evidencia.',
     elsewhereHeading: '[ EN OTROS SITIOS ]',
     linkedinLabel: 'LinkedIn — linkedin.com/in/yamius',
     kukoomLabel: 'KUKOOM — proyecto de formas arquitectónicas',
