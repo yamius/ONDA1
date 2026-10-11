@@ -298,8 +298,48 @@
       ]
     },
     "garmin-venu-4": {
-      "verdict": "Un polyvalent compétent et sans abonnement, avec l’autonomie nécessaire pour suivre la HRV toute la nuit — le meilleur dans aucun domaine, compétent dans tous.",
-      "productType": "Montre connectée"
+      "verdict": "Une montre polyvalente et capable, sans abonnement, avec l’autonomie nécessaire pour suivre la HRV toute la nuit — la meilleure nulle part, compétente partout.",
+      "summary": "La Garmin Venu 4 est ici l’option la plus complète au format montre connectée : HRV nocturne solide, le meilleur suivi du sommeil de Garmin à ce jour, autonomie de plusieurs jours et aucun abonnement. Une généraliste solide, qui n’est la plus pointue sur aucun des critères mesurés dans ce comparatif.",
+      "description": "Test Garmin Venu 4 comme tracker HRV : polyvalente, sans abonnement, autonomie de plusieurs jours. Notée sur précision, sommeil, données et prix.",
+      "bestFor": "Idéale si vous voulez un seul appareil sans abonnement qui gère bien l’entraînement, la santé et la HRV.",
+      "testNote": "Évaluation fondée sur les preuves — notée à partir des spécifications du fabricant, de tests indépendants de 2026 et de la littérature de validation publiée. Non testée en conditions réelles par ONDA.",
+      "productType": "Montre connectée",
+      "pros": [
+        "Autonomie de plusieurs jours — facile à porter la nuit",
+        "Aucun abonnement ; toutes les fonctions incluses à l’achat",
+        "Excellent tracker polyvalent santé et entraînement",
+        "Données assez ouvertes via Garmin Connect et son API"
+      ],
+      "cons": [
+        "Aucune mesure n’est la meilleure de sa catégorie",
+        "Garmin Connect paraît encombrée et datée",
+        "HRV moins centrée sur la nuit qu’un tracker de récupération dédié",
+        "Capteur optique uniquement — pas d’ECG"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Garmin HRV Status suit la HRV nocturne par rapport à une référence personnelle construite sur environ trois semaines — solide, sans être spécialisée dans la nuit.",
+        "sensor": "Capteur optique Garmin Elevate — une matrice PPG performante, sans matériel de niveau ECG.",
+        "sleep-accuracy": "La Venu 4 embarque le suivi du sommeil le plus avancé de Garmin à ce jour, avec des indicateurs d’alignement circadien.",
+        "data-access": "Garmin Connect plus une API développeur — assez ouvert pour l’export et les outils tiers.",
+        "wearability": "Une montre, mais l’autonomie de plusieurs jours rend le port régulier la nuit vraiment pratique.",
+        "app-ux": "Garmin Connect est riche, mais encombrée et datée à côté d’Oura ou d’Apple.",
+        "value": "Un achat unique, sans abonnement, avec de larges capacités polyvalentes."
+      },
+      "content": "## Là où elle se distingue\n\nLa Garmin Venu 4 est l’option la plus complète au format montre connectée de ce comparatif. Garmin HRV Status construit en environ trois semaines une référence nocturne de la variabilité de la fréquence cardiaque ([HRV, ou VFC](/glossary/heart-rate-variability)), puis indique si vous êtes équilibré ou déséquilibré, et la Venu 4 embarque le suivi du sommeil le plus avancé de Garmin à ce jour. Son autonomie dépasse nettement celle d’une montre connectée classique, et c’est important : un tracker que l’on peut porter plusieurs nuits entre deux recharges produit un historique de HRV plus continu. Il n’y a pas d’abonnement — le prix d’achat couvre tout.\n\n## Quels sont les inconvénients de la Garmin Venu 4 ?\n\nAucune mesure prise isolément n’est la meilleure de sa catégorie. La HRV est solide mais moins nettement centrée sur la nuit que celle d’un tracker de récupération dédié, et Garmin Connect, bien que riche, offre une expérience encombrée et datée à côté des logiciels d’Oura ou d’Apple. C’est une généraliste solide plutôt qu’une spécialiste — capable partout, la meilleure sur rien de ce que mesure ce comparatif.\n\n**Note 2026.** Le modèle HRV Status de Garmin n’a pas changé et reste une lecture cohérente, fondée sur la référence nocturne, pour suivre votre propre tendance. Aucune validation indépendante de la HRV de la Venu 4 par rapport à un ECG n’a été trouvée (en octobre 2026) ; les comparatifs indépendants de 2026 placent toujours la HRV optique au poignet un cran derrière les bagues portées au doigt pour la précision absolue. L’avantage de la Venu 4 sur le modèle phare de Garmin, la [Fenix 8](/reviews/garmin-fenix-8), est le prix, pas la précision — les deux partagent le même modèle HRV Status, donc pour la HRV seule, la Venu 4, moins chère, vous donne le même signal.\n\n## Pour qui la Garmin Venu 4 ?\n\nChoisissez la Garmin Venu 4 si vous voulez un seul appareil sans abonnement qui gère correctement l’entraînement, la santé au quotidien et la HRV, avec l’autonomie nécessaire pour vraiment la porter la nuit. Si la précision de la HRV nocturne est votre unique critère, une bague ou un bracelet la devancera.\n\n---\n\n## Pour aller plus loin\n\nLa science qui explique pourquoi la HRV est le signal qui vaut la peine d’être suivi — et comment le corps le produit.\n\n- [Précision intéroceptive et calibrage des capteurs](/articles/interoceptive-precision-sensor-calibration) — pourquoi votre propre perception est la référence en amont de ce que mesure la HRV\n- [Architecture neuronale anti-entropie](/articles/anti-entropy-neural-architecture) — la HRV comme signal d’entretien quotidien du système autonome\n- [La HRV prédit-elle le temps de réaction et la concentration ?](/articles/nervous-system-ping-latency) — ce que la HRV au repos dit, ou ne dit pas, de l’attention et de la maîtrise de soi\n",
+      "faq": [
+        {
+          "q": "La Garmin Venu 4 nécessite-t-elle un abonnement ?",
+          "a": "Non — 499 $ en achat unique, toutes les fonctions incluses et aucun abonnement. Garmin HRV Status construit une référence de HRV nocturne en environ trois semaines."
+        },
+        {
+          "q": "La Garmin Venu 4 est-elle précise pour la HRV ?",
+          "a": "Solide, mais pas la meilleure de sa catégorie. Son HRV Status optique est conçu pour les tendances nocturnes ; la seule Garmin incluse dans une étude nocturne avec ECG de référence est l’ancienne Fenix 6 (Dial 2025), et la Venu 4 elle-même n’a pas été validée (en octobre 2026). Dans une étude sur la musculation (Yun 2026), un ancien modèle Garmin (Vivosmart 5) sous-estimait la fréquence cardiaque juste après les séries et ses estimations de calories étaient très éloignées ; cette étude n’a testé ni la HRV ni la Venu 4. L’autonomie de plusieurs jours rend le port régulier la nuit pratique."
+        },
+        {
+          "q": "Garmin Venu 4 ou Fenix 8 pour la HRV : laquelle choisir ?",
+          "a": "Elles partagent le même modèle HRV Status, donc la valeur de HRV est pratiquement identique. La Venu 4 (499 $) est le choix rapport qualité-prix ; la Fenix 8 (environ 999 $) ajoute l’ECG, les cartes, la plongée et une autonomie de plusieurs semaines — ne payez le supplément que si vous utilisez ces fonctions."
+        }
+      ]
     },
     "muse-s-athena": {
       "verdict": "Le casque d’entraînement cérébral grand public le plus complet — EEG plus fNIRS dans un bandeau souple avec lequel on peut dormir.",
@@ -1787,8 +1827,52 @@
       "editorialAdjustment": "Honnêteté marketing — la page produit affirme que le masque est « autorisé par la FDA et cliniquement prouvé pour » réduire les ridules et les rides, mais la preuve est le propre test de 8 semaines de HigherDOSE avec des résultats autodéclarés, pas une étude publiée, et la clearance FDA (K241933) a été accordée sans essais cliniques (vérifié en octobre 2026). C’est noté ici, pas dans le critère des preuves. (en version originale: « FDA-cleared and clinically proven »)"
     },
     "medito": {
-      "verdict": "Entièrement gratuite, open source et sans publicité, sans compte requis — le choix sans contrepartie, si vous acceptez une bibliothèque plus petite.",
-      "productType": "Appli de méditation"
+      "verdict": "Entièrement gratuite, open source et sans publicité, sans compte requis — le choix sans contrepartie, si vous acceptez une bibliothèque plus réduite.",
+      "summary": "Medito est l’appli sans contrepartie : entièrement gratuite, open source, sans publicité, sans compte et sans offre premium. Développée par une association à but non lucratif d’Amsterdam, elle couvre bien les fondamentaux. Ce qui lui manque, c’est la profondeur et l’étendue des géants payants.",
+      "description": "Avis sur Medito, l’appli de méditation gratuite, open source et sans pub. Notée sur la bibliothèque, la version gratuite, l’expérience et la valeur.",
+      "bestFor": "Idéale pour une appli entièrement gratuite, sans pub, open source, sans compte ni paywall.",
+      "testNote": "Évaluation fondée sur les preuves — à partir d’informations publiques, de données des stores et de tests indépendants de 2026. Pas fondée sur un long essai pratique par ONDA.",
+      "productType": "Appli de méditation",
+      "pros": [
+        "Entièrement gratuite, open source et sans publicité",
+        "Aucun compte requis — respectueuse de la vie privée",
+        "Couvre bien les fondamentaux",
+        "Soutenue par une association transparente"
+      ],
+      "cons": [
+        "Bibliothèque plus réduite que les géants payants",
+        "Pas de personnalisation adaptative",
+        "Pas une appli fondée sur la recherche",
+        "Moins de profondeur pour une pratique avancée"
+      ],
+      "scoreNotes": {
+        "content-library": "Couvre bien les fondamentaux — cours pour débutants, respiration, sommeil, stress — mais plus réduite que les géants.",
+        "teaching": "Solide, avec des voix variées ; une qualité réelle, sans grande profondeur.",
+        "personalization": "Des cours et séances simples plutôt qu’un programme adaptatif.",
+        "app-experience": "Claire et apaisante, sans pub, sans ventes additionnelles et sans compte.",
+        "free-tier": "Entièrement gratuite — pas d’essai, pas d’offre premium, aucun contenu verrouillé. Jamais.",
+        "value": "Gratuite et open source, financée par une association — imbattable sur le prix.",
+        "evidence": "Un projet associatif honnête plutôt qu’un programme fondé sur la recherche."
+      },
+      "content": "## Là où elle se distingue\n\nMedito est l’appli sans contrepartie. Développée par la Medito Foundation, une association à but non lucratif d’Amsterdam au code open source, elle suit un principe simple : pas d’essai, pas d’offre premium, rien derrière un paywall, jamais. Elle ne demande aucun compte, n’affiche aucune publicité et couvre pourtant correctement les fondamentaux — cours pour débutants, exercices de respiration, méditations pour le sommeil et séances contre le stress et l’anxiété. Comme option gratuite, privée et réellement indépendante, c’est la plus nette de ce comparatif.\n\n## Quels sont les inconvénients de Medito ?\n\nElle offre les fondamentaux, pas toute la gamme. La bibliothèque est plus réduite que celle des géants payants et contient moins de contenus avancés, il n’y a pas de personnalisation adaptative, et c’est un projet communautaire honnête plutôt qu’un programme fondé sur la recherche comme le Healthy Minds Program. La profondeur s’épuise plus vite.\n\n## Pour qui Medito ?\n\nChoisissez Medito si vous voulez une appli entièrement gratuite, sans pub, open source, sans compte et sans ventes additionnelles — surtout si vous tenez à votre vie privée ou refusez simplement de payer pour méditer. Si vous voulez une bibliothèque plus vaste ou un cadre fondé sur la science, Insight Timer et le Healthy Minds Program vont plus loin.\n\n---\n\n## Pour aller plus loin\n\nLa science de ce que la méditation fait réellement au niveau du système nerveux.\n\n- [Ondes cérébrales alpha : calme, créativité et flow](/articles/neural-bridge-alpha-flow-gateway) — ce que fait le rythme alpha, et ce que les casques, applis et musiques alpha peuvent ou non changer\n- [Entraînement rythmique et fréquences du système](/articles/rhythmic-entrainment-system-frequencies) — pourquoi l’audio rythmé et les protocoles respiratoires se renforcent avec la pratique\n- [Concentration physiologique : le câblage de l’état de flow](/articles/physiological-concentration-flow-state-hardwired) — de quelle neurochimie l’état de flow a réellement besoin\n",
+      "faq": [
+        {
+          "q": "Medito vaut-elle le coup ?",
+          "a": "Medito vaut le coup si vous voulez une appli de méditation entièrement gratuite, open source et sans publicité, sans compte requis. Elle couvre bien les fondamentaux et est soutenue par une association transparente, même si sa bibliothèque est plus réduite que celle des géants payants et qu’elle n’offre pas de personnalisation adaptative."
+        },
+        {
+          "q": "Combien coûte Medito ?",
+          "a": "Medito ne coûte rien. Elle est entièrement gratuite, gérée comme un projet associatif open source, sans publicité, sans paywall et sans compte. C’est l’une des façons les plus respectueuses de la vie privée de commencer à méditer sans aucun engagement financier."
+        },
+        {
+          "q": "Quels sont les inconvénients de Medito ?",
+          "a": "Medito a une bibliothèque plus réduite que les géants payants, pas de personnalisation adaptative et moins de profondeur pour une pratique avancée. Ce n’est pas non plus une appli fondée sur la recherche. Pour les fondamentaux elle est solide, mais les méditants expérimentés peuvent en faire le tour."
+        },
+        {
+          "q": "À qui s’adresse Medito ?",
+          "a": "Medito convient à toute personne qui veut une appli de méditation entièrement gratuite, sans pub, open source, sans compte et sans paywall. Les débutants soucieux de leur vie privée en profitent le plus, car elle couvre bien les fondamentaux sans demander de données personnelles ni de paiement."
+        }
+      ]
     },
     "headspace": {
       "verdict": "La meilleure appli pour vraiment apprendre à méditer — des cours structurés et un enseignement clair, avec une offre gratuite qui n’est guère qu’un échantillon.",
@@ -2670,6 +2754,54 @@
           "a": "La phase CGM de Zoe est fixée à deux semaines, ce n’est donc pas un outil de CGM continu. Il n’y a pas d’export des données brutes de glucose, l’ancienne variante Libre est la moins précise durant sa deuxième semaine, et la disponibilité est centrée sur le Royaume-Uni, avec une expansion plus lente aux États-Unis."
         }
       ]
+    },
+    "sleep-cycle": {
+      "verdict": "Le tracker de sommeil grand public le plus abouti — un réveil intelligent et une analyse claire, avec une version gratuite vraiment utile.",
+      "summary": "Sleep Cycle est le tracker de sommeil le plus populaire, et pour cause : il mesure votre nuit, vous réveille en sommeil léger pour que vous vous leviez moins groggy, et vous restitue une analyse claire et lisible. Sa version gratuite est vraiment utile, et l’offre payante reste peu chère.",
+      "description": "Avis sur Sleep Cycle, le tracker de sommeil grand public le plus abouti, avec réveil intelligent. Noté sur suivi, analyses, version gratuite et prix.",
+      "bestFor": "Idéal pour un tracker de sommeil abouti et sans effort, avec réveil intelligent.",
+      "testNote": "Évaluation fondée sur les preuves — à partir d’informations publiques, de données des stores et de tests indépendants de 2026. Pas fondée sur un long essai pratique par ONDA.",
+      "productType": "Appli de suivi du sommeil",
+      "pros": [
+        "Le réveil intelligent vous réveille en sommeil léger",
+        "Version gratuite vraiment utile",
+        "Analyse du sommeil claire et lisible",
+        "Aboutie et facile à utiliser"
+      ],
+      "cons": [
+        "Peu de contenus pour se détendre avant de dormir",
+        "Le suivi avec le téléphone sur le lit est moins précis qu’un objet connecté",
+        "Les meilleures données — ronflements, fréquence cardiaque — exigent Premium ou une montre",
+        "Pas une aide à l’endormissement"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Suivi par microphone et accéléromètre, ou par la fréquence cardiaque avec une Apple Watch — solide pour un tracker basé sur le téléphone.",
+        "wind-down-content": "Quelques sons et contenus d’aide au sommeil, mais la détente n’est pas sa priorité.",
+        "sleep-science": "La fenêtre de réveil intelligent — vous réveiller en sommeil plus léger — est son idée de longue date, fondée sur la science.",
+        "insights": "Analyse nocturne claire et tendances à long terme, lisibles plutôt qu’écrasantes.",
+        "app-experience": "Aboutie et simple — la plus raffinée des applis de sommeil grand public.",
+        "free-tier": "Une version gratuite vraiment utilisable ; beaucoup n’ont jamais besoin de payer.",
+        "value": "Environ 50 USD par an pour Premium — peu cher pour ce qu’il apporte."
+      },
+      "content": "## Là où il se distingue\n\nSleep Cycle est le tracker de sommeil le plus populaire pour une bonne raison : il fait proprement l’essentiel. Il mesure votre nuit grâce au microphone et à l’accéléromètre du téléphone — ou grâce à la fréquence cardiaque si vous portez une Apple Watch — et son idée de longue date, le réveil intelligent, vous réveille dans une fenêtre de temps lorsque vous êtes en sommeil plus léger plutôt qu’en [sommeil profond](/glossary/deep-sleep), pour un réveil moins groggy. L’analyse qu’il restitue est lisible : des tendances et un détail nuit par nuit, pas un mur de chiffres.\n\n## Quels sont les inconvénients de Sleep Cycle ?\n\nC’est d’abord un tracker. Les contenus pour se détendre — sons, audio d’aide au sommeil — existent mais restent minces face à une vraie appli de relaxation, et le suivi avec le téléphone posé sur le lit est par nature moins précis qu’un objet connecté au poignet. Les meilleures données, des ronflements à la fréquence cardiaque en passant par les tendances plus fines, sont réservées à l’offre Premium.\n\n## Pour qui Sleep Cycle ?\n\nChoisissez Sleep Cycle si vous voulez un tracker abouti et sans effort, avec un réveil intelligent et une version gratuite avec laquelle on peut vraiment vivre. Si vous avez surtout besoin d’aide pour vous endormir, une appli de relaxation vous servira mieux ; un objet connecté ajoute des données de fréquence cardiaque, même si ses phases de sommeil ne sont pas non plus validées de façon indépendante ; seule une polysomnographie est de niveau clinique.\n\n---\n\n## Pour aller plus loin\n\nLa biologie du sommeil derrière ce que mesurent ces applis et les protocoles qu’elles soutiennent.\n\n- [Le sommeil nettoie-t-il vraiment le cerveau ? Les preuves sur le système glymphatique](/articles/nightly-flush-glymphatic-neural-cache) — ce qui est démontré chez l’humain, et ce qui reste débattu\n- [Hydraulique neuronale : le flux du LCR](/articles/neural-hydraulics-csf-flow) — la circulation du liquide céphalo-rachidien pendant le sommeil, base de la clairance glymphatique\n",
+      "faq": [
+        {
+          "q": "Sleep Cycle vaut-il le coup ?",
+          "a": "Sleep Cycle vaut le coup si vous voulez un tracker de sommeil abouti et sans effort, avec un réveil intelligent qui vous réveille en sommeil léger. Sa version gratuite est vraiment utile. Ce n’est toutefois pas une aide à l’endormissement, et le suivi avec le téléphone sur le lit est moins précis qu’un objet connecté."
+        },
+        {
+          "q": "Combien coûte Sleep Cycle ?",
+          "a": "Sleep Cycle Premium coûte environ 50 $ par an, et il existe une version gratuite utilisable. Premium, ou une montre associée, est nécessaire pour les meilleures données comme les ronflements et la fréquence cardiaque. La version gratuite offre tout de même le réveil intelligent et une analyse claire du sommeil."
+        },
+        {
+          "q": "Quels sont les inconvénients de Sleep Cycle ?",
+          "a": "Les contenus de détente de Sleep Cycle sont minces et ce n’est pas une aide à l’endormissement. Le suivi avec le téléphone sur le lit est moins précis qu’un objet connecté, et les meilleures données, comme les ronflements et la fréquence cardiaque, exigent Premium ou une montre : la version gratuite a donc ses limites."
+        },
+        {
+          "q": "Sleep Cycle ou SleepScore : lequel choisir ?",
+          "a": "Choisissez Sleep Cycle pour un tracker plus abouti et sans effort, avec réveil intelligent et une version gratuite utile. Choisissez SleepScore si vous voulez un suivi par sonar sans contact et les recommandations les plus concrètes et fondées sur la science, en acceptant que son analyse utile soit réservée à Premium."
+        }
+      ]
     }
   },
   "comparisons": {
@@ -3439,7 +3571,14 @@
     "cadr-coverage": "CADR et surface couverte",
     "build-noise": "Qualité de fabrication et bruit",
     "smart-features": "Fonctions connectées et capteurs",
-    "maintenance-cost": "Remplacement des filtres et entretien"
+    "maintenance-cost": "Remplacement des filtres et entretien",
+    "content-library": "Bibliothèque de contenus",
+    "teaching": "Qualité de l’enseignement",
+    "personalization": "Personnalisation",
+    "free-tier": "Version gratuite",
+    "tracking-accuracy": "Précision du suivi",
+    "wind-down-content": "Contenus de détente",
+    "sleep-science": "Science du sommeil"
   },
   "categories": {
     "pemf": "Appareils PEMF",
@@ -3455,7 +3594,9 @@
     "vagus-stim": "Stimulateurs du nerf vague",
     "breathing-aid": "Tape buccal et respiration nasale",
     "red-light-mask": "Masques LED à lumière rouge",
-    "air-purifier": "Purificateurs d’air"
+    "air-purifier": "Purificateurs d’air",
+    "meditation-app": "Applis de méditation",
+    "sleep-app": "Applis de sommeil"
   },
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {
@@ -5216,6 +5357,59 @@
         }
       ],
       "content": "## En bref\n\n> Remarque : l’Ultrahuman Ring Air fait l’objet d’une interdiction d’importation aux États-Unis (octobre 2025, victoire d’Oura en matière de brevets devant l’ITC) et ne peut pas y être achetée. Le successeur d’Ultrahuman disponible aux États-Unis est la [Ring Pro](/reviews/ultrahuman-ring-pro) — sans abonnement, avec une autonomie d’environ 15 jours. Lisez ce comparatif en gardant cela à l’esprit si vous êtes aux États-Unis.\n\nTrois points optimaux différents dans l’équilibre des compromis des bagues connectées. Oura pour la finition, Ultrahuman pour le format + l’écosystème CGM, RingConn pour le rapport qualité-prix + l’autonomie. La plupart des utilisateurs n’ont pas besoin de réfléchir beaucoup plus loin.\n\n## Quand l’Oura Ring 4 est-elle le bon choix ?\n\nSi vous voulez l’expérience de bague grand public la plus mature et le modèle de sommeil le plus poussé, Oura est le bon choix. L’abonnement à 5,99 $/mois est le prix d’entrée d’une décennie d’itérations et des analyses les plus développées de la catégorie. La plupart des utilisateurs finissent encore par là.\n\n## Quand l’Ultrahuman Ring Air est-elle le bon choix ?\n\nSi le poids de la bague compte plus que tout, Ultrahuman est la bague connectée la plus légère du marché. Si vous utilisez ou prévoyez d’utiliser le CGM Ultrahuman M1, la vue native et unifiée de l’écosystème est unique. Gardez simplement en tête la réserve sur la fiabilité de la batterie.\n\n## Quand la RingConn Gen 2 est-elle le bon choix ?\n\nSi l’absence d’abonnement est une exigence ferme et que vous voulez la meilleure autonomie de la catégorie, RingConn est le bon choix. C’est aussi nettement la moins chère sur trois ans. La contrepartie : une application un peu moins mature et des analyses du sommeil moins poussées qu’Oura."
+    },
+    "apple-watch-series-12-vs-garmin-venu-4": {
+      "title": "Apple Watch Series 12 vs Garmin Venu 4 : comparatif (2026)",
+      "description": "Apple Watch Series 12 vs Garmin Venu 4 pour la variabilité de la fréquence cardiaque (HRV, ou VFC) : capteurs et ECG d’Apple contre autonomie Garmin.",
+      "intro": "Deux montres santé grand public à un prix proche, qui tirent dans des directions différentes. L’Apple Watch Series 12 de septembre 2026 apporte le tout nouveau Health Sensing System — la variabilité de la fréquence cardiaque (HRV, ou VFC) en Recovery HRV est échantillonnée ~24× plus souvent — ainsi que l’ECG et les notifications d’hypertension, mais une autonomie d’~1 jour. La Garmin Venu 4 répond avec HRV Status, une autonomie de plusieurs jours et l’écosystème d’entraînement Garmin, sans ECG. Le choix entre ces deux montres milieu de gamme dépend davantage de l’autonomie et de l’écosystème que du chiffre HRV.",
+      "verdict": "Pas de gagnant absolu — tout dépend de vos priorités. Pour le système de variabilité de la fréquence cardiaque (HRV, ou VFC) le plus récent, un ECG et l’intégration à l’iPhone, la Series 12 l’emporte ; pour une autonomie de plusieurs jours qui rend le port nocturne facile et l’univers d’entraînement Garmin, la Venu 4 l’emporte.",
+      "bestForA": "Choisissez la Series 12 si vous voulez le nouveau système de variabilité de la fréquence cardiaque (HRV, ou VFC) d’Apple avec Recovery HRV, un ECG à une dérivation, les notifications d’hypertension et l’écosystème iPhone — en acceptant une recharge quotidienne.",
+      "bestForB": "Choisissez la Garmin Venu 4 si vous voulez une autonomie de plusieurs jours pour que la variabilité de la fréquence cardiaque (HRV, ou VFC) nocturne ne soit jamais interrompue, l’écosystème d’entraînement et de récupération Garmin et aucun abonnement — et si vous n’avez pas besoin d’ECG.",
+      "axes": [
+        {
+          "name": "Métrique HRV et échantillonnage",
+          "note": "La Series 12 échantillonne la variabilité de la fréquence cardiaque (HRV, ou VFC) ~24× plus souvent et affiche Recovery HRV et Overall HRV ; Garmin HRV Status est un modèle fiable fondé sur une référence nocturne. Léger avantage à la Series 12 pour sa technologie plus récente."
+        },
+        {
+          "name": "Autonomie / port la nuit",
+          "note": "L’autonomie de plusieurs jours de la Venu 4 permet de la porter chaque nuit sans effort pour la variabilité de la fréquence cardiaque (HRV, ou VFC) nocturne ; l’autonomie d’~1 jour de la Series 12 entre en concurrence avec la recharge nocturne."
+        },
+        {
+          "name": "ECG et fonctions santé",
+          "note": "La Series 12 dispose d’un ECG à une dérivation et des notifications d’hypertension ; la Venu 4 est uniquement optique, sans ECG."
+        },
+        {
+          "name": "Montre connectée au quotidien et apps",
+          "note": "L’Apple Watch offre l’écosystème d’apps le plus riche, le paiement et la finition de watchOS ; Garmin Connect est complet mais encombré."
+        },
+        {
+          "name": "Écosystème entraînement / récupération",
+          "note": "Les outils Garmin de charge d’entraînement, de récupération et multisport sont plus poussés que ceux de l’Apple Watch pour les sportifs qui suivent un plan structuré."
+        },
+        {
+          "name": "Abonnement / prix",
+          "note": "Series 12 à partir de $399, Venu 4 à partir de $499 — achat unique sans abonnement pour les deux. Prix différents, pas de gagnant net."
+        },
+        {
+          "name": "Plateforme",
+          "note": "L’Apple Watch nécessite un iPhone ; la Venu 4 est multiplateforme. Un plus ou un moins selon votre téléphone."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Apple Watch Series 12 ou Garmin Venu 4 : laquelle est la meilleure pour la HRV ?",
+          "a": "Pour le système de variabilité de la fréquence cardiaque (HRV, ou VFC) lui-même, la Series 12 a un léger avantage — elle échantillonne ~24× plus souvent et affiche Recovery HRV, tandis que Garmin HRV Status est un modèle unique fondé sur une référence nocturne. L’atout de la Venu 4 est une autonomie de plusieurs jours qui permet de la porter chaque nuit sans créneau de recharge. Les deux mesurent optiquement au poignet ; la gamme de bagues Oura dispose de davantage de validations nocturnes publiées."
+        },
+        {
+          "q": "La Garmin Venu 4 a-t-elle un ECG comme l’Apple Watch ?",
+          "a": "Non. La Venu 4 n’a qu’un capteur optique, sans ECG. La Series 12 ajoute un ECG à une dérivation et des notifications d’hypertension, un vrai avantage si vous souhaitez ces dépistages de santé."
+        },
+        {
+          "q": "Laquelle nécessite un abonnement, la Series 12 ou la Venu 4 ?",
+          "a": "Aucune. La Series 12 (à partir de $399) et la Garmin Venu 4 (à partir de $499) sont toutes deux des achats uniques, sans abonnement pour leurs fonctions HRV et santé."
+        }
+      ],
+      "content": "## En bref\n\nChoisissez selon l’autonomie et l’écosystème, pas selon le chiffre de variabilité de la fréquence cardiaque (HRV, ou VFC). La Series 12 l’emporte pour le système HRV le plus récent, l’ECG et l’intégration à l’iPhone. La Venu 4 l’emporte pour une autonomie de plusieurs jours qui rend le port nocturne facile et pour l’univers d’entraînement Garmin.\n\n## Où en est la comparaison HRV en 2026\n\nLe Health Sensing System de la Series 12 échantillonne la HRV bien plus souvent et affiche Recovery HRV, là où Garmin HRV Status est un modèle unique fiable. Voir [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) et [pourquoi la HRV diffère d’un appareil à l’autre](/articles/hrv-different-every-device).\n\n## La réserve honnête\n\nLes deux mesurent ; aucune n’entraîne. Si une tendance HRV nocturne propre est votre seule priorité, une bague que vous pouvez porter chaque nuit pourrait mieux vous convenir (dans des enregistrements nocturnes de 13 personnes, Dial 2025, l’Oura Ring 4 figurait parmi les plus proches de l’ECG) — voir les [meilleurs trackers HRV de 2026](/reviews/compare/best-hrv-trackers-2026)."
     }
   }
 }

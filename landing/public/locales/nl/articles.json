@@ -3768,6 +3768,83 @@
           "a": "Nee. Het principe — opmerken wanneer je vastzit in innerlijk vertellen en terugkeren naar de directe ervaring van het moment — is voor iedereen beschikbaar. Formele koans zijn een diepe, gestructureerde versie, maar de alledaagse oefening om uit de denklus te stappen, heeft hetzelfde voordeel."
         }
       ]
+    },
+    "coherent-breathing-guide": {
+      "title": "Coherent ademen: 6 ademhalingen per minuut voor je HRV",
+      "description": "Coherent ademen – rustige, gelijkmatige ademhalingen, zo’n zes per minuut – maximaliseert je HRV en kalmeert je zenuwstelsel. Wetenschap, tempo, oefening.",
+      "content": "\n## [ PROTOCOL: COHERENT_BREATHING // RESONANCE_LOCK ]\n\n> ‘Coherent ademen is de stille krachtpatser van ademwerk: langzame, gelijkmatige ademhalingen, ongeveer zes per minuut, zonder vasthouden, zonder drama. In dat tempo gebeurt er iets moois: je hartslag, ademhaling en bloeddrukritmes komen in fase, en je [hartslagvariabiliteit (HRV)](/glossary/heart-rate-variability) slingert op haar breedst. In het ONDA Biocomputer-model heb je de resonantiefrequentie van het systeem gevonden, waar een kleine, ritmische input een grote, kalmerende output geeft.’\n\n---\n\n## Deel 1: Waarom ongeveer 6 ademhalingen per minuut?\n\nOngeveer zes ademhalingen per minuut (0,1 Hz) is de **[resonantiefrequentie](/science/mechanisms/breathing-and-hrv)** van het hart- en vaatstelsel. Adem je in dat tempo, dan stimuleer je de baroreflex – de lus die de bloeddruk buffert – maximaal. Dat geeft grote, [coherente hartslagschommelingen](/science/concepts/coherence) en verschuift de balans via de [nervus vagus](/glossary/vagus-nerve) richting de [parasympathische](/glossary/parasympathetic-nervous-system) tak (Lehrer 2003; Lehrer & Gevirtz 2014). Dit is de motor van [HRV-biofeedback](/science/evidence/hrv-biofeedback).\n\nHet is niet voor iedereen precies zes – persoonlijke resonantie ligt rond 4,5–7 ademhalingen per minuut. De [Resonance Breathing Finder](/tools/resonance-breathing) helpt je die van jou te vinden; wil je alleen een cirkel die het tempo aangeeft, dan heeft de [Breathing Pacer](/tools/breathing) een coherente preset.\n\n---\n\n## Deel 2: Wat doet coherent ademen?\n\nIn een gecontroleerde studie ademden mensen 15 minuten op hun resonantiefrequentie; dat verhoogde de [HRV](/science/concepts/heart-rate-variability) en verbeterde de stemming vergeleken met rustig zitten (Steffen 2017). Op korte termijn verhoogt coherent ademen betrouwbaar de HRV en verlaagt het de opwinding; regelmatig beoefend wordt het in verband gebracht met betere stressbestendigheid, bloeddruk en emotieregulatie. Het geneest geen angststoornissen, maar het is een van de best onderbouwde, gratis hulpmiddelen voor zelfregulatie.\n\nCoherent ademen verschilt van [box breathing en 4-7-8](/articles/box-breathing-how-it-works): die gebruiken adempauzes en zijn uitstekend voor snelle rust of slaap, terwijl coherent ademen een vloeiend ritme zonder vasthouden is, specifiek geoptimaliseerd voor HRV – beter voor dagelijkse oefening en biofeedback.\n\n---\n\n## Deel 3: Zo oefen je\n\n### PROTOCOL 1: Gelijkmatig, door de neus, vanuit de buik\n\n> **De hack:** adem ~5 s in, ~5 s uit, door de neus, naar je [middenrif](/glossary/diaphragm) – vloeiend en ononderbroken.\n\n**De wetenschap:** gelijkmatige, langzame buikademhaling op ~6/min raakt de resonantie van de baroreflex; oppervlakkige borstademhaling of schokkerig ademen niet.\n\n### PROTOCOL 2: 10–20 minuten, de meeste dagen\n\n> **De hack:** een of twee sessies van 10–20 minuten per dag.\n\n**De wetenschap:** HRV-biofeedbackprotocollen gebruiken deze dosis; de directe rust is meteen merkbaar, en de grotere aanpassingen bouwen zich op over weken van consistentie.\n\n### PROTOCOL 3: Vind je eigen tempo\n\n> **De hack:** test 6,5, 6, 5,5, 5 en 4,5/min elk een paar minuten; houd het tempo aan dat het soepelst en rustigst voelt.\n\n**De logica:** ieders resonantiefrequentie verschilt een beetje. Het exacte tempo bevestig je het best met live feedback over je hartritme (wat een HRV-biofeedback-app zoals ONDA laat zien), maar op gevoel kom je al dichtbij.\n\n> [ HARDWARE_VALIDATION ]\n> EXAMPLE_DEVICE: HRV-meting tijdens de sessie\n> METRIC: de amplitude van de hartslagschommeling piekt bij jouw resonantietempo\n> STATUS: RESONANCE_ACHIEVED\n\n---\n\nEducatieve informatie, geen medisch advies. Heb je een hart- en vaat- of ademhalingsaandoening of word je licht in je hoofd, stop dan en adem normaal.\n",
+      "imageAlt": "Coherent ademen op ~6 ademhalingen per minuut: de resonantiefrequentie waarbij hartslag, ademhaling en baroreflex synchroniseren en de HRV piekt.",
+      "imageTitle": "[RESONANCE_LOCK]: ademen op ~6/min om de hartslagvariabiliteit te maximaliseren.",
+      "neuralSuggestion": {
+        "text": "Vind je persoonlijke resonantietempo (ongeveer 4,5–7/min) en adem mee met de cirkel.",
+        "linkText": "Resonance Breathing Finder →"
+      },
+      "howToSteps": [
+        {
+          "name": "Adem ~6 keer per minuut",
+          "text": "Adem ~5 seconden in en ~5 seconden uit, gelijkmatig en door de neus – ongeveer zes ademhalingen per minuut."
+        },
+        {
+          "name": "Houd het vloeiend en moeiteloos",
+          "text": "Geen adem vasthouden, niet persen; de adem is zacht en ononderbroken, vanuit de buik."
+        },
+        {
+          "name": "Oefen 10–20 minuten",
+          "text": "Sessies van 10–20 minuten, een- of tweemaal per dag, leveren over weken het grootste voordeel op."
+        },
+        {
+          "name": "Stem je exacte tempo af",
+          "text": "Je persoonlijke resonantiefrequentie ligt rond 4,5–7 ademhalingen per minuut – test waar jij je het rustigst voelt."
+        }
+      ]
+    },
+    "caffeine-hrv-resting-heart-rate": {
+      "title": "Cafeïne, HRV en rusthartslag: middagkoffie ’s nachts",
+      "description": "Cafeïne heeft een halfwaardetijd van 5–6 uur: middagkoffie kan je slaap lichter maken, en slaap bepaalt je nachtelijke HRV. Vind je eigen grens in je data.",
+      "content": "\n## [ CASE FILE: THE CUP YOU FORGOT ABOUT ]\n\n> ‘Om drie uur ’s middags proefde je de koffie al niet meer. Je hart proeft hem om middernacht nog steeds.\n\n> Cafeïne is het meest gebruikte stimulerende middel ter wereld, en het middel dat mensen het zelfverzekerdst verkeerd inschatten. De opkikker verdwijnt na een paar uur, dus daar lijkt het verhaal te eindigen – maar het molecuul niet. De helft van dat kopje van 14.00 uur circuleert bij het avondeten nog steeds en houdt je zenuwstelsel stilletjes een tandje richting *actie*, terwijl je lichaam probeert over te schakelen naar *rust*.’\n\n---\n\n## Deel 1: Hoe lang blijft cafeïne in je lichaam?\n\nDe halfwaardetijd van cafeïne is gemiddeld **vijf tot zes uur**. Dat is het getal waar bijna niemand rekening mee houdt. Een koffie om 15.00 uur betekent dat om 20.00 of 21.00 uur nog ongeveer de helft van de cafeïne in je zit, en een flink deel nog na middernacht. Je voelt het niet meer als opkikker – tolerantie dempt het *gevoel* lang voordat het *effect* verdwenen is – maar je [autonome zenuwstelsel](/science/concepts/autonomic-nervous-system) registreert het nog wel.\n\nCafeïne is een stimulerend middel, dus het resultaat is een lichaam dat tot in de nacht iets alerter blijft – precies wanneer het zou moeten afbouwen richting rust en herstel.\n\n---\n\n## Deel 2: Beïnvloedt cafeïne ’s nachts je HRV en rusthartslag?\n\nDat kan, al minder voorspelbaar dan het gangbare advies doet vermoeden. Dit zegt het bewijs over drie dingen die ONDA daadwerkelijk volgt:\n\n- **Je [rusthartslag](/science/measurements/resting-heart-rate) kan iets stijgen – of niet.** Cafeïne kan bij sommige mensen de hartslag verhogen, maar het effect op de rusthartslag is tussen studies inconsistent, en vaste koffiedrinkers ontwikkelen tolerantie. Als die van jou verschuift, zie je dat ten opzichte van je eigen corridor.\n- **De nachtelijke [hartslagvariabiliteit (HRV)](/science/concepts/heart-rate-variability) kan dalen, vooral via de slaap.** Het directe bewijs is gemengd: sommige studies vinden na cafeïne kleine veranderingen in de [variabiliteit](/glossary/heart-rate-variability) van slag tot slag, andere geen, en vaste drinkers ontwikkelen tolerantie. Het duidelijkere verband loopt via de slaap. Late cafeïne kan je slaap lichter en korter maken, en een slechtere nacht is een van de dingen die de nachtelijke HRV omlaag trekken.\n- **De slaap wordt dunner.** Zelfs als je prima in slaap valt, kan cafeïne de slaapkwaliteit en -diepte aantasten – en een slechtere nacht trekt de baseline van de volgende dag mee.\n\nNiets hiervan is dramatisch op één enkele nacht. Het is een *belasting*, geen ramp – en belastingen stapelen zich op.\n\n---\n\n## Deel 3: Hoe laat moet je stoppen met koffie?\n\nEr is geen universele grens – en hier zit de regel ‘geen cafeïne na 14.00 uur’ ernaast: **de juiste grens is voor geen twee mensen gelijk, en het is geen kwestie van wilskracht.** Het draait om genetica en stofwisseling. Snelle afbrekers ruimen cafeïne snel op en kunnen laat drinken zonder veel gevolgen; trage afbrekers dragen een middagkopje diep de nacht in. Gewoontegebruikers die veel drinken, ontwikkelen een gedeeltelijke tolerantie voor het acute autonome effect; incidentele drinkers worden harder geraakt.\n\nEen regel voor de hele bevolking is dus het verkeerde gereedschap. De enige grens die iets betekent, is de *jouwe*, en die vind je alleen door te kijken hoe je eigen nachtwaarden reageren op cafeïne op verschillende tijdstippen.\n\n---\n\n## Deel 4: Je grens vinden in je eigen data\n\nDit is een meetprobleem, en het is oplosbaar. Bouw een **[persoonlijke baseline](/science/concepts/hrv-baseline)** op – je normale rusthartslag, variabiliteit en ademfrequentie – en kijk dan wat een laat kopje ermee doet. Een nacht na een koffie om 16.00 uur met een hogere rustpols of een lagere [HRV](/glossary/heart-rate-variability) dan je corridor, is je lichaam dat de grens voor je trekt.\n\nONDA leest die nachtelijke signalen van een Apple Watch (of je rustwaarden via de telefooncamera) en bewaakt je corridor, zodat een nacht met late cafeïne verschijnt als een zichtbare afwijking van *jouw* normaal in plaats van als een abstracte zorg – [jouw data, jouw grens](/measurements). Zet het kopje eerder, kijk hoe de nacht terugkeert in de corridor, en je hebt je grens empirisch gevonden in plaats van gegokt.\n\nDe eerlijke kanttekening: cafeïne beïnvloedt slaap en herstel, maar is voor de meeste mensen geen medisch gevaar, en ONDA stelt geen diagnoses – het laat je een leefstijlfactor zien die in je eigen cijfers staat. Voor de kant van hetzelfde molecuul die met adenosine en slaapdruk te maken heeft, zie [halfwaardetijd van cafeïne en slaapdruk](/articles/caffeine-half-life-sleep-pressure).\n\n---\n\n## Deel 5: Wat je concreet kunt doen\n\nJe hoeft niet te stoppen met koffie. Je moet hem *timen*. Drink je cafeïne vooral ’s ochtends, leg je persoonlijke grens een paar uur eerder dan je denkt nodig te hebben, en wil je je nacht terug zonder het ritueel op te geven, dan helpt een rustige [afbouw met de nadruk op de uitademing](/articles/coherent-breathing-guide) om het zenuwstelsel over te dragen aan herstel. Check daarna de cijfers – de corridor vertelt je of het gewerkt heeft.\n\n> **De hack:** behandel cafeïne als een halfwaardetijd, niet als een opkikker. Ga ervan uit dat een kopje van 15.00 uur om 21.00 uur nog werkt, stel je grens in op basis van wat je *nachtelijke* rusthartslag en HRV echt doen – niet op basis van een algemene regel – en schuif hem naar voren tot je nachten weer binnen je baseline vallen.\n\n> [ SYSTEM_STATUS ]\n> HALF_LIFE: ~5-6 u (middagkopje werkt door tot in de nacht)\n> SIGNATURE: slaapdiepte ↓ · nachtelijke HRV: omstreden (vooral via slaap) · rusthartslag: inconsistent (tolerantie bij vaste drinkers)\n> CUTOFF: persoonlijk (genetica/stofwisseling), geen vast tijdstip\n> METHOD: lees je eigen baseline – PRAKTIJK, GEEN DIAGNOSE\n",
+      "imageAlt": "Gloeiend, doorschijnend menselijk hart waarin een cafeïnemolecuul in amber oplost, met een nachtcurve die hoog blijft in plaats van in rust te zakken.",
+      "imageTitle": "De nachtelijke signatuur van cafeïne – lichtere slaap, een mogelijke echo in de HRV",
+      "imageCaption": "De nachtelijke signatuur van cafeïne – een halfwaardetijd van 5–6 uur betekent dat middagkoffie je slaap nog lichter kan maken, wat zichtbaar kan worden in je nachtelijke HRV (de directe effecten op HRV en rusthartslag verschillen per persoon); vind je persoonlijke grens in je data.",
+      "neuralSuggestion": {
+        "text": "Je cafeïnegrens is geen regel uit een tijdschrift. Het is een lijn in je eigen nachtwaarden.",
+        "linkText": "Wat ONDA meet →"
+      },
+      "howToSteps": [
+        {
+          "name": "Reken met de halfwaardetijd",
+          "text": "Cafeïne heeft gemiddeld een halfwaardetijd van 5-6 uur, dus ga ervan uit dat de helft van een middagkopje laat op de avond nog actief is. Dat de opkikker weg is, betekent niet dat het molecuul is opgeruimd."
+        },
+        {
+          "name": "Let op de nachtelijke signatuur",
+          "text": "Late cafeïne kan je slaap dunner maken, en een slechtere nacht kan zichtbaar worden als een lagere nachtelijke HRV, al is een direct effect van cafeïne op de HRV omstreden; bij sommige mensen kan het de hartslag verhogen, maar het effect op de rusthartslag is inconsistent en vaste koffiedrinkers ontwikkelen tolerantie. Bekijk dit ten opzichte van je persoonlijke baseline, niet op basis van één meting."
+        },
+        {
+          "name": "Vind je persoonlijke grens empirisch",
+          "text": "Je grens wordt bepaald door genetica en stofwisseling, niet door een tijdschriftregel. Zet je laatste kopje eerder en kijk wanneer je nachtwaarden terugkeren in je corridor – dat tijdstip is je echte grens."
+        },
+        {
+          "name": "’s Ochtends drinken, ’s avonds afbouwen",
+          "text": "Houd cafeïne bij de ochtend. Wil je je nacht terug, voeg dan een rustige afbouw met nadruk op de uitademing toe om het zenuwstelsel aan herstel over te dragen, en controleer in je eigen baseline of het gewerkt heeft."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Verlaagt cafeïne de HRV en verhoogt het de rusthartslag?",
+          "a": "Het bewijs over HRV is gemengd: sommige studies vinden na cafeïne kleine veranderingen, andere geen, en gewoontedrinkers passen zich deels aan. Het duidelijkere verband is slaap. De halfwaardetijd van 5-6 uur betekent dat een laat kopje je slaap lichter kan maken, en een slechtere nacht kan zichtbaar worden als een lagere nachtelijke HRV. De rusthartslag is minder eenduidig: cafeïne kan bij sommige mensen de hartslag verhogen, maar het effect op de rusthartslag is inconsistent, en vaste koffiedrinkers ontwikkelen tolerantie. Het effect is een belasting, geen ramp, en het stapelt zich nacht na nacht op."
+        },
+        {
+          "q": "Hoe laat moet ik stoppen met cafeïne?",
+          "a": "Er is geen universele grens – die wordt bepaald door genetica en stofwisseling, niet door wilskracht. Snelle afbrekers ruimen cafeïne snel op; trage afbrekers dragen een middagkopje diep de nacht in. De enige grens die iets betekent, is de jouwe, en die vind je door te kijken hoe je eigen nachtelijke rusthartslag en HRV reageren als je je laatste kopje eerder zet."
+        },
+        {
+          "q": "Hoe vind ik mijn persoonlijke cafeïnegrens?",
+          "a": "Bouw een persoonlijke baseline op van je normale rusthartslag, HRV en ademhaling, en vergelijk dan nachten. Een nacht na een laat kopje met een hogere slaappols of lagere HRV dan je corridor, is je lichaam dat de grens trekt. Zet het kopje eerder tot je nachten weer binnen je baseline vallen – dat tijdstip is je echte grens."
+        },
+        {
+          "q": "Beïnvloedt middagkoffie echt mijn slaap als ik prima in slaap val?",
+          "a": "Dat kan. Ook als je normaal in slaap valt, kan resterende cafeïne de slaapdiepte en -kwaliteit verminderen en voorkomen dat het autonome zenuwstelsel volledig tot rust komt – een slechtere nacht trekt dan de baseline van de volgende dag mee. De opkikker voel je niet, maar je nachtwaarden kunnen hem nog steeds laten zien."
+        }
+      ]
     }
   },
   "series": {

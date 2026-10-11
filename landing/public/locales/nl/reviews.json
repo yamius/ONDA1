@@ -298,8 +298,48 @@
       ]
     },
     "garmin-venu-4": {
-      "verdict": "Een capabele allrounder zonder abonnement, met genoeg batterijduur om HRV de hele nacht te volgen — nergens de beste in zijn klasse, overal degelijk.",
-      "productType": "Smartwatch"
+      "verdict": "Een capabele allrounder zonder abonnement, met genoeg batterij om HRV de hele nacht te volgen — nergens de beste, overal competent.",
+      "summary": "De Garmin Venu 4 is hier de meest complete optie in smartwatchvorm: degelijke nachtelijke HRV, de beste slaaptracking van Garmin tot nu toe, een batterij die meerdere dagen meegaat en geen abonnement. Een sterke generalist die op geen enkel onderdeel van deze vergelijking de scherpste is.",
+      "description": "Garmin Venu 4 review als HRV-tracker: allrounder zonder abonnement, batterij voor meerdere dagen. Beoordeeld op nauwkeurigheid, slaap, data en waarde.",
+      "bestFor": "Ideaal als je één apparaat zonder abonnement wilt dat training, gezondheid en HRV goed afdekt.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van fabrikantspecificaties, onafhankelijke reviews uit 2026 en gepubliceerde validatieliteratuur. Niet zelf getest door ONDA.",
+      "productType": "Smartwatch",
+      "pros": [
+        "Batterij voor meerdere dagen — makkelijk 's nachts te dragen",
+        "Geen abonnement; alle functies vanaf aankoop ontgrendeld",
+        "Sterke allround tracker voor gezondheid en training",
+        "Redelijk open data via Garmin Connect en de API"
+      ],
+      "cons": [
+        "Geen enkele meting is hier de beste in zijn klasse",
+        "Garmin Connect voelt rommelig en gedateerd",
+        "HRV is minder op de nacht gericht dan bij een speciale hersteltracker",
+        "Alleen optische sensor — geen ecg"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Garmin HRV Status volgt de nachtelijke HRV ten opzichte van een persoonlijke baseline die in ongeveer drie weken wordt opgebouwd — degelijk, al is hij niet gespecialiseerd in de nacht.",
+        "sensor": "Optische Garmin Elevate-sensor — een capabele PPG-array, zonder hardware van ecg-niveau.",
+        "sleep-accuracy": "De Venu 4 heeft de meest geavanceerde slaaptracking van Garmin tot nu toe, met metingen voor circadiane afstemming.",
+        "data-access": "Garmin Connect plus een ontwikkelaars-API — redelijk open voor export en tools van derden.",
+        "wearability": "Een horloge, maar de batterij van meerdere dagen maakt consequent 's nachts dragen echt praktisch.",
+        "app-ux": "Garmin Connect is uitgebreid, maar rommelig en gedateerd naast Oura of Apple.",
+        "value": "Een eenmalige aankoop zonder abonnement, met brede allround mogelijkheden."
+      },
+      "content": "## Waar hij uitblinkt\n\nDe Garmin Venu 4 is de meest complete optie in smartwatchvorm in deze vergelijking. Garmin HRV Status bouwt in ongeveer drie weken een nachtelijke baseline op voor je hartslagvariabiliteit ([HRV](/glossary/heart-rate-variability)) en geeft daarna aan of je in balans bent of niet, en de Venu 4 heeft de meest geavanceerde slaaptracking van Garmin tot nu toe. De batterij gaat ruim langer mee dan die van een gewone smartwatch, en dat telt: een tracker die je meerdere nachten tussen twee laadbeurten kunt dragen, levert een vollediger HRV-registratie op. Er is geen abonnement — de aankoopprijs dekt alles.\n\n## Wat zijn de nadelen van de Garmin Venu 4?\n\nGeen enkele afzonderlijke meting is de beste in zijn klasse. De HRV is degelijk, maar minder duidelijk op de nacht gericht dan bij een speciale hersteltracker, en Garmin Connect is weliswaar uitgebreid, maar voelt rommelig en gedateerd naast de software van Oura of Apple. Een sterke generalist in plaats van een specialist — overal capabel, nergens de beste op wat deze vergelijking meet.\n\n**Noot 2026.** Het HRV Status-model van Garmin is ongewijzigd en blijft een consistente meting op basis van de nachtelijke baseline voor je eigen trend. Er is geen onafhankelijke validatie van de HRV van de Venu 4 ten opzichte van een ecg gevonden (stand oktober 2026); onafhankelijke vergelijkingen uit 2026 plaatsen optische HRV aan de pols voor absolute precisie nog altijd een stap achter ringen aan de vinger. Het voordeel van de Venu 4 boven Garmins eigen vlaggenschip, de [Fenix 8](/reviews/garmin-fenix-8), is de prijs, niet de nauwkeurigheid — beide gebruiken hetzelfde HRV Status-model, dus voor HRV alleen geeft de goedkopere Venu 4 je hetzelfde signaal.\n\n## Voor wie is de Garmin Venu 4?\n\nKies de Garmin Venu 4 als je één apparaat zonder abonnement wilt dat training, dagelijkse gezondheid en HRV goed afdekt, met genoeg batterij om hem echt 's nachts te dragen. Als nachtelijke HRV-precisie het enige is wat telt, doet een ring of band het net iets beter.\n\n---\n\n## Achtergrond\n\nDe wetenschap achter waarom HRV het signaal is dat het volgen waard is — en hoe het lichaam het aanmaakt.\n\n- [Interoceptieve precisie en sensorkalibratie](/articles/interoceptive-precision-sensor-calibration) — waarom je eigen waarneming de onderliggende baseline is waartegen HRV meet\n- [Anti-entropie in de neurale architectuur](/articles/anti-entropy-neural-architecture) — HRV als dagelijks onderhoudssignaal van het autonome systeem\n- [Voorspelt HRV reactietijd en focus?](/articles/nervous-system-ping-latency) — wat HRV in rust wel en niet zegt over aandacht en zelfbeheersing\n",
+      "faq": [
+        {
+          "q": "Heeft de Garmin Venu 4 een abonnement nodig?",
+          "a": "Nee — eenmalig $499, alle functies ontgrendeld en geen abonnement. Garmin HRV Status bouwt in ongeveer drie weken een nachtelijke HRV-baseline op."
+        },
+        {
+          "q": "Is de Garmin Venu 4 nauwkeurig voor HRV?",
+          "a": "Degelijk, maar niet de beste in zijn klasse. Zijn optische HRV Status is gemaakt voor nachtelijke trends; de enige Garmin in een nachtelijke studie met ecg als referentie is de oudere Fenix 6 (Dial 2025), en de Venu 4 zelf is niet gevalideerd (stand oktober 2026). In een krachttrainingsstudie (Yun 2026) onderschatte een ouder Garmin-model (Vivosmart 5) de hartslag direct na de sets en zaten de calorieschattingen er ver naast; die studie testte geen HRV en niet de Venu 4. De batterij gaat meerdere dagen mee, waardoor consequent 's nachts dragen praktisch is."
+        },
+        {
+          "q": "Garmin Venu 4 of Fenix 8 voor HRV — welke?",
+          "a": "Ze gebruiken hetzelfde HRV Status-model, dus de HRV-waarde is in de praktijk gelijk. De Venu 4 ($499) is de keuze voor de beste waarde; de Fenix 8 (ongeveer $999) voegt ecg, kaarten, duikfuncties en een batterij voor meerdere weken toe — betaal de meerprijs alleen als je die gebruikt."
+        }
+      ]
     },
     "muse-s-athena": {
       "verdict": "De meest complete consumenten-headset voor hersentraining — EEG plus fNIRS in een zachte band waarin je kunt slapen.",
@@ -1787,8 +1827,52 @@
       "editorialAdjustment": "Eerlijkheid in marketing — de productpagina zegt dat het masker ‘FDA-cleared en klinisch bewezen’ fijne lijntjes en rimpels vermindert, maar het bewijs is een eigen test van HigherDOSE van 8 weken met zelfgerapporteerde resultaten, geen gepubliceerde studie, en de FDA-clearance (K241933) is verleend zonder klinisch onderzoek (gecontroleerd in oktober 2026). Dit wordt hier gescoord, niet onder bewijs. (in het origineel: “FDA-cleared and clinically proven”)"
     },
     "medito": {
-      "verdict": "Helemaal gratis, open source en zonder advertenties, geen account nodig — de keuze zonder voorwaarden, als je een kleinere bibliotheek kunt accepteren.",
-      "productType": "Meditatie-app"
+      "verdict": "Helemaal gratis, open source en zonder advertenties, geen account nodig — de keuze zonder addertjes, als je een kleinere bibliotheek accepteert.",
+      "summary": "Medito is de app zonder addertjes: helemaal gratis, open source, zonder advertenties, zonder account en zonder premiumversie. Gemaakt door een Amsterdamse non-profit, dekt hij de basis goed af. Wat hij mist, is de diepgang en breedte van de grote betaalde apps.",
+      "description": "Medito review: de helemaal gratis, open-source meditatie-app zonder advertenties. Beoordeeld op bibliotheek, gratis versie, app-ervaring en waarde.",
+      "bestFor": "Ideaal voor een volledig gratis, reclamevrije open-source app zonder account en zonder betaalmuur.",
+      "testNote": "Op bewijs gebaseerde beoordeling — op basis van openbare informatie, app-storedata en onafhankelijke reviews uit 2026. Niet gebaseerd op een lange praktijktest door ONDA.",
+      "productType": "Meditatie-app",
+      "pros": [
+        "Helemaal gratis, open source en zonder advertenties",
+        "Geen account nodig — privacyvriendelijk",
+        "Dekt de basis goed af",
+        "Gesteund door een transparante non-profit"
+      ],
+      "cons": [
+        "Kleinere bibliotheek dan de grote betaalde apps",
+        "Geen adaptieve personalisatie",
+        "Geen op onderzoek gebaseerde app",
+        "Minder diepgang voor gevorderde beoefening"
+      ],
+      "scoreNotes": {
+        "content-library": "Dekt de basis goed af — beginnerscursussen, ademhaling, slaap, stress — maar kleiner dan de groten.",
+        "teaching": "Degelijk, met een diverse groep vertellers; de kwaliteit is echt, al gaat ze niet diep.",
+        "personalization": "Eenvoudige cursussen en sessies in plaats van een adaptief plan.",
+        "app-experience": "Overzichtelijk en rustig, zonder advertenties, upsells of account.",
+        "free-tier": "Helemaal gratis — geen proefperiodes, geen premiumversie, geen vergrendelde content. Nooit.",
+        "value": "Gratis en open source, gedragen door een non-profit — qua kosten onverslaanbaar.",
+        "evidence": "Een eerlijk non-profitproject in plaats van een op onderzoek gebaseerd programma."
+      },
+      "content": "## Waar hij uitblinkt\n\nMedito is de app zonder addertjes. Gemaakt door de Medito Foundation, een Amsterdamse non-profit met open-sourcecode, volgt hij een simpel principe: geen proefperiodes, geen premiumversie, nooit iets achter een betaalmuur. Hij vraagt geen account, toont geen advertenties en dekt toch de basis goed af — beginnerscursussen, ademhalingsoefeningen, slaapmeditaties en sessies voor stress en angst. Als gratis, privé en echt onafhankelijke optie is hij hier de zuiverste.\n\n## Wat zijn de nadelen van Medito?\n\nHij biedt de basis, niet het hele spectrum. De bibliotheek is kleiner dan die van de grote betaalde apps en heeft minder gevorderd materiaal, er is geen adaptieve personalisatie, en het is een eerlijk communityproject in plaats van een op onderzoek gebaseerd programma zoals het Healthy Minds Program. De diepgang raakt sneller op.\n\n## Voor wie is Medito?\n\nKies Medito als je een helemaal gratis, reclamevrije open-source app wilt zonder account en zonder upsells — zeker als privacy voor je telt of als je gewoon niet wilt betalen om te mediteren. Wil je een grotere bibliotheek of een wetenschappelijk onderbouwd kader, dan gaan Insight Timer en het Healthy Minds Program verder.\n\n---\n\n## Achtergrond\n\nDe wetenschap van wat meditatie werkelijk doet op het niveau van het zenuwstelsel.\n\n- [Alfahersengolven: rust, creativiteit en flow](/articles/neural-bridge-alpha-flow-gateway) — wat het alfaritme doet, en wat alfaheadsets, apps en muziek wel en niet kunnen veranderen\n- [Ritmische entrainment en systeemfrequenties](/articles/rhythmic-entrainment-system-frequencies) — waarom ritmische audio en ademprotocollen zich met oefening opstapelen\n- [Fysiologische concentratie: de bedrading van flow](/articles/physiological-concentration-flow-state-hardwired) — welke neurochemie de flowtoestand echt nodig heeft\n",
+      "faq": [
+        {
+          "q": "Is Medito het waard?",
+          "a": "Medito is het waard als je een meditatie-app wilt die helemaal gratis, open source en reclamevrij is, zonder account. Hij dekt de basis goed af en wordt gesteund door een transparante non-profit, al is de bibliotheek kleiner dan die van de grote betaalde apps en ontbreekt adaptieve personalisatie."
+        },
+        {
+          "q": "Wat kost Medito?",
+          "a": "Medito kost niets. De app is helemaal gratis en wordt gerund als open-source non-profit, zonder advertenties, zonder betaalmuur en zonder account. Daarmee is het een van de meest privacyvriendelijke manieren om zonder enige financiële verplichting met mediteren te beginnen."
+        },
+        {
+          "q": "Wat zijn de nadelen van Medito?",
+          "a": "Medito heeft een kleinere bibliotheek dan de grote betaalde apps, geen adaptieve personalisatie en minder diepgang voor gevorderde beoefening. Het is ook geen op onderzoek gebaseerde app. Voor de basis is hij degelijk, maar ervaren mediteerders kunnen erop uitgekeken raken."
+        },
+        {
+          "q": "Voor wie is Medito het meest geschikt?",
+          "a": "Medito is het meest geschikt voor iedereen die een volledig gratis, reclamevrije open-source meditatie-app wil zonder account en zonder betaalmuur. Privacybewuste beginners hebben er het meeste aan, omdat hij de basis goed afdekt zonder om persoonlijke gegevens of betaling te vragen."
+        }
+      ]
     },
     "headspace": {
       "verdict": "De beste app om echt te leren mediteren — gestructureerde cursussen en heldere uitleg, met een gratis versie die nauwelijks meer is dan een voorproefje.",
@@ -2670,6 +2754,54 @@
           "a": "De CGM-fase van Zoe duurt vast twee weken, dus het is geen tool voor doorlopende CGM. Er is geen export van ruwe glucosedata, de oudere Libre-variant is het minst nauwkeurig in de tweede week, en het is vooral beschikbaar in het VK, met een langzamere uitbreiding in de VS."
         }
       ]
+    },
+    "sleep-cycle": {
+      "verdict": "De meest verfijnde mainstream slaaptracker — een slimme wekker en heldere analyse, met een echt bruikbare gratis versie.",
+      "summary": "Sleep Cycle is niet voor niets de populairste slaaptracker: hij meet je nacht, wekt je in lichte slaap zodat je minder suf opstaat, en geeft je een heldere, leesbare analyse. De gratis versie is echt bruikbaar en het betaalde abonnement blijft goedkoop.",
+      "description": "Sleep Cycle review: de meest verfijnde mainstream slaaptracker met slimme wekker. Beoordeeld op tracking, inzichten, gratis versie en waarde.",
+      "bestFor": "Ideaal voor een verfijnde slaaptracker die weinig moeite kost, met slimme wekker.",
+      "testNote": "Op bewijs gebaseerde beoordeling — op basis van openbare informatie, app-storedata en onafhankelijke reviews uit 2026. Niet gebaseerd op een lange praktijktest door ONDA.",
+      "productType": "Slaaptracking-app",
+      "pros": [
+        "Slimme wekker wekt je in lichte slaap",
+        "Echt bruikbare gratis versie",
+        "Heldere, leesbare slaapanalyse",
+        "Verfijnd en makkelijk in gebruik"
+      ],
+      "cons": [
+        "Weinig content om tot rust te komen",
+        "Tracking met de telefoon op bed is minder nauwkeurig dan een wearable",
+        "De beste data — snurken, hartslag — vraagt Premium of een horloge",
+        "Geen inslaaphulp"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Meet via microfoon en versnellingsmeter, of via hartslag met een Apple Watch — degelijk voor een tracker op basis van je telefoon.",
+        "wind-down-content": "Wat slaapgeluiden en inslaapcontent, maar tot rust komen is niet de hoofdzaak.",
+        "sleep-science": "Het slimme wekvenster — je wekken in lichtere slaap — is het al lang bestaande, wetenschappelijk onderbouwde idee.",
+        "insights": "Heldere nachtelijke analyse en langetermijntrends, leesbaar in plaats van overweldigend.",
+        "app-experience": "Verfijnd en eenvoudig — de meest geslepen van de mainstream slaap-apps.",
+        "free-tier": "Een echt bruikbare gratis versie; veel gebruikers hoeven nooit te betalen.",
+        "value": "Ongeveer 50 USD per jaar voor Premium — goedkoop voor wat het toevoegt."
+      },
+      "content": "## Waar hij uitblinkt\n\nSleep Cycle is niet voor niets de populairste slaaptracker: hij doet het kernwerk netjes. Hij meet je nacht via de microfoon en versnellingsmeter van je telefoon — of via je hartslag als je een Apple Watch draagt — en zijn al lang bestaande idee, de slimme wekker, wekt je binnen een tijdvenster wanneer je in lichtere slaap bent in plaats van in [diepe slaap](/glossary/deep-sleep), zodat je minder suf wakker wordt. De analyse is leesbaar: trends en een overzicht per nacht, geen muur van getallen.\n\n## Wat zijn de nadelen van Sleep Cycle?\n\nHet is in de eerste plaats een tracker. Content om tot rust te komen — geluiden, slaapaudio — bestaat, maar is mager naast een echte ontspanningsapp, en tracking met de telefoon op bed is van nature minder nauwkeurig dan een wearable om je pols. De betere data, van snurken tot hartslag en diepere trends, zit achter het Premium-abonnement.\n\n## Voor wie is Sleep Cycle?\n\nKies Sleep Cycle als je een verfijnde tracker wilt die weinig moeite kost, met een slimme wekker en een gratis versie waar je echt mee uit de voeten kunt. Heb je vooral hulp nodig bij het inslapen, dan is een ontspanningsapp beter; een wearable voegt hartslagdata toe, al zijn ook de slaapfases daarvan niet onafhankelijk gevalideerd; alleen een slaaponderzoek is van klinisch niveau.\n\n---\n\n## Achtergrond\n\nDe slaapbiologie achter wat deze apps meten en de protocollen die ze ondersteunen.\n\n- [Maakt slaap je hersenen echt schoon? Het bewijs over het glymfatisch systeem](/articles/nightly-flush-glymphatic-neural-cache) — wat bij mensen is aangetoond en wat nog omstreden is\n- [Neurale hydraulica: de stroom van hersenvocht](/articles/neural-hydraulics-csf-flow) — de circulatie van hersenvocht tijdens de slaap als basis van glymfatische afvoer\n",
+      "faq": [
+        {
+          "q": "Is Sleep Cycle het waard?",
+          "a": "Sleep Cycle is het waard als je een verfijnde slaaptracker wilt die weinig moeite kost, met een slimme wekker die je in lichte slaap wekt. De gratis versie is echt bruikbaar. Het is wel geen inslaaphulp, en tracking met de telefoon op bed is minder nauwkeurig dan een wearable."
+        },
+        {
+          "q": "Wat kost Sleep Cycle?",
+          "a": "Sleep Cycle Premium kost ongeveer $50 per jaar, en er is een bruikbare gratis versie. Voor de beste data, zoals snurken en hartslag, heb je Premium of een gekoppeld horloge nodig. De gratis versie geeft je toch de slimme wekker en een heldere slaapanalyse."
+        },
+        {
+          "q": "Wat zijn de nadelen van Sleep Cycle?",
+          "a": "De content om tot rust te komen is mager en Sleep Cycle is geen inslaaphulp. Tracking met de telefoon op bed is minder nauwkeurig dan een wearable, en de beste data, zoals snurken en hartslag, vraagt Premium of een horloge, dus de gratis versie gaat maar tot een bepaald punt."
+        },
+        {
+          "q": "Sleep Cycle of SleepScore: welke is beter?",
+          "a": "Kies Sleep Cycle voor een verfijndere tracker die weinig moeite kost, met slimme wekker en een bruikbare gratis versie. Kies SleepScore als je contactloze sonartracking en de meest concrete, wetenschappelijk onderbouwde aanbevelingen wilt, en accepteert dat de bruikbare analyse achter Premium zit."
+        }
+      ]
     }
   },
   "comparisons": {
@@ -3439,7 +3571,14 @@
     "cadr-coverage": "CADR en ruimtedekking",
     "build-noise": "Bouwkwaliteit en geluid",
     "smart-features": "Slimme functies en sensoren",
-    "maintenance-cost": "Filtervervanging en onderhoud"
+    "maintenance-cost": "Filtervervanging en onderhoud",
+    "content-library": "Contentbibliotheek",
+    "teaching": "Kwaliteit van de begeleiding",
+    "personalization": "Personalisatie",
+    "free-tier": "Gratis versie",
+    "tracking-accuracy": "Nauwkeurigheid van tracking",
+    "wind-down-content": "Content om tot rust te komen",
+    "sleep-science": "Slaapwetenschap"
   },
   "categories": {
     "pemf": "PEMF-apparaten",
@@ -3455,7 +3594,9 @@
     "vagus-stim": "Nervus vagus stimulatoren",
     "breathing-aid": "Mondtape & neusademhaling",
     "red-light-mask": "Roodlicht-gezichtsmaskers",
-    "air-purifier": "Luchtreinigers"
+    "air-purifier": "Luchtreinigers",
+    "meditation-app": "Meditatie-apps",
+    "sleep-app": "Slaap-apps"
   },
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {
@@ -5216,6 +5357,59 @@
         }
       ],
       "content": "## De korte versie\n\n> Let op: voor de Ultrahuman Ring Air geldt een importverbod in de VS (oktober 2025, octrooizaak bij de ITC gewonnen door Oura) en hij is in de VS niet te koop. De in de VS verkrijgbare opvolger van Ultrahuman is de [Ring Pro](/reviews/ultrahuman-ring-pro) — zonder abonnement, met een accu van ~15 dagen. Lees deze vergelijking met dat in gedachten als je in de VS woont.\n\nDrie verschillende optimale punten op het afwegingsvlak van slimme ringen. Oura voor afwerking, Ultrahuman voor vormfactor + CGM-ecosysteem, RingConn voor prijs + accu. De meeste gebruikers hoeven niet veel verder te denken dan dat.\n\n## Wanneer is Oura Ring 4 de juiste keuze?\n\nAls je de meest volwassen ringervaring en het diepste slaapmodel wilt, past Oura. Het lidmaatschap van $5.99/maand is de toegangsprijs tot tien jaar doorontwikkeling en de meest uitgewerkte analyses in de categorie. De meeste gebruikers komen nog steeds hier uit.\n\n## Wanneer is Ultrahuman Ring Air de juiste keuze?\n\nAls het gewicht van de ring zwaarder weegt dan al het andere, is Ultrahuman de lichtste slimme ring op de markt. Gebruik je de Ultrahuman M1-CGM of ben je dat van plan, dan is de native weergave in één ecosysteem uniek. Wees je wel bewust van de kanttekening over de betrouwbaarheid van de accu.\n\n## Wanneer is RingConn Gen 2 de juiste keuze?\n\nAls geen abonnement een harde eis is en je de langste accuduur in de categorie wilt, past RingConn. Het is over drie jaar ook met duidelijke afstand het goedkoopst. De keerzijde is een iets minder volwassen app en minder diepgaande slaapanalyses dan Oura."
+    },
+    "apple-watch-series-12-vs-garmin-venu-4": {
+      "title": "Apple Watch Series 12 vs Garmin Venu 4: vergelijking (2026)",
+      "description": "Apple Watch Series 12 vs Garmin Venu 4 voor HRV: Apples nieuwe Health Sensing System en ECG tegenover Garmins meerdaagse batterij en trainingsecosysteem.",
+      "intro": "Twee gangbare gezondheidssmartwatches in dezelfde prijsklasse, die elk een andere kant op gaan. De Apple Watch Series 12 van september 2026 brengt het volledig nieuwe Health Sensing System — Recovery HRV voor hartslagvariabiliteit (HRV) wordt ~24× vaker gemeten — plus ECG en meldingen over hoge bloeddruk, maar een batterij van ~1 dag. De Garmin Venu 4 antwoordt met HRV Status, een meerdaagse batterij en het Garmin-trainingsecosysteem, en geen ECG. Welk middenklassehorloge past, hangt meer af van batterij en ecosysteem dan van het HRV-getal.",
+      "verdict": "Geen algemene winnaar — het hangt af van je prioriteiten. Voor het nieuwste HRV-systeem, een ECG en iPhone-integratie ligt de Series 12 voor; voor een meerdaagse batterij die nachtelijk dragen moeiteloos maakt en de Garmin-trainingswereld ligt de Venu 4 voor.",
+      "bestForA": "Kies de Series 12 als je Apples nieuwe systeem voor hartslagvariabiliteit (HRV) wilt (Recovery HRV), een single-lead ECG en meldingen over hoge bloeddruk, plus het iPhone-ecosysteem — en een dagelijkse laadbeurt accepteert.",
+      "bestForB": "Kies de Garmin Venu 4 als je een meerdaagse batterij wilt zodat nachtelijke hartslagvariabiliteit (HRV) nooit onderbroken wordt, het Garmin-ecosysteem voor training en herstel, en geen abonnement — en je geen ECG nodig hebt.",
+      "axes": [
+        {
+          "name": "HRV-meting & meetfrequentie",
+          "note": "De Series 12 meet hartslagvariabiliteit (HRV) ~24× vaker en rapporteert Recovery HRV plus Overall HRV; Garmin HRV Status is een betrouwbaar model op basis van een nachtelijke baseline. Lichte voorsprong voor de Series 12 dankzij de nieuwere techniek."
+        },
+        {
+          "name": "Batterij / 's nachts dragen",
+          "note": "Door de meerdaagse batterij van de Venu 4 is hem elke nacht dragen voor nachtelijke HRV moeiteloos; de batterij van ~1 dag van de Series 12 concurreert met het nachtelijke opladen."
+        },
+        {
+          "name": "ECG & gezondheidsextra's",
+          "note": "De Series 12 heeft een single-lead ECG en meldingen over hoge bloeddruk; de Venu 4 meet alleen optisch, zonder ECG."
+        },
+        {
+          "name": "Dagelijkse smartwatch & apps",
+          "note": "Apple Watch heeft het rijkere app-ecosysteem, betalingen en de verfijning van watchOS; Garmin Connect is capabel maar rommelig."
+        },
+        {
+          "name": "Trainings- / herstelecosysteem",
+          "note": "Garmins tools voor trainingsbelasting, herstel en multisport gaan dieper dan die van de Apple Watch voor gestructureerd trainende sporters."
+        },
+        {
+          "name": "Abonnement / prijs",
+          "note": "Series 12 vanaf $399, Venu 4 vanaf $499 — beide eenmalig zonder abonnement. Verschillend bedrag, geen duidelijke winnaar."
+        },
+        {
+          "name": "Platform",
+          "note": "Apple Watch vereist een iPhone; de Venu 4 werkt op beide platforms. Een plus of min, afhankelijk van je telefoon."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is de Apple Watch Series 12 of de Garmin Venu 4 beter voor HRV?",
+          "a": "Voor het systeem voor hartslagvariabiliteit (HRV) zelf heeft de Series 12 een lichte voorsprong — hij meet ~24× vaker en rapporteert Recovery HRV, terwijl Garmin HRV Status één model op basis van een nachtelijke baseline is. Het voordeel van de Venu 4 is een meerdaagse batterij waarmee je hem elke nacht kunt dragen zonder laadmoment. Beide meten optisch aan de pols; de Oura-ringlijn heeft meer gepubliceerde validatie 's nachts."
+        },
+        {
+          "q": "Heeft de Garmin Venu 4 een ECG zoals de Apple Watch?",
+          "a": "Nee. De Venu 4 heeft alleen een optische sensor, zonder ECG. De Series 12 voegt een single-lead ECG en meldingen over hoge bloeddruk toe, een echt voordeel als je die gezondheidscontroles wilt."
+        },
+        {
+          "q": "Welke heeft een abonnement nodig, de Series 12 of de Venu 4?",
+          "a": "Geen van beide. De Series 12 (vanaf $399) en de Garmin Venu 4 (vanaf $499) zijn allebei eenmalige aankopen zonder abonnement voor hun HRV- en gezondheidsfuncties."
+        }
+      ],
+      "content": "## In het kort\n\nKies op batterij en ecosysteem, niet op het HRV-getal. De Series 12 wint voor het nieuwste systeem voor hartslagvariabiliteit (HRV), een ECG en iPhone-integratie. De Venu 4 wint voor een meerdaagse batterij die nachtelijk dragen moeiteloos maakt en de Garmin-trainingswereld.\n\n## Waar de HRV-vergelijking staat in 2026\n\nHet Health Sensing System van de Series 12 meet HRV veel vaker en rapporteert Recovery HRV, terwijl Garmin HRV Status één betrouwbaar model is. Zie [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) en [waarom HRV op elk apparaat anders uitvalt](/articles/hrv-different-every-device).\n\n## De eerlijke kanttekening\n\nBeide meten; geen van beide traint. Als een zuivere nachtelijke HRV-trend je enige prioriteit is, past een ring die je elke nacht kunt dragen misschien beter bij je (in nachtelijke metingen bij 13 mensen, Dial 2025, hoorde Oura Ring 4 bij de modellen die het dichtst bij ECG lagen) — zie de [beste HRV-trackers van 2026](/reviews/compare/best-hrv-trackers-2026)."
     }
   }
 }

@@ -256,11 +256,14 @@ const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)
  * a lawyer reviews them. /privacy is published in all 12 languages (owner
  * decision 2026-10-03; each translation states that the English version prevails).
  */
+/** Pages articles-first locales DO publish (translated): wave B 2026-10-11 added /emoton and /inner-spectrum. */
+const ARTICLES_ONLY_PUBLISHED_PAGES: readonly string[] = ['/articles', '/privacy', '/about', '/emoton', '/inner-spectrum']
+
 export const LANG_PAGE_EXCLUDE: Partial<Record<Lang, readonly string[]>> = {
   de: ['/terms'],
   fr: ['/terms'],
   ...Object.fromEntries(
-    ARTICLES_ONLY_LANGS.map((l) => [l, LOCALIZED_BASE_PATHS.filter((b) => b !== '/articles' && b !== '/privacy' && b !== '/about')]),
+    ARTICLES_ONLY_LANGS.map((l) => [l, LOCALIZED_BASE_PATHS.filter((b) => !ARTICLES_ONLY_PUBLISHED_PAGES.includes(b))]),
   ),
 }
 /** Languages whose /part/:slug bodies are not translated yet — no route, and

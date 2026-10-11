@@ -496,7 +496,7 @@ export const EXTRA_RELEASE_QUEUE: Record<string, readonly { collection: 'reviews
  * Released AFTER everything above (the whole existing round-robin order), so no existing date moves.
  * Append-only: later waves add their own tail block after this one.
  */
-export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'reviews' | 'comparisons' | 'h2h'; slug: string }[])[] = [
+export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | 'reviews' | 'comparisons' | 'h2h'; slug: string; langs?: readonly string[] }[])[] = [
   // wave A (074)
   [
   { collection: 'comparisons', slug: 'best-red-light-face-masks-2026' },
@@ -525,6 +525,15 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'reviews' | 'c
   { collection: 'reviews', slug: 'blueair-healthprotect-7770i' },
   { collection: 'reviews', slug: 'zoe' },
   ],
+  // wave B (074): fill partially translated pages — only the languages that were missing
+  [
+  { collection: 'reviews', slug: 'garmin-venu-4', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'reviews', slug: 'medito', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'reviews', slug: 'sleep-cycle', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'articles', slug: 'coherent-breathing-guide', langs: ['uk', 'zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'articles', slug: 'caffeine-hrv-resting-heart-rate', langs: ['uk', 'zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'h2h', slug: 'apple-watch-series-12-vs-garmin-venu-4', langs: ['uk', 'zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  ],
 ]
 
 function addDays(iso: string, days: number): string {
@@ -547,7 +556,7 @@ export const RELEASE_QUEUE_ENTRIES: PublishEntry[] = (() => {
   for (let i = 0; i < longest; i++) for (const s of streams) if (s[i]) order.push(s[i])
   baseCount = order.length
   // Tail waves: each wave round-robins across languages and starts after everything before it.
-  for (const wave of TAIL_RELEASE_QUEUE) for (const r of wave) for (const lang of LANG_ORDER) order.push({ lang, collection: r.collection as PublishCollection, slug: r.slug })
+  for (const wave of TAIL_RELEASE_QUEUE) for (const r of wave) for (const lang of LANG_ORDER) if (!r.langs || r.langs.includes(lang)) order.push({ lang, collection: r.collection as PublishCollection, slug: r.slug })
   return order.map((e, i) => ({ ...e, publishOn: addDays(QUEUE_START, Math.floor(i / PER_BATCH) * EVERY_DAYS) }))
 })()
 

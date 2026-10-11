@@ -614,34 +614,48 @@
       "productType": "Banda pectoral ECG"
     },
     "garmin-venu-4": {
-      "verdict": "Un todoterreno capaz y sin suscripción, con la autonomía para seguir el HRV durante toda la noche — el mejor en nada, competente en todo.",
-      "summary": "El Garmin Venu 4 es la opción con forma de smartwatch más completa de aquí: HRV nocturno sólido, el mejor seguimiento del sueño de Garmin hasta la fecha, batería de varios días y sin suscripción. Es un generalista fuerte que no es el más afilado en ninguna cosa concreta que mide esta comparativa.",
-      "description": "Reseña de ONDA del Garmin Venu 4 como monitor de HRV — un todoterreno sin suscripción con batería de varios días. Puntuado por precisión, sueño, datos y precio.",
-      "bestFor": "Lo mejor para un único dispositivo sin suscripción que hace entrenamiento, salud y HRV con competencia.",
-      "testNote": "Evaluación basada en evidencia — puntuado a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
+      "verdict": "Un todoterreno capaz y sin suscripción, con autonomía para registrar la HRV toda la noche — el mejor en nada, competente en todo.",
+      "summary": "El Garmin Venu 4 es la opción con forma de smartwatch más completa de esta comparativa: HRV nocturna sólida, el mejor seguimiento del sueño de Garmin hasta ahora, batería de varios días y sin suscripción. Es un generalista fuerte que no es el más afinado en ninguno de los aspectos que mide esta comparativa.",
+      "description": "Análisis del Garmin Venu 4 como monitor de HRV: todoterreno sin suscripción y batería de varios días. Puntuado en precisión, sueño, datos y valor.",
+      "bestFor": "Ideal si quieres un único dispositivo sin suscripción que cubra bien entrenamiento, salud y HRV.",
+      "testNote": "Evaluación basada en evidencia — puntuada a partir de especificaciones del fabricante, análisis independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
+      "productType": "Smartwatch",
       "pros": [
-        "Batería de varios días — fácil de llevar durante toda la noche",
-        "Sin suscripción; todas las funciones desbloqueadas al comprar",
-        "Un monitor de salud y entrenamiento todoterreno fuerte",
-        "Datos razonablemente abiertos vía Garmin Connect y su API"
+        "Batería de varios días — fácil de llevar por la noche",
+        "Sin suscripción; todas las funciones incluidas en la compra",
+        "Gran monitor todoterreno de salud y entrenamiento",
+        "Datos razonablemente abiertos con Garmin Connect y su API"
       ],
       "cons": [
-        "Ninguna métrica concreta de aquí lidera su clase",
-        "Garmin Connect se siente recargado y anticuado",
-        "El HRV está menos enfocado en la noche que un monitor de recuperación dedicado",
+        "Ninguna métrica lidera su clase",
+        "Garmin Connect resulta recargada y anticuada",
+        "La HRV está menos centrada en la noche que en un monitor de recuperación dedicado",
         "Solo sensor óptico — sin ECG"
       ],
       "scoreNotes": {
-        "hrv-accuracy": "Garmin HRV Status sigue el HRV nocturno frente a una línea base personal construida en unas tres semanas — sólido, aunque no especializado en la noche.",
-        "sensor": "Sensor óptico Garmin Elevate — un conjunto de PPG capaz, sin hardware de nivel ECG.",
-        "sleep-accuracy": "El Venu 4 lleva el seguimiento del sueño de Garmin más avanzado hasta la fecha, con métricas de alineación circadiana.",
-        "data-access": "Garmin Connect más una API para desarrolladores — razonablemente abierto para exportar y para herramientas de terceros.",
-        "wearability": "Es un reloj, pero una batería de varios días hace que llevarlo de noche de forma constante sea de verdad práctico.",
-        "app-ux": "Garmin Connect es profundo pero recargado y anticuado frente a Oura o Apple.",
-        "value": "Una compra de pago único sin suscripción y con amplia capacidad todoterreno."
+        "hrv-accuracy": "Garmin HRV Status sigue la HRV nocturna frente a una línea base personal construida en unas tres semanas — sólida, aunque no especializada en la noche.",
+        "sensor": "Sensor óptico Garmin Elevate — una matriz PPG competente, sin hardware de nivel ECG.",
+        "sleep-accuracy": "El Venu 4 trae el seguimiento del sueño más avanzado de Garmin hasta ahora, con métricas de alineación circadiana.",
+        "data-access": "Garmin Connect más una API para desarrolladores — razonablemente abierto para exportar y usar herramientas de terceros.",
+        "wearability": "Es un reloj, pero la batería de varios días hace realmente práctico llevarlo cada noche.",
+        "app-ux": "Garmin Connect es profunda pero recargada y anticuada frente a Oura o Apple.",
+        "value": "Una compra única sin suscripción y con amplias capacidades."
       },
-      "content": "## En qué destaca\n\nEl Garmin Venu 4 es la opción con forma de smartwatch más completa de esta comparativa. Garmin HRV Status construye una línea base nocturna en unas tres semanas y luego señala si estás equilibrado o desequilibrado, y el Venu 4 lleva el seguimiento del sueño de Garmin más avanzado hasta la fecha. La autonomía supera con holgura a un smartwatch de uso general, y eso importa: un monitor que puedes llevar varias noches entre cargas produce un registro de variabilidad de la frecuencia cardíaca (HRV o VFC) más continuo. No hay suscripción — el precio compra todo.\n\n## En qué se queda corto\n\nNinguna de las métricas individuales lidera su clase. El HRV es sólido pero no tan limpiamente enfocado en la noche como un monitor de recuperación dedicado, y Garmin Connect, pese a su profundidad, es una experiencia recargada y anticuada frente al software de Oura o de Apple. Es un generalista fuerte más que un especialista — capaz en todos los frentes, el mejor en nada de lo que mide esta comparativa.\n\n## Para quién es\n\nElige el Garmin Venu 4 si quieres un único dispositivo sin suscripción que gestione el entrenamiento, la salud cotidiana y el HRV con competencia, con la autonomía para de verdad llevarlo durante toda la noche. Si la precisión del HRV nocturno es lo único que te importa, un anillo o una banda lo superarán.",
-      "productType": "Smartwatch"
+      "content": "## En qué destaca\n\nEl Garmin Venu 4 es la opción con forma de smartwatch más completa de esta comparativa. Garmin HRV Status construye en unas tres semanas una línea base nocturna de la variabilidad de la frecuencia cardíaca ([HRV o VFC](/glossary/heart-rate-variability)) y luego señala si estás equilibrado o desequilibrado, y el Venu 4 lleva el seguimiento del sueño más avanzado de Garmin hasta la fecha. La autonomía supera con holgura a la de un smartwatch de uso general, y eso importa: un monitor que puedes llevar varias noches entre cargas produce un registro de HRV más continuo. No hay suscripción — el precio lo incluye todo.\n\n## ¿Qué desventajas tiene el Garmin Venu 4?\n\nNinguna de las métricas por separado lidera su clase. La HRV es sólida, pero no tan claramente centrada en la noche como la de un monitor de recuperación dedicado, y Garmin Connect, pese a su profundidad, es una experiencia recargada y anticuada frente al software de Oura o de Apple. Es un generalista fuerte más que un especialista — capaz en todo, el mejor en nada de lo que mide esta comparativa.\n\n**Nota de 2026.** El modelo HRV Status de Garmin no ha cambiado y sigue siendo una lectura coherente, basada en la línea base nocturna, para seguir tu propia tendencia. No se encontró ninguna validación independiente de la HRV del Venu 4 frente a un ECG (a octubre de 2026); las comparativas independientes de 2026 siguen situando la HRV óptica de muñeca un escalón por detrás de los anillos de dedo en precisión absoluta. La ventaja del Venu 4 sobre el buque insignia de Garmin, el [Fenix 8](/reviews/garmin-fenix-8), es el precio, no la precisión — ambos comparten el mismo modelo HRV Status, así que, solo para HRV, el Venu 4, más barato, te da la misma señal.\n\n## ¿Para quién es el Garmin Venu 4?\n\nElige el Garmin Venu 4 si quieres un único dispositivo sin suscripción que cubra con solvencia el entrenamiento, la salud diaria y la HRV, con autonomía para llevarlo de verdad por la noche. Si la precisión de la HRV nocturna es lo único que te importa, un anillo o una banda lo superarán.\n\n---\n\n## Lecturas de fondo\n\nLa ciencia de por qué la HRV es la señal que vale la pena seguir — y de cómo la produce el cuerpo.\n\n- [Precisión interoceptiva y calibración de sensores](/articles/interoceptive-precision-sensor-calibration) — por qué tu propia percepción es la línea base previa con la que mide la HRV\n- [Arquitectura neural antientropía](/articles/anti-entropy-neural-architecture) — la HRV como señal diaria de mantenimiento del sistema autónomo\n- [¿Predice la HRV el tiempo de reacción y la concentración?](/articles/nervous-system-ping-latency) — lo que la HRV en reposo dice, y lo que no, sobre la atención y el autocontrol\n",
+      "faq": [
+        {
+          "q": "¿El Garmin Venu 4 necesita suscripción?",
+          "a": "No — 499 $ en pago único, con todas las funciones incluidas y sin suscripción. Garmin HRV Status construye una línea base nocturna de HRV en unas tres semanas."
+        },
+        {
+          "q": "¿Es preciso el Garmin Venu 4 para la HRV?",
+          "a": "Sólido, pero no el mejor de su clase. Su HRV Status óptico está pensado para tendencias nocturnas; el único Garmin incluido en un estudio nocturno con ECG de referencia es el antiguo Fenix 6 (Dial 2025), y el propio Venu 4 no se ha validado (a octubre de 2026). En un estudio de entrenamiento de fuerza (Yun 2026), un modelo Garmin anterior (Vivosmart 5) subestimó la frecuencia cardíaca justo después de las series y sus estimaciones de calorías se desviaron mucho; ese estudio no evaluó la HRV ni el Venu 4. La batería dura varios días, lo que hace práctico llevarlo cada noche."
+        },
+        {
+          "q": "Garmin Venu 4 o Fenix 8 para HRV: ¿cuál elegir?",
+          "a": "Comparten el mismo modelo HRV Status, así que el valor de HRV es prácticamente idéntico. El Venu 4 (499 $) es la opción con mejor relación calidad-precio; el Fenix 8 (unos 999 $) añade ECG, mapas, buceo y batería de varias semanas — paga la diferencia solo si vas a usarlo."
+        }
+      ]
     },
     "samsung-galaxy-ring": {
       "verdict": "La alternativa a Oura sin suscripción para Android — cómoda y competente, aunque atada al ecosistema de Samsung.",
