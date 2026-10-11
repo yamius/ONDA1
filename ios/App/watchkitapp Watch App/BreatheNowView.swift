@@ -27,6 +27,10 @@ struct BreatheNowView: View {
             Text("\(secondsLeft)s")
                 .font(.footnote)
                 .foregroundStyle(.secondary)
+            Text("Calm pace, about 6 breaths a minute — adjust to what feels right.")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
             if secondsLeft == 0 {
                 Button("Close") { dismiss() }
             }

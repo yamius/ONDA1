@@ -50,6 +50,7 @@ Scope of verification: the shipping app (`src/`, `ios/`). Where the site current
 
 ### Breathing guidance
 - ✅ Breathing is measured. ⚠️ There is **no fixed numeric pacer/metronome** (no inhale/exhale timer, no "4-7-8") in code — guidance is text + audio + reactive visual. Soften "guided resonance breathing (~6 breaths/min)" toward "guided breathing" unless a real pacer is added. (Site is also internally inconsistent: "about six breaths a minute" vs "roughly 5–6 breaths per minute".)
+  - **Exception (task 076, owner decision 2026-10-11) — NOT YET TRUE:** the Apple Watch "Breathe" screen opened from the ONDA complication offers a calm pace of about 6 breaths/min (4 s in / 6 s out), labeled "adjust to what feels right". Never call it optimal, resonance or personalized. This becomes TRUE only once the app version with this screen is released (branch `watch-faces-076`); until then site copy must NOT mention it.
 
 ### Baseline
 - ✅ Window **14 days** (`BASELINE_WINDOW_DAYS = 14`). Three range signals: **Resting HR (bpm), HRV/SDNN (ms), Respiratory rate (/min)**. Four single-value extras: peak HR, avg walking pulse, **VO₂max (est.)**, 1-minute recovery.
