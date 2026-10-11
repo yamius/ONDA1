@@ -1,5 +1,5 @@
 ---
-sourceHash: e83b1b460cc2
+sourceHash: 073b60b66be6
 title: "Trening siłowy a HRV: krótki spadek, powolne efekty, uczciwe luki"
 metaTitle: "Trening siłowy a HRV: co pokazują badania"
 metaDescription: "Co jedna sesja siłowa robi z HRV, co wiadomo o długotrwałym treningu u osób starszych i dlaczego wzrostu u młodych osób nie wykazano."
@@ -79,7 +79,7 @@ Próba była bardzo mała, składała się wyłącznie z młodych mężczyzn, a 
 
 **Zastrzeżenie, które musi towarzyszyć temu wynikowi.** Dane są zgodne z istotnym efektem, ale także z efektem tak małym, że prawie nie ma znaczenia, więc efekt jest kruchy [S1]. Heterogeniczność między badaniami była znaczna, a badania łączyły trening wytrzymałościowy, siłowy i mocy zamiast samego treningu siłowego [S1]. Ta sama analiza nie wykazała istotnego wpływu na SDNN ani na wrażliwość baroreceptorów [S1]. Ten wynik wspiera stwierdzenie „programy ćwiczeń mogą zwiększać spoczynkowe RMSSD u osób starszych”; nie wspiera „trening siłowy zwiększa HRV” jako ogólnej reguły i nic nie mówi o młodych osobach.
 
-**Trening z ograniczeniem przepływu krwi.** Osobna metaanaliza połączyła {{fact:study.liu2026.trials}} dotyczących długotrwałego treningu BFR u osób po przekroczeniu średniego wieku [S2]. RMSSD wzrosło — {{fact:study.liu2026.rmssd}} [S2]. Ten przedział leży dalej od zera, ale autorzy i tak oceniają pewność dowodów jako ograniczoną, a wyniki dla podgrup traktują jako hipotezy do sprawdzenia [S2]. To wynik dotyczący miesięcy jednej konkretnej metody treningowej u osób po przekroczeniu średniego wieku, a nie treningu siłowego ogółem, i nie jest to szybki sposób na zwiększenie HRV.
+**Trening z ograniczeniem przepływu krwi.** Osobna metaanaliza połączyła {{fact:study.liu2026.trials}} dotyczących długotrwałego treningu BFR u osób w wieku czterdziestu pięciu lat i starszych [S2]. RMSSD wzrosło — {{fact:study.liu2026.rmssd}} [S2]. Ten przedział leży dalej od zera, ale autorzy i tak oceniają pewność dowodów jako ograniczoną, a wyniki dla podgrup traktują jako hipotezy do sprawdzenia [S2]. To wynik dotyczący miesięcy jednej konkretnej metody treningowej u osób w wieku czterdziestu pięciu lat i starszych, a nie treningu siłowego ogółem, i nie jest to szybki sposób na zwiększenie HRV.
 
 ## Co zegarek może zmierzyć przy treningu siłowym?
 

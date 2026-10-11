@@ -1,5 +1,5 @@
 ---
-sourceHash: e83b1b460cc2
+sourceHash: 073b60b66be6
 title: "Entrenamiento de fuerza y HRV: bajada aguda, mejoras lentas y lagunas reconocidas"
 metaTitle: "Fuerza y HRV: qué dice la evidencia"
 metaDescription: "Qué le hace una sesión de fuerza a la HRV, qué se sabe del entrenamiento a largo plazo en personas mayores y por qué no se ha demostrado una subida en jóvenes."
@@ -80,7 +80,7 @@ La muestra era muy pequeña, todos hombres jóvenes, y cada condición se probó
 
 **La advertencia que debe acompañar a este resultado.** Los datos son compatibles con un efecto relevante, pero también con uno tan pequeño que apenas importa, así que el efecto es frágil [S1]. La heterogeneidad entre los ensayos fue considerable, y los ensayos agruparon ejercicio aeróbico, de fuerza y de potencia en lugar de solo entrenamiento de fuerza [S1]. El mismo análisis no encontró un efecto significativo sobre el SDNN ni sobre la sensibilidad barorrefleja [S1]. Este resultado respalda que «los programas de ejercicio pueden subir el RMSSD en reposo en personas mayores»; no respalda «el entrenamiento de fuerza sube la HRV» como regla general, y no dice nada sobre las personas jóvenes.
 
-**Entrenamiento con restricción del flujo sanguíneo.** Otro metaanálisis agrupó {{fact:study.liu2026.trials}} de entrenamiento BFR a largo plazo en personas de cuarenta y cinco años o más [S2]. El RMSSD subió, {{fact:study.liu2026.rmssd}} [S2]. Este intervalo queda más lejos de cero, pero los autores siguen calificando la certeza de la evidencia de limitada y tratan sus resultados por subgrupos como hipótesis por comprobar [S2]. Es un resultado sobre meses de un método de entrenamiento concreto en personas a partir de la mediana edad, no sobre el entrenamiento de fuerza en general ni una vía rápida para subir la HRV.
+**Entrenamiento con restricción del flujo sanguíneo.** Otro metaanálisis agrupó {{fact:study.liu2026.trials}} de entrenamiento BFR a largo plazo en personas de cuarenta y cinco años o más [S2]. El RMSSD subió, {{fact:study.liu2026.rmssd}} [S2]. Este intervalo queda más lejos de cero, pero los autores siguen calificando la certeza de la evidencia de limitada y tratan sus resultados por subgrupos como hipótesis por comprobar [S2]. Es un resultado sobre meses de un método de entrenamiento concreto en personas de cuarenta y cinco años o más, no sobre el entrenamiento de fuerza en general ni una vía rápida para subir la HRV.
 
 ## ¿Qué puede medir un reloj en torno al entrenamiento de fuerza?
 

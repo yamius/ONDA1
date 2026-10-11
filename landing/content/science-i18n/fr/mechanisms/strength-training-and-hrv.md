@@ -1,5 +1,5 @@
 ---
-sourceHash: e83b1b460cc2
+sourceHash: 073b60b66be6
 title: "Musculation et HRV : baisse aiguë, gains lents et lacunes assumées"
 metaTitle: "Musculation et HRV : ce que disent les études"
 metaDescription: "Ce qu’une séance de musculation fait à la HRV, ce que l’on sait de l’entraînement au long cours chez les personnes âgées et pourquoi une hausse chez les jeunes n’a pas été démontrée."
@@ -80,7 +80,7 @@ L’échantillon était très petit, uniquement de jeunes hommes, et chaque cond
 
 **La réserve qui doit accompagner ce résultat.** Les données sont compatibles avec un effet notable, mais aussi avec un effet si faible qu’il compte à peine : l’effet est donc fragile [S1]. L’hétérogénéité entre les essais était importante, et ceux-ci regroupaient endurance, musculation et travail de puissance plutôt que la musculation seule [S1]. La même analyse n’a trouvé aucun effet significatif sur le SDNN ni sur la sensibilité du baroréflexe [S1]. Ce résultat soutient l’idée que « des programmes d’exercice peuvent augmenter la RMSSD au repos chez les personnes âgées » ; il ne soutient pas « la musculation augmente la HRV » comme règle générale, et il ne dit rien des personnes jeunes.
 
-**L’entraînement avec restriction du flux sanguin.** Une autre méta-analyse a regroupé {{fact:study.liu2026.trials}} d’entraînement BFR au long cours chez des personnes de quarante-cinq ans et plus [S2]. La RMSSD a augmenté — {{fact:study.liu2026.rmssd}} [S2]. Cet intervalle est plus éloigné de zéro, mais les auteurs jugent toujours le niveau de certitude limité et considèrent leurs résultats par sous-groupe comme des hypothèses à tester [S2]. C’est un résultat portant sur des mois d’une méthode d’entraînement précise chez des personnes ayant passé le milieu de la vie, pas sur la musculation en général, ni un moyen rapide d’augmenter la HRV.
+**L’entraînement avec restriction du flux sanguin.** Une autre méta-analyse a regroupé {{fact:study.liu2026.trials}} d’entraînement BFR au long cours chez des personnes de quarante-cinq ans et plus [S2]. La RMSSD a augmenté — {{fact:study.liu2026.rmssd}} [S2]. Cet intervalle est plus éloigné de zéro, mais les auteurs jugent toujours le niveau de certitude limité et considèrent leurs résultats par sous-groupe comme des hypothèses à tester [S2]. C’est un résultat portant sur des mois d’une méthode d’entraînement précise chez des personnes de quarante-cinq ans et plus, pas sur la musculation en général, ni un moyen rapide d’augmenter la HRV.
 
 ## Que peut mesurer une montre autour de la musculation ?
 

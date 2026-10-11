@@ -1,5 +1,5 @@
 ---
-sourceHash: e83b1b460cc2
+sourceHash: 073b60b66be6
 title: "Krafttraining und HRV: kurzer Abfall, langsame Effekte, ehrliche Lücken"
 metaTitle: "Krafttraining und HRV: Was die Evidenz zeigt"
 metaDescription: "Was eine einzelne Krafteinheit mit der HRV macht, was über langfristiges Training bei älteren Menschen bekannt ist und warum ein Anstieg bei jungen Menschen nicht gezeigt ist."
@@ -79,7 +79,7 @@ Die Stichprobe war sehr klein, bestand nur aus jungen Männern, und jede Bedingu
 
 **Der Vorbehalt, der zu diesem Ergebnis gehört.** Die Daten sind mit einem bedeutsamen Effekt vereinbar, aber auch mit einem so kleinen, dass er kaum ins Gewicht fällt; der Effekt ist also fragil [S1]. Die Heterogenität zwischen den Studien war erheblich, und die Studien fassten Ausdauer-, Kraft- und Schnellkrafttraining zusammen statt Krafttraining allein [S1]. Dieselbe Analyse fand keinen signifikanten Effekt auf SDNN oder auf die Baroreflexsensitivität [S1]. Dieses Ergebnis stützt die Aussage „Trainingsprogramme können den RMSSD in Ruhe bei älteren Menschen erhöhen“; es stützt nicht „Krafttraining erhöht die HRV“ als allgemeine Regel und sagt nichts über junge Menschen.
 
-**Training mit Blutflussrestriktion.** Eine separate Metaanalyse fasste {{fact:study.liu2026.trials}} zu langfristigem BFR-Training bei Menschen über der Lebensmitte zusammen [S2]. Der RMSSD stieg – {{fact:study.liu2026.rmssd}} [S2]. Dieses Intervall liegt weiter von null entfernt, doch die Autoren bewerten die Sicherheit der Evidenz dennoch als begrenzt und behandeln ihre Subgruppenbefunde als Hypothesen, die erst zu prüfen sind [S2]. Es ist ein Ergebnis über monatelanges Training mit einer bestimmten Methode bei Menschen jenseits der Lebensmitte, nicht über Krafttraining allgemein und kein schneller Weg, die HRV zu erhöhen.
+**Training mit Blutflussrestriktion.** Eine separate Metaanalyse fasste {{fact:study.liu2026.trials}} zu langfristigem BFR-Training bei Menschen ab fünfundvierzig Jahren zusammen [S2]. Der RMSSD stieg – {{fact:study.liu2026.rmssd}} [S2]. Dieses Intervall liegt weiter von null entfernt, doch die Autoren bewerten die Sicherheit der Evidenz dennoch als begrenzt und behandeln ihre Subgruppenbefunde als Hypothesen, die erst zu prüfen sind [S2]. Es ist ein Ergebnis über monatelanges Training mit einer bestimmten Methode bei Menschen ab fünfundvierzig Jahren, nicht über Krafttraining allgemein und kein schneller Weg, die HRV zu erhöhen.
 
 ## Was kann eine Uhr rund ums Krafttraining messen?
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: e83b1b460cc2
+sourceHash: 073b60b66be6
 title: "Krachttraining en HRV: korte dip, trage winst, eerlijke hiaten"
 metaTitle: "Krachttraining en HRV: wat het bewijs laat zien"
 metaDescription: "Wat één krachtsessie met HRV doet, wat bekend is over langdurig trainen bij ouderen en waarom een stijging bij jonge mensen niet is aangetoond."
@@ -79,7 +79,7 @@ De steekproef was heel klein, bestond alleen uit jonge mannen, en elke conditie 
 
 **Het voorbehoud dat bij dit resultaat hoort.** De gegevens passen bij een betekenisvol effect, maar ook bij een effect dat zo klein is dat het nauwelijks uitmaakt; het effect is dus fragiel [S1]. De heterogeniteit tussen de studies was aanzienlijk, en de studies voegden duur-, kracht- en explosieve training samen in plaats van alleen krachttraining [S1]. Dezelfde analyse vond geen significant effect op SDNN of op de baroreflexgevoeligheid [S1]. Dit resultaat ondersteunt "trainingsprogramma's kunnen de RMSSD in rust bij ouderen verhogen"; het ondersteunt niet "krachttraining verhoogt HRV" als algemene regel en zegt niets over jonge mensen.
 
-**Training met bloedstroomrestrictie.** Een aparte meta-analyse voegde {{fact:study.liu2026.trials}} samen over langdurige BFR-training bij mensen voorbij de middelbare leeftijd [S2]. De RMSSD steeg — {{fact:study.liu2026.rmssd}} [S2]. Dit interval ligt verder van nul, maar de auteurs beoordelen de zekerheid van het bewijs toch als beperkt en behandelen hun subgroepbevindingen als hypothesen die nog getoetst moeten worden [S2]. Het is een resultaat over maanden van één specifieke trainingsmethode bij mensen voorbij de middelbare leeftijd, niet over krachttraining in het algemeen en geen snelle manier om HRV te verhogen.
+**Training met bloedstroomrestrictie.** Een aparte meta-analyse voegde {{fact:study.liu2026.trials}} samen over langdurige BFR-training bij mensen van vijfenveertig jaar en ouder [S2]. De RMSSD steeg — {{fact:study.liu2026.rmssd}} [S2]. Dit interval ligt verder van nul, maar de auteurs beoordelen de zekerheid van het bewijs toch als beperkt en behandelen hun subgroepbevindingen als hypothesen die nog getoetst moeten worden [S2]. Het is een resultaat over maanden van één specifieke trainingsmethode bij mensen van vijfenveertig jaar en ouder, niet over krachttraining in het algemeen en geen snelle manier om HRV te verhogen.
 
 ## Wat kan een horloge meten rond krachttraining?
 

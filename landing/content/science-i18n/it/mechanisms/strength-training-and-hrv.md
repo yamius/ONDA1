@@ -1,5 +1,5 @@
 ---
-sourceHash: e83b1b460cc2
+sourceHash: 073b60b66be6
 title: "Allenamento di forza e HRV: calo breve, guadagni lenti, lacune dichiarate"
 metaTitle: "Allenamento di forza e HRV: cosa dicono le prove"
 metaDescription: "Che cosa fa una singola seduta di forza all'HRV, che cosa si sa dell'allenamento a lungo termine negli anziani e perché un aumento nei giovani non è stato dimostrato."
@@ -80,7 +80,7 @@ Il campione era molto piccolo, composto solo da giovani uomini, e ogni condizion
 
 **L'avvertenza che deve accompagnare questo risultato.** I dati sono compatibili con un effetto rilevante, ma anche con uno così piccolo da contare poco, quindi l'effetto è fragile [S1]. L'eterogeneità tra gli studi era sostanziale, e gli studi mettevano insieme esercizio aerobico, di forza e di potenza invece del solo allenamento di forza [S1]. La stessa analisi non ha trovato un effetto significativo su SDNN né sulla sensibilità baroriflessa [S1]. Questo risultato sostiene l'affermazione «i programmi di esercizio possono aumentare l'RMSSD a riposo negli anziani»; non sostiene «l'allenamento di forza aumenta l'HRV» come regola generale e non dice nulla sui giovani.
 
-**Allenamento con restrizione del flusso sanguigno.** Una meta-analisi distinta ha aggregato {{fact:study.liu2026.trials}} sull'allenamento BFR a lungo termine in persone oltre la mezza età [S2]. L'RMSSD è aumentato: {{fact:study.liu2026.rmssd}} [S2]. Questo intervallo è più lontano dallo zero, ma gli autori giudicano comunque limitata la certezza delle prove e trattano i risultati dei sottogruppi come ipotesi da verificare [S2]. È un risultato su mesi di un metodo di allenamento specifico in persone oltre la mezza età, non sull'allenamento di forza in generale, e non è un modo rapido per aumentare l'HRV.
+**Allenamento con restrizione del flusso sanguigno.** Una meta-analisi distinta ha aggregato {{fact:study.liu2026.trials}} sull'allenamento BFR a lungo termine in persone di quarantacinque anni e oltre [S2]. L'RMSSD è aumentato: {{fact:study.liu2026.rmssd}} [S2]. Questo intervallo è più lontano dallo zero, ma gli autori giudicano comunque limitata la certezza delle prove e trattano i risultati dei sottogruppi come ipotesi da verificare [S2]. È un risultato su mesi di un metodo di allenamento specifico in persone di quarantacinque anni e oltre, non sull'allenamento di forza in generale, e non è un modo rapido per aumentare l'HRV.
 
 ## Che cosa può misurare un orologio durante l'allenamento di forza?
 
