@@ -26,11 +26,12 @@ faq:
     a: "In one very small study in young men, heart rate and HRV during the night after an evening strength session did not differ from a night after rest. That is a null result from a tiny sample, not proof that it never happens; compare your own nights with your baseline."
   - q: "Can my watch measure HRV during a set?"
     a: "The validation studies of strength training measured heart rate and calories only, not HRV. Watch heart rate fell behind straight after each set and calorie estimates agreed poorly with measured energy use. Compare resting readings taken the same way, such as at night."
+image: /images/science/mechanisms-strength-training-and-hrv.jpg
 imageAlt: "A thin outline of a barbell above a faint heart trace that dips briefly after the lift and then levels out into steady beats."
 imagePrompt: "Minimal scientific illustration on a clean white background: the thin outline of a barbell resting above a single glowing heart-rate wave that dips briefly in the middle and then returns to calm, even beats, thin teal lines with a soft cyan glow, lots of empty space, no text, no numbers, no people, no devices, light and calm, landscape."
 editor: "Yakiv Bilenko"
 reviewer: null
-lastReviewed: null
+lastReviewed: "2026-10-11"
 related:
   glossary: [heart-rate-variability]
   articles: [overtraining-hrv-resting-heart-rate]

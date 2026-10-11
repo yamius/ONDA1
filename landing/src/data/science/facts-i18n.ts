@@ -209,6 +209,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     },
     'claim.hrvNotStress': { display: 'Одно низкое значение HRV само по себе не означает, что вы в стрессе или нездоровы' },
     'altitude.li.studies': { display: "15 исследований с 698 участниками" },
+    'study.etayo2026.studies': { display: "15 рандомизированных исследований упражнений у пожилых людей; 10 из них объединены в метаанализ, из них 7 — по RMSSD" },
     'altitude.li.scope': { display: "здоровые взрослые, которые поднялись на 2 500 м или выше и были обследованы в первые семь дней пребывания на высоте" },
     'altitude.li.threshold': { display: "примерно 3 500 м" },
     'altitude.li.maxAltitude': { display: "4 000 м" },

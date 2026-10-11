@@ -29,7 +29,7 @@ related:
   glossary: [heart-rate-variability]
   articles: [overtraining-hrv-resting-heart-rate, zone-2-training-aerobic-base]
   tools: [baseline]
-  science: [mechanisms/hrv-day-to-day, concepts/hrv-baseline, concepts/interpreting-hrv, mechanisms/sleep-and-hrv, measurements/heart-rate-variability, mechanisms/alcohol-and-hrv]
+  science: [mechanisms/strength-training-and-hrv, mechanisms/hrv-day-to-day, concepts/hrv-baseline, concepts/interpreting-hrv, mechanisms/sleep-and-hrv, measurements/heart-rate-variability, mechanisms/alcohol-and-hrv]
 sources:
   - id: S1
     cite: "Stanley, Peake & Buchheit (2013)"
@@ -304,6 +304,8 @@ This page gives no training-load advice. Planning sessions is a matter for you a
 - **HRV guidance has not been shown to beat a good fixed plan** on performance or peak oxygen uptake [S2], and in one small trial in heart patients the primary outcome did not differ [S3].
 - **The best decision rule is unknown.** The trials used different thresholds and protocols [S2], and the long-term benefit for recreational exercisers has not been shown.
 - **Most data are aerobic.** Strength training is covered too thinly to apply the same time course [S1].
+
+What the strength-specific studies do and do not show is set out on [strength training and HRV](/science/mechanisms/strength-training-and-hrv).
 
 If training does not explain a low reading, [why is my HRV low?](/science/questions/why-is-my-hrv-low) lists other common causes.
 
