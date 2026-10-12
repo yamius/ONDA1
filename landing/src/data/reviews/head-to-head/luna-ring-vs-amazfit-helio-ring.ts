@@ -11,9 +11,9 @@ const lunaVsHelio: HeadToHeadInput = {
     'These are two of the cheapest subscription-free smart rings, both aimed at people who want core Oura-style tracking without the price or the membership. The Noise Luna Ring Gen 2 (~$300) leans on a pocket charging case for a long total battery and accurate sleep; the Amazfit Helio Ring ($199) is cheaper and lighter but ships in only three sizes. Both are value picks with trade-offs.',
   jobDependentVerdict: true,
   verdict:
-    'Two budget subscription-free rings. The Amazfit Helio Ring is cheaper ($199) and lighter; the Noise Luna Ring Gen 2 (~$300) has a wider size range, a charging case for long total battery, and equally good sleep tracking. Pick the Helio for lowest price if it fits, the Luna for better fit options and the charging-case convenience.',
+    'Two budget subscription-free rings. The Amazfit Helio Ring is cheaper ($199) and lighter; the Noise Luna Ring Gen 2 (~$300) has a wider size range, a charging case for long total battery, and the same basic sleep tracking (stage estimates, not independently validated). Pick the Helio for lowest price if it fits, the Luna for better fit options and the charging-case convenience.',
   bestForA:
-    'Choose the Noise Luna Ring Gen 2 if you want good sleep tracking, a wider size range and a charging case for long total battery, and $300 is acceptable.',
+    'Choose the Noise Luna Ring Gen 2 if you want basic sleep tracking (stage estimates, not independently validated), a wider size range and a charging case for long total battery, and $300 is acceptable.',
   bestForB:
     'Choose the Amazfit Helio Ring if you want the cheapest, lightest subscription-free ring and one of its three sizes fits you.',
   axes: [
@@ -21,13 +21,13 @@ const lunaVsHelio: HeadToHeadInput = {
     { name: 'Subscription', winner: 'tie', note: 'Tie — both are one-time purchases with no membership.' },
     { name: 'Single-charge battery', winner: 'a', note: 'Per the manufacturers: up to 7 days for the Luna Ring (for the Gen 2, up to 5 days per Wareable) and up to 4 days for the Helio per charge. Reviewers report less in real use (Luna ~4, Helio ~2.5–3), and the Luna’s headline ~30 days depends on the charging case.' },
     { name: 'Fit & sizing', winner: 'a', note: 'The Helio ships in only three sizes (8, 10, 12); the Luna offers a wider range, so more people can fit it well.' },
-    { name: 'Sleep tracking', winner: 'tie', note: 'Both track sleep well for the price — sleep staging is a strong point for each.' },
+    { name: 'Sleep tracking', winner: 'tie', note: 'Both offer basic sleep tracking for the price — stage estimates, with no independent validation found for either.' },
     { name: 'Extras', winner: 'a', note: 'The Luna adds a voice-activated Luna AI assistant and a pocket charging case; the Helio is more bare-bones.' },
   ],
   faq: [
     {
       q: 'Noise Luna Ring or Amazfit Helio Ring?',
-      a: 'Both are cheap subscription-free rings with good sleep tracking. The Amazfit Helio is cheaper ($199) and lighter but comes in only three sizes; the Noise Luna (~$300) has a wider size range, a charging case for long total battery and a voice assistant. Pick the Helio for lowest price if it fits, the Luna for fit options and extras.',
+      a: 'Both are cheap subscription-free rings with basic sleep tracking (stage estimates, not independently validated). The Amazfit Helio is cheaper ($199) and lighter but comes in only three sizes; the Noise Luna (~$300) has a wider size range, a charging case for long total battery and a voice assistant. Pick the Helio for lowest price if it fits, the Luna for fit options and extras.',
     },
     {
       q: 'Which has better battery?',
@@ -44,7 +44,7 @@ Two budget subscription-free rings. The [Amazfit Helio Ring](/reviews/amazfit-he
 
 ## When is the Noise Luna Ring the right pick?
 
-You want good sleep tracking, more fit options and the charging-case convenience, and $300 is fine.
+You want basic sleep tracking, more fit options and the charging-case convenience, and $300 is fine.
 
 ## When is the Amazfit Helio Ring the right pick?
 

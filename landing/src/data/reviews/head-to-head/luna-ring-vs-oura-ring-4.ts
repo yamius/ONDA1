@@ -6,19 +6,19 @@ const lunaVsOura4: HeadToHeadInput = {
   productBSlug: 'oura-ring-4',
   title: 'Noise Luna Ring vs Oura Ring 4 (2026)',
   description:
-    'Noise Luna Ring Gen 2 vs Oura Ring 4 — the affordable subscription-free ring vs the best-supported ring line with a membership. Is the budget ring a good enough Oura alternative?',
+    'Noise Luna Ring Gen 2 vs Oura Ring 4 — the affordable subscription-free ring vs the best-supported ring line with a membership. Is the budget ring enough?',
   intro:
-    'This is the budget-vs-reference ring question, Noise edition. The Noise Luna Ring Gen 2 is around $300 with no subscription and competent sleep tracking; the Oura Ring 4 is the best-supported ring line and app reference but costs $349 plus a mandatory membership. One is the own-it-outright value pick; the other is the polished experience you keep paying for.',
+    'This is the budget-vs-reference ring question, Noise edition. The Noise Luna Ring Gen 2 is around $300 with no subscription and basic sleep tracking (stage estimates, not independently validated); the Oura Ring 4 is the best-supported ring line and app reference but costs $349 plus a mandatory membership. One is the own-it-outright value pick; the other is the polished experience you keep paying for.',
   jobDependentVerdict: true,
   verdict:
-    'Value vs reference. The Noise Luna Ring Gen 2 wins on cost — ~$300, no subscription — with competent sleep tracking and a charging case for long total battery. Oura Ring 4 has an independent check against ECG (overnight recordings from 13 people, Dial 2025); Luna Ring has none. Oura also wins on app polish, fit range and single-charge battery, at $349 plus ~$6/month. If price and no-subscription matter most, Luna; if accuracy and experience do, Oura.',
+    'Value vs reference. The Noise Luna Ring Gen 2 wins on cost — ~$300, no subscription — with basic sleep tracking (stage estimates, not independently validated) and a charging case for long total battery. Oura Ring 4 has an independent check against a chest-strap reference (overnight recordings from 13 people, Dial 2025); Luna Ring has none. Oura also wins on app polish, fit range and single-charge battery, at $349 plus ~$6/month. If price and no-subscription matter most, Luna; if accuracy and experience do, Oura.',
   bestForA:
-    'Choose the Noise Luna Ring Gen 2 if you want a cheap, subscription-free ring with good sleep tracking and don’t mind leaning on the charging case.',
+    'Choose the Noise Luna Ring Gen 2 if you want a cheap, subscription-free ring with basic sleep tracking and don’t mind leaning on the charging case.',
   bestForB:
     'Choose the Oura Ring 4 if you want the only independently checked overnight HRV of the two (one study) and the most detailed sleep data, the best app and longer single-charge battery, and the membership is acceptable.',
   axes: [
     { name: 'Cost model', winner: 'a', note: 'Luna: ~$300 one-time, no subscription. Oura Ring 4: $349 + ~$6/month. Over a couple of years the Luna costs far less.' },
-    { name: 'Accuracy', winner: 'b', note: 'Oura Ring 4 has an independent check of heart rate and HRV against ECG (overnight recordings from 13 people, Dial 2025); no independent check of its sleep staging was found. The Luna has no independent validation.' },
+    { name: 'Accuracy', winner: 'b', note: 'Oura Ring 4 has an independent check of heart rate and HRV against a chest-strap reference (overnight recordings from 13 people, Dial 2025); no independent check of its sleep staging was found. The Luna has no independent validation.' },
     { name: 'Sleep tracking', winner: 'tie', note: 'Both report sleep stages, but no independent check of either ring’s sleep staging was found, so neither can be called more accurate.' },
     { name: 'App & ecosystem', winner: 'b', note: 'Oura’s app is the most polished and explanatory in the category; the Luna app is capable but has some rough edges.' },
     { name: 'Single-charge battery', winner: 'b', note: 'Oura Ring 4: ~6–8 days. Luna: ~4 days per charge (the case extends the total). Oura lasts longer between charges.' },
@@ -27,7 +27,7 @@ const lunaVsOura4: HeadToHeadInput = {
   faq: [
     {
       q: 'Is the Noise Luna Ring a good cheap alternative to Oura?',
-      a: 'For the price, yes — ~$300 with no subscription gets you competent sleep tracking and core HRV. But Oura has one independent overnight HRV check against ECG (the Luna has none), has the better app, longer single-charge battery and wider fit range. The Luna is the value pick; Oura is the premium pick you pay a subscription for.',
+      a: 'For the price, yes — ~$300 with no subscription gets you basic sleep tracking (stage estimates, not independently validated) and core HRV. But Oura has one independent overnight HRV check against a chest-strap reference (the Luna has none), has the better app, longer single-charge battery and wider fit range. The Luna is the value pick; Oura is the premium pick you pay a subscription for.',
     },
     {
       q: 'How much cheaper is the Luna over time?',
@@ -35,16 +35,16 @@ const lunaVsOura4: HeadToHeadInput = {
     },
     {
       q: 'Is the Luna accurate enough?',
-      a: 'For sleep and general recovery trends, yes — sleep staging is its strongest area. If you want the more mature app and a ring with at least one independent overnight HRV check (on Oura Ring 4), Oura leads, at the cost of a subscription.',
+      a: 'For basic sleep and recovery trends, yes — but its sleep stages are estimates without independent validation. If you want the more mature app and a ring with at least one independent overnight HRV check (on Oura Ring 4), Oura leads, at the cost of a subscription.',
     },
   ],
   content: `## The short version
 
-Budget vs reference. The [Noise Luna Ring Gen 2](/reviews/luna-ring) is ~$300 with no subscription and competent sleep tracking; the [Oura Ring 4](/reviews/oura-ring-4) is the app leader from the best-supported ring line at $349 plus a membership.
+Budget vs reference. The [Noise Luna Ring Gen 2](/reviews/luna-ring) is ~$300 with no subscription and basic sleep tracking (stage estimates, not independently validated); the [Oura Ring 4](/reviews/oura-ring-4) is the app leader from the best-supported ring line at $349 plus a membership.
 
 ## When is the Noise Luna Ring the right pick?
 
-You want the cheaper, subscription-free ring with good sleep tracking and don’t mind the charging case.
+You want the cheaper, subscription-free ring with basic sleep tracking and don’t mind the charging case.
 
 ## When is the Oura Ring 4 the right pick?
 
