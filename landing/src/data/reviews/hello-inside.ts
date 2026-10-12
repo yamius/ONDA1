@@ -21,7 +21,7 @@ const helloInside: ToolReviewInput = {
     { criterionId: 'value', score: 7.0, note: '€99–€129/month (~$110–$145) including sensors. Mid-pack EU pricing.' },
   ],
   pros: [
-    'Strongest German-language CGM content in the category',
+    'Native German-language content',
     'No annual lock-in — monthly billing default',
     'Group dietitian sessions on higher tiers',
     'Weekly written progress reports — a coaching substitute',
@@ -66,9 +66,9 @@ The metabolic biology these programmes surface — and the protocols the data un
   ],
   relatedSlugs: ['veri', 'lingo', 'zoe'],
   faq: [
-    { q: "How much does Hello Inside cost?", a: "Hello Inside costs €99–€129 per month (about $130), with sensors included. Billing is monthly by default, so there is no annual lock-in. Higher tiers add group dietitian sessions, and the programme includes weekly written progress reports that act as a coaching substitute." },
+    { q: "How much does Hello Inside cost?", a: "Hello Inside costs €99–€129 per month (about $110–$145), with sensors included. Billing is monthly by default, so there is no annual lock-in. Higher tiers add group dietitian sessions, and the programme includes weekly written progress reports that act as a coaching substitute." },
     { q: "Which CGM sensor does Hello Inside use?", a: "Hello Inside uses the Abbott Libre 3 sensor. It is paired with a beginner-friendly app. In an independent head-to-head study (Eichenlaub et al. 2025) Libre 3 and Dexcom G7 were similarly accurate, so the choice comes down to language, coaching and price rather than the sensor." },
-    { q: "Hello Inside vs Veri: which is better?", a: "Veri offers a deeper insight engine and broader third-party integration. Hello Inside wins on language: it has the strongest German-language CGM content in the category. German-speaking EU users will likely prefer Hello Inside; others will usually get more from Veri." },
+    { q: "Hello Inside vs Veri: which is better?", a: "Veri offers a deeper insight engine and broader third-party integration. Hello Inside wins on language: it offers native German-language content. German-speaking EU users will likely prefer Hello Inside; others will usually get more from Veri." },
   ],
   datePublished: '2026-05-21',
   dateModified: '2026-10-10',

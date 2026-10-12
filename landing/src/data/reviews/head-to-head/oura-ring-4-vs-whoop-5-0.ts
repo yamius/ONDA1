@@ -16,7 +16,7 @@ const ouraRing4VsWhoop50: HeadToHeadInput = {
   bestForB:
     'Choose Whoop 5.0 if you train hard, treat the daily recovery score as a coaching signal, and prefer a band you actively engage with over a passive ring.',
   axes: [
-    { name: 'HRV measurement accuracy', criterionId: 'hrv-accuracy', note: 'Oura Ring 4 has an independent check against a chest-strap reference (overnight recordings from 13 people, Dial 2025), where it agreed slightly more closely than the earlier WHOOP 4.0; the WHOOP 5.0 itself has no independent validation against a reference device (as of October 2026).' },
+    { name: 'HRV measurement accuracy', criterionId: 'hrv-accuracy', note: 'Oura Ring 4 has an independent check against a single-lead chest-strap ECG (Polar H10; overnight recordings from 13 people, Dial 2025), where it agreed slightly more closely than the earlier WHOOP 4.0; the WHOOP 5.0 itself has no independent validation against a reference device (as of October 2026).' },
     { name: 'Sleep tracking', winner: 'tie', note: 'Practically equal on accuracy — neither has an independent validation of sleep staging (as of October 2026). Oura’s sleep staging has been validated only in maker-funded studies, and wearable sleep stages are still estimates; Whoop’s is competent but narrower in the metrics surfaced.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s daily Recovery score and Strain coach are sharper and more actionable for trained users than Oura’s Readiness.' },
     { name: 'Form factor and wearability', winner: 'a', note: 'A ring is more wearable around the clock than a band — sleep, work, gym, social. Whoop band shows in dress codes.' },
@@ -27,7 +27,7 @@ const ouraRing4VsWhoop50: HeadToHeadInput = {
   faq: [
     {
       q: 'Which is more accurate for HRV — Oura Ring 4 or Whoop 5.0?',
-      a: 'Oura Ring 4. In an independent study of overnight recordings against a chest strap (13 people, Dial 2025), Oura Ring 4 agreed slightly more closely than WHOOP 4.0; no independent validation of WHOOP 5.0 against a reference device was found (as of October 2026).',
+      a: 'Oura Ring 4. In an independent study of overnight recordings against an ECG chest strap (Polar H10; 13 people, Dial 2025), Oura Ring 4 agreed slightly more closely than WHOOP 4.0; no independent validation of WHOOP 5.0 against a reference device was found (as of October 2026).',
     },
     {
       q: 'Is Whoop 5.0 better for athletes than Oura Ring 4?',
@@ -44,7 +44,7 @@ const ouraRing4VsWhoop50: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Oura Ring 4 wins for the general HRV-tracking use case. In one small study (13 people) Oura agreed slightly more closely with a chest-strap reference overnight than the earlier WHOOP 4.0 — the 5.0 has not been validated — the sleep analytics are deeper, and the ring is the more wearable form factor for the 24/7 use a recovery wearable demands. Whoop 5.0 wins specifically for athletes who run their training on a daily recovery score and prefer the band format for active engagement.
+Oura Ring 4 wins for the general HRV-tracking use case. In one small study (13 people) Oura agreed slightly more closely with a single-lead chest-strap ECG (Polar H10) overnight than the earlier WHOOP 4.0 — the 5.0 has not been validated — the sleep analytics are deeper, and the ring is the more wearable form factor for the 24/7 use a recovery wearable demands. Whoop 5.0 wins specifically for athletes who run their training on a daily recovery score and prefer the band format for active engagement.
 
 ## How they really differ
 

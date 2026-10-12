@@ -9,7 +9,7 @@ const whoop5: ToolReviewInput = {
   description:
     'ONDA review of the Whoop 5.0 — a continuous-HRV recovery tracker for athletes, scored on accuracy, sensor quality, data access and value.',
   verdict:
-    'A recovery coach on your wrist: continuous overnight HRV and sharp strain insight, locked behind a perpetual membership.',
+    'A recovery coach on your wrist: continuous overnight HRV and detailed strain and recovery scores, locked behind a perpetual membership.',
   summary:
     'The Whoop 5.0 is built around recovery. It builds its daily recovery signal from HRV measured during sleep rather than from a morning spot-check. The trade-off is the model: there is no hardware to own, only an ongoing membership.',
   scores: [
@@ -23,9 +23,8 @@ const whoop5: ToolReviewInput = {
   ],
   pros: [
     'Continuous overnight HRV, not a single morning reading',
-    'Sharp, actionable recovery and strain coaching',
+    'Detailed strain and recovery scores',
     'Screenless and comfortable; ~14 day battery, charges on-body',
-    'Lowest first-year cost of the three',
   ],
   cons: [
     'Subscription-only — stop paying and the band stops working',

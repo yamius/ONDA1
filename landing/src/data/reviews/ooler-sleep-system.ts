@@ -7,21 +7,21 @@ const oolerSleepSystem: ToolReviewInput = {
   category: 'sleep-climate',
   productType: 'Legacy water-cooled mattress pad with scheduling',
   description:
-    'ONDA review of the OOLER Sleep System — the long-running Sleepme water-cooled sleep system that introduced climate scheduling to the category.',
+    'ONDA review of the OOLER Sleep System — the long-running Sleepme water-cooled system, an early Sleepme model with app scheduling.',
   verdict:
     'Legacy Sleepme water-cooled system — solid track record, app scheduling, superseded by Dock Pro for new buyers.',
   summary:
-    'OOLER Sleep System is the long-running Sleepme water-cooled mattress pad that introduced app-based climate scheduling to the consumer category. Superseded by Dock Pro for new buyers but still sold from inventory at discount. Solid multi-year reliability, comparable cooling to Dock Pro, narrower app feature set.',
+    'OOLER Sleep System is the long-running Sleepme water-cooled mattress pad — an early Sleepme system with app scheduling. Superseded by Dock Pro for new buyers but still sold from inventory at discount. Solid multi-year reliability, comparable cooling to Dock Pro, narrower app feature set.',
   scores: [
-    { criterionId: 'climate-range', score: 8.0, note: 'Solid water-cooled range comparable to Dock Pro. Slightly less rigorous than Dock Pro in peak heat.' },
+    { criterionId: 'climate-range', score: 8.0, note: 'Solid water-cooled range comparable to Dock Pro. Slightly less powerful than Dock Pro in peak heat.' },
     { criterionId: 'build', score: 8.0, note: 'Legacy Sleepme hardware with strong multi-year reliability track record. 2-year warranty.' },
-    { criterionId: 'app-tracking', score: 7.0, note: 'OOLER app with climate scheduling — introduced this feature to the category. No HRV or sleep tracking.' },
+    { criterionId: 'app-tracking', score: 7.0, note: 'OOLER app with climate scheduling — an early Sleepme app-scheduling system. No HRV or sleep tracking.' },
     { criterionId: 'form-factor', score: 7.5, note: 'Pad on existing mattress. Single-zone in base; dual-zone with two units. Hub footprint moderate.' },
     { criterionId: 'subscription', score: 9.5, note: 'No subscription required.' },
     { criterionId: 'value', score: 7.5, note: '$1,200-1,500 at remaining inventory pricing. Value tier within Sleepme line.' },
   ],
   pros: [
-    'Introduced climate scheduling to the consumer water-cooled category',
+    'An early Sleepme system with app scheduling',
     'Solid Sleepme multi-year reliability track record',
     'No subscription required',
     'Pad on existing mattress — flexible install',
@@ -41,7 +41,7 @@ const oolerSleepSystem: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-OOLER Sleep System is the long-running Sleepme water-cooled pad that introduced climate scheduling to the consumer category. Solid multi-year reliability and comparable cooling to the premium Dock Pro at lower inventory prices.
+OOLER Sleep System is the long-running Sleepme water-cooled pad — an early Sleepme system with app scheduling. Solid multi-year reliability and comparable cooling to the premium Dock Pro at lower inventory prices.
 
 ## What are the downsides of the OOLER Sleep System?
 
@@ -58,7 +58,7 @@ Choose OOLER if it is available at discount and you want Sleepme water-cooled cl
 The biology of why bed-temperature regulation drives sleep depth and recovery.
 
 - [Protocol: the circadian hard reset](/articles/protocol-circadian-hard-reset) — where cooling fits into a sleep-rhythm reset routine
-- [Ancestral sync and circadian anchors](/articles/ancestral-sync-circadian-anchors) — why nocturnal cooling matches the ancestral baseline
+- [Ancestral sync and circadian anchors](/articles/ancestral-sync-circadian-anchors) — circadian anchors and night-time temperature
 - [Neural hydraulics: CSF flow](/articles/neural-hydraulics-csf-flow) — CSF circulation during sleep — what cooling enables
 `,
   references: [

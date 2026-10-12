@@ -22,7 +22,7 @@ const pod3VsCoverPro: HeadToHeadInput = {
     { name: 'Subscription', criterionId: 'subscription', note: 'Both require the same Eight Sleep Autopilot subscription for full features. Neither escapes the membership model.' },
     { name: 'Form factor', criterionId: 'form-factor', note: "Practically equal: both are dual-zone covers that fit your existing mattress, with a hub next to the bed." },
     { name: 'Mattress flexibility', winner: 'b', note: 'Cover Pro installs on any mattress and transfers to your next bed. Pod 3 locks you into the Eight Sleep mattress.' },
-    { name: 'Price', winner: 'a', note: 'Pod 3 inventory pricing: deeply discounted from original (~$2,000-2,800 depending on stock). Cover Pro: ~$2,200. Pod 3 marginally cheaper if you find the inventory discount.' },
+    { name: 'Price', winner: 'a', note: 'Pod 3 inventory pricing: deeply discounted from original (~$2,000-2,800 depending on stock). Cover Pro: ~$2,200. Pod 3 can be cheaper at the low end if you find the inventory discount.' },
   ],
   faq: [
     {

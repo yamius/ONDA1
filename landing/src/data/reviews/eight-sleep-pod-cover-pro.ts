@@ -49,7 +49,7 @@ Same subscription model as Pod 4. Mattress compatibility limited to ~14 inch thi
 
 ## Who should buy Eight Sleep Pod Cover Pro?
 
-Choose Eight Sleep Pod Cover Pro if you want Pod 4 capability on your existing mattress. For full Pod 4 system, more flexible install. For subscription-free, ChiliPad.
+Choose Eight Sleep Pod Cover Pro if you want Pod 4 capability on your existing mattress. For an integrated mattress, the full Pod 4. For subscription-free, ChiliPad.
 
 ---
 
