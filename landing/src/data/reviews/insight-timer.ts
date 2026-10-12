@@ -7,22 +7,22 @@ const insightTimer: ToolReviewInput = {
   category: 'meditation-app',
   productType: 'Meditation app',
   description:
-    'ONDA review of Insight Timer — the largest meditation library and the most usable free tier. Scored on library, teaching, personalisation and value.',
+    'ONDA review of Insight Timer — a very large meditation library and the most usable free tier. Scored on library, teaching, personalisation and value.',
   verdict:
-    'The largest meditation library on earth, and the only app here you can genuinely use for free — variable quality is the price.',
+    'A very large free meditation library (Insight Timer says it is the largest), and the only app here you can genuinely use for free — variable quality is the price.',
   summary:
-    'Insight Timer is the largest meditation library in the world and the rare app you can build a real practice on without paying. It works like a YouTube for meditation: enormous range, many teachers, hourly live events — and, inevitably, variable quality.',
+    'Insight Timer has a very large meditation library — the largest, by its own account — and the rare app you can build a real practice on without paying. It works like a YouTube for meditation: enormous range, many teachers, hourly live events — and, inevitably, variable quality.',
   scores: [
-    { criterionId: 'content-library', score: 9.5, note: 'The largest meditation library anywhere — 360,000 free tracks, plus courses.' },
+    { criterionId: 'content-library', score: 9.5, note: 'A very large library — 360,000 free tracks by the maker’s count, plus courses.' },
     { criterionId: 'teaching', score: 7.5, note: 'A huge range of teachers and traditions; depth is there, but quality varies session to session.' },
     { criterionId: 'personalization', score: 6.5, note: 'Less guided than course-led apps — you largely curate your own path.' },
     { criterionId: 'app-experience', score: 7.0, note: 'Functional and feature-rich, but the sheer volume can make it feel cluttered.' },
     { criterionId: 'free-tier', score: 9.5, note: 'The standout free tier in the category — a genuine practice is possible without paying.' },
-    { criterionId: 'value', score: 8.5, note: 'The cheapest paid tier here, on top of the largest free library — the value leader.' },
+    { criterionId: 'value', score: 8.5, note: 'The cheapest paid tier here, on top of a very large free library — the value leader.' },
     { criterionId: 'evidence', score: 6.0, note: 'Quality and grounding vary widely across a crowd-sourced library.' },
   ],
   pros: [
-    'The largest meditation library in the world',
+    'A very large meditation library (the largest, according to Insight Timer)',
     'A genuinely usable free tier — rare in this category',
     'Cheapest paid tier, plus hourly live events and community',
     'A huge range of teachers and traditions',
@@ -33,7 +33,7 @@ const insightTimer: ToolReviewInput = {
     'The volume can feel cluttered and hard to navigate',
     'Crowd-sourced content is unevenly grounded',
   ],
-  bestFor: 'Best overall — the largest library, a genuinely usable free tier and the strongest value.',
+  bestFor: 'Best overall — a very large library, a genuinely usable free tier and the strongest value.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — from public information, app-store data and independent 2026 reviews. Not based on a long hands-on trial by ONDA.',
@@ -42,7 +42,7 @@ const insightTimer: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Insight Timer is the largest meditation library in the world, and the one app in this comparison you can genuinely build a practice on without paying. It works less like a curated course and more like a YouTube for meditation: 360,000 free tracks, thousands of teachers, hourly live events and an active community. For range — and for a free tier that is a real offer rather than a teaser — nothing here comes close.
+Insight Timer has a very large meditation library — the largest, by its own account — and the one app in this comparison you can genuinely build a practice on without paying. It works less like a curated course and more like a YouTube for meditation: 360,000 free tracks, thousands of teachers, hourly live events and an active community. For range — and for a free tier that is a real offer rather than a teaser — nothing here comes close.
 
 ## What are the downsides of Insight Timer?
 
@@ -70,7 +70,7 @@ The science of what meditation actually does at the nervous-system level.
   faq: [
     { q: "Is Insight Timer free?", a: "Largely, yes. Insight Timer has a very large free tier that you can genuinely build a real practice on, which is rare among meditation apps. Member Plus costs US$60 per year with a 7-day free trial, the cheapest paid tier in its comparison, and there are hourly live events and community features." },
     { q: "Is Insight Timer worth paying for?", a: "For many people the free tier is enough, which is the app's biggest strength. At US$60 a year, Member Plus is the cheapest paid tier among major meditation apps, so upgrading is low-risk if you want more. The catch is variable session quality, not price." },
-    { q: "Insight Timer vs Headspace: which is better?", a: "Insight Timer wins on breadth and value: it has the largest meditation library in the world and a usable free tier. Headspace wins on structure, with clearer course-led guidance for beginners. Insight Timer's crowd-sourced content can feel cluttered and uneven." },
+    { q: "Insight Timer vs Headspace: which is better?", a: "Insight Timer wins on breadth and value: it has a very large meditation library (the largest, by its own account) and a usable free tier. Headspace wins on structure, with clearer course-led guidance for beginners. Insight Timer's crowd-sourced content can feel cluttered and uneven." },
   ],
   datePublished: '2026-05-15',
   dateModified: '2026-10-04',
