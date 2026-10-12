@@ -15,7 +15,7 @@ const relaxSaunaPortable: ToolReviewInput = {
   scores: [
     { criterionId: 'heat-source', score: 6.5, note: 'Far-IR-only via semiconductor far-IR generators. Documented far-IR wavelength range; no near or mid.' },
     { criterionId: 'build', score: 7.0, note: 'Long-running brand (20+ years). Tent / chair construction is foldable for storage. Standard warranty.' },
-    { criterionId: 'emf', score: 7.5, note: 'Documented low EMF; third-party-verified across multiple independent reviews.' },
+    { criterionId: 'emf', score: 7.5, note: 'Low EMF according to the maker; we found no independent EMF test report.' },
     { criterionId: 'form-factor', score: 8.5, note: 'Tent and chair fold for storage. No install. Head outside the enclosure during use (different ergonomic from blanket).' },
     { criterionId: 'evidence', score: 5.5, note: 'Smaller research footprint than mainstream IR brands. Marketing wellness-tier.' },
     { criterionId: 'value', score: 6.5, note: '$1,500 — pricier than HigherDose Blanket for arguably narrower form-factor fit.' },
@@ -57,9 +57,9 @@ Choose Relax Sauna Portable if you want upright seated portable IR and the chair
 
 Background reading on the ideas behind heat exposure — mostly hypotheses, not effects shown in people.
 
-- [Longevity protocol: biological clock reset](/articles/longevity-protocol-biological-clock-reset) — where sauna slots into a reset routine
+- [Sauna in a longevity routine](/articles/longevity-protocol-biological-clock-reset) — background reading on daily routines
 - [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — the heat-shock side of the stress response
-- [Anti-entropy neural architecture](/articles/anti-entropy-neural-architecture) — sauna as a daily anti-entropy stress dose
+- [Stress, recovery and the nervous system](/articles/anti-entropy-neural-architecture) — background reading on sauna as a short heat stress
 `,
   references: [
     { label: 'Relax Sauna — official site', url: 'https://www.relaxsaunas.com/' },

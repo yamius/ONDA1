@@ -6,33 +6,33 @@ const finnleoVsAlmostHeaven: HeadToHeadInput = {
   productBSlug: 'almost-heaven-salem',
   title: 'Finnleo Hallmark vs Almost Heaven Salem Barrel (2026)',
   description:
-    'Finnleo Hallmark vs Almost Heaven Salem — side-by-side ONDA comparison of two traditional Finnish convection saunas. Indoor Finnish-built vs outdoor American cedar barrel.',
+    'Finnleo Hallmark vs Almost Heaven Salem — ONDA compares two traditional Finnish-style saunas: indoor Finnish-built cabin vs outdoor American cedar barrel.',
   intro:
     'Finnleo Hallmark and Almost Heaven Salem are the two traditional Finnish-style convection saunas users compare when IR is not the choice. Both deliver full Finnish-sauna heat (80–95°C) with löyly steam capability and have multi-decade brand reliability. The structural difference is indoor Finnish-engineered cabin versus outdoor American cedar barrel.',
   jobDependentVerdict: true,
   verdict:
     'Form factor decides. Finnleo Hallmark for indoor installation with Finnish manufacturing pedigree. Almost Heaven Salem for outdoor barrel installation with American cedar build.',
   bestForA:
-    'Choose Finnleo Hallmark if you want premium Finnish indoor sauna with Helo-engineered heat delivery and the deepest manufacturing pedigree in the category.',
+    'Choose Finnleo Hallmark if you want premium Finnish indoor sauna with Helo-engineered heat delivery and a long Finnish manufacturing history.',
   bestForB:
     'Choose Almost Heaven Salem if you want a traditional outdoor cedar barrel sauna with American-built construction, a 6 kW electric heater and the lower price ($4,485 list for the 2-person Salem).',
   axes: [
     { name: 'Heater quality', winner: 'a', note: 'Finnleo: Helo-engineered Finnish heater — a long-established name in traditional Finnish sauna heat. Almost Heaven Salem: 6 kW Harvia electric heater (240 V, hard-wired).' },
     { name: 'Form factor', criterionId: 'form-factor', note: 'Finnleo: indoor cabin install. Almost Heaven: outdoor barrel install. Different jobs; pick on install context.' },
     { name: 'Build pedigree', winner: 'a', note: 'Finnleo: Finnish manufacturing pedigree, hemlock or nordic spruce. Almost Heaven: American western red cedar, multi-decade brand track record.' },
-    { name: 'Warranty', winner: 'b', note: 'Almost Heaven Salem: limited lifetime warranty on manufacturing defects (heater: 1 year elements, 5 years other parts). Finnleo: standard manufacturer warranty. Neither Salem nor Hallmark offers a wood-burning heater.' },
+    { name: 'Warranty', winner: 'b', note: 'Almost Heaven Salem: limited lifetime warranty on manufacturing defects (heater: 1 year elements, 5 years other parts). Finnleo: we could not find Hallmark warranty terms on an official Finnleo page; ask the dealer. Neither Salem nor Hallmark offers a wood-burning heater.' },
     { name: 'EMF', criterionId: 'emf', note: 'Both traditional convection — no electronics in heat delivery, EMF non-issue.' },
-    { name: 'Research evidence', winner: 'a', note: 'Finnleo represents the Finnish indoor sauna format that the published Finnish cardiovascular and dementia cohort studies were run on.' },
+    { name: 'Research evidence', winner: 'a', note: 'The Finnish Kuopio cohort studies (cardiovascular and dementia risk; associations, not cause) were on traditional Finnish sauna bathing in general, not on Finnleo; the indoor electric cabin is the closer match to that format.' },
     { name: 'Price', winner: 'b', note: 'Almost Heaven Salem: $4,485 list ($4,036.50 sale, October 2026) incl. heater. Finnleo: $6,000–$12,000+. Almost Heaven clearly cheaper.' },
   ],
   faq: [
     {
       q: 'Finnleo or Almost Heaven — which is better?',
-      a: 'Form factor decides. Finnleo for indoor Finnish-built sauna with Helo-engineered heater and the deepest research-evidence format. Almost Heaven for a 2-person outdoor American red cedar barrel sauna with a 6 kW electric heater at a lower price.',
+      a: 'Form factor decides. Finnleo for indoor Finnish-built sauna with a Helo-engineered heater, in the indoor format closest to the Finnish cohort studies. Almost Heaven for a 2-person outdoor American red cedar barrel sauna with a 6 kW electric heater at a lower price.',
     },
     {
       q: 'Is Finnleo the original Finnish sauna brand?',
-      a: 'Finnleo is the consumer-distribution arm of Helo, the largest Finnish sauna heater manufacturer. Finnish manufacturing pedigree is genuine — the heaters are the same engineering that goes into Helo commercial saunas.',
+      a: 'No — Finnish sauna bathing long predates any brand. Finnleo is the North American brand linked to Helo, a long-established Finnish sauna-heater maker, and the Hallmark uses a Helo-engineered heater.',
     },
     {
       q: 'Can I get a wood-burning Finnleo?',
@@ -40,7 +40,7 @@ const finnleoVsAlmostHeaven: HeadToHeadInput = {
     },
     {
       q: 'Which has the better evidence base?',
-      a: 'Both — traditional Finnish sauna has the deepest published research evidence base in the sauna category (observational Kuopio cohort studies on cardiovascular mortality and dementia risk — associations, not cause). Finnleo represents the indoor format the studies ran on; Almost Heaven Salem is the outdoor barrel adaptation of the same mechanism.',
+      a: 'Neither has device-specific studies. The published evidence (observational Kuopio cohort studies on cardiovascular mortality and dementia risk — associations, not cause) is on traditional Finnish sauna bathing in general, not on either brand. Both deliver that kind of heat; Finnleo is an indoor cabin, Almost Heaven Salem an outdoor barrel.',
     },
   ],
   content: `## The short version
@@ -49,7 +49,7 @@ Both deliver traditional Finnish sauna heat with multi-decade brand pedigree. Fi
 
 ## When is Finnleo Hallmark the right pick?
 
-If you have indoor install space and want premium Finnish manufacturing pedigree with Helo-engineered heat delivery — Finnleo is the right shape. The format matches the published research.
+If you have indoor install space and want premium Finnish manufacturing pedigree with Helo-engineered heat delivery — Finnleo is the right shape. Its indoor format is the closest match to the Finnish cohort studies, which were on sauna bathing in general, not on Finnleo.
 
 ## When is Almost Heaven Salem the right pick?
 

@@ -9,7 +9,7 @@ const iceBarrel500: ToolReviewInput = {
   description:
     'ONDA review of the Ice Barrel 500 — the popular insulated barrel tub for ice-fill cold plunges. Scored on build, form factor and value.',
   verdict:
-    'The most popular barrel-style cold plunge — solid build, no chiller, ice-fill cost is the daily friction.',
+    'A widely sold barrel-style cold plunge — solid build, no chiller, ice-fill cost is the daily friction.',
   summary:
     'Ice Barrel 500 is the upright insulated barrel that turned cold plunge from a chest-freezer DIY into a clean consumer product. No chiller — you fill it with water and ice — so daily ice cost ($5–15/session depending on climate) is the operating-cost wildcard. Strong build, distinctive vertical form factor, 1-year warranty.',
   scores: [
@@ -17,11 +17,11 @@ const iceBarrel500: ToolReviewInput = {
     { criterionId: 'build', score: 8.0, note: 'Food-grade plastic barrel with insulation. UV-resistant exterior. 1-year warranty. Solid multi-year reliability track record.' },
     { criterionId: 'water-management', score: 6.0, note: 'No ozone or filter — manual water changes every 1–2 weeks plus daily ice top-ups. Higher maintenance burden than chiller-built tubs.' },
     { criterionId: 'form-factor', score: 8.5, note: 'Upright design with smaller footprint than horizontal tubs (32" diameter). Outdoor-rated. Easy to drain via spigot.' },
-    { criterionId: 'evidence', score: 6.0, note: 'Honest about being a non-chiller solution. Marketing doesn’t overclaim cold-exposure benefits beyond what the research supports.' },
+    { criterionId: 'evidence', score: 6.0, note: 'Honest about being a non-chiller solution. In our reading, its marketing makes fewer cold-exposure health claims than many competitors.' },
     { criterionId: 'value', score: 7.5, note: '$1,200 hardware. Cheap upfront, but $5–15/day in ice over months adds up. Better long-run economics than chest-freezer hacks, worse than chiller-built tubs.' },
   ],
   pros: [
-    'Most popular non-chiller cold plunge with proven multi-year reliability',
+    'Well-known non-chiller cold plunge with a multi-year market track record',
     'Compact vertical footprint fits smaller spaces',
     'Outdoor-rated and easy to drain',
     'Cheap upfront — $1,200 is roughly a fifth of The Plunge',
@@ -67,8 +67,8 @@ The biology of why cold exposure works — and the protocols that compound with 
   relatedSlugs: ['plunge', 'inergize-cold-tub', 'cold-pod'],
   faq: [
     { q: "Does the Ice Barrel 500 have a chiller?", a: "No. The Ice Barrel 500 has no chiller: you fill it with water and ice. That keeps the upfront price at $1,200, roughly a fifth of The Plunge, but daily ice becomes a real operating expense, and how well it holds temperature depends on your climate." },
-    { q: "How much does it cost to run an Ice Barrel 500?", a: "Beyond the $1,200 purchase price, the main running cost is ice, about $5–15 per session depending on your climate. Over regular use that adds up, which is the daily friction of any non-chiller plunge. It also demands more maintenance than chiller-built tubs." },
-    { q: "Who is the Ice Barrel 500 best for?", a: "It suits people who want a clean, compact cold plunge without paying chiller-tier prices. Its vertical footprint fits small spaces, it is outdoor-rated and easy to drain, and it has proven multi-year reliability. The warranty is one year, versus three for The Plunge." },
+    { q: "How much does it cost to run an Ice Barrel 500?", a: "Beyond the $1,200 purchase price, the main running cost is ice, about $5–15 per day of use depending on your climate. Over regular use that adds up, which is the daily friction of any non-chiller plunge. It also demands more maintenance than chiller-built tubs." },
+    { q: "Who is the Ice Barrel 500 best for?", a: "It suits people who want a clean, compact cold plunge without paying chiller-tier prices. Its vertical footprint fits small spaces, it is outdoor-rated and easy to drain, and it has a multi-year market track record. The warranty is one year, versus three for The Plunge." },
   ],
   datePublished: '2026-05-25',
   dateModified: '2026-10-10',

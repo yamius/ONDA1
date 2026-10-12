@@ -9,7 +9,7 @@ const finnleoHallmark: ToolReviewInput = {
   description:
     'ONDA review of the Finnleo Hallmark — the Finnish-built traditional indoor sauna with premium hemlock or nordic white spruce construction.',
   verdict:
-    'A Finnish-built traditional indoor sauna — premium Finnish-build, full convection heat, deepest sauna-research mechanism.',
+    'A Finnish-built traditional indoor sauna — premium build and full convection heat, in the sauna format the Finnish cohort studies looked at.',
   summary:
     'Finnleo Hallmark is the Finnish-built traditional indoor sauna for users who want the real thing. Helo-engineered heater (3 kW–9 kW depending on cabin size), Finnish hemlock or nordic white spruce panelling, full convection heat (80–95°C) with löyly steam. Finnish-engineered for the heat profile the Finnish cohort studies are built on.',
   scores: [
