@@ -1,5 +1,5 @@
 ---
-sourceHash: "aefe18eb9fcc"
+sourceHash: "45dd01994151"
 title: "Der Baroreflex: Wie dein Körper den Blutdruck stabil hält"
 metaTitle: "Der Baroreflex: Blutdruck von Schlag zu Schlag"
 metaDescription: "Wie der Baroreflex den Blutdruck von Schlag zu Schlag stabilisiert, was Baroreflexsensitivität bedeutet und wie langsames Atmen und Training wirken."

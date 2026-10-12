@@ -1,5 +1,5 @@
 ---
-sourceHash: "e96cdc17858e"
+sourceHash: "fd60184b64ca"
 title: "Variabilità della frequenza cardiaca: cos'è, cosa riflette e cosa non è"
 metaTitle: "Variabilità cardiaca (HRV): definizione e prove"
 metaDescription: "La variabilità della frequenza cardiaca è la naturale variazione del ritmo cardiaco da un battito all'altro. Cosa la modella, cosa riflette e cosa non ti dice."

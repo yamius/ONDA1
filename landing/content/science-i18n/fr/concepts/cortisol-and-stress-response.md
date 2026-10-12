@@ -1,5 +1,5 @@
 ---
-sourceHash: "a32508d8cf25"
+sourceHash: "c1cebe81c567"
 title: "Cortisol et réponse au stress : son rôle et les mythes"
 metaTitle: "Cortisol et réponse au stress"
 metaDescription: "Le rôle du cortisol, son rythme quotidien, sa mesure, ce qui le modifie, et pourquoi fatigue surrénalienne et détox du cortisol sont des mythes."

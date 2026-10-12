@@ -1,5 +1,5 @@
 ---
-sourceHash: "e96cdc17858e"
+sourceHash: "fd60184b64ca"
 title: "心拍変動（HRV）とは：その正体、反映するもの、反映しないもの"
 metaTitle: "心拍変動（HRV）：定義とエビデンス"
 metaDescription: "心拍変動（HRV）とは、心臓のリズムに見られる拍ごとの自然なゆらぎです。何がHRVを形づくり、何を反映し、何を教えてくれないのかを解説します。"

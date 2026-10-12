@@ -1,5 +1,5 @@
 ---
-sourceHash: "ea519c2b5915"
+sourceHash: "0d41de50d500"
 title: "Il sistema nervoso autonomo: simpatico e parasimpatico"
 metaTitle: "Sistema nervoso autonomo: non è un interruttore"
 metaDescription: "Che cosa fa il sistema nervoso autonomo, come le sue due branche regolano il cuore e perché nessun singolo numero, nemmeno LF/HF, ne misura lo stato."

@@ -198,7 +198,7 @@ evidenceMap:
     limitation: "Cross-sectional population averages; wide individual variation at every age; this page carries no age tables."
   - claim: "In clinical cardiology, HRV computed from all-day ECG recordings is a risk-stratification measure in patient populations — a measurement regime consumer readings do not reproduce."
     sources: [S1, S2]
-    class: established
+    class: guideline
     claimType: other
     quote: "The SDNN is the \"gold standard\" for medical stratification of cardiac risk when recorded over a 24 h period."
     limitation: "Clinical populations with continuous hospital ECG; does not transfer to consumer watch values."

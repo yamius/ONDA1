@@ -142,7 +142,7 @@ evidenceMap:
     limitation: "Review; describes the system in general terms."
   - claim: "Both too much and too little stress-system activity can lead to disease."
     sources: [S1]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "By contrast, excessive or inadequate basal activity and responsiveness of this system might impair development, growth and body composition, and lead to a host of behavioral and somatic pathological conditions."
     limitation: "Review."
