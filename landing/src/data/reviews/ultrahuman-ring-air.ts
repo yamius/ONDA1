@@ -86,7 +86,7 @@ For the full field, see [the best HRV trackers of 2026](/reviews/compare/best-hr
 The science behind why HRV is the signal worth tracking — and how the body produces it.
 
 - [Normal HRV by age](/articles/normal-hrv-by-age) — what a typical HRV looks like at your age, and why your own trend matters more
-- [Resonant-frequency system coherence](/articles/resonant-frequency-system-coherence) — why 5.5–6 breaths per minute is the HRV-training sweet spot
+- [Resonant-frequency system coherence](/articles/resonant-frequency-system-coherence) — what resonance-frequency breathing is and what the studies show
 - [Interoceptive precision and sensor calibration](/articles/interoceptive-precision-sensor-calibration) — why your own perception is the upstream baseline HRV measures against
 - [Anti-entropy neural architecture](/articles/anti-entropy-neural-architecture) — HRV as the daily maintenance signal of the autonomic system
 `,

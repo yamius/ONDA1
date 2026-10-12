@@ -56,7 +56,7 @@ Choose the Circular Ring 2 only if you’re an early adopter who wants on-ring E
 
 ## Background reading
 
-- [Resonant-frequency system coherence](/articles/resonant-frequency-system-coherence) — why 5.5–6 breaths per minute is the HRV-training sweet spot
+- [Resonant-frequency system coherence](/articles/resonant-frequency-system-coherence) — what resonance-frequency breathing is and what the studies show
 `,
   references: [
     { label: 'Circular — official site', url: 'https://www.circular.xyz/' },

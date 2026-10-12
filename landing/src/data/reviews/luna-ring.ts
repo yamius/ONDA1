@@ -7,11 +7,11 @@ const lunaRing: ToolReviewInput = {
   category: 'hrv-wearable',
   productType: 'Smart ring',
   description:
-    'ONDA review of the Noise Luna Ring Gen 2 — an affordable, subscription-free Oura alternative with good sleep tracking and a charging case, held back by a short single-charge battery.',
+    'ONDA review of the Noise Luna Ring Gen 2 — a budget, subscription-free Oura alternative with a charging case but short battery life per charge.',
   verdict:
     'A practical, affordable, subscription-free Oura alternative — good sleep tracking and a long total battery via its case, though single-charge battery and some app rough edges keep it a value pick rather than a class leader.',
   summary:
-    'The Noise Luna Ring Gen 2 is a budget, subscription-free smart ring aimed squarely at people who want core Oura-style tracking for less. At around $300 with no membership, it covers heart rate, HRV, SpO2, skin temperature, sleep and automatic activity detection, with a "Luna AI" assistant. Sleep staging is genuinely accurate and the pocket charging case stretches total battery toward a headline ~30 days — but the ring itself lasts only about four days per charge, a step behind class leaders, and the app has some teething issues. It’s a reliable, practical alternative rather than a groundbreaking one.',
+    'The Noise Luna Ring Gen 2 is a budget, subscription-free smart ring aimed squarely at people who want core Oura-style tracking for less. At around $300 with no membership, it covers heart rate, HRV, SpO2, skin temperature, sleep and automatic activity detection, with a "Luna AI" assistant. Its sleep stages are estimates without independent validation, and the pocket charging case stretches total battery toward a headline ~30 days — but the ring itself lasts only about four days per charge, a step behind class leaders, and the app has some teething issues. It’s a reliable, practical alternative rather than a groundbreaking one.',
   scores: [
     { criterionId: 'hrv-accuracy', score: 6.5, note: 'HRV tracking for recovery and stress — reasonable for the price; no independent validation against ECG was found (as of October 2026).' },
     { criterionId: 'sensor', score: 6.5, note: 'Optical heart rate, SpO2, PPG and skin-temperature sensors. A competent budget array.' },
@@ -56,7 +56,7 @@ Choose the Noise Luna Ring Gen 2 if you want a cheap, subscription-free ring wit
 
 ## Background reading
 
-- [Resonant-frequency system coherence](/articles/resonant-frequency-system-coherence) — why 5.5–6 breaths per minute is the HRV-training sweet spot
+- [Resonant-frequency system coherence](/articles/resonant-frequency-system-coherence) — what resonance-frequency breathing is and what the studies show
 `,
   references: [
     { label: 'Noise — official site', url: 'https://www.gonoise.com/' },

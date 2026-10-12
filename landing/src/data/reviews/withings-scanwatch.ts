@@ -59,7 +59,7 @@ Choose the Withings ScanWatch 2 if you want a discreet, long-lasting watch with 
 The science behind why HRV is the signal worth tracking — and how the body produces it.
 
 - [Does HRV predict reaction time and focus?](/articles/nervous-system-ping-latency) — what resting HRV does and does not say about attention and self-control
-- [Resonant-frequency system coherence](/articles/resonant-frequency-system-coherence) — why 5.5–6 breaths per minute is the HRV-training sweet spot
+- [Resonant-frequency system coherence](/articles/resonant-frequency-system-coherence) — what resonance-frequency breathing is and what the studies show
 `,
   references: [
     { label: 'Withings ScanWatch 2 — official product page', url: 'https://www.withings.com/scanwatch-2' },
