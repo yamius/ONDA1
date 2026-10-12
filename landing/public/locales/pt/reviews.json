@@ -2994,7 +2994,7 @@
       "productType": "Sauna de cabine IR premium 3 em 1 (próximo, médio, distante)"
     },
     "finnleo-hallmark": {
-      "verdict": "Uma sauna tradicional interna fabricada na Finlândia — construção finlandesa premium, calor por convecção completo, o mecanismo com mais pesquisa sobre sauna.",
+      "verdict": "Uma sauna tradicional interna fabricada na Finlândia — construção premium e calor por convecção completo, no formato de sauna analisado pelos estudos de coorte finlandeses.",
       "summary": "A Finnleo Hallmark é a sauna tradicional interna fabricada na Finlândia para quem quer a experiência autêntica. Aquecedor projetado pela Helo (3 kW–9 kW conforme o tamanho da cabine), revestimento de hemlock finlandês ou de abeto branco nórdico, calor por convecção completo (80–95°C) com vapor löyly. Projetada na Finlândia para o perfil de calor em que se baseiam os estudos de coorte finlandeses.",
       "description": "Análise da Finnleo Hallmark: a sauna tradicional interna fabricada na Finlândia, com construção premium em hemlock ou abeto branco nórdico.",
       "bestFor": "Ideal para quem quer a sauna finlandesa tradicional premium, com calor gerado por aquecedor projetado pela Helo.",
@@ -3004,7 +3004,7 @@
         "Tradição premium de fabricação finlandesa",
         "Aquecedor projetado pela Helo com suporte a vapor löyly",
         "Construção em hemlock finlandês ou abeto branco nórdico",
-        "A base de evidências publicadas mais ampla (estudos de coorte observacionais finlandeses)"
+        "Formato tradicional de sauna finlandesa, o tipo analisado nos estudos de coorte finlandeses"
       ],
       "cons": [
         "Não é de infravermelho — mecanismo diferente das saunas de cabine de infravermelho",
@@ -3014,7 +3014,7 @@
       ],
       "scoreNotes": {
         "heat-source": "Aquecedor de convecção finlandês projetado pela Helo — o padrão de referência de calor de sauna finlandesa, com suporte a vapor löyly.",
-        "build": "Hemlock finlandês ou abeto branco nórdico. Décadas de tradição de fabricação finlandesa. Garantia estrutural de 5 anos.",
+        "build": "Hemlock finlandês ou abeto branco nórdico. Décadas de tradição de fabricação finlandesa. Não conseguimos confirmar os termos de garantia em uma página oficial.",
         "emf": "Convecção tradicional — sem eletrônica na geração de calor. EMF não é uma questão.",
         "form-factor": "Instalação de cabine interna. Configurações para 1–6 pessoas. Exige planejamento de ventilação e 220V para aquecedores maiores.",
         "evidence": "Os estudos de coorte finlandeses sobre mortalidade cardiovascular e risco de demência foram feitos com esse tipo de sauna. A base de evidências mais ampla da categoria de saunas, embora observacional (só homens; associações, não causa).",
