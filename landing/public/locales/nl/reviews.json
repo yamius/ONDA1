@@ -1379,7 +1379,46 @@
     },
     "hypervolt-go-2": {
       "verdict": "Beste reismini van een premiummerk — het Hypervolt-ecosysteem in zakformaat. Minder stallkracht is de prijs voor draagbaarheid.",
-      "productType": "Premium reis- / mini-massagegun"
+      "summary": "De Hypervolt Go 2 is de premium reismini – zakformaat met 30 lbs stall force, 12 mm amplitude, borstelloze motor, 2 opzetstukken, koppeling met de Hyperice-app, $129. De stall force is flink lager dan bij de Hypervolt 2 Pro (60 lbs); in ruil krijg je draagbaarheid en het ecosysteem van een premiummerk voor een middenklasseprijs – $30 boven de budget Bob and Brad Q2 Mini ($99). Het best voor wie Hyperice-kwaliteit in reisformaat wil.",
+      "description": "ONDA-review: Hyperice Hypervolt Go 2 – premium massagegun in reisformaat met 30 lbs stall force, 12 mm amplitude en Hyperice-ecosysteem voor $129.",
+      "bestFor": "Het best voor wie een reismini van een premiummerk met Hyperice-app wil – en de lagere stall force accepteert als prijs voor draagbaarheid.",
+      "testNote": "Op bewijs gebaseerde beoordeling – gescoord op basis van productdocumentatie van Hyperice en reviews van reisminis uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Premium reis- / mini-massagegun",
+      "pros": [
+        "Premiummerk Hyperice en app in het formaat van een reismini",
+        "Beste draagbaarheid in de premiumklasse",
+        "Stilste reismini (50 dB)",
+        "Borstelloze motor"
+      ],
+      "cons": [
+        "Half zoveel stall force als de Hypervolt 2 Pro (30 lbs vs 60)",
+        "Slechts 2 opzetstukken meegeleverd",
+        "$30 duurder dan de budget Bob and Brad Q2 Mini",
+        "1 jaar garantie"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "30 lbs stall force – de helft van de Hypervolt 2 Pro. 12 mm amplitude. Bewust lagere percussiedosis.",
+        "build-attachments": "Borstelloze motor, slechts 2 opzetstukken, 1 jaar garantie. Premium bouwkwaliteit van Hyperice op miniformaat.",
+        "battery-noise": "Borstelloze motor op 50 dB. ~2,5 uur per lading. Stilste reismini in de categorie.",
+        "app-smart-features": "Koppeling met de Hyperice-app – hetzelfde ecosysteem als de Hypervolt 2 Pro. Slimme functies in reisformaat.",
+        "ergonomics-portability": "Beste draagbaarheid in de premiumklasse. ~1,5 lbs, zakformaat, reisvriendelijk. Eenhandige grip, optimaal voor het formaat.",
+        "value": "$129 – reismini van een premiummerk voor een middenklasseprijs. Duurder dan de budget Bob and Brad Q2 Mini ($99), maar met het Hyperice-ecosysteem."
+      },
+      "content": "## Waar hij voorop loopt\n\nDe Hypervolt Go 2 is de premium reismini – het merk en app-ecosysteem van Hyperice in zakformaat. Beste draagbaarheid in de premiumklasse, met een stille borstelloze motor.\n\n## Wat zijn de nadelen van de Hyperice Hypervolt Go 2?\n\nStall force en aantal opzetstukken. 30 lbs stall force is de helft van de Hypervolt 2 Pro; slechts 2 opzetstukken meegeleverd. Voor wie volledige premium percussie wil: Hypervolt 2 Pro of Theragun Elite.\n\n## Wie zou de Hyperice Hypervolt Go 2 moeten kopen?\n\nKies de Hypervolt Go 2 als reismini van een premiummerk. Voor premium op volledig formaat van Hyperice: Hypervolt 2 Pro. Als budget reismini: Bob and Brad Q2 Mini.\n\n---\n\n## Achtergrondinformatie\n\n- [Mitochondriale biogenese](/articles/mitochondrial-biogenesis-cellular-power-grid)\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n",
+      "faq": [
+        {
+          "q": "Hoeveel kost de Hypervolt Go 2?",
+          "a": "De Hypervolt Go 2 kost $129 met twee opzetstukken. Dat is $30 meer dan de budget Bob and Brad Q2 Mini, en de meerprijs levert het merk Hyperice, app-koppeling, een borstelloze motor en de stilste werking onder de reisminis op, met 50 dB."
+        },
+        {
+          "q": "Hypervolt Go 2 vs Hypervolt 2 Pro: welke moet je nemen?",
+          "a": "De Go 2 heeft half zoveel stall force als de Hypervolt 2 Pro, 30 lbs tegenover 60, met 12 mm amplitude. In ruil past hij in je zak en is hij veel goedkoper. Kies de Go 2 voor op reis en licht gebruik, en de 2 Pro voor dieper herstel thuis."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Hypervolt Go 2?",
+          "a": "De Go 2 ruilt kracht in voor draagbaarheid: hij heeft half zoveel stall force als de Hypervolt 2 Pro. Hij wordt geleverd met slechts twee opzetstukken, heeft een jaar garantie en kost $30 meer dan de budget Bob and Brad Q2 Mini."
+        }
+      ]
     },
     "bob-and-brad-q2-mini": {
       "verdict": "Beste prijs-kwaliteit bij budgetminis — het Bob and Brad-merk met fysiotherapeutische geloofwaardigheid voor $99. Beperkte stallkracht; de herkomst van het YouTube-kanaal „Famous Physical Therapists” is het onderscheidende kenmerk.",
@@ -1562,7 +1601,50 @@
     },
     "joovv-solo-3": {
       "verdict": "Een al lang bestaand, veelgebruikt paneel — modulair, goed gebouwd, eerlijk gemeten bestralingssterkte. Het duurste in deze lijst, grotendeels terecht.",
-      "productType": "Modulair volledig paneel voor led-therapie met rood + NIR"
+      "summary": "De Joovv Solo 3.0 is het paneel dat de categorie roodlichtpanelen voor consumenten heeft bepaald. Modulaire Solo-panelen koppel je aan elkaar om op te schalen van één unit voor het halve lichaam tot een volledige lichaamswand op een standaard. Combinatie van 660 nm rood + 850 nm NIR, volgens Joovv bij de FDA geregistreerd als apparaat van klasse II (registratie/vermelding, geen goedkeuring of toelating; Joovv vermeldt indicaties voor plaatselijke verwarming, zoals tijdelijke verlichting van lichte spier- en gewrichtspijn), onafhankelijk geverifieerde bestralingssterkte dicht bij de geadverteerde waarden, lage EMF en weinig flikkering. De duurste optie hier, waarbij het grootste deel van de meerprijs naar bouwkwaliteit en verificatie gaat in plaats van naar opgeblazen specificaties.",
+      "description": "ONDA-review van de Joovv Solo 3.0 – een beproefd, modulair en goed gebouwd roodlichtpaneel. Gescoord op bestralingssterkte, golflengten, EMF en prijs.",
+      "bestFor": "Het best voor biohackers die de modulaire premiumbouw en geverifieerde bestralingssterkte willen, en daar een premiumprijs voor accepteren.",
+      "testNote": "Op bewijs gebaseerde beoordeling – gescoord op basis van productdocumentatie van Joovv, onafhankelijke meetrapporten over bestralingssterkte, EMF en flikkering van biohacker-reviewsites en de gepubliceerde literatuur over fotobiomodulatie waarop de claims van het apparaat steunen. Niet zelf getest door ONDA.",
+      "productType": "Modulair volledig paneel voor led-therapie met rood + NIR",
+      "pros": [
+        "Geverifieerde bestralingssterkte, lage EMF, weinig flikkering",
+        "Modulair Solo-systeem stapelt verticaal voor het hele lichaam zonder een nieuw paneel te kopen",
+        "Echte samenwerkingen met publicerende onderzoekers in fotobiomodulatie, niet alleen marketing",
+        "2 jaar garantie; HSA/FSA-geschikt"
+      ],
+      "cons": [
+        "Het duurste paneel in deze lijst – $1.699 voor de Solo 3.0",
+        "Een modulaire opstelling voor het hele lichaam kost in totaal $3.000–$5.000",
+        "Geen exotische golflengten voor wie 810 / 830 / 940 nm wil",
+        "Enkelzijdige uitstraling naar voren, niet bidirectioneel"
+      ],
+      "scoreNotes": {
+        "irradiance": "Door de fabrikant opgegeven >100 mW/cm² op 6 inch; onafhankelijke metingen liggen dicht bij die waarde, anders dan bij de meeste goedkopere panelen – een van de eerlijkst gespecificeerde apparaten in de categorie.",
+        "wavelengths": "Combinatie van 660 nm rood + 850 nm NIR met gepubliceerde pieken op de standaardgolflengten voor fotobiomodulatie. Geen exotische UV/940 nm-toevoegingen; schoon spectrum.",
+        "build-emf-flicker": "Aluminium achterpaneel, glazen voorkant, EMF door derden gemeten op <0,5 mG op 6 inch; flikkerfrequentie gepubliceerd en laag. Een van de schoonste constructies in deze lijst.",
+        "coverage": "Solo dekt het halve lichaam; het modulaire systeem stapelt verticaal voor het hele lichaam. Standaard en deurbevestiging inbegrepen. Modulariteit is uniek in deze lijst.",
+        "evidence": "Volgens Joovv bij de FDA geregistreerd als apparaat van klasse II (registratie/vermelding, geen goedkeuring of toelating; vermelde indicaties: plaatselijke verwarming voor tijdelijke verlichting van lichte spier- en gewrichtspijn). Joovv werkt samen met publicerende onderzoekers in fotobiomodulatie en citeert echte peer-reviewed studies over het onderliggende mechanisme. De claim “proven to heal” gaat over rood en nabij-infrarood licht in het algemeen, niet over de Solo 3.0.",
+        "value": "$1.699 voor de Solo 3.0 (officiële Amerikaanse winkel, okt. 2026) – het duurste in deze lijst: $400 meer dan de MitoPRO 1500X ($1.299) en $650 meer dan de PlatinumLED BIOMAX 600 ($1.049), beide met een breder spectrum. Je betaalt vooral voor modulariteit en bouwkwaliteit."
+      },
+      "content": "## Waar hij voorop loopt\n\nDe Joovv Solo 3.0 is het paneel waaraan de rest van deze categorie wordt afgemeten. Onafhankelijke metingen van de bestralingssterkte komen dicht bij de door de fabrikant opgegeven waarde, EMF-metingen op de standaard behandelafstand liggen onder 0,5 mG, en de flikkerfrequentie is gepubliceerd en schoon. De Solo is ook het enige modulaire paneel in deze lijst: één Solo dekt het halve lichaam, twee verticaal gekoppeld het grootste deel van het bovenlichaam, drie gestapeld vormen een volledige lichaamswand. Joovv zegt dat de Solo 3.0 bij de FDA geregistreerd is als apparaat van klasse II en noemt de vermelde indicaties duidelijk (plaatselijke verwarming voor tijdelijke verlichting van lichte spier- en gewrichtspijn). Registratie is geen goedkeuring of toelating, en ook geen kwaliteitskeurmerk.\n\n## Wat zijn de nadelen van de Joovv Solo 3.0?\n\nDe prijs. $1.699 voor een Solo 3.0 (officiële Amerikaanse winkel, gecontroleerd op 2026-10-01) is het duurste losse paneel in deze lijst; een echte Joovv-opstelling voor het hele lichaam kost $3.000–$5.000. De golflengten zijn alleen de standaard 660 + 850 nm – geen 810 nm, 830 nm of 940 nm voor wie een rijker spectrum wil. De uitstraling is enkelzijdig naar voren, niet bidirectioneel.\n\n## Wie zou de Joovv Solo 3.0 moeten kopen?\n\nKies de Joovv Solo 3.0 als je de modulaire premiumbouw wilt en accepteert dat verificatie, EMF-discipline en modulaire schaalbaarheid een prijs hebben. Is de prijs het doorslaggevende criterium, dan dekken Mito Red MitoPRO 1500X of Hooga HG500 het grootste deel van de specificaties voor een fractie van de kosten; wil je een EMF-afgeschermd premiumpaneel met onafhankelijke tests, dan is GembaRed Vesta de schonere constructie voor een iets lagere prijs.\n\n---\n\n## Achtergrondinformatie\n\nHet mechanisme van fotobiomodulatie achter waarom roodlichttherapie werkt.\n\n- [Longevity-protocol: reset van de biologische klok](/articles/longevity-protocol-biological-clock-reset) – waar fotobiomodulatie in een resetroutine past\n- [Mitochondriaal DNA en rood licht](/articles/mitochondrial-dna-red-light) – hoe fotonen van 660/850 nm de mitochondriën bereiken en wat ze daar doen\n- [Mitochondriale biogenese: het cellulaire stroomnet](/articles/mitochondrial-biogenesis-cellular-power-grid) – waarom fotobiomodulatie de mitochondriale dichtheid verhoogt\n",
+      "faq": [
+        {
+          "q": "Hoeveel kost de Joovv Solo 3.0?",
+          "a": "De Joovv Solo 3.0 kost $1.699 in de officiële Amerikaanse winkel (gecontroleerd in oktober 2026), het duurste paneel in zijn vergelijking. Omdat Solo-panelen modulair zijn, kost een opstelling voor het hele lichaam op een standaard in totaal $3.000–$5.000. Het grootste deel van de meerprijs gaat naar bouwkwaliteit en verificatie in plaats van naar opgeblazen specificaties."
+        },
+        {
+          "q": "Is de Joovv Solo 3.0 geregistreerd bij de FDA?",
+          "a": "Joovv zegt dat de Solo 3.0 bij de FDA geregistreerd is als medisch hulpmiddel van klasse II. Registratie en vermelding betekenen alleen dat het bedrijf de FDA over het apparaat heeft geïnformeerd; ze zijn geen goedkeuring of toelating door de FDA. Joovv vermeldt indicaties voor plaatselijke verwarming, zoals tijdelijke verlichting van lichte spier- en gewrichtspijn. Het combineert 660 nm rood met 850 nm nabij-infrarood, heeft een onafhankelijk geverifieerde bestralingssterkte dicht bij de geadverteerde waarden en biedt lage EMF en weinig flikkering."
+        },
+        {
+          "q": "Is de Joovv Solo 3.0 het geld waard?",
+          "a": "Grotendeels wel, als je de modulaire premiumbouw wilt. Hij heeft geverifieerde bestralingssterkte, samenwerkingen met publicerende onderzoekers en 2 jaar garantie, plus modulaire panelen die uitgroeien tot een opstelling voor het hele lichaam. Als de prijs beslist, dekken de Mito Red MitoPRO 1500X ($1.299) of de Hooga HG500 het grootste deel van de specificaties voor minder."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Joovv Solo 3.0?",
+          "a": "De prijs is de belangrijkste: $1.699 per paneel en $3.000–$5.000 voor een opstelling voor het hele lichaam. Ook zijn er geen exotische golflengten zoals 810, 830 of 940 nm, en straalt hij enkelzijdig naar voren in plaats van bidirectioneel."
+        }
+      ]
     },
     "mito-red-mitopro-1500": {
       "verdict": "Het grote favoriete paneel van biohackers — als 1500X nu met zes golflengten, en $400 goedkoper dan de Joovv Solo 3.0.",
@@ -1735,8 +1817,51 @@
     },
     "truvaga-350": {
       "verdict": "De klinische hardware van gammaCore opnieuw verpakt als welzijnsapparaat voor consumenten — sterke herkomst, bescheiden bewijs voor het welzijnsdoel.",
+      "summary": "Truvaga is het consumentenmerk van electroCore en gebruikt hetzelfde hardwareplatform voor cervicale tVNS als de FDA-goedgekeurde gammaCore-lijn op recept – opnieuw verpakt als vrij verkrijgbaar welzijnsapparaat. Het model 350 levert 350 sessies van twee minuten voordat het afgedankt wordt en gebruikt dezelfde 5 kHz-burstgolfvorm. Sterke productieherkomst; er zijn geen gepubliceerde studies naar Truvaga zelf – het bewijs komt uit gammaCore-studies naar dezelfde stimulatieaanpak, niet van Truvaga.",
+      "description": "ONDA-review van de Truvaga 350 — vrij verkrijgbaar cervicaal tVNS-apparaat van electroCore op hetzelfde platform als de FDA-goedgekeurde gammaCore.",
+      "bestFor": "Het best voor consumenten die de cervicale tVNS-aanpak van gammaCore willen zonder recept.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van electroCore, de klinische gegevens van gammaCore (gedeeld platform) en onafhankelijke reviews uit 2026. Niet zelf getest door ONDA.",
       "productType": "Cervicale tVNS voor consumenten (handapparaat)",
-      "editorialAdjustment": "Eerlijkheid in marketing — de homepage zegt dat Truvaga-apparaten ‘het resultaat zijn van uitgebreide klinische studies’, maar die studies gaan over gammaCore, het apparaat op recept; we vonden geen gepubliceerde studie naar Truvaga zelf (gecontroleerd in oktober 2026). Dit wordt hier gescoord, niet onder bewijs. (in het origineel: “a product of extensive clinical studies”)"
+      "pros": [
+        "Hetzelfde hardwareplatform als de FDA-goedgekeurde gammaCore",
+        "Geen recept, geen goedkeuring van de zorgverzekeraar nodig",
+        "Cervicale tVNS — richt zich direct op de vagusstam, niet alleen op de oortak",
+        "Bijbehorende app registreert sessies en volgt zelf ingeschatte stress"
+      ],
+      "cons": [
+        "Niet FDA-goedgekeurd voor het consumentengebruik — verkocht als welzijnsapparaat",
+        "De limiet op de levensduur (350 sessies) maakt de kosten op lange termijn minder zichtbaar",
+        "Vaste sessies van 2 minuten; intensiteit is de enige variabele",
+        "Geen biofeedback van hartslagvariabiliteit (HRV) op het apparaat"
+      ],
+      "scoreNotes": {
+        "evidence": "Geen gepubliceerde studies naar het Truvaga-apparaat zelf (twee geregistreerde studies, nog zonder resultaten, oktober 2026). De gammaCore-studies gaan over het apparaat op recept en tellen hier niet mee, al geeft het gedeelde platform het wel het veiligheidsprofiel van gammaCore — 7,0, de basisscore voor een apparaat zonder eigen studies. Voor geen enkele indicatie FDA-goedgekeurd — verkocht als algemeen welzijnsapparaat.",
+        "mechanism": "Dezelfde cervicale tVNS-aanpak als gammaCore: handapparaat boven de halsvaatschede, 5 kHz-burstgolfvorm. Richt zich direct op de cervicale vagusstam.",
+        "protocols": "Vaste sessies van twee minuten; intensiteit instelbaar door de gebruiker. De bijbehorende app stelt gebruikspatronen voor in plaats van aparte programma's.",
+        "comfort": "Ergonomisch handapparaat; sommige gebruikers melden trekkingen in de kaak of een gevoelige nek bij hogere amplitudes — net als bij gammaCore.",
+        "biofeedback": "De app registreert sessies en ondersteunt een eenvoudig stemmings-/stressdagboek. Geen HRV-meting op het apparaat.",
+        "value": "$325 eenmalig voor 350 vooraf geladen sessies (ongeveer zes maanden bij de door de fabrikant aangeraden twee sessies per dag) — nu nog maar zo'n $56 meer dan Pulsetto; de oplaadbare Truvaga Plus kost $499. Geen recept. Op lange termijn ongeveer een vijfde van de kosten van gammaCore."
+      },
+      "editorialAdjustment": "Eerlijkheid van de marketing — op de homepage staat dat Truvaga-apparaten “are a product of extensive clinical studies”, maar die studies gaan over gammaCore, het apparaat op recept; we vonden geen gepubliceerde studie naar Truvaga zelf (gecontroleerd in oktober 2026). Dit wordt hier gescoord, niet onder bewijs.",
+      "content": "## Waar het voorop loopt\n\nTruvaga 350 is het meest geloofwaardige cervicale VNS-apparaat dat een consument zonder recept kan kopen. electroCore — het bedrijf achter de FDA-goedgekeurde gammaCore-lijn — heeft zijn medische hardwareplatform opnieuw verpakt als welzijnsapparaat, met dezelfde vorm als handapparaat en dezelfde 5 kHz-burstgolfvorm als het apparaat op recept. Productieherkomst en veiligheidsprofiel komen rechtstreeks van de klinische lijn, wat ongebruikelijk is in deze prijsklasse.\n\n## Wat zijn de nadelen van Truvaga 350?\n\nDe consumentenversie wordt niet langer gereguleerd als medisch hulpmiddel — Truvaga wordt verkocht voor algemeen welzijn, en er zijn geen gepubliceerde studies naar Truvaga zelf – het bewijs komt uit gammaCore-studies naar dezelfde stimulatieaanpak. De aanduiding 350 is letterlijk: 350 sessies van twee minuten en het apparaat is op, waarna je betaalt voor vervanging. Er is geen HRV op het apparaat, en de variatie in protocollen beperkt zich tot de intensiteit.\n\n## Voor wie is Truvaga 350 geschikt?\n\nKies Truvaga 350 als je tVNS op de cervicale vagusstam wilt — dezelfde aanpak als in het FDA-goedgekeurde apparaat — zonder via een arts te gaan, en je dunner bewijs voor het welzijnsdoel accepteert in ruil voor toegankelijkheid. Wil je de breedste onderzoeksbasis, dan heeft Nurosym (auriculair) de studies. Heb je een echte hoofdpijndiagnose, dan is gammaCore het juiste hulpmiddel.\n\n---\n\n## Achtergrondinformatie\n\nDe biologie achter waar deze apparaten op mikken — en de protocollen die de werking van de hardware versterken.\n\n- [CO₂-tolerantie en de zuurstofgrens](/articles/co2-tolerance-expanding-oxygen-limit) — waarom langzaam ademen de vagale tonus via de CO₂-chemie herstelt\n- [Ademwerk als commandoregel](/articles/breathwork-command-line-interface) — de protocollen waarmee stimulatie samengaat\n- [Controle over de HPA-as en cortisolregulatie](/articles/hpa-axis-control-cortisol-aggression) — waarom werken aan de vagale tonus verderop in de keten op cortisol mikt\n",
+      "faq": [
+        {
+          "q": "Is de Truvaga 350 het waard?",
+          "a": "De Truvaga 350 is het waard als je cervicale tVNS in de stijl van gammaCore wilt zonder recept. Hij gebruikt hetzelfde hardwareplatform als de FDA-goedgekeurde gammaCore en richt zich direct op de vagusstam. Het consumentengebruik is niet FDA-goedgekeurd, en de limiet van 350 sessies verhult de kosten op lange termijn."
+        },
+        {
+          "q": "Hoeveel kost de Truvaga 350?",
+          "a": "De Truvaga 350 kost eenmalig $325 op truvaga.com en biedt 350 vooraf geladen sessies (ongeveer zes maanden bij de door de fabrikant aangeraden twee sessies per dag); de oplaadbare Truvaga Plus zonder gebruikslimiet kost $499. Door die limiet op de levensduur zijn de kosten op lange termijn minder zichtbaar dan de aanschafprijs doet vermoeden, dus reken mee hoe vaak je hem wilt gebruiken."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Truvaga 350?",
+          "a": "Truvaga is niet FDA-goedgekeurd voor het consumentengebruik en wordt verkocht als welzijnsapparaat. De limiet van 350 sessies verhult de kosten op lange termijn, sessies staan vast op 2 minuten met intensiteit als enige variabele, en er is geen HRV-biofeedback op het apparaat."
+        },
+        {
+          "q": "Truvaga 350 vs gammaCore: welke is beter?",
+          "a": "Truvaga gebruikt hetzelfde hardwareplatform als de FDA-goedgekeurde gammaCore, maar heeft geen recept of goedkeuring van de zorgverzekeraar nodig. gammaCore heeft de FDA-goedkeuring; Truvaga wordt verkocht als welzijnsapparaat. Kies Truvaga voor eenvoudige toegang tot cervicale tVNS."
+        }
+      ]
     },
     "apollo-neuro": {
       "verdict": "Het best draagbare apparaat in de categorie — vibrotactiel, niet elektrisch, met groeiend klinisch bewijs voor HRV en herstel.",
@@ -2203,8 +2328,47 @@
     },
     "higherdose-red-light-face-mask": {
       "verdict": "Beste gebruikservaring van een consumentenmerk onder de roodlichtmaskers — eenvoudige controller, flexibele siliconen, volgens het merk 50 mW/cm². Weinig klinisch bewijs; merkuitstraling boven technische diepgang.",
+      "summary": "Het HigherDOSE Red Light Face Mask is de referentie onder de consumentenmerken — eenvoudige bediening via een controller (geen app), flexibele siliconen, 132 diodes, rood 630 nm + nabij-infrarood 830 nm bij volgens het merk 50 mW/cm², sessies van 10 of 20 minuten, prijs $349. Merkcrossover met de PEMF-mat en saunadeken van HigherDOSE. Beperkte klinische bewijsbasis; het concept draait om gebruiksvriendelijkheid en het merkecosysteem in plaats van dermatologische diepgang.",
+      "description": "ONDA-review van het HigherDOSE Red Light Face Mask — siliconen masker met rood 630 nm + nabij-infrarood 830 nm, 132 diodes, oplaadbare controller.",
+      "bestFor": "Het best voor een verzorgd roodlicht-gezichtsmasker voor dagelijks gebruik in het HigherDOSE-ecosysteem — gebruiksgemak en toegankelijkheid boven klinische papieren.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van HigherDOSE, de claim van het merk over FDA-goedkeuring en consumentenreviews uit 2026. Niet zelf getest door ONDA.",
       "productType": "Flexibel siliconen rood + infrarood gezichtsmasker van een consumentenmerk",
-      "editorialAdjustment": "Eerlijkheid in marketing — de productpagina zegt dat het masker ‘FDA-cleared en klinisch bewezen’ fijne lijntjes en rimpels vermindert, maar het bewijs is een eigen test van HigherDOSE van 8 weken met zelfgerapporteerde resultaten, geen gepubliceerde studie, en de FDA-clearance (K241933) is verleend zonder klinisch onderzoek (gecontroleerd in oktober 2026). Dit wordt hier gescoord, niet onder bewijs. (in het origineel: “FDA-cleared and clinically proven”)"
+      "pros": [
+        "Beste gebruikservaring van een consumentenmerk — eenvoudige oplaadbare controller, sessies van 10 of 20 minuten",
+        "Toegankelijke prijs van $349 — goedkoper dan de dermatologische referenties",
+        "Comfort van flexibele siliconen, vergelijkbaar met de leiders in de categorie",
+        "HigherDOSE-merkecosysteem (combineert met PEMF-mat en saunadeken)"
+      ],
+      "cons": [
+        "Beperkte klinische bewijsbasis",
+        "Cijfers voor de bestralingssterkte komen van het merk, niet onafhankelijk geverifieerd",
+        "Geen halsflap",
+        "Geen varianten met meerdere golflengten"
+      ],
+      "scoreNotes": {
+        "irradiance": "HigherDOSE noemt in totaal 50 mW/cm² (630 nm 26 + 830 nm 24 mW/cm²) — cijfers van het merk, niet onafhankelijk gemeten.",
+        "wavelength-coverage": "Rood 630 nm + nabij-infrarood 830 nm — het klinische standaardpaar. Geen blauwe / amberkleurige varianten.",
+        "led-count-coverage": "66 dual-core LED's (132 diodes) verspreid over het gezicht. Geen halsflap bij het standaardmodel.",
+        "clinical-evidence": "FDA-goedgekeurd voor rimpels over het hele gezicht (510(k) K241933, 2024; volgens de samenvatting van de goedkeuring waren klinische tests niet nodig). Beperkte klinische bewijsbasis; door het merk gefinancierd onderzoek zonder peer-reviewed diepgang.",
+        "comfort-fit": "Flexibele siliconen, qua comfort vergelijkbaar met Omnilux / CurrentBody. Lichter dan Lumara Viso.",
+        "value": "$349 — toegankelijke prijs in het hogere middensegment. Goedkoper dan Omnilux / CurrentBody / TheraFace, gerechtvaardigd door de lichtere specificaties."
+      },
+      "editorialAdjustment": "Eerlijkheid van de marketing — op de productpagina staat dat het masker “FDA-cleared and clinically proven to” fijne lijntjes en rimpels vermindert, maar het bewijs is HigherDOSE's eigen test van 8 weken met zelfgerapporteerde resultaten, geen gepubliceerde studie, en de FDA-goedkeuring (K241933) is verleend zonder klinische tests (gecontroleerd in oktober 2026). Dit wordt hier gescoord, niet onder bewijs.",
+      "content": "## Waar het voorop loopt\n\nHet HigherDOSE Red Light Face Mask is de referentie onder de consumentenmerken — verzorgd gebruiksgemak, flexibele siliconen, crossover met het HigherDOSE-ecosysteem van PEMF-mat en saunadeken, toegankelijke prijs van $349. De beste uitvoering van het idee van een gebruiksvriendelijk masker voor dagelijks gebruik.\n\n## Wat zijn de nadelen van het HigherDOSE Red Light Face Mask?\n\nKlinisch bewijs en bestralingssterkte. Het masker is FDA-goedgekeurd (510(k) K241933), met door het merk gefinancierd onderzoek; geen dermatologische voorsprong op basis van peer-reviewed onderzoek. De bestralingssterkte van 50 mW/cm² is een cijfer van het merk, en er is geen halsflap. Omnilux, CurrentBody en Lumara scoren in totaal hoger; Lumara loopt voorop qua specificaties.\n\n## Voor wie is het HigherDOSE Red Light Face Mask geschikt?\n\nKies het HigherDOSE Red Light Face Mask voor een verzorgd masker voor dagelijks gebruik in het HigherDOSE-ecosysteem tegen een toegankelijke prijs. Voor een hoger gescoord masker met rood + nabij-infrarood: Omnilux. Voor de marktleider bij consumenten: CurrentBody Series 2. Voor een dermatologisch merk: Dr. Dennis Gross.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Mitochondriale biogenese](/articles/mitochondrial-biogenesis-cellular-power-grid)\n",
+      "faq": [
+        {
+          "q": "Hoeveel kost het HigherDOSE Red Light Face Mask?",
+          "a": "Het HigherDOSE Red Light Face Mask kost los $349. Dat is goedkoper dan Omnilux Contour Face ($395) of Dr. Dennis Gross ($455), en daarvoor krijg je een flexibel siliconen masker met 132 diodes en een oplaadbare controller."
+        },
+        {
+          "q": "Welke golflengten gebruikt het HigherDOSE-masker?",
+          "a": "Het HigherDOSE-masker gebruikt rood licht op 630 nm en nabij-infrarood op 830 nm; HigherDOSE noemt in totaal 50 mW/cm² (26 mW/cm² rood, 24 mW/cm² nabij-infrarood). Dat zijn de cijfers van het merk. Er zijn geen varianten met meerdere golflengten, dus wie een breder spectrum wil, kan beter kijken naar concurrenten met meerdere golflengten."
+        },
+        {
+          "q": "Wat zijn de nadelen van het HigherDOSE Red Light Face Mask?",
+          "a": "De klinische bewijsbasis is beperkt, en de bestralingssterkte van 50 mW/cm² is een eigen cijfer van het merk in plaats van een onafhankelijke meting. Er is geen halsflap en er zijn geen varianten met meerdere golflengten. Het verkoopargument is gebruiksvriendelijkheid en het HigherDOSE-ecosysteem, dat combineert met de PEMF-mat en saunadeken, niet dermatologische diepgang."
+        }
+      ]
     },
     "medito": {
       "verdict": "Helemaal gratis, open source en zonder advertenties, geen account nodig — de keuze zonder addertjes, als je een kleinere bibliotheek accepteert.",
@@ -3278,8 +3442,48 @@
       "productType": "Premium in Canada gebouwd ijsbad"
     },
     "ultrahuman-ring-pro": {
-      "verdict": "De vernieuwde opvolger van de Ring Air zonder abonnement – een accu van 15 dagen, de beste in de categorie, verwerking in de ring en (anders dan de Ring Air) verkrijgbaar in de VS. Veelbelovend, maar te nieuw voor een oordeel over betrouwbaarheid op lange termijn van een merk waarvan de vorige ring accuproblemen had.",
-      "productType": "Slimme ring"
+      "verdict": "De opnieuw ontworpen opvolger van de Ring Air zonder abonnement – een batterij van 15 dagen die de categorie aanvoert en verwerking in de ring, en (anders dan de Ring Air) verkrijgbaar in de VS. Veelbelovend, maar te nieuw voor een oordeel over betrouwbaarheid op lange termijn, van een merk waarvan de vorige ring batterijproblemen had.",
+      "summary": "De Ultrahuman Ring Pro is het volledig nieuw ontworpen vlaggenschip van Ultrahuman, gelanceerd in februari 2026 voor eenmalig $479 zonder abonnement. Het is ook het antwoord van het bedrijf op een lastig probleem: voor de oudere Ultrahuman Ring Air geldt een Amerikaans importverbod na de octrooizege van Oura bij de ITC (van kracht sinds oktober 2025), en de Ring Pro is de opnieuw ontworpen ring waarmee Ultrahuman weer aan Amerikaanse kopers kan verkopen. De blikvanger is een batterij van ~15 dagen die de categorie bepaalt (tegenover 4–6 dagen bij de Ring Air), plus een dual-core processor in de ring voor lokale machine learning en verbeterde hartslagmeting, en \"Jade\", een realtime biointelligentielaag. Hij behoudt de sterke punten van de Ring Air – licht, zonder abonnement, continue hartslagvariabiliteit (HRV), sterke slaaptracking – en mikt direct op zijn grootste zwakte: de betrouwbaarheid van de batterij. Het voorbehoud is een kwestie van eerlijkheid: hij is nieuw, onafhankelijke validatie op lange termijn is mager, en de vorige ring van het merk viel volgens veel meldingen binnen enkele maanden uit, dus de winst in betrouwbaarheid is beloofd, nog niet bewezen.",
+      "description": "ONDA-review: Ultrahuman Ring Pro – opvolger van de Ring Air zonder abonnement, batterij van 15 dagen, nu te koop in de VS, waar de Ring Air verboden is.",
+      "bestFor": "Het best voor kopers die een ring zonder abonnement met een uitzonderlijke batterij willen en het geen probleem vinden om er vroeg bij te zijn met een opnieuw ontworpen product.",
+      "testNote": "Op bewijs gebaseerde beoordeling – gescoord op basis van specificaties van Ultrahuman en vroege onafhankelijke berichtgeving over de lancering van de Ring Pro in 2026. Niet zelf getest door ONDA; betrouwbaarheid op lange termijn is nog niet onafhankelijk vastgesteld.",
+      "productType": "Slimme ring",
+      "pros": [
+        "Batterij van ~15 dagen die de categorie aanvoert – ongeveer drie keer zoveel als de Ring Air",
+        "Geen abonnement – eenmalig $479, levenslang toegang tot je data",
+        "Dual-core processor in de ring en verbeterde hartslagmeting",
+        "Verkrijgbaar in de VS, anders dan de verboden Ring Air"
+      ],
+      "cons": [
+        "Te nieuw voor een bewezen oordeel over betrouwbaarheid op lange termijn",
+        "Hetzelfde merk waarvan de vorige ring veel gemelde batterijstoringen had",
+        "Toegang tot data nog steeds middelmatig – geen volledig open API",
+        "App-afwerking blijft achter bij Oura; geen display"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Continue HRV (SDNN/RMSSD) met verbeterde sensoren en een processor in de ring. Er bestaan alleen door het bedrijf zelf uitgevoerde preprints; er is geen onafhankelijke validatie tegen ECG gevonden (stand oktober 2026). ONDA-regel: zonder eigen onafhankelijke validatie scoort een apparaat maximaal 7,5 als eerdere generaties gevalideerd zijn, anders 7,0.",
+        "sensor": "Verbeterde optische sensorarray en verwerking ten opzichte van de Ring Air; volgens Ultrahuman verbeterde hartslagdata. Schoon signaal in rust.",
+        "sleep-accuracy": "Neemt de slaaptracking van de Ring Air over met de nieuwe verwerkingsketen; cijfers over slaapfasen komen alleen uit door het bedrijf zelf uitgevoerde preprints. ONDA-regel: zonder eigen onafhankelijke validatie scoort een apparaat maximaal 7,5 als eerdere generaties gevalideerd zijn, anders 7,0.",
+        "data-access": "Levenslang toegang tot je eigen data plus export, maar nog steeds geen echt open API. Ongewijzigd ten opzichte van de Ring Air.",
+        "wearability": "De batterij van ~15 dagen springt eruit – ongeveer drie keer zoveel als de Ring Air – en mikt direct op de klacht over betrouwbaarheid. Licht en comfortabel om 24/7 te dragen. Duurzaamheid op lange termijn is zo vroeg nog niet bewezen.",
+        "app-ux": "De capabele Ultrahuman-app met extra \"PowerPlugs\", nu met de realtime biointelligentielaag \"Jade\". Rijk aan functies; de afwerking haalt Oura nog niet.",
+        "value": "Eenmalig $479 zonder abonnement is sterk tegenover de ring plus lidmaatschap van Oura, en de lange batterijduur voegt echte dagelijkse waarde toe – mits de betrouwbaarheid standhoudt."
+      },
+      "content": "## Waarom de Ring Pro bestaat\n\nDe Ultrahuman Ring Pro is niet zomaar een spec-update – het is een antwoord op een juridische muur. In 2025 won Oura een octrooizaak bij de ITC tegen Ultrahuman, en in oktober 2025 ging een Amerikaans importverbod op de [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) in. In plaats van te schikken bracht Ultrahuman een opnieuw ontworpen ring uit. De Ring Pro, gelanceerd in februari 2026, is dat volledig nieuwe vlaggenschip: eenmalig $479, geen abonnement en – cruciaal – weer te koop voor Amerikaanse kopers.\n\n## Waar is de Ultrahuman Ring Pro goed in?\n\nDe blikvanger is de batterij: ongeveer 15 dagen per lading, zo'n drie keer zoveel als de Ring Air en de beste in de categorie. Daarbovenop verzorgt een dual-core processor in de ring lokale machine learning, is de hartslagmeting verbeterd en zit er in de app een realtime biointelligentielaag, \"Jade\". Hij behoudt wat de Ring Air sympathiek maakte – vederlicht, zonder abonnement, continue [HRV](/glossary/heart-rate-variability), sterke slaaptracking – en mikt recht op zijn grootste zwakte.\n\n## Waar je voorzichtig moet blijven\n\nEerlijkheid telt hier. Het bepalende probleem van de Ring Air waren batterijen die binnen enkele maanden uitvielen, en de grootste belofte van de Ring Pro is de batterij. Dat is het juiste om te verhelpen, maar het blijft een belofte tot onafhankelijke tests op lange termijn het bevestigen – van een merk met een recente deuk in zijn betrouwbaarheid. Ook de toegang tot data is ongewijzigd: beter dan een gesloten ecosysteem, maar geen echt open API.\n\n## Wie zou de Ultrahuman Ring Pro moeten kopen?\n\nKies de Ultrahuman Ring Pro als je een ring zonder abonnement met een uitstekende batterij wilt en het geen probleem vindt om er vroeg bij te zijn met een opnieuw ontworpen product. Wil je vandaag een langere staat van dienst, dan is de [RingConn Gen 2](/reviews/ringconn-gen-2) de veiligere keuze zonder abonnement, en de [Oura Ring 5](/reviews/oura-ring-5) is de meest verfijnde ring als je het verplichte lidmaatschap accepteert – eerdere Oura-generaties kwamen 's nachts goed overeen met het ecg, al is de Ring 5 zelf niet apart gevalideerd.\n\n---\n\n## Achtergrondinformatie\n\nDe wetenschap achter waarom HRV het signaal is dat het volgen waard is – en hoe het lichaam het voortbrengt.\n\n- [Coherentie op de resonantiefrequentie](/articles/resonant-frequency-system-coherence) – waarom 5,5–6 ademhalingen per minuut de sweet spot voor HRV-training zijn\n- [Interoceptieve precisie en sensorkalibratie](/articles/interoceptive-precision-sensor-calibration) – waarom je eigen waarneming de onderliggende basislijn is waartegen HRV meet\n- [Anti-entropie-architectuur van het zenuwstelsel](/articles/anti-entropy-neural-architecture) – HRV als dagelijks onderhoudssignaal van het autonome zenuwstelsel\n",
+      "faq": [
+        {
+          "q": "Is de Ultrahuman Ring Pro zonder abonnement?",
+          "a": "Ja – eenmalig $479 zonder abonnement, anders dan Oura, dat de volledige data achter een lidmaatschap van ongeveer $6 per maand zet. Dat is zijn belangrijkste kostenvoordeel."
+        },
+        {
+          "q": "Is de Ultrahuman Ring Pro nauwkeurig voor HRV?",
+          "a": "Hij meet de nachtelijke HRV aan de vinger en scoort 7/10 voor HRV-nauwkeurigheid, met een opener model zonder abonnement. Er bestaan alleen door het bedrijf zelf uitgevoerde preprints; er is geen onafhankelijke validatie van zijn HRV tegen ECG gevonden (stand oktober 2026)."
+        },
+        {
+          "q": "Ultrahuman Ring Pro vs Oura – welke is beter?",
+          "a": "Kies de Ring Pro om een abonnement te vermijden en je data volledig in eigen hand te hebben; kies Oura voor de meer verfijnde app en het meeste gepubliceerde onderzoek naar slaapfasen (bij eerdere generaties, deels door Oura gefinancierd). Er zijn geen onafhankelijke data om hun nauwkeurigheid bij nachtelijke HRV te vergelijken. De Ring Pro is ook de in de VS verkrijgbare opvolger van de Ring Air."
+        }
+      ]
     },
     "oura-ring-5": {
       "verdict": "Het topmodel van 2026 – 40% slanker met echt verbeterde sensoren. Eerdere Oura-generaties kwamen 's nachts goed overeen met ecg; de Ring 5 zelf is niet apart gevalideerd. Het verplichte abonnement blijft het enige echte nadeel.",
@@ -3471,6 +3675,108 @@
           "a": "Sleep as Android is alleen voor Android en zit vol functies, dus hij beloont sleutelen meer dan casual gebruik. Tracking via de telefoon is een schatting tenzij je een wearable koppelt, en de app is minder verzorgd dan de gangbare slaap-apps voor iOS."
         }
       ]
+    },
+    "samsung-galaxy-ring": {
+      "verdict": "Het Oura-alternatief zonder abonnement voor Android – comfortabel en degelijk, al zit je vast aan het Samsung-ecosysteem.",
+      "productType": "Slimme ring"
+    },
+    "renu-therapy-cold-stoic": {
+      "verdict": "Koudwaterbad uit de premiumklasse met een bewust stille koeler – het best voor installatie binnenshuis, waar geluid ertoe doet.",
+      "summary": "De Renu Therapy Cold Stoic is een koudwaterbad uit de premiumklasse, ontworpen rond installatie binnenshuis – de koeler behoort tot de stilste in de categorie, de constructie is geïsoleerd voor temperatuurbeheer binnenshuis en het formaat past in een gewone badkamer of kelder. Iets minder agressief in minimumtemperatuur dan Plunge, maar beter op geluid en geschiktheid voor binnen.",
+      "description": "ONDA-review van de Renu Therapy Cold Stoic – premium koudwaterbad met een van de stilste koelers in de categorie.",
+      "bestFor": "Het best voor wie een koudwaterbad binnenshuis installeert, waar het geluid van de koeler ertoe doet.",
+      "testNote": "Op bewijs gebaseerde beoordeling – gescoord op basis van productdocumentatie van Renu Therapy en onafhankelijke reviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Premium koudwaterbad met stille koeler",
+      "pros": [
+        "Stilste koeler onder de premium koudwaterbaden – het best voor installatie binnenshuis",
+        "Geïsoleerde constructie, geoptimaliseerd voor temperatuurbeheer binnenshuis",
+        "Ozon + 3 jaar garantie",
+        "Sterke staat van dienst qua betrouwbaarheid in de premiumklasse"
+      ],
+      "cons": [
+        "Minimumtemperatuur iets minder agressief dan Plunge (40°F vs 39°F)",
+        "Premiumprijs – vanaf $ 5.500, vergelijkbaar met Plunge",
+        "Minder merkbekendheid dan Plunge",
+        "Content met protocolbegeleiding minder uitgewerkt"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "Capabele koeler houdt betrouwbaar 40°F vast. Iets minder agressieve minimumtemperatuur dan de 39°F van Plunge, maar stillere werking.",
+        "build": "Geïsoleerde premiumconstructie met beslag van maritieme kwaliteit. Geoptimaliseerd voor binnen. 3 jaar garantie.",
+        "water-management": "Ozon + filter; water verversen elke 3–4 weken.",
+        "form-factor": "Ontworpen voor installatie binnenshuis (kelder, garage, eigen wellnessruimte). De stille koeler maakt plaatsing binnen realistisch waar Plunge op het randje zit.",
+        "evidence": "Redelijke marketingclaims; protocolbegeleiding mager vergeleken met Plunge.",
+        "value": "Vanaf $ 5.500, afhankelijk van de configuratie. Vergelijkbaar met Plunge, met een voordeel op koelergeluid."
+      },
+      "content": "## Waar hij voorop loopt\n\nDe Renu Therapy Cold Stoic is de premiumkeuze voor installatie binnenshuis. De koeler is merkbaar stiller dan die van Plunge, de constructie is geoptimaliseerd voor temperatuurbeheer binnenshuis en het formaat past in een gewone wellnessruimte thuis. Wie het bad in een kelder, garage of eigen ruimte zet, krijgt hier de juiste vorm.\n\n## Wat zijn de nadelen van de Renu Therapy Cold Stoic?\n\nDe minimumtemperatuur ligt op 40°F tegenover 39°F bij Plunge – in de praktijk marginaal, maar op papier echt. De merkbekendheid is kleiner dan die van de categorieleider. De prijs is vergelijkbaar met Plunge, zonder hetzelfde content-ecosysteem.\n\n## Wie zou de Renu Therapy Cold Stoic moeten kopen?\n\nKies de Renu Therapy Cold Stoic als installatie binnenshuis en koelergeluid de doorslag geven. Voor installatie buiten zijn Plunge of Coldture logischer. Voor de absoluut laagste minimumtemperatuur: Morozko Forge.\n\n---\n\n## Achtergrondinformatie\n\nDe biologie achter waarom koudeblootstelling werkt – en de protocollen die samen met de hardware effect opbouwen.\n\n- [CO₂-tolerantie en de zuurstofgrens](/articles/co2-tolerance-expanding-oxygen-limit) – waarom koude- en ademprotocollen goed samengaan\n- [Anti-entropie-architectuur van het zenuwstelsel](/articles/anti-entropy-neural-architecture) – koudeblootstelling als dagelijkse anti-entropie-stressdosis\n- [Mitochondriale biogenese: het cellulaire stroomnet](/articles/mitochondrial-biogenesis-cellular-power-grid) – waarom koudeshock de mitochondriale dichtheid verhoogt\n",
+      "faq": [
+        {
+          "q": "Is de Renu Therapy Cold Stoic het geld waard?",
+          "a": "De Cold Stoic is het waard als je een koudwaterbad binnenshuis installeert, waar het geluid van de koeler ertoe doet. Hij heeft de stilste koeler onder de premium baden, een geïsoleerde constructie voor temperatuurbeheer binnenshuis, ozonreiniging en 3 jaar garantie."
+        },
+        {
+          "q": "Hoeveel kost de Renu Therapy Cold Stoic?",
+          "a": "De Renu Therapy Cold Stoic staat genoteerd voor eenmalig $ 5.500, inclusief koeler, ozon en 3 jaar garantie. Dat is vergelijkbaar met de premiumprijs van The Plunge. De meerprijs levert de stilste koeler onder de premium baden op, wat vooral telt bij installatie binnenshuis."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Renu Therapy Cold Stoic?",
+          "a": "De minimumtemperatuur van 40°F is iets minder agressief dan de 39°F van Plunge, de prijs van $ 5.500 of meer is vergelijkbaar met Plunge, de merkbekendheid is kleiner en de content met protocolbegeleiding is minder uitgewerkt."
+        },
+        {
+          "q": "Renu Cold Stoic vs Plunge: welke is beter?",
+          "a": "Kies de Renu Cold Stoic voor installatie binnenshuis, omdat hij de stilste premium koeler heeft. Kies The Plunge voor een iets koudere minimumtemperatuur van 39°F en grotere merkbekendheid. De prijzen zijn vergelijkbaar en beide hebben ozon en 3 jaar garantie."
+        }
+      ]
+    },
+    "bluecube-cold-plunge": {
+      "verdict": "De keuze van professionele kwaliteit – overgedimensioneerd voor thuisgebruik, de juiste vorm voor klinieken, sportscholen of huishoudens met meerdere gebruikers.",
+      "summary": "Het BlueCube Cold Plunge is het bad van professionele kwaliteit dat aan klinieken en sportfaciliteiten wordt verkocht. De koeler heeft de hoogste capaciteit in de consumentgerichte markt – hij herstelt snel genoeg voor doorlopende baden direct na elkaar. Voor gewoon thuisgebruik door één persoon is hij overgedimensioneerd; voor huishoudens met meerdere gebruikers of klinische omgevingen is het het juiste gereedschap.",
+      "description": "ONDA-review van het BlueCube Cold Plunge – koudwaterbad van professionele kwaliteit met de krachtigste koeler op de consumentenmarkt.",
+      "bestFor": "Het best voor klinieken, sportfaciliteiten of huishoudens met meerdere gebruikers, waar koelcapaciteit ertoe doet.",
+      "testNote": "Op bewijs gebaseerde beoordeling – gescoord op basis van productdocumentatie van BlueCube Baths en onafhankelijke reviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Koudwaterbad van professionele kwaliteit met krachtige koeler",
+      "pros": [
+        "Koeler met de hoogste capaciteit in deze lijst – ondersteunt doorlopend gebruik door meerdere gebruikers",
+        "Constructie van professionele kwaliteit met 5 jaar garantie op onderdelen",
+        "Waterreiniging op professioneel niveau (ozon + UV)",
+        "De juiste vorm voor klinieken, sportscholen of huishoudens met meerdere gebruikers"
+      ],
+      "cons": [
+        "Prijs vanaf $11.000 – overdreven voor thuisgebruik door één persoon",
+        "Grote voetafdruk en vaak 220V-aansluiting nodig",
+        "Installatie kan elektrisch werk vereisen",
+        "Verkeerde vorm voor de gemiddelde thuisgebruiker"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "Koeler met de hoogste capaciteit in deze lijst – gebouwd voor doorlopend gebruik door meerdere gebruikers. Houdt zelfs in de zomerhitte agressieve temperaturen vast, met snel herstel.",
+        "build": "Constructie van professionele kwaliteit, ontworpen voor gebruik door meerdere gebruikers in kliniek of sportschool. 5 jaar garantie op de meeste onderdelen.",
+        "water-management": "Ozon + UV + filtratie van professionele kwaliteit. Reiniging voor dagelijks gebruik die meerdere gebruikers per dag aankan.",
+        "form-factor": "Grote voetafdruk die een eigen ruimte vereist. In de meeste configuraties is een 220V-aansluiting nodig.",
+        "evidence": "Sterke protocolbegeleiding voor klinische en sportieve omgevingen. Eerlijk over de commerciële focus.",
+        "value": "Vanaf $11.000. Overdreven voor thuisgebruik door één persoon; passend voor klinieken, sportscholen en huishoudens met meerdere gebruikers."
+      },
+      "content": "## Waar hij voorop loopt\n\nBlueCube is het koudwaterbad van professionele klasse – gebouwd voor klinieken, sportscholen en huishoudens met meerdere gebruikers, waar doorlopend gebruik direct na elkaar de belasting is. Koelcapaciteit en reinigingssystemen zijn overgedimensioneerd voor thuisgebruik door één persoon, maar precies goed voor commercieel gebruik.\n\n## Wat zijn de nadelen van het BlueCube Cold Plunge?\n\nPrijs en overkill. Voor thuisgebruik door één persoon biedt BlueCube meer capaciteit dan je zult gebruiken, tegen twee keer de prijs van Plunge.\n\n## Wie zou het BlueCube Cold Plunge moeten kopen?\n\nKies BlueCube als je een kliniek, sportfaciliteit of huishouden runt met drie of meer gebruikers die het bad delen. Voor thuisgebruik door één persoon bieden Plunge, Edge of Coldture ruim voldoende capaciteit voor ongeveer een kwart tot de helft van de kosten.\n\n---\n\n## Achtergrondinformatie\n\nDe biologie achter waarom koudeblootstelling werkt – en de protocollen die samen met de hardware effect opbouwen.\n\n- [Oefeningen voor de nervus vagus](/articles/vagus-nerve-exercises) – bij onderdompeling van het hele lichaam is de hoofdreactie de sympathische koudeshock; de vagale reactie (duikreflex) komt vooral van kou op het gezicht, en de hartslagvariabiliteit (HRV) stijgt alleen tijdens de blootstelling ([bewijs](/science/evidence/cold-exposure))\n- [Controle van de HPA-as en cortisolregulatie](/articles/hpa-axis-control-cortisol-aggression) – hoe koudeblootstelling de cortisolcurve vormt\n- [Bijnieruitputting: wat het bewijs zegt](/articles/adrenal-governor-thermal-runaway) – waarom stressgerelateerde uitputting geen \"opgebrande bijnieren\" is, en wanneer je naar een arts moet\n",
+      "faq": [
+        {
+          "q": "Is het BlueCube Cold Plunge het geld waard?",
+          "a": "Ja voor klinieken, sportscholen en huishoudens met meerdere gebruikers, maar nee voor gewoon thuisgebruik door één persoon. BlueCube heeft de koeler met de hoogste capaciteit in zijn categorie, die doorlopende baden direct na elkaar mogelijk maakt, plus een constructie van professionele kwaliteit en reiniging met ozon en UV. Voor één persoon thuis is hij overgedimensioneerd."
+        },
+        {
+          "q": "Hoeveel kost het BlueCube Cold Plunge?",
+          "a": "Het BlueCube Cold Plunge begint bij ongeveer $11.000, en de volledige professionele uitvoering kost $14.000 of meer. Installatie kan ook elektrisch werk vereisen, omdat vaak een 220V-aansluiting nodig is, dus reken naast het bad ook op installatiekosten."
+        },
+        {
+          "q": "Wat zijn de nadelen van het BlueCube Cold Plunge?",
+          "a": "De BlueCube kost $11.000+ en is overdreven voor thuisgebruik door één persoon. Hij neemt veel ruimte in, vereist vaak een 220V-aansluiting en de installatie kan elektrisch werk vergen, waardoor hij de verkeerde vorm heeft voor de gemiddelde thuisgebruiker."
+        },
+        {
+          "q": "Voor wie is het BlueCube Cold Plunge het meest geschikt?",
+          "a": "Het BlueCube Cold Plunge is het meest geschikt voor klinieken, sportfaciliteiten of huishoudens met meerdere gebruikers, waar koelcapaciteit ertoe doet. De koeler herstelt snel genoeg voor doorlopende baden direct na elkaar, ondersteund door een constructie van professionele kwaliteit en 5 jaar garantie op onderdelen. Voor thuisgebruik door één persoon is hij overgedimensioneerd."
+        }
+      ]
+    },
+    "ice-barrel-500": {
+      "verdict": "Het populairste tonvormige ijsbad – degelijke bouw, geen koeler, de kosten van ijs zijn de dagelijkse drempel.",
+      "productType": "Geïsoleerde ton (zonder koeler, met ijs te vullen)"
     }
   },
   "comparisons": {
@@ -6339,6 +6645,439 @@
         }
       ],
       "content": "## De korte versie\n\nDe [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) is het topmodel zonder abonnement – eenmalig $479, accu van ~15 dagen, verwerking in de ring. De [Oura Ring 5](/reviews/oura-ring-5) heeft de volwassenere app, uit een ringlijn met meer onderzoek naar eerdere modellen (de nauwkeurigheid van de Ring 5 is nog niet onafhankelijk gevalideerd), voor $399 plus een verplicht lidmaatschap.\n\n## Wanneer is de Ultrahuman Ring Pro de juiste keuze?\n\nJe weigert terugkerende kosten, je wilt de langste accuduur in de categorie en je vindt het prima om early adopter te zijn van een vernieuwde ring.\n\n## Wanneer is de Oura Ring 5 de juiste keuze?\n\nNauwkeurigheid en een diepe app hebben prioriteit, je wilt verbeterde sensoren en de meest verzorgde ervaring, en het lidmaatschap is acceptabel.\n\n## Ook het vergelijken waard\n\nVoor de vorige, goedkopere Oura, zie [Oura Ring 5 vs Oura Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4); voor andere ringen zonder abonnement de [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) en [RingConn Gen 2](/reviews/ringconn-gen-2). Het volledige veld: [beste HRV-trackers](/reviews/hrv-trackers)."
+    },
+    "lightstim-for-wrinkles-vs-solawave-wand-4-in-1": {
+      "title": "LightStim for Wrinkles vs Solawave Wand 4-in-1: vergelijking",
+      "description": "LightStim for Wrinkles vs Solawave Wand 4-in-1: FDA-goedgekeurd apparaat met vier golflengtes vs budget-multifunctiestaaf. ONDA vergelijkt ze.",
+      "intro": "LightStim for Wrinkles en Solawave Wand 4-in-1 zijn de twee handheld roodlichtapparaten die gebruikers vergelijken als ze geen masker willen waarbij je moet liggen. Beide kosten minder dan $ 300 en bij beide moet je het apparaat elke sessie actief positioneren. Het beslissende verschil is spectrum versus extra functies: LightStim is een handheld met vier golflengtes (rood + nabij-infrarood); Solawave is een staaf met één rode golflengte die microstroom, warmte en massage toevoegt. Voor geen van beide zijn er gepubliceerde studies naar het apparaat zelf.",
+      "verdict": "LightStim wint op golflengtebereik en langere marktgeschiedenis. Solawave wint op prijs en het multifunctionele pakket.",
+      "bestForA": "Kies LightStim for Wrinkles als je een FDA-goedgekeurde handheld met vier golflengtes (rood + nabij-infrarood) wilt.",
+      "bestForB": "Kies Solawave Wand 4-in-1 als je voordelig wilt instappen in handheld roodlicht met een multifunctioneel pakket (led + microstroom + warmte + massage).",
+      "axes": [
+        {
+          "name": "Klinisch bewijs",
+          "note": "Voor geen van beide zijn er gepubliceerde studies naar het apparaat zelf. LightStim is FDA-goedgekeurd (K120775; huidig model K261482), maar de enige rimpeldata in de FDA-dossiers komen uit een ongepubliceerde bedrijfsstudie van een eerder model; Solawave is bij de FDA geregistreerd (een vermelding, geen goedkeuring) met door het merk gefinancierde klantervaringen. FDA-status is neutraal in de ONDA-scores."
+        },
+        {
+          "name": "Golflengtebereik",
+          "note": "LightStim: vier golflengtes (605 / 640 / 652 / 850 nm), inclusief nabij-infrarood. Solawave: één rode golflengte, 660 nm."
+        },
+        {
+          "name": "Led-dosis",
+          "note": "LightStim: 21,6 mW/cm² op behandelafstand volgens het FDA-dossier (K261482; opgave van de fabrikant). Solawave: geen bestralingssterkte in onze bronnen. Zonder vergelijkbare cijfers wijzen we geen winnaar aan."
+        },
+        {
+          "name": "Multifunctioneel pakket",
+          "note": "Solawave: led + microstroom + warmte + massage in één apparaat. LightStim: alleen led."
+        },
+        {
+          "name": "Staat van dienst",
+          "note": "LightStim: de eerste FDA-goedkeuring van de fabrikant voor rimpels dateert van 2009 (volgens de FDA-database) – marktgeschiedenis, geen bewijs dat het werkt. Solawave: nieuwer consumentenmerk."
+        },
+        {
+          "name": "Prijs",
+          "note": "Solawave: $ 169. LightStim: $ 249. Solawave is merkbaar goedkoper."
+        }
+      ],
+      "faq": [
+        {
+          "q": "LightStim of Solawave – welke handheld is beter?",
+          "a": "Voor golflengtebereik en nabij-infrarood: LightStim. Voor multifunctioneel gemak tegen een lagere prijs: Solawave. LightStim is de rationele keuze als je de meerprijs van $ 80 voor vier golflengtes kunt betalen."
+        },
+        {
+          "q": "Maakt het multifunctionele pakket van Solawave de enkele golflengte goed?",
+          "a": "Voor gebruikers die microstroom + warmte + massage in één apparaat waarderen: ja, het pakket is een goede deal. Voor gebruikers die vooral voor roodlicht kopen, voegt LightStim drie extra golflengtes toe, waaronder nabij-infrarood."
+        },
+        {
+          "q": "Welke heeft de betere dermatologische staat van dienst?",
+          "a": "LightStim heeft de langere marktgeschiedenis – de eerste FDA-goedkeuring van de fabrikant voor rimpels dateert van 2009 – maar voor geen van beide zijn er gepubliceerde studies naar het apparaat zelf: de enige rimpeldata in de FDA-dossiers van LightStim komen uit een ongepubliceerde bedrijfsstudie, en Solawave leunt op klantervaringen."
+        },
+        {
+          "q": "Zijn handhelds de moeite waard vergeleken met maskers?",
+          "a": "Voor gebruikers die gerichte sessies per zone willen: ja. Voor gebruikers die passieve sessies voor het hele gezicht willen, zijn maskers (Omnilux, CurrentBody) handiger. Voor geen van beide handhelds hier zijn er gepubliceerde studies naar het apparaat zelf."
+        }
+      ],
+      "content": "## De korte versie\n\nBeide zijn handheld roodlichtapparaten onder $ 300. LightStim is de FDA-goedgekeurde handheld met vier golflengtes. Solawave is de voordelige multifunctionele instapper.\n\n## Wanneer is LightStim for Wrinkles de juiste keuze?\n\nAls je een handheld met vier golflengtes (rood + nabij-infrarood) wilt, past LightStim. Het huidige model is FDA-goedgekeurd (K261482) en de fabrikant vermeldt in dat dossier 21,6 mW/cm² op behandelafstand; er zijn geen gepubliceerde studies naar het apparaat zelf.\n\n## Wanneer is Solawave Wand 4-in-1 de juiste keuze?\n\nAls je voordelig wilt instappen in roodlicht met een multifunctioneel pakket, past Solawave. Eén rode golflengte, bescheiden dosis, maar het pakket van led + microstroom + warmte + massage is voor $ 169 een degelijke deal."
+    },
+    "gammacore-sapphire-cv-vs-truvaga-350-vs-pulsetto": {
+      "title": "gammaCore vs Truvaga 350 vs Pulsetto: vergelijking (2026)",
+      "description": "gammaCore vs Truvaga vs Pulsetto – ONDA vergelijkt drie cervicale tVNS-apparaten: FDA-goedgekeurd op recept, consumentenversie en toegankelijke halsband.",
+      "intro": "gammaCore Sapphire CV, Truvaga 350 en Pulsetto zijn de drie cervicale tVNS-apparaten die gebruikers vergelijken over het spectrum van gereguleerd tot consument. gammaCore is FDA-goedgekeurd en alleen op recept; Truvaga is de vrij verkrijgbare consumentenvariant op hetzelfde hardwareplatform; Pulsetto is de meest toegankelijke consumentenhalsband met de breedste programmabibliotheek. Drie regelgevende niveaus, één doelzenuw.",
+      "verdict": "Verschillende niveaus. gammaCore voor hoofdpijnpatiënten met een klinische indicatie en een voorschrijver. Truvaga 350 voor consumenten die het gammaCore-platform zonder recept willen. Pulsetto voor de meest toegankelijke cervicale tVNS voor dagelijks gebruik.",
+      "bestForA": "Kies gammaCore Sapphire CV als je een gediagnosticeerde migraine of clusterhoofdpijn hebt en een arts die het wil voorschrijven – het enige FDA-goedgekeurde niet-invasieve VNS-apparaat.",
+      "bestForB": "Kies Truvaga 350 als je het gammaCore-hardwareplatform wilt zonder receptdrempel – dezelfde cervicale 5-kHz-golfvorm, vrij verkocht als wellnessapparaat.",
+      "bestForC": "Kies Pulsetto als je de meest toegankelijke cervicale tVNS voor consumenten wilt – een halsband met vier begeleide programma's (slaap, stress, angst, pijn) voor de laagste prijs.",
+      "axes": [
+        {
+          "name": "FDA-goedkeuring",
+          "note": "gammaCore: FDA-goedgekeurd (op recept) voor migraine (preventie en acute behandeling, vanaf 12 jaar), clusterhoofdpijn, paroxismale hemicrania en hemicrania continua. Truvaga en Pulsetto: wellnessapparaten voor consumenten, niet FDA-goedgekeurd. gammaCore is de enige klinisch goedgekeurde niet-invasieve VNS in de VS."
+        },
+        {
+          "name": "Onderzoeksbewijs – binnen de indicatie",
+          "note": "gammaCore: 30+ gerandomiseerde studies naar migraine en clusterhoofdpijn. Truvaga: erft de veiligheid van het gammaCore-platform. Pulsetto: één pilotstudie plus door het bedrijf gesponsorde studies."
+        },
+        {
+          "name": "Hardwareplatform",
+          "note": "gammaCore en Truvaga delen hetzelfde hardwareplatform van electroCore (5-kHz-burstgolfvorm). Pulsetto heeft een ander ontwerp (consumentenhalsband met nekpads)."
+        },
+        {
+          "name": "Vormfactor",
+          "note": "Pulsetto: lichte halsband, omdoen en klaar. gammaCore en Truvaga: handheld, je moet het actief tegen de zijkant van je nek houden."
+        },
+        {
+          "name": "Programmavariatie",
+          "note": "Pulsetto: vier begeleide programma's. Truvaga: intensiteit aanpasbaar binnen vaste sessies van 2 minuten. gammaCore: dosis bepaald door de voorschrijver, geen variatie door de gebruiker."
+        },
+        {
+          "name": "Levensduur in sessies",
+          "note": "Pulsetto: onbeperkt sessies gedurende de levensduur van het apparaat. Truvaga 350: limiet van 350 sessies, daarna afgedankt. gammaCore: model met navulkaarten."
+        },
+        {
+          "name": "Toegankelijkheid voor consumenten",
+          "note": "Pulsetto: laagste drempel – direct te koop, geen recept. Truvaga: vrij verkrijgbaar, iets meer gedoe. gammaCore: recept vereist."
+        },
+        {
+          "name": "Prijs",
+          "note": "Pulsetto: $ 269. Truvaga 350: $ 325 voor 350 vooraf geladen sessies (oplaadbare Truvaga Plus $ 499). gammaCore: ~$ 600+ met navulkaarten, plus wisselende vergoeding door verzekeraars."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Welk cervicaal tVNS-apparaat is het beste – gammaCore, Truvaga of Pulsetto?",
+          "a": "Hangt af van wat je wilt. gammaCore voor klinisch geïndiceerde hoofdpijnbehandeling met begeleiding van een voorschrijver. Truvaga voor het gammaCore-platform zonder receptdrempel. Pulsetto voor de meest toegankelijke cervicale tVNS voor consumenten tegen de laagste prijs met de breedste programmabibliotheek."
+        },
+        {
+          "q": "Zijn Truvaga en gammaCore echt dezelfde hardware?",
+          "a": "Hetzelfde platform – beide gemaakt door electroCore, beide met de cervicale 5-kHz-burstgolfvorm. De klinische etikettering verschilt: gammaCore is FDA-goedgekeurd voor migraine (preventie en acute behandeling, vanaf 12 jaar), clusterhoofdpijn, paroxismale hemicrania en hemicrania continua, Truvaga wordt vrij verkocht als wellnessapparaat."
+        },
+        {
+          "q": "Is Pulsetto FDA-goedgekeurd?",
+          "a": "Nee. Pulsetto heeft in Europa een CE-markering als wellnessapparaat voor consumenten en wordt in de VS vrij verkocht. Het enige FDA-goedgekeurde niet-invasieve cervicale VNS-apparaat is gammaCore, en dat is alleen op recept."
+        },
+        {
+          "q": "Welke heeft het sterkste acute effect?",
+          "a": "Geen enkele studie vergelijkt de drie rechtstreeks – alle drie richten zich op de cervicale nervus vagus-stam. gammaCore en Truvaga geven gerichte sessies van 2 minuten met hoge intensiteit; Pulsetto geeft langere, mildere sessies van 4–20 minuten. Ander verloop in de tijd; geen gepubliceerde data vergelijken hun totale dosis of acute effect."
+        },
+        {
+          "q": "Kan Truvaga gammaCore vervangen bij migraine?",
+          "a": "Klinisch niet – Truvaga is voor geen enkele indicatie FDA-goedgekeurd. Wie een klinische diagnose migraine of clusterhoofdpijn heeft, gebruikt beter gammaCore onder medische begeleiding. Truvaga wordt verkocht als algemeen wellnessapparaat, niet als hoofdpijnbehandeling."
+        }
+      ],
+      "content": "## De korte versie\n\nDrie regelgevende niveaus met hetzelfde doel: de vagusstam. gammaCore voor klinische hoofdpijnpatiënten; Truvaga voor consumenten die het gammaCore-platform zonder recept willen; Pulsetto voor de meest toegankelijke cervicale tVNS voor consumenten tegen de laagste prijs.\n\n## Wanneer is gammaCore Sapphire CV de juiste keuze?\n\nAls je een gediagnosticeerde migraine of clusterhoofdpijn hebt en een arts die het wil voorschrijven, is gammaCore het juiste middel. De FDA-goedkeuring en 30+ gerandomiseerde studies zijn de regelgevende meerwaarde. Niet geschikt voor algemene wellness.\n\n## Wanneer is Truvaga 350 de juiste keuze?\n\nAls je het gammaCore-hardwareplatform wilt – dezelfde cervicale 5-kHz-golfvorm, dezelfde productieherkomst – zonder langs een arts te gaan, past Truvaga. De wellnessindicatie is direct gericht op consumenten; het klinische bewijs geldt voor het platform, niet voor de etikettering van Truvaga.\n\n## Wanneer is Pulsetto de juiste keuze?\n\nAls je een cervicale tVNS-halsband voor dagelijks gebruik wilt met vier begeleide programma's en zonder klinische verplichting, past Pulsetto. De laagste prijs, de breedste programmabibliotheek en de onbeperkte levensduur in sessies maken het verschil. De meeste consumenten komen hier uit."
+    },
+    "ultrahuman-ring-pro-vs-ultrahuman-ring-air": {
+      "title": "Ultrahuman Ring Pro vs Ring Air: vergelijking (2026)",
+      "description": "Ultrahuman Ring Pro vs Ring Air: de vernieuwde, in de VS verkrijgbare opvolger met ~15 dagen batterij vs de in de VS verboden Ring Air.",
+      "intro": "Dit is eigenlijk een vraag over upgrade en beschikbaarheid. De Ultrahuman Ring Pro is de vernieuwde opvolger: ~15 dagen batterij, verwerking in de ring zelf en – cruciaal – te koop in de VS. Voor de oudere Ultrahuman Ring Air geldt een Amerikaans importverbod (na Oura's octrooizege bij de ITC) en er werden veel batterijproblemen over gemeld. Voor een koper in de VS is dit nauwelijks een wedstrijd.",
+      "verdict": "Voor kopers in de VS wint de Ring Pro automatisch – de Ring Air mag in de VS niet worden verkocht en is daar niet te koop. Los van beschikbaarheid verdrievoudigt de Ring Pro ongeveer de batterijduur (~15 vs ~4–6 dagen), voegt verwerking in de ring toe en is Ultrahumans antwoord op de klachten over de batterijbetrouwbaarheid van de Ring Air. De Ring Air is alleen zinvol met flinke korting waar hij nog legaal verkrijgbaar is en je het risico accepteert.",
+      "bestForA": "Kies de Ultrahuman Ring Pro – de huidige, in de VS verkrijgbare Ultrahuman-ring zonder abonnement, met een toonaangevende batterijduur en de betrouwbaarheidsverbeteringen die de Ring Air nodig had.",
+      "bestForB": "De Ring Air is alleen zinvol waar hij nog legaal wordt verkocht, met flinke korting, en als je het risico op batterijproblemen accepteert. In de VS is hij geen optie.",
+      "axes": [
+        {
+          "name": "Beschikbaarheid in de VS",
+          "note": "De Ring Pro is te koop in de VS. Voor de Ring Air geldt een Amerikaans importverbod (sinds okt. 2025) en hij is daar niet te koop. Doorslaggevend voor kopers in de VS."
+        },
+        {
+          "name": "Batterij",
+          "note": "Ring Pro: ~15 dagen. Ring Air: ~4–6 dagen. Ongeveer drie keer zo lang."
+        },
+        {
+          "name": "Betrouwbaarheid",
+          "note": "Over de Ring Air werden veel batterijstoringen binnen enkele maanden gemeld; de Ring Pro is het herontwerp dat precies dat moet oplossen (al is hij nieuw en op lange termijn nog niet bewezen)."
+        },
+        {
+          "name": "Verwerking & functies",
+          "note": "De Ring Pro voegt een dual-coreprocessor in de ring toe en de \"Jade\"-biointelligentielaag. De Ring Air heeft geen van beide."
+        },
+        {
+          "name": "Abonnement",
+          "note": "Gelijkspel – beide zijn zonder abonnement, eenmalige aankopen."
+        },
+        {
+          "name": "Prijs",
+          "note": "De Ring Air kwam uit voor ~$ 350 tegenover $ 479 voor de Ring Pro, dus waar hij nog verkocht wordt, is hij goedkoper – het enige echte voordeel van de Ring Air."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Moet ik de Ultrahuman Ring Pro of de Ring Air kopen?",
+          "a": "De Ring Pro, in bijna alle gevallen – ongeveer drie keer zoveel batterijduur, verwerking in de ring, en het is de ring die je in de VS echt kunt kopen (voor de Ring Air geldt een Amerikaans importverbod). De Ring Air is alleen zinvol met flinke korting waar hij nog verkocht wordt, als je het risico op batterijproblemen accepteert."
+        },
+        {
+          "q": "Waarom is de Ring Air niet verkrijgbaar in de VS?",
+          "a": "Nadat Oura een octrooizaak bij de ITC had gewonnen, ging in oktober 2025 een Amerikaans importverbod voor de Ultrahuman Ring Air in. Ultrahumans antwoord was de vernieuwde Ring Pro, die in de VS verkrijgbaar is."
+        },
+        {
+          "q": "Is de batterij van de Ring Pro echt beter?",
+          "a": "Ja – ongeveer 15 dagen tegenover 4–6 bij de Ring Air. De batterij was de grootste zwakte van de Ring Air en is de belangrijkste verbetering van de Ring Pro."
+        }
+      ],
+      "content": "## De korte versie\n\n> Voor de [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) geldt een Amerikaans importverbod (oktober 2025) en hij is niet te koop in de VS. De [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) is de vernieuwde, in de VS verkrijgbare opvolger.\n\nDe Ring Pro verdrievoudigt ongeveer de batterijduur, voegt verwerking in de ring toe en lost de problemen met beschikbaarheid en betrouwbaarheid op die de Ring Air achtervolgden.\n\n## Wanneer is de Ring Pro de juiste keuze?\n\nBijna altijd – het is de huidige, in de VS verkrijgbare Ultrahuman-ring die langer meegaat.\n\n## Wanneer is de Ring Air de juiste keuze?\n\nAlleen waar hij nog legaal wordt verkocht, met flinke korting, en als je het risico op batterijproblemen accepteert. Geen optie voor kopers in de VS.\n\n## Ook het vergelijken waard\n\nVergelijk de Ring Pro met de [Oura Ring 5](/reviews/vs/ultrahuman-ring-pro-vs-oura-ring-5), de [Samsung Galaxy Ring](/reviews/vs/ultrahuman-ring-pro-vs-samsung-galaxy-ring) en de [RingConn Gen 2](/reviews/vs/ultrahuman-ring-pro-vs-ringconn-gen-2). Het hele veld: [de beste trackers voor hartslagvariabiliteit (HRV)](/reviews/hrv-trackers)."
+    },
+    "ultrahuman-ring-pro-vs-samsung-galaxy-ring": {
+      "title": "Ultrahuman Ring Pro vs Samsung Galaxy Ring: vergelijking",
+      "description": "Ultrahuman Ring Pro vs Samsung Galaxy Ring – twee slimme ringen zonder abonnement. Cross-platform + ~15 dagen batterij vs de ring voor Samsung.",
+      "intro": "Beide zijn slimme ringen zonder abonnement, en dat is hun gedeelde aantrekkingskracht: eenmalig kopen, geen lidmaatschap. Het verschil zit in het bereik: de Ultrahuman Ring Pro werkt op alle platforms, met een toonaangevende batterijduur van ~15 dagen en verwerking in de ring; de Samsung Galaxy Ring is comfortabel en degelijk, maar komt het best tot zijn recht met een Samsung Galaxy-telefoon. Platformonafhankelijkheid en batterij tegenover het gemak van het Samsung-ecosysteem.",
+      "verdict": "Beide slaan het abonnement over. De Ultrahuman Ring Pro wint op batterij (~15 dagen), ondersteuning voor alle platforms en verwerking in het apparaat; de Samsung Galaxy Ring wint als je in het Samsung-ecosysteem leeft en een goedkopere, beproefdere ring wilt ($ 399 vs $ 479). Kies op basis van je telefoon en prioriteiten.",
+      "bestForA": "Kies de Ultrahuman Ring Pro als je de langste batterijduur, ondersteuning voor alle platforms (iOS/Android) en uitgebreidere metingen wilt, en niet vast wilt zitten aan één telefoonmerk.",
+      "bestForB": "Kies de Samsung Galaxy Ring als je een Samsung Galaxy-telefoon hebt en strakke integratie met het ecosysteem en een goedkopere, gevestigde ring wilt.",
+      "axes": [
+        {
+          "name": "Abonnement",
+          "note": "Gelijkspel – geen van beide rekent een abonnement. Beide zijn eenmalige aankopen, en dat is precies de reden om ze te overwegen in plaats van Oura."
+        },
+        {
+          "name": "Batterij",
+          "note": "Ring Pro: ~15 dagen, de beste in zijn klasse. Galaxy Ring: ~6–7 dagen. Duidelijk voordeel voor Ultrahuman."
+        },
+        {
+          "name": "Platformbereik",
+          "note": "De Ring Pro werkt volledig op iOS en Android. De beste functies van de Galaxy Ring gaan uit van een Samsung Galaxy-telefoon; buiten dat ecosysteem is hij beperkter."
+        },
+        {
+          "name": "Integratie met het ecosysteem",
+          "note": "Op een Samsung Galaxy-telefoon integreert de Galaxy Ring strak met Samsung Health en Galaxy-apparaten – soepeler dan een ring van derden voor Samsung-gebruikers."
+        },
+        {
+          "name": "Prijs",
+          "note": "Galaxy Ring: ~$ 399. Ring Pro: $ 479. De Samsung-ring is bij aanschaf goedkoper; beide vermijden doorlopende kosten."
+        },
+        {
+          "name": "Staat van dienst",
+          "note": "Samsung is een gevestigde hardwarefabrikant met een verkrijgbare, beproefde ring. De Ring Pro is nieuw, en over Ultrahumans vorige Ring Air waren er klachten over batterijbetrouwbaarheid die het herontwerp moet oplossen."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ultrahuman Ring Pro of Samsung Galaxy Ring?",
+          "a": "Beide zijn zonder abonnement. Kies de Ring Pro voor de langste batterijduur (~15 dagen) en volledige ondersteuning voor alle platforms; kies de Galaxy Ring als je een Samsung Galaxy-telefoon hebt en strakke integratie met het ecosysteem en een lagere prijs wilt ($ 399 vs $ 479)."
+        },
+        {
+          "q": "Werkt de Samsung Galaxy Ring met een iPhone?",
+          "a": "Hij werkt het best met een Samsung Galaxy-telefoon; op andere Android-telefoons is hij beperkter en de iPhone-ondersteuning is zwak. Gebruik je een iPhone, dan past de Ring Pro, die op alle platforms werkt (of Oura), beter."
+        },
+        {
+          "q": "Welke heeft de betere batterijduur?",
+          "a": "De Ultrahuman Ring Pro, duidelijk – rond de 15 dagen tegenover ongeveer 6–7 voor de Galaxy Ring."
+        }
+      ],
+      "content": "## De korte versie\n\nTwee ringen zonder abonnement. De [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) werkt op alle platforms met ~15 dagen batterij; de [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) is een comfortabele, goedkopere ring die schittert binnen het Samsung-ecosysteem.\n\n## Wanneer is de Ultrahuman Ring Pro de juiste keuze?\n\nJe wilt de langste batterijduur en ondersteuning voor alle platforms, en je wilt niet vastzitten aan één telefoonmerk.\n\n## Wanneer is de Samsung Galaxy Ring de juiste keuze?\n\nJe hebt een Samsung Galaxy-telefoon, wilt strakke integratie met Samsung Health en geeft de voorkeur aan een goedkopere, gevestigde ring.\n\n## Ook het vergelijken waard\n\nVoor het vlaggenschip qua nauwkeurigheid, zie [Ring Pro vs Oura Ring 5](/reviews/vs/ultrahuman-ring-pro-vs-oura-ring-5); voor de voordelige optie, [RingConn Gen 2](/reviews/ringconn-gen-2). Het hele veld: [de beste trackers voor hartslagvariabiliteit (HRV)](/reviews/hrv-trackers)."
+    },
+    "ultrahuman-ring-air-vs-samsung-galaxy-ring": {
+      "title": "Ultrahuman Ring Air vs Samsung Galaxy Ring: vergelijking",
+      "description": "Ultrahuman Ring Air vs Samsung Galaxy Ring – Oura-alternatieven zonder abonnement. ONDA vergelijkt ecosysteem, betrouwbaarheid, slaap, gewicht en prijs.",
+      "intro": "De Ultrahuman Ring Air en de Samsung Galaxy Ring zijn de twee slimme ringen zonder abonnement die mensen afwegen tegen Oura. Beide laten de maandelijkse kosten weg; de echte splitsing zit in ecosysteem en betrouwbaarheid. Ultrahuman werkt op alle platforms en is een van de lichtste verkrijgbare ringen, maar wordt achtervolgd door meldingen van batterijstoringen. Samsung is comfortabel en degelijk – zolang je in het Galaxy-ecosysteem leeft.",
+      "verdict": "Beide zijn Oura-alternatieven zonder abonnement met dezelfde totaalscore. De Samsung Galaxy Ring is de veiligere, beter ondersteunde keuze als je een Galaxy-telefoon hebt; de Ultrahuman Ring Air is de lichtere keuze voor alle platforms – als je het vraagteken over de batterijbetrouwbaarheid accepteert.",
+      "bestForA": "Kies de Ultrahuman Ring Air als je de lichtste ring, ondersteuning voor alle platforms (iOS en elke Android) en een op metabolisme gerichte app wilt – en het risico op batterijproblemen accepteert.",
+      "bestForB": "Kies de Samsung Galaxy Ring als je al een Samsung Galaxy-telefoon gebruikt en een comfortabele, goed ondersteunde ring zonder abonnement binnen dat ecosysteem wilt.",
+      "axes": [
+        {
+          "name": "Ecosysteem & platform",
+          "note": "Ultrahuman werkt op iOS en elke Android. De volledige functieset van de Samsung Galaxy Ring is gekoppeld aan Samsung Galaxy-telefoons (Samsung Health), en op de iPhone is hij niet beschikbaar of beperkt. Ultrahuman wint op openheid."
+        },
+        {
+          "name": "Betrouwbaarheid",
+          "note": "Over de Ultrahuman Ring Air zijn veel meldingen van batterijstoringen binnen enkele maanden na aankoop. Boven Samsungs ring hangt geen vergelijkbare wolk. Samsung wint op vertrouwen in betrouwbaarheid."
+        },
+        {
+          "name": "Gewicht & comfort",
+          "note": "De Ultrahuman Ring Air behoort tot de lichtste verkrijgbare ringen; de Galaxy Ring is comfortabel maar iets lomper. Voordeel Ultrahuman voor de hele dag en 's nachts dragen."
+        },
+        {
+          "name": "Slaap & readiness",
+          "note": "Beide volgen slaap en readiness degelijk en komen op dezelfde totaalscore uit. Samsungs integratie met Samsung Health en Galaxy Watch-data geeft hem een klein praktisch voordeel voor bestaande Samsung-gebruikers."
+        },
+        {
+          "name": "Prijs",
+          "note": "Ultrahuman: $ 350 eenmalig. Samsung Galaxy Ring: $ 399 eenmalig. Beide zonder abonnement; Ultrahuman is de goedkopere instap."
+        },
+        {
+          "name": "Abonnement",
+          "note": "Geen van beide vereist een abonnement – de gedeelde reden om ze te overwegen in plaats van Oura. Op abonnement alleen is het gelijkspel; het prijsverschil wordt gescoord bij het onderdeel Prijs."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ultrahuman Ring Air of Samsung Galaxy Ring – welke is beter?",
+          "a": "Ze scoren hetzelfde en beide zijn zonder abonnement. Kies Samsung als je een Galaxy-telefoon hebt en de veiligere, beter ondersteunde ring wilt; kies Ultrahuman als je de lichtste optie voor alle platforms wilt en het risico op batterijproblemen accepteert."
+        },
+        {
+          "q": "Werkt de Samsung Galaxy Ring met een iPhone?",
+          "a": "Niet goed. De Galaxy Ring is gebouwd rond Samsung Health en Galaxy-telefoons; iPhone-ondersteuning ontbreekt of is sterk beperkt. Zit je op iOS, dan is de Ultrahuman Ring Air (of Oura) de ring om naar te kijken."
+        },
+        {
+          "q": "Is een van beide een echt alternatief voor Oura?",
+          "a": "Ja, qua prijs – beide laten het verplichte abonnement van Oura weg. Van de drie ringen heeft alleen Oura een onafhankelijke controle van de nachtelijke hartslagvariabiliteit (HRV) – en die studie betrof eerdere Oura-generaties, niet de huidige Oura Ring 5 zelf (de slaapfasebepaling van Oura is niet onafhankelijk gevalideerd). De Ring Air en de Galaxy Ring hebben er geen. Als het vermijden van maandelijkse kosten je prioriteit is, zijn de Ring Air en de Galaxy Ring de ringen zonder abonnement om uit te kiezen."
+        }
+      ],
+      "content": "## De korte versie\n\n> Let op: voor de Ultrahuman Ring Air geldt een Amerikaans importverbod (oktober 2025, na Oura's octrooizege bij de ITC) en hij is niet te koop in de VS. De in de VS verkrijgbare opvolger van Ultrahuman is de [Ring Pro](/reviews/ultrahuman-ring-pro) – zonder abonnement, met ~15 dagen batterij. Lees deze vergelijking met dat in gedachten als je in de VS woont.\n\nTwee ringen zonder abonnement met dezelfde totaalscore. De [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) is de lichtste, meest open optie (voor alle platforms), ondermijnd door meldingen over batterijbetrouwbaarheid. De [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) is de comfortabele, goed ondersteunde keuze – als je in het Galaxy-ecosysteem leeft.\n\n## Wanneer is de Ultrahuman Ring Air de juiste keuze?\n\nJe gebruikt een iPhone of een Android-telefoon die niet van Samsung is, wilt de lichtste ring en waardeert een op metabolisme gerichte app. Accepteer je het batterijrisico, dan is hij de flexibelere aankoop.\n\n## Wanneer is de Samsung Galaxy Ring de juiste keuze?\n\nJe hebt al een Samsung Galaxy-telefoon en wilt een betrouwbare ring zonder abonnement die direct aansluit op Samsung Health en de data van je Galaxy Watch.\n\n## Ook het vergelijken waard\n\nVoor de best ondersteunde ringlijn (met abonnement), zie de [Oura Ring 5](/reviews/oura-ring-5), of het hele veld bij de [beste HRV-trackers](/reviews/hrv-trackers)."
+    },
+    "healthy-wave-multi-wave-vs-higherdose-pemf-mat": {
+      "title": "Healthy Wave Multi-Wave vs HigherDOSE PEMF: vergelijking",
+      "description": "Healthy Wave Multi-Wave vs HigherDOSE PEMF-mat: herstelmatten vergeleken – technische PEMF-diepgang tegenover de afwerking van een consumentenmerk.",
+      "intro": "Healthy Wave Multi-Wave en HigherDOSE PEMF Mat zijn de twee multimodale herstelmatten die consumenten in 2026 het vaakst tegen elkaar afwegen. Beide combineren PEMF met verre infrarood en lagen kristallen/mineralen; Healthy Wave voegt daar ook rood licht aan toe. Het beslissende verschil is diepgang – Healthy Wave geeft echte PEMF-parameters vrij en werkt met een hogere intensiteit; HigherDOSE verpakt een eenvoudigere PEMF-opbouw in een verzorgde merkbeleving voor consumenten.",
+      "verdict": "Healthy Wave wint op technische PEMF-diepgang en intensiteit. HigherDOSE wint op gebruiksgemak en merkuitstraling. Voor kopers bij wie PEMF voorop staat, is Healthy Wave de rationele keuze.",
+      "bestForA": "Kies Healthy Wave Multi-Wave als je echte toegang tot PEMF-parameters en een hogere veldintensiteit wilt en PEMF-capaciteit belangrijker vindt dan merkuitstraling.",
+      "bestForB": "Kies de HigherDOSE PEMF Mat als je een verzorgde gebruikerservaring met multimodaal herstel wilt en minder technische PEMF-diepgang accepteert.",
+      "axes": [
+        {
+          "name": "PEMF-intensiteit",
+          "note": "Healthy Wave: instelbare intensiteit; de fabrikant noemt tot 5+ gauss piek (ongeveer 1,5 gauss gemiddeld aan het oppervlak), 1–30 Hz. HigherDOSE: bescheiden intensiteit in 4 vooraf ingestelde niveaus (3–23 Hz); geen gausswaarde in onze bronnen. Healthy Wave wint op pure PEMF-capaciteit."
+        },
+        {
+          "name": "PEMF-programmeerbaarheid",
+          "note": "Healthy Wave: echte toegang tot parameters (golfvorm, frequentie, intensiteit). HigherDOSE: 4 vooraf ingestelde frequentieniveaus (3–23 Hz), geen eigen parameters."
+        },
+        {
+          "name": "Gecombineerde modaliteiten",
+          "note": "Beide combineren PEMF + infrarood + kristallen (HigherDOSE: ongeveer 20 lb amethist en obsidiaan); Healthy Wave voegt ook rood licht en negatieve ionen toe. Vergelijkbare kerndekking."
+        },
+        {
+          "name": "Gebruiksgemak",
+          "note": "HigherDOSE: eenvoudige presets, premium consumentenbranding, makkelijker in dagelijks gebruik. Healthy Wave: meer parameters = meer instelwerk."
+        },
+        {
+          "name": "Garantie",
+          "note": "Healthy Wave: 5 jaar beperkte garantie plus 90 dagen proefperiode. HigherDOSE: 1 jaar garantie plus 120 dagen geld-terug-garantie. Healthy Wave is duidelijk beter op garantie."
+        },
+        {
+          "name": "Prijs",
+          "note": "HigherDOSE: $1.295. Healthy Wave: $995–$2.495 afhankelijk van formaat (volledig formaat Pro $2.495). Op volledig formaat is HigherDOSE merkbaar goedkoper voor multimodaal herstel op consumentenniveau."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Healthy Wave of HigherDOSE – welke is beter?",
+          "a": "Voor kopers bij wie PEMF voorop staat: Healthy Wave – hogere intensiteit, echte parametercontrole, 5 jaar garantie. Voor kopers die gebruiksgemak en merk belangrijker vinden: HigherDOSE – eenvoudige bediening, goedkoper dan een Healthy Wave op volledig formaat, makkelijker in dagelijks gebruik, kortere garantie."
+        },
+        {
+          "q": "Is HigherDOSE PEMF „echt”?",
+          "a": "Ja – de mat werkt met PEMF op 3–23 Hz in 4 vooraf ingestelde niveaus (delta- tot bètaband), bereiken die in de literatuur zijn beschreven. Maar er zijn alleen presets met bescheiden intensiteit – licht naar technische PEMF-maatstaven. De mat is echte PEMF, alleen geen diepgaande PEMF."
+        },
+        {
+          "q": "Welke is beter voor herstel?",
+          "a": "Healthy Wave biedt meer PEMF-capaciteit voor herstelprotocollen. HigherDOSE levert een herstelbeleving (warmte + kristallen + lichte PEMF), maar minder diepgang in PEMF-protocollen."
+        },
+        {
+          "q": "Wat is het verschil in garantie?",
+          "a": "Healthy Wave: 5 jaar garantie op de mat. HigherDOSE: 1 jaar garantie. Bij de aankoop van een mat van $1.295–$2.495 is het verschil in garantie betekenisvol – de 5 jaar van Healthy Wave is de branchestandaard voor serieuze PEMF-matten."
+        }
+      ],
+      "content": "## De korte versie\n\nBeide zijn multimodale herstelmatten. Healthy Wave is de technische mat waarbij PEMF voorop staat. HigherDOSE is de belevingsmat van een consumentenmerk met lichte PEMF.\n\n## Wanneer is Healthy Wave Multi-Wave de juiste keuze?\n\nAls je koopt voor de PEMF-capaciteit – Healthy Wave biedt echte parametercontrole, hogere intensiteit en 5 jaar garantie. De juiste vorm voor wie naast de gecombineerde modaliteiten diepgang in PEMF-protocollen wil.\n\n## Wanneer is de HigherDOSE PEMF Mat de juiste keuze?\n\nAls je een verzorgde herstelbeleving van een consumentenmerk wilt tegen een lagere prijs dan een Healthy Wave op volledig formaat – HigherDOSE verpakt een eenvoudigere PEMF-opbouw in een betere gebruikerservaring en meer merkuitstraling. Accepteer de garantie van 1 jaar en de beperkte PEMF-diepgang."
+    },
+    "plunge-vs-ice-barrel-500": {
+      "title": "The Plunge vs Ice Barrel 500: vergelijking (2026)",
+      "description": "The Plunge vs Ice Barrel 500: ONDA vergelijkt het premium ijsbad met ingebouwde koeler met het populaire tonvormige ijsbad dat je met ijs vult.",
+      "intro": "The Plunge en Ice Barrel 500 zijn de twee meest vergeleken ijsbaden over de scheidslijn tussen koeler en ijsvulling heen. Beide leveren echte koudeblootstelling; het structurele verschil is het gebruiksmodel – The Plunge houdt automatisch 39 °F aan, Ice Barrel moet dagelijks met ijs worden gevuld.",
+      "verdict": "Verschillende gebruiksmodellen. The Plunge voor wie bij dagelijks gebruik een bad wil dat je aanzet en vergeet. Ice Barrel voor koude klimaten of af en toe gebruik, waar de besparing op de aanschaf zwaarder weegt dan de dagelijkse ijskosten.",
+      "bestForA": "Kies The Plunge als dagelijkse beoefening het doel is en je een bad wilt dat de kou automatisch vasthoudt – geen dagelijkse ijskosten, geen dagelijks voorbereidingsritueel.",
+      "bestForB": "Kies Ice Barrel 500 als je in een koud klimaat woont of slechts af en toe een ijsbad neemt – de besparing van $4.800 op de aanschaf kan opwegen tegen de ijskosten.",
+      "axes": [
+        {
+          "name": "Gebruiksmodel",
+          "note": "Plunge: de koeler houdt de temperatuur automatisch vast. Ice Barrel: de gebruiker vult per sessie water en ijs bij. Plunge wint op gemak bij dagelijks gebruik."
+        },
+        {
+          "name": "Constante kou",
+          "note": "Plunge: het hele jaar automatisch 39 °F. Ice Barrel: temperatuur varieert met de omgeving en de hoeveelheid ijs."
+        },
+        {
+          "name": "Bouwkwaliteit",
+          "note": "Plunge: premium acryl met isolatie. Ice Barrel: ton van voedselveilig kunststof met isolatie. Beide degelijk voor hun klasse."
+        },
+        {
+          "name": "Ruimtebeslag",
+          "note": "Ice Barrel: kleiner, verticaal grondoppervlak (32\" diameter). Plunge: liggend bad met groter grondoppervlak."
+        },
+        {
+          "name": "Waterbeheer",
+          "note": "Plunge: ozonreiniging, water verversen elke 2–4 weken. Ice Barrel: handmatig verversen plus dagelijks ijs bijvullen."
+        },
+        {
+          "name": "Dagelijkse gebruikskosten",
+          "note": "Plunge: alleen stroom (~$10–30/maand voor de koeler). Ice Barrel: $5–15/dag aan ijs in warme seizoenen."
+        },
+        {
+          "name": "Aanschafkosten",
+          "note": "Ice Barrel: $1.200. Plunge: $5.990. Ice Barrel kost bij aanschaf ongeveer 20% van de Plunge."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is Ice Barrel net zo goed als The Plunge?",
+          "a": "Voor dagelijkse beoefening niet – Ice Barrel moet dagelijks met ijs worden gevuld, terwijl Plunge de kou automatisch vasthoudt. Voor koude klimaten of af en toe gebruik is Ice Barrel prima en bespaart het $4.800 op de aanschaf. Reken de dagelijkse ijskosten voor jouw klimaat door voordat je beslist."
+        },
+        {
+          "q": "Hoeveel kost het ijs voor Ice Barrel?",
+          "a": "Dat hangt af van de omgevingstemperatuur. In warme klimaten ($5–15/dag aan ijs in de zomer). In koude klimaten (winter / sneeuw) nul tot verwaarloosbaar. Bij $5–15 per dag loopt dat in een klimaat dat het hele jaar warm blijft op tot zo'n $1.800–5.500 per jaar – genoeg om de $4.800 die Ice Barrel bij aanschaf bespaart binnen ongeveer één tot drie jaar teniet te doen; met een koude winter duurt het langer."
+        },
+        {
+          "q": "Werkt The Plunge binnenshuis?",
+          "a": "Ja, als je let op het geluid van de koeler, de elektrische aansluiting en de afvoer. Ice Barrel kan ook binnen staan; het ijsbeheer is binnenshuis bewerkelijker."
+        },
+        {
+          "q": "Wat is beter om ijsbaden uit te proberen?",
+          "a": "Ice Barrel – een lagere investering vooraf betekent minder risico als het ijsbaden niet beklijft. Zodra het een dagelijkse gewoonte is geworden, wordt overstappen op Plunge economisch rationeel."
+        }
+      ],
+      "content": "## De korte versie\n\nPlunge en Ice Barrel staan voor verschillende gebruiksmodellen. Plunge is het hulpmiddel met koeler voor dagelijks gebruik; Ice Barrel is de ton die je met ijs vult voor af en toe gebruik of koude klimaten.\n\n## Wanneer is The Plunge de juiste keuze?\n\nAls dagelijks ijsbaden het doel is en je een bad wilt dat je aanzet en vergeet en dat automatisch 39 °F aanhoudt, is Plunge de juiste vorm. De dagelijkse gebruikskosten zijn alleen stroom.\n\n## Wanneer is Ice Barrel 500 de juiste keuze?\n\nAls je in een koud klimaat woont waar de ijskosten verwaarloosbaar zijn, of slechts af en toe een ijsbad neemt – Ice Barrel bespaart $4.800 op de aanschaf. Het verticale grondoppervlak past bovendien in kleinere ruimtes."
+    },
+    "bemer-classic-evo-vs-healthy-wave-multi-wave": {
+      "title": "Bemer Classic Evo vs Healthy Wave Multi-Wave: vergelijking",
+      "description": "Bemer Classic Evo vs Healthy Wave Multi-Wave: eigen signaal tegen premiumprijs tegenover een multimodale mat voor de halve prijs. ONDA weegt af.",
+      "intro": "Bemer Classic Evo en Healthy Wave Multi-Wave zijn de twee PEMF-matten die gebruikers vergelijken bij de keuze voor premium herstelhardware. Het beslissende verschil is het concept: Bemer zet in op één eigen golfvorm met een lange lijst studies (meestal klein of aan de fabrikant gelinkt); Healthy Wave zet in op het combineren van PEMF met verre infrarood en rood licht in één mat voor de halve prijs.",
+      "verdict": "Eigen signaal tegenover gecombineerde modaliteiten. Bemer Classic Evo voor het best onderzochte afzonderlijke PEMF-signaal en premium bouwkwaliteit. Healthy Wave Multi-Wave voor PEMF + IR + rood licht voor de halve prijs. Voor geen van beide zijn er onafhankelijke studies die een gezondheidsvoordeel aantonen.",
+      "bestForA": "Kies Bemer Classic Evo als je het bekendste PEMF-signaal wilt in een premium systeem met meerdere applicatoren en je een premiumprijs zonder bewezen gezondheidsvoordelen accepteert.",
+      "bestForB": "Kies Healthy Wave Multi-Wave als je PEMF gecombineerd met verre infrarood en roodlichttherapie in één mat wilt voor een merkbaar lagere prijs.",
+      "axes": [
+        {
+          "name": "Onderzoek naar de golfvorm",
+          "note": "Bemer: de langste lijst studies naar één specifiek signaal, maar meestal klein of aan de fabrikant gelinkt; onafhankelijke gecontroleerde studies vonden geen verschil met de controlegroep. Healthy Wave: gangbare PEMF-frequenties, geen studies naar de mat zelf."
+        },
+        {
+          "name": "Veldsterkte",
+          "note": "Bemer: 35–150 µT (bewust lage intensiteit). Healthy Wave: hoger, instelbaar vermogen over meerdere golfvormen. Healthy Wave wint op pure intensiteit."
+        },
+        {
+          "name": "Gecombineerde modaliteiten",
+          "note": "Bemer: alleen PEMF. Healthy Wave: PEMF + verre infrarood + rood licht + amethist/toermalijn. Meerdere modaliteiten tegenover één."
+        },
+        {
+          "name": "Programmeerbaarheid",
+          "note": "Bemer: merkeigen presetstappen P1–P10, bediend via app. Healthy Wave: echte toegang tot parameters (golfvorm, frequentie, intensiteit). Healthy Wave is transparanter."
+        },
+        {
+          "name": "Regelgevingsstatus",
+          "note": "Bemer is via 510(k) door de FDA goedgekeurd als niet-medisch apparaat voor spierconditionering (productcode NGX), niet voor de behandeling van ziekten. Healthy Wave: geen FDA-goedkeuring, verkocht als welzijnsapparaat. Geen van beide is goedgekeurd om een aandoening te behandelen."
+        },
+        {
+          "name": "Herkomst en bouw",
+          "note": "Bemer: Duitse engineering met een staat van dienst sinds 1998, premium elektronica, 3 jaar garantie. Healthy Wave: degelijke bouw, 5 jaar beperkte garantie en 90 dagen proefperiode, maar minder merkhistorie."
+        },
+        {
+          "name": "Prijs",
+          "note": "Bemer: $5.490. Healthy Wave: $995–$2.495 afhankelijk van formaat (volledig formaat Pro $2.495). Healthy Wave kost minder dan de helft."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bemer of Healthy Wave – welke is beter?",
+          "a": "Verschillende concepten. Bemer wint op bouwkwaliteit en het best onderzochte afzonderlijke signaal, al vonden onafhankelijke studies geen duidelijk voordeel. Healthy Wave wint op gecombineerde modaliteiten (PEMF + IR + rood licht) en prijs (~de helft van Bemer)."
+        },
+        {
+          "q": "Is het Bemer-signaal echt beter onderzocht?",
+          "a": "Vaker onderzocht, ja – maar de meeste Bemer-studies zijn klein of aan de fabrikant gelinkt. Onafhankelijke gecontroleerde studies vonden bij fibromyalgie geen verschil met een inactief apparaat en bij de doorbloeding van de huid geen verschil met een controlebeen. Meer studies is niet hetzelfde als bewezen voordeel."
+        },
+        {
+          "q": "Werkt het sterkere veld van Healthy Wave dieper dan Bemer?",
+          "a": "Ander mechanisme. Healthy Wave heeft een hogere pure veldintensiteit en instelbare golfvormen, maar geen eigen onderzoek naar het specifieke signaal. Het concept van Bemer is dat de vorm van de golf belangrijker is dan de piekintensiteit – een claim van de fabrikant die onafhankelijke studies niet hebben bevestigd."
+        },
+        {
+          "q": "Hoe verhouden de totale kosten zich?",
+          "a": "Bemer Classic Evo: $5.490 eenmalig, geen abonnement. Healthy Wave Multi-Wave: $995–$2.495 eenmalig, afhankelijk van formaat. Healthy Wave kost in totaal minder dan de helft, en je krijgt meerdere modaliteiten (PEMF, verre infrarood, rood licht, negatieve ionen, kristallen)."
+        }
+      ],
+      "content": "## De korte versie\n\nBemer is de bekendste mat met een eigen signaal. Healthy Wave is het alternatief met gecombineerde modaliteiten voor de halve prijs. Voor geen van beide zijn er onafhankelijke studies die een gezondheidsvoordeel aantonen; zie [PEMF-therapie – het bewijs](/science/evidence/pemf).\n\n## Wanneer is Bemer Classic Evo de juiste keuze?\n\nAls je het bekendste eigen signaal wilt en een premium bouw met meerdere applicatoren. Bemer verwijst naar meer studies dan welke andere consumenten-PEMF ook, maar de meeste zijn klein of aan de fabrikant gelinkt, en onafhankelijke gecontroleerde studies vonden geen verschil met de controlegroep. De FDA-goedkeuring geldt voor niet-medische spierconditionering (productcode NGX). Accepteer de premiumprijs.\n\n## Wanneer is Healthy Wave Multi-Wave de juiste keuze?\n\nAls je per sessie meerdere herstelmodaliteiten wilt en geen eigen signaal nodig hebt – Healthy Wave combineert PEMF met verre infrarood en roodlichttherapie voor een merkbaar lagere prijs. Meerdere modaliteiten in één mat, echte parametercontrole, de helft van de Bemer-kosten."
     }
   },
   "categoryHubs": {

@@ -562,6 +562,25 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   [
   { collection: 'roundups', slug: 'apps-combining-breathing-hrv-realtime-feedback' },
   ],
+  // wave D (086): review long tail by GSC impressions; append-only within this block
+  [
+  { collection: 'h2h', slug: 'lightstim-for-wrinkles-vs-solawave-wand-4-in-1' },
+  { collection: 'h2h', slug: 'gammacore-sapphire-cv-vs-truvaga-350-vs-pulsetto' },
+  { collection: 'h2h', slug: 'ultrahuman-ring-pro-vs-ultrahuman-ring-air' },
+  { collection: 'h2h', slug: 'ultrahuman-ring-pro-vs-samsung-galaxy-ring' },
+  { collection: 'h2h', slug: 'ultrahuman-ring-air-vs-samsung-galaxy-ring' },
+  { collection: 'reviews', slug: 'renu-therapy-cold-stoic' },
+  { collection: 'reviews', slug: 'ultrahuman-ring-pro' },
+  { collection: 'reviews', slug: 'bluecube-cold-plunge' },
+  { collection: 'reviews', slug: 'joovv-solo-3' },
+  { collection: 'reviews', slug: 'hypervolt-go-2' },
+  { collection: 'h2h', slug: 'healthy-wave-multi-wave-vs-higherdose-pemf-mat' },
+  { collection: 'reviews', slug: 'truvaga-350' },
+  { collection: 'h2h', slug: 'plunge-vs-ice-barrel-500' },
+  { collection: 'reviews', slug: 'higherdose-red-light-face-mask' },
+  { collection: 'h2h', slug: 'bemer-classic-evo-vs-healthy-wave-multi-wave' },
+  // WAVE_D_NEXT
+  ],
 ]
 
 /**

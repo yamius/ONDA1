@@ -1378,8 +1378,47 @@
       ]
     },
     "hypervolt-go-2": {
-      "verdict": "Melhor mini de viagem de marca premium — o ecossistema Hypervolt em formato de bolso. A menor força de travamento é o preço da portabilidade.",
-      "productType": "Pistola de massagem mini / de viagem premium"
+      "verdict": "A melhor mini de viagem de marca premium — o ecossistema Hypervolt em formato de bolso. A força de bloqueio menor é o preço da portabilidade.",
+      "summary": "A Hypervolt Go 2 é a mini de viagem premium — formato de bolso com 30 lbs de força de bloqueio, 12 mm de amplitude, motor brushless, 2 ponteiras, integração com o app da Hyperice, US$ 129. A força de bloqueio é bem menor que a da Hypervolt 2 Pro (60 lbs); em troca, você ganha portabilidade e o ecossistema de uma marca premium a um preço intermediário — US$ 30 acima da econômica Bob and Brad Q2 Mini (US$ 99). Ideal para quem quer a qualidade Hyperice em formato de viagem.",
+      "description": "Análise ONDA: Hypervolt Go 2 — pistola de massagem de viagem, 30 lbs de força de bloqueio, 12 mm de amplitude e ecossistema Hyperice por US$ 129.",
+      "bestFor": "Ideal para quem quer uma mini de viagem de marca premium com o app da Hyperice — e aceita a força de bloqueio menor como troca pela portabilidade.",
+      "testNote": "Avaliação baseada em evidências — pontuado a partir da documentação de produto da Hyperice e de análises de minis de viagem de 2026. Não testado pessoalmente pela ONDA.",
+      "productType": "Pistola de massagem premium de viagem / mini",
+      "pros": [
+        "Marca e app premium da Hyperice em formato mini de viagem",
+        "Melhor portabilidade da categoria premium",
+        "A mini de viagem mais silenciosa (50 dB)",
+        "Construção com motor brushless"
+      ],
+      "cons": [
+        "Metade da força de bloqueio da Hypervolt 2 Pro (30 lbs vs 60)",
+        "Só 2 ponteiras incluídas",
+        "US$ 30 a mais que a econômica Bob and Brad Q2 Mini",
+        "Garantia de 1 ano"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "30 lbs de força de bloqueio — metade da Hypervolt 2 Pro. 12 mm de amplitude. Dose de percussão reduzida por design.",
+        "build-attachments": "Motor brushless, apenas 2 ponteiras, garantia de 1 ano. Construção premium Hyperice em escala mini.",
+        "battery-noise": "Motor brushless a 50 dB. ~2,5 horas por carga. A mini de viagem mais silenciosa da categoria.",
+        "app-smart-features": "Integração com o app da Hyperice — o mesmo ecossistema da Hypervolt 2 Pro. Recursos inteligentes em formato de viagem.",
+        "ergonomics-portability": "Melhor portabilidade da categoria premium. ~1,5 lbs, formato de bolso, fácil de levar em viagens. Pegada única com uma mão, ideal para o tamanho.",
+        "value": "US$ 129 — mini de viagem de marca premium a um preço intermediário. Mais cara que a econômica Bob and Brad Q2 Mini (US$ 99), mas com o ecossistema Hyperice."
+      },
+      "content": "## Onde ela se destaca\n\nA Hypervolt Go 2 é a mini de viagem premium — a marca e o ecossistema de apps da Hyperice em formato de bolso. Melhor portabilidade da categoria premium, com um motor brushless silencioso.\n\n## Quais são as desvantagens da Hyperice Hypervolt Go 2?\n\nForça de bloqueio e número de ponteiras. 30 lbs de força de bloqueio é metade da especificação da Hypervolt 2 Pro; só 2 ponteiras incluídas. Para quem quer percussão premium completa, Hypervolt 2 Pro ou Theragun Elite.\n\n## Quem deve comprar a Hyperice Hypervolt Go 2?\n\nEscolha a Hypervolt Go 2 para uma mini de viagem de marca premium. Para uma Hyperice premium de tamanho completo, a Hypervolt 2 Pro. Para uma mini de viagem econômica, a Bob and Brad Q2 Mini.\n\n---\n\n## Leitura complementar\n\n- [Biogênese mitocondrial](/articles/mitochondrial-biogenesis-cellular-power-grid)\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n",
+      "faq": [
+        {
+          "q": "Quanto custa a Hypervolt Go 2?",
+          "a": "A Hypervolt Go 2 custa US$ 129 com duas ponteiras. São US$ 30 a mais que a econômica Bob and Brad Q2 Mini, e o valor extra paga a marca Hyperice, a integração com o app, um motor brushless e o funcionamento mais silencioso entre as minis de viagem, a 50 dB."
+        },
+        {
+          "q": "Hypervolt Go 2 vs Hypervolt 2 Pro: qual devo comprar?",
+          "a": "A Go 2 tem metade da força de bloqueio da Hypervolt 2 Pro, 30 lbs contra 60, com 12 mm de amplitude. Em troca, cabe no bolso e é bem mais barata. Escolha a Go 2 para viagens e uso leve, e a 2 Pro para uma recuperação mais profunda em casa."
+        },
+        {
+          "q": "Quais são as desvantagens da Hypervolt Go 2?",
+          "a": "A Go 2 troca potência por portabilidade: tem metade da força de bloqueio da Hypervolt 2 Pro. Vem com apenas duas ponteiras, tem garantia de um ano e custa US$ 30 a mais que a econômica Bob and Brad Q2 Mini."
+        }
+      ]
     },
     "bob-and-brad-q2-mini": {
       "verdict": "Melhor custo-benefício em mini econômica — a marca Bob and Brad, com credibilidade de fisioterapeutas, por $99. Força de travamento limitada; o pedigree da marca, vindo do canal do YouTube \"Famous Physical Therapists\", é o diferencial.",
@@ -1561,8 +1600,51 @@
       "editorialAdjustment": "Honestidade do marketing — a página inicial do fabricante chama suas saunas de “clinicamente comprovadas” e diz que “mais pesquisas clínicas foram feitas com produtos Clearlight do que com outras marcas”, mas não encontramos nenhum estudo publicado que cite uma sauna Clearlight (verificado em outubro de 2026). Isso é pontuado aqui, não no critério de evidências. (no original: “clinically proven”)"
     },
     "joovv-solo-3": {
-      "verdict": "Um painel de longa data e amplamente usado — modular, bem construído, com irradiância medida com rigor. O mais caro desta lista, em boa parte justificado.",
-      "productType": "Dispositivo modular de painel completo de terapia LED vermelha + NIR"
+      "verdict": "Um painel veterano e muito usado — modular, bem construído, com irradiância medida de forma bastante fiel. O mais caro desta lista, em grande parte justificado.",
+      "summary": "O Joovv Solo 3.0 é o painel que definiu a categoria de luz vermelha para o consumidor. Os painéis Solo modulares se conectam para ir de uma unidade de meio corpo a uma parede de corpo inteiro montada em suporte. Combina vermelho de 660 nm + NIR de 850 nm, é registrado na FDA como dispositivo Classe II segundo a Joovv (registro/listagem, não liberação nem aprovação; a Joovv lista indicações de aquecimento tópico, como alívio temporário de dores musculares e articulares leves), tem irradiância verificada de forma independente próxima dos números anunciados, baixo CEM e baixa cintilação. É a opção mais cara aqui, com a maior parte do preço extra indo para construção e verificação, e não para especificações infladas.",
+      "description": "Análise ONDA do Joovv Solo 3.0: painel de luz vermelha modular e bem construído, com longa trajetória. Irradiância, comprimentos de onda, CEM, preço.",
+      "bestFor": "Ideal para biohackers que querem a construção modular premium e a irradiância verificada, e aceitam pagar um preço premium por isso.",
+      "testNote": "Avaliação baseada em evidências — pontuado a partir da documentação de produto da Joovv, de relatórios independentes de testes de irradiância/CEM/cintilação de sites de análise de biohacking e da literatura publicada sobre fotobiomodulação que fundamenta as alegações do aparelho. Não testado pessoalmente pela ONDA.",
+      "productType": "Aparelho modular de terapia LED vermelha + NIR de painel completo",
+      "pros": [
+        "Irradiância verificada, baixo CEM, baixa cintilação",
+        "O sistema modular Solo se empilha na vertical para o corpo inteiro sem comprar um painel novo",
+        "Parcerias reais com pesquisadores de fotobiomodulação com trabalhos publicados, não só marketing",
+        "Garantia de 2 anos; elegível para HSA/FSA"
+      ],
+      "cons": [
+        "O painel mais caro desta lista — US$ 1.699 pelo Solo 3.0",
+        "A pilha modular de corpo inteiro custa US$ 3.000–5.000 no total",
+        "Sem opções de comprimento de onda incomuns para quem quer 810 / 830 / 940 nm",
+        "Layout de emissão frontal única, não bidirecional"
+      ],
+      "scoreNotes": {
+        "irradiance": "O fabricante declara >100 mW/cm² a 6 polegadas; leituras independentes com medidor ficam perto desse número, ao contrário da maioria dos painéis mais baratos — um dos aparelhos com especificações mais honestas da categoria.",
+        "wavelengths": "Combina vermelho de 660 nm + NIR de 850 nm com picos publicados nos comprimentos de onda padrão de fotobiomodulação. Sem adições exóticas de UV/940 nm; espectro limpo.",
+        "build-emf-flicker": "Painel traseiro de alumínio, frente de vidro, CEM testado por terceiros em <0,5 mG a 6 polegadas; taxa de cintilação publicada e baixa. Entre as construções mais limpas desta lista.",
+        "coverage": "O Solo cobre meio corpo; o sistema modular se empilha na vertical para o corpo inteiro. Inclui suporte e ferragens para montagem em porta. A modularidade é única nesta lista.",
+        "evidence": "Registrado na FDA como dispositivo Classe II, segundo a Joovv (registro/listagem, não liberação nem aprovação; indicações listadas: aquecimento tópico para alívio temporário de dores musculares e articulares leves). A Joovv colabora com pesquisadores de fotobiomodulação com trabalhos publicados e cita estudos reais revisados por pares sobre o mecanismo subjacente. Sua frase “proven to heal” fala da luz vermelha e infravermelha próxima em geral, não do Solo 3.0.",
+        "value": "US$ 1.699 pelo Solo 3.0 (loja oficial dos EUA, out. 2026) — o mais caro desta lista: US$ 400 a mais que o MitoPRO 1500X (US$ 1.299) e US$ 650 a mais que o PlatinumLED BIOMAX 600 (US$ 1.049), ambos com espectro mais amplo. Você paga principalmente pela modularidade e pela construção."
+      },
+      "content": "## Onde ele se destaca\n\nO Joovv Solo 3.0 é o painel com o qual o resto desta categoria é medido. Testes independentes de irradiância chegam perto do número declarado pelo fabricante, as medições de CEM na distância de tratamento padrão ficam abaixo de 0,5 mG, e a taxa de cintilação é publicada e limpa. O Solo também é o único painel modular desta lista: um Solo cobre meio corpo, dois conectados na vertical cobrem a maior parte da parte superior do corpo, e três empilhados formam uma parede de corpo inteiro. A Joovv diz que o Solo 3.0 é registrado na FDA como dispositivo Classe II e informa claramente suas indicações listadas (aquecimento tópico para alívio temporário de dores musculares e articulares leves). Registro não é liberação nem aprovação, e não é um selo de qualidade.\n\n## Quais são as desvantagens do Joovv Solo 3.0?\n\nPreço. US$ 1.699 por um Solo 3.0 (loja oficial dos EUA, consultada em 2026-10-01) é o painel individual mais caro desta lista; uma pilha Joovv de corpo inteiro de verdade custa US$ 3.000–5.000. As opções de comprimento de onda são apenas as padrão de 660 + 850 nm — nada de 810 nm, 830 nm ou 940 nm para quem quer um espectro mais rico. O layout é de emissão frontal em uma só direção, não bidirecional.\n\n## Quem deve comprar o Joovv Solo 3.0?\n\nEscolha o Joovv Solo 3.0 se você quer a construção modular premium e aceita que verificação, disciplina de CEM e escalabilidade modular têm um preço. Se o preço é o critério decisivo, o Mito Red MitoPRO 1500X ou o Hooga HG500 cobrem a maior parte das especificações por uma fração do custo; se você quer um premium com blindagem de CEM e testes independentes, o GembaRed Vesta é a construção mais limpa por um preço um pouco menor.\n\n---\n\n## Leitura complementar\n\nO mecanismo de fotobiomodulação por trás de por que a terapia de luz vermelha funciona.\n\n- [Protocolo de longevidade: reinício do relógio biológico](/articles/longevity-protocol-biological-clock-reset) — onde a fotobiomodulação se encaixa numa rotina de reinício\n- [DNA mitocondrial e luz vermelha](/articles/mitochondrial-dna-red-light) — como fótons de 660/850 nm chegam às mitocôndrias e o que fazem lá\n- [Biogênese mitocondrial: a rede elétrica celular](/articles/mitochondrial-biogenesis-cellular-power-grid) — por que a fotobiomodulação aumenta a densidade mitocondrial\n",
+      "faq": [
+        {
+          "q": "Quanto custa o Joovv Solo 3.0?",
+          "a": "O Joovv Solo 3.0 custa US$ 1.699 na loja oficial dos EUA (consultado em outubro de 2026), o painel mais caro da sua comparação. Como os painéis Solo são modulares, uma pilha de corpo inteiro montada em suporte custa US$ 3.000–5.000 no total. A maior parte do preço extra vai para qualidade de construção e verificação, e não para especificações infladas."
+        },
+        {
+          "q": "O Joovv Solo 3.0 é registrado na FDA?",
+          "a": "A Joovv diz que o Solo 3.0 é registrado na FDA como dispositivo médico Classe II. Registro e listagem só significam que a empresa informou a FDA sobre o aparelho; não são liberação nem aprovação da FDA. A Joovv lista indicações de aquecimento tópico, como alívio temporário de dores musculares e articulares leves. Ele combina vermelho de 660 nm com infravermelho próximo de 850 nm, tem irradiância verificada de forma independente próxima dos números anunciados e oferece baixo CEM e baixa cintilação."
+        },
+        {
+          "q": "O Joovv Solo 3.0 vale a pena?",
+          "a": "Em geral, sim, se você quer a construção modular premium. Tem irradiância verificada, parcerias com pesquisadores com trabalhos publicados e garantia de 2 anos, além de painéis modulares que crescem até uma configuração de corpo inteiro. Se o preço decide, o Mito Red MitoPRO 1500X (US$ 1.299) ou o Hooga HG500 cobrem a maior parte das especificações por menos."
+        },
+        {
+          "q": "Quais são as desvantagens do Joovv Solo 3.0?",
+          "a": "A principal é o preço: US$ 1.699 por painel e US$ 3.000–5.000 por uma pilha de corpo inteiro. Ele também não oferece comprimentos de onda incomuns como 810, 830 ou 940 nm, e usa um layout de emissão frontal única em vez de um design bidirecional."
+        }
+      ]
     },
     "mito-red-mitopro-1500": {
       "verdict": "O painel grande favorito dos biohackers — agora com seis comprimentos de onda na versão 1500X, e $400 mais barato que o Joovv Solo 3.0.",
@@ -1734,9 +1816,52 @@
       "productType": "tVNS cervical com receita (portátil)"
     },
     "truvaga-350": {
-      "verdict": "O hardware clínico do gammaCore reembalado como dispositivo de bem-estar de consumo — origem sólida, evidências modestas no uso de bem-estar.",
+      "verdict": "O hardware clínico do gammaCore reembalado como dispositivo de bem-estar para o consumidor — procedência sólida, evidência modesta na indicação de bem-estar.",
+      "summary": "Truvaga é a marca de consumo da electroCore e usa a mesma plataforma de hardware de tVNS cervical que equipa a linha de prescrição gammaCore, liberada pela FDA — reembalada como dispositivo de bem-estar de venda livre. O modelo 350 oferece 350 sessões de dois minutos antes de ser aposentado e usa a mesma forma de onda em rajadas de 5 kHz. Pedigree de fabricação sólido; não há ensaios publicados do próprio Truvaga — sua evidência vem de estudos do gammaCore com a mesma abordagem de estimulação, não do Truvaga.",
+      "description": "Análise ONDA do Truvaga 350: tVNS cervical sem receita da electroCore, mesma plataforma do gammaCore (liberado pela FDA). Evidência, mecanismo e valor.",
+      "bestFor": "Ideal para consumidores que querem a abordagem de tVNS cervical do gammaCore sem a barreira da receita.",
+      "testNote": "Avaliação baseada em evidências — pontuada a partir da documentação de produto da electroCore, do histórico clínico do gammaCore (plataforma compartilhada) e de análises independentes de 2026. Não testado na prática pela ONDA.",
       "productType": "tVNS cervical de consumo (portátil)",
-      "editorialAdjustment": "Honestidade do marketing — a página inicial diz que os dispositivos Truvaga “são fruto de extensos estudos clínicos”, mas esses estudos são do gammaCore, o dispositivo vendido com receita; não encontramos nenhum ensaio publicado do próprio Truvaga (verificado em outubro de 2026). Isso é pontuado aqui, não no critério de evidências. (no original: “a product of extensive clinical studies”)"
+      "pros": [
+        "Mesma plataforma de hardware do gammaCore, liberado pela FDA",
+        "Sem receita, sem aprovação do plano de saúde",
+        "tVNS cervical — atua diretamente no tronco vagal, não só no ramo auricular",
+        "O app complementar registra as sessões e acompanha o estresse autoavaliado"
+      ],
+      "cons": [
+        "Não é liberado pela FDA na indicação de consumo — vendido como dispositivo de bem-estar",
+        "O limite de vida útil (350 usos) torna o custo de longo prazo menos óbvio",
+        "Sessões fixas de 2 minutos; a intensidade é a única variável",
+        "Sem biofeedback de variabilidade da frequência cardíaca (HRV ou VFC) no próprio aparelho"
+      ],
+      "scoreNotes": {
+        "evidence": "Não há ensaios publicados do próprio dispositivo Truvaga (dois ensaios registrados, ainda sem resultados, outubro de 2026). Os estudos do gammaCore são do dispositivo de prescrição e não contam aqui, embora a plataforma compartilhada lhe dê o histórico de segurança do gammaCore — 7,0, a pontuação base para um dispositivo sem ensaios próprios. Não é liberado pela FDA para nenhuma indicação — vendido como dispositivo de bem-estar geral.",
+        "mechanism": "A mesma abordagem de tVNS cervical do gammaCore: unidade portátil sobre a bainha carotídea, forma de onda em rajadas de 5 kHz. Atua diretamente no tronco vagal cervical.",
+        "protocols": "Sessões fixas de dois minutos; intensidade ajustável pelo usuário. O app complementar sugere padrões de uso em vez de programas distintos.",
+        "comfort": "Aparelho portátil ergonômico; alguns usuários relatam contrações na mandíbula ou dor no pescoço em amplitudes mais altas — igual ao gammaCore.",
+        "biofeedback": "O app registra as sessões e permite um diário simples de humor/estresse. Sem medição de HRV no aparelho.",
+        "value": "$325 em pagamento único por 350 sessões pré-carregadas (cerca de seis meses com as duas sessões diárias sugeridas pelo fabricante) — agora só cerca de $56 a mais que o Pulsetto; o Truvaga Plus recarregável custa $499. Sem receita. Cerca de um quinto do custo de longo prazo do gammaCore."
+      },
+      "editorialAdjustment": "Honestidade do marketing — a página inicial diz que os dispositivos Truvaga “are a product of extensive clinical studies”, mas esses estudos são do gammaCore, o dispositivo de prescrição; não encontramos nenhum ensaio publicado do próprio Truvaga (verificado em outubro de 2026). Isso é pontuado aqui, não em evidências.",
+      "content": "## Onde se destaca\n\nO Truvaga 350 é o dispositivo de VNS cervical mais confiável que um consumidor pode comprar sem receita. A electroCore — empresa por trás da linha gammaCore, liberada pela FDA — reembalou sua plataforma de hardware médico como dispositivo de bem-estar, mantendo o mesmo formato portátil e a mesma forma de onda em rajadas de 5 kHz da unidade de prescrição. A procedência de fabricação e o perfil de segurança vêm diretamente da linha clínica, algo incomum nessa faixa de preço.\n\n## Quais são as desvantagens do Truvaga 350?\n\nA versão de consumo não é mais regulada como dispositivo médico — o Truvaga é vendido para bem-estar geral, e não há ensaios publicados do próprio Truvaga — a evidência vem de estudos do gammaCore com a mesma abordagem de estimulação. A designação 350 é literal: 350 sessões de dois minutos e o aparelho é aposentado, depois disso você paga por uma renovação. Não há HRV no aparelho, e a variedade de protocolos se limita à intensidade.\n\n## Quem deve comprar o Truvaga 350?\n\nEscolha o Truvaga 350 se você quer tVNS no tronco vagal cervical — a mesma abordagem usada no dispositivo liberado pela FDA — sem passar por um médico, e aceita uma evidência mais escassa na indicação de bem-estar em troca de acessibilidade. Se você quer a base de pesquisa mais profunda, o Nurosym (auricular) tem o histórico de ensaios. Se você tem um diagnóstico real de cefaleia, o gammaCore é a ferramenta certa.\n\n---\n\n## Leitura de contexto\n\nA biologia por trás do que esses dispositivos buscam — e os protocolos que se somam ao hardware.\n\n- [Tolerância ao CO₂ e o limite de oxigênio](/articles/co2-tolerance-expanding-oxygen-limit) — por que a respiração lenta reconstrói o tônus vagal pela química do CO₂\n- [Breathwork como interface de linha de comando](/articles/breathwork-command-line-interface) — os protocolos com que a estimulação se combina\n- [Controle do eixo HPA e regulação do cortisol](/articles/hpa-axis-control-cortisol-aggression) — por que o trabalho de tônus vagal atua no cortisol mais adiante\n",
+      "faq": [
+        {
+          "q": "O Truvaga 350 vale a pena?",
+          "a": "O Truvaga 350 vale a pena se você quer tVNS cervical no estilo do gammaCore sem receita. Ele usa a mesma plataforma de hardware do gammaCore, liberado pela FDA, e atua diretamente no tronco vagal. Seu uso de consumo não é liberado pela FDA, e o limite de 350 sessões esconde o custo de longo prazo."
+        },
+        {
+          "q": "Quanto custa o Truvaga 350?",
+          "a": "O Truvaga 350 custa $325 em pagamento único em truvaga.com e oferece 350 sessões pré-carregadas (cerca de seis meses com as duas sessões diárias sugeridas pelo fabricante); o Truvaga Plus recarregável e de uso ilimitado custa $499. Esse limite de vida útil torna o custo de longo prazo menos óbvio do que o preço inicial sugere, então considere com que frequência você pretende usá-lo."
+        },
+        {
+          "q": "Quais são as desvantagens do Truvaga 350?",
+          "a": "O Truvaga não é liberado pela FDA para sua indicação de consumo e é vendido como dispositivo de bem-estar. O limite de 350 usos esconde o custo de longo prazo, as sessões são fixas em 2 minutos com a intensidade como única variável, e não há biofeedback de HRV no aparelho."
+        },
+        {
+          "q": "Truvaga 350 vs gammaCore: qual é melhor?",
+          "a": "O Truvaga usa a mesma plataforma de hardware do gammaCore, liberado pela FDA, mas não exige receita nem aprovação do plano de saúde. O gammaCore tem a liberação da FDA; o Truvaga é vendido como dispositivo de bem-estar. Escolha o Truvaga para acesso fácil à tVNS cervical."
+        }
+      ]
     },
     "apollo-neuro": {
       "verdict": "O dispositivo mais fácil de usar no corpo da categoria — vibrotátil, não elétrico, com evidências clínicas crescentes sobre variabilidade da frequência cardíaca (HRV ou VFC) e recuperação.",
@@ -2202,9 +2327,48 @@
       ]
     },
     "higherdose-red-light-face-mask": {
-      "verdict": "A melhor experiência de uso entre as máscaras de marcas de consumo — controle simples, silicone flexível, 50 mW/cm² declarados pela marca. Pouca evidência clínica; acabamento de marca acima de profundidade técnica.",
-      "productType": "Máscara facial de consumo em silicone flexível com luz vermelha + infravermelho",
-      "editorialAdjustment": "Honestidade do marketing — a página do produto diz que a máscara é “liberada (cleared) pela FDA e clinicamente comprovada” para reduzir linhas finas e rugas, mas a comprovação é um teste de 8 semanas da própria HigherDOSE com resultados autorrelatados, não um estudo publicado, e a clearance da FDA (K241933) foi concedida sem testes clínicos (verificado em outubro de 2026). Isso é pontuado aqui, não no critério de evidências. (no original: “FDA-cleared and clinically proven”)"
+      "verdict": "A melhor experiência de uso de marca de consumo entre as máscaras de luz vermelha — controle simples, silicone flexível, 50 mW/cm² segundo a marca. Evidência clínica escassa; acabamento de marca acima de profundidade técnica.",
+      "summary": "A HigherDOSE Red Light Face Mask é a referência de marca de consumo — controle simples (sem app), silicone flexível, 132 diodos, vermelho de 630 nm + infravermelho próximo de 830 nm a 50 mW/cm² segundo a marca, sessões de 10 ou 20 minutos, preço de $349. Extensão da marca HigherDOSE a partir do tapete PEMF e da manta de sauna. Base de evidência clínica escassa; a proposta é facilidade de uso e ecossistema da marca, não profundidade dermatológica.",
+      "description": "Análise ONDA da HigherDOSE Red Light Face Mask: silicone flexível, vermelho 630 nm + infravermelho próximo 830 nm, 132 diodos e controle recarregável.",
+      "bestFor": "Ideal para quem quer uma máscara de luz vermelha refinada para uso diário no ecossistema HigherDOSE — experiência de uso e acessibilidade acima de credenciais clínicas.",
+      "testNote": "Avaliação baseada em evidências — pontuada a partir da documentação de produto da HigherDOSE, da alegação da marca sobre a liberação da FDA e de avaliações de consumidores de 2026. Não testada na prática pela ONDA.",
+      "productType": "Máscara facial de silicone flexível vermelha + infravermelha de marca de consumo",
+      "pros": [
+        "Melhor experiência de uso de marca de consumo — controle recarregável simples, sessões de 10 ou 20 minutos",
+        "Preço acessível de $349 — mais barata que as referências dermatológicas",
+        "Conforto do silicone flexível comparável ao dos líderes da categoria",
+        "Ecossistema da marca HigherDOSE (combina com o tapete PEMF e a manta de sauna)"
+      ],
+      "cons": [
+        "Base de evidência clínica escassa",
+        "Os números de irradiância são da marca, sem verificação independente",
+        "Sem aba para o pescoço",
+        "Sem variantes multicomprimento de onda"
+      ],
+      "scoreNotes": {
+        "irradiance": "A HigherDOSE declara 50 mW/cm² no total (630 nm 26 + 830 nm 24 mW/cm²) — números da marca, sem medição independente.",
+        "wavelength-coverage": "Vermelho de 630 nm + infravermelho próximo de 830 nm — o par clínico padrão. Sem variantes azul / âmbar.",
+        "led-count-coverage": "66 LEDs de núcleo duplo (132 diodos) em todo o rosto. Sem aba para o pescoço no modelo padrão.",
+        "clinical-evidence": "Liberada pela FDA para rugas no rosto inteiro (510(k) K241933, 2024; o resumo da liberação diz que testes clínicos não foram necessários). Base de evidência clínica escassa; pesquisa financiada pela marca, sem profundidade revisada por pares.",
+        "comfort-fit": "Silicone flexível com conforto comparável a Omnilux / CurrentBody. Mais leve que a Lumara Viso.",
+        "value": "$349 — preço acessível de faixa intermediária-premium. Mais barata que Omnilux / CurrentBody / TheraFace, o que se justifica pela especificação mais leve."
+      },
+      "editorialAdjustment": "Honestidade do marketing — a página do produto diz que a máscara é “FDA-cleared and clinically proven to” reduzir linhas finas e rugas, mas a prova é um teste próprio da HigherDOSE de 8 semanas com resultados autorrelatados, não um estudo publicado, e a liberação da FDA (K241933) foi concedida sem testes clínicos (verificado em outubro de 2026). Isso é pontuado aqui, não em evidências.",
+      "content": "## Onde se destaca\n\nA HigherDOSE Red Light Face Mask é a referência de marca de consumo — experiência de uso refinada, construção em silicone flexível, extensão do ecossistema HigherDOSE a partir do tapete PEMF e da manta de sauna, preço acessível de $349. A melhor execução da proposta de uso diário fácil para o consumidor.\n\n## Quais são as desvantagens da HigherDOSE Red Light Face Mask?\n\nEvidência clínica e irradiância. A máscara é liberada pela FDA (510(k) K241933), com pesquisa financiada pela marca; não há vantagem dermatológica revisada por pares. Os 50 mW/cm² de irradiância são o número da marca, e não há aba para o pescoço. Omnilux, CurrentBody e Lumara têm pontuação geral mais alta; a Lumara lidera em especificações.\n\n## Quem deve comprar a HigherDOSE Red Light Face Mask?\n\nEscolha a HigherDOSE Red Light Face Mask para uma máscara refinada de uso diário no ecossistema HigherDOSE a um preço acessível. Para uma máscara vermelha + infravermelho próximo com pontuação mais alta, Omnilux. Para a líder do mercado de consumo, CurrentBody Series 2. Para uma marca dermatológica, Dr. Dennis Gross.\n\n---\n\n## Leitura de contexto\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [Biogênese mitocondrial](/articles/mitochondrial-biogenesis-cellular-power-grid)\n",
+      "faq": [
+        {
+          "q": "Quanto custa a HigherDOSE Red Light Face Mask?",
+          "a": "A HigherDOSE Red Light Face Mask custa $349 sozinha. É mais barata que a Omnilux Contour Face ($395) ou a Dr. Dennis Gross ($455), e por esse valor você leva uma máscara de silicone flexível com 132 diodos e um controle recarregável."
+        },
+        {
+          "q": "Quais comprimentos de onda a máscara HigherDOSE usa?",
+          "a": "A máscara HigherDOSE usa luz vermelha de 630 nm e infravermelho próximo de 830 nm; a HigherDOSE declara 50 mW/cm² no total (26 mW/cm² de vermelho, 24 mW/cm² de infravermelho próximo). São números da marca. Não há variantes multicomprimento de onda, então quem quer um espectro mais amplo deve olhar concorrentes multicomprimento de onda."
+        },
+        {
+          "q": "Quais são as desvantagens da HigherDOSE Red Light Face Mask?",
+          "a": "Sua base de evidência clínica é escassa, e os 50 mW/cm² de irradiância são o número da própria marca, não uma medição independente. Não tem aba para o pescoço nem variantes multicomprimento de onda. A proposta é facilidade de uso e o ecossistema HigherDOSE, que combina com o tapete PEMF e a manta de sauna, não profundidade dermatológica."
+        }
+      ]
     },
     "medito": {
       "verdict": "Totalmente grátis, de código aberto e sem anúncios, sem precisar de conta — a escolha sem pegadinhas, se você aceitar uma biblioteca menor.",
@@ -3278,8 +3442,48 @@
       "productType": "Banheira de imersão fria premium fabricada no Canadá"
     },
     "ultrahuman-ring-pro": {
-      "verdict": "O sucessor redesenhado e sem assinatura do Ring Air — bateria de 15 dias líder da categoria e processamento no anel e, ao contrário do Ring Air, à venda nos EUA. Promissor, mas novo demais para um veredito de confiabilidade a longo prazo, vindo de uma marca cujo último anel teve problemas de bateria.",
-      "productType": "Anel inteligente"
+      "verdict": "O sucessor redesenhado e sem assinatura do Ring Air — bateria de 15 dias líder da categoria, processamento no próprio anel e (ao contrário do Ring Air) disponível nos EUA. Promissor, mas novo demais para um veredito de confiabilidade a longo prazo, vindo de uma marca cujo anel anterior teve problemas de bateria.",
+      "summary": "O Ultrahuman Ring Pro é o carro-chefe da Ultrahuman projetado do zero, lançado em fevereiro de 2026 por US$ 479 em pagamento único, sem assinatura. É também a resposta da empresa a um problema difícil: o antigo Ultrahuman Ring Air está sob proibição de importação nos EUA após a vitória da Oura por patentes na ITC (em vigor desde outubro de 2025), e o Ring Pro é o anel redesenhado que coloca a Ultrahuman de volta à venda para compradores nos EUA. O destaque é uma bateria de ~15 dias que define a categoria (contra 4–6 dias do Ring Air), além de um processador dual-core no anel para machine learning local e medição aprimorada da frequência cardíaca, e o \"Jade\", uma camada de biointeligência em tempo real. Ele mantém os pontos fortes do Ring Air — leve, sem assinatura, variabilidade da frequência cardíaca (HRV ou VFC) contínua, bom monitoramento do sono — e ataca diretamente seu pior defeito, a confiabilidade da bateria. A ressalva, com honestidade: é novo, a validação independente de longo prazo é escassa e o anel anterior da marca foi amplamente relatado como falhando em poucos meses, então o ganho de confiabilidade é prometido, ainda não comprovado.",
+      "description": "Análise ONDA do Ultrahuman Ring Pro: sucessor do Ring Air sem assinatura, com bateria de 15 dias e à venda nos EUA, onde o Ring Air está proibido.",
+      "bestFor": "Ideal para quem quer um anel sem assinatura com bateria excepcional e não se importa em ser um dos primeiros a adotar um produto redesenhado.",
+      "testNote": "Avaliação baseada em evidências — pontuado a partir das especificações da Ultrahuman e da cobertura independente inicial do lançamento do Ring Pro em 2026. Não testado pessoalmente pela ONDA; a confiabilidade a longo prazo ainda não foi estabelecida de forma independente.",
+      "productType": "Anel inteligente",
+      "pros": [
+        "Bateria de ~15 dias líder da categoria — cerca do triplo do Ring Air",
+        "Sem assinatura — US$ 479 em pagamento único, acesso vitalício aos seus dados",
+        "Processador dual-core no anel e medição aprimorada da frequência cardíaca",
+        "Disponível nos EUA, ao contrário do Ring Air proibido"
+      ],
+      "cons": [
+        "Novo demais para um veredito comprovado de confiabilidade a longo prazo",
+        "Mesma marca cujo anel anterior teve falhas de bateria amplamente relatadas",
+        "Acesso aos dados ainda mediano — sem API totalmente aberta",
+        "O acabamento do app ainda fica atrás do Oura; sem tela"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "HRV contínua (SDNN/RMSSD) com sensores aprimorados e processador no anel. Só existem preprints conduzidos pela própria empresa; nenhuma validação independente contra ECG foi encontrada (até outubro de 2026). Regra da ONDA: sem validação independente própria, um aparelho recebe no máximo 7,5 se gerações anteriores foram validadas, 7,0 se não.",
+        "sensor": "Conjunto de sensores ópticos e processamento aprimorados em relação ao Ring Air; dados de frequência cardíaca melhores segundo a Ultrahuman. Sinal limpo em repouso.",
+        "sleep-accuracy": "Herda o monitoramento do sono do Ring Air com o novo pipeline de processamento; os números de estágios do sono vêm apenas de preprints da própria empresa. Regra da ONDA: sem validação independente própria, um aparelho recebe no máximo 7,5 se gerações anteriores foram validadas, 7,0 se não.",
+        "data-access": "Acesso vitalício aos seus próprios dados e exportação, mas ainda sem uma API realmente aberta. Sem mudanças em relação ao Ring Air.",
+        "wearability": "A bateria de ~15 dias é o destaque — cerca do triplo do Ring Air — e mira diretamente a queixa de confiabilidade. Leve e confortável para uso 24/7. A durabilidade a longo prazo ainda não está comprovada tão cedo.",
+        "app-ux": "O competente app da Ultrahuman com \"PowerPlugs\" adicionais, agora com a camada de biointeligência em tempo real \"Jade\". Rico em recursos; o acabamento ainda fica aquém do Oura.",
+        "value": "US$ 479 em pagamento único, sem assinatura, é uma proposta forte frente ao anel mais assinatura do Oura, e a bateria longa agrega valor real no dia a dia — desde que a confiabilidade se mantenha."
+      },
+      "content": "## Por que o Ring Pro existe\n\nO Ultrahuman Ring Pro não é apenas uma atualização de especificações — é a resposta a um muro jurídico. Em 2025 a Oura venceu um processo de patentes na ITC contra a Ultrahuman, e uma proibição de importação do [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) nos EUA entrou em vigor em outubro de 2025. Em vez de fazer acordo, a Ultrahuman lançou um anel redesenhado. O Ring Pro, lançado em fevereiro de 2026, é esse carro-chefe projetado do zero: US$ 479 em pagamento único, sem assinatura e — o mais importante — de volta à venda para compradores nos EUA.\n\n## O que o Ultrahuman Ring Pro faz bem?\n\nO destaque é a bateria: cerca de 15 dias por carga, aproximadamente o triplo do Ring Air e a melhor da categoria. Além disso, um processador dual-core no anel cuida do machine learning local, a medição da frequência cardíaca foi aprimorada e uma camada de biointeligência em tempo real, o \"Jade\", fica no app. Ele mantém o que tornava o Ring Air atraente — levíssimo, sem assinatura, [HRV](/glossary/heart-rate-variability) contínua, bom monitoramento do sono — e mira em cheio seu pior defeito.\n\n## Onde ter cautela\n\nAqui a honestidade importa. O problema que definiu o Ring Air foram baterias falhando em poucos meses, e a maior promessa do Ring Pro é a bateria. É a coisa certa a consertar, mas continua sendo uma promessa até que testes independentes de longo prazo a confirmem — vindo de uma marca com um tropeço recente de confiabilidade. O acesso aos dados também não mudou: melhor que um ecossistema fechado, mas aquém de uma API realmente aberta.\n\n## Quem deve comprar o Ultrahuman Ring Pro?\n\nEscolha o Ultrahuman Ring Pro se você quer um anel sem assinatura com uma bateria excepcional e não se importa em ser um dos primeiros a adotar um produto redesenhado. Se você quer um histórico mais longo hoje, o [RingConn Gen 2](/reviews/ringconn-gen-2) é a opção sem assinatura mais segura, e o [Oura Ring 5](/reviews/oura-ring-5) é o anel mais refinado se você aceitar a assinatura obrigatória — as gerações anteriores do Oura concordaram bem com o ECG durante a noite, embora o Ring 5 em si não tenha sido validado separadamente.\n\n---\n\n## Leitura complementar\n\nA ciência de por que a HRV é o sinal que vale a pena acompanhar — e de como o corpo a produz.\n\n- [Coerência do sistema na frequência de ressonância](/articles/resonant-frequency-system-coherence) — por que 5,5–6 respirações por minuto é o ponto ideal para treinar a HRV\n- [Precisão interoceptiva e calibração do sensor](/articles/interoceptive-precision-sensor-calibration) — por que sua própria percepção é a referência de base contra a qual a HRV mede\n- [Arquitetura neural antientrópica](/articles/anti-entropy-neural-architecture) — a HRV como sinal diário de manutenção do sistema autônomo\n",
+      "faq": [
+        {
+          "q": "O Ultrahuman Ring Pro é sem assinatura?",
+          "a": "Sim — US$ 479 em pagamento único, sem assinatura, ao contrário do Oura, que restringe os dados completos a uma assinatura de cerca de US$ 6 por mês. Essa é sua principal vantagem de custo."
+        },
+        {
+          "q": "O Ultrahuman Ring Pro é preciso para HRV?",
+          "a": "Ele mede a HRV noturna pelo dedo e recebe 7/10 em precisão de HRV, com um modelo mais aberto e sem assinatura. Só existem preprints conduzidos pela própria empresa; nenhuma validação independente da HRV dele contra ECG foi encontrada (até outubro de 2026)."
+        },
+        {
+          "q": "Ultrahuman Ring Pro vs Oura — qual é melhor?",
+          "a": "Escolha o Ring Pro para evitar assinatura e ter seus dados por completo; escolha o Oura pelo app mais refinado e pela maior quantidade de pesquisa publicada sobre estágios do sono (em gerações anteriores, em parte financiada pela Oura). Não há dados independentes para comparar a precisão da HRV noturna dos dois. O Ring Pro também é o sucessor do Ring Air disponível nos EUA."
+        }
+      ]
     },
     "oura-ring-5": {
       "verdict": "O carro-chefe de 2026 — 40% mais fino, com sensores realmente melhorados. As gerações anteriores da Oura concordaram bem com o ECG durante a noite; o próprio Ring 5 não foi validado separadamente. A assinatura obrigatória continua sendo o único porém real.",
@@ -3471,6 +3675,108 @@
           "a": "O Sleep as Android é só para Android e é cheio de recursos, então recompensa mais quem gosta de ajustar do que o uso casual. O monitoramento pelo celular é uma estimativa, a menos que você pareie um vestível, e o app é menos refinado que os apps de sono populares de iOS."
         }
       ]
+    },
+    "samsung-galaxy-ring": {
+      "verdict": "A alternativa ao Oura sem assinatura para Android — confortável e competente, embora presa ao ecossistema Samsung.",
+      "productType": "Anel inteligente"
+    },
+    "renu-therapy-cold-stoic": {
+      "verdict": "Banho frio de linha premium com um resfriador propositalmente silencioso — o melhor para instalação em ambiente interno, onde o ruído importa.",
+      "summary": "A Renu Therapy Cold Stoic é a banheira de imersão fria de linha premium projetada em torno da instalação em ambiente interno — o resfriador está entre os mais silenciosos da categoria, a construção é isolada para controle de temperatura em ambientes internos e o formato cabe em banheiros ou porões típicos. Um pouco menos agressiva na temperatura mínima do que a Plunge, mas melhor em ruído e compatibilidade com ambientes internos.",
+      "description": "Análise da ONDA da Renu Therapy Cold Stoic — banheira de imersão fria premium com um dos resfriadores mais silenciosos da categoria.",
+      "bestFor": "Melhor para quem vai instalar o banho frio em ambiente interno, onde o ruído do resfriador importa.",
+      "testNote": "Avaliação baseada em evidências — pontuada a partir da documentação de produto da Renu Therapy e de análises independentes de 2026. Não testada na prática pela ONDA.",
+      "productType": "Banho frio premium com resfriador silencioso",
+      "pros": [
+        "O resfriador mais silencioso entre os banhos frios premium — o melhor para instalação interna",
+        "Construção isolada otimizada para o controle de temperatura em ambiente interno",
+        "Ozônio + garantia de 3 anos",
+        "Sólido histórico de confiabilidade na linha premium"
+      ],
+      "cons": [
+        "Temperatura mínima um pouco menos agressiva que a da Plunge (40 °F vs 39 °F)",
+        "Preço premium — $5,500+, comparável à Plunge",
+        "Reconhecimento de marca mais restrito que o da Plunge",
+        "Conteúdo de orientação sobre protocolos menos desenvolvido"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "Resfriador competente que mantém 40 °F de forma confiável. Temperatura mínima um pouco menos agressiva que os 39 °F da Plunge, mas operação mais silenciosa.",
+        "build": "Construção premium isolada com ferragens de grau náutico. Otimizada para ambiente interno. Garantia de 3 anos.",
+        "water-management": "Ozônio + filtro; troca de água a cada 3–4 semanas.",
+        "form-factor": "Projetada para instalação interna (porão, garagem, sala de bem-estar dedicada). O resfriador silencioso torna realista a instalação interna, onde a Plunge fica no limite.",
+        "evidence": "Alegações de marketing razoáveis; orientação sobre protocolos fraca em comparação com a Plunge.",
+        "value": "$5,500+ dependendo da configuração. Comparável à Plunge, com a vantagem do ruído do resfriador."
+      },
+      "content": "## Onde ela se destaca\n\nA Renu Therapy Cold Stoic é a escolha premium para instalação em ambiente interno. O resfriador é sensivelmente mais silencioso que o da Plunge, a construção é otimizada para controle de temperatura em ambiente interno e o formato cabe nos espaços típicos de uma sala de bem-estar em casa. Para quem vai colocar o banho num porão, garagem ou sala dedicada, este é o formato certo.\n\n## Quais são as desvantagens da Renu Therapy Cold Stoic?\n\nA temperatura mínima fica em 40 °F contra os 39 °F da Plunge — marginal na prática, mas real no papel. O reconhecimento de marca é menor que o da líder da categoria. O preço é comparável ao da Plunge, sem o mesmo ecossistema de conteúdo.\n\n## Quem deve comprar a Renu Therapy Cold Stoic?\n\nEscolha a Renu Therapy Cold Stoic se a instalação interna e o ruído do resfriador forem fatores decisivos. Para instalação externa, a Plunge ou a Coldture fazem mais sentido. Para a temperatura mínima absoluta, a Morozko Forge.\n\n---\n\n## Leituras de apoio\n\nA biologia de por que a exposição ao frio funciona — e os protocolos que se somam ao equipamento.\n\n- [Tolerância ao CO₂ e o limite de oxigênio](/articles/co2-tolerance-expanding-oxygen-limit) — por que protocolos de frio e de respiração se combinam bem\n- [Arquitetura neural antientropia](/articles/anti-entropy-neural-architecture) — a exposição ao frio como dose diária de estresse antientropia\n- [Biogênese mitocondrial: a rede elétrica celular](/articles/mitochondrial-biogenesis-cellular-power-grid) — por que o choque de frio aumenta a densidade mitocondrial\n",
+      "faq": [
+        {
+          "q": "A Renu Therapy Cold Stoic vale a pena?",
+          "a": "A Cold Stoic vale a pena se você vai instalar um banho frio em ambiente interno, onde o ruído do resfriador importa. Ela tem o resfriador mais silencioso entre os banhos premium, construção isolada para controle de temperatura em ambiente interno, higienização por ozônio e garantia de 3 anos."
+        },
+        {
+          "q": "Quanto custa a Renu Therapy Cold Stoic?",
+          "a": "A Renu Therapy Cold Stoic é anunciada por $5,500 em pagamento único, com resfriador, ozônio e garantia de 3 anos incluídos. É comparável ao preço premium da The Plunge. O valor extra compra o resfriador mais silencioso entre os banhos premium, o que importa principalmente na instalação interna."
+        },
+        {
+          "q": "Quais são as desvantagens da Renu Therapy Cold Stoic?",
+          "a": "Sua temperatura mínima de 40 °F é um pouco menos agressiva que os 39 °F da Plunge, o preço de $5,500 ou mais é comparável ao da Plunge, o reconhecimento de marca é mais restrito e o conteúdo de orientação sobre protocolos é menos desenvolvido."
+        },
+        {
+          "q": "Renu Cold Stoic vs Plunge: qual é melhor?",
+          "a": "Escolha a Renu Cold Stoic para instalações internas, já que ela tem o resfriador premium mais silencioso. Escolha a The Plunge por uma temperatura mínima um pouco mais fria, de 39 °F, e maior reconhecimento de marca. O preço é comparável, e ambas incluem ozônio e garantia de 3 anos."
+        }
+      ]
+    },
+    "bluecube-cold-plunge": {
+      "verdict": "A opção de nível comercial — superdimensionada para uso doméstico, com o perfil certo para clínicas, academias ou casas com vários usuários.",
+      "summary": "A BlueCube Cold Plunge é a banheira de nível comercial vendida a clínicas e instalações esportivas. O resfriador é o de maior capacidade no mercado próximo ao consumidor — recupera rápido o bastante para imersões contínuas, uma atrás da outra. Para a prática doméstica típica de um só usuário, é superdimensionada; para casas com vários usuários ou ambientes clínicos, é a ferramenta certa.",
+      "description": "Análise ONDA da BlueCube Cold Plunge — banheira de imersão em água fria de nível comercial com o resfriador de maior capacidade do mercado de consumo.",
+      "bestFor": "Ideal para uso clínico, em instalações esportivas ou em casas com vários usuários, onde a capacidade do resfriador importa.",
+      "testNote": "Avaliação baseada em evidências — pontuado a partir da documentação de produto da BlueCube Baths e de análises independentes de 2026. Não testado pessoalmente pela ONDA.",
+      "productType": "Banheira de imersão em água fria de nível comercial com resfriador de alta capacidade",
+      "pros": [
+        "O resfriador de maior capacidade desta lista — suporta uso contínuo por vários usuários",
+        "Construção de nível comercial com garantia de 5 anos nos componentes",
+        "Higienização da água de nível comercial (ozônio + UV)",
+        "O perfil certo para clínicas, academias ou casas com vários usuários"
+      ],
+      "cons": [
+        "Preço a partir de US$ 11.000 — exagero para uso doméstico de um só usuário",
+        "Ocupa muito espaço e muitas vezes exige energia de 220 V",
+        "A instalação pode exigir obra elétrica",
+        "Perfil errado para o usuário doméstico típico"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "O resfriador de maior capacidade desta lista — feito para uso contínuo por vários usuários. Mantém temperaturas agressivas mesmo no calor do verão, com recuperação rápida.",
+        "build": "Construção de nível comercial projetada para uso clínico / em academias por vários usuários. Garantia de 5 anos na maioria dos componentes.",
+        "water-management": "Ozônio + UV + filtragem de nível comercial. Higienização para uso diário que aguenta vários usuários por dia.",
+        "form-factor": "Ocupa muito espaço e exige um local dedicado. Exige energia de 220 V na maioria das configurações.",
+        "evidence": "Boas orientações de protocolo para ambientes clínicos / esportivos. Honesta sobre o foco comercial.",
+        "value": "A partir de US$ 11.000. Exagero para uso doméstico de um só usuário; adequada para clínicas / academias / casas com vários usuários."
+      },
+      "content": "## Onde ela se destaca\n\nA BlueCube é a banheira de imersão em água fria de nível comercial — feita para clínicas, academias e casas com vários usuários, em que o cenário de carga é o uso contínuo, uma sessão atrás da outra. A capacidade do resfriador e os sistemas de higienização são superdimensionados para a prática doméstica de um só usuário, mas exatamente certos para o uso comercial.\n\n## Quais são as desvantagens da BlueCube Cold Plunge?\n\nPreço e exagero. Para a prática doméstica de um só usuário, a BlueCube oferece mais capacidade do que você vai usar, pelo dobro do custo da Plunge.\n\n## Quem deve comprar a BlueCube Cold Plunge?\n\nEscolha a BlueCube se você administra uma clínica, uma instalação esportiva ou uma casa com três ou mais usuários dividindo a banheira. Para uso doméstico de um só usuário, Plunge, Edge ou Coldture entregam capacidade mais que suficiente por cerca de um quarto a metade do custo.\n\n---\n\n## Leitura complementar\n\nA biologia de por que a exposição ao frio funciona — e os protocolos que se somam ao equipamento.\n\n- [Exercícios para o nervo vago](/articles/vagus-nerve-exercises) — na imersão de corpo inteiro, a principal reação é o choque simpático do frio; a resposta vagal (de mergulho) vem principalmente do frio no rosto, e a variabilidade da frequência cardíaca (HRV ou VFC) sobe apenas durante a exposição ([evidências](/science/evidence/cold-exposure))\n- [Controle do eixo HPA e regulação do cortisol](/articles/hpa-axis-control-cortisol-aggression) — como a exposição ao frio molda a curva do cortisol\n- [Fadiga adrenal: o que dizem as evidências](/articles/adrenal-governor-thermal-runaway) — por que a exaustão ligada ao estresse não é \"adrenais esgotadas\", e quando procurar um médico\n",
+      "faq": [
+        {
+          "q": "A BlueCube Cold Plunge vale a pena?",
+          "a": "Sim para clínicas, academias e casas com vários usuários, mas não para a prática doméstica típica de um só usuário. A BlueCube tem o resfriador de maior capacidade da categoria, que permite imersões contínuas uma atrás da outra, além de construção de nível comercial e higienização por ozônio e UV. Para uma pessoa em casa, é superdimensionada."
+        },
+        {
+          "q": "Quanto custa a BlueCube Cold Plunge?",
+          "a": "A BlueCube Cold Plunge começa em cerca de US$ 11.000, e a especificação comercial completa chega a US$ 14.000 ou mais. A instalação também pode exigir obra elétrica, já que muitas vezes é preciso energia de 220 V, então reserve orçamento para a instalação além da banheira."
+        },
+        {
+          "q": "Quais são as desvantagens da BlueCube Cold Plunge?",
+          "a": "A BlueCube custa a partir de US$ 11.000 e é um exagero para uso doméstico de um só usuário. Ocupa muito espaço, muitas vezes exige energia de 220 V e a instalação pode precisar de obra elétrica, o que lhe dá o perfil errado para o usuário doméstico típico."
+        },
+        {
+          "q": "Para quem a BlueCube Cold Plunge é mais indicada?",
+          "a": "A BlueCube Cold Plunge é mais indicada para uso clínico, em instalações esportivas ou em casas com vários usuários, onde a capacidade do resfriador importa. O resfriador recupera rápido o bastante para imersões contínuas, uma atrás da outra, com construção de nível comercial e garantia de 5 anos nos componentes. Para a prática doméstica de um só usuário, é superdimensionada."
+        }
+      ]
+    },
+    "ice-barrel-500": {
+      "verdict": "A banheira de imersão fria tipo barril mais popular — construção sólida, sem resfriador; o custo de abastecer com gelo é o atrito diário.",
+      "productType": "Banheira tipo barril isolada (sem resfriador, com gelo)"
     }
   },
   "comparisons": {
@@ -6339,6 +6645,439 @@
         }
       ],
       "content": "## Resumo\n\nO [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) é o carro-chefe sem assinatura — pagamento único de $479, bateria de ~15 dias, processamento no anel. O [Oura Ring 5](/reviews/oura-ring-5) tem o app mais maduro, de uma linha de anéis com mais pesquisas sobre modelos anteriores (a precisão do Ring 5 ainda não foi validada de forma independente), por $399 mais uma assinatura obrigatória.\n\n## Quando o Ultrahuman Ring Pro é a escolha certa?\n\nVocê recusa mensalidades, quer a bateria mais longa da categoria e não se incomoda em ser um dos primeiros a adotar um anel redesenhado.\n\n## Quando o Oura Ring 5 é a escolha certa?\n\nPrecisão e profundidade do app são a prioridade, você quer sensores melhorados e a experiência mais refinada, e a assinatura é aceitável.\n\n## Também vale comparar\n\nPara o Oura anterior e mais barato, veja [Oura Ring 5 vs Oura Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4); para outros anéis sem assinatura, o [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) e o [RingConn Gen 2](/reviews/ringconn-gen-2). Panorama completo: [melhores monitores de HRV](/reviews/hrv-trackers)."
+    },
+    "lightstim-for-wrinkles-vs-solawave-wand-4-in-1": {
+      "title": "LightStim for Wrinkles vs Solawave 4-in-1: comparativo 2026",
+      "description": "LightStim for Wrinkles vs Solawave Wand 4-in-1: aparelho de mão com quatro comprimentos de onda liberado pela FDA vs bastão multimodal barato.",
+      "intro": "LightStim for Wrinkles e Solawave Wand 4-in-1 são os dois aparelhos de luz vermelha de mão que as pessoas comparam quando não querem uma máscara para usar deitado. Ambos custam menos de $300 e ambos exigem posicionamento ativo a cada sessão. A diferença decisiva é espectro versus recursos extras: o LightStim é um aparelho de mão vermelho + infravermelho próximo com quatro comprimentos de onda; o Solawave é um bastão vermelho de um único comprimento de onda que acrescenta microcorrente, calor e massagem. Nenhum tem ensaios publicados do próprio aparelho.",
+      "verdict": "O LightStim vence em cobertura de comprimentos de onda e em histórico de mercado mais longo. O Solawave vence em preço e na combinação multimodal.",
+      "bestForA": "Escolha o LightStim for Wrinkles se você quer um aparelho de mão vermelho + infravermelho próximo com quatro comprimentos de onda e liberação da FDA.",
+      "bestForB": "Escolha o Solawave Wand 4-in-1 se você quer uma entrada econômica na luz vermelha de mão com combinação multimodal (LED + microcorrente + calor + massagem).",
+      "axes": [
+        {
+          "name": "Evidências clínicas",
+          "note": "Nenhum tem ensaios publicados do próprio aparelho. O LightStim é liberado pela FDA (K120775; modelo atual K261482), mas os únicos dados sobre rugas em seus registros na FDA são um estudo não publicado da empresa com um modelo anterior; o Solawave é registrado na FDA (uma listagem, não uma liberação), com depoimentos de consumidores financiados pela marca. O status na FDA é neutro nas notas da ONDA."
+        },
+        {
+          "name": "Cobertura de comprimentos de onda",
+          "note": "LightStim: quatro comprimentos de onda (605 / 640 / 652 / 850 nm), incluindo infravermelho próximo. Solawave: um único vermelho de 660 nm."
+        },
+        {
+          "name": "Dose de LED",
+          "note": "LightStim: 21,6 mW/cm² na distância de tratamento segundo seu registro na FDA (K261482; número do fabricante). Solawave: nenhum valor de irradiância em nossas fontes. Sem números comparáveis, não apontamos vencedor."
+        },
+        {
+          "name": "Combinação multimodal",
+          "note": "Solawave: LED + microcorrente + calor + massagem em um só aparelho. LightStim: só LED."
+        },
+        {
+          "name": "Histórico",
+          "note": "LightStim: a primeira liberação da FDA do fabricante para rugas é de 2009 (segundo o banco de dados da FDA) — histórico de mercado, não evidência de que funciona. Solawave: marca de consumo mais nova."
+        },
+        {
+          "name": "Preço",
+          "note": "Solawave: $169. LightStim: $249. O Solawave é bem mais barato."
+        }
+      ],
+      "faq": [
+        {
+          "q": "LightStim ou Solawave — qual aparelho de mão é melhor?",
+          "a": "Para cobertura de comprimentos de onda e infravermelho próximo — LightStim. Para praticidade multimodal de consumo a um preço menor — Solawave. O LightStim é a escolha racional se você pode pagar os $80 a mais por quatro comprimentos de onda."
+        },
+        {
+          "q": "A combinação multimodal do Solawave compensa o único comprimento de onda?",
+          "a": "Para quem valoriza microcorrente + calor + massagem em um só aparelho — sim, o pacote tem bom custo-benefício. Para quem compra principalmente pela luz vermelha, o LightStim acrescenta mais três comprimentos de onda, incluindo infravermelho próximo."
+        },
+        {
+          "q": "Qual tem melhor histórico em dermatologia?",
+          "a": "O LightStim tem o histórico de mercado mais longo — a primeira liberação da FDA do fabricante para rugas é de 2009 —, mas nenhum dos dois tem ensaios publicados do próprio aparelho: os únicos dados sobre rugas nos registros do LightStim na FDA são um estudo não publicado da empresa, e o Solawave se apoia em depoimentos de consumidores."
+        },
+        {
+          "q": "Aparelhos de mão valem a pena em vez de máscaras?",
+          "a": "Para quem quer sessões direcionadas por zona — sim. Para quem quer sessões passivas no rosto inteiro, as máscaras (Omnilux, CurrentBody) são mais práticas. Nenhum dos dois aparelhos de mão aqui tem ensaios publicados do próprio aparelho."
+        }
+      ],
+      "content": "## Resumo\n\nAmbos são aparelhos de luz vermelha de mão por menos de $300. O LightStim é o aparelho de mão com quatro comprimentos de onda liberado pela FDA. O Solawave é a entrada econômica multimodal de consumo.\n\n## Quando o LightStim for Wrinkles é a escolha certa?\n\nSe você quer um aparelho de mão vermelho + infravermelho próximo com quatro comprimentos de onda — o LightStim tem o formato certo. O modelo atual é liberado pela FDA (K261482), e o fabricante declara 21,6 mW/cm² na distância de tratamento nesse registro; não há ensaios publicados do próprio aparelho.\n\n## Quando o Solawave Wand 4-in-1 é a escolha certa?\n\nSe você quer uma entrada econômica na luz vermelha com combinação multimodal de consumo — o Solawave tem o formato certo. Um único comprimento de onda vermelho, dose modesta, mas o pacote LED + microcorrente + calor + massagem tem bom custo-benefício por $169."
+    },
+    "gammacore-sapphire-cv-vs-truvaga-350-vs-pulsetto": {
+      "title": "gammaCore vs Truvaga 350 vs Pulsetto: comparativo 2026",
+      "description": "gammaCore vs Truvaga vs Pulsetto: comparativo triplo da ONDA de aparelhos de tVNS cervical. Com receita, mesmo hardware de consumo e colar acessível.",
+      "intro": "gammaCore Sapphire CV, Truvaga 350 e Pulsetto são os três aparelhos de tVNS cervical que as pessoas comparam ao longo do espectro regulado–consumo. O gammaCore é liberado pela FDA e vendido só com receita; o Truvaga é o irmão de consumo, sem receita, na mesma plataforma de hardware; o Pulsetto é o colar de consumo mais acessível, com a biblioteca de protocolos mais ampla. Três níveis regulatórios, um mesmo nervo-alvo.",
+      "verdict": "Níveis diferentes. gammaCore para pacientes com cefaleia com indicação clínica e um médico que prescreva. Truvaga 350 para consumidores que querem a plataforma do gammaCore sem receita. Pulsetto para a tVNS cervical de uso diário mais acessível.",
+      "bestForA": "Escolha o gammaCore Sapphire CV se você tem diagnóstico de enxaqueca ou cefaleia em salvas e um médico disposto a prescrevê-lo — o único aparelho de VNS não invasiva liberado pela FDA.",
+      "bestForB": "Escolha o Truvaga 350 se você quer a plataforma de hardware do gammaCore sem a barreira da receita — a mesma forma de onda cervical de 5 kHz, vendida sem receita como aparelho de bem-estar.",
+      "bestForC": "Escolha o Pulsetto se você quer a tVNS cervical de consumo mais acessível — colar de pescoço com quatro programas guiados (sono, estresse, ansiedade, dor) pelo menor preço.",
+      "axes": [
+        {
+          "name": "Liberação da FDA",
+          "note": "gammaCore: liberado pela FDA (com receita) para enxaqueca (prevenção e tratamento agudo, a partir de 12 anos), cefaleia em salvas, hemicrania paroxística e hemicrania contínua. Truvaga e Pulsetto: aparelhos de bem-estar de consumo, não liberados pela FDA. O gammaCore é a única VNS não invasiva com autorização clínica nos EUA."
+        },
+        {
+          "name": "Evidências de ensaios — dentro da indicação",
+          "note": "gammaCore: mais de 30 ensaios randomizados em enxaqueca e cefaleia em salvas. Truvaga: herda a segurança da plataforma gammaCore. Pulsetto: um piloto mais estudos patrocinados pela empresa."
+        },
+        {
+          "name": "Plataforma de hardware",
+          "note": "gammaCore e Truvaga compartilham a mesma plataforma de hardware da electroCore (forma de onda em rajadas de 5 kHz). O Pulsetto tem outro design (colar de consumo com eletrodos no pescoço)."
+        },
+        {
+          "name": "Formato",
+          "note": "Pulsetto: colar de pescoço leve, é só colocar e usar. gammaCore e Truvaga: portáteis de mão, exigem segurar o aparelho na lateral do pescoço."
+        },
+        {
+          "name": "Variedade de protocolos",
+          "note": "Pulsetto: quatro programas guiados. Truvaga: ajuste de intensidade dentro de sessões fixas de 2 minutos. gammaCore: dose definida pelo médico, sem variação pelo usuário."
+        },
+        {
+          "name": "Vida útil em sessões",
+          "note": "Pulsetto: sessões ilimitadas durante a vida útil do aparelho. Truvaga 350: limite de 350 sessões, depois é aposentado. gammaCore: modelo de cartões de recarga."
+        },
+        {
+          "name": "Acessibilidade para o consumidor",
+          "note": "Pulsetto: a menor barreira — compra direta, sem receita. Truvaga: sem receita, um pouco mais complicado. gammaCore: exige receita."
+        },
+        {
+          "name": "Preço",
+          "note": "Pulsetto: $269. Truvaga 350: $325 por 350 sessões pré-carregadas (o recarregável Truvaga Plus custa $499). gammaCore: ~$600+ com cartões de recarga, e a cobertura do plano de saúde varia."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Qual aparelho de tVNS cervical é melhor — gammaCore, Truvaga ou Pulsetto?",
+          "a": "Depende do que você quer. gammaCore para tratamento de cefaleia com indicação clínica e acompanhamento médico. Truvaga para a plataforma do gammaCore sem a barreira da receita. Pulsetto para a tVNS cervical de consumo mais acessível, pelo menor preço e com a biblioteca de protocolos mais ampla."
+        },
+        {
+          "q": "Truvaga e gammaCore têm mesmo o mesmo hardware?",
+          "a": "Mesma plataforma — ambos fabricados pela electroCore, ambos usando a forma de onda cervical em rajadas de 5 kHz. O que muda é a rotulagem clínica: o gammaCore é liberado pela FDA para enxaqueca (prevenção e tratamento agudo, a partir de 12 anos), cefaleia em salvas, hemicrania paroxística e hemicrania contínua; o Truvaga é vendido sem receita como aparelho de bem-estar."
+        },
+        {
+          "q": "O Pulsetto é liberado pela FDA?",
+          "a": "Não. O Pulsetto tem marcação CE na Europa como aparelho de bem-estar de consumo e é vendido sem receita nos EUA. O único aparelho de VNS cervical não invasiva liberado pela FDA é o gammaCore, que é vendido só com receita."
+        },
+        {
+          "q": "Qual tem o efeito agudo mais forte?",
+          "a": "Nenhum estudo compara os três diretamente — todos atuam no tronco vagal cervical. gammaCore e Truvaga aplicam sessões concentradas de 2 minutos e alta intensidade; o Pulsetto aplica sessões mais longas e suaves de 4–20 minutos. Perfis temporais diferentes; não há dados publicados que comparem a dose total ou o efeito agudo deles."
+        },
+        {
+          "q": "O Truvaga pode substituir o gammaCore para enxaquecas?",
+          "a": "Não do ponto de vista clínico — o Truvaga não é liberado pela FDA para nenhuma indicação. Quem tem diagnóstico clínico de enxaqueca ou cefaleia em salvas deve usar o gammaCore com orientação médica. O Truvaga é vendido como aparelho de bem-estar geral, não como tratamento para cefaleia."
+        }
+      ],
+      "content": "## Resumo\n\nTrês níveis regulatórios para o mesmo alvo, o tronco vagal. gammaCore para pacientes com cefaleia clínica; Truvaga para consumidores que querem a plataforma do gammaCore sem receita; Pulsetto para a tVNS cervical de consumo mais acessível pelo menor preço.\n\n## Quando o gammaCore Sapphire CV é a escolha certa?\n\nSe você tem diagnóstico de enxaqueca ou cefaleia em salvas e um médico disposto a prescrevê-lo, o gammaCore é a ferramenta certa. A liberação da FDA e os mais de 30 ensaios randomizados são o seu valor regulatório. Formato errado para bem-estar geral.\n\n## Quando o Truvaga 350 é a escolha certa?\n\nSe você quer a plataforma de hardware do gammaCore — a mesma forma de onda cervical de 5 kHz, a mesma origem de fabricação — sem passar por um médico, o Truvaga tem o formato certo. A indicação de bem-estar é de venda direta ao consumidor; as evidências clínicas são da plataforma, não da rotulagem do Truvaga.\n\n## Quando o Pulsetto é a escolha certa?\n\nSe você quer um colar de tVNS cervical para uso diário com quatro programas guiados e sem compromisso clínico, o Pulsetto tem o formato certo. O menor preço, a biblioteca de protocolos mais ampla e as sessões ilimitadas são os diferenciais. A maioria dos consumidores acaba aqui."
+    },
+    "ultrahuman-ring-pro-vs-ultrahuman-ring-air": {
+      "title": "Ultrahuman Ring Pro vs Ring Air: comparativo (2026)",
+      "description": "Ultrahuman Ring Pro vs Ring Air: o sucessor redesenhado, à venda nos EUA, com bateria de ~15 dias, vs o Ring Air, proibido nos EUA. Qual comprar.",
+      "intro": "Na prática, esta é uma questão de upgrade e disponibilidade. O Ultrahuman Ring Pro é o sucessor redesenhado: bateria de ~15 dias, processamento no anel e — o mais importante — à venda nos EUA. O Ultrahuman Ring Air, mais antigo, está sob proibição de importação nos EUA (após a vitória da Oura na ITC por patentes) e teve falhas de bateria amplamente relatadas. Para quem compra nos EUA, quase não há disputa.",
+      "verdict": "Para compradores nos EUA, o Ring Pro vence por W.O. — o Ring Air tem a venda proibida nos EUA e não pode ser comprado lá. Além da disponibilidade, o Ring Pro praticamente triplica a bateria (~15 vs ~4–6 dias), acrescenta processamento no anel e é a resposta da Ultrahuman às queixas de confiabilidade da bateria do Ring Air. O Ring Air só faz sentido com um desconto grande onde ainda é vendido legalmente e se você aceita o risco.",
+      "bestForA": "Escolha o Ultrahuman Ring Pro — o anel atual da Ultrahuman, à venda nos EUA e sem assinatura, com bateria líder da categoria e as correções de confiabilidade de que o Ring Air precisava.",
+      "bestForB": "O Ring Air só faz sentido onde ainda é vendido legalmente, com grande desconto, e se você aceita o risco de confiabilidade da bateria. Nos EUA, não é uma opção.",
+      "axes": [
+        {
+          "name": "Disponibilidade nos EUA",
+          "note": "O Ring Pro está à venda nos EUA. O Ring Air está sob proibição de importação nos EUA (em vigor desde outubro de 2025) e não pode ser comprado lá. Decisivo para compradores nos EUA."
+        },
+        {
+          "name": "Bateria",
+          "note": "Ring Pro: ~15 dias. Ring Air: ~4–6 dias. Aproximadamente o triplo."
+        },
+        {
+          "name": "Confiabilidade",
+          "note": "O Ring Air teve falhas de bateria amplamente relatadas em poucos meses; o Ring Pro é o redesenho feito justamente para corrigir isso (embora seja novo e ainda não comprovado a longo prazo)."
+        },
+        {
+          "name": "Processamento e recursos",
+          "note": "O Ring Pro acrescenta um processador dual-core no anel e a camada de biointeligência \"Jade\". O Ring Air não tem nenhum dos dois."
+        },
+        {
+          "name": "Assinatura",
+          "note": "Empate — ambos são sem assinatura, de compra única."
+        },
+        {
+          "name": "Preço",
+          "note": "O Ring Air foi lançado por ~$350 contra $479 do Ring Pro, então, onde ainda é vendido, é mais barato — a única vantagem real do Ring Air."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Devo comprar o Ultrahuman Ring Pro ou o Ring Air?",
+          "a": "O Ring Pro, em quase todos os casos — tem cerca do triplo de bateria, processamento no anel e é o que você realmente consegue comprar nos EUA (o Ring Air está sob proibição de importação nos EUA). O Ring Air só faz sentido com grande desconto onde ainda é vendido, se você aceita o risco de confiabilidade da bateria."
+        },
+        {
+          "q": "Por que o Ring Air não está disponível nos EUA?",
+          "a": "Depois que a Oura venceu um caso de patentes na ITC, uma proibição de importação do Ultrahuman Ring Air nos EUA entrou em vigor em outubro de 2025. A resposta da Ultrahuman foi o Ring Pro redesenhado, que está disponível nos EUA."
+        },
+        {
+          "q": "A bateria do Ring Pro é mesmo melhor?",
+          "a": "Sim — cerca de 15 dias contra 4–6 do Ring Air. A bateria era o maior ponto fraco do Ring Air, e é a principal melhoria do Ring Pro."
+        }
+      ],
+      "content": "## Resumo\n\n> O [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) está sob proibição de importação nos EUA (outubro de 2025) e não pode ser comprado nos EUA. O [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) é o sucessor redesenhado e disponível nos EUA.\n\nO Ring Pro praticamente triplica a bateria, acrescenta processamento no anel e resolve os problemas de disponibilidade e confiabilidade que atormentaram o Ring Air.\n\n## Quando o Ring Pro é a escolha certa?\n\nQuase sempre — é o anel atual da Ultrahuman, disponível nos EUA e com bateria mais duradoura.\n\n## Quando o Ring Air é a escolha certa?\n\nSó onde ainda é vendido legalmente, com grande desconto, e se você aceita o risco de confiabilidade da bateria. Não é uma opção para compradores nos EUA.\n\n## Também vale comparar\n\nCompare o Ring Pro com o [Oura Ring 5](/reviews/vs/ultrahuman-ring-pro-vs-oura-ring-5), o [Samsung Galaxy Ring](/reviews/vs/ultrahuman-ring-pro-vs-samsung-galaxy-ring) e o [RingConn Gen 2](/reviews/vs/ultrahuman-ring-pro-vs-ringconn-gen-2). Todos os modelos: [os melhores monitores de variabilidade da frequência cardíaca (HRV ou VFC)](/reviews/hrv-trackers)."
+    },
+    "ultrahuman-ring-pro-vs-samsung-galaxy-ring": {
+      "title": "Ultrahuman Ring Pro vs Galaxy Ring: comparativo (2026)",
+      "description": "Ultrahuman Ring Pro vs Samsung Galaxy Ring: dois anéis inteligentes sem assinatura. Multiplataforma e ~15 dias de bateria vs o ecossistema Samsung.",
+      "intro": "Ambos são anéis inteligentes sem assinatura, e esse é o apelo em comum — compra única, sem mensalidade. A diferença é o alcance: o Ultrahuman Ring Pro é multiplataforma, com bateria de ~15 dias líder da categoria e processamento no anel; o Samsung Galaxy Ring é confortável e competente, mas rende mais preso a um celular Samsung Galaxy. É multiplataforma e bateria contra a conveniência do ecossistema Samsung.",
+      "verdict": "Ambos dispensam a assinatura. O Ultrahuman Ring Pro vence em bateria (~15 dias), suporte multiplataforma e processamento embarcado; o Samsung Galaxy Ring vence se você vive no ecossistema Samsung e quer um anel mais barato e mais comprovado ($399 vs $479). Escolha pelo celular e pelas prioridades.",
+      "bestForA": "Escolha o Ultrahuman Ring Pro se você quer a maior bateria, suporte multiplataforma (iOS/Android) e métricas mais completas, sem ficar preso a uma marca de celular.",
+      "bestForB": "Escolha o Samsung Galaxy Ring se você tem um celular Samsung Galaxy e quer integração estreita com o ecossistema e um anel mais barato e mais consolidado.",
+      "axes": [
+        {
+          "name": "Assinatura",
+          "note": "Empate — nenhum cobra assinatura. Ambos são de compra única, que é justamente o motivo para considerá-los em vez do Oura."
+        },
+        {
+          "name": "Bateria",
+          "note": "Ring Pro: ~15 dias, a melhor da categoria. Galaxy Ring: ~6–7 dias. Vantagem clara para a Ultrahuman."
+        },
+        {
+          "name": "Alcance de plataforma",
+          "note": "O Ring Pro funciona plenamente em iOS e Android. Os melhores recursos do Galaxy Ring pressupõem um celular Samsung Galaxy; fora desse ecossistema ele é mais limitado."
+        },
+        {
+          "name": "Integração com o ecossistema",
+          "note": "Em um celular Samsung Galaxy, o Galaxy Ring se integra de perto ao Samsung Health e aos dispositivos Galaxy — com mais fluidez que um anel de terceiros para usuários Samsung."
+        },
+        {
+          "name": "Preço",
+          "note": "Galaxy Ring: ~$399. Ring Pro: $479. O anel da Samsung é mais barato na compra; nenhum tem taxas recorrentes."
+        },
+        {
+          "name": "Histórico",
+          "note": "A Samsung é uma fabricante de hardware consolidada, com um anel já no mercado e comprovado. O Ring Pro é novo, e o Ring Air anterior da Ultrahuman teve queixas de confiabilidade da bateria que o redesenho pretende corrigir."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ultrahuman Ring Pro ou Samsung Galaxy Ring?",
+          "a": "Ambos são sem assinatura. Escolha o Ring Pro pela maior bateria (~15 dias) e pelo suporte multiplataforma completo; escolha o Galaxy Ring se você tem um celular Samsung Galaxy e quer integração estreita com o ecossistema e um preço menor ($399 vs $479)."
+        },
+        {
+          "q": "O Samsung Galaxy Ring funciona com iPhone?",
+          "a": "Funciona melhor com um celular Samsung Galaxy; em outros Android é mais limitado, e o suporte ao iPhone é fraco. Se você usa iPhone, o Ring Pro multiplataforma (ou o Oura) é a melhor escolha."
+        },
+        {
+          "q": "Qual tem bateria melhor?",
+          "a": "O Ultrahuman Ring Pro, claramente — cerca de 15 dias contra uns 6–7 do Galaxy Ring."
+        }
+      ],
+      "content": "## Resumo\n\nDois anéis sem assinatura. O [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) é multiplataforma, com bateria de ~15 dias; o [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) é um anel confortável e mais barato que brilha dentro do ecossistema Samsung.\n\n## Quando o Ultrahuman Ring Pro é a escolha certa?\n\nVocê quer a maior bateria e suporte multiplataforma, sem ficar preso a uma marca de celular.\n\n## Quando o Samsung Galaxy Ring é a escolha certa?\n\nVocê tem um celular Samsung Galaxy, quer integração estreita com o Samsung Health e prefere um anel mais barato e mais consolidado.\n\n## Também vale comparar\n\nPara o carro-chefe em precisão, veja [Ring Pro vs Oura Ring 5](/reviews/vs/ultrahuman-ring-pro-vs-oura-ring-5); para a opção de melhor custo-benefício, o [RingConn Gen 2](/reviews/ringconn-gen-2). Todos os modelos: [os melhores monitores de variabilidade da frequência cardíaca (HRV ou VFC)](/reviews/hrv-trackers)."
+    },
+    "ultrahuman-ring-air-vs-samsung-galaxy-ring": {
+      "title": "Ultrahuman Ring Air vs Galaxy Ring: comparativo (2026)",
+      "description": "Ultrahuman Ring Air vs Samsung Galaxy Ring: duas alternativas ao Oura sem assinatura. Ecossistema, confiabilidade, sono, peso e preço comparados.",
+      "intro": "O Ultrahuman Ring Air e o Samsung Galaxy Ring são os dois anéis inteligentes sem assinatura que as pessoas comparam com o Oura. Ambos dispensam a mensalidade; a verdadeira bifurcação é ecossistema e confiabilidade. A Ultrahuman é multiplataforma e um dos anéis mais leves disponíveis, mas é perseguida por relatos de falhas de bateria. A Samsung é confortável e competente — desde que você viva no ecossistema Galaxy.",
+      "verdict": "Ambos são alternativas ao Oura sem assinatura, com a mesma posição geral. O Samsung Galaxy Ring é a escolha mais segura e com melhor suporte se você tem um celular Galaxy; o Ultrahuman Ring Air é a opção mais leve e multiplataforma — se você aceita a dúvida sobre a confiabilidade da bateria.",
+      "bestForA": "Escolha o Ultrahuman Ring Air se você quer o anel mais leve, suporte multiplataforma (iOS e qualquer Android) e um app com foco metabólico — e aceita o risco de confiabilidade da bateria.",
+      "bestForB": "Escolha o Samsung Galaxy Ring se você já usa um celular Samsung Galaxy e quer um anel confortável, bem suportado e sem assinatura dentro desse ecossistema.",
+      "axes": [
+        {
+          "name": "Ecossistema e plataforma",
+          "note": "A Ultrahuman funciona em iOS e em qualquer Android. O conjunto completo de recursos do Samsung Galaxy Ring está ligado aos celulares Samsung Galaxy (Samsung Health), e no iPhone ele é indisponível ou limitado. A Ultrahuman vence em abertura."
+        },
+        {
+          "name": "Confiabilidade",
+          "note": "O Ultrahuman Ring Air carrega muitos relatos de falhas de bateria poucos meses após a compra. O anel da Samsung não tem uma sombra equivalente. A Samsung vence em confiança na confiabilidade."
+        },
+        {
+          "name": "Peso e conforto",
+          "note": "O Ultrahuman Ring Air está entre os anéis mais leves disponíveis; o Galaxy Ring é confortável, mas um pouco mais robusto. Vantagem para a Ultrahuman no uso o dia todo e à noite."
+        },
+        {
+          "name": "Sono e prontidão",
+          "note": "Ambos monitoram sono e prontidão de forma competente e ficam com a mesma nota geral. A integração da Samsung com os dados do Samsung Health e do Galaxy Watch dá uma leve vantagem prática a quem já usa Samsung."
+        },
+        {
+          "name": "Preço",
+          "note": "Ultrahuman: $350, compra única. Samsung Galaxy Ring: $399, compra única. Ambos sem assinatura; a Ultrahuman é a entrada mais barata."
+        },
+        {
+          "name": "Assinatura",
+          "note": "Nenhum exige assinatura — o motivo em comum para considerá-los em vez do Oura. Só na assinatura é um empate; a diferença de preço é pontuada no critério Preço."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ultrahuman Ring Air ou Samsung Galaxy Ring — qual é melhor?",
+          "a": "Têm a mesma nota e ambos são sem assinatura. Escolha a Samsung se você tem um celular Galaxy e quer o anel mais seguro e com melhor suporte; escolha a Ultrahuman se você quer a opção mais leve e multiplataforma e aceita o risco de confiabilidade da bateria."
+        },
+        {
+          "q": "O Samsung Galaxy Ring funciona com iPhone?",
+          "a": "Não direito. O Galaxy Ring foi construído em torno do Samsung Health e dos celulares Galaxy; o suporte ao iPhone é inexistente ou muito limitado. Se você usa iOS, o anel a considerar é o Ultrahuman Ring Air (ou o Oura)."
+        },
+        {
+          "q": "Algum dos dois é uma alternativa real ao Oura?",
+          "a": "Sim, no preço — ambos eliminam a assinatura obrigatória do Oura. Dos três anéis, só o Oura tem uma verificação independente da variabilidade da frequência cardíaca (HRV ou VFC) noturna — e esse estudo abrangeu gerações anteriores do Oura, não o atual Oura Ring 5 em si (o estadiamento do sono do Oura não tem validação independente). Nem o Ring Air nem o Galaxy Ring têm uma. Se evitar uma mensalidade é a prioridade, o Ring Air e o Galaxy Ring são os anéis sem assinatura entre os quais escolher."
+        }
+      ],
+      "content": "## Resumo\n\n> Observação: o Ultrahuman Ring Air está sob proibição de importação nos EUA (outubro de 2025, vitória da Oura por patentes na ITC) e não pode ser comprado nos EUA. O sucessor da Ultrahuman disponível nos EUA é o [Ring Pro](/reviews/ultrahuman-ring-pro) — sem assinatura, com bateria de ~15 dias. Se você está nos EUA, leia esta comparação com isso em mente.\n\nDois anéis sem assinatura com a mesma posição geral. O [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) é a opção mais leve e mais aberta (multiplataforma), prejudicada por relatos de confiabilidade da bateria. O [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) é a escolha confortável e bem suportada — se você vive no ecossistema Galaxy.\n\n## Quando o Ultrahuman Ring Air é a escolha certa?\n\nVocê usa iPhone ou um Android que não é Samsung, quer o anel mais leve e valoriza um app com foco metabólico. Aceite o risco da bateria e ele é a compra mais flexível.\n\n## Quando o Samsung Galaxy Ring é a escolha certa?\n\nVocê já usa um celular Samsung Galaxy e quer um anel confiável e sem assinatura que se conecte direto ao Samsung Health e aos dados do seu Galaxy Watch.\n\n## Também vale comparar\n\nPara a linha de anéis com melhor suporte (com assinatura), veja o [Oura Ring 5](/reviews/oura-ring-5), ou todos os modelos em [os melhores monitores de HRV](/reviews/hrv-trackers)."
+    },
+    "healthy-wave-multi-wave-vs-higherdose-pemf-mat": {
+      "title": "Healthy Wave Multi-Wave vs HigherDOSE: comparativo 2026",
+      "description": "Healthy Wave Multi-Wave vs HigherDOSE PEMF Mat: tapetes de recuperação multimodais. A ONDA compara profundidade técnica PEMF e o acabamento de marca.",
+      "intro": "Healthy Wave Multi-Wave e HigherDOSE PEMF Mat são os dois tapetes de recuperação multimodais que os consumidores mais comparam em 2026. Ambos combinam PEMF com infravermelho distante e camadas de cristais/minerais; o Healthy Wave também adiciona luz vermelha. A diferença decisiva é a profundidade: o Healthy Wave expõe parâmetros PEMF reais e opera com maior intensidade; o HigherDOSE envolve um sistema PEMF mais simples em uma experiência de marca de consumo refinada.",
+      "verdict": "O Healthy Wave vence em profundidade técnica PEMF e intensidade. O HigherDOSE vence em experiência de uso e acabamento de marca. Para quem compra pensando primeiro em PEMF, o Healthy Wave é a escolha racional.",
+      "bestForA": "Escolha o Healthy Wave Multi-Wave se você quer acesso real aos parâmetros PEMF, maior intensidade de campo e prioriza a capacidade PEMF em vez do acabamento de marca.",
+      "bestForB": "Escolha o HigherDOSE PEMF Mat se você quer uma experiência de uso refinada com recuperação multimodal e aceita uma profundidade técnica PEMF menor.",
+      "axes": [
+        {
+          "name": "Intensidade PEMF",
+          "note": "Healthy Wave: intensidade configurável; o fabricante informa até 5+ gauss de pico (cerca de 1,5 gauss em média na superfície), 1–30 Hz. HigherDOSE: intensidade modesta em 4 níveis predefinidos (3–23 Hz); sem valor em gauss em nossas fontes. O Healthy Wave vence em capacidade PEMF bruta."
+        },
+        {
+          "name": "Programabilidade PEMF",
+          "note": "Healthy Wave: acesso real aos parâmetros (forma de onda, frequência, intensidade). HigherDOSE: 4 níveis de frequência predefinidos (3–23 Hz), sem parâmetros personalizados."
+        },
+        {
+          "name": "Combinação de modalidades",
+          "note": "Ambos combinam PEMF + infravermelho + cristais (HigherDOSE: cerca de 20 lb de ametista e obsidiana); o Healthy Wave também adiciona luz vermelha e íons negativos. Cobertura básica comparável."
+        },
+        {
+          "name": "Experiência de uso",
+          "note": "HigherDOSE: controles predefinidos simples, marca de consumo premium, uso diário mais fácil. Healthy Wave: mais parâmetros = mais atrito na configuração."
+        },
+        {
+          "name": "Garantia",
+          "note": "Healthy Wave: garantia limitada de 5 anos mais teste de 90 dias. HigherDOSE: garantia de 1 ano mais 120 dias de devolução do dinheiro. O Healthy Wave é bem melhor em garantia."
+        },
+        {
+          "name": "Preço",
+          "note": "HigherDOSE: $1,295. Healthy Wave: $995–$2,495 conforme o tamanho (Pro em tamanho completo $2,495). No tamanho completo, o HigherDOSE é bem mais barato para recuperação multimodal de nível de consumo."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Healthy Wave ou HigherDOSE: qual é melhor?",
+          "a": "Para quem compra pensando primeiro em PEMF, o Healthy Wave: maior intensidade, controle real dos parâmetros, garantia de 5 anos. Para quem prioriza experiência de uso e marca de consumo, o HigherDOSE: controles simples, mais barato que um Healthy Wave em tamanho completo, uso diário mais fácil, garantia mais curta."
+        },
+        {
+          "q": "O PEMF do HigherDOSE é \"de verdade\"?",
+          "a": "Sim: ele opera PEMF a 3–23 Hz em 4 níveis predefinidos (das bandas delta a beta), faixas documentadas na literatura. Mas oferece apenas predefinições com intensidade modesta, algo leve pelos padrões técnicos de PEMF. O tapete é PEMF de verdade; só não é PEMF profundo."
+        },
+        {
+          "q": "Qual é melhor para recuperação?",
+          "a": "O Healthy Wave tem mais capacidade PEMF para protocolos de recuperação. O HigherDOSE entrega uma experiência de recuperação (calor + cristais + PEMF leve), mas com menos profundidade de protocolos PEMF."
+        },
+        {
+          "q": "Qual é a diferença de garantia?",
+          "a": "Healthy Wave: 5 anos de garantia do tapete. HigherDOSE: 1 ano de garantia. Em uma compra de $1,295–$2,495, a diferença de garantia é relevante: os 5 anos do Healthy Wave são o padrão do setor para tapetes PEMF sérios."
+        }
+      ],
+      "content": "## A versão curta\n\nAmbos são tapetes de recuperação multimodais. O Healthy Wave é o tapete técnico focado em PEMF. O HigherDOSE é o tapete de experiência de recuperação de marca de consumo com PEMF leve.\n\n## Quando o Healthy Wave Multi-Wave é a escolha certa?\n\nSe você compra pela capacidade PEMF: o Healthy Wave oferece controle real dos parâmetros, maior intensidade e garantia de 5 anos. É o formato certo para quem quer profundidade de protocolos PEMF junto com a combinação de modalidades.\n\n## Quando o HigherDOSE PEMF Mat é a escolha certa?\n\nSe você quer uma experiência de recuperação de consumo refinada por um preço menor que o de um Healthy Wave em tamanho completo: o HigherDOSE envolve um sistema PEMF mais simples em uma experiência de uso melhor e um acabamento de marca. Aceite a garantia de 1 ano e a menor profundidade PEMF."
+    },
+    "plunge-vs-ice-barrel-500": {
+      "title": "The Plunge vs Ice Barrel 500: comparativo (2026)",
+      "description": "The Plunge vs Ice Barrel 500: comparativo ONDA entre a banheira premium com resfriador e a popular banheira tipo barril abastecida com gelo.",
+      "intro": "The Plunge e Ice Barrel 500 são as duas banheiras de imersão fria mais comparadas dos dois lados da divisão entre modelos com resfriador e modelos com gelo. Ambas entregam exposição real ao frio; a diferença estrutural é o modelo de operação — a Plunge mantém 39°F automaticamente, a Ice Barrel exige reabastecimento diário de gelo.",
+      "verdict": "Modelos de operação diferentes. The Plunge para quem quer a conveniência de uso diário sem preocupação. Ice Barrel para climas frios ou uso ocasional, quando a economia inicial pesa mais que o custo diário do gelo.",
+      "bestForA": "Escolha a The Plunge se o objetivo é a prática diária e você quer uma banheira que mantenha o frio automaticamente — sem custo diário de gelo, sem ritual diário de preparo.",
+      "bestForB": "Escolha a Ice Barrel 500 se você mora em clima frio ou pratica imersão fria de vez em quando — a economia inicial de $4,800 pode compensar o custo do gelo.",
+      "axes": [
+        {
+          "name": "Modelo de operação",
+          "note": "Plunge: o resfriador mantém a temperatura automaticamente. Ice Barrel: o usuário enche com água e gelo a cada sessão. A Plunge vence em conveniência de uso diário."
+        },
+        {
+          "name": "Consistência do frio",
+          "note": "Plunge: 39°F mantidos automaticamente o ano todo. Ice Barrel: a temperatura varia com o ambiente e o gelo adicionado."
+        },
+        {
+          "name": "Construção",
+          "note": "Plunge: acrílico premium com isolamento. Ice Barrel: barril de plástico de grau alimentício com isolamento. Ambas sólidas para sua faixa."
+        },
+        {
+          "name": "Espaço ocupado",
+          "note": "Ice Barrel: área vertical menor (32\" de diâmetro). Plunge: banheira horizontal que ocupa mais espaço."
+        },
+        {
+          "name": "Gestão da água",
+          "note": "Plunge: higienizada com ozônio, troca de água a cada 2–4 semanas. Ice Barrel: trocas manuais mais reposição diária de gelo."
+        },
+        {
+          "name": "Custo diário de operação",
+          "note": "Plunge: só eletricidade (~$10–30/mês de funcionamento do resfriador). Ice Barrel: $5–15/dia em gelo nas estações quentes."
+        },
+        {
+          "name": "Custo inicial",
+          "note": "Ice Barrel: $1,200. Plunge: $5,990. A Ice Barrel custa cerca de 20% da Plunge no início."
+        }
+      ],
+      "faq": [
+        {
+          "q": "A Ice Barrel é tão boa quanto a The Plunge?",
+          "a": "Para prática diária, não — a Ice Barrel exige gelo todos os dias, enquanto a Plunge mantém o frio automaticamente. Para clima frio ou uso ocasional, a Ice Barrel atende bem e economiza $4,800 no início. Faça as contas do gelo diário para o seu clima antes de decidir."
+        },
+        {
+          "q": "Quanto custa o gelo para a Ice Barrel?",
+          "a": "Depende da temperatura ambiente. Em climas quentes ($5–15/dia em gelo no verão). Em climas frios (inverno / neve), de zero a desprezível. A $5–15 por dia, num clima quente o ano todo, isso soma cerca de $1,800–5,500 por ano — o suficiente para anular a economia inicial de $4,800 da Ice Barrel em cerca de um a três anos; com um inverno frio, leva mais tempo."
+        },
+        {
+          "q": "A The Plunge funciona em ambientes internos?",
+          "a": "Sim, com atenção ao ruído do resfriador, à parte elétrica e à drenagem. A Ice Barrel também pode ser instalada em ambiente interno; a gestão do gelo é mais trabalhosa dentro de casa."
+        },
+        {
+          "q": "Qual é melhor para experimentar a imersão fria?",
+          "a": "A Ice Barrel — um compromisso inicial menor significa menos risco se a prática de imersão fria não pegar. Quando a prática se firmar como diária, migrar para a Plunge passa a ser economicamente racional."
+        }
+      ],
+      "content": "## A versão curta\n\nPlunge e Ice Barrel atendem a modelos de operação diferentes. A Plunge é a ferramenta com resfriador para uso diário; a Ice Barrel é o barril abastecido com gelo para uso ocasional ou em clima frio.\n\n## Quando a The Plunge é a escolha certa?\n\nSe o objetivo é imersão fria diária e você quer uma banheira sem preocupação que mantenha 39°F automaticamente, a Plunge é o formato certo. O custo diário de operação é só a eletricidade.\n\n## Quando a Ice Barrel 500 é a escolha certa?\n\nSe você mora em clima frio, onde o custo do gelo é desprezível, ou pratica imersão fria de vez em quando — a Ice Barrel economiza $4,800 no início. A área vertical também cabe em espaços menores."
+    },
+    "bemer-classic-evo-vs-healthy-wave-multi-wave": {
+      "title": "Bemer Classic Evo vs Healthy Wave: comparativo (2026)",
+      "description": "Bemer Classic Evo vs Healthy Wave Multi-Wave: sinal proprietário a preço premium versus tapete multimodal pela metade do preço. A ONDA analisa a troca.",
+      "intro": "Bemer Classic Evo e Healthy Wave Multi-Wave são os dois tapetes PEMF que os usuários comparam ao escolher um equipamento de recuperação premium. A diferença decisiva é a tese: o Bemer aposta em uma única forma de onda proprietária com uma longa lista de estudos (em sua maioria pequenos ou ligados ao fabricante); o Healthy Wave aposta em combinar PEMF com infravermelho distante e luz vermelha em um único tapete pela metade do preço.",
+      "verdict": "Sinal proprietário versus combinação de modalidades. Bemer Classic Evo para o sinal PEMF individual mais estudado e construção premium. Healthy Wave Multi-Wave para cobrir PEMF + IV + luz vermelha pela metade do preço. Nenhum tem ensaios independentes que mostrem benefício à saúde.",
+      "bestForA": "Escolha o Bemer Classic Evo se você quer o sinal PEMF mais conhecido em um sistema premium com vários aplicadores e aceita um preço premium sem benefícios comprovados à saúde.",
+      "bestForB": "Escolha o Healthy Wave Multi-Wave se você quer PEMF combinado com infravermelho distante e terapia de luz vermelha em um único tapete por um preço bem menor.",
+      "axes": [
+        {
+          "name": "Pesquisa da forma de onda",
+          "note": "Bemer: a lista de estudos mais longa sobre um sinal específico, mas em sua maioria pequenos ou ligados ao fabricante; ensaios controlados independentes não encontraram diferença em relação ao controle. Healthy Wave: frequências PEMF comuns, sem ensaios do próprio tapete."
+        },
+        {
+          "name": "Intensidade de campo",
+          "note": "Bemer: 35–150 µT (baixa intensidade por projeto). Healthy Wave: potência configurável mais alta com várias formas de onda. O Healthy Wave vence em intensidade bruta."
+        },
+        {
+          "name": "Combinação de modalidades",
+          "note": "Bemer: só PEMF. Healthy Wave: PEMF + infravermelho distante + luz vermelha + ametista/turmalina. Várias modalidades contra uma."
+        },
+        {
+          "name": "Programabilidade",
+          "note": "Bemer: níveis predefinidos da marca P1–P10, controlados por app. Healthy Wave: acesso real aos parâmetros (forma de onda, frequência, intensidade). O Healthy Wave é mais transparente."
+        },
+        {
+          "name": "Situação regulatória",
+          "note": "O Bemer é liberado pela FDA via 510(k) como dispositivo não médico de condicionamento muscular (código de produto NGX), não para tratar doenças. Healthy Wave: sem liberação da FDA, vendido como dispositivo de bem-estar. Nenhum é liberado para tratar qualquer condição."
+        },
+        {
+          "name": "Pedigree de construção",
+          "note": "Bemer: engenharia alemã com histórico desde 1998, eletrônica premium, garantia de 3 anos. Healthy Wave: construção sólida, garantia limitada de 5 anos e teste de 90 dias, mas menos pedigree de marca."
+        },
+        {
+          "name": "Preço",
+          "note": "Bemer: $5,490. Healthy Wave: $995–$2,495 conforme o tamanho (Pro em tamanho completo $2,495). O Healthy Wave custa menos da metade."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Bemer ou Healthy Wave: qual é melhor?",
+          "a": "Teses diferentes. O Bemer vence em construção e no sinal individual mais estudado, embora ensaios independentes não tenham encontrado benefício claro. O Healthy Wave vence em combinação de modalidades (PEMF + IV + luz vermelha) e preço (~metade do Bemer)."
+        },
+        {
+          "q": "O sinal do Bemer é mesmo mais pesquisado?",
+          "a": "Mais estudado, sim — mas a maioria dos estudos do Bemer é pequena ou ligada ao fabricante. Ensaios controlados independentes não encontraram diferença em relação a um dispositivo inativo na fibromialgia nem em relação a uma perna de controle no fluxo sanguíneo da pele. Mais estudos não é o mesmo que benefício comprovado."
+        },
+        {
+          "q": "O campo mais forte do Healthy Wave age mais profundamente que o Bemer?",
+          "a": "Mecanismo diferente. O Healthy Wave tem maior intensidade de campo bruta e formas de onda configuráveis, mas nenhuma pesquisa própria sustentando o sinal específico. A tese do Bemer é que o formato da onda importa mais que a intensidade de pico — uma alegação do fabricante que ensaios independentes não confirmaram."
+        },
+        {
+          "q": "Comparação do custo total de propriedade?",
+          "a": "Bemer Classic Evo: $5,490 em pagamento único, sem assinatura. Healthy Wave Multi-Wave: $995–$2,495 em pagamento único, conforme o tamanho. O Healthy Wave custa menos da metade no total, e você leva várias modalidades (PEMF, infravermelho distante, luz vermelha, íons negativos, cristais)."
+        }
+      ],
+      "content": "## A versão curta\n\nO Bemer é o tapete de sinal proprietário mais conhecido. O Healthy Wave é a alternativa com combinação de modalidades pela metade do preço. Nenhum tem ensaios independentes que mostrem benefício à saúde; veja [Terapia PEMF — as evidências](/science/evidence/pemf).\n\n## Quando o Bemer Classic Evo é a escolha certa?\n\nSe você quer o sinal proprietário mais conhecido e uma construção premium com vários aplicadores. O Bemer cita mais estudos que qualquer outro PEMF de consumo, mas a maioria é pequena ou ligada ao fabricante, e ensaios controlados independentes não encontraram diferença em relação ao controle. Sua liberação da FDA é para condicionamento muscular não médico (código de produto NGX). Aceite o preço premium.\n\n## Quando o Healthy Wave Multi-Wave é a escolha certa?\n\nSe você quer cobrir várias modalidades de recuperação por sessão e não precisa de um sinal proprietário — o Healthy Wave combina PEMF com infravermelho distante e terapia de luz vermelha por um preço bem menor. Várias modalidades em um tapete, controle real dos parâmetros, metade do custo do Bemer."
     }
   },
   "categoryHubs": {
