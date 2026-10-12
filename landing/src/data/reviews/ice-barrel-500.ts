@@ -11,7 +11,7 @@ const iceBarrel500: ToolReviewInput = {
   verdict:
     'A widely sold barrel-style cold plunge — solid build, no chiller, ice-fill cost is the daily friction.',
   summary:
-    'Ice Barrel 500 is the upright insulated barrel that turned cold plunge from a chest-freezer DIY into a clean consumer product. No chiller — you fill it with water and ice — so daily ice cost ($5–15/session depending on climate) is the operating-cost wildcard. Strong build, distinctive vertical form factor, 1-year warranty.',
+    'Ice Barrel 500 is an upright insulated barrel — a cleaner, ready-made alternative to chest-freezer DIY cold plunges. No chiller — you fill it with water and ice — so daily ice cost ($5–15 per day of use, depending on climate) is the operating-cost wildcard. Strong build, distinctive vertical form factor, 1-year warranty.',
   scores: [
     { criterionId: 'chiller-capacity', score: 4.5, note: 'No chiller. Temperature depends entirely on ice fill, ambient temperature and insulation hold-time. Holds usable cold for ~30–60 minutes per fill.' },
     { criterionId: 'build', score: 8.0, note: 'Food-grade plastic barrel with insulation. UV-resistant exterior. 1-year warranty. Solid multi-year reliability track record.' },
