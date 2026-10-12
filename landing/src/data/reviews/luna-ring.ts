@@ -9,7 +9,7 @@ const lunaRing: ToolReviewInput = {
   description:
     'ONDA review of the Noise Luna Ring Gen 2 — a budget, subscription-free Oura alternative with a charging case but short battery life per charge.',
   verdict:
-    'A practical, affordable, subscription-free Oura alternative — good sleep tracking and a long total battery via its case, though single-charge battery and some app rough edges keep it a value pick rather than a class leader.',
+    'A practical, affordable, subscription-free Oura alternative — basic sleep tracking (stage estimates, not independently validated) and a long total battery via its case, though single-charge battery and some app rough edges keep it a value pick rather than a class leader.',
   summary:
     'The Noise Luna Ring Gen 2 is a budget, subscription-free smart ring aimed squarely at people who want core Oura-style tracking for less. At around $300 with no membership, it covers heart rate, HRV, SpO2, skin temperature, sleep and automatic activity detection, with a "Luna AI" assistant. Its sleep stages are estimates without independent validation, and the pocket charging case stretches total battery toward a headline ~30 days — but the ring itself lasts only about four days per charge, a step behind class leaders, and the app has some teething issues. It’s a reliable, practical alternative rather than a groundbreaking one.',
   scores: [
@@ -33,7 +33,7 @@ const lunaRing: ToolReviewInput = {
     'No independent validation of its HRV or sleep tracking',
     'No open API',
   ],
-  bestFor: 'Best for a cheap, subscription-free ring with solid sleep tracking and a long total battery via its case — a practical Oura alternative on a budget.',
+  bestFor: 'Best for a cheap, subscription-free ring with basic sleep tracking (estimates, not independently validated) and a long total battery via its case — a practical Oura alternative on a budget.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Noise specifications and independent 2026 reviews of the Luna Ring Gen 2. Not hands-on tested by ONDA.',
@@ -50,7 +50,7 @@ The single-charge battery is only about four days, a step behind class leaders t
 
 ## Who should buy Noise Luna Ring Gen 2?
 
-Choose the Noise Luna Ring Gen 2 if you want a cheap, subscription-free ring with good sleep tracking and don’t mind topping up with the case. For a longer single-charge battery at a similar no-subscription price, see the [RingConn Gen 2](/reviews/ringconn-gen-2); for the cheapest option, the [Amazfit Helio Ring](/reviews/amazfit-helio-ring); for the accuracy reference, [Oura](/reviews/oura-ring-4).
+Choose the Noise Luna Ring Gen 2 if you want a cheap, subscription-free ring with basic sleep tracking and don’t mind topping up with the case. For a longer single-charge battery at a similar no-subscription price, see the [RingConn Gen 2](/reviews/ringconn-gen-2); for the cheapest option, the [Amazfit Helio Ring](/reviews/amazfit-helio-ring); for the accuracy reference, [Oura](/reviews/oura-ring-4).
 
 ---
 
@@ -64,7 +64,7 @@ Choose the Noise Luna Ring Gen 2 if you want a cheap, subscription-free ring wit
   relatedSlugs: ['amazfit-helio-ring', 'ringconn-gen-2', 'oura-ring-4', 'samsung-galaxy-ring'],
   publishOn: '2026-09-06',
   faq: [
-    { q: "Is the Noise Luna Ring a good Oura alternative?", a: "It is a practical, affordable, subscription-free alternative with good sleep tracking and a long total battery via its charging case. ONDA scores it {{score:luna-ring}}/10 — a budget Oura alternative, not as refined." },
+    { q: "Is the Noise Luna Ring a good Oura alternative?", a: "It is a practical, affordable, subscription-free alternative with basic sleep tracking (stage estimates without independent validation) and a long total battery via its charging case. ONDA scores it {{score:luna-ring}}/10 — a budget Oura alternative, not as refined." },
     { q: "Does the Noise Luna Ring need a subscription?", a: "No — about $300 one-time with no subscription." },
     { q: "What is the Noise Luna Ring battery life?", a: "The single-charge battery is modest, but the charging case extends total battery considerably — a practical setup for weeks between wall charges." },
   ],
