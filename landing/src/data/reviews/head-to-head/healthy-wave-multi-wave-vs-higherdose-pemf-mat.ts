@@ -18,7 +18,7 @@ const healthyWaveVsHigherDose: HeadToHeadInput = {
   axes: [
     { name: 'PEMF intensity', winner: 'a', note: 'Healthy Wave: configurable intensity; the maker quotes up to 5+ gauss peak (about 1.5 gauss average at the surface), 1–30 Hz. HigherDOSE: modest intensity across 4 preset levels (3–23 Hz); no gauss figure in our sources. Healthy Wave wins on raw PEMF capability.' },
     { name: 'PEMF programmability', winner: 'a', note: 'Healthy Wave: real parameter exposure (waveform, frequency, intensity). HigherDOSE: 4 preset frequency levels (3–23 Hz), no custom parameters.' },
-    { name: 'Modality stack', winner: 'tie', note: 'Both stack PEMF + infrared + crystals (HigherDOSE: about 20 lb of amethyst and obsidian); Healthy Wave also adds red light and negative ions. Comparable core coverage.' },
+    { name: 'Modality stack', winner: 'tie', note: 'Both stack PEMF + infrared + crystals (HigherDOSE: about 20 lb of amethyst and obsidian); Healthy Wave also adds red light (60 × 660 nm lights); both list negative ions. Comparable core coverage.' },
     { name: 'Consumer UX', winner: 'b', note: 'HigherDOSE: simple preset controls, premium consumer branding, easier daily use. Healthy Wave: more parameters = more setup friction.' },
     { name: 'Warranty', winner: 'a', note: 'Healthy Wave: 5-year limited warranty plus 90-day trial. HigherDOSE: 1-year warranty plus 120-day money-back guarantee. Healthy Wave significantly better on warranty.' },
     { name: 'Price', winner: 'b', note: 'HigherDOSE: $1,295. Healthy Wave: $995–$2,495 by size (full-size Pro $2,495). At full size, HigherDOSE is meaningfully cheaper for consumer-tier multi-modality.' },
@@ -30,7 +30,7 @@ const healthyWaveVsHigherDose: HeadToHeadInput = {
     },
     {
       q: 'Is HigherDOSE PEMF "real"?',
-      a: 'Yes — it runs PEMF at 3–23 Hz across 4 preset levels (delta to beta bands), ranges documented in the literature. But it offers only presets at modest intensity — light by PEMF technical standards. The mat is real PEMF; it\'s just not deep PEMF.',
+      a: 'Yes — it runs PEMF at 3–23 Hz across 4 preset levels, ranges documented in the literature. But it offers only presets at modest intensity — light by PEMF technical standards. The mat is real PEMF; it\'s just not deep PEMF.',
     },
     {
       q: 'Which is better for recovery?',

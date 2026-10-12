@@ -47,7 +47,7 @@ const bestPemfDevices2026: Comparison = {
     {
       reviewSlug: 'earthpulse-sleep-on-command',
       award: 'Best sleep-focused',
-      takeaway: 'Under-mattress install with maker-marketed Schumann and delta sleep settings at $899 — no controlled trials show better sleep.',
+      takeaway: 'Under-mattress install with maker-marketed Schumann and other low-frequency sleep settings at $899 — no controlled trials show better sleep.',
     },
     {
       reviewSlug: 'resona-health-vibe',

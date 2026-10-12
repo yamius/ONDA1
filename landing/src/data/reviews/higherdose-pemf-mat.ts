@@ -14,7 +14,7 @@ const higherDosePemf: ToolReviewInput = {
     'HigherDOSE PEMF Mat is the consumer-brand reference — slick branding, multi-modality (PEMF + infrared + about 20 lb of amethyst and obsidian) at $1,295, with a 120-day money-back guarantee. Best consumer UX in the category. Field intensity is modest and waveform research backing is light vs Bemer or Healthy Wave; the trade is brand polish and consumer-friendliness for technical depth.',
   scores: [
     { criterionId: 'field-strength', score: 5.5, note: 'Modest PEMF intensity — designed for daily wellness, not high-output recovery. Lower than Healthy Wave on raw PEMF spec.' },
-    { criterionId: 'waveform-evidence', score: 5.5, note: 'PEMF across 4 frequency levels, 3–23 Hz (delta to beta bands) — documented ranges but no proprietary research moat. Marketing leans on the multi-modality stack, not PEMF specifics.' },
+    { criterionId: 'waveform-evidence', score: 5.5, note: 'PEMF across 4 frequency levels, 3–23 Hz — documented ranges but no proprietary research moat. Marketing leans on the multi-modality stack, not PEMF specifics.' },
     { criterionId: 'build', score: 7.5, note: 'Premium consumer build, 1-year warranty, 120-day money-back guarantee. HigherDOSE brand pedigree in consumer wellness.' },
     { criterionId: 'programmability', score: 5.5, note: 'Limited PEMF parameter exposure — 4 preset frequency levels (3–23 Hz), no custom waveforms. IR temperature adjustable. Consumer-friendly but shallow.' },
     { criterionId: 'form-factor', score: 8.0, note: 'Full-body mat with PEMF + infrared + amethyst and obsidian. Multi-modality stacking in a consumer-polished package.' },

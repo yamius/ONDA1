@@ -9,12 +9,12 @@ const earthpulse: ToolReviewInput = {
   description:
     'ONDA review of the EarthPulse Sleep on Command — under-mattress PEMF device marketed for sleep onset, deep sleep and recovery. Scored on field strength, waveform research, build and value.',
   verdict:
-    'Sleep-marketed PEMF — under-mattress install, Schumann and delta settings, mid-tier pricing. Well built, but no controlled trials show better sleep.',
+    'Sleep-marketed PEMF — under-mattress install, Schumann and other low-frequency settings, mid-tier pricing. Well built, but no controlled trials show better sleep.',
   summary:
-    'EarthPulse Sleep on Command is the sleep-niche PEMF device — sits under your mattress, runs Schumann-resonance (7.83 Hz) and delta-band frequency settings overnight. The maker markets it for sleep onset and deep sleep; we found no controlled human trials showing better sleep from these settings. Single applicator, single use case, accessible $899 pricing.',
+    'EarthPulse Sleep on Command is the sleep-niche PEMF device — sits under your mattress, runs Schumann-resonance (7.83 Hz) and other low-frequency settings (all under 15 Hz, according to the maker) overnight. The maker markets it for sleep onset and deep sleep; we found no controlled human trials showing better sleep from these settings. Single applicator, single use case, accessible $899 pricing.',
   scores: [
     { criterionId: 'field-strength', score: 7.0, note: 'Moderate field intensity tuned for overnight low-dose exposure. Designed for hours-of-use sleep protocols, not high-intensity recovery sessions.' },
-    { criterionId: 'waveform-evidence', score: 7.0, note: 'EarthPulse markets Schumann (7.83 Hz) and delta settings for sleep; Schumann settings earn no credit. We found no controlled human trials showing better sleep from these settings, and none of the device itself — 7.0, the score for PEMF devices without device-specific trials. Its “5 decades of peer-reviewed” research is general PEMF/TMS literature, and its claim that only clinical machines “can out-perform” it is not backed by a study.' },
+    { criterionId: 'waveform-evidence', score: 7.0, note: 'EarthPulse markets Schumann (7.83 Hz) and other low-frequency settings (under 15 Hz) for sleep; Schumann settings earn no credit. We found no controlled human trials showing better sleep from these settings, and none of the device itself — 7.0, the score for PEMF devices without device-specific trials. Its “5 decades of peer-reviewed” research is general PEMF/TMS literature, and its claim that only clinical machines “can out-perform” it is not backed by a study.' },
     { criterionId: 'build', score: 7.5, note: 'Solid build for under-mattress install. Multi-decade EarthPulse brand pedigree in sleep-focused PEMF. 1-year warranty.' },
     { criterionId: 'programmability', score: 7.0, note: 'Preset protocols the maker labels by sleep goal (sleep onset, deep sleep, recovery). Limited parameter customisation beyond presets.' },
     { criterionId: 'form-factor', score: 7.5, note: 'Under-mattress install — set once, runs overnight. Convenient for overnight use. Not suitable for active recovery sessions.' },
@@ -22,7 +22,7 @@ const earthpulse: ToolReviewInput = {
   ],
   pros: [
     'Under-mattress install — set once, runs overnight',
-    'Schumann 7.83 Hz and delta-band settings (sleep benefit not shown in trials)',
+    'Schumann 7.83 Hz and other low-frequency settings (sleep benefit not shown in trials)',
     'Accessible $899 pricing',
     'Multi-decade brand pedigree in sleep PEMF',
   ],
@@ -31,7 +31,7 @@ const earthpulse: ToolReviewInput = {
     'No multi-applicator coverage for daytime sessions',
     'Limited parameter customisation',
     'Smaller community / brand recognition than Bemer',
-    'No controlled trials show better sleep from Schumann or delta PEMF settings',
+    'No controlled trials show better sleep from Schumann or other low-frequency PEMF settings',
   ],
   bestFor: 'Best for users who want an overnight, under-mattress PEMF device rather than daytime sessions, and who accept that a sleep benefit is not shown in controlled trials.',
   testStatus: 'evidence-based',
@@ -42,7 +42,7 @@ const earthpulse: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-EarthPulse Sleep on Command is the best-known sleep-marketed PEMF device — under-mattress install, Schumann and delta-band overnight settings, accessible $899 pricing. Schumann resonances are real, very weak natural oscillations, but we found no controlled human trials showing that Schumann or delta PEMF settings improve sleep. See [PEMF therapy — the evidence](/science/evidence/pemf).
+EarthPulse Sleep on Command is the best-known sleep-marketed PEMF device — under-mattress install, Schumann and other low-frequency overnight settings, accessible $899 pricing. Schumann resonances are real, very weak natural oscillations, but we found no controlled human trials showing that Schumann or other low-frequency PEMF settings improve sleep. See [PEMF therapy — the evidence](/science/evidence/pemf).
 
 ## What are the downsides of EarthPulse Sleep on Command?
 
@@ -50,7 +50,7 @@ Single use case and no sleep trials. EarthPulse is built for overnight use — i
 
 ## Who should buy EarthPulse Sleep on Command?
 
-Choose EarthPulse if you want overnight PEMF — under-mattress install, Schumann/delta settings, set-once daily use — and accept that better sleep is not shown in trials. Ongoing insomnia needs a medical assessment. For general daytime recovery, OMI or Healthy Wave. For Bemer-style biorhythmic protocols, Bemer Classic Evo.
+Choose EarthPulse if you want overnight PEMF — under-mattress install, Schumann and other low-frequency settings, set-once daily use — and accept that better sleep is not shown in trials. Ongoing insomnia needs a medical assessment. For general daytime recovery, OMI or Healthy Wave. For Bemer-style biorhythmic protocols, Bemer Classic Evo.
 
 ---
 
@@ -67,7 +67,7 @@ Choose EarthPulse if you want overnight PEMF — under-mattress install, Schuman
   relatedSlugs: ['bemer-classic-evo', 'omi-full-body-mat', 'resona-health-vibe'],
   publishOn: '2026-06-22',
   faq: [
-    { q: "Is the EarthPulse Sleep on Command worth it?", a: "Only if you want overnight PEMF and accept unproven sleep claims. EarthPulse sits under your mattress and runs Schumann 7.83 Hz and delta-band settings overnight for $899; we found no controlled trials showing better sleep. It is sleep-only with a single applicator." },
+    { q: "Is the EarthPulse Sleep on Command worth it?", a: "Only if you want overnight PEMF and accept unproven sleep claims. EarthPulse sits under your mattress and runs Schumann 7.83 Hz and other low-frequency settings overnight for $899; we found no controlled trials showing better sleep. It is sleep-only with a single applicator." },
     { q: "How much does the EarthPulse Sleep on Command cost?", a: "The EarthPulse Sleep on Command costs $899 for the standalone under-mattress unit. That is accessible pricing within PEMF, compared with multi-applicator systems such as the Bemer Classic Evo at $5,490. It installs under the mattress and runs overnight." },
     { q: "What are the downsides of the EarthPulse Sleep on Command?", a: "EarthPulse has a narrow use case: sleep only, not active recovery. It offers no multi-applicator coverage for daytime sessions, limited parameter customisation, and smaller community and brand recognition than Bemer. Within sleep, though, it is executed well." },
     { q: "Who is the EarthPulse Sleep on Command best for?", a: "EarthPulse is best for people who want overnight PEMF under the mattress rather than daytime sessions. The maker markets it for sleep onset and deep sleep, but this is not shown in controlled trials, so it is not a treatment for insomnia." },
