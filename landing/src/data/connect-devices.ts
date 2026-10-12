@@ -48,7 +48,7 @@ const CAMERA =
 
 /** Digest 073 §4 (adapted): no cross-device / peer comparison for night-time HRV. */
 const CROSS_DEVICE_CAVEAT =
-  'HRV numbers cannot be compared directly between devices or apps. WHOOP calculates RMSSD during your deepest sleep, Oura averages five-minute samples across the night, Polar uses roughly the first four hours of sleep, and Apple Watch records SDNN during the day. A direct comparison of five wearables with an ECG reference over 536 nights found systematic differences between devices. So compare your numbers only with your own baseline on the same device: other people’s averages and age tables are not a personal standard.'
+  'HRV numbers cannot be compared directly between devices or apps. WHOOP calculates RMSSD during your deepest sleep, Oura averages five-minute samples across the night, Polar uses roughly the first four hours of sleep, and Apple Watch takes SDNN readings in the background at various times of day and night. A direct comparison of five wearables with an ECG reference over 536 nights found systematic differences between devices. So compare your numbers only with your own baseline on the same device: other people’s averages and age tables are not a personal standard.'
 
 const UNCONFIRMED_HEALTH = (name: string) =>
   `We have not confirmed that ${name} writes HRV to Apple Health, so we do not promise that your ${name} HRV will appear in ONDA. ${CAMERA}`

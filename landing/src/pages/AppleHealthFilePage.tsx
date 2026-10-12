@@ -203,7 +203,8 @@ export function AppleHealthFilePage() {
             </p>
             <p>
               The range is yours alone: no comparison with other people, and no medical meaning. Apple Watch takes HRV
-              readings (SDNN) in the background at various times of day and night; it is not a dedicated overnight measurement.
+              readings (SDNN) in the background at various times of day and night; it is not a dedicated overnight measurement
+              (<a href="https://support.apple.com/en-us/120277" rel="noopener noreferrer" className="underline hover:no-underline">Apple Support</a>).
               Sleep is the time Apple Health marks as asleep (core, deep, REM or the older “asleep”) for the night that
               ended on that day; overlapping records are counted once.
             </p>

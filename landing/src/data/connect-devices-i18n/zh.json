@@ -43,7 +43,7 @@
         "Oura 的 Readiness 评分综合了多项输入：HRV、静息心率、体温、睡眠、活动，以及在相关情况下的月经周期。这是 Oura 自己的算法，不是医学测量。",
         "在 Readiness 中，“HRV Balance”把你近期的 HRV 与较长期的水平进行比较：Oura 将其描述为 14 天加权平均值与你约两个月平均值的比较。",
         "Oura 的开发者文档以睡眠期间的平均值（average_hrv）提供 HRV。Oura 的帮助页面用“可能”来描述变化的原因——变化是值得关注的信号，而不是原因。",
-        "HRV 数值不能在设备或应用之间直接比较。WHOOP 在你最深的睡眠阶段计算 RMSSD，Oura 对整夜的五分钟样本取平均，Polar 大约使用睡眠的前四个小时，Apple Watch 则在白天记录 SDNN。一项在 536 个夜晚中将五款可穿戴设备与 ECG 参考直接比较的研究发现，设备之间存在系统性差异。所以，只把你的数值与同一设备上你自己的基线比较：别人的平均值和年龄对照表都不是个人标准。"
+        "HRV 数值不能在设备或应用之间直接比较。WHOOP 在你最深的睡眠阶段计算 RMSSD，Oura 对整夜的五分钟样本取平均，Polar 大约使用睡眠的前四个小时，Apple Watch 则在白天和夜间的不同时间于后台读取 SDNN。一项在 536 个夜晚中将五款可穿戴设备与 ECG 参考直接比较的研究发现，设备之间存在系统性差异。所以，只把你的数值与同一设备上你自己的基线比较：别人的平均值和年龄对照表都不是个人标准。"
       ],
       "connect": "Oura 有公开 API。我们计划直接连接，但目前尚不可用，也无法给出日期。Oura 表示，当前戒指的数据只有在拥有有效 Oura Membership 的情况下才能通过其 API 获取。",
       "appleHealth": "根据 Oura 自己的帮助页面，HRV 不在 Oura 导出到 Apple Health 的数据之中，所以你的 Oura HRV 不会通过这一途径到达 ONDA。如果你的设备不是 Apple Watch，ONDA 仍可以用 iPhone 摄像头测量你的脉搏，并估算呼吸频率。摄像头提供的是脉搏，不是 HRV。",
@@ -78,7 +78,7 @@
         "Recovery 是一个 0 到 100% 的评分，以三种颜色显示。WHOOP 表示它使用 HRV、静息心率、睡眠和呼吸频率，并与你自己的基线比较。",
         "WHOOP 的开发者文档将 HRV 值命名为 hrv_rmssd_milli：它是 RMSSD，单位为毫秒，附属于每一次 Recovery。",
         "Recovery 是 WHOOP 自己的算法。这类综合评分背后的公式厂商并未公布，所以请把百分比当作概要，并查看其下的 HRV 和静息心率。",
-        "HRV 数值不能在设备或应用之间直接比较。WHOOP 在你最深的睡眠阶段计算 RMSSD，Oura 对整夜的五分钟样本取平均，Polar 大约使用睡眠的前四个小时，Apple Watch 则在白天记录 SDNN。一项在 536 个夜晚中将五款可穿戴设备与 ECG 参考直接比较的研究发现，设备之间存在系统性差异。所以，只把你的数值与同一设备上你自己的基线比较：别人的平均值和年龄对照表都不是个人标准。"
+        "HRV 数值不能在设备或应用之间直接比较。WHOOP 在你最深的睡眠阶段计算 RMSSD，Oura 对整夜的五分钟样本取平均，Polar 大约使用睡眠的前四个小时，Apple Watch 则在白天和夜间的不同时间于后台读取 SDNN。一项在 536 个夜晚中将五款可穿戴设备与 ECG 参考直接比较的研究发现，设备之间存在系统性差异。所以，只把你的数值与同一设备上你自己的基线比较：别人的平均值和年龄对照表都不是个人标准。"
       ],
       "connect": "WHOOP 有公开的开发者 API。我们计划直接连接，但目前尚不可用。WHOOP 分阶段并经人工审核批准应用，所以我们无法给出日期。",
       "appleHealth": "我们尚未确认 WHOOP 会把 HRV 写入 Apple Health，所以我们不承诺你的 WHOOP HRV 会出现在 ONDA 中。如果你的设备不是 Apple Watch，ONDA 仍可以用 iPhone 摄像头测量你的脉搏，并估算呼吸频率。摄像头提供的是脉搏，不是 HRV。",
@@ -114,7 +114,7 @@
         "Nightly Recharge 包含 ANS charge，刻度从 −10 到 +10，其中 0 是你过去 28 天的平常水平。",
         "Polar 大约在睡眠的前四个小时内测量，然后给出从“very poor”到“very good”的总体状态。",
         "Nightly Recharge 将当晚与你过去 28 天的平常水平进行比较。根据 Polar 帮助页面，HRV 以 RMSSD 计量，测量时段约为入睡后的前四个小时。Polar 开发者 API 中的夜间 HRV 字段并未明确标注为 RMSSD。",
-        "HRV 数值不能在设备或应用之间直接比较。WHOOP 在你最深的睡眠阶段计算 RMSSD，Oura 对整夜的五分钟样本取平均，Polar 大约使用睡眠的前四个小时，Apple Watch 则在白天记录 SDNN。一项在 536 个夜晚中将五款可穿戴设备与 ECG 参考直接比较的研究发现，设备之间存在系统性差异。所以，只把你的数值与同一设备上你自己的基线比较：别人的平均值和年龄对照表都不是个人标准。"
+        "HRV 数值不能在设备或应用之间直接比较。WHOOP 在你最深的睡眠阶段计算 RMSSD，Oura 对整夜的五分钟样本取平均，Polar 大约使用睡眠的前四个小时，Apple Watch 则在白天和夜间的不同时间于后台读取 SDNN。一项在 536 个夜晚中将五款可穿戴设备与 ECG 参考直接比较的研究发现，设备之间存在系统性差异。所以，只把你的数值与同一设备上你自己的基线比较：别人的平均值和年龄对照表都不是个人标准。"
       ],
       "connect": "Polar 有公开 API（AccessLink）。我们计划直接连接，但目前尚不可用，也无法给出日期。",
       "appleHealth": "Polar 帮助页面列出了 Polar Flow 同步到 Apple Health 的内容：活动能量、仅训练期间的心率、静息能量、睡眠、步数、体重和训练。HRV 不在该列表中，因此我们不预期 Polar 的 HRV 会通过这一途径进入 ONDA。如果你的设备不是 Apple Watch，ONDA 仍可用 iPhone 摄像头测量你的脉搏，并估算呼吸频率。摄像头提供的是脉搏，而不是 HRV。",
@@ -337,7 +337,7 @@
         }
       ],
       "det": {
-        "hrvSummary": "Apple Health 以 SDNN 存储 HRV，由 Apple Watch 在一天中你静止时自动采样——不只是在夜间。较新的型号还会显示 Recovery HRV。",
+        "hrvSummary": "Apple Health 以 SDNN 存储 HRV。Apple Watch 会在白天和夜间的不同时间于后台读取 HRV（SDNN）；这并不是专门的夜间测量。较新的型号还会显示 Recovery HRV。",
         "composite": "Apple Watch 没有基于 HRV 的单一准备度类评分，所以没有需要公开的权重。",
         "independent": [
           "在静息状态下与实验室 ECG 对照，Apple Watch Series 6 在用于计算 HRV 的心跳间期上显示出中等一致性。较新型号上的 Recovery HRV 尚未经过独立检验。",
