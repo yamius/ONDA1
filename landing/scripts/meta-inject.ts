@@ -1144,7 +1144,6 @@ function buildPersonJsonLd(): string {
       {
         '@type': 'Occupation',
         name: 'Gestalt therapist',
-        occupationalCategory: 'Psychologist',
       },
     ],
   })
