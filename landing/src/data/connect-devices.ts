@@ -37,7 +37,7 @@ export interface ConnectDevice {
 
 export const CONNECT_STATUS_LABEL: Record<ConnectStatus, string> = {
   app: 'Works with the ONDA app now',
-  planned: 'Direct connection planned',
+  planned: 'Possible in the future',
   reviewing: 'Under review',
   closed: 'Developer access closed',
   'no-api': 'No public web API',
@@ -78,7 +78,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     ],
     status: 'planned',
     connect:
-      'Oura has a public API. We plan a direct connection, but it is not available yet and we cannot give a date. Oura says data from current rings is only available through its API with an active Oura Membership.',
+      'Oura has a public API. A direct connection may be possible in the future; it is not available now. Oura says data from current rings is only available through its API with an active Oura Membership.',
     appleHealth: `According to Oura’s own help page, HRV is not among the data Oura exports to Apple Health, so your Oura HRV will not reach ONDA that way. ${CAMERA}`,
     faq: [
       {
@@ -114,7 +114,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     ],
     status: 'planned',
     connect:
-      'WHOOP has a public developer API. We plan a direct connection, but it is not available yet. WHOOP approves apps in stages with a manual review, so we cannot give a date.',
+      'WHOOP has a public developer API. A direct connection may be possible in the future; it is not available now. WHOOP approves apps in stages with a manual review.',
     appleHealth: UNCONFIRMED_HEALTH('WHOOP'),
     faq: [
       {
@@ -150,7 +150,7 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
     ],
     status: 'planned',
     connect:
-      'Polar has a public API (AccessLink). We plan a direct connection, but it is not available yet and we cannot give a date.',
+      'Polar has a public API (AccessLink). A direct connection may be possible in the future; it is not available now.',
     appleHealth: `Polar’s help page lists what Polar Flow syncs to Apple Health: active energy, heart rate during workouts only, resting energy, sleep, steps, weight and workouts. HRV is not on that list, so we do not expect Polar HRV to reach ONDA that way. ${CAMERA}`,
     faq: [
       {

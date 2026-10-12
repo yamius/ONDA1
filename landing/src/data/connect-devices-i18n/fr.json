@@ -27,7 +27,7 @@
     "otherDevices": "Autres appareils",
     "status": {
       "app": "Fonctionne dès maintenant avec l’app ONDA",
-      "planned": "Connexion directe prévue",
+      "planned": "Possible à l’avenir",
       "reviewing": "En cours d’examen",
       "closed": "Accès développeurs fermé",
       "no-api": "Pas d’API web publique"
@@ -45,7 +45,7 @@
         "La documentation développeurs d’Oura fournit la HRV sous forme de moyenne sur votre sommeil (average_hrv). Les pages d’aide d’Oura décrivent les raisons possibles d’un changement avec « peut » : un changement est un signal à examiner, pas une cause.",
         "Les valeurs de HRV ne se comparent pas directement d’un appareil ou d’une app à l’autre. WHOOP calcule le RMSSD pendant votre sommeil le plus profond, Oura fait la moyenne d’échantillons de cinq minutes sur la nuit, Polar utilise environ les quatre premières heures de sommeil, et l’Apple Watch prend des mesures de SDNN en arrière-plan à différents moments du jour et de la nuit. Une comparaison directe de cinq objets connectés avec une référence ECG sur 536 nuits a trouvé des écarts systématiques entre appareils. Comparez donc vos chiffres uniquement avec votre propre référence sur le même appareil : les moyennes d’autres personnes et les tableaux par âge ne sont pas une norme personnelle."
       ],
-      "connect": "Oura dispose d’une API publique. Nous prévoyons une connexion directe, mais elle n’est pas encore disponible et nous ne pouvons pas donner de date. Selon Oura, les données des bagues actuelles ne sont accessibles via son API qu’avec un abonnement Oura Membership actif.",
+      "connect": "Oura dispose d’une API publique. Une connexion directe sera peut-être possible à l’avenir ; elle n’est pas disponible aujourd’hui. Selon Oura, les données des bagues actuelles ne sont accessibles via son API qu’avec un abonnement Oura Membership actif.",
       "appleHealth": "D’après la page d’aide d’Oura, la HRV ne fait pas partie des données qu’Oura exporte vers Apple Health : votre HRV Oura n’arrivera donc pas dans ONDA par ce biais. Si votre appareil n’est pas une Apple Watch, ONDA peut tout de même mesurer votre pouls avec la caméra de l’iPhone, avec une estimation de la fréquence respiratoire. La caméra donne le pouls, pas la HRV.",
       "faq": [
         {
@@ -80,7 +80,7 @@
         "Recovery est l’algorithme propre à WHOOP. Les fabricants ne publient pas la formule de ce type de score composite : considérez le pourcentage comme un résumé et regardez la HRV et la fréquence cardiaque au repos qui se trouvent derrière.",
         "Les valeurs de HRV ne se comparent pas directement d’un appareil ou d’une app à l’autre. WHOOP calcule le RMSSD pendant votre sommeil le plus profond, Oura fait la moyenne d’échantillons de cinq minutes sur la nuit, Polar utilise environ les quatre premières heures de sommeil, et l’Apple Watch prend des mesures de SDNN en arrière-plan à différents moments du jour et de la nuit. Une comparaison directe de cinq objets connectés avec une référence ECG sur 536 nuits a trouvé des écarts systématiques entre appareils. Comparez donc vos chiffres uniquement avec votre propre référence sur le même appareil : les moyennes d’autres personnes et les tableaux par âge ne sont pas une norme personnelle."
       ],
-      "connect": "WHOOP dispose d’une API publique pour les développeurs. Nous prévoyons une connexion directe, mais elle n’est pas encore disponible. WHOOP approuve les apps par étapes, avec un examen manuel : nous ne pouvons donc pas donner de date.",
+      "connect": "WHOOP dispose d’une API publique pour les développeurs. Une connexion directe sera peut-être possible à l’avenir ; elle n’est pas disponible aujourd’hui. WHOOP approuve les apps par étapes, avec un examen manuel.",
       "appleHealth": "Nous n’avons pas confirmé que WHOOP écrit la HRV dans Apple Health : nous ne promettons donc pas que votre HRV WHOOP apparaîtra dans ONDA. Si votre appareil n’est pas une Apple Watch, ONDA peut tout de même mesurer votre pouls avec la caméra de l’iPhone, avec une estimation de la fréquence respiratoire. La caméra donne le pouls, pas la HRV.",
       "faq": [
         {
@@ -116,7 +116,7 @@
         "Nightly Recharge compare la nuit à vos niveaux habituels des 28 derniers jours. D’après les pages d’aide de Polar, la HRV est mesurée en RMSSD sur environ les quatre premières heures de sommeil. Le champ de l’API développeurs de Polar pour la HRV nocturne n’est pas explicitement nommé RMSSD.",
         "Les valeurs de HRV ne se comparent pas directement d’un appareil ou d’une app à l’autre. WHOOP calcule le RMSSD pendant votre sommeil le plus profond, Oura fait la moyenne d’échantillons de cinq minutes sur la nuit, Polar utilise environ les quatre premières heures de sommeil, et l’Apple Watch prend des mesures de SDNN en arrière-plan à différents moments du jour et de la nuit. Une comparaison directe de cinq objets connectés avec une référence ECG sur 536 nuits a trouvé des écarts systématiques entre appareils. Comparez donc vos chiffres uniquement avec votre propre référence sur le même appareil : les moyennes d’autres personnes et les tableaux par âge ne sont pas une norme personnelle."
       ],
-      "connect": "Polar dispose d’une API publique (AccessLink). Nous prévoyons une connexion directe, mais elle n’est pas encore disponible et nous ne pouvons pas donner de date.",
+      "connect": "Polar dispose d’une API publique (AccessLink). Une connexion directe sera peut-être possible à l’avenir ; elle n’est pas disponible aujourd’hui.",
       "appleHealth": "La page d’aide de Polar liste ce que Polar Flow synchronise avec Apple Health : énergie active, fréquence cardiaque pendant les entraînements uniquement, énergie au repos, sommeil, pas, poids et entraînements. La HRV n’est pas dans cette liste : nous ne nous attendons donc pas à ce que la HRV Polar arrive dans ONDA par ce biais. Si votre appareil n’est pas une Apple Watch, ONDA peut tout de même mesurer votre pouls avec la caméra de l’iPhone, avec une estimation de la fréquence respiratoire. La caméra donne le pouls, pas la HRV.",
       "faq": [
         {

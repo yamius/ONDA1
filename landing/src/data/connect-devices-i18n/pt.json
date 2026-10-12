@@ -27,7 +27,7 @@
     "otherDevices": "Outros dispositivos",
     "status": {
       "app": "Já funciona com o app ONDA",
-      "planned": "Conexão direta planejada",
+      "planned": "Possível no futuro",
       "reviewing": "Em análise",
       "closed": "Acesso para desenvolvedores fechado",
       "no-api": "Sem API web pública"
@@ -45,7 +45,7 @@
         "A documentação para desenvolvedores do Oura expõe a HRV como uma média durante o sono (average_hrv). As páginas de ajuda do Oura descrevem possíveis motivos de uma mudança com “pode” — uma mudança é um sinal para observar, não uma causa.",
         "Os valores de HRV não podem ser comparados diretamente entre dispositivos ou apps. O WHOOP calcula o RMSSD durante o seu sono mais profundo, o Oura faz a média de amostras de cinco minutos ao longo da noite, o Polar usa aproximadamente as primeiras quatro horas de sono e o Apple Watch faz leituras de SDNN em segundo plano em diferentes momentos do dia e da noite. Uma comparação direta de cinco wearables com uma referência de ECG ao longo de 536 noites encontrou diferenças sistemáticas entre os dispositivos. Por isso, compare os seus números apenas com a sua própria linha de base no mesmo dispositivo: médias de outras pessoas e tabelas por idade não são um padrão pessoal."
       ],
-      "connect": "O Oura tem uma API pública. Planejamos uma conexão direta, mas ela ainda não está disponível e não podemos dar uma data. O Oura informa que os dados dos anéis atuais só ficam disponíveis pela API com uma Oura Membership ativa.",
+      "connect": "O Oura tem uma API pública. Uma conexão direta pode ser possível no futuro; agora ela não está disponível. O Oura informa que os dados dos anéis atuais só ficam disponíveis pela API com uma Oura Membership ativa.",
       "appleHealth": "Segundo a própria página de ajuda do Oura, a HRV não está entre os dados que o Oura exporta para o Apple Health, então a sua HRV do Oura não chegará ao ONDA por esse caminho. Se o seu dispositivo não é um Apple Watch, o ONDA ainda pode medir o seu pulso com a câmera do iPhone, junto com uma estimativa da frequência respiratória. A câmera fornece o pulso, não a HRV.",
       "faq": [
         {
@@ -80,7 +80,7 @@
         "O Recovery é o algoritmo próprio do WHOOP. A fórmula por trás de pontuações compostas como essa não é publicada pelos fabricantes, então trate o percentual como um resumo e observe a HRV e a frequência cardíaca de repouso por trás dele.",
         "Os valores de HRV não podem ser comparados diretamente entre dispositivos ou apps. O WHOOP calcula o RMSSD durante o seu sono mais profundo, o Oura faz a média de amostras de cinco minutos ao longo da noite, o Polar usa aproximadamente as primeiras quatro horas de sono e o Apple Watch faz leituras de SDNN em segundo plano em diferentes momentos do dia e da noite. Uma comparação direta de cinco wearables com uma referência de ECG ao longo de 536 noites encontrou diferenças sistemáticas entre os dispositivos. Por isso, compare os seus números apenas com a sua própria linha de base no mesmo dispositivo: médias de outras pessoas e tabelas por idade não são um padrão pessoal."
       ],
-      "connect": "O WHOOP tem uma API pública para desenvolvedores. Planejamos uma conexão direta, mas ela ainda não está disponível. O WHOOP aprova apps em etapas, com revisão manual, então não podemos dar uma data.",
+      "connect": "O WHOOP tem uma API pública para desenvolvedores. Uma conexão direta pode ser possível no futuro; agora ela não está disponível. O WHOOP aprova apps em etapas, com revisão manual.",
       "appleHealth": "Não confirmamos que o WHOOP grava a HRV no Apple Health, então não prometemos que a sua HRV do WHOOP aparecerá no ONDA. Se o seu dispositivo não é um Apple Watch, o ONDA ainda pode medir o seu pulso com a câmera do iPhone, junto com uma estimativa da frequência respiratória. A câmera fornece o pulso, não a HRV.",
       "faq": [
         {
@@ -116,7 +116,7 @@
         "O Nightly Recharge compara a noite com os seus níveis habituais dos últimos 28 dias. Segundo a ajuda do Polar, a HRV é medida como RMSSD durante aproximadamente as primeiras quatro horas de sono. O campo da API para desenvolvedores do Polar para a HRV noturna não é explicitamente chamado de RMSSD.",
         "Os valores de HRV não podem ser comparados diretamente entre dispositivos ou apps. O WHOOP calcula o RMSSD durante o seu sono mais profundo, o Oura faz a média de amostras de cinco minutos ao longo da noite, o Polar usa aproximadamente as primeiras quatro horas de sono e o Apple Watch faz leituras de SDNN em segundo plano em diferentes momentos do dia e da noite. Uma comparação direta de cinco wearables com uma referência de ECG ao longo de 536 noites encontrou diferenças sistemáticas entre os dispositivos. Por isso, compare os seus números apenas com a sua própria linha de base no mesmo dispositivo: médias de outras pessoas e tabelas por idade não são um padrão pessoal."
       ],
-      "connect": "O Polar tem uma API pública (AccessLink). Planejamos uma conexão direta, mas ela ainda não está disponível e não podemos dar uma data.",
+      "connect": "O Polar tem uma API pública (AccessLink). Uma conexão direta pode ser possível no futuro; agora ela não está disponível.",
       "appleHealth": "A página de ajuda do Polar lista o que o Polar Flow sincroniza com o Apple Health: energia ativa, frequência cardíaca apenas durante os treinos, energia em repouso, sono, passos, peso e treinos. A HRV não está nessa lista, então não esperamos que a HRV do Polar chegue ao ONDA por esse caminho. Se o seu dispositivo não é um Apple Watch, o ONDA ainda pode medir o seu pulso com a câmera do iPhone, junto com uma estimativa da frequência respiratória. A câmera fornece o pulso, não a HRV.",
       "faq": [
         {

@@ -27,7 +27,7 @@
     "otherDevices": "其他设备",
     "status": {
       "app": "现已支持 ONDA 应用",
-      "planned": "计划直接连接",
+      "planned": "未来可能支持",
       "reviewing": "评估中",
       "closed": "开发者接入已关闭",
       "no-api": "无公开 Web API"
@@ -45,7 +45,7 @@
         "Oura 的开发者文档以睡眠期间的平均值（average_hrv）提供 HRV。Oura 的帮助页面用“可能”来描述变化的原因——变化是值得关注的信号，而不是原因。",
         "HRV 数值不能在设备或应用之间直接比较。WHOOP 在你最深的睡眠阶段计算 RMSSD，Oura 对整夜的五分钟样本取平均，Polar 大约使用睡眠的前四个小时，Apple Watch 则在白天和夜间的不同时间于后台读取 SDNN。一项在 536 个夜晚中将五款可穿戴设备与 ECG 参考直接比较的研究发现，设备之间存在系统性差异。所以，只把你的数值与同一设备上你自己的基线比较：别人的平均值和年龄对照表都不是个人标准。"
       ],
-      "connect": "Oura 有公开 API。我们计划直接连接，但目前尚不可用，也无法给出日期。Oura 表示，当前戒指的数据只有在拥有有效 Oura Membership 的情况下才能通过其 API 获取。",
+      "connect": "Oura 有公开 API。未来可能支持直接连接；目前不可用。Oura 表示，当前戒指的数据只有在拥有有效 Oura Membership 的情况下才能通过其 API 获取。",
       "appleHealth": "根据 Oura 自己的帮助页面，HRV 不在 Oura 导出到 Apple Health 的数据之中，所以你的 Oura HRV 不会通过这一途径到达 ONDA。如果你的设备不是 Apple Watch，ONDA 仍可以用 iPhone 摄像头测量你的脉搏，并估算呼吸频率。摄像头提供的是脉搏，不是 HRV。",
       "faq": [
         {
@@ -80,7 +80,7 @@
         "Recovery 是 WHOOP 自己的算法。这类综合评分背后的公式厂商并未公布，所以请把百分比当作概要，并查看其下的 HRV 和静息心率。",
         "HRV 数值不能在设备或应用之间直接比较。WHOOP 在你最深的睡眠阶段计算 RMSSD，Oura 对整夜的五分钟样本取平均，Polar 大约使用睡眠的前四个小时，Apple Watch 则在白天和夜间的不同时间于后台读取 SDNN。一项在 536 个夜晚中将五款可穿戴设备与 ECG 参考直接比较的研究发现，设备之间存在系统性差异。所以，只把你的数值与同一设备上你自己的基线比较：别人的平均值和年龄对照表都不是个人标准。"
       ],
-      "connect": "WHOOP 有公开的开发者 API。我们计划直接连接，但目前尚不可用。WHOOP 分阶段并经人工审核批准应用，所以我们无法给出日期。",
+      "connect": "WHOOP 有公开的开发者 API。未来可能支持直接连接；目前不可用。WHOOP 分阶段并经人工审核批准应用。",
       "appleHealth": "我们尚未确认 WHOOP 会把 HRV 写入 Apple Health，所以我们不承诺你的 WHOOP HRV 会出现在 ONDA 中。如果你的设备不是 Apple Watch，ONDA 仍可以用 iPhone 摄像头测量你的脉搏，并估算呼吸频率。摄像头提供的是脉搏，不是 HRV。",
       "faq": [
         {
@@ -116,7 +116,7 @@
         "Nightly Recharge 将当晚与你过去 28 天的平常水平进行比较。根据 Polar 帮助页面，HRV 以 RMSSD 计量，测量时段约为入睡后的前四个小时。Polar 开发者 API 中的夜间 HRV 字段并未明确标注为 RMSSD。",
         "HRV 数值不能在设备或应用之间直接比较。WHOOP 在你最深的睡眠阶段计算 RMSSD，Oura 对整夜的五分钟样本取平均，Polar 大约使用睡眠的前四个小时，Apple Watch 则在白天和夜间的不同时间于后台读取 SDNN。一项在 536 个夜晚中将五款可穿戴设备与 ECG 参考直接比较的研究发现，设备之间存在系统性差异。所以，只把你的数值与同一设备上你自己的基线比较：别人的平均值和年龄对照表都不是个人标准。"
       ],
-      "connect": "Polar 有公开 API（AccessLink）。我们计划直接连接，但目前尚不可用，也无法给出日期。",
+      "connect": "Polar 有公开 API（AccessLink）。未来可能支持直接连接；目前不可用。",
       "appleHealth": "Polar 帮助页面列出了 Polar Flow 同步到 Apple Health 的内容：活动能量、仅训练期间的心率、静息能量、睡眠、步数、体重和训练。HRV 不在该列表中，因此我们不预期 Polar 的 HRV 会通过这一途径进入 ONDA。如果你的设备不是 Apple Watch，ONDA 仍可用 iPhone 摄像头测量你的脉搏，并估算呼吸频率。摄像头提供的是脉搏，而不是 HRV。",
       "faq": [
         {
