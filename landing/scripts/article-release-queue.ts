@@ -579,6 +579,11 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'h2h', slug: 'plunge-vs-ice-barrel-500' },
   { collection: 'reviews', slug: 'higherdose-red-light-face-mask' },
   { collection: 'h2h', slug: 'bemer-classic-evo-vs-healthy-wave-multi-wave' },
+  { collection: 'h2h', slug: 'oura-ring-4-vs-whoop-5-0' },
+  { collection: 'h2h', slug: 'apple-watch-series-12-vs-fitbit-charge-6' },
+  { collection: 'h2h', slug: 'headspace-vs-insight-timer' },
+  { collection: 'h2h', slug: 'eight-sleep-pod-5-vs-bedjet-3' },
+  { collection: 'reviews', slug: 'luna-ring' },
   // WAVE_D_NEXT
   ],
 ]
