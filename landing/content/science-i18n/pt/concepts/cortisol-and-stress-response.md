@@ -1,5 +1,5 @@
 ---
-sourceHash: "a32508d8cf25"
+sourceHash: "c1cebe81c567"
 title: "Cortisol e resposta ao estresse: o que ele faz e o que é mito"
 metaTitle: "Cortisol e a resposta ao estresse"
 metaDescription: "O que o cortisol faz, por que o seu ritmo diário importa, como é medido, o que o altera e por que a fadiga adrenal e o detox de cortisol são mitos."

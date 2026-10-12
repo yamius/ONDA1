@@ -1,5 +1,5 @@
 ---
-sourceHash: "aefe18eb9fcc"
+sourceHash: "45dd01994151"
 title: "El barorreflejo: cómo el cuerpo mantiene estable la presión arterial"
 metaTitle: "El barorreflejo: la presión arterial, latido a latido"
 metaDescription: "Cómo el barorreflejo estabiliza la presión arterial latido a latido, qué significa su sensibilidad y cómo influyen la respiración lenta y el entrenamiento."

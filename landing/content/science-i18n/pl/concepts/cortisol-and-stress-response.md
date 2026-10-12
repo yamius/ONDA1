@@ -1,5 +1,5 @@
 ---
-sourceHash: "a32508d8cf25"
+sourceHash: "c1cebe81c567"
 title: "Kortyzol i reakcja stresowa: co robi, a co jest mitem"
 metaTitle: "Kortyzol i reakcja stresowa"
 metaDescription: "Co robi kortyzol, dlaczego liczy się jego rytm dobowy, jak się go mierzy, co go zmienia i dlaczego zmęczenie nadnerczy i detoks kortyzolu to mity."

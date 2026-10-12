@@ -1,5 +1,5 @@
 ---
-sourceHash: "ea519c2b5915"
+sourceHash: "0d41de50d500"
 title: "Le système nerveux autonome : sympathique et parasympathique"
 metaTitle: "Système nerveux autonome : pas un interrupteur"
 metaDescription: "Ce que fait le système nerveux autonome, comment ses deux branches pilotent le cœur, et pourquoi aucun chiffre, ratio LF/HF compris, ne mesure son état."

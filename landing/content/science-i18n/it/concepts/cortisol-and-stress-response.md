@@ -1,5 +1,5 @@
 ---
-sourceHash: "a32508d8cf25"
+sourceHash: "c1cebe81c567"
 title: "Cortisolo e risposta allo stress: che cosa fa e che cosa è mito"
 metaTitle: "Cortisolo e risposta allo stress"
 metaDescription: "Cosa fa il cortisolo, perché conta il suo ritmo giornaliero, come si misura, che cosa lo modifica e perché fatica surrenale e detox del cortisolo sono miti."

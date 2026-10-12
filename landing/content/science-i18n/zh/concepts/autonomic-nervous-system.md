@@ -1,5 +1,5 @@
 ---
-sourceHash: "ea519c2b5915"
+sourceHash: "0d41de50d500"
 title: "自主神经系统：交感神经与副交感神经"
 metaTitle: "自主神经系统：不是一个开关"
 metaDescription: "自主神经系统做什么、它的两个分支如何调控心脏，以及为什么没有任何单个数值（包括 LF/HF 比值）能衡量它的状态。"

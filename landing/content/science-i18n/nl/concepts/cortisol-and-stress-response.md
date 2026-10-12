@@ -1,5 +1,5 @@
 ---
-sourceHash: "a32508d8cf25"
+sourceHash: "c1cebe81c567"
 title: "Cortisol en de stressreactie: wat het doet en wat een mythe is"
 metaTitle: "Cortisol en de stressreactie"
 metaDescription: "Wat cortisol doet, waarom het dagritme ertoe doet, hoe het gemeten wordt, wat het verandert en waarom bijnieruitputting en cortisol-detox mythes zijn."

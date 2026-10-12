@@ -1,5 +1,5 @@
 ---
-sourceHash: "ea519c2b5915"
+sourceHash: "0d41de50d500"
 title: "El sistema nervioso autónomo: simpático y parasimpático"
 metaTitle: "Sistema nervioso autónomo: no es un interruptor"
 metaDescription: "Qué hace el sistema nervioso autónomo, cómo sus dos ramas gobiernan el corazón y por qué ningún número, tampoco el cociente LF/HF, mide su estado."

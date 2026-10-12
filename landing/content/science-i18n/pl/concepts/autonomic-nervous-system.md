@@ -1,5 +1,5 @@
 ---
-sourceHash: "ea519c2b5915"
+sourceHash: "0d41de50d500"
 title: "Autonomiczny układ nerwowy: część współczulna i przywspółczulna"
 metaTitle: "Autonomiczny układ nerwowy: to nie przełącznik"
 metaDescription: "Czym zajmuje się autonomiczny układ nerwowy, jak jego dwie gałęzie sterują sercem i dlaczego żadna liczba, także LF/HF, nie mierzy jego stanu."

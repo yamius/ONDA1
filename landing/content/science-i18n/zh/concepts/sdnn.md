@@ -1,5 +1,5 @@
 ---
-sourceHash: "4fe720fdb25b"
+sourceHash: "2b4d79850bed"
 title: "SDNN：这项 HRV 指标测量什么，又不测量什么"
 metaTitle: "SDNN：定义、含义与 Apple 的选择"
 metaDescription: "SDNN 是 Apple Health 存储的 HRV 指标。本文介绍它测量什么、与 RMSSD 有何不同，以及为什么这两种数值无法直接相互比较。"

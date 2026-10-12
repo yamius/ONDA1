@@ -1,5 +1,5 @@
 ---
-sourceHash: "e96cdc17858e"
+sourceHash: "fd60184b64ca"
 title: "Hartslagvariabiliteit: wat het is, wat het weerspiegelt en wat het niet is"
 metaTitle: "Hartslagvariabiliteit: definitie en bewijs"
 metaDescription: "Hartslagvariabiliteit is de natuurlijke variatie van slag tot slag in het hartritme. Wat haar vormt, wat ze weerspiegelt en wat ze je niet vertelt."

@@ -156,7 +156,7 @@ evidenceMap:
     limitation: "A methodological caution from guidelines and reviews; SDNN values do not translate into autonomic readouts."
   - claim: "In clinical cardiology, SDNN computed from all-day ECG recordings is a risk-stratification measure in patient populations."
     sources: [S1, S2]
-    class: established
+    class: guideline
     claimType: other
     quote: 'The SDNN is the "gold standard" for medical stratification of cardiac risk when recorded over a 24 h period.'
     limitation: "Clinical populations with continuous hospital ECG; does not transfer to consumer watch values."

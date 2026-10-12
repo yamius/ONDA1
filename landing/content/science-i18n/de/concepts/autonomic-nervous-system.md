@@ -1,5 +1,5 @@
 ---
-sourceHash: "ea519c2b5915"
+sourceHash: "0d41de50d500"
 title: "Das autonome Nervensystem: Sympathikus und Parasympathikus"
 metaTitle: "Autonomes Nervensystem: kein Ein-Aus-Schalter"
 metaDescription: "Was das autonome Nervensystem tut, wie seine beiden Äste das Herz steuern und warum keine einzelne Zahl – auch nicht LF/HF – seinen Zustand misst."

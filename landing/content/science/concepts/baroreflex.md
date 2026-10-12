@@ -133,7 +133,7 @@ evidenceMap:
     limitation: "Review; other local and hormonal factors also regulate pressure."
   - claim: "The arterial baroreflex is important for beat-to-beat pressure control, and its sensitivity has predictive value in cardiovascular conditions."
     sources: [S3]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "The arterial baroreflex is important for beat-to-beat arterial pressure control and its sensitivity has predictive value for clinical outcomes in a myriad of cardiovascular conditions."
     limitation: "Predictive value shown in patient groups, not for individual healthy people."

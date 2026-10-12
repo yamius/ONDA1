@@ -1,5 +1,5 @@
 ---
-sourceHash: "a32508d8cf25"
+sourceHash: "c1cebe81c567"
 title: "皮质醇与应激反应：它的作用与常见误区"
 metaTitle: "皮质醇与应激反应"
 metaDescription: "皮质醇有什么作用、为什么它的昼夜节律很重要、如何测量、哪些因素会改变它，以及为什么“肾上腺疲劳”和皮质醇排毒都是误区。"

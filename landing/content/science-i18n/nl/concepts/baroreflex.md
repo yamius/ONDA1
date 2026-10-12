@@ -1,5 +1,5 @@
 ---
-sourceHash: "aefe18eb9fcc"
+sourceHash: "45dd01994151"
 title: "De baroreflex: hoe je lichaam de bloeddruk stabiel houdt"
 metaTitle: "De baroreflex: bloeddruk, slag na slag"
 metaDescription: "Hoe de baroreflex de bloeddruk slag na slag stabiel houdt, wat baroreflexgevoeligheid betekent en wat langzaam ademen en training ermee doen."

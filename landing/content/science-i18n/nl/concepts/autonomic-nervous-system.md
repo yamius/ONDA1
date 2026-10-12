@@ -1,5 +1,5 @@
 ---
-sourceHash: "ea519c2b5915"
+sourceHash: "0d41de50d500"
 title: "Het autonome zenuwstelsel: sympathicus en parasympathicus"
 metaTitle: "Autonoom zenuwstelsel: geen aan-uitschakelaar"
 metaDescription: "Wat het autonome zenuwstelsel doet, hoe zijn twee takken het hart sturen en waarom geen enkel getal, ook LF/HF niet, de toestand ervan meet."

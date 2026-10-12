@@ -1,5 +1,5 @@
 ---
-sourceHash: "ea519c2b5915"
+sourceHash: "0d41de50d500"
 title: "O sistema nervoso autônomo: simpático e parassimpático"
 metaTitle: "Sistema nervoso autônomo: não é um interruptor"
 metaDescription: "O que o sistema nervoso autônomo faz, como seus dois ramos comandam o coração e por que nenhum número isolado, nem a razão LF/HF, mede o seu estado."

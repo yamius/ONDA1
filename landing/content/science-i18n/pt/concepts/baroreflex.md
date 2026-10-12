@@ -1,5 +1,5 @@
 ---
-sourceHash: "aefe18eb9fcc"
+sourceHash: "45dd01994151"
 title: "O barorreflexo: como o corpo mantém a pressão arterial estável"
 metaTitle: "Barorreflexo: a pressão arterial, batimento a batimento"
 metaDescription: "Como o barorreflexo estabiliza a pressão arterial a cada batimento, o que é a sensibilidade do barorreflexo e como a respiração lenta e o treino a afetam."

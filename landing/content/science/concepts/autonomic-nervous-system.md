@@ -217,19 +217,19 @@ evidenceMap:
     limitation: "Review summary of the literature; patterns depend on the situation."
   - claim: "Psychological stressors can change sympathetic or parasympathetic activity independently."
     sources: [S4]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "psychological stressors can also result in independent changes in SNS or PNS activity"
     limitation: "Review summary; the pattern depends on the stressor and the person."
   - claim: "Physiological interventions can produce reciprocal or parallel changes in either division."
     sources: [S7]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "Thus, physiological interventions can elicit either complex non-linear reciprocal or parallel changes in either division of the autonomic nervous system."
     limitation: "An opinion article summarising experimental work."
   - claim: "Heart rate variability indexes cardiac vagal tone, the contribution of the parasympathetic system to heart regulation, but findings are easily misconstrued."
     sources: [S6]
-    class: established
+    class: context-dependent
     claimType: measurement
     quote: "Cardiac vagal tone, which represents the contribution of the parasympathetic nervous system to cardiac regulation"
     limitation: "An index, not a direct measurement — see the approved claim.vagalTone fact."
