@@ -1095,7 +1095,6 @@ function buildPersonJsonLd(): string {
       'architecture',
       'Gestalt therapy',
       'systemic family therapy',
-      'psychology',
       'breathwork',
       'heart rate variability',
       'interoception',
