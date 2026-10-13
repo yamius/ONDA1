@@ -17,6 +17,7 @@
  *    wearables count when their app syncs heart data to Apple Health → 'partly'.
  *    Live coherence is Apple-Watch-only; the camera pulse works on any iPhone.
  */
+import { mcpExportScoreErrors } from './lib/score-text-check'
 import { writeFileSync, readFileSync, mkdirSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -201,3 +202,12 @@ for (const name of ['hrv-norms', 'breathing']) {
   })
 }
 console.log('lib/generated/hrv-norms.js, breathing.js')
+
+// Task 089: the exported review text must carry the computed scores (no stale / hand-typed numbers).
+const scoreErrors = mcpExportScoreErrors(OUT)
+if (scoreErrors.length) {
+  console.error(`[export] ${scoreErrors.length} score error(s):
+  ${scoreErrors.join('
+  ')}`)
+  process.exit(1)
+}
