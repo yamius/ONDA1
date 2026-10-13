@@ -93,6 +93,33 @@ export function ComparisonPage() {
       {isSaunaComparison(comparison.slug, comparison.category) && <SaunaSafetyBlock lang={lang} />}
       {isPemfComparison(comparison.slug, comparison.category) && <PemfSafetyBlock lang={lang} />}
       {isHeadsetComparison(comparison.slug, comparison.category) && <HeadsetMeasuresNote lang={lang} />}
+      {/* Rule award shared by 3+ products ("practically equal"): one "choose it for…" line per
+          holder, taken from that product's own review (bestFor) — no new claims (task 089). */}
+      {(['best-overall', 'best-value', 'best-value-247'] as const).map((key) => {
+        const holders = comparison.picks.filter((p) => p.ruleAwards?.some((a) => a.key === key))
+        if (holders.length < 3) return null
+        const label = holders[0].ruleAwards!.find((a) => a.key === key)!.label
+        return (
+          <div key={key} className="mb-6 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5">
+            <p className="mb-2 font-mono text-xs tracking-wider text-terminal-green">
+              {tReviews(`ui.award.${key}`, { defaultValue: label })} · {tReviews('ui.award.practicallyEqual', { defaultValue: 'practically equal' })}
+            </p>
+            <ul className="space-y-1 text-[14px] leading-relaxed text-white/80">
+              {holders.map((p) => {
+                const r = getReviewBySlug(p.reviewSlug)
+                if (!r) return null
+                return (
+                  <li key={p.reviewSlug}>
+                    <Link to={langHref(`/reviews/${r.slug}`, lang)} className="font-semibold text-white/95 hover:text-terminal-green">{r.name}</Link>
+                    {' — '}
+                    {tReviews(`bodies.${r.slug}.bestFor`, { defaultValue: r.bestFor })}
+                  </li>
+                )
+              })}
+            </ul>
+          </div>
+        )
+      })}
       {/* EN: answer-first summary built from the ranked picks — the direct
           answer to "what is the best …?" before the hero image (GEO). */}
       {lang === 'en' && (() => {
