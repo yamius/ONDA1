@@ -34,7 +34,8 @@ export {
   getCategoryByUrlSlug,
 } from './criteria'
 
-import type { ToolReview, Comparison, ReviewCategory } from './types'
+import type { ToolReview, Comparison, ReviewCategory, RuleAward, RuleAwardSpec } from './types'
+import { PRACTICALLY_EQUAL_GAP } from './scoring'
 import { REVIEW_CATEGORIES } from './criteria'
 import bestHrvTrackers2026 from './best-hrv-trackers-2026'
 import bestMeditationApps2026 from './best-meditation-apps-2026'
@@ -83,7 +84,38 @@ const REVIEW_BY_SLUG_ALL = new Map(ALL_REVIEWS.map((r) => [r.slug, r]))
 /** Round-up picks ordered by computed rank (overall → tie-break criterion →
  *  stable for genuine ties). The array order in the comparison file is NOT
  *  the ranking. Picks without a review keep their place at the end. */
-function rankComparison(c: Comparison): Comparison {
+const DEFAULT_RULE_AWARDS: RuleAwardSpec[] = [
+  { key: 'best-overall', label: 'Best overall', score: 'overall' },
+  { key: 'best-value', label: 'Best value', score: 'value' },
+]
+/** Score-based awards are computed (task 089): a round-up opts in by naming the award on any pick
+ *  (the hand label is removed) or via c.ruleAwards; holders = every pick within 0.1 of the best score. */
+const awardBase = (a: string) => a.replace(/\s*\([^)]*\)\s*$/, '').trim().toLowerCase()
+function withRuleAwards(c: Comparison): Comparison {
+  const specs = [
+    ...DEFAULT_RULE_AWARDS.filter((s) => c.picks.some((p) => awardBase(p.award) === s.label.toLowerCase())),
+    ...(c.ruleAwards ?? []),
+  ]
+  if (!specs.length) return c
+  const picks = c.picks.map((p) => ({ ...p, award: specs.some((s) => s.label.toLowerCase() === awardBase(p.award)) ? '' : p.award, ruleAwards: [] as RuleAward[] }))
+  for (const s of specs) {
+    const scored = picks
+      .filter((p) => !p.comparisonOnly && !s.exclude?.includes(p.reviewSlug))
+      .map((p) => {
+        const r = REVIEW_BY_SLUG_ALL.get(p.reviewSlug)
+        return { p, v: !r ? undefined : s.score === 'overall' ? r.overallScore : r.scores.find((x) => x.criterionId === s.score)?.score }
+      })
+      .filter((x): x is { p: (typeof picks)[number]; v: number } => x.v !== undefined)
+    if (!scored.length) continue
+    const max = Math.max(...scored.map((x) => x.v))
+    const holders = scored.filter((x) => max - x.v <= PRACTICALLY_EQUAL_GAP + 1e-9)
+    for (const h of holders) h.p.ruleAwards.push({ key: s.key, label: s.label, practicallyEqual: holders.length > 1 })
+  }
+  return { ...c, picks: picks.map(({ ruleAwards, ...p }) => (ruleAwards.length ? { ...p, ruleAwards } : p)) }
+}
+
+function rankComparison(input: Comparison): Comparison {
+  const c = withRuleAwards(input)
   const competing = c.picks.filter((p) => !p.comparisonOnly)
   const withReview = competing.filter((p) => REVIEW_BY_SLUG_ALL.has(p.reviewSlug))
   const without = competing.filter((p) => !REVIEW_BY_SLUG_ALL.has(p.reviewSlug))

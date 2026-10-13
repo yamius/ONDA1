@@ -47,7 +47,13 @@
     "editorialAdjustment": "编辑调整 {{value}}：{{reason}}",
     "roundUpHeading": "排名汇总",
     "allReviewsHeading": "全部评测",
-    "otherCategoriesHeading": "其他评测类别"
+    "otherCategoriesHeading": "其他评测类别",
+    "award": {
+      "best-overall": "综合最佳",
+      "best-value": "最佳性价比",
+      "best-value-247": "24/7佩戴最佳性价比",
+      "practicallyEqual": "实际上不相上下"
+    }
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
@@ -3451,7 +3457,6 @@
       "content": "## 快速回答\n\n2026年对大多数人来说最好的EEG头戴设备是**Muse S Athena**（$474.99）——最丰富的冥想反馈库、EEG加fNIRS，且无强制订阅。只用于冥想的话，**Muse 2**（$249.99）是性价比之选。如果你想要原始数据和开放SDK，选**Neurosity Crown**（$1,499）。如果你想要有监督的临床神经反馈，那就是通过持证服务提供者使用的**Myndlift**——它根本不是消费级头戴设备。\n\n## 对比表\n\n| 头戴设备 | 价格（美元） | 模态／传感器 | 最适合 |\n|---|---|---|---|\n| [Muse S Athena](/reviews/muse-s-athena) | $474.99 | 4通道干电极EEG + fNIRS | 冥想与睡眠，综合最佳 |\n| [Muse 2](/reviews/muse-2) | $249.99 | 4通道干电极EEG + PPG心率 | 预算有限的冥想反馈 |\n| [Neurosity Crown](/reviews/neurosity-crown) | $1,499 | 8个干电极EEG | 开发者、原始数据、专注 |\n| [Emotiv Insight 2](/reviews/emotiv-insight-2) | $499 + 原始数据Pro约$99/年 | 5个半干电极EEG | 研究与学术工具链 |\n| [Sens.ai](/reviews/sens-ai) | $1,250 + 会员（试用后$300/年或$75/月） | 5通道EEG + HRV + 近红外光 | 多模态高端训练 |\n| [Myndlift](/reviews/myndlift) | 通过服务提供者约$300–$600/月 | Muse 2硬件，临床医生方案 | 有监督的临床神经反馈 |\n| [Mendi](/reviews/mendi) | 标价$379（常有折扣） | fNIRS（非EEG） | 简单的前额叶训练游戏 |\n| [FocusCalm](/reviews/focuscalm) | $199 + 可选Plus | 1通道EEG | 最便宜的引导式EEG课程 |\n| [Flow Neuroscience](/reviews/flow-neuroscience) | 英国£399 + App订阅；美国仅限处方 | tDCS刺激（不测量） | 临床抑郁症治疗 |\n| [NeuroSky MindWave Mobile 2](/reviews/neurosky-mindwave-mobile-2) | 约$110 | 1通道EEG | 学生和业余开发者 |\n\n## 如何选择EEG头戴设备\n\n先从你想让头戴设备做什么开始，因为三种常见用途需要不同的硬件。\n\n**1. 冥想反馈。** 你想在走神时听到提示，并学会让心安定下来。重要的是App、引导内容和舒适度——而不是通道数。在这方面Muse S Athena和Muse 2领先；FocusCalm是更便宜的单通道替代品。对这一用途来说，原始数据无关紧要。\n\n**2. 神经反馈训练。** 你想在数周内训练特定的大脑模式（注意力、平静、临床医生的方案）。消费级App提供简化版本；针对ADHD、焦虑或睡眠问题的真正神经反馈由临床医生设计和调整，这正是Myndlift所提供的——不过盲法和假反馈对照试验显示，它对ADHD或失眠几乎没有特异性益处。Sens.ai介于两者之间，在EEG之上增加了光和HRV训练。\n\n**3. 开发者或原始数据工作。** 你想把信号流式传入自己的代码、做实验或开发App。根据SDK开放性和通道数来选：Neurosity Crown（8个电极、开放SDK、数据无需订阅）、Emotiv Insight 2（5通道，原始数据需Pro等级），或用极低预算学习的NeuroSky。\n\n购买前还有两项检查：**订阅模式**（Emotiv、Sens.ai和FocusCalm对部分体验额外收费；Muse和Crown不强制订阅）以及**舒适度**——如果你躺着冥想或想要睡眠数据，只有柔软的Muse S Athena头带是为此设计的。\n\n## 消费级EEG能测什么、不能测什么\n\n消费级EEG头戴设备通过干电极在头皮的少数几个位置测量微小的电压变化。这是真实的大脑信号：在2017年的一项验证研究中，Krigolson及其同事表明，四通道的Muse捕捉到的标准事件相关电位（N200和P300）可与研究级系统相媲美（[Frontiers in Neuroscience, doi:10.3389/fnins.2017.00109](https://doi.org/10.3389/fnins.2017.00109)）。\n\n它做不到的同样重要：\n\n- **通道少，大多在前额。** 四到八个电极无法像32或64通道的实验室电极帽那样定位活动。\n- **伪迹。** 眨眼、咬紧牙关、皱眉和身体移动产生的信号比大脑活动更大；好的App会过滤它们，但仍会出现噪声较大的训练。\n- **专有分数。** “平静”“专注”或“心流”数字是各公司自己的算法，不是经过验证的医学指标，不同品牌之间也无法比较。\n- **不能诊断。** 没有任何消费级头戴设备能诊断ADHD、焦虑、抑郁或睡眠障碍。\n\n诚实的说法是：把分数当作你自己训练中的趋势来使用。大多数人获得的益处来自反馈所鼓励的练习本身，任何效果都取决于规律练习。\n\n## 谁不必买EEG头戴设备\n\n- **想要压力或恢复数值的人。** 通过戒指或手表获得的心率变异性（HRV）更容易每天收集，而且在压力和恢复方面比消费级EEG分数研究得更充分——请参阅我们的[最佳HRV追踪器](/reviews/compare/best-hrv-trackers-2026)。\n- **寻求ADHD、抑郁或焦虑治疗的人**——请先找临床医生；Myndlift或Flow只有在这一途径中才有意义，而且神经反馈不能替代已确立的治疗。\n- **不会经常佩戴的买家。** 只用过两次的头戴设备，就是你拥有的最贵的冥想App。\n- **练习时不喜欢在头上戴任何东西的人**——单用一个引导式呼吸或冥想App可能就足够了。\n\n直接对比请参阅[Muse S Athena vs Muse 2 vs Neurosity Crown](/reviews/vs/muse-s-athena-vs-muse-2-vs-neurosity-crown)和[Neurosity Crown vs Emotiv Insight 2](/reviews/vs/neurosity-crown-vs-emotiv-insight-2)。\n\n## 我们如何排名\n\n每款设备都按照ONDA公开的[评测方法](/reviews/methodology)评分：七项加权标准，其中信号质量和训练内容深度权重最大。开放数据访问单独加权，因为生物黑客和研究者格外看重它，而消费级冥想用户几乎不会注意到——用一个掩盖这种差异的总分会产生误导。\n\n全部十款设备均依据制造商资料、可获得的已发表验证文献以及2026年独立评测进行评估，而非实物测试，因此请把这些分数当作基于证据的起点。\n\n## 最佳EEG与脑训练头戴设备：该买哪款？\n\n这一类别按模态和用途划分。\n\n**EEG测量（六款）：** Muse S Athena和Muse 2在内容深度上领先，Neurosity Crown在开发者访问上领先，Emotiv Insight 2在学术工具链集成上领先，FocusCalm在平价内容上领先，NeuroSky MindWave Mobile 2则撑起平价／教育层级。在这一组中，根据你的技术程度以及想要内容还是原始数据来选择。\n\n**fNIRS（Mendi）：** 不同的信号，不同的用途。只有当你想要的就是纯粹的前额叶注意力训练时才选它。\n\n**tDCS（Flow Neuroscience）：** 根本不是测量。仅用于临床抑郁症适应症。\n\n**多模态高端（Sens.ai）：** EEG + 光生物调节 + HRV集于一个课程。只有当你想要的正是多模态组合时才是正确选择。\n\n**临床医生监督（Myndlift）：** 在消费级硬件上居家进行处方神经反馈。是该类别中由临床医生监督的选项。\n\n先决定模态，再在其中决定设备。这个类别足够小，这十款实际上就是2026年值得了解的全部头戴设备。",
       "picks": {
         "muse-s-athena": {
-          "award": "综合最佳",
           "takeaway": "柔软、适合睡眠佩戴的头带集成EEG和fNIRS——消费级最丰富的内容库，无需订阅。"
         },
         "muse-2": {
@@ -3538,7 +3543,6 @@
       "content": "## 我们如何排名\n\n每款筋膜枪都按照ONDA公开的[评测方法](/reviews/methodology)评分：六项加权标准，其中堵转力和振幅权重最高，因为它们决定冲击剂量，而该品类中最让消费者困惑的正是夸大峰值数据的营销。\n\n这十款产品均依据厂商资料和2026年大量运动/健身评测进行评估，而非实机测试。\n\n## 最佳筋膜枪：该买哪款？\n\n三个购买问题就能清楚地梳理这个品类：\n\n**高端品牌生态还是纯参数？** 高端（应用 + 生态）：Theragun PRO Plus、Hypervolt 2 Pro、Theragun Elite、Hypervolt Go 2。纯参数（无应用）：Achedaway Pro、OPOVE M3 Pro 2、Ekrin B37、Bob and Brad Q2 Mini、Renpho R3、TOLOCO。\n\n**全尺寸还是便携迷你？** 全尺寸：Theragun PRO Plus、Hypervolt 2 Pro、Theragun Elite、Achedaway Pro、OPOVE、Ekrin、Renpho、TOLOCO。迷你：Hypervolt Go 2（高端）、Bob and Brad Q2 Mini（平价）。\n\n**预算档次？** $100以下：TOLOCO（$69）、Bob and Brad Q2 Mini（$99）、Renpho R3（$99）。$100–$250：Hypervolt Go 2（$129）、OPOVE M3 Pro 2（$179）、Ekrin B37（$249.99）。$300–$400：Achedaway Pro（$349）、Theragun Elite（$399）、Hypervolt 2 Pro（$399）。$500以上：Theragun PRO Plus（$599）。\n\nTheragun PRO Plus主导参数天花板档；Hypervolt 2 Pro是理性的高端替代；Achedaway Pro占据参数至上的次高端细分市场；Bob and Brad / Renpho覆盖可靠的平价档。",
       "picks": {
         "hypervolt-3-pro": {
-          "award": "综合最佳",
           "takeaway": "2026年Hyperice旗舰——约70 lbs堵转力、更安静的QuietGlide电机、4小时续航和更大的按摩头，售价$349。在力量和性价比上胜过更贵的Theragun。"
         },
         "theragun-pro-plus": {
@@ -3617,7 +3621,6 @@
       "content": "## 快速回答\n\n**综合最佳：Nurosym**（€700，约$820）——独立试验记录最多的消费级耳部设备。**最佳处方设备：gammaCore Sapphire CV**，获FDA许可用于特定头痛疾病。**最佳免处方颈部设备：Truvaga 350**（$325）。**最适合全天佩戴：Apollo Neuro**（$448，振动而非电刺激）。**最便宜的可信选择：Pulsetto**（$269）。在花钱之前，先试试慢呼吸——它免费，而且在日常压力方面的证据至少一样好。\n\n## 我们如何排名\n\n每款设备都按ONDA公开的[测评方法](/reviews/methodology)评分：六项加权标准，其中证据与临床支持权重最高，因为这个领域充斥着与硬件实际作用关联很弱的营销说法。总分是加权平均值——不是凭感觉给的数字。十款设备均依据厂商资料、已发表的试验记录、监管许可和2026年独立评测评估，而非实机测试，因此请把分数当作基于证据的起点。\n\n## 对比表\n\n| 设备 | 价格（2026年10月） | 类型 | 监管状态 | 适合 |\n|---|---|---|---|---|\n| [Nurosym](/reviews/nurosym) | €700（~$820） | 耳部tVNS（夹式） | CE认证医疗器械（据厂商称为IIa类） | 重视证据的买家 |\n| [gammaCore Sapphire CV](/reviews/gammacore-sapphire-cv) | 处方；因保险而异 | 颈部手持式 | FDA许可，头痛适应证 | 偏头痛和丛集性头痛 |\n| [Truvaga 350](/reviews/truvaga-350) | $325（350次） | 颈部手持式 | 一般保健，未获FDA许可 | 免处方颈部VNS |\n| [Apollo Neuro](/reviews/apollo-neuro) | $448，含1年会员 | 振动穿戴设备 | 消费级保健设备，未获FDA许可 | 全天佩戴 |\n| [Vagustim](/reviews/vagustim) | €499（~$540） | 耳部tVNS + 电极 | CE认证医疗器械（据厂商称为IIa类） | 预设方案多 |\n| [Pulsetto](/reviews/pulsetto) | $269 | 颈圈 | CE认证 | 价格最低 |\n| [Hoolest VeRelief Prime](/reviews/hoolest-verelief-prime) | $279 | 手持式 | 消费级保健设备，未获FDA许可 | 运动恢复 |\n| [Sensate](/reviews/sensate) | $299 | 胸前次声设备 | 消费级保健设备，未获FDA许可 | 睡前放松 |\n| [Xen by Neuvana](/reviews/xen-by-neuvana) | $399 | 耳部tVNS（耳机） | 消费级保健设备，未获FDA许可 | 熟悉的外形 |\n| [LivaNova VNS Therapy](/reviews/livanova-vns-therapy) | 手术；保险覆盖 | 植入式 | FDA批准（癫痫、抑郁症） | 仅供比较（处方植入物，不参与排名） |\n\n## 如何选择\n\n**耳部（耳廓）tVNS**——Nurosym、Vagustim、Xen。通过夹子或耳塞刺激外耳皮肤，那里有迷走神经的分支经过。舒适、安静，是研究最多的消费级方式。\n\n**颈部设备**——gammaCore、Truvaga、Pulsetto、Hoolest。通过颈部皮肤进行刺激。只有gammaCore获得FDA许可，且仅限头痛疾病；其他都是保健产品。\n\n**振动和声音设备**——Apollo Neuro和Sensate不对神经进行电刺激，而是通过触觉或低频声音来安抚神经系统。日常更好用，但离“迷走神经刺激”这个标签更远。\n\n**处方还是消费级**——如果你有偏头痛或丛集性头痛，请就gammaCore咨询神经科医生：它是这里唯一一款在该用途上有试验支持的许可设备。如果是为了一般压力或睡眠，所有消费级设备都属于保健消费，而不是治疗。\n\n## 证据实际显示了什么\n\n最强的证据在医疗端。植入式VNS用于癫痫和抑郁症已有数十年的获批使用历史；gammaCore获FDA许可，用于12岁及以上人群偏头痛的预防和治疗、成人丛集性头痛，以及成人阵发性偏侧头痛和持续性偏侧头痛。\n\n至于消费级保健宣称，证据要弱得多。Wolf等人的一项动态贝叶斯荟萃分析（*Psychophysiology* 2021，doi: 10.1111/psyp.13933）汇总了16项针对健康人群的假刺激对照研究，发现单次耳部tVNS对迷走神经介导的心率变异性没有影响。关于压力、睡眠或情绪的单项研究大多规模小、周期短，且常由企业资助。这并不意味着这些设备毫无作用——但承诺可测量“迷走神经张力”提升的营销跑在了科学前面。\n\n## 安全\n\n- **植入设备：** 装有心脏起搏器、植入式除颤器或其他植入电子设备者，除非心脏科医生同意，否则不要使用电刺激设备。\n- **心律问题：** 如果你有心律失常、心率过慢或曾经晕厥，请先咨询医生——迷走神经刺激可能使心率减慢。\n- **怀孕和癫痫：** 这些设备一般未在孕期进行测试；请先寻求医疗建议。\n- **颈部设备：** 已知有颈动脉疾病、做过颈部手术或皮肤破损时避免使用。\n- **切勿在驾驶**或操作机器时使用，感到头晕或要晕倒时立即停止。\n\n## 有真实证据的免费替代方案\n\n缓慢、有节奏的呼吸——每分钟约五到七次，通常呼气更长——在练习时能可靠地提升迷走神经介导的HRV，不花一分钱，而且研究基础比任何消费级刺激仪都更广。可以从我们的指南开始：[迷走神经练习](/articles/vagus-nerve-exercises)、[相干呼吸](/articles/coherent-breathing-guide)、[找到你的共振呼吸频率](/articles/find-your-resonance-breathing-rate)和[哼鸣与迷走神经](/articles/humming-breath-vagus)。如果你尝试某款设备，在判断它是否值这个价之前，先与几周的呼吸练习做对比。\n\n## 你该买哪一款？\n\n如果消费级设备的决定性标准是证据，选Nurosym。如果是日常可穿戴性，选Apollo Neuro。如果需要用于头痛的处方临床使用，选gammaCore。如果预算有限，选Pulsetto；想要gammaCore厂商的颈部设备，选Truvaga 350。这个品类不大，但差异是真实的，上面的评分直接对应哪种取舍对你最重要。",
       "picks": {
         "nurosym": {
-          "award": "综合最佳",
           "takeaway": "消费级耳部tVNS中独立试验记录最多的设备（主要是Parasym早期型号）——以刻意简约的形式提供研究中所用类型的耳廓刺激（€700，约$820）。"
         },
         "gammacore-sapphire-cv": {
@@ -3637,7 +3640,6 @@
           "takeaway": "预设方案库最丰富的耳廓tVNS，有欧盟CE认证的监管背书——证据仅次于Nurosym。"
         },
         "pulsetto": {
-          "award": "最佳性价比（消费级）",
           "takeaway": "最便宜的颈戴式tVNS，有四个引导方案——入门颈部刺激最容易的选择。"
         },
         "hoolest-verelief-prime": {
@@ -3705,7 +3707,6 @@
       "content": "## 简短回答\n\n得分最高的呼吸 App 是 **Othership**，适合音乐引导的电影级课程和直播课。如果你想要更便宜、有免费版的引导内容库，选 **Breathwrk**（约 $49/年）。如果你想让 App 在你呼吸时测量身体反应，选 **Inhale**，它使用 Apple Watch 的 HRV。如果你不想付费，**iBreathe** 和 **Breathe2Relax** 免费，基础功能做得很好。\n\n## 呼吸练习到底有什么作用？\n\n缓慢、受控的呼吸是少数有明确生理机制的放松方法之一。一项关于慢呼吸研究的系统综述发现，以每分钟约六次的速度呼吸能提升副交感神经（“休息与消化”）活动和心率变异性，并与更好的情绪调节和幸福感相关（[Zaccaro et al., 2018, Frontiers in Human Neuroscience](https://doi.org/10.3389/fnhum.2018.00353)）。这些研究大多规模较小，所以应把这种效果看作真实但温和。\n\n斯坦福的一项随机研究比较了为期一个月、每天五分钟的三种呼吸练习与正念冥想。循环叹息（两次吸气，然后长长呼气）带来了最大的情绪改善和最大的呼吸频率下降（[Balban et al., 2023, Cell Reports Medicine](https://doi.org/10.1016/j.xcrm.2022.100895)）。实用结论是：每天花几分钟做带长呼气的慢呼吸，才是关键所在。App 能帮你坚持下去，但它本身不会额外增加什么特殊效果。\n\n延伸阅读：[生理性叹息](/articles/physiological-sigh)、[箱式呼吸](/articles/box-breathing-how-it-works)、[4-7-8 呼吸法](/articles/4-7-8-breathing)，以及[如何找到你的共振呼吸频率](/articles/find-your-resonance-breathing-rate)。\n\n## 如何选择呼吸 App\n\n**引导式节奏。** 大多数 App 会播放计时器或语音，提示你何时吸气、何时呼气。对大多数人来说这就够了。付费应该是为了更大的内容库、更好的音频或结构化课程，而不是为呼吸本身付费。\n\n**生物反馈。** 生物反馈 App 会测量你的身体（通常是来自手表或传感器的心率变异性），并显示你呼吸时身体如何反应。它能帮你找到让自己平静下来的方法，并追踪数周来的进展。本榜单中，Inhale 是生物反馈之选，需要 Apple Watch。\n\n**免费。** 做箱式呼吸、4-7-8 或循环叹息，免费计时器就够了。iBreathe 是简洁的计时器；Breathe2Relax 由美国 National Center for Telehealth & Technology 为缓解压力而开发；针对 App 本身的研究仅限于小型试点研究。Prana Breath 免费内容很多，$10 一次性解锁。\n\n## 呼吸 App 对比\n\n| App | 价格 | 平台说明 | 最适合 |\n|---|---|---|---|\n| [Breathwrk](/reviews/breathwrk) | $49/年，有免费版 | iOS、Android、网页 | 预算有限的引导式日常练习 |\n| [Othership](/reviews/othership) | $129.99/年，5 个免费课程 | 手机 App | 音乐引导课程、直播课 |\n| [SOMA Breath](/reviews/soma-breath) | $99/年，免费试用 | 手机 App | 有节奏、随音乐呼吸 |\n| [Wim Hof Method](/reviews/wim-hof-method-app) | $42.99/年，有免费版 | 手机 App | Wim Hof 呼吸轮次与冷暴露方案 |\n| [Open](/reviews/open-app) | $120/年，免费试用 | 手机 App | 呼吸 + 冥想 + 运动 |\n| [Pause](/reviews/pause-breathwork) | $90/年，免费试用 | 手机 App | 较长的躯体练习 |\n| [Inhale](/reviews/inhale-by-aero-health) | $60/年 | 生物反馈需要 Apple Watch | HRV 生物反馈 |\n| [Prana Breath](/reviews/prana-breath) | 免费，$10 一次性解锁 | 安卓优先 | 自定义呼吸节奏 |\n| [iBreathe](/reviews/ibreathe) | 免费（$5 去广告） | iPhone + Apple Watch | 简单的免费计时器 |\n| [Breathe2Relax](/reviews/breathe-to-relax) | 免费 | 手机 App | 有证据支持的免费减压工具 |\n\n价格为我们各篇测评中的标价，可能会变动；订阅前请先在应用商店核实。\n\n## 我们如何排名\n\n每款 App 都按 ONDA 公开的[测评方法](/reviews/methodology)打分：六项加权标准，其中课程库和技巧覆盖权重最高，因为它们决定了日常使用的深度和长期留存。\n\n全部十款都基于 App 文档、App Store 页面、创始人的公开发言以及 2026 年的独立用户评价进行评估，而非上手实测。\n\n## 最佳呼吸练习 App：该买哪一款？\n\n三个购买问题就能把这个品类理清楚：\n\n**你想从呼吸练习中得到什么？** 电影级音乐 + 社区 → Othership。预算有限的引导式日常练习 → Breathwrk。单一方法的深度（Wim Hof） → Wim Hof Method App。躯体/情绪释放 → Pause。HRV 生物反馈 → Inhale。呼吸 + 冥想 + 运动混合 → Open。\n\n**预算多少？** 免费：iBreathe、Breathe2Relax、Prana Breath（大部分免费）。$40–$60/年：Wim Hof Method（$42.99，课程另付费）、Breathwrk（$49）、Inhale（$60）。$90–$130/年：Pause、SOMA Breath、Open、Othership（$129.99）。\n\n**什么平台？** 所有主流 App 都支持 iOS 和 Android。Prana Breath 是最好的安卓优先选择。Inhale 的生物反馈特色功能需要 Apple Watch。\n\nOthership 综合领先，并占据电影级体验的高端层。Breathwrk 是平价引导内容库的默认之选。免费层（iBreathe、Breathe2Relax）也很可靠。避开那些夸大生理功效、或者没有导师资质却靠仪式感包装的 App。",
       "picks": {
         "othership": {
-          "award": "综合最佳",
           "takeaway": "音乐驱动的电影级旅程加社区直播课——呼吸 App 的制作水准标杆，也是本榜单综合得分最高的 App。"
         },
         "breathwrk": {
@@ -3788,7 +3789,6 @@
       "content": "## 我们如何排名\n\n每款产品都按 ONDA 公开的[评测方法](/reviews/methodology)打分：六项加权标准，其中粘附舒适度和材料安全被刻意赋予较高权重——这个品类中最容易让用户困惑的，正是皮肤刺激问题，以及与临床现实关联薄弱的网红健康营销。\n\n十款产品都是依据厂商资料、FDA 注册记录和 2026 年的大规模用户评价进行评估，而非实物测试。\n\n## 最佳闭口胶带与鼻呼吸辅助产品：该买哪款？\n\n三个购买问题就能把这个品类理清楚：\n\n**闭口胶带还是鼻扩张器？** 闭口胶带（封住嘴巴，迫使用鼻呼吸）：Hostage Tape、Somnifix、Dream Recovery、Nexcare DIY、AYO、SomniFit、The Tape Co.。鼻扩张器（撑宽鼻腔通道）：Intake Breathing、Mute、Breathe Right、SleepRight。\n\n**对胡须友好还是适合敏感肌？** 对胡须友好：Hostage Tape（明显胜出）。敏感肌：Dream Recovery 硅胶款、AYO K-beauty 低敏款。两者都不涉及：Somnifix、SomniFit、Nexcare DIY 都可以。\n\n**订阅便利还是 DIY 省钱？** 订阅：为了便利选 Hostage Tape（$13/月）。DIY 省钱：Nexcare Surgical Tape（每晚约 $0.05）。中档、无订阅：Somnifix、Dream Recovery、AYO、SomniFit、The Tape Co.。\n\nHostage Tape 主导消费品牌闭口胶带层级；Somnifix 是已在 FDA 注册的选择；Intake Breathing 和 Mute 平分高端鼻扩张器市场；Breathe Right 和 Nexcare 覆盖药店 / DIY 省钱层级。",
       "picks": {
         "hostage-tape": {
-          "award": "综合最佳",
           "takeaway": "对胡须友好的胶粘剂 + 订阅便利 + 生物黑客品牌的精致感——我们 2026 年的综合首选。"
         },
         "somnifix": {
@@ -3934,7 +3934,7 @@
       "title": "红光理疗板推荐对比（2026）",
       "description": "ONDA评选2026年十佳红光理疗板：Joovv、Mito Red、PlatinumLED、GembaRed等，按辐照度、波长覆盖、EMF和性价比评分。",
       "intro": "消费级红光品类以夸大的辐照度宣传、藏在参数表背后的EMF和频闪，以及并非总有做工支撑的高端定价而臭名昭著。ONDA用同样的六个维度为2026年最可信的十款理疗板评分——独立辐照度验证、波长覆盖、EMF和频闪控制、照射面积覆盖、证据和性价比。我们有意加重独立测量的权重。榜单涵盖从高端标杆（Joovv）到入门生物黑客款（Hooga）再到关节专用设备（Kineon），因此各种取舍可以读作一张有序的市场全景图。",
-      "verdict": "Mito Red MitoPRO 1500X综合第一——六种波长、经验证的辐照度和3年保修，售价$1,299。Joovv Solo 3.0仍是做工最干净的模块化标杆，但现价$1,699，要多花$400却得到更窄的光谱。PlatinumLED BIOMAX 600在中等尺寸中以波长数量和EMF透明度领先；GembaRed Vesta是EMF控制专家；RubyLx Lyra Pro适合需要每项参数都经实验室验证的买家。Infraredi以折扣价提供MitoPRO级尺寸；BioLight覆盖中端性价比档；Hooga是真正达到标称参数的入门款。Bon Charge适合欧盟/澳洲消费者；Kineon Move+是用于针对性关节使用的另一类产品。按你最在意的维度来选——覆盖面积、光谱、EMF、证据还是价格。",
+      "verdict": "PlatinumLED BIOMAX 600、Mito Red MitoPRO 1500X和RubyLx Lyra Pro综合实际上不相上下（ONDA评分相差不超过0.1）。Mito Red MitoPRO 1500X：六种波长、经验证的辐照度和3年保修，售价$1,299。Joovv Solo 3.0仍是做工最干净的模块化标杆，但现价$1,699，要多花$400却得到更窄的光谱。PlatinumLED BIOMAX 600在中等尺寸中以波长数量和EMF透明度领先；GembaRed Vesta是EMF控制专家；RubyLx Lyra Pro适合需要每项参数都经实验室验证的买家。Infraredi以折扣价提供MitoPRO级尺寸；BioLight覆盖中端性价比档；Hooga是真正达到标称参数的入门款。Bon Charge适合欧盟/澳洲消费者；Kineon Move+是用于针对性关节使用的另一类产品。按你最在意的维度来选——覆盖面积、光谱、EMF、证据还是价格。",
       "content": "## 我们如何排名\n\n每款理疗板都按ONDA公开的[评测方法](/reviews/methodology)评分：六项加权标准中，辐照度验证和性价比权重最高。波长覆盖、EMF和频闪控制、照射面积覆盖以及证据各占15%。我们有意加重独立测量的权重，因为这个品类充斥着夸大的厂商参数。\n\n全部十款均依据厂商资料、生物黑客评测网站的第三方辐照度和EMF测试报告、设备宣传所依据的已发表光生物调节文献，以及2026年的独立评测进行评估。ONDA未上手实测。请把分数当作基于证据的起点。\n\n## 红光理疗板：该买哪款？\n\n这个品类分为三个诚实的档位和一个专用类别：\n\n**高端标杆（$1,000+）：** Joovv Solo 3.0、Mito Red MitoPRO 1500、PlatinumLED BIOMAX 600、GembaRed Vesta、RubyLx Lyra Pro。全部提供经验证的参数、EMF控制和扎实做工。按你在意的维度挑选——综合平衡和光谱（MitoPRO 1500X）、模块化（Joovv）、波长数量（PlatinumLED）、EMF（GembaRed）、测试透明度（RubyLx）。\n\n**中端性价比（约$900–$1,050）：** BioLight Pro 900、Infraredi Pro Max 2.0（Pro 1500已停产）、Bon Charge Red Light Panel Max（$999）。扎实的四波长理疗板，以明显更低的价格提供高端款的大部分参数。代价是品牌成熟度较低、独立验证较少。\n\n**入门生物黑客款（$400以下）：** Hooga HG500（$359）。双波长、参数诚实，含门挂和吊挂套件（移动支架另购）。正是它让消费级红光成为$400以下的品类。\n\n**关节专用：** Kineon Move+。不同的产品类别——用于关节疼痛的激光加LED绑带。不能替代理疗板。\n\n选好档位和维度即可。这个品类规模不大，这十款基本覆盖了2026年整个严肃的消费级市场。",
       "picks": {
         "platinumled-biomax-600": {
@@ -3942,7 +3942,6 @@
           "takeaway": "七种波长并公开第三方EMF测试，售价$1,049——光谱领先者。"
         },
         "mito-red-mitopro-1500": {
-          "award": "综合最佳",
           "takeaway": "MitoPRO 1500X：六波长大尺寸理疗板，3年保修——$1,299，比Joovv便宜$400。"
         },
         "rubylx-lyra-pro": {
@@ -3981,7 +3980,7 @@
       "faq": [
         {
           "q": "2026年哪款红光理疗板最好？",
-          "a": "Mito Red MitoPRO 1500X综合第一——六种波长、经验证的辐照度、$1,299。Joovv Solo 3.0（$1,699）是模块化、可拼接的高端之选。Hooga HG500是入门款。按你最在意的维度（做工、光谱、EMF、价格）来选。"
+          "a": "PlatinumLED BIOMAX 600、Mito Red MitoPRO 1500X和RubyLx Lyra Pro综合实际上不相上下（ONDA评分相差不超过0.1）。Mito Red MitoPRO 1500X：六种波长、经验证的辐照度、$1,299。Joovv Solo 3.0（$1,699）是模块化、可拼接的高端之选。Hooga HG500是入门款。按你最在意的维度（做工、光谱、EMF、价格）来选。"
         },
         {
           "q": "红光理疗板实际需要多大的辐照度？",
@@ -4013,7 +4012,6 @@
       "content": "## 我们如何排名\n\n每套系统都按ONDA公开的[评测方法](/reviews/methodology)评分：六项加权标准中，我们有意给场强和波形研究较高权重——这个品类最让用户困惑的，正是夸大的强度宣传和缺乏独立研究支持的专有波形营销。研究证明了什么、没证明什么，汇总在[PEMF疗法——证据](/science/evidence/pemf)中。\n\n全部十款均依据厂商资料、FDA数据库以及2026年的独立消费者/临床医生评测进行评估，而非上手实测。FDA注册只是一个登记；510(k)许可仅覆盖一项声明的用途，并不能证明健康益处。医用PEMF骨生长刺激器在2026年5月之前通过上市前批准（PMA）获批，此后归为II类（510(k)）器械——下面的消费级设备都不属于此类。\n\n## PEMF设备：该买哪款？\n\n三个购买问题就能把这个品类理清楚：\n\n**想要拥有自己研究清单的专有信号吗？** 是 → Bemer Classic Evo（研究很多，但大多规模小或与厂商有关；独立对照试验未发现与对照组有差异）。否 → Healthy Wave、iMRS、OMI（常见PEMF频率，没有针对设备本身的试验）。\n\n**哪种形态？** 全身垫（Bemer、Healthy Wave、OMI、HigherDOSE）。局部线圈（Pulse Centers、MagnaWave、Curatron）。床垫下安装、主打睡眠（EarthPulse）。可穿戴（Resona VIBE、OlyLife）。\n\n**预算档位？** $500以下：Resona VIBE可穿戴、OlyLife理疗棒。$1,000–$2,500：OMI、HigherDOSE、EarthPulse、Healthy Wave（全尺寸$2,495；小尺寸$995起）。$3,000–$5,000：iMRS、Curatron。$5,000+：Bemer、Pulse Centers、MagnaWave（紧凑型Semi 10 $8,360起；产品线$5,500–$39,660）。\n\nBemer凭做工和品牌领跑高端档；Healthy Wave胜在多模式叠加；Pulse Centers和MagnaWave占据临床线圈细分市场；Resona VIBE以$299重新定义了入门档。",
       "picks": {
         "healthy-wave-multi-wave": {
-          "award": "综合最佳",
           "takeaway": "PEMF + 远红外 + 红光，价格低于Bemer——每次使用覆盖的模式最多。"
         },
         "pulse-centers-pulse-xl-pro": {
@@ -4088,7 +4086,6 @@
       "content": "## 我们如何排名\n\n每款设备都按ONDA公开的[评测方法](/reviews/methodology)评分：六项加权标准中，热源质量和性价比权重最高，因为它们决定了实际桑拿体验和长期拥有成本。\n\n全部十款均依据厂商资料、2026年的独立评测以及已发表的桑拿和红外疗法文献进行评估，而非上手实测。\n\n## 红外桑拿房与桑拿：该买哪款？\n\n三个购买问题就能把这个品类理清楚：\n\n**想要哪种热源？** 全光谱红外 → Sunlighten mPulse、Clearlight Sanctuary 2、Sun Home Equinox、Therasage。白炽灯近红外 → SaunaSpace Faraday。仅远红外 → JNH Joyous（入门桑拿房）、HigherDose Blanket（便携）、Relax Sauna（便携）。传统芬兰式对流 → Finnleo Hallmark（室内）、Almost Heaven Salem（户外桶形）。\n\n**哪种形态？** 桑拿房（4×4 ft及以上）→ Sunlighten、Clearlight、Sun Home、JNH、Therasage。户外桶形 → Almost Heaven Salem。室内传统式 → Finnleo Hallmark。便携 → HigherDose Blanket、Relax Sauna Portable。\n\n**预算档位？** $1,000以下 → HigherDose Blanket。$1,500–$3,500 → JNH Joyous、Therasage。$4,000–$6,500 → Almost Heaven Salem（双人桶形，含加热器标价$4,485）、Sun Home Equinox、SaunaSpace Faraday。$5,000–$10,000+ → Sunlighten mPulse、Clearlight Sanctuary 2、Finnleo Hallmark。\n\n这个品类已经成熟；这十款覆盖了消费者可选的全部主要选项。",
       "picks": {
         "sunlighten-mpulse": {
-          "award": "综合最佳（全光谱红外）",
           "takeaway": "真正的三波段红外、高端雪松木做工、经核实的低EMF。"
         },
         "finnleo-hallmark": {
@@ -4419,7 +4416,7 @@
       "axes": [
         {
           "name": "波长覆盖",
-          "note": "PlatinumLED：七个（480 + 630 + 660 + 810 + 830 + 850 + 1060 nm）。Mito Red 1500X：六个（590 + 630 + 660 + 810 + 830 + 850 nm）。Joovv：红光 + 近红外（660 + 850 nm）。PlatinumLED 以微弱优势领先 Mito Red。"
+          "note": "PlatinumLED与Mito Red实际上不相上下：PlatinumLED有7种波长（480 + 630 + 660 + 810 + 830 + 850 + 1060 nm），Mito Red 1500X有6种（590 + 630 + 660 + 810 + 830 + 850 nm），两者都覆盖红光和更深的近红外。Joovv有2种（660 + 850 nm）。"
         },
         {
           "name": "辐照度核实",
@@ -6169,7 +6166,7 @@
         },
         {
           "name": "信号质量",
-          "note": "两者都是消费级干/半干系统。Neurosity 通道更多；Emotiv 静息时单通道信号略干净。基本持平。"
+          "note": "Neurosity Crown领先：8个256 Hz干电极EEG通道覆盖的皮层范围多于Emotiv Insight 2的5个半干电极。两者在坐姿练习中信号都很稳定。"
         },
         {
           "name": "开放 SDK 访问",

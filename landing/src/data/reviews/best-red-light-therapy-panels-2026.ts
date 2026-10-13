@@ -61,11 +61,11 @@ const bestRedLightPanels2026: Comparison = {
     },
   ],
   verdict:
-    'Mito Red MitoPRO 1500X wins overall — six wavelengths, verified irradiance and a 3-year warranty at $1,299. Joovv Solo 3.0 remains the modular reference with the cleanest build, but at $1,699 it now costs $400 more for a narrower spectrum. PlatinumLED BIOMAX 600 leads on wavelength count and EMF transparency at mid-size; GembaRed Vesta is the EMF-discipline specialist; RubyLx Lyra Pro is for buyers who need every spec lab-verified. Infraredi delivers MitoPRO-class size at a discount; BioLight covers the mid-tier value point; Hooga is the budget entry that actually meets its specs. Bon Charge fits EU/AU consumer buyers; Kineon Move+ is a different product class for targeted joint use. Pick on the axis that matters most — coverage, spectrum, EMF, evidence or price.',
+    'PlatinumLED BIOMAX 600, Mito Red MitoPRO 1500X and RubyLx Lyra Pro are practically equal overall (within 0.1 in the ONDA score). Mito Red MitoPRO 1500X: six wavelengths, verified irradiance and a 3-year warranty at $1,299. Joovv Solo 3.0 remains the modular reference with the cleanest build, but at $1,699 it now costs $400 more for a narrower spectrum. PlatinumLED BIOMAX 600 leads on wavelength count and EMF transparency at mid-size; GembaRed Vesta is the EMF-discipline specialist; RubyLx Lyra Pro is for buyers who need every spec lab-verified. Infraredi delivers MitoPRO-class size at a discount; BioLight covers the mid-tier value point; Hooga is the budget entry that actually meets its specs. Bon Charge fits EU/AU consumer buyers; Kineon Move+ is a different product class for targeted joint use. Pick on the axis that matters most — coverage, spectrum, EMF, evidence or price.',
   faq: [
     {
       q: 'Which red light therapy panel is best in 2026?',
-      a: 'Mito Red MitoPRO 1500X wins overall — six wavelengths, verified irradiance, $1,299. Joovv Solo 3.0 ($1,699) is the modular, stackable premium pick. Hooga HG500 is the budget entry. Pick on which axis (build, spectrum, EMF, price) matters most.',
+      a: 'PlatinumLED BIOMAX 600, Mito Red MitoPRO 1500X and RubyLx Lyra Pro are practically equal overall (within 0.1 in the ONDA score). Mito Red MitoPRO 1500X: six wavelengths, verified irradiance, $1,299. Joovv Solo 3.0 ($1,699) is the modular, stackable premium pick. Hooga HG500 is the budget entry. Pick on which axis (build, spectrum, EMF, price) matters most.',
     },
     {
       q: 'How much irradiance does a red light panel actually need?',

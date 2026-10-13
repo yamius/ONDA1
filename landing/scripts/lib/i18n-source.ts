@@ -66,7 +66,7 @@ function build(): Record<TranslationCollection, Map<string, Entry>> {
           intro: c.intro,
           verdict: c.verdict,
           content: c.content,
-          picks: Object.fromEntries(c.picks.map((p) => [p.reviewSlug, { award: p.award, takeaway: p.takeaway, ...(p.comparisonOnly ? { comparisonOnly: p.comparisonOnly } : {}) }])),
+          picks: Object.fromEntries(c.picks.map((p) => [p.reviewSlug, { award: p.award, takeaway: p.takeaway, ...(p.comparisonOnly ? { comparisonOnly: p.comparisonOnly } : {}), ...(p.ruleAwardCaption ? { ruleAwardCaption: p.ruleAwardCaption } : {}) }])),
           faq: c.faq?.map((f) => ({ q: f.q, a: f.a })),
         }),
       ]),

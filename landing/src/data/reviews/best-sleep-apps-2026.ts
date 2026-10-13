@@ -61,7 +61,7 @@ const bestSleepApps2026: Comparison = {
     },
   ],
   verdict:
-    'Sleep Cycle wins overall — the most polished mainstream tracker, with a smart alarm and a free tier most people never need to leave. But "best" depends entirely on the job. If you have genuine insomnia, Sleepio is the clinically serious pick — it treats the problem rather than measuring it. SleepScore turns data into the most actionable advice; Sleep as Android is the all-in-one for Android; Pillow and AutoSleep are the Apple Watch picks, with AutoSleep the value choice for skipping subscriptions. If the problem is simply falling asleep, BetterSleep, Pzizz and Endel are sound-first apps, and RISE is the one that reframes the whole thing around daytime energy. Pick by the job, not the score.',
+    'Sleep Cycle and SleepScore are practically equal overall (within 0.1 in the ONDA score). Sleep Cycle is the most polished mainstream tracker, with a smart alarm and a free tier most people never need to leave. But "best" depends entirely on the job. If you have genuine insomnia, Sleepio is the clinically serious pick — it treats the problem rather than measuring it. SleepScore turns data into the most actionable advice; Sleep as Android is the all-in-one for Android; Pillow and AutoSleep are the Apple Watch picks, with AutoSleep the value choice for skipping subscriptions. If the problem is simply falling asleep, BetterSleep, Pzizz and Endel are sound-first apps, and RISE is the one that reframes the whole thing around daytime energy. Pick by the job, not the score.',
   faq: [
     {
       q: 'What is the best sleep app?',
@@ -92,7 +92,7 @@ Each app was assessed from public information, app-store data, published trials 
 
 ## Best Sleep Apps: which should you buy?
 
-These apps are not really competitors — they do three different jobs. Trackers (Sleep Cycle, SleepScore, Pillow, AutoSleep, Sleep as Android) measure your night. Sound libraries (BetterSleep, Pzizz, Endel) play you to sleep. Sleepio treats insomnia as a clinical condition, and RISE reframes the whole thing around daytime energy. Sleep Cycle tops the table as the most rounded pick, but the right answer is whichever row matches the job you need done — and your platform.`,
+These apps are not really competitors — they do three different jobs. Trackers (Sleep Cycle, SleepScore, Pillow, AutoSleep, Sleep as Android) measure your night. Sound libraries (BetterSleep, Pzizz, Endel) play you to sleep. Sleepio treats insomnia as a clinical condition, and RISE reframes the whole thing around daytime energy. Sleep Cycle and SleepScore are practically equal at the top of the table, but the right answer is whichever row matches the job you need done — and your platform.`,
   datePublished: '2026-05-16',
   dateModified: '2026-10-10',
 }

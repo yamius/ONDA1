@@ -59,7 +59,13 @@
     "practicallyEqual": "Practically equal by ONDA score ({{scores}})",
     "scoresVs": " vs ",
     "scoresAnd": " and ",
-    "editorialAdjustment": "Editorial adjustment {{value}}: {{reason}}"
+    "editorialAdjustment": "Editorial adjustment {{value}}: {{reason}}",
+    "award": {
+      "best-overall": "Best overall",
+      "best-value": "Best value",
+      "best-value-247": "Best value for 24/7 wear",
+      "practicallyEqual": "practically equal"
+    }
   },
   "testStatus": {
     "hands-on": "Hands-on tested",

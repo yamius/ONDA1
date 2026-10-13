@@ -140,7 +140,7 @@ const roundupRows = comparisons.map((c) => ({
   slug: c.slug,
   title: c.title,
   url: `${SITE}/reviews/compare/${c.slug}`,
-  picks: c.picks.map((p) => ({ review: p.reviewSlug, award: p.award, takeaway: p.takeaway, ...(p.comparisonOnly ? { comparisonOnly: p.comparisonOnly } : {}) })),
+  picks: c.picks.map((p) => ({ review: p.reviewSlug, award: [...(p.ruleAwards ?? []).map((a) => (a.practicallyEqual ? `${a.label} (practically equal)` : a.label) + (p.ruleAwardCaption && a.key === 'best-value' ? ` — ${p.ruleAwardCaption}` : '')), p.award].filter(Boolean).join(' · '), takeaway: p.takeaway, ...(p.comparisonOnly ? { comparisonOnly: p.comparisonOnly } : {}) })),
 }))
 
 mkdirSync(dirname(OUT), { recursive: true })

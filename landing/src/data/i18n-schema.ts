@@ -92,7 +92,7 @@ export const TRANSLATION_SCHEMA = {
       verdict: text,
       topEqualWhoSuits: text,
       content: markdown,
-      picks: { kind: 'keyed', keys: ['award', 'takeaway', 'comparisonOnly'] },
+      picks: { kind: 'keyed', keys: ['award', 'takeaway', 'comparisonOnly', 'ruleAwardCaption'] },
       faq: qaList,
     },
     required: ['title', 'description', 'intro', 'verdict', 'content', 'picks'],

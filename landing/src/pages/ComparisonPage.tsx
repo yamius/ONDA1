@@ -99,21 +99,27 @@ export function ComparisonPage() {
         // The top pick is the "Best overall" award holder (it stays with the
         // former leader when the new #1 leads by ≤ 0.1); otherwise #1.
         const competing = comparison.picks.filter((p) => !p.comparisonOnly)
-        const bestOverall = competing.find((p) => /^best overall/i.test(p.award))
+        // "Best overall" is computed (rule award): one holder, or several "practically equal".
+        const bestHolders = competing.filter((p) => p.ruleAwards?.some((a) => a.key === 'best-overall'))
+        const bestOverall = bestHolders.length === 1 ? bestHolders[0] : undefined
         const top = bestOverall ?? competing[0]
-        // No "Best overall" and #1 is a genuine tie (shared rank): say so
-        // instead of naming one of the tied products as the top pick.
-        const tiedTop = !bestOverall && rankPositions(rankedPickReviews)[0]?.tied
-          ? rankedPickReviews.filter((_, i) => rankPositions(rankedPickReviews)[i].rank === 1)
-          : null
-        const rest = competing.filter((p) => p !== top && p.award && !(tiedTop && tiedTop.some((r) => r.slug === p.reviewSlug)))
+        // Several practically-equal holders, or no award and #1 is a genuine tie: say so
+        // instead of naming one of them as the top pick.
+        const tiedTop = bestHolders.length > 1
+          ? bestHolders.map((p) => getReviewBySlug(p.reviewSlug)).filter((r): r is NonNullable<typeof r> => !!r)
+          : !bestOverall && rankPositions(rankedPickReviews)[0]?.tied
+            ? rankedPickReviews.filter((_, i) => rankPositions(rankedPickReviews)[i].rank === 1)
+            : null
+        const awardText = (p: (typeof competing)[number]) =>
+          [...(p.ruleAwards ?? []).filter((a) => a.key !== 'best-overall').map((a) => a.label), p.award].filter(Boolean).join(', ')
+        const rest = competing.filter((p) => p !== top && awardText(p) && !(tiedTop && tiedTop.some((r) => r.slug === p.reviewSlug)))
         const lc = (t: string) => (/^[A-Z][a-z]/.test(t) ? t.charAt(0).toLowerCase() + t.slice(1) : t)
         const topReview = top && getReviewBySlug(top.reviewSlug)
         if (!topReview) return null
         const others = rest.slice(0, 3)
           .map((p) => ({ p, r: getReviewBySlug(p.reviewSlug) }))
           .filter((x) => x.r)
-          .map((x) => `${x.r!.name} (${lc(x.p.award.replace(/\s*\([^)]*\)/g, ''))})`)
+          .map((x) => `${x.r!.name} (${lc(awardText(x.p).replace(/\s*\([^)]*\)/g, ''))})`)
         const list = others.length > 1 ? `${others.slice(0, -1).join(', ')} and ${others.at(-1)}` : others[0]
         const scope = comparison.title.replace(/\s*\((\d{4})\)\s*$/, ' of $1').replace(/\b[A-Z][a-z]+\b/g, (w) => w.toLowerCase())
         return (
@@ -178,6 +184,14 @@ export function ComparisonPage() {
                   <span className="font-mono text-xs font-bold text-terminal-green">
                     #{pos?.rank}{pos?.tied ? '=' : ''}
                   </span>
+                  {pick.ruleAwards?.map((a) => (
+                    <span key={a.key} className="rounded-md border border-terminal-green/20 bg-terminal-green/5 px-3 py-0.5 font-mono text-[10px] tracking-wider text-terminal-green">
+                      {tReviews(`ui.award.${a.key}`, { defaultValue: a.label })}
+                      {a.practicallyEqual && ` · ${tReviews('ui.award.practicallyEqual', { defaultValue: 'practically equal' })}`}
+                      {a.key === 'best-value' && pick.ruleAwardCaption &&
+                        ` — ${tReviews(`comparisons.${slug}.picks.${pick.reviewSlug}.ruleAwardCaption`, { defaultValue: pick.ruleAwardCaption })}`}
+                    </span>
+                  ))}
                   {pick.award && (
                     <span className="rounded-md border border-terminal-green/20 bg-terminal-green/5 px-3 py-0.5 font-mono text-[10px] tracking-wider text-terminal-green">
                       {tReviews(`comparisons.${slug}.picks.${pick.reviewSlug}.award`, { defaultValue: pick.award })}
