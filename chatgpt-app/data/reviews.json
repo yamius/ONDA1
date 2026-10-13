@@ -4211,7 +4211,7 @@
         },
         {
           "id": "comfort",
-          "score": 7.5,
+          "score": 7,
           "note": "A rigid 228 g crown — comfortable for focus sessions, not designed for overnight wear or moving sessions; about three hours per charge."
         },
         {
@@ -4734,69 +4734,6 @@
       "dateModified": "2026-05-21"
     },
     {
-      "slug": "platinumled-biomax-600",
-      "name": "PlatinumLED BIOMAX 600",
-      "brand": "PlatinumLED",
-      "category": "red-light",
-      "productType": "Mid-size red + NIR LED therapy panel",
-      "url": "https://onda-life.com/reviews/platinumled-biomax-600",
-      "categoryUrl": "https://onda-life.com/reviews/red-light-therapy",
-      "priceUsd": 1049,
-      "priceNote": "one-time; in stock on the official US store; stand/mount hardware extra; open-box units sometimes cheaper",
-      "priceAsOf": "2026-10-01",
-      "score": 8.2,
-      "scores": [
-        {
-          "id": "irradiance",
-          "score": 8.5,
-          "note": "Manufacturer-claimed peak ~149 mW/cm² at 0\"; ~70 mW/cm² at 6\". Independent verification within 10% of stated 6\" figures."
-        },
-        {
-          "id": "wavelengths",
-          "score": 9,
-          "note": "Seven-wavelength coverage (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm, per PlatinumLED’s current product page) — broader than even MitoPRO. The 480 nm blue is unusual and a small share of total output."
-        },
-        {
-          "id": "build-emf-flicker",
-          "score": 9,
-          "note": "Third-party EMF testing at <0.3 mG at 6\", flicker rate disclosed and low. PlatinumLED published its lab testing publicly — rare in the category."
-        },
-        {
-          "id": "coverage",
-          "score": 7.5,
-          "note": "Mid-size panel — half-body for upper torso. Smaller than Joovv Solo or MitoPRO 1500; pairs well with targeted work but requires stacking for full body."
-        },
-        {
-          "id": "evidence",
-          "score": 7.5,
-          "note": "PlatinumLED references real photobiomodulation literature, and the marketing is restrained relative to category norms. “FDA Class II Registered” on its pages means registration/listing, not clearance."
-        },
-        {
-          "id": "value",
-          "score": 7.5,
-          "note": "$1,049 (Oct 2026) — meaningfully cheaper than Joovv Solo 3.0 and MitoPRO 1500 for comparable build and broader spectrum. Strong value in the premium tier."
-        }
-      ],
-      "verdict": "Strong mid-size panel with the richest wavelength spectrum and clean EMF discipline. Joovv-class build at a tier-lower price.",
-      "bestFor": "Best for buyers who want broad-spectrum coverage and verified EMF discipline at sub-Joovv pricing.",
-      "pros": [
-        "Broadest wavelength spectrum in this list — seven published wavelengths",
-        "Publicly-published third-party EMF and flicker testing",
-        "Cheaper than Joovv Solo 3.0 and MitoPRO 1500 at $1,049; 3-year warranty",
-        "Mature brand with long consumer-RLT track record"
-      ],
-      "cons": [
-        "Mid-size panel — smaller treatment area than MitoPRO 1500 or full Joovv stack",
-        "Seven-wavelength claim relies on small LED counts for the less-common bands (480, 810, 1060)",
-        "Stand and mount hardware sold separately"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
       "slug": "mito-red-mitopro-1500",
       "name": "Mito Red MitoPRO 1500",
       "brand": "Mito Red Light",
@@ -4831,7 +4768,7 @@
         },
         {
           "id": "evidence",
-          "score": 7.5,
+          "score": 7,
           "note": "The current 1500X is FDA Class II registered (per Mito Red, Oct 2026), like Joovv — registration/listing, not clearance or approval. References the same underlying photobiomodulation literature; marketing is reasonably restrained compared to category norms. Mito Red itself explains on its site that FDA registration and listing are not the same as 510(k) clearance."
         },
         {
@@ -4858,7 +4795,70 @@
       "hrvMetric": null,
       "worksWithOnda": "not-a-device",
       "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
+      "dateModified": "2026-10-10 No independent trial of this device itself — 7.0 is the ceiling without independent validation (ONDA rule)."
+    },
+    {
+      "slug": "platinumled-biomax-600",
+      "name": "PlatinumLED BIOMAX 600",
+      "brand": "PlatinumLED",
+      "category": "red-light",
+      "productType": "Mid-size red + NIR LED therapy panel",
+      "url": "https://onda-life.com/reviews/platinumled-biomax-600",
+      "categoryUrl": "https://onda-life.com/reviews/red-light-therapy",
+      "priceUsd": 1049,
+      "priceNote": "one-time; in stock on the official US store; stand/mount hardware extra; open-box units sometimes cheaper",
+      "priceAsOf": "2026-10-01",
+      "score": 8.1,
+      "scores": [
+        {
+          "id": "irradiance",
+          "score": 8.5,
+          "note": "Manufacturer-claimed peak ~149 mW/cm² at 0\"; ~70 mW/cm² at 6\". Independent verification within 10% of stated 6\" figures."
+        },
+        {
+          "id": "wavelengths",
+          "score": 9,
+          "note": "Seven-wavelength coverage (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm, per PlatinumLED’s current product page) — broader than even MitoPRO. The 480 nm blue is unusual and a small share of total output."
+        },
+        {
+          "id": "build-emf-flicker",
+          "score": 9,
+          "note": "Third-party EMF testing at <0.3 mG at 6\", flicker rate disclosed and low. PlatinumLED published its lab testing publicly — rare in the category."
+        },
+        {
+          "id": "coverage",
+          "score": 7.5,
+          "note": "Mid-size panel — half-body for upper torso. Smaller than Joovv Solo or MitoPRO 1500; pairs well with targeted work but requires stacking for full body."
+        },
+        {
+          "id": "evidence",
+          "score": 7,
+          "note": "PlatinumLED references real photobiomodulation literature, and the marketing is restrained relative to category norms. “FDA Class II Registered” on its pages means registration/listing, not clearance."
+        },
+        {
+          "id": "value",
+          "score": 7.5,
+          "note": "$1,049 (Oct 2026) — meaningfully cheaper than Joovv Solo 3.0 and MitoPRO 1500 for comparable build and broader spectrum. Strong value in the premium tier."
+        }
+      ],
+      "verdict": "Strong mid-size panel with the richest wavelength spectrum and clean EMF discipline. Joovv-class build at a tier-lower price.",
+      "bestFor": "Best for buyers who want broad-spectrum coverage and verified EMF discipline at sub-Joovv pricing.",
+      "pros": [
+        "Broadest wavelength spectrum in this list — seven published wavelengths",
+        "Publicly-published third-party EMF and flicker testing",
+        "Cheaper than Joovv Solo 3.0 and MitoPRO 1500 at $1,049; 3-year warranty",
+        "Mature brand with long consumer-RLT track record"
+      ],
+      "cons": [
+        "Mid-size panel — smaller treatment area than MitoPRO 1500 or full Joovv stack",
+        "Seven-wavelength claim relies on small LED counts for the less-common bands (480, 810, 1060)",
+        "Stand and mount hardware sold separately"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-10 No independent trial of this device itself — 7.0 is the ceiling without independent validation (ONDA rule)."
     },
     {
       "slug": "rubylx-lyra-pro",
@@ -4871,7 +4871,7 @@
       "priceUsd": 1099,
       "priceNote": "one-time; stand included",
       "priceAsOf": "2026-05-23",
-      "score": 8.1,
+      "score": 8,
       "scores": [
         {
           "id": "irradiance",
@@ -4895,7 +4895,7 @@
         },
         {
           "id": "evidence",
-          "score": 7.5,
+          "score": 7,
           "note": "RubyLx publishes full third-party lab reports for every claimed spec — the most-tested panel in this list."
         },
         {
@@ -4921,71 +4921,7 @@
       "hrvMetric": null,
       "worksWithOnda": "not-a-device",
       "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
-      "slug": "joovv-solo-3",
-      "name": "Joovv Solo 3.0",
-      "brand": "Joovv",
-      "category": "red-light",
-      "productType": "Modular full-panel red + NIR LED therapy device",
-      "url": "https://onda-life.com/reviews/joovv-solo-3",
-      "categoryUrl": "https://onda-life.com/reviews/red-light-therapy",
-      "priceUsd": 1699,
-      "priceNote": "one-time; official US store price checked 2026-10-01; modular stacks scale up from there",
-      "priceAsOf": "2026-10-01",
-      "score": 8,
-      "scores": [
-        {
-          "id": "irradiance",
-          "score": 9,
-          "note": "Manufacturer-claimed >100 mW/cm² at 6 inches; independent meter readings sit close to that figure unlike most cheaper panels — one of the most honestly-specced devices in the category."
-        },
-        {
-          "id": "wavelengths",
-          "score": 8.5,
-          "note": "Combo 660 nm red + 850 nm NIR with published peaks at the standard photobiomodulation wavelengths. No exotic UV/940 nm additions; clean spectrum."
-        },
-        {
-          "id": "build-emf-flicker",
-          "score": 9,
-          "note": "Aluminium back panel, glass front, third-party EMF tested at <0.5 mG at 6 inches; flicker rate published and low. Among the cleanest builds in this list."
-        },
-        {
-          "id": "coverage",
-          "score": 8.5,
-          "note": "Solo is half-body coverage; modular system stacks vertically for full-body. Stand and door-mount hardware included. Modularity is unique in this list."
-        },
-        {
-          "id": "evidence",
-          "score": 8,
-          "note": "Registered with the FDA as a Class II device, per Joovv (registration/listing, not clearance or approval; listed indications: topical heating for temporary relief of minor muscle and joint pain). Joovv collaborates with published photobiomodulation researchers and cites real peer-reviewed studies on the underlying mechanism. Its “proven to heal” line is about red and near-infrared light in general, not about the Solo 3.0."
-        },
-        {
-          "id": "value",
-          "score": 5.5,
-          "note": "$1,699 for Solo 3.0 (official US store, Oct 2026) — most expensive in this list: $400 more than the MitoPRO 1500X ($1,299) and $650 more than PlatinumLED BIOMAX 600 ($1,049), both with broader spectrum. You pay mainly for modularity and build."
-        }
-      ],
-      "verdict": "A long-running, widely used panel — modular, well-built, fairly measured irradiance. Most expensive in this list, mostly justified.",
-      "bestFor": "Best for biohackers who want the premium modular build and verified irradiance, and accept premium pricing for it.",
-      "pros": [
-        "Verified irradiance, low EMF, low flicker",
-        "Modular Solo system stacks vertically for full-body without buying a new panel",
-        "Real published photobiomodulation researcher partnerships, not just marketing",
-        "2-year warranty; HSA/FSA eligible"
-      ],
-      "cons": [
-        "The most expensive panel in this list — $1,699 for Solo 3.0",
-        "Modular full-body stack runs $3,000–$5,000 total",
-        "No exotic wavelength options for users who want 810 / 830 / 940 nm",
-        "Single front-emitter layout, not bidirectional"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
+      "dateModified": "2026-10-10 No independent trial of this device itself — 7.0 is the ceiling without independent validation (ONDA rule)."
     },
     {
       "slug": "infraredi-pro-1500",
@@ -5051,6 +4987,70 @@
       "dateModified": "2026-10-10"
     },
     {
+      "slug": "joovv-solo-3",
+      "name": "Joovv Solo 3.0",
+      "brand": "Joovv",
+      "category": "red-light",
+      "productType": "Modular full-panel red + NIR LED therapy device",
+      "url": "https://onda-life.com/reviews/joovv-solo-3",
+      "categoryUrl": "https://onda-life.com/reviews/red-light-therapy",
+      "priceUsd": 1699,
+      "priceNote": "one-time; official US store price checked 2026-10-01; modular stacks scale up from there",
+      "priceAsOf": "2026-10-01",
+      "score": 7.9,
+      "scores": [
+        {
+          "id": "irradiance",
+          "score": 9,
+          "note": "Manufacturer-claimed >100 mW/cm² at 6 inches; independent meter readings sit close to that figure unlike most cheaper panels — one of the most honestly-specced devices in the category."
+        },
+        {
+          "id": "wavelengths",
+          "score": 8.5,
+          "note": "Combo 660 nm red + 850 nm NIR with published peaks at the standard photobiomodulation wavelengths. No exotic UV/940 nm additions; clean spectrum."
+        },
+        {
+          "id": "build-emf-flicker",
+          "score": 9,
+          "note": "Aluminium back panel, glass front, third-party EMF tested at <0.5 mG at 6 inches; flicker rate published and low. Among the cleanest builds in this list."
+        },
+        {
+          "id": "coverage",
+          "score": 8.5,
+          "note": "Solo is half-body coverage; modular system stacks vertically for full-body. Stand and door-mount hardware included. Modularity is unique in this list."
+        },
+        {
+          "id": "evidence",
+          "score": 7,
+          "note": "Registered with the FDA as a Class II device, per Joovv (registration/listing, not clearance or approval; listed indications: topical heating for temporary relief of minor muscle and joint pain). Joovv collaborates with published photobiomodulation researchers and cites real peer-reviewed studies on the underlying mechanism. Its “proven to heal” line is about red and near-infrared light in general, not about the Solo 3.0."
+        },
+        {
+          "id": "value",
+          "score": 5.5,
+          "note": "$1,699 for Solo 3.0 (official US store, Oct 2026) — most expensive in this list: $400 more than the MitoPRO 1500X ($1,299) and $650 more than PlatinumLED BIOMAX 600 ($1,049), both with broader spectrum. You pay mainly for modularity and build."
+        }
+      ],
+      "verdict": "A long-running, widely used panel — modular, well-built, fairly measured irradiance. Most expensive in this list, mostly justified.",
+      "bestFor": "Best for biohackers who want the premium modular build and verified irradiance, and accept premium pricing for it.",
+      "pros": [
+        "Verified irradiance, low EMF, low flicker",
+        "Modular Solo system stacks vertically for full-body without buying a new panel",
+        "Real published photobiomodulation researcher partnerships, not just marketing",
+        "2-year warranty; HSA/FSA eligible"
+      ],
+      "cons": [
+        "The most expensive panel in this list — $1,699 for Solo 3.0",
+        "Modular full-body stack runs $3,000–$5,000 total",
+        "No exotic wavelength options for users who want 810 / 830 / 940 nm",
+        "Single front-emitter layout, not bidirectional"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-10 No independent trial of this device itself — 7.0 is the ceiling without independent validation (ONDA rule)."
+    },
+    {
       "slug": "gembared-vesta",
       "name": "GembaRed Vesta",
       "brand": "GembaRed",
@@ -5085,7 +5085,7 @@
         },
         {
           "id": "evidence",
-          "score": 7.5,
+          "score": 7,
           "note": "Founder-engineer publishes the technical reasoning behind the EMF-shielding choices, which is unusual transparency for the category."
         },
         {
@@ -5111,7 +5111,7 @@
       "hrvMetric": null,
       "worksWithOnda": "not-a-device",
       "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
+      "dateModified": "2026-10-10 No independent trial of this device itself — 7.0 is the ceiling without independent validation (ONDA rule)."
     },
     {
       "slug": "biolight-pro-900",
@@ -5192,7 +5192,7 @@
         {
           "id": "irradiance",
           "score": 8,
-          "note": "Hooga now states 94 mW/cm² at 6\" on the official product page (checked 2026-10-01). Earlier independent meter readings tracked the stated figures closely — honest specs at the price."
+          "note": "Maker-stated: Hooga now states 94 mW/cm² at 6\" on the official product page (checked 2026-10-01). No independent measurement of this figure yet; earlier independent meter readings tracked the earlier stated figures closely — honest specs at the price."
         },
         {
           "id": "wavelengths",
@@ -5314,7 +5314,7 @@
       "priceUsd": 499,
       "priceNote": "MOVE+ Pro on kineon.io (list $699); 3 modules, strap, charge case; 30-day trial, 1-year warranty, HSA/FSA eligible",
       "priceAsOf": "2026-10-01",
-      "score": 7.1,
+      "score": 7,
       "scores": [
         {
           "id": "irradiance",
@@ -5338,7 +5338,7 @@
         },
         {
           "id": "evidence",
-          "score": 8,
+          "score": 7,
           "note": "Listed in the FDA device database (GUDID) as a Class II over-the-counter LED-plus-laser device for knee pain relief. Low-level laser therapy for knee osteoarthritis has meta-analytic support; no independent trial of the Move+ itself. “Backed by 9,600+ research papers” on its product page refers to red-light research in general, not to trials of the Move+."
         },
         {
@@ -5365,7 +5365,7 @@
       "hrvMetric": null,
       "worksWithOnda": "not-a-device",
       "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
+      "dateModified": "2026-10-10 7.0 is the ceiling without an independent trial of the device (ONDA rule)."
     },
     {
       "slug": "plunge",
@@ -5378,7 +5378,7 @@
       "priceUsd": 5990,
       "priceNote": "one-time; ozone, chiller and 3-year warranty included",
       "priceAsOf": "2026-05-25",
-      "score": 8,
+      "score": 7.9,
       "scores": [
         {
           "id": "chiller-capacity",
@@ -5392,8 +5392,8 @@
         },
         {
           "id": "water-management",
-          "score": 8.5,
-          "note": "Ozone sanitation + filter; water changes every 2–4 weeks under typical use. The most-polished water-management system in the consumer category."
+          "score": 8,
+          "note": "Ozone sanitation + filter; water changes every 2–4 weeks under typical use."
         },
         {
           "id": "form-factor",
@@ -6391,70 +6391,6 @@
       "dateModified": "2026-10-10"
     },
     {
-      "slug": "clearlight-sanctuary-2",
-      "name": "Clearlight Sanctuary 2",
-      "brand": "Clearlight (Jacuzzi)",
-      "category": "sauna",
-      "productType": "Premium full-spectrum IR cabin sauna (2-person)",
-      "url": "https://onda-life.com/reviews/clearlight-sanctuary-2",
-      "categoryUrl": "https://onda-life.com/reviews/infrared-sauna",
-      "priceUsd": 7299,
-      "priceNote": "Sanctuary 2 basswood sale price ($7,799 list); mahogany $7,699 ($8,199 list)",
-      "priceAsOf": "2026-10-01",
-      "score": 7.4,
-      "scores": [
-        {
-          "id": "heat-source",
-          "score": 8.5,
-          "note": "Carbon-ceramic far-IR heaters on side/back walls plus two 500 W full-spectrum heaters (near + mid + far) on the front glass. Credibly broad-spectrum, but less granular than Sunlighten mPulse’s separately programmable wavelengths."
-        },
-        {
-          "id": "build",
-          "score": 8.5,
-          "note": "Basswood or mahogany, double-wall tongue-and-groove construction, 8 mm tempered glass. Complete Limited Lifetime Warranty. 450 lb cabin."
-        },
-        {
-          "id": "emf",
-          "score": 8.5,
-          "note": "Clearlight markets the cabin as low EMF and low ELF. Treat specific EMF figures as the maker’s claims; ask for the current test report before buying if EMF is a deciding factor."
-        },
-        {
-          "id": "form-factor",
-          "score": 7.5,
-          "note": "2-person cabin: 52 × 48 × 77 in outside (47 × 44 × 74 in inside, 47 × 22 in bench). Runs on 120 V but needs a 20 A outlet (NEMA 5-20 plug, 2,250 W)."
-        },
-        {
-          "id": "evidence",
-          "score": 7,
-          "note": "Established brand; the strongest sauna evidence comes from traditional Finnish sauna cohorts, not infrared-specific trials."
-        },
-        {
-          "id": "value",
-          "score": 6,
-          "note": "$7,299 basswood / $7,699 mahogany (official store, Oct 2026, $500 below list) — now above Sunlighten mPulse (~$6,000) and Sun Home Equinox (~$6,000 2-person). The lifetime warranty offsets some, not all, of the premium."
-        }
-      ],
-      "verdict": "The closest premium competitor to Sunlighten — full-spectrum IR, low-EMF/ELF design and a lifetime warranty, in a compact 2-person cabin that runs on a 120 V/20 A circuit.",
-      "bestFor": "Best for buyers wanting Sunlighten-tier full-spectrum IR with a lifetime warranty and Jacuzzi brand backing in a compact 2-person cabin.",
-      "pros": [
-        "Full-spectrum IR with a Complete Limited Lifetime Warranty",
-        "Choice of basswood or mahogany cabin construction",
-        "Marketed as low EMF / low ELF",
-        "Runs on a 120 V supply (20 A outlet)"
-      ],
-      "cons": [
-        "Less granular wavelength control than Sunlighten mPulse (no separate near/mid/far programming)",
-        "Premium tier — $7,299+ for 2-person",
-        "Needs a 20 A circuit and roughly 4.5 × 4 ft of floor space",
-        "Lead times during peak demand"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
       "slug": "therasage-thera-sauna-personal",
       "name": "Therasage TheraSauna Personal",
       "brand": "Therasage",
@@ -6511,6 +6447,70 @@
         "EMF profile higher than SaunaSpace Faraday",
         "Build less premium than Sunlighten or Clearlight cabins",
         "Brand recognition narrower than the category leaders"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-10"
+    },
+    {
+      "slug": "clearlight-sanctuary-2",
+      "name": "Clearlight Sanctuary 2",
+      "brand": "Clearlight (Jacuzzi)",
+      "category": "sauna",
+      "productType": "Premium full-spectrum IR cabin sauna (2-person)",
+      "url": "https://onda-life.com/reviews/clearlight-sanctuary-2",
+      "categoryUrl": "https://onda-life.com/reviews/infrared-sauna",
+      "priceUsd": 7299,
+      "priceNote": "Sanctuary 2 basswood sale price ($7,799 list); mahogany $7,699 ($8,199 list)",
+      "priceAsOf": "2026-10-01",
+      "score": 7.3,
+      "scores": [
+        {
+          "id": "heat-source",
+          "score": 8.5,
+          "note": "Carbon-ceramic far-IR heaters on side/back walls plus two 500 W full-spectrum heaters (near + mid + far) on the front glass. Credibly broad-spectrum, but less granular than Sunlighten mPulse’s separately programmable wavelengths."
+        },
+        {
+          "id": "build",
+          "score": 8.5,
+          "note": "Basswood or mahogany, double-wall tongue-and-groove construction, 8 mm tempered glass. Complete Limited Lifetime Warranty. 450 lb cabin."
+        },
+        {
+          "id": "emf",
+          "score": 8,
+          "note": "Clearlight markets the cabin as low EMF and low ELF. Treat specific EMF figures as the maker’s claims; ask for the current test report before buying if EMF is a deciding factor."
+        },
+        {
+          "id": "form-factor",
+          "score": 7.5,
+          "note": "2-person cabin: 52 × 48 × 77 in outside (47 × 44 × 74 in inside, 47 × 22 in bench). Runs on 120 V but needs a 20 A outlet (NEMA 5-20 plug, 2,250 W)."
+        },
+        {
+          "id": "evidence",
+          "score": 7,
+          "note": "Established brand; the strongest sauna evidence comes from traditional Finnish sauna cohorts, not infrared-specific trials."
+        },
+        {
+          "id": "value",
+          "score": 6,
+          "note": "$7,299 basswood / $7,699 mahogany (official store, Oct 2026, $500 below list) — now above Sunlighten mPulse (~$6,000) and Sun Home Equinox (~$6,000 2-person). The lifetime warranty offsets some, not all, of the premium."
+        }
+      ],
+      "verdict": "The closest premium competitor to Sunlighten — full-spectrum IR, low-EMF/ELF design and a lifetime warranty, in a compact 2-person cabin that runs on a 120 V/20 A circuit.",
+      "bestFor": "Best for buyers wanting Sunlighten-tier full-spectrum IR with a lifetime warranty and Jacuzzi brand backing in a compact 2-person cabin.",
+      "pros": [
+        "Full-spectrum IR with a Complete Limited Lifetime Warranty",
+        "Choice of basswood or mahogany cabin construction",
+        "Marketed as low EMF / low ELF",
+        "Runs on a 120 V supply (20 A outlet)"
+      ],
+      "cons": [
+        "Less granular wavelength control than Sunlighten mPulse (no separate near/mid/far programming)",
+        "Premium tier — $7,299+ for 2-person",
+        "Needs a 20 A circuit and roughly 4.5 × 4 ft of floor space",
+        "Lead times during peak demand"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": null,
@@ -6775,6 +6775,70 @@
       "dateModified": "2026-10-10"
     },
     {
+      "slug": "eight-sleep-pod-4",
+      "name": "Eight Sleep Pod 4",
+      "brand": "Eight Sleep",
+      "category": "sleep-climate",
+      "productType": "Premium smart sleep-climate cover (fits an existing mattress; Eight Sleep mattress optional)",
+      "url": "https://onda-life.com/reviews/eight-sleep-pod-4",
+      "categoryUrl": "https://onda-life.com/reviews/smart-sleep-climate",
+      "priceUsd": 4000,
+      "priceNote": "queen size; + ~$20/mo subscription",
+      "priceAsOf": "2026-05-25",
+      "score": 7.9,
+      "scores": [
+        {
+          "id": "climate-range",
+          "score": 9.5,
+          "note": "Best-in-class dual-zone range (13–43°C), strong recovery time, holds target through wide ambient swings. Autopilot adjusts overnight based on estimated sleep stage."
+        },
+        {
+          "id": "build",
+          "score": 8.5,
+          "note": "Premium cover construction; fits an existing mattress 10–16 in thick (per Tom's Guide). Hub size moderate. 2-year warranty. Multi-year reliability track record largely positive."
+        },
+        {
+          "id": "app-tracking",
+          "score": 9,
+          "note": "Best sleep/HRV tracking integrated into a climate system. Sleep-stage estimates, HRV trends, snore detection. Apple Health integration."
+        },
+        {
+          "id": "form-factor",
+          "score": 8.5,
+          "note": "A cover that fits over your existing mattress like a fitted sheet; an Eight Sleep mattress was optional. Dual-zone (his/her temperature). The hub (about 16 × 7 × 17 in) needs floor space next to the bed. Eight Sleep's own Pod 4 page has been removed; configuration per Tom's Guide (secondary source)."
+        },
+        {
+          "id": "subscription",
+          "score": 5,
+          "note": "Autopilot subscription required for full features (~$15-25/month). The biggest editorial criticism — premium hardware locked behind ongoing membership."
+        },
+        {
+          "id": "value",
+          "score": 5.5,
+          "note": "$3,000-5,000 hardware + ongoing subscription. Premium tier; the subscription stretches 3-year cost."
+        }
+      ],
+      "verdict": "The category-defining smart sleep-climate system — dual-zone water cooling/heating, HRV tracking, subscription required.",
+      "bestFor": "Best for users wanting category-leading smart sleep-climate hardware with integrated HRV tracking — and willing to absorb the subscription.",
+      "pros": [
+        "Best-in-class climate range with dual-zone (his/her) control",
+        "Built-in HRV and sleep-stage tracking — no separate wearable needed",
+        "Autopilot adjusts temperature by estimated sleep stage automatically",
+        "Multi-year reliability track record largely positive"
+      ],
+      "cons": [
+        "Autopilot subscription required for full features — biggest editorial criticism",
+        "Premium pricing ($3,000-5,000) plus ongoing membership",
+        "Hub requires nightstand space and water management",
+        "Locked into Eight Sleep ecosystem"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-10"
+    },
+    {
       "slug": "eight-sleep-pod-cover-pro",
       "name": "Eight Sleep Pod Cover Pro",
       "brand": "Eight Sleep",
@@ -6805,7 +6869,7 @@
         {
           "id": "form-factor",
           "score": 8.5,
-          "note": "Cover-only fits existing mattress — flexibility advantage over Pod 4 full system. Dual-zone preserved."
+          "note": "Cover-only, fits an existing mattress — the same approach as the Pod 4 cover. Dual-zone preserved."
         },
         {
           "id": "subscription",
@@ -6815,19 +6879,19 @@
         {
           "id": "value",
           "score": 6.5,
-          "note": "$2,000-2,500 — meaningfully cheaper than Pod 4 full system. Best entry into Eight Sleep if mattress replacement is not wanted."
+          "note": "$2,000-2,500 — cheaper than the Pod 4 cover (from $2,449, per Tom's Guide). Best entry into Eight Sleep if mattress replacement is not wanted."
         }
       ],
       "verdict": "Pod 4 climate and tracking on your existing mattress — cheaper entry into the Eight Sleep ecosystem.",
       "bestFor": "Best for users wanting Pod 4 capability on their existing mattress — entry to Eight Sleep without mattress replacement.",
       "pros": [
-        "Same dual-zone climate and tracking as Pod 4 full system",
+        "Same dual-zone climate and tracking approach as the Pod 4 cover",
         "Fits existing mattress — no mattress replacement required",
         "Cheaper entry into Eight Sleep ecosystem",
         "Dual-zone (his/her) temperature preserved"
       ],
       "cons": [
-        "Same subscription requirement as Pod 4 full system",
+        "Same subscription requirement as the Pod 4",
         "Mattress thickness limitations (up to ~14 inches)",
         "Heavier cover changes mattress feel slightly",
         "Still expensive — $2,000+ for the cover alone"
@@ -7031,62 +7095,62 @@
       "dateModified": "2026-10-10"
     },
     {
-      "slug": "eight-sleep-pod-4",
-      "name": "Eight Sleep Pod 4",
+      "slug": "eight-sleep-pod-3",
+      "name": "Eight Sleep Pod 3",
       "brand": "Eight Sleep",
       "category": "sleep-climate",
-      "productType": "Premium smart sleep-climate cover + mattress system",
-      "url": "https://onda-life.com/reviews/eight-sleep-pod-4",
+      "productType": "Previous-generation smart sleep-climate cover",
+      "url": "https://onda-life.com/reviews/eight-sleep-pod-3",
       "categoryUrl": "https://onda-life.com/reviews/smart-sleep-climate",
-      "priceUsd": 4000,
-      "priceNote": "queen size; + ~$20/mo subscription",
+      "priceUsd": 1800,
+      "priceNote": "discounted inventory; + ~$20/mo subscription",
       "priceAsOf": "2026-05-25",
       "score": 7.7,
       "scores": [
         {
           "id": "climate-range",
-          "score": 9.5,
-          "note": "Best-in-class dual-zone range (13–43°C), strong recovery time, holds target through wide ambient swings. Autopilot adjusts overnight based on estimated sleep stage."
+          "score": 8.5,
+          "note": "Solid dual-zone range; slightly less aggressive than Pod 4 in peak summer heat. Same Autopilot framework."
         },
         {
           "id": "build",
-          "score": 8.5,
-          "note": "Premium cover construction over Eight Sleep mattress. Hub size moderate. 2-year warranty. Multi-year reliability track record largely positive."
+          "score": 8,
+          "note": "Pod 3 cover and hub. Discontinued for new production but still sold from inventory. 2-year warranty if bought new."
         },
         {
           "id": "app-tracking",
-          "score": 9,
-          "note": "Best sleep/HRV tracking integrated into a climate system. Sleep-stage estimates, HRV trends, snore detection. Apple Health integration."
+          "score": 8.5,
+          "note": "Same Eight Sleep app and tracking as Pod 4. HRV and sleep-stage tracking identical."
         },
         {
           "id": "form-factor",
-          "score": 7.5,
-          "note": "Cover + mattress system. Dual-zone (his/her temperature) is unique in the category. Hub requires nightstand space."
+          "score": 8.5,
+          "note": "Cover form with dual zone — same as Pod Cover Pro."
         },
         {
           "id": "subscription",
           "score": 5,
-          "note": "Autopilot subscription required for full features (~$15-25/month). The biggest editorial criticism — premium hardware locked behind ongoing membership."
+          "note": "Same Autopilot subscription requirement as Pod 4."
         },
         {
           "id": "value",
-          "score": 5.5,
-          "note": "$3,000-5,000 hardware + ongoing subscription. Premium tier; the subscription stretches 3-year cost."
+          "score": 7,
+          "note": "$1,500-2,000 discounted vs Pod 4 $3,000-4,000 — strong value tier when available."
         }
       ],
-      "verdict": "The category-defining smart sleep-climate system — dual-zone water cooling/heating, HRV tracking, subscription required.",
-      "bestFor": "Best for users wanting category-leading smart sleep-climate hardware with integrated HRV tracking — and willing to absorb the subscription.",
+      "verdict": "Pod 4 capability at Pod 3 prices — solid value when discounted, slightly less rigorous climate range than Pod 4.",
+      "bestFor": "Best for value-tier entry into Eight Sleep when Pod 3 inventory is discounted.",
       "pros": [
-        "Best-in-class climate range with dual-zone (his/her) control",
-        "Built-in HRV and sleep-stage tracking — no separate wearable needed",
-        "Autopilot adjusts temperature by estimated sleep stage automatically",
-        "Multi-year reliability track record largely positive"
+        "Same Eight Sleep app, tracking and Autopilot as Pod 4",
+        "Frequently discounted relative to Pod 4",
+        "Multi-year reliability track record",
+        "Cheaper entry into Eight Sleep ecosystem"
       ],
       "cons": [
-        "Autopilot subscription required for full features — biggest editorial criticism",
-        "Premium pricing ($3,000-5,000) plus ongoing membership",
-        "Hub requires nightstand space and water management",
-        "Locked into Eight Sleep ecosystem"
+        "Climate recovery less aggressive than Pod 4 in peak heat",
+        "Discontinued for new production — inventory only",
+        "Same subscription requirement as Pod 4",
+        "Pod 4 is the active flagship"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": null,
@@ -7099,7 +7163,7 @@
       "name": "Eight Sleep Pod 5",
       "brand": "Eight Sleep",
       "category": "sleep-climate",
-      "productType": "Premium smart sleep-climate cover + mattress system",
+      "productType": "Premium smart sleep-climate cover + hub for an existing mattress (Ultra adds an adjustable Base and a Blanket; no mattress)",
       "url": "https://onda-life.com/reviews/eight-sleep-pod-5",
       "categoryUrl": "https://onda-life.com/reviews/smart-sleep-climate",
       "priceUsd": 6099,
@@ -7151,70 +7215,6 @@
         "Autopilot subscription still required for full features",
         "The headline software (Autopilot 4.0) also comes to the Pod 4 — less reason to upgrade",
         "Bigger install and footprint; locked into the Eight Sleep ecosystem"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
-      "slug": "eight-sleep-pod-3",
-      "name": "Eight Sleep Pod 3",
-      "brand": "Eight Sleep",
-      "category": "sleep-climate",
-      "productType": "Previous-generation smart sleep-climate cover",
-      "url": "https://onda-life.com/reviews/eight-sleep-pod-3",
-      "categoryUrl": "https://onda-life.com/reviews/smart-sleep-climate",
-      "priceUsd": 1800,
-      "priceNote": "discounted inventory; + ~$20/mo subscription",
-      "priceAsOf": "2026-05-25",
-      "score": 7.5,
-      "scores": [
-        {
-          "id": "climate-range",
-          "score": 8.5,
-          "note": "Solid dual-zone range; slightly less aggressive than Pod 4 in peak summer heat. Same Autopilot framework."
-        },
-        {
-          "id": "build",
-          "score": 8,
-          "note": "Pod 3 cover and hub. Discontinued for new production but still sold from inventory. 2-year warranty if bought new."
-        },
-        {
-          "id": "app-tracking",
-          "score": 8.5,
-          "note": "Same Eight Sleep app and tracking as Pod 4. HRV and sleep-stage tracking identical."
-        },
-        {
-          "id": "form-factor",
-          "score": 7.5,
-          "note": "Cover form with dual zone — same as Pod Cover Pro."
-        },
-        {
-          "id": "subscription",
-          "score": 5,
-          "note": "Same Autopilot subscription requirement as Pod 4."
-        },
-        {
-          "id": "value",
-          "score": 7,
-          "note": "$1,500-2,000 discounted vs Pod 4 $3,000-4,000 — strong value tier when available."
-        }
-      ],
-      "verdict": "Pod 4 capability at Pod 3 prices — solid value when discounted, slightly less rigorous climate range than Pod 4.",
-      "bestFor": "Best for value-tier entry into Eight Sleep when Pod 3 inventory is discounted.",
-      "pros": [
-        "Same Eight Sleep app, tracking and Autopilot as Pod 4",
-        "Frequently discounted relative to Pod 4",
-        "Multi-year reliability track record",
-        "Cheaper entry into Eight Sleep ecosystem"
-      ],
-      "cons": [
-        "Climate recovery less aggressive than Pod 4 in peak heat",
-        "Discontinued for new production — inventory only",
-        "Same subscription requirement as Pod 4",
-        "Pod 4 is the active flagship"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": null,
@@ -8901,7 +8901,7 @@
       "priceUsd": 650,
       "priceNote": "Viso flagship; neck flap included",
       "priceAsOf": "2026-05-28",
-      "score": 8,
+      "score": 7.9,
       "scores": [
         {
           "id": "irradiance",
@@ -8910,8 +8910,8 @@
         },
         {
           "id": "wavelength-coverage",
-          "score": 9,
-          "note": "Red 633 nm + near-infrared 830 nm + amber 590 nm — three wavelengths covering surface skin, deeper tissue and pigmentation. Broader than the standard red + NIR pair."
+          "score": 8.5,
+          "note": "Red 633 nm + near-infrared 830 nm + amber 590 nm (as reviewed). Stated purpose: wrinkles and skin rejuvenation, per retail listings — Lumara's own product page could not be reached (2026-10-13); third-party listings disagree on the wavelengths (some say red 660 nm only), so re-check. Wrinkles are covered by red + near-infrared; amber adds no stated purpose."
         },
         {
           "id": "led-count-coverage",
@@ -8965,7 +8965,7 @@
       "priceUsd": 395,
       "priceNote": "Contour Face; neck flap sold separately",
       "priceAsOf": "2026-09-30",
-      "score": 7.8,
+      "score": 7.7,
       "scores": [
         {
           "id": "irradiance",
@@ -8984,8 +8984,8 @@
         },
         {
           "id": "clinical-evidence",
-          "score": 7,
-          "note": "No published or registered trial of the Contour FACE itself (Europe PMC, ClinicalTrials.gov and Omnilux's own bibliography, searched October 2026). Published Omnilux studies are on other models, so they do not count for the Contour; the ones we checked — the Revive clinic panel (2005), a men's mask Omnilux lists as Omnilux Men (2023) and the Omnilux Clear acne mask (2025) — are also each tied to the maker (employee authors, an Omnilux advisory-board author, GlobalMed funding). The brand's own Contour study is unpublished, with self-reported results (company-stated). FDA 510(k) K191629 (OTC, full-face wrinkles; cleared by equivalence to an earlier LED mask without clinical data) is scored as neutral."
+          "score": 6.5,
+          "note": "No published or registered trial of the Contour FACE itself (Europe PMC, ClinicalTrials.gov and Omnilux's own bibliography, searched October 2026). Published Omnilux studies are on other models, so they do not count for the Contour; the ones we checked — the Revive clinic panel (2005), a men's mask Omnilux lists as Omnilux Men (2023) and the Omnilux Clear acne mask (2025) — are also each tied to the maker (employee authors, an Omnilux advisory-board author, GlobalMed funding). The brand's own Contour study is unpublished, with self-reported results (company-stated). FDA 510(k) K191629 (OTC, full-face wrinkles; cleared by equivalence to an earlier LED mask without clinical data) is scored as neutral. The only earlier-model study without a stated maker link — Baez & Reilly 2007 (13 people, Omnilux clinic system) — lists no funding or conflict-of-interest statement, so its independence is not established and it is not counted; if it is confirmed the authors had no link to the maker, re-evaluate. 6.5 = the level of masks without studies of their own."
         },
         {
           "id": "comfort-fit",
@@ -9084,6 +9084,70 @@
       "dateModified": "2026-10-10"
     },
     {
+      "slug": "higherdose-red-light-face-mask",
+      "name": "HigherDOSE Red Light Face Mask",
+      "brand": "HigherDOSE",
+      "category": "red-light-mask",
+      "productType": "Consumer-brand flexible silicone red + infrared face mask",
+      "url": "https://onda-life.com/reviews/higherdose-red-light-face-mask",
+      "categoryUrl": "https://onda-life.com/reviews/red-light-face-masks",
+      "priceUsd": 349,
+      "priceNote": "Red Light Face Mask standalone",
+      "priceAsOf": "2026-10-04",
+      "score": 7.2,
+      "scores": [
+        {
+          "id": "irradiance",
+          "score": 7,
+          "note": "HigherDOSE states 50 mW/cm² total (630 nm 26 + 830 nm 24 mW/cm²) — the brand’s figures, not independently measured."
+        },
+        {
+          "id": "wavelength-coverage",
+          "score": 8.5,
+          "note": "Red 630 nm + near-infrared 830 nm — the standard clinical pair. No blue / amber variants."
+        },
+        {
+          "id": "led-count-coverage",
+          "score": 7.5,
+          "note": "66 dual-core LEDs (132 diodes) across face. No neck flap on standard model."
+        },
+        {
+          "id": "clinical-evidence",
+          "score": 6,
+          "note": "FDA-cleared for full-face wrinkles (510(k) K241933, 2024; the clearance summary says clinical testing was not needed). Light clinical evidence base; brand-funded research without peer-reviewed depth."
+        },
+        {
+          "id": "comfort-fit",
+          "score": 8.5,
+          "note": "Flexible silicone comparable to Omnilux / CurrentBody comfort. Lighter than Lumara Viso."
+        },
+        {
+          "id": "value",
+          "score": 8,
+          "note": "$349 — accessible mid-premium pricing. Cheaper than Omnilux / CurrentBody / TheraFace, justified by lighter spec."
+        }
+      ],
+      "verdict": "Best consumer-brand UX in red light masks — simple controller, flexible silicone, brand-stated 50 mW/cm². Light clinical evidence; brand polish over technical depth.",
+      "bestFor": "Best for consumer-polished daily-use red light face mask in the HigherDOSE ecosystem — UX and accessibility over clinical credentials.",
+      "pros": [
+        "Best consumer-brand UX — simple rechargeable controller, 10 or 20-minute sessions",
+        "Accessible $349 pricing — cheaper than dermatology references",
+        "Flexible silicone comfort comparable to category leaders",
+        "HigherDOSE brand ecosystem (pairs with PEMF mat, sauna blanket)"
+      ],
+      "cons": [
+        "Light clinical-evidence base",
+        "Irradiance figures are brand-stated, not independently verified",
+        "No neck flap",
+        "No multi-wavelength variants"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-10"
+    },
+    {
       "slug": "theraface-mask",
       "name": "TheraFace Mask",
       "brand": "Therabody",
@@ -9148,70 +9212,6 @@
       "dateModified": "2026-10-10"
     },
     {
-      "slug": "higherdose-red-light-face-mask",
-      "name": "HigherDOSE Red Light Face Mask",
-      "brand": "HigherDOSE",
-      "category": "red-light-mask",
-      "productType": "Consumer-brand flexible silicone red + infrared face mask",
-      "url": "https://onda-life.com/reviews/higherdose-red-light-face-mask",
-      "categoryUrl": "https://onda-life.com/reviews/red-light-face-masks",
-      "priceUsd": 349,
-      "priceNote": "Red Light Face Mask standalone",
-      "priceAsOf": "2026-10-04",
-      "score": 7,
-      "scores": [
-        {
-          "id": "irradiance",
-          "score": 7,
-          "note": "HigherDOSE states 50 mW/cm² total (630 nm 26 + 830 nm 24 mW/cm²) — the brand’s figures, not independently measured."
-        },
-        {
-          "id": "wavelength-coverage",
-          "score": 7.5,
-          "note": "Red 630 nm + near-infrared 830 nm — the standard clinical pair. No blue / amber variants."
-        },
-        {
-          "id": "led-count-coverage",
-          "score": 7.5,
-          "note": "66 dual-core LEDs (132 diodes) across face. No neck flap on standard model."
-        },
-        {
-          "id": "clinical-evidence",
-          "score": 6,
-          "note": "FDA-cleared for full-face wrinkles (510(k) K241933, 2024; the clearance summary says clinical testing was not needed). Light clinical evidence base; brand-funded research without peer-reviewed depth."
-        },
-        {
-          "id": "comfort-fit",
-          "score": 8.5,
-          "note": "Flexible silicone comparable to Omnilux / CurrentBody comfort. Lighter than Lumara Viso."
-        },
-        {
-          "id": "value",
-          "score": 8,
-          "note": "$349 — accessible mid-premium pricing. Cheaper than Omnilux / CurrentBody / TheraFace, justified by lighter spec."
-        }
-      ],
-      "verdict": "Best consumer-brand UX in red light masks — simple controller, flexible silicone, brand-stated 50 mW/cm². Light clinical evidence; brand polish over technical depth.",
-      "bestFor": "Best for consumer-polished daily-use red light face mask in the HigherDOSE ecosystem — UX and accessibility over clinical credentials.",
-      "pros": [
-        "Best consumer-brand UX — simple rechargeable controller, 10 or 20-minute sessions",
-        "Accessible $349 pricing — cheaper than dermatology references",
-        "Flexible silicone comfort comparable to category leaders",
-        "HigherDOSE brand ecosystem (pairs with PEMF mat, sauna blanket)"
-      ],
-      "cons": [
-        "Light clinical-evidence base",
-        "Irradiance figures are brand-stated, not independently verified",
-        "No neck flap",
-        "No multi-wavelength variants"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
-    },
-    {
       "slug": "lightstim-for-wrinkles",
       "name": "LightStim for Wrinkles",
       "brand": "LightStim",
@@ -9222,7 +9222,7 @@
       "priceUsd": 249,
       "priceNote": "LightStim for Wrinkles handheld",
       "priceAsOf": "2026-05-28",
-      "score": 6.9,
+      "score": 6.8,
       "scores": [
         {
           "id": "irradiance",
@@ -9241,8 +9241,8 @@
         },
         {
           "id": "clinical-evidence",
-          "score": 7,
-          "note": "FDA-cleared (K120775; current model K261482) — clearance is not FDA approval and is scored as neutral. We found no peer-reviewed trials of this device. The only wrinkle data are the company's own unpublished 8-week, 40-person study of the earlier model, with no control group described; studies run by the maker do not count as evidence in ONDA scores. LightStim's \"clinically proven\" claim is company-stated and comes without study design or publication details. Independent red-light skin research is mixed, not negative — 7.0, the base score for a device without trials of its own."
+          "score": 6.5,
+          "note": "FDA-cleared (K120775; current model K261482) — clearance is not FDA approval and is scored as neutral. We found no peer-reviewed trials of this device. The only wrinkle data are the company's own unpublished 8-week, 40-person study of the earlier model, with no control group described; studies run by the maker do not count as evidence in ONDA scores. LightStim's \"clinically proven\" claim is company-stated and comes without study design or publication details. Independent red-light skin research is mixed, not negative — 6.5, the same level as other masks without trials of their own (7.0 is the ceiling without independent validation)."
         },
         {
           "id": "comfort-fit",
@@ -9286,7 +9286,7 @@
       "priceUsd": 399,
       "priceNote": "DPL Photofacial Mask standalone",
       "priceAsOf": "2026-05-28",
-      "score": 6.9,
+      "score": 6.8,
       "scores": [
         {
           "id": "irradiance",
@@ -9295,8 +9295,8 @@
         },
         {
           "id": "wavelength-coverage",
-          "score": 9,
-          "note": "Seven wavelength modes — broadest coverage in consumer face masks. Goes beyond standard red + NIR into blue / amber / green."
+          "score": 8.5,
+          "note": "Seven wavelength modes (as reviewed). Stated purposes per retail copy: uneven tone, redness and pigmentation, plus wrinkles and acne — JOVS's own product page could not be reached (2026-10-13); re-check. Counted as covering wrinkles (red / near-infrared) and acne (blue / red); extra modes add no score."
         },
         {
           "id": "led-count-coverage",
@@ -9350,7 +9350,7 @@
       "priceUsd": 349,
       "priceNote": "CryoGlow standalone",
       "priceAsOf": "2026-05-28",
-      "score": 6.3,
+      "score": 6.5,
       "scores": [
         {
           "id": "irradiance",
@@ -9359,8 +9359,8 @@
         },
         {
           "id": "wavelength-coverage",
-          "score": 7,
-          "note": "Red 633 nm + blue 415 nm. Standard dual-spectrum coverage."
+          "score": 8.5,
+          "note": "Red + blue + infrared (iQLED). Stated purposes, per Shark's official US page (sharkninja.com, checked 2026-10-13): \"Better Aging\" (red + infrared, fine lines and firmness) and \"Skin Clearing\" / \"Blemish Repair\" (blue + red + infrared, acne). Both stated purposes are covered by the wavelengths studied for them."
         },
         {
           "id": "led-count-coverage",
@@ -9414,7 +9414,7 @@
       "priceUsd": 169,
       "priceNote": "Wand 4-in-1 standalone",
       "priceAsOf": "2026-05-28",
-      "score": 6.2,
+      "score": 6.5,
       "scores": [
         {
           "id": "irradiance",
@@ -9423,8 +9423,8 @@
         },
         {
           "id": "wavelength-coverage",
-          "score": 6,
-          "note": "Red 660 nm only — single wavelength. No near-infrared depth or amber / blue variants."
+          "score": 8.5,
+          "note": "Red 630 nm (14 LEDs), per Solawave (solawave.co, checked 2026-10-13). Stated purpose: wrinkles — the FDA clearance (510(k) K232863) covers treatment of facial wrinkles with red light. Red covers that purpose; no acne indication is cleared."
         },
         {
           "id": "led-count-coverage",
@@ -12131,8 +12131,8 @@
       "winnerStatus": "winner",
       "label": "WINNER: Omnilux Contour Face",
       "onda_scores": {
-        "omnilux-contour-face": 7.8,
-        "higherdose-red-light-face-mask": 7
+        "omnilux-contour-face": 7.7,
+        "higherdose-red-light-face-mask": 7.2
       },
       "verdict": "Omnilux Contour Face has the higher ONDA score for $46 more, while HigherDOSE is a reasonable cheaper alternative with higher claimed output and a 20-minute option. Neither has a published independent trial of the mask itself.",
       "bestFor": {
@@ -15188,8 +15188,8 @@
         },
         {
           "name": "Comfort",
-          "winner": "b",
-          "note": "Emotiv Insight 2 is lighter and the five-arm crown is comfortable for longer sessions. Neurosity Crown is more substantial."
+          "winner": "tie",
+          "note": "Practically equal: both are crown-style headsets for seated sessions, not made for overnight wear. Neurosity Crown is a rigid 228 g crown (about three hours per charge); Emotiv Insight 2 is a five-arm crown — we found no official weight to compare."
         },
         {
           "name": "Price",
@@ -16186,10 +16186,10 @@
         "mito-red-mitopro-1500"
       ],
       "winner": null,
-      "winnerStatus": "practically-equal",
-      "label": "Practically equal by ONDA score (8.1 and 8.0)",
+      "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Mito Red MitoPRO 1500 (8.1 vs 7.9)",
       "onda_scores": {
-        "joovv-solo-3": 8,
+        "joovv-solo-3": 7.9,
         "mito-red-mitopro-1500": 8.1
       },
       "verdict": "Depends on the axis. Joovv Solo 3.0 wins for modular scaling. Mito Red MitoPRO 1500 wins for broader wavelength spectrum at $100 less.",
@@ -16253,8 +16253,8 @@
       "winnerStatus": "winner",
       "label": "WINNER: PlatinumLED BIOMAX 600",
       "onda_scores": {
-        "joovv-solo-3": 8,
-        "platinumled-biomax-600": 8.2
+        "joovv-solo-3": 7.9,
+        "platinumled-biomax-600": 8.1
       },
       "verdict": "PlatinumLED BIOMAX 600 is the better pick for most buyers — seven wavelengths, published EMF testing and $650 less. Joovv Solo 3.0 wins on modular scaling.",
       "bestFor": {
@@ -16334,8 +16334,8 @@
         },
         {
           "name": "Irradiance",
-          "winner": "tie",
-          "note": "MitoPRO: ~70 mW/cm² at 6\" (verified). Hooga now states 94 mW/cm² at 6\" on its official page (checked 2026-10-01); earlier independent readings tracked Hooga’s stated figures closely. Both deliver a working dose at 6\"; MitoPRO’s advantage is spectrum and panel area, not raw irradiance."
+          "winner": "a",
+          "note": "Mito Red leads: about 70 mW/cm² at 6 inches, confirmed within 10% by independent measurement. Hooga's 94 mW/cm² at 6 inches is maker-stated (official product page, checked 2026-10-01) with no independent measurement of that figure yet."
         },
         {
           "name": "Panel size / coverage",
@@ -16379,10 +16379,10 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Joovv Solo 3.0 (8.0 vs 7.5)",
+      "label": "Higher ONDA score: Joovv Solo 3.0 (7.9 vs 7.5)",
       "onda_scores": {
         "hooga-hg500": 7.5,
-        "joovv-solo-3": 8
+        "joovv-solo-3": 7.9
       },
       "verdict": "Value vs premium reference. The Hooga HG500 wins decisively on price and output-per-dollar — most of the core spec for roughly a fifth of the cost. The Joovv Solo 3.0 wins on build quality, brand maturity and a modular ecosystem you can expand. Pick Hooga if you want the results without the premium; Joovv if brand, build and expandability justify the spend.",
       "bestFor": {
@@ -16433,10 +16433,10 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: PlatinumLED BIOMAX 600 (8.2 vs 7.5)",
+      "label": "Higher ONDA score: PlatinumLED BIOMAX 600 (8.1 vs 7.5)",
       "onda_scores": {
         "hooga-hg500": 7.5,
-        "platinumled-biomax-600": 8.2
+        "platinumled-biomax-600": 8.1
       },
       "verdict": "Core value vs spectrum-rich mid-premium. The Hooga HG500 wins on price and output-per-dollar with the two wavelengths that cover most use. The PlatinumLED BIOMAX 600 wins on wavelength variety (seven bands), EMF discipline and a better build, at roughly three times the cost. Pick Hooga for the essentials cheaply; PlatinumLED if the extra wavelengths and build matter.",
       "bestFor": {
@@ -16487,10 +16487,10 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
-      "label": "Practically equal by ONDA score (8.0 and 7.9)",
+      "label": "Practically equal by ONDA score (7.9 and 7.9)",
       "onda_scores": {
         "gembared-vesta": 7.9,
-        "joovv-solo-3": 8
+        "joovv-solo-3": 7.9
       },
       "verdict": "Different premium intents. GembaRed Vesta wins on EMF/flicker discipline and wavelength breadth. Joovv Solo 3.0 wins on modular full-body scaling and brand maturity.",
       "bestFor": {
@@ -16553,7 +16553,7 @@
       "winnerStatus": "winner",
       "label": "WINNER: PlatinumLED BIOMAX 600",
       "onda_scores": {
-        "platinumled-biomax-600": 8.2,
+        "platinumled-biomax-600": 8.1,
         "biolight-pro-900": 7.8
       },
       "verdict": "PlatinumLED BIOMAX 600 wins on spectrum breadth and brand maturity. BioLight Pro 900 wins on price by $150 with a comparable four-wavelength spec.",
@@ -16616,11 +16616,11 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
-      "label": "Practically equal by ONDA score (8.2, 8.1 and 8.0)",
+      "label": "Practically equal by ONDA score (8.1, 8.1 and 7.9)",
       "onda_scores": {
-        "joovv-solo-3": 8,
+        "joovv-solo-3": 7.9,
         "mito-red-mitopro-1500": 8.1,
-        "platinumled-biomax-600": 8.2
+        "platinumled-biomax-600": 8.1
       },
       "verdict": "Best overall for most buyers: Mito Red MitoPRO 1500X — six wavelengths, a large panel, $400 cheaper than Joovv. PlatinumLED wins on price and spectrum; Joovv on modular scaling.",
       "bestFor": {
@@ -16747,9 +16747,9 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
-      "label": "Practically equal by ONDA score (8.0 and 7.9)",
+      "label": "Practically equal by ONDA score (7.9 and 7.9)",
       "onda_scores": {
-        "plunge": 8,
+        "plunge": 7.9,
         "edge-tub": 7.9
       },
       "verdict": "The Plunge wins on multi-year reliability and chiller capability; Edge Tub wins decisively on value. For most buyers, Edge Tub is the smarter pick.",
@@ -16772,7 +16772,7 @@
         {
           "name": "Water management",
           "winner": "tie",
-          "note": "Both ship ozone sanitation with comparable water-change frequency (2–4 weeks)."
+          "note": "Practically equal: both use ozone sanitation plus a filter. Stated water-change interval: The Plunge every 2–4 weeks, Edge Tub every 3–4 weeks under typical use."
         },
         {
           "name": "Form factor",
@@ -16806,9 +16806,9 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
-      "label": "Practically equal by ONDA score (8.0 and 7.9)",
+      "label": "Practically equal by ONDA score (7.9 and 7.9)",
       "onda_scores": {
-        "plunge": 8,
+        "plunge": 7.9,
         "coldture": 7.9
       },
       "verdict": "Geography decides. The Plunge for US buyers and temperate-climate installs. Coldture for cold-climate outdoor installs and Canada/EU markets.",
@@ -16860,9 +16860,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: The Plunge All-In (8.0 vs 6.6)",
+      "label": "Higher ONDA score: The Plunge All-In (7.9 vs 6.6)",
       "onda_scores": {
-        "plunge": 8,
+        "plunge": 7.9,
         "ice-barrel-500": 6.6
       },
       "verdict": "Different operating models. The Plunge for users who want set-and-forget daily-use convenience. Ice Barrel for cold climates or occasional use where the upfront savings matter more than daily ice cost.",
@@ -16922,7 +16922,7 @@
       "label": "WINNER: The Plunge All-In",
       "onda_scores": {
         "morozko-forge": 7.5,
-        "plunge": 8
+        "plunge": 7.9
       },
       "verdict": "The Plunge wins for typical daily-use cold-plunge practice. Morozko Forge wins specifically for users chasing extreme protocols (sub-40°F, ice formation, Wim Hof Method depth).",
       "bestFor": {
@@ -16979,9 +16979,9 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
-      "label": "Practically equal by ONDA score (8.0, 7.9 and 7.6)",
+      "label": "Practically equal by ONDA score (7.9, 7.9 and 7.6)",
       "onda_scores": {
-        "plunge": 8,
+        "plunge": 7.9,
         "coldture": 7.9,
         "renu-therapy-cold-stoic": 7.6
       },
@@ -17055,8 +17055,8 @@
       "axes": [
         {
           "name": "Form factor",
-          "winner": "a",
-          "note": "Ice Barrel: vertical barrel, fits where horizontal tubs cannot. Cold Pod: inflatable, foldable. Inergize: rigid horizontal tub with insulation."
+          "winner": "b",
+          "note": "Cold Pod leads: it folds down for storage and inflates in about 10 minutes, per the maker, so it works as a temporary indoor or outdoor setup. Ice Barrel's upright 32-inch barrel has a smaller fixed footprint than horizontal tubs; Inergize is a rigid 67 × 31-inch tub, best as a permanent install."
         },
         {
           "name": "Build durability (multi-year)",
@@ -17103,7 +17103,7 @@
       "label": "WINNER: Sunlighten mPulse 3-in-1",
       "onda_scores": {
         "sunlighten-mpulse": 8.2,
-        "clearlight-sanctuary-2": 7.4
+        "clearlight-sanctuary-2": 7.3
       },
       "verdict": "Sunlighten mPulse wins on wavelength rigour and published EMF figures. Clearlight Sanctuary 2 wins on its Jacuzzi-backed lifetime warranty, but now costs more (~$7,299 vs ~$6,000).",
       "bestFor": {
@@ -17154,10 +17154,10 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Sun Home Equinox (7.7 vs 7.4)",
+      "label": "Higher ONDA score: Sun Home Equinox (7.7 vs 7.3)",
       "onda_scores": {
         "sun-home-equinox": 7.7,
-        "clearlight-sanctuary-2": 7.4
+        "clearlight-sanctuary-2": 7.3
       },
       "verdict": "Value and features vs pedigree and warranty. The Sun Home Equinox wins on heat output and bundled extras (integrated red light, chromotherapy, sound). The Clearlight Sanctuary 2 wins on build reputation and its Jacuzzi-backed lifetime warranty, but now costs more ($7,299 vs ~$6,000). Sun Home documents third-party EMF figures; Clearlight markets low EMF/ELF without published third-party numbers. Pick Sun Home for the feature bundle and heat; Clearlight for warranty and long brand history.",
       "bestFor": {
@@ -17183,8 +17183,8 @@
         },
         {
           "name": "EMF",
-          "winner": "a",
-          "note": "Sun Home documents third-party-verified low EMF. Clearlight markets the Sanctuary 2 as low EMF/ELF but we found no published third-party figures — ask for the current test report."
+          "winner": "tie",
+          "note": "Practically equal: both are marketed as low EMF. Clearlight's figures are maker-stated; Sun Home cites third-party verification but publishes no measurement distance, so neither has an independent figure we can compare."
         },
         {
           "name": "Price",
@@ -17443,7 +17443,7 @@
       "label": "WINNER: Sunlighten mPulse 3-in-1",
       "onda_scores": {
         "sunlighten-mpulse": 8.2,
-        "clearlight-sanctuary-2": 7.4,
+        "clearlight-sanctuary-2": 7.3,
         "saunaspace-faraday": 8
       },
       "verdict": "Sunlighten mPulse wins on wavelength rigour and per-wavelength control. Clearlight on its Jacuzzi-backed lifetime warranty. SaunaSpace on near-IR purity and EMF discipline. Three premium picks, three different philosophies.",
@@ -18226,9 +18226,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: ChiliPad Dock Pro (8.3 vs 7.7)",
+      "label": "Higher ONDA score: ChiliPad Dock Pro (8.3 vs 7.9)",
       "onda_scores": {
-        "eight-sleep-pod-4": 7.7,
+        "eight-sleep-pod-4": 7.9,
         "chilipad-dock-pro": 8.3
       },
       "verdict": "Subscription preference decides. Eight Sleep Pod 4 for integrated HRV/sleep tracking and Autopilot climate scheduling — accept the ongoing membership. ChiliPad Dock Pro for the same water-cooled climate without subscription and without tracking (pair with an Oura or Whoop you already wear).",
@@ -18260,8 +18260,8 @@
         },
         {
           "name": "Form factor",
-          "winner": "b",
-          "note": "ChiliPad Dock Pro leads: a pad that goes on top of your existing mattress, while the Pod 4 is a cover-plus-mattress system. Both offer dual zones and need a nightstand hub."
+          "winner": "tie",
+          "note": "Practically equal: both go on top of your existing mattress (the Pod 4 as a cover, the Dock Pro as a pad), both offer dual zones and both need a hub next to the bed."
         },
         {
           "name": "3-year cost",
@@ -18279,15 +18279,15 @@
         "eight-sleep-pod-cover-pro"
       ],
       "winner": null,
-      "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Eight Sleep Pod Cover Pro (7.9 vs 7.7)",
+      "winnerStatus": "practically-equal",
+      "label": "Practically equal by ONDA score (7.9 and 7.9)",
       "onda_scores": {
-        "eight-sleep-pod-4": 7.7,
+        "eight-sleep-pod-4": 7.9,
         "eight-sleep-pod-cover-pro": 7.9
       },
-      "verdict": "Mattress status decides. Pod 4 if you're replacing your mattress anyway and want the integrated build. Pod Cover Pro if you have a mattress you like and want the climate + tracking on it for ~40% less.",
+      "verdict": "Price decides. Both are covers for the mattress you already have, with the same climate approach, tracking and subscription model; Pod Cover Pro costs less (about $2,200 vs from $2,449 for the Pod 4 cover, per Tom's Guide).",
       "bestFor": {
-        "a": "Choose Eight Sleep Pod 4 if you are replacing your mattress and want the full integrated system with the optimized cover-over-mattress fit.",
+        "a": "Choose Eight Sleep Pod 4 if you find it at or below Cover Pro pricing, or want the optional Eight Sleep mattress bundle.",
         "b": "Choose Pod Cover Pro if you have a mattress you like and want Eight Sleep climate and tracking on it without buying a new bed.",
         "c": null
       },
@@ -18309,18 +18309,18 @@
         },
         {
           "name": "Form factor",
-          "winner": "a",
-          "note": "Pod 4: integrated mattress system — single coordinated build. Pod Cover Pro: layer on top of existing mattress, slightly more bulk."
+          "winner": "tie",
+          "note": "Practically equal: both are covers that fit your existing mattress, with dual zones and a hub next to the bed; the Pod 4 could also be bought with an optional Eight Sleep mattress."
         },
         {
           "name": "Price",
           "winner": "b",
-          "note": "Pod 4 full system: ~$3,500-5,000. Pod Cover Pro: ~$2,200. Cover Pro is ~40% cheaper for identical climate and tracking."
+          "note": "Pod 4 cover: from $2,449 (per Tom's Guide). Pod Cover Pro: about $2,200. Cover Pro is cheaper."
         },
         {
           "name": "Mattress flexibility",
-          "winner": "b",
-          "note": "Pod Cover Pro installs on any mattress you already own or buy later. Pod 4 locks you into the Eight Sleep mattress."
+          "winner": "tie",
+          "note": "Both install on a mattress you already own (Pod 4: 10–16 in thick, per Tom's Guide); the Eight Sleep mattress was optional for the Pod 4."
         }
       ]
     },
@@ -18442,9 +18442,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Eight Sleep Pod Cover Pro (7.9 vs 7.5)",
+      "label": "Higher ONDA score: Eight Sleep Pod Cover Pro (7.9 vs 7.7)",
       "onda_scores": {
-        "eight-sleep-pod-3": 7.5,
+        "eight-sleep-pod-3": 7.7,
         "eight-sleep-pod-cover-pro": 7.9
       },
       "verdict": "Mattress status decides again. Pod 3 if you're replacing your mattress and the inventory discount is deep enough. Pod Cover Pro if you have a mattress you like and want the current-gen tracking/climate on it.",
@@ -18471,8 +18471,8 @@
         },
         {
           "name": "Form factor",
-          "winner": "a",
-          "note": "Pod 3: integrated mattress system, single coordinated build. Cover Pro: layer-on-existing approach."
+          "winner": "tie",
+          "note": "Practically equal: both are dual-zone covers that fit your existing mattress, with a hub next to the bed."
         },
         {
           "name": "Mattress flexibility",
@@ -18497,9 +18497,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: ChiliPad Dock Pro (8.3 vs 7.8 vs 7.7)",
+      "label": "Higher ONDA score: ChiliPad Dock Pro (8.3 vs 7.9 vs 7.8)",
       "onda_scores": {
-        "eight-sleep-pod-4": 7.7,
+        "eight-sleep-pod-4": 7.9,
         "chilipad-dock-pro": 8.3,
         "bedjet-3": 7.8
       },
@@ -20073,10 +20073,10 @@
         "eight-sleep-pod-5"
       ],
       "winner": null,
-      "winnerStatus": "practically-equal",
-      "label": "Practically equal by ONDA score (7.7 and 7.6)",
+      "winnerStatus": "depends-on-the-job",
+      "label": "Higher ONDA score: Eight Sleep Pod 4 (7.9 vs 7.6)",
       "onda_scores": {
-        "eight-sleep-pod-4": 7.7,
+        "eight-sleep-pod-4": 7.9,
         "eight-sleep-pod-5": 7.6
       },
       "verdict": "The Pod 5 Ultra is the fuller system — adjustable base, top-down climate, audio, automatic snore mitigation — but at ~$6,099 it costs roughly double the Pod 4. Dual-zone temperature, HRV tracking and the Autopilot 4.0 software are shared, so unless you want the full-bed extras, the Pod 4 (or the cheaper Pod 5 Core) is the value.",
@@ -20457,9 +20457,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: The Plunge All-In (8.0 vs 6.4)",
+      "label": "Higher ONDA score: The Plunge All-In (7.9 vs 6.4)",
       "onda_scores": {
-        "plunge": 8,
+        "plunge": 7.9,
         "cold-pod": 6.4
       },
       "verdict": "It depends entirely on budget and commitment. The Plunge All-In is the finished appliance — built-in chiller, filtration, no ice, ready every day — at $5,990. The Cold Pod is the cheapest legitimate way in at $220, if you are willing to buy ice daily and refill it yourself.",
@@ -21198,9 +21198,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: CurrentBody Series 2 LED Light Therapy Face Mask (8.0 vs 7.8)",
+      "label": "Higher ONDA score: CurrentBody Series 2 LED Light Therapy Face Mask (8.0 vs 7.7)",
       "onda_scores": {
-        "omnilux-contour-face": 7.8,
+        "omnilux-contour-face": 7.7,
         "currentbody-series-2": 8
       },
       "verdict": "Price vs consumer features. Omnilux Contour Face for the lower face-only price. CurrentBody Series 2 for integrated neck flap and largest consumer customer base.",
@@ -21257,9 +21257,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Omnilux Contour Face (7.8 vs 7.3)",
+      "label": "Higher ONDA score: Omnilux Contour Face (7.7 vs 7.3)",
       "onda_scores": {
-        "omnilux-contour-face": 7.8,
+        "omnilux-contour-face": 7.7,
         "dr-dennis-gross-spectralite": 7.3
       },
       "verdict": "Comfort vs spectrum scope. Omnilux Contour Face for silicone comfort (the most comfortable in our assessment) and red + near-infrared light. Dr. Dennis Gross for dermatology-brand pedigree with dual red + blue protocols.",
@@ -21319,7 +21319,7 @@
       "label": "WINNER: CurrentBody Series 2 LED Light Therapy Face Mask",
       "onda_scores": {
         "currentbody-series-2": 8,
-        "higherdose-red-light-face-mask": 7
+        "higherdose-red-light-face-mask": 7.2
       },
       "verdict": "CurrentBody Series 2 wins on integrated neck flap, higher LED dose and market-feedback refinement. HigherDOSE wins on price and HigherDOSE-ecosystem fit.",
       "bestFor": {
@@ -21341,7 +21341,7 @@
         {
           "name": "Wavelength coverage",
           "winner": "tie",
-          "note": "Both use the standard red + near-infrared 830 nm pair (HigherDOSE red at 630 nm)."
+          "note": "Practically equal: both use the red + near-infrared 830 nm pair most used in skin studies (CurrentBody red 633 nm, HigherDOSE red 630 nm)."
         },
         {
           "name": "Brand ecosystem",
@@ -21370,10 +21370,10 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
-      "label": "Practically equal by ONDA score (7.1 and 7.0)",
+      "label": "Practically equal by ONDA score (7.2 and 7.1)",
       "onda_scores": {
         "theraface-mask": 7.1,
-        "higherdose-red-light-face-mask": 7
+        "higherdose-red-light-face-mask": 7.2
       },
       "verdict": "Wavelength scope vs ecosystem price. TheraFace Mask for three-wavelength coverage with Therabody premium brand. HigherDOSE for HigherDOSE-ecosystem coordination at meaningfully lower price.",
       "bestFor": {
@@ -21384,7 +21384,7 @@
       "axes": [
         {
           "name": "Wavelength coverage",
-          "winner": "a",
+          "winner": "tie",
           "note": "TheraFace: three wavelengths (red 633 + blue 415 + amber 590 nm). HigherDOSE: two wavelengths (red 630 + near-infrared 830 nm)."
         },
         {
@@ -21409,8 +21409,8 @@
         },
         {
           "name": "Clinical evidence",
-          "winner": "tie",
-          "note": "Both rely on brand-funded research (both masks are FDA-cleared: TheraFace K230293, HigherDOSE K241933)."
+          "winner": "a",
+          "note": "TheraFace leads: neither mask has an independent trial of its own and both are FDA-cleared for wrinkles (TheraFace K230293, HigherDOSE K241933 — scored as neutral), but HigherDOSE's evidence base is lighter (its clearance summary says clinical testing was not needed; brand-funded research without peer-reviewed depth)."
         },
         {
           "name": "Price",
@@ -21431,8 +21431,8 @@
       "winnerStatus": "winner",
       "label": "WINNER: LightStim for Wrinkles",
       "onda_scores": {
-        "lightstim-for-wrinkles": 6.9,
-        "solawave-wand-4-in-1": 6.2
+        "lightstim-for-wrinkles": 6.8,
+        "solawave-wand-4-in-1": 6.5
       },
       "verdict": "LightStim wins on wavelength coverage and longer market history. Solawave wins on price and multi-modality stack.",
       "bestFor": {
@@ -21443,12 +21443,12 @@
       "axes": [
         {
           "name": "Clinical evidence",
-          "winner": "tie",
-          "note": "Neither has published trials of the device itself. LightStim is FDA-cleared (K120775; current model K261482), but the only wrinkle data in its FDA filings are an unpublished company study of an earlier model; Solawave is FDA registered (a listing, not clearance) with brand-funded consumer testimonials. FDA status is neutral in ONDA scores."
+          "winner": "a",
+          "note": "LightStim leads: neither has published trials of the device itself and LightStim's unpublished company study does not count; LightStim's FDA clearance (K120775; current model K261482) is neutral, while Solawave's support is brand-funded consumer testimonials."
         },
         {
           "name": "Wavelength coverage",
-          "winner": "a",
+          "winner": "tie",
           "note": "LightStim: four wavelengths (605 / 640 / 652 / 850 nm) including near-infrared. Solawave: single red 660 nm."
         },
         {
@@ -21484,9 +21484,9 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: CurrentBody Series 2 LED Light Therapy Face Mask (8.0 vs 7.8 vs 7.3)",
+      "label": "Higher ONDA score: CurrentBody Series 2 LED Light Therapy Face Mask (8.0 vs 7.7 vs 7.3)",
       "onda_scores": {
-        "omnilux-contour-face": 7.8,
+        "omnilux-contour-face": 7.7,
         "currentbody-series-2": 8,
         "dr-dennis-gross-spectralite": 7.3
       },
@@ -23066,14 +23066,14 @@
       "url": "https://onda-life.com/reviews/compare/best-red-light-therapy-panels-2026",
       "picks": [
         {
-          "review": "platinumled-biomax-600",
-          "award": "Best overall (practically equal) · Best wavelength spectrum",
-          "takeaway": "Seven wavelengths and published third-party EMF testing at $1,049 — the spectrum leader."
-        },
-        {
           "review": "mito-red-mitopro-1500",
           "award": "Best overall (practically equal)",
           "takeaway": "MitoPRO 1500X: six-wavelength large panel, 3-year warranty — $400 cheaper than Joovv at $1,299."
+        },
+        {
+          "review": "platinumled-biomax-600",
+          "award": "Best overall (practically equal) · Best wavelength spectrum",
+          "takeaway": "Seven wavelengths and published third-party EMF testing at $1,049 — the spectrum leader."
         },
         {
           "review": "rubylx-lyra-pro",
@@ -23081,14 +23081,14 @@
           "takeaway": "Every published spec independently lab-verified — the most-tested panel in the consumer category."
         },
         {
+          "review": "infraredi-pro-1500",
+          "award": "Best overall (practically equal) · Best large-panel value",
+          "takeaway": "MitoPRO-class half-body coverage at $300 less — newer brand is the trade."
+        },
+        {
           "review": "joovv-solo-3",
           "award": "Best modular system",
           "takeaway": "Modular, verified irradiance and clean EMF — the stackable reference, but now $1,699."
-        },
-        {
-          "review": "infraredi-pro-1500",
-          "award": "Best large-panel value",
-          "takeaway": "MitoPRO-class half-body coverage at $300 less — newer brand is the trade."
         },
         {
           "review": "gembared-vesta",
@@ -23210,14 +23210,14 @@
           "takeaway": "Far-IR blanket — the most accessible IR-sauna entry without install commitment."
         },
         {
-          "review": "clearlight-sanctuary-2",
-          "award": "Best alternative premium IR",
-          "takeaway": "Jacuzzi-backed full-spectrum IR with lifetime heater warranty, slightly cheaper than Sunlighten."
-        },
-        {
           "review": "therasage-thera-sauna-personal",
           "award": "Best mid-tier IR",
           "takeaway": "Full-spectrum IR at mid-tier pricing with biohacker brand positioning."
+        },
+        {
+          "review": "clearlight-sanctuary-2",
+          "award": "Best alternative premium IR",
+          "takeaway": "Jacuzzi-backed full-spectrum IR with lifetime heater warranty, slightly cheaper than Sunlighten."
         },
         {
           "review": "jnh-lifestyles-joyous",
@@ -23247,6 +23247,11 @@
           "takeaway": "The new 2026 Eight Sleep: dual-zone water cooling and heating, a hub half the size, 18 sensors for sleep, heart rate, breathing and HRV tracking without a wearable, and Solo sizes — from $1,999 Solo or $2,899 queen, far below the Pod 5 Ultra. Membership still required."
         },
         {
+          "review": "eight-sleep-pod-4",
+          "award": "Best value if discounted",
+          "takeaway": "Dual-zone water cooling/heating + built-in HRV tracking + the Autopilot 4.0 software — the core Eight Sleep experience for less than half the Pod 5 Ultra’s price. Since Sept 2026 the new Pod 6 ($2,899 queen, $1,999 Solo) undercuts the Pod 4’s ~$4,000 list — buy the Pod 4 only at a clear discount."
+        },
+        {
           "review": "eight-sleep-pod-cover-pro",
           "award": "Best Eight Sleep entry",
           "takeaway": "Pod 4 climate and tracking on your existing mattress at lower price."
@@ -23267,19 +23272,14 @@
           "takeaway": "Air-flow climate at the lowest price in this category — no water management."
         },
         {
-          "review": "eight-sleep-pod-4",
-          "award": "Best value if discounted",
-          "takeaway": "Dual-zone water cooling/heating + built-in HRV tracking + the Autopilot 4.0 software — the core Eight Sleep experience for less than half the Pod 5 Ultra’s price. Since Sept 2026 the new Pod 6 ($2,899 queen, $1,999 Solo) undercuts the Pod 4’s ~$4,000 list — buy the Pod 4 only at a clear discount."
+          "review": "eight-sleep-pod-3",
+          "award": "Best Eight Sleep value",
+          "takeaway": "Previous-gen Pod at meaningful discount from inventory — same app, narrower climate range."
         },
         {
           "review": "eight-sleep-pod-5",
           "award": "Previous flagship",
           "takeaway": "The Pod 5 Ultra adds an adjustable base, a top-down hydro blanket, audio and snore mitigation — but at ~$6,099 the core climate/HRV tech is shared with the cheaper Pod 4. Replaced by the Pod 6 (from $1,999) in September 2026."
-        },
-        {
-          "review": "eight-sleep-pod-3",
-          "award": "Best Eight Sleep value",
-          "takeaway": "Previous-gen Pod at meaningful discount from inventory — same app, narrower climate range."
         },
         {
           "review": "sleep-number-climate360",
@@ -23438,14 +23438,14 @@
           "takeaway": "Dual red + blue spectrum + Dr. Dennis Gross dermatology pedigree (FDA-cleared, per the brand)."
         },
         {
-          "review": "theraface-mask",
-          "award": "Best for Therabody ecosystem",
-          "takeaway": "Three-wavelength coverage with app control — leverages Theragun brand crossover."
-        },
-        {
           "review": "higherdose-red-light-face-mask",
           "award": "Best consumer-brand UX",
           "takeaway": "Simple controller + flexible silicone at accessible $349 — HigherDOSE ecosystem entry."
+        },
+        {
+          "review": "theraface-mask",
+          "award": "Best for Therabody ecosystem",
+          "takeaway": "Three-wavelength coverage with app control — leverages Theragun brand crossover."
         },
         {
           "review": "lightstim-for-wrinkles",
