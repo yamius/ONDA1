@@ -99,7 +99,6 @@ export const AWARD_REVIEW_PENDING = new Set<string>([
   'duel sun-home-equinox-vs-clearlight-sanctuary-2 › EMF',
   'duel eight-sleep-pod-4-vs-eight-sleep-pod-cover-pro › Form factor',
   'duel eight-sleep-pod-3-vs-eight-sleep-pod-cover-pro › Form factor',
-  'duel ice-barrel-500-vs-cold-pod-vs-inergize-cold-tub › Form factor',
   // criterion score itself to re-check (089_awards_table.md) — winner not recomputed until then
   'duel mito-red-mitopro-1500-vs-hooga-hg500 › Irradiance',
   'duel plunge-vs-edge-tub › Water management',
