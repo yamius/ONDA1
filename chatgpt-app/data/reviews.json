@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11",
+  "generatedAt": "2026-10-13",
   "source": "https://onda-life.com/reviews",
   "reviews": [
     {
@@ -13043,8 +13043,8 @@
       "axes": [
         {
           "name": "HRV accuracy",
-          "winner": "tie",
-          "note": "Practically equal: neither model has an independent validation of HRV against ECG (as of October 2026). The earlier WHOOP 4.0 was checked in one study of overnight recordings (13 people); the 5.0 and the brand-new Fitbit Air were not — unknown, not proven equal."
+          "winner": "b",
+          "note": "WHOOP 5.0 leads: neither model has its own independent HRV validation against ECG (as of October 2026), but the earlier WHOOP 4.0 was checked in one independent study of overnight recordings (13 people), which ONDA's rule credits; the brand-new Fitbit Air has no independent HRV data yet."
         },
         {
           "name": "Recovery coaching",
@@ -14184,8 +14184,8 @@
         },
         {
           "name": "Coaching",
-          "winner": "tie",
-          "note": "Both app-only by default. Neither includes a human coach without a separate tier."
+          "winner": "a",
+          "note": "Levels leads: neither includes a human coach by default, but Levels' in-app coaching is backed by a deep content library and a medical advisory board; Ultrahuman M1 relies mostly on AI insights (Jade), with performance coaches only in some plans."
         },
         {
           "name": "App and content",
@@ -14233,8 +14233,8 @@
         },
         {
           "name": "Sensor accuracy",
-          "winner": "tie",
-          "note": "Levels: Dexcom Stelo, G7 platform. Zoe: an older 2-week Abbott Libre variant. No independent study compares the two sensors head-to-head, and maker accuracy figures do not count as evidence in ONDA scores, so this axis is a tie."
+          "winner": "b",
+          "note": "Levels leads: it uses Dexcom's G7-platform sensor (Stelo), and the G7 has an independent head-to-head study (Eichenlaub et al. 2025, accuracy similar to FreeStyle Libre 3). Zoe uses an older 2-week Abbott Libre variant with no independent check of that sensor; maker accuracy figures do not count in ONDA scores."
         },
         {
           "name": "Multi-biomarker view",
@@ -14425,8 +14425,8 @@
         },
         {
           "name": "Sensor accuracy",
-          "winner": "tie",
-          "note": "Nutrisense: Dexcom G7. Zoe: an older 2-week Abbott Libre variant. No independent study compares the two sensors head-to-head, and maker accuracy figures do not count as evidence in ONDA scores, so this axis is a tie."
+          "winner": "a",
+          "note": "Nutrisense leads: it uses the Dexcom G7, which has an independent head-to-head study (Eichenlaub et al. 2025, accuracy similar to FreeStyle Libre 3). Zoe uses an older 2-week Abbott Libre variant with no independent check of that sensor; maker accuracy figures do not count in ONDA scores."
         },
         {
           "name": "Human expert involvement",
@@ -15163,8 +15163,8 @@
         },
         {
           "name": "Signal quality",
-          "winner": "tie",
-          "note": "Both consumer-grade dry/semi-dry systems. Neurosity has more channels; Emotiv has slightly cleaner per-channel signal at rest. Effectively tied."
+          "winner": "a",
+          "note": "Neurosity Crown leads: eight dry EEG channels at 256 Hz cover more of the cortex than Emotiv Insight 2's five semi-dry electrodes. Both hold a stable signal in seated sessions."
         },
         {
           "name": "Open SDK access",
@@ -15252,8 +15252,8 @@
         },
         {
           "name": "Comfort",
-          "winner": "b",
-          "note": "FocusCalm: soft headband, comfortable for daily use. Muse 2: rigid band, comfortable for sit-up sessions only. FocusCalm wins on daily wearability."
+          "winner": "tie",
+          "note": "Practically equal: both are comfortable for 10–20 minute sessions and neither is made for sleep. The difference is the band — FocusCalm uses a soft headband, Muse 2 a rigid one."
         },
         {
           "name": "Price",
@@ -15434,8 +15434,8 @@
         },
         {
           "name": "Personalisation",
-          "winner": "tie",
-          "note": "Both surface daily recommendations and remember progress; neither stands out."
+          "winner": "a",
+          "note": "Headspace leads: structured courses plus daily check-ins build a real progression. Calm also recommends sessions (the Daily Calm) but has fewer structured courses."
         },
         {
           "name": "Free tier",
@@ -16172,8 +16172,8 @@
         },
         {
           "name": "Free tier",
-          "winner": "tie",
-          "note": "Both have meaningful free tiers; premium content gated. Roughly equal."
+          "winner": "b",
+          "note": "Sleep Cycle leads: its free tier is usable on its own — many users never pay. BetterSleep has a free tier too, but the full library and tracking need the subscription."
         }
       ]
     },
@@ -16270,8 +16270,8 @@
         },
         {
           "name": "Irradiance",
-          "winner": "tie",
-          "note": "Both panels verified within 10% of stated 6\" figures. Effectively tied."
+          "winner": "a",
+          "note": "Joovv leads: both panels' stated figures hold up in independent readings, but Joovv delivers over 100 mW/cm² at 6 inches versus about 70 mW/cm² for the BIOMAX 600 at the same distance."
         },
         {
           "name": "EMF transparency",
@@ -16511,8 +16511,8 @@
         },
         {
           "name": "Irradiance",
-          "winner": "tie",
-          "note": "Both: independent verification within 5–10% of stated figures. Joovv has marginally higher peak; GembaRed slightly lower at the same distance."
+          "winner": "b",
+          "note": "Joovv leads: both are honestly specced (independent readings close to stated figures), but at 6 inches Joovv delivers over 100 mW/cm² versus about 60 mW/cm² for the GembaRed Vesta."
         },
         {
           "name": "FDA / regulatory status",
@@ -16570,8 +16570,8 @@
         },
         {
           "name": "Irradiance",
-          "winner": "tie",
-          "note": "Both: independent verification within 10% of stated figures. Effectively tied."
+          "winner": "a",
+          "note": "PlatinumLED leads: about 70 mW/cm² at 6 inches (independently verified within 10%) versus about 50 mW/cm² for the Biolight Pro 900 (verified within 10–15%)."
         },
         {
           "name": "EMF / flicker",
@@ -16631,8 +16631,8 @@
       "axes": [
         {
           "name": "Wavelength coverage",
-          "winner": "c",
-          "note": "PlatinumLED: seven (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm). Mito Red 1500X: six (590 + 630 + 660 + 810 + 830 + 850 nm). Joovv: red + near-infrared (660 + 850 nm). PlatinumLED leads narrowly over Mito Red."
+          "winner": "tie",
+          "note": "Practically equal between PlatinumLED and Mito Red: PlatinumLED has seven wavelengths (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm), Mito Red 1500X six (590 + 630 + 660 + 810 + 830 + 850 nm); both cover red and deeper near-infrared. Joovv has two (660 + 850 nm)."
         },
         {
           "name": "Irradiance verification",
@@ -16884,8 +16884,8 @@
         },
         {
           "name": "Build",
-          "winner": "tie",
-          "note": "Plunge: premium acrylic with insulation. Ice Barrel: food-grade plastic barrel with insulation. Both solid for their tier."
+          "winner": "a",
+          "note": "The Plunge leads: an insulated acrylic tub with marine-grade hardware and a 3-year warranty, versus Ice Barrel's insulated food-grade plastic barrel with a 1-year warranty. Both have solid multi-year reliability records."
         },
         {
           "name": "Footprint",
@@ -17080,8 +17080,8 @@
         },
         {
           "name": "Water management",
-          "winner": "tie",
-          "note": "All three: manual water changes; no ozone in base configurations."
+          "winner": "c",
+          "note": "Inergize leads: it offers an optional ozone add-on. Ice Barrel and Cold Pod have no ozone or filter, so water is changed by hand (Ice Barrel every 1–2 weeks, plus daily ice top-ups)."
         },
         {
           "name": "Price",
@@ -17242,8 +17242,8 @@
         },
         {
           "name": "EMF",
-          "winner": "tie",
-          "note": "Both publish independently-measured low EMF. No meaningful edge."
+          "winner": "b",
+          "note": "Sunlighten leads: it publishes independently measured EMF at the seated position (typically under 1 mG). Sun Home documents third-party-verified low EMF, but ONDA found no published figures of the same detail."
         },
         {
           "name": "Price",
@@ -17355,8 +17355,8 @@
         },
         {
           "name": "EMF discipline",
-          "winner": "tie",
-          "note": "Both document low EMF with third-party verification."
+          "winner": "a",
+          "note": "HigherDOSE leads: it publishes a figure (under 3 mG at body position), spot-checked by third parties. Therasage documents low EMF with third-party spot checks but publishes no comparable figure."
         },
         {
           "name": "Brand community",
@@ -17475,8 +17475,8 @@
         },
         {
           "name": "Form factor",
-          "winner": "a",
-          "note": "Sunlighten and Clearlight: traditional cabin install. SaunaSpace: tent-style or smaller cabin. Sunlighten/Clearlight more familiar shape."
+          "winner": "tie",
+          "note": "Practically equal between Sunlighten and Clearlight: both are cabins that need dedicated floor space (Sunlighten 1-person from 4 × 4 ft; Clearlight 2-person 52 × 48 in, 120 V on a 20 A outlet). SaunaSpace is smaller (tent-style or compact cabin), but the tent needs assembly."
         },
         {
           "name": "Brand and community",
@@ -17516,8 +17516,8 @@
       "axes": [
         {
           "name": "Heat source",
-          "winner": "tie",
-          "note": "Sunlighten: full-spectrum IR (radiant). Finnleo and Almost Heaven: convection (traditional Finnish heat). Different mechanisms; pick on which feels right."
+          "winner": "a",
+          "note": "Sunlighten leads: near (LED), mid and far infrared run independently — the most complete infrared setup ONDA reviewed. Finnleo is close behind with a Helo convection heater and löyly steam; Almost Heaven uses a solid 6 kW convection heater."
         },
         {
           "name": "Install context",
@@ -17531,8 +17531,8 @@
         },
         {
           "name": "EMF",
-          "winner": "b",
-          "note": "Finnleo and Almost Heaven: no electronics in heat delivery (EMF non-issue). Sunlighten: low EMF documented but non-zero."
+          "winner": "tie",
+          "note": "Practically equal between Finnleo and Almost Heaven: both are traditional convection saunas with no electronics around the body, so EMF is a non-issue. Sunlighten is low but not zero (typically under 1 mG, published)."
         },
         {
           "name": "Research evidence",
@@ -18003,8 +18003,8 @@
         },
         {
           "name": "Comfort",
-          "winner": "b",
-          "note": "FocusCalm: soft headband, comfortable daily wear. Mendi: simple forehead band. Muse 2: rigid headband, sit-up only. FocusCalm wins on comfort."
+          "winner": "c",
+          "note": "Mendi leads: a simple forehead band that is easy to put on and take off. Muse 2 (rigid band) and FocusCalm (soft band) are comfortable for 10–20 minute sessions; none is made for sleep."
         },
         {
           "name": "Subscription model",
@@ -18240,8 +18240,8 @@
       "axes": [
         {
           "name": "Climate range",
-          "winner": "tie",
-          "note": "Both deliver dual-zone water cooling/heating with comparable usable range (13–43°C class). Real-world recovery times comparable."
+          "winner": "a",
+          "note": "Eight Sleep Pod 4 leads: both are dual-zone water systems (Pod 4 13–43 °C, Dock Pro 13–46 °C), but the Pod 4 gets back to the target temperature faster in peak heat."
         },
         {
           "name": "Tracking",
@@ -18260,8 +18260,8 @@
         },
         {
           "name": "Form factor",
-          "winner": "tie",
-          "note": "Both cover-style installs on existing mattress with separate hub. Eight Sleep also ships full-system mattress option; ChiliPad is cover-only."
+          "winner": "b",
+          "note": "ChiliPad Dock Pro leads: a pad that goes on top of your existing mattress, while the Pod 4 is a cover-plus-mattress system. Both offer dual zones and need a nightstand hub."
         },
         {
           "name": "3-year cost",
@@ -18422,8 +18422,8 @@
         },
         {
           "name": "Build",
-          "winner": "tie",
-          "note": "Both use the same proven Sleepme water-cooling architecture. Multi-year reliability comparable."
+          "winner": "a",
+          "note": "Dock Pro leads: the same proven Sleepme water-cooling design, but a 2-year warranty versus the Cube's 1-year limited warranty (extendable at checkout)."
         },
         {
           "name": "Price",
@@ -18512,8 +18512,8 @@
       "axes": [
         {
           "name": "Climate range",
-          "winner": "tie",
-          "note": "Eight Sleep and ChiliPad: comparable dual-zone water-cooled range, best for peak summer heat. BedJet: air-flow, effective in mild-to-moderate climates, weaker in humid summer peaks."
+          "winner": "a",
+          "note": "Eight Sleep Pod 4 leads: dual-zone water cooling (13–43 °C) with the fastest recovery in peak heat. ChiliPad Dock Pro is close (13–46 °C, slightly slower in peak heat); BedJet's air flow cools less in humid summer peaks."
         },
         {
           "name": "Tracking",
@@ -18522,8 +18522,8 @@
         },
         {
           "name": "Subscription",
-          "winner": "c",
-          "note": "Eight Sleep: required (~$15-25/mo). ChiliPad: none. BedJet: none. Two of three are subscription-free."
+          "winner": "tie",
+          "note": "Practically equal between ChiliPad and BedJet: neither needs a subscription. Eight Sleep needs Autopilot (about $15–25 a month) for full features."
         },
         {
           "name": "Maintenance",
@@ -20535,8 +20535,8 @@
         },
         {
           "name": "Form factor",
-          "winner": "tie",
-          "note": "Bemer: passive whole-body mat — lie down, run session. Pulse Centers: active coil positioning per session. Different jobs, pick on use case."
+          "winner": "a",
+          "note": "Bemer leads: one control unit runs a full-body mat plus two spot applicators — you lie down and start. Pulse Centers uses coil applicators you position by hand each session, for targeted treatment only."
         },
         {
           "name": "Daily-use friendliness",
@@ -20707,8 +20707,8 @@
         },
         {
           "name": "Form factor",
-          "winner": "tie",
-          "note": "Resona: wearable pocket device. OlyLife: handheld wand. Both portable, single-applicator, targeted-only treatment."
+          "winner": "a",
+          "note": "Resona leads: a wearable pocket device you can use on the go, while the OlyLife Tera-P90+ is a handheld wand. Both are targeted-only, with no whole-body mat."
         },
         {
           "name": "Controls",
@@ -21276,8 +21276,8 @@
         },
         {
           "name": "Wavelength coverage",
-          "winner": "b",
-          "note": "Dr. Dennis Gross: dual red 633 nm + blue 415 nm — covers anti-aging + acne. Omnilux: red 633 nm + near-infrared 830 nm — anti-aging + deeper tissue without acne mode."
+          "winner": "tie",
+          "note": "Practically equal: both use two wavelengths. Omnilux pairs red 633 nm with near-infrared 830 nm (the pair most used in skin studies); Dr. Dennis Gross pairs red 633 nm with blue 415 nm, adding an acne mode."
         },
         {
           "name": "Clinical evidence",
@@ -21504,8 +21504,8 @@
         },
         {
           "name": "Wavelength coverage",
-          "winner": "c",
-          "note": "Dr. Dennis Gross: dual red + blue. Omnilux: red + near-infrared. CurrentBody: red + near-infrared. Dr. Dennis Gross uniquely covers acne via blue."
+          "winner": "tie",
+          "note": "Practically equal: all three use two wavelengths. Omnilux and CurrentBody pair red 633 nm with near-infrared 830 nm; Dr. Dennis Gross pairs red 633 nm with blue 415 nm, adding an acne mode."
         },
         {
           "name": "Comfort",
@@ -22704,22 +22704,22 @@
       "picks": [
         {
           "review": "polar-h10",
-          "award": "Best for accuracy",
+          "award": "Best overall (practically equal) · Best value — chest strap — for measurements and workouts, not for 24/7 wear · Best for accuracy",
           "takeaway": "ECG electrodes, not optical — close to lab ECG at rest in young healthy adults — and fully open data; a measuring tool, not an all-day wearable."
         },
         {
           "review": "oura-ring-5",
-          "award": "Best overall",
+          "award": "Best overall (practically equal)",
           "takeaway": "Overnight HRV and sleep from the ring line with the most published research — mostly on earlier generations, partly funded by Oura (the Ring 5 itself not yet separately validated), upgraded sensors and the best app — if you accept the subscription."
         },
         {
           "review": "apple-watch-series-12",
-          "award": "Best all-round smartwatch",
+          "award": "Best overall (practically equal) · Best all-round smartwatch",
           "takeaway": "The new Health Sensing System finally takes HRV seriously — 24× more frequent sampling and a Recovery-vs-Overall HRV split — though a ~1-day battery still competes with overnight wear."
         },
         {
           "review": "garmin-venu-4",
-          "award": "Best for training",
+          "award": "Best overall (practically equal) · Best for training",
           "takeaway": "The Garmin training ecosystem plus competent HRV and multi-day battery, with no subscription."
         },
         {
@@ -22754,7 +22754,7 @@
         },
         {
           "review": "ringconn-gen-2",
-          "award": "Best value",
+          "award": "Best value for 24/7 wear",
           "takeaway": "A 10–12-day battery and premium-ring features, subscription-free, for roughly half the long-term cost of an Oura."
         },
         {
@@ -22838,12 +22838,12 @@
       "picks": [
         {
           "review": "sleep-cycle",
-          "award": "Best overall",
+          "award": "Best overall (practically equal)",
           "takeaway": "The most polished mainstream tracker, with a smart alarm and a free tier you can live on."
         },
         {
           "review": "sleepscore",
-          "award": "Best recommendations",
+          "award": "Best overall (practically equal) · Best recommendations",
           "takeaway": "Research-led and contact-free, the strongest at turning sleep data into something to act on."
         },
         {
@@ -22915,12 +22915,12 @@
         },
         {
           "review": "truvaga-350",
-          "award": "Best cervical (consumer)",
+          "award": "Best value (practically equal) · Best cervical (consumer)",
           "takeaway": "gammaCore’s maker’s over-the-counter wellness device — the same cervical platform without the prescription gate, now $325 for 350 sessions."
         },
         {
           "review": "pulsetto",
-          "award": "Best value (consumer)",
+          "award": "Best value (practically equal)",
           "takeaway": "The cheapest neck-worn tVNS with four guided programmes — the most accessible entry into cervical stimulation."
         },
         {
@@ -22978,7 +22978,7 @@
         },
         {
           "review": "stelo",
-          "award": "Best value (Dexcom G7)",
+          "award": "",
           "takeaway": "Dexcom’s OTC consumer programme — same sensor as Levels at a third of the long-term cost."
         },
         {
@@ -22988,7 +22988,7 @@
         },
         {
           "review": "lingo",
-          "award": "Best entry point",
+          "award": "Best value · Best entry point",
           "takeaway": "Abbott’s OTC Libre 3 consumer line — the cheapest legitimate US CGM access, no subscription required."
         },
         {
@@ -23067,17 +23067,17 @@
       "picks": [
         {
           "review": "platinumled-biomax-600",
-          "award": "Best wavelength spectrum",
+          "award": "Best overall (practically equal) · Best wavelength spectrum",
           "takeaway": "Seven wavelengths and published third-party EMF testing at $1,049 — the spectrum leader."
         },
         {
           "review": "mito-red-mitopro-1500",
-          "award": "Best overall",
+          "award": "Best overall (practically equal)",
           "takeaway": "MitoPRO 1500X: six-wavelength large panel, 3-year warranty — $400 cheaper than Joovv at $1,299."
         },
         {
           "review": "rubylx-lyra-pro",
-          "award": "Best testing transparency",
+          "award": "Best overall (practically equal) · Best testing transparency",
           "takeaway": "Every published spec independently lab-verified — the most-tested panel in the consumer category."
         },
         {
@@ -23124,17 +23124,17 @@
       "picks": [
         {
           "review": "plunge",
-          "award": "Best overall",
+          "award": "Best overall (practically equal)",
           "takeaway": "Category-defining premium build, 1 HP chiller, ozone, 3-year warranty. The turnkey reference."
         },
         {
           "review": "coldture",
-          "award": "Best for cold climates",
+          "award": "Best overall (practically equal) · Best for cold climates",
           "takeaway": "Canadian-built outdoor-rated tub with strongest winter performance among premium options."
         },
         {
           "review": "edge-tub",
-          "award": "Best mid-tier value",
+          "award": "Best overall (practically equal) · Best mid-tier value",
           "takeaway": "Comparable chiller and ozone hardware to Plunge at roughly half the price."
         },
         {
@@ -23181,7 +23181,7 @@
       "picks": [
         {
           "review": "sunlighten-mpulse",
-          "award": "Best overall (full-spectrum IR)",
+          "award": "Best overall",
           "takeaway": "True 3-wavelength IR delivery, premium cedar build, verified low EMF."
         },
         {
@@ -23595,17 +23595,17 @@
       "picks": [
         {
           "review": "dyson-purifier-big-quiet",
-          "award": "Best premium smart",
+          "award": "Best overall (practically equal) · Best premium smart",
           "takeaway": "Dyson polish + True HEPA + formaldehyde destruction + best-in-category smart features at $999."
         },
         {
           "review": "coway-airmega-400",
-          "award": "Best mid-premium value",
+          "award": "Best overall (practically equal) · Best mid-premium value",
           "takeaway": "1560 sq ft AHAM coverage + True HEPA + carbon + sensor at $479 — best CADR-per-dollar in category."
         },
         {
           "review": "iqair-healthpro-plus",
-          "award": "Best overall",
+          "award": "Best overall (practically equal)",
           "takeaway": "Maker-rated H14 HyperHEPA filtration (company-stated) + multi-decade Swiss pedigree — the deepest spec in consumer category."
         },
         {
