@@ -21,7 +21,7 @@ const sunHomeVsSunlighten: HeadToHeadInput = {
     { name: 'Heat output', winner: 'a', note: 'Sun Home Equinox reaches the highest temperatures (~165°F); Sunlighten runs a touch cooler (~150°F).' },
     { name: 'Integrated red light / extras', winner: 'a', note: 'Sun Home bundles integrated red-light panels and chromotherapy as standard; Sunlighten focuses on infrared delivery.' },
     { name: 'Build quality', winner: 'b', note: 'Sunlighten’s premium cedar build and finish are the category reference. Sun Home is well-built but a step behind on materials.' },
-    { name: 'EMF', winner: 'tie', note: 'Both publish independently-measured low EMF. No meaningful edge.' },
+    { name: 'EMF', criterionId: 'emf', note: "Sunlighten leads: it publishes independently measured EMF at the seated position (typically under 1 mG). Sun Home documents third-party-verified low EMF, but ONDA found no published figures of the same detail." },
     { name: 'Price', winner: 'tie', note: 'Both start around $6,000 for comparable configurations, so price is roughly a wash — the difference is what you prioritise.' },
   ],
   faq: [

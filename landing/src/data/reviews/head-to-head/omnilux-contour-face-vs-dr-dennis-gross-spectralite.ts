@@ -18,7 +18,7 @@ const omniluxVsGross: HeadToHeadInput = {
     'Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand dual red + blue spectrum protocols (anti-aging + acne) and accept hard-shell comfort.',
   axes: [
     { name: 'Comfort', winner: 'a', note: 'Omnilux: flexible silicone — the most comfortable in our testing. Dr. Dennis Gross: hard-shell, heavier, less comfortable for extended sessions.' },
-    { name: 'Wavelength coverage', winner: 'b', note: 'Dr. Dennis Gross: dual red 633 nm + blue 415 nm — covers anti-aging + acne. Omnilux: red 633 nm + near-infrared 830 nm — anti-aging + deeper tissue without acne mode.' },
+    { name: 'Wavelength coverage', criterionId: 'wavelength-coverage', note: "Practically equal: both use two wavelengths. Omnilux pairs red 633 nm with near-infrared 830 nm (the pair most used in skin studies); Dr. Dennis Gross pairs red 633 nm with blue 415 nm, adding an acne mode." },
     { name: 'Clinical evidence', winner: 'tie', note: 'Practically equal: neither mask has an independent trial of its own (as of October 2026). Omnilux\'s published studies are on other Omnilux models; Dr. Dennis Gross\'s are brand-funded. Both FDA-cleared (Omnilux: 510(k) K191629; Dr. Dennis Gross: per the brand); clearance is not evidence that a device works.' },
     { name: 'Session length', winner: 'b', note: 'Dr. Dennis Gross: 3-minute protocol — shortest in category. Omnilux: 10-minute protocol.' },
     { name: 'Brand pedigree', winner: 'b', note: 'Dr. Dennis Gross: dermatology-practice brand, named-dermatologist credibility. Omnilux: dermatology-clinic-device brand.' },
@@ -28,7 +28,7 @@ const omniluxVsGross: HeadToHeadInput = {
   faq: [
     {
       q: 'Omnilux or Dr. Dennis Gross — which is better?',
-      a: 'Omnilux wins on comfort and price. Dr. Dennis Gross wins on dual red + blue spectrum and shortest session time. Trade silicone comfort for dual-spectrum protocols.',
+      a: 'Omnilux wins on comfort and price. Dr. Dennis Gross adds a blue acne mode (red + blue) and the shortest session time. Trade silicone comfort for dual-spectrum protocols.',
     },
     {
       q: 'Do I need the blue wavelength?',

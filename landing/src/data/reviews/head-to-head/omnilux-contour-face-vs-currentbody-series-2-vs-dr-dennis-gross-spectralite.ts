@@ -21,7 +21,7 @@ const omniluxVsCurrentbodyVsGross: HeadToHeadInput = {
     'Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand pedigree with dual red + blue protocols (anti-aging + acne) and accept hard-shell comfort.',
   axes: [
     { name: 'Clinical evidence', winner: 'tie', note: 'Practically equal: none of the three has an independent trial of the mask itself (as of October 2026). Omnilux\'s published studies are on other models; CurrentBody\'s and Dr. Dennis Gross\'s are brand-funded. Omnilux (510(k) K191629) and Dr. Dennis Gross are FDA-cleared, CurrentBody FDA registered (a listing) — all scored as neutral.' },
-    { name: 'Wavelength coverage', winner: 'c', note: 'Dr. Dennis Gross: dual red + blue. Omnilux: red + near-infrared. CurrentBody: red + near-infrared. Dr. Dennis Gross uniquely covers acne via blue.' },
+    { name: 'Wavelength coverage', criterionId: 'wavelength-coverage', note: "Practically equal: all three use two wavelengths. Omnilux and CurrentBody pair red 633 nm with near-infrared 830 nm; Dr. Dennis Gross pairs red 633 nm with blue 415 nm, adding an acne mode." },
     { name: 'Comfort', winner: 'tie', note: 'Omnilux and CurrentBody: flexible silicone — comparable comfort. Dr. Dennis Gross: hard-shell — less comfortable for extended sessions. Omnilux + CurrentBody tied; Dr. Dennis Gross trails.' },
     { name: 'Neck coverage', winner: 'b', note: 'CurrentBody: integrated neck flap. Omnilux: neck flap sold separately. Dr. Dennis Gross: no neck coverage.' },
     { name: 'Session time', winner: 'c', note: 'Dr. Dennis Gross: 3 minutes — shortest in category. Omnilux and CurrentBody: 10 minutes.' },

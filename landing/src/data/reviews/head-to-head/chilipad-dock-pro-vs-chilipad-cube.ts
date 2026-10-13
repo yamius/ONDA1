@@ -21,7 +21,7 @@ const dockProVsCube: HeadToHeadInput = {
     { name: 'Climate range', criterionId: 'climate-range', note: 'Dock Pro: higher-capacity chiller, more aggressive cooling against summer peaks. Cube: cools to 60°F and reaches limits faster on hot humid nights.' },
     { name: 'Scheduling', winner: 'a', note: 'Dock Pro: app-based climate scheduling (cool for sleep onset, warm for wake). Cube: physical remote only, no scheduling.' },
     { name: 'App', winner: 'a', note: 'Dock Pro: full Sleepme app with scheduling and presets. Cube: no app at all — controlled by a physical remote.' },
-    { name: 'Build', winner: 'tie', note: 'Both use the same proven Sleepme water-cooling architecture. Multi-year reliability comparable.' },
+    { name: 'Build', criterionId: 'build', note: "Dock Pro leads: the same proven Sleepme water-cooling design, but a 2-year warranty versus the Cube's 1-year limited warranty (extendable at checkout)." },
     { name: 'Price', winner: 'b', note: 'Dock Pro: ~$1,700. Cube: $719 on sale ($799 list) per sleeper side. Cube is well under half the price for one sleeper.' },
   ],
   faq: [

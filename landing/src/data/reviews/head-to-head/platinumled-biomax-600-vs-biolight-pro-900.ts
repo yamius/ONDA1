@@ -17,7 +17,7 @@ const platinumledVsBioLight: HeadToHeadInput = {
     'Choose BioLight Pro 900 if you want four-wavelength coverage at $150 less and brand maturity is not a deciding factor.',
   axes: [
     { name: 'Wavelength coverage', criterionId: 'wavelengths', note: 'PlatinumLED: seven wavelengths (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm). BioLight: four (600 + 660 + 830 + 850 nm). PlatinumLED has broader spectrum.' },
-    { name: 'Irradiance', winner: 'tie', note: 'Both: independent verification within 10% of stated figures. Effectively tied.' },
+    { name: 'Irradiance', criterionId: 'irradiance', note: "PlatinumLED leads: about 70 mW/cm² at 6 inches (independently verified within 10%) versus about 50 mW/cm² for the Biolight Pro 900 (verified within 10–15%)." },
     { name: 'EMF / flicker', winner: 'a', note: 'PlatinumLED: third-party EMF test reports publicly published. BioLight: EMF figures published but less independently re-verified. PlatinumLED wins on testing transparency.' },
     { name: 'Coverage / panel size', winner: 'tie', note: 'Both mid-size half-body panels. Comparable treatment area.' },
     { name: 'Build quality', winner: 'tie', note: 'Both: aluminium back, glass front, multi-year warranty. Comparable build standards.' },

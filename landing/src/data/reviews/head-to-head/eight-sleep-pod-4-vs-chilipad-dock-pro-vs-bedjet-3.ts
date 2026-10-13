@@ -20,9 +20,9 @@ const eightSleepVsChilipadVsBedjet: HeadToHeadInput = {
   bestForC:
     'Choose BedJet 3 if you want clean air-flow climate with no water management at the lowest price in the category.',
   axes: [
-    { name: 'Climate range', winner: 'tie', note: 'Eight Sleep and ChiliPad: comparable dual-zone water-cooled range, best for peak summer heat. BedJet: air-flow, effective in mild-to-moderate climates, weaker in humid summer peaks.' },
+    { name: 'Climate range', criterionId: 'climate-range', note: "Eight Sleep Pod 4 leads: dual-zone water cooling (13–43 °C) with the fastest recovery in peak heat. ChiliPad Dock Pro is close (13–46 °C, slightly slower in peak heat); BedJet's air flow cools less in humid summer peaks." },
     { name: 'Tracking', winner: 'a', note: 'Eight Sleep: integrated HRV + sleep-stage detection. ChiliPad and BedJet: no built-in tracking, pair with separate wearable.' },
-    { name: 'Subscription', winner: 'c', note: 'Eight Sleep: required (~$15-25/mo). ChiliPad: none. BedJet: none. Two of three are subscription-free.' },
+    { name: 'Subscription', criterionId: 'subscription', note: "Practically equal between ChiliPad and BedJet: neither needs a subscription. Eight Sleep needs Autopilot (about $15–25 a month) for full features." },
     { name: 'Maintenance', winner: 'c', note: 'Eight Sleep and ChiliPad: water reservoir to manage. BedJet: air-only, no water tank, no hoses, no reservoir cleaning.' },
     { name: 'Dual-zone', winner: 'a', note: 'Eight Sleep and ChiliPad: native his/her. BedJet: single-zone (doubling to two units costs more than ChiliPad single-system).' },
     { name: 'App', winner: 'a', note: 'Eight Sleep: best in category, stage-based Autopilot. ChiliPad: scheduling-capable, climate-focused. BedJet: functional, minimal.' },

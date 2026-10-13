@@ -20,7 +20,7 @@ const headspaceVsCalm: HeadToHeadInput = {
     { name: 'Library breadth', winner: 'b', note: 'Calm’s library is broader — meditations plus sleep stories, sleep music, masterclasses, soundscapes. Headspace is more focused on meditation proper.' },
     { name: 'Sleep content', winner: 'b', note: 'Calm’s sleep stories and sleep soundscapes are category-leading. Headspace has sleep content but it is a smaller share of the library.' },
     { name: 'Structured courses', winner: 'a', note: 'Headspace’s "Basics" and themed courses are the strongest structured-learning path in the category. Calm has courses but they are not the centre of the experience.' },
-    { name: 'Personalisation', winner: 'tie', note: 'Both surface daily recommendations and remember progress; neither stands out.' },
+    { name: 'Personalisation', criterionId: 'personalization', note: "Headspace leads: structured courses plus daily check-ins build a real progression. Calm also recommends sessions (the Daily Calm) but has fewer structured courses." },
     { name: 'Free tier', criterionId: 'free-tier', note: 'Both lock most content behind subscription with a thin free tier; neither is generous.' },
     { name: 'Price', winner: 'tie', note: 'Headspace: ~$70/year. Calm Premium: $79.99/year after a 7-day trial, or $499.99 lifetime. Close enough to call a tie; Calm alone offers a lifetime option.' },
   ],

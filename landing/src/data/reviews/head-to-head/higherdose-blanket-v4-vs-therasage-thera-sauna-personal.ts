@@ -21,7 +21,7 @@ const higherdoseVsTherasage: HeadToHeadInput = {
     { name: 'Form factor', criterionId: 'form-factor', note: 'HigherDose: blanket, folds for storage, no install. Therasage: tent or cabin, requires install space.' },
     { name: 'Body-surface coverage', winner: 'b', note: 'Therasage tent / cabin: full-body upright exposure. HigherDose blanket: prone position, body-contact coverage.' },
     { name: 'Peak temperature reached', winner: 'b', note: 'Therasage cabin reaches higher core temperatures than blanket. HigherDose: 30–40 minute sessions at lower body temperatures.' },
-    { name: 'EMF discipline', winner: 'tie', note: 'Both document low EMF with third-party verification.' },
+    { name: 'EMF discipline', criterionId: 'emf', note: "HigherDOSE leads: it publishes a figure (under 3 mG at body position), spot-checked by third parties. Therasage documents low EMF with third-party spot checks but publishes no comparable figure." },
     { name: 'Brand community', winner: 'a', note: 'HigherDose has the strongest consumer-wellness brand presence in this tier. Therasage is biohacker-focused.' },
     { name: 'Price', winner: 'a', note: 'HigherDose: $599. Therasage: $1,500–$3,500 depending on configuration. HigherDose meaningfully cheaper.' },
   ],

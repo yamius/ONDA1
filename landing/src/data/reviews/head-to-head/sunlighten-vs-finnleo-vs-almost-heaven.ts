@@ -20,10 +20,10 @@ const irVsTraditional: HeadToHeadInput = {
   bestForC:
     'Choose Almost Heaven Salem if you want traditional outdoor cedar barrel sauna with American-built construction, a 6 kW electric heater and the lowest price of the three.',
   axes: [
-    { name: 'Heat source', winner: 'tie', note: 'Sunlighten: full-spectrum IR (radiant). Finnleo and Almost Heaven: convection (traditional Finnish heat). Different mechanisms; pick on which feels right.' },
+    { name: 'Heat source', criterionId: 'heat-source', note: "Sunlighten leads: near (LED), mid and far infrared run independently — the most complete infrared setup ONDA reviewed. Finnleo is close behind with a Helo convection heater and löyly steam; Almost Heaven uses a solid 6 kW convection heater." },
     { name: 'Install context', winner: 'tie', note: 'Sunlighten: indoor cabin. Finnleo: indoor cabin. Almost Heaven: outdoor barrel only. Pick on install space.' },
     { name: 'Peak temperature', winner: 'b', note: 'Finnleo and Almost Heaven: 80–95°C traditional Finnish heat. Sunlighten: 50–65°C IR-cabin temperature (lower; the body heats less).' },
-    { name: 'EMF', winner: 'b', note: 'Finnleo and Almost Heaven: no electronics in heat delivery (EMF non-issue). Sunlighten: low EMF documented but non-zero.' },
+    { name: 'EMF', criterionId: 'emf', note: "Practically equal between Finnleo and Almost Heaven: both are traditional convection saunas with no electronics around the body, so EMF is a non-issue. Sunlighten is low but not zero (typically under 1 mG, published)." },
     { name: 'Research evidence', winner: 'b', note: 'Traditional Finnish sauna (Finnleo, Almost Heaven) has the deepest published research evidence base — observational Finnish cohort studies (middle-aged men) linking frequent use with lower cardiovascular mortality and dementia risk; associations, not proof of cause.' },
     { name: 'Brand pedigree', winner: 'b', note: 'Finnleo: Finnish manufacturing pedigree (Helo). Almost Heaven: American cedar barrel pedigree. Sunlighten: longest IR-sauna brand presence.' },
     { name: 'Price', winner: 'c', note: 'Almost Heaven Salem (2-person): $4,485 list incl. heater ($4,036.50 sale, October 2026). Sunlighten: ~$6,000. Finnleo: ~$8,000+. Almost Heaven is the cheapest; Finnleo premium-priced.' },

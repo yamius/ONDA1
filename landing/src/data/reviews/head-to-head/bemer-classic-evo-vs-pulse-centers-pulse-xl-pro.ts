@@ -19,7 +19,7 @@ const bemerVsPulseCenters: HeadToHeadInput = {
   axes: [
     { name: 'Field strength', criterionId: 'field-strength', note: 'Bemer: 35–150 µT (mat output). Pulse Centers: 200,000+ µT peak (coil applicators). Different orders of magnitude — Pulse Centers wins on raw intensity by a wide margin.' },
     { name: 'Waveform research', winner: 'a', note: 'Bemer: the longest study list on one specific signal, but mostly small or manufacturer-linked; independent controlled trials found no difference from control. Pulse Centers: no published trials of this system.' },
-    { name: 'Form factor', winner: 'tie', note: 'Bemer: passive whole-body mat — lie down, run session. Pulse Centers: active coil positioning per session. Different jobs, pick on use case.' },
+    { name: 'Form factor', criterionId: 'form-factor', note: "Bemer leads: one control unit runs a full-body mat plus two spot applicators — you lie down and start. Pulse Centers uses coil applicators you position by hand each session, for targeted treatment only." },
     { name: 'Daily-use friendliness', winner: 'a', note: 'Bemer: set on bed, lie down, daily passive use. Pulse Centers: active positioning per session, more clinic-style operation.' },
     { name: 'Athletic recovery / rehab', winner: 'b', note: 'Pulse Centers: high-intensity coils are what athletic and chiropractic clinics buy, though no independent trials of this system exist. Bemer mat output is not built for these protocols.' },
     { name: 'Regulatory standing', winner: 'tie', note: 'Bemer is FDA-cleared through 510(k) as a non-medical muscle-conditioning device (product code NGX), not for treating disease. Pulse Centers: no comparable FDA clearance found. Neither is cleared to treat any condition.' },

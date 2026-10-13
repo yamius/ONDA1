@@ -18,7 +18,7 @@ const zoeVsLevels: HeadToHeadInput = {
     'Choose Levels if you want continuous CGM as a self-experimentation instrument — the deepest meal-impact engine on Dexcom Stelo (G7 platform).',
   axes: [
     { name: 'Continuous CGM use', winner: 'b', note: 'Levels memberships include 1–2 months of CGM a year, with extra months as an add-on. Zoe runs CGM for two weeks only — the data feeds the initial ranking model and then ends.' },
-    { name: 'Sensor accuracy', winner: 'tie', note: 'Levels: Dexcom Stelo, G7 platform. Zoe: an older 2-week Abbott Libre variant. No independent study compares the two sensors head-to-head, and maker accuracy figures do not count as evidence in ONDA scores, so this axis is a tie.' },
+    { name: 'Sensor accuracy', criterionId: 'sensor-accuracy', note: "Levels leads: it uses Dexcom's G7-platform sensor (Stelo), and the G7 has an independent head-to-head study (Eichenlaub et al. 2025, accuracy similar to FreeStyle Libre 3). Zoe uses an older 2-week Abbott Libre variant with no independent check of that sensor; maker accuracy figures do not count in ONDA scores." },
     { name: 'Multi-biomarker view', winner: 'a', note: 'Zoe is the only programme combining CGM with gut-microbiome stool sampling and blood biomarker panels. Levels is glucose-only.' },
     { name: 'Scientific lineage', winner: 'a', note: 'Zoe runs on the published PREDICT-1/PREDICT-2 studies from King’s College London (Tim Spector). Levels has a credible medical advisory board but no equivalent published trial series.' },
     { name: 'Personalised food rankings', winner: 'a', note: 'Zoe’s personalised food scores are the centrepiece of the programme. Levels surfaces meal impact but does not rank foods against your own physiology long-term.' },

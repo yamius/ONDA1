@@ -17,7 +17,7 @@ const joovvVsPlatinumLed: HeadToHeadInput = {
     'Choose PlatinumLED BIOMAX 600 if you want seven-wavelength coverage and published third-party EMF testing at meaningfully lower price.',
   axes: [
     { name: 'Wavelength coverage', criterionId: 'wavelengths', note: 'PlatinumLED: seven wavelengths (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm). Joovv: two (660 + 850 nm). PlatinumLED has dramatically broader spectrum.' },
-    { name: 'Irradiance', winner: 'tie', note: 'Both panels verified within 10% of stated 6" figures. Effectively tied.' },
+    { name: 'Irradiance', criterionId: 'irradiance', note: "Joovv leads: both panels' stated figures hold up in independent readings, but Joovv delivers over 100 mW/cm² at 6 inches versus about 70 mW/cm² for the BIOMAX 600 at the same distance." },
     { name: 'EMF transparency', winner: 'b', note: 'PlatinumLED publishes full third-party EMF and flicker test reports. Joovv publishes summary figures. PlatinumLED wins on testing transparency.' },
     { name: 'Coverage and modularity', winner: 'a', note: 'Joovv: modular Solo stacks. PlatinumLED: mid-size single panel, stack two for full-body. Joovv is more flexible.' },
     { name: 'FDA / regulatory status', winner: 'tie', note: 'Joovv says the Solo 3.0 is FDA Class II registered; PlatinumLED BIOMAX 600: no FDA registration. Registration/listing is not clearance or approval and is not a quality mark.' },

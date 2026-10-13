@@ -25,7 +25,7 @@ const threeBudgetPlunge: HeadToHeadInput = {
     { name: 'Upgrade path to chiller', winner: 'c', note: 'Inergize offers a chiller add-on for ~$1,300. Ice Barrel and Cold Pod are ice-fill-only.' },
     { name: 'Insulation hold time', winner: 'c', note: 'Inergize: best insulation in the budget tier. Ice Barrel: solid. Cold Pod: thinnest insulation due to inflatable construction.' },
     { name: 'Storage', winner: 'b', note: 'Cold Pod: folds down for storage. Ice Barrel and Inergize: permanent install.' },
-    { name: 'Water management', winner: 'tie', note: 'All three: manual water changes; no ozone in base configurations.' },
+    { name: 'Water management', criterionId: 'water-management', note: "Inergize leads: it offers an optional ozone add-on. Ice Barrel and Cold Pod have no ozone or filter, so water is changed by hand (Ice Barrel every 1–2 weeks, plus daily ice top-ups)." },
     { name: 'Price', winner: 'b', note: 'Cold Pod: $220. Ice Barrel: $1,200. Inergize (tub-only): $1,500. Cold Pod cheapest by a wide margin.' },
   ],
   faq: [

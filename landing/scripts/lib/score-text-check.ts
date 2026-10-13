@@ -94,36 +94,15 @@ export function axisCriterion(axisName: string, category: string): string | unde
 /** Hand-set results the scores contradict, left for the owner's decision (task 089 report).
  *  Remove a line once the owner has decided (fix the text/winner or the scores). */
 export const AWARD_REVIEW_PENDING = new Set<string>([
-  'round-up best-hrv-trackers-2026 › Best value › ringconn-gen-2',
-  'duel fitbit-air-vs-whoop-5-0 › HRV accuracy',
-  'duel levels-vs-ultrahuman-m1 › Coaching',
-  'duel zoe-vs-levels › Sensor accuracy',
-  'duel nutrisense-vs-zoe › Sensor accuracy',
-  'duel neurosity-crown-vs-emotiv-insight-2 › Signal quality',
+  // winner changes — EN notes sent to the owner, waiting for OK (089 follow-up)
   'duel neurosity-crown-vs-emotiv-insight-2 › Comfort',
-  'duel headspace-vs-calm › Personalisation',
-  'duel bettersleep-vs-sleep-cycle › Free tier',
-  'duel joovv-solo-3-vs-platinumled-biomax-600 › Irradiance',
-  'duel mito-red-mitopro-1500-vs-hooga-hg500 › Irradiance',
-  'duel gembared-vesta-vs-joovv-solo-3 › Irradiance',
-  'duel platinumled-biomax-600-vs-biolight-pro-900 › Irradiance',
-  'duel plunge-vs-edge-tub › Water management',
-  'duel plunge-vs-ice-barrel-500 › Build',
-  'duel ice-barrel-500-vs-cold-pod-vs-inergize-cold-tub › Form factor',
-  'duel ice-barrel-500-vs-cold-pod-vs-inergize-cold-tub › Water management',
   'duel sun-home-equinox-vs-clearlight-sanctuary-2 › EMF',
-  'duel sun-home-equinox-vs-sunlighten-mpulse › EMF',
-  'duel higherdose-blanket-v4-vs-therasage-thera-sauna-personal › EMF discipline',
-  'duel sunlighten-vs-finnleo-vs-almost-heaven › Heat source',
-  'duel muse-2-vs-focuscalm-vs-mendi › Comfort',
-  'duel eight-sleep-pod-4-vs-chilipad-dock-pro › Climate range',
-  'duel eight-sleep-pod-4-vs-chilipad-dock-pro › Form factor',
   'duel eight-sleep-pod-4-vs-eight-sleep-pod-cover-pro › Form factor',
-  'duel chilipad-dock-pro-vs-chilipad-cube › Build',
   'duel eight-sleep-pod-3-vs-eight-sleep-pod-cover-pro › Form factor',
-  'duel eight-sleep-pod-4-vs-chilipad-dock-pro-vs-bedjet-3 › Climate range',
-  'duel bemer-classic-evo-vs-pulse-centers-pulse-xl-pro › Form factor',
-  'duel resona-health-vibe-vs-olylife-tera-p90-plus › Form factor',
+  'duel ice-barrel-500-vs-cold-pod-vs-inergize-cold-tub › Form factor',
+  // criterion score itself to re-check (089_awards_table.md) — winner not recomputed until then
+  'duel mito-red-mitopro-1500-vs-hooga-hg500 › Irradiance',
+  'duel plunge-vs-edge-tub › Water management',
   'duel omnilux-contour-face-vs-currentbody-series-2 › Clinical evidence',
   'duel omnilux-contour-face-vs-dr-dennis-gross-spectralite › Clinical evidence',
   'duel currentbody-series-2-vs-higherdose-red-light-face-mask › Wavelength coverage',
@@ -135,19 +114,9 @@ export const AWARD_REVIEW_PENDING = new Set<string>([
 export function awardErrors(): { errors: string[]; pending: string[] } {
   const errors: string[] = [], pending: string[] = []
   const flag = (key: string, msg: string) => (AWARD_REVIEW_PENDING.has(key) ? pending : errors).push(`${key}: ${msg}`)
-  for (const c of ALL_COMPARISONS) {
-    const ps = c.picks.filter((p) => !p.comparisonOnly).map((p) => ({ p, r: R.get(p.reviewSlug)! }))
-    for (const { p, r } of ps) {
-      const others = ps.filter((x) => x.p !== p)
-      if (/^best overall\b/i.test(p.award) && beatenByMoreThanGap(r.overallScore, others.map((x) => x.r.overallScore)))
-        flag(`round-up ${c.slug} › Best overall › ${r.slug}`, `${r.overallScore} but another pick scores more than 0.1 higher`)
-      if (/^best value$/i.test(p.award.trim())) {
-        const v = (x: typeof r) => x.scores.find((s) => s.criterionId === 'value')?.score
-        if (v(r) !== undefined && beatenByMoreThanGap(v(r)!, others.map((x) => v(x.r) ?? -1)))
-          flag(`round-up ${c.slug} › Best value › ${r.slug}`, `value ${v(r)} but another pick has a value score more than 0.1 higher`)
-      }
-    }
-  }
+  // Round-up 'Best overall' / 'Best value' are computed rule awards (index.ts) — a hand-typed one must not survive.
+  for (const c of ALL_COMPARISONS)
+    for (const p of c.picks) if (/^best (overall|value)(\s*\([^)]*\))?$/i.test(p.award.trim())) errors.push(`round-up ${c.slug} › ${p.reviewSlug}: hand-typed "${p.award}" (computed rule award)`)
   for (const h of ALL_HEAD_TO_HEADS_RAW) {
     const ps = [h.productASlug, h.productBSlug, h.productCSlug].filter(Boolean).map((s) => R.get(s!)!)
     if (ps.some((p) => p.category !== ps[0].category)) continue

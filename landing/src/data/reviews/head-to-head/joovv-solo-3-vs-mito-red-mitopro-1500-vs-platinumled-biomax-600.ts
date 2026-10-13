@@ -19,7 +19,7 @@ const topThreePanels: HeadToHeadInput = {
   bestForC:
     'Choose PlatinumLED BIOMAX 600 if the lowest price ($1,049), seven-wavelength coverage and publicly posted third-party EMF testing matter more than panel size.',
   axes: [
-    { name: 'Wavelength coverage', winner: 'c', note: 'PlatinumLED: seven (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm). Mito Red 1500X: six (590 + 630 + 660 + 810 + 830 + 850 nm). Joovv: red + near-infrared (660 + 850 nm). PlatinumLED leads narrowly over Mito Red.' },
+    { name: 'Wavelength coverage', criterionId: 'wavelengths', note: "Practically equal between PlatinumLED and Mito Red: PlatinumLED has seven wavelengths (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm), Mito Red 1500X six (590 + 630 + 660 + 810 + 830 + 850 nm); both cover red and deeper near-infrared. Joovv has two (660 + 850 nm)." },
     { name: 'Irradiance verification', winner: 'tie', note: 'All three: independent verification within 5–10% of stated figures. Effectively tied on spec honesty.' },
     { name: 'EMF / flicker transparency', winner: 'c', note: 'PlatinumLED publishes full third-party lab reports. Joovv publishes summary figures with strong discipline. Mito Red publishes its own testing.' },
     { name: 'Coverage and modularity', winner: 'a', note: 'Joovv: modular Solo system stacks vertically. Mito Red: large single panel (43 × 10 in). PlatinumLED: mid-size single panel. Joovv wins on scaling flexibility.' },

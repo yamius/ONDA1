@@ -17,11 +17,11 @@ const eightSleepVsChilipad: HeadToHeadInput = {
   bestForB:
     'Choose ChiliPad Dock Pro if you want premium dual-zone water cooling without the Eight Sleep subscription tax and you already wear an Oura or Whoop for tracking.',
   axes: [
-    { name: 'Climate range', winner: 'tie', note: 'Both deliver dual-zone water cooling/heating with comparable usable range (13–43°C class). Real-world recovery times comparable.' },
+    { name: 'Climate range', criterionId: 'climate-range', note: "Eight Sleep Pod 4 leads: both are dual-zone water systems (Pod 4 13–43 °C, Dock Pro 13–46 °C), but the Pod 4 gets back to the target temperature faster in peak heat." },
     { name: 'Tracking', winner: 'a', note: 'Eight Sleep: integrated HRV + sleep-stage detection + snore detection — no wearable needed. ChiliPad: no built-in tracking, pair with separate device.' },
     { name: 'Subscription', criterionId: 'subscription', note: 'Eight Sleep: Autopilot subscription required (~$15-25/mo) for full features. ChiliPad: no subscription, hardware unlocks fully on purchase. The biggest editorial axis.' },
     { name: 'App', winner: 'a', note: 'Eight Sleep app is the category benchmark — Autopilot stage-based scheduling, HRV trends, Apple Health. ChiliPad app is functional but climate-only.' },
-    { name: 'Form factor', winner: 'tie', note: 'Both cover-style installs on existing mattress with separate hub. Eight Sleep also ships full-system mattress option; ChiliPad is cover-only.' },
+    { name: 'Form factor', criterionId: 'form-factor', note: "ChiliPad Dock Pro leads: a pad that goes on top of your existing mattress, while the Pod 4 is a cover-plus-mattress system. Both offer dual zones and need a nightstand hub." },
     { name: '3-year cost', winner: 'b', note: 'Eight Sleep Pod 4: ~$3,500-5,000 + ~$700-900 sub = ~$4,200-5,900. ChiliPad Dock Pro: ~$1,700 one-time. Sleepme is roughly half the Eight Sleep total.' },
   ],
   faq: [
