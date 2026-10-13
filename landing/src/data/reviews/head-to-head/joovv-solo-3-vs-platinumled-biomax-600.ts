@@ -16,7 +16,7 @@ const joovvVsPlatinumLed: HeadToHeadInput = {
   bestForB:
     'Choose PlatinumLED BIOMAX 600 if you want seven-wavelength coverage and published third-party EMF testing at meaningfully lower price.',
   axes: [
-    { name: 'Wavelength coverage', winner: 'b', note: 'PlatinumLED: seven wavelengths (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm). Joovv: two (660 + 850 nm). PlatinumLED has dramatically broader spectrum.' },
+    { name: 'Wavelength coverage', criterionId: 'wavelengths', note: 'PlatinumLED: seven wavelengths (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm). Joovv: two (660 + 850 nm). PlatinumLED has dramatically broader spectrum.' },
     { name: 'Irradiance', winner: 'tie', note: 'Both panels verified within 10% of stated 6" figures. Effectively tied.' },
     { name: 'EMF transparency', winner: 'b', note: 'PlatinumLED publishes full third-party EMF and flicker test reports. Joovv publishes summary figures. PlatinumLED wins on testing transparency.' },
     { name: 'Coverage and modularity', winner: 'a', note: 'Joovv: modular Solo stacks. PlatinumLED: mid-size single panel, stack two for full-body. Joovv is more flexible.' },

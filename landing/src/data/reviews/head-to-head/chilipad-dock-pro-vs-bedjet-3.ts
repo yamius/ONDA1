@@ -17,7 +17,7 @@ const chilipadVsBedjet: HeadToHeadInput = {
   bestForB:
     'Choose BedJet 3 if you want clean air-flow climate with no water tank, no reservoir maintenance, and meaningfully lower price.',
   axes: [
-    { name: 'Climate range', winner: 'a', note: 'ChiliPad: dual-zone water cooling, aggressive in peak summer heat (cools below ambient). BedJet: air-flow, effective in mild to moderate climates, weaker against humid summer peaks.' },
+    { name: 'Climate range', criterionId: 'climate-range', note: 'ChiliPad: dual-zone water cooling, aggressive in peak summer heat (cools below ambient). BedJet: air-flow, effective in mild to moderate climates, weaker against humid summer peaks.' },
     { name: 'Dual-zone', winner: 'a', note: 'ChiliPad Dock Pro: independent his/her temperature. BedJet 3: single-zone per unit (dual BedJets possible but doubles the cost and bed clutter).' },
     { name: 'Maintenance', winner: 'b', note: 'ChiliPad: water reservoir to fill, hoses, periodic cleaning. BedJet: air-only, no water management at all.' },
     { name: 'Install', winner: 'b', note: 'ChiliPad: cover-style on mattress + hub. BedJet: bracket on bed frame + air-delivery hose under sheets. BedJet install simpler.' },

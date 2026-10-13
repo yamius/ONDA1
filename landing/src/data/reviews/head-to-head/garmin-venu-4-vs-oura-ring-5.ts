@@ -22,7 +22,7 @@ const venu4VsOura5: HeadToHeadInput = {
     { name: 'Battery / overnight wear', winner: 'tie', note: 'Oura Ring 5: 6–9 days. Venu 4: multi-day. Both make nightly wear practical without a charging window around sleep.' },
     { name: 'Training & everyday smartwatch', winner: 'a', note: 'Screen, workouts and Garmin’s training ecosystem make the Venu 4 a real sports and daily-driver watch. The ring has no display and is not a training tool.' },
     { name: 'Subscription / cost', winner: 'a', note: 'Venu 4: $499 one-time, every feature unlocked. Oura Ring 5: $399 ($499 premium finishes) plus a ~$6/month membership for full data — cheaper up front, an ongoing cost after.' },
-    { name: 'Data access', winner: 'a', note: 'Garmin Connect plus a developer API is reasonably open for export and third-party tools; with Oura, full data sits behind the membership.' },
+    { name: 'Data access', criterionId: 'data-access', note: 'Garmin Connect plus a developer API is reasonably open for export and third-party tools; with Oura, full data sits behind the membership.' },
     { name: 'Comfort for sleep', winner: 'b', note: 'The Ring 5 is ~40% slimmer and lighter than the Ring 4 — the most comfortable always-on ring. A watch is a bulkier thing to sleep in.' },
   ],
   faq: [

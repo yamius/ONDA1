@@ -21,7 +21,7 @@ const levelsVsZoeVsNutrisense: HeadToHeadInput = {
     'Choose Nutrisense if accountability through a registered dietitian working with your data weekly is what makes the programme work for you.',
   axes: [
     { name: 'Continuous CGM use', winner: 'c', note: 'Nutrisense: continuous Dexcom G7 for as long as you subscribe. Levels: memberships include 1–2 months of CGM a year, extra months as an add-on. Zoe: 2-week Libre phase only. Nutrisense wins.' },
-    { name: 'Sensor accuracy', winner: 'tie', note: 'Levels (Stelo) and Nutrisense (G7) both run the Dexcom G7 platform; Zoe runs an older 2-week Abbott Libre. Maker accuracy figures do not count as evidence in ONDA scores, and no independent study compares Zoe’s sensor with the G7 head-to-head, so this axis is a tie.' },
+    { name: 'Sensor accuracy', criterionId: 'sensor-accuracy', note: 'Levels (Stelo) and Nutrisense (G7) both run the Dexcom G7 platform; Zoe runs an older 2-week Abbott Libre. Maker accuracy figures do not count as evidence in ONDA scores, and no independent study compares Zoe’s sensor with the G7 head-to-head, so this axis is a tie.' },
     { name: 'App insight depth', winner: 'a', note: 'Levels has the deepest meal-impact engine — AUC decomposition, food-by-food ranking, time-in-range views. Nutrisense competent; Zoe lighter on glucose but unique multi-biomarker.' },
     { name: 'Human coaching', winner: 'c', note: 'Nutrisense: registered dietitian for every subscriber. Levels and Zoe: app-only by default. Nutrisense wins on human layer.' },
     { name: 'Scientific lineage', winner: 'b', note: 'Zoe: PREDICT-1 and PREDICT-2 studies from King’s College London (Tim Spector), published in Nature Medicine. Levels has a credible medical board; Nutrisense has RD involvement.' },

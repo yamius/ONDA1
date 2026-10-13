@@ -18,7 +18,7 @@ const higherdoseVsTherasage: HeadToHeadInput = {
     'Choose Therasage TheraSauna Personal if you want full-spectrum tent or cabin IR at mid-tier pricing and have install space.',
   axes: [
     { name: 'Wavelength coverage', winner: 'b', note: 'Therasage: full-spectrum (near + mid + far). HigherDose: far-IR only. Therasage has broader spectrum.' },
-    { name: 'Form factor', winner: 'a', note: 'HigherDose: blanket, folds for storage, no install. Therasage: tent or cabin, requires install space.' },
+    { name: 'Form factor', criterionId: 'form-factor', note: 'HigherDose: blanket, folds for storage, no install. Therasage: tent or cabin, requires install space.' },
     { name: 'Body-surface coverage', winner: 'b', note: 'Therasage tent / cabin: full-body upright exposure. HigherDose blanket: prone position, body-contact coverage.' },
     { name: 'Peak temperature reached', winner: 'b', note: 'Therasage cabin reaches higher core temperatures than blanket. HigherDose: 30–40 minute sessions at lower body temperatures.' },
     { name: 'EMF discipline', winner: 'tie', note: 'Both document low EMF with third-party verification.' },

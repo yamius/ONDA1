@@ -30,7 +30,7 @@ const meditoVsHeadspace: HeadToHeadInput = {
     { name: 'Privacy', winner: 'a', note: 'Medito needs no account and publishes its code. Headspace requires an account to subscribe.' },
     { name: 'Teaching for beginners', winner: 'b', note: 'Headspace’s structured courses are among the clearest in the category; Medito covers the basics well but with less structure.' },
     { name: 'Library size', winner: 'b', note: 'Headspace has a larger library across meditation, sleep, focus and life topics; Medito’s is smaller.' },
-    { name: 'Personalisation', winner: 'b', note: 'Headspace offers check-ins and recommendations; Medito offers straightforward courses and sessions.' },
+    { name: 'Personalisation', criterionId: 'personalization', note: 'Headspace offers check-ins and recommendations; Medito offers straightforward courses and sessions.' },
     { name: 'Research', winner: 'b', note: 'Headspace has funded and published clinical studies of its programs; Medito is a non-profit project, not a research program.' },
   ],
   faq: [

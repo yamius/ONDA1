@@ -18,7 +18,7 @@ const gembaredVsJoovv: HeadToHeadInput = {
     'Choose Joovv Solo 3.0 if modular full-body scaling and the larger brand’s support are the deciding criteria — a long-running, widely used modular panel.',
   axes: [
     { name: 'EMF / flicker discipline', winner: 'a', note: 'GembaRed: <0.1 mG at 6" — lowest in the category. Joovv: <0.5 mG at 6", also clean. GembaRed leads on EMF discipline; Joovv is still excellent.' },
-    { name: 'Wavelength coverage', winner: 'a', note: 'GembaRed: six wavelengths (480 + 630 + 660 + 810 + 830 + 850 nm). Joovv: two (660 + 850 nm). GembaRed has dramatically broader spectrum.' },
+    { name: 'Wavelength coverage', criterionId: 'wavelengths', note: 'GembaRed: six wavelengths (480 + 630 + 660 + 810 + 830 + 850 nm). Joovv: two (660 + 850 nm). GembaRed has dramatically broader spectrum.' },
     { name: 'Irradiance', winner: 'tie', note: 'Both: independent verification within 5–10% of stated figures. Joovv has marginally higher peak; GembaRed slightly lower at the same distance.' },
     { name: 'FDA / regulatory status', winner: 'tie', note: 'Joovv says the Solo 3.0 is FDA Class II registered (listed indications: topical heating, per Joovv). GembaRed: no FDA registration. Registration/listing is not clearance or approval and is not a quality mark, so neither wins this axis.' },
     { name: 'Coverage and modularity', winner: 'b', note: 'Joovv: modular Solo system stacks for full-body. GembaRed: mid-size single panel, stack two for full-body. Joovv is more flexible at scale.' },

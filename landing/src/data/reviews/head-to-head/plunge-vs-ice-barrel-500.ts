@@ -21,7 +21,7 @@ const plungeVsIceBarrel: HeadToHeadInput = {
     { name: 'Cold delivery consistency', winner: 'a', note: 'Plunge: 39°F held automatically year-round. Ice Barrel: temperature varies with ambient and ice fill.' },
     { name: 'Build', winner: 'tie', note: 'Plunge: premium acrylic with insulation. Ice Barrel: food-grade plastic barrel with insulation. Both solid for their tier.' },
     { name: 'Footprint', winner: 'b', note: 'Ice Barrel: smaller vertical footprint (32" diameter). Plunge: horizontal tub with larger footprint.' },
-    { name: 'Water management', winner: 'a', note: 'Plunge: ozone-sanitised, water changes every 2–4 weeks. Ice Barrel: manual changes plus daily ice top-ups.' },
+    { name: 'Water management', criterionId: 'water-management', note: 'Plunge: ozone-sanitised, water changes every 2–4 weeks. Ice Barrel: manual changes plus daily ice top-ups.' },
     { name: 'Daily operating cost', winner: 'a', note: 'Plunge: electricity only (~$10–30/month chiller runtime). Ice Barrel: $5–15/day in ice during warm seasons.' },
     { name: 'Upfront cost', winner: 'b', note: 'Ice Barrel: $1,200. Plunge: $5,990. Ice Barrel is roughly 20% of Plunge upfront.' },
   ],

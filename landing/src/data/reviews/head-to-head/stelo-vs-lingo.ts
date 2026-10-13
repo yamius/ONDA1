@@ -16,7 +16,7 @@ const steloVsLingo: HeadToHeadInput = {
   bestForB:
     'Choose Lingo by Abbott if cost is the deciding factor or you want to wear a CGM occasionally rather than continuously — single 2-week sensors at $54 each.',
   axes: [
-    { name: 'Sensor accuracy', winner: 'tie', note: 'Practically equal: maker accuracy figures do not count as evidence, and in an independent head-to-head study (Eichenlaub et al. 2025) the Dexcom G7 platform and FreeStyle Libre 3 were similarly accurate (MARD about 12% vs 11.6% against a lab reference).' },
+    { name: 'Sensor accuracy', criterionId: 'sensor-accuracy', note: 'Practically equal: maker accuracy figures do not count as evidence, and in an independent head-to-head study (Eichenlaub et al. 2025) the Dexcom G7 platform and FreeStyle Libre 3 were similarly accurate (MARD about 12% vs 11.6% against a lab reference).' },
     { name: 'Sensor wear time', winner: 'a', note: 'Stelo: 15-day wear (longer than standard Dexcom G7). Lingo: 14 days. Tie in practice; slight Stelo edge.' },
     { name: 'Warm-up time', winner: 'a', note: 'Stelo: 30 minutes. Lingo: 60 minutes. Stelo back on data faster after each sensor swap.' },
     { name: 'Insight depth', winner: 'a', note: 'Stelo: meal-impact + daily time-in-range. Lingo: single "Lingo Count" spike score per meal — deliberately beginner-simple.' },

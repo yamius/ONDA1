@@ -19,7 +19,7 @@ const eightSleepVsChilipad: HeadToHeadInput = {
   axes: [
     { name: 'Climate range', winner: 'tie', note: 'Both deliver dual-zone water cooling/heating with comparable usable range (13–43°C class). Real-world recovery times comparable.' },
     { name: 'Tracking', winner: 'a', note: 'Eight Sleep: integrated HRV + sleep-stage detection + snore detection — no wearable needed. ChiliPad: no built-in tracking, pair with separate device.' },
-    { name: 'Subscription', winner: 'b', note: 'Eight Sleep: Autopilot subscription required (~$15-25/mo) for full features. ChiliPad: no subscription, hardware unlocks fully on purchase. The biggest editorial axis.' },
+    { name: 'Subscription', criterionId: 'subscription', note: 'Eight Sleep: Autopilot subscription required (~$15-25/mo) for full features. ChiliPad: no subscription, hardware unlocks fully on purchase. The biggest editorial axis.' },
     { name: 'App', winner: 'a', note: 'Eight Sleep app is the category benchmark — Autopilot stage-based scheduling, HRV trends, Apple Health. ChiliPad app is functional but climate-only.' },
     { name: 'Form factor', winner: 'tie', note: 'Both cover-style installs on existing mattress with separate hub. Eight Sleep also ships full-system mattress option; ChiliPad is cover-only.' },
     { name: '3-year cost', winner: 'b', note: 'Eight Sleep Pod 4: ~$3,500-5,000 + ~$700-900 sub = ~$4,200-5,900. ChiliPad Dock Pro: ~$1,700 one-time. Sleepme is roughly half the Eight Sleep total.' },

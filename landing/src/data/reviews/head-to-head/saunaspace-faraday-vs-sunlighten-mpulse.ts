@@ -19,8 +19,8 @@ const saunaspaceVsSunlighten: HeadToHeadInput = {
   axes: [
     { name: 'Wavelength philosophy', winner: 'tie', note: 'SaunaSpace: near-IR-only via tungsten incandescent (closer to sunlight). Sunlighten: full-spectrum via mixed emitters. Different bets — pick on which philosophy fits.' },
     { name: 'Heat source type', winner: 'a', note: 'SaunaSpace uses tungsten-filament incandescent bulbs — distinct technology from carbon-fibre IR emitters. Closer to natural sunlight spectrum.' },
-    { name: 'EMF discipline', winner: 'a', note: 'SaunaSpace: full Faraday-cage shielding — the most rigorous in the consumer sauna category. Sunlighten: published <1 mG at seated position but no Faraday cage.' },
-    { name: 'Form factor', winner: 'b', note: 'Sunlighten: traditional cabin install. SaunaSpace: tent-style or smaller cabin configurations. Sunlighten more familiar form factor.' },
+    { name: 'EMF discipline', criterionId: 'emf', note: 'SaunaSpace: full Faraday-cage shielding — the most rigorous in the consumer sauna category. Sunlighten: published <1 mG at seated position but no Faraday cage.' },
+    { name: 'Form factor', criterionId: 'form-factor', note: 'Sunlighten: traditional cabin install. SaunaSpace: tent-style or smaller cabin configurations. Sunlighten more familiar form factor.' },
     { name: 'Spectrum breadth', winner: 'b', note: 'Sunlighten: programmable near + mid + far. SaunaSpace: near-IR-only. Sunlighten broader by design.' },
     { name: 'Model-specific research', winner: 'tie', note: 'Neither has an outcome trial of the reviewed model. Sunlighten: one 20-person 2010 pilot on an older model (Sunlight Armana 3). SaunaSpace: we found no peer-reviewed study.' },
     { name: 'Price', winner: 'a', note: 'SaunaSpace Faraday: ~$5,000 tent. Sunlighten mPulse: ~$6,000+ cabin. SaunaSpace marginally cheaper at the tent tier.' },

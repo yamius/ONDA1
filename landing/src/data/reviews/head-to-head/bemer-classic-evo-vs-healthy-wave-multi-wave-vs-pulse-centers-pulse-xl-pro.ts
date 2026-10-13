@@ -20,10 +20,10 @@ const bemerVsHealthyWaveVsPulse: HeadToHeadInput = {
   bestForC:
     'Choose Pulse Centers Pulse XL Pro if you\'re running serious athletic recovery or rehab protocols requiring high-intensity targeted coil PEMF.',
   axes: [
-    { name: 'Field strength', winner: 'c', note: 'Bemer: 35–150 µT (mat). Healthy Wave: configurable moderate-to-high (mat). Pulse Centers: 200,000+ µT peak (coil). Pulse Centers wins on raw intensity by orders of magnitude.' },
+    { name: 'Field strength', criterionId: 'field-strength', note: 'Bemer: 35–150 µT (mat). Healthy Wave: configurable moderate-to-high (mat). Pulse Centers: 200,000+ µT peak (coil). Pulse Centers wins on raw intensity by orders of magnitude.' },
     { name: 'Waveform research', winner: 'a', note: 'Bemer: the longest study list on one specific signal, but mostly small or manufacturer-linked; independent controlled trials found no difference from control. Healthy Wave and Pulse Centers: no trials of the devices themselves.' },
     { name: 'Modality stack', winner: 'b', note: 'Healthy Wave: PEMF + far-IR + red light + amethyst/tourmaline. Bemer and Pulse Centers: PEMF only. Healthy Wave delivers the most modalities per session.' },
-    { name: 'Form factor', winner: 'tie', note: 'Bemer and Healthy Wave: passive whole-body mat. Pulse Centers: active coil positioning. Different jobs.' },
+    { name: 'Form factor', criterionId: 'form-factor', note: 'Bemer and Healthy Wave: passive whole-body mat. Pulse Centers: active coil positioning. Different jobs.' },
     { name: 'Daily-use friendliness', winner: 'a', note: 'Bemer: branded preset steps, lie-down-and-run daily use. Healthy Wave: parameter setup adds friction. Pulse Centers: active positioning per session.' },
     { name: 'Athletic recovery / rehab', winner: 'c', note: 'Pulse Centers: high-intensity coils are what athletic-recovery and rehab clinics buy, though no independent trials of this system exist. Mats are not built for these protocols.' },
     { name: 'Regulatory standing', winner: 'tie', note: 'Bemer is FDA-cleared through 510(k) as a non-medical muscle-conditioning device (product code NGX), not for treating disease. Healthy Wave and Pulse Centers: no comparable FDA clearance found. None is cleared to treat any condition.' },

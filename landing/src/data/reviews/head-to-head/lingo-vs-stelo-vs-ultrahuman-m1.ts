@@ -20,7 +20,7 @@ const threeOtcCgm: HeadToHeadInput = {
   bestForC:
     'Choose Ultrahuman M1 if you already own or plan to own an Ultrahuman ring — native unified ecosystem (glucose + HRV + sleep) in one app.',
   axes: [
-    { name: 'Sensor accuracy', winner: 'tie', note: 'Practically equal: maker accuracy figures do not count as evidence, and in an independent head-to-head study (Eichenlaub et al. 2025) the Dexcom G7 platform and FreeStyle Libre 3 were similarly accurate (MARD about 12% vs 11.6% against a lab reference).' },
+    { name: 'Sensor accuracy', criterionId: 'sensor-accuracy', note: 'Practically equal: maker accuracy figures do not count as evidence, and in an independent head-to-head study (Eichenlaub et al. 2025) the Dexcom G7 platform and FreeStyle Libre 3 were similarly accurate (MARD about 12% vs 11.6% against a lab reference).' },
     { name: 'Sensor wear time', winner: 'c', note: 'Lingo and Ultrahuman M1 (Libre 3 / Lingo): 14 days. Stelo (Dexcom G7): 15 days. Roughly comparable; both Libre options tie.' },
     { name: 'Warm-up time', winner: 'b', note: 'Stelo: 30 minutes. Lingo and Ultrahuman: 60 minutes. Stelo back on data faster after sensor swaps.' },
     { name: 'No-subscription model', winner: 'a', note: 'Lingo: pay-per-sensor model is genuinely flexible. Stelo: monthly subscription default. Ultrahuman (US M2 Live): $99/month subscription or $129 single sensor.' },

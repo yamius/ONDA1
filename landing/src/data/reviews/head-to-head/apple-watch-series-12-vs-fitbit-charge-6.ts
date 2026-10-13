@@ -22,7 +22,7 @@ const series12VsCharge6: HeadToHeadInput = {
     { name: 'Battery / overnight wear', winner: 'b', note: 'Charge 6: a small, light band with a multi-day battery, easy to wear every night. Series 12: up to ~24 hours, so charging competes with overnight wear.' },
     { name: 'Sensor & health features', winner: 'a', note: 'The Series 12’s Health Sensing System adds a single-lead ECG and optical hypertension notifications; the Charge 6 is optical PPG with SpO2 and respiratory rate.' },
     { name: 'Smartwatch & app', winner: 'a', note: 'Apps, payments and a clean Apple Health UI with HRV in the Heart Rate app. The Charge 6 has GPS and a few Google apps, but its app pushes Premium persistently.' },
-    { name: 'Data access', winner: 'a', note: 'HealthKit now writes a native RMSSD type third-party apps can read; Fitbit data lives inside the Google ecosystem with limited export.' },
+    { name: 'Data access', criterionId: 'data-access', note: 'HealthKit now writes a native RMSSD type third-party apps can read; Fitbit data lives inside the Google ecosystem with limited export.' },
     { name: 'Price / subscription', winner: 'b', note: 'Charge 6: $159, HRV trends free, some deeper insights on the $9.99/month Premium tier. Series 12: $399, no subscription. The Fitbit costs well under half.' },
   ],
   faq: [

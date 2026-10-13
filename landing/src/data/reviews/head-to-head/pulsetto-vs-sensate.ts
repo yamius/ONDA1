@@ -17,10 +17,10 @@ const pulsettoVsSensate: HeadToHeadInput = {
   bestForB:
     'Choose Sensate if you want a gentle, passive, sound-based calming ritual and you prefer no electrical stimulation.',
   axes: [
-    { name: 'Mechanism', winner: 'a', note: 'Pulsetto delivers electrical tVNS directly to the vagus nerve — a more direct approach. Sensate uses infrasonic resonance (low-frequency sound), which is soothing but a more indirect, less-established route to vagal effects.' },
+    { name: 'Mechanism', criterionId: 'mechanism', note: 'Pulsetto delivers electrical tVNS directly to the vagus nerve — a more direct approach. Sensate uses infrasonic resonance (low-frequency sound), which is soothing but a more indirect, less-established route to vagal effects.' },
     { name: 'Data & tracking', winner: 'a', note: 'Pulsetto tracks HRV and integrates with Oura and Apple Watch. Sensate is a passive experience with little data feedback.' },
     { name: 'Session feel', winner: 'b', note: 'Sensate is the more purely relaxing, hands-off ritual — you lie back and let the vibrations work. Pulsetto is a shorter, more active protocol.' },
-    { name: 'Evidence', winner: 'tie', note: 'Both are lighter on independent clinical evidence than their marketing suggests — Pulsetto on tVNS outcomes, Sensate on its infrasonic mechanism. Neither is clearly ahead here.' },
+    { name: 'Evidence', criterionId: 'evidence', note: 'Both are lighter on independent clinical evidence than their marketing suggests — Pulsetto on tVNS outcomes, Sensate on its infrasonic mechanism. Neither is clearly ahead here.' },
     { name: 'Price & subscription', winner: 'a', note: 'Pulsetto: $269 one-time (optional ~$8/mo Pulsetto+). Sensate: $299 one-time plus a ~$79/yr Sensate+ subscription for full content. Pulsetto is cheaper overall.' },
     { name: 'Comfort & ease', winner: 'b', note: 'Sensate’s lie-down-and-relax format is effortless; Pulsetto’s neck-worn electrical device takes a little more setup, though sessions are short.' },
   ],

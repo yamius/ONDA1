@@ -22,7 +22,7 @@ const pod4VsPod5: HeadToHeadInput = {
     { name: 'Extra hardware', winner: 'b', note: 'Only the Pod 5 Ultra has the adjustable base, built-in speakers and automatic snore mitigation (gently raises the head). Genuinely new, if you want them.' },
     { name: 'Software (Autopilot 4.0)', winner: 'tie', note: 'The April 2026 Autopilot 4.0 "sleep agent" — Apple/Google Health integration and a plain-language morning brief — reaches the Pod 4 too. Not a Pod 5 exclusive.' },
     { name: 'Price', winner: 'a', note: 'Pod 4: $2,449–$2,649. Pod 5 Ultra: $6,099–$6,300. Both add the subscription. The Pod 4 is less than half the price.' },
-    { name: 'Value', winner: 'a', note: 'For the core Eight Sleep experience — dual-zone climate + HRV tracking — the Pod 4 delivers most of it for far less. The Ultra’s premium buys comforts, not better sleep-climate fundamentals.' },
+    { name: 'Value', criterionId: 'value', note: 'For the core Eight Sleep experience — dual-zone climate + HRV tracking — the Pod 4 delivers most of it for far less. The Ultra’s premium buys comforts, not better sleep-climate fundamentals.' },
   ],
   faq: [
     {

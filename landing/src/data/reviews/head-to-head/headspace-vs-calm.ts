@@ -16,12 +16,12 @@ const headspaceVsCalm: HeadToHeadInput = {
   bestForB:
     'Choose Calm if sleep content matters as much as meditation, you want celebrity narrators (Matthew McConaughey, Harry Styles), and a broader wellness library.',
   axes: [
-    { name: 'Teaching quality', winner: 'a', note: 'Headspace’s curriculum is taught by a small set of credible teachers (Andy Puddicombe et al.); the teaching voice is consistent and progressive. Calm rotates many teachers and celebrities, less unified.' },
+    { name: 'Teaching quality', criterionId: 'teaching', note: 'Headspace’s curriculum is taught by a small set of credible teachers (Andy Puddicombe et al.); the teaching voice is consistent and progressive. Calm rotates many teachers and celebrities, less unified.' },
     { name: 'Library breadth', winner: 'b', note: 'Calm’s library is broader — meditations plus sleep stories, sleep music, masterclasses, soundscapes. Headspace is more focused on meditation proper.' },
     { name: 'Sleep content', winner: 'b', note: 'Calm’s sleep stories and sleep soundscapes are category-leading. Headspace has sleep content but it is a smaller share of the library.' },
     { name: 'Structured courses', winner: 'a', note: 'Headspace’s "Basics" and themed courses are the strongest structured-learning path in the category. Calm has courses but they are not the centre of the experience.' },
     { name: 'Personalisation', winner: 'tie', note: 'Both surface daily recommendations and remember progress; neither stands out.' },
-    { name: 'Free tier', winner: 'tie', note: 'Both lock most content behind subscription with a thin free tier; neither is generous.' },
+    { name: 'Free tier', criterionId: 'free-tier', note: 'Both lock most content behind subscription with a thin free tier; neither is generous.' },
     { name: 'Price', winner: 'tie', note: 'Headspace: ~$70/year. Calm Premium: $79.99/year after a 7-day trial, or $499.99 lifetime. Close enough to call a tie; Calm alone offers a lifetime option.' },
   ],
   faq: [

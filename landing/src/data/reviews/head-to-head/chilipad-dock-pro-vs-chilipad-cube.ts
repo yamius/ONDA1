@@ -18,7 +18,7 @@ const dockProVsCube: HeadToHeadInput = {
     'Choose ChiliPad Cube if you sleep alone, don\'t need scheduling, and want the same Sleepme water cooling at roughly half the Dock Pro price.',
   axes: [
     { name: 'Dual-zone', winner: 'a', note: 'Dock Pro: independent his/her temperature. Cube: single-zone per unit — couples buy a second Cube for the other side.' },
-    { name: 'Climate range', winner: 'a', note: 'Dock Pro: higher-capacity chiller, more aggressive cooling against summer peaks. Cube: cools to 60°F and reaches limits faster on hot humid nights.' },
+    { name: 'Climate range', criterionId: 'climate-range', note: 'Dock Pro: higher-capacity chiller, more aggressive cooling against summer peaks. Cube: cools to 60°F and reaches limits faster on hot humid nights.' },
     { name: 'Scheduling', winner: 'a', note: 'Dock Pro: app-based climate scheduling (cool for sleep onset, warm for wake). Cube: physical remote only, no scheduling.' },
     { name: 'App', winner: 'a', note: 'Dock Pro: full Sleepme app with scheduling and presets. Cube: no app at all — controlled by a physical remote.' },
     { name: 'Build', winner: 'tie', note: 'Both use the same proven Sleepme water-cooling architecture. Multi-year reliability comparable.' },

@@ -79,3 +79,88 @@ export function mcpExportScoreErrors(exportPath = join(ROOT, '..', 'chatgpt-app'
   }
   return errors
 }
+
+// ── Awards and duel-axis winners vs scores (task 089 step 6) ──
+import { CRITERIA } from '../../src/data/reviews/criteria'
+import { axisWinnerFromScores, beatenByMoreThanGap } from '../../src/data/reviews/scoring'
+
+const norm = (s: string) => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, ' ').trim()
+/** The criterion a free-text duel axis is named after (exact label or id), if any. */
+export function axisCriterion(axisName: string, category: string): string | undefined {
+  const n = norm(axisName)
+  return ((CRITERIA as Record<string, { id: string; label: string }[]>)[category] ?? []).find((c) => norm(c.label) === n || norm(c.id.replace(/-/g, ' ')) === n)?.id
+}
+
+/** Hand-set results the scores contradict, left for the owner's decision (task 089 report).
+ *  Remove a line once the owner has decided (fix the text/winner or the scores). */
+export const AWARD_REVIEW_PENDING = new Set<string>([
+  'round-up best-hrv-trackers-2026 › Best value › ringconn-gen-2',
+  'duel fitbit-air-vs-whoop-5-0 › HRV accuracy',
+  'duel levels-vs-ultrahuman-m1 › Coaching',
+  'duel zoe-vs-levels › Sensor accuracy',
+  'duel nutrisense-vs-zoe › Sensor accuracy',
+  'duel neurosity-crown-vs-emotiv-insight-2 › Signal quality',
+  'duel neurosity-crown-vs-emotiv-insight-2 › Comfort',
+  'duel headspace-vs-calm › Personalisation',
+  'duel bettersleep-vs-sleep-cycle › Free tier',
+  'duel joovv-solo-3-vs-platinumled-biomax-600 › Irradiance',
+  'duel mito-red-mitopro-1500-vs-hooga-hg500 › Irradiance',
+  'duel gembared-vesta-vs-joovv-solo-3 › Irradiance',
+  'duel platinumled-biomax-600-vs-biolight-pro-900 › Irradiance',
+  'duel plunge-vs-edge-tub › Water management',
+  'duel plunge-vs-ice-barrel-500 › Build',
+  'duel ice-barrel-500-vs-cold-pod-vs-inergize-cold-tub › Form factor',
+  'duel ice-barrel-500-vs-cold-pod-vs-inergize-cold-tub › Water management',
+  'duel sun-home-equinox-vs-clearlight-sanctuary-2 › EMF',
+  'duel sun-home-equinox-vs-sunlighten-mpulse › EMF',
+  'duel higherdose-blanket-v4-vs-therasage-thera-sauna-personal › EMF discipline',
+  'duel sunlighten-vs-finnleo-vs-almost-heaven › Heat source',
+  'duel muse-2-vs-focuscalm-vs-mendi › Comfort',
+  'duel eight-sleep-pod-4-vs-chilipad-dock-pro › Climate range',
+  'duel eight-sleep-pod-4-vs-chilipad-dock-pro › Form factor',
+  'duel eight-sleep-pod-4-vs-eight-sleep-pod-cover-pro › Form factor',
+  'duel chilipad-dock-pro-vs-chilipad-cube › Build',
+  'duel eight-sleep-pod-3-vs-eight-sleep-pod-cover-pro › Form factor',
+  'duel eight-sleep-pod-4-vs-chilipad-dock-pro-vs-bedjet-3 › Climate range',
+  'duel bemer-classic-evo-vs-pulse-centers-pulse-xl-pro › Form factor',
+  'duel resona-health-vibe-vs-olylife-tera-p90-plus › Form factor',
+  'duel omnilux-contour-face-vs-currentbody-series-2 › Clinical evidence',
+  'duel omnilux-contour-face-vs-dr-dennis-gross-spectralite › Clinical evidence',
+  'duel currentbody-series-2-vs-higherdose-red-light-face-mask › Wavelength coverage',
+  'duel theraface-mask-vs-higherdose-red-light-face-mask › Clinical evidence',
+  'duel lightstim-for-wrinkles-vs-solawave-wand-4-in-1 › Clinical evidence',
+  'duel omnilux-contour-face-vs-currentbody-series-2-vs-dr-dennis-gross-spectralite › Clinical evidence',
+])
+
+export function awardErrors(): { errors: string[]; pending: string[] } {
+  const errors: string[] = [], pending: string[] = []
+  const flag = (key: string, msg: string) => (AWARD_REVIEW_PENDING.has(key) ? pending : errors).push(`${key}: ${msg}`)
+  for (const c of ALL_COMPARISONS) {
+    const ps = c.picks.filter((p) => !p.comparisonOnly).map((p) => ({ p, r: R.get(p.reviewSlug)! }))
+    for (const { p, r } of ps) {
+      const others = ps.filter((x) => x.p !== p)
+      if (/^best overall\b/i.test(p.award) && beatenByMoreThanGap(r.overallScore, others.map((x) => x.r.overallScore)))
+        flag(`round-up ${c.slug} › Best overall › ${r.slug}`, `${r.overallScore} but another pick scores more than 0.1 higher`)
+      if (/^best value$/i.test(p.award.trim())) {
+        const v = (x: typeof r) => x.scores.find((s) => s.criterionId === 'value')?.score
+        if (v(r) !== undefined && beatenByMoreThanGap(v(r)!, others.map((x) => v(x.r) ?? -1)))
+          flag(`round-up ${c.slug} › Best value › ${r.slug}`, `value ${v(r)} but another pick has a value score more than 0.1 higher`)
+      }
+    }
+  }
+  for (const h of ALL_HEAD_TO_HEADS_RAW) {
+    const ps = [h.productASlug, h.productBSlug, h.productCSlug].filter(Boolean).map((s) => R.get(s!)!)
+    if (ps.some((p) => p.category !== ps[0].category)) continue
+    for (const ax of h.axes) {
+      if (ax.criterionId) continue // computed
+      const crit = axisCriterion(ax.name, ps[0].category)
+      if (!crit) continue // free-text axis (Price, Battery, …) — not a review criterion
+      const v = ps.map((p) => p.scores.find((s) => s.criterionId === crit)!.score)
+      const computed = axisWinnerFromScores(v)
+      const key = `duel ${h.slug} › ${ax.name}`
+      if (ax.winner === 'tie' ? computed !== 'tie' : beatenByMoreThanGap(v['abc'.indexOf(ax.winner)], v))
+        flag(key, `hand-set '${ax.winner}' contradicts ${crit} scores ${v.join(' / ')} (computed '${computed}')`)
+    }
+  }
+  return { errors, pending }
+}

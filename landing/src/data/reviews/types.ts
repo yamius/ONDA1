@@ -184,7 +184,14 @@ export interface HeadToHeadAxis {
   winner: 'a' | 'b' | 'c' | 'tie'
   /** One-sentence justification — shown next to the axis row. */
   note: string
+  /** Set when the axis IS one review criterion: the winner is then computed from the
+   *  criterion scores (axisWinnerFromScores, gap > 0.1) and must not be hand-typed. */
+  criterionId?: string
 }
+
+/** Axis as declared in a duel file: either a hand-set `winner` (free-text axes such as
+ *  "Price") or a `criterionId` (winner computed). */
+export type HeadToHeadAxisInput = Omit<HeadToHeadAxis, 'winner'> & { winner?: HeadToHeadAxis['winner'] }
 
 export interface HeadToHead {
   /** Canonical slug — typically <product-a>-vs-<product-b> or
@@ -241,7 +248,7 @@ export interface HeadToHead {
 }
 
 /** What a head-to-head file declares — everything except the computed winner. */
-export type HeadToHeadInput = Omit<HeadToHead, 'winnerSlug'>
+export type HeadToHeadInput = Omit<HeadToHead, 'winnerSlug' | 'axes'> & { axes: HeadToHeadAxisInput[] }
 
 export interface Comparison {
   slug: string

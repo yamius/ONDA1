@@ -17,7 +17,7 @@ const balanceVsCalm: HeadToHeadInput = {
   bestForB:
     'Choose Calm if you mainly want the best sleep stories and a huge, polished library of relaxation content to explore.',
   axes: [
-    { name: 'Personalisation', winner: 'a', note: 'Balance’s adaptive engine tailors daily sessions to your goals and check-ins. Calm personalises which content it surfaces, but it doesn’t adapt the sessions themselves the way Balance does.' },
+    { name: 'Personalisation', criterionId: 'personalization', note: 'Balance’s adaptive engine tailors daily sessions to your goals and check-ins. Calm personalises which content it surfaces, but it doesn’t adapt the sessions themselves the way Balance does.' },
     { name: 'Sleep content', winner: 'b', note: 'Calm is the category’s sleep leader — 500+ Sleep Stories and the best bedtime audio. Balance covers sleep but it isn’t the focus.' },
     { name: 'Library breadth & polish', winner: 'b', note: 'Calm has the largest, most beautifully produced library. Balance is leaner and plan-focused.' },
     { name: 'Free tier / trial', winner: 'a', note: 'Balance often gives new users a full year free. Calm’s free tier is thin.' },

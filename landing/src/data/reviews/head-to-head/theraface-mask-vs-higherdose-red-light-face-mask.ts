@@ -17,7 +17,7 @@ const therafaceVsHigherDose: HeadToHeadInput = {
   bestForB:
     'Choose HigherDOSE Red Light Face Mask if you want HigherDOSE-ecosystem coordination (PEMF mat, sauna blanket) at meaningfully lower price.',
   axes: [
-    { name: 'Wavelength coverage', winner: 'a', note: 'TheraFace: three wavelengths (red 633 + blue 415 + amber 590 nm). HigherDOSE: two wavelengths (red 630 + near-infrared 830 nm).' },
+    { name: 'Wavelength coverage', criterionId: 'wavelength-coverage', note: 'TheraFace: three wavelengths (red 633 + blue 415 + amber 590 nm). HigherDOSE: two wavelengths (red 630 + near-infrared 830 nm).' },
     { name: 'Brand pedigree', winner: 'a', note: 'TheraFace: Therabody Theragun brand. HigherDOSE: HigherDOSE biohacker-wellness brand. Both established, different segments.' },
     { name: 'App / UX', winner: 'a', note: 'TheraFace: app-controlled session protocols. HigherDOSE: no app — a rechargeable handheld controller with 10- or 20-minute sessions. Both consumer-friendly; TheraFace more programmable.' },
     { name: 'Comfort', winner: 'tie', note: 'Both flexible-hybrid builds. Comparable comfort; preference varies.' },

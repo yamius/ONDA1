@@ -17,7 +17,7 @@ const levoitVsWinix: HeadToHeadInput = {
     'Choose Winix 5500-2 for Korean budget HEPA with sensor + optional PlasmaWave at $249.',
   axes: [
     { name: 'Coverage', winner: 'a', note: 'Levoit: 635 sq ft AHAM-certified. Winix: 360 sq ft. Levoit nearly double coverage.' },
-    { name: 'Smart features', winner: 'a', note: 'Levoit: VeSync app, sensor, auto mode, Alexa / Google Home. Winix: built-in sensor + auto mode, no app.' },
+    { name: 'Smart features', criterionId: 'smart-features', note: 'Levoit: VeSync app, sensor, auto mode, Alexa / Google Home. Winix: built-in sensor + auto mode, no app.' },
     { name: 'Filtration', winner: 'tie', note: 'Both True HEPA H13 + activated carbon. Comparable filtration spec.' },
     { name: 'PlasmaWave option', winner: 'b', note: 'Winix: optional PlasmaWave ion-charge (can be disabled). Levoit: pure HEPA + carbon only.' },
     { name: 'Brand pedigree', winner: 'b', note: 'Winix: Korean brand with multi-year track record. Levoit: newer Amazon-dominant consumer brand.' },

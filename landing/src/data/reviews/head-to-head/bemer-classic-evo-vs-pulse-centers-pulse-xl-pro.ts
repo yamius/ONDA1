@@ -17,7 +17,7 @@ const bemerVsPulseCenters: HeadToHeadInput = {
   bestForB:
     'Choose Pulse Centers Pulse XL Pro for high-intensity targeted coil PEMF in athletic recovery or rehab contexts where intensity drives the protocol.',
   axes: [
-    { name: 'Field strength', winner: 'b', note: 'Bemer: 35–150 µT (mat output). Pulse Centers: 200,000+ µT peak (coil applicators). Different orders of magnitude — Pulse Centers wins on raw intensity by a wide margin.' },
+    { name: 'Field strength', criterionId: 'field-strength', note: 'Bemer: 35–150 µT (mat output). Pulse Centers: 200,000+ µT peak (coil applicators). Different orders of magnitude — Pulse Centers wins on raw intensity by a wide margin.' },
     { name: 'Waveform research', winner: 'a', note: 'Bemer: the longest study list on one specific signal, but mostly small or manufacturer-linked; independent controlled trials found no difference from control. Pulse Centers: no published trials of this system.' },
     { name: 'Form factor', winner: 'tie', note: 'Bemer: passive whole-body mat — lie down, run session. Pulse Centers: active coil positioning per session. Different jobs, pick on use case.' },
     { name: 'Daily-use friendliness', winner: 'a', note: 'Bemer: set on bed, lie down, daily passive use. Pulse Centers: active positioning per session, more clinic-style operation.' },

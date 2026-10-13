@@ -16,10 +16,10 @@ const plungeVsEdge: HeadToHeadInput = {
   bestForB:
     'Choose Edge Tub if you want chiller-built capability at roughly half The Plunge’s price, and you can accept a thinner multi-year reliability track record on a newer brand.',
   axes: [
-    { name: 'Chiller capacity', winner: 'a', note: 'Plunge: 1 HP, recovers fast even in summer heat. Edge: capable but lower-power chiller, slower recovery in peak heat.' },
+    { name: 'Chiller capacity', criterionId: 'chiller-capacity', note: 'Plunge: 1 HP, recovers fast even in summer heat. Edge: capable but lower-power chiller, slower recovery in peak heat.' },
     { name: 'Build longevity', winner: 'a', note: 'Plunge has 5+ years of consumer reliability data. Edge is newer; multi-year reliability still being established.' },
     { name: 'Water management', winner: 'tie', note: 'Both ship ozone sanitation with comparable water-change frequency (2–4 weeks).' },
-    { name: 'Form factor', winner: 'tie', note: 'Comparable footprint and install requirements; both indoor/outdoor rated.' },
+    { name: 'Form factor', criterionId: 'form-factor', note: 'Comparable footprint and install requirements; both indoor/outdoor rated.' },
     { name: 'Warranty', winner: 'a', note: 'Plunge: 3-year. Edge: 2-year. Plunge wins on coverage period.' },
     { name: 'Brand and protocol content', winner: 'a', note: 'Plunge has founder presence and richer content library. Edge is more product-focused.' },
     { name: 'Price', winner: 'b', note: 'Edge: $2,495. Plunge: $5,990. Edge is roughly 42% of Plunge — the most meaningful gap in the comparison.' },

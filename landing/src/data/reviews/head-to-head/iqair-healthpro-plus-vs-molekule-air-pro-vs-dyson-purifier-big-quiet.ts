@@ -21,7 +21,7 @@ const iqairVsMolekuleVsDyson: HeadToHeadInput = {
     'Choose Dyson Big+Quiet for premium consumer-brand polish + best smart features + formaldehyde destruction + quietest operation.',
   axes: [
     { name: 'Filtration depth', winner: 'a', note: 'IQAir: HyperHEPA H14 (0.003 microns). Molekule: True HEPA H13 + PECO. Dyson: True HEPA H13 + formaldehyde catalyst. IQAir deepest raw HEPA; Molekule and Dyson have different molecular-attack adjuncts.' },
-    { name: 'Smart features', winner: 'c', note: 'Dyson: best-in-category (PM2.5 / VOC / formaldehyde sensors + app + HomeKit). Molekule: full app + sensors + HomeKit. IQAir: none.' },
+    { name: 'Smart features', criterionId: 'smart-features', note: 'Dyson: best-in-category (PM2.5 / VOC / formaldehyde sensors + app + HomeKit). Molekule: full app + sensors + HomeKit. IQAir: none.' },
     { name: 'Noise', winner: 'c', note: 'Dyson: ~24 dB (quietest). Molekule: ~32 dB. IQAir: ~30 dB on low / ~65 dB on high.' },
     { name: 'Brand pedigree', winner: 'a', note: 'IQAir: multi-decade clinical / hospital. Dyson: consumer brand crossover. Molekule: newer brand with FTC settlement context.' },
     { name: 'Long-term filter cost', winner: 'a', note: 'IQAir: 2-4 year cartridges. Dyson: 12-month. Molekule: 6-month. IQAir cheapest long-term.' },

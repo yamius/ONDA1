@@ -23,7 +23,7 @@ const series12VsWhoop50: HeadToHeadInput = {
     { name: 'Subscription / cost', winner: 'a', note: 'Series 12 is $399 one-time, no subscription. Whoop is membership-only at $199–$359/year — cheaper first year, an ongoing cost forever.' },
     { name: 'Everyday smartwatch', winner: 'a', note: 'The Series 12 has a screen, apps, notifications, payments, ECG and hypertension notifications; Whoop is a screenless recovery band.' },
     { name: 'HRV metric comparability', winner: 'tie', note: 'Apple Health now carries an RMSSD value, the statistic Whoop uses, so you can compare in kind — Apple hasn’t confirmed Recovery HRV is RMSSD.' },
-    { name: 'Data access', winner: 'a', note: 'Apple’s HealthKit (now with native RMSSD) is more open than Whoop’s largely closed ecosystem.' },
+    { name: 'Data access', criterionId: 'data-access', note: 'Apple’s HealthKit (now with native RMSSD) is more open than Whoop’s largely closed ecosystem.' },
   ],
   faq: [
     {

@@ -22,7 +22,7 @@ const series12VsOura5: HeadToHeadInput = {
     { name: 'Battery / overnight wear', winner: 'b', note: 'The Oura Ring 5 runs 6–9 days per charge; the Series 12’s ~24-hour battery means overnight measurement competes with the daily charge.' },
     { name: 'Everyday smartwatch', winner: 'a', note: 'Apps, a screen, ECG and hypertension notifications — the Series 12 is a full smartwatch; the Oura Ring 5 has no display.' },
     { name: 'Subscription / cost', winner: 'a', note: 'Both start at $399. The Series 12 has no subscription; Oura needs a ~$6/month membership for full data, and premium finishes cost $499.' },
-    { name: 'Data access', winner: 'a', note: 'HealthKit now writes native RMSSD for third-party apps; Oura has a developer API, but raw beat-to-beat data is limited and deeper analysis sits behind the membership.' },
+    { name: 'Data access', criterionId: 'data-access', note: 'HealthKit now writes native RMSSD for third-party apps; Oura has a developer API, but raw beat-to-beat data is limited and deeper analysis sits behind the membership.' },
     { name: 'Comfort / discreetness', winner: 'b', note: 'At 6.09mm × 2.28mm the Ring 5 is the most comfortable always-on ring in the category; a watch is less comfortable to sleep in.' },
   ],
   faq: [

@@ -18,9 +18,9 @@ const healthyWaveVsQiCoil: HeadToHeadInput = {
   axes: [
     { name: 'Evidence base', winner: 'a', note: 'Healthy Wave uses common PEMF frequencies (including 7.83 Hz) from the general PEMF literature, though the mat itself has no trials. Qi Coil is built on Rife and “scalar energy” — Cancer Research UK finds no reliable evidence that Rife machines work, and “scalar energy” is not a recognised physics concept.' },
     { name: 'Disclosed specs', winner: 'a', note: 'Healthy Wave publishes 1–30 Hz, three pulse widths (six waveforms) and its field strength (up to 5+ gauss peak, about 1.5 gauss average). Qi Coil publishes no PEMF frequency range or waveform — only “10,000+ frequencies” and a claimed ~15 gauss field.' },
-    { name: 'Field strength', winner: 'a', note: 'Healthy Wave: adjustable, low-intensity output with published figures. Qi Coil: a claimed ~15 gauss field with no published measurement method or waveform. A bigger number you cannot check does not win.' },
+    { name: 'Field strength', criterionId: 'field-strength', note: 'Healthy Wave: adjustable, low-intensity output with published figures. Qi Coil: a claimed ~15 gauss field with no published measurement method or waveform. A bigger number you cannot check does not win.' },
     { name: 'Modality coverage', winner: 'a', note: 'Healthy Wave stacks PEMF, far-infrared heat, red light, negative ions and crystals in one mat. Qi Coil is a single coil playing audio-derived frequencies.' },
-    { name: 'Value', winner: 'a', note: 'Healthy Wave: $995–$2,495 by size (full-size Pro $2,495), 5-year limited warranty, 90-day trial. Qi Coil: $797 (Mini), $1,197 (Mini Twin), $4,995 (3S), $9,995 (Max Scalar) — extreme pricing for an unproven modality.' },
+    { name: 'Value', criterionId: 'value', note: 'Healthy Wave: $995–$2,495 by size (full-size Pro $2,495), 5-year limited warranty, 90-day trial. Qi Coil: $797 (Mini), $1,197 (Mini Twin), $4,995 (3S), $9,995 (Max Scalar) — extreme pricing for an unproven modality.' },
     { name: 'Portability', winner: 'b', note: 'Qi Coil is a genuinely portable coil-plus-app; Healthy Wave is a full-body mat you lie on. If portability is the only thing you weigh, Qi Coil wins it.' },
   ],
   faq: [

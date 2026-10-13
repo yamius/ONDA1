@@ -16,7 +16,7 @@ const sensateVsApollo: HeadToHeadInput = {
   bestForB:
     'Choose Apollo Neuro if you want passive vagal modulation through the entire day — work, training, sleep — with the strongest non-electrical research base in the consumer category.',
   axes: [
-    { name: 'Mechanism', winner: 'b', note: 'Apollo: vibration on the skin via touch receptors. Sensate: infrasonic sound resonating in the chest. Both are indirect, proposed routes. Apollo’s mechanism has the broader evidence base.' },
+    { name: 'Mechanism', criterionId: 'mechanism', note: 'Apollo: vibration on the skin via touch receptors. Sensate: infrasonic sound resonating in the chest. Both are indirect, proposed routes. Apollo’s mechanism has the broader evidence base.' },
     { name: 'Independent evidence', winner: 'b', note: 'Apollo Neuro: peer-reviewed HRV/recovery RCTs from University of Pittsburgh. Sensate: one published stress/HRV pilot plus company-funded studies. Apollo wins independent research.' },
     { name: 'Use cases covered', winner: 'b', note: 'Apollo: seven modes (calm, energy, sleep, focus, recover, social, clear). Sensate: focused on calm/wind-down with soundscape variety. Apollo is broader.' },
     { name: 'All-day wearability', winner: 'b', note: 'Apollo: wrist/ankle/clip-on, designed for passive 24/7 wear. Sensate: chest-placed sit-down session-based, 10–30 minutes at a time.' },

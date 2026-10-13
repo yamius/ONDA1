@@ -206,8 +206,6 @@ console.log('lib/generated/hrv-norms.js, breathing.js')
 // Task 089: the exported review text must carry the computed scores (no stale / hand-typed numbers).
 const scoreErrors = mcpExportScoreErrors(OUT)
 if (scoreErrors.length) {
-  console.error(`[export] ${scoreErrors.length} score error(s):
-  ${scoreErrors.join('
-  ')}`)
+  console.error(`[export] ${scoreErrors.length} score error(s):\n  ${scoreErrors.join('\n  ')}`)
   process.exit(1)
 }

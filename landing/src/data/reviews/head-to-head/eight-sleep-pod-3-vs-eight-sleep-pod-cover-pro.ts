@@ -17,9 +17,9 @@ const pod3VsCoverPro: HeadToHeadInput = {
   bestForB:
     'Choose Pod Cover Pro if you have a mattress you like and you want the current-gen Eight Sleep platform on it.',
   axes: [
-    { name: 'Climate range', winner: 'b', note: 'Pod 4-platform Cover Pro: current-gen wider climate range. Pod 3: narrower range, older chiller generation.' },
+    { name: 'Climate range', criterionId: 'climate-range', note: 'Pod 4-platform Cover Pro: current-gen wider climate range. Pod 3: narrower range, older chiller generation.' },
     { name: 'Tracking', winner: 'b', note: 'Cover Pro: current Pod 4-generation sensors and Autopilot. Pod 3: previous-gen sensors, same Eight Sleep app and subscription. Tracking quality close but Cover Pro leads.' },
-    { name: 'Subscription', winner: 'tie', note: 'Both require the same Eight Sleep Autopilot subscription for full features. Neither escapes the membership model.' },
+    { name: 'Subscription', criterionId: 'subscription', note: 'Both require the same Eight Sleep Autopilot subscription for full features. Neither escapes the membership model.' },
     { name: 'Form factor', winner: 'a', note: 'Pod 3: integrated mattress system, single coordinated build. Cover Pro: layer-on-existing approach.' },
     { name: 'Mattress flexibility', winner: 'b', note: 'Cover Pro installs on any mattress and transfers to your next bed. Pod 3 locks you into the Eight Sleep mattress.' },
     { name: 'Price', winner: 'a', note: 'Pod 3 inventory pricing: deeply discounted from original (~$2,000-2,800 depending on stock). Cover Pro: ~$2,200. Pod 3 marginally cheaper if you find the inventory discount.' },

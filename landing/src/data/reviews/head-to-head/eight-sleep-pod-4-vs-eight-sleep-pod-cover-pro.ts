@@ -17,9 +17,9 @@ const pod4VsCoverPro: HeadToHeadInput = {
   bestForB:
     'Choose Pod Cover Pro if you have a mattress you like and want Eight Sleep climate and tracking on it without buying a new bed.',
   axes: [
-    { name: 'Climate range', winner: 'tie', note: 'Identical hardware — same dual-zone water cooling/heating range and recovery. Pod 4 may have marginally better fit on the matched mattress; not user-distinguishable.' },
+    { name: 'Climate range', criterionId: 'climate-range', note: 'Identical hardware — same dual-zone water cooling/heating range and recovery. Pod 4 may have marginally better fit on the matched mattress; not user-distinguishable.' },
     { name: 'Tracking', winner: 'tie', note: 'Same Autopilot, same HRV, same sleep-stage detection. Software is identical across both products.' },
-    { name: 'Subscription', winner: 'tie', note: 'Same Autopilot subscription required for full features on both. Neither escapes the membership model.' },
+    { name: 'Subscription', criterionId: 'subscription', note: 'Same Autopilot subscription required for full features on both. Neither escapes the membership model.' },
     { name: 'Form factor', winner: 'a', note: 'Pod 4: integrated mattress system — single coordinated build. Pod Cover Pro: layer on top of existing mattress, slightly more bulk.' },
     { name: 'Price', winner: 'b', note: 'Pod 4 full system: ~$3,500-5,000. Pod Cover Pro: ~$2,200. Cover Pro is ~40% cheaper for identical climate and tracking.' },
     { name: 'Mattress flexibility', winner: 'b', note: 'Pod Cover Pro installs on any mattress you already own or buy later. Pod 4 locks you into the Eight Sleep mattress.' },

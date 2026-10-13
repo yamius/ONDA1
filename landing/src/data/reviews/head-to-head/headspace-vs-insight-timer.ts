@@ -23,7 +23,7 @@ const headspaceVsInsight: HeadToHeadInput = {
     { name: 'Teaching quality consistency', winner: 'a', note: 'Headspace: small core team, consistent voice. Insight Timer: open-teacher model, quality varies wildly.' },
     { name: 'Top-tier named teachers', winner: 'b', note: 'Insight Timer: Tara Brach, Jack Kornfield, Sharon Salzberg and other premier teachers — all accessible at no cost. Headspace: smaller named-teacher roster.' },
     { name: 'Community features', winner: 'b', note: 'Insight Timer: groups, live events, courses, a real community layer. Headspace: content-only.' },
-    { name: 'Personalisation', winner: 'a', note: 'Headspace: structured daily recommendations and progression. Insight Timer: search-driven, less algorithmic.' },
+    { name: 'Personalisation', criterionId: 'personalization', note: 'Headspace: structured daily recommendations and progression. Insight Timer: search-driven, less algorithmic.' },
     { name: 'Price', winner: 'b', note: 'Insight Timer: genuinely free + optional Member Plus (US$60/year, 7-day free trial). Headspace: ~$70/year subscription required for most content. Insight Timer is cheaper at every tier.' },
   ],
   faq: [

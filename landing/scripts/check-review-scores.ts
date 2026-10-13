@@ -21,7 +21,7 @@ import { join } from 'node:path'
 import { ALL_REVIEWS, ALL_COMPARISONS, weightedMean, roundHalfUp1, MAX_EDITORIAL_ADJUSTMENT } from '../src/data/reviews'
 import { CRITERIA } from '../src/data/reviews/criteria'
 import { ALL_HEAD_TO_HEADS } from '../src/data/reviews/head-to-head'
-import { sourceScoreTextErrors, mcpExportScoreErrors } from './lib/score-text-check'
+import { sourceScoreTextErrors, mcpExportScoreErrors, awardErrors } from './lib/score-text-check'
 
 const errors: string[] = []
 const root = join(import.meta.dirname, '..', 'src', 'data', 'reviews')
@@ -71,6 +71,12 @@ for (const c of ALL_COMPARISONS) {
 
 // 5. Scores in prose (task 089): placeholders only, in every language and in the /mcp export.
 errors.push(...sourceScoreTextErrors(), ...mcpExportScoreErrors())
+
+// 6. Awards and hand-set duel-axis winners must not contradict the scores (gap > 0.1 rule);
+//    known cases awaiting the owner's decision are listed as warnings (AWARD_REVIEW_PENDING).
+const awards = awardErrors()
+errors.push(...awards.errors)
+if (awards.pending.length) console.warn(`[check-review-scores] ${awards.pending.length} award/axis result(s) contradict the scores — pending owner decision:\n  ${awards.pending.join('\n  ')}`)
 
 if (errors.length) {
   console.error(`[check-review-scores] ${errors.length} error(s):\n  ${errors.join('\n  ')}`)

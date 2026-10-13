@@ -18,9 +18,9 @@ const bemerVsHealthyWave: HeadToHeadInput = {
     'Choose Healthy Wave Multi-Wave if you want PEMF stacked with far-infrared and red light therapy in a single mat at meaningfully lower price.',
   axes: [
     { name: 'Waveform research', winner: 'a', note: 'Bemer: the longest study list on one specific signal, but mostly small or manufacturer-linked; independent controlled trials found no difference from control. Healthy Wave: common PEMF frequencies, no trials of the mat itself.' },
-    { name: 'Field strength', winner: 'b', note: 'Bemer: 35–150 µT (low-intensity by design). Healthy Wave: higher configurable output across multiple waveforms. Healthy Wave wins on raw intensity.' },
+    { name: 'Field strength', criterionId: 'field-strength', note: 'Bemer: 35–150 µT (low-intensity by design). Healthy Wave: higher configurable output across multiple waveforms. Healthy Wave wins on raw intensity.' },
     { name: 'Modality stacking', winner: 'b', note: 'Bemer: PEMF only. Healthy Wave: PEMF + far-infrared + red light + amethyst/tourmaline. Three modalities vs one.' },
-    { name: 'Programmability', winner: 'b', note: 'Bemer: branded P1–P10 preset steps, app-controlled. Healthy Wave: real parameter exposure (waveform, frequency, intensity). Healthy Wave more transparent.' },
+    { name: 'Programmability', criterionId: 'programmability', note: 'Bemer: branded P1–P10 preset steps, app-controlled. Healthy Wave: real parameter exposure (waveform, frequency, intensity). Healthy Wave more transparent.' },
     { name: 'Regulatory standing', winner: 'tie', note: 'Bemer is FDA-cleared through 510(k) as a non-medical muscle-conditioning device (product code NGX), not for treating disease. Healthy Wave: no FDA clearance, sold as a wellness device. Neither is cleared to treat any condition.' },
     { name: 'Build pedigree', winner: 'a', note: 'Bemer: 25-year German engineering, premium electronics, 3-year warranty. Healthy Wave: solid build, 5-year limited warranty and 90-day trial but less brand pedigree.' },
     { name: 'Price', winner: 'b', note: 'Bemer: $5,490. Healthy Wave: $995–$2,495 by size (full-size Pro $2,495). Healthy Wave less than half the price.' },

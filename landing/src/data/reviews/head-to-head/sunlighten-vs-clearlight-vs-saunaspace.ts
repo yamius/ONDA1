@@ -20,7 +20,7 @@ const threePremiumSauna: HeadToHeadInput = {
     'Choose SaunaSpace Faraday if near-IR-only incandescent delivery and full Faraday-cage EMF shielding are your bet on IR-sauna philosophy.',
   axes: [
     { name: 'Wavelength implementation', winner: 'a', note: 'Sunlighten: separate near/mid/far emitter systems with per-session programmable control. Clearlight: combined full-spectrum True Wave heaters. SaunaSpace: near-IR-only via tungsten incandescent.' },
-    { name: 'EMF discipline', winner: 'c', note: 'SaunaSpace: full Faraday-cage shielding (most rigorous). Sunlighten: <1 mG at seated position. Clearlight: marketed as low EMF/ELF without published third-party figures, no Faraday cage.' },
+    { name: 'EMF discipline', criterionId: 'emf', note: 'SaunaSpace: full Faraday-cage shielding (most rigorous). Sunlighten: <1 mG at seated position. Clearlight: marketed as low EMF/ELF without published third-party figures, no Faraday cage.' },
     { name: 'Model-specific research', winner: 'tie', note: 'None has an outcome trial of the reviewed model. Sunlighten: one 20-person 2010 pilot on an older model (Sunlight Armana 3). Clearlight: one 12-person, single-session 2026 core-temperature study on the Sanctuary 2, sauna supplied by Clearlight. SaunaSpace: we found no peer-reviewed study.' },
     { name: 'Warranty', winner: 'b', note: 'Clearlight: lifetime heater warranty (Jacuzzi backing). Sunlighten: 7-year. SaunaSpace: 5-year. Clearlight strongest coverage.' },
     { name: 'Form factor', winner: 'a', note: 'Sunlighten and Clearlight: traditional cabin install. SaunaSpace: tent-style or smaller cabin. Sunlighten/Clearlight more familiar shape.' },

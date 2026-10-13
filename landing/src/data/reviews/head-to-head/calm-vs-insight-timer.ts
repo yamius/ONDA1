@@ -23,7 +23,7 @@ const calmVsInsightTimer: HeadToHeadInput = {
     { name: 'Sleep content', winner: 'a', note: 'Calm’s Sleep Stories are category-leading — celebrity-narrated stories, sleep music, soundscapes. Insight Timer has plenty of sleep content, but it is not the centre.' },
     { name: 'Celebrity / star teachers', winner: 'a', note: 'Calm: celebrity narrators such as Matthew McConaughey and Harry Styles. Insight Timer: well-known teachers (Tara Brach, Jack Kornfield) but not consumer-celebrity narration.' },
     { name: 'Community features', winner: 'b', note: 'Insight Timer has groups, live events and an active community. Calm is content-only.' },
-    { name: 'Personalisation', winner: 'a', note: 'Calm: structured daily recommendations and progression. Insight Timer: search-driven, less algorithmic — strong if you know what you want.' },
+    { name: 'Personalisation', criterionId: 'personalization', note: 'Calm: structured daily recommendations and progression. Insight Timer: search-driven, less algorithmic — strong if you know what you want.' },
     { name: 'Price', winner: 'b', note: 'Insight Timer: free, with optional Member Plus at US$60/year, 7-day free trial. Calm: $79.99/year after a 7-day trial (or $499.99 lifetime) for most content. Insight Timer is cheaper at every tier.' },
   ],
   faq: [

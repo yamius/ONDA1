@@ -17,9 +17,9 @@ const pod5VsChilipad: HeadToHeadInput = {
   bestForB:
     'Choose the ChiliPad Dock Pro if you want premium dual-zone water cooling without the subscription tax, at roughly a quarter of the Pod 5’s 3-year cost, and you already wear an Oura or WHOOP for tracking.',
   axes: [
-    { name: 'Climate range', winner: 'a', note: 'Both are dual-zone water-cooled with comparable usable range (13–43°C class). The Pod 5 Ultra edges ahead with its top-down hydro blanket adding cooling/heating from above as well as below — the fullest envelope in the category. ChiliPad cools just as hard from below.' },
+    { name: 'Climate range', criterionId: 'climate-range', note: 'Both are dual-zone water-cooled with comparable usable range (13–43°C class). The Pod 5 Ultra edges ahead with its top-down hydro blanket adding cooling/heating from above as well as below — the fullest envelope in the category. ChiliPad cools just as hard from below.' },
     { name: 'Tracking', winner: 'a', note: 'Eight Sleep: integrated HRV, sleep-stage and snore detection — no wearable needed. ChiliPad: no built-in tracking; pair with a separate device.' },
-    { name: 'Subscription', winner: 'b', note: 'Eight Sleep: Autopilot membership required (~$15–25/mo) for full features. ChiliPad: none — the hardware unlocks fully on purchase. The defining axis.' },
+    { name: 'Subscription', criterionId: 'subscription', note: 'Eight Sleep: Autopilot membership required (~$15–25/mo) for full features. ChiliPad: none — the hardware unlocks fully on purchase. The defining axis.' },
     { name: 'Software & automation', winner: 'a', note: 'The Pod 5’s Autopilot 4.0 sleep agent (Apple/Google Health integration, stage-based scheduling, morning brief) is the category benchmark. ChiliPad’s app is functional but climate-only, with scheduled temperature profiles rather than adaptive automation.' },
     { name: 'Extras', winner: 'a', note: 'Only the Pod 5 Ultra adds an adjustable base, built-in audio and automatic snore mitigation. ChiliPad is climate-only by design.' },
     { name: '3-year cost', winner: 'b', note: 'Pod 5 Ultra: ~$6,099 + ~$700–900 subscription = ~$6,800–7,000. ChiliPad Dock Pro: ~$1,700 one-time. ChiliPad is roughly a quarter of the Pod 5’s total ownership cost.' },

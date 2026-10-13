@@ -10,7 +10,7 @@
  */
 import type { HeadToHead, HeadToHeadInput } from '../types'
 import { ALL_REVIEWS } from '../all-reviews'
-import { scoreWinnerSlug } from '../scoring'
+import { scoreWinnerSlug, axisWinnerFromScores } from '../scoring'
 import { resolveScoresDeep } from '../score-text'
 
 const REVIEW_BY_SLUG = new Map(ALL_REVIEWS.map((r) => [r.slug, r]))
@@ -24,7 +24,20 @@ function withWinner(h: HeadToHeadInput): HeadToHead {
       if (!r) throw new Error(`[head-to-head] ${h.slug}: unknown product "${s}"`)
       return r
     })
-  return { ...h, winnerSlug: scoreWinnerSlug(products) }
+  const axes = h.axes.map((ax) => {
+    if (!ax.criterionId) {
+      if (!ax.winner) throw new Error(`[head-to-head] ${h.slug} › "${ax.name}": needs a winner or a criterionId`)
+      return { ...ax, winner: ax.winner }
+    }
+    if (ax.winner) throw new Error(`[head-to-head] ${h.slug} › "${ax.name}": winner is computed from ${ax.criterionId} — remove the hand-typed winner`)
+    const scores = products.map((p) => {
+      const s = p.scores.find((c) => c.criterionId === ax.criterionId)?.score
+      if (s === undefined) throw new Error(`[head-to-head] ${h.slug} › "${ax.name}": ${p.slug} has no criterion ${ax.criterionId}`)
+      return s
+    })
+    return { ...ax, winner: axisWinnerFromScores(scores) }
+  })
+  return { ...h, axes, winnerSlug: scoreWinnerSlug(products) }
 }
 
 /** Current date (YYYY-MM-DD), captured once at module load. Used to filter
