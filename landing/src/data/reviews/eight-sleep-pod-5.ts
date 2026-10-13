@@ -5,7 +5,7 @@ const eightSleepPod5: ToolReviewInput = {
   name: 'Eight Sleep Pod 5',
   brand: 'Eight Sleep',
   category: 'sleep-climate',
-  productType: 'Premium smart sleep-climate cover + mattress system',
+  productType: 'Premium smart sleep-climate cover + hub for an existing mattress (Ultra adds an adjustable Base and a Blanket; no mattress)',
   description:
     'ONDA review of the Eight Sleep Pod 5 — the flagship Pod 5 Ultra adds an adjustable base, top-down cooling and audio, but jumps to $6,099+. The core tech is shared with the Pod 4. Replaced by the Pod 6 (from $1,999) in September 2026.',
   verdict:
@@ -59,6 +59,7 @@ Choose the Pod 5 Ultra if you want the maximal full-bed system and the price is 
 `,
   references: [
     { label: 'Eight Sleep — official site', url: 'https://www.eightsleep.com/' },
+    { label: 'Eight Sleep — Pod 5 (Core: Cover + Hub; Ultra adds Base and Blanket), official, accessed 2026-10-13', url: 'https://www.eightsleep.com/product/pod5core/' },
     { label: 'Tom’s Guide — Eight Sleep Pod 5 Ultra launch', url: 'https://www.tomsguide.com/mattresses/eight-sleep-launches-pod-5-ultra' },
   ],
   relatedSlugs: ['eight-sleep-pod-4', 'eight-sleep-pod-cover-pro', 'chilipad-dock-pro', 'bedjet-3'],
