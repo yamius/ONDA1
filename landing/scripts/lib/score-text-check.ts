@@ -93,15 +93,7 @@ export function axisCriterion(axisName: string, category: string): string | unde
 
 /** Hand-set results the scores contradict, left for the owner's decision (task 089 report).
  *  Remove a line once the owner has decided (fix the text/winner or the scores). */
-export const AWARD_REVIEW_PENDING = new Set<string>([
-  // winner changes — EN notes sent to the owner, waiting for OK (089 follow-up)
-  // criterion score itself to re-check (089_awards_table.md) — winner not recomputed until then
-  'duel omnilux-contour-face-vs-currentbody-series-2 › Clinical evidence',
-  'duel omnilux-contour-face-vs-dr-dennis-gross-spectralite › Clinical evidence',
-  'duel theraface-mask-vs-higherdose-red-light-face-mask › Clinical evidence',
-  'duel lightstim-for-wrinkles-vs-solawave-wand-4-in-1 › Clinical evidence',
-  'duel omnilux-contour-face-vs-currentbody-series-2-vs-dr-dennis-gross-spectralite › Clinical evidence',
-])
+export const AWARD_REVIEW_PENDING = new Set<string>([])
 
 export function awardErrors(): { errors: string[]; pending: string[] } {
   const errors: string[] = [], pending: string[] = []

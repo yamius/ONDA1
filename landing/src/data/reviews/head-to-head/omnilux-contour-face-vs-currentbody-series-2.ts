@@ -17,7 +17,7 @@ const omniluxVsCurrentbody: HeadToHeadInput = {
   bestForB:
     'Choose CurrentBody Series 2 if you want the consumer-market reference with integrated neck flap covering face + neck in one device.',
   axes: [
-    { name: 'Clinical evidence', winner: 'tie', note: 'Practically equal: neither mask has an independent trial of its own (as of October 2026). Omnilux\'s published studies are on other models; CurrentBody\'s research is brand-funded. Omnilux is FDA-cleared (510(k) K191629), CurrentBody FDA registered (a listing) — both scored as neutral.' },
+    { name: 'Clinical evidence', criterionId: 'clinical-evidence', note: 'Practically equal: neither mask has an independent trial of its own (as of October 2026). Omnilux\'s published studies are on other models; CurrentBody\'s research is brand-funded. Omnilux is FDA-cleared (510(k) K191629), CurrentBody FDA registered (a listing) — both scored as neutral.' },
     { name: 'Wavelength coverage', criterionId: 'wavelength-coverage', note: 'Both use red 633 nm + near-infrared 830 nm — the pair most used in skin studies. Same spectrum.' },
     { name: 'Neck coverage', winner: 'b', note: 'CurrentBody: integrated neck flap on Series 2. Omnilux: neck flap sold separately as add-on.' },
     { name: 'LED count', winner: 'tie', note: '132 LEDs each in similar distribution. Comparable raw coverage on the face proper.' },

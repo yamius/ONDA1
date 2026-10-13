@@ -16,7 +16,7 @@ const lightstimVsSolawave: HeadToHeadInput = {
   bestForB:
     'Choose Solawave Wand 4-in-1 if you want budget entry to handheld red light with multi-modality stack (LED + microcurrent + warmth + massage).',
   axes: [
-    { name: 'Clinical evidence', winner: 'tie', note: 'Neither has published trials of the device itself. LightStim is FDA-cleared (K120775; current model K261482), but the only wrinkle data in its FDA filings are an unpublished company study of an earlier model; Solawave is FDA registered (a listing, not clearance) with brand-funded consumer testimonials. FDA status is neutral in ONDA scores.' },
+    { name: 'Clinical evidence', criterionId: 'clinical-evidence', note: "LightStim leads: neither has published trials of the device itself and LightStim's unpublished company study does not count; LightStim's FDA clearance (K120775; current model K261482) is neutral, while Solawave's support is brand-funded consumer testimonials." },
     { name: 'Wavelength coverage', criterionId: 'wavelength-coverage', note: 'LightStim: four wavelengths (605 / 640 / 652 / 850 nm) including near-infrared. Solawave: single red 660 nm.' },
     { name: 'LED dose', winner: 'tie', note: 'LightStim: 21.6 mW/cm² at treatment distance per its FDA filing (K261482; the maker’s figure). Solawave: no irradiance figure in our sources. Without comparable figures we call no winner.' },
     { name: 'Multi-modality stack', winner: 'b', note: 'Solawave: LED + microcurrent + warmth + massage in one device. LightStim: LED only.' },
