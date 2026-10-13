@@ -3395,7 +3395,7 @@
         "Pas encore de validation indépendante des nouveaux capteurs ; enfermement dans l’écosystème Eight Sleep"
       ],
       "scoreNotes": {
-        "climate-range": "Même refroidissement et chauffage bizone par housse que le cœur des Pod 4/5, Eight Sleep annonçant des changements de température 20% plus rapides. Le refroidissement par le dessus exige l’accessoire Blanket séparé (le Pod 5 Ultra obtenait 9.7 avec celui-ci inclus). Eight Sleep n’a pas publié de nouvelle plage de température pour le Pod 6.",
+        "climate-range": "Même refroidissement et chauffage bizone par housse que le cœur des Pod 4/5, Eight Sleep annonçant des changements de température 20% plus rapides. Le refroidissement par le dessus exige l’accessoire Blanket séparé (le Pod 5 Ultra obtenait {{score:eight-sleep-pod-5.climate-range}} avec celui-ci inclus). Eight Sleep n’a pas publié de nouvelle plage de température pour le Pod 6.",
         "build": "L’unité centrale reconçue est 50% plus petite et tient sous la plupart des cadres de lit. La garantie dépend de l’abonnement : 2 ans en Standard, 5 ans en Enhanced/Elite. La fiabilité à long terme de la nouvelle unité n’est pas encore connue.",
         "app-tracking": "18 capteurs biométriques (contre 2) pour la fréquence cardiaque, la fréquence respiratoire, la VFC/HRV, les ronflements et les phases de sommeil, avec une distinction des dormeurs qui ignore animaux et enfants. Légèrement au-dessus du Pod 5 sur le papier ; aucune validation indépendante des capteurs du Pod 6 n’a encore été publiée.",
         "form-factor": "Une unité centrale deux fois plus petite et les nouvelles tailles Solo en font le Pod le plus facile à intégrer dans une chambre. Housse seule par défaut ; Base, Blanket et Pillow Cover sont des accessoires optionnels plutôt qu’inclus comme sur le Pod 5 Ultra.",
@@ -4906,7 +4906,7 @@
         },
         {
           "name": "Couverture des techniques",
-          "note": "Breathwrk : les techniques nommées officiellement incluent la respiration carrée, la 4-7-8, le bourdonnement et des schémas à expiration longue. Othership : privilégie des séances rythmées guidées par la musique. Les deux obtiennent 7,5 ; WHM enseigne une seule méthode."
+          "note": "Breathwrk : les techniques nommées officiellement incluent la respiration carrée, la 4-7-8, le bourdonnement et des schémas à expiration longue. Othership : privilégie des séances rythmées guidées par la musique. Les deux obtiennent {{score:breathwrk.technique-coverage}} ; WHM enseigne une seule méthode."
         },
         {
           "name": "Fondement scientifique",

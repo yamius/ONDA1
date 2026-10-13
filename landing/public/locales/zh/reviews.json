@@ -87,11 +87,11 @@
       "faq": [
         {
           "q": "Resona Health VIBE多少钱？",
-          "a": "Resona Health VIBE作为独立可穿戴设备售价$299，无需App或订阅，提供1年保修和30天退款保证。相比全身垫约$1,750或更高的价格，它是PEMF入门级中性价比最高的选择，也是探索PEMF门槛最低的方式。ONDA的性价比评分为8.5/10。"
+          "a": "Resona Health VIBE作为独立可穿戴设备售价$299，无需App或订阅，提供1年保修和30天退款保证。相比全身垫约$1,750或更高的价格，它是PEMF入门级中性价比最高的选择，也是探索PEMF门槛最低的方式。ONDA的性价比评分为{{score:resona-health-vibe.value}}/10。"
         },
         {
           "q": "Resona Health VIBE有什么作用？",
-          "a": "Resona Health VIBE是一款口袋大小的可穿戴PEMF设备，内置130多种方案（60种核心＋70种扩展），单键操作，无需App或订阅。它专为针对性的局部使用而非全身疗程设计，因此磁场强度按设计低于全身垫。ONDA总评分为7.0/10。"
+          "a": "Resona Health VIBE是一款口袋大小的可穿戴PEMF设备，内置130多种方案（60种核心＋70种扩展），单键操作，无需App或订阅。它专为针对性的局部使用而非全身疗程设计，因此磁场强度按设计低于全身垫。ONDA总评分为{{score:resona-health-vibe}}/10。"
         },
         {
           "q": "Resona Health VIBE最适合谁？",
@@ -195,7 +195,7 @@
       "faq": [
         {
           "q": "Ultrahuman M1 CGM的准确度如何？",
-          "a": "Ultrahuman M1使用雅培传感器：美国以外为FreeStyle Libre，美国通过M2 Live使用雅培Lingo。两者都可佩戴14天，无需校准。其传感器准确度得分8.5/10，与Dexcom G7方案相同，因为在一项独立的头对头研究（Eichenlaub et al. 2025）中，Libre 3与Dexcom G7的准确度相近；ONDA总评分为7.5/10。"
+          "a": "Ultrahuman M1使用雅培传感器：美国以外为FreeStyle Libre，美国通过M2 Live使用雅培Lingo。两者都可佩戴14天，无需校准。其传感器准确度得分{{score:ultrahuman-m1.sensor-accuracy}}/10，与Dexcom G7方案相同，因为在一项独立的头对头研究（Eichenlaub et al. 2025）中，Libre 3与Dexcom G7的准确度相近；ONDA总评分为{{score:ultrahuman-m1}}/10。"
         },
         {
           "q": "Ultrahuman M1多少钱？",
@@ -934,7 +934,7 @@
       "faq": [
         {
           "q": "Healthy Wave Multi-Wave PEMF垫有什么作用？",
-          "a": "Healthy Wave Multi-Wave在一张全身垫中结合了PEMF、远红外热、红光、负离子和加热水晶。其控制器提供1-30 Hz、三种脉宽（六种波形）、12个预设或自定义程序。ONDA给出的总分为8.4/10。"
+          "a": "Healthy Wave Multi-Wave在一张全身垫中结合了PEMF、远红外热、红光、负离子和加热水晶。其控制器提供1-30 Hz、三种脉宽（六种波形）、12个预设或自定义程序。ONDA给出的总分为{{score:healthy-wave-multi-wave}}/10。"
         },
         {
           "q": "Healthy Wave Multi-Wave垫多少钱？",
@@ -989,11 +989,11 @@
       "faq": [
         {
           "q": "Prana Breath有什么功能？",
-          "a": "Prana Breath是一款可定制的模式型呼吸练习应用，可完全控制任意模式的吸气、屏息、呼气和屏息时长。它提供丰富的预设模式库，包括箱式呼吸、4-7-8、Wim Hof和调息法，以Android为主。ONDA给出的评分为6.3/10。"
+          "a": "Prana Breath是一款可定制的模式型呼吸练习应用，可完全控制任意模式的吸气、屏息、呼气和屏息时长。它提供丰富的预设模式库，包括箱式呼吸、4-7-8、Wim Hof和调息法，以Android为主。ONDA给出的评分为{{score:prana-breath}}/10。"
         },
         {
           "q": "Prana Breath多少钱？",
-          "a": "Prana Breath基本免费，免费版功能丰富，一次性高级版解锁约$10。没有周期性订阅。因此它是可定制呼吸练习中性价比最高的入门选择，在ONDA的评估中性价比得分为8.0/10。"
+          "a": "Prana Breath基本免费，免费版功能丰富，一次性高级版解锁约$10。没有周期性订阅。因此它是可定制呼吸练习中性价比最高的入门选择，在ONDA的评估中性价比得分为{{score:prana-breath.value}}/10。"
         },
         {
           "q": "Prana Breath最适合谁？",

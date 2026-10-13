@@ -3990,7 +3990,7 @@
         "Aún no hay validación independiente de los nuevos sensores; atado al ecosistema de Eight Sleep"
       ],
       "scoreNotes": {
-        "climate-range": "La misma refrigeración y calefacción de doble zona basada en funda que el núcleo del Pod 4/5, y Eight Sleep afirma cambios de temperatura un 20% más rápidos. La refrigeración desde arriba requiere el complemento Blanket aparte (el Pod 5 Ultra obtuvo 9.7 con él incluido). Eight Sleep no ha publicado un nuevo rango de temperatura para el Pod 6.",
+        "climate-range": "La misma refrigeración y calefacción de doble zona basada en funda que el núcleo del Pod 4/5, y Eight Sleep afirma cambios de temperatura un 20% más rápidos. La refrigeración desde arriba requiere el complemento Blanket aparte (el Pod 5 Ultra obtuvo {{score:eight-sleep-pod-5.climate-range}} con él incluido). Eight Sleep no ha publicado un nuevo rango de temperatura para el Pod 6.",
         "build": "La unidad central rediseñada es un 50% más pequeña y cabe bajo la mayoría de las camas. La garantía depende de la membresía: 2 años en Standard, 5 años en Enhanced/Elite. La fiabilidad a largo plazo de la nueva unidad aún no se conoce.",
         "app-tracking": "18 sensores biométricos (antes 2) para frecuencia cardiaca, frecuencia respiratoria, HRV, ronquidos y fases del sueño, con separación de durmientes que ignora mascotas o niños. Ligeramente por encima del Pod 5 sobre el papel; aún no se ha publicado ninguna validación independiente de los sensores del Pod 6.",
         "form-factor": "La unidad central de la mitad de tamaño y los nuevos tamaños Solo lo convierten en el Pod más fácil de encajar en un dormitorio. Solo funda por defecto; Base, Blanket y Pillow Cover son complementos opcionales en lugar de venir incluidos como en el Pod 5 Ultra.",
@@ -5712,7 +5712,7 @@
         },
         {
           "name": "Variedad de técnicas",
-          "note": "Breathwrk: entre las técnicas que nombra oficialmente están la respiración cuadrada, la 4-7-8, el zumbido (humming) y patrones de exhalación larga. Othership: se centra en sesiones rítmicas guiadas por música. Ambas puntúan 7,5; WHM enseña un solo método."
+          "note": "Breathwrk: entre las técnicas que nombra oficialmente están la respiración cuadrada, la 4-7-8, el zumbido (humming) y patrones de exhalación larga. Othership: se centra en sesiones rítmicas guiadas por música. Ambas puntúan {{score:breathwrk.technique-coverage}}; WHM enseña un solo método."
         },
         {
           "name": "Base científica",
@@ -5773,7 +5773,7 @@
         },
         {
           "name": "Cobertura de técnicas",
-          "note": "Breathwrk: entre las técnicas que nombra oficialmente están la respiración en caja, la 4-7-8, el zumbido (humming) y patrones de exhalación larga. Othership: se inclina por sesiones rítmicas guiadas por música. Ambas puntúan 7,5 en este eje."
+          "note": "Breathwrk: entre las técnicas que nombra oficialmente están la respiración en caja, la 4-7-8, el zumbido (humming) y patrones de exhalación larga. Othership: se inclina por sesiones rítmicas guiadas por música. Ambas puntúan {{score:breathwrk.technique-coverage}} en este eje."
         },
         {
           "name": "Base de evidencia",
@@ -5826,15 +5826,15 @@
       "axes": [
         {
           "name": "Tamaño de la biblioteca",
-          "note": "Breathwrk: más de 50 ejercicios (más de 100 en Pro), más clases diarias y programas (web oficial y App Store, consultados el 2026-10-11). SOMA: biblioteca seleccionada de viajes marcados por la música. Ambas puntúan 8.0."
+          "note": "Breathwrk: más de 50 ejercicios (más de 100 en Pro), más clases diarias y programas (web oficial y App Store, consultados el 2026-10-11). SOMA: biblioteca seleccionada de viajes marcados por la música. Ambas puntúan {{score:breathwrk.session-library}}."
         },
         {
           "name": "Cobertura de técnicas",
-          "note": "Breathwrk: entre las técnicas que nombra oficialmente están la respiración en caja, la 4-7-8, el zumbido (humming) y patrones de exhalación larga. SOMA: cruce hacia Wim Hof + pranayama. Ambas puntúan 7.5."
+          "note": "Breathwrk: entre las técnicas que nombra oficialmente están la respiración en caja, la 4-7-8, el zumbido (humming) y patrones de exhalación larga. SOMA: cruce hacia Wim Hof + pranayama. Ambas puntúan {{score:breathwrk.technique-coverage}}."
         },
         {
           "name": "Base de evidencia",
-          "note": "La ficha de Breathwrk en la App Store afirma beneficios en la HRV, la frecuencia cardiaca y la presión arterial sin citas. SOMA se apoya en el encuadre ceremonial y en la fisiología general de la respiración. Ambas puntúan 6.5."
+          "note": "La ficha de Breathwrk en la App Store afirma beneficios en la HRV, la frecuencia cardiaca y la presión arterial sin citas. SOMA se apoya en el encuadre ceremonial y en la fisiología general de la respiración. Ambas puntúan {{score:breathwrk.evidence-grounding}}."
         },
         {
           "name": "Enfoque marcado por la música",
@@ -5860,7 +5860,7 @@
         },
         {
           "q": "¿Cuál tiene mejor base de evidencia?",
-          "a": "Ninguna destaca: ambas puntúan 6.5. La ficha de Breathwrk en la App Store afirma beneficios en la HRV, la frecuencia cardiaca y la presión arterial sin citar estudios (web oficial y App Store, consultados el 2026-10-11); SOMA se apoya en los estudios publicados de Wim Hof y en la fisiología general de la respiración, con encuadre ceremonial."
+          "a": "Ninguna destaca: ambas puntúan {{score:breathwrk.evidence-grounding}}. La ficha de Breathwrk en la App Store afirma beneficios en la HRV, la frecuencia cardiaca y la presión arterial sin citar estudios (web oficial y App Store, consultados el 2026-10-11); SOMA se apoya en los estudios publicados de Wim Hof y en la fisiología general de la respiración, con encuadre ceremonial."
         },
         {
           "q": "¿Puedo convertirme en facilitador certificado por SOMA?",

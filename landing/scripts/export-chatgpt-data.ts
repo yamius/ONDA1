@@ -133,7 +133,7 @@ const duelRows = headToHeads.map((h) => {
   onda_scores: Object.fromEntries(prods.map((r) => [r.slug, r.overallScore])),
   verdict: h.verdict,
   bestFor: { a: h.bestForA, b: h.bestForB, c: h.bestForC ?? null },
-  axes: h.axes,
+  axes: h.axes.map(({ name, winner, note }) => ({ name, winner, note })),
 }})
 
 const roundupRows = comparisons.map((c) => ({

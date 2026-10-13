@@ -66,14 +66,16 @@ export function resolveScoresDeep<T>(value: T, where: string, lang = 'en'): T {
 }
 
 // ── hand-typed score patterns (EN + localized forms, decimal point or comma) ──
+/** Latin/Cyrillic letter: "G7 de 10" is a model name, but CJK text glues the number to a kana/hanzi. */
+const LTR = String.raw`A-Za-zÀ-ɏЀ-ӿ`
 const N = String.raw`(10|\d[.,]\d|\d)(?![.,]?\d)`
 const NOT_UNIT = String.raw`(?!位|[-–]?\s?(?:week|HP|day|min|hour|Tag|día|jour|giorn|dni|дн|нед|周|日))`
 export const HAND_SCORE_RES: { re: RegExp; langs?: string[] }[] = [
-  { re: new RegExp(String.raw`(?<![\p{L}\d.,–-])${N}\s*/\s*10(?!\d)`, 'gu') },
-  { re: new RegExp(String.raw`(?<![\p{L}\d.,–-])${N}\s+(?:out of|из|з|von|de|sur|su|na|op|van|em|di)\s+10(?![\d.,])`, 'giu') },
+  { re: new RegExp(String.raw`(?<![${LTR}\d.,–-])${N}\s*/\s*10(?!\d)`, 'gu') },
+  { re: new RegExp(String.raw`(?<![${LTR}\d.,–-])${N}\s+(?:out of|из|з|von|de|sur|su|na|op|van|em|di)\s+10(?![\d.,])`, 'giu') },
   {
     re: new RegExp(
-      String.raw`(?<!\p{L})(?:scor(?:es|ed|ing|e of|e)|rated|rating of|оценк\p{L}*|оцінк\p{L}*|Bewertung(?: von)?|puntuaci[oó]n(?: de)?|note de|punteggio(?: di)?|pontua[cç][aã]o(?: de)?|ocen\p{L}*(?: na)?|スコア|評価|评分|得分)[\s：]*${N}${NOT_UNIT}`,
+      String.raw`(?<![${LTR}])(?:scor(?:es|ed|ing|e of|e)|rated|nota|rating of|оценк\p{L}*|оцінк\p{L}*|Bewertung(?: von)?|puntuaci[oó]n(?: de)?|note de|punteggio(?: di)?|pontua[cç][aã]o(?: de)?|ocen\p{L}*(?: na)?|スコア|評価|评分|得分)[\s：]*${N}${NOT_UNIT}`,
       'giu',
     ),
   },

@@ -3395,7 +3395,7 @@
         "Brak jeszcze niezależnej walidacji nowych czujników; uzależnienie od ekosystemu Eight Sleep"
       ],
       "scoreNotes": {
-        "climate-range": "To samo dwustrefowe chłodzenie i grzanie przez nakładkę co w rdzeniu Pod 4/5, a Eight Sleep deklaruje o 20% szybsze zmiany temperatury. Chłodzenie od góry wymaga osobnego dodatku Blanket (Pod 5 Ultra z nim w zestawie dostał 9.7). Eight Sleep nie opublikował nowego zakresu temperatur dla Pod 6.",
+        "climate-range": "To samo dwustrefowe chłodzenie i grzanie przez nakładkę co w rdzeniu Pod 4/5, a Eight Sleep deklaruje o 20% szybsze zmiany temperatury. Chłodzenie od góry wymaga osobnego dodatku Blanket (Pod 5 Ultra z nim w zestawie dostał {{score:eight-sleep-pod-5.climate-range}}). Eight Sleep nie opublikował nowego zakresu temperatur dla Pod 6.",
         "build": "Przebudowana jednostka centralna jest o 50% mniejsza i mieści się pod większością ram łóżek. Gwarancja jest powiązana z członkostwem: 2 lata w Standard, 5 lat w Enhanced/Elite. Długoterminowa niezawodność nowej jednostki nie jest jeszcze znana.",
         "app-tracking": "18 czujników biometrycznych (zamiast 2) do pomiaru tętna, częstości oddechów, HRV, chrapania i faz snu, z rozróżnianiem śpiących i ignorowaniem zwierząt lub dzieci. Na papierze nieco powyżej Pod 5; nie opublikowano jeszcze niezależnej walidacji czujników Pod 6.",
         "form-factor": "Jednostka o połowę mniejsza i nowe rozmiary Solo sprawiają, że to najłatwiejszy do zmieszczenia w sypialni Pod. Domyślnie tylko nakładka; Base, Blanket i Pillow Cover to opcjonalne dodatki, a nie elementy zestawu jak w Pod 5 Ultra.",

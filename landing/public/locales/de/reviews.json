@@ -3395,7 +3395,7 @@
         "Noch keine unabhängige Validierung der neuen Sensoren; Bindung an das Eight-Sleep-Ökosystem"
       ],
       "scoreNotes": {
-        "climate-range": "Dieselbe auflagenbasierte Kühlung und Heizung mit zwei Zonen wie im Kern von Pod 4/5, wobei Eight Sleep 20% schnellere Temperaturwechsel angibt. Kühlung von oben erfordert das separate Zubehör Blanket (der Pod 5 Ultra erreichte damit im Paket 9.7). Einen neuen Temperaturbereich für den Pod 6 hat Eight Sleep nicht veröffentlicht.",
+        "climate-range": "Dieselbe auflagenbasierte Kühlung und Heizung mit zwei Zonen wie im Kern von Pod 4/5, wobei Eight Sleep 20% schnellere Temperaturwechsel angibt. Kühlung von oben erfordert das separate Zubehör Blanket (der Pod 5 Ultra erreichte damit im Paket {{score:eight-sleep-pod-5.climate-range}}). Einen neuen Temperaturbereich für den Pod 6 hat Eight Sleep nicht veröffentlicht.",
         "build": "Die neu gebaute Steuereinheit ist 50% kleiner und passt unter die meisten Bettgestelle. Die Garantie ist an die Mitgliedschaft gekoppelt: 2 Jahre bei Standard, 5 Jahre bei Enhanced/Elite. Die Langzeit-Zuverlässigkeit der neuen Einheit ist noch nicht bekannt.",
         "app-tracking": "18 biometrische Sensoren (statt 2) für Herzfrequenz, Atemfrequenz, HRV, Schnarchen und Schlafphasen, mit Unterscheidung der Schlafenden, die Haustiere oder Kinder ignoriert. Auf dem Papier etwas über dem Pod 5; eine unabhängige Validierung der Pod-6-Sensoren wurde noch nicht veröffentlicht.",
         "form-factor": "Halb so große Steuereinheit und neue Solo-Größen machen ihn zum am leichtesten ins Schlafzimmer passenden Pod. Standardmäßig nur die Auflage; Base, Blanket und Pillow Cover sind optionales Zubehör statt wie beim Pod 5 Ultra im Paket enthalten.",
@@ -4906,7 +4906,7 @@
         },
         {
           "name": "Abgedeckte Techniken",
-          "note": "Breathwrk: Offiziell genannte Techniken sind u. a. Box Breathing, 4-7-8, Summen und Muster mit langer Ausatmung. Othership: setzt auf rhythmische, musikgeführte Sessions. Beide erhalten 7,5; WHM lehrt eine Methode."
+          "note": "Breathwrk: Offiziell genannte Techniken sind u. a. Box Breathing, 4-7-8, Summen und Muster mit langer Ausatmung. Othership: setzt auf rhythmische, musikgeführte Sessions. Beide erhalten {{score:breathwrk.technique-coverage}}; WHM lehrt eine Methode."
         },
         {
           "name": "Evidenzbasis",

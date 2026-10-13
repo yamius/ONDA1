@@ -3395,7 +3395,7 @@
         "Ancora nessuna validazione indipendente dei nuovi sensori; vincolo all’ecosistema Eight Sleep"
       ],
       "scoreNotes": {
-        "climate-range": "Stesso raffreddamento e riscaldamento dual-zone a copertura del nucleo Pod 4/5, con Eight Sleep che dichiara cambi di temperatura il 20% più veloci. Il raffreddamento dall’alto richiede l’accessorio Blanket venduto a parte (il Pod 5 Ultra ha ottenuto 9.7 con il Blanket incluso). Eight Sleep non ha pubblicato una nuova gamma di temperatura per il Pod 6.",
+        "climate-range": "Stesso raffreddamento e riscaldamento dual-zone a copertura del nucleo Pod 4/5, con Eight Sleep che dichiara cambi di temperatura il 20% più veloci. Il raffreddamento dall’alto richiede l’accessorio Blanket venduto a parte (il Pod 5 Ultra ha ottenuto {{score:eight-sleep-pod-5.climate-range}} con il Blanket incluso). Eight Sleep non ha pubblicato una nuova gamma di temperatura per il Pod 6.",
         "build": "L’unità centrale ricostruita è più piccola del 50% e sta sotto la maggior parte dei letti. La garanzia è legata all’abbonamento: 2 anni con Standard, 5 anni con Enhanced/Elite. L’affidabilità a lungo termine della nuova unità non è ancora nota.",
         "app-tracking": "18 sensori biometrici (da 2) per frequenza cardiaca, frequenza respiratoria, HRV, russamento e fasi del sonno, con distinzione tra chi dorme che ignora animali domestici o bambini. Sulla carta leggermente sopra il Pod 5; non è ancora stata pubblicata alcuna validazione indipendente dei sensori del Pod 6.",
         "form-factor": "Unità centrale dimezzata e nuove misure Solo lo rendono il Pod più facile da sistemare in camera. Di base solo copertura; Base, Blanket e Pillow Cover sono accessori opzionali invece che inclusi come nel Pod 5 Ultra.",
@@ -4906,7 +4906,7 @@
         },
         {
           "name": "Copertura delle tecniche",
-          "note": "Breathwrk: le tecniche nominate ufficialmente includono respirazione quadrata, 4-7-8, humming e schemi a espirazione lunga. Othership: punta su sessioni ritmiche guidate dalla musica. Entrambe ottengono 7,5; WHM insegna un solo metodo."
+          "note": "Breathwrk: le tecniche nominate ufficialmente includono respirazione quadrata, 4-7-8, humming e schemi a espirazione lunga. Othership: punta su sessioni ritmiche guidate dalla musica. Entrambe ottengono {{score:breathwrk.technique-coverage}}; WHM insegna un solo metodo."
         },
         {
           "name": "Base scientifica",

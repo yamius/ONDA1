@@ -3395,7 +3395,7 @@
         "Nog geen onafhankelijke validatie van de nieuwe sensoren; vast aan het ecosysteem van Eight Sleep"
       ],
       "scoreNotes": {
-        "climate-range": "Dezelfde koeling en verwarming met twee zones via de hoes als de kern van de Pod 4/5, waarbij Eight Sleep 20% snellere temperatuurwisselingen claimt. Koeling van bovenaf vereist het aparte Blanket-accessoire (de Pod 5 Ultra scoorde 9.7 met dat accessoire inbegrepen). Eight Sleep heeft geen nieuw temperatuurbereik voor de Pod 6 gepubliceerd.",
+        "climate-range": "Dezelfde koeling en verwarming met twee zones via de hoes als de kern van de Pod 4/5, waarbij Eight Sleep 20% snellere temperatuurwisselingen claimt. Koeling van bovenaf vereist het aparte Blanket-accessoire (de Pod 5 Ultra scoorde {{score:eight-sleep-pod-5.climate-range}} met dat accessoire inbegrepen). Eight Sleep heeft geen nieuw temperatuurbereik voor de Pod 6 gepubliceerd.",
         "build": "De opnieuw ontworpen hub is 50% kleiner en past onder de meeste bedframes. De garantie is gekoppeld aan het lidmaatschap: 2 jaar bij Standard, 5 jaar bij Enhanced/Elite. De betrouwbaarheid van de nieuwe hub op lange termijn is nog niet bekend.",
         "app-tracking": "18 biometrische sensoren (was 2) voor hartslag, ademfrequentie, HRV, snurken en slaapfasen, met scheiding van slapers die huisdieren of kinderen negeert. Op papier iets beter dan de Pod 5; er is nog geen onafhankelijke validatie van de sensoren van de Pod 6 gepubliceerd.",
         "form-factor": "De hub van halve grootte en de nieuwe Solo-maten maken dit de makkelijkste Pod om in een slaapkamer te passen. Standaard alleen de hoes; Base, Blanket en Pillow Cover zijn optionele accessoires in plaats van meegeleverd zoals bij de Pod 5 Ultra.",
@@ -4906,7 +4906,7 @@
         },
         {
           "name": "Dekking van technieken",
-          "note": "Breathwrk: officieel genoemde technieken zijn onder meer box breathing, 4-7-8, neuriën en patronen met lange uitademing. Othership: zet in op ritmische sessies op muziek. Beide scoren 7,5; WHM leert één methode."
+          "note": "Breathwrk: officieel genoemde technieken zijn onder meer box breathing, 4-7-8, neuriën en patronen met lange uitademing. Othership: zet in op ritmische sessies op muziek. Beide scoren {{score:breathwrk.technique-coverage}}; WHM leert één methode."
         },
         {
           "name": "Wetenschappelijke onderbouwing",
