@@ -15,7 +15,7 @@ const clearlightSanctuary2: ToolReviewInput = {
   scores: [
     { criterionId: 'heat-source', score: 8.5, note: 'Carbon-ceramic far-IR heaters on side/back walls plus two 500 W full-spectrum heaters (near + mid + far) on the front glass. Credibly broad-spectrum, but less granular than Sunlighten mPulse’s separately programmable wavelengths.' },
     { criterionId: 'build', score: 8.5, note: 'Basswood or mahogany, double-wall tongue-and-groove construction, 8 mm tempered glass. Complete Limited Lifetime Warranty. 450 lb cabin.' },
-    { criterionId: 'emf', score: 8.5, note: 'Clearlight markets the cabin as low EMF and low ELF. Treat specific EMF figures as the maker’s claims; ask for the current test report before buying if EMF is a deciding factor.' },
+    { criterionId: 'emf', score: 8.0, note: 'Clearlight markets the cabin as low EMF and low ELF. Treat specific EMF figures as the maker’s claims; ask for the current test report before buying if EMF is a deciding factor.' },
     { criterionId: 'form-factor', score: 7.5, note: '2-person cabin: 52 × 48 × 77 in outside (47 × 44 × 74 in inside, 47 × 22 in bench). Runs on 120 V but needs a 20 A outlet (NEMA 5-20 plug, 2,250 W).' },
     { criterionId: 'evidence', score: 7.0, note: 'Established brand; the strongest sauna evidence comes from traditional Finnish sauna cohorts, not infrared-specific trials.' },
     { criterionId: 'value', score: 6.0, note: '$7,299 basswood / $7,699 mahogany (official store, Oct 2026, $500 below list) — now above Sunlighten mPulse (~$6,000) and Sun Home Equinox (~$6,000 2-person). The lifetime warranty offsets some, not all, of the premium.' },

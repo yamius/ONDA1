@@ -18,7 +18,7 @@ const currentbodyVsHigherDose: HeadToHeadInput = {
   axes: [
     { name: 'LED dose', winner: 'a', note: 'CurrentBody: higher LED count and irradiance. HigherDOSE: 132 diodes at a brand-stated 50 mW/cm² total (630 nm 26 + 830 nm 24), 10- or 20-minute sessions.' },
     { name: 'Neck coverage', winner: 'a', note: 'CurrentBody: integrated neck flap. HigherDOSE: face only, no neck.' },
-    { name: 'Wavelength coverage', winner: 'tie', note: 'Both use the standard red + near-infrared 830 nm pair (HigherDOSE red at 630 nm).' },
+    { name: 'Wavelength coverage', criterionId: 'wavelength-coverage', note: "Practically equal: both use the red + near-infrared 830 nm pair most used in skin studies (CurrentBody red 633 nm, HigherDOSE red 630 nm)." },
     { name: 'Brand ecosystem', winner: 'b', note: 'HigherDOSE: pairs with HigherDOSE PEMF mat, sauna blanket. CurrentBody: red-light specialist without broader recovery-hardware crossover.' },
     { name: 'Consumer market scale', winner: 'a', note: 'CurrentBody: largest red-light-mask customer base. HigherDOSE: smaller red-light footprint despite strong overall brand.' },
     { name: 'Price', winner: 'b', note: 'HigherDOSE: $349. CurrentBody: $470. HigherDOSE meaningfully cheaper.' },

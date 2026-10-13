@@ -20,7 +20,7 @@ const sunHomeVsClearlight: HeadToHeadInput = {
     { name: 'Heat output', winner: 'a', note: 'Sun Home Equinox reaches the highest temperatures in this bracket (~165°F). Clearlight typically tops out around 150–157°F.' },
     { name: 'Integrated red light / extras', winner: 'a', note: 'Sun Home bundles integrated red-light panels, chromotherapy and sound as standard. Clearlight keeps a cleaner, more traditional package.' },
     { name: 'Warranty & brand backing', winner: 'b', note: 'Clearlight is Jacuzzi-backed with a strong warranty and a long track record — the reassurance premium buyers pay for.' },
-    { name: 'EMF', winner: 'a', note: 'Sun Home documents third-party-verified low EMF. Clearlight markets the Sanctuary 2 as low EMF/ELF but we found no published third-party figures — ask for the current test report.' },
+    { name: 'EMF', criterionId: 'emf', note: "Practically equal: both are marketed as low EMF. Clearlight's figures are maker-stated; Sun Home cites third-party verification but publishes no measurement distance, so neither has an independent figure we can compare." },
     { name: 'Price', winner: 'a', note: 'Sun Home Equinox: from ~$6,000 (2-person). Clearlight Sanctuary 2: $7,299 basswood / $7,699 mahogany (official store, 2026-10-01). Sun Home is roughly $1,300 cheaper.' },
     { name: 'Full-spectrum quality', winner: 'tie', note: 'Both deliver genuine full-spectrum infrared; the day-to-day sauna experience is comparable.' },
   ],

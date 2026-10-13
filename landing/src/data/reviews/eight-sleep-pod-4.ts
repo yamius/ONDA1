@@ -5,7 +5,7 @@ const eightSleepPod4: ToolReviewInput = {
   name: 'Eight Sleep Pod 4',
   brand: 'Eight Sleep',
   category: 'sleep-climate',
-  productType: 'Premium smart sleep-climate cover + mattress system',
+  productType: 'Premium smart sleep-climate cover (fits an existing mattress; Eight Sleep mattress optional)',
   description:
     'ONDA review of the Eight Sleep Pod 4 — the premium dual-zone water-cooled sleep-climate system with built-in HRV tracking. Scored on climate range, build, app and value.',
   verdict:
@@ -14,9 +14,9 @@ const eightSleepPod4: ToolReviewInput = {
     'Eight Sleep Pod 4 is the smart sleep-climate system that defined the category. Dual-zone water-cooled cover with active heating and cooling (13–43°C), built-in HRV and sleep tracking, autopilot climate adjustment based on estimated sleep stage. The hardware is excellent; the subscription model is the editorial point of contention — full features require ongoing Eight Sleep Autopilot membership.',
   scores: [
     { criterionId: 'climate-range', score: 9.5, note: 'Best-in-class dual-zone range (13–43°C), strong recovery time, holds target through wide ambient swings. Autopilot adjusts overnight based on estimated sleep stage.' },
-    { criterionId: 'build', score: 8.5, note: 'Premium cover construction over Eight Sleep mattress. Hub size moderate. 2-year warranty. Multi-year reliability track record largely positive.' },
+    { criterionId: 'build', score: 8.5, note: 'Premium cover construction; fits an existing mattress 10–16 in thick (per Tom\'s Guide). Hub size moderate. 2-year warranty. Multi-year reliability track record largely positive.' },
     { criterionId: 'app-tracking', score: 9.0, note: 'Best sleep/HRV tracking integrated into a climate system. Sleep-stage estimates, HRV trends, snore detection. Apple Health integration.' },
-    { criterionId: 'form-factor', score: 7.5, note: 'Cover + mattress system. Dual-zone (his/her temperature) is unique in the category. Hub requires nightstand space.' },
+    { criterionId: 'form-factor', score: 8.5, note: 'A cover that fits over your existing mattress like a fitted sheet; an Eight Sleep mattress was optional. Dual-zone (his/her temperature). The hub (about 16 × 7 × 17 in) needs floor space next to the bed. Eight Sleep\'s own Pod 4 page has been removed; configuration per Tom\'s Guide (secondary source).' },
     { criterionId: 'subscription', score: 5.0, note: 'Autopilot subscription required for full features (~$15-25/month). The biggest editorial criticism — premium hardware locked behind ongoing membership.' },
     { criterionId: 'value', score: 5.5, note: '$3,000-5,000 hardware + ongoing subscription. Premium tier; the subscription stretches 3-year cost.' },
   ],
@@ -65,6 +65,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
 `,
   references: [
     { label: 'Eight Sleep Pod — official site', url: 'https://www.eightsleep.com/' },
+    { label: "Tom's Guide — Eight Sleep Pod 4 mattress cover review (secondary source; Eight Sleep's Pod 4 page has been removed), accessed 2026-10-13", url: 'https://www.tomsguide.com/wellness/mattress/eight-sleep-pod-4-mattress-cover-review' },
   ],
   relatedSlugs: ['eight-sleep-pod-5', 'chilipad-cube', 'eight-sleep-pod-cover-pro', 'chilipad-dock-pro', 'bedjet-3'],
   publishOn: '2026-06-15',

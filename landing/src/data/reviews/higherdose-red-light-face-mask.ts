@@ -14,7 +14,7 @@ const higherDoseFaceMask: ToolReviewInput = {
     'HigherDOSE Red Light Face Mask is the consumer-brand reference — simple controller UX (no app), flexible silicone, 132 diodes, red 630 nm + near-infrared 830 nm at a brand-stated 50 mW/cm², 10- or 20-minute sessions, $349 pricing. Brand crossover from HigherDOSE PEMF mat and sauna blanket. Light clinical-evidence base; the thesis is consumer-friendliness and brand ecosystem rather than dermatology depth.',
   scores: [
     { criterionId: 'irradiance', score: 7.0, note: 'HigherDOSE states 50 mW/cm² total (630 nm 26 + 830 nm 24 mW/cm²) — the brand’s figures, not independently measured.' },
-    { criterionId: 'wavelength-coverage', score: 7.5, note: 'Red 630 nm + near-infrared 830 nm — the standard clinical pair. No blue / amber variants.' },
+    { criterionId: 'wavelength-coverage', score: 8.5, note: 'Red 630 nm + near-infrared 830 nm — the standard clinical pair. No blue / amber variants.' },
     { criterionId: 'led-count-coverage', score: 7.5, note: '66 dual-core LEDs (132 diodes) across face. No neck flap on standard model.' },
     { criterionId: 'clinical-evidence', score: 6.0, note: 'FDA-cleared for full-face wrinkles (510(k) K241933, 2024; the clearance summary says clinical testing was not needed). Light clinical evidence base; brand-funded research without peer-reviewed depth.' },
     { criterionId: 'comfort-fit', score: 8.5, note: 'Flexible silicone comparable to Omnilux / CurrentBody comfort. Lighter than Lumara Viso.' },

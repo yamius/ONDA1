@@ -95,16 +95,9 @@ export function axisCriterion(axisName: string, category: string): string | unde
  *  Remove a line once the owner has decided (fix the text/winner or the scores). */
 export const AWARD_REVIEW_PENDING = new Set<string>([
   // winner changes — EN notes sent to the owner, waiting for OK (089 follow-up)
-  'duel neurosity-crown-vs-emotiv-insight-2 › Comfort',
-  'duel sun-home-equinox-vs-clearlight-sanctuary-2 › EMF',
-  'duel eight-sleep-pod-4-vs-eight-sleep-pod-cover-pro › Form factor',
-  'duel eight-sleep-pod-3-vs-eight-sleep-pod-cover-pro › Form factor',
   // criterion score itself to re-check (089_awards_table.md) — winner not recomputed until then
-  'duel mito-red-mitopro-1500-vs-hooga-hg500 › Irradiance',
-  'duel plunge-vs-edge-tub › Water management',
   'duel omnilux-contour-face-vs-currentbody-series-2 › Clinical evidence',
   'duel omnilux-contour-face-vs-dr-dennis-gross-spectralite › Clinical evidence',
-  'duel currentbody-series-2-vs-higherdose-red-light-face-mask › Wavelength coverage',
   'duel theraface-mask-vs-higherdose-red-light-face-mask › Clinical evidence',
   'duel lightstim-for-wrinkles-vs-solawave-wand-4-in-1 › Clinical evidence',
   'duel omnilux-contour-face-vs-currentbody-series-2-vs-dr-dennis-gross-spectralite › Clinical evidence',

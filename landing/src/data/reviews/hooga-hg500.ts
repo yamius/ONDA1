@@ -13,7 +13,7 @@ const hoogaHg500: ToolReviewInput = {
   summary:
     'The Hooga HG500 is the panel that turned consumer red-light therapy into a sub-$400 category. Two-wavelength coverage (660 + 850 nm), 100 5W LEDs, independently-tested irradiance close to claimed figures, EMF measurements in the same range as panels three times the price. The trade is hardware refinement — less polished aluminium, no exotic wavelengths, smaller community than Joovv or Mito Red — but on the criteria that matter (irradiance, EMF, wavelengths) it punches well above its price tier.',
   scores: [
-    { criterionId: 'irradiance', score: 8.0, note: 'Hooga now states 94 mW/cm² at 6" on the official product page (checked 2026-10-01). Earlier independent meter readings tracked the stated figures closely — honest specs at the price.' },
+    { criterionId: 'irradiance', score: 8.0, note: 'Maker-stated: Hooga now states 94 mW/cm² at 6" on the official product page (checked 2026-10-01). No independent measurement of this figure yet; earlier independent meter readings tracked the earlier stated figures closely — honest specs at the price.' },
     { criterionId: 'wavelengths', score: 7.0, note: 'Two wavelengths (660 + 850 nm) — the basic biohacker default. No 630, 810, 830 or 940 nm.' },
     { criterionId: 'build-emf-flicker', score: 7.5, note: 'EMF <0.5 mG at 6", flicker rate disclosed and low. Build is competent — aluminium back, plastic front trim; 3-year warranty and 60-day returns.' },
     { criterionId: 'coverage', score: 7.5, note: 'Half-body coverage in a single panel. Stand and door-mount hardware included.' },

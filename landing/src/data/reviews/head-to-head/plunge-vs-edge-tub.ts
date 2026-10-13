@@ -18,7 +18,7 @@ const plungeVsEdge: HeadToHeadInput = {
   axes: [
     { name: 'Chiller capacity', criterionId: 'chiller-capacity', note: 'Plunge: 1 HP, recovers fast even in summer heat. Edge: capable but lower-power chiller, slower recovery in peak heat.' },
     { name: 'Build longevity', winner: 'a', note: 'Plunge has 5+ years of consumer reliability data. Edge is newer; multi-year reliability still being established.' },
-    { name: 'Water management', winner: 'tie', note: 'Both ship ozone sanitation with comparable water-change frequency (2–4 weeks).' },
+    { name: 'Water management', criterionId: 'water-management', note: "Practically equal: both use ozone sanitation plus a filter. Stated water-change interval: The Plunge every 2–4 weeks, Edge Tub every 3–4 weeks under typical use." },
     { name: 'Form factor', criterionId: 'form-factor', note: 'Comparable footprint and install requirements; both indoor/outdoor rated.' },
     { name: 'Warranty', winner: 'a', note: 'Plunge: 3-year. Edge: 2-year. Plunge wins on coverage period.' },
     { name: 'Brand and protocol content', winner: 'a', note: 'Plunge has founder presence and richer content library. Edge is more product-focused.' },

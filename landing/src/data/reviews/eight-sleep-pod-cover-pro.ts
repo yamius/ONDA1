@@ -16,18 +16,18 @@ const eightSleepPodCoverPro: ToolReviewInput = {
     { criterionId: 'climate-range', score: 9.5, note: 'Same dual-zone range as Pod 4 system — 13–43°C with Autopilot adjustment.' },
     { criterionId: 'build', score: 8.0, note: 'Premium cover. Compatible with most mattresses up to ~14 inch thickness. 2-year warranty.' },
     { criterionId: 'app-tracking', score: 9.0, note: 'Full HRV and sleep tracking — identical to Pod 4 system.' },
-    { criterionId: 'form-factor', score: 8.5, note: 'Cover-only fits existing mattress — flexibility advantage over Pod 4 full system. Dual-zone preserved.' },
+    { criterionId: 'form-factor', score: 8.5, note: 'Cover-only, fits an existing mattress — the same approach as the Pod 4 cover. Dual-zone preserved.' },
     { criterionId: 'subscription', score: 5.0, note: 'Same Autopilot subscription requirement as Pod 4.' },
-    { criterionId: 'value', score: 6.5, note: '$2,000-2,500 — meaningfully cheaper than Pod 4 full system. Best entry into Eight Sleep if mattress replacement is not wanted.' },
+    { criterionId: 'value', score: 6.5, note: '$2,000-2,500 — cheaper than the Pod 4 cover (from $2,449, per Tom\'s Guide). Best entry into Eight Sleep if mattress replacement is not wanted.' },
   ],
   pros: [
-    'Same dual-zone climate and tracking as Pod 4 full system',
+    'Same dual-zone climate and tracking approach as the Pod 4 cover',
     'Fits existing mattress — no mattress replacement required',
     'Cheaper entry into Eight Sleep ecosystem',
     'Dual-zone (his/her) temperature preserved',
   ],
   cons: [
-    'Same subscription requirement as Pod 4 full system',
+    'Same subscription requirement as the Pod 4',
     'Mattress thickness limitations (up to ~14 inches)',
     'Heavier cover changes mattress feel slightly',
     'Still expensive — $2,000+ for the cover alone',
@@ -62,6 +62,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
 - [Ancestral sync and circadian anchors](/articles/ancestral-sync-circadian-anchors) — why nocturnal cooling matches the ancestral baseline
 `,
   references: [
+    { label: "Tom's Guide — Eight Sleep Pod 4 mattress cover review (Pod 4 price and fit), accessed 2026-10-13", url: 'https://www.tomsguide.com/wellness/mattress/eight-sleep-pod-4-mattress-cover-review' },
     { label: 'Eight Sleep Pod Cover — official', url: 'https://www.eightsleep.com/pod-cover/' },
   ],
   relatedSlugs: ['eight-sleep-pod-4', 'chilipad-dock-pro', 'bedjet-3'],

@@ -6,9 +6,9 @@ const pod3VsCoverPro: HeadToHeadInput = {
   productBSlug: 'eight-sleep-pod-cover-pro',
   title: 'Eight Sleep Pod 3 vs Pod Cover Pro (2026)',
   description:
-    'Eight Sleep Pod 3 vs Pod Cover Pro — previous-gen full system at clearance pricing vs current-gen cover for your existing mattress. ONDA breaks down which Eight Sleep entry tier is the rational buy.',
+    'Eight Sleep Pod 3 vs Pod Cover Pro — previous-gen cover at clearance pricing vs current-gen cover, both for your existing mattress. ONDA breaks down which Eight Sleep entry tier is the rational buy.',
   intro:
-    'Both are the value entry points into the Eight Sleep ecosystem. Pod 3 is the previous-gen full mattress system, still in inventory at meaningfully reduced pricing; Pod Cover Pro is the current-gen cover-only product that installs on your existing mattress.',
+    'Both are the value entry points into the Eight Sleep ecosystem. Pod 3 is the previous-gen cover, still in inventory at meaningfully reduced pricing; Pod Cover Pro is the current-gen cover-only product that installs on your existing mattress.',
   jobDependentVerdict: true,
   verdict:
     'Mattress status decides again. Pod 3 if you\'re replacing your mattress and the inventory discount is deep enough. Pod Cover Pro if you have a mattress you like and want the current-gen tracking/climate on it.',
@@ -20,7 +20,7 @@ const pod3VsCoverPro: HeadToHeadInput = {
     { name: 'Climate range', criterionId: 'climate-range', note: 'Pod 4-platform Cover Pro: current-gen wider climate range. Pod 3: narrower range, older chiller generation.' },
     { name: 'Tracking', winner: 'b', note: 'Cover Pro: current Pod 4-generation sensors and Autopilot. Pod 3: previous-gen sensors, same Eight Sleep app and subscription. Tracking quality close but Cover Pro leads.' },
     { name: 'Subscription', criterionId: 'subscription', note: 'Both require the same Eight Sleep Autopilot subscription for full features. Neither escapes the membership model.' },
-    { name: 'Form factor', winner: 'a', note: 'Pod 3: integrated mattress system, single coordinated build. Cover Pro: layer-on-existing approach.' },
+    { name: 'Form factor', criterionId: 'form-factor', note: "Practically equal: both are dual-zone covers that fit your existing mattress, with a hub next to the bed." },
     { name: 'Mattress flexibility', winner: 'b', note: 'Cover Pro installs on any mattress and transfers to your next bed. Pod 3 locks you into the Eight Sleep mattress.' },
     { name: 'Price', winner: 'a', note: 'Pod 3 inventory pricing: deeply discounted from original (~$2,000-2,800 depending on stock). Cover Pro: ~$2,200. Pod 3 marginally cheaper if you find the inventory discount.' },
   ],
@@ -44,7 +44,7 @@ const pod3VsCoverPro: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Same Eight Sleep ecosystem, same subscription. Pod 3 is the previous-gen full mattress system at clearance pricing; Cover Pro is the current-gen cover on your existing mattress.
+Same Eight Sleep ecosystem, same subscription. Pod 3 is the previous-gen cover at clearance pricing; Cover Pro is the current-gen cover on your existing mattress.
 
 ## When is Pod 3 the right pick?
 

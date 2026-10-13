@@ -18,7 +18,7 @@ const mitoRedVsHooga: HeadToHeadInput = {
     'Choose Hooga HG500 if you want verified two-wavelength specs at the lowest legitimate price — most biohacker use cases are covered.',
   axes: [
     { name: 'Wavelength coverage', criterionId: 'wavelengths', note: 'MitoPRO 1500X: six wavelengths (590 + 630 + 660 + 810 + 830 + 850 nm). Hooga: two (660 + 850 nm). MitoPRO wins decisively on spectrum.' },
-    { name: 'Irradiance', winner: 'tie', note: 'MitoPRO: ~70 mW/cm² at 6" (verified). Hooga now states 94 mW/cm² at 6" on its official page (checked 2026-10-01); earlier independent readings tracked Hooga’s stated figures closely. Both deliver a working dose at 6"; MitoPRO’s advantage is spectrum and panel area, not raw irradiance.' },
+    { name: 'Irradiance', criterionId: 'irradiance', note: "Mito Red leads: about 70 mW/cm² at 6 inches, confirmed within 10% by independent measurement. Hooga's 94 mW/cm² at 6 inches is maker-stated (official product page, checked 2026-10-01) with no independent measurement of that figure yet." },
     { name: 'Panel size / coverage', winner: 'a', note: 'MitoPRO 1500X: large 43 × 10 in half-body panel. Hooga HG500: smaller half-body. MitoPRO is the bigger panel.' },
     { name: 'EMF / flicker', winner: 'tie', note: 'Both: EMF <0.5 mG at 6", flicker rates disclosed. Effectively tied.' },
     { name: 'Build quality', winner: 'a', note: 'MitoPRO: aluminium back with glass front. Hooga: aluminium back with plastic front trim. MitoPRO is more premium.' },

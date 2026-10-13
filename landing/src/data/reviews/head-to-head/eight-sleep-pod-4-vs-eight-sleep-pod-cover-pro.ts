@@ -6,32 +6,32 @@ const pod4VsCoverPro: HeadToHeadInput = {
   productBSlug: 'eight-sleep-pod-cover-pro',
   title: 'Eight Sleep Pod 4 vs Pod Cover Pro (2026)',
   description:
-    'Eight Sleep Pod 4 vs Pod Cover Pro — should you buy the full mattress system or just the cover for your existing mattress? ONDA breaks down the price gap, feature parity, and who each tier is for.',
+    'Eight Sleep Pod 4 vs Pod Cover Pro — two smart covers for your existing mattress. ONDA breaks down the price gap, feature parity and who each one is for.',
   intro:
-    'Both share the same Eight Sleep climate hardware, Autopilot software, integrated HRV tracking and subscription model. The difference is form factor — Pod 4 is the full mattress system, Pod Cover Pro installs the same intelligence on your existing mattress at meaningfully lower price.',
+    'Both share the same Eight Sleep climate hardware, Autopilot software, integrated HRV tracking and subscription model. Both are covers that fit your existing mattress (the Pod 4 was sold as a cover, with an Eight Sleep mattress optional — per Tom\'s Guide; Eight Sleep\'s own Pod 4 page has been removed). The main difference is price.',
   jobDependentVerdict: true,
   verdict:
-    'Mattress status decides. Pod 4 if you\'re replacing your mattress anyway and want the integrated build. Pod Cover Pro if you have a mattress you like and want the climate + tracking on it for ~40% less.',
+    'Price decides. Both are covers for the mattress you already have, with the same climate approach, tracking and subscription model; Pod Cover Pro costs less (about $2,200 vs from $2,449 for the Pod 4 cover, per Tom\'s Guide).',
   bestForA:
-    'Choose Eight Sleep Pod 4 if you are replacing your mattress and want the full integrated system with the optimized cover-over-mattress fit.',
+    'Choose Eight Sleep Pod 4 if you find it at or below Cover Pro pricing, or want the optional Eight Sleep mattress bundle.',
   bestForB:
     'Choose Pod Cover Pro if you have a mattress you like and want Eight Sleep climate and tracking on it without buying a new bed.',
   axes: [
     { name: 'Climate range', criterionId: 'climate-range', note: 'Identical hardware — same dual-zone water cooling/heating range and recovery. Pod 4 may have marginally better fit on the matched mattress; not user-distinguishable.' },
     { name: 'Tracking', winner: 'tie', note: 'Same Autopilot, same HRV, same sleep-stage detection. Software is identical across both products.' },
     { name: 'Subscription', criterionId: 'subscription', note: 'Same Autopilot subscription required for full features on both. Neither escapes the membership model.' },
-    { name: 'Form factor', winner: 'a', note: 'Pod 4: integrated mattress system — single coordinated build. Pod Cover Pro: layer on top of existing mattress, slightly more bulk.' },
-    { name: 'Price', winner: 'b', note: 'Pod 4 full system: ~$3,500-5,000. Pod Cover Pro: ~$2,200. Cover Pro is ~40% cheaper for identical climate and tracking.' },
-    { name: 'Mattress flexibility', winner: 'b', note: 'Pod Cover Pro installs on any mattress you already own or buy later. Pod 4 locks you into the Eight Sleep mattress.' },
+    { name: 'Form factor', criterionId: 'form-factor', note: "Practically equal: both are covers that fit your existing mattress, with dual zones and a hub next to the bed; the Pod 4 could also be bought with an optional Eight Sleep mattress." },
+    { name: 'Price', winner: 'b', note: 'Pod 4 cover: from $2,449 (per Tom\'s Guide). Pod Cover Pro: about $2,200. Cover Pro is cheaper.' },
+    { name: 'Mattress flexibility', winner: 'tie', note: 'Both install on a mattress you already own (Pod 4: 10–16 in thick, per Tom\'s Guide); the Eight Sleep mattress was optional for the Pod 4.' },
   ],
   faq: [
     {
       q: 'Pod 4 or Pod Cover Pro — which should I buy?',
-      a: 'If you are replacing your mattress anyway, Pod 4. If you have a mattress you like and want Eight Sleep on top, Pod Cover Pro — same climate, same tracking, ~40% cheaper.',
+      a: 'Both are covers for your existing mattress. Pod Cover Pro if price decides (about $2,200 vs from $2,449); Pod 4 if you find it at a similar price or want the optional Eight Sleep mattress bundle.',
     },
     {
       q: 'Is the climate hardware actually identical?',
-      a: 'Yes — same dual-zone water cooling/heating, same chiller, same temperature range. The Pod 4 fit on the Eight Sleep mattress is marginally tighter but not user-distinguishable in temperature performance.',
+      a: 'Yes — same dual-zone water cooling/heating, same chiller, same temperature range. Both sit on your own mattress, so fit depends on that mattress, not on the cover.',
     },
     {
       q: 'Do both require the subscription?',
@@ -39,20 +39,20 @@ const pod4VsCoverPro: HeadToHeadInput = {
     },
     {
       q: 'Can I switch mattresses later with Pod Cover Pro?',
-      a: 'Yes — Pod Cover Pro is just the cover layer, transferrable to any standard mattress. Pod 4 is the full system; switching mattresses means buying a new Eight Sleep mattress.',
+      a: 'Yes — both are cover layers that move to another standard mattress (Pod 4: 10–16 in thick, per Tom\'s Guide).',
     },
   ],
   content: `## The short version
 
-Same climate hardware, same tracking, same subscription. The only meaningful differences are form factor (integrated system vs cover-on-existing-mattress) and price (~$3,500-5,000 vs ~$2,200).
+Same climate hardware, same tracking, same subscription. Both are covers for your existing mattress; the meaningful difference is price (from $2,449 vs about $2,200).
 
 ## When is Pod 4 the right pick?
 
-If you are replacing your mattress in 2026 anyway, the integrated Pod 4 system delivers the cleanest fit and a coordinated multi-year build. Pay the premium for the unified product.
+If you find it at or below Cover Pro pricing, or you want the optional Eight Sleep mattress bundle.
 
 ## When is Pod Cover Pro the right pick?
 
-If you have a mattress you like and you want Eight Sleep climate and tracking on it — Cover Pro is the rational choice. Same software, same climate range, ~40% cheaper, and transferrable to your next mattress.`,
+If you have a mattress you like and you want Eight Sleep climate and tracking on it — Cover Pro is the rational choice. Same approach to climate and tracking, a lower price, and transferrable to your next mattress.`,
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-06-15',
   datePublished: '2026-05-27',

@@ -16,7 +16,7 @@ const eightSleepPod3: ToolReviewInput = {
     { criterionId: 'climate-range', score: 8.5, note: 'Solid dual-zone range; slightly less aggressive than Pod 4 in peak summer heat. Same Autopilot framework.' },
     { criterionId: 'build', score: 8.0, note: 'Pod 3 cover and hub. Discontinued for new production but still sold from inventory. 2-year warranty if bought new.' },
     { criterionId: 'app-tracking', score: 8.5, note: 'Same Eight Sleep app and tracking as Pod 4. HRV and sleep-stage tracking identical.' },
-    { criterionId: 'form-factor', score: 7.5, note: 'Cover form with dual zone — same as Pod Cover Pro.' },
+    { criterionId: 'form-factor', score: 8.5, note: 'Cover form with dual zone — same as Pod Cover Pro.' },
     { criterionId: 'subscription', score: 5.0, note: 'Same Autopilot subscription requirement as Pod 4.' },
     { criterionId: 'value', score: 7.0, note: '$1,500-2,000 discounted vs Pod 4 $3,000-4,000 — strong value tier when available.' },
   ],
