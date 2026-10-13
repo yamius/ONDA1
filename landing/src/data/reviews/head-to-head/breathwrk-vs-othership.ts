@@ -18,7 +18,7 @@ const breathwrkVsOthership: HeadToHeadInput = {
     'Choose Othership if you want cinematic music-driven sessions with live community classes and you accept $129.99/year.',
   axes: [
     { name: 'Library size', winner: 'b', note: 'Othership: 500+ on-demand sessions. Breathwrk: 50+ exercises (100+ on Pro) plus daily classes and programs (official site and App Store, accessed 2026-10-11). Othership is larger.' },
-    { name: 'Technique coverage', winner: 'tie', note: 'Breathwrk: officially named techniques include box breathing, 4-7-8, humming and long-exhale patterns. Othership: leans into rhythmic, music-led sessions. Both score 7.5 on this axis.' },
+    { name: 'Technique coverage', winner: 'tie', note: 'Breathwrk: officially named techniques include box breathing, 4-7-8, humming and long-exhale patterns. Othership: leans into rhythmic, music-led sessions. Both score {{score:breathwrk.technique-coverage}} on this axis.' },
     { name: 'Evidence grounding', winner: 'b', note: 'Breathwrk’s App Store copy says the exercises improve HRV, heart rate and blood pressure without citing studies. Othership leans on experience and ceremony framing; it scores slightly higher (7.0 vs 6.5).' },
     { name: 'Production / UX', winner: 'b', note: 'Othership: cinematic visuals, immersive audio, live community classes. Breathwrk: clean functional UI with video classes.' },
     { name: 'Community', winner: 'b', note: 'Othership: live daily classes. Breathwrk: mostly solo practice.' },

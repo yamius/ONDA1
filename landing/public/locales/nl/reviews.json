@@ -112,11 +112,11 @@
       "faq": [
         {
           "q": "Hoeveel kost de Resona Health VIBE?",
-          "a": "De Resona Health VIBE kost $299 als losstaand draagbaar apparaat, zonder app of abonnement, met 1 jaar garantie en 30 dagen geld-terug-garantie. Dat is de beste prijs-kwaliteit in de PEMF-instapklasse, tegenover ongeveer $1,750 of meer voor matten voor het hele lichaam, en daarmee de meest laagdrempelige manier om PEMF te verkennen. ONDA geeft het een 8,5/10 voor prijs-kwaliteit."
+          "a": "De Resona Health VIBE kost $299 als losstaand draagbaar apparaat, zonder app of abonnement, met 1 jaar garantie en 30 dagen geld-terug-garantie. Dat is de beste prijs-kwaliteit in de PEMF-instapklasse, tegenover ongeveer $1,750 of meer voor matten voor het hele lichaam, en daarmee de meest laagdrempelige manier om PEMF te verkennen. ONDA geeft het een {{score:resona-health-vibe.value}}/10 voor prijs-kwaliteit."
         },
         {
           "q": "Wat doet de Resona Health VIBE?",
-          "a": "De Resona Health VIBE is een draagbaar PEMF-apparaat op zakformaat met 130+ ingebouwde protocollen (60 basis + 70 uitbreiding), bediend met één knop zonder app of abonnement. Het is ontworpen voor gericht, plaatselijk gebruik in plaats van sessies voor het hele lichaam, dus de veldintensiteit is bewust lager dan bij lichaamsmatten. ONDA geeft het in totaal een 7,0/10."
+          "a": "De Resona Health VIBE is een draagbaar PEMF-apparaat op zakformaat met 130+ ingebouwde protocollen (60 basis + 70 uitbreiding), bediend met één knop zonder app of abonnement. Het is ontworpen voor gericht, plaatselijk gebruik in plaats van sessies voor het hele lichaam, dus de veldintensiteit is bewust lager dan bij lichaamsmatten. ONDA geeft het in totaal een {{score:resona-health-vibe}}/10."
         },
         {
           "q": "Voor wie is de Resona Health VIBE het meest geschikt?",
@@ -220,7 +220,7 @@
       "faq": [
         {
           "q": "Hoe nauwkeurig is de Ultrahuman M1 CGM?",
-          "a": "Ultrahuman M1 gebruikt Abbott-sensoren: FreeStyle Libre buiten de VS en Abbott Lingo in de VS via M2 Live. Beide bieden 14 dagen draagtijd zonder kalibratie. Het scoort 8,5/10 op sensornauwkeurigheid, net als programma's met de Dexcom G7, omdat Libre 3 en Dexcom G7 in een onafhankelijke head-to-head-studie (Eichenlaub et al. 2025) vergelijkbaar nauwkeurig waren. De totale ONDA-score is 7,6/10."
+          "a": "Ultrahuman M1 gebruikt Abbott-sensoren: FreeStyle Libre buiten de VS en Abbott Lingo in de VS via M2 Live. Beide bieden 14 dagen draagtijd zonder kalibratie. Het scoort {{score:ultrahuman-m1.sensor-accuracy}}/10 op sensornauwkeurigheid, net als programma's met de Dexcom G7, omdat Libre 3 en Dexcom G7 in een onafhankelijke head-to-head-studie (Eichenlaub et al. 2025) vergelijkbaar nauwkeurig waren. De totale ONDA-score is {{score:ultrahuman-m1}}/10."
         },
         {
           "q": "Hoeveel kost Ultrahuman M1?",
@@ -276,7 +276,7 @@
       "faq": [
         {
           "q": "Hoe nauwkeurig meet de Oura Ring 4 HRV?",
-          "a": "Gedeeltelijk. Hij meet HRV de hele nacht continu aan de vinger, en in een onafhankelijke controle (nachtelijke opnames van 13 personen, Dial 2025) bleef zijn HRV dicht bij een ecg-referentie. De overeenstemming van slaapfasen is alleen getest op de Gen 3, in door Oura gefinancierde studies. Overdag is HRV bij beweging minder betrouwbaar. In de review van ONDA scoort hij 7,6/10."
+          "a": "Gedeeltelijk. Hij meet HRV de hele nacht continu aan de vinger, en in een onafhankelijke controle (nachtelijke opnames van 13 personen, Dial 2025) bleef zijn HRV dicht bij een ecg-referentie. De overeenstemming van slaapfasen is alleen getest op de Gen 3, in door Oura gefinancierde studies. Overdag is HRV bij beweging minder betrouwbaar. In de review van ONDA scoort hij {{score:oura-ring-4}}/10."
         },
         {
           "q": "Heeft de Oura Ring 4 een abonnement nodig?",
@@ -783,7 +783,7 @@
         },
         {
           "q": "Wat kost de PlatinumLED BIOMAX 600?",
-          "a": "De PlatinumLED BIOMAX 600 kost eenmalig $1,049 in de officiële Amerikaanse webshop (oktober 2026), standaard en bevestiging extra. Dat is duidelijk goedkoper dan de Joovv Solo 3.0 en MitoPRO 1500 bij vergelijkbare bouwkwaliteit en een breder spectrum. ONDA geeft hem in totaal 8,2/10."
+          "a": "De PlatinumLED BIOMAX 600 kost eenmalig $1,049 in de officiële Amerikaanse webshop (oktober 2026), standaard en bevestiging extra. Dat is duidelijk goedkoper dan de Joovv Solo 3.0 en MitoPRO 1500 bij vergelijkbare bouwkwaliteit en een breder spectrum. ONDA geeft hem in totaal {{score:platinumled-biomax-600}}/10."
         },
         {
           "q": "Welke golflengten heeft de PlatinumLED BIOMAX 600?",
@@ -959,7 +959,7 @@
       "faq": [
         {
           "q": "Wat doet de Healthy Wave Multi-Wave PEMF-mat?",
-          "a": "De Healthy Wave Multi-Wave combineert PEMF, verre-infraroodwarmte, rood licht, negatieve ionen en verwarmde kristallen in één mat voor het hele lichaam. De controller biedt 1-30 Hz, drie pulsbreedtes (zes golfvormen), 12 voorinstellingen of eigen programma's. ONDA geeft hem in totaal 8,2/10."
+          "a": "De Healthy Wave Multi-Wave combineert PEMF, verre-infraroodwarmte, rood licht, negatieve ionen en verwarmde kristallen in één mat voor het hele lichaam. De controller biedt 1-30 Hz, drie pulsbreedtes (zes golfvormen), 12 voorinstellingen of eigen programma's. ONDA geeft hem in totaal {{score:healthy-wave-multi-wave}}/10."
         },
         {
           "q": "Hoeveel kost de Healthy Wave Multi-Wave-mat?",
@@ -1014,11 +1014,11 @@
       "faq": [
         {
           "q": "Wat doet Prana Breath?",
-          "a": "Prana Breath is een aanpasbare app voor ademwerk op basis van patronen, met volledige controle over de timing van inademen, vasthouden, uitademen en vasthouden in elk patroon. De app heeft een brede bibliotheek met kant-en-klare patronen, waaronder boxademhaling, 4-7-8, Wim Hof en pranayama, en is Android-first. ONDA geeft hem 6,7/10."
+          "a": "Prana Breath is een aanpasbare app voor ademwerk op basis van patronen, met volledige controle over de timing van inademen, vasthouden, uitademen en vasthouden in elk patroon. De app heeft een brede bibliotheek met kant-en-klare patronen, waaronder boxademhaling, 4-7-8, Wim Hof en pranayama, en is Android-first. ONDA geeft hem {{score:prana-breath}}/10."
         },
         {
           "q": "Hoeveel kost Prana Breath?",
-          "a": "Prana Breath is grotendeels gratis, met een uitgebreide gratis versie en een eenmalige premium-ontgrendeling van ongeveer $10. Er is geen terugkerend abonnement. Daarmee is het de sterkste instap qua prijs-kwaliteit in aanpasbaar ademwerk, met 8,0/10 voor prijs-kwaliteit in de beoordeling van ONDA."
+          "a": "Prana Breath is grotendeels gratis, met een uitgebreide gratis versie en een eenmalige premium-ontgrendeling van ongeveer $10. Er is geen terugkerend abonnement. Daarmee is het de sterkste instap qua prijs-kwaliteit in aanpasbaar ademwerk, met {{score:prana-breath.value}}/10 voor prijs-kwaliteit in de beoordeling van ONDA."
         },
         {
           "q": "Voor wie is Prana Breath het meest geschikt?",
@@ -1423,11 +1423,11 @@
         },
         {
           "q": "Is de Ultrahuman Ring Air betrouwbaar?",
-          "a": "Bij de Ultrahuman Ring Air hoort een echt voorbehoud over betrouwbaarheid: tot en met 2026 meldden reviewers en eigenaren vaak dat accu's binnen enkele maanden achteruitgingen of uitvielen. Daarom scoort hij maar 5,5/10 op draagbaarheid en accu, wat de waarde bij ongeveer $349 drukt, ondanks sterke slaaptracking en continue HRV."
+          "a": "Bij de Ultrahuman Ring Air hoort een echt voorbehoud over betrouwbaarheid: tot en met 2026 meldden reviewers en eigenaren vaak dat accu's binnen enkele maanden achteruitgingen of uitvielen. Daarom scoort hij maar {{score:ultrahuman-ring-air.wearability}}/10 op draagbaarheid en accu, wat de waarde bij ongeveer $349 drukt, ondanks sterke slaaptracking en continue HRV."
         },
         {
           "q": "Is de Ultrahuman Ring Air het waard?",
-          "a": "De Ultrahuman Ring Air scoort 6,9/10 en doet de basis goed: vederlicht, geen abonnement met levenslang toegang tot je data, continue HRV en sterke slaaptracking. Maar de meldingen over accubetrouwbaarheid verzwakken het verhaal bij ongeveer $349. Is betrouwbaarheid op lange termijn een must, dan zijn de Oura Ring 4 of de RingConn Gen 2 veiligere keuzes."
+          "a": "De Ultrahuman Ring Air scoort {{score:ultrahuman-ring-air}}/10 en doet de basis goed: vederlicht, geen abonnement met levenslang toegang tot je data, continue HRV en sterke slaaptracking. Maar de meldingen over accubetrouwbaarheid verzwakken het verhaal bij ongeveer $349. Is betrouwbaarheid op lange termijn een must, dan zijn de Oura Ring 4 of de RingConn Gen 2 veiligere keuzes."
         },
         {
           "q": "Is de Ultrahuman Ring Air in 2026 nog te koop in de VS?",
@@ -1474,7 +1474,7 @@
       "faq": [
         {
           "q": "Wat zit er bij Penguin Chillers, en krijg je er een bad bij?",
-          "a": "Nee, de koelers worden zonder bad geleverd. Je combineert de koeler met je eigen drinkbak, kunststof bad of hergebruikte badkuip en regelt filtratie, desinfectie en leidingen zelf. De Cold Therapy Chiller heeft een ingebouwde pomp en snelkoppelingen. Penguin verkoopt inmiddels ook los complete ijsbadsystemen. ONDA geeft de route met alleen de koeler een 7,4/10."
+          "a": "Nee, de koelers worden zonder bad geleverd. Je combineert de koeler met je eigen drinkbak, kunststof bad of hergebruikte badkuip en regelt filtratie, desinfectie en leidingen zelf. De Cold Therapy Chiller heeft een ingebouwde pomp en snelkoppelingen. Penguin verkoopt inmiddels ook los complete ijsbadsystemen. ONDA geeft de route met alleen de koeler een {{score:penguin-chillers}}/10."
         },
         {
           "q": "Wat kost een ijsbad met een Penguin Chiller?",
@@ -1537,7 +1537,7 @@
         },
         {
           "q": "Voor wie is de Clearlight Sanctuary 2 het meest geschikt?",
-          "a": "De Sanctuary 2 is het meest geschikt voor kopers die full-spectrum infrarood op Sunlighten-niveau willen, met het merk Jacuzzi erachter en levenslange garantie, in een compacte 2-persoonscabine. Hij past bij mensen die bouwkwaliteit en een EMF-/ELF-arm ontwerp belangrijker vinden dan programmeerbare sturing per golflengte. ONDA geeft hem in totaal 7,4/10."
+          "a": "De Sanctuary 2 is het meest geschikt voor kopers die full-spectrum infrarood op Sunlighten-niveau willen, met het merk Jacuzzi erachter en levenslange garantie, in een compacte 2-persoonscabine. Hij past bij mensen die bouwkwaliteit en een EMF-/ELF-arm ontwerp belangrijker vinden dan programmeerbare sturing per golflengte. ONDA geeft hem in totaal {{score:clearlight-sanctuary-2}}/10."
         },
         {
           "q": "Hoe groot is de Clearlight Sanctuary 2?",
@@ -1582,7 +1582,7 @@
         "Bediening voor behandelaars, geen consumentenapp"
       ],
       "scoreNotes": {
-        "field-strength": "Hoogintensieve output via lusspoel, ontworpen voor klinische en paardenprotocollen — ver boven consumentenmatten. De Semi 10 zit op vermogensniveau 5 van 10 in MagnaWaves eigen reeks.",
+        "field-strength": "Hoogintensieve output via lusspoel, ontworpen voor klinische en paardenprotocollen — ver boven consumentenmatten. De Semi 10 zit op vermogensniveau {{literal:5 van 10}} in MagnaWaves eigen reeks.",
         "waveform-evidence": "PEMF heeft bescheiden bewijs bij pijn aan het bewegingsapparaat (systematische reviews). MagnaWaves eigen uitkomstdata bij mensen zijn niet gepubliceerd; veel van het gebruik betreft paarden. De vermeldingen ‘klinisch onderzoek’ en ‘FDA-goedkeuring’ gaan over PEMF in het algemeen (zoals botgroeistimulatoren), niet over MagnaWave-apparaten.",
         "build": "Robuuste bouw voor behandelaars in een draagkoffer; 10 jaar garantie op de Semi 10. Decennialange MagnaWave-ervaring met PEMF bij paarden en in de sport.",
         "programmability": "Intensiteit 1–10 in halve stappen, timer van 1–60 minuten, pulsbereik van 0,7–20 Hz en een Schumann-stand. Bediening voor behandelaars, niet via een app.",
@@ -1871,11 +1871,11 @@
       "faq": [
         {
           "q": "Wat doet de Kineon Move+?",
-          "a": "De Kineon Move+ Pro is een draadloze band met drie modules die elk acht rode 660-nm-leds combineren met tien 808-nm-nabij-infraroodlasers van klasse 1. Hij geeft fotobiomodulatie met huidcontact aan één gewricht – knie, schouder, elleboog. ONDA geeft hem in totaal 7,1/10."
+          "a": "De Kineon Move+ Pro is een draadloze band met drie modules die elk acht rode 660-nm-leds combineren met tien 808-nm-nabij-infraroodlasers van klasse 1. Hij geeft fotobiomodulatie met huidcontact aan één gewricht – knie, schouder, elleboog. ONDA geeft hem in totaal {{score:kineon-move-plus}}/10."
         },
         {
           "q": "Wat kost de Kineon Move+?",
-          "a": "De Kineon Move+ Pro kost $499 in de officiële winkel (adviesprijs $699), met 30 dagen proefperiode, 1 jaar garantie en HSA/FSA-geschiktheid. Dat is eerlijk voor een gericht laserapparaat, maar slechte waarde als je eigenlijk een paneel voor het hele lichaam wilde. ONDA geeft 8,0/10 voor prijs-kwaliteit."
+          "a": "De Kineon Move+ Pro kost $499 in de officiële winkel (adviesprijs $699), met 30 dagen proefperiode, 1 jaar garantie en HSA/FSA-geschiktheid. Dat is eerlijk voor een gericht laserapparaat, maar slechte waarde als je eigenlijk een paneel voor het hele lichaam wilde. ONDA geeft {{score:kineon-move-plus.value}}/10 voor prijs-kwaliteit."
         },
         {
           "q": "Voor wie is de Kineon Move+ het meest geschikt?",
@@ -1978,11 +1978,11 @@
       "faq": [
         {
           "q": "Werkt Breathe2Relax echt?",
-          "a": "De buikademhaling die hij aanleert is goed gedocumenteerd, maar onderzoek naar de app zelf beperkt zich tot kleine pilotstudies, zoals een ongecontroleerde pilot met 31 militairen waarin hij werd gecombineerd met yoga; er is geen gerandomiseerde studie naar de app. Hij is gebouwd door het US National Center for Telehealth & Technology voor de aanpak van PTSS en gevechtsstress bij veteranen. Hij scoort 7,0/10 op wetenschappelijke onderbouwing en 5,9/10 in totaal."
+          "a": "De buikademhaling die hij aanleert is goed gedocumenteerd, maar onderzoek naar de app zelf beperkt zich tot kleine pilotstudies, zoals een ongecontroleerde pilot met 31 militairen waarin hij werd gecombineerd met yoga; er is geen gerandomiseerde studie naar de app. Hij is gebouwd door het US National Center for Telehealth & Technology voor de aanpak van PTSS en gevechtsstress bij veteranen. Hij scoort {{score:breathe-to-relax.evidence-grounding}}/10 op wetenschappelijke onderbouwing en {{score:breathe-to-relax}}/10 in totaal."
         },
         {
           "q": "Hoeveel kost Breathe2Relax?",
-          "a": "Breathe2Relax is volledig gratis, zonder premiumversie, abonnement of advertenties. Hij scoort 9,5/10 op prijs-kwaliteit in de beoordeling van ONDA, de best mogelijke prijs. Het compromis is een gedateerde interface en een smalle reikwijdte, beperkt tot buikademhaling en ademhaling in een vast tempo."
+          "a": "Breathe2Relax is volledig gratis, zonder premiumversie, abonnement of advertenties. Hij scoort {{score:breathe-to-relax.value}}/10 op prijs-kwaliteit in de beoordeling van ONDA, de best mogelijke prijs. Het compromis is een gedateerde interface en een smalle reikwijdte, beperkt tot buikademhaling en ademhaling in een vast tempo."
         },
         {
           "q": "Voor wie is Breathe2Relax het meest geschikt?",

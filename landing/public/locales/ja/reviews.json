@@ -3395,7 +3395,7 @@
         "新しいセンサーの独立検証はまだない。Eight Sleepのエコシステムに縛られる"
       ],
       "scoreNotes": {
-        "climate-range": "Pod 4／5の中核と同じ、カバーによるデュアルゾーンの冷却と加温で、Eight Sleepは温度変化が20%速いとしています。上からの冷却には別売りのBlanketアドオンが必要です（それが同梱されたPod 5 Ultraは9.7点）。Eight SleepはPod 6の新しい温度範囲を公表していません。",
+        "climate-range": "Pod 4／5の中核と同じ、カバーによるデュアルゾーンの冷却と加温で、Eight Sleepは温度変化が20%速いとしています。上からの冷却には別売りのBlanketアドオンが必要です（それが同梱されたPod 5 Ultraは{{score:eight-sleep-pod-5.climate-range}}点）。Eight SleepはPod 6の新しい温度範囲を公表していません。",
         "build": "作り直されたハブは50%小さく、ほとんどのベッドフレームの下に収まります。保証はメンバーシップに連動：Standardは2年、Enhanced／Eliteは5年。新しいハブの長期的な信頼性はまだわかりません。",
         "app-tracking": "心拍数、呼吸数、HRV、いびき、睡眠ステージのための18個の生体センサー（従来2個）と、ペットや子どもを無視する寝ている人の区別。カタログ上はPod 5をわずかに上回りますが、Pod 6のセンサーの独立検証はまだ公表されていません。",
         "form-factor": "半分のサイズのハブと新しいSoloサイズで、寝室に最も導入しやすいPodです。標準ではカバーのみで、Base、Blanket、Pillow CoverはPod 5 Ultraのように同梱ではなく、オプションのアドオンです。",

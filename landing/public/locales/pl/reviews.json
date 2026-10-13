@@ -112,11 +112,11 @@
       "faq": [
         {
           "q": "Ile kosztuje Resona Health VIBE?",
-          "a": "Resona Health VIBE kosztuje 299 $ jako samodzielne urządzenie noszone, bez aplikacji i subskrypcji, z roczną gwarancją i 30-dniową gwarancją zwrotu pieniędzy. To najlepsza wartość w podstawowym segmencie PEMF wobec ok. 1750 $ lub więcej za maty całego ciała, co czyni go najmniej zobowiązującym sposobem na poznanie PEMF. ONDA ocenia go na 8,5/10 za wartość."
+          "a": "Resona Health VIBE kosztuje 299 $ jako samodzielne urządzenie noszone, bez aplikacji i subskrypcji, z roczną gwarancją i 30-dniową gwarancją zwrotu pieniędzy. To najlepsza wartość w podstawowym segmencie PEMF wobec ok. 1750 $ lub więcej za maty całego ciała, co czyni go najmniej zobowiązującym sposobem na poznanie PEMF. ONDA ocenia go na {{score:resona-health-vibe.value}}/10 za wartość."
         },
         {
           "q": "Co robi Resona Health VIBE?",
-          "a": "Resona Health VIBE to kieszonkowe, noszone urządzenie PEMF z ponad 130 wbudowanymi protokołami (60 podstawowych + 70 rozszerzających), obsługiwane jednym przyciskiem, bez aplikacji i subskrypcji. Jest zaprojektowane do ukierunkowanego, miejscowego użycia zamiast sesji na całe ciało, więc natężenie pola jest celowo niższe niż w matach. ONDA ocenia go ogólnie na 7,0/10."
+          "a": "Resona Health VIBE to kieszonkowe, noszone urządzenie PEMF z ponad 130 wbudowanymi protokołami (60 podstawowych + 70 rozszerzających), obsługiwane jednym przyciskiem, bez aplikacji i subskrypcji. Jest zaprojektowane do ukierunkowanego, miejscowego użycia zamiast sesji na całe ciało, więc natężenie pola jest celowo niższe niż w matach. ONDA ocenia go ogólnie na {{score:resona-health-vibe}}/10."
         },
         {
           "q": "Dla kogo jest Resona Health VIBE?",
@@ -220,7 +220,7 @@
       "faq": [
         {
           "q": "Jak dokładny jest CGM Ultrahuman M1?",
-          "a": "Ultrahuman M1 korzysta z sensorów Abbott: FreeStyle Libre poza USA i Abbott Lingo w USA przez M2 Live. Oba pozwalają na 14 dni noszenia bez kalibracji. Otrzymuje 8,5/10 za dokładność sensora, tyle samo co programy na Dexcom G7, ponieważ w niezależnym badaniu porównawczym (Eichenlaub et al. 2025) Libre 3 i Dexcom G7 okazały się podobnie dokładne. Ogólna ocena ONDA wynosi 7,6/10."
+          "a": "Ultrahuman M1 korzysta z sensorów Abbott: FreeStyle Libre poza USA i Abbott Lingo w USA przez M2 Live. Oba pozwalają na 14 dni noszenia bez kalibracji. Otrzymuje {{score:ultrahuman-m1.sensor-accuracy}}/10 za dokładność sensora, tyle samo co programy na Dexcom G7, ponieważ w niezależnym badaniu porównawczym (Eichenlaub et al. 2025) Libre 3 i Dexcom G7 okazały się podobnie dokładne. Ogólna ocena ONDA wynosi {{score:ultrahuman-m1}}/10."
         },
         {
           "q": "Ile kosztuje Ultrahuman M1?",
@@ -276,7 +276,7 @@
       "faq": [
         {
           "q": "Czy Oura Ring 4 dokładnie mierzy HRV?",
-          "a": "Częściowo. Rejestruje HRV w sposób ciągły przez noc z palca, a w niezależnej kontroli (nocne zapisy 13 osób, Dial 2025) jego HRV pozostało bliskie referencyjnemu EKG. Zgodność faz snu testowano tylko na Gen 3, w badaniach finansowanych przez Oura. W ciągu dnia HRV jest w ruchu mniej wiarygodne. W recenzji ONDA dostaje 7,6/10."
+          "a": "Częściowo. Rejestruje HRV w sposób ciągły przez noc z palca, a w niezależnej kontroli (nocne zapisy 13 osób, Dial 2025) jego HRV pozostało bliskie referencyjnemu EKG. Zgodność faz snu testowano tylko na Gen 3, w badaniach finansowanych przez Oura. W ciągu dnia HRV jest w ruchu mniej wiarygodne. W recenzji ONDA dostaje {{score:oura-ring-4}}/10."
         },
         {
           "q": "Czy Oura Ring 4 wymaga abonamentu?",
@@ -783,7 +783,7 @@
         },
         {
           "q": "Ile kosztuje PlatinumLED BIOMAX 600?",
-          "a": "PlatinumLED BIOMAX 600 kosztuje jednorazowo 1 049 $ w oficjalnym sklepie w USA (październik 2026), a statyw i uchwyty są dodatkowo płatne. To wyraźnie taniej niż Joovv Solo 3.0 i MitoPRO 1500 przy porównywalnym wykonaniu i szerszym spektrum. ONDA ocenia go łącznie na 8,2/10."
+          "a": "PlatinumLED BIOMAX 600 kosztuje jednorazowo 1 049 $ w oficjalnym sklepie w USA (październik 2026), a statyw i uchwyty są dodatkowo płatne. To wyraźnie taniej niż Joovv Solo 3.0 i MitoPRO 1500 przy porównywalnym wykonaniu i szerszym spektrum. ONDA ocenia go łącznie na {{score:platinumled-biomax-600}}/10."
         },
         {
           "q": "Jakie długości fal emituje PlatinumLED BIOMAX 600?",
@@ -959,7 +959,7 @@
       "faq": [
         {
           "q": "Co robi mata PEMF Healthy Wave Multi-Wave?",
-          "a": "Healthy Wave Multi-Wave łączy PEMF, ciepło dalekiej podczerwieni, czerwone światło, jony ujemne i podgrzewane kryształy w jednej macie na całe ciało. Sterownik oferuje 1-30 Hz, trzy szerokości impulsu (sześć przebiegów), 12 presetów lub własne programy. ONDA ocenia ją ogółem na 8,2/10."
+          "a": "Healthy Wave Multi-Wave łączy PEMF, ciepło dalekiej podczerwieni, czerwone światło, jony ujemne i podgrzewane kryształy w jednej macie na całe ciało. Sterownik oferuje 1-30 Hz, trzy szerokości impulsu (sześć przebiegów), 12 presetów lub własne programy. ONDA ocenia ją ogółem na {{score:healthy-wave-multi-wave}}/10."
         },
         {
           "q": "Ile kosztuje mata Healthy Wave Multi-Wave?",
@@ -1014,11 +1014,11 @@
       "faq": [
         {
           "q": "Co robi Prana Breath?",
-          "a": "Prana Breath to konfigurowalna aplikacja do pracy z oddechem oparta na wzorcach, dająca pełną kontrolę nad czasami wdechu, zatrzymania, wydechu i zatrzymania dla dowolnego wzorca. Zawiera szeroką bibliotekę gotowych wzorców, w tym oddychanie pudełkowe, 4-7-8, Wim Hof i pranajamę, i jest tworzona przede wszystkim na Androida. ONDA ocenia ją na 6,7/10."
+          "a": "Prana Breath to konfigurowalna aplikacja do pracy z oddechem oparta na wzorcach, dająca pełną kontrolę nad czasami wdechu, zatrzymania, wydechu i zatrzymania dla dowolnego wzorca. Zawiera szeroką bibliotekę gotowych wzorców, w tym oddychanie pudełkowe, 4-7-8, Wim Hof i pranajamę, i jest tworzona przede wszystkim na Androida. ONDA ocenia ją na {{score:prana-breath}}/10."
         },
         {
           "q": "Ile kosztuje Prana Breath?",
-          "a": "Prana Breath jest w większości darmowa, z obszernym planem darmowym i jednorazowym odblokowaniem premium za około $10. Nie ma powtarzającej się subskrypcji. To czyni ją najlepszą wartością na wejście w konfigurowalnej pracy z oddechem, z oceną 8,0/10 za wartość w ocenie ONDA."
+          "a": "Prana Breath jest w większości darmowa, z obszernym planem darmowym i jednorazowym odblokowaniem premium za około $10. Nie ma powtarzającej się subskrypcji. To czyni ją najlepszą wartością na wejście w konfigurowalnej pracy z oddechem, z oceną {{score:prana-breath.value}}/10 za wartość w ocenie ONDA."
         },
         {
           "q": "Dla kogo najlepsza jest Prana Breath?",
@@ -1423,11 +1423,11 @@
         },
         {
           "q": "Czy Ultrahuman Ring Air jest niezawodny?",
-          "a": "Ultrahuman Ring Air ma realne zastrzeżenie co do niezawodności: w 2026 roku recenzenci i właściciele szeroko zgłaszali degradację lub awarie baterii w ciągu kilku miesięcy. Z tego powodu dostaje tylko 5,5/10 za komfort noszenia, co obniża jego wartość przy cenie ok. 349 $ mimo mocnego śledzenia snu i ciągłego HRV."
+          "a": "Ultrahuman Ring Air ma realne zastrzeżenie co do niezawodności: w 2026 roku recenzenci i właściciele szeroko zgłaszali degradację lub awarie baterii w ciągu kilku miesięcy. Z tego powodu dostaje tylko {{score:ultrahuman-ring-air.wearability}}/10 za komfort noszenia, co obniża jego wartość przy cenie ok. 349 $ mimo mocnego śledzenia snu i ciągłego HRV."
         },
         {
           "q": "Czy warto kupić Ultrahuman Ring Air?",
-          "a": "Ultrahuman Ring Air dostaje 6,9/10 i dobrze radzi sobie z podstawami: bardzo lekki, bez abonamentu z dożywotnim dostępem do danych, ciągły pomiar HRV i mocne śledzenie snu. Jednak zgłoszenia o zawodnej baterii osłabiają argumenty przy cenie ok. 349 $. Jeśli długoterminowa niezawodność jest kluczowa, bezpieczniejszym wyborem są Oura Ring 4 lub RingConn Gen 2."
+          "a": "Ultrahuman Ring Air dostaje {{score:ultrahuman-ring-air}}/10 i dobrze radzi sobie z podstawami: bardzo lekki, bez abonamentu z dożywotnim dostępem do danych, ciągły pomiar HRV i mocne śledzenie snu. Jednak zgłoszenia o zawodnej baterii osłabiają argumenty przy cenie ok. 349 $. Jeśli długoterminowa niezawodność jest kluczowa, bezpieczniejszym wyborem są Oura Ring 4 lub RingConn Gen 2."
         },
         {
           "q": "Czy w 2026 roku da się jeszcze kupić Ultrahuman Ring Air w USA?",
@@ -1474,7 +1474,7 @@
       "faq": [
         {
           "q": "Co zawiera Penguin Chillers i czy jest w zestawie wanna?",
-          "a": "Schładzacze są sprzedawane bez wanny. Łączysz schładzacz z własnym zbiornikiem, plastikową wanną lub przerobioną wanną łazienkową i sam konfigurujesz filtrację, dezynfekcję i hydraulikę. Cold Therapy Chiller ma wbudowaną pompę i szybkozłącza. Penguin sprzedaje teraz osobno także kompletne systemy do zimnych kąpieli. ONDA ocenia wariant z samym schładzaczem na 7,4/10."
+          "a": "Schładzacze są sprzedawane bez wanny. Łączysz schładzacz z własnym zbiornikiem, plastikową wanną lub przerobioną wanną łazienkową i sam konfigurujesz filtrację, dezynfekcję i hydraulikę. Cold Therapy Chiller ma wbudowaną pompę i szybkozłącza. Penguin sprzedaje teraz osobno także kompletne systemy do zimnych kąpieli. ONDA ocenia wariant z samym schładzaczem na {{score:penguin-chillers}}/10."
         },
         {
           "q": "Ile kosztuje balia do zimnych kąpieli z Penguin Chillers?",
@@ -1537,7 +1537,7 @@
         },
         {
           "q": "Dla kogo najlepsza jest Clearlight Sanctuary 2?",
-          "a": "Sanctuary 2 jest najlepsza dla kupujących, którzy chcą podczerwieni pełnego spektrum klasy Sunlighten ze wsparciem marki Jacuzzi i dożywotnią gwarancją w kompaktowej kabinie dla 2 osób. Pasuje osobom, które cenią jakość wykonania i konstrukcję o niskim EMF/ELF bardziej niż programowanie sesji według długości fal. ONDA ocenia ją łącznie na 7,4/10."
+          "a": "Sanctuary 2 jest najlepsza dla kupujących, którzy chcą podczerwieni pełnego spektrum klasy Sunlighten ze wsparciem marki Jacuzzi i dożywotnią gwarancją w kompaktowej kabinie dla 2 osób. Pasuje osobom, które cenią jakość wykonania i konstrukcję o niskim EMF/ELF bardziej niż programowanie sesji według długości fal. ONDA ocenia ją łącznie na {{score:clearlight-sanctuary-2}}/10."
         },
         {
           "q": "Jakie wymiary ma Clearlight Sanctuary 2?",
@@ -1582,7 +1582,7 @@
         "Sterowanie w stylu klinicznym, brak aplikacji konsumenckiej"
       ],
       "scoreNotes": {
-        "field-strength": "Wyjście cewki pętlowej o wysokim natężeniu, zaprojektowane do protokołów klinicznych i dla koni — znacznie powyżej mat konsumenckich. Semi 10 ma poziom mocy 5 na 10 w gamie samej MagnaWave.",
+        "field-strength": "Wyjście cewki pętlowej o wysokim natężeniu, zaprojektowane do protokołów klinicznych i dla koni — znacznie powyżej mat konsumenckich. Semi 10 ma poziom mocy {{literal:5 na 10}} w gamie samej MagnaWave.",
         "waveform-evidence": "PEMF ma umiarkowane dowody w bólu mięśniowo-szkieletowym (przeglądy systematyczne). Własne dane MagnaWave o efektach u ludzi nie są opublikowane; duża część zastosowań dotyczy koni. Jego hasła o „badaniach klinicznych” i „zatwierdzeniu FDA” dotyczą PEMF ogólnie (np. stymulatorów wzrostu kości), a nie urządzeń MagnaWave.",
         "build": "Wytrzymała konstrukcja dla profesjonalistów w walizce; 10 lat gwarancji na Semi 10. Wieloletni rodowód MagnaWave w PEMF dla koni i sportowców.",
         "programmability": "Natężenie 1–10 co pół stopnia, timer 1–60 minut, zakres impulsów 0,7–20 Hz i ustawienie Schumanna. Sterowanie w stylu klinicznym, bez aplikacji.",
@@ -1871,11 +1871,11 @@
       "faq": [
         {
           "q": "Jak działa Kineon Move+?",
-          "a": "Kineon Move+ Pro to bezprzewodowa opaska z trzema modułami; każdy łączy osiem czerwonych diod LED 660 nm z dziesięcioma laserami bliskiej podczerwieni 808 nm klasy 1. Zapewnia fotobiomodulację jednego stawu — kolana, barku, łokcia — w kontakcie ze skórą. ONDA ocenia go łącznie na 7,1/10."
+          "a": "Kineon Move+ Pro to bezprzewodowa opaska z trzema modułami; każdy łączy osiem czerwonych diod LED 660 nm z dziesięcioma laserami bliskiej podczerwieni 808 nm klasy 1. Zapewnia fotobiomodulację jednego stawu — kolana, barku, łokcia — w kontakcie ze skórą. ONDA ocenia go łącznie na {{score:kineon-move-plus}}/10."
         },
         {
           "q": "Ile kosztuje Kineon Move+?",
-          "a": "Kineon Move+ Pro kosztuje $499 w oficjalnym sklepie (cena katalogowa $699), z 30-dniowym okresem próbnym, roczną gwarancją i kwalifikacją do HSA/FSA. To uczciwa cena za celowane urządzenie laserowe, ale słaby wybór, jeśli chcesz panelu na całe ciało. ONDA ocenia stosunek jakości do ceny na 8,0/10."
+          "a": "Kineon Move+ Pro kosztuje $499 w oficjalnym sklepie (cena katalogowa $699), z 30-dniowym okresem próbnym, roczną gwarancją i kwalifikacją do HSA/FSA. To uczciwa cena za celowane urządzenie laserowe, ale słaby wybór, jeśli chcesz panelu na całe ciało. ONDA ocenia stosunek jakości do ceny na {{score:kineon-move-plus.value}}/10."
         },
         {
           "q": "Dla kogo jest Kineon Move+?",
@@ -1978,11 +1978,11 @@
       "faq": [
         {
           "q": "Czy Breathe2Relax naprawdę działa?",
-          "a": "Oddychanie przeponowe, którego uczy, jest dobrze udokumentowane, ale badania samej aplikacji ograniczają się do małych badań pilotażowych, takich jak niekontrolowany pilotaż u 31 żołnierzy, w którym łączono ją z jogą; nie ma randomizowanego badania aplikacji. Stworzyło ją US National Center for Telehealth & Technology do radzenia sobie z PTSD u weteranów i stresem bojowym. Ma ocenę 7,0/10 za oparcie w dowodach i 5,9/10 ogółem."
+          "a": "Oddychanie przeponowe, którego uczy, jest dobrze udokumentowane, ale badania samej aplikacji ograniczają się do małych badań pilotażowych, takich jak niekontrolowany pilotaż u 31 żołnierzy, w którym łączono ją z jogą; nie ma randomizowanego badania aplikacji. Stworzyło ją US National Center for Telehealth & Technology do radzenia sobie z PTSD u weteranów i stresem bojowym. Ma ocenę {{score:breathe-to-relax.evidence-grounding}}/10 za oparcie w dowodach i {{score:breathe-to-relax}}/10 ogółem."
         },
         {
           "q": "Ile kosztuje Breathe2Relax?",
-          "a": "Breathe2Relax jest całkowicie darmowa, bez wersji premium, subskrypcji i reklam. W ocenie ONDA ma 9,5/10 za stosunek jakości do ceny — najlepszą możliwą cenę. Kompromisem jest przestarzały interfejs i wąski zakres ograniczony do oddychania przeponowego i w zadanym tempie."
+          "a": "Breathe2Relax jest całkowicie darmowa, bez wersji premium, subskrypcji i reklam. W ocenie ONDA ma {{score:breathe-to-relax.value}}/10 za stosunek jakości do ceny — najlepszą możliwą cenę. Kompromisem jest przestarzały interfejs i wąski zakres ograniczony do oddychania przeponowego i w zadanym tempie."
         },
         {
           "q": "Dla kogo Breathe2Relax jest najlepsza?",
@@ -4906,7 +4906,7 @@
         },
         {
           "name": "Zakres technik",
-          "note": "Breathwrk: oficjalnie wymienione techniki to m.in. oddech pudełkowy, 4-7-8, nucenie i wzorce z długim wydechem. Othership: stawia na rytmiczne sesje prowadzone muzyką. Obie mają ocenę 7,5; WHM uczy jednej metody."
+          "note": "Breathwrk: oficjalnie wymienione techniki to m.in. oddech pudełkowy, 4-7-8, nucenie i wzorce z długim wydechem. Othership: stawia na rytmiczne sesje prowadzone muzyką. Obie mają ocenę {{score:breathwrk.technique-coverage}}; WHM uczy jednej metody."
         },
         {
           "name": "Oparcie w badaniach",

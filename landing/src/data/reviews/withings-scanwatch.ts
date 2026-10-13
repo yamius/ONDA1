@@ -68,7 +68,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   relatedSlugs: ['apple-watch-series-11', 'garmin-venu-4', 'fitbit-charge-6'],
   faq: [
     { q: "Does the Withings ScanWatch 2 need a subscription?", a: "No — it is $350 one-time with no subscription. It is a hybrid analog watch with a regulator-cleared ECG and AFib detection (per Withings), plus SpO2 and body temperature, and multi-week battery." },
-    { q: "Is the Withings ScanWatch 2 good for HRV?", a: "It tracks overnight HRV and sleep competently for a hybrid watch and adds a regulator-cleared ECG with AFib screening (per Withings). ONDA scores it 7.4/10." },
+    { q: "Is the Withings ScanWatch 2 good for HRV?", a: "It tracks overnight HRV and sleep competently for a hybrid watch and adds a regulator-cleared ECG with AFib screening (per Withings). ONDA scores it {{score:withings-scanwatch}}/10." },
     { q: "How long does the Withings ScanWatch 2 battery last?", a: "About 30 days per charge — far longer than a full smartwatch, because it is a hybrid analog design with physical hands. That makes continuous overnight HRV and sleep tracking easy without nightly charging." },
   ],
 

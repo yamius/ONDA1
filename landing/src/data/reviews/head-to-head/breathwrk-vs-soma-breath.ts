@@ -17,9 +17,9 @@ const breathwrkVsSoma: HeadToHeadInput = {
   bestForB:
     'Choose SOMA Breath if you want rhythmic music-paced breathwork with ceremony framing and access to a global certified-facilitator community.',
   axes: [
-    { name: 'Library size', winner: 'tie', note: 'Breathwrk: 50+ exercises (100+ on Pro) plus daily classes and programs (official site and App Store, accessed 2026-10-11). SOMA: curated library of music-paced journeys. Both score 8.0.' },
-    { name: 'Technique coverage', winner: 'tie', note: 'Breathwrk: officially named techniques include box breathing, 4-7-8, humming and long-exhale patterns. SOMA: Wim Hof crossover plus pranayama. Both score 7.5.' },
-    { name: 'Evidence grounding', winner: 'tie', note: 'Breathwrk’s App Store copy claims HRV, heart-rate and blood-pressure benefits without citations. SOMA leans on ceremony framing and general breath physiology. Both score 6.5.' },
+    { name: 'Library size', winner: 'tie', note: 'Breathwrk: 50+ exercises (100+ on Pro) plus daily classes and programs (official site and App Store, accessed 2026-10-11). SOMA: curated library of music-paced journeys. Both score {{score:breathwrk.session-library}}.' },
+    { name: 'Technique coverage', winner: 'tie', note: 'Breathwrk: officially named techniques include box breathing, 4-7-8, humming and long-exhale patterns. SOMA: Wim Hof crossover plus pranayama. Both score {{score:breathwrk.technique-coverage}}.' },
+    { name: 'Evidence grounding', winner: 'tie', note: 'Breathwrk’s App Store copy claims HRV, heart-rate and blood-pressure benefits without citations. SOMA leans on ceremony framing and general breath physiology. Both score {{score:breathwrk.evidence-grounding}}.' },
     { name: 'Music-paced approach', winner: 'b', note: 'SOMA: beat-driven rhythmic breath pacing — unique in the category. Breathwrk: voice-guided sessions.' },
     { name: 'Community / certification', winner: 'b', note: 'SOMA: global certified-facilitator network. Breathwrk: solo practice, no certification layer.' },
     { name: 'Price', winner: 'a', note: 'Breathwrk: about $49/yr with a free plan. SOMA Breath: $99/yr. Breathwrk about half the price.' },
@@ -35,7 +35,7 @@ const breathwrkVsSoma: HeadToHeadInput = {
     },
     {
       q: 'Which has better evidence base?',
-      a: 'Neither stands out: both score 6.5. Breathwrk\'s App Store copy claims HRV, heart-rate and blood-pressure benefits without citing studies (official site and App Store, accessed 2026-10-11); SOMA leans on Wim Hof published studies and general breath physiology with ceremony framing.',
+      a: 'Neither stands out: both score {{score:breathwrk.evidence-grounding}}. Breathwrk\'s App Store copy claims HRV, heart-rate and blood-pressure benefits without citing studies (official site and App Store, accessed 2026-10-11); SOMA leans on Wim Hof published studies and general breath physiology with ceremony framing.',
     },
     {
       q: 'Can I become a SOMA-certified facilitator?',

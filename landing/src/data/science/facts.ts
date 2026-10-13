@@ -14,6 +14,7 @@
  * only 'approved' entries may be used in new science pages.
  * Keep this module tiny — it is imported by browser code (no prose bodies).
  */
+import { resolveScoreText } from '../reviews/score-text'
 import { HRV_AGE_POINTS } from '../hrv-norms'
 import { RHR_BANDS } from '../resting-hr'
 
@@ -527,7 +528,9 @@ const FACT_RE = /\{\{fact:([a-zA-Z0-9.\-]+)(\|short)?\}\}/g
 
 /** Replace every {{fact:id}} / {{fact:id|short}} in text. Unknown id, unapproved fact or missing translation → throws, so builds fail loudly. */
 export function resolveFacts(text: string, where = 'text', lang: FactLang = 'en'): string {
-  if (!text || text.indexOf('{{fact:') < 0) return text
+  if (!text || text.indexOf('{{') < 0) return text
+  text = resolveScoreText(text, where, lang) // {{score:}} / {{literal:}} (reviews — task 089)
+  if (text.indexOf('{{fact:') < 0) return text
   return text.replace(FACT_RE, (_m, id: string, short?: string) => {
     const f = FACTS[id]
     if (f && f.status !== 'approved') throw new Error(`[facts] fact "${id}" is not approved (used in ${where})`)

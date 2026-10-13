@@ -11,6 +11,7 @@
 import type { HeadToHead, HeadToHeadInput } from '../types'
 import { ALL_REVIEWS } from '../all-reviews'
 import { scoreWinnerSlug } from '../scoring'
+import { resolveScoresDeep } from '../score-text'
 
 const REVIEW_BY_SLUG = new Map(ALL_REVIEWS.map((r) => [r.slug, r]))
 
@@ -454,7 +455,8 @@ const HEAD_TO_HEAD_MODULES: HeadToHeadInput[] = [
 ]
 
 /** Full registry with computed winners. */
-export const ALL_HEAD_TO_HEADS: HeadToHead[] = HEAD_TO_HEAD_MODULES.map(withWinner)
+export const ALL_HEAD_TO_HEADS_RAW: HeadToHead[] = HEAD_TO_HEAD_MODULES.map(withWinner)
+export const ALL_HEAD_TO_HEADS: HeadToHead[] = ALL_HEAD_TO_HEADS_RAW.map((h) => resolveScoresDeep(h, `duel ${h.slug}`))
 
 /** Axis-winner sanity check. Throws at import (so prerender / `npm run build`
  *  fails): a two-way duel (no productCSlug) may only use 'a' | 'b' | 'tie';

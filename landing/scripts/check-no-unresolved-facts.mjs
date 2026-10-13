@@ -17,7 +17,7 @@ function walk(dir) {
     if (statSync(p).isDirectory()) walk(p)
     else if (EXT.test(f)) {
       const s = readFileSync(p, 'utf8')
-      const i = s.indexOf('{{fact:')
+      const i = s.search(/\{\{(fact|score|literal):/)
       if (i >= 0) hits.push(`${relative(DIST, p)}: …${s.slice(i, i + 60)}…`)
     }
   }

@@ -59,8 +59,10 @@ import bestAirPurifiers2026 from './best-air-purifiers-2026'
 const TODAY = new Date().toISOString().slice(0, 10)
 
 import { ALL_REVIEWS } from './all-reviews'
+import { resolveScoresDeep } from './score-text'
 import { sortByRank } from './scoring'
 export { ALL_REVIEWS }
+export { ALL_REVIEWS_RAW } from './all-reviews'
 export {
   computeOverallScore,
   weightedMean,
@@ -98,7 +100,7 @@ export const reviews: ToolReview[] = ALL_REVIEWS.filter(
 )
 
 /** Full registry of comparisons — including date-gated future entries. */
-export const ALL_COMPARISONS: Comparison[] = [
+export const ALL_COMPARISONS_RAW: Comparison[] = [
   bestHrvTrackers2026,
   bestMeditationApps2026,
   bestSleepApps2026,
@@ -116,6 +118,7 @@ export const ALL_COMPARISONS: Comparison[] = [
   bestMassageGuns2026,
   bestAirPurifiers2026,
 ].map(rankComparison)
+export const ALL_COMPARISONS: Comparison[] = ALL_COMPARISONS_RAW.map((c) => resolveScoresDeep(c, `round-up ${c.slug}`))
 
 /** Live round-up comparisons — date-gated entries excluded until their
  *  publishOn date is reached. */

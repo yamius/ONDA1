@@ -5,8 +5,8 @@
  */
 import { articlesRaw as articles } from '../../src/data/articles'
 import { ARTICLE_FAQ_RAW as ARTICLE_FAQ, ARTICLE_FAQ_SCHEMA_ONLY_RAW as ARTICLE_FAQ_SCHEMA_ONLY } from '../../src/data/article-faq'
-import { ALL_REVIEWS, ALL_COMPARISONS } from '../../src/data/reviews'
-import { ALL_HEAD_TO_HEADS } from '../../src/data/reviews/head-to-head'
+import { ALL_REVIEWS_RAW as ALL_REVIEWS, ALL_COMPARISONS_RAW as ALL_COMPARISONS } from '../../src/data/reviews'
+import { ALL_HEAD_TO_HEADS_RAW as ALL_HEAD_TO_HEADS } from '../../src/data/reviews/head-to-head'
 import { CATEGORY_INTRO, CATEGORY_META_DESCRIPTION } from '../../src/data/reviews/category-hub-copy'
 import { CATEGORY_URL_SLUGS } from '../../src/data/reviews/criteria'
 import type { ReviewCategory } from '../../src/data/reviews/types'
