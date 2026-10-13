@@ -303,7 +303,7 @@ interface ReviewsFile {
 }
 const reviewsByLang: Record<Lang, ReviewsFile> = {} as Record<Lang, ReviewsFile>
 for (const lang of SUPPORTED_LANGS) {
-  reviewsByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'reviews.json'), 'utf-8')) as ReviewsFile
+  reviewsByLang[lang] = resolveFactsDeep(JSON.parse(readFileSync(join(localesDir, lang, 'reviews.json'), 'utf-8')), `locales/${lang}/reviews.json`, lang as FactLang) as ReviewsFile // {{score:}} in FAQ JSON-LD
 }
 
 /** Localized review/h2h FAQPage: rewrite the EN one to the translated Q&A, drop it when
