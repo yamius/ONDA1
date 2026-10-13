@@ -46,6 +46,8 @@ function computedFor(target: string): number {
   const r = R.get(slug)!
   return crit ? r.scores.find((s) => s.criterionId === crit)!.score : r.overallScore
 }
+// After the literal fix the text carries the computed value — map that too (never over a listed value).
+for (const m of Object.values(INTENT)) for (const t of Object.values({ ...m })) m[String(computedFor(t))] ??= t
 type Row = { page: string; lang: string; text: string; target: string; computed: string; status: string; ctx: string }
 const rows: Row[] = []
 const args = process.argv.slice(2)
