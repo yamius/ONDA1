@@ -9,7 +9,7 @@ const eightSleepPod3: ToolReviewInput = {
   description:
     'ONDA review of the Eight Sleep Pod 3 — the previous-generation Pod, still sold and frequently discounted relative to Pod 4.',
   verdict:
-    'Pod 4 capability at Pod 3 prices — solid value when discounted, slightly less rigorous climate range than Pod 4.',
+    'Pod 4 capability at Pod 3 prices — solid value when discounted, slightly narrower climate range than Pod 4.',
   summary:
     'Eight Sleep Pod 3 is the previous-generation Pod still available at lower prices, especially when Eight Sleep discounts inventory. Climate range slightly narrower than Pod 4 (less aggressive recovery), same HRV/tracking model, same Autopilot subscription. Worth considering when discounted.',
   scores: [

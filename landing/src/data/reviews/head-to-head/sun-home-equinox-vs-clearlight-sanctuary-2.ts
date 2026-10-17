@@ -11,7 +11,7 @@ const sunHomeVsClearlight: HeadToHeadInput = {
     'Both are premium full-spectrum infrared cabins marketed as low EMF — so this comes down to heat, extras, price and brand backing. The Sun Home Equinox is the value-forward newcomer, rated to ~165°F (maker spec), with integrated red-light and chromotherapy. The Clearlight Sanctuary 2 is the established premium, Jacuzzi-backed with a strong warranty. Newcomer features vs premium pedigree.',
   jobDependentVerdict: true,
   verdict:
-    'Value and features vs pedigree and warranty. The Sun Home Equinox wins on heat output and bundled extras (integrated red light, chromotherapy, sound). The Clearlight Sanctuary 2 wins on build reputation and its Jacuzzi-backed lifetime warranty, but now costs more ($7,299 vs ~$6,000). Sun Home documents third-party EMF figures; Clearlight markets low EMF/ELF without published third-party numbers. Pick Sun Home for the feature bundle and heat; Clearlight for warranty and long brand history.',
+    'Value and features vs pedigree and warranty. The Sun Home Equinox wins on heat output and bundled extras (integrated red light, chromotherapy, sound). The Clearlight Sanctuary 2 wins on build reputation and its Jacuzzi-backed lifetime warranty, but now costs more ($7,299 vs ~$6,000). both market low EMF, and neither publishes an independent figure we can compare. Pick Sun Home for the feature bundle and heat; Clearlight for warranty and long brand history.',
   bestForA:
     'Choose the Sun Home Equinox if you want a cabin rated to ~165°F (maker spec), integrated red-light and chromotherapy, and a price-disciplined package from a strong newer brand.',
   bestForB:
@@ -35,7 +35,7 @@ const sunHomeVsClearlight: HeadToHeadInput = {
     },
     {
       q: 'Do both have low EMF?',
-      a: 'Both are marketed as low EMF. Sun Home documents third-party-verified figures; Clearlight describes the Sanctuary 2 as low EMF/ELF but we found no published third-party numbers, so treat its figures as the maker’s claims and ask for the current test report if EMF is a deciding factor.',
+      a: 'Both are marketed as low EMF. Sun Home cites third-party verification but publishes no measurement distance; Clearlight’s figures are maker-stated. Neither has an independent figure we can compare, so treat both as the makers’ claims and ask for the current test report if EMF is a deciding factor.',
     },
   ],
   content: `## The short version

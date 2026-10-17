@@ -41,7 +41,7 @@ const eightSleepPodCoverPro: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Eight Sleep Pod Cover Pro is the cover-only Pod — same dual-zone climate, same Autopilot, same HRV tracking — fitting on your existing mattress. For users not ready to replace their mattress, this is the entry into Eight Sleep at $1,500-2,000 lower than the full Pod 4 system.
+Eight Sleep Pod Cover Pro is the cover-only Pod — same dual-zone climate, same Autopilot, same HRV tracking — fitting on your existing mattress. As a cover for your existing mattress, it costs about the same as, or a few hundred dollars less than, the Pod 4 cover (from $2,449).
 
 ## What are the downsides of Eight Sleep Pod Cover Pro?
 
