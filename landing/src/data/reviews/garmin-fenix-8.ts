@@ -7,11 +7,11 @@ const garminFenix8: ToolReviewInput = {
   category: 'hrv-wearable',
   productType: 'Multisport GPS smartwatch',
   description:
-    'ONDA review of the Garmin Fenix 8 as an HRV tracker — a premium multisport flagship with an Elevate v5 sensor (ECG), multi-week battery and no subscription. Scored on accuracy, sleep, data and value.',
+    'ONDA review of the Garmin Fenix 8 as an HRV tracker — a premium multisport flagship with an Elevate v5 sensor (ECG), multi-week battery and no subscription.',
   verdict:
-    'The most capable heart-sensor hardware Garmin puts on a wrist — inside a $1,000 expedition watch you are mostly paying for GPS, dive and battery, not HRV.',
+    'Garmin’s newest heart sensor (Elevate v5) — inside a $1,000 expedition watch you are mostly paying for GPS, dive and battery, not HRV.',
   summary:
-    'The Fenix 8 carries Garmin’s newest Elevate v5 optical suite (with an ECG app) and multi-week battery that makes continuous overnight HRV genuinely practical. But it is a large, heavy, ~$1,000 multisport flagship: as a dedicated HRV tracker it is overkill, and a ring or band tracks overnight HRV just as well for a fraction of the price.',
+    'The Fenix 8 carries Garmin’s newest Elevate v5 optical suite (with an ECG app) and multi-week battery that makes continuous overnight HRV genuinely practical. But it is a large, heavy, ~$1,000 multisport flagship: as a dedicated HRV tracker it is overkill, and a ring or band covers overnight HRV for a fraction of the price.',
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.5, note: 'Garmin HRV Status builds an overnight baseline over ~3 weeks; solid, though wrist PPG on a large watch still moves more than a ring or strap.' },
     { criterionId: 'sensor', score: 8.0, note: 'Elevate v5 — Garmin’s newest optical array, adding an ECG app and skin-temperature on top of HR, HRV and Pulse Ox (SpO2).' },
@@ -22,7 +22,7 @@ const garminFenix8: ToolReviewInput = {
     { criterionId: 'value', score: 6.0, note: 'From ~$999.99 (AMOLED) to $1,099.99 (51 mm Solar). No subscription, but you are paying flagship-multisport money for the HRV.' },
   ],
   pros: [
-    'Elevate v5 sensor with an ECG app — Garmin’s most complete heart hardware',
+    'Garmin’s newest heart sensor (Elevate v5), with an ECG app',
     'Multi-week battery (up to ~28–48 days solar) makes nightly HRV wear effortless',
     'No subscription — every feature unlocked at purchase',
     'Deep training, outdoor and dive features with reasonably open data',
@@ -42,15 +42,15 @@ const garminFenix8: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-The Fenix 8 has the best heart-sensor hardware Garmin fits to a wrist: the **Elevate v5** suite adds an ECG app and skin-temperature to the usual optical [HRV](/glossary/heart-rate-variability), heart rate and Pulse Ox. Garmin HRV Status builds an overnight baseline over roughly three weeks and flags balanced-versus-unbalanced, feeding a morning report alongside Body Battery and sleep. The killer feature for HRV specifically is battery: up to ~28 days on the 47 mm Solar and ~48 days on the 51 mm, so the watch is almost never off your wrist charging — which is exactly what a continuous overnight HRV record needs. And like all Garmin, there is no subscription.
+The Fenix 8 has Garmin’s newest heart sensor (**Elevate v5**): the suite adds an ECG app and skin-temperature to the usual optical [HRV](/glossary/heart-rate-variability), heart rate and Pulse Ox. Garmin HRV Status builds an overnight baseline over roughly three weeks and flags balanced-versus-unbalanced, feeding a morning report alongside Body Battery and sleep. The killer feature for HRV specifically is battery: up to ~28 days on the 47 mm Solar and ~48 days on the 51 mm, so the watch is almost never off your wrist charging — which is exactly what a continuous overnight HRV record needs. And like all Garmin, there is no subscription.
 
 ## What are the downsides of Garmin Fenix 8?
 
-It is a ~$1,000 expedition-grade multisport watch. For HRV alone, that is enormous overkill: a ring or a chest strap tracks overnight HRV just as well, or better, for a fraction of the price and far less bulk. The Fenix 8 is large and heavy to sleep in, HRV Status is not more overnight-specialised than a dedicated recovery tracker, and Garmin Connect — while deep — is a cluttered, dated experience next to Oura or Apple. You are paying for multi-band GPS, a 40 m dive computer, a flashlight and a speaker, not the heart math.
+It is a ~$1,000 expedition-grade multisport watch. For HRV alone, that is enormous overkill: a ring or a chest strap covers overnight HRV for a fraction of the price and far less bulk. The Fenix 8 is large and heavy to sleep in, HRV Status is not more overnight-specialised than a dedicated recovery tracker, and Garmin Connect — while deep — is a cluttered, dated experience next to Oura or Apple. You are paying for multi-band GPS, a 40 m dive computer, a flashlight and a speaker, not the heart math.
 
 ## Who should buy Garmin Fenix 8?
 
-Buy the Fenix 8 if you want one no-subscription watch that does serious training, outdoor navigation and diving *and* competent HRV, with battery life that makes nightly wear trivial. If overnight HRV precision is the only thing you care about, spend a fifth of the money on a ring or a strap.
+Buy the Fenix 8 if you want one no-subscription watch that does serious training, outdoor navigation and diving *and* competent HRV, with battery life that makes nightly wear trivial. If overnight HRV precision is the only thing you care about, spend a fraction of the money on a ring or a strap.
 
 ---
 
@@ -68,9 +68,9 @@ Why HRV is the signal worth tracking — and why the number differs by device.
   ],
   relatedSlugs: ['garmin-venu-4', 'apple-watch-series-11', 'whoop-5-0'],
   faq: [
-    { q: "Is the Garmin Fenix 8 worth $999 for HRV?", a: "Not for HRV alone — it shares Garmin's HRV Status model with the far cheaper Venu 4, so the HRV number is the same. The Fenix premium buys ECG, multi-band GPS, maps, a dive computer and multi-week battery." },
+    { q: "Is the Garmin Fenix 8 worth $999 for HRV?", a: "Not for HRV alone — it shares Garmin's HRV Status model with the far cheaper Venu 4, so it uses the same HRV Status method. The Fenix premium buys ECG, multi-band GPS, maps, a dive computer and multi-week battery." },
     { q: "Does the Garmin Fenix 8 need a subscription?", a: "No — it is a one-time purchase from about $999 with no subscription for HRV, training or recovery features." },
-    { q: "How long does the Fenix 8 battery last?", a: "Up to roughly 28–48 days with solar in smartwatch mode — the standout figure among flagship watches, meaning overnight HRV is rarely interrupted by charging." },
+    { q: "How long does the Fenix 8 battery last?", a: "Up to roughly 28–48 days with solar in smartwatch mode, meaning overnight HRV is rarely interrupted by charging." },
   ],
   datePublished: '2026-09-12',
   dateModified: '2026-10-10',
