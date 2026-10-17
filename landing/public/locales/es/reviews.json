@@ -3789,7 +3789,50 @@
     },
     "relax-sauna-portable": {
       "verdict": "La veterana sauna portátil de IR lejano: diseño de silla y carpa, EMF bajo, un producto de nicho pero real.",
-      "productType": "Sauna portátil de IR lejano (configuración de carpa / silla)"
+      "summary": "Relax Sauna Portable es la veterana sauna portátil de IR lejano con silla y carpa. Su cerramiento plegable y su configuración sentada ofrecen exposición al IR lejano sin el compromiso de una cabina. Tiene menos usuarios que HigherDose Blanket, pero cuenta con EMF bajo documentado y una trayectoria de fabricación real de más de 20 años.",
+      "description": "Reseña de ONDA de la Relax Sauna Portable, la veterana sauna portátil de IR lejano en formato carpa / silla.",
+      "bestFor": "Ideal para quien quiere una sauna portátil de IR lejano en posición vertical sin comprometerse con una cabina o una manta.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de Relax Sauna y de reseñas independientes de 2026 sobre IR portátil. ONDA no la ha probado en persona.",
+      "productType": "Sauna portátil de IR lejano (configuración de carpa / silla)",
+      "pros": [
+        "Marca veterana con un historial de fiabilidad de varias décadas",
+        "EMF bajo documentado",
+        "Plegable para guardarla, sin instalación",
+        "La ergonomía de silla y carpa conviene a quien se siente incómodo tumbado en una manta"
+      ],
+      "cons": [
+        "Solo IR lejano, sin IR cercano ni medio",
+        "Más cara que HigherDose Blanket como IR portátil",
+        "Menos usuarios que las marcas de IR más conocidas",
+        "El formato de silla y carpa es más laborioso de montar que una manta"
+      ],
+      "scoreNotes": {
+        "heat-source": "Solo IR lejano mediante generadores semiconductores de IR lejano. Rango de longitudes de onda de IR lejano documentado; sin cercano ni medio.",
+        "build": "Marca veterana (más de 20 años). La estructura de carpa / silla se pliega para guardarla. Garantía estándar.",
+        "emf": "EMF bajo según el fabricante; no encontramos ningún informe independiente de medición de EMF.",
+        "form-factor": "La carpa y la silla se pliegan para guardarlas. Sin instalación. La cabeza queda fuera del cerramiento durante el uso (ergonomía distinta a la de la manta).",
+        "evidence": "Menor base de investigación que las marcas de IR más conocidas. Marketing de nivel bienestar.",
+        "value": "1.500 $: más cara que HigherDose Blanket para un formato posiblemente menos versátil."
+      },
+      "content": "## En qué destaca\n\nRelax Sauna Portable es la opción portátil de IR lejano en posición vertical para quien se siente incómodo con el formato de manta, tumbado. Diseño de silla y carpa, plegable, sin instalación, EMF bajo documentado y una trayectoria de marca de más de 20 años. Para quien quiere exposición al IR sentado y que se pueda guardar, esta es la forma adecuada.\n\n## ¿Cuáles son las desventajas de Relax Sauna Portable?\n\nMás cara que HigherDose Blanket con un formato menos flexible. Espectro solo de IR lejano. Menos usuarios y menor base de investigación que las marcas de IR más conocidas.\n\n## ¿Para quién es Relax Sauna Portable?\n\nElige Relax Sauna Portable si quieres IR portátil sentado en posición vertical y la ergonomía de silla y carpa te encaja específicamente. Para una portátil tipo manta, HigherDose. Para IR en cabina, Sunlighten / Clearlight / JNH.\n\n---\n\n## Lecturas de fondo\n\nLecturas de fondo sobre las ideas detrás de la exposición al calor: sobre todo hipótesis, no efectos demostrados en personas.\n\n- [La sauna en una rutina de longevidad](/articles/longevity-protocol-biological-clock-reset) — lectura de contexto sobre rutinas diarias\n- [Control del eje HPA y regulación del cortisol](/articles/hpa-axis-control-cortisol-aggression) — la vertiente de choque térmico de la respuesta al estrés\n- [Estrés, recuperación y sistema nervioso](/articles/anti-entropy-neural-architecture) — lectura de contexto sobre la sauna como un estrés térmico breve\n",
+      "faq": [
+        {
+          "q": "¿Merece la pena la Relax Sauna Portable?",
+          "a": "La Relax Sauna merece la pena si quieres una sauna portátil de IR lejano en posición vertical sin comprometerte con una cabina o una manta. Procede de una marca veterana con EMF bajo documentado, se pliega para guardarla y no necesita instalación. Es solo de IR lejano y cuesta más que HigherDose Blanket."
+        },
+        {
+          "q": "¿Cuánto cuesta la Relax Sauna Portable?",
+          "a": "La Relax Sauna Portable figura a 1.500 $ en pago único por la configuración de silla y carpa. Es más cara que HigherDose Blanket como infrarrojo portátil, pero no necesita instalación y se pliega para guardarla. Es un diseño de silla y carpa."
+        },
+        {
+          "q": "¿Cuáles son las desventajas de la Relax Sauna Portable?",
+          "a": "Es solo de IR lejano, sin IR cercano ni medio; es más cara que HigherDose Blanket como IR portátil; tiene menos usuarios que las marcas de IR más conocidas, y su montaje de silla y carpa es más laborioso que el de una manta."
+        },
+        {
+          "q": "Relax Sauna o HigherDose Blanket: ¿cuál es mejor?",
+          "a": "HigherDose Blanket es más barata y más sencilla de montar. La Relax Sauna conviene a quien se siente incómodo tumbado en una manta, con un diseño vertical de silla y carpa, EMF bajo documentado y un largo historial de fiabilidad."
+        }
+      ]
     },
     "olylife-tera-p90-plus": {
       "verdict": "Varita económica popular que combina PEMF con afirmaciones sobre terahercios: precio accesible, pero el marketing de terahercios exagera la evidencia publicada.",
@@ -4364,8 +4407,47 @@
       ]
     },
     "ice-barrel-500": {
-      "verdict": "La bañera de inmersión en frío tipo barril más popular: construcción sólida, sin enfriador; el coste de llenarla de hielo es la fricción diaria.",
-      "productType": "Bañera tipo barril aislada (sin enfriador, con hielo)"
+      "verdict": "Una bañera de inmersión en frío tipo barril muy vendida: construcción sólida, sin enfriador; el coste de llenarla de hielo es la fricción diaria.",
+      "summary": "Ice Barrel 500 es un barril vertical aislado: una alternativa más limpia y lista para usar a los apaños caseros de inmersión en frío con un arcón congelador. No tiene enfriador —lo llenas de agua y hielo—, así que el coste diario del hielo (5–15 $ por día de uso, según el clima) es la incógnita del coste de uso. Construcción robusta, formato vertical característico y 1 año de garantía.",
+      "description": "Reseña de ONDA del Ice Barrel 500, el popular barril aislado para inmersiones en frío con hielo. Puntuado en construcción, formato y precio.",
+      "bestFor": "Ideal para quien quiere un formato de barril limpio y de consumo sin pagar precios de gama con enfriador.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de Ice Barrel y de reseñas independientes de 2026. ONDA no lo ha probado en persona.",
+      "productType": "Bañera tipo barril aislada (sin enfriador, con hielo)",
+      "pros": [
+        "Bañera de inmersión en frío sin enfriador muy conocida, con varios años de trayectoria en el mercado",
+        "Huella vertical compacta que cabe en espacios pequeños",
+        "Apta para exterior y fácil de vaciar",
+        "Barata de entrada: 1.200 $ es aproximadamente una quinta parte de The Plunge"
+      ],
+      "cons": [
+        "Sin enfriador: el hielo diario es un gasto de uso real",
+        "Más mantenimiento que las bañeras con enfriador",
+        "La retención de la temperatura depende del clima",
+        "1 año de garantía (frente a los 3 años de Plunge y los 2 de Edge)"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "Sin enfriador. La temperatura depende por completo del hielo, la temperatura ambiente y el tiempo que aguanta el aislamiento. Mantiene un frío útil unos 30–60 minutos por llenado.",
+        "build": "Barril de plástico apto para uso alimentario con aislamiento. Exterior resistente a los rayos UV. 1 año de garantía. Sólido historial de fiabilidad durante varios años.",
+        "water-management": "Sin ozono ni filtro: cambios de agua manuales cada 1–2 semanas más reposición diaria de hielo. Más mantenimiento que las bañeras con enfriador.",
+        "form-factor": "Diseño vertical con menos huella que las bañeras horizontales (32\" de diámetro). Apto para exterior. Fácil de vaciar mediante el grifo.",
+        "evidence": "Honesto al presentarse como solución sin enfriador. Según nuestra lectura, su marketing hace menos afirmaciones de salud sobre la exposición al frío que muchos competidores.",
+        "value": "1.200 $ de hardware. Barato de entrada, pero 5–15 $ al día en hielo durante meses acaban sumando. Mejor economía a largo plazo que los apaños con arcón congelador, peor que las bañeras con enfriador."
+      },
+      "content": "## En qué destaca\n\nIce Barrel 500 es el formato de inmersión en frío sin enfriador más limpio del mercado. Barril vertical, plástico apto para uso alimentario, paredes aisladas y una huella vertical que cabe donde no entran las bañeras horizontales. Para quien quiere probar la inmersión diaria en frío sin comprometerse con los 5.000 $ de un equipo con enfriador, esta es la forma adecuada.\n\n## ¿Cuáles son las desventajas del Ice Barrel 500?\n\nLa principal desventaja es que pagas hielo todos los días. En climas fríos es insignificante (usa nieve); en climas cálidos son 5–15 $ al día. Anualizado, puede rivalizar con el coste amortizado durante varios años de un equipo con enfriador. Los cambios de agua son manuales, no hay ozono y el tiempo que se mantiene la temperatura por llenado es limitado.\n\n## ¿Para quién es el Ice Barrel 500?\n\nElige el Ice Barrel 500 si quieres probar la inmersión diaria en frío antes de comprometerte con un equipo con enfriador, o si tu clima es lo bastante frío como para que el coste del hielo no importe. En climas cálidos y con intención de uso diario, haz las cuentas de las bañeras con enfriador (Plunge o Edge) antes de decidirte por el barril.\n\n---\n\n## Lecturas de fondo\n\nLa biología de por qué funciona la exposición al frío y los protocolos que se suman al hardware.\n\n- [Ejercicios para el nervio vago](/articles/vagus-nerve-exercises) — en la inmersión de todo el cuerpo la reacción principal es el choque por frío simpático; la respuesta vagal (de buceo) proviene sobre todo del frío en la cara, y la variabilidad de la frecuencia cardíaca (HRV o VFC) sube solo durante la exposición ([evidencia](/science/evidence/cold-exposure))\n- [Control del eje HPA y regulación del cortisol](/articles/hpa-axis-control-cortisol-aggression) — cómo la exposición al frío moldea la curva del cortisol\n- [Fatiga adrenal: qué dice la evidencia](/articles/adrenal-governor-thermal-runaway) — por qué el agotamiento relacionado con el estrés no son «suprarrenales quemadas» y cuándo acudir al médico\n",
+      "faq": [
+        {
+          "q": "¿El Ice Barrel 500 tiene enfriador?",
+          "a": "No. El Ice Barrel 500 no tiene enfriador: lo llenas de agua y hielo. Eso mantiene el precio de entrada en 1.200 $, aproximadamente una quinta parte de The Plunge, pero el hielo diario se convierte en un gasto de uso real, y lo bien que mantiene la temperatura depende de tu clima."
+        },
+        {
+          "q": "¿Cuánto cuesta mantener un Ice Barrel 500?",
+          "a": "Además de los 1.200 $ del precio de compra, el principal coste de uso es el hielo, unos 5–15 $ por día de uso según tu clima. Con un uso regular eso suma, y es la fricción diaria de cualquier bañera sin enfriador. También exige más mantenimiento que las bañeras con enfriador."
+        },
+        {
+          "q": "¿Para quién es más adecuado el Ice Barrel 500?",
+          "a": "Encaja con quien quiere una bañera de inmersión en frío limpia y compacta sin pagar precios de gama con enfriador. Su huella vertical cabe en espacios pequeños, es apto para exterior y fácil de vaciar, y lleva varios años de trayectoria en el mercado. La garantía es de un año, frente a tres de The Plunge."
+        }
+      ]
     }
   },
   "comparisons": {
@@ -9161,7 +9243,7 @@
       "axes": [
         {
           "name": "Evidencia clínica",
-          "note": "Ninguno tiene ensayos publicados del propio dispositivo. LightStim está autorizado por la FDA (K120775; modelo actual K261482), pero los únicos datos sobre arrugas en sus expedientes de la FDA son un estudio no publicado de la empresa con un modelo anterior; Solawave está registrado en la FDA (un listado, no una autorización) con testimonios de consumidores financiados por la marca. El estatus FDA es neutral en las puntuaciones de ONDA."
+          "note": "LightStim va por delante: ninguno tiene ensayos publicados del propio dispositivo y el estudio no publicado de la empresa LightStim no cuenta; la autorización de la FDA de LightStim (K120775; modelo actual K261482) es neutral, mientras que el respaldo de Solawave son testimonios de consumidores financiados por la marca."
         },
         {
           "name": "Cobertura de longitudes de onda",
@@ -9488,7 +9570,7 @@
         },
         {
           "name": "Construcción",
-          "note": "Plunge: acrílico premium con aislamiento. Ice Barrel: barril de plástico apto para alimentos con aislamiento. Ambas sólidas para su gama."
+          "note": "The Plunge va por delante: una bañera de acrílico aislada con herrajes de grado marino y 3 años de garantía, frente al barril aislado de plástico apto para alimentos de Ice Barrel con 1 año de garantía. Ambas tienen un historial sólido de fiabilidad de varios años."
         },
         {
           "name": "Espacio ocupado",
@@ -9803,6 +9885,63 @@
         }
       ],
       "content": "> Actualización (septiembre de 2026): Eight Sleep sustituyó el Pod 5 por el Pod 6 el 23 de septiembre de 2026 (desde $1.999 el Solo; $2.899 la queen de doble zona). Los precios del Pod 5 que figuran abajo son sus últimos precios de catálogo: compara las existencias restantes del Pod 5 con los precios del Pod 6.\n\n## La versión corta\n\nExtremos opuestos del mercado. El [Eight Sleep Pod 5](/reviews/eight-sleep-pod-5) es la cama inteligente refrigerada por agua más completa —refrigeración precisa de doble zona, seguimiento de HRV, software Autopilot, extras para toda la cama— a ~$6.099 por el Pod 5 Ultra más una suscripción. El [BedJet 3](/reviews/bedjet-3) sopla aire frío o caliente bajo la sábana por ~$600, sin agua y sin seguimiento.\n\n## ¿Cuándo es el Eight Sleep Pod 5 la opción adecuada?\n\nQuieres la refrigeración más rigurosa y un seguimiento integrado de la recuperación, y el precio premium y la suscripción te resultan aceptables. Es el sistema para optimizar el sueño basándote en datos.\n\n## ¿Cuándo es el BedJet 3 la opción adecuada?\n\nQuieres refrigerar la cama de forma eficaz y asequible sin gestionar agua ni pagar suscripción, con instalación sencilla, y no necesitas seguimiento integrado ni un control preciso grado a grado.\n\n## También vale la pena comparar\n\nPara la vía intermedia de refrigeración por agua sin suscripción, consulta [Pod 5 vs ChiliPad Dock Pro](/reviews/vs/eight-sleep-pod-5-vs-chilipad-dock-pro). Todas las opciones: [los mejores sistemas inteligentes de climatización del sueño](/reviews/smart-sleep-climate)."
+    },
+    "finnleo-hallmark-vs-almost-heaven-salem": {
+      "title": "Finnleo Hallmark vs Almost Heaven Salem: comparativa 2026",
+      "description": "Finnleo Hallmark vs Almost Heaven Salem: ONDA compara dos saunas tradicionales de estilo finlandés. Cabina de interior finlandesa vs barril de cedro.",
+      "intro": "Finnleo Hallmark y Almost Heaven Salem son las dos saunas tradicionales de convección de estilo finlandés que se comparan cuando el IR no es la opción. Ambas ofrecen el calor pleno de una sauna finlandesa (80–95 °C) con posibilidad de vapor löyly y tienen una fiabilidad de marca de varias décadas. La diferencia estructural es una cabina de interior de ingeniería finlandesa frente a un barril de exterior de cedro estadounidense.",
+      "verdict": "Decide el formato. Finnleo Hallmark para instalación en interior con trayectoria de fabricación finlandesa. Almost Heaven Salem para instalación de barril en exterior con construcción de cedro estadounidense.",
+      "bestForA": "Elige Finnleo Hallmark si quieres una sauna finlandesa de interior premium, con calor de ingeniería Helo y una larga trayectoria de fabricación finlandesa.",
+      "bestForB": "Elige Almost Heaven Salem si quieres una sauna barril tradicional de cedro para exterior, de construcción estadounidense, con calentador eléctrico de 6 kW y el precio más bajo (4.485 $ de precio de lista por la Salem para 2 personas).",
+      "axes": [
+        {
+          "name": "Calidad del calentador",
+          "note": "Finnleo: calentador finlandés de ingeniería Helo, un nombre consolidado en el calor tradicional de sauna finlandesa. Almost Heaven Salem: calentador eléctrico Harvia de 6 kW (240 V, conexión fija)."
+        },
+        {
+          "name": "Formato",
+          "note": "Finnleo: instalación de cabina en interior. Almost Heaven: instalación de barril en exterior. Funciones distintas; elige según dónde vayas a instalarla."
+        },
+        {
+          "name": "Trayectoria de fabricación",
+          "note": "Finnleo: trayectoria de fabricación finlandesa, tsuga o abeto nórdico. Almost Heaven: cedro rojo occidental estadounidense, historial de marca de varias décadas."
+        },
+        {
+          "name": "Garantía",
+          "note": "Almost Heaven Salem: garantía limitada de por vida por defectos de fabricación (calentador: 1 año las resistencias, 5 años el resto de piezas). Finnleo: no encontramos las condiciones de garantía de la Hallmark en una página oficial de Finnleo; consúltalas con el distribuidor. Ni la Salem ni la Hallmark ofrecen calentador de leña."
+        },
+        {
+          "name": "EMF",
+          "note": "Ambas son de convección tradicional: sin electrónica en la emisión de calor, el EMF no es un problema."
+        },
+        {
+          "name": "Evidencia científica",
+          "note": "Los estudios de cohortes finlandeses de Kuopio (riesgo cardiovascular y de demencia; asociaciones, no causalidad) se hicieron sobre el baño de sauna finlandesa tradicional en general, no sobre Finnleo; la cabina eléctrica de interior es el formato más parecido."
+        },
+        {
+          "name": "Precio",
+          "note": "Almost Heaven Salem: 4.485 $ de precio de lista (4.036,50 $ en oferta, octubre de 2026) con calentador incluido. Finnleo: 6.000–12.000 $ o más. Almost Heaven es claramente más barata."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Finnleo o Almost Heaven: ¿cuál es mejor?",
+          "a": "Decide el formato. Finnleo para una sauna de interior de fabricación finlandesa con calentador de ingeniería Helo en el formato de interior más cercano a los estudios de cohortes finlandeses. Almost Heaven para una sauna barril de exterior de cedro rojo estadounidense para 2 personas con calentador eléctrico de 6 kW a un precio más bajo."
+        },
+        {
+          "q": "¿Es Finnleo la marca original de saunas finlandesas?",
+          "a": "No: el baño de sauna finlandés es muy anterior a cualquier marca. Finnleo es la marca norteamericana vinculada a Helo, un fabricante finlandés de calentadores de sauna con larga trayectoria, y la Hallmark usa un calentador de ingeniería Helo."
+        },
+        {
+          "q": "¿Existe una Finnleo de leña?",
+          "a": "Ninguno de los modelos analizados aquí: la Hallmark es solo eléctrica y la Almost Heaven Salem se vende solo con calentador eléctrico de 6 kW. Almost Heaven vende calentadores de leña en algunos otros modelos de barril, no en la Salem."
+        },
+        {
+          "q": "¿Cuál tiene mejor base de evidencia?",
+          "a": "Ninguna tiene estudios propios del dispositivo. La evidencia publicada (estudios de cohortes observacionales de Kuopio sobre mortalidad cardiovascular y riesgo de demencia: asociaciones, no causalidad) trata del baño de sauna finlandesa tradicional en general, no de ninguna de las dos marcas. Ambas ofrecen ese tipo de calor; Finnleo es una cabina de interior y Almost Heaven Salem un barril de exterior."
+        }
+      ],
+      "content": "## En resumen\n\nAmbas ofrecen el calor de una sauna finlandesa tradicional con una trayectoria de marca de varias décadas. Finnleo Hallmark es la referencia de interior de fabricación finlandesa; Almost Heaven Salem es el barril de exterior de cedro rojo estadounidense.\n\n## ¿Cuándo es Finnleo Hallmark la elección adecuada?\n\nSi tienes espacio de instalación en interior y quieres una trayectoria de fabricación finlandesa premium con calor de ingeniería Helo, Finnleo es la forma adecuada. Su formato de interior es el más parecido al de los estudios de cohortes finlandeses, que analizaron el baño de sauna en general, no Finnleo.\n\n## ¿Cuándo es Almost Heaven Salem la elección adecuada?\n\nSi tienes espacio de instalación en exterior y quieres una sauna barril tradicional de cedro de construcción estadounidense, Almost Heaven es la forma adecuada. Tiene dos plazas, funciona con un calentador eléctrico de 6 kW (la Salem no tiene opción de leña), incluye garantía limitada de por vida por defectos y cuesta claramente menos: 4.485 $ de precio de lista con calentador incluido."
     }
   },
   "categoryHubs": {

@@ -584,6 +584,11 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'h2h', slug: 'headspace-vs-insight-timer' },
   { collection: 'h2h', slug: 'eight-sleep-pod-5-vs-bedjet-3' },
   { collection: 'reviews', slug: 'luna-ring' },
+  { collection: 'reviews', slug: 'insight-timer', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'reviews', slug: 'balance', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'reviews', slug: 'ice-barrel-500' },
+  { collection: 'reviews', slug: 'relax-sauna-portable' },
+  { collection: 'h2h', slug: 'finnleo-hallmark-vs-almost-heaven-salem' },
   // WAVE_D_NEXT
   ],
 ]

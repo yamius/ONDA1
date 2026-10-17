@@ -2170,8 +2170,48 @@
       "productType": "App de meditação"
     },
     "insight-timer": {
-      "verdict": "A maior biblioteca de meditação do mundo e o único app desta comparação que você pode realmente usar de graça; o preço é a qualidade variável.",
-      "productType": "App de meditação"
+      "verdict": "Uma biblioteca de meditação gratuita muito grande (a Insight Timer diz que é a maior) e o único app desta comparação que você pode realmente usar de graça — o preço é a qualidade variável.",
+      "summary": "O Insight Timer tem uma biblioteca de meditação muito grande — a maior, segundo a própria empresa — e é o raro app em que você consegue construir uma prática real sem pagar. Funciona como um YouTube da meditação: variedade enorme, muitos professores, eventos ao vivo a cada hora — e, inevitavelmente, qualidade variável.",
+      "description": "Análise da ONDA do Insight Timer: biblioteca de meditação muito grande e a versão grátis mais utilizável. Notas: biblioteca, ensino e valor.",
+      "bestFor": "Melhor no geral — uma biblioteca muito grande, uma versão grátis realmente utilizável e o melhor custo-benefício.",
+      "testNote": "Avaliação baseada em evidências — a partir de informações públicas, dados das lojas de apps e análises independentes de 2026. Não se baseia em um longo teste prático feito pela ONDA.",
+      "productType": "App de meditação",
+      "pros": [
+        "Uma biblioteca de meditação muito grande (a maior, segundo a Insight Timer)",
+        "Uma versão grátis realmente utilizável — algo raro nesta categoria",
+        "O plano pago mais barato, além de eventos ao vivo a cada hora e comunidade",
+        "Uma variedade enorme de professores e tradições"
+      ],
+      "cons": [
+        "A qualidade varia de sessão para sessão",
+        "Menos orientação estruturada do que apps baseados em cursos",
+        "O volume pode parecer bagunçado e difícil de navegar",
+        "O conteúdo colaborativo tem embasamento irregular"
+      ],
+      "scoreNotes": {
+        "content-library": "Uma biblioteca muito grande — 360.000 faixas gratuitas pela contagem da empresa, além de cursos.",
+        "teaching": "Uma variedade enorme de professores e tradições; há profundidade, mas a qualidade varia de sessão para sessão.",
+        "personalization": "Menos guiado do que apps baseados em cursos — você basicamente monta o próprio caminho.",
+        "app-experience": "Funcional e cheio de recursos, mas o volume enorme pode deixá-lo com aparência bagunçada.",
+        "free-tier": "A versão grátis de destaque da categoria — dá para ter uma prática real sem pagar.",
+        "value": "O plano pago mais barato aqui, somado a uma biblioteca gratuita muito grande — o líder em custo-benefício.",
+        "evidence": "A qualidade e o embasamento variam muito em uma biblioteca colaborativa."
+      },
+      "content": "## Onde ele se destaca\n\nO Insight Timer tem uma biblioteca de meditação muito grande — a maior, segundo a própria empresa — e é o único app desta comparação em que você pode realmente construir uma prática sem pagar. Funciona menos como um curso com curadoria e mais como um YouTube da meditação: 360.000 faixas gratuitas, milhares de professores, eventos ao vivo a cada hora e uma comunidade ativa. Em variedade — e em uma versão grátis que é uma oferta real, e não uma isca — nada aqui chega perto.\n\n## Quais são as desvantagens do Insight Timer?\n\nA amplitude tem um custo. Como a biblioteca é colaborativa, a qualidade varia de sessão para sessão, e há muito menos condução estruturada do que um curso do Headspace oferece — você basicamente monta o próprio caminho. O app é tão cheio de recursos que chega a parecer bagunçado, e o conteúdo tem embasamento irregular.\n\n## Quem deve escolher o Insight Timer?\n\nEscolha o Insight Timer se você quer a maior variedade possível, um bom custo-benefício e a liberdade de praticar de graça — e não se importa de fazer parte da curadoria por conta própria. Se prefere ser guiado por um caminho claro e revisado, o Headspace é a opção mais estruturada.\n\n---\n\n## Leitura complementar\n\nA ciência do que a meditação realmente faz no nível do sistema nervoso.\n\n- [Concentração fisiológica: a base do estado de flow](/articles/physiological-concentration-flow-state-hardwired) — de que neuroquímica o estado de flow realmente precisa\n- [Ondas cerebrais alfa: calma, criatividade e flow](/articles/neural-bridge-alpha-flow-gateway) — o que o ritmo alfa faz e o que headsets, apps e músicas \"alfa\" podem ou não mudar\n- [Sincronização neural por meio da meditação](/articles/neural-entrainment-meditation-2) — por que a prática estruturada remodela os estados corticais de base\n",
+      "faq": [
+        {
+          "q": "O Insight Timer é grátis?",
+          "a": "Em grande parte, sim. O Insight Timer tem uma versão grátis muito ampla, sobre a qual você pode realmente construir uma prática, algo raro entre apps de meditação. O Member Plus custa US$ 60 por ano com 7 dias de teste grátis, o plano pago mais barato da sua comparação, e há eventos ao vivo a cada hora e recursos de comunidade."
+        },
+        {
+          "q": "Vale a pena pagar pelo Insight Timer?",
+          "a": "Para muita gente a versão grátis basta, e esse é o maior ponto forte do app. Por US$ 60 por ano, o Member Plus é o plano pago mais barato entre os principais apps de meditação, então fazer o upgrade tem pouco risco se você quiser mais. O porém é a qualidade variável das sessões, não o preço."
+        },
+        {
+          "q": "Insight Timer ou Headspace: qual é melhor?",
+          "a": "O Insight Timer vence em amplitude e custo-benefício: tem uma biblioteca de meditação muito grande (a maior, segundo a própria empresa) e uma versão grátis utilizável. O Headspace vence em estrutura, com orientação mais clara baseada em cursos para iniciantes. O conteúdo colaborativo do Insight Timer pode parecer bagunçado e irregular."
+        }
+      ]
     },
     "amazfit-helio-ring": {
       "verdict": "Um anel realmente barato e sem assinatura, com monitoramento básico do sono (estimativas das fases, sem validação independente) e de variabilidade da frequência cardíaca (HRV ou VFC) — mas apenas três tamanhos e uma bateria curta no uso real o mantêm como opção econômica, não como rival do Oura.",
@@ -3097,7 +3137,50 @@
     },
     "relax-sauna-portable": {
       "verdict": "A veterana sauna portátil de IR distante — design de cadeira e tenda, EMF baixo, produto de nicho, mas real.",
-      "productType": "Sauna portátil de IR distante (configuração tenda / cadeira)"
+      "summary": "A Relax Sauna Portable é a veterana sauna portátil de IR distante com cadeira e tenda. O invólucro dobrável e a configuração sentada oferecem exposição ao IR distante sem o compromisso de uma cabine. Tem menos usuários que a HigherDose Blanket, mas conta com EMF baixo documentado e uma trajetória real de fabricação de mais de 20 anos.",
+      "description": "Análise da ONDA da Relax Sauna Portable — a veterana sauna portátil de IR distante no formato tenda / cadeira.",
+      "bestFor": "Melhor para quem quer uma sauna portátil de IR distante na posição vertical sem se comprometer com cabine ou manta.",
+      "testNote": "Avaliação baseada em evidências — pontuada a partir da documentação do produto Relax Sauna e de análises independentes de 2026 sobre IR portátil. Não testada na prática pela ONDA.",
+      "productType": "Sauna portátil de IR distante (configuração tenda / cadeira)",
+      "pros": [
+        "Marca veterana com histórico de confiabilidade de várias décadas",
+        "EMF baixo documentado",
+        "Dobrável para guardar — sem instalação",
+        "A ergonomia de cadeira e tenda atende quem não se sente bem deitado em uma manta"
+      ],
+      "cons": [
+        "Apenas IR distante — sem IR próximo nem médio",
+        "Mais cara que a HigherDose Blanket como IR portátil",
+        "Menos usuários que as marcas de IR mais conhecidas",
+        "O formato de cadeira e tenda dá mais trabalho para montar que uma manta"
+      ],
+      "scoreNotes": {
+        "heat-source": "Apenas IR distante, por geradores semicondutores de IR distante. Faixa de comprimentos de onda de IR distante documentada; sem próximo nem médio.",
+        "build": "Marca veterana (mais de 20 anos). A estrutura de tenda / cadeira é dobrável para guardar. Garantia padrão.",
+        "emf": "EMF baixo segundo o fabricante; não encontramos nenhum relatório independente de medição de EMF.",
+        "form-factor": "Tenda e cadeira dobram para guardar. Sem instalação. A cabeça fica fora do invólucro durante o uso (ergonomia diferente da manta).",
+        "evidence": "Base de pesquisa menor que a das marcas de IR mais conhecidas. Marketing de nível bem-estar.",
+        "value": "US$ 1.500 — mais cara que a HigherDose Blanket para um formato possivelmente menos versátil."
+      },
+      "content": "## Onde ela se destaca\n\nA Relax Sauna Portable é a opção portátil de IR distante na vertical para quem não se sente bem com o formato de manta, deitado. Design de cadeira e tenda, dobrável, sem instalação, EMF baixo documentado e mais de 20 anos de trajetória da marca. Para quem quer exposição ao IR sentado e que possa ser guardada, este é o formato certo.\n\n## Quais são as desvantagens da Relax Sauna Portable?\n\nMais cara que a HigherDose Blanket, com um formato menos flexível. Espectro apenas de IR distante. Menos usuários e base de pesquisa menor que as marcas de IR mais conhecidas.\n\n## Quem deve comprar a Relax Sauna Portable?\n\nEscolha a Relax Sauna Portable se você quer IR portátil sentado na vertical e a ergonomia de cadeira e tenda combina especificamente com você. Para uma portátil tipo manta, HigherDose. Para IR em cabine, Sunlighten / Clearlight / JNH.\n\n---\n\n## Leitura complementar\n\nLeitura complementar sobre as ideias por trás da exposição ao calor — em sua maioria hipóteses, não efeitos demonstrados em pessoas.\n\n- [Sauna em uma rotina de longevidade](/articles/longevity-protocol-biological-clock-reset) — leitura de contexto sobre rotinas diárias\n- [Controle do eixo HPA e regulação do cortisol](/articles/hpa-axis-control-cortisol-aggression) — o lado do choque térmico na resposta ao estresse\n- [Estresse, recuperação e sistema nervoso](/articles/anti-entropy-neural-architecture) — leitura de contexto sobre a sauna como um estresse térmico curto\n",
+      "faq": [
+        {
+          "q": "Vale a pena comprar a Relax Sauna Portable?",
+          "a": "A Relax Sauna vale a pena se você quer uma sauna portátil de IR distante na vertical sem se comprometer com uma cabine ou uma manta. Ela vem de uma marca veterana com EMF baixo documentado, dobra para guardar e não precisa de instalação. É apenas de IR distante e custa mais que a HigherDose Blanket."
+        },
+        {
+          "q": "Quanto custa a Relax Sauna Portable?",
+          "a": "A Relax Sauna Portable é anunciada por US$ 1.500 em pagamento único, na configuração de cadeira e tenda. É mais cara que a HigherDose Blanket como infravermelho portátil, mas não precisa de instalação e dobra para guardar. É um design de cadeira e tenda."
+        },
+        {
+          "q": "Quais são as desvantagens da Relax Sauna Portable?",
+          "a": "É apenas de IR distante, sem IR próximo nem médio; é mais cara que a HigherDose Blanket como IR portátil; tem menos usuários que as marcas de IR mais conhecidas; e a montagem de cadeira e tenda dá mais trabalho que uma manta."
+        },
+        {
+          "q": "Relax Sauna ou HigherDose Blanket: qual é melhor?",
+          "a": "A HigherDose Blanket é mais barata e mais simples de montar. A Relax Sauna atende quem não se sente bem deitado em uma manta, com um design vertical de cadeira e tenda, EMF baixo documentado e um longo histórico de confiabilidade."
+        }
+      ]
     },
     "olylife-tera-p90-plus": {
       "verdict": "Bastão econômico popular que combina PEMF com alegações de terahertz: preço acessível, mas o marketing de terahertz exagera a evidência publicada.",
@@ -3815,8 +3898,95 @@
       ]
     },
     "ice-barrel-500": {
-      "verdict": "A banheira de imersão fria tipo barril mais popular — construção sólida, sem resfriador; o custo de abastecer com gelo é o atrito diário.",
-      "productType": "Banheira tipo barril isolada (sem resfriador, com gelo)"
+      "verdict": "Uma banheira de imersão fria tipo barril muito vendida — construção sólida, sem resfriador; o custo de abastecer com gelo é o atrito diário.",
+      "summary": "O Ice Barrel 500 é um barril vertical isolado — uma alternativa mais limpa e pronta para usar às gambiarras de imersão fria com freezer horizontal. Não tem resfriador — você enche com água e gelo —, então o custo diário do gelo (US$ 5–15 por dia de uso, dependendo do clima) é a incógnita do custo de uso. Construção robusta, formato vertical característico e 1 ano de garantia.",
+      "description": "Análise da ONDA do Ice Barrel 500 — o popular barril isolado para imersões frias com gelo. Notas para construção, formato e custo-benefício.",
+      "bestFor": "Melhor para quem quer um formato de barril limpo e de consumo sem pagar preços da faixa com resfriador.",
+      "testNote": "Avaliação baseada em evidências — pontuada a partir da documentação do produto Ice Barrel e de análises independentes de 2026. Não testado na prática pela ONDA.",
+      "productType": "Banheira tipo barril isolada (sem resfriador, com gelo)",
+      "pros": [
+        "Banheira de imersão fria sem resfriador bem conhecida, com vários anos de histórico no mercado",
+        "Ocupação vertical compacta que cabe em espaços menores",
+        "Própria para área externa e fácil de esvaziar",
+        "Barata na compra — US$ 1.200 é cerca de um quinto do The Plunge"
+      ],
+      "cons": [
+        "Sem resfriador — o gelo diário é uma despesa de uso real",
+        "Mais manutenção do que banheiras com resfriador",
+        "A manutenção da temperatura depende do clima",
+        "1 ano de garantia (contra 3 anos do Plunge e 2 do Edge)"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "Sem resfriador. A temperatura depende inteiramente do gelo, da temperatura ambiente e de quanto tempo o isolamento segura. Mantém um frio útil por cerca de 30–60 minutos por abastecimento.",
+        "build": "Barril de plástico de grau alimentício com isolamento. Exterior resistente a UV. 1 ano de garantia. Histórico sólido de confiabilidade ao longo de vários anos.",
+        "water-management": "Sem ozônio nem filtro — trocas de água manuais a cada 1–2 semanas, além de reposição diária de gelo. Mais manutenção do que banheiras com resfriador.",
+        "form-factor": "Design vertical que ocupa menos espaço do que banheiras horizontais (32\" de diâmetro). Próprio para área externa. Fácil de esvaziar pela torneira.",
+        "evidence": "Honesto sobre ser uma solução sem resfriador. Na nossa leitura, o marketing faz menos alegações de saúde sobre exposição ao frio do que muitos concorrentes.",
+        "value": "US$ 1.200 de hardware. Barato na compra, mas US$ 5–15 por dia em gelo ao longo de meses acaba pesando. Economia de longo prazo melhor do que gambiarras com freezer horizontal, pior do que banheiras com resfriador."
+      },
+      "content": "## Onde ele se destaca\n\nO Ice Barrel 500 é o formato de imersão fria sem resfriador mais limpo do mercado. Barril vertical, plástico de grau alimentício, paredes isoladas e uma ocupação vertical que cabe onde banheiras horizontais não cabem. Para quem quer experimentar a imersão fria diária sem o compromisso de US$ 5.000 de um equipamento com resfriador, este é o formato certo.\n\n## Quais são as desvantagens do Ice Barrel 500?\n\nA principal desvantagem é que você paga gelo todos os dias. Em climas frios isso é desprezível (use neve); em climas quentes são US$ 5–15 por dia. Anualizado, pode rivalizar com o custo amortizado ao longo de vários anos de um equipamento com resfriador. As trocas de água são manuais, não há ozônio e o tempo que a temperatura se mantém por abastecimento é limitado.\n\n## Quem deve comprar o Ice Barrel 500?\n\nEscolha o Ice Barrel 500 se você quer experimentar a imersão fria diária antes de se comprometer com um equipamento com resfriador — ou se o seu clima é frio o bastante para que o custo do gelo não importe. Em climas quentes, com intenção de uso diário, faça as contas das banheiras com resfriador (Plunge ou Edge) antes de optar pelo barril.\n\n---\n\n## Leitura complementar\n\nA biologia de por que a exposição ao frio funciona — e os protocolos que se somam ao equipamento.\n\n- [Exercícios para o nervo vago](/articles/vagus-nerve-exercises) — na imersão do corpo inteiro a reação principal é o choque de frio simpático; a resposta vagal (de mergulho) vem principalmente do frio no rosto, e a variabilidade da frequência cardíaca (HRV ou VFC) sobe apenas durante a exposição ([evidências](/science/evidence/cold-exposure))\n- [Controle do eixo HPA e regulação do cortisol](/articles/hpa-axis-control-cortisol-aggression) — como a exposição ao frio molda a curva do cortisol\n- [Fadiga adrenal: o que dizem as evidências](/articles/adrenal-governor-thermal-runaway) — por que a exaustão ligada ao estresse não são \"adrenais esgotadas\" e quando procurar um médico\n",
+      "faq": [
+        {
+          "q": "O Ice Barrel 500 tem resfriador?",
+          "a": "Não. O Ice Barrel 500 não tem resfriador: você enche com água e gelo. Isso mantém o preço de compra em US$ 1.200, cerca de um quinto do The Plunge, mas o gelo diário vira uma despesa de uso real, e o quanto ele segura a temperatura depende do seu clima."
+        },
+        {
+          "q": "Quanto custa manter um Ice Barrel 500?",
+          "a": "Além dos US$ 1.200 do preço de compra, o principal custo de uso é o gelo, cerca de US$ 5–15 por dia de uso, dependendo do seu clima. Com uso regular isso pesa, e é o atrito diário de qualquer banheira sem resfriador. Ele também exige mais manutenção do que banheiras com resfriador."
+        },
+        {
+          "q": "Para quem o Ice Barrel 500 é mais indicado?",
+          "a": "Ele atende quem quer uma banheira de imersão fria limpa e compacta sem pagar preços da faixa com resfriador. A ocupação vertical cabe em espaços pequenos, é próprio para área externa e fácil de esvaziar, e tem vários anos de histórico no mercado. A garantia é de um ano, contra três do The Plunge."
+        }
+      ]
+    },
+    "balance": {
+      "verdict": "Um app de meditação que se adapta a você — um plano realmente personalizado, com um ano inteiro grátis para testar e algumas arestas a aparar.",
+      "summary": "O Balance é a escolha da personalização. Ele monta um plano adaptativo em torno do seu nível, dos seus objetivos e do seu feedback, em vez de entregar uma biblioteca fixa, e oferece um ano inteiro grátis para testar. A adaptação não é perfeita, e o app para Android já recebeu reclamações de confiabilidade.",
+      "description": "Análise da ONDA do Balance — o app de meditação que monta um plano adaptativo e personalizado. Notas: personalização, biblioteca, versão grátis e valor.",
+      "bestFor": "Melhor para um plano de meditação que se adapta ao seu nível e aos seus objetivos.",
+      "testNote": "Avaliação baseada em evidências — a partir de informações públicas, dados das lojas de apps e análises independentes de 2026. Não se baseia em um longo teste prático feito pela ONDA.",
+      "productType": "App de meditação",
+      "pros": [
+        "Planos realmente adaptativos e personalizados",
+        "Um teste grátis completo de 12 meses",
+        "Ensino claro, em formato de curso",
+        "Preço razoável depois do período de teste"
+      ],
+      "cons": [
+        "A personalização nem sempre acerta o nível",
+        "O app para Android já recebeu reclamações de confiabilidade",
+        "Biblioteca menor que a do Calm ou do Insight Timer",
+        "Exige assinatura depois do ano de teste"
+      ],
+      "scoreNotes": {
+        "content-library": "Uma biblioteca sólida baseada em planos — construída em torno de programas guiados, e não de um catálogo extenso.",
+        "teaching": "Ensino claro, em formato de curso, que desenvolve habilidades fundamentais.",
+        "personalization": "O destaque — um plano adaptativo ajustado ao seu nível, à sua frequência e ao seu feedback, embora nem sempre acerte o nível.",
+        "app-experience": "Limpo no iOS, mas o app para Android já recebeu reclamações de confiabilidade — áudio cortando, falhas na assinatura.",
+        "free-tier": "Um teste grátis de 12 meses incomumente generoso — na prática, um ano inteiro de prática antes de pagar.",
+        "value": "Cerca de 70 USD por ano depois do teste — justo para um plano personalizado.",
+        "evidence": "Algum embasamento, mas as evidências não são o foco."
+      },
+      "content": "## Onde ele se destaca\n\nO Balance é a escolha da personalização deste grupo. Em vez de jogar você em um catálogo enorme, ele monta um plano adaptativo — ajustado ao seu nível de experiência, à frequência com que você pratica e ao feedback que você dá depois das sessões — e vai se ajustando com o tempo. Ele também tem a porta de entrada mais generosa daqui: um teste grátis completo de 12 meses, para você manter uma prática real por um ano antes de decidir pagar.\n\n## Quais são as desvantagens do Balance?\n\nA adaptação é boa, não perfeita — análises independentes apontam que ela nem sempre escolhe o nível certo do curso. O problema maior é a confiabilidade no Android, onde usuários relataram áudio cortando no meio da sessão e falhas na assinatura. E a biblioteca, embora bem construída, é menor que os catálogos extensos do Calm ou do Insight Timer.\n\n## Quem deve escolher o Balance?\n\nEscolha o Balance se você quer um plano que parta de onde você está e se adapte com o tempo, e se o teste grátis de um ano te atrai. Se você quer a maior biblioteca, ou usa Android e se preocupa com confiabilidade, o Insight Timer ou o Headspace são escolhas mais seguras.\n\n---\n\n## Leitura complementar\n\nA ciência do que a meditação realmente faz no nível do sistema nervoso.\n\n- [Sincronização neural por meio da meditação](/articles/neural-entrainment-meditation-2) — por que a prática estruturada remodela os estados corticais de base\n- [Ondas cerebrais alfa: calma, criatividade e flow](/articles/neural-bridge-alpha-flow-gateway) — o que o ritmo alfa faz e o que headsets, apps e músicas \"alfa\" podem ou não mudar\n- [Sincronização rítmica e frequências do sistema](/articles/rhythmic-entrainment-system-frequencies) — por que áudios ritmados e protocolos de respiração se somam com a prática\n",
+      "faq": [
+        {
+          "q": "Vale a pena usar o Balance?",
+          "a": "Sim, se você quer um plano de meditação que se adapte a você. O Balance monta um plano personalizado em torno do seu nível, dos seus objetivos e do seu feedback, e oferece um teste grátis completo de 12 meses. A adaptação não é perfeita, a biblioteca é menor que a do Calm ou do Insight Timer, e o app para Android já recebeu reclamações de confiabilidade."
+        },
+        {
+          "q": "Quanto custa o Balance?",
+          "a": "O Balance custa cerca de US$ 70 por ano, cobrados depois de um teste grátis de 12 meses. Assim, o primeiro ano inteiro é grátis para testar o plano adaptativo e personalizado antes de se comprometer, e o preço depois do teste é razoável para uma assinatura de meditação."
+        },
+        {
+          "q": "Quais são as desvantagens do Balance?",
+          "a": "A personalização do Balance nem sempre acerta o nível, e o app para Android já recebeu reclamações de confiabilidade. A biblioteca é menor que a do Calm ou do Insight Timer, e é preciso assinar quando o ano de teste termina."
+        },
+        {
+          "q": "Balance ou Calm: qual é melhor?",
+          "a": "O Balance é melhor para um plano de meditação personalizado, em formato de curso; o Calm é melhor para conteúdo de sono e relaxamento. O Balance se adapta ao seu nível e aos seus objetivos e oferece um ano grátis, enquanto o Calm oferece uma biblioteca maior, construída em torno das Sleep Stories e de paisagens sonoras."
+        }
+      ]
     }
   },
   "comparisons": {
@@ -6696,7 +6866,7 @@
       "axes": [
         {
           "name": "Evidências clínicas",
-          "note": "Nenhum tem ensaios publicados do próprio aparelho. O LightStim é liberado pela FDA (K120775; modelo atual K261482), mas os únicos dados sobre rugas em seus registros na FDA são um estudo não publicado da empresa com um modelo anterior; o Solawave é registrado na FDA (uma listagem, não uma liberação), com depoimentos de consumidores financiados pela marca. O status na FDA é neutro nas notas da ONDA."
+          "note": "O LightStim leva vantagem: nenhum tem ensaios publicados do próprio aparelho e o estudo não publicado da empresa LightStim não conta; a liberação da FDA do LightStim (K120775; modelo atual K261482) é neutra, enquanto o respaldo do Solawave são depoimentos de consumidores financiados pela marca."
         },
         {
           "name": "Cobertura de comprimentos de onda",
@@ -7023,7 +7193,7 @@
         },
         {
           "name": "Construção",
-          "note": "Plunge: acrílico premium com isolamento. Ice Barrel: barril de plástico de grau alimentício com isolamento. Ambas sólidas para sua faixa."
+          "note": "The Plunge leva vantagem: uma banheira de acrílico isolada com ferragens de grau marítimo e 3 anos de garantia, contra o barril isolado de plástico de grau alimentício da Ice Barrel com 1 ano de garantia. Ambas têm um histórico sólido de confiabilidade de vários anos."
         },
         {
           "name": "Espaço ocupado",
@@ -7338,6 +7508,63 @@
         }
       ],
       "content": "> Atualização (setembro de 2026): a Eight Sleep substituiu o Pod 5 pelo Pod 6 em 23 de setembro de 2026 (a partir de $1.999 o Solo; $2.899 a queen de zona dupla). Os preços do Pod 5 abaixo são os últimos preços de tabela — compare o estoque restante do Pod 5 com os preços do Pod 6.\n\n## A versão curta\n\nExtremos opostos do mercado. O [Eight Sleep Pod 5](/reviews/eight-sleep-pod-5) é a cama inteligente resfriada a água mais completa — resfriamento preciso de zona dupla, monitoramento de HRV, software Autopilot, extras para a cama toda — a ~$6.099 pelo Pod 5 Ultra mais uma assinatura. O [BedJet 3](/reviews/bedjet-3) sopra ar frio ou quente sob o lençol por ~$600, sem água e sem monitoramento.\n\n## Quando o Eight Sleep Pod 5 é a escolha certa?\n\nVocê quer o resfriamento mais rigoroso e monitoramento integrado da recuperação, e o preço premium e a assinatura são aceitáveis. É o sistema para otimizar o sono com base em dados.\n\n## Quando o BedJet 3 é a escolha certa?\n\nVocê quer resfriar a cama de forma eficaz e acessível sem lidar com água nem pagar assinatura, com instalação fácil, e não precisa de monitoramento integrado nem de controle preciso grau a grau.\n\n## Também vale comparar\n\nPara o caminho intermediário de resfriamento a água sem assinatura, veja [Pod 5 vs ChiliPad Dock Pro](/reviews/vs/eight-sleep-pod-5-vs-chilipad-dock-pro). Panorama completo: [os melhores sistemas inteligentes de climatização do sono](/reviews/smart-sleep-climate)."
+    },
+    "finnleo-hallmark-vs-almost-heaven-salem": {
+      "title": "Finnleo Hallmark vs Almost Heaven Salem: comparativo 2026",
+      "description": "Finnleo Hallmark vs Almost Heaven Salem: a ONDA compara duas saunas tradicionais de estilo finlandês. Cabine interna finlandesa vs barril de cedro.",
+      "intro": "Finnleo Hallmark e Almost Heaven Salem são as duas saunas tradicionais de convecção em estilo finlandês que as pessoas comparam quando o IR não é a escolha. Ambas entregam o calor pleno da sauna finlandesa (80–95 °C) com possibilidade de vapor löyly e têm confiabilidade de marca de várias décadas. A diferença estrutural é uma cabine interna de engenharia finlandesa contra um barril externo de cedro americano.",
+      "verdict": "O formato decide. Finnleo Hallmark para instalação interna com tradição de fabricação finlandesa. Almost Heaven Salem para instalação de barril externo com construção em cedro americano.",
+      "bestForA": "Escolha a Finnleo Hallmark se você quer uma sauna finlandesa interna premium, com calor de engenharia Helo e uma longa história de fabricação finlandesa.",
+      "bestForB": "Escolha a Almost Heaven Salem se você quer uma sauna barril tradicional de cedro para área externa, de construção americana, com aquecedor elétrico de 6 kW e o preço mais baixo (US$ 4.485 de preço de tabela pela Salem para 2 pessoas).",
+      "axes": [
+        {
+          "name": "Qualidade do aquecedor",
+          "note": "Finnleo: aquecedor finlandês de engenharia Helo — um nome consolidado no calor tradicional da sauna finlandesa. Almost Heaven Salem: aquecedor elétrico Harvia de 6 kW (240 V, ligação fixa)."
+        },
+        {
+          "name": "Formato",
+          "note": "Finnleo: instalação de cabine interna. Almost Heaven: instalação de barril externo. Funções diferentes; escolha conforme o local de instalação."
+        },
+        {
+          "name": "Tradição de fabricação",
+          "note": "Finnleo: tradição de fabricação finlandesa, tsuga ou abeto nórdico. Almost Heaven: cedro vermelho ocidental americano, histórico de marca de várias décadas."
+        },
+        {
+          "name": "Garantia",
+          "note": "Almost Heaven Salem: garantia vitalícia limitada contra defeitos de fabricação (aquecedor: 1 ano para as resistências, 5 anos para as demais peças). Finnleo: não encontramos os termos de garantia da Hallmark em uma página oficial da Finnleo; consulte o revendedor. Nem a Salem nem a Hallmark oferecem aquecedor a lenha."
+        },
+        {
+          "name": "EMF",
+          "note": "Ambas são de convecção tradicional — sem eletrônica na entrega de calor, EMF não é problema."
+        },
+        {
+          "name": "Evidências científicas",
+          "note": "Os estudos de coorte finlandeses de Kuopio (risco cardiovascular e de demência; associações, não causa) foram sobre o banho de sauna finlandesa tradicional em geral, não sobre a Finnleo; a cabine elétrica interna é o formato mais próximo."
+        },
+        {
+          "name": "Preço",
+          "note": "Almost Heaven Salem: US$ 4.485 de preço de tabela (US$ 4.036,50 em promoção, outubro de 2026) com aquecedor incluído. Finnleo: US$ 6.000–12.000 ou mais. A Almost Heaven é claramente mais barata."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Finnleo ou Almost Heaven: qual é melhor?",
+          "a": "Decide o formato. Finnleo para uma sauna interna de fabricação finlandesa com aquecedor de engenharia Helo, no formato interno mais próximo dos estudos de coorte finlandeses. Almost Heaven para uma sauna barril externa de cedro vermelho americano para 2 pessoas com aquecedor elétrico de 6 kW a um preço menor."
+        },
+        {
+          "q": "A Finnleo é a marca original de sauna finlandesa?",
+          "a": "Não — o banho de sauna finlandês é muito anterior a qualquer marca. A Finnleo é a marca norte-americana ligada à Helo, fabricante finlandesa tradicional de aquecedores de sauna, e a Hallmark usa um aquecedor de engenharia Helo."
+        },
+        {
+          "q": "Existe Finnleo a lenha?",
+          "a": "Nenhum dos modelos analisados aqui — a Hallmark é apenas elétrica, e a Almost Heaven Salem vem apenas com aquecedor elétrico de 6 kW. A Almost Heaven vende aquecedores a lenha em alguns outros modelos de barril, não na Salem."
+        },
+        {
+          "q": "Qual tem a melhor base de evidências?",
+          "a": "Nenhuma tem estudos específicos do aparelho. A evidência publicada (estudos de coorte observacionais de Kuopio sobre mortalidade cardiovascular e risco de demência — associações, não causa) é sobre o banho de sauna finlandesa tradicional em geral, não sobre nenhuma das marcas. Ambas oferecem esse tipo de calor; a Finnleo é uma cabine interna, a Almost Heaven Salem um barril externo."
+        }
+      ],
+      "content": "## Em resumo\n\nAmbas entregam o calor tradicional da sauna finlandesa com tradição de marca de várias décadas. A Finnleo Hallmark é a referência interna de fabricação finlandesa; a Almost Heaven Salem é o barril externo de cedro vermelho americano.\n\n## Quando a Finnleo Hallmark é a escolha certa?\n\nSe você tem espaço para instalação interna e quer tradição de fabricação finlandesa premium com calor de engenharia Helo — a Finnleo é o formato certo. O formato interno é o mais próximo dos estudos de coorte finlandeses, que analisaram o banho de sauna em geral, não a Finnleo.\n\n## Quando a Almost Heaven Salem é a escolha certa?\n\nSe você tem espaço para instalação externa e quer uma sauna barril tradicional de cedro com construção americana — a Almost Heaven é o formato certo. Ela acomoda duas pessoas, funciona com um aquecedor elétrico de 6 kW (sem opção a lenha na Salem), tem garantia vitalícia limitada contra defeitos e custa claramente menos — US$ 4.485 de preço de tabela com aquecedor incluído."
     }
   },
   "categoryHubs": {

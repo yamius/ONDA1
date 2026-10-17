@@ -2170,8 +2170,48 @@
       "productType": "Meditatie-app"
     },
     "insight-timer": {
-      "verdict": "De grootste meditatiebibliotheek ter wereld, en de enige app hier die je echt gratis kunt gebruiken — wisselende kwaliteit is de prijs.",
-      "productType": "Meditatie-app"
+      "verdict": "Een zeer grote gratis meditatiebibliotheek (volgens Insight Timer de grootste) en de enige app hier die je echt gratis kunt gebruiken — wisselende kwaliteit is de prijs.",
+      "summary": "Insight Timer heeft een zeer grote meditatiebibliotheek — volgens eigen zeggen de grootste — en is een van de zeldzame apps waarmee je zonder te betalen een echte beoefening kunt opbouwen. Het werkt als een YouTube voor meditatie: enorm aanbod, veel leraren, elk uur live-evenementen — en onvermijdelijk wisselende kwaliteit.",
+      "description": "ONDA-review van Insight Timer — zeer grote meditatiebibliotheek en de bruikbaarste gratis versie. Beoordeeld op bibliotheek, begeleiding en prijs.",
+      "bestFor": "Beste keuze over de hele linie — een zeer grote bibliotheek, een echt bruikbare gratis versie en de sterkste prijs-kwaliteit.",
+      "testNote": "Evidence-based beoordeling — op basis van openbare informatie, app-storegegevens en onafhankelijke reviews uit 2026. Niet gebaseerd op een langdurige praktijkproef door ONDA.",
+      "productType": "Meditatie-app",
+      "pros": [
+        "Een zeer grote meditatiebibliotheek (volgens Insight Timer de grootste)",
+        "Een echt bruikbare gratis versie — zeldzaam in deze categorie",
+        "Goedkoopste betaalde abonnement, plus elk uur live-evenementen en community",
+        "Een enorme variatie aan leraren en tradities"
+      ],
+      "cons": [
+        "De kwaliteit wisselt per sessie",
+        "Minder gestructureerde begeleiding dan cursusgerichte apps",
+        "De hoeveelheid kan rommelig en lastig navigeerbaar aanvoelen",
+        "Door de community gemaakte content is ongelijk onderbouwd"
+      ],
+      "scoreNotes": {
+        "content-library": "Een zeer grote bibliotheek — 360.000 gratis tracks volgens de maker, plus cursussen.",
+        "teaching": "Een enorme variatie aan leraren en tradities; de diepgang is er, maar de kwaliteit wisselt per sessie.",
+        "personalization": "Minder begeleid dan cursusgerichte apps — je stelt je eigen route grotendeels zelf samen.",
+        "app-experience": "Functioneel en rijk aan functies, maar de enorme hoeveelheid kan rommelig aanvoelen.",
+        "free-tier": "De opvallendste gratis versie in de categorie — een echte beoefening is mogelijk zonder te betalen.",
+        "value": "Het goedkoopste betaalde abonnement hier, bovenop een zeer grote gratis bibliotheek — koploper in prijs-kwaliteit.",
+        "evidence": "Kwaliteit en onderbouwing lopen sterk uiteen in een door de community gemaakte bibliotheek."
+      },
+      "content": "## Waar het voorloopt\n\nInsight Timer heeft een zeer grote meditatiebibliotheek — volgens eigen zeggen de grootste — en is de enige app in deze vergelijking waarmee je echt zonder te betalen een beoefening kunt opbouwen. Het werkt minder als een samengestelde cursus en meer als een YouTube voor meditatie: 360.000 gratis tracks, duizenden leraren, elk uur live-evenementen en een actieve community. Qua aanbod — en qua gratis versie die een echt aanbod is in plaats van een lokkertje — komt niets hier in de buurt.\n\n## Wat zijn de nadelen van Insight Timer?\n\nBreedte heeft een prijs. Omdat de bibliotheek door de community wordt gemaakt, wisselt de kwaliteit per sessie, en word je veel minder gestructureerd aan de hand genomen dan in een Headspace-cursus — je stelt je eigen route grotendeels zelf samen. De app zit zo vol functies dat hij rommelig aanvoelt, en de content is ongelijk onderbouwd.\n\n## Voor wie is Insight Timer geschikt?\n\nKies Insight Timer als je zo veel mogelijk keuze, sterke prijs-kwaliteit en de vrijheid om gratis te oefenen wilt — en het je niet uitmaakt een deel van de selectie zelf te doen. Word je liever langs een duidelijk, gecontroleerd pad begeleid, dan is Headspace de meer gestructureerde keuze.\n\n---\n\n## Achtergrondinformatie\n\nDe wetenschap achter wat meditatie werkelijk doet op het niveau van het zenuwstelsel.\n\n- [Fysiologische concentratie: hoe de flowstaat is verankerd](/articles/physiological-concentration-flow-state-hardwired) — welke neurochemie de flowstaat werkelijk nodig heeft\n- [Alfa-hersengolven: rust, creativiteit en flow](/articles/neural-bridge-alpha-flow-gateway) — wat het alfaritme doet, en wat alfa-headsets, apps en muziek wel en niet kunnen veranderen\n- [Neurale synchronisatie door meditatie](/articles/neural-entrainment-meditation-2) — waarom gestructureerde beoefening de corticale basistoestanden herschikt\n",
+      "faq": [
+        {
+          "q": "Is Insight Timer gratis?",
+          "a": "Grotendeels wel. Insight Timer heeft een zeer uitgebreide gratis versie waarmee je echt een beoefening kunt opbouwen, wat zeldzaam is bij meditatie-apps. Member Plus kost US$60 per jaar met een gratis proefperiode van 7 dagen, het goedkoopste betaalde abonnement in de vergelijking, en er zijn elk uur live-evenementen en communityfuncties."
+        },
+        {
+          "q": "Is betalen voor Insight Timer de moeite waard?",
+          "a": "Voor veel mensen is de gratis versie genoeg, en dat is de grootste kracht van de app. Met US$60 per jaar is Member Plus het goedkoopste betaalde abonnement onder de grote meditatie-apps, dus upgraden is weinig riskant als je meer wilt. Het nadeel is de wisselende kwaliteit van de sessies, niet de prijs."
+        },
+        {
+          "q": "Insight Timer vs Headspace: wat is beter?",
+          "a": "Insight Timer wint op breedte en prijs-kwaliteit: het heeft een zeer grote meditatiebibliotheek (volgens eigen zeggen de grootste) en een bruikbare gratis versie. Headspace wint op structuur, met duidelijkere cursusgerichte begeleiding voor beginners. De door de community gemaakte content van Insight Timer kan rommelig en ongelijk aanvoelen."
+        }
+      ]
     },
     "amazfit-helio-ring": {
       "verdict": "Een echt goedkope ring zonder abonnement met basale slaapmeting (schattingen van slaapfasen, niet onafhankelijk gevalideerd) en HRV — maar slechts drie maten en een korte batterijduur in de praktijk maken hem een budgetkeuze, geen Oura-concurrent.",
@@ -3097,7 +3137,50 @@
     },
     "relax-sauna-portable": {
       "verdict": "De veteraan onder de draagbare ver-IR-sauna's — ontwerp met stoel en tent, lage EMF, niche maar een echt product.",
-      "productType": "Draagbare ver-IR-sauna (tent- / stoelconfiguratie)"
+      "summary": "De Relax Sauna Portable is de al lang bestaande draagbare ver-IR-sauna met stoel en tent. Een opvouwbare behuizing plus zittende opstelling levert ver-IR-blootstelling zonder dat je je vastlegt op een cabine. Kleinere gebruikersgroep dan de HigherDose Blanket, maar met gedocumenteerde lage EMF en een echte productiegeschiedenis van meer dan 20 jaar.",
+      "description": "ONDA-review van de Relax Sauna Portable — de al lang bestaande draagbare ver-IR-sauna in tent-/stoelvorm.",
+      "bestFor": "Beste voor wie een rechtopstaande draagbare ver-IR-sauna wil zonder vast te zitten aan een cabine of deken.",
+      "testNote": "Evidence-based beoordeling — op basis van productdocumentatie van Relax Sauna en onafhankelijke reviews van draagbare IR-sauna's uit 2026. Niet in de praktijk getest door ONDA.",
+      "productType": "Draagbare ver-IR-sauna (tent- / stoelconfiguratie)",
+      "pros": [
+        "Al lang bestaand merk met tientallen jaren betrouwbaarheid",
+        "Gedocumenteerde lage EMF",
+        "Opvouwbaar om op te bergen — geen installatie",
+        "De stoel-en-tentergonomie past bij wie liggen in een deken niet prettig vindt"
+      ],
+      "cons": [
+        "Alleen ver-IR — geen nabij- of midden-IR",
+        "Duurder dan de HigherDose Blanket voor draagbare IR",
+        "Kleinere gebruikersgroep dan de grote IR-merken",
+        "Opstelling met stoel en tent kost meer moeite dan een deken"
+      ],
+      "scoreNotes": {
+        "heat-source": "Alleen ver-IR via halfgeleider-ver-IR-stralers. Gedocumenteerd ver-IR-golflengtebereik; geen nabij- of midden-IR.",
+        "build": "Al lang bestaand merk (meer dan 20 jaar). Tent-/stoelconstructie is opvouwbaar om op te bergen. Standaardgarantie.",
+        "emf": "Lage EMF volgens de maker; we vonden geen onafhankelijk EMF-testrapport.",
+        "form-factor": "Tent en stoel vouwen op om op te bergen. Geen installatie. Hoofd buiten de behuizing tijdens gebruik (andere ergonomie dan een deken).",
+        "evidence": "Kleinere onderzoeksbasis dan de grote IR-merken. Marketing op wellnessniveau.",
+        "value": "$1.500 — duurder dan de HigherDose Blanket voor een vorm die wellicht minder breed inzetbaar is."
+      },
+      "content": "## Waar het voorloopt\n\nDe Relax Sauna Portable is de rechtopstaande draagbare ver-IR-optie voor wie liggen in een deken niet prettig vindt. Ontwerp met stoel en tent, opvouwbaar, geen installatie, gedocumenteerde lage EMF, een merk met meer dan 20 jaar geschiedenis. Voor wie zittend IR wil dat je kunt opbergen, is dit de juiste vorm.\n\n## Wat zijn de nadelen van de Relax Sauna Portable?\n\nDuurder dan de HigherDose Blanket voor minder flexibiliteit in vorm. Alleen ver-IR-spectrum. Kleinere gebruikersgroep en onderzoeksbasis dan de grote IR-merken.\n\n## Voor wie is de Relax Sauna Portable geschikt?\n\nKies de Relax Sauna Portable als je rechtopstaande, zittende draagbare IR wilt en de stoel-tentergonomie je juist goed bevalt. Voor een draagbare deken: HigherDose. Voor een IR-cabine: Sunlighten / Clearlight / JNH.\n\n---\n\n## Achtergrondinformatie\n\nAchtergrondinformatie over de ideeën achter warmteblootstelling — vooral hypothesen, geen effecten die bij mensen zijn aangetoond.\n\n- [Sauna in een longevity-routine](/articles/longevity-protocol-biological-clock-reset) — achtergrond over dagelijkse routines\n- [Sturing van de HPA-as en cortisolregulatie](/articles/hpa-axis-control-cortisol-aggression) — de hitteschokkant van de stressreactie\n- [Stress, herstel en het zenuwstelsel](/articles/anti-entropy-neural-architecture) — achtergrond over sauna als korte hittestress\n",
+      "faq": [
+        {
+          "q": "Is de Relax Sauna Portable de moeite waard?",
+          "a": "De Relax Sauna is de moeite waard als je een rechtopstaande draagbare ver-IR-sauna wilt zonder je vast te leggen op een cabine of deken. Hij komt van een al lang bestaand merk met gedocumenteerde lage EMF, vouwt op om op te bergen en heeft geen installatie nodig. Hij biedt alleen ver-IR en kost meer dan de HigherDose Blanket."
+        },
+        {
+          "q": "Hoeveel kost de Relax Sauna Portable?",
+          "a": "De Relax Sauna Portable staat vermeld voor eenmalig $1.500 voor de configuratie met stoel en tent. Dat is duurder dan de HigherDose Blanket voor draagbare infrarood, maar hij heeft geen installatie nodig en vouwt op om op te bergen. Het is een ontwerp met stoel en tent."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Relax Sauna Portable?",
+          "a": "Hij biedt alleen ver-IR zonder nabij- of midden-IR, is duurder dan de HigherDose Blanket voor draagbare IR, heeft een kleinere gebruikersgroep dan de grote IR-merken, en de opstelling met stoel en tent kost meer moeite dan een deken."
+        },
+        {
+          "q": "Relax Sauna vs HigherDose Blanket: wat is beter?",
+          "a": "De HigherDose Blanket is goedkoper en eenvoudiger op te zetten. De Relax Sauna past bij wie liggen in een deken niet prettig vindt, met een rechtopstaand ontwerp met stoel en tent, gedocumenteerde lage EMF en een lange staat van dienst qua betrouwbaarheid."
+        }
+      ]
     },
     "olylife-tera-p90-plus": {
       "verdict": "Populaire budgetstaaf die PEMF combineert met terahertzclaims — toegankelijke prijs, maar de terahertzmarketing overdrijft het gepubliceerde bewijs.",
@@ -3815,8 +3898,95 @@
       ]
     },
     "ice-barrel-500": {
-      "verdict": "Het populairste tonvormige ijsbad – degelijke bouw, geen koeler, de kosten van ijs zijn de dagelijkse drempel.",
-      "productType": "Geïsoleerde ton (zonder koeler, met ijs te vullen)"
+      "verdict": "Een veelverkocht tonvormig ijsbad — degelijke bouw, geen koeler, de kosten van ijs zijn de dagelijkse drempel.",
+      "summary": "De Ice Barrel 500 is een rechtopstaande geïsoleerde ton — een schonere, kant-en-klare vervanger voor zelfgebouwde ijsbaden uit een vrieskist. Geen koeler — je vult hem met water en ijs — dus de dagelijkse ijskosten ($5–15 per gebruiksdag, afhankelijk van het klimaat) zijn de onzekere factor in de gebruikskosten. Sterke bouw, opvallende verticale vormgeving, 1 jaar garantie.",
+      "description": "ONDA-review van de Ice Barrel 500 — de populaire geïsoleerde ton voor ijsbaden met ijs. Beoordeeld op bouw, formaat en prijs.",
+      "bestFor": "Beste voor wie een strakke tonvorm voor consumenten wil zonder te kiezen voor prijzen van koelermodellen.",
+      "testNote": "Evidence-based beoordeling — op basis van productdocumentatie van Ice Barrel en onafhankelijke reviews uit 2026. Niet in de praktijk getest door ONDA.",
+      "productType": "Geïsoleerde ton (zonder koeler, met ijs te vullen)",
+      "pros": [
+        "Bekend ijsbad zonder koeler met een staat van dienst van meerdere jaren op de markt",
+        "Compacte verticale voetafdruk past in kleinere ruimtes",
+        "Geschikt voor buiten en makkelijk te legen",
+        "Goedkoop in aanschaf — $1.200 is ongeveer een vijfde van The Plunge"
+      ],
+      "cons": [
+        "Geen koeler — dagelijks ijs is een echte gebruikskostenpost",
+        "Meer onderhoud dan baden met ingebouwde koeler",
+        "Hoe goed de temperatuur blijft, hangt af van het klimaat",
+        "1 jaar garantie (vs 3 jaar bij Plunge, 2 jaar bij Edge)"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "Geen koeler. De temperatuur hangt volledig af van de ijsvulling, de omgevingstemperatuur en hoe lang de isolatie de kou vasthoudt. Blijft per vulling ongeveer 30–60 minuten bruikbaar koud.",
+        "build": "Ton van voedselveilig kunststof met isolatie. UV-bestendige buitenkant. 1 jaar garantie. Degelijke betrouwbaarheid over meerdere jaren.",
+        "water-management": "Geen ozon of filter — handmatig water verversen elke 1–2 weken plus dagelijks ijs bijvullen. Meer onderhoud dan baden met ingebouwde koeler.",
+        "form-factor": "Rechtopstaand ontwerp met een kleinere voetafdruk dan liggende baden (32\" diameter). Geschikt voor buiten. Makkelijk te legen via de kraan.",
+        "evidence": "Eerlijk over het feit dat het een oplossing zonder koeler is. Volgens onze lezing doet de marketing minder gezondheidsclaims over koudeblootstelling dan veel concurrenten.",
+        "value": "$1.200 voor de hardware. Goedkoop in aanschaf, maar $5–15/dag aan ijs telt over maanden op. Op lange termijn voordeliger dan vrieskist-oplossingen, minder voordelig dan baden met ingebouwde koeler."
+      },
+      "content": "## Waar het voorloopt\n\nDe Ice Barrel 500 is de strakste ijsbadvorm zonder koeler op de markt. Rechtopstaande ton, voedselveilig kunststof, geïsoleerde wanden, een verticale voetafdruk die past waar liggende baden dat niet doen. Voor wie dagelijks ijsbaden wil uitproberen zonder de investering van $5K in koelhardware, is dit de juiste vorm.\n\n## Wat zijn de nadelen van de Ice Barrel 500?\n\nHet grootste nadeel is dat je elke dag voor ijs betaalt. In koude klimaten is dat verwaarloosbaar (gebruik sneeuw); in warme klimaten is het $5–15/dag. Op jaarbasis kan dat wedijveren met de over meerdere jaren afgeschreven kosten van een model met koeler. Water verversen gaat handmatig, er is geen ozon, en hoe lang de temperatuur per vulling blijft, is beperkt.\n\n## Voor wie is de Ice Barrel 500 geschikt?\n\nKies de Ice Barrel 500 als je dagelijks ijsbaden wilt uitproberen voordat je je vastlegt op koelhardware — of als je klimaat koud genoeg is dat ijskosten geen rol spelen. Bij een warm klimaat en de intentie om dagelijks te baden, reken je eerst de cijfers van modellen met koeler (Plunge of Edge) door voordat je voor de ton kiest.\n\n---\n\n## Achtergrondinformatie\n\nDe biologie achter waarom koudeblootstelling werkt — en de protocollen die met de hardware samen sterker worden.\n\n- [Oefeningen voor de nervus vagus](/articles/vagus-nerve-exercises) — bij onderdompeling van het hele lichaam is de hoofdreactie de sympathische koudeschok; de vagale reactie (duikreflex) komt vooral van kou op het gezicht, en de hartslagvariabiliteit (HRV) stijgt alleen tijdens de blootstelling ([bewijs](/science/evidence/cold-exposure))\n- [Sturing van de HPA-as en cortisolregulatie](/articles/hpa-axis-control-cortisol-aggression) — hoe koudeblootstelling de cortisolcurve vormt\n- [Bijniervermoeidheid: wat het bewijs zegt](/articles/adrenal-governor-thermal-runaway) — waarom stressgerelateerde uitputting geen \"opgebrande bijnieren\" is, en wanneer je naar een arts gaat\n",
+      "faq": [
+        {
+          "q": "Heeft de Ice Barrel 500 een koeler?",
+          "a": "Nee. De Ice Barrel 500 heeft geen koeler: je vult hem met water en ijs. Daardoor blijft de aanschafprijs op $1.200, ongeveer een vijfde van The Plunge, maar dagelijks ijs wordt een echte gebruikskostenpost, en hoe goed hij de temperatuur vasthoudt, hangt af van je klimaat."
+        },
+        {
+          "q": "Hoeveel kost het om een Ice Barrel 500 te gebruiken?",
+          "a": "Naast de aanschafprijs van $1.200 zijn de belangrijkste lopende kosten ijs, ongeveer $5–15 per gebruiksdag afhankelijk van je klimaat. Bij regelmatig gebruik telt dat op, de dagelijkse drempel van elk ijsbad zonder koeler. Hij vraagt ook meer onderhoud dan baden met ingebouwde koeler."
+        },
+        {
+          "q": "Voor wie is de Ice Barrel 500 het meest geschikt?",
+          "a": "Hij past bij mensen die een strak, compact ijsbad willen zonder prijzen van koelermodellen te betalen. De verticale voetafdruk past in kleine ruimtes, hij is geschikt voor buiten, makkelijk te legen en heeft een staat van dienst van meerdere jaren op de markt. De garantie is één jaar, tegenover drie bij The Plunge."
+        }
+      ]
+    },
+    "balance": {
+      "verdict": "Een meditatie-app die zich aan jou aanpast — een echt gepersonaliseerd plan, een heel jaar gratis om te proberen en een paar ruwe randjes.",
+      "summary": "Balance is de keuze voor personalisatie. De app bouwt een adaptief plan rond je niveau, doelen en feedback in plaats van je een vaste bibliotheek voor te schotelen, en je kunt hem een heel jaar gratis proberen. De aanpassing is niet foutloos, en over de Android-app zijn klachten over betrouwbaarheid geweest.",
+      "description": "ONDA-review van Balance — de meditatie-app met een adaptief, gepersonaliseerd plan. Beoordeeld op personalisatie, bibliotheek, gratis versie en prijs.",
+      "bestFor": "Beste voor een meditatieplan dat zich aanpast aan je niveau en doelen.",
+      "testNote": "Evidence-based beoordeling — op basis van openbare informatie, app-storegegevens en onafhankelijke reviews uit 2026. Niet gebaseerd op een langdurige praktijkproef door ONDA.",
+      "productType": "Meditatie-app",
+      "pros": [
+        "Echt adaptieve, gepersonaliseerde plannen",
+        "Een volledige gratis proefperiode van 12 maanden",
+        "Heldere begeleiding in cursusstijl",
+        "Redelijke prijs na de proefperiode"
+      ],
+      "cons": [
+        "De personalisatie kiest niet altijd het juiste niveau",
+        "Over de Android-app zijn klachten over betrouwbaarheid",
+        "Kleinere bibliotheek dan Calm of Insight Timer",
+        "Na het proefjaar is een abonnement nodig"
+      ],
+      "scoreNotes": {
+        "content-library": "Een degelijke, op plannen gebaseerde bibliotheek — opgebouwd rond begeleide programma's in plaats van een uitdijende catalogus.",
+        "teaching": "Heldere begeleiding in cursusstijl die basisvaardigheden opbouwt.",
+        "personalization": "Het sterkste punt — een adaptief plan afgestemd op je niveau, oefenfrequentie en feedback, al kiest het niet altijd het juiste niveau.",
+        "app-experience": "Strak op iOS, maar over de Android-app zijn klachten over betrouwbaarheid — wegvallend geluid, problemen met het abonnement.",
+        "free-tier": "Een ongewoon royale gratis proefperiode van 12 maanden — in feite een heel jaar oefenen voordat je betaalt.",
+        "value": "Ongeveer 70 USD per jaar na de proefperiode — redelijk voor een gepersonaliseerd plan.",
+        "evidence": "Enige onderbouwing, maar bewijs staat niet centraal."
+      },
+      "content": "## Waar het voorloopt\n\nBalance is in deze groep de keuze voor personalisatie. In plaats van je in een enorme catalogus te laten vallen, bouwt de app een adaptief plan — afgestemd op je ervaringsniveau, hoe vaak je oefent en de feedback die je na sessies geeft — en past het onderweg aan. Het heeft ook de royaalste instap hier: een volledige gratis proefperiode van 12 maanden, zodat je een jaar lang echt kunt oefenen voordat je besluit te betalen.\n\n## Wat zijn de nadelen van Balance?\n\nDe aanpassing is goed, niet perfect — onafhankelijke reviews merken op dat het niet altijd het juiste cursusniveau kiest. Het grotere probleem is de betrouwbaarheid op Android, waar gebruikers melden dat het geluid midden in een sessie wegvalt en dat er problemen met het abonnement zijn. En de bibliotheek is weliswaar goed opgebouwd, maar kleiner dan de uitdijende catalogi van Calm of Insight Timer.\n\n## Voor wie is Balance geschikt?\n\nKies Balance als je een plan wilt dat aansluit bij waar je staat en zich in de loop van de tijd aanpast, en de gratis proefperiode van een jaar je aanspreekt. Wil je de grootste bibliotheek, of gebruik je Android en maak je je zorgen over betrouwbaarheid, dan zijn Insight Timer of Headspace veiligere keuzes.\n\n---\n\n## Achtergrondinformatie\n\nDe wetenschap achter wat meditatie werkelijk doet op het niveau van het zenuwstelsel.\n\n- [Neurale synchronisatie door meditatie](/articles/neural-entrainment-meditation-2) — waarom gestructureerde beoefening de corticale basistoestanden herschikt\n- [Alfa-hersengolven: rust, creativiteit en flow](/articles/neural-bridge-alpha-flow-gateway) — wat het alfaritme doet, en wat alfa-headsets, apps en muziek wel en niet kunnen veranderen\n- [Ritmische synchronisatie en systeemfrequenties](/articles/rhythmic-entrainment-system-frequencies) — waarom getimede audio en ademprotocollen zich met oefening versterken\n",
+      "faq": [
+        {
+          "q": "Is Balance de moeite waard?",
+          "a": "Ja, als je een meditatieplan wilt dat zich aan jou aanpast. Balance bouwt een gepersonaliseerd plan rond je niveau, doelen en feedback en biedt een volledige gratis proefperiode van 12 maanden. De aanpassing is niet foutloos, de bibliotheek is kleiner dan die van Calm of Insight Timer, en over de Android-app zijn klachten over betrouwbaarheid."
+        },
+        {
+          "q": "Hoeveel kost Balance?",
+          "a": "Balance kost ongeveer $70 per jaar, in rekening gebracht na een gratis proefperiode van 12 maanden. Zo is het eerste volle jaar gratis om het adaptieve, gepersonaliseerde plan te testen voordat je je vastlegt, en de prijs na de proefperiode is redelijk voor een meditatieabonnement."
+        },
+        {
+          "q": "Wat zijn de nadelen van Balance?",
+          "a": "De personalisatie van Balance kiest niet altijd het juiste niveau, en over de Android-app zijn klachten over betrouwbaarheid. De bibliotheek is kleiner dan die van Calm of Insight Timer, en na het proefjaar is een abonnement nodig."
+        },
+        {
+          "q": "Balance vs Calm: wat is beter?",
+          "a": "Balance is beter voor een gepersonaliseerd meditatieplan in cursusstijl; Calm is beter voor content rond slaap en ontspanning. Balance past zich aan je niveau en doelen aan en biedt een jaar gratis, terwijl Calm een grotere bibliotheek biedt rond Sleep Stories en geluidslandschappen."
+        }
+      ]
     }
   },
   "comparisons": {
@@ -6696,7 +6866,7 @@
       "axes": [
         {
           "name": "Klinisch bewijs",
-          "note": "Voor geen van beide zijn er gepubliceerde studies naar het apparaat zelf. LightStim is FDA-goedgekeurd (K120775; huidig model K261482), maar de enige rimpeldata in de FDA-dossiers komen uit een ongepubliceerde bedrijfsstudie van een eerder model; Solawave is bij de FDA geregistreerd (een vermelding, geen goedkeuring) met door het merk gefinancierde klantervaringen. FDA-status is neutraal in de ONDA-scores."
+          "note": "LightStim ligt voor: voor geen van beide zijn er gepubliceerde studies naar het apparaat zelf en de ongepubliceerde bedrijfsstudie van LightStim telt niet mee; de FDA-goedkeuring van LightStim (K120775; huidig model K261482) is neutraal, terwijl Solawave steunt op door het merk gefinancierde klantervaringen."
         },
         {
           "name": "Golflengtebereik",
@@ -7023,7 +7193,7 @@
         },
         {
           "name": "Bouwkwaliteit",
-          "note": "Plunge: premium acryl met isolatie. Ice Barrel: ton van voedselveilig kunststof met isolatie. Beide degelijk voor hun klasse."
+          "note": "The Plunge ligt voor: een geïsoleerde acrylbak met beslag van scheepskwaliteit en 3 jaar garantie, tegenover de geïsoleerde ton van voedselveilig kunststof van Ice Barrel met 1 jaar garantie. Beide hebben een degelijke, meerjarige staat van dienst op het gebied van betrouwbaarheid."
         },
         {
           "name": "Ruimtebeslag",
@@ -7338,6 +7508,63 @@
         }
       ],
       "content": "> Update (september 2026): Eight Sleep verving de Pod 5 op 23 september 2026 door de Pod 6 (vanaf $1.999 Solo; $2.899 queen met twee zones). De Pod 5-prijzen hieronder zijn de laatste catalogusprijzen – vergelijk resterende Pod 5-voorraad met de prijzen van de Pod 6.\n\n## De korte versie\n\nTegenovergestelde uiteinden van de markt. De [Eight Sleep Pod 5](/reviews/eight-sleep-pod-5) is het maximale watergekoelde slimme bed – nauwkeurige koeling met twee zones, HRV-meting, Autopilot-software, extra's voor het hele bed – voor ~$6.099 (Pod 5 Ultra) plus een abonnement. De [BedJet 3](/reviews/bedjet-3) blaast gekoelde of verwarmde lucht onder het laken voor ~$600, zonder water, zonder meting.\n\n## Wanneer is de Eight Sleep Pod 5 de juiste keuze?\n\nJe wilt de nauwkeurigste koeling en ingebouwde herstelmeting, en de premiumprijs en het abonnement zijn acceptabel. Dit is het systeem voor datagedreven slaapoptimalisatie.\n\n## Wanneer is de BedJet 3 de juiste keuze?\n\nJe wilt effectieve, betaalbare bedkoeling zonder waterbeheer of abonnement, met eenvoudige installatie, en je hebt geen ingebouwde meting of regeling per graad nodig.\n\n## Ook het vergelijken waard\n\nVoor de watergekoelde middenweg zonder abonnement, zie [Pod 5 vs ChiliPad Dock Pro](/reviews/vs/eight-sleep-pod-5-vs-chilipad-dock-pro). Het volledige veld: [beste slimme slaapklimaatsystemen](/reviews/smart-sleep-climate)."
+    },
+    "finnleo-hallmark-vs-almost-heaven-salem": {
+      "title": "Finnleo Hallmark vs Almost Heaven Salem: vergelijking",
+      "description": "Finnleo Hallmark vs Almost Heaven Salem — ONDA vergelijkt twee traditionele Finse sauna's: Finse binnencabine vs Amerikaanse cederhouten buitenton.",
+      "intro": "Finnleo Hallmark en Almost Heaven Salem zijn de twee traditionele convectiesauna's in Finse stijl die worden vergeleken als infrarood niet de keuze is. Beide leveren volledige Finse saunawarmte (80–95 °C) met de mogelijkheid voor löyly-opgietingen en hebben een merkbetrouwbaarheid van tientallen jaren. Het structurele verschil: een Fins ontworpen binnencabine tegenover een Amerikaanse cederhouten buitenton.",
+      "verdict": "De vorm beslist. Finnleo Hallmark voor installatie binnen met Finse productietraditie. Almost Heaven Salem voor installatie van een ton buiten met Amerikaanse cederhouten bouw.",
+      "bestForA": "Kies Finnleo Hallmark als je een premium Finse binnensauna wilt met door Helo ontworpen warmteafgifte en een lange Finse productiegeschiedenis.",
+      "bestForB": "Kies Almost Heaven Salem als je een traditionele cederhouten barrelsauna voor buiten wilt met Amerikaanse bouw, een elektrische kachel van 6 kW en de lagere prijs ($4.485 catalogusprijs voor de Salem voor 2 personen).",
+      "axes": [
+        {
+          "name": "Kwaliteit van de kachel",
+          "note": "Finnleo: door Helo ontworpen Finse kachel — een al lang gevestigde naam in traditionele Finse saunawarmte. Almost Heaven Salem: elektrische Harvia-kachel van 6 kW (240 V, vast aangesloten)."
+        },
+        {
+          "name": "Vorm",
+          "note": "Finnleo: cabine voor binnen. Almost Heaven: ton voor buiten. Verschillende toepassingen; kies op basis van de plek van installatie."
+        },
+        {
+          "name": "Herkomst van de bouw",
+          "note": "Finnleo: Finse productietraditie, hemlock of Noordse spar. Almost Heaven: Amerikaans western red cedar, merkbetrouwbaarheid van tientallen jaren."
+        },
+        {
+          "name": "Garantie",
+          "note": "Almost Heaven Salem: beperkte levenslange garantie op fabricagefouten (kachel: 1 jaar op elementen, 5 jaar op andere onderdelen). Finnleo: we konden de garantievoorwaarden van de Hallmark niet vinden op een officiële Finnleo-pagina; vraag het na bij de dealer. Noch de Salem noch de Hallmark biedt een houtgestookte kachel."
+        },
+        {
+          "name": "EMF",
+          "note": "Beide werken met traditionele convectie — geen elektronica in de warmteafgifte, EMF is geen probleem."
+        },
+        {
+          "name": "Onderzoeksbewijs",
+          "note": "De Finse Kuopio-cohortstudies (risico op hart- en vaatziekten en dementie; verbanden, geen oorzaak) gingen over traditioneel Fins saunabaden in het algemeen, niet over Finnleo; de elektrische binnencabine komt dichter bij dat format."
+        },
+        {
+          "name": "Prijs",
+          "note": "Almost Heaven Salem: $4.485 catalogusprijs ($4.036,50 in de aanbieding, oktober 2026) incl. kachel. Finnleo: $6.000–$12.000+. Almost Heaven is duidelijk goedkoper."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Finnleo of Almost Heaven — wat is beter?",
+          "a": "De vorm beslist. Finnleo voor een in Finland gebouwde binnensauna met een door Helo ontworpen kachel, in het binnenformat dat het dichtst bij de Finse cohortstudies ligt. Almost Heaven voor een Amerikaanse red cedar barrelsauna voor 2 personen buiten met een elektrische kachel van 6 kW tegen een lagere prijs."
+        },
+        {
+          "q": "Is Finnleo het oorspronkelijke Finse saunamerk?",
+          "a": "Nee — het Finse saunabaden is veel ouder dan welk merk ook. Finnleo is het Noord-Amerikaanse merk dat verbonden is met Helo, een al lang gevestigde Finse fabrikant van saunakachels, en de Hallmark gebruikt een door Helo ontworpen kachel."
+        },
+        {
+          "q": "Bestaat er een houtgestookte Finnleo?",
+          "a": "Geen van de hier beoordeelde modellen — de Hallmark is alleen elektrisch, en de Almost Heaven Salem wordt alleen geleverd met een elektrische kachel van 6 kW. Almost Heaven verkoopt houtgestookte kachels bij sommige andere tonmodellen, niet bij de Salem."
+        },
+        {
+          "q": "Welke heeft de betere onderbouwing?",
+          "a": "Geen van beide heeft apparaatspecifieke studies. Het gepubliceerde bewijs (observationele Kuopio-cohortstudies over sterfte aan hart- en vaatziekten en dementierisico — verbanden, geen oorzaak) gaat over traditioneel Fins saunabaden in het algemeen, niet over een van beide merken. Beide leveren dat soort warmte; Finnleo is een binnencabine, Almost Heaven Salem een ton voor buiten."
+        }
+      ],
+      "content": "## De korte versie\n\nBeide leveren traditionele Finse saunawarmte met een merkgeschiedenis van tientallen jaren. Finnleo Hallmark is de in Finland gebouwde referentie voor binnen; Almost Heaven Salem is de Amerikaanse red cedar ton voor buiten.\n\n## Wanneer is Finnleo Hallmark de juiste keuze?\n\nAls je binnen ruimte hebt voor installatie en premium Finse productietraditie wilt met door Helo ontworpen warmteafgifte — dan is Finnleo de juiste vorm. Het binnenformat komt het dichtst bij de Finse cohortstudies, die over saunabaden in het algemeen gingen, niet over Finnleo.\n\n## Wanneer is Almost Heaven Salem de juiste keuze?\n\nAls je buiten ruimte hebt voor installatie en een traditionele cederhouten barrelsauna met Amerikaanse bouw wilt — dan is Almost Heaven de juiste vorm. Hij biedt plaats aan twee personen, werkt met een elektrische kachel van 6 kW (geen houtgestookte optie bij de Salem), heeft een beperkte levenslange garantie op gebreken en kost duidelijk minder — $4.485 catalogusprijs inclusief kachel."
     }
   },
   "categoryHubs": {
