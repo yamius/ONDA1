@@ -11,7 +11,7 @@ const sunHomeVsClearlight: HeadToHeadInput = {
     'Both are premium full-spectrum infrared cabins marketed as low EMF — so this comes down to heat, extras, price and brand backing. The Sun Home Equinox is the value-forward newcomer, rated to ~165°F (maker spec), with integrated red-light and chromotherapy. The Clearlight Sanctuary 2 is the established premium, Jacuzzi-backed with a strong warranty. Newcomer features vs premium pedigree.',
   jobDependentVerdict: true,
   verdict:
-    'Value and features vs pedigree and warranty. The Sun Home Equinox wins on heat output and bundled extras (integrated red light, chromotherapy, sound). The Clearlight Sanctuary 2 wins on build reputation and its Jacuzzi-backed lifetime warranty, but now costs more ($7,299 vs ~$6,000). both market low EMF, and neither publishes an independent figure we can compare. Pick Sun Home for the feature bundle and heat; Clearlight for warranty and long brand history.',
+    'Value and features vs pedigree and warranty. The Sun Home Equinox wins on heat output and bundled extras (integrated red light, chromotherapy, sound). The Clearlight Sanctuary 2 wins on build reputation and its Jacuzzi-backed lifetime warranty, but now costs more ($7,299 vs ~$6,000). Both market low EMF, and neither publishes an independent figure we can compare. Pick Sun Home for the feature bundle and heat; Clearlight for warranty and long brand history.',
   bestForA:
     'Choose the Sun Home Equinox if you want a cabin rated to ~165°F (maker spec), integrated red-light and chromotherapy, and a price-disciplined package from a strong newer brand.',
   bestForB:

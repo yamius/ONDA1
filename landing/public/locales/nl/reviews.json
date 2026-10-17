@@ -3987,6 +3987,104 @@
           "a": "Balance is beter voor een gepersonaliseerd meditatieplan in cursusstijl; Calm is beter voor content rond slaap en ontspanning. Balance past zich aan je niveau en doelen aan en biedt een jaar gratis, terwijl Calm een grotere bibliotheek biedt rond Sleep Stories en geluidslandschappen."
         }
       ]
+    },
+    "ooler-sleep-system": {
+      "verdict": "Ouder watergekoeld Sleepme-systeem — solide staat van dienst, planning via de app, voor nieuwe kopers opgevolgd door de Dock Pro.",
+      "summary": "Het OOLER Sleep System is de al lang bestaande watergekoelde matrastopper van Sleepme — een vroeg Sleepme-systeem met planning via de app. Voor nieuwe kopers opgevolgd door de Dock Pro, maar uit restvoorraad nog met korting te koop. Solide betrouwbaarheid over meerdere jaren, vergelijkbare koeling als de Dock Pro, beperktere functies in de app.",
+      "description": "ONDA-review van het OOLER Sleep System — het al lang bestaande watergekoelde Sleepme-systeem, een vroeg Sleepme-model met planning via de app.",
+      "bestFor": "Het best voor wie watergekoeld Sleepme-slaapklimaat wil tegen de prijs van een ouder model uit restvoorraad.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van Sleepme/Chili en onafhankelijke reviews uit 2026. Niet zelf door ONDA uitgeprobeerd.",
+      "productType": "Oudere watergekoelde matrastopper met planning",
+      "pros": [
+        "Een vroeg Sleepme-systeem met planning via de app",
+        "Solide meerjarige betrouwbaarheid van Sleepme",
+        "Geen abonnement nodig",
+        "Topper op je bestaande matras — flexibele installatie"
+      ],
+      "cons": [
+        "Voor nieuwe kopers opgevolgd door de Dock Pro",
+        "Alleen restvoorraad — beperkt beschikbaar",
+        "Geen tracking van hartslagvariabiliteit (HRV) of slaap",
+        "Basisunit groter dan bij nieuwere Sleepme-ontwerpen"
+      ],
+      "scoreNotes": {
+        "climate-range": "Solide watergekoeld bereik, vergelijkbaar met de Dock Pro. Bij piekhitte iets minder krachtig dan de Dock Pro.",
+        "build": "Oudere Sleepme-hardware met sterke meerjarige betrouwbaarheid. 2 jaar garantie.",
+        "app-tracking": "OOLER-app met klimaatplanning — een vroeg Sleepme-systeem met planning via de app. Geen HRV- of slaaptracking.",
+        "form-factor": "Topper op je bestaande matras. Standaard één zone; twee zones met twee units. Basisunit middelgroot.",
+        "subscription": "Geen abonnement nodig.",
+        "value": "$1.200-1.500 tegen restvoorraadprijs. Prijs-kwaliteitsniveau binnen de Sleepme-lijn."
+      },
+      "content": "## Waar het voorop loopt\n\nHet OOLER Sleep System is de al lang bestaande watergekoelde topper van Sleepme — een vroeg Sleepme-systeem met planning via de app. Solide meerjarige betrouwbaarheid en koeling die vergelijkbaar is met de premium Dock Pro, tegen lagere restvoorraadprijzen.\n\n## Wat zijn de nadelen van het OOLER Sleep System?\n\nHet grootste nadeel is dat het in de nieuwe productie is opgevolgd door de Dock Pro. Alleen nog uit restvoorraad. Geen slaaptracking.\n\n## Voor wie is het OOLER Sleep System geschikt?\n\nKies de OOLER als hij met korting beschikbaar is en je watergekoeld Sleepme-klimaat met planning wilt. Voor de huidige productie: Dock Pro. Voor de goedkoopste Sleepme-instap: ChiliPad Cube.\n\n---\n\n## Achtergrond\n\nDe biologie achter waarom het regelen van de bedtemperatuur slaapdiepte en herstel beïnvloedt.\n\n- [Protocol: de circadiane harde reset](/articles/protocol-circadian-hard-reset) — waar koeling past in een routine om je slaapritme te resetten\n- [Voorouderlijke synchronisatie en circadiane ankers](/articles/ancestral-sync-circadian-anchors) — circadiane ankers en de temperatuur 's nachts\n- [Neurale hydrauliek: liquorstroom](/articles/neural-hydraulics-csf-flow) — liquorcirculatie tijdens de slaap — wat koeling mogelijk maakt\n",
+      "faq": [
+        {
+          "q": "Wat is het OOLER Sleep System en werkt het nog?",
+          "a": "De OOLER is de al lang bestaande watergekoelde matrastopper van Sleepme — een vroeg Sleepme-systeem met planning via de app. Hij levert solide waterkoeling, vergelijkbaar met de Dock Pro, met sterke meerjarige betrouwbaarheid, maar is voor nieuwe kopers opgevolgd door de Dock Pro. ONDA geeft hem {{score:ooler-sleep-system}}/10."
+        },
+        {
+          "q": "Hoeveel kost het OOLER Sleep System?",
+          "a": "De OOLER kost $1.200 tot $1.500 tegen restvoorraadprijs, ongeveer $1.300 voor een queen-unit met één zone, zonder abonnement. Hij is het prijs-kwaliteitsniveau binnen de Sleepme-lijn, omdat hij alleen nog uit beperkte restvoorraad wordt verkocht en niet meer nieuw wordt geproduceerd."
+        },
+        {
+          "q": "Moet ik de OOLER of de Dock Pro kopen?",
+          "a": "Kies de OOLER alleen als hij met korting beschikbaar is en je watergekoeld Sleepme-klimaat met planning wilt, want voor nieuwe kopers is hij opgevolgd door de Dock Pro en is hij alleen nog uit restvoorraad leverbaar. Hij heeft geen HRV- of slaaptracking en een grotere basisunit; voor de huidige productie wijst ONDA naar de Dock Pro, of naar de ChiliPad Cube voor de goedkoopste Sleepme-instap."
+        }
+      ]
+    },
+    "eight-sleep-pod-cover-pro": {
+      "verdict": "Pod 4-klimaatregeling en -tracking op je bestaande matras: een goedkopere instap in het Eight Sleep-ecosysteem.",
+      "summary": "Eight Sleep Pod Cover Pro is het Pod-systeem zonder het meegeleverde matras. Dezelfde waterkoeling en -verwarming met twee zones (13–43 °C), dezelfde tracking van hartslagvariabiliteit (HRV) en slaap, dezelfde Autopilot — op het matras dat je al hebt. De juiste instap in Eight Sleep als je je matras niet hoeft te vervangen.",
+      "description": "ONDA-review van de Eight Sleep Pod Cover Pro: het Pod-systeem zonder matras, passend op je bestaande bed.",
+      "bestFor": "Het best voor wie Pod 4-mogelijkheden op het eigen matras wil — instap in Eight Sleep zonder nieuw matras.",
+      "testNote": "Evidence-based beoordeling — gescoord op basis van productdocumentatie van Eight Sleep en onafhankelijke reviews uit 2026. Niet zelf door ONDA uitgeprobeerd.",
+      "productType": "Slimme slaapklimaathoes (voor je bestaande matras)",
+      "pros": [
+        "Dezelfde aanpak voor klimaat met twee zones en tracking als de Pod 4-hoes",
+        "Past op je bestaande matras — geen nieuw matras nodig",
+        "Goedkopere instap in het Eight Sleep-ecosysteem",
+        "Temperatuur met twee zones (voor beide bedhelften) blijft behouden"
+      ],
+      "cons": [
+        "Dezelfde abonnementsplicht als de Pod 4",
+        "Beperkte matrasdikte (tot ca. 14 inch)",
+        "De zwaardere hoes verandert het ligcomfort iets",
+        "Nog steeds duur — meer dan $2.000 voor alleen de hoes"
+      ],
+      "scoreNotes": {
+        "climate-range": "Hetzelfde bereik met twee zones als het Pod 4-systeem — 13–43 °C met Autopilot-aanpassing.",
+        "build": "Hoogwaardige hoes. Geschikt voor de meeste matrassen tot ca. 14 inch dik. 2 jaar garantie.",
+        "app-tracking": "Volledige HRV- en slaaptracking — identiek aan het Pod 4-systeem (niet onafhankelijk gevalideerd).",
+        "form-factor": "Alleen een hoes, past op een bestaand matras — dezelfde aanpak als de Pod 4-hoes. Twee zones blijven behouden.",
+        "subscription": "Dezelfde Autopilot-abonnementsplicht als de Pod 4.",
+        "value": "$2.000-2.500 — goedkoper dan de Pod 4-hoes (vanaf $2.449, volgens Tom's Guide). De beste instap in Eight Sleep als je geen nieuw matras wilt."
+      },
+      "content": "## Waar hij voorop loopt\n\nEight Sleep Pod Cover Pro is de Pod als losse hoes — hetzelfde klimaat met twee zones, dezelfde Autopilot, dezelfde HRV-tracking — passend op je bestaande matras. Als hoes voor je bestaande matras kost hij ongeveer evenveel als de Pod 4-hoes (vanaf $2.449), of een paar honderd dollar minder.\n\n## Wat zijn de nadelen van de Eight Sleep Pod Cover Pro?\n\nHetzelfde abonnementsmodel als de Pod 4. Matrascompatibiliteit beperkt tot ca. 14 inch dikte. De hoes verandert het ligcomfort iets.\n\n## Voor wie is de Eight Sleep Pod Cover Pro?\n\nKies de Eight Sleep Pod Cover Pro als je Pod 4-mogelijkheden op je bestaande matras wilt. Voor een geïntegreerd matras: de volledige Pod 4. Zonder abonnement: ChiliPad.\n\n---\n\n## Achtergrond\n\nDe biologie achter waarom regeling van de bedtemperatuur slaapdiepte en herstel bepaalt.\n\n- [Maakt slaap je brein echt schoon? Het bewijs over het glymfatisch systeem](/articles/nightly-flush-glymphatic-neural-cache) — wat bij mensen is aangetoond en wat nog omstreden is\n- [Protocol: de circadiane harde reset](/articles/protocol-circadian-hard-reset) — waar koeling past in een routine om je slaapritme te resetten\n- [Voorouderlijke synchronisatie en circadiane ankers](/articles/ancestral-sync-circadian-anchors) — waarom nachtelijke afkoeling past bij de voorouderlijke uitgangssituatie\n",
+      "faq": [
+        {
+          "q": "Is de Eight Sleep Pod Cover Pro het waard?",
+          "a": "Ja, als je Pod 4-mogelijkheden wilt zonder je matras te vervangen. De Cover Pro heeft dezelfde waterkoeling en -verwarming met twee zones van 13 tot 43 °C, HRV- en slaaptracking, en Autopilot. Hij kost nog steeds meer dan $2.000 en vereist het abonnement."
+        },
+        {
+          "q": "Hoeveel kost de Eight Sleep Pod Cover Pro?",
+          "a": "De Eight Sleep Pod Cover Pro kost ongeveer $2.200 in queen-formaat, plus zo'n $20 per maand voor het abonnement. Het is een goedkopere instap in het Eight Sleep-ecosysteem dan het volledige systeem, omdat er geen matras bij zit."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Eight Sleep Pod Cover Pro?",
+          "a": "De Cover Pro heeft dezelfde abonnementsplicht als het volledige Pod 4-systeem en past alleen op matrassen tot ongeveer 14 inch dik. De zwaardere hoes verandert het ligcomfort iets, en met meer dan $2.000 is hij nog steeds duur."
+        },
+        {
+          "q": "Voor wie is de Eight Sleep Pod Cover Pro het meest geschikt?",
+          "a": "De Pod Cover Pro is het meest geschikt voor wie Pod 4-mogelijkheden op het eigen matras wil. Hij biedt toegang tot het klimaat met twee zones, de HRV- en slaaptracking en Autopilot van Eight Sleep zonder een nieuw matras te kopen."
+        }
+      ]
+    },
+    "edge-tub": {
+      "verdict": "Sterke prijs-kwaliteit onder de koudwaterbaden met ingebouwde koeler — hardware vergelijkbaar met The Plunge, duidelijk goedkoper.",
+      "productType": "Koudwaterbad uit het middensegment met koeler"
+    },
+    "eight-sleep-pod-3": {
+      "verdict": "Pod 4-mogelijkheden voor Pod 3-prijzen: solide prijs-kwaliteit met korting, met een iets smaller temperatuurbereik dan Pod 4.",
+      "productType": "Slimme slaapklimaathoes van de vorige generatie"
     }
   },
   "comparisons": {
@@ -7565,6 +7663,165 @@
         }
       ],
       "content": "## De korte versie\n\nBeide leveren traditionele Finse saunawarmte met een merkgeschiedenis van tientallen jaren. Finnleo Hallmark is de in Finland gebouwde referentie voor binnen; Almost Heaven Salem is de Amerikaanse red cedar ton voor buiten.\n\n## Wanneer is Finnleo Hallmark de juiste keuze?\n\nAls je binnen ruimte hebt voor installatie en premium Finse productietraditie wilt met door Helo ontworpen warmteafgifte — dan is Finnleo de juiste vorm. Het binnenformat komt het dichtst bij de Finse cohortstudies, die over saunabaden in het algemeen gingen, niet over Finnleo.\n\n## Wanneer is Almost Heaven Salem de juiste keuze?\n\nAls je buiten ruimte hebt voor installatie en een traditionele cederhouten barrelsauna met Amerikaanse bouw wilt — dan is Almost Heaven de juiste vorm. Hij biedt plaats aan twee personen, werkt met een elektrische kachel van 6 kW (geen houtgestookte optie bij de Salem), heeft een beperkte levenslange garantie op gebreken en kost duidelijk minder — $4.485 catalogusprijs inclusief kachel."
+    },
+    "plunge-vs-edge-tub": {
+      "title": "The Plunge vs Edge Tub: vergelijking (2026)",
+      "description": "The Plunge vs Edge Tub: ONDA-vergelijking van twee populaire koudwaterbaden met ingebouwde koeler — premium bouw tegen een prijsbewuste uitdager.",
+      "intro": "The Plunge en Edge Tub zijn de twee koudwaterbaden met ingebouwde koeler die kopers het vaakst vergelijken. Beide hebben een geïntegreerde koeler, ozonreiniging en isolatie die geschikt is voor buiten; de keuze is tussen de premium bouw van The Plunge en de vergelijkbare hardware van Edge Tub voor ongeveer de helft van de prijs.",
+      "verdict": "The Plunge wint op betrouwbaarheid over meerdere jaren en koelvermogen; Edge Tub wint duidelijk op prijs-kwaliteit. Voor de meeste kopers is Edge Tub de slimmere keuze.",
+      "bestForA": "Kies The Plunge als je de premium bouw, de langste betrouwbaarheidsgeschiedenis en het maximale koelvermogen wilt — en de premium prijs voor jou acceptabel is.",
+      "bestForB": "Kies Edge Tub als je de mogelijkheden van een bad met ingebouwde koeler wilt voor ongeveer de helft van de prijs van The Plunge, en je een kortere betrouwbaarheidsgeschiedenis van een nieuwer merk accepteert.",
+      "axes": [
+        {
+          "name": "Koelvermogen",
+          "note": "Plunge: 1 pk, koelt ook bij zomerhitte snel terug. Edge: degelijke maar minder krachtige koeler, trager terugkoelen bij grote hitte."
+        },
+        {
+          "name": "Levensduur van de bouw",
+          "note": "Plunge heeft meer dan 5 jaar betrouwbaarheidsdata van consumenten. Edge is nieuwer; betrouwbaarheid over meerdere jaren moet zich nog bewijzen."
+        },
+        {
+          "name": "Waterbeheer",
+          "note": "Praktisch gelijk: beide gebruiken ozonreiniging plus een filter. Opgegeven interval voor waterverversen bij normaal gebruik: The Plunge elke 2–4 weken, Edge Tub elke 3–4 weken."
+        },
+        {
+          "name": "Formaat",
+          "note": "Vergelijkbare afmetingen en installatie-eisen; beide geschikt voor binnen en buiten."
+        },
+        {
+          "name": "Garantie",
+          "note": "Plunge: 3 jaar. Edge: 2 jaar. Plunge wint op garantieduur."
+        },
+        {
+          "name": "Merk en protocolcontent",
+          "note": "Plunge heeft een zichtbare oprichter en een rijkere contentbibliotheek. Edge is meer op het product gericht."
+        },
+        {
+          "name": "Prijs",
+          "note": "Edge: $2.495. Plunge: $5.990. Edge kost ongeveer 42% van Plunge — het belangrijkste verschil in deze vergelijking."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is Edge Tub net zo goed als The Plunge?",
+          "a": "Voor de meeste kopers wel — vergelijkbaar koelvermogen, vergelijkbare ozonreiniging, vergelijkbaar formaat. De meerprijs van Plunge zit in de betrouwbaarheidsdata over meerdere jaren, een kleine voorsprong in koelvermogen en 3 in plaats van 2 jaar garantie. Edge is de slimmere keuze qua prijs-kwaliteit als je een kortere merkgeschiedenis accepteert."
+        },
+        {
+          "q": "Maakt het extra garantiejaar van The Plunge uit?",
+          "a": "Voor de meeste gebruikers maar een beetje. De meer dan 5 jaar betrouwbaarheidsdata van Plunge zijn het sterkere geruststellende signaal; het extra garantiejaar is de kers op de taart."
+        },
+        {
+          "q": "Kan Edge Tub 39 °F vasthouden?",
+          "a": "Ja, onder normale omstandigheden. De 1 pk-koeler van Plunge koelt na een duik sneller terug en houdt lage temperaturen bij zomerhitte betrouwbaarder vast. In een gematigd klimaat is het verschil klein."
+        },
+        {
+          "q": "Welke is makkelijker te installeren?",
+          "a": "Beide worden geleverd als kant-en-klare oplossing — vlakke ondergrond, 110V-stopcontact, afvoer. Vergelijkbare installatie-inspanning."
+        }
+      ],
+      "content": "## In het kort\n\nPlunge is de premium optie; Edge is de prijsbewuste uitdager met vergelijkbare hardware. De keuze hangt ervan af of de merkpremie je $3.500 waard is.\n\n## Wanneer is The Plunge de juiste keuze?\n\nAls je de premium bouw wilt met de langste betrouwbaarheidsdata over meerdere jaren, een kleine voorsprong in koelvermogen, 3 jaar garantie en het content-ecosysteem van de oprichter — dan past The Plunge.\n\n## Wanneer is Edge Tub de juiste keuze?\n\nAls je een koudwaterbad met ingebouwde koeler wilt voor de meest toegankelijke prijs in deze klasse — dan past Edge. Voor typisch dagelijks gebruik thuis levert de hardware wat de meeste gebruikers echt nodig hebben."
+    },
+    "sun-home-equinox-vs-clearlight-sanctuary-2": {
+      "title": "Sun Home Equinox vs Clearlight Sanctuary 2: vergelijking",
+      "description": "Sun Home Equinox vs Clearlight Sanctuary 2: voordelige nieuwkomer met ingebouwd rood licht tegen het premium model van Jacuzzi en langere garantie.",
+      "intro": "Beide zijn premium full-spectrum infraroodcabines die als EMF-arm worden verkocht — het komt dus neer op warmte, extra's, prijs en het merk erachter. De Sun Home Equinox is de prijsbewuste nieuwkomer, ontworpen voor tot ~165 °F (opgave fabrikant), met ingebouwd rood licht en kleurentherapie. De Clearlight Sanctuary 2 is het gevestigde premium model, met Jacuzzi erachter en een sterke garantie. Features van een nieuwkomer tegen premium afkomst.",
+      "verdict": "Prijs-kwaliteit en features tegen afkomst en garantie. De Sun Home Equinox wint op warmteafgifte en meegeleverde extra's (ingebouwd rood licht, kleurentherapie, geluid). De Clearlight Sanctuary 2 wint op reputatie van de bouw en haar levenslange garantie met Jacuzzi erachter, maar kost nu meer ($7.299 tegenover ~$6.000). Beide adverteren lage EMF, en geen van beide publiceert een onafhankelijke waarde die we kunnen vergelijken. Kies Sun Home voor het featurepakket en de warmte; Clearlight voor garantie en lange merkgeschiedenis.",
+      "bestForA": "Kies de Sun Home Equinox als je een cabine wilt die is ontworpen voor tot ~165 °F (opgave fabrikant), met ingebouwd rood licht en kleurentherapie, als prijsbewust pakket van een sterk nieuwer merk.",
+      "bestForB": "Kies de Clearlight Sanctuary 2 als garantieomvang, merkgeschiedenis en Jacuzzi erachter het zwaarst wegen en de hogere prijs ($7.299 in lindehout) acceptabel is.",
+      "axes": [
+        {
+          "name": "Warmteafgifte",
+          "note": "De Sun Home Equinox is ontworpen voor tot ~165 °F (opgave fabrikant). Clearlight komt doorgaans tot ongeveer 150–157 °F."
+        },
+        {
+          "name": "Ingebouwd rood licht / extra's",
+          "note": "Sun Home levert ingebouwde roodlichtpanelen, kleurentherapie en geluid standaard mee. Clearlight houdt het bij een strakker, traditioneler pakket."
+        },
+        {
+          "name": "Garantie & merk erachter",
+          "note": "Clearlight heeft Jacuzzi erachter, een sterke garantie en een lange staat van dienst — de geruststelling waarvoor premium kopers betalen."
+        },
+        {
+          "name": "EMF",
+          "note": "Praktisch gelijk: beide worden als EMF-arm verkocht. De waarden van Clearlight zijn opgaven van de fabrikant; Sun Home verwijst naar verificatie door derden maar publiceert geen meetafstand, dus voor geen van beide is er een onafhankelijke waarde die we kunnen vergelijken."
+        },
+        {
+          "name": "Prijs",
+          "note": "Sun Home Equinox: vanaf ~$6.000 (2 personen). Clearlight Sanctuary 2: $7.299 lindehout / $7.699 mahonie (officiële winkel, 2026-10-01). Sun Home is ongeveer $1.300 goedkoper."
+        },
+        {
+          "name": "Full-spectrum kwaliteit",
+          "note": "Beide worden als full-spectrum infrarood verkocht; de dagelijkse saunabeleving is vergelijkbaar."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Sun Home Equinox of Clearlight Sanctuary 2?",
+          "a": "Beide zijn premium full-spectrum cabines die als EMF-arm worden verkocht. De Sun Home Equinox wint op warmte en meegeleverde extra's (ingebouwd rood licht, kleurentherapie); de Clearlight Sanctuary 2 wint op garantie, merkgeschiedenis en Jacuzzi erachter, tegen een hogere prijs ($7.299 tegenover ~$6.000). Kies voor features en warmte of voor afkomst en garantie."
+        },
+        {
+          "q": "Welke wordt heter?",
+          "a": "De Sun Home Equinox — rond 165 °F tegenover ongeveer 150–157 °F voor de Clearlight Sanctuary 2. Wil je de intensiefste warmte, dan ligt Sun Home voorop."
+        },
+        {
+          "q": "Hebben beide een lage EMF?",
+          "a": "Beide worden als EMF-arm verkocht. Sun Home verwijst naar verificatie door derden, maar publiceert geen meetafstand; de waarden van Clearlight komen van de fabrikant. Geen van beide heeft een onafhankelijke waarde die we kunnen vergelijken — zie beide dus als claims van de fabrikanten en vraag het actuele testrapport op als EMF voor jou doorslaggevend is."
+        }
+      ],
+      "content": "## In het kort\n\nDe [Sun Home Equinox](/reviews/sun-home-equinox) is de prijsbewuste nieuwkomer, ontworpen voor tot ~165 °F (opgave fabrikant), met ingebouwd rood licht; de [Clearlight Sanctuary 2](/reviews/clearlight-sanctuary-2) is het premium model met Jacuzzi erachter en de langere garantie, tegen een hogere prijs ($7.299 in lindehout).\n\n## Wanneer is de Sun Home Equinox de juiste keuze?\n\nJe wilt de heetste cabine, ingebouwd rood licht en kleurentherapie, en een prijsbewust pakket.\n\n## Wanneer is de Clearlight Sanctuary 2 de juiste keuze?\n\nGarantieomvang, merkgeschiedenis en Jacuzzi erachter wegen het zwaarst.\n\n## Ook het vergelijken waard\n\nTegen de marktleider: zie [Sun Home Equinox vs Sunlighten mPulse](/reviews/vs/sun-home-equinox-vs-sunlighten-mpulse) en [Sunlighten mPulse vs Clearlight Sanctuary 2](/reviews/vs/sunlighten-mpulse-vs-clearlight-sanctuary-2). Het hele veld: [beste infraroodsauna's](/reviews/infrared-sauna)."
+    },
+    "eight-sleep-pod-3-vs-eight-sleep-pod-cover-pro": {
+      "title": "Eight Sleep Pod 3 vs Pod Cover Pro: vergelijking (2026)",
+      "description": "Eight Sleep Pod 3 vs Pod Cover Pro: hoes van de vorige generatie in de uitverkoop tegen de huidige hoes, allebei voor je eigen matras. Welke kopen?",
+      "intro": "Beide zijn de voordelige instappers in het Eight Sleep-ecosysteem. Pod 3 is de hoes van de vorige generatie, nog op voorraad voor een flink lagere prijs; Pod Cover Pro is de huidige hoes die je op je bestaande matras legt.",
+      "verdict": "Generatie en prijs beslissen. Beide zijn hoezen voor je bestaande matras. Pod 3 als de voorraadkorting groot genoeg is; Pod Cover Pro als je het temperatuurbereik en de sensoren van de huidige generatie wilt.",
+      "bestForA": "Kies Eight Sleep Pod 3 als je een flinke voorraadkorting vindt en het temperatuurbereik van de vorige generatie en iets oudere sensoren accepteert.",
+      "bestForB": "Kies Pod Cover Pro als je het Eight Sleep-platform van de huidige generatie op je bestaande matras wilt, tegen een stabiele prijs.",
+      "axes": [
+        {
+          "name": "Temperatuurbereik",
+          "note": "Cover Pro op het Pod 4-platform: ruimer temperatuurbereik van de huidige generatie. Pod 3: smaller bereik, koeler van de vorige generatie."
+        },
+        {
+          "name": "Tracking",
+          "note": "Cover Pro: huidige sensoren van de Pod 4-generatie en Autopilot. Pod 3: sensoren van de vorige generatie, dezelfde Eight Sleep-app en hetzelfde abonnement. Cover Pro heeft nieuwere sensoren; geen van beide is onafhankelijk gevalideerd."
+        },
+        {
+          "name": "Abonnement",
+          "note": "Beide vereisen hetzelfde Eight Sleep Autopilot-abonnement voor alle functies. Geen van beide ontsnapt aan het lidmaatschapsmodel."
+        },
+        {
+          "name": "Formaat",
+          "note": "Praktisch gelijk: beide zijn hoezen met twee zones die op je bestaande matras passen, met een basisunit naast het bed."
+        },
+        {
+          "name": "Matrasflexibiliteit",
+          "note": "Beide zijn hoezen die op je bestaande matras passen en meeverhuizen naar je volgende bed."
+        },
+        {
+          "name": "Prijs",
+          "note": "Voorraadprijs van Pod 3: flink afgeprijsd ten opzichte van het origineel (~$2.000-2.800 afhankelijk van de voorraad). Cover Pro: ~$2.200. Pod 3 kan aan de onderkant van de resterende voorraad goedkoper uitvallen."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Pod 3 of Pod Cover Pro: wat is de betere instap bij Eight Sleep?",
+          "a": "Beide zijn hoezen voor je bestaande matras. Als je aan de onderkant van de resterende voorraad een flinke korting op Pod 3 vindt, kan Pod 3 minder kosten; anders geeft Cover Pro je het temperatuurbereik en de sensoren van de huidige generatie tegen een stabiele prijs."
+        },
+        {
+          "q": "Is het temperatuurbereik van Pod 3 veel smaller?",
+          "a": "Iets smaller. Cover Pro op het Pod 4-platform breidt het koel- en verwarmingsbereik in beide richtingen een paar graden uit. Voor de meeste gebruikers blijft het bereik van Pod 3 effectief."
+        },
+        {
+          "q": "Krijgt Pod 3 nog app-updates?",
+          "a": "Ja: Pod 3 draait op dezelfde Eight Sleep-app en krijgt dezelfde Autopilot-updates. Het hardwareplatform is ouder, maar de softwareondersteuning gaat door."
+        },
+        {
+          "q": "Blijft de voorraad Pod 3 beschikbaar?",
+          "a": "Eight Sleep verkoopt Pod 3 via voorraadkanalen: prijs en beschikbaarheid wisselen. De deal bestaat alleen zolang de voorraad strekt. Cover Pro is de stabiele optie van de huidige generatie."
+        }
+      ],
+      "content": "## In het kort\n\nHetzelfde Eight Sleep-ecosysteem, hetzelfde abonnement. Pod 3 is de hoes van de vorige generatie tegen uitverkoopprijs; Cover Pro is de hoes van de huidige generatie op je bestaande matras.\n\n## Wanneer is Pod 3 de juiste keuze?\n\nAls je aan de onderkant van de resterende voorraad een flinke korting op Pod 3 vindt en een iets smaller temperatuurbereik accepteert, krijg je met Pod 3 een Eight Sleep-hoes voor minder.\n\n## Wanneer is Pod Cover Pro de juiste keuze?\n\nAls je het temperatuurbereik en de sensoren van het huidige Pod 4-platform op welk bed dan ook wilt, is Cover Pro de rationele keuze. Stabiel huidig platform, geen voorraadroulette."
     }
   },
   "categoryHubs": {

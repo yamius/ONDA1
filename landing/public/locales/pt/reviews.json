@@ -3987,6 +3987,104 @@
           "a": "O Balance é melhor para um plano de meditação personalizado, em formato de curso; o Calm é melhor para conteúdo de sono e relaxamento. O Balance se adapta ao seu nível e aos seus objetivos e oferece um ano grátis, enquanto o Calm oferece uma biblioteca maior, construída em torno das Sleep Stories e de paisagens sonoras."
         }
       ]
+    },
+    "ooler-sleep-system": {
+      "verdict": "Sistema legado da Sleepme refrigerado a água: histórico sólido, programação pelo app, substituído pelo Dock Pro para quem compra novo.",
+      "summary": "O OOLER Sleep System é o veterano protetor de colchão refrigerado a água da Sleepme, um dos primeiros sistemas da Sleepme com programação pelo app. Substituído pelo Dock Pro para quem compra novo, mas ainda vendido com desconto a partir do estoque. Confiabilidade sólida ao longo de vários anos, refrigeração comparável à do Dock Pro e um conjunto de recursos do app mais limitado.",
+      "description": "Análise da ONDA do OOLER Sleep System: o veterano sistema da Sleepme refrigerado a água, um dos primeiros modelos da marca com programação pelo app.",
+      "bestFor": "Ideal para quem quer a climatização a água da Sleepme a preço de modelo anterior, a partir do estoque restante.",
+      "testNote": "Avaliação baseada em evidências: pontuado a partir da documentação de produto da Sleepme/Chili e de análises independentes de 2026. Não testado pessoalmente pela ONDA.",
+      "productType": "Protetor de colchão legado refrigerado a água com programação",
+      "pros": [
+        "Um dos primeiros sistemas da Sleepme com programação pelo app",
+        "Histórico sólido de confiabilidade da Sleepme ao longo de vários anos",
+        "Sem assinatura obrigatória",
+        "Protetor sobre o colchão que você já tem: instalação flexível"
+      ],
+      "cons": [
+        "Substituído pelo Dock Pro para quem compra novo",
+        "Apenas estoque: unidades limitadas",
+        "Sem monitoramento da variabilidade da frequência cardíaca (HRV ou VFC) nem do sono",
+        "Unidade central maior que os designs mais novos da Sleepme"
+      ],
+      "scoreNotes": {
+        "climate-range": "Faixa sólida de refrigeração a água, comparável à do Dock Pro. Um pouco menos potente que o Dock Pro no calor intenso.",
+        "build": "Hardware legado da Sleepme com histórico sólido de confiabilidade ao longo de vários anos. Garantia de 2 anos.",
+        "app-tracking": "App OOLER com programação da climatização: um dos primeiros sistemas da Sleepme com programação pelo app. Sem monitoramento de HRV nem do sono.",
+        "form-factor": "Protetor sobre o colchão que você já tem. Uma zona na versão básica; duas zonas com duas unidades. Unidade central de tamanho moderado.",
+        "subscription": "Sem assinatura obrigatória.",
+        "value": "US$ 1.200-1.500 pelo preço do estoque restante. Faixa de melhor custo-benefício dentro da linha Sleepme."
+      },
+      "content": "## Onde se destaca\n\nO OOLER Sleep System é o veterano protetor refrigerado a água da Sleepme, um dos primeiros sistemas da marca com programação pelo app. Confiabilidade sólida ao longo de vários anos e refrigeração comparável à do Dock Pro premium, a preços de estoque mais baixos.\n\n## Quais são as desvantagens do OOLER Sleep System?\n\nA principal desvantagem é que ele foi substituído pelo Dock Pro na produção nova. Disponível apenas em estoque. Sem monitoramento do sono.\n\n## Quem deve comprar o OOLER Sleep System?\n\nEscolha o OOLER se ele estiver com desconto e você quiser a climatização a água da Sleepme com programação. Para a linha de produção atual, o Dock Pro. Para a entrada mais barata na Sleepme, o ChiliPad Cube.\n\n---\n\n## Leituras de apoio\n\nA biologia de por que a regulação da temperatura da cama influencia a profundidade do sono e a recuperação.\n\n- [Protocolo: o reset circadiano completo](/articles/protocol-circadian-hard-reset) — onde a refrigeração se encaixa em uma rotina para reajustar o ritmo do sono\n- [Sincronia ancestral e âncoras circadianas](/articles/ancestral-sync-circadian-anchors) — âncoras circadianas e temperatura noturna\n- [Hidráulica neural: o fluxo do LCR](/articles/neural-hydraulics-csf-flow) — a circulação do LCR durante o sono e o que a refrigeração favorece\n",
+      "faq": [
+        {
+          "q": "O que é o OOLER Sleep System e ele ainda funciona?",
+          "a": "O OOLER é o veterano protetor de colchão refrigerado a água da Sleepme, um dos primeiros sistemas da marca com programação pelo app. Ele oferece refrigeração a água sólida, comparável à do Dock Pro, com forte confiabilidade ao longo de vários anos, embora tenha sido substituído pelo Dock Pro para quem compra novo. A ONDA dá a ele a nota {{score:ooler-sleep-system}}/10."
+        },
+        {
+          "q": "Quanto custa o OOLER Sleep System?",
+          "a": "O OOLER custa de US$ 1.200 a US$ 1.500 pelo preço do estoque restante, cerca de US$ 1.300 para uma unidade queen de uma zona, sem assinatura obrigatória. Ele é a faixa de melhor custo-benefício dentro da linha Sleepme, já que é vendido apenas a partir de um estoque restante limitado, e não de produção nova."
+        },
+        {
+          "q": "Devo comprar o OOLER ou o Dock Pro?",
+          "a": "Escolha o OOLER apenas se ele estiver com desconto e você quiser a climatização a água da Sleepme com programação, já que ele foi substituído pelo Dock Pro para quem compra novo e só existe em estoque. Ele não tem monitoramento de HRV nem do sono e tem uma unidade central maior; para a linha de produção atual, a ONDA indica o Dock Pro, ou o ChiliPad Cube para a entrada mais barata na Sleepme."
+        }
+      ]
+    },
+    "eight-sleep-pod-cover-pro": {
+      "verdict": "A climatização e o monitoramento do Pod 4 no colchão que você já tem: uma entrada mais barata no ecossistema Eight Sleep.",
+      "summary": "O Eight Sleep Pod Cover Pro é o sistema Pod sem o colchão incluído. A mesma refrigeração e aquecimento a água de duas zonas (13–43 °C), o mesmo monitoramento da variabilidade da frequência cardíaca (HRV ou VFC) e do sono, o mesmo Autopilot, em qualquer colchão que você já tenha. A entrada certa na Eight Sleep se você não precisa trocar o colchão.",
+      "description": "Análise da ONDA do Eight Sleep Pod Cover Pro: o sistema Pod sem o colchão, que se adapta à cama que você já tem.",
+      "bestFor": "Ideal para quem quer os recursos do Pod 4 no colchão atual: entrada na Eight Sleep sem trocar o colchão.",
+      "testNote": "Avaliação baseada em evidências: pontuado a partir da documentação de produto da Eight Sleep e de análises independentes de 2026. Não testado pessoalmente pela ONDA.",
+      "productType": "Capa inteligente de climatização do sono (para o colchão que você já tem)",
+      "pros": [
+        "A mesma abordagem de climatização de duas zonas e monitoramento da capa Pod 4",
+        "Serve no colchão atual: não é preciso trocar o colchão",
+        "Entrada mais barata no ecossistema Eight Sleep",
+        "Mantém a temperatura de duas zonas (um lado para cada pessoa)"
+      ],
+      "cons": [
+        "A mesma exigência de assinatura do Pod 4",
+        "Limitação de espessura do colchão (até ~14 polegadas)",
+        "A capa, mais pesada, muda levemente a sensação do colchão",
+        "Ainda é cara: mais de US$ 2.000 só pela capa"
+      ],
+      "scoreNotes": {
+        "climate-range": "A mesma faixa de duas zonas do sistema Pod 4: 13–43 °C com ajuste do Autopilot.",
+        "build": "Capa premium. Compatível com a maioria dos colchões de até ~14 polegadas de espessura. Garantia de 2 anos.",
+        "app-tracking": "Monitoramento completo de HRV e do sono, idêntico ao do sistema Pod 4 (sem validação independente).",
+        "form-factor": "Apenas capa, sobre um colchão existente: a mesma abordagem da capa Pod 4. Mantém as duas zonas.",
+        "subscription": "A mesma exigência de assinatura do Autopilot do Pod 4.",
+        "value": "US$ 2.000-2.500: mais barata que a capa Pod 4 (a partir de US$ 2.449, segundo o Tom's Guide). A melhor entrada na Eight Sleep se você não quer trocar o colchão."
+      },
+      "content": "## Onde se destaca\n\nO Eight Sleep Pod Cover Pro é o Pod só com a capa: a mesma climatização de duas zonas, o mesmo Autopilot, o mesmo monitoramento de HRV, no colchão que você já tem. Como capa para o seu colchão atual, custa mais ou menos o mesmo que a capa do Pod 4 (a partir de US$ 2.449), ou algumas centenas de dólares a menos.\n\n## Quais são as desvantagens do Eight Sleep Pod Cover Pro?\n\nO mesmo modelo de assinatura do Pod 4. Compatibilidade limitada a colchões de ~14 polegadas de espessura. A capa muda levemente a sensação do colchão.\n\n## Quem deve comprar o Eight Sleep Pod Cover Pro?\n\nEscolha o Eight Sleep Pod Cover Pro se você quer os recursos do Pod 4 no colchão atual. Para um colchão integrado, o Pod 4 completo. Sem assinatura, o ChiliPad.\n\n---\n\n## Leituras de apoio\n\nA biologia de por que a regulação da temperatura da cama influencia a profundidade do sono e a recuperação.\n\n- [O sono realmente limpa o cérebro? As evidências sobre o sistema glinfático](/articles/nightly-flush-glymphatic-neural-cache) — o que está demonstrado em pessoas e o que ainda é debatido\n- [Protocolo: o reset circadiano completo](/articles/protocol-circadian-hard-reset) — onde a refrigeração se encaixa em uma rotina para reajustar o ritmo do sono\n- [Sincronia ancestral e âncoras circadianas](/articles/ancestral-sync-circadian-anchors) — por que o resfriamento noturno corresponde à referência ancestral\n",
+      "faq": [
+        {
+          "q": "O Eight Sleep Pod Cover Pro vale a pena?",
+          "a": "Sim, se você quer os recursos do Pod 4 sem trocar o colchão. O Cover Pro tem a mesma refrigeração e aquecimento a água de duas zonas, de 13 a 43 °C, monitoramento de HRV e do sono e Autopilot. Ainda assim custa mais de US$ 2.000 e exige a assinatura."
+        },
+        {
+          "q": "Quanto custa o Eight Sleep Pod Cover Pro?",
+          "a": "O Eight Sleep Pod Cover Pro custa cerca de US$ 2.200 no tamanho queen, mais cerca de US$ 20 por mês de assinatura. É uma entrada mais barata no ecossistema Eight Sleep que o sistema completo, porque não inclui colchão."
+        },
+        {
+          "q": "Quais são as desvantagens do Eight Sleep Pod Cover Pro?",
+          "a": "O Cover Pro tem a mesma exigência de assinatura do sistema Pod 4 completo e só serve em colchões de até cerca de 14 polegadas de espessura. A capa, mais pesada, muda levemente a sensação do colchão, e ainda é cara: mais de US$ 2.000."
+        },
+        {
+          "q": "Para quem o Eight Sleep Pod Cover Pro é mais indicado?",
+          "a": "O Pod Cover Pro é mais indicado para quem quer os recursos do Pod 4 no colchão que já tem. Ele dá acesso à climatização de duas zonas da Eight Sleep, ao monitoramento de HRV e do sono e ao Autopilot sem comprar um colchão novo."
+        }
+      ]
+    },
+    "edge-tub": {
+      "verdict": "Um ótimo custo-benefício entre as banheiras de imersão com chiller integrado: hardware comparável ao da The Plunge, bem mais barata.",
+      "productType": "Banheira de imersão em água fria intermediária com chiller"
+    },
+    "eight-sleep-pod-3": {
+      "verdict": "Capacidade de Pod 4 a preço de Pod 3: bom custo-benefício quando com desconto, com faixa de temperatura um pouco mais estreita que a do Pod 4.",
+      "productType": "Capa inteligente de climatização do sono da geração anterior"
     }
   },
   "comparisons": {
@@ -7565,6 +7663,165 @@
         }
       ],
       "content": "## Em resumo\n\nAmbas entregam o calor tradicional da sauna finlandesa com tradição de marca de várias décadas. A Finnleo Hallmark é a referência interna de fabricação finlandesa; a Almost Heaven Salem é o barril externo de cedro vermelho americano.\n\n## Quando a Finnleo Hallmark é a escolha certa?\n\nSe você tem espaço para instalação interna e quer tradição de fabricação finlandesa premium com calor de engenharia Helo — a Finnleo é o formato certo. O formato interno é o mais próximo dos estudos de coorte finlandeses, que analisaram o banho de sauna em geral, não a Finnleo.\n\n## Quando a Almost Heaven Salem é a escolha certa?\n\nSe você tem espaço para instalação externa e quer uma sauna barril tradicional de cedro com construção americana — a Almost Heaven é o formato certo. Ela acomoda duas pessoas, funciona com um aquecedor elétrico de 6 kW (sem opção a lenha na Salem), tem garantia vitalícia limitada contra defeitos e custa claramente menos — US$ 4.485 de preço de tabela com aquecedor incluído."
+    },
+    "plunge-vs-edge-tub": {
+      "title": "The Plunge vs Edge Tub: comparativo (2026)",
+      "description": "The Plunge vs Edge Tub: comparativo da ONDA de duas banheiras de imersão com chiller integrado. Construção premium contra rival de preço enxuto.",
+      "intro": "The Plunge e Edge Tub são as duas banheiras de imersão em água fria com chiller integrado que mais compradores comparam. Ambas trazem chiller integrado, higienização por ozônio e isolamento para uso externo; a escolha fica entre a construção premium da The Plunge e o hardware comparável da Edge Tub por cerca de metade do preço.",
+      "verdict": "A The Plunge vence em confiabilidade ao longo de vários anos e na capacidade do chiller; a Edge Tub vence com folga no custo-benefício. Para a maioria dos compradores, a Edge Tub é a escolha mais inteligente.",
+      "bestForA": "Escolha a The Plunge se você quer a construção premium, o histórico de confiabilidade mais longo e a capacidade máxima do chiller, e o preço premium é aceitável.",
+      "bestForB": "Escolha a Edge Tub se você quer a capacidade de um chiller integrado por cerca de metade do preço da The Plunge e aceita um histórico de confiabilidade mais curto de uma marca mais nova.",
+      "axes": [
+        {
+          "name": "Capacidade do chiller",
+          "note": "Plunge: 1 HP, recupera rápido mesmo no calor do verão. Edge: chiller capaz, mas menos potente, recuperação mais lenta no calor intenso."
+        },
+        {
+          "name": "Durabilidade da construção",
+          "note": "A Plunge tem mais de 5 anos de dados de confiabilidade de consumidores. A Edge é mais nova; a confiabilidade ao longo de vários anos ainda está sendo estabelecida."
+        },
+        {
+          "name": "Gestão da água",
+          "note": "Praticamente iguais: ambas usam higienização por ozônio mais um filtro. Intervalo declarado de troca da água: The Plunge a cada 2–4 semanas, Edge Tub a cada 3–4 semanas em uso típico."
+        },
+        {
+          "name": "Formato",
+          "note": "Tamanho e requisitos de instalação comparáveis; ambas próprias para uso interno e externo."
+        },
+        {
+          "name": "Garantia",
+          "note": "Plunge: 3 anos. Edge: 2 anos. A Plunge vence no período de cobertura."
+        },
+        {
+          "name": "Marca e conteúdo de protocolos",
+          "note": "A Plunge tem a presença do fundador e uma biblioteca de conteúdo mais rica. A Edge é mais focada no produto."
+        },
+        {
+          "name": "Preço",
+          "note": "Edge: US$ 2.495. Plunge: US$ 5.990. A Edge custa cerca de 42% da Plunge: a diferença mais significativa do comparativo."
+        }
+      ],
+      "faq": [
+        {
+          "q": "A Edge Tub é tão boa quanto a The Plunge?",
+          "a": "Para a maioria dos compradores, sim: capacidade de refrigeração comparável, higienização por ozônio comparável e formato comparável. A vantagem premium fica com a Plunge em dados de confiabilidade de vários anos, uma leve vantagem de potência do chiller e garantia de 3 anos contra 2. A Edge é a escolha mais inteligente em custo-benefício se você aceita um histórico de marca mais curto."
+        },
+        {
+          "q": "O ano extra de garantia da The Plunge faz diferença?",
+          "a": "Para a maioria dos usuários, pouca. Os mais de 5 anos de dados de confiabilidade da Plunge são o sinal de segurança mais forte; o ano extra de garantia é um bônus."
+        },
+        {
+          "q": "A Edge Tub consegue manter 39 °F?",
+          "a": "Sim, em condições típicas. O chiller de 1 HP da Plunge recupera mais rápido depois de uma imersão e mantém temperaturas agressivas com mais confiabilidade no calor do verão. Em climas temperados, a diferença é pequena."
+        },
+        {
+          "q": "Qual é mais fácil de instalar?",
+          "a": "Ambas chegam prontas para usar: superfície nivelada, tomada de 110 V e drenagem. Esforço de instalação comparável."
+        }
+      ],
+      "content": "## Resumo\n\nA Plunge é a opção premium; a Edge é a rival de preço enxuto com hardware comparável. A decisão depende de a marca premium valer US$ 3.500 para você.\n\n## Quando a The Plunge é a escolha certa?\n\nSe você quer a construção premium com os dados de confiabilidade de vários anos mais longos, uma leve vantagem de potência do chiller, garantia de 3 anos e o ecossistema de conteúdo do fundador, a The Plunge é a que se encaixa.\n\n## Quando a Edge Tub é a escolha certa?\n\nSe você quer a capacidade de uma banheira de imersão com chiller integrado pelo preço mais acessível da categoria, a Edge é a que se encaixa. Para a prática diária típica em casa, o hardware entrega o que a maioria dos usuários realmente precisa."
+    },
+    "sun-home-equinox-vs-clearlight-sanctuary-2": {
+      "title": "Sun Home Equinox vs Clearlight Sanctuary 2: comparativo",
+      "description": "Sun Home Equinox vs Clearlight Sanctuary 2: novata em conta com luz vermelha integrada contra a premium apoiada pela Jacuzzi e com garantia maior.",
+      "intro": "As duas são cabines de infravermelho de espectro completo premium vendidas como de baixo EMF, então a escolha se resume a calor, extras, preço e respaldo da marca. A Sun Home Equinox é a novata focada em custo-benefício, com temperatura nominal de ~165 °F (especificação do fabricante) e luz vermelha e cromoterapia integradas. A Clearlight Sanctuary 2 é a premium consolidada, apoiada pela Jacuzzi e com uma garantia forte. Recursos de novata contra pedigree premium.",
+      "verdict": "Custo-benefício e recursos contra pedigree e garantia. A Sun Home Equinox vence em potência de calor e extras incluídos (luz vermelha integrada, cromoterapia, som). A Clearlight Sanctuary 2 vence em reputação de construção e na garantia vitalícia apoiada pela Jacuzzi, mas agora custa mais (US$ 7.299 contra ~US$ 6.000). A As duas divulgam baixo EMF, e nenhuma publica um número independente que possamos comparar. Escolha a Sun Home pelo pacote de recursos e pelo calor; a Clearlight, pela garantia e pela longa história da marca.",
+      "bestForA": "Escolha a Sun Home Equinox se você quer uma cabine com temperatura nominal de ~165 °F (especificação do fabricante), luz vermelha e cromoterapia integradas e um pacote de preço enxuto de uma marca nova forte.",
+      "bestForB": "Escolha a Clearlight Sanctuary 2 se o alcance da garantia, a história da marca e o respaldo da Jacuzzi são o mais importante e o preço maior (US$ 7.299 em basswood) é aceitável.",
+      "axes": [
+        {
+          "name": "Potência de calor",
+          "note": "A Sun Home Equinox tem temperatura nominal de ~165 °F (especificação do fabricante). A Clearlight costuma chegar a no máximo cerca de 150–157 °F."
+        },
+        {
+          "name": "Luz vermelha integrada / extras",
+          "note": "A Sun Home inclui de série painéis de luz vermelha integrados, cromoterapia e som. A Clearlight mantém um pacote mais limpo e tradicional."
+        },
+        {
+          "name": "Garantia e respaldo da marca",
+          "note": "A Clearlight é apoiada pela Jacuzzi, com uma garantia forte e um longo histórico: a tranquilidade pela qual os compradores premium pagam."
+        },
+        {
+          "name": "EMF",
+          "note": "Praticamente iguais: ambas são vendidas como de baixo EMF. Os números da Clearlight são declarados pelo fabricante; a Sun Home cita verificação de terceiros, mas não publica a distância de medição, então nenhuma tem um número independente que possamos comparar."
+        },
+        {
+          "name": "Preço",
+          "note": "Sun Home Equinox: a partir de ~US$ 6.000 (2 pessoas). Clearlight Sanctuary 2: US$ 7.299 em basswood / US$ 7.699 em mogno (loja oficial, 2026-10-01). A Sun Home é cerca de US$ 1.300 mais barata."
+        },
+        {
+          "name": "Qualidade de espectro completo",
+          "note": "Ambas são vendidas como de infravermelho de espectro completo; a experiência de sauna no dia a dia é comparável."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Sun Home Equinox ou Clearlight Sanctuary 2?",
+          "a": "Ambas são cabines premium de espectro completo vendidas como de baixo EMF. A Sun Home Equinox vence em calor e extras incluídos (luz vermelha integrada, cromoterapia); a Clearlight Sanctuary 2 vence em garantia, história da marca e respaldo da Jacuzzi, por um preço maior (US$ 7.299 contra ~US$ 6.000). Escolha entre recursos e calor ou pedigree e garantia."
+        },
+        {
+          "q": "Qual esquenta mais?",
+          "a": "A Sun Home Equinox: cerca de 165 °F contra aproximadamente 150–157 °F da Clearlight Sanctuary 2. Se você quer o calor mais intenso, a Sun Home sai na frente."
+        },
+        {
+          "q": "As duas têm baixo EMF?",
+          "a": "Ambas são vendidas como de baixo EMF. A Sun Home cita verificação de terceiros, mas não publica a distância de medição; os números da Clearlight são do fabricante. Nenhuma tem um número independente que possamos comparar, então trate ambas como alegações dos fabricantes e peça o relatório de teste atual se o EMF for um fator decisivo."
+        }
+      ],
+      "content": "## Resumo\n\nA [Sun Home Equinox](/reviews/sun-home-equinox) é a novata focada em custo-benefício, com temperatura nominal de ~165 °F (especificação do fabricante) e luz vermelha integrada; a [Clearlight Sanctuary 2](/reviews/clearlight-sanctuary-2) é a premium apoiada pela Jacuzzi com a garantia mais longa, por um preço maior (US$ 7.299 em basswood).\n\n## Quando a Sun Home Equinox é a escolha certa?\n\nVocê quer a cabine mais quente, luz vermelha e cromoterapia integradas e um pacote de preço enxuto.\n\n## Quando a Clearlight Sanctuary 2 é a escolha certa?\n\nO alcance da garantia, a história da marca e o respaldo da Jacuzzi são o mais importante.\n\n## Também vale comparar\n\nContra a líder da categoria, veja [Sun Home Equinox vs Sunlighten mPulse](/reviews/vs/sun-home-equinox-vs-sunlighten-mpulse) e [Sunlighten mPulse vs Clearlight Sanctuary 2](/reviews/vs/sunlighten-mpulse-vs-clearlight-sanctuary-2). Todas as opções: [as melhores saunas de infravermelho](/reviews/infrared-sauna)."
+    },
+    "eight-sleep-pod-3-vs-eight-sleep-pod-cover-pro": {
+      "title": "Eight Sleep Pod 3 vs Pod Cover Pro: comparativo (2026)",
+      "description": "Eight Sleep Pod 3 vs Pod Cover Pro: capa da geração anterior com preço de liquidação contra a capa atual, ambas para o seu colchão. Qual comprar.",
+      "intro": "As duas são as portas de entrada mais acessíveis ao ecossistema Eight Sleep. O Pod 3 é a capa da geração anterior, ainda em estoque com preço bem reduzido; o Pod Cover Pro é a capa atual que se instala sobre o seu colchão.",
+      "verdict": "Decidem a geração e o preço. As duas são capas para o seu colchão atual. Pod 3 se o desconto de estoque for grande o bastante; Pod Cover Pro se você quer a faixa de temperatura e os sensores da geração atual.",
+      "bestForA": "Escolha o Eight Sleep Pod 3 se você encontrar um grande desconto de estoque e aceitar a faixa de temperatura da geração anterior e sensores um pouco mais antigos.",
+      "bestForB": "Escolha o Pod Cover Pro se você quer a plataforma Eight Sleep da geração atual no seu colchão atual, a um preço estável.",
+      "axes": [
+        {
+          "name": "Faixa de temperatura",
+          "note": "Cover Pro, da plataforma Pod 4: faixa de temperatura mais ampla da geração atual. Pod 3: faixa mais estreita, resfriador da geração anterior."
+        },
+        {
+          "name": "Monitoramento",
+          "note": "Cover Pro: sensores atuais da geração Pod 4 e Autopilot. Pod 3: sensores da geração anterior, mesmo app Eight Sleep e mesma assinatura. O Cover Pro tem sensores mais novos; nenhum dos dois é validado de forma independente."
+        },
+        {
+          "name": "Assinatura",
+          "note": "Os dois exigem a mesma assinatura Autopilot da Eight Sleep para todos os recursos. Nenhum escapa do modelo de assinatura."
+        },
+        {
+          "name": "Formato",
+          "note": "Praticamente iguais: as duas são capas de zona dupla que se encaixam no seu colchão, com uma central ao lado da cama."
+        },
+        {
+          "name": "Flexibilidade de colchão",
+          "note": "As duas são capas que se encaixam no seu colchão atual e vão com você para a próxima cama."
+        },
+        {
+          "name": "Preço",
+          "note": "Preço de estoque do Pod 3: com grande desconto sobre o original (~$2,000-2,800 conforme o estoque). Cover Pro: ~$2,200. O Pod 3 pode sair mais barato na faixa baixa do estoque restante."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Pod 3 ou Pod Cover Pro: qual é a melhor entrada na Eight Sleep?",
+          "a": "As duas são capas para o seu colchão atual. Se você encontrar um grande desconto do Pod 3 na faixa baixa do estoque restante, o Pod 3 pode custar menos; caso contrário, o Cover Pro entrega a faixa de temperatura e os sensores da geração atual a um preço estável."
+        },
+        {
+          "q": "A faixa de temperatura do Pod 3 é muito mais estreita?",
+          "a": "Um pouco mais estreita. O Cover Pro, da plataforma Pod 4, amplia a faixa de resfriamento e aquecimento alguns graus em cada direção. Para a maioria dos usuários, a faixa do Pod 3 continua eficaz."
+        },
+        {
+          "q": "O Pod 3 ainda recebe atualizações do app?",
+          "a": "Sim: o Pod 3 usa o mesmo app Eight Sleep e recebe as mesmas atualizações do Autopilot. A plataforma de hardware é mais antiga, mas o suporte de software continua."
+        },
+        {
+          "q": "O estoque do Pod 3 vai durar?",
+          "a": "A Eight Sleep vende o Pod 3 por canais de estoque: preço e disponibilidade mudam. A oferta só existe enquanto houver estoque. O Cover Pro é a opção estável da geração atual."
+        }
+      ],
+      "content": "## Em resumo\n\nMesmo ecossistema Eight Sleep, mesma assinatura. O Pod 3 é a capa da geração anterior com preço de liquidação; o Cover Pro é a capa da geração atual sobre o seu colchão.\n\n## Quando o Pod 3 é a escolha certa?\n\nSe você encontrar um grande desconto do Pod 3 na faixa baixa do estoque restante e aceitar uma faixa de temperatura um pouco mais estreita, o Pod 3 entrega uma capa Eight Sleep por menos.\n\n## Quando o Pod Cover Pro é a escolha certa?\n\nSe você quer a faixa de temperatura e os sensores da plataforma Pod 4 da geração atual em qualquer cama que tenha, o Cover Pro é a escolha racional. Plataforma atual e estável, sem a loteria do estoque."
     }
   },
   "categoryHubs": {

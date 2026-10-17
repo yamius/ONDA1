@@ -589,6 +589,11 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'ice-barrel-500' },
   { collection: 'reviews', slug: 'relax-sauna-portable' },
   { collection: 'h2h', slug: 'finnleo-hallmark-vs-almost-heaven-salem' },
+  { collection: 'reviews', slug: 'ooler-sleep-system' },
+  { collection: 'reviews', slug: 'eight-sleep-pod-cover-pro' },
+  { collection: 'h2h', slug: 'plunge-vs-edge-tub' },
+  { collection: 'h2h', slug: 'sun-home-equinox-vs-clearlight-sanctuary-2' },
+  { collection: 'h2h', slug: 'eight-sleep-pod-3-vs-eight-sleep-pod-cover-pro' },
   // WAVE_D_NEXT
   ],
 ]

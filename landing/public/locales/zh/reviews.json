@@ -3962,6 +3962,104 @@
           "a": "Balance 更适合个性化的课程式冥想计划；Calm 更适合睡眠和放松内容。Balance 会根据你的水平和目标进行调整，并提供一年免费，而 Calm 提供以睡眠故事和环境音为核心的更大内容库。"
         }
       ]
+    },
+    "ooler-sleep-system": {
+      "verdict": "Sleepme的旧款水冷系统——可靠性记录良好，支持应用定时，新买家可选的已由Dock Pro取代。",
+      "summary": "OOLER Sleep System是Sleepme长期销售的水冷床垫——Sleepme早期支持应用定时的系统之一。对新买家而言已被Dock Pro取代，但仍以折扣价清售库存。多年可靠性良好，制冷效果与Dock Pro相当，应用功能较少。",
+      "description": "ONDA评测OOLER Sleep System——Sleepme长期销售的水冷系统，Sleepme早期支持应用定时的型号之一。",
+      "bestFor": "最适合想以旧款价格从剩余库存中购买Sleepme水冷温控的用户。",
+      "testNote": "基于证据的评估——依据Sleepme/Chili产品文档和2026年独立评测评分。ONDA未进行实机测试。",
+      "productType": "支持定时的旧款水冷床垫",
+      "pros": [
+        "Sleepme早期支持应用定时的系统之一",
+        "Sleepme多年可靠性记录良好",
+        "无需订阅",
+        "铺在现有床垫上——安装灵活"
+      ],
+      "cons": [
+        "对新买家而言已被Dock Pro取代",
+        "仅剩库存——数量有限",
+        "没有心率变异性（HRV）或睡眠追踪",
+        "主机体积比Sleepme新款设计更大"
+      ],
+      "scoreNotes": {
+        "climate-range": "水冷温度范围良好，与Dock Pro相当。酷暑峰值时略弱于Dock Pro。",
+        "build": "Sleepme旧款硬件，多年可靠性记录良好。保修2年。",
+        "app-tracking": "OOLER应用支持温度定时——Sleepme早期支持应用定时的系统之一。没有HRV或睡眠追踪。",
+        "form-factor": "铺在现有床垫上。基础款为单区；两台主机可实现双区。主机体积中等。",
+        "subscription": "无需订阅。",
+        "value": "剩余库存价$1,200-1,500。Sleepme产品线中的性价比档位。"
+      },
+      "content": "## 优势所在\n\nOOLER Sleep System是Sleepme长期销售的水冷床垫——Sleepme早期支持应用定时的系统之一。多年可靠性良好，制冷效果与高端Dock Pro相当，库存价格更低。\n\n## OOLER Sleep System有哪些缺点？\n\n主要缺点是新生产已由Dock Pro取代。仅剩库存可售。没有睡眠追踪。\n\n## 谁应该购买OOLER Sleep System？\n\n如果能以折扣价买到，并且想要带定时功能的Sleepme水冷温控，就选OOLER。想买现产型号，选Dock Pro。想以最低价入门Sleepme，选ChiliPad Cube。\n\n---\n\n## 延伸阅读\n\n为什么床温调节会影响睡眠深度与恢复的生物学原理。\n\n- [方案：昼夜节律硬重置](/articles/protocol-circadian-hard-reset)——降温在睡眠节律重置流程中的位置\n- [祖先同步与昼夜节律锚点](/articles/ancestral-sync-circadian-anchors)——昼夜节律锚点与夜间温度\n- [神经液压：脑脊液流动](/articles/neural-hydraulics-csf-flow)——睡眠中的脑脊液循环，以及降温能促成什么\n",
+      "faq": [
+        {
+          "q": "OOLER Sleep System是什么？现在还能用吗？",
+          "a": "OOLER是Sleepme长期销售的水冷床垫——Sleepme早期支持应用定时的系统之一。它的水冷效果良好，与Dock Pro相当，多年可靠性出色，不过对新买家而言已被Dock Pro取代。ONDA评分为{{score:ooler-sleep-system}}/10。"
+        },
+        {
+          "q": "OOLER Sleep System多少钱？",
+          "a": "按剩余库存价，OOLER售价$1,200至$1,500，queen尺寸单区主机约$1,300，无需订阅。由于只从有限的剩余库存销售而非新生产，它是Sleepme产品线中的性价比档位。"
+        },
+        {
+          "q": "应该买OOLER还是Dock Pro？",
+          "a": "只有在能以折扣价买到、并且想要带定时功能的Sleepme水冷温控时才选OOLER，因为对新买家而言它已被Dock Pro取代，且仅剩库存。它没有HRV或睡眠追踪，主机体积也更大；如需现产型号，ONDA推荐Dock Pro，若要最低价入门Sleepme，则推荐ChiliPad Cube。"
+        }
+      ]
+    },
+    "eight-sleep-pod-cover-pro": {
+      "verdict": "在你现有床垫上实现Pod 4的温控与追踪——进入Eight Sleep生态的更便宜入口。",
+      "summary": "Eight Sleep Pod Cover Pro是去掉配套床垫的Pod系统。同样的双区水循环制冷／加热（13–43°C），同样的心率变异性（HRV）与睡眠追踪，同样的Autopilot——可铺在你已有的任何床垫上。如果不需要更换床垫，这是进入Eight Sleep的合适入口。",
+      "description": "ONDA评测Eight Sleep Pod Cover Pro——不含床垫的Pod系统，可直接用于你现有的床。",
+      "bestFor": "最适合想在现有床垫上获得Pod 4功能的用户——无需更换床垫即可入门Eight Sleep。",
+      "testNote": "基于证据的评估——依据Eight Sleep产品文档和2026年独立评测评分。ONDA未进行实机测试。",
+      "productType": "智能睡眠温控床罩（适配现有床垫）",
+      "pros": [
+        "与Pod 4床罩相同的双区温控与追踪方案",
+        "适配现有床垫——无需更换床垫",
+        "进入Eight Sleep生态的更便宜入口",
+        "保留双区（左右分别）温度"
+      ],
+      "cons": [
+        "与Pod 4一样需要订阅",
+        "床垫厚度有限制（最多约14英寸）",
+        "较重的床罩会略微改变床垫睡感",
+        "依然昂贵——仅床罩就要$2,000+"
+      ],
+      "scoreNotes": {
+        "climate-range": "与Pod 4系统相同的双区范围——13–43°C，配合Autopilot自动调节。",
+        "build": "高端床罩。兼容大多数厚度约14英寸以内的床垫。保修2年。",
+        "app-tracking": "完整的HRV与睡眠追踪——与Pod 4系统相同（未经独立验证）。",
+        "form-factor": "仅床罩，铺在现有床垫上——与Pod 4床罩方案相同。保留双区。",
+        "subscription": "与Pod 4相同，需要Autopilot订阅。",
+        "value": "$2,000-2,500——比Pod 4床罩便宜（据Tom's Guide，起价$2,449）。如果不想更换床垫，这是进入Eight Sleep的最佳入口。"
+      },
+      "content": "## 优势所在\n\nEight Sleep Pod Cover Pro是仅含床罩的Pod——同样的双区温控、同样的Autopilot、同样的HRV追踪——铺在你现有的床垫上。作为装在你现有床垫上的床罩，它的价格与Pod 4床罩（$2,449起）大致相当，或便宜几百美元。\n\n## Eight Sleep Pod Cover Pro有哪些缺点？\n\n与Pod 4相同的订阅模式。床垫兼容性限于约14英寸厚度。床罩会略微改变床垫睡感。\n\n## 谁应该购买Eight Sleep Pod Cover Pro？\n\n如果你想在现有床垫上获得Pod 4功能，就选Eight Sleep Pod Cover Pro。想要一体化床垫，选完整Pod 4。想免订阅，选ChiliPad。\n\n---\n\n## 延伸阅读\n\n为什么床温调节会影响睡眠深度与恢复的生物学原理。\n\n- [睡眠真的会清洁大脑吗？类淋巴系统的证据](/articles/nightly-flush-glymphatic-neural-cache)——哪些已在人体中得到证实，哪些仍有争议\n- [方案：昼夜节律硬重置](/articles/protocol-circadian-hard-reset)——降温在睡眠节律重置流程中的位置\n- [祖先同步与昼夜节律锚点](/articles/ancestral-sync-circadian-anchors)——为什么夜间降温符合祖先的基线环境\n",
+      "faq": [
+        {
+          "q": "Eight Sleep Pod Cover Pro值得买吗？",
+          "a": "值得，如果你想在不更换床垫的情况下获得Pod 4功能。Cover Pro拥有同样的13至43°C双区水循环制冷与加热、HRV与睡眠追踪以及Autopilot。不过它仍要$2,000+，并且需要订阅。"
+        },
+        {
+          "q": "Eight Sleep Pod Cover Pro多少钱？",
+          "a": "Eight Sleep Pod Cover Pro的queen尺寸约$2,200，另加每月约$20的订阅费。由于不含床垫，它是比完整系统更便宜的Eight Sleep生态入口。"
+        },
+        {
+          "q": "Eight Sleep Pod Cover Pro有哪些缺点？",
+          "a": "Cover Pro与完整Pod 4系统一样需要订阅，而且只适配厚度约14英寸以内的床垫。较重的床罩会略微改变床垫睡感，价格也仍然昂贵，要$2,000+。"
+        },
+        {
+          "q": "Eight Sleep Pod Cover Pro最适合谁？",
+          "a": "Pod Cover Pro最适合想在现有床垫上获得Pod 4功能的人。无需购买新床垫，就能用上Eight Sleep的双区温控、HRV与睡眠追踪以及Autopilot。"
+        }
+      ]
+    },
+    "edge-tub": {
+      "verdict": "内置冷水机冷水浴缸中的高性价比之选——硬件与The Plunge相当，价格明显更低。",
+      "productType": "带冷水机的中端冷水浴缸"
+    },
+    "eight-sleep-pod-3": {
+      "verdict": "以Pod 3的价格获得Pod 4的能力——打折时性价比扎实，温度范围略窄于Pod 4。",
+      "productType": "上一代智能睡眠温控床罩"
     }
   },
   "comparisons": {
@@ -7540,6 +7638,165 @@
         }
       ],
       "content": "## 简短结论\n\n两者都提供传统芬兰桑拿热度，品牌都有数十年的传承。Finnleo Hallmark是芬兰制造的室内标杆；Almost Heaven Salem是美国红雪松户外桶式桑拿。\n\n## 什么情况下选Finnleo Hallmark？\n\n如果你有室内安装空间，想要高端芬兰制造传承和Helo设计的加热系统——Finnleo的形态正合适。它的室内形式与芬兰队列研究最接近，而这些研究针对的是一般桑拿浴，并非Finnleo。\n\n## 什么情况下选Almost Heaven Salem？\n\n如果你有户外安装空间，想要美国制造的传统雪松桶式桑拿——Almost Heaven的形态正合适。它可坐两人，使用6 kW电加热器（Salem没有燃木选项），制造缺陷享有限终身保修，价格明显更低——含加热器标价$4,485。"
+    },
+    "plunge-vs-edge-tub": {
+      "title": "The Plunge vs Edge Tub 对比（2026）",
+      "description": "The Plunge vs Edge Tub——ONDA并排对比两款热门内置冷水机的冷水浴缸：高端做工对阵价格克制的挑战者。",
+      "intro": "The Plunge和Edge Tub是买家最常比较的两款内置冷水机冷水浴缸。两者都配备一体式冷水机、臭氧消毒和适合户外的保温层；选择在于The Plunge的高端做工，还是Edge Tub约一半价格的相当硬件。",
+      "verdict": "The Plunge在多年可靠性和冷水机能力上占优；Edge Tub在性价比上明显占优。对大多数买家来说，Edge Tub是更明智的选择。",
+      "bestForA": "如果你想要高端做工、最长的可靠性记录和最大的冷水机能力，并且能接受高端价格，就选The Plunge。",
+      "bestForB": "如果你想以约为The Plunge一半的价格获得内置冷水机的能力，并能接受较新品牌较短的多年可靠性记录，就选Edge Tub。",
+      "axes": [
+        {
+          "name": "冷水机能力",
+          "note": "Plunge：1 HP，即使在夏季高温下也能快速恢复水温。Edge：能力够用但功率较低，酷暑峰值时恢复较慢。"
+        },
+        {
+          "name": "做工耐用性",
+          "note": "Plunge拥有5年以上的用户可靠性数据。Edge较新；多年可靠性仍有待确立。"
+        },
+        {
+          "name": "水质管理",
+          "note": "实际持平：两者都使用臭氧消毒加过滤器。标称换水周期：一般使用下The Plunge每2–4周，Edge Tub每3–4周。"
+        },
+        {
+          "name": "外形",
+          "note": "占地面积和安装要求相当；两者都适用于室内／户外。"
+        },
+        {
+          "name": "保修",
+          "note": "Plunge：3年。Edge：2年。Plunge在保修期上占优。"
+        },
+        {
+          "name": "品牌与方案内容",
+          "note": "Plunge有创始人的公众影响力和更丰富的内容库。Edge更专注于产品本身。"
+        },
+        {
+          "name": "价格",
+          "note": "Edge：$2,495。Plunge：$5,990。Edge约为Plunge的42%——这是本次对比中最有意义的差距。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Edge Tub和The Plunge一样好吗？",
+          "a": "对大多数买家来说，是的——冷水机能力相当、臭氧消毒相当、外形相当。Plunge的溢价体现在多年可靠性数据、略强的冷水机功率以及3年对2年的保修。如果你能接受较短的品牌记录，Edge是更明智的性价比之选。"
+        },
+        {
+          "q": "The Plunge多出的一年保修重要吗？",
+          "a": "对大多数用户而言，影响不大。Plunge 5年以上的多年可靠性数据是更强的安心信号；多一年保修只是锦上添花。"
+        },
+        {
+          "q": "Edge Tub能保持39°F吗？",
+          "a": "一般条件下可以。Plunge的1 HP冷水机在浸泡后恢复水温更快，在夏季高温下也更可靠地保持低温。在温和气候下差距很小。"
+        },
+        {
+          "q": "哪个更容易安装？",
+          "a": "两者都是即放即用的方案——需要水平地面、110V插座和排水。安装工作量相当。"
+        }
+      ],
+      "content": "## 简要结论\n\nPlunge是高端之选；Edge是硬件相当、价格克制的挑战者。决定取决于品牌溢价的$3,500对你来说是否值得。\n\n## 什么情况下选The Plunge？\n\n如果你想要多年可靠性数据最长的高端做工、略强的冷水机功率、3年保修以及创始人内容生态——The Plunge正合适。\n\n## 什么情况下选Edge Tub？\n\n如果你想以同档位中最亲民的价格获得内置冷水机的冷水浴能力——Edge正合适。对于一般的居家日常练习，这套硬件能满足大多数用户的实际需求。"
+    },
+    "sun-home-equinox-vs-clearlight-sanctuary-2": {
+      "title": "Sun Home Equinox vs Clearlight Sanctuary 2 对比（2026）",
+      "description": "Sun Home Equinox vs Clearlight Sanctuary 2——集成红光的高性价比新秀，对阵Jacuzzi旗下、保修更长的高端之选。",
+      "intro": "两者都是以低EMF为卖点的高端全光谱红外桑拿房——因此比较的关键在于热度、附加功能、价格和品牌背书。Sun Home Equinox是高性价比新秀，额定最高约165°F（厂商规格），集成红光和色彩疗法。Clearlight Sanctuary 2是老牌高端之选，有Jacuzzi背书，保修强大。新秀功能对阵高端血统。",
+      "verdict": "性价比与功能对阵血统与保修。Sun Home Equinox在热量输出和附带功能（集成红光、色彩疗法、音响）上占优。Clearlight Sanctuary 2在做工口碑和Jacuzzi背书的终身保修上占优，但现在价格更高（$7,299对约$6,000）。两者都以低EMF为卖点，但都没有公布可供我们比较的独立数据。想要功能组合和热度选Sun Home；看重保修和品牌历史选Clearlight。",
+      "bestForA": "如果你想要额定最高约165°F（厂商规格）的桑拿房、集成红光和色彩疗法，以及来自强劲新品牌、价格克制的套装，就选Sun Home Equinox。",
+      "bestForB": "如果你最看重保修范围、品牌历史和Jacuzzi背书，并能接受更高的价格（椴木款$7,299），就选Clearlight Sanctuary 2。",
+      "axes": [
+        {
+          "name": "热量输出",
+          "note": "Sun Home Equinox额定最高约165°F（厂商规格）。Clearlight通常最高约150–157°F。"
+        },
+        {
+          "name": "集成红光／附加功能",
+          "note": "Sun Home标配集成红光面板、色彩疗法和音响。Clearlight保持更简洁、更传统的配置。"
+        },
+        {
+          "name": "保修与品牌背书",
+          "note": "Clearlight有Jacuzzi背书，保修强大且历史悠久——这正是高端买家愿意付费购买的安心感。"
+        },
+        {
+          "name": "EMF",
+          "note": "实际持平：两者都以低EMF为卖点。Clearlight的数据为厂商自述；Sun Home引用第三方验证，但未公布测量距离，因此两者都没有可供我们比较的独立数据。"
+        },
+        {
+          "name": "价格",
+          "note": "Sun Home Equinox：约$6,000起（双人）。Clearlight Sanctuary 2：椴木$7,299／桃花心木$7,699（官方商店，2026-10-01）。Sun Home便宜约$1,300。"
+        },
+        {
+          "name": "全光谱品质",
+          "note": "两者都以全光谱红外为卖点；日常桑拿体验相当。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Sun Home Equinox还是Clearlight Sanctuary 2？",
+          "a": "两者都是以低EMF为卖点的高端全光谱桑拿房。Sun Home Equinox在热度和附带功能（集成红光、色彩疗法）上占优；Clearlight Sanctuary 2在保修、品牌历史和Jacuzzi背书上占优，但价格更高（$7,299对约$6,000）。在功能加热度与血统加保修之间做选择。"
+        },
+        {
+          "q": "哪个温度更高？",
+          "a": "Sun Home Equinox——约165°F，而Clearlight Sanctuary 2约为150–157°F。如果你想要最强烈的热度，Sun Home领先。"
+        },
+        {
+          "q": "两者的EMF都低吗？",
+          "a": "两者都以低EMF为卖点。Sun Home引用了第三方验证，但未公布测量距离；Clearlight的数据由厂商自行声明。两者都没有可供我们比较的独立数据，因此应将两者的数据都视为厂商声明；如果EMF是你的决定性因素，请索取最新的检测报告。"
+        }
+      ],
+      "content": "## 简要结论\n\n[Sun Home Equinox](/reviews/sun-home-equinox)是高性价比新秀，额定最高约165°F（厂商规格），集成红光；[Clearlight Sanctuary 2](/reviews/clearlight-sanctuary-2)是Jacuzzi背书、保修更长的高端之选，价格更高（椴木款$7,299）。\n\n## 什么情况下选Sun Home Equinox？\n\n你想要温度最高的桑拿房、集成红光和色彩疗法，以及价格克制的套装。\n\n## 什么情况下选Clearlight Sanctuary 2？\n\n你最看重保修范围、品牌历史和Jacuzzi背书。\n\n## 也值得对比\n\n与品类领导者的对比，参见[Sun Home Equinox vs Sunlighten mPulse](/reviews/vs/sun-home-equinox-vs-sunlighten-mpulse)和[Sunlighten mPulse vs Clearlight Sanctuary 2](/reviews/vs/sunlighten-mpulse-vs-clearlight-sanctuary-2)。完整榜单：[最佳红外桑拿](/reviews/infrared-sauna)。"
+    },
+    "eight-sleep-pod-3-vs-eight-sleep-pod-cover-pro": {
+      "title": "Eight Sleep Pod 3 vs Pod Cover Pro 对比（2026）",
+      "description": "Eight Sleep Pod 3 vs Pod Cover Pro——清仓价的上一代床罩对阵当前一代床罩，两者都用于你现有的床垫。该买哪个。",
+      "intro": "两者都是进入Eight Sleep生态的性价比入口。Pod 3是上一代床罩，仍有库存且价格明显下调；Pod Cover Pro是当前一代的纯床罩产品，可直接装在你现有的床垫上。",
+      "verdict": "由代际和价格决定。两者都是装在你现有床垫上的床罩。如果库存折扣足够大，选Pod 3；如果你想要当前一代的温度范围和传感器，选Pod Cover Pro。",
+      "bestForA": "如果你找到了很大的库存折扣，并能接受上一代的温度范围和稍旧的传感器，就选Eight Sleep Pod 3。",
+      "bestForB": "如果你想以稳定的价格在现有床垫上用上当前一代的Eight Sleep平台，就选Pod Cover Pro。",
+      "axes": [
+        {
+          "name": "温度范围",
+          "note": "基于Pod 4平台的Cover Pro：当前一代更宽的温度范围。Pod 3：范围较窄，上一代冷水机。"
+        },
+        {
+          "name": "追踪",
+          "note": "Cover Pro：当前Pod 4一代的传感器和Autopilot。Pod 3：上一代传感器，相同的Eight Sleep应用和订阅。Cover Pro的传感器更新；两者都未经独立验证。"
+        },
+        {
+          "name": "订阅",
+          "note": "两者都需要同样的Eight Sleep Autopilot订阅才能使用全部功能。都无法摆脱会员模式。"
+        },
+        {
+          "name": "外形",
+          "note": "实际持平：两者都是适配现有床垫的双区床罩，床边配一台主机。"
+        },
+        {
+          "name": "床垫灵活性",
+          "note": "两者都是床罩，可装在你现有的床垫上，换床时也能随你带走。"
+        },
+        {
+          "name": "价格",
+          "note": "Pod 3库存价：约$2,000-2,800，视库存而定。Cover Pro：约$2,200。在库存价的低端，Pod 3可能更便宜。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Pod 3还是Pod Cover Pro——哪个是更好的Eight Sleep入门之选？",
+          "a": "两者都是装在你现有床垫上的床罩。如果你在库存价低端找到了很大的Pod 3折扣，Pod 3可能更便宜；否则Cover Pro能以稳定的价格提供当前一代的温度范围和传感器。"
+        },
+        {
+          "q": "Pod 3的温度范围窄很多吗？",
+          "a": "略窄一些。基于Pod 4平台的Cover Pro把制冷和加热范围在两个方向上各扩展了几度。对大多数用户来说，Pod 3的范围仍然有效。"
+        },
+        {
+          "q": "Pod 3还能获得应用更新吗？",
+          "a": "能——Pod 3使用同一个Eight Sleep应用，获得同样的Autopilot更新。硬件平台较旧，但软件支持仍在继续。"
+        },
+        {
+          "q": "Pod 3的库存能持续多久？",
+          "a": "Eight Sleep通过库存渠道销售Pod 3——价格和供货都会变化。优惠只在库存售完前有效。Cover Pro是稳定的当前一代选择。"
+        }
+      ],
+      "content": "## 简要结论\n\n同样的Eight Sleep生态，同样的订阅。Pod 3是清仓价的上一代床罩；Cover Pro是装在你现有床垫上的当前一代床罩。\n\n## 什么情况下选Pod 3？\n\n如果你在库存价低端找到了很大的Pod 3折扣，并能接受稍窄的温度范围——Pod 3能让你以更低的价格获得一款Eight Sleep床罩。\n\n## 什么情况下选Pod Cover Pro？\n\n如果你想在自己任何一张床上用上Pod 4平台当前一代的温度范围和传感器——Cover Pro是理性的选择。稳定的当前一代平台，不用赌库存。"
     }
   },
   "categoryHubs": {
