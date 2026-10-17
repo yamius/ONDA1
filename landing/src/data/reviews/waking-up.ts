@@ -42,7 +42,7 @@ const wakingUp: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Waking Up, built by the neuroscientist and philosopher Sam Harris, is a teaching-focused, philosophy-heavy app. It treats meditation not as a relaxation tool but as a way to examine the nature of consciousness, and it pairs practice with a genuine body of theory — lessons on philosophy and psychology, and conversations with leading thinkers. The teaching, from Harris and a set of high-calibre guest instructors, is the deepest and most rigorous here.
+Waking Up, built by the neuroscientist and philosopher Sam Harris, is a teaching-focused, philosophy-heavy app. It treats meditation not as a relaxation tool but as a way to examine the nature of consciousness, and it pairs practice with a genuine body of theory — lessons on philosophy and psychology, and conversations with leading thinkers. The teaching, from Harris and a set of well-known guest instructors, is rigorous and philosophy-heavy.
 
 ## What are the downsides of Waking Up?
 
