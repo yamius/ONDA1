@@ -959,6 +959,20 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1007/s00424-026-03210-y": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A reporting checklist for human and animal heart rate variability research",
+   "firstAuthor": "Kazdağlı",
+   "authors": [
+    "Kazdağlı",
+    "Özel"
+   ],
+   "year": 2026,
+   "journal": "Pflügers Archiv - European Journal of Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-10-17"
+  },
   "doi:10.1007/s00426-018-1066-8": {
    "kind": "doi",
    "valid": true,
@@ -22671,6 +22685,21 @@
    "doi": "10.1097/SGA.0000000000000977",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
+  },
+  "pmid:42745081": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A reporting checklist for human and animal heart rate variability research.",
+   "firstAuthor": "Kazdağlı",
+   "authors": [
+    "Kazdağlı",
+    "Özel"
+   ],
+   "year": 2026,
+   "journal": "Pflugers Arch",
+   "doi": "10.1007/s00424-026-03210-y",
+   "source": "pubmed",
+   "verifiedAt": "2026-10-17"
   },
   "pmid:42771122": {
    "kind": "pmid",
