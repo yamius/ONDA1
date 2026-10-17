@@ -3461,7 +3461,7 @@
       "faq": [
         {
           "q": "Ist der Noise Luna Ring eine gute Oura-Alternative?",
-          "a": "Er ist eine praktische, günstige Alternative ohne Abo mit einfachem Schlaftracking (Schätzungen der Schlafphasen ohne unabhängige Validierung) und langem Gesamtakku dank Ladecase. ONDA bewertet ihn mit 6,7/10 – eine Oura-Alternative fürs kleine Budget, nicht so ausgefeilt."
+          "a": "Er ist eine praktische, günstige Alternative ohne Abo mit einfachem Schlaftracking (Schätzungen der Schlafphasen ohne unabhängige Validierung) und langem Gesamtakku dank Ladecase. ONDA bewertet ihn mit {{score:luna-ring}}/10 – eine Oura-Alternative fürs kleine Budget, nicht so ausgefeilt."
         },
         {
           "q": "Braucht der Noise Luna Ring ein Abo?",
@@ -3517,7 +3517,7 @@
         },
         {
           "q": "Misst der Ultrahuman Ring Pro HRV genau?",
-          "a": "Er misst die nächtliche HRV am Finger und erhält 7/10 für die HRV-Genauigkeit, mit einem offeneren Modell ohne Abo. Es gibt nur vom Unternehmen selbst durchgeführte Preprints; eine unabhängige Validierung seiner HRV gegen EKG wurde nicht gefunden (Stand Oktober 2026)."
+          "a": "Er misst die nächtliche HRV am Finger und erhält {{score:ultrahuman-ring-pro.hrv-accuracy}}/10 für die HRV-Genauigkeit, mit einem offeneren Modell ohne Abo. Es gibt nur vom Unternehmen selbst durchgeführte Preprints; eine unabhängige Validierung seiner HRV gegen EKG wurde nicht gefunden (Stand Oktober 2026)."
         },
         {
           "q": "Ultrahuman Ring Pro vs Oura – welcher ist besser?",
