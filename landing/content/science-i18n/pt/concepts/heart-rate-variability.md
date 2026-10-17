@@ -1,5 +1,5 @@
 ---
-sourceHash: "fd60184b64ca"
+sourceHash: "030dc9f0c5b6"
 title: "Variabilidade da frequência cardíaca: o que é, o que reflete e o que não é"
 metaTitle: "Variabilidade da frequência cardíaca: definição"
 metaDescription: "A variabilidade da frequência cardíaca é a variação natural do ritmo do coração batimento a batimento. O que a molda, o que reflete e o que ela não diz."
@@ -98,11 +98,11 @@ A janela faz parte do significado. Um registro breve de laboratório, um ECG hos
 
 ## O que mostram as evidências?
 
-**Estabelecido.** A definição e a origem fisiológica do sinal vêm dos padrões de medição da área [S1] e de revisões metodológicas [S2]: a HRV é gerada pela interação dos dois ramos autonômicos com mecanismos reguladores, e a RSA é a fonte dominante em janelas curtas em repouso [S2]. As propriedades das métricas são igualmente consolidadas — RMSSD e SDNN resumem aspectos diferentes de um registro, e os valores dependem da duração do registro [S1, S2]. Em média, os valores diminuem com a idade em adultos saudáveis, com grande variação individual [S5]. Na cardiologia clínica, a HRV calculada a partir de ECG de dia inteiro em populações de pacientes é uma medida consolidada de estratificação de risco — um regime de medição que um relógio de consumo não reproduz [S2].
+**Estabelecido.** A definição e a origem fisiológica do sinal vêm dos padrões de medição da área [S1] e de revisões metodológicas [S2]: a HRV é gerada pela interação dos dois ramos autonômicos com mecanismos reguladores, e a RSA é a fonte dominante em janelas curtas em repouso [S2]. As propriedades das métricas são igualmente consolidadas — RMSSD e SDNN resumem aspectos diferentes de um registro, e os valores dependem da duração do registro [S1, S2]. Na cardiologia clínica, a HRV calculada a partir de ECG de dia inteiro em populações de pacientes é uma medida consolidada de estratificação de risco — um regime de medição que um relógio de consumo não reproduz [S2].
 
 **Diretriz / consenso de especialistas.** As diretrizes atuais apontam o sinal de entrada, a duração do registro, o ambiente, a respiração e a abordagem analítica como fatores que determinam o rigor e a confiabilidade [S4], e pedem que os achados — inclusive os de dispositivos vestíveis — sejam interpretados e contextualizados dentro dessas limitações [S4]. Isso é consenso de especialistas sobre como medir e interpretar, não dados experimentais diretos sobre a HRV em si.
 
-**Depende do contexto.** As estimativas de consumo a partir do sinal do pulso são uma cadeia de medição diferente da referência do ECG [S3]; a evidência de concordância, suas condições e seus limites são tratados na [página de medição](/science/measurements/heart-rate-variability) e não se repetem aqui.
+**Depende do contexto.** As estimativas de consumo a partir do sinal do pulso são uma cadeia de medição diferente da referência do ECG [S3]; a evidência de concordância, suas condições e seus limites são tratados na [página de medição](/science/measurements/heart-rate-variability) e não se repetem aqui. Em média, os valores diminuem com a idade em adultos saudáveis, com grande variação individual [S5].
 
 **Desconhecido.** O que um valor absoluto específico significa para uma pessoa saudável específica; como os valores noturnos de consumo se relacionam com a base de evidências clínicas, construída com ECG contínuo em pacientes; e quanto de uma mudança de um dia para o outro reflete fisiologia e quanto reflete ruído de medição. São perguntas em aberto — motivos para entender a medição, não para descartar os dados.
 

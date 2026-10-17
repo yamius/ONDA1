@@ -1,5 +1,5 @@
 ---
-sourceHash: "2b4d79850bed"
+sourceHash: "642b27d8d4fd"
 title: "SDNN — co mierzy ta miara HRV, a czego nie"
 metaTitle: "SDNN: definicja, znaczenie i rola w Apple Health"
 metaDescription: "SDNN to miara HRV, którą zapisuje Apple Health. Co mierzy, czym różni się od RMSSD i dlaczego tych dwóch liczb nie można ze sobą porównywać."
@@ -100,9 +100,9 @@ W praktyce: [kalkulator HRV](/tools/hrv) ma tryb SDNN przeznaczony dla liczb z A
 
 ## Co pokazują dane?
 
-Ustalone. Definicja, sposób obliczania i rola SDNN jako miary całkowitej zmienności pochodzą ze standardów pomiarowych dziedziny [S1] i przeglądów metodologicznych [S2, S3]. Zależność od długości zapisu to podstawowa właściwość metodologiczna, a nie niuans [S2]. W kardiologii klinicznej całodobowe SDNN z ciągłego EKG jest uznaną miarą stratyfikacji ryzyka w populacjach pacjentów [S2]. Średnio wartości u zdrowych dorosłych maleją z wiekiem, przy dużym rozrzucie indywidualnym [S4].
+Ustalone. Definicja, sposób obliczania i rola SDNN jako miary całkowitej zmienności pochodzą ze standardów pomiarowych dziedziny [S1] i przeglądów metodologicznych [S2, S3]. Zależność od długości zapisu to podstawowa właściwość metodologiczna, a nie niuans [S2]. W kardiologii klinicznej całodobowe SDNN z ciągłego EKG jest uznaną miarą stratyfikacji ryzyka w populacjach pacjentów [S2].
 
-Zależy od kontekstu. Szacunki z urządzeń ubieralnych: wartości z PPG mogą ściśle odpowiadać HRV z EKG w kontrolowanych warunkach spoczynkowych, ale zgodność słabnie przy ruchu i słabym sygnale, a zbiorczych szacunków nie można uogólniać na sen ani warunki codziennego życia [S5, S6]. Ekosystem Apple zapisuje HRV jako SDNN — to fakt dotyczący urządzenia o własnym zakresie, a nie twierdzenie zdrowotne [S8, S9, S10].
+Zależy od kontekstu. Szacunki z urządzeń ubieralnych: wartości z PPG mogą ściśle odpowiadać HRV z EKG w kontrolowanych warunkach spoczynkowych, ale zgodność słabnie przy ruchu i słabym sygnale, a zbiorczych szacunków nie można uogólniać na sen ani warunki codziennego życia [S5, S6]. Ekosystem Apple zapisuje HRV jako SDNN — to fakt dotyczący urządzenia o własnym zakresie, a nie twierdzenie zdrowotne [S8, S9, S10]. Średnio wartości u zdrowych dorosłych maleją z wiekiem, przy dużym rozrzucie indywidualnym [S4].
 
 Wytyczne / konsensus ekspertów. Aktualne wytyczne zalecają spójne warunki zapisu oraz ostrożną interpretację pojedynczych wartości w kontekście, także tych z urządzeń ubieralnych [S7]. To konsensus ekspertów co do tego, jak mierzyć i interpretować — a nie bezpośrednie dane eksperymentalne o samym SDNN.
 

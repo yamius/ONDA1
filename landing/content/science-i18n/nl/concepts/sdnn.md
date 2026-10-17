@@ -1,5 +1,5 @@
 ---
-sourceHash: "2b4d79850bed"
+sourceHash: "642b27d8d4fd"
 title: "SDNN — wat deze HRV-maat meet en wat niet"
 metaTitle: "SDNN: definitie, betekenis en de rol van Apple"
 metaDescription: "SDNN is de HRV-maat die Apple Health opslaat. Wat ze meet, hoe ze verschilt van RMSSD en waarom je de twee getallen niet met elkaar kunt vergelijken."
@@ -100,9 +100,9 @@ Voor de praktische kant: de [HRV-calculator](/tools/hrv) heeft een SDNN-modus vo
 
 ## Wat laat het bewijs zien?
 
-Vastgesteld. De definitie, de berekening en de rol van SDNN als maat voor de totale variabiliteit komen uit de meetstandaarden van het vakgebied [S1] en uit methodologische reviews [S2, S3]. Haar afhankelijkheid van de meetduur is een kerneigenschap van de methode, geen nuance [S2]. In de klinische cardiologie is SDNN over de hele dag uit continue ecg een vastgestelde maat voor risicostratificatie bij patiëntengroepen [S2]. Gemiddeld dalen de waarden bij gezonde volwassenen met de leeftijd, met grote individuele verschillen [S4].
+Vastgesteld. De definitie, de berekening en de rol van SDNN als maat voor de totale variabiliteit komen uit de meetstandaarden van het vakgebied [S1] en uit methodologische reviews [S2, S3]. Haar afhankelijkheid van de meetduur is een kerneigenschap van de methode, geen nuance [S2]. In de klinische cardiologie is SDNN over de hele dag uit continue ecg een vastgestelde maat voor risicostratificatie bij patiëntengroepen [S2].
 
-Afhankelijk van de context. Schattingen van wearables: waarden uit PPG kunnen onder gecontroleerde rustomstandigheden de HRV uit het ecg nauw volgen, maar de overeenstemming neemt af bij beweging en een zwak signaal, en gepoolde schattingen zijn niet te veralgemenen naar slaap of het dagelijks leven [S5, S6]. Het ecosysteem van Apple slaat HRV op als SDNN — een apparaatfeit met een eigen reikwijdte, geen gezondheidsclaim [S8, S9, S10].
+Afhankelijk van de context. Schattingen van wearables: waarden uit PPG kunnen onder gecontroleerde rustomstandigheden de HRV uit het ecg nauw volgen, maar de overeenstemming neemt af bij beweging en een zwak signaal, en gepoolde schattingen zijn niet te veralgemenen naar slaap of het dagelijks leven [S5, S6]. Het ecosysteem van Apple slaat HRV op als SDNN — een apparaatfeit met een eigen reikwijdte, geen gezondheidsclaim [S8, S9, S10]. Gemiddeld dalen de waarden bij gezonde volwassenen met de leeftijd, met grote individuele verschillen [S4].
 
 Methodologische richtlijnen. Actuele richtlijnen raden consequente meetomstandigheden aan en een voorzichtige interpretatie in context van losse waarden, ook die van wearables [S7]. Dat is consensus van experts over meten en interpreteren — geen direct experimenteel bewijs over SDNN zelf.
 

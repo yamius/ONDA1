@@ -147,7 +147,7 @@ evidenceMap:
     limitation: "Review of short-term measures; age-band tables published since remain pooled group data, not personal norms."
   - claim: "On average HRV falls with age, while individuals vary widely at every age (fact hrv.age.trend)."
     sources: [S2]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "These findings, as expected, reveal a considerably diminished HRV in the older age groups regardless of female or male gender."
     limitation: "Cross-sectional group averages from short-term daytime ECG; not individual predictions."
@@ -259,9 +259,9 @@ The metric must stay fixed. RMSSD and SDNN summarize different aspects of the he
 
 ## What does the evidence show?
 
-**Established.** Healthy adults differ enormously in HRV, and no agreed normative values exist for short-term measures [S3]. On average the value falls with age, while individuals vary widely at every age [S2]. Values from different devices, metrics and recording conditions are not interchangeable [S6, S7], and recordings of different lengths cannot be compared directly [S5].
+**Established.** Healthy adults differ enormously in HRV, and no agreed normative values exist for short-term measures [S3]. Values from different devices, metrics and recording conditions are not interchangeable [S6, S7], and recordings of different lengths cannot be compared directly [S5].
 
-**Context-dependent.** A personal baseline needs many readings; isolated recordings do not establish one [S10]. The specific monitoring practice of rolling weekly means with the coefficient of variation comes from sports science, where a lower value than a peer's does not necessarily indicate a poorer physiological state [S10]. Wrist PPG tracks ECG-derived values under controlled resting conditions [S8]. Seasonal variation, where reported, is weak [S11]. And because HRV findings are easy to over-interpret, methodology reviews warn against reading too much into them [S4].
+**Context-dependent.** A personal baseline needs many readings; isolated recordings do not establish one [S10]. The specific monitoring practice of rolling weekly means with the coefficient of variation comes from sports science, where a lower value than a peer's does not necessarily indicate a poorer physiological state [S10]. Wrist PPG tracks ECG-derived values under controlled resting conditions [S8]. Seasonal variation, where reported, is weak [S11]. And because HRV findings are easy to over-interpret, methodology reviews warn against reading too much into them [S4]. On average the value falls with age, while individuals vary widely at every age [S2].
 
 **Not settled.** The exact window a baseline should use is a practical choice, not a scientific constant: research protocols differ from app logic. ONDA's windows are app logic — documented below, defined once, and not a consensus of the field [S9].
 

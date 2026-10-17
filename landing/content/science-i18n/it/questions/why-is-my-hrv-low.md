@@ -1,5 +1,5 @@
 ---
-sourceHash: 952ca247f74b
+sourceHash: "fc1adc20f09d"
 title: "Perché la mia HRV è bassa? Cause comuni e cosa dicono gli studi"
 metaTitle: "HRV bassa: perché, cause e quando preoccuparsi"
 metaDescription: "Perché l'HRV è bassa: di solito è una reazione a sonno, alcol, malattia, stress o allenamento, non una diagnosi. Ogni causa con le sue prove, e quando andare dal medico."

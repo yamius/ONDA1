@@ -1,5 +1,5 @@
 ---
-sourceHash: "fd60184b64ca"
+sourceHash: "030dc9f0c5b6"
 title: "Herzfrequenzvariabilität: was sie ist, was sie widerspiegelt und was nicht"
 metaTitle: "Herzfrequenzvariabilität: Definition und Evidenz"
 metaDescription: "Die Herzfrequenzvariabilität ist die natürliche Schwankung des Herzrhythmus von Schlag zu Schlag. Was sie prägt, was sie widerspiegelt und was sie nicht verrät."
@@ -98,11 +98,11 @@ Das Fenster gehört zur Bedeutung. Eine kurze Laboraufzeichnung, ein Ganztags-EK
 
 ## Was zeigt die Evidenz?
 
-**Gesichert.** Die Definition und der physiologische Ursprung des Signals stammen aus den Messstandards des Fachgebiets [S1] und methodischen Übersichtsarbeiten [S2]: Die HRV entsteht aus dem Zusammenspiel der beiden autonomen Äste mit Regulationsmechanismen, und in kurzen Ruhefenstern ist die RSA die dominierende Quelle [S2]. Ebenso geklärt sind die Eigenschaften der Maße – RMSSD und SDNN fassen unterschiedliche Aspekte einer Aufzeichnung zusammen, und die Werte hängen von der Messdauer ab [S1, S2]. Im Durchschnitt sinken die Werte bei gesunden Erwachsenen mit dem Alter, bei großen individuellen Unterschieden [S5]. In der klinischen Kardiologie ist die aus Ganztags-EKG berechnete HRV in Patientengruppen ein etabliertes Maß zur Risikostratifizierung – ein Messregime, das eine Verbraucheruhr nicht nachbildet [S2].
+**Gesichert.** Die Definition und der physiologische Ursprung des Signals stammen aus den Messstandards des Fachgebiets [S1] und methodischen Übersichtsarbeiten [S2]: Die HRV entsteht aus dem Zusammenspiel der beiden autonomen Äste mit Regulationsmechanismen, und in kurzen Ruhefenstern ist die RSA die dominierende Quelle [S2]. Ebenso geklärt sind die Eigenschaften der Maße – RMSSD und SDNN fassen unterschiedliche Aspekte einer Aufzeichnung zusammen, und die Werte hängen von der Messdauer ab [S1, S2]. In der klinischen Kardiologie ist die aus Ganztags-EKG berechnete HRV in Patientengruppen ein etabliertes Maß zur Risikostratifizierung – ein Messregime, das eine Verbraucheruhr nicht nachbildet [S2].
 
 **Leitlinie / Expertenkonsens.** Aktuelle Leitlinien nennen Eingangssignal, Messdauer, Umgebung, Atmung und Auswertungsverfahren als Faktoren, die über Sorgfalt und Zuverlässigkeit entscheiden [S4], und fordern, Befunde – auch die von Wearables – innerhalb dieser Grenzen zu interpretieren und einzuordnen [S4]. Das ist Expertenkonsens darüber, wie man misst und interpretiert, keine direkten experimentellen Daten über die HRV selbst.
 
-**Kontextabhängig.** Schätzungen von Verbrauchergeräten aus dem Pulssignal sind eine andere Messkette als die EKG-Referenz [S3]; die Belege zur Übereinstimmung, ihre Bedingungen und Grenzen behandelt [die Seite zur Messung](/science/measurements/heart-rate-variability), statt sie hier zu wiederholen.
+**Kontextabhängig.** Schätzungen von Verbrauchergeräten aus dem Pulssignal sind eine andere Messkette als die EKG-Referenz [S3]; die Belege zur Übereinstimmung, ihre Bedingungen und Grenzen behandelt [die Seite zur Messung](/science/measurements/heart-rate-variability), statt sie hier zu wiederholen. Im Durchschnitt sinken die Werte bei gesunden Erwachsenen mit dem Alter, bei großen individuellen Unterschieden [S5].
 
 **Unbekannt.** Was ein bestimmter absoluter Wert für einen bestimmten gesunden Menschen bedeutet; wie sich nächtliche Werte von Verbrauchergeräten auf die klinische Evidenz übertragen lassen, die mit kontinuierlichem EKG bei Patientinnen und Patienten gewonnen wurde; und wie viel einer Verschiebung von Tag zu Tag Physiologie ist und wie viel Messrauschen. Das sind offene Fragen – Gründe für Messkompetenz, nicht dafür, die Daten zu verwerfen.
 

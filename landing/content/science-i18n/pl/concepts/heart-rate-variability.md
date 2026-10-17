@@ -1,5 +1,5 @@
 ---
-sourceHash: "fd60184b64ca"
+sourceHash: "030dc9f0c5b6"
 title: "Zmienność rytmu serca: czym jest, co odzwierciedla, a czym nie jest"
 metaTitle: "Zmienność rytmu serca: definicja i dane naukowe"
 metaDescription: "Zmienność rytmu serca to naturalne wahania odstępów między uderzeniami serca. Co ją kształtuje, co odzwierciedla i czego ci nie powie."
@@ -97,11 +97,11 @@ Okno pomiaru jest częścią znaczenia wyniku. Krótki zapis laboratoryjny, cał
 
 ## Co pokazują dane?
 
-**Ustalone.** Definicja i fizjologiczne pochodzenie sygnału pochodzą ze standardów pomiarowych dziedziny [S1] i przeglądów metodologicznych [S2]: HRV powstaje ze współdziałania obu gałęzi autonomicznych z mechanizmami regulacyjnymi, a w krótkich oknach spoczynkowych dominującym źródłem jest RSA [S2]. Właściwości miar są równie dobrze ugruntowane — RMSSD i SDNN opisują różne aspekty zapisu, a wartości zależą od długości zapisu [S1, S2]. Średnio wartości u zdrowych dorosłych maleją z wiekiem, przy dużym rozrzucie indywidualnym [S5]. W kardiologii klinicznej HRV obliczane z całodobowego EKG u pacjentów jest uznaną miarą stratyfikacji ryzyka — w trybie pomiaru, którego zegarek konsumencki nie odtwarza [S2].
+**Ustalone.** Definicja i fizjologiczne pochodzenie sygnału pochodzą ze standardów pomiarowych dziedziny [S1] i przeglądów metodologicznych [S2]: HRV powstaje ze współdziałania obu gałęzi autonomicznych z mechanizmami regulacyjnymi, a w krótkich oknach spoczynkowych dominującym źródłem jest RSA [S2]. Właściwości miar są równie dobrze ugruntowane — RMSSD i SDNN opisują różne aspekty zapisu, a wartości zależą od długości zapisu [S1, S2]. W kardiologii klinicznej HRV obliczane z całodobowego EKG u pacjentów jest uznaną miarą stratyfikacji ryzyka — w trybie pomiaru, którego zegarek konsumencki nie odtwarza [S2].
 
 **Wytyczne / konsensus ekspertów.** Aktualne wytyczne wskazują sygnał wejściowy, długość zapisu, miejsce pomiaru, oddech i sposób analizy jako czynniki decydujące o rzetelności i wiarygodności [S4] oraz zalecają, by wyniki — także z urządzeń ubieralnych — interpretować i osadzać w kontekście tych ograniczeń [S4]. To konsensus ekspertów co do tego, jak mierzyć i interpretować, a nie bezpośrednie dane eksperymentalne o samym HRV.
 
-**Zależy od kontekstu.** Szacunki konsumenckie z sygnału tętna to inny łańcuch pomiarowy niż referencyjne EKG [S3]; dane o zgodności, ich warunki i granice omawia [strona o pomiarach](/science/measurements/heart-rate-variability) i nie powtarzamy ich tutaj.
+**Zależy od kontekstu.** Szacunki konsumenckie z sygnału tętna to inny łańcuch pomiarowy niż referencyjne EKG [S3]; dane o zgodności, ich warunki i granice omawia [strona o pomiarach](/science/measurements/heart-rate-variability) i nie powtarzamy ich tutaj. Średnio wartości u zdrowych dorosłych maleją z wiekiem, przy dużym rozrzucie indywidualnym [S5].
 
 **Nieznane.** Co konkretna wartość bezwzględna oznacza dla konkretnej zdrowej osoby; jak nocne wartości z urządzeń konsumenckich mają się do klinicznej bazy dowodowej, zbudowanej na ciągłym EKG u pacjentów; i jaka część przesunięcia z dnia na dzień odzwierciedla fizjologię, a jaka szum pomiarowy. To otwarte pytania — powód, by rozumieć pomiary, a nie by odrzucać dane.
 

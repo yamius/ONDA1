@@ -1,5 +1,5 @@
 ---
-sourceHash: "fd60184b64ca"
+sourceHash: "030dc9f0c5b6"
 title: "Variabilità della frequenza cardiaca: cos'è, cosa riflette e cosa non è"
 metaTitle: "Variabilità cardiaca (HRV): definizione e prove"
 metaDescription: "La variabilità della frequenza cardiaca è la naturale variazione del ritmo cardiaco da un battito all'altro. Cosa la modella, cosa riflette e cosa non ti dice."
@@ -99,11 +99,11 @@ La finestra fa parte del significato. Una breve registrazione in laboratorio, un
 
 ## Cosa mostrano le prove?
 
-**Accertato.** La definizione e l'origine fisiologica del segnale vengono dagli standard di misura del settore [S1] e dalle revisioni metodologiche [S2]: l'HRV nasce dall'interazione tra le due branche autonomiche e i meccanismi di regolazione, e nelle brevi finestre a riposo la fonte dominante è la RSA [S2]. Altrettanto consolidate sono le proprietà delle metriche: RMSSD e SDNN riassumono aspetti diversi di una registrazione, e i valori dipendono dalla durata della registrazione [S1, S2]. In media i valori diminuiscono con l'età negli adulti sani, con ampie differenze individuali [S5]. In cardiologia clinica, l'HRV calcolata da ECG di ventiquattro ore in popolazioni di pazienti è una misura consolidata di stratificazione del rischio: una modalità di misura che un orologio di consumo non riproduce [S2].
+**Accertato.** La definizione e l'origine fisiologica del segnale vengono dagli standard di misura del settore [S1] e dalle revisioni metodologiche [S2]: l'HRV nasce dall'interazione tra le due branche autonomiche e i meccanismi di regolazione, e nelle brevi finestre a riposo la fonte dominante è la RSA [S2]. Altrettanto consolidate sono le proprietà delle metriche: RMSSD e SDNN riassumono aspetti diversi di una registrazione, e i valori dipendono dalla durata della registrazione [S1, S2]. In cardiologia clinica, l'HRV calcolata da ECG di ventiquattro ore in popolazioni di pazienti è una misura consolidata di stratificazione del rischio: una modalità di misura che un orologio di consumo non riproduce [S2].
 
 **Linee guida / consenso di esperti.** Le linee guida attuali indicano il segnale di partenza, la durata della registrazione, il contesto, il respiro e l'approccio analitico come fattori che determinano rigore e affidabilità [S4], e chiedono che i risultati, compresi quelli dei dispositivi indossabili, siano interpretati e contestualizzati entro questi limiti [S4]. Si tratta di un consenso di esperti su come misurare e interpretare, non di dati sperimentali diretti sull'HRV in sé.
 
-**Dipende dal contesto.** Le stime dei dispositivi di consumo ricavate dal segnale del polso sono una catena di misura diversa dall'ECG di riferimento [S3]; le prove di concordanza, le loro condizioni e i loro limiti sono trattati nella [pagina sulla misurazione](/science/measurements/heart-rate-variability) e non vengono ripetuti qui.
+**Dipende dal contesto.** Le stime dei dispositivi di consumo ricavate dal segnale del polso sono una catena di misura diversa dall'ECG di riferimento [S3]; le prove di concordanza, le loro condizioni e i loro limiti sono trattati nella [pagina sulla misurazione](/science/measurements/heart-rate-variability) e non vengono ripetuti qui. In media i valori diminuiscono con l'età negli adulti sani, con ampie differenze individuali [S5].
 
 **Sconosciuto.** Cosa significhi uno specifico valore assoluto per una specifica persona sana; come i valori notturni dei dispositivi di consumo si colleghino alle prove cliniche, costruite su ECG continui in pazienti; e quanta parte di uno spostamento da un giorno all'altro rifletta la fisiologia e quanta il rumore di misura. Sono domande aperte: ragioni per imparare a leggere le misure, non per scartare i dati.
 

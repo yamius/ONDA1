@@ -260,7 +260,7 @@ evidenceMap:
     limitation: "Short-term daytime protocols; largest for spectral measures."
   - claim: "On average HRV falls with age, while individuals vary widely (fact hrv.age.trend)."
     sources: [S7]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "These findings, as expected, reveal a considerably diminished HRV in the older age groups regardless of female or male gender."
     limitation: "Cross-sectional group averages; not individual predictions."

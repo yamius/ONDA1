@@ -1,5 +1,5 @@
 ---
-sourceHash: 952ca247f74b
+sourceHash: "fc1adc20f09d"
 title: "¿Por qué tengo la HRV baja? Causas frecuentes y qué dice la evidencia"
 metaTitle: "¿Por qué tengo la HRV baja? Causas y qué significan"
 metaDescription: "¿HRV baja? Casi siempre es una reacción al sueño, el alcohol, una enfermedad, el estrés o el entrenamiento, no un diagnóstico. Cada causa con su evidencia y cuándo ir al médico."

@@ -1,5 +1,5 @@
 ---
-sourceHash: "3c391a42bca8"
+sourceHash: "10f3860eb8cd"
 title: "Baseline dell'HRV: perché la tua normalità conta più di qualsiasi norma"
 metaTitle: "Baseline dell'HRV: la tua normalità, non una norma"
 metaDescription: "La baseline dell'HRV è il tuo intervallo abituale, non una media. Perché vale più delle norme per età, come la crea ONDA, cosa dice uno scostamento."
@@ -90,9 +90,9 @@ La metrica deve restare fissa. RMSSD e SDNN riassumono aspetti diversi del ritmo
 
 ## Cosa mostrano le prove?
 
-**Accertato.** Gli adulti sani differiscono enormemente nell'HRV, e non esistono valori normativi condivisi per le misure a breve termine [S3]. In media il valore diminuisce con l'età, mentre le differenze tra individui sono ampie a ogni età [S2]. I valori di dispositivi, metriche e condizioni di registrazione diversi non sono intercambiabili [S6, S7], e le registrazioni di durata diversa non si possono confrontare direttamente [S5].
+**Accertato.** Gli adulti sani differiscono enormemente nell'HRV, e non esistono valori normativi condivisi per le misure a breve termine [S3]. I valori di dispositivi, metriche e condizioni di registrazione diversi non sono intercambiabili [S6, S7], e le registrazioni di durata diversa non si possono confrontare direttamente [S5].
 
-**Dipende dal contesto.** Una baseline personale richiede molte letture; le registrazioni isolate non bastano a stabilirla [S10]. La pratica specifica di monitoraggio con medie settimanali mobili e coefficiente di variazione viene dalle scienze dello sport, dove un valore più basso di quello di un compagno non indica necessariamente uno stato fisiologico peggiore [S10]. La PPG al polso segue i valori derivati dall'ECG in condizioni di riposo controllate [S8]. La variazione stagionale, dove riportata, è debole [S11]. E poiché i risultati sull'HRV sono facili da sovrainterpretare, le revisioni metodologiche mettono in guardia dal leggervi troppo [S4].
+**Dipende dal contesto.** Una baseline personale richiede molte letture; le registrazioni isolate non bastano a stabilirla [S10]. La pratica specifica di monitoraggio con medie settimanali mobili e coefficiente di variazione viene dalle scienze dello sport, dove un valore più basso di quello di un compagno non indica necessariamente uno stato fisiologico peggiore [S10]. La PPG al polso segue i valori derivati dall'ECG in condizioni di riposo controllate [S8]. La variazione stagionale, dove riportata, è debole [S11]. E poiché i risultati sull'HRV sono facili da sovrainterpretare, le revisioni metodologiche mettono in guardia dal leggervi troppo [S4]. In media il valore diminuisce con l'età, mentre le differenze tra individui sono ampie a ogni età [S2].
 
 **Non risolto.** La finestra esatta da usare per una baseline è una scelta pratica, non una costante scientifica: i protocolli di ricerca differiscono dalla logica delle app. Le finestre di ONDA sono logica dell'app, documentate più sotto, definite una sola volta e non frutto di un consenso del settore [S9].
 
