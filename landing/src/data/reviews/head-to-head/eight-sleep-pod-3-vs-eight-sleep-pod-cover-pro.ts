@@ -6,7 +6,7 @@ const pod3VsCoverPro: HeadToHeadInput = {
   productBSlug: 'eight-sleep-pod-cover-pro',
   title: 'Eight Sleep Pod 3 vs Pod Cover Pro (2026)',
   description:
-    'Eight Sleep Pod 3 vs Pod Cover Pro — previous-gen cover at clearance pricing vs current-gen cover, both for your existing mattress. ONDA breaks down which Eight Sleep entry tier is the rational buy.',
+    'Eight Sleep Pod 3 vs Pod Cover Pro — previous-gen cover at clearance pricing vs current-gen cover, both for your existing mattress. Which to buy.',
   intro:
     'Both are the value entry points into the Eight Sleep ecosystem. Pod 3 is the previous-gen cover, still in inventory at meaningfully reduced pricing; Pod Cover Pro is the current-gen cover-only product that installs on your existing mattress.',
   jobDependentVerdict: true,
@@ -18,7 +18,7 @@ const pod3VsCoverPro: HeadToHeadInput = {
     'Choose Pod Cover Pro if you have a mattress you like and you want the current-gen Eight Sleep platform on it.',
   axes: [
     { name: 'Climate range', criterionId: 'climate-range', note: 'Pod 4-platform Cover Pro: current-gen wider climate range. Pod 3: narrower range, older chiller generation.' },
-    { name: 'Tracking', winner: 'b', note: 'Cover Pro: current Pod 4-generation sensors and Autopilot. Pod 3: previous-gen sensors, same Eight Sleep app and subscription. Tracking quality close but Cover Pro leads.' },
+    { name: 'Tracking', winner: 'b', note: 'Cover Pro: current Pod 4-generation sensors and Autopilot. Pod 3: previous-gen sensors, same Eight Sleep app and subscription. Cover Pro has newer sensors; neither is independently validated.' },
     { name: 'Subscription', criterionId: 'subscription', note: 'Both require the same Eight Sleep Autopilot subscription for full features. Neither escapes the membership model.' },
     { name: 'Form factor', criterionId: 'form-factor', note: "Practically equal: both are dual-zone covers that fit your existing mattress, with a hub next to the bed." },
     { name: 'Mattress flexibility', winner: 'b', note: 'Cover Pro installs on any mattress and transfers to your next bed. Pod 3 locks you into the Eight Sleep mattress.' },

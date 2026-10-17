@@ -7,22 +7,22 @@ const wakingUp: ToolReviewInput = {
   category: 'meditation-app',
   productType: 'Meditation app',
   description:
-    'ONDA review of Waking Up — Sam Harris’s app: the deepest teaching and philosophy in the category. Scored on teaching, library, evidence and value.',
+    'ONDA review of Waking Up — Sam Harris’s app: teaching-focused and philosophy-heavy. Scored on teaching, library, evidence and value.',
   verdict:
-    'The deepest, most rigorous app here — philosophy and serious instruction — but the most expensive, and not for beginners.',
+    'A teaching-focused, philosophy-heavy app — serious instruction — but the most expensive, and not for beginners.',
   summary:
-    'Waking Up, built by Sam Harris, is the most intellectually serious app in this comparison. It treats meditation as a way to examine consciousness, pairs practice with philosophy and conversations with leading thinkers, and is taught with unusual rigour. It is also the most expensive, and it is not built for beginners.',
+    'Waking Up, built by Sam Harris, is a teaching-focused, philosophy-heavy app. It treats meditation as a way to examine consciousness, pairs practice with philosophy and conversations with leading thinkers, and is taught with unusual rigour. It is also the most expensive, and it is not built for beginners.',
   scores: [
     { criterionId: 'content-library', score: 7.0, note: 'A deliberately curated library — focused and deep rather than broad, with no real sleep content.' },
-    { criterionId: 'teaching', score: 9.0, note: 'The deepest teaching here — Sam Harris plus high-calibre guest teachers, taught with rigour.' },
+    { criterionId: 'teaching', score: 9.0, note: 'Teaching-focused — Sam Harris plus well-known guest teachers, with a rigorous, philosophy-heavy approach.' },
     { criterionId: 'personalization', score: 6.5, note: 'A structured 28-day course to start, but lighter on adaptive, ongoing personalisation.' },
     { criterionId: 'app-experience', score: 7.5, note: 'A clean, calm app that stays out of the way of the practice.' },
     { criterionId: 'free-tier', score: 6.5, note: 'A 7-day free trial, plus a standing scholarship: a free membership for anyone who cannot afford it.' },
     { criterionId: 'value', score: 7.0, note: 'The most expensive here at around 130 USD a year — though the scholarship policy softens that.' },
-    { criterionId: 'evidence', score: 8.5, note: 'A secular, intellectually rigorous approach grounded in neuroscience and named teaching lineages.' },
+    { criterionId: 'evidence', score: 8.5, note: 'A secular approach that draws on meditation research and named teaching lineages; no app-specific trial.' },
   ],
   pros: [
-    'The deepest teaching and the highest-calibre instructors',
+    'Teaching-focused, with Sam Harris and well-known guest teachers',
     'Pairs practice with philosophy and conversations with leading thinkers',
     'Secular and intellectually rigorous',
     'Free access for anyone who cannot afford it',
@@ -42,7 +42,7 @@ const wakingUp: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Waking Up, built by the neuroscientist and philosopher Sam Harris, is the most intellectually serious app in this comparison. It treats meditation not as a relaxation tool but as a way to examine the nature of consciousness, and it pairs practice with a genuine body of theory — lessons on philosophy and psychology, and conversations with leading thinkers. The teaching, from Harris and a set of high-calibre guest instructors, is the deepest and most rigorous here.
+Waking Up, built by the neuroscientist and philosopher Sam Harris, is a teaching-focused, philosophy-heavy app. It treats meditation not as a relaxation tool but as a way to examine the nature of consciousness, and it pairs practice with a genuine body of theory — lessons on philosophy and psychology, and conversations with leading thinkers. The teaching, from Harris and a set of high-calibre guest instructors, is the deepest and most rigorous here.
 
 ## What are the downsides of Waking Up?
 
@@ -68,7 +68,7 @@ The science of what meditation actually does at the nervous-system level.
   ],
   relatedSlugs: ['headspace', 'insight-timer', 'calm'],
   faq: [
-    { q: "Is Waking Up worth it?", a: "Waking Up is worth it for practitioners past the basics who want depth. It has the highest-calibre instructors, pairs practice with philosophy and conversations, and is secular and rigorous. It is the most expensive app reviewed, not built for beginners, and has no sleep content." },
+    { q: "Is Waking Up worth it?", a: "Waking Up is worth it for practitioners past the basics who want depth. It is teaching-focused, with well-known guest teachers, pairs practice with philosophy and conversations, and is secular and rigorous. It is the most expensive app reviewed, not built for beginners, and has no sleep content." },
     { q: "How much does Waking Up cost?", a: "Waking Up costs $129.99 per year on its website, or $149.99 a year and $19.99 a month in the app stores, after a 7-day free trial — the most expensive meditation app in the review. Its scholarship gives a free membership to anyone who cannot afford it." },
     { q: "What are the downsides of Waking Up?", a: "Waking Up is the most expensive app reviewed and is not built for complete beginners. Its curated library is smaller, has no sleep content, and is lighter on adaptive personalisation than other major meditation apps." },
     { q: "Who is Waking Up best for?", a: "Waking Up is best for practitioners past the basics who want serious instruction and philosophy. It suits people who value secular, intellectually rigorous teaching. Complete beginners or anyone wanting sleep content should look elsewhere." },

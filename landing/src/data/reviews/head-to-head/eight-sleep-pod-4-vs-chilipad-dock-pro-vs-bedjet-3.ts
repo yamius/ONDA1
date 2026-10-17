@@ -7,14 +7,14 @@ const eightSleepVsChilipadVsBedjet: HeadToHeadInput = {
   productCSlug: 'bedjet-3',
   title: 'Eight Sleep Pod 4 vs ChiliPad Dock Pro vs BedJet 3 (2026)',
   description:
-    'Eight Sleep Pod 4 vs ChiliPad Dock Pro vs BedJet 3 — the three category-defining smart sleep-climate systems compared. Premium-with-tracking vs subscription-free water vs no-water air-flow.',
+    'Eight Sleep Pod 4 vs ChiliPad Dock Pro vs BedJet 3 — three sleep-climate systems compared: premium with tracking vs subscription-free water vs air-flow.',
   intro:
     'The three systems that resolve the smart sleep-climate category in 2026. Eight Sleep Pod 4 — water-cooled with integrated HRV tracking and required subscription. ChiliPad Dock Pro — same water cooling without the subscription, no tracking. BedJet 3 — air-flow alternative at the lowest price with no water management.',
   jobDependentVerdict: true,
   verdict:
     'Three different buying questions resolve cleanly. Eight Sleep Pod 4 if you want integrated tracking and accept the subscription. ChiliPad Dock Pro if you want the same water cooling without the subscription. BedJet 3 if you want the air-flow alternative at the lowest price.',
   bestForA:
-    'Choose Eight Sleep Pod 4 if you want category-leading climate hardware with built-in HRV tracking that replaces a wearable — and you accept the ongoing Autopilot subscription.',
+    'Choose Eight Sleep Pod 4 if you want feature-rich climate hardware with built-in HRV tracking that replaces a wearable (not independently validated) — and you accept the ongoing Autopilot subscription.',
   bestForB:
     'Choose ChiliPad Dock Pro if you want premium dual-zone water cooling without the Eight Sleep subscription tax and you already wear an Oura or Whoop for tracking.',
   bestForC:
@@ -25,8 +25,8 @@ const eightSleepVsChilipadVsBedjet: HeadToHeadInput = {
     { name: 'Subscription', criterionId: 'subscription', note: "Practically equal between ChiliPad and BedJet: neither needs a subscription. Eight Sleep needs Autopilot (about $15–25 a month) for full features." },
     { name: 'Maintenance', winner: 'c', note: 'Eight Sleep and ChiliPad: water reservoir to manage. BedJet: air-only, no water tank, no hoses, no reservoir cleaning.' },
     { name: 'Dual-zone', winner: 'a', note: 'Eight Sleep and ChiliPad: native his/her. BedJet: single-zone (doubling to two units costs more than ChiliPad single-system).' },
-    { name: 'App', winner: 'a', note: 'Eight Sleep: best in category, stage-based Autopilot. ChiliPad: scheduling-capable, climate-focused. BedJet: functional, minimal.' },
-    { name: 'Price', winner: 'c', note: 'Eight Sleep Pod 4 total 3-year cost: ~$4,200-5,900. ChiliPad: ~$1,700 one-time. BedJet: ~$600-900 one-time. BedJet ~1/6 the Eight Sleep total.' },
+    { name: 'App', winner: 'a', note: 'Eight Sleep: most feature-rich, stage-based Autopilot. ChiliPad: scheduling-capable, climate-focused. BedJet: functional, minimal.' },
+    { name: 'Price', winner: 'c', note: 'Eight Sleep Pod 4 total 3-year cost: ~$4,500-4,900 (~$4,000 queen plus ~$15-25/month subscription). ChiliPad: ~$1,700 one-time. BedJet: ~$600-900 one-time. BedJet is a fraction of the Eight Sleep total.' },
   ],
   faq: [
     {
@@ -43,11 +43,11 @@ const eightSleepVsChilipadVsBedjet: HeadToHeadInput = {
     },
     {
       q: 'Can BedJet replace Eight Sleep or ChiliPad?',
-      a: 'For mild-to-moderate climates yes — BedJet delivers usable cooling at roughly 1/6 the Eight Sleep 3-year cost. For hot/humid climates or aggressive cooling needs, water systems (Eight Sleep or ChiliPad) cool more decisively.',
+      a: 'For mild-to-moderate climates yes — BedJet delivers usable cooling at a fraction of the Eight Sleep 3-year cost. For hot/humid climates or aggressive cooling needs, water systems (Eight Sleep or ChiliPad) cool more decisively.',
     },
     {
       q: 'Which has the best ROI for biohackers already on Oura or Whoop?',
-      a: 'ChiliPad Dock Pro. You already have HRV/sleep tracking from your wearable — Eight Sleep\'s killer feature is redundant, and you save ~$2,500-4,000 over 3 years by skipping the subscription.',
+      a: 'ChiliPad Dock Pro. You already have HRV/sleep tracking from your wearable — Eight Sleep\'s killer feature is redundant, and you save ~$2,800-3,200 over 3 years (hardware plus subscription).',
     },
   ],
   content: `## The short version
@@ -56,15 +56,15 @@ Three systems resolve the category cleanly: Eight Sleep (premium + tracking + su
 
 ## When is Eight Sleep Pod 4 the right pick?
 
-If you want integrated HRV and sleep tracking so you don't need a separate wearable, plus Autopilot climate scheduling — and you accept the ongoing subscription. The hardware-as-wearable model is unique in the category.
+If you want integrated HRV and sleep tracking so you don't need a separate wearable, plus Autopilot climate scheduling — and you accept the ongoing subscription.
 
 ## When is ChiliPad Dock Pro the right pick?
 
-If you already wear an Oura or Whoop and you want the same water-cooled climate without paying the Eight Sleep subscription. Roughly half the 3-year ownership cost of Eight Sleep with comparable climate hardware.
+If you already wear an Oura or Whoop and you want the same water-cooled climate without paying the Eight Sleep subscription. Roughly a third of the 3-year ownership cost of Eight Sleep with comparable climate hardware.
 
 ## When is BedJet 3 the right pick?
 
-If you want the cheapest credible entry into active sleep-climate, you live in a mild-to-moderate climate, and you don't want to manage a water reservoir. The air-flow approach is enough for most users outside summer peaks — at roughly 1/6 the Eight Sleep 3-year total cost.`,
+If you want the cheapest credible entry into active sleep-climate, you live in a mild-to-moderate climate, and you don't want to manage a water reservoir. The air-flow approach is enough for most users outside summer peaks — at a fraction of the Eight Sleep 3-year total cost.`,
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-06-15',
   datePublished: '2026-05-27',

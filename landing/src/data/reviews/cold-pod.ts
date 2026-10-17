@@ -7,18 +7,18 @@ const coldPod: ToolReviewInput = {
   category: 'cold-plunge',
   productType: 'Portable inflatable ice-bath tub',
   description:
-    'Cold Pod review: the cheapest legitimate cold plunge — inflatable, portable, ice-fill, no chiller. A great starter tub; you bring the ice and the storage space.',
+    'Cold Pod review: a low-cost entry ($220) — inflatable, portable, ice-fill, no chiller. A great starter tub; you bring the ice and the storage space.',
   verdict:
-    'The cheapest legitimate cold-plunge entry — inflatable, portable, ice-fill operation.',
+    'A low-cost cold-plunge entry ($220) — inflatable, portable, ice-fill operation.',
   summary:
-    'Cold Pod is the inflatable portable cold-plunge tub that turned the category accessible. Folds down for storage, fills via garden hose, no chiller — ice-fill operation. UK-founded, now globally distributed. The right entry point for users testing cold-plunge practice before committing to fixed installation.',
+    'Cold Pod is the inflatable portable cold-plunge tub. Folds down for storage, fills via garden hose, no chiller — ice-fill operation. UK-founded, now globally distributed. The right entry point for users testing cold-plunge practice before committing to fixed installation.',
   scores: [
     { criterionId: 'chiller-capacity', score: 4.0, note: 'No chiller. Temperature held entirely by ice and ambient. Insulation is thinner than rigid tubs — hold time shorter.' },
     { criterionId: 'build', score: 6.0, note: 'Inflatable construction — durable for typical use but more vulnerable than rigid tubs over multi-year ownership. Replaceable parts available.' },
     { criterionId: 'water-management', score: 5.5, note: 'Manual water changes; no ozone or filter. Higher maintenance per session of use.' },
-    { criterionId: 'form-factor', score: 9.0, note: 'Folds down for storage, inflates in 10 minutes. Outdoor or indoor temporary use. The most flexible form factor in the category.' },
+    { criterionId: 'form-factor', score: 9.0, note: 'Folds down for storage, inflates in 10 minutes. Outdoor or indoor temporary use. Very flexible form factor.' },
     { criterionId: 'evidence', score: 6.0, note: 'Honest marketing about being an entry-level / portable option, not a clinical instrument.' },
-    { criterionId: 'value', score: 8.5, note: '$220 — the cheapest credible cold-plunge entry on the market. Higher maintenance cost over years balances the low upfront.' },
+    { criterionId: 'value', score: 8.5, note: '$220 — a low-cost cold-plunge entry. Higher maintenance cost over years balances the low upfront.' },
   ],
   pros: [
     'Cheapest legitimate cold-plunge entry — $220 upfront',
@@ -41,7 +41,7 @@ const coldPod: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Cold Pod is the cheapest legitimate way to start cold plunge. Inflatable construction, ice-fill operation, fold-down storage, $220. For users who want to test whether daily cold plunge changes anything before committing to a $1,200 Ice Barrel or $5,990 Plunge, this is the right shape.
+Cold Pod is a low-cost way to start cold plunge. Inflatable construction, ice-fill operation, fold-down storage, $220. For users who want to test whether daily cold plunge changes anything before committing to a $1,200 Ice Barrel or $5,990 Plunge, this is the right shape.
 
 ## What are the downsides of Cold Pod?
 
@@ -49,7 +49,7 @@ Inflatable construction is the trade. Insulation hold time is shorter than rigid
 
 ## Who should buy Cold Pod?
 
-Choose Cold Pod if you are testing cold-plunge practice and want the cheapest credible entry path. Once daily-use intent is established, the chiller-built tier (Edge, Plunge) or barrel-style (Ice Barrel) is the natural upgrade.
+Choose Cold Pod if you are testing cold-plunge practice and want a low-cost entry ($220). Once daily-use intent is established, the chiller-built tier (Edge, Plunge) or barrel-style (Ice Barrel) is the natural upgrade.
 
 ---
 
@@ -58,18 +58,18 @@ Choose Cold Pod if you are testing cold-plunge practice and want the cheapest cr
 The biology of why cold exposure works — and the protocols that compound with the hardware.
 
 - [CO₂ tolerance and the oxygen limit](/articles/co2-tolerance-expanding-oxygen-limit) — why cold and breath protocols layer cleanly
-- [Anti-entropy neural architecture](/articles/anti-entropy-neural-architecture) — cold exposure as a daily anti-entropy stress dose
-- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why cold-shock drives mitochondrial density up
+- [Anti-entropy neural architecture](/articles/anti-entropy-neural-architecture) — cold exposure as a brief daily stressor
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — how cold exposure relates to mitochondrial adaptation
 `,
   references: [
     { label: 'Cold Pod — official site', url: 'https://thecoldpod.com/' },
   ],
   relatedSlugs: ['ice-barrel-500', 'inergize-cold-tub', 'penguin-chillers'],
   faq: [
-    { q: "Is the Cold Pod worth it?", a: "Yes, as a low-commitment way to start cold plunging. The Cold Pod is the cheapest legitimate cold-plunge entry at $220, inflates in 10 minutes and folds for storage. It has no chiller, so you pay for ice daily, and the inflatable build is less durable long-term." },
+    { q: "Is the Cold Pod worth it?", a: "Yes, as a low-commitment way to start cold plunging. The Cold Pod is a low-cost entry at $220, inflates in 10 minutes and folds for storage. It has no chiller, so you pay for ice daily, and the inflatable build is less durable long-term." },
     { q: "How much does the Cold Pod cost?", a: "The Cold Pod costs about $220 upfront as a one-time purchase. Ice is a separate daily operating expense, because the tub has no chiller and runs on ice-fill operation, filled via a garden hose. It inflates in 10 minutes via the included pump." },
     { q: "What are the downsides of the Cold Pod?", a: "The Cold Pod has no chiller, so ice is a daily cost. Its inflatable build is less durable than rigid tubs over multi-year ownership, water changes are manual with no ozone, and insulation holds cold for less time than rigid insulated tubs." },
-    { q: "Who is the Cold Pod best for?", a: "The Cold Pod is best for first-time cold-plunge users who want an inflatable, portable, low-commitment entry. It fits flats and small homes and lets you test daily practice before committing to a fixed installation. It is the cheapest legitimate cold-plunge entry." },
+    { q: "Who is the Cold Pod best for?", a: "The Cold Pod is best for first-time cold-plunge users who want an inflatable, portable, low-commitment entry. It fits flats and small homes and lets you test daily practice before committing to a fixed installation." },
   ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',

@@ -8,10 +8,10 @@ const pod4VsPod5: HeadToHeadInput = {
   description:
     'Eight Sleep Pod 4 vs Pod 5 — the $2,449 category leader vs the $6,099 Pod 5 Ultra. ONDA on what actually changed and whether the extra features are worth double the price.',
   intro:
-    'The Eight Sleep Pod 5 Ultra adds real hardware over the Pod 4 — an adjustable base, a top-down cooling blanket, built-in audio and snore mitigation — but it roughly doubles the price, and the core sleep-climate tech (and even the new Autopilot 4.0 software) is shared. So this is less "which is better" than "is the full-bed system worth the jump".',
+    'The Eight Sleep Pod 5 Ultra adds real hardware over the Pod 4 — an adjustable base, a top-down cooling blanket, built-in audio and snore mitigation — but it costs about 1.5× the Pod 4, and the core sleep-climate tech (and even the new Autopilot 4.0 software) is shared. So this is less "which is better" than "is the full-bed system worth the jump".',
   jobDependentVerdict: true,
   verdict:
-    'The Pod 5 Ultra is the fuller system — adjustable base, top-down climate, audio, automatic snore mitigation — but at ~$6,099 it costs roughly double the Pod 4. Dual-zone temperature, HRV tracking and the Autopilot 4.0 software are shared, so unless you want the full-bed extras, the Pod 4 (or the cheaper Pod 5 Core) is the value.',
+    'The Pod 5 Ultra is the fuller system — adjustable base, top-down climate, audio, automatic snore mitigation — but at ~$6,099 it costs about 1.5× the Pod 4 (~$4,000). Dual-zone temperature, HRV tracking and the Autopilot 4.0 software are shared, so unless you want the full-bed extras, the Pod 4 (or the cheaper Pod 5 Core) is the value.',
   bestForA:
     'Choose the Pod 4 if you want the category-leading dual-zone sleep-climate experience and HRV tracking for the best value — most of what makes Eight Sleep great, at less than half the Ultra’s price.',
   bestForB:

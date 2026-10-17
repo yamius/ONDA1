@@ -9,16 +9,16 @@ const eightSleepPod5: ToolReviewInput = {
   description:
     'ONDA review of the Eight Sleep Pod 5 — the flagship Pod 5 Ultra adds an adjustable base, top-down cooling and audio, but jumps to $6,099+. The core tech is shared with the Pod 4. Replaced by the Pod 6 (from $1,999) in September 2026.',
   verdict:
-    'The maximal Eight Sleep — the Pod 5 Ultra adds an adjustable base, a top-down hydro-powered blanket, built-in audio and snore mitigation, but at $6,099+ the price roughly doubles. The core dual-zone climate and HRV tech are the same as the Pod 4, which remains the value. Note: Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 — check remaining Pod 5 stock against Pod 6 pricing.',
+    'The maximal Eight Sleep — the Pod 5 Ultra adds an adjustable base, a top-down hydro-powered blanket, built-in audio and snore mitigation, but at $6,099+ it costs about 1.5× the Pod 4 (~$4,000). The core dual-zone climate and HRV tech are the same as the Pod 4, which remains the value. Note: Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 — check remaining Pod 5 stock against Pod 6 pricing.',
   summary:
-    'The Eight Sleep Pod 5 is the 2026 generation of the category-leading sleep-climate system. The flagship Pod 5 Ultra is a fuller bed system: an adjustable base, a hydro-powered blanket that adds cooling/heating from above as well as below, built-in soundscapes and speakers, and automatic snore mitigation that gently raises your head. The Pod 5 Core (cover-only) adds faster heating/cooling and smarter AI. But the fundamentals — dual-zone temperature, AI Autopilot, HRV and sleep-stage tracking, vibrating alarm — are identical to the Pod 4, and the April 2026 Autopilot 4.0 "sleep agent" (Apple/Google Health integration, plain-language morning brief) reaches the Pod 4 too. The Pod 5 Ultra starts around $6,099 (queen) to $6,300 (king) versus the Pod 4’s $2,449–$2,649, and the subscription is still required. On 23 September 2026 Eight Sleep launched the Pod 6 as the Pod 5’s replacement in every market, starting at $1,999 (Solo) and $2,899 (queen, dual-zone), so the Pod 5 is now the previous generation.',
+    'The Eight Sleep Pod 5 is the 2026 generation of Eight Sleep’s sleep-climate system. The flagship Pod 5 Ultra is a fuller bed system: an adjustable base, a hydro-powered blanket that adds cooling/heating from above as well as below, built-in soundscapes and speakers, and automatic snore mitigation that gently raises your head. The Pod 5 Core (cover-only) adds faster heating/cooling and smarter AI. But the fundamentals — dual-zone temperature, AI Autopilot, HRV and sleep-stage tracking, vibrating alarm — are identical to the Pod 4, and the April 2026 Autopilot 4.0 "sleep agent" (Apple/Google Health integration, plain-language morning brief) reaches the Pod 4 too. The Pod 5 Ultra starts around $6,099 (queen) to $6,300 (king) versus the Pod 4’s $2,449–$2,649, and the subscription is still required. On 23 September 2026 Eight Sleep launched the Pod 6 as the Pod 5’s replacement in every market, starting at $1,999 (Solo) and $2,899 (queen, dual-zone), so the Pod 5 is now the previous generation.',
   scores: [
     { criterionId: 'climate-range', score: 9.7, note: 'The Pod 5 Ultra adds a hydro-powered blanket for top-down temperature control on top of the dual-zone cover — the fullest climate envelope in the category. Pod 5 Core adds faster heating/cooling. Dual-zone (his/her) carries over.' },
     { criterionId: 'build', score: 8.5, note: 'Premium cover plus, on the Ultra, an adjustable base and quieter hub. Refined physical controls. Multi-year reliability track record largely positive.' },
     { criterionId: 'app-tracking', score: 9.0, note: 'Same best-in-class sleep/HRV tracking, now with Autopilot 4.0 — a "sleep agent" that integrates Apple Health / Google Health Connect and writes a plain-language morning brief. Notably, that software also reaches the Pod 4.' },
     { criterionId: 'form-factor', score: 8.0, note: 'The Ultra is a fuller system: adjustable base, built-in speakers and automatic snore mitigation (raises the head). More capable, but a bigger install and footprint than a cover-only Pod.' },
     { criterionId: 'subscription', score: 5.0, note: 'Unchanged — the Autopilot subscription is still required for full features (~$15–25/month). Premium hardware behind an ongoing membership remains the editorial sticking point.' },
-    { criterionId: 'value', score: 4.0, note: 'Pod 5 Ultra $6,099–$6,300 (queen/king) plus subscription — roughly double the Pod 4. For the core sleep-climate experience the Pod 4 (or Pod 5 Core) delivers most of the value for far less.' },
+    { criterionId: 'value', score: 4.0, note: 'Pod 5 Ultra $6,099–$6,300 (queen/king) plus subscription — about 1.5× the Pod 4 (~$4,000). For the core sleep-climate experience the Pod 4 (or Pod 5 Core) delivers most of the value for far less.' },
   ],
   pros: [
     'Fullest climate control in the category — top-down hydro blanket plus dual-zone cover (Ultra)',
@@ -27,7 +27,7 @@ const eightSleepPod5: ToolReviewInput = {
     'Multi-year reliability track record largely positive',
   ],
   cons: [
-    'Pod 5 Ultra roughly doubles the price ($6,099+) for additive, not core, features',
+    'Pod 5 Ultra costs about 1.5× the Pod 4 ($6,099+) for additive, not core, features',
     'Autopilot subscription still required for full features',
     'The headline software (Autopilot 4.0) also comes to the Pod 4 — less reason to upgrade',
     'Bigger install and footprint; locked into the Eight Sleep ecosystem',
@@ -51,7 +51,7 @@ The additions are real but they sit on top of an unchanged core. Dual-zone tempe
 
 ## The catch
 
-Price and the subscription. The Pod 5 Ultra starts around $6,099 (queen) — roughly double the Pod 4 — and still requires the Autopilot membership for full features. That is a lot of money for additive comforts when the core experience is shared.
+Price and the subscription. The Pod 5 Ultra starts around $6,099 (queen) — about 1.5× the Pod 4 (~$4,000) — and still requires the Autopilot membership for full features. That is a lot of money for additive comforts when the core experience is shared.
 
 ## Who should buy Eight Sleep Pod 5?
 
@@ -65,9 +65,9 @@ Choose the Pod 5 Ultra if you want the maximal full-bed system and the price is 
   relatedSlugs: ['eight-sleep-pod-4', 'eight-sleep-pod-cover-pro', 'chilipad-dock-pro', 'bedjet-3'],
   publishOn: '2026-09-06',
   faq: [
-    { q: "Is the Eight Sleep Pod 5 worth it?", a: "Only if you want the maximal full-bed system. The Pod 5 Ultra adds an adjustable base, top-down hydro blanket, built-in audio and snore mitigation, but roughly doubles the price. Core dual-zone climate and HRV tech match the Pod 4, which remains the value." },
+    { q: "Is the Eight Sleep Pod 5 worth it?", a: "Only if you want the maximal full-bed system. The Pod 5 Ultra adds an adjustable base, top-down hydro blanket, built-in audio and snore mitigation, but costs about 1.5× the Pod 4. Core dual-zone climate and HRV tech match the Pod 4, which remains the value." },
     { q: "How much does the Eight Sleep Pod 5 cost?", a: "The Eight Sleep Pod 5 Ultra listed at $6,099 for a queen and about $6,300 for a king, plus roughly $20 per month for the Autopilot subscription. The cover-only Pod 5 Core was cheaper. Since 23 September 2026 the Pod 5 has been replaced by the Pod 6, which starts at $1,999 (Solo) and $2,899 (queen)." },
-    { q: "What are the downsides of the Eight Sleep Pod 5?", a: "The Pod 5 Ultra roughly doubles the price for additive rather than core features, and the Autopilot subscription is still required. Autopilot 4.0 also comes to the Pod 4, reducing the reason to upgrade, and the install is bigger with ecosystem lock-in." },
+    { q: "What are the downsides of the Eight Sleep Pod 5?", a: "The Pod 5 Ultra costs about 1.5× the Pod 4 for additive rather than core features, and the Autopilot subscription is still required. Autopilot 4.0 also comes to the Pod 4, reducing the reason to upgrade, and the install is bigger with ecosystem lock-in." },
     { q: "Eight Sleep Pod 5 vs Pod 4: which is better?", a: "The Pod 4 is the better value; the Pod 5 Ultra is better only if you want a full bed system with an adjustable base, top-down blanket, audio and snore mitigation. Both share core dual-zone climate and HRV tech, and Autopilot 4.0 reaches the Pod 4 too." },
   ],
   datePublished: '2026-09-06',

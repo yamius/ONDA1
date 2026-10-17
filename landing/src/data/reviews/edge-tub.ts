@@ -7,18 +7,18 @@ const edgeTub: ToolReviewInput = {
   category: 'cold-plunge',
   productType: 'Mid-tier cold plunge tub with chiller',
   description:
-    'ONDA review of the Edge Tub — the mid-tier cold-plunge alternative to Plunge with comparable chiller capacity at roughly half the price.',
+    'ONDA review of the Edge Tub — the mid-tier cold-plunge alternative to Plunge with similar chiller-built hardware at roughly half the price.',
   verdict:
-    'The best value in the chiller-built cold-plunge tier — comparable hardware to The Plunge, meaningfully cheaper.',
+    'A strong value among chiller-built cold-plunge tubs — comparable hardware to The Plunge, meaningfully cheaper.',
   summary:
-    'Edge Tub is the most credible mid-tier cold-plunge option in 2026 — insulated acrylic tub with built-in chiller, holds 39°F under typical use, ozone filtration. Newer brand than The Plunge with a thinner multi-year reliability track record, but the core hardware is comparable at roughly half the price.',
+    'Edge Tub is an insulated acrylic tub with built-in chiller, holds 39°F under typical use, ozone filtration. Newer brand than The Plunge with a thinner multi-year reliability track record, but the core hardware is comparable at roughly half the price.',
   scores: [
     { criterionId: 'chiller-capacity', score: 8.0, note: 'Capable chiller holds 39°F under typical use; slightly slower recovery than Plunge’s 1 HP unit in summer heat.' },
     { criterionId: 'build', score: 7.5, note: 'Insulated acrylic tub, 2-year warranty. Newer brand — multi-year reliability track record is still building.' },
     { criterionId: 'water-management', score: 8.0, note: 'Ozone sanitation + filter; water changes every 3–4 weeks under typical use.' },
     { criterionId: 'form-factor', score: 8.0, note: 'Indoor or outdoor install, comparable footprint to Plunge. Requires 110V and level surface.' },
     { criterionId: 'evidence', score: 6.5, note: 'Honest marketing language about cold-exposure benefits; less prominent founder presence than The Plunge.' },
-    { criterionId: 'value', score: 8.5, note: '$2,495 — roughly half The Plunge’s price for comparable core hardware. The best chiller-built value in 2026.' },
+    { criterionId: 'value', score: 8.5, note: '$2,495 — roughly half The Plunge’s price for comparable core hardware. A strong value.' },
   ],
   pros: [
     'Roughly half The Plunge’s price for comparable chiller capability',
@@ -49,7 +49,7 @@ Edge is newer and the multi-year reliability data is still being built. The warr
 
 ## Who should buy Edge Tub?
 
-Choose Edge Tub if you want chiller-built cold-plunge capability at the most accessible price in the tier. If multi-year reliability and the deepest manufacturer support are deciding criteria, The Plunge is the right shape.
+Choose Edge Tub if you want chiller-built cold-plunge capability at the most accessible price in the tier. If a longer warranty (3 years vs 1) and a longer track record are deciding criteria, The Plunge is the right shape.
 
 ---
 
@@ -58,15 +58,15 @@ Choose Edge Tub if you want chiller-built cold-plunge capability at the most acc
 The biology of why cold exposure works — and the protocols that compound with the hardware.
 
 - [CO₂ tolerance and the oxygen limit](/articles/co2-tolerance-expanding-oxygen-limit) — why cold and breath protocols layer cleanly
-- [Anti-entropy neural architecture](/articles/anti-entropy-neural-architecture) — cold exposure as a daily anti-entropy stress dose
-- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why cold-shock drives mitochondrial density up
+- [Anti-entropy neural architecture](/articles/anti-entropy-neural-architecture) — cold exposure as a brief daily stressor
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — how cold exposure relates to mitochondrial adaptation
 `,
   references: [
     { label: 'Edge Tub — official site', url: 'https://edgetheory.com/' },
   ],
   relatedSlugs: ['plunge', 'inergize-cold-tub', 'ice-barrel-500'],
   faq: [
-    { q: "Is the Edge Tub worth it?", a: "Yes, it is the best value in the chiller-built cold-plunge tier. The Edge Tub offers hardware comparable to The Plunge, holds 39°F under typical use and includes ozone filtration, at roughly half the price. It is a newer brand with a thinner reliability track record." },
+    { q: "Is the Edge Tub worth it?", a: "Yes, it is a strong value among chiller-built cold-plunge tubs. The Edge Tub offers hardware comparable to The Plunge, holds 39°F under typical use and includes ozone filtration, at roughly half the price. It is a newer brand with a thinner reliability track record." },
     { q: "How much does the Edge Tub cost?", a: "The Edge Tub costs about $2,495 as a one-time purchase, with the chiller and ozone sanitation included. That is roughly half The Plunge's price for comparable chiller capability, and it is rated for indoor or outdoor use." },
     { q: "What are the downsides of the Edge Tub?", a: "The Edge Tub is a newer brand with thinner multi-year reliability data than The Plunge, and it carries a 2-year warranty versus Plunge's 3-year. Its chiller recovers slightly slower in peak summer heat, and protocol guidance content is less developed." },
     { q: "Edge Tub vs The Plunge: which is better?", a: "The Edge Tub is better for value; The Plunge is better for track record and warranty. Edge offers comparable chiller hardware at roughly half the price, while Plunge has a 3-year warranty and more developed protocol guidance." },

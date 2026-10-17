@@ -7,7 +7,7 @@ const garminFenix8: ToolReviewInput = {
   category: 'hrv-wearable',
   productType: 'Multisport GPS smartwatch',
   description:
-    'ONDA review of the Garmin Fenix 8 as an HRV tracker — a premium multisport flagship with an Elevate v5 sensor (ECG), multi-week battery and no subscription.',
+    'Garmin Fenix 8 as an HRV tracker — ONDA review of a premium multisport flagship with an Elevate v5 sensor (ECG), multi-week battery and no subscription.',
   verdict:
     'Garmin’s newest heart sensor (Elevate v5) — inside a $1,000 expedition watch you are mostly paying for GPS, dive and battery, not HRV.',
   summary:

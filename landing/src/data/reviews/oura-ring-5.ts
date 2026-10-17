@@ -7,33 +7,33 @@ const ouraRing5: ToolReviewInput = {
   category: 'hrv-wearable',
   productType: 'Smart ring',
   description:
-    'ONDA review of the Oura Ring 5 — the 2026 flagship smart ring: 40% slimmer with upgraded sensors; previous Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated; mandatory subscription.',
+    'Oura Ring 5 review: 40% slimmer, upgraded sensors; earlier Oura rings agreed closely with a chest-strap ECG overnight; Ring 5 not yet validated.',
   verdict:
-    'The 2026 flagship — 40% slimmer with genuinely upgraded sensors. Previous Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated. The mandatory subscription remains the only real catch.',
+    'The 2026 flagship — 40% slimmer with genuinely upgraded sensors. Previous Oura generations agreed closely with a chest-strap ECG overnight; the Ring 5 itself has not been separately validated. The mandatory subscription remains the only real catch.',
   summary:
-    'The Oura Ring 5 (launched June 2026) is the new generation of the category leader. It is ~40% slimmer than the Ring 4 (6.09mm × 2.28mm) with a 6–9 day battery, and — the part that matters — redesigned sensors: stronger LEDs, low-profile domes and 12 signal pathways for cleaner contact and more consistent readings across finger types and skin tones. Sleep and overnight HRV remain best in class. The catch is unchanged: full data needs the monthly membership, and hardware is $399 ($499 for premium finishes). Note that the headline new software features (live workout tracking, women’s health, bloodwork import) also roll out to the Ring 4 and Gen3 — so the Ring 5’s real advantage over the Ring 4 is the sensors and the fit, not the app.',
+    'The Oura Ring 5 (launched June 2026) is the new generation of the best-known ring. It is ~40% slimmer than the Ring 4 (6.09mm × 2.28mm) with a 6–9 day battery, and — the part that matters — redesigned sensors: stronger LEDs, low-profile domes and 12 signal pathways for cleaner contact and more consistent readings across finger types and skin tones. The catch is unchanged: full data needs the monthly membership, and hardware is $399 ($499 for premium finishes). Note that the headline new software features (live workout tracking, women’s health, bloodwork import) also roll out to the Ring 4 and Gen3 — so the Ring 5’s real advantage over the Ring 4 is the sensors and the fit, not the app.',
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.5, note: 'Earlier Oura generations agreed with ECG closely in one independent study of overnight recordings; the Ring 5 itself has not been validated. The redesigned sensors aim at more consistent contact across skin tones and finger types; daytime/exercise readings still drift under motion. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'sensor', score: 8.5, note: 'Redesigned sensor stack: stronger LEDs and low-profile domes for better skin contact. A genuine hardware step over the Ring 4, not just a slimmer shell.' },
     { criterionId: 'sleep-accuracy', score: 7.5, note: 'Same sleep algorithm line as the Ring 4, whose published sleep-staging study was funded by Oura; the Ring 5 has no independent sleep validation. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not.' },
     { criterionId: 'data-access', score: 6.5, note: 'Unchanged from the Ring 4 — a developer API exists, but raw beat-to-beat data is limited and deeper analysis sits behind the membership.' },
-    { criterionId: 'wearability', score: 9.0, note: '~40% slimmer and lighter than the Ring 4 (6.09mm × 2.28mm) with a 6–9 day battery — the most comfortable always-on ring in the category. Narrower size range (6–13) than the Ring 4.' },
+    { criterionId: 'wearability', score: 9.0, note: '~40% slimmer and lighter than the Ring 4 (6.09mm × 2.28mm) with a 6–9 day battery — very slim and light. Narrower size range (6–13) than the Ring 4.' },
     { criterionId: 'app-ux', score: 8.5, note: 'The same polished, explanatory app; new features (live workout tracking, women’s health, lost-ring finder, lab/bloodwork import) arrive here — but also come to the Ring 4 and Gen3.' },
-    { criterionId: 'value', score: 6.0, note: 'Hardware $399 ($499 premium finishes) plus a mandatory ~$6/month membership — the highest entry in the ring field, and you never fully own the data.' },
+    { criterionId: 'value', score: 6.0, note: 'Hardware $399 ($499 premium finishes) plus a mandatory ~$6/month membership, and you never fully own the data.' },
   ],
   pros: [
     'Genuinely upgraded sensors — better contact across skin tones and finger types',
     '~40% slimmer and lighter than the Ring 4, 6–9 day battery',
-    'Earlier Oura generations agreed with ECG more closely than others in one study of overnight recordings (13 people; the Ring 5 itself has not been separately validated), plus sleep staging compared with polysomnography only for Gen 3, in Oura-funded studies',
+    'Earlier Oura generations agreed closely with a chest-strap ECG in one study of overnight recordings (13 people; the Ring 5 itself has not been separately validated), plus sleep staging compared with polysomnography only for Gen 3, in Oura-funded studies',
     'Clear, educational app',
   ],
   cons: [
     'Advanced data still requires a recurring monthly membership',
     'The headline new software features also come to the Ring 4 — less reason to upgrade if you own one',
     'Daytime and exercise HRV remain unreliable under motion',
-    '$399/$499 is the priciest entry in the ring category, and there is no display',
+    '$399/$499 hardware, and there is no display',
   ],
-  bestFor: 'Best for overnight HRV and sleep data in the slimmest, most comfortable always-on ring (previous Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) — for buyers coming fresh, not necessarily Ring 4 owners.',
+  bestFor: 'Best for overnight HRV and sleep data in a very slim, light always-on ring (previous Oura generations agreed closely with a chest-strap ECG overnight; the Ring 5 itself has not been separately validated) — for buyers coming fresh, not necessarily Ring 4 owners.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Oura’s specifications, independent 2026 launch reviews and prior-generation validation literature. Not hands-on tested by ONDA.',
@@ -42,7 +42,7 @@ const ouraRing5: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-For overnight [HRV](/glossary/heart-rate-variability), earlier Oura generations agreed with ECG more closely than others in one study of overnight recordings (13 people); the Ring 5 itself has not been separately validated. It carries the line the [Ring 4](/reviews/oura-ring-4) belongs to onto redesigned sensors. Stronger LEDs, low-profile sensor domes and 12 signal pathways improve skin contact, which is where a finger-worn optical sensor either wins or loses its reading, and reviewers report more consistent tracking across skin tones and finger types.
+For overnight [HRV](/glossary/heart-rate-variability), earlier Oura generations agreed closely with a chest-strap ECG in one study of overnight recordings (13 people); the Ring 5 itself has not been separately validated. It carries the line the [Ring 4](/reviews/oura-ring-4) belongs to onto redesigned sensors. Stronger LEDs, low-profile sensor domes and 12 signal pathways improve skin contact, which is where a finger-worn optical sensor either wins or loses its reading, and reviewers report more consistent tracking across skin tones and finger types.
 
 ## What actually changed vs the Ring 4
 
@@ -50,7 +50,7 @@ Two real things: the sensors, and the fit. The Ring 5 is about **40% slimmer and
 
 ## The catch
 
-Unchanged, and still the main mark against it: the ring is only half the purchase. Without the monthly membership the app collapses to basic scores, raw beat-to-beat data is never fully exposed, and at $399 ($499 for premium finishes) this is the priciest way into a smart ring.
+Unchanged, and still the main mark against it: the ring is only half the purchase. Without the monthly membership the app collapses to basic scores, raw beat-to-beat data is never fully exposed, and the ring costs $399 ($499 for premium finishes).
 
 ## Who should buy Oura Ring 5?
 
@@ -70,9 +70,9 @@ Choose the Oura Ring 5 if you are buying fresh and want overnight HRV and sleep 
   relatedSlugs: ['oura-ring-4', 'whoop-5-0', 'ultrahuman-ring-air', 'samsung-galaxy-ring'],
   publishOn: '2026-09-06',
   faq: [
-    { q: "Is the Oura Ring 5 worth it over the Ring 4?", a: "The Ring 5 adds an upgraded sensor and a slimmer design but runs the same software as the Ring 4. Both record overnight HRV and sleep (only the Ring 4 has an independent overnight ECG check; the Ring 5 has not been validated yet), so the Ring 5 is worth it for the newest hardware while the discounted Ring 4 is often better value." },
+    { q: "Is the Oura Ring 5 worth it over the Ring 4?", a: "The Ring 5 adds an upgraded sensor and a slimmer design but runs the same software as the Ring 4. Both record overnight HRV and sleep (only the Ring 4 has an independent chest-strap ECG comparison; the Ring 5 has not been validated yet), so the Ring 5 is worth it for the newest hardware while the discounted Ring 4 is often better value." },
     { q: "How much does the Oura Ring 5 cost?", a: "It is $399 for standard finishes (up to $499 for premium), plus the Oura membership at about $6 per month for full data — a one-time ring purchase with an ongoing subscription." },
-    { q: "Is the Oura Ring 5 accurate for sleep and HRV?", a: "Previous Oura generations agreed well with ECG overnight, and finger-based measurement suits sleep tracking; the Ring 5 itself has not been separately validated." },
+    { q: "Is the Oura Ring 5 accurate for sleep and HRV?", a: "Previous Oura generations agreed closely with a chest-strap ECG overnight, and finger-based measurement suits sleep tracking; the Ring 5 itself has not been separately validated." },
   ],
   datePublished: '2026-09-06',
   dateModified: '2026-10-10',

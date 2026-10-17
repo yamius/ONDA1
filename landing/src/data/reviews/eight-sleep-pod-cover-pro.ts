@@ -15,7 +15,7 @@ const eightSleepPodCoverPro: ToolReviewInput = {
   scores: [
     { criterionId: 'climate-range', score: 9.5, note: 'Same dual-zone range as Pod 4 system — 13–43°C with Autopilot adjustment.' },
     { criterionId: 'build', score: 8.0, note: 'Premium cover. Compatible with most mattresses up to ~14 inch thickness. 2-year warranty.' },
-    { criterionId: 'app-tracking', score: 9.0, note: 'Full HRV and sleep tracking — identical to Pod 4 system.' },
+    { criterionId: 'app-tracking', score: 9.0, note: 'Full HRV and sleep tracking — identical to Pod 4 system (not independently validated).' },
     { criterionId: 'form-factor', score: 8.5, note: 'Cover-only, fits an existing mattress — the same approach as the Pod 4 cover. Dual-zone preserved.' },
     { criterionId: 'subscription', score: 5.0, note: 'Same Autopilot subscription requirement as Pod 4.' },
     { criterionId: 'value', score: 6.5, note: '$2,000-2,500 — cheaper than the Pod 4 cover (from $2,449, per Tom\'s Guide). Best entry into Eight Sleep if mattress replacement is not wanted.' },

@@ -42,7 +42,7 @@ const bestMeditationApps2026: Comparison = {
     {
       reviewSlug: 'waking-up',
       award: 'Best for depth',
-      takeaway: 'The deepest teaching and the philosophy behind it — for practitioners past the basics.',
+      takeaway: 'Teaching-focused, with the philosophy behind it — for practitioners past the basics.',
     },
     {
       reviewSlug: 'happier-meditation',
@@ -73,7 +73,7 @@ const bestMeditationApps2026: Comparison = {
     },
     {
       q: 'Is Waking Up good for beginners?',
-      a: 'Less so. Waking Up is among the deepest apps here, but its course moves quickly into advanced ideas. Most beginners are better starting with Headspace and moving to Waking Up once a practice is established.',
+      a: 'Less so. Waking Up is among the most advanced apps here, but its course moves quickly into advanced ideas. Most beginners are better starting with Headspace and moving to Waking Up once a practice is established.',
     },
     {
       q: 'Do meditation apps need a subscription?',
