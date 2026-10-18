@@ -9,9 +9,9 @@ const insightTimer: ToolReviewInput = {
   description:
     'ONDA review of Insight Timer — a very large meditation library and the most usable free tier. Scored on library, teaching, personalisation and value.',
   verdict:
-    'A very large free meditation library (Insight Timer says it is the largest), and a substantial free tier (Healthy Minds, Medito and Smiling Mind are fully free; Balance offers a free trial) — variable quality is the price.',
+    'A very large free library (the largest, by Insight Timer’s own account) with a substantial free tier — variable quality is the price.',
   summary:
-    'Insight Timer has a very large meditation library — the largest, by its own account — and the rare app you can build a real practice on without paying. It works like a YouTube for meditation: enormous range, many teachers, hourly live events — and, inevitably, variable quality.',
+    'Insight Timer has a very large meditation library — the largest, by its own account — and an app you can build a real practice on without paying. It works like a YouTube for meditation: enormous range, many teachers, hourly live events — and, inevitably, variable quality.',
   scores: [
     { criterionId: 'content-library', score: 9.5, note: 'A very large library — 360,000 free tracks by the maker’s count, plus courses.' },
     { criterionId: 'teaching', score: 7.5, note: 'A huge range of teachers and traditions; depth is there, but quality varies session to session.' },
@@ -23,7 +23,7 @@ const insightTimer: ToolReviewInput = {
   ],
   pros: [
     'A very large meditation library (the largest, according to Insight Timer)',
-    'A genuinely usable free tier — rare in this category',
+    'A genuinely usable free tier',
     'Cheapest paid tier, plus hourly live events and community',
     'A huge range of teachers and traditions',
   ],
@@ -68,7 +68,7 @@ The science of what meditation actually does at the nervous-system level.
   ],
   relatedSlugs: ['headspace', 'calm', 'waking-up'],
   faq: [
-    { q: "Is Insight Timer free?", a: "Largely, yes. Insight Timer has a very large free tier that you can genuinely build a real practice on, which is rare among meditation apps. Member Plus costs US$60 per year with a 7-day free trial, the cheapest paid tier in its comparison, and there are hourly live events and community features." },
+    { q: "Is Insight Timer free?", a: "Largely, yes. Insight Timer has a very large free tier that you can genuinely build a real practice on without paying. Member Plus costs US$60 per year with a 7-day free trial, the cheapest paid tier in its comparison, and there are hourly live events and community features." },
     { q: "Is Insight Timer worth paying for?", a: "For many people the free tier is enough, which is the app's biggest strength. At US$60 a year, Member Plus is the cheapest paid tier among major meditation apps, so upgrading is low-risk if you want more. The catch is variable session quality, not price." },
     { q: "Insight Timer vs Headspace: which is better?", a: "Insight Timer wins on breadth and value: it has a very large meditation library (the largest, by its own account) and a usable free tier. Headspace wins on structure, with clearer course-led guidance for beginners. Insight Timer's crowd-sourced content can feel cluttered and uneven." },
   ],
