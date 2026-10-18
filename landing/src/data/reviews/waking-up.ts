@@ -19,7 +19,7 @@ const wakingUp: ToolReviewInput = {
     { criterionId: 'app-experience', score: 7.5, note: 'A clean, calm app that stays out of the way of the practice.' },
     { criterionId: 'free-tier', score: 6.5, note: 'A 7-day free trial, plus a standing scholarship: a free membership for anyone who cannot afford it.' },
     { criterionId: 'value', score: 7.0, note: 'The most expensive here at around 130 USD a year — though the scholarship policy softens that.' },
-    { criterionId: 'evidence', score: 8.5, note: 'A secular approach that draws on meditation research and named teaching lineages; no app-specific trial.' },
+    { criterionId: 'evidence', score: 6.0, note: 'A secular approach that draws on meditation research in general and named teaching lineages; we found no trial of the Waking Up app itself, so it scores like other apps without their own trials.' },
   ],
   pros: [
     'Teaching-focused, with Sam Harris and well-known guest teachers',

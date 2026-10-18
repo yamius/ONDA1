@@ -22,7 +22,7 @@ const headspaceVsWakingUpVsHealthyMinds: HeadToHeadInput = {
   axes: [
     { name: 'Scientific lineage', winner: 'c', note: 'Healthy Minds: Richard Davidson’s Centre for Healthy Minds, University of Wisconsin–Madison — one of the most-cited contemplative-science labs. Waking Up: Sam Harris (PhD neuroscience). Headspace: smaller research footprint.' },
     { name: 'Curriculum structure', winner: 'a', note: 'Headspace’s Basics course is the strongest beginner path. Healthy Minds: four-pillar curriculum. Waking Up: introductory course plus non-linear library.' },
-    { name: 'Teaching depth', winner: 'b', note: 'Waking Up goes deepest into philosophy and non-dual practice. Healthy Minds: rigorous but procedural. Headspace: practical and accessible.' },
+    { name: 'Teaching depth', winner: 'b', note: 'Waking Up focuses most on philosophy and non-dual practice. Healthy Minds: rigorous but procedural. Headspace: practical and accessible.' },
     { name: 'Beginner accessibility', winner: 'a', note: 'Headspace is the gentlest entry. Healthy Minds is friendly but assumes some commitment. Waking Up assumes intellectual engagement.' },
     { name: 'Library scope', winner: 'b', note: 'Waking Up: meditations + neuroscience/philosophy lectures from Anil Seth, Annaka Harris and others. Headspace: focused meditation. Healthy Minds: four-pillar programme content.' },
     { name: 'Free-access policy', winner: 'c', note: 'Healthy Minds: genuinely free, no paywall. Waking Up: free access on request for anyone who cannot afford. Headspace: subscription required.' },
@@ -39,7 +39,7 @@ const headspaceVsWakingUpVsHealthyMinds: HeadToHeadInput = {
       a: 'Yes — funded by Richard Davidson’s non-profit lab. No paywall, no subscription, no premium tier. The only top-tier meditation app with that policy. Waking Up offers free access on request; Headspace does not.',
     },
     {
-      q: 'Which has the deepest teaching?',
+      q: 'Which is the most philosophy-focused?',
       a: 'Waking Up, on philosophical and non-dual depth. The platform goes beyond mindfulness into philosophy of mind, consciousness studies and neuroscience. Headspace and Healthy Minds stay within structured meditation training.',
     },
     {
