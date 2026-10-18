@@ -12,7 +12,7 @@ const bestMeditationApps2026: Comparison = {
     {
       reviewSlug: 'insight-timer',
       award: 'Best overall',
-      takeaway: 'A very large library (the largest, by Insight Timer’s own account) and the only genuinely usable free tier — wide range and strong value.',
+      takeaway: 'A very large library (the largest, by Insight Timer’s own account) and a genuinely usable free tier — wide range and strong value.',
     },
     {
       reviewSlug: 'healthy-minds-program',

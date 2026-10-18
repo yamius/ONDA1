@@ -9,7 +9,7 @@ const insightTimer: ToolReviewInput = {
   description:
     'ONDA review of Insight Timer — a very large meditation library and the most usable free tier. Scored on library, teaching, personalisation and value.',
   verdict:
-    'A very large free meditation library (Insight Timer says it is the largest), and the only app here you can genuinely use for free — variable quality is the price.',
+    'A very large free meditation library (Insight Timer says it is the largest), and a substantial free tier (Healthy Minds, Medito and Smiling Mind are fully free; Balance offers a free trial) — variable quality is the price.',
   summary:
     'Insight Timer has a very large meditation library — the largest, by its own account — and the rare app you can build a real practice on without paying. It works like a YouTube for meditation: enormous range, many teachers, hourly live events — and, inevitably, variable quality.',
   scores: [

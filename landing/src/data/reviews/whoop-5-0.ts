@@ -19,7 +19,7 @@ const whoop5: ToolReviewInput = {
     { criterionId: 'data-access', score: 6.5, note: 'A developer API exists, but like Oura the raw beat-to-beat stream stays largely closed.' },
     { criterionId: 'wearability', score: 8.5, note: 'Screenless and easy to forget; ~14 day battery, and the slide-on pack charges it without removal.' },
     { criterionId: 'app-ux', score: 7.5, note: 'Strain, Recovery and an AI coach reward data-minded users but can overwhelm everyone else.' },
-    { criterionId: 'value', score: 5.5, note: 'Subscription-only — roughly 239 USD a year, forever, with no device you ever own.' },
+    { criterionId: 'value', score: 5.5, note: 'Subscription-only — from $199 (One) / $239 (Peak) / $359 (Life) per year, forever, with no device you ever own.' },
   ],
   pros: [
     'Continuous overnight HRV, not a single morning reading',
