@@ -68,7 +68,7 @@ Why HRV is the signal worth tracking — and why the number differs by device.
   ],
   relatedSlugs: ['garmin-venu-4', 'apple-watch-series-11', 'whoop-5-0'],
   faq: [
-    { q: "Is the Garmin Fenix 8 worth $999 for HRV?", a: "Not for HRV alone — it shares Garmin's HRV Status model with the far cheaper Venu 4, so it uses the same HRV Status method. The Fenix premium buys ECG, multi-band GPS, maps, a dive computer and multi-week battery." },
+    { q: "Is the Garmin Fenix 8 worth $999 for HRV?", a: "Not for HRV alone — it uses the same HRV Status method as the far cheaper Venu 4. The Fenix premium buys ECG, multi-band GPS, maps, a dive computer and multi-week battery." },
     { q: "Does the Garmin Fenix 8 need a subscription?", a: "No — it is a one-time purchase from about $999 with no subscription for HRV, training or recovery features." },
     { q: "How long does the Fenix 8 battery last?", a: "Up to roughly 28–48 days with solar in smartwatch mode, meaning overnight HRV is rarely interrupted by charging." },
   ],

@@ -43,7 +43,7 @@ const whoop5: ToolReviewInput = {
 
 The Whoop 5.0 is built around one idea: recovery. Rather than a morning spot-check, it builds its daily recovery signal from [HRV](/glossary/heart-rate-variability) measured during sleep; Whoop does not publish exactly how that nightly value is weighted. The screenless band is easy to forget you are wearing, the current generation pushed battery life out to roughly two weeks, and the slide-on battery pack means it never has to leave your wrist to charge.
 
-**2026 validation update.** A wrist band is still short of a finger-based ring or an ECG chest strap for beat-to-beat precision, and its sleep stages are estimates. Read the *trend* Whoop reports each morning rather than any single value.
+**Validation caveat.** A wrist band is still short of a finger-based ring or an ECG chest strap for beat-to-beat precision, and its sleep stages are estimates. Read the *trend* Whoop reports each morning rather than any single value.
 
 ## What are the downsides of Whoop 5.0?
 
