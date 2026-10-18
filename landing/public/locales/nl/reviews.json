@@ -192,8 +192,47 @@
       ]
     },
     "whoop-5-0": {
-      "verdict": "Een herstelcoach om je pols: continue nachtelijke HRV en scherp inzicht in belasting, achter een eeuwigdurend lidmaatschap.",
-      "productType": "Band zonder scherm"
+      "verdict": "Een herstelcoach om je pols: continue nachtelijke HRV en gedetailleerde strain- en recoveryscores, vastgezet achter een doorlopend lidmaatschap.",
+      "summary": "De Whoop 5.0 draait om herstel. Het dagelijkse recoverysignaal wordt opgebouwd uit hartslagvariabiliteit (HRV) die tijdens de slaap wordt gemeten, niet uit een losse meting in de ochtend. Het nadeel is het model: er is geen hardware die van jou is, alleen een doorlopend lidmaatschap.",
+      "description": "ONDA-review van de Whoop 5.0 – een recoverytracker met continue HRV voor sporters, beoordeeld op nauwkeurigheid, sensor, datatoegang en prijs.",
+      "bestFor": "Het best voor sporters die trainen op basis van dagelijkse recovery- en strainsignalen.",
+      "testNote": "Op bewijs gebaseerde beoordeling – gescoord op basis van fabrikantspecificaties, onafhankelijke reviews uit 2026 en gepubliceerde validatieliteratuur. Niet praktisch getest door ONDA.",
+      "productType": "Band zonder scherm",
+      "pros": [
+        "Continue nachtelijke HRV, geen enkele ochtendmeting",
+        "Gedetailleerde strain- en recoveryscores",
+        "Zonder scherm en comfortabel; ~14 dagen accu, laadt op aan je lichaam"
+      ],
+      "cons": [
+        "Alleen met abonnement – stop je met betalen, dan werkt de band niet meer",
+        "Doorlopende jaarlijkse kosten, geen eenmalige aankoop",
+        "Drukke app die gewone gebruikers kan overweldigen",
+        "Beperkte toegang tot ruwe data"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Recovery is gebaseerd op HRV gemeten tijdens de slaap. De eerdere WHOOP 4.0 werd in één onafhankelijke studie met nachtelijke opnames gecontroleerd; de 5.0 zelf is niet gevalideerd tegen ECG (stand oktober 2026). ONDA-regel: zonder eigen onafhankelijke validatie krijgt een apparaat maximaal 7,5 als eerdere generaties gevalideerd zijn, anders 7,0.",
+        "sensor": "Een optische band met meerdere golflengten die de hartslag goed vasthoudt als hij strak zit.",
+        "sleep-accuracy": "Slaaptracking op recoveryniveau; de 5.0 heeft geen onafhankelijke slaapvalidatie en scoort daarom hetzelfde als de Oura-ringen. ONDA-regel: zonder eigen onafhankelijke validatie krijgt een apparaat maximaal 7,5 als eerdere generaties gevalideerd zijn, anders 7,0.",
+        "data-access": "Er bestaat een developer-API, maar net als bij Oura blijft de ruwe slag-op-slagstroom grotendeels gesloten.",
+        "wearability": "Zonder scherm en makkelijk te vergeten; ~14 dagen accu, en het opschuifbare accupack laadt hem op zonder dat je hem afdoet.",
+        "app-ux": "Strain, Recovery en een AI-coach belonen datagerichte gebruikers, maar kunnen alle anderen overweldigen.",
+        "value": "Alleen met abonnement – ongeveer 239 USD per jaar, voor altijd, zonder dat het apparaat ooit van jou is."
+      },
+      "content": "## Waar hij voorop loopt\n\nDe Whoop 5.0 is gebouwd rond één idee: herstel. In plaats van een losse ochtendmeting bouwt hij het dagelijkse recoverysignaal op uit [HRV](/glossary/heart-rate-variability) die tijdens de slaap wordt gemeten; Whoop publiceert niet precies hoe die nachtelijke waarde wordt gewogen. De band zonder scherm vergeet je makkelijk, de huidige generatie rekte de accuduur op tot ongeveer twee weken, en dankzij het opschuifbare accupack hoeft hij nooit van je pols om op te laden.\n\n**Kanttekening bij de validatie.** Een polsband blijft voor slag-op-slagprecisie achter bij een ring om je vinger of een ECG-borstband, en de slaapfasen zijn schattingen. Kijk naar de *trend* die Whoop elke ochtend rapporteert in plaats van naar één waarde.\n\n## Wat zijn de nadelen van de Whoop 5.0?\n\nWhoop wordt verkocht als lidmaatschap, niet als product. Er is geen hardware die van jou is – stop je met betalen, dan werkt de band niet meer – en het lidmaatschap – 199 USD per jaar voor WHOOP One, 239 USD voor Peak, 359 USD voor Life – is een doorlopende kostenpost, geen eenmalige aankoop. De app is krachtig maar druk: Strain, Recovery en de AI-coach belonen gebruikers die hun data willen bestuderen en kunnen wie dat niet wil overweldigen. Toegang tot ruwe data is, net als bij Oura, beperkt.\n\n## Voor wie is de Whoop 5.0?\n\nKies de Whoop 5.0 als je sporter of serieuze trainer bent die beslissingen neemt op basis van een dagelijkse recoveryscore en continue nachtelijke [HRV](/glossary/heart-rate-variability) wil zonder scherm om je pols. Heb je een hekel aan doorlopende abonnementen, of wil je een apparaat dat ook de tijd aangeeft, dan passen de alternatieven beter.\n\n---\n\n## Achtergrondlectuur\n\nDe wetenschap achter waarom HRV het signaal is dat het volgen waard is – en hoe het lichaam het produceert.\n\n- [Voorspelt HRV reactietijd en focus?](/articles/nervous-system-ping-latency) – wat HRV in rust wel en niet zegt over aandacht en zelfbeheersing\n- [HRV als fouttolerante buffer](/articles/fault-tolerant-human-hrv-buffer) – waarom een brede HRV-marge is waar je eigenlijk voor traint\n- [De baroreflex en de 0,1 Hz-verschuiving](/articles/baroreflex-01hz-shift) – het kenmerk van resonantiefrequentie-ademhaling in je HRV-curve\n",
+      "faq": [
+        {
+          "q": "Heeft de Whoop 5.0 een abonnement nodig?",
+          "a": "Ja. Whoop werkt alleen met een abonnement: $199 per jaar voor WHOOP One, $239 voor Peak of $359 voor Life, telkens inclusief de band – een aparte hardwareaankoop is er niet. Stop je met betalen, dan werkt de band niet meer."
+        },
+        {
+          "q": "Meet de Whoop 5.0 HRV nauwkeurig?",
+          "a": "Whoop bouwt zijn nachtelijke HRV-waarde op uit metingen tijdens de slaap. Dat is goed genoeg om trends te volgen, maar een ECG-borstband zit dichter bij een laboratorium-ECG (in rust, bij jonge gezonde volwassenen). De 5.0 zelf is niet apart getest."
+        },
+        {
+          "q": "Voor wie is de Whoop 5.0 het meest geschikt?",
+          "a": "Voor sporters en serieuze trainers die handelen op een dagelijkse recovery- en strainscore. De accu van ~14 dagen en de band zonder scherm zijn geschikt om 24/7 te dragen; voor gewone gebruikers die een hekel hebben aan abonnementen is het overkill."
+        }
+      ]
     },
     "ultrahuman-m1": {
       "verdict": "De beste ecosysteemkeuze — glucosedata samen met HRV, slaap en herstel van de Ultrahuman Ring in één app.",
@@ -2031,8 +2070,52 @@
       "productType": "Meditatie-app"
     },
     "waking-up": {
-      "verdict": "De diepgaandste, meest grondige app hier – filosofie en serieus onderricht – maar de duurste, en niet voor beginners.",
-      "productType": "Meditatie-app"
+      "verdict": "Een app gericht op onderricht en zwaar op filosofie – serieuze begeleiding – maar de duurste, en niet voor beginners.",
+      "summary": "Waking Up, gemaakt door Sam Harris, is een app gericht op onderricht en zwaar op filosofie. Meditatie wordt er gezien als een manier om het bewustzijn te onderzoeken, de beoefening gaat samen met filosofie en gesprekken met vooraanstaande denkers, en het onderricht is ongewoon grondig. Het is ook de duurste, en hij is niet gemaakt voor beginners.",
+      "description": "ONDA-review van Waking Up – de app van Sam Harris: gericht op onderricht en filosofie. Beoordeeld op begeleiding, bibliotheek, onderbouwing en prijs.",
+      "bestFor": "Het best voor diepgang – serieuze begeleiding en filosofie, voor beoefenaars voorbij de basis.",
+      "testNote": "Op bewijs gebaseerde beoordeling – op basis van openbare informatie, app-storedata en onafhankelijke reviews uit 2026. Niet gebaseerd op een lange praktijktest door ONDA.",
+      "productType": "Meditatie-app",
+      "pros": [
+        "Gericht op onderricht, met Sam Harris en bekende gastdocenten",
+        "Combineert beoefening met filosofie en gesprekken met vooraanstaande denkers",
+        "Seculier en intellectueel grondig",
+        "Gratis toegang voor iedereen die het niet kan betalen"
+      ],
+      "cons": [
+        "De duurste app hier",
+        "Niet gemaakt voor absolute beginners",
+        "Een kleinere, samengestelde bibliotheek – geen slaapcontent",
+        "Minder sterk in adaptieve personalisatie"
+      ],
+      "scoreNotes": {
+        "content-library": "Een bewust samengestelde bibliotheek – gericht en diep in plaats van breed, zonder echte slaapcontent.",
+        "teaching": "Gericht op onderricht – Sam Harris plus bekende gastdocenten, met een grondige aanpak die zwaar leunt op filosofie.",
+        "personalization": "Een gestructureerde cursus van 28 dagen om te beginnen, maar minder sterk in adaptieve, doorlopende personalisatie.",
+        "app-experience": "Een overzichtelijke, rustige app die de beoefening niet in de weg zit.",
+        "free-tier": "Een gratis proefperiode van 7 dagen, plus een vaste beurs: een gratis lidmaatschap voor iedereen die het niet kan betalen.",
+        "value": "De duurste hier met ongeveer 130 USD per jaar – al verzacht het beursbeleid dat.",
+        "evidence": "Een seculiere aanpak die steunt op meditatieonderzoek in het algemeen en benoemde leertradities; we vonden geen studie naar de Waking Up-app zelf, dus scoort hij zoals andere apps zonder eigen studies."
+      },
+      "content": "## Waar hij voorop loopt\n\nWaking Up, gemaakt door neurowetenschapper en filosoof Sam Harris, is een app gericht op onderricht en zwaar op filosofie. Meditatie wordt er niet gezien als ontspanningsmiddel, maar als een manier om de aard van het bewustzijn te onderzoeken, en de beoefening gaat samen met een echt theoretisch fundament – lessen over filosofie en psychologie, en gesprekken met vooraanstaande denkers. Het onderricht, van Harris en een reeks bekende gastdocenten, is grondig en zwaar op filosofie.\n\n## Wat zijn de nadelen van Waking Up?\n\nDie diepgang is bewust smal. De bibliotheek is samengesteld en relatief klein, er is geen slaapcontent, en de introductiecursus gaat snel over op gevorderde ideeën – een absolute beginner kan het gevoel krijgen het niet bij te benen. Het is ook de duurste optie, al haalt een vast aanbod van gratis toegang voor iedereen die het echt niet kan betalen de scherpe kantjes van de prijs.\n\n## Voor wie is Waking Up?\n\nKies Waking Up als je al een basisbeoefening hebt en dieper wilt gaan – in grondig onderricht en de filosofie erachter – en de prijs (of de beurs) voor jou werkt. Begin je vanaf nul, start dan met Headspace en stap over op Waking Up zodra je beoefening stevig staat.\n\n---\n\n## Achtergrondlectuur\n\nDe wetenschap van wat meditatie werkelijk doet op het niveau van het zenuwstelsel.\n\n- [Ritmische synchronisatie en systeemfrequenties](/articles/rhythmic-entrainment-system-frequencies) – waarom getimede audio en ademprotocollen met oefening sterker worden\n- [Fysiologische concentratie: de bedrading van de flowstaat](/articles/physiological-concentration-flow-state-hardwired) – welke neurochemie de flowstaat echt nodig heeft\n- [Alfagolven: rust, creativiteit en flow](/articles/neural-bridge-alpha-flow-gateway) – wat het alfaritme doet, en wat alfa-headsets, apps en muziek wel en niet kunnen veranderen\n",
+      "faq": [
+        {
+          "q": "Is Waking Up het waard?",
+          "a": "Waking Up is het waard voor beoefenaars voorbij de basis die diepgang willen. De app is gericht op onderricht, met bekende gastdocenten, combineert beoefening met filosofie en gesprekken, en is seculier en grondig. Het is de duurste beoordeelde app, niet gemaakt voor beginners, en heeft geen slaapcontent."
+        },
+        {
+          "q": "Hoeveel kost Waking Up?",
+          "a": "Waking Up kost $129,99 per jaar via de website, of $149,99 per jaar en $19,99 per maand in de app stores, na een gratis proefperiode van 7 dagen – de duurste meditatie-app in deze review. De beurs geeft een gratis lidmaatschap aan iedereen die het niet kan betalen."
+        },
+        {
+          "q": "Wat zijn de nadelen van Waking Up?",
+          "a": "Waking Up is de duurste beoordeelde app en niet gemaakt voor absolute beginners. De samengestelde bibliotheek is kleiner, heeft geen slaapcontent en is minder sterk in adaptieve personalisatie dan andere grote meditatie-apps."
+        },
+        {
+          "q": "Voor wie is Waking Up het meest geschikt?",
+          "a": "Waking Up is het meest geschikt voor beoefenaars voorbij de basis die serieus onderricht en filosofie willen. Het past bij mensen die seculier, intellectueel grondig onderricht waarderen. Absolute beginners of wie slaapcontent zoekt, kunnen beter elders kijken."
+        }
+      ]
     },
     "hooga-hg500": {
       "verdict": "De budgetreferentie voor biohackers – stevige bouw, eerlijke specs, ongeveer een vijfde van de prijs van Joovv met grotendeels dezelfde basisspecificatie.",
@@ -4085,6 +4168,97 @@
     "eight-sleep-pod-3": {
       "verdict": "Pod 4-mogelijkheden voor Pod 3-prijzen: solide prijs-kwaliteit met korting, met een iets smaller temperatuurbereik dan Pod 4.",
       "productType": "Slimme slaapklimaathoes van de vorige generatie"
+    },
+    "hello-inside": {
+      "verdict": "Een degelijk CGM-programma uit de Europese middenklasse – sterk in de eigen taal, competente inzichten, smaller van opzet dan Veri.",
+      "summary": "Hello Inside is een in Wenen ontwikkeld CGM-programma voor gebruikers in de DACH-regio (Duitsland, Oostenrijk, Zwitserland) en de bredere EU die met metabole gezondheid bezig zijn. Hardware van Abbott Libre 3 met een app die inzet op beginnersvriendelijke uitleg, wekelijkse voortgangsrapporten en contentmodules in de stijl van een diëtist. Minder integraties dan Veri; sterkere content in de eigen taal voor Duitstaligen.",
+      "description": "ONDA-review van Hello Inside – het Oostenrijkse CGM-programma voor Duitstalige en EU-gebruikers. Beoordeeld op inzichten, nauwkeurigheid en prijs.",
+      "bestFor": "Het best voor Duitstalige EU-gebruikers die CGM-coaching in hun eigen taal willen.",
+      "testNote": "Op bewijs gebaseerde beoordeling – gescoord op basis van productdocumentatie van Hello Inside, validatieliteratuur over Abbott Libre 3 en onafhankelijke reviews van de EU-markt uit 2026. Niet praktisch getest door ONDA.",
+      "productType": "CGM-coachingprogramma (Abbott Libre 3, EU)",
+      "pros": [
+        "Content oorspronkelijk in het Duits",
+        "Geen jaarcontract – standaard maandelijkse facturering",
+        "Groepssessies met diëtisten in hogere abonnementen",
+        "Wekelijkse geschreven voortgangsrapporten – een vervanging voor coaching"
+      ],
+      "cons": [
+        "Inzichtenmotor minder diepgaand dan Veri of Levels",
+        "Minder integraties met derden dan Veri",
+        "Vooral gericht op de DACH-regio; elders weinig bekend",
+        "Opwarmtijd van de sensor 60 minuten (Dexcom G7: 30 minuten)"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "Abbott Libre 3 – 14 dagen draagtijd, dezelfde sensor als Veri, Ultrahuman M1 en Lingo. In een onafhankelijke vergelijkende studie (Eichenlaub et al. 2025) waren Libre 3 en Dexcom G7 ongeveer even nauwkeurig.",
+        "insights": "Degelijke weergaven van time-in-range en het effect van maaltijden, wekelijkse geschreven voortgangsrapporten. Minder analytische diepgang dan Veri of Levels.",
+        "coaching": "Hogere abonnementen bevatten groepssessies onder leiding van diëtisten; het standaardabonnement bestaat uit de app en contentmodules.",
+        "app-integration": "Ondersteuning voor Apple Health en Google Fit; kortere lijst koppelingen met derden dan Veri. Sterke Duitstalige content.",
+        "flexibility": "Maandabonnement; pauzeren mogelijk. Standaard geen jaarcontract. Export van ruwe data op aanvraag.",
+        "value": "€ 99–129 per maand (~$110–145) inclusief sensoren. Prijs in de Europese middenmoot."
+      },
+      "content": "## Waar het voorop loopt\n\nHello Inside past goed bij Duitstalige biohackers in de DACH-regio. De contentmodules zijn oorspronkelijk in het Duits geschreven, de groepssessies onder leiding van diëtisten in de hogere abonnementen zijn in het Duits, en het tempo van de app gaat uit van beginners die begeleid willen worden in plaats van voor analyses te worden gezet. Het wekelijkse geschreven voortgangsrapport vult een deel van het gat van menselijke coaching op, zonder de kosten van een 1-op-1-diëtist.\n\n## Wat zijn de nadelen van Hello Inside?\n\nNaast Veri is de vergelijking duidelijk: Veri heeft de langere lijst integraties, de diepere analysemotor en het grotere bereik in de EU. De kracht van Hello Inside is de eigen taal, niet gelijkwaardigheid in functies. Buiten de DACH-regio is het merk weinig bekend en verdwijnt het voordeel van de Duitstalige content.\n\n## Voor wie is Hello Inside?\n\nKies Hello Inside als je in het Duits leest en leert en een CGM-programma wilt dat je in je eigen taal tegemoetkomt. Buiten de DACH-regio passen Veri (EU) of Lingo (het goedkoopst in markten waar het leverbaar is) beter.\n\n---\n\n## Achtergrondlectuur\n\nDe metabole biologie die deze programma's zichtbaar maken – en de protocollen die de data mogelijk maken.\n\n- [Metabole flexibiliteit: wat het is en hoe je het herkent](/articles/metabolic-flexibility-dual-fuel-system) – wat een glucosecurve wel en niet kan vertellen over het wisselen van brandstof\n- [Energiesensor: leptine](/articles/energy-sensor-leptin) – waarom leptine achter de verzadigingspatronen zit die CGM-curves tekenen\n",
+      "faq": [
+        {
+          "q": "Hoeveel kost Hello Inside?",
+          "a": "Hello Inside kost € 99–129 per maand (ongeveer $110–145), inclusief sensoren. Standaard wordt maandelijks gefactureerd, dus er is geen jaarcontract. Hogere abonnementen voegen groepssessies met diëtisten toe, en het programma bevat wekelijkse geschreven voortgangsrapporten die als vervanging voor coaching dienen."
+        },
+        {
+          "q": "Welke CGM-sensor gebruikt Hello Inside?",
+          "a": "Hello Inside gebruikt de Abbott Libre 3-sensor, gekoppeld aan een beginnersvriendelijke app. In een onafhankelijke vergelijkende studie (Eichenlaub et al. 2025) waren Libre 3 en Dexcom G7 ongeveer even nauwkeurig, dus de keuze hangt eerder af van taal, coaching en prijs dan van de sensor."
+        },
+        {
+          "q": "Hello Inside vs Veri: wat is beter?",
+          "a": "Veri biedt een diepere inzichtenmotor en meer integraties met derden. Hello Inside wint op taal: het biedt content oorspronkelijk in het Duits. Duitstalige EU-gebruikers zullen waarschijnlijk de voorkeur geven aan Hello Inside; anderen halen meestal meer uit Veri."
+        }
+      ]
+    },
+    "garmin-fenix-8": {
+      "verdict": "Garmins nieuwste hartsensor (Elevate v5) – in een expeditiehorloge van $1.000 waarbij je vooral betaalt voor gps, duiken en accu, niet voor HRV.",
+      "summary": "De Fenix 8 heeft Garmins nieuwste optische sensorset Elevate v5 (met ECG-app) en een accu die weken meegaat, waardoor continue nachtelijke meting van hartslagvariabiliteit (HRV) echt praktisch wordt. Maar het is een groot, zwaar multisport-vlaggenschip van ~$1.000: als pure HRV-tracker is het overkill, en een ring of band dekt nachtelijke HRV voor een fractie van de prijs.",
+      "description": "Garmin Fenix 8 als HRV-tracker – ONDA-review van een multisport-vlaggenschip met Elevate v5-sensor (ECG), accu voor weken en zonder abonnement.",
+      "bestFor": "Het best voor sporters en buitenmensen die één multisporthorloge voor alles willen – met degelijke HRV als bonus.",
+      "testNote": "Op bewijs gebaseerde beoordeling – gescoord op basis van fabrikantspecificaties, onafhankelijke reviews uit 2024–2026 en gepubliceerde HRV-validatieliteratuur. Niet praktisch getest door ONDA.",
+      "productType": "Multisport-gps-smartwatch",
+      "pros": [
+        "Garmins nieuwste hartsensor (Elevate v5), met ECG-app",
+        "Accu voor weken (tot ~28–48 dagen met zonne-energie) maakt nachtelijk HRV-dragen moeiteloos",
+        "Geen abonnement – alle functies ontgrendeld bij aankoop",
+        "Uitgebreide trainings-, outdoor- en duikfuncties met redelijk open data"
+      ],
+      "cons": [
+        "Erg duur (~$1.000+) voor wat qua HRV een nachtelijke baseline is",
+        "Groot en zwaar – veel horloge om mee te slapen",
+        "HRV is niet meer op de nacht gespecialiseerd dan een speciale recoveryring of -band",
+        "Garmin Connect voelt rommelig en verouderd aan"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Garmin HRV Status bouwt in ~3 weken een nachtelijke baseline op; degelijk, al beweegt pols-PPG op een groot horloge meer dan een ring of band.",
+        "sensor": "Elevate v5 – Garmins nieuwste optische sensorset, die naast hartslag, HRV en Pulse Ox (SpO2) een ECG-app en huidtemperatuur toevoegt.",
+        "sleep-accuracy": "Geavanceerde slaaptracking met ochtendrapport, Body Battery en dutjesherkenning; de accu die weken meegaat maakt het realistisch om hem elke nacht te dragen.",
+        "data-access": "Garmin Connect plus een developer-API – redelijk open voor export en tools van derden.",
+        "wearability": "Een groot, zwaar outdoorhorloge van 47–51 mm – maar tot ~28–48 dagen (zonne-energie) betekent dat hij zelden van je pols hoeft om te laden.",
+        "app-ux": "Garmin Connect is uitgebreid maar rommelig en verouderd naast Oura of Apple.",
+        "value": "Van ~$999,99 (AMOLED) tot $1.099,99 (51 mm Solar). Geen abonnement, maar je betaalt vlaggenschip-multisportgeld voor de HRV."
+      },
+      "content": "## Waar hij voorop loopt\n\nDe Fenix 8 heeft Garmins nieuwste hartsensor (**Elevate v5**): de sensorset voegt een ECG-app en huidtemperatuur toe aan de gebruikelijke optische [HRV](/glossary/heart-rate-variability), hartslag en Pulse Ox. Garmin HRV Status bouwt in ongeveer drie weken een nachtelijke baseline op, geeft aan of je in balans bent of niet en voedt een ochtendrapport naast Body Battery en slaap. De doorslaggevende functie specifiek voor HRV is de accu: tot ~28 dagen op de 47 mm Solar en ~48 dagen op de 51 mm, dus het horloge hoeft vrijwel nooit van je pols om te laden – precies wat een continue nachtelijke HRV-registratie nodig heeft. En zoals bij alle Garmins is er geen abonnement.\n\n## Wat zijn de nadelen van de Garmin Fenix 8?\n\nHet is een multisporthorloge op expeditieniveau van ~$1.000. Alleen voor HRV is dat enorme overkill: een ring of een borstband dekt nachtelijke HRV voor een fractie van de prijs en met veel minder omvang. De Fenix 8 is groot en zwaar om mee te slapen, HRV Status is niet meer op de nacht gespecialiseerd dan een speciale recoverytracker, en Garmin Connect is weliswaar uitgebreid, maar rommelig en verouderd naast Oura of Apple. Je betaalt voor multiband-gps, een duikcomputer tot 40 m, een zaklamp en een luidspreker, niet voor de hartberekeningen.\n\n## Voor wie is de Garmin Fenix 8?\n\nKoop de Fenix 8 als je één horloge zonder abonnement wilt dat serieuze training, outdoornavigatie en duiken *en* degelijke HRV aankan, met een accuduur die nachtelijk dragen vanzelfsprekend maakt. Als nachtelijke HRV-precisie het enige is waar je om geeft, besteed dan een fractie van het geld aan een ring of een borstband.\n\n---\n\n## Achtergrondlectuur\n\nWaarom HRV het signaal is dat het volgen waard is – en waarom het getal per apparaat verschilt.\n\n- [Waarom je HRV op elk apparaat anders is](/articles/hrv-different-every-device) – RMSSD vs SDNN, PPG vs ECG, en welke meting je kunt vertrouwen\n- [Voorspelt HRV reactietijd en focus?](/articles/nervous-system-ping-latency) – wat HRV in rust wel en niet zegt over aandacht en zelfbeheersing\n",
+      "faq": [
+        {
+          "q": "Is de Garmin Fenix 8 $999 waard voor HRV?",
+          "a": "Niet alleen voor HRV – hij gebruikt dezelfde HRV Status-methode als de veel goedkopere Venu 4. De meerprijs van de Fenix betaalt voor ECG, multiband-gps, kaarten, een duikcomputer en een accu voor weken."
+        },
+        {
+          "q": "Heeft de Garmin Fenix 8 een abonnement nodig?",
+          "a": "Nee – het is een eenmalige aankoop vanaf ongeveer $999, zonder abonnement voor HRV-, trainings- of recoveryfuncties."
+        },
+        {
+          "q": "Hoe lang gaat de accu van de Fenix 8 mee?",
+          "a": "Tot ongeveer 28–48 dagen met zonne-energie in smartwatchmodus, zodat nachtelijke HRV zelden door opladen wordt onderbroken."
+        }
+      ]
+    },
+    "eight-sleep-pod-4": {
+      "verdict": "Een premium slim slaapklimaatsysteem – waterkoeling en -verwarming met twee zones, HRV-tracking, abonnement vereist.",
+      "productType": "Premium slimme slaapklimaathoes (past op een bestaande matras; Eight Sleep-matras optioneel)"
     }
   },
   "comparisons": {
@@ -7822,6 +7996,68 @@
         }
       ],
       "content": "## In het kort\n\nHetzelfde Eight Sleep-ecosysteem, hetzelfde abonnement. Pod 3 is de hoes van de vorige generatie tegen uitverkoopprijs; Cover Pro is de hoes van de huidige generatie op je bestaande matras.\n\n## Wanneer is Pod 3 de juiste keuze?\n\nAls je aan de onderkant van de resterende voorraad een flinke korting op Pod 3 vindt en een iets smaller temperatuurbereik accepteert, krijg je met Pod 3 een Eight Sleep-hoes voor minder.\n\n## Wanneer is Pod Cover Pro de juiste keuze?\n\nAls je het temperatuurbereik en de sensoren van het huidige Pod 4-platform op welk bed dan ook wilt, is Cover Pro de rationele keuze. Stabiel huidig platform, geen voorraadroulette."
+    },
+    "eight-sleep-pod-4-vs-chilipad-dock-pro-vs-bedjet-3": {
+      "title": "Eight Sleep Pod 4 vs ChiliPad vs BedJet 3: vergelijking 2026",
+      "description": "Eight Sleep Pod 4 vs ChiliPad Dock Pro vs BedJet 3 – drie slaapklimaatsystemen vergeleken: premium met tracking, water zonder abonnement of luchtstroom.",
+      "intro": "De drie systemen die de categorie slim slaapklimaat in 2026 helder verdelen. Eight Sleep Pod 4 – watergekoeld met geïntegreerde HRV-tracking en verplicht abonnement. ChiliPad Dock Pro – dezelfde waterkoeling zonder abonnement, zonder tracking. BedJet 3 – het luchtstroomalternatief tegen de laagste prijs, zonder waterbeheer.",
+      "verdict": "Drie verschillende koopvragen, drie heldere antwoorden. Eight Sleep Pod 4 als je geïntegreerde tracking wilt en het abonnement accepteert. ChiliPad Dock Pro als je dezelfde waterkoeling wilt zonder abonnement. BedJet 3 als je het luchtstroomalternatief tegen de laagste prijs wilt.",
+      "bestForA": "Kies Eight Sleep Pod 4 als je klimaathardware vol functies wilt met ingebouwde HRV-tracking die een wearable vervangt (niet onafhankelijk gevalideerd) – en je het doorlopende Autopilot-abonnement accepteert.",
+      "bestForB": "Kies ChiliPad Dock Pro als je premium waterkoeling met twee zones wilt zonder de abonnementstaks van Eight Sleep en je voor tracking al een Oura of Whoop draagt.",
+      "bestForC": "Kies BedJet 3 als je een schoon luchtstroomklimaat zonder waterbeheer wilt tegen de laagste prijs in de categorie.",
+      "axes": [
+        {
+          "name": "Temperatuurbereik",
+          "note": "Eight Sleep Pod 4 loopt voorop bij herstel: waterkoeling met twee zones (13–43 °C) die zich bij piekhitte sneller herstelt. ChiliPad Dock Pro heeft het ruimere bereik (13–46 °C), maar is iets trager bij piekhitte; de luchtstroom van BedJet koelt minder bij vochtige zomerpieken."
+        },
+        {
+          "name": "Tracking",
+          "note": "Eight Sleep: geïntegreerde HRV- en slaapfasedetectie. ChiliPad en BedJet: geen ingebouwde tracking, combineer met een aparte wearable."
+        },
+        {
+          "name": "Abonnement",
+          "note": "Praktisch gelijk tussen ChiliPad en BedJet: geen van beide heeft een abonnement nodig. Eight Sleep heeft Autopilot nodig (ongeveer $15–25 per maand) voor alle functies."
+        },
+        {
+          "name": "Onderhoud",
+          "note": "Eight Sleep en ChiliPad: waterreservoir om bij te houden. BedJet: alleen lucht, geen watertank, geen slangen, geen reservoir schoonmaken."
+        },
+        {
+          "name": "Twee zones",
+          "note": "Eight Sleep en ChiliPad: standaard twee kanten. BedJet: één zone (twee apparaten kosten meer dan één ChiliPad-systeem)."
+        },
+        {
+          "name": "App",
+          "note": "Eight Sleep: de meeste functies, Autopilot op basis van slaapfasen. ChiliPad: met schema's, gericht op klimaat. BedJet: functioneel, minimaal."
+        },
+        {
+          "name": "Prijs",
+          "note": "Totale kosten Eight Sleep Pod 4 over 3 jaar: ~$4.500–4.900 (~$4.000 voor queen plus ~$15–25/maand abonnement). ChiliPad: ~$1.700 eenmalig. BedJet: ~$600–900 eenmalig. BedJet kost een fractie van het Eight Sleep-totaal."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Wat is het beste slimme slaapklimaatsysteem in 2026?",
+          "a": "Dat hangt af van drie vragen. Wil je geïntegreerde HRV-tracking en is een abonnement prima? Eight Sleep. Wil je dezelfde waterkoeling zonder abonnement? ChiliPad Dock Pro. Wil je de goedkoopste instap zonder waterbeheer? BedJet 3."
+        },
+        {
+          "q": "Eight Sleep vs ChiliPad – wat is beter?",
+          "a": "Eight Sleep is sterker in geïntegreerde HRV-tracking en Autopilot-schema's. ChiliPad is sterker doordat er geen abonnement is en de totale kosten lager zijn. De klimaathardware is vergelijkbaar."
+        },
+        {
+          "q": "Waarom is BedJet zoveel goedkoper?",
+          "a": "Ander mechanisme. BedJet blaast lucht, geen gekoeld water. Eenvoudigere hardware (geen watertank, kleiner koelcircuit) tegen een lagere prijs. De koeling is echt, maar minder krachtig bij vochtige zomerpieken."
+        },
+        {
+          "q": "Kan BedJet Eight Sleep of ChiliPad vervangen?",
+          "a": "In milde tot gematigde klimaten wel – BedJet levert bruikbare koeling voor een fractie van de 3-jaarskosten van Eight Sleep. In hete/vochtige klimaten of bij een sterke koelbehoefte koelen watersystemen (Eight Sleep of ChiliPad) overtuigender."
+        },
+        {
+          "q": "Wat levert het meeste op voor biohackers die al een Oura of Whoop hebben?",
+          "a": "ChiliPad Dock Pro. Je hebt al HRV- en slaaptracking via je wearable – de belangrijkste functie van Eight Sleep is dan overbodig, en je bespaart ~$2.800–3.200 over 3 jaar (hardware plus abonnement)."
+        }
+      ],
+      "content": "## De korte versie\n\nDrie systemen verdelen de categorie helder: Eight Sleep (premium + tracking + abonnement), ChiliPad (water zonder abonnement), BedJet (lucht zonder abonnement, het goedkoopst).\n\n## Wanneer is Eight Sleep Pod 4 de juiste keuze?\n\nAls je geïntegreerde HRV- en slaaptracking wilt zodat je geen aparte wearable nodig hebt, plus Autopilot-klimaatschema's – en je het doorlopende abonnement accepteert.\n\n## Wanneer is ChiliPad Dock Pro de juiste keuze?\n\nAls je al een Oura of Whoop draagt en hetzelfde watergekoelde klimaat wilt zonder het abonnement van Eight Sleep te betalen. Ongeveer een derde van de 3-jaarskosten van Eight Sleep, met vergelijkbare klimaathardware.\n\n## Wanneer is BedJet 3 de juiste keuze?\n\nAls je de goedkoopste geloofwaardige instap in actief slaapklimaat wilt, in een mild tot gematigd klimaat woont en geen waterreservoir wilt bijhouden. De luchtstroomaanpak volstaat voor de meeste gebruikers buiten zomerpieken – voor een fractie van de totale 3-jaarskosten van Eight Sleep."
     }
   },
   "categoryHubs": {

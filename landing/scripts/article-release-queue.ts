@@ -594,6 +594,11 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'h2h', slug: 'plunge-vs-edge-tub' },
   { collection: 'h2h', slug: 'sun-home-equinox-vs-clearlight-sanctuary-2' },
   { collection: 'h2h', slug: 'eight-sleep-pod-3-vs-eight-sleep-pod-cover-pro' },
+  { collection: 'reviews', slug: 'whoop-5-0', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'reviews', slug: 'hello-inside' },
+  { collection: 'reviews', slug: 'garmin-fenix-8' },
+  { collection: 'h2h', slug: 'eight-sleep-pod-4-vs-chilipad-dock-pro-vs-bedjet-3' },
+  { collection: 'reviews', slug: 'waking-up', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
   // WAVE_D_NEXT
   ],
 ]

@@ -167,8 +167,47 @@
       ]
     },
     "whoop-5-0": {
-      "verdict": "戴在手腕上的恢复教练：连续夜间 HRV 与精准的负荷洞察，但必须绑定永久会员。",
-      "productType": "无屏手环"
+      "verdict": "戴在手腕上的恢复教练：持续的夜间 HRV 以及详细的负荷与恢复评分，但必须一直付费订阅。",
+      "summary": "Whoop 5.0 以恢复为核心。它依据睡眠期间测得的心率变异性（HRV）生成每日恢复信号，而不是靠早晨的单次测量。代价在于商业模式：你并不拥有硬件，只有一份持续的会员订阅。",
+      "description": "ONDA 的 Whoop 5.0 评测——面向运动员的持续 HRV 恢复追踪器，从准确度、传感器质量、数据访问和性价比打分。",
+      "bestFor": "最适合依据每日恢复与负荷信号安排训练的运动员。",
+      "testNote": "基于证据的评估——依据厂商规格、2026 年独立评测和已发表的验证文献打分。ONDA 未进行实际上手测试。",
+      "productType": "无屏手环",
+      "pros": [
+        "持续的夜间 HRV，而非早晨单次读数",
+        "详细的负荷与恢复评分",
+        "无屏、佩戴舒适；续航约 14 天，可佩戴状态下充电"
+      ],
+      "cons": [
+        "仅限订阅——停止付费，手环就无法使用",
+        "每年都要付费，而不是一次性购买",
+        "App 信息密集，可能让普通用户应接不暇",
+        "原始数据访问有限"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "恢复评分基于睡眠期间测得的 HRV。上一代 WHOOP 4.0 曾在一项针对夜间记录的独立研究中接受检验；5.0 本身尚未与 ECG 进行验证（截至 2026 年 10 月）。ONDA 规则：没有自身独立验证的设备，如果前几代经过验证，最高 {{literal:7.5 分}}；如果没有，最高 {{literal:7.0 分}}。",
+        "sensor": "多波长光学手环，佩戴贴合时心率追踪稳定。",
+        "sleep-accuracy": "达到恢复评估水准的睡眠追踪；5.0 没有独立的睡眠验证，因此与 Oura 戒指得分相同。ONDA 规则：没有自身独立验证的设备，如果前几代经过验证，最高 {{literal:7.5 分}}；如果没有，最高 {{literal:7.0 分}}。",
+        "data-access": "提供开发者 API，但与 Oura 一样，原始逐搏数据流基本不开放。",
+        "wearability": "无屏，戴着几乎感觉不到；续航约 14 天，滑入式电池包无需摘下即可充电。",
+        "app-ux": "负荷（Strain）、恢复（Recovery）和 AI 教练对热衷数据的用户很有价值，但可能让其他人应接不暇。",
+        "value": "仅限订阅——每年约 239 美元，永久付费，而你永远不拥有设备。"
+      },
+      "content": "## 它的优势\n\nWhoop 5.0 围绕一个理念打造：恢复。它不靠早晨的单次测量，而是依据睡眠期间测得的 [HRV](/glossary/heart-rate-variability) 生成每日恢复信号；Whoop 并未公开这一夜间数值的具体加权方式。无屏手环戴着几乎感觉不到，当前这一代把续航延长到约两周，而滑入式电池包意味着充电时无需把它从手腕上摘下。\n\n**验证方面的保留。** 在逐搏精度上，腕带仍不及基于手指的戒指或 ECG 胸带，其睡眠分期也只是估算。请关注 Whoop 每天早上报告的*趋势*，而不是任何单个数值。\n\n## Whoop 5.0 有哪些缺点？\n\nWhoop 以会员形式销售，而不是作为产品出售。你不拥有任何硬件——停止付费，手环就无法使用——而会员费（WHOOP One 每年 199 美元，Peak 239 美元，Life 359 美元）是持续的开支，而不是一次性购买。App 功能强大但信息密集：负荷（Strain）、恢复（Recovery）和 AI 教练对愿意钻研数据的用户很有价值，却可能让不愿钻研的人应接不暇。与 Oura 一样，原始数据访问有限。\n\n## 谁应该买 Whoop 5.0？\n\n如果你是根据每日恢复评分做决定的运动员或认真训练者，并且希望在手腕上没有屏幕的情况下获得持续的夜间 [HRV](/glossary/heart-rate-variability)，就选择 Whoop 5.0。如果你不喜欢永久订阅，或者想要一台还能看时间的设备，其他选择会更适合你。\n\n---\n\n## 延伸阅读\n\nHRV 为何是值得追踪的信号，以及身体如何产生它背后的科学。\n\n- [HRV 能预测反应时间和专注力吗？](/articles/nervous-system-ping-latency)——静息 HRV 关于注意力和自控力能说明什么、不能说明什么\n- [HRV 作为容错缓冲](/articles/fault-tolerant-human-hrv-buffer)——为什么宽广的 HRV 范围才是你真正要训练的目标\n- [压力反射与 0.1 Hz 偏移](/articles/baroreflex-01hz-shift)——HRV 曲线中共振频率呼吸的特征\n",
+      "faq": [
+        {
+          "q": "Whoop 5.0 需要订阅吗？",
+          "a": "需要。Whoop 仅限订阅：WHOOP One 每年 $199，Peak $239，Life $359，均包含手环——没有单独的硬件购买选项。停止付费，手环就无法使用。"
+        },
+        {
+          "q": "Whoop 5.0 测 HRV 准确吗？",
+          "a": "Whoop 依据睡眠期间的测量生成夜间 HRV 数值。它足以用来追踪趋势，但 ECG 胸带更接近实验室 ECG（在静息状态、年轻健康成年人中）。5.0 本身尚未单独接受测试。"
+        },
+        {
+          "q": "Whoop 5.0 最适合谁？",
+          "a": "依据每日恢复与负荷评分采取行动的运动员和认真训练者。约 14 天的续航和无屏手环适合全天候佩戴；对不喜欢订阅的普通用户来说则大材小用。"
+        }
+      ]
     },
     "ultrahuman-m1": {
       "verdict": "最佳生态系统之选——在一个App中把血糖数据与Ultrahuman Ring的HRV、睡眠和恢复数据结合起来。",
@@ -2006,8 +2045,52 @@
       "productType": "冥想 App"
     },
     "waking-up": {
-      "verdict": "这里最有深度、最严谨的 App——哲学与认真的指导——但也是最贵的，不适合新手。",
-      "productType": "冥想 App"
+      "verdict": "一款注重教学、哲学色彩浓厚的应用——指导严肃认真——但价格最贵，也不适合初学者。",
+      "summary": "Waking Up 由 Sam Harris 打造，是一款注重教学、哲学色彩浓厚的应用。它把冥想视为审视意识的一种方式，将练习与哲学以及与顶尖思想者的对话相结合，教学严谨程度不同寻常。它也是最贵的一款，并且不是为初学者设计的。",
+      "description": "ONDA 的 Waking Up 评测——Sam Harris 的应用：注重教学、哲学色彩浓厚。从教学、内容库、证据和性价比打分。",
+      "bestFor": "最适合追求深度的人——面向已越过入门阶段的练习者，提供严肃的指导与哲学。",
+      "testNote": "基于证据的评估——依据公开信息、应用商店数据和 2026 年独立评测。并非基于 ONDA 的长期实际试用。",
+      "productType": "冥想应用",
+      "pros": [
+        "注重教学，有 Sam Harris 和知名客座导师",
+        "将练习与哲学以及与顶尖思想者的对话相结合",
+        "世俗化，思想严谨",
+        "为负担不起的人提供免费使用"
+      ],
+      "cons": [
+        "本评测中最贵的应用",
+        "不是为完全的初学者设计的",
+        "内容库较小且经过精选——没有睡眠内容",
+        "自适应个性化较弱"
+      ],
+      "scoreNotes": {
+        "content-library": "刻意精选的内容库——专注而深入，而非宽泛，几乎没有睡眠内容。",
+        "teaching": "注重教学——Sam Harris 加上知名客座导师，采用严谨、哲学色彩浓厚的方式。",
+        "personalization": "以结构化的 28 天课程起步，但持续的自适应个性化较弱。",
+        "app-experience": "简洁、平静的应用，不会干扰练习本身。",
+        "free-tier": "7 天免费试用，外加长期奖学金政策：为负担不起的人提供免费会员。",
+        "value": "本评测中最贵，每年约 130 美元——不过奖学金政策缓和了这一点。",
+        "evidence": "一种世俗化的方法，借鉴总体的冥想研究和有名可查的教学传承；我们没有找到针对 Waking Up 应用本身的试验，因此它的得分与其他没有自身试验的应用相同。"
+      },
+      "content": "## 它的优势\n\nWaking Up 由神经科学家兼哲学家 Sam Harris 打造，是一款注重教学、哲学色彩浓厚的应用。它不把冥想当作放松工具，而是当作审视意识本质的一种方式，并将练习与真正的理论体系相结合——包括哲学和心理学课程，以及与顶尖思想者的对话。由 Harris 和一批知名客座导师带来的教学严谨且哲学色彩浓厚。\n\n## Waking Up 有哪些缺点？\n\n这种深度在设计上就很窄。内容库经过精选、相对较小，没有睡眠内容，入门课程也很快进入高阶概念——完全的初学者可能会感到力不从心。它也是最贵的选择，不过为确实负担不起的人长期提供免费使用，缓和了价格上的压力。\n\n## 谁应该买 Waking Up？\n\n如果你已经有基础练习，想要更进一步——深入严谨的指导及其背后的哲学——并且价格（或奖学金）对你可行，就选择 Waking Up。如果你从零开始，先从 Headspace 入手，等练习稳定后再转到 Waking Up。\n\n---\n\n## 延伸阅读\n\n冥想在神经系统层面究竟起什么作用的科学。\n\n- [节律同步与系统频率](/articles/rhythmic-entrainment-system-frequencies)——为什么有节奏的音频和呼吸方案会随着练习不断叠加效果\n- [生理性专注：心流状态的硬件基础](/articles/physiological-concentration-flow-state-hardwired)——心流状态实际需要怎样的神经化学条件\n- [Alpha 脑波：平静、创造力与心流](/articles/neural-bridge-alpha-flow-gateway)——alpha 节律的作用，以及 alpha 头戴设备、应用和音乐能改变什么、不能改变什么\n",
+      "faq": [
+        {
+          "q": "Waking Up 值得买吗？",
+          "a": "对于已越过入门阶段、追求深度的练习者来说，Waking Up 值得。它注重教学，有知名客座导师，将练习与哲学和对话相结合，世俗化且严谨。它是评测中最贵的应用，不是为初学者设计的，也没有睡眠内容。"
+        },
+        {
+          "q": "Waking Up 多少钱？",
+          "a": "在 7 天免费试用之后，Waking Up 官网价格为每年 $129.99，应用商店中为每年 $149.99 或每月 $19.99——是本评测中最贵的冥想应用。它的奖学金政策为负担不起的人提供免费会员。"
+        },
+        {
+          "q": "Waking Up 有哪些缺点？",
+          "a": "Waking Up 是评测中最贵的应用，不是为完全的初学者设计的。它精选的内容库较小，没有睡眠内容，自适应个性化也比其他主流冥想应用弱。"
+        },
+        {
+          "q": "Waking Up 最适合谁？",
+          "a": "Waking Up 最适合已越过入门阶段、想要严肃指导和哲学的练习者，适合重视世俗化、思想严谨的教学的人。完全的初学者或想要睡眠内容的人应考虑其他选择。"
+        }
+      ]
     },
     "hooga-hg500": {
       "verdict": "平价生物黑客的标杆——做工扎实、参数诚实，价格约为 Joovv 的五分之一，基础参数大多保留。",
@@ -4060,6 +4143,97 @@
     "eight-sleep-pod-3": {
       "verdict": "以Pod 3的价格获得Pod 4的能力——打折时性价比扎实，温度范围略窄于Pod 4。",
       "productType": "上一代智能睡眠温控床罩"
+    },
+    "hello-inside": {
+      "verdict": "稳健的欧盟中端 CGM 项目——本地语言内容深入，洞察能力合格，覆盖范围比 Veri 窄。",
+      "summary": "Hello Inside 是诞生于维也纳的 CGM 项目，面向 DACH 地区（德国、奥地利、瑞士）以及更广泛的欧盟代谢健康用户。硬件采用 Abbott Libre 3，App 侧重对新手友好的呈现方式、每周进度报告以及营养师风格的内容模块。集成广度不如 Veri；为德语用户提供的本地语言内容更强。",
+      "description": "ONDA 的 Hello Inside 评测——面向德语区和欧盟代谢健康用户的奥地利 CGM 项目，从洞察、准确度和性价比打分。",
+      "bestFor": "最适合希望用母语获得 CGM 指导的德语区欧盟用户。",
+      "testNote": "基于证据的评估——依据 Hello Inside 产品文档、Abbott Libre 3 验证文献以及 2026 年欧盟市场的独立评测打分。ONDA 未进行实际上手测试。",
+      "productType": "CGM 指导项目（Abbott Libre 3，欧盟）",
+      "pros": [
+        "原生德语内容",
+        "无需年度绑定——默认按月付费",
+        "高级套餐提供营养师小组课程",
+        "每周书面进度报告——可替代部分指导"
+      ],
+      "cons": [
+        "洞察引擎不如 Veri 或 Levels 深入",
+        "第三方集成比 Veri 少",
+        "主要聚焦 DACH 地区；在其他地区知名度有限",
+        "传感器预热需 60 分钟（Dexcom G7：30 分钟）"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "Abbott Libre 3——可佩戴 14 天，与 Veri、Ultrahuman M1 和 Lingo 使用相同的传感器。在一项独立的直接对比研究（Eichenlaub et al. 2025）中，Libre 3 与 Dexcom G7 的准确度相近。",
+        "insights": "目标范围内时间和餐食影响视图扎实，并提供每周书面进度报告。分析深度不如 Veri 或 Levels。",
+        "coaching": "高级套餐包含由营养师主持的小组课程；默认套餐为 App 加内容模块。",
+        "app-integration": "支持 Apple Health 和 Google Fit；第三方连接列表比 Veri 少。德语内容很强。",
+        "flexibility": "按月订阅，支持暂停。默认无年度绑定。可应要求导出原始数据。",
+        "value": "每月 €99–€129（约 $110–$145），含传感器。在欧盟属中等价位。"
+      },
+      "content": "## 它的优势\n\nHello Inside 很适合 DACH 地区讲德语的生物黑客。内容模块以德语原生撰写，高级套餐中由营养师主持的小组课程也用德语进行，App 的节奏则面向希望被引导、而不是被直接扔到分析数据面前的新手。每周书面进度报告在一定程度上弥补了真人指导的缺口，又省去了一对一注册营养师的费用。\n\n## Hello Inside 有哪些缺点？\n\n把它和 Veri 放在一起，对比一目了然：Veri 的集成列表更广、分析引擎更深、在欧盟的覆盖也更大。Hello Inside 的优势在于本地语言，而不是功能对等。在 DACH 地区以外，该品牌知名度有限，德语内容的优势也随之消失。\n\n## 谁应该买 Hello Inside？\n\n如果你用德语阅读和学习，并且想要一个用你的语言交流的 CGM 项目，就选择 Hello Inside。在 DACH 以外，Veri（欧盟）或 Lingo（在其销售的市场中最便宜）更合适。\n\n---\n\n## 延伸阅读\n\n这些项目所揭示的代谢生物学——以及数据所开启的方案。\n\n- [代谢灵活性：它是什么，如何判断](/articles/metabolic-flexibility-dual-fuel-system)——血糖曲线关于燃料切换能告诉你什么、不能告诉你什么\n- [能量传感器：瘦素](/articles/energy-sensor-leptin)——为什么 CGM 曲线所呈现的饱腹模式背后是瘦素\n",
+      "faq": [
+        {
+          "q": "Hello Inside 多少钱？",
+          "a": "Hello Inside 每月 €99–€129（约 $110–$145），含传感器。默认按月计费，因此没有年度绑定。高级套餐增加营养师小组课程，项目还包含可替代部分指导的每周书面进度报告。"
+        },
+        {
+          "q": "Hello Inside 使用哪种 CGM 传感器？",
+          "a": "Hello Inside 使用 Abbott Libre 3 传感器，并搭配对新手友好的 App。在一项独立的直接对比研究（Eichenlaub et al. 2025）中，Libre 3 与 Dexcom G7 的准确度相近，因此选择取决于语言、指导和价格，而不是传感器。"
+        },
+        {
+          "q": "Hello Inside 和 Veri 哪个更好？",
+          "a": "Veri 提供更深入的洞察引擎和更广泛的第三方集成。Hello Inside 胜在语言：它提供原生德语内容。讲德语的欧盟用户可能更喜欢 Hello Inside；其他用户通常能从 Veri 获得更多。"
+        }
+      ]
+    },
+    "garmin-fenix-8": {
+      "verdict": "Garmin 最新的心率传感器（Elevate v5）——但在这块 $1,000 的探险手表里，你主要是为 GPS、潜水和续航买单，而不是 HRV。",
+      "summary": "Fenix 8 搭载 Garmin 最新的 Elevate v5 光学传感套件（带 ECG 应用）以及长达数周的续航，让持续的夜间心率变异性（HRV）监测真正变得可行。但它是一款又大又重、约 $1,000 的多运动旗舰：作为专用 HRV 追踪器它大材小用，戒指或手环只需一小部分价格就能覆盖夜间 HRV。",
+      "description": "作为 HRV 追踪器的 Garmin Fenix 8——ONDA 评测这款高端多运动旗舰：Elevate v5 传感器（ECG）、数周续航、无需订阅。",
+      "bestFor": "最适合想要一块全能多运动手表的运动员和户外用户——顺带获得不错的 HRV 功能。",
+      "testNote": "基于证据的评估——依据厂商规格、2024–2026 年独立评测和已发表的 HRV 验证文献打分。ONDA 未进行实际上手测试。",
+      "productType": "多运动 GPS 智能手表",
+      "pros": [
+        "Garmin 最新的心率传感器（Elevate v5），带 ECG 应用",
+        "数周续航（太阳能最长约 28–48 天），让每晚佩戴监测 HRV 毫不费力",
+        "无需订阅——购买即解锁全部功能",
+        "训练、户外和潜水功能深入，数据也相当开放"
+      ],
+      "cons": [
+        "非常昂贵（约 $1,000+），而在 HRV 方面它提供的只是夜间基线",
+        "又大又重——戴着睡觉负担不小",
+        "HRV 在夜间监测上并不比专用的恢复戒指或手环更专业",
+        "Garmin Connect 显得杂乱且过时"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Garmin HRV Status 用约 3 周时间建立夜间基线；表现扎实，但大表盘上的腕部 PPG 仍比戒指或胸带更容易移位。",
+        "sensor": "Elevate v5——Garmin 最新的光学阵列，在心率、HRV 和 Pulse Ox（SpO2）之外新增 ECG 应用和皮肤温度。",
+        "sleep-accuracy": "高级睡眠追踪，配有晨间报告、Body Battery 和小睡检测；数周续航让每晚佩戴切实可行。",
+        "data-access": "Garmin Connect 加开发者 API——在导出和第三方工具方面相当开放。",
+        "wearability": "47–51 mm 的大号重型户外手表——但最长约 28–48 天（太阳能）的续航意味着它很少需要摘下充电。",
+        "app-ux": "Garmin Connect 功能深入，但与 Oura 或 Apple 相比显得杂乱、过时。",
+        "value": "从约 $999.99（AMOLED）到 $1,099.99（51 mm Solar）。无需订阅，但你是在用多运动旗舰的价格买 HRV。"
+      },
+      "content": "## 它的优势\n\nFenix 8 配备 Garmin 最新的心率传感器（**Elevate v5**）：该套件在常规的光学 [HRV](/glossary/heart-rate-variability)、心率和 Pulse Ox 之外，新增了 ECG 应用和皮肤温度。Garmin HRV Status 用大约三周时间建立夜间基线，并标示平衡或不平衡状态，与 Body Battery 和睡眠一起汇入晨间报告。专就 HRV 而言，它的杀手级功能是续航：47 mm Solar 最长约 28 天，51 mm 约 48 天，因此手表几乎从不需要摘下充电——而这正是持续夜间 HRV 记录所需要的。和所有 Garmin 一样，它无需订阅。\n\n## Garmin Fenix 8 有哪些缺点？\n\n它是一块约 $1,000 的探险级多运动手表。仅为 HRV 而买，实在是大材小用：戒指或胸带只需一小部分价格、体积也小得多，就能覆盖夜间 HRV。Fenix 8 戴着睡觉又大又重，HRV Status 在夜间监测上并不比专用恢复追踪器更专业，而 Garmin Connect 虽然功能深入，但与 Oura 或 Apple 相比体验杂乱、过时。你买单的是多频段 GPS、40 m 潜水电脑、手电筒和扬声器，而不是心脏数据的计算。\n\n## 谁应该买 Garmin Fenix 8？\n\n如果你想要一块无需订阅、能胜任严肃训练、户外导航和潜水，*同时*提供不错 HRV 的手表，并且续航让每晚佩戴轻而易举，就买 Fenix 8。如果你只在意夜间 HRV 的精度，花一小部分钱买戒指或胸带即可。\n\n---\n\n## 延伸阅读\n\n为什么 HRV 是值得追踪的信号——以及为什么不同设备的数值不同。\n\n- [为什么你的 HRV 在每台设备上都不一样](/articles/hrv-different-every-device)——RMSSD 与 SDNN、PPG 与 ECG，以及该相信哪个读数\n- [HRV 能预测反应时间和专注力吗？](/articles/nervous-system-ping-latency)——静息 HRV 关于注意力和自控力能说明什么、不能说明什么\n",
+      "faq": [
+        {
+          "q": "为了 HRV 买 $999 的 Garmin Fenix 8 值得吗？",
+          "a": "仅为 HRV 并不值得——它使用的 HRV Status 方法与便宜得多的 Venu 4 相同。Fenix 的溢价买到的是 ECG、多频段 GPS、地图、潜水电脑和数周续航。"
+        },
+        {
+          "q": "Garmin Fenix 8 需要订阅吗？",
+          "a": "不需要——它是一次性购买，起价约 $999，HRV、训练和恢复功能均无需订阅。"
+        },
+        {
+          "q": "Fenix 8 的电池能用多久？",
+          "a": "在智能手表模式下配合太阳能最长约 28–48 天，这意味着夜间 HRV 很少因充电而中断。"
+        }
+      ]
+    },
+    "eight-sleep-pod-4": {
+      "verdict": "高端智能睡眠温控系统——双区水冷/加热、HRV 追踪，需要订阅。",
+      "productType": "高端智能睡眠温控床罩（适配现有床垫；Eight Sleep 床垫可选）"
     }
   },
   "comparisons": {
@@ -7797,6 +7971,68 @@
         }
       ],
       "content": "## 简要结论\n\n同样的Eight Sleep生态，同样的订阅。Pod 3是清仓价的上一代床罩；Cover Pro是装在你现有床垫上的当前一代床罩。\n\n## 什么情况下选Pod 3？\n\n如果你在库存价低端找到了很大的Pod 3折扣，并能接受稍窄的温度范围——Pod 3能让你以更低的价格获得一款Eight Sleep床罩。\n\n## 什么情况下选Pod Cover Pro？\n\n如果你想在自己任何一张床上用上Pod 4平台当前一代的温度范围和传感器——Cover Pro是理性的选择。稳定的当前一代平台，不用赌库存。"
+    },
+    "eight-sleep-pod-4-vs-chilipad-dock-pro-vs-bedjet-3": {
+      "title": "Eight Sleep Pod 4、ChiliPad Dock Pro、BedJet 3 对比（2026）",
+      "description": "Eight Sleep Pod 4、ChiliPad Dock Pro 与 BedJet 3 三款睡眠温控系统对比：带追踪的高端款、免订阅水冷款与送风款。",
+      "intro": "2026 年智能睡眠温控品类中的三款代表系统。Eight Sleep Pod 4——水冷，集成心率变异性（HRV）追踪，必须订阅。ChiliPad Dock Pro——同样的水冷但无需订阅，没有追踪功能。BedJet 3——送风式替代方案，价格最低，无需管理水。",
+      "verdict": "三个不同的购买问题，答案都很明确。想要集成追踪并接受订阅，选 Eight Sleep Pod 4。想要同样的水冷但不订阅，选 ChiliPad Dock Pro。想要价格最低的送风替代方案，选 BedJet 3。",
+      "bestForA": "如果你想要功能丰富、内置 HRV 追踪、可替代可穿戴设备（未经独立验证）的温控硬件，并且接受持续的 Autopilot 订阅，就选择 Eight Sleep Pod 4。",
+      "bestForB": "如果你想要高端双区水冷、又不想交 Eight Sleep 的“订阅税”，并且已经在用 Oura 或 Whoop 做追踪，就选择 ChiliPad Dock Pro。",
+      "bestForC": "如果你想要简洁的送风温控、无需管理水，并且价格是品类中最低的，就选择 BedJet 3。",
+      "axes": [
+        {
+          "name": "温度范围",
+          "note": "Eight Sleep Pod 4 在温度恢复上领先：双区水冷（13–43 °C），在酷暑高峰时恢复得更快。ChiliPad Dock Pro 的范围更宽（13–46 °C），但在酷暑高峰时略慢；BedJet 的送风在潮湿的夏季高峰时降温效果较弱。"
+        },
+        {
+          "name": "追踪",
+          "note": "Eight Sleep：集成 HRV 和睡眠阶段检测。ChiliPad 和 BedJet：无内置追踪，需搭配单独的可穿戴设备。"
+        },
+        {
+          "name": "订阅",
+          "note": "ChiliPad 和 BedJet 实际上打平：两者都不需要订阅。Eight Sleep 需要 Autopilot（每月约 $15–25）才能使用完整功能。"
+        },
+        {
+          "name": "维护",
+          "note": "Eight Sleep 和 ChiliPad：需要管理水箱。BedJet：只用空气，没有水箱、没有水管，也无需清洗水箱。"
+        },
+        {
+          "name": "双区",
+          "note": "Eight Sleep 和 ChiliPad：原生支持两人各自分区。BedJet：单区（买两台的花费比一套 ChiliPad 还高）。"
+        },
+        {
+          "name": "App",
+          "note": "Eight Sleep：功能最丰富，基于睡眠阶段的 Autopilot。ChiliPad：支持定时，专注温控。BedJet：实用、简洁。"
+        },
+        {
+          "name": "价格",
+          "note": "Eight Sleep Pod 4 三年总成本：约 $4,500–4,900（queen 尺寸约 $4,000，加每月约 $15–25 的订阅）。ChiliPad：约 $1,700，一次性。BedJet：约 $600–900，一次性。BedJet 只是 Eight Sleep 总成本的一小部分。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "2026 年最好的智能睡眠温控系统是哪款？",
+          "a": "取决于三个问题。想要集成 HRV 追踪且不介意订阅？选 Eight Sleep。想要同样的水冷但不订阅？选 ChiliPad Dock Pro。想要最便宜的入门且无需管理水？选 BedJet 3。"
+        },
+        {
+          "q": "Eight Sleep 和 ChiliPad 哪个更好？",
+          "a": "Eight Sleep 胜在集成 HRV 追踪和 Autopilot 定时。ChiliPad 胜在无需订阅、总拥有成本更低。温控硬件相当。"
+        },
+        {
+          "q": "为什么 BedJet 便宜这么多？",
+          "a": "原理不同。BedJet 送的是空气，而不是冷却水。硬件更简单（没有水箱，制冷路径更小），价格也更低。降温效果真实存在，但在潮湿的夏季高峰时没那么强劲。"
+        },
+        {
+          "q": "BedJet 能替代 Eight Sleep 或 ChiliPad 吗？",
+          "a": "在温和到中等的气候下可以——BedJet 只需 Eight Sleep 三年成本的一小部分，就能提供够用的降温。在炎热潮湿的气候下或需要强力降温时，水冷系统（Eight Sleep 或 ChiliPad）降温更果断。"
+        },
+        {
+          "q": "对已经在用 Oura 或 Whoop 的生物黑客来说，哪款回报最高？",
+          "a": "ChiliPad Dock Pro。你的可穿戴设备已经提供了 HRV 和睡眠追踪——Eight Sleep 的杀手级功能就成了多余，三年下来你还能省下约 $2,800–3,200（硬件加订阅）。"
+        }
+      ],
+      "content": "## 简要结论\n\n三款系统清晰地划分了这个品类：Eight Sleep（高端 + 追踪 + 订阅）、ChiliPad（免订阅水冷）、BedJet（免订阅送风，最便宜）。\n\n## 什么时候该选 Eight Sleep Pod 4？\n\n如果你想要集成的 HRV 和睡眠追踪，从而不需要单独的可穿戴设备，再加上 Autopilot 温控定时——并且接受持续订阅。\n\n## 什么时候该选 ChiliPad Dock Pro？\n\n如果你已经在用 Oura 或 Whoop，想要同样的水冷温控，又不想支付 Eight Sleep 的订阅费。温控硬件相当，三年拥有成本大约只有 Eight Sleep 的三分之一。\n\n## 什么时候该选 BedJet 3？\n\n如果你想以最低成本可靠地入门主动式睡眠温控，生活在温和到中等的气候中，并且不想管理水箱。除夏季高峰外，送风方式对大多数用户已经足够——成本只是 Eight Sleep 三年总成本的一小部分。"
     }
   },
   "categoryHubs": {

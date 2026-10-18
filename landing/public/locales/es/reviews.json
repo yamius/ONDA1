@@ -960,7 +960,7 @@
         "app-experience": "Una app limpia y serena que no se interpone en la práctica.",
         "free-tier": "Una prueba de 30 días, más una oferta permanente de acceso gratuito para cualquiera que de verdad no pueda permitírsela.",
         "value": "La más cara de aquí, en torno a 130 USD al año — aunque la política de becas lo suaviza.",
-        "evidence": "Un enfoque laico e intelectualmente riguroso, fundamentado en la neurociencia y en linajes de enseñanza nombrados."
+        "evidence": "Un enfoque laico que se apoya en la investigación sobre meditación en general y en linajes de enseñanza nombrados; no encontramos ningún ensayo de la propia app Waking Up, así que puntúa como otras apps sin ensayos propios."
       },
       "content": "## En qué destaca\n\nWaking Up, creada por el neurocientífico y filósofo Sam Harris, es la app más seria intelectualmente de esta comparativa. Trata la meditación no como una herramienta de relajación sino como una vía para examinar la naturaleza de la consciencia, y combina la práctica con un cuerpo de teoría genuino — lecciones de filosofía y psicología, y conversaciones con pensadores destacados. La enseñanza, de Harris y de un conjunto de instructores invitados conocidos, es rigurosa y muy filosófica.\n\n## En qué se queda corta\n\nEsa profundidad es estrecha por diseño. La biblioteca está comisariada y es comparativamente pequeña, no hay contenido de sueño, y el curso introductorio entra rápido en ideas avanzadas — un principiante absoluto puede sentirse desbordado. También es la opción más cara, aunque una oferta permanente de acceso gratuito para cualquiera que de verdad no pueda permitírsela le quita filo al precio.\n\n## Para quién es\n\nElige Waking Up si ya tienes una práctica básica y quieres profundizar — en una instrucción rigurosa y en la filosofía que hay detrás — y el precio (o la beca) te funciona. Si empiezas desde cero, comienza con Headspace y pasa a Waking Up una vez que la práctica esté asentada.",
       "productType": "App de meditación"
@@ -4546,6 +4546,97 @@
     "eight-sleep-pod-3": {
       "verdict": "Capacidad de Pod 4 a precio de Pod 3: buena relación calidad-precio cuando está rebajado, con un rango de temperatura algo más estrecho que el Pod 4.",
       "productType": "Funda inteligente de climatización del sueño de generación anterior"
+    },
+    "hello-inside": {
+      "verdict": "Un programa de CGM europeo sólido de gama media: buen contenido en el idioma local, análisis competentes y un alcance más limitado que Veri.",
+      "summary": "Hello Inside es un programa de CGM creado en Viena y dirigido a usuarios de salud metabólica de la región DACH (Alemania, Austria y Suiza) y del resto de la UE. Usa el hardware Abbott Libre 3 con una app que apuesta por un enfoque apto para principiantes, informes semanales de progreso y módulos de contenido al estilo de un dietista. Menos integraciones que Veri; mejor contenido en el idioma local para germanohablantes.",
+      "description": "Reseña de ONDA de Hello Inside, el programa de CGM austriaco para usuarios germanohablantes y de la UE. Puntuado en análisis, precisión y valor.",
+      "bestFor": "Ideal para usuarios germanohablantes de la UE que quieren coaching con CGM en su idioma.",
+      "testNote": "Evaluación basada en evidencia: puntuada a partir de la documentación del producto Hello Inside, la literatura de validación del Abbott Libre 3 y reseñas independientes del mercado europeo de 2026. No probado en persona por ONDA.",
+      "productType": "Programa de coaching con CGM (Abbott Libre 3, UE)",
+      "pros": [
+        "Contenido nativo en alemán",
+        "Sin permanencia anual: facturación mensual por defecto",
+        "Sesiones grupales con dietista en los planes superiores",
+        "Informes semanales de progreso por escrito, un sustituto del coaching"
+      ],
+      "cons": [
+        "Motor de análisis menos profundo que Veri o Levels",
+        "Menos integraciones con terceros que Veri",
+        "Enfoque sobre todo en la región DACH; poco reconocimiento de marca en otros lugares",
+        "Calentamiento del sensor de 60 minutos (Dexcom G7: 30 minutos)"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "Abbott Libre 3: 14 días de uso, el mismo sensor que Veri, Ultrahuman M1 y Lingo. En un estudio comparativo independiente (Eichenlaub et al. 2025), Libre 3 y Dexcom G7 tuvieron una precisión similar.",
+        "insights": "Buenas vistas de tiempo en rango y de impacto de las comidas, e informes semanales de progreso por escrito. Menos profundidad analítica que Veri o Levels.",
+        "coaching": "Los planes superiores incluyen sesiones grupales dirigidas por dietistas; el plan básico es la app más los módulos de contenido.",
+        "app-integration": "Compatible con Apple Health y Google Fit; lista de conectores de terceros más corta que la de Veri. Buen contenido en alemán.",
+        "flexibility": "Suscripción mensual con opción de pausa. Sin permanencia anual por defecto. Exportación de datos brutos disponible bajo solicitud.",
+        "value": "99–129 €/mes (~110–145 $) con sensores incluidos. Precio intermedio en la UE."
+      },
+      "content": "## Dónde destaca\n\nHello Inside es la opción adecuada para los biohackers germanohablantes de la región DACH. Los módulos de contenido están escritos originalmente en alemán, las sesiones grupales con dietista de los planes superiores se imparten en alemán, y el ritmo de la app está pensado para un público principiante que quiere que lo guíen en lugar de que lo dejen solo frente a los análisis. El informe semanal de progreso por escrito cubre parte del hueco del coaching humano sin el coste de un dietista individual.\n\n## ¿Cuáles son las desventajas de Hello Inside?\n\nSi lo pones junto a Veri, la comparación es clara: Veri tiene más integraciones, un motor de análisis más profundo y mayor alcance en la UE. La fuerza de Hello Inside es el idioma local, no la paridad de funciones. Fuera de la región DACH la marca es poco conocida y la ventaja del contenido en alemán desaparece.\n\n## ¿Quién debería comprar Hello Inside?\n\nElige Hello Inside si lees y aprendes en alemán y quieres un programa de CGM que te hable en tu idioma. Fuera de la región DACH, Veri (UE) o Lingo (el más barato en los mercados donde se vende) encajan mejor.\n\n---\n\n## Lecturas de contexto\n\nLa biología metabólica que muestran estos programas y los protocolos que permiten los datos.\n\n- [Flexibilidad metabólica: qué es y cómo saberlo](/articles/metabolic-flexibility-dual-fuel-system) — qué puede y qué no puede decirte una curva de glucosa sobre el cambio de combustible\n- [Sensor de energía: la leptina](/articles/energy-sensor-leptin) — por qué la leptina está detrás de los patrones de saciedad que dibujan las curvas del CGM\n",
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta Hello Inside?",
+          "a": "Hello Inside cuesta 99–129 € al mes (unos 110–145 $), con sensores incluidos. La facturación es mensual por defecto, así que no hay permanencia anual. Los planes superiores añaden sesiones grupales con dietista, y el programa incluye informes semanales de progreso por escrito que funcionan como sustituto del coaching."
+        },
+        {
+          "q": "¿Qué sensor de CGM usa Hello Inside?",
+          "a": "Hello Inside usa el sensor Abbott Libre 3, combinado con una app apta para principiantes. En un estudio comparativo independiente (Eichenlaub et al. 2025), Libre 3 y Dexcom G7 tuvieron una precisión similar, así que la elección depende del idioma, el coaching y el precio más que del sensor."
+        },
+        {
+          "q": "Hello Inside vs Veri: ¿cuál es mejor?",
+          "a": "Veri ofrece un motor de análisis más profundo y más integraciones con terceros. Hello Inside gana en idioma: ofrece contenido nativo en alemán. Los usuarios germanohablantes de la UE probablemente preferirán Hello Inside; los demás normalmente sacarán más partido a Veri."
+        }
+      ]
+    },
+    "garmin-fenix-8": {
+      "verdict": "El sensor cardíaco más nuevo de Garmin (Elevate v5) dentro de un reloj de expedición de 1.000 $: pagas sobre todo por el GPS, el buceo y la batería, no por la HRV.",
+      "summary": "El Fenix 8 lleva el nuevo conjunto óptico Elevate v5 de Garmin (con app de ECG) y una batería de varias semanas que hace realmente práctica la medición continua de la variabilidad de la frecuencia cardíaca (HRV o VFC) durante la noche. Pero es un buque insignia multideporte grande, pesado y de unos 1.000 $: como monitor de HRV dedicado es excesivo, y un anillo o una banda cubren la HRV nocturna por una fracción del precio.",
+      "description": "Garmin Fenix 8 como monitor de HRV: reseña de ONDA de un multideporte premium con sensor Elevate v5 (ECG), batería de semanas y sin suscripción.",
+      "bestFor": "Ideal para deportistas y amantes del aire libre que quieren un único reloj multideporte para todo, con una HRV competente como extra.",
+      "testNote": "Evaluación basada en evidencia: puntuada a partir de las especificaciones del fabricante, reseñas independientes de 2024–2026 y la literatura publicada de validación de HRV. No probado en persona por ONDA.",
+      "productType": "Reloj inteligente GPS multideporte",
+      "pros": [
+        "El sensor cardíaco más nuevo de Garmin (Elevate v5), con app de ECG",
+        "Batería de varias semanas (hasta ~28–48 días con solar) que hace que llevarlo cada noche para la HRV no cueste nada",
+        "Sin suscripción: todas las funciones desbloqueadas al comprarlo",
+        "Funciones avanzadas de entrenamiento, aire libre y buceo con datos razonablemente abiertos"
+      ],
+      "cons": [
+        "Muy caro (~1.000 $ o más) para lo que, en cuanto a HRV, es una línea base nocturna",
+        "Grande y pesado: mucho reloj para dormir con él",
+        "Su HRV no está más especializada en la noche que la de un anillo o una banda de recuperación dedicados",
+        "Garmin Connect se siente recargado y anticuado"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "El HRV Status de Garmin construye una línea base nocturna a lo largo de ~3 semanas; es sólido, aunque la PPG de muñeca en un reloj grande se mueve más que un anillo o una banda pectoral.",
+        "sensor": "Elevate v5: el conjunto óptico más nuevo de Garmin, que añade una app de ECG y temperatura de la piel a la FC, la HRV y el Pulse Ox (SpO2).",
+        "sleep-accuracy": "Seguimiento avanzado del sueño con informe matutino, Body Battery y detección de siestas; la batería de varias semanas hace realista llevarlo todas las noches.",
+        "data-access": "Garmin Connect más una API para desarrolladores: razonablemente abierto para exportar y usar herramientas de terceros.",
+        "wearability": "Un reloj de exterior grande y pesado de 47–51 mm, pero hasta ~28–48 días (solar) significan que rara vez sale de tu muñeca para cargar.",
+        "app-ux": "Garmin Connect es completo pero recargado y anticuado frente a Oura o Apple.",
+        "value": "Desde ~999,99 $ (AMOLED) hasta 1.099,99 $ (51 mm Solar). Sin suscripción, pero pagas precio de buque insignia multideporte por la HRV."
+      },
+      "content": "## Dónde destaca\n\nEl Fenix 8 tiene el sensor cardíaco más nuevo de Garmin (**Elevate v5**): el conjunto añade una app de ECG y temperatura de la piel a la [HRV](/glossary/heart-rate-variability) óptica habitual, la frecuencia cardíaca y el Pulse Ox. El HRV Status de Garmin construye una línea base nocturna a lo largo de unas tres semanas y marca equilibrado frente a desequilibrado, alimentando un informe matutino junto a Body Battery y el sueño. La función estrella específicamente para la HRV es la batería: hasta ~28 días en el 47 mm Solar y ~48 días en el de 51 mm, así que el reloj casi nunca sale de tu muñeca para cargarse, que es justo lo que necesita un registro continuo de HRV nocturna. Y como todo Garmin, no hay suscripción.\n\n## ¿Cuáles son las desventajas del Garmin Fenix 8?\n\nEs un reloj multideporte de nivel expedición de unos 1.000 $. Solo para la HRV es un exceso enorme: un anillo o una banda pectoral cubren la HRV nocturna por una fracción del precio y con mucho menos volumen. El Fenix 8 es grande y pesado para dormir, el HRV Status no está más especializado en la noche que un monitor de recuperación dedicado, y Garmin Connect, aunque completo, es una experiencia recargada y anticuada frente a Oura o Apple. Pagas por el GPS multibanda, un ordenador de buceo de 40 m, una linterna y un altavoz, no por los cálculos del corazón.\n\n## ¿Quién debería comprar el Garmin Fenix 8?\n\nCompra el Fenix 8 si quieres un único reloj sin suscripción que haga entrenamiento serio, navegación al aire libre y buceo *y* una HRV competente, con una batería que hace trivial llevarlo cada noche. Si lo único que te importa es la precisión de la HRV nocturna, gasta una fracción de ese dinero en un anillo o una banda.\n\n---\n\n## Lecturas de contexto\n\nPor qué la HRV es la señal que vale la pena seguir, y por qué la cifra cambia según el dispositivo.\n\n- [Por qué tu HRV es distinta en cada dispositivo](/articles/hrv-different-every-device) — RMSSD frente a SDNN, PPG frente a ECG, y qué lectura creer\n- [¿Predice la HRV el tiempo de reacción y la concentración?](/articles/nervous-system-ping-latency) — lo que la HRV en reposo dice y no dice sobre la atención y el autocontrol\n",
+      "faq": [
+        {
+          "q": "¿Vale la pena el Garmin Fenix 8 de 999 $ para la HRV?",
+          "a": "No solo para la HRV: usa el mismo método HRV Status que el Venu 4, mucho más barato. El sobreprecio del Fenix paga el ECG, el GPS multibanda, los mapas, un ordenador de buceo y la batería de varias semanas."
+        },
+        {
+          "q": "¿Necesita suscripción el Garmin Fenix 8?",
+          "a": "No: es una compra única desde unos 999 $ sin suscripción para las funciones de HRV, entrenamiento o recuperación."
+        },
+        {
+          "q": "¿Cuánto dura la batería del Fenix 8?",
+          "a": "Hasta unos 28–48 días con solar en modo smartwatch, lo que significa que la HRV nocturna rara vez se interrumpe por la carga."
+        }
+      ]
+    },
+    "eight-sleep-pod-4": {
+      "verdict": "Un sistema premium inteligente de climatización del sueño: refrigeración/calefacción por agua de doble zona, seguimiento de HRV y suscripción obligatoria.",
+      "productType": "Funda premium inteligente de climatización del sueño (se adapta a tu colchón; colchón Eight Sleep opcional)"
     }
   },
   "comparisons": {
@@ -10199,6 +10290,68 @@
         }
       ],
       "content": "## En resumen\n\nMismo ecosistema Eight Sleep, misma suscripción. Pod 3 es la funda de la generación anterior a precio de liquidación; Cover Pro es la funda de la generación actual sobre tu colchón.\n\n## ¿Cuándo conviene el Pod 3?\n\nSi encuentras un gran descuento del Pod 3 en el extremo bajo del stock restante y aceptas un rango de temperatura algo más estrecho, Pod 3 te da una funda Eight Sleep por menos.\n\n## ¿Cuándo conviene el Pod Cover Pro?\n\nSi quieres el rango de temperatura y los sensores de la plataforma Pod 4 de la generación actual en cualquier cama que tengas, Cover Pro es la opción racional. Plataforma actual y estable, sin la lotería del stock."
+    },
+    "eight-sleep-pod-4-vs-chilipad-dock-pro-vs-bedjet-3": {
+      "title": "Eight Sleep Pod 4 vs ChiliPad vs BedJet 3: comparativa",
+      "description": "Eight Sleep Pod 4 vs ChiliPad Dock Pro vs BedJet 3: tres sistemas de clima para dormir: premium con seguimiento, agua sin suscripción o aire.",
+      "intro": "Los tres sistemas que resuelven la categoría de climatización inteligente del sueño en 2026. Eight Sleep Pod 4: refrigeración por agua con seguimiento integrado de la variabilidad de la frecuencia cardíaca (HRV o VFC) y suscripción obligatoria. ChiliPad Dock Pro: la misma refrigeración por agua sin suscripción y sin seguimiento. BedJet 3: la alternativa de flujo de aire al precio más bajo y sin gestión de agua.",
+      "verdict": "Tres preguntas de compra distintas que se resuelven con claridad. Eight Sleep Pod 4 si quieres seguimiento integrado y aceptas la suscripción. ChiliPad Dock Pro si quieres la misma refrigeración por agua sin suscripción. BedJet 3 si quieres la alternativa de flujo de aire al precio más bajo.",
+      "bestForA": "Elige Eight Sleep Pod 4 si quieres un hardware de climatización completo con seguimiento de HRV integrado que sustituye a un wearable (no validado de forma independiente) y aceptas la suscripción continua de Autopilot.",
+      "bestForB": "Elige ChiliPad Dock Pro si quieres refrigeración por agua premium de doble zona sin el sobrecoste de la suscripción de Eight Sleep y ya llevas un Oura o un Whoop para el seguimiento.",
+      "bestForC": "Elige BedJet 3 si quieres una climatización limpia por flujo de aire, sin gestión de agua, al precio más bajo de la categoría.",
+      "axes": [
+        {
+          "name": "Rango de temperatura",
+          "note": "Eight Sleep Pod 4 va en cabeza en recuperación: refrigeración por agua de doble zona (13–43 °C) que se recupera más rápido en picos de calor. ChiliPad Dock Pro tiene el rango más amplio (13–46 °C), pero es algo más lento en picos de calor; el flujo de aire de BedJet enfría menos en los picos húmedos del verano."
+        },
+        {
+          "name": "Seguimiento",
+          "note": "Eight Sleep: HRV integrada + detección de fases del sueño. ChiliPad y BedJet: sin seguimiento integrado, se combinan con un wearable aparte."
+        },
+        {
+          "name": "Suscripción",
+          "note": "Prácticamente iguales ChiliPad y BedJet: ninguno necesita suscripción. Eight Sleep necesita Autopilot (unos 15–25 $ al mes) para todas las funciones."
+        },
+        {
+          "name": "Mantenimiento",
+          "note": "Eight Sleep y ChiliPad: depósito de agua que gestionar. BedJet: solo aire, sin depósito de agua, sin tubos y sin limpieza de depósito."
+        },
+        {
+          "name": "Doble zona",
+          "note": "Eight Sleep y ChiliPad: doble zona nativa para cada lado de la cama. BedJet: una sola zona (duplicar a dos unidades cuesta más que un sistema único ChiliPad)."
+        },
+        {
+          "name": "App",
+          "note": "Eight Sleep: la más completa, con Autopilot basado en las fases del sueño. ChiliPad: permite programar, centrada en el clima. BedJet: funcional, mínima."
+        },
+        {
+          "name": "Precio",
+          "note": "Coste total a 3 años de Eight Sleep Pod 4: ~4.500–4.900 $ (~4.000 $ en tamaño queen más ~15–25 $/mes de suscripción). ChiliPad: ~1.700 $ en un único pago. BedJet: ~600–900 $ en un único pago. BedJet cuesta una fracción del total de Eight Sleep."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Cuál es el mejor sistema inteligente de climatización del sueño en 2026?",
+          "a": "Depende de tres preguntas. ¿Quieres seguimiento de HRV integrado y no te importa la suscripción? Eight Sleep. ¿Quieres la misma refrigeración por agua sin suscripción? ChiliPad Dock Pro. ¿Quieres la entrada más barata sin gestión de agua? BedJet 3."
+        },
+        {
+          "q": "Eight Sleep vs ChiliPad: ¿cuál es mejor?",
+          "a": "Eight Sleep gana en seguimiento de HRV integrado y en la programación de Autopilot. ChiliPad gana por no tener suscripción y por un menor coste total de propiedad. El hardware de climatización es comparable."
+        },
+        {
+          "q": "¿Por qué BedJet es mucho más barato?",
+          "a": "Por un mecanismo distinto. BedJet impulsa aire, no agua fría. Un hardware más sencillo (sin depósito de agua, circuito de enfriamiento más pequeño) a un precio más bajo. El enfriamiento es real, pero menos contundente frente a los picos húmedos del verano."
+        },
+        {
+          "q": "¿Puede BedJet sustituir a Eight Sleep o ChiliPad?",
+          "a": "En climas suaves o moderados, sí: BedJet ofrece un enfriamiento útil por una fracción del coste a 3 años de Eight Sleep. En climas calurosos o húmedos, o si necesitas un enfriamiento intenso, los sistemas de agua (Eight Sleep o ChiliPad) enfrían de forma más decidida."
+        },
+        {
+          "q": "¿Cuál tiene el mejor retorno para biohackers que ya usan Oura o Whoop?",
+          "a": "ChiliPad Dock Pro. Ya tienes seguimiento de HRV y sueño con tu wearable, así que la función estrella de Eight Sleep es redundante, y ahorras ~2.800–3.200 $ en 3 años (hardware más suscripción)."
+        }
+      ],
+      "content": "## La versión corta\n\nTres sistemas resuelven la categoría con claridad: Eight Sleep (premium + seguimiento + suscripción), ChiliPad (agua sin suscripción) y BedJet (aire sin suscripción, el más barato).\n\n## ¿Cuándo es Eight Sleep Pod 4 la elección adecuada?\n\nSi quieres seguimiento integrado de HRV y sueño para no necesitar un wearable aparte, además de la programación del clima con Autopilot, y aceptas la suscripción continua.\n\n## ¿Cuándo es ChiliPad Dock Pro la elección adecuada?\n\nSi ya llevas un Oura o un Whoop y quieres la misma climatización por agua sin pagar la suscripción de Eight Sleep. Cuesta aproximadamente un tercio del coste de propiedad a 3 años de Eight Sleep con un hardware de climatización comparable.\n\n## ¿Cuándo es BedJet 3 la elección adecuada?\n\nSi quieres la entrada creíble más barata a la climatización activa del sueño, vives en un clima suave o moderado y no quieres gestionar un depósito de agua. El enfoque de flujo de aire basta para la mayoría de usuarios fuera de los picos del verano, por una fracción del coste total a 3 años de Eight Sleep."
     }
   },
   "categoryHubs": {

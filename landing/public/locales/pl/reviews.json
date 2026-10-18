@@ -192,8 +192,47 @@
       ]
     },
     "whoop-5-0": {
-      "verdict": "Trener regeneracji na nadgarstku: ciągły nocny pomiar HRV i trafna analiza obciążenia, dostępne tylko w ramach stałego członkostwa.",
-      "productType": "Opaska bez ekranu"
+      "verdict": "Trener regeneracji na nadgarstku: ciągły nocny pomiar HRV i szczegółowe oceny obciążenia i regeneracji, zamknięte za bezterminowym członkostwem.",
+      "summary": "Whoop 5.0 skupia się na regeneracji. Dzienny sygnał regeneracji wylicza ze zmienności rytmu serca (HRV) mierzonej podczas snu, a nie z jednorazowego pomiaru rano. Ceną jest model: nie ma sprzętu na własność, tylko stałe członkostwo.",
+      "description": "Recenzja ONDA Whoop 5.0 – trackera regeneracji z ciągłym HRV dla sportowców, ocenionego pod kątem dokładności, czujnika, dostępu do danych i ceny.",
+      "bestFor": "Najlepszy dla sportowców, którzy trenują według codziennych sygnałów regeneracji i obciążenia.",
+      "testNote": "Ocena oparta na dowodach – na podstawie specyfikacji producenta, niezależnych recenzji z 2026 roku i opublikowanej literatury walidacyjnej. ONDA nie testowała urządzenia w praktyce.",
+      "productType": "Opaska bez ekranu",
+      "pros": [
+        "Ciągły nocny pomiar HRV, a nie pojedynczy odczyt rano",
+        "Szczegółowe oceny obciążenia i regeneracji",
+        "Bez ekranu i wygodna; ok. 14 dni baterii, ładowanie na ciele"
+      ],
+      "cons": [
+        "Tylko w subskrypcji – przestajesz płacić, opaska przestaje działać",
+        "Stały roczny koszt, a nie jednorazowy zakup",
+        "Przeładowana aplikacja, która może przytłoczyć okazjonalnych użytkowników",
+        "Ograniczony dostęp do surowych danych"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Regeneracja opiera się na HRV mierzonym podczas snu. Wcześniejszy WHOOP 4.0 sprawdzono w jednym niezależnym badaniu nocnych zapisów; sam model 5.0 nie został zwalidowany względem EKG (stan na październik 2026). Zasada ONDA: bez własnej niezależnej walidacji urządzenie dostaje maksymalnie 7,5, jeśli wcześniejsze generacje były walidowane, a 7,0, jeśli nie.",
+        "sensor": "Optyczna opaska wielu długości fal, która dobrze utrzymuje pomiar tętna, gdy jest ciasno założona.",
+        "sleep-accuracy": "Śledzenie snu na poziomie potrzeb regeneracji; model 5.0 nie ma niezależnej walidacji snu, więc dostaje taką samą ocenę jak pierścienie Oura. Zasada ONDA: bez własnej niezależnej walidacji urządzenie dostaje maksymalnie 7,5, jeśli wcześniejsze generacje były walidowane, a 7,0, jeśli nie.",
+        "data-access": "Istnieje API dla programistów, ale jak w przypadku Oury surowy strumień uderzenie po uderzeniu pozostaje w dużej mierze zamknięty.",
+        "wearability": "Bez ekranu, łatwo o niej zapomnieć; ok. 14 dni baterii, a nasuwany akumulator ładuje ją bez zdejmowania.",
+        "app-ux": "Strain, Recovery i trener AI nagradzają użytkowników lubiących dane, ale mogą przytłoczyć resztę.",
+        "value": "Tylko w subskrypcji – około 239 USD rocznie, na zawsze, bez urządzenia, które kiedykolwiek będzie twoje."
+      },
+      "content": "## W czym prowadzi\n\nWhoop 5.0 zbudowano wokół jednej idei: regeneracji. Zamiast jednorazowego pomiaru rano dzienny sygnał regeneracji wylicza z [HRV](/glossary/heart-rate-variability) mierzonego podczas snu; Whoop nie publikuje, jak dokładnie ważona jest ta nocna wartość. O opasce bez ekranu łatwo zapomnieć, obecna generacja wydłużyła czas pracy baterii do mniej więcej dwóch tygodni, a nasuwany akumulator sprawia, że do ładowania nigdy nie trzeba zdejmować jej z nadgarstka.\n\n**Zastrzeżenie dotyczące walidacji.** Opaska na nadgarstek wciąż ustępuje pierścieniowi na palec lub pasowi piersiowemu EKG pod względem precyzji uderzenie po uderzeniu, a fazy snu są szacunkami. Patrz na *trend*, który Whoop podaje każdego ranka, a nie na pojedynczą wartość.\n\n## Jakie są wady Whoop 5.0?\n\nWhoop sprzedawany jest jako członkostwo, a nie produkt. Nie ma sprzętu na własność – przestajesz płacić, opaska przestaje działać – a członkostwo – 199 USD rocznie za WHOOP One, 239 USD za Peak, 359 USD za Life – to stały koszt, nie jednorazowy zakup. Aplikacja jest rozbudowana, ale przeładowana: Strain, Recovery i trener AI nagradzają użytkowników, którzy chcą analizować swoje dane, i mogą przytłoczyć tych, którzy nie chcą. Dostęp do surowych danych, podobnie jak w Ourze, jest ograniczony.\n\n## Dla kogo jest Whoop 5.0?\n\nWybierz Whoop 5.0, jeśli jesteś sportowcem lub poważnie trenujesz, podejmujesz decyzje na podstawie codziennej oceny regeneracji i chcesz ciągłego nocnego [HRV](/glossary/heart-rate-variability) bez ekranu na nadgarstku. Jeśli nie lubisz bezterminowych subskrypcji albo chcesz urządzenia, które pokazuje też godzinę, lepiej sprawdzą się alternatywy.\n\n---\n\n## Do poczytania\n\nNauka o tym, dlaczego HRV to sygnał wart śledzenia – i jak organizm go wytwarza.\n\n- [Czy HRV przewiduje czas reakcji i koncentrację?](/articles/nervous-system-ping-latency) – co spoczynkowe HRV mówi, a czego nie mówi o uwadze i samokontroli\n- [HRV jako bufor odporny na błędy](/articles/fault-tolerant-human-hrv-buffer) – dlaczego szeroki zakres HRV jest tym, na co naprawdę trenujesz\n- [Baroreflex i przesunięcie 0,1 Hz](/articles/baroreflex-01hz-shift) – ślad oddychania z częstotliwością rezonansową w twoim zapisie HRV\n",
+      "faq": [
+        {
+          "q": "Czy Whoop 5.0 wymaga subskrypcji?",
+          "a": "Tak. Whoop działa wyłącznie w subskrypcji: 199 $ rocznie za WHOOP One, 239 $ za Peak lub 359 $ za Life, za każdym razem z opaską – nie ma osobnego zakupu sprzętu. Przestajesz płacić, opaska przestaje działać."
+        },
+        {
+          "q": "Czy Whoop 5.0 dokładnie mierzy HRV?",
+          "a": "Whoop wylicza nocną wartość HRV z pomiarów wykonywanych podczas snu. To wystarcza do śledzenia trendów, ale pas piersiowy EKG jest bliższy laboratoryjnemu EKG (w spoczynku, u młodych zdrowych dorosłych). Sam model 5.0 nie był osobno badany."
+        },
+        {
+          "q": "Dla kogo Whoop 5.0 jest najlepszy?",
+          "a": "Dla sportowców i osób poważnie trenujących, które działają na podstawie codziennej oceny regeneracji i obciążenia. Bateria na ok. 14 dni i opaska bez ekranu nadają się do noszenia 24/7; dla okazjonalnych użytkowników, którzy nie lubią subskrypcji, to przesada."
+        }
+      ]
     },
     "ultrahuman-m1": {
       "verdict": "Najlepszy wybór ekosystemowy — dane o glukozie zestawione z HRV, snem i regeneracją z Ultrahuman Ring w jednej aplikacji.",
@@ -2031,8 +2070,52 @@
       "productType": "Aplikacja do medytacji"
     },
     "waking-up": {
-      "verdict": "Najgłębsza i najbardziej wymagająca aplikacja w zestawieniu — filozofia i poważne nauczanie — ale najdroższa i nie dla początkujących.",
-      "productType": "Aplikacja do medytacji"
+      "verdict": "Aplikacja nastawiona na nauczanie i mocno filozoficzna – poważne prowadzenie – ale najdroższa i nie dla początkujących.",
+      "summary": "Waking Up, stworzona przez Sama Harrisa, to aplikacja nastawiona na nauczanie i mocno filozoficzna. Traktuje medytację jako sposób badania świadomości, łączy praktykę z filozofią i rozmowami z czołowymi myślicielami, a nauczanie jest wyjątkowo rzetelne. Jest też najdroższa i nie powstała z myślą o początkujących.",
+      "description": "Recenzja ONDA Waking Up – aplikacji Sama Harrisa: nastawionej na nauczanie i filozofię. Ocena prowadzenia, biblioteki, dowodów i stosunku jakości do ceny.",
+      "bestFor": "Najlepsza dla głębi – poważne prowadzenie i filozofia dla praktykujących, którzy mają podstawy za sobą.",
+      "testNote": "Ocena oparta na dowodach – na podstawie informacji publicznych, danych ze sklepów z aplikacjami i niezależnych recenzji z 2026 roku. Nie opiera się na długim praktycznym testowaniu przez ONDA.",
+      "productType": "Aplikacja do medytacji",
+      "pros": [
+        "Nastawiona na nauczanie, z Samem Harrisem i znanymi nauczycielami gościnnymi",
+        "Łączy praktykę z filozofią i rozmowami z czołowymi myślicielami",
+        "Świecka i intelektualnie rzetelna",
+        "Darmowy dostęp dla każdego, kogo na nią nie stać"
+      ],
+      "cons": [
+        "Najdroższa aplikacja w zestawieniu",
+        "Nie dla zupełnie początkujących",
+        "Mniejsza, starannie dobrana biblioteka – brak treści do snu",
+        "Słabsza adaptacyjna personalizacja"
+      ],
+      "scoreNotes": {
+        "content-library": "Celowo dobrana biblioteka – skupiona i głęboka, a nie szeroka, bez prawdziwych treści do snu.",
+        "teaching": "Nastawiona na nauczanie – Sam Harris plus znani nauczyciele gościnni, z rzetelnym, mocno filozoficznym podejściem.",
+        "personalization": "Na start ustrukturyzowany 28-dniowy kurs, ale słabsza adaptacyjna, ciągła personalizacja.",
+        "app-experience": "Przejrzysta, spokojna aplikacja, która nie przeszkadza w praktyce.",
+        "free-tier": "7-dniowy darmowy okres próbny oraz stałe stypendium: darmowe członkostwo dla każdego, kogo na nią nie stać.",
+        "value": "Najdroższa w zestawieniu – około 130 USD rocznie – choć polityka stypendiów to łagodzi.",
+        "evidence": "Świeckie podejście, które opiera się na badaniach nad medytacją w ogóle i nazwanych tradycjach nauczania; nie znaleźliśmy żadnego badania samej aplikacji Waking Up, więc jest oceniana tak jak inne aplikacje bez własnych badań."
+      },
+      "content": "## W czym prowadzi\n\nWaking Up, stworzona przez neurobiologa i filozofa Sama Harrisa, to aplikacja nastawiona na nauczanie i mocno filozoficzna. Traktuje medytację nie jako narzędzie relaksu, ale jako sposób badania natury świadomości, i łączy praktykę z prawdziwym zapleczem teoretycznym – lekcjami filozofii i psychologii oraz rozmowami z czołowymi myślicielami. Nauczanie Harrisa i grona znanych nauczycieli gościnnych jest rzetelne i mocno filozoficzne.\n\n## Jakie są wady Waking Up?\n\nTa głębia jest z założenia wąska. Biblioteka jest starannie dobrana i stosunkowo mała, nie ma treści do snu, a kurs wprowadzający szybko przechodzi do zaawansowanych idei – zupełnie początkujący może poczuć się zagubiony. To także najdroższa opcja, choć stała oferta darmowego dostępu dla każdego, kogo naprawdę na nią nie stać, łagodzi cenę.\n\n## Dla kogo jest Waking Up?\n\nWybierz Waking Up, jeśli masz już podstawową praktykę i chcesz pójść głębiej – w rzetelne prowadzenie i stojącą za nim filozofię – a cena (lub stypendium) ci odpowiada. Jeśli zaczynasz od zera, zacznij od Headspace i przejdź do Waking Up, gdy praktyka się utrwali.\n\n---\n\n## Do poczytania\n\nNauka o tym, co medytacja naprawdę robi na poziomie układu nerwowego.\n\n- [Rytmiczna synchronizacja i częstotliwości systemu](/articles/rhythmic-entrainment-system-frequencies) – dlaczego rytmiczne nagrania i protokoły oddechowe wzmacniają się wraz z praktyką\n- [Fizjologiczna koncentracja: jak zakodowany jest stan flow](/articles/physiological-concentration-flow-state-hardwired) – jakiej neurochemii naprawdę wymaga stan flow\n- [Fale alfa: spokój, kreatywność i flow](/articles/neural-bridge-alpha-flow-gateway) – co robi rytm alfa i co opaski, aplikacje i muzyka „alfa” mogą, a czego nie mogą zmienić\n",
+      "faq": [
+        {
+          "q": "Czy Waking Up jest warta swojej ceny?",
+          "a": "Waking Up jest warta swojej ceny dla praktykujących, którzy mają podstawy za sobą i szukają głębi. Jest nastawiona na nauczanie, ze znanymi nauczycielami gościnnymi, łączy praktykę z filozofią i rozmowami, jest świecka i rzetelna. To najdroższa z recenzowanych aplikacji, nie dla początkujących i bez treści do snu."
+        },
+        {
+          "q": "Ile kosztuje Waking Up?",
+          "a": "Waking Up kosztuje 129,99 $ rocznie na stronie internetowej albo 149,99 $ rocznie i 19,99 $ miesięcznie w sklepach z aplikacjami, po 7-dniowym darmowym okresie próbnym – to najdroższa aplikacja do medytacji w zestawieniu. Jej stypendium zapewnia darmowe członkostwo każdemu, kogo na nią nie stać."
+        },
+        {
+          "q": "Jakie są wady Waking Up?",
+          "a": "Waking Up to najdroższa z recenzowanych aplikacji i nie powstała z myślą o zupełnie początkujących. Jej starannie dobrana biblioteka jest mniejsza, nie ma treści do snu i oferuje słabszą adaptacyjną personalizację niż inne duże aplikacje do medytacji."
+        },
+        {
+          "q": "Dla kogo Waking Up jest najlepsza?",
+          "a": "Waking Up najlepiej sprawdzi się u praktykujących, którzy mają podstawy za sobą i chcą poważnego prowadzenia i filozofii. Pasuje osobom ceniącym świeckie, intelektualnie rzetelne nauczanie. Zupełnie początkujący lub osoby szukające treści do snu powinny poszukać gdzie indziej."
+        }
+      ]
     },
     "hooga-hg500": {
       "verdict": "Budżetowy punkt odniesienia dla biohakerów — solidne wykonanie, uczciwa specyfikacja, około jednej piątej ceny Joovv przy zachowaniu większości podstawowych parametrów.",
@@ -4085,6 +4168,97 @@
     "eight-sleep-pod-3": {
       "verdict": "Możliwości Pod 4 w cenach Pod 3: solidny stosunek jakości do ceny po obniżce, z nieco węższym zakresem temperatur niż Pod 4.",
       "productType": "Inteligentna nakładka do klimatu snu poprzedniej generacji"
+    },
+    "hello-inside": {
+      "verdict": "Solidny program CGM ze średniej półki w UE – mocny w lokalnym języku, z kompetentnymi analizami, ale węższy niż Veri.",
+      "summary": "Hello Inside to stworzony w Wiedniu program CGM dla osób dbających o zdrowie metaboliczne w regionie DACH (Niemcy, Austria, Szwajcaria) i szerzej w UE. Sprzęt Abbott Libre 3 z aplikacją, która stawia na przystępne dla początkujących wyjaśnienia, cotygodniowe raporty postępów i moduły treści w stylu porad dietetyka. Mniej integracji niż Veri; mocniejsze treści w lokalnym języku dla osób mówiących po niemiecku.",
+      "description": "Recenzja ONDA Hello Inside – austriackiego programu CGM dla użytkowników niemieckojęzycznych i z UE. Ocena analiz, dokładności i stosunku jakości do ceny.",
+      "bestFor": "Najlepszy dla niemieckojęzycznych użytkowników z UE, którzy chcą coachingu CGM w swoim języku.",
+      "testNote": "Ocena oparta na dowodach – na podstawie dokumentacji produktu Hello Inside, literatury walidacyjnej Abbott Libre 3 i niezależnych recenzji rynku UE z 2026 roku. ONDA nie testowała programu w praktyce.",
+      "productType": "Program coachingowy CGM (Abbott Libre 3, UE)",
+      "pros": [
+        "Treści tworzone od początku po niemiecku",
+        "Bez rocznego zobowiązania – domyślnie rozliczenie miesięczne",
+        "Grupowe sesje z dietetykami w wyższych planach",
+        "Cotygodniowe pisemne raporty postępów – zamiennik coachingu"
+      ],
+      "cons": [
+        "Silnik analiz mniej rozbudowany niż w Veri czy Levels",
+        "Mniej integracji z zewnętrznymi usługami niż w Veri",
+        "Skupienie głównie na regionie DACH; poza nim marka mało znana",
+        "60 minut rozgrzewania sensora (Dexcom G7: 30 minut)"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "Abbott Libre 3 – 14 dni noszenia, ten sam sensor co w Veri, Ultrahuman M1 i Lingo. W niezależnym badaniu porównawczym (Eichenlaub et al. 2025) Libre 3 i Dexcom G7 były podobnie dokładne.",
+        "insights": "Solidne widoki czasu w zakresie i wpływu posiłków, cotygodniowe pisemne raporty postępów. Mniej analitycznej głębi niż w Veri czy Levels.",
+        "coaching": "Wyższe plany obejmują grupowe sesje prowadzone przez dietetyków; plan podstawowy to aplikacja i moduły treści.",
+        "app-integration": "Obsługa Apple Health i Google Fit; krótsza lista połączeń z zewnętrznymi usługami niż w Veri. Mocne treści po niemiecku.",
+        "flexibility": "Subskrypcja miesięczna; można ją wstrzymać. Domyślnie bez rocznego zobowiązania. Eksport surowych danych na żądanie.",
+        "value": "99–129 € miesięcznie (~110–145 $) z sensorami. Ceny ze środka stawki w UE."
+      },
+      "content": "## W czym prowadzi\n\nHello Inside dobrze pasuje do niemieckojęzycznych biohakerów z regionu DACH. Moduły treści są pisane od początku po niemiecku, grupowe sesje z dietetykami w wyższych planach odbywają się po niemiecku, a tempo aplikacji zakłada początkujących, którzy chcą być prowadzeni, a nie zostawieni sam na sam z analizami. Cotygodniowy pisemny raport postępów wypełnia część luki po coachingu z człowiekiem, bez kosztów indywidualnych konsultacji z dietetykiem.\n\n## Jakie są wady Hello Inside?\n\nPostaw go obok Veri, a porównanie jest jasne: Veri ma dłuższą listę integracji, głębszy silnik analityczny i szerszy zasięg w UE. Siłą Hello Inside jest lokalny język, a nie równość funkcji. Poza regionem DACH marka jest mało znana, a przewaga niemieckich treści znika.\n\n## Dla kogo jest Hello Inside?\n\nWybierz Hello Inside, jeśli czytasz i uczysz się po niemiecku i chcesz programu CGM, który mówi twoim językiem. Poza regionem DACH lepiej sprawdzą się Veri (UE) lub Lingo (najtańszy na rynkach, na których jest dostępny).\n\n---\n\n## Do poczytania\n\nBiologia metabolizmu, którą te programy ujawniają – i protokoły, które otwierają dane.\n\n- [Elastyczność metaboliczna: czym jest i jak ją rozpoznać](/articles/metabolic-flexibility-dual-fuel-system) – co krzywa glukozy może, a czego nie może powiedzieć o przełączaniu paliwa\n- [Czujnik energii: leptyna](/articles/energy-sensor-leptin) – dlaczego za wzorcami sytości widocznymi na krzywych CGM stoi leptyna\n",
+      "faq": [
+        {
+          "q": "Ile kosztuje Hello Inside?",
+          "a": "Hello Inside kosztuje 99–129 € miesięcznie (około 110–145 $), z sensorami w cenie. Domyślnie rozliczenie jest miesięczne, więc nie ma rocznego zobowiązania. Wyższe plany dodają grupowe sesje z dietetykami, a program obejmuje cotygodniowe pisemne raporty postępów, które pełnią rolę zamiennika coachingu."
+        },
+        {
+          "q": "Jakiego sensora CGM używa Hello Inside?",
+          "a": "Hello Inside używa sensora Abbott Libre 3 w połączeniu z przystępną dla początkujących aplikacją. W niezależnym badaniu porównawczym (Eichenlaub et al. 2025) Libre 3 i Dexcom G7 były podobnie dokładne, więc wybór zależy raczej od języka, coachingu i ceny niż od sensora."
+        },
+        {
+          "q": "Hello Inside czy Veri: co jest lepsze?",
+          "a": "Veri oferuje głębszy silnik analiz i szerszą integrację z zewnętrznymi usługami. Hello Inside wygrywa językiem: oferuje treści tworzone od początku po niemiecku. Niemieckojęzyczni użytkownicy z UE prawdopodobnie wybiorą Hello Inside; pozostali zwykle więcej zyskają na Veri."
+        }
+      ]
+    },
+    "garmin-fenix-8": {
+      "verdict": "Najnowszy czujnik tętna Garmina (Elevate v5) – w zegarku ekspedycyjnym za 1000 $, w którym płacisz głównie za GPS, nurkowanie i baterię, a nie za HRV.",
+      "summary": "Fenix 8 ma najnowszy zestaw optycznych czujników Garmina Elevate v5 (z aplikacją EKG) i baterię na kilka tygodni, dzięki której ciągły nocny pomiar zmienności rytmu serca (HRV) staje się naprawdę praktyczny. To jednak duży, ciężki flagowiec multisportowy za ~1000 $: jako dedykowany tracker HRV jest przesadą, a pierścień lub opaska zapewnią nocne HRV za ułamek tej ceny.",
+      "description": "Garmin Fenix 8 jako tracker HRV – recenzja ONDA flagowca multisportowego z czujnikiem Elevate v5 (EKG), baterią na tygodnie i bez subskrypcji.",
+      "bestFor": "Najlepszy dla sportowców i miłośników outdooru, którzy chcą jednego zegarka multisportowego do wszystkiego – z solidnym HRV w pakiecie.",
+      "testNote": "Ocena oparta na dowodach – na podstawie specyfikacji producenta, niezależnych recenzji z lat 2024–2026 i opublikowanej literatury walidacyjnej HRV. ONDA nie testowała urządzenia w praktyce.",
+      "productType": "Multisportowy smartwatch GPS",
+      "pros": [
+        "Najnowszy czujnik tętna Garmina (Elevate v5) z aplikacją EKG",
+        "Bateria na kilka tygodni (do ~28–48 dni z ładowaniem solarnym) sprawia, że nocne noszenie dla HRV nie wymaga wysiłku",
+        "Bez subskrypcji – wszystkie funkcje odblokowane od zakupu",
+        "Rozbudowane funkcje treningowe, outdoorowe i nurkowe z dość otwartymi danymi"
+      ],
+      "cons": [
+        "Bardzo drogi (~1000 $+) za coś, co w kwestii HRV jest nocną wartością bazową",
+        "Duży i ciężki – sporo zegarka do spania",
+        "HRV nie jest bardziej wyspecjalizowane w pomiarze nocnym niż w dedykowanym pierścieniu lub opasce do regeneracji",
+        "Garmin Connect wydaje się przeładowany i przestarzały"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Garmin HRV Status buduje nocną wartość bazową w ciągu ~3 tygodni; solidnie, choć PPG na nadgarstku w dużym zegarku przesuwa się bardziej niż pierścień czy pas.",
+        "sensor": "Elevate v5 – najnowszy zestaw optyczny Garmina, który do tętna, HRV i Pulse Ox (SpO2) dodaje aplikację EKG i temperaturę skóry.",
+        "sleep-accuracy": "Zaawansowane śledzenie snu z porannym raportem, Body Battery i wykrywaniem drzemek; bateria na kilka tygodni sprawia, że noszenie go co noc jest realne.",
+        "data-access": "Garmin Connect plus API dla programistów – dość otwarte na eksport i narzędzia zewnętrzne.",
+        "wearability": "Duży, ciężki zegarek outdoorowy 47–51 mm – ale do ~28–48 dni (z ładowaniem solarnym) oznacza, że rzadko trzeba go zdejmować do ładowania.",
+        "app-ux": "Garmin Connect jest rozbudowany, ale przy Ourze czy Apple wydaje się przeładowany i przestarzały.",
+        "value": "Od ~999,99 $ (AMOLED) do 1099,99 $ (51 mm Solar). Bez subskrypcji, ale za HRV płacisz cenę flagowca multisportowego."
+      },
+      "content": "## W czym prowadzi\n\nFenix 8 ma najnowszy czujnik tętna Garmina (**Elevate v5**): zestaw dodaje aplikację EKG i temperaturę skóry do standardowego optycznego [HRV](/glossary/heart-rate-variability), tętna i Pulse Ox. Garmin HRV Status buduje nocną wartość bazową w ciągu mniej więcej trzech tygodni, oznacza stan zrównoważony lub niezrównoważony i zasila poranny raport obok Body Battery i snu. Kluczową cechą właśnie dla HRV jest bateria: do ~28 dni w wersji 47 mm Solar i ~48 dni w wersji 51 mm, więc zegarek prawie nigdy nie musi schodzić z nadgarstka do ładowania – a dokładnie tego potrzebuje ciągły nocny zapis HRV. I jak w każdym Garminie, nie ma subskrypcji.\n\n## Jakie są wady Garmin Fenix 8?\n\nTo zegarek multisportowy klasy ekspedycyjnej za ~1000 $. Dla samego HRV to ogromna przesada: pierścień lub pas piersiowy zapewnią nocne HRV za ułamek ceny i przy znacznie mniejszych gabarytach. Fenix 8 jest duży i ciężki do spania, HRV Status nie jest bardziej wyspecjalizowany w nocnym pomiarze niż dedykowany tracker regeneracji, a Garmin Connect – choć rozbudowany – przy Ourze czy Apple wydaje się przeładowany i przestarzały. Płacisz za wielopasmowy GPS, komputer nurkowy do 40 m, latarkę i głośnik, a nie za obliczenia dotyczące serca.\n\n## Dla kogo jest Garmin Fenix 8?\n\nKup Fenix 8, jeśli chcesz jednego zegarka bez subskrypcji, który obsłuży poważny trening, nawigację w terenie i nurkowanie *oraz* solidne HRV, z baterią, przy której nocne noszenie to drobiazg. Jeśli zależy ci wyłącznie na precyzji nocnego HRV, wydaj ułamek tej kwoty na pierścień lub pas.\n\n---\n\n## Do poczytania\n\nDlaczego HRV to sygnał wart śledzenia – i dlaczego wynik różni się między urządzeniami.\n\n- [Dlaczego twoje HRV jest inne na każdym urządzeniu](/articles/hrv-different-every-device) – RMSSD a SDNN, PPG a EKG i któremu odczytowi ufać\n- [Czy HRV przewiduje czas reakcji i koncentrację?](/articles/nervous-system-ping-latency) – co spoczynkowe HRV mówi, a czego nie mówi o uwadze i samokontroli\n",
+      "faq": [
+        {
+          "q": "Czy Garmin Fenix 8 jest wart 999 $ dla HRV?",
+          "a": "Nie dla samego HRV – korzysta z tej samej metody HRV Status co znacznie tańszy Venu 4. Dopłata za Fenixa kupuje EKG, wielopasmowy GPS, mapy, komputer nurkowy i baterię na kilka tygodni."
+        },
+        {
+          "q": "Czy Garmin Fenix 8 wymaga subskrypcji?",
+          "a": "Nie – to jednorazowy zakup od około 999 $, bez subskrypcji na funkcje HRV, treningu i regeneracji."
+        },
+        {
+          "q": "Jak długo działa bateria Fenix 8?",
+          "a": "Do około 28–48 dni z ładowaniem solarnym w trybie smartwatcha, więc nocny pomiar HRV rzadko jest przerywany ładowaniem."
+        }
+      ]
+    },
+    "eight-sleep-pod-4": {
+      "verdict": "Inteligentny system klimatu snu klasy premium – dwustrefowe chłodzenie i ogrzewanie wodne, pomiar HRV, wymagana subskrypcja.",
+      "productType": "Inteligentna nakładka klimatyzująca klasy premium (pasuje na istniejący materac; materac Eight Sleep opcjonalnie)"
     }
   },
   "comparisons": {
@@ -7822,6 +7996,68 @@
         }
       ],
       "content": "## W skrócie\n\nTen sam ekosystem Eight Sleep, ta sama subskrypcja. Pod 3 to nakładka poprzedniej generacji w cenie wyprzedażowej; Cover Pro to nakładka obecnej generacji na twoim dotychczasowym materacu.\n\n## Kiedy Pod 3 to dobry wybór?\n\nJeśli znajdziesz duży rabat na Pod 3 na dolnym końcu pozostałych zapasów i akceptujesz nieco węższy zakres temperatur, Pod 3 da ci nakładkę Eight Sleep taniej.\n\n## Kiedy Pod Cover Pro to dobry wybór?\n\nJeśli chcesz zakres temperatur i czujniki obecnej platformy Pod 4 na dowolnym łóżku, Cover Pro jest racjonalnym wyborem. Stabilna obecna platforma, bez loterii z zapasami."
+    },
+    "eight-sleep-pod-4-vs-chilipad-dock-pro-vs-bedjet-3": {
+      "title": "Eight Sleep Pod 4 vs ChiliPad vs BedJet 3: porównanie 2026",
+      "description": "Eight Sleep Pod 4 vs ChiliPad Dock Pro vs BedJet 3 – trzy systemy klimatu snu: premium z pomiarem, woda bez subskrypcji lub przepływ powietrza.",
+      "intro": "Trzy systemy, które w 2026 roku jasno dzielą kategorię inteligentnego klimatu snu. Eight Sleep Pod 4 – chłodzenie wodne ze zintegrowanym pomiarem HRV i obowiązkową subskrypcją. ChiliPad Dock Pro – to samo chłodzenie wodne bez subskrypcji, bez pomiaru. BedJet 3 – alternatywa z przepływem powietrza w najniższej cenie, bez obsługi wody.",
+      "verdict": "Trzy różne pytania zakupowe, trzy jasne odpowiedzi. Eight Sleep Pod 4, jeśli chcesz zintegrowanego pomiaru i akceptujesz subskrypcję. ChiliPad Dock Pro, jeśli chcesz tego samego chłodzenia wodnego bez subskrypcji. BedJet 3, jeśli chcesz alternatywy z przepływem powietrza w najniższej cenie.",
+      "bestForA": "Wybierz Eight Sleep Pod 4, jeśli chcesz rozbudowanego sprzętu do klimatu snu z wbudowanym pomiarem HRV, który zastępuje urządzenie noszone (bez niezależnej walidacji) – i akceptujesz stałą subskrypcję Autopilot.",
+      "bestForB": "Wybierz ChiliPad Dock Pro, jeśli chcesz dwustrefowego chłodzenia wodnego klasy premium bez abonamentowego haraczu Eight Sleep, a do pomiarów już nosisz Ourę lub Whoopa.",
+      "bestForC": "Wybierz BedJet 3, jeśli chcesz czystego klimatu z przepływem powietrza bez obsługi wody w najniższej cenie w kategorii.",
+      "axes": [
+        {
+          "name": "Zakres temperatur",
+          "note": "Eight Sleep Pod 4 prowadzi pod względem powrotu do temperatury: dwustrefowe chłodzenie wodne (13–43 °C), które szybciej wraca do temperatury w największe upały. ChiliPad Dock Pro ma szerszy zakres (13–46 °C), ale jest nieco wolniejszy w największe upały; przepływ powietrza w BedJet chłodzi słabiej w wilgotne letnie szczyty."
+        },
+        {
+          "name": "Pomiar",
+          "note": "Eight Sleep: zintegrowany pomiar HRV i wykrywanie faz snu. ChiliPad i BedJet: brak wbudowanego pomiaru, potrzebne osobne urządzenie noszone."
+        },
+        {
+          "name": "Subskrypcja",
+          "note": "ChiliPad i BedJet praktycznie równe: żaden nie wymaga subskrypcji. Eight Sleep do pełnych funkcji potrzebuje Autopilot (około 15–25 $ miesięcznie)."
+        },
+        {
+          "name": "Obsługa",
+          "note": "Eight Sleep i ChiliPad: zbiornik na wodę do obsługi. BedJet: tylko powietrze, bez zbiornika na wodę, bez węży, bez czyszczenia zbiornika."
+        },
+        {
+          "name": "Dwie strefy",
+          "note": "Eight Sleep i ChiliPad: fabrycznie dwie strony łóżka. BedJet: jedna strefa (dwa urządzenia kosztują więcej niż pojedynczy system ChiliPad)."
+        },
+        {
+          "name": "Aplikacja",
+          "note": "Eight Sleep: najbardziej rozbudowana, Autopilot oparty na fazach snu. ChiliPad: z harmonogramami, skupiona na klimacie. BedJet: funkcjonalna, minimalistyczna."
+        },
+        {
+          "name": "Cena",
+          "note": "Całkowity koszt Eight Sleep Pod 4 w 3 lata: ~4500–4900 $ (~4000 $ za rozmiar queen plus ~15–25 $/mies. subskrypcji). ChiliPad: ~1700 $ jednorazowo. BedJet: ~600–900 $ jednorazowo. BedJet kosztuje ułamek całkowitego kosztu Eight Sleep."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Który inteligentny system klimatu snu jest najlepszy w 2026 roku?",
+          "a": "To zależy od trzech pytań. Chcesz zintegrowanego pomiaru HRV, a subskrypcja ci nie przeszkadza? Eight Sleep. Chcesz tego samego chłodzenia wodnego bez subskrypcji? ChiliPad Dock Pro. Chcesz najtańszego wejścia bez obsługi wody? BedJet 3."
+        },
+        {
+          "q": "Eight Sleep czy ChiliPad – co jest lepsze?",
+          "a": "Eight Sleep wygrywa zintegrowanym pomiarem HRV i harmonogramami Autopilot. ChiliPad wygrywa brakiem subskrypcji i niższym całkowitym kosztem posiadania. Sprzęt do klimatu porównywalny."
+        },
+        {
+          "q": "Dlaczego BedJet jest o tyle tańszy?",
+          "a": "Inny mechanizm. BedJet tłoczy powietrze, a nie schłodzoną wodę. Prostszy sprzęt (bez zbiornika na wodę, mniejszy układ chłodzenia) w niższej cenie. Chłodzenie jest realne, ale słabsze w wilgotne letnie szczyty."
+        },
+        {
+          "q": "Czy BedJet może zastąpić Eight Sleep lub ChiliPad?",
+          "a": "W łagodnym i umiarkowanym klimacie tak – BedJet zapewnia użyteczne chłodzenie za ułamek 3-letniego kosztu Eight Sleep. W gorącym/wilgotnym klimacie lub przy dużych potrzebach chłodzenia systemy wodne (Eight Sleep lub ChiliPad) chłodzą zdecydowanie skuteczniej."
+        },
+        {
+          "q": "Co daje najlepszy zwrot z inwestycji biohakerom, którzy już używają Oury lub Whoopa?",
+          "a": "ChiliPad Dock Pro. Pomiar HRV i snu masz już z urządzenia noszonego – kluczowa funkcja Eight Sleep jest zbędna, a w 3 lata oszczędzasz ~2800–3200 $ (sprzęt plus subskrypcja)."
+        }
+      ],
+      "content": "## W skrócie\n\nTrzy systemy jasno dzielą kategorię: Eight Sleep (premium + pomiar + subskrypcja), ChiliPad (woda bez subskrypcji), BedJet (powietrze bez subskrypcji, najtańszy).\n\n## Kiedy Eight Sleep Pod 4 to dobry wybór?\n\nJeśli chcesz zintegrowanego pomiaru HRV i snu, żeby nie potrzebować osobnego urządzenia noszonego, a do tego harmonogramów klimatu Autopilot – i akceptujesz stałą subskrypcję.\n\n## Kiedy ChiliPad Dock Pro to dobry wybór?\n\nJeśli już nosisz Ourę lub Whoopa i chcesz tego samego klimatu z chłodzeniem wodnym bez płacenia subskrypcji Eight Sleep. Mniej więcej jedna trzecia 3-letniego kosztu posiadania Eight Sleep przy porównywalnym sprzęcie do klimatu.\n\n## Kiedy BedJet 3 to dobry wybór?\n\nJeśli chcesz najtańszego wiarygodnego wejścia w aktywny klimat snu, mieszkasz w łagodnym lub umiarkowanym klimacie i nie chcesz obsługiwać zbiornika na wodę. Podejście z przepływem powietrza wystarcza większości użytkowników poza letnimi szczytami – za ułamek całkowitego 3-letniego kosztu Eight Sleep."
     }
   },
   "categoryHubs": {
