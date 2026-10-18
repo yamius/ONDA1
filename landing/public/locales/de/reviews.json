@@ -216,7 +216,7 @@
         "data-access": "Es gibt eine Entwickler-API, aber wie bei Oura bleibt der rohe Schlag-zu-Schlag-Datenstrom weitgehend verschlossen.",
         "wearability": "Ohne Display und leicht zu vergessen; ca. 14 Tage Akku, und der aufsteckbare Akkupack lädt es, ohne dass du es abnehmen musst.",
         "app-ux": "Strain, Recovery und ein KI-Coach belohnen datenaffine Nutzer, können aber alle anderen überfordern.",
-        "value": "Nur im Abo – rund 239 USD pro Jahr, für immer, ohne dass dir das Gerät je gehört."
+        "value": "Nur im Abo – ab 199 USD (One) / 239 USD (Peak) / 359 USD (Life) pro Jahr, für immer, ohne dass dir das Gerät je gehört."
       },
       "content": "## Wo es vorne liegt\n\nDas Whoop 5.0 ist um eine Idee herum gebaut: Erholung. Statt einer Stichprobe am Morgen berechnet es sein tägliches Recovery-Signal aus der im Schlaf gemessenen [HRV](/glossary/heart-rate-variability); Whoop veröffentlicht nicht genau, wie dieser nächtliche Wert gewichtet wird. Das Band ohne Display vergisst man beim Tragen leicht, die aktuelle Generation hat die Akkulaufzeit auf rund zwei Wochen verlängert, und dank des aufsteckbaren Akkupacks muss es zum Laden nie vom Handgelenk.\n\n**Vorbehalt zur Validierung.** Ein Armband bleibt bei der Schlag-zu-Schlag-Präzision hinter einem Fingerring oder einem EKG-Brustgurt zurück, und seine Schlafphasen sind Schätzungen. Achte auf den *Trend*, den Whoop jeden Morgen meldet, statt auf einen einzelnen Wert.\n\n## Was sind die Nachteile des Whoop 5.0?\n\nWhoop wird als Mitgliedschaft verkauft, nicht als Produkt. Es gibt keine Hardware, die dir gehört – hörst du auf zu zahlen, funktioniert das Band nicht mehr –, und die Mitgliedschaft – 199 USD pro Jahr für WHOOP One, 239 USD für Peak, 359 USD für Life – ist ein laufender Kostenpunkt, kein einmaliger Kauf. Die App ist leistungsstark, aber überladen: Strain, Recovery und der KI-Coach belohnen Nutzer, die ihre Daten studieren wollen, und können alle anderen überfordern. Der Zugang zu Rohdaten ist, wie bei Oura, eingeschränkt.\n\n## Für wen ist das Whoop 5.0 geeignet?\n\nWähle das Whoop 5.0, wenn du Sportler oder ambitionierter Trainierender bist, deine Entscheidungen nach einem täglichen Recovery-Wert triffst und kontinuierliche nächtliche [HRV](/glossary/heart-rate-variability) ohne Display am Handgelenk willst. Wenn du unbefristete Abos nicht magst oder ein Gerät willst, das auch die Uhrzeit anzeigt, passen die Alternativen besser.\n\n---\n\n## Hintergrundlektüre\n\nDie Wissenschaft dahinter, warum HRV das Signal ist, das sich zu verfolgen lohnt – und wie der Körper es erzeugt.\n\n- [Sagt HRV Reaktionszeit und Konzentration voraus?](/articles/nervous-system-ping-latency) – was die Ruhe-HRV über Aufmerksamkeit und Selbstkontrolle aussagt und was nicht\n- [HRV als fehlertoleranter Puffer](/articles/fault-tolerant-human-hrv-buffer) – warum eine breite HRV-Spanne das ist, worauf du eigentlich trainierst\n- [Der Baroreflex und die 0,1-Hz-Verschiebung](/articles/baroreflex-01hz-shift) – die Signatur der Resonanzfrequenz-Atmung in deiner HRV-Kurve\n",
       "faq": [
@@ -2094,7 +2094,7 @@
         "personalization": "Zum Einstieg ein strukturierter 28-Tage-Kurs, aber wenig adaptive, fortlaufende Personalisierung.",
         "app-experience": "Eine klare, ruhige App, die der Praxis nicht im Weg steht.",
         "free-tier": "Eine 7-tägige kostenlose Testphase sowie ein dauerhaftes Stipendium: eine kostenlose Mitgliedschaft für alle, die es sich nicht leisten können.",
-        "value": "Mit rund 130 USD pro Jahr die teuerste hier – das Stipendienangebot mildert das jedoch ab.",
+        "value": "Mit rund 130 USD pro Jahr auf der Website (149,99 USD im App Store) die teuerste hier – das Stipendienangebot mildert das jedoch ab.",
         "evidence": "Ein säkularer Ansatz, der sich auf Meditationsforschung allgemein und benannte Lehrtraditionen stützt; wir haben keine Studie zur Waking-Up-App selbst gefunden, daher wird sie wie andere Apps ohne eigene Studien bewertet."
       },
       "content": "## Wo sie vorne liegt\n\nWaking Up, entwickelt vom Neurowissenschaftler und Philosophen Sam Harris, ist eine lehrorientierte, philosophielastige App. Sie versteht Meditation nicht als Entspannungswerkzeug, sondern als Weg, die Natur des Bewusstseins zu untersuchen, und verbindet die Praxis mit einem echten theoretischen Fundament – Lektionen zu Philosophie und Psychologie sowie Gesprächen mit führenden Denkern. Die Anleitung durch Harris und eine Reihe bekannter Gastlehrender ist gründlich und philosophielastig.\n\n## Was sind die Nachteile von Waking Up?\n\nDiese Tiefe ist bewusst schmal. Die Bibliothek ist kuratiert und vergleichsweise klein, es gibt keine Schlafinhalte, und der Einführungskurs geht schnell zu fortgeschrittenen Ideen über – absolute Einsteiger können sich überfordert fühlen. Sie ist außerdem die teuerste Option, auch wenn das dauerhafte Angebot eines kostenlosen Zugangs für alle, die es sich wirklich nicht leisten können, dem Preis die Schärfe nimmt.\n\n## Für wen ist Waking Up geeignet?\n\nWähle Waking Up, wenn du bereits eine grundlegende Praxis hast und tiefer gehen willst – in eine gründliche Anleitung und die Philosophie dahinter – und der Preis (oder das Stipendium) für dich passt. Wenn du bei null anfängst, beginne mit Headspace und wechsle zu Waking Up, sobald sich eine Praxis gefestigt hat.\n\n---\n\n## Hintergrundlektüre\n\nDie Wissenschaft dazu, was Meditation auf Ebene des Nervensystems tatsächlich bewirkt.\n\n- [Rhythmische Synchronisation und Systemfrequenzen](/articles/rhythmic-entrainment-system-frequencies) – warum getaktete Audios und Atemprotokolle sich mit der Praxis verstärken\n- [Physiologische Konzentration: die Verankerung des Flow-Zustands](/articles/physiological-concentration-flow-state-hardwired) – welche Neurochemie der Flow-Zustand tatsächlich braucht\n- [Alpha-Wellen: Ruhe, Kreativität und Flow](/articles/neural-bridge-alpha-flow-gateway) – was der Alpha-Rhythmus bewirkt und was Alpha-Headsets, Apps und Musik verändern können und was nicht\n",
@@ -2253,15 +2253,15 @@
       "productType": "Meditations-App"
     },
     "insight-timer": {
-      "verdict": "Eine sehr große kostenlose Meditationsbibliothek (laut Insight Timer die größte) und die einzige App hier, die du wirklich kostenlos nutzen kannst — schwankende Qualität ist der Preis.",
-      "summary": "Insight Timer hat eine sehr große Meditationsbibliothek — nach eigener Aussage die größte — und ist eine der seltenen Apps, mit denen du eine echte Praxis aufbauen kannst, ohne zu zahlen. Sie funktioniert wie ein YouTube für Meditation: enorme Auswahl, viele Lehrende, stündliche Live-Events — und zwangsläufig schwankende Qualität.",
+      "verdict": "Eine sehr große kostenlose Meditationsbibliothek (laut Insight Timer die größte) und ein umfangreiches Gratisangebot — schwankende Qualität ist der Preis.",
+      "summary": "Insight Timer hat eine sehr große Meditationsbibliothek — nach eigener Aussage die größte — und ist eine App, mit der du eine echte Praxis aufbauen kannst, ohne zu zahlen. Sie funktioniert wie ein YouTube für Meditation: enorme Auswahl, viele Lehrende, stündliche Live-Events — und zwangsläufig schwankende Qualität.",
       "description": "ONDA-Bewertung von Insight Timer — sehr große Meditationsbibliothek, brauchbarste Gratis-Version. Bewertet nach Bibliothek, Anleitung und Preis.",
       "bestFor": "Insgesamt die beste Wahl — eine sehr große Bibliothek, eine wirklich nutzbare Gratis-Version und das stärkste Preis-Leistungs-Verhältnis.",
       "testNote": "Evidenzbasierte Bewertung — auf Grundlage öffentlicher Informationen, App-Store-Daten und unabhängiger Rezensionen aus 2026. Nicht auf Basis einer längeren praktischen Erprobung durch ONDA.",
       "productType": "Meditations-App",
       "pros": [
         "Eine sehr große Meditationsbibliothek (laut Insight Timer die größte)",
-        "Eine wirklich nutzbare Gratis-Version — selten in dieser Kategorie",
+        "Eine wirklich nutzbare Gratis-Version",
         "Günstigster Bezahl-Tarif, dazu stündliche Live-Events und Community",
         "Eine riesige Bandbreite an Lehrenden und Traditionen"
       ],
@@ -2284,7 +2284,7 @@
       "faq": [
         {
           "q": "Ist Insight Timer kostenlos?",
-          "a": "Größtenteils ja. Insight Timer hat eine sehr umfangreiche Gratis-Version, mit der du wirklich eine echte Praxis aufbauen kannst — selten bei Meditations-Apps. Member Plus kostet US$60 pro Jahr mit 7 Tagen kostenloser Testphase, der günstigste Bezahl-Tarif im Vergleich, und es gibt stündliche Live-Events und Community-Funktionen."
+          "a": "Größtenteils ja. Insight Timer hat eine sehr umfangreiche Gratis-Version, mit der du wirklich eine echte Praxis aufbauen kannst, ohne zu zahlen. Member Plus kostet US$60 pro Jahr mit 7 Tagen kostenloser Testphase, der günstigste Bezahl-Tarif im Vergleich, und es gibt stündliche Live-Events und Community-Funktionen."
         },
         {
           "q": "Lohnt es sich, für Insight Timer zu bezahlen?",

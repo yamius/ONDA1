@@ -216,7 +216,7 @@
         "data-access": "Er bestaat een developer-API, maar net als bij Oura blijft de ruwe slag-op-slagstroom grotendeels gesloten.",
         "wearability": "Zonder scherm en makkelijk te vergeten; ~14 dagen accu, en het opschuifbare accupack laadt hem op zonder dat je hem afdoet.",
         "app-ux": "Strain, Recovery en een AI-coach belonen datagerichte gebruikers, maar kunnen alle anderen overweldigen.",
-        "value": "Alleen met abonnement – ongeveer 239 USD per jaar, voor altijd, zonder dat het apparaat ooit van jou is."
+        "value": "Alleen met abonnement – vanaf 199 USD (One) / 239 USD (Peak) / 359 USD (Life) per jaar, voor altijd, zonder dat het apparaat ooit van jou is."
       },
       "content": "## Waar hij voorop loopt\n\nDe Whoop 5.0 is gebouwd rond één idee: herstel. In plaats van een losse ochtendmeting bouwt hij het dagelijkse recoverysignaal op uit [HRV](/glossary/heart-rate-variability) die tijdens de slaap wordt gemeten; Whoop publiceert niet precies hoe die nachtelijke waarde wordt gewogen. De band zonder scherm vergeet je makkelijk, de huidige generatie rekte de accuduur op tot ongeveer twee weken, en dankzij het opschuifbare accupack hoeft hij nooit van je pols om op te laden.\n\n**Kanttekening bij de validatie.** Een polsband blijft voor slag-op-slagprecisie achter bij een ring om je vinger of een ECG-borstband, en de slaapfasen zijn schattingen. Kijk naar de *trend* die Whoop elke ochtend rapporteert in plaats van naar één waarde.\n\n## Wat zijn de nadelen van de Whoop 5.0?\n\nWhoop wordt verkocht als lidmaatschap, niet als product. Er is geen hardware die van jou is – stop je met betalen, dan werkt de band niet meer – en het lidmaatschap – 199 USD per jaar voor WHOOP One, 239 USD voor Peak, 359 USD voor Life – is een doorlopende kostenpost, geen eenmalige aankoop. De app is krachtig maar druk: Strain, Recovery en de AI-coach belonen gebruikers die hun data willen bestuderen en kunnen wie dat niet wil overweldigen. Toegang tot ruwe data is, net als bij Oura, beperkt.\n\n## Voor wie is de Whoop 5.0?\n\nKies de Whoop 5.0 als je sporter of serieuze trainer bent die beslissingen neemt op basis van een dagelijkse recoveryscore en continue nachtelijke [HRV](/glossary/heart-rate-variability) wil zonder scherm om je pols. Heb je een hekel aan doorlopende abonnementen, of wil je een apparaat dat ook de tijd aangeeft, dan passen de alternatieven beter.\n\n---\n\n## Achtergrondlectuur\n\nDe wetenschap achter waarom HRV het signaal is dat het volgen waard is – en hoe het lichaam het produceert.\n\n- [Voorspelt HRV reactietijd en focus?](/articles/nervous-system-ping-latency) – wat HRV in rust wel en niet zegt over aandacht en zelfbeheersing\n- [HRV als fouttolerante buffer](/articles/fault-tolerant-human-hrv-buffer) – waarom een brede HRV-marge is waar je eigenlijk voor traint\n- [De baroreflex en de 0,1 Hz-verschuiving](/articles/baroreflex-01hz-shift) – het kenmerk van resonantiefrequentie-ademhaling in je HRV-curve\n",
       "faq": [
@@ -2094,7 +2094,7 @@
         "personalization": "Een gestructureerde cursus van 28 dagen om te beginnen, maar minder sterk in adaptieve, doorlopende personalisatie.",
         "app-experience": "Een overzichtelijke, rustige app die de beoefening niet in de weg zit.",
         "free-tier": "Een gratis proefperiode van 7 dagen, plus een vaste beurs: een gratis lidmaatschap voor iedereen die het niet kan betalen.",
-        "value": "De duurste hier met ongeveer 130 USD per jaar – al verzacht het beursbeleid dat.",
+        "value": "De duurste hier met ongeveer 130 USD per jaar via de website (149,99 USD in de app store) – al verzacht het beursbeleid dat.",
         "evidence": "Een seculiere aanpak die steunt op meditatieonderzoek in het algemeen en benoemde leertradities; we vonden geen studie naar de Waking Up-app zelf, dus scoort hij zoals andere apps zonder eigen studies."
       },
       "content": "## Waar hij voorop loopt\n\nWaking Up, gemaakt door neurowetenschapper en filosoof Sam Harris, is een app gericht op onderricht en zwaar op filosofie. Meditatie wordt er niet gezien als ontspanningsmiddel, maar als een manier om de aard van het bewustzijn te onderzoeken, en de beoefening gaat samen met een echt theoretisch fundament – lessen over filosofie en psychologie, en gesprekken met vooraanstaande denkers. Het onderricht, van Harris en een reeks bekende gastdocenten, is grondig en zwaar op filosofie.\n\n## Wat zijn de nadelen van Waking Up?\n\nDie diepgang is bewust smal. De bibliotheek is samengesteld en relatief klein, er is geen slaapcontent, en de introductiecursus gaat snel over op gevorderde ideeën – een absolute beginner kan het gevoel krijgen het niet bij te benen. Het is ook de duurste optie, al haalt een vast aanbod van gratis toegang voor iedereen die het echt niet kan betalen de scherpe kantjes van de prijs.\n\n## Voor wie is Waking Up?\n\nKies Waking Up als je al een basisbeoefening hebt en dieper wilt gaan – in grondig onderricht en de filosofie erachter – en de prijs (of de beurs) voor jou werkt. Begin je vanaf nul, start dan met Headspace en stap over op Waking Up zodra je beoefening stevig staat.\n\n---\n\n## Achtergrondlectuur\n\nDe wetenschap van wat meditatie werkelijk doet op het niveau van het zenuwstelsel.\n\n- [Ritmische synchronisatie en systeemfrequenties](/articles/rhythmic-entrainment-system-frequencies) – waarom getimede audio en ademprotocollen met oefening sterker worden\n- [Fysiologische concentratie: de bedrading van de flowstaat](/articles/physiological-concentration-flow-state-hardwired) – welke neurochemie de flowstaat echt nodig heeft\n- [Alfagolven: rust, creativiteit en flow](/articles/neural-bridge-alpha-flow-gateway) – wat het alfaritme doet, en wat alfa-headsets, apps en muziek wel en niet kunnen veranderen\n",
@@ -2253,15 +2253,15 @@
       "productType": "Meditatie-app"
     },
     "insight-timer": {
-      "verdict": "Een zeer grote gratis meditatiebibliotheek (volgens Insight Timer de grootste) en de enige app hier die je echt gratis kunt gebruiken — wisselende kwaliteit is de prijs.",
-      "summary": "Insight Timer heeft een zeer grote meditatiebibliotheek — volgens eigen zeggen de grootste — en is een van de zeldzame apps waarmee je zonder te betalen een echte beoefening kunt opbouwen. Het werkt als een YouTube voor meditatie: enorm aanbod, veel leraren, elk uur live-evenementen — en onvermijdelijk wisselende kwaliteit.",
+      "verdict": "Een zeer grote gratis meditatiebibliotheek (volgens Insight Timer de grootste) en een royaal gratis aanbod — wisselende kwaliteit is de prijs.",
+      "summary": "Insight Timer heeft een zeer grote meditatiebibliotheek — volgens eigen zeggen de grootste — en is een app waarmee je zonder te betalen een echte beoefening kunt opbouwen. Het werkt als een YouTube voor meditatie: enorm aanbod, veel leraren, elk uur live-evenementen — en onvermijdelijk wisselende kwaliteit.",
       "description": "ONDA-review van Insight Timer — zeer grote meditatiebibliotheek en de bruikbaarste gratis versie. Beoordeeld op bibliotheek, begeleiding en prijs.",
       "bestFor": "Beste keuze over de hele linie — een zeer grote bibliotheek, een echt bruikbare gratis versie en de sterkste prijs-kwaliteit.",
       "testNote": "Evidence-based beoordeling — op basis van openbare informatie, app-storegegevens en onafhankelijke reviews uit 2026. Niet gebaseerd op een langdurige praktijkproef door ONDA.",
       "productType": "Meditatie-app",
       "pros": [
         "Een zeer grote meditatiebibliotheek (volgens Insight Timer de grootste)",
-        "Een echt bruikbare gratis versie — zeldzaam in deze categorie",
+        "Een echt bruikbare gratis versie",
         "Goedkoopste betaalde abonnement, plus elk uur live-evenementen en community",
         "Een enorme variatie aan leraren en tradities"
       ],
@@ -2284,7 +2284,7 @@
       "faq": [
         {
           "q": "Is Insight Timer gratis?",
-          "a": "Grotendeels wel. Insight Timer heeft een zeer uitgebreide gratis versie waarmee je echt een beoefening kunt opbouwen, wat zeldzaam is bij meditatie-apps. Member Plus kost US$60 per jaar met een gratis proefperiode van 7 dagen, het goedkoopste betaalde abonnement in de vergelijking, en er zijn elk uur live-evenementen en communityfuncties."
+          "a": "Grotendeels wel. Insight Timer heeft een zeer uitgebreide gratis versie waarmee je echt een beoefening kunt opbouwen zonder te betalen. Member Plus kost US$60 per jaar met een gratis proefperiode van 7 dagen, het goedkoopste betaalde abonnement in de vergelijking, en er zijn elk uur live-evenementen en communityfuncties."
         },
         {
           "q": "Is betalen voor Insight Timer de moeite waard?",

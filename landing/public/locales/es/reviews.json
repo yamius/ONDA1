@@ -537,16 +537,16 @@
       ]
     },
     "whoop-5-0": {
-      "verdict": "Un entrenador de recuperación en la muñeca: HRV nocturno continuo y un análisis de esfuerzo nítido, encerrados tras una membresía perpetua.",
-      "summary": "El Whoop 5.0 está construido en torno a la recuperación. Construye su señal diaria de recuperación a partir de la HRV medida durante el sueño, no de una comprobación puntual matinal. La contrapartida es el modelo: no hay hardware en propiedad, solo una membresía continua.",
-      "description": "Reseña de ONDA del Whoop 5.0 — un monitor de recuperación con HRV continuo para deportistas, puntuado por precisión, calidad del sensor, acceso a los datos y precio.",
+      "verdict": "Un entrenador de recuperación en la muñeca: HRV nocturno continuo y puntuaciones detalladas de esfuerzo y recuperación, encerrados tras una membresía perpetua.",
+      "summary": "El Whoop 5.0 está construido en torno a la recuperación. Construye su señal diaria de recuperación a partir de la variabilidad de la frecuencia cardíaca (HRV o VFC) medida durante el sueño, no de una comprobación puntual matinal. La contrapartida es el modelo: no hay hardware en propiedad, solo una membresía continua.",
+      "description": "Reseña del Whoop 5.0: un monitor de recuperación con HRV continuo para deportistas, puntuado por precisión, sensor, acceso a los datos y precio.",
       "bestFor": "Lo mejor para deportistas que entrenan con las señales diarias de recuperación y esfuerzo.",
       "testNote": "Evaluación basada en evidencia — puntuado a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
+      "productType": "Banda sin pantalla",
       "pros": [
         "HRV nocturno continuo, no una única lectura matinal",
-        "Coaching de recuperación y esfuerzo nítido y accionable",
-        "Sin pantalla y cómodo; ~14 días de batería, se carga en el cuerpo",
-        "El coste más bajo del primer año de los tres"
+        "Puntuaciones detalladas de esfuerzo y recuperación",
+        "Sin pantalla y cómodo; ~14 días de batería, se carga en el cuerpo"
       ],
       "cons": [
         "Solo por suscripción — si dejas de pagar, la banda deja de funcionar",
@@ -561,10 +561,23 @@
         "data-access": "Existe una API para desarrolladores, pero, como en Oura, el flujo de datos en bruto latido a latido permanece en gran parte cerrado.",
         "wearability": "Sin pantalla y fácil de olvidar; ~14 días de batería, y el módulo deslizante la carga sin quitarla.",
         "app-ux": "Esfuerzo, Recuperación y un entrenador de IA recompensan a los usuarios analíticos pero pueden abrumar al resto.",
-        "value": "Solo por suscripción — unos 239 USD al año, para siempre, sin un dispositivo que llegues a poseer."
+        "value": "Solo por suscripción — desde 199 USD (One) / 239 USD (Peak) / 359 USD (Life) al año, para siempre, sin un dispositivo que llegues a poseer."
       },
-      "content": "## En qué destaca\n\nEl Whoop 5.0 está construido en torno a una idea: la recuperación. En lugar de una comprobación puntual matinal, construye su señal diaria de recuperación a partir de la variabilidad de la frecuencia cardíaca (HRV o VFC) medida durante el sueño; Whoop no publica cómo pondera exactamente ese valor nocturno. La banda sin pantalla es fácil de olvidar que la llevas puesta, la generación actual amplió la autonomía a unas dos semanas, y el módulo de batería deslizante hace que nunca tenga que salir de tu muñeca para cargarse.\n\n## En qué se queda corto\n\nWhoop se vende como una membresía, no como un producto. No hay hardware en propiedad — si dejas de pagar, la banda deja de funcionar — y los aproximadamente 239 USD del primer año son un coste continuo, no una compra de pago único. La app es potente pero densa: Esfuerzo, Recuperación y el entrenador de IA recompensan a quien quiere estudiar sus datos y pueden abrumar a quien no. El acceso a los datos en bruto, como en Oura, es limitado.\n\n## Para quién es\n\nElige el Whoop 5.0 si eres deportista o te entrenas en serio y tomas decisiones a partir de una puntuación diaria de recuperación, y quieres HRV nocturno continuo sin una pantalla en la muñeca. Si te disgustan las suscripciones perpetuas, o quieres un dispositivo que además dé la hora, las alternativas encajarán mejor.",
-      "productType": "Banda sin pantalla"
+      "content": "## Dónde destaca\n\nEl Whoop 5.0 está construido en torno a una idea: la recuperación. En lugar de una comprobación puntual matinal, construye su señal diaria de recuperación a partir de la [HRV](/glossary/heart-rate-variability) medida durante el sueño; Whoop no publica cómo pondera exactamente ese valor nocturno. La banda sin pantalla es fácil de olvidar que la llevas puesta, la generación actual amplió la autonomía a unas dos semanas, y el módulo de batería deslizante hace que nunca tenga que salir de tu muñeca para cargarse.\n\n**Advertencia sobre la validación.** Una banda de muñeca sigue quedándose por detrás de un anillo de dedo o de una banda de pecho con ECG en precisión latido a latido, y sus fases de sueño son estimaciones. Fíjate en la *tendencia* que Whoop muestra cada mañana, más que en un valor aislado.\n\n## ¿Cuáles son las desventajas de Whoop 5.0?\n\nWhoop se vende como una membresía, no como un producto. No hay hardware en propiedad — si dejas de pagar, la banda deja de funcionar — y la membresía — 199 USD al año por WHOOP One, 239 USD por Peak, 359 USD por Life — es un coste continuo, no una compra de pago único. La app es potente pero densa: Esfuerzo, Recuperación y el entrenador de IA recompensan a quien quiere estudiar sus datos y pueden abrumar a quien no. El acceso a los datos en bruto, como en Oura, es limitado.\n\n## ¿Quién debería comprar Whoop 5.0?\n\nElige el Whoop 5.0 si eres deportista o te entrenas en serio y tomas decisiones a partir de una puntuación diaria de recuperación, y quieres [HRV](/glossary/heart-rate-variability) nocturno continuo sin una pantalla en la muñeca. Si te disgustan las suscripciones perpetuas, o quieres un dispositivo que además dé la hora, las alternativas encajarán mejor.\n\n---\n\n## Lecturas de fondo\n\nLa ciencia de por qué la HRV es la señal que vale la pena seguir — y de cómo la produce el cuerpo.\n\n- [¿Predice la HRV el tiempo de reacción y la concentración?](/articles/nervous-system-ping-latency) — lo que la HRV en reposo dice y no dice sobre la atención y el autocontrol\n- [La HRV como amortiguador tolerante a fallos](/articles/fault-tolerant-human-hrv-buffer) — por qué un margen amplio de HRV es lo que de verdad estás entrenando\n- [El barorreflejo y el cambio a 0,1 Hz](/articles/baroreflex-01hz-shift) — la huella de la respiración a frecuencia de resonancia en tu registro de HRV\n",
+      "faq": [
+        {
+          "q": "¿El Whoop 5.0 requiere suscripción?",
+          "a": "Sí. Whoop funciona solo por suscripción: 199 $ al año por WHOOP One, 239 $ por Peak o 359 $ por Life, cada una con la banda incluida — no hay una compra de hardware por separado. Si dejas de pagar, la banda deja de funcionar."
+        },
+        {
+          "q": "¿Es preciso el Whoop 5.0 para la HRV?",
+          "a": "Whoop construye su valor nocturno de HRV a partir de mediciones tomadas durante el sueño. Es suficiente para seguir tendencias, pero una banda de pecho con ECG se acerca más al ECG de laboratorio (en reposo, en adultos jóvenes y sanos). El 5.0 en sí no se ha probado por separado."
+        },
+        {
+          "q": "¿Para quién es mejor el Whoop 5.0?",
+          "a": "Para deportistas y personas que entrenan en serio y actúan según una puntuación diaria de recuperación y esfuerzo. La batería de ~14 días y la banda sin pantalla se prestan a llevarla 24/7; es excesivo para usuarios ocasionales a los que no les gustan las suscripciones."
+        }
+      ]
     },
     "apple-watch-series-11": {
       "verdict": "Un smartwatch completísimo, pero una herramienta de HRV casual — hace comprobaciones puntuales en lugar de seguimiento.",
@@ -672,10 +685,11 @@
     },
     "samsung-galaxy-ring": {
       "verdict": "La alternativa a Oura sin suscripción para Android — cómoda y competente, aunque atada al ecosistema de Samsung.",
-      "summary": "El Samsung Galaxy Ring es lo más parecido a un Oura Ring 4 sin la suscripción. Es un anillo cómodo con HRV nocturno y seguimiento del sueño competentes — pero está atado a Samsung Health y a Android, y, a diferencia del Oura Ring 4, no tiene ninguna comprobación independiente de precisión.",
-      "description": "Reseña de ONDA del Samsung Galaxy Ring — la alternativa a Oura sin suscripción para Android. Puntuado por precisión de HRV, sueño, acceso a los datos y precio.",
+      "summary": "El Samsung Galaxy Ring es lo más parecido a un Oura Ring 4 sin la suscripción. Es un anillo cómodo con seguimiento nocturno de la variabilidad de la frecuencia cardíaca (HRV o VFC) y del sueño (sin validación independiente) — pero está atado a Samsung Health y a Android y, a diferencia del Oura Ring 4, no tiene ninguna comprobación independiente de precisión.",
+      "description": "Reseña del Samsung Galaxy Ring: la alternativa a Oura sin suscripción para Android. Puntuado por precisión de HRV, sueño, acceso a los datos y precio.",
       "bestFor": "Lo mejor para usuarios de Android que quieren un seguimiento de anillo estilo Oura sin suscripción.",
       "testNote": "Evaluación basada en evidencia — puntuado a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
+      "productType": "Anillo inteligente",
       "pros": [
         "Sin suscripción — todas las funciones desbloqueadas al comprar",
         "Un anillo cómodo con batería de varios días",
@@ -690,15 +704,28 @@
       ],
       "scoreNotes": {
         "hrv-accuracy": "HRV óptico nocturno desde el anillo; no se encontró ninguna validación independiente del Galaxy Ring frente a ECG (a octubre de 2026). Regla de ONDA: sin validación independiente propia, un dispositivo obtiene como máximo 7,5 si las generaciones anteriores se validaron, y 7,0 si no.",
-        "sensor": "PPG óptico en formato de anillo; una señal nocturna limpia.",
-        "sleep-accuracy": "Buen seguimiento del sueño en el día a día, pero no se encontró ninguna validación independiente del sueño del Galaxy Ring. Regla de ONDA: sin validación independiente propia, un dispositivo obtiene como máximo 7,5 si las generaciones anteriores se validaron, y 7,0 si no.",
+        "sensor": "PPG óptico en formato de anillo para lecturas nocturnas.",
+        "sleep-accuracy": "Seguimiento nocturno del sueño (sin validación independiente): no se encontró ninguna validación independiente del sueño del Galaxy Ring. Regla de ONDA: sin validación independiente propia, un dispositivo obtiene como máximo 7,5 si las generaciones anteriores se validaron, y 7,0 si no.",
         "data-access": "Construido en torno a Samsung Health, sin API abierta y con exportación limitada — los datos se quedan en gran parte dentro de la app.",
         "wearability": "Un anillo cómodo para llevar a todas horas, con batería de varios días.",
         "app-ux": "Samsung Health es bastante claro, pero atado al ecosistema de Samsung y Android.",
         "value": "399 USD sin suscripción — la ventaja de coste permanente frente al Oura Ring 4."
       },
-      "content": "## En qué destaca\n\nEl Samsung Galaxy Ring es la alternativa más directa al Oura Ring 4, y su ventaja principal es simple: sin suscripción. La compra desbloquea todas las funciones para siempre, mientras que Oura sigue cobrando cada mes. Como hardware es un anillo cómodo y bien hecho, con batería de varios días y variabilidad de la frecuencia cardíaca (HRV o VFC) nocturna y seguimiento del sueño competentes — para un usuario de un teléfono Samsung ya dentro de Samsung Health, es una elección natural y sin fricción.\n\n## En qué se queda corto\n\nEl anillo está atado a su ecosistema. Está construido en torno a Samsung Health y Android — no hay soporte para iPhone — y el acceso a los datos es comparativamente cerrado: sin API abierta para desarrolladores, exportación limitada, tus cifras se quedan en gran parte dentro de la app de Samsung. En precisión, no se encontró ninguna validación independiente del HRV del Galaxy Ring frente a un ECG (a octubre de 2026). El Oura Ring 4 tiene un estudio independiente de HRV con registros nocturnos (13 personas, Dial 2025), y el estudio más conocido de fases de sueño en anillos es una comprobación de las fases de sueño del Oura Gen 3; el estudio fue financiado por Oura.\n\n## Para quién es\n\nElige el Samsung Galaxy Ring si eres usuario de Android — idealmente de Samsung — y quieres un seguimiento de anillo estilo Oura sin una suscripción perpetua, y te conformas con mantener tus datos dentro de Samsung Health. Los usuarios de iPhone, o cualquiera que quiera un anillo con una comprobación independiente del HRV nocturno o datos abiertos, deberían mirar el Oura Ring 4.",
-      "productType": "Anillo inteligente"
+      "content": "## Dónde destaca\n\nEl Samsung Galaxy Ring es la alternativa más directa al Oura Ring 4, y su ventaja principal es simple: sin suscripción. La compra desbloquea todas las funciones para siempre, mientras que Oura sigue cobrando cada mes. Como hardware es un anillo cómodo y bien hecho, con batería de varios días y seguimiento nocturno de la [HRV](/glossary/heart-rate-variability) y del sueño (sin validación independiente) — para el dueño de un teléfono Samsung que ya usa Samsung Health, es una elección natural y sin fricción.\n\n## ¿Cuáles son las desventajas de Samsung Galaxy Ring?\n\nEl anillo está atado a su ecosistema. Está construido en torno a Samsung Health y Android — no hay soporte para iPhone — y el acceso a los datos es comparativamente cerrado: sin API abierta para desarrolladores, exportación limitada, tus cifras se quedan en gran parte dentro de la app de Samsung. En precisión, no se encontró ninguna validación independiente de la HRV del Galaxy Ring frente a ECG (a octubre de 2026). El Oura Ring 4 tiene una comparación independiente con ECG de banda de pecho de registros nocturnos (13 personas, Dial 2025), y el estudio más conocido de fases de sueño en anillos es una comprobación de las fases de sueño del Oura Gen 3; el estudio fue financiado por Oura.\n\n**Nota de 2026.** El panorama de precisión no ha cambiado: no se encontró ninguna comparación independiente que incluya el Galaxy Ring, ni ninguna validación independiente de su HRV frente a ECG (a octubre de 2026). El argumento real del Galaxy Ring sigue siendo la ausencia de suscripción y la integración nativa con Android — no la pretensión de igualar a Oura en precisión.\n\n## ¿Quién debería comprar Samsung Galaxy Ring?\n\nElige el Samsung Galaxy Ring si eres usuario de Android — idealmente de Samsung — y quieres un seguimiento de anillo estilo Oura sin una suscripción perpetua, y te conformas con mantener tus datos dentro de Samsung Health. Los usuarios de iPhone, o cualquiera que quiera un anillo con una comprobación independiente de la HRV nocturna, o datos abiertos, deberían mirar el Oura Ring 4.\n\n---\n\n## Lecturas de fondo\n\nLa ciencia de por qué la HRV es la señal que vale la pena seguir — y de cómo la produce el cuerpo.\n\n- [El barorreflejo y el cambio a 0,1 Hz](/articles/baroreflex-01hz-shift) — la huella de la respiración a frecuencia de resonancia en tu registro de HRV\n- [¿Predice la HRV el tiempo de reacción y la concentración?](/articles/nervous-system-ping-latency) — lo que la HRV en reposo dice y no dice sobre la atención y el autocontrol\n",
+      "faq": [
+        {
+          "q": "¿Funciona el Samsung Galaxy Ring con iPhone?",
+          "a": "No. Es solo para Android y Samsung Health, sin soporte para iPhone, así que encaja específicamente con los dueños de teléfonos Samsung."
+        },
+        {
+          "q": "¿Necesita suscripción el Samsung Galaxy Ring?",
+          "a": "No — cuesta 399 $ en un único pago, sin suscripción, una ventaja de coste permanente frente al Oura Ring, que requiere una membresía de unos 6 $ al mes para acceder a todos los datos."
+        },
+        {
+          "q": "¿Es el Samsung Galaxy Ring tan preciso como Oura?",
+          "a": "Se desconoce: no se encontró ninguna validación independiente de la HRV del Galaxy Ring frente a ECG (a octubre de 2026); el Oura Ring 4 tiene una comparación independiente con ECG de banda de pecho de registros nocturnos. El Galaxy Ring es una alternativa sin suscripción para usuarios de Android."
+        }
+      ]
     },
     "ultrahuman-ring-air": {
       "verdict": "Un anillo ultraligero y sin suscripción con un buen seguimiento del sueño — lastrado por numerosos informes de baterías que fallan en pocos meses y ahora con la venta prohibida en EE. UU. Su sucesor de Ultrahuman es el Ring Pro.",
@@ -906,14 +933,15 @@
       "productType": "App de meditación"
     },
     "insight-timer": {
-      "verdict": "Una biblioteca de meditación gratuita muy amplia (Insight Timer dice que es la más grande), y la única app de aquí que de verdad puedes usar gratis — la calidad variable es el precio.",
-      "summary": "Insight Timer tiene una biblioteca de meditación muy amplia —la más grande, según la propia empresa— y es la rara app sobre la que puedes construir una práctica real sin pagar. Funciona como un YouTube de la meditación: un alcance enorme, muchos profesores, eventos en directo cada hora — y, inevitablemente, calidad variable.",
-      "description": "Reseña de ONDA de Insight Timer — una biblioteca de meditación muy amplia y el plan gratuito más utilizable. Puntuado por biblioteca, enseñanza, personalización y precio.",
+      "verdict": "Una biblioteca de meditación gratuita muy amplia (Insight Timer dice que es la más grande) y un nivel gratuito considerable — la calidad variable es el precio.",
+      "summary": "Insight Timer tiene una biblioteca de meditación muy amplia —la más grande, según la propia empresa— y es una app sobre la que puedes construir una práctica real sin pagar. Funciona como un YouTube de la meditación: un alcance enorme, muchos profesores, eventos en directo cada hora — y, inevitablemente, calidad variable.",
+      "description": "Reseña de Insight Timer: una biblioteca de meditación muy amplia y el plan gratuito más útil. Puntuado por biblioteca, enseñanza, personalización y precio.",
       "bestFor": "La mejor en conjunto — una biblioteca muy amplia, un plan gratuito de verdad utilizable y el mejor valor.",
       "testNote": "Evaluación basada en evidencia — a partir de información pública, datos de las tiendas de apps y reseñas independientes de 2026. No se basa en una prueba prolongada en persona por parte de ONDA.",
+      "productType": "App de meditación",
       "pros": [
         "Una biblioteca de meditación muy amplia (la más grande, según Insight Timer)",
-        "Un plan gratuito de verdad utilizable — algo raro en esta categoría",
+        "Un plan gratuito de verdad utilizable",
         "El nivel de pago más barato, más eventos en directo cada hora y comunidad",
         "Un enorme abanico de profesores y tradiciones"
       ],
@@ -924,7 +952,7 @@
         "El contenido de origen colaborativo tiene un fundamento desigual"
       ],
       "scoreNotes": {
-        "content-library": "Una biblioteca muy amplia — 360,000 pistas gratuitas según el recuento de la empresa, más cursos.",
+        "content-library": "Una biblioteca muy amplia — 360.000 pistas gratuitas según el recuento de la empresa, más cursos.",
         "teaching": "Un enorme abanico de profesores y tradiciones; hay profundidad, pero la calidad varía de una sesión a otra.",
         "personalization": "Menos guiada que las apps basadas en cursos — en gran parte trazas tu propio camino.",
         "app-experience": "Funcional y repleta de funciones, pero el puro volumen puede hacer que se sienta recargada.",
@@ -932,15 +960,29 @@
         "value": "El nivel de pago más barato de aquí, sobre una biblioteca gratuita muy amplia — el líder en valor.",
         "evidence": "La calidad y el fundamento varían mucho en una biblioteca de origen colaborativo."
       },
-      "content": "## En qué destaca\n\nInsight Timer tiene una biblioteca de meditación muy amplia —la más grande, según la propia empresa— y es la única app de esta comparativa sobre la que de verdad puedes construir una práctica sin pagar. Funciona menos como un curso comisariado y más como un YouTube de la meditación: 360,000 pistas gratuitas, miles de profesores, eventos en directo cada hora y una comunidad activa. En alcance — y en un plan gratuito que es una oferta real y no un cebo — nada de aquí se le acerca.\n\n## En qué se queda corta\n\nLa amplitud tiene un coste. Como la biblioteca es de origen colaborativo, la calidad varía de una sesión a otra, y hay mucho menos acompañamiento estructurado que el que te da un curso de Headspace — en gran parte trazas tu propio camino. La app está tan repleta de funciones que llega a sentirse recargada, y el contenido tiene un fundamento desigual.\n\n## Para quién es\n\nElige Insight Timer si quieres la mayor variedad posible, un gran valor y la libertad de practicar gratis — y te resulta cómodo hacer parte de la curación tú mismo. Si prefieres que te lleven por un camino claro y verificado, Headspace es la opción más estructurada.",
-      "productType": "App de meditación"
+      "content": "## Dónde destaca\n\nInsight Timer tiene una biblioteca de meditación muy amplia —la más grande, según la propia empresa— y es la única app de esta comparativa sobre la que de verdad puedes construir una práctica sin pagar. Funciona menos como un curso comisariado y más como un YouTube de la meditación: 360.000 pistas gratuitas, miles de profesores, eventos en directo cada hora y una comunidad activa. En alcance — y en un plan gratuito que es una oferta real y no un cebo — nada de aquí se le acerca.\n\n## ¿Cuáles son las desventajas de Insight Timer?\n\nLa amplitud tiene un coste. Como la biblioteca es de origen colaborativo, la calidad varía de una sesión a otra, y hay mucho menos acompañamiento estructurado que el que te da un curso de Headspace — en gran parte trazas tu propio camino. La app está tan repleta de funciones que llega a sentirse recargada, y el contenido tiene un fundamento desigual.\n\n## ¿Quién debería comprar Insight Timer?\n\nElige Insight Timer si quieres la mayor variedad posible, un gran valor y la libertad de practicar gratis — y te resulta cómodo hacer parte de la curación tú mismo. Si prefieres que te lleven por un camino claro y verificado, Headspace es la opción más estructurada.\n\n---\n\n## Lecturas de fondo\n\nLa ciencia de lo que la meditación hace realmente a nivel del sistema nervioso.\n\n- [Concentración fisiológica: el estado de flow, cableado en el cerebro](/articles/physiological-concentration-flow-state-hardwired) — qué neuroquímica requiere realmente el estado de flow\n- [Ondas cerebrales alfa: calma, creatividad y flow](/articles/neural-bridge-alpha-flow-gateway) — qué hace el ritmo alfa, y qué pueden y no pueden cambiar los cascos, las apps y la música de ondas alfa\n- [Sincronización neural a través de la meditación](/articles/neural-entrainment-meditation-2) — por qué la práctica estructurada reconfigura los estados corticales de base\n",
+      "faq": [
+        {
+          "q": "¿Insight Timer es gratis?",
+          "a": "En gran parte, sí. Insight Timer tiene un plan gratuito muy amplio sobre el que de verdad puedes construir una práctica real sin pagar. Member Plus cuesta 60 US$ al año con una prueba gratuita de 7 días, el nivel de pago más barato de su comparativa, y hay eventos en directo cada hora y funciones de comunidad."
+        },
+        {
+          "q": "¿Vale la pena pagar por Insight Timer?",
+          "a": "Para mucha gente el plan gratuito basta, y ese es el mayor punto fuerte de la app. A 60 US$ al año, Member Plus es el nivel de pago más barato entre las principales apps de meditación, así que mejorar el plan conlleva poco riesgo si quieres más. El inconveniente es la calidad variable de las sesiones, no el precio."
+        },
+        {
+          "q": "Insight Timer vs Headspace: ¿cuál es mejor?",
+          "a": "Insight Timer gana en amplitud y valor: tiene una biblioteca de meditación muy amplia (la más grande, según la propia empresa) y un plan gratuito utilizable. Headspace gana en estructura, con una guía más clara basada en cursos para principiantes. El contenido de origen colaborativo de Insight Timer puede sentirse recargado y desigual."
+        }
+      ]
     },
     "waking-up": {
       "verdict": "Una app centrada en la enseñanza y con mucha filosofía — instrucción seria — pero la más cara, y no para principiantes.",
       "summary": "Waking Up, creada por Sam Harris, es una app centrada en la enseñanza y con mucha filosofía. Trata la meditación como una vía para examinar la consciencia, combina la práctica con filosofía y conversaciones con pensadores destacados, y se enseña con un rigor inusual. También es la más cara, y no está hecha para principiantes.",
-      "description": "Reseña de ONDA de Waking Up — la app de Sam Harris: centrada en la enseñanza y con mucha filosofía. Puntuado por enseñanza, biblioteca, evidencia y precio.",
+      "description": "Reseña de Waking Up, la app de Sam Harris: centrada en la enseñanza y con mucha filosofía. Puntuada por enseñanza, biblioteca, evidencia y precio.",
       "bestFor": "Lo mejor para la profundidad — instrucción seria y filosofía, para practicantes más allá de lo básico.",
       "testNote": "Evaluación basada en evidencia — a partir de información pública, datos de las tiendas de apps y reseñas independientes de 2026. No se basa en una prueba prolongada en persona por parte de ONDA.",
+      "productType": "App de meditación",
       "pros": [
         "Centrada en la enseñanza, con Sam Harris y profesores invitados de renombre",
         "Combina la práctica con filosofía y conversaciones con pensadores destacados",
@@ -958,19 +1000,37 @@
         "teaching": "Centrada en la enseñanza — Sam Harris más profesores invitados de renombre, con un enfoque riguroso y muy filosófico.",
         "personalization": "Un curso estructurado de 28 días para empezar, pero más ligera en personalización adaptativa y continua.",
         "app-experience": "Una app limpia y serena que no se interpone en la práctica.",
-        "free-tier": "Una prueba de 30 días, más una oferta permanente de acceso gratuito para cualquiera que de verdad no pueda permitírsela.",
-        "value": "La más cara de aquí, en torno a 130 USD al año — aunque la política de becas lo suaviza.",
+        "free-tier": "Una prueba gratuita de 7 días, más una beca permanente: una membresía gratuita para cualquiera que no pueda permitírsela.",
+        "value": "La más cara de aquí, en torno a 130 USD al año en la web (149,99 USD en la tienda de apps) — aunque la política de becas lo suaviza.",
         "evidence": "Un enfoque laico que se apoya en la investigación sobre meditación en general y en linajes de enseñanza nombrados; no encontramos ningún ensayo de la propia app Waking Up, así que puntúa como otras apps sin ensayos propios."
       },
-      "content": "## En qué destaca\n\nWaking Up, creada por el neurocientífico y filósofo Sam Harris, es la app más seria intelectualmente de esta comparativa. Trata la meditación no como una herramienta de relajación sino como una vía para examinar la naturaleza de la consciencia, y combina la práctica con un cuerpo de teoría genuino — lecciones de filosofía y psicología, y conversaciones con pensadores destacados. La enseñanza, de Harris y de un conjunto de instructores invitados conocidos, es rigurosa y muy filosófica.\n\n## En qué se queda corta\n\nEsa profundidad es estrecha por diseño. La biblioteca está comisariada y es comparativamente pequeña, no hay contenido de sueño, y el curso introductorio entra rápido en ideas avanzadas — un principiante absoluto puede sentirse desbordado. También es la opción más cara, aunque una oferta permanente de acceso gratuito para cualquiera que de verdad no pueda permitírsela le quita filo al precio.\n\n## Para quién es\n\nElige Waking Up si ya tienes una práctica básica y quieres profundizar — en una instrucción rigurosa y en la filosofía que hay detrás — y el precio (o la beca) te funciona. Si empiezas desde cero, comienza con Headspace y pasa a Waking Up una vez que la práctica esté asentada.",
-      "productType": "App de meditación"
+      "content": "## Dónde destaca\n\nWaking Up, creada por el neurocientífico y filósofo Sam Harris, es una app centrada en la enseñanza y con mucha filosofía. Trata la meditación no como una herramienta de relajación sino como una vía para examinar la naturaleza de la consciencia, y combina la práctica con un cuerpo de teoría genuino — lecciones de filosofía y psicología, y conversaciones con pensadores destacados. La enseñanza, de Harris y de un conjunto de instructores invitados conocidos, es rigurosa y muy filosófica.\n\n## ¿Cuáles son las desventajas de Waking Up?\n\nEsa profundidad es estrecha por diseño. La biblioteca está comisariada y es comparativamente pequeña, no hay contenido de sueño, y el curso introductorio entra rápido en ideas avanzadas — un principiante absoluto puede sentirse desbordado. También es la opción más cara, aunque una oferta permanente de acceso gratuito para cualquiera que de verdad no pueda permitírsela le quita filo al precio.\n\n## ¿Quién debería comprar Waking Up?\n\nElige Waking Up si ya tienes una práctica básica y quieres profundizar — en una instrucción rigurosa y en la filosofía que hay detrás — y el precio (o la beca) te funciona. Si empiezas desde cero, comienza con Headspace y pasa a Waking Up una vez que la práctica esté asentada.\n\n---\n\n## Lecturas de fondo\n\nLa ciencia de lo que la meditación hace realmente a nivel del sistema nervioso.\n\n- [Sincronización rítmica y frecuencias del sistema](/articles/rhythmic-entrainment-system-frequencies) — por qué el audio pautado y los protocolos de respiración se potencian con la práctica\n- [Concentración fisiológica: el estado de flow, cableado en el cerebro](/articles/physiological-concentration-flow-state-hardwired) — qué neuroquímica requiere realmente el estado de flow\n- [Ondas cerebrales alfa: calma, creatividad y flow](/articles/neural-bridge-alpha-flow-gateway) — qué hace el ritmo alfa, y qué pueden y no pueden cambiar los cascos, las apps y la música de ondas alfa\n",
+      "faq": [
+        {
+          "q": "¿Vale la pena Waking Up?",
+          "a": "Waking Up vale la pena para practicantes más allá de lo básico que buscan profundidad. Está centrada en la enseñanza, con profesores invitados de renombre, combina la práctica con filosofía y conversaciones, y es laica y rigurosa. Es la app más cara de las analizadas, no está hecha para principiantes y no tiene contenido de sueño."
+        },
+        {
+          "q": "¿Cuánto cuesta Waking Up?",
+          "a": "Waking Up cuesta 129,99 $ al año en su web, o 149,99 $ al año y 19,99 $ al mes en las tiendas de apps, tras una prueba gratuita de 7 días — la app de meditación más cara de la reseña. Su beca da una membresía gratuita a cualquiera que no pueda permitírsela."
+        },
+        {
+          "q": "¿Cuáles son las desventajas de Waking Up?",
+          "a": "Waking Up es la app más cara de las analizadas y no está hecha para principiantes absolutos. Su biblioteca comisariada es más pequeña, no tiene contenido de sueño y es más ligera en personalización adaptativa que otras grandes apps de meditación."
+        },
+        {
+          "q": "¿Para quién es mejor Waking Up?",
+          "a": "Waking Up es mejor para practicantes más allá de lo básico que quieren instrucción seria y filosofía. Encaja con quienes valoran una enseñanza laica e intelectualmente rigurosa. Los principiantes absolutos o quienes busquen contenido de sueño deberían mirar en otra parte."
+        }
+      ]
     },
     "balance": {
       "verdict": "Una app de meditación que se adapta a ti — un plan genuinamente personalizado, con un año entero gratis para probarlo y algunas asperezas.",
       "summary": "Balance es la opción de la personalización. Construye un plan adaptativo en torno a tu nivel, tus objetivos y tu feedback en lugar de entregarte una biblioteca fija, y da un año entero gratis para probarlo. La adaptación no es impecable, y la app de Android ha recibido quejas de fiabilidad.",
-      "description": "Reseña de ONDA de Balance — la app de meditación que construye un plan adaptativo y personalizado. Puntuado por personalización, biblioteca, plan gratuito y precio.",
+      "description": "Reseña de Balance: la app de meditación que construye un plan adaptativo y personalizado. Puntuada por personalización, biblioteca, plan gratuito y precio.",
       "bestFor": "Lo mejor para un plan de meditación que se adapta a tu nivel y tus objetivos.",
       "testNote": "Evaluación basada en evidencia — a partir de información pública, datos de las tiendas de apps y reseñas independientes de 2026. No se basa en una prueba prolongada en persona por parte de ONDA.",
+      "productType": "App de meditación",
       "pros": [
         "Planes genuinamente adaptativos y personalizados",
         "Una prueba gratuita completa de 12 meses",
@@ -992,7 +1052,25 @@
         "value": "En torno a 70 USD al año tras la prueba — justo para un plan personalizado.",
         "evidence": "Algo de fundamento, pero la evidencia no es el foco."
       },
-      "content": "## En qué destaca\n\nBalance es la opción de la personalización de este grupo. En lugar de soltarte en un catálogo enorme, construye un plan adaptativo — ajustado a tu nivel de experiencia, a la frecuencia con que practicas y al feedback que das tras las sesiones — y se ajusta sobre la marcha. Tiene además la rampa de entrada más generosa de aquí: una prueba gratuita completa de 12 meses, así que puedes llevar una práctica real durante un año antes de decidir pagar.\n\n## En qué se queda corta\n\nLa adaptación es buena, no perfecta — las reseñas independientes señalan que no siempre acierta con el nivel del curso. El problema mayor es la fiabilidad en Android, donde los usuarios han informado de audio que se corta a mitad de sesión y de fallos con la suscripción. Y la biblioteca, aunque bien construida, es más pequeña que los extensos catálogos de Calm o Insight Timer.\n\n## Para quién es\n\nElige Balance si quieres un plan que te encuentre donde estás y se adapte con el tiempo, y te atrae la prueba gratuita de un año. Si quieres la biblioteca más grande, o usas Android y la fiabilidad te preocupa, Insight Timer o Headspace son opciones más seguras."
+      "content": "## Dónde destaca\n\nBalance es la opción de la personalización de este grupo. En lugar de soltarte en un catálogo enorme, construye un plan adaptativo — ajustado a tu nivel de experiencia, a la frecuencia con que practicas y al feedback que das tras las sesiones — y se ajusta sobre la marcha. Tiene además la rampa de entrada más generosa de aquí: una prueba gratuita completa de 12 meses, así que puedes llevar una práctica real durante un año antes de decidir pagar.\n\n## ¿Cuáles son las desventajas de Balance?\n\nLa adaptación es buena, no perfecta — las reseñas independientes señalan que no siempre acierta con el nivel del curso. El problema mayor es la fiabilidad en Android, donde los usuarios han informado de audio que se corta a mitad de sesión y de fallos con la suscripción. Y la biblioteca, aunque bien construida, es más pequeña que los extensos catálogos de Calm o Insight Timer.\n\n## ¿Quién debería comprar Balance?\n\nElige Balance si quieres un plan que te encuentre donde estás y se adapte con el tiempo, y te atrae la prueba gratuita de un año. Si quieres la biblioteca más grande, o usas Android y la fiabilidad te preocupa, Insight Timer o Headspace son opciones más seguras.\n\n---\n\n## Lecturas de fondo\n\nLa ciencia de lo que la meditación hace realmente a nivel del sistema nervioso.\n\n- [Sincronización neural a través de la meditación](/articles/neural-entrainment-meditation-2) — por qué la práctica estructurada reconfigura los estados corticales de base\n- [Ondas cerebrales alfa: calma, creatividad y flow](/articles/neural-bridge-alpha-flow-gateway) — qué hace el ritmo alfa, y qué pueden y no pueden cambiar los cascos, las apps y la música de ondas alfa\n- [Sincronización rítmica y frecuencias del sistema](/articles/rhythmic-entrainment-system-frequencies) — por qué el audio pautado y los protocolos de respiración se potencian con la práctica\n",
+      "faq": [
+        {
+          "q": "¿Vale la pena Balance?",
+          "a": "Sí, si quieres un plan de meditación que se adapte a ti. Balance construye un plan personalizado en torno a tu nivel, tus objetivos y tu feedback, y ofrece una prueba gratuita completa de 12 meses. La adaptación no es impecable, la biblioteca es más pequeña que la de Calm o Insight Timer, y la app de Android ha recibido quejas de fiabilidad."
+        },
+        {
+          "q": "¿Cuánto cuesta Balance?",
+          "a": "Balance cuesta unos 70 $ al año, que se cobran tras una prueba gratuita de 12 meses. Así, el primer año completo es gratis para probar el plan adaptativo y personalizado antes de comprometerte, y el precio tras la prueba es razonable para una suscripción de meditación."
+        },
+        {
+          "q": "¿Cuáles son las desventajas de Balance?",
+          "a": "La personalización de Balance no siempre acierta con el nivel, y su app de Android ha recibido quejas de fiabilidad. Su biblioteca es más pequeña que la de Calm o Insight Timer, y se necesita una suscripción cuando termina el año de prueba."
+        },
+        {
+          "q": "Balance vs Calm: ¿cuál es mejor?",
+          "a": "Balance es mejor para un plan de meditación personalizado y en formato de curso; Calm es mejor para contenido de sueño y relajación. Balance se adapta a tu nivel y tus objetivos y ofrece un año gratis, mientras que Calm ofrece una biblioteca más grande construida en torno a las Sleep Stories y los paisajes sonoros."
+        }
+      ]
     },
     "healthy-minds-program": {
       "verdict": "La app con mayor fundamento científico de aquí — completamente gratuita, sin publicidad, creada por un neurocientífico y validada en docenas de estudios.",
@@ -4768,7 +4846,7 @@
       "content": "## Cómo las clasificamos\n\nCada app se puntuó con la [metodología de reseñas](/reviews/methodology) publicada por ONDA: siete criterios ponderados, con la biblioteca de contenido y la calidad de la enseñanza con el mayor peso porque son aquello sobre lo que se construye una práctica duradera. La puntuación global es la media ponderada.\n\nCada app se evaluó a partir de información pública, datos de las tiendas de apps y reseñas independientes de 2026 en lugar de una prueba prolongada en persona, así que toma las puntuaciones como un punto de partida basado en evidencia.\n\n## La versión corta\n\nLas apps están apretadas, y la respuesta correcta depende de dónde estás — y de tu presupuesto. Insight Timer gana por alcance y por ser de verdad gratuita. Las apps gratuitas y con base científica pegan fuerte: el Healthy Minds Program queda segundo en conjunto. Headspace es el arranque más limpio para un principiante, Calm domina el sueño, Smiling Mind encaja con las familias, Balance se adapta a ti, y Waking Up y Happier Meditation van más a fondo en la enseñanza. Medito es la opción de código abierto, gratuita para siempre, y Buddhify la de pago único. Empieza por la fila que coincide con tu etapa y tu bolsillo, no por el número más alto.",
       "picks": {
         "insight-timer": {
-          "takeaway": "Una biblioteca muy grande (la más grande, según la propia Insight Timer) y el único plan gratuito de verdad utilizable — gran alcance y muy buen valor."
+          "takeaway": "Una biblioteca muy grande (la más grande, según la propia Insight Timer) y un plan gratuito de verdad utilizable — gran alcance y muy buen valor."
         },
         "healthy-minds-program": {
           "award": "Mejor con base científica",
