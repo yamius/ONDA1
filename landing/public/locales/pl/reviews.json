@@ -7897,10 +7897,10 @@
     },
     "sun-home-equinox-vs-clearlight-sanctuary-2": {
       "title": "Sun Home Equinox vs Clearlight Sanctuary 2: porównanie",
-      "description": "Sun Home Equinox vs Clearlight Sanctuary 2: tani debiutant ze zintegrowanym czerwonym światłem kontra model premium Jacuzzi z dłuższą gwarancją.",
-      "intro": "Obie to kabiny premium na podczerwień pełnego spektrum reklamowane jako niskoemisyjne (niskie EMF) — decydują więc ciepło, dodatki, cena i marka za produktem. Sun Home Equinox to korzystny cenowo debiutant, przewidziany do ~165°F (dane producenta), ze zintegrowanym czerwonym światłem i chromoterapią. Clearlight Sanctuary 2 to uznany model premium ze wsparciem Jacuzzi i mocną gwarancją. Funkcje debiutanta kontra rodowód premium.",
-      "verdict": "Stosunek jakości do ceny i funkcje kontra rodowód i gwarancja. Sun Home Equinox wygrywa mocą grzania i dodatkami w zestawie (zintegrowane czerwone światło, chromoterapia, dźwięk). Clearlight Sanctuary 2 wygrywa renomą wykonania i dożywotnią gwarancją ze wsparciem Jacuzzi, ale teraz kosztuje więcej (7 299 $ wobec ~6 000 $). Obie reklamują niskie EMF i żadna nie publikuje niezależnej wartości, którą moglibyśmy porównać. Wybierz Sun Home dla pakietu funkcji i ciepła; Clearlight dla gwarancji i długiej historii marki.",
-      "bestForA": "Wybierz Sun Home Equinox, jeśli chcesz kabiny przewidzianej do ~165°F (dane producenta), ze zintegrowanym czerwonym światłem i chromoterapią, w korzystnym cenowo pakiecie od silnej nowszej marki.",
+      "description": "Sun Home Equinox vs Clearlight Sanctuary 2: korzystny cenowo debiutant z dodatkami w zestawie kontra model premium Jacuzzi z dłuższą gwarancją.",
+      "intro": "Obie to kabiny premium na podczerwień pełnego spektrum reklamowane jako niskoemisyjne (niskie EMF) — decydują więc ciepło, dodatki, cena i marka za produktem. Sun Home Equinox to korzystny cenowo debiutant, przewidziany do ~165°F (dane producenta), z chromoterapią i dźwiękiem. Clearlight Sanctuary 2 to uznany model premium ze wsparciem Jacuzzi i mocną gwarancją. Funkcje debiutanta kontra rodowód premium.",
+      "verdict": "Stosunek jakości do ceny i funkcje kontra rodowód i gwarancja. Sun Home Equinox wygrywa mocą grzania i dodatkami w zestawie (chromoterapia, dźwięk). Clearlight Sanctuary 2 wygrywa renomą wykonania i dożywotnią gwarancją ze wsparciem Jacuzzi, ale kosztuje więcej (7 299 $ wobec 6 799 $ w cenie katalogowej, 6 099 $ w promocji). Obie reklamują niskie EMF i żadna nie publikuje niezależnej wartości, którą moglibyśmy porównać. Wybierz Sun Home dla pakietu funkcji i ciepła; Clearlight dla gwarancji i długiej historii marki.",
+      "bestForA": "Wybierz Sun Home Equinox, jeśli chcesz kabiny przewidzianej do ~165°F (dane producenta), z chromoterapią i dźwiękiem, w korzystnym cenowo pakiecie od silnej nowszej marki.",
       "bestForB": "Wybierz Clearlight Sanctuary 2, jeśli najważniejsze są dla ciebie zakres gwarancji, historia marki i wsparcie Jacuzzi, a wyższa cena (7 299 $ w drewnie lipowym) jest do zaakceptowania.",
       "axes": [
         {
@@ -7908,8 +7908,8 @@
           "note": "Sun Home Equinox jest przewidziana do ~165°F (dane producenta). Clearlight zwykle osiąga maksymalnie około 150–157°F."
         },
         {
-          "name": "Zintegrowane czerwone światło / dodatki",
-          "note": "Sun Home ma w standardzie zintegrowane panele czerwonego światła, chromoterapię i dźwięk. Clearlight pozostaje przy prostszym, bardziej tradycyjnym pakiecie."
+          "name": "Dodatki w zestawie",
+          "note": "Sun Home ma w standardzie chromoterapię i dźwięk (terapia czerwonym światłem jest podana jako nieuwzględniona). Clearlight pozostaje przy prostszym, bardziej tradycyjnym pakiecie."
         },
         {
           "name": "Gwarancja i marka",
@@ -7921,7 +7921,7 @@
         },
         {
           "name": "Cena",
-          "note": "Sun Home Equinox: od ~6 000 $ (2 osoby). Clearlight Sanctuary 2: 7 299 $ drewno lipowe / 7 699 $ mahoń (oficjalny sklep, 2026-10-01). Sun Home jest tańsza o około 1 300 $."
+          "note": "Sun Home Equinox dla 2 osób: 6 799 $ w cenie katalogowej, 6 099 $ w promocji (oficjalny sklep, 2026-10-18). Clearlight Sanctuary 2: 7 299 $ drewno lipowe / 7 699 $ mahoń (oficjalny sklep, 2026-10-01). Sun Home jest tańsza o około 500–1 200 $."
         },
         {
           "name": "Jakość pełnego spektrum",
@@ -7931,18 +7931,18 @@
       "faq": [
         {
           "q": "Sun Home Equinox czy Clearlight Sanctuary 2?",
-          "a": "Obie to kabiny premium pełnego spektrum reklamowane jako niskoemisyjne. Sun Home Equinox wygrywa ciepłem i dodatkami w zestawie (zintegrowane czerwone światło, chromoterapia); Clearlight Sanctuary 2 wygrywa gwarancją, historią marki i wsparciem Jacuzzi, przy wyższej cenie (7 299 $ wobec ~6 000 $). Wybierz funkcje i ciepło albo rodowód i gwarancję."
+          "a": "Obie to kabiny premium pełnego spektrum reklamowane jako niskoemisyjne. Sun Home Equinox wygrywa ciepłem i dodatkami w zestawie (chromoterapia, dźwięk); Clearlight Sanctuary 2 wygrywa gwarancją, historią marki i wsparciem Jacuzzi, przy wyższej cenie (7 299 $ wobec 6 799 $ w cenie katalogowej). Wybierz funkcje i ciepło albo rodowód i gwarancję."
         },
         {
           "q": "Która grzeje mocniej?",
-          "a": "Sun Home Equinox — około 165°F wobec mniej więcej 150–157°F w Clearlight Sanctuary 2. Jeśli chcesz najintensywniejszego ciepła, prowadzi Sun Home."
+          "a": "Sun Home Equinox — około 165°F (dane producenta) wobec mniej więcej 150–157°F w Clearlight Sanctuary 2. Jeśli chcesz najintensywniejszego ciepła, prowadzi Sun Home."
         },
         {
           "q": "Czy obie mają niskie EMF?",
           "a": "Obie są reklamowane jako niskoemisyjne. Sun Home powołuje się na weryfikację przez strony trzecie, ale nie podaje odległości pomiaru; wartości Clearlight to deklaracje producenta. Żadna nie ma niezależnej wartości, którą moglibyśmy porównać, więc traktuj obie jako deklaracje producentów i poproś o aktualny raport z badań, jeśli EMF jest dla ciebie decydujące."
         }
       ],
-      "content": "## W skrócie\n\n[Sun Home Equinox](/reviews/sun-home-equinox) to korzystny cenowo debiutant, przewidziany do ~165°F (dane producenta), ze zintegrowanym czerwonym światłem; [Clearlight Sanctuary 2](/reviews/clearlight-sanctuary-2) to model premium ze wsparciem Jacuzzi i dłuższą gwarancją, w wyższej cenie (7 299 $ w drewnie lipowym).\n\n## Kiedy Sun Home Equinox to dobry wybór?\n\nChcesz najgorętszej kabiny, zintegrowanego czerwonego światła i chromoterapii oraz korzystnego cenowo pakietu.\n\n## Kiedy Clearlight Sanctuary 2 to dobry wybór?\n\nNajważniejsze są zakres gwarancji, historia marki i wsparcie Jacuzzi.\n\n## Warto też porównać\n\nW zestawieniu z liderem kategorii zobacz [Sun Home Equinox vs Sunlighten mPulse](/reviews/vs/sun-home-equinox-vs-sunlighten-mpulse) i [Sunlighten mPulse vs Clearlight Sanctuary 2](/reviews/vs/sunlighten-mpulse-vs-clearlight-sanctuary-2). Całe zestawienie: [najlepsze sauny na podczerwień](/reviews/infrared-sauna)."
+      "content": "## W skrócie\n\n[Sun Home Equinox](/reviews/sun-home-equinox) to korzystny cenowo debiutant, przewidziany do ~165°F (dane producenta), z chromoterapią i dźwiękiem; [Clearlight Sanctuary 2](/reviews/clearlight-sanctuary-2) to model premium ze wsparciem Jacuzzi i dłuższą gwarancją, w wyższej cenie (7 299 $ w drewnie lipowym).\n\n## Kiedy Sun Home Equinox to dobry wybór?\n\nChcesz gorętszej kabiny, chromoterapii i dźwięku oraz korzystnego cenowo pakietu.\n\n## Kiedy Clearlight Sanctuary 2 to dobry wybór?\n\nNajważniejsze są zakres gwarancji, historia marki i wsparcie Jacuzzi.\n\n## Warto też porównać\n\nW zestawieniu z liderem kategorii zobacz [Sun Home Equinox vs Sunlighten mPulse](/reviews/vs/sun-home-equinox-vs-sunlighten-mpulse) i [Sunlighten mPulse vs Clearlight Sanctuary 2](/reviews/vs/sunlighten-mpulse-vs-clearlight-sanctuary-2). Całe zestawienie: [najlepsze sauny na podczerwień](/reviews/infrared-sauna)."
     },
     "eight-sleep-pod-3-vs-eight-sleep-pod-cover-pro": {
       "title": "Eight Sleep Pod 3 vs Pod Cover Pro: porównanie (2026)",

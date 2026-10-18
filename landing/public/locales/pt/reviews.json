@@ -216,13 +216,13 @@
         "data-access": "Existe uma API para desenvolvedores, mas, como no Oura, o fluxo bruto batimento a batimento continua em grande parte fechado.",
         "wearability": "Sem tela e fácil de esquecer; bateria de ~14 dias, e o módulo deslizante carrega sem precisar tirar.",
         "app-ux": "Strain, Recovery e um coach de IA recompensam usuários que gostam de dados, mas podem sobrecarregar todos os outros.",
-        "value": "Só por assinatura — a partir de 199 USD (One) / 239 USD (Peak) / 359 USD (Life) por ano, para sempre, sem nenhum dispositivo que você chegue a possuir."
+        "value": "Só por assinatura — a partir de $199 (One) / $239 (Peak) / $359 (Life) por ano, para sempre, sem nenhum dispositivo que você chegue a possuir."
       },
-      "content": "## Onde ele se destaca\n\nO Whoop 5.0 é construído em torno de uma ideia: recuperação. Em vez de uma medição pontual pela manhã, ele monta seu sinal diário de recuperação a partir da [HRV](/glossary/heart-rate-variability) medida durante o sono; a Whoop não publica exatamente como esse valor noturno é ponderado. A pulseira sem tela é fácil de esquecer no pulso, a geração atual levou a bateria a cerca de duas semanas, e o módulo de bateria deslizante faz com que ela nunca precise sair do pulso para carregar.\n\n**Ressalva sobre a validação.** Uma pulseira de pulso ainda fica atrás de um anel no dedo ou de uma cinta peitoral de ECG em precisão batimento a batimento, e suas fases do sono são estimativas. Leia a *tendência* que a Whoop informa a cada manhã, e não um valor isolado.\n\n## Quais são as desvantagens do Whoop 5.0?\n\nO Whoop é vendido como assinatura, não como produto. Não há hardware para ter — pare de pagar e a pulseira para de funcionar — e a assinatura — 199 USD por ano no WHOOP One, 239 USD no Peak, 359 USD no Life — é um custo contínuo, não uma compra única. O app é poderoso, mas denso: Strain, Recovery e o coach de IA recompensam quem quer estudar seus dados e podem sobrecarregar quem não quer. O acesso aos dados brutos, como no Oura, é limitado.\n\n## Quem deve comprar o Whoop 5.0?\n\nEscolha o Whoop 5.0 se você é atleta ou treina a sério, toma decisões com base em um score diário de recuperação e quer [HRV](/glossary/heart-rate-variability) noturna contínua sem uma tela no pulso. Se você não gosta de assinaturas perpétuas, ou quer um dispositivo que também mostre as horas, as alternativas vão servir melhor.\n\n---\n\n## Leitura complementar\n\nA ciência por trás de por que a HRV é o sinal que vale a pena acompanhar — e como o corpo a produz.\n\n- [A HRV prevê o tempo de reação e o foco?](/articles/nervous-system-ping-latency) — o que a HRV em repouso diz e não diz sobre atenção e autocontrole\n- [A HRV como buffer tolerante a falhas](/articles/fault-tolerant-human-hrv-buffer) — por que uma faixa ampla de HRV é o que você está realmente treinando\n- [O barorreflexo e o desvio de 0,1 Hz](/articles/baroreflex-01hz-shift) — a assinatura da respiração em frequência de ressonância no seu traçado de HRV\n",
+      "content": "## Onde ele se destaca\n\nO Whoop 5.0 é construído em torno de uma ideia: recuperação. Em vez de uma medição pontual pela manhã, ele monta seu sinal diário de recuperação a partir da [HRV](/glossary/heart-rate-variability) medida durante o sono; a Whoop não publica exatamente como esse valor noturno é ponderado. A pulseira sem tela é fácil de esquecer no pulso, a geração atual levou a bateria a cerca de duas semanas, e o módulo de bateria deslizante faz com que ela nunca precise sair do pulso para carregar.\n\n**Ressalva sobre a validação.** Uma pulseira de pulso ainda fica atrás de um anel no dedo ou de uma cinta peitoral de ECG em precisão batimento a batimento, e suas fases do sono são estimativas. Leia a *tendência* que a Whoop informa a cada manhã, e não um valor isolado.\n\n## Quais são as desvantagens do Whoop 5.0?\n\nO Whoop é vendido como assinatura, não como produto. Não há hardware para ter — pare de pagar e a pulseira para de funcionar — e a assinatura — $199 por ano no WHOOP One, $239 no Peak, $359 no Life — é um custo contínuo, não uma compra única. O app é poderoso, mas denso: Strain, Recovery e o coach de IA recompensam quem quer estudar seus dados e podem sobrecarregar quem não quer. O acesso aos dados brutos, como no Oura, é limitado.\n\n## Quem deve comprar o Whoop 5.0?\n\nEscolha o Whoop 5.0 se você é atleta ou treina a sério, toma decisões com base em um score diário de recuperação e quer [HRV](/glossary/heart-rate-variability) noturna contínua sem uma tela no pulso. Se você não gosta de assinaturas perpétuas, ou quer um dispositivo que também mostre as horas, as alternativas vão servir melhor.\n\n---\n\n## Leitura complementar\n\nA ciência por trás de por que a HRV é o sinal que vale a pena acompanhar — e como o corpo a produz.\n\n- [A HRV prevê o tempo de reação e o foco?](/articles/nervous-system-ping-latency) — o que a HRV em repouso diz e não diz sobre atenção e autocontrole\n- [A HRV como buffer tolerante a falhas](/articles/fault-tolerant-human-hrv-buffer) — por que uma faixa ampla de HRV é o que você está realmente treinando\n- [O barorreflexo e o desvio de 0,1 Hz](/articles/baroreflex-01hz-shift) — a assinatura da respiração em frequência de ressonância no seu traçado de HRV\n",
       "faq": [
         {
           "q": "O Whoop 5.0 exige assinatura?",
-          "a": "Sim. O Whoop é só por assinatura: US$ 199 por ano no WHOOP One, US$ 239 no Peak ou US$ 359 no Life, cada um incluindo a pulseira — não há compra separada de hardware. Pare de pagar e a pulseira para de funcionar."
+          "a": "Sim. O Whoop é só por assinatura: $199 por ano no WHOOP One, $239 no Peak ou $359 no Life, cada um incluindo a pulseira — não há compra separada de hardware. Pare de pagar e a pulseira para de funcionar."
         },
         {
           "q": "O Whoop 5.0 é preciso para HRV?",
@@ -1418,8 +1418,8 @@
     },
     "hypervolt-go-2": {
       "verdict": "A melhor mini de viagem de marca premium — o ecossistema Hypervolt em formato de bolso. A força de bloqueio menor é o preço da portabilidade.",
-      "summary": "A Hypervolt Go 2 é a mini de viagem premium — formato de bolso com 30 lbs de força de bloqueio, 12 mm de amplitude, motor brushless, 2 ponteiras, integração com o app da Hyperice, US$ 129. A força de bloqueio é bem menor que a da Hypervolt 2 Pro (60 lbs); em troca, você ganha portabilidade e o ecossistema de uma marca premium a um preço intermediário — US$ 30 acima da econômica Bob and Brad Q2 Mini (US$ 99). Ideal para quem quer a qualidade Hyperice em formato de viagem.",
-      "description": "Análise ONDA: Hypervolt Go 2 — pistola de massagem de viagem, 30 lbs de força de bloqueio, 12 mm de amplitude e ecossistema Hyperice por US$ 129.",
+      "summary": "A Hypervolt Go 2 é a mini de viagem premium — formato de bolso com 30 lbs de força de bloqueio, 12 mm de amplitude, motor brushless, 2 ponteiras, integração com o app da Hyperice, $129. A força de bloqueio é bem menor que a da Hypervolt 2 Pro (60 lbs); em troca, você ganha portabilidade e o ecossistema de uma marca premium a um preço intermediário — $30 acima da econômica Bob and Brad Q2 Mini ($99). Ideal para quem quer a qualidade Hyperice em formato de viagem.",
+      "description": "Análise ONDA: Hypervolt Go 2 — pistola de massagem de viagem, 30 lbs de força de bloqueio, 12 mm de amplitude e ecossistema Hyperice por $129.",
       "bestFor": "Ideal para quem quer uma mini de viagem de marca premium com o app da Hyperice — e aceita a força de bloqueio menor como troca pela portabilidade.",
       "testNote": "Avaliação baseada em evidências — pontuado a partir da documentação de produto da Hyperice e de análises de minis de viagem de 2026. Não testado pessoalmente pela ONDA.",
       "productType": "Pistola de massagem premium de viagem / mini",
@@ -1432,7 +1432,7 @@
       "cons": [
         "Metade da força de bloqueio da Hypervolt 2 Pro (30 lbs vs 60)",
         "Só 2 ponteiras incluídas",
-        "US$ 30 a mais que a econômica Bob and Brad Q2 Mini",
+        "$30 a mais que a econômica Bob and Brad Q2 Mini",
         "Garantia de 1 ano"
       ],
       "scoreNotes": {
@@ -1441,13 +1441,13 @@
         "battery-noise": "Motor brushless a 50 dB. ~2,5 horas por carga. A mini de viagem mais silenciosa da categoria.",
         "app-smart-features": "Integração com o app da Hyperice — o mesmo ecossistema da Hypervolt 2 Pro. Recursos inteligentes em formato de viagem.",
         "ergonomics-portability": "Melhor portabilidade da categoria premium. ~1,5 lbs, formato de bolso, fácil de levar em viagens. Pegada única com uma mão, ideal para o tamanho.",
-        "value": "US$ 129 — mini de viagem de marca premium a um preço intermediário. Mais cara que a econômica Bob and Brad Q2 Mini (US$ 99), mas com o ecossistema Hyperice."
+        "value": "$129 — mini de viagem de marca premium a um preço intermediário. Mais cara que a econômica Bob and Brad Q2 Mini ($99), mas com o ecossistema Hyperice."
       },
       "content": "## Onde ela se destaca\n\nA Hypervolt Go 2 é a mini de viagem premium — a marca e o ecossistema de apps da Hyperice em formato de bolso. Melhor portabilidade da categoria premium, com um motor brushless silencioso.\n\n## Quais são as desvantagens da Hyperice Hypervolt Go 2?\n\nForça de bloqueio e número de ponteiras. 30 lbs de força de bloqueio é metade da especificação da Hypervolt 2 Pro; só 2 ponteiras incluídas. Para quem quer percussão premium completa, Hypervolt 2 Pro ou Theragun Elite.\n\n## Quem deve comprar a Hyperice Hypervolt Go 2?\n\nEscolha a Hypervolt Go 2 para uma mini de viagem de marca premium. Para uma Hyperice premium de tamanho completo, a Hypervolt 2 Pro. Para uma mini de viagem econômica, a Bob and Brad Q2 Mini.\n\n---\n\n## Leitura complementar\n\n- [Biogênese mitocondrial](/articles/mitochondrial-biogenesis-cellular-power-grid)\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n",
       "faq": [
         {
           "q": "Quanto custa a Hypervolt Go 2?",
-          "a": "A Hypervolt Go 2 custa US$ 129 com duas ponteiras. São US$ 30 a mais que a econômica Bob and Brad Q2 Mini, e o valor extra paga a marca Hyperice, a integração com o app, um motor brushless e o funcionamento mais silencioso entre as minis de viagem, a 50 dB."
+          "a": "A Hypervolt Go 2 custa $129 com duas ponteiras. São $30 a mais que a econômica Bob and Brad Q2 Mini, e o valor extra paga a marca Hyperice, a integração com o app, um motor brushless e o funcionamento mais silencioso entre as minis de viagem, a 50 dB."
         },
         {
           "q": "Hypervolt Go 2 vs Hypervolt 2 Pro: qual devo comprar?",
@@ -1455,7 +1455,7 @@
         },
         {
           "q": "Quais são as desvantagens da Hypervolt Go 2?",
-          "a": "A Go 2 troca potência por portabilidade: tem metade da força de bloqueio da Hypervolt 2 Pro. Vem com apenas duas ponteiras, tem garantia de um ano e custa US$ 30 a mais que a econômica Bob and Brad Q2 Mini."
+          "a": "A Go 2 troca potência por portabilidade: tem metade da força de bloqueio da Hypervolt 2 Pro. Vem com apenas duas ponteiras, tem garantia de um ano e custa $30 a mais que a econômica Bob and Brad Q2 Mini."
         }
       ]
     },
@@ -1652,8 +1652,8 @@
         "Garantia de 2 anos; elegível para HSA/FSA"
       ],
       "cons": [
-        "O painel mais caro desta lista — US$ 1.699 pelo Solo 3.0",
-        "A pilha modular de corpo inteiro custa US$ 3.000–5.000 no total",
+        "O painel mais caro desta lista — $1,699 pelo Solo 3.0",
+        "A pilha modular de corpo inteiro custa $3,000–5.000 no total",
         "Sem opções de comprimento de onda incomuns para quem quer 810 / 830 / 940 nm",
         "Layout de emissão frontal única, não bidirecional"
       ],
@@ -1663,13 +1663,13 @@
         "build-emf-flicker": "Painel traseiro de alumínio, frente de vidro, CEM testado por terceiros em <0,5 mG a 6 polegadas; taxa de cintilação publicada e baixa. Entre as construções mais limpas desta lista.",
         "coverage": "O Solo cobre meio corpo; o sistema modular se empilha na vertical para o corpo inteiro. Inclui suporte e ferragens para montagem em porta. A modularidade é única nesta lista.",
         "evidence": "Registrado na FDA como dispositivo Classe II, segundo a Joovv (registro/listagem, não liberação nem aprovação; indicações listadas: aquecimento tópico para alívio temporário de dores musculares e articulares leves). A Joovv colabora com pesquisadores de fotobiomodulação com trabalhos publicados e cita estudos reais revisados por pares sobre o mecanismo subjacente. Sua frase “proven to heal” fala da luz vermelha e infravermelha próxima em geral, não do Solo 3.0.",
-        "value": "US$ 1.699 pelo Solo 3.0 (loja oficial dos EUA, out. 2026) — o mais caro desta lista: US$ 400 a mais que o MitoPRO 1500X (US$ 1.299) e US$ 650 a mais que o PlatinumLED BIOMAX 600 (US$ 1.049), ambos com espectro mais amplo. Você paga principalmente pela modularidade e pela construção."
+        "value": "$1,699 pelo Solo 3.0 (loja oficial dos EUA, out. 2026) — o mais caro desta lista: $400 a mais que o MitoPRO 1500X ($1,299) e $650 a mais que o PlatinumLED BIOMAX 600 ($1,049), ambos com espectro mais amplo. Você paga principalmente pela modularidade e pela construção."
       },
-      "content": "## Onde ele se destaca\n\nO Joovv Solo 3.0 é o painel com o qual o resto desta categoria é medido. Testes independentes de irradiância chegam perto do número declarado pelo fabricante, as medições de CEM na distância de tratamento padrão ficam abaixo de 0,5 mG, e a taxa de cintilação é publicada e limpa. O Solo também é o único painel modular desta lista: um Solo cobre meio corpo, dois conectados na vertical cobrem a maior parte da parte superior do corpo, e três empilhados formam uma parede de corpo inteiro. A Joovv diz que o Solo 3.0 é registrado na FDA como dispositivo Classe II e informa claramente suas indicações listadas (aquecimento tópico para alívio temporário de dores musculares e articulares leves). Registro não é liberação nem aprovação, e não é um selo de qualidade.\n\n## Quais são as desvantagens do Joovv Solo 3.0?\n\nPreço. US$ 1.699 por um Solo 3.0 (loja oficial dos EUA, consultada em 2026-10-01) é o painel individual mais caro desta lista; uma pilha Joovv de corpo inteiro de verdade custa US$ 3.000–5.000. As opções de comprimento de onda são apenas as padrão de 660 + 850 nm — nada de 810 nm, 830 nm ou 940 nm para quem quer um espectro mais rico. O layout é de emissão frontal em uma só direção, não bidirecional.\n\n## Quem deve comprar o Joovv Solo 3.0?\n\nEscolha o Joovv Solo 3.0 se você quer a construção modular premium e aceita que verificação, disciplina de CEM e escalabilidade modular têm um preço. Se o preço é o critério decisivo, o Mito Red MitoPRO 1500X ou o Hooga HG500 cobrem a maior parte das especificações por uma fração do custo; se você quer um premium com blindagem de CEM e testes independentes, o GembaRed Vesta é a construção mais limpa por um preço um pouco menor.\n\n---\n\n## Leitura complementar\n\nO mecanismo de fotobiomodulação por trás de por que a terapia de luz vermelha funciona.\n\n- [Protocolo de longevidade: reinício do relógio biológico](/articles/longevity-protocol-biological-clock-reset) — onde a fotobiomodulação se encaixa numa rotina de reinício\n- [DNA mitocondrial e luz vermelha](/articles/mitochondrial-dna-red-light) — como fótons de 660/850 nm chegam às mitocôndrias e o que fazem lá\n- [Biogênese mitocondrial: a rede elétrica celular](/articles/mitochondrial-biogenesis-cellular-power-grid) — por que a fotobiomodulação aumenta a densidade mitocondrial\n",
+      "content": "## Onde ele se destaca\n\nO Joovv Solo 3.0 é o painel com o qual o resto desta categoria é medido. Testes independentes de irradiância chegam perto do número declarado pelo fabricante, as medições de CEM na distância de tratamento padrão ficam abaixo de 0,5 mG, e a taxa de cintilação é publicada e limpa. O Solo também é o único painel modular desta lista: um Solo cobre meio corpo, dois conectados na vertical cobrem a maior parte da parte superior do corpo, e três empilhados formam uma parede de corpo inteiro. A Joovv diz que o Solo 3.0 é registrado na FDA como dispositivo Classe II e informa claramente suas indicações listadas (aquecimento tópico para alívio temporário de dores musculares e articulares leves). Registro não é liberação nem aprovação, e não é um selo de qualidade.\n\n## Quais são as desvantagens do Joovv Solo 3.0?\n\nPreço. $1,699 por um Solo 3.0 (loja oficial dos EUA, consultada em 2026-10-01) é o painel individual mais caro desta lista; uma pilha Joovv de corpo inteiro de verdade custa $3,000–5.000. As opções de comprimento de onda são apenas as padrão de 660 + 850 nm — nada de 810 nm, 830 nm ou 940 nm para quem quer um espectro mais rico. O layout é de emissão frontal em uma só direção, não bidirecional.\n\n## Quem deve comprar o Joovv Solo 3.0?\n\nEscolha o Joovv Solo 3.0 se você quer a construção modular premium e aceita que verificação, disciplina de CEM e escalabilidade modular têm um preço. Se o preço é o critério decisivo, o Mito Red MitoPRO 1500X ou o Hooga HG500 cobrem a maior parte das especificações por uma fração do custo; se você quer um premium com blindagem de CEM e testes independentes, o GembaRed Vesta é a construção mais limpa por um preço um pouco menor.\n\n---\n\n## Leitura complementar\n\nO mecanismo de fotobiomodulação por trás de por que a terapia de luz vermelha funciona.\n\n- [Protocolo de longevidade: reinício do relógio biológico](/articles/longevity-protocol-biological-clock-reset) — onde a fotobiomodulação se encaixa numa rotina de reinício\n- [DNA mitocondrial e luz vermelha](/articles/mitochondrial-dna-red-light) — como fótons de 660/850 nm chegam às mitocôndrias e o que fazem lá\n- [Biogênese mitocondrial: a rede elétrica celular](/articles/mitochondrial-biogenesis-cellular-power-grid) — por que a fotobiomodulação aumenta a densidade mitocondrial\n",
       "faq": [
         {
           "q": "Quanto custa o Joovv Solo 3.0?",
-          "a": "O Joovv Solo 3.0 custa US$ 1.699 na loja oficial dos EUA (consultado em outubro de 2026), o painel mais caro da sua comparação. Como os painéis Solo são modulares, uma pilha de corpo inteiro montada em suporte custa US$ 3.000–5.000 no total. A maior parte do preço extra vai para qualidade de construção e verificação, e não para especificações infladas."
+          "a": "O Joovv Solo 3.0 custa $1,699 na loja oficial dos EUA (consultado em outubro de 2026), o painel mais caro da sua comparação. Como os painéis Solo são modulares, uma pilha de corpo inteiro montada em suporte custa $3,000–5.000 no total. A maior parte do preço extra vai para qualidade de construção e verificação, e não para especificações infladas."
         },
         {
           "q": "O Joovv Solo 3.0 é registrado na FDA?",
@@ -1677,11 +1677,11 @@
         },
         {
           "q": "O Joovv Solo 3.0 vale a pena?",
-          "a": "Em geral, sim, se você quer a construção modular premium. Tem irradiância verificada, parcerias com pesquisadores com trabalhos publicados e garantia de 2 anos, além de painéis modulares que crescem até uma configuração de corpo inteiro. Se o preço decide, o Mito Red MitoPRO 1500X (US$ 1.299) ou o Hooga HG500 cobrem a maior parte das especificações por menos."
+          "a": "Em geral, sim, se você quer a construção modular premium. Tem irradiância verificada, parcerias com pesquisadores com trabalhos publicados e garantia de 2 anos, além de painéis modulares que crescem até uma configuração de corpo inteiro. Se o preço decide, o Mito Red MitoPRO 1500X ($1,299) ou o Hooga HG500 cobrem a maior parte das especificações por menos."
         },
         {
           "q": "Quais são as desvantagens do Joovv Solo 3.0?",
-          "a": "A principal é o preço: US$ 1.699 por painel e US$ 3.000–5.000 por uma pilha de corpo inteiro. Ele também não oferece comprimentos de onda incomuns como 810, 830 ou 940 nm, e usa um layout de emissão frontal única em vez de um design bidirecional."
+          "a": "A principal é o preço: $1,699 por painel e $3,000–5.000 por uma pilha de corpo inteiro. Ele também não oferece comprimentos de onda incomuns como 810, 830 ou 940 nm, e usa um layout de emissão frontal única em vez de um design bidirecional."
         }
       ]
     },
@@ -2094,7 +2094,7 @@
         "personalization": "Um curso estruturado de 28 dias para começar, mas pouca personalização adaptativa e contínua.",
         "app-experience": "Um app limpo e tranquilo que não atrapalha a prática.",
         "free-tier": "Teste grátis de 7 dias, mais uma bolsa permanente: assinatura gratuita para quem não pode pagar.",
-        "value": "O mais caro desta lista, por cerca de 130 USD por ano no site (149,99 USD na loja de apps) — embora a política de bolsas suavize isso.",
+        "value": "O mais caro desta lista, por cerca de $130 por ano no site ($149.99 na loja de apps) — embora a política de bolsas suavize isso.",
         "evidence": "Uma abordagem laica que se apoia na pesquisa sobre meditação em geral e em linhagens de ensino identificadas; não encontramos nenhum estudo do próprio app Waking Up, então ele pontua como outros apps sem estudos próprios."
       },
       "content": "## Onde ele se destaca\n\nO Waking Up, criado pelo neurocientista e filósofo Sam Harris, é um app centrado no ensino e carregado de filosofia. Ele trata a meditação não como uma ferramenta de relaxamento, mas como uma forma de examinar a natureza da consciência, e combina a prática com um verdadeiro corpo teórico — aulas de filosofia e psicologia e conversas com grandes pensadores. O ensino, de Harris e de um grupo de instrutores convidados conhecidos, é rigoroso e carregado de filosofia.\n\n## Quais são as desvantagens do Waking Up?\n\nEssa profundidade é estreita por design. A biblioteca é curada e comparativamente pequena, não há conteúdo para o sono, e o curso introdutório avança rápido para ideias avançadas — um iniciante absoluto pode se sentir perdido. Também é a opção mais cara, embora uma oferta permanente de acesso gratuito para quem realmente não pode pagar amenize o preço.\n\n## Quem deve comprar o Waking Up?\n\nEscolha o Waking Up se você já tem uma prática básica e quer se aprofundar — em instrução rigorosa e na filosofia por trás dela — e o preço (ou a bolsa) funciona para você. Se está começando do zero, comece pelo Headspace e passe para o Waking Up quando a prática estiver estabelecida.\n\n---\n\n## Leitura complementar\n\nA ciência do que a meditação realmente faz no nível do sistema nervoso.\n\n- [Sincronização rítmica e frequências do sistema](/articles/rhythmic-entrainment-system-frequencies) — por que áudios cadenciados e protocolos de respiração se potencializam com a prática\n- [Concentração fisiológica: a base do estado de flow](/articles/physiological-concentration-flow-state-hardwired) — que neuroquímica o estado de flow realmente exige\n- [Ondas cerebrais alfa: calma, criatividade e flow](/articles/neural-bridge-alpha-flow-gateway) — o que o ritmo alfa faz, e o que headsets, apps e músicas alfa podem e não podem mudar\n",
@@ -2105,7 +2105,7 @@
         },
         {
           "q": "Quanto custa o Waking Up?",
-          "a": "O Waking Up custa US$ 129,99 por ano no site, ou US$ 149,99 por ano e US$ 19,99 por mês nas lojas de apps, após um teste grátis de 7 dias — o app de meditação mais caro da análise. Sua bolsa oferece assinatura gratuita para quem não pode pagar."
+          "a": "O Waking Up custa $129.99 por ano no site, ou $149.99 por ano e $19.99 por mês nas lojas de apps, após um teste grátis de 7 dias — o app de meditação mais caro da análise. Sua bolsa oferece assinatura gratuita para quem não pode pagar."
         },
         {
           "q": "Quais são as desvantagens do Waking Up?",
@@ -2284,11 +2284,11 @@
       "faq": [
         {
           "q": "O Insight Timer é grátis?",
-          "a": "Em grande parte, sim. O Insight Timer tem uma versão grátis muito ampla, sobre a qual você pode realmente construir uma prática sem pagar. O Member Plus custa US$ 60 por ano com 7 dias de teste grátis, o plano pago mais barato da sua comparação, e há eventos ao vivo a cada hora e recursos de comunidade."
+          "a": "Em grande parte, sim. O Insight Timer tem uma versão grátis muito ampla, sobre a qual você pode realmente construir uma prática sem pagar. O Member Plus custa $60 por ano com 7 dias de teste grátis, o plano pago mais barato da sua comparação, e há eventos ao vivo a cada hora e recursos de comunidade."
         },
         {
           "q": "Vale a pena pagar pelo Insight Timer?",
-          "a": "Para muita gente a versão grátis basta, e esse é o maior ponto forte do app. Por US$ 60 por ano, o Member Plus é o plano pago mais barato entre os principais apps de meditação, então fazer o upgrade tem pouco risco se você quiser mais. O porém é a qualidade variável das sessões, não o preço."
+          "a": "Para muita gente a versão grátis basta, e esse é o maior ponto forte do app. Por $60 por ano, o Member Plus é o plano pago mais barato entre os principais apps de meditação, então fazer o upgrade tem pouco risco se você quiser mais. O porém é a qualidade variável das sessões, não o preço."
         },
         {
           "q": "Insight Timer ou Headspace: qual é melhor?",
@@ -3243,7 +3243,7 @@
         "emf": "EMF baixo segundo o fabricante; não encontramos nenhum relatório independente de medição de EMF.",
         "form-factor": "Tenda e cadeira dobram para guardar. Sem instalação. A cabeça fica fora do invólucro durante o uso (ergonomia diferente da manta).",
         "evidence": "Base de pesquisa menor que a das marcas de IR mais conhecidas. Marketing de nível bem-estar.",
-        "value": "US$ 1.500 — mais cara que a HigherDose Blanket para um formato possivelmente menos versátil."
+        "value": "$1,500 — mais cara que a HigherDose Blanket para um formato possivelmente menos versátil."
       },
       "content": "## Onde ela se destaca\n\nA Relax Sauna Portable é a opção portátil de IR distante na vertical para quem não se sente bem com o formato de manta, deitado. Design de cadeira e tenda, dobrável, sem instalação, EMF baixo documentado e mais de 20 anos de trajetória da marca. Para quem quer exposição ao IR sentado e que possa ser guardada, este é o formato certo.\n\n## Quais são as desvantagens da Relax Sauna Portable?\n\nMais cara que a HigherDose Blanket, com um formato menos flexível. Espectro apenas de IR distante. Menos usuários e base de pesquisa menor que as marcas de IR mais conhecidas.\n\n## Quem deve comprar a Relax Sauna Portable?\n\nEscolha a Relax Sauna Portable se você quer IR portátil sentado na vertical e a ergonomia de cadeira e tenda combina especificamente com você. Para uma portátil tipo manta, HigherDose. Para IR em cabine, Sunlighten / Clearlight / JNH.\n\n---\n\n## Leitura complementar\n\nLeitura complementar sobre as ideias por trás da exposição ao calor — em sua maioria hipóteses, não efeitos demonstrados em pessoas.\n\n- [Sauna em uma rotina de longevidade](/articles/longevity-protocol-biological-clock-reset) — leitura de contexto sobre rotinas diárias\n- [Controle do eixo HPA e regulação do cortisol](/articles/hpa-axis-control-cortisol-aggression) — o lado do choque térmico na resposta ao estresse\n- [Estresse, recuperação e sistema nervoso](/articles/anti-entropy-neural-architecture) — leitura de contexto sobre a sauna como um estresse térmico curto\n",
       "faq": [
@@ -3253,7 +3253,7 @@
         },
         {
           "q": "Quanto custa a Relax Sauna Portable?",
-          "a": "A Relax Sauna Portable é anunciada por US$ 1.500 em pagamento único, na configuração de cadeira e tenda. É mais cara que a HigherDose Blanket como infravermelho portátil, mas não precisa de instalação e dobra para guardar. É um design de cadeira e tenda."
+          "a": "A Relax Sauna Portable é anunciada por $1,500 em pagamento único, na configuração de cadeira e tenda. É mais cara que a HigherDose Blanket como infravermelho portátil, mas não precisa de instalação e dobra para guardar. É um design de cadeira e tenda."
         },
         {
           "q": "Quais são as desvantagens da Relax Sauna Portable?",
@@ -3649,14 +3649,14 @@
     },
     "ultrahuman-ring-pro": {
       "verdict": "O sucessor redesenhado e sem assinatura do Ring Air — bateria de 15 dias líder da categoria, processamento no próprio anel e (ao contrário do Ring Air) disponível nos EUA. Promissor, mas novo demais para um veredito de confiabilidade a longo prazo, vindo de uma marca cujo anel anterior teve problemas de bateria.",
-      "summary": "O Ultrahuman Ring Pro é o carro-chefe da Ultrahuman projetado do zero, lançado em fevereiro de 2026 por US$ 479 em pagamento único, sem assinatura. É também a resposta da empresa a um problema difícil: o antigo Ultrahuman Ring Air está sob proibição de importação nos EUA após a vitória da Oura por patentes na ITC (em vigor desde outubro de 2025), e o Ring Pro é o anel redesenhado que coloca a Ultrahuman de volta à venda para compradores nos EUA. O destaque é uma bateria de ~15 dias que define a categoria (contra 4–6 dias do Ring Air), além de um processador dual-core no anel para machine learning local e medição aprimorada da frequência cardíaca, e o \"Jade\", uma camada de biointeligência em tempo real. Ele mantém os pontos fortes do Ring Air — leve, sem assinatura, variabilidade da frequência cardíaca (HRV ou VFC) contínua, bom monitoramento do sono — e ataca diretamente seu pior defeito, a confiabilidade da bateria. A ressalva, com honestidade: é novo, a validação independente de longo prazo é escassa e o anel anterior da marca foi amplamente relatado como falhando em poucos meses, então o ganho de confiabilidade é prometido, ainda não comprovado.",
+      "summary": "O Ultrahuman Ring Pro é o carro-chefe da Ultrahuman projetado do zero, lançado em fevereiro de 2026 por $479 em pagamento único, sem assinatura. É também a resposta da empresa a um problema difícil: o antigo Ultrahuman Ring Air está sob proibição de importação nos EUA após a vitória da Oura por patentes na ITC (em vigor desde outubro de 2025), e o Ring Pro é o anel redesenhado que coloca a Ultrahuman de volta à venda para compradores nos EUA. O destaque é uma bateria de ~15 dias que define a categoria (contra 4–6 dias do Ring Air), além de um processador dual-core no anel para machine learning local e medição aprimorada da frequência cardíaca, e o \"Jade\", uma camada de biointeligência em tempo real. Ele mantém os pontos fortes do Ring Air — leve, sem assinatura, variabilidade da frequência cardíaca (HRV ou VFC) contínua, bom monitoramento do sono — e ataca diretamente seu pior defeito, a confiabilidade da bateria. A ressalva, com honestidade: é novo, a validação independente de longo prazo é escassa e o anel anterior da marca foi amplamente relatado como falhando em poucos meses, então o ganho de confiabilidade é prometido, ainda não comprovado.",
       "description": "Análise ONDA do Ultrahuman Ring Pro: sucessor do Ring Air sem assinatura, com bateria de 15 dias e à venda nos EUA, onde o Ring Air está proibido.",
       "bestFor": "Ideal para quem quer um anel sem assinatura com bateria excepcional e não se importa em ser um dos primeiros a adotar um produto redesenhado.",
       "testNote": "Avaliação baseada em evidências — pontuado a partir das especificações da Ultrahuman e da cobertura independente inicial do lançamento do Ring Pro em 2026. Não testado pessoalmente pela ONDA; a confiabilidade a longo prazo ainda não foi estabelecida de forma independente.",
       "productType": "Anel inteligente",
       "pros": [
         "Bateria de ~15 dias líder da categoria — cerca do triplo do Ring Air",
-        "Sem assinatura — US$ 479 em pagamento único, acesso vitalício aos seus dados",
+        "Sem assinatura — $479 em pagamento único, acesso vitalício aos seus dados",
         "Processador dual-core no anel e medição aprimorada da frequência cardíaca",
         "Disponível nos EUA, ao contrário do Ring Air proibido"
       ],
@@ -3673,13 +3673,13 @@
         "data-access": "Acesso vitalício aos seus próprios dados e exportação, mas ainda sem uma API realmente aberta. Sem mudanças em relação ao Ring Air.",
         "wearability": "A bateria de ~15 dias é o destaque — cerca do triplo do Ring Air — e mira diretamente a queixa de confiabilidade. Leve e confortável para uso 24/7. A durabilidade a longo prazo ainda não está comprovada tão cedo.",
         "app-ux": "O competente app da Ultrahuman com \"PowerPlugs\" adicionais, agora com a camada de biointeligência em tempo real \"Jade\". Rico em recursos; o acabamento ainda fica aquém do Oura.",
-        "value": "US$ 479 em pagamento único, sem assinatura, é uma proposta forte frente ao anel mais assinatura do Oura, e a bateria longa agrega valor real no dia a dia — desde que a confiabilidade se mantenha."
+        "value": "$479 em pagamento único, sem assinatura, é uma proposta forte frente ao anel mais assinatura do Oura, e a bateria longa agrega valor real no dia a dia — desde que a confiabilidade se mantenha."
       },
-      "content": "## Por que o Ring Pro existe\n\nO Ultrahuman Ring Pro não é apenas uma atualização de especificações — é a resposta a um muro jurídico. Em 2025 a Oura venceu um processo de patentes na ITC contra a Ultrahuman, e uma proibição de importação do [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) nos EUA entrou em vigor em outubro de 2025. Em vez de fazer acordo, a Ultrahuman lançou um anel redesenhado. O Ring Pro, lançado em fevereiro de 2026, é esse carro-chefe projetado do zero: US$ 479 em pagamento único, sem assinatura e — o mais importante — de volta à venda para compradores nos EUA.\n\n## O que o Ultrahuman Ring Pro faz bem?\n\nO destaque é a bateria: cerca de 15 dias por carga, aproximadamente o triplo do Ring Air e a melhor da categoria. Além disso, um processador dual-core no anel cuida do machine learning local, a medição da frequência cardíaca foi aprimorada e uma camada de biointeligência em tempo real, o \"Jade\", fica no app. Ele mantém o que tornava o Ring Air atraente — levíssimo, sem assinatura, [HRV](/glossary/heart-rate-variability) contínua, bom monitoramento do sono — e mira em cheio seu pior defeito.\n\n## Onde ter cautela\n\nAqui a honestidade importa. O problema que definiu o Ring Air foram baterias falhando em poucos meses, e a maior promessa do Ring Pro é a bateria. É a coisa certa a consertar, mas continua sendo uma promessa até que testes independentes de longo prazo a confirmem — vindo de uma marca com um tropeço recente de confiabilidade. O acesso aos dados também não mudou: melhor que um ecossistema fechado, mas aquém de uma API realmente aberta.\n\n## Quem deve comprar o Ultrahuman Ring Pro?\n\nEscolha o Ultrahuman Ring Pro se você quer um anel sem assinatura com uma bateria excepcional e não se importa em ser um dos primeiros a adotar um produto redesenhado. Se você quer um histórico mais longo hoje, o [RingConn Gen 2](/reviews/ringconn-gen-2) é a opção sem assinatura mais segura, e o [Oura Ring 5](/reviews/oura-ring-5) é o anel mais refinado se você aceitar a assinatura obrigatória — as gerações anteriores do Oura concordaram bem com o ECG durante a noite, embora o Ring 5 em si não tenha sido validado separadamente.\n\n---\n\n## Leitura complementar\n\nA ciência de por que a HRV é o sinal que vale a pena acompanhar — e de como o corpo a produz.\n\n- [Coerência do sistema na frequência de ressonância](/articles/resonant-frequency-system-coherence) — o que é a respiração na frequência de ressonância e o que mostram os estudos\n- [Precisão interoceptiva e calibração do sensor](/articles/interoceptive-precision-sensor-calibration) — por que sua própria percepção é a referência de base contra a qual a HRV mede\n- [Arquitetura neural antientrópica](/articles/anti-entropy-neural-architecture) — a HRV como sinal diário de manutenção do sistema autônomo\n",
+      "content": "## Por que o Ring Pro existe\n\nO Ultrahuman Ring Pro não é apenas uma atualização de especificações — é a resposta a um muro jurídico. Em 2025 a Oura venceu um processo de patentes na ITC contra a Ultrahuman, e uma proibição de importação do [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) nos EUA entrou em vigor em outubro de 2025. Em vez de fazer acordo, a Ultrahuman lançou um anel redesenhado. O Ring Pro, lançado em fevereiro de 2026, é esse carro-chefe projetado do zero: $479 em pagamento único, sem assinatura e — o mais importante — de volta à venda para compradores nos EUA.\n\n## O que o Ultrahuman Ring Pro faz bem?\n\nO destaque é a bateria: cerca de 15 dias por carga, aproximadamente o triplo do Ring Air e a melhor da categoria. Além disso, um processador dual-core no anel cuida do machine learning local, a medição da frequência cardíaca foi aprimorada e uma camada de biointeligência em tempo real, o \"Jade\", fica no app. Ele mantém o que tornava o Ring Air atraente — levíssimo, sem assinatura, [HRV](/glossary/heart-rate-variability) contínua, bom monitoramento do sono — e mira em cheio seu pior defeito.\n\n## Onde ter cautela\n\nAqui a honestidade importa. O problema que definiu o Ring Air foram baterias falhando em poucos meses, e a maior promessa do Ring Pro é a bateria. É a coisa certa a consertar, mas continua sendo uma promessa até que testes independentes de longo prazo a confirmem — vindo de uma marca com um tropeço recente de confiabilidade. O acesso aos dados também não mudou: melhor que um ecossistema fechado, mas aquém de uma API realmente aberta.\n\n## Quem deve comprar o Ultrahuman Ring Pro?\n\nEscolha o Ultrahuman Ring Pro se você quer um anel sem assinatura com uma bateria excepcional e não se importa em ser um dos primeiros a adotar um produto redesenhado. Se você quer um histórico mais longo hoje, o [RingConn Gen 2](/reviews/ringconn-gen-2) é a opção sem assinatura mais segura, e o [Oura Ring 5](/reviews/oura-ring-5) é o anel mais refinado se você aceitar a assinatura obrigatória — as gerações anteriores do Oura concordaram bem com o ECG durante a noite, embora o Ring 5 em si não tenha sido validado separadamente.\n\n---\n\n## Leitura complementar\n\nA ciência de por que a HRV é o sinal que vale a pena acompanhar — e de como o corpo a produz.\n\n- [Coerência do sistema na frequência de ressonância](/articles/resonant-frequency-system-coherence) — o que é a respiração na frequência de ressonância e o que mostram os estudos\n- [Precisão interoceptiva e calibração do sensor](/articles/interoceptive-precision-sensor-calibration) — por que sua própria percepção é a referência de base contra a qual a HRV mede\n- [Arquitetura neural antientrópica](/articles/anti-entropy-neural-architecture) — a HRV como sinal diário de manutenção do sistema autônomo\n",
       "faq": [
         {
           "q": "O Ultrahuman Ring Pro é sem assinatura?",
-          "a": "Sim — US$ 479 em pagamento único, sem assinatura, ao contrário do Oura, que restringe os dados completos a uma assinatura de cerca de US$ 6 por mês. Essa é sua principal vantagem de custo."
+          "a": "Sim — $479 em pagamento único, sem assinatura, ao contrário do Oura, que restringe os dados completos a uma assinatura de cerca de $6 por mês. Essa é sua principal vantagem de custo."
         },
         {
           "q": "O Ultrahuman Ring Pro é preciso para HRV?",
@@ -3947,7 +3947,7 @@
         "O perfil certo para clínicas, academias ou casas com vários usuários"
       ],
       "cons": [
-        "Preço a partir de US$ 11.000 — exagero para uso doméstico de um só usuário",
+        "Preço a partir de $11,000 — exagero para uso doméstico de um só usuário",
         "Ocupa muito espaço e muitas vezes exige energia de 220 V",
         "A instalação pode exigir obra elétrica",
         "Perfil errado para o usuário doméstico típico"
@@ -3958,7 +3958,7 @@
         "water-management": "Ozônio + UV + filtragem de nível comercial. Higienização para uso diário que aguenta vários usuários por dia.",
         "form-factor": "Ocupa muito espaço e exige um local dedicado. Exige energia de 220 V na maioria das configurações.",
         "evidence": "Boas orientações de protocolo para ambientes clínicos / esportivos. Honesta sobre o foco comercial.",
-        "value": "A partir de US$ 11.000. Exagero para uso doméstico de um só usuário; adequada para clínicas / academias / casas com vários usuários."
+        "value": "A partir de $11,000. Exagero para uso doméstico de um só usuário; adequada para clínicas / academias / casas com vários usuários."
       },
       "content": "## Onde ela se destaca\n\nA BlueCube é a banheira de imersão em água fria de nível comercial — feita para clínicas, academias e casas com vários usuários, em que o cenário de carga é o uso contínuo, uma sessão atrás da outra. A capacidade do resfriador e os sistemas de higienização são superdimensionados para a prática doméstica de um só usuário, mas exatamente certos para o uso comercial.\n\n## Quais são as desvantagens da BlueCube Cold Plunge?\n\nPreço e exagero. Para a prática doméstica de um só usuário, a BlueCube oferece mais capacidade do que você vai usar, pelo dobro do custo da Plunge.\n\n## Quem deve comprar a BlueCube Cold Plunge?\n\nEscolha a BlueCube se você administra uma clínica, uma instalação esportiva ou uma casa com três ou mais usuários dividindo a banheira. Para uso doméstico de um só usuário, Plunge, Edge ou Coldture entregam capacidade mais que suficiente por cerca de um quarto a metade do custo.\n\n---\n\n## Leitura complementar\n\nA biologia de por que a exposição ao frio funciona — e os protocolos que se somam ao equipamento.\n\n- [Exercícios para o nervo vago](/articles/vagus-nerve-exercises) — na imersão de corpo inteiro, a principal reação é o choque simpático do frio; a resposta vagal (de mergulho) vem principalmente do frio no rosto, e a variabilidade da frequência cardíaca (HRV ou VFC) sobe apenas durante a exposição ([evidências](/science/evidence/cold-exposure))\n- [Controle do eixo HPA e regulação do cortisol](/articles/hpa-axis-control-cortisol-aggression) — como a exposição ao frio molda a curva do cortisol\n- [Fadiga adrenal: o que dizem as evidências](/articles/adrenal-governor-thermal-runaway) — por que a exaustão ligada ao estresse não é \"adrenais esgotadas\", e quando procurar um médico\n",
       "faq": [
@@ -3968,11 +3968,11 @@
         },
         {
           "q": "Quanto custa a BlueCube Cold Plunge?",
-          "a": "A BlueCube Cold Plunge começa em cerca de US$ 11.000, e a especificação comercial completa chega a US$ 14.000 ou mais. A instalação também pode exigir obra elétrica, já que muitas vezes é preciso energia de 220 V, então reserve orçamento para a instalação além da banheira."
+          "a": "A BlueCube Cold Plunge começa em cerca de $11,000, e a especificação comercial completa chega a $14,000 ou mais. A instalação também pode exigir obra elétrica, já que muitas vezes é preciso energia de 220 V, então reserve orçamento para a instalação além da banheira."
         },
         {
           "q": "Quais são as desvantagens da BlueCube Cold Plunge?",
-          "a": "A BlueCube custa a partir de US$ 11.000 e é um exagero para uso doméstico de um só usuário. Ocupa muito espaço, muitas vezes exige energia de 220 V e a instalação pode precisar de obra elétrica, o que lhe dá o perfil errado para o usuário doméstico típico."
+          "a": "A BlueCube custa a partir de $11,000 e é um exagero para uso doméstico de um só usuário. Ocupa muito espaço, muitas vezes exige energia de 220 V e a instalação pode precisar de obra elétrica, o que lhe dá o perfil errado para o usuário doméstico típico."
         },
         {
           "q": "Para quem a BlueCube Cold Plunge é mais indicada?",
@@ -3982,7 +3982,7 @@
     },
     "ice-barrel-500": {
       "verdict": "Uma banheira de imersão fria tipo barril muito vendida — construção sólida, sem resfriador; o custo de abastecer com gelo é o atrito diário.",
-      "summary": "O Ice Barrel 500 é um barril vertical isolado — uma alternativa mais limpa e pronta para usar às gambiarras de imersão fria com freezer horizontal. Não tem resfriador — você enche com água e gelo —, então o custo diário do gelo (US$ 5–15 por dia de uso, dependendo do clima) é a incógnita do custo de uso. Construção robusta, formato vertical característico e 1 ano de garantia.",
+      "summary": "O Ice Barrel 500 é um barril vertical isolado — uma alternativa mais limpa e pronta para usar às gambiarras de imersão fria com freezer horizontal. Não tem resfriador — você enche com água e gelo —, então o custo diário do gelo ($5–15 por dia de uso, dependendo do clima) é a incógnita do custo de uso. Construção robusta, formato vertical característico e 1 ano de garantia.",
       "description": "Análise da ONDA do Ice Barrel 500 — o popular barril isolado para imersões frias com gelo. Notas para construção, formato e custo-benefício.",
       "bestFor": "Melhor para quem quer um formato de barril limpo e de consumo sem pagar preços da faixa com resfriador.",
       "testNote": "Avaliação baseada em evidências — pontuada a partir da documentação do produto Ice Barrel e de análises independentes de 2026. Não testado na prática pela ONDA.",
@@ -3991,7 +3991,7 @@
         "Banheira de imersão fria sem resfriador bem conhecida, com vários anos de histórico no mercado",
         "Ocupação vertical compacta que cabe em espaços menores",
         "Própria para área externa e fácil de esvaziar",
-        "Barata na compra — US$ 1.200 é cerca de um quinto do The Plunge"
+        "Barata na compra — $1,200 é cerca de um quinto do The Plunge"
       ],
       "cons": [
         "Sem resfriador — o gelo diário é uma despesa de uso real",
@@ -4005,17 +4005,17 @@
         "water-management": "Sem ozônio nem filtro — trocas de água manuais a cada 1–2 semanas, além de reposição diária de gelo. Mais manutenção do que banheiras com resfriador.",
         "form-factor": "Design vertical que ocupa menos espaço do que banheiras horizontais (32\" de diâmetro). Próprio para área externa. Fácil de esvaziar pela torneira.",
         "evidence": "Honesto sobre ser uma solução sem resfriador. Na nossa leitura, o marketing faz menos alegações de saúde sobre exposição ao frio do que muitos concorrentes.",
-        "value": "US$ 1.200 de hardware. Barato na compra, mas US$ 5–15 por dia em gelo ao longo de meses acaba pesando. Economia de longo prazo melhor do que gambiarras com freezer horizontal, pior do que banheiras com resfriador."
+        "value": "$1,200 de hardware. Barato na compra, mas $5–15 por dia em gelo ao longo de meses acaba pesando. Economia de longo prazo melhor do que gambiarras com freezer horizontal, pior do que banheiras com resfriador."
       },
-      "content": "## Onde ele se destaca\n\nO Ice Barrel 500 é o formato de imersão fria sem resfriador mais limpo do mercado. Barril vertical, plástico de grau alimentício, paredes isoladas e uma ocupação vertical que cabe onde banheiras horizontais não cabem. Para quem quer experimentar a imersão fria diária sem o compromisso de US$ 5.000 de um equipamento com resfriador, este é o formato certo.\n\n## Quais são as desvantagens do Ice Barrel 500?\n\nA principal desvantagem é que você paga gelo todos os dias. Em climas frios isso é desprezível (use neve); em climas quentes são US$ 5–15 por dia. Anualizado, pode rivalizar com o custo amortizado ao longo de vários anos de um equipamento com resfriador. As trocas de água são manuais, não há ozônio e o tempo que a temperatura se mantém por abastecimento é limitado.\n\n## Quem deve comprar o Ice Barrel 500?\n\nEscolha o Ice Barrel 500 se você quer experimentar a imersão fria diária antes de se comprometer com um equipamento com resfriador — ou se o seu clima é frio o bastante para que o custo do gelo não importe. Em climas quentes, com intenção de uso diário, faça as contas das banheiras com resfriador (Plunge ou Edge) antes de optar pelo barril.\n\n---\n\n## Leitura complementar\n\nA biologia de por que a exposição ao frio funciona — e os protocolos que se somam ao equipamento.\n\n- [Exercícios para o nervo vago](/articles/vagus-nerve-exercises) — na imersão do corpo inteiro a reação principal é o choque de frio simpático; a resposta vagal (de mergulho) vem principalmente do frio no rosto, e a variabilidade da frequência cardíaca (HRV ou VFC) sobe apenas durante a exposição ([evidências](/science/evidence/cold-exposure))\n- [Controle do eixo HPA e regulação do cortisol](/articles/hpa-axis-control-cortisol-aggression) — como a exposição ao frio molda a curva do cortisol\n- [Fadiga adrenal: o que dizem as evidências](/articles/adrenal-governor-thermal-runaway) — por que a exaustão ligada ao estresse não são \"adrenais esgotadas\" e quando procurar um médico\n",
+      "content": "## Onde ele se destaca\n\nO Ice Barrel 500 é o formato de imersão fria sem resfriador mais limpo do mercado. Barril vertical, plástico de grau alimentício, paredes isoladas e uma ocupação vertical que cabe onde banheiras horizontais não cabem. Para quem quer experimentar a imersão fria diária sem o compromisso de $5,000 de um equipamento com resfriador, este é o formato certo.\n\n## Quais são as desvantagens do Ice Barrel 500?\n\nA principal desvantagem é que você paga gelo todos os dias. Em climas frios isso é desprezível (use neve); em climas quentes são $5–15 por dia. Anualizado, pode rivalizar com o custo amortizado ao longo de vários anos de um equipamento com resfriador. As trocas de água são manuais, não há ozônio e o tempo que a temperatura se mantém por abastecimento é limitado.\n\n## Quem deve comprar o Ice Barrel 500?\n\nEscolha o Ice Barrel 500 se você quer experimentar a imersão fria diária antes de se comprometer com um equipamento com resfriador — ou se o seu clima é frio o bastante para que o custo do gelo não importe. Em climas quentes, com intenção de uso diário, faça as contas das banheiras com resfriador (Plunge ou Edge) antes de optar pelo barril.\n\n---\n\n## Leitura complementar\n\nA biologia de por que a exposição ao frio funciona — e os protocolos que se somam ao equipamento.\n\n- [Exercícios para o nervo vago](/articles/vagus-nerve-exercises) — na imersão do corpo inteiro a reação principal é o choque de frio simpático; a resposta vagal (de mergulho) vem principalmente do frio no rosto, e a variabilidade da frequência cardíaca (HRV ou VFC) sobe apenas durante a exposição ([evidências](/science/evidence/cold-exposure))\n- [Controle do eixo HPA e regulação do cortisol](/articles/hpa-axis-control-cortisol-aggression) — como a exposição ao frio molda a curva do cortisol\n- [Fadiga adrenal: o que dizem as evidências](/articles/adrenal-governor-thermal-runaway) — por que a exaustão ligada ao estresse não são \"adrenais esgotadas\" e quando procurar um médico\n",
       "faq": [
         {
           "q": "O Ice Barrel 500 tem resfriador?",
-          "a": "Não. O Ice Barrel 500 não tem resfriador: você enche com água e gelo. Isso mantém o preço de compra em US$ 1.200, cerca de um quinto do The Plunge, mas o gelo diário vira uma despesa de uso real, e o quanto ele segura a temperatura depende do seu clima."
+          "a": "Não. O Ice Barrel 500 não tem resfriador: você enche com água e gelo. Isso mantém o preço de compra em $1,200, cerca de um quinto do The Plunge, mas o gelo diário vira uma despesa de uso real, e o quanto ele segura a temperatura depende do seu clima."
         },
         {
           "q": "Quanto custa manter um Ice Barrel 500?",
-          "a": "Além dos US$ 1.200 do preço de compra, o principal custo de uso é o gelo, cerca de US$ 5–15 por dia de uso, dependendo do seu clima. Com uso regular isso pesa, e é o atrito diário de qualquer banheira sem resfriador. Ele também exige mais manutenção do que banheiras com resfriador."
+          "a": "Além dos $1,200 do preço de compra, o principal custo de uso é o gelo, cerca de $5–15 por dia de uso, dependendo do seu clima. Com uso regular isso pesa, e é o atrito diário de qualquer banheira sem resfriador. Ele também exige mais manutenção do que banheiras com resfriador."
         },
         {
           "q": "Para quem o Ice Barrel 500 é mais indicado?",
@@ -4048,7 +4048,7 @@
         "personalization": "O destaque — um plano adaptativo ajustado ao seu nível, à sua frequência e ao seu feedback, embora nem sempre acerte o nível.",
         "app-experience": "Limpo no iOS, mas o app para Android já recebeu reclamações de confiabilidade — áudio cortando, falhas na assinatura.",
         "free-tier": "Um teste grátis de 12 meses incomumente generoso — na prática, um ano inteiro de prática antes de pagar.",
-        "value": "Cerca de 70 USD por ano depois do teste — justo para um plano personalizado.",
+        "value": "Cerca de $70 por ano depois do teste — justo para um plano personalizado.",
         "evidence": "Algum embasamento, mas as evidências não são o foco."
       },
       "content": "## Onde ele se destaca\n\nO Balance é a escolha da personalização deste grupo. Em vez de jogar você em um catálogo enorme, ele monta um plano adaptativo — ajustado ao seu nível de experiência, à frequência com que você pratica e ao feedback que você dá depois das sessões — e vai se ajustando com o tempo. Ele também tem a porta de entrada mais generosa daqui: um teste grátis completo de 12 meses, para você manter uma prática real por um ano antes de decidir pagar.\n\n## Quais são as desvantagens do Balance?\n\nA adaptação é boa, não perfeita — análises independentes apontam que ela nem sempre escolhe o nível certo do curso. O problema maior é a confiabilidade no Android, onde usuários relataram áudio cortando no meio da sessão e falhas na assinatura. E a biblioteca, embora bem construída, é menor que os catálogos extensos do Calm ou do Insight Timer.\n\n## Quem deve escolher o Balance?\n\nEscolha o Balance se você quer um plano que parta de onde você está e se adapte com o tempo, e se o teste grátis de um ano te atrai. Se você quer a maior biblioteca, ou usa Android e se preocupa com confiabilidade, o Insight Timer ou o Headspace são escolhas mais seguras.\n\n---\n\n## Leitura complementar\n\nA ciência do que a meditação realmente faz no nível do sistema nervoso.\n\n- [Sincronização neural por meio da meditação](/articles/neural-entrainment-meditation-2) — por que a prática estruturada remodela os estados corticais de base\n- [Ondas cerebrais alfa: calma, criatividade e flow](/articles/neural-bridge-alpha-flow-gateway) — o que o ritmo alfa faz e o que headsets, apps e músicas \"alfa\" podem ou não mudar\n- [Sincronização rítmica e frequências do sistema](/articles/rhythmic-entrainment-system-frequencies) — por que áudios ritmados e protocolos de respiração se somam com a prática\n",
@@ -4059,7 +4059,7 @@
         },
         {
           "q": "Quanto custa o Balance?",
-          "a": "O Balance custa cerca de US$ 70 por ano, cobrados depois de um teste grátis de 12 meses. Assim, o primeiro ano inteiro é grátis para testar o plano adaptativo e personalizado antes de se comprometer, e o preço depois do teste é razoável para uma assinatura de meditação."
+          "a": "O Balance custa cerca de $70 por ano, cobrados depois de um teste grátis de 12 meses. Assim, o primeiro ano inteiro é grátis para testar o plano adaptativo e personalizado antes de se comprometer, e o preço depois do teste é razoável para uma assinatura de meditação."
         },
         {
           "q": "Quais são as desvantagens do Balance?",
@@ -4096,7 +4096,7 @@
         "app-tracking": "App OOLER com programação da climatização: um dos primeiros sistemas da Sleepme com programação pelo app. Sem monitoramento de HRV nem do sono.",
         "form-factor": "Protetor sobre o colchão que você já tem. Uma zona na versão básica; duas zonas com duas unidades. Unidade central de tamanho moderado.",
         "subscription": "Sem assinatura obrigatória.",
-        "value": "US$ 1.200-1.500 pelo preço do estoque restante. Faixa de melhor custo-benefício dentro da linha Sleepme."
+        "value": "$1,200-1.500 pelo preço do estoque restante. Faixa de melhor custo-benefício dentro da linha Sleepme."
       },
       "content": "## Onde se destaca\n\nO OOLER Sleep System é o veterano protetor refrigerado a água da Sleepme, um dos primeiros sistemas da marca com programação pelo app. Confiabilidade sólida ao longo de vários anos e refrigeração comparável à do Dock Pro premium, a preços de estoque mais baixos.\n\n## Quais são as desvantagens do OOLER Sleep System?\n\nA principal desvantagem é que ele foi substituído pelo Dock Pro na produção nova. Disponível apenas em estoque. Sem monitoramento do sono.\n\n## Quem deve comprar o OOLER Sleep System?\n\nEscolha o OOLER se ele estiver com desconto e você quiser a climatização a água da Sleepme com programação. Para a linha de produção atual, o Dock Pro. Para a entrada mais barata na Sleepme, o ChiliPad Cube.\n\n---\n\n## Leituras de apoio\n\nA biologia de por que a regulação da temperatura da cama influencia a profundidade do sono e a recuperação.\n\n- [Protocolo: o reset circadiano completo](/articles/protocol-circadian-hard-reset) — onde a refrigeração se encaixa em uma rotina para reajustar o ritmo do sono\n- [Sincronia ancestral e âncoras circadianas](/articles/ancestral-sync-circadian-anchors) — âncoras circadianas e temperatura noturna\n- [Hidráulica neural: o fluxo do LCR](/articles/neural-hydraulics-csf-flow) — a circulação do LCR durante o sono e o que a refrigeração favorece\n",
       "faq": [
@@ -4106,7 +4106,7 @@
         },
         {
           "q": "Quanto custa o OOLER Sleep System?",
-          "a": "O OOLER custa de US$ 1.200 a US$ 1.500 pelo preço do estoque restante, cerca de US$ 1.300 para uma unidade queen de uma zona, sem assinatura obrigatória. Ele é a faixa de melhor custo-benefício dentro da linha Sleepme, já que é vendido apenas a partir de um estoque restante limitado, e não de produção nova."
+          "a": "O OOLER custa de $1,200 a $1,500 pelo preço do estoque restante, cerca de $1,300 para uma unidade queen de uma zona, sem assinatura obrigatória. Ele é a faixa de melhor custo-benefício dentro da linha Sleepme, já que é vendido apenas a partir de um estoque restante limitado, e não de produção nova."
         },
         {
           "q": "Devo comprar o OOLER ou o Dock Pro?",
@@ -4131,7 +4131,7 @@
         "A mesma exigência de assinatura do Pod 4",
         "Limitação de espessura do colchão (até ~14 polegadas)",
         "A capa, mais pesada, muda levemente a sensação do colchão",
-        "Ainda é cara: mais de US$ 2.000 só pela capa"
+        "Ainda é cara: mais de $2,000 só pela capa"
       ],
       "scoreNotes": {
         "climate-range": "A mesma faixa de duas zonas do sistema Pod 4: 13–43 °C com ajuste do Autopilot.",
@@ -4139,21 +4139,21 @@
         "app-tracking": "Monitoramento completo de HRV e do sono, idêntico ao do sistema Pod 4 (sem validação independente).",
         "form-factor": "Apenas capa, sobre um colchão existente: a mesma abordagem da capa Pod 4. Mantém as duas zonas.",
         "subscription": "A mesma exigência de assinatura do Autopilot do Pod 4.",
-        "value": "US$ 2.000-2.500: mais barata que a capa Pod 4 (a partir de US$ 2.449, segundo o Tom's Guide). A melhor entrada na Eight Sleep se você não quer trocar o colchão."
+        "value": "$2,000-2.500: mais barata que a capa Pod 4 (a partir de $2,449, segundo o Tom's Guide). A melhor entrada na Eight Sleep se você não quer trocar o colchão."
       },
-      "content": "## Onde se destaca\n\nO Eight Sleep Pod Cover Pro é o Pod só com a capa: a mesma climatização de duas zonas, o mesmo Autopilot, o mesmo monitoramento de HRV, no colchão que você já tem. Como capa para o seu colchão atual, custa mais ou menos o mesmo que a capa do Pod 4 (a partir de US$ 2.449), ou algumas centenas de dólares a menos.\n\n## Quais são as desvantagens do Eight Sleep Pod Cover Pro?\n\nO mesmo modelo de assinatura do Pod 4. Compatibilidade limitada a colchões de ~14 polegadas de espessura. A capa muda levemente a sensação do colchão.\n\n## Quem deve comprar o Eight Sleep Pod Cover Pro?\n\nEscolha o Eight Sleep Pod Cover Pro se você quer os recursos do Pod 4 no colchão atual. Para um colchão integrado, o Pod 4 completo. Sem assinatura, o ChiliPad.\n\n---\n\n## Leituras de apoio\n\nA biologia de por que a regulação da temperatura da cama influencia a profundidade do sono e a recuperação.\n\n- [O sono realmente limpa o cérebro? As evidências sobre o sistema glinfático](/articles/nightly-flush-glymphatic-neural-cache) — o que está demonstrado em pessoas e o que ainda é debatido\n- [Protocolo: o reset circadiano completo](/articles/protocol-circadian-hard-reset) — onde a refrigeração se encaixa em uma rotina para reajustar o ritmo do sono\n- [Sincronia ancestral e âncoras circadianas](/articles/ancestral-sync-circadian-anchors) — por que o resfriamento noturno corresponde à referência ancestral\n",
+      "content": "## Onde se destaca\n\nO Eight Sleep Pod Cover Pro é o Pod só com a capa: a mesma climatização de duas zonas, o mesmo Autopilot, o mesmo monitoramento de HRV, no colchão que você já tem. Como capa para o seu colchão atual, custa mais ou menos o mesmo que a capa do Pod 4 (a partir de $2,449), ou algumas centenas de dólares a menos.\n\n## Quais são as desvantagens do Eight Sleep Pod Cover Pro?\n\nO mesmo modelo de assinatura do Pod 4. Compatibilidade limitada a colchões de ~14 polegadas de espessura. A capa muda levemente a sensação do colchão.\n\n## Quem deve comprar o Eight Sleep Pod Cover Pro?\n\nEscolha o Eight Sleep Pod Cover Pro se você quer os recursos do Pod 4 no colchão atual. Para um colchão integrado, o Pod 4 completo. Sem assinatura, o ChiliPad.\n\n---\n\n## Leituras de apoio\n\nA biologia de por que a regulação da temperatura da cama influencia a profundidade do sono e a recuperação.\n\n- [O sono realmente limpa o cérebro? As evidências sobre o sistema glinfático](/articles/nightly-flush-glymphatic-neural-cache) — o que está demonstrado em pessoas e o que ainda é debatido\n- [Protocolo: o reset circadiano completo](/articles/protocol-circadian-hard-reset) — onde a refrigeração se encaixa em uma rotina para reajustar o ritmo do sono\n- [Sincronia ancestral e âncoras circadianas](/articles/ancestral-sync-circadian-anchors) — por que o resfriamento noturno corresponde à referência ancestral\n",
       "faq": [
         {
           "q": "O Eight Sleep Pod Cover Pro vale a pena?",
-          "a": "Sim, se você quer os recursos do Pod 4 sem trocar o colchão. O Cover Pro tem a mesma refrigeração e aquecimento a água de duas zonas, de 13 a 43 °C, monitoramento de HRV e do sono e Autopilot. Ainda assim custa mais de US$ 2.000 e exige a assinatura."
+          "a": "Sim, se você quer os recursos do Pod 4 sem trocar o colchão. O Cover Pro tem a mesma refrigeração e aquecimento a água de duas zonas, de 13 a 43 °C, monitoramento de HRV e do sono e Autopilot. Ainda assim custa mais de $2,000 e exige a assinatura."
         },
         {
           "q": "Quanto custa o Eight Sleep Pod Cover Pro?",
-          "a": "O Eight Sleep Pod Cover Pro custa cerca de US$ 2.200 no tamanho queen, mais cerca de US$ 20 por mês de assinatura. É uma entrada mais barata no ecossistema Eight Sleep que o sistema completo, porque não inclui colchão."
+          "a": "O Eight Sleep Pod Cover Pro custa cerca de $2,200 no tamanho queen, mais cerca de $20 por mês de assinatura. É uma entrada mais barata no ecossistema Eight Sleep que o sistema completo, porque não inclui colchão."
         },
         {
           "q": "Quais são as desvantagens do Eight Sleep Pod Cover Pro?",
-          "a": "O Cover Pro tem a mesma exigência de assinatura do sistema Pod 4 completo e só serve em colchões de até cerca de 14 polegadas de espessura. A capa, mais pesada, muda levemente a sensação do colchão, e ainda é cara: mais de US$ 2.000."
+          "a": "O Cover Pro tem a mesma exigência de assinatura do sistema Pod 4 completo e só serve em colchões de até cerca de 14 polegadas de espessura. A capa, mais pesada, muda levemente a sensação do colchão, e ainda é cara: mais de $2,000."
         },
         {
           "q": "Para quem o Eight Sleep Pod Cover Pro é mais indicado?",
@@ -4194,13 +4194,13 @@
         "coaching": "Os planos superiores incluem sessões em grupo conduzidas por nutricionistas; o plano padrão é app + módulos de conteúdo.",
         "app-integration": "Suporte a Apple Health e Google Fit; lista de conectores de terceiros mais curta que a do Veri. Conteúdo forte em alemão.",
         "flexibility": "Assinatura mensal com opção de pausa. Sem fidelidade anual por padrão. Exportação de dados brutos disponível mediante solicitação.",
-        "value": "€ 99–129/mês (~US$ 110–145) incluindo os sensores. Preço intermediário na UE."
+        "value": "€ 99–129/mês (~$110–145) incluindo os sensores. Preço intermediário na UE."
       },
       "content": "## Onde ele se destaca\n\nO Hello Inside é a escolha certa para biohackers que falam alemão na região DACH. Os módulos de conteúdo são escritos originalmente em alemão, as sessões em grupo com nutricionista dos planos superiores acontecem em alemão, e o ritmo do app pressupõe um público iniciante que quer ser guiado, e não largado diante de análises. O relatório semanal de progresso por escrito preenche parte da lacuna do coaching humano sem o custo de um nutricionista individual.\n\n## Quais são as desvantagens do Hello Inside?\n\nColoque-o ao lado do Veri e a comparação é clara: o Veri tem mais integrações, um motor analítico mais profundo e maior alcance na UE. A força do Hello Inside é o idioma local, não a paridade de recursos. Fora da região DACH a marca é pouco conhecida e a vantagem do conteúdo em alemão desaparece.\n\n## Quem deve comprar o Hello Inside?\n\nEscolha o Hello Inside se você lê e aprende em alemão e quer um programa de CGM que fale o seu idioma. Fora da região DACH, o Veri (UE) ou o Lingo (o mais barato nos mercados onde é vendido) servem melhor.\n\n---\n\n## Leitura complementar\n\nA biologia metabólica que esses programas revelam — e os protocolos que os dados permitem.\n\n- [Flexibilidade metabólica: o que é e como identificar](/articles/metabolic-flexibility-dual-fuel-system) — o que uma curva de glicose pode e não pode dizer sobre a troca de combustível\n- [Sensor de energia: a leptina](/articles/energy-sensor-leptin) — por que a leptina está por trás dos padrões de saciedade que as curvas do CGM desenham\n",
       "faq": [
         {
           "q": "Quanto custa o Hello Inside?",
-          "a": "O Hello Inside custa € 99–129 por mês (cerca de US$ 110–145), com sensores incluídos. A cobrança é mensal por padrão, então não há fidelidade anual. Os planos superiores acrescentam sessões em grupo com nutricionista, e o programa inclui relatórios semanais de progresso por escrito que funcionam como substituto do coaching."
+          "a": "O Hello Inside custa € 99–129 por mês (cerca de $110–145), com sensores incluídos. A cobrança é mensal por padrão, então não há fidelidade anual. Os planos superiores acrescentam sessões em grupo com nutricionista, e o programa inclui relatórios semanais de progresso por escrito que funcionam como substituto do coaching."
         },
         {
           "q": "Qual sensor de CGM o Hello Inside usa?",
@@ -4213,8 +4213,8 @@
       ]
     },
     "garmin-fenix-8": {
-      "verdict": "O sensor cardíaco mais novo da Garmin (Elevate v5) dentro de um relógio de expedição de US$ 1.000 — você paga principalmente por GPS, mergulho e bateria, não pela HRV.",
-      "summary": "O Fenix 8 traz o novo conjunto óptico Elevate v5 da Garmin (com app de ECG) e uma bateria de várias semanas que torna realmente prática a medição contínua da variabilidade da frequência cardíaca (HRV ou VFC) durante a noite. Mas é um carro-chefe multiesporte grande, pesado e de cerca de US$ 1.000: como monitor de HRV dedicado é exagero, e um anel ou uma pulseira cobrem a HRV noturna por uma fração do preço.",
+      "verdict": "O sensor cardíaco mais novo da Garmin (Elevate v5) dentro de um relógio de expedição de $1,000 — você paga principalmente por GPS, mergulho e bateria, não pela HRV.",
+      "summary": "O Fenix 8 traz o novo conjunto óptico Elevate v5 da Garmin (com app de ECG) e uma bateria de várias semanas que torna realmente prática a medição contínua da variabilidade da frequência cardíaca (HRV ou VFC) durante a noite. Mas é um carro-chefe multiesporte grande, pesado e de cerca de $1,000: como monitor de HRV dedicado é exagero, e um anel ou uma pulseira cobrem a HRV noturna por uma fração do preço.",
       "description": "Garmin Fenix 8 como monitor de HRV — análise da ONDA de um multiesporte premium com sensor Elevate v5 (ECG), bateria de semanas e sem assinatura.",
       "bestFor": "Ideal para atletas e quem pratica atividades ao ar livre e quer um único relógio multiesporte que faz tudo — com uma HRV competente de bônus.",
       "testNote": "Avaliação baseada em evidências — pontuada a partir das especificações do fabricante, de análises independentes de 2024–2026 e da literatura publicada de validação de HRV. Não testado na prática pela ONDA.",
@@ -4226,7 +4226,7 @@
         "Recursos avançados de treino, atividades ao ar livre e mergulho, com dados razoavelmente abertos"
       ],
       "cons": [
-        "Muito caro (~US$ 1.000+) para o que, em termos de HRV, é uma linha de base noturna",
+        "Muito caro (~$1,000+) para o que, em termos de HRV, é uma linha de base noturna",
         "Grande e pesado — muito relógio para dormir",
         "A HRV não é mais especializada no período noturno que a de um anel ou pulseira de recuperação dedicados",
         "O Garmin Connect parece poluído e datado"
@@ -4238,17 +4238,17 @@
         "data-access": "Garmin Connect mais uma API para desenvolvedores — razoavelmente aberto para exportação e ferramentas de terceiros.",
         "wearability": "Um relógio outdoor grande e pesado de 47–51 mm — mas até ~28–48 dias (solar) significam que ele raramente sai do pulso para carregar.",
         "app-ux": "O Garmin Connect é completo, mas poluído e datado perto do Oura ou da Apple.",
-        "value": "De ~US$ 999,99 (AMOLED) a US$ 1.099,99 (51 mm Solar). Sem assinatura, mas você paga preço de carro-chefe multiesporte pela HRV."
+        "value": "De ~$999.99 (AMOLED) a $1,099.99 (51 mm Solar). Sem assinatura, mas você paga preço de carro-chefe multiesporte pela HRV."
       },
-      "content": "## Onde ele se destaca\n\nO Fenix 8 tem o sensor cardíaco mais novo da Garmin (**Elevate v5**): o conjunto adiciona um app de ECG e temperatura da pele à [HRV](/glossary/heart-rate-variability) óptica de sempre, à frequência cardíaca e ao Pulse Ox. O HRV Status da Garmin constrói uma linha de base noturna ao longo de cerca de três semanas e indica equilibrado versus desequilibrado, alimentando um relatório matinal ao lado do Body Battery e do sono. O recurso matador especificamente para a HRV é a bateria: até ~28 dias no 47 mm Solar e ~48 dias no 51 mm, então o relógio quase nunca sai do pulso para carregar — exatamente o que um registro contínuo de HRV noturna precisa. E, como todo Garmin, não há assinatura.\n\n## Quais são as desvantagens do Garmin Fenix 8?\n\nÉ um relógio multiesporte de nível expedição de cerca de US$ 1.000. Só para HRV, é um exagero enorme: um anel ou uma cinta peitoral cobrem a HRV noturna por uma fração do preço e com muito menos volume. O Fenix 8 é grande e pesado para dormir, o HRV Status não é mais especializado no período noturno que um monitor de recuperação dedicado, e o Garmin Connect — embora completo — é uma experiência poluída e datada perto do Oura ou da Apple. Você paga pelo GPS multibanda, por um computador de mergulho de 40 m, uma lanterna e um alto-falante, não pela matemática do coração.\n\n## Quem deve comprar o Garmin Fenix 8?\n\nCompre o Fenix 8 se você quer um único relógio sem assinatura que faça treino sério, navegação ao ar livre e mergulho *e* uma HRV competente, com uma bateria que torna trivial usá-lo toda noite. Se a precisão da HRV noturna é a única coisa que importa para você, gaste uma fração desse dinheiro em um anel ou uma cinta.\n\n---\n\n## Leitura complementar\n\nPor que a HRV é o sinal que vale a pena acompanhar — e por que o número muda de um dispositivo para outro.\n\n- [Por que sua HRV é diferente em cada dispositivo](/articles/hrv-different-every-device) — RMSSD vs SDNN, PPG vs ECG e em qual leitura confiar\n- [A HRV prevê o tempo de reação e o foco?](/articles/nervous-system-ping-latency) — o que a HRV em repouso diz e não diz sobre atenção e autocontrole\n",
+      "content": "## Onde ele se destaca\n\nO Fenix 8 tem o sensor cardíaco mais novo da Garmin (**Elevate v5**): o conjunto adiciona um app de ECG e temperatura da pele à [HRV](/glossary/heart-rate-variability) óptica de sempre, à frequência cardíaca e ao Pulse Ox. O HRV Status da Garmin constrói uma linha de base noturna ao longo de cerca de três semanas e indica equilibrado versus desequilibrado, alimentando um relatório matinal ao lado do Body Battery e do sono. O recurso matador especificamente para a HRV é a bateria: até ~28 dias no 47 mm Solar e ~48 dias no 51 mm, então o relógio quase nunca sai do pulso para carregar — exatamente o que um registro contínuo de HRV noturna precisa. E, como todo Garmin, não há assinatura.\n\n## Quais são as desvantagens do Garmin Fenix 8?\n\nÉ um relógio multiesporte de nível expedição de cerca de $1,000. Só para HRV, é um exagero enorme: um anel ou uma cinta peitoral cobrem a HRV noturna por uma fração do preço e com muito menos volume. O Fenix 8 é grande e pesado para dormir, o HRV Status não é mais especializado no período noturno que um monitor de recuperação dedicado, e o Garmin Connect — embora completo — é uma experiência poluída e datada perto do Oura ou da Apple. Você paga pelo GPS multibanda, por um computador de mergulho de 40 m, uma lanterna e um alto-falante, não pela matemática do coração.\n\n## Quem deve comprar o Garmin Fenix 8?\n\nCompre o Fenix 8 se você quer um único relógio sem assinatura que faça treino sério, navegação ao ar livre e mergulho *e* uma HRV competente, com uma bateria que torna trivial usá-lo toda noite. Se a precisão da HRV noturna é a única coisa que importa para você, gaste uma fração desse dinheiro em um anel ou uma cinta.\n\n---\n\n## Leitura complementar\n\nPor que a HRV é o sinal que vale a pena acompanhar — e por que o número muda de um dispositivo para outro.\n\n- [Por que sua HRV é diferente em cada dispositivo](/articles/hrv-different-every-device) — RMSSD vs SDNN, PPG vs ECG e em qual leitura confiar\n- [A HRV prevê o tempo de reação e o foco?](/articles/nervous-system-ping-latency) — o que a HRV em repouso diz e não diz sobre atenção e autocontrole\n",
       "faq": [
         {
-          "q": "O Garmin Fenix 8 vale US$ 999 para HRV?",
+          "q": "O Garmin Fenix 8 vale $999 para HRV?",
           "a": "Não só para HRV — ele usa o mesmo método HRV Status que o Venu 4, bem mais barato. O preço extra do Fenix paga ECG, GPS multibanda, mapas, um computador de mergulho e bateria de várias semanas."
         },
         {
           "q": "O Garmin Fenix 8 precisa de assinatura?",
-          "a": "Não — é uma compra única a partir de cerca de US$ 999, sem assinatura para recursos de HRV, treino ou recuperação."
+          "a": "Não — é uma compra única a partir de cerca de $999, sem assinatura para recursos de HRV, treino ou recuperação."
         },
         {
           "q": "Quanto dura a bateria do Fenix 8?",
@@ -7595,7 +7595,7 @@
         },
         {
           "name": "Preço e assinatura",
-          "note": "Oura: a partir de $349 + assinatura de $5,99/mês ou $69,99/ano — cerca de $559 em três anos. Whoop: só por assinatura, a $199 (One), $239 (Peak) ou $359 (Life) por ano, pulseira incluída — $597–$1.077 em três anos. O Whoop é mais barato no início; o Oura sai um pouco mais barato em três anos do que até o plano mais barato do Whoop."
+          "note": "Oura: a partir de $349 + assinatura de $5.99/mês ou $69.99/ano — cerca de $559 em três anos. Whoop: só por assinatura, a $199 (One), $239 (Peak) ou $359 (Life) por ano, pulseira incluída — $597–$1,077 em três anos. O Whoop é mais barato no início; o Oura sai um pouco mais barato em três anos do que até o plano mais barato do Whoop."
         }
       ],
       "faq": [
@@ -7609,7 +7609,7 @@
         },
         {
           "q": "Preciso de assinatura em algum dos dois?",
-          "a": "Nos dois, na prática. O Oura exige a assinatura Oura de $5,99/mês para todos os recursos. O Whoop é só por assinatura — $199, $239 ou $359 por ano (One, Peak, Life) com a pulseira incluída. Nenhum dos dois aparelhos tem todos os recursos sem um pagamento contínuo."
+          "a": "Nos dois, na prática. O Oura exige a assinatura Oura de $5.99/mês para todos os recursos. O Whoop é só por assinatura — $199, $239 ou $359 por ano (One, Peak, Life) com a pulseira incluída. Nenhum dos dois aparelhos tem todos os recursos sem um pagamento contínuo."
         },
         {
           "q": "Posso usar o Oura Ring 4 na academia?",
@@ -7652,7 +7652,7 @@
         },
         {
           "name": "Preço / assinatura",
-          "note": "Charge 6: $159, tendências de HRV grátis, alguns insights mais profundos no plano Premium de $9,99/mês. Series 12: $399, sem assinatura. O Fitbit custa bem menos da metade."
+          "note": "Charge 6: $159, tendências de HRV grátis, alguns insights mais profundos no plano Premium de $9.99/mês. Series 12: $399, sem assinatura. O Fitbit custa bem menos da metade."
         }
       ],
       "faq": [
@@ -7662,7 +7662,7 @@
         },
         {
           "q": "Preciso do Fitbit Premium para ter HRV no Charge 6?",
-          "a": "Não. As tendências de HRV do Charge 6 agora são gratuitas; só alguns insights mais profundos ficam no plano Premium de $9,99 por mês. O Apple Watch Series 12 não precisa de assinatura para os recursos de HRV, ECG ou hipertensão."
+          "a": "Não. As tendências de HRV do Charge 6 agora são gratuitas; só alguns insights mais profundos ficam no plano Premium de $9.99 por mês. O Apple Watch Series 12 não precisa de assinatura para os recursos de HRV, ECG ou hipertensão."
         },
         {
           "q": "O Apple Watch Series 12 vale $240 a mais que um Fitbit Charge 6?",
@@ -7709,7 +7709,7 @@
         },
         {
           "name": "Preço",
-          "note": "Insight Timer: realmente gratuito + Member Plus opcional (US$60/ano, teste grátis de 7 dias). Headspace: assinatura de ~$70/ano necessária para a maior parte do conteúdo. O Insight Timer é mais barato em todos os níveis."
+          "note": "Insight Timer: realmente gratuito + Member Plus opcional ($60/ano, teste grátis de 7 dias). Headspace: assinatura de ~$70/ano necessária para a maior parte do conteúdo. O Insight Timer é mais barato em todos os níveis."
         }
       ],
       "faq": [
@@ -7719,7 +7719,7 @@
         },
         {
           "q": "O Insight Timer é mesmo gratuito?",
-          "a": "Sim — a maior parte da biblioteca de mais de 360.000 meditações é realmente gratuita, sem limite de tempo. O Member Plus (US$60/ano, teste grátis de 7 dias) libera cursos premium e downloads offline; o plano gratuito basta para a maioria dos usuários."
+          "a": "Sim — a maior parte da biblioteca de mais de 360.000 meditações é realmente gratuita, sem limite de tempo. O Member Plus ($60/ano, teste grátis de 7 dias) libera cursos premium e downloads offline; o plano gratuito basta para a maioria dos usuários."
         },
         {
           "q": "Qual é melhor para iniciantes?",
@@ -7734,9 +7734,9 @@
     },
     "eight-sleep-pod-5-vs-bedjet-3": {
       "title": "Eight Sleep Pod 5 vs BedJet 3: comparativo (2026)",
-      "description": "Eight Sleep Pod 5 vs BedJet 3: o Pod 5 Ultra de $6.099 contra o climatizador por ar de ~$600. Resfriamento, monitoramento, instalação e preço.",
-      "intro": "O Eight Sleep Pod 5 e o BedJet 3 estão nos extremos do mercado de climatização do sono — e resfriam de formas diferentes. O Pod 5 Ultra é a cama inteligente resfriada a água mais completa: capa de zona dupla mais uma manta que atua de cima, monitoramento integrado da variabilidade da frequência cardíaca (HRV ou VFC), software Autopilot e extras para a cama toda, a partir de cerca de $6.099 mais uma assinatura. O BedJet 3 sopra ar quente ou frio por um duto sob o lençol por cerca de $600, sem água para administrar e sem monitoramento. É uma diferença de preço de 10× entre duas abordagens muito diferentes.",
-      "verdict": "Cama inteligente resfriada a água no máximo de recursos contra fluxo de ar simples e acessível. O Eight Sleep Pod 5 vence em rigor de resfriamento, monitoramento integrado de HRV e software — a ~$6.099 pelo Pod 5 Ultra mais uma assinatura. O BedJet 3 vence em preço, sem manutenção de água e com instalação fácil — por cerca de um décimo do custo, com controle de temperatura menos preciso e sem monitoramento. Escolha conforme o orçamento e o rigor de que você precisa.",
+      "description": "Eight Sleep Pod 5 vs BedJet 3: o Pod 5 Ultra de $6,099 contra o climatizador por ar de ~$600. Resfriamento, monitoramento, instalação e preço.",
+      "intro": "O Eight Sleep Pod 5 e o BedJet 3 estão nos extremos do mercado de climatização do sono — e resfriam de formas diferentes. O Pod 5 Ultra é a cama inteligente resfriada a água mais completa: capa de zona dupla mais uma manta que atua de cima, monitoramento integrado da variabilidade da frequência cardíaca (HRV ou VFC), software Autopilot e extras para a cama toda, a partir de cerca de $6,099 mais uma assinatura. O BedJet 3 sopra ar quente ou frio por um duto sob o lençol por cerca de $600, sem água para administrar e sem monitoramento. É uma diferença de preço de 10× entre duas abordagens muito diferentes.",
+      "verdict": "Cama inteligente resfriada a água no máximo de recursos contra fluxo de ar simples e acessível. O Eight Sleep Pod 5 vence em rigor de resfriamento, monitoramento integrado de HRV e software — a ~$6,099 pelo Pod 5 Ultra mais uma assinatura. O BedJet 3 vence em preço, sem manutenção de água e com instalação fácil — por cerca de um décimo do custo, com controle de temperatura menos preciso e sem monitoramento. Escolha conforme o orçamento e o rigor de que você precisa.",
       "bestForA": "Escolha o Eight Sleep Pod 5 se você quer o resfriamento de zona dupla mais rigoroso, monitoramento integrado de HRV e sono e o software adaptativo Autopilot — e o preço premium e a assinatura são aceitáveis.",
       "bestForB": "Escolha o BedJet 3 se você quer resfriar a cama de forma eficaz e acessível sem lidar com água nem pagar assinatura, com instalação fácil, e não precisa de monitoramento integrado nem de controle preciso grau a grau.",
       "axes": [
@@ -7762,13 +7762,13 @@
         },
         {
           "name": "Preço",
-          "note": "BedJet 3: ~$600 (uma unidade; zona dupla com duas), sem assinatura. Pod 5 Ultra: ~$6.099 + assinatura contínua. O BedJet custa cerca de um décimo."
+          "note": "BedJet 3: ~$600 (uma unidade; zona dupla com duas), sem assinatura. Pod 5 Ultra: ~$6,099 + assinatura contínua. O BedJet custa cerca de um décimo."
         }
       ],
       "faq": [
         {
           "q": "Eight Sleep Pod 5 ou BedJet 3 — qual é melhor?",
-          "a": "Orçamentos e necessidades diferentes. O Pod 5 é o sistema mais rigoroso — resfriamento a água preciso, monitoramento integrado de HRV, software adaptativo —, mas o Pod 5 Ultra custa ~$6.099 mais uma assinatura. O BedJet 3 resfria a cama com eficácia por cerca de um décimo do preço, sem água e sem monitoramento. Escolha conforme o orçamento e a precisão e os dados de que você precisa."
+          "a": "Orçamentos e necessidades diferentes. O Pod 5 é o sistema mais rigoroso — resfriamento a água preciso, monitoramento integrado de HRV, software adaptativo —, mas o Pod 5 Ultra custa ~$6,099 mais uma assinatura. O BedJet 3 resfria a cama com eficácia por cerca de um décimo do preço, sem água e sem monitoramento. Escolha conforme o orçamento e a precisão e os dados de que você precisa."
         },
         {
           "q": "O BedJet resfria tão bem quanto o Eight Sleep?",
@@ -7779,7 +7779,7 @@
           "a": "Só se você quer o monitoramento integrado de HRV/sono, o software adaptativo Autopilot e os extras para a cama toda — além do resfriamento a água preciso. Se você só quer a cama mais fresca à noite sem lidar com água nem assinatura, o BedJet 3 entrega a maior parte do benefício do dia a dia por uma fração do custo."
         }
       ],
-      "content": "> Atualização (setembro de 2026): a Eight Sleep substituiu o Pod 5 pelo Pod 6 em 23 de setembro de 2026 (a partir de $1.999 o Solo; $2.899 a queen de zona dupla). Os preços do Pod 5 abaixo são os últimos preços de tabela — compare o estoque restante do Pod 5 com os preços do Pod 6.\n\n## A versão curta\n\nExtremos opostos do mercado. O [Eight Sleep Pod 5](/reviews/eight-sleep-pod-5) é a cama inteligente resfriada a água mais completa — resfriamento preciso de zona dupla, monitoramento de HRV, software Autopilot, extras para a cama toda — a ~$6.099 pelo Pod 5 Ultra mais uma assinatura. O [BedJet 3](/reviews/bedjet-3) sopra ar frio ou quente sob o lençol por ~$600, sem água e sem monitoramento.\n\n## Quando o Eight Sleep Pod 5 é a escolha certa?\n\nVocê quer o resfriamento mais rigoroso e monitoramento integrado da recuperação, e o preço premium e a assinatura são aceitáveis. É o sistema para otimizar o sono com base em dados.\n\n## Quando o BedJet 3 é a escolha certa?\n\nVocê quer resfriar a cama de forma eficaz e acessível sem lidar com água nem pagar assinatura, com instalação fácil, e não precisa de monitoramento integrado nem de controle preciso grau a grau.\n\n## Também vale comparar\n\nPara o caminho intermediário de resfriamento a água sem assinatura, veja [Pod 5 vs ChiliPad Dock Pro](/reviews/vs/eight-sleep-pod-5-vs-chilipad-dock-pro). Panorama completo: [os melhores sistemas inteligentes de climatização do sono](/reviews/smart-sleep-climate)."
+      "content": "> Atualização (setembro de 2026): a Eight Sleep substituiu o Pod 5 pelo Pod 6 em 23 de setembro de 2026 (a partir de $1,999 o Solo; $2,899 a queen de zona dupla). Os preços do Pod 5 abaixo são os últimos preços de tabela — compare o estoque restante do Pod 5 com os preços do Pod 6.\n\n## A versão curta\n\nExtremos opostos do mercado. O [Eight Sleep Pod 5](/reviews/eight-sleep-pod-5) é a cama inteligente resfriada a água mais completa — resfriamento preciso de zona dupla, monitoramento de HRV, software Autopilot, extras para a cama toda — a ~$6,099 pelo Pod 5 Ultra mais uma assinatura. O [BedJet 3](/reviews/bedjet-3) sopra ar frio ou quente sob o lençol por ~$600, sem água e sem monitoramento.\n\n## Quando o Eight Sleep Pod 5 é a escolha certa?\n\nVocê quer o resfriamento mais rigoroso e monitoramento integrado da recuperação, e o preço premium e a assinatura são aceitáveis. É o sistema para otimizar o sono com base em dados.\n\n## Quando o BedJet 3 é a escolha certa?\n\nVocê quer resfriar a cama de forma eficaz e acessível sem lidar com água nem pagar assinatura, com instalação fácil, e não precisa de monitoramento integrado nem de controle preciso grau a grau.\n\n## Também vale comparar\n\nPara o caminho intermediário de resfriamento a água sem assinatura, veja [Pod 5 vs ChiliPad Dock Pro](/reviews/vs/eight-sleep-pod-5-vs-chilipad-dock-pro). Panorama completo: [os melhores sistemas inteligentes de climatização do sono](/reviews/smart-sleep-climate)."
     },
     "finnleo-hallmark-vs-almost-heaven-salem": {
       "title": "Finnleo Hallmark vs Almost Heaven Salem: comparativo 2026",
@@ -7787,7 +7787,7 @@
       "intro": "Finnleo Hallmark e Almost Heaven Salem são as duas saunas tradicionais de convecção em estilo finlandês que as pessoas comparam quando o IR não é a escolha. Ambas entregam o calor pleno da sauna finlandesa (80–95 °C) com possibilidade de vapor löyly e têm confiabilidade de marca de várias décadas. A diferença estrutural é uma cabine interna de engenharia finlandesa contra um barril externo de cedro americano.",
       "verdict": "O formato decide. Finnleo Hallmark para instalação interna com tradição de fabricação finlandesa. Almost Heaven Salem para instalação de barril externo com construção em cedro americano.",
       "bestForA": "Escolha a Finnleo Hallmark se você quer uma sauna finlandesa interna premium, com calor de engenharia Helo e uma longa história de fabricação finlandesa.",
-      "bestForB": "Escolha a Almost Heaven Salem se você quer uma sauna barril tradicional de cedro para área externa, de construção americana, com aquecedor elétrico de 6 kW e o preço mais baixo (US$ 4.485 de preço de tabela pela Salem para 2 pessoas).",
+      "bestForB": "Escolha a Almost Heaven Salem se você quer uma sauna barril tradicional de cedro para área externa, de construção americana, com aquecedor elétrico de 6 kW e o preço mais baixo ($4,485 de preço de tabela pela Salem para 2 pessoas).",
       "axes": [
         {
           "name": "Qualidade do aquecedor",
@@ -7815,7 +7815,7 @@
         },
         {
           "name": "Preço",
-          "note": "Almost Heaven Salem: US$ 4.485 de preço de tabela (US$ 4.036,50 em promoção, outubro de 2026) com aquecedor incluído. Finnleo: US$ 6.000–12.000 ou mais. A Almost Heaven é claramente mais barata."
+          "note": "Almost Heaven Salem: $4,485 de preço de tabela ($4,036.50 em promoção, outubro de 2026) com aquecedor incluído. Finnleo: $6,000–12.000 ou mais. A Almost Heaven é claramente mais barata."
         }
       ],
       "faq": [
@@ -7836,7 +7836,7 @@
           "a": "Nenhuma tem estudos específicos do aparelho. A evidência publicada (estudos de coorte observacionais de Kuopio sobre mortalidade cardiovascular e risco de demência — associações, não causa) é sobre o banho de sauna finlandesa tradicional em geral, não sobre nenhuma das marcas. Ambas oferecem esse tipo de calor; a Finnleo é uma cabine interna, a Almost Heaven Salem um barril externo."
         }
       ],
-      "content": "## Em resumo\n\nAmbas entregam o calor tradicional da sauna finlandesa com tradição de marca de várias décadas. A Finnleo Hallmark é a referência interna de fabricação finlandesa; a Almost Heaven Salem é o barril externo de cedro vermelho americano.\n\n## Quando a Finnleo Hallmark é a escolha certa?\n\nSe você tem espaço para instalação interna e quer tradição de fabricação finlandesa premium com calor de engenharia Helo — a Finnleo é o formato certo. O formato interno é o mais próximo dos estudos de coorte finlandeses, que analisaram o banho de sauna em geral, não a Finnleo.\n\n## Quando a Almost Heaven Salem é a escolha certa?\n\nSe você tem espaço para instalação externa e quer uma sauna barril tradicional de cedro com construção americana — a Almost Heaven é o formato certo. Ela acomoda duas pessoas, funciona com um aquecedor elétrico de 6 kW (sem opção a lenha na Salem), tem garantia vitalícia limitada contra defeitos e custa claramente menos — US$ 4.485 de preço de tabela com aquecedor incluído."
+      "content": "## Em resumo\n\nAmbas entregam o calor tradicional da sauna finlandesa com tradição de marca de várias décadas. A Finnleo Hallmark é a referência interna de fabricação finlandesa; a Almost Heaven Salem é o barril externo de cedro vermelho americano.\n\n## Quando a Finnleo Hallmark é a escolha certa?\n\nSe você tem espaço para instalação interna e quer tradição de fabricação finlandesa premium com calor de engenharia Helo — a Finnleo é o formato certo. O formato interno é o mais próximo dos estudos de coorte finlandeses, que analisaram o banho de sauna em geral, não a Finnleo.\n\n## Quando a Almost Heaven Salem é a escolha certa?\n\nSe você tem espaço para instalação externa e quer uma sauna barril tradicional de cedro com construção americana — a Almost Heaven é o formato certo. Ela acomoda duas pessoas, funciona com um aquecedor elétrico de 6 kW (sem opção a lenha na Salem), tem garantia vitalícia limitada contra defeitos e custa claramente menos — $4,485 de preço de tabela com aquecedor incluído."
     },
     "plunge-vs-edge-tub": {
       "title": "The Plunge vs Edge Tub: comparativo (2026)",
@@ -7872,7 +7872,7 @@
         },
         {
           "name": "Preço",
-          "note": "Edge: US$ 2.495. Plunge: US$ 5.990. A Edge custa cerca de 42% da Plunge: a diferença mais significativa do comparativo."
+          "note": "Edge: $2,495. Plunge: $5,990. A Edge custa cerca de 42% da Plunge: a diferença mais significativa do comparativo."
         }
       ],
       "faq": [
@@ -7893,23 +7893,23 @@
           "a": "Ambas chegam prontas para usar: superfície nivelada, tomada de 110 V e drenagem. Esforço de instalação comparável."
         }
       ],
-      "content": "## Resumo\n\nA Plunge é a opção premium; a Edge é a rival de preço enxuto com hardware comparável. A decisão depende de a marca premium valer US$ 3.500 para você.\n\n## Quando a The Plunge é a escolha certa?\n\nSe você quer a construção premium com os dados de confiabilidade de vários anos mais longos, uma leve vantagem de potência do chiller, garantia de 3 anos e o ecossistema de conteúdo do fundador, a The Plunge é a que se encaixa.\n\n## Quando a Edge Tub é a escolha certa?\n\nSe você quer a capacidade de uma banheira de imersão com chiller integrado pelo preço mais acessível da categoria, a Edge é a que se encaixa. Para a prática diária típica em casa, o hardware entrega o que a maioria dos usuários realmente precisa."
+      "content": "## Resumo\n\nA Plunge é a opção premium; a Edge é a rival de preço enxuto com hardware comparável. A decisão depende de a marca premium valer $3,500 para você.\n\n## Quando a The Plunge é a escolha certa?\n\nSe você quer a construção premium com os dados de confiabilidade de vários anos mais longos, uma leve vantagem de potência do chiller, garantia de 3 anos e o ecossistema de conteúdo do fundador, a The Plunge é a que se encaixa.\n\n## Quando a Edge Tub é a escolha certa?\n\nSe você quer a capacidade de uma banheira de imersão com chiller integrado pelo preço mais acessível da categoria, a Edge é a que se encaixa. Para a prática diária típica em casa, o hardware entrega o que a maioria dos usuários realmente precisa."
     },
     "sun-home-equinox-vs-clearlight-sanctuary-2": {
       "title": "Sun Home Equinox vs Clearlight Sanctuary 2: comparativo",
-      "description": "Sun Home Equinox vs Clearlight Sanctuary 2: novata em conta com luz vermelha integrada contra a premium apoiada pela Jacuzzi e com garantia maior.",
-      "intro": "As duas são cabines de infravermelho de espectro completo premium vendidas como de baixo EMF, então a escolha se resume a calor, extras, preço e respaldo da marca. A Sun Home Equinox é a novata focada em custo-benefício, com temperatura nominal de ~165 °F (especificação do fabricante) e luz vermelha e cromoterapia integradas. A Clearlight Sanctuary 2 é a premium consolidada, apoiada pela Jacuzzi e com uma garantia forte. Recursos de novata contra pedigree premium.",
-      "verdict": "Custo-benefício e recursos contra pedigree e garantia. A Sun Home Equinox vence em potência de calor e extras incluídos (luz vermelha integrada, cromoterapia, som). A Clearlight Sanctuary 2 vence em reputação de construção e na garantia vitalícia apoiada pela Jacuzzi, mas agora custa mais (US$ 7.299 contra ~US$ 6.000). A As duas divulgam baixo EMF, e nenhuma publica um número independente que possamos comparar. Escolha a Sun Home pelo pacote de recursos e pelo calor; a Clearlight, pela garantia e pela longa história da marca.",
-      "bestForA": "Escolha a Sun Home Equinox se você quer uma cabine com temperatura nominal de ~165 °F (especificação do fabricante), luz vermelha e cromoterapia integradas e um pacote de preço enxuto de uma marca nova forte.",
-      "bestForB": "Escolha a Clearlight Sanctuary 2 se o alcance da garantia, a história da marca e o respaldo da Jacuzzi são o mais importante e o preço maior (US$ 7.299 em basswood) é aceitável.",
+      "description": "Sun Home Equinox vs Clearlight Sanctuary 2: novata em conta com extras incluídos contra a premium apoiada pela Jacuzzi e com garantia maior.",
+      "intro": "As duas são cabines de infravermelho de espectro completo premium vendidas como de baixo EMF, então a escolha se resume a calor, extras, preço e respaldo da marca. A Sun Home Equinox é a novata focada em custo-benefício, com temperatura nominal de ~165 °F (especificação do fabricante), com cromoterapia e som. A Clearlight Sanctuary 2 é a premium consolidada, apoiada pela Jacuzzi e com uma garantia forte. Recursos de novata contra pedigree premium.",
+      "verdict": "Custo-benefício e recursos contra pedigree e garantia. A Sun Home Equinox vence em potência de calor e extras incluídos (cromoterapia, som). A Clearlight Sanctuary 2 vence em reputação de construção e na garantia vitalícia apoiada pela Jacuzzi, mas custa mais ($7,299 contra $6,799 de preço de tabela, $6,099 em promoção). As duas divulgam baixo EMF, e nenhuma publica um número independente que possamos comparar. Escolha a Sun Home pelo pacote de recursos e pelo calor; a Clearlight, pela garantia e pela longa história da marca.",
+      "bestForA": "Escolha a Sun Home Equinox se você quer uma cabine com temperatura nominal de ~165 °F (especificação do fabricante), cromoterapia e som, e um pacote de preço enxuto de uma marca nova forte.",
+      "bestForB": "Escolha a Clearlight Sanctuary 2 se o alcance da garantia, a história da marca e o respaldo da Jacuzzi são o mais importante e o preço maior ($7,299 em basswood) é aceitável.",
       "axes": [
         {
           "name": "Potência de calor",
           "note": "A Sun Home Equinox tem temperatura nominal de ~165 °F (especificação do fabricante). A Clearlight costuma chegar a no máximo cerca de 150–157 °F."
         },
         {
-          "name": "Luz vermelha integrada / extras",
-          "note": "A Sun Home inclui de série painéis de luz vermelha integrados, cromoterapia e som. A Clearlight mantém um pacote mais limpo e tradicional."
+          "name": "Extras incluídos",
+          "note": "A Sun Home inclui de série cromoterapia e som (a terapia de luz vermelha aparece como não incluída). A Clearlight mantém um pacote mais limpo e tradicional."
         },
         {
           "name": "Garantia e respaldo da marca",
@@ -7921,7 +7921,7 @@
         },
         {
           "name": "Preço",
-          "note": "Sun Home Equinox: a partir de ~US$ 6.000 (2 pessoas). Clearlight Sanctuary 2: US$ 7.299 em basswood / US$ 7.699 em mogno (loja oficial, 2026-10-01). A Sun Home é cerca de US$ 1.300 mais barata."
+          "note": "Sun Home Equinox para 2 pessoas: $6,799 de preço de tabela, $6,099 em promoção (loja oficial, 2026-10-18). Clearlight Sanctuary 2: $7,299 em basswood / $7,699 em mogno (loja oficial, 2026-10-01). A Sun Home é cerca de $500 a $1,200 mais barata."
         },
         {
           "name": "Qualidade de espectro completo",
@@ -7931,18 +7931,18 @@
       "faq": [
         {
           "q": "Sun Home Equinox ou Clearlight Sanctuary 2?",
-          "a": "Ambas são cabines premium de espectro completo vendidas como de baixo EMF. A Sun Home Equinox vence em calor e extras incluídos (luz vermelha integrada, cromoterapia); a Clearlight Sanctuary 2 vence em garantia, história da marca e respaldo da Jacuzzi, por um preço maior (US$ 7.299 contra ~US$ 6.000). Escolha entre recursos e calor ou pedigree e garantia."
+          "a": "Ambas são cabines premium de espectro completo vendidas como de baixo EMF. A Sun Home Equinox vence em calor e extras incluídos (cromoterapia, som); a Clearlight Sanctuary 2 vence em garantia, história da marca e respaldo da Jacuzzi, por um preço maior ($7,299 contra $6,799 de preço de tabela). Escolha entre recursos e calor ou pedigree e garantia."
         },
         {
           "q": "Qual esquenta mais?",
-          "a": "A Sun Home Equinox: cerca de 165 °F contra aproximadamente 150–157 °F da Clearlight Sanctuary 2. Se você quer o calor mais intenso, a Sun Home sai na frente."
+          "a": "A Sun Home Equinox: cerca de 165 °F (especificação do fabricante) contra aproximadamente 150–157 °F da Clearlight Sanctuary 2. Se você quer o calor mais intenso, a Sun Home sai na frente."
         },
         {
           "q": "As duas têm baixo EMF?",
           "a": "Ambas são vendidas como de baixo EMF. A Sun Home cita verificação de terceiros, mas não publica a distância de medição; os números da Clearlight são do fabricante. Nenhuma tem um número independente que possamos comparar, então trate ambas como alegações dos fabricantes e peça o relatório de teste atual se o EMF for um fator decisivo."
         }
       ],
-      "content": "## Resumo\n\nA [Sun Home Equinox](/reviews/sun-home-equinox) é a novata focada em custo-benefício, com temperatura nominal de ~165 °F (especificação do fabricante) e luz vermelha integrada; a [Clearlight Sanctuary 2](/reviews/clearlight-sanctuary-2) é a premium apoiada pela Jacuzzi com a garantia mais longa, por um preço maior (US$ 7.299 em basswood).\n\n## Quando a Sun Home Equinox é a escolha certa?\n\nVocê quer a cabine mais quente, luz vermelha e cromoterapia integradas e um pacote de preço enxuto.\n\n## Quando a Clearlight Sanctuary 2 é a escolha certa?\n\nO alcance da garantia, a história da marca e o respaldo da Jacuzzi são o mais importante.\n\n## Também vale comparar\n\nContra a líder da categoria, veja [Sun Home Equinox vs Sunlighten mPulse](/reviews/vs/sun-home-equinox-vs-sunlighten-mpulse) e [Sunlighten mPulse vs Clearlight Sanctuary 2](/reviews/vs/sunlighten-mpulse-vs-clearlight-sanctuary-2). Todas as opções: [as melhores saunas de infravermelho](/reviews/infrared-sauna)."
+      "content": "## Resumo\n\nA [Sun Home Equinox](/reviews/sun-home-equinox) é a novata focada em custo-benefício, com temperatura nominal de ~165 °F (especificação do fabricante), com cromoterapia e som; a [Clearlight Sanctuary 2](/reviews/clearlight-sanctuary-2) é a premium apoiada pela Jacuzzi com a garantia mais longa, por um preço maior ($7,299 em basswood).\n\n## Quando a Sun Home Equinox é a escolha certa?\n\nVocê quer uma cabine mais quente, cromoterapia e som, e um pacote de preço enxuto.\n\n## Quando a Clearlight Sanctuary 2 é a escolha certa?\n\nO alcance da garantia, a história da marca e o respaldo da Jacuzzi são o mais importante.\n\n## Também vale comparar\n\nContra a líder da categoria, veja [Sun Home Equinox vs Sunlighten mPulse](/reviews/vs/sun-home-equinox-vs-sunlighten-mpulse) e [Sunlighten mPulse vs Clearlight Sanctuary 2](/reviews/vs/sunlighten-mpulse-vs-clearlight-sanctuary-2). Todas as opções: [as melhores saunas de infravermelho](/reviews/infrared-sauna)."
     },
     "eight-sleep-pod-3-vs-eight-sleep-pod-cover-pro": {
       "title": "Eight Sleep Pod 3 vs Pod Cover Pro: comparativo (2026)",
@@ -8016,7 +8016,7 @@
         },
         {
           "name": "Assinatura",
-          "note": "Praticamente iguais entre ChiliPad e BedJet: nenhum precisa de assinatura. O Eight Sleep precisa do Autopilot (cerca de US$ 15–25 por mês) para todos os recursos."
+          "note": "Praticamente iguais entre ChiliPad e BedJet: nenhum precisa de assinatura. O Eight Sleep precisa do Autopilot (cerca de $15–25 por mês) para todos os recursos."
         },
         {
           "name": "Manutenção",
@@ -8032,7 +8032,7 @@
         },
         {
           "name": "Preço",
-          "note": "Custo total em 3 anos do Eight Sleep Pod 4: ~US$ 4.500–4.900 (~US$ 4.000 no tamanho queen mais ~US$ 15–25/mês de assinatura). ChiliPad: ~US$ 1.700 em pagamento único. BedJet: ~US$ 600–900 em pagamento único. O BedJet custa uma fração do total do Eight Sleep."
+          "note": "Custo total em 3 anos do Eight Sleep Pod 4: ~$4,500–4.900 (~$4,000 no tamanho queen mais ~$15–25/mês de assinatura). ChiliPad: ~$1,700 em pagamento único. BedJet: ~$600–900 em pagamento único. O BedJet custa uma fração do total do Eight Sleep."
         }
       ],
       "faq": [
@@ -8054,7 +8054,7 @@
         },
         {
           "q": "Qual tem o melhor retorno para biohackers que já usam Oura ou Whoop?",
-          "a": "ChiliPad Dock Pro. Você já tem monitoramento de HRV e sono pelo seu wearable — o recurso matador do Eight Sleep é redundante, e você economiza ~US$ 2.800–3.200 em 3 anos (hardware mais assinatura)."
+          "a": "ChiliPad Dock Pro. Você já tem monitoramento de HRV e sono pelo seu wearable — o recurso matador do Eight Sleep é redundante, e você economiza ~$2,800–3.200 em 3 anos (hardware mais assinatura)."
         }
       ],
       "content": "## A versão curta\n\nTrês sistemas resolvem a categoria com clareza: Eight Sleep (premium + monitoramento + assinatura), ChiliPad (água sem assinatura) e BedJet (ar sem assinatura, o mais barato).\n\n## Quando o Eight Sleep Pod 4 é a escolha certa?\n\nSe você quer monitoramento integrado de HRV e sono para não precisar de um wearable separado, além da programação de clima do Autopilot — e aceita a assinatura contínua.\n\n## Quando o ChiliPad Dock Pro é a escolha certa?\n\nSe você já usa um Oura ou Whoop e quer a mesma climatização a água sem pagar a assinatura da Eight Sleep. Cerca de um terço do custo de propriedade em 3 anos do Eight Sleep, com hardware de climatização comparável.\n\n## Quando o BedJet 3 é a escolha certa?\n\nSe você quer a entrada confiável mais barata na climatização ativa do sono, mora em um clima ameno a moderado e não quer cuidar de um reservatório de água. A abordagem de fluxo de ar é suficiente para a maioria dos usuários fora dos picos do verão — por uma fração do custo total em 3 anos do Eight Sleep."
