@@ -6,7 +6,7 @@ const hoogaVsJoovv: HeadToHeadInput = {
   productBSlug: 'joovv-solo-3',
   title: 'Hooga HG500 vs Joovv Solo 3.0 (2026)',
   description:
-    'Hooga HG500 vs Joovv Solo 3.0 — the budget red-light reference vs the premium category leader. Roughly a fifth of the price vs brand, build and a modular ecosystem.',
+    'Hooga HG500 vs Joovv Solo 3.0: the budget red-light panel vs the premium pick. Roughly a fifth of the price vs brand, build and a modular ecosystem.',
   intro:
     'This is the red-light panel decision most people actually face: the value pick versus the premium option. The Hooga HG500 delivers honest specs and a solid build for about a fifth of the Joovv price. The Joovv Solo 3.0 is the long-running premium option — modular, beautifully built — and priced like it. The question is how much the brand, build and ecosystem are worth to you over raw output per dollar.',
   jobDependentVerdict: true,
@@ -19,23 +19,23 @@ const hoogaVsJoovv: HeadToHeadInput = {
   axes: [
     { name: 'Price', winner: 'a', note: 'Hooga HG500: $359 (door mount and hanging kit included; mobile stand extra). Joovv Solo 3.0: $1,699 (official US store, 2026-10-01), more for modular stacks. Roughly a fifth of the cost.' },
     { name: 'Output per dollar', winner: 'a', note: 'On dollars-per-mW/cm², Hooga wins most apples-to-apples comparisons — most of the usable irradiance for far less.' },
-    { name: 'Build & brand', winner: 'b', note: 'Joovv is the mature premium brand with the best build and resale value. Hooga is well-made for the price but not in the same tier.' },
-    { name: 'Wavelengths', criterionId: 'wavelengths', note: 'Hooga uses dual wavelengths (660/850) — enough for the core evidence base. Joovv covers more of the spectrum and offers targeted modes.' },
+    { name: 'Build & brand', winner: 'b', note: 'Joovv is the mature premium brand: premium build, established brand. Hooga is well-made for the price but not in the same tier.' },
+    { name: 'Wavelengths', criterionId: 'wavelengths', note: 'Both use 660 + 850 nm — the core wavelengths in the evidence base.' },
     { name: 'Modularity & ecosystem', winner: 'b', note: 'Joovv panels stack into larger modular systems. The Hooga is a standalone panel.' },
     { name: 'Warranty', winner: 'a', note: 'Hooga ships a 3-year warranty with the door mount and hanging kit included (mobile stand extra); a strong package at the price. Joovv’s warranty is solid but the value edge is Hooga’s.' },
   ],
   faq: [
     {
       q: 'Hooga HG500 or Joovv Solo 3.0 — which is better?',
-      a: 'For value, the Hooga HG500 — most of the core red-light spec for roughly a fifth of the Joovv price, with a door mount and 3-year warranty included. For a premium, modular panel with the best build and brand, the Joovv Solo 3.0. The results are similar; you’re paying for brand, build and expandability.',
+      a: 'For value, the Hooga HG500 — most of the core red-light spec for roughly a fifth of the Joovv price, with a door mount and 3-year warranty included. For a premium, modular panel with a premium build and an established brand, the Joovv Solo 3.0.',
     },
     {
       q: 'Is Joovv worth nearly 5x the price of Hooga?',
-      a: 'Only if you value the premium build, modular expandability and brand. For the core benefits — irradiance at the right wavelengths — the Hooga HG500 delivers most of it for far less. Many buyers get the same results from the cheaper panel.',
+      a: 'Only if you value the premium build, modular expandability and brand. For the core benefits — irradiance at the right wavelengths — the Hooga HG500 delivers most of it for far less.',
     },
     {
       q: 'Does the Hooga have the same wavelengths as Joovv?',
-      a: 'The Hooga uses the two core wavelengths (660 nm red and 850 nm near-infrared), which cover most of the evidence base. Joovv offers a broader spectrum and targeted modes, but for general red-light use the dual-wavelength approach is enough.',
+      a: 'Yes. Both use 660 nm red and 850 nm near-infrared, the two core wavelengths in the evidence base, so wavelengths are not the difference between them.',
     },
   ],
   content: `## The short version

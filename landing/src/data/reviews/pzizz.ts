@@ -9,9 +9,9 @@ const pzizz: ToolReviewInput = {
   description:
     'ONDA review of Pzizz — a focused sleep and nap audio app whose algorithm generates a fresh soundscape every session. Scored on wind-down content and value.',
   verdict:
-    'A focused sleep-audio app — its algorithm builds a fresh soundscape every night so it never gets stale — but it does one thing only and does not track.',
+    'A focused sleep-audio app — its algorithm builds a fresh soundscape every night so the audio stays varied — but it does one thing only and does not track.',
   summary:
-    'Pzizz does one thing: it plays you to sleep. Its "dreamscape" algorithm generates a unique mix of music, voice and effects each session, so the audio never becomes too familiar to work. It does not track sleep and has no analytics — it is a pure fall-asleep aid.',
+    'Pzizz does one thing: it plays you to sleep. Its "dreamscape" algorithm generates a unique mix of music, voice and effects each session, so the audio stays varied. It does not track sleep and has no analytics — it is a pure fall-asleep aid.',
   scores: [
     { criterionId: 'tracking-accuracy', score: 2.0, note: 'No tracking at all — Pzizz plays audio, it does not measure your night.' },
     { criterionId: 'wind-down-content', score: 8.5, note: 'Its whole point — an algorithm that generates a fresh sleep or nap soundscape every session.' },
@@ -42,7 +42,7 @@ const pzizz: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Pzizz does one thing and does it well: it plays you to sleep. Its "dreamscape" algorithm builds a unique mix of music, voiceover and sound effects every session, so the audio never gets familiar enough to stop working — the usual failure mode of a fixed playlist. Dedicated nap and focus modules extend the same idea to daytime. The app is refreshingly simple: pick a module, set a timer, sleep.
+Pzizz does one thing and does it well: it plays you to sleep. Its "dreamscape" algorithm builds a unique mix of music, voiceover and sound effects every session, so the audio stays varied. Dedicated nap and focus modules extend the same idea to daytime. The app is refreshingly simple: pick a module, set a timer, sleep.
 
 ## What are the downsides of Pzizz?
 
@@ -58,7 +58,7 @@ Choose Pzizz if you simply want to be played to sleep and have no interest in tr
 
 The sleep biology behind what these apps measure and the protocols they support.
 
-- [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — why audio-paired sleep onset works
+- [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — audio and sleep onset: the evidence
 - [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 `,
   references: [

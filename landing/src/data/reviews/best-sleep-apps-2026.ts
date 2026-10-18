@@ -12,7 +12,7 @@ const bestSleepApps2026: Comparison = {
     {
       reviewSlug: 'sleep-cycle',
       award: 'Best overall',
-      takeaway: 'The most polished mainstream tracker, with a smart alarm and a free tier you can live on.',
+      takeaway: 'A polished mainstream tracker, with a smart alarm and a free tier you can live on.',
     },
     {
       reviewSlug: 'sleepio',
@@ -27,12 +27,12 @@ const bestSleepApps2026: Comparison = {
     {
       reviewSlug: 'sleep-as-android',
       award: 'Best for Android',
-      takeaway: 'The most complete all-in-one on Android — tracking, smart alarm and wind-down sounds together.',
+      takeaway: 'An all-in-one on Android — tracking, smart alarm and wind-down sounds together.',
     },
     {
       reviewSlug: 'bettersleep',
       award: 'Best wind-down content',
-      takeaway: 'The deepest library of soundscapes, SleepTales and meditations — for when the problem is falling asleep.',
+      takeaway: 'A large library of soundscapes, SleepTales and meditations — for when the problem is falling asleep.',
     },
     {
       reviewSlug: 'pillow',
@@ -52,7 +52,7 @@ const bestSleepApps2026: Comparison = {
     {
       reviewSlug: 'autosleep',
       award: 'Best value',
-      takeaway: 'Accurate, automatic Apple Watch tracking as a one-time purchase — no subscription at all.',
+      takeaway: 'Automatic, detailed Apple Watch tracking as a one-time purchase — no subscription at all.',
     },
     {
       reviewSlug: 'endel',
@@ -61,7 +61,7 @@ const bestSleepApps2026: Comparison = {
     },
   ],
   verdict:
-    'Sleep Cycle and SleepScore are practically equal overall (within 0.1 in the ONDA score). Sleep Cycle is the most polished mainstream tracker, with a smart alarm and a free tier most people never need to leave. But "best" depends entirely on the job. If you have genuine insomnia, Sleepio is the clinically serious pick — it treats the problem rather than measuring it. SleepScore turns data into the most actionable advice; Sleep as Android is the all-in-one for Android; Pillow and AutoSleep are the Apple Watch picks, with AutoSleep the value choice for skipping subscriptions. If the problem is simply falling asleep, BetterSleep, Pzizz and Endel are sound-first apps, and RISE is the one that reframes the whole thing around daytime energy. Pick by the job, not the score.',
+    'Sleep Cycle and SleepScore are practically equal overall (within 0.1 in the ONDA score). Sleep Cycle is a polished mainstream tracker, with a smart alarm and a free tier most people never need to leave. But "best" depends entirely on the job. If you have genuine insomnia, Sleepio is the clinically serious pick — it treats the problem rather than measuring it. SleepScore turns data into the most actionable advice; Sleep as Android is the all-in-one for Android; Pillow and AutoSleep are the Apple Watch picks, with AutoSleep the value choice for skipping subscriptions. If the problem is simply falling asleep, BetterSleep, Pzizz and Endel are sound-first apps, and RISE is the one that reframes the whole thing around daytime energy. Pick by the job, not the score.',
   faq: [
     {
       q: 'What is the best sleep app?',
@@ -73,11 +73,11 @@ const bestSleepApps2026: Comparison = {
     },
     {
       q: 'Which sleep app helps you actually fall asleep?',
-      a: 'BetterSleep has the deepest wind-down library; Pzizz generates a fresh soundscape every night; Endel produces adaptive AI audio. Trackers like Sleep Cycle measure sleep but do less to help you get it. For persistent trouble sleeping, Sleepio treats the cause.',
+      a: 'BetterSleep has a large wind-down library; Pzizz generates a fresh soundscape every night; Endel produces adaptive AI audio. Trackers like Sleep Cycle measure sleep but do less to help you get it. For persistent trouble sleeping, Sleepio treats the cause.',
     },
     {
       q: 'Is there a sleep app without a subscription?',
-      a: 'AutoSleep is a one-time purchase with no subscription. Sleep as Android is a low one-time-style cost. Most others — Sleep Cycle, SleepScore, Pillow, BetterSleep, Pzizz, Endel, RISE — rely on a subscription, though several have a usable free tier.',
+      a: 'AutoSleep is a one-time purchase with no subscription. Sleep as Android has a free trial, then a low-cost unlock of about $12 (Android only). Most others — Sleep Cycle, SleepScore, Pillow, BetterSleep, Pzizz, Endel, RISE — rely on a subscription, though several have a usable free tier.',
     },
     {
       q: 'What is the difference between a sleep tracker and a CBT-I app?',

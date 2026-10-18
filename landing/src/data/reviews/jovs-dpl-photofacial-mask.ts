@@ -7,9 +7,9 @@ const jovsDpl: ToolReviewInput = {
   category: 'red-light-mask',
   productType: 'Korean-built multi-wavelength LED face mask',
   description:
-    'ONDA review of the JOVS DPL Photofacial Mask — Korean-built multi-wavelength red light face mask with seven-wavelength protocols. Scored on irradiance, wavelength, evidence and value.',
+    'ONDA review of the JOVS DPL Photofacial Mask, a Korean-built LED face mask with seven wavelength modes. Scored on irradiance, evidence and value.',
   verdict:
-    'Best multi-wavelength spec for the price — Korean K-beauty tech with seven wavelength modes. Light clinical-evidence moat; brand newer than category references.',
+    'Seven wavelength modes (maker spec) at a mid-tier price — Korean K-beauty tech. Limited clinical evidence; brand newer than category references.',
   summary:
     'JOVS DPL Photofacial Mask is the K-beauty multi-wavelength entry — seven wavelength modes (red, blue, amber, green and more), hard-shell hybrid build, $399 pricing. Brand recognised in K-beauty / Asian skincare market but newer in Western consumer red light category. Spec maximalism over clinical-evidence depth.',
   scores: [
@@ -21,7 +21,7 @@ const jovsDpl: ToolReviewInput = {
     { criterionId: 'value', score: 7.5, note: '$399 — accessible mid-tier pricing for the multi-wavelength spec. Strong per-wavelength cost.' },
   ],
   pros: [
-    'Seven wavelength modes — broadest spectrum coverage in consumer category',
+    'Seven wavelength modes (maker spec)',
     'Accessible $399 pricing for the multi-wavelength spec',
     'K-beauty engineering pedigree',
     'Multiple session modes for different indications',
@@ -41,7 +41,7 @@ const jovsDpl: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-JOVS DPL Photofacial Mask is the K-beauty multi-wavelength entry — seven wavelength modes (red, blue, amber, green and more), accessible $399 pricing, Korean engineering pedigree. Best spectrum coverage in the consumer face-mask category.
+JOVS DPL Photofacial Mask is the K-beauty multi-wavelength entry — seven wavelength modes (red, blue, amber, green and more), accessible $399 pricing, Korean engineering pedigree. Seven wavelength modes (maker spec).
 
 ## What are the downsides of JOVS DPL Photofacial Mask?
 
@@ -55,8 +55,7 @@ Choose JOVS DPL for maximum wavelength coverage at mid-tier pricing. For a red +
 
 ## Background reading
 
-- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
-- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
+- [Mitochondrial DNA and red light](/articles/mitochondrial-dna-red-light) — background on how red and near-infrared light reach cells
 `,
   references: [
     { label: 'JOVS — official site', url: 'https://www.jovs.com/' },
@@ -64,7 +63,7 @@ Choose JOVS DPL for maximum wavelength coverage at mid-tier pricing. For a red +
   relatedSlugs: ['dr-dennis-gross-spectralite', 'lumara-viso', 'currentbody-series-2'],
   publishOn: '2026-07-06',
   faq: [
-    { q: "How many wavelengths does the JOVS DPL mask have?", a: "The JOVS DPL Photofacial Mask has seven wavelength modes, including red, blue, amber and green, the broadest spectrum coverage among consumer masks. It also offers multiple session modes for different indications, all at a $399 price." },
+    { q: "How many wavelengths does the JOVS DPL mask have?", a: "The JOVS DPL Photofacial Mask has seven wavelength modes, including red, blue, amber and green (maker spec). It also offers multiple session modes for different indications, all at a $399 price." },
     { q: "Who is the JOVS DPL Photofacial Mask best for?", a: "It suits buyers who want maximum wavelength coverage at mid-tier pricing and value spec over Western clinical credentials. It brings K-beauty engineering and seven modes for $399. Buyers who prioritise comfort or clinical evidence may prefer silicone masks or brands with a longer Western track record." },
     { q: "What are the downsides of the JOVS DPL Photofacial Mask?", a: "Its Western clinical-evidence base is light, and its hard-shell hybrid build is less comfortable than silicone masks. There is no neck flap. JOVS is recognised in K-beauty but newer in the Western red-light market, without a multi-year track record there." },
   ],

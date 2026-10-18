@@ -7,11 +7,11 @@ const gammacoreSapphireCv: ToolReviewInput = {
   category: 'vagus-stim',
   productType: 'Prescription cervical tVNS (handheld)',
   description:
-    'ONDA review of the gammaCore Sapphire CV — the FDA-cleared prescription cervical tVNS device for migraine and cluster headache. Scored on evidence, mechanism and value.',
+    'ONDA review of gammaCore Sapphire CV, an FDA-cleared prescription neck VNS device for migraine and cluster headache. Scored on evidence, mechanism, value.',
   verdict:
     'An FDA-cleared, prescription-only non-invasive cervical VNS device for specific headache disorders — a clinical tool, not a consumer wellness device.',
   summary:
-    'gammaCore is the only non-invasive vagus nerve stimulator with FDA clearance for headache disorders — migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua. It is a handheld device pressed against the side of the neck over the carotid artery, delivering a proprietary 5 kHz waveform burst for 2-minute sessions. Available by prescription only. Within its indications it is the most evidence-backed device in this list — and it is priced and gated accordingly.',
+    'gammaCore is the FDA-cleared non-invasive cervical vagus nerve stimulator for headache disorders — migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua. It is a handheld device pressed against the side of the neck over the carotid artery, delivering a proprietary 5 kHz waveform burst for 2-minute sessions. Available by prescription only. Within its indications it has the most headache RCTs here, mostly maker-sponsored (which ONDA does not count) — and it is priced and gated accordingly.',
   scores: [
     { criterionId: 'evidence', score: 8.5, note: 'FDA-cleared for migraine prevention and acute treatment (age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua. The pivotal randomised trials were sponsored by electroCore, and maker-sponsored studies do not count as evidence in ONDA scores; independent trials remain, so it is still the clinical reference for non-invasive cervical VNS.' },
     { criterionId: 'mechanism', score: 8.5, note: 'Cervical tVNS over the carotid sheath — targets the cervical vagal trunk directly. Proprietary 5 kHz burst waveform; parameters are fixed, not user-adjustable.' },
@@ -21,8 +21,8 @@ const gammacoreSapphireCv: ToolReviewInput = {
     { criterionId: 'value', score: 5.5, note: 'Prescription pricing varies — typically ~$600 device plus refill cards; insurance coverage uneven. Not a casual purchase.' },
   ],
   pros: [
-    'FDA-cleared — the only non-invasive VNS device with that status',
-    'The deepest randomised-trial evidence base of any device here',
+    'The FDA-cleared non-invasive cervical VNS device for headache disorders',
+    'The most headache RCTs here, mostly maker-sponsored (which ONDA does not count)',
     'Targets the cervical vagal trunk directly, not the auricular branch',
     'Clinically calibrated dosing — no guesswork',
   ],
@@ -41,7 +41,7 @@ const gammacoreSapphireCv: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-gammaCore Sapphire CV is the only non-invasive [vagus nerve](/glossary/vagus-nerve) stimulator with FDA clearance — a fact that puts it in a different regulatory tier from everything else in this list. It is cleared for migraine prevention and acute treatment (from age 12), cluster-headache acute and preventive treatment, and the rarer headache disorders paroxysmal hemicrania and hemicrania continua, backed by more than thirty randomised controlled trials over the past decade. The device is held against the side of the neck over the carotid sheath and delivers a proprietary 5 kHz burst waveform for two-minute sessions; dosing is set clinically rather than by app.
+gammaCore Sapphire CV is the FDA-cleared non-invasive cervical [vagus nerve](/glossary/vagus-nerve) stimulator for headache disorders — a different regulatory tier from the wellness devices in this list. It is cleared for migraine prevention and acute treatment (from age 12), cluster-headache acute and preventive treatment, and the rarer headache disorders paroxysmal hemicrania and hemicrania continua, backed by randomised controlled trials, mostly sponsored by electroCore. The device is held against the side of the neck over the carotid sheath and delivers a proprietary 5 kHz burst waveform for two-minute sessions; dosing is set clinically rather than by app.
 
 ## What are the downsides of gammaCore Sapphire CV?
 
@@ -49,7 +49,7 @@ That same regulatory and clinical rigour limits its use. It is prescription-only
 
 ## Who should buy gammaCore Sapphire CV?
 
-Choose gammaCore if you have a clinical migraine or cluster-headache diagnosis and a prescriber who will write for it. For general HRV training, stress reduction or experimental tVNS, Nurosym (auricular, the largest consumer trial record) or Truvaga 350 (cervical, OTC) are the right tools — not this one.
+Choose gammaCore if you have a clinical migraine or cluster-headache diagnosis and a prescriber who will write for it. For general HRV training, stress reduction or experimental tVNS, Nurosym (auricular, with consumer trials) or Truvaga 350 (cervical, OTC) are the right tools — not this one.
 
 ---
 
@@ -57,7 +57,7 @@ Choose gammaCore if you have a clinical migraine or cluster-headache diagnosis a
 
 The biology behind what these devices target — and the protocols that compound with the hardware.
 
-- [CO₂ tolerance and the oxygen limit](/articles/co2-tolerance-expanding-oxygen-limit) — why slow breathing rebuilds vagal tone via CO₂ chemistry
+- [CO₂ tolerance and the oxygen limit](/articles/co2-tolerance-expanding-oxygen-limit) — CO₂ tolerance and slow breathing
 - [Breathwork as a command-line interface](/articles/breathwork-command-line-interface) — the protocols stimulation pairs with
 - [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — why vagal tone work targets cortisol downstream
 `,
@@ -68,10 +68,10 @@ The biology behind what these devices target — and the protocols that compound
   ],
   relatedSlugs: ['truvaga-350', 'nurosym', 'livanova-vns-therapy'],
   faq: [
-    { q: "Do you need a prescription for gammaCore?", a: "Yes. In the US, gammaCore Sapphire CV is prescription-only, so access is gated by a physician. It is the only non-invasive vagus nerve stimulator with FDA clearance, and that clearance covers migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua, not general wellness use." },
+    { q: "Do you need a prescription for gammaCore?", a: "Yes. In the US, gammaCore Sapphire CV is prescription-only, so access is gated by a physician. It is an FDA-cleared non-invasive cervical vagus nerve stimulator, and that clearance covers migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua, not general wellness use." },
     { q: "How much does gammaCore cost?", a: "gammaCore costs around $600, with refill cards extra. The actual cost varies by payer, and the refill model can lock you in over time. Because a prescription is required, you get it through a physician rather than as a simple retail purchase." },
     { q: "How does gammaCore work?", a: "gammaCore is a handheld device you press against the side of the neck over the carotid artery. It delivers a proprietary 5 kHz waveform burst in fixed 2-minute sessions, targeting the cervical vagal trunk directly rather than the ear branch. Dosing is clinically calibrated, with no customisable protocols." },
-    { q: "Is gammaCore worth it?", a: "For clinically indicated migraine or cluster-headache patients, yes: it has the deepest randomised-trial evidence base of any device in its category. For general stress relief or wellness it is the wrong tool, because it is a clinical device with narrow indications and prescription gating." },
+    { q: "Is gammaCore worth it?", a: "For clinically indicated migraine or cluster-headache patients, yes: it has the most headache RCTs of the devices here, mostly maker-sponsored (which ONDA does not count). For general stress relief or wellness it is the wrong tool, because it is a clinical device with narrow indications and prescription gating." },
   ],
   datePublished: '2026-05-21',
   dateModified: '2026-10-10',

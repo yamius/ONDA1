@@ -6,12 +6,12 @@ const mitoRedVsHooga: HeadToHeadInput = {
   productBSlug: 'hooga-hg500',
   title: 'Mito Red MitoPRO 1500 vs Hooga HG500 (2026)',
   description:
-    'Mito Red MitoPRO 1500 vs Hooga HG500 — side-by-side ONDA comparison of premium biohacker panel versus budget biohacker entry. Six-wavelength large versus two-wavelength budget.',
+    'Mito Red MitoPRO 1500 vs Hooga HG500 — ONDA comparison of a premium six-wavelength red light panel and a budget two-wavelength one.',
   intro:
     'Mito Red MitoPRO 1500 and Hooga HG500 are the two red light panels users compare when the question is "premium spectrum versus budget access." MitoPRO (now sold as the 1500X) ships six-wavelength large-panel coverage; Hooga ships two-wavelength half-body coverage at about a quarter of the price. Different tiers; the question is whether the spec gap justifies the price gap.',
   jobDependentVerdict: true,
   verdict:
-    'Depends on what matters. MitoPRO wins on spectrum, build and coverage. Hooga wins on value by a wide margin — most biohackers do not need MitoPRO’s premium for typical use.',
+    'Depends on what matters. MitoPRO wins on spectrum, build and coverage. Hooga wins on value by a wide margin — many buyers may not need MitoPRO’s premium for typical use.',
   bestForA:
     'Choose Mito Red MitoPRO 1500 if broader wavelength coverage, larger panel size and premium build are worth $940 over Hooga for your use case.',
   bestForB:
@@ -37,7 +37,7 @@ const mitoRedVsHooga: HeadToHeadInput = {
     },
     {
       q: 'Should first-time buyers start with Hooga?',
-      a: 'Yes, generally. The $950 saving funds a year of experimenting to find out whether red light therapy delivers measurable benefit for you. If it does, upgrade to MitoPRO or Joovv. If it does not, you have not over-committed.',
+      a: 'Yes, generally. The $940 saving funds a year of experimenting to find out whether red light therapy delivers measurable benefit for you. If it does, upgrade to MitoPRO or Joovv. If it does not, you have not over-committed.',
     },
     {
       q: 'Will Hooga last as long as MitoPRO?',
@@ -46,7 +46,7 @@ const mitoRedVsHooga: HeadToHeadInput = {
   ],
   content: `## The short version
 
-MitoPRO wins on every hardware axis — spectrum, irradiance, size, build. Hooga wins on value by a wide margin. The decision is whether you need premium or whether budget covers your use case.
+MitoPRO wins on hardware — spectrum, size, build. Hooga wins on value by a wide margin. The decision is whether you need premium or whether budget covers your use case.
 
 ## When is Mito Red MitoPRO 1500 the right pick?
 

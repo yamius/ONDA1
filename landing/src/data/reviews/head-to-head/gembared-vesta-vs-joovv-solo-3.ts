@@ -6,18 +6,18 @@ const gembaredVsJoovv: HeadToHeadInput = {
   productBSlug: 'joovv-solo-3',
   title: 'GembaRed Vesta vs Joovv Solo 3.0 (2026)',
   description:
-    'GembaRed Vesta vs Joovv Solo 3.0 — side-by-side ONDA comparison of two premium red light panels. EMF-shielded six-wavelength engineering versus the modular reference.',
+    'GembaRed Vesta vs Joovv Solo 3.0: two premium red light panels compared. EMF-shielded six-wavelength engineering versus the modular reference.',
   intro:
-    'GembaRed Vesta and Joovv Solo 3.0 are the two red light panels users compare when premium-tier engineering matters. GembaRed is the founder-engineered EMF-shielded specialist; Joovv is the modular reference. Different paths to the premium tier: GembaRed buys you cleanest-possible build, Joovv buys you brand maturity and modular scaling.',
+    'GembaRed Vesta and Joovv Solo 3.0 are the two red light panels users compare when premium-tier engineering matters. GembaRed is the founder-engineered EMF-shielded specialist; Joovv is the modular reference. Different paths to the premium tier: GembaRed buys you an EMF-shielded build, Joovv buys you brand maturity and modular scaling.',
   jobDependentVerdict: true,
   verdict:
     'Different premium intents. GembaRed Vesta wins on EMF/flicker discipline and wavelength breadth. Joovv Solo 3.0 wins on modular full-body scaling and brand maturity.',
   bestForA:
-    'Choose GembaRed Vesta if EMF discipline is a first-class criterion — fully-shielded build with the lowest EMF measurement in this list, six-wavelength coverage.',
+    'Choose GembaRed Vesta if EMF discipline is a first-class criterion — fully-shielded build with the lowest maker-stated EMF in ONDA’s list, six-wavelength coverage.',
   bestForB:
     'Choose Joovv Solo 3.0 if modular full-body scaling and the larger brand’s support are the deciding criteria — a long-running, widely used modular panel.',
   axes: [
-    { name: 'EMF / flicker discipline', winner: 'a', note: 'GembaRed: <0.1 mG at 6" — lowest in the category. Joovv: <0.5 mG at 6", also clean. GembaRed leads on EMF discipline; Joovv is still excellent.' },
+    { name: 'EMF / flicker discipline', winner: 'a', note: 'GembaRed: <0.1 mG at 6" — lowest maker-stated EMF in ONDA’s list. Joovv: <0.5 mG at 6", also clean. GembaRed leads on EMF discipline; Joovv is still excellent.' },
     { name: 'Wavelength coverage', criterionId: 'wavelengths', note: 'GembaRed: six wavelengths (480 + 630 + 660 + 810 + 830 + 850 nm). Joovv: two (660 + 850 nm). GembaRed has dramatically broader spectrum.' },
     { name: 'Irradiance', criterionId: 'irradiance', note: "Joovv leads: both are honestly specced (independent readings close to stated figures), but at 6 inches Joovv delivers over 100 mW/cm² versus about 60 mW/cm² for the GembaRed Vesta." },
     { name: 'FDA / regulatory status', winner: 'tie', note: 'Joovv says the Solo 3.0 is FDA Class II registered (listed indications: topical heating, per Joovv). GembaRed: no FDA registration. Registration/listing is not clearance or approval and is not a quality mark, so neither wins this axis.' },
@@ -29,7 +29,7 @@ const gembaredVsJoovv: HeadToHeadInput = {
   faq: [
     {
       q: 'GembaRed Vesta or Joovv Solo 3.0 — which is better?',
-      a: 'Depends on what matters. GembaRed wins on EMF discipline (lowest measurement in the category), wavelength breadth (six vs two) and engineering transparency. Joovv wins on modular scaling and brand maturity. Both excellent premium-tier panels.',
+      a: 'Depends on what matters. GembaRed wins on EMF discipline (lowest maker-stated EMF in ONDA’s list), wavelength breadth (six vs two) and engineering transparency. Joovv wins on modular scaling and brand maturity. Both excellent premium-tier panels.',
     },
     {
       q: 'Is GembaRed’s EMF advantage meaningful?',
@@ -46,7 +46,7 @@ const gembaredVsJoovv: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Two different paths to the premium tier. GembaRed Vesta buys you the cleanest possible build and broadest spectrum at $500 less. Joovv Solo 3.0 buys you modular scaling and brand maturity at $500 more. Pick on which axis matters most.
+Two different paths to the premium tier. GembaRed Vesta buys you an EMF-shielded build and broadest spectrum at $500 less. Joovv Solo 3.0 buys you modular scaling and brand maturity at $500 more. Pick on which axis matters most.
 
 ## When is GembaRed Vesta the right pick?
 
