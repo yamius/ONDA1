@@ -29,7 +29,7 @@ const eightSleepPod4: ToolReviewInput = {
   cons: [
     'Autopilot subscription required for full features — biggest editorial criticism',
     'Premium pricing ($3,000-5,000) plus ongoing membership',
-    'Hub requires nightstand space and water management',
+    'Hub needs floor space next to the bed and water management',
     'Locked into Eight Sleep ecosystem',
   ],
   bestFor: 'Best for users wanting feature-rich smart sleep-climate hardware with integrated HRV tracking — and willing to absorb the subscription.',
@@ -72,7 +72,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
   faq: [
     { q: "Is the Eight Sleep Pod 4 worth it?", a: "Yes, if you accept the subscription. The Pod 4 is a premium sleep-climate system with dual-zone water cooling and heating from 13 to 43°C, built-in HRV and sleep-stage tracking, and Autopilot adjustment. Full features require an ongoing Autopilot membership." },
     { q: "How much does the Eight Sleep Pod 4 cost?", a: "The Eight Sleep Pod 4 costs about $4,000 for a queen size, plus roughly $20 per month for the Autopilot subscription. Overall pricing runs $3,000-5,000 depending on configuration, before the ongoing membership. The subscription is required for full features." },
-    { q: "What are the downsides of the Eight Sleep Pod 4?", a: "The Pod 4 requires an Autopilot subscription for full features, its biggest criticism. It is premium-priced plus ongoing membership, the hub needs nightstand space and water management, and you are locked into the Eight Sleep ecosystem." },
+    { q: "What are the downsides of the Eight Sleep Pod 4?", a: "The Pod 4 requires an Autopilot subscription for full features, its biggest criticism. It is premium-priced plus ongoing membership, the hub needs floor space next to the bed and water management, and you are locked into the Eight Sleep ecosystem." },
     { q: "Eight Sleep Pod 4 vs ChiliPad Dock Pro: which is better?", a: "The Pod 4 is better for integrated HRV and sleep tracking; the ChiliPad Dock Pro is better for subscription-free ownership. Climate hardware is comparable, but ChiliPad costs about $1,700 with no fees versus about $4,000 plus a subscription." },
   ],
   datePublished: '2026-06-15',

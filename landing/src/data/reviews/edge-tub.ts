@@ -49,7 +49,7 @@ Edge is newer and the multi-year reliability data is still being built. The warr
 
 ## Who should buy Edge Tub?
 
-Choose Edge Tub if you want chiller-built cold-plunge capability at the most accessible price in the tier. If a longer warranty (3 years vs 1) and a longer track record are deciding criteria, The Plunge is the right shape.
+Choose Edge Tub if you want chiller-built cold-plunge capability at the most accessible price in the tier. If a longer warranty (3 years vs 2) and a longer track record are deciding criteria, The Plunge is the right shape.
 
 ---
 

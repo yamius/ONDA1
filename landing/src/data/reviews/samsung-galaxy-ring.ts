@@ -19,7 +19,7 @@ const samsungGalaxyRing: ToolReviewInput = {
     { criterionId: 'data-access', score: 6.0, note: 'Built around Samsung Health with no open API and limited export — data largely stays inside the app.' },
     { criterionId: 'wearability', score: 8.0, note: 'A comfortable ring for around-the-clock wear, with a multi-day battery.' },
     { criterionId: 'app-ux', score: 7.0, note: 'Samsung Health is clear enough, but tied to the Samsung and Android ecosystem.' },
-    { criterionId: 'value', score: 8.0, note: '399 USD with no subscription — the standing cost advantage over the Oura Ring 4.' },
+    { criterionId: 'value', score: 8.0, note: '$399 with no subscription — the standing cost advantage over the Oura Ring 4.' },
   ],
   pros: [
     'No subscription — every feature unlocked at purchase',
