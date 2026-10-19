@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13",
+  "generatedAt": "2026-10-19",
   "source": "https://onda-life.com/reviews",
   "reviews": [
     {
@@ -245,7 +245,7 @@
         {
           "id": "wearability",
           "score": 9,
-          "note": "~40% slimmer and lighter than the Ring 4 (6.09mm × 2.28mm) with a 6–9 day battery — the most comfortable always-on ring in the category. Narrower size range (6–13) than the Ring 4."
+          "note": "~40% slimmer and lighter than the Ring 4 (6.09mm × 2.28mm) with a 6–9 day battery — very slim and light. Narrower size range (6–13) than the Ring 4."
         },
         {
           "id": "app-ux",
@@ -255,22 +255,22 @@
         {
           "id": "value",
           "score": 6,
-          "note": "Hardware $399 ($499 premium finishes) plus a mandatory ~$6/month membership — the highest entry in the ring field, and you never fully own the data."
+          "note": "Hardware $399 ($499 premium finishes) plus a mandatory ~$6/month membership, and you never fully own the data."
         }
       ],
-      "verdict": "The 2026 flagship — 40% slimmer with genuinely upgraded sensors. Previous Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated. The mandatory subscription remains the only real catch.",
-      "bestFor": "Best for overnight HRV and sleep data in the slimmest, most comfortable always-on ring (previous Oura generations agreed well with ECG overnight; the Ring 5 itself has not been separately validated) — for buyers coming fresh, not necessarily Ring 4 owners.",
+      "verdict": "The 2026 flagship — 40% slimmer with genuinely upgraded sensors. Previous Oura generations agreed closely with a chest-strap ECG overnight; the Ring 5 itself has not been separately validated. The mandatory subscription remains the only real catch.",
+      "bestFor": "Best for overnight HRV and sleep data in a very slim, light always-on ring (previous Oura generations agreed closely with a chest-strap ECG overnight; the Ring 5 itself has not been separately validated) — for buyers coming fresh, not necessarily Ring 4 owners.",
       "pros": [
         "Genuinely upgraded sensors — better contact across skin tones and finger types",
         "~40% slimmer and lighter than the Ring 4, 6–9 day battery",
-        "Earlier Oura generations agreed with ECG more closely than others in one study of overnight recordings (13 people; the Ring 5 itself has not been separately validated), plus sleep staging compared with polysomnography only for Gen 3, in Oura-funded studies",
+        "Earlier Oura generations agreed closely with a chest-strap ECG in one study of overnight recordings (13 people; the Ring 5 itself has not been separately validated), plus sleep staging compared with polysomnography only for Gen 3, in Oura-funded studies",
         "Clear, educational app"
       ],
       "cons": [
         "Advanced data still requires a recurring monthly membership",
         "The headline new software features also come to the Ring 4 — less reason to upgrade if you own one",
         "Daytime and exercise HRV remain unreliable under motion",
-        "$399/$499 is the priciest entry in the ring category, and there is no display"
+        "$399/$499 hardware, and there is no display"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "RMSSD",
@@ -531,16 +531,15 @@
         {
           "id": "value",
           "score": 5.5,
-          "note": "Subscription-only — roughly 239 USD a year, forever, with no device you ever own."
+          "note": "Subscription-only — from $199 (One) / $239 (Peak) / $359 (Life) per year, forever, with no device you ever own."
         }
       ],
-      "verdict": "A recovery coach on your wrist: continuous overnight HRV and sharp strain insight, locked behind a perpetual membership.",
+      "verdict": "A recovery coach on your wrist: continuous overnight HRV and detailed strain and recovery scores, locked behind a perpetual membership.",
       "bestFor": "Best for athletes who train on daily recovery and strain signals.",
       "pros": [
         "Continuous overnight HRV, not a single morning reading",
-        "Sharp, actionable recovery and strain coaching",
-        "Screenless and comfortable; ~14 day battery, charges on-body",
-        "Lowest first-year cost of the three"
+        "Detailed strain and recovery scores",
+        "Screenless and comfortable; ~14 day battery, charges on-body"
       ],
       "cons": [
         "Subscription-only — stop paying and the band stops working",
@@ -603,10 +602,10 @@
           "note": "From ~$999.99 (AMOLED) to $1,099.99 (51 mm Solar). No subscription, but you are paying flagship-multisport money for the HRV."
         }
       ],
-      "verdict": "The most capable heart-sensor hardware Garmin puts on a wrist — inside a $1,000 expedition watch you are mostly paying for GPS, dive and battery, not HRV.",
+      "verdict": "Garmin’s newest heart sensor (Elevate v5) — inside a $1,000 expedition watch you are mostly paying for GPS, dive and battery, not HRV.",
       "bestFor": "Best for athletes and outdoor users who want one do-everything multisport watch — with capable HRV along for the ride.",
       "pros": [
-        "Elevate v5 sensor with an ECG app — Garmin’s most complete heart hardware",
+        "Garmin’s newest heart sensor (Elevate v5), with an ECG app",
         "Multi-week battery (up to ~28–48 days solar) makes nightly HRV wear effortless",
         "No subscription — every feature unlocked at purchase",
         "Deep training, outdoor and dive features with reasonably open data"
@@ -708,12 +707,12 @@
         {
           "id": "hrv-accuracy",
           "score": 7,
-          "note": "Continuous HRV for recovery and stress, improved over the Gen 2. Good for trends, though only a preprint exists (on an earlier generation) and no peer-reviewed independent validation was found (as of October 2026)."
+          "note": "Continuous HRV for recovery and stress, improved over the Gen 2. Usable for trends; not independently validated — only a preprint exists (on an earlier generation) and no peer-reviewed independent validation was found (as of October 2026)."
         },
         {
           "id": "sensor",
           "score": 7.5,
-          "note": "Broad sensor suite — HR, HRV, SpO2, respiratory rate, skin temperature — plus a first-in-category haptic motor and new vascular / nighttime blood-pressure trend tracking."
+          "note": "Broad sensor suite — HR, HRV, SpO2, respiratory rate, skin temperature — plus a haptic motor (RingConn says a first for smart rings) and new vascular / nighttime blood-pressure trend tracking."
         },
         {
           "id": "sleep-accuracy",
@@ -741,12 +740,12 @@
           "note": "$349 one-time with no subscription — and a feature set that undercuts Oura’s ring-plus-membership cost. Strong value."
         }
       ],
-      "verdict": "One of the strongest subscription-free rings — a ~10-14 day battery, a first-in-category haptic motor for silent alerts, and new vascular/sleep-apnea insights, all with no membership.",
-      "bestFor": "Best for buyers who want a feature-rich, subscription-free ring with a long battery and silent haptic alerts — the strongest no-membership alternative to Oura.",
+      "verdict": "A strong subscription-free ring — a ~10-14 day battery, a haptic motor (RingConn says a first for smart rings) for silent alerts, and new vascular/sleep-apnea insights, all with no membership.",
+      "bestFor": "Best for buyers who want a feature-rich, subscription-free ring with a long battery and silent haptic alerts — a strong no-membership option.",
       "pros": [
         "No subscription — one-time $349",
         "~10-14 day battery and a universal wireless charging case",
-        "First smart ring with a haptic motor — silent alarm and alerts",
+        "Haptic motor (RingConn says a first for smart rings) — silent alarm and alerts",
         "New vascular / nighttime blood-pressure trends and sleep-apnea insights"
       ],
       "cons": [
@@ -851,12 +850,12 @@
         {
           "id": "sensor",
           "score": 7.5,
-          "note": "Optical PPG in a ring form factor; a clean overnight signal."
+          "note": "Optical PPG in a ring form factor for overnight readings."
         },
         {
           "id": "sleep-accuracy",
           "score": 7,
-          "note": "Good everyday sleep tracking, but no independent sleep validation of the Galaxy Ring was found. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not."
+          "note": "Overnight sleep tracking (not independently validated): no independent sleep validation of the Galaxy Ring was found. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not."
         },
         {
           "id": "data-access",
@@ -876,7 +875,7 @@
         {
           "id": "value",
           "score": 8,
-          "note": "399 USD with no subscription — the standing cost advantage over the Oura Ring 4."
+          "note": "$399 with no subscription — the standing cost advantage over the Oura Ring 4."
         }
       ],
       "verdict": "The subscription-free Oura alternative for Android — comfortable and competent, if locked to the Samsung ecosystem.",
@@ -1191,7 +1190,7 @@
         {
           "id": "hrv-accuracy",
           "score": 6.5,
-          "note": "HRV tracking for recovery and stress — reasonable for the price; no independent validation against ECG was found (as of October 2026)."
+          "note": "HRV tracking for recovery and stress — reasonable for the price; no independent validation against a reference device such as an ECG chest strap was found (as of October 2026)."
         },
         {
           "id": "sensor",
@@ -1224,8 +1223,8 @@
           "note": "Around $300 with no subscription — a genuinely affordable, own-it-outright Oura alternative. The main reason to buy."
         }
       ],
-      "verdict": "A practical, affordable, subscription-free Oura alternative — good sleep tracking and a long total battery via its case, though single-charge battery and some app rough edges keep it a value pick rather than a class leader.",
-      "bestFor": "Best for a cheap, subscription-free ring with solid sleep tracking and a long total battery via its case — a practical Oura alternative on a budget.",
+      "verdict": "A practical, affordable, subscription-free Oura alternative — basic sleep tracking (stage estimates, not independently validated) and a long total battery via its case, though single-charge battery and some app rough edges keep it a value pick rather than a class leader.",
+      "bestFor": "Best for a cheap, subscription-free ring with basic sleep tracking (estimates, not independently validated) and a long total battery via its case — a practical Oura alternative on a budget.",
       "pros": [
         "Affordable (~$300) and subscription-free",
         "Competent sleep tracking (stage estimates, not a sleep study) and reliable activity auto-detection",
@@ -1270,7 +1269,7 @@
         {
           "id": "sleep-accuracy",
           "score": 7,
-          "note": "Good sleep tracking for the price (stage estimates, not a sleep study); no independent validation was found. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not."
+          "note": "Basic sleep tracking for the price (stage estimates, not a sleep study); no independent validation was found. ONDA rule: without its own independent validation a device scores at most 7.5 if earlier generations were validated, 7.0 if not."
         },
         {
           "id": "data-access",
@@ -1293,12 +1292,12 @@
           "note": "$199 one-time with no subscription is genuinely cheap for a capable ring — the standout reason to buy, provided one of the three sizes fits you."
         }
       ],
-      "verdict": "A genuinely cheap, subscription-free ring with decent sleep and HRV tracking — but only three sizes and a short real-world battery keep it a budget pick, not an Oura rival.",
-      "bestFor": "Best for a cheap, subscription-free ring with solid sleep tracking — if one of its three sizes fits you and you accept a short battery.",
+      "verdict": "A genuinely cheap, subscription-free ring with basic sleep tracking (stage estimates, not independently validated) and HRV — but only three sizes and a short real-world battery keep it a budget pick, not an Oura rival.",
+      "bestFor": "Best for a cheap, subscription-free ring with basic sleep tracking (stage estimates, not independently validated) — if one of its three sizes fits you and you accept a short battery.",
       "pros": [
         "Just $199 with no subscription for core metrics",
         "Light, thin titanium — comfortable to sleep in",
-        "Respectable sleep tracking for the price",
+        "Basic sleep tracking for the price (stage estimates)",
         "Cross-platform Zepp app (iOS and Android)"
       ],
       "cons": [
@@ -1398,7 +1397,7 @@
         {
           "id": "content-library",
           "score": 9.5,
-          "note": "The largest meditation library anywhere — 360,000 free tracks, plus courses."
+          "note": "A very large library — 360,000 free tracks by the maker’s count, plus courses."
         },
         {
           "id": "teaching",
@@ -1423,7 +1422,7 @@
         {
           "id": "value",
           "score": 8.5,
-          "note": "The cheapest paid tier here, on top of the largest free library — the value leader."
+          "note": "The cheapest paid tier here, on top of a very large free library — the value leader."
         },
         {
           "id": "evidence",
@@ -1431,11 +1430,11 @@
           "note": "Quality and grounding vary widely across a crowd-sourced library."
         }
       ],
-      "verdict": "The largest meditation library on earth, and the only app here you can genuinely use for free — variable quality is the price.",
-      "bestFor": "Best overall — the largest library, a genuinely usable free tier and the strongest value.",
+      "verdict": "A very large free library (the largest, by Insight Timer’s own account) with a substantial free tier — variable quality is the price.",
+      "bestFor": "Best overall — a very large library, a genuinely usable free tier and the strongest value.",
       "pros": [
-        "The largest meditation library in the world",
-        "A genuinely usable free tier — rare in this category",
+        "A very large meditation library (the largest, according to Insight Timer)",
+        "A genuinely usable free tier",
         "Cheapest paid tier, plus hourly live events and community",
         "A huge range of teachers and traditions"
       ],
@@ -1797,75 +1796,6 @@
       "dateModified": "2026-05-15"
     },
     {
-      "slug": "waking-up",
-      "name": "Waking Up",
-      "brand": "Waking Up",
-      "category": "meditation-app",
-      "productType": "Meditation app",
-      "url": "https://onda-life.com/reviews/waking-up",
-      "categoryUrl": "https://onda-life.com/reviews/meditation-apps",
-      "priceUsd": 130,
-      "priceNote": "$129.99/year on wakingup.com ($149.99/year or $19.99/month in-app); 7-day free trial; free scholarship for anyone who cannot afford it",
-      "priceAsOf": "2026-10-01",
-      "score": 7.4,
-      "scores": [
-        {
-          "id": "content-library",
-          "score": 7,
-          "note": "A deliberately curated library — focused and deep rather than broad, with no real sleep content."
-        },
-        {
-          "id": "teaching",
-          "score": 9,
-          "note": "The deepest teaching here — Sam Harris plus high-calibre guest teachers, taught with rigour."
-        },
-        {
-          "id": "personalization",
-          "score": 6.5,
-          "note": "A structured 28-day course to start, but lighter on adaptive, ongoing personalisation."
-        },
-        {
-          "id": "app-experience",
-          "score": 7.5,
-          "note": "A clean, calm app that stays out of the way of the practice."
-        },
-        {
-          "id": "free-tier",
-          "score": 6.5,
-          "note": "A 7-day free trial, plus a standing scholarship: a free membership for anyone who cannot afford it."
-        },
-        {
-          "id": "value",
-          "score": 7,
-          "note": "The most expensive here at around 130 USD a year — though the scholarship policy softens that."
-        },
-        {
-          "id": "evidence",
-          "score": 8.5,
-          "note": "A secular, intellectually rigorous approach grounded in neuroscience and named teaching lineages."
-        }
-      ],
-      "verdict": "The deepest, most rigorous app here — philosophy and serious instruction — but the most expensive, and not for beginners.",
-      "bestFor": "Best for depth — serious instruction and philosophy, for practitioners past the basics.",
-      "pros": [
-        "The deepest teaching and the highest-calibre instructors",
-        "Pairs practice with philosophy and conversations with leading thinkers",
-        "Secular and intellectually rigorous",
-        "Free access for anyone who cannot afford it"
-      ],
-      "cons": [
-        "The most expensive app here",
-        "Not built for complete beginners",
-        "A smaller, curated library — no sleep content",
-        "Lighter on adaptive personalisation"
-      ],
-      "testStatus": "evidence-based",
-      "hrvMetric": null,
-      "worksWithOnda": "not-a-device",
-      "worksWithOndaNote": null,
-      "dateModified": "2026-10-01"
-    },
-    {
       "slug": "happier-meditation",
       "name": "Happier Meditation",
       "brand": "Happier",
@@ -2002,6 +1932,75 @@
       "worksWithOnda": "not-a-device",
       "worksWithOndaNote": null,
       "dateModified": "2026-05-15"
+    },
+    {
+      "slug": "waking-up",
+      "name": "Waking Up",
+      "brand": "Waking Up",
+      "category": "meditation-app",
+      "productType": "Meditation app",
+      "url": "https://onda-life.com/reviews/waking-up",
+      "categoryUrl": "https://onda-life.com/reviews/meditation-apps",
+      "priceUsd": 130,
+      "priceNote": "$129.99/year on wakingup.com ($149.99/year or $19.99/month in-app); 7-day free trial; free scholarship for anyone who cannot afford it",
+      "priceAsOf": "2026-10-01",
+      "score": 7.3,
+      "scores": [
+        {
+          "id": "content-library",
+          "score": 7,
+          "note": "A deliberately curated library — focused and deep rather than broad, with no real sleep content."
+        },
+        {
+          "id": "teaching",
+          "score": 9,
+          "note": "Teaching-focused — Sam Harris plus well-known guest teachers, with a rigorous, philosophy-heavy approach."
+        },
+        {
+          "id": "personalization",
+          "score": 6.5,
+          "note": "A structured 28-day course to start, but lighter on adaptive, ongoing personalisation."
+        },
+        {
+          "id": "app-experience",
+          "score": 7.5,
+          "note": "A clean, calm app that stays out of the way of the practice."
+        },
+        {
+          "id": "free-tier",
+          "score": 6.5,
+          "note": "A 7-day free trial, plus a standing scholarship: a free membership for anyone who cannot afford it."
+        },
+        {
+          "id": "value",
+          "score": 7,
+          "note": "The most expensive here at about $130 a year on the website ($149.99 in the app store) — though the scholarship policy softens that."
+        },
+        {
+          "id": "evidence",
+          "score": 6,
+          "note": "A secular approach that draws on meditation research in general and named teaching lineages; we found no trial of the Waking Up app itself, so it scores like other apps without their own trials."
+        }
+      ],
+      "verdict": "A teaching-focused, philosophy-heavy app — serious instruction — but the most expensive, and not for beginners.",
+      "bestFor": "Best for depth — serious instruction and philosophy, for practitioners past the basics.",
+      "pros": [
+        "Teaching-focused, with Sam Harris and well-known guest teachers",
+        "Pairs practice with philosophy and conversations with leading thinkers",
+        "Secular and intellectually rigorous",
+        "Free access for anyone who cannot afford it"
+      ],
+      "cons": [
+        "The most expensive app here",
+        "Not built for complete beginners",
+        "A smaller, curated library — no sleep content",
+        "Lighter on adaptive personalisation"
+      ],
+      "testStatus": "evidence-based",
+      "hrvMetric": null,
+      "worksWithOnda": "not-a-device",
+      "worksWithOndaNote": null,
+      "dateModified": "2026-10-01"
     },
     {
       "slug": "buddhify",
@@ -2331,7 +2330,7 @@
       "verdict": "A detailed, well-presented sleep tracker for the Apple Watch — excellent if you are on iOS, irrelevant if you are not.",
       "bestFor": "Best for iPhone and Apple Watch owners who want detailed, well-presented sleep analysis.",
       "pros": [
-        "Detailed, accurate Apple Watch tracking",
+        "Detailed Apple Watch tracking",
         "Well-presented analysis with weekly to yearly views",
         "Metric comparison to explain a poor night",
         "Easy to navigate"
@@ -2571,7 +2570,7 @@
         {
           "id": "tracking-accuracy",
           "score": 8.5,
-          "note": "Automatic, detailed Apple Watch tracking — accurate, with a devoted following among watch owners."
+          "note": "Automatic, detailed Apple Watch tracking (staging not independently validated), with a devoted following among watch owners."
         },
         {
           "id": "wind-down-content",
@@ -2604,10 +2603,10 @@
           "note": "A few dollars, once, with no subscription — exceptional value in a category full of recurring fees."
         }
       ],
-      "verdict": "The purist Apple Watch sleep tracker — accurate, automatic and subscription-free — but it only measures sleep, it does not help you get it.",
-      "bestFor": "Best for Apple Watch owners who want accurate sleep data and no subscription.",
+      "verdict": "The purist Apple Watch sleep tracker — detailed, automatic and subscription-free — but it only measures sleep, it does not help you get it.",
+      "bestFor": "Best for Apple Watch owners who want detailed sleep data and no subscription.",
       "pros": [
-        "Accurate, automatic Apple Watch tracking",
+        "Detailed, automatic Apple Watch tracking",
         "A one-time purchase — no subscription",
         "Detailed analysis and trends",
         "No buttons — it just tracks"
@@ -2673,7 +2672,7 @@
           "note": "Around 70 USD a year, or a one-time unlock — reasonable for a tool you use nightly."
         }
       ],
-      "verdict": "A focused sleep-audio app — its algorithm builds a fresh soundscape every night so it never gets stale — but it does one thing only and does not track.",
+      "verdict": "A focused sleep-audio app — its algorithm builds a fresh soundscape every night so the audio stays varied — but it does one thing only and does not track.",
       "bestFor": "Best for anyone who just wants to be played to sleep, with no tracking.",
       "pros": [
         "A fresh, non-repeating soundscape every session",
@@ -3065,8 +3064,8 @@
       "verdict": "An FDA-cleared, prescription-only non-invasive cervical VNS device for specific headache disorders — a clinical tool, not a consumer wellness device.",
       "bestFor": "Best for clinically-indicated migraine or cluster-headache patients — an FDA-cleared, prescription-only cervical VNS device.",
       "pros": [
-        "FDA-cleared — the only non-invasive VNS device with that status",
-        "The deepest randomised-trial evidence base of any device here",
+        "The FDA-cleared non-invasive cervical VNS device for headache disorders",
+        "The most headache RCTs here, mostly maker-sponsored (which ONDA does not count)",
         "Targets the cervical vagal trunk directly, not the auricular branch",
         "Clinically calibrated dosing — no guesswork"
       ],
@@ -3098,7 +3097,7 @@
         {
           "id": "evidence",
           "score": 7,
-          "note": "No published trials of the Truvaga device itself (two registered trials, no results yet, October 2026). The gammaCore studies are of the prescription device and are not counted here, though the shared platform gives it gammaCore’s safety record — 7.0, the base score for a device without trials of its own. Not FDA-cleared for any indication — sold as a general wellness device."
+          "note": "No published trials of the Truvaga device itself (two registered trials, no results yet, October 2026). The gammaCore studies are of the prescription device and are not counted here, though the shared platform gives it gammaCore’s safety record — so it cannot score above ONDA’s ceiling for a device without trials of its own. Not FDA-cleared for any indication — sold as a general wellness device."
         },
         {
           "id": "mechanism",
@@ -3123,13 +3122,13 @@
         {
           "id": "value",
           "score": 8,
-          "note": "$325 one-time for 350 preloaded sessions (about six months of daily use) — now only about $56 more than Pulsetto; the rechargeable Truvaga Plus is $499. No prescription. Roughly one-fifth the long-term cost of gammaCore."
+          "note": "$325 one-time for 350 preloaded sessions (about six months at the maker’s suggested two sessions a day) — now only about $56 more than Pulsetto; the rechargeable Truvaga Plus is $499. No prescription. Roughly one-fifth the long-term cost of gammaCore."
         }
       ],
       "verdict": "gammaCore’s clinical hardware repackaged as a consumer wellness device — strong provenance, modest evidence in the wellness indication.",
       "bestFor": "Best for consumers who want gammaCore’s cervical tVNS approach without the prescription gate.",
       "pros": [
-        "Same hardware platform as the FDA-cleared gammaCore — proven safety",
+        "Same hardware platform as the FDA-cleared gammaCore",
         "No prescription, no insurance approval needed",
         "Cervical tVNS — targets the vagal trunk directly, not just the ear branch",
         "Companion app logs sessions and tracks self-rated stress"
@@ -3961,7 +3960,7 @@
       "verdict": "A solid mid-tier EU CGM programme — local language depth, competent insights, narrower scope than Veri.",
       "bestFor": "Best for German-speaking EU users who want CGM coaching in their language.",
       "pros": [
-        "Strongest German-language CGM content in the category",
+        "Native German-language content",
         "No annual lock-in — monthly billing default",
         "Group dietitian sessions on higher tiers",
         "Weekly written progress reports — a coaching substitute"
@@ -4939,7 +4938,7 @@
         {
           "id": "irradiance",
           "score": 8,
-          "note": "Manufacturer-claimed ~140 mW/cm² at 0\" / ~60 mW/cm² at 6\". Independent meter readings within 10% of stated 6\" figures."
+          "note": "Manufacturer-claimed ~140 mW/cm² at 0\" / ~60 mW/cm² at 6\". Maker-stated; no independent measurement cited."
         },
         {
           "id": "wavelengths",
@@ -4967,12 +4966,12 @@
           "note": "$1,019 (Pro Max 2.0, on sale) for a panel size comparable to MitoPRO 1500X ($1,299). Strong value in the large-panel tier."
         }
       ],
-      "verdict": "Strong large-panel value pick — Joovv-class size at meaningfully lower price, with the trade being a less mature brand.",
+      "verdict": "Strong large-panel value pick — MitoPRO-class size at meaningfully lower price, with the trade being a less mature brand.",
       "bestFor": "Best for buyers who want MitoPRO-size coverage for about $280 less and accept a newer brand.",
       "pros": [
         "Large-panel size at about $1,019 — cheaper than MitoPRO 1500X for comparable coverage",
         "Four-wavelength coverage matches the original MitoPRO 1500 spectrum",
-        "Stand and door mount included rather than upsold",
+        "Base stand included",
         "EMF testing published"
       ],
       "cons": [
@@ -5097,7 +5096,7 @@
       "verdict": "The build-and-EMF specialist of the category — fully-shielded, six-wavelength, founder-engineered. Premium pricing for premium engineering rigour.",
       "bestFor": "Best for buyers who treat EMF and flicker as first-class criteria and want the cleanest possible build at premium price.",
       "pros": [
-        "Lowest EMF measurement in the consumer red-light category",
+        "The lowest maker-stated EMF in ONDA’s list",
         "Founder-engineer transparency — design rationale published",
         "Six-wavelength coverage, close to PlatinumLED BIOMAX 600 (which adds 1060 nm)",
         "Sub-research-threshold flicker rate"
@@ -5157,7 +5156,7 @@
           "note": "$899 — undercuts the MitoPRO 1500X ($1,299) by $400 and Joovv Solo 3.0 ($1,699) by $800 for comparable build. Solid value in the mid-premium tier."
         }
       ],
-      "verdict": "Solid mid-size Joovv alternative — competent build, two-wavelength coverage, no standout differentiator at the price.",
+      "verdict": "Solid mid-size Joovv alternative — competent build, four-wavelength coverage, no standout differentiator at the price.",
       "bestFor": "Best for buyers who want a competent four-wavelength panel under $1,000 without the Joovv brand premium.",
       "pros": [
         "Four-wavelength coverage at $899 — cheaper than MitoPRO with comparable build",
@@ -5536,10 +5535,10 @@
         {
           "id": "value",
           "score": 8.5,
-          "note": "$2,495 — roughly half The Plunge’s price for comparable core hardware. The best chiller-built value in 2026."
+          "note": "$2,495 — roughly half The Plunge’s price for comparable core hardware. A strong value."
         }
       ],
-      "verdict": "The best value in the chiller-built cold-plunge tier — comparable hardware to The Plunge, meaningfully cheaper.",
+      "verdict": "A strong value among chiller-built cold-plunge tubs — comparable hardware to The Plunge, meaningfully cheaper.",
       "bestFor": "Best for users wanting chiller-built cold-plunge capability without paying The Plunge premium.",
       "pros": [
         "Roughly half The Plunge’s price for comparable chiller capability",
@@ -5703,7 +5702,7 @@
         {
           "id": "chiller-capacity",
           "score": 9.7,
-          "note": "Best-in-class chiller — can hold 33°F with surface ice formation. No other consumer device matches this temperature floor."
+          "note": "Morozko says the chiller can hold 33°F and form surface ice."
         },
         {
           "id": "build",
@@ -5728,13 +5727,13 @@
         {
           "id": "value",
           "score": 4,
-          "note": "$10,000+ depending on configuration. Most expensive consumer cold-plunge — only justifiable for users chasing the temperature floor."
+          "note": "$10,000+ depending on configuration. Among the most expensive consumer cold-plunges — only justifiable for users chasing the temperature floor."
         }
       ],
-      "verdict": "The most extreme consumer cold-plunge — capable of literal ice formation on the surface. Ultra-premium pricing.",
+      "verdict": "An extreme consumer cold-plunge — Morozko says it can form surface ice. Ultra-premium pricing.",
       "bestFor": "Best for users specifically chasing extreme cold-exposure depth and Wim Hof-style protocols.",
       "pros": [
-        "Best-in-class chiller — only consumer device that can form surface ice",
+        "Morozko says it can form surface ice",
         "Wim Hof method affiliation and protocol support",
         "Premium insulated build designed for ultra-cold operation",
         "Lower water-change frequency due to cold-induced microbial inhibition"
@@ -5915,7 +5914,7 @@
         {
           "id": "evidence",
           "score": 6,
-          "note": "Honest about being a non-chiller solution. Marketing doesn’t overclaim cold-exposure benefits beyond what the research supports."
+          "note": "Honest about being a non-chiller solution. In our reading, its marketing makes fewer cold-exposure health claims than many competitors."
         },
         {
           "id": "value",
@@ -5923,10 +5922,10 @@
           "note": "$1,200 hardware. Cheap upfront, but $5–15/day in ice over months adds up. Better long-run economics than chest-freezer hacks, worse than chiller-built tubs."
         }
       ],
-      "verdict": "The most popular barrel-style cold plunge — solid build, no chiller, ice-fill cost is the daily friction.",
+      "verdict": "A widely sold barrel-style cold plunge — solid build, no chiller, ice-fill cost is the daily friction.",
       "bestFor": "Best for users wanting a clean consumer barrel form factor without committing to chiller-tier pricing.",
       "pros": [
-        "Most popular non-chiller cold plunge with proven multi-year reliability",
+        "Well-known non-chiller cold plunge with a multi-year market track record",
         "Compact vertical footprint fits smaller spaces",
         "Outdoor-rated and easy to drain",
         "Cheap upfront — $1,200 is roughly a fifth of The Plunge"
@@ -5974,7 +5973,7 @@
         {
           "id": "form-factor",
           "score": 9,
-          "note": "Folds down for storage, inflates in 10 minutes. Outdoor or indoor temporary use. The most flexible form factor in the category."
+          "note": "Folds down for storage, inflates in 10 minutes. Outdoor or indoor temporary use. Very flexible form factor."
         },
         {
           "id": "evidence",
@@ -5984,10 +5983,10 @@
         {
           "id": "value",
           "score": 8.5,
-          "note": "$220 — the cheapest credible cold-plunge entry on the market. Higher maintenance cost over years balances the low upfront."
+          "note": "$220 — a low-cost cold-plunge entry. Higher maintenance cost over years balances the low upfront."
         }
       ],
-      "verdict": "The cheapest legitimate cold-plunge entry — inflatable, portable, ice-fill operation.",
+      "verdict": "A low-cost cold-plunge entry ($220) — inflatable, portable, ice-fill operation.",
       "bestFor": "Best for first-time cold-plunge users wanting an inflatable, portable, low-commitment way to test the practice before committing to a fixed installation.",
       "pros": [
         "Cheapest legitimate cold-plunge entry — $220 upfront",
@@ -6043,7 +6042,7 @@
         {
           "id": "evidence",
           "score": 7,
-          "note": "No peer-reviewed trial of the mPulse itself. The only published trial on a Sunlighten-made sauna is a 20-person, 3-month before-and-after pilot from 2010 on an older model (Sunlight Armana 3), so it is not evidence for the mPulse; Japanese Waon-therapy studies used other makers’ devices. Sunlighten describes its saunas as general-wellness products, not medical devices. 7.0 is the base score for a product without trials of its own."
+          "note": "No peer-reviewed trial of the mPulse itself. The only published trial on a Sunlighten-made sauna is a 20-person, 3-month before-and-after pilot from 2010 on an older model (Sunlight Armana 3), so it is not evidence for the mPulse; Japanese Waon-therapy studies used other makers’ devices. Sunlighten describes its saunas as general-wellness products, not medical devices. Without trials of its own it cannot score above ONDA’s ceiling for such products."
         },
         {
           "id": "value",
@@ -6091,7 +6090,7 @@
         {
           "id": "build",
           "score": 9,
-          "note": "Finnish hemlock or nordic white spruce. Multi-decade Finnish manufacturing pedigree. 5-year structural warranty."
+          "note": "Finnish hemlock or nordic white spruce. Multi-decade Finnish manufacturing pedigree. We could not confirm the warranty terms on an official page."
         },
         {
           "id": "emf",
@@ -6114,13 +6113,13 @@
           "note": "$6,000–$12,000+ depending on configuration. Premium Finnish pedigree pricing."
         }
       ],
-      "verdict": "A Finnish-built traditional indoor sauna — premium Finnish-build, full convection heat, deepest sauna-research mechanism.",
+      "verdict": "A Finnish-built traditional indoor sauna — premium build and full convection heat, in the sauna format the Finnish cohort studies looked at.",
       "bestFor": "Best for users wanting the premium traditional Finnish sauna with Helo-engineered heat delivery.",
       "pros": [
         "Premium Finnish manufacturing pedigree",
         "Helo-engineered heater with löyly steam support",
         "Finnish hemlock or nordic white spruce construction",
-        "Deepest published research evidence base (observational Finnish cohort studies)"
+        "Traditional Finnish sauna format, the type studied in Finnish cohort studies"
       ],
       "cons": [
         "Not IR — different mechanism from IR cabin saunas",
@@ -6283,7 +6282,7 @@
         {
           "id": "build",
           "score": 8,
-          "note": "Cedar cabin construction with bundled chromotherapy and Bluetooth audio. 5-year warranty."
+          "note": "Cedar cabin construction with bundled chromotherapy and Bluetooth audio. 7-year warranty (maker)."
         },
         {
           "id": "emf",
@@ -6298,21 +6297,21 @@
         {
           "id": "evidence",
           "score": 7,
-          "note": "No peer-reviewed trial of the Equinox found — 7.0, the base score for a product without trials of its own. Honest marketing about being newer to market. Sun Home presents its evidence honestly: its research page says its products “have not been used in published clinical-outcome trials”."
+          "note": "No peer-reviewed trial of the Equinox found, so it cannot score above ONDA’s ceiling for products without trials of their own. Honest marketing about being newer to market. Sun Home presents its evidence honestly: its research page says its products “have not been used in published clinical-outcome trials”."
         },
         {
           "id": "value",
           "score": 7.5,
-          "note": "$4,500–$8,000 depending on configuration. Bundled features (chromotherapy, audio) at price below comparable Sunlighten / Clearlight configs."
+          "note": "$4,500–$8,000 depending on configuration. Bundled features (chromotherapy, audio); the 2-person model lists at $6,799 ($6,099 on sale, official store, 2026-10-18), below Clearlight Sanctuary 2. Sunlighten publishes no online prices."
         }
       ],
       "verdict": "A capable newer entrant — full-spectrum IR with bundled chromotherapy and sound, price-disciplined relative to category leaders.",
-      "bestFor": "Best for users wanting category-leader-tier full-spectrum IR at marginally lower price with bundled extras.",
+      "bestFor": "Best for users wanting full-spectrum IR with separate near/far emitters at a mid-premium price with bundled extras.",
       "pros": [
         "Full-spectrum IR with separate near and far emitters",
         "Bundled chromotherapy lighting and Bluetooth audio",
-        "Cedar cabin with 5-year warranty",
-        "Mid-premium pricing below comparable Sunlighten / Clearlight"
+        "Cedar cabin with 7-year warranty (maker)",
+        "Mid-premium pricing below the Clearlight Sanctuary 2"
       ],
       "cons": [
         "Newer brand — multi-year reliability data still being built",
@@ -6608,7 +6607,7 @@
         {
           "id": "emf",
           "score": 7.5,
-          "note": "Documented low EMF; third-party-verified across multiple independent reviews."
+          "note": "Low EMF according to the maker; we found no independent EMF test report."
         },
         {
           "id": "form-factor",
@@ -6790,7 +6789,7 @@
         {
           "id": "climate-range",
           "score": 9.5,
-          "note": "Best-in-class dual-zone range (13–43°C), strong recovery time, holds target through wide ambient swings. Autopilot adjusts overnight based on estimated sleep stage."
+          "note": "Wide dual-zone range (13–43°C), strong recovery time, holds target through wide ambient swings. Autopilot adjusts overnight based on estimated sleep stage."
         },
         {
           "id": "build",
@@ -6800,7 +6799,7 @@
         {
           "id": "app-tracking",
           "score": 9,
-          "note": "Best sleep/HRV tracking integrated into a climate system. Sleep-stage estimates, HRV trends, snore detection. Apple Health integration."
+          "note": "Integrated sleep/HRV tracking (not independently validated). Sleep-stage estimates, HRV trends, snore detection. Apple Health integration."
         },
         {
           "id": "form-factor",
@@ -6815,21 +6814,21 @@
         {
           "id": "value",
           "score": 5.5,
-          "note": "$3,000-5,000 hardware + ongoing subscription. Premium tier; the subscription stretches 3-year cost."
+          "note": "~$4,000 (queen) hardware + ongoing subscription. Premium tier; the subscription stretches 3-year cost."
         }
       ],
-      "verdict": "The category-defining smart sleep-climate system — dual-zone water cooling/heating, HRV tracking, subscription required.",
-      "bestFor": "Best for users wanting category-leading smart sleep-climate hardware with integrated HRV tracking — and willing to absorb the subscription.",
+      "verdict": "A premium smart sleep-climate system — dual-zone water cooling/heating, HRV tracking, subscription required.",
+      "bestFor": "Best for users wanting feature-rich smart sleep-climate hardware with integrated HRV tracking — and willing to absorb the subscription.",
       "pros": [
-        "Best-in-class climate range with dual-zone (his/her) control",
+        "Wide climate range (13–43°C) with dual-zone (his/her) control",
         "Built-in HRV and sleep-stage tracking — no separate wearable needed",
         "Autopilot adjusts temperature by estimated sleep stage automatically",
         "Multi-year reliability track record largely positive"
       ],
       "cons": [
         "Autopilot subscription required for full features — biggest editorial criticism",
-        "Premium pricing ($3,000-5,000) plus ongoing membership",
-        "Hub requires nightstand space and water management",
+        "Premium pricing (~$4,000 queen) plus ongoing membership",
+        "Hub needs floor space next to the bed and water management",
         "Locked into Eight Sleep ecosystem"
       ],
       "testStatus": "evidence-based",
@@ -6864,7 +6863,7 @@
         {
           "id": "app-tracking",
           "score": 9,
-          "note": "Full HRV and sleep tracking — identical to Pod 4 system."
+          "note": "Full HRV and sleep tracking — identical to Pod 4 system (not independently validated)."
         },
         {
           "id": "form-factor",
@@ -6918,7 +6917,7 @@
         {
           "id": "climate-range",
           "score": 8,
-          "note": "Solid water-cooled range comparable to Dock Pro. Slightly less rigorous than Dock Pro in peak heat."
+          "note": "Solid water-cooled range comparable to Dock Pro. Slightly less powerful than Dock Pro in peak heat."
         },
         {
           "id": "build",
@@ -6928,7 +6927,7 @@
         {
           "id": "app-tracking",
           "score": 7,
-          "note": "OOLER app with climate scheduling — introduced this feature to the category. No HRV or sleep tracking."
+          "note": "OOLER app with climate scheduling — an early Sleepme app-scheduling system. No HRV or sleep tracking."
         },
         {
           "id": "form-factor",
@@ -6949,7 +6948,7 @@
       "verdict": "Legacy Sleepme water-cooled system — solid track record, app scheduling, superseded by Dock Pro for new buyers.",
       "bestFor": "Best for users wanting Sleepme water-cooled climate at legacy pricing from remaining inventory.",
       "pros": [
-        "Introduced climate scheduling to the consumer water-cooled category",
+        "An early Sleepme system with app scheduling",
         "Solid Sleepme multi-year reliability track record",
         "No subscription required",
         "Pad on existing mattress — flexible install"
@@ -7120,7 +7119,7 @@
         {
           "id": "app-tracking",
           "score": 8.5,
-          "note": "Same Eight Sleep app and tracking as Pod 4. HRV and sleep-stage tracking identical."
+          "note": "Same Eight Sleep app and tracking as Pod 4. HRV and sleep-stage tracking on the same tracking platform."
         },
         {
           "id": "form-factor",
@@ -7138,12 +7137,11 @@
           "note": "$1,500-2,000 discounted vs Pod 4 $3,000-4,000 — strong value tier when available."
         }
       ],
-      "verdict": "Pod 4 capability at Pod 3 prices — solid value when discounted, slightly less rigorous climate range than Pod 4.",
+      "verdict": "Most of Pod 4's features at a lower price — solid value when discounted, slightly narrower climate range than Pod 4.",
       "bestFor": "Best for value-tier entry into Eight Sleep when Pod 3 inventory is discounted.",
       "pros": [
         "Same Eight Sleep app, tracking and Autopilot as Pod 4",
         "Frequently discounted relative to Pod 4",
-        "Multi-year reliability track record",
         "Cheaper entry into Eight Sleep ecosystem"
       ],
       "cons": [
@@ -7199,10 +7197,10 @@
         {
           "id": "value",
           "score": 4,
-          "note": "Pod 5 Ultra $6,099–$6,300 (queen/king) plus subscription — roughly double the Pod 4. For the core sleep-climate experience the Pod 4 (or Pod 5 Core) delivers most of the value for far less."
+          "note": "Pod 5 Ultra $6,099–$6,300 (queen/king) plus subscription — about 1.5× the Pod 4 (~$4,000). For the core sleep-climate experience the Pod 4 (or Pod 5 Core) delivers most of the value for far less."
         }
       ],
-      "verdict": "The maximal Eight Sleep — the Pod 5 Ultra adds an adjustable base, a top-down hydro-powered blanket, built-in audio and snore mitigation, but at $6,099+ the price roughly doubles. The core dual-zone climate and HRV tech are the same as the Pod 4, which remains the value. Note: Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 — check remaining Pod 5 stock against Pod 6 pricing.",
+      "verdict": "The maximal Eight Sleep — the Pod 5 Ultra adds an adjustable base, a top-down hydro-powered blanket, built-in audio and snore mitigation, but at $6,099+ it costs about 1.5× the Pod 4 (~$4,000). The core dual-zone climate and HRV tech are the same as the Pod 4, which remains the value. Note: Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 — check remaining Pod 5 stock against Pod 6 pricing.",
       "bestFor": "Best for buyers who want the maximal full-bed system — adjustable base, top-down climate, audio and snore mitigation — and will absorb the price and subscription. For the core experience, the Pod 4 or Pod 5 Core is the smarter buy.",
       "pros": [
         "Fullest climate control in the category — top-down hydro blanket plus dual-zone cover (Ultra)",
@@ -7211,7 +7209,7 @@
         "Multi-year reliability track record largely positive"
       ],
       "cons": [
-        "Pod 5 Ultra roughly doubles the price ($6,099+) for additive, not core, features",
+        "Pod 5 Ultra costs about 1.5× the Pod 4 ($6,099+) for additive, not core, features",
         "Autopilot subscription still required for full features",
         "The headline software (Autopilot 4.0) also comes to the Pod 4 — less reason to upgrade",
         "Bigger install and footprint; locked into the Eight Sleep ecosystem"
@@ -7243,12 +7241,12 @@
         {
           "id": "build",
           "score": 8.5,
-          "note": "Premium Sleep Number 360 build with multi-decade brand reliability and warranty support."
+          "note": "Premium Sleep Number 360 build from a long-established brand, with warranty support."
         },
         {
           "id": "app-tracking",
           "score": 8,
-          "note": "Sleep Number SleepIQ — mature sleep tracking including HRV and breathing rate. Less biohacker-focused than Eight Sleep but solid."
+          "note": "Sleep Number SleepIQ — mature sleep tracking including HRV and breathing rate (not independently validated). Less biohacker-focused than Eight Sleep but solid."
         },
         {
           "id": "form-factor",
@@ -7271,7 +7269,7 @@
       "pros": [
         "Climate built into the mattress — no pad or cover layer",
         "Mature SleepIQ tracking (HRV, breathing rate, sleep stages)",
-        "Multi-decade Sleep Number brand reliability",
+        "Long-established Sleep Number brand",
         "No subscription required"
       ],
       "cons": [
@@ -7291,7 +7289,7 @@
       "name": "Slumber Cloud DryLine Cooling Sheets",
       "brand": "Slumber Cloud",
       "category": "sleep-climate",
-      "productType": "Passive cooling bed sheets (NASA-derived materials)",
+      "productType": "Passive cooling bed sheets (Outlast phase-change material)",
       "url": "https://onda-life.com/reviews/slumber-cloud-dryline",
       "categoryUrl": "https://onda-life.com/reviews/smart-sleep-climate",
       "priceUsd": 200,
@@ -7307,7 +7305,7 @@
         {
           "id": "build",
           "score": 8,
-          "note": "NASA-derived Outlast phase-change materials. Long-running brand with solid sheet-fabric quality."
+          "note": "Outlast (originally developed for NASA, per the maker) phase-change materials. Long-running brand with solid sheet-fabric quality."
         },
         {
           "id": "app-tracking",
@@ -7335,7 +7333,7 @@
       "pros": [
         "Cheapest credible cooling option — $150-250 per sheet set",
         "No install, no hub, no water management",
-        "NASA-derived Outlast phase-change material",
+        "Outlast (originally developed for NASA, per the maker) phase-change material",
         "No subscription possible"
       ],
       "cons": [
@@ -7435,7 +7433,7 @@
         {
           "id": "waveform-evidence",
           "score": 7,
-          "note": "Uses common PEMF frequencies from the general PEMF literature, including a 7.83 Hz “Schumann” setting that earns no credit. No trials of the device itself — 7.0, the score we give PEMF devices without device-specific trials. “FDA registered as a Class II medical device” means registration/listing, not clearance; its “proven research” line is about PEMF in general."
+          "note": "Uses common PEMF frequencies from the general PEMF literature, including a 7.83 Hz “Schumann” setting that earns no credit. No trials of the device itself — so it cannot score above ONDA’s ceiling for PEMF devices without device-specific trials. “FDA registered as a Class II medical device” means registration/listing, not clearance; its “proven research” line is about PEMF in general."
         },
         {
           "id": "build",
@@ -7494,12 +7492,12 @@
         {
           "id": "field-strength",
           "score": 9.8,
-          "note": "Highest field strength in consumer-accessible PEMF — 200,000+ µT peak via coil applicators. The category benchmark for intensity-driven protocols."
+          "note": "200,000+ µT peak via coil applicators (maker figure), among the highest-intensity consumer-accessible PEMF."
         },
         {
           "id": "waveform-evidence",
           "score": 7,
-          "note": "Uses the high-intensity PEMF range studied in general PEMF research. We found no independent trials of this system itself — 7.0, the score for PEMF devices without device-specific trials. Pulse PEMF says plainly in its FAQ that its products “are wellness devices, not medical devices” and that it “has not sought any evaluations or clearances from the FDA”."
+          "note": "Uses the high-intensity PEMF range studied in general PEMF research. We found no independent trials of this system itself — so it cannot score above ONDA’s ceiling for PEMF devices without device-specific trials. Pulse PEMF says plainly in its FAQ that its products “are wellness devices, not medical devices” and that it “has not sought any evaluations or clearances from the FDA”."
         },
         {
           "id": "build",
@@ -7522,13 +7520,13 @@
           "note": "$7,000–$15,000+ depending on configuration. Prosumer/clinic pricing — overkill for daily wellness use, fair for professional or serious recovery protocols."
         }
       ],
-      "verdict": "Highest-output consumer-accessible PEMF. Clinic-style coil applicators sold to athletic and chiropractic practices — a sales channel, not evidence; we found no independent trials of this system. Price puts it in the prosumer/clinic bracket.",
+      "verdict": "200,000+ µT peak (maker figure), among the highest-intensity consumer-accessible PEMF. Clinic-style coil applicators sold to athletic and chiropractic practices — a sales channel, not evidence; we found no independent trials of this system. Price puts it in the prosumer/clinic bracket.",
       "bestFor": "Best for serious athletic recovery, rehabilitation contexts, or clinic installations where high-intensity targeted PEMF is the protocol — not for general consumer wellness use.",
       "pros": [
-        "Highest consumer-accessible field intensity (200,000+ µT peak)",
+        "200,000+ µT peak (maker figure), among the highest-intensity",
         "Clinic-style build sold to athletic and chiropractic practices",
         "Coil-targeting enables effective spot treatment",
-        "5-year warranty and strong clinical support"
+        "5-year warranty"
       ],
       "cons": [
         "Prosumer pricing ($7,000–$15,000+) puts it out of reach for casual users",
@@ -7564,7 +7562,7 @@
         {
           "id": "waveform-evidence",
           "score": 7,
-          "note": "Published protocol parameters. Bone-healing protocols are modelled on bone-stimulation research, but borrowed medical-device status earns no credit: the device itself has no FDA clearance for bone healing (none found in the 510(k) database) and we found no trials of it for osteoporosis — 7.0, the score for PEMF devices without device-specific trials. “Registered with the FDA as manufacturer” is a company registration, not a device clearance."
+          "note": "Published protocol parameters. Bone-healing protocols are modelled on bone-stimulation research, but borrowed medical-device status earns no credit: the device itself has no FDA clearance for bone healing (none found in the 510(k) database) and we found no trials of it for osteoporosis — so it cannot score above ONDA’s ceiling for PEMF devices without device-specific trials. “Registered with the FDA as manufacturer” is a company registration, not a device clearance."
         },
         {
           "id": "build",
@@ -7629,7 +7627,7 @@
         {
           "id": "waveform-evidence",
           "score": 7,
-          "note": "Sawtooth waveform with Schumann and bone-healing frequency presets; neither earns credit. Relies on general PEMF research; we found no trials of the device itself — 7.0, the score for PEMF devices without device-specific trials. The maker calls the device “certified medical”; which certification this means could not be established (10 October 2026)."
+          "note": "Sawtooth waveform with Schumann and bone-healing frequency presets; neither earns credit. Relies on general PEMF research; we found no trials of the device itself — so it cannot score above ONDA’s ceiling for PEMF devices without device-specific trials. The maker calls the device “certified medical”; which certification this means could not be established (10 October 2026)."
         },
         {
           "id": "build",
@@ -7758,7 +7756,7 @@
         {
           "id": "waveform-evidence",
           "score": 7,
-          "note": "Uses common PEMF frequencies. OMI is not FDA-cleared for bone healing, and borrowed medical-device status earns no credit; we found no trials of the mat itself — 7.0, the score for PEMF devices without device-specific trials."
+          "note": "Uses common PEMF frequencies. OMI is not FDA-cleared for bone healing, and borrowed medical-device status earns no credit; we found no trials of the mat itself — so it cannot score above ONDA’s ceiling for PEMF devices without device-specific trials."
         },
         {
           "id": "build",
@@ -7822,7 +7820,7 @@
         {
           "id": "waveform-evidence",
           "score": 7,
-          "note": "EarthPulse markets Schumann (7.83 Hz) and delta settings for sleep; Schumann settings earn no credit. We found no controlled human trials showing better sleep from these settings, and none of the device itself — 7.0, the score for PEMF devices without device-specific trials. Its “5 decades of peer-reviewed” research is general PEMF/TMS literature, and its claim that only clinical machines “can out-perform” it is not backed by a study."
+          "note": "EarthPulse markets Schumann (7.83 Hz) and other low-frequency settings (under 15 Hz) for sleep; Schumann settings earn no credit. We found no controlled human trials showing better sleep from these settings, and none of the device itself — so it cannot score above ONDA’s ceiling for PEMF devices without device-specific trials. Its “5 decades of peer-reviewed” research is general PEMF/TMS literature, and its claim that only clinical machines “can out-perform” it is not backed by a study."
         },
         {
           "id": "build",
@@ -7845,11 +7843,11 @@
           "note": "$899 — accessible pricing for a narrow but well-executed use case."
         }
       ],
-      "verdict": "Sleep-marketed PEMF — under-mattress install, Schumann and delta settings, mid-tier pricing. Well built, but no controlled trials show better sleep.",
+      "verdict": "Sleep-marketed PEMF — under-mattress install, Schumann and other low-frequency settings, mid-tier pricing. Well built, but no controlled trials show better sleep.",
       "bestFor": "Best for users who want an overnight, under-mattress PEMF device rather than daytime sessions, and who accept that a sleep benefit is not shown in controlled trials.",
       "pros": [
         "Under-mattress install — set once, runs overnight",
-        "Schumann 7.83 Hz and delta-band settings (sleep benefit not shown in trials)",
+        "Schumann 7.83 Hz and other low-frequency settings (sleep benefit not shown in trials)",
         "Accessible $899 pricing",
         "Multi-decade brand pedigree in sleep PEMF"
       ],
@@ -7858,7 +7856,7 @@
         "No multi-applicator coverage for daytime sessions",
         "Limited parameter customisation",
         "Smaller community / brand recognition than Bemer",
-        "No controlled trials show better sleep from Schumann or delta PEMF settings"
+        "No controlled trials show better sleep from Schumann or other low-frequency PEMF settings"
       ],
       "testStatus": "evidence-based",
       "hrvMetric": null,
@@ -8081,7 +8079,7 @@
         {
           "id": "waveform-evidence",
           "score": 5.5,
-          "note": "PEMF across 4 frequency levels, 3–23 Hz (delta to beta bands) — documented ranges but no proprietary research moat. Marketing leans on the multi-modality stack, not PEMF specifics."
+          "note": "PEMF across 4 frequency levels, 3–23 Hz — documented ranges but no proprietary research moat. Marketing leans on the multi-modality stack, not PEMF specifics."
         },
         {
           "id": "build",
@@ -8362,7 +8360,7 @@
       "verdict": "Best for music-paced rhythmic breathwork with global certification community. Less science-informed than Breathwrk, deeper ceremony framing than Othership.",
       "bestFor": "Best for users wanting rhythmic music-paced breathwork with ceremony framing and access to a global certified-facilitator community.",
       "pros": [
-        "Rhythmic music breathwork — unique pacing approach in the category",
+        "A rhythmic music-paced breathwork app",
         "Global practitioner certification network",
         "Strong ceremony / journey production",
         "Wim Hof crossover with pranayama elements"
@@ -8533,7 +8531,7 @@
         {
           "id": "evidence-grounding",
           "score": 7.5,
-          "note": "Builds on HRV-biofeedback research (Lehrer, Vaschillo) and the resonant-breathing literature. Closer alignment with published HRV-protocol research than most apps."
+          "note": "Builds on HRV-biofeedback research (Lehrer, Vaschillo) and the resonant-breathing literature."
         },
         {
           "id": "app-experience",
@@ -8543,7 +8541,7 @@
         {
           "id": "biofeedback",
           "score": 9,
-          "note": "Best biofeedback integration in breathwork apps — Apple Watch HRV pre/post measurement, adaptive recommendations. Unique in category."
+          "note": "Apple Watch HRV pre/post measurement with adaptive recommendations."
         },
         {
           "id": "value",
@@ -8551,10 +8549,10 @@
           "note": "$60/year — accessible mid-tier. Reasonable for the HRV-driven approach."
         }
       ],
-      "verdict": "Best HRV-driven breathwork app — measures Apple Watch HRV pre/post session and adapts recommendations. Narrow library but unique biofeedback closure.",
+      "verdict": "An HRV-driven breathwork app — measures Apple Watch HRV pre/post session and adapts recommendations. Narrow library but closes the biofeedback loop.",
       "bestFor": "Best for HRV-obsessed biohackers who already wear Apple Watch and want breathwork sessions measured and adapted by HRV response.",
       "pros": [
-        "Only breathwork app that closes the loop with Apple Watch HRV measurement",
+        "Breathwork app that closes the loop with Apple Watch HRV measurement",
         "Adaptive recommendations based on pre/post HRV response",
         "Aligns with published HRV-biofeedback research (Lehrer, Vaschillo)",
         "Accessible $60/year pricing"
@@ -9319,10 +9317,10 @@
           "note": "$399 — accessible mid-tier pricing for the multi-wavelength spec. Strong per-wavelength cost."
         }
       ],
-      "verdict": "Best multi-wavelength spec for the price — Korean K-beauty tech with seven wavelength modes. Light clinical-evidence moat; brand newer than category references.",
+      "verdict": "Seven wavelength modes (maker spec) at a mid-tier price — Korean K-beauty tech. Limited clinical evidence; brand newer than category references.",
       "bestFor": "Best for users wanting maximum wavelength coverage at mid-tier pricing — spec maximalism over Western clinical-evidence credentials.",
       "pros": [
-        "Seven wavelength modes — broadest spectrum coverage in consumer category",
+        "Seven wavelength modes (maker spec)",
         "Accessible $399 pricing for the multi-wavelength spec",
         "K-beauty engineering pedigree",
         "Multiple session modes for different indications"
@@ -10596,7 +10594,7 @@
         {
           "id": "value",
           "score": 7,
-          "note": "$129 — premium-brand travel mini at accessible pricing. More expensive than budget Bob and Brad Q2 Mini ($99) but with Hyperice ecosystem."
+          "note": "$129 — premium-brand travel mini at a mid-range price. More expensive than budget Bob and Brad Q2 Mini ($99) but with Hyperice ecosystem."
         }
       ],
       "verdict": "Best premium-brand travel mini — Hypervolt ecosystem in pocket form factor. Reduced stall force is the trade for portability.",
@@ -12340,7 +12338,7 @@
         {
           "name": "HRV measurement accuracy",
           "winner": "a",
-          "note": "Oura Ring 4 has an independent check against a chest-strap reference (overnight recordings from 13 people, Dial 2025), where it agreed slightly more closely than the earlier WHOOP 4.0; the WHOOP 5.0 itself has no independent validation against ECG (as of October 2026)."
+          "note": "Oura Ring 4 has an independent check against a single-lead chest-strap ECG (Polar H10; overnight recordings from 13 people, Dial 2025), where it agreed slightly more closely than the earlier WHOOP 4.0; the WHOOP 5.0 itself has no independent validation against a reference device (as of October 2026)."
         },
         {
           "name": "Sleep tracking",
@@ -12365,7 +12363,7 @@
         {
           "name": "Data access and integration",
           "winner": "tie",
-          "note": "Both ship competent apps and integrate with Apple Health; neither exports raw RR-intervals without a chest strap."
+          "note": "Both ship competent apps and integrate with Apple Health; neither offers raw RR-interval export in our sources (a chest strap such as the Polar H10 does)."
         },
         {
           "name": "Price and subscription",
@@ -14903,22 +14901,22 @@
         "flow-neuroscience": 6.7,
         "apollo-neuro": 7.1
       },
-      "verdict": "Not really substitutes. Flow Neuroscience for tDCS depression treatment under a structured programme. Apollo Neuro for all-day vibrotactile vagal modulation in general wellness use.",
+      "verdict": "Not really substitutes. Flow Neuroscience for tDCS depression treatment under a structured programme. Apollo Neuro for all-day vibrotactile wear, marketed for calm, in general wellness use.",
       "bestFor": {
-        "a": "Choose Flow Neuroscience if you have major depression and a clinician open to a CE-marked tDCS option — the strongest regulatory and trial backing in take-home brain devices.",
-        "b": "Choose Apollo Neuro if you want passive vagal modulation through your day — general wellness, recovery, stress — without a clinical indication or programme commitment.",
+        "a": "Choose Flow Neuroscience if you have major depression and a clinician open to a tDCS option — FDA-approved (PMA P230024) and CE-marked, with randomised-trial evidence.",
+        "b": "Choose Apollo Neuro if you want a passive vibrotactile wearable marketed for calm through your day — general wellness, recovery, stress — without a clinical indication or programme commitment.",
         "c": null
       },
       "axes": [
         {
           "name": "Regulatory status",
           "winner": "a",
-          "note": "Flow Neuroscience: CE-marked Class IIa medical device. Apollo Neuro: consumer wellness wearable, no medical-device clearance. Flow is the regulated option."
+          "note": "Flow Neuroscience: FDA premarket approval (PMA P230024, 8 December 2025, MDD in adults not treatment-refractory) and CE-marked Class IIa medical device. Apollo Neuro: consumer wellness wearable, no medical-device clearance. Flow is the regulated option."
         },
         {
           "name": "Mechanism",
           "winner": "a",
-          "note": "Flow: tDCS — 2 mA direct-current stimulation over the dorsolateral prefrontal cortex (active intervention). Apollo: vibrotactile, indirect vagal modulation via mechanoreceptors. Flow is more direct."
+          "note": "Flow: tDCS — 2 mA direct-current stimulation over the dorsolateral prefrontal cortex (active intervention). Apollo: vibrotactile stimulation via skin mechanoreceptors (the maker says it engages the vagus nerve). Flow is more direct."
         },
         {
           "name": "Indication scope",
@@ -14928,7 +14926,7 @@
         {
           "name": "Clinical evidence",
           "winner": "a",
-          "note": "Flow: published RCTs in Lancet Digital Health and Brain Stimulation for tDCS in major depression. Apollo: University of Pittsburgh HRV/recovery RCTs. Both real; Flow’s trials are in a clinical population (major depression)."
+          "note": "Flow: a fully remote randomised sham-controlled trial in Nature Medicine (Woodham 2024, funded by Flow) for tDCS in major depression. Apollo: University of Pittsburgh HRV/recovery RCTs. Both real; Flow’s trials are in a clinical population (major depression)."
         },
         {
           "name": "Day-to-day use frequency",
@@ -15459,10 +15457,10 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Headspace (7.8 vs 7.4)",
+      "label": "Higher ONDA score: Headspace (7.8 vs 7.3)",
       "onda_scores": {
         "headspace": 7.8,
-        "waking-up": 7.4
+        "waking-up": 7.3
       },
       "verdict": "Different products. Headspace for an accessible, structured introduction to mindfulness. Waking Up for the philosophical and non-dual depth Headspace deliberately stays away from.",
       "bestFor": {
@@ -15754,10 +15752,10 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Calm (7.7 vs 7.4)",
+      "label": "Higher ONDA score: Calm (7.7 vs 7.3)",
       "onda_scores": {
         "calm": 7.7,
-        "waking-up": 7.4
+        "waking-up": 7.3
       },
       "verdict": "Relaxation and breadth vs serious depth. Calm wins on sleep content, a vast polished library and ease for anyone. Waking Up wins on depth, rigour and a coherent philosophical path — but it costs more and isn’t for beginners. Choose Calm to wind down and explore; Waking Up to go deep.",
       "bestFor": {
@@ -15774,7 +15772,7 @@
         {
           "name": "Depth & rigour",
           "winner": "b",
-          "note": "Waking Up is the deepest, most rigorous app here — serious instruction and philosophy no other app attempts. Calm stays accessible and mainstream."
+          "note": "Waking Up is teaching-focused and philosophy-heavy — serious instruction and philosophy that Calm does not attempt. Calm stays accessible and mainstream."
         },
         {
           "name": "Library breadth",
@@ -15813,10 +15811,10 @@
         "headspace": 7.8,
         "insight-timer": 8
       },
-      "verdict": "Different products. Headspace for structured learning under one teaching voice. Insight Timer for the largest free meditation library and access to thousands of teachers.",
+      "verdict": "Different products. Headspace for structured learning under one teaching voice. Insight Timer for what it calls the largest free meditation library and access to thousands of teachers.",
       "bestFor": {
         "a": "Choose Headspace if you want to learn meditation as a structured skill — Basics course, consistent teaching voice, progression you can track over months.",
-        "b": "Choose Insight Timer if you want the largest free meditation library on the market — thousands of teachers, a real free tier, an optional paid layer for premium courses.",
+        "b": "Choose Insight Timer if you want what Insight Timer calls the largest free meditation library — thousands of teachers, a real free tier, an optional paid layer for premium courses.",
         "c": null
       },
       "axes": [
@@ -15833,12 +15831,12 @@
         {
           "name": "Structured curriculum",
           "winner": "a",
-          "note": "Headspace’s Basics course is the strongest beginner curriculum in the category. Insight Timer has courses but the library is search-driven and non-linear."
+          "note": "Headspace’s Basics course is one of the most structured beginner curricula in the category. Insight Timer has courses but the library is search-driven and non-linear."
         },
         {
           "name": "Teaching quality consistency",
           "winner": "a",
-          "note": "Headspace: small core team, consistent voice. Insight Timer: open-teacher model, quality varies wildly."
+          "note": "Headspace: small core team, consistent voice. Insight Timer: open-teacher model, quality varies from teacher to teacher."
         },
         {
           "name": "Top-tier named teachers",
@@ -15931,10 +15929,10 @@
       ],
       "winner": null,
       "winnerStatus": "depends-on-the-job",
-      "label": "Higher ONDA score: Healthy Minds Program (7.8 vs 7.4)",
+      "label": "Higher ONDA score: Healthy Minds Program (7.8 vs 7.3)",
       "onda_scores": {
         "healthy-minds-program": 7.8,
-        "waking-up": 7.4
+        "waking-up": 7.3
       },
       "verdict": "Different approaches to the same credibility goal. Healthy Minds for an evidence-based four-pillar training framework — free, no paywall. Waking Up for philosophical depth and non-dual practice under Sam Harris.",
       "bestFor": {
@@ -16320,7 +16318,7 @@
         "mito-red-mitopro-1500": 8.1,
         "hooga-hg500": 7.5
       },
-      "verdict": "Depends on what matters. MitoPRO wins on spectrum, build and coverage. Hooga wins on value by a wide margin — most biohackers do not need MitoPRO’s premium for typical use.",
+      "verdict": "Depends on what matters. MitoPRO wins on spectrum, build and coverage. Hooga wins on value by a wide margin — many buyers may not need MitoPRO’s premium for typical use.",
       "bestFor": {
         "a": "Choose Mito Red MitoPRO 1500 if broader wavelength coverage, larger panel size and premium build are worth $940 over Hooga for your use case.",
         "b": "Choose Hooga HG500 if you want verified two-wavelength specs at the lowest legitimate price — most biohacker use cases are covered.",
@@ -16404,12 +16402,12 @@
         {
           "name": "Build & brand",
           "winner": "b",
-          "note": "Joovv is the mature premium brand with the best build and resale value. Hooga is well-made for the price but not in the same tier."
+          "note": "Joovv is the mature premium brand: premium build, established brand. Hooga is well-made for the price but not in the same tier."
         },
         {
           "name": "Wavelengths",
           "winner": "b",
-          "note": "Hooga uses dual wavelengths (660/850) — enough for the core evidence base. Joovv covers more of the spectrum and offers targeted modes."
+          "note": "Both use 660 + 850 nm — the core wavelengths in the evidence base."
         },
         {
           "name": "Modularity & ecosystem",
@@ -16494,7 +16492,7 @@
       },
       "verdict": "Different premium intents. GembaRed Vesta wins on EMF/flicker discipline and wavelength breadth. Joovv Solo 3.0 wins on modular full-body scaling and brand maturity.",
       "bestFor": {
-        "a": "Choose GembaRed Vesta if EMF discipline is a first-class criterion — fully-shielded build with the lowest EMF measurement in this list, six-wavelength coverage.",
+        "a": "Choose GembaRed Vesta if EMF discipline is a first-class criterion — fully-shielded build with the lowest maker-stated EMF in ONDA’s list, six-wavelength coverage.",
         "b": "Choose Joovv Solo 3.0 if modular full-body scaling and the larger brand’s support are the deciding criteria — a long-running, widely used modular panel.",
         "c": null
       },
@@ -16502,7 +16500,7 @@
         {
           "name": "EMF / flicker discipline",
           "winner": "a",
-          "note": "GembaRed: <0.1 mG at 6\" — lowest in the category. Joovv: <0.5 mG at 6\", also clean. GembaRed leads on EMF discipline; Joovv is still excellent."
+          "note": "GembaRed: <0.1 mG at 6\" — lowest maker-stated EMF in ONDA’s list. Joovv: <0.5 mG at 6\", also clean. GembaRed leads on EMF discipline; Joovv is still excellent."
         },
         {
           "name": "Wavelength coverage",
@@ -16754,7 +16752,7 @@
       },
       "verdict": "The Plunge wins on multi-year reliability and chiller capability; Edge Tub wins decisively on value. For most buyers, Edge Tub is the smarter pick.",
       "bestFor": {
-        "a": "Choose The Plunge if you want the category-defining premium build, longest reliability track record and maximum chiller capacity — and the premium pricing is acceptable.",
+        "a": "Choose The Plunge if you want the premium build, longest reliability track record and maximum chiller capacity — and the premium pricing is acceptable.",
         "b": "Choose Edge Tub if you want chiller-built capability at roughly half The Plunge’s price, and you can accept a thinner multi-year reliability track record on a newer brand.",
         "c": null
       },
@@ -17159,9 +17157,9 @@
         "sun-home-equinox": 7.7,
         "clearlight-sanctuary-2": 7.3
       },
-      "verdict": "Value and features vs pedigree and warranty. The Sun Home Equinox wins on heat output and bundled extras (integrated red light, chromotherapy, sound). The Clearlight Sanctuary 2 wins on build reputation and its Jacuzzi-backed lifetime warranty, but now costs more ($7,299 vs ~$6,000). Sun Home documents third-party EMF figures; Clearlight markets low EMF/ELF without published third-party numbers. Pick Sun Home for the feature bundle and heat; Clearlight for warranty and long brand history.",
+      "verdict": "Value and features vs pedigree and warranty. The Sun Home Equinox wins on heat output and bundled extras (chromotherapy, sound). The Clearlight Sanctuary 2 wins on build reputation and its Jacuzzi-backed lifetime warranty, but costs more ($7,299 vs $6,799 list, $6,099 on sale). Both market low EMF, and neither publishes an independent figure we can compare. Pick Sun Home for the feature bundle and heat; Clearlight for warranty and long brand history.",
       "bestFor": {
-        "a": "Choose the Sun Home Equinox if you want the highest heat, integrated red-light and chromotherapy, and a price-disciplined package from a strong newer brand.",
+        "a": "Choose the Sun Home Equinox if you want a cabin rated to ~165°F (maker spec), chromotherapy and sound, and a price-disciplined package from a strong newer brand.",
         "b": "Choose the Clearlight Sanctuary 2 if warranty scope, brand history and Jacuzzi backing matter most and the higher price ($7,299 basswood) is acceptable.",
         "c": null
       },
@@ -17169,12 +17167,12 @@
         {
           "name": "Heat output",
           "winner": "a",
-          "note": "Sun Home Equinox reaches the highest temperatures in this bracket (~165°F). Clearlight typically tops out around 150–157°F."
+          "note": "Sun Home Equinox is rated to ~165°F (maker spec). Clearlight typically tops out around 150–157°F."
         },
         {
-          "name": "Integrated red light / extras",
+          "name": "Bundled extras",
           "winner": "a",
-          "note": "Sun Home bundles integrated red-light panels, chromotherapy and sound as standard. Clearlight keeps a cleaner, more traditional package."
+          "note": "Sun Home bundles chromotherapy and sound as standard (red light therapy is listed as not included). Clearlight keeps a cleaner, more traditional package."
         },
         {
           "name": "Warranty & brand backing",
@@ -17189,12 +17187,12 @@
         {
           "name": "Price",
           "winner": "a",
-          "note": "Sun Home Equinox: from ~$6,000 (2-person). Clearlight Sanctuary 2: $7,299 basswood / $7,699 mahogany (official store, 2026-10-01). Sun Home is roughly $1,300 cheaper."
+          "note": "Sun Home Equinox 2-person: $6,799 list, $6,099 on sale (official store, 2026-10-18). Clearlight Sanctuary 2: $7,299 basswood / $7,699 mahogany (official store, 2026-10-01). Sun Home is roughly $500–$1,200 cheaper."
         },
         {
           "name": "Full-spectrum quality",
           "winner": "tie",
-          "note": "Both deliver genuine full-spectrum infrared; the day-to-day sauna experience is comparable."
+          "note": "Both are marketed as full-spectrum infrared; the day-to-day sauna experience is comparable."
         }
       ]
     },
@@ -17213,9 +17211,9 @@
         "sun-home-equinox": 7.7,
         "sunlighten-mpulse": 8.2
       },
-      "verdict": "Premium reference vs value-forward challenger. The Sunlighten mPulse wins on true 3-wavelength control, premium cedar build and category pedigree; the Sun Home Equinox wins on heat output and bundled extras (integrated red light, chromotherapy). Both verify low EMF at a similar price. Pick Sunlighten for wavelength precision and build; Sun Home for heat and the feature bundle.",
+      "verdict": "Premium reference vs value-forward challenger. The Sunlighten mPulse wins on true 3-wavelength control, premium cedar build and category pedigree; the Sun Home Equinox wins on heat output and bundled extras (chromotherapy, sound). Both market low EMF. Pick Sunlighten for wavelength precision and build; Sun Home for heat and the feature bundle.",
       "bestFor": {
-        "a": "Choose the Sun Home Equinox if you want the hottest cabin, integrated red-light and chromotherapy, and premium features at a disciplined price.",
+        "a": "Choose the Sun Home Equinox if you want a hotter cabin (~165°F, maker figure), bundled chromotherapy and sound, and premium features at a disciplined price.",
         "b": "Choose the Sunlighten mPulse if you want the category leader — true independent 3-wavelength infrared control and a premium cedar build.",
         "c": null
       },
@@ -17223,22 +17221,22 @@
         {
           "name": "Wavelength control",
           "winner": "b",
-          "note": "Sunlighten mPulse delivers true, independently-controlled near/mid/far infrared — the category benchmark for wavelength precision. Sun Home is full-spectrum but without the same independent control."
+          "note": "Sunlighten mPulse delivers true, independently-controlled near/mid/far infrared — Sunlighten’s signature. Sun Home is full-spectrum but without the same independent control."
         },
         {
           "name": "Heat output",
           "winner": "a",
-          "note": "Sun Home Equinox reaches the highest temperatures (~165°F); Sunlighten runs a touch cooler (~150°F)."
+          "note": "Sun Home Equinox runs hotter (~165°F, maker figure); Sunlighten runs a touch cooler (~150°F)."
         },
         {
-          "name": "Integrated red light / extras",
+          "name": "Bundled extras",
           "winner": "a",
-          "note": "Sun Home bundles integrated red-light panels and chromotherapy as standard; Sunlighten focuses on infrared delivery."
+          "note": "Sun Home bundles chromotherapy and Bluetooth sound as standard (its spec sheet lists red light therapy as not included); Sunlighten focuses on infrared delivery."
         },
         {
           "name": "Build quality",
           "winner": "b",
-          "note": "Sunlighten’s premium cedar build and finish are the category reference. Sun Home is well-built but a step behind on materials."
+          "note": "Sunlighten’s premium cedar build and finish are Sunlighten’s signature. Sun Home is well-built but a step behind on materials."
         },
         {
           "name": "EMF",
@@ -17248,7 +17246,7 @@
         {
           "name": "Price",
           "winner": "tie",
-          "note": "Both start around $6,000 for comparable configurations, so price is roughly a wash — the difference is what you prioritise."
+          "note": "Sun Home Equinox 2-person: $6,799 list, $6,099 on sale (official store, 2026-10-18). Sunlighten publishes no online prices (quote via \"Get pricing\"), so ONDA cannot confirm a gap — get a quote; the difference is mostly what you prioritise."
         }
       ]
     },
@@ -17387,7 +17385,7 @@
       },
       "verdict": "Form factor decides. Finnleo Hallmark for indoor installation with Finnish manufacturing pedigree. Almost Heaven Salem for outdoor barrel installation with American cedar build.",
       "bestFor": {
-        "a": "Choose Finnleo Hallmark if you want premium Finnish indoor sauna with Helo-engineered heat delivery and the deepest manufacturing pedigree in the category.",
+        "a": "Choose Finnleo Hallmark if you want premium Finnish indoor sauna with Helo-engineered heat delivery and a long Finnish manufacturing history.",
         "b": "Choose Almost Heaven Salem if you want a traditional outdoor cedar barrel sauna with American-built construction, a 6 kW electric heater and the lower price ($4,485 list for the 2-person Salem).",
         "c": null
       },
@@ -17410,7 +17408,7 @@
         {
           "name": "Warranty",
           "winner": "b",
-          "note": "Almost Heaven Salem: limited lifetime warranty on manufacturing defects (heater: 1 year elements, 5 years other parts). Finnleo: standard manufacturer warranty. Neither Salem nor Hallmark offers a wood-burning heater."
+          "note": "Almost Heaven Salem: limited lifetime warranty on manufacturing defects (heater: 1 year elements, 5 years other parts). Finnleo: we could not find Hallmark warranty terms on an official Finnleo page; ask the dealer. Neither Salem nor Hallmark offers a wood-burning heater."
         },
         {
           "name": "EMF",
@@ -17420,7 +17418,7 @@
         {
           "name": "Research evidence",
           "winner": "a",
-          "note": "Finnleo represents the Finnish indoor sauna format that the published Finnish cardiovascular and dementia cohort studies were run on."
+          "note": "The Finnish Kuopio cohort studies (cardiovascular and dementia risk; associations, not cause) were on traditional Finnish sauna bathing in general, not on Finnleo; the indoor electric cabin is the closer match to that format."
         },
         {
           "name": "Price",
@@ -18029,10 +18027,10 @@
       ],
       "winner": null,
       "winnerStatus": "practically-equal",
-      "label": "Practically equal by ONDA score (7.8, 7.8 and 7.4)",
+      "label": "Practically equal by ONDA score (7.8, 7.8 and 7.3)",
       "onda_scores": {
         "headspace": 7.8,
-        "waking-up": 7.4,
+        "waking-up": 7.3,
         "healthy-minds-program": 7.8
       },
       "verdict": "Three different teaching philosophies. Headspace for friendly structured introduction. Waking Up for philosophical depth and non-dual practice. Healthy Minds Program for an evidence-based four-pillar framework from a research lab.",
@@ -18055,7 +18053,7 @@
         {
           "name": "Teaching depth",
           "winner": "b",
-          "note": "Waking Up goes deepest into philosophy and non-dual practice. Healthy Minds: rigorous but procedural. Headspace: practical and accessible."
+          "note": "Waking Up focuses most on philosophy and non-dual practice. Healthy Minds: rigorous but procedural. Headspace: practical and accessible."
         },
         {
           "name": "Beginner accessibility",
@@ -18447,10 +18445,10 @@
         "eight-sleep-pod-3": 7.7,
         "eight-sleep-pod-cover-pro": 7.9
       },
-      "verdict": "Mattress status decides again. Pod 3 if you're replacing your mattress and the inventory discount is deep enough. Pod Cover Pro if you have a mattress you like and want the current-gen tracking/climate on it.",
+      "verdict": "Generation and price decide. Both are covers for your existing mattress. Pod 3 if the remaining-inventory discount is deep enough; Pod Cover Pro if you want the current-gen climate range and sensors.",
       "bestFor": {
-        "a": "Choose Eight Sleep Pod 3 if you are replacing your mattress, the inventory discount is deep, and you accept the previous-gen climate range and slightly older sensors.",
-        "b": "Choose Pod Cover Pro if you have a mattress you like and you want the current-gen Eight Sleep platform on it.",
+        "a": "Choose Eight Sleep Pod 3 if you find a deep remaining-inventory discount and accept the previous-gen climate range and slightly older sensors.",
+        "b": "Choose Pod Cover Pro if you want the current-gen Eight Sleep platform on your existing mattress at a stable price.",
         "c": null
       },
       "axes": [
@@ -18462,7 +18460,7 @@
         {
           "name": "Tracking",
           "winner": "b",
-          "note": "Cover Pro: current Pod 4-generation sensors and Autopilot. Pod 3: previous-gen sensors, same Eight Sleep app and subscription. Tracking quality close but Cover Pro leads."
+          "note": "Cover Pro: current Pod 4-generation sensors and Autopilot. Pod 3: previous-gen sensors, same Eight Sleep app and subscription. Cover Pro has newer sensors; neither is independently validated."
         },
         {
           "name": "Subscription",
@@ -18476,13 +18474,13 @@
         },
         {
           "name": "Mattress flexibility",
-          "winner": "b",
-          "note": "Cover Pro installs on any mattress and transfers to your next bed. Pod 3 locks you into the Eight Sleep mattress."
+          "winner": "tie",
+          "note": "Both are covers that fit your existing mattress and move with you to your next bed."
         },
         {
           "name": "Price",
           "winner": "a",
-          "note": "Pod 3 inventory pricing: deeply discounted from original (~$2,000-2,800 depending on stock). Cover Pro: ~$2,200. Pod 3 marginally cheaper if you find the inventory discount."
+          "note": "Pod 3 remaining-inventory pricing: ~$2,000-2,800 depending on stock. Cover Pro: ~$2,200. Pod 3 can be cheaper at the low end of remaining inventory."
         }
       ]
     },
@@ -18505,7 +18503,7 @@
       },
       "verdict": "Three different buying questions resolve cleanly. Eight Sleep Pod 4 if you want integrated tracking and accept the subscription. ChiliPad Dock Pro if you want the same water cooling without the subscription. BedJet 3 if you want the air-flow alternative at the lowest price.",
       "bestFor": {
-        "a": "Choose Eight Sleep Pod 4 if you want category-leading climate hardware with built-in HRV tracking that replaces a wearable — and you accept the ongoing Autopilot subscription.",
+        "a": "Choose Eight Sleep Pod 4 if you want feature-rich climate hardware with built-in HRV tracking that replaces a wearable (not independently validated) — and you accept the ongoing Autopilot subscription.",
         "b": "Choose ChiliPad Dock Pro if you want premium dual-zone water cooling without the Eight Sleep subscription tax and you already wear an Oura or Whoop for tracking.",
         "c": "Choose BedJet 3 if you want clean air-flow climate with no water management at the lowest price in the category."
       },
@@ -18513,7 +18511,7 @@
         {
           "name": "Climate range",
           "winner": "a",
-          "note": "Eight Sleep Pod 4 leads: dual-zone water cooling (13–43 °C) with the fastest recovery in peak heat. ChiliPad Dock Pro is close (13–46 °C, slightly slower in peak heat); BedJet's air flow cools less in humid summer peaks."
+          "note": "Eight Sleep Pod 4 leads on recovery: dual-zone water cooling (13–43 °C) that recovers faster in peak heat. ChiliPad Dock Pro has the wider range (13–46 °C) but is slightly slower in peak heat; BedJet's air flow cools less in humid summer peaks."
         },
         {
           "name": "Tracking",
@@ -18538,12 +18536,12 @@
         {
           "name": "App",
           "winner": "a",
-          "note": "Eight Sleep: best in category, stage-based Autopilot. ChiliPad: scheduling-capable, climate-focused. BedJet: functional, minimal."
+          "note": "Eight Sleep: most feature-rich, stage-based Autopilot. ChiliPad: scheduling-capable, climate-focused. BedJet: functional, minimal."
         },
         {
           "name": "Price",
           "winner": "c",
-          "note": "Eight Sleep Pod 4 total 3-year cost: ~$4,200-5,900. ChiliPad: ~$1,700 one-time. BedJet: ~$600-900 one-time. BedJet ~1/6 the Eight Sleep total."
+          "note": "Eight Sleep Pod 4 total 3-year cost: ~$4,500-4,900 (~$4,000 queen plus ~$15-25/month subscription). ChiliPad: ~$1,700 one-time. BedJet: ~$600-900 one-time. BedJet is a fraction of the Eight Sleep total."
         }
       ]
     },
@@ -18582,7 +18580,7 @@
         {
           "name": "Modality stacking",
           "winner": "b",
-          "note": "Bemer: PEMF only. Healthy Wave: PEMF + far-infrared + red light + amethyst/tourmaline. Three modalities vs one."
+          "note": "Bemer: PEMF only. Healthy Wave: PEMF + far-infrared + red light + amethyst/tourmaline. Several modalities vs one."
         },
         {
           "name": "Programmability",
@@ -18597,7 +18595,7 @@
         {
           "name": "Build pedigree",
           "winner": "a",
-          "note": "Bemer: 25-year German engineering, premium electronics, 3-year warranty. Healthy Wave: solid build, 5-year limited warranty and 90-day trial but less brand pedigree."
+          "note": "Bemer: German engineering with a track record since 1998, premium electronics, 3-year warranty. Healthy Wave: solid build, 5-year limited warranty and 90-day trial but less brand pedigree."
         },
         {
           "name": "Price",
@@ -19269,10 +19267,10 @@
         "ultrahuman-ring-pro": 7.3,
         "ringconn-gen-2": 7
       },
-      "verdict": "Both skip the subscription and last well over a week. The Ultrahuman Ring Pro wins on features, processing and a slightly longer battery; the RingConn Gen 2 wins decisively on price — roughly half the cost for solid tracking with a longer track record. Pick by whether you want premium metrics or the best value.",
+      "verdict": "Both skip the subscription and last well over a week. The Ultrahuman Ring Pro wins on features, processing and a slightly longer battery; the RingConn Gen 2 wins decisively on price — about $180 (≈38%) cheaper for solid tracking with a longer sales history. Pick by whether you want premium metrics or the value pick.",
       "bestFor": {
         "a": "Choose the Ultrahuman Ring Pro if you want the richer feature set, on-ring processing and the longest battery, and the higher price is worth it.",
-        "b": "Choose the RingConn Gen 2 if you want a subscription-free ring with a long battery and solid tracking for the lowest price — the value pick.",
+        "b": "Choose the RingConn Gen 2 if you want a subscription-free ring with a long battery and solid tracking for about $180 less — the value pick.",
         "c": null
       },
       "axes": [
@@ -19289,7 +19287,7 @@
         {
           "name": "Battery",
           "winner": "a",
-          "note": "Ring Pro: ~15 days. RingConn Gen 2: ~12 days. Both excellent; Ultrahuman edges it."
+          "note": "Ring Pro: ~15 days. RingConn Gen 2: 10–12 days. Both excellent; Ultrahuman edges it."
         },
         {
           "name": "Features & processing",
@@ -19304,7 +19302,7 @@
         {
           "name": "Track record",
           "winner": "b",
-          "note": "RingConn Gen 2 is proven and, after settling with Oura, remains on sale in the US. The Ring Pro is new; Ultrahuman’s prior Ring Air had battery-reliability complaints the redesign targets."
+          "note": "RingConn Gen 2 has a longer sales history and, after settling with Oura, remains on sale in the US. The Ring Pro is new; Ultrahuman’s prior Ring Air had battery-reliability complaints the redesign targets."
         }
       ]
     },
@@ -19971,9 +19969,9 @@
         "luna-ring": 6.7,
         "amazfit-helio-ring": 6.6
       },
-      "verdict": "Two budget subscription-free rings. The Amazfit Helio Ring is cheaper ($199) and lighter; the Noise Luna Ring Gen 2 (~$300) has a wider size range, a charging case for long total battery, and equally good sleep tracking. Pick the Helio for lowest price if it fits, the Luna for better fit options and the charging-case convenience.",
+      "verdict": "Two budget subscription-free rings. The Amazfit Helio Ring is cheaper ($199) and lighter; the Noise Luna Ring Gen 2 (~$300) has a wider size range, a charging case for long total battery, and the same basic sleep tracking (stage estimates, not independently validated). Pick the Helio for lowest price if it fits, the Luna for better fit options and the charging-case convenience.",
       "bestFor": {
-        "a": "Choose the Noise Luna Ring Gen 2 if you want good sleep tracking, a wider size range and a charging case for long total battery, and $300 is acceptable.",
+        "a": "Choose the Noise Luna Ring Gen 2 if you want basic sleep tracking (stage estimates, not independently validated), a wider size range and a charging case for long total battery, and $300 is acceptable.",
         "b": "Choose the Amazfit Helio Ring if you want the cheapest, lightest subscription-free ring and one of its three sizes fits you.",
         "c": null
       },
@@ -20001,7 +19999,7 @@
         {
           "name": "Sleep tracking",
           "winner": "tie",
-          "note": "Both track sleep well for the price — sleep staging is a strong point for each."
+          "note": "Both offer basic sleep tracking for the price — stage estimates, with no independent validation found for either."
         },
         {
           "name": "Extras",
@@ -20025,9 +20023,9 @@
         "luna-ring": 6.7,
         "oura-ring-4": 7.6
       },
-      "verdict": "Value vs reference. The Noise Luna Ring Gen 2 wins on cost — ~$300, no subscription — with competent sleep tracking and a charging case for long total battery. Oura Ring 4 has an independent check against ECG (overnight recordings from 13 people, Dial 2025); Luna Ring has none. Oura also wins on app polish, fit range and single-charge battery, at $349 plus ~$6/month. If price and no-subscription matter most, Luna; if accuracy and experience do, Oura.",
+      "verdict": "Value vs reference. The Noise Luna Ring Gen 2 wins on cost — ~$300, no subscription — with basic sleep tracking (stage estimates, not independently validated) and a charging case for long total battery. Oura Ring 4 has an independent check against a single-lead chest-strap ECG (Polar H10; overnight recordings from 13 people, Dial 2025); Luna Ring has none. Oura also wins on app polish, fit range and single-charge battery, at $349 plus ~$6/month. If price and no-subscription matter most, Luna; if accuracy and experience do, Oura.",
       "bestFor": {
-        "a": "Choose the Noise Luna Ring Gen 2 if you want a cheap, subscription-free ring with good sleep tracking and don’t mind leaning on the charging case.",
+        "a": "Choose the Noise Luna Ring Gen 2 if you want a cheap, subscription-free ring with basic sleep tracking and don’t mind leaning on the charging case.",
         "b": "Choose the Oura Ring 4 if you want the only independently checked overnight HRV of the two (one study) and the most detailed sleep data, the best app and longer single-charge battery, and the membership is acceptable.",
         "c": null
       },
@@ -20040,7 +20038,7 @@
         {
           "name": "Accuracy",
           "winner": "b",
-          "note": "Oura Ring 4 has an independent check of heart rate and HRV against ECG (overnight recordings from 13 people, Dial 2025); no independent check of its sleep staging was found. The Luna has no independent validation."
+          "note": "Oura Ring 4 has an independent check of heart rate and HRV against a single-lead chest-strap ECG (Polar H10; overnight recordings from 13 people, Dial 2025); no independent check of its sleep staging was found. The Luna has no independent validation."
         },
         {
           "name": "Sleep tracking",
@@ -20079,7 +20077,7 @@
         "eight-sleep-pod-4": 7.9,
         "eight-sleep-pod-5": 7.6
       },
-      "verdict": "The Pod 5 Ultra is the fuller system — adjustable base, top-down climate, audio, automatic snore mitigation — but at ~$6,099 it costs roughly double the Pod 4. Dual-zone temperature, HRV tracking and the Autopilot 4.0 software are shared, so unless you want the full-bed extras, the Pod 4 (or the cheaper Pod 5 Core) is the value.",
+      "verdict": "The Pod 5 Ultra is the fuller system — adjustable base, top-down climate, audio, automatic snore mitigation — but at ~$6,099 it costs about 1.5× the Pod 4 (~$4,000). Dual-zone temperature, HRV tracking and the Autopilot 4.0 software are shared, so unless you want the full-bed extras, the Pod 4 (or the cheaper Pod 5 Core) is the value.",
       "bestFor": {
         "a": "Choose the Pod 4 if you want the category-leading dual-zone sleep-climate experience and HRV tracking for the best value — most of what makes Eight Sleep great, at less than half the Ultra’s price.",
         "b": "Choose the Pod 5 Ultra if you want the maximal full-bed system — adjustable base, top-down hydro blanket, built-in audio and snore mitigation — and the price is not the deciding factor.",
@@ -20300,7 +20298,7 @@
         "eight-sleep-pod-5": 7.6,
         "bedjet-3": 7.8
       },
-      "verdict": "Maximal water-cooled smart bed vs simple, affordable air flow. The Eight Sleep Pod 5 wins on cooling rigour, integrated HRV tracking and software — at ~$6,099 plus a subscription. The BedJet 3 wins on price, no water maintenance and easy install — at roughly a tenth of the cost, with less precise temperature control and no tracking. Pick by budget and how much rigour you need.",
+      "verdict": "Maximal water-cooled smart bed vs simple, affordable air flow. The Eight Sleep Pod 5 wins on cooling rigour, integrated HRV tracking and software — at ~$6,099 for the Pod 5 Ultra plus a subscription. The BedJet 3 wins on price, no water maintenance and easy install — at roughly a tenth of the cost, with less precise temperature control and no tracking. Pick by budget and how much rigour you need.",
       "bestFor": {
         "a": "Choose the Eight Sleep Pod 5 if you want the most rigorous dual-zone cooling, integrated HRV and sleep tracking, and adaptive Autopilot software — and the premium price and subscription are acceptable.",
         "b": "Choose the BedJet 3 if you want effective, affordable bed cooling without water management or a subscription, easy install, and you do not need built-in tracking or precise per-degree control.",
@@ -20388,8 +20386,8 @@
         },
         {
           "name": "Subscription",
-          "winner": "a",
-          "note": "Neither requires a subscription — the shared reason to consider them over Oura. Ultrahuman takes this axis narrowly on price, but it is effectively a tie."
+          "winner": "tie",
+          "note": "Neither requires a subscription — the shared reason to consider them over Oura. On subscription alone it is a tie; the price difference is scored on the Price axis."
         }
       ]
     },
@@ -20585,7 +20583,7 @@
         {
           "name": "PEMF intensity",
           "winner": "a",
-          "note": "Healthy Wave: configurable across the frequency range used in PEMF research. HigherDOSE: modest intensity across 4 preset levels (3–23 Hz). Healthy Wave wins on raw PEMF capability."
+          "note": "Healthy Wave: configurable intensity; the maker quotes up to 5+ gauss peak (about 1.5 gauss average at the surface), 1–30 Hz. HigherDOSE: modest intensity across 4 preset levels (3–23 Hz); no gauss figure in our sources. Healthy Wave wins on raw PEMF capability."
         },
         {
           "name": "PEMF programmability",
@@ -20595,7 +20593,7 @@
         {
           "name": "Modality stack",
           "winner": "tie",
-          "note": "Both stack PEMF + infrared + crystals (HigherDOSE: about 20 lb of amethyst and obsidian). Comparable modality coverage."
+          "note": "Both stack PEMF + infrared + crystals (HigherDOSE: about 20 lb of amethyst and obsidian); Healthy Wave also adds red light (60 × 660 nm lights); both list negative ions. Comparable core coverage."
         },
         {
           "name": "Consumer UX",
@@ -22782,12 +22780,12 @@
         {
           "review": "insight-timer",
           "award": "Best overall",
-          "takeaway": "The largest library anywhere and the only genuinely usable free tier — unbeatable range and value."
+          "takeaway": "A very large library (the largest, by Insight Timer’s own account) and a genuinely usable free tier — wide range and strong value."
         },
         {
           "review": "healthy-minds-program",
           "award": "Best science-based",
-          "takeaway": "Completely free, ad-free and validated across dozens of studies — substance over polish."
+          "takeaway": "Completely free, ad-free and studied in multiple trials — substance over polish."
         },
         {
           "review": "headspace",
@@ -22797,7 +22795,7 @@
         {
           "review": "calm",
           "award": "Best for sleep",
-          "takeaway": "The most polished app and the strongest library for sleep and winding down."
+          "takeaway": "A polished app with a large sleep library for winding down."
         },
         {
           "review": "smiling-mind",
@@ -22810,11 +22808,6 @@
           "takeaway": "An adaptive plan tuned to your level, with a full year free to try it."
         },
         {
-          "review": "waking-up",
-          "award": "Best for depth",
-          "takeaway": "The deepest teaching and the philosophy behind it — for practitioners past the basics."
-        },
-        {
           "review": "happier-meditation",
           "award": "Best teachers",
           "takeaway": "A relatable, expert roster of teachers in a polished app — held back by a premium price."
@@ -22823,6 +22816,11 @@
           "review": "medito",
           "award": "Best fully free",
           "takeaway": "Open-source, ad-free and free forever, with no account — the no-strings choice."
+        },
+        {
+          "review": "waking-up",
+          "award": "Best for depth",
+          "takeaway": "Teaching-focused, with the philosophy behind it — for practitioners past the basics."
         },
         {
           "review": "buddhify",
@@ -22839,7 +22837,7 @@
         {
           "review": "sleep-cycle",
           "award": "Best overall (practically equal)",
-          "takeaway": "The most polished mainstream tracker, with a smart alarm and a free tier you can live on."
+          "takeaway": "A polished mainstream tracker, with a smart alarm and a free tier you can live on."
         },
         {
           "review": "sleepscore",
@@ -22849,7 +22847,7 @@
         {
           "review": "sleep-as-android",
           "award": "Best for Android",
-          "takeaway": "The most complete all-in-one on Android — tracking, smart alarm and wind-down sounds together."
+          "takeaway": "An all-in-one on Android — tracking, smart alarm and wind-down sounds together."
         },
         {
           "review": "pillow",
@@ -22859,7 +22857,7 @@
         {
           "review": "bettersleep",
           "award": "Best wind-down content",
-          "takeaway": "The deepest library of soundscapes, SleepTales and meditations — for when the problem is falling asleep."
+          "takeaway": "A large library of soundscapes, SleepTales and meditations — for when the problem is falling asleep."
         },
         {
           "review": "sleepio",
@@ -22874,7 +22872,7 @@
         {
           "review": "autosleep",
           "award": "Best value",
-          "takeaway": "Accurate, automatic Apple Watch tracking as a one-time purchase — no subscription at all."
+          "takeaway": "Automatic, detailed Apple Watch tracking as a one-time purchase — no subscription at all."
         },
         {
           "review": "pzizz",
@@ -23336,7 +23334,7 @@
         {
           "review": "earthpulse-sleep-on-command",
           "award": "Best sleep-focused",
-          "takeaway": "Under-mattress install with maker-marketed Schumann and delta sleep settings at $899 — no controlled trials show better sleep."
+          "takeaway": "Under-mattress install with maker-marketed Schumann and other low-frequency sleep settings at $899 — no controlled trials show better sleep."
         },
         {
           "review": "magnawave-mini",

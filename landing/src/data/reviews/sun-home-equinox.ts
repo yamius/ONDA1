@@ -17,7 +17,7 @@ const sunHomeEquinox: ToolReviewInput = {
     { criterionId: 'build', score: 8.0, note: 'Cedar cabin construction with bundled chromotherapy and Bluetooth audio. 7-year warranty (maker).' },
     { criterionId: 'emf', score: 8.0, note: 'Documented low EMF; third-party-verified. Comparable to Clearlight at seated position.' },
     { criterionId: 'form-factor', score: 7.5, note: '1–4-person cabin configurations. Standard 110V or 220V depending on size.' },
-    { criterionId: 'evidence', score: 7.0, note: 'No peer-reviewed trial of the Equinox found — 7.0, the base score for a product without trials of its own. Honest marketing about being newer to market. Sun Home presents its evidence honestly: its research page says its products “have not been used in published clinical-outcome trials”.' },
+    { criterionId: 'evidence', score: 7.0, note: 'No peer-reviewed trial of the Equinox found, so it cannot score above ONDA’s ceiling for products without trials of their own. Honest marketing about being newer to market. Sun Home presents its evidence honestly: its research page says its products “have not been used in published clinical-outcome trials”.' },
     { criterionId: 'value', score: 7.5, note: '$4,500–$8,000 depending on configuration. Bundled features (chromotherapy, audio); the 2-person model lists at $6,799 ($6,099 on sale, official store, 2026-10-18), below Clearlight Sanctuary 2. Sunlighten publishes no online prices.' },
   ],
   pros: [

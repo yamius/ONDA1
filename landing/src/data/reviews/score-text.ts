@@ -80,6 +80,8 @@ export const HAND_SCORE_RES: { re: RegExp; langs?: string[] }[] = [
     ),
   },
   { re: new RegExp(String.raw`(?<![\d.,])([1-9][.,]\d|10)\s*分(?![钟鐘])`, 'gu'), langs: ['zh'] },
+  // "7.0, the base score for …" / "— 7.0, the score for …" (086: a hand-typed rule score the patterns above missed)
+  { re: new RegExp(String.raw`(?<![${LTR}\d.,–-])${N},?\s+(?:is\s+)?the\s+(?:base\s+|ceiling\s+|maximum\s+|max\s+)?score(?![a-z])`, 'giu'), langs: ['en'] },
   { re: new RegExp(String.raw`(?<![\d.,])([1-9][.,]\d|10)\s*点`, 'gu'), langs: ['ja'] },
 ]
 
