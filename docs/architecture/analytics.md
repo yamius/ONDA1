@@ -113,11 +113,11 @@ await analytics.flush();
 ### Permission Events
 
 > **095 — read before comparing numbers across versions** (ships in the next
-> release after 1.9.4):
+> release 1.9.5):
 > - **`practice_start` double count removed.** Up to and including 1.9.4, starts
 >   from the recommendation card (`recommend_static`) and the calm check-in push
 >   fired `practice_start` twice (once at the intro, once when the session began).
->   From the 1.9.5 it fires once, in `beginPractice`, with
+>   From 1.9.5 it fires once, in `beginPractice`, with
 >   `source` (home = level 1 grid, level = higher levels, recommend_static,
 >   checkin = face/voice check, signal, push = calm check-in A1/B1, onboarding).
 >   Do not compare `practice_start` counts across that seam directly.
