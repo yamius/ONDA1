@@ -48,7 +48,7 @@ export type AnalyticsEventName =
   | 'watch_connection_failed'
   // Practice — variety lives in PARAMS (practice_type=standard|adaptive, practice_id),
   // never in the name. abandon = stop/close mid-flow.
-  | 'practice_start'                 // params: practice_id, practice_type, source (home|library|level|recommend_static|checkin|signal|push|onboarding; 095), mode
+  | 'practice_start'                 // params: practice_id, practice_type, source (home|level|recommend_static|checkin|signal|push|onboarding; 095), mode
   | 'practice_pause'
   | 'practice_resume'
   | 'practice_complete'
@@ -184,6 +184,26 @@ function _toSnake(s: string): string {
     .slice(0, 40);
 }
 
+/**
+ * Firebase Analytics / GA4 DROPS boolean params ("(not set)"), so booleans are
+ * banned at the type level (NoBooleanParams) and, as a safety net, converted to
+ * the strings "true"/"false" here, before ANY sink (Firebase, Supabase) — 095.
+ */
+export type NoBooleanParams<T> = {
+  [K in keyof T]: 0 extends (1 & T[K]) ? T[K] /* any: converted at runtime */ : [Extract<T[K], boolean>] extends [never] ? T[K] : never;
+};
+export type AnalyticsParams<T extends Record<string, unknown> = Record<string, unknown>> = T & NoBooleanParams<T>;
+
+/** Explicit boolean → GA4-safe string param. */
+export const boolParam = (v: unknown): 'true' | 'false' => (v ? 'true' : 'false');
+
+export function stringifyBooleanParams(p?: Record<string, unknown>): Record<string, unknown> | undefined {
+  if (!p) return p;
+  const out: Record<string, unknown> = {};
+  for (const [k, v] of Object.entries(p)) out[k] = typeof v === 'boolean' ? String(v) : v;
+  return out;
+}
+
 function _sanitizeFirebaseParams(p?: Record<string, unknown>): Record<string, any> {
   if (!p) return {};
   const out: Record<string, any> = {};
@@ -191,7 +211,8 @@ function _sanitizeFirebaseParams(p?: Record<string, unknown>): Record<string, an
     if (v === null || v === undefined) continue;
     const key = _toSnake(k);
     if (typeof v === 'string') out[key] = v.slice(0, 100);
-    else if (typeof v === 'number' || typeof v === 'boolean') out[key] = v;
+    else if (typeof v === 'boolean') out[key] = String(v);
+    else if (typeof v === 'number') out[key] = v;
     else out[key] = String(v).slice(0, 100);
   }
   return out;
@@ -540,7 +561,8 @@ class AnalyticsService {
   /**
    * Track an analytics event
    */
-  async track(eventName: AnalyticsEventName, metadata?: Record<string, unknown>): Promise<void> {
+  async track<T extends Record<string, unknown>>(eventName: AnalyticsEventName, rawMetadata?: AnalyticsParams<T>): Promise<void> {
+    const metadata = stringifyBooleanParams(rawMetadata);
     const event: AnalyticsEvent = {
       event_name: eventName,
       metadata,
@@ -653,10 +675,10 @@ class AnalyticsService {
   /**
    * Track practice-specific events with standard metadata
    */
-  trackPractice(
+  trackPractice<T extends Record<string, unknown>>(
     action: 'start' | 'pause' | 'resume' | 'complete' | 'abandon',
     practiceId: string,
-    metadata?: Record<string, unknown>
+    metadata?: AnalyticsParams<T>
   ): Promise<void> {
     const eventName = `practice_${action}` as AnalyticsEventName;
     return this.track(eventName, {
@@ -716,9 +738,9 @@ class AnalyticsService {
 export const analytics = new AnalyticsService();
 
 // Convenience function for direct tracking
-export const trackEvent = (
+export const trackEvent = <T extends Record<string, unknown>>(
   eventName: AnalyticsEventName,
-  metadata?: Record<string, unknown>
+  metadata?: AnalyticsParams<T>
 ): Promise<void> => {
   return analytics.track(eventName, metadata);
 };

@@ -211,19 +211,3 @@ export function baselineCorridorState(signals: SignalInput[]): BaselineCorridorS
   if (!ready.length) return 'insufficient';
   return computeTrafficLight(ready).light === 'green' ? 'in_corridor' : 'out';
 }
-
-const BASELINE_STATE_DAY_KEY = 'onda_baseline_state_sent_day';
-const localDayKey = (now: number) => {
-  const d = new Date(now);
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-};
-
-/** True at most once per local calendar day; persists the day when it says yes. */
-export function claimBaselineStateDay(now: number = Date.now()): boolean {
-  try {
-    const today = localDayKey(now);
-    if (localStorage.getItem(BASELINE_STATE_DAY_KEY) === today) return false;
-    localStorage.setItem(BASELINE_STATE_DAY_KEY, today);
-    return true;
-  } catch { return false; }
-}

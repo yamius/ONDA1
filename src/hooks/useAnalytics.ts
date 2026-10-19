@@ -10,7 +10,7 @@
  */
 
 import { useCallback, useEffect } from 'react';
-import { analytics, AnalyticsEventName, trackEvent } from '../services/AnalyticsService';
+import { analytics, AnalyticsEventName, trackEvent, type AnalyticsParams } from '../services/AnalyticsService';
 
 export function useAnalytics() {
   // Cleanup on unmount
@@ -21,17 +21,17 @@ export function useAnalytics() {
     };
   }, []);
 
-  const track = useCallback((
+  const track = useCallback(<T extends Record<string, unknown>>(
     eventName: AnalyticsEventName,
-    metadata?: Record<string, unknown>
+    metadata?: AnalyticsParams<T>
   ) => {
     return trackEvent(eventName, metadata);
   }, []);
 
-  const trackPractice = useCallback((
+  const trackPractice = useCallback(<T extends Record<string, unknown>>(
     action: 'start' | 'pause' | 'resume' | 'complete' | 'abandon',
     practiceId: string,
-    metadata?: Record<string, unknown>
+    metadata?: AnalyticsParams<T>
   ) => {
     return analytics.trackPractice(action, practiceId, metadata);
   }, []);

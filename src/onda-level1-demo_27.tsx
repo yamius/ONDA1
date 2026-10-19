@@ -13,7 +13,7 @@ import { VoiceCheckModal } from './components/VoiceCheckModal';
 import DiaryModal from './components/DiaryModal';
 import { recordDailyMetric, recordBaselineSample, DAILY_STORES, loadDiaryEntries, saveDiaryEntries, newDiaryId, hydrateDiary } from './lib/diary';
 import { loadLocalProgress, saveLocalProgress, mergeProgress, type LocalProgress } from './lib/progressStore';
-import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, computeTrafficLight, baselineCorridorState, claimBaselineStateDay, type PendingAnomaly, type SignalInput, type TrafficState } from './lib/anomaly';
+import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, computeTrafficLight, baselineCorridorState, type PendingAnomaly, type SignalInput, type TrafficState } from './lib/anomaly';
 import { SimpleHero, PulseBreathTiles, trafficCopy } from './components/SimpleHome';
 import { Coachmarks } from './components/Coachmarks';
 import { RateOndaRow } from './components/RateOndaRow';
@@ -85,7 +85,7 @@ import OndaWatch from './plugins/ondaWatch';
 import { useAnalytics } from './hooks/useAnalytics';
 // Singleton, not the hook: the hidden internal-traffic toggle is the only
 // consumer, so it isn't worth widening the useAnalytics() surface for it.
-import { analytics } from './services/AnalyticsService';
+import { analytics, boolParam } from './services/AnalyticsService';
 import { practiceAttemptsSoFar, daysSinceFirstSeen } from './lib/lifecycleMarkers';
 import {
   trackTenjinPractice,
@@ -101,7 +101,7 @@ import {
 } from './lib/tenjin';
 import { useSubscription } from './hooks/useSubscription';
 import * as Sentry from '@sentry/capacitor';
-import { consumeFirstWatchConnect, type PracticeStartSource } from './lib/analyticsMarkers';
+import { claimFirstWatchConnect, claimBaselineStateDay, type PracticeStartSource } from './lib/analyticsMarkers';
 // WelcomeScene is the only consumer of three.js in the codebase. It only
 // mounts when the user starts a practice (`practiceState === 'active'`),
 // not on cold start. Loading it lazily moves three.js + EXR loaders into
@@ -300,15 +300,15 @@ const OndaLevel1 = () => {
       const ex = res.extras ?? {};
       track('baseline_debug', {
         source: 'watch',
-        rhr_days: res.rhr?.days ?? 0, rhr_has: res.rhr?.avg != null,
-        hrv_days: res.hrv?.days ?? 0, hrv_has: res.hrv?.avg != null,
-        rr_days: res.rr?.days ?? 0, rr_has: res.rr?.avg != null,
+        rhr_days: res.rhr?.days ?? 0, rhr_has: boolParam(res.rhr?.avg != null),
+        hrv_days: res.hrv?.days ?? 0, hrv_has: boolParam(res.hrv?.avg != null),
+        rr_days: res.rr?.days ?? 0, rr_has: boolParam(res.rr?.avg != null),
         // Presence only — the VALUES (peak HR, walking HR, VO2max, recovery)
         // stay on the device (1.9.3, privacy).
-        hrpeak_has: ex.hrpeak != null,
-        whr_has: ex.whr != null,
-        vo2_has: ex.vo2 != null,
-        hrr_has: ex.hrr != null,
+        hrpeak_has: boolParam(ex.hrpeak != null),
+        whr_has: boolParam(ex.whr != null),
+        vo2_has: boolParam(ex.vo2 != null),
+        hrr_has: boolParam(ex.hrr != null),
         extras_keys: Object.keys(ex).join(',') || 'none',
       });
 
@@ -417,7 +417,7 @@ const OndaLevel1 = () => {
     if (grants !== 1) return; // only on the very first camera grant
     try { track('notif_prompt_shown', { trigger: 'first_camera' }); } catch { /* noop */ }
     const res = await requestNotificationPermission();
-    try { track('notif_prompt_answered', { answer: res === 'granted' ? 'yes' : 'no', trigger: 'first_camera', granted: res === 'granted' }); } catch { /* noop */ }
+    try { track('notif_prompt_answered', { answer: res === 'granted' ? 'yes' : 'no', trigger: 'first_camera', granted: boolParam(res === 'granted') }); } catch { /* noop */ }
   }, [track]);
 
   const cameraGrantHandledRef = useRef(false);
@@ -532,10 +532,13 @@ const OndaLevel1 = () => {
   useEffect(() => {
     if (watchHeartRate.heartRate && !hasTrackedWatchConnection.current) {
       hasTrackedWatchConnection.current = true;
-      track('watch_connect_success', {
-        // heart_rate removed (1.9.3) — the pulse value stays on the device.
-        is_connected: watchHeartRate.isConnected,
-        is_first: consumeFirstWatchConnect(),
+      const isConnected = watchHeartRate.isConnected;
+      void claimFirstWatchConnect().catch(() => false).then((first) => {
+        track('watch_connect_success', {
+          // heart_rate removed (1.9.3) — the pulse value stays on the device.
+          is_connected: boolParam(isConnected),
+          is_first: boolParam(first),
+        });
       });
     }
   }, [watchHeartRate.heartRate]);
@@ -785,8 +788,8 @@ const OndaLevel1 = () => {
   const [checkinPendingList, setCheckinPendingList] = useState<string | null>(null);
   const fireEntryEventsDebug = () => {
     try {
-      track('baseline_filled', { source: 'watch', coverage_days: 14, debug: true });
-      track('signal_first_seen', { debug: true });
+      track('baseline_filled', { source: 'watch', coverage_days: 14, debug: boolParam(true) });
+      track('signal_first_seen', { debug: boolParam(true) });
     } catch { /* noop */ }
     setEntryEventsSent(true);
     window.setTimeout(() => setEntryEventsSent(false), 2500);
@@ -982,7 +985,9 @@ const OndaLevel1 = () => {
         return [{ metric: k, nights: vals.slice(0, -1), latest: vals[vals.length - 1] }];
       });
       // baseline_state (task 095): once per calendar day, category only.
-      try { if (claimBaselineStateDay()) track('baseline_state', { state: baselineCorridorState(signals) }); } catch { /* noop */ }
+      void claimBaselineStateDay()
+        .then((yes) => { if (yes) track('baseline_state', { state: baselineCorridorState(signals) }); })
+        .catch(() => undefined);
       const anomaly = detectAnomaly(signals);
       const st = loadAnomalyState();
       if (anomaly && canSignal(Date.now(), st.lastSignalAt)) {
@@ -1351,7 +1356,7 @@ const OndaLevel1 = () => {
     homeViewFiredRef.current = true;
     const isFirst = localStorage.getItem('onda_home_view_seen') !== '1';
     if (isFirst) localStorage.setItem('onda_home_view_seen', '1');
-    track('home_view', { source: 'first_run', is_first: isFirst, mode: appMode, ...daysSinceFirstSeen() });
+    track('home_view', { source: 'first_run', is_first: boolParam(isFirst), mode: appMode, ...daysSinceFirstSeen() });
   }, [showSubscriptionModal, paywallSource, isPremium]);
   // relaunch: a returning user (not in onboarding) lands on the hub at launch.
   // New users start in onboarding (showFirstRun) → their home_view fires as
@@ -1359,7 +1364,7 @@ const OndaLevel1 = () => {
   useEffect(() => {
     if (showFirstRun) return;
     localStorage.setItem('onda_home_view_seen', '1');
-    track('home_view', { source: 'relaunch', is_first: false, mode: appMode, ...daysSinceFirstSeen() });
+    track('home_view', { source: 'relaunch', is_first: boolParam(false), mode: appMode, ...daysSinceFirstSeen() });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   // Armed by finishPractice on the user's first-ever valid completion;
@@ -3392,7 +3397,7 @@ const OndaLevel1 = () => {
         mode: appMode,
         practice_name: activePractice.name,
         target_duration: activePractice.duration,
-        has_biometrics: hasRealMetrics,
+        has_biometrics: boolParam(hasRealMetrics),
         // Stress/energy intentionally NOT sent: they're derived from the pulse
         // (incl. the camera source) and we removed them from the product, so
         // they must not leave the device either. The honest before/after signal
@@ -3488,7 +3493,7 @@ const OndaLevel1 = () => {
           practice_id: activePractice.id,
           duration_seconds: practiceTime,
           quality_score: qualityScore,
-          has_biometrics: hasRealMetricsAtFinish,
+          has_biometrics: boolParam(hasRealMetricsAtFinish),
         });
         // NOTE: paywall arming was moved OFF this near-unreachable valid event
         // (≥80% time + quality≥70/33) onto practice_complete below, so the
@@ -3523,11 +3528,11 @@ const OndaLevel1 = () => {
       quality_score: qualityScore,
       time_percent: Math.round(timePercent * 100),
       metrics_source: metricsSource,
-      is_first: isFirstPracticeComplete,
+      is_first: boolParam(isFirstPracticeComplete),
       ond_earned: earnedQnt,
-      has_biometrics: hasRealMetricsAtFinish,
-      is_valid_for_artifact: isValidForArtifact,
-      is_new_record: shouldUpdate && !!existingPractice,
+      has_biometrics: boolParam(hasRealMetricsAtFinish),
+      is_valid_for_artifact: boolParam(isValidForArtifact),
+      is_new_record: boolParam(shouldUpdate && !!existingPractice),
       // No health values (privacy policy: pulse never leaves the device) — no
       // final_stress/final_energy and, since 1.9.3, no coherence_baseline/peak/
       // delta either (coherence is derived from the pulse rhythm). On-device only.
@@ -3575,7 +3580,7 @@ const OndaLevel1 = () => {
       time_percent: Math.round(timePercent * 100),
       result_state: resultState,
       // hr_start / hr_min removed (1.9.3) — pulse values stay on the device.
-      is_first: cameFromFirstRun,
+      is_first: boolParam(cameFromFirstRun),
     });
 
     const session = {
@@ -3658,10 +3663,10 @@ const OndaLevel1 = () => {
               // lives in App Store Connect; this event is only the top of the
               // funnel — how many requests went out.
               track('review_prompt_requested', {
-                requested: r.requested,
+                requested: boolParam(r.requested),
                 reason: r.reason ?? null,
-                had_live_biometrics: true,
-                returning_day: true,
+                had_live_biometrics: boolParam(true),
+                returning_day: boolParam(true),
                 days_since_first: daysSinceFirst,
                 lifetime_completions: lifetimeCompletions,
                 biometric_source: biometricSource,
@@ -9589,10 +9594,10 @@ const OndaLevel1 = () => {
           isRequesting={permissions.isRequesting}
           onPermissionsGranted={() => setShowWatchPrompt(true)}
           onNotifAnswered={(granted) => {
-            try { track('notif_prompt_answered', { trigger: 'onboarding', granted, answer: granted ? 'yes' : 'no' }); } catch { /* noop */ }
+            try { track('notif_prompt_answered', { trigger: 'onboarding', granted: boolParam(granted), answer: granted ? 'yes' : 'no' }); } catch { /* noop */ }
           }}
           onOutcome={(granted) => {
-            track('health_permission', { scope: 'healthkit', granted, source: 'onboarding_watch_cta' });
+            track('health_permission', { scope: 'healthkit', granted: boolParam(granted), source: 'onboarding_watch_cta' });
             if (granted) {
               // The user has now explicitly connected + granted: mark "watching"
               // so the keep-alive auto-manager will start the watch workout AFTER

@@ -9,6 +9,7 @@ import { useVitals } from '../hooks/useVitals';
 import { useCameraPpg } from '../hooks/useCameraPpg';
 import { useSubscription } from '../hooks/useSubscription';
 import { useAnalytics } from '../hooks/useAnalytics';
+import { stringifyBooleanParams } from '../services/AnalyticsService';
 import { heartRateStore } from '../hooks/heartRateStore';
 import { supabase } from '../lib/supabase';
 import { calculatePracticeOnd } from '../utils/ondCalculator';
@@ -1074,7 +1075,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       ...eventInfo,
     };
     console.warn('[DEBUG handleClose] called', debugSnapshot);
-    track('practice_intro_closed_debug', debugSnapshot);
+    track('practice_intro_closed_debug', stringifyBooleanParams(debugSnapshot) ?? {});
 
     // Ghost-tap guard: ignore close attempts in the first 1800ms after modal opened.
     if (msSinceOpen !== null && msSinceOpen < 1800 && practiceState === 'intro' && practiceTime === 0) {
