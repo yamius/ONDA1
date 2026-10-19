@@ -3692,8 +3692,48 @@
       ]
     },
     "oura-ring-5": {
-      "verdict": "Flagowiec 2026 — o 40% smuklejszy, z naprawdę ulepszonymi czujnikami. Poprzednie generacje Oura dobrze zgadzały się z EKG w nocy; sam Ring 5 nie został osobno zwalidowany. Jedynym prawdziwym minusem pozostaje obowiązkowy abonament.",
-      "productType": "Inteligentny pierścień"
+      "verdict": "Flagowiec 2026 roku — o 40% smuklejszy, z naprawdę ulepszonymi czujnikami. Wcześniejsze generacje Oura nocą ściśle zgadzały się z EKG z pasa piersiowego; sam Ring 5 nie został osobno zwalidowany. Obowiązkowa subskrypcja pozostaje jedynym prawdziwym haczykiem.",
+      "summary": "Oura Ring 5 (premiera w czerwcu 2026) to nowa generacja najbardziej znanego pierścienia. Jest ~40% smuklejszy niż Ring 4 (6,09 mm × 2,28 mm), ma baterię na 6–9 dni i — co najważniejsze — przeprojektowane czujniki: mocniejsze diody LED, płaskie kopułki czujników i 12 ścieżek sygnału dla czystszego kontaktu i bardziej spójnych odczytów niezależnie od kształtu palca i odcienia skóry. Haczyk się nie zmienił: pełne dane wymagają miesięcznego członkostwa, a sprzęt kosztuje 399 $ (499 $ za wykończenia premium). Pamiętaj, że najważniejsze nowe funkcje oprogramowania (śledzenie treningów na żywo, zdrowie kobiet, import wyników badań krwi) trafiają też do Ring 4 i Gen3 — więc prawdziwą przewagą Ring 5 nad Ring 4 są czujniki i dopasowanie, a nie aplikacja.",
+      "description": "Recenzja Oura Ring 5: o 40% smuklejszy, lepsze czujniki; wcześniejsze Oura nocą ściśle zgodne z EKG z pasa piersiowego; Ring 5 jeszcze bez walidacji.",
+      "bestFor": "Najlepszy do nocnych danych o zmienności rytmu serca (HRV) i śnie w bardzo smukłym, lekkim pierścieniu noszonym całą dobę (wcześniejsze generacje Oura nocą ściśle zgadzały się z EKG z pasa piersiowego; sam Ring 5 nie został osobno zwalidowany) — dla nowych kupujących, niekoniecznie dla posiadaczy Ring 4.",
+      "testNote": "Ocena oparta na dowodach — na podstawie specyfikacji Oura, niezależnych recenzji premierowych z 2026 roku i literatury walidacyjnej dotyczącej wcześniejszych generacji. Nie testowane osobiście przez ONDA.",
+      "productType": "Inteligentny pierścień",
+      "pros": [
+        "Naprawdę ulepszone czujniki — lepszy kontakt niezależnie od odcienia skóry i kształtu palca",
+        "~40% smuklejszy i lżejszy niż Ring 4, bateria na 6–9 dni",
+        "Wcześniejsze generacje Oura ściśle zgadzały się z EKG z pasa piersiowego w jednym badaniu nocnych nagrań (13 osób; sam Ring 5 nie został osobno zwalidowany), a fazy snu porównano z polisomnografią tylko dla Gen 3, w badaniach finansowanych przez Oura",
+        "Przejrzysta, edukacyjna aplikacja"
+      ],
+      "cons": [
+        "Zaawansowane dane nadal wymagają stałego miesięcznego członkostwa",
+        "Najważniejsze nowe funkcje oprogramowania trafiają też do Ring 4 — mniej powodów do zmiany, jeśli go masz",
+        "HRV w ciągu dnia i podczas treningu pozostaje niewiarygodne w ruchu",
+        "399 $/499 $ za sprzęt i brak wyświetlacza"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Wcześniejsze generacje Oura ściśle zgadzały się z EKG w jednym niezależnym badaniu nocnych nagrań; sam Ring 5 nie został zwalidowany. Przeprojektowane czujniki mają zapewnić bardziej spójny kontakt niezależnie od odcienia skóry i kształtu palca; odczyty w ciągu dnia i podczas treningu nadal dryfują w ruchu. Zasada ONDA: bez własnej niezależnej walidacji urządzenie otrzymuje najwyżej 7,5, jeśli wcześniejsze generacje zostały zwalidowane, a 7,0, jeśli nie.",
+        "sensor": "Przeprojektowany zestaw czujników: mocniejsze diody LED i płaskie kopułki dla lepszego kontaktu ze skórą. Prawdziwy krok sprzętowy względem Ring 4, a nie tylko smuklejsza obudowa.",
+        "sleep-accuracy": "Ta sama linia algorytmów snu co w Ring 4, którego opublikowane badanie faz snu sfinansowała Oura; Ring 5 nie ma niezależnej walidacji snu. Zasada ONDA: bez własnej niezależnej walidacji urządzenie otrzymuje najwyżej 7,5, jeśli wcześniejsze generacje zostały zwalidowane, a 7,0, jeśli nie.",
+        "data-access": "Bez zmian względem Ring 4 — istnieje API dla deweloperów, ale surowe dane uderzenie po uderzeniu są ograniczone, a głębsza analiza jest za członkostwem.",
+        "wearability": "~40% smuklejszy i lżejszy niż Ring 4 (6,09 mm × 2,28 mm), z baterią na 6–9 dni — bardzo smukły i lekki. Węższy zakres rozmiarów (6–13) niż w Ring 4.",
+        "app-ux": "Ta sama dopracowana, objaśniająca aplikacja; nowe funkcje (śledzenie treningów na żywo, zdrowie kobiet, wyszukiwanie zgubionego pierścienia, import wyników badań laboratoryjnych/krwi) pojawiają się tutaj — ale trafiają też do Ring 4 i Gen3.",
+        "value": "Sprzęt za 399 $ (499 $ za wykończenia premium) plus obowiązkowe członkostwo za ~6 $/miesiąc, a dane nigdy nie są w pełni twoje."
+      },
+      "content": "## Dokąd to prowadzi\n\nW przypadku nocnej [zmienności rytmu serca (HRV)](/glossary/heart-rate-variability) wcześniejsze generacje Oura ściśle zgadzały się z EKG z pasa piersiowego w jednym badaniu nocnych nagrań (13 osób); sam Ring 5 nie został osobno zwalidowany. Kontynuuje linię, do której należy [Ring 4](/reviews/oura-ring-4), na przeprojektowanych czujnikach. Mocniejsze diody LED, płaskie kopułki czujników i 12 ścieżek sygnału poprawiają kontakt ze skórą — to właśnie tam optyczny czujnik na palcu wygrywa albo przegrywa swój odczyt — a recenzenci zgłaszają bardziej spójne śledzenie niezależnie od odcienia skóry i kształtu palca.\n\n## Co naprawdę zmieniło się względem Ring 4\n\nDwie rzeczy: czujniki i dopasowanie. Ring 5 jest o około **40% smuklejszy i lżejszy** (6,09 mm × 2,28 mm), z dłuższą baterią na 6–9 dni. Tym, co *nie* zmieniło rachunku, jest oprogramowanie — Oura udostępnia nowe funkcje (śledzenie treningów na żywo, zdrowie kobiet, wyszukiwanie zgubionego pierścienia, import wyników badań laboratoryjnych/krwi) także dla Ring 4 i Gen3. Jeśli więc masz już Ring 4, przewaga Ring 5 jest mniejsza, niż się wydaje: lepsze czujniki i smuklejsza obudowa, a nie nowe możliwości aplikacji. Zobacz pełne porównanie [Oura Ring 5 vs Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4).\n\n## Haczyk\n\nBez zmian i nadal główny minus: pierścień to tylko połowa zakupu. Bez miesięcznego członkostwa aplikacja kurczy się do podstawowych wyników, surowe dane uderzenie po uderzeniu nigdy nie są w pełni udostępniane, a pierścień kosztuje 399 $ (499 $ za wykończenia premium).\n\n## Dla kogo jest Oura Ring 5?\n\nWybierz Oura Ring 5, jeśli kupujesz pierwszy raz i chcesz nocnych danych o HRV i śnie z linii pierścieni z największą liczbą opublikowanych badań — głównie dotyczących wcześniejszych generacji, częściowo finansowanych przez Oura (sam Ring 5 nie został osobno zwalidowany) — w najsmuklejszym urządzeniu, które możesz nosić całą dobę, a subskrypcja jest dla ciebie do przyjęcia. Jeśli już używasz Ring 4, nie tracisz żadnych funkcji aplikacji — zmieniaj tylko wtedy, gdy czujniki lub smuklejsze dopasowanie naprawdę mają dla ciebie znaczenie.\n\n---\n\n## Dalsza lektura\n\n- [HRV jako bufor odporny na błędy](/articles/fault-tolerant-human-hrv-buffer) — dlaczego szeroki zakres HRV jest tym, na co naprawdę trenujesz\n- [Baroreflex i przesunięcie do 0,1 Hz](/articles/baroreflex-01hz-shift) — sygnatura oddychania z częstotliwością rezonansową w twoim zapisie HRV\n",
+      "faq": [
+        {
+          "q": "Czy Oura Ring 5 jest wart zakupu zamiast Ring 4?",
+          "a": "Ring 5 dodaje ulepszony czujnik i smuklejszą konstrukcję, ale działa na tym samym oprogramowaniu co Ring 4. Oba rejestrują nocne HRV i sen (wcześniejsze generacje — Oura Gen 3 i Ring 4 — porównano z jednoodprowadzeniowym EKG z pasa piersiowego w jednym niezależnym badaniu, Dial 2025; Ring 5 nie został jeszcze zwalidowany), więc Ring 5 jest wart zakupu dla najnowszego sprzętu, a przeceniony Ring 4 często daje lepszy stosunek jakości do ceny."
+        },
+        {
+          "q": "Ile kosztuje Oura Ring 5?",
+          "a": "Kosztuje 399 $ w standardowych wykończeniach (do 499 $ za premium), plus członkostwo Oura za około 6 $ miesięcznie dla pełnych danych — jednorazowy zakup pierścienia ze stałą subskrypcją."
+        },
+        {
+          "q": "Czy Oura Ring 5 jest dokładny w pomiarze snu i HRV?",
+          "a": "Wcześniejsze generacje Oura nocą ściśle zgadzały się z EKG z pasa piersiowego, a pomiar na palcu dobrze sprawdza się w śledzeniu snu; sam Ring 5 nie został osobno zwalidowany."
+        }
+      ]
     },
     "apple-watch-ultra-4": {
       "verdict": "Apple Watch, który wreszcie nadaje się do nocnego HRV: nowy Health Sensing System plus 50-godzinna bateria i wskaźnik gotowości dla sportowców — jeśli usprawiedliwisz rozmiar i cenę 799 $.",
@@ -3883,8 +3923,48 @@
       ]
     },
     "samsung-galaxy-ring": {
-      "verdict": "Alternatywa dla Oury bez subskrypcji dla Androida – wygodny i solidny, choć przywiązany do ekosystemu Samsunga.",
-      "productType": "Inteligentny pierścień"
+      "verdict": "Alternatywa dla Oura bez subskrypcji dla Androida — wygodna i kompetentna, choć zamknięta w ekosystemie Samsunga.",
+      "summary": "Samsung Galaxy Ring to najbliższy odpowiednik Oura Ring 4 bez subskrypcji. To wygodny pierścień z nocnym śledzeniem zmienności rytmu serca (HRV) i snu (bez niezależnej walidacji) — ale jest związany z Samsung Health i Androidem i, w przeciwieństwie do Oura Ring 4, nie ma żadnej niezależnej weryfikacji dokładności.",
+      "description": "Recenzja ONDA Samsung Galaxy Ring — alternatywa dla Oura bez subskrypcji dla Androida. Oceniany pod kątem dokładności HRV, snu, dostępu do danych i ceny.",
+      "bestFor": "Najlepszy dla użytkowników Androida, którzy chcą śledzenia pierścieniem w stylu Oura bez subskrypcji.",
+      "testNote": "Ocena oparta na dowodach — na podstawie specyfikacji producenta, niezależnych recenzji z 2026 roku i opublikowanej literatury walidacyjnej. Nie testowane osobiście przez ONDA.",
+      "productType": "Inteligentny pierścień",
+      "pros": [
+        "Bez subskrypcji — wszystkie funkcje odblokowane przy zakupie",
+        "Wygodny pierścień z baterią na kilka dni",
+        "Czysta integracja dla użytkowników Samsunga i Androida",
+        "Kompetentne nocne śledzenie HRV i snu"
+      ],
+      "cons": [
+        "Tylko Android i Samsung Health — brak obsługi iPhone’a",
+        "Zamknięte dane: brak otwartego API, ograniczony eksport",
+        "Brak niezależnej weryfikacji dokładności, w przeciwieństwie do Oura Ring 4",
+        "Najlepszy stosunek jakości do ceny tylko w ekosystemie Samsunga"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Nocny optyczny pomiar HRV z pierścienia; nie znaleziono niezależnej walidacji Galaxy Ring względem EKG (stan na październik 2026). Zasada ONDA: bez własnej niezależnej walidacji urządzenie otrzymuje najwyżej 7,5, jeśli wcześniejsze generacje zostały zwalidowane, a 7,0, jeśli nie.",
+        "sensor": "Optyczny PPG w formie pierścienia do nocnych pomiarów.",
+        "sleep-accuracy": "Nocne śledzenie snu (bez niezależnej walidacji): nie znaleziono niezależnej walidacji snu dla Galaxy Ring. Zasada ONDA: bez własnej niezależnej walidacji urządzenie otrzymuje najwyżej 7,5, jeśli wcześniejsze generacje zostały zwalidowane, a 7,0, jeśli nie.",
+        "data-access": "Zbudowany wokół Samsung Health, bez otwartego API i z ograniczonym eksportem — dane w dużej mierze zostają w aplikacji.",
+        "wearability": "Wygodny pierścień do noszenia przez całą dobę, z baterią na kilka dni.",
+        "app-ux": "Samsung Health jest wystarczająco przejrzysty, ale związany z ekosystemem Samsunga i Androida.",
+        "value": "399 $ bez subskrypcji — stała przewaga kosztowa nad Oura Ring 4."
+      },
+      "content": "## Dokąd to prowadzi\n\nSamsung Galaxy Ring to najbardziej bezpośrednia alternatywa dla Oura Ring 4, a jego główna zaleta jest prosta: brak subskrypcji. Zakup odblokowuje wszystkie funkcje na stałe, podczas gdy Oura pobiera opłaty co miesiąc. Jako sprzęt to wygodny, dobrze wykonany pierścień z baterią na kilka dni i nocnym śledzeniem [HRV](/glossary/heart-rate-variability) i snu (bez niezależnej walidacji) — dla posiadacza telefonu Samsunga, który już korzysta z Samsung Health, to naturalny wybór bez komplikacji.\n\n## Jakie są wady Samsung Galaxy Ring?\n\nPierścień jest związany ze swoim ekosystemem. Zbudowano go wokół Samsung Health i Androida — nie obsługuje iPhone’a — a dostęp do danych jest stosunkowo zamknięty: brak otwartego API dla deweloperów, ograniczony eksport, twoje liczby w dużej mierze zostają w aplikacji Samsunga. Jeśli chodzi o dokładność, nie znaleziono niezależnej walidacji HRV z Galaxy Ring względem EKG (stan na październik 2026). Oura Ring 4 ma jedno niezależne porównanie z EKG z pasa piersiowego w nocnych nagraniach (13 osób, Dial 2025), a najbardziej znane badanie faz snu mierzonych pierścieniem to weryfikacja faz snu Oura Gen 3; badanie sfinansowała Oura.\n\n**Uwaga z 2026 roku.** Obraz dokładności się nie zmienił: nie znaleziono żadnego niezależnego porównania obejmującego Galaxy Ring ani niezależnej walidacji jego HRV względem EKG (stan na październik 2026). Prawdziwym argumentem za Galaxy Ring pozostaje brak subskrypcji i natywna integracja z Androidem — a nie twierdzenie, że dorównuje Oura precyzją.\n\n## Dla kogo jest Samsung Galaxy Ring?\n\nWybierz Samsung Galaxy Ring, jeśli korzystasz z Androida — najlepiej Samsunga — chcesz śledzenia pierścieniem w stylu Oura bez wiecznej subskrypcji i nie przeszkadza ci, że dane zostają w Samsung Health. Użytkownicy iPhone’a oraz osoby, które chcą pierścienia z niezależną weryfikacją nocnego HRV lub otwartych danych, powinni przyjrzeć się Oura Ring 4.\n\n---\n\n## Dalsza lektura\n\nNauka o tym, dlaczego HRV to sygnał wart śledzenia — i jak organizm go wytwarza.\n\n- [Baroreflex i przesunięcie do 0,1 Hz](/articles/baroreflex-01hz-shift) — sygnatura oddychania z częstotliwością rezonansową w twoim zapisie HRV\n- [Czy HRV przewiduje czas reakcji i skupienie?](/articles/nervous-system-ping-latency) — co spoczynkowe HRV mówi, a czego nie mówi o uwadze i samokontroli\n",
+      "faq": [
+        {
+          "q": "Czy Samsung Galaxy Ring działa z iPhone’em?",
+          "a": "Nie. Działa tylko z Androidem i Samsung Health, bez obsługi iPhone’a, więc pasuje konkretnie do właścicieli telefonów Samsunga."
+        },
+        {
+          "q": "Czy Samsung Galaxy Ring wymaga subskrypcji?",
+          "a": "Nie — kosztuje jednorazowo 399 $ bez subskrypcji, co daje stałą przewagę kosztową nad Oura Ring, który do pełnych danych wymaga członkostwa za około 6 $ miesięcznie."
+        },
+        {
+          "q": "Czy Samsung Galaxy Ring jest tak dokładny jak Oura?",
+          "a": "Nie wiadomo: nie znaleziono niezależnej walidacji HRV z Galaxy Ring względem EKG (stan na październik 2026); Oura Ring 4 ma jedno niezależne porównanie z EKG z pasa piersiowego w nocnych nagraniach. Galaxy Ring to alternatywa bez subskrypcji dla użytkowników Androida."
+        }
+      ]
     },
     "renu-therapy-cold-stoic": {
       "verdict": "Wanna do zimnych kąpieli klasy premium z celowo cichym schładzaczem – najlepsza do instalacji w pomieszczeniu, gdzie liczy się hałas.",
@@ -4162,8 +4242,51 @@
       ]
     },
     "edge-tub": {
-      "verdict": "Bardzo dobry stosunek jakości do ceny wśród wanien z wbudowanym agregatem — sprzęt porównywalny z The Plunge, wyraźnie taniej.",
-      "productType": "Wanna do zimnych kąpieli ze średniej półki z agregatem"
+      "verdict": "Bardzo dobry stosunek jakości do ceny wśród wanien do zimnych kąpieli ze schładzaczem — sprzęt porównywalny z The Plunge, wyraźnie taniej.",
+      "summary": "Edge Tub to izolowana wanna akrylowa z wbudowanym schładzaczem, która przy typowym użytkowaniu utrzymuje 39°F (ok. 4°C), z filtracją ozonową. Marka młodsza niż The Plunge, z krótszą historią niezawodności w perspektywie kilku lat, ale podstawowy sprzęt jest porównywalny za mniej więcej połowę ceny.",
+      "description": "Recenzja ONDA wanny Edge Tub — alternatywa ze średniej półki dla Plunge, z podobnym sprzętem ze schładzaczem za mniej więcej połowę ceny.",
+      "bestFor": "Najlepsza dla osób, które chcą zimnych kąpieli z wbudowanym schładzaczem bez dopłaty za The Plunge.",
+      "testNote": "Ocena oparta na dowodach — na podstawie dokumentacji produktu Edge Tub, literatury naukowej o ekspozycji na zimno i niezależnych recenzji z 2026 roku. Nie testowane osobiście przez ONDA.",
+      "productType": "Wanna do zimnych kąpieli ze średniej półki ze schładzaczem",
+      "pros": [
+        "Mniej więcej połowa ceny The Plunge przy porównywalnej wydajności schładzacza",
+        "Dezynfekcja ozonem w zestawie",
+        "Do użytku w domu i na zewnątrz",
+        "Mocny wybór pod względem stosunku jakości do ceny w segmencie ze schładzaczem"
+      ],
+      "cons": [
+        "Młodsza marka — mniej danych o niezawodności w perspektywie kilku lat niż Plunge",
+        "2 lata gwarancji wobec 3 lat w Plunge",
+        "Nieco wolniejsze ponowne schładzanie w szczycie letnich upałów",
+        "Mniej rozbudowane materiały o protokołach niż w Plunge"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "Wydajny schładzacz utrzymuje 39°F przy typowym użytkowaniu; w letnim upale nieco wolniej schładza ponownie niż jednostka 1 KM w Plunge.",
+        "build": "Izolowana wanna akrylowa, 2 lata gwarancji. Młodsza marka — historia niezawodności w perspektywie kilku lat dopiero powstaje.",
+        "water-management": "Dezynfekcja ozonem + filtr; wymiana wody co 3–4 tygodnie przy typowym użytkowaniu.",
+        "form-factor": "Instalacja w domu lub na zewnątrz, powierzchnia porównywalna z Plunge. Wymaga zasilania 110 V i równego podłoża.",
+        "evidence": "Uczciwy język marketingowy o korzyściach z ekspozycji na zimno; mniej widoczni założyciele niż w The Plunge.",
+        "value": "2 495 $ — mniej więcej połowa ceny The Plunge za porównywalny podstawowy sprzęt. Bardzo dobry stosunek jakości do ceny."
+      },
+      "content": "## Dokąd to prowadzi\n\nEdge Tub to pretendent dbający o cenę w segmencie zimnych kąpieli ze schładzaczem. Wydajność schładzacza porównywalna z The Plunge, dezynfekcja ozonem w zestawie, podobna forma — za około 2 495 $ wobec 5 990 $ za The Plunge. Jeśli chcesz sprzętu ze schładzaczem bez dopłaty za lidera kategorii, to właściwy wybór.\n\n## Jakie są wady Edge Tub?\n\nEdge jest młodsza, a dane o niezawodności w perspektywie kilku lat dopiero powstają. Gwarancja jest krótsza (2 lata wobec 3 w Plunge), a ponowne schładzanie w szczycie letnich upałów jest nieznacznie wolniejsze. Obecność założycieli i treści są też mniej rozwinięte.\n\n## Dla kogo jest Edge Tub?\n\nWybierz Edge Tub, jeśli chcesz zimnych kąpieli z wbudowanym schładzaczem w najprzystępniejszej cenie w tym segmencie. Jeśli decydujące są dłuższa gwarancja (3 lata wobec 2) i dłuższa historia, właściwym wyborem jest The Plunge.\n\n---\n\n## Dalsza lektura\n\nBiologia tego, dlaczego ekspozycja na zimno działa — i protokoły, które wzmacniają efekt sprzętu.\n\n- [Tolerancja CO₂ i granica tlenowa](/articles/co2-tolerance-expanding-oxygen-limit) — dlaczego protokoły zimna i oddechu dobrze się uzupełniają\n- [Antyentropijna architektura neuronalna](/articles/anti-entropy-neural-architecture) — ekspozycja na zimno jako krótki codzienny stresor\n- [Biogeneza mitochondriów: sieć energetyczna komórki](/articles/mitochondrial-biogenesis-cellular-power-grid) — jak ekspozycja na zimno wiąże się z adaptacją mitochondriów\n",
+      "faq": [
+        {
+          "q": "Czy Edge Tub jest warta zakupu?",
+          "a": "Tak, to bardzo dobry stosunek jakości do ceny wśród wanien ze schładzaczem. Edge Tub oferuje sprzęt porównywalny z The Plunge, utrzymuje 39°F przy typowym użytkowaniu i ma filtrację ozonową, za mniej więcej połowę ceny. To młodsza marka z krótszą historią niezawodności."
+        },
+        {
+          "q": "Ile kosztuje Edge Tub?",
+          "a": "Edge Tub kosztuje około 2 495 $ jako jednorazowy zakup, ze schładzaczem i dezynfekcją ozonem w zestawie. To mniej więcej połowa ceny The Plunge przy porównywalnej wydajności schładzacza; nadaje się do użytku w domu i na zewnątrz."
+        },
+        {
+          "q": "Jakie są wady Edge Tub?",
+          "a": "Edge Tub to młodsza marka z mniejszą ilością danych o niezawodności w perspektywie kilku lat niż The Plunge i ma 2 lata gwarancji wobec 3 lat w Plunge. Jej schładzacz nieco wolniej schładza ponownie w szczycie letnich upałów, a materiały o protokołach są mniej rozbudowane."
+        },
+        {
+          "q": "Edge Tub czy The Plunge: co jest lepsze?",
+          "a": "Edge Tub jest lepsza pod względem ceny; The Plunge jest lepszy pod względem historii i gwarancji. Edge oferuje porównywalny sprzęt ze schładzaczem za mniej więcej połowę ceny, a Plunge ma 3 lata gwarancji i bardziej rozbudowane materiały o protokołach."
+        }
+      ]
     },
     "eight-sleep-pod-3": {
       "verdict": "Możliwości Pod 4 w cenach Pod 3: solidny stosunek jakości do ceny po obniżce, z nieco węższym zakresem temperatur niż Pod 4.",
@@ -4257,8 +4380,98 @@
       ]
     },
     "eight-sleep-pod-4": {
-      "verdict": "Inteligentny system klimatu snu klasy premium – dwustrefowe chłodzenie i ogrzewanie wodne, pomiar HRV, wymagana subskrypcja.",
-      "productType": "Inteligentna nakładka klimatyzująca klasy premium (pasuje na istniejący materac; materac Eight Sleep opcjonalnie)"
+      "verdict": "System premium do inteligentnego klimatu snu — dwustrefowe chłodzenie/grzanie wodą, śledzenie HRV, wymagana subskrypcja.",
+      "summary": "Eight Sleep Pod 4 to system inteligentnego klimatu snu, który zdefiniował tę kategorię. Dwustrefowa nakładka chłodzona wodą z aktywnym grzaniem i chłodzeniem (13–43°C), wbudowane śledzenie zmienności rytmu serca (HRV) i snu oraz automatyczna regulacja klimatu (Autopilot) według szacowanej fazy snu. Sprzęt jest znakomity; model subskrypcji to redakcyjny punkt sporny — pełne funkcje wymagają stałego członkostwa Eight Sleep Autopilot.",
+      "description": "Recenzja ONDA Eight Sleep Pod 4 — dwustrefowy system premium klimatu snu chłodzony wodą, z wbudowanym śledzeniem HRV.",
+      "bestFor": "Najlepszy dla osób, które chcą bogatego w funkcje sprzętu do klimatu snu ze zintegrowanym śledzeniem HRV — i akceptują subskrypcję.",
+      "testNote": "Ocena oparta na dowodach — na podstawie dokumentacji produktu Eight Sleep i niezależnych recenzji konsumentów/biohakerów z 2026 roku. Nie testowane osobiście przez ONDA.",
+      "productType": "Nakładka premium do inteligentnego klimatu snu (pasuje na istniejący materac; materac Eight Sleep opcjonalny)",
+      "pros": [
+        "Szeroki zakres temperatur (13–43°C) ze sterowaniem dwustrefowym (osobno dla każdej strony łóżka)",
+        "Wbudowane śledzenie HRV i faz snu — bez osobnego urządzenia do noszenia",
+        "Autopilot automatycznie dostosowuje temperaturę do szacowanej fazy snu",
+        "Historia niezawodności w perspektywie kilku lat w większości pozytywna"
+      ],
+      "cons": [
+        "Do pełnych funkcji potrzebna subskrypcja Autopilot — największy zarzut redakcji",
+        "Cena premium (~4 000 $ queen) plus stałe członkostwo",
+        "Hub wymaga miejsca na podłodze obok łóżka i obsługi wody",
+        "Uzależnienie od ekosystemu Eight Sleep"
+      ],
+      "scoreNotes": {
+        "climate-range": "Szeroki zakres dwustrefowy (13–43°C), dobry czas powrotu, utrzymuje zadaną temperaturę mimo dużych wahań otoczenia. Autopilot dostosowuje ją w nocy według szacowanej fazy snu.",
+        "build": "Nakładka o wykonaniu premium; pasuje na istniejący materac o grubości 10–16 cali (według Tom's Guide). Hub średniej wielkości. 2 lata gwarancji. Historia niezawodności w perspektywie kilku lat w większości pozytywna.",
+        "app-tracking": "Zintegrowane śledzenie snu/HRV (bez niezależnej walidacji). Szacowanie faz snu, trendy HRV, wykrywanie chrapania. Integracja z Apple Health.",
+        "form-factor": "Nakładka, którą zakładasz na swój materac jak prześcieradło z gumką; materac Eight Sleep był opcjonalny. Dwie strefy (temperatura dla każdej strony). Hub (ok. 16 × 7 × 17 cali) wymaga miejsca na podłodze obok łóżka. Strona Pod 4 na witrynie Eight Sleep została usunięta; konfiguracja według Tom's Guide (źródło wtórne).",
+        "subscription": "Do pełnych funkcji potrzebna subskrypcja Autopilot (~15-25 $/miesiąc). Największy zarzut redakcji — sprzęt premium zablokowany za stałym członkostwem.",
+        "value": "Sprzęt za ~4 000 $ (queen) + stała subskrypcja. Segment premium; subskrypcja podnosi koszt w ciągu 3 lat."
+      },
+      "content": "## Dokąd to prowadzi\n\n> Eight Sleep zastąpił Pod 5 modelem Pod 6 23 września 2026 roku (od 1 999 $ Solo; 2 899 $ queen, 2 999 $ king), a sklep Eight Sleep wymienia już tylko Pod 6 — Pod 4 przetrwał głównie jako resztki zapasów lub u sprzedawców zewnętrznych. Przy cenie ~4 000 $ w rozmiarze queen Pod 4 nie jest już tańszym wejściem do Eight Sleep; kupuj go tylko z rabatem wyraźnie poniżej Pod 6. O Pod 5: Pod 5 Ultra dodaje regulowaną podstawę, chłodzenie od góry i dźwięk, ale kosztuje od 6 099 $ (queen/king, według naszej recenzji Pod 5), a podstawowa technologia temperatury/HRV i nowe oprogramowanie Autopilot 4.0 trafiają też do Pod 4. Zobacz [Pod 4 vs Pod 5](/reviews/vs/eight-sleep-pod-4-vs-eight-sleep-pod-5).\n\nEight Sleep Pod 4 to system inteligentnego klimatu snu, który zdefiniował kategorię konsumencką. Dwustrefowe chłodzenie/grzanie wodą (13–43°C), wbudowane śledzenie HRV i snu, które może zastąpić osobne urządzenie do noszenia, oraz programowalny klimat Autopilot, który w nocy dostosowuje się do szacowanej fazy snu. Wykonanie sprzętu i niezawodność w perspektywie kilku lat są solidne.\n\n## Jakie są wady Eight Sleep Pod 4?\n\nSubskrypcja. Pełne funkcje (Autopilot, zaawansowane analizy HRV, harmonogram klimatu) wymagają stałego członkostwa Eight Sleep — to największy redakcyjny punkt sporny w kategorii. Bez subskrypcji masz drogą podgrzewaną nakładkę. Łączny koszt w ciągu 3 lat to około 4 500-4 900 $ (~4 000 $ za queen plus ~15-25 $/miesiąc subskrypcji).\n\n## Dla kogo jest Eight Sleep Pod 4?\n\nWybierz Eight Sleep Pod 4, jeśli chcesz bogatego w funkcje sprzętu do klimatu snu ze zintegrowanym śledzeniem i akceptujesz model subskrypcji. Do chłodzenia wodą bez subskrypcji — ChiliPad Dock Pro. Do nawiewu powietrza w niższej cenie — BedJet 3. Do klimatu bez śledzenia — Sleep Number Climate360.\n\n---\n\n## Dalsza lektura\n\nBiologia tego, dlaczego regulacja temperatury łóżka wpływa na głębokość snu i regenerację.\n\n- [Reset dobowy: opanować światło](/articles/circadian-reset-mastering-light) — dlaczego regulacja temperatury łóżka łączy się z porą ekspozycji na światło dla głębokiego snu\n- [Akustyczny sen z synchronizacją fazy](/articles/phase-locked-acoustic-sleep) — stymulacja dźwiękiem podczas snu\n- [Czy sen naprawdę oczyszcza mózg? Dowody dotyczące układu glimfatycznego](/articles/nightly-flush-glymphatic-neural-cache) — co wykazano u ludzi, a co wciąż jest sporne\n",
+      "faq": [
+        {
+          "q": "Czy Eight Sleep Pod 4 jest wart zakupu?",
+          "a": "Tak, jeśli akceptujesz subskrypcję. Pod 4 to system premium do klimatu snu z dwustrefowym chłodzeniem i grzaniem wodą od 13 do 43°C, wbudowanym śledzeniem HRV i faz snu oraz regulacją Autopilot. Pełne funkcje wymagają stałego członkostwa Autopilot."
+        },
+        {
+          "q": "Ile kosztuje Eight Sleep Pod 4?",
+          "a": "Eight Sleep Pod 4 kosztuje około 4 000 $ w rozmiarze queen, plus mniej więcej 20 $ miesięcznie za subskrypcję Autopilot. Subskrypcja jest wymagana do pełnych funkcji."
+        },
+        {
+          "q": "Jakie są wady Eight Sleep Pod 4?",
+          "a": "Pod 4 wymaga subskrypcji Autopilot do pełnych funkcji — to jego największa wada. Ma cenę premium plus stałe członkostwo, hub wymaga miejsca na podłodze obok łóżka i obsługi wody, a ty jesteś uzależniony od ekosystemu Eight Sleep."
+        },
+        {
+          "q": "Eight Sleep Pod 4 czy ChiliPad Dock Pro: co jest lepsze?",
+          "a": "Pod 4 jest lepszy do zintegrowanego śledzenia HRV i snu; ChiliPad Dock Pro jest lepszy, jeśli chcesz obejść się bez subskrypcji. Sprzęt klimatyczny jest porównywalny, ale ChiliPad kosztuje około 1 700 $ bez opłat wobec około 4 000 $ plus subskrypcja."
+        }
+      ]
+    },
+    "cold-pod": {
+      "verdict": "Tani start z zimnymi kąpielami (220 $) — dmuchana, przenośna wanna na lód.",
+      "summary": "Cold Pod to dmuchana, przenośna wanna do zimnych kąpieli. Składa się do przechowywania, napełnia się ją wężem ogrodowym, nie ma schładzacza — działa na lód. Marka założona w Wielkiej Brytanii, dziś dostępna na całym świecie. Właściwy punkt wyjścia dla osób, które chcą wypróbować zimne kąpiele, zanim zdecydują się na stałą instalację.",
+      "description": "Recenzja Cold Pod: tani start (220 $) — dmuchana, przenośna, na lód, bez schładzacza. Świetna wanna na początek; lód i miejsce zapewniasz sam.",
+      "bestFor": "Najlepsza dla początkujących, którzy chcą wypróbować zimne kąpiele w dmuchanej, przenośnej wannie bez dużych zobowiązań, zanim zdecydują się na stałą instalację.",
+      "testNote": "Ocena oparta na dowodach — na podstawie dokumentacji produktu Cold Pod i niezależnych recenzji konsumenckich z 2026 roku. Nie testowane osobiście przez ONDA.",
+      "productType": "Przenośna dmuchana wanna do kąpieli lodowych",
+      "pros": [
+        "Najtańszy rzetelny start z zimnymi kąpielami — 220 $ na start",
+        "Składa się do przechowywania — zmieści się w mieszkaniu i małym domu",
+        "Napompujesz ją w 10 minut dołączoną pompką",
+        "Łatwo wypróbować codzienne zimne kąpiele przed decyzją o stałej instalacji"
+      ],
+      "cons": [
+        "Brak schładzacza — lód to codzienny koszt eksploatacji",
+        "Konstrukcja dmuchana mniej trwała niż sztywne wanny przy wieloletnim użytkowaniu",
+        "Ręczna wymiana wody, brak ozonu",
+        "Krócej utrzymuje zimno niż sztywne izolowane wanny"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "Brak schładzacza. Temperaturę utrzymuje wyłącznie lód i otoczenie. Izolacja jest cieńsza niż w sztywnych wannach — zimno utrzymuje się krócej.",
+        "build": "Konstrukcja dmuchana — trwała przy typowym użytkowaniu, ale bardziej podatna na uszkodzenia niż sztywne wanny przy wieloletnim użytkowaniu. Dostępne części zamienne.",
+        "water-management": "Ręczna wymiana wody; brak ozonu i filtra. Więcej pracy przy każdym użyciu.",
+        "form-factor": "Składa się do przechowywania, pompuje w 10 minut. Tymczasowe użycie na zewnątrz lub w domu. Bardzo elastyczna forma.",
+        "evidence": "Uczciwy marketing jako opcja na start / przenośna, a nie urządzenie kliniczne.",
+        "value": "220 $ — tani start z zimnymi kąpielami. Wyższe koszty utrzymania przez lata równoważą niską cenę zakupu."
+      },
+      "content": "## Dokąd to prowadzi\n\nCold Pod to tani sposób, by zacząć zimne kąpiele. Konstrukcja dmuchana, działanie na lód, składanie do przechowywania, 220 $. Jeśli chcesz sprawdzić, czy codzienne zimne kąpiele coś zmieniają, zanim zdecydujesz się na Ice Barrel za 1 200 $ albo Plunge za 5 990 $, to właściwy wybór.\n\n## Jakie są wady Cold Pod?\n\nKompromisem jest konstrukcja dmuchana. Zimno utrzymuje się krócej niż w sztywnych wannach, trwałość w perspektywie kilku lat jest słabsza, a ręczne zarządzanie wodą oznacza więcej pracy między sesjami.\n\n## Dla kogo jest Cold Pod?\n\nWybierz Cold Pod, jeśli testujesz zimne kąpiele i chcesz taniego startu (220 $). Gdy już wiesz, że chcesz kąpać się codziennie, naturalnym krokiem dalej jest segment z wbudowanym schładzaczem (Edge, Plunge) lub beczka (Ice Barrel).\n\n---\n\n## Dalsza lektura\n\nBiologia tego, dlaczego ekspozycja na zimno działa — i protokoły, które wzmacniają efekt sprzętu.\n\n- [Tolerancja CO₂ i granica tlenowa](/articles/co2-tolerance-expanding-oxygen-limit) — dlaczego protokoły zimna i oddechu dobrze się uzupełniają\n- [Antyentropijna architektura neuronalna](/articles/anti-entropy-neural-architecture) — ekspozycja na zimno jako krótki codzienny stresor\n- [Biogeneza mitochondriów: sieć energetyczna komórki](/articles/mitochondrial-biogenesis-cellular-power-grid) — jak ekspozycja na zimno wiąże się z adaptacją mitochondriów\n",
+      "faq": [
+        {
+          "q": "Czy Cold Pod jest wart zakupu?",
+          "a": "Tak, jako niezobowiązujący sposób na rozpoczęcie zimnych kąpieli. Cold Pod to tani start za 220 $, pompuje się go w 10 minut i składa do przechowywania. Nie ma schładzacza, więc codziennie płacisz za lód, a konstrukcja dmuchana jest mniej trwała w dłuższej perspektywie."
+        },
+        {
+          "q": "Ile kosztuje Cold Pod?",
+          "a": "Cold Pod kosztuje około 220 $ jako jednorazowy zakup. Lód to osobny codzienny koszt eksploatacji, bo wanna nie ma schładzacza i działa na lód; napełnia się ją wężem ogrodowym. Dołączoną pompką napompujesz ją w 10 minut."
+        },
+        {
+          "q": "Jakie są wady Cold Pod?",
+          "a": "Cold Pod nie ma schładzacza, więc lód to codzienny koszt. Konstrukcja dmuchana jest mniej trwała niż sztywne wanny przy wieloletnim użytkowaniu, wymiana wody jest ręczna i bez ozonu, a izolacja krócej utrzymuje zimno niż sztywne izolowane wanny."
+        },
+        {
+          "q": "Dla kogo Cold Pod jest najlepszy?",
+          "a": "Cold Pod jest najlepszy dla początkujących, którzy chcą dmuchanego, przenośnego i niezobowiązującego startu. Zmieści się w mieszkaniu i małym domu i pozwala wypróbować codzienną praktykę przed decyzją o stałej instalacji."
+        }
+      ]
     }
   },
   "comparisons": {

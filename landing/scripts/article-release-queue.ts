@@ -599,6 +599,11 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'garmin-fenix-8' },
   { collection: 'h2h', slug: 'eight-sleep-pod-4-vs-chilipad-dock-pro-vs-bedjet-3' },
   { collection: 'reviews', slug: 'waking-up', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'reviews', slug: 'cold-pod' },
+  { collection: 'reviews', slug: 'oura-ring-5' },
+  { collection: 'reviews', slug: 'edge-tub' },
+  { collection: 'reviews', slug: 'eight-sleep-pod-4' },
+  { collection: 'reviews', slug: 'samsung-galaxy-ring', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
   // WAVE_D_NEXT
   ],
 ]

@@ -3692,8 +3692,48 @@
       ]
     },
     "oura-ring-5": {
-      "verdict": "Het topmodel van 2026 – 40% slanker met echt verbeterde sensoren. Eerdere Oura-generaties kwamen 's nachts goed overeen met ecg; de Ring 5 zelf is niet apart gevalideerd. Het verplichte abonnement blijft het enige echte nadeel.",
-      "productType": "Slimme ring"
+      "verdict": "Het vlaggenschip van 2026 — 40% slanker met echt verbeterde sensoren. Eerdere Oura-generaties kwamen 's nachts nauw overeen met een borstband-ecg; de Ring 5 zelf is niet afzonderlijk gevalideerd. Het verplichte abonnement blijft het enige echte nadeel.",
+      "summary": "De Oura Ring 5 (gelanceerd in juni 2026) is de nieuwe generatie van de bekendste ring. Hij is ~40% slanker dan de Ring 4 (6,09 mm × 2,28 mm), heeft een accu voor 6–9 dagen en — waar het om draait — opnieuw ontworpen sensoren: sterkere leds, platte sensorkoepels en 12 signaalpaden voor beter contact en consistentere metingen over vingervormen en huidtinten heen. Het nadeel is onveranderd: alle data vraagt om het maandelijkse lidmaatschap, en de hardware kost $399 ($499 voor premium afwerkingen). Let op: de belangrijkste nieuwe softwarefuncties (live workouttracking, vrouwengezondheid, import van bloedwaarden) komen ook naar de Ring 4 en Gen3 — het echte voordeel van de Ring 5 boven de Ring 4 zijn dus de sensoren en de pasvorm, niet de app.",
+      "description": "Oura Ring 5 review: 40% slanker, betere sensoren; eerdere Oura-ringen kwamen 's nachts nauw overeen met borstband-ecg; Ring 5 nog niet gevalideerd.",
+      "bestFor": "Ideaal voor nachtelijke data over hartslagvariabiliteit (HRV) en slaap in een zeer slanke, lichte ring voor dag en nacht (eerdere Oura-generaties kwamen 's nachts nauw overeen met een borstband-ecg; de Ring 5 zelf is niet afzonderlijk gevalideerd) — voor nieuwe kopers, niet per se voor bezitters van een Ring 4.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van de specificaties van Oura, onafhankelijke lanceringsreviews uit 2026 en validatieliteratuur over eerdere generaties. Niet zelf door ONDA uitgeprobeerd.",
+      "productType": "Slimme ring",
+      "pros": [
+        "Echt verbeterde sensoren — beter contact over huidtinten en vingervormen heen",
+        "~40% slanker en lichter dan de Ring 4, accu voor 6–9 dagen",
+        "Eerdere Oura-generaties kwamen in één studie met nachtelijke metingen nauw overeen met een borstband-ecg (13 personen; de Ring 5 zelf is niet afzonderlijk gevalideerd), plus een vergelijking van slaapfases met polysomnografie alleen voor Gen 3, in door Oura gefinancierde studies",
+        "Duidelijke, uitleggende app"
+      ],
+      "cons": [
+        "Geavanceerde data vereist nog steeds een doorlopend maandelijks lidmaatschap",
+        "De belangrijkste nieuwe softwarefuncties komen ook naar de Ring 4 — minder reden om te upgraden als je er een hebt",
+        "HRV overdag en tijdens het sporten blijft onbetrouwbaar bij beweging",
+        "$399/$499 voor de hardware, en er is geen scherm"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Eerdere Oura-generaties kwamen in één onafhankelijke studie met nachtelijke metingen nauw overeen met ecg; de Ring 5 zelf is niet gevalideerd. De opnieuw ontworpen sensoren mikken op consistenter contact over huidtinten en vingervormen heen; metingen overdag en tijdens het sporten wijken bij beweging nog steeds af. ONDA-regel: zonder eigen onafhankelijke validatie scoort een apparaat hooguit 7,5 als eerdere generaties gevalideerd zijn, anders 7,0.",
+        "sensor": "Opnieuw ontworpen sensoren: sterkere leds en platte sensorkoepels voor beter huidcontact. Een echte hardwarestap ten opzichte van de Ring 4, niet alleen een slankere behuizing.",
+        "sleep-accuracy": "Dezelfde lijn slaapalgoritmes als de Ring 4, waarvan de gepubliceerde studie naar slaapfases door Oura werd gefinancierd; de Ring 5 heeft geen onafhankelijke slaapvalidatie. ONDA-regel: zonder eigen onafhankelijke validatie scoort een apparaat hooguit 7,5 als eerdere generaties gevalideerd zijn, anders 7,0.",
+        "data-access": "Onveranderd ten opzichte van de Ring 4 — er is een ontwikkelaars-API, maar ruwe slag-tot-slagdata is beperkt en diepere analyse zit achter het lidmaatschap.",
+        "wearability": "~40% slanker en lichter dan de Ring 4 (6,09 mm × 2,28 mm) met een accu voor 6–9 dagen — zeer slank en licht. Kleiner maatbereik (6–13) dan de Ring 4.",
+        "app-ux": "Dezelfde verzorgde, uitleggende app; nieuwe functies (live workouttracking, vrouwengezondheid, ringzoeker, import van lab-/bloedwaarden) komen hier — maar ook naar de Ring 4 en Gen3.",
+        "value": "Hardware $399 ($499 premium afwerkingen) plus een verplicht lidmaatschap van ~$6/maand, en de data is nooit helemaal van jou."
+      },
+      "content": "## Waar het naartoe leidt\n\nVoor nachtelijke [hartslagvariabiliteit (HRV)](/glossary/heart-rate-variability) kwamen eerdere Oura-generaties in één studie met nachtelijke metingen (13 personen) nauw overeen met een borstband-ecg; de Ring 5 zelf is niet afzonderlijk gevalideerd. Hij zet de lijn waartoe de [Ring 4](/reviews/oura-ring-4) behoort voort op opnieuw ontworpen sensoren. Sterkere leds, platte sensorkoepels en 12 signaalpaden verbeteren het huidcontact — precies waar een optische sensor aan de vinger zijn meting wint of verliest — en reviewers melden consistentere tracking over huidtinten en vingervormen heen.\n\n## Wat er echt is veranderd ten opzichte van de Ring 4\n\nTwee echte dingen: de sensoren en de pasvorm. De Ring 5 is ongeveer **40% slanker en lichter** (6,09 mm × 2,28 mm) met een langere accu voor 6–9 dagen. Wat de afweging *niet* veranderde, is de software — Oura rolt de nieuwe functies (live workouttracking, vrouwengezondheid, ringzoeker, import van lab-/bloedwaarden) ook uit naar de Ring 4 en Gen3. Heb je al een Ring 4, dan is het voordeel van de Ring 5 dus kleiner dan het lijkt: betere sensoren en een slanker lichaam, geen nieuwe app-mogelijkheden. Bekijk de volledige vergelijking [Oura Ring 5 vs Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4).\n\n## Het nadeel\n\nOnveranderd, en nog steeds het grootste minpunt: de ring is maar de helft van de aankoop. Zonder het maandelijkse lidmaatschap krimpt de app tot basisscores, ruwe slag-tot-slagdata wordt nooit volledig vrijgegeven, en de ring kost $399 ($499 voor premium afwerkingen).\n\n## Voor wie is de Oura Ring 5 geschikt?\n\nKies de Oura Ring 5 als je nieuw koopt en nachtelijke HRV- en slaapdata wilt van de ringlijn met het meeste gepubliceerde onderzoek — vooral naar eerdere generaties, deels gefinancierd door Oura (de Ring 5 zelf is niet afzonderlijk gevalideerd) — in het slankste apparaat dat je dag en nacht kunt dragen, en het abonnement acceptabel vindt. Gebruik je al een Ring 4, dan mis je geen app-functies — upgrade alleen als de sensoren of de slankere pasvorm echt belangrijk voor je zijn.\n\n---\n\n## Achtergrondinformatie\n\n- [HRV als fouttolerante buffer](/articles/fault-tolerant-human-hrv-buffer) — waarom een brede HRV-bandbreedte is waar je eigenlijk voor traint\n- [De baroreflex en de verschuiving naar 0,1 Hz](/articles/baroreflex-01hz-shift) — de signatuur van ademen op resonantiefrequentie in je HRV-curve\n",
+      "faq": [
+        {
+          "q": "Is de Oura Ring 5 het waard boven de Ring 4?",
+          "a": "De Ring 5 voegt een verbeterde sensor en een slanker ontwerp toe, maar draait dezelfde software als de Ring 4. Beide meten nachtelijke HRV en slaap (eerdere generaties — Oura Gen 3 en Ring 4 — werden in één onafhankelijke studie, Dial 2025, vergeleken met een eenkanaals borstband-ecg; de Ring 5 is nog niet gevalideerd), dus de Ring 5 is het waard voor de nieuwste hardware, terwijl de afgeprijsde Ring 4 vaak betere prijs-kwaliteit biedt."
+        },
+        {
+          "q": "Hoeveel kost de Oura Ring 5?",
+          "a": "Hij kost $399 voor standaard afwerkingen (tot $499 voor premium), plus het Oura-lidmaatschap van ongeveer $6 per maand voor alle data — een eenmalige aankoop van de ring met een doorlopend abonnement."
+        },
+        {
+          "q": "Is de Oura Ring 5 nauwkeurig voor slaap en HRV?",
+          "a": "Eerdere Oura-generaties kwamen 's nachts nauw overeen met een borstband-ecg, en meten aan de vinger past goed bij slaaptracking; de Ring 5 zelf is niet afzonderlijk gevalideerd."
+        }
+      ]
     },
     "apple-watch-ultra-4": {
       "verdict": "De Apple Watch die eindelijk geschikt is voor nachtelijke HRV: het nieuwe Health Sensing System plus een accu van 50 uur en een paraatheidsscore voor sporters – als je het formaat en de prijs van $799 kunt verantwoorden.",
@@ -3883,8 +3923,48 @@
       ]
     },
     "samsung-galaxy-ring": {
-      "verdict": "Het Oura-alternatief zonder abonnement voor Android – comfortabel en degelijk, al zit je vast aan het Samsung-ecosysteem.",
-      "productType": "Slimme ring"
+      "verdict": "Het Oura-alternatief zonder abonnement voor Android — comfortabel en degelijk, al zit je vast aan het Samsung-ecosysteem.",
+      "summary": "De Samsung Galaxy Ring komt het dichtst bij een Oura Ring 4 zonder abonnement. Het is een comfortabele ring met nachtelijke tracking van hartslagvariabiliteit (HRV) en slaap (niet onafhankelijk gevalideerd) — maar hij is gebonden aan Samsung Health en Android en heeft, anders dan de Oura Ring 4, geen onafhankelijke controle op nauwkeurigheid.",
+      "description": "ONDA-review van de Samsung Galaxy Ring — het Oura-alternatief zonder abonnement voor Android. Gescoord op HRV-nauwkeurigheid, slaap, data en prijs.",
+      "bestFor": "Ideaal voor Android-gebruikers die ringtracking in Oura-stijl willen zonder abonnement.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van fabrikantspecificaties, onafhankelijke reviews uit 2026 en gepubliceerde validatieliteratuur. Niet zelf door ONDA uitgeprobeerd.",
+      "productType": "Slimme ring",
+      "pros": [
+        "Geen abonnement — alle functies vrijgegeven bij aankoop",
+        "Comfortabele ring met een accu die meerdere dagen meegaat",
+        "Nette integratie voor Samsung- en Android-gebruikers",
+        "Degelijke nachtelijke HRV- en slaaptracking"
+      ],
+      "cons": [
+        "Alleen Android en Samsung Health — geen iPhone-ondersteuning",
+        "Gesloten data: geen open API, beperkte export",
+        "Geen onafhankelijke controle op nauwkeurigheid, anders dan de Oura Ring 4",
+        "De beste prijs-kwaliteit alleen binnen het Samsung-ecosysteem"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Nachtelijke optische HRV van de ring; er is geen onafhankelijke validatie van de Galaxy Ring tegen ecg gevonden (stand oktober 2026). ONDA-regel: zonder eigen onafhankelijke validatie scoort een apparaat hooguit 7,5 als eerdere generaties gevalideerd zijn, anders 7,0.",
+        "sensor": "Optische PPG in ringvorm voor nachtelijke metingen.",
+        "sleep-accuracy": "Nachtelijke slaaptracking (niet onafhankelijk gevalideerd): er is geen onafhankelijke slaapvalidatie van de Galaxy Ring gevonden. ONDA-regel: zonder eigen onafhankelijke validatie scoort een apparaat hooguit 7,5 als eerdere generaties gevalideerd zijn, anders 7,0.",
+        "data-access": "Opgebouwd rond Samsung Health zonder open API en met beperkte export — de data blijft grotendeels in de app.",
+        "wearability": "Een comfortabele ring om dag en nacht te dragen, met een accu die meerdere dagen meegaat.",
+        "app-ux": "Samsung Health is duidelijk genoeg, maar gebonden aan het Samsung- en Android-ecosysteem.",
+        "value": "$399 zonder abonnement — het blijvende kostenvoordeel ten opzichte van de Oura Ring 4."
+      },
+      "content": "## Waar het naartoe leidt\n\nDe Samsung Galaxy Ring is het meest directe alternatief voor de Oura Ring 4, en zijn belangrijkste voordeel is simpel: geen abonnement. De aankoop geeft alle functies voorgoed vrij, terwijl Oura maandelijks blijft rekenen. Als hardware is het een comfortabele, goed gemaakte ring met een accu die meerdere dagen meegaat en nachtelijke [HRV](/glossary/heart-rate-variability)- en slaaptracking (niet onafhankelijk gevalideerd) — voor wie al een Samsung-telefoon heeft en Samsung Health gebruikt, is het een logische keuze zonder gedoe.\n\n## Wat zijn de nadelen van de Samsung Galaxy Ring?\n\nDe ring is gebonden aan zijn ecosysteem. Hij is opgebouwd rond Samsung Health en Android — er is geen iPhone-ondersteuning — en de toegang tot data is relatief gesloten: geen open API voor ontwikkelaars, beperkte export, je cijfers blijven grotendeels in de app van Samsung. Wat nauwkeurigheid betreft: er is geen onafhankelijke validatie van de HRV van de Galaxy Ring tegen ecg gevonden (stand oktober 2026). De Oura Ring 4 heeft één onafhankelijke vergelijking met een borstband-ecg bij nachtelijke metingen (13 personen, Dial 2025), en de bekendste studie naar slaapfases bij ringen is een controle van de slaapfases van de Oura Gen 3; die studie werd gefinancierd door Oura.\n\n**Noot 2026.** Het beeld van de nauwkeurigheid is ongewijzigd: er is geen onafhankelijke vergelijking gevonden waarin de Galaxy Ring is opgenomen, en geen onafhankelijke validatie van zijn HRV tegen ecg (stand oktober 2026). Het echte argument voor de Galaxy Ring blijft het ontbreken van een abonnement en de native Android-integratie — niet de claim dat hij Oura evenaart in precisie.\n\n## Voor wie is de Samsung Galaxy Ring geschikt?\n\nKies de Samsung Galaxy Ring als je Android gebruikt — bij voorkeur Samsung — en ringtracking in Oura-stijl wilt zonder eeuwigdurend abonnement, en het prima vindt dat je data in Samsung Health blijft. iPhone-gebruikers, of wie een ring wil met een onafhankelijke controle van de nachtelijke HRV of open data, kunnen beter naar de Oura Ring 4 kijken.\n\n---\n\n## Achtergrondinformatie\n\nDe wetenschap achter waarom HRV het signaal is dat het volgen waard is — en hoe het lichaam het produceert.\n\n- [De baroreflex en de verschuiving naar 0,1 Hz](/articles/baroreflex-01hz-shift) — de signatuur van ademen op resonantiefrequentie in je HRV-curve\n- [Voorspelt HRV reactietijd en focus?](/articles/nervous-system-ping-latency) — wat HRV in rust wel en niet zegt over aandacht en zelfbeheersing\n",
+      "faq": [
+        {
+          "q": "Werkt de Samsung Galaxy Ring met de iPhone?",
+          "a": "Nee. Hij werkt alleen met Android en Samsung Health, zonder iPhone-ondersteuning, en is dus specifiek geschikt voor bezitters van een Samsung-telefoon."
+        },
+        {
+          "q": "Heeft de Samsung Galaxy Ring een abonnement nodig?",
+          "a": "Nee — hij kost eenmalig $399 zonder abonnement, een blijvend kostenvoordeel ten opzichte van de Oura Ring, die voor alle data een lidmaatschap van ongeveer $6 per maand vereist."
+        },
+        {
+          "q": "Is de Samsung Galaxy Ring net zo nauwkeurig als Oura?",
+          "a": "Onbekend: er is geen onafhankelijke validatie van de HRV van de Galaxy Ring tegen ecg gevonden (stand oktober 2026); de Oura Ring 4 heeft één onafhankelijke vergelijking met een borstband-ecg bij nachtelijke metingen. De Galaxy Ring is een alternatief zonder abonnement voor Android-gebruikers."
+        }
+      ]
     },
     "renu-therapy-cold-stoic": {
       "verdict": "Koudwaterbad uit de premiumklasse met een bewust stille koeler – het best voor installatie binnenshuis, waar geluid ertoe doet.",
@@ -4162,8 +4242,51 @@
       ]
     },
     "edge-tub": {
-      "verdict": "Sterke prijs-kwaliteit onder de koudwaterbaden met ingebouwde koeler — hardware vergelijkbaar met The Plunge, duidelijk goedkoper.",
-      "productType": "Koudwaterbad uit het middensegment met koeler"
+      "verdict": "Sterke prijs-kwaliteit onder ijsbaden met koeler — vergelijkbare hardware als The Plunge, merkbaar goedkoper.",
+      "summary": "Edge Tub is een geïsoleerd acrylbad met ingebouwde koeler, houdt bij normaal gebruik 39 °F (ca. 4 °C) vast, met ozonfiltratie. Een jonger merk dan The Plunge met een kortere betrouwbaarheidsgeschiedenis over meerdere jaren, maar de kernhardware is vergelijkbaar voor ongeveer de helft van de prijs.",
+      "description": "ONDA-review van de Edge Tub — het middensegment-alternatief voor Plunge, met vergelijkbare koelerhardware voor ongeveer de helft van de prijs.",
+      "bestFor": "Ideaal voor wie een ijsbad met ingebouwde koeler wil zonder de meerprijs van The Plunge te betalen.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van de productdocumentatie van Edge Tub, de onderzoeksliteratuur over kouseblootstelling en onafhankelijke reviews uit 2026. Niet zelf door ONDA uitgeprobeerd.",
+      "productType": "Ijsbad uit het middensegment met koeler",
+      "pros": [
+        "Ongeveer de helft van de prijs van The Plunge voor vergelijkbare koelcapaciteit",
+        "Ozondesinfectie inbegrepen",
+        "Geschikt voor binnen en buiten",
+        "Sterke prijs-kwaliteitkeuze in het segment met koeler"
+      ],
+      "cons": [
+        "Jonger merk — minder betrouwbaarheidsdata over meerdere jaren dan Plunge",
+        "2 jaar garantie tegenover 3 jaar bij Plunge",
+        "Iets trager terugkoelen bij piekhitte in de zomer",
+        "Minder uitgewerkte protocolbegeleiding dan Plunge"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "Capabele koeler houdt bij normaal gebruik 39 °F vast; in de zomerhitte iets trager terugkoelen dan de 1 pk-unit van Plunge.",
+        "build": "Geïsoleerd acrylbad, 2 jaar garantie. Jonger merk — de betrouwbaarheidsgeschiedenis over meerdere jaren wordt nog opgebouwd.",
+        "water-management": "Ozondesinfectie + filter; water verversen elke 3–4 weken bij normaal gebruik.",
+        "form-factor": "Installatie binnen of buiten, vergelijkbaar vloeroppervlak als Plunge. Vereist 110 V en een vlakke ondergrond.",
+        "evidence": "Eerlijke marketingtaal over de voordelen van kouseblootstelling; minder prominente oprichters dan bij The Plunge.",
+        "value": "$2,495 — ongeveer de helft van de prijs van The Plunge voor vergelijkbare kernhardware. Sterke prijs-kwaliteit."
+      },
+      "content": "## Waar het naartoe leidt\n\nEdge Tub is de prijsbewuste uitdager in het segment van ijsbaden met koeler. Vergelijkbare koelcapaciteit als The Plunge, ozondesinfectie inbegrepen, vergelijkbaar formaat — voor ongeveer $2,495 tegenover $5,990 voor The Plunge. Wil je hardware met koeler zonder de meerprijs van de marktleider te betalen, dan is dit de juiste vorm.\n\n## Wat zijn de nadelen van Edge Tub?\n\nEdge is jonger en de betrouwbaarheidsdata over meerdere jaren worden nog opgebouwd. De garantie is korter (2 jaar tegenover 3 bij Plunge) en het terugkoelen bij piekhitte in de zomer is iets trager. Ook de aanwezigheid van de oprichters en de content zijn minder ontwikkeld.\n\n## Voor wie is Edge Tub geschikt?\n\nKies Edge Tub als je een ijsbad met ingebouwde koeler wilt voor de meest toegankelijke prijs in dit segment. Zijn een langere garantie (3 jaar tegenover 2) en een langere staat van dienst doorslaggevend, dan is The Plunge de juiste vorm.\n\n---\n\n## Achtergrondinformatie\n\nDe biologie achter waarom kouseblootstelling werkt — en de protocollen die de hardware versterken.\n\n- [CO₂-tolerantie en de zuurstofgrens](/articles/co2-tolerance-expanding-oxygen-limit) — waarom kou- en ademprotocollen goed samengaan\n- [Anti-entropische neurale architectuur](/articles/anti-entropy-neural-architecture) — kouseblootstelling als korte dagelijkse stressprikkel\n- [Mitochondriale biogenese: het stroomnet van de cel](/articles/mitochondrial-biogenesis-cellular-power-grid) — hoe kouseblootstelling samenhangt met aanpassing van de mitochondriën\n",
+      "faq": [
+        {
+          "q": "Is de Edge Tub het geld waard?",
+          "a": "Ja, het is een sterke prijs-kwaliteitkeuze onder ijsbaden met koeler. De Edge Tub biedt hardware die vergelijkbaar is met The Plunge, houdt bij normaal gebruik 39 °F vast en heeft ozonfiltratie, voor ongeveer de helft van de prijs. Het is een jonger merk met een kortere betrouwbaarheidsgeschiedenis."
+        },
+        {
+          "q": "Hoeveel kost de Edge Tub?",
+          "a": "De Edge Tub kost ongeveer $2,495 als eenmalige aankoop, inclusief koeler en ozondesinfectie. Dat is ongeveer de helft van de prijs van The Plunge voor vergelijkbare koelcapaciteit, en hij is geschikt voor binnen en buiten."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Edge Tub?",
+          "a": "De Edge Tub is een jonger merk met minder betrouwbaarheidsdata over meerdere jaren dan The Plunge, en heeft 2 jaar garantie tegenover 3 jaar bij Plunge. De koeler koelt bij piekhitte in de zomer iets trager terug en de protocolbegeleiding is minder uitgewerkt."
+        },
+        {
+          "q": "Edge Tub vs The Plunge: welke is beter?",
+          "a": "De Edge Tub is beter qua prijs-kwaliteit; The Plunge is beter qua staat van dienst en garantie. Edge biedt vergelijkbare koelerhardware voor ongeveer de helft van de prijs, terwijl Plunge 3 jaar garantie en meer uitgewerkte protocolbegeleiding heeft."
+        }
+      ]
     },
     "eight-sleep-pod-3": {
       "verdict": "Pod 4-mogelijkheden voor Pod 3-prijzen: solide prijs-kwaliteit met korting, met een iets smaller temperatuurbereik dan Pod 4.",
@@ -4257,8 +4380,98 @@
       ]
     },
     "eight-sleep-pod-4": {
-      "verdict": "Een premium slim slaapklimaatsysteem – waterkoeling en -verwarming met twee zones, HRV-tracking, abonnement vereist.",
-      "productType": "Premium slimme slaapklimaathoes (past op een bestaande matras; Eight Sleep-matras optioneel)"
+      "verdict": "Een premium systeem voor slim slaapklimaat — koeling/verwarming met water in twee zones, HRV-tracking, abonnement verplicht.",
+      "summary": "Eight Sleep Pod 4 is het slimme slaapklimaatsysteem dat de categorie heeft bepaald. Watergekoelde hoes met twee zones en actieve verwarming en koeling (13–43 °C), ingebouwde tracking van hartslagvariabiliteit (HRV) en slaap, en automatische klimaataanpassing (Autopilot) op basis van de geschatte slaapfase. De hardware is uitstekend; het abonnementsmodel is het redactionele twistpunt — alle functies vereisen een doorlopend Eight Sleep Autopilot-lidmaatschap.",
+      "description": "ONDA-review van de Eight Sleep Pod 4 — het premium watergekoelde slaapklimaatsysteem met twee zones en ingebouwde HRV-tracking.",
+      "bestFor": "Ideaal voor wie slaapklimaathardware met veel functies en ingebouwde HRV-tracking wil — en het abonnement voor lief neemt.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van de productdocumentatie van Eight Sleep en onafhankelijke consumenten-/biohackerreviews uit 2026. Niet zelf door ONDA uitgeprobeerd.",
+      "productType": "Premium hoes voor slim slaapklimaat (past op een bestaand matras; Eight Sleep-matras optioneel)",
+      "pros": [
+        "Groot temperatuurbereik (13–43 °C) met twee zones (per bedhelft)",
+        "Ingebouwde HRV- en slaapfasetracking — geen aparte wearable nodig",
+        "Autopilot past de temperatuur automatisch aan op de geschatte slaapfase",
+        "Betrouwbaarheidsgeschiedenis over meerdere jaren overwegend positief"
+      ],
+      "cons": [
+        "Autopilot-abonnement nodig voor alle functies — grootste redactionele kritiekpunt",
+        "Premiumprijs (~$4,000 queen) plus doorlopend lidmaatschap",
+        "Hub heeft vloerruimte naast het bed en waterbeheer nodig",
+        "Vastzitten aan het Eight Sleep-ecosysteem"
+      ],
+      "scoreNotes": {
+        "climate-range": "Groot bereik met twee zones (13–43 °C), goede hersteltijd, houdt de doeltemperatuur vast bij grote schommelingen in de omgeving. Autopilot past 's nachts aan op de geschatte slaapfase.",
+        "build": "Premium hoes; past op een bestaand matras van 10–16 inch dik (volgens Tom's Guide). Hub van gemiddeld formaat. 2 jaar garantie. Betrouwbaarheidsgeschiedenis over meerdere jaren overwegend positief.",
+        "app-tracking": "Ingebouwde slaap-/HRV-tracking (niet onafhankelijk gevalideerd). Schatting van slaapfases, HRV-trends, snurkdetectie. Integratie met Apple Health.",
+        "form-factor": "Een hoes die als een hoeslaken over je bestaande matras past; een Eight Sleep-matras was optioneel. Twee zones (temperatuur per kant). De hub (ongeveer 16 × 7 × 17 inch) heeft vloerruimte naast het bed nodig. De eigen Pod 4-pagina van Eight Sleep is verwijderd; configuratie volgens Tom's Guide (secundaire bron).",
+        "subscription": "Autopilot-abonnement nodig voor alle functies (~$15-25/maand). Het grootste redactionele kritiekpunt — premium hardware achter een doorlopend lidmaatschap.",
+        "value": "~$4,000 (queen) hardware + doorlopend abonnement. Premiumsegment; het abonnement verhoogt de kosten over 3 jaar."
+      },
+      "content": "## Waar het naartoe leidt\n\n> Eight Sleep verving de Pod 5 op 23 september 2026 door de Pod 6 (vanaf $1,999 Solo; $2,899 queen, $2,999 king), en de eigen winkel van Eight Sleep toont nu alleen nog de Pod 6 — de Pod 4 bestaat vooral nog als restvoorraad of bij derden. Voor ~$4,000 in queen is de Pod 4 niet langer de goedkopere instap bij Eight Sleep; koop hem alleen met een korting die hem duidelijk onder de Pod 6 brengt. Over de Pod 5: de Pod 5 Ultra voegt een verstelbare basis, koeling van bovenaf en audio toe, maar kost vanaf $6,099 (queen/king, volgens onze Pod 5-review), en de kerntechniek voor temperatuur/HRV en de nieuwe Autopilot 4.0-software komen ook naar de Pod 4. Zie [Pod 4 vs Pod 5](/reviews/vs/eight-sleep-pod-4-vs-eight-sleep-pod-5).\n\nEight Sleep Pod 4 is het slimme slaapklimaatsysteem dat de consumentencategorie heeft bepaald. Koeling/verwarming met water in twee zones (13–43 °C), ingebouwde HRV- en slaaptracking die een aparte wearable kan vervangen, en programmeerbaar Autopilot-klimaat dat zich 's nachts aanpast op de geschatte slaapfase. De bouw van de hardware en de betrouwbaarheid over meerdere jaren zijn degelijk.\n\n## Wat zijn de nadelen van Eight Sleep Pod 4?\n\nHet abonnement. Alle functies (Autopilot, geavanceerde HRV-inzichten, klimaatplanning) vereisen een doorlopend Eight Sleep-lidmaatschap — het grootste redactionele twistpunt van de categorie. Zonder abonnement heb je een dure verwarmde hoes. De totale kosten over 3 jaar liggen rond $4,500-4,900 (~$4,000 in queen plus ~$15-25/maand abonnement).\n\n## Voor wie is Eight Sleep Pod 4 geschikt?\n\nKies de Eight Sleep Pod 4 als je slaapklimaathardware met veel functies en ingebouwde tracking wilt en het abonnementsmodel accepteert. Voor waterkoeling zonder abonnement: ChiliPad Dock Pro. Voor luchtstroom tegen een lagere prijs: BedJet 3. Voor klimaat zonder tracking: Sleep Number Climate360.\n\n---\n\n## Achtergrondinformatie\n\nDe biologie achter waarom regeling van de bedtemperatuur de slaapdiepte en het herstel beïnvloedt.\n\n- [Circadiaanse reset: licht beheersen](/articles/circadian-reset-mastering-light) — waarom regeling van de bedtemperatuur samengaat met de timing van licht voor diepe slaap\n- [Fasegekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep) — geluidsstimulatie tijdens de slaap\n- [Reinigt slaap echt je hersenen? Het bewijs over het glymfatische systeem](/articles/nightly-flush-glymphatic-neural-cache) — wat bij mensen is aangetoond en wat nog wordt betwist\n",
+      "faq": [
+        {
+          "q": "Is de Eight Sleep Pod 4 het geld waard?",
+          "a": "Ja, als je het abonnement accepteert. De Pod 4 is een premium slaapklimaatsysteem met koeling en verwarming met water in twee zones van 13 tot 43 °C, ingebouwde HRV- en slaapfasetracking en Autopilot-aanpassing. Alle functies vereisen een doorlopend Autopilot-lidmaatschap."
+        },
+        {
+          "q": "Hoeveel kost de Eight Sleep Pod 4?",
+          "a": "De Eight Sleep Pod 4 kost ongeveer $4,000 in queen-formaat, plus zo'n $20 per maand voor het Autopilot-abonnement. Het abonnement is nodig voor alle functies."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Eight Sleep Pod 4?",
+          "a": "De Pod 4 vereist een Autopilot-abonnement voor alle functies, zijn grootste kritiekpunt. Hij heeft een premiumprijs plus doorlopend lidmaatschap, de hub heeft vloerruimte naast het bed en waterbeheer nodig, en je zit vast aan het Eight Sleep-ecosysteem."
+        },
+        {
+          "q": "Eight Sleep Pod 4 vs ChiliPad Dock Pro: welke is beter?",
+          "a": "De Pod 4 is beter voor ingebouwde HRV- en slaaptracking; de ChiliPad Dock Pro is beter als je zonder abonnement wilt. De klimaathardware is vergelijkbaar, maar ChiliPad kost ongeveer $1,700 zonder kosten tegenover ongeveer $4,000 plus abonnement."
+        }
+      ]
+    },
+    "cold-pod": {
+      "verdict": "Een betaalbare instap in het ijsbad ($220) — opblaasbaar, draagbaar, werkt met ijs.",
+      "summary": "Cold Pod is het opblaasbare, draagbare ijsbad. Vouwt op voor opslag, vul je met een tuinslang, geen koeler — werkt met ijs. Opgericht in het Verenigd Koninkrijk, nu wereldwijd verkrijgbaar. De juiste instap voor wie ijsbaden wil uitproberen voordat hij kiest voor een vaste installatie.",
+      "description": "Cold Pod review: betaalbare instap ($220) — opblaasbaar, draagbaar, met ijs, geen koeler. Een prima starter; het ijs en de opbergruimte regel je zelf.",
+      "bestFor": "Ideaal voor beginners die ijsbaden opblaasbaar, draagbaar en zonder grote verplichting willen uitproberen voordat ze kiezen voor een vaste installatie.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van de productdocumentatie van Cold Pod en onafhankelijke consumentenreviews uit 2026. Niet zelf door ONDA uitgeprobeerd.",
+      "productType": "Draagbaar opblaasbaar ijsbad",
+      "pros": [
+        "Goedkoopste serieuze instap in het ijsbad — $220 aanschaf",
+        "Opvouwbaar voor opslag — past in appartementen en kleine woningen",
+        "In 10 minuten opgeblazen met de meegeleverde pomp",
+        "Dagelijks ijsbaden makkelijk uit te proberen voordat je kiest voor een vaste installatie"
+      ],
+      "cons": [
+        "Geen koeler — ijs is een dagelijkse kostenpost",
+        "Opblaasbare constructie over meerdere jaren minder duurzaam dan vaste baden",
+        "Water handmatig verversen, geen ozon",
+        "Houdt de kou korter vast dan vaste geïsoleerde baden"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "Geen koeler. De temperatuur wordt volledig door ijs en omgeving bepaald. De isolatie is dunner dan bij vaste baden — de kou houdt korter aan.",
+        "build": "Opblaasbare constructie — stevig bij normaal gebruik, maar kwetsbaarder dan vaste baden over meerdere jaren. Vervangende onderdelen verkrijgbaar.",
+        "water-management": "Water handmatig verversen; geen ozon of filter. Meer onderhoud per gebruiksbeurt.",
+        "form-factor": "Opvouwbaar voor opslag, in 10 minuten opgeblazen. Tijdelijk gebruik buiten of binnen. Zeer flexibel formaat.",
+        "evidence": "Eerlijke marketing als instap- of draagbare optie, niet als klinisch instrument.",
+        "value": "$220 — een betaalbare instap in het ijsbad. Hogere onderhoudskosten over de jaren wegen op tegen de lage aanschafprijs."
+      },
+      "content": "## Waar het naartoe leidt\n\nCold Pod is een betaalbare manier om met ijsbaden te beginnen. Opblaasbare constructie, werkt met ijs, opvouwbaar, $220. Wil je testen of dagelijks ijsbaden iets verandert voordat je kiest voor een Ice Barrel van $1,200 of een Plunge van $5,990, dan is dit de juiste vorm.\n\n## Wat zijn de nadelen van Cold Pod?\n\nDe opblaasbare constructie is de afweging. De kou houdt korter aan dan in vaste baden, de duurzaamheid over meerdere jaren is lager en handmatig waterbeheer betekent meer onderhoud tussen sessies.\n\n## Voor wie is Cold Pod geschikt?\n\nKies Cold Pod als je ijsbaden uitprobeert en een betaalbare instap ($220) wilt. Staat eenmaal vast dat je dagelijks wilt ijsbaden, dan is het segment met ingebouwde koeler (Edge, Plunge) of de tonvorm (Ice Barrel) de logische upgrade.\n\n---\n\n## Achtergrondinformatie\n\nDe biologie achter waarom kouseblootstelling werkt — en de protocollen die de hardware versterken.\n\n- [CO₂-tolerantie en de zuurstofgrens](/articles/co2-tolerance-expanding-oxygen-limit) — waarom kou- en ademprotocollen goed samengaan\n- [Anti-entropische neurale architectuur](/articles/anti-entropy-neural-architecture) — kouseblootstelling als korte dagelijkse stressprikkel\n- [Mitochondriale biogenese: het stroomnet van de cel](/articles/mitochondrial-biogenesis-cellular-power-grid) — hoe kouseblootstelling samenhangt met aanpassing van de mitochondriën\n",
+      "faq": [
+        {
+          "q": "Is de Cold Pod het geld waard?",
+          "a": "Ja, als vrijblijvende manier om met ijsbaden te beginnen. De Cold Pod is een betaalbare instap van $220, is in 10 minuten opgeblazen en vouwt op voor opslag. Hij heeft geen koeler, dus je betaalt dagelijks voor ijs, en de opblaasbare constructie is op lange termijn minder duurzaam."
+        },
+        {
+          "q": "Hoeveel kost de Cold Pod?",
+          "a": "De Cold Pod kost ongeveer $220 als eenmalige aankoop. IJs is een aparte dagelijkse kostenpost, omdat het bad geen koeler heeft en op ijs werkt; je vult het met een tuinslang. Met de meegeleverde pomp is het in 10 minuten opgeblazen."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Cold Pod?",
+          "a": "De Cold Pod heeft geen koeler, dus ijs is een dagelijkse kostenpost. De opblaasbare constructie is over meerdere jaren minder duurzaam dan vaste baden, water verversen gaat handmatig zonder ozon en de isolatie houdt de kou korter vast dan vaste geïsoleerde baden."
+        },
+        {
+          "q": "Voor wie is de Cold Pod het meest geschikt?",
+          "a": "De Cold Pod is het meest geschikt voor beginners die een opblaasbare, draagbare en vrijblijvende instap willen. Hij past in appartementen en kleine woningen en laat je de dagelijkse praktijk uitproberen voordat je kiest voor een vaste installatie."
+        }
+      ]
     }
   },
   "comparisons": {
