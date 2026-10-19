@@ -994,7 +994,7 @@
       ],
       "scoreNotes": {
         "field-strength": "Intensità PEMF configurabile, 1–30 Hz; il produttore dichiara fino a 5+ gauss di picco e circa 1,5 gauss di media in superficie. Più alta di Bemer, ma comunque a bassa intensità rispetto ai sistemi a bobina clinici.",
-        "waveform-evidence": "Usa frequenze PEMF comuni tratte dalla letteratura PEMF generale, compresa un’impostazione “Schumann” a 7,83 Hz che non dà alcun merito. Nessuno studio sul dispositivo stesso — 7,0, il punteggio che diamo ai dispositivi PEMF senza studi specifici sul dispositivo. «Registrato FDA come dispositivo medico di Classe II» indica registrazione/elenco, non clearance; la sua frase sulla «ricerca comprovata» riguarda la PEMF in generale.",
+        "waveform-evidence": "Usa frequenze PEMF comuni tratte dalla letteratura PEMF generale, compresa un’impostazione “Schumann” a 7,83 Hz che non dà alcun merito. Nessuno studio sul dispositivo stesso — quindi non può superare il tetto di ONDA per i dispositivi PEMF senza studi specifici sul dispositivo. «Registrato FDA come dispositivo medico di Classe II» indica registrazione/elenco, non clearance; la sua frase sulla «ricerca comprovata» riguarda la PEMF in generale.",
         "build": "Tappetino pieghevole in tre sezioni, garanzia limitata di 5 anni (più 3 mesi se acquistato direttamente), prova di 90 giorni. Buona reputazione dell’assistenza clienti.",
         "programmability": "Migliore programmabilità della categoria — tre ampiezze d’impulso, sei forme d’onda, 12 preimpostazioni o programmi personalizzati; PEMF, calore e luce rossa controllati in modo indipendente.",
         "form-factor": "Tappetino per tutto il corpo con PEMF + infrarosso lontano + luce rossa + ioni negativi + cristalli. Quattro misure Multi-Wave da 32×20 in a 74×28 in. Un solo tappetino sostituisce diversi dispositivi a modalità singola.",
@@ -1874,7 +1874,7 @@
         "Nessun biofeedback della variabilità della frequenza cardiaca (HRV) sul dispositivo"
       ],
       "scoreNotes": {
-        "evidence": "Nessuno studio pubblicato sul dispositivo Truvaga in sé (due studi registrati, ancora senza risultati, ottobre 2026). Gli studi su gammaCore riguardano il dispositivo su prescrizione e qui non vengono conteggiati, anche se la piattaforma condivisa gli trasferisce il profilo di sicurezza di gammaCore — 7,0, il punteggio base per un dispositivo senza studi propri. Non autorizzato dalla FDA per alcuna indicazione — venduto come dispositivo di benessere generale.",
+        "evidence": "Nessuno studio pubblicato sul dispositivo Truvaga in sé (due studi registrati, ancora senza risultati, ottobre 2026). Gli studi su gammaCore riguardano il dispositivo su prescrizione e qui non vengono conteggiati, anche se la piattaforma condivisa gli trasferisce il profilo di sicurezza di gammaCore — quindi non può superare il tetto di ONDA per un dispositivo senza studi propri. Non autorizzato dalla FDA per alcuna indicazione — venduto come dispositivo di benessere generale.",
         "mechanism": "Stesso approccio di tVNS cervicale di gammaCore: unità portatile sulla guaina carotidea, forma d’onda a burst da 5 kHz. Agisce direttamente sul tronco vagale cervicale.",
         "protocols": "Sessioni fisse da due minuti; intensità regolabile dall’utente. L’app di accompagnamento suggerisce schemi d’uso anziché programmi distinti.",
         "comfort": "Dispositivo portatile ergonomico; alcuni utenti riferiscono contrazioni della mandibola o dolore al collo ad ampiezze più alte — come con gammaCore.",
@@ -3089,8 +3089,52 @@
       "productType": "Pannello LED di taglia media rosso + NIR"
     },
     "pulse-centers-pulse-xl-pro": {
-      "verdict": "Il PEMF con la potenza più alta accessibile ai consumatori. Applicatori a bobina in stile clinico venduti a studi di medicina sportiva e chiropratica — un canale di vendita, non un'evidenza; non abbiamo trovato studi indipendenti su questo sistema. Il prezzo lo colloca nella fascia prosumer/clinica.",
-      "productType": "Sistema PEMF a bobina di livello professionale"
+      "verdict": "Picco di oltre 200.000 µT (dato del produttore), tra i PEMF più intensi accessibili ai consumatori. Applicatori a bobina in stile clinico venduti a centri sportivi e studi di chiropratica — un canale di vendita, non una prova; non abbiamo trovato studi indipendenti su questo sistema. Il prezzo lo colloca nella fascia prosumer/clinica.",
+      "summary": "Pulse Centers Pulse XL Pro è l'opposto ad alta intensità di Bemer — applicatori a bobina che erogano un picco di oltre 200.000 µT contro i 35–150 µT di Bemer. L'hardware è pensato per un uso di livello clinico e il prezzo lo rispecchia (7.000–15.000 $ e oltre). Non è un tappetino consumer per tutti i giorni — è uno strumento clinico ad alta intensità, senza studi indipendenti su questo sistema.",
+      "description": "Recensione ONDA del Pulse Centers Pulse XL Pro, sistema PEMF a bobina ad alta potenza per cliniche. Valutato su intensità, costruzione, programmi e valore.",
+      "bestFor": "Ideale per il recupero sportivo serio, contesti di riabilitazione o installazioni cliniche in cui il protocollo prevede PEMF mirato ad alta intensità — non per il benessere generale dei consumatori.",
+      "testNote": "Valutazione basata sulle evidenze — punteggi tratti dalla documentazione di prodotto di Pulse Centers e da recensioni di installazioni cliniche. Non provato sul campo da ONDA.",
+      "productType": "Sistema PEMF a bobina di livello professionale",
+      "pros": [
+        "Picco di oltre 200.000 µT (dato del produttore), tra i più intensi",
+        "Costruzione in stile clinico venduta a centri sportivi e studi di chiropratica",
+        "Il puntamento a bobina consente un trattamento localizzato efficace",
+        "Garanzia di 5 anni"
+      ],
+      "cons": [
+        "Il prezzo prosumer (7.000–15.000 $ e oltre) lo rende fuori portata per gli utenti occasionali",
+        "Solo formato a bobina — nessun tappetino per tutto il corpo in questa fascia",
+        "Richiede di posizionare attivamente gli applicatori a ogni sessione, non basta sdraiarsi e rilassarsi",
+        "Eccessivo per il benessere generale — pensato per recupero sportivo e riabilitazione",
+        "Nessuno studio indipendente su questo sistema"
+      ],
+      "scoreNotes": {
+        "field-strength": "Picco di oltre 200.000 µT tramite applicatori a bobina (dato del produttore), tra i PEMF più intensi accessibili ai consumatori.",
+        "waveform-evidence": "Usa la gamma PEMF ad alta intensità studiata nella ricerca generale sui PEMF. Non abbiamo trovato studi indipendenti su questo sistema in sé — quindi non può superare il tetto di ONDA per i dispositivi PEMF senza studi specifici sul dispositivo. Pulse PEMF afferma chiaramente nelle sue FAQ che i suoi prodotti “are wellness devices, not medical devices” e che “has not sought any evaluations or clearances from the FDA”.",
+        "build": "Unità di controllo e applicatori a bobina in stile clinico, garanzia di 5 anni. Essere venduto in ambito chiropratico, sportivo ed equestre è un canale di vendita, non una prova della qualità costruttiva, quindi non ottiene crediti extra.",
+        "programmability": "Protocolli clinici preimpostati con livelli di intensità. Il puntamento a bobina con accessori a paletta/anello offre una flessibilità efficace per il trattamento localizzato.",
+        "form-factor": "Applicatori a bobina (paletta, anello) — trattamento localizzato mirato, non su tutto il corpo in simultanea. L'utente deve posizionare gli applicatori a ogni sessione.",
+        "value": "7.000–15.000 $ e oltre a seconda della configurazione. Prezzo prosumer/clinico — eccessivo per il benessere quotidiano, equo per protocolli professionali o di recupero serio."
+      },
+      "content": "## Dove eccelle\n\nPulse Centers Pulse XL Pro è tra i PEMF più intensi accessibili ai consumatori — un picco di oltre 200.000 µT (dato del produttore) tramite applicatori a bobina, contro i 35–150 µT del tappetino Bemer. La costruzione è in stile clinico e la base di utenti è prevalentemente professionale (chiropratica, recupero sportivo, equestre). Il luogo in cui viene venduto non prova che funzioni: non abbiamo trovato studi indipendenti su questo sistema.\n\n## Quali sono gli svantaggi di Pulse Centers Pulse XL Pro?\n\nPrezzo e formato. A 7.000–15.000 $ e oltre è un prezzo prosumer/clinico, non da consumatore occasionale. Gli applicatori a bobina richiedono un posizionamento attivo a ogni sessione — non ti sdrai passivamente su un tappetino. Il modello di trattamento localizzato è pensato per la riabilitazione e il recupero sportivo; è eccessivo per il benessere quotidiano in generale.\n\n## Chi dovrebbe comprare Pulse Centers Pulse XL Pro?\n\nScegli Pulse Centers Pulse XL Pro se segui protocolli seri di recupero sportivo o riabilitazione e vuoi uno dei sistemi PEMF a bobina più intensi disponibili per i consumatori. Per un tappetino a bassa intensità con segnale proprietario, Bemer Classic Evo. Per un tappetino multimodale, Healthy Wave Multi-Wave. Per un PEMF entry-level accessibile, Resona Health VIBE.\n\n---\n\n## Letture di approfondimento\n\n- [Terapia PEMF — cosa mostrano le evidenze](/science/evidence/pemf) — cosa è dimostrato sulle persone, cosa deriva da studi cellulari e cosa significano registrazione, autorizzazione e approvazione della FDA\n",
+      "faq": [
+        {
+          "q": "Pulse Centers Pulse XL Pro vale la pena?",
+          "a": "Il Pulse XL Pro vale la pena per il recupero sportivo serio, la riabilitazione o le installazioni cliniche. È tra i PEMF più intensi accessibili ai consumatori, oltre 200.000 µT di picco secondo il dato del produttore, con costruzione in stile clinico e garanzia di 5 anni, anche se non abbiamo trovato studi indipendenti su questo sistema. Per il benessere generale è eccessivo."
+        },
+        {
+          "q": "Quanto costa Pulse Centers Pulse XL Pro?",
+          "a": "La configurazione XL Pro è a listino a 9.000 $, con un prezzo che varia in base al set di accessori. La recensione lo colloca in una fascia prosumer da 7.000 a 15.000 $ o più, fuori portata per gli utenti occasionali."
+        },
+        {
+          "q": "Quali sono gli svantaggi di Pulse Centers Pulse XL Pro?",
+          "a": "Il prezzo da 7.000 a oltre 15.000 $ è fuori portata per gli utenti occasionali. È solo a bobina, senza tappetino per tutto il corpo, richiede un posizionamento attivo a ogni sessione invece di sdraiarsi passivamente ed è eccessivo per il benessere generale."
+        },
+        {
+          "q": "Pulse Centers Pulse XL Pro vs MagnaWave: quale è meglio?",
+          "a": "Il Pulse XL Pro offre una delle intensità più alte accessibili ai consumatori (dato del produttore) e una garanzia di 5 anni. MagnaWave non vende più un Mini; il suo compatto Semi 10 parte da 8.360 $, quindi ora i due hanno prezzi vicini. Scegli Pulse Centers per installazioni cliniche, MagnaWave per un'unità portatile con valigetta, pensata soprattutto per operatori equestri e itineranti."
+        }
+      ]
     },
     "curatron-3d": {
       "verdict": "PEMF in stile clinico con protocolli documentati e sistema a doppio applicatore. Fascia media tra i tappetini Bemer e le cliniche a bobina Pulse Centers.",
@@ -3164,8 +3208,47 @@
       "productType": "Sauna IR vicino a incandescenza con gabbia di Faraday"
     },
     "sun-home-equinox": {
-      "verdict": "Una nuova arrivata valida — IR a spettro completo con cromoterapia e audio inclusi, prezzo contenuto rispetto ai leader della categoria.",
-      "productType": "Cabina sauna IR a spettro completo di fascia medio-alta"
+      "verdict": "Un nuovo arrivato valido — infrarossi a spettro completo con cromoterapia e audio inclusi, con un prezzo contenuto rispetto ai leader della categoria.",
+      "summary": "Sun Home Equinox è il marchio più recente di saune a infrarossi di fascia medio-alta che compete con Sunlighten e Clearlight includendo più funzioni. Infrarossi a spettro completo tramite emettitori separati per infrarosso vicino e lontano, una temperatura massima di 165°F (dato del produttore), illuminazione per cromoterapia, impianto audio Bluetooth e cabina in cedro. Buona realizzazione da parte di un marchio nuovo, il cui storico di affidabilità pluriennale è ancora in costruzione.",
+      "description": "Recensione di Sun Home Equinox: sauna IR a spettro completo con cromoterapia e audio, fino a 165°F (dato del produttore), meno cara di Clearlight.",
+      "bestFor": "Ideale per chi vuole infrarossi a spettro completo con emettitori separati vicino/lontano, a un prezzo di fascia medio-alta e con extra inclusi.",
+      "testNote": "Valutazione basata sulle evidenze — punteggio ricavato dalla documentazione di prodotto di Sun Home Saunas e da recensioni indipendenti del 2026. Non provata direttamente da ONDA.",
+      "productType": "Sauna a cabina a infrarossi a spettro completo di fascia medio-alta",
+      "pros": [
+        "Infrarossi a spettro completo con emettitori separati vicino e lontano",
+        "Illuminazione per cromoterapia e audio Bluetooth inclusi",
+        "Cabina in cedro con garanzia di 7 anni (produttore)",
+        "Prezzo di fascia medio-alta inferiore alla Clearlight Sanctuary 2"
+      ],
+      "cons": [
+        "Marchio più recente — dati di affidabilità pluriennale ancora in costruzione",
+        "Controllo delle lunghezze d’onda meno rigoroso di Sunlighten mPulse",
+        "Nessuno studio sottoposto a revisione paritaria sulla Equinox stessa",
+        "Le funzioni incluse potrebbero non essere il vero motivo per cui si compra una sauna"
+      ],
+      "scoreNotes": {
+        "heat-source": "Infrarossi a spettro completo con pannelli emettitori separati vicino e lontano. Più rigore sulle lunghezze d’onda rispetto alla fascia media; meno granulare di Sunlighten mPulse.",
+        "build": "Costruzione della cabina in cedro con cromoterapia e audio Bluetooth inclusi. Garanzia di 7 anni (produttore).",
+        "emf": "EMF bassi documentati; verificati da terze parti. Paragonabile a Clearlight in posizione seduta.",
+        "form-factor": "Configurazioni di cabina da 1–4 persone. 110V standard o 220V a seconda delle dimensioni.",
+        "evidence": "Non è stato trovato alcuno studio sottoposto a revisione paritaria sulla Equinox — quindi non può superare il tetto di ONDA per i prodotti senza studi propri. Marketing onesto sul fatto di essere nuova sul mercato. Sun Home presenta le sue evidenze con onestà: la sua pagina sulla ricerca dice che i suoi prodotti “have not been used in published clinical-outcome trials”.",
+        "value": "4.500–8.000 $ a seconda della configurazione. Funzioni incluse (cromoterapia, audio); il modello da 2 persone ha un prezzo di listino di 6.799 $ (6.099 $ in offerta, negozio ufficiale, 2026-10-18), inferiore alla Clearlight Sanctuary 2. Sunlighten non pubblica i prezzi online."
+      },
+      "content": "## Dove eccelle\n\nSun Home Equinox è il marchio più recente di saune a infrarossi di fascia medio-alta che include cromoterapia e audio per differenziarsi da Sunlighten / Clearlight, con un prezzo inferiore alla Clearlight Sanctuary 2. Spettro completo tramite emettitori separati vicino e lontano, costruzione in cedro, garanzia di 7 anni (produttore). Buona realizzazione da parte di un nuovo arrivato credibile.\n\n## Quali sono gli svantaggi di Sun Home Equinox?\n\nUn marchio più recente significa meno dati di affidabilità pluriennale rispetto a Sunlighten o Clearlight. Le funzioni incluse sono realizzate con competenza, ma difficilmente sono il motivo per cui la maggior parte delle persone compra una sauna.\n\n## Chi dovrebbe comprare Sun Home Equinox?\n\nScegli Sun Home Equinox se vuoi infrarossi a spettro completo con emettitori separati vicino/lontano, un prezzo di fascia medio-alta ed extra inclusi. Per il pedigree di marchio più consolidato, Sunlighten o Clearlight restano le scelte più sicure.\n\n---\n\n## Letture di approfondimento\n\nLetture sulle idee alla base dell’esposizione al calore — per lo più ipotesi, non effetti dimostrati nelle persone.\n\n- [Protocollo di longevità: reset dell’orologio biologico](/articles/longevity-protocol-biological-clock-reset) — dove si inserisce la sauna in una routine di reset\n- [Controllo dell’asse HPA e regolazione del cortisolo](/articles/hpa-axis-control-cortisol-aggression) — il lato dello shock termico nella risposta allo stress\n- [Architettura neurale anti-entropia](/articles/anti-entropy-neural-architecture) — la sauna come dose quotidiana di stress da calore\n",
+      "faq": [
+        {
+          "q": "Sun Home Equinox vale la spesa?",
+          "a": "Sun Home Equinox vale la spesa se vuoi infrarossi a spettro completo con emettitori separati vicino/lontano a un prezzo di fascia medio-alta. Ha emettitori separati vicino e lontano, cromoterapia, audio Bluetooth e una cabina in cedro con garanzia di 7 anni (produttore). È un marchio più recente, con un controllo delle lunghezze d’onda meno rigoroso di Sunlighten mPulse."
+        },
+        {
+          "q": "Quanto costa Sun Home Equinox?",
+          "a": "La configurazione da 2 persone di Sun Home Equinox ha un prezzo di listino di 6.799 $ sul negozio ufficiale (6.099 $ in offerta a ottobre 2026). Questo la colloca nella fascia medio-alta, sotto la Clearlight Sanctuary 2 (7.299 $); Sunlighten non pubblica i prezzi online. Include illuminazione per cromoterapia e audio Bluetooth."
+        },
+        {
+          "q": "Sun Home Equinox vs Sunlighten mPulse: quale è migliore?",
+          "a": "Sunlighten mPulse è la scelta più forte per un controllo rigoroso delle lunghezze d’onda. Sun Home Equinox offre infrarossi a spettro completo con extra inclusi a un prezzo di fascia medio-alta; Sunlighten non pubblica i prezzi online, quindi chiedi un preventivo per confrontare. Scegli Equinox per il rapporto qualità-prezzo, mPulse per un controllo più fine delle lunghezze d’onda."
+        }
+      ]
     },
     "higherdose-blanket-v4": {
       "verdict": "La coperta sauna IR portatile che ha reso l'IR di massa — solo IR lontano, EMF basse, prezzo accessibile.",
@@ -4470,6 +4553,97 @@
         {
           "q": "Per chi è più adatta Cold Pod?",
           "a": "Cold Pod è più adatta a chi si avvicina per la prima volta all’immersione fredda e vuole un ingresso gonfiabile, portatile e poco impegnativo. Sta in appartamenti e case piccole e ti permette di provare la pratica quotidiana prima di impegnarti in un’installazione fissa."
+        }
+      ]
+    },
+    "autosleep": {
+      "verdict": "Il tracker del sonno purista per Apple Watch — dettagliato, automatico e senza abbonamento — ma misura soltanto il sonno, non ti aiuta a ottenerlo.",
+      "summary": "AutoSleep è il tracker del sonno purista per Apple Watch. Monitora in modo automatico e dettagliato, ed è un raro acquisto una tantum senza abbonamento. Il compromesso è la concentrazione totale: misura il sonno e non fa nient'altro — nessun contenuto per rilassarsi.",
+      "description": "Recensione ONDA di AutoSleep — il tracker purista per Apple Watch, acquisto una tantum senza abbonamento. Valutato su monitoraggio, analisi e valore.",
+      "bestFor": "Ideale per chi ha un Apple Watch e vuole dati dettagliati sul sonno senza abbonamento.",
+      "testNote": "Valutazione basata sulle evidenze — da informazioni pubbliche, dati degli store di app e recensioni indipendenti del 2026. Non basata su una lunga prova pratica da parte di ONDA.",
+      "productType": "App di monitoraggio del sonno",
+      "pros": [
+        "Monitoraggio automatico e dettagliato con Apple Watch",
+        "Un acquisto una tantum — senza abbonamento",
+        "Analisi e tendenze dettagliate",
+        "Nessun pulsante — monitora e basta"
+      ],
+      "cons": [
+        "Nessun contenuto per rilassarsi",
+        "Solo iOS e Apple Watch",
+        "Un'interfaccia densa che richiede configurazione",
+        "Misura il sonno ma non fa nulla per migliorarlo"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Monitoraggio automatico e dettagliato con Apple Watch (fasi non validate in modo indipendente), con un seguito fedele tra chi possiede l'orologio.",
+        "wind-down-content": "Nulla — niente suoni, niente storie; AutoSleep non cerca di aiutarti ad addormentarti.",
+        "sleep-science": "Metriche solide e un concetto di \"banca del sonno\", senza un metodo di ricerca distintivo.",
+        "insights": "Analisi e tendenze dettagliate — prontezza, debito e regolarità — per chi vuole i dati.",
+        "app-experience": "Potente ma densa — premia la configurazione più delle app mainstream rifinite.",
+        "free-tier": "Nessun vero piano gratuito — ma è un acquisto una tantum economico, non un abbonamento.",
+        "value": "Pochi dollari, una volta sola, senza abbonamento — un valore eccezionale in una categoria piena di costi ricorrenti."
+      },
+      "content": "## Dove eccelle\n\nAutoSleep è il tracker del sonno purista per Apple Watch. Monitora in automatico — niente pulsanti, niente \"vado a dormire\" — ed è dettagliato, con un seguito fedele tra chi possiede un Apple Watch. Soprattutto, è un acquisto una tantum: pochi dollari, una volta sola, senza alcun abbonamento, cosa rara in una categoria piena di costi ricorrenti.\n\n## Quali sono gli svantaggi di AutoSleep?\n\nÈ monitoraggio e nient'altro. Non c'è alcun contenuto per rilassarsi — niente suoni, niente storie —, quindi non fa nulla per aiutarti ad addormentarti, si limita a misurare una volta che dormi. È solo per iOS e Apple Watch, l'interfaccia è densa e non c'è un vero piano gratuito.\n\n## Chi dovrebbe comprare AutoSleep?\n\nScegli AutoSleep se hai un Apple Watch, vuoi solo dati e sei stanco degli abbonamenti. Se vuoi aiuto per addormentarti, o usi Android, è l'app sbagliata.\n\n---\n\n## Letture di approfondimento\n\nLa biologia del sonno dietro ciò che misurano queste app e i protocolli che supportano.\n\n- [Reset circadiano: padroneggiare la luce](/articles/circadian-reset-mastering-light) — perché il momento dell'esposizione alla luce pesa sulla qualità del sonno più di ogni altra cosa\n- [Illuminazione circadiana e terapia del buio](/articles/circadian-lighting-dark-therapy) — il livello di protocollo che si somma al monitoraggio\n- [Ancore circadiane: mantenere stabile il ritmo](/articles/ancestral-sync-circadian-anchors) — i fattori che mantengono stabile il ritmo circadiano tra viaggi e lavoro a turni\n",
+      "faq": [
+        {
+          "q": "AutoSleep vale la pena?",
+          "a": "Sì, per chi ha un Apple Watch e vuole dati dettagliati sul sonno senza abbonamento. AutoSleep monitora in modo automatico e dettagliato con un acquisto una tantum. Non vale la pena se hai bisogno di aiuto per addormentarti, perché misura soltanto il sonno e non ha alcun contenuto per rilassarsi."
+        },
+        {
+          "q": "Quanto costa AutoSleep?",
+          "a": "AutoSleep costa circa 6 $ come acquisto una tantum, senza mai richiedere un abbonamento. Funziona solo su iOS e Apple Watch. Questo unico prezzo basso copre il monitoraggio automatico e dettagliato del sonno con Apple Watch, oltre ad analisi dettagliate e tendenze a lungo termine."
+        },
+        {
+          "q": "Quali sono gli svantaggi di AutoSleep?",
+          "a": "AutoSleep misura il sonno ma non fa nulla per migliorarlo: non c'è alcun contenuto per rilassarsi. Funziona solo su iOS e Apple Watch, e la sua interfaccia densa premia il tempo dedicato alla configurazione, il che può scoraggiare chi vuole qualcosa di semplice fin da subito."
+        },
+        {
+          "q": "Per chi è più indicato AutoSleep?",
+          "a": "AutoSleep è ideale per chi ha un Apple Watch e vuole dati sul sonno dettagliati e automatici, senza abbonamento. È adatto a utenti orientati ai dati a cui basta un tracker purista e che non hanno bisogno di paesaggi sonori, storie o altri contenuti di rilassamento."
+        }
+      ]
+    },
+    "morozko-forge": {
+      "verdict": "Un’immersione fredda di consumo estrema — Morozko dice che può formare ghiaccio in superficie. Prezzo ultra premium.",
+      "summary": "Morozko Forge è la vasca per immersione fredda pensata per chi vuole una vera formazione di ghiaccio in superficie: il refrigeratore può portare l’acqua a 33°F e formare un sottile strato di ghiaccio sopra l’acqua. Legata a Wim Hof, costruzione premium, prezzo da 10.000 $ in su. Eccessiva per la pratica generale; la scelta giusta per chi cerca specificamente un’esposizione al freddo estrema.",
+      "description": "Recensione ONDA di Morozko Forge: vasca fredda ultra premium che, secondo Morozko, può congelare la superficie dell’acqua. Legata a Wim Hof, da 10K $.",
+      "bestFor": "Ideale per chi cerca specificamente un’esposizione al freddo estrema e protocolli in stile Wim Hof.",
+      "testNote": "Valutazione basata sulle evidenze — punteggio ricavato dalla documentazione di prodotto di Morozko Forge e da recensioni indipendenti del 2026. Non provata direttamente da ONDA.",
+      "productType": "Immersione fredda ultra premium in grado di formare ghiaccio",
+      "pros": [
+        "Morozko dice che può formare ghiaccio in superficie",
+        "Legame con il metodo Wim Hof e supporto ai suoi protocolli",
+        "Costruzione premium isolata, progettata per funzionare a temperature estremamente basse",
+        "Cambi d’acqua meno frequenti grazie all’inibizione microbica dovuta al freddo"
+      ],
+      "cons": [
+        "Prezzo da 10.000 $ in su — fuori portata per la maggior parte delle persone",
+        "Eccessiva per la pratica generale di esposizione al freddo",
+        "Alcune configurazioni richiedono 220V (lavori elettrici)",
+        "Tempi di consegna lunghi e distribuzione limitata"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "Morozko dice che il refrigeratore può mantenere 33°F e formare ghiaccio in superficie.",
+        "build": "Costruzione premium isolata, componenti di grado marino. Progettata per un funzionamento a temperature estremamente basse che le vasche inferiori non possono eguagliare.",
+        "water-management": "Sanificazione all’ozono + filtrazione. Cambi d’acqua meno frequenti grazie al funzionamento a temperature estremamente basse (i microbi non proliferano a 33°F).",
+        "form-factor": "Installazione interna o esterna con ingombro notevole e requisito di 220V in alcune configurazioni.",
+        "evidence": "Il legame con Wim Hof dà credibilità di marketing; è onesta sul fatto che il dispositivo è ottimizzato per protocolli estremi.",
+        "value": "Da 10.000 $ in su a seconda della configurazione. Tra le immersioni fredde di consumo più costose — giustificabile solo per chi punta alla temperatura minima."
+      },
+      "content": "## Dove eccelle\n\nMorozko Forge è costruita per il freddo estremo — Morozko dice che può formare ghiaccio in superficie. Il refrigeratore è sovradimensionato per i protocolli tipici; il compromesso ha senso se l’obiettivo è un’esposizione al freddo estrema.\n\n## Quali sono gli svantaggi di Morozko Forge?\n\nIl prezzo. 10.000 $ e oltre sono circa 4.000 $ in più rispetto a The Plunge (5.990 $) per capacità che la maggior parte delle persone non userà mai. Eccessiva per l’esposizione al freddo quotidiana e generale.\n\n## Chi dovrebbe comprare Morozko Forge?\n\nScegli Morozko Forge se i protocolli estremi (sotto i 40°F, formazione di ghiaccio in superficie, esposizione prolungata) sono il criterio decisivo. Per la pratica quotidiana generale di esposizione al freddo, The Plunge o Coldture coprono le temperature tipiche di un’immersione fredda a circa la metà del costo.\n\n---\n\n## Letture di approfondimento\n\nLa biologia del perché l’esposizione al freddo funziona — e i protocolli che si sommano all’hardware.\n\n- [Esercizi per il nervo vago](/articles/vagus-nerve-exercises) — nell’immersione di tutto il corpo la reazione principale è lo shock simpatico da freddo; la risposta vagale (riflesso di immersione) deriva soprattutto dal freddo sul viso, e la variabilità della frequenza cardiaca (HRV) aumenta solo durante l’esposizione ([evidenze](/science/evidence/cold-exposure))\n- [Controllo dell’asse HPA e regolazione del cortisolo](/articles/hpa-axis-control-cortisol-aggression) — come l’esposizione al freddo modella la curva del cortisolo\n- [Fatica surrenale: cosa dicono le evidenze](/articles/adrenal-governor-thermal-runaway) — perché l’esaurimento legato allo stress non è \"surrenali esaurite\", e quando rivolgersi a un medico\n",
+      "faq": [
+        {
+          "q": "Morozko Forge vale la spesa?",
+          "a": "Morozko Forge vale la spesa solo se cerchi specificamente un’esposizione al freddo estrema e protocolli in stile Wim Hof. Morozko dice che il suo refrigeratore può formare ghiaccio in superficie. Per la pratica generale di esposizione al freddo è eccessiva, e il prezzo parte da 10.000 $."
+        },
+        {
+          "q": "Quanto costa Morozko Forge?",
+          "a": "Morozko Forge parte da 10.000 $, e una configurazione completa arriva a 12.000 $ o più. Alcune configurazioni richiedono anche 220V, il che significa lavori elettrici oltre al prezzo d’acquisto, e i tempi di consegna possono essere lunghi."
+        },
+        {
+          "q": "Quali sono gli svantaggi di Morozko Forge?",
+          "a": "Morozko Forge costa 10.000 $ o più, fuori portata per la maggior parte delle persone, ed è eccessiva per l’esposizione al freddo generale. Alcune configurazioni richiedono lavori elettrici a 220V, e gli acquirenti devono fare i conti con tempi di consegna lunghi e distribuzione limitata."
         }
       ]
     }
@@ -8271,6 +8445,67 @@
         }
       ],
       "content": "## In breve\n\nTre sistemi definiscono nettamente la categoria: Eight Sleep (premium + monitoraggio + abbonamento), ChiliPad (acqua senza abbonamento), BedJet (aria senza abbonamento, il più economico).\n\n## Quando Eight Sleep Pod 4 è la scelta giusta?\n\nSe vuoi un monitoraggio integrato di HRV e sonno per non aver bisogno di un wearable separato, più la programmazione del clima con Autopilot — e accetti l'abbonamento continuo.\n\n## Quando ChiliPad Dock Pro è la scelta giusta?\n\nSe indossi già un Oura o un Whoop e vuoi la stessa climatizzazione ad acqua senza pagare l'abbonamento Eight Sleep. Circa un terzo del costo di possesso triennale di Eight Sleep, con un hardware di climatizzazione paragonabile.\n\n## Quando BedJet 3 è la scelta giusta?\n\nSe vuoi l'ingresso credibile più economico nella climatizzazione attiva del sonno, vivi in un clima da mite a moderato e non vuoi gestire un serbatoio d'acqua. L'approccio a flusso d'aria basta alla maggior parte degli utenti al di fuori dei picchi estivi — a una frazione del costo totale triennale di Eight Sleep."
+    },
+    "flow-neuroscience-vs-apollo-neuro": {
+      "title": "Flow Neuroscience vs Apollo Neuro: confronto (2026)",
+      "description": "Flow Neuroscience vs Apollo Neuro: confronto ONDA. tDCS per la depressione approvata FDA e con marchio CE contro un wearable vibrotattile di benessere.",
+      "intro": "Flow Neuroscience e Apollo Neuro sono due dispositivi che sembrano simili in un elenco di funzioni — entrambi indossabili, entrambi rivolti a umore e stress — ma non sono davvero lo stesso tipo di prodotto. Flow è un dispositivo medico per la depressione maggiore — con approvazione pre-commercializzazione della FDA (PMA P230024, dicembre 2025) e marchio CE come classe IIa nell’UE — che eroga stimolazione transcranica a corrente continua (tDCS) secondo un protocollo clinico. Apollo Neuro è un wearable vibrotattile per il benessere, commercializzato per la calma, senza indicazione clinica. Categorie diverse, spesso messe a confronto.",
+      "verdict": "Non sono davvero sostituibili. Flow Neuroscience per il trattamento della depressione con tDCS all’interno di un programma strutturato. Apollo Neuro per un uso vibrotattile per tutto il giorno, commercializzato per la calma, nel benessere generale.",
+      "bestForA": "Scegli Flow Neuroscience se hai una depressione maggiore e un medico aperto a un’opzione tDCS — approvato dalla FDA (PMA P230024) e con marchio CE, con evidenze da studi randomizzati.",
+      "bestForB": "Scegli Apollo Neuro se vuoi un wearable vibrotattile passivo, commercializzato per la calma, durante la giornata — benessere generale, recupero, stress — senza indicazione clinica né l’impegno di un programma.",
+      "axes": [
+        {
+          "name": "Stato normativo",
+          "note": "Flow Neuroscience: approvazione pre-commercializzazione della FDA (PMA P230024, 8 dicembre 2025, disturbo depressivo maggiore negli adulti non resistente al trattamento) e dispositivo medico di classe IIa con marchio CE. Apollo Neuro: wearable per il benessere di consumo, senza autorizzazione come dispositivo medico. Flow è l’opzione regolamentata."
+        },
+        {
+          "name": "Meccanismo",
+          "note": "Flow: tDCS — stimolazione a corrente continua di 2 mA sulla corteccia prefrontale dorsolaterale (intervento attivo). Apollo: stimolazione vibrotattile tramite i meccanocettori della pelle (il produttore afferma che agisce sul nervo vago). Flow è più diretto."
+        },
+        {
+          "name": "Ambito dell’indicazione",
+          "note": "Flow: indicato solo per la depressione maggiore. Apollo: benessere generale — recupero, concentrazione, sonno, calma. Apollo ha un uso più ampio; Flow è più mirato per scelta progettuale."
+        },
+        {
+          "name": "Evidenze cliniche",
+          "note": "Flow: uno studio randomizzato controllato con sham, interamente da remoto, pubblicato su Nature Medicine (Woodham 2024, finanziato da Flow), sulla tDCS nella depressione maggiore. Apollo: studi randomizzati controllati dell’Università di Pittsburgh sulla variabilità della frequenza cardiaca (HRV) e sul recupero. Entrambi reali; gli studi di Flow riguardano una popolazione clinica (depressione maggiore)."
+        },
+        {
+          "name": "Frequenza d’uso quotidiana",
+          "note": "Apollo: uso continuo ogni giorno. Flow: sessioni strutturate da 30 minuti in un programma di 8 settimane. Apollo lavora in sottofondo; Flow è un intervento in primo piano."
+        },
+        {
+          "name": "Vestibilità",
+          "note": "Apollo: al polso, alla caviglia o con clip, da indossare 24/7. Flow: caschetto rigido solo per sessioni da seduti. Apollo vince sull’integrazione nella vita quotidiana."
+        },
+        {
+          "name": "Struttura del programma",
+          "note": "Flow: programma strutturato di 8 settimane di terapia comportamentale abbinato alla stimolazione. Apollo: scelta libera delle modalità. Flow offre l’impalcatura clinica."
+        },
+        {
+          "name": "Prezzo",
+          "note": "Apollo: 448 $, con 1 anno di abbonamento SmartVibes AI incluso. Flow: 399 £ (~499 $) + abbonamento mensile all’app di terapia. Apollo costa meno e non richiede un abbonamento continuativo."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Meglio Flow Neuroscience o Apollo Neuro?",
+          "a": "Risolvono problemi diversi. Flow se hai una depressione maggiore e un medico aperto alla tDCS come opzione da usare a casa — Flow è un dispositivo tDCS approvato dalla FDA e con marchio CE, con un programma strutturato di terapia comportamentale. Apollo se vuoi un wearable vibrotattile commercializzato per la calma durante la giornata, senza indicazione clinica."
+        },
+        {
+          "q": "Flow Neuroscience è approvato dalla FDA?",
+          "a": "Sì, per un’indicazione. La FDA ha concesso l’approvazione pre-commercializzazione al Flow FL-100 (PMA P230024, 8 dicembre 2025) per il disturbo depressivo maggiore da moderato a grave negli adulti non resistenti al trattamento. Flow ha anche il marchio CE in Europa come dispositivo medico di classe IIa ed è prescritto in parte dell’NHS nel Regno Unito. Apollo Neuro è venduto come dispositivo per il benessere di consumo, senza autorizzazione FDA."
+        },
+        {
+          "q": "Posso curare da solo la mia depressione con Apollo Neuro?",
+          "a": "Apollo Neuro non è indicato per alcuna condizione clinica. Per una depressione diagnosticata, Flow Neuroscience è l’opzione regolamentata; Apollo è solo per il benessere. I due non vanno confusi."
+        },
+        {
+          "q": "Conviene usarli entrambi?",
+          "a": "In teoria i meccanismi (tDCS attiva vs vibrotattile passivo) non si sovrappongono. In pratica, se hai una depressione clinica, Flow è lo strumento giusto sotto supervisione medica; Apollo serve per il benessere generale in parallelo. La combinazione è insolita."
+        }
+      ],
+      "content": "## In breve\n\nFlow Neuroscience e Apollo Neuro sembrano vicini ma non sono davvero sostituibili. Flow è un dispositivo clinico approvato dalla FDA e con marchio CE per la depressione maggiore diagnosticata; Apollo è un wearable per il benessere di consumo commercializzato per la calma. La scelta dipende dal fatto che tu abbia una condizione clinica o un obiettivo di benessere.\n\n## Quando Flow Neuroscience è la scelta giusta?\n\nSe hai una depressione maggiore e un medico disposto a valutare la tDCS come opzione da usare a casa, Flow ha la forma giusta. Il valore sta nell’approvazione della FDA e nel marchio CE, nello studio randomizzato pubblicato su Nature Medicine (Woodham 2024) e nel programma strutturato di 8 settimane di terapia comportamentale. Per il benessere generale è lo strumento sbagliato: l’indicazione è volutamente ristretta.\n\n## Quando Apollo Neuro è la scelta giusta?\n\nSe vuoi un wearable vibrotattile passivo, commercializzato per la calma, durante la giornata — per recupero, stress, sonno, concentrazione — senza indicazione clinica né l’impegno di un programma strutturato, Apollo ha la forma giusta. È vibrotattile, commercializzato per la calma, supportato da ricerche dell’Università di Pittsburgh guidate dai fondatori; il suo punto di forza è poterlo indossare ogni giorno."
     }
   },
   "categoryHubs": {

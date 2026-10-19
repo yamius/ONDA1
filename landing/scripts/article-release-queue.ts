@@ -604,6 +604,11 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'edge-tub' },
   { collection: 'reviews', slug: 'eight-sleep-pod-4' },
   { collection: 'reviews', slug: 'samsung-galaxy-ring', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'reviews', slug: 'autosleep', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
+  { collection: 'reviews', slug: 'pulse-centers-pulse-xl-pro' },
+  { collection: 'h2h', slug: 'flow-neuroscience-vs-apollo-neuro' },
+  { collection: 'reviews', slug: 'morozko-forge' },
+  { collection: 'reviews', slug: 'sun-home-equinox' },
   // WAVE_D_NEXT
   ],
 ]

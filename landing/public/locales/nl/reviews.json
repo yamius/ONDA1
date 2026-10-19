@@ -994,7 +994,7 @@
       ],
       "scoreNotes": {
         "field-strength": "Instelbare PEMF-intensiteit, 1–30 Hz; de fabrikant noemt tot 5+ gauss piek en ongeveer 1,5 gauss gemiddeld aan het oppervlak. Hoger dan Bemer, maar nog altijd laag vergeleken met klinische spoelsystemen.",
-        "waveform-evidence": "Gebruikt gangbare PEMF-frequenties uit de algemene PEMF-literatuur, waaronder een 7,83 Hz „Schumann”-instelling die geen extra punten oplevert. Geen studies naar het apparaat zelf — 7,0, de score die we PEMF-apparaten zonder apparaatspecifieke studies geven. ‘FDA-geregistreerd als medisch hulpmiddel van klasse II’ betekent registratie/vermelding, geen clearance; de vermelding ‘bewezen onderzoek’ gaat over PEMF in het algemeen.",
+        "waveform-evidence": "Gebruikt gangbare PEMF-frequenties uit de algemene PEMF-literatuur, waaronder een 7,83 Hz „Schumann”-instelling die geen extra punten oplevert. Geen studies naar het apparaat zelf — dus kan het niet hoger scoren dan het ONDA-plafond voor PEMF-apparaten zonder apparaatspecifieke studies. ‘FDA-geregistreerd als medisch hulpmiddel van klasse II’ betekent registratie/vermelding, geen clearance; de vermelding ‘bewezen onderzoek’ gaat over PEMF in het algemeen.",
         "build": "Opvouwbare mat in drie delen, 5 jaar beperkte garantie (plus 3 maanden bij rechtstreekse aankoop), 90 dagen proefperiode. Klantenservice met een positieve reputatie.",
         "programmability": "Beste programmeerbaarheid in de categorie — drie pulsbreedtes, zes golfvormen, 12 voorinstellingen of eigen programma's; PEMF, warmte en rood licht los van elkaar te bedienen.",
         "form-factor": "Mat voor het hele lichaam met PEMF + verre infrarood + rood licht + negatieve ionen + kristallen. Vier Multi-Wave-formaten van 32×20 in tot 74×28 in. Eén mat vervangt meerdere apparaten met één modaliteit.",
@@ -1874,7 +1874,7 @@
         "Geen biofeedback van hartslagvariabiliteit (HRV) op het apparaat"
       ],
       "scoreNotes": {
-        "evidence": "Geen gepubliceerde studies naar het Truvaga-apparaat zelf (twee geregistreerde studies, nog zonder resultaten, oktober 2026). De gammaCore-studies gaan over het apparaat op recept en tellen hier niet mee, al geeft het gedeelde platform het wel het veiligheidsprofiel van gammaCore — 7,0, de basisscore voor een apparaat zonder eigen studies. Voor geen enkele indicatie FDA-goedgekeurd — verkocht als algemeen welzijnsapparaat.",
+        "evidence": "Geen gepubliceerde studies naar het Truvaga-apparaat zelf (twee geregistreerde studies, nog zonder resultaten, oktober 2026). De gammaCore-studies gaan over het apparaat op recept en tellen hier niet mee, al geeft het gedeelde platform het wel het veiligheidsprofiel van gammaCore — dus kan het niet hoger scoren dan het ONDA-plafond voor een apparaat zonder eigen studies. Voor geen enkele indicatie FDA-goedgekeurd — verkocht als algemeen welzijnsapparaat.",
         "mechanism": "Dezelfde cervicale tVNS-aanpak als gammaCore: handapparaat boven de halsvaatschede, 5 kHz-burstgolfvorm. Richt zich direct op de cervicale vagusstam.",
         "protocols": "Vaste sessies van twee minuten; intensiteit instelbaar door de gebruiker. De bijbehorende app stelt gebruikspatronen voor in plaats van aparte programma's.",
         "comfort": "Ergonomisch handapparaat; sommige gebruikers melden trekkingen in de kaak of een gevoelige nek bij hogere amplitudes — net als bij gammaCore.",
@@ -3089,8 +3089,52 @@
       "productType": "Middelgroot LED-therapiepaneel rood + NIR"
     },
     "pulse-centers-pulse-xl-pro": {
-      "verdict": "Hoogste output onder de voor consumenten bereikbare PEMF. Spoelapplicatoren in klinische stijl, verkocht aan sport- en chiropractiepraktijken — een verkoopkanaal, geen bewijs; we vonden geen onafhankelijke studies met dit systeem. De prijs plaatst hem in het prosumer-/kliniekssegment.",
-      "productType": "Professioneel PEMF-spoelsysteem"
+      "verdict": "Meer dan 200.000 µT piek (opgave fabrikant), een van de intensiefste PEMF-systemen die voor consumenten verkrijgbaar zijn. Spoelapplicatoren in klinische stijl, verkocht aan sport- en chiropractiepraktijken — een verkoopkanaal, geen bewijs; we vonden geen onafhankelijke studies naar dit systeem. De prijs plaatst het in het prosumer-/klinieksegment.",
+      "summary": "Pulse Centers Pulse XL Pro is het hoogintensieve tegenovergestelde van Bemer — spoelapplicatoren met meer dan 200.000 µT piekintensiteit tegenover 35–150 µT bij Bemer. De hardware is gebouwd voor klinisch gebruik en de prijs weerspiegelt dat ($7.000–$15.000+). Geen consumentenmat voor dagelijks gebruik — een hoogintensief kliniekinstrument, zonder onafhankelijke studies naar dit systeem.",
+      "description": "ONDA-review van de Pulse Centers Pulse XL Pro, een krachtig PEMF-spoelsysteem voor klinieken. Beoordeeld op veldsterkte, bouw en prijs.",
+      "bestFor": "Het meest geschikt voor serieus sportherstel, revalidatie of kliniekinstallaties waar hoogintensieve, gerichte PEMF het protocol is — niet voor algemeen wellnessgebruik door consumenten.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van Pulse Centers en ervaringen uit kliniekinstallaties. Niet in de praktijk getest door ONDA.",
+      "productType": "Professioneel PEMF-spoelsysteem",
+      "pros": [
+        "Meer dan 200.000 µT piek (opgave fabrikant), een van de intensiefste",
+        "Bouw in klinische stijl, verkocht aan sport- en chiropractiepraktijken",
+        "Gerichte spoelen maken effectieve plaatselijke behandeling mogelijk",
+        "5 jaar garantie"
+      ],
+      "cons": [
+        "Prosumerprijzen ($7.000–$15.000+) maken het onbereikbaar voor gewone gebruikers",
+        "Alleen spoelen — geen mat voor het hele lichaam in deze klasse",
+        "Vraagt actieve positionering per sessie, niet passief liggen en ontspannen",
+        "Overkill voor algemeen welzijn — gebouwd voor sportherstel en revalidatie",
+        "Geen onafhankelijke studies naar dit systeem"
+      ],
+      "scoreNotes": {
+        "field-strength": "Meer dan 200.000 µT piek via spoelapplicatoren (opgave fabrikant), een van de intensiefste PEMF-systemen die voor consumenten verkrijgbaar zijn.",
+        "waveform-evidence": "Gebruikt het hoogintensieve PEMF-bereik dat in algemeen PEMF-onderzoek is bestudeerd. We vonden geen onafhankelijke studies naar dit systeem zelf — dus kan het niet hoger scoren dan het ONDA-plafond voor PEMF-apparaten zonder apparaatspecifieke studies. Pulse PEMF zegt in zijn FAQ duidelijk dat zijn producten “are wellness devices, not medical devices” en dat het bedrijf “has not sought any evaluations or clearances from the FDA”.",
+        "build": "Bedieningsunit en spoelapplicatoren in klinische stijl, 5 jaar garantie. De verkoop aan chiropractie-, sport- en paardenpraktijken is een verkoopkanaal, geen bewijs van bouwkwaliteit, en levert dus geen extra punten op.",
+        "programmability": "Vooraf ingestelde klinische protocollen met intensiteitsstappen. Gerichte toepassing via peddel-/lusaccessoires biedt flexibele plaatselijke behandeling.",
+        "form-factor": "Spoelapplicatoren (peddel, lus) — gerichte plaatselijke behandeling, niet het hele lichaam tegelijk. De gebruiker moet de applicatoren per sessie positioneren.",
+        "value": "$7.000–$15.000+ afhankelijk van de configuratie. Prosumer-/kliniekprijzen — overkill voor dagelijks welzijn, redelijk voor professionele of serieuze herstelprotocollen."
+      },
+      "content": "## Waar hij uitblinkt\n\nPulse Centers Pulse XL Pro is een van de intensiefste PEMF-systemen die voor consumenten verkrijgbaar zijn — meer dan 200.000 µT piek (opgave fabrikant) via spoelapplicatoren, tegenover 35–150 µT bij de mat van Bemer. De bouw is van klinische stijl en de gebruikers zijn vooral professionals (chiropractie, sportherstel, paarden). Waar het verkocht wordt, bewijst niet dat het werkt: we vonden geen onafhankelijke studies naar dit systeem.\n\n## Wat zijn de nadelen van Pulse Centers Pulse XL Pro?\n\nPrijs en formaat. Met $7.000–$15.000+ zijn dit prosumer-/kliniekprijzen, niet voor de gewone consument. Spoelapplicatoren moet je per sessie actief positioneren — je ligt niet passief op een mat. Het model van gerichte plaatselijke behandeling is bedoeld voor revalidatie en sportherstel; voor algemeen dagelijks welzijn is het overkill.\n\n## Voor wie is Pulse Centers Pulse XL Pro geschikt?\n\nKies Pulse Centers Pulse XL Pro als je serieuze sportherstel- of revalidatieprotocollen volgt en een van de intensiefste spoelgebaseerde PEMF-systemen voor consumenten wilt. Voor een laagintensieve mat met een eigen signaal: Bemer Classic Evo. Voor een mat met meerdere modaliteiten: Healthy Wave Multi-Wave. Voor toegankelijke instap-PEMF: Resona Health VIBE.\n\n---\n\n## Achtergrondinformatie\n\n- [PEMF-therapie — wat het bewijs laat zien](/science/evidence/pemf) — wat bij mensen is aangetoond, wat uit celstudies komt en wat FDA-registratie, -clearance en -goedkeuring betekenen\n",
+      "faq": [
+        {
+          "q": "Is de Pulse Centers Pulse XL Pro het waard?",
+          "a": "De Pulse XL Pro is het waard voor serieus sportherstel, revalidatie of kliniekinstallaties. Hij is een van de intensiefste PEMF-systemen die voor consumenten verkrijgbaar zijn, meer dan 200.000 µT piek volgens de fabrikant, met een bouw in klinische stijl en 5 jaar garantie, al vonden we geen onafhankelijke studies naar dit systeem. Voor algemeen welzijn is hij overkill."
+        },
+        {
+          "q": "Hoeveel kost de Pulse Centers Pulse XL Pro?",
+          "a": "De XL Pro-configuratie staat vermeld voor $9.000, met prijzen die variëren per accessoireset. De review plaatst hem in een prosumerbereik van $7.000 tot $15.000 of meer, onbereikbaar voor gewone gebruikers."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Pulse Centers Pulse XL Pro?",
+          "a": "De prijs van $7.000 tot meer dan $15.000 is onbereikbaar voor gewone gebruikers. Hij werkt alleen met spoelen zonder mat voor het hele lichaam, vraagt elke sessie actieve positionering in plaats van passief liggen en is overkill voor algemeen welzijn."
+        },
+        {
+          "q": "Pulse Centers Pulse XL Pro vs MagnaWave: welke is beter?",
+          "a": "De Pulse XL Pro biedt een van de hoogste intensiteiten die voor consumenten verkrijgbaar zijn (opgave fabrikant) en 5 jaar garantie. MagnaWave verkoopt geen Mini meer; zijn compacte Semi 10 begint bij $8.360, dus de twee liggen qua prijs nu dicht bij elkaar. Kies Pulse Centers voor kliniekinstallaties, MagnaWave voor een draagbare uitvoering met draagkoffer, vooral bedoeld voor paarden- en mobiele therapeuten."
+        }
+      ]
     },
     "curatron-3d": {
       "verdict": "PEMF in klinische stijl met gedocumenteerde protocollen en een systeem met dubbele applicator. Middensegment tussen Bemer-matten en de spoelklinieken van Pulse Centers.",
@@ -3164,8 +3208,47 @@
       "productType": "Nabij-IR-sauna met gloeilampen en kooi van Faraday"
     },
     "sun-home-equinox": {
-      "verdict": "Een capabele nieuwkomer — full-spectrum-IR met ingebouwde chromotherapie en geluid, scherp geprijsd ten opzichte van de marktleiders.",
-      "productType": "Full-spectrum-IR-cabinesauna in het hogere middensegment"
+      "verdict": "Een capabele nieuwkomer — full-spectrum IR met chromotherapie en geluid inbegrepen, scherp geprijsd ten opzichte van de leiders in de categorie.",
+      "summary": "Sun Home Equinox is het nieuwere IR-saunamerk in het hogere middensegment dat concurreert met Sunlighten en Clearlight door meer functies te bundelen. Full-spectrum IR via aparte near- en far-stralers, een maximumtemperatuur van 165°F (opgave fabrikant), chromotherapieverlichting, Bluetooth-geluidssysteem, cabine van cederhout. Degelijke uitvoering van een nieuwer merk; een staat van dienst qua betrouwbaarheid over meerdere jaren wordt nog opgebouwd.",
+      "description": "Sun Home Equinox review: full-spectrum infraroodsauna met chromotherapie en geluid, tot 165°F (opgave fabrikant) en goedkoper dan Clearlight.",
+      "bestFor": "Het meest geschikt voor wie full-spectrum IR met aparte near/far-stralers wil tegen een prijs in het hogere middensegment, met extra's inbegrepen.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van Sun Home Saunas en onafhankelijke reviews uit 2026. Niet in de praktijk getest door ONDA.",
+      "productType": "Full-spectrum IR-cabinesauna in het hogere middensegment",
+      "pros": [
+        "Full-spectrum IR met aparte near- en far-stralers",
+        "Chromotherapieverlichting en Bluetooth-audio inbegrepen",
+        "Cabine van cederhout met 7 jaar garantie (fabrikant)",
+        "Prijs in het hogere middensegment, onder de Clearlight Sanctuary 2"
+      ],
+      "cons": [
+        "Nieuwer merk — betrouwbaarheidsdata over meerdere jaren worden nog opgebouwd",
+        "Minder strikte golflengtecontrole dan Sunlighten mPulse",
+        "Geen peer-reviewed studie naar de Equinox zelf",
+        "De extra's zijn mogelijk niet de reden waarom mensen een sauna kopen"
+      ],
+      "scoreNotes": {
+        "heat-source": "Full-spectrum IR met aparte near- en far-stralerpanelen. Strikter qua golflengte dan het middensegment; minder verfijnd dan Sunlighten mPulse.",
+        "build": "Cabine van cederhout met chromotherapie en Bluetooth-audio inbegrepen. 7 jaar garantie (fabrikant).",
+        "emf": "Gedocumenteerd lage EMF; door derden geverifieerd. Vergelijkbaar met Clearlight in zittende positie.",
+        "form-factor": "Cabines voor 1–4 personen. Standaard 110 V of 220 V afhankelijk van de grootte.",
+        "evidence": "Geen peer-reviewed studie naar de Equinox gevonden — dus kan het niet hoger scoren dan het ONDA-plafond voor producten zonder eigen studies. Eerlijke marketing over het feit dat het merk nieuw is op de markt. Sun Home presenteert zijn bewijs eerlijk: op de onderzoekspagina staat dat zijn producten “have not been used in published clinical-outcome trials”.",
+        "value": "$4.500–$8.000 afhankelijk van de configuratie. Extra's inbegrepen (chromotherapie, audio); het 2-persoonsmodel staat voor $6.799 ($6.099 in de aanbieding, officiële winkel, 18-10-2026), onder de Clearlight Sanctuary 2. Sunlighten publiceert geen prijzen online."
+      },
+      "content": "## Waar hij uitblinkt\n\nSun Home Equinox is het nieuwere IR-saunamerk in het hogere middensegment dat chromotherapie en audio bundelt om zich te onderscheiden van Sunlighten / Clearlight, geprijsd onder de Clearlight Sanctuary 2. Full-spectrum via aparte near- en far-stralers, cederhouten bouw, 7 jaar garantie (fabrikant). Degelijke uitvoering van een geloofwaardige nieuwkomer.\n\n## Wat zijn de nadelen van Sun Home Equinox?\n\nAls nieuwer merk zijn er minder betrouwbaarheidsdata over meerdere jaren dan bij Sunlighten of Clearlight. De extra's zijn goed uitgevoerd, maar zijn voor de meeste gebruikers waarschijnlijk niet de reden om een sauna te kopen.\n\n## Voor wie is Sun Home Equinox geschikt?\n\nKies Sun Home Equinox als je full-spectrum IR met aparte near/far-stralers wilt, een prijs in het hogere middensegment en extra's. Voor de langste merkgeschiedenis blijven Sunlighten of Clearlight de veiligere keuze.\n\n---\n\n## Achtergrondinformatie\n\nAchtergrond bij de ideeën achter blootstelling aan hitte — vooral hypothesen, geen bij mensen aangetoonde effecten.\n\n- [Longevity-protocol: reset van de biologische klok](/articles/longevity-protocol-biological-clock-reset) — waar de sauna past in een resetroutine\n- [Controle van de HPA-as en cortisolregulatie](/articles/hpa-axis-control-cortisol-aggression) — de hitteschokkant van de stressreactie\n- [Anti-entropie-architectuur van het zenuwstelsel](/articles/anti-entropy-neural-architecture) — de sauna als dagelijkse dosis hittestress\n",
+      "faq": [
+        {
+          "q": "Is de Sun Home Equinox het waard?",
+          "a": "De Sun Home Equinox is het waard als je full-spectrum IR met aparte near/far-stralers wilt tegen een prijs in het hogere middensegment. Hij heeft aparte near- en far-stralers, chromotherapie, Bluetooth-audio en een cabine van cederhout met 7 jaar garantie (fabrikant). Het is een nieuwer merk met minder strikte golflengtecontrole dan Sunlighten mPulse."
+        },
+        {
+          "q": "Hoeveel kost de Sun Home Equinox?",
+          "a": "De 2-persoonsconfiguratie van de Sun Home Equinox staat voor $6.799 in de officiële winkel ($6.099 in de aanbieding, oktober 2026). Daarmee zit hij in het hogere middensegment, onder de Clearlight Sanctuary 2 ($7.299); Sunlighten publiceert geen prijzen online. Chromotherapieverlichting en Bluetooth-audio zijn inbegrepen."
+        },
+        {
+          "q": "Sun Home Equinox vs Sunlighten mPulse: welke is beter?",
+          "a": "Sunlighten mPulse is de sterkere keuze voor strikte golflengtecontrole. Sun Home Equinox biedt full-spectrum IR met extra's tegen prijzen in het hogere middensegment; Sunlighten publiceert geen prijzen online, dus vraag een offerte aan om te vergelijken. Kies de Equinox voor prijs-kwaliteit, de mPulse voor fijnere golflengtecontrole."
+        }
+      ]
     },
     "higherdose-blanket-v4": {
       "verdict": "De draagbare IR-saunadeken die consumenten-IR mainstream maakte — alleen ver-IR, lage EMF, toegankelijke prijs.",
@@ -4470,6 +4553,97 @@
         {
           "q": "Voor wie is de Cold Pod het meest geschikt?",
           "a": "De Cold Pod is het meest geschikt voor beginners die een opblaasbare, draagbare en vrijblijvende instap willen. Hij past in appartementen en kleine woningen en laat je de dagelijkse praktijk uitproberen voordat je kiest voor een vaste installatie."
+        }
+      ]
+    },
+    "autosleep": {
+      "verdict": "De puristische slaaptracker voor de Apple Watch — gedetailleerd, automatisch en zonder abonnement — maar hij meet alleen je slaap, hij helpt je niet in slaap te komen.",
+      "summary": "AutoSleep is de puristische slaaptracker voor de Apple Watch. Hij trackt automatisch en gedetailleerd, en is een zeldzame eenmalige aankoop zonder abonnement. De keerzijde is de totale focus: hij meet slaap en doet verder niets — geen enkele content om tot rust te komen.",
+      "description": "ONDA-review van AutoSleep — de puristische slaaptracker voor de Apple Watch, eenmalige aankoop zonder abonnement. Beoordeeld op tracking en inzichten.",
+      "bestFor": "Het meest geschikt voor Apple Watch-bezitters die gedetailleerde slaapdata willen zonder abonnement.",
+      "testNote": "Op bewijs gebaseerde beoordeling — op basis van openbare informatie, app-storegegevens en onafhankelijke reviews uit 2026. Niet gebaseerd op een lange praktijktest door ONDA.",
+      "productType": "Slaaptracking-app",
+      "pros": [
+        "Gedetailleerde, automatische tracking met de Apple Watch",
+        "Een eenmalige aankoop — geen abonnement",
+        "Gedetailleerde analyses en trends",
+        "Geen knoppen — hij trackt gewoon"
+      ],
+      "cons": [
+        "Helemaal geen content om tot rust te komen",
+        "Alleen iOS en Apple Watch",
+        "Een volle interface die pas loont na het instellen",
+        "Meet slaap maar doet niets om die te verbeteren"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Automatische, gedetailleerde tracking met de Apple Watch (slaapfasen niet onafhankelijk gevalideerd), met een trouwe aanhang onder horlogebezitters.",
+        "wind-down-content": "Helemaal niets — geen geluiden, geen verhalen; AutoSleep probeert je niet te helpen in slaap te vallen.",
+        "sleep-science": "Degelijke metingen en een „slaapbank”-concept, zonder een onderscheidende onderzoeksmethode.",
+        "insights": "Gedetailleerde analyses en trends — paraatheid, slaapschuld en regelmaat — voor wie de data wil.",
+        "app-experience": "Krachtig maar vol — hij beloont instellen meer dan de gepolijste mainstream-apps.",
+        "free-tier": "Geen echte gratis versie — maar een goedkope eenmalige aankoop, geen abonnement.",
+        "value": "Een paar dollar, eenmalig, zonder abonnement — uitzonderlijke prijs-kwaliteit in een categorie vol terugkerende kosten."
+      },
+      "content": "## Waar hij uitblinkt\n\nAutoSleep is de slaaptracker voor puristen met een Apple Watch. Hij trackt automatisch — geen knoppen, geen „ik ga naar bed” — en gedetailleerd, met een trouwe aanhang onder Apple Watch-bezitters. Het beste: het is een eenmalige aankoop — een paar dollar, één keer, helemaal zonder abonnement, wat zeldzaam is in een categorie vol terugkerende kosten.\n\n## Wat zijn de nadelen van AutoSleep?\n\nHet is tracking en verder niets. Er is helemaal geen content om tot rust te komen — geen geluiden, geen verhalen — dus het helpt je niet in slaap te vallen, het meet alleen zodra je slaapt. Het werkt alleen op iOS en de Apple Watch, de interface is vol en er is geen echte gratis versie.\n\n## Voor wie is AutoSleep geschikt?\n\nKies AutoSleep als je een Apple Watch hebt, alleen data wilt en abonnementen zat bent. Wil je hulp bij het inslapen, of gebruik je Android, dan is het de verkeerde app.\n\n---\n\n## Achtergrondinformatie\n\nDe slaapbiologie achter wat deze apps meten en de protocollen die ze ondersteunen.\n\n- [Circadiane reset: licht beheersen](/articles/circadian-reset-mastering-light) — waarom de timing van licht de slaapkwaliteit meer bepaalt dan wat dan ook\n- [Circadiane verlichting en duisternistherapie](/articles/circadian-lighting-dark-therapy) — de protocollaag die samen met tracking versterkt\n- [Circadiane ankers: een stabiele timing](/articles/ancestral-sync-circadian-anchors) — de factoren die je circadiane timing stabiel houden bij reizen en ploegendienst\n",
+      "faq": [
+        {
+          "q": "Is AutoSleep het waard?",
+          "a": "Ja, voor Apple Watch-bezitters die gedetailleerde slaapdata willen zonder abonnement. AutoSleep trackt automatisch en gedetailleerd voor een eenmalige aankoop. Het is het niet waard als je hulp nodig hebt bij het inslapen, want het meet alleen slaap en heeft helemaal geen content om tot rust te komen."
+        },
+        {
+          "q": "Hoeveel kost AutoSleep?",
+          "a": "AutoSleep kost ongeveer $6 als eenmalige aankoop, zonder dat er ooit een abonnement nodig is. Het werkt alleen op iOS en de Apple Watch. Die ene lage prijs dekt automatische, gedetailleerde slaaptracking met de Apple Watch plus gedetailleerde analyses en langetermijntrends."
+        },
+        {
+          "q": "Wat zijn de nadelen van AutoSleep?",
+          "a": "AutoSleep meet slaap maar doet niets om die te verbeteren: er is helemaal geen content om tot rust te komen. Het werkt alleen op iOS en de Apple Watch, en de volle interface loont pas als je tijd in het instellen steekt, wat gebruikers kan afschrikken die meteen iets eenvoudigs willen."
+        },
+        {
+          "q": "Voor wie is AutoSleep het meest geschikt?",
+          "a": "AutoSleep is het meest geschikt voor Apple Watch-bezitters die gedetailleerde, automatische slaapdata willen zonder abonnement. Het past bij datagerichte gebruikers die tevreden zijn met een puristische tracker en geen soundscapes, verhalen of andere ontspanningscontent nodig hebben."
+        }
+      ]
+    },
+    "morozko-forge": {
+      "verdict": "Een extreem koudwaterbad voor consumenten — volgens Morozko kan er ijs aan het oppervlak ontstaan. Ultrapremium prijzen.",
+      "summary": "Morozko Forge is het koudwaterbad voor wie letterlijk ijs aan het oppervlak wil — de koeler kan het water tot 33°F brengen en een dun ijslaagje aan het oppervlak vormen. Verbonden aan Wim Hof, premium bouw, prijzen vanaf $10.000. Overkill voor algemene praktijk; de juiste keuze voor wie specifiek extreme koudeblootstelling zoekt.",
+      "description": "ONDA-review van de Morozko Forge — ultrapremium koudwaterbad dat volgens Morozko het wateroppervlak kan bevriezen. Verbonden aan Wim Hof, vanaf $10.000.",
+      "bestFor": "Het meest geschikt voor wie specifiek extreme koudeblootstelling en protocollen in Wim Hof-stijl zoekt.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van de Morozko Forge en onafhankelijke reviews uit 2026. Niet in de praktijk getest door ONDA.",
+      "productType": "Ultrapremium koudwaterbad met bevriesfunctie",
+      "pros": [
+        "Volgens Morozko kan er ijs aan het oppervlak ontstaan",
+        "Verbonden aan de Wim Hof-methode en ondersteuning van de protocollen",
+        "Geïsoleerde premium bouw, ontworpen voor gebruik bij extreme kou",
+        "Minder vaak water verversen doordat de kou microbengroei remt"
+      ],
+      "cons": [
+        "Prijzen vanaf $10.000 — onbereikbaar voor de meeste gebruikers",
+        "Overkill voor algemene koudeblootstelling",
+        "Sommige configuraties vereisen 220 V (elektrisch werk)",
+        "Lange levertijden en beperkte distributie"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "Volgens Morozko kan de koeler 33°F aanhouden en ijs aan het oppervlak vormen.",
+        "build": "Geïsoleerde premium bouw, hardware van maritieme kwaliteit. Ontworpen voor gebruik bij extreme kou die eenvoudigere baden niet halen.",
+        "water-management": "Ozonreiniging + filtratie. Minder vaak water verversen door het gebruik bij extreme kou (microben gedijen niet bij 33°F).",
+        "form-factor": "Installatie binnen of buiten met een flinke footprint en in sommige configuraties een 220V-aansluiting.",
+        "evidence": "De band met Wim Hof geeft de marketing geloofwaardigheid; eerlijk over het feit dat het apparaat is geoptimaliseerd voor extreme protocollen.",
+        "value": "Vanaf $10.000 afhankelijk van de configuratie. Een van de duurste koudwaterbaden voor consumenten — alleen te rechtvaardigen voor wie de laagste temperatuur zoekt."
+      },
+      "content": "## Waar hij uitblinkt\n\nMorozko Forge is gebouwd voor extreme kou — volgens Morozko kan er ijs aan het oppervlak ontstaan. De koeler is overgedimensioneerd voor gangbare protocollen; die afweging is logisch als extreme koudeblootstelling het doel is.\n\n## Wat zijn de nadelen van de Morozko Forge?\n\nDe prijs. Vanaf $10.000 is dat ongeveer $4.000 meer dan The Plunge ($5.990) voor capaciteit die de meeste gebruikers nooit benutten. Overkill voor algemene dagelijkse koudeblootstelling.\n\n## Voor wie is de Morozko Forge geschikt?\n\nKies de Morozko Forge als extreme protocollen (onder 40°F, ijsvorming aan het oppervlak, langdurige blootstelling) de doorslag geven. Voor algemene dagelijkse koudeblootstelling dekken The Plunge of Coldture de gangbare temperaturen van een koudwaterbad voor ongeveer de helft van de prijs.\n\n---\n\n## Achtergrondinformatie\n\nDe biologie achter waarom koudeblootstelling werkt — en de protocollen die samen met de hardware versterken.\n\n- [Oefeningen voor de nervus vagus](/articles/vagus-nerve-exercises) — bij onderdompeling van het hele lichaam is de hoofdreactie de sympathische koudeschok; de vagale reactie (duikreflex) komt vooral door kou op het gezicht, en de hartslagvariabiliteit (HRV) stijgt alleen tijdens de blootstelling ([bewijs](/science/evidence/cold-exposure))\n- [Controle van de HPA-as en cortisolregulatie](/articles/hpa-axis-control-cortisol-aggression) — hoe koudeblootstelling de cortisolcurve vormt\n- [Bijnieruitputting: wat het bewijs zegt](/articles/adrenal-governor-thermal-runaway) — waarom stressgerelateerde uitputting geen „opgebrande bijnieren” is, en wanneer je naar een arts moet\n",
+      "faq": [
+        {
+          "q": "Is de Morozko Forge het waard?",
+          "a": "De Morozko Forge is het alleen waard als je specifiek extreme koudeblootstelling en protocollen in Wim Hof-stijl zoekt. Volgens Morozko kan de koeler ijs aan het oppervlak vormen. Voor algemene koudeblootstelling is hij overkill, en de prijzen beginnen bij $10.000."
+        },
+        {
+          "q": "Hoeveel kost de Morozko Forge?",
+          "a": "De Morozko Forge begint bij $10.000, en een volledige configuratie kost $12.000 of meer. Sommige configuraties vereisen ook 220 V, wat elektrisch werk bovenop de aankoopprijs betekent, en de levertijden kunnen lang zijn."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Morozko Forge?",
+          "a": "De Morozko Forge kost $10.000 of meer, wat voor de meeste gebruikers onbereikbaar is, en is overkill voor algemene koudeblootstelling. Sommige configuraties vereisen 220V-elektrisch werk, en kopers krijgen te maken met lange levertijden en beperkte distributie."
         }
       ]
     }
@@ -8271,6 +8445,67 @@
         }
       ],
       "content": "## De korte versie\n\nDrie systemen verdelen de categorie helder: Eight Sleep (premium + tracking + abonnement), ChiliPad (water zonder abonnement), BedJet (lucht zonder abonnement, het goedkoopst).\n\n## Wanneer is Eight Sleep Pod 4 de juiste keuze?\n\nAls je geïntegreerde HRV- en slaaptracking wilt zodat je geen aparte wearable nodig hebt, plus Autopilot-klimaatschema's – en je het doorlopende abonnement accepteert.\n\n## Wanneer is ChiliPad Dock Pro de juiste keuze?\n\nAls je al een Oura of Whoop draagt en hetzelfde watergekoelde klimaat wilt zonder het abonnement van Eight Sleep te betalen. Ongeveer een derde van de 3-jaarskosten van Eight Sleep, met vergelijkbare klimaathardware.\n\n## Wanneer is BedJet 3 de juiste keuze?\n\nAls je de goedkoopste geloofwaardige instap in actief slaapklimaat wilt, in een mild tot gematigd klimaat woont en geen waterreservoir wilt bijhouden. De luchtstroomaanpak volstaat voor de meeste gebruikers buiten zomerpieken – voor een fractie van de totale 3-jaarskosten van Eight Sleep."
+    },
+    "flow-neuroscience-vs-apollo-neuro": {
+      "title": "Flow Neuroscience vs Apollo Neuro: vergelijking 2026",
+      "description": "Flow Neuroscience vs Apollo Neuro — ONDA-vergelijking: door de FDA goedgekeurde, CE-gemarkeerde tDCS bij depressie vs vibrotactiele wellness-wearable.",
+      "intro": "Flow Neuroscience en Apollo Neuro zijn twee apparaten die op een functielijst op elkaar lijken — allebei draagbaar, allebei gericht op stemming en stress — maar eigenlijk niet hetzelfde soort product zijn. Flow is een medisch hulpmiddel voor depressie (major depression) — met premarket approval van de FDA (PMA P230024, december 2025) en CE-markering als klasse IIa in de EU — dat transcraniële gelijkstroomstimulatie (tDCS) geeft volgens een klinisch protocol. Apollo Neuro is een vibrotactiele wellness-wearable die wordt aangeprezen voor rust, zonder klinische indicatie. Verschillende categorieën, die vaak met elkaar worden vergeleken.",
+      "verdict": "Niet echt inwisselbaar. Flow Neuroscience voor tDCS-behandeling van depressie binnen een gestructureerd programma. Apollo Neuro om de hele dag vibrotactiel te dragen, aangeprezen voor rust, voor algemeen wellnessgebruik.",
+      "bestForA": "Kies Flow Neuroscience als je een depressie (major depression) hebt en een behandelaar die openstaat voor een tDCS-optie — door de FDA goedgekeurd (PMA P230024) en CE-gemarkeerd, met bewijs uit gerandomiseerde studies.",
+      "bestForB": "Kies Apollo Neuro als je een passieve vibrotactiele wearable wilt die wordt aangeprezen voor rust gedurende de dag — algemeen welzijn, herstel, stress — zonder klinische indicatie of verplichting aan een programma.",
+      "axes": [
+        {
+          "name": "Regelgevingsstatus",
+          "note": "Flow Neuroscience: premarket approval van de FDA (PMA P230024, 8 december 2025, depressieve stoornis bij volwassenen die niet therapieresistent zijn) en CE-gemarkeerd medisch hulpmiddel van klasse IIa. Apollo Neuro: wellness-wearable voor consumenten, zonder goedkeuring als medisch hulpmiddel. Flow is de gereguleerde optie."
+        },
+        {
+          "name": "Werkingsmechanisme",
+          "note": "Flow: tDCS — 2 mA gelijkstroomstimulatie boven de dorsolaterale prefrontale cortex (actieve interventie). Apollo: vibrotactiele stimulatie via mechanoreceptoren in de huid (volgens de fabrikant wordt daarbij de nervus vagus aangesproken). Flow is directer."
+        },
+        {
+          "name": "Reikwijdte van de indicatie",
+          "note": "Flow: alleen geïndiceerd voor depressie (major depression). Apollo: algemeen welzijn — herstel, focus, slaap, rust. Apollo is breder inzetbaar; Flow is bewust smaller."
+        },
+        {
+          "name": "Klinisch bewijs",
+          "note": "Flow: een volledig op afstand uitgevoerde, gerandomiseerde, sham-gecontroleerde studie in Nature Medicine (Woodham 2024, gefinancierd door Flow) naar tDCS bij depressie. Apollo: RCT's van de University of Pittsburgh naar hartslagvariabiliteit (HRV) en herstel. Beide echt; de studies van Flow gaan over een klinische populatie (major depression)."
+        },
+        {
+          "name": "Gebruiksfrequentie in het dagelijks leven",
+          "note": "Apollo: continu dagelijks dragen. Flow: gestructureerde sessies van 30 minuten in een programma van 8 weken. Apollo draait op de achtergrond; Flow is een interventie op de voorgrond."
+        },
+        {
+          "name": "Draagbaarheid",
+          "note": "Apollo: om pols of enkel of als clip, voor 24/7 dragen. Flow: stijve headset, alleen voor zittende sessies. Apollo wint op integratie in het dagelijks leven."
+        },
+        {
+          "name": "Programmastructuur",
+          "note": "Flow: gestructureerd gedragstherapieprogramma van 8 weken gecombineerd met stimulatie. Apollo: vrije keuze van modi zonder vast einde. Flow heeft het klinische kader."
+        },
+        {
+          "name": "Prijs",
+          "note": "Apollo: $448 incl. een SmartVibes AI-lidmaatschap van 1 jaar. Flow: £399 (~$499) + maandabonnement op de therapie-app. Apollo is goedkoper, zonder verplicht doorlopend abonnement."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Moet ik Flow Neuroscience of Apollo Neuro kiezen?",
+          "a": "Ze lossen verschillende problemen op. Flow als je een depressie (major depression) hebt en een behandelaar die openstaat voor tDCS als thuisbehandeling — Flow is een door de FDA goedgekeurd, CE-gemarkeerd tDCS-apparaat met een gestructureerd gedragstherapieprogramma. Apollo als je een vibrotactiele wearable wilt die wordt aangeprezen voor rust gedurende de dag, zonder klinische indicatie."
+        },
+        {
+          "q": "Is Flow Neuroscience door de FDA goedgekeurd?",
+          "a": "Ja, voor één indicatie. De FDA verleende de Flow FL-100 premarket approval (PMA P230024, 8 december 2025) voor matige tot ernstige depressieve stoornis bij volwassenen die niet therapieresistent zijn. Flow is in Europa ook CE-gemarkeerd als medisch hulpmiddel van klasse IIa en wordt in delen van de Britse NHS voorgeschreven. Apollo Neuro wordt verkocht als wellnessapparaat voor consumenten, zonder FDA-clearance."
+        },
+        {
+          "q": "Kan ik mijn eigen depressie behandelen met Apollo Neuro?",
+          "a": "Apollo Neuro is voor geen enkele klinische aandoening geïndiceerd. Bij een vastgestelde depressie is Flow Neuroscience de gereguleerde optie; Apollo is alleen voor welzijn bedoeld. De twee mogen niet door elkaar worden gehaald."
+        },
+        {
+          "q": "Moet ik ze allebei gebruiken?",
+          "a": "In theorie overlappen de mechanismen (actieve tDCS vs passieve vibrotactiele stimulatie) niet. In de praktijk: heb je een klinische depressie, dan is Flow onder medische begeleiding het juiste instrument; Apollo is voor algemeen welzijn daarnaast. De combinatie is ongebruikelijk."
+        }
+      ],
+      "content": "## De korte versie\n\nFlow Neuroscience en Apollo Neuro lijken verwant, maar zijn niet echt inwisselbaar. Flow is een door de FDA goedgekeurd, CE-gemarkeerd klinisch apparaat voor vastgestelde depressie (major depression); Apollo is een wellness-wearable voor consumenten die wordt aangeprezen voor rust. De keuze hangt af van of je een klinische aandoening hebt of een wellnessdoel.\n\n## Wanneer is Flow Neuroscience de juiste keuze?\n\nAls je een depressie (major depression) hebt en een behandelaar die tDCS als thuisbehandeling wil bespreken, past Flow. De waarde zit in de FDA-goedkeuring en de CE-markering, de gerandomiseerde studie in Nature Medicine (Woodham 2024) en het gestructureerde gedragstherapieprogramma van 8 weken. Voor algemeen welzijn is het het verkeerde instrument — de indicatie is bewust smal.\n\n## Wanneer is Apollo Neuro de juiste keuze?\n\nAls je een passieve vibrotactiele wearable wilt die wordt aangeprezen voor rust gedurende de dag — voor herstel, stress, slaap, focus — zonder klinische indicatie of verplichting aan een gestructureerd programma, past Apollo. Het is vibrotactiel, aangeprezen voor rust en gesteund door onderzoek van de University of Pittsburgh onder leiding van de oprichters; draagbaarheid in het dagelijks leven is de toepassing."
     }
   },
   "categoryHubs": {
