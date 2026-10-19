@@ -119,7 +119,9 @@ await analytics.flush();
 | `notification_prompt_result` | Notification prompt resolved | `status` |
 | `onboarding_permission_screen_view` | Permission screen shown | — |
 | `watch_connection_attempt` | Trying to connect watch | — |
-| `watch_connect_success` | Watch connected | `heart_rate`, `is_connected` |
+| `watch_connect_success` | Watch connected | `is_connected`, `is_first` (true only on first-ever connection; flag `onda_watch_connected_ever`) |
+| `baseline_state` | Daily corridor check (once per local day, `onda_baseline_state_sent_day`) | `state` (in_corridor\|out\|insufficient) — no values, no metric name |
+| `notif_prompt_answered` | Notification system prompt answered | `trigger` (onboarding\|first_camera), `granted` (true\|false), `answer` (yes\|no) |
 | `watch_connection_failed` | Watch connection failed | `error` |
 
 > `health_permission` is deduped by the granted state (localStorage
@@ -131,7 +133,7 @@ await analytics.flush();
 
 | Event | Description | Metadata |
 |-------|-------------|----------|
-| `practice_start` | Practice started | `practice_type` (standard\|adaptive), `practice_id`, `has_biometrics` |
+| `practice_start` | Practice started (fires once, when the session begins) | `practice_type` (standard\|adaptive), `practice_id`, `has_biometrics`, `source` (home\|library\|level\|recommend_static\|checkin\|signal\|push\|onboarding), `mode` |
 | `practice_pause` | Practice paused | `practice_id` |
 | `practice_resume` | Practice resumed | `practice_id` |
 | `practice_complete` | Practice finished | `practice_type`, `practice_id`, `duration_seconds`, `quality_score`, `ond_earned` |

@@ -198,3 +198,32 @@ export function saveAnomalyState(s: AnomalyState): void {
 export function canSignal(now: number, lastSignalAt?: number): boolean {
   return lastSignalAt == null || now - lastSignalAt >= SIGNAL_COOLDOWN_MS;
 }
+
+/* ── baseline_state analytics (task 095) ───────────────────────────────────
+ * Daily, category-only summary of the corridor check: NO values, NO metric name.
+ *   insufficient — no metric has MIN_NIGHTS prior nights yet
+ *   out          — last night outside a corridor (same rule as the traffic light)
+ *   in_corridor  — enough history and every metric inside its corridor        */
+export type BaselineCorridorState = 'in_corridor' | 'out' | 'insufficient';
+
+export function baselineCorridorState(signals: SignalInput[]): BaselineCorridorState {
+  const ready = signals.filter((s) => Array.isArray(s.nights) && s.nights.length >= MIN_NIGHTS);
+  if (!ready.length) return 'insufficient';
+  return computeTrafficLight(ready).light === 'green' ? 'in_corridor' : 'out';
+}
+
+const BASELINE_STATE_DAY_KEY = 'onda_baseline_state_sent_day';
+const localDayKey = (now: number) => {
+  const d = new Date(now);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+};
+
+/** True at most once per local calendar day; persists the day when it says yes. */
+export function claimBaselineStateDay(now: number = Date.now()): boolean {
+  try {
+    const today = localDayKey(now);
+    if (localStorage.getItem(BASELINE_STATE_DAY_KEY) === today) return false;
+    localStorage.setItem(BASELINE_STATE_DAY_KEY, today);
+    return true;
+  } catch { return false; }
+}

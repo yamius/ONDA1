@@ -11,6 +11,8 @@ interface PermissionSetupModalProps {
   currentStatus: PermissionStatus;
   isRequesting: boolean;
   onPermissionsGranted?: () => void;
+  /** Fired only when the iOS notification sheet was actually shown and answered. */
+  onNotifAnswered?: (granted: boolean) => void;
   /** Fired once the HealthKit prompt resolves, with the (best-effort) grant
    *  result — used for the onboarding permission-outcome analytics. iOS hides
    *  the true deny status, so `false` means "no read access after the prompt". */
@@ -24,6 +26,7 @@ export function PermissionSetupModal({
   currentStatus,
   isRequesting,
   onPermissionsGranted,
+  onNotifAnswered,
   onOutcome,
 }: PermissionSetupModalProps) {
   const { t } = useTranslation();
@@ -42,8 +45,13 @@ export function PermissionSetupModal({
       onOutcome?.(!!status.healthRead); // best-effort — iOS hides the true result
 
       try {
+        const before = await LocalNotifications.checkPermissions().catch(() => null);
         const notif = await LocalNotifications.requestPermissions();
         setNotifGranted(notif.display === 'granted');
+        // Only a real system prompt counts (already-decided → no sheet, no event).
+        if (before && before.display !== 'granted' && before.display !== 'denied') {
+          onNotifAnswered?.(notif.display === 'granted');
+        }
       } catch { /* notifications are optional; Health is what gates the flow */ }
 
       if (status.healthRead) {

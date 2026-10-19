@@ -25,6 +25,8 @@ interface AdaptivePracticeModalProps {
   onClose: () => void;
   practiceId: string;
   onOndEarned?: (amount: number) => void;
+  /** practice_start source (task 095) — face/voice check launches are check-ins. */
+  source?: 'checkin' | 'recommend_static';
 }
 
 interface AdaptivePractice {
@@ -529,7 +531,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
 
 type PracticeState = 'intro' | 'practice' | 'complete';
 
-export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned }: AdaptivePracticeModalProps) {
+export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned, source = 'checkin' }: AdaptivePracticeModalProps) {
   const { t } = useTranslation();
   const isLight = useTheme().resolved === 'light';
   const vitalsData = useVitals();
@@ -809,7 +811,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     initialCoherenceRef.current = freshVitals.coherence ?? null;
     peakCoherenceRef.current = freshVitals.coherence ?? null;
     if (practice) {
-      track('practice_start', { practice_type: 'adaptive', practice_id: practice.id });
+      track('practice_start', { practice_type: 'adaptive', practice_id: practice.id, source });
       trackTenjinPractice('Start', t(practice.name), { surface: 'adaptive', practiceId: practice.id });
     }
   };

@@ -13,7 +13,7 @@ import { VoiceCheckModal } from './components/VoiceCheckModal';
 import DiaryModal from './components/DiaryModal';
 import { recordDailyMetric, recordBaselineSample, DAILY_STORES, loadDiaryEntries, saveDiaryEntries, newDiaryId, hydrateDiary } from './lib/diary';
 import { loadLocalProgress, saveLocalProgress, mergeProgress, type LocalProgress } from './lib/progressStore';
-import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, computeTrafficLight, type PendingAnomaly, type SignalInput, type TrafficState } from './lib/anomaly';
+import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, computeTrafficLight, baselineCorridorState, claimBaselineStateDay, type PendingAnomaly, type SignalInput, type TrafficState } from './lib/anomaly';
 import { SimpleHero, PulseBreathTiles, trafficCopy } from './components/SimpleHome';
 import { Coachmarks } from './components/Coachmarks';
 import { RateOndaRow } from './components/RateOndaRow';
@@ -101,6 +101,7 @@ import {
 } from './lib/tenjin';
 import { useSubscription } from './hooks/useSubscription';
 import * as Sentry from '@sentry/capacitor';
+import { consumeFirstWatchConnect, type PracticeStartSource } from './lib/analyticsMarkers';
 // WelcomeScene is the only consumer of three.js in the codebase. It only
 // mounts when the user starts a practice (`practiceState === 'active'`),
 // not on cold start. Loading it lazily moves three.js + EXR loaders into
@@ -534,6 +535,7 @@ const OndaLevel1 = () => {
       track('watch_connect_success', {
         // heart_rate removed (1.9.3) — the pulse value stays on the device.
         is_connected: watchHeartRate.isConnected,
+        is_first: consumeFirstWatchConnect(),
       });
     }
   }, [watchHeartRate.heartRate]);
@@ -979,6 +981,8 @@ const OndaLevel1 = () => {
         if (vals.length < 2) return [];
         return [{ metric: k, nights: vals.slice(0, -1), latest: vals[vals.length - 1] }];
       });
+      // baseline_state (task 095): once per calendar day, category only.
+      try { if (claimBaselineStateDay()) track('baseline_state', { state: baselineCorridorState(signals) }); } catch { /* noop */ }
       const anomaly = detectAnomaly(signals);
       const st = loadAnomalyState();
       if (anomaly && canSignal(Date.now(), st.lastSignalAt)) {
@@ -3276,9 +3280,14 @@ const OndaLevel1 = () => {
     return artifacts.reduce((sum, a) => sum + a.bonus, 0);
   };
 
-  const completePractice = (practiceId, baseQnt) => {
+  // practice_start `source` (task 095): every entry point opens the intro via
+  // completePractice(…, source); the single practice_start fires later in
+  // beginPractice() and carries the source recorded here.
+  const practiceStartSourceRef = useRef<PracticeStartSource>('home');
+  const completePractice = (practiceId, baseQnt, source: PracticeStartSource = 'home') => {
     const space = practiceSpaces[practiceId];
     if (space) {
+      practiceStartSourceRef.current = source;
       setActivePractice({ ...space, id: practiceId, maxQnt: baseQnt });
       setPracticeOpenedAtMs(Date.now());
       setCanExitPractice(false);
@@ -3340,9 +3349,9 @@ const OndaLevel1 = () => {
       saveAnomalyState({ lastSignalAt: st.lastSignalAt, signalCount: st.signalCount }); // pending cleared — goal met
       setAnomalyPrompt(null);
     } else {
-      try { track('practice_start', { practice_id: pid, source: 'recommend_static', mode: appMode }); } catch { /* noop */ }
     }
-    if (pr) completePractice(pid, pr.maxQnt);
+    // practice_start fires once, in beginPractice (was also fired here → dupes).
+    if (pr) completePractice(pid, pr.maxQnt, metric ? 'signal' : 'recommend_static');
   };
   // Calm check-in A1/B1 → start ONE of the available practices at random: the 3
   // free ones without a subscription, the current level's 12 with one (task 16).
@@ -3350,8 +3359,8 @@ const OndaLevel1 = () => {
     const pool = isPremium ? currentCircuit.practices.map((p) => p.id) : SIGNAL_PRACTICE_ORDER;
     const pid = pool[Math.floor(Math.random() * pool.length)] ?? SIGNAL_PRACTICE_ORDER[0];
     const pr = currentCircuit.practices.find((p) => p.id === pid) as { id: string; maxQnt: number } | undefined;
-    try { track('practice_start', { practice_id: pid, source: 'checkin', mode: appMode }); } catch { /* noop */ }
-    if (pr) completePractice(pid, pr.maxQnt);
+    // Only reached from a calm check-in push (A1/B1) → source 'push'.
+    if (pr) completePractice(pid, pr.maxQnt, 'push');
   };
   // Open the diary to record "what happened", anchored to the deviating night (§9).
   const recordAnomaly = (a: PendingAnomaly) => {
@@ -3379,6 +3388,8 @@ const OndaLevel1 = () => {
     if (activePractice) {
       trackPractice('start', activePractice.id, {
         practice_type: 'standard',
+        source: practiceStartSourceRef.current,
+        mode: appMode,
         practice_name: activePractice.name,
         target_duration: activePractice.duration,
         has_biometrics: hasRealMetrics,
@@ -6059,7 +6070,7 @@ const OndaLevel1 = () => {
           // Same entry point the hub cards use — opens the practice intro
           // where the existing free-tier Start button leads straight into the
           // live session (practice_start fires when the session begins).
-          completePractice(featured.id, featured.maxQnt);
+          completePractice(featured.id, featured.maxQnt, 'onboarding');
         }
       }
     };
@@ -6759,7 +6770,7 @@ const OndaLevel1 = () => {
           <button
             onClick={() => {
               markFreePracticeTapped(practice.id);
-              completePractice(practice.id, practice.maxQnt);
+              completePractice(practice.id, practice.maxQnt, currentCircuit.id === 1 ? 'home' : 'level');
             }}
             className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all backdrop-blur-sm ${emoTint}`}
           >
@@ -9577,6 +9588,9 @@ const OndaLevel1 = () => {
           currentStatus={permissions.permissionStatus}
           isRequesting={permissions.isRequesting}
           onPermissionsGranted={() => setShowWatchPrompt(true)}
+          onNotifAnswered={(granted) => {
+            try { track('notif_prompt_answered', { trigger: 'onboarding', granted, answer: granted ? 'yes' : 'no' }); } catch { /* noop */ }
+          }}
           onOutcome={(granted) => {
             track('health_permission', { scope: 'healthkit', granted, source: 'onboarding_watch_cta' });
             if (granted) {
