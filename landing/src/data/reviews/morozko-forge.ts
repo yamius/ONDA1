@@ -7,7 +7,7 @@ const morozkoForge: ToolReviewInput = {
   category: 'cold-plunge',
   productType: 'Ultra-premium cold plunge with freeze-up capability',
   description:
-    'ONDA review of the Morozko Forge — the ultra-premium cold-plunge tub with capacity to actually freeze water surface. Wim Hof-affiliated, $10K+ pricing.',
+    'ONDA review of the Morozko Forge — the ultra-premium cold-plunge tub that Morozko says can freeze the water surface. Wim Hof-affiliated, $10K+ pricing.',
   verdict:
     'An extreme consumer cold-plunge — Morozko says it can form surface ice. Ultra-premium pricing.',
   summary:
@@ -49,7 +49,7 @@ Price. $10,000+ is about $4,000 more than The Plunge ($5,990) for capability mos
 
 ## Who should buy Morozko Forge?
 
-Choose Morozko Forge if extreme protocols (sub-40°F, ice-surface formation, prolonged exposure) are the deciding criteria. For general daily cold-exposure practice, The Plunge or Coldture deliver the same downstream benefits for roughly half the cost.
+Choose Morozko Forge if extreme protocols (sub-40°F, ice-surface formation, prolonged exposure) are the deciding criteria. For general daily cold-exposure practice, The Plunge or Coldture cover typical cold-plunge temperatures for roughly half the cost.
 
 ---
 
