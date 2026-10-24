@@ -3,6 +3,7 @@ import { X, Infinity, Headphones, Heart, RotateCcw } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { useSubscription } from '../hooks/useSubscription';
+import { isTrialOrIntro } from '../lib/purchasePeriod';
 import { useAnalytics } from '../hooks/useAnalytics';
 import { useTheme } from '../theme/ThemeProvider';
 import { LegalModal } from './LegalModal';
@@ -107,6 +108,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     isPremium,
     error,
     purchase,
+    lastPurchasePeriodType,
     restore,
     getYearlyPackage,
     getMonthlyPackage,
@@ -212,14 +214,22 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     try {
       const success = await purchase(pkg);
       if (success) {
-        track('trial_start', {
-          plan: selectedPlan,
-          product_id: pkg.product.identifier,
-        });
-        trackTenjinSubscribe({
-          productId: pkg.product.identifier,
-          plan: selectedPlan,
-        });
+        // 096: trial_start (+ Tenjin start_trial) ONLY when Apple actually
+        // granted a free trial / intro offer. A direct paid purchase
+        // (periodType NORMAL) fires only `purchase`, via the not-paid -> paid
+        // detector in useSubscription — never here, so no double fire.
+        const periodType = lastPurchasePeriodType();
+        if (isTrialOrIntro(periodType)) {
+          track('trial_start', {
+            plan: selectedPlan,
+            product_id: pkg.product.identifier,
+            period_type: periodType,
+          });
+          trackTenjinSubscribe({
+            productId: pkg.product.identifier,
+            plan: selectedPlan,
+          });
+        }
         // Mark before onClose() so the dismiss-effect cleanup skips firing.
         subscribeFiredRef.current = true;
         onSubscribed?.();

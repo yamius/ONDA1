@@ -5,6 +5,7 @@ import { revenueCatService, ENTITLEMENT_ID } from '../services/RevenueCatService
 import { supabase } from '../lib/supabase';
 import { trackTenjinSubscriptionPaid } from '../lib/tenjin';
 import { trackEvent } from '../services/AnalyticsService';
+import { getEntitlementPeriodType, type PurchasePeriodType } from '../lib/purchasePeriod';
 
 // Persisted paid-state baseline for the real-purchase detector below.
 // Value is 'notpaid' | '<productId>:<latestPurchaseDateMillis>'. Absent (null)
@@ -32,6 +33,8 @@ interface SubscriptionState {
 interface UseSubscriptionReturn extends SubscriptionState {
   // Actions
   purchase: (pkg: PurchasesPackage) => Promise<boolean>;
+  /** periodType of the entitlement granted by the most recent purchase() (096). */
+  lastPurchasePeriodType: () => PurchasePeriodType;
   restore: () => Promise<boolean>;
   refresh: () => Promise<void>;
   
@@ -43,6 +46,7 @@ interface UseSubscriptionReturn extends SubscriptionState {
 }
 
 export function useSubscription(): UseSubscriptionReturn {
+  const lastPeriodTypeRef = useRef<PurchasePeriodType>(null);
   const [state, setState] = useState<SubscriptionState>({
     isLoading: true,
     isPurchasing: false,
@@ -259,12 +263,14 @@ export function useSubscription(): UseSubscriptionReturn {
     }
 
     setState(prev => ({ ...prev, isPurchasing: true, error: null }));
+    lastPeriodTypeRef.current = null;
 
     try {
       const customerInfo = await revenueCatService.purchasePackage(pkg);
       
       if (customerInfo) {
         const isPremium = customerInfo.entitlements?.active?.[ENTITLEMENT_ID]?.isActive ?? false;
+        lastPeriodTypeRef.current = getEntitlementPeriodType(customerInfo, ENTITLEMENT_ID);
         setState(prev => ({
           ...prev,
           isPurchasing: false,
@@ -287,6 +293,8 @@ export function useSubscription(): UseSubscriptionReturn {
       return false;
     }
   }, [isNative]);
+
+  const lastPurchasePeriodType = useCallback(() => lastPeriodTypeRef.current, []);
 
   // Restore purchases
   const restore = useCallback(async (): Promise<boolean> => {
@@ -401,6 +409,7 @@ export function useSubscription(): UseSubscriptionReturn {
   return {
     ...state,
     purchase,
+    lastPurchasePeriodType,
     restore,
     refresh,
     getYearlyPackage,
