@@ -23,6 +23,7 @@ export const revenueReviewSchema = {
     properties: {
       since: { type: 'integer', description: 'Days back. Default 28.', default: 28 },
       view: { type: 'string', enum: ['top', 'full'], default: 'full' },
+      debug: { type: 'boolean', description: 'Include chart shapes (measure names, summary, sample aggregate rows). No customer data.', default: false },
     },
   },
 };
@@ -35,6 +36,28 @@ async function chartSafe(name, win, pick) {
   } catch (err) {
     return { ok: false, ...sourceError('revenuecat', err), chart_name: name };
   }
+}
+
+/**
+ * Shape of a chart for debugging: measure/period names, summary, row count and
+ * a few rows. Charts are aggregate counts/rates only - no customer data.
+ */
+function chartShape(c) {
+  const names = (l) => (Array.isArray(l) ? l.map((m) => m?.display_name ?? m?.name ?? m?.id ?? null) : null);
+  const rows = Array.isArray(c?.values) ? c.values : [];
+  return {
+    resolution: c?.resolution ?? null,
+    yaxis: c?.yaxis ?? null,
+    display_type: c?.display_type ?? null,
+    measures: names(c?.measures),
+    measure_units: Array.isArray(c?.measures) ? c.measures.map((m) => m?.unit ?? null) : null,
+    periods: names(c?.periods),
+    segments: names(c?.segments),
+    summary: c?.summary ?? null,
+    rows: rows.length,
+    first_rows: rows.slice(0, 6),
+    last_rows: rows.slice(-8),
+  };
 }
 
 /** Pull one named metric out of the overview payload, whatever its casing. */
@@ -172,31 +195,12 @@ export async function revenueReview(args = {}) {
       result.by_channel = await breakdown('revenue', win, ['channel', 'network', 'campaign', 'attribution', 'source']);
     }
 
-    // --- The cross-check the brief asks for -------------------------------
-    const anyMoney =
-      (Number(result.snapshot.active_subscriptions) || 0) > 0 ||
-      (Number(result.snapshot.active_trials) || 0) > 0 ||
-      (Number(started) || 0) > 0 ||
-      (Number(result.revenue.gross?.value) || 0) > 0;
-
-    result.tenjin_purchase_events_note = {
-      revenuecat_sees_activity: anyMoney,
-      tenjin_dashboard_state:
-        "'Valid Purchase Event: not received' and 'Subscription Event: not received' " +
-        'across app versions 1.8.3-1.8.7. This is a dashboard fact supplied by the ' +
-        'operator, NOT something read through an API here.',
-      verdict: anyMoney
-        ? 'CONTRADICTION: RevenueCat sees paying or trialing activity while Tenjin ' +
-          'reports no purchase events. The likely cause is that Tenjin has no ' +
-          'In-App Purchase credentials filled in (Key ID, Issuer ID, In-App Purchase ' +
-          'Key), so it cannot validate purchases at all. Until those are set, Tenjin ' +
-          'will report zero however many purchases occur, and any revenue or ROAS ' +
-          'read from Tenjin is wrong.'
-        : 'NO CONTRADICTION YET: RevenueCat also shows no paying activity in this ' +
-          'window, so the two agree. This does NOT prove Tenjin is wired correctly - ' +
-          'with empty IAP credentials it would report zero either way. The check only ' +
-          'becomes informative once RevenueCat shows a purchase.',
-    };
+    if (args.debug === true) {
+      result._debug = Object.fromEntries(
+        [['trials_new', trialsNew], ['trial_conversion_rate', conv], ['refund_rate', refunds], ['churn', churn]]
+          .map(([n, r]) => [n, r.ok ? chartShape(r.chart) : { error: r.error ?? r.message ?? 'failed' }]),
+      );
+    }
 
     return ok(result);
   } catch (err) {

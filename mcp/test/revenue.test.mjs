@@ -147,13 +147,10 @@ test('a breakdown with no matching segment reports what the chart does support',
   assert.deepEqual(r.by_channel.segments_the_chart_does_support, ['store']);
 });
 
-test('activity in RevenueCat plus silence in Tenjin is called a contradiction', async () => {
+test('no Tenjin note in revenue_review output', async () => {
   const r = await revenueReview({ since: 28, view: 'top' });
-  assert.equal(r.tenjin_purchase_events_note.revenuecat_sees_activity, true);
-  assert.match(r.tenjin_purchase_events_note.verdict, /CONTRADICTION/);
-  assert.match(r.tenjin_purchase_events_note.verdict, /In-App Purchase/);
-  // The Tenjin side must be labelled as operator-supplied, not as an API read.
-  assert.match(r.tenjin_purchase_events_note.tenjin_dashboard_state, /NOT something read through an API/);
+  assert.equal(r.tenjin_purchase_events_note, undefined);
+  assert.equal(r._debug, undefined, 'debug only on request');
 });
 
 test('refund lag is stated, since it rewrites the window retroactively', async () => {
