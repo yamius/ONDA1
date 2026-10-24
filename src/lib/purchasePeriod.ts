@@ -15,6 +15,6 @@ export function getEntitlementPeriodType(
   return (ent.periodType as PurchasePeriodType) ?? null;
 }
 
-export function isTrialOrIntro(periodType: PurchasePeriodType): boolean {
+export function isTrialOrIntro(periodType: PurchasePeriodType): periodType is 'TRIAL' | 'INTRO' {
   return periodType === 'TRIAL' || periodType === 'INTRO';
 }
