@@ -195,7 +195,7 @@ export async function revenueReview(args = {}) {
       result.by_channel = await breakdown('revenue', win, ['channel', 'network', 'campaign', 'attribution', 'source']);
     }
 
-    if (args.debug === true) {
+    if (args.debug === true || view === 'full') {
       result._debug = Object.fromEntries(
         [['trials_new', trialsNew], ['trial_conversion_rate', conv], ['refund_rate', refunds], ['churn', churn]]
           .map(([n, r]) => [n, r.ok ? chartShape(r.chart) : { error: r.error ?? r.message ?? 'failed' }]),

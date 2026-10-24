@@ -150,7 +150,7 @@ test('a breakdown with no matching segment reports what the chart does support',
 test('no Tenjin note in revenue_review output', async () => {
   const r = await revenueReview({ since: 28, view: 'top' });
   assert.equal(r.tenjin_purchase_events_note, undefined);
-  assert.equal(r._debug, undefined, 'debug only on request');
+  assert.equal(r._debug, undefined, 'debug only on request (debug=true or view=full)');
 });
 
 test('refund lag is stated, since it rewrites the window retroactively', async () => {
