@@ -87,6 +87,7 @@ mock.module(rcUrl, {
       return { values: [], segments: [] };
     },
     chartOptions: async () => ({ segments: [{ id: 'store', display_name: 'Store' }] }),
+    measureColumn: () => 1,
     sumSeries: (c, i = 1) => {
       let total = 0, points = 0;
       for (const row of c?.values ?? []) {

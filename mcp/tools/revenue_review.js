@@ -8,7 +8,7 @@
 
 import {
   revenueCatMissing, overviewMetrics, revenueMetric, chartData, chartOptions,
-  sumSeries, lastValue, findSegment,
+  sumSeries, lastValue, findSegment, measureColumn,
 } from '../lib/sources/revenuecat.js';
 import { windowFor, ok, notConfigured, sourceError } from '../lib/shared.js';
 
@@ -129,10 +129,10 @@ export async function revenueReview(args = {}) {
 
     // --- Trials, refunds, churn -------------------------------------------
     const [trialsNew, conv, refunds, churn] = await Promise.all([
-      chartSafe('trials_new', win, (c) => sumSeries(c).total),
-      chartSafe('trial_conversion_rate', win, (c) => lastValue(c)),
-      chartSafe('refund_rate', win, (c) => sumSeries(c).total),
-      chartSafe('churn', win, (c) => lastValue(c)),
+      chartSafe('trials_new', win, (c) => sumSeries(c, measureColumn(c, /trial|new/i)).total),
+      chartSafe('trial_conversion_rate', win, (c) => lastValue(c, measureColumn(c, /rate|conversion/i))),
+      chartSafe('refund_rate', win, (c) => sumSeries(c, measureColumn(c, /^refunds?$|refunded/i)).total),
+      chartSafe('churn', win, (c) => lastValue(c, measureColumn(c, /rate/i))),
     ]);
 
     const started = trialsNew.ok ? trialsNew.value : null;

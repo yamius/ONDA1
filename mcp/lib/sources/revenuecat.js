@@ -97,36 +97,59 @@ export async function chartOptions(chartName) {
 }
 
 /**
- * Sum a chart's numeric series over the window.
+ * The numeric cells of one measure of a chart, in time order.
  *
- * `values` rows are `[timestamp, ...measures]` for the time-series charts used
- * here. Only the requested measure column is summed, and non-numeric cells are
- * skipped rather than coerced — a null in a partial day must not read as 0
- * revenue when it means "not reported yet".
+ * Two row shapes exist. The Charts API v2 actually returns `values` as OBJECTS:
+ *   { cohort: <unix ts>, measure: <0-based measure index>, value: <n>, incomplete: bool }
+ * (one object per period per measure, measures described in `chart.measures`).
+ * The tuple form `[timestamp, ...measures]` is kept for compatibility. Reading
+ * only tuples silently skipped every object row, so trials_new summed to 0 and
+ * the rate charts read null (bug fixed 2026-10-24).
+ *
+ * `columnIndex` keeps the tuple convention: 1 = first measure (measure 0).
+ * Non-numeric cells are skipped rather than coerced - a null means "not
+ * reported yet", not 0.
  */
-export function sumSeries(chart, columnIndex = 1) {
+function measureCells(chart, columnIndex = 1) {
   const rows = Array.isArray(chart?.values) ? chart.values : [];
-  let total = 0;
-  let counted = 0;
+  const measure = columnIndex - 1;
+  const out = [];
   for (const row of rows) {
-    if (!Array.isArray(row)) continue;
-    const v = row[columnIndex];
-    if (typeof v === 'number' && Number.isFinite(v)) {
-      total += v;
-      counted += 1;
+    let v;
+    if (Array.isArray(row)) {
+      v = row[columnIndex];
+    } else if (row && typeof row === 'object') {
+      const m = row.measure ?? 0;
+      if (Number(m) !== measure) continue;
+      v = row.value;
     }
+    if (typeof v === 'string' && v.trim() !== '' && Number.isFinite(Number(v))) v = Number(v);
+    if (typeof v === 'number' && Number.isFinite(v)) out.push({ v, t: Array.isArray(row) ? row[0] : row.cohort });
   }
-  return { total, points: counted };
+  if (rows.length && !Array.isArray(rows[0])) out.sort((a, b) => (Number(a.t) || 0) - (Number(b.t) || 0));
+  return out.map((c) => c.v);
 }
 
-/** The last non-null value of a series — for "as of the end of the window". */
+/**
+ * Index (tuple convention, 1-based) of the first measure whose name matches,
+ * or `fallback` when the chart lists no measures / none match.
+ */
+export function measureColumn(chart, pattern, fallback = 1) {
+  const list = Array.isArray(chart?.measures) ? chart.measures : [];
+  const i = list.findIndex((m) => pattern.test(String(m?.display_name ?? m?.name ?? m?.id ?? '')));
+  return i >= 0 ? i + 1 : fallback;
+}
+
+/** Sum one measure of a chart over the window. */
+export function sumSeries(chart, columnIndex = 1) {
+  const cells = measureCells(chart, columnIndex);
+  return { total: cells.reduce((a, b) => a + b, 0), points: cells.length };
+}
+
+/** The last non-null value of a series - for "as of the end of the window". */
 export function lastValue(chart, columnIndex = 1) {
-  const rows = Array.isArray(chart?.values) ? chart.values : [];
-  for (let i = rows.length - 1; i >= 0; i--) {
-    const v = Array.isArray(rows[i]) ? rows[i][columnIndex] : undefined;
-    if (typeof v === 'number' && Number.isFinite(v)) return v;
-  }
-  return null;
+  const cells = measureCells(chart, columnIndex);
+  return cells.length ? cells[cells.length - 1] : null;
 }
 
 /**
