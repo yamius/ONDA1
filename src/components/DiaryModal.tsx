@@ -16,7 +16,7 @@ import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import HealthKitHeartRate from '../plugins/healthKitHeartRate';
 import { buildTimelineHtml, type TimelinePdfCopy } from '../lib/timelinePdf';
-import { trackEvent } from '../services/AnalyticsService';
+import { trackEvent, boolParam } from '../services/AnalyticsService';
 import {
   loadDiaryEntries, saveDiaryEntries, newDiaryId,
   diarySource, loadBaselineSamples,
@@ -469,7 +469,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
         ...(anomaly ? { fromAnomaly: true, anomalyMetric: anomaly.metric, anomalyDelta: anomaly.delta } : {}),
       }, ...entries]);
       try {
-        trackEvent('diary_entry_created', { type: source, backdated });
+        trackEvent('diary_entry_created', { type: source, backdated: boolParam(backdated) });
         if (anomaly) trackEvent('signal_prompt_answered', {});
       } catch { /* noop */ }
     }
@@ -553,7 +553,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     } else if (exportPeriod !== 'all') {
       lo = Date.now() - Number(exportPeriod) * DAY;
     }
-    try { trackEvent('timeline_export_tapped', { period: exportPeriod, inc_text: exportInc.text, inc_photo: exportInc.photo, inc_voice: exportInc.voice }); } catch { /* noop */ }
+    try { trackEvent('timeline_export_tapped', { period: exportPeriod, inc_text: boolParam(exportInc.text), inc_photo: boolParam(exportInc.photo), inc_voice: boolParam(exportInc.voice) }); } catch { /* noop */ }
     setExporting(true);
     const inRange = (t: number) => t >= lo && t <= hi;
     const fSamples = samples.filter((s) => inRange(s.time));

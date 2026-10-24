@@ -44,11 +44,11 @@ export type AnalyticsEventName =
   | 'onboarding_permission_screen_view'
   | 'watch_connection_attempt'
   | 'watch_connect_tapped'           // tapped the home "connect watch" CTA, BEFORE the permission prompt — params: source. Measures reach→intent for the baseline-from-Health flow (distinct from watch_connect_success, which fires on an actual connection).
-  | 'watch_connect_success'          // ← was watch_connection_success / Tenjin watch_connected — params: is_connected (heart_rate removed 1.9.3)
+  | 'watch_connect_success'          // ← was watch_connection_success / Tenjin watch_connected — params: is_connected, is_first (true only on the first-ever watch connection, persisted; 095) (heart_rate removed 1.9.3)
   | 'watch_connection_failed'
   // Practice — variety lives in PARAMS (practice_type=standard|adaptive, practice_id),
   // never in the name. abandon = stop/close mid-flow.
-  | 'practice_start'
+  | 'practice_start'                 // params: practice_id, practice_type, source (home|level|recommend_static|checkin|signal|push|onboarding; 095), mode
   | 'practice_pause'
   | 'practice_resume'
   | 'practice_complete'
@@ -70,6 +70,7 @@ export type AnalyticsEventName =
   | 'baseline_shown'                 // baseline card shown — params: coverage_days (real days behind the numbers), source (watch|camera). Declared now; fired in Phase 2.
   | 'baseline_debug'                 // diagnostic: exactly what the 14-day HealthKit read returned — per-signal days/has + per-extra PRESENCE flags (no values, 1.9.3). Lets us see which numbers Health actually gave without a device session.
   | 'baseline_error'                 // the 14-day HealthKit read threw — params: message.
+  | 'baseline_state'                 // once per local calendar day on the corridor check — params: state (in_corridor|out|insufficient). No values, no metric name (095).
   // Diary (retention step 3 — local-first day notes)
   | 'diary_opened'                   // diary opened — params: source (home_button | menu | anomaly_prompt(future)).
   | 'diary_entry_created'            // a note was saved — params: type (text|voice|text_voice), backdated (bool).
@@ -88,7 +89,7 @@ export type AnalyticsEventName =
   | 'checkin_disabled'              // user turned the "Calm check-ins" toggle off — no params.
   | 'camera_checkin_saved'          // a standalone camera pulse was saved to the diary — no params (pulse bucket removed, 1.9.3).
   | 'notif_prompt_shown'            // the post-camera "remind every 3 days?" primer was shown — params: trigger (first_camera|third_camera).
-  | 'notif_prompt_answered'         // user answered it — params: answer (yes|no), trigger.
+  | 'notif_prompt_answered'         // user answered it — params: answer (yes|no), trigger (first_camera|onboarding), granted (true|false).
   // Timeline export (on-device PDF, no content logged)
   | 'timeline_export_tapped'         // tapped the share/export button in the Timeline.
   | 'timeline_export_completed'      // PDF built on-device and the share sheet opened.
@@ -183,6 +184,26 @@ function _toSnake(s: string): string {
     .slice(0, 40);
 }
 
+/**
+ * Firebase Analytics / GA4 DROPS boolean params ("(not set)"), so booleans are
+ * banned at the type level (NoBooleanParams) and, as a safety net, converted to
+ * the strings "true"/"false" here, before ANY sink (Firebase, Supabase) — 095.
+ */
+export type NoBooleanParams<T> = {
+  [K in keyof T]: 0 extends (1 & T[K]) ? T[K] /* any: converted at runtime */ : [Extract<T[K], boolean>] extends [never] ? T[K] : never;
+};
+export type AnalyticsParams<T extends Record<string, unknown> = Record<string, unknown>> = T & NoBooleanParams<T>;
+
+/** Explicit boolean → GA4-safe string param. */
+export const boolParam = (v: unknown): 'true' | 'false' => (v ? 'true' : 'false');
+
+export function stringifyBooleanParams(p?: Record<string, unknown>): Record<string, unknown> | undefined {
+  if (!p) return p;
+  const out: Record<string, unknown> = {};
+  for (const [k, v] of Object.entries(p)) out[k] = typeof v === 'boolean' ? String(v) : v;
+  return out;
+}
+
 function _sanitizeFirebaseParams(p?: Record<string, unknown>): Record<string, any> {
   if (!p) return {};
   const out: Record<string, any> = {};
@@ -190,7 +211,8 @@ function _sanitizeFirebaseParams(p?: Record<string, unknown>): Record<string, an
     if (v === null || v === undefined) continue;
     const key = _toSnake(k);
     if (typeof v === 'string') out[key] = v.slice(0, 100);
-    else if (typeof v === 'number' || typeof v === 'boolean') out[key] = v;
+    else if (typeof v === 'boolean') out[key] = String(v);
+    else if (typeof v === 'number') out[key] = v;
     else out[key] = String(v).slice(0, 100);
   }
   return out;
@@ -539,7 +561,8 @@ class AnalyticsService {
   /**
    * Track an analytics event
    */
-  async track(eventName: AnalyticsEventName, metadata?: Record<string, unknown>): Promise<void> {
+  async track<T extends Record<string, unknown>>(eventName: AnalyticsEventName, rawMetadata?: AnalyticsParams<T>): Promise<void> {
+    const metadata = stringifyBooleanParams(rawMetadata);
     const event: AnalyticsEvent = {
       event_name: eventName,
       metadata,
@@ -652,10 +675,10 @@ class AnalyticsService {
   /**
    * Track practice-specific events with standard metadata
    */
-  trackPractice(
+  trackPractice<T extends Record<string, unknown>>(
     action: 'start' | 'pause' | 'resume' | 'complete' | 'abandon',
     practiceId: string,
-    metadata?: Record<string, unknown>
+    metadata?: AnalyticsParams<T>
   ): Promise<void> {
     const eventName = `practice_${action}` as AnalyticsEventName;
     return this.track(eventName, {
@@ -715,9 +738,9 @@ class AnalyticsService {
 export const analytics = new AnalyticsService();
 
 // Convenience function for direct tracking
-export const trackEvent = (
+export const trackEvent = <T extends Record<string, unknown>>(
   eventName: AnalyticsEventName,
-  metadata?: Record<string, unknown>
+  metadata?: AnalyticsParams<T>
 ): Promise<void> => {
   return analytics.track(eventName, metadata);
 };

@@ -77,7 +77,7 @@ export function ensureFirstSeen(): void {
  */
 export function daysSinceFirstSeen(): {
   days_since_first_seen?: number;
-  first_seen_is_install?: boolean;
+  first_seen_is_install?: 'true' | 'false'; // string: GA4 drops booleans (095)
 } {
   const raw = read(FIRST_SEEN_KEY);
   if (!raw) return {};
@@ -85,6 +85,6 @@ export function daysSinceFirstSeen(): {
   if (!Number.isFinite(then)) return {};
   return {
     days_since_first_seen: Math.max(0, Math.floor((Date.now() - then) / 86400000)),
-    first_seen_is_install: read(FIRST_SEEN_IS_INSTALL_KEY) !== 'false',
+    first_seen_is_install: read(FIRST_SEEN_IS_INSTALL_KEY) !== 'false' ? 'true' : 'false',
   };
 }

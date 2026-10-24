@@ -3,7 +3,7 @@ import { Capacitor } from '@capacitor/core';
 import HealthKitHeartRate, { HeartRateUpdateEvent } from '../plugins/healthKitHeartRate';
 import type { PluginListenerHandle } from '@capacitor/core';
 import { trackTenjinPermission } from '../lib/tenjin';
-import { trackEvent } from '../services/AnalyticsService';
+import { trackEvent, boolParam } from '../services/AnalyticsService';
 
 export type MonitoringMode = 'direct' | 'workout' | 'realtime' | null;
 
@@ -95,7 +95,7 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
       try {
         if (localStorage.getItem('onda_health_perm_logged') !== String(_granted)) {
           localStorage.setItem('onda_health_perm_logged', String(_granted));
-          trackEvent('health_permission', { scope: 'healthkit', granted: _granted });
+          trackEvent('health_permission', { scope: 'healthkit', granted: boolParam(_granted) });
         }
       } catch {}
       // Tenjin native attribution: unchanged (every system-prompt resolution).

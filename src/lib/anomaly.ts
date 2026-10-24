@@ -198,3 +198,16 @@ export function saveAnomalyState(s: AnomalyState): void {
 export function canSignal(now: number, lastSignalAt?: number): boolean {
   return lastSignalAt == null || now - lastSignalAt >= SIGNAL_COOLDOWN_MS;
 }
+
+/* ── baseline_state analytics (task 095) ───────────────────────────────────
+ * Daily, category-only summary of the corridor check: NO values, NO metric name.
+ *   insufficient — no metric has MIN_NIGHTS prior nights yet
+ *   out          — last night outside a corridor (same rule as the traffic light)
+ *   in_corridor  — enough history and every metric inside its corridor        */
+export type BaselineCorridorState = 'in_corridor' | 'out' | 'insufficient';
+
+export function baselineCorridorState(signals: SignalInput[]): BaselineCorridorState {
+  const ready = signals.filter((s) => Array.isArray(s.nights) && s.nights.length >= MIN_NIGHTS);
+  if (!ready.length) return 'insufficient';
+  return computeTrafficLight(ready).light === 'green' ? 'in_corridor' : 'out';
+}

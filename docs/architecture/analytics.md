@@ -112,6 +112,21 @@ await analytics.flush();
 
 ### Permission Events
 
+> **095 — read before comparing numbers across versions** (ships in the next
+> release 1.9.5):
+> - **`practice_start` double count removed.** Up to and including 1.9.4, starts
+>   from the recommendation card (`recommend_static`) and the calm check-in push
+>   fired `practice_start` twice (once at the intro, once when the session began).
+>   From 1.9.5 it fires once, in `beginPractice`, with
+>   `source` (home = level 1 grid, level = higher levels, recommend_static,
+>   checkin = face/voice check, signal, push = calm check-in A1/B1, onboarding).
+>   Do not compare `practice_start` counts across that seam directly.
+> - **No boolean params.** Firebase/GA4 drops booleans ("(not set)"). Booleans are
+>   a compile error in `track()` (`AnalyticsParams`/`NoBooleanParams`), callers use
+>   `boolParam()`, and `track()` converts any remaining boolean to `"true"`/`"false"`
+>   before every sink. Older versions show these params as "(not set)".
+
+
 | Event | Description | Metadata |
 |-------|-------------|----------|
 | `health_permission` | HealthKit prompt resolved (deduped by granted-state — see note) | `scope`, `granted` |
@@ -119,7 +134,9 @@ await analytics.flush();
 | `notification_prompt_result` | Notification prompt resolved | `status` |
 | `onboarding_permission_screen_view` | Permission screen shown | — |
 | `watch_connection_attempt` | Trying to connect watch | — |
-| `watch_connect_success` | Watch connected | `heart_rate`, `is_connected` |
+| `watch_connect_success` | Watch connected | `is_connected`, `is_first` (true only on first-ever connection; Capacitor Preferences flag `onda_watch_connected_ever`) |
+| `baseline_state` | Daily corridor check (once per local day; Capacitor Preferences `onda_baseline_state_sent_day`) | `state` (in_corridor\|out\|insufficient) — no values, no metric name |
+| `notif_prompt_answered` | Notification system prompt answered | `trigger` (onboarding\|first_camera), `granted` (true\|false), `answer` (yes\|no) |
 | `watch_connection_failed` | Watch connection failed | `error` |
 
 > `health_permission` is deduped by the granted state (localStorage
@@ -131,7 +148,7 @@ await analytics.flush();
 
 | Event | Description | Metadata |
 |-------|-------------|----------|
-| `practice_start` | Practice started | `practice_type` (standard\|adaptive), `practice_id`, `has_biometrics` |
+| `practice_start` | Practice started (fires once, when the session begins) | `practice_type` (standard\|adaptive), `practice_id`, `has_biometrics`, `source` (home\|level\|recommend_static\|checkin\|signal\|push\|onboarding), `mode` |
 | `practice_pause` | Practice paused | `practice_id` |
 | `practice_resume` | Practice resumed | `practice_id` |
 | `practice_complete` | Practice finished | `practice_type`, `practice_id`, `duration_seconds`, `quality_score`, `ond_earned` |
