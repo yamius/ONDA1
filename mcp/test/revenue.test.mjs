@@ -66,6 +66,35 @@ const OVERVIEW = {
   ],
 };
 
+// Separate, unmocked instance of the source module (query string = new URL).
+const real = await import(rcUrl + '?real');
+
+// Shapes copied from the live debug output of 2026-10-24 (aggregates only).
+const row = (day, measure, value, incomplete = false) => ({ cohort: 1787616000 + day * 86400, incomplete, measure, value });
+const LIVE_CHARTS = {
+  trials_new: {
+    measures: [{ display_name: 'New Trials', unit: '#' }],
+    summary: { average: { 'New Trials': 0.2 }, total: { 'New Trials': 12 } },
+    values: [row(0, 0, 4), row(1, 0, 6), row(2, 0, 2), row(3, 0, 0, true)],
+  },
+  trial_conversion_rate: {
+    measures: ['Trial Starts', 'Conversions', 'Expirations', 'Pending', 'Conversion Rate'].map((d) => ({ display_name: d })),
+    summary: { total: { 'Trial Starts': 12, Conversions: 2, Expirations: 9, Pending: 1, 'Conversion Rate': 16.67 } },
+    // Last day quiet: its rate is 0 - the old "last value" read exactly this.
+    values: [row(0, 0, 12), row(0, 1, 2), row(0, 4, 16.67), row(5, 0, 0), row(5, 4, 0)],
+  },
+  refund_rate: {
+    measures: ['Transactions', 'Refunded Transactions', 'Refund Rate'].map((d) => ({ display_name: d })),
+    summary: { total: { Transactions: 6, 'Refunded Transactions': 1, 'Refund Rate': 16.67 } },
+    values: [],
+  },
+  churn: {
+    measures: ['Actives', 'Churned Actives', 'Churn Rate'].map((d) => ({ display_name: d })),
+    summary: { average: { Actives: 5, 'Churned Actives': 0.02, 'Churn Rate': 0.31 } }, // no total
+    values: [row(0, 0, 5), row(0, 1, 0), row(0, 2, 0), row(39, 0, 5), row(39, 1, 1), row(39, 2, 20), row(59, 0, 5), row(59, 1, 0), row(59, 2, 0)],
+  },
+};
+
 mock.module(rcUrl, {
   namedExports: {
     revenueCatMissing: () => [],
@@ -79,27 +108,13 @@ mock.module(rcUrl, {
       // proceeds is NOT gross*0.7 — that is the whole point.
       value: revenueType === 'proceeds' ? 76.4 : 89.94,
     }),
-    chartData: async (name) => {
-      if (name === 'trials_new') return { values: [[1, 4], [2, 6], [3, 2]] };
-      if (name === 'trial_conversion_rate') return { values: [[1, 0.1], [2, 0.25]] };
-      if (name === 'refund_rate') return { values: [[1, 1], [2, 0]] };
-      if (name === 'churn') return { values: [[1, 0.04], [2, 0.06]] };
-      return { values: [], segments: [] };
-    },
+    chartData: async (name) => LIVE_CHARTS[name] ?? { values: [], segments: [] },
     chartOptions: async () => ({ segments: [{ id: 'store', display_name: 'Store' }] }),
-    measureColumn: () => 1,
-    sumSeries: (c, i = 1) => {
-      let total = 0, points = 0;
-      for (const row of c?.values ?? []) {
-        if (Array.isArray(row) && typeof row[i] === 'number') { total += row[i]; points++; }
-      }
-      return { total, points };
-    },
-    lastValue: (c, i = 1) => {
-      const rows = c?.values ?? [];
-      for (let k = rows.length - 1; k >= 0; k--) if (typeof rows[k]?.[i] === 'number') return rows[k][i];
-      return null;
-    },
+    // The REAL parsers, so the tests exercise the live row/summary shapes.
+    measureColumn: real.measureColumn,
+    sumSeries: real.sumSeries,
+    lastValue: real.lastValue,
+    summaryValue: real.summaryValue,
     findSegment: (opts, cands) => {
       const list = opts?.segments ?? [];
       const hit = list.find((s) => cands.some((c) => String(s.id).includes(c)));
@@ -135,10 +150,24 @@ test('trials carry their N and a low_data flag', async () => {
   assert.equal(r.trials.conversion.low_data, true, '12 < 30');
 });
 
-test('cancelled trials are declared unavailable rather than invented', async () => {
-  const r = await revenueReview({ since: 28, view: 'top' });
-  assert.equal(r.trials.cancelled_or_expired.available, false);
-  assert.match(r.trials.cancelled_or_expired.reason, /still running/);
+test('conversion = RevenueCat window summary, not the last (quiet) day', async () => {
+  const r = await revenueReview({ since: 60, view: 'top' });
+  const c = r.trials.conversion;
+  assert.equal(c.rate_pct, 16.67);
+  assert.equal(c.conversions, 2);
+  assert.equal(c.expirations, 9);
+  assert.equal(c.pending, 1);
+  assert.equal(c.rate_of_decided_pct, 18.18);
+  assert.equal(r.trials.cancelled_or_expired.expired, 9);
+});
+
+test('churn counts churned actives over the window (summary has no total)', async () => {
+  const r = await revenueReview({ since: 60, view: 'top' });
+  assert.equal(r.churn.churned_in_window, 1);
+  assert.equal(r.churn.avg_daily_churn_rate_pct, 0.31);
+  assert.equal(r.churn.window_churn_pct, 20);
+  assert.equal(r.refunds.count, 1);
+  assert.equal(r.refunds.rate_pct, 16.67);
 });
 
 test('a breakdown with no matching segment reports what the chart does support', async () => {

@@ -140,6 +140,17 @@ export function measureColumn(chart, pattern, fallback = 1) {
   return i >= 0 ? i + 1 : fallback;
 }
 
+/**
+ * RevenueCat's own window aggregate for a measure, from `chart.summary`:
+ *   summary = { total: { "<measure display name>": n }, average: { ... } }
+ * (live shape, 2026-10-24). Rates are in PERCENT (unit "%"). Returns null when
+ * the chart has no such aggregate - e.g. churn has `average` only.
+ */
+export function summaryValue(chart, kind, measureName) {
+  const v = chart?.summary?.[kind]?.[measureName];
+  return typeof v === 'number' && Number.isFinite(v) ? v : null;
+}
+
 /** Sum one measure of a chart over the window. */
 export function sumSeries(chart, columnIndex = 1) {
   const cells = measureCells(chart, columnIndex);

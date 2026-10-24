@@ -8,7 +8,7 @@
 
 import {
   revenueCatMissing, overviewMetrics, revenueMetric, chartData, chartOptions,
-  sumSeries, lastValue, findSegment, measureColumn,
+  sumSeries, findSegment, measureColumn, summaryValue,
 } from '../lib/sources/revenuecat.js';
 import { windowFor, ok, notConfigured, sourceError } from '../lib/shared.js';
 
@@ -42,7 +42,7 @@ async function chartSafe(name, win, pick) {
  * Shape of a chart for debugging: measure/period names, summary, row count and
  * a few rows. Charts are aggregate counts/rates only - no customer data.
  */
-function chartShape(c) {
+function chartShape(c, withRows = false) {
   const names = (l) => (Array.isArray(l) ? l.map((m) => m?.display_name ?? m?.name ?? m?.id ?? null) : null);
   const rows = Array.isArray(c?.values) ? c.values : [];
   return {
@@ -55,8 +55,7 @@ function chartShape(c) {
     segments: names(c?.segments),
     summary: c?.summary ?? null,
     rows: rows.length,
-    first_rows: rows.slice(0, 6),
-    last_rows: rows.slice(-8),
+    ...(withRows ? { first_rows: rows.slice(0, 6), last_rows: rows.slice(-8) } : {}),
   };
 }
 
@@ -151,11 +150,35 @@ export async function revenueReview(args = {}) {
     };
 
     // --- Trials, refunds, churn -------------------------------------------
+    // Live shapes (2026-10-24): values = [{cohort, measure, value, incomplete}],
+    // measures by display name, and `summary.total/average` keyed by that name.
+    // Window figures come from summary (RevenueCat's own aggregate); the last
+    // daily point is NOT a window figure (it read 0 on a quiet last day).
     const [trialsNew, conv, refunds, churn] = await Promise.all([
-      chartSafe('trials_new', win, (c) => sumSeries(c, measureColumn(c, /trial|new/i)).total),
-      chartSafe('trial_conversion_rate', win, (c) => lastValue(c, measureColumn(c, /rate|conversion/i))),
-      chartSafe('refund_rate', win, (c) => sumSeries(c, measureColumn(c, /^refunds?$|refunded/i)).total),
-      chartSafe('churn', win, (c) => lastValue(c, measureColumn(c, /rate/i))),
+      chartSafe('trials_new', win, (c) =>
+        summaryValue(c, 'total', 'New Trials') ?? sumSeries(c, measureColumn(c, /trial|new/i)).total),
+      chartSafe('trial_conversion_rate', win, (c) => {
+        const col = (re) => sumSeries(c, measureColumn(c, re, 0)).total;
+        const starts = summaryValue(c, 'total', 'Trial Starts') ?? col(/^trial starts$/i);
+        const conversions = summaryValue(c, 'total', 'Conversions') ?? col(/^conversions$/i);
+        const expirations = summaryValue(c, 'total', 'Expirations') ?? col(/^expirations$/i);
+        const pending = summaryValue(c, 'total', 'Pending') ?? col(/^pending$/i);
+        const decided = conversions + expirations;
+        const ratePct = summaryValue(c, 'total', 'Conversion Rate')
+          ?? (starts > 0 ? Math.round((conversions / starts) * 10000) / 100 : null);
+        return { starts, conversions, expirations, pending, ratePct,
+          decidedRatePct: decided > 0 ? Math.round((conversions / decided) * 10000) / 100 : null };
+      }),
+      chartSafe('refund_rate', win, (c) => ({
+        refunded: summaryValue(c, 'total', 'Refunded Transactions') ?? sumSeries(c, measureColumn(c, /refunded/i, 2)).total,
+        transactions: summaryValue(c, 'total', 'Transactions') ?? sumSeries(c, measureColumn(c, /^transactions$/i, 1)).total,
+        ratePct: summaryValue(c, 'total', 'Refund Rate'),
+      })),
+      chartSafe('churn', win, (c) => ({
+        churned: sumSeries(c, measureColumn(c, /churned/i, 2)).total,
+        avgActives: summaryValue(c, 'average', 'Actives'),
+        avgDailyRatePct: summaryValue(c, 'average', 'Churn Rate'),
+      })),
     ]);
 
     const started = trialsNew.ok ? trialsNew.value : null;
@@ -163,30 +186,41 @@ export async function revenueReview(args = {}) {
       started: trialsNew.ok ? started : trialsNew,
       conversion: conv.ok
         ? {
-            reported_rate: conv.value,
-            of_trials_started: started,
-            low_data: started === null || started < 30,
+            rate_pct: conv.value.ratePct,
+            conversions: conv.value.conversions,
+            expirations: conv.value.expirations,
+            pending: conv.value.pending,
+            of_trials_started: conv.value.starts,
+            rate_of_decided_pct: conv.value.decidedRatePct,
+            low_data: !(conv.value.starts >= 30),
             note:
-              'Rate as RevenueCat computes it, with the N it applies to beside it. ' +
-              'Conversions belong to the cohort that STARTED the trial, so a window ' +
-              'shorter than the trial length reports a rate still maturing.',
+              'RevenueCat trial_conversion_rate summary for trials STARTED in the window ' +
+              '(percent). Pending trials have not resolved yet, so rate_pct can still rise; ' +
+              'rate_of_decided_pct = conversions / (conversions + expirations).',
           }
         : conv,
-      cancelled_or_expired: {
-        available: false,
-        reason:
-          'Not derivable without inventing it: started minus converted also counts ' +
-          'trials still running. The trials_movement chart carries the real ' +
-          'breakdown and is not wired yet.',
-      },
+      cancelled_or_expired: conv.ok
+        ? { expired: conv.value.expirations, pending: conv.value.pending,
+            note: 'From trial_conversion_rate: trials that ended without converting, and trials still running.' }
+        : conv,
     };
 
     result.refunds = refunds.ok
-      ? { count: refunds.value, note: 'From the refund_rate chart (transactions, refunds and rate per period).' }
+      ? { count: refunds.value.refunded, of_transactions: refunds.value.transactions, rate_pct: refunds.value.ratePct,
+          note: 'refund_rate chart summary over the window.' }
       : refunds;
 
     result.churn = churn.ok
-      ? { rate: churn.value, note: 'Churn rate at the end of the window, per the churn chart.' }
+      ? {
+          churned_in_window: churn.value.churned,
+          avg_actives: churn.value.avgActives,
+          avg_daily_churn_rate_pct: churn.value.avgDailyRatePct,
+          window_churn_pct: churn.value.avgActives > 0
+            ? Math.round((churn.value.churned / churn.value.avgActives) * 10000) / 100 : null,
+          note:
+            'Churned Actives summed over the window; RevenueCat gives churn only as a ' +
+            'daily average (no window total), so window_churn_pct = churned / average actives.',
+        }
       : churn;
 
     // --- Breakdowns: only where the chart says they exist ------------------
@@ -198,7 +232,7 @@ export async function revenueReview(args = {}) {
     if (args.debug === true || view === 'full') {
       result._debug = Object.fromEntries(
         [['trials_new', trialsNew], ['trial_conversion_rate', conv], ['refund_rate', refunds], ['churn', churn]]
-          .map(([n, r]) => [n, r.ok ? chartShape(r.chart) : { error: r.error ?? r.message ?? 'failed' }]),
+          .map(([n, r]) => [n, r.ok ? chartShape(r.chart, args.debug === true) : { error: r.error ?? r.message ?? 'failed' }]),
       );
     }
 
