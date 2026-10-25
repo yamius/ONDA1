@@ -16,6 +16,7 @@
 import { LocalNotifications, type ScheduleOptions } from '@capacitor/local-notifications';
 import { Capacitor } from '@capacitor/core';
 import i18n from 'i18next';
+import { setNotificationOpenHandler, type NotificationOpenInfo } from './notificationRouter';
 
 // === Storage keys (kept stable so Sprint 2/3 can reuse) ===
 const LS_DAILY_ENABLED = 'onda_reminders_daily_enabled';
@@ -302,19 +303,48 @@ export async function scheduleCheckinSeriesB(startVariant: 0 | 1, opts?: { fast?
       : nextOccurrence(13, 0, (i + 1) * CHECKIN_B_INTERVAL_DAYS);      // +3,+6,+9,+12 days
     const variant = ((startVariant + i) % 2) as 0 | 1;
     const type: CheckinNotifType = variant === 0 ? 'B1' : 'B2';
-    notifications.push({
-      id: CHECKIN_B_ID_BASE + i,
-      title: checkinTitle(),
-      body: tCheckin(type),
-      schedule: { at, allowWhileIdle: true },
-      extra: { kind: 'checkin', checkin_type: type, segment: 'no_watch' as CheckinNotifSegment, simulated: fast },
-    });
+    notifications.push(checkinBNotification(CHECKIN_B_ID_BASE + i, type, at, { simulated: fast }));
   }
   try {
     await LocalNotifications.schedule({ notifications });
     return true;
   } catch (e) {
     console.warn('[notifications] checkin B series schedule failed', e);
+    return false;
+  }
+}
+
+/** The ONE Segment-B notification shape — production series and the TEST-build trigger share it. */
+function checkinBNotification(id: number, type: CheckinNotifType, at: Date, flags: { simulated?: boolean; internal_test?: boolean } = {}) {
+  return {
+    id,
+    title: checkinTitle(),
+    body: tCheckin(type),
+    schedule: { at, allowWhileIdle: true },
+    extra: {
+      kind: 'checkin', checkin_type: type, segment: 'no_watch' as CheckinNotifSegment,
+      simulated: !!flags.simulated,
+      ...(flags.internal_test ? { internal_test: true } : {}),
+    },
+  };
+}
+
+/**
+ * TEST builds only (task 097): a REAL B1/B2 — same payload as production (not
+ * simulated, so the open path + analytics run for real), tagged internal_test.
+ * Analytics from it are internal because the TEST build itself is marked
+ * internal (VITE_INTERNAL_BUILD → `internal` user property / metadata).
+ */
+export async function scheduleCheckinRealTest(type: 'B1' | 'B2', delaySeconds = 8): Promise<boolean> {
+  if (!isSupported()) return false;
+  if (await checkPermission() !== 'granted' && await requestPermission() !== 'granted') return false;
+  try {
+    await LocalNotifications.schedule({
+      notifications: [checkinBNotification(4091, type, new Date(Date.now() + delaySeconds * 1000), { internal_test: true })],
+    });
+    return true;
+  } catch (e) {
+    console.warn('[notifications] checkin real test failed', e);
     return false;
   }
 }
@@ -369,24 +399,9 @@ export async function cancelCheckinSeriesB(): Promise<void> {
 // === Open-from-notification listener ===
 
 /**
- * Wire this once on app boot. The callback fires when the user taps a
- * notification we scheduled. Use it to send a Tenjin event with the
- * copy_variant_id so we can A/B copy.
+ * Compat wrapper: taps are routed by ONE module-load listener in
+ * ./notificationRouter (cold-start safe). Prefer setNotificationOpenHandler.
  */
-export function onNotificationOpened(cb: (info: { kind: string; copy_variant_id?: number; streak?: number; checkin_type?: CheckinNotifType; segment?: CheckinNotifSegment; simulated?: boolean }) => void) {
-  if (!isSupported()) return () => {};
-  const handle = LocalNotifications.addListener('localNotificationActionPerformed', (event) => {
-    const extra = event.notification?.extra || {};
-    cb({
-      kind: extra.kind ?? 'unknown',
-      copy_variant_id: extra.copy_variant_id,
-      streak: extra.streak,
-      checkin_type: extra.checkin_type,
-      segment: extra.segment,
-      simulated: extra.simulated === true,
-    });
-  });
-  return () => {
-    handle.then((h) => h.remove()).catch(() => undefined);
-  };
+export function onNotificationOpened(cb: (info: NotificationOpenInfo) => void) {
+  return setNotificationOpenHandler(cb);
 }

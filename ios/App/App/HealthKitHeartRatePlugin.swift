@@ -25,6 +25,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "startAnomalyMonitoring", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "scheduleTestPush", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "simulateCheckin", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "scheduleRealTestPush", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "exportPdf", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "exportHtml", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startRealtimeMonitoring", returnType: CAPPluginReturnPromise),
@@ -846,7 +847,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         return (metric, (latest * 10).rounded() / 10, ((mean - sd) * 10).rounded() / 10, ((mean + sd) * 10).rounded() / 10, mag)
     }
 
-    private func postAnomalyNotification(metric: String, value: Double, lo: Double, hi: Double) {
+    private func postAnomalyNotification(metric: String, value: Double, lo: Double, hi: Double, delay: TimeInterval = 0, internalTest: Bool = false) {
         let d = UserDefaults.standard
         // The push carries NO numbers (those are in the in-app card). It just
         // varies by how many signals have fired: intro for the first 3, short
@@ -860,13 +861,20 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         content.title = d.string(forKey: "anomaly_title") ?? "ONDA"
         content.body = count <= 3 ? intro : short
         content.sound = .default
-        content.userInfo = ["anomaly_metric": metric]
+        // Payload under "cap_extra" too — that's what @capacitor/local-notifications
+        // hands JS as notification.extra (task 097); top-level keys kept for safety.
+        var info: [String: Any] = ["kind": "signal", "anomaly_metric": metric, "anomaly_value": value, "anomaly_lo": lo, "anomaly_hi": hi]
+        if internalTest { info["internal_test"] = true }
+        var userInfo = info
+        userInfo["cap_extra"] = info
+        content.userInfo = userInfo
         // Time-sensitive → breaks through Focus/DND and shows as prominently and
         // as long as iOS allows an app to make it (the app CANNOT force a banner to
         // stay until tapped — that's the user's "Persistent" banner style — but the
         // notification itself stays in Notification Center until acted on).
         if #available(iOS 15.0, *) { content.interruptionLevel = .timeSensitive }
-        let req = UNNotificationRequest(identifier: "onda_anomaly", content: content, trigger: nil) // deliver now
+        let trigger = delay > 0 ? UNTimeIntervalNotificationTrigger(timeInterval: delay, repeats: false) : nil // nil = deliver now
+        let req = UNNotificationRequest(identifier: internalTest ? "onda_anomaly_realtest" : "onda_anomaly", content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
     }
 
@@ -970,14 +978,19 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         self.postCheckinNotification(title: title, body: body, type: type)
     }
 
-    private func postCheckinNotification(title: String, body: String, type: String) {
+    private func postCheckinNotification(title: String, body: String, type: String, delay: TimeInterval = 0, internalTest: Bool = false) {
         let content = UNMutableNotificationContent()
         content.title = title
         content.body = body
         content.sound = .default
-        content.userInfo = ["kind": "checkin", "checkin_type": type, "segment": "watch"]
+        var info: [String: Any] = ["kind": "checkin", "checkin_type": type, "segment": "watch"]
+        if internalTest { info["internal_test"] = true }
+        var userInfo = info
+        userInfo["cap_extra"] = info // what the Capacitor plugin exposes to JS as extra (task 097)
+        content.userInfo = userInfo
         // Calm — NOT time-sensitive (a "you're fine" nudge must never break Focus/DND).
-        let req = UNNotificationRequest(identifier: "onda_checkin", content: content, trigger: nil)
+        let trigger = delay > 0 ? UNTimeIntervalNotificationTrigger(timeInterval: delay, repeats: false) : nil
+        let req = UNNotificationRequest(identifier: internalTest ? "onda_checkin_realtest_\(type)" : "onda_checkin", content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
     }
 
@@ -1003,10 +1016,46 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         content.title = title
         content.body = body
         content.sound = .default
-        content.userInfo = ["kind": "checkin", "checkin_type": type, "segment": "watch", "simulated": true]
+        let simInfo: [String: Any] = ["kind": "checkin", "checkin_type": type, "segment": "watch", "simulated": true]
+        var simUserInfo = simInfo
+        simUserInfo["cap_extra"] = simInfo
+        content.userInfo = simUserInfo
         let trigger = delay > 0 ? UNTimeIntervalNotificationTrigger(timeInterval: delay, repeats: false) : nil
         let req = UNNotificationRequest(identifier: "onda_checkin_test_\(type)", content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
+        call.resolve(["ok": true])
+    }
+
+    /// TEST builds only (task 097, the JS button is compiled out of App Store
+    /// builds): post a REAL A1/A2/A3 or signal push after a delay through the SAME
+    /// production post functions (same payload), tagged internal_test — NOT
+    /// simulated, so the tap path + analytics run for real (internal-marked build).
+    @objc func scheduleRealTestPush(_ call: CAPPluginCall) {
+        let d = UserDefaults.standard
+        let kind = call.getString("kind") ?? "A1"
+        let delay = max(1.0, call.getDouble("delaySeconds") ?? 8.0)
+        if kind == "signal" {
+            let metric = call.getString("metric") ?? "rhr"
+            let sample: (Double, Double, Double)
+            switch metric {
+            case "hrv": sample = (48, 59, 71)
+            case "rr": sample = (17.5, 11, 17)
+            default: sample = (66, 55, 61)
+            }
+            postAnomalyNotification(metric: metric, value: sample.0, lo: sample.1, hi: sample.2, delay: delay, internalTest: true)
+            call.resolve(["ok": true])
+            return
+        }
+        let title = d.string(forKey: "checkin_title") ?? "ONDA"
+        var body: String
+        switch kind {
+        case "A2": body = d.string(forKey: "checkin_a2") ?? "Another 4 steady nights — your body's in its normal range."
+        case "A3": body = d.string(forKey: "checkin_a3") ?? "Your body's in its rhythm. Want more? Switch to Expert mode in Settings."
+        default:
+            let tmpl = d.string(forKey: "checkin_a1") ?? "4 nights in your usual range. Resting pulse steady around {x}."
+            body = tmpl.replacingOccurrences(of: "{{x}}", with: "60").replacingOccurrences(of: "{x}", with: "60")
+        }
+        postCheckinNotification(title: title, body: body, type: kind == "A2" || kind == "A3" ? kind : "A1", delay: delay, internalTest: true)
         call.resolve(["ok": true])
     }
 
@@ -1022,7 +1071,10 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         content.title = title
         content.body = body
         content.sound = .default
-        content.userInfo = ["simulated": true]
+        let simInfo: [String: Any] = ["kind": "signal", "simulated": true]
+        var simUserInfo = simInfo
+        simUserInfo["cap_extra"] = simInfo
+        content.userInfo = simUserInfo
         if #available(iOS 15.0, *) { content.interruptionLevel = .timeSensitive }
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: delay, repeats: false)
         let req = UNNotificationRequest(identifier: "onda_anomaly_test_\(Int(Date().timeIntervalSince1970))", content: content, trigger: trigger)

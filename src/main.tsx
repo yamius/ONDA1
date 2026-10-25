@@ -5,6 +5,9 @@ import ErrorBoundary from './components/ErrorBoundary';
 import { ThemeProvider } from './theme/ThemeProvider';
 import './index.css';
 import './i18n';
+// Notification-tap router: its ONE listener must attach before React renders so a
+// cold-start tap (retained by Capacitor for the first listener only) is buffered.
+import './services/notificationRouter';
 
 // Render IMMEDIATELY. Everything that isn't required to paint the first
 // frame — Sentry, resourceTracker, crash detector, analytics, deep-link

@@ -77,8 +77,10 @@ import {
   scheduleCheckinSeriesB,
   cancelCheckinSeriesB,
   scheduleCheckinTestSingle,
+  scheduleCheckinRealTest,
   getPendingNotifications,
 } from './services/notifications';
+import type { NotificationOpenInfo } from './services/notificationRouter';
 import { loadCheckinState, saveCheckinState, dayKey as checkinDayKey } from './lib/checkins';
 import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
@@ -1045,18 +1047,8 @@ const OndaLevel1 = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [watchHeartRate.isConnected]);
 
-  // Opened from an anomaly local notification → analytics (the in-app prompt is
-  // re-raised by the evaluation effect on foreground).
-  useEffect(() => {
-    let handle: { remove: () => void } | undefined;
-    LocalNotifications.addListener('localNotificationActionPerformed', (a) => {
-      const extra = (a?.notification as { extra?: Record<string, unknown> })?.extra;
-      const metric = (extra?.anomaly_metric as string) ?? 'unknown';
-      try { track('signal_push_opened', {}); } catch { /* noop */ }
-    }).then((h) => { handle = h; }).catch(() => { /* noop */ });
-    return () => { try { handle?.remove(); } catch { /* noop */ } };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // Notification taps (signal + check-ins) are routed by ONE handler below
+  // (routeNotificationOpen, task 097) — no per-feature listeners here.
   const [showStatsModal, setShowStatsModal] = useState(false);
   const [expandedPractice, setExpandedPractice] = useState(null);
   const [unlockedAchievements, setUnlockedAchievements] = useState([]);
@@ -4525,37 +4517,96 @@ const OndaLevel1 = () => {
       if (isActive) reconcile();
     }).then((h) => { stateSub = h; }).catch(() => undefined);
 
-    const offOpened = onNotificationOpened((info) => {
-      if (info.kind === 'checkin') {
-        // Simulated (internal test) opens route so the tester sees the screen, but
-        // never hit real analytics — same rule as the signal test mode.
-        if (!info.simulated) { try { track('checkin_push_opened', { segment: info.segment, type: info.checkin_type }); } catch { /* noop */ } }
-        const type = info.checkin_type;
-        if (type === 'A1' || type === 'B1') {
-          startRandomAvailablePractice();            // → a random available practice
-        } else if (type === 'A2') {
-          // Diary lives in the detailed experience — switch a simple-mode user over.
-          if (appMode === 'simple') { try { persistMode('detailed'); } catch { /* noop */ } setAppMode('detailed'); }
-          setDiaryExportMode(null); setShowDiaryModal(true); // → new diary note
-        } else if (type === 'A3') {
-          setShowSettingsModal(true);                // → Settings (mode toggle)
-        } else if (type === 'B2') {
-          setCameraCheckinActive(true);              // → camera check-in → diary
-          try { cameraPpg.start(); } catch { /* noop */ }
-          // Bring the live pulse readout into view (opening from a push lands at the top).
-          window.setTimeout(() => { try { cameraSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch { /* noop */ } }, 600);
-        }
-        return;
-      }
-      console.log('[notifications] opened', info);
-    });
-
     return () => {
       stateSub?.remove();
-      offOpened();
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [practiceHistory, reconcileCheckinB]);
+
+  // ── ONE notification-tap router (task 097) ──
+  // The tap is captured at module load (services/notificationRouter, imported in
+  // main.tsx) and buffered; we attach ONCE, after the subscription state is known
+  // (so A1/B1 pick from the right pool), and read live state through a ref — no
+  // stale closures, no re-subscribing.
+  const routeNotificationOpen = (info: NotificationOpenInfo) => {
+    if (info.kind === 'signal') {
+      // Signal push: never starts a practice. Raise the prompt NOW (what was
+      // noticed + the practice offer); a practice from it keeps source=signal.
+      if (!info.simulated) { try { track('signal_push_opened', {}); } catch { /* noop */ } }
+      const st = loadAnomalyState();
+      let pending: PendingAnomaly | null = st.pending ?? null;
+      if (pending && info.metric && pending.metric !== info.metric && !pending.recorded) pending = null;
+      if (!pending && info.simulated && anomalyPrompt) pending = anomalyPrompt; // sim mode already injected it
+      if (!pending && info.metric) {
+        const now = Date.now();
+        const lo = info.lo ?? 0, hi = info.hi ?? 0;
+        const mean = (lo + hi) / 2, sd = Math.max(0.1, (hi - lo) / 2);
+        const latest = info.value ?? mean;
+        const delta = Math.round((latest - mean) * 10) / 10;
+        pending = {
+          metric: info.metric,
+          direction: info.hi != null && info.value != null ? (info.value > info.hi ? 'high' : 'low') : (info.metric === 'hrv' ? 'low' : 'high'),
+          mean, sd, latest, delta, magnitudeSd: Math.abs(delta) / sd, loBound: lo, hiBound: hi, nights: 0,
+          at: now, night: new Date(now).toISOString().slice(0, 10), signalCount: (st.signalCount ?? 0) + 1,
+        };
+        // Persist like a JS-raised signal (stays until acted on; the cooldown stops a double raise).
+        saveAnomalyState({ lastSignalAt: now, signalCount: pending.signalCount, pending });
+        if (!info.simulated) { try { track('signal_prompt_shown', {}); } catch { /* noop */ } }
+      }
+      if (pending) {
+        const p = { ...pending, remindAfter: undefined };
+        setAnomalyPrompt(p);
+        if (trafficState.light === 'green') {
+          setTrafficState({ light: 'yellow', metric: p.metric, direction: p.direction, anomaly: p, nights: 1, metrics: [p.metric] });
+        }
+        if (isCollapsed('recommendations')) toggleCollapse('recommendations');
+        window.setTimeout(() => {
+          try { document.querySelector('[data-testid="recommendations-block"]')?.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch { /* noop */ }
+        }, 600);
+      }
+      return;
+    }
+    if (info.kind === 'checkin') {
+      // Simulated (old internal route) opens route so the tester sees the screen,
+      // but never hit analytics. Real opens (incl. TEST-build internal_test pushes)
+      // track; the TEST build is already internal-marked.
+      if (!info.simulated) { try { track('checkin_push_opened', { segment: info.segment, type: info.checkin_type }); } catch { /* noop */ } }
+      const type = info.checkin_type;
+      if (type === 'A1' || type === 'B1') {
+        startRandomAvailablePractice();            // → a random available practice (source=push)
+      } else if (type === 'A2') {
+        // Diary lives in the detailed experience — switch a simple-mode user over.
+        if (appMode === 'simple') { try { persistMode('detailed'); } catch { /* noop */ } setAppMode('detailed'); }
+        setDiaryExportMode(null); setShowDiaryModal(true); // → new diary note
+      } else if (type === 'A3') {
+        setShowSettingsModal(true);                // → Settings (mode toggle)
+      } else if (type === 'B2') {
+        setCameraCheckinActive(true);              // → camera check-in → diary
+        try { cameraPpg.start(); } catch { /* noop */ }
+        // Bring the live pulse readout into view (opening from a push lands at the top).
+        window.setTimeout(() => { try { cameraSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch { /* noop */ } }, 600);
+      }
+      return;
+    }
+    console.log('[notifications] opened', info);
+  };
+  const routeNotificationOpenRef = useRef(routeNotificationOpen);
+  routeNotificationOpenRef.current = routeNotificationOpen;
+  const notifRouterAttachedRef = useRef(false);
+  useEffect(() => {
+    if (notifRouterAttachedRef.current) return;
+    const attach = () => {
+      if (notifRouterAttachedRef.current) return;
+      notifRouterAttachedRef.current = true;
+      // Next tick: let this render's state (circuits, isPremium, mode) commit first.
+      window.setTimeout(() => {
+        onNotificationOpened((info) => routeNotificationOpenRef.current(info));
+      }, 0);
+    };
+    if (!isSubLoading) { attach(); return; }
+    const t = window.setTimeout(attach, 5000); // never hold a tap forever on a slow subscription check
+    return () => window.clearTimeout(t);
+  }, [isSubLoading]);
 
   const getAverageQuality = () => {
     if (practiceHistory.length === 0) return 0;
@@ -9929,6 +9980,33 @@ const OndaLevel1 = () => {
                     onClick={() => { try { ['onda_camera_grants', 'onda_checkin_primer_dismissed', 'onda_checkin_primer_last'].forEach((k) => localStorage.removeItem(k)); } catch { /* noop */ } cameraGrantHandledRef.current = false; setCheckinPendingList('permission primer reset'); }}>Reset permission prompt</button>
                 </div>
                 {checkinPendingList && <pre className="mt-1 whitespace-pre-wrap opacity-70">{checkinPendingList}</pre>}
+              </div>
+            )}
+            {/* Push payload test (task 097) — TEST builds ONLY: compiled in when the
+                TestFlight workflow bakes VITE_INTERNAL_BUILD=true (internal_build auto
+                on a non-main branch); App Store builds from main never show it, even
+                after the 7-tap. REAL pushes through the production scheduling code
+                (tagged internal_test); kill the app after tapping, then tap the banner. */}
+            {import.meta.env.VITE_INTERNAL_BUILD === 'true' && Capacitor.isNativePlatform() && (
+              <div className={`mt-1 px-4 sm:px-6 py-2 text-[11px] font-mono ${isLight ? 'text-slate-500' : 'text-white/50'}`} data-testid="push-test-panel">
+                <div className="mb-1">📨 Real push test (8s) · kill app, then tap</div>
+                <div className="flex items-center gap-2 flex-wrap">
+                  {(['A1', 'A2', 'A3', 'signal'] as const).map((k) => (
+                    <button key={k} type="button" data-testid={`push-test-${k}`} className={`rounded px-2 py-1 ${isLight ? 'bg-sky-100 text-sky-700' : 'bg-sky-400/15 text-sky-200'}`}
+                      onClick={async () => {
+                        try {
+                          if ((await checkNotificationPermission()) !== 'granted') await requestNotificationPermission();
+                          await HealthKitHeartRate.scheduleRealTestPush({ kind: k, delaySeconds: 8, metric: 'rhr' });
+                          setCheckinPendingList(`${k} scheduled in 8s — kill the app now`);
+                        } catch (e) { setCheckinPendingList(`${k} failed: ${String(e)}`); }
+                      }}>{k === 'signal' ? 'Signal' : `${k} (watch)`}</button>
+                  ))}
+                  {(['B1', 'B2'] as const).map((k) => (
+                    <button key={k} type="button" data-testid={`push-test-${k}`} className={`rounded px-2 py-1 ${isLight ? 'bg-sky-100 text-sky-700' : 'bg-sky-400/15 text-sky-200'}`}
+                      onClick={async () => { const ok = await scheduleCheckinRealTest(k, 8); setCheckinPendingList(ok ? `${k} scheduled in 8s — kill the app now` : `${k} failed (permission?)`); }}>{k} (JS)</button>
+                  ))}
+                </div>
+                {!internalTrafficOn && checkinPendingList && <pre className="mt-1 whitespace-pre-wrap opacity-70">{checkinPendingList}</pre>}
               </div>
             )}
         </nav>
