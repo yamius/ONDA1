@@ -1038,7 +1038,7 @@ const OndaLevel1 = () => {
         // with Health), NOT here — starting monitoring must never prompt on launch.
         await HealthKitHeartRate.setAnomalyStrings({
           title: 'ONDA',
-          pushIntro: t('anomaly.push_intro', 'Твоё тело подало сигнал этой ночью. Загляни.'),
+          pushIntro: t('anomaly.push_intro', 'Твоё тело подало сигнал. Загляни.'),
           pushShort: t('anomaly.push_short', 'Есть свежий сигнал.'),
         });
         await HealthKitHeartRate.startAnomalyMonitoring();
@@ -1288,7 +1288,7 @@ const OndaLevel1 = () => {
         try {
           const perm = await LocalNotifications.checkPermissions();
           if (perm.display !== 'granted') await LocalNotifications.requestPermissions();
-          await HealthKitHeartRate.scheduleTestPush({ title: 'ONDA', body: t('anomaly.push_intro', 'Твоё тело подало сигнал этой ночью. Загляни.'), delaySeconds: 8 });
+          await HealthKitHeartRate.scheduleTestPush({ title: 'ONDA', body: t('anomaly.push_intro', 'Твоё тело подало сигнал. Загляни.'), delaySeconds: 8 });
         } catch { /* noop */ }
       })();
     }

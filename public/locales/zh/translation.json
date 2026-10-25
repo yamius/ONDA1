@@ -4292,7 +4292,7 @@
     "metric_hrv": "变异性",
     "metric_rr": "呼吸",
     "cta": "记录今天",
-    "push_intro": "你的身体昨夜发出了信号。来看看。",
+    "push_intro": "你的身体发出了信号。来看看。",
     "push_short": "有一条新信号。",
     "prompt_rhr": "你昨夜的脉搏是 {{value}}——通常 {{lo}}–{{hi}}。",
     "prompt_hrv": "你昨夜的变异性是 {{value}}——通常 {{lo}}–{{hi}}。",

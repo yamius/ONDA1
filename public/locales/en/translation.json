@@ -4292,7 +4292,7 @@
     "metric_hrv": "variability",
     "metric_rr": "breathing",
     "cta": "Record your day",
-    "push_intro": "Your body signalled last night. Take a look.",
+    "push_intro": "Your body sent a signal. Take a look.",
     "push_short": "There's a fresh signal.",
     "prompt_rhr": "Your pulse last night was {{value}} — usually {{lo}}–{{hi}}.",
     "prompt_hrv": "Your variability last night was {{value}} — usually {{lo}}–{{hi}}.",

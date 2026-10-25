@@ -854,7 +854,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         // after (task §4).
         let count = d.integer(forKey: "anomaly_push_count") + 1
         d.set(count, forKey: "anomaly_push_count")
-        let intro = d.string(forKey: "anomaly_push_intro") ?? "Your body signalled last night. Take a look."
+        let intro = d.string(forKey: "anomaly_push_intro") ?? "Your body sent a signal. Take a look."
         let short = d.string(forKey: "anomaly_push_short") ?? "There's a fresh signal."
 
         let content = UNMutableNotificationContent()
