@@ -103,6 +103,7 @@ export type AnalyticsEventName =
   // Paywall / Monetization
   | 'paywall_view'                   // ← merge paywall_viewed + Tenjin view_paywall
   | 'paywall_dismiss'                // ← Tenjin dismiss_paywall — params: source, action, plan, time_on_screen_seconds, paywall_source, seconds_on_paywall (string, 101)
+  | 'paywall_feedback'               // one-time answer after a paywall closed without purchase (101) - params: reason (price|try_first|unclear_value|other), paywall_source
   | 'plan_select'                    // user switched plan on the paywall (101) — params: plan
   | 'home_tap'                       // tap on a main home element, FIRST SESSION ONLY, once per target (101) — params: target, is_first_session
   | 'paywall_cta_tap'                // ← was trial_attempt / Tenjin click_paywall_button

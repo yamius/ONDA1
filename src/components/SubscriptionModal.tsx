@@ -7,6 +7,7 @@ import { isTrialOrIntro } from '../lib/purchasePeriod';
 import { readPaywallSource, recordPaywallSource, startTrialMarker, trialDaysFor } from '../lib/trialOutcome';
 import { loadLocalProgress } from '../lib/progressStore';
 import { purchaseErrorCode } from '../lib/purchaseErrors';
+import { requestPaywallFeedback } from '../lib/paywallFeedback';
 import { useAnalytics } from '../hooks/useAnalytics';
 import { useTheme } from '../theme/ThemeProvider';
 import { LegalModal } from './LegalModal';
@@ -176,6 +177,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
         plan: selectedPlanRef.current,
         time_on_screen_seconds: seconds,
       });
+      requestPaywallFeedback(source); // 101: one-time "what stopped you?"
       trackTenjinPaywallDismiss({
         source,
         plan: selectedPlanRef.current,

@@ -4384,5 +4384,12 @@
     "red1_body_other": "Tus valores llevan {{count}} días fuera de lo habitual. A menudo el cuerpo solo necesita descanso. Una práctica ayudará a volver al ritmo.",
     "red_body_one": "Tu cuerpo lleva {{count}} día fuera de su ritmo habitual. A menudo el descanso lo devuelve a la normalidad. Y si decides mirar de cerca, tu analítica en la Línea de tiempo está lista para mostrarla a un especialista.",
     "red_body_other": "Tu cuerpo lleva {{count}} días fuera de su ritmo habitual. A menudo el descanso lo devuelve a la normalidad. Y si decides mirar de cerca, tu analítica en la Línea de tiempo está lista para mostrarla a un especialista."
+  },
+  "paywall_feedback": {
+    "title": "¿Qué te detuvo?",
+    "price": "Es caro",
+    "try_first": "Quiero probar primero",
+    "unclear_value": "No entendí por qué pagar",
+    "other": "Otro"
   }
 }

@@ -107,6 +107,7 @@ import { recordPaywallSource } from './lib/trialOutcome';
 import { IS_INTERNAL_BUILD } from './lib/buildFlags';
 import { startFirstSession, endFirstSession } from './lib/firstSession';
 import { installHomeTapTracking } from './lib/homeTap';
+import { PaywallFeedback } from './components/PaywallFeedback';
 import { claimFirstWatchConnect, claimBaselineStateDay, claimFirstHomeView, type PracticeStartSource } from './lib/analyticsMarkers';
 // WelcomeScene is the only consumer of three.js in the codebase. It only
 // mounts when the user starts a practice (`practiceState === 'active'`),
@@ -9728,6 +9729,7 @@ const OndaLevel1 = () => {
         message={infoModalMessage}
       />
 
+      <PaywallFeedback />
       <SubscriptionModal
         isOpen={showSubscriptionModal}
         onClose={() => setShowSubscriptionModal(false)}

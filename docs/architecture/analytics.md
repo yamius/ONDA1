@@ -196,6 +196,7 @@ await analytics.flush();
 | `purchase_cancelled` | Cancelled in the StoreKit sheet (101) | `plan`, `error_code` |
 | `purchase_failed` | Purchase error other than cancel (101) | `plan`, `error_code` |
 | `home_tap` | Main-home tap, first session only (101) | `target`, `is_first_session` |
+| `paywall_feedback` | One-time "what stopped you?" after a paywall closed without purchase; never again after answer/dismiss; never for internal traffic (101) | `reason` (price\|try_first\|unclear_value\|other), `paywall_source` |
 | `trial_start` | Free trial started ($0 at Apple; only periodType TRIAL/INTRO, 096) | `product_id`, `plan`, `period_type`, `paywall_source` |
 | `trial_outcome` | Trial decided — once per trial, on the first app open after it (101) | `outcome` (converted\|expired), `plan`, `trial_days`, `practices_in_trial`, `days_active_in_trial`, `watch_connected`, `baseline_filled` |
 | `purchase` | Real paid conversion — Firebase **ecommerce**, keep this name | `value`, `currency`, `product_id`, `plan`, `first_practice_quality`, `paywall_source` |

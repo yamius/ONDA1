@@ -4384,5 +4384,12 @@
     "red1_body_other": "Your readings have stayed out of the usual for {{count}} days. Often the body just needs rest. A practice will help it return to rhythm.",
     "red_body_one": "Your body has stayed outside its usual rhythm for {{count}} day. Simple rest often brings it back. And if you decide to look closer, your Timeline analytics are ready to show a specialist.",
     "red_body_other": "Your body has stayed outside its usual rhythm for {{count}} days. Simple rest often brings it back. And if you decide to look closer, your Timeline analytics are ready to show a specialist."
+  },
+  "paywall_feedback": {
+    "title": "What stopped you?",
+    "price": "Too expensive",
+    "try_first": "I want to try first",
+    "unclear_value": "Not sure why I should pay",
+    "other": "Other"
   }
 }
