@@ -5,6 +5,9 @@ import { revenueCatService, ENTITLEMENT_ID } from '../services/RevenueCatService
 import { supabase } from '../lib/supabase';
 import { trackTenjinSubscriptionPaid } from '../lib/tenjin';
 import { trackEvent } from '../services/AnalyticsService';
+import { App as CapApp } from '@capacitor/app';
+import { readPaywallSource, noteTrialAppOpen, checkTrialOutcome } from '../lib/trialOutcome';
+import { loadLocalProgress } from '../lib/progressStore';
 import { getEntitlementPeriodType, type PurchasePeriodType } from '../lib/purchasePeriod';
 
 // Persisted paid-state baseline for the real-purchase detector below.
@@ -201,7 +204,9 @@ export function useSubscription(): UseSubscriptionReturn {
     // Firebase ecommerce `purchase` (revenue endpoint) via System A so it
     // survives the Tenjin-mirror removal. Keep the name + value/currency so
     // GA4 counts it as revenue.
-    trackEvent('purchase', {
+    // 101: paywall_source from Preferences ('unknown' if no paywall was seen).
+    const firstQuality = Number(localStorage.getItem('onda_first_practice_quality')) || undefined;
+    void readPaywallSource().then((paywallSource) => trackEvent('purchase', {
       value,
       currency,
       product_id: ent.productIdentifier,
@@ -209,13 +214,11 @@ export function useSubscription(): UseSubscriptionReturn {
       // quality→purchase linkage: quality of the user's first practice (stashed
       // in finishPractice when the paywall was armed). Lets us later plot
       // "at what first-practice quality do people buy". undefined if not set.
-      first_practice_quality: Number(localStorage.getItem('onda_first_practice_quality')) || undefined,
-      // Which paywall produced this purchase — stashed by SubscriptionModal
-      // when it opened. Without it, conversion cannot be split between the
-      // soft onboarding paywall and the hard practice gate, and the
-      // per-paywall silent-exit residual cannot be computed at all.
-      paywall_source: localStorage.getItem('onda_last_paywall_source') || undefined,
-    });
+      first_practice_quality: firstQuality,
+      // Which paywall produced this purchase (last paywall_view, kept across the
+      // trial so the trial→paid purchase still names it). See lib/trialOutcome.
+      paywall_source: paywallSource,
+    }));
     trackTenjinSubscriptionPaid({
       value,
       currency,
@@ -228,6 +231,29 @@ export function useSubscription(): UseSubscriptionReturn {
       txnSig,
     });
   }, [isNative, state.customerInfo, state.offerings]);
+
+  // ── trial_outcome (101) ──
+  // Evaluated on every customerInfo load/update (= every app open, since init
+  // fetches it): conversion/expiry usually happens while the app is closed.
+  useEffect(() => {
+    if (!isNative || !state.customerInfo) return;
+    const ent = (state.customerInfo as any).entitlements?.all?.[ENTITLEMENT_ID] ?? null;
+    void (async () => {
+      await noteTrialAppOpen();
+      const progress = await loadLocalProgress();
+      const params = await checkTrialOutcome({ ent, practiceHistory: progress?.practiceHistory ?? [] });
+      if (params) trackEvent('trial_outcome', params);
+    })().catch(() => undefined);
+  }, [isNative, state.customerInfo]);
+
+  // App resumed from background → count the day as active in the trial.
+  useEffect(() => {
+    if (!isNative) return;
+    const h = CapApp.addListener('appStateChange', ({ isActive }) => {
+      if (isActive) void noteTrialAppOpen().catch(() => undefined);
+    });
+    return () => { void h.then((x) => x.remove()).catch(() => undefined); };
+  }, [isNative]);
 
   // Listen for auth changes to login/logout with RevenueCat
   useEffect(() => {

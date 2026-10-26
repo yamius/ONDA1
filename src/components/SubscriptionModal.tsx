@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { useSubscription } from '../hooks/useSubscription';
 import { isTrialOrIntro } from '../lib/purchasePeriod';
+import { readPaywallSource, recordPaywallSource, startTrialMarker, trialDaysFor } from '../lib/trialOutcome';
+import { loadLocalProgress } from '../lib/progressStore';
 import { useAnalytics } from '../hooks/useAnalytics';
 import { useTheme } from '../theme/ThemeProvider';
 import { LegalModal } from './LegalModal';
@@ -154,9 +156,8 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     // one produced it. purchase fires from useSubscription on the entitlement
     // change and has no other way to know. Same stash-and-read idiom already
     // used for onda_first_practice_quality.
-    try {
-      if (source) localStorage.setItem('onda_last_paywall_source', source);
-    } catch { /* best-effort */ }
+    // 101: Preferences-backed (survives WebView purges until the purchase).
+    void recordPaywallSource(source);
     return () => {
       // Effect cleanup runs when isOpen flips to false or isPremium becomes
       // true. Treat "became premium during this session" as Subscribe (already
@@ -220,11 +221,20 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
         // detector in useSubscription — never here, so no double fire.
         const periodType = lastPurchasePeriodType();
         if (isTrialOrIntro(periodType)) {
+          const paywallSource = await readPaywallSource();
           track('trial_start', {
             plan: selectedPlan,
             product_id: pkg.product.identifier,
             period_type: periodType,
+            paywall_source: paywallSource,
           });
+          // 101: trial marker for the later trial_outcome (evaluated on next opens).
+          void loadLocalProgress().then((p) => startTrialMarker({
+            productId: pkg.product.identifier,
+            plan: selectedPlan,
+            trialDays: trialDaysFor(selectedPlan, (pkg.product as any).introPrice),
+            practicesAtStart: p?.practiceHistory?.length ?? 0,
+          })).catch(() => undefined);
           trackTenjinSubscribe({
             productId: pkg.product.identifier,
             plan: selectedPlan,

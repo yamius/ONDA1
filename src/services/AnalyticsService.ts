@@ -105,8 +105,9 @@ export type AnalyticsEventName =
   | 'paywall_dismiss'                // ← Tenjin dismiss_paywall
   | 'paywall_cta_tap'                // ← was trial_attempt / Tenjin click_paywall_button
   | 'paywall_auth_required'
-  | 'trial_start'                    // ← was trial_started (one, not two)
-  | 'purchase'                       // Firebase ecommerce — params: value, currency, product_id, plan
+  | 'trial_start'                    // ← was trial_started (one, not two) — params: plan, product_id, period_type, paywall_source (101)
+  | 'trial_outcome'                  // once per trial, on the first open after it is decided (101) — params: outcome (converted|expired), plan, trial_days, practices_in_trial, days_active_in_trial, watch_connected, baseline_filled (all strings)
+  | 'purchase'                       // Firebase ecommerce — params: value, currency, product_id, plan, first_practice_quality, paywall_source (101: Preferences-backed, 'unknown' if none)
   | 'purchase_failed'
   | 'purchase_cancelled'
   // Reviews

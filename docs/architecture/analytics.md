@@ -192,8 +192,9 @@ await analytics.flush();
 | `paywall_view` | Subscription screen opened | `source` |
 | `paywall_dismiss` | Closed without subscribing | `source`, `plan`, `time_on_screen_seconds` |
 | `paywall_cta_tap` | Tapped the purchase CTA | `plan`, `product_id` |
-| `trial_start` | Free trial started ($0 at Apple) | `product_id`, `plan` |
-| `purchase` | Real paid conversion — Firebase **ecommerce**, keep this name | `value`, `currency`, `product_id`, `plan` |
+| `trial_start` | Free trial started ($0 at Apple; only periodType TRIAL/INTRO, 096) | `product_id`, `plan`, `period_type`, `paywall_source` |
+| `trial_outcome` | Trial decided — once per trial, on the first app open after it (101) | `outcome` (converted\|expired), `plan`, `trial_days`, `practices_in_trial`, `days_active_in_trial`, `watch_connected`, `baseline_filled` |
+| `purchase` | Real paid conversion — Firebase **ecommerce**, keep this name | `value`, `currency`, `product_id`, `plan`, `first_practice_quality`, `paywall_source` |
 | `purchase_failed` | Purchase threw | `plan`, `error` |
 | `purchase_cancelled` | User cancelled the StoreKit sheet | `plan` |
 
@@ -205,6 +206,33 @@ await analytics.flush();
 > off-app trial→paid flip still counts, because the baseline persists across
 > launches. Keep the name `purchase` + `value`/`currency` so GA4 counts it as
 > revenue. Trial start ($0) is `trial_start`, never `purchase` (old phantom bug).
+
+#### paywall_source and trial_outcome (task 101, 1.9.7)
+
+- **`paywall_source`** = `source` of the last `paywall_view` (`post_first_experience`,
+  `practice_gate_basic`; the modal also stores whatever `source` prop it was opened
+  with). Persisted in Capacitor Preferences (`onda_last_paywall_source`, mirrored to
+  localStorage) by `src/lib/trialOutcome.ts#recordPaywallSource`. Sent on
+  `trial_start` and `purchase`; `'unknown'` if no paywall was ever seen on this install.
+  **Kept after a purchase, not cleared**: a trial's `purchase` fires days later on the
+  trial→paid flip and must still name the paywall that started the trial; the next
+  `paywall_view` overwrites it.
+- **`trial_outcome`**: on `trial_start` a trial marker is stored
+  (`onda_trial_marker_v1`: start, product, plan, trial length = product intro offer if
+  known else 7 d monthly / 14 d yearly, practice-history length at start, local day keys).
+  Every app open / resume adds the local day (only before the trial end). On every
+  customerInfo load/update `useSubscription` evaluates `entitlements.all[premium]`:
+  periodType `NORMAL` → `converted`; still `TRIAL/INTRO` and active (also
+  cancelled-but-in-trial) → pending; inactive with its expiry passed, or missing after
+  the expected end → `expired`. Sent once per trial (claim `onda_trial_outcome_sent` =
+  startedAt, serialized), then the marker is cleared. `practices_in_trial` = practice
+  history entries dated between start and min(now, trial end); `watch_connected` = 095
+  first-watch marker; `baseline_filled` = `onda_baseline_filled_tracked`. All params are
+  strings. No health values.
+- Limits: a user who never reopens the app after the trial → no `trial_outcome`
+  (use RevenueCat / the webhook for the full picture); a reinstall loses the marker;
+  Family Sharing / another device's trial isn't seen; a refund after conversion still
+  reads `converted` (refunds belong to the webhook).
 
 ### Diagnostics Events
 

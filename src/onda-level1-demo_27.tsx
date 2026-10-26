@@ -103,6 +103,7 @@ import {
 } from './lib/tenjin';
 import { useSubscription } from './hooks/useSubscription';
 import * as Sentry from '@sentry/capacitor';
+import { recordPaywallSource } from './lib/trialOutcome';
 import { claimFirstWatchConnect, claimBaselineStateDay, claimFirstHomeView, type PracticeStartSource } from './lib/analyticsMarkers';
 // WelcomeScene is the only consumer of three.js in the codebase. It only
 // mounts when the user starts a practice (`practiceState === 'active'`),
@@ -3927,6 +3928,7 @@ const OndaLevel1 = () => {
         // this offer (stashed in finishPractice). undefined if not recorded.
         first_practice_quality: Number(localStorage.getItem('onda_first_practice_quality')) || undefined,
       });
+      void recordPaywallSource('post_first_experience');
       setPaywallSource('post_first_experience');
       setShowSubscriptionModal(true);
     }
@@ -5578,6 +5580,7 @@ const OndaLevel1 = () => {
                     ...daysSinceFirstSeen(),
                   });
                   setPendingStartPracticeAfterSubscribe(true);
+                  void recordPaywallSource('practice_gate_basic');
                   setPaywallSource('practice_gate_basic');
                   setShowSubscriptionModal(true);
                 }}
