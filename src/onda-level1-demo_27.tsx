@@ -103,7 +103,7 @@ import {
 } from './lib/tenjin';
 import { useSubscription } from './hooks/useSubscription';
 import * as Sentry from '@sentry/capacitor';
-import { claimFirstWatchConnect, claimBaselineStateDay, type PracticeStartSource } from './lib/analyticsMarkers';
+import { claimFirstWatchConnect, claimBaselineStateDay, claimFirstHomeView, type PracticeStartSource } from './lib/analyticsMarkers';
 // WelcomeScene is the only consumer of three.js in the codebase. It only
 // mounts when the user starts a practice (`practiceState === 'active'`),
 // not on cold start. Loading it lazily moves three.js + EXR loaders into
@@ -1355,8 +1355,13 @@ const OndaLevel1 = () => {
   // first_run after the paywall instead. Fires once per app session (mount).
   useEffect(() => {
     if (showFirstRun) return;
-    localStorage.setItem('onda_home_view_seen', '1');
-    track('home_view', { source: 'relaunch', is_first: boolParam(false), mode: appMode, ...daysSinceFirstSeen() });
+    // Onboarding is disabled, so a new install lands here too: the first-ever
+    // hub entry on this install is first_launch (is_first 'true'), every later
+    // launch is relaunch. Marker is Preferences-backed (survives cold starts;
+    // falls back to the legacy localStorage flag so upgraders stay relaunch).
+    void claimFirstHomeView().then((first) => {
+      track('home_view', { source: first ? 'first_launch' : 'relaunch', is_first: boolParam(first), mode: appMode, ...daysSinceFirstSeen() });
+    });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   // Armed by finishPractice on the user's first-ever valid completion;

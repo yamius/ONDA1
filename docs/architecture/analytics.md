@@ -99,6 +99,7 @@ await analytics.flush();
 | `onboarding_start` | Onboarding begins — live one-screen first-run, or 3-screen tutorial replay | `source` (first_run\|menu), `featured_practice_id` / `att_copy_variant` |
 | `onboarding_step` | Step view — **3-screen tutorial only** (the one-screen first-run has no steps) | `source` (menu), `step`, `total`, `permission` |
 | `onboarding_complete` | Onboarding finished (was Tenjin `tutorial_complete`) | `source`, `completed_via` (cta\|skip — first_run only), `duration_seconds` |
+| `home_view` | Main hub shown | `source` (first_run\|first_launch\|menu\|relaunch), `is_first` ('true'\|'false'), `mode`, `days_since_first_seen` |
 | `sign_up` | User created account | `method` |
 | `sign_in` | User signed in | `method` |
 
@@ -109,6 +110,14 @@ await analytics.flush();
 > demoted to Menu → Intro and emits the same events with `source: 'menu'`, so
 > manual replays stay OUT of the new-user funnel. `first_run_welcome_*` was
 > folded in: the view = `onboarding_start`, the cta/skip outcome = `completed_via`.
+>
+> **Onboarding is disabled since 1.9.x** (`showFirstRun` hard-set to false), so
+> the funnel above is ~0 for new installs. From **1.9.6** the new-user funnel is
+> `first_open` → `home_view{source: first_launch}` → `practice_start` →
+> `paywall_view` → `purchase`. `first_launch` = first-ever hub entry on the
+> install (`is_first: 'true'`), claimed once via the Preferences-backed marker
+> `onda_home_view_seen` (`claimFirstHomeView` in `src/lib/analyticsMarkers.ts`);
+> every later launch is `relaunch` (`is_first: 'false'`).
 
 ### Permission Events
 
