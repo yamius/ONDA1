@@ -136,12 +136,18 @@ platform :ios do
       skip_waiting_for_build_processing: false,
       skip_submission: true,
       notify_external_testers: false,
-      changelog: "Build #{Time.now.strftime('%Y-%m-%d %H:%M')}"
+      # Set by the workflow's "Release guard" step: internal / non-main builds
+      # are stamped "INTERNAL — DO NOT SUBMIT TO APP STORE" in What to Test.
+      changelog: ENV['ONDA_TESTFLIGHT_CHANGELOG'] || "Build #{Time.now.strftime('%Y-%m-%d %H:%M')}"
     )
   end
 
   desc "Release to App Store"
   lane :release do
+    # Guard: App Store uploads only from main and never from an internal build.
+    branch = (ENV['GITHUB_REF_NAME'] || sh("git rev-parse --abbrev-ref HEAD").strip)
+    UI.user_error!("release lane: App Store builds only from main (got #{branch})") unless branch == "main"
+    UI.user_error!("release lane: VITE_INTERNAL_BUILD=true cannot go to the App Store") if ENV['VITE_INTERNAL_BUILD'].to_s == "true"
     # Setup code signing
     match(
       type: "appstore",
