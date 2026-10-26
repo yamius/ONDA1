@@ -3499,7 +3499,6 @@ const OndaLevel1 = () => {
           practice_type: 'standard',
           practice_id: activePractice.id,
           duration_seconds: practiceTime,
-          quality_score: qualityScore,
           has_biometrics: boolParam(hasRealMetricsAtFinish),
         });
         // NOTE: paywall arming was moved OFF this near-unreachable valid event
@@ -3532,7 +3531,6 @@ const OndaLevel1 = () => {
       practice_name: activePractice.name,
       duration_seconds: practiceTime,
       target_duration: activePractice.targetTime || 720,
-      quality_score: qualityScore,
       time_percent: Math.round(timePercent * 100),
       metrics_source: metricsSource,
       is_first: boolParam(isFirstPracticeComplete),
@@ -3821,7 +3819,6 @@ const OndaLevel1 = () => {
       if (circuit.artifact) {
         trackTenjinArtifactEarned(circuit.id, {
           bonus: circuit.artifact.bonus,
-          quality_score: qualityScore,
         });
         setTimeout(() => {
           setArtifacts(prev => [...prev, {
