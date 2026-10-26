@@ -357,3 +357,66 @@ order by 1;
 
 - [Architecture Overview](./overview.md)
 - [Supabase Migrations](../../supabase/migrations/)
+
+## Purchase reconciliation (task 101 — run ~2 weeks after 1.9.6 ships)
+
+**Why.** The app fires `purchase` only on a not-paid → paid transition it *sees*
+(`useSubscription`). A trial that converts while the app is closed is reported on the
+next open (later day, or never), and a cold-start / killed-app purchase can be lost.
+RevenueCat sees every one server-side, so RevenueCat − GA4 = what the app missed or shifted.
+
+**Step 1 — MCP `revenue_review view=reconcile since=14`** (internal analytics MCP, `mcp/tools/revenue_review.js`):
+- GA4: `purchase` users/events by `date` × `appVersion`, same internal filter as every tool
+  (`internal=exclude` keeps `INTERNAL_MISLABELED_VERSIONS`, i.e. 1.9.5 users).
+- RevenueCat Charts v2: `actives_new` (new paid subscriptions = initial purchases + trial
+  conversions) per day, plus `Conversions` from `trial_conversion_rate`.
+- Output: `totals` (gap, `ga4_capture_pct`), `by_day` (gap = RC − GA4, GA4 split per
+  version), `by_version` (GA4 per version; RC per version only if the chart offers an
+  app-version segment, else `revenuecat_by_version.available=false`).
+- Caveats: GA4 days are property-timezone, RevenueCat days UTC → read multi-day totals;
+  drop the last 2 days (GA4 lag, RC refunds). First run: check `resolution: 'day'` is
+  accepted by the Charts API (add `debug=true` in `full` view to see chart shapes).
+
+**Step 2 — Supabase SQL** (owner runs; `app_events` rows from the `revenuecat-webhook`
+function carry `rc_event_type`, `period_type`, `is_trial_conversion`, `country`, `environment`;
+SANDBOX is never stored). RevenueCat paid events with no app `purchase` the same UTC day
+for the same signed-in user = cold-start / closed-app purchases. Anonymous RC ids
+(`$RCAnonymousID`) cannot be joined to the app's anonymous id → counted separately.
+
+```sql
+with rc as (
+  select date_trunc('day', created_at)::date as day,
+         coalesce(user_id::text, anonymous_id) as uid,
+         user_id is null as anon,
+         metadata->>'rc_event_type' as rc_type,
+         metadata->>'period_type'   as period_type,
+         metadata->>'country'       as country
+  from app_events
+  where event_name in ('subscription_started', 'subscription_renewed')
+    and created_at >= now() - interval '28 days'
+    and (
+      (metadata->>'rc_event_type' = 'INITIAL_PURCHASE' and metadata->>'period_type' = 'NORMAL')
+      or (metadata->>'is_trial_conversion')::boolean
+    )
+),
+app as (
+  select distinct date_trunc('day', created_at)::date as day, user_id::text as uid
+  from app_events
+  where event_name = 'purchase' and user_id is not null
+    and created_at >= now() - interval '29 days'
+)
+select rc.day,
+       count(*)                                                as rc_paid,
+       count(*) filter (where rc.rc_type = 'RENEWAL')          as rc_trial_conversions,
+       count(*) filter (where rc.anon)                         as rc_anonymous_unjoinable,
+       count(*) filter (where not rc.anon and app.uid is null) as rc_without_app_purchase,
+       count(*) filter (where not rc.anon and app.uid is not null) as matched
+from rc
+left join app on app.uid = rc.uid and app.day between rc.day and rc.day + 1
+group by rc.day
+order by rc.day;
+```
+
+`rc_without_app_purchase` (plus most of `rc_anonymous_unjoinable`) is the closed-app /
+cold-start share. Matching allows +1 day for timezone drift; tighten to the same day if
+you want strict "same day".

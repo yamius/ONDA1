@@ -18,13 +18,20 @@ const HOME_BY_SOURCE = { first_run: 40, relaunch: 15, first_launch: 150 };
 const HOME_BY_SOURCE_DAYS = [['relaunch', '0', 12], ['relaunch', '3', 9], ['first_run', '0', 40], ['relaunch', '(not set)', 2]];
 const DISMISS_BY_ACTION = { close: 45, continue_free: 15 };
 
+// 101: paywall_source split per event ([users, events]).
+const PAYWALL_SOURCE_BY_EVENT = {
+  purchase: { practice_gate_basic: [5, 6], post_first_experience: [2, 2] },
+  trial_start: { post_first_experience: [3, 3] },
+};
+let lastEvent;
+
 mock.module(ga4Url, {
   namedExports: {
     ga4Missing: () => [],
     internalFilter: () => null,
     appVersionFilter: () => null,
     andFilters: () => undefined,
-    eventNameFilter: () => null,
+    eventNameFilter: (names) => { lastEvent = names?.[0]; return null; },
     ga4Probe: async () => ({ ok: true }),
     runReport: async (body) => {
       const dim = body.dimensions?.[0]?.name;
@@ -35,6 +42,11 @@ mock.module(ga4Url, {
       if (dim === 'eventName') return mk(COUNTS);
       if (dim === 'customEvent:source') return mk(HOME_BY_SOURCE);
       if (dim === 'customEvent:action') return mk(DISMISS_BY_ACTION);
+      if (dim === 'customEvent:paywall_source') {
+        const m2 = (obj) => ({ rows: Object.entries(obj).map(([k, [u, e]]) => ({ dimensionValues: [{ value: k }], metricValues: [{ value: String(u) }, { value: String(e) }] })) });
+        return m2(PAYWALL_SOURCE_BY_EVENT[lastEvent] ?? {});
+      }
+      if (dim === 'customEvent:outcome') { const e = new Error('Field customEvent:outcome is not a valid dimension'); e.status = 400; throw e; }
       return { rows: [] };
     },
   },
@@ -103,13 +115,15 @@ test('the two paywalls are reported separately, never as one conversion', async 
   assert.match(r.paywall.combined_warning, /SUM of both paywalls/);
 });
 
-test('per-paywall conversion is declared impossible rather than guessed', async () => {
+test('purchase / trial_start split by paywall_source, trial_outcome by outcome (101)', async () => {
   const r = await funnelReview({ since: 28 });
   const attr = r.paywall_by_type.purchase_attribution;
-  assert.equal(attr.available, false);
-  // purchase fires from the entitlement change and carries no paywall source,
-  // so splitting it per paywall would be invention.
-  assert.match(attr.reason, /carries no paywall source/);
+  assert.equal(attr.purchase_by_paywall_source.available, true);
+  assert.deepEqual(attr.purchase_by_paywall_source.by_value.practice_gate_basic, { users: 5, events: 6 });
+  assert.equal(attr.trial_start_by_paywall_source.by_value.post_first_experience.users, 3);
+  // trial_outcome dimension `outcome` not registered → told what to create, not guessed.
+  assert.equal(attr.trial_outcome_by_outcome.available, false);
+  assert.equal(attr.trial_outcome_by_outcome.reason, 'create GA4 custom dimension outcome (event scope)');
   assert.equal(typeof attr.total_purchases_in_window, 'number');
 });
 
