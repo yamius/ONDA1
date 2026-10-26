@@ -186,7 +186,7 @@ export function trackTenjinPractice(
  */
 export function trackTenjinVoiceCheck(
   action: 'Start' | 'Finish',
-  emotionName?: string | null,
+  _emotionName?: string | null,
 ): void {
   try {
     const eventAction = `${action} Emotional Check`;
