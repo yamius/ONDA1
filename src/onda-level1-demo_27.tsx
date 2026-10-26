@@ -13,7 +13,7 @@ import { VoiceCheckModal } from './components/VoiceCheckModal';
 import DiaryModal from './components/DiaryModal';
 import { recordDailyMetric, recordBaselineSample, DAILY_STORES, loadDiaryEntries, saveDiaryEntries, newDiaryId, hydrateDiary } from './lib/diary';
 import { loadLocalProgress, saveLocalProgress, mergeProgress, type LocalProgress } from './lib/progressStore';
-import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, computeTrafficLight, baselineCorridorState, type PendingAnomaly, type SignalInput, type TrafficState } from './lib/anomaly';
+import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, computeTrafficLight, type PendingAnomaly, type SignalInput, type TrafficState } from './lib/anomaly';
 import { SimpleHero, PulseBreathTiles, trafficCopy } from './components/SimpleHome';
 import { Coachmarks } from './components/Coachmarks';
 import { RateOndaRow } from './components/RateOndaRow';
@@ -109,7 +109,7 @@ import { startFirstSession, endFirstSession } from './lib/firstSession';
 import { installHomeTapTracking } from './lib/homeTap';
 import { PaywallFeedback } from './components/PaywallFeedback';
 import { requestPaywallFeedback } from './lib/paywallFeedback';
-import { claimFirstWatchConnect, claimBaselineStateDay, claimFirstHomeView, type PracticeStartSource } from './lib/analyticsMarkers';
+import { claimFirstWatchConnect, claimFirstHomeView, type PracticeStartSource } from './lib/analyticsMarkers';
 // WelcomeScene is the only consumer of three.js in the codebase. It only
 // mounts when the user starts a practice (`practiceState === 'active'`),
 // not on cold start. Loading it lazily moves three.js + EXR loaders into
@@ -992,10 +992,8 @@ const OndaLevel1 = () => {
         if (vals.length < 2) return [];
         return [{ metric: k, nights: vals.slice(0, -1), latest: vals[vals.length - 1] }];
       });
-      // baseline_state (task 095): once per calendar day, category only.
-      void claimBaselineStateDay()
-        .then((yes) => { if (yes) track('baseline_state', { state: baselineCorridorState(signals) }); })
-        .catch(() => undefined);
+      // baseline_state removed (101): its only content was the corridor state,
+      // which is derived from HRV / resting HR — health stays out of analytics.
       const anomaly = detectAnomaly(signals);
       const st = loadAnomalyState();
       if (anomaly && canSignal(Date.now(), st.lastSignalAt)) {
@@ -3536,7 +3534,9 @@ const OndaLevel1 = () => {
       is_first: boolParam(isFirstPracticeComplete),
       ond_earned: earnedQnt,
       has_biometrics: boolParam(hasRealMetricsAtFinish),
-      is_valid_for_artifact: boolParam(isValidForArtifact),
+      // 101: analytics flag uses time only (quality is partly derived from body
+      // metrics); the in-app artifact rule itself is unchanged.
+      is_valid_for_artifact: boolParam(timePercent >= 0.8),
       is_new_record: boolParam(shouldUpdate && !!existingPractice),
       // No health values (privacy policy: pulse never leaves the device) — no
       // final_stress/final_energy and, since 1.9.3, no coherence_baseline/peak/
@@ -3556,8 +3556,8 @@ const OndaLevel1 = () => {
       }
     }
 
-    // Honest results-screen signal (state for the screen + the results_view
-    // analytics step). result_state:
+    // Honest results-screen signal (state for the screen only — 101: no longer
+    // sent to analytics, B is derived from the pulse). resultState:
     //   A — no real sensor (simulated) → invite to connect a camera/watch.
     //   B — camera + a clean, SUSTAINED pulse drop → show "from X to Y".
     //   C — everything else (flat / rose / noisy / short) → neutral, never
@@ -3583,7 +3583,6 @@ const OndaLevel1 = () => {
     track('results_view', {
       metrics_source: metricsSource,
       time_percent: Math.round(timePercent * 100),
-      result_state: resultState,
       // hr_start / hr_min removed (1.9.3) — pulse values stay on the device.
       is_first: boolParam(cameFromFirstRun),
     });

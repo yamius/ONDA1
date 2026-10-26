@@ -190,9 +190,9 @@ export function trackTenjinVoiceCheck(
 ): void {
   try {
     const eventAction = `${action} Emotional Check`;
-    const label = (emotionName ?? '').toString();
     _tenjinEvent(_toSnake(eventAction));
-    _logFirebase(eventAction, { category: 'emotional_check', label });
+    // 101: no emotion label — it is inferred about the person from their voice.
+    _logFirebase(eventAction, { category: 'emotional_check' });
   } catch (e) {
     console.warn('[Tenjin] Failed to track voice check event:', action, e);
   }
@@ -513,7 +513,7 @@ export function trackTenjinCircuitComplete(
 /** Artifact Earned: first time a user persists an artifact for a given circuit. */
 export function trackTenjinArtifactEarned(
   circuitId: string | number,
-  extra?: { bonus?: number; quality_score?: number },
+  extra?: { bonus?: number },
 ): void {
   try {
     if (_hasMilestoneFired(ARTIFACT_EARNED_KEY, circuitId)) return;

@@ -67,7 +67,7 @@ function MyComponent() {
 
   // Track practice events
   trackPractice('start', 'p1-1', { duration: 180 });
-  trackPractice('complete', 'p1-1', { quality_score: 85 });
+  trackPractice('complete', 'p1-1', { duration_seconds: 300 });
 
   // Track errors
   trackError('audio', 'Failed to load track', { url: '...' });
@@ -144,7 +144,6 @@ await analytics.flush();
 | `onboarding_permission_screen_view` | Permission screen shown | — |
 | `watch_connection_attempt` | Trying to connect watch | — |
 | `watch_connect_success` | Watch connected | `is_connected`, `is_first` (true only on first-ever connection; Capacitor Preferences flag `onda_watch_connected_ever`) |
-| `baseline_state` | Daily corridor check (once per local day; Capacitor Preferences `onda_baseline_state_sent_day`) | `state` (in_corridor\|out\|insufficient) — no values, no metric name |
 | `notif_prompt_answered` | Notification system prompt answered | `trigger` (onboarding\|first_camera), `granted` (true\|false), `answer` (yes\|no) |
 | `watch_connection_failed` | Watch connection failed | `error` |
 
@@ -160,7 +159,7 @@ await analytics.flush();
 | `practice_start` | Practice started (fires once, when the session begins) | `practice_type` (standard\|adaptive), `practice_id`, `has_biometrics`, `source` (home\|level\|recommend_static\|checkin\|signal\|push\|onboarding), `mode` |
 | `practice_pause` | Practice paused | `practice_id` |
 | `practice_resume` | Practice resumed | `practice_id` |
-| `practice_complete` | Practice finished | `practice_type`, `practice_id`, `duration_seconds`, `quality_score`, `ond_earned` |
+| `practice_complete` | Practice finished | `practice_type`, `practice_id`, `duration_seconds`, `time_percent`, `metrics_source`, `is_first`, `has_biometrics`, `is_valid_for_artifact` (time ≥ 80% only, 101), `ond_earned` |
 | `practice_abandon` | Left without completing | `practice_type`, `practice_id`, `reason` (stop\|close\|incomplete) |
 | `first_practice_complete` | First-ever valid completion (value-moment; fires once) | `practice_type` |
 
@@ -374,13 +373,13 @@ select
 from funnel;
 ```
 
-### Average Practice Quality by Source
+### Average Practice Completion by Source
 
 ```sql
 select 
   utm_source,
   count(*) as practices,
-  round(avg((metadata->>'quality_score')::int), 1) as avg_quality
+  round(avg((metadata->>'time_percent')::int), 1) as avg_time_percent
 from app_events
 where event_name = 'practice_complete'
   and created_at > now() - interval '30 days'
@@ -413,3 +412,5 @@ order by 1;
 
 - [Architecture Overview](./overview.md)
 - [Supabase Migrations](../../supabase/migrations/)
+
+> **101 — health stays out of analytics.** Removed: `first_practice_quality` (paywall_view, purchase), `quality_score` (practice_complete, first_practice_complete, unlock_achievement), `result_state` (results_view), the `baseline_state` event, and the emotion `label` on start/finish_emotional_check. `is_valid_for_artifact` in analytics now means time ≥ 80% only (the in-app artifact rule is unchanged). Older app versions still send the removed fields.

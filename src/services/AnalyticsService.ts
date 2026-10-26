@@ -34,7 +34,7 @@ export type AnalyticsEventName =
   // onboarding_complete{completed_via}. The 3-screen tutorial (Menu→Intro) emits
   // the same events with source:'menu' so manual replays don't pollute the funnel.
   | 'first_practice_complete'         // value-moment; first-ever valid completion
-  | 'results_view'                    // post-practice results screen shown — params: metrics_source, time_percent, result_state (A|B|C), is_first. No pulse values (removed 1.9.3).
+  | 'results_view'                    // post-practice results screen shown — params: metrics_source, time_percent, is_first. No pulse values (removed 1.9.3); result_state removed (101).
   | 'sign_up'
   | 'sign_in'
   // Permissions
@@ -70,7 +70,6 @@ export type AnalyticsEventName =
   | 'baseline_shown'                 // baseline card shown — params: coverage_days (real days behind the numbers), source (watch|camera). Declared now; fired in Phase 2.
   | 'baseline_debug'                 // diagnostic: exactly what the 14-day HealthKit read returned — per-signal days/has + per-extra PRESENCE flags (no values, 1.9.3). Lets us see which numbers Health actually gave without a device session.
   | 'baseline_error'                 // the 14-day HealthKit read threw — params: message.
-  | 'baseline_state'                 // once per local calendar day on the corridor check — params: state (in_corridor|out|insufficient). No values, no metric name (095).
   // Diary (retention step 3 — local-first day notes)
   | 'diary_opened'                   // diary opened — params: source (home_button | menu | anomaly_prompt(future)).
   | 'diary_entry_created'            // a note was saved — params: type (text|voice|text_voice), backdated (bool).
