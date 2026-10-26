@@ -108,6 +108,7 @@ import { IS_INTERNAL_BUILD } from './lib/buildFlags';
 import { startFirstSession, endFirstSession } from './lib/firstSession';
 import { installHomeTapTracking } from './lib/homeTap';
 import { PaywallFeedback } from './components/PaywallFeedback';
+import { requestPaywallFeedback } from './lib/paywallFeedback';
 import { claimFirstWatchConnect, claimBaselineStateDay, claimFirstHomeView, type PracticeStartSource } from './lib/analyticsMarkers';
 // WelcomeScene is the only consumer of three.js in the codebase. It only
 // mounts when the user starts a practice (`practiceState === 'active'`),
@@ -9979,6 +9980,7 @@ const OndaLevel1 = () => {
                 <div className="mt-2 flex items-center gap-2">
                   <button type="button" onClick={fireEntryEventsDebug} data-testid="fire-entry-events" className={`rounded px-2 py-1 ${isLight ? 'bg-emerald-100 text-emerald-700' : 'bg-emerald-400/15 text-emerald-200'}`}>Fire entry events → GA4</button>
                   {entryEventsSent && <span className="text-emerald-400">sent ✓</span>}
+                  <button type="button" data-testid="debug-paywall-feedback" onClick={() => requestPaywallFeedback('debug', { force: true })} className={`rounded px-2 py-1 ${isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80'}`}>Показать опрос</button>
                 </div>
                 {/* Calm check-ins test mode (task 16). All sends marked simulated:true
                     → no real analytics. Background the app after tapping to see the banner. */}

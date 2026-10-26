@@ -22,6 +22,7 @@ export async function markPaywallFeedbackAsked(): Promise<void> {
 }
 
 /** Called by SubscriptionModal on a dismiss without purchase. */
-export function requestPaywallFeedback(source: string | undefined): void {
-  try { window.dispatchEvent(new CustomEvent(PAYWALL_FEEDBACK_EVENT, { detail: { source } })); } catch { /* noop */ }
+export function requestPaywallFeedback(source: string | undefined, opts: { force?: boolean } = {}): void {
+  // force: internal debug button only — skips the once-per-install marker and the internal check.
+  try { window.dispatchEvent(new CustomEvent(PAYWALL_FEEDBACK_EVENT, { detail: { source, force: !!opts.force } })); } catch { /* noop */ }
 }

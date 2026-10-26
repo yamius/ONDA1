@@ -26,8 +26,10 @@ export function PaywallFeedback() {
 
   useEffect(() => {
     const onReq = (e: Event) => {
+      const detail = (e as CustomEvent).detail ?? {};
+      const src = detail.source || 'unknown';
+      if (detail.force) { setSource(src); setOpen(true); return; } // debug button (internal builds)
       if (analytics.isInternalTraffic()) return;
-      const src = (e as CustomEvent).detail?.source || 'unknown';
       void wasPaywallFeedbackAsked().then((asked) => {
         if (asked) return;
         void markPaywallFeedbackAsked(); // shown once, even if it is then dismissed
