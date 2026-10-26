@@ -209,16 +209,11 @@ export function useSubscription(): UseSubscriptionReturn {
     // survives the Tenjin-mirror removal. Keep the name + value/currency so
     // GA4 counts it as revenue.
     // 101: paywall_source from Preferences ('unknown' if no paywall was seen).
-    const firstQuality = Number(localStorage.getItem('onda_first_practice_quality')) || undefined;
     void readPaywallSource().then((paywallSource) => trackEvent('purchase', {
       value,
       currency,
       product_id: ent.productIdentifier,
       plan,
-      // quality→purchase linkage: quality of the user's first practice (stashed
-      // in finishPractice when the paywall was armed). Lets us later plot
-      // "at what first-practice quality do people buy". undefined if not set.
-      first_practice_quality: firstQuality,
       // Which paywall produced this purchase (last paywall_view, kept across the
       // trial so the trial→paid purchase still names it). See lib/trialOutcome.
       paywall_source: paywallSource,

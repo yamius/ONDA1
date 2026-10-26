@@ -110,7 +110,7 @@ export type AnalyticsEventName =
   | 'paywall_auth_required'
   | 'trial_start'                    // ← was trial_started (one, not two) — params: plan, product_id, period_type, paywall_source (101)
   | 'trial_outcome'                  // once per trial, on the first open after it is decided (101) — params: outcome (converted|expired), plan, trial_days, practices_in_trial, days_active_in_trial, watch_connected, baseline_filled (all strings)
-  | 'purchase'                       // Firebase ecommerce — params: value, currency, product_id, plan, first_practice_quality, paywall_source (101: Preferences-backed, 'unknown' if none)
+  | 'purchase'                       // Firebase ecommerce — params: value, currency, product_id, plan, paywall_source (101: Preferences-backed, 'unknown' if none)
   | 'purchase_failed'                // non-cancel purchase error (101) — params: plan, error_code (RevenueCat code only, no message)
   | 'purchase_cancelled'             // cancelled in the StoreKit sheet (101) — params: plan, error_code (user_cancelled)
   // Reviews

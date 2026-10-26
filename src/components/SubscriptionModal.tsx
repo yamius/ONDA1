@@ -157,8 +157,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     trackTenjinPaywallView(source);
     // Stash the paywall that is open so the eventual purchase can say which
     // one produced it. purchase fires from useSubscription on the entitlement
-    // change and has no other way to know. Same stash-and-read idiom already
-    // used for onda_first_practice_quality.
+    // change and has no other way to know.
     // 101: Preferences-backed (survives WebView purges until the purchase).
     void recordPaywallSource(source);
     return () => {

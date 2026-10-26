@@ -3548,11 +3548,11 @@ const OndaLevel1 = () => {
     // Decoupled paywall arming (replaces the old valid-first_practice_complete
     // gate, which fired for ~0 users so the paywall never showed). Arm once, on
     // the first practice_complete — value delivered, real people see the offer.
-    // Idempotent via onda_paywall_armed; quality stashed so paywall_view /
-    // purchase can carry first_practice_quality across components.
+    // Idempotent via onda_paywall_armed. (101: the first-practice quality is no
+    // longer sent to analytics — partly derived from body metrics.)
     if (isFirstPracticeComplete) {
       localStorage.setItem('onda_paywall_armed', '1');
-      localStorage.setItem('onda_first_practice_quality', String(Math.round(qualityScore)));
+      try { localStorage.removeItem('onda_first_practice_quality'); } catch { /* noop */ }
       if (platform === 'ios' && !isPremium) {
         postFirstExperiencePaywallArmedRef.current = true;
       }
@@ -3933,9 +3933,6 @@ const OndaLevel1 = () => {
       track('paywall_view', {
         source: 'post_first_experience',
         practice_id: practiceId,
-        // quality→purchase linkage: the quality of the practice that earned
-        // this offer (stashed in finishPractice). undefined if not recorded.
-        first_practice_quality: Number(localStorage.getItem('onda_first_practice_quality')) || undefined,
       });
       void recordPaywallSource('post_first_experience');
       setPaywallSource('post_first_experience');
