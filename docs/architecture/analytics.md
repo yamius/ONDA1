@@ -192,6 +192,10 @@ await analytics.flush();
 | `paywall_view` | Subscription screen opened | `source` |
 | `paywall_dismiss` | Closed without subscribing | `source`, `plan`, `time_on_screen_seconds` |
 | `paywall_cta_tap` | Tapped the purchase CTA | `plan`, `product_id` |
+| `plan_select` | Switched plan on the paywall (101) | `plan` |
+| `purchase_cancelled` | Cancelled in the StoreKit sheet (101) | `plan`, `error_code` |
+| `purchase_failed` | Purchase error other than cancel (101) | `plan`, `error_code` |
+| `home_tap` | Main-home tap, first session only (101) | `target`, `is_first_session` |
 | `trial_start` | Free trial started ($0 at Apple; only periodType TRIAL/INTRO, 096) | `product_id`, `plan`, `period_type`, `paywall_source` |
 | `trial_outcome` | Trial decided — once per trial, on the first app open after it (101) | `outcome` (converted\|expired), `plan`, `trial_days`, `practices_in_trial`, `days_active_in_trial`, `watch_connected`, `baseline_filled` |
 | `purchase` | Real paid conversion — Firebase **ecommerce**, keep this name | `value`, `currency`, `product_id`, `plan`, `first_practice_quality`, `paywall_source` |
@@ -208,6 +212,29 @@ await analytics.flush();
 > revenue. Trial start ($0) is `trial_start`, never `purchase` (old phantom bug).
 
 #### paywall_source and trial_outcome (task 101, 1.9.7)
+
+Round 2 (101):
+- `paywall_dismiss` gains `paywall_source` (same name as on purchase/trial_start) and
+  `seconds_on_paywall` (string, whole seconds); `source`, `action`,
+  `time_on_screen_seconds` stay for series continuity.
+- `plan_select {plan}` — only on an actual plan switch on the paywall.
+- `purchase_cancelled {plan, error_code:'user_cancelled'}` — StoreKit sheet cancel
+  (RevenueCat userCancelled / code 1). `purchase_failed {plan, error_code}` — any other
+  error, RevenueCat `readableErrorCode`/code only (the old `error` = message param is
+  gone: possible PII); `no_entitlement` when the purchase returned without premium.
+  Before 101 every hook-level failure was swallowed and reported as `purchase_cancelled`.
+  No `purchase_error` event ever existed.
+- `home_tap {target, is_first_session:'true'}` — FIRST SESSION ONLY (`src/lib/firstSession.ts`):
+  starts when the first-ever hub entry is claimed (home_view first_launch), ends at the
+  first background/terminate or after 30 min; end persisted (`onda_first_session_ended`).
+  Upgraders never get a first session. Each target once per session, max 25. Targets:
+  `practice:<id>`, `menu`, `menu_<item>` (menu_settings, menu_diary…), `diary`,
+  `connect_cta`, `watch_connect`, `camera_checkin`, `camera_stop`, `recommendation`,
+  `signal_practice`, `signal_cta`, `voice_check`, `face_check`, `baseline_shift`,
+  `baseline_card`, `simple_restore` (`src/lib/homeTap.ts`).
+- Debug panels (🧪 Test signals, Fire entry events, 🌿 Calm check-ins, 📨 Real push test)
+  render only when `VITE_INTERNAL_BUILD === 'true'` (`src/lib/buildFlags.ts`); in App Store
+  builds the 7-tap only marks the device internal (badge).
 
 - **`paywall_source`** = `source` of the last `paywall_view` (`post_first_experience`,
   `practice_gate_basic`; the modal also stores whatever `source` prop it was opened

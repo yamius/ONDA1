@@ -117,7 +117,11 @@ class RevenueCatService {
   /**
    * Purchase a package
    */
+  /** 101: the cancel error of the last purchasePackage() that returned null. */
+  lastPurchaseError: any = null;
+
   async purchasePackage(pkg: PurchasesPackage): Promise<CustomerInfo | null> {
+    this.lastPurchaseError = null;
     if (!this.initialized) {
       throw new Error('RevenueCat not initialized');
     }
@@ -131,6 +135,7 @@ class RevenueCatService {
     } catch (error: any) {
       if (error.userCancelled || error.code === 1) {
         console.log('[RevenueCat] User cancelled purchase');
+        this.lastPurchaseError = error;
         return null;
       }
       console.error('[RevenueCat] Purchase error:', error);

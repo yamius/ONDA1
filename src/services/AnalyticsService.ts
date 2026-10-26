@@ -102,14 +102,16 @@ export type AnalyticsEventName =
   | 'level_up'
   // Paywall / Monetization
   | 'paywall_view'                   // ← merge paywall_viewed + Tenjin view_paywall
-  | 'paywall_dismiss'                // ← Tenjin dismiss_paywall
+  | 'paywall_dismiss'                // ← Tenjin dismiss_paywall — params: source, action, plan, time_on_screen_seconds, paywall_source, seconds_on_paywall (string, 101)
+  | 'plan_select'                    // user switched plan on the paywall (101) — params: plan
+  | 'home_tap'                       // tap on a main home element, FIRST SESSION ONLY, once per target (101) — params: target, is_first_session
   | 'paywall_cta_tap'                // ← was trial_attempt / Tenjin click_paywall_button
   | 'paywall_auth_required'
   | 'trial_start'                    // ← was trial_started (one, not two) — params: plan, product_id, period_type, paywall_source (101)
   | 'trial_outcome'                  // once per trial, on the first open after it is decided (101) — params: outcome (converted|expired), plan, trial_days, practices_in_trial, days_active_in_trial, watch_connected, baseline_filled (all strings)
   | 'purchase'                       // Firebase ecommerce — params: value, currency, product_id, plan, first_practice_quality, paywall_source (101: Preferences-backed, 'unknown' if none)
-  | 'purchase_failed'
-  | 'purchase_cancelled'
+  | 'purchase_failed'                // non-cancel purchase error (101) — params: plan, error_code (RevenueCat code only, no message)
+  | 'purchase_cancelled'             // cancelled in the StoreKit sheet (101) — params: plan, error_code (user_cancelled)
   // Reviews
   | 'review_prompt_requested'        // SKStoreReview dispatched (Apple hides the actual dialog)
   | 'rate_tap'                       // tapped the persistent "Rate ONDA" stars → App Store write-review page. params: place (home). Row hides after the first tap. Star count is NOT recorded (Apple review-gating rule).

@@ -104,6 +104,9 @@ import {
 import { useSubscription } from './hooks/useSubscription';
 import * as Sentry from '@sentry/capacitor';
 import { recordPaywallSource } from './lib/trialOutcome';
+import { IS_INTERNAL_BUILD } from './lib/buildFlags';
+import { startFirstSession, endFirstSession } from './lib/firstSession';
+import { installHomeTapTracking } from './lib/homeTap';
 import { claimFirstWatchConnect, claimBaselineStateDay, claimFirstHomeView, type PracticeStartSource } from './lib/analyticsMarkers';
 // WelcomeScene is the only consumer of three.js in the codebase. It only
 // mounts when the user starts a practice (`practiceState === 'active'`),
@@ -1360,9 +1363,13 @@ const OndaLevel1 = () => {
     // hub entry on this install is first_launch (is_first 'true'), every later
     // launch is relaunch. Marker is Preferences-backed (survives cold starts;
     // falls back to the legacy localStorage flag so upgraders stay relaunch).
+    // 101: home_tap during the first session only (string params).
+    const offHomeTap = installHomeTapTracking((p) => track('home_tap', p));
     void claimFirstHomeView().then((first) => {
+      if (first) startFirstSession(); // 101: home_tap window
       track('home_view', { source: first ? 'first_launch' : 'relaunch', is_first: boolParam(first), mode: appMode, ...daysSinceFirstSeen() });
     });
+    return offHomeTap;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   // Armed by finishPractice on the user's first-ever valid completion;
@@ -4521,6 +4528,7 @@ const OndaLevel1 = () => {
 
     let stateSub: { remove: () => void } | null = null;
     CapApp.addListener('appStateChange', ({ isActive }) => {
+      if (!isActive) endFirstSession(); // 101: first background/terminate ends the first session
       if (isActive) reconcile();
     }).then((h) => { stateSub = h; }).catch(() => undefined);
 
@@ -6671,6 +6679,7 @@ const OndaLevel1 = () => {
     return (
       <div
         key={practice.id}
+        data-home-tap={`practice:${practice.id}`}
         ref={el => practiceRefs.current[practice.id] = el}
         onClick={collapsible ? onExpandTap(`practice_${practice.id}`) : undefined}
         className={`relative rounded-lg p-6 border transition-all flex flex-col ${
@@ -9947,8 +9956,11 @@ const OndaLevel1 = () => {
                 )}
               </button>
             )}
-            {/* Signal test mode (task 84 pt3) — internal builds only. */}
-            {internalTrafficOn && (
+            {/* Signal test mode (task 84 pt3), entry-events smoke test, calm check-ins —
+                TEST builds ONLY (VITE_INTERNAL_BUILD baked by the TestFlight workflow).
+                In an App Store build the 7-tap only marks the device internal (badge),
+                never shows these panels (101). */}
+            {IS_INTERNAL_BUILD && (
               <div className={`mt-1 px-4 sm:px-6 py-2 text-[11px] font-mono ${isLight ? 'text-slate-500' : 'text-white/50'}`} data-testid="sim-panel">
                 <div className="mb-1">🧪 Test signals {simActive && <span className="text-amber-400">· step {simIndexRef.current % 5 + 1}/5 · {simFast ? '30s' : '5min'}</span>}</div>
                 <div className="flex items-center gap-2 flex-wrap">
@@ -9995,7 +10007,7 @@ const OndaLevel1 = () => {
                 on a non-main branch); App Store builds from main never show it, even
                 after the 7-tap. REAL pushes through the production scheduling code
                 (tagged internal_test); kill the app after tapping, then tap the banner. */}
-            {import.meta.env.VITE_INTERNAL_BUILD === 'true' && Capacitor.isNativePlatform() && (
+            {IS_INTERNAL_BUILD && Capacitor.isNativePlatform() && (
               <div className={`mt-1 px-4 sm:px-6 py-2 text-[11px] font-mono ${isLight ? 'text-slate-500' : 'text-white/50'}`} data-testid="push-test-panel">
                 <div className="mb-1">📨 Real push test (8s) · kill app, then tap</div>
                 <div className="flex items-center gap-2 flex-wrap">
@@ -10014,7 +10026,6 @@ const OndaLevel1 = () => {
                       onClick={async () => { const ok = await scheduleCheckinRealTest(k, 8); setCheckinPendingList(ok ? `${k} scheduled in 8s — kill the app now` : `${k} failed (permission?)`); }}>{k} (JS)</button>
                   ))}
                 </div>
-                {!internalTrafficOn && checkinPendingList && <pre className="mt-1 whitespace-pre-wrap opacity-70">{checkinPendingList}</pre>}
               </div>
             )}
         </nav>

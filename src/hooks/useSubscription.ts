@@ -8,6 +8,7 @@ import { trackEvent } from '../services/AnalyticsService';
 import { App as CapApp } from '@capacitor/app';
 import { readPaywallSource, noteTrialAppOpen, checkTrialOutcome } from '../lib/trialOutcome';
 import { loadLocalProgress } from '../lib/progressStore';
+import { classifyPurchaseError, type PurchaseOutcome } from '../lib/purchaseErrors';
 import { getEntitlementPeriodType, type PurchasePeriodType } from '../lib/purchasePeriod';
 
 // Persisted paid-state baseline for the real-purchase detector below.
@@ -36,6 +37,8 @@ interface SubscriptionState {
 interface UseSubscriptionReturn extends SubscriptionState {
   // Actions
   purchase: (pkg: PurchasesPackage) => Promise<boolean>;
+  /** 101: how the most recent purchase() ended (cancel vs fail + error code). */
+  lastPurchaseOutcome: () => PurchaseOutcome;
   /** periodType of the entitlement granted by the most recent purchase() (096). */
   lastPurchasePeriodType: () => PurchasePeriodType;
   restore: () => Promise<boolean>;
@@ -50,6 +53,7 @@ interface UseSubscriptionReturn extends SubscriptionState {
 
 export function useSubscription(): UseSubscriptionReturn {
   const lastPeriodTypeRef = useRef<PurchasePeriodType>(null);
+  const lastOutcomeRef = useRef<PurchaseOutcome>({ kind: 'ok' });
   const [state, setState] = useState<SubscriptionState>({
     isLoading: true,
     isPurchasing: false,
@@ -290,6 +294,7 @@ export function useSubscription(): UseSubscriptionReturn {
 
     setState(prev => ({ ...prev, isPurchasing: true, error: null }));
     lastPeriodTypeRef.current = null;
+    lastOutcomeRef.current = { kind: 'ok' };
 
     try {
       const customerInfo = await revenueCatService.purchasePackage(pkg);
@@ -303,14 +308,17 @@ export function useSubscription(): UseSubscriptionReturn {
           customerInfo,
           isPremium,
         }));
+        if (!isPremium) lastOutcomeRef.current = { kind: 'failed', code: 'no_entitlement' };
         return isPremium;
       }
 
       // User cancelled
+      lastOutcomeRef.current = classifyPurchaseError(revenueCatService.lastPurchaseError ?? { userCancelled: true });
       setState(prev => ({ ...prev, isPurchasing: false }));
       return false;
     } catch (error: any) {
       console.error('[useSubscription] Purchase error:', error);
+      lastOutcomeRef.current = classifyPurchaseError(error);
       setState(prev => ({
         ...prev,
         isPurchasing: false,
@@ -321,6 +329,7 @@ export function useSubscription(): UseSubscriptionReturn {
   }, [isNative]);
 
   const lastPurchasePeriodType = useCallback(() => lastPeriodTypeRef.current, []);
+  const lastPurchaseOutcome = useCallback(() => lastOutcomeRef.current, []);
 
   // Restore purchases
   const restore = useCallback(async (): Promise<boolean> => {
@@ -436,6 +445,7 @@ export function useSubscription(): UseSubscriptionReturn {
     ...state,
     purchase,
     lastPurchasePeriodType,
+    lastPurchaseOutcome,
     restore,
     refresh,
     getYearlyPackage,

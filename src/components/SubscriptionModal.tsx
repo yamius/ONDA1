@@ -6,6 +6,7 @@ import { useSubscription } from '../hooks/useSubscription';
 import { isTrialOrIntro } from '../lib/purchasePeriod';
 import { readPaywallSource, recordPaywallSource, startTrialMarker, trialDaysFor } from '../lib/trialOutcome';
 import { loadLocalProgress } from '../lib/progressStore';
+import { purchaseErrorCode } from '../lib/purchaseErrors';
 import { useAnalytics } from '../hooks/useAnalytics';
 import { useTheme } from '../theme/ThemeProvider';
 import { LegalModal } from './LegalModal';
@@ -111,6 +112,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     error,
     purchase,
     lastPurchasePeriodType,
+    lastPurchaseOutcome,
     restore,
     getYearlyPackage,
     getMonthlyPackage,
@@ -168,6 +170,8 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
       const seconds = openedAt ? Math.round((Date.now() - openedAt) / 1000) : undefined;
       track('paywall_dismiss', {
         source,
+        paywall_source: source || 'unknown', // 101: same name as on purchase/trial_start
+        seconds_on_paywall: seconds != null ? String(seconds) : undefined,
         action: dismissActionRef.current, // 'close' (✕) | 'continue_free' (secondary button)
         plan: selectedPlanRef.current,
         time_on_screen_seconds: seconds,
@@ -179,6 +183,12 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
       });
     };
   }, [isOpen, isPremium, source]);
+
+  // 101: plan_select only on an actual switch (not on re-tapping the selected plan).
+  const selectPlan = (plan: typeof selectedPlan) => {
+    if (plan !== selectedPlan) track('plan_select', { plan });
+    setSelectedPlan(plan);
+  };
 
   const handlePurchase = async () => {
     setPurchaseError(null);
@@ -245,12 +255,18 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
         onSubscribed?.();
         onClose();
       } else {
-        track('purchase_cancelled', { plan: selectedPlan });
+        // 101: StoreKit-sheet cancel vs a real error, code only (no message text).
+        const outcome = lastPurchaseOutcome();
+        if (outcome.kind === 'failed') {
+          track('purchase_failed', { plan: selectedPlan, error_code: outcome.code });
+        } else {
+          track('purchase_cancelled', { plan: selectedPlan, error_code: outcome.kind === 'cancelled' ? outcome.code : 'user_cancelled' });
+        }
       }
     } catch (err: any) {
       track('purchase_failed', {
         plan: selectedPlan,
-        error: err?.message ?? 'unknown',
+        error_code: purchaseErrorCode(err),
       });
       setPurchaseError(err.message || t('subscription.error_purchase', 'Purchase failed'));
     }
@@ -378,7 +394,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
                 </div>
               )}
               <button
-                onClick={() => setSelectedPlan('yearly')}
+                onClick={() => selectPlan('yearly')}
                 disabled={isLoading || isPurchasing}
                 className={`w-full text-left rounded-xl p-3 sm:p-4 transition-all duration-300 ${
                   selectedPlan === 'yearly'
@@ -411,7 +427,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
                 </div>
               )}
               <button
-                onClick={() => setSelectedPlan('monthly')}
+                onClick={() => selectPlan('monthly')}
                 disabled={isLoading || isPurchasing}
                 className={`w-full text-left rounded-xl p-3 sm:p-4 transition-all duration-300 ${
                   selectedPlan === 'monthly'
