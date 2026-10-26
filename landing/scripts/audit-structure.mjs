@@ -189,3 +189,21 @@ for (const p of multiH1.slice(0, 10)) say(`  - several h1: \`${p}\``)
 mkdirSync('.cache', { recursive: true })
 writeFileSync(join('.cache', 'structure-audit.md'), out.join('\n'))
 console.log(out.filter((l) => l.startsWith('#')).join('\n'))
+
+// ── real 404 (no SPA catch-all) ──
+// vercel.json has no catch-all rewrite to /index.html: unknown paths get dist/404.html with HTTP 404.
+// Every real page must therefore be a prerendered file; 404.html must be noindex with no canonical.
+{
+  const f = join(DIST, '404.html')
+  const problems = []
+  if (!existsSync(f)) problems.push('dist/404.html missing')
+  else {
+    const h = readFileSync(f, 'utf-8')
+    if (!/<meta\s+name="robots"\s+content="[^"]*noindex/i.test(h)) problems.push('dist/404.html without robots noindex')
+    if (/<link\s+rel="canonical"/i.test(h)) problems.push('dist/404.html has a canonical')
+  }
+  const catchAll = (vercel.rewrites ?? []).find((r) => r.destination === '/index.html')
+  if (catchAll) problems.push(`catch-all rewrite to /index.html is back (${catchAll.source}) — soft 404s`)
+  console.log(`## 404 page problems: ${problems.length}${problems.length ? ' — ' + problems.join(' · ') : ''}`)
+  if (problems.length) process.exitCode = 1
+}

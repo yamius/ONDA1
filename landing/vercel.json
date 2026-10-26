@@ -69,8 +69,7 @@
   "rewrites": [
     { "source": "/mcp", "destination": "https://onda-chatgpt.vercel.app/mcp" },
     { "source": "/app", "destination": "/get" },
-    { "source": "/download", "destination": "/get" },
-    { "source": "/((?!api/|[.]well-known/|(?:[a-z]{2}/)?(?:science|connect|compare)(?:/|$)).*)", "destination": "/index.html" }
+    { "source": "/download", "destination": "/get" }
   ],
   "headers": [
     {
