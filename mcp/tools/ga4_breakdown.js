@@ -25,6 +25,7 @@
 
 import { ga4Missing, runReport, eventNameFilter, internalFilter, andFilters } from '../lib/sources/ga4.js';
 import { clampSince, rate, ok, notConfigured, sourceError, DATA_LAG, LOW_DATA_N } from '../lib/shared.js';
+import { internalMislabeledNote } from '../lib/internal-versions.js';
 
 const DEFAULT_SINCE = 90; // wider than the 28-day house default: August traffic collapse → tiny samples
 const DEFAULT_LIMIT = 25;
@@ -235,6 +236,7 @@ export async function ga4Breakdown(args = {}) {
       scope_used,
       share_metric: metric,
       filters: { internal, stream, exclude_country: excludeCountry },
+      ...(internalMislabeledNote(internal) && { internal_note: internalMislabeledNote(internal) }),
       limit,
       total_users: totalUsers,
       total_events: totalEvents,

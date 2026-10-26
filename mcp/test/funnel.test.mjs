@@ -86,8 +86,7 @@ test('low_data проставляется при малом знаменател
 });
 
 test('silent_exit не уходит в минус при потере событий', async () => {
-  const { funnelReview: fr } = await import('../tools/funnel_review.js');
-  const r = await fr({ since: 28 });
+  const r = await funnelReview({ since: 28 });
   assert.ok(r.paywall.silent_exit.users >= 0);
 });
 
@@ -96,8 +95,7 @@ test('the two paywalls are reported separately, never as one conversion', async 
   // `source`. Summing them produced "55 views, 1 purchase" and the false
   // conclusion that the paywall converts terribly — that number was a shop
   // window and a decision point added together.
-  const { funnelReview: fr } = await import('../tools/funnel_review.js');
-  const r = await fr({ since: 28 });
+  const r = await funnelReview({ since: 28 });
 
   assert.equal(r.paywall_by_type.soft_onboarding.source_value, 'post_first_experience');
   assert.equal(r.paywall_by_type.hard_practice_gate.source_value, 'practice_gate_basic');
@@ -106,8 +104,7 @@ test('the two paywalls are reported separately, never as one conversion', async 
 });
 
 test('per-paywall conversion is declared impossible rather than guessed', async () => {
-  const { funnelReview: fr } = await import('../tools/funnel_review.js');
-  const r = await fr({ since: 28 });
+  const r = await funnelReview({ since: 28 });
   const attr = r.paywall_by_type.purchase_attribution;
   assert.equal(attr.available, false);
   // purchase fires from the entitlement change and carries no paywall source,
@@ -120,8 +117,7 @@ test('hard-paywall views sum BOTH source values across the rename seam', async (
   // The app used to label the view 'practice_intro' and the dismiss
   // 'practice_gate_basic' for the SAME paywall. Unifying it would have broken
   // the view series unless the tool counts both, which is the whole point.
-  const { funnelReview: fr } = await import('../tools/funnel_review.js');
-  const r = await fr({ since: 28 });
+  const r = await funnelReview({ since: 28 });
   const hard = r.paywall_by_type.hard_practice_gate;
   assert.equal(hard.source_value, 'practice_gate_basic');
   assert.ok(hard.views_by_source_value !== undefined, 'the split across the seam is visible');
@@ -150,4 +146,8 @@ test('pre-1.9.6 fallback = relaunch with days_since_first_seen 0, labelled', asy
   assert.equal(fb.available, true);
   assert.equal(fb.users, 12);                      // not first_run, not day 3, not (not set)
   assert.match(fb.label, /FALLBACK/);
+});
+test('default internal=exclude surfaces the 1.9.5 mislabel note', async () => {
+  const r = await funnelReview({ since: 30, app_version: '1.9.5' });
+  assert.match(r.internal_note, /1\.9\.5 помечена internal целиком/);
 });

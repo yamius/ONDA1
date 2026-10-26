@@ -20,6 +20,7 @@
 
 import { ga4Missing, cohortReport, internalFilter, appVersionFilter, andFilters } from '../lib/sources/ga4.js';
 import { windowFor, rate, ok, notConfigured, sourceError, DATA_LAG, LOW_DATA_N } from '../lib/shared.js';
+import { internalMislabeledNote } from '../lib/internal-versions.js';
 
 /**
  * The point of comparison the redesign was measured against.
@@ -151,6 +152,7 @@ export async function retentionReview(args = {}) {
     const result = {
       window: win,
       filters: { internal, app_version: args.app_version ?? null },
+      ...(internalMislabeledNote(internal) && { internal_note: internalMislabeledNote(internal) }),
       data_lag_note:
         `${DATA_LAG.ga4} A cohort also needs the days themselves to have passed: ` +
         `d7 requires the cohort to be at least ${7 + REPORTING_LAG_DAYS} days old. ` +

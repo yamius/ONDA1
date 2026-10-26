@@ -16,6 +16,7 @@
 
 import { JWT } from 'google-auth-library';
 import { sourceError } from '../shared.js';
+import { INTERNAL_MISLABELED_VERSIONS } from '../internal-versions.js';
 
 const SCOPES = ['https://www.googleapis.com/auth/analytics.readonly'];
 const API = 'https://analyticsdata.googleapis.com/v1beta';
@@ -67,7 +68,27 @@ export function internalFilter(mode) {
   };
   if (mode === 'only') return isTrue;
   if (mode === 'include') return null;
-  return { notExpression: isTrue }; // 'exclude' (default)
+  // 'exclude' (default): NOT(internal=true AND appVersion NOT IN mislabeled).
+  // Mislabeled versions (whole build baked internal, see internal-versions.js)
+  // keep their users even though they carry internal=true.
+  if (INTERNAL_MISLABELED_VERSIONS.length === 0) return { notExpression: isTrue };
+  return {
+    notExpression: {
+      andGroup: {
+        expressions: [
+          isTrue,
+          {
+            notExpression: {
+              filter: {
+                fieldName: 'appVersion',
+                inListFilter: { values: [...INTERNAL_MISLABELED_VERSIONS] },
+              },
+            },
+          },
+        ],
+      },
+    },
+  };
 }
 
 export function appVersionFilter(appVersion) {

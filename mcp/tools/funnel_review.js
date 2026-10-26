@@ -26,6 +26,7 @@
 import { runReport, internalFilter, appVersionFilter, andFilters, eventNameFilter } from '../lib/sources/ga4.js';
 import { windowFor, rate, ok, notConfigured, sourceError, DATA_LAG } from '../lib/shared.js';
 import { ga4Missing } from '../lib/sources/ga4.js';
+import { internalMislabeledNote } from '../lib/internal-versions.js';
 
 /** New-user funnel (1.9.6+). 'home_view:first_launch' = home_view filtered by source. */
 const FIRST_LAUNCH = 'home_view:first_launch';
@@ -171,6 +172,7 @@ export async function funnelReview(args = {}) {
     const result = {
       window: win,
       filters: { internal, app_version: args.app_version ?? null },
+      ...(internalMislabeledNote(internal) && { internal_note: internalMislabeledNote(internal) }),
       data_lag_note: DATA_LAG.ga4,
       // Spelled out because it is the single most misread thing here.
       metric_note:
