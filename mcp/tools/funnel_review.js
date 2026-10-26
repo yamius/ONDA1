@@ -1,7 +1,17 @@
 /**
  * funnel_review — "where did they drop off".
  *
- * The activation funnel, as instrumented in the app:
+ * The new-user funnel (onboarding is DISABLED since 1.9.x, so new installs land
+ * straight on the hub):
+ *
+ *   first_open -> home_view{source:first_launch} -> practice_start
+ *   -> practice_complete -> results_view -> paywall_view
+ *
+ * home_view{first_launch} exists only from 1.9.6. For older builds a clearly
+ * labelled fallback is reported: home_view{relaunch} users whose
+ * days_since_first_seen is 0 (only if that GA4 custom dimension is registered).
+ *
+ * Legacy / secondary line (older versions; ~0 since onboarding was disabled):
  *
  *   first_open -> onboarding_start -> onboarding_complete -> practice_start
  *   -> practice_complete -> results_view -> paywall_view
@@ -17,6 +27,18 @@ import { runReport, internalFilter, appVersionFilter, andFilters, eventNameFilte
 import { windowFor, rate, ok, notConfigured, sourceError, DATA_LAG } from '../lib/shared.js';
 import { ga4Missing } from '../lib/sources/ga4.js';
 
+/** New-user funnel (1.9.6+). 'home_view:first_launch' = home_view filtered by source. */
+const FIRST_LAUNCH = 'home_view:first_launch';
+const NEW_STEPS = [
+  'first_open',
+  FIRST_LAUNCH,
+  'practice_start',
+  'practice_complete',
+  'results_view',
+  'paywall_view',
+];
+
+/** Legacy onboarding funnel — older versions only; onboarding disabled since 1.9.x. */
 const STEPS = [
   'first_open',
   'onboarding_start',
@@ -92,19 +114,59 @@ export async function funnelReview(args = {}) {
 
   try {
     const counts = await eventUsers(win, baseFilter, [...STEPS, 'purchase', 'paywall_dismiss', 'home_view']);
+    const homeBySource = await eventBreakdown(win, baseFilter, 'home_view', 'customEvent:source');
+    counts[FIRST_LAUNCH] = homeBySource.first_launch ?? 0;
 
-    const steps = STEPS.map((name, i) => {
+    const buildSteps = (list) => list.map((name, i) => {
       const users = counts[name] ?? 0;
-      const prev = i === 0 ? null : counts[STEPS[i - 1]] ?? 0;
-      const first = counts[STEPS[0]] ?? 0;
+      const prev = i === 0 ? null : counts[list[i - 1]] ?? 0;
+      const first = counts[list[0]] ?? 0;
       return {
-        step: name,
+        step: name === FIRST_LAUNCH ? 'home_view{source:first_launch}' : name,
         users,
         from_previous: i === 0 ? null : rate(users, prev),
         from_top: i === 0 ? null : rate(users, first),
         dropped_from_previous: i === 0 ? null : Math.max(0, (prev ?? 0) - users),
       };
     });
+    const steps = buildSteps(NEW_STEPS);
+    const legacySteps = buildSteps(STEPS);
+
+    // Fallback for builds before 1.9.6 (no first_launch): home_view{relaunch}
+    // with days_since_first_seen = 0. Needs that param registered as a GA4
+    // custom dimension; if not, say so instead of guessing.
+    let preFirstLaunchFallback;
+    try {
+      const data = await runReport({
+        dateRanges: [{ startDate: win.start_date, endDate: win.end_date }],
+        dimensions: [{ name: 'customEvent:source' }, { name: 'customEvent:days_since_first_seen' }],
+        metrics: [{ name: 'totalUsers' }],
+        dimensionFilter: andFilters(baseFilter, eventNameFilter(['home_view'])),
+        limit: 200,
+      });
+      let users = 0;
+      for (const row of data.rows ?? []) {
+        const [src, days] = row.dimensionValues.map((d) => d.value);
+        if (src === 'relaunch' && days !== '' && days !== '(not set)' && Number(days) === 0) {
+          users += Number(row.metricValues[0].value || 0);
+        }
+      }
+      preFirstLaunchFallback = {
+        available: true,
+        users,
+        of_first_open: rate(users, counts.first_open ?? 0),
+        label:
+          'FALLBACK (pre-1.9.6 builds): home_view{source:relaunch} with ' +
+          'days_since_first_seen = 0 - proxy for a new install reaching the hub. ' +
+          'Includes same-day relaunches (user count, so each user once), and is not the same metric as first_launch.',
+      };
+    } catch (e) {
+      preFirstLaunchFallback = {
+        available: false,
+        label: 'FALLBACK (pre-1.9.6 builds): home_view{relaunch} with days_since_first_seen = 0',
+        reason: 'days_since_first_seen is not queryable as a GA4 custom dimension: ' + String(e?.message || e).slice(0, 200),
+      };
+    }
 
     const result = {
       window: win,
@@ -117,7 +179,16 @@ export async function funnelReview(args = {}) {
         'that event in the window, even if they skipped an earlier one.',
     };
 
-    if (view === 'steps' || view === 'full') result.steps = steps;
+    if (view === 'steps' || view === 'full') {
+      result.funnel_note =
+        'steps = new-user funnel first_open -> home_view{source:first_launch} -> ' +
+        'practice_start -> ... (first_launch only exists from app 1.9.6). ' +
+        'legacy_onboarding_steps = the old onboarding funnel for older versions; ' +
+        'onboarding is disabled since 1.9.x, so its onboarding_* steps are ~0.';
+      result.steps = steps;
+      result.pre_1_9_6_fallback = preFirstLaunchFallback;
+      result.legacy_onboarding_steps = legacySteps;
+    }
 
     if (view === 'paywall' || view === 'full') {
       const paywallView = counts.paywall_view ?? 0;
@@ -125,7 +196,6 @@ export async function funnelReview(args = {}) {
 
       // home_view{source:first_run} only — 'relaunch'/'menu' are returning
       // users and have nothing to do with the post-paywall branch.
-      const homeBySource = await eventBreakdown(win, baseFilter, 'home_view', 'customEvent:source');
       const homeFirstRun = homeBySource.first_run ?? 0;
       const dismissByAction = await eventBreakdown(win, baseFilter, 'paywall_dismiss', 'customEvent:action');
 

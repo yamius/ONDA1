@@ -13,7 +13,9 @@ const COUNTS = {
   practice_start: 120, practice_complete: 90, results_view: 85,
   paywall_view: 80, purchase: 8, paywall_dismiss: 60, home_view: 55,
 };
-const HOME_BY_SOURCE = { first_run: 40, relaunch: 15 };
+const HOME_BY_SOURCE = { first_run: 40, relaunch: 15, first_launch: 150 };
+// home_view source x days_since_first_seen (pre-1.9.6 fallback)
+const HOME_BY_SOURCE_DAYS = [['relaunch', '0', 12], ['relaunch', '3', 9], ['first_run', '0', 40], ['relaunch', '(not set)', 2]];
 const DISMISS_BY_ACTION = { close: 45, continue_free: 15 };
 
 mock.module(ga4Url, {
@@ -27,6 +29,9 @@ mock.module(ga4Url, {
     runReport: async (body) => {
       const dim = body.dimensions?.[0]?.name;
       const mk = (obj) => ({ rows: Object.entries(obj).map(([k, v]) => ({ dimensionValues: [{ value: k }], metricValues: [{ value: String(v) }] })) });
+      if (body.dimensions?.[1]?.name === 'customEvent:days_since_first_seen') {
+        return { rows: HOME_BY_SOURCE_DAYS.map(([s, d, v]) => ({ dimensionValues: [{ value: s }, { value: d }], metricValues: [{ value: String(v) }] })) };
+      }
       if (dim === 'eventName') return mk(COUNTS);
       if (dim === 'customEvent:source') return mk(HOME_BY_SOURCE);
       if (dim === 'customEvent:action') return mk(DISMISS_BY_ACTION);
@@ -39,7 +44,7 @@ const { funnelReview } = await import('../tools/funnel_review.js');
 
 test('шаги воронки: проценты от предыдущего и от вершины', async () => {
   const r = await funnelReview({ since: 28 });
-  const byName = Object.fromEntries(r.steps.map(s => [s.step, s]));
+  const byName = Object.fromEntries(r.legacy_onboarding_steps.map(s => [s.step, s]));
   assert.equal(byName.first_open.users, 200);
   assert.equal(byName.first_open.from_previous, null, 'у первого шага нет предыдущего');
   // 150 из 180 = 83.3%
@@ -122,4 +127,27 @@ test('hard-paywall views sum BOTH source values across the rename seam', async (
   assert.ok(hard.views_by_source_value !== undefined, 'the split across the seam is visible');
   assert.match(hard.seam_note, /SUM of/);
   assert.match(hard.seam_note, /practice_intro/);
+});
+
+test('new-user funnel: first_open -> home_view{first_launch} -> practice_start', async () => {
+  const r = await funnelReview({ since: 28 });
+  assert.deepEqual(r.steps.slice(0, 3).map((s) => s.step), ['first_open', 'home_view{source:first_launch}', 'practice_start']);
+  assert.equal(r.steps[1].users, 150);            // only source=first_launch, not all home_view
+  assert.equal(r.steps[1].from_previous.pct, 75); // 150/200
+  assert.equal(r.steps[2].from_previous.pct, 80); // 120/150
+  assert.ok(r.steps.some((s) => s.step === 'paywall_view'));
+  assert.match(r.funnel_note, /disabled since 1\.9/);
+});
+
+test('legacy onboarding line stays as a secondary list', async () => {
+  const r = await funnelReview({ since: 28 });
+  assert.deepEqual(r.legacy_onboarding_steps.slice(0, 3).map((s) => s.step), ['first_open', 'onboarding_start', 'onboarding_complete']);
+});
+
+test('pre-1.9.6 fallback = relaunch with days_since_first_seen 0, labelled', async () => {
+  const r = await funnelReview({ since: 28 });
+  const fb = r.pre_1_9_6_fallback;
+  assert.equal(fb.available, true);
+  assert.equal(fb.users, 12);                      // not first_run, not day 3, not (not set)
+  assert.match(fb.label, /FALLBACK/);
 });
