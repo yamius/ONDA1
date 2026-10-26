@@ -50,3 +50,10 @@ const localDayKey = (now: number) => {
 /** baseline_state dedupe: true at most once per local calendar day. */
 export const claimBaselineStateDay = (now: number = Date.now()): Promise<boolean> =>
   claim(BASELINE_STATE_DAY_KEY, localDayKey(now));
+
+const HOME_VIEW_SEEN_KEY = 'onda_home_view_seen';
+/** home_view source=first_launch: true only on the first-ever hub entry on this
+ *  install. Preferences-backed (localStorage alone was purged for anon users
+ *  before 1.9.3); falls back to the legacy localStorage flag so upgraders stay
+ *  'relaunch'. */
+export const claimFirstHomeView = (): Promise<boolean> => claim(HOME_VIEW_SEEN_KEY, '1');
