@@ -147,13 +147,25 @@ export async function funnelReview(args = {}) {
         limit: 200,
       });
       let users = 0;
+      let numericRows = 0;
       for (const row of data.rows ?? []) {
         const [src, days] = row.dimensionValues.map((d) => d.value);
-        if (src === 'relaunch' && days !== '' && days !== '(not set)' && Number(days) === 0) {
+        const numeric = /^\d+$/.test(String(days ?? '').trim());
+        if (numeric) numericRows += 1;
+        if (src === 'relaunch' && numeric && Number(days) === 0) {
           users += Number(row.metricValues[0].value || 0);
         }
       }
-      preFirstLaunchFallback = {
+      // 103: days_since_first_seen was a NUMBER param, which GA4 shows as
+      // "(not set)" — with no numeric value at all, "0 users" would be a lie.
+      if (numericRows === 0) {
+        preFirstLaunchFallback = {
+          available: false,
+          users: null,
+          label: 'FALLBACK (pre-1.9.6 builds): home_view{relaunch} with days_since_first_seen = 0',
+          reason: 'нет данных: days_since_first_seen has no numeric values in GA4 yet (number params arrive as strings only from task-103 app builds)',
+        };
+      } else preFirstLaunchFallback = {
         available: true,
         users,
         of_first_open: rate(users, counts.first_open ?? 0),

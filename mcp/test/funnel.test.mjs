@@ -165,3 +165,15 @@ test('default internal=exclude surfaces the 1.9.5 mislabel note', async () => {
   const r = await funnelReview({ since: 30, app_version: '1.9.5' });
   assert.match(r.internal_note, /1\.9\.5 помечена internal целиком/);
 });
+
+test('103: fallback says "нет данных" when days_since_first_seen has no numeric values', async () => {
+  const saved = HOME_BY_SOURCE_DAYS.splice(0, HOME_BY_SOURCE_DAYS.length, ['relaunch', '(not set)', 30], ['relaunch', '', 5]);
+  try {
+    const fb = (await funnelReview({ since: 30 })).pre_1_9_6_fallback;
+    assert.equal(fb.available, false);
+    assert.equal(fb.users, null);
+    assert.match(fb.reason, /нет данных/);
+  } finally {
+    HOME_BY_SOURCE_DAYS.splice(0, HOME_BY_SOURCE_DAYS.length, ...saved);
+  }
+});
