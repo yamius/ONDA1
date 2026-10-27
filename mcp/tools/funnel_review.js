@@ -23,6 +23,7 @@
  * and a single "conversion" number would hide which one is happening.
  */
 
+import { paywallBreakdowns } from '../lib/paywall-breakdowns.js';
 import { runReport, internalFilter, appVersionFilter, andFilters, eventNameFilter } from '../lib/sources/ga4.js';
 import { windowFor, rate, ok, notConfigured, sourceError, DATA_LAG } from '../lib/shared.js';
 import { ga4Missing } from '../lib/sources/ga4.js';
@@ -250,14 +251,10 @@ export async function funnelReview(args = {}) {
             'splits across that seam.',
         },
         other_sources: otherViews ? { views: otherViews, values: Object.keys(viewBySource) } : undefined,
+        // 101: purchase / trial_start by paywall_source, trial_outcome by outcome.
+        // Same internal filter (incl. INTERNAL_MISLABELED_VERSIONS) as everything else.
         purchase_attribution: {
-          available: false,
-          reason:
-            'purchase carries no paywall source — it fires from useSubscription on ' +
-            'the entitlement change and does not know which paywall preceded it. ' +
-            'So conversion CANNOT be split per paywall, and a per-paywall silent-exit ' +
-            'residual cannot be computed either. Both would need the source added to ' +
-            'the purchase event.',
+          ...(await paywallBreakdowns(win, baseFilter)),
           total_purchases_in_window: purchase,
         },
         note:
