@@ -207,15 +207,31 @@ export function stringifyBooleanParams(p?: Record<string, unknown>): Record<stri
   return out;
 }
 
-function _sanitizeFirebaseParams(p?: Record<string, unknown>): Record<string, any> {
+/**
+ * 103: GA4 shows custom NUMERIC event params as "(not set)" in custom-dimension
+ * reports, so the Firebase mirror sends numbers as strings — EXCEPT these
+ * reserved GA4/Firebase e-commerce params, which GA4 reads as numbers (revenue,
+ * tax, ...) and must stay numeric. Applied to ALL events: the names are reserved
+ * by GA4 and no custom ONDA param reuses them, so keeping them numeric anywhere
+ * is exactly GA4's own contract. Supabase is untouched (raw metadata).
+ */
+export const FIREBASE_NUMERIC_PARAMS: ReadonlySet<string> = new Set([
+  'value', 'price', 'quantity', 'tax', 'shipping', 'discount',
+]);
+/** Reserved array param (GA4 e-commerce `items`) — passed through as-is. */
+const FIREBASE_PASSTHROUGH_PARAMS: ReadonlySet<string> = new Set(['items']);
+
+export function _sanitizeFirebaseParams(p?: Record<string, unknown>): Record<string, any> {
   if (!p) return {};
   const out: Record<string, any> = {};
   for (const [k, v] of Object.entries(p)) {
     if (v === null || v === undefined) continue;
     const key = _toSnake(k);
-    if (typeof v === 'string') out[key] = v.slice(0, 100);
+    if (FIREBASE_PASSTHROUGH_PARAMS.has(key) && Array.isArray(v)) out[key] = v;
+    else if (typeof v === 'string') out[key] = v.slice(0, 100);
     else if (typeof v === 'boolean') out[key] = String(v);
-    else if (typeof v === 'number') out[key] = v;
+    // Floats become plain String(v) (e.g. "0.8333333333333334" — far below 100 chars).
+    else if (typeof v === 'number') out[key] = FIREBASE_NUMERIC_PARAMS.has(key) ? v : String(v).slice(0, 100);
     else out[key] = String(v).slice(0, 100);
   }
   return out;
