@@ -30,6 +30,14 @@ function rowsFor(event, field) {
   if (field === 'pagePath' && event === 'page_view') {
     return [{ dim: '/articles/physiological-sigh', users: 12, events: 15 }];
   }
+  if (field === 'customEvent:time_percent' && event === 'results_view') {
+    return [
+      { dim: '100', users: 8, events: 10 },
+      { dim: '50', users: 4, events: 10 },
+      { dim: '200', users: 1, events: 1 },
+      { dim: '1200', users: 2, events: 2 },
+    ];
+  }
   if (field !== 'customEvent:metrics_source') return []; // wrong addressing → no data
   // watch: few users, many events; camera: many users; simulated: few.
   if (event === 'results_view') {
@@ -204,4 +212,27 @@ test('without conversion_event rows carry no conversion field — old calls unch
   assert.equal(r.breakdown[0].conversion, undefined);
   assert.equal(lastBody.dimensions[0].name, 'customEvent:metrics_source');
   assert.equal(r.filters.stream, 'all');
+});
+
+test('time_percent: >200 flagged overrun and excluded from averages (task 102)', async () => {
+  const r = await ga4Breakdown({ event: 'results_view', dimension: 'time_percent' });
+  assert.equal(r.ok, true);
+  const over = r.breakdown.find((b) => b.value === '1200');
+  assert.equal(over.overrun, true);
+  assert.equal(over.bucket, 'overrun (>200%)');
+  assert.equal(r.breakdown.find((b) => b.value === '200').overrun, undefined); // 200 is not overrun
+  const s = r.time_percent_summary;
+  assert.equal(s.overrun.events, 2);
+  assert.equal(s.overrun.users, 2);
+  // (100*10 + 50*10 + 200*1) / 21 = 81.0 ; incl: (1700 + 2400) / 23 = 178.3
+  assert.equal(s.avg_time_percent_excl_overrun, 81);
+  assert.equal(s.avg_time_percent_incl_overrun, 178.3);
+  assert.match(r.overrun_note, /time_percent > 200 = practice left running/);
+  assert.equal(lastBody.limit, 250); // all rows by default so averages are whole
+});
+
+test('non-time dimensions get no overrun fields', async () => {
+  const r = await ga4Breakdown({ event: 'results_view', dimension: 'metrics_source' });
+  assert.equal(r.time_percent_summary, undefined);
+  assert.ok(r.breakdown.every((b) => b.overrun === undefined));
 });

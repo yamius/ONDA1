@@ -26,6 +26,7 @@
 import { ga4Missing, runReport, eventNameFilter, internalFilter, andFilters } from '../lib/sources/ga4.js';
 import { clampSince, rate, ok, notConfigured, sourceError, DATA_LAG, LOW_DATA_N } from '../lib/shared.js';
 import { internalMislabeledNote } from '../lib/internal-versions.js';
+import { isPracticeTimeDimension, isOverrun, summarizeTimePercent, OVERRUN_BUCKET } from '../lib/practice-overrun.js';
 
 const DEFAULT_SINCE = 90; // wider than the 28-day house default: August traffic collapse → tiny samples
 const DEFAULT_LIMIT = 25;
@@ -78,7 +79,10 @@ export const ga4BreakdownSchema = {
     'country, sessionSource, sessionMedium, sessionDefaultChannelGroup) which pass as-is; ' +
     'a colon-qualified field ("customUser:internal") is used verbatim. Filters: stream ' +
     '(website/app/all), exclude_country, internal. Optional conversion_event adds per-row ' +
-    'converting users + rate. Read-only, aggregate-only.',
+    'converting users + rate. For dimension=time_percent, rows > 200 are flagged ' +
+    '"overrun (>200%)" and time_percent_summary gives averages with and without them ' +
+    '(time_percent > 200 = practice left running, no auto-finish by design; excluded from averages). ' +
+    'Read-only, aggregate-only.',
   inputSchema: {
     type: 'object',
     properties: {
@@ -172,7 +176,9 @@ export async function ga4Breakdown(args = {}) {
   const stream = ['website', 'app'].includes(args.stream) ? args.stream : 'all';
   const excludeCountry = args.exclude_country ? String(args.exclude_country) : null;
   const conversionEvent = args.conversion_event ? String(args.conversion_event).trim() : null;
-  const limit = Math.min(Math.max(parseInt(args.limit ?? DEFAULT_LIMIT, 10) || DEFAULT_LIMIT, 1), MAX_LIMIT);
+  // time_percent has many distinct values; default to all rows so averages are whole.
+  const defaultLimit = isPracticeTimeDimension(field) ? MAX_LIMIT : DEFAULT_LIMIT;
+  const limit = Math.min(Math.max(parseInt(args.limit ?? defaultLimit, 10) || DEFAULT_LIMIT, 1), MAX_LIMIT);
 
   const scopeFilters = [internalFilter(internal), streamFilter(stream), excludeCountryFilter(excludeCountry)];
   const reportFor = (eventName, rowLimit) => ({
@@ -208,6 +214,7 @@ export async function ga4Breakdown(args = {}) {
     const totalEvents = rows.reduce((s, r) => s + r.events, 0);
     const denom = metric === 'events' ? totalEvents : totalUsers;
 
+    const timeDim = isPracticeTimeDimension(field);
     const breakdown = rows.map((r) => {
       const row = {
         value: r.value === '' ? '(empty)' : r.value,
@@ -215,6 +222,10 @@ export async function ga4Breakdown(args = {}) {
         events: r.events,
         share: rate(metric === 'events' ? r.events : r.users, denom),
       };
+      if (timeDim && isOverrun(r.value)) {
+        row.overrun = true;
+        row.bucket = OVERRUN_BUCKET;
+      }
       if (convByValue) {
         const c = convByValue.get(r.value) ?? { users: 0, events: 0 };
         row.conversion = { users: c.users, events: c.events, rate: rate(c.users, r.users) };
@@ -249,6 +260,11 @@ export async function ga4Breakdown(args = {}) {
         'denominator can slightly exceed the true unique total. eventCount is reference-only.',
       data_lag_note: DATA_LAG.ga4,
     };
+    if (timeDim) {
+      // Task 102: no auto-finish by design → forgotten practices inflate time_percent.
+      result.time_percent_summary = summarizeTimePercent(rows);
+      result.overrun_note = result.time_percent_summary.note;
+    }
     if (conversionEvent) {
       result.conversion_event = conversionEvent;
       result.conversion_total_users = [...convByValue.values()].reduce((sum, c) => sum + c.users, 0);
