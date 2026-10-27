@@ -292,7 +292,6 @@ const OndaLevel1 = () => {
   const platform = Capacitor.getPlatform();
   const [pendingStartPracticeAfterSubscribe, setPendingStartPracticeAfterSubscribe] = useState(false);
   
-  useKeepAwake(true);
 
   // Read 14 days of history from HealthKit and build the baseline card. Called
   // ONLY after the user grants access via the watch CTA (permission by intent).
@@ -710,6 +709,11 @@ const OndaLevel1 = () => {
   const [activePractice, setActivePractice] = useState(null);
   const [practiceState, setPracticeState] = useState('intro');
   const [practiceTime, setPracticeTime] = useState(0);
+  // Task 102: screen stays awake ONLY while a practice is open and not finished
+  // (intro + active, incl. paused) or the camera pulse is live. Results and all
+  // other screens use normal iOS auto-lock. Timer/rewards untouched.
+  const cameraStreamOn = cameraPpg.status === 'requesting' || cameraPpg.status === 'searching' || cameraPpg.status === 'reading';
+  useKeepAwake((activePractice != null && practiceState !== 'complete') || cameraStreamOn);
 
   // Workout keep-alive lives in a single effect below (setPracticeActive),
   // declared after both practiceState and showDiaryModal to avoid TDZ.

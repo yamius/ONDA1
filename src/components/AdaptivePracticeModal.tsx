@@ -7,6 +7,7 @@ import { CameraPulseWindow } from './CameraPulseWindow';
 import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from '../constants/practiceAssets';
 import { useVitals } from '../hooks/useVitals';
 import { useCameraPpg } from '../hooks/useCameraPpg';
+import { useKeepAwake } from '../hooks/useKeepAwake';
 import { useSubscription } from '../hooks/useSubscription';
 import { useAnalytics } from '../hooks/useAnalytics';
 import { stringifyBooleanParams } from '../services/AnalyticsService';
@@ -544,6 +545,12 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   const { track } = useAnalytics();
   const platform = Capacitor.getPlatform();
   const [practiceState, setPracticeState] = useState<PracticeState>('intro');
+  // Task 102: keep the screen on only while this practice runs (intro/practice)
+  // or the camera pulse is live; results screen and closed modal → auto-lock.
+  useKeepAwake(
+    (isOpen && practiceState !== 'complete') ||
+      cameraPpg.status === 'requesting' || cameraPpg.status === 'searching' || cameraPpg.status === 'reading',
+  );
   const [isPaused, setIsPaused] = useState(false);
   // Zen "minimal mode" — same as the basic practice: hides the timer/window/
   // quality/buttons and leaves only the guiding card (tap it to restore).
