@@ -123,6 +123,7 @@ const BrainFogQuizPage = lazy(() => import('./pages/BrainFogQuizPage').then(m =>
 const RestingHeartRatePage = lazy(() => import('./pages/RestingHeartRatePage').then(m => ({ default: m.RestingHeartRatePage })))
 const RecoveryScorePage = lazy(() => import('./pages/RecoveryScorePage').then(m => ({ default: m.RecoveryScorePage })))
 const CameraHeartRatePage = lazy(() => import('./pages/CameraHeartRatePage').then(m => ({ default: m.CameraHeartRatePage })))
+const VibrationBreathingPage = lazy(() => import('./pages/VibrationBreathingPage').then(m => ({ default: m.VibrationBreathingPage })))
 const MicBreathingPage = lazy(() => import('./pages/MicBreathingPage').then(m => ({ default: m.MicBreathingPage })))
 const BreathHeartBiofeedbackPage = lazy(() => import('./pages/BreathHeartBiofeedbackPage').then(m => ({ default: m.BreathHeartBiofeedbackPage })))
 const AppleHealthFilePage = lazy(() => import('./pages/AppleHealthFilePage').then(m => ({ default: m.AppleHealthFilePage })))
@@ -442,6 +443,7 @@ const routeElements = (
             <Route path="/pl/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
             <Route path="/pt/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
             <Route path="/tools/breathing-rate"  element={<MicBreathingPage />} />
+            <Route path="/tools/vibration-breathing" element={<VibrationBreathingPage />} />
             <Route path="/tools/breath-heart-biofeedback" element={<BreathHeartBiofeedbackPage />} />
             <Route path="/reviews"               element={<ReviewsPage />} />
             <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />

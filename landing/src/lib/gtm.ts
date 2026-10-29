@@ -59,3 +59,12 @@ export function gtmNavClick(item: string, placement: string, pagePath: string): 
 export function gtmFileAnalyzeStart(): void {
   push({ event: 'file_analyze_start' })
 }
+
+/** Interactive tool events (task 104: /tools/vibration-breathing) → GA4 `tool_start`,
+ *  `tool_complete`, `tool_feedback`. Every parameter is a STRING; no health data. */
+export function gtmToolEvent(
+  event: 'tool_start' | 'tool_complete' | 'tool_feedback',
+  params: Record<string, string>,
+): void {
+  push({ event, ...params })
+}

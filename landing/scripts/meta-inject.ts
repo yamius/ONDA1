@@ -84,6 +84,7 @@ import { FOG_FAQ } from '../src/data/brain-fog'
 import { RECOVERY_FAQ } from '../src/data/recovery-score'
 import { camToolCopy } from '../src/data/cam-tool-i18n'
 import { MIC_FAQ } from '../src/data/mic-breathing'
+import { VIBRATION_FAQ } from '../src/data/vibration-breathing'
 import { BH_FAQ } from '../src/data/breath-heart'
 import {
   reviews,
@@ -639,6 +640,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Camera Heart Rate', url: `${SITE_URL}/tools/camera-heart-rate` })
     } else if (segments[1] === 'breathing-rate') {
       items.push({ name: 'Breathing Rate', url: `${SITE_URL}/tools/breathing-rate` })
+    } else if (segments[1] === 'vibration-breathing') {
+      items.push({ name: 'Vibration Breathing', url: `${SITE_URL}/tools/vibration-breathing` })
     } else if (segments[1] === 'breath-heart-biofeedback') {
       items.push({ name: 'Breath–Heart Biofeedback', url: `${SITE_URL}/tools/breath-heart-biofeedback` })
     }
@@ -2645,6 +2648,35 @@ function getMetaForRouteBase(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/breathing-rate.png`,
       faq: { mainEntity: MIC_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/vibration-breathing') {
+    return {
+      title: 'Vibration Breathing — Relax or Wake Up by Touch | ONDA Life',
+      description:
+        'Rest a finger on your phone and breathe with the vibration: Relax (4 s in, 6 s out) or Wake up (3 s in, 2 s out). Light pulses and optional sound where vibration is not supported.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/vibration-breathing.png`,
+      faq: { mainEntity: VIBRATION_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+      jsonLd: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: 'Vibration Breathing',
+          description:
+            'A free browser tool that sets a breathing rhythm by touch: finger on the screen, the phone vibrates with short quickening taps on the inhale and long slow pulses on the exhale. Relax: 4 s in / 6 s out. Wake up: 3 s in / 2 s out.',
+          url,
+          inLanguage: 'en',
+          applicationCategory: 'HealthApplication',
+          operatingSystem: 'Any (web browser; vibration where supported)',
+          isAccessibleForFree: true,
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+          image: `${SITE_URL}/images/tools/vibration-breathing.png`,
+          publisher: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+        },
+      ],
     }
   }
   if (route === '/embed/hrv') {
