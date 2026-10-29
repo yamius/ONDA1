@@ -838,6 +838,17 @@ for (const route of routes) {
     // with rendering the route outside Layout (no route tracker). Openers matched
     // loosely (the GTM head comment carries trailing text; the Reddit comment spans
     // lines) so a copy-edit to a snippet cannot silently re-arm tracking here.
+    // 104: paid traffic (utm_source=meta) on /tools/vibration-breathing opens straight on the mode
+    // picker. The SEO HTML is the same for everyone (canonical/indexing unchanged); this tiny inline
+    // script flags <html> before first paint so CSS hides the intro — no flash, no hydration mismatch.
+    // Route-scoped on purpose (strict-CSP routes must stay inline-script-free). The page sets the same
+    // class on SPA navigation (VB_AD_CLASS in VibrationBreathingPage).
+    if (route === '/tools/vibration-breathing') {
+      out = out.replace(
+        /(<meta name="viewport"[^>]*>)/,
+        `$1\n    <script>try{if(/(^|[?&])utm_source=meta(&|$)/i.test(location.search))document.documentElement.classList.add('vb-ad')}catch(e){}</script>`,
+      )
+    }
     if (SCRIPT_FREE_ROUTES.has(route)) {
       out = out
         .replace(/<!-- Google Tag Manager[\s\S]*?<!-- End Google Tag Manager -->\s*/g, '')

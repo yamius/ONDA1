@@ -35,14 +35,6 @@ export const FADE_IN_MS = 2500
 export const FADE_OUT_MS = 1800
 
 /**
- * Owner's wording: "Vibration works in the ONDA app". The ONDA app has NO
- * vibration/haptic breathing today (no Haptics/vibrate in the app code; the facts
- * doc forbids haptic-guidance claims), so the banner stays OFF until the owner
- * confirms the feature exists.
- */
-export const SHOW_APP_VIBRATION_BANNER = false
-
-/**
  * One vibration pulse for the current moment.
  *  - inhale: short pulses whose gap shrinks across the inhale (a rising, denser series)
  *  - exhale: long, sparse pulses

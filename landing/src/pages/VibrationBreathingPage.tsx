@@ -16,17 +16,17 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { langFromPath, langHref } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
+import { storeCt } from '../lib/storeCt'
 import { gtmToolEvent } from '../lib/gtm'
 import {
-  MODES, MAX_CONTINUOUS_MS, FADE_IN_MS, FADE_OUT_MS, SHOW_APP_VIBRATION_BANNER,
+  MODES, MAX_CONTINUOUS_MS, FADE_IN_MS, FADE_OUT_MS,
   VIBRATION_FAQ, nextPulse, type BreathMode,
 } from '../data/vibration-breathing'
 
 type View = 'choose' | 'session' | 'paused' | 'final'
 type Feeling = 'better' | 'same' | 'worse'
 
-const CT = 'vibration_tool'
+const CT = storeCt('tool', 'vibration-breathing') // tool_vibration_breathing
 const TOOL_NAME = 'vibration_breathing'
 
 function canVibrate(): boolean {
@@ -73,6 +73,11 @@ export function VibrationBreathingPage() {
     document.title = 'Vibration Breathing — Relax or Wake Up by Touch | ONDA Life'
     setVibSupported(canVibrate())
     try { reducedRef.current = window.matchMedia('(prefers-reduced-motion: reduce)').matches } catch { /* old browser */ }
+    // utm_source=meta → open straight on the mode picker (direct loads are flagged before paint by
+    // the inline script prerender.ts adds; this covers SPA navigation). CSS only — the DOM is the same.
+    const el = document.documentElement
+    if (/(^|[?&])utm_source=meta(&|$)/i.test(window.location.search)) el.classList.add('vb-ad')
+    return () => el.classList.remove('vb-ad')
   }, [])
 
   useEffect(() => { viewRef.current = view }, [view])
@@ -313,7 +318,6 @@ export function VibrationBreathingPage() {
   const spec = MODES[mode]
   const accent = mode === 'relax' ? 'text-amber-300' : 'text-violet-300'
   const ctrlHidden = touching ? 'pointer-events-none opacity-0' : 'opacity-100'
-  const showAppBanner = SHOW_APP_VIBRATION_BANNER && vibSupported === false
 
   const stageHandlers = {
     onPointerDown: (e: React.PointerEvent<HTMLDivElement>) => {
@@ -335,6 +339,10 @@ export function VibrationBreathingPage() {
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
+      <style>{'.vb-ad .vb-seo-intro{display:none}.vb-ad .vb-choose{margin-top:-1.5rem}'}</style>
+      {/* SEO block — hidden (CSS, before first paint) for paid traffic with utm_source=meta,
+          see the inline script in index.html. Static HTML/canonical stay the same for everyone. */}
+      <div className="vb-seo-intro">
       <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40">
         <Link to={langHref('/', lang)} className="hover:text-terminal-green">Home</Link>
         <span>/</span>
@@ -349,11 +357,12 @@ export function VibrationBreathingPage() {
         screen and your phone vibrates — a quickening series of short taps as you breathe in, long slow pulses as you
         breathe out. Relax runs 4 seconds in / 6 seconds out; Wake up runs 3 seconds in / 2 seconds out.
       </p>
+      </div>
 
       {/* Mode picker — the tool starts on Relax / Wake up */}
       <section
         aria-labelledby="vb-choose"
-        className="mb-8 flex min-h-[70svh] flex-col items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-b from-black/40 to-black/10 px-5 py-10 text-center"
+        className="vb-choose mb-8 flex min-h-[70svh] flex-col items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-b from-black/40 to-black/10 px-5 py-10 text-center"
       >
         <h2 id="vb-choose" className="mb-8 text-2xl font-semibold text-white/90">What do you need right now?</h2>
         <div className="flex w-full max-w-sm flex-col gap-4">
@@ -378,11 +387,6 @@ export function VibrationBreathingPage() {
           <p className="mt-6 max-w-sm font-mono text-[11px] leading-relaxed text-white/40">
             This browser can’t vibrate, so the rhythm comes as light pulses — with an optional soft sound.
           </p>
-        )}
-        {showAppBanner && (
-          <a href={appStoreUrl(CT)} className="mt-4 rounded-lg border border-white/15 px-4 py-2 font-mono text-xs text-white/70 hover:bg-white/5">
-            Vibration works in the ONDA app →
-          </a>
         )}
       </section>
 
