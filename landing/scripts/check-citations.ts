@@ -272,7 +272,7 @@ function labelsFor(text: string, o: Occ): { labels: Label[]; authorsField?: stri
     if (authorsField || lab) return { labels: lab ? labelsIn(lab) : [], authorsField, yearField }
     // TS line comment after a URL constant: `…/19463818/', // Thayer & Lane — HRV`
   }
-  const comment = text.slice(o.end, text.indexOf('\n', o.end) >= 0 ? text.indexOf('\n', o.end) : undefined).match(/\/\/\s*(.+)$/)?.[1]
+  const comment = text.slice(o.end, text.indexOf('\n', o.end) >= 0 ? text.indexOf('\n', o.end) : undefined).match(/\/\/\s*([^\r\n]+)/)?.[1]?.trim()
   if (comment) {
     const l = labelsIn(comment)
     if (l.length) return { labels: l }
