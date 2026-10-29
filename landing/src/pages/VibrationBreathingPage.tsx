@@ -587,7 +587,7 @@ function AndroidWaitlistForm({ onClose }: { onClose: () => void }) {
       const res = await fetch('/api/waitlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, platform: 'android' }),
+        body: JSON.stringify({ email, platform: 'android', source: CT_SOURCE }),
       })
       if (res.status === 409) { setState('done'); return } // already on the list
       if (!res.ok) { setError('Something went wrong. Please try again later.'); setState('idle'); return }
