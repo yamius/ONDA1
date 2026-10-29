@@ -21,7 +21,7 @@ import AppStoreCTA from '../components/AppStoreCTA'
 import { langFromPath, langHref } from '../i18n'
 import { storeCt } from '../lib/storeCt'
 import { gtmToolEvent, gtmAndroidWaitlist } from '../lib/gtm'
-import { BreathSound } from '../lib/breathSound'
+import { BreathSound, unlockAudioSession, releaseAudioSession } from '../lib/breathSound'
 import { API_ENABLED } from '../config/features'
 import {
   MODES, MAX_CONTINUOUS_MS, FADE_IN_MS, FADE_OUT_MS,
@@ -161,7 +161,8 @@ export function VibrationBreathingPage() {
       if (snd) {
         const ease = 0.5 - 0.5 * Math.cos(Math.PI * progress)
         const breath = inhale ? ease : 1 - ease
-        snd.update(soundRef.current ? g * (0.25 + 0.75 * breath) : 0, breath)
+        // Idle (no finger) = quiet breathing wave at ~40%; finger fades it up to full (g).
+        snd.update(soundRef.current ? (0.4 + 0.6 * g) * (0.3 + 0.7 * breath) : 0, breath)
       }
 
       if (canvas) draw(canvas, now, spec.rgb, inhale, progress, g, modeRef.current)
@@ -276,11 +277,16 @@ export function VibrationBreathingPage() {
   function start(m: BreathMode) {
     // Sound is created + resumed HERE, inside the click (user gesture) — required on iOS.
     // Default: ON where there is no vibration (sound is the main channel), OFF where it vibrates.
+    // All synchronous — no await before resume(), or iOS won't unlock audio.
     const vib = canVibrate()
+    if (!vib) unlockAudioSession() // iOS: play through the Silent switch
     try {
       audioRef.current?.close()
       audioRef.current = new BreathSound(m)
       audioRef.current.resume()
+      if (/[?&]debug_audio=1/.test(window.location.search)) {
+        (window as unknown as { __vbSound?: BreathSound }).__vbSound = audioRef.current
+      }
     } catch { audioRef.current = null }
     const on = !vib && !!audioRef.current
     soundRef.current = on
@@ -301,6 +307,7 @@ export function VibrationBreathingPage() {
     setTouch(false)
     gainRef.current = 0
     audioRef.current?.close(); audioRef.current = null
+    releaseAudioSession()
     if (canVibrate()) vibrate(0)
     gtmToolEvent('tool_complete', {
       tool_name: TOOL_NAME,
@@ -312,6 +319,7 @@ export function VibrationBreathingPage() {
 
   function toggleSound() {
     const next = !soundOn
+    if (next) unlockAudioSession()
     if (!audioRef.current) {
       try { audioRef.current = new BreathSound(modeRef.current) } catch { return }
     }
@@ -558,8 +566,8 @@ export function VibrationBreathingPage() {
 }
 
 /** Android waitlist form — reuses the existing waitlist mechanism (POST /api/waitlist →
- *  Supabase `waitlist` {email, platform}); no new table. The table has no `source` column, so
- *  the source lives only in analytics. Consent checkbox is required. */
+ *  Supabase `waitlist` {email, platform, source}); no new table. `source` needs the column from
+ *  supabase-waitlist-source.sql (the handler only writes it when present). Consent is required. */
 function AndroidWaitlistForm({ onClose }: { onClose: () => void }) {
   const [state, setState] = useState<'idle' | 'sending' | 'done'>('idle')
   const [error, setError] = useState<string | null>(null)
