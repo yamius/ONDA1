@@ -74,7 +74,10 @@ export class BreathSound {
     this.ctx = new AC()
     this.mode = mode
     const c = this.ctx
-    this.master = c.createGain(); this.master.gain.value = MASTER
+    // Always start from silence and fade in over ~1 s (also when the iOS Silent-switch bypass is on).
+    this.master = c.createGain()
+    this.master.gain.setValueAtTime(0.0001, c.currentTime)
+    this.master.gain.linearRampToValueAtTime(MASTER, c.currentTime + 1.0)
     this.wave = c.createGain(); this.wave.gain.value = 0.0001
     this.analyser = c.createAnalyser(); this.analyser.fftSize = 2048
 

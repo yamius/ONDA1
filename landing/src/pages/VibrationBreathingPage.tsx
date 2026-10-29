@@ -170,7 +170,7 @@ export function VibrationBreathingPage() {
     }
 
     const draw = (
-      c: HTMLCanvasElement, now: number, rgb: [number, number, number],
+      c: HTMLCanvasElement, _now: number, rgb: [number, number, number],
       inhale: boolean, progress: number, g: number, m: BreathMode,
     ) => {
       const dpr = Math.min(2, window.devicePixelRatio || 1)
@@ -193,7 +193,7 @@ export function VibrationBreathingPage() {
       const breath = inhale ? ease : 1 - ease // 0 = empty, 1 = full
       const intensity = (inhale ? 0.95 : 0.6) * (0.45 + 0.55 * g)
       const maxR = Math.hypot(Math.max(x, w - x), Math.max(y, h - y))
-      const N = 7
+      const N = 3
 
       // background glow
       const glow = ctx.createRadialGradient(x, y, 0, x, y, maxR * 0.7)
@@ -202,19 +202,33 @@ export function VibrationBreathingPage() {
       ctx.fillStyle = glow
       ctx.fillRect(0, 0, w, h)
 
-      const period = m === 'relax' ? (inhale ? 2600 : 3600) : (inhale ? 1300 : 1700)
+      // Waves: few and slow. Inhale → rings CONVERGE on the point; exhale → they SPREAD out from it.
+      // Each ring crosses the screen once per phase (Relax 4 s / 6 s, Wake 3 s / 2 s). The halo grows
+      // wave by wave through the breath cycle and eases back down before the next cycle.
+      const spec = MODES[m]
+      const cycle = spec.inhaleMs + spec.exhaleMs
+      const cycleP = inhale
+        ? (progress * spec.inhaleMs) / cycle
+        : (spec.inhaleMs + progress * spec.exhaleMs) / cycle
+      const edge = Math.min(1, progress / 0.12, (1 - progress) / 0.12) // no pop at phase switch
       for (let k = 0; k < N; k++) {
-        const f = reducedRef.current ? (k + 0.5) / N : ((now / period) + k / N) % 1
-        const rad = Math.max(2, maxR * 0.85 * (1 - f))
+        const f = reducedRef.current ? (k + 0.5) / N : (progress + k / N) % 1
+        const rad = reducedRef.current
+          ? Math.max(2, maxR * 0.85 * (1 - f))
+          : Math.max(2, maxR * 0.85 * (inhale ? 1 - f : f))
+        // when (in the cycle) this ring set off — later waves get a larger halo
+        const born = Math.max(0, cycleP - (f * (inhale ? spec.inhaleMs : spec.exhaleMs)) / cycle)
+        const haloP = born < 0.85 ? born / 0.85 : (1 - born) / 0.15
+        const blur = reducedRef.current ? 12 : 6 + 26 * haloP
         const a = reducedRef.current
           ? (0.12 + 0.5 * breath) * intensity * (0.4 + 0.6 * f)
-          : Math.sin(Math.PI * f) * intensity * 0.7
+          : Math.sin(Math.PI * f) * intensity * 0.6 * edge
         ctx.beginPath()
         ctx.arc(x, y, rad, 0, Math.PI * 2)
         ctx.strokeStyle = `rgba(${r},${gg},${b},${a.toFixed(3)})`
-        ctx.lineWidth = 1.5 + 2.5 * f
-        ctx.shadowColor = `rgba(${r},${gg},${b},0.8)`
-        ctx.shadowBlur = 12
+        ctx.lineWidth = 2 + 2 * haloP
+        ctx.shadowColor = `rgba(${r},${gg},${b},0.85)`
+        ctx.shadowBlur = blur
         ctx.stroke()
       }
       ctx.shadowBlur = 0
@@ -458,17 +472,6 @@ export function VibrationBreathingPage() {
           </div>
 
           <div className={`absolute inset-x-0 bottom-0 flex items-center justify-center gap-3 px-5 pb-[max(1.5rem,env(safe-area-inset-bottom))] transition-opacity duration-500 ${ctrlHidden}`}>
-            {vibSupported !== null && (
-              <button
-                type="button"
-                onPointerDown={stop}
-                onClick={toggleSound}
-                aria-pressed={soundOn}
-                className="rounded-full border border-white/20 bg-white/5 px-5 py-3 font-mono text-xs text-white/80 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
-              >
-                {soundOn ? '🔊 Sound on · mute' : '🔇 Sound off'}
-              </button>
-            )}
             <button
               type="button"
               onPointerDown={stop}
@@ -478,6 +481,19 @@ export function VibrationBreathingPage() {
               Finish
             </button>
           </div>
+
+          {/* Sound/mute — always visible from the first second (not hidden while touching),
+              big, in the thumb zone (bottom-left), clear of the rings' centre. */}
+          <button
+            type="button"
+            onPointerDown={stop}
+            onClick={toggleSound}
+            aria-pressed={soundOn}
+            aria-label={soundOn ? 'Mute sound' : 'Turn sound on'}
+            className="absolute bottom-[max(1.25rem,env(safe-area-inset-bottom))] left-4 z-10 flex h-16 w-16 items-center justify-center rounded-full border border-white/30 bg-black/60 text-2xl text-white shadow-lg backdrop-blur focus:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+          >
+            <span aria-hidden="true">{soundOn ? '🔊' : '🔇'}</span>
+          </button>
 
           {view === 'paused' && (
             <div className="absolute inset-0 flex items-center justify-center bg-black/70 px-6" onPointerDown={stop}>
