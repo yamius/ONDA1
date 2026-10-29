@@ -7,7 +7,7 @@
  * Without it (iOS Safari, desktop): SOUND is the main channel — a click-free Web Audio breath
  * wave (src/lib/breathSound.ts) that swells on the inhale and ebbs on the exhale, gated by the
  * same finger fade as vibration; ON by default there, mute button. Plus visual pulses.
- * Android (vibrate + touch): "Get ONDA for Android" → existing /api/waitlist (gated by API_ENABLED).
+ * Android (vibrate + touch): "Get ONDA for Android" → existing /api/waitlist (gated by VIBRATION_WAITLIST_ENABLED).
  * Rings converge on the finger (or the centre) — calmer & brighter on the inhale.
  * prefers-reduced-motion: rings don't move, only brightness + phase text change.
  * Desktop: hold the mouse button or the space bar instead of a finger.
@@ -22,7 +22,7 @@ import { langFromPath, langHref } from '../i18n'
 import { storeCt } from '../lib/storeCt'
 import { gtmToolEvent, gtmAndroidWaitlist } from '../lib/gtm'
 import { BreathSound, unlockAudioSession, releaseAudioSession } from '../lib/breathSound'
-import { API_ENABLED } from '../config/features'
+import { VIBRATION_WAITLIST_ENABLED } from '../config/features'
 import {
   MODES, MAX_CONTINUOUS_MS, FADE_IN_MS, FADE_OUT_MS,
   VIBRATION_FAQ, nextPulse, type BreathMode,
@@ -369,9 +369,9 @@ export function VibrationBreathingPage() {
     onContextMenu: (e: React.MouseEvent) => e.preventDefault(),
   }
   const stop = (e: React.PointerEvent) => e.stopPropagation()
-  // Android = feature detection (vibrate + touch), not UA. Gated by API_ENABLED exactly like the
+  // Android = feature detection (vibrate + touch), not UA. Gated by its own VIBRATION_WAITLIST_ENABLED (not the shared API_ENABLED), like the
   // existing <AndroidWaitlist>: without the /api/waitlist function the button is not rendered.
-  const showAndroid = API_ENABLED && vibSupported === true && isTouchDevice
+  const showAndroid = VIBRATION_WAITLIST_ENABLED && vibSupported === true && isTouchDevice
   const androidBtn = showAndroid && (
     <button
       type="button"
