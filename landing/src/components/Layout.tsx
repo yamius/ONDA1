@@ -349,7 +349,7 @@ export function Layout() {
           </Suspense>
         </div>
         {/* Android-only waitlist capture on tool pages (app is iOS-only). Self-hides off Android. */}
-        {/(^|\/)tools(\/|$)/.test(location.pathname) && <AndroidWaitlist />}
+        {/(^|\/)tools(\/|$)/.test(location.pathname) && !/\/tools\/vibration-breathing\/?$/.test(location.pathname) && <AndroidWaitlist />}
       </main>
 
       <footer data-nav-area="footer" className="border-t border-white/5 bg-[#1a1b26]/70 pb-[env(safe-area-inset-bottom,0px)] backdrop-blur-xl">

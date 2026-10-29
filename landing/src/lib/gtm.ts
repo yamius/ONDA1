@@ -68,3 +68,10 @@ export function gtmToolEvent(
 ): void {
   push({ event, ...params })
 }
+
+/** Android waitlist on /tools/vibration-breathing (task 104 r3) → GA4 `android_waitlist_view`
+ *  (form opened) / `android_waitlist_submit` (accepted by /api/waitlist). Only `source`, a fixed
+ *  string — the email NEVER goes to analytics in any form. */
+export function gtmAndroidWaitlist(event: 'android_waitlist_view' | 'android_waitlist_submit', source: string): void {
+  push({ event, source })
+}

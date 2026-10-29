@@ -4,7 +4,10 @@
  * Finger on the screen → vibration fades in and follows the rhythm; finger off →
  * it fades out and the controls come back, the session keeps running until
  * Finish. Vibration via navigator.vibrate (feature-detected, never UA-sniffed).
- * Without it: visual pulses + optional soft Web Audio tick (sound OFF by default).
+ * Without it (iOS Safari, desktop): SOUND is the main channel — a click-free Web Audio breath
+ * wave (src/lib/breathSound.ts) that swells on the inhale and ebbs on the exhale, gated by the
+ * same finger fade as vibration; ON by default there, mute button. Plus visual pulses.
+ * Android (vibrate + touch): "Get ONDA for Android" → existing /api/waitlist (gated by API_ENABLED).
  * Rings converge on the finger (or the centre) — calmer & brighter on the inhale.
  * prefers-reduced-motion: rings don't move, only brightness + phase text change.
  * Desktop: hold the mouse button or the space bar instead of a finger.
@@ -17,7 +20,9 @@ import { Link, useLocation } from 'react-router-dom'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { langFromPath, langHref } from '../i18n'
 import { storeCt } from '../lib/storeCt'
-import { gtmToolEvent } from '../lib/gtm'
+import { gtmToolEvent, gtmAndroidWaitlist } from '../lib/gtm'
+import { BreathSound } from '../lib/breathSound'
+import { API_ENABLED } from '../config/features'
 import {
   MODES, MAX_CONTINUOUS_MS, FADE_IN_MS, FADE_OUT_MS,
   VIBRATION_FAQ, nextPulse, type BreathMode,
@@ -28,6 +33,7 @@ type Feeling = 'better' | 'same' | 'worse'
 
 const CT = storeCt('tool', 'vibration-breathing') // tool_vibration_breathing
 const TOOL_NAME = 'vibration_breathing'
+const CT_SOURCE = 'vibration_tool'
 
 function canVibrate(): boolean {
   return typeof navigator !== 'undefined' && 'vibrate' in navigator && typeof navigator.vibrate === 'function'
@@ -46,6 +52,8 @@ export function VibrationBreathingPage() {
   const [touching, setTouching] = useState(false)
   const [phaseIn, setPhaseIn] = useState(true)
   const [soundOn, setSoundOn] = useState(false)
+  const [isTouchDevice, setIsTouchDevice] = useState(false)
+  const [waitlistOpen, setWaitlistOpen] = useState(false)
   const [feeling, setFeeling] = useState<Feeling | null>(null)
 
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -64,7 +72,7 @@ export function VibrationBreathingPage() {
   const viewRef = useRef<View>('choose')
   const modeRef = useRef<BreathMode>('relax')
   const soundRef = useRef(false)
-  const audioRef = useRef<AudioContext | null>(null)
+  const audioRef = useRef<BreathSound | null>(null)
   const reducedRef = useRef(false)
   const phaseInRef = useRef(true)
   const keyHeldRef = useRef(false)
@@ -72,6 +80,7 @@ export function VibrationBreathingPage() {
   useEffect(() => {
     document.title = 'Vibration Breathing — Relax or Wake Up by Touch | ONDA Life'
     setVibSupported(canVibrate())
+    try { setIsTouchDevice(navigator.maxTouchPoints > 0 || 'ontouchstart' in window) } catch { /* noop */ }
     try { reducedRef.current = window.matchMedia('(prefers-reduced-motion: reduce)').matches } catch { /* old browser */ }
     // utm_source=meta → open straight on the mode picker (direct loads are flagged before paint by
     // the inline script prerender.ts adds; this covers SPA navigation). CSS only — the DOM is the same.
@@ -100,24 +109,6 @@ export function VibrationBreathingPage() {
     setTouching(on)
   }, [])
 
-  const tick = useCallback((freq: number, g: number) => {
-    const ctx = audioRef.current
-    if (!ctx) return
-    try {
-      const t = ctx.currentTime
-      const osc = ctx.createOscillator()
-      const gain = ctx.createGain()
-      osc.type = 'sine'
-      osc.frequency.value = freq
-      const peak = 0.015 + 0.05 * g
-      gain.gain.setValueAtTime(0.0001, t)
-      gain.gain.exponentialRampToValueAtTime(peak, t + 0.02)
-      gain.gain.exponentialRampToValueAtTime(0.0001, t + 0.18)
-      osc.connect(gain).connect(ctx.destination)
-      osc.start(t)
-      osc.stop(t + 0.2)
-    } catch { /* audio blocked */ }
-  }, [])
 
   // Main loop: phase clock, gain fade, pulse scheduler, canvas.
   useEffect(() => {
@@ -156,7 +147,6 @@ export function VibrationBreathingPage() {
         if (now >= nextPulseAtRef.current) {
           const [p, gap] = nextPulse(inhale ? 'in' : 'out', progress, g)
           if (vib) { vibrate(p); vibratingRef.current = true }
-          else if (soundRef.current) tick(spec.toneHz * (inhale ? 1 : 0.75), g)
           flashRef.current = Math.min(1, 0.35 + 0.65 * g)
           nextPulseAtRef.current = now + p + gap
         }
@@ -165,6 +155,14 @@ export function VibrationBreathingPage() {
         vibratingRef.current = false
       }
       flashRef.current = Math.max(0, flashRef.current - dt / 260)
+
+      // Breath sound: swells on the inhale, ebbs on the exhale, × the finger fade g.
+      const snd = audioRef.current
+      if (snd) {
+        const ease = 0.5 - 0.5 * Math.cos(Math.PI * progress)
+        const breath = inhale ? ease : 1 - ease
+        snd.update(soundRef.current ? g * (0.25 + 0.75 * breath) : 0, breath)
+      }
 
       if (canvas) draw(canvas, now, spec.rgb, inhale, progress, g, modeRef.current)
       rafRef.current = requestAnimationFrame(frame)
@@ -236,7 +234,7 @@ export function VibrationBreathingPage() {
     lastFrameRef.current = 0
     rafRef.current = requestAnimationFrame(frame)
     return () => { if (rafRef.current) cancelAnimationFrame(rafRef.current); rafRef.current = null }
-  }, [view, tick])
+  }, [view])
 
   // Keyboard: space bar = "finger" while held.
   useEffect(() => {
@@ -263,16 +261,30 @@ export function VibrationBreathingPage() {
 
   // Stop vibration on unmount / tab hide.
   useEffect(() => {
-    const onHide = () => { if (document.hidden) { setTouch(false); if (canVibrate()) vibrate(0) } }
+    const onHide = () => {
+      if (document.hidden) { setTouch(false); if (canVibrate()) vibrate(0); audioRef.current?.suspend() }
+      else audioRef.current?.resume()
+    }
     document.addEventListener('visibilitychange', onHide)
     return () => {
       document.removeEventListener('visibilitychange', onHide)
       if (canVibrate()) vibrate(0)
-      try { audioRef.current?.close() } catch { /* noop */ }
+      audioRef.current?.close(); audioRef.current = null
     }
   }, [setTouch])
 
   function start(m: BreathMode) {
+    // Sound is created + resumed HERE, inside the click (user gesture) — required on iOS.
+    // Default: ON where there is no vibration (sound is the main channel), OFF where it vibrates.
+    const vib = canVibrate()
+    try {
+      audioRef.current?.close()
+      audioRef.current = new BreathSound(m)
+      audioRef.current.resume()
+    } catch { audioRef.current = null }
+    const on = !vib && !!audioRef.current
+    soundRef.current = on
+    setSoundOn(on)
     modeRef.current = m
     setMode(m)
     sessionStartRef.current = performance.now()
@@ -288,6 +300,7 @@ export function VibrationBreathingPage() {
   function finish() {
     setTouch(false)
     gainRef.current = 0
+    audioRef.current?.close(); audioRef.current = null
     if (canVibrate()) vibrate(0)
     gtmToolEvent('tool_complete', {
       tool_name: TOOL_NAME,
@@ -299,13 +312,11 @@ export function VibrationBreathingPage() {
 
   function toggleSound() {
     const next = !soundOn
-    if (next && !audioRef.current) {
-      try {
-        const AC = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext
-        audioRef.current = new AC()
-      } catch { /* no audio */ }
+    if (!audioRef.current) {
+      try { audioRef.current = new BreathSound(modeRef.current) } catch { return }
     }
-    try { void audioRef.current?.resume() } catch { /* noop */ }
+    audioRef.current.resume()
+    soundRef.current = next
     setSoundOn(next)
   }
 
@@ -336,6 +347,18 @@ export function VibrationBreathingPage() {
     onContextMenu: (e: React.MouseEvent) => e.preventDefault(),
   }
   const stop = (e: React.PointerEvent) => e.stopPropagation()
+  // Android = feature detection (vibrate + touch), not UA. Gated by API_ENABLED exactly like the
+  // existing <AndroidWaitlist>: without the /api/waitlist function the button is not rendered.
+  const showAndroid = API_ENABLED && vibSupported === true && isTouchDevice
+  const androidBtn = showAndroid && (
+    <button
+      type="button"
+      onClick={() => { setWaitlistOpen(true); gtmAndroidWaitlist('android_waitlist_view', CT_SOURCE) }}
+      className="mt-6 rounded-full border border-white/20 bg-white/5 px-5 py-2.5 font-mono text-xs text-white/80 hover:bg-white/10"
+    >
+      Get ONDA for Android
+    </button>
+  )
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
@@ -385,9 +408,10 @@ export function VibrationBreathingPage() {
         </div>
         {vibSupported === false && (
           <p className="mt-6 max-w-sm font-mono text-[11px] leading-relaxed text-white/40">
-            This browser can’t vibrate, so the rhythm comes as light pulses — with an optional soft sound.
+            This browser can’t vibrate, so the rhythm comes as a soft sound wave and light — turn your sound on.
           </p>
         )}
+        {androidBtn}
       </section>
 
       {/* Full-screen session */}
@@ -409,17 +433,24 @@ export function VibrationBreathingPage() {
           <div className={`absolute inset-x-0 top-0 px-5 pt-[max(1.25rem,env(safe-area-inset-top))] text-center transition-opacity duration-500 ${ctrlHidden}`}>
             <p className={`mb-1 font-mono text-xs uppercase tracking-widest ${accent}`}>{spec.label}</p>
             <p className="mx-auto max-w-sm text-sm leading-relaxed text-white/75">
-              Rest your finger on the screen and follow the vibration. For the best effect, breathe along with it.
+              {vibSupported === false
+                ? 'Rest your finger on the screen and follow the sound. For the best effect, breathe along with it.'
+                : 'Rest your finger on the screen and follow the vibration. For the best effect, breathe along with it.'}
             </p>
-            {vibSupported === false && (
+            {vibSupported === false && isTouchDevice && (
+              <p className="mx-auto mt-2 max-w-sm font-mono text-[11px] text-white/55">
+                Turn on sound or use headphones. This browser can’t vibrate — the rhythm comes as a soft sound wave and light.
+              </p>
+            )}
+            {vibSupported === false && !isTouchDevice && (
               <p className="mx-auto mt-2 max-w-sm font-mono text-[11px] text-white/40">
-                No vibration in this browser — follow the light. On a computer, hold the mouse button or the space bar.
+                Hold the mouse button or the space bar and follow the sound and the light.
               </p>
             )}
           </div>
 
           <div className={`absolute inset-x-0 bottom-0 flex items-center justify-center gap-3 px-5 pb-[max(1.5rem,env(safe-area-inset-bottom))] transition-opacity duration-500 ${ctrlHidden}`}>
-            {vibSupported === false && (
+            {vibSupported !== null && (
               <button
                 type="button"
                 onPointerDown={stop}
@@ -427,7 +458,7 @@ export function VibrationBreathingPage() {
                 aria-pressed={soundOn}
                 className="rounded-full border border-white/20 bg-white/5 px-5 py-3 font-mono text-xs text-white/80 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
               >
-                {soundOn ? '🔊 Sound on' : '🔇 Sound off'}
+                {soundOn ? '🔊 Sound on · mute' : '🔇 Sound off'}
               </button>
             )}
             <button
@@ -484,6 +515,7 @@ export function VibrationBreathingPage() {
             <div className="text-left">
               <AppStoreCTA ct={CT} variant="general" lang={lang} />
             </div>
+            {androidBtn}
             <div className="mt-4 flex justify-center gap-3">
               <button type="button" onClick={() => start(mode)} className="rounded-full border border-white/20 px-5 py-2 font-mono text-xs text-white/80 hover:bg-white/10">
                 Again
@@ -496,10 +528,12 @@ export function VibrationBreathingPage() {
         </div>
       )}
 
+      {waitlistOpen && <AndroidWaitlistForm onClose={() => setWaitlistOpen(false)} />}
+
       <p className="mb-12 font-mono text-[11px] leading-relaxed text-white/30">
         A simple breathing-rhythm guide, not a medical device. Nothing is measured, recorded or uploaded. Vibration
-        needs a browser that supports it (most Android phones); Safari on iPhone and desktop browsers use light pulses
-        and an optional sound instead.
+        needs a browser that supports it (most Android phones); Safari on iPhone and desktop browsers use a soft sound
+        wave and light instead.
       </p>
 
       <AppStoreCTA ct={CT} variant="general" lang={lang} />
@@ -520,5 +554,67 @@ export function VibrationBreathingPage() {
         <Link to={langHref('/tools/breathing-rate', lang)} className="text-terminal-green hover:underline">Breathing rate monitor</Link>
       </div>
     </main>
+  )
+}
+
+/** Android waitlist form — reuses the existing waitlist mechanism (POST /api/waitlist →
+ *  Supabase `waitlist` {email, platform}); no new table. The table has no `source` column, so
+ *  the source lives only in analytics. Consent checkbox is required. */
+function AndroidWaitlistForm({ onClose }: { onClose: () => void }) {
+  const [state, setState] = useState<'idle' | 'sending' | 'done'>('idle')
+  const [error, setError] = useState<string | null>(null)
+  const emailRef = useRef<HTMLInputElement>(null)
+  const consentRef = useRef<HTMLInputElement>(null)
+  // Deliberately NOT a <form>: GTM's built-in form listeners (gtm.formInteract / gtm.formSubmit,
+  // GA4 enhanced-measurement forms) attach the form DOM node to the dataLayer, which would put the
+  // typed email into the dataLayer. A plain container + button keeps the email out of it entirely.
+  async function submit() {
+    const ei = emailRef.current, ci = consentRef.current
+    if (!ei || !ci) return
+    if (!ei.checkValidity()) { ei.reportValidity(); return }
+    if (!ci.checked) { ci.reportValidity(); return }
+    const email = ei.value.trim()
+    setError(null); setState('sending')
+    try {
+      const res = await fetch('/api/waitlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, platform: 'android' }),
+      })
+      if (res.status === 409) { setState('done'); return } // already on the list
+      if (!res.ok) { setError('Something went wrong. Please try again later.'); setState('idle'); return }
+      gtmAndroidWaitlist('android_waitlist_submit', CT_SOURCE)
+      setState('done')
+    } catch { setError('Something went wrong. Please try again later.'); setState('idle') }
+  }
+  return (
+    <div className="fixed inset-0 z-[110] flex items-center justify-center bg-black/75 px-4" role="dialog" aria-modal="true" aria-labelledby="vb-android" onClick={onClose}>
+      <div className="relative w-full max-w-sm rounded-2xl border border-white/15 bg-[#0b0d14] p-6" onClick={(e) => e.stopPropagation()}>
+        <button type="button" onClick={onClose} aria-label="Close" className="absolute right-3 top-3 rounded p-1 text-white/50 hover:text-white">✕</button>
+        {state !== 'done' ? (
+          <div role="form" aria-labelledby="vb-android" onKeyDown={(e) => { if (e.key === 'Enter' && (e.target as HTMLElement).tagName === 'INPUT') { e.preventDefault(); void submit() } }}>
+            <h2 id="vb-android" className="mb-2 text-xl font-semibold text-white">Get ONDA for Android</h2>
+            <p className="mb-4 text-sm text-white/60">The Android app isn’t out yet. Leave your email and we’ll write once when it is.</p>
+            <label className="mb-1 block font-mono text-[11px] text-white/50" htmlFor="vb-email">Email</label>
+            <input id="vb-email" ref={emailRef} type="email" name="email" required autoComplete="email" disabled={state === 'sending'}
+              className="mb-4 w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white outline-none focus:border-white/50" />
+            <label className="mb-4 flex items-start gap-2 text-left text-xs leading-relaxed text-white/70">
+              <input type="checkbox" ref={consentRef} name="consent" required className="mt-0.5 h-4 w-4 shrink-0" />
+              <span>I agree that ONDA Life stores my email to tell me when the Android app is available. <a href="/privacy" target="_blank" rel="noopener" className="underline hover:text-white">Privacy Policy</a></span>
+            </label>
+            {error && <p className="mb-3 text-sm text-rose-400" role="alert">{error}</p>}
+            <button type="button" onClick={() => void submit()} disabled={state === 'sending'} className="w-full rounded-full bg-white/90 py-3 text-sm font-semibold text-black hover:bg-white disabled:opacity-50">
+              {state === 'sending' ? 'Sending…' : 'Notify me'}
+            </button>
+          </div>
+        ) : (
+          <div className="text-center">
+            <h2 id="vb-android" className="mb-2 text-xl font-semibold text-white">You’re on the list</h2>
+            <p className="mb-5 text-sm text-white/60">We’ll email you when ONDA for Android is ready.</p>
+            <button type="button" onClick={onClose} className="rounded-full border border-white/25 px-6 py-2 text-sm text-white">OK</button>
+          </div>
+        )}
+      </div>
+    </div>
   )
 }

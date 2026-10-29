@@ -3,8 +3,8 @@
  *
  * Paces breathing by touch: finger on the screen → the phone vibrates in a
  * rhythm (dense short pulses on the inhale, long sparse pulses on the exhale).
- * No breath holds. Where the Vibration API is missing (iOS Safari, desktop) the
- * same pulses drive a visual flash and an optional soft Web Audio tick.
+ * No breath holds. Where the Vibration API is missing (iOS Safari, desktop) the main
+ * channel is a Web Audio breath wave (src/lib/breathSound.ts) plus visual pulses.
  *
  * Copy rules: no medical claims (no "reduces stress/anxiety", no "calms the
  * nervous system"); no claim that the ONDA app has a numeric pacer or haptic
@@ -19,13 +19,11 @@ export interface ModeSpec {
   exhaleMs: number
   /** RGB of the rings */
   rgb: [number, number, number]
-  /** Web Audio tick pitch for the no-vibration fallback */
-  toneHz: number
 }
 
 export const MODES: Record<BreathMode, ModeSpec> = {
-  relax: { label: 'Relax', inhaleMs: 4000, exhaleMs: 6000, rgb: [255, 190, 80], toneHz: 196 },
-  wake: { label: 'Wake up', inhaleMs: 3000, exhaleMs: 2000, rgb: [120, 92, 255], toneHz: 294 },
+  relax: { label: 'Relax', inhaleMs: 4000, exhaleMs: 6000, rgb: [255, 190, 80] },
+  wake: { label: 'Wake up', inhaleMs: 3000, exhaleMs: 2000, rgb: [120, 92, 255] },
 }
 
 /** Continuous finger-on-screen time before the "Continue?" pause. */
@@ -64,7 +62,7 @@ export const VIBRATION_FAQ: { q: string; a: string }[] = [
   },
   {
     q: 'Why don’t I feel any vibration on my iPhone?',
-    a: 'Safari on iPhone and desktop browsers do not support web vibration. On those devices the tool follows the same rhythm with light pulses on screen and an optional soft sound (off by default — use the sound button).',
+    a: 'Safari on iPhone and desktop browsers do not support web vibration. On those devices the rhythm comes as a soft sound wave that swells as you breathe in and fades as you breathe out, plus light on screen. Turn your sound on or use headphones; there is a mute button.',
   },
   {
     q: 'Can I use it without touching the screen?',
