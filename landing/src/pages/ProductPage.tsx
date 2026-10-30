@@ -24,6 +24,8 @@ import { ONDA_CAPS, getOndaVs, type Cap, type CapabilityAxis } from '../data/ond
 import { langFromPath } from '../i18n'
 import { PRODUCT_I18N, type ProductCopy } from '../data/product-i18n'
 
+import AndroidWaitlistBadge from '../components/AndroidWaitlistBadge'
+
 const CAP_GLYPH: Record<Cap, string> = { yes: '✓', limited: '~', no: '—' }
 const CAP_CLASS: Record<Cap, string> = {
   yes: 'text-terminal-green',
@@ -179,6 +181,7 @@ export function ProductPage() {
         >
           {copy.cta}
         </a>
+        <AndroidWaitlistBadge source="product" look="plain" className="ml-3 mt-8 inline-block rounded border border-white/25 px-4 py-2 font-mono text-sm text-white/75 transition-colors hover:bg-white/10" />
       </header>
 
       {/* PRODUCT FACTS */}

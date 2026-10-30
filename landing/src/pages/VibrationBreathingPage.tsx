@@ -7,7 +7,7 @@
  * Without it (iOS Safari, desktop): SOUND is the main channel — a click-free Web Audio breath
  * wave (src/lib/breathSound.ts) that swells on the inhale and ebbs on the exhale, gated by the
  * same finger fade as vibration; ON by default there, mute button. Plus visual pulses.
- * Android (vibrate + touch): "Get ONDA for Android" → existing /api/waitlist (gated by VIBRATION_WAITLIST_ENABLED).
+ * Android (vibrate + touch): Android waitlist badge next to the App Store badge (shared <AppStoreCTA>, source=vibration_tool).
  * Rings converge on the finger (or the centre) — calmer & brighter on the inhale.
  * prefers-reduced-motion: rings don't move, only brightness + phase text change.
  * Desktop: hold the mouse button or the space bar instead of a finger.
@@ -20,9 +20,8 @@ import { Link, useLocation } from 'react-router-dom'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { langFromPath, langHref } from '../i18n'
 import { storeCt } from '../lib/storeCt'
-import { gtmToolEvent, gtmAndroidWaitlist } from '../lib/gtm'
+import { gtmToolEvent } from '../lib/gtm'
 import { BreathSound, unlockAudioSession, releaseAudioSession } from '../lib/breathSound'
-import { VIBRATION_WAITLIST_ENABLED } from '../config/features'
 import {
   MODES, MAX_CONTINUOUS_MS, FADE_IN_MS, FADE_OUT_MS,
   VIBRATION_FAQ, nextPulse, type BreathMode,
@@ -53,7 +52,6 @@ export function VibrationBreathingPage() {
   const [phaseIn, setPhaseIn] = useState(true)
   const [soundOn, setSoundOn] = useState(false)
   const [isTouchDevice, setIsTouchDevice] = useState(false)
-  const [waitlistOpen, setWaitlistOpen] = useState(false)
   const [feeling, setFeeling] = useState<Feeling | null>(null)
 
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -369,19 +367,6 @@ export function VibrationBreathingPage() {
     onContextMenu: (e: React.MouseEvent) => e.preventDefault(),
   }
   const stop = (e: React.PointerEvent) => e.stopPropagation()
-  // Android = feature detection (vibrate + touch), not UA. Gated by its own VIBRATION_WAITLIST_ENABLED (not the shared API_ENABLED), like the
-  // existing <AndroidWaitlist>: without the /api/waitlist function the button is not rendered.
-  const showAndroid = VIBRATION_WAITLIST_ENABLED && vibSupported === true && isTouchDevice
-  const androidBtn = showAndroid && (
-    <button
-      type="button"
-      onClick={() => { setWaitlistOpen(true); gtmAndroidWaitlist('android_waitlist_view', CT_SOURCE) }}
-      className="mt-6 rounded-full border border-white/20 bg-white/5 px-5 py-2.5 font-mono text-xs text-white/80 hover:bg-white/10"
-    >
-      Get ONDA for Android
-    </button>
-  )
-
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
       <style>{'.vb-ad .vb-seo-intro{display:none}.vb-ad .vb-choose{margin-top:-1.5rem}'}</style>
@@ -433,8 +418,7 @@ export function VibrationBreathingPage() {
             This browser can’t vibrate, so the rhythm comes as a soft sound wave and light — turn your sound on.
           </p>
         )}
-        {androidBtn}
-      </section>
+              </section>
 
       {/* Full-screen session */}
       {(view === 'session' || view === 'paused') && (
@@ -537,10 +521,9 @@ export function VibrationBreathingPage() {
               <p className="mb-8 font-mono text-sm text-white/60">Thanks — noted.</p>
             )}
             <div className="text-left">
-              <AppStoreCTA ct={CT} variant="general" lang={lang} />
+              <AppStoreCTA ct={CT} variant="general" lang={lang} waitlistSource={CT_SOURCE} />
             </div>
-            {androidBtn}
-            <div className="mt-4 flex justify-center gap-3">
+                        <div className="mt-4 flex justify-center gap-3">
               <button type="button" onClick={() => start(mode)} className="rounded-full border border-white/20 px-5 py-2 font-mono text-xs text-white/80 hover:bg-white/10">
                 Again
               </button>
@@ -552,15 +535,13 @@ export function VibrationBreathingPage() {
         </div>
       )}
 
-      {waitlistOpen && <AndroidWaitlistForm onClose={() => setWaitlistOpen(false)} />}
-
       <p className="mb-12 font-mono text-[11px] leading-relaxed text-white/30">
         A simple breathing-rhythm guide, not a medical device. Nothing is measured, recorded or uploaded. Vibration
         needs a browser that supports it (most Android phones); Safari on iPhone and desktop browsers use a soft sound
         wave and light instead.
       </p>
 
-      <AppStoreCTA ct={CT} variant="general" lang={lang} />
+      <AppStoreCTA ct={CT} variant="general" lang={lang} waitlistSource={CT_SOURCE} />
 
       <h2 className="mb-4 mt-10 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Common questions</h2>
       <div className="mb-10 divide-y divide-white/5 border-y border-white/5">
@@ -578,67 +559,5 @@ export function VibrationBreathingPage() {
         <Link to={langHref('/tools/breathing-rate', lang)} className="text-terminal-green hover:underline">Breathing rate monitor</Link>
       </div>
     </main>
-  )
-}
-
-/** Android waitlist form — reuses the existing waitlist mechanism (POST /api/waitlist →
- *  Supabase `waitlist` {email, platform, source}); no new table. `source` needs the column from
- *  supabase-waitlist-source.sql (the handler only writes it when present). Consent is required. */
-function AndroidWaitlistForm({ onClose }: { onClose: () => void }) {
-  const [state, setState] = useState<'idle' | 'sending' | 'done'>('idle')
-  const [error, setError] = useState<string | null>(null)
-  const emailRef = useRef<HTMLInputElement>(null)
-  const consentRef = useRef<HTMLInputElement>(null)
-  // Deliberately NOT a <form>: GTM's built-in form listeners (gtm.formInteract / gtm.formSubmit,
-  // GA4 enhanced-measurement forms) attach the form DOM node to the dataLayer, which would put the
-  // typed email into the dataLayer. A plain container + button keeps the email out of it entirely.
-  async function submit() {
-    const ei = emailRef.current, ci = consentRef.current
-    if (!ei || !ci) return
-    if (!ei.checkValidity()) { ei.reportValidity(); return }
-    if (!ci.checked) { ci.reportValidity(); return }
-    const email = ei.value.trim()
-    setError(null); setState('sending')
-    try {
-      const res = await fetch('/api/waitlist', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, platform: 'android', source: CT_SOURCE }),
-      })
-      if (res.status === 409) { setState('done'); return } // already on the list
-      if (!res.ok) { setError('Something went wrong. Please try again later.'); setState('idle'); return }
-      gtmAndroidWaitlist('android_waitlist_submit', CT_SOURCE)
-      setState('done')
-    } catch { setError('Something went wrong. Please try again later.'); setState('idle') }
-  }
-  return (
-    <div className="fixed inset-0 z-[110] flex items-center justify-center bg-black/75 px-4" role="dialog" aria-modal="true" aria-labelledby="vb-android" onClick={onClose}>
-      <div className="relative w-full max-w-sm rounded-2xl border border-white/15 bg-[#0b0d14] p-6" onClick={(e) => e.stopPropagation()}>
-        <button type="button" onClick={onClose} aria-label="Close" className="absolute right-3 top-3 rounded p-1 text-white/50 hover:text-white">✕</button>
-        {state !== 'done' ? (
-          <div role="form" aria-labelledby="vb-android" onKeyDown={(e) => { if (e.key === 'Enter' && (e.target as HTMLElement).tagName === 'INPUT') { e.preventDefault(); void submit() } }}>
-            <h2 id="vb-android" className="mb-2 text-xl font-semibold text-white">Get ONDA for Android</h2>
-            <p className="mb-4 text-sm text-white/60">The Android app isn’t out yet. Leave your email and we’ll write once when it is.</p>
-            <label className="mb-1 block font-mono text-[11px] text-white/50" htmlFor="vb-email">Email</label>
-            <input id="vb-email" ref={emailRef} type="email" name="email" required autoComplete="email" disabled={state === 'sending'}
-              className="mb-4 w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white outline-none focus:border-white/50" />
-            <label className="mb-4 flex items-start gap-2 text-left text-xs leading-relaxed text-white/70">
-              <input type="checkbox" ref={consentRef} name="consent" required className="mt-0.5 h-4 w-4 shrink-0" />
-              <span>I agree that ONDA Life stores my email to tell me when the Android app is available. <a href="/privacy" target="_blank" rel="noopener" className="underline hover:text-white">Privacy Policy</a></span>
-            </label>
-            {error && <p className="mb-3 text-sm text-rose-400" role="alert">{error}</p>}
-            <button type="button" onClick={() => void submit()} disabled={state === 'sending'} className="w-full rounded-full bg-white/90 py-3 text-sm font-semibold text-black hover:bg-white disabled:opacity-50">
-              {state === 'sending' ? 'Sending…' : 'Notify me'}
-            </button>
-          </div>
-        ) : (
-          <div className="text-center">
-            <h2 id="vb-android" className="mb-2 text-xl font-semibold text-white">You’re on the list</h2>
-            <p className="mb-5 text-sm text-white/60">We’ll email you when ONDA for Android is ready.</p>
-            <button type="button" onClick={onClose} className="rounded-full border border-white/25 px-6 py-2 text-sm text-white">OK</button>
-          </div>
-        )}
-      </div>
-    </div>
   )
 }

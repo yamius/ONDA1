@@ -6,6 +6,8 @@ import { storeCt } from '../lib/storeCt'
 import { API_ENABLED } from '../config/features'
 import { langFromPath, langHref } from '../i18n'
 
+import AndroidWaitlistBadge from './AndroidWaitlistBadge'
+
 export function CtaSection() {
   const { t } = useTranslation('home')
   const lang = langFromPath(useLocation().pathname)
@@ -83,6 +85,7 @@ export function CtaSection() {
               <div className="text-sm font-semibold">{t('cta.appStoreLabel')}</div>
             </div>
           </a>
+          <AndroidWaitlistBadge source="home" look="soft" />
           {/* Google Play → Android waitlist modal. Hidden without the waitlist
               backend (static hosting) so there's no button that opens a form
               that can't submit. The App Store link above always works. */}

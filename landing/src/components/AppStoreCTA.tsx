@@ -16,6 +16,7 @@ import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
 import { appStoreUrl } from '../config/appStore'
+import AndroidWaitlistBadge, { waitlistSource } from './AndroidWaitlistBadge'
 
 export type CtaVariant = 'general' | 'hrv' | 'meditation' | 'glossary' | 'tool' | 'science'
 type L = 'en' | 'es' | 'ru' | 'uk' | 'zh' | 'de' | 'fr' | 'it' | 'nl' | 'ja' | 'pl' | 'pt'
@@ -177,9 +178,11 @@ interface Props {
   /** 'line' = one short sentence + badge (glossary, soft in-article line). */
   layout?: 'block' | 'line'
   className?: string
+  /** Android-waitlist source tag; defaults to the ct. */
+  waitlistSource?: string
 }
 
-export default function AppStoreCTA({ ct, variant = 'general', lang, layout = 'block', className = '' }: Props) {
+export default function AppStoreCTA({ ct, variant = 'general', lang, layout = 'block', className = '', waitlistSource: wlSource }: Props) {
   const href = appStoreUrl(ct)
   // Most callers don't pass `lang` — take it from the URL so a localized page
   // never shows the English CTA.
@@ -191,6 +194,7 @@ export default function AppStoreCTA({ ct, variant = 'general', lang, layout = 'b
       <aside className={`not-prose my-6 flex flex-wrap items-center gap-3 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 ${className}`} data-cta="app-store">
         <p className="m-0 flex-1 text-sm text-white/70">{text}</p>
         <AppStoreBadge href={href} lang={l} />
+        <AndroidWaitlistBadge source={waitlistSource(wlSource ?? ct)} />
       </aside>
     )
   }
@@ -199,8 +203,9 @@ export default function AppStoreCTA({ ct, variant = 'general', lang, layout = 'b
       <div className="flex-1">
         <p className="m-0 text-base text-white/85">{text}</p>
       </div>
-      <div className="flex items-center gap-4">
+      <div className="flex flex-wrap items-center gap-4">
         <AppStoreBadge href={href} lang={l} />
+        <AndroidWaitlistBadge source={waitlistSource(wlSource ?? ct)} />
         <QrCode url={href} lang={l} />
       </div>
     </aside>

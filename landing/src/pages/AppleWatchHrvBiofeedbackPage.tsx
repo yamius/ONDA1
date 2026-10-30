@@ -13,6 +13,8 @@ import { langFromPath, langHref } from '../i18n'
 import { renderRich, type RichLink } from '../utils/richText'
 import { APPLE_WATCH_HRV_I18N, type AwCopy } from '../data/apple-watch-hrv-i18n'
 
+import AndroidWaitlistBadge from '../components/AndroidWaitlistBadge'
+
 type Lang = 'en' | 'ru' | 'es'
 const SITE_URL = 'https://onda-life.com'
 const AUTHOR_ID = `${SITE_URL}/#author`
@@ -107,6 +109,7 @@ export function AppleWatchHrvBiofeedbackPage() {
         >
           {copy.ctaLabel}
         </a>
+        <AndroidWaitlistBadge source="apple_watch_hrv" look="plain" className="ml-3 mt-6 inline-block rounded border border-white/25 px-4 py-2 font-mono text-sm text-white/75 hover:bg-white/10" />
       </header>
 
       <nav className="mt-8 flex flex-wrap gap-2 font-mono text-xs" aria-label="On this page">

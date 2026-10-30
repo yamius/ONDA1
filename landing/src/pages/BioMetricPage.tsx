@@ -8,6 +8,8 @@ import { storeCt } from '../lib/storeCt'
 import { API_ENABLED } from '../config/features'
 import { langFromPath, localizedPathFor, langHref } from '../i18n'
 import { syncOgLocale } from '../utils/ogLocale'
+
+import AndroidWaitlistBadge from '../components/AndroidWaitlistBadge'
 const SITE_URL = 'https://onda-life.com'
 
 interface TranslatedMetric {
@@ -183,6 +185,7 @@ export function BioMetricPage() {
                 <div className="text-sm font-semibold">{t('ui.appStoreLabel')}</div>
               </div>
             </a>
+            <AndroidWaitlistBadge source="bio_metric" look="soft" />
             {/* Android waitlist trigger — hidden without the waitlist backend
                 (static hosting); the App Store link above always works. */}
             {API_ENABLED && (

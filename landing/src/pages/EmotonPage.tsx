@@ -18,6 +18,8 @@ import { appStoreUrl } from '../config/appStore';
 import { rdtTrack } from '../lib/redditPixel';
 import { startEmotonSession, track, trackDownloadClick } from '../lib/emotonAnalytics';
 
+import AndroidWaitlistBadge from '../components/AndroidWaitlistBadge'
+
 // be-with register shown for a zone (stable analytics key, not a UI string).
 const registerFor = (z: ZoneId | null): 'soak' | 'settle' | 'near' | 'soft' =>
   z === 'regulated' || z === 'expansive' ? 'soak' : z === 'grief' ? 'near' : z === 'freeze' ? 'soft' : 'settle';
@@ -452,6 +454,7 @@ export function EmotonPage() {
               >
                 App Store
               </a>
+              <AndroidWaitlistBadge source="emoton" look="plain" className="flex-1 rounded-full border border-white/15 px-3 py-2 text-center text-xs font-semibold text-white/80 transition-colors hover:bg-white/10" />
               <a
                 href="/#download"
                 onClick={() => trackDownloadClick('emoton_bewith')}
@@ -488,6 +491,7 @@ export function EmotonPage() {
             >
               {t('assimilation.app_store')}
             </a>
+            <AndroidWaitlistBadge source="emoton" look="plain" className="flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white/80 transition-colors hover:bg-white/10" />
             <a
               href="/#download"
               onClick={() => trackDownloadClick('emoton_post_practice')}
@@ -551,6 +555,7 @@ export function EmotonPage() {
             >
               {t('assimilation.app_store')}
             </a>
+            <AndroidWaitlistBadge source="emoton" look="plain" className="flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white/80 transition-colors hover:bg-white/10" />
             <a
               href="/#download"
               onClick={() => trackDownloadClick('emoton_post_practice')}

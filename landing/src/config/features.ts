@@ -18,6 +18,6 @@
 const env = ((import.meta as unknown as { env?: Record<string, string | undefined> }).env) ?? {}
 export const API_ENABLED = env.VITE_API_ENABLED === '1'
 
-/** Android waitlist form on /tools/vibration-breathing only (task 104). Its own switch, so the
- * shared API_ENABLED (votes, comments, home waitlist) stays off. /api/waitlist is live. */
-export const VIBRATION_WAITLIST_ENABLED = true
+/** Android waitlist badge next to the App Store badge in every <AppStoreCTA> (task 104). Its own
+ * switch, so the shared API_ENABLED (votes, comments, home waitlist) stays off. /api/waitlist is live. */
+export const ANDROID_WAITLIST_ENABLED = true

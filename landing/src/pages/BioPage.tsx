@@ -7,6 +7,8 @@ import { storeCt } from '../lib/storeCt'
 import { API_ENABLED } from '../config/features'
 import { langFromPath, localizedPathFor } from '../i18n'
 
+import AndroidWaitlistBadge from '../components/AndroidWaitlistBadge'
+
 type MetricValue = string | null
 
 interface BiometricState {
@@ -646,6 +648,7 @@ export function BioPage() {
           >
             {t('ctaPrimary.button')}
           </a>
+          <AndroidWaitlistBadge source="bio" look="plain" className="ml-3 mt-3 inline-block rounded-lg border border-white/20 px-6 py-2.5 text-sm font-bold text-white/85 transition-all hover:bg-white/10" />
         </div>
 
         {/* Metric descriptions */}
@@ -707,6 +710,7 @@ export function BioPage() {
                 <div className="text-sm font-semibold">{t('ctaDownload.appStoreLabel')}</div>
               </div>
             </a>
+            <AndroidWaitlistBadge source="bio" look="soft" />
             {/* Android waitlist trigger — hidden without the waitlist backend
                 (static hosting); the App Store link above always works. */}
             {API_ENABLED && (
