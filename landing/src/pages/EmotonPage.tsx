@@ -19,6 +19,7 @@ import { rdtTrack } from '../lib/redditPixel';
 import { startEmotonSession, track, trackDownloadClick } from '../lib/emotonAnalytics';
 
 import AndroidWaitlistBadge from '../components/AndroidWaitlistBadge'
+import { AppStoreBadge } from '../components/AppStoreCTA'
 
 // be-with register shown for a zone (stable analytics key, not a UI string).
 const registerFor = (z: ZoneId | null): 'soak' | 'settle' | 'near' | 'soft' =>
@@ -444,17 +445,9 @@ export function EmotonPage() {
               CTA on short viewports — if content is tall the page scrolls instead. */}
           <div className="mt-auto flex w-[88%] max-w-xs flex-col items-center gap-2 pt-8 pb-5">
             <p className="text-center text-xs leading-snug text-white/55">{t('be_with.app_invite')}</p>
-            <div className="flex w-full gap-2">
-              <a
-                href={appStoreUrl('emoton')}
-                target="_blank"
-                rel="noopener"
-                onClick={() => trackDownloadClick('emoton_bewith')}
-                className="flex-1 rounded-full bg-cyan-500/20 px-3 py-2 text-center text-xs font-semibold text-cyan-100 transition-colors hover:bg-cyan-500/30"
-              >
-                App Store
-              </a>
-              <AndroidWaitlistBadge source="emoton" look="plain" className="flex-1 rounded-full border border-white/15 px-3 py-2 text-center text-xs font-semibold text-white/80 transition-colors hover:bg-white/10" />
+            <div className="flex w-full flex-wrap justify-center gap-2">
+              <AppStoreBadge href={appStoreUrl('emoton')} onClick={() => trackDownloadClick('emoton_bewith')} size="sm" />
+              <AndroidWaitlistBadge source="emoton" size="sm" />
               <a
                 href="/#download"
                 onClick={() => trackDownloadClick('emoton_bewith')}
@@ -481,17 +474,9 @@ export function EmotonPage() {
           <h2 className="mt-6 text-xl font-semibold">{t('release.title')}</h2>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-white/60">{t('release.description')}</p>
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-white/70">{t('assimilation.invite')}</p>
-          <div className="mt-5 flex w-full max-w-xs flex-col gap-3">
-            <a
-              href={appStoreUrl('emoton')}
-              target="_blank"
-              rel="noopener"
-              onClick={() => trackDownloadClick('emoton_post_practice')}
-              className="flex items-center justify-center rounded-full bg-cyan-500/20 px-6 py-3 text-sm font-semibold text-cyan-100 transition-colors hover:bg-cyan-500/30"
-            >
-              {t('assimilation.app_store')}
-            </a>
-            <AndroidWaitlistBadge source="emoton" look="plain" className="flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white/80 transition-colors hover:bg-white/10" />
+          <div className="mt-5 flex w-full max-w-xs flex-col items-center gap-3">
+            <AppStoreBadge href={appStoreUrl('emoton')} onClick={() => trackDownloadClick('emoton_post_practice')} />
+            <AndroidWaitlistBadge source="emoton" />
             <a
               href="/#download"
               onClick={() => trackDownloadClick('emoton_post_practice')}
@@ -545,17 +530,9 @@ export function EmotonPage() {
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-white/60">{t('assimilation.description')}</p>
           {/* Invitation into the app instead of a bare "close". */}
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-white/70">{t('assimilation.invite')}</p>
-          <div className="mt-5 flex w-full max-w-xs flex-col gap-3">
-            <a
-              href={appStoreUrl('emoton')}
-              target="_blank"
-              rel="noopener"
-              onClick={() => trackDownloadClick('emoton_post_practice')}
-              className="flex items-center justify-center rounded-full bg-cyan-500/20 px-6 py-3 text-sm font-semibold text-cyan-100 transition-colors hover:bg-cyan-500/30"
-            >
-              {t('assimilation.app_store')}
-            </a>
-            <AndroidWaitlistBadge source="emoton" look="plain" className="flex items-center justify-center rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-white/80 transition-colors hover:bg-white/10" />
+          <div className="mt-5 flex w-full max-w-xs flex-col items-center gap-3">
+            <AppStoreBadge href={appStoreUrl('emoton')} onClick={() => trackDownloadClick('emoton_post_practice')} />
+            <AndroidWaitlistBadge source="emoton" />
             <a
               href="/#download"
               onClick={() => trackDownloadClick('emoton_post_practice')}

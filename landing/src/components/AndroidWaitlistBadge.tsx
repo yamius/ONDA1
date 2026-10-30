@@ -14,23 +14,9 @@ export function waitlistSource(tag: string): string {
   return tag.toLowerCase().replace(/[^a-z0-9_]+/g, '_').replace(/^_+|_+$/g, '').slice(0, 40) || 'site'
 }
 
-function AndroidLogo({ size = 22 }: { size?: number }) {
-  return (
-    <svg viewBox="0 0 24 24" width={size} height={size} aria-hidden="true" fill="#3DDC84">
-      <path d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22a11.4 11.4 0 0 0-9.84 0L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z" />
-    </svg>
-  )
-}
-
-type Look = 'badge' | 'soft' | 'plain'
-
-/**
- * look — match the App Store button it sits next to:
- *   'badge' (default) black two-line badge, same as <AppStoreBadge>;
- *   'soft'  grey two-line button (home / Bio CTA rows);
- *   'plain' one-line label styled by `className` (copy the neighbour's classes).
- */
-export default function AndroidWaitlistBadge({ source, look = 'badge', className }: { source: string; look?: Look; className?: string }) {
+/** "Get it for Android" badge (public/badges/android.svg) — same frame, size and type as the
+ *  App Store badge. size: 'md' 48px tall (default), 'sm' 40px. */
+export default function AndroidWaitlistBadge({ source, size = 'md' }: { source: string; size?: 'md' | 'sm' }) {
   const [android, setAndroid] = useState(false)
   const [open, setOpen] = useState(false)
   useEffect(() => {
@@ -39,50 +25,17 @@ export default function AndroidWaitlistBadge({ source, look = 'badge', className
     } catch { /* no badge */ }
   }, [])
   if (!ANDROID_WAITLIST_ENABLED || !android) return null
-  const onClick = () => { setOpen(true); gtmAndroidWaitlist('android_waitlist_view', source) }
-  let btn
-  if (look === 'plain') {
-    btn = (
-      <button type="button" data-button="android-waitlist" onClick={onClick} className={className}>
-        Android — join the waitlist
-      </button>
-    )
-  } else if (look === 'soft') {
-    btn = (
-      <button
-        type="button"
-        data-button="android-waitlist"
-        onClick={onClick}
-        aria-label="Get ONDA for Android"
-        className={className ?? 'group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs text-white transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5'}
-      >
-        <AndroidLogo size={18} />
-        <span className="text-left">
-          <span className="block text-[9px] text-white/40">Coming soon · join the list</span>
-          <span className="block text-sm font-semibold">Android</span>
-        </span>
-      </button>
-    )
-  } else {
-    btn = (
-      <button
-        type="button"
-        data-button="android-waitlist"
-        onClick={onClick}
-        aria-label="Get ONDA for Android"
-        className={className ?? 'inline-flex h-12 shrink-0 items-center gap-2 rounded-xl border border-white/40 bg-black px-4 text-left text-white transition-opacity hover:opacity-85'}
-      >
-        <AndroidLogo />
-        <span className="flex flex-col leading-none">
-          <span className="text-[10px] font-medium">Coming soon · join the list</span>
-          <span className="text-lg font-semibold tracking-tight">Android</span>
-        </span>
-      </button>
-    )
-  }
   return (
     <>
-      {btn}
+      <button
+        type="button"
+        data-button="android-waitlist"
+        onClick={() => { setOpen(true); gtmAndroidWaitlist('android_waitlist_view', source) }}
+        aria-label="Get it for Android"
+        className="inline-flex shrink-0 transition-opacity hover:opacity-85"
+      >
+        <img src="/badges/android.svg" alt="Get it for Android" width={162} height={48} className={size === 'sm' ? 'h-10 w-auto' : 'h-12 w-auto'} />
+      </button>
       {open && <AndroidWaitlistForm source={source} onClose={() => setOpen(false)} />}
     </>
   )
@@ -124,8 +77,8 @@ function AndroidWaitlistForm({ onClose, source }: { onClose: () => void; source:
         <button type="button" onClick={onClose} aria-label="Close" className="absolute right-3 top-3 rounded p-1 text-white/50 hover:text-white">✕</button>
         {state !== 'done' ? (
           <div role="form" aria-labelledby="aw-title" onKeyDown={(e) => { if (e.key === 'Enter' && (e.target as HTMLElement).tagName === 'INPUT') { e.preventDefault(); void submit() } }}>
-            <h2 id="aw-title" className="mb-2 text-xl font-semibold text-white">Get ONDA for Android</h2>
-            <p className="mb-4 text-sm text-white/60">The Android app isn’t out yet. Leave your email and we’ll write once when it is.</p>
+            <h2 id="aw-title" className="mb-2 text-xl font-semibold text-white">ONDA for Android is on its way</h2>
+            <p className="mb-4 text-sm text-white/60">Leave your email — we’ll send you the download link as soon as it’s ready.</p>
             <label className="mb-1 block font-mono text-[11px] text-white/50" htmlFor="aw-email">Email</label>
             <input id="aw-email" ref={emailRef} type="email" name="email" required autoComplete="email" disabled={state === 'sending'}
               className="mb-4 w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white outline-none focus:border-white/50" />
@@ -141,7 +94,7 @@ function AndroidWaitlistForm({ onClose, source }: { onClose: () => void; source:
         ) : (
           <div className="text-center">
             <h2 id="aw-title" className="mb-2 text-xl font-semibold text-white">You’re on the list</h2>
-            <p className="mb-5 text-sm text-white/60">We’ll email you when ONDA for Android is ready.</p>
+            <p className="mb-5 text-sm text-white/60">We’ll send you the download link as soon as ONDA for Android is ready.</p>
             <button type="button" onClick={onClose} className="rounded-full border border-white/25 px-6 py-2 text-sm text-white">OK</button>
           </div>
         )}

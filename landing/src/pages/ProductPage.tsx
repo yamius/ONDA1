@@ -25,6 +25,7 @@ import { langFromPath } from '../i18n'
 import { PRODUCT_I18N, type ProductCopy } from '../data/product-i18n'
 
 import AndroidWaitlistBadge from '../components/AndroidWaitlistBadge'
+import { AppStoreBadge } from '../components/AppStoreCTA'
 
 const CAP_GLYPH: Record<Cap, string> = { yes: '✓', limited: '~', no: '—' }
 const CAP_CLASS: Record<Cap, string> = {
@@ -175,13 +176,10 @@ export function ProductPage() {
         <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/70">[ PRODUCT ]</div>
         <h1 className="mb-5 text-3xl font-bold tracking-tight md:text-5xl">ONDA Life</h1>
         <p className="font-mono text-sm leading-relaxed text-white/70 md:text-base">{copy.heroPara}</p>
-        <a
-          href={appStoreUrl(storeCt('pg', 'product', lang))}
-          className="mt-8 inline-block rounded border border-terminal-green/40 px-4 py-2 font-mono text-sm text-terminal-green transition-colors hover:bg-terminal-green/10"
-        >
-          {copy.cta}
-        </a>
-        <AndroidWaitlistBadge source="product" look="plain" className="ml-3 mt-8 inline-block rounded border border-white/25 px-4 py-2 font-mono text-sm text-white/75 transition-colors hover:bg-white/10" />
+        <div className="mt-8 flex flex-wrap items-center gap-3">
+          <AppStoreBadge href={appStoreUrl(storeCt('pg', 'product', lang))} lang={lang} />
+          <AndroidWaitlistBadge source="product" />
+        </div>
       </header>
 
       {/* PRODUCT FACTS */}

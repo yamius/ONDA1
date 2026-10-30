@@ -14,6 +14,7 @@ import { renderRich, type RichLink } from '../utils/richText'
 import { APPLE_WATCH_HRV_I18N, type AwCopy } from '../data/apple-watch-hrv-i18n'
 
 import AndroidWaitlistBadge from '../components/AndroidWaitlistBadge'
+import { AppStoreBadge } from '../components/AppStoreCTA'
 
 type Lang = 'en' | 'ru' | 'es'
 const SITE_URL = 'https://onda-life.com'
@@ -103,13 +104,10 @@ export function AppleWatchHrvBiofeedbackPage() {
         <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/70">{copy.kicker}</div>
         <h1 className="mb-5 text-3xl font-bold tracking-tight md:text-5xl">{copy.h1}</h1>
         <p className="font-mono text-sm leading-relaxed text-white/75 md:text-base">{renderRich(copy.heroLead, links, 'hero')}</p>
-        <a
-          href={appStoreUrl(storeCt('pg', 'apple_watch_hrv', lang))}
-          className="mt-6 inline-block rounded border border-terminal-green/40 px-4 py-2 font-mono text-sm text-terminal-green hover:bg-terminal-green/10"
-        >
-          {copy.ctaLabel}
-        </a>
-        <AndroidWaitlistBadge source="apple_watch_hrv" look="plain" className="ml-3 mt-6 inline-block rounded border border-white/25 px-4 py-2 font-mono text-sm text-white/75 hover:bg-white/10" />
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <AppStoreBadge href={appStoreUrl(storeCt('pg', 'apple_watch_hrv', lang))} lang={lang} />
+          <AndroidWaitlistBadge source="apple_watch_hrv" />
+        </div>
       </header>
 
       <nav className="mt-8 flex flex-wrap gap-2 font-mono text-xs" aria-label="On this page">
