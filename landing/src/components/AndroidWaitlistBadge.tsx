@@ -16,7 +16,7 @@ export function waitlistSource(tag: string): string {
 
 /** "Get it for Android" badge (public/badges/android.svg) — same frame, size and type as the
  *  App Store badge. size: 'md' 48px tall (default), 'sm' 40px. */
-export default function AndroidWaitlistBadge({ source, size = 'md' }: { source: string; size?: 'md' | 'sm' }) {
+export default function AndroidWaitlistBadge({ source, size = 'md', always = false }: { source: string; size?: 'md' | 'sm'; /** show on every device, not only Android (e.g. /product) */ always?: boolean }) {
   const [android, setAndroid] = useState(false)
   const [open, setOpen] = useState(false)
   useEffect(() => {
@@ -24,7 +24,7 @@ export default function AndroidWaitlistBadge({ source, size = 'md' }: { source: 
       setAndroid('vibrate' in navigator && (navigator.maxTouchPoints > 0 || 'ontouchstart' in window))
     } catch { /* no badge */ }
   }, [])
-  if (!ANDROID_WAITLIST_ENABLED || !android) return null
+  if (!ANDROID_WAITLIST_ENABLED || (!android && !always)) return null
   return (
     <>
       <button

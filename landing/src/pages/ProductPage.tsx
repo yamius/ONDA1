@@ -106,6 +106,7 @@ const EN_COPY: ProductCopy = {
     'Guided resonance breathing',
     'Resting-HRV trend tracking over days and weeks',
     'A structured, 8-level practice path for your nervous system',
+    'Guided meditation and wind-down practices — stillness and slow-exhale sessions, including ones you can do lying down before sleep',
     'Works with the iPhone camera or an Apple Watch you already own',
   ],
   doesFootnotePre: 'For exactly which numbers are measured, derived or estimated, see ',
@@ -133,8 +134,7 @@ const EN_COPY: ProductCopy = {
   notForItems: [
     'Diagnosis, or treatment of any medical condition — ONDA is not a medical device',
     'Replacing psychotherapy or medical care',
-    'Sleep tracking — ONDA is not a sleep tracker',
-    'A large general meditation or sleep-story library',
+    'A readiness/recovery score like Oura or WHOOP — ONDA shows sleep rhythm (with Apple Watch), not a single recovery number',
   ],
   crossPre: 'See how ONDA compares to other apps and wearables on the ',
   compareLink: 'compare hub',
@@ -178,7 +178,7 @@ export function ProductPage() {
         <p className="font-mono text-sm leading-relaxed text-white/70 md:text-base">{copy.heroPara}</p>
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <AppStoreBadge href={appStoreUrl(storeCt('pg', 'product', lang))} lang={lang} />
-          <AndroidWaitlistBadge source="product" />
+          <AndroidWaitlistBadge source="product" always />
         </div>
       </header>
 
