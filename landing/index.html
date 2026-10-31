@@ -41,6 +41,10 @@
         }
         var h=location.hostname,m=(h==='localhost'||h==='127.0.0.1')&&location.search.match(/[?&]__country=([A-Za-z]{2})/);
         if(m)return done(m[1].toUpperCase());
+        // 105-fix: middleware.ts sets geo_country from x-vercel-ip-country on the HTML response -> decide synchronously.
+        var ck=document.cookie.match(/(?:^|;\s*)geo_country=([A-Za-z]{2})(?:;|$)/);
+        if(ck)return done(ck[1].toUpperCase());
+        // Fallback only when the cookie is missing (middleware not run / cookies blocked).
         setTimeout(function(){done(null);},3000);
         try{fetch('/api/geo',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){done(j&&j.country||null,fired);},function(){done(null);});}catch(e){done(null);}
       })();

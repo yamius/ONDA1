@@ -23,6 +23,7 @@
   "dependencies": {
     "@react-three/fiber": "^9.6.1",
     "@supabase/supabase-js": "^2.98.0",
+    "@vercel/functions": "^3.10.5",
     "compression": "^1.8.1",
     "express": "^5.2.1",
     "fflate": "^0.8.2",

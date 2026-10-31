@@ -1,6 +1,6 @@
 /**
  * Cookie consent state (task 105). The inline head script in index.html owns the first steps:
- * it sets gtag('consent','default', all denied) BEFORE GTM, asks /api/geo for the country, sends
+ * it sets gtag('consent','default', all denied) BEFORE GTM, reads the geo_country cookie (middleware.ts) or, as fallback, asks /api/geo, sends
  * consent 'update' granted for non-consent countries, re-applies a stored choice, and publishes
  * the result on window.__ondaConsent + the 'onda-consent' event. This module is the React side:
  * read that state, save a choice (localStorage, try/catch) and push gtag('consent','update').
