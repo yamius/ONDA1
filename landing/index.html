@@ -24,19 +24,25 @@
         var EEA=' AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE IS LI NO GB UK CH ';
         var choice=null;try{choice=localStorage.getItem('onda_consent_v1');}catch(e){}
         if(choice!=='granted'&&choice!=='denied')choice=null;
-        var fired=false;
-        function done(c){
-          if(fired)return;fired=true;
+        var fired=false,granted=false;
+        // done(c) may run twice: first on the 3 s timeout (country unknown -> treated as EEA), then
+        // again when a slow /api/geo answer arrives (VPN, cold start). A late non-EEA answer still
+        // lifts the banner if the visitor has not chosen yet; a late answer never revokes a grant.
+        function done(c,late){
+          if(fired&&!late)return;
+          if(late&&!c)return;
+          fired=true;
+          try{var cs=localStorage.getItem('onda_consent_v1');if(cs==='granted'||cs==='denied')choice=cs;}catch(e){}
           var need=!c||EEA.indexOf(' '+c+' ')>=0;
           var g=need?choice==='granted':choice!=='denied'; // an explicit Reject is honoured in every country
-          if(g)gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
-          window.__ondaConsent={ready:true,country:c||null,needsConsent:need,choice:choice,analytics:g};
+          if(g&&!granted){granted=true;gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});}
+          window.__ondaConsent={ready:true,country:c||null,needsConsent:need,choice:choice,analytics:g||granted};
           try{window.dispatchEvent(new Event('onda-consent'));}catch(e){}
         }
         var h=location.hostname,m=(h==='localhost'||h==='127.0.0.1')&&location.search.match(/[?&]__country=([A-Za-z]{2})/);
         if(m)return done(m[1].toUpperCase());
         setTimeout(function(){done(null);},3000);
-        try{fetch('/api/geo',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){done(j&&j.country||null);},function(){done(null);});}catch(e){done(null);}
+        try{fetch('/api/geo',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){done(j&&j.country||null,fired);},function(){done(null);});}catch(e){done(null);}
       })();
     </script>
     <script>
