@@ -28,7 +28,7 @@
         function done(c){
           if(fired)return;fired=true;
           var need=!c||EEA.indexOf(' '+c+' ')>=0;
-          var g=need?choice==='granted':true;
+          var g=need?choice==='granted':choice!=='denied'; // an explicit Reject is honoured in every country
           if(g)gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
           window.__ondaConsent={ready:true,country:c||null,needsConsent:need,choice:choice,analytics:g};
           try{window.dispatchEvent(new Event('onda-consent'));}catch(e){}
