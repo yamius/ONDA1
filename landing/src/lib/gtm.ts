@@ -13,11 +13,31 @@
  */
 type DL = Record<string, unknown>
 
+// Task 105: hold events until the consent head script has resolved the country, so the
+// dataLayer order is always consent default → consent update → events (a US visitor's first
+// spa_pageview is then processed as granted, not as a cookieless ping).
+let held: DL[] | null = null
 function push(obj: DL): void {
   try {
-    const w = window as unknown as { dataLayer?: DL[] }
+    const w = window as unknown as { dataLayer?: DL[]; __ondaConsent?: { ready?: boolean } }
     w.dataLayer = w.dataLayer || []
-    w.dataLayer.push(obj)
+    if (w.__ondaConsent?.ready) {
+      w.dataLayer.push(obj)
+      return
+    }
+    if (!held) {
+      held = []
+      window.addEventListener(
+        'onda-consent',
+        () => {
+          const q = held || []
+          held = null
+          for (const o of q) (w.dataLayer as DL[]).push(o)
+        },
+        { once: true },
+      )
+    }
+    held.push(obj)
   } catch {
     /* SSR / storage blocked → no-op */
   }

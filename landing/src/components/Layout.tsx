@@ -9,6 +9,7 @@ import { emotonCtaUrl } from '../config/appStore'
 import { rdtTrack } from '../lib/redditPixel'
 import { gtmPageView, gtmAppStoreClick, gtmNavClick } from '../lib/gtm'
 import { connectNav } from '../data/connect-nav'
+import { ConsentBanner, CookieSettingsLink } from './ConsentBanner'
 
 export function Layout() {
   const location = useLocation()
@@ -79,8 +80,11 @@ export function Layout() {
   const rdtLastPath = useRef<string | null>(null)
   useEffect(() => {
     if (rdtLastPath.current === location.pathname) return
+    const first = rdtLastPath.current === null
     rdtLastPath.current = location.pathname
-    rdtTrack('PageVisit')
+    // Task 105: the pixel now lives in GTM (ad_storage consent check); its tag fires init +
+    // PageVisit for the hard load, so only SPA route changes are sent from here.
+    if (!first) rdtTrack('PageVisit')
     // GA4 (via GTM): same pageview on load + every SPA route change, so the
     // Acquisition (landing page) and Path-exploration (movement) reports fill.
     gtmPageView(location.pathname)
@@ -426,10 +430,14 @@ export function Layout() {
               >
                 {t('footer.terms')}
               </Link>
+              <CookieSettingsLink lang={currentLang}
+                className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
+              />
             </div>
           </div>
         </div>
       </footer>
+      <ConsentBanner lang={currentLang} />
     </div>
   )
 }

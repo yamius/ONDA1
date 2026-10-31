@@ -1,4 +1,5 @@
 import type { PostHog } from 'posthog-js'
+import { getConsent, whenAnalyticsGranted } from './consent'
 
 /**
  * Emoton product analytics — the in-tool funnel (open → name a feeling → route →
@@ -72,6 +73,12 @@ function ensureInit(): Promise<void> {
 
 /** Call once when the tool mounts: init + attribution super-props + emoton_opened. */
 export async function startEmotonSession(): Promise<void> {
+  // Task 105: PostHog only with analytics_storage granted (EEA/UK/CH need Accept). After Accept
+  // the session starts right away, no reload.
+  if (!getConsent().analytics) {
+    whenAnalyticsGranted(() => void startEmotonSession())
+    return
+  }
   await ensureInit()
   if (!ph) return
   sessionId =

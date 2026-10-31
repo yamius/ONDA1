@@ -13,6 +13,33 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <!-- Google Tag Manager: dataLayer init immediate; container deferred until after load+idle -->
     <script>
+      // Cookie consent (task 105). Consent Mode v2 default = denied BEFORE GTM loads. /api/geo
+      // (Vercel x-vercel-ip-country) decides: EEA/UK/CH/unknown keep denied until the banner
+      // choice; every other country gets 'update' granted right away. Logic mirrored in src/lib/consent.ts.
+      window.dataLayer=window.dataLayer||[];
+      window.gtag=window.gtag||function(){dataLayer.push(arguments);};
+      gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:'denied',wait_for_update:1500});
+      gtag('set','ads_data_redaction',true);
+      (function(){
+        var EEA=' AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE IS LI NO GB UK CH ';
+        var choice=null;try{choice=localStorage.getItem('onda_consent_v1');}catch(e){}
+        if(choice!=='granted'&&choice!=='denied')choice=null;
+        var fired=false;
+        function done(c){
+          if(fired)return;fired=true;
+          var need=!c||EEA.indexOf(' '+c+' ')>=0;
+          var g=need?choice==='granted':true;
+          if(g)gtag('consent','update',{ad_storage:'granted',ad_user_data:'granted',ad_personalization:'granted',analytics_storage:'granted'});
+          window.__ondaConsent={ready:true,country:c||null,needsConsent:need,choice:choice,analytics:g};
+          try{window.dispatchEvent(new Event('onda-consent'));}catch(e){}
+        }
+        var h=location.hostname,m=(h==='localhost'||h==='127.0.0.1')&&location.search.match(/[?&]__country=([A-Za-z]{2})/);
+        if(m)return done(m[1].toUpperCase());
+        setTimeout(function(){done(null);},3000);
+        try{fetch('/api/geo',{cache:'no-store'}).then(function(r){return r.json();}).then(function(j){done(j&&j.country||null);},function(){done(null);});}catch(e){done(null);}
+      })();
+    </script>
+    <script>
       window.dataLayer=window.dataLayer||[];
       (function(id){
         function load(){
@@ -32,14 +59,6 @@
       })('GTM-NJ7LMQXD');
     </script>
     <!-- End Google Tag Manager -->
-    <!-- Reddit Pixel — init ONLY. PageVisit is fired per client-side route by
-         the effect in src/components/Layout.tsx (via rdtTrack); firing it inline
-         here too would double-count the first load and still miss SPA route
-         changes. Only edit the snippet body to replace the user identifier. -->
-    <script>
-    !function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_j1iw32mi5ccu",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_j1iw32mi5ccu');
-    </script>
-    <!-- End Reddit Pixel -->
     <meta name="google-site-verification" content="c03Z3IWjfPCaTwFHUCfgNseJFQiAom56Gsdinec5ZOg" />
     <meta name="msvalidate.01" content="903101930359F0A420AB0A5F929D6E61" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
