@@ -71,7 +71,7 @@ export function CtaSection() {
 
         <div className="mx-auto flex max-w-[200px] flex-col items-center justify-center gap-2 sm:max-w-none sm:flex-row sm:gap-3">
           <AppStoreBadge href={appStoreUrl(storeCt('home', 'hero', lang))} lang={lang} />
-          <AndroidWaitlistBadge source="home" />
+          <AndroidWaitlistBadge source="home" always />
           {/* Google Play → Android waitlist modal. Hidden without the waitlist
               backend (static hosting) so there's no button that opens a form
               that can't submit. The App Store link above always works. */}
