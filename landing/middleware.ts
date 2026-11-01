@@ -5,11 +5,8 @@
 // static HTML; it is never stored in the cache.
 import { next } from '@vercel/functions';
 
-export const config = {
-  // HTML navigations only. Excluded: /api, /mcp (rewrite to onda-chatgpt - must stay untouched),
-  // /assets, /_content, /badges, /embed, /_vercel and any path with a file extension.
-  matcher: ['/((?!api|mcp|assets|_content|badges|embed|_vercel|.*[.].*).*)'],
-};
+// Matcher lives in vercel.json (proxy.matcher) — Vercel rejects a second copy here.
+// HTML navigations only; /api, /mcp, /assets, /_content, /badges, /embed, /_vercel and files are excluded.
 
 export default function middleware(request: Request) {
   // Never break the site: any error -> serve the page exactly as without middleware.
