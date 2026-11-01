@@ -4400,5 +4400,14 @@
     "try_first": "Хочу спершу спробувати",
     "unclear_value": "Не зрозумів, навіщо платити",
     "other": "Інше"
-  }
+  },
+  "quick_question": "Чого хочеш?",
+  "quick_relax": "Заспокоїтися",
+  "quick_wake": "Підбадьоритися",
+  "quick_inhale": "Вдих",
+  "quick_exhale": "Видих",
+  "quick_hint": "Тримай палець на екрані — ритм стане сильнішим",
+  "quick_stop": "Стоп",
+  "quick_sound_on": "Увімкнути звук",
+  "quick_sound_off": "Вимкнути звук"
 }
