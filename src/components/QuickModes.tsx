@@ -26,7 +26,7 @@ function tap(style: HapticStyle) {
   void Haptics.impact({ style: STYLE[style] }).catch(() => { /* no haptics */ });
 }
 
-export function QuickModes({ level, track }: { level: number; track: TrackFn }) {
+export function QuickModes({ level, track, light = false }: { level: number; track: TrackFn; light?: boolean }) {
   const { t } = useTranslation();
   const [mode, setMode] = useState<QuickMode | null>(null);
   const [inhale, setInhale] = useState(true);
@@ -159,15 +159,15 @@ export function QuickModes({ level, track }: { level: number; track: TrackFn }) 
   const onUp = () => { touchingRef.current = false; };
 
   return (
-    <div className="mb-6" data-onda-quick-modes>
-      <p className="text-center text-white/80 text-base mb-3">{t('quick_question')}</p>
+    <div className="mb-4" data-onda-quick-modes>
+      <p className={`text-center text-base font-semibold mb-3 ${light ? 'text-slate-600' : 'text-white/90'}`}>{t('quick_question')}</p>
       <div className="grid grid-cols-2 gap-3">
         <button type="button" onClick={() => start('relax')}
-          className="rounded-2xl border border-amber-300/50 bg-amber-300/10 px-4 py-4 text-lg font-semibold text-amber-200 hover:bg-amber-300/20">
+          className="rounded-xl bg-amber-500 px-4 py-4 text-lg font-bold text-white shadow-md transition-all hover:bg-amber-600">
           {t('quick_relax')}
         </button>
         <button type="button" onClick={() => start('wake')}
-          className="rounded-2xl border border-violet-400/50 bg-violet-500/10 px-4 py-4 text-lg font-semibold text-violet-200 hover:bg-violet-500/20">
+          className="rounded-xl bg-violet-600 px-4 py-4 text-lg font-bold text-white shadow-md transition-all hover:bg-violet-700">
           {t('quick_wake')}
         </button>
       </div>

@@ -7156,7 +7156,7 @@ const OndaLevel1 = () => {
             verdict is exactly the anxiety score this audience came to ONDA
             to escape. One calm HR-RSA curve now lives inside the coherence
             hero; the busy 3-line dashboard is gone. */}
-        <div className="mb-6" ref={cameraSectionRef}>
+        <div className="mb-4" ref={cameraSectionRef}>
           {/* Diary/Timeline entry — DETAILED mode only. Compact keeps nothing:
               no timeline, no diary — the traffic light is fully automatic (task 85). */}
           {appMode !== 'simple' && (
@@ -7185,7 +7185,7 @@ const OndaLevel1 = () => {
           </button>
           )}
 
-          <div className="mt-3 sm:mt-4">
+          <div className={appMode !== 'simple' ? 'mt-4' : ''}>
             {cameraPpg.status !== 'idle' ? (
               /* CAMERA ACTIVE → one STABLE-height Pulse window (bpm or --) the
                  whole time, so a brief finger-lift / reconnect doesn't make the
@@ -7346,7 +7346,7 @@ const OndaLevel1 = () => {
             },
           }[colorState];
           return (
-            <div className="mb-4 flex flex-col items-center">
+            <div className="mb-6 flex flex-col items-center">
               <div onClick={onExpandTap('recommendations')} className={`relative w-full max-w-[360px] rounded-lg p-6 border text-left ${pal.shell} ${isLight ? 'backdrop-blur-xl' : 'backdrop-blur-sm'} ${isCollapsed('recommendations') ? 'cursor-pointer' : ''}`} style={collapseStyle('recommendations', 45, 8)} data-testid="recommendations-block" data-mode={a ? 'signal' : 'static'} data-color={colorState}>
                 {collapseDot('recommendations')}
                 <h3 className={`text-xl sm:text-2xl font-bold mb-2 pr-6 ${pal.title}`}>{t('baseline.setup_title', 'Рекомендации')}</h3>
@@ -7410,7 +7410,7 @@ const OndaLevel1 = () => {
             the top of the biometric block — no inline hint here. */}
         {/* Quick modes (task 107) — free Relax / Wake up on every level; not a practice:
             no paywall, no free_used, no OND. */}
-        <QuickModes level={currentCircuit.id} track={track} />
+        <QuickModes level={currentCircuit.id} track={track} light={isLight} />
         <div className="grid md:grid-cols-2 gap-4 mb-8" data-onda-practices-grid>
           {(() => {
             const ps = currentCircuit.practices;
