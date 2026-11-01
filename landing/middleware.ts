@@ -8,7 +8,7 @@ import { next } from '@vercel/functions';
 export const config = {
   // HTML navigations only. Excluded: /api, /mcp (rewrite to onda-chatgpt - must stay untouched),
   // /assets, /_content, /badges, /embed, /_vercel and any path with a file extension.
-  matcher: ['/((?!api/|api$|mcp|assets/|_content/|badges/|embed/|_vercel/|.*\.[A-Za-z0-9]+$).*)'],
+  matcher: ['/((?!api|mcp|assets|_content|badges|embed|_vercel|.*[.].*).*)'],
 };
 
 export default function middleware(request: Request) {
