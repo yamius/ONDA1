@@ -12,12 +12,17 @@ export const config = {
 };
 
 export default function middleware(request: Request) {
-  const raw = request.headers.get('x-vercel-ip-country') || '';
-  const country = /^[A-Za-z]{2}$/.test(raw) ? raw.toUpperCase() : '';
-  if (!country) return next();
-  const cookie = request.headers.get('cookie') || '';
-  if (cookie.includes('geo_country=' + country)) return next();
-  return next({
-    headers: { 'Set-Cookie': `geo_country=${country}; Path=/; Max-Age=3600; SameSite=Lax; Secure` },
-  });
+  // Never break the site: any error -> serve the page exactly as without middleware.
+  try {
+    const raw = request.headers.get('x-vercel-ip-country') || '';
+    const country = /^[A-Za-z]{2}$/.test(raw) ? raw.toUpperCase() : '';
+    if (!country) return next();
+    const cookie = request.headers.get('cookie') || '';
+    if (cookie.includes('geo_country=' + country)) return next();
+    return next({
+      headers: { 'Set-Cookie': `geo_country=${country}; Path=/; Max-Age=3600; SameSite=Lax; Secure` },
+    });
+  } catch {
+    return next();
+  }
 }
