@@ -92,6 +92,9 @@ export type AnalyticsEventName =
   // Timeline export (on-device PDF, no content logged)
   | 'timeline_export_tapped'         // tapped the share/export button in the Timeline.
   | 'timeline_export_completed'      // PDF built on-device and the share sheet opened.
+  // Quick modes (task 107) — free Relax / Wake up breathing, no free-practice limit, no health data.
+  | 'quick_start'                    // params: mode (relax|wake), level (selected level, string), haptics ('true'|'false')
+  | 'quick_stop'                     // params: mode (relax|wake), seconds (actual session length, string)
   // Simple mode A/B (task 83) — traffic-light vs detailed. GA4 dim `mode` (event-scoped).
   | 'mode_assigned'                  // first-run silent A/B assignment (80% simple / 20% detailed) — params: mode (simple|detailed).
   | 'mode_switched'                  // user overrode the mode in Settings — params: from, to.

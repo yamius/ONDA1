@@ -85,6 +85,7 @@ import { loadCheckinState, saveCheckinState, dayKey as checkinDayKey } from './l
 import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
 import { useAnalytics } from './hooks/useAnalytics';
+import { QuickModes } from './components/QuickModes';
 // Singleton, not the hook: the hidden internal-traffic toggle is the only
 // consumer, so it isn't worth widening the useAnalytics() surface for it.
 import { analytics, boolParam } from './services/AnalyticsService';
@@ -7407,6 +7408,9 @@ const OndaLevel1 = () => {
             "start here" without duplicating the card above (Option 3
             from the UX review). The Connect-Watch CTA already lives at
             the top of the biometric block — no inline hint here. */}
+        {/* Quick modes (task 107) — free Relax / Wake up on every level; not a practice:
+            no paywall, no free_used, no OND. */}
+        <QuickModes level={currentCircuit.id} track={track} />
         <div className="grid md:grid-cols-2 gap-4 mb-8" data-onda-practices-grid>
           {(() => {
             const ps = currentCircuit.practices;

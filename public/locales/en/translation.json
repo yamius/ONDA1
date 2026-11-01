@@ -4391,5 +4391,14 @@
     "try_first": "I want to try first",
     "unclear_value": "Not sure why I should pay",
     "other": "Other"
-  }
+  },
+  "quick_question": "What do you want?",
+  "quick_relax": "Relax",
+  "quick_wake": "Wake up",
+  "quick_inhale": "Breathe in",
+  "quick_exhale": "Breathe out",
+  "quick_hint": "Keep a finger on the screen for a stronger rhythm",
+  "quick_stop": "Stop",
+  "quick_sound_on": "Sound on",
+  "quick_sound_off": "Sound off"
 }

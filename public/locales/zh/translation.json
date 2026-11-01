@@ -4388,5 +4388,14 @@
     "try_first": "想先试试",
     "unclear_value": "不明白为什么要付费",
     "other": "其他"
-  }
+  },
+  "quick_question": "你想要什么？",
+  "quick_relax": "放松",
+  "quick_wake": "提神",
+  "quick_inhale": "吸气",
+  "quick_exhale": "呼气",
+  "quick_hint": "手指按住屏幕，节奏会更强",
+  "quick_stop": "停止",
+  "quick_sound_on": "打开声音",
+  "quick_sound_off": "关闭声音"
 }

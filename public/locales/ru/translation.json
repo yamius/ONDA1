@@ -4400,5 +4400,14 @@
     "try_first": "Хочу сначала попробовать",
     "unclear_value": "Не понял, зачем платить",
     "other": "Другое"
-  }
+  },
+  "quick_question": "Чего хочешь?",
+  "quick_relax": "Успокоиться",
+  "quick_wake": "Взбодриться",
+  "quick_inhale": "Вдох",
+  "quick_exhale": "Выдох",
+  "quick_hint": "Держи палец на экране — ритм станет сильнее",
+  "quick_stop": "Стоп",
+  "quick_sound_on": "Включить звук",
+  "quick_sound_off": "Выключить звук"
 }
