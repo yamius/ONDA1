@@ -27,6 +27,7 @@ import { BioMetricPage } from './pages/BioMetricPage'
 import { EmotonPage } from './pages/EmotonPage'
 import { ResearchPage } from './pages/ResearchPage'
 import { SciencePage } from './pages/SciencePage'
+import { PsychologyPage } from './pages/PsychologyPage'
 import { AiAppsPage } from './pages/AiAppsPage'
 import { MeasurementsPage } from './pages/MeasurementsPage'
 import { HowItWorksPage } from './pages/HowItWorksPage'
@@ -229,6 +230,8 @@ export function createApp(location: string, lang?: Lang) {
           ))}
           <Route path="/research"              element={<ResearchPage />} />
           <Route path="/science"               element={<SciencePage />} />
+          <Route path="/science/psychology"        element={<PsychologyPage />} />
+          <Route path="/science/psychology/:topic" element={<PsychologyPage />} />
           <Route path="/science/:kind"         element={<SciencePage />} />
           <Route path="/science/:kind/:slug"   element={<SciencePage />} />
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => [

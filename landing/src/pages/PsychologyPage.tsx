@@ -108,6 +108,7 @@ function Topic({ p }: { p: PsychPage }) {
           <Crumbs items={[{ to: '/science', label: ui.science }, { to: PSYCH_HUB, label: 'Psychology' }, { label: p.title.split(':')[0] }]} />
           <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">{p.title}</h1>
           <p className="font-mono text-xs text-white/45">Updated <time dateTime={p.updated}>{fmtDate(p.updated)}</time> · every claim quoted from its source</p>
+          <p className="font-mono text-xs text-white/45">Drafted with AI, facts reviewed by <Link to="/people/yakiv-bilenko" className="underline">Yakiv Bilenko</Link></p>
         </header>
 
         <section aria-label={ui.shortAnswer} className="mt-8 rounded border border-terminal-green/30 bg-terminal-green/5 p-5">

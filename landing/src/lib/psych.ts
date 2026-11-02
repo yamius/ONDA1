@@ -65,7 +65,7 @@ export function psychMeta(route: string): PsychMeta | undefined {
     breadcrumbs: [...crumbs, { name: p.title.split(':')[0], url }],
     jsonLd: [{
       '@context': 'https://schema.org', '@type': 'Article', '@id': `${url}#article`, url, mainEntityOfPage: url, headline: p.title, description: p.summary, abstract: p.summary,
-      inLanguage: 'en', dateModified: p.updated, author: editor, editor, isPartOf,
+      inLanguage: 'en', dateModified: p.updated, author: { '@type': 'Organization', name: 'ONDA Life editorial team', url: SITE_URL }, editor, isPartOf,
       publisher: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
       citation: psychSources(p).map((s) => ({ '@type': 'ScholarlyArticle', ...(psychSourceHref(s) ? { url: psychSourceHref(s) } : {}), ...(s.doi ? { identifier: `doi:${s.doi}` } : {}) })),
     }],
