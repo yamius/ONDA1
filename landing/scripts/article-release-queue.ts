@@ -682,9 +682,11 @@ export const TAIL_QUEUE_ENTRIES: PublishEntry[] = RELEASE_QUEUE_ENTRIES.slice(ba
  * as '<topic>/<lang>'; PSYCH_PER_BATCH pages every EVERY_DAYS days from PSYCH_QUEUE_START. A fetched page that is
  * not listed here is never published.
  */
-export const PSYCH_QUEUE_START = '2026-11-16'
+export const PSYCH_QUEUE_START = '2026-11-02'
 export const PSYCH_PER_BATCH = 2
-export const PSYCH_RELEASE_QUEUE: readonly string[] = []
+export const PSYCH_RELEASE_QUEUE: readonly string[] = [
+  'anxiety/en',
+]
 export const PSYCH_QUEUE_ENTRIES: readonly { key: string; publishOn: string }[] = PSYCH_RELEASE_QUEUE.map((key, i) => ({
   key,
   publishOn: addDays(PSYCH_QUEUE_START, Math.floor(i / PSYCH_PER_BATCH) * EVERY_DAYS),

@@ -18,6 +18,7 @@ import { storeCt } from '../lib/storeCt'
 import { langHref, type Lang } from '../i18n'
 import { scienceUi, fillUi, type ScienceUi } from '../data/science/i18n'
 import { readSciencePage } from '../lib/science-content'
+import { PSYCH_HUB, PSYCH_HUB_DESC, PSYCH_PAGES, psychPath } from '../lib/psych'
 import { parseScienceRoute, scienceMeta, sciencePath, scienceShortName, indexFor, kindsWithPages, kindIndexed, sourceHref, SITE_URL } from '../lib/science-meta'
 
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -92,6 +93,20 @@ function Hub({ lang, ui }: { lang: string; ui: ScienceUi }) {
           {ui.hubResearch[0]}<Link to={langHref('/research', lang as Lang)} className="text-terminal-green hover:underline">{ui.hubResearch[1]}</Link>{ui.hubResearch[2]}
         </p>
       </header>
+      {lang === 'en' && PSYCH_PAGES.length > 0 && (
+        <section>
+          <h2 className={H2}><Link to={PSYCH_HUB} className="hover:text-terminal-green">Psychology</Link></h2>
+          <p className={`${P} mb-4`}>{PSYCH_HUB_DESC}</p>
+          <div className="grid gap-3 md:grid-cols-2">
+            {PSYCH_PAGES.map((p) => (
+              <Link key={p.topic} to={psychPath(p.topic)} className="block rounded border border-white/10 p-4 transition-colors hover:border-terminal-green/40">
+                <div className="mb-1 font-mono text-[10px] uppercase tracking-widest text-terminal-green/70">Psychology</div>
+                <div className="mb-2 font-semibold text-white/90">{p.title}</div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
       {kindsWithPages(lang).map((k) => (
         <section key={k}>
           <h2 className={H2}>

@@ -77,6 +77,7 @@ const BioMetricPage      = lazyNs('bio-metric', () => import('./pages/BioMetricP
 const EmotonPage         = lazyNs('emoton', () => import('./pages/EmotonPage').then(m => ({ default: m.EmotonPage })))
 const ArticlesSlugRouter = lazyNs(['articles', 'glossary-light'], () => import('./components/ArticlesSlugRouter'))
 const ResearchPage          = lazy(() => import('./pages/ResearchPage').then(m => ({ default: m.ResearchPage })))
+const PsychologyPage        = lazy(() => import('./pages/PsychologyPage').then(m => ({ default: m.PsychologyPage })))
 const SciencePage           = lazy(() => import('./pages/SciencePage').then(m => ({ default: m.SciencePage })))
 const AiAppsPage            = lazy(() => import('./pages/AiAppsPage').then(m => ({ default: m.AiAppsPage })))
 const MeasurementsPage      = lazy(() => import('./pages/MeasurementsPage').then(m => ({ default: m.MeasurementsPage })))
@@ -233,6 +234,8 @@ const routeElements = (
             ))}
             <Route path="/research"              element={<ResearchPage />} />
             <Route path="/science"               element={<SciencePage />} />
+            <Route path="/science/psychology"     element={<PsychologyPage />} />
+            <Route path="/science/psychology/:topic" element={<PsychologyPage />} />
             <Route path="/science/:kind"         element={<SciencePage />} />
             <Route path="/science/:kind/:slug"   element={<SciencePage />} />
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => [
@@ -508,7 +511,7 @@ if (articleMatch && articleMatch[2] !== 'topic') {
 const reviewMatch = window.location.pathname.match(/^\/(?:[a-z]{2}\/)?reviews\/(?:(compare|vs)\/)?([^/]+)\/?$/)
 const termMatch = window.location.pathname.match(/^\/(?:[a-z]{2}\/)?glossary\/([^/]+)\/?$/)
 // Science pages: the page's JSON (one language).
-const scienceMatch = window.location.pathname.match(/^\/(?:([a-z]{2})\/)?science\/([a-z]+)\/([^/]+)\/?$/)
+const scienceMatch = window.location.pathname.match(/^\/(?:([a-z]{2})\/)?science\/(?!psychology\/)([a-z]+)\/([^/]+)\/?$/)
 if (scienceMatch) preloads.push(loadSciencePage(scienceMatch[1] ?? 'en', scienceMatch[2], scienceMatch[3]))
 if (termMatch) preloads.push(loadEntry('glossary', termMatch[1], langFromPath(window.location.pathname)))
 if (reviewMatch && reviewMatch[2] !== 'methodology') {

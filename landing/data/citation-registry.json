@@ -703,6 +703,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1002/wps.20151": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Guided Internet-based vs. face-to-face cognitive behavior therapy for psychiatric and somatic disorders: a systematic review and meta-analysis",
+   "firstAuthor": "Andersson",
+   "authors": [
+    "Andersson",
+    "Cuijpers",
+    "Carlbring",
+    "Riper",
+    "Hedman"
+   ],
+   "year": 2014,
+   "journal": "World Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-02"
+  },
   "doi:10.1002/wps.20229": {
    "kind": "doi",
    "valid": true,
@@ -2087,6 +2104,24 @@
    "source": "crossref",
    "verifiedAt": "2026-10-09"
   },
+  "doi:10.1016/j.cpr.2014.01.002": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Psychological treatment of generalized anxiety disorder: A meta-analysis",
+   "firstAuthor": "Cuijpers",
+   "authors": [
+    "Cuijpers",
+    "Sijbrandij",
+    "Koole",
+    "Huibers",
+    "Berking",
+    "Andersson"
+   ],
+   "year": 2014,
+   "journal": "Clinical Psychology Review",
+   "source": "crossref",
+   "verifiedAt": "2026-11-02"
+  },
   "doi:10.1016/j.ctcp.2017.04.001": {
    "kind": "doi",
    "valid": true,
@@ -2554,6 +2589,24 @@
    "journal": "Journal of Affective Disorders",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.jad.2017.04.046": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Can smartphone mental health interventions reduce symptoms of anxiety? A meta-analysis of randomized controlled trials",
+   "firstAuthor": "Firth",
+   "authors": [
+    "Firth",
+    "Torous",
+    "Nicholas",
+    "Carney",
+    "Rosenbaum",
+    "Sarris"
+   ],
+   "year": 2017,
+   "journal": "Journal of Affective Disorders",
+   "source": "crossref",
+   "verifiedAt": "2026-11-02"
   },
   "doi:10.1016/j.jad.2023.05.048": {
    "kind": "doi",
@@ -4250,6 +4303,22 @@
    "journal": "Psychological Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1017/s1092852900027279": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Self-Help and Internet-Guided Interventions in Depression and Anxiety Disorders: A Systematic Review of Meta-Analyses",
+   "firstAuthor": "Hof",
+   "authors": [
+    "Hof",
+    "Cuijpers",
+    "Stein"
+   ],
+   "year": 2009,
+   "yearAlt": 2014,
+   "journal": "CNS Spectrums",
+   "source": "crossref",
+   "verifiedAt": "2026-11-02"
   },
   "doi:10.1023/a:1009554825745": {
    "kind": "doi",
@@ -7529,6 +7598,31 @@
    "journal": "British Journal of Sports Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1136/bjsports-2022-106195": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effectiveness of physical activity interventions for improving depression, anxiety and distress: an overview of systematic reviews",
+   "firstAuthor": "Singh",
+   "authors": [
+    "Singh",
+    "Olds",
+    "Curtis",
+    "Dumuid",
+    "Virgara",
+    "Watson",
+    "Szeto",
+    "O'Connor",
+    "Ferguson",
+    "Eglitis",
+    "Miatke",
+    "Simpson",
+    "Maher"
+   ],
+   "year": 2023,
+   "journal": "British Journal of Sports Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-02"
   },
   "doi:10.1136/bmj-2023-075847": {
    "kind": "doi",
@@ -13764,6 +13858,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:19238128": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Self-help and Internet-guided interventions in depression and anxiety disorders: a systematic review of meta-analyses.",
+   "firstAuthor": "Van't Hof",
+   "authors": [
+    "Van't Hof",
+    "Cuijpers",
+    "Stein"
+   ],
+   "year": 2009,
+   "journal": "CNS Spectr",
+   "doi": "10.1017/s1092852900027279",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-02"
+  },
   "pmid:19246382": {
    "kind": "pmid",
    "valid": false,
@@ -15356,6 +15466,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:24487344": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Psychological treatment of generalized anxiety disorder: a meta-analysis.",
+   "firstAuthor": "Cuijpers",
+   "authors": [
+    "Cuijpers",
+    "Sijbrandij",
+    "Koole",
+    "Huibers",
+    "Berking",
+    "Andersson"
+   ],
+   "year": 2014,
+   "journal": "Clin Psychol Rev",
+   "doi": "10.1016/j.cpr.2014.01.002",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-02"
+  },
   "pmid:24636500": {
    "kind": "pmid",
    "valid": true,
@@ -15516,6 +15645,24 @@
    "doi": "10.1016/j.brs.2014.07.031",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:25273302": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Guided Internet-based vs. face-to-face cognitive behavior therapy for psychiatric and somatic disorders: a systematic review and meta-analysis.",
+   "firstAuthor": "Andersson",
+   "authors": [
+    "Andersson",
+    "Cuijpers",
+    "Carlbring",
+    "Riper",
+    "Hedman"
+   ],
+   "year": 2014,
+   "journal": "World Psychiatry",
+   "doi": "10.1002/wps.20151",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-02"
   },
   "pmid:25324790": {
    "kind": "pmid",
@@ -16640,6 +16787,25 @@
    "doi": "10.1016/j.jaad.2017.02.054",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:28456072": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Can smartphone mental health interventions reduce symptoms of anxiety? A meta-analysis of randomized controlled trials.",
+   "firstAuthor": "Firth",
+   "authors": [
+    "Firth",
+    "Torous",
+    "Nicholas",
+    "Carney",
+    "Rosenbaum",
+    "Sarris"
+   ],
+   "year": 2017,
+   "journal": "J Affect Disord",
+   "doi": "10.1016/j.jad.2017.04.046",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-02"
   },
   "pmid:28467922": {
    "kind": "pmid",
@@ -19963,6 +20129,32 @@
    "doi": "10.1016/j.xcrm.2022.100895",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:36796860": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effectiveness of physical activity interventions for improving depression, anxiety and distress: an overview of systematic reviews.",
+   "firstAuthor": "Singh",
+   "authors": [
+    "Singh",
+    "Olds",
+    "Curtis",
+    "Dumuid",
+    "Virgara",
+    "Watson",
+    "Szeto",
+    "O'Connor",
+    "Ferguson",
+    "Eglitis",
+    "Miatke",
+    "Simpson",
+    "Maher"
+   ],
+   "year": 2023,
+   "journal": "Br J Sports Med",
+   "doi": "10.1136/bjsports-2022-106195",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-02"
   },
   "pmid:36813265": {
    "kind": "pmid",

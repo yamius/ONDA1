@@ -35,6 +35,7 @@ import { localizedRouteVariants, metricRouteVariants, levelRouteVariants, partRo
 import { LOCALE_PUBLISH, type PublishCollection } from './locale-publish'
 import { TAIL_QUEUE_ENTRIES } from './article-release-queue'
 import { SCIENCE_INDEX, SCIENCE_KINDS, SCIENCE_LANGS } from '../src/generated/science-pages'
+import { psychRoutes } from '../src/lib/psych'
 const localizedRoutes = localizedRouteVariants()
 
 // /bio/:metric variants × 5 languages.
@@ -986,6 +987,8 @@ const nonLocalizedStaticPaths = [
     const pages = SCIENCE_INDEX.filter((p) => p.langs.includes(l))
     return [`${pre}/science`, ...SCIENCE_KINDS.filter((k) => pages.some((p) => p.kind === k)).map((k) => `${pre}/science/${k}`), ...pages.map((p) => `${pre}/science/${p.kind}/${p.slug}`)]
   }),
+  // /science/psychology — psychology pages from onda-psych (task 108, scripts/fetch-psych.ts). EN only, no hreflang.
+  ...psychRoutes(),
   // /measurements + /how-it-works — GEO/AI citability pages: exactly what
   // ONDA measures vs derives vs estimates, and the biofeedback method. EN-only.
   '/measurements',

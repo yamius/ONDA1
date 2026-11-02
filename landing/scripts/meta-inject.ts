@@ -26,6 +26,7 @@ import { MEASUREMENTS_I18N } from '../src/data/measurements-i18n'
 import { measurementsJsonLd } from '../src/pages/MeasurementsPage'
 import { aiAppsJsonLd, AI_APPS_TITLE, AI_APPS_DESC } from '../src/pages/AiAppsPage'
 import { scienceMeta, parseScienceRoute } from '../src/lib/science-meta'
+import { psychMeta } from '../src/lib/psych'
 import { SCIENCE_FULL } from '../src/generated/science-full'
 import { HOW_IT_WORKS_I18N } from '../src/data/how-it-works-i18n'
 import { PEOPLE_I18N } from '../src/data/people-i18n'
@@ -1685,6 +1686,8 @@ function getMetaForRouteBase(route: string): RouteMeta {
   // frontier. EN-only. Plain WebPage schema — deliberately NOT
   // ResearchProject (would imply a funded, active programme) and NOT
   // MedicalWebPage (would imply medical claims).
+  const pm = psychMeta(route)
+  if (pm) return { title: pm.title, description: pm.description, url, breadcrumbs: pm.breadcrumbs, ogType: pm.ogType, jsonLd: pm.jsonLd, ...(pm.noindex ? { noindex: 'follow' as const } : {}) }
   if (parseScienceRoute(route)) {
     const sm = scienceMeta(route, (l, k, s) => SCIENCE_FULL[l]?.find((p) => p.kind === k && p.slug === s))
     if (sm) return { title: sm.title, description: sm.description, url, breadcrumbs: sm.breadcrumbs, ogType: sm.ogType, jsonLd: sm.jsonLd, ...(sm.image ? { image: sm.image, imageAlt: sm.imageAlt } : {}), ...(sm.noindex ? { noindex: 'follow' as const } : {}), ...(sm.faq ? { faq: { mainEntity: sm.faq, url } } : {}) }
