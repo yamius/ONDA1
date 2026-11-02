@@ -16,7 +16,7 @@ const neurosityCrown: ToolReviewInput = {
     { criterionId: 'signal-quality', score: 8.5, note: 'Eight dry EEG channels at 256 Hz (CP3, C3, F5, PO3, PO4, F6, C4, CP4) — the most cortical coverage in the consumer category. Signal holds well in seated focus sessions.' },
     { criterionId: 'training-content', score: 6.5, note: 'Less guided content than Muse; the product bets on adaptive focus music plus user-built apps. Not a meditation library.' },
     { criterionId: 'insights', score: 8.0, note: 'Live focus and calm scores, plus EEG band breakdowns. Strong real-time visualisation; less narrative session summarisation than Muse.' },
-    { criterionId: 'comfort', score: 7.5, note: 'A rigid 228 g crown — comfortable for focus sessions, not designed for overnight wear or moving sessions; about three hours per charge.' },
+    { criterionId: 'comfort', score: 7.0, note: 'A rigid 228 g crown — comfortable for focus sessions, not designed for overnight wear or moving sessions; about three hours per charge.' },
     { criterionId: 'app-ux', score: 7.5, note: 'Polished companion apps, but the UX assumes a more technical user than Muse.' },
     { criterionId: 'open-data', score: 9.5, note: 'The most open SDK in this category — JavaScript and Python SDKs plus BrainFlow, LSL, OSC and MCP; raw EEG at 256 Hz; no subscription required for data. Developer-first by design.' },
     { criterionId: 'value', score: 6.5, note: '$1,499 one-time, no mandatory subscription. Premium pricing — about three times the cost of Muse S Athena.' },

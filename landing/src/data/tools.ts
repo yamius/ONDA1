@@ -263,6 +263,14 @@ export const TOOLS: ToolEntry[] = [
     badge: 'RR',
   },
   {
+    slug: 'vibration-breathing',
+    name: 'Vibration Breathing',
+    blurb: 'Relax or Wake up: rest a finger on your phone and breathe with the vibration — short quickening taps in, long slow pulses out. Light and sound where vibration isn’t supported.',
+    live: true,
+    category: 'NERVOUS SYSTEM',
+    badge: 'VIB',
+  },
+  {
     slug: 'breath-heart-biofeedback',
     name: 'Breath–Heart Biofeedback',
     blurb: 'Breathe with the pacer while your phone camera reads your pulse — watch your heart rate rise on the inhale and fall on the exhale. ONDA in miniature.',

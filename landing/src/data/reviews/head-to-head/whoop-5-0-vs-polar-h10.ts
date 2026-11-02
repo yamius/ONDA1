@@ -17,7 +17,7 @@ const whoopVsPolarH10: HeadToHeadInput = {
   bestForB:
     'Choose Polar H10 if you want resting HRV readings close to lab ECG for a structured morning protocol or to validate another device — a one-time-purchase ECG strap, not a lifestyle wearable.',
   axes: [
-    { name: 'HRV accuracy', winner: 'b', note: 'Polar H10: electrical ECG; RR intervals agree closely with an ECG Holter at rest and during exercise (Gilgen-Ammann 2019). Whoop: optical PPG; heart rate agrees well with ECG, but RMSSD error approached the smallest worthwhile change in validation (Bellenger 2021, on Whoop 2.0).' },
+    { name: 'HRV accuracy', criterionId: 'hrv-accuracy', note: 'Polar H10: electrical ECG; RR intervals agree closely with an ECG Holter at rest and during exercise (Gilgen-Ammann 2019). Whoop: optical PPG; heart rate agrees well with ECG, but RMSSD error approached the smallest worthwhile change in validation (Bellenger 2021, on Whoop 2.0).' },
     { name: 'Continuous overnight tracking', winner: 'a', note: 'Whoop tracks HRV continuously overnight; H10 is a strap you put on for a measurement or workout, not a 24/7 wearable.' },
     { name: 'Form factor', winner: 'a', note: 'Whoop: lightweight screenless band, wear-and-forget. Polar H10: chest strap requiring electrode-skin contact for a clean signal.' },
     { name: 'Recovery and coaching', winner: 'a', note: 'Whoop’s Recovery and Strain coaching is the entire product. Polar H10 outputs raw RR intervals — you bring the analysis app.' },

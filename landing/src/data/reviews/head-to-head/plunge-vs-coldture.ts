@@ -17,9 +17,9 @@ const plungeVsColdture: HeadToHeadInput = {
   bestForB:
     'Choose Coldture if you are in Canada, EU or a cold-climate US region — outdoor winter operation is where Coldture is engineered to outperform.',
   axes: [
-    { name: 'Chiller capacity', winner: 'a', note: 'Plunge: 1 HP, slightly more aggressive temperature floor (39°F). Coldture: capable but marginally less powerful in peak summer heat.' },
+    { name: 'Chiller capacity', criterionId: 'chiller-capacity', note: 'Plunge: 1 HP, slightly more aggressive temperature floor (39°F). Coldture: capable but marginally less powerful in peak summer heat.' },
     { name: 'Cold-climate winter performance', winner: 'b', note: 'Coldture is engineered around outdoor winter operation; Plunge is outdoor-rated but performs best in temperate climates.' },
-    { name: 'Build', winner: 'tie', note: 'Both premium insulated; comparable multi-year reliability. Plunge has 5+ years US track record; Coldture has equivalent Canadian / EU pedigree.' },
+    { name: 'Build', criterionId: 'build', note: 'Both premium insulated; comparable multi-year reliability. Plunge has 5+ years US track record; Coldture has equivalent Canadian / EU pedigree.' },
     { name: 'Warranty', winner: 'tie', note: 'Both: 3-year warranties on chiller and tub.' },
     { name: 'Distribution and support', winner: 'a', note: 'Plunge has stronger US distribution and content. Coldture has stronger Canada / EU distribution.' },
     { name: 'Price', winner: 'b', note: 'Coldture: ~$4,500. Plunge: $5,990. Coldture is meaningfully cheaper for comparable premium-tier hardware.' },

@@ -18,7 +18,7 @@ const iqairVsMolekule: HeadToHeadInput = {
     'Choose Molekule Air Pro for PECO photocatalytic VOC destruction + premium smart features and app integration.',
   axes: [
     { name: 'Filtration depth', winner: 'a', note: 'IQAir: HyperHEPA H14 (99.5% at 0.003 microns). Molekule: True HEPA H13 + PECO (99.97% at 0.3 microns + molecular VOC destruction). Different filtration theses.' },
-    { name: 'Smart features', winner: 'b', note: 'Molekule: full app, PM2.5 / VOC sensors, HomeKit / Google Home. IQAir: no app, no sensors, manual control only.' },
+    { name: 'Smart features', criterionId: 'smart-features', note: 'Molekule: full app, PM2.5 / VOC sensors, HomeKit / Google Home. IQAir: no app, no sensors, manual control only.' },
     { name: 'Build pedigree', winner: 'a', note: 'IQAir: multi-decade Swiss pedigree. Molekule: newer consumer brand with FTC settlement context.' },
     { name: 'Coverage', winner: 'a', note: 'IQAir: 1125 sq ft. Molekule: 1000 sq ft. IQAir marginally larger.' },
     { name: 'Filter ownership cost', winner: 'a', note: 'IQAir: 2-4 year filter cartridges. Molekule: 6-month PECO + HEPA replacements. IQAir significantly cheaper long-term.' },

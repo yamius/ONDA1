@@ -6,20 +6,20 @@ const plungeVsEdge: HeadToHeadInput = {
   productBSlug: 'edge-tub',
   title: 'The Plunge vs Edge Tub (2026)',
   description:
-    'The Plunge vs Edge Tub — side-by-side ONDA comparison of the two leading chiller-built cold-plunge tubs. Premium category leader vs price-disciplined challenger.',
+    'The Plunge vs Edge Tub — ONDA side-by-side comparison of two popular chiller-built cold-plunge tubs: premium build vs price-disciplined challenger.',
   intro:
-    'The Plunge and Edge Tub are the two chiller-built cold-plunge tubs most buyers compare. Both ship integrated chillers, ozone sanitation and outdoor-rated insulation; the decision is between The Plunge’s category-defining premium build and Edge Tub’s comparable hardware at roughly half the price.',
+    'The Plunge and Edge Tub are the two chiller-built cold-plunge tubs most buyers compare. Both ship integrated chillers, ozone sanitation and outdoor-rated insulation; the decision is between The Plunge’s premium build and Edge Tub’s comparable hardware at roughly half the price.',
   verdict:
     'The Plunge wins on multi-year reliability and chiller capability; Edge Tub wins decisively on value. For most buyers, Edge Tub is the smarter pick.',
   bestForA:
-    'Choose The Plunge if you want the category-defining premium build, longest reliability track record and maximum chiller capacity — and the premium pricing is acceptable.',
+    'Choose The Plunge if you want the premium build, longest reliability track record and maximum chiller capacity — and the premium pricing is acceptable.',
   bestForB:
     'Choose Edge Tub if you want chiller-built capability at roughly half The Plunge’s price, and you can accept a thinner multi-year reliability track record on a newer brand.',
   axes: [
-    { name: 'Chiller capacity', winner: 'a', note: 'Plunge: 1 HP, recovers fast even in summer heat. Edge: capable but lower-power chiller, slower recovery in peak heat.' },
+    { name: 'Chiller capacity', criterionId: 'chiller-capacity', note: 'Plunge: 1 HP, recovers fast even in summer heat. Edge: capable but lower-power chiller, slower recovery in peak heat.' },
     { name: 'Build longevity', winner: 'a', note: 'Plunge has 5+ years of consumer reliability data. Edge is newer; multi-year reliability still being established.' },
-    { name: 'Water management', winner: 'tie', note: 'Both ship ozone sanitation with comparable water-change frequency (2–4 weeks).' },
-    { name: 'Form factor', winner: 'tie', note: 'Comparable footprint and install requirements; both indoor/outdoor rated.' },
+    { name: 'Water management', criterionId: 'water-management', note: "Practically equal: both use ozone sanitation plus a filter. Stated water-change interval: The Plunge every 2–4 weeks, Edge Tub every 3–4 weeks under typical use." },
+    { name: 'Form factor', criterionId: 'form-factor', note: 'Comparable footprint and install requirements; both indoor/outdoor rated.' },
     { name: 'Warranty', winner: 'a', note: 'Plunge: 3-year. Edge: 2-year. Plunge wins on coverage period.' },
     { name: 'Brand and protocol content', winner: 'a', note: 'Plunge has founder presence and richer content library. Edge is more product-focused.' },
     { name: 'Price', winner: 'b', note: 'Edge: $2,495. Plunge: $5,990. Edge is roughly 42% of Plunge — the most meaningful gap in the comparison.' },
@@ -44,11 +44,11 @@ const plungeVsEdge: HeadToHeadInput = {
   ],
   content: `## The short version
 
-Plunge is the premium category leader; Edge is the price-disciplined challenger with comparable hardware. The decision rests on whether the brand premium is worth $3,500 to you.
+Plunge is the premium option; Edge is the price-disciplined challenger with comparable hardware. The decision rests on whether the brand premium is worth $3,500 to you.
 
 ## When is The Plunge the right pick?
 
-If you want the category-defining build with longest multi-year reliability data, marginal chiller-power edge, 3-year warranty and the founder content ecosystem — The Plunge is the right shape.
+If you want the premium build with the longest multi-year reliability data, marginal chiller-power edge, 3-year warranty and the founder content ecosystem — The Plunge is the right shape.
 
 ## When is Edge Tub the right pick?
 

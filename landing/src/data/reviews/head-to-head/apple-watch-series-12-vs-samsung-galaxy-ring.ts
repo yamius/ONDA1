@@ -21,7 +21,7 @@ const series12VsGalaxyRing: HeadToHeadInput = {
     { name: 'Battery / overnight wear', winner: 'b', note: 'The Galaxy Ring runs multiple days per charge and is easy to sleep in; the Series 12’s ~24-hour battery means a daily charge that competes with overnight measurement.' },
     { name: 'HRV sampling & metrics', winner: 'a', note: 'The Series 12 samples HRV about every 5 minutes and reports Recovery HRV plus Overall HRV against a personal baseline; the Galaxy Ring gives competent overnight optical HRV.' },
     { name: 'Sensors & health features', winner: 'a', note: 'The Series 12 adds a single-lead ECG and optical hypertension notifications the ring does not have.' },
-    { name: 'Data access', winner: 'a', note: 'HealthKit is comparatively open and now writes native RMSSD; the Galaxy Ring has no open API and limited export, so data largely stays in Samsung Health.' },
+    { name: 'Data access', criterionId: 'data-access', note: 'HealthKit is comparatively open and now writes native RMSSD; the Galaxy Ring has no open API and limited export, so data largely stays in Samsung Health.' },
     { name: 'Subscription / cost', winner: 'tie', note: 'Both are $399 one-time with no subscription (Series 12 from $399 for aluminium; titanium and ceramic cost more).' },
     { name: 'Comfort / discreetness', winner: 'b', note: 'A ring disappears on the finger for around-the-clock wear; the watch is a more conventional presence and less comfortable to sleep in.' },
   ],

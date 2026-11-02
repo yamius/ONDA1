@@ -18,6 +18,7 @@ import { mkdirSync, readdirSync, readFileSync, writeFileSync } from 'fs'
 import { join } from 'path'
 import { TRANSLATION_SCHEMA, type FieldSpec, type TranslationCollection } from '../src/data/i18n-schema'
 import { enSource } from './lib/i18n-source'
+import { scoreTokens } from '../src/data/reviews/score-text'
 import { CATEGORY_URL_SLUGS } from '../src/data/reviews/criteria'
 import { LOCALIZED_ROUNDUP_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET } from './prerender-routes'
 
@@ -166,6 +167,9 @@ for (const lang of LANGS) {
           continue
         }
         checkField(spec, value, enEntry[field], (m) => errors.push({ lang, col, slug, msg: `${field} ${m}` }), texts)
+        // {{score:…}} placeholders must survive translation unchanged (task 089)
+        const enTok = scoreTokens(enEntry[field]).join(' '), trTok = scoreTokens(value).join(' ')
+        if (enTok !== trTok) errors.push({ lang, col, slug, msg: `${field} score placeholders differ from EN — EN: [${enTok}] translation: [${trTok}]` })
       }
       if (stale.length) warnings.push({ lang, col, slug, msg: `translation is behind EN: ${stale.reduce((a, b) => a + b, 0)} link(s) added in EN are missing` })
       if (PUBLISHED[col].has(`${lang}:${slug}`)) {

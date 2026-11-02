@@ -18,7 +18,7 @@ const hoogaVsPlatinum: HeadToHeadInput = {
     'Choose the PlatinumLED BIOMAX 600 if you want the richest wavelength spectrum, clean EMF and a near-premium build, and the higher price is worth it.',
   axes: [
     { name: 'Price', winner: 'a', note: 'Hooga HG500: $359 (door mount + hanging kit included; mobile stand extra). PlatinumLED BIOMAX 600: $1,049 (mount hardware extra). Hooga is roughly a third of the cost.' },
-    { name: 'Wavelengths', winner: 'b', note: 'PlatinumLED offers the richest spectrum — seven wavelengths. Hooga uses the two core bands (660/850), enough for most, but narrower.' },
+    { name: 'Wavelengths', criterionId: 'wavelengths', note: 'PlatinumLED offers the richest spectrum — seven wavelengths. Hooga uses the two core bands (660/850), enough for most, but narrower.' },
     { name: 'Build & EMF', winner: 'b', note: 'PlatinumLED has a near-premium build and clean, disciplined EMF. Hooga is well-made for the price but a tier below.' },
     { name: 'Output per dollar', winner: 'a', note: 'On dollars-per-mW/cm², Hooga wins — most of the usable irradiance for far less.' },
     { name: 'Warranty & bundle', winner: 'a', note: 'Hooga includes a door mount and hanging kit plus a 3-year warranty at the price (its mobile stand is extra); PlatinumLED also carries a 3-year warranty but charges extra for mounting hardware.' },

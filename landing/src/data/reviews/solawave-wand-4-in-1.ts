@@ -14,7 +14,7 @@ const solawave: ToolReviewInput = {
     'Solawave Wand 4-in-1 is the budget consumer entry — handheld wand stacking red LED with microcurrent, gentle warmth and vibration massage at $169. Low LED count and modest irradiance by design; the multi-modality stack and accessible price are the value proposition. Best for users PEMF-curious about red light without committing $300+ to a mask.',
   scores: [
     { criterionId: 'irradiance', score: 5.5, note: 'Modest irradiance — designed for daily light-touch use rather than clinical-dose sessions.' },
-    { criterionId: 'wavelength-coverage', score: 6.0, note: 'Red 660 nm only — single wavelength. No near-infrared depth or amber / blue variants.' },
+    { criterionId: 'wavelength-coverage', score: 8.5, note: "Red 630 nm (14 LEDs), per Solawave (solawave.co, checked 2026-10-13). Stated purpose: wrinkles — the FDA clearance (510(k) K232863) covers treatment of facial wrinkles with red light. Red covers that purpose; no acne indication is cleared." },
     { criterionId: 'led-count-coverage', score: 4.5, note: 'Small wand head — requires active positioning across face zones, narrow per-zone coverage.' },
     { criterionId: 'clinical-evidence', score: 5.0, note: 'FDA registered (a listing, not clearance or approval). Light clinical evidence base; brand-funded consumer testimonials over peer-reviewed studies.' },
     { criterionId: 'comfort-fit', score: 7.5, note: 'Comfortable handheld build with microcurrent + warmth + vibration. Convenient for spot use.' },

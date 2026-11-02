@@ -16,6 +16,7 @@ import { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
 import { appStoreUrl } from '../config/appStore'
+import AndroidWaitlistBadge, { waitlistSource } from './AndroidWaitlistBadge'
 
 export type CtaVariant = 'general' | 'hrv' | 'meditation' | 'glossary' | 'tool' | 'science'
 type L = 'en' | 'es' | 'ru' | 'uk' | 'zh' | 'de' | 'fr' | 'it' | 'nl' | 'ja' | 'pl' | 'pt'
@@ -118,32 +119,22 @@ function asLang(lang?: string): L {
   return (['es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt'] as const).includes(lang as 'es') ? (lang as L) : 'en'
 }
 
-function AppleLogo({ size = 22 }: { size?: number }) {
-  return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
-    </svg>
-  )
-}
-
-/** Black "Download on the App Store" badge (Apple's style: black, white logo + two lines). */
-export function AppStoreBadge({ href, lang }: { href: string; lang?: string }) {
+/** Official "Download on the App Store" badge (public/badges/app-store.svg) — the ONE App Store
+ *  button design site-wide. size: 'md' 48px tall (default), 'sm' 40px. */
+export function AppStoreBadge({ href, lang, onClick, size = 'md' }: { href: string; lang?: string; onClick?: () => void; size?: 'md' | 'sm' }) {
   const l = asLang(lang)
   return (
     <a
       href={href}
       target="_blank"
       rel="noopener"
+      onClick={onClick}
       data-button="apple"
       data-platform="ios"
       aria-label={`${BADGE_TOP[l]} App Store`}
-      className="inline-flex h-12 shrink-0 items-center gap-2 rounded-xl border border-white/40 bg-black px-4 text-white transition-opacity hover:opacity-85"
+      className="inline-flex shrink-0 transition-opacity hover:opacity-85"
     >
-      <AppleLogo />
-      <span className="flex flex-col leading-none">
-        <span className="text-[10px] font-medium">{BADGE_TOP[l]}</span>
-        <span className="text-lg font-semibold tracking-tight">App Store</span>
-      </span>
+      <img src="/badges/app-store.svg" alt="Download on the App Store" width={162} height={48} className={size === 'sm' ? 'h-10 w-auto' : 'h-12 w-auto'} />
     </a>
   )
 }
@@ -177,9 +168,11 @@ interface Props {
   /** 'line' = one short sentence + badge (glossary, soft in-article line). */
   layout?: 'block' | 'line'
   className?: string
+  /** Android-waitlist source tag; defaults to the ct. */
+  waitlistSource?: string
 }
 
-export default function AppStoreCTA({ ct, variant = 'general', lang, layout = 'block', className = '' }: Props) {
+export default function AppStoreCTA({ ct, variant = 'general', lang, layout = 'block', className = '', waitlistSource: wlSource }: Props) {
   const href = appStoreUrl(ct)
   // Most callers don't pass `lang` — take it from the URL so a localized page
   // never shows the English CTA.
@@ -191,6 +184,7 @@ export default function AppStoreCTA({ ct, variant = 'general', lang, layout = 'b
       <aside className={`not-prose my-6 flex flex-wrap items-center gap-3 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 ${className}`} data-cta="app-store">
         <p className="m-0 flex-1 text-sm text-white/70">{text}</p>
         <AppStoreBadge href={href} lang={l} />
+        <AndroidWaitlistBadge source={waitlistSource(wlSource ?? ct)} />
       </aside>
     )
   }
@@ -199,8 +193,9 @@ export default function AppStoreCTA({ ct, variant = 'general', lang, layout = 'b
       <div className="flex-1">
         <p className="m-0 text-base text-white/85">{text}</p>
       </div>
-      <div className="flex items-center gap-4">
+      <div className="flex flex-wrap items-center gap-4">
         <AppStoreBadge href={href} lang={l} />
+        <AndroidWaitlistBadge source={waitlistSource(wlSource ?? ct)} />
         <QrCode url={href} lang={l} />
       </div>
     </aside>

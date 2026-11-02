@@ -1,5 +1,5 @@
 ---
-sourceHash: "fd60184b64ca"
+sourceHash: "030dc9f0c5b6"
 title: "Hartslagvariabiliteit: wat het is, wat het weerspiegelt en wat het niet is"
 metaTitle: "Hartslagvariabiliteit: definitie en bewijs"
 metaDescription: "Hartslagvariabiliteit is de natuurlijke variatie van slag tot slag in het hartritme. Wat haar vormt, wat ze weerspiegelt en wat ze je niet vertelt."
@@ -98,11 +98,11 @@ Het venster hoort bij de betekenis. Een korte labmeting, een ecg over de hele da
 
 ## Wat laat het bewijs zien?
 
-**Vastgesteld.** De definitie en de fysiologische oorsprong van het signaal komen uit de meetstandaarden van het vakgebied [S1] en uit methodologische reviews [S2]: HRV ontstaat uit de wisselwerking van de twee autonome takken met regelmechanismen, en RSA is de belangrijkste bron in korte rustvensters [S2]. De eigenschappen van de maten staan even vast — RMSSD en SDNN vatten verschillende aspecten van een meting samen, en waarden hangen af van de meetduur [S1, S2]. Gemiddeld dalen de waarden bij gezonde volwassenen met de leeftijd, met grote individuele verschillen [S5]. In de klinische cardiologie is HRV uit ecg's over de hele dag bij patiëntengroepen een vastgestelde maat voor risicostratificatie — een meetregime dat een consumentenhorloge niet nabootst [S2].
+**Vastgesteld.** De definitie en de fysiologische oorsprong van het signaal komen uit de meetstandaarden van het vakgebied [S1] en uit methodologische reviews [S2]: HRV ontstaat uit de wisselwerking van de twee autonome takken met regelmechanismen, en RSA is de belangrijkste bron in korte rustvensters [S2]. De eigenschappen van de maten staan even vast — RMSSD en SDNN vatten verschillende aspecten van een meting samen, en waarden hangen af van de meetduur [S1, S2]. In de klinische cardiologie is HRV uit ecg's over de hele dag bij patiëntengroepen een vastgestelde maat voor risicostratificatie — een meetregime dat een consumentenhorloge niet nabootst [S2].
 
 **Methodologische richtlijnen.** Actuele richtlijnen noemen het ingangssignaal, de meetduur, de setting, de ademhaling en de analysemethode als factoren die zorgvuldigheid en betrouwbaarheid bepalen [S4], en vragen om bevindingen — ook die van wearables — binnen deze beperkingen te interpreteren en in context te plaatsen [S4]. Dat is consensus van experts over meten en interpreteren, geen direct experimenteel bewijs over HRV zelf.
 
-**Afhankelijk van de context.** Schattingen van consumentenapparaten uit het polssignaal vormen een andere meetketen dan de ecg-referentie [S3]; het bewijs over de overeenstemming, de voorwaarden en de grenzen ervan staat op [de meetpagina](/science/measurements/heart-rate-variability) en wordt hier niet herhaald.
+**Afhankelijk van de context.** Schattingen van consumentenapparaten uit het polssignaal vormen een andere meetketen dan de ecg-referentie [S3]; het bewijs over de overeenstemming, de voorwaarden en de grenzen ervan staat op [de meetpagina](/science/measurements/heart-rate-variability) en wordt hier niet herhaald. Gemiddeld dalen de waarden bij gezonde volwassenen met de leeftijd, met grote individuele verschillen [S5].
 
 **Onbekend.** Wat een bepaalde absolute waarde betekent voor een bepaalde gezonde persoon; hoe nachtelijke consumentenwaarden zich verhouden tot het klinische bewijs, dat is opgebouwd met continue ecg bij patiënten; en hoeveel van een verschuiving van dag tot dag fysiologie is en hoeveel meetruis. Dit zijn open vragen — redenen om bewust met metingen om te gaan, niet om de gegevens weg te gooien.
 

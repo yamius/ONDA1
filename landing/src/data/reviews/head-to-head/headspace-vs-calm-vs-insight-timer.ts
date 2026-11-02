@@ -26,7 +26,7 @@ const threeMeditation: HeadToHeadInput = {
     { name: 'Teaching quality consistency', winner: 'a', note: 'Headspace: small team, consistent voice. Calm: curated but multiple narrators. Insight Timer: open-teacher model, variable quality.' },
     { name: 'Sleep content', winner: 'b', note: 'Calm: Sleep Stories are category-leading, celebrity-narrated. Headspace and Insight Timer have sleep content but it is secondary.' },
     { name: 'Community features', winner: 'c', note: 'Insight Timer: groups, live events, courses, real community layer. Headspace and Calm: content-only.' },
-    { name: 'Personalisation', winner: 'a', note: 'Headspace: structured daily-recommendation engine. Calm: similar. Insight Timer: search-driven, less algorithmic.' },
+    { name: 'Personalisation', criterionId: 'personalization', note: 'Headspace: structured daily-recommendation engine. Calm: similar. Insight Timer: search-driven, less algorithmic.' },
     { name: 'Top-tier independent teachers', winner: 'c', note: 'Insight Timer hosts Tara Brach, Jack Kornfield, Sharon Salzberg — premier teachers accessible at no cost. Calm and Headspace have in-house teachers.' },
     { name: 'Price', winner: 'c', note: 'Insight Timer: genuinely free + optional Member Plus at US$60/yr, 7-day free trial. Headspace: ~$70/yr. Calm: $79.99/yr. Insight Timer is cheapest at every tier.' },
   ],

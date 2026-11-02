@@ -17,7 +17,7 @@ const platinumledBiomax600: ToolReviewInput = {
     { criterionId: 'wavelengths', score: 9.0, note: 'Seven-wavelength coverage (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm, per PlatinumLED’s current product page) — broader than even MitoPRO. The 480 nm blue is unusual and a small share of total output.' },
     { criterionId: 'build-emf-flicker', score: 9.0, note: 'Third-party EMF testing at <0.3 mG at 6", flicker rate disclosed and low. PlatinumLED published its lab testing publicly — rare in the category.' },
     { criterionId: 'coverage', score: 7.5, note: 'Mid-size panel — half-body for upper torso. Smaller than Joovv Solo or MitoPRO 1500; pairs well with targeted work but requires stacking for full body.' },
-    { criterionId: 'evidence', score: 7.5, note: 'PlatinumLED references real photobiomodulation literature, and the marketing is restrained relative to category norms. “FDA Class II Registered” on its pages means registration/listing, not clearance.' },
+    { criterionId: 'evidence', score: 7.0, note: 'PlatinumLED references real photobiomodulation literature, and the marketing is restrained relative to category norms. “FDA Class II Registered” on its pages means registration/listing, not clearance.' },
     { criterionId: 'value', score: 7.5, note: '$1,049 (Oct 2026) — meaningfully cheaper than Joovv Solo 3.0 and MitoPRO 1500 for comparable build and broader spectrum. Strong value in the premium tier.' },
   ],
   pros: [
@@ -96,13 +96,13 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "Is PlatinumLED BioMax 600 worth it?", a: "For most buyers wanting one mid-size panel, yes. At $1,049 it is cheaper than the Joovv Solo 3.0 ($1,699) and MitoPRO 1500X ($1,299), with seven wavelengths, published EMF testing and a 3-year warranty. It is not the cheapest option (Hooga HG500 is $349) and full-body coverage needs two panels. Evidence is strongest for skin benefits; other uses are less proven." },
     { q: "BioMax 600 vs Joovv Solo 3.0: which is better?", a: "The BIOMAX 600 ($1,049) offers a broader seven-wavelength spectrum and publicly posted EMF tests for $650 less. The Joovv Solo 3.0 ($1,699) has a modular system that scales to full-body stacks. Choose BIOMAX for value and spectrum, Joovv if you plan to build a larger modular setup." },
     { q: "How far should you stand from a red light panel?", a: "Follow the manufacturer. For the BIOMAX 600, PlatinumLED recommends about 8–14 inches for deep tissue and 16–24 inches for facial skin, for 10–20 minutes per area. Closer means higher intensity and shorter sessions; more dose is not automatically better. Wear eye protection." },
-    { q: "How much does the PlatinumLED BIOMAX 600 cost?", a: "The PlatinumLED BIOMAX 600 costs $1,049 one-time on the official US store (October 2026), with stand and mount hardware extra. That is meaningfully cheaper than the Joovv Solo 3.0 and MitoPRO 1500 for comparable build and a broader spectrum. ONDA scores it 8.2/10 overall." },
+    { q: "How much does the PlatinumLED BIOMAX 600 cost?", a: "The PlatinumLED BIOMAX 600 costs $1,049 one-time on the official US store (October 2026), with stand and mount hardware extra. That is meaningfully cheaper than the Joovv Solo 3.0 and MitoPRO 1500 for comparable build and a broader spectrum. ONDA scores it {{score:platinumled-biomax-600}}/10 overall." },
     { q: "What wavelengths does the PlatinumLED BIOMAX 600 emit?", a: "The PlatinumLED BIOMAX 600 emits seven wavelengths: 480, 630, 660, 810, 830, 850 and 1060 nm, the broadest spectrum in ONDA's red-light list. The 480 nm blue is unusual and a small share of total output, and the less-common bands rely on smaller LED counts." },
     { q: "Who is the PlatinumLED BIOMAX 600 best for?", a: "The PlatinumLED BIOMAX 600 is best for buyers wanting broad-spectrum coverage and verified EMF discipline at sub-Joovv pricing. PlatinumLED publicly publishes its third-party EMF testing (<0.3 mG at 6\"), rare in the category. The mid-size panel needs stacking for full-body coverage." },
   ],
 
   datePublished: '2026-05-23',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-10 No independent trial of this device itself — 7.0 is the ceiling without independent validation (ONDA rule).',
 }
 
 export default platinumledBiomax600

@@ -1,5 +1,5 @@
 ---
-sourceHash: "2b4d79850bed"
+sourceHash: "642b27d8d4fd"
 title: "SDNN: was dieses HRV-Maß misst und was nicht"
 metaTitle: "SDNN: Definition, Bedeutung und Apple Health"
 metaDescription: "Die SDNN ist das HRV-Maß, das Apple Health speichert. Was sie misst, wie sie sich von der RMSSD unterscheidet und warum sich beide Zahlen nicht vergleichen lassen."
@@ -101,9 +101,9 @@ Zur praktischen Einordnung: Der [HRV-Rechner](/tools/hrv) hat einen SDNN-Modus f
 
 ## Was zeigt die Evidenz?
 
-Gesichert. Definition, Berechnung und die Rolle der SDNN als Maß der Gesamtvariabilität stammen aus den Messstandards des Fachgebiets [S1] und methodischen Übersichtsarbeiten [S2, S3]. Ihre Abhängigkeit von der Messdauer ist eine zentrale methodische Eigenschaft, keine Nebensache [S2]. In der klinischen Kardiologie ist die Ganztags-SDNN aus kontinuierlichem EKG in Patientengruppen ein etabliertes Maß zur Risikostratifizierung [S2]. Im Durchschnitt sinken die Werte bei gesunden Erwachsenen mit dem Alter, bei großen individuellen Unterschieden [S4].
+Gesichert. Definition, Berechnung und die Rolle der SDNN als Maß der Gesamtvariabilität stammen aus den Messstandards des Fachgebiets [S1] und methodischen Übersichtsarbeiten [S2, S3]. Ihre Abhängigkeit von der Messdauer ist eine zentrale methodische Eigenschaft, keine Nebensache [S2]. In der klinischen Kardiologie ist die Ganztags-SDNN aus kontinuierlichem EKG in Patientengruppen ein etabliertes Maß zur Risikostratifizierung [S2].
 
-Kontextabhängig. Schätzungen von Wearables: PPG-basierte Werte können der EKG-basierten HRV unter kontrollierten Ruhebedingungen eng folgen, doch bei Bewegung und schlechtem Signal lässt die Übereinstimmung nach, und gepoolte Schätzungen lassen sich nicht auf Schlaf oder Alltagsbedingungen verallgemeinern [S5, S6]. Apples Ökosystem speichert die HRV als SDNN – eine Gerätetatsache mit eigenem Geltungsbereich, keine Gesundheitsaussage [S8, S9, S10].
+Kontextabhängig. Schätzungen von Wearables: PPG-basierte Werte können der EKG-basierten HRV unter kontrollierten Ruhebedingungen eng folgen, doch bei Bewegung und schlechtem Signal lässt die Übereinstimmung nach, und gepoolte Schätzungen lassen sich nicht auf Schlaf oder Alltagsbedingungen verallgemeinern [S5, S6]. Apples Ökosystem speichert die HRV als SDNN – eine Gerätetatsache mit eigenem Geltungsbereich, keine Gesundheitsaussage [S8, S9, S10]. Im Durchschnitt sinken die Werte bei gesunden Erwachsenen mit dem Alter, bei großen individuellen Unterschieden [S4].
 
 Leitlinie / Expertenkonsens. Aktuelle Leitlinien empfehlen gleichbleibende Messbedingungen und eine vorsichtige, eingeordnete Interpretation einzelner Werte, auch von Wearables [S7]. Das ist Expertenkonsens darüber, wie man misst und interpretiert – keine direkten experimentellen Daten über die SDNN selbst.
 

@@ -19,7 +19,7 @@ const cowayVsBlueair: HeadToHeadInput = {
   axes: [
     { name: 'Coverage', winner: 'a', note: 'Coway: 1560 sq ft AHAM-certified. Blueair: 540 sq ft. Coway 3x larger coverage.' },
     { name: 'Filtration tech', winner: 'b', note: 'Coway: True HEPA H13 + carbon (standard). Blueair: HEPASilent ion-charge + HEPA (lower-noise capture). Different mechanisms.' },
-    { name: 'Smart features', winner: 'b', note: 'Both have sensors + auto mode. Blueair: app + HomeKit / Alexa + GermShield always-on. Coway: app optional + auto mode. Blueair more polished.' },
+    { name: 'Smart features', criterionId: 'smart-features', note: 'Both have sensors + auto mode. Blueair: app + HomeKit / Alexa + GermShield always-on. Coway: app optional + auto mode. Blueair more polished.' },
     { name: 'Noise', winner: 'tie', note: 'Both ~23 dB on low. Comparable quiet operation.' },
     { name: 'Filter cost', winner: 'a', note: 'Coway: 12-month filter cycle ~$100/year. Blueair: 6-month cycle ~$120-180/year. Coway cheaper long-term.' },
     { name: 'Price', winner: 'a', note: 'Coway: $479. Blueair: $820. Coway $341 cheaper.' },

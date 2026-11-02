@@ -15,7 +15,7 @@ const plunge: ToolReviewInput = {
   scores: [
     { criterionId: 'chiller-capacity', score: 9.0, note: '1 HP chiller, holds 39°F reliably even in summer ambient. Strong recovery time post-plunge. Among the most capable chillers in the consumer category.' },
     { criterionId: 'build', score: 8.5, note: 'Insulated acrylic tub, marine-grade hardware, 3-year warranty. Outdoor-rated. Multi-year reliability track record in the user base.' },
-    { criterionId: 'water-management', score: 8.5, note: 'Ozone sanitation + filter; water changes every 2–4 weeks under typical use. The most-polished water-management system in the consumer category.' },
+    { criterionId: 'water-management', score: 8.0, note: 'Ozone sanitation + filter; water changes every 2–4 weeks under typical use.' },
     { criterionId: 'form-factor', score: 8.0, note: 'Indoor or outdoor install, 67×31×27 inches. Requires 110V outlet and level surface. Drainage built in.' },
     { criterionId: 'evidence', score: 7.0, note: 'Manufacturer protocol guidance is honest about cold-exposure research; does not overclaim. Founder Michael Garrett is a credible voice in the cold-exposure community.' },
     { criterionId: 'value', score: 6.5, note: '$5,990 + shipping. Premium pricing, but inclusive of chiller, ozone, warranty. Cheaper than DIY chest-freezer + chiller setups once labour is counted.' },

@@ -26,7 +26,7 @@ const sleepCycleVsSleepAsAndroidVsAutoSleep: HeadToHeadInput = {
     { name: 'Smart alarm', winner: 'a', note: 'Sleep Cycle’s smart alarm is the category-defining implementation. Sleep as Android matches it. AutoSleep does not include a smart alarm.' },
     { name: 'Sleep analytics depth', winner: 'c', note: 'AutoSleep: Apple Watch sensors give richer sleep-stage estimates than phone-only tracking. Sleep Cycle and Sleep as Android are competent but phone-microphone limited.' },
     { name: 'HealthKit / Google Fit integration', winner: 'c', note: 'AutoSleep: deepest HealthKit integration of the three. Sleep Cycle: HealthKit and Google Fit. Sleep as Android: Google Fit and Health Connect.' },
-    { name: 'Wind-down content', winner: 'a', note: 'Sleep Cycle: polished sleep-soundscape library. Sleep as Android: focused on tracking. AutoSleep: tracking-only.' },
+    { name: 'Wind-down content', criterionId: 'wind-down-content', note: 'Sleep Cycle: polished sleep-soundscape library. Sleep as Android: focused on tracking. AutoSleep: tracking-only.' },
     { name: 'Price', winner: 'tie', note: 'Sleep Cycle and AutoSleep: ~$5–$10/year one-time or freemium. Sleep as Android: similar. Roughly equal.' },
   ],
   faq: [

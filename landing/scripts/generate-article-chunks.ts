@@ -218,7 +218,7 @@ for (const lang of readdirSync(LOCALES)) {
   if (lang === 'en') continue
   let file: Record<string, unknown>
   try {
-    file = JSON.parse(readFileSync(join(LOCALES, lang, 'reviews.json'), 'utf-8'))
+    file = resolveFactsDeep(JSON.parse(readFileSync(join(LOCALES, lang, 'reviews.json'), 'utf-8')), `locales/${lang}/reviews.json`, lang as FactLang)
   } catch {
     continue
   }

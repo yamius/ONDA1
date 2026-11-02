@@ -30,7 +30,7 @@ const museSAthenaVsNeurosityCrown: HeadToHeadInput = {
     { name: 'Sleep tracking', winner: 'a', note: 'Athena tracks light, deep and REM sleep in a soft band made for overnight wear. Crown is not designed for sleep.' },
     { name: 'Raw data and SDK', winner: 'b', note: 'Crown: official JavaScript and Python SDKs, BrainFlow, LSL and OSC support, plus an MCP server for AI assistants. Athena: raw data only through third-party apps.' },
     { name: 'Subscription', winner: 'b', note: 'Crown: none, everything included. Athena: core features work without one, but Smart Wakeup, the AI coach and curated programs need Muse Premium.' },
-    { name: 'Comfort', winner: 'a', note: 'Athena: soft fabric band, fine for long sessions and sleep. Crown: rigid 228 g headset, comfortable for seated sessions.' },
+    { name: 'Comfort', criterionId: 'comfort', note: 'Athena: soft fabric band, fine for long sessions and sleep. Crown: rigid 228 g headset, comfortable for seated sessions.' },
     { name: 'Price', winner: 'a', note: 'Muse S Athena: $474.99. Neurosity Crown: $1,499 one-time. Athena costs about a third as much.' },
   ],
   faq: [

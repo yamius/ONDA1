@@ -4292,7 +4292,7 @@
     "metric_hrv": "variability",
     "metric_rr": "breathing",
     "cta": "Record your day",
-    "push_intro": "Your body signalled last night. Take a look.",
+    "push_intro": "Your body sent a signal. Take a look.",
     "push_short": "There's a fresh signal.",
     "prompt_rhr": "Your pulse last night was {{value}} — usually {{lo}}–{{hi}}.",
     "prompt_hrv": "Your variability last night was {{value}} — usually {{lo}}–{{hi}}.",
@@ -4384,5 +4384,21 @@
     "red1_body_other": "Your readings have stayed out of the usual for {{count}} days. Often the body just needs rest. A practice will help it return to rhythm.",
     "red_body_one": "Your body has stayed outside its usual rhythm for {{count}} day. Simple rest often brings it back. And if you decide to look closer, your Timeline analytics are ready to show a specialist.",
     "red_body_other": "Your body has stayed outside its usual rhythm for {{count}} days. Simple rest often brings it back. And if you decide to look closer, your Timeline analytics are ready to show a specialist."
-  }
+  },
+  "paywall_feedback": {
+    "title": "What stopped you?",
+    "price": "Too expensive",
+    "try_first": "I want to try first",
+    "unclear_value": "Not sure why I should pay",
+    "other": "Other"
+  },
+  "quick_question": "What do you want?",
+  "quick_relax": "Relax",
+  "quick_wake": "Wake up",
+  "quick_inhale": "Breathe in",
+  "quick_exhale": "Breathe out",
+  "quick_hint": "Keep a finger on the screen for a stronger rhythm",
+  "quick_stop": "Stop",
+  "quick_sound_on": "Sound on",
+  "quick_sound_off": "Sound off"
 }

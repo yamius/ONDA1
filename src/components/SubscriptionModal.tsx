@@ -3,6 +3,11 @@ import { X, Infinity, Headphones, Heart, RotateCcw } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { useSubscription } from '../hooks/useSubscription';
+import { isTrialOrIntro } from '../lib/purchasePeriod';
+import { readPaywallSource, recordPaywallSource, startTrialMarker, trialDaysFor } from '../lib/trialOutcome';
+import { loadLocalProgress } from '../lib/progressStore';
+import { purchaseErrorCode } from '../lib/purchaseErrors';
+import { requestPaywallFeedback } from '../lib/paywallFeedback';
 import { useAnalytics } from '../hooks/useAnalytics';
 import { useTheme } from '../theme/ThemeProvider';
 import { LegalModal } from './LegalModal';
@@ -107,6 +112,8 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     isPremium,
     error,
     purchase,
+    lastPurchasePeriodType,
+    lastPurchaseOutcome,
     restore,
     getYearlyPackage,
     getMonthlyPackage,
@@ -150,11 +157,9 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     trackTenjinPaywallView(source);
     // Stash the paywall that is open so the eventual purchase can say which
     // one produced it. purchase fires from useSubscription on the entitlement
-    // change and has no other way to know. Same stash-and-read idiom already
-    // used for onda_first_practice_quality.
-    try {
-      if (source) localStorage.setItem('onda_last_paywall_source', source);
-    } catch { /* best-effort */ }
+    // change and has no other way to know.
+    // 101: Preferences-backed (survives WebView purges until the purchase).
+    void recordPaywallSource(source);
     return () => {
       // Effect cleanup runs when isOpen flips to false or isPremium becomes
       // true. Treat "became premium during this session" as Subscribe (already
@@ -165,10 +170,13 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
       const seconds = openedAt ? Math.round((Date.now() - openedAt) / 1000) : undefined;
       track('paywall_dismiss', {
         source,
+        paywall_source: source || 'unknown', // 101: same name as on purchase/trial_start
+        seconds_on_paywall: seconds != null ? String(seconds) : undefined,
         action: dismissActionRef.current, // 'close' (✕) | 'continue_free' (secondary button)
         plan: selectedPlanRef.current,
         time_on_screen_seconds: seconds,
       });
+      requestPaywallFeedback(source); // 101: one-time "what stopped you?"
       trackTenjinPaywallDismiss({
         source,
         plan: selectedPlanRef.current,
@@ -176,6 +184,12 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
       });
     };
   }, [isOpen, isPremium, source]);
+
+  // 101: plan_select only on an actual switch (not on re-tapping the selected plan).
+  const selectPlan = (plan: typeof selectedPlan) => {
+    if (plan !== selectedPlan) track('plan_select', { plan });
+    setSelectedPlan(plan);
+  };
 
   const handlePurchase = async () => {
     setPurchaseError(null);
@@ -212,25 +226,48 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     try {
       const success = await purchase(pkg);
       if (success) {
-        track('trial_start', {
-          plan: selectedPlan,
-          product_id: pkg.product.identifier,
-        });
-        trackTenjinSubscribe({
-          productId: pkg.product.identifier,
-          plan: selectedPlan,
-        });
+        // 096: trial_start (+ Tenjin start_trial) ONLY when Apple actually
+        // granted a free trial / intro offer. A direct paid purchase
+        // (periodType NORMAL) fires only `purchase`, via the not-paid -> paid
+        // detector in useSubscription — never here, so no double fire.
+        const periodType = lastPurchasePeriodType();
+        if (isTrialOrIntro(periodType)) {
+          const paywallSource = await readPaywallSource();
+          track('trial_start', {
+            plan: selectedPlan,
+            product_id: pkg.product.identifier,
+            period_type: periodType,
+            paywall_source: paywallSource,
+          });
+          // 101: trial marker for the later trial_outcome (evaluated on next opens).
+          void loadLocalProgress().then((p) => startTrialMarker({
+            productId: pkg.product.identifier,
+            plan: selectedPlan,
+            trialDays: trialDaysFor(selectedPlan, (pkg.product as any).introPrice),
+            practicesAtStart: p?.practiceHistory?.length ?? 0,
+          })).catch(() => undefined);
+          trackTenjinSubscribe({
+            productId: pkg.product.identifier,
+            plan: selectedPlan,
+          });
+        }
         // Mark before onClose() so the dismiss-effect cleanup skips firing.
         subscribeFiredRef.current = true;
         onSubscribed?.();
         onClose();
       } else {
-        track('purchase_cancelled', { plan: selectedPlan });
+        // 101: StoreKit-sheet cancel vs a real error, code only (no message text).
+        const outcome = lastPurchaseOutcome();
+        if (outcome.kind === 'failed') {
+          track('purchase_failed', { plan: selectedPlan, error_code: outcome.code });
+        } else {
+          track('purchase_cancelled', { plan: selectedPlan, error_code: outcome.kind === 'cancelled' ? outcome.code : 'user_cancelled' });
+        }
       }
     } catch (err: any) {
       track('purchase_failed', {
         plan: selectedPlan,
-        error: err?.message ?? 'unknown',
+        error_code: purchaseErrorCode(err),
       });
       setPurchaseError(err.message || t('subscription.error_purchase', 'Purchase failed'));
     }
@@ -358,7 +395,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
                 </div>
               )}
               <button
-                onClick={() => setSelectedPlan('yearly')}
+                onClick={() => selectPlan('yearly')}
                 disabled={isLoading || isPurchasing}
                 className={`w-full text-left rounded-xl p-3 sm:p-4 transition-all duration-300 ${
                   selectedPlan === 'yearly'
@@ -391,7 +428,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
                 </div>
               )}
               <button
-                onClick={() => setSelectedPlan('monthly')}
+                onClick={() => selectPlan('monthly')}
                 disabled={isLoading || isPurchasing}
                 className={`w-full text-left rounded-xl p-3 sm:p-4 transition-all duration-300 ${
                   selectedPlan === 'monthly'

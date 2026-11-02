@@ -137,6 +137,9 @@ export interface HealthKitHeartRatePlugin {
   /** INTERNAL test mode (task 16): post a Segment-A calm check-in NOW via the native
    *  path (marked simulated). type A1|A2|A3; delaySeconds lets you background the app. */
   simulateCheckin(options: { type: 'A1' | 'A2' | 'A3'; delaySeconds?: number; restingPulse?: number }): Promise<{ ok: boolean }>;
+  /** TEST builds only (task 097): a REAL A1/A2/A3 or signal push after delaySeconds,
+   *  posted by the same native functions as production (not simulated), tagged internal_test. */
+  scheduleRealTestPush(options: { kind: 'A1' | 'A2' | 'A3' | 'signal'; delaySeconds?: number; metric?: 'rhr' | 'hrv' | 'rr' }): Promise<{ ok: boolean }>;
   /** Render an HTML report to a PDF ON-DEVICE and open the native share sheet. */
   exportPdf(options: {
     html: string;

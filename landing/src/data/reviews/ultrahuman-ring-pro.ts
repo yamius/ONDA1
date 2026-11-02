@@ -7,7 +7,7 @@ const ultrahumanRingPro: ToolReviewInput = {
   category: 'hrv-wearable',
   productType: 'Smart ring',
   description:
-    'ONDA review of the Ultrahuman Ring Pro — the redesigned, subscription-free successor to the Ring Air with a category-leading 15-day battery, now available in the US where the Ring Air is banned.',
+    'ONDA review of the Ultrahuman Ring Pro — the subscription-free Ring Air successor with a 15-day battery, sold in the US, where the Ring Air is banned.',
   verdict:
     'The redesigned, subscription-free successor to the Ring Air — a category-leading 15-day battery and on-ring processing, and (unlike the Ring Air) available in the US. Promising, but too new for a long-term reliability verdict from a brand whose last ring had battery problems.',
   summary:
@@ -54,7 +54,7 @@ Honesty matters here. The Ring Air’s defining problem was batteries failing wi
 
 ## Who should buy Ultrahuman Ring Pro?
 
-Choose the Ultrahuman Ring Pro if you want a subscription-free ring with an outstanding battery and you are comfortable being an early adopter of a redesigned product. If you want proven long-term reliability today, the [Oura Ring 4](/reviews/oura-ring-4) or [RingConn Gen 2](/reviews/ringconn-gen-2) are safer, and the [Oura Ring 5](/reviews/oura-ring-5) is the accuracy flagship if you accept its membership.
+Choose the Ultrahuman Ring Pro if you want a subscription-free ring with an outstanding battery and you are comfortable being an early adopter of a redesigned product. If you want a longer track record today, the [RingConn Gen 2](/reviews/ringconn-gen-2) is the safer subscription-free pick, and the [Oura Ring 5](/reviews/oura-ring-5) is the most polished ring if you accept its mandatory membership — earlier Oura generations agreed well with ECG overnight, though the Ring 5 itself has not been separately validated.
 
 ---
 
@@ -62,7 +62,7 @@ Choose the Ultrahuman Ring Pro if you want a subscription-free ring with an outs
 
 The science behind why HRV is the signal worth tracking — and how the body produces it.
 
-- [Resonant-frequency system coherence](/articles/resonant-frequency-system-coherence) — why 5.5–6 breaths per minute is the HRV-training sweet spot
+- [Resonant-frequency system coherence](/articles/resonant-frequency-system-coherence) — what resonance-frequency breathing is and what the studies show
 - [Interoceptive precision and sensor calibration](/articles/interoceptive-precision-sensor-calibration) — why your own perception is the upstream baseline HRV measures against
 - [Anti-entropy neural architecture](/articles/anti-entropy-neural-architecture) — HRV as the daily maintenance signal of the autonomic system
 `,
@@ -75,7 +75,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   publishOn: '2026-09-06',
   faq: [
     { q: "Is the Ultrahuman Ring Pro subscription-free?", a: "Yes — $479 one-time with no subscription, unlike Oura, which gates full data behind a roughly $6-per-month membership. That is its main cost advantage." },
-    { q: "Is the Ultrahuman Ring Pro accurate for HRV?", a: "It measures overnight HRV from the finger, scoring 7.9/10 in ONDA's review, with a more open, no-subscription model. Only company-run preprints exist; no independent validation of its HRV against ECG was found (as of October 2026)." },
+    { q: "Is the Ultrahuman Ring Pro accurate for HRV?", a: "It measures overnight HRV from the finger and scores {{score:ultrahuman-ring-pro.hrv-accuracy}}/10 for HRV accuracy in ONDA's review, with a more open, no-subscription model. Only company-run preprints exist; no independent validation of its HRV against ECG was found (as of October 2026)." },
     { q: "Ultrahuman Ring Pro vs Oura — which is better?", a: "Choose the Ring Pro to avoid a subscription and own your data outright; choose Oura for the more refined app and the most published sleep-stage research (on earlier generations, partly Oura-funded). There is no independent data to compare their overnight HRV accuracy. The Ring Pro is also the US-available successor to the Ring Air." },
   ],
   datePublished: '2026-09-06',

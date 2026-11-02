@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { X, Mic, Square, Play, Pause, Volume2, RefreshCw, MessageCircle } from 'lucide-react';
+import { useKeepAwake } from '../hooks/useKeepAwake';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { AdaptivePracticeModal } from './AdaptivePracticeModal';
@@ -29,6 +30,8 @@ export function VoiceCheckModal({ isOpen, onClose, onOndEarned }: VoiceCheckModa
   const { t } = useTranslation();
   const isLight = useTheme().resolved === 'light';
   const [recordingState, setRecordingState] = useState<RecordingState>('idle');
+  // Task 102: screen on only while recording / analysing the voice sample.
+  useKeepAwake(isOpen && (recordingState === 'recording' || recordingState === 'analyzing'));
   const [recordingTime, setRecordingTime] = useState(0);
   const [selectedPractice, setSelectedPractice] = useState<string | null>(null);
   const [audioURL, setAudioURL] = useState<string | null>(null);

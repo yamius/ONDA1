@@ -14,8 +14,8 @@ const sleepNumberClimate360: ToolReviewInput = {
     'Sleep Number Climate360 is the mainstream smart-bed answer to sleep climate. Climate regulation is built into the Sleep Number 360 Smart Bed mattress itself rather than added as a cover or pad. Includes Sleep Number’s mature SleepIQ tracking. Premium pricing without the focused biohacker positioning of Eight Sleep or Sleepme.',
   scores: [
     { criterionId: 'climate-range', score: 6.5, note: 'Less aggressive climate range than dedicated water-cooled systems. Climate is one feature among many in the smart bed.' },
-    { criterionId: 'build', score: 8.5, note: 'Premium Sleep Number 360 build with multi-decade brand reliability and warranty support.' },
-    { criterionId: 'app-tracking', score: 8.0, note: 'Sleep Number SleepIQ — mature sleep tracking including HRV and breathing rate. Less biohacker-focused than Eight Sleep but solid.' },
+    { criterionId: 'build', score: 8.5, note: 'Premium Sleep Number 360 build from a long-established brand, with warranty support.' },
+    { criterionId: 'app-tracking', score: 8.0, note: 'Sleep Number SleepIQ — mature sleep tracking including HRV and breathing rate (not independently validated). Less biohacker-focused than Eight Sleep but solid.' },
     { criterionId: 'form-factor', score: 6.5, note: 'Mattress-integrated — climate cannot be removed or moved. Requires Sleep Number bed purchase, not retrofit.' },
     { criterionId: 'subscription', score: 8.5, note: 'No subscription for core features; SleepIQ included.' },
     { criterionId: 'value', score: 5.5, note: '$4,000-7,000+ for the bed plus climate. Premium smart-bed pricing.' },
@@ -23,7 +23,7 @@ const sleepNumberClimate360: ToolReviewInput = {
   pros: [
     'Climate built into the mattress — no pad or cover layer',
     'Mature SleepIQ tracking (HRV, breathing rate, sleep stages)',
-    'Multi-decade Sleep Number brand reliability',
+    'Long-established Sleep Number brand',
     'No subscription required',
   ],
   cons: [
@@ -41,7 +41,7 @@ const sleepNumberClimate360: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-Sleep Number Climate360 is the smart-bed approach to sleep climate. The Climate is built into the Sleep Number 360 mattress rather than added as a cover — no pad to install, no hub on the nightstand, no water tank. Mature SleepIQ tracking and multi-decade brand reliability are included.
+Sleep Number Climate360 is the smart-bed approach to sleep climate. The Climate is built into the Sleep Number 360 mattress rather than added as a cover — no pad to install, no hub on the nightstand, no water tank. Mature SleepIQ tracking from a long-established brand is included.
 
 ## What are the downsides of Sleep Number Climate360?
 
@@ -58,7 +58,7 @@ Choose Sleep Number Climate360 if you want smart-bed climate built into the matt
 The biology of why bed-temperature regulation drives sleep depth and recovery.
 
 - [Circadian reset: mastering light](/articles/circadian-reset-mastering-light) — why bed-temperature regulation pairs with light timing for sleep depth
-- [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — cooling pairs with audio entrainment for faster sleep onset
+- [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — audio and sleep onset: what studies show
 - [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 `,
   references: [

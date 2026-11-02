@@ -67,7 +67,7 @@ const SAMSUNG_RING: SourceLink = { label: 'Samsung Support: Galaxy Ring sleep tr
 const WITHINGS_HRV: SourceLink = { label: 'Withings Help: Nighttime HRV (Sleep Analyzer)', url: 'https://support.withings.com/hc/en-us/articles/35729517908881' }
 const ULTRAHUMAN_HOW: SourceLink = { label: 'Ultrahuman: How it works (product page)', url: 'https://www.ultrahuman.com/us/how-it-works/' }
 const APPLE_SDNN: SourceLink = { label: 'Apple Developer: heartRateVariabilitySDNN', url: 'https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilitysdnn' }
-const APPLE_RECOVERY: SourceLink = { label: 'Apple Support: Recovery HRV', url: 'https://support.apple.com/en-us/120277' }
+const APPLE_RECOVERY: SourceLink = { label: 'Apple Support: Monitor your heart rate with Apple Watch (HRV)', url: 'https://support.apple.com/en-us/120277' }
 
 const DIAL_RANK = (who: string) =>
   `In a comparison of five wearables against an ECG reference during sleep ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}), ${who}`
@@ -244,7 +244,7 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
   },
   'apple-watch': {
     hrvSummary:
-      'Apple Health stores HRV as SDNN, sampled automatically by Apple Watch through the day while you are still — not only at night. Newer models also show Recovery HRV.',
+      'Apple Health stores HRV as SDNN. Apple Watch takes HRV readings (SDNN) in the background at various times of day and night; it is not a dedicated overnight measurement. Newer models also show Recovery HRV.',
     hrvQuotes: [
       { quote: 'While there are multiple ways of computing HRV, HealthKit uses SDNN heart rate variability, which uses the standard deviation of the inter-beat (RR) intervals between normal heartbeats (typically measured in milliseconds). The system automatically records samples on Apple Watch.', source: APPLE_SDNN },
       { quote: "HRV is sampled while you're still, so the number of measurements you see will vary according to your activity level.", source: APPLE_RECOVERY },
@@ -311,5 +311,5 @@ export const CONNECT_WINDOW_METRIC: Record<string, { text: string; source?: Sour
   ultrahuman: { text: 'Overnight, vs your own range; metric not named (product page)', source: ULTRAHUMAN_HOW },
   ringconn: { text: 'Not reviewed yet' },
   amazfit: { text: 'Not reviewed yet' },
-  'apple-watch': { text: 'SDNN, sampled automatically at rest through the day', source: APPLE_SDNN },
+  'apple-watch': { text: 'SDNN, background readings at various times of day and night; not a dedicated overnight measurement', source: APPLE_RECOVERY },
 }

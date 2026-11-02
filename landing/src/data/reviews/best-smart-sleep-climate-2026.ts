@@ -87,7 +87,7 @@ const bestSmartSleepClimate2026: Comparison = {
     },
     {
       q: 'Can I install climate on my existing mattress?',
-      a: 'Yes — Eight Sleep Pod Cover Pro, ChiliPad Dock Pro, ChiliPad Cube, OOLER and BedJet 3 all install on existing mattresses. Only Eight Sleep Pod 4 full system and Sleep Number Climate360 require a mattress purchase.',
+      a: 'Yes — Eight Sleep Pod 4 and Pod Cover Pro, ChiliPad Dock Pro, ChiliPad Cube, OOLER and BedJet 3 all install on existing mattresses. Only Sleep Number Climate360 requires a mattress purchase (an Eight Sleep mattress was optional for the Pod 4).',
     },
     {
       q: 'How much does Eight Sleep really cost over 3 years?',

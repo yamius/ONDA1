@@ -109,3 +109,19 @@ export function scoreWinnerSlug<T extends Rankable & { slug: string }>(products:
   if (sorted.length < 2) return sorted[0]?.slug ?? null
   return compareReviews(sorted[0], sorted[1]) === 0 ? null : sorted[0].slug
 }
+
+/** Winner of one duel axis from criterion scores ('a'/'b'/'c' by product order): the leader wins
+ *  only when it beats every other product by more than PRACTICALLY_EQUAL_GAP, otherwise 'tie'. */
+export function axisWinnerFromScores(scores: readonly number[]): 'a' | 'b' | 'c' | 'tie' {
+  const max = Math.max(...scores)
+  const leaders = scores.filter((s) => s === max).length
+  const rest = scores.filter((s) => s !== max)
+  if (leaders > 1 || !rest.length || max - Math.max(...rest) <= PRACTICALLY_EQUAL_GAP + 1e-9) return 'tie'
+  return (['a', 'b', 'c'] as const)[scores.indexOf(max)]
+}
+
+/** Award-contradiction rule (task 089): a hand-set winner/award holder is contradicted when another
+ *  product beats it by more than PRACTICALLY_EQUAL_GAP on the score the award is about. */
+export function beatenByMoreThanGap(holder: number, others: readonly number[]): boolean {
+  return others.some((o) => o - holder > PRACTICALLY_EQUAL_GAP + 1e-9)
+}

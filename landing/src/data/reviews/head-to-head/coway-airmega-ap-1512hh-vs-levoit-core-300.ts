@@ -18,7 +18,7 @@ const cowayApVsLevoit300: HeadToHeadInput = {
     'Choose Levoit Core 300 for cheapest credible entry — $99 bedroom-scale True HEPA starter device.',
   axes: [
     { name: 'Coverage', winner: 'a', note: 'Coway: 361 sq ft AHAM-certified. Levoit Core 300: 219 sq ft. Coway 65% larger coverage.' },
-    { name: 'Smart features', winner: 'a', note: 'Coway: PM2.5 sensor + auto mode + LED indicator. Levoit Core 300: 3-speed manual only, no sensor.' },
+    { name: 'Smart features', criterionId: 'smart-features', note: 'Coway: PM2.5 sensor + auto mode + LED indicator. Levoit Core 300: 3-speed manual only, no sensor.' },
     { name: 'Filtration', winner: 'tie', note: 'Both True HEPA H13 + activated carbon. Comparable filtration spec.' },
     { name: 'Brand trust', winner: 'a', note: 'Coway: multi-year Wirecutter recommendation track record. Levoit: Amazon-dominant brand without comparable independent endorsement.' },
     { name: 'Build', winner: 'a', note: 'Coway: solid Korean build. Levoit Core 300: budget plastic build.' },

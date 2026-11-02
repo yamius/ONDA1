@@ -163,6 +163,30 @@ export interface ComparisonPick {
    *  ItemList JSON-LD, and are rendered in a separate block after the ranked
    *  picks. Their award must be ''. Translated as picks.<slug>.comparisonOnly. */
   comparisonOnly?: string
+  /** Honest caption shown with this pick's computed (rule) award, e.g. a chest strap that wins
+   *  "Best value": "chest strap — for measurements and workouts, not for 24/7 wear".
+   *  Translated as picks.<slug>.ruleAwardCaption. */
+  ruleAwardCaption?: string
+  /** COMPUTED (index.ts rankComparison) — never typed in a round-up file. */
+  ruleAwards?: RuleAward[]
+}
+
+/** Score-based award of a round-up ("Best overall", "Best value", …). Holders are computed:
+ *  every competing pick within PRACTICALLY_EQUAL_GAP (0.1) of the best score shares it;
+ *  more than one holder = "practically equal", no single winner. */
+export interface RuleAwardSpec {
+  key: 'best-overall' | 'best-value' | 'best-value-247'
+  /** EN label; localized via reviews ui.award.<key>. */
+  label: string
+  /** 'overall' or a criterion id. */
+  score: 'overall' | string
+  /** Picks that do not compete for this award (e.g. a chest strap in a 24/7-wearable award). */
+  exclude?: string[]
+}
+export interface RuleAward {
+  key: RuleAwardSpec['key']
+  label: string
+  practicallyEqual: boolean
 }
 
 /** A question/answer pair — feeds both the on-page FAQ and FAQPage JSON-LD. */
@@ -184,7 +208,14 @@ export interface HeadToHeadAxis {
   winner: 'a' | 'b' | 'c' | 'tie'
   /** One-sentence justification — shown next to the axis row. */
   note: string
+  /** Set when the axis IS one review criterion: the winner is then computed from the
+   *  criterion scores (axisWinnerFromScores, gap > 0.1) and must not be hand-typed. */
+  criterionId?: string
 }
+
+/** Axis as declared in a duel file: either a hand-set `winner` (free-text axes such as
+ *  "Price") or a `criterionId` (winner computed). */
+export type HeadToHeadAxisInput = Omit<HeadToHeadAxis, 'winner'> & { winner?: HeadToHeadAxis['winner'] }
 
 export interface HeadToHead {
   /** Canonical slug — typically <product-a>-vs-<product-b> or
@@ -241,7 +272,7 @@ export interface HeadToHead {
 }
 
 /** What a head-to-head file declares — everything except the computed winner. */
-export type HeadToHeadInput = Omit<HeadToHead, 'winnerSlug'>
+export type HeadToHeadInput = Omit<HeadToHead, 'winnerSlug' | 'axes'> & { axes: HeadToHeadAxisInput[] }
 
 export interface Comparison {
   slug: string
@@ -255,6 +286,9 @@ export interface Comparison {
   /** Picks with their awards. The ranking is COMPUTED (index.ts sorts by
    *  overall score, then the tie-break criterion); file order is ignored. */
   picks: ComparisonPick[]
+  /** Extra score-based awards beyond the default ones (a hand-typed "Best overall" / "Best value"
+   *  award is turned into its rule — see RuleAwardSpec). */
+  ruleAwards?: RuleAwardSpec[]
   /** Closing editorial verdict. */
   verdict: string
   /** Optional one-liner shown under the "Practically equal" line: who each

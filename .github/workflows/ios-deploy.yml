@@ -11,6 +11,13 @@ on:
         type: choice
         options: [auto, "true", "false"]
         default: auto
+      app_store_candidate:
+        description: >-
+          This build is intended to be submitted to the App Store (release
+          intent). Allowed ONLY from main with a non-internal build; the job
+          fails otherwise. Leave unchecked for test builds.
+        type: boolean
+        default: false
 
 jobs:
   build-ios:
@@ -22,6 +29,47 @@ jobs:
     timeout-minutes: 90
     
     steps:
+      - name: Release guard (internal / branch builds never reach the App Store)
+        # This workflow only uploads to TestFlight (fastlane `beta`,
+        # skip_submission). App Store submission is manual in App Store
+        # Connect, so the guard here: (1) hard-fails a declared App Store
+        # candidate that is internal or not from main; (2) stamps every
+        # internal / non-main build's TestFlight "What to Test" with
+        # DO NOT SUBMIT so it is recognisable in App Store Connect.
+        # Incident: 1.9.5 shipped from branch analytics-095 with
+        # internal_build=auto -> VITE_INTERNAL_BUILD=true for all real users.
+        env:
+          INPUT_INTERNAL: ${{ github.event.inputs.internal_build }}
+          INPUT_CANDIDATE: ${{ github.event.inputs.app_store_candidate }}
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          set -eu
+          case "$INPUT_INTERNAL" in
+            true) INTERNAL=true ;;
+            false) INTERNAL=false ;;
+            *) if [ "$REF_NAME" = "main" ]; then INTERNAL=false; else INTERNAL=true; fi ;;
+          esac
+          echo "ref=$REF_NAME internal_build=$INPUT_INTERNAL -> VITE_INTERNAL_BUILD=$INTERNAL app_store_candidate=$INPUT_CANDIDATE"
+          if [ "$INPUT_CANDIDATE" = "true" ]; then
+            if [ "$REF_NAME" != "main" ]; then
+              echo "::error::App Store candidate must be built from main (got '$REF_NAME'). Merge to main first."
+              exit 1
+            fi
+            if [ "$INTERNAL" = "true" ]; then
+              echo "::error::App Store candidate cannot be an internal build (VITE_INTERNAL_BUILD=true would mark every real user internal). Re-run with internal_build=false or auto."
+              exit 1
+            fi
+          fi
+          if [ "$INTERNAL" = "true" ] || [ "$REF_NAME" != "main" ]; then
+            CHANGELOG="INTERNAL — DO NOT SUBMIT TO APP STORE (branch $REF_NAME, internal=$INTERNAL, run ${{ github.run_number }})"
+            echo "::warning::$CHANGELOG"
+          else
+            CHANGELOG="main release build, run ${{ github.run_number }} (internal=false)"
+          fi
+          echo "VITE_INTERNAL_BUILD=$INTERNAL" >> "$GITHUB_ENV"
+          echo "ONDA_TESTFLIGHT_CHANGELOG=$CHANGELOG" >> "$GITHUB_ENV"
+          echo "### Build: $CHANGELOG" >> "$GITHUB_STEP_SUMMARY"
+
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -54,7 +102,8 @@ jobs:
           # Yakiv's ~10 daily reinstalls never pollute the d1 cohort (a reinstall
           # clears localStorage before the hidden 7-tap could mark it). "auto" =>
           # internal on any non-main branch, clean on main (the release build).
-          VITE_INTERNAL_BUILD: ${{ github.event.inputs.internal_build == 'true' || (github.event.inputs.internal_build == 'auto' && github.ref_name != 'main') }}
+          # Value resolved once in the "Release guard" step ($GITHUB_ENV).
+          VITE_INTERNAL_BUILD: ${{ env.VITE_INTERNAL_BUILD }}
           # Sentry source map upload — see vite.config.ts
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_PROJECT: capacitor

@@ -18,7 +18,7 @@ const joovvVsMitoRed: HeadToHeadInput = {
     'Choose Mito Red MitoPRO 1500 if you want broader four-wavelength coverage (630 + 660 + 830 + 850 nm), comparable build, at $100 cheaper than Joovv.',
   axes: [
     { name: 'Irradiance verification', winner: 'tie', note: 'Both panels: independent measurements within 10% of manufacturer claims. Effectively tied on spec honesty.' },
-    { name: 'Wavelength coverage', winner: 'b', note: 'Mito Red: four wavelengths (630 + 660 + 830 + 850 nm). Joovv: two (660 + 850 nm). MitoPRO has broader spectrum.' },
+    { name: 'Wavelength coverage', criterionId: 'wavelengths', note: 'Mito Red: four wavelengths (630 + 660 + 830 + 850 nm). Joovv: two (660 + 850 nm). MitoPRO has broader spectrum.' },
     { name: 'EMF / flicker discipline', winner: 'a', note: 'Joovv: third-party EMF at <0.5 mG at 6", flicker published. MitoPRO: similar specs but less independently re-verified. Joovv has tighter discipline.' },
     { name: 'Coverage and modularity', winner: 'a', note: 'Joovv: modular Solo system stacks vertically for full-body. MitoPRO: large half-body panel, stack two for full-body. Joovv is more flexible.' },
     { name: 'FDA / regulatory status', winner: 'tie', note: 'Joovv and Mito Red both say their current panels (Solo 3.0, MitoPRO 1500X) are FDA Class II registered. Registration/listing is not clearance or approval and is not a quality mark.' },

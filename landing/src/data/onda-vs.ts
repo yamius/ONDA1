@@ -398,7 +398,7 @@ export const ONDA_VS: OndaVsEntry[] = [
     description:
       'ONDA vs the Apple Watch’s built-in HRV — active biofeedback training vs passive overnight tracking. What the watch measures on its own, and what ONDA adds on top. An objective comparison from ONDA Life.',
     intro:
-      'The Apple Watch already tracks HRV on its own — and after the September 2026 Series 12 update it now reports Recovery HRV and Overall HRV against your baseline. But that is passive measurement: the watch reads your nervous system, mostly overnight, and hands you numbers. ONDA runs on top of the same watch to do the opposite job — a live HRV-biofeedback loop you breathe against in the moment. The watch tells you how you recovered; ONDA lets you train the system that produces the number.',
+      'The Apple Watch already tracks HRV on its own — and after the September 2026 Series 12 update it now reports Recovery HRV and Overall HRV against your baseline. But that is passive measurement: the watch reads your nervous system with background readings at various times of day and night (not a dedicated overnight measurement) and hands you numbers. ONDA runs on top of the same watch to do the opposite job — a live HRV-biofeedback loop you breathe against in the moment. The watch tells you how you recovered; ONDA lets you train the system that produces the number.',
     them: {
       'Real-time HRV biofeedback (live feedback as you breathe)': 'no',
       'Live coherence score': 'no',
@@ -424,7 +424,7 @@ export const ONDA_VS: OndaVsEntry[] = [
     faq: [
       {
         q: 'Does the Apple Watch already do what ONDA does?',
-        a: 'No. The Apple Watch measures HRV passively — mostly overnight — and reports Recovery and Overall HRV. ONDA uses the same watch for the opposite job: a live HRV-biofeedback loop you breathe against to change your state in the moment.',
+        a: 'No. The Apple Watch measures HRV passively — background readings at various times of day and night; not a dedicated overnight measurement — and reports Recovery and Overall HRV. ONDA uses the same watch for the opposite job: a live HRV-biofeedback loop you breathe against to change your state in the moment.',
       },
       {
         q: 'Do I need anything besides my Apple Watch to use ONDA?',

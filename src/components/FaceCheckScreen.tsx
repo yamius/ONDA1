@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Eye, X, RefreshCw } from 'lucide-react';
+import { useKeepAwake } from '../hooks/useKeepAwake';
 import { useTranslation } from 'react-i18next';
 import { useEyeScan, type EyeScanResult, SCAN_DURATION_MS } from '../hooks/useEyeScan';
 import { recommendedPractices } from '../utils/eyeScanMetrics';
@@ -26,6 +27,8 @@ export default function FaceCheckScreen({
   const isLight = useTheme().resolved === 'light';
   const scan = useEyeScan();
   const status = scan.status;
+  // Task 102: screen on only while the camera scan is preparing/scanning.
+  useKeepAwake(status === 'preparing' || status === 'scanning');
   const [practiceId, setPracticeId] = useState<string | null>(null);
   const [videoVisible, setVideoVisible] = useState(false);
   const close = onClose ?? (() => { window.location.href = '/'; });

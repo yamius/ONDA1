@@ -17,7 +17,7 @@ const sunlightenMpulse: ToolReviewInput = {
     { criterionId: 'build', score: 9.0, note: 'Premium cedar cabin, 1–4-person configurations, 7-year warranty. Multi-decade reliability track record.' },
     { criterionId: 'emf', score: 9.0, note: 'Independently-measured ultra-low EMF at seated position (typically <1 mG). Sunlighten publishes the numbers.' },
     { criterionId: 'form-factor', score: 7.5, note: 'Cabin requires dedicated space (1-person from 4×4 ft; 4-person from 6×7 ft). 110V or 220V depending on size.' },
-    { criterionId: 'evidence', score: 7.0, note: 'No peer-reviewed trial of the mPulse itself. The only published trial on a Sunlighten-made sauna is a 20-person, 3-month before-and-after pilot from 2010 on an older model (Sunlight Armana 3), so it is not evidence for the mPulse; Japanese Waon-therapy studies used other makers’ devices. Sunlighten describes its saunas as general-wellness products, not medical devices. 7.0 is the base score for a product without trials of its own.' },
+    { criterionId: 'evidence', score: 7.0, note: 'No peer-reviewed trial of the mPulse itself. The only published trial on a Sunlighten-made sauna is a 20-person, 3-month before-and-after pilot from 2010 on an older model (Sunlight Armana 3), so it is not evidence for the mPulse; Japanese Waon-therapy studies used other makers’ devices. Sunlighten describes its saunas as general-wellness products, not medical devices. Without trials of its own it cannot score above ONDA’s ceiling for such products.' },
     { criterionId: 'value', score: 6.5, note: '$5,000–$10,000+ depending on configuration. Premium pricing matched by build and verified specs.' },
   ],
   pros: [

@@ -72,6 +72,7 @@ import { RestingHeartRatePage } from './pages/RestingHeartRatePage'
 import { RecoveryScorePage } from './pages/RecoveryScorePage'
 import { CameraHeartRatePage } from './pages/CameraHeartRatePage'
 import { MicBreathingPage } from './pages/MicBreathingPage'
+import { VibrationBreathingPage } from './pages/VibrationBreathingPage'
 import { BreathHeartBiofeedbackPage } from './pages/BreathHeartBiofeedbackPage'
 import { HrvEmbedPage } from './pages/HrvEmbedPage'
 import { ReviewsPage } from './pages/ReviewsPage'
@@ -438,6 +439,7 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/pl/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
           <Route path="/pt/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
           <Route path="/tools/breathing-rate"  element={<MicBreathingPage />} />
+          <Route path="/tools/vibration-breathing" element={<VibrationBreathingPage />} />
           <Route path="/tools/breath-heart-biofeedback" element={<BreathHeartBiofeedbackPage />} />
           <Route path="/reviews"               element={<ReviewsPage />} />
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />

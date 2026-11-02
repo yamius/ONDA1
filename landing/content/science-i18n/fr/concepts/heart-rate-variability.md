@@ -1,5 +1,5 @@
 ---
-sourceHash: "fd60184b64ca"
+sourceHash: "030dc9f0c5b6"
 title: "Variabilité de la fréquence cardiaque : ce qu’elle est, ce qu’elle reflète, ce qu’elle n’est pas"
 metaTitle: "Variabilité cardiaque : définition et données"
 metaDescription: "La variabilité de la fréquence cardiaque est la variation naturelle du rythme d’un battement à l’autre : ce qui la façonne, ce qu’elle reflète, ce qu’elle tait."
@@ -99,11 +99,11 @@ La fenêtre fait partie du sens. Un bref enregistrement en laboratoire, un ECG h
 
 ## Que montrent les données ?
 
-**Établi.** La définition et l’origine physiologique du signal proviennent des normes de mesure du domaine [S1] et des revues méthodologiques [S2] : la HRV naît de l’interaction des deux branches autonomes avec des mécanismes de régulation, et la RSA est la source dominante dans les fenêtres courtes au repos [S2]. Les propriétés des mesures sont tout aussi établies — la RMSSD et le SDNN résument des aspects différents d’un enregistrement, et les valeurs dépendent de la durée d’enregistrement [S1, S2]. En moyenne, les valeurs baissent avec l’âge chez l’adulte en bonne santé, avec une grande variation individuelle [S5]. En cardiologie clinique, la HRV calculée sur un ECG de toute une journée chez des patients est une mesure établie de stratification du risque — un régime de mesure qu’une montre grand public ne reproduit pas [S2].
+**Établi.** La définition et l’origine physiologique du signal proviennent des normes de mesure du domaine [S1] et des revues méthodologiques [S2] : la HRV naît de l’interaction des deux branches autonomes avec des mécanismes de régulation, et la RSA est la source dominante dans les fenêtres courtes au repos [S2]. Les propriétés des mesures sont tout aussi établies — la RMSSD et le SDNN résument des aspects différents d’un enregistrement, et les valeurs dépendent de la durée d’enregistrement [S1, S2]. En cardiologie clinique, la HRV calculée sur un ECG de toute une journée chez des patients est une mesure établie de stratification du risque — un régime de mesure qu’une montre grand public ne reproduit pas [S2].
 
 **Recommandations / consensus d’experts.** Les recommandations actuelles désignent le signal d’entrée, la durée d’enregistrement, le cadre, la respiration et la méthode d’analyse comme des facteurs qui déterminent la rigueur et la fiabilité [S4], et demandent que les résultats — y compris ceux issus d’objets connectés — soient interprétés et replacés dans le cadre de ces limites [S4]. Il s’agit d’un consensus d’experts sur la manière de mesurer et d’interpréter, pas de données expérimentales directes sur la HRV elle-même.
 
-**Dépend du contexte.** Les estimations grand public tirées du signal du pouls constituent une chaîne de mesure différente de l’ECG de référence [S3] ; les données d’accord, leurs conditions et leurs limites sont traitées sur [la page consacrée à la mesure](/science/measurements/heart-rate-variability) plutôt que reprises ici.
+**Dépend du contexte.** Les estimations grand public tirées du signal du pouls constituent une chaîne de mesure différente de l’ECG de référence [S3] ; les données d’accord, leurs conditions et leurs limites sont traitées sur [la page consacrée à la mesure](/science/measurements/heart-rate-variability) plutôt que reprises ici. En moyenne, les valeurs baissent avec l’âge chez l’adulte en bonne santé, avec une grande variation individuelle [S5].
 
 **Inconnu.** Ce que signifie une valeur absolue précise pour une personne en bonne santé donnée ; comment les valeurs nocturnes grand public se rattachent aux données cliniques, établies sur des ECG continus chez des patients ; et quelle part d’une variation d’un jour à l’autre reflète la physiologie plutôt que le bruit de mesure. Ce sont des questions ouvertes — des raisons de mieux comprendre la mesure, pas d’écarter les données.
 

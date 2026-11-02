@@ -635,7 +635,7 @@ evidenceMap:
     limitation: "Mostly healthy adults; the link from shorter sleep to lower HRV is indirect."
   - claim: "Older age groups have considerably lower HRV on average (fact hrv.age.trend)."
     sources: [S32]
-    class: established
+    class: context-dependent
     claimType: physiology
     quote: "These findings, as expected, reveal a considerably diminished HRV in the older age groups regardless of female or male gender."
     limitation: "Cross-sectional group averages from short-term daytime ECG; not individual predictions."

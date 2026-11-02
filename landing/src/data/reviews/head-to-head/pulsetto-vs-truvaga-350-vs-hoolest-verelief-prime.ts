@@ -40,7 +40,7 @@ const pulsettoVsTruvagaVsHoolest: HeadToHeadInput = {
     },
     {
       q: 'Which has the strongest acute effect?',
-      a: 'Hoolest delivers higher peak intensity per minute by design (short intense sessions). Truvaga uses the clinical 5 kHz burst waveform. Pulsetto delivers gentler longer sessions. Different temporal shapes; comparable cumulative dose.',
+      a: 'Hoolest delivers higher peak intensity per minute by design (short intense sessions). Truvaga uses the clinical 5 kHz burst waveform. Pulsetto delivers gentler longer sessions. Different temporal shapes; no published data compare their total dose or acute effect.',
     },
     {
       q: 'Is Truvaga worth the premium over Pulsetto?',

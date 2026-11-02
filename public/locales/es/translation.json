@@ -4292,7 +4292,7 @@
     "metric_hrv": "variabilidad",
     "metric_rr": "respiración",
     "cta": "Registrar el día",
-    "push_intro": "Tu cuerpo dio una señal anoche. Échale un vistazo.",
+    "push_intro": "Tu cuerpo envió una señal. Échale un vistazo.",
     "push_short": "Hay una señal nueva.",
     "prompt_rhr": "Tu pulso anoche fue {{value}} — normalmente {{lo}}–{{hi}}.",
     "prompt_hrv": "Tu variabilidad anoche fue {{value}} — normalmente {{lo}}–{{hi}}.",
@@ -4384,5 +4384,21 @@
     "red1_body_other": "Tus valores llevan {{count}} días fuera de lo habitual. A menudo el cuerpo solo necesita descanso. Una práctica ayudará a volver al ritmo.",
     "red_body_one": "Tu cuerpo lleva {{count}} día fuera de su ritmo habitual. A menudo el descanso lo devuelve a la normalidad. Y si decides mirar de cerca, tu analítica en la Línea de tiempo está lista para mostrarla a un especialista.",
     "red_body_other": "Tu cuerpo lleva {{count}} días fuera de su ritmo habitual. A menudo el descanso lo devuelve a la normalidad. Y si decides mirar de cerca, tu analítica en la Línea de tiempo está lista para mostrarla a un especialista."
-  }
+  },
+  "paywall_feedback": {
+    "title": "¿Qué te detuvo?",
+    "price": "Es caro",
+    "try_first": "Quiero probar primero",
+    "unclear_value": "No entendí por qué pagar",
+    "other": "Otro"
+  },
+  "quick_question": "¿Qué quieres?",
+  "quick_relax": "Relajarme",
+  "quick_wake": "Despertarme",
+  "quick_inhale": "Inhala",
+  "quick_exhale": "Exhala",
+  "quick_hint": "Mantén un dedo en la pantalla para un ritmo más intenso",
+  "quick_stop": "Parar",
+  "quick_sound_on": "Activar sonido",
+  "quick_sound_off": "Silenciar"
 }

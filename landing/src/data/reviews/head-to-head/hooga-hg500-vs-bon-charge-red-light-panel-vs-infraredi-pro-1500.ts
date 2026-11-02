@@ -20,9 +20,9 @@ const threeValuePanels: HeadToHeadInput = {
   bestForC:
     'Choose Infraredi if you want the most wavelengths of the three, a free-standing base included, and a 3-year warranty — for about the price of the Bon Charge Max.',
   axes: [
-    { name: 'Wavelength coverage', winner: 'c', note: 'Infraredi Pro Max 2.0: five wavelengths. Bon Charge Max: two (660 + 850 nm). Hooga HG500: two (660 + 850 nm). Infraredi has the broadest spectrum.' },
+    { name: 'Wavelength coverage', criterionId: 'wavelengths', note: 'Infraredi Pro Max 2.0: five wavelengths. Bon Charge Max: two (660 + 850 nm). Hooga HG500: two (660 + 850 nm). Infraredi has the broadest spectrum.' },
     { name: 'Panel size / coverage', winner: 'tie', note: 'Bon Charge Max (91 cm, 400 LEDs) and Infraredi Pro Max 2.0 (90.8 cm, 210 dual-lens LEDs) are both large half-body panels. Hooga HG500 (100 LEDs) is the smaller, mid-size panel.' },
-    { name: 'Irradiance', winner: 'tie', note: 'Only maker figures exist: Hooga states 94 mW/cm² at 6 inches; Bon Charge states over 142 mW/cm² without a distance; Infraredi does not list a figure on the product page. None is independently verified on the current models, so no winner.' },
+    { name: 'Irradiance', criterionId: 'irradiance', note: 'Only maker figures exist: Hooga states 94 mW/cm² at 6 inches; Bon Charge states over 142 mW/cm² without a distance; Infraredi does not list a figure on the product page. None is independently verified on the current models, so no winner.' },
     { name: 'EMF / flicker', winner: 'tie', note: 'Bon Charge now publishes EMF (0.05–0.1 µT) and zero-flicker figures for the Max; Hooga and Infraredi also market low-EMF, flicker-free drivers. No independent comparison of the current models.' },
     { name: 'Brand maturity', winner: 'b', note: 'Bon Charge has the broadest consumer brand reach (especially EU/AU). Hooga has a strong biohacker following. Infraredi is the newest of the three.' },
     { name: 'Build quality', winner: 'b', note: 'Bon Charge: solid aluminium-and-glass. Infraredi: aluminium back with glass front. Hooga: aluminium back with plastic trim. Bon Charge is the most premium-feeling.' },

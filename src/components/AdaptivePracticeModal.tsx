@@ -7,8 +7,10 @@ import { CameraPulseWindow } from './CameraPulseWindow';
 import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from '../constants/practiceAssets';
 import { useVitals } from '../hooks/useVitals';
 import { useCameraPpg } from '../hooks/useCameraPpg';
+import { useKeepAwake } from '../hooks/useKeepAwake';
 import { useSubscription } from '../hooks/useSubscription';
 import { useAnalytics } from '../hooks/useAnalytics';
+import { stringifyBooleanParams } from '../services/AnalyticsService';
 import { heartRateStore } from '../hooks/heartRateStore';
 import { supabase } from '../lib/supabase';
 import { calculatePracticeOnd } from '../utils/ondCalculator';
@@ -25,6 +27,8 @@ interface AdaptivePracticeModalProps {
   onClose: () => void;
   practiceId: string;
   onOndEarned?: (amount: number) => void;
+  /** practice_start source (task 095) — face/voice check launches are check-ins. */
+  source?: 'checkin' | 'recommend_static';
 }
 
 interface AdaptivePractice {
@@ -529,7 +533,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
 
 type PracticeState = 'intro' | 'practice' | 'complete';
 
-export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned }: AdaptivePracticeModalProps) {
+export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned, source = 'checkin' }: AdaptivePracticeModalProps) {
   const { t } = useTranslation();
   const isLight = useTheme().resolved === 'light';
   const vitalsData = useVitals();
@@ -541,6 +545,12 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   const { track } = useAnalytics();
   const platform = Capacitor.getPlatform();
   const [practiceState, setPracticeState] = useState<PracticeState>('intro');
+  // Task 102: keep the screen on only while this practice runs (intro/practice)
+  // or the camera pulse is live; results screen and closed modal → auto-lock.
+  useKeepAwake(
+    (isOpen && practiceState !== 'complete') ||
+      cameraPpg.status === 'requesting' || cameraPpg.status === 'searching' || cameraPpg.status === 'reading',
+  );
   const [isPaused, setIsPaused] = useState(false);
   // Zen "minimal mode" — same as the basic practice: hides the timer/window/
   // quality/buttons and leaves only the guiding card (tap it to restore).
@@ -809,7 +819,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     initialCoherenceRef.current = freshVitals.coherence ?? null;
     peakCoherenceRef.current = freshVitals.coherence ?? null;
     if (practice) {
-      track('practice_start', { practice_type: 'adaptive', practice_id: practice.id });
+      track('practice_start', { practice_type: 'adaptive', practice_id: practice.id, source });
       trackTenjinPractice('Start', t(practice.name), { surface: 'adaptive', practiceId: practice.id });
     }
   };
@@ -1072,7 +1082,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       ...eventInfo,
     };
     console.warn('[DEBUG handleClose] called', debugSnapshot);
-    track('practice_intro_closed_debug', debugSnapshot);
+    track('practice_intro_closed_debug', stringifyBooleanParams(debugSnapshot) ?? {});
 
     // Ghost-tap guard: ignore close attempts in the first 1800ms after modal opened.
     if (msSinceOpen !== null && msSinceOpen < 1800 && practiceState === 'intro' && practiceTime === 0) {

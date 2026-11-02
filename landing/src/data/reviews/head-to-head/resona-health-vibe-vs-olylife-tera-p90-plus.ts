@@ -18,7 +18,7 @@ const resonaVsOlylife: HeadToHeadInput = {
   axes: [
     { name: 'Protocol depth', winner: 'a', note: 'Resona: 130+ built-in protocols (60 core + 70 expansion), selected on the device. OlyLife: limited preset operation, no real protocol depth.' },
     { name: 'Research honesty', winner: 'a', note: 'Resona: straightforward PEMF, uses documented frequencies, no overclaiming. OlyLife: terahertz marketing claims overstate consumer-device biological-effect literature.' },
-    { name: 'Form factor', winner: 'tie', note: 'Resona: wearable pocket device. OlyLife: handheld wand. Both portable, single-applicator, targeted-only treatment.' },
+    { name: 'Form factor', criterionId: 'form-factor', note: "Resona leads: a wearable pocket device you can use on the go, while the OlyLife Tera-P90+ is a handheld wand. Both are targeted-only, with no whole-body mat." },
     { name: 'Controls', winner: 'tie', note: 'Resona: single-button device — no app or subscription. OlyLife: button-based handheld, no real app integration either.' },
     { name: 'Distribution and warranty', winner: 'a', note: 'Resona: direct sales, 1-year warranty and 30-day money-back guarantee. OlyLife: MLM-style distribution, warranty inconsistent depending on seller.' },
     { name: 'Price', winner: 'a', note: 'Resona: $299. OlyLife: $400–$700. Resona meaningfully cheaper.' },

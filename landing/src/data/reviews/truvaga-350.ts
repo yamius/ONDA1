@@ -11,18 +11,18 @@ const truvaga350: ToolReviewInput = {
   verdict:
     'gammaCore’s clinical hardware repackaged as a consumer wellness device — strong provenance, modest evidence in the wellness indication.',
   summary:
-    'Truvaga is electroCore’s consumer brand, using the same cervical tVNS hardware platform that powers the FDA-cleared gammaCore prescription line — repackaged as an over-the-counter wellness device. The 350 model delivers 350 two-minute sessions before retirement and uses the same 5 kHz burst waveform. Strong manufacturing pedigree; the wellness-indication clinical evidence is thinner than gammaCore’s headache record but real.',
+    'Truvaga is electroCore’s consumer brand, using the same cervical tVNS hardware platform that powers the FDA-cleared gammaCore prescription line — repackaged as an over-the-counter wellness device. The 350 model delivers 350 two-minute sessions before retirement and uses the same 5 kHz burst waveform. Strong manufacturing pedigree; there are no published trials of Truvaga itself — its evidence comes from gammaCore studies of the same stimulation approach, not from Truvaga.',
   scores: [
-    { criterionId: 'evidence', score: 7.0, note: 'No published trials of the Truvaga device itself (two registered trials, no results yet, October 2026). The gammaCore studies are of the prescription device and are not counted here, though the shared platform gives it gammaCore’s safety record — 7.0, the base score for a device without trials of its own. Not FDA-cleared for any indication — sold as a general wellness device.' },
+    { criterionId: 'evidence', score: 7.0, note: 'No published trials of the Truvaga device itself (two registered trials, no results yet, October 2026). The gammaCore studies are of the prescription device and are not counted here, though the shared platform gives it gammaCore’s safety record — so it cannot score above ONDA’s ceiling for a device without trials of its own. Not FDA-cleared for any indication — sold as a general wellness device.' },
     { criterionId: 'mechanism', score: 8.5, note: 'Same cervical tVNS approach as gammaCore: handheld unit over the carotid sheath, 5 kHz burst waveform. Targets the cervical vagal trunk directly.' },
     { criterionId: 'protocols', score: 6.5, note: 'Two-minute fixed sessions; intensity user-adjustable. The companion app suggests usage patterns rather than distinct programmes.' },
     { criterionId: 'comfort', score: 7.0, note: 'Ergonomic handheld; some users report jaw twitches or neck soreness at higher amplitudes — same as gammaCore.' },
     { criterionId: 'biofeedback', score: 6.0, note: 'App logs sessions and supports simple mood/stress journaling. No on-device HRV measurement.' },
-    { criterionId: 'value', score: 8.0, note: '$325 one-time for 350 preloaded sessions (about six months of daily use) — now only about $56 more than Pulsetto; the rechargeable Truvaga Plus is $499. No prescription. Roughly one-fifth the long-term cost of gammaCore.' },
+    { criterionId: 'value', score: 8.0, note: '$325 one-time for 350 preloaded sessions (about six months at the maker’s suggested two sessions a day) — now only about $56 more than Pulsetto; the rechargeable Truvaga Plus is $499. No prescription. Roughly one-fifth the long-term cost of gammaCore.' },
   ],
   editorialAdjustment: { value: -0.3, reason: 'Marketing honesty — the homepage says Truvaga devices “are a product of extensive clinical studies”, but those studies are of gammaCore, the prescription device; we found no published trial of Truvaga itself (checked October 2026). This is scored here, not under evidence.' },
   pros: [
-    'Same hardware platform as the FDA-cleared gammaCore — proven safety',
+    'Same hardware platform as the FDA-cleared gammaCore',
     'No prescription, no insurance approval needed',
     'Cervical tVNS — targets the vagal trunk directly, not just the ear branch',
     'Companion app logs sessions and tracks self-rated stress',
@@ -46,7 +46,7 @@ Truvaga 350 is the most credible cervical-VNS device a consumer can buy without 
 
 ## What are the downsides of Truvaga 350?
 
-The consumer version is no longer regulated as a medical device — Truvaga is sold for general wellness, and the wellness-indication clinical evidence is much thinner than gammaCore’s headache record. The 350 designation is literal: 350 two-minute sessions and the unit retires, after which you pay for a refresh. There is no on-device HRV, and protocol variety is limited to intensity.
+The consumer version is no longer regulated as a medical device — Truvaga is sold for general wellness, and there are no published trials of Truvaga itself — the evidence comes from gammaCore studies of the same stimulation approach. The 350 designation is literal: 350 two-minute sessions and the unit retires, after which you pay for a refresh. There is no on-device HRV, and protocol variety is limited to intensity.
 
 ## Who should buy Truvaga 350?
 
@@ -69,7 +69,7 @@ The biology behind what these devices target — and the protocols that compound
   relatedSlugs: ['gammacore-sapphire-cv', 'nurosym', 'pulsetto'],
   faq: [
     { q: "Is the Truvaga 350 worth it?", a: "The Truvaga 350 is worth it if you want gammaCore-style cervical tVNS without a prescription. It uses the same hardware platform as FDA-cleared gammaCore and targets the vagal trunk directly. Its consumer use is not FDA-cleared, and its 350-session cap obscures long-term cost." },
-    { q: "How much does the Truvaga 350 cost?", a: "The Truvaga 350 costs $325 one-time on truvaga.com and provides 350 preloaded sessions (about six months of daily use); the rechargeable, unlimited-use Truvaga Plus costs $499. That lifetime cap makes the long-term cost less obvious than the upfront price suggests, so factor in how often you plan to use it." },
+    { q: "How much does the Truvaga 350 cost?", a: "The Truvaga 350 costs $325 one-time on truvaga.com and provides 350 preloaded sessions (about six months at the maker’s suggested two sessions a day); the rechargeable, unlimited-use Truvaga Plus costs $499. That lifetime cap makes the long-term cost less obvious than the upfront price suggests, so factor in how often you plan to use it." },
     { q: "What are the downsides of the Truvaga 350?", a: "Truvaga is not FDA-cleared for its consumer indication and is sold as a wellness device. The 350-use cap hides long-term cost, sessions are fixed at 2 minutes with intensity the only variable, and there is no on-device HRV biofeedback." },
     { q: "Truvaga 350 vs gammaCore: which is better?", a: "Truvaga uses the same hardware platform as the FDA-cleared gammaCore but needs no prescription or insurance approval. gammaCore holds the FDA clearance; Truvaga is sold as a wellness device. Choose Truvaga for easy access to cervical tVNS." },
   ],

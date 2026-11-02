@@ -494,13 +494,15 @@ app.post('/api/comments', async (req, res) => {
   }
 })
 
-// POST /api/waitlist  { email, platform }
+// POST /api/waitlist  { email, platform, source? }  (source: e.g. 'vibration_tool'; needs supabase-waitlist-source.sql)
+// Only short [a-z0-9_] tags are stored as source; anything else is dropped (never free text).
+const cleanSource = (s) => (typeof s === 'string' && /^[a-z0-9_]{1,40}$/.test(s) ? s : null)
 app.post('/api/waitlist', async (req, res) => {
   if (!supa) return res.status(503).json({ error: 'Waitlist service unavailable' })
   const { email, platform } = req.body || {}
   if (!email) return res.status(400).json({ error: 'Missing email' })
   try {
-    const { error } = await supa.from('waitlist').insert({ email, platform: platform || null })
+    const { error } = await supa.from('waitlist').insert({ email, platform: platform || null, ...(cleanSource(req.body?.source) ? { source: cleanSource(req.body.source) } : {}) })
     if (error) {
       if (error.code === '23505') return res.status(409).json({ error: 'duplicate' })
       return res.status(500).json({ error: error.message })

@@ -9,12 +9,12 @@ const finnleoHallmark: ToolReviewInput = {
   description:
     'ONDA review of the Finnleo Hallmark — the Finnish-built traditional indoor sauna with premium hemlock or nordic white spruce construction.',
   verdict:
-    'A Finnish-built traditional indoor sauna — premium Finnish-build, full convection heat, deepest sauna-research mechanism.',
+    'A Finnish-built traditional indoor sauna — premium build and full convection heat, in the sauna format the Finnish cohort studies looked at.',
   summary:
     'Finnleo Hallmark is the Finnish-built traditional indoor sauna for users who want the real thing. Helo-engineered heater (3 kW–9 kW depending on cabin size), Finnish hemlock or nordic white spruce panelling, full convection heat (80–95°C) with löyly steam. Finnish-engineered for the heat profile the Finnish cohort studies are built on.',
   scores: [
     { criterionId: 'heat-source', score: 9.0, note: 'Finnish Helo-engineered convection heater — gold-standard Finnish-sauna heat delivery with löyly steam support.' },
-    { criterionId: 'build', score: 9.0, note: 'Finnish hemlock or nordic white spruce. Multi-decade Finnish manufacturing pedigree. 5-year structural warranty.' },
+    { criterionId: 'build', score: 9.0, note: 'Finnish hemlock or nordic white spruce. Multi-decade Finnish manufacturing pedigree. We could not confirm the warranty terms on an official page.' },
     { criterionId: 'emf', score: 9.5, note: 'Traditional convection — no electronics in heat delivery. EMF non-issue.' },
     { criterionId: 'form-factor', score: 7.0, note: 'Indoor cabin installation. 1–6 person configurations. Requires ventilation planning and 220V for larger heaters.' },
     { criterionId: 'evidence', score: 8.0, note: 'The Finnish cohort studies on cardiovascular mortality and dementia risk were run on this style of sauna. Deepest evidence base in the sauna category, though observational (men only; associations, not cause).' },
@@ -24,7 +24,7 @@ const finnleoHallmark: ToolReviewInput = {
     'Premium Finnish manufacturing pedigree',
     'Helo-engineered heater with löyly steam support',
     'Finnish hemlock or nordic white spruce construction',
-    'Deepest published research evidence base (observational Finnish cohort studies)',
+    'Traditional Finnish sauna format, the type studied in Finnish cohort studies',
   ],
   cons: [
     'Not IR — different mechanism from IR cabin saunas',

@@ -22,7 +22,7 @@ const pillow: ToolReviewInput = {
     { criterionId: 'value', score: 6.5, note: 'A subscription on top of needing an Apple Watch and iPhone narrows who it pays off for.' },
   ],
   pros: [
-    'Detailed, accurate Apple Watch tracking',
+    'Detailed Apple Watch tracking',
     'Well-presented analysis with weekly to yearly views',
     'Metric comparison to explain a poor night',
     'Easy to navigate',
@@ -59,7 +59,7 @@ Choose Pillow if you are on iPhone, wear an Apple Watch to bed, and want detaile
 The sleep biology behind what these apps measure and the protocols they support.
 
 - [Circadian lighting and dark therapy](/articles/circadian-lighting-dark-therapy) — the protocol layer that compounds with tracking
-- [Ancestral sync and circadian anchors](/articles/ancestral-sync-circadian-anchors) — the inputs that keep circadian timing stable across travel and shift work
+- [Circadian anchors: keeping timing stable](/articles/ancestral-sync-circadian-anchors) — the inputs that keep circadian timing stable across travel and shift work
 - [Protocol: the circadian hard reset](/articles/protocol-circadian-hard-reset) — how to actually shift the rhythm when you have to
 `,
   references: [
@@ -68,7 +68,7 @@ The sleep biology behind what these apps measure and the protocols they support.
   ],
   relatedSlugs: ['sleep-cycle', 'sleepscore', 'autosleep'],
   faq: [
-    { q: "Is Pillow worth it?", a: "Pillow is worth it for iPhone and Apple Watch owners who want detailed, well-presented sleep analysis. It offers accurate Apple Watch tracking, weekly to yearly views and metric comparisons that help explain a poor night. It is iOS-only and light on wind-down content." },
+    { q: "Is Pillow worth it?", a: "Pillow is worth it for iPhone and Apple Watch owners who want detailed, well-presented sleep analysis. It offers detailed Apple Watch tracking, weekly to yearly views and metric comparisons that help explain a poor night. It is iOS-only and light on wind-down content." },
     { q: "How much does Pillow cost?", a: "Pillow Premium is listed at $50 per year. The app is iOS and Apple Watch only, and its fuller features require the subscription, so Android users and non-subscribers get a limited experience. The review praises its well-presented weekly to yearly views." },
     { q: "What are the downsides of Pillow?", a: "Pillow is iOS-only with no Android version, leans heavily on owning an Apple Watch, has minimal wind-down content, and needs a subscription for its fuller features. It is best as a detailed analysis tool for Apple Watch owners rather than a relaxation or wind-down app." },
   ],

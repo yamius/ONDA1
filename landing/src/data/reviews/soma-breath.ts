@@ -7,11 +7,11 @@ const somaBreath: ToolReviewInput = {
   category: 'breathwork-app',
   productType: 'Rhythmic music breathwork app with practitioner certifications',
   description:
-    'ONDA review of SOMA Breath — rhythmic music breathwork app from Niraj Naik with global practitioner certification network. Scored on library, technique coverage, evidence and value.',
+    'ONDA review of SOMA Breath, Niraj Naik’s rhythmic music-paced breathwork app with a practitioner network. Scored on library, evidence and value.',
   verdict:
     'Best for music-paced rhythmic breathwork with global certification community. Less science-informed than Breathwrk, deeper ceremony framing than Othership.',
   summary:
-    'SOMA Breath is the rhythmic music breathwork reference — Niraj Naik’s method paces breath to beat-driven tracks, often layered with Wim Hof rounds and pranayama elements. Distinguished by the global practitioner certification network (hundreds of SOMA-certified facilitators worldwide). Strong ceremony framing, moderate evidence grounding, mid-tier subscription pricing.',
+    'SOMA Breath is a rhythmic music-paced breathwork app — Niraj Naik’s method paces breath to beat-driven tracks, often layered with Wim Hof rounds and pranayama elements. Distinguished by the global practitioner certification network (per SOMA, hundreds of SOMA-certified facilitators worldwide). Strong ceremony framing, moderate evidence grounding, mid-tier subscription pricing.',
   scores: [
     { criterionId: 'session-library', score: 8.0, note: 'Solid library of rhythmic music-paced sessions across awakening, healing, calm and ceremony. Smaller than Othership’s catalogue, with deeper per-session production.' },
     { criterionId: 'technique-coverage', score: 7.5, note: 'Wim Hof rounds, pranayama, breath retentions, rhythmic-music pacing. Less Buteyko / clinical-modality coverage than Breathwrk; deeper into rhythmic crossover.' },
@@ -21,7 +21,7 @@ const somaBreath: ToolReviewInput = {
     { criterionId: 'value', score: 7.5, note: '$99/year — mid-premium tier. Reasonable for the production value and practitioner network access.' },
   ],
   pros: [
-    'Rhythmic music breathwork — unique pacing approach in the category',
+    'A rhythmic music-paced breathwork app',
     'Global practitioner certification network',
     'Strong ceremony / journey production',
     'Wim Hof crossover with pranayama elements',
@@ -41,7 +41,7 @@ const somaBreath: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-SOMA Breath is the rhythmic music breathwork reference — beat-paced sessions, Wim Hof crossover, pranayama elements and a global practitioner certification network. Strong ceremony production and a unique pacing approach distinct from voice-guided alternatives.
+SOMA Breath is a rhythmic music-paced breathwork app — beat-paced sessions, Wim Hof crossover, pranayama elements and a global practitioner certification network. Strong ceremony production and a pacing approach distinct from voice-guided alternatives.
 
 ## What are the downsides of SOMA Breath?
 
@@ -55,9 +55,9 @@ Choose SOMA Breath for rhythmic music-paced breathwork with ceremony framing and
 
 ## Background reading
 
-- [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep)
-- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
-- [Ancestral sync — circadian anchors](/articles/ancestral-sync-circadian-anchors)
+- [Meditation vs breathwork: which should you choose?](/articles/meditation-vs-breathwork)
+- [Wim Hof breathing and inflammation](/articles/wim-hof-breathing-inflammation)
+- [Coherent breathing and HRV](/articles/coherent-breathing-guide)
 `,
   references: [
     { label: 'SOMA Breath — official site', url: 'https://www.somabreath.com/' },

@@ -20,7 +20,7 @@ const threeVagusForms: HeadToHeadInput = {
   bestForC:
     'Choose Hoolest VeRelief Prime if you want short, intense parasympathetic priming around training and sleep — athlete-built handheld with founder-published research.',
   axes: [
-    { name: 'Mechanism', winner: 'c', note: 'Hoolest: electrical tVNS (auricular + cervical, direct). Apollo: vibrotactile (indirect via mechanoreceptors). Sensate: infrasonic chest resonance (indirect). Hoolest is the most direct.' },
+    { name: 'Mechanism', criterionId: 'mechanism', note: 'Hoolest: electrical tVNS (auricular + cervical, direct). Apollo: vibrotactile (indirect via mechanoreceptors). Sensate: infrasonic chest resonance (indirect). Hoolest is the most direct.' },
     { name: 'Independent evidence', winner: 'a', note: 'Apollo: University of Pittsburgh HRV/recovery RCTs. Hoolest: founder-published research from ASU spin-out. Sensate: one published pilot plus company-funded studies. Apollo leads on independent depth.' },
     { name: 'Acute effect strength', winner: 'c', note: 'Hoolest delivers the strongest acute effect per session (electrical, high peak intensity). Sensate is moderate (focused ritual). Apollo is gentlest by design.' },
     { name: 'All-day wearability', winner: 'a', note: 'Apollo: wrist/ankle/clip-on, 24/7. Sensate and Hoolest: session-based, sit-down or handheld engagement required.' },

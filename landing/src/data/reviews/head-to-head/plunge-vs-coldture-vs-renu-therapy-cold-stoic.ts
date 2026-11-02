@@ -22,7 +22,7 @@ const threePremiumPlunge: HeadToHeadInput = {
     { name: 'Chiller power', winner: 'a', note: 'Plunge: 1 HP, most aggressive temperature recovery. Coldture: capable, winter-optimised. Renu Therapy: capable, quiet-optimised.' },
     { name: 'Cold-climate winter performance', winner: 'b', note: 'Coldture is engineered around outdoor winter operation. Plunge and Renu Therapy are temperate-climate baseline.' },
     { name: 'Indoor noise profile', winner: 'c', note: 'Renu Therapy has the quietest chiller in the category. Plunge and Coldture are normal-quiet but not silent.' },
-    { name: 'Build', winner: 'tie', note: 'All three premium insulated builds with comparable multi-year reliability and 3-year warranties.' },
+    { name: 'Build', criterionId: 'build', note: 'All three premium insulated builds with comparable multi-year reliability and 3-year warranties.' },
     { name: 'Brand and content', winner: 'a', note: 'Plunge: deepest founder ecosystem and content library. Coldture and Renu Therapy: leaner content presence.' },
     { name: 'Distribution', winner: 'a', note: 'Plunge: strongest US distribution. Coldture: strongest Canada/EU. Renu Therapy: US-focused with quiet-install positioning.' },
     { name: 'Price', winner: 'b', note: 'Coldture: ~$4,500. Renu Therapy: ~$5,500. Plunge: $5,990. Coldture is the price leader of the three.' },

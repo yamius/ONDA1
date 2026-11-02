@@ -1,5 +1,5 @@
 ---
-sourceHash: 952ca247f74b
+sourceHash: "fc1adc20f09d"
 title: "HRV 低是什么原因？常见原因与证据说明"
 metaTitle: "HRV 偏低是什么原因？原因与含义"
 metaDescription: "HRV（心率变异性）偏低大多是对睡眠、饮酒、生病、压力或训练的反应，而不是疾病诊断。逐一说明各个原因的证据，以及什么时候该去看医生。"

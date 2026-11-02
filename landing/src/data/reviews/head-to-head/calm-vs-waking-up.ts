@@ -6,7 +6,7 @@ const calmVsWakingUp: HeadToHeadInput = {
   productBSlug: 'waking-up',
   title: 'Calm vs Waking Up (2026)',
   description:
-    'Calm vs Waking Up — the polished sleep-and-relaxation library vs the deepest, most philosophical meditation app. Broad, easy content vs serious depth for experienced meditators.',
+    'Calm vs Waking Up — the polished sleep-and-relaxation library vs the teaching-focused, philosophy-heavy meditation app. Broad, easy content vs serious depth for experienced meditators.',
   intro:
     'Calm and Waking Up sit at opposite ends of the meditation world. Calm is the polished mainstream app — the best sleep stories and a huge, beautifully produced library, easy for anyone. Waking Up is Sam Harris’s deep, secular-philosophy course: rigorous instruction that connects practice to the nature of mind, aimed at people who want to go further. It’s breadth-and-relaxation versus depth-and-rigour.',
   jobDependentVerdict: true,
@@ -18,7 +18,7 @@ const calmVsWakingUp: HeadToHeadInput = {
     'Choose Waking Up if you’re an experienced or serious meditator who wants depth, rigour and philosophy over a big content library.',
   axes: [
     { name: 'Sleep & relaxation', winner: 'a', note: 'Calm is the category’s sleep leader — 500+ Sleep Stories and the best bedtime audio. Waking Up isn’t built for wind-down.' },
-    { name: 'Depth & rigour', winner: 'b', note: 'Waking Up is the deepest, most rigorous app here — serious instruction and philosophy no other app attempts. Calm stays accessible and mainstream.' },
+    { name: 'Depth & rigour', winner: 'b', note: 'Waking Up is teaching-focused and philosophy-heavy — serious instruction and philosophy that Calm does not attempt. Calm stays accessible and mainstream.' },
     { name: 'Library breadth', winner: 'a', note: 'Calm has the largest, most polished library across meditation, sleep and soundscapes. Waking Up is a focused single path, not a big library.' },
     { name: 'Best for beginners', winner: 'a', note: 'Calm is easy for anyone. Waking Up is explicitly not aimed at first-timers.' },
     { name: 'For experienced meditators', winner: 'b', note: 'Waking Up rewards experienced practitioners who want a coherent path and deeper theory. Calm can feel shallow to them.' },
@@ -40,7 +40,7 @@ const calmVsWakingUp: HeadToHeadInput = {
   ],
   content: `## The short version
 
-[Calm](/reviews/calm) is the polished sleep-and-relaxation library, easy for anyone; [Waking Up](/reviews/waking-up) is the deepest, most philosophical app, for serious meditators.
+[Calm](/reviews/calm) is the polished sleep-and-relaxation library, easy for anyone; [Waking Up](/reviews/waking-up) is the teaching-focused, philosophy-heavy app, for serious meditators.
 
 ## When is Calm the right pick?
 

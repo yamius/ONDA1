@@ -17,6 +17,7 @@
  *    wearables count when their app syncs heart data to Apple Health → 'partly'.
  *    Live coherence is Apple-Watch-only; the camera pulse works on any iPhone.
  */
+import { mcpExportScoreErrors } from './lib/score-text-check'
 import { writeFileSync, readFileSync, mkdirSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -132,14 +133,14 @@ const duelRows = headToHeads.map((h) => {
   onda_scores: Object.fromEntries(prods.map((r) => [r.slug, r.overallScore])),
   verdict: h.verdict,
   bestFor: { a: h.bestForA, b: h.bestForB, c: h.bestForC ?? null },
-  axes: h.axes,
+  axes: h.axes.map(({ name, winner, note }) => ({ name, winner, note })),
 }})
 
 const roundupRows = comparisons.map((c) => ({
   slug: c.slug,
   title: c.title,
   url: `${SITE}/reviews/compare/${c.slug}`,
-  picks: c.picks.map((p) => ({ review: p.reviewSlug, award: p.award, takeaway: p.takeaway, ...(p.comparisonOnly ? { comparisonOnly: p.comparisonOnly } : {}) })),
+  picks: c.picks.map((p) => ({ review: p.reviewSlug, award: [...(p.ruleAwards ?? []).map((a) => (a.practicallyEqual ? `${a.label} (practically equal)` : a.label) + (p.ruleAwardCaption && a.key === 'best-value' ? ` — ${p.ruleAwardCaption}` : '')), p.award].filter(Boolean).join(' · '), takeaway: p.takeaway, ...(p.comparisonOnly ? { comparisonOnly: p.comparisonOnly } : {}) })),
 }))
 
 mkdirSync(dirname(OUT), { recursive: true })
@@ -201,3 +202,10 @@ for (const name of ['hrv-norms', 'breathing']) {
   })
 }
 console.log('lib/generated/hrv-norms.js, breathing.js')
+
+// Task 089: the exported review text must carry the computed scores (no stale / hand-typed numbers).
+const scoreErrors = mcpExportScoreErrors(OUT)
+if (scoreErrors.length) {
+  console.error(`[export] ${scoreErrors.length} score error(s):\n  ${scoreErrors.join('\n  ')}`)
+  process.exit(1)
+}

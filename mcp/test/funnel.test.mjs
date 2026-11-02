@@ -13,8 +13,17 @@ const COUNTS = {
   practice_start: 120, practice_complete: 90, results_view: 85,
   paywall_view: 80, purchase: 8, paywall_dismiss: 60, home_view: 55,
 };
-const HOME_BY_SOURCE = { first_run: 40, relaunch: 15 };
+const HOME_BY_SOURCE = { first_run: 40, relaunch: 15, first_launch: 150 };
+// home_view source x days_since_first_seen (pre-1.9.6 fallback)
+const HOME_BY_SOURCE_DAYS = [['relaunch', '0', 12], ['relaunch', '3', 9], ['first_run', '0', 40], ['relaunch', '(not set)', 2]];
 const DISMISS_BY_ACTION = { close: 45, continue_free: 15 };
+
+// 101: paywall_source split per event ([users, events]).
+const PAYWALL_SOURCE_BY_EVENT = {
+  purchase: { practice_gate_basic: [5, 6], post_first_experience: [2, 2] },
+  trial_start: { post_first_experience: [3, 3] },
+};
+let lastEvent;
 
 mock.module(ga4Url, {
   namedExports: {
@@ -22,14 +31,22 @@ mock.module(ga4Url, {
     internalFilter: () => null,
     appVersionFilter: () => null,
     andFilters: () => undefined,
-    eventNameFilter: () => null,
+    eventNameFilter: (names) => { lastEvent = names?.[0]; return null; },
     ga4Probe: async () => ({ ok: true }),
     runReport: async (body) => {
       const dim = body.dimensions?.[0]?.name;
       const mk = (obj) => ({ rows: Object.entries(obj).map(([k, v]) => ({ dimensionValues: [{ value: k }], metricValues: [{ value: String(v) }] })) });
+      if (body.dimensions?.[1]?.name === 'customEvent:days_since_first_seen') {
+        return { rows: HOME_BY_SOURCE_DAYS.map(([s, d, v]) => ({ dimensionValues: [{ value: s }, { value: d }], metricValues: [{ value: String(v) }] })) };
+      }
       if (dim === 'eventName') return mk(COUNTS);
       if (dim === 'customEvent:source') return mk(HOME_BY_SOURCE);
       if (dim === 'customEvent:action') return mk(DISMISS_BY_ACTION);
+      if (dim === 'customEvent:paywall_source') {
+        const m2 = (obj) => ({ rows: Object.entries(obj).map(([k, [u, e]]) => ({ dimensionValues: [{ value: k }], metricValues: [{ value: String(u) }, { value: String(e) }] })) });
+        return m2(PAYWALL_SOURCE_BY_EVENT[lastEvent] ?? {});
+      }
+      if (dim === 'customEvent:outcome') { const e = new Error('Field customEvent:outcome is not a valid dimension'); e.status = 400; throw e; }
       return { rows: [] };
     },
   },
@@ -39,7 +56,7 @@ const { funnelReview } = await import('../tools/funnel_review.js');
 
 test('шаги воронки: проценты от предыдущего и от вершины', async () => {
   const r = await funnelReview({ since: 28 });
-  const byName = Object.fromEntries(r.steps.map(s => [s.step, s]));
+  const byName = Object.fromEntries(r.legacy_onboarding_steps.map(s => [s.step, s]));
   assert.equal(byName.first_open.users, 200);
   assert.equal(byName.first_open.from_previous, null, 'у первого шага нет предыдущего');
   // 150 из 180 = 83.3%
@@ -81,8 +98,7 @@ test('low_data проставляется при малом знаменател
 });
 
 test('silent_exit не уходит в минус при потере событий', async () => {
-  const { funnelReview: fr } = await import('../tools/funnel_review.js');
-  const r = await fr({ since: 28 });
+  const r = await funnelReview({ since: 28 });
   assert.ok(r.paywall.silent_exit.users >= 0);
 });
 
@@ -91,8 +107,7 @@ test('the two paywalls are reported separately, never as one conversion', async 
   // `source`. Summing them produced "55 views, 1 purchase" and the false
   // conclusion that the paywall converts terribly — that number was a shop
   // window and a decision point added together.
-  const { funnelReview: fr } = await import('../tools/funnel_review.js');
-  const r = await fr({ since: 28 });
+  const r = await funnelReview({ since: 28 });
 
   assert.equal(r.paywall_by_type.soft_onboarding.source_value, 'post_first_experience');
   assert.equal(r.paywall_by_type.hard_practice_gate.source_value, 'practice_gate_basic');
@@ -100,14 +115,15 @@ test('the two paywalls are reported separately, never as one conversion', async 
   assert.match(r.paywall.combined_warning, /SUM of both paywalls/);
 });
 
-test('per-paywall conversion is declared impossible rather than guessed', async () => {
-  const { funnelReview: fr } = await import('../tools/funnel_review.js');
-  const r = await fr({ since: 28 });
+test('purchase / trial_start split by paywall_source, trial_outcome by outcome (101)', async () => {
+  const r = await funnelReview({ since: 28 });
   const attr = r.paywall_by_type.purchase_attribution;
-  assert.equal(attr.available, false);
-  // purchase fires from the entitlement change and carries no paywall source,
-  // so splitting it per paywall would be invention.
-  assert.match(attr.reason, /carries no paywall source/);
+  assert.equal(attr.purchase_by_paywall_source.available, true);
+  assert.deepEqual(attr.purchase_by_paywall_source.by_value.practice_gate_basic, { users: 5, events: 6 });
+  assert.equal(attr.trial_start_by_paywall_source.by_value.post_first_experience.users, 3);
+  // trial_outcome dimension `outcome` not registered → told what to create, not guessed.
+  assert.equal(attr.trial_outcome_by_outcome.available, false);
+  assert.equal(attr.trial_outcome_by_outcome.reason, 'create GA4 custom dimension outcome (event scope)');
   assert.equal(typeof attr.total_purchases_in_window, 'number');
 });
 
@@ -115,11 +131,49 @@ test('hard-paywall views sum BOTH source values across the rename seam', async (
   // The app used to label the view 'practice_intro' and the dismiss
   // 'practice_gate_basic' for the SAME paywall. Unifying it would have broken
   // the view series unless the tool counts both, which is the whole point.
-  const { funnelReview: fr } = await import('../tools/funnel_review.js');
-  const r = await fr({ since: 28 });
+  const r = await funnelReview({ since: 28 });
   const hard = r.paywall_by_type.hard_practice_gate;
   assert.equal(hard.source_value, 'practice_gate_basic');
   assert.ok(hard.views_by_source_value !== undefined, 'the split across the seam is visible');
   assert.match(hard.seam_note, /SUM of/);
   assert.match(hard.seam_note, /practice_intro/);
+});
+
+test('new-user funnel: first_open -> home_view{first_launch} -> practice_start', async () => {
+  const r = await funnelReview({ since: 28 });
+  assert.deepEqual(r.steps.slice(0, 3).map((s) => s.step), ['first_open', 'home_view{source:first_launch}', 'practice_start']);
+  assert.equal(r.steps[1].users, 150);            // only source=first_launch, not all home_view
+  assert.equal(r.steps[1].from_previous.pct, 75); // 150/200
+  assert.equal(r.steps[2].from_previous.pct, 80); // 120/150
+  assert.ok(r.steps.some((s) => s.step === 'paywall_view'));
+  assert.match(r.funnel_note, /disabled since 1\.9/);
+});
+
+test('legacy onboarding line stays as a secondary list', async () => {
+  const r = await funnelReview({ since: 28 });
+  assert.deepEqual(r.legacy_onboarding_steps.slice(0, 3).map((s) => s.step), ['first_open', 'onboarding_start', 'onboarding_complete']);
+});
+
+test('pre-1.9.6 fallback = relaunch with days_since_first_seen 0, labelled', async () => {
+  const r = await funnelReview({ since: 28 });
+  const fb = r.pre_1_9_6_fallback;
+  assert.equal(fb.available, true);
+  assert.equal(fb.users, 12);                      // not first_run, not day 3, not (not set)
+  assert.match(fb.label, /FALLBACK/);
+});
+test('default internal=exclude surfaces the 1.9.5 mislabel note', async () => {
+  const r = await funnelReview({ since: 30, app_version: '1.9.5' });
+  assert.match(r.internal_note, /1\.9\.5 помечена internal целиком/);
+});
+
+test('103: fallback says "нет данных" when days_since_first_seen has no numeric values', async () => {
+  const saved = HOME_BY_SOURCE_DAYS.splice(0, HOME_BY_SOURCE_DAYS.length, ['relaunch', '(not set)', 30], ['relaunch', '', 5]);
+  try {
+    const fb = (await funnelReview({ since: 30 })).pre_1_9_6_fallback;
+    assert.equal(fb.available, false);
+    assert.equal(fb.users, null);
+    assert.match(fb.reason, /нет данных/);
+  } finally {
+    HOME_BY_SOURCE_DAYS.splice(0, HOME_BY_SOURCE_DAYS.length, ...saved);
+  }
 });

@@ -18,10 +18,10 @@ const imrsVsOmi: HeadToHeadInput = {
     'Choose OMI Full Body Mat if you want straightforward single-modality PEMF mat at accessible mid-tier pricing without paying for multi-applicator complexity.',
   axes: [
     { name: 'Applicator range', winner: 'a', note: 'iMRS: mat + pillow + spot applicator from single controller. OMI: full-body mat only, pillow at upsell.' },
-    { name: 'Field strength', winner: 'tie', note: 'Both in the low-to-moderate research range. Comparable usable continuous output.' },
+    { name: 'Field strength', criterionId: 'field-strength', note: 'Both in the low-to-moderate research range. Comparable usable continuous output.' },
     { name: 'Waveform research', winner: 'tie', note: 'iMRS: sawtooth waveform with Schumann and maker-labelled morning/evening presets. OMI: simple presets; OMI is not FDA-cleared for bone healing. We found no trials of either device.' },
     { name: 'Build pedigree', winner: 'a', note: 'iMRS: Swiss-engineered, multi-decade Swiss Bionic Solutions brand. OMI: solid build but less brand pedigree.' },
-    { name: 'Programmability', winner: 'a', note: 'iMRS: morning and evening preset protocols (the maker calls them energising and calming; not tested in controlled trials). OMI: simple preset operation with limited customisation.' },
+    { name: 'Programmability', criterionId: 'programmability', note: 'iMRS: morning and evening preset protocols (the maker calls them energising and calming; not tested in controlled trials). OMI: simple preset operation with limited customisation.' },
     { name: 'Daily-use simplicity', winner: 'b', note: 'OMI: one button, one mat, done. iMRS: multi-applicator setup requires more user engagement per session.' },
     { name: 'Price', winner: 'b', note: 'iMRS Prime: $3,500–$4,500. OMI: $1,500–$2,000. OMI roughly half the price.' },
   ],

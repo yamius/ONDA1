@@ -9,9 +9,9 @@ const bioLightPro900: ToolReviewInput = {
   description:
     'ONDA review of the BioLight Pro 900 — mid-size red light panel pitched as a Joovv alternative. Scored on irradiance, EMF, build and value.',
   verdict:
-    'Solid mid-size Joovv alternative — competent build, two-wavelength coverage, no standout differentiator at the price.',
+    'Solid mid-size Joovv alternative — competent build, four-wavelength coverage, no standout differentiator at the price.',
   summary:
-    'The BioLight Pro 900 sits in the same mid-tier as the PlatinumLED BIOMAX 600 — full-spectrum (600 nm + 660 nm + 830 nm + 850 nm), half-body coverage, third-party EMF testing in the same range as Joovv. The pitch is "Joovv alternative" without the brand premium; the execution is competent rather than category-leading. Reasonable mid-premium pick if you want a four-wavelength panel under $1,000.',
+    'The BioLight Pro 900 sits in the same mid-tier as the PlatinumLED BIOMAX 600 — four-wavelength (600 nm + 660 nm + 830 nm + 850 nm), half-body coverage, third-party EMF testing in the same range as Joovv. The pitch is "Joovv alternative" without the brand premium; the execution is competent rather than category-leading. Reasonable mid-premium pick if you want a four-wavelength panel under $1,000.',
   scores: [
     { criterionId: 'irradiance', score: 8.0, note: 'Manufacturer-claimed ~120 mW/cm² at 0"; ~50 mW/cm² at 6". Independent verification within 10–15% of stated figures.' },
     { criterionId: 'wavelengths', score: 8.5, note: 'Four wavelengths (600 + 660 + 830 + 850 nm) — narrower than the six-wavelength MitoPRO 1500X but standard photobiomodulation coverage.' },
@@ -57,7 +57,7 @@ Choose BioLight Pro 900 if you want a four-wavelength mid-size panel under $1,00
 The photobiomodulation mechanism behind why red light therapy works.
 
 - [Mitochondrial DNA and red light](/articles/mitochondrial-dna-red-light) — how 660/850 nm photons reach the mitochondria and what they do there
-- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why photobiomodulation drives mitochondrial density up
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — background on mitochondrial biogenesis and photobiomodulation
 - [Longevity hardware and cellular cleanup](/articles/longevity-hardware-cellular-cleanup) — how RLT fits the broader autophagy / mitophagy stack
 `,
   references: [

@@ -18,7 +18,7 @@ const dysonVsIqair: HeadToHeadInput = {
     'Choose IQAir HealthPro Plus if you want maker-rated HyperHEPA H14 filtration depth with multi-decade Swiss pedigree.',
   axes: [
     { name: 'Filtration depth', winner: 'b', note: 'IQAir: HyperHEPA H14 (0.003 microns). Dyson: True HEPA H13 + formaldehyde catalyst. IQAir deeper raw filtration.' },
-    { name: 'Smart features', winner: 'a', note: 'Dyson: PM2.5 / VOC / formaldehyde sensors, app, HomeKit, real-time display. IQAir: no app, no sensors.' },
+    { name: 'Smart features', criterionId: 'smart-features', note: 'Dyson: PM2.5 / VOC / formaldehyde sensors, app, HomeKit, real-time display. IQAir: no app, no sensors.' },
     { name: 'Noise', winner: 'a', note: 'Dyson: ~24 dB on low (quietest premium). IQAir: ~30 dB on low, 65 dB on high.' },
     { name: 'Coverage', winner: 'a', note: 'Dyson: large-room with airflow engineering. IQAir: 1125 sq ft at 2 ACH. Dyson coverage marketing more aggressive; specs comparable.' },
     { name: 'Build pedigree', winner: 'b', note: 'IQAir: multi-decade clinical / hospital deployment pedigree. Dyson: consumer brand crossover into air purifiers.' },

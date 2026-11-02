@@ -19,9 +19,9 @@ const plungeVsIceBarrel: HeadToHeadInput = {
   axes: [
     { name: 'Operating model', winner: 'a', note: 'Plunge: chiller holds temperature automatically. Ice Barrel: user fills with water and ice per session. Plunge wins on daily-use convenience.' },
     { name: 'Cold delivery consistency', winner: 'a', note: 'Plunge: 39°F held automatically year-round. Ice Barrel: temperature varies with ambient and ice fill.' },
-    { name: 'Build', winner: 'tie', note: 'Plunge: premium acrylic with insulation. Ice Barrel: food-grade plastic barrel with insulation. Both solid for their tier.' },
+    { name: 'Build', criterionId: 'build', note: "The Plunge leads: an insulated acrylic tub with marine-grade hardware and a 3-year warranty, versus Ice Barrel's insulated food-grade plastic barrel with a 1-year warranty. Both have solid multi-year reliability records." },
     { name: 'Footprint', winner: 'b', note: 'Ice Barrel: smaller vertical footprint (32" diameter). Plunge: horizontal tub with larger footprint.' },
-    { name: 'Water management', winner: 'a', note: 'Plunge: ozone-sanitised, water changes every 2–4 weeks. Ice Barrel: manual changes plus daily ice top-ups.' },
+    { name: 'Water management', criterionId: 'water-management', note: 'Plunge: ozone-sanitised, water changes every 2–4 weeks. Ice Barrel: manual changes plus daily ice top-ups.' },
     { name: 'Daily operating cost', winner: 'a', note: 'Plunge: electricity only (~$10–30/month chiller runtime). Ice Barrel: $5–15/day in ice during warm seasons.' },
     { name: 'Upfront cost', winner: 'b', note: 'Ice Barrel: $1,200. Plunge: $5,990. Ice Barrel is roughly 20% of Plunge upfront.' },
   ],
@@ -31,8 +31,8 @@ const plungeVsIceBarrel: HeadToHeadInput = {
       a: 'For daily-use practice, no — Ice Barrel requires daily ice fill where Plunge holds cold automatically. For cold-climate or occasional use, Ice Barrel is fine and saves $4,800 upfront. Run the daily-ice math for your climate before deciding.',
     },
     {
-      q: 'How much ice does Ice Barrel need per session?',
-      a: 'Depends on ambient temperature. In warm climates ($5–15/day in ice during summer). In cold climates (winter / snow), zero to negligible. Annualised in warm climates, ice cost can rival Plunge’s upfront cost within 12–18 months.',
+      q: 'How much does ice for Ice Barrel cost?',
+      a: 'Depends on ambient temperature. In warm climates ($5–15/day in ice during summer). In cold climates (winter / snow), zero to negligible. In a climate that stays warm all year, $5–15 a day adds up to roughly $1,800–5,500 a year — enough to erase Ice Barrel’s $4,800 upfront saving within about one to three years; with a cold winter it takes longer.',
     },
     {
       q: 'Can The Plunge work indoors?',

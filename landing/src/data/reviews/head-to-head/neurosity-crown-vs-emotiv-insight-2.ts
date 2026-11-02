@@ -17,12 +17,12 @@ const neurosityVsEmotiv: HeadToHeadInput = {
     'Choose Emotiv Insight 2 if you need the EmotivPRO toolchain and its deep academic publication base, and the Pro subscription for raw-data access is acceptable.',
   axes: [
     { name: 'EEG channels', winner: 'a', note: 'Neurosity Crown: 8 dry electrodes across multiple cortical sites. Emotiv Insight 2: 5 semi-dry electrodes. Neurosity has broader cortical coverage.' },
-    { name: 'Signal quality', winner: 'tie', note: 'Both consumer-grade dry/semi-dry systems. Neurosity has more channels; Emotiv has slightly cleaner per-channel signal at rest. Effectively tied.' },
+    { name: 'Signal quality', criterionId: 'signal-quality', note: "Neurosity Crown leads: eight dry EEG channels at 256 Hz cover more of the cortex than Emotiv Insight 2's five semi-dry electrodes. Both hold a stable signal in seated sessions." },
     { name: 'Open SDK access', winner: 'a', note: 'Neurosity: raw EEG via JavaScript and Python (plus BrainFlow, LSL and OSC), no subscription. Emotiv: SDK available, but raw-data access requires EmotivPRO subscription. Neurosity is the more open platform.' },
     { name: 'Academic toolchain', winner: 'b', note: 'EmotivPRO is cited in hundreds of published academic studies. Neurosity has a smaller research footprint — the platform is younger.' },
     { name: 'Live cognitive metrics', winner: 'b', note: 'Emotiv: live focus, stress, engagement, excitement, interest, relaxation — six dimensions. Neurosity: focus, calm and flow. Emotiv shows more live scores; all are each company’s own formulas, not validated measures.' },
     { name: 'Built-in user experience', winner: 'a', note: 'Neurosity ships an adaptive focus-music streaming feature out of the box. Emotiv leans on the SDK ecosystem for user-facing apps.' },
-    { name: 'Comfort', winner: 'b', note: 'Emotiv Insight 2 is lighter and the five-arm crown is comfortable for longer sessions. Neurosity Crown is more substantial.' },
+    { name: 'Comfort', criterionId: 'comfort', note: "Practically equal: both are crown-style headsets for seated sessions, not made for overnight wear. Neurosity Crown is a rigid 228 g crown (about three hours per charge); Emotiv Insight 2 is a five-arm crown — we found no official weight to compare." },
     { name: 'Price', winner: 'b', note: 'Emotiv Insight 2: $499 + Pro subscription (~$99/year) for raw data. Neurosity Crown: $1,499 no subscription. Emotiv is cheaper upfront; Neurosity cheaper over multi-year ownership if you need raw data.' },
   ],
   faq: [

@@ -18,11 +18,11 @@ const bemerVsHealthyWave: HeadToHeadInput = {
     'Choose Healthy Wave Multi-Wave if you want PEMF stacked with far-infrared and red light therapy in a single mat at meaningfully lower price.',
   axes: [
     { name: 'Waveform research', winner: 'a', note: 'Bemer: the longest study list on one specific signal, but mostly small or manufacturer-linked; independent controlled trials found no difference from control. Healthy Wave: common PEMF frequencies, no trials of the mat itself.' },
-    { name: 'Field strength', winner: 'b', note: 'Bemer: 35–150 µT (low-intensity by design). Healthy Wave: higher configurable output across multiple waveforms. Healthy Wave wins on raw intensity.' },
-    { name: 'Modality stacking', winner: 'b', note: 'Bemer: PEMF only. Healthy Wave: PEMF + far-infrared + red light + amethyst/tourmaline. Three modalities vs one.' },
-    { name: 'Programmability', winner: 'b', note: 'Bemer: branded P1–P10 preset steps, app-controlled. Healthy Wave: real parameter exposure (waveform, frequency, intensity). Healthy Wave more transparent.' },
+    { name: 'Field strength', criterionId: 'field-strength', note: 'Bemer: 35–150 µT (low-intensity by design). Healthy Wave: higher configurable output across multiple waveforms. Healthy Wave wins on raw intensity.' },
+    { name: 'Modality stacking', winner: 'b', note: 'Bemer: PEMF only. Healthy Wave: PEMF + far-infrared + red light + amethyst/tourmaline. Several modalities vs one.' },
+    { name: 'Programmability', criterionId: 'programmability', note: 'Bemer: branded P1–P10 preset steps, app-controlled. Healthy Wave: real parameter exposure (waveform, frequency, intensity). Healthy Wave more transparent.' },
     { name: 'Regulatory standing', winner: 'tie', note: 'Bemer is FDA-cleared through 510(k) as a non-medical muscle-conditioning device (product code NGX), not for treating disease. Healthy Wave: no FDA clearance, sold as a wellness device. Neither is cleared to treat any condition.' },
-    { name: 'Build pedigree', winner: 'a', note: 'Bemer: 25-year German engineering, premium electronics, 3-year warranty. Healthy Wave: solid build, 5-year limited warranty and 90-day trial but less brand pedigree.' },
+    { name: 'Build pedigree', winner: 'a', note: 'Bemer: German engineering with a track record since 1998, premium electronics, 3-year warranty. Healthy Wave: solid build, 5-year limited warranty and 90-day trial but less brand pedigree.' },
     { name: 'Price', winner: 'b', note: 'Bemer: $5,490. Healthy Wave: $995–$2,495 by size (full-size Pro $2,495). Healthy Wave less than half the price.' },
   ],
   faq: [
@@ -35,12 +35,12 @@ const bemerVsHealthyWave: HeadToHeadInput = {
       a: 'More studied, yes — but most Bemer studies are small or manufacturer-linked. Independent controlled trials found no difference from an inactive device in fibromyalgia or from a control leg in skin blood flow. More studies is not the same as proven benefit.',
     },
     {
-      q: 'Does Healthy Wave cool as deeply as Bemer?',
+      q: 'Does Healthy Wave’s stronger field work more deeply than Bemer?',
       a: 'Different mechanism. Healthy Wave has higher raw field intensity and configurable waveforms but no proprietary research backing the specific signal. Bemer\'s thesis is that waveform shape matters more than peak intensity — a maker claim that independent trials have not confirmed.',
     },
     {
       q: 'Total ownership cost comparison?',
-      a: 'Bemer Classic Evo: $5,490 one-time, no subscription. Healthy Wave Multi-Wave: $995–$2,495 one-time depending on size. Healthy Wave less than half the total cost, and you get three modalities.',
+      a: 'Bemer Classic Evo: $5,490 one-time, no subscription. Healthy Wave Multi-Wave: $995–$2,495 one-time depending on size. Healthy Wave less than half the total cost, and you get several modalities (PEMF, far-infrared, red light, negative ions, crystals).',
     },
   ],
   content: `## The short version
@@ -53,7 +53,7 @@ If you want the best-known proprietary signal and a premium multi-applicator bui
 
 ## When is Healthy Wave Multi-Wave the right pick?
 
-If you want recovery-modality coverage per session and you don\'t need a proprietary signal — Healthy Wave stacks PEMF with far-infrared and red light therapy at meaningfully lower price. Three modalities in one mat, real parameter control, half the Bemer cost.`,
+If you want recovery-modality coverage per session and you don\'t need a proprietary signal — Healthy Wave stacks PEMF with far-infrared and red light therapy at meaningfully lower price. Several modalities in one mat, real parameter control, half the Bemer cost.`,
   relatedComparisonSlug: 'best-pemf-devices-2026',
   publishOn: '2026-06-22',
   datePublished: '2026-05-27',

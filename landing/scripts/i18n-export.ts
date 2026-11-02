@@ -90,6 +90,7 @@ Rules
 - Keyed maps (scoreNotes, picks, criteria, cards) keep their ids as keys.
 - Markdown: keep headings, lists and every link URL exactly; translate link text only. In-page anchors may change.
 - Keep brand/product names, prices, numbers, units, study names and years.
+- Copy every {{score:…}} and {{fact:…}} placeholder exactly (it is replaced by the computed value); never type a score number yourself.
 - Cautious, evidence-based tone exactly as the source — never strengthen a claim; no "cure/diagnose/treat" unless the source says it.
 - description: under ~160 characters. title: natural search phrasing in the target language.
 - Terminology: Russian/Ukrainian ВСР for HRV, Spanish/Portuguese/French VFC; other languages keep HRV.

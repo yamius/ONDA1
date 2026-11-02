@@ -1,5 +1,5 @@
 ---
-sourceHash: "3c391a42bca8"
+sourceHash: "10f3860eb8cd"
 title: "HRV-Baseline: Warum dein eigenes Normal mehr zählt als jede Norm"
 metaTitle: "HRV-Baseline: dein eigenes Normal statt einer Norm"
 metaDescription: "Deine HRV-Baseline ist dein eigener typischer Bereich, kein Bevölkerungsdurchschnitt. Warum sie Altersnormen schlägt, wie ONDA sie bildet und was eine Abweichung bedeutet."
@@ -90,9 +90,9 @@ Das Maß muss gleich bleiben. RMSSD und SDNN fassen unterschiedliche Aspekte des
 
 ## Was zeigt die Evidenz?
 
-**Gesichert.** Gesunde Erwachsene unterscheiden sich in der HRV enorm, und für Kurzzeitmaße gibt es keine anerkannten Normwerte [S3]. Im Durchschnitt sinkt der Wert mit dem Alter, während sich Einzelne in jedem Alter stark unterscheiden [S2]. Werte aus verschiedenen Geräten, Maßen und Messbedingungen sind nicht austauschbar [S6, S7], und Aufzeichnungen unterschiedlicher Länge lassen sich nicht direkt vergleichen [S5].
+**Gesichert.** Gesunde Erwachsene unterscheiden sich in der HRV enorm, und für Kurzzeitmaße gibt es keine anerkannten Normwerte [S3]. Werte aus verschiedenen Geräten, Maßen und Messbedingungen sind nicht austauschbar [S6, S7], und Aufzeichnungen unterschiedlicher Länge lassen sich nicht direkt vergleichen [S5].
 
-**Kontextabhängig.** Eine persönliche Baseline braucht viele Messungen; einzelne Aufzeichnungen begründen keine [S10]. Die konkrete Monitoring-Praxis mit gleitenden Wochenmitteln und dem Variationskoeffizienten stammt aus der Sportwissenschaft, wo ein niedrigerer Wert als der einer anderen Person nicht unbedingt einen schlechteren physiologischen Zustand bedeutet [S10]. Die PPG am Handgelenk folgt EKG-basierten Werten unter kontrollierten Ruhebedingungen [S8]. Eine jahreszeitliche Schwankung ist, wo sie berichtet wurde, schwach [S11]. Und weil HRV-Befunde leicht überinterpretiert werden, warnen Methodenübersichten davor, zu viel in sie hineinzulesen [S4].
+**Kontextabhängig.** Eine persönliche Baseline braucht viele Messungen; einzelne Aufzeichnungen begründen keine [S10]. Die konkrete Monitoring-Praxis mit gleitenden Wochenmitteln und dem Variationskoeffizienten stammt aus der Sportwissenschaft, wo ein niedrigerer Wert als der einer anderen Person nicht unbedingt einen schlechteren physiologischen Zustand bedeutet [S10]. Die PPG am Handgelenk folgt EKG-basierten Werten unter kontrollierten Ruhebedingungen [S8]. Eine jahreszeitliche Schwankung ist, wo sie berichtet wurde, schwach [S11]. Und weil HRV-Befunde leicht überinterpretiert werden, warnen Methodenübersichten davor, zu viel in sie hineinzulesen [S4]. Im Durchschnitt sinkt der Wert mit dem Alter, während sich Einzelne in jedem Alter stark unterscheiden [S2].
 
 **Unbekannt.** Das genaue Fenster einer Baseline ist eine praktische Wahl, keine wissenschaftliche Konstante: Forschungsprotokolle unterscheiden sich von der Logik einer App. Die Fenster von ONDA sind App-Logik – unten dokumentiert, einmal definiert und kein Konsens des Fachgebiets [S9].
 

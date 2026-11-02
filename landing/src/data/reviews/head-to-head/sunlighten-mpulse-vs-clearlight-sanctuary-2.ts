@@ -17,7 +17,7 @@ const sunlightenVsClearlight: HeadToHeadInput = {
     'Choose Clearlight Sanctuary 2 if a Jacuzzi-backed lifetime warranty for comparable full-spectrum IR is worth the higher price.',
   axes: [
     { name: 'Wavelength implementation', winner: 'a', note: 'Sunlighten: separate near/mid/far emitter systems with per-session control. Clearlight: combined wavelengths in True Wave heaters — less granular.' },
-    { name: 'EMF discipline', winner: 'a', note: 'Sunlighten: published <1 mG at seated position. Clearlight: marketed as low EMF/ELF, but we found no published third-party figures.' },
+    { name: 'EMF discipline', criterionId: 'emf', note: 'Sunlighten: published <1 mG at seated position. Clearlight: marketed as low EMF/ELF, but we found no published third-party figures.' },
     { name: 'Cabin build', winner: 'tie', note: 'Both premium — Sunlighten cedar, Clearlight basswood or mahogany. Multi-decade brand pedigree on both.' },
     { name: 'Warranty', winner: 'b', note: 'Clearlight: lifetime heater warranty (Jacuzzi backing). Sunlighten: 7-year on most components. Clearlight edges on coverage period.' },
     { name: 'Model-specific research', winner: 'tie', note: 'Neither has an outcome trial of the reviewed model. Sunlighten: one 20-person 2010 before-and-after pilot on an older model (Sunlight Armana 3). Clearlight: one 12-person, single-session 2026 core-temperature study on the Sanctuary 2, with the sauna supplied by Clearlight.' },

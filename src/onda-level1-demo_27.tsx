@@ -77,15 +77,18 @@ import {
   scheduleCheckinSeriesB,
   cancelCheckinSeriesB,
   scheduleCheckinTestSingle,
+  scheduleCheckinRealTest,
   getPendingNotifications,
 } from './services/notifications';
+import type { NotificationOpenInfo } from './services/notificationRouter';
 import { loadCheckinState, saveCheckinState, dayKey as checkinDayKey } from './lib/checkins';
 import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
 import { useAnalytics } from './hooks/useAnalytics';
+import { QuickModes } from './components/QuickModes';
 // Singleton, not the hook: the hidden internal-traffic toggle is the only
 // consumer, so it isn't worth widening the useAnalytics() surface for it.
-import { analytics } from './services/AnalyticsService';
+import { analytics, boolParam } from './services/AnalyticsService';
 import { practiceAttemptsSoFar, daysSinceFirstSeen } from './lib/lifecycleMarkers';
 import {
   trackTenjinPractice,
@@ -101,6 +104,13 @@ import {
 } from './lib/tenjin';
 import { useSubscription } from './hooks/useSubscription';
 import * as Sentry from '@sentry/capacitor';
+import { recordPaywallSource } from './lib/trialOutcome';
+import { IS_INTERNAL_BUILD } from './lib/buildFlags';
+import { startFirstSession, endFirstSession } from './lib/firstSession';
+import { installHomeTapTracking } from './lib/homeTap';
+import { PaywallFeedback } from './components/PaywallFeedback';
+import { requestPaywallFeedback } from './lib/paywallFeedback';
+import { claimFirstWatchConnect, claimFirstHomeView, type PracticeStartSource } from './lib/analyticsMarkers';
 // WelcomeScene is the only consumer of three.js in the codebase. It only
 // mounts when the user starts a practice (`practiceState === 'active'`),
 // not on cold start. Loading it lazily moves three.js + EXR loaders into
@@ -283,7 +293,6 @@ const OndaLevel1 = () => {
   const platform = Capacitor.getPlatform();
   const [pendingStartPracticeAfterSubscribe, setPendingStartPracticeAfterSubscribe] = useState(false);
   
-  useKeepAwake(true);
 
   // Read 14 days of history from HealthKit and build the baseline card. Called
   // ONLY after the user grants access via the watch CTA (permission by intent).
@@ -299,15 +308,15 @@ const OndaLevel1 = () => {
       const ex = res.extras ?? {};
       track('baseline_debug', {
         source: 'watch',
-        rhr_days: res.rhr?.days ?? 0, rhr_has: res.rhr?.avg != null,
-        hrv_days: res.hrv?.days ?? 0, hrv_has: res.hrv?.avg != null,
-        rr_days: res.rr?.days ?? 0, rr_has: res.rr?.avg != null,
+        rhr_days: res.rhr?.days ?? 0, rhr_has: boolParam(res.rhr?.avg != null),
+        hrv_days: res.hrv?.days ?? 0, hrv_has: boolParam(res.hrv?.avg != null),
+        rr_days: res.rr?.days ?? 0, rr_has: boolParam(res.rr?.avg != null),
         // Presence only — the VALUES (peak HR, walking HR, VO2max, recovery)
         // stay on the device (1.9.3, privacy).
-        hrpeak_has: ex.hrpeak != null,
-        whr_has: ex.whr != null,
-        vo2_has: ex.vo2 != null,
-        hrr_has: ex.hrr != null,
+        hrpeak_has: boolParam(ex.hrpeak != null),
+        whr_has: boolParam(ex.whr != null),
+        vo2_has: boolParam(ex.vo2 != null),
+        hrr_has: boolParam(ex.hrr != null),
         extras_keys: Object.keys(ex).join(',') || 'none',
       });
 
@@ -416,7 +425,7 @@ const OndaLevel1 = () => {
     if (grants !== 1) return; // only on the very first camera grant
     try { track('notif_prompt_shown', { trigger: 'first_camera' }); } catch { /* noop */ }
     const res = await requestNotificationPermission();
-    try { track('notif_prompt_answered', { answer: res === 'granted' ? 'yes' : 'no', trigger: 'first_camera', granted: res === 'granted' }); } catch { /* noop */ }
+    try { track('notif_prompt_answered', { answer: res === 'granted' ? 'yes' : 'no', trigger: 'first_camera', granted: boolParam(res === 'granted') }); } catch { /* noop */ }
   }, [track]);
 
   const cameraGrantHandledRef = useRef(false);
@@ -531,9 +540,13 @@ const OndaLevel1 = () => {
   useEffect(() => {
     if (watchHeartRate.heartRate && !hasTrackedWatchConnection.current) {
       hasTrackedWatchConnection.current = true;
-      track('watch_connect_success', {
-        // heart_rate removed (1.9.3) — the pulse value stays on the device.
-        is_connected: watchHeartRate.isConnected,
+      const isConnected = watchHeartRate.isConnected;
+      void claimFirstWatchConnect().catch(() => false).then((first) => {
+        track('watch_connect_success', {
+          // heart_rate removed (1.9.3) — the pulse value stays on the device.
+          is_connected: boolParam(isConnected),
+          is_first: boolParam(first),
+        });
       });
     }
   }, [watchHeartRate.heartRate]);
@@ -697,6 +710,11 @@ const OndaLevel1 = () => {
   const [activePractice, setActivePractice] = useState(null);
   const [practiceState, setPracticeState] = useState('intro');
   const [practiceTime, setPracticeTime] = useState(0);
+  // Task 102: screen stays awake ONLY while a practice is open and not finished
+  // (intro + active, incl. paused) or the camera pulse is live. Results and all
+  // other screens use normal iOS auto-lock. Timer/rewards untouched.
+  const cameraStreamOn = cameraPpg.status === 'requesting' || cameraPpg.status === 'searching' || cameraPpg.status === 'reading';
+  useKeepAwake((activePractice != null && practiceState !== 'complete') || cameraStreamOn);
 
   // Workout keep-alive lives in a single effect below (setPracticeActive),
   // declared after both practiceState and showDiaryModal to avoid TDZ.
@@ -783,8 +801,8 @@ const OndaLevel1 = () => {
   const [checkinPendingList, setCheckinPendingList] = useState<string | null>(null);
   const fireEntryEventsDebug = () => {
     try {
-      track('baseline_filled', { source: 'watch', coverage_days: 14, debug: true });
-      track('signal_first_seen', { debug: true });
+      track('baseline_filled', { source: 'watch', coverage_days: 14, debug: boolParam(true) });
+      track('signal_first_seen', { debug: boolParam(true) });
     } catch { /* noop */ }
     setEntryEventsSent(true);
     window.setTimeout(() => setEntryEventsSent(false), 2500);
@@ -979,6 +997,8 @@ const OndaLevel1 = () => {
         if (vals.length < 2) return [];
         return [{ metric: k, nights: vals.slice(0, -1), latest: vals[vals.length - 1] }];
       });
+      // baseline_state removed (101): its only content was the corridor state,
+      // which is derived from HRV / resting HR — health stays out of analytics.
       const anomaly = detectAnomaly(signals);
       const st = loadAnomalyState();
       if (anomaly && canSignal(Date.now(), st.lastSignalAt)) {
@@ -1027,7 +1047,7 @@ const OndaLevel1 = () => {
         // with Health), NOT here — starting monitoring must never prompt on launch.
         await HealthKitHeartRate.setAnomalyStrings({
           title: 'ONDA',
-          pushIntro: t('anomaly.push_intro', 'Твоё тело подало сигнал этой ночью. Загляни.'),
+          pushIntro: t('anomaly.push_intro', 'Твоё тело подало сигнал. Загляни.'),
           pushShort: t('anomaly.push_short', 'Есть свежий сигнал.'),
         });
         await HealthKitHeartRate.startAnomalyMonitoring();
@@ -1036,18 +1056,8 @@ const OndaLevel1 = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [watchHeartRate.isConnected]);
 
-  // Opened from an anomaly local notification → analytics (the in-app prompt is
-  // re-raised by the evaluation effect on foreground).
-  useEffect(() => {
-    let handle: { remove: () => void } | undefined;
-    LocalNotifications.addListener('localNotificationActionPerformed', (a) => {
-      const extra = (a?.notification as { extra?: Record<string, unknown> })?.extra;
-      const metric = (extra?.anomaly_metric as string) ?? 'unknown';
-      try { track('signal_push_opened', {}); } catch { /* noop */ }
-    }).then((h) => { handle = h; }).catch(() => { /* noop */ });
-    return () => { try { handle?.remove(); } catch { /* noop */ } };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  // Notification taps (signal + check-ins) are routed by ONE handler below
+  // (routeNotificationOpen, task 097) — no per-feature listeners here.
   const [showStatsModal, setShowStatsModal] = useState(false);
   const [expandedPractice, setExpandedPractice] = useState(null);
   const [unlockedAchievements, setUnlockedAchievements] = useState([]);
@@ -1287,7 +1297,7 @@ const OndaLevel1 = () => {
         try {
           const perm = await LocalNotifications.checkPermissions();
           if (perm.display !== 'granted') await LocalNotifications.requestPermissions();
-          await HealthKitHeartRate.scheduleTestPush({ title: 'ONDA', body: t('anomaly.push_intro', 'Твоё тело подало сигнал этой ночью. Загляни.'), delaySeconds: 8 });
+          await HealthKitHeartRate.scheduleTestPush({ title: 'ONDA', body: t('anomaly.push_intro', 'Твоё тело подало сигнал. Загляни.'), delaySeconds: 8 });
         } catch { /* noop */ }
       })();
     }
@@ -1347,15 +1357,24 @@ const OndaLevel1 = () => {
     homeViewFiredRef.current = true;
     const isFirst = localStorage.getItem('onda_home_view_seen') !== '1';
     if (isFirst) localStorage.setItem('onda_home_view_seen', '1');
-    track('home_view', { source: 'first_run', is_first: isFirst, mode: appMode, ...daysSinceFirstSeen() });
+    track('home_view', { source: 'first_run', is_first: boolParam(isFirst), mode: appMode, ...daysSinceFirstSeen() });
   }, [showSubscriptionModal, paywallSource, isPremium]);
   // relaunch: a returning user (not in onboarding) lands on the hub at launch.
   // New users start in onboarding (showFirstRun) → their home_view fires as
   // first_run after the paywall instead. Fires once per app session (mount).
   useEffect(() => {
     if (showFirstRun) return;
-    localStorage.setItem('onda_home_view_seen', '1');
-    track('home_view', { source: 'relaunch', is_first: false, mode: appMode, ...daysSinceFirstSeen() });
+    // Onboarding is disabled, so a new install lands here too: the first-ever
+    // hub entry on this install is first_launch (is_first 'true'), every later
+    // launch is relaunch. Marker is Preferences-backed (survives cold starts;
+    // falls back to the legacy localStorage flag so upgraders stay relaunch).
+    // 101: home_tap during the first session only (string params).
+    const offHomeTap = installHomeTapTracking((p) => track('home_tap', p));
+    void claimFirstHomeView().then((first) => {
+      if (first) startFirstSession(); // 101: home_tap window
+      track('home_view', { source: first ? 'first_launch' : 'relaunch', is_first: boolParam(first), mode: appMode, ...daysSinceFirstSeen() });
+    });
+    return offHomeTap;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   // Armed by finishPractice on the user's first-ever valid completion;
@@ -3276,9 +3295,14 @@ const OndaLevel1 = () => {
     return artifacts.reduce((sum, a) => sum + a.bonus, 0);
   };
 
-  const completePractice = (practiceId, baseQnt) => {
+  // practice_start `source` (task 095): every entry point opens the intro via
+  // completePractice(…, source); the single practice_start fires later in
+  // beginPractice() and carries the source recorded here.
+  const practiceStartSourceRef = useRef<PracticeStartSource>('home');
+  const completePractice = (practiceId, baseQnt, source: PracticeStartSource = 'home') => {
     const space = practiceSpaces[practiceId];
     if (space) {
+      practiceStartSourceRef.current = source;
       setActivePractice({ ...space, id: practiceId, maxQnt: baseQnt });
       setPracticeOpenedAtMs(Date.now());
       setCanExitPractice(false);
@@ -3340,9 +3364,9 @@ const OndaLevel1 = () => {
       saveAnomalyState({ lastSignalAt: st.lastSignalAt, signalCount: st.signalCount }); // pending cleared — goal met
       setAnomalyPrompt(null);
     } else {
-      try { track('practice_start', { practice_id: pid, source: 'recommend_static', mode: appMode }); } catch { /* noop */ }
     }
-    if (pr) completePractice(pid, pr.maxQnt);
+    // practice_start fires once, in beginPractice (was also fired here → dupes).
+    if (pr) completePractice(pid, pr.maxQnt, metric ? 'signal' : 'recommend_static');
   };
   // Calm check-in A1/B1 → start ONE of the available practices at random: the 3
   // free ones without a subscription, the current level's 12 with one (task 16).
@@ -3350,8 +3374,8 @@ const OndaLevel1 = () => {
     const pool = isPremium ? currentCircuit.practices.map((p) => p.id) : SIGNAL_PRACTICE_ORDER;
     const pid = pool[Math.floor(Math.random() * pool.length)] ?? SIGNAL_PRACTICE_ORDER[0];
     const pr = currentCircuit.practices.find((p) => p.id === pid) as { id: string; maxQnt: number } | undefined;
-    try { track('practice_start', { practice_id: pid, source: 'checkin', mode: appMode }); } catch { /* noop */ }
-    if (pr) completePractice(pid, pr.maxQnt);
+    // Only reached from a calm check-in push (A1/B1) → source 'push'.
+    if (pr) completePractice(pid, pr.maxQnt, 'push');
   };
   // Open the diary to record "what happened", anchored to the deviating night (§9).
   const recordAnomaly = (a: PendingAnomaly) => {
@@ -3379,9 +3403,11 @@ const OndaLevel1 = () => {
     if (activePractice) {
       trackPractice('start', activePractice.id, {
         practice_type: 'standard',
+        source: practiceStartSourceRef.current,
+        mode: appMode,
         practice_name: activePractice.name,
         target_duration: activePractice.duration,
-        has_biometrics: hasRealMetrics,
+        has_biometrics: boolParam(hasRealMetrics),
         // Stress/energy intentionally NOT sent: they're derived from the pulse
         // (incl. the camera source) and we removed them from the product, so
         // they must not leave the device either. The honest before/after signal
@@ -3476,8 +3502,7 @@ const OndaLevel1 = () => {
           practice_type: 'standard',
           practice_id: activePractice.id,
           duration_seconds: practiceTime,
-          quality_score: qualityScore,
-          has_biometrics: hasRealMetricsAtFinish,
+          has_biometrics: boolParam(hasRealMetricsAtFinish),
         });
         // NOTE: paywall arming was moved OFF this near-unreachable valid event
         // (≥80% time + quality≥70/33) onto practice_complete below, so the
@@ -3509,14 +3534,15 @@ const OndaLevel1 = () => {
       practice_name: activePractice.name,
       duration_seconds: practiceTime,
       target_duration: activePractice.targetTime || 720,
-      quality_score: qualityScore,
       time_percent: Math.round(timePercent * 100),
       metrics_source: metricsSource,
-      is_first: isFirstPracticeComplete,
+      is_first: boolParam(isFirstPracticeComplete),
       ond_earned: earnedQnt,
-      has_biometrics: hasRealMetricsAtFinish,
-      is_valid_for_artifact: isValidForArtifact,
-      is_new_record: shouldUpdate && !!existingPractice,
+      has_biometrics: boolParam(hasRealMetricsAtFinish),
+      // 101: analytics flag uses time only (quality is partly derived from body
+      // metrics); the in-app artifact rule itself is unchanged.
+      is_valid_for_artifact: boolParam(timePercent >= 0.8),
+      is_new_record: boolParam(shouldUpdate && !!existingPractice),
       // No health values (privacy policy: pulse never leaves the device) — no
       // final_stress/final_energy and, since 1.9.3, no coherence_baseline/peak/
       // delta either (coherence is derived from the pulse rhythm). On-device only.
@@ -3525,18 +3551,18 @@ const OndaLevel1 = () => {
     // Decoupled paywall arming (replaces the old valid-first_practice_complete
     // gate, which fired for ~0 users so the paywall never showed). Arm once, on
     // the first practice_complete — value delivered, real people see the offer.
-    // Idempotent via onda_paywall_armed; quality stashed so paywall_view /
-    // purchase can carry first_practice_quality across components.
+    // Idempotent via onda_paywall_armed. (101: the first-practice quality is no
+    // longer sent to analytics — partly derived from body metrics.)
     if (isFirstPracticeComplete) {
       localStorage.setItem('onda_paywall_armed', '1');
-      localStorage.setItem('onda_first_practice_quality', String(Math.round(qualityScore)));
+      try { localStorage.removeItem('onda_first_practice_quality'); } catch { /* noop */ }
       if (platform === 'ios' && !isPremium) {
         postFirstExperiencePaywallArmedRef.current = true;
       }
     }
 
-    // Honest results-screen signal (state for the screen + the results_view
-    // analytics step). result_state:
+    // Honest results-screen signal (state for the screen only — 101: no longer
+    // sent to analytics, B is derived from the pulse). resultState:
     //   A — no real sensor (simulated) → invite to connect a camera/watch.
     //   B — camera + a clean, SUSTAINED pulse drop → show "from X to Y".
     //   C — everything else (flat / rose / noisy / short) → neutral, never
@@ -3562,9 +3588,8 @@ const OndaLevel1 = () => {
     track('results_view', {
       metrics_source: metricsSource,
       time_percent: Math.round(timePercent * 100),
-      result_state: resultState,
       // hr_start / hr_min removed (1.9.3) — pulse values stay on the device.
-      is_first: cameFromFirstRun,
+      is_first: boolParam(cameFromFirstRun),
     });
 
     const session = {
@@ -3647,10 +3672,10 @@ const OndaLevel1 = () => {
               // lives in App Store Connect; this event is only the top of the
               // funnel — how many requests went out.
               track('review_prompt_requested', {
-                requested: r.requested,
+                requested: boolParam(r.requested),
                 reason: r.reason ?? null,
-                had_live_biometrics: true,
-                returning_day: true,
+                had_live_biometrics: boolParam(true),
+                returning_day: boolParam(true),
                 days_since_first: daysSinceFirst,
                 lifetime_completions: lifetimeCompletions,
                 biometric_source: biometricSource,
@@ -3798,7 +3823,6 @@ const OndaLevel1 = () => {
       if (circuit.artifact) {
         trackTenjinArtifactEarned(circuit.id, {
           bonus: circuit.artifact.bonus,
-          quality_score: qualityScore,
         });
         setTimeout(() => {
           setArtifacts(prev => [...prev, {
@@ -3910,10 +3934,8 @@ const OndaLevel1 = () => {
       track('paywall_view', {
         source: 'post_first_experience',
         practice_id: practiceId,
-        // quality→purchase linkage: the quality of the practice that earned
-        // this offer (stashed in finishPractice). undefined if not recorded.
-        first_practice_quality: Number(localStorage.getItem('onda_first_practice_quality')) || undefined,
       });
+      void recordPaywallSource('post_first_experience');
       setPaywallSource('post_first_experience');
       setShowSubscriptionModal(true);
     }
@@ -4506,40 +4528,100 @@ const OndaLevel1 = () => {
 
     let stateSub: { remove: () => void } | null = null;
     CapApp.addListener('appStateChange', ({ isActive }) => {
+      if (!isActive) endFirstSession(); // 101: first background/terminate ends the first session
       if (isActive) reconcile();
     }).then((h) => { stateSub = h; }).catch(() => undefined);
 
-    const offOpened = onNotificationOpened((info) => {
-      if (info.kind === 'checkin') {
-        // Simulated (internal test) opens route so the tester sees the screen, but
-        // never hit real analytics — same rule as the signal test mode.
-        if (!info.simulated) { try { track('checkin_push_opened', { segment: info.segment, type: info.checkin_type }); } catch { /* noop */ } }
-        const type = info.checkin_type;
-        if (type === 'A1' || type === 'B1') {
-          startRandomAvailablePractice();            // → a random available practice
-        } else if (type === 'A2') {
-          // Diary lives in the detailed experience — switch a simple-mode user over.
-          if (appMode === 'simple') { try { persistMode('detailed'); } catch { /* noop */ } setAppMode('detailed'); }
-          setDiaryExportMode(null); setShowDiaryModal(true); // → new diary note
-        } else if (type === 'A3') {
-          setShowSettingsModal(true);                // → Settings (mode toggle)
-        } else if (type === 'B2') {
-          setCameraCheckinActive(true);              // → camera check-in → diary
-          try { cameraPpg.start(); } catch { /* noop */ }
-          // Bring the live pulse readout into view (opening from a push lands at the top).
-          window.setTimeout(() => { try { cameraSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch { /* noop */ } }, 600);
-        }
-        return;
-      }
-      console.log('[notifications] opened', info);
-    });
-
     return () => {
       stateSub?.remove();
-      offOpened();
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [practiceHistory, reconcileCheckinB]);
+
+  // ── ONE notification-tap router (task 097) ──
+  // The tap is captured at module load (services/notificationRouter, imported in
+  // main.tsx) and buffered; we attach ONCE, after the subscription state is known
+  // (so A1/B1 pick from the right pool), and read live state through a ref — no
+  // stale closures, no re-subscribing.
+  const routeNotificationOpen = (info: NotificationOpenInfo) => {
+    if (info.kind === 'signal') {
+      // Signal push: never starts a practice. Raise the prompt NOW (what was
+      // noticed + the practice offer); a practice from it keeps source=signal.
+      if (!info.simulated) { try { track('signal_push_opened', {}); } catch { /* noop */ } }
+      const st = loadAnomalyState();
+      let pending: PendingAnomaly | null = st.pending ?? null;
+      if (pending && info.metric && pending.metric !== info.metric && !pending.recorded) pending = null;
+      if (!pending && info.simulated && anomalyPrompt) pending = anomalyPrompt; // sim mode already injected it
+      if (!pending && info.metric) {
+        const now = Date.now();
+        const lo = info.lo ?? 0, hi = info.hi ?? 0;
+        const mean = (lo + hi) / 2, sd = Math.max(0.1, (hi - lo) / 2);
+        const latest = info.value ?? mean;
+        const delta = Math.round((latest - mean) * 10) / 10;
+        pending = {
+          metric: info.metric,
+          direction: info.hi != null && info.value != null ? (info.value > info.hi ? 'high' : 'low') : (info.metric === 'hrv' ? 'low' : 'high'),
+          mean, sd, latest, delta, magnitudeSd: Math.abs(delta) / sd, loBound: lo, hiBound: hi, nights: 0,
+          at: now, night: new Date(now).toISOString().slice(0, 10), signalCount: (st.signalCount ?? 0) + 1,
+        };
+        // Persist like a JS-raised signal (stays until acted on; the cooldown stops a double raise).
+        saveAnomalyState({ lastSignalAt: now, signalCount: pending.signalCount, pending });
+        if (!info.simulated) { try { track('signal_prompt_shown', {}); } catch { /* noop */ } }
+      }
+      if (pending) {
+        const p = { ...pending, remindAfter: undefined };
+        setAnomalyPrompt(p);
+        if (trafficState.light === 'green') {
+          setTrafficState({ light: 'yellow', metric: p.metric, direction: p.direction, anomaly: p, nights: 1, metrics: [p.metric] });
+        }
+        if (isCollapsed('recommendations')) toggleCollapse('recommendations');
+        window.setTimeout(() => {
+          try { document.querySelector('[data-testid="recommendations-block"]')?.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch { /* noop */ }
+        }, 600);
+      }
+      return;
+    }
+    if (info.kind === 'checkin') {
+      // Simulated (old internal route) opens route so the tester sees the screen,
+      // but never hit analytics. Real opens (incl. TEST-build internal_test pushes)
+      // track; the TEST build is already internal-marked.
+      if (!info.simulated) { try { track('checkin_push_opened', { segment: info.segment, type: info.checkin_type }); } catch { /* noop */ } }
+      const type = info.checkin_type;
+      if (type === 'A1' || type === 'B1') {
+        startRandomAvailablePractice();            // → a random available practice (source=push)
+      } else if (type === 'A2') {
+        // Diary lives in the detailed experience — switch a simple-mode user over.
+        if (appMode === 'simple') { try { persistMode('detailed'); } catch { /* noop */ } setAppMode('detailed'); }
+        setDiaryExportMode(null); setShowDiaryModal(true); // → new diary note
+      } else if (type === 'A3') {
+        setShowSettingsModal(true);                // → Settings (mode toggle)
+      } else if (type === 'B2') {
+        setCameraCheckinActive(true);              // → camera check-in → diary
+        try { cameraPpg.start(); } catch { /* noop */ }
+        // Bring the live pulse readout into view (opening from a push lands at the top).
+        window.setTimeout(() => { try { cameraSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch { /* noop */ } }, 600);
+      }
+      return;
+    }
+    console.log('[notifications] opened', info);
+  };
+  const routeNotificationOpenRef = useRef(routeNotificationOpen);
+  routeNotificationOpenRef.current = routeNotificationOpen;
+  const notifRouterAttachedRef = useRef(false);
+  useEffect(() => {
+    if (notifRouterAttachedRef.current) return;
+    const attach = () => {
+      if (notifRouterAttachedRef.current) return;
+      notifRouterAttachedRef.current = true;
+      // Next tick: let this render's state (circuits, isPremium, mode) commit first.
+      window.setTimeout(() => {
+        onNotificationOpened((info) => routeNotificationOpenRef.current(info));
+      }, 0);
+    };
+    if (!isSubLoading) { attach(); return; }
+    const t = window.setTimeout(attach, 5000); // never hold a tap forever on a slow subscription check
+    return () => window.clearTimeout(t);
+  }, [isSubLoading]);
 
   const getAverageQuality = () => {
     if (practiceHistory.length === 0) return 0;
@@ -5506,6 +5588,7 @@ const OndaLevel1 = () => {
                     ...daysSinceFirstSeen(),
                   });
                   setPendingStartPracticeAfterSubscribe(true);
+                  void recordPaywallSource('practice_gate_basic');
                   setPaywallSource('practice_gate_basic');
                   setShowSubscriptionModal(true);
                 }}
@@ -6059,7 +6142,7 @@ const OndaLevel1 = () => {
           // Same entry point the hub cards use — opens the practice intro
           // where the existing free-tier Start button leads straight into the
           // live session (practice_start fires when the session begins).
-          completePractice(featured.id, featured.maxQnt);
+          completePractice(featured.id, featured.maxQnt, 'onboarding');
         }
       }
     };
@@ -6596,6 +6679,7 @@ const OndaLevel1 = () => {
     return (
       <div
         key={practice.id}
+        data-home-tap={`practice:${practice.id}`}
         ref={el => practiceRefs.current[practice.id] = el}
         onClick={collapsible ? onExpandTap(`practice_${practice.id}`) : undefined}
         className={`relative rounded-lg p-6 border transition-all flex flex-col ${
@@ -6759,7 +6843,7 @@ const OndaLevel1 = () => {
           <button
             onClick={() => {
               markFreePracticeTapped(practice.id);
-              completePractice(practice.id, practice.maxQnt);
+              completePractice(practice.id, practice.maxQnt, currentCircuit.id === 1 ? 'home' : 'level');
             }}
             className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all backdrop-blur-sm ${emoTint}`}
           >
@@ -7072,7 +7156,7 @@ const OndaLevel1 = () => {
             verdict is exactly the anxiety score this audience came to ONDA
             to escape. One calm HR-RSA curve now lives inside the coherence
             hero; the busy 3-line dashboard is gone. */}
-        <div className="mb-6" ref={cameraSectionRef}>
+        <div className="mb-4" ref={cameraSectionRef}>
           {/* Diary/Timeline entry — DETAILED mode only. Compact keeps nothing:
               no timeline, no diary — the traffic light is fully automatic (task 85). */}
           {appMode !== 'simple' && (
@@ -7101,7 +7185,7 @@ const OndaLevel1 = () => {
           </button>
           )}
 
-          <div className="mt-3 sm:mt-4">
+          <div className={appMode !== 'simple' ? 'mt-4' : ''}>
             {cameraPpg.status !== 'idle' ? (
               /* CAMERA ACTIVE → one STABLE-height Pulse window (bpm or --) the
                  whole time, so a brief finger-lift / reconnect doesn't make the
@@ -7262,7 +7346,7 @@ const OndaLevel1 = () => {
             },
           }[colorState];
           return (
-            <div className="mb-4 flex flex-col items-center">
+            <div className="mb-6 flex flex-col items-center">
               <div onClick={onExpandTap('recommendations')} className={`relative w-full max-w-[360px] rounded-lg p-6 border text-left ${pal.shell} ${isLight ? 'backdrop-blur-xl' : 'backdrop-blur-sm'} ${isCollapsed('recommendations') ? 'cursor-pointer' : ''}`} style={collapseStyle('recommendations', 45, 8)} data-testid="recommendations-block" data-mode={a ? 'signal' : 'static'} data-color={colorState}>
                 {collapseDot('recommendations')}
                 <h3 className={`text-xl sm:text-2xl font-bold mb-2 pr-6 ${pal.title}`}>{t('baseline.setup_title', 'Рекомендации')}</h3>
@@ -7324,6 +7408,9 @@ const OndaLevel1 = () => {
             "start here" without duplicating the card above (Option 3
             from the UX review). The Connect-Watch CTA already lives at
             the top of the biometric block — no inline hint here. */}
+        {/* Quick modes (task 107) — free Relax / Wake up on every level; not a practice:
+            no paywall, no free_used, no OND. */}
+        <QuickModes level={currentCircuit.id} track={track} light={isLight} />
         <div className="grid md:grid-cols-2 gap-4 mb-8" data-onda-practices-grid>
           {(() => {
             const ps = currentCircuit.practices;
@@ -9577,8 +9664,11 @@ const OndaLevel1 = () => {
           currentStatus={permissions.permissionStatus}
           isRequesting={permissions.isRequesting}
           onPermissionsGranted={() => setShowWatchPrompt(true)}
+          onNotifAnswered={(granted) => {
+            try { track('notif_prompt_answered', { trigger: 'onboarding', granted: boolParam(granted), answer: granted ? 'yes' : 'no' }); } catch { /* noop */ }
+          }}
           onOutcome={(granted) => {
-            track('health_permission', { scope: 'healthkit', granted, source: 'onboarding_watch_cta' });
+            track('health_permission', { scope: 'healthkit', granted: boolParam(granted), source: 'onboarding_watch_cta' });
             if (granted) {
               // The user has now explicitly connected + granted: mark "watching"
               // so the keep-alive auto-manager will start the watch workout AFTER
@@ -9641,6 +9731,7 @@ const OndaLevel1 = () => {
         message={infoModalMessage}
       />
 
+      <PaywallFeedback />
       <SubscriptionModal
         isOpen={showSubscriptionModal}
         onClose={() => setShowSubscriptionModal(false)}
@@ -9869,8 +9960,11 @@ const OndaLevel1 = () => {
                 )}
               </button>
             )}
-            {/* Signal test mode (task 84 pt3) — internal builds only. */}
-            {internalTrafficOn && (
+            {/* Signal test mode (task 84 pt3), entry-events smoke test, calm check-ins —
+                TEST builds ONLY (VITE_INTERNAL_BUILD baked by the TestFlight workflow).
+                In an App Store build the 7-tap only marks the device internal (badge),
+                never shows these panels (101). */}
+            {IS_INTERNAL_BUILD && (
               <div className={`mt-1 px-4 sm:px-6 py-2 text-[11px] font-mono ${isLight ? 'text-slate-500' : 'text-white/50'}`} data-testid="sim-panel">
                 <div className="mb-1">🧪 Test signals {simActive && <span className="text-amber-400">· step {simIndexRef.current % 5 + 1}/5 · {simFast ? '30s' : '5min'}</span>}</div>
                 <div className="flex items-center gap-2 flex-wrap">
@@ -9887,6 +9981,7 @@ const OndaLevel1 = () => {
                 <div className="mt-2 flex items-center gap-2">
                   <button type="button" onClick={fireEntryEventsDebug} data-testid="fire-entry-events" className={`rounded px-2 py-1 ${isLight ? 'bg-emerald-100 text-emerald-700' : 'bg-emerald-400/15 text-emerald-200'}`}>Fire entry events → GA4</button>
                   {entryEventsSent && <span className="text-emerald-400">sent ✓</span>}
+                  <button type="button" data-testid="debug-paywall-feedback" onClick={() => requestPaywallFeedback('debug', { force: true })} className={`rounded px-2 py-1 ${isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80'}`}>Показать опрос</button>
                 </div>
                 {/* Calm check-ins test mode (task 16). All sends marked simulated:true
                     → no real analytics. Background the app after tapping to see the banner. */}
@@ -9910,6 +10005,32 @@ const OndaLevel1 = () => {
                     onClick={() => { try { ['onda_camera_grants', 'onda_checkin_primer_dismissed', 'onda_checkin_primer_last'].forEach((k) => localStorage.removeItem(k)); } catch { /* noop */ } cameraGrantHandledRef.current = false; setCheckinPendingList('permission primer reset'); }}>Reset permission prompt</button>
                 </div>
                 {checkinPendingList && <pre className="mt-1 whitespace-pre-wrap opacity-70">{checkinPendingList}</pre>}
+              </div>
+            )}
+            {/* Push payload test (task 097) — TEST builds ONLY: compiled in when the
+                TestFlight workflow bakes VITE_INTERNAL_BUILD=true (internal_build auto
+                on a non-main branch); App Store builds from main never show it, even
+                after the 7-tap. REAL pushes through the production scheduling code
+                (tagged internal_test); kill the app after tapping, then tap the banner. */}
+            {IS_INTERNAL_BUILD && Capacitor.isNativePlatform() && (
+              <div className={`mt-1 px-4 sm:px-6 py-2 text-[11px] font-mono ${isLight ? 'text-slate-500' : 'text-white/50'}`} data-testid="push-test-panel">
+                <div className="mb-1">📨 Real push test (8s) · kill app, then tap</div>
+                <div className="flex items-center gap-2 flex-wrap">
+                  {(['A1', 'A2', 'A3', 'signal'] as const).map((k) => (
+                    <button key={k} type="button" data-testid={`push-test-${k}`} className={`rounded px-2 py-1 ${isLight ? 'bg-sky-100 text-sky-700' : 'bg-sky-400/15 text-sky-200'}`}
+                      onClick={async () => {
+                        try {
+                          if ((await checkNotificationPermission()) !== 'granted') await requestNotificationPermission();
+                          await HealthKitHeartRate.scheduleRealTestPush({ kind: k, delaySeconds: 8, metric: 'rhr' });
+                          setCheckinPendingList(`${k} scheduled in 8s — kill the app now`);
+                        } catch (e) { setCheckinPendingList(`${k} failed: ${String(e)}`); }
+                      }}>{k === 'signal' ? 'Signal' : `${k} (watch)`}</button>
+                  ))}
+                  {(['B1', 'B2'] as const).map((k) => (
+                    <button key={k} type="button" data-testid={`push-test-${k}`} className={`rounded px-2 py-1 ${isLight ? 'bg-sky-100 text-sky-700' : 'bg-sky-400/15 text-sky-200'}`}
+                      onClick={async () => { const ok = await scheduleCheckinRealTest(k, 8); setCheckinPendingList(ok ? `${k} scheduled in 8s — kill the app now` : `${k} failed (permission?)`); }}>{k} (JS)</button>
+                  ))}
+                </div>
               </div>
             )}
         </nav>

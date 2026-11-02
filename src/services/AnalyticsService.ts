@@ -25,7 +25,7 @@ import { FirebaseAnalytics } from '@capacitor-community/firebase-analytics';
 export type AnalyticsEventName =
   // Onboarding & Activation
   | 'app_open'
-  | 'home_view'                       // main hub shown — params: source (first_run|menu|relaunch), is_first. first_run = reached home after the onboarding paywall WITHOUT buying (closes the post-paywall funnel blind spot)
+  | 'home_view'                       // main hub shown — params: source (first_run|first_launch|menu|relaunch), is_first. first_launch = first-ever hub entry on the install, is_first 'true' (onboarding disabled since 1.9.x; 1.9.6+); first_run = reached home after the onboarding paywall WITHOUT buying (closes the post-paywall funnel blind spot)
   | 'onboarding_start'                // params: source (first_run|menu), [att_copy_variant|featured_practice_id]
   | 'onboarding_step'                 // params: source (menu), step, total, permission — 3-screen tutorial only
   | 'onboarding_complete'            // params: source, [completed_via: cta|skip] — ← was Tenjin `tutorial_complete`
@@ -34,7 +34,7 @@ export type AnalyticsEventName =
   // onboarding_complete{completed_via}. The 3-screen tutorial (Menu→Intro) emits
   // the same events with source:'menu' so manual replays don't pollute the funnel.
   | 'first_practice_complete'         // value-moment; first-ever valid completion
-  | 'results_view'                    // post-practice results screen shown — params: metrics_source, time_percent, result_state (A|B|C), is_first. No pulse values (removed 1.9.3).
+  | 'results_view'                    // post-practice results screen shown — params: metrics_source, time_percent, is_first. No pulse values (removed 1.9.3); result_state removed (101).
   | 'sign_up'
   | 'sign_in'
   // Permissions
@@ -44,11 +44,11 @@ export type AnalyticsEventName =
   | 'onboarding_permission_screen_view'
   | 'watch_connection_attempt'
   | 'watch_connect_tapped'           // tapped the home "connect watch" CTA, BEFORE the permission prompt — params: source. Measures reach→intent for the baseline-from-Health flow (distinct from watch_connect_success, which fires on an actual connection).
-  | 'watch_connect_success'          // ← was watch_connection_success / Tenjin watch_connected — params: is_connected (heart_rate removed 1.9.3)
+  | 'watch_connect_success'          // ← was watch_connection_success / Tenjin watch_connected — params: is_connected, is_first (true only on the first-ever watch connection, persisted; 095) (heart_rate removed 1.9.3)
   | 'watch_connection_failed'
   // Practice — variety lives in PARAMS (practice_type=standard|adaptive, practice_id),
   // never in the name. abandon = stop/close mid-flow.
-  | 'practice_start'
+  | 'practice_start'                 // params: practice_id, practice_type, source (home|level|recommend_static|checkin|signal|push|onboarding; 095), mode
   | 'practice_pause'
   | 'practice_resume'
   | 'practice_complete'
@@ -88,10 +88,13 @@ export type AnalyticsEventName =
   | 'checkin_disabled'              // user turned the "Calm check-ins" toggle off — no params.
   | 'camera_checkin_saved'          // a standalone camera pulse was saved to the diary — no params (pulse bucket removed, 1.9.3).
   | 'notif_prompt_shown'            // the post-camera "remind every 3 days?" primer was shown — params: trigger (first_camera|third_camera).
-  | 'notif_prompt_answered'         // user answered it — params: answer (yes|no), trigger.
+  | 'notif_prompt_answered'         // user answered it — params: answer (yes|no), trigger (first_camera|onboarding), granted (true|false).
   // Timeline export (on-device PDF, no content logged)
   | 'timeline_export_tapped'         // tapped the share/export button in the Timeline.
   | 'timeline_export_completed'      // PDF built on-device and the share sheet opened.
+  // Quick modes (task 107) — free Relax / Wake up breathing, no free-practice limit, no health data.
+  | 'quick_start'                    // params: mode (relax|wake), level (selected level, string), haptics ('true'|'false')
+  | 'quick_stop'                     // params: mode (relax|wake), seconds (actual session length, string)
   // Simple mode A/B (task 83) — traffic-light vs detailed. GA4 dim `mode` (event-scoped).
   | 'mode_assigned'                  // first-run silent A/B assignment (80% simple / 20% detailed) — params: mode (simple|detailed).
   | 'mode_switched'                  // user overrode the mode in Settings — params: from, to.
@@ -101,13 +104,17 @@ export type AnalyticsEventName =
   | 'level_up'
   // Paywall / Monetization
   | 'paywall_view'                   // ← merge paywall_viewed + Tenjin view_paywall
-  | 'paywall_dismiss'                // ← Tenjin dismiss_paywall
+  | 'paywall_dismiss'                // ← Tenjin dismiss_paywall — params: source, action, plan, time_on_screen_seconds, paywall_source, seconds_on_paywall (string, 101)
+  | 'paywall_feedback'               // one-time answer after a paywall closed without purchase (101) - params: reason (price|try_first|unclear_value|other), paywall_source
+  | 'plan_select'                    // user switched plan on the paywall (101) — params: plan
+  | 'home_tap'                       // tap on a main home element, FIRST SESSION ONLY, once per target (101) — params: target, is_first_session
   | 'paywall_cta_tap'                // ← was trial_attempt / Tenjin click_paywall_button
   | 'paywall_auth_required'
-  | 'trial_start'                    // ← was trial_started (one, not two)
-  | 'purchase'                       // Firebase ecommerce — params: value, currency, product_id, plan
-  | 'purchase_failed'
-  | 'purchase_cancelled'
+  | 'trial_start'                    // ← was trial_started (one, not two) — params: plan, product_id, period_type, paywall_source (101)
+  | 'trial_outcome'                  // once per trial, on the first open after it is decided (101) — params: outcome (converted|expired), plan, trial_days, practices_in_trial, days_active_in_trial, watch_connected, baseline_filled (all strings)
+  | 'purchase'                       // Firebase ecommerce — params: value, currency, product_id, plan, paywall_source (101: Preferences-backed, 'unknown' if none)
+  | 'purchase_failed'                // non-cancel purchase error (101) — params: plan, error_code (RevenueCat code only, no message)
+  | 'purchase_cancelled'             // cancelled in the StoreKit sheet (101) — params: plan, error_code (user_cancelled)
   // Reviews
   | 'review_prompt_requested'        // SKStoreReview dispatched (Apple hides the actual dialog)
   | 'rate_tap'                       // tapped the persistent "Rate ONDA" stars → App Store write-review page. params: place (home). Row hides after the first tap. Star count is NOT recorded (Apple review-gating rule).
@@ -183,14 +190,51 @@ function _toSnake(s: string): string {
     .slice(0, 40);
 }
 
-function _sanitizeFirebaseParams(p?: Record<string, unknown>): Record<string, any> {
+/**
+ * Firebase Analytics / GA4 DROPS boolean params ("(not set)"), so booleans are
+ * banned at the type level (NoBooleanParams) and, as a safety net, converted to
+ * the strings "true"/"false" here, before ANY sink (Firebase, Supabase) — 095.
+ */
+export type NoBooleanParams<T> = {
+  [K in keyof T]: 0 extends (1 & T[K]) ? T[K] /* any: converted at runtime */ : [Extract<T[K], boolean>] extends [never] ? T[K] : never;
+};
+export type AnalyticsParams<T extends Record<string, unknown> = Record<string, unknown>> = T & NoBooleanParams<T>;
+
+/** Explicit boolean → GA4-safe string param. */
+export const boolParam = (v: unknown): 'true' | 'false' => (v ? 'true' : 'false');
+
+export function stringifyBooleanParams(p?: Record<string, unknown>): Record<string, unknown> | undefined {
+  if (!p) return p;
+  const out: Record<string, unknown> = {};
+  for (const [k, v] of Object.entries(p)) out[k] = typeof v === 'boolean' ? String(v) : v;
+  return out;
+}
+
+/**
+ * 103: GA4 shows custom NUMERIC event params as "(not set)" in custom-dimension
+ * reports, so the Firebase mirror sends numbers as strings — EXCEPT these
+ * reserved GA4/Firebase e-commerce params, which GA4 reads as numbers (revenue,
+ * tax, ...) and must stay numeric. Applied to ALL events: the names are reserved
+ * by GA4 and no custom ONDA param reuses them, so keeping them numeric anywhere
+ * is exactly GA4's own contract. Supabase is untouched (raw metadata).
+ */
+export const FIREBASE_NUMERIC_PARAMS: ReadonlySet<string> = new Set([
+  'value', 'price', 'quantity', 'tax', 'shipping', 'discount',
+]);
+/** Reserved array param (GA4 e-commerce `items`) — passed through as-is. */
+const FIREBASE_PASSTHROUGH_PARAMS: ReadonlySet<string> = new Set(['items']);
+
+export function _sanitizeFirebaseParams(p?: Record<string, unknown>): Record<string, any> {
   if (!p) return {};
   const out: Record<string, any> = {};
   for (const [k, v] of Object.entries(p)) {
     if (v === null || v === undefined) continue;
     const key = _toSnake(k);
-    if (typeof v === 'string') out[key] = v.slice(0, 100);
-    else if (typeof v === 'number' || typeof v === 'boolean') out[key] = v;
+    if (FIREBASE_PASSTHROUGH_PARAMS.has(key) && Array.isArray(v)) out[key] = v;
+    else if (typeof v === 'string') out[key] = v.slice(0, 100);
+    else if (typeof v === 'boolean') out[key] = String(v);
+    // Floats become plain String(v) (e.g. "0.8333333333333334" — far below 100 chars).
+    else if (typeof v === 'number') out[key] = FIREBASE_NUMERIC_PARAMS.has(key) ? v : String(v).slice(0, 100);
     else out[key] = String(v).slice(0, 100);
   }
   return out;
@@ -539,7 +583,8 @@ class AnalyticsService {
   /**
    * Track an analytics event
    */
-  async track(eventName: AnalyticsEventName, metadata?: Record<string, unknown>): Promise<void> {
+  async track<T extends Record<string, unknown>>(eventName: AnalyticsEventName, rawMetadata?: AnalyticsParams<T>): Promise<void> {
+    const metadata = stringifyBooleanParams(rawMetadata);
     const event: AnalyticsEvent = {
       event_name: eventName,
       metadata,
@@ -652,10 +697,10 @@ class AnalyticsService {
   /**
    * Track practice-specific events with standard metadata
    */
-  trackPractice(
+  trackPractice<T extends Record<string, unknown>>(
     action: 'start' | 'pause' | 'resume' | 'complete' | 'abandon',
     practiceId: string,
-    metadata?: Record<string, unknown>
+    metadata?: AnalyticsParams<T>
   ): Promise<void> {
     const eventName = `practice_${action}` as AnalyticsEventName;
     return this.track(eventName, {
@@ -715,9 +760,9 @@ class AnalyticsService {
 export const analytics = new AnalyticsService();
 
 // Convenience function for direct tracking
-export const trackEvent = (
+export const trackEvent = <T extends Record<string, unknown>>(
   eventName: AnalyticsEventName,
-  metadata?: Record<string, unknown>
+  metadata?: AnalyticsParams<T>
 ): Promise<void> => {
   return analytics.track(eventName, metadata);
 };

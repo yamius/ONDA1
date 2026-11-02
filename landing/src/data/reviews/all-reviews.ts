@@ -7,6 +7,7 @@
  */
 import type { ToolReview, ToolReviewInput, ReviewCategory } from './types'
 import { withOverallScore, sortByRank } from './scoring'
+import { registerScoreLookup, resolveScoresDeep } from './score-text'
 import ouraRing4 from './oura-ring-4'
 import ouraRing5 from './oura-ring-5'
 import whoop5 from './whoop-5-0'
@@ -404,4 +405,14 @@ function rankWithinCategories(list: ToolReview[]): ToolReview[] {
 }
 
 /** Full registry — including date-gated future entries — scored and ranked. */
-export const ALL_REVIEWS: ToolReview[] = rankWithinCategories(REVIEW_MODULES.map(withOverallScore))
+const SCORED: ToolReview[] = REVIEW_MODULES.map(withOverallScore)
+const SCORED_BY_SLUG = new Map(SCORED.map((r) => [r.slug, r]))
+// {{score:slug}} / {{score:slug.criterion}} in any review, duel or round-up text (score-text.ts).
+registerScoreLookup((slug, criterionId) => {
+  const r = SCORED_BY_SLUG.get(slug)
+  if (!r) return undefined
+  return criterionId ? r.scores.find((s) => s.criterionId === criterionId)?.score : r.overallScore
+})
+/** Scored, text still carrying {{score:}} placeholders — the i18n export source and the score-text build check. */
+export const ALL_REVIEWS_RAW: ToolReview[] = rankWithinCategories(SCORED)
+export const ALL_REVIEWS: ToolReview[] = ALL_REVIEWS_RAW.map((r) => resolveScoresDeep(r, `review ${r.slug}`))

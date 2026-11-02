@@ -19,7 +19,7 @@ const morozkoVsPlunge: HeadToHeadInput = {
     { name: 'Temperature floor', winner: 'a', note: 'Morozko: 33°F with surface ice formation. Plunge: 39°F. Morozko is the only consumer device that can freeze the surface.' },
     { name: 'Chiller power', winner: 'a', note: 'Morozko: overbuilt for ice formation. Plunge: 1 HP capable for 39°F. Morozko substantially more powerful.' },
     { name: 'Daily-use protocol fit', winner: 'b', note: 'Plunge: 39°F is the typical biohacker cold-plunge target. Morozko: overkill for most protocols.' },
-    { name: 'Build', winner: 'a', note: 'Morozko: premium insulated build engineered for sub-40°F operation. Plunge: comparable premium build for 39°F.' },
+    { name: 'Build', criterionId: 'build', note: 'Morozko: premium insulated build engineered for sub-40°F operation. Plunge: comparable premium build for 39°F.' },
     { name: 'Wim Hof Method affiliation', winner: 'a', note: 'Morozko is the official partner for Wim Hof Method protocols at extreme temperatures.' },
     { name: 'Footprint and install', winner: 'b', note: 'Plunge: standard 110V install. Morozko: some configurations require 220V electrical work.' },
     { name: 'Price', winner: 'b', note: 'Plunge: $5,990. Morozko: $10,000+. Plunge is ~60% of Morozko.' },

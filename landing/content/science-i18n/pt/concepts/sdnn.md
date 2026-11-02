@@ -1,5 +1,5 @@
 ---
-sourceHash: "2b4d79850bed"
+sourceHash: "642b27d8d4fd"
 title: "SDNN: o que esta métrica de HRV mede e o que não mede"
 metaTitle: "SDNN: definição, significado e o caso da Apple"
 metaDescription: "O SDNN é a métrica de HRV que o Apple Health armazena. O que ele mede, como difere do RMSSD e por que os dois números não podem ser comparados."
@@ -101,9 +101,9 @@ Na prática: a [calculadora de HRV](/tools/hrv) tem um modo SDNN feito para núm
 
 ## O que mostram as evidências?
 
-Estabelecido. A definição, o cálculo e o papel do SDNN como medida da variabilidade geral vêm dos padrões de medição da área [S1] e de revisões metodológicas [S2, S3]. Sua dependência da duração do registro é uma propriedade metodológica central, não um detalhe [S2]. Na cardiologia clínica, o SDNN de dia inteiro obtido de ECG contínuo é uma medida consolidada de estratificação de risco em populações de pacientes [S2]. Em média, os valores diminuem com a idade em adultos saudáveis, com grande variação individual [S4].
+Estabelecido. A definição, o cálculo e o papel do SDNN como medida da variabilidade geral vêm dos padrões de medição da área [S1] e de revisões metodológicas [S2, S3]. Sua dependência da duração do registro é uma propriedade metodológica central, não um detalhe [S2]. Na cardiologia clínica, o SDNN de dia inteiro obtido de ECG contínuo é uma medida consolidada de estratificação de risco em populações de pacientes [S2].
 
-Depende do contexto. Estimativas de dispositivos vestíveis: os valores derivados da PPG podem acompanhar de perto a HRV derivada do ECG em condições controladas de repouso, mas a concordância piora com movimento e sinal ruim, e as estimativas agrupadas não se generalizam para o sono nem para a vida cotidiana [S5, S6]. O ecossistema da Apple armazena a HRV como SDNN — um fato sobre o dispositivo, com seu próprio alcance, não uma afirmação de saúde [S8, S9, S10].
+Depende do contexto. Estimativas de dispositivos vestíveis: os valores derivados da PPG podem acompanhar de perto a HRV derivada do ECG em condições controladas de repouso, mas a concordância piora com movimento e sinal ruim, e as estimativas agrupadas não se generalizam para o sono nem para a vida cotidiana [S5, S6]. O ecossistema da Apple armazena a HRV como SDNN — um fato sobre o dispositivo, com seu próprio alcance, não uma afirmação de saúde [S8, S9, S10]. Em média, os valores diminuem com a idade em adultos saudáveis, com grande variação individual [S4].
 
 Diretriz / consenso de especialistas. As diretrizes atuais recomendam condições de registro consistentes e uma interpretação cautelosa e contextualizada de valores isolados, inclusive os de dispositivos vestíveis [S7]. Isso é consenso de especialistas sobre como medir e interpretar — não dados experimentais diretos sobre o SDNN em si.
 

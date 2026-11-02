@@ -61,7 +61,7 @@ const bestAirPurifiers2026: Comparison = {
     },
   ],
   verdict:
-    'IQAir HealthPro Plus wins overall with maker-rated H14 HyperHEPA filtration (company-stated) — the deepest filtration spec in this round-up. Dyson Big+Quiet is the rational premium-smart choice with formaldehyde focus. Coway Airmega 400 is the mid-premium value sweet spot. Levoit Core 600S owns the mid-budget smart category. Coway Airmega AP-1512HH and Winix 5500-2 cover the credible budget tier. Levoit Core 300 at $99 is the starter device. Pick on three questions: filtration depth (HEPA grade), room coverage (CADR), smart features (sensor + app).',
+    'Dyson Big+Quiet, Coway Airmega 400 and IQAir HealthPro Plus are practically equal overall (within 0.1 in the ONDA score). IQAir HealthPro Plus has maker-rated H14 HyperHEPA filtration (company-stated) — the deepest filtration spec in this round-up. Dyson Big+Quiet is the rational premium-smart choice with formaldehyde focus. Coway Airmega 400 is the mid-premium value sweet spot. Levoit Core 600S owns the mid-budget smart category. Coway Airmega AP-1512HH and Winix 5500-2 cover the credible budget tier. Levoit Core 300 at $99 is the starter device. Pick on three questions: filtration depth (HEPA grade), room coverage (CADR), smart features (sensor + app).',
   faq: [
     {
       q: 'What is the best air purifier in 2026?',

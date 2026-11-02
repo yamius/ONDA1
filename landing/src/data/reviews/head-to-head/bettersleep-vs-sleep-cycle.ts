@@ -24,7 +24,7 @@ const bettersleepVsSleepCycle: HeadToHeadInput = {
     { name: 'Sleep insights and trends', winner: 'b', note: 'Sleep Cycle: deep post-sleep analytics, multi-month trends, snoring/sleep-talk detection. BetterSleep: lighter analytics.' },
     { name: 'Cross-platform support', winner: 'tie', note: 'Both: iPhone and Android with full functionality. Equal.' },
     { name: 'Subscription', winner: 'tie', note: 'Both: freemium with ~$50/year premium tiers. Equivalent.' },
-    { name: 'Free tier', winner: 'tie', note: 'Both have meaningful free tiers; premium content gated. Roughly equal.' },
+    { name: 'Free tier', criterionId: 'free-tier', note: "Sleep Cycle leads: its free tier is usable on its own — many users never pay. BetterSleep has a free tier too, but the full library and tracking need the subscription." },
   ],
   faq: [
     {

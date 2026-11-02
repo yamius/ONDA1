@@ -24,6 +24,9 @@ import { ONDA_CAPS, getOndaVs, type Cap, type CapabilityAxis } from '../data/ond
 import { langFromPath } from '../i18n'
 import { PRODUCT_I18N, type ProductCopy } from '../data/product-i18n'
 
+import AndroidWaitlistBadge from '../components/AndroidWaitlistBadge'
+import { AppStoreBadge } from '../components/AppStoreCTA'
+
 const CAP_GLYPH: Record<Cap, string> = { yes: '✓', limited: '~', no: '—' }
 const CAP_CLASS: Record<Cap, string> = {
   yes: 'text-terminal-green',
@@ -103,6 +106,7 @@ const EN_COPY: ProductCopy = {
     'Guided resonance breathing',
     'Resting-HRV trend tracking over days and weeks',
     'A structured, 8-level practice path for your nervous system',
+    'Guided meditation and wind-down practices — stillness and slow-exhale sessions, including ones you can do lying down before sleep',
     'Works with the iPhone camera or an Apple Watch you already own',
   ],
   doesFootnotePre: 'For exactly which numbers are measured, derived or estimated, see ',
@@ -130,8 +134,7 @@ const EN_COPY: ProductCopy = {
   notForItems: [
     'Diagnosis, or treatment of any medical condition — ONDA is not a medical device',
     'Replacing psychotherapy or medical care',
-    'Sleep tracking — ONDA is not a sleep tracker',
-    'A large general meditation or sleep-story library',
+    'A readiness/recovery score like Oura or WHOOP — ONDA shows sleep rhythm (with Apple Watch), not a single recovery number',
   ],
   crossPre: 'See how ONDA compares to other apps and wearables on the ',
   compareLink: 'compare hub',
@@ -173,12 +176,10 @@ export function ProductPage() {
         <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/70">[ PRODUCT ]</div>
         <h1 className="mb-5 text-3xl font-bold tracking-tight md:text-5xl">ONDA Life</h1>
         <p className="font-mono text-sm leading-relaxed text-white/70 md:text-base">{copy.heroPara}</p>
-        <a
-          href={appStoreUrl(storeCt('pg', 'product', lang))}
-          className="mt-8 inline-block rounded border border-terminal-green/40 px-4 py-2 font-mono text-sm text-terminal-green transition-colors hover:bg-terminal-green/10"
-        >
-          {copy.cta}
-        </a>
+        <div className="mt-8 flex flex-wrap items-center gap-3">
+          <AppStoreBadge href={appStoreUrl(storeCt('pg', 'product', lang))} lang={lang} />
+          <AndroidWaitlistBadge source="product" always />
+        </div>
       </header>
 
       {/* PRODUCT FACTS */}

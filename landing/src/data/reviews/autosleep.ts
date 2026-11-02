@@ -9,11 +9,11 @@ const autosleep: ToolReviewInput = {
   description:
     'ONDA review of AutoSleep — the purist Apple Watch sleep tracker, a one-time purchase with no subscription. Scored on tracking, insights and value.',
   verdict:
-    'The purist Apple Watch sleep tracker — accurate, automatic and subscription-free — but it only measures sleep, it does not help you get it.',
+    'The purist Apple Watch sleep tracker — detailed, automatic and subscription-free — but it only measures sleep, it does not help you get it.',
   summary:
-    'AutoSleep is the purist Apple Watch sleep tracker. It tracks automatically and accurately, it is detailed, and it is a rare one-time purchase with no subscription. The trade-off is total focus: it measures sleep and does nothing else — no wind-down content at all.',
+    'AutoSleep is the purist Apple Watch sleep tracker. It tracks automatically and in detail, and it is a rare one-time purchase with no subscription. The trade-off is total focus: it measures sleep and does nothing else — no wind-down content at all.',
   scores: [
-    { criterionId: 'tracking-accuracy', score: 8.5, note: 'Automatic, detailed Apple Watch tracking — accurate, with a devoted following among watch owners.' },
+    { criterionId: 'tracking-accuracy', score: 8.5, note: 'Automatic, detailed Apple Watch tracking (staging not independently validated), with a devoted following among watch owners.' },
     { criterionId: 'wind-down-content', score: 3.0, note: 'None at all — no sounds, no stories; AutoSleep does not try to help you fall asleep.' },
     { criterionId: 'sleep-science', score: 6.5, note: 'Sound metrics and a "sleep bank" concept, without a distinctive research method.' },
     { criterionId: 'insights', score: 8.0, note: 'Detailed analysis and trends — readiness, debt and consistency — for those who want the data.' },
@@ -22,7 +22,7 @@ const autosleep: ToolReviewInput = {
     { criterionId: 'value', score: 9.0, note: 'A few dollars, once, with no subscription — exceptional value in a category full of recurring fees.' },
   ],
   pros: [
-    'Accurate, automatic Apple Watch tracking',
+    'Detailed, automatic Apple Watch tracking',
     'A one-time purchase — no subscription',
     'Detailed analysis and trends',
     'No buttons — it just tracks',
@@ -33,7 +33,7 @@ const autosleep: ToolReviewInput = {
     'A dense interface that rewards setup',
     'Measures sleep but does nothing to improve it',
   ],
-  bestFor: 'Best for Apple Watch owners who want accurate sleep data and no subscription.',
+  bestFor: 'Best for Apple Watch owners who want detailed sleep data and no subscription.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — from public information, app-store data and independent 2026 reviews. Not based on a long hands-on trial by ONDA.',
@@ -42,7 +42,7 @@ const autosleep: ToolReviewInput = {
   linkType: 'official',
   content: `## Where it leads
 
-AutoSleep is the purist's Apple Watch sleep tracker. It tracks automatically — no buttons, no "I'm going to bed" — and it is detailed and accurate, with a devoted following among Apple Watch owners. Best of all, it is a one-time purchase: a few dollars, once, with no subscription at all, which in a category full of recurring fees is rare.
+AutoSleep is the purist's Apple Watch sleep tracker. It tracks automatically — no buttons, no "I'm going to bed" — and it is detailed, with a devoted following among Apple Watch owners. Best of all, it is a one-time purchase: a few dollars, once, with no subscription at all, which in a category full of recurring fees is rare.
 
 ## What are the downsides of AutoSleep?
 
@@ -60,7 +60,7 @@ The sleep biology behind what these apps measure and the protocols they support.
 
 - [Circadian reset: mastering light](/articles/circadian-reset-mastering-light) — why light timing dominates sleep quality more than anything else
 - [Circadian lighting and dark therapy](/articles/circadian-lighting-dark-therapy) — the protocol layer that compounds with tracking
-- [Ancestral sync and circadian anchors](/articles/ancestral-sync-circadian-anchors) — the inputs that keep circadian timing stable across travel and shift work
+- [Circadian anchors: keeping timing stable](/articles/ancestral-sync-circadian-anchors) — the inputs that keep circadian timing stable across travel and shift work
 `,
   references: [
     { label: 'AutoSleep (Tantsissa) — developer site', url: 'https://www.tantsissa.com' },
@@ -68,10 +68,10 @@ The sleep biology behind what these apps measure and the protocols they support.
   ],
   relatedSlugs: ['pillow', 'sleep-cycle', 'sleep-as-android'],
   faq: [
-    { q: "Is AutoSleep worth it?", a: "Yes, for Apple Watch owners who want accurate sleep data without a subscription. AutoSleep tracks automatically and in detail for a one-time purchase. It is not worth it if you need help falling asleep, because it only measures sleep and has no wind-down content at all." },
-    { q: "How much does AutoSleep cost?", a: "AutoSleep costs about $6 as a one-time purchase, with no subscription ever required. It runs on iOS and Apple Watch only. That single low price covers automatic, accurate Apple Watch sleep tracking plus detailed analysis and long-term trends." },
+    { q: "Is AutoSleep worth it?", a: "Yes, for Apple Watch owners who want detailed sleep data without a subscription. AutoSleep tracks automatically and in detail for a one-time purchase. It is not worth it if you need help falling asleep, because it only measures sleep and has no wind-down content at all." },
+    { q: "How much does AutoSleep cost?", a: "AutoSleep costs about $6 as a one-time purchase, with no subscription ever required. It runs on iOS and Apple Watch only. That single low price covers automatic, detailed Apple Watch sleep tracking plus detailed analysis and long-term trends." },
     { q: "What are the downsides of AutoSleep?", a: "AutoSleep measures sleep but does nothing to improve it: there is no wind-down content whatsoever. It works only on iOS and Apple Watch, and its dense interface rewards time spent on setup, which can put off users who want something simple out of the box." },
-    { q: "Who is AutoSleep best for?", a: "AutoSleep is best for Apple Watch owners who want accurate, automatic sleep data and no subscription. It suits data-focused users who are happy with a purist tracker and do not need soundscapes, stories or other relaxation content." },
+    { q: "Who is AutoSleep best for?", a: "AutoSleep is best for Apple Watch owners who want detailed, automatic sleep data and no subscription. It suits data-focused users who are happy with a purist tracker and do not need soundscapes, stories or other relaxation content." },
   ],
   datePublished: '2026-05-16',
   dateModified: '2026-10-10',

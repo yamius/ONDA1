@@ -7,18 +7,18 @@ const hypervoltGo2: ToolReviewInput = {
   category: 'massage-gun',
   productType: 'Premium travel / mini massage gun',
   description:
-    'ONDA review of the Hyperice Hypervolt Go 2 — premium travel-sized massage gun with 30 lbs stall force, 12 mm amplitude and Hyperice ecosystem at $129. Scored on stall force, build, battery and value.',
+    'ONDA review of the Hypervolt Go 2 — premium travel massage gun: 30 lbs stall force, 12 mm amplitude, Hyperice app, $129. Scored on power and value.',
   verdict:
     'Best premium-brand travel mini — Hypervolt ecosystem in pocket form factor. Reduced stall force is the trade for portability.',
   summary:
-    'Hypervolt Go 2 is the premium travel mini — pocket-sized form factor with 30 lbs stall force, 12 mm amplitude, brushless motor, 2 attachments, Hyperice app integration, $129. Stall force is meaningfully reduced vs Hypervolt 2 Pro (60 lbs); the trade is portability and premium-brand ecosystem at sub-budget pricing. Best fit for users wanting Hyperice quality in travel form.',
+    'Hypervolt Go 2 is the premium travel mini — pocket-sized form factor with 30 lbs stall force, 12 mm amplitude, brushless motor, 2 attachments, Hyperice app integration, $129. Stall force is meaningfully reduced vs Hypervolt 2 Pro (60 lbs); the trade is portability and the premium-brand ecosystem at a mid-range price — $30 above the budget Bob and Brad Q2 Mini ($99). Best fit for users wanting Hyperice quality in travel form.',
   scores: [
     { criterionId: 'stall-force-amplitude', score: 6.5, note: '30 lbs stall force — half of Hypervolt 2 Pro. 12 mm amplitude. Reduced percussion dose by design.' },
     { criterionId: 'build-attachments', score: 7.5, note: 'Brushless motor, 2 attachments only, 1-year warranty. Premium Hyperice build at mini scale.' },
     { criterionId: 'battery-noise', score: 8.0, note: 'Brushless motor at 50 dB. ~2.5 hours per charge. Quietest travel mini in category.' },
     { criterionId: 'app-smart-features', score: 7.5, note: 'Hyperice app integration — same ecosystem as Hypervolt 2 Pro. Smart features in travel form.' },
     { criterionId: 'ergonomics-portability', score: 9.5, note: 'Best portability in premium category. ~1.5 lbs, pocket form factor, travel-friendly. Single-hand single-grip optimal for the size.' },
-    { criterionId: 'value', score: 7.0, note: '$129 — premium-brand travel mini at accessible pricing. More expensive than budget Bob and Brad Q2 Mini ($99) but with Hyperice ecosystem.' },
+    { criterionId: 'value', score: 7.0, note: '$129 — premium-brand travel mini at a mid-range price. More expensive than budget Bob and Brad Q2 Mini ($99) but with Hyperice ecosystem.' },
   ],
   pros: [
     'Premium Hyperice brand and app at travel-mini form factor',

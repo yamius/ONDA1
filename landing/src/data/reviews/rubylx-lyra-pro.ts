@@ -17,7 +17,7 @@ const rubylxLyraPro: ToolReviewInput = {
     { criterionId: 'wavelengths', score: 8.5, note: 'Five wavelengths (630 + 660 + 810 + 830 + 850 nm) — covers the standard photobiomodulation range without exotic additions.' },
     { criterionId: 'build-emf-flicker', score: 9.0, note: 'Third-party EMF at <0.3 mG at 6", flicker rate published and below research thresholds. Aluminium build with multi-year warranty.' },
     { criterionId: 'coverage', score: 7.5, note: 'Mid-large panel — between PlatinumLED BIOMAX 600 and MitoPRO 1500. Stand included; full-body requires stacking.' },
-    { criterionId: 'evidence', score: 7.5, note: 'RubyLx publishes full third-party lab reports for every claimed spec — the most-tested panel in this list.' },
+    { criterionId: 'evidence', score: 7.0, note: 'RubyLx publishes full third-party lab reports for every claimed spec — the most-tested panel in this list.' },
     { criterionId: 'value', score: 7.0, note: '$1,099 — premium pricing but cheaper than Joovv. The third-party testing transparency is what justifies the premium over BioLight.' },
   ],
   pros: [
@@ -72,7 +72,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "RubyLx Lyra Pro vs Joovv: which is better?", a: "The Lyra Pro is cheaper than Joovv with comparable EMF discipline and more published third-party lab testing. Joovv offers a modular ecosystem and a longer reliability track record. Pick RubyLx for verified specs and value, Joovv for its ecosystem." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-10 No independent trial of this device itself — 7.0 is the ceiling without independent validation (ONDA rule).',
 }
 
 export default rubylxLyraPro

@@ -67,7 +67,7 @@ function MyComponent() {
 
   // Track practice events
   trackPractice('start', 'p1-1', { duration: 180 });
-  trackPractice('complete', 'p1-1', { quality_score: 85 });
+  trackPractice('complete', 'p1-1', { duration_seconds: 300 });
 
   // Track errors
   trackError('audio', 'Failed to load track', { url: '...' });
@@ -99,6 +99,7 @@ await analytics.flush();
 | `onboarding_start` | Onboarding begins — live one-screen first-run, or 3-screen tutorial replay | `source` (first_run\|menu), `featured_practice_id` / `att_copy_variant` |
 | `onboarding_step` | Step view — **3-screen tutorial only** (the one-screen first-run has no steps) | `source` (menu), `step`, `total`, `permission` |
 | `onboarding_complete` | Onboarding finished (was Tenjin `tutorial_complete`) | `source`, `completed_via` (cta\|skip — first_run only), `duration_seconds` |
+| `home_view` | Main hub shown | `source` (first_run\|first_launch\|menu\|relaunch), `is_first` ('true'\|'false'), `mode`, `days_since_first_seen` |
 | `sign_up` | User created account | `method` |
 | `sign_in` | User signed in | `method` |
 
@@ -109,8 +110,31 @@ await analytics.flush();
 > demoted to Menu → Intro and emits the same events with `source: 'menu'`, so
 > manual replays stay OUT of the new-user funnel. `first_run_welcome_*` was
 > folded in: the view = `onboarding_start`, the cta/skip outcome = `completed_via`.
+>
+> **Onboarding is disabled since 1.9.x** (`showFirstRun` hard-set to false), so
+> the funnel above is ~0 for new installs. From **1.9.6** the new-user funnel is
+> `first_open` → `home_view{source: first_launch}` → `practice_start` →
+> `paywall_view` → `purchase`. `first_launch` = first-ever hub entry on the
+> install (`is_first: 'true'`), claimed once via the Preferences-backed marker
+> `onda_home_view_seen` (`claimFirstHomeView` in `src/lib/analyticsMarkers.ts`);
+> every later launch is `relaunch` (`is_first: 'false'`).
 
 ### Permission Events
+
+> **095 — read before comparing numbers across versions** (ships in the next
+> release 1.9.5):
+> - **`practice_start` double count removed.** Up to and including 1.9.4, starts
+>   from the recommendation card (`recommend_static`) and the calm check-in push
+>   fired `practice_start` twice (once at the intro, once when the session began).
+>   From 1.9.5 it fires once, in `beginPractice`, with
+>   `source` (home = level 1 grid, level = higher levels, recommend_static,
+>   checkin = face/voice check, signal, push = calm check-in A1/B1, onboarding).
+>   Do not compare `practice_start` counts across that seam directly.
+> - **No boolean params.** Firebase/GA4 drops booleans ("(not set)"). Booleans are
+>   a compile error in `track()` (`AnalyticsParams`/`NoBooleanParams`), callers use
+>   `boolParam()`, and `track()` converts any remaining boolean to `"true"`/`"false"`
+>   before every sink. Older versions show these params as "(not set)".
+
 
 | Event | Description | Metadata |
 |-------|-------------|----------|
@@ -119,7 +143,8 @@ await analytics.flush();
 | `notification_prompt_result` | Notification prompt resolved | `status` |
 | `onboarding_permission_screen_view` | Permission screen shown | — |
 | `watch_connection_attempt` | Trying to connect watch | — |
-| `watch_connect_success` | Watch connected | `heart_rate`, `is_connected` |
+| `watch_connect_success` | Watch connected | `is_connected`, `is_first` (true only on first-ever connection; Capacitor Preferences flag `onda_watch_connected_ever`) |
+| `notif_prompt_answered` | Notification system prompt answered | `trigger` (onboarding\|first_camera), `granted` (true\|false), `answer` (yes\|no) |
 | `watch_connection_failed` | Watch connection failed | `error` |
 
 > `health_permission` is deduped by the granted state (localStorage
@@ -131,10 +156,10 @@ await analytics.flush();
 
 | Event | Description | Metadata |
 |-------|-------------|----------|
-| `practice_start` | Practice started | `practice_type` (standard\|adaptive), `practice_id`, `has_biometrics` |
+| `practice_start` | Practice started (fires once, when the session begins) | `practice_type` (standard\|adaptive), `practice_id`, `has_biometrics`, `source` (home\|level\|recommend_static\|checkin\|signal\|push\|onboarding), `mode` |
 | `practice_pause` | Practice paused | `practice_id` |
 | `practice_resume` | Practice resumed | `practice_id` |
-| `practice_complete` | Practice finished | `practice_type`, `practice_id`, `duration_seconds`, `quality_score`, `ond_earned` |
+| `practice_complete` | Practice finished | `practice_type`, `practice_id`, `duration_seconds`, `time_percent`, `metrics_source`, `is_first`, `has_biometrics`, `is_valid_for_artifact` (time ≥ 80% only, 101), `ond_earned` |
 | `practice_abandon` | Left without completing | `practice_type`, `practice_id`, `reason` (stop\|close\|incomplete) |
 | `first_practice_complete` | First-ever valid completion (value-moment; fires once) | `practice_type` |
 
@@ -166,8 +191,14 @@ await analytics.flush();
 | `paywall_view` | Subscription screen opened | `source` |
 | `paywall_dismiss` | Closed without subscribing | `source`, `plan`, `time_on_screen_seconds` |
 | `paywall_cta_tap` | Tapped the purchase CTA | `plan`, `product_id` |
-| `trial_start` | Free trial started ($0 at Apple) | `product_id`, `plan` |
-| `purchase` | Real paid conversion — Firebase **ecommerce**, keep this name | `value`, `currency`, `product_id`, `plan` |
+| `plan_select` | Switched plan on the paywall (101) | `plan` |
+| `purchase_cancelled` | Cancelled in the StoreKit sheet (101) | `plan`, `error_code` |
+| `purchase_failed` | Purchase error other than cancel (101) | `plan`, `error_code` |
+| `home_tap` | Main-home tap, first session only (101) | `target`, `is_first_session` |
+| `paywall_feedback` | One-time "what stopped you?" after a paywall closed without purchase; never again after answer/dismiss; never for internal traffic (101) | `reason` (price\|try_first\|unclear_value\|other), `paywall_source` |
+| `trial_start` | Free trial started ($0 at Apple; only periodType TRIAL/INTRO, 096) | `product_id`, `plan`, `period_type`, `paywall_source` |
+| `trial_outcome` | Trial decided — once per trial, on the first app open after it (101) | `outcome` (converted\|expired), `plan`, `trial_days`, `practices_in_trial`, `days_active_in_trial`, `watch_connected`, `baseline_filled` |
+| `purchase` | Real paid conversion — Firebase **ecommerce**, keep this name | `value`, `currency`, `product_id`, `plan`, `paywall_source` |
 | `purchase_failed` | Purchase threw | `plan`, `error` |
 | `purchase_cancelled` | User cancelled the StoreKit sheet | `plan` |
 
@@ -179,6 +210,56 @@ await analytics.flush();
 > off-app trial→paid flip still counts, because the baseline persists across
 > launches. Keep the name `purchase` + `value`/`currency` so GA4 counts it as
 > revenue. Trial start ($0) is `trial_start`, never `purchase` (old phantom bug).
+
+#### paywall_source and trial_outcome (task 101, 1.9.7)
+
+Round 2 (101):
+- `paywall_dismiss` gains `paywall_source` (same name as on purchase/trial_start) and
+  `seconds_on_paywall` (string, whole seconds); `source`, `action`,
+  `time_on_screen_seconds` stay for series continuity.
+- `plan_select {plan}` — only on an actual plan switch on the paywall.
+- `purchase_cancelled {plan, error_code:'user_cancelled'}` — StoreKit sheet cancel
+  (RevenueCat userCancelled / code 1). `purchase_failed {plan, error_code}` — any other
+  error, RevenueCat `readableErrorCode`/code only (the old `error` = message param is
+  gone: possible PII); `no_entitlement` when the purchase returned without premium.
+  Before 101 every hook-level failure was swallowed and reported as `purchase_cancelled`.
+  No `purchase_error` event ever existed.
+- `home_tap {target, is_first_session:'true'}` — FIRST SESSION ONLY (`src/lib/firstSession.ts`):
+  starts when the first-ever hub entry is claimed (home_view first_launch), ends at the
+  first background/terminate or after 30 min; end persisted (`onda_first_session_ended`).
+  Upgraders never get a first session. Each target once per session, max 25. Targets:
+  `practice:<id>`, `menu`, `menu_<item>` (menu_settings, menu_diary…), `diary`,
+  `connect_cta`, `watch_connect`, `camera_checkin`, `camera_stop`, `recommendation`,
+  `signal_practice`, `signal_cta`, `voice_check`, `face_check`, `baseline_shift`,
+  `baseline_card`, `simple_restore` (`src/lib/homeTap.ts`).
+- Debug panels (🧪 Test signals, Fire entry events, 🌿 Calm check-ins, 📨 Real push test)
+  render only when `VITE_INTERNAL_BUILD === 'true'` (`src/lib/buildFlags.ts`); in App Store
+  builds the 7-tap only marks the device internal (badge).
+
+- **`paywall_source`** = `source` of the last `paywall_view` (`post_first_experience`,
+  `practice_gate_basic`; the modal also stores whatever `source` prop it was opened
+  with). Persisted in Capacitor Preferences (`onda_last_paywall_source`, mirrored to
+  localStorage) by `src/lib/trialOutcome.ts#recordPaywallSource`. Sent on
+  `trial_start` and `purchase`; `'unknown'` if no paywall was ever seen on this install.
+  **Kept after a purchase, not cleared**: a trial's `purchase` fires days later on the
+  trial→paid flip and must still name the paywall that started the trial; the next
+  `paywall_view` overwrites it.
+- **`trial_outcome`**: on `trial_start` a trial marker is stored
+  (`onda_trial_marker_v1`: start, product, plan, trial length = product intro offer if
+  known else 7 d monthly / 14 d yearly, practice-history length at start, local day keys).
+  Every app open / resume adds the local day (only before the trial end). On every
+  customerInfo load/update `useSubscription` evaluates `entitlements.all[premium]`:
+  periodType `NORMAL` → `converted`; still `TRIAL/INTRO` and active (also
+  cancelled-but-in-trial) → pending; inactive with its expiry passed, or missing after
+  the expected end → `expired`. Sent once per trial (claim `onda_trial_outcome_sent` =
+  startedAt, serialized), then the marker is cleared. `practices_in_trial` = practice
+  history entries dated between start and min(now, trial end); `watch_connected` = 095
+  first-watch marker; `baseline_filled` = `onda_baseline_filled_tracked`. All params are
+  strings. No health values.
+- Limits: a user who never reopens the app after the trial → no `trial_outcome`
+  (use RevenueCat / the webhook for the full picture); a reinstall loses the marker;
+  Family Sharing / another device's trial isn't seen; a refund after conversion still
+  reads `converted` (refunds belong to the webhook).
 
 ### Diagnostics Events
 
@@ -292,13 +373,13 @@ select
 from funnel;
 ```
 
-### Average Practice Quality by Source
+### Average Practice Completion by Source
 
 ```sql
 select 
   utm_source,
   count(*) as practices,
-  round(avg((metadata->>'quality_score')::int), 1) as avg_quality
+  round(avg((metadata->>'time_percent')::int), 1) as avg_time_percent
 from app_events
 where event_name = 'practice_complete'
   and created_at > now() - interval '30 days'
@@ -331,3 +412,68 @@ order by 1;
 
 - [Architecture Overview](./overview.md)
 - [Supabase Migrations](../../supabase/migrations/)
+
+## Purchase reconciliation (task 101 — run ~2 weeks after 1.9.6 ships)
+
+**Why.** The app fires `purchase` only on a not-paid → paid transition it *sees*
+(`useSubscription`). A trial that converts while the app is closed is reported on the
+next open (later day, or never), and a cold-start / killed-app purchase can be lost.
+RevenueCat sees every one server-side, so RevenueCat − GA4 = what the app missed or shifted.
+
+**Step 1 — MCP `revenue_review view=reconcile since=14`** (internal analytics MCP, `mcp/tools/revenue_review.js`):
+- GA4: `purchase` users/events by `date` × `appVersion`, same internal filter as every tool
+  (`internal=exclude` keeps `INTERNAL_MISLABELED_VERSIONS`, i.e. 1.9.5 users).
+- RevenueCat Charts v2: `actives_new` (new paid subscriptions = initial purchases + trial
+  conversions) per day, plus `Conversions` from `trial_conversion_rate`.
+- Output: `totals` (gap, `ga4_capture_pct`), `by_day` (gap = RC − GA4, GA4 split per
+  version), `by_version` (GA4 per version; RC per version only if the chart offers an
+  app-version segment, else `revenuecat_by_version.available=false`).
+- Caveats: GA4 days are property-timezone, RevenueCat days UTC → read multi-day totals;
+  drop the last 2 days (GA4 lag, RC refunds). First run: check `resolution: 'day'` is
+  accepted by the Charts API (add `debug=true` in `full` view to see chart shapes).
+
+**Step 2 — Supabase SQL** (owner runs; `app_events` rows from the `revenuecat-webhook`
+function carry `rc_event_type`, `period_type`, `is_trial_conversion`, `country`, `environment`;
+SANDBOX is never stored). RevenueCat paid events with no app `purchase` the same UTC day
+for the same signed-in user = cold-start / closed-app purchases. Anonymous RC ids
+(`$RCAnonymousID`) cannot be joined to the app's anonymous id → counted separately.
+
+```sql
+with rc as (
+  select date_trunc('day', created_at)::date as day,
+         coalesce(user_id::text, anonymous_id) as uid,
+         user_id is null as anon,
+         metadata->>'rc_event_type' as rc_type,
+         metadata->>'period_type'   as period_type,
+         metadata->>'country'       as country
+  from app_events
+  where event_name in ('subscription_started', 'subscription_renewed')
+    and created_at >= now() - interval '28 days'
+    and (
+      (metadata->>'rc_event_type' = 'INITIAL_PURCHASE' and metadata->>'period_type' = 'NORMAL')
+      or (metadata->>'is_trial_conversion')::boolean
+    )
+),
+app as (
+  select distinct date_trunc('day', created_at)::date as day, user_id::text as uid
+  from app_events
+  where event_name = 'purchase' and user_id is not null
+    and created_at >= now() - interval '29 days'
+)
+select rc.day,
+       count(*)                                                as rc_paid,
+       count(*) filter (where rc.rc_type = 'RENEWAL')          as rc_trial_conversions,
+       count(*) filter (where rc.anon)                         as rc_anonymous_unjoinable,
+       count(*) filter (where not rc.anon and app.uid is null) as rc_without_app_purchase,
+       count(*) filter (where not rc.anon and app.uid is not null) as matched
+from rc
+left join app on app.uid = rc.uid and app.day between rc.day and rc.day + 1
+group by rc.day
+order by rc.day;
+```
+
+`rc_without_app_purchase` (plus most of `rc_anonymous_unjoinable`) is the closed-app /
+cold-start share. Matching allows +1 day for timezone drift; tighten to the same day if
+you want strict "same day".
+
+> **101 — health stays out of analytics.** Removed: `first_practice_quality` (paywall_view, purchase), `quality_score` (practice_complete, first_practice_complete, unlock_achievement), `result_state` (results_view), the `baseline_state` event, and the emotion `label` on start/finish_emotional_check. `is_valid_for_artifact` in analytics now means time ≥ 80% only (the in-app artifact rule is unchanged). Older app versions still send the removed fields.

@@ -61,7 +61,6 @@ export function founderJsonLd(lang: Lang = 'en'): Record<string, unknown>[] {
           'architecture',
           'Gestalt therapy',
           'systemic family therapy',
-          'psychology',
           'breathwork',
           'heart rate variability',
           'physiological self-regulation',

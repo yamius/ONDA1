@@ -1,5 +1,5 @@
 ---
-sourceHash: 952ca247f74b
+sourceHash: "fc1adc20f09d"
 title: "Warum ist meine HRV so niedrig? Häufige Ursachen und was die Evidenz zeigt"
 metaTitle: "HRV niedrig: Ursachen und was sie bedeuten"
 metaDescription: "Warum ist meine HRV niedrig? Meist eine Reaktion auf Schlaf, Alkohol, Infekt, Stress oder Training, keine Diagnose. Jede Ursache mit Evidenz und wann zum Arzt."

@@ -198,7 +198,7 @@ evidenceMap:
     limitation: "Official documentation; availability scoped to specific OS versions; what apps record via this type depends on each app."
   - claim: "On average, heart-rate variability diminishes with age in healthy adults, while individuals vary widely."
     sources: [S4]
-    class: established
+    class: context-dependent
     claimType: other
     quote: "autonomic activities diminish with age in both genders"
     limitation: "Cross-sectional population averages; wide individual variation at every age; no age tables on this page."
@@ -261,9 +261,9 @@ For practical placement: the [HRV calculator](/tools/hrv) has an SDNN mode built
 
 ## What does the evidence show?
 
-Established. The definition, computation and overall-variability role of SDNN come from the field's measurement standards [S1] and methodological reviews [S2, S3]. Its dependence on recording length is a core methodological property, not a nuance [S2]. In clinical cardiology, all-day SDNN from continuous ECG is an established risk-stratification measure in patient populations [S2]. On average, values decline with age in healthy adults, with wide individual variation [S4].
+Established. The definition, computation and overall-variability role of SDNN come from the field's measurement standards [S1] and methodological reviews [S2, S3]. Its dependence on recording length is a core methodological property, not a nuance [S2]. In clinical cardiology, all-day SDNN from continuous ECG is an established risk-stratification measure in patient populations [S2].
 
-Context-dependent. Wearable estimates: PPG-derived values can track ECG-derived HRV closely under controlled resting conditions, but agreement weakens with movement and poor signal, and pooled estimates do not generalize to sleep or free-living settings [S5, S6]. Apple's ecosystem stores HRV as SDNN — a device fact with its own scope, not a health claim [S8, S9, S10].
+Context-dependent. Wearable estimates: PPG-derived values can track ECG-derived HRV closely under controlled resting conditions, but agreement weakens with movement and poor signal, and pooled estimates do not generalize to sleep or free-living settings [S5, S6]. Apple's ecosystem stores HRV as SDNN — a device fact with its own scope, not a health claim [S8, S9, S10]. On average, values decline with age in healthy adults, with wide individual variation [S4].
 
 Methodological guidance. Current guidelines recommend consistent recording conditions and cautious, contextualized interpretation of single values, including from wearables [S7]. That is expert consensus about how to measure and interpret — not direct experimental data about SDNN itself.
 

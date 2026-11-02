@@ -20,12 +20,12 @@ const threeBudgetPlunge: HeadToHeadInput = {
   bestForC:
     'Choose Inergize Cold Tub if you want a modular upgrade path — start with ice-fill, add chiller later as practice solidifies.',
   axes: [
-    { name: 'Form factor', winner: 'a', note: 'Ice Barrel: vertical barrel, fits where horizontal tubs cannot. Cold Pod: inflatable, foldable. Inergize: rigid horizontal tub with insulation.' },
+    { name: 'Form factor', criterionId: 'form-factor', note: "Cold Pod leads: it folds down for storage and inflates in about 10 minutes, per the maker, so it works as a temporary indoor or outdoor setup. Ice Barrel's upright 32-inch barrel has a smaller fixed footprint than horizontal tubs; Inergize is a rigid 67 × 31-inch tub, best as a permanent install." },
     { name: 'Build durability (multi-year)', winner: 'a', note: 'Ice Barrel: 5+ years of consumer reliability data on the barrel form. Cold Pod: inflatable, more vulnerable. Inergize: solid mid-tier build.' },
     { name: 'Upgrade path to chiller', winner: 'c', note: 'Inergize offers a chiller add-on for ~$1,300. Ice Barrel and Cold Pod are ice-fill-only.' },
     { name: 'Insulation hold time', winner: 'c', note: 'Inergize: best insulation in the budget tier. Ice Barrel: solid. Cold Pod: thinnest insulation due to inflatable construction.' },
     { name: 'Storage', winner: 'b', note: 'Cold Pod: folds down for storage. Ice Barrel and Inergize: permanent install.' },
-    { name: 'Water management', winner: 'tie', note: 'All three: manual water changes; no ozone in base configurations.' },
+    { name: 'Water management', criterionId: 'water-management', note: "Inergize leads: it offers an optional ozone add-on. Ice Barrel and Cold Pod have no ozone or filter, so water is changed by hand (Ice Barrel every 1–2 weeks, plus daily ice top-ups)." },
     { name: 'Price', winner: 'b', note: 'Cold Pod: $220. Ice Barrel: $1,200. Inergize (tub-only): $1,500. Cold Pod cheapest by a wide margin.' },
   ],
   faq: [

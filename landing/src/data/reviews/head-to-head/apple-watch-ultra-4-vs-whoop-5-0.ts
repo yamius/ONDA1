@@ -23,7 +23,7 @@ const ultra4VsWhoop5: HeadToHeadInput = {
     { name: 'HRV metric comparability', winner: 'tie', note: 'Apple Health now carries an RMSSD value, the statistic Whoop uses, so you can compare in kind — Apple hasn’t confirmed Recovery HRV is RMSSD.' },
     { name: 'Subscription / cost', winner: 'a', note: 'Ultra 4 is from $799 one-time, no subscription. Whoop is membership-only at $199–$359/year — far cheaper up front, an ongoing cost forever, and the band stops working if you stop paying.' },
     { name: 'Sensors & health features', winner: 'a', note: 'The Ultra 4 adds single-lead ECG, hypertension notifications, a 40 m depth/dive sensor and satellite connectivity; Whoop is a multi-wavelength optical band focused on recovery.' },
-    { name: 'Data access', winner: 'a', note: 'HealthKit is comparatively open and now writes native RMSSD alongside SDNN; Whoop has a developer API but the raw beat-to-beat stream stays largely closed.' },
+    { name: 'Data access', criterionId: 'data-access', note: 'HealthKit is comparatively open and now writes native RMSSD alongside SDNN; Whoop has a developer API but the raw beat-to-beat stream stays largely closed.' },
   ],
   faq: [
     {

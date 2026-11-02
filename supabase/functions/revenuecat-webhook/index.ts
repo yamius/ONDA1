@@ -40,6 +40,7 @@ interface RevenueCatWebhookEvent {
     grace_period_expiration_at_ms?: number;
     auto_resume_at_ms?: number;
     presented_offering_id?: string;
+    country_code?: string;
   };
 }
 
@@ -176,6 +177,12 @@ serve(async (req) => {
               ? new Date(event.expiration_at_ms).toISOString()
               : null,
             store: event.store,
+            // 096: raw period type (TRIAL | INTRO | NORMAL), store country
+            // (ISO code, not personal data) and environment. Note: SANDBOX
+            // events are skipped above, so environment is always PRODUCTION.
+            period_type: event.period_type ?? null,
+            country: event.country_code ?? null,
+            environment: event.environment ?? null,
           },
         });
       } catch (logErr) {

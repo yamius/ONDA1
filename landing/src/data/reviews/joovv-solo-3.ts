@@ -7,7 +7,7 @@ const joovvSolo3: ToolReviewInput = {
   category: 'red-light',
   productType: 'Modular full-panel red + NIR LED therapy device',
   description:
-    'ONDA review of the Joovv Solo 3.0 — a long-running, widely used biohacker red light therapy panel, modular and well built. Scored on irradiance, wavelengths, EMF and value.',
+    'ONDA review of the Joovv Solo 3.0 — a long-running, modular, well-built red light therapy panel. Scored on irradiance, wavelengths, EMF and value.',
   verdict:
     'A long-running, widely used panel — modular, well-built, fairly measured irradiance. Most expensive in this list, mostly justified.',
   summary:
@@ -17,7 +17,7 @@ const joovvSolo3: ToolReviewInput = {
     { criterionId: 'wavelengths', score: 8.5, note: 'Combo 660 nm red + 850 nm NIR with published peaks at the standard photobiomodulation wavelengths. No exotic UV/940 nm additions; clean spectrum.' },
     { criterionId: 'build-emf-flicker', score: 9.0, note: 'Aluminium back panel, glass front, third-party EMF tested at <0.5 mG at 6 inches; flicker rate published and low. Among the cleanest builds in this list.' },
     { criterionId: 'coverage', score: 8.5, note: 'Solo is half-body coverage; modular system stacks vertically for full-body. Stand and door-mount hardware included. Modularity is unique in this list.' },
-    { criterionId: 'evidence', score: 8.0, note: 'Registered with the FDA as a Class II device, per Joovv (registration/listing, not clearance or approval; listed indications: topical heating for temporary relief of minor muscle and joint pain). Joovv collaborates with published photobiomodulation researchers and cites real peer-reviewed studies on the underlying mechanism. Its “proven to heal” line is about red and near-infrared light in general, not about the Solo 3.0.' },
+    { criterionId: 'evidence', score: 7.0, note: 'Registered with the FDA as a Class II device, per Joovv (registration/listing, not clearance or approval; listed indications: topical heating for temporary relief of minor muscle and joint pain). Joovv collaborates with published photobiomodulation researchers and cites real peer-reviewed studies on the underlying mechanism. Its “proven to heal” line is about red and near-infrared light in general, not about the Solo 3.0.' },
     { criterionId: 'value', score: 5.5, note: '$1,699 for Solo 3.0 (official US store, Oct 2026) — most expensive in this list: $400 more than the MitoPRO 1500X ($1,299) and $650 more than PlatinumLED BIOMAX 600 ($1,049), both with broader spectrum. You pay mainly for modularity and build.' },
   ],
   pros: [
@@ -49,7 +49,7 @@ Price. $1,699 for a Solo 3.0 (official US store, checked 2026-10-01) is the most
 
 ## Who should buy Joovv Solo 3.0?
 
-Choose Joovv Solo 3.0 if you want the premium modular build and you accept that verification, EMF discipline and modular scalability have a price. If price is the deciding criterion, Mito Red MitoPRO 1500 or Hooga HG500 cover most of the spec at a fraction of the cost; if you want EMF-shielded premium with independent testing, GembaRed Vesta is the cleaner build at slightly lower price.
+Choose Joovv Solo 3.0 if you want the premium modular build and you accept that verification, EMF discipline and modular scalability have a price. If price is the deciding criterion, Mito Red MitoPRO 1500X or Hooga HG500 cover most of the spec at a fraction of the cost; if you want EMF-shielded premium with independent testing, GembaRed Vesta is the cleaner build at slightly lower price.
 
 ---
 
@@ -73,7 +73,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "What are the downsides of the Joovv Solo 3.0?", a: "Price is the main one: $1,699 per panel and $3,000–$5,000 for a full-body stack. It also offers no exotic wavelength options such as 810, 830 or 940 nm, and it uses a single front-emitter layout rather than a bidirectional design." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-10-10',
+  dateModified: '2026-10-10 No independent trial of this device itself — 7.0 is the ceiling without independent validation (ONDA rule).',
 }
 
 export default joovvSolo3

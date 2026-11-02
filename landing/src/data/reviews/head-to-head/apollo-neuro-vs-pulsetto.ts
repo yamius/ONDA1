@@ -17,7 +17,7 @@ const apolloNeuroVsPulsetto: HeadToHeadInput = {
   bestForB:
     'Choose Pulsetto if you want a stronger acute electrical tVNS effect in structured 4–20 minute programme sessions, and you are comfortable with neck-worn electrode pads.',
   axes: [
-    { name: 'Stimulation mechanism', winner: 'b', note: 'Pulsetto: cervical electrical tVNS (direct vagal stimulation). Apollo Neuro: vibrotactile (an indirect, proposed route via touch receptors). Pulsetto’s mechanism is more direct.' },
+    { name: 'Stimulation mechanism', criterionId: 'mechanism', note: 'Pulsetto: cervical electrical tVNS (direct vagal stimulation). Apollo Neuro: vibrotactile (an indirect, proposed route via touch receptors). Pulsetto’s mechanism is more direct.' },
     { name: 'Acute effect strength', winner: 'b', note: 'Pulsetto delivers a noticeably stronger acute parasympathetic shift; Apollo’s effect is gentler and slower by design.' },
     { name: 'All-day wearability', winner: 'a', note: 'Apollo is designed for passive daily wear (wrist, ankle, clip-on); Pulsetto is a session-only collar requiring active setup with gel/saline pads.' },
     { name: 'Evidence base', winner: 'a', note: 'Apollo Neuro has peer-reviewed HRV/recovery RCTs from University of Pittsburgh; Pulsetto evidence is mostly company-sponsored. Apollo edges Pulsetto on independent research.' },

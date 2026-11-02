@@ -22,7 +22,7 @@ const sleepCycleVsSleepAsAndroid: HeadToHeadInput = {
     { name: 'Sleep analytics', winner: 'tie', note: 'Both produce reasonable sleep-stage estimates and trend analysis. Neither matches a real EEG headband or a wearable like Oura.' },
     { name: 'Customisation depth', winner: 'b', note: 'Sleep as Android: Tasker integration, smart-alarm automation, custom soundscapes, plugin ecosystem. Sleep Cycle is more opinionated and less customisable.' },
     { name: 'Smart alarm', winner: 'tie', note: 'Both wake you during light sleep within a configurable window. Equivalent in execution.' },
-    { name: 'Wind-down content', winner: 'a', note: 'Sleep Cycle has a polished sleep-soundscape and sleep-story library. Sleep as Android focuses on tracking and lets the user bring their own audio.' },
+    { name: 'Wind-down content', criterionId: 'wind-down-content', note: 'Sleep Cycle has a polished sleep-soundscape and sleep-story library. Sleep as Android focuses on tracking and lets the user bring their own audio.' },
     { name: 'Snore and sleep talk detection', winner: 'b', note: 'Sleep as Android records snoring and sleep talk with finer-grained classification. Sleep Cycle detects snoring but the analysis is lighter.' },
     { name: 'Price', winner: 'tie', note: 'Both freemium with ~$40/year premium tiers. Effectively equal.' },
   ],

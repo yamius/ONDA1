@@ -17,10 +17,10 @@ const balanceVsHeadspace: HeadToHeadInput = {
   bestForB:
     'Choose Headspace if you want to actually learn to meditate through structured courses, with the strongest research backing and a polished library.',
   axes: [
-    { name: 'Personalisation', winner: 'a', note: 'Balance’s adaptive engine is the most sophisticated in the category — it tailors daily sessions to your goals and brief check-ins. Headspace’s Ebb AI adapts too, but Balance is built around personalisation.' },
+    { name: 'Personalisation', criterionId: 'personalization', note: 'Balance’s adaptive engine is the most sophisticated in the category — it tailors daily sessions to your goals and brief check-ins. Headspace’s Ebb AI adapts too, but Balance is built around personalisation.' },
     { name: 'Learning to meditate', winner: 'b', note: 'Headspace’s structured courses teach one technique at a time — the best on-ramp for genuine beginners. Balance guides you but is less of a curriculum.' },
     { name: 'Free tier / trial', winner: 'a', note: 'Balance often gives new users a full year free — remarkably generous. Headspace’s free tier is barely a sample.' },
-    { name: 'Content library', winner: 'b', note: 'Headspace has the broader, more polished library across meditation, focus and sleep. Balance is leaner and plan-focused.' },
+    { name: 'Content library', criterionId: 'content-library', note: 'Headspace has the broader, more polished library across meditation, focus and sleep. Balance is leaner and plan-focused.' },
     { name: 'Research & evidence', winner: 'b', note: 'Headspace has invested heavily in research, with dozens of peer-reviewed studies — the strongest evidence base among consumer meditation apps.' },
     { name: 'Ease for beginners', winner: 'tie', note: 'Both are approachable — Headspace via structure, Balance via a clean, adaptive plan. Genuinely a wash for a nervous first-timer.' },
   ],

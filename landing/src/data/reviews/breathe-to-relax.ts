@@ -63,8 +63,8 @@ Choose Breathe2Relax if you want evidence-backed free diaphragmatic breathing â€
   relatedSlugs: ['ibreathe', 'prana-breath', 'breathwrk'],
   publishOn: '2026-06-29',
   faq: [
-    { q: "Does Breathe2Relax actually work?", a: "The diaphragmatic breathing it teaches is well documented, but research on the app itself is limited to small pilot studies, such as an uncontrolled pilot in 31 service members that combined it with yoga; there is no randomised trial of the app. It was built by the US National Center for Telehealth & Technology for veteran PTSD and combat-stress management. It scores 7.0/10 on evidence grounding and 5.9/10 overall." },
-    { q: "How much does Breathe2Relax cost?", a: "Breathe2Relax is completely free with no premium tier, subscription or ads. It scores 9.5/10 on value in ONDA's assessment, the best possible price. The trade-off is a dated UI and a narrow scope limited to diaphragmatic and paced breathing." },
+    { q: "Does Breathe2Relax actually work?", a: "The diaphragmatic breathing it teaches is well documented, but research on the app itself is limited to small pilot studies, such as an uncontrolled pilot in 31 service members that combined it with yoga; there is no randomised trial of the app. It was built by the US National Center for Telehealth & Technology for veteran PTSD and combat-stress management. It scores {{score:breathe-to-relax.evidence-grounding}}/10 on evidence grounding and {{score:breathe-to-relax}}/10 overall." },
+    { q: "How much does Breathe2Relax cost?", a: "Breathe2Relax is completely free with no premium tier, subscription or ads. It scores {{score:breathe-to-relax.value}}/10 on value in ONDA's assessment, the best possible price. The trade-off is a dated UI and a narrow scope limited to diaphragmatic and paced breathing." },
     { q: "Who is Breathe2Relax best for?", a: "Breathe2Relax is best for users who want evidence-backed diaphragmatic breathing at zero cost, especially in clinical, PTSD or stress-management contexts. It is narrow by design, covering only diaphragmatic and paced breathing with no HRV biofeedback, no content library, and no ongoing development." },
   ],
 

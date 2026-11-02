@@ -22,7 +22,7 @@ const muse2VsFocuscalm: HeadToHeadInput = {
     { name: 'Content programme structure', winner: 'tie', note: 'Both have structured progression and game-like elements. Muse leans on guided meditation; FocusCalm leans on training-game format.' },
     { name: 'Ecosystem maturity', winner: 'a', note: 'Muse: decade of releases, large community, third-party Muse Direct for raw data. FocusCalm: newer, narrower ecosystem.' },
     { name: 'Subscription model', winner: 'a', note: 'Muse 2: no mandatory subscription, full core features with hardware. FocusCalm: optional FocusCalm Plus subscription gates premium content.' },
-    { name: 'Comfort', winner: 'b', note: 'FocusCalm: soft headband, comfortable for daily use. Muse 2: rigid band, comfortable for sit-up sessions only. FocusCalm wins on daily wearability.' },
+    { name: 'Comfort', criterionId: 'comfort', note: "Practically equal: both are comfortable for 10–20 minute sessions and neither is made for sleep. The difference is the band — FocusCalm uses a soft headband, Muse 2 a rigid one." },
     { name: 'Price', winner: 'b', note: 'FocusCalm: $199. Muse 2: $249.99. FocusCalm is marginally cheaper at the entry tier.' },
   ],
   faq: [

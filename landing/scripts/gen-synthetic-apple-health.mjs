@@ -6,6 +6,7 @@
  *
  *   node scripts/gen-synthetic-apple-health.mjs <out.xml|out.zip> [--days 240] [--pad-mb 0] [--seed 1]
  *
+ * --sleep-var H spreads wake time by ±H hours (wide sleep range).
  * --pad-mb N adds StepCount filler records until the XML is ≈N MB (memory/large-file test).
  * A .zip output is written with fflate's streaming Zip (data descriptors, like many real archives),
  * with the XML at apple_health_export/export.xml plus a dummy export_cda.xml after it.
@@ -25,6 +26,7 @@ const opt = (k, d) => {
 }
 const DAYS = opt('--days', 240)
 const PAD_MB = opt('--pad-mb', 0)
+const SLEEP_VAR = opt('--sleep-var', 0) // extra ± hours of night-to-night sleep spread (tests the wide-range note)
 let seed = opt('--seed', 1)
 const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647)
 const gauss = () => Math.sqrt(-2 * Math.log(rnd() + 1e-12)) * Math.cos(2 * Math.PI * rnd())
@@ -116,7 +118,7 @@ function* records() {
     if (i % 5 === 0) yield rec('HKQuantityTypeIdentifierHeartRateVariabilitySDNN', 'ONDA', '', 'ms', (50 + gauss() * 8).toFixed(1), day0 + 18 * 3600e3, day0 + 18 * 3600e3 + 120e3)
     // Sleep: night ending on this day
     const bed = day0 - (1.2 + rnd()) * 3600e3
-    const wake = day0 + (6 + rnd() * 1.5) * 3600e3 + (dip ? -3600e3 : 0)
+    const wake = day0 + (6 + rnd() * 1.5 + (rnd() * 2 - 1) * SLEEP_VAR) * 3600e3 + (dip ? -3600e3 : 0)
     yield rec('HKCategoryTypeIdentifierSleepAnalysis', PHONE, PHONE_DEV, '', 'HKCategoryValueSleepAnalysisInBed', bed, wake)
     if (day0 < stagesFrom) {
       yield rec('HKCategoryTypeIdentifierSleepAnalysis', WATCH, WATCH_DEV, '', 'HKCategoryValueSleepAnalysisAsleep', bed + 15 * 60e3, wake - 10 * 60e3)

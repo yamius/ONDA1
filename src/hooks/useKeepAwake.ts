@@ -1,72 +1,71 @@
-import { useEffect, useCallback, useState } from 'react';
+import { useEffect } from 'react';
 import { Capacitor } from '@capacitor/core';
+import { App } from '@capacitor/app';
 import { KeepAwake } from '@capacitor-community/keep-awake';
 
-interface UseKeepAwakeReturn {
-  isSupported: boolean;
-  isKeptAwake: boolean;
-  keepAwake: () => Promise<void>;
-  allowSleep: () => Promise<void>;
+/**
+ * Keep the screen awake ONLY while `active` is true (task 102).
+ *
+ * Several surfaces can hold keep-awake at once (practice + camera pulse, etc.),
+ * so holders are ref-counted: the screen may sleep only when the last holder
+ * releases. A holder releases on `active → false`, on unmount, and the whole
+ * lock is dropped when the app goes to background and re-asserted on resume
+ * if any holder is still active. Errors never leave the lock on: a failed
+ * keepAwake() call is followed by a best-effort allowSleep().
+ *
+ * Everywhere else iOS auto-lock works normally.
+ */
+let holders = 0;
+let appActive = true;
+let listenerInstalled = false;
+
+const isNative = () => {
+  try { return Capacitor.isNativePlatform(); } catch { return false; }
+};
+
+async function apply(): Promise<void> {
+  if (!isNative()) return;
+  const want = holders > 0 && appActive;
+  try {
+    if (want) await KeepAwake.keepAwake();
+    else await KeepAwake.allowSleep();
+  } catch (err) {
+    console.error('[KeepAwake] Error:', err);
+    if (want) {
+      try { await KeepAwake.allowSleep(); } catch { /* noop */ }
+    }
+  }
 }
 
-export function useKeepAwake(autoKeepAwake = true): UseKeepAwakeReturn {
-  const [isSupported, setIsSupported] = useState(false);
-  const [isKeptAwake, setIsKeptAwake] = useState(false);
+function installAppStateListener(): void {
+  if (listenerInstalled || !isNative()) return;
+  listenerInstalled = true;
+  try {
+    void App.addListener('appStateChange', ({ isActive }) => {
+      appActive = isActive;
+      void apply();
+    });
+  } catch (err) {
+    console.error('[KeepAwake] appStateChange listener failed:', err);
+  }
+}
 
+export function useKeepAwake(active: boolean): void {
   useEffect(() => {
-    const checkSupport = async () => {
-      try {
-        if (Capacitor.isNativePlatform()) {
-          const result = await KeepAwake.isSupported();
-          setIsSupported(result.isSupported);
-          console.log('[KeepAwake] Supported:', result.isSupported);
-        } else {
-          setIsSupported(false);
-        }
-      } catch (err) {
-        console.error('[KeepAwake] Error checking support:', err);
-        setIsSupported(false);
-      }
-    };
-    checkSupport();
-  }, []);
-
-  const keepAwake = useCallback(async () => {
-    try {
-      if (!Capacitor.isNativePlatform()) return;
-      await KeepAwake.keepAwake();
-      setIsKeptAwake(true);
-      console.log('[KeepAwake] Screen will stay awake');
-    } catch (err) {
-      console.error('[KeepAwake] Error:', err);
-    }
-  }, []);
-
-  const allowSleep = useCallback(async () => {
-    try {
-      if (!Capacitor.isNativePlatform()) return;
-      await KeepAwake.allowSleep();
-      setIsKeptAwake(false);
-      console.log('[KeepAwake] Screen can sleep now');
-    } catch (err) {
-      console.error('[KeepAwake] Error:', err);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!autoKeepAwake || !isSupported) return;
-
-    keepAwake();
-
+    if (!active) return;
+    installAppStateListener();
+    holders += 1;
+    void apply();
     return () => {
-      allowSleep();
+      holders = Math.max(0, holders - 1);
+      void apply();
     };
-  }, [autoKeepAwake, isSupported, keepAwake, allowSleep]);
+  }, [active]);
+}
 
-  return {
-    isSupported,
-    isKeptAwake,
-    keepAwake,
-    allowSleep
-  };
+/** Test-only: reset module state. */
+export function __resetKeepAwakeForTests(): void {
+  holders = 0;
+  appActive = true;
+  listenerInstalled = false;
 }

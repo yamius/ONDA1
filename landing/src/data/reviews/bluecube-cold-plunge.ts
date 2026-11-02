@@ -49,7 +49,7 @@ Price and overkill. For single-user home practice, BlueCube is more capability t
 
 ## Who should buy BlueCube Cold Plunge?
 
-Choose BlueCube if you are running a clinic, athletic facility, or household with three or more users sharing the plunge. For single-user home use, Plunge, Edge or Coldture deliver more than enough capability at a third of the cost.
+Choose BlueCube if you are running a clinic, athletic facility, or household with three or more users sharing the plunge. For single-user home use, Plunge, Edge or Coldture deliver more than enough capability at roughly a quarter to half the cost.
 
 ---
 

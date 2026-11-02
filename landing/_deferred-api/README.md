@@ -47,9 +47,11 @@ import { createClient } from '@supabase/supabase-js'
 const supa = createClient(process.env.VITE_SUPABASE_URL, process.env.VITE_SUPABASE_ANON_KEY)
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Method not allowed' })
-  const { email, platform } = req.body || {}
+  const { email, platform, source } = req.body || {}
   if (!email) return res.status(400).json({ error: 'Missing email' })
-  const { error } = await supa.from('waitlist').insert({ email, platform: platform || null })
+  // source (e.g. 'vibration_tool') needs the column from supabase-waitlist-source.sql
+  const src = typeof source === 'string' && /^[a-z0-9_]{1,40}$/.test(source) ? source : null
+  const { error } = await supa.from('waitlist').insert({ email, platform: platform || null, ...(src ? { source: src } : {}) })
   if (error) return res.status(error.code === '23505' ? 409 : 500).json({ error: error.message })
   res.json({ ok: true })
 }

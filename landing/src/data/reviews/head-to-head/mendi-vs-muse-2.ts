@@ -22,7 +22,7 @@ const mendiVsMuse2: HeadToHeadInput = {
     { name: 'Use-case scope', winner: 'b', note: 'Muse: meditation, focus, breath, sleep (Athena). Mendi: prefrontal focus training only — narrower scope by design.' },
     { name: 'Learning curve', winner: 'a', note: 'Mendi: a single game, no instruction. Muse 2: guided meditations require some practice. Mendi is easier to start.' },
     { name: 'Content library', winner: 'b', note: 'Muse: mature library — calm, focus, breath, body-scan, mood. Mendi: a single game-based programme.' },
-    { name: 'Comfort', winner: 'a', note: 'Mendi: simple forehead band, easy on/off. Muse 2: rigid headband. Mendi wins on daily-wear convenience.' },
+    { name: 'Comfort', criterionId: 'comfort', note: 'Mendi: simple forehead band, easy on/off. Muse 2: rigid headband. Mendi wins on daily-wear convenience.' },
     { name: 'Subscription model', winner: 'tie', note: 'Both: no mandatory subscription. Muse 2’s AI coach, cognitive tracking, external audio and curated programs need Muse Premium.' },
     { name: 'Price', winner: 'b', note: 'Mendi: $379 list (often discounted). Muse 2: $249.99. Muse is cheaper.' },
   ],
