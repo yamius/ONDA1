@@ -36,3 +36,7 @@ public/_content/
 
 # Translation workspace (scripts/i18n-export.ts → i18n-import.ts); locale files are the source of truth
 translations/
+
+# onda-psych pages fetched at build time (scripts/fetch-psych.ts, task 108)
+content/psych/
+src/generated/psych-pages.json

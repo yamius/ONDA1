@@ -70,6 +70,7 @@ const SCAN: { dir: string; exts: string[] }[] = [
   { dir: 'public/locales', exts: ['.json'] },
   { dir: 'content/science', exts: ['.md'] },
   { dir: 'content/science-i18n', exts: ['.md'] },
+  { dir: 'content/psych', exts: ['.md'] }, // fetched from onda-psych (task 108); gitignored
 ]
 const SKIP_FILE = /\.generated\.ts$/
 
