@@ -110,7 +110,7 @@ function Topic({ p }: { p: PsychPage }) {
           <p className="font-mono text-xs text-white/45">Updated <time dateTime={p.updated}>{fmtDate(p.updated)}</time> · every claim quoted from its source</p>
           <p className="font-mono text-xs text-white/45">{psychOwnerReviewed(p)
             ? <>Drafted with AI, facts reviewed by <Link to="/people/yakiv-bilenko" className="underline">Yakiv Bilenko</Link></>
-            : <>Drafted with AI; every quote and source checked automatically against PubMed / Crossref</>}</p>
+            : <>Drafted with AI, claims automatically checked against cited sources</>}</p>
         </header>
 
         <section aria-label={ui.shortAnswer} className="mt-8 rounded border border-terminal-green/30 bg-terminal-green/5 p-5">

@@ -1,8 +1,8 @@
 /**
  * Psychology pages (task 108): /science/psychology/ hub and /science/psychology/<topic>/ — EN only for now.
  * Data: src/generated/psych-pages.json, written at build time by scripts/fetch-psych.ts from the private repo
- * yamius/onda-psych (claims approved or auto-checked, render-only, never part of the fact registry; gated by the PSYCH release lane; `preview` = not released yet, only in
- * preview builds → noindex, not in the sitemap). Used by the page (client) and by meta-inject (static JSON-LD).
+ * yamius/onda-psych (claims approved or auto-checked, render-only, never part of the fact registry; published on the next build after merge, no release queue; `preview` = legacy flag, unused since v3 →
+ * noindex, not in the sitemap). Used by the page (client) and by meta-inject (static JSON-LD).
  */
 import PAGES from '../generated/psych-pages.json'
 import { SITE_URL } from './science-meta'
