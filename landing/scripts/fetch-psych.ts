@@ -25,10 +25,16 @@ import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { resolveFactsDeep } from '../src/data/science/facts'
+import { articles } from '../src/data/articles'
+import { TOOLS, toolPath } from '../src/data/tools'
+import { glossaryTerms } from '../src/data/glossary'
+import { PSYCH_RELATED_DEFAULT, PSYCH_RELATED_MAX, PSYCH_RELATED_RULES, type PsychLinkRef } from '../src/lib/psych-related'
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const OUT_DIR = join(ROOT, 'content', 'psych')
 const OUT_JSON = join(ROOT, 'src', 'generated', 'psych-pages.json')
+/** Light index (topic, title, summary, hubs) for the Library topic hubs' back-links — keeps page bodies out of that chunk. */
+const OUT_INDEX = join(ROOT, 'src', 'generated', 'psych-index.json')
 const REPO = process.env.ONDA_PSYCH_REPO || 'yamius/onda-psych'
 const TOKEN = process.env.ONDA_PSYCH_TOKEN
 const LOCAL_DIR = process.env.ONDA_PSYCH_DIR
@@ -37,11 +43,31 @@ const INCLUDE_UNREGISTERED = process.argv.includes('--include-unregistered')
 interface ClaimSource { pmid?: string; doi?: string; quote: string; study_type: string; coi: string; industry?: boolean }
 const SHOWN_STATUSES = ['approved', 'auto-checked']
 interface Claim { id: string; kind?: string; text: string; evidence_class: string; sources?: ClaimSource[]; pmid?: string; doi?: string; limitation?: string; status: string }
-interface PsychPage { key: string; topic: string; lang: string; angle?: string; title: string; summary: string; updated: string; uncertainty?: string; claims: Claim[]; body: string; preview?: boolean }
+interface RelatedLink { href: string; label: string; kind: PsychLinkRef['kind'] }
+interface PsychPage { key: string; topic: string; lang: string; angle?: string; title: string; seo_title?: string; meta_description?: string; summary: string; related?: RelatedLink[]; hubs?: string[]; updated: string; uncertainty?: string; claims: Claim[]; body: string; preview?: boolean }
 
 function writeOut(pages: PsychPage[]) {
   mkdirSync(dirname(OUT_JSON), { recursive: true })
   writeFileSync(OUT_JSON, JSON.stringify(pages, null, 1))
+  writeFileSync(OUT_INDEX, JSON.stringify(pages.filter((p) => p.lang === 'en' && !p.angle).map((p) => ({ topic: p.topic, title: p.title, summary: p.summary, hubs: p.hubs ?? [] }))))
+}
+
+/** "Related on ONDA": 3–6 existing EN pages picked by the topic keyword map (src/lib/psych-related.ts). */
+function relatedFor(topic: string, title: string): { related: RelatedLink[]; hubs: string[] } {
+  const hay = `${topic} ${title}`
+  const rules = PSYCH_RELATED_RULES.filter((r) => r.match.test(hay))
+  const refs = [...rules.flatMap((r) => r.links), ...PSYCH_RELATED_DEFAULT]
+  const out: RelatedLink[] = []
+  for (const r of refs) {
+    if (out.length >= PSYCH_RELATED_MAX) break
+    let link: RelatedLink | undefined
+    if (r.kind === 'article') { const x = articles.find((y) => y.slug === r.slug); if (x) link = { href: `/articles/${x.slug}`, label: x.title, kind: 'article' } }
+    if (r.kind === 'tool') { const x = TOOLS.find((y) => y.slug === r.slug && y.live); if (x) link = { href: toolPath(x), label: x.name, kind: 'tool' } }
+    if (r.kind === 'glossary') { const x = glossaryTerms.find((y) => y.slug === r.slug); if (x) link = { href: `/glossary/${x.slug}`, label: x.title, kind: 'glossary' } }
+    if (link && !out.some((o) => o.href === link!.href)) out.push(link)
+  }
+  if (out.length < 3) console.warn(`[fetch-psych] ${topic}: only ${out.length} related link(s) — extend src/lib/psych-related.ts`)
+  return { related: out, hubs: [...new Set(rules.flatMap((r) => r.hubs))] }
 }
 
 async function gh(path: string, raw = false) {
@@ -94,7 +120,7 @@ async function main() {
     kept++
     const key = `${data.topic}/${data.lang}${data.angle ? `--${data.angle}` : ''}`
     const updated = data.updated instanceof Date ? data.updated.toISOString().slice(0, 10) : String(data.updated)
-    pages.push(resolveFactsDeep({ key, topic: data.topic, lang: data.lang, angle: data.angle, title: data.title, summary: data.summary, updated, uncertainty: data.uncertainty, claims, body: content.trim() }, `psych:${key}`))
+    pages.push(resolveFactsDeep({ key, topic: data.topic, lang: data.lang, angle: data.angle, title: data.title, seo_title: data.seo_title, meta_description: data.meta_description, summary: data.summary, ...relatedFor(data.topic, data.title), updated, uncertainty: data.uncertainty, claims, body: content.trim() }, `psych:${key}`))
   }
   writeOut(pages)
   console.log(`[fetch-psych] ${paths.length} file(s) in ${useLocal ? LOCAL_DIR : REPO}, ${kept} approved / auto-checked + registered, ${pages.length} published`)

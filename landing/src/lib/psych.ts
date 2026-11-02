@@ -9,7 +9,8 @@ import { SITE_URL } from './science-meta'
 
 export interface PsychSource { pmid?: string; doi?: string; quote: string; study_type: string; coi: string; industry?: boolean }
 export interface PsychClaim { id: string; kind?: string; text: string; evidence_class: string; sources?: PsychSource[]; limitation?: string; status?: string }
-export interface PsychPage { key: string; topic: string; lang: string; angle?: string; title: string; summary: string; updated: string; uncertainty?: string; claims: PsychClaim[]; body: string; preview?: boolean }
+export interface PsychRelatedLink { href: string; label: string; kind: 'article' | 'tool' | 'glossary' }
+export interface PsychPage { key: string; topic: string; lang: string; angle?: string; title: string; seo_title?: string; meta_description?: string; summary: string; related?: PsychRelatedLink[]; hubs?: string[]; updated: string; uncertainty?: string; claims: PsychClaim[]; body: string; preview?: boolean }
 
 /** EN, main angle only (translations and angles come later through the normal queue). */
 export const PSYCH_PAGES: PsychPage[] = (PAGES as PsychPage[]).filter((p) => p.lang === 'en' && !p.angle)
@@ -38,10 +39,33 @@ export function psychSources(p: PsychPage): (PsychSource & { n: number })[] {
 export const sourceNo = (p: PsychPage, s: PsychSource) => psychSources(p).find((o) => (s.pmid && o.pmid === s.pmid) || (s.doi && o.doi?.toLowerCase() === s.doi?.toLowerCase()))?.n
 export const psychSourceHref = (s: PsychSource) => (s.doi ? `https://doi.org/${s.doi}` : s.pmid ? `https://pubmed.ncbi.nlm.nih.gov/${s.pmid}/` : null)
 
+/** Other psychology pages (same section), for the "More in psychology" links. */
+export const psychSiblings = (p: PsychPage) => PSYCH_PAGES.filter((o) => o.topic !== p.topic && !o.preview)
+
+/** Plain text of a Markdown fragment: claim markers [topic-c1], links, emphasis and code removed. */
+export const psychPlain = (md: string) => md
+  .replace(/\[[a-z0-9-]+-c\d+\]/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*_`>]+/g, '')
+  .replace(/\s+([.,;:!?])/g, '$1').replace(/\s+/g, ' ').trim()
+
+/** FAQ of a page: H2 "FAQ" (onda-psych system.md section 9), Q = each H3, A = its text without claim markers.
+ *  The clinician sentence after the last answer is dropped. Pages without that section → []. */
+export function psychFaq(p: PsychPage): { question: string; answer: string }[] {
+  const m = p.body.match(/^## +FAQ\s*$/m)
+  if (!m || m.index === undefined) return []
+  const rest = p.body.slice(m.index + m[0].length)
+  const sec = rest.slice(0, rest.search(/^## /m) >= 0 ? rest.search(/^## /m) : rest.length)
+  const qs = [...sec.matchAll(/^### +(.+?)\s*$/gm)]
+  return qs.map((q, i) => {
+    let paras = sec.slice(q.index! + q[0].length, i + 1 < qs.length ? qs[i + 1].index : sec.length).split(/\n\s*\n/).map((x) => x.trim()).filter(Boolean)
+    if (i === qs.length - 1 && paras.length > 1) paras = paras.slice(0, -1)
+    return { question: psychPlain(q[1]), answer: psychPlain(paras.join(' ')) }
+  }).filter((f) => f.question && f.answer)
+}
+
 export const PSYCH_HUB_TITLE = 'Psychology: what the evidence shows'
 export const PSYCH_HUB_DESC = 'Evidence summaries on psychological topics such as anxiety: what systematic reviews and meta-analyses show, how strong the evidence is, and its limits. Every claim is quoted from its source.'
 
-export interface PsychMeta { title: string; description: string; ogType: 'website' | 'article'; jsonLd: Record<string, unknown>[]; breadcrumbs: { name: string; url: string }[]; noindex?: boolean }
+export interface PsychMeta { title: string; description: string; ogType: 'website' | 'article'; jsonLd: Record<string, unknown>[]; breadcrumbs: { name: string; url: string }[]; noindex?: boolean; faq?: { question: string; answer: string }[] }
 
 export function psychMeta(route: string): PsychMeta | undefined {
   const m = route.replace(/\/$/, '').match(/^\/science\/psychology(?:\/([a-z0-9-]+))?$/)
@@ -61,15 +85,21 @@ export function psychMeta(route: string): PsychMeta | undefined {
   const p = psychPage(m[1])
   if (!p) return undefined
   const url = `${SITE_URL}${psychPath(p.topic)}`
+  // PMID → PubMed URL, DOI → doi.org (both in sameAs when a source has both)
+  const refs = psychSources(p).map((s) => {
+    const urls = [s.pmid && `https://pubmed.ncbi.nlm.nih.gov/${s.pmid}/`, s.doi && `https://doi.org/${s.doi}`].filter(Boolean) as string[]
+    return { '@type': 'ScholarlyArticle', url: urls[0], ...(urls.length > 1 ? { sameAs: urls.slice(1) } : {}), identifier: [s.pmid && `pmid:${s.pmid}`, s.doi && `doi:${s.doi}`].filter(Boolean) }
+  })
   const editor = { '@type': 'Person', name: 'Yakiv Bilenko', url: `${SITE_URL}/people/yakiv-bilenko` }
   return {
-    title: `${p.title} | ONDA Life`, description: p.summary.length > 160 ? `${p.summary.slice(0, 157).replace(/\s+\S*$/, '')}…` : p.summary, ogType: 'article', noindex,
+    title: `${p.seo_title || p.title} | ONDA Life`, description: p.meta_description || (p.summary.length > 160 ? `${p.summary.slice(0, 157).replace(/\s+\S*$/, '')}…` : p.summary), ogType: 'article', noindex,
+    ...(psychFaq(p).length ? { faq: psychFaq(p) } : {}),
     breadcrumbs: [...crumbs, { name: p.title.split(':')[0], url }],
     jsonLd: [{
       '@context': 'https://schema.org', '@type': 'Article', '@id': `${url}#article`, url, mainEntityOfPage: url, headline: p.title, description: p.summary, abstract: p.summary,
       inLanguage: 'en', dateModified: p.updated, author: { '@type': 'Organization', name: 'ONDA Life editorial team', url: SITE_URL }, editor, isPartOf,
       publisher: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
-      citation: psychSources(p).map((s) => ({ '@type': 'ScholarlyArticle', ...(psychSourceHref(s) ? { url: psychSourceHref(s) } : {}), ...(s.doi ? { identifier: `doi:${s.doi}` } : {}) })),
+      citation: refs, isBasedOn: refs,
     }],
   }
 }

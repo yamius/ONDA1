@@ -22,6 +22,7 @@ import { ES_PILOT_ARTICLE_SLUGS, RU_PILOT_ARTICLE_SLUGS } from './prerender-rout
 import { reviews, comparisons, headToHeads } from '../src/data/reviews'
 import { TOOLS, toolPath } from '../src/data/tools'
 import { SCIENCE_INDEX } from '../src/generated/science-pages'
+import { PSYCH_HUB, PSYCH_HUB_DESC, PSYCH_PAGES, psychPath } from '../src/lib/psych'
 import { ARTICLE_TOPIC_HUBS } from '../src/data/article-topics'
 import { METRIC_DETAILS, metricSummary, metricPlainText } from '../src/data/bioMetrics'
 import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
@@ -198,6 +199,15 @@ ${partLines.join('\n')}
   sections.push(`## Glossary
 
 ${glossLines.join('\n')}
+`)
+
+  // Psychology (task 108) — evidence pages from onda-psych, EN only, published on build.
+  const psychLive = PSYCH_PAGES.filter((p) => !p.preview)
+  if (psychLive.length) sections.push(`## Psychology
+
+${PSYCH_HUB_DESC} Hub: ${SITE_URL}${PSYCH_HUB}
+
+${psychLive.map((p) => `- [${p.title}](${SITE_URL}${psychPath(p.topic)}): ${p.meta_description || p.summary}`).join('\n')}
 `)
 
   // Tools — free interactive calculators. EN-only URLs, surfaced in every

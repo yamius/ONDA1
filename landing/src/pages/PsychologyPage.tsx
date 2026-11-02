@@ -10,7 +10,7 @@ import rehypeSlug from 'rehype-slug'
 import { NotFoundPage } from './NotFoundPage'
 import { scienceUi } from '../data/science/i18n'
 import { SITE_URL } from '../lib/science-meta'
-import { PSYCH_HUB, PSYCH_HUB_DESC, PSYCH_HUB_TITLE, PSYCH_PAGES, psychMeta, psychOwnerReviewed, psychPage, psychPath, psychSourceHref, psychSources, sourceNo, type PsychPage } from '../lib/psych'
+import { PSYCH_HUB, PSYCH_HUB_DESC, PSYCH_HUB_TITLE, PSYCH_PAGES, psychMeta, psychOwnerReviewed, psychPage, psychPath, psychSiblings, psychSourceHref, psychSources, sourceNo, type PsychPage } from '../lib/psych'
 
 const ui = scienceUi('en')
 const H2 = 'mb-4 mt-12 text-xl font-bold md:text-2xl'
@@ -169,6 +169,31 @@ function Topic({ p }: { p: PsychPage }) {
             })}
           </ol>
         </section>
+
+        {p.related?.length ? (
+          <section aria-labelledby="related-onda" className="mt-12 border-t border-white/10 pt-8">
+            <h2 id="related-onda" className={H2}>Related on ONDA</h2>
+            <ul className={`${P} space-y-2`}>
+              {p.related.map((l) => (
+                <li key={l.href}>
+                  <span className="mr-2 text-[10px] uppercase tracking-widest text-white/35">{l.kind}</span>
+                  <Link to={l.href} className="text-terminal-green hover:underline">{l.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
+        {psychSiblings(p).length ? (
+          <section aria-labelledby="more-psych" className="mt-8">
+            <h2 id="more-psych" className="mb-3 text-lg font-semibold">More in psychology</h2>
+            <ul className={`${P} space-y-2`}>
+              {psychSiblings(p).map((o) => (
+                <li key={o.topic}><Link to={psychPath(o.topic)} className="text-terminal-green hover:underline">{o.title}</Link></li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
 
         <p className="mt-12 font-mono text-xs text-white/40">Educational information, not medical advice. If anxiety or low mood is severe or persistent, or you have thoughts of self-harm, contact a qualified professional or local emergency services.</p>
         <p className="mt-3 font-mono text-xs text-white/40"><Link to={PSYCH_HUB} className="hover:text-white/70">More psychology topics</Link> · <Link to="/science" className="hover:text-white/70">ONDA Science</Link></p>

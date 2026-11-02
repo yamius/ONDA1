@@ -11,6 +11,7 @@ import { hubFaqFor } from '../data/topic-hub-faq'
 import { OptimizedImage } from '../components/OptimizedImage'
 import { homePathFor, langFromPath, langHref, type Lang } from '../i18n'
 import { NotFoundPage } from './NotFoundPage'
+import PSYCH_INDEX from '../generated/psych-index.json'
 
 /**
  * ONDA Library topic hub — /articles/topic/<topic> and /<lang>/articles/topic/<topic>.
@@ -125,6 +126,20 @@ export function ArticleTopicHubPage() {
                 <Link to={langHref(l.href, lang)} className="text-terminal-green/80 hover:text-terminal-green hover:underline">
                   {l.label} →
                 </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* Task 108: back-links to psychology pages (EN only; hubs per src/lib/psych-related.ts, index from scripts/fetch-psych.ts) */}
+      {lang === 'en' && (PSYCH_INDEX as { topic: string; title: string; hubs: string[] }[]).some((x) => x.hubs.includes(hub.slug)) && (
+        <section className="mt-16 border-t border-white/10 pt-10" aria-labelledby="hub-psych">
+          <h2 id="hub-psych" className="mb-4 font-mono text-xs uppercase tracking-widest text-terminal-cyan/70">From the psychology section</h2>
+          <ul className="space-y-2 text-sm">
+            {(PSYCH_INDEX as { topic: string; title: string; hubs: string[] }[]).filter((x) => x.hubs.includes(hub.slug)).map((x) => (
+              <li key={x.topic}>
+                <Link to={`/science/psychology/${x.topic}`} className="text-terminal-green/80 hover:text-terminal-green hover:underline">{x.title} →</Link>
               </li>
             ))}
           </ul>
