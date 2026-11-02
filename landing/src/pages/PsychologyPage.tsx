@@ -1,6 +1,6 @@
 /**
  * /science/psychology/ hub and /science/psychology/<topic>/ (task 108, EN only). Data + meta: src/lib/psych.ts.
- * Content is rendered as-is from onda-psych (approved claims); [<claim-id>] markers in the body link to the claim.
+ * Content is rendered as-is from onda-psych (approved or auto-checked claims); [<claim-id>] markers in the body link to the claim.
  */
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
@@ -10,7 +10,7 @@ import rehypeSlug from 'rehype-slug'
 import { NotFoundPage } from './NotFoundPage'
 import { scienceUi } from '../data/science/i18n'
 import { SITE_URL } from '../lib/science-meta'
-import { PSYCH_HUB, PSYCH_HUB_DESC, PSYCH_HUB_TITLE, PSYCH_PAGES, psychMeta, psychPage, psychPath, psychSourceHref, psychSources, sourceNo, type PsychPage } from '../lib/psych'
+import { PSYCH_HUB, PSYCH_HUB_DESC, PSYCH_HUB_TITLE, PSYCH_PAGES, psychMeta, psychOwnerReviewed, psychPage, psychPath, psychSourceHref, psychSources, sourceNo, type PsychPage } from '../lib/psych'
 
 const ui = scienceUi('en')
 const H2 = 'mb-4 mt-12 text-xl font-bold md:text-2xl'
@@ -108,7 +108,9 @@ function Topic({ p }: { p: PsychPage }) {
           <Crumbs items={[{ to: '/science', label: ui.science }, { to: PSYCH_HUB, label: 'Psychology' }, { label: p.title.split(':')[0] }]} />
           <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">{p.title}</h1>
           <p className="font-mono text-xs text-white/45">Updated <time dateTime={p.updated}>{fmtDate(p.updated)}</time> · every claim quoted from its source</p>
-          <p className="font-mono text-xs text-white/45">Drafted with AI, facts reviewed by <Link to="/people/yakiv-bilenko" className="underline">Yakiv Bilenko</Link></p>
+          <p className="font-mono text-xs text-white/45">{psychOwnerReviewed(p)
+            ? <>Drafted with AI, facts reviewed by <Link to="/people/yakiv-bilenko" className="underline">Yakiv Bilenko</Link></>
+            : <>Drafted with AI, claims automatically checked against cited sources</>}</p>
         </header>
 
         <section aria-label={ui.shortAnswer} className="mt-8 rounded border border-terminal-green/30 bg-terminal-green/5 p-5">
