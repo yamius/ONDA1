@@ -679,8 +679,9 @@ export const TAIL_QUEUE_ENTRIES: PublishEntry[] = RELEASE_QUEUE_ENTRIES.slice(ba
 /**
  * Psychology pages (task 108): files from the private repo yamius/onda-psych (fetched by scripts/fetch-psych.ts).
  * A SEPARATE lane on purpose: adding them to the round-robin above would shift every queued date. Append only,
- * as '<topic>/<lang>'; PSYCH_PER_BATCH pages every EVERY_DAYS days from PSYCH_QUEUE_START. A fetched page that is
- * not listed here is never published.
+ * as '<topic>/<lang>'; PSYCH_PER_BATCH pages every EVERY_DAYS days from PSYCH_QUEUE_START.
+ * v3 (2026-11-02, no owner hold): a fetched page that is NOT listed here is queued automatically after the listed
+ * ones, oldest onda-psych merge first (psychAutoEntries), never before its merge date. Listing a key here pins it.
  */
 export const PSYCH_QUEUE_START = '2026-11-02'
 export const PSYCH_PER_BATCH = 2
@@ -691,3 +692,21 @@ export const PSYCH_QUEUE_ENTRIES: readonly { key: string; publishOn: string }[] 
   key,
   publishOn: addDays(PSYCH_QUEUE_START, Math.floor(i / PSYCH_PER_BATCH) * EVERY_DAYS),
 }))
+
+/**
+ * Auto lane for psych pages not in PSYCH_RELEASE_QUEUE: sorted by first merge into onda-psych main (then key), they
+ * take the next PSYCH_PER_BATCH-per-EVERY_DAYS slots after the listed entries; a page never gets a slot before its
+ * merge date (empty slots before it are skipped, not back-filled). Deterministic: an older merge never moves.
+ */
+export function psychAutoEntries(pages: readonly { key: string; merged: string }[]): { key: string; publishOn: string }[] {
+  const listed = new Set(PSYCH_RELEASE_QUEUE)
+  const todo = pages.filter((p) => !listed.has(p.key)).sort((a, b) => a.merged.localeCompare(b.merged) || a.key.localeCompare(b.key))
+  let k = PSYCH_RELEASE_QUEUE.length
+  const slot = () => addDays(PSYCH_QUEUE_START, Math.floor(k / PSYCH_PER_BATCH) * EVERY_DAYS)
+  return todo.map((p) => {
+    while (slot() < p.merged) k += PSYCH_PER_BATCH - (k % PSYCH_PER_BATCH)
+    const on = slot()
+    k++
+    return { key: p.key, publishOn: on }
+  })
+}

@@ -1,18 +1,20 @@
 /**
  * Psychology pages (task 108): /science/psychology/ hub and /science/psychology/<topic>/ — EN only for now.
  * Data: src/generated/psych-pages.json, written at build time by scripts/fetch-psych.ts from the private repo
- * yamius/onda-psych (approved claims only, gated by PSYCH_RELEASE_QUEUE; `preview` = not released yet, only in
+ * yamius/onda-psych (claims approved or auto-checked, render-only, never part of the fact registry; gated by the PSYCH release lane; `preview` = not released yet, only in
  * preview builds → noindex, not in the sitemap). Used by the page (client) and by meta-inject (static JSON-LD).
  */
 import PAGES from '../generated/psych-pages.json'
 import { SITE_URL } from './science-meta'
 
 export interface PsychSource { pmid?: string; doi?: string; quote: string; study_type: string; coi: string; industry?: boolean }
-export interface PsychClaim { id: string; kind?: string; text: string; evidence_class: string; sources?: PsychSource[]; limitation?: string }
+export interface PsychClaim { id: string; kind?: string; text: string; evidence_class: string; sources?: PsychSource[]; limitation?: string; status?: string }
 export interface PsychPage { key: string; topic: string; lang: string; angle?: string; title: string; summary: string; updated: string; uncertainty?: string; claims: PsychClaim[]; body: string; preview?: boolean }
 
 /** EN, main angle only (translations and angles come later through the normal queue). */
 export const PSYCH_PAGES: PsychPage[] = (PAGES as PsychPage[]).filter((p) => p.lang === 'en' && !p.angle)
+/** Every claim reviewed by the owner (otherwise auto-checked by the onda-psych pipeline, no human review). */
+export const psychOwnerReviewed = (p: PsychPage) => p.claims.every((c) => c.status === 'approved')
 export const PSYCH_HUB = '/science/psychology'
 export const psychPath = (topic: string) => `${PSYCH_HUB}/${topic}`
 export const psychPage = (topic: string) => PSYCH_PAGES.find((p) => p.topic === topic)
