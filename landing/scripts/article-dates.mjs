@@ -21,7 +21,7 @@
 import { execSync } from 'child_process'
 import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'fs'
 import { createHash } from 'crypto'
-import { join, dirname } from 'path'
+import { join, dirname, relative } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -31,21 +31,55 @@ const glossaryFile = join(__dirname, '..', 'src', 'data', 'glossary.ts')
 const outFile = join(__dirname, '..', 'src', 'data', 'article-dates.generated.ts')
 const cacheFile = join(__dirname, '.article-dates.cache.json')
 
-/** Returns ISO timestamp string or null if git failed. */
-function gitDate(filePath, mode) {
+/** Per-file git history from ONE `git log --name-status` over landing/ (two `git log` spawns per file took ~3 min):
+ *  path -> events newest-first { i: commit index, st: A/M/D/R…, from: old path of a rename }. */
+let gitIndex = null
+function loadGitIndex() {
+  const commits = []
+  const events = new Map()
   try {
-    const flag = mode === 'first' ? '--diff-filter=A --follow --reverse' : '-1'
-    const cmd = `git log ${flag} --format=%aI -- "${filePath}"`
-    const out = execSync(cmd, { cwd: repoRoot, stdio: ['ignore', 'pipe', 'ignore'] })
-      .toString()
-      .trim()
-      .split('\n')
-      .filter(Boolean)
-    if (out.length === 0) return null
-    return mode === 'first' ? out[0] : out[0]
-  } catch {
-    return null
+    const out = execSync('git log -M --name-status --format=%x01%aI -- landing', {
+      cwd: repoRoot, stdio: ['ignore', 'pipe', 'ignore'], maxBuffer: 1024 * 1024 * 1024,
+    }).toString()
+    for (const block of out.split('\x01').slice(1)) {
+      const [date, ...lines] = block.split('\n')
+      const i = commits.push(date.trim()) - 1
+      for (const line of lines) {
+        const [st, a, b] = line.split('\t')
+        if (!st || !a) continue
+        const path = b ?? a
+        if (!events.has(path)) events.set(path, [])
+        events.get(path).push({ i, st: st[0], from: b ? a : null })
+      }
+    }
+  } catch {}
+  return { commits, events }
+}
+
+/** Returns ISO timestamp string or null if git failed. 'last' = `git log -1` (fast, stops at the first hit; keeps git's
+ *  merge simplification, which matters in Vercel's shallow clone); 'first' = the commit that added the file, following
+ *  renames, from the index (as `git log --diff-filter=A --follow --reverse`, which walked the whole history per file). */
+function gitDate(filePath, mode) {
+  if (mode === 'last') {
+    try {
+      return execSync(`git log -1 --format=%aI -- "${filePath}"`, { cwd: repoRoot, stdio: ['ignore', 'pipe', 'ignore'] })
+        .toString().trim() || null
+    } catch {
+      return null
+    }
   }
+  gitIndex ??= loadGitIndex()
+  const { commits, events } = gitIndex
+  let path = relative(repoRoot, filePath).replace(/\\/g, '/')
+  let after = -1
+  for (let hops = 0; hops < 50; hops++) {
+    const older = (events.get(path) ?? []).filter((x) => x.i > after)
+    const rename = older.find((x) => x.st === 'R')
+    if (rename) { path = rename.from; after = rename.i; continue }
+    const added = older.filter((x) => x.st === 'A').at(-1)
+    return added ? commits[added.i] : null
+  }
+  return null
 }
 
 function fileDates(filePath) {
