@@ -568,6 +568,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1002/da.22762": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Yoga for anxiety: A systematic review and meta-analysis of randomized controlled trials",
+   "firstAuthor": "Cramer",
+   "authors": [
+    "Cramer",
+    "Lauche",
+    "Anheyer",
+    "Pilkington",
+    "de Manincor",
+    "Dobos",
+    "Ward"
+   ],
+   "year": 2018,
+   "journal": "Depression and Anxiety",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.1002/eat.70064": {
    "kind": "doi",
    "valid": true,
@@ -1275,6 +1294,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-09"
   },
+  "doi:10.1007/s11325-023-02905-1": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Association of sleep duration and risk of mental disorder: a systematic review and meta-analysis",
+   "firstAuthor": "Zhang",
+   "authors": [
+    "Zhang",
+    "He",
+    "Wang",
+    "Jiang",
+    "Huang",
+    "Liang"
+   ],
+   "year": 2023,
+   "yearAlt": 2024,
+   "journal": "Sleep and Breathing",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.1007/s11325-026-03685-0": {
    "kind": "doi",
    "valid": true,
@@ -1291,6 +1329,24 @@
    "journal": "Sleep and Breathing",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1007/s11325-026-03723-x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of fully automated digital cognitive behavioral therapy for insomnia in adults: a systematic review and meta-analysis",
+   "firstAuthor": "Gao",
+   "authors": [
+    "Gao",
+    "Zhao",
+    "Zhang",
+    "Su",
+    "Jia",
+    "Xu"
+   ],
+   "year": 2026,
+   "journal": "Sleep and Breathing",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
   },
   "doi:10.1007/s12160-009-9101-z": {
    "kind": "doi",
@@ -1476,6 +1532,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-09"
   },
+  "doi:10.1007/s40596-026-02408-7": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy and Acceptability of Digital and Web-Based Interventions for Stress and Burnout Among Physicians: A Systematic Review and Meta-analysis",
+   "firstAuthor": "O’Rourke",
+   "authors": [
+    "O’Rourke",
+    "Murphy",
+    "Montagna",
+    "O’Rourke",
+    "O’Tuathaigh"
+   ],
+   "year": 2026,
+   "journal": "Academic Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.1007/s41465-021-00218-3": {
    "kind": "doi",
    "valid": true,
@@ -1548,6 +1621,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.amjmed.2023.10.003": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Systematic Review and Meta-Analysis of Randomized Trials Testing Interventions to Reduce Physician Burnout",
+   "firstAuthor": "Haslam",
+   "authors": [
+    "Haslam",
+    "Tuia",
+    "Miller",
+    "Prasad"
+   ],
+   "year": 2024,
+   "journal": "The American Journal of Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.1016/j.amjoto.2024.104545": {
    "kind": "doi",
    "valid": true,
@@ -1578,6 +1667,24 @@
    "journal": "Annals of Emergency Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1016/j.apnr.2026.152125": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The effectiveness of mindfulness-based interventions in enhancing resilience and mitigating occupational burnout among nurses: A meta-analysis of randomized controlled trials",
+   "firstAuthor": "Lin",
+   "authors": [
+    "Lin",
+    "Wu",
+    "Tseng",
+    "Jimba",
+    "Lin",
+    "Chang"
+   ],
+   "year": 2026,
+   "journal": "Applied Nursing Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
   },
   "doi:10.1016/j.arr.2022.101786": {
    "kind": "doi",
@@ -1897,6 +2004,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.brat.2015.03.004": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Affect labeling enhances exposure effectiveness for public speaking anxiety",
+   "firstAuthor": "Niles",
+   "authors": [
+    "Niles",
+    "Craske",
+    "Lieberman",
+    "Hur"
+   ],
+   "year": 2015,
+   "journal": "Behaviour Research and Therapy",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.1016/j.brs.2014.07.031": {
    "kind": "doi",
    "valid": true,
@@ -2121,6 +2244,27 @@
    "journal": "Clinical Psychology Review",
    "source": "crossref",
    "verifiedAt": "2026-11-02"
+  },
+  "doi:10.1016/j.cpr.2026.102801": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Burnout and secondary traumatic stress in child protection workers: Untangling the role of personal and work-related factors using meta-analysis",
+   "firstAuthor": "Roest",
+   "authors": [
+    "Roest",
+    "Vang",
+    "Stams",
+    "Turkanović",
+    "Ratling",
+    "Verkennis",
+    "Dekker",
+    "van Miert",
+    "Kuiper"
+   ],
+   "year": 2026,
+   "journal": "Clinical Psychology Review",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
   },
   "doi:10.1016/j.ctcp.2017.04.001": {
    "kind": "doi",
@@ -2348,6 +2492,34 @@
    "journal": "Forensic Science International",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.ijnurstu.2021.104099": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Burnout and depression in nurses: A systematic review and meta-analysis",
+   "firstAuthor": "Chen",
+   "authors": [
+    "Chen",
+    "Meier"
+   ],
+   "year": 2021,
+   "journal": "International Journal of Nursing Studies",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
+  "doi:10.1016/j.ijnurstu.2026.105391": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Interventions for preventing or reducing nurse burnout: A systematic review and meta-analysis",
+   "firstAuthor": "Jiménez-García",
+   "authors": [
+    "Jiménez-García",
+    "Flor-Martínez"
+   ],
+   "year": 2026,
+   "journal": "International Journal of Nursing Studies",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
   },
   "doi:10.1016/j.ijpsycho.2011.02.004": {
    "kind": "doi",
@@ -2626,6 +2798,48 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.jad.2024.09.017": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Cognitive behavioral therapy for insomnia to treat major depressive disorder with comorbid insomnia: A systematic review and meta-analysis",
+   "firstAuthor": "Furukawa",
+   "authors": [
+    "Furukawa",
+    "Nagaoka",
+    "Sato",
+    "Toyomoto",
+    "Takashina",
+    "Kobayashi",
+    "Sakata",
+    "Nakajima",
+    "Ito",
+    "Yamamoto",
+    "Hara",
+    "Sakakibara",
+    "Perlis",
+    "Kasai"
+   ],
+   "year": 2024,
+   "journal": "Journal of Affective Disorders",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
+  "doi:10.1016/j.jad.2025.03.118": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The empirical status of implicit emotion regulation in mood and anxiety disorders: A meta-analytic review",
+   "firstAuthor": "Dalton",
+   "authors": [
+    "Dalton",
+    "Cooper",
+    "Jennings",
+    "Cheeta"
+   ],
+   "year": 2025,
+   "journal": "Journal of Affective Disorders",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.1016/j.jada.2005.02.005": {
    "kind": "doi",
    "valid": true,
@@ -2677,6 +2891,22 @@
    "journal": "Journal of Behavior Therapy and Experimental Psychiatry",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.jen.2025.02.007": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Burnout Among Physicians and Nurses Working in Intensive Care Units and Emergency Departments: A Systematic Review and Meta-Analysis",
+   "firstAuthor": "Lin",
+   "authors": [
+    "Lin",
+    "Selvanayagam",
+    "Patnaik",
+    "Kuo"
+   ],
+   "year": 2025,
+   "journal": "Journal of Emergency Nursing",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
   },
   "doi:10.1016/j.jep.2013.11.008": {
    "kind": "doi",
@@ -2764,6 +2994,22 @@
    "journal": "Journal of Psychiatric Research",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.jpsychires.2019.12.015": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Global prevalence of burnout symptoms among nurses: A systematic review and meta-analysis",
+   "firstAuthor": "Woo",
+   "authors": [
+    "Woo",
+    "Ho",
+    "Tang",
+    "Tam"
+   ],
+   "year": 2020,
+   "journal": "Journal of Psychiatric Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
   },
   "doi:10.1016/j.jpsychires.2026.03.034": {
    "kind": "doi",
@@ -3318,6 +3564,19 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.psychres.2026.116947": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Burnout as an occupational phenomenon: Navigating the Twilight Zone",
+   "firstAuthor": "De Beer",
+   "authors": [
+    "De Beer"
+   ],
+   "year": 2026,
+   "journal": "Psychiatry Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.1016/j.psyneuen.2008.10.026": {
    "kind": "doi",
    "valid": true,
@@ -3600,6 +3859,40 @@
    "journal": "Sleep Medicine Reviews",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.smrv.2025.102109": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of sleep hygiene education for insomnia: A systematic review and meta-analysis",
+   "firstAuthor": "Ruan",
+   "authors": [
+    "Ruan",
+    "Liu",
+    "Chung",
+    "Ho",
+    "Yeung"
+   ],
+   "year": 2025,
+   "journal": "Sleep Medicine Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
+  "doi:10.1016/j.smrv.2026.102232": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sleep well, feel well and vice versa? A meta-analysis of daily bidirectional within-person associations between sleep and affect",
+   "firstAuthor": "Bourke",
+   "authors": [
+    "Bourke",
+    "Harrison",
+    "Staton",
+    "Rossa",
+    "Smith"
+   ],
+   "year": 2026,
+   "journal": "Sleep Medicine Reviews",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
   },
   "doi:10.1016/j.smrv.2026.102284": {
    "kind": "doi",
@@ -4364,6 +4657,21 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1037/a0027600": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Dealing with feeling: A meta-analysis of the effectiveness of strategies derived from the process model of emotion regulation.",
+   "firstAuthor": "Webb",
+   "authors": [
+    "Webb",
+    "Miles",
+    "Sheeran"
+   ],
+   "year": 2012,
+   "journal": "Psychological Bulletin",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.1037/amp0000118": {
    "kind": "doi",
    "valid": true,
@@ -4705,6 +5013,30 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1038/s41398-026-04119-x": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Emotion regulation impairment across psychiatric disorders: a systematic review and meta-analysis",
+   "firstAuthor": "Sloan",
+   "authors": [
+    "Sloan",
+    "Stellern",
+    "Xiao",
+    "Germeyer",
+    "Gill",
+    "Laputsina",
+    "Mulsant",
+    "Ngoy",
+    "Nguyen",
+    "Tang",
+    "Sanches",
+    "Gowin"
+   ],
+   "year": 2026,
+   "journal": "Translational Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.1038/s41467-025-57846-y": {
    "kind": "doi",
    "valid": true,
@@ -4756,6 +5088,24 @@
    "journal": "Nature Biomedical Engineering",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1038/s41562-025-02168-8": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Emotion regulation and mental health across cultures: a systematic review and meta-analysis",
+   "firstAuthor": "Chen",
+   "authors": [
+    "Chen",
+    "Cai",
+    "Omari",
+    "Sanghvi",
+    "Lyu",
+    "Bonanno"
+   ],
+   "year": 2025,
+   "journal": "Nature Human Behaviour",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
   },
   "doi:10.1038/s41565-023-01513-0": {
    "kind": "doi",
@@ -4986,6 +5336,20 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1038/s41598-024-58408-w": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effectiveness of stress arousal reappraisal and stress-is-enhancing mindset interventions on task performance outcomes: a meta-analysis of randomized controlled trials",
+   "firstAuthor": "Bosshard",
+   "authors": [
+    "Bosshard",
+    "Gomez"
+   ],
+   "year": 2024,
+   "journal": "Scientific Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.1038/s41598-025-24704-2": {
    "kind": "doi",
    "valid": true,
@@ -5091,6 +5455,40 @@
    "journal": "npj Digital Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1038/s41746-023-00800-3": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Digital cognitive behavioral therapy for insomnia on depression and anxiety: a systematic review and meta-analysis",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Oh",
+    "Park",
+    "Lee",
+    "Lee"
+   ],
+   "year": 2023,
+   "journal": "npj Digital Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
+  "doi:10.1038/s41746-025-01514-4": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Systematic review and meta-analysis on fully automated digital cognitive behavioral therapy for insomnia",
+   "firstAuthor": "Hwang",
+   "authors": [
+    "Hwang",
+    "Lee",
+    "Woo",
+    "Kim",
+    "Kwon"
+   ],
+   "year": 2025,
+   "journal": "npj Digital Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
   },
   "doi:10.1038/s41746-025-02238-1": {
    "kind": "doi",
@@ -6198,6 +6596,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1093/fampra/cmx122": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Sleep hygiene education as a treatment of insomnia: a systematic review and meta-analysis",
+   "firstAuthor": "Chung",
+   "authors": [
+    "Chung",
+    "Lee",
+    "Yeung",
+    "Chan",
+    "Chung",
+    "Lin"
+   ],
+   "year": 2017,
+   "yearAlt": 2018,
+   "journal": "Family Practice",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.1093/occmed/kqaf101": {
    "kind": "doi",
    "valid": true,
@@ -6232,6 +6649,24 @@
    "journal": "Physical Therapy",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1093/scan/nsw121": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The role of language in the experience and perception of emotion: a neuroimaging meta-analysis",
+   "firstAuthor": "Brooks",
+   "authors": [
+    "Brooks",
+    "Shablack",
+    "Gendron",
+    "Satpute",
+    "Parrish",
+    "Lindquist"
+   ],
+   "year": 2016,
+   "journal": "Social Cognitive and Affective Neuroscience",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
   },
   "doi:10.1093/scan/nsw154": {
    "kind": "doi",
@@ -7031,6 +7466,26 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1111/jsr.70089": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The Prevalence of Insomnia Disorder in the General Population: A Meta‐Analysis",
+   "firstAuthor": "van Straten",
+   "authors": [
+    "van Straten",
+    "Weinreich",
+    "Fábián",
+    "Reesen",
+    "Grigori",
+    "Luik",
+    "Harrer",
+    "Lancee"
+   ],
+   "year": 2025,
+   "journal": "Journal of Sleep Research",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.1111/nyas.70149": {
    "kind": "doi",
    "valid": true,
@@ -7046,6 +7501,23 @@
    "journal": "Annals of the New York Academy of Sciences",
    "source": "crossref",
    "verifiedAt": "2026-10-07"
+  },
+  "doi:10.1111/pcn.13356": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Heart rate variability in patients with anxiety disorders: A systematic review and meta‐analysis",
+   "firstAuthor": "Cheng",
+   "authors": [
+    "Cheng",
+    "Su",
+    "Liu",
+    "Huang",
+    "Huang"
+   ],
+   "year": 2022,
+   "journal": "Psychiatry and Clinical Neurosciences",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
   },
   "doi:10.1111/php.12864": {
    "kind": "doi",
@@ -7623,6 +8095,29 @@
    "journal": "British Journal of Sports Medicine",
    "source": "crossref",
    "verifiedAt": "2026-11-02"
+  },
+  "doi:10.1136/bmj-2022-070442": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Associations of physician burnout with career engagement and quality of patient care: systematic review and meta-analysis",
+   "firstAuthor": "Hodkinson",
+   "authors": [
+    "Hodkinson",
+    "Zhou,",
+    "Johnson",
+    "Geraghty",
+    "Riley",
+    "Zhou",
+    "Panagopoulou",
+    "Chew-Graham",
+    "Peters",
+    "Esmail",
+    "Panagioti,"
+   ],
+   "year": 2022,
+   "journal": "BMJ",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
   },
   "doi:10.1136/bmj-2023-075847": {
    "kind": "doi",
@@ -9570,6 +10065,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1371/journal.pone.0212854": {
+   "kind": "doi",
+   "valid": true,
+   "title": "The efficacy of stress reappraisal interventions on stress responsivity: A meta-analysis and systematic review of existing evidence",
+   "firstAuthor": "Liu",
+   "authors": [
+    "Liu",
+    "Ein",
+    "Gervasio",
+    "Vickers"
+   ],
+   "year": 2019,
+   "journal": "PLOS ONE",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.1371/journal.pone.0215053": {
    "kind": "doi",
    "valid": true,
@@ -10256,6 +10767,26 @@
    "journal": "Journal of Medical Internet Research",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.2196/49772": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Association Between Physical Activity and the Risk of Burnout in Health Care Workers: Systematic Review",
+   "firstAuthor": "Mincarone",
+   "authors": [
+    "Mincarone",
+    "Bodini",
+    "Tumolo",
+    "Sabina",
+    "Colella",
+    "Mannini",
+    "Sabato",
+    "Leo"
+   ],
+   "year": 2024,
+   "journal": "JMIR Public Health and Surveillance",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
   },
   "doi:10.2196/80450": {
    "kind": "doi",
@@ -11230,6 +11761,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.3389/fpsyt.2014.00080": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Anxiety Disorders are Associated with Reduced Heart Rate Variability: A Meta-Analysis",
+   "firstAuthor": "Chalmers",
+   "authors": [
+    "Chalmers",
+    "Quintana",
+    "Abbott",
+    "Kemp"
+   ],
+   "year": 2014,
+   "journal": "Frontiers in Psychiatry",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.3389/fpsyt.2018.00044": {
    "kind": "doi",
    "valid": true,
@@ -11928,6 +12475,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.4102/safp.v68i1.6235": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Burnout in healthcare professionals",
+   "firstAuthor": "Maluleka",
+   "authors": [
+    "Maluleka",
+    "Bulo",
+    "Nair",
+    "von Pressentin"
+   ],
+   "year": 2026,
+   "journal": "South African Family Practice",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.4103/0973-6131.133872": {
    "kind": "doi",
    "valid": true,
@@ -12089,6 +12652,54 @@
    "source": "crossref",
    "verifiedAt": "2026-10-06"
   },
+  "doi:10.5664/jcsm.8986": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical practice guideline",
+   "firstAuthor": "Edinger",
+   "authors": [
+    "Edinger",
+    "Arnedt",
+    "Bertisch",
+    "Carney",
+    "Harrington",
+    "Lichstein",
+    "Sateia",
+    "Troxel",
+    "Zhou",
+    "Kazmi",
+    "Heald",
+    "Martin"
+   ],
+   "year": 2021,
+   "journal": "Journal of Clinical Sleep Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
+  "doi:10.5664/jcsm.8988": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine systematic review, meta-analysis, and GRADE assessment",
+   "firstAuthor": "Edinger",
+   "authors": [
+    "Edinger",
+    "Arnedt",
+    "Bertisch",
+    "Carney",
+    "Harrington",
+    "Lichstein",
+    "Sateia",
+    "Troxel",
+    "Zhou",
+    "Kazmi",
+    "Heald",
+    "Martin"
+   ],
+   "year": 2021,
+   "journal": "Journal of Clinical Sleep Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
+  },
   "doi:10.5665/sleep.3230": {
    "kind": "doi",
    "valid": true,
@@ -12181,6 +12792,25 @@
    "journal": "Annals of Internal Medicine",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.7326/annals-25-00469": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Efficacy of Individual-Level Interventions to Mitigate the Risk for Burnout Among Health Care Professionals",
+   "firstAuthor": "Collett",
+   "authors": [
+    "Collett",
+    "Gupta",
+    "Eltayeb",
+    "Korszun",
+    "Sharples",
+    "Rice",
+    "Gupta"
+   ],
+   "year": 2026,
+   "journal": "Annals of Internal Medicine",
+   "source": "crossref",
+   "verifiedAt": "2026-11-03"
   },
   "doi:10.7326/m15-2175": {
    "kind": "doi",
@@ -14659,6 +15289,22 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:22582737": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Dealing with feeling: a meta-analysis of the effectiveness of strategies derived from the process model of emotion regulation.",
+   "firstAuthor": "Webb",
+   "authors": [
+    "Webb",
+    "Miles",
+    "Sheeran"
+   ],
+   "year": 2012,
+   "journal": "Psychol Bull",
+   "doi": "10.1037/a0027600",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:22654764": {
    "kind": "pmid",
    "valid": true,
@@ -15570,6 +16216,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:25071612": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Anxiety Disorders are Associated with Reduced Heart Rate Variability: A Meta-Analysis.",
+   "firstAuthor": "Chalmers",
+   "authors": [
+    "Chalmers",
+    "Quintana",
+    "Abbott",
+    "Kemp"
+   ],
+   "year": 2014,
+   "journal": "Front Psychiatry",
+   "doi": "10.3389/fpsyt.2014.00080",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:25101026": {
    "kind": "pmid",
    "valid": true,
@@ -15798,6 +16461,23 @@
    "doi": "10.1001/jamainternmed.2014.8187",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:25795524": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Affect labeling enhances exposure effectiveness for public speaking anxiety.",
+   "firstAuthor": "Niles",
+   "authors": [
+    "Niles",
+    "Craske",
+    "Lieberman",
+    "Hur"
+   ],
+   "year": 2015,
+   "journal": "Behav Res Ther",
+   "doi": "10.1016/j.brat.2015.03.004",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
   },
   "pmid:25818837": {
    "kind": "pmid",
@@ -16479,6 +17159,25 @@
    "doi": "10.1038/srep31724",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:27539864": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The role of language in the experience and perception of emotion: a neuroimaging meta-analysis.",
+   "firstAuthor": "Brooks",
+   "authors": [
+    "Brooks",
+    "Shablack",
+    "Gendron",
+    "Satpute",
+    "Parrish",
+    "Lindquist"
+   ],
+   "year": 2017,
+   "journal": "Soc Cogn Affect Neurosci",
+   "doi": "10.1093/scan/nsw121",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
   },
   "pmid:27557747": {
    "kind": "pmid",
@@ -17349,6 +18048,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:29194467": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sleep hygiene education as a treatment of insomnia: a systematic review and meta-analysis.",
+   "firstAuthor": "Chung",
+   "authors": [
+    "Chung",
+    "Lee",
+    "Yeung",
+    "Chan",
+    "Chung",
+    "Lin"
+   ],
+   "year": 2018,
+   "journal": "Fam Pract",
+   "doi": "10.1093/fampra/cmx122",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:29209423": {
    "kind": "pmid",
    "valid": true,
@@ -17548,6 +18266,26 @@
    "doi": "10.1073/pnas.1721694115",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:29697885": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Yoga for anxiety: A systematic review and meta-analysis of randomized controlled trials.",
+   "firstAuthor": "Cramer",
+   "authors": [
+    "Cramer",
+    "Lauche",
+    "Anheyer",
+    "Pilkington",
+    "de Manincor",
+    "Dobos",
+    "Ward"
+   ],
+   "year": 2018,
+   "journal": "Depress Anxiety",
+   "doi": "10.1002/da.22762",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
   },
   "pmid:29709070": {
    "kind": "pmid",
@@ -17984,6 +18722,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:30811484": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The efficacy of stress reappraisal interventions on stress responsivity: A meta-analysis and systematic review of existing evidence.",
+   "firstAuthor": "Liu",
+   "authors": [
+    "Liu",
+    "Ein",
+    "Gervasio",
+    "Vickers"
+   ],
+   "year": 2019,
+   "journal": "PLoS One",
+   "doi": "10.1371/journal.pone.0212854",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:30833909": {
    "kind": "pmid",
    "valid": true,
@@ -18387,6 +19142,23 @@
    "journal": "",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:32007680": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Global prevalence of burnout symptoms among nurses: A systematic review and meta-analysis.",
+   "firstAuthor": "Woo",
+   "authors": [
+    "Woo",
+    "Ho",
+    "Tang",
+    "Tam"
+   ],
+   "year": 2020,
+   "journal": "J Psychiatr Res",
+   "doi": "10.1016/j.jpsychires.2019.12.015",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
   },
   "pmid:3202462": {
    "kind": "pmid",
@@ -18904,6 +19676,56 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:33164741": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine systematic review, meta-analysis, and GRADE assessment.",
+   "firstAuthor": "Edinger",
+   "authors": [
+    "Edinger",
+    "Arnedt",
+    "Bertisch",
+    "Carney",
+    "Harrington",
+    "Lichstein",
+    "Sateia",
+    "Troxel",
+    "Zhou",
+    "Kazmi",
+    "Heald",
+    "Martin"
+   ],
+   "year": 2021,
+   "journal": "J Clin Sleep Med",
+   "doi": "10.5664/jcsm.8988",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
+  "pmid:33164742": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Behavioral and psychological treatments for chronic insomnia disorder in adults: an American Academy of Sleep Medicine clinical practice guideline.",
+   "firstAuthor": "Edinger",
+   "authors": [
+    "Edinger",
+    "Arnedt",
+    "Bertisch",
+    "Carney",
+    "Harrington",
+    "Lichstein",
+    "Sateia",
+    "Troxel",
+    "Zhou",
+    "Kazmi",
+    "Heald",
+    "Martin"
+   ],
+   "year": 2021,
+   "journal": "J Clin Sleep Med",
+   "doi": "10.5664/jcsm.8986",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:33208926": {
    "kind": "pmid",
    "valid": true,
@@ -19391,6 +20213,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:34715576": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Burnout and depression in nurses: A systematic review and meta-analysis.",
+   "firstAuthor": "Chen",
+   "authors": [
+    "Chen",
+    "Meier"
+   ],
+   "year": 2021,
+   "journal": "Int J Nurs Stud",
+   "doi": "10.1016/j.ijnurstu.2021.104099",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:34727178": {
    "kind": "pmid",
    "valid": true,
@@ -19717,6 +20554,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
   },
+  "pmid:35340102": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Heart rate variability in patients with anxiety disorders: A systematic review and meta-analysis.",
+   "firstAuthor": "Cheng",
+   "authors": [
+    "Cheng",
+    "Su",
+    "Liu",
+    "Huang",
+    "Huang"
+   ],
+   "year": 2022,
+   "journal": "Psychiatry Clin Neurosci",
+   "doi": "10.1111/pcn.13356",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:35458875": {
    "kind": "pmid",
    "valid": true,
@@ -19928,6 +20783,30 @@
    "doi": "10.1016/j.cortex.2022.07.008",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:36104064": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Associations of physician burnout with career engagement and quality of patient care: systematic review and meta-analysis.",
+   "firstAuthor": "Hodkinson",
+   "authors": [
+    "Hodkinson",
+    "Zhou",
+    "Johnson",
+    "Geraghty",
+    "Riley",
+    "Zhou",
+    "Panagopoulou",
+    "Chew-Graham",
+    "Peters",
+    "Esmail",
+    "Panagioti"
+   ],
+   "year": 2022,
+   "journal": "BMJ",
+   "doi": "10.1136/bmj-2022-070442",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
   },
   "pmid:36137565": {
    "kind": "pmid",
@@ -20235,6 +21114,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:36966184": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Digital cognitive behavioral therapy for insomnia on depression and anxiety: a systematic review and meta-analysis.",
+   "firstAuthor": "Lee",
+   "authors": [
+    "Lee",
+    "Oh",
+    "Park",
+    "Lee",
+    "Lee"
+   ],
+   "year": 2023,
+   "journal": "NPJ Digit Med",
+   "doi": "10.1038/s41746-023-00800-3",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:36981504": {
    "kind": "pmid",
    "valid": true,
@@ -20407,6 +21304,26 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:37642884": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Association of sleep duration and risk of mental disorder: a systematic review and meta-analysis.",
+   "firstAuthor": "Zhang",
+   "authors": [
+    "Zhang",
+    "He",
+    "Wang",
+    "Jiang",
+    "Huang",
+    "Liang"
+   ],
+   "year": 2024,
+   "yearAlt": 2023,
+   "journal": "Sleep Breath",
+   "doi": "10.1007/s11325-023-02905-1",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:37770648": {
    "kind": "pmid",
    "valid": true,
@@ -20470,6 +21387,24 @@
    "doi": "10.1152/ajpregu.00148.2023",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:37890569": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Systematic Review and Meta-Analysis of Randomized Trials Testing Interventions to Reduce Physician Burnout.",
+   "firstAuthor": "Haslam",
+   "authors": [
+    "Haslam",
+    "Tuia",
+    "Miller",
+    "Prasad"
+   ],
+   "year": 2024,
+   "yearAlt": 2023,
+   "journal": "Am J Med",
+   "doi": "10.1016/j.amjmed.2023.10.003",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
   },
   "pmid:37923236": {
    "kind": "pmid",
@@ -20769,6 +21704,42 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:38498040": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Association Between Physical Activity and the Risk of Burnout in Health Care Workers: Systematic Review.",
+   "firstAuthor": "Mincarone",
+   "authors": [
+    "Mincarone",
+    "Bodini",
+    "Tumolo",
+    "Sabina",
+    "Colella",
+    "Mannini",
+    "Sabato",
+    "Leo"
+   ],
+   "year": 2024,
+   "journal": "JMIR Public Health Surveill",
+   "doi": "10.2196/49772",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
+  "pmid:38575696": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effectiveness of stress arousal reappraisal and stress-is-enhancing mindset interventions on task performance outcomes: a meta-analysis of randomized controlled trials.",
+   "firstAuthor": "Bosshard",
+   "authors": [
+    "Bosshard",
+    "Gomez"
+   ],
+   "year": 2024,
+   "journal": "Sci Rep",
+   "doi": "10.1038/s41598-024-58408-w",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:38663342": {
    "kind": "pmid",
    "valid": true,
@@ -20844,6 +21815,33 @@
    "doi": "10.1177/08830738241273347",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:39242039": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Cognitive behavioral therapy for insomnia to treat major depressive disorder with comorbid insomnia: A systematic review and meta-analysis.",
+   "firstAuthor": "Furukawa",
+   "authors": [
+    "Furukawa",
+    "Nagaoka",
+    "Sato",
+    "Toyomoto",
+    "Takashina",
+    "Kobayashi",
+    "Sakata",
+    "Nakajima",
+    "Ito",
+    "Yamamoto",
+    "Hara",
+    "Sakakibara",
+    "Perlis",
+    "Kasai"
+   ],
+   "year": 2024,
+   "journal": "J Affect Disord",
+   "doi": "10.1016/j.jad.2024.09.017",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
   },
   "pmid:39290618": {
    "kind": "pmid",
@@ -21155,6 +22153,58 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:40075149": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Systematic review and meta-analysis on fully automated digital cognitive behavioral therapy for insomnia.",
+   "firstAuthor": "Hwang",
+   "authors": [
+    "Hwang",
+    "Lee",
+    "Woo",
+    "Kim",
+    "Kwon"
+   ],
+   "year": 2025,
+   "journal": "NPJ Digit Med",
+   "doi": "10.1038/s41746-025-01514-4",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
+  "pmid:40088246": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Burnout Among Physicians and Nurses Working in Intensive Care Units and Emergency Departments: A Systematic Review and Meta-Analysis.",
+   "firstAuthor": "Lin",
+   "authors": [
+    "Lin",
+    "Selvanayagam",
+    "Patnaik",
+    "Kuo"
+   ],
+   "year": 2025,
+   "journal": "J Emerg Nurs",
+   "doi": "10.1016/j.jen.2025.02.007",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
+  "pmid:40122263": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The empirical status of implicit emotion regulation in mood and anxiety disorders: A meta-analytic review.",
+   "firstAuthor": "Dalton",
+   "authors": [
+    "Dalton",
+    "Cooper",
+    "Jennings",
+    "Cheeta"
+   ],
+   "year": 2025,
+   "journal": "J Affect Disord",
+   "doi": "10.1016/j.jad.2025.03.118",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:40127035": {
    "kind": "pmid",
    "valid": true,
@@ -21238,6 +22288,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:40234629": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Emotion regulation and mental health across cultures: a systematic review and meta-analysis.",
+   "firstAuthor": "Chen",
+   "authors": [
+    "Chen",
+    "Cai",
+    "Omari",
+    "Sanghvi",
+    "Lyu",
+    "Bonanno"
+   ],
+   "year": 2025,
+   "journal": "Nat Hum Behav",
+   "doi": "10.1038/s41562-025-02168-8",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:40323248": {
    "kind": "pmid",
    "valid": true,
@@ -21296,6 +22365,27 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:40369835": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The Prevalence of Insomnia Disorder in the General Population: A Meta-Analysis.",
+   "firstAuthor": "van Straten",
+   "authors": [
+    "van Straten",
+    "Weinreich",
+    "Fábián",
+    "Reesen",
+    "Grigori",
+    "Luik",
+    "Harrer",
+    "Lancee"
+   ],
+   "year": 2025,
+   "journal": "J Sleep Res",
+   "doi": "10.1111/jsr.70089",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:40373021": {
    "kind": "pmid",
    "valid": true,
@@ -21329,6 +22419,24 @@
    "doi": "10.1371/journal.pone.0323643",
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
+  },
+  "pmid:40449065": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of sleep hygiene education for insomnia: A systematic review and meta-analysis.",
+   "firstAuthor": "Ruan",
+   "authors": [
+    "Ruan",
+    "Liu",
+    "Chung",
+    "Ho",
+    "Yeung"
+   ],
+   "year": 2025,
+   "journal": "Sleep Med Rev",
+   "doi": "10.1016/j.smrv.2025.102109",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
   },
   "pmid:40527833": {
    "kind": "pmid",
@@ -21608,6 +22716,27 @@
    "doi": "10.1371/journal.pone.0336615",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
+  },
+  "pmid:41248499": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of Individual-Level Interventions to Mitigate the Risk for Burnout Among Health Care Professionals : A Systematic Review and Meta-analysis of Randomized Controlled Trials.",
+   "firstAuthor": "Collett",
+   "authors": [
+    "Collett",
+    "Gupta",
+    "Eltayeb",
+    "Korszun",
+    "Sharples",
+    "Rice",
+    "Gupta"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "Ann Intern Med",
+   "doi": "10.7326/ANNALS-25-00469",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
   },
   "pmid:41264119": {
    "kind": "pmid",
@@ -21924,6 +23053,20 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:41547238": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Burnout as an occupational phenomenon: Navigating the Twilight Zone.",
+   "firstAuthor": "De Beer",
+   "authors": [
+    "De Beer"
+   ],
+   "year": 2026,
+   "journal": "Psychiatry Res",
+   "doi": "10.1016/j.psychres.2026.116947",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:41561154": {
    "kind": "pmid",
    "valid": true,
@@ -21941,6 +23084,24 @@
    "doi": "10.3389/fphys.2025.1696346",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41570755": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Sleep well, feel well and vice versa? A meta-analysis of daily bidirectional within-person associations between sleep and affect.",
+   "firstAuthor": "Bourke",
+   "authors": [
+    "Bourke",
+    "Harrison",
+    "Staton",
+    "Rossa",
+    "Smith"
+   ],
+   "year": 2026,
+   "journal": "Sleep Med Rev",
+   "doi": "10.1016/j.smrv.2026.102232",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
   },
   "pmid:41627302": {
    "kind": "pmid",
@@ -22154,6 +23315,23 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:41773402": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Burnout in healthcare professionals.",
+   "firstAuthor": "Maluleka",
+   "authors": [
+    "Maluleka",
+    "Bulo",
+    "Nair",
+    "Von Pressentin"
+   ],
+   "year": 2026,
+   "journal": "S Afr Fam Pract (2004)",
+   "doi": "10.4102/safp.v68i1.6235",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:41801993": {
    "kind": "pmid",
    "valid": true,
@@ -22177,6 +23355,21 @@
    "doi": "10.1371/journal.pdig.0001284",
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
+  },
+  "pmid:41818908": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Interventions for preventing or reducing nurse burnout: A systematic review and meta-analysis.",
+   "firstAuthor": "Jiménez-García",
+   "authors": [
+    "Jiménez-García",
+    "Flor-Martínez"
+   ],
+   "year": 2026,
+   "journal": "Int J Nurs Stud",
+   "doi": "10.1016/j.ijnurstu.2026.105391",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
   },
   "pmid:41838387": {
    "kind": "pmid",
@@ -22547,6 +23740,31 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:42215453": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Emotion regulation impairment across psychiatric disorders: a systematic review and meta-analysis.",
+   "firstAuthor": "Sloan",
+   "authors": [
+    "Sloan",
+    "Stellern",
+    "Xiao",
+    "Germeyer",
+    "Gill",
+    "Laputsina",
+    "Mulsant",
+    "Ngoy",
+    "Nguyen",
+    "Tang",
+    "Sanches",
+    "Gowin"
+   ],
+   "year": 2026,
+   "journal": "Transl Psychiatry",
+   "doi": "10.1038/s41398-026-04119-x",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:42238641": {
    "kind": "pmid",
    "valid": true,
@@ -22564,6 +23782,25 @@
    "doi": "10.31083/RCM47953",
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
+  },
+  "pmid:42240717": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy of fully automated digital cognitive behavioral therapy for insomnia in adults: a systematic review and meta-analysis.",
+   "firstAuthor": "Gao",
+   "authors": [
+    "Gao",
+    "Zhao",
+    "Zhang",
+    "Su",
+    "Jia",
+    "Xu"
+   ],
+   "year": 2026,
+   "journal": "Sleep Breath",
+   "doi": "10.1007/s11325-026-03723-x",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
   },
   "pmid:42275859": {
    "kind": "pmid",
@@ -22807,6 +24044,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:42601536": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Efficacy and Acceptability of Digital and Web-Based Interventions for Stress and Burnout Among Physicians: A Systematic Review and Meta-analysis.",
+   "firstAuthor": "O'Rourke",
+   "authors": [
+    "O'Rourke",
+    "Murphy",
+    "Montagna",
+    "O'Rourke",
+    "O'Tuathaigh"
+   ],
+   "year": 2026,
+   "journal": "Acad Psychiatry",
+   "doi": "10.1007/s40596-026-02408-7",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:42655500": {
    "kind": "pmid",
    "valid": true,
@@ -22878,6 +24133,28 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:42732758": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Burnout and secondary traumatic stress in child protection workers: Untangling the role of personal and work-related factors using meta-analysis.",
+   "firstAuthor": "Roest",
+   "authors": [
+    "Roest",
+    "Vang",
+    "Stams",
+    "Turkanović",
+    "Ratling",
+    "Verkennis",
+    "Dekker",
+    "van Miert",
+    "Kuiper"
+   ],
+   "year": 2026,
+   "journal": "Clin Psychol Rev",
+   "doi": "10.1016/j.cpr.2026.102801",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
+  },
   "pmid:42745081": {
    "kind": "pmid",
    "valid": true,
@@ -22924,6 +24201,25 @@
    "doi": "10.3390/clockssleep8030052",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:42785818": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "The effectiveness of mindfulness-based interventions in enhancing resilience and mitigating occupational burnout among nurses: A meta-analysis of randomized controlled trials.",
+   "firstAuthor": "Lin",
+   "authors": [
+    "Lin",
+    "Wu",
+    "Tseng",
+    "Jimba",
+    "Lin",
+    "Chang"
+   ],
+   "year": 2026,
+   "journal": "Appl Nurs Res",
+   "doi": "10.1016/j.apnr.2026.152125",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-03"
   },
   "pmid:42804102": {
    "kind": "pmid",
