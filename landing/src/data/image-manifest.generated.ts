@@ -2560,6 +2560,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/measurements-how-we-evaluate-research.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/science/measurements-how-we-evaluate-research.jpg": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/science/measurements-how-we-evaluate-research.webp": {
+    "width": 1672,
+    "height": 941
+  },
   "/images/science/measurements-hrv-ppg-vs-ecg.avif": {
     "width": 1376,
     "height": 768
