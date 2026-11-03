@@ -31,6 +31,34 @@ const glossaryFile = join(__dirname, '..', 'src', 'data', 'glossary.ts')
 const outFile = join(__dirname, '..', 'src', 'data', 'article-dates.generated.ts')
 const cacheFile = join(__dirname, '.article-dates.cache.json')
 
+// Vercel clones only the last ~10 commits, which turned every published/modified date into the clone boundary.
+// Fetch the full history first so the dates are the real ones; on failure keep going with what is there (warn).
+function unshallow() {
+  const git = (cmd) => execSync(`git ${cmd}`, { cwd: repoRoot, stdio: ['ignore', 'pipe', 'pipe'] }).toString().trim()
+  try {
+    if (git('rev-parse --is-shallow-repository') !== 'true') return
+  } catch {
+    return
+  }
+  const t0 = Date.now()
+  const { VERCEL_GIT_REPO_OWNER: owner, VERCEL_GIT_REPO_SLUG: slug } = process.env
+  const remotes = ['origin', owner && slug ? `https://github.com/${owner}/${slug}.git` : null].filter(Boolean)
+  for (const remote of remotes) {
+    try {
+      // Commits and trees only (blob:none, ~4 s instead of ~2.5 min); git fetches blobs on demand. The glossary blame
+      // needs every version of glossary.ts — fetch those blobs in ONE request instead of ~70 lazy round trips.
+      git(`fetch --unshallow --filter=blob:none --quiet --no-tags ${remote} HEAD`)
+      const missing = git(`rev-list --objects --missing=print HEAD -- "${glossaryFile}"`)
+        .split('\n').filter((l) => l.startsWith('?')).map((l) => l.slice(1))
+      if (missing.length) git(`fetch --quiet --no-tags ${remote} ${missing.join(' ')}`)
+      console.log(`[article-dates] full git history fetched from ${remote.replace(/^https:\/\//, '')} in ${Math.round((Date.now() - t0) / 1000)}s`)
+      return
+    } catch {}
+  }
+  console.warn('[article-dates] WARNING: shallow clone and the full history could not be fetched — dates are only as old as the clone')
+}
+unshallow()
+
 /** Per-file git history from ONE `git log --name-status` over landing/ (two `git log` spawns per file took ~3 min):
  *  path -> events newest-first { i: commit index, st: A/M/D/R…, from: old path of a rename }. */
 let gitIndex = null
@@ -83,8 +111,12 @@ function gitDate(filePath, mode) {
 }
 
 function fileDates(filePath) {
-  const published = gitDate(filePath, 'first')
+  let published = gitDate(filePath, 'first')
   const modified = gitDate(filePath, 'last')
+  if (published && modified && new Date(published) > new Date(modified)) {
+    console.warn(`[article-dates] WARNING: published ${published} after modified ${modified} for ${relative(repoRoot, filePath)} — published set to modified`)
+    published = modified
+  }
   if (published && modified) return { published, modified }
   // Fallback: filesystem mtime, same value for both fields.
   const mtime = statSync(filePath).mtime.toISOString()
