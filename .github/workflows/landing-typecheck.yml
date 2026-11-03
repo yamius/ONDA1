@@ -1,0 +1,40 @@
+name: Landing typecheck
+
+# tsc -b runs here instead of inside the Vercel build (vite does not need it; saves ~1 min per deploy).
+# Generators first: tsc reads their output (src/generated/*, article dates, science pages…).
+on:
+  push:
+    branches: [main]
+    paths: ['landing/**', '.github/workflows/landing-typecheck.yml']
+  pull_request:
+    branches: [main]
+    paths: ['landing/**', '.github/workflows/landing-typecheck.yml']
+
+jobs:
+  typecheck:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: landing
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: landing/package-lock.json
+      - run: npm ci
+      - name: Generators (same order as npm run build)
+        run: |
+          node scripts/write-build-sha.mjs
+          npx tsx scripts/build-hrv-widget.ts
+          npx tsx scripts/fetch-psych.ts
+          npx tsx scripts/science-pack-bundle.ts
+          node scripts/article-dates.mjs
+          npx tsx scripts/generate-article-chunks.ts
+          npx tsx scripts/generate-science-pages.ts
+          npx tsx scripts/generate-localized-coverage.ts
+      - name: tsc -b
+        run: npx tsc -b
