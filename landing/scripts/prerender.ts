@@ -46,11 +46,11 @@ const allRoutes = getPrerenderRoutes()
 /**
  * Parallel prerender. renderToString + JSDOM is single-threaded and ~100 routes/min, so the full site takes ~30 min in
  * one process. Without PRERENDER_SHARD, this process becomes a coordinator: it starts PRERENDER_JOBS child processes
- * (default: by CPU count and memory, max 6), each rendering every N-th route (PRERENDER_SHARD="i/N"), waits for all,
+ * (default: one per CPU — the coordinator only waits — limited by memory at ~1.5 GB each, max 6; a shard peaks ~0.6 GB), each rendering every N-th route (PRERENDER_SHARD="i/N"), waits for all,
  * then runs the site-wide steps (sitemap, feeds, llms.txt…) once. PRERENDER_JOBS=1 keeps the old single-process path.
  */
 const SHARD = process.env.PRERENDER_SHARD
-const JOBS = Math.max(1, Number(process.env.PRERENDER_JOBS) || Math.min(6, cpus().length - 1, Math.floor(totalmem() / 2.5e9)))
+const JOBS = Math.max(1, Number(process.env.PRERENDER_JOBS) || Math.min(6, cpus().length, Math.floor(totalmem() / 1.5e9)))
 if (!SHARD && JOBS > 1) {
   console.log(`[prerender] parallel — ${allRoutes.length} routes in ${JOBS} processes`)
   const t0 = Date.now()
