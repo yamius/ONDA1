@@ -1,0 +1,56 @@
+name: psych site status
+
+# When Vercel finishes a PRODUCTION build of onda-life.com (deployment_status from the onda_life project), report to
+# every recently merged yamius/onda-psych PR that has no "site:" comment yet whether its pages are live:
+# success -> each English page opens and shows its `updated` date -> "site: ✅" / "site: ❌ <page>: <why>";
+# failure / error -> "site: ❌ build failed". Mistral reads that comment before its next task (onda-psych START.md).
+# Secret ONDA_PSYCH_PR_TOKEN: fine-grained token, onda-psych only, Contents read + Pull requests read/write (owner).
+on: deployment_status
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    if: >-
+      startsWith(github.event.deployment.environment, 'Production') &&
+      contains(github.event.deployment.environment, 'onda_life') &&
+      contains(fromJSON('["success","failure","error"]'), github.event.deployment_status.state)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ secrets.ONDA_PSYCH_PR_TOKEN }}
+      R: yamius/onda-psych
+      STATE: ${{ github.event.deployment_status.state }}
+      DEPLOY_CREATED: ${{ github.event.deployment.created_at }}
+    steps:
+      - name: Report to onda-psych PRs
+        run: |
+          [ -n "$GH_TOKEN" ] || { echo "ONDA_PSYCH_PR_TOKEN not set - skipping"; exit 0; }
+          SINCE=$(date -u -d "$DEPLOY_CREATED - 6 hours" +%Y-%m-%dT%H:%M:%SZ)
+          # PRs merged BEFORE this build started (so the build contains them), within the last 6 h.
+          PRS=$(gh api "repos/$R/pulls?state=closed&sort=updated&direction=desc&per_page=30" \
+            --jq ".[] | select(.merged_at != null and .merged_at > \"$SINCE\" and .merged_at < \"$DEPLOY_CREATED\") | .number")
+          for n in $PRS; do
+            if gh api "repos/$R/issues/$n/comments" --jq '.[].body' | grep -q '^site:'; then continue; fi
+            if [ "$STATE" != success ]; then
+              gh pr comment "$n" -R "$R" --body "site: ❌ the onda-life.com build failed (Vercel: $STATE). Stop and tell the owner (Vercel build log). Do not start the next task."
+              continue
+            fi
+            BAD=""; OK=""
+            for f in $(gh api "repos/$R/pulls/$n/files" --jq '.[] | select(.status != "removed") | .filename' | grep -E '^content/[a-z0-9-]+/[a-z]{2}(--[a-z0-9-]+)?\.md$'); do
+              topic=$(echo "$f" | cut -d/ -f2)
+              if [ "$(basename "$f" .md)" != en ]; then OK="$OK"$'\n'"- $f: not checked (only English pages have a fixed URL)"; continue; fi
+              url="https://onda-life.com/science/psychology/$topic"
+              upd=$(gh api "repos/$R/contents/$f?ref=main" -H 'Accept: application/vnd.github.raw' | grep -m1 -E '^updated:' | sed -E "s/updated: *//; s/[\"' ]//g")
+              html=$(curl -fsS "$url" || true)
+              if [ -z "$html" ]; then BAD="$BAD"$'\n'"- $url: page does not open (the site skipped it)"
+              elif [ -n "$upd" ] && ! grep -q "datetime=\"$upd\"" <<<"$html"; then BAD="$BAD"$'\n'"- $url: still the old version (no 'updated $upd' on the page)"
+              else OK="$OK"$'\n'"- $url ✓ (updated $upd)"; fi
+            done
+            if [ -n "$BAD" ]; then
+              gh pr comment "$n" -R "$R" --body "site: ❌ the build is live, but:$BAD"$'\n\n'"Stop and tell the owner. Do not start the next task."
+            else
+              gh pr comment "$n" -R "$R" --body "site: ✅ published$OK"$'\n\n'"You can start the next task."
+            fi
+          done
