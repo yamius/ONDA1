@@ -123,4 +123,184 @@ export const SERP_OVERRIDES: Record<string, { title?: string; description?: stri
   "/reviews/vs/theragun-pro-plus-vs-hypervolt-2-pro-vs-achedaway-pro": {
     title: "Theragun vs Hypervolt vs Achedaway Pro | ONDA Life",
   },
+  // --- round 2: GSC ctr_gap 2026-10-07..11-03 (owner 2026-11-05). /<lang>/ keys are applied by the prerender final pass ---
+  '/tools/alcohol': {
+    title: 'How Long Until Sober? Alcohol & BAC Calculator | ONDA Life',
+    description:
+      'Free, no sign-up: add your drinks, weight and sex to estimate your blood alcohol and the hours until it\'s back to zero. Educational — never drink and drive.',
+  },
+  '/articles/apple-watch-recovery-hrv-vs-overall-hrv': {
+    title: 'Apple Watch Recovery vs Overall HRV, Explained | ONDA Life',
+    description:
+      'Since September 2026 Apple Watch shows two HRV numbers. What Recovery HRV and Overall HRV each measure, why they differ and which one to follow.',
+  },
+  '/glossary/mutual-inhibition': {
+    title: 'Mutual Inhibition: Definition in Plain Words | ONDA Life',
+    description:
+      'Mutual inhibition: two neurons or networks that suppress each other in turn, creating a rhythm like a biological pendulum. Short plain-language definition.',
+  },
+  '/glossary/emotional-osmosis': {
+    title: 'Emotional Osmosis (Emotional Contagion) Meaning | ONDA Life',
+  },
+  '/connect/amazfit': {
+    title: 'Amazfit / Zepp HRV: How to Read Your Numbers | ONDA Life',
+  },
+  '/reviews/morozko-forge': {
+    title: 'Morozko Forge Review: $10K Ice Bath, Worth It? | ONDA Life',
+    description:
+      'The cold plunge Morozko says can freeze the water surface at 33°F. Wim Hof-affiliated, $10,000+. Who it suits, who it is overkill for, and what to buy instead.',
+  },
+  '/reviews/renu-therapy-cold-stoic': {
+    title: 'Renu Cold Stoic Review: Quiet Indoor Cold Plunge | ONDA Life',
+    description:
+      'Premium cold-plunge tub with one of the quietest chillers: holds 40°F, 3-year warranty, built for indoor installs. Pros, cons and how it compares.',
+  },
+  '/reviews/bluecube-cold-plunge': {
+    title: 'BlueCube Cold Plunge Review: Commercial-Grade | ONDA Life',
+    description:
+      'The highest-capacity chiller we reviewed, ozone + UV, 5-year warranty on most parts. Overkill for one person, right for gyms, clinics and busy homes.',
+  },
+  '/reviews/eight-sleep-pod-6': {
+    title: 'Eight Sleep Pod 6 Review: Price & Membership | ONDA Life',
+    description:
+      'Hub 50% smaller, 18 sensors, Solo sizes from $1,999, queen $2,899 — plus a mandatory Autopilot membership ($199–$399/yr). Is the Pod 6 worth it?',
+  },
+  '/reviews/air-purifiers': {
+    title: 'Best Air Purifiers 2026: 10 Reviewed & Scored | ONDA Life',
+  },
+  '/reviews/vs/muse-s-athena-vs-neurosity-crown': {
+    title: 'Muse S Athena vs Neurosity Crown: Which EEG? | ONDA Life',
+  },
+  '/reviews/vs/omnilux-contour-face-vs-higherdose-red-light-face-mask': {
+    title: 'Omnilux vs HigherDOSE Mask: $395 vs $349 | ONDA Life',
+  },
+  '/reviews/vs/luna-ring-vs-amazfit-helio-ring': {
+    title: 'Luna Ring vs Amazfit Helio: $300 vs $199 | ONDA Life',
+    description:
+      'Two subscription-free budget smart rings. Helio is cheaper and lighter; Luna Gen 2 has more sizes and a charging case for longer battery. Which to buy.',
+  },
+  '/reviews/vs/lightstim-for-wrinkles-vs-solawave-wand-4-in-1': {
+    title: 'LightStim vs Solawave: $249 vs $169 Compared | ONDA Life',
+    description:
+      'LED-only LightStim (FDA-cleared since 2009) vs Solawave\'s LED + microcurrent wand. Price, light, evidence and which one fits you.',
+  },
+  '/nl/articles/normal-hrv-by-age': {
+    title: 'Normale HRV per leeftijd: tabel man/vrouw | ONDA Life',
+    description:
+      'Tabel per leeftijd en geslacht (ca. 8 miljoen Fitbit-gebruikers): zoek je eigen waarde op en lees waarom je HRV vooral met je eigen gemiddelde telt.',
+  },
+  '/pl/articles/normal-hrv-by-age': {
+    title: 'Prawidłowe HRV według wieku: tabela K/M | ONDA Life',
+    description:
+      'Tabela HRV według wieku i płci (ok. 8 mln użytkowników Fitbit): sprawdź swój wynik i dowiedz się, dlaczego HRV najlepiej porównywać z własną normą.',
+  },
+  '/it/articles/normal-hrv-by-age': {
+    title: 'HRV normale per età: tabella uomini e donne | ONDA Life',
+    description:
+      'Tabella dell\'HRV per età e sesso (circa 8 milioni di utenti Fitbit): trova il tuo valore e scopri perché conta soprattutto il confronto con la tua media.',
+  },
+  '/es/articles/normal-hrv-by-age': {
+    title: 'HRV normal por edad: tabla hombres y mujeres | ONDA Life',
+    description:
+      'Tabla de HRV por edad y sexo (unos 8 millones de usuarios de Fitbit): busca tu valor y descubre por qué lo que más cuenta es compararlo con tu propia media.',
+  },
+  '/ja/articles/normal-hrv-by-age': {
+    title: '年齢別の正常なHRV：男女別の表 | ONDA Life',
+    description:
+      '約800万人のFitbitデータによる年齢・性別ごとのHRV表。自分の値を探し、HRVは他人より「自分のふだんの値」と比べることが大切な理由を解説。',
+  },
+  '/es/tools/alcohol': {
+    title: '¿Cuándo vuelves a 0,0? Calculadora de alcohol | ONDA Life',
+    description:
+      'Gratis, sin registro: añade bebidas, peso y sexo y mira tu alcoholemia estimada y las horas hasta volver a cero. Orientativa: nunca conduzcas tras beber.',
+  },
+  '/es/tools/resting-heart-rate': {
+    title: '¿Es normal tu pulso en reposo? Test por edad | ONDA Life',
+    description:
+      'Introduce edad, sexo y pulso y ve al instante tu percentil frente a la tabla CDC de tu edad. Gratis, sin registro, con valores para hombres y mujeres.',
+  },
+  '/it/tools/resting-heart-rate': {
+    title: 'Battito a riposo normale? Test per età e sesso | ONDA Life',
+    description:
+      'Inserisci età, sesso e battiti a riposo e scopri subito il tuo percentile rispetto alle tabelle CDC per la tua età. Gratis e senza registrazione.',
+  },
+  '/ja/tools/resting-heart-rate': {
+    title: '安静時心拍数は正常？年齢・性別でチェック | ONDA Life',
+    description:
+      '年齢・性別・安静時心拍数を入れるだけで、同年代の中での位置（パーセンタイル）がすぐわかる無料ツール。登録不要、CDCデータに基づく男女別の表つき。',
+  },
+  '/es/tools/hrv': {
+    title: '¿Tu HRV es normal? Compárala con tu edad | ONDA Life',
+    description:
+      'Introduce edad, sexo y tu RMSSD de la mañana y mira tu posición frente a unos 8 millones de usuarios de Fitbit de tu edad. Gratis y sin registro.',
+  },
+  '/nl/tools/hrv': {
+    title: 'Is je HRV normaal? Vergelijk met je leeftijd | ONDA Life',
+    description:
+      'Vul leeftijd, geslacht en je ochtend-RMSSD in en zie meteen waar je staat tussen ca. 8 miljoen Fitbit-gebruikers van jouw leeftijd. Gratis, zonder account.',
+  },
+  '/ru/tools/caffeine': {
+    title: 'До скольки можно пить кофе? Калькулятор | ONDA Life',
+    description:
+      'Укажите напиток и время отхода ко сну — калькулятор покажет, когда выпить последнюю чашку, чтобы кофеин не мешал сну. Бесплатно, без регистрации.',
+  },
+  '/de/tools/caffeine': {
+    title: 'Bis wann Kaffee trinken? Koffein-Rechner | ONDA Life',
+    description:
+      'Getränk und Schlafenszeit wählen – der Rechner zeigt, bis wann du Kaffee trinken kannst, damit Koffein deinen Schlaf nicht stört. Kostenlos, ohne Anmeldung.',
+  },
+  '/ru/articles/world-mental-health-day-2026-lived-experience': {
+    title: 'День психического здоровья 2026: тема и смысл | ONDA Life',
+    description:
+      'Тема Всемирного дня психического здоровья 10 октября 2026 — «Живой опыт услышан». Что она значит простыми словами и как лучше слушать других и себя.',
+  },
+  '/it/articles/resting-heart-rate-by-age': {
+    title: 'Battito a riposo normale per età: tabella | ONDA Life',
+    description:
+      'Normale negli adulti: 60–100 bpm. Tabella per età con le mediane CDC (circa 67–69 bpm negli uomini, 70–74 nelle donne) e come leggere il tuo valore.',
+  },
+  '/nl/articles/how-long-does-alcohol-stay-in-your-system': {
+    title: 'Hoe lang blijft alcohol in je lichaam? Per glas | ONDA Life',
+    description:
+      'Je lichaam breekt ongeveer één glas per uur af en niets versnelt dat. Zo schat je wanneer je weer op 0 zit, en wat alcohol met je slaap en herstel doet.',
+  },
+  '/nl/articles/how-much-alcohol-lowers-hrv': {
+    title: 'Hoeveel verlaagt één drankje je HRV? De data | ONDA Life',
+    description:
+      'Elk extra drankje verlaagt je HRV en verhoogt je hartslag \'s nachts verder. Wat alcohol je herstel kost, glas per glas, volgens wearable-data en studies.',
+  },
+  '/pl/articles/how-much-alcohol-lowers-hrv': {
+    title: 'Ile jeden drink obniża HRV? Dane | ONDA Life',
+    description:
+      'Każdy kolejny drink bardziej obniża HRV i podnosi nocne tętno. Ile alkohol kosztuje twoją regenerację, drink po drinku — dane z urządzeń i badań.',
+  },
+  '/fr/articles/how-much-alcohol-lowers-hrv': {
+    title: 'Alcool et HRV : combien de baisse par verre ? | ONDA Life',
+    description:
+      'Chaque verre en plus fait baisser la HRV et monter le pouls nocturne. Ce que l\'alcool coûte à votre récupération, verre par verre, d\'après les données.',
+  },
+  '/de/articles/eating-late-heart-rate-sleep': {
+    title: 'Spät essen: Was passiert mit Puls und Schlaf? | ONDA Life',
+    description:
+      'Ein schweres spätes Essen kann den Schlaf stören und das Morgen-Cortisol erhöhen; der Effekt auf den Puls ist klein. Was Studien zeigen und wie du es testest.',
+  },
+  '/pl/articles/nicotine-vaping-hrv-heart-rate': {
+    title: 'Nikotyna i e-papieros: tętno i HRV | ONDA Life',
+    description:
+      'Nikotyna podnosi tętno i ciśnienie i obniża HRV — także z e-papierosa. Dlaczego mimo to wydaje się relaksować i jak rzucić.',
+  },
+  '/ru/articles/alternate-nostril-breathing': {
+    title: 'Попеременное дыхание ноздрями: как делать | ONDA Life',
+    description:
+      'Нади Шодхана пошагово: как дышать попеременно через ноздри, в каком темпе, почему важен медленный ритм и что говорят исследования о давлении и стрессе.',
+  },
+  '/ru/science/questions/why-is-my-hrv-low': {
+    title: 'Почему у меня низкий HRV и что делать | ONDA Life',
+  },
+  '/de/articles/cardiac-coherence-365-method': {
+    title: 'Herzkohärenz 365: 3× täglich 5 Minuten | ONDA Life',
+  },
+  '/it/articles/co2-tolerance-expanding-oxygen-limit': {
+    title: 'Tolleranza alla CO₂ e test BOLT: come farlo | ONDA Life',
+  },
 }

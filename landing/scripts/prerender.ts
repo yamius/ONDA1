@@ -32,6 +32,7 @@ import i18n, {
 } from '../src/i18n'
 import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs, roundupLocalizedLangs, LOCALIZED_ROUNDUP_ROUTE_SET, glossaryLocalizedLangs, REVIEW_PILOT_LANGS, GLOSSARY_INDEX_LANGS, connectDeviceLangs } from './prerender-routes'
 import { CONNECT_DEVICES as CONNECT_DEVICE_LIST } from '../src/data/connect-devices'
+import { SERP_OVERRIDES } from '../src/data/serp-overrides'
 import { getMetaForRoute, injectMetaIntoHtml, truncateForBudget, clampTitleToIdeal, TITLE_MAX, DESC_MAX } from './meta-inject'
 import { getReviewBySlug, getComparisonBySlug } from '../src/data/reviews'
 import { ARTICLE_TOPIC_HUBS } from '../src/data/article-topics'
@@ -1159,6 +1160,19 @@ for (const route of routes) {
       const tags = rLangs.map((l) => `<link rel="alternate" hreflang="${l}" href="${rUrl(l)}">`)
       tags.push(`<link rel="alternate" hreflang="x-default" href="${rUrl('en')}">`)
       out = out.replace('</head>', `  ${tags.join('\n  ')}\n</head>`)
+    }
+
+    // Hand-written SERP title/description for a /<lang>/ route (serp-overrides.ts). Localized branches
+    // above write their own strings from the locale files, so a /<lang>/ key is applied here, last.
+    const serpO = route !== stripLangPrefix(route) ? SERP_OVERRIDES[route] : undefined
+    if (serpO?.title) {
+      const t = escAttr(serpO.title)
+      out = out.replace(/<title>[^<]*<\/title>/i, `<title>${t}</title>`)
+      out = out.replace(/<meta\s+(name="title"|property="og:title"|property="twitter:title")\s+content="[^"]*">/gi, (_m, k: string) => `<meta ${k} content="${t}">`)
+    }
+    if (serpO?.description) {
+      const d = escAttr(serpO.description)
+      out = out.replace(/<meta\s+(name="description"|property="og:description"|property="twitter:description")\s+content="[^"]*">/gi, (_m, k: string) => `<meta ${k} content="${d}">`)
     }
 
     // Final-pass title + description truncate. Catches localized branches
