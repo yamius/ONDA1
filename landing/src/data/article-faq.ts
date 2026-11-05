@@ -228,6 +228,33 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
         "For occasional drinking, usually one to two days as the alcohol clears. For heavy or long-term use, autonomic recovery can take weeks of reduced or stopped drinking.",
     },
   ],
+  "alpha-brain-waves": [
+    {
+      question: "What are alpha brain waves?",
+      answer:
+        "Alpha waves are rhythmic brain activity at about 8–12 Hz, recorded by EEG. They are strongest over the back of the head when you are awake, relaxed and have your eyes closed, and they drop when you open your eyes or concentrate.",
+    },
+    {
+      question: "Are alpha waves good for you?",
+      answer:
+        "Not in a simple more-is-better way. Alpha mainly reflects the brain inhibiting regions it does not need for the current task, so whether higher alpha is useful depends on where it is measured and what you are doing.",
+    },
+    {
+      question: "Does meditation increase alpha waves?",
+      answer:
+        "Often. A 2015 systematic review of 56 mindfulness EEG studies found increased alpha and theta power to be the most common finding, but the studies were small and varied, so a high alpha reading does not prove you meditated well.",
+    },
+    {
+      question: "Can Muse or other headsets measure alpha waves?",
+      answer:
+        "Roughly. Consumer EEG headsets record real brain signals through a few dry electrodes, but they have few channels, often sit far from where alpha is strongest, are disturbed by blinks and jaw tension, and report proprietary scores rather than a validated alpha measure.",
+    },
+    {
+      question: "Can you train your alpha waves?",
+      answer:
+        "Alpha neurofeedback can teach people to change their alpha during a session. Whether that brings lasting benefits for stress, focus or sleep is uncertain, and studies use many different protocols.",
+    },
+  ],
   "apple-watch-recovery-hrv-vs-overall-hrv": [
     {
       question: "Why does my Apple Watch show two HRV numbers now?",

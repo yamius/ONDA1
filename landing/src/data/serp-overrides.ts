@@ -303,4 +303,9 @@ export const SERP_OVERRIDES: Record<string, { title?: string; description?: stri
   '/it/articles/co2-tolerance-expanding-oxygen-limit': {
     title: 'Tolleranza alla CO₂ e test BOLT: come farlo | ONDA Life',
   },
+  '/tools/sleep-cycle': {
+    title: 'Sleep Cycle Calculator: Best Time to Wake Up | ONDA Life',
+    description:
+      'Enter when you go to bed or need to wake up and get times that land at the end of a 90-minute sleep cycle, so you wake up less groggy. Free, no sign-up.',
+  },
 }

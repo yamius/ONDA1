@@ -21,6 +21,13 @@ export interface StudyCitation {
 }
 
 export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
+  "alpha-brain-waves": [
+    {"title": "EEG alpha and theta oscillations reflect cognitive and memory performance: a review and analysis", "authors": "Klimesch W", "year": 1999, "journal": "Brain Research Reviews", "doi": "10.1016/s0165-0173(98)00056-3", "pmid": "10209231", "url": "https://pubmed.ncbi.nlm.nih.gov/10209231/"},
+    {"title": "Shaping functional architecture by oscillatory alpha activity: gating by inhibition", "authors": "Jensen O, Mazaheri A", "year": 2010, "journal": "Frontiers in Human Neuroscience", "doi": "10.3389/fnhum.2010.00186", "pmid": "21119777", "url": "https://pubmed.ncbi.nlm.nih.gov/21119777/"},
+    {"title": "Interpreting EEG alpha activity", "authors": "Bazanova OM, Vernon D", "year": 2014, "journal": "Neuroscience and Biobehavioral Reviews", "doi": "10.1016/j.neubiorev.2013.05.007", "pmid": "23701947", "url": "https://pubmed.ncbi.nlm.nih.gov/23701947/"},
+    {"title": "A systematic review of the neurophysiology of mindfulness on EEG oscillations", "authors": "Lomas T, Ivtzan I, Fu CH", "year": 2015, "journal": "Neuroscience and Biobehavioral Reviews", "doi": "10.1016/j.neubiorev.2015.09.018", "pmid": "26441373", "url": "https://pubmed.ncbi.nlm.nih.gov/26441373/"},
+    {"title": "Choosing MUSE: Validation of a Low-Cost, Portable EEG System for ERP Research", "authors": "Krigolson OE, Williams CC, Norton A, Hassall CD, Colino FL", "year": 2017, "journal": "Frontiers in Neuroscience", "doi": "10.3389/fnins.2017.00109", "pmid": "28344546", "url": "https://pubmed.ncbi.nlm.nih.gov/28344546/"},
+  ],
   "adrenal-governor-thermal-runaway": [
     {
       "title": "Adrenal fatigue does not exist: a systematic review",

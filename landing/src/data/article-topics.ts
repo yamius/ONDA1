@@ -274,6 +274,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "name-it-to-tame-it-affect-labeling": "stress-vagus",
   "nervous-system-ping-latency": "stress-vagus",
   "neural-bridge-alpha-flow-gateway": "brain-focus-aging",
+  "alpha-brain-waves": "brain-focus-aging",
   "neural-entrainment-meditation-2": "meditation",
   "neural-hydraulics-csf-flow": "sleep-body-clock",
   "neural-optimizer-estrogen": "heart-fitness-metabolism",
