@@ -624,6 +624,7 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'myndlift' },
   { collection: 'reviews', slug: 'sunlighten-mpulse' },
   { collection: 'reviews', slug: 'theragun-elite' },
+  { collection: 'reviews', slug: 'opove-m3-pro-2' },
   // WAVE_D_NEXT
   ],
 ]
