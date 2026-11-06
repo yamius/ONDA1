@@ -615,6 +615,7 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'ringconn-gen-3' },
   { collection: 'reviews', slug: 'tempur-breeze-pro' },
   { collection: 'reviews', slug: 'slumber-cloud-dryline' },
+  { collection: 'h2h', slug: 'hooga-hg500-vs-joovv-solo-3' },
   // WAVE_D_NEXT
   ],
 ]
