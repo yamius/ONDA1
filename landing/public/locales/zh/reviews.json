@@ -4752,6 +4752,49 @@
           "a": "Tempur-Breeze Pro 没有主动温控，因此无法调节温度，而且被动降温会随夜间推移减弱。它没有追踪功能，价格高端却没有智能系统功能。"
         }
       ]
+    },
+    "slumber-cloud-dryline": {
+      "verdict": "是降温床单，而非主动温控——在平价档位中有明显的被动散热效果。",
+      "summary": "Slumber Cloud DryLine 床单在面料中加入了 Outlast 相变材料（据厂商称最初为 NASA 开发），可在夜间吸收并散发身体热量。它不是主动温控，但是一款可信的降温床单。平价档位——作为不想投入主动温控设备的用户的入门替代方案收录。",
+      "description": "ONDA 评测 Slumber Cloud DryLine 降温床单——作为主动温控系统平价替代品销售的 Outlast 被动降温床单。",
+      "bestFor": "最适合作为无需主动设备、让睡眠更凉爽的最便宜可信入门之选。",
+      "testNote": "基于证据的评估——依据 Slumber Cloud 产品资料和 2026 年独立降温床单评测打分。ONDA 未亲自上手测试。作为被动平价替代方案收录。",
+      "productType": "被动降温床品（Outlast 相变材料）",
+      "pros": [
+        "最便宜的可信降温选择——每套 $150-250",
+        "无需安装、主机或用水",
+        "Outlast 相变材料（据厂商称最初为 NASA 开发）",
+        "不可能有订阅"
+      ],
+      "cons": [
+        "只有被动降温——无法主动调节",
+        "效果在完整睡眠周期中逐渐减弱",
+        "没有追踪功能",
+        "不能替代主动温控设备"
+      ],
+      "scoreNotes": {
+        "climate-range": "只有被动降温——有明显散热效果，但没有主动制冷。前半夜有效；在完整睡眠周期中效果会减弱。",
+        "build": "Outlast 相变材料（据厂商称最初为 NASA 开发）。老牌品牌，面料质量可靠。",
+        "app-tracking": "这是床单——没有 App，没有追踪。",
+        "form-factor": "只是床单。无需主机、用水或安装。是实现“更凉爽睡眠”最简单的入门方式。",
+        "subscription": "不可能有订阅——这是被动系统。",
+        "value": "每套 $150-250。本榜单中最便宜的可信降温选择。"
+      },
+      "content": "## 领先之处\n\nSlumber Cloud DryLine 床单是让睡眠更凉爽最便宜的正规方式。Outlast 相变材料（据厂商称最初为 NASA 开发）吸收身体热量并在夜间散发——无需任何主动设备的被动降温。每套 $150-250，是该品类中门槛最低的“凉爽睡眠”入门选择。\n\n## Slumber Cloud DryLine 降温床单有哪些缺点？\n\n它不是主动温控。被动降温效果集中在前半夜，随着时间推移可能减弱。无法调节，没有追踪。作为主动温控设备的替代品，它无法与之竞争。\n\n## 谁应该买 Slumber Cloud DryLine 降温床单？\n\n如果你想以最便宜、可信的方式让睡眠更凉爽，而不想投入 BedJet 这类 $600 以上的主动系统，就选 Slumber Cloud DryLine。想要真正的温度控制，Eight Sleep、ChiliPad 或 BedJet 才是合适的选择。\n\n---\n\n## 延伸阅读\n\n为什么床温调节会影响睡眠深度和恢复，背后的生物学原理。\n\n- [神经流体力学：脑脊液流动](/articles/neural-hydraulics-csf-flow)——睡眠中的脑脊液循环，以及凉爽能起到什么作用\n- [昼夜节律重置：掌控光线](/articles/circadian-reset-mastering-light)——为什么床温调节要与光照时间配合才能睡得深\n- [相位锁定声刺激与睡眠](/articles/phase-locked-acoustic-sleep)——关于声音与入睡的背景知识\n",
+      "faq": [
+        {
+          "q": "Slumber Cloud DryLine 降温床单真的有效吗？",
+          "a": "DryLine 床单借助 Outlast 相变材料（据厂商称最初为 NASA 开发）能带来明显的被动散热，但它们是降温床单，不是主动温控。效果集中在前半夜，随着时间推移可能减弱。ONDA 给它打 {{score:slumber-cloud-dryline}}/10，温控范围得分 {{score:slumber-cloud-dryline.climate-range}}/10。"
+        },
+        {
+          "q": "Slumber Cloud DryLine 床单多少钱，需要订阅吗？",
+          "a": "一套 DryLine 床单售价 $150 到 $250，queen 尺寸约 $200；由于系统完全被动，不可能有订阅。这使它成为 ONDA 评测过最便宜的可信降温选择，性价比得分 {{score:slumber-cloud-dryline.value}}/10，订阅项得分 {{score:slumber-cloud-dryline.subscription}}/10。"
+        },
+        {
+          "q": "Slumber Cloud DryLine 床单最适合谁？",
+          "a": "DryLine 床单最适合作为无需主动设备、让睡眠更凉爽的最便宜可信入门之选，无需主机、用水或安装。它适合还不准备投入 BedJet 这类 $600 以上主动系统的人；如果需要真正的温度控制，ONDA 推荐 Eight Sleep、ChiliPad 或 BedJet。"
+        }
+      ]
     }
   },
   "comparisons": {

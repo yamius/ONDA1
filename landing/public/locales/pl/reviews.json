@@ -4777,6 +4777,49 @@
           "a": "Tempur-Breeze Pro nie ma aktywnej kontroli klimatu, więc nie da się ustawić temperatury, a jego pasywne chłodzenie słabnie w ciągu nocy. Nie ma śledzenia, a cena jest wysoka bez funkcji inteligentnego systemu."
         }
       ]
+    },
+    "slumber-cloud-dryline": {
+      "verdict": "Chłodząca pościel, a nie aktywna kontrola klimatu — odczuwalne pasywne odprowadzanie ciepła w segmencie budżetowym.",
+      "summary": "W prześcieradłach Slumber Cloud DryLine w tkaninę wpleciono materiały zmiennofazowe Outlast (według producenta pierwotnie opracowane dla NASA), które przez całą noc pochłaniają i odprowadzają ciepło ciała. To nie aktywna kontrola klimatu, ale wiarygodna opcja chłodzącej pościeli. Segment budżetowy — uwzględniona jako alternatywa na start dla osób, które nie chcą inwestować w aktywny sprzęt klimatyzacyjny.",
+      "description": "Recenzja ONDA chłodzącej pościeli Slumber Cloud DryLine — prześcieradeł z pasywnym chłodzeniem Outlast jako budżetowej alternatywy dla aktywnych systemów klimatu.",
+      "bestFor": "Najlepsza jako najtańszy wiarygodny sposób na chłodniejszy sen bez aktywnego sprzętu.",
+      "testNote": "Ocena oparta na dowodach — na podstawie dokumentacji Slumber Cloud i niezależnych recenzji chłodzącej pościeli z 2026 roku. ONDA nie testowała jej osobiście. Uwzględniona jako pasywna budżetowa alternatywa.",
+      "productType": "Pościel z pasywnym chłodzeniem (materiał zmiennofazowy Outlast)",
+      "pros": [
+        "Najtańsza wiarygodna opcja chłodzenia — $150-250 za komplet",
+        "Bez montażu, jednostki sterującej i zajmowania się wodą",
+        "Materiał zmiennofazowy Outlast (według producenta pierwotnie opracowany dla NASA)",
+        "Subskrypcja w ogóle niemożliwa"
+      ],
+      "cons": [
+        "Tylko pasywne chłodzenie — bez aktywnej regulacji",
+        "Efekt słabnie w ciągu pełnego cyklu snu",
+        "Brak śledzenia",
+        "Nie zastępuje aktywnego sprzętu klimatyzacyjnego"
+      ],
+      "scoreNotes": {
+        "climate-range": "Tylko pasywnie — odczuwalne odprowadzanie ciepła, ale bez aktywnego chłodzenia. Działa na początku nocy; w ciągu pełnego cyklu snu traci efekt.",
+        "build": "Materiały zmiennofazowe Outlast (według producenta pierwotnie opracowane dla NASA). Marka z długą historią i solidną jakością tkaniny.",
+        "app-tracking": "To pościel — bez aplikacji i śledzenia.",
+        "form-factor": "Same prześcieradła. Bez jednostki sterującej, wody i montażu. Najprostszy możliwy sposób na „chłodniejszy sen”.",
+        "subscription": "Subskrypcja niemożliwa — system pasywny.",
+        "value": "$150-250 za komplet. Najtańsza wiarygodna opcja chłodzenia na tej liście."
+      },
+      "content": "## W czym jest na czele\n\nPrześcieradła Slumber Cloud DryLine to najtańszy uczciwy sposób, by spać chłodniej. Materiały zmiennofazowe Outlast (według producenta pierwotnie opracowane dla NASA) pochłaniają ciepło ciała i odprowadzają je przez całą noc — pasywne chłodzenie bez żadnego aktywnego sprzętu. Przy cenie $150-250 za komplet to najmniej zobowiązujący start w „chłodniejszy sen” w tej kategorii.\n\n## Jakie są wady chłodzącej pościeli Slumber Cloud DryLine?\n\nTo nie aktywny klimat. Efekt pasywnego chłodzenia koncentruje się na początku nocy i może słabnąć z upływem godzin. Brak regulacji. Brak śledzenia. Jako zamiennik aktywnego sprzętu klimatyzacyjnego nie konkuruje.\n\n## Kto powinien kupić chłodzącą pościel Slumber Cloud DryLine?\n\nWybierz Slumber Cloud DryLine, jeśli chcesz najtańszego wiarygodnego kroku w stronę chłodniejszego snu bez inwestowania w aktywny system za ponad $600, taki jak BedJet. Do prawdziwej kontroli temperatury właściwym wyborem są Eight Sleep, ChiliPad lub BedJet.\n\n---\n\n## Do poczytania\n\nBiologia tego, dlaczego regulacja temperatury łóżka wpływa na głębokość snu i regenerację.\n\n- [Hydraulika nerwowa: przepływ płynu mózgowo-rdzeniowego](/articles/neural-hydraulics-csf-flow) — krążenie płynu mózgowo-rdzeniowego podczas snu i w czym pomaga chłód\n- [Reset rytmu dobowego: panowanie nad światłem](/articles/circadian-reset-mastering-light) — dlaczego temperatura łóżka idzie w parze z porą ekspozycji na światło dla głębokiego snu\n- [Akustyczna stymulacja snu zsynchronizowana z fazą](/articles/phase-locked-acoustic-sleep) — o dźwięku i zasypianiu\n",
+      "faq": [
+        {
+          "q": "Czy chłodząca pościel Slumber Cloud DryLine naprawdę działa?",
+          "a": "Prześcieradła DryLine odczuwalnie odprowadzają ciepło pasywnie dzięki materiałom zmiennofazowym Outlast (według producenta pierwotnie opracowanym dla NASA), ale to chłodząca pościel, a nie aktywna kontrola klimatu. Efekt koncentruje się na początku nocy i może słabnąć z upływem godzin. ONDA ocenia ją na {{score:slumber-cloud-dryline}}/10, zakres klimatu — {{score:slumber-cloud-dryline.climate-range}}/10."
+        },
+        {
+          "q": "Ile kosztuje pościel Slumber Cloud DryLine i czy jest subskrypcja?",
+          "a": "Komplet DryLine kosztuje od $150 do $250, ok. $200 w rozmiarze queen, a subskrypcja jest niemożliwa, bo system jest całkowicie pasywny. To najtańsza wiarygodna opcja chłodzenia, jaką oceniła ONDA: {{score:slumber-cloud-dryline.value}}/10 za stosunek jakości do ceny i {{score:slumber-cloud-dryline.subscription}}/10 za subskrypcję."
+        },
+        {
+          "q": "Dla kogo najlepsza jest pościel Slumber Cloud DryLine?",
+          "a": "Prześcieradła DryLine najlepiej sprawdzają się jako najtańszy wiarygodny sposób na chłodniejszy sen bez aktywnego sprzętu, bez jednostki sterującej, wody i montażu. Pasują osobom, które nie są gotowe inwestować w aktywny system za ponad $600, taki jak BedJet; do prawdziwej kontroli temperatury ONDA poleca Eight Sleep, ChiliPad lub BedJet."
+        }
+      ]
     }
   },
   "comparisons": {

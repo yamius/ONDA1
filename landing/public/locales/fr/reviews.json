@@ -4777,6 +4777,49 @@
           "a": "Le Tempur-Breeze Pro n’a pas de régulation active : la température ne se règle pas, et son refroidissement passif diminue au fil de la nuit. Il n’offre aucun suivi et coûte le prix d’un matelas haut de gamme sans fonctions de système intelligent."
         }
       ]
+    },
+    "slumber-cloud-dryline": {
+      "verdict": "Des draps rafraîchissants, pas une régulation active : une dissipation passive de la chaleur appréciable en entrée de gamme.",
+      "summary": "Les draps Slumber Cloud DryLine intègrent dans le tissu des matériaux à changement de phase Outlast (développés à l’origine pour la NASA, selon le fabricant) qui absorbent et dissipent la chaleur corporelle pendant la nuit. Pas de régulation active, mais une option crédible de draps rafraîchissants. Entrée de gamme : inclus comme alternative d’entrée pour ceux qui ne veulent pas investir dans un matériel de régulation active.",
+      "description": "Test ONDA des draps rafraîchissants Slumber Cloud DryLine : des draps à refroidissement passif Outlast vendus comme alternative économique aux systèmes de régulation active.",
+      "bestFor": "Idéals comme l’entrée crédible la moins chère vers un sommeil plus frais sans matériel actif.",
+      "testNote": "Évaluation fondée sur les preuves : notés à partir de la documentation de Slumber Cloud et de tests indépendants de draps rafraîchissants de 2026. Non testés en main propre par ONDA. Inclus comme alternative passive économique.",
+      "productType": "Draps à refroidissement passif (matériau à changement de phase Outlast)",
+      "pros": [
+        "L’option rafraîchissante crédible la moins chère : $150-250 la parure",
+        "Ni installation, ni boîtier, ni gestion de l’eau",
+        "Matériau à changement de phase Outlast (développé à l’origine pour la NASA, selon le fabricant)",
+        "Aucun abonnement possible"
+      ],
+      "cons": [
+        "Refroidissement passif uniquement : pas de réglage actif",
+        "L’effet diminue sur un cycle de sommeil complet",
+        "Aucun suivi",
+        "Ne remplace pas un matériel de régulation active"
+      ],
+      "scoreNotes": {
+        "climate-range": "Uniquement passif : dissipation de chaleur appréciable mais pas de refroidissement actif. Efficace en début de nuit ; perd de son effet sur un cycle de sommeil complet.",
+        "build": "Matériaux à changement de phase Outlast (développés à l’origine pour la NASA, selon le fabricant). Marque établie avec une bonne qualité de tissu.",
+        "app-tracking": "Ce sont des draps : ni application, ni suivi.",
+        "form-factor": "Juste des draps. Ni boîtier, ni eau, ni installation. L’entrée la plus simple possible vers un « sommeil plus frais ».",
+        "subscription": "Aucun abonnement possible : système passif.",
+        "value": "$150-250 la parure. L’option rafraîchissante crédible la moins chère de cette liste."
+      },
+      "content": "## Là où ils sont en avance\n\nLes draps Slumber Cloud DryLine sont le moyen sérieux le moins cher de dormir plus au frais. Les matériaux à changement de phase Outlast (développés à l’origine pour la NASA, selon le fabricant) absorbent la chaleur corporelle et la dissipent pendant la nuit : un refroidissement passif sans aucun matériel actif. À $150-250 la parure, c’est l’entrée la moins engageante vers un « sommeil plus frais » dans cette catégorie.\n\n## Quels sont les inconvénients des draps rafraîchissants Slumber Cloud DryLine ?\n\nCe n’est pas une régulation active. L’effet rafraîchissant passif se concentre en début de nuit et peut s’estomper au fil des heures. Pas de réglage. Pas de suivi. Comme substitut à un matériel de régulation active, ils ne rivalisent pas.\n\n## Qui devrait acheter les draps rafraîchissants Slumber Cloud DryLine ?\n\nChoisissez Slumber Cloud DryLine si vous voulez le pas crédible le moins cher vers un sommeil plus frais, sans vous engager dans un système actif à plus de $600 comme BedJet. Pour une vraie régulation de la température, Eight Sleep, ChiliPad ou BedJet sont le bon choix.\n\n---\n\n## Pour aller plus loin\n\nLa biologie qui explique pourquoi la régulation de la température du lit influence la profondeur du sommeil et la récupération.\n\n- [Hydraulique neurale : le flux du LCR](/articles/neural-hydraulics-csf-flow) — la circulation du liquide cérébrospinal pendant le sommeil et ce que la fraîcheur facilite\n- [Réinitialisation circadienne : maîtriser la lumière](/articles/circadian-reset-mastering-light) — pourquoi la température du lit va de pair avec le timing de la lumière pour un sommeil profond\n- [Stimulation acoustique du sommeil calée sur la phase](/articles/phase-locked-acoustic-sleep) — contexte sur le son et l’endormissement\n",
+      "faq": [
+        {
+          "q": "Les draps rafraîchissants Slumber Cloud DryLine fonctionnent-ils vraiment ?",
+          "a": "Les draps DryLine offrent une dissipation passive de la chaleur appréciable grâce aux matériaux à changement de phase Outlast (développés à l’origine pour la NASA, selon le fabricant), mais ce sont des draps rafraîchissants, pas une régulation active. L’effet se concentre en début de nuit et peut s’estomper au fil des heures. ONDA leur donne {{score:slumber-cloud-dryline}}/10, avec {{score:slumber-cloud-dryline.climate-range}}/10 pour la plage climatique."
+        },
+        {
+          "q": "Combien coûtent les draps Slumber Cloud DryLine et y a-t-il un abonnement ?",
+          "a": "Une parure DryLine coûte entre $150 et $250, environ $200 en taille queen, et aucun abonnement n’est possible puisque le système est entièrement passif. C’est l’option rafraîchissante crédible la moins chère qu’ONDA ait évaluée, avec {{score:slumber-cloud-dryline.value}}/10 pour le rapport qualité-prix et {{score:slumber-cloud-dryline.subscription}}/10 pour l’abonnement."
+        },
+        {
+          "q": "À qui conviennent le mieux les draps Slumber Cloud DryLine ?",
+          "a": "Les draps DryLine conviennent le mieux comme entrée crédible la moins chère vers un sommeil plus frais sans matériel actif, sans boîtier, eau ni installation. Ils s’adressent à ceux qui ne sont pas prêts à investir dans un système actif à plus de $600 comme BedJet ; pour une vraie régulation de la température, ONDA recommande Eight Sleep, ChiliPad ou BedJet."
+        }
+      ]
     }
   },
   "comparisons": {

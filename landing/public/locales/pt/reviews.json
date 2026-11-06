@@ -4777,6 +4777,49 @@
           "a": "O Tempur-Breeze Pro não tem climatização ativa, então a temperatura não pode ser ajustada, e seu resfriamento passivo diminui ao longo da noite. Ele não tem monitoramento e tem preço premium sem recursos de sistema inteligente."
         }
       ]
+    },
+    "slumber-cloud-dryline": {
+      "verdict": "Lençóis refrescantes, não climatização ativa — uma dissipação passiva de calor perceptível na faixa econômica.",
+      "summary": "Os lençóis Slumber Cloud DryLine têm materiais de mudança de fase Outlast (desenvolvidos originalmente para a NASA, segundo o fabricante) incorporados ao tecido para absorver e dissipar o calor do corpo durante a noite. Não é climatização ativa, mas uma opção confiável de lençóis refrescantes. Faixa econômica — incluídos como alternativa de entrada para quem não quer se comprometer com hardware de climatização ativa.",
+      "description": "Análise do ONDA dos lençóis refrescantes Slumber Cloud DryLine — lençóis de resfriamento passivo Outlast vendidos como alternativa econômica aos sistemas de climatização ativa.",
+      "bestFor": "Ideais como a entrada confiável mais barata para um sono mais fresco sem hardware ativo.",
+      "testNote": "Avaliação baseada em evidências — pontuados com base na documentação da Slumber Cloud e em análises independentes de lençóis refrescantes de 2026. Não testados pessoalmente pelo ONDA. Incluídos como alternativa passiva econômica.",
+      "productType": "Lençóis de resfriamento passivo (material de mudança de fase Outlast)",
+      "pros": [
+        "A opção refrescante confiável mais barata — $150-250 por jogo",
+        "Sem instalação, sem unidade de controle, sem cuidar de água",
+        "Material de mudança de fase Outlast (desenvolvido originalmente para a NASA, segundo o fabricante)",
+        "Assinatura impossível"
+      ],
+      "cons": [
+        "Só resfriamento passivo — sem controle ativo",
+        "O efeito diminui ao longo do ciclo de sono completo",
+        "Sem monitoramento",
+        "Não substitui o hardware de climatização ativa"
+      ],
+      "scoreNotes": {
+        "climate-range": "Só passivo — dissipação de calor perceptível, mas sem resfriamento ativo. Eficaz no início da noite; perde efeito ao longo do ciclo de sono completo.",
+        "build": "Materiais de mudança de fase Outlast (desenvolvidos originalmente para a NASA, segundo o fabricante). Marca tradicional com boa qualidade de tecido.",
+        "app-tracking": "São lençóis — sem app, sem monitoramento.",
+        "form-factor": "Só lençóis. Sem unidade de controle, sem água, sem instalação. A entrada mais fácil possível para um «sono mais fresco».",
+        "subscription": "Assinatura impossível — sistema passivo.",
+        "value": "$150-250 por jogo. A opção refrescante confiável mais barata desta lista."
+      },
+      "content": "## Onde eles se destacam\n\nOs lençóis Slumber Cloud DryLine são o jeito legítimo mais barato de dormir mais fresco. Materiais de mudança de fase Outlast (desenvolvidos originalmente para a NASA, segundo o fabricante) absorvem o calor do corpo e o dissipam durante a noite — resfriamento passivo sem nenhum hardware ativo. A $150-250 por jogo, é a entrada de menor compromisso para um «sono mais fresco» nesta categoria.\n\n## Quais são as desvantagens dos lençóis refrescantes Slumber Cloud DryLine?\n\nNão são climatização ativa. O efeito refrescante passivo se concentra no início da noite e pode diminuir com as horas. Sem controle. Sem monitoramento. Como substituto do hardware de climatização ativa, não competem.\n\n## Quem deve comprar os lençóis refrescantes Slumber Cloud DryLine?\n\nEscolha Slumber Cloud DryLine se você quer o passo confiável mais barato rumo a um sono mais fresco sem se comprometer com um sistema ativo de mais de $600 como o BedJet. Para controle real de temperatura, Eight Sleep, ChiliPad ou BedJet são a escolha certa.\n\n---\n\n## Leitura complementar\n\nA biologia por trás de por que regular a temperatura da cama influencia a profundidade do sono e a recuperação.\n\n- [Hidráulica neural: o fluxo do líquor](/articles/neural-hydraulics-csf-flow) — a circulação do líquido cefalorraquidiano durante o sono e o que o frescor favorece\n- [Reset circadiano: dominar a luz](/articles/circadian-reset-mastering-light) — por que a temperatura da cama anda junto com o horário da luz para um sono profundo\n- [Estimulação acústica do sono sincronizada com a fase](/articles/phase-locked-acoustic-sleep) — contexto sobre som e início do sono\n",
+      "faq": [
+        {
+          "q": "Os lençóis refrescantes Slumber Cloud DryLine funcionam mesmo?",
+          "a": "Os lençóis DryLine oferecem uma dissipação passiva de calor perceptível graças aos materiais de mudança de fase Outlast (desenvolvidos originalmente para a NASA, segundo o fabricante), mas são lençóis refrescantes, não climatização ativa. O efeito se concentra no início da noite e pode diminuir com as horas. O ONDA dá a eles {{score:slumber-cloud-dryline}}/10, com {{score:slumber-cloud-dryline.climate-range}}/10 na faixa de climatização."
+        },
+        {
+          "q": "Quanto custam os lençóis Slumber Cloud DryLine e há assinatura?",
+          "a": "Um jogo DryLine custa de $150 a $250, cerca de $200 no tamanho queen, e não há assinatura possível porque o sistema é totalmente passivo. Isso faz deles a opção refrescante confiável mais barata que o ONDA analisou, com {{score:slumber-cloud-dryline.value}}/10 em custo-benefício e {{score:slumber-cloud-dryline.subscription}}/10 em assinatura."
+        },
+        {
+          "q": "Para quem os lençóis Slumber Cloud DryLine são mais indicados?",
+          "a": "Os lençóis DryLine são ideais como a entrada confiável mais barata para um sono mais fresco sem hardware ativo, sem unidade de controle, água ou instalação. Servem para quem ainda não quer se comprometer com um sistema ativo de mais de $600 como o BedJet; para controle real de temperatura, o ONDA indica Eight Sleep, ChiliPad ou BedJet."
+        }
+      ]
     }
   },
   "comparisons": {

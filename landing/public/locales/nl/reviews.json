@@ -4777,6 +4777,49 @@
           "a": "De Tempur-Breeze Pro heeft geen actieve klimaatregeling, dus de temperatuur is niet in te stellen, en de passieve koeling neemt in de loop van de nacht af. Hij heeft geen tracking en een premiumprijs zonder slimme functies."
         }
       ]
+    },
+    "slumber-cloud-dryline": {
+      "verdict": "Koelende lakens, geen actieve klimaatregeling — merkbare passieve warmteafvoer in het budgetsegment.",
+      "summary": "In de lakens van Slumber Cloud DryLine zijn Outlast-faseovergangsmaterialen (volgens de fabrikant oorspronkelijk voor NASA ontwikkeld) in de stof verwerkt die lichaamswarmte gedurende de nacht opnemen en afvoeren. Geen actieve klimaatregeling, maar een geloofwaardige optie voor koelende lakens. Budgetsegment — opgenomen als instapalternatief voor wie zich niet wil vastleggen op actieve klimaatapparatuur.",
+      "description": "ONDA-review van de koelende lakens Slumber Cloud DryLine — passief koelende Outlast-lakens als budgetalternatief voor actieve klimaatsystemen.",
+      "bestFor": "Ideaal als goedkoopste geloofwaardige instap in koeler slapen zonder actieve apparatuur.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van Slumber Cloud en onafhankelijke reviews van koelende lakens uit 2026. Niet zelf getest door ONDA. Opgenomen als passief budgetalternatief.",
+      "productType": "Passief koelende lakens (Outlast-faseovergangsmateriaal)",
+      "pros": [
+        "Goedkoopste geloofwaardige koeloptie — $150-250 per set",
+        "Geen installatie, geen regelunit, geen water",
+        "Outlast-faseovergangsmateriaal (volgens de fabrikant oorspronkelijk voor NASA ontwikkeld)",
+        "Een abonnement is niet eens mogelijk"
+      ],
+      "cons": [
+        "Alleen passieve koeling — geen actieve regeling",
+        "Effect neemt af over de hele slaapcyclus",
+        "Geen tracking",
+        "Geen vervanging voor actieve klimaatapparatuur"
+      ],
+      "scoreNotes": {
+        "climate-range": "Alleen passief — merkbare warmteafvoer, maar geen actieve koeling. Werkzaam in het begin van de nacht; verliest effect over de hele slaapcyclus.",
+        "build": "Outlast-faseovergangsmaterialen (volgens de fabrikant oorspronkelijk voor NASA ontwikkeld). Gevestigd merk met degelijke stofkwaliteit.",
+        "app-tracking": "Lakens — geen app, geen tracking.",
+        "form-factor": "Alleen lakens. Geen regelunit, geen water, geen installatie. De makkelijkst denkbare instap in ‘koeler slapen’.",
+        "subscription": "Geen abonnement mogelijk — passief systeem.",
+        "value": "$150-250 per set. De goedkoopste geloofwaardige koeloptie in deze lijst."
+      },
+      "content": "## Waar ze voorlopen\n\nDe lakens van Slumber Cloud DryLine zijn de goedkoopste serieuze manier om koeler te slapen. Outlast-faseovergangsmaterialen (volgens de fabrikant oorspronkelijk voor NASA ontwikkeld) nemen lichaamswarmte op en voeren die gedurende de nacht af — passieve koeling zonder enige actieve apparatuur. Voor $150-250 per set is dit de minst verplichtende instap in ‘koeler slapen’ in deze categorie.\n\n## Wat zijn de nadelen van de koelende lakens Slumber Cloud DryLine?\n\nGeen actief klimaat. Het passieve koeleffect concentreert zich in het begin van de nacht en kan in de loop van de nacht afnemen. Geen regeling. Geen tracking. Als vervanging voor actieve klimaatapparatuur kunnen ze niet meekomen.\n\n## Wie zou de koelende lakens Slumber Cloud DryLine moeten kopen?\n\nKies Slumber Cloud DryLine als je de goedkoopste geloofwaardige stap naar koeler slapen wilt zonder je vast te leggen op een actief systeem van $600+ zoals BedJet. Voor echte klimaatregeling zijn Eight Sleep, ChiliPad of BedJet de juiste keuze.\n\n---\n\n## Achtergrond\n\nDe biologie achter waarom het regelen van de bedtemperatuur slaapdiepte en herstel beïnvloedt.\n\n- [Neurale hydraulica: de liquorstroom](/articles/neural-hydraulics-csf-flow) — de circulatie van hersenvocht tijdens de slaap en waarbij koelte helpt\n- [Circadiane reset: het licht beheersen](/articles/circadian-reset-mastering-light) — waarom bedtemperatuur en lichttiming samen zorgen voor diepe slaap\n- [Fasegekoppelde akoestische slaapstimulatie](/articles/phase-locked-acoustic-sleep) — achtergrond over geluid en inslapen\n",
+      "faq": [
+        {
+          "q": "Werken de koelende lakens Slumber Cloud DryLine echt?",
+          "a": "De DryLine-lakens voeren met Outlast-faseovergangsmaterialen (volgens de fabrikant oorspronkelijk voor NASA ontwikkeld) merkbaar passief warmte af, maar het zijn koelende lakens, geen actieve klimaatregeling. Het effect concentreert zich in het begin van de nacht en kan in de loop van de nacht afnemen. ONDA geeft ze {{score:slumber-cloud-dryline}}/10, met {{score:slumber-cloud-dryline.climate-range}}/10 voor het klimaatbereik."
+        },
+        {
+          "q": "Wat kosten de Slumber Cloud DryLine-lakens en is er een abonnement?",
+          "a": "Een DryLine-set kost $150 tot $250, ongeveer $200 voor een queen, en een abonnement is niet mogelijk omdat het systeem volledig passief is. Daarmee zijn ze de goedkoopste geloofwaardige koeloptie die ONDA beoordeelde, met {{score:slumber-cloud-dryline.value}}/10 voor prijs-kwaliteit en {{score:slumber-cloud-dryline.subscription}}/10 voor abonnement."
+        },
+        {
+          "q": "Voor wie zijn de Slumber Cloud DryLine-lakens het meest geschikt?",
+          "a": "De DryLine-lakens zijn het meest geschikt als goedkoopste geloofwaardige instap in koeler slapen zonder actieve apparatuur, zonder regelunit, water of installatie. Ze passen bij wie zich nog niet wil vastleggen op een actief systeem van $600+ zoals BedJet; voor echte klimaatregeling verwijst ONDA naar Eight Sleep, ChiliPad of BedJet."
+        }
+      ]
     }
   },
   "comparisons": {

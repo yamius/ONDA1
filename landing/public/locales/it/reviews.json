@@ -4777,6 +4777,49 @@
           "a": "Il Tempur-Breeze Pro non ha climatizzazione attiva, quindi la temperatura non si regola, e il suo raffreddamento passivo diminuisce nel corso della notte. Non ha monitoraggio e ha un prezzo di fascia alta senza funzioni da sistema smart."
         }
       ]
+    },
+    "slumber-cloud-dryline": {
+      "verdict": "Lenzuola rinfrescanti, non climatizzazione attiva: una dissipazione passiva del calore apprezzabile nella fascia economica.",
+      "summary": "Le lenzuola Slumber Cloud DryLine integrano nel tessuto materiali a cambiamento di fase Outlast (sviluppati in origine per la NASA, secondo il produttore) che assorbono e dissipano il calore corporeo durante la notte. Non è una climatizzazione attiva, ma un’opzione credibile di lenzuola rinfrescanti. Fascia economica: incluse come alternativa d’ingresso per chi non vuole impegnarsi con hardware di climatizzazione attiva.",
+      "description": "Recensione ONDA delle lenzuola rinfrescanti Slumber Cloud DryLine: lenzuola a raffreddamento passivo Outlast vendute come alternativa economica ai sistemi di climatizzazione attiva.",
+      "bestFor": "Ideali come ingresso credibile più economico a un sonno più fresco senza hardware attivo.",
+      "testNote": "Valutazione basata sulle evidenze: punteggio ricavato dalla documentazione di Slumber Cloud e da recensioni indipendenti di lenzuola rinfrescanti del 2026. Non testate direttamente da ONDA. Incluse come alternativa passiva economica.",
+      "productType": "Lenzuola a raffreddamento passivo (materiale a cambiamento di fase Outlast)",
+      "pros": [
+        "L’opzione rinfrescante credibile più economica: $150-250 per set",
+        "Nessuna installazione, nessuna unità di controllo, nessuna gestione dell’acqua",
+        "Materiale a cambiamento di fase Outlast (sviluppato in origine per la NASA, secondo il produttore)",
+        "Nessun abbonamento possibile"
+      ],
+      "cons": [
+        "Solo raffreddamento passivo: nessun controllo attivo",
+        "L’effetto diminuisce nell’arco del ciclo di sonno completo",
+        "Nessun monitoraggio",
+        "Non sostituisce l’hardware di climatizzazione attiva"
+      ],
+      "scoreNotes": {
+        "climate-range": "Solo passivo: dissipazione del calore apprezzabile ma nessun raffreddamento attivo. Efficace nella prima parte della notte; perde effetto nell’arco del ciclo di sonno completo.",
+        "build": "Materiali a cambiamento di fase Outlast (sviluppati in origine per la NASA, secondo il produttore). Marchio di lunga data con una buona qualità del tessuto.",
+        "app-tracking": "Sono lenzuola: nessuna app, nessun monitoraggio.",
+        "form-factor": "Solo lenzuola. Nessuna unità di controllo, niente acqua, nessuna installazione. L’ingresso più semplice possibile a un «sonno più fresco».",
+        "subscription": "Nessun abbonamento possibile: sistema passivo.",
+        "value": "$150-250 per set. L’opzione rinfrescante credibile più economica di questa lista."
+      },
+      "content": "## Dove sono in vantaggio\n\nLe lenzuola Slumber Cloud DryLine sono il modo serio più economico per dormire più freschi. I materiali a cambiamento di fase Outlast (sviluppati in origine per la NASA, secondo il produttore) assorbono il calore corporeo e lo dissipano durante la notte: raffreddamento passivo senza alcun hardware attivo. A $150-250 per set, è l’ingresso meno impegnativo a un «sonno più fresco» in questa categoria.\n\n## Quali sono gli svantaggi delle lenzuola rinfrescanti Slumber Cloud DryLine?\n\nNon sono una climatizzazione attiva. L’effetto rinfrescante passivo si concentra nella prima parte della notte e può attenuarsi col passare delle ore. Nessun controllo. Nessun monitoraggio. Come sostituto dell’hardware di climatizzazione attiva, non reggono il confronto.\n\n## Chi dovrebbe comprare le lenzuola rinfrescanti Slumber Cloud DryLine?\n\nScegli Slumber Cloud DryLine se vuoi il passo credibile più economico verso un sonno più fresco senza impegnarti in un sistema attivo da oltre $600 come BedJet. Per un vero controllo della temperatura, Eight Sleep, ChiliPad o BedJet sono la scelta giusta.\n\n---\n\n## Letture di approfondimento\n\nLa biologia che spiega perché regolare la temperatura del letto influisce sulla profondità del sonno e sul recupero.\n\n- [Idraulica neurale: il flusso del liquor](/articles/neural-hydraulics-csf-flow): la circolazione del liquido cerebrospinale durante il sonno e cosa favorisce il fresco\n- [Reset circadiano: padroneggiare la luce](/articles/circadian-reset-mastering-light): perché la temperatura del letto va di pari passo con i tempi della luce per un sonno profondo\n- [Stimolazione acustica del sonno sincronizzata con la fase](/articles/phase-locked-acoustic-sleep): contesto su suono e addormentamento\n",
+      "faq": [
+        {
+          "q": "Le lenzuola rinfrescanti Slumber Cloud DryLine funzionano davvero?",
+          "a": "Le lenzuola DryLine offrono una dissipazione passiva del calore apprezzabile grazie ai materiali a cambiamento di fase Outlast (sviluppati in origine per la NASA, secondo il produttore), ma sono lenzuola rinfrescanti, non climatizzazione attiva. L’effetto si concentra nella prima parte della notte e può attenuarsi col passare delle ore. ONDA assegna loro {{score:slumber-cloud-dryline}}/10, con {{score:slumber-cloud-dryline.climate-range}}/10 nella gamma climatica."
+        },
+        {
+          "q": "Quanto costano le lenzuola Slumber Cloud DryLine e c’è un abbonamento?",
+          "a": "Un set DryLine costa da $150 a $250, circa $200 in misura queen, e non è possibile alcun abbonamento perché il sistema è completamente passivo. È quindi l’opzione rinfrescante credibile più economica valutata da ONDA, con {{score:slumber-cloud-dryline.value}}/10 per il rapporto qualità-prezzo e {{score:slumber-cloud-dryline.subscription}}/10 per l’abbonamento."
+        },
+        {
+          "q": "Per chi sono più adatte le lenzuola Slumber Cloud DryLine?",
+          "a": "Le lenzuola DryLine sono ideali come ingresso credibile più economico a un sonno più fresco senza hardware attivo, senza unità di controllo, acqua né installazione. Sono adatte a chi non è pronto a impegnarsi in un sistema attivo da oltre $600 come BedJet; per un vero controllo della temperatura ONDA indica Eight Sleep, ChiliPad o BedJet."
+        }
+      ]
     }
   },
   "comparisons": {

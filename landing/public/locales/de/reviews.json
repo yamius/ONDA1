@@ -4777,6 +4777,49 @@
           "a": "Die Tempur-Breeze Pro hat keine aktive Klimasteuerung, die Temperatur ist also nicht einstellbar, und ihre passive Kühlung lässt im Lauf der Nacht nach. Sie hat kein Tracking und einen Premiumpreis ohne Smart-Funktionen."
         }
       ]
+    },
+    "slumber-cloud-dryline": {
+      "verdict": "Kühlende Bettwäsche, keine aktive Klimasteuerung – spürbare passive Wärmeableitung im Budgetbereich.",
+      "summary": "In die Laken von Slumber Cloud DryLine sind Outlast-Phasenwechselmaterialien (laut Hersteller ursprünglich für die NASA entwickelt) eingearbeitet, die Körperwärme über die Nacht aufnehmen und ableiten. Keine aktive Klimasteuerung, aber eine glaubwürdige Kühlwäsche-Option. Budgetbereich – aufgenommen als Einstiegsalternative für alle, die sich nicht auf aktive Klimatechnik festlegen wollen.",
+      "description": "ONDA-Test der kühlenden Bettwäsche Slumber Cloud DryLine – passiv kühlende Outlast-Laken als günstige Alternative zu aktiven Klimasystemen.",
+      "bestFor": "Ideal als günstigster glaubwürdiger Einstieg in kühleren Schlaf ohne aktive Technik.",
+      "testNote": "Evidenzbasierte Bewertung – auf Grundlage der Slumber-Cloud-Produktdokumentation und unabhängiger Tests kühlender Bettwäsche aus 2026. Von ONDA nicht selbst getestet. Aufgenommen als passive Budgetalternative.",
+      "productType": "Passiv kühlende Bettwäsche (Outlast-Phasenwechselmaterial)",
+      "pros": [
+        "Günstigste glaubwürdige Kühloption – $150-250 pro Set",
+        "Keine Installation, keine Steuereinheit, kein Wasser",
+        "Outlast-Phasenwechselmaterial (laut Hersteller ursprünglich für die NASA entwickelt)",
+        "Ein Abo ist gar nicht möglich"
+      ],
+      "cons": [
+        "Nur passive Kühlung – keine aktive Steuerung",
+        "Wirkung lässt über den ganzen Schlafzyklus nach",
+        "Kein Tracking",
+        "Kein Ersatz für aktive Klimatechnik"
+      ],
+      "scoreNotes": {
+        "climate-range": "Nur passiv – spürbare Wärmeableitung, aber keine aktive Kühlung. Wirksam in der ersten Nachthälfte; verliert über den ganzen Schlafzyklus an Wirkung.",
+        "build": "Outlast-Phasenwechselmaterialien (laut Hersteller ursprünglich für die NASA entwickelt). Langjährige Marke mit solider Stoffqualität.",
+        "app-tracking": "Bettwäsche – keine App, kein Tracking.",
+        "form-factor": "Nur Laken. Keine Steuereinheit, kein Wasser, keine Installation. Der denkbar einfachste Einstieg in „kühleren Schlaf“.",
+        "subscription": "Kein Abo möglich – passives System.",
+        "value": "$150-250 pro Set. Die günstigste glaubwürdige Kühloption in dieser Liste."
+      },
+      "content": "## Wo sie vorn liegt\n\nDie Laken von Slumber Cloud DryLine sind der günstigste seriöse Weg, kühler zu schlafen. Outlast-Phasenwechselmaterialien (laut Hersteller ursprünglich für die NASA entwickelt) nehmen Körperwärme auf und leiten sie über die Nacht ab – passive Kühlung ganz ohne aktive Technik. Für $150-250 pro Set ist das der unverbindlichste Einstieg in „kühleren Schlaf“ in dieser Kategorie.\n\n## Was sind die Nachteile der Kühlwäsche Slumber Cloud DryLine?\n\nKein aktives Klima. Der passive Kühleffekt konzentriert sich auf die erste Nachthälfte und kann im Lauf der Nacht nachlassen. Keine Steuerung. Kein Tracking. Als Ersatz für aktive Klimatechnik kann sie nicht mithalten.\n\n## Wer sollte die Kühlwäsche Slumber Cloud DryLine kaufen?\n\nWähle Slumber Cloud DryLine, wenn du den günstigsten glaubwürdigen Schritt zu kühlerem Schlaf willst, ohne dich auf ein aktives System für über $600 wie BedJet festzulegen. Für echte Klimasteuerung sind Eight Sleep, ChiliPad oder BedJet die richtige Wahl.\n\n---\n\n## Hintergrund\n\nDie Biologie dahinter, warum die Regulierung der Betttemperatur Schlaftiefe und Erholung beeinflusst.\n\n- [Neurale Hydraulik: der Liquorfluss](/articles/neural-hydraulics-csf-flow) – die Zirkulation des Hirnwassers im Schlaf und wobei Kühle hilft\n- [Zirkadianer Reset: das Licht beherrschen](/articles/circadian-reset-mastering-light) – warum Betttemperatur und Lichttiming zusammen für tiefen Schlaf sorgen\n- [Phasengekoppelte akustische Schlafstimulation](/articles/phase-locked-acoustic-sleep) – Hintergrund zu Klang und Einschlafen\n",
+      "faq": [
+        {
+          "q": "Funktioniert die Kühlwäsche Slumber Cloud DryLine wirklich?",
+          "a": "Die DryLine-Laken leiten mit Outlast-Phasenwechselmaterialien (laut Hersteller ursprünglich für die NASA entwickelt) spürbar Wärme passiv ab, sind aber kühlende Bettwäsche, keine aktive Klimasteuerung. Der Effekt konzentriert sich auf die erste Nachthälfte und kann im Lauf der Nacht nachlassen. ONDA bewertet sie mit {{score:slumber-cloud-dryline}}/10, beim Klimabereich mit {{score:slumber-cloud-dryline.climate-range}}/10."
+        },
+        {
+          "q": "Was kosten die Slumber Cloud DryLine-Laken und gibt es ein Abo?",
+          "a": "Ein DryLine-Set kostet $150 bis $250, etwa $200 in Queen-Größe, und ein Abo ist nicht möglich, weil das System komplett passiv ist. Damit ist es die günstigste glaubwürdige Kühloption, die ONDA bewertet hat: {{score:slumber-cloud-dryline.value}}/10 beim Preis-Leistungs-Verhältnis und {{score:slumber-cloud-dryline.subscription}}/10 beim Abo."
+        },
+        {
+          "q": "Für wen eignen sich die Slumber Cloud DryLine-Laken am besten?",
+          "a": "Die DryLine-Laken eignen sich am besten als günstigster glaubwürdiger Einstieg in kühleren Schlaf ohne aktive Technik – ohne Steuereinheit, Wasser oder Installation. Sie passen zu allen, die sich noch nicht auf ein aktives System für über $600 wie BedJet festlegen wollen; für echte Klimasteuerung verweist ONDA auf Eight Sleep, ChiliPad oder BedJet."
+        }
+      ]
     }
   },
   "comparisons": {

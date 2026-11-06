@@ -5163,6 +5163,49 @@
           "a": "El Tempur-Breeze Pro no tiene control activo de temperatura, así que no se puede ajustar, y su refrigeración pasiva disminuye a lo largo de la noche. No tiene seguimiento y tiene precio premium sin funciones de sistema inteligente."
         }
       ]
+    },
+    "slumber-cloud-dryline": {
+      "verdict": "Sábanas refrigerantes, no climatización activa: una disipación pasiva del calor apreciable en la gama económica.",
+      "summary": "Las sábanas Slumber Cloud DryLine llevan materiales de cambio de fase Outlast (desarrollados originalmente para la NASA, según el fabricante) integrados en el tejido para absorber y disipar el calor corporal durante la noche. No es control activo de temperatura, pero sí una opción creíble de sábanas refrigerantes. Gama económica: incluidas como alternativa de entrada para quien no quiere comprometerse con hardware de climatización activa.",
+      "description": "Reseña de ONDA de las sábanas refrigerantes Slumber Cloud DryLine: sábanas de refrigeración pasiva Outlast vendidas como alternativa económica a los sistemas de climatización activa.",
+      "bestFor": "Ideales como la entrada creíble más barata a un sueño más fresco sin hardware activo.",
+      "testNote": "Evaluación basada en evidencia: puntuadas a partir de la documentación de Slumber Cloud y reseñas independientes de sábanas refrigerantes de 2026. ONDA no las ha probado en persona. Incluidas como alternativa pasiva económica.",
+      "productType": "Sábanas de refrigeración pasiva (material de cambio de fase Outlast)",
+      "pros": [
+        "La opción refrigerante creíble más barata: $150-250 por juego",
+        "Sin instalación, sin unidad de control, sin gestión de agua",
+        "Material de cambio de fase Outlast (desarrollado originalmente para la NASA, según el fabricante)",
+        "Sin posibilidad de suscripción"
+      ],
+      "cons": [
+        "Solo refrigeración pasiva: sin control activo",
+        "El efecto disminuye a lo largo del ciclo de sueño completo",
+        "Sin seguimiento",
+        "No sustituye al hardware de climatización activa"
+      ],
+      "scoreNotes": {
+        "climate-range": "Solo pasiva: disipación de calor apreciable pero sin refrigeración activa. Eficaz en la primera parte de la noche; pierde efecto a lo largo del ciclo de sueño completo.",
+        "build": "Materiales de cambio de fase Outlast (desarrollados originalmente para la NASA, según el fabricante). Marca veterana con buena calidad de tejido.",
+        "app-tracking": "Son sábanas: sin app ni seguimiento.",
+        "form-factor": "Solo sábanas. Sin unidad de control, sin agua, sin instalación. La entrada más sencilla posible a un «sueño más fresco».",
+        "subscription": "Sin posibilidad de suscripción: sistema pasivo.",
+        "value": "$150-250 por juego. La opción refrigerante creíble más barata de esta lista."
+      },
+      "content": "## Dónde destacan\n\nLas sábanas Slumber Cloud DryLine son la forma legítima más barata de dormir más fresco. Los materiales de cambio de fase Outlast (desarrollados originalmente para la NASA, según el fabricante) absorben el calor corporal y lo disipan durante la noche: refrigeración pasiva sin ningún hardware activo. A $150-250 por juego, es la entrada con menos compromiso a un «sueño más fresco» de esta categoría.\n\n## ¿Cuáles son los inconvenientes de las sábanas refrigerantes Slumber Cloud DryLine?\n\nNo son climatización activa. El efecto refrigerante pasivo se concentra en la primera parte de la noche y puede desvanecerse con las horas. Sin control. Sin seguimiento. Como sustituto del hardware de climatización activa, no compiten.\n\n## ¿Quién debería comprar las sábanas refrigerantes Slumber Cloud DryLine?\n\nElige Slumber Cloud DryLine si quieres el paso creíble más barato hacia un sueño más fresco sin comprometerte con un sistema activo de más de $600 como BedJet. Para un control real de la temperatura, Eight Sleep, ChiliPad o BedJet son la opción adecuada.\n\n---\n\n## Lecturas de fondo\n\nLa biología de por qué regular la temperatura de la cama influye en la profundidad del sueño y la recuperación.\n\n- [Hidráulica neural: el flujo del LCR](/articles/neural-hydraulics-csf-flow): la circulación del líquido cefalorraquídeo durante el sueño y lo que facilita el frescor\n- [Reinicio circadiano: dominar la luz](/articles/circadian-reset-mastering-light): por qué regular la temperatura de la cama va de la mano con el horario de luz para un sueño profundo\n- [Sueño acústico sincronizado por fase](/articles/phase-locked-acoustic-sleep): contexto sobre el audio y la conciliación del sueño\n",
+      "faq": [
+        {
+          "q": "¿Funcionan de verdad las sábanas refrigerantes Slumber Cloud DryLine?",
+          "a": "Las sábanas DryLine ofrecen una disipación pasiva del calor apreciable gracias a materiales de cambio de fase Outlast (desarrollados originalmente para la NASA, según el fabricante), pero son sábanas refrigerantes, no control activo de temperatura. El efecto se concentra en la primera parte de la noche y puede desvanecerse con las horas. ONDA les da {{score:slumber-cloud-dryline}}/10, con {{score:slumber-cloud-dryline.climate-range}}/10 en rango de climatización."
+        },
+        {
+          "q": "¿Cuánto cuestan las sábanas Slumber Cloud DryLine y tienen suscripción?",
+          "a": "Un juego de sábanas DryLine cuesta entre $150 y $250, unos $200 en tamaño queen, y no hay suscripción posible porque el sistema es totalmente pasivo. Eso las convierte en la opción refrigerante creíble más barata que ha analizado ONDA, con {{score:slumber-cloud-dryline.value}}/10 en relación calidad-precio y {{score:slumber-cloud-dryline.subscription}}/10 en suscripción."
+        },
+        {
+          "q": "¿Para quién son mejores las sábanas Slumber Cloud DryLine?",
+          "a": "Las sábanas DryLine son ideales como la entrada creíble más barata a un sueño más fresco sin hardware activo, sin unidad de control, agua ni instalación. Encajan con quien no está listo para comprometerse con un sistema activo de más de $600 como BedJet; para un control real de la temperatura, ONDA recomienda Eight Sleep, ChiliPad o BedJet."
+        }
+      ]
     }
   },
   "comparisons": {

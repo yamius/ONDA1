@@ -614,6 +614,7 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'circular-ring-2' },
   { collection: 'reviews', slug: 'ringconn-gen-3' },
   { collection: 'reviews', slug: 'tempur-breeze-pro' },
+  { collection: 'reviews', slug: 'slumber-cloud-dryline' },
   // WAVE_D_NEXT
   ],
 ]
