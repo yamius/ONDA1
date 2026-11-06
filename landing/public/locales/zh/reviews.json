@@ -8967,6 +8967,67 @@
         }
       ],
       "content": "## 简短版本\n\n[Sunlighten mPulse](/reviews/sunlighten-mpulse) 是高端之选——真正的三波长控制和高端雪松木做工；[Sun Home Equinox](/reviews/sun-home-equinox) 是主打性价比的挑战者，温度更高（约 165°F，厂商数据）且附带额外功能。\n\n## 什么时候该选 Sun Home Equinox？\n\n你想以克制的价格获得温度更高的桑拿舱、色光疗法和音响。\n\n## 什么时候该选 Sunlighten mPulse？\n\n你想要 Sunlighten 的招牌——独立的三波长红外控制和高端做工。\n\n## 也值得对比\n\n请看 [Sun Home Equinox vs Clearlight Sanctuary 2](/reviews/vs/sun-home-equinox-vs-clearlight-sanctuary-2) 和 [Sunlighten mPulse vs Clearlight Sanctuary 2](/reviews/vs/sunlighten-mpulse-vs-clearlight-sanctuary-2)。完整榜单：[最佳红外桑拿](/reviews/infrared-sauna)。"
+    },
+    "gembared-vesta-vs-joovv-solo-3": {
+      "title": "GembaRed Vesta vs Joovv Solo 3.0（2026）",
+      "description": "GembaRed Vesta vs Joovv Solo 3.0：两款高端红光面板对比。带电磁场屏蔽的六波长设计，对比模块化标杆。",
+      "intro": "当高端工程设计很重要时，人们会比较 GembaRed Vesta 和 Joovv Solo 3.0 这两款红光面板。GembaRed 是由工程师创始人设计、带电磁场屏蔽的专业产品；Joovv 是模块化标杆。通往高端的两条不同路径：GembaRed 给你电磁场屏蔽的结构，Joovv 给你成熟的品牌和模块化扩展。",
+      "verdict": "高端定位不同。GembaRed Vesta 在电磁场/频闪控制和波长广度上胜出。Joovv Solo 3.0 在全身模块化扩展和品牌成熟度上胜出。",
+      "bestForA": "如果电磁场控制是你的首要标准，就选 GembaRed Vesta——全屏蔽结构，厂商标称电磁场在 ONDA 榜单中最低，并覆盖六种波长。",
+      "bestForB": "如果全身模块化扩展和大品牌的售后支持是决定因素，就选 Joovv Solo 3.0——一款历史悠久、使用广泛的模块化面板。",
+      "axes": [
+        {
+          "name": "电磁场 / 频闪控制",
+          "note": "GembaRed：6 英寸处 <0.1 mG——在 ONDA 榜单中厂商标称电磁场最低。Joovv：6 英寸处 <0.5 mG，同样干净。GembaRed 在电磁场上领先；Joovv 依然出色。"
+        },
+        {
+          "name": "波长",
+          "note": "GembaRed：六种波长（480 + 630 + 660 + 810 + 830 + 850 nm）。Joovv：两种（660 + 850 nm）。GembaRed 的光谱宽得多。"
+        },
+        {
+          "name": "辐照度",
+          "note": "Joovv 领先：两者参数都很实在（独立测量接近标称值），但在 6 英寸处 Joovv 输出超过 100 mW/cm²，GembaRed Vesta 约为 60 mW/cm²。"
+        },
+        {
+          "name": "FDA / 监管状态",
+          "note": "Joovv 称 Solo 3.0 已在 FDA 注册为 II 类器械（据 Joovv，列出的适应证为局部加热）。GembaRed：未在 FDA 注册。注册/列名不等于许可或批准，也不是质量标志，所以这一项双方都不算胜出。"
+        },
+        {
+          "name": "覆盖与模块化",
+          "note": "Joovv：模块化 Solo 系统可组合覆盖全身。GembaRed：单块中型面板，覆盖全身需组合两块。规模化时 Joovv 更灵活。"
+        },
+        {
+          "name": "工程透明度",
+          "note": "GembaRed 创始人公开发布设计思路。Joovv 发布概要参数和实验室报告。GembaRed 在透明度深度上胜出。"
+        },
+        {
+          "name": "品牌成熟度",
+          "note": "Joovv 是更大、更成熟的品牌，保修和售后覆盖更广。GembaRed 规模更小、更新。"
+        },
+        {
+          "name": "价格",
+          "note": "GembaRed Vesta：$1,199。Joovv Solo 3.0：$1,699（美国官方商店，2026-10-01）。GembaRed 便宜 $500。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "GembaRed Vesta 还是 Joovv Solo 3.0，哪个更好？",
+          "a": "取决于你看重什么。GembaRed 在电磁场控制（ONDA 榜单中厂商标称最低）、波长广度（六种对两种）和工程透明度上胜出。Joovv 在模块化扩展和品牌成熟度上胜出。两者都是出色的高端面板。"
+        },
+        {
+          "q": "GembaRed 的电磁场优势有意义吗？",
+          "a": "对大多数人来说没有——Joovv 在 6 英寸处 <0.5 mG 已低于大多数用户在意的阈值。对电磁场敏感或每天使用超过 30 分钟的人来说，GembaRed 的 <0.1 mG 明显更干净。属于小众需求，但差异真实存在。"
+        },
+        {
+          "q": "为什么 Joovv 在 FDA 注册了而 GembaRed 没有？",
+          "a": "Joovv 将 Solo 3.0 在 FDA 注册为 II 类器械；GembaRed 没有。注册和列名只表示公司向 FDA 申报了该设备；它们不是 FDA 的许可或批准，也说明不了面板效果好不好。这是监管和营销层面的说法，而不是硬件更优的证明。"
+        },
+        {
+          "q": "GembaRed 能在全身覆盖上比肩 Joovv 吗？",
+          "a": "覆盖全身需要组合两块 GembaRed Vesta 面板。两块 Vesta：约 $2,400。两台 Joovv Solo 3.0：约 $3,400，更大的组合更贵。全身覆盖时 GembaRed 更便宜，但没有 Joovv 组合那样统一的模块化安装硬件——需要分别安装。"
+        }
+      ],
+      "content": "## 简短版本\n\n通往高端的两条不同路径。GembaRed Vesta 以便宜 $500 的价格提供电磁场屏蔽结构和最宽的光谱。Joovv Solo 3.0 以贵 $500 的价格提供模块化扩展和品牌成熟度。根据你最看重的那一项来选。\n\n## 什么时候该选 GembaRed Vesta？\n\n如果电磁场控制是你的首要标准（你对此敏感或每天长时间使用），而且你看重六波长光谱，GembaRed 就是合适的选择。工程师创始人的透明度是额外的理由。\n\n## 什么时候该选 Joovv Solo 3.0？\n\n如果全身模块化扩展符合你的安装计划，并且你在意大品牌的保修和售后覆盖，Joovv 就是合适的选择。"
     }
   },
   "categoryHubs": {
