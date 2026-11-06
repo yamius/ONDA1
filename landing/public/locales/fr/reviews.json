@@ -4820,6 +4820,50 @@
           "a": "Les draps DryLine conviennent le mieux comme entrée crédible la moins chère vers un sommeil plus frais sans matériel actif, sans boîtier, eau ni installation. Ils s’adressent à ceux qui ne sont pas prêts à investir dans un système actif à plus de $600 comme BedJet ; pour une vraie régulation de la température, ONDA recommande Eight Sleep, ChiliPad ou BedJet."
         }
       ]
+    },
+    "pzizz": {
+      "verdict": "Une application audio de sommeil ciblée — son algorithme crée chaque nuit un nouveau paysage sonore pour que l’audio reste varié —, mais elle ne fait qu’une chose et ne suit rien.",
+      "summary": "Pzizz fait une seule chose : vous endormir en musique. Son algorithme « dreamscape » génère à chaque séance un mélange unique de musique, de voix et d’effets, pour que l’audio reste varié. Il ne suit pas le sommeil et n’offre aucune analyse : c’est une pure aide à l’endormissement.",
+      "description": "Test ONDA de Pzizz : une application audio ciblée pour le sommeil et la sieste, dont l’algorithme génère un nouveau paysage sonore à chaque séance. Notée sur le contenu de détente et le rapport qualité-prix.",
+      "bestFor": "Idéale pour ceux qui veulent simplement être bercés jusqu’au sommeil, sans aucun suivi.",
+      "testNote": "Évaluation fondée sur les preuves : à partir d’informations publiques, de données des boutiques d’applications et de tests indépendants de 2026. Pas fondée sur un long essai en main propre par ONDA.",
+      "productType": "Application audio pour le sommeil",
+      "pros": [
+        "Un nouveau paysage sonore, sans répétition, à chaque séance",
+        "Des modules dédiés à la sieste et à la concentration, pas seulement au sommeil",
+        "Simple, épurée et rapide à lancer",
+        "Une option d’achat unique existe"
+      ],
+      "cons": [
+        "Aucun suivi du sommeil",
+        "Aucune analyse ni donnée — par choix",
+        "Ne fait qu’une chose",
+        "L’ensemble des modules exige un abonnement"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Aucun suivi : Pzizz diffuse de l’audio, il ne mesure pas votre nuit.",
+        "wind-down-content": "Toute sa raison d’être : un algorithme qui génère un nouveau paysage sonore de sommeil ou de sieste à chaque séance.",
+        "sleep-science": "Fondée sur la recherche sur le bruit, la musique et la voix ; modules pour le sommeil, la sieste et la concentration.",
+        "insights": "Aucune : il n’y a rien à analyser, par choix.",
+        "app-experience": "Simple et épurée : choisir un module, régler une minuterie, dormir.",
+        "free-tier": "Une version gratuite limitée ; l’ensemble des modules exige l’abonnement.",
+        "value": "Environ 70 USD par an, ou un achat unique : raisonnable pour un outil utilisé chaque nuit."
+      },
+      "content": "## Là où elle est en avance\n\nPzizz fait une seule chose et la fait bien : vous endormir en musique. Son algorithme « dreamscape » crée à chaque séance un mélange unique de musique, de voix off et d’effets sonores, pour que l’audio reste varié. Des modules dédiés à la sieste et à la concentration étendent la même idée à la journée. L’application est d’une simplicité rafraîchissante : choisir un module, régler une minuterie, dormir.\n\n## Quels sont les inconvénients de Pzizz ?\n\nC’est une aide à l’endormissement, rien de plus. Aucun suivi, aucune analyse, aucun aperçu de votre nuit — par choix, mais Pzizz ne peut donc pas vous dire si quelque chose s’améliore. L’ensemble des modules exige un abonnement.\n\n## Qui devrait acheter Pzizz ?\n\nChoisissez Pzizz si vous voulez simplement être bercé jusqu’au sommeil et que le suivi ne vous intéresse pas. Si vous voulez mesurer votre nuit ou disposer d’une bibliothèque de relaxation plus large, un tracker ou BetterSleep conviendra mieux.\n\n---\n\n## Pour aller plus loin\n\nLa biologie du sommeil derrière ce que mesurent ces applications et les protocoles qu’elles soutiennent.\n\n- [Stimulation acoustique du sommeil calée sur la phase](/articles/phase-locked-acoustic-sleep) — le son et l’endormissement : ce que disent les études\n- [Le sommeil nettoie-t-il vraiment le cerveau ? Les données sur le système glymphatique](/articles/nightly-flush-glymphatic-neural-cache) — ce qui est démontré chez l’humain et ce qui reste discuté\n",
+      "faq": [
+        {
+          "q": "Pzizz vaut-il le coup ?",
+          "a": "Pzizz vaut le coup si vous voulez simplement être bercé jusqu’au sommeil, sans suivi. Il génère à chaque séance un nouveau paysage sonore sans répétition, ajoute des modules dédiés à la sieste et à la concentration, et se lance rapidement. Il n’offre aucun suivi du sommeil ni aucune analyse, par choix."
+        },
+        {
+          "q": "Combien coûte Pzizz ?",
+          "a": "Pzizz est affiché à $70 par an, ou en achat unique. Une version gratuite limitée existe aussi, mais l’ensemble des modules, sieste et concentration compris, nécessite une formule payante. Aucun niveau n’inclut de suivi du sommeil."
+        },
+        {
+          "q": "Quels sont les inconvénients de Pzizz ?",
+          "a": "Pzizz n’offre aucun suivi du sommeil et aucune analyse, par choix. Il ne fait qu’une chose, et l’ensemble des modules exige un abonnement : la version gratuite est donc limitée. Si vous voulez des analyses de sommeil, ce n’est pas la bonne application."
+        }
+      ]
     }
   },
   "comparisons": {

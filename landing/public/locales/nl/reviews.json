@@ -4820,6 +4820,50 @@
           "a": "De DryLine-lakens zijn het meest geschikt als goedkoopste geloofwaardige instap in koeler slapen zonder actieve apparatuur, zonder regelunit, water of installatie. Ze passen bij wie zich nog niet wil vastleggen op een actief systeem van $600+ zoals BedJet; voor echte klimaatregeling verwijst ONDA naar Eight Sleep, ChiliPad of BedJet."
         }
       ]
+    },
+    "pzizz": {
+      "verdict": "Een gerichte slaap-audio-app — het algoritme bouwt elke nacht een nieuw geluidslandschap zodat het geluid afwisselend blijft — maar hij doet maar één ding en trackt niets.",
+      "summary": "Pzizz doet één ding: je in slaap laten vallen met geluid. Het ‘dreamscape’-algoritme maakt bij elke sessie een unieke mix van muziek, stem en effecten, zodat het geluid afwisselend blijft. Het volgt je slaap niet en heeft geen analyses — het is puur een inslaaphulp.",
+      "description": "ONDA-review van Pzizz — een gerichte audio-app voor slapen en dutjes waarvan het algoritme bij elke sessie een nieuw geluidslandschap maakt. Beoordeeld op ontspanningscontent en prijs-kwaliteit.",
+      "bestFor": "Ideaal voor wie zich gewoon in slaap wil laten spelen, zonder enige tracking.",
+      "testNote": "Op bewijs gebaseerde beoordeling — op basis van openbare informatie, app-storegegevens en onafhankelijke reviews uit 2026. Niet gebaseerd op een lange praktijktest door ONDA.",
+      "productType": "Slaap-audio-app",
+      "pros": [
+        "Elke sessie een nieuw, niet-herhalend geluidslandschap",
+        "Aparte modules voor dutjes en focus, niet alleen slaap",
+        "Eenvoudig, overzichtelijk en snel te starten",
+        "Er is een optie voor eenmalige aankoop"
+      ],
+      "cons": [
+        "Helemaal geen slaaptracking",
+        "Geen inzichten of analyses — bewust zo",
+        "Doet maar één ding",
+        "Voor alle modules is een abonnement nodig"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Helemaal geen tracking — Pzizz speelt geluid af, het meet je nacht niet.",
+        "wind-down-content": "Het hele doel — een algoritme dat bij elke sessie een nieuw geluidslandschap voor slaap of dutje maakt.",
+        "sleep-science": "Gebaseerd op onderzoek naar ruis, muziek en stem; modules voor slaap, dutjes en focus.",
+        "insights": "Geen — er valt bewust niets te analyseren.",
+        "app-experience": "Eenvoudig en overzichtelijk — kies een module, stel een timer in, slaap.",
+        "free-tier": "Een beperkte gratis versie; voor alle modules is het abonnement nodig.",
+        "value": "Ongeveer 70 USD per jaar, of een eenmalige aankoop — redelijk voor een hulpmiddel dat je elke nacht gebruikt."
+      },
+      "content": "## Waar hij voorloopt\n\nPzizz doet één ding en doet dat goed: je in slaap laten vallen met geluid. Het ‘dreamscape’-algoritme bouwt bij elke sessie een unieke mix van muziek, voice-over en geluidseffecten, zodat het geluid afwisselend blijft. Aparte modules voor dutjes en focus trekken hetzelfde idee door naar de dag. De app is verfrissend eenvoudig: kies een module, stel een timer in, slaap.\n\n## Wat zijn de nadelen van Pzizz?\n\nHet is een inslaaphulp en verder niets. Geen tracking, geen analyses, geen inzicht in je nacht — bewust zo, maar daardoor kan Pzizz je niet vertellen of er iets verbetert. Voor alle modules is een abonnement nodig.\n\n## Wie zou Pzizz moeten kopen?\n\nKies Pzizz als je je gewoon in slaap wilt laten spelen en geen interesse hebt in tracking. Wil je je nacht meten of een bredere ontspanningsbibliotheek, dan past een tracker of BetterSleep beter.\n\n---\n\n## Achtergrond\n\nDe slaapbiologie achter wat deze apps meten en de protocollen die ze ondersteunen.\n\n- [Fasegekoppelde akoestische slaapstimulatie](/articles/phase-locked-acoustic-sleep) — geluid en inslapen: het bewijs\n- [Maakt slaap je hersenen echt schoon? Het glymfatische bewijs](/articles/nightly-flush-glymphatic-neural-cache) — wat bij mensen is aangetoond en wat nog ter discussie staat\n",
+      "faq": [
+        {
+          "q": "Is Pzizz het waard?",
+          "a": "Pzizz is het waard als je je gewoon in slaap wilt laten spelen, zonder tracking. Het maakt bij elke sessie een nieuw, niet-herhalend geluidslandschap, heeft aparte modules voor dutjes en focus en is snel te starten. Slaaptracking of analyses biedt het bewust helemaal niet."
+        },
+        {
+          "q": "Wat kost Pzizz?",
+          "a": "Pzizz staat voor $70 per jaar, of als eenmalige aankoop. Er is ook een beperkte gratis versie, maar alle modules, inclusief dutje en focus, vereisen een betaald abonnement. Op geen enkel niveau is er slaaptracking."
+        },
+        {
+          "q": "Wat zijn de nadelen van Pzizz?",
+          "a": "Pzizz heeft helemaal geen slaaptracking en bewust geen inzichten of analyses. Het doet maar één ding, en voor alle modules is een abonnement nodig, dus de gratis versie is beperkt. Wil je slaapanalyses, dan is dit de verkeerde app."
+        }
+      ]
     }
   },
   "comparisons": {

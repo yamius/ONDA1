@@ -4820,6 +4820,50 @@
           "a": "Le lenzuola DryLine sono ideali come ingresso credibile più economico a un sonno più fresco senza hardware attivo, senza unità di controllo, acqua né installazione. Sono adatte a chi non è pronto a impegnarsi in un sistema attivo da oltre $600 come BedJet; per un vero controllo della temperatura ONDA indica Eight Sleep, ChiliPad o BedJet."
         }
       ]
+    },
+    "pzizz": {
+      "verdict": "Un’app audio per il sonno mirata — il suo algoritmo crea ogni notte un nuovo paesaggio sonoro perché l’audio resti vario — ma fa una cosa sola e non monitora nulla.",
+      "summary": "Pzizz fa una sola cosa: ti accompagna nel sonno con l’audio. Il suo algoritmo «dreamscape» genera a ogni sessione un mix unico di musica, voce ed effetti, così l’audio resta vario. Non monitora il sonno e non ha analisi: è un puro aiuto per addormentarsi.",
+      "description": "Recensione ONDA di Pzizz: un’app audio mirata per sonno e pisolini, il cui algoritmo genera un nuovo paesaggio sonoro a ogni sessione. Valutata su contenuti di rilassamento e rapporto qualità-prezzo.",
+      "bestFor": "Ideale per chi vuole semplicemente essere accompagnato nel sonno, senza alcun monitoraggio.",
+      "testNote": "Valutazione basata sulle evidenze: da informazioni pubbliche, dati degli store e recensioni indipendenti del 2026. Non basata su una lunga prova diretta di ONDA.",
+      "productType": "App audio per il sonno",
+      "pros": [
+        "Un paesaggio sonoro nuovo e mai ripetuto a ogni sessione",
+        "Moduli dedicati a pisolini e concentrazione, non solo al sonno",
+        "Semplice, essenziale e rapida da avviare",
+        "Esiste un’opzione di sblocco una tantum"
+      ],
+      "cons": [
+        "Nessun monitoraggio del sonno",
+        "Nessuna analisi o statistica — per scelta",
+        "Fa una cosa sola",
+        "L’intero set di moduli richiede un abbonamento"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Nessun monitoraggio: Pzizz riproduce audio, non misura la tua notte.",
+        "wind-down-content": "È il suo scopo: un algoritmo che genera un nuovo paesaggio sonoro per sonno o pisolino a ogni sessione.",
+        "sleep-science": "Basata sulla ricerca su rumore, musica e voce; moduli per sonno, pisolini e concentrazione.",
+        "insights": "Nessuna: per scelta non c’è nulla da analizzare.",
+        "app-experience": "Semplice ed essenziale: scegli un modulo, imposta un timer, dormi.",
+        "free-tier": "Una versione gratuita limitata; l’intero set di moduli richiede l’abbonamento.",
+        "value": "Circa 70 USD l’anno, o uno sblocco una tantum: ragionevole per uno strumento che usi ogni notte."
+      },
+      "content": "## Dove è in vantaggio\n\nPzizz fa una cosa e la fa bene: ti accompagna nel sonno con l’audio. Il suo algoritmo «dreamscape» crea a ogni sessione un mix unico di musica, voce narrante ed effetti sonori, così l’audio resta vario. Moduli dedicati a pisolini e concentrazione estendono la stessa idea al giorno. L’app è piacevolmente semplice: scegli un modulo, imposta un timer, dormi.\n\n## Quali sono gli svantaggi di Pzizz?\n\nÈ un aiuto per addormentarsi e niente di più. Nessun monitoraggio, nessuna analisi, nessuna informazione sulla tua notte: per scelta, ma significa che Pzizz non può dirti se qualcosa sta migliorando. L’intero set di moduli richiede un abbonamento.\n\n## Chi dovrebbe comprare Pzizz?\n\nScegli Pzizz se vuoi semplicemente essere accompagnato nel sonno e il monitoraggio non ti interessa. Se vuoi misurare la tua notte o una libreria di rilassamento più ampia, è più adatto un tracker o BetterSleep.\n\n---\n\n## Letture di approfondimento\n\nLa biologia del sonno dietro ciò che queste app misurano e i protocolli che supportano.\n\n- [Stimolazione acustica del sonno sincronizzata con la fase](/articles/phase-locked-acoustic-sleep): suono e addormentamento, cosa dicono gli studi\n- [Il sonno pulisce davvero il cervello? Le prove sul sistema glinfatico](/articles/nightly-flush-glymphatic-neural-cache): cosa è dimostrato nelle persone e cosa è ancora discusso\n",
+      "faq": [
+        {
+          "q": "Vale la pena Pzizz?",
+          "a": "Pzizz vale la pena se vuoi semplicemente essere accompagnato nel sonno, senza monitoraggio. Genera a ogni sessione un paesaggio sonoro nuovo e mai ripetuto, aggiunge moduli dedicati a pisolini e concentrazione ed è rapido da avviare. Per scelta non offre alcun monitoraggio del sonno né analisi."
+        },
+        {
+          "q": "Quanto costa Pzizz?",
+          "a": "Pzizz è a listino a $70 l’anno, oppure con uno sblocco una tantum. Esiste anche una versione gratuita limitata, ma l’intero set di moduli, inclusi pisolino e concentrazione, richiede un piano a pagamento. Nessun livello include il monitoraggio del sonno."
+        },
+        {
+          "q": "Quali sono gli svantaggi di Pzizz?",
+          "a": "Pzizz non ha alcun monitoraggio del sonno e, per scelta, nessuna analisi o statistica. Fa una cosa sola e l’intero set di moduli richiede un abbonamento, quindi la versione gratuita è limitata. Se vuoi analisi del sonno, è l’app sbagliata."
+        }
+      ]
     }
   },
   "comparisons": {

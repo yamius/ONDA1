@@ -617,6 +617,7 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'slumber-cloud-dryline' },
   { collection: 'h2h', slug: 'hooga-hg500-vs-joovv-solo-3' },
   { collection: 'h2h', slug: 'sun-home-equinox-vs-sunlighten-mpulse' },
+  { collection: 'reviews', slug: 'pzizz', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
   // WAVE_D_NEXT
   ],
 ]

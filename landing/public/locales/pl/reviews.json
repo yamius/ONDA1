@@ -4820,6 +4820,50 @@
           "a": "Prześcieradła DryLine najlepiej sprawdzają się jako najtańszy wiarygodny sposób na chłodniejszy sen bez aktywnego sprzętu, bez jednostki sterującej, wody i montażu. Pasują osobom, które nie są gotowe inwestować w aktywny system za ponad $600, taki jak BedJet; do prawdziwej kontroli temperatury ONDA poleca Eight Sleep, ChiliPad lub BedJet."
         }
       ]
+    },
+    "pzizz": {
+      "verdict": "Skupiona aplikacja audio do snu — jej algorytm co noc tworzy nowy pejzaż dźwiękowy, żeby dźwięk się nie nudził — ale robi tylko jedno i niczego nie śledzi.",
+      "summary": "Pzizz robi jedno: usypia cię dźwiękiem. Jego algorytm „dreamscape” przy każdej sesji generuje unikalną mieszankę muzyki, głosu i efektów, więc dźwięk pozostaje urozmaicony. Nie śledzi snu i nie ma analiz — to czysta pomoc w zasypianiu.",
+      "description": "Recenzja ONDA aplikacji Pzizz — skupionej aplikacji audio do snu i drzemek, której algorytm przy każdej sesji tworzy nowy pejzaż dźwiękowy. Oceniona pod kątem treści wyciszających i stosunku jakości do ceny.",
+      "bestFor": "Dla każdego, kto po prostu chce zostać uśpiony dźwiękiem, bez żadnego śledzenia.",
+      "testNote": "Ocena oparta na dowodach — na podstawie informacji publicznych, danych ze sklepów z aplikacjami i niezależnych recenzji z 2026 roku. Nie opiera się na długim teście ONDA.",
+      "productType": "Aplikacja audio do snu",
+      "pros": [
+        "Przy każdej sesji nowy, niepowtarzalny pejzaż dźwiękowy",
+        "Osobne moduły do drzemki i skupienia, nie tylko do snu",
+        "Prosta, przejrzysta i szybko się uruchamia",
+        "Jest opcja jednorazowego odblokowania"
+      ],
+      "cons": [
+        "Żadnego śledzenia snu",
+        "Brak wniosków i analiz — celowo",
+        "Robi tylko jedno",
+        "Pełny zestaw modułów wymaga subskrypcji"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Brak śledzenia — Pzizz odtwarza dźwięk, nie mierzy twojej nocy.",
+        "wind-down-content": "Cały jej sens — algorytm, który przy każdej sesji generuje nowy pejzaż dźwiękowy do snu lub drzemki.",
+        "sleep-science": "Oparta na badaniach nad szumem, muzyką i głosem; moduły do snu, drzemek i skupienia.",
+        "insights": "Brak — celowo nie ma czego analizować.",
+        "app-experience": "Prosta i przejrzysta — wybierz moduł, ustaw minutnik, śpij.",
+        "free-tier": "Ograniczona wersja darmowa; pełny zestaw modułów wymaga subskrypcji.",
+        "value": "Ok. 70 USD rocznie lub jednorazowe odblokowanie — rozsądnie jak na narzędzie używane co noc."
+      },
+      "content": "## W czym jest na czele\n\nPzizz robi jedno i robi to dobrze: usypia cię dźwiękiem. Jego algorytm „dreamscape” przy każdej sesji tworzy unikalną mieszankę muzyki, lektora i efektów dźwiękowych, więc dźwięk pozostaje urozmaicony. Osobne moduły do drzemki i skupienia przenoszą ten sam pomysł na dzień. Aplikacja jest przyjemnie prosta: wybierz moduł, ustaw minutnik, śpij.\n\n## Jakie są wady Pzizz?\n\nTo pomoc w zasypianiu i nic więcej. Brak śledzenia, analiz i wglądu w twoją noc — celowo, ale przez to Pzizz nie powie ci, czy coś się poprawia. Pełny zestaw modułów wymaga subskrypcji.\n\n## Kto powinien kupić Pzizz?\n\nWybierz Pzizz, jeśli po prostu chcesz zostać uśpiony dźwiękiem i nie interesuje cię śledzenie. Jeśli chcesz mierzyć swoją noc albo mieć większą bibliotekę relaksacyjną, lepiej sprawdzi się tracker lub BetterSleep.\n\n---\n\n## Do poczytania\n\nBiologia snu stojąca za tym, co mierzą te aplikacje, i protokołami, które wspierają.\n\n- [Akustyczna stymulacja snu zsynchronizowana z fazą](/articles/phase-locked-acoustic-sleep) — dźwięk i zasypianie: co mówią badania\n- [Czy sen naprawdę oczyszcza mózg? Dowody dotyczące układu glimfatycznego](/articles/nightly-flush-glymphatic-neural-cache) — co wykazano u ludzi, a co wciąż jest sporne\n",
+      "faq": [
+        {
+          "q": "Czy Pzizz jest wart swojej ceny?",
+          "a": "Pzizz jest wart swojej ceny, jeśli po prostu chcesz zostać uśpiony dźwiękiem, bez śledzenia. Przy każdej sesji generuje nowy, niepowtarzalny pejzaż dźwiękowy, ma osobne moduły do drzemki i skupienia i szybko się uruchamia. Celowo nie oferuje żadnego śledzenia snu ani analiz."
+        },
+        {
+          "q": "Ile kosztuje Pzizz?",
+          "a": "Pzizz kosztuje $70 rocznie lub jednorazowe odblokowanie. Jest też ograniczona wersja darmowa, ale pełny zestaw modułów, w tym drzemka i skupienie, wymaga płatnego planu. W żadnym planie nie ma śledzenia snu."
+        },
+        {
+          "q": "Jakie są wady Pzizz?",
+          "a": "Pzizz nie ma żadnego śledzenia snu i celowo żadnych wniosków ani analiz. Robi tylko jedno, a pełny zestaw modułów wymaga subskrypcji, więc wersja darmowa jest ograniczona. Jeśli chcesz analiz snu, to niewłaściwa aplikacja."
+        }
+      ]
     }
   },
   "comparisons": {

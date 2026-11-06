@@ -4820,6 +4820,50 @@
           "a": "Os lençóis DryLine são ideais como a entrada confiável mais barata para um sono mais fresco sem hardware ativo, sem unidade de controle, água ou instalação. Servem para quem ainda não quer se comprometer com um sistema ativo de mais de $600 como o BedJet; para controle real de temperatura, o ONDA indica Eight Sleep, ChiliPad ou BedJet."
         }
       ]
+    },
+    "pzizz": {
+      "verdict": "Um app de áudio para dormir focado — seu algoritmo cria uma paisagem sonora nova a cada noite para o áudio continuar variado —, mas faz uma coisa só e não monitora nada.",
+      "summary": "O Pzizz faz uma coisa só: embala você até dormir. Seu algoritmo «dreamscape» gera a cada sessão uma mistura única de música, voz e efeitos, para o áudio continuar variado. Ele não monitora o sono e não tem análises — é um auxílio puro para pegar no sono.",
+      "description": "Análise do ONDA do Pzizz — um app de áudio focado em sono e cochilos cujo algoritmo gera uma paisagem sonora nova a cada sessão. Pontuado em conteúdo para relaxar e custo-benefício.",
+      "bestFor": "Ideal para quem só quer ser embalado até dormir, sem nenhum monitoramento.",
+      "testNote": "Avaliação baseada em evidências — a partir de informações públicas, dados das lojas de apps e análises independentes de 2026. Não baseada em um longo teste pessoal do ONDA.",
+      "productType": "App de áudio para dormir",
+      "pros": [
+        "Uma paisagem sonora nova, sem repetição, a cada sessão",
+        "Módulos dedicados a cochilo e foco, não só a sono",
+        "Simples, limpo e rápido de começar",
+        "Existe uma opção de desbloqueio único"
+      ],
+      "cons": [
+        "Nenhum monitoramento de sono",
+        "Sem insights nem análises — por design",
+        "Faz uma coisa só",
+        "O conjunto completo de módulos exige assinatura"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Nenhum monitoramento — o Pzizz toca áudio, não mede a sua noite.",
+        "wind-down-content": "É todo o propósito dele — um algoritmo que gera uma paisagem sonora nova para sono ou cochilo a cada sessão.",
+        "sleep-science": "Baseado em pesquisas sobre ruído, música e voz; módulos para sono, cochilos e foco.",
+        "insights": "Nenhum — não há nada para analisar, por design.",
+        "app-experience": "Simples e limpo — escolha um módulo, defina um timer, durma.",
+        "free-tier": "Uma versão gratuita limitada; o conjunto completo de módulos exige a assinatura.",
+        "value": "Cerca de 70 USD por ano, ou um desbloqueio único — razoável para uma ferramenta usada toda noite."
+      },
+      "content": "## Onde ele se destaca\n\nO Pzizz faz uma coisa e faz bem: embala você até dormir. Seu algoritmo «dreamscape» monta a cada sessão uma mistura única de música, narração e efeitos sonoros, para o áudio continuar variado. Módulos dedicados a cochilo e foco levam a mesma ideia para o dia. O app é agradavelmente simples: escolha um módulo, defina um timer, durma.\n\n## Quais são as desvantagens do Pzizz?\n\nÉ um auxílio para pegar no sono e nada mais. Não há monitoramento, análises nem informações sobre a sua noite — por design, mas isso significa que o Pzizz não consegue dizer se algo está melhorando. O conjunto completo de módulos exige assinatura.\n\n## Quem deve comprar o Pzizz?\n\nEscolha o Pzizz se você só quer ser embalado até dormir e não tem interesse em monitoramento. Se você quer medir a sua noite ou ter uma biblioteca de relaxamento maior, um monitor de sono ou o BetterSleep combina mais.\n\n---\n\n## Leitura complementar\n\nA biologia do sono por trás do que esses apps medem e dos protocolos que eles apoiam.\n\n- [Estimulação acústica do sono sincronizada com a fase](/articles/phase-locked-acoustic-sleep) — som e início do sono: o que dizem as evidências\n- [O sono realmente limpa o cérebro? As evidências sobre o sistema glinfático](/articles/nightly-flush-glymphatic-neural-cache) — o que está demonstrado em pessoas e o que ainda é discutido\n",
+      "faq": [
+        {
+          "q": "O Pzizz vale a pena?",
+          "a": "O Pzizz vale a pena se você só quer ser embalado até dormir, sem monitoramento. Ele gera a cada sessão uma paisagem sonora nova e sem repetição, traz módulos dedicados a cochilo e foco e é rápido de começar. Por design, não oferece monitoramento de sono nem análises."
+        },
+        {
+          "q": "Quanto custa o Pzizz?",
+          "a": "O Pzizz custa $70 por ano, ou um desbloqueio único. Também existe uma versão gratuita limitada, mas o conjunto completo de módulos, incluindo cochilo e foco, exige um plano pago. Nenhum nível inclui monitoramento de sono."
+        },
+        {
+          "q": "Quais são as desvantagens do Pzizz?",
+          "a": "O Pzizz não tem nenhum monitoramento de sono e, por design, nenhum insight ou análise. Ele faz uma coisa só, e o conjunto completo de módulos exige assinatura, então a versão gratuita é limitada. Se você quer análises de sono, é o app errado."
+        }
+      ]
     }
   },
   "comparisons": {

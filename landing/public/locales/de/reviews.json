@@ -4820,6 +4820,50 @@
           "a": "Die DryLine-Laken eignen sich am besten als günstigster glaubwürdiger Einstieg in kühleren Schlaf ohne aktive Technik – ohne Steuereinheit, Wasser oder Installation. Sie passen zu allen, die sich noch nicht auf ein aktives System für über $600 wie BedJet festlegen wollen; für echte Klimasteuerung verweist ONDA auf Eight Sleep, ChiliPad oder BedJet."
         }
       ]
+    },
+    "pzizz": {
+      "verdict": "Eine fokussierte Schlaf-Audio-App – ihr Algorithmus baut jede Nacht eine neue Klanglandschaft, damit der Ton abwechslungsreich bleibt –, aber sie kann nur eine Sache und trackt nichts.",
+      "summary": "Pzizz macht genau eine Sache: Es spielt dich in den Schlaf. Sein „Dreamscape“-Algorithmus erzeugt bei jeder Sitzung eine einzigartige Mischung aus Musik, Stimme und Effekten, sodass der Ton abwechslungsreich bleibt. Es trackt keinen Schlaf und hat keine Auswertungen – eine reine Einschlafhilfe.",
+      "description": "ONDA-Test von Pzizz – eine fokussierte Schlaf- und Nickerchen-Audio-App, deren Algorithmus bei jeder Sitzung eine neue Klanglandschaft erzeugt. Bewertet nach Entspannungsinhalten und Preis-Leistung.",
+      "bestFor": "Ideal für alle, die sich einfach in den Schlaf spielen lassen wollen, ganz ohne Tracking.",
+      "testNote": "Evidenzbasierte Bewertung – auf Grundlage öffentlicher Informationen, App-Store-Daten und unabhängiger Tests aus 2026. Nicht auf einem längeren Praxistest durch ONDA basierend.",
+      "productType": "Schlaf-Audio-App",
+      "pros": [
+        "Bei jeder Sitzung eine neue, sich nicht wiederholende Klanglandschaft",
+        "Eigene Module für Nickerchen und Fokus, nicht nur für Schlaf",
+        "Einfach, aufgeräumt und schnell gestartet",
+        "Es gibt eine Einmalkauf-Option"
+      ],
+      "cons": [
+        "Überhaupt kein Schlaftracking",
+        "Keine Einblicke oder Auswertungen – bewusst so",
+        "Kann nur eine Sache",
+        "Für alle Module ist ein Abo nötig"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Gar kein Tracking – Pzizz spielt Audio ab, es misst deine Nacht nicht.",
+        "wind-down-content": "Der ganze Sinn der App – ein Algorithmus, der bei jeder Sitzung eine neue Schlaf- oder Nickerchen-Klanglandschaft erzeugt.",
+        "sleep-science": "Basiert auf Forschung zu Rauschen, Musik und Stimme; Module für Schlaf, Nickerchen und Fokus.",
+        "insights": "Keine – es gibt bewusst nichts auszuwerten.",
+        "app-experience": "Einfach und aufgeräumt – Modul wählen, Timer stellen, schlafen.",
+        "free-tier": "Eine eingeschränkte Gratisversion; für alle Module ist das Abo nötig.",
+        "value": "Rund 70 USD pro Jahr oder ein Einmalkauf – angemessen für ein Werkzeug, das du jede Nacht nutzt."
+      },
+      "content": "## Wo es vorn liegt\n\nPzizz macht eine Sache, und die gut: Es spielt dich in den Schlaf. Sein „Dreamscape“-Algorithmus baut bei jeder Sitzung eine einzigartige Mischung aus Musik, Sprecherstimme und Soundeffekten, sodass der Ton abwechslungsreich bleibt. Eigene Module für Nickerchen und Fokus übertragen dieselbe Idee auf den Tag. Die App ist erfrischend einfach: Modul wählen, Timer stellen, schlafen.\n\n## Was sind die Nachteile von Pzizz?\n\nEs ist eine Einschlafhilfe und sonst nichts. Kein Tracking, keine Auswertungen, keine Einblicke in deine Nacht – bewusst so, aber dadurch kann Pzizz dir nicht sagen, ob sich etwas verbessert. Für alle Module ist ein Abo nötig.\n\n## Wer sollte Pzizz kaufen?\n\nWähle Pzizz, wenn du dich einfach in den Schlaf spielen lassen willst und kein Interesse an Tracking hast. Wenn du deine Nacht messen oder eine größere Entspannungsbibliothek willst, passt ein Tracker oder BetterSleep besser.\n\n---\n\n## Hintergrund\n\nDie Schlafbiologie hinter dem, was diese Apps messen, und den Protokollen, die sie unterstützen.\n\n- [Phasengekoppelte akustische Schlafstimulation](/articles/phase-locked-acoustic-sleep) – Klang und Einschlafen: die Studienlage\n- [Reinigt Schlaf wirklich das Gehirn? Die glymphatische Evidenz](/articles/nightly-flush-glymphatic-neural-cache) – was beim Menschen gezeigt ist und was noch umstritten ist\n",
+      "faq": [
+        {
+          "q": "Lohnt sich Pzizz?",
+          "a": "Pzizz lohnt sich, wenn du dich einfach in den Schlaf spielen lassen willst, ohne Tracking. Es erzeugt bei jeder Sitzung eine neue, sich nicht wiederholende Klanglandschaft, bietet eigene Module für Nickerchen und Fokus und ist schnell gestartet. Schlaftracking oder Auswertungen gibt es bewusst gar nicht."
+        },
+        {
+          "q": "Was kostet Pzizz?",
+          "a": "Pzizz kostet laut Liste $70 pro Jahr oder einmalig per Freischaltung. Es gibt auch eine eingeschränkte Gratisversion, aber alle Module, einschließlich Nickerchen und Fokus, brauchen einen bezahlten Plan. Schlaftracking gibt es in keiner Stufe."
+        },
+        {
+          "q": "Was sind die Nachteile von Pzizz?",
+          "a": "Pzizz hat überhaupt kein Schlaftracking und bewusst keine Einblicke oder Auswertungen. Es kann nur eine Sache, und für alle Module ist ein Abo nötig, die Gratisversion ist also eingeschränkt. Wenn du Schlafauswertungen willst, ist es die falsche App."
+        }
+      ]
     }
   },
   "comparisons": {
