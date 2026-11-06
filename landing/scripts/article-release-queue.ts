@@ -625,6 +625,7 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'sunlighten-mpulse' },
   { collection: 'reviews', slug: 'theragun-elite' },
   { collection: 'reviews', slug: 'opove-m3-pro-2' },
+  { collection: 'reviews', slug: 'bob-and-brad-q2-mini' },
   // WAVE_D_NEXT
   ],
 ]
