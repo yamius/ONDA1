@@ -626,6 +626,7 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'theragun-elite' },
   { collection: 'reviews', slug: 'opove-m3-pro-2' },
   { collection: 'reviews', slug: 'bob-and-brad-q2-mini' },
+  { collection: 'reviews', slug: 'renpho-r3' },
   // WAVE_D_NEXT
   ],
 ]
