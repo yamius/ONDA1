@@ -308,4 +308,31 @@ export const SERP_OVERRIDES: Record<string, { title?: string; description?: stri
     description:
       'Enter when you go to bed or need to wake up and get times that land at the end of a 90-minute sleep cycle, so you wake up less groggy. Free, no sign-up.',
   },
+  '/ru/articles/alpha-brain-waves': {
+    title: 'Альфа-волны мозга: что это и что они значат | ONDA Life',
+  },
+  '/uk/articles/alpha-brain-waves': {
+    title: 'Альфа-хвилі мозку: що це і що вони означають | ONDA Life',
+  },
+  '/es/articles/alpha-brain-waves': {
+    title: 'Ondas alfa cerebrales: qué son y qué significan | ONDA Life',
+  },
+  '/pt/articles/alpha-brain-waves': {
+    title: 'Ondas alfa cerebrais: o que são e o que indicam | ONDA Life',
+  },
+  '/fr/articles/alpha-brain-waves': {
+    title: 'Ondes alpha cérébrales : définition et rôle | ONDA Life',
+  },
+  '/de/articles/alpha-brain-waves': {
+    title: 'Alphawellen im Gehirn: was sie bedeuten | ONDA Life',
+  },
+  '/it/articles/alpha-brain-waves': {
+    title: 'Onde alfa cerebrali: cosa sono e cosa indicano | ONDA Life',
+  },
+  '/nl/articles/alpha-brain-waves': {
+    title: 'Alfagolven in de hersenen: wat ze betekenen | ONDA Life',
+  },
+  '/pl/articles/alpha-brain-waves': {
+    title: 'Fale alfa w mózgu: czym są i co oznaczają | ONDA Life',
+  },
 }
