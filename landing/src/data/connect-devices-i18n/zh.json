@@ -140,12 +140,15 @@
       }
     },
     "garmin": {
-      "metaTitle": "如何解读 Garmin HRV Status（Balanced、Low）| ONDA Life",
-      "metaDescription": "如何解读 Garmin HRV Status：Balanced、Unbalanced 和 Low 的含义、为什么需要数周建立基线、Garmin 能否连接 ONDA，以及如何解读偏低的一晚。",
+      "metaTitle": "Garmin HRV 状态：Balanced、Low、Poor 是什么意思 | ONDA Life",
+      "metaDescription": "Garmin HRV 状态是什么意思：Balanced、Unbalanced、Low 和 Poor，为什么需要大约三周的夜间数据，为什么 HRV 偏高也可能显示 Unbalanced，以及如何看待糟糕的一晚。",
       "h1": "如何解读你的 Garmin HRV Status",
-      "lead": "Garmin 把你的夜间心率变异性（HRV）与你自己的范围比较，标为 Balanced、Unbalanced 或 Low。下面说明这些标签的含义，以及它们为什么会变化。",
+      "lead": "Garmin 会把你夜间心率变异性（HRV）的 7 天平均值与你自己的基线范围比较，并标记为 Balanced、Unbalanced、Low 或 Poor。下面说明每个标签的含义以及它为什么会变化。",
       "shows": [
-        "HRV Status 把你近期的夜间 HRV 放在个人范围中比较，并标为 Balanced、Unbalanced 或 Low。独立的说明文章称，基线需要大约三周的佩戴才能形成。",
+        "手表整晚以 5 分钟为窗口测量 HRV，并显示前一晚的平均 HRV。HRV 状态本身基于你的 7 天平均值，与个人基线范围比较。Garmin 表示，需要夜间佩戴手表约三周，HRV 状态才会完全启用。",
+        "Garmin 的四个标签：Balanced — 7 天平均值在你的范围内。Unbalanced — 超出范围，偏高或略低。Low — 明显低于你的基线。Poor — 你的基线本身已低于 Garmin 的年龄标准（此时不再显示范围）。",
+        "更高不一定更好：Garmin 指出，明显高于个人基线的 HRV 可能与功能性过度训练有关，尤其是在大量低强度训练之后，因此偏高的数值也可能显示为 Unbalanced。",
+        "你的基线不是固定的：它会随测量值缓慢变化，长时间训练后可能偏低，并且通常随年龄下降。在兼容的手表上，夜间 HRV 还会用于 Training Status 和 Training Readiness。",
         "“Unbalanced”只表示你处于自己的范围之外——高于或低于该范围。Garmin 用户常常问，为什么它会在状态良好的一段时间后出现：范围本身会随着你的读数变化而移动。",
         "Garmin 自己的 HRV Status 页面说明了公式：RMSSD，在你睡眠时测量（引文见下）。"
       ],
@@ -155,6 +158,18 @@
         {
           "q": "我感觉很好，为什么 Garmin 显示 Unbalanced？",
           "a": "Unbalanced 表示处于你近期个人范围之外，无论高低。它描述的是这个数字，而不是你的健康状况。"
+        },
+        {
+          "q": "HRV 状态 Low 和 Poor 有什么区别？",
+          "a": "Low 表示你的 7 天平均值明显低于自己的基线。Poor 表示你的基线本身低于 Garmin 的年龄标准；此时 Garmin 不再显示范围。"
+        },
+        {
+          "q": "Garmin HRV 状态需要多久才能开始显示？",
+          "a": "据 Garmin 介绍，需要大约三周的规律夜间佩戴。从第一晚起就能看到夜间平均 HRV，但状态需要这段历史来建立你的范围。"
+        },
+        {
+          "q": "Garmin 上 HRV 高总是好事吗？",
+          "a": "不一定。Garmin 指出，明显高于个人基线的 HRV 可能与功能性过度训练有关，尤其是在大量低强度训练之后，所以偏高的数值也可能显示为 Unbalanced。"
         },
         {
           "q": "ONDA 能读取我的 Garmin 数据吗？",

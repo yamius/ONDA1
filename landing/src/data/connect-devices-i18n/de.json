@@ -140,12 +140,15 @@
       }
     },
     "garmin": {
-      "metaTitle": "Garmin HRV Status lesen (Balanced, Low) | ONDA Life",
-      "metaDescription": "Garmin HRV Status: Balanced, Unbalanced und Low, warum die Baseline Wochen braucht, ob Garmin mit ONDA verbindet und wie du niedrige Nächte liest.",
+      "metaTitle": "Garmin HRV Status: Balanced, Low, Poor erklärt | ONDA Life",
+      "metaDescription": "Was der Garmin HRV Status bedeutet: Balanced, Unbalanced, Low und Poor, warum er etwa drei Wochen Nächte braucht, warum eine hohe HRV Unbalanced sein kann und wie du eine schlechte Nacht liest.",
       "h1": "So liest du deinen Garmin HRV Status",
-      "lead": "Garmin kennzeichnet deine nächtliche Herzratenvariabilität (HRV) als Balanced, Unbalanced oder Low im Vergleich zu deinem eigenen Bereich. Hier erfährst du, was diese Bezeichnungen bedeuten und warum sie sich verschieben können.",
+      "lead": "Garmin vergleicht deinen 7-Tage-Durchschnitt der nächtlichen Herzratenvariabilität (HRV) mit deinem eigenen Referenzbereich und vergibt das Label Balanced, Unbalanced, Low oder Poor. Hier steht, was jedes Label bedeutet und warum es sich ändern kann.",
       "shows": [
-        "HRV Status setzt deine jüngste nächtliche HRV in Bezug zu einem persönlichen Bereich und kennzeichnet sie als Balanced, Unbalanced oder Low. Unabhängige Erklärungen beschreiben, dass die Baseline etwa drei Wochen Tragezeit braucht, um sich zu bilden.",
+        "Die Uhr misst die HRV die ganze Nacht in 5-Minuten-Fenstern und zeigt den Durchschnitt der letzten Nacht. Der HRV Status selbst beruht auf deinem 7-Tage-Durchschnitt im Vergleich zu einem persönlichen Referenzbereich. Laut Garmin musst du die Uhr etwa drei Wochen nachts tragen, bevor der HRV Status voll aktiv ist.",
+        "Die vier Labels laut Garmin: Balanced — dein 7-Tage-Durchschnitt liegt in deinem Bereich. Unbalanced — außerhalb, darüber oder etwas darunter. Low — deutlich unter deinem Referenzwert. Poor — dein Referenzbereich selbst ist unter Garmins Altersstandards gefallen (der Bereich wird dann nicht mehr angezeigt).",
+        "Höher ist nicht immer besser: Laut Garmin kann eine HRV deutlich über deinem Referenzwert mit funktioneller Überlastung zusammenhängen, besonders nach viel Training mit niedriger Intensität – deshalb kann auch ein hoher Wert als Unbalanced erscheinen.",
+        "Dein Referenzbereich ist nicht fest: Er verschiebt sich langsam mit deinen Messwerten, kann nach einem langen Trainingsblock niedriger liegen und sinkt meist mit dem Alter. Auf kompatiblen Uhren fließt die nächtliche HRV auch in Training Status und Training Readiness ein.",
         "„Unbalanced“ bedeutet nur, dass du außerhalb deines eigenen Bereichs liegst – darüber oder darunter. Garmin-Nutzer fragen oft, warum es nach einer guten Phase erscheint: Der Bereich selbst verschiebt sich, wenn sich deine Werte ändern.",
         "Garmins eigene HRV-Status-Seite nennt die Formel: RMSSD, gemessen während du schläfst (Zitat unten)."
       ],
@@ -155,6 +158,18 @@
         {
           "q": "Warum zeigt Garmin Unbalanced, obwohl ich mich gut fühle?",
           "a": "Unbalanced bedeutet außerhalb deines jüngsten persönlichen Bereichs, in beide Richtungen. Es beschreibt die Zahl, nicht deine Gesundheit."
+        },
+        {
+          "q": "Was ist der Unterschied zwischen HRV Status Low und Poor?",
+          "a": "Low bedeutet, dass dein 7-Tage-Durchschnitt deutlich unter deinen Referenzwert gefallen ist. Poor bedeutet, dass dein Referenzwert selbst unter Garmins Altersstandards liegt; Garmin zeigt den Bereich dann nicht mehr an."
+        },
+        {
+          "q": "Wie lange dauert es, bis der Garmin HRV Status startet?",
+          "a": "Laut Garmin etwa drei Wochen regelmäßiges Tragen in der Nacht. Den HRV-Durchschnitt der Nacht siehst du ab der ersten Nacht, aber der Status braucht diese Historie, um deinen Bereich zu bilden."
+        },
+        {
+          "q": "Ist eine hohe HRV bei Garmin immer gut?",
+          "a": "Nein. Laut Garmin kann eine HRV deutlich über deinem Referenzwert mit funktioneller Überlastung zusammenhängen, besonders nach viel Training mit niedriger Intensität – deshalb kann ein hoher Wert als Unbalanced erscheinen."
         },
         {
           "q": "Kann ONDA meine Garmin-Daten lesen?",

@@ -140,12 +140,15 @@
       }
     },
     "garmin": {
-      "metaTitle": "Como interpretar o HRV Status do Garmin | ONDA Life",
-      "metaDescription": "HRV Status do Garmin: o que significam Balanced, Unbalanced e Low, por que a linha de base leva semanas, se conecta ao ONDA e como ler uma noite baixa.",
+      "metaTitle": "HRV Status da Garmin: Balanced, Low, Poor explicado | ONDA Life",
+      "metaDescription": "O que significa o HRV Status da Garmin: Balanced, Unbalanced, Low e Poor, por que precisa de cerca de três semanas de noites, por que uma HRV alta pode ser Unbalanced e como ler uma noite ruim.",
       "h1": "Como interpretar o HRV Status do seu Garmin",
-      "lead": "O Garmin classifica a sua variabilidade da frequência cardíaca (VFC, HRV) noturna como Balanced, Unbalanced ou Low em relação à sua própria faixa. Veja o que esses rótulos significam e por que podem mudar.",
+      "lead": "A Garmin compara a sua média de 7 dias de variabilidade da frequência cardíaca (VFC, HRV) noturna com a sua própria faixa de referência e a classifica como Balanced, Unbalanced, Low ou Poor. Veja o que cada rótulo significa e por que pode mudar.",
       "shows": [
-        "O HRV Status situa a sua HRV noturna recente em relação a uma faixa pessoal e a classifica como Balanced, Unbalanced ou Low. Explicações independentes descrevem que a linha de base leva cerca de três semanas de uso para se formar.",
+        "O relógio mede a HRV a noite toda em janelas de 5 minutos e mostra a média da noite anterior. O HRV Status se baseia na sua média de 7 dias, comparada com uma faixa de referência pessoal. A Garmin diz que é preciso usar o relógio à noite por cerca de três semanas antes que o HRV Status fique totalmente ativo.",
+        "Os quatro rótulos, segundo a Garmin: Balanced — sua média de 7 dias está dentro da sua faixa. Unbalanced — fora dela, acima ou um pouco abaixo. Low — bem abaixo da sua referência. Poor — sua própria referência caiu abaixo dos padrões da Garmin para a sua idade (a faixa deixa então de ser exibida).",
+        "Mais alto nem sempre é melhor: a Garmin observa que uma HRV muito acima da sua referência pode estar ligada a sobrecarga funcional, sobretudo depois de muito treino de baixa intensidade, então um valor alto também pode aparecer como Unbalanced.",
+        "Sua referência não é fixa: ela se desloca devagar com as suas leituras, pode ficar mais baixa após um longo bloco de treino e tende a cair com a idade. Em relógios compatíveis, a HRV noturna também alimenta o Training Status e o Training Readiness.",
         "“Unbalanced” significa apenas que você está fora da sua própria faixa — acima ou abaixo dela. Usuários do Garmin costumam perguntar por que ele aparece depois de uma boa fase: a própria faixa se desloca conforme as suas leituras mudam.",
         "A própria página do Garmin sobre o HRV Status informa a fórmula: RMSSD, medido enquanto você dorme (citação abaixo)."
       ],
@@ -155,6 +158,18 @@
         {
           "q": "Por que o Garmin diz Unbalanced quando me sinto bem?",
           "a": "Unbalanced significa fora da sua faixa pessoal recente, em qualquer direção. É uma descrição do número, não da sua saúde."
+        },
+        {
+          "q": "Qual a diferença entre o HRV Status Low e Poor?",
+          "a": "Low significa que sua média de 7 dias caiu bem abaixo da sua referência. Poor significa que a sua própria referência está abaixo dos padrões da Garmin para a sua idade; a Garmin então para de mostrar a faixa."
+        },
+        {
+          "q": "Quanto tempo o HRV Status da Garmin leva para começar?",
+          "a": "Segundo a Garmin, cerca de três semanas de uso noturno regular. Você vê a média de HRV da noite desde o primeiro dia, mas o status precisa desse histórico para montar a sua faixa."
+        },
+        {
+          "q": "HRV alta na Garmin é sempre bom?",
+          "a": "Não. A Garmin observa que uma HRV muito acima da sua referência pode estar ligada a sobrecarga funcional, sobretudo depois de muito treino de baixa intensidade; por isso um valor alto pode aparecer como Unbalanced."
         },
         {
           "q": "O ONDA pode ler os meus dados do Garmin?",

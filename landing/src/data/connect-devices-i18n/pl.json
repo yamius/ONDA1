@@ -140,12 +140,15 @@
       }
     },
     "garmin": {
-      "metaTitle": "Jak odczytywać HRV Status w Garmin | ONDA Life",
-      "metaDescription": "Garmin HRV Status: co oznaczają Balanced, Unbalanced i Low, czemu baza tworzy się tygodniami, czy Garmin łączy się z ONDA i jak czytać niską noc.",
+      "metaTitle": "Garmin HRV Status: Balanced, Low, Poor — wyjaśnienie | ONDA Life",
+      "metaDescription": "Co oznacza HRV Status w Garminie: Balanced, Unbalanced, Low i Poor, dlaczego potrzeba ok. trzech tygodni nocy, dlaczego wysokie HRV może być Unbalanced i jak czytać złą noc.",
       "h1": "Jak odczytywać HRV Status w Garmin",
-      "lead": "Garmin oznacza Twoją nocną zmienność rytmu serca (HRV) jako Balanced, Unbalanced lub Low w porównaniu z Twoim własnym zakresem. Oto co znaczą te etykiety i dlaczego mogą się zmieniać.",
+      "lead": "Garmin porównuje twoją 7-dniową średnią nocnej zmienności rytmu serca (HRV) z twoim własnym zakresem odniesienia i oznacza ją jako Balanced, Unbalanced, Low lub Poor. Oto co znaczy każda etykieta i dlaczego może się zmieniać.",
       "shows": [
-        "HRV Status odnosi Twoje ostatnie nocne HRV do osobistego zakresu i oznacza je jako Balanced, Unbalanced lub Low. Niezależne poradniki opisują, że baza tworzy się po około trzech tygodniach noszenia.",
+        "Zegarek mierzy HRV przez całą noc w 5-minutowych oknach i pokazuje średnią z ostatniej nocy. Sam HRV Status opiera się na 7-dniowej średniej porównanej z osobistym zakresem odniesienia. Według Garmina zegarek trzeba nosić w nocy przez ok. trzy tygodnie, zanim HRV Status zacznie w pełni działać.",
+        "Cztery etykiety według Garmina: Balanced — 7-dniowa średnia mieści się w twoim zakresie. Unbalanced — poza nim, powyżej lub nieco poniżej. Low — wyraźnie poniżej twojej normy. Poor — sam twój zakres spadł poniżej norm wiekowych Garmina (zakres przestaje być wtedy pokazywany).",
+        "Wyżej nie zawsze znaczy lepiej: Garmin zauważa, że HRV wyraźnie powyżej twojej normy może wiązać się z przeciążeniem czynnościowym, zwłaszcza po dużej ilości treningu o niskiej intensywności, więc wysoka wartość też może dać Unbalanced.",
+        "Twój zakres nie jest stały: przesuwa się powoli wraz z pomiarami, może być niższy po długim bloku treningowym i zwykle spada z wiekiem. Na zgodnych zegarkach nocne HRV zasila też Training Status i Training Readiness.",
         "„Unbalanced” oznacza tylko, że jesteś poza własnym zakresem — powyżej lub poniżej. Użytkownicy Garmin często pytają, dlaczego pojawia się po dobrym okresie: sam zakres przesuwa się wraz ze zmianą odczytów.",
         "Strona HRV Status Garmin podaje wzór: RMSSD, mierzone podczas snu (cytat poniżej)."
       ],
@@ -155,6 +158,18 @@
         {
           "q": "Dlaczego Garmin pokazuje Unbalanced, choć czuję się dobrze?",
           "a": "Unbalanced oznacza wyjście poza Twój ostatni osobisty zakres, w dowolnym kierunku. To opis liczby, a nie Twojego zdrowia."
+        },
+        {
+          "q": "Czym różni się HRV Status Low od Poor?",
+          "a": "Low oznacza, że 7-dniowa średnia spadła wyraźnie poniżej twojej normy. Poor oznacza, że sama twoja norma jest poniżej norm wiekowych Garmina; Garmin przestaje wtedy pokazywać zakres."
+        },
+        {
+          "q": "Po jakim czasie zaczyna działać HRV Status w Garminie?",
+          "a": "Według Garmina po ok. trzech tygodniach regularnego noszenia w nocy. Średnie HRV z nocy widzisz od pierwszej nocy, ale status potrzebuje tej historii, by zbudować twój zakres."
+        },
+        {
+          "q": "Czy wysokie HRV w Garminie to zawsze dobry znak?",
+          "a": "Nie. Garmin zauważa, że HRV wyraźnie powyżej twojej normy może wiązać się z przeciążeniem czynnościowym, zwłaszcza po dużej ilości treningu o niskiej intensywności; dlatego wysoka wartość może być pokazana jako Unbalanced."
         },
         {
           "q": "Czy ONDA może odczytać moje dane z Garmin?",

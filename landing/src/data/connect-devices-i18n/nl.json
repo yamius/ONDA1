@@ -140,12 +140,15 @@
       }
     },
     "garmin": {
-      "metaTitle": "Garmin HRV Status lezen (Balanced, Low) | ONDA Life",
-      "metaDescription": "Garmin HRV Status: wat Balanced, Unbalanced en Low betekenen, waarom een basislijn weken duurt, of Garmin verbindt met ONDA en hoe je een lage nacht leest.",
+      "metaTitle": "Garmin HRV Status: Balanced, Low, Poor uitgelegd | ONDA Life",
+      "metaDescription": "Wat Garmin HRV Status betekent: Balanced, Unbalanced, Low en Poor, waarom het ongeveer drie weken nachten nodig heeft, waarom een hoge HRV Unbalanced kan zijn en hoe je een slechte nacht leest.",
       "h1": "Zo lees je je Garmin HRV Status",
-      "lead": "Garmin geeft je nachtelijke hartslagvariabiliteit (HRV) het label Balanced, Unbalanced of Low, vergeleken met je eigen bereik. Hier lees je wat die labels betekenen en waarom ze kunnen verschuiven.",
+      "lead": "Garmin vergelijkt je 7-daags gemiddelde van de nachtelijke hartslagvariabiliteit (HRV) met je eigen referentiebereik en geeft het label Balanced, Unbalanced, Low of Poor. Dit betekent elk label en daarom kan het verschuiven.",
       "shows": [
-        "HRV Status zet je recente nachtelijke HRV af tegen een persoonlijk bereik en geeft het label Balanced, Unbalanced of Low. Onafhankelijke uitleg beschrijft dat het ongeveer drie weken dragen kost voordat de basislijn gevormd is.",
+        "Je horloge meet de HRV de hele nacht in vensters van 5 minuten en toont het gemiddelde van afgelopen nacht. De HRV Status zelf is gebaseerd op je 7-daags gemiddelde, vergeleken met een persoonlijk referentiebereik. Volgens Garmin moet je het horloge ongeveer drie weken ’s nachts dragen voordat HRV Status volledig actief is.",
+        "De vier labels volgens Garmin: Balanced — je 7-daags gemiddelde ligt binnen je bereik. Unbalanced — erbuiten, erboven of iets eronder. Low — duidelijk onder je referentie. Poor — je referentie zelf is onder Garmins leeftijdsnormen gezakt (het bereik wordt dan niet meer getoond).",
+        "Hoger is niet altijd beter: Garmin merkt op dat een HRV ruim boven je referentie samen kan hangen met functionele overbelasting, vooral na veel training op lage intensiteit, dus ook een hoge waarde kan als Unbalanced verschijnen.",
+        "Je referentie ligt niet vast: die verschuift langzaam met je metingen, kan lager liggen na een lang trainingsblok en daalt meestal met de leeftijd. Op compatibele horloges telt de nachtelijke HRV ook mee in Training Status en Training Readiness.",
         "“Unbalanced” betekent alleen dat je buiten je eigen bereik zit, erboven of eronder. Garmin-gebruikers vragen vaak waarom het verschijnt na een goede periode: het bereik zelf verschuift als je metingen veranderen.",
         "De eigen HRV Status-pagina van Garmin noemt de formule: RMSSD, gemeten terwijl je slaapt (hieronder geciteerd)."
       ],
@@ -155,6 +158,18 @@
         {
           "q": "Waarom zegt Garmin Unbalanced terwijl ik me goed voel?",
           "a": "Unbalanced betekent buiten je recente persoonlijke bereik, in beide richtingen. Het beschrijft het getal, niet je gezondheid."
+        },
+        {
+          "q": "Wat is het verschil tussen HRV Status Low en Poor?",
+          "a": "Low betekent dat je 7-daags gemiddelde duidelijk onder je referentie is gezakt. Poor betekent dat je referentie zelf onder Garmins leeftijdsnormen ligt; Garmin toont het bereik dan niet meer."
+        },
+        {
+          "q": "Hoe lang duurt het voordat Garmin HRV Status start?",
+          "a": "Volgens Garmin ongeveer drie weken regelmatig ’s nachts dragen. Het nachtelijke HRV-gemiddelde zie je vanaf de eerste nacht, maar de status heeft die geschiedenis nodig om je bereik op te bouwen."
+        },
+        {
+          "q": "Is een hoge HRV op Garmin altijd goed?",
+          "a": "Nee. Garmin merkt op dat een HRV ruim boven je referentie samen kan hangen met functionele overbelasting, vooral na veel training op lage intensiteit; daarom kan een hoge waarde als Unbalanced verschijnen."
         },
         {
           "q": "Kan ONDA mijn Garmin-gegevens lezen?",
