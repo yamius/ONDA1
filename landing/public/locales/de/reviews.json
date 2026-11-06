@@ -4734,6 +4734,49 @@
           "a": "Für einen funktionsreichen Ring ohne Abo mit langem Akku und stillen Vibrationshinweisen ist der Gen 3 eine starke Option ohne Mitgliedschaft. Oura liegt weiter vorn bei der ausgereiftesten App und hat mehr veröffentlichte Schlafforschung (überwiegend zu früheren Generationen, teils von Oura finanziert)."
         }
       ]
+    },
+    "tempur-breeze-pro": {
+      "verdict": "Passive Kühlung – keine aktive Klimasteuerung. Hochwertige Tempur-Matratze, die kühler bleibt als normaler Memory-Schaum, ganz ohne Steuereinheit.",
+      "summary": "Die Tempur-Breeze Pro ist Tempur-Pedics hochwertige Kühlmatratze – ein passives System, das dank Phasenwechselmaterialien und kühlenden Bezügen kühler bleibt als normaler Memory-Schaum. Keine aktive Klimasteuerung wie Eight Sleep oder ChiliPad; sie ist hier dabei, weil sie bei der Kaufentscheidung für Schlafklima-Produkte als Alternative für alle auftaucht, die kein System mit Steuereinheit wollen.",
+      "description": "ONDA-Test der Tempur-Breeze Pro – die hochwertige passive Kühlmatratze von Tempur-Pedic, ohne aktive Klimasteuerung.",
+      "bestFor": "Ideal für alle, die kühler als üblich schlafen wollen – ohne aktive Klimatechnik und ohne Abo.",
+      "testNote": "Evidenzbasierte Bewertung – auf Grundlage der Tempur-Pedic-Produktdokumentation und unabhängiger Matratzentests aus 2026. Von ONDA nicht selbst getestet. Aufgenommen als passive Kühlalternative zu aktivem Smart-Schlafklima.",
+      "productType": "Passive Kühlmatratze (keine aktive Klimasteuerung)",
+      "pros": [
+        "Keine Steuereinheit, kein Wassertank, keine Installation – nur die Matratze",
+        "Hochwertige Tempur-Verarbeitung mit 10 Jahren Garantie",
+        "Passive Kühlung bleibt kühler als normaler Memory-Schaum",
+        "Ein Abo ist gar nicht möglich"
+      ],
+      "cons": [
+        "Keine aktive Klimasteuerung – Temperatur nicht einstellbar",
+        "Passiver Kühleffekt lässt im Lauf der Nacht nach",
+        "Kein Tracking",
+        "Preis einer Premiummatratze ohne Smart-Funktionen"
+      ],
+      "scoreNotes": {
+        "climate-range": "Kein aktives Klima. Die passive Kühlung hält die Oberfläche in der ersten Nachthälfte 3–5 °C kühler als normaler Memory-Schaum. Keine Steuerung, keine Zeitpläne.",
+        "build": "Hochwertige Tempur-Pedic-Matratze, 10 Jahre Garantie. Die Verarbeitung ist das, wofür man bezahlt.",
+        "app-tracking": "Keine App, kein Tracking. Eine Matratze, kein Smart-System.",
+        "form-factor": "Komplette Matratze – ersetzt dein bisheriges Bett. Keine Steuereinheit, kein Wassertank, keine Installation.",
+        "subscription": "Kein Abo möglich – passives System.",
+        "value": "$3,000-5,000 für eine Matratze mit geringem Kühleffekt. Preis einer Premiummatratze ohne aktive Klimafunktion."
+      },
+      "content": "## Wo sie vorn liegt\n\nDie Tempur-Breeze Pro ist die passive Kühlmatratze als Alternative zu aktiven Klimasystemen. Phasenwechselmaterialien und kühlende Bezüge halten die Matratzenoberfläche 3–5 °C kühler als normaler Memory-Schaum – ohne Steuereinheit, Wassertank oder Zeitpläne. Für alle, die kühler als üblich schlafen wollen, aber ohne den Aufwand aktiver Klimatechnik, ist das die Alternative.\n\n## Was sind die Nachteile der Kühlmatratze Tempur-Breeze Pro?\n\nKein aktives Klima. Die Kühlung ist passiv und lässt im Lauf der Nacht nach. Keine Temperatursteuerung. Keine Zeitpläne. Kein Tracking. Als „Schlafklima“-Werkzeug ist sie der sanftestmögliche Eingriff.\n\n## Wer sollte die Kühlmatratze Tempur-Breeze Pro kaufen?\n\nWähle die Tempur-Breeze Pro, wenn du eine hochwertige Matratze willst, die kühler bleibt als normaler Memory-Schaum, ganz ohne aktive Technik. Für echte Klimasteuerung: Eight Sleep Pod 4 oder ChiliPad Dock Pro. Für Luftstrom zum niedrigeren Preis: BedJet 3.\n\n---\n\n## Hintergrund\n\nDie Biologie dahinter, warum die Regulierung der Betttemperatur Schlaftiefe und Erholung beeinflusst.\n\n- [Reinigt Schlaf wirklich das Gehirn? Die glymphatische Evidenz](/articles/nightly-flush-glymphatic-neural-cache) – was beim Menschen gezeigt ist und was noch umstritten ist\n- [Protokoll: der zirkadiane Hard Reset](/articles/protocol-circadian-hard-reset) – wo Kühlung in eine Routine zum Zurücksetzen des Schlafrhythmus passt\n- [Ursprünglicher Takt und zirkadiane Anker](/articles/ancestral-sync-circadian-anchors) – warum nächtliche Abkühlung dem ursprünglichen Ausgangszustand entspricht\n",
+      "faq": [
+        {
+          "q": "Lohnt sich die Tempur-Breeze Pro?",
+          "a": "Die Tempur-Breeze Pro lohnt sich, wenn du kühler als üblich schlafen willst, ohne aktive Klimatechnik. Sie braucht keine Steuereinheit, keinen Wassertank und kein Abo und hat 10 Jahre Garantie. Ihre passive Kühlung lässt sich nicht einstellen, lässt im Lauf der Nacht nach, und es gibt kein Tracking."
+        },
+        {
+          "q": "Was kostet die Tempur-Breeze Pro?",
+          "a": "Die Tempur-Breeze Pro kostet etwa $3,800 in Queen-Größe, je nach Matratzenprofil. Das ist der Preis einer Premiummatratze ohne Smart-Funktionen, dafür ist nie ein Abo nötig."
+        },
+        {
+          "q": "Was sind die Nachteile der Tempur-Breeze Pro?",
+          "a": "Die Tempur-Breeze Pro hat keine aktive Klimasteuerung, die Temperatur ist also nicht einstellbar, und ihre passive Kühlung lässt im Lauf der Nacht nach. Sie hat kein Tracking und einen Premiumpreis ohne Smart-Funktionen."
+        }
+      ]
     }
   },
   "comparisons": {

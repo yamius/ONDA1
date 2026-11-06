@@ -4734,6 +4734,49 @@
           "a": "Per un anello senza abbonamento ricco di funzioni, con batteria lunga e avvisi aptici silenziosi, il Gen 3 è un’ottima opzione. Oura resta in testa per l’app più rifinita e ha più ricerca pubblicata sul sonno (soprattutto su generazioni precedenti, in parte finanziata da Oura)."
         }
       ]
+    },
+    "tempur-breeze-pro": {
+      "verdict": "Raffreddamento passivo, non climatizzazione attiva. Un materasso Tempur di fascia alta che resta più fresco del memory foam standard, senza unità di controllo.",
+      "summary": "Il Tempur-Breeze Pro è il materasso rinfrescante di fascia alta di Tempur-Pedic: un sistema passivo che resta più fresco del memory foam standard grazie a materiali a cambiamento di fase e rivestimenti freschi al tatto. Non è una climatizzazione attiva come Eight Sleep o ChiliPad; lo includiamo perché rientra nelle scelte d’acquisto per il clima del sonno, come alternativa per chi non vuole sistemi con unità di controllo.",
+      "description": "Recensione ONDA del Tempur-Breeze Pro: il materasso di fascia alta a raffreddamento passivo di Tempur-Pedic, senza climatizzazione attiva.",
+      "bestFor": "Ideale per chi vuole dormire più fresco del solito senza hardware di climatizzazione attiva né abbonamento.",
+      "testNote": "Valutazione basata sulle evidenze: punteggio ricavato dalla documentazione di Tempur-Pedic e da recensioni indipendenti di materassi del 2026. Non testato direttamente da ONDA. Incluso come alternativa a raffreddamento passivo ai sistemi smart attivi per il clima del sonno.",
+      "productType": "Materasso a raffreddamento passivo (senza climatizzazione attiva)",
+      "pros": [
+        "Nessuna unità di controllo, serbatoio d’acqua o installazione: solo il materasso",
+        "Costruzione Tempur di fascia alta con 10 anni di garanzia",
+        "Il raffreddamento passivo resta più fresco del memory foam standard",
+        "Nessun abbonamento possibile"
+      ],
+      "cons": [
+        "Nessuna climatizzazione attiva: la temperatura non si regola",
+        "L’effetto rinfrescante passivo diminuisce nel corso della notte",
+        "Nessun monitoraggio",
+        "Prezzo da materasso di fascia alta senza funzioni da sistema smart"
+      ],
+      "scoreNotes": {
+        "climate-range": "Nessuna climatizzazione attiva. Il raffreddamento passivo mantiene la superficie 3–5 °C più fresca del memory foam standard nella prima parte della notte. Nessun controllo, nessuna programmazione.",
+        "build": "Materasso di fascia alta Tempur-Pedic, 10 anni di garanzia. La qualità costruttiva è ciò che giustifica il prezzo.",
+        "app-tracking": "Nessuna app, nessun monitoraggio. Un materasso, non un sistema smart.",
+        "form-factor": "Materasso completo: sostituisce quello attuale. Nessuna unità di controllo, nessun serbatoio d’acqua, nessuna installazione.",
+        "subscription": "Nessun abbonamento possibile: sistema passivo.",
+        "value": "$3,000-5,000 per un materasso con un raffreddamento modesto. Prezzo da materasso di fascia alta senza climatizzazione attiva."
+      },
+      "content": "## Dove è in vantaggio\n\nIl Tempur-Breeze Pro è l’alternativa a raffreddamento passivo ai sistemi di climatizzazione attiva. Materiali a cambiamento di fase e rivestimenti freschi al tatto mantengono la superficie del materasso 3–5 °C più fresca del memory foam standard, senza unità di controllo, serbatoio d’acqua o programmazione. Per chi vuole dormire più fresco del solito senza la complicazione dell’hardware di climatizzazione attiva, questa è l’alternativa.\n\n## Quali sono gli svantaggi del materasso rinfrescante Tempur-Breeze Pro?\n\nNon è una climatizzazione attiva. Il raffreddamento è passivo e diminuisce col passare della notte. Nessun controllo della temperatura. Nessuna programmazione. Nessun monitoraggio. Come strumento per il «clima del sonno» è l’intervento più leggero possibile.\n\n## Chi dovrebbe comprare il materasso rinfrescante Tempur-Breeze Pro?\n\nScegli il Tempur-Breeze Pro se vuoi un materasso di fascia alta che resti più fresco del memory foam standard, senza alcun hardware attivo. Per un vero controllo della temperatura, Eight Sleep Pod 4 o ChiliPad Dock Pro. Per un flusso d’aria a prezzo più basso, BedJet 3.\n\n---\n\n## Letture di approfondimento\n\nLa biologia che spiega perché regolare la temperatura del letto influisce sulla profondità del sonno e sul recupero.\n\n- [Il sonno pulisce davvero il cervello? Le prove sul sistema glinfatico](/articles/nightly-flush-glymphatic-neural-cache): cosa è dimostrato nelle persone e cosa è ancora discusso\n- [Protocollo: il reset circadiano completo](/articles/protocol-circadian-hard-reset): dove si inserisce il raffreddamento in una routine per riallineare il ritmo del sonno\n- [Sincronia ancestrale e ancore circadiane](/articles/ancestral-sync-circadian-anchors): perché il raffreddamento notturno corrisponde alla condizione ancestrale\n",
+      "faq": [
+        {
+          "q": "Vale la pena il Tempur-Breeze Pro?",
+          "a": "Il Tempur-Breeze Pro vale la pena se vuoi dormire più fresco del solito senza hardware di climatizzazione attiva. Non richiede unità di controllo, serbatoio d’acqua né abbonamento e ha 10 anni di garanzia. Il suo raffreddamento passivo non è regolabile, si attenua nel corso della notte e non c’è monitoraggio."
+        },
+        {
+          "q": "Quanto costa il Tempur-Breeze Pro?",
+          "a": "Il Tempur-Breeze Pro costa circa $3,800 in misura queen, a seconda del profilo del materasso. È un prezzo da materasso di fascia alta senza funzioni da sistema smart, anche se non serve mai un abbonamento."
+        },
+        {
+          "q": "Quali sono gli svantaggi del Tempur-Breeze Pro?",
+          "a": "Il Tempur-Breeze Pro non ha climatizzazione attiva, quindi la temperatura non si regola, e il suo raffreddamento passivo diminuisce nel corso della notte. Non ha monitoraggio e ha un prezzo di fascia alta senza funzioni da sistema smart."
+        }
+      ]
     }
   },
   "comparisons": {

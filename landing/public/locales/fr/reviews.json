@@ -4734,6 +4734,49 @@
           "a": "Pour une bague sans abonnement riche en fonctions, avec une grande autonomie et des alertes haptiques silencieuses, la Gen 3 est une excellente option. Oura reste en tête pour l’application la plus aboutie et dispose de plus d’études publiées sur le sommeil (surtout sur des générations antérieures, en partie financées par Oura)."
         }
       ]
+    },
+    "tempur-breeze-pro": {
+      "verdict": "Un refroidissement passif, pas une régulation active. Un matelas Tempur haut de gamme qui reste plus frais qu’une mousse à mémoire de forme standard, sans boîtier de commande.",
+      "summary": "Le Tempur-Breeze Pro est le matelas rafraîchissant haut de gamme de Tempur-Pedic : un système passif qui reste plus frais qu’une mousse à mémoire de forme standard grâce à des matériaux à changement de phase et à des housses fraîches au toucher. Ce n’est pas une régulation active comme Eight Sleep ou ChiliPad ; nous l’incluons parce qu’il fait partie des choix d’achat en matière de climat du sommeil, comme alternative pour ceux qui ne veulent pas de système avec boîtier.",
+      "description": "Test ONDA du Tempur-Breeze Pro : le matelas haut de gamme à refroidissement passif de Tempur-Pedic, sans régulation active de la température.",
+      "bestFor": "Idéal pour ceux qui veulent dormir plus au frais que la moyenne sans matériel de régulation active ni abonnement.",
+      "testNote": "Évaluation fondée sur les preuves : notée à partir de la documentation de Tempur-Pedic et de tests indépendants de matelas de 2026. Non testé en main propre par ONDA. Inclus comme alternative à refroidissement passif aux systèmes intelligents de climat du sommeil actifs.",
+      "productType": "Matelas à refroidissement passif (sans régulation active)",
+      "pros": [
+        "Ni boîtier, ni réservoir d’eau, ni installation : seulement le matelas",
+        "Fabrication Tempur haut de gamme avec garantie de 10 ans",
+        "Le refroidissement passif reste plus frais qu’une mousse à mémoire de forme standard",
+        "Aucun abonnement possible"
+      ],
+      "cons": [
+        "Pas de régulation active : impossible de régler la température",
+        "L’effet rafraîchissant passif diminue au fil de la nuit",
+        "Aucun suivi",
+        "Prix de matelas haut de gamme sans fonctions de système intelligent"
+      ],
+      "scoreNotes": {
+        "climate-range": "Pas de climat actif. Le refroidissement passif garde la surface 3 à 5 °C plus fraîche qu’une mousse à mémoire de forme standard en début de nuit. Ni réglage, ni programmation.",
+        "build": "Matelas haut de gamme Tempur-Pedic, garantie de 10 ans. La qualité de fabrication justifie le prix.",
+        "app-tracking": "Ni application, ni suivi. Un matelas, pas un système intelligent.",
+        "form-factor": "Matelas complet : il remplace votre lit actuel. Ni boîtier, ni réservoir d’eau, ni installation.",
+        "subscription": "Aucun abonnement possible : système passif.",
+        "value": "$3,000-5,000 pour un matelas au refroidissement modeste. Prix de matelas haut de gamme sans capacité de régulation active."
+      },
+      "content": "## Là où il est en avance\n\nLe Tempur-Breeze Pro est l’alternative passive aux systèmes de régulation active. Les matériaux à changement de phase et les housses fraîches au toucher gardent la surface du matelas 3 à 5 °C plus fraîche qu’une mousse à mémoire de forme standard, sans boîtier, réservoir d’eau ni programmation. Pour ceux qui veulent dormir plus au frais que la moyenne sans la contrainte d’un matériel de régulation active, c’est l’alternative.\n\n## Quels sont les inconvénients du matelas rafraîchissant Tempur-Breeze Pro ?\n\nCe n’est pas une régulation active. Le refroidissement est passif et diminue au fil de la nuit. Pas de réglage de la température. Pas de programmation. Pas de suivi. Comme outil de « climat du sommeil », c’est l’intervention la plus douce qui soit.\n\n## Qui devrait acheter le matelas rafraîchissant Tempur-Breeze Pro ?\n\nChoisissez le Tempur-Breeze Pro si vous voulez un matelas haut de gamme qui reste plus frais qu’une mousse à mémoire de forme standard, sans aucun matériel actif. Pour une vraie régulation de la température : Eight Sleep Pod 4 ou ChiliPad Dock Pro. Pour un flux d’air à moindre prix : BedJet 3.\n\n---\n\n## Pour aller plus loin\n\nLa biologie qui explique pourquoi la régulation de la température du lit influence la profondeur du sommeil et la récupération.\n\n- [Le sommeil nettoie-t-il vraiment le cerveau ? Les données sur le système glymphatique](/articles/nightly-flush-glymphatic-neural-cache) — ce qui est démontré chez l’humain et ce qui reste discuté\n- [Protocole : la réinitialisation circadienne complète](/articles/protocol-circadian-hard-reset) — la place du refroidissement dans une routine pour recaler le rythme du sommeil\n- [Synchronisation ancestrale et ancres circadiennes](/articles/ancestral-sync-circadian-anchors) — pourquoi le refroidissement nocturne correspond à la situation ancestrale\n",
+      "faq": [
+        {
+          "q": "Le Tempur-Breeze Pro vaut-il le coup ?",
+          "a": "Le Tempur-Breeze Pro vaut le coup si vous voulez dormir plus au frais que la moyenne sans matériel de régulation active. Il ne nécessite ni boîtier, ni réservoir d’eau, ni abonnement, et il est garanti 10 ans. Son refroidissement passif n’est pas réglable, diminue au fil de la nuit, et il n’y a aucun suivi."
+        },
+        {
+          "q": "Combien coûte le Tempur-Breeze Pro ?",
+          "a": "Le Tempur-Breeze Pro coûte environ $3,800 en taille queen, selon le profil du matelas. C’est un prix de matelas haut de gamme sans fonctions de système intelligent, mais aucun abonnement n’est jamais requis."
+        },
+        {
+          "q": "Quels sont les inconvénients du Tempur-Breeze Pro ?",
+          "a": "Le Tempur-Breeze Pro n’a pas de régulation active : la température ne se règle pas, et son refroidissement passif diminue au fil de la nuit. Il n’offre aucun suivi et coûte le prix d’un matelas haut de gamme sans fonctions de système intelligent."
+        }
+      ]
     }
   },
   "comparisons": {

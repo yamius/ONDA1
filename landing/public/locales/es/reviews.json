@@ -5120,6 +5120,49 @@
           "a": "Para un anillo completo, sin suscripción, con batería larga y avisos hápticos silenciosos, el Gen 3 es una opción sólida sin membresía. Oura sigue liderando en la app más refinada y tiene más investigación publicada sobre el sueño (sobre todo de generaciones anteriores, en parte financiada por Oura)."
         }
       ]
+    },
+    "tempur-breeze-pro": {
+      "verdict": "Refrigeración pasiva, no control activo de temperatura. Construcción premium de Tempur que se mantiene más fresca que la espuma viscoelástica estándar, sin necesidad de unidad de control.",
+      "summary": "El Tempur-Breeze Pro es el colchón refrigerante premium de Tempur-Pedic: un sistema pasivo que se mantiene más fresco que la espuma viscoelástica estándar gracias a materiales de cambio de fase y fundas frescas al tacto. No es control activo de temperatura como Eight Sleep o ChiliPad; lo incluimos porque forma parte de la decisión de compra de climatización del sueño como alternativa para quien no quiere sistemas con unidad de control.",
+      "description": "Reseña de ONDA del Tempur-Breeze Pro: el colchón refrigerante pasivo premium de Tempur-Pedic, sin control activo de temperatura.",
+      "bestFor": "Ideal para quien quiere dormir más fresco de lo habitual sin hardware de climatización activa ni suscripción.",
+      "testNote": "Evaluación basada en evidencia: puntuado a partir de la documentación de Tempur-Pedic y de reseñas independientes de colchones de 2026. ONDA no lo ha probado en persona. Incluido como alternativa de refrigeración pasiva a la climatización inteligente activa.",
+      "productType": "Colchón de refrigeración pasiva (sin control activo de temperatura)",
+      "pros": [
+        "Sin unidad de control, depósito de agua ni instalación: solo el colchón",
+        "Construcción premium de Tempur con 10 años de garantía",
+        "La refrigeración pasiva es más fresca que la espuma viscoelástica estándar",
+        "Sin posibilidad de suscripción"
+      ],
+      "cons": [
+        "Sin control activo: no se puede ajustar la temperatura",
+        "El efecto refrigerante pasivo disminuye a lo largo de la noche",
+        "Sin seguimiento",
+        "Precio de colchón premium sin funciones de sistema inteligente"
+      ],
+      "scoreNotes": {
+        "climate-range": "Sin climatización activa. La refrigeración pasiva mantiene la superficie 3–5 °C más fresca que la espuma viscoelástica estándar en la primera parte de la noche. Sin control ni programación.",
+        "build": "Construcción de colchón premium de Tempur-Pedic, 10 años de garantía. La calidad de construcción es lo que justifica el precio.",
+        "app-tracking": "Sin app ni seguimiento. Es un colchón, no un sistema inteligente.",
+        "form-factor": "Colchón completo: sustituye a tu cama actual. Sin unidad de control, sin depósito de agua, sin instalación.",
+        "subscription": "Sin posibilidad de suscripción: es un sistema pasivo.",
+        "value": "$3,000-5,000 por un colchón con una refrigeración modesta. Precio de colchón premium sin capacidad de climatización activa."
+      },
+      "content": "## Dónde destaca\n\nEl Tempur-Breeze Pro es la alternativa de colchón refrigerante pasivo a los sistemas de climatización activa. Los materiales de cambio de fase y las fundas frescas al tacto mantienen la superficie del colchón 3–5 °C más fresca que la espuma viscoelástica estándar, sin unidad de control, depósito de agua ni programación. Para quien quiere dormir más fresco de lo habitual sin el engorro del hardware de climatización activa, esta es la alternativa.\n\n## ¿Cuáles son los inconvenientes del colchón refrigerante Tempur-Breeze Pro?\n\nNo es climatización activa. El efecto refrigerante es pasivo y disminuye a medida que avanza la noche. Sin control de temperatura. Sin programación. Sin seguimiento. Como herramienta de «climatización del sueño», es la intervención más suave posible.\n\n## ¿Quién debería comprar el colchón refrigerante Tempur-Breeze Pro?\n\nElige el Tempur-Breeze Pro si quieres un colchón premium que se mantenga más fresco que la espuma viscoelástica estándar, sin ningún hardware activo. Para un control real de la temperatura, Eight Sleep Pod 4 o ChiliPad Dock Pro. Para flujo de aire a menor precio, BedJet 3.\n\n---\n\n## Lecturas de fondo\n\nLa biología de por qué regular la temperatura de la cama influye en la profundidad del sueño y la recuperación.\n\n- [¿El sueño limpia de verdad tu cerebro? La evidencia glinfática](/articles/nightly-flush-glymphatic-neural-cache): qué se ha demostrado en personas y qué sigue en discusión\n- [Protocolo: el reinicio circadiano completo](/articles/protocol-circadian-hard-reset): dónde encaja la refrigeración en una rutina para reajustar el ritmo del sueño\n- [Sincronía ancestral y anclas circadianas](/articles/ancestral-sync-circadian-anchors): por qué el enfriamiento nocturno coincide con la referencia ancestral\n",
+      "faq": [
+        {
+          "q": "¿Merece la pena el Tempur-Breeze Pro?",
+          "a": "El Tempur-Breeze Pro merece la pena si quieres dormir más fresco de lo habitual sin hardware de climatización activa. No necesita unidad de control, depósito de agua ni suscripción, y tiene 10 años de garantía. Su refrigeración pasiva no se puede ajustar, se reduce a lo largo de la noche y no hay seguimiento."
+        },
+        {
+          "q": "¿Cuánto cuesta el Tempur-Breeze Pro?",
+          "a": "El Tempur-Breeze Pro cuesta unos $3,800 en tamaño queen, según el perfil del colchón. Es precio de colchón premium sin funciones de sistema inteligente, aunque nunca exige suscripción."
+        },
+        {
+          "q": "¿Cuáles son los inconvenientes del Tempur-Breeze Pro?",
+          "a": "El Tempur-Breeze Pro no tiene control activo de temperatura, así que no se puede ajustar, y su refrigeración pasiva disminuye a lo largo de la noche. No tiene seguimiento y tiene precio premium sin funciones de sistema inteligente."
+        }
+      ]
     }
   },
   "comparisons": {
