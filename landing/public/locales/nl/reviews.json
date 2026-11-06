@@ -4646,6 +4646,94 @@
           "a": "De Morozko Forge kost $10.000 of meer, wat voor de meeste gebruikers onbereikbaar is, en is overkill voor algemene koudeblootstelling. Sommige configuraties vereisen 220V-elektrisch werk, en kopers krijgen te maken met lange levertijden en beperkte distributie."
         }
       ]
+    },
+    "circular-ring-2": {
+      "verdict": "De ambitieuste slimme ring op papier — ecg aan de vinger, boezemfibrilleren-detectie en een AI-coach, allemaal zonder abonnement — maar de software is onaf en de belangrijkste gezondheidsfuncties werkten in onafhankelijke tests niet betrouwbaar.",
+      "summary": "De Circular Ring 2 is het gedurfdste hardwareconcept in de categorie: de eerste slimme ring met een ecg-sensor aan de vinger en detectie van boezemfibrilleren (AF), gecombineerd met ‘Kira’, een AI-coach zonder abonnement die na een kalibratie van 14 dagen meer dan 140 biometrische markers uitleest. Op papier combineert hij ecg + AF + proactieve AI + geen abonnement zoals geen andere ring. In de praktijk stelden onafhankelijke reviews uit 2026 vast dat de software in de weg zat: ecg en AF-bewaking werkten tijdens de tests nooit volledig, en beloofde functies voor bloeddruk en glucose waren er nog niet. De accu gaat ongeveer zes dagen mee. Een echt innovatieve ring waarvan de ambitie voorlopig vooruitloopt op de uitvoering.",
+      "description": "ONDA-review van de Circular Ring 2 — de eerste slimme ring met ecg aan de vinger en AF-detectie, plus een AI-coach zonder abonnement — afgeremd door onafgemaakte software vol bugs.",
+      "bestFor": "Ideaal voor early adopters die enthousiast zijn over ecg/AF in een ring en AI-coaching en accepteren dat de software onaf is. Alle anderen kunnen beter wachten tot die volwassen is.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van de specificaties van Circular en onafhankelijke reviews uit 2026, die forse softwareproblemen signaleerden. Niet zelf getest door ONDA.",
+      "productType": "Slimme ring",
+      "pros": [
+        "Eerste slimme ring met ecg aan de vinger en AF-detectie",
+        "Zonder abonnement, inclusief AI-coach Kira",
+        "Echt innovatieve hardware-ambitie",
+        "Meerdere afwerkingen; ~6 dagen accu"
+      ],
+      "cons": [
+        "Ecg/AF-bewaking werkte in onafhankelijke tests niet betrouwbaar",
+        "Software vol bugs en onaf",
+        "Beloofde functies voor bloeddruk en glucose nog niet uitgebracht",
+        "Wisselende betrouwbaarheid van data; geen open API"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "HRV wordt gevolgd, maar de algehele betrouwbaarheid van de data was in onafhankelijke tests wisselend.",
+        "sensor": "De ambitieuste sensoruitrusting in een ring — ecg aan de vinger en AF-detectie. De hardware is echt; het probleem is de software die hem aanstuurt.",
+        "sleep-accuracy": "Standaard slaaptracking, ondermijnd door de algemene ruwheid van de app.",
+        "data-access": "Data staat in de Circular-app met de AI-laag Kira; geen echt open API.",
+        "wearability": "Ongeveer zes dagen accu (acht volgens de fabrikant); prettig om te dragen, in meerdere afwerkingen.",
+        "app-ux": "Het zwakke punt. Onafhankelijke reviewers vonden de software vol bugs en onaf — de ecg/AF-functies werkten niet betrouwbaar, en de beloofde tracking van bloeddruk en glucose was niet verschenen.",
+        "value": "Vanaf $349 (luxere afwerkingen kosten meer), zonder abonnement. Alleen redelijk als je het potentieel koopt — de hoofdfuncties maken hun belofte nog niet helemaal waar."
+      },
+      "content": "## Waar hij voorloopt\n\nGeen andere slimme ring is zo ambitieus. De Circular Ring 2 zet een ecg-sensor met detectie van boezemfibrilleren op je vinger — een primeur in de categorie — en combineert die met ‘Kira’, een AI-coach zonder abonnement die meer dan 140 biometrische markers uitleest en zich na een kalibratie van 14 dagen personaliseert. De combinatie van ecg, AF, proactieve AI en geen abonnement bestaat nergens anders.\n\n## Wat zijn de nadelen van de Circular Ring 2?\n\nDe uitvoering. Onafhankelijke reviews uit 2026 waren duidelijk: de software zat in de weg. De belangrijkste functies, ecg en AF-bewaking, werkten tijdens de tests nooit volledig, en beloofde functies voor bloeddruk en glucose waren er nog niet. Voor een ring waarvan de hele belofte geavanceerde hartritmemeting is, zijn functies die niet betrouwbaar werken een serieus probleem, geen voetnoot.\n\n## Wie zou de Circular Ring 2 moeten kopen?\n\nKies de Circular Ring 2 alleen als je een early adopter bent die ecg/AF in een ring en AI-coaching wil, en accepteert dat je potentieel koopt in plaats van een af product. Wil je functies die vandaag werken, dan zijn de [RingConn Gen 3](/reviews/ringconn-gen-3) (zonder abonnement, met vaat- en slaapapneu-inzichten die echt beschikbaar zijn) of de [Oura Ring 5](/reviews/oura-ring-5) veiliger.\n\n---\n\n## Achtergrond\n\n- [Resonantiefrequentie en systeemcoherentie](/articles/resonant-frequency-system-coherence) — wat ademen op de resonantiefrequentie is en wat de studies laten zien\n",
+      "faq": [
+        {
+          "q": "Heeft de Circular Ring 2 echt ecg in een ring?",
+          "a": "Ja — het is de eerste ring met ecg aan de vinger en AF-detectie, plus een AI-coach, allemaal zonder abonnement. Maar in tests was de software onaf en werkten die hoofdfuncties niet betrouwbaar, dus hij past eerder bij early adopters dan bij iedereen."
+        },
+        {
+          "q": "Is de Circular Ring 2 het kopen waard?",
+          "a": "Alleen als je een early adopter bent die enthousiast is over ecg/AF in een ring. ONDA geeft hem {{score:circular-ring-2}}/10 — echt innovatief maar ongepolijst. De meeste mensen kunnen beter wachten tot de software volwassen is of een bewezen ring kiezen zoals Oura of RingConn."
+        },
+        {
+          "q": "Wat kost de Circular Ring 2 en heeft hij een abonnement nodig?",
+          "a": "Hij begint bij $349 (Obsidian Black; tot $549 voor Gold/Rose Gold) en heeft geen abonnement nodig."
+        }
+      ]
+    },
+    "ringconn-gen-3": {
+      "verdict": "Een sterke ring zonder abonnement — ~10-14 dagen accu, een trilmotor (volgens RingConn een primeur voor slimme ringen) voor stille meldingen en nieuwe inzichten in vaten en slaapapneu, allemaal zonder lidmaatschap.",
+      "summary": "De RingConn Gen 3 is de meest capabele ring zonder abonnement die RingConn heeft gemaakt. Voor eenmalig $349 (geen abonnement) volgt hij hartslag, HRV, SpO2, ademhalingsfrequentie, huidtemperatuur, stress en slaap, en voegt hij echt nieuwe hardware toe: volgens RingConn is het de eerste slimme ring met een ingebouwde trilmotor (stille wekkers en meldingen bij verhoogde hartslag, inactiviteit en stappendoelen), plus trendtracking van vaatgezondheid en nachtelijke bloeddruk, inzichten in slaapapneupatronen, een universele draadloze oplaadcase en een accuduur tot ~10-14 dagen. Hij werkt met iPhone en Android. Het is nog niet de gevalideerde nauwkeurigheidsreferentie zoals Oura, maar als pakket zonder abonnement is hij een van de beste op de markt.",
+      "description": "ONDA-review van de RingConn Gen 3: een slimme ring van $349 zonder abonnement met ~10-14 dagen accu, een trilmotor en inzichten in vaten en slaapapneu.",
+      "bestFor": "Ideaal voor wie een functierijke ring zonder abonnement wil met een lange accu en stille trilmeldingen — een sterke optie zonder lidmaatschap.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van de specificaties van RingConn en onafhankelijke reviews van de Gen 3 uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Slimme ring",
+      "pros": [
+        "Geen abonnement — eenmalig $349",
+        "~10-14 dagen accu en een universele draadloze oplaadcase",
+        "Trilmotor (volgens RingConn een primeur voor slimme ringen) — stille wekker en meldingen",
+        "Nieuwe trends voor vaten / nachtelijke bloeddruk en inzichten in slaapapneu"
+      ],
+      "cons": [
+        "Nog geen onafhankelijke validatie van de HRV- of slaaptracking",
+        "App minder gepolijst dan die van Oura",
+        "Geen open API",
+        "Nieuwe gezondheidsfuncties tonen trends, geen diagnoses"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Continue HRV voor herstel en stress, verbeterd ten opzichte van de Gen 2. Bruikbaar voor trends; niet onafhankelijk gevalideerd — er is alleen een preprint (over een eerdere generatie) en geen peer-reviewed onafhankelijke validatie gevonden (per oktober 2026).",
+        "sensor": "Brede sensorset — hartslag, HRV, SpO2, ademhalingsfrequentie, huidtemperatuur — plus een trilmotor (volgens RingConn een primeur voor slimme ringen) en nieuwe trendtracking van vaten / nachtelijke bloeddruk.",
+        "sleep-accuracy": "Degelijke slaaptracking met nieuwe inzichten in apneupatronen; geen onafhankelijke slaapvalidatie gevonden. ONDA-regel: zonder eigen onafhankelijke validatie scoort een apparaat hooguit 7,5 als eerdere generaties gevalideerd zijn, anders 7,0.",
+        "data-access": "Data staat in de RingConn-app met export; geen echt open API.",
+        "wearability": "Een uitblinker: ~10-14 dagen accu, werkt met iPhone en Android, stille trilwekker en een universele draadloze oplaadcase. Prettig om dag en nacht te dragen.",
+        "app-ux": "Capabele, verbeterde app met de nieuwe kaarten over vaten en slaapapneu. Minder gepolijst en uitleggend dan Oura, maar duidelijk.",
+        "value": "$349 eenmalig zonder abonnement — en een functiepakket dat goedkoper is dan de Oura-ring plus lidmaatschap. Sterke prijs-kwaliteit."
+      },
+      "content": "## Waar hij voorloopt\n\nDe RingConn Gen 3 is de meest complete ring zonder abonnement die RingConn heeft uitgebracht. De kern is prijs plus functies: eenmalig $349 zonder lidmaatschap, ~10-14 dagen accu en een trilmotor (volgens RingConn een primeur voor slimme ringen) voor stille wekkers en meldingen (verhoogde hartslag, inactiviteit, stappendoelen). Nieuw zijn trendtracking van vaatgezondheid en nachtelijke bloeddruk, inzichten in slaapapneupatronen en een universele draadloze oplaadcase; hij werkt met iPhone en Android. Als pakket zonder abonnement is hij moeilijk te verslaan.\n\n## Wat zijn de nadelen van de RingConn Gen 3?\n\nNauwkeurigheid en afwerking. De [HRV](/glossary/heart-rate-variability)- en slaaptracking van RingConn is niet onafhankelijk gevalideerd (er is alleen een preprint over een eerdere generatie), en de RingConn-app legt minder uit. De nieuwe vaat- en bloeddrukfuncties geven trends, geen diagnostische hulpmiddelen — handig om patronen te zien, niet voor medische beslissingen.\n\n## Wie zou de RingConn Gen 3 moeten kopen?\n\nKies de RingConn Gen 3 als je een sterke ring zonder abonnement wilt — lange accu, stille trilmeldingen, brede sensorset — en het doorlopende lidmaatschap van Oura niet wilt betalen. Wil je de ringlijn met het meeste gepubliceerde onderzoek — vooral naar eerdere generaties, deels gefinancierd door Oura (de Ring 5 zelf is niet apart gevalideerd) — en de beste app, dan blijft de [Oura Ring 5](/reviews/oura-ring-5) voorop, met abonnement; voor de vorige, goedkopere RingConn, zie de [Gen 2](/reviews/ringconn-gen-2).\n\n---\n\n## Achtergrond\n\nDe wetenschap achter waarom HRV het signaal is dat het volgen waard is.\n\n- [Resonantiefrequentie en systeemcoherentie](/articles/resonant-frequency-system-coherence) — wat ademen op de resonantiefrequentie is en wat de studies laten zien\n- [HRV en het autonome zenuwstelsel](/articles/anti-entropy-neural-architecture) — achtergrond over HRV als autonoom signaal\n",
+      "faq": [
+        {
+          "q": "Is de RingConn Gen 3 beter dan de Gen 2?",
+          "a": "Ja — de Gen 3 voegt ~10–14 dagen accu toe, een trilmotor (volgens RingConn een primeur voor slimme ringen) voor stille meldingen en nieuwe inzichten in vaten en slaapapneu. ONDA geeft hem {{score:ringconn-gen-3}}/10, een sterke ring zonder abonnement."
+        },
+        {
+          "q": "Heeft de RingConn Gen 3 een abonnement nodig?",
+          "a": "Nee — $349 eenmalig ($369 voor metallic afwerkingen) zonder abonnement, dus op termijn kost hij minder dan Oura (geen lidmaatschap)."
+        },
+        {
+          "q": "RingConn Gen 3 vs Oura — wat is beter?",
+          "a": "Voor een functierijke ring zonder abonnement met een lange accu en stille trilmeldingen is de Gen 3 een sterke optie. Oura blijft voorop met de meest verfijnde app en heeft meer gepubliceerd slaaponderzoek (vooral naar eerdere generaties, deels gefinancierd door Oura)."
+        }
+      ]
     }
   },
   "comparisons": {

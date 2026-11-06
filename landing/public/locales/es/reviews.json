@@ -5032,6 +5032,94 @@
           "a": "La Morozko Forge cuesta $10,000 o más, fuera del alcance de la mayoría, y es excesiva para la exposición al frío general. Algunas configuraciones requieren obra eléctrica de 220V, y los compradores se enfrentan a plazos de entrega largos y una distribución limitada."
         }
       ]
+    },
+    "circular-ring-2": {
+      "verdict": "El anillo inteligente más ambicioso sobre el papel —ECG en el dedo, detección de FA y un coach con IA, todo sin suscripción—, pero el software está a medio terminar y las funciones de salud estrella no funcionaron de forma fiable en pruebas independientes.",
+      "summary": "El Circular Ring 2 es la propuesta de hardware más atrevida de la categoría: el primer anillo inteligente con sensor de ECG en el dedo y detección de fibrilación auricular (FA), junto a «Kira», un coach con IA sin suscripción que lee más de 140 marcadores biométricos tras una calibración de 14 días. Sobre el papel combina ECG + FA + IA proactiva + cero suscripción como ningún otro anillo. En la práctica, las reseñas independientes de 2026 vieron que el software estorbaba: el ECG y el control de FA nunca funcionaron del todo durante las pruebas, y las funciones prometidas de presión arterial y glucosa no habían llegado. La batería dura unos seis días. Es un anillo de verdad innovador cuya ambición va hoy por delante de su ejecución.",
+      "description": "Reseña de ONDA del Circular Ring 2: el primer anillo inteligente con ECG en el dedo y detección de FA, más un coach con IA sin suscripción, lastrado por un software inacabado y con errores.",
+      "bestFor": "Ideal para pioneros entusiasmados con el ECG/FA en el anillo y el coaching con IA que aceptan que el software está a medio terminar. Los demás deberían esperar a que madure.",
+      "testNote": "Evaluación basada en evidencia: puntuado a partir de las especificaciones de Circular y de reseñas independientes de 2026, que señalaron problemas de software importantes. ONDA no lo ha probado en persona.",
+      "productType": "Anillo inteligente",
+      "pros": [
+        "Primer anillo inteligente con ECG en el dedo y detección de FA",
+        "Sin suscripción, incluido el coach con IA Kira",
+        "Ambición de hardware de verdad innovadora",
+        "Varios acabados; batería de ~6 días"
+      ],
+      "cons": [
+        "El control de ECG/FA no funcionó de forma fiable en pruebas independientes",
+        "Software con errores e inacabado",
+        "Las funciones prometidas de presión arterial y glucosa aún no han llegado",
+        "Fiabilidad de datos irregular; sin API abierta"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Registra la HRV, pero la fiabilidad general de los datos fue irregular en pruebas independientes.",
+        "sensor": "El conjunto de sensores más ambicioso en un anillo: ECG en el dedo y detección de FA. El hardware es real; el problema es el software que lo maneja.",
+        "sleep-accuracy": "Seguimiento del sueño estándar, lastrado por la tosquedad general de la app.",
+        "data-access": "Los datos viven en la app de Circular con la capa de IA Kira; no hay una API realmente abierta.",
+        "wearability": "Unos seis días de batería (ocho según el fabricante); cómodo de llevar, en varios acabados.",
+        "app-ux": "El punto débil. Los revisores independientes encontraron el software con errores e inacabado: las funciones de ECG/FA no funcionaron de forma fiable y el seguimiento prometido de presión arterial y glucosa no había llegado.",
+        "value": "Desde $349 (los acabados superiores cuestan más), sin suscripción. Razonable solo si compras el potencial: las funciones estrella aún no cumplen del todo."
+      },
+      "content": "## Dónde destaca\n\nNingún otro anillo inteligente es tan ambicioso. El Circular Ring 2 pone un sensor de ECG en tu dedo con detección de fibrilación auricular —algo inédito en la categoría— y lo combina con «Kira», un coach con IA sin suscripción que lee más de 140 marcadores biométricos y se personaliza tras una calibración de 14 días. La combinación de ECG, FA, una IA proactiva y ninguna suscripción no existe en ningún otro sitio.\n\n## ¿Cuáles son los inconvenientes del Circular Ring 2?\n\nLa ejecución. Las reseñas independientes de 2026 fueron claras: el software estorbaba. El ECG y el control de FA estrella nunca funcionaron del todo durante las pruebas, y las funciones prometidas de presión arterial y glucosa no habían llegado. En un anillo cuyo argumento entero es la medición avanzada del ritmo cardíaco, que esas funciones no funcionen de forma fiable es un problema serio, no una nota al pie.\n\n## ¿Quién debería comprar el Circular Ring 2?\n\nElige el Circular Ring 2 solo si eres un pionero que quiere ECG/FA en el anillo y coaching con IA, y aceptas comprar el potencial en lugar de un producto terminado. Si quieres funciones que funcionen hoy, el [RingConn Gen 3](/reviews/ringconn-gen-3) (sin suscripción, con datos vasculares y de apnea del sueño que sí funcionan) o el [Oura Ring 5](/reviews/oura-ring-5) son apuestas más seguras.\n\n---\n\n## Lecturas de fondo\n\n- [Coherencia del sistema a la frecuencia de resonancia](/articles/resonant-frequency-system-coherence): qué es la respiración a la frecuencia de resonancia y qué muestran los estudios\n",
+      "faq": [
+        {
+          "q": "¿El Circular Ring 2 tiene de verdad ECG en un anillo?",
+          "a": "Sí: es el primer anillo con ECG en el dedo y detección de FA, además de un coach con IA, todo sin suscripción. Pero en las pruebas el software estaba inacabado y esas funciones estrella no funcionaron de forma fiable, así que encaja con pioneros más que con todo el mundo."
+        },
+        {
+          "q": "¿Merece la pena comprar el Circular Ring 2?",
+          "a": "Solo si eres un pionero entusiasmado con el ECG/FA en el anillo. ONDA le da {{score:circular-ring-2}}/10: de verdad innovador, pero poco pulido. La mayoría debería esperar a que el software madure o elegir un anillo probado como Oura o RingConn."
+        },
+        {
+          "q": "¿Cuánto cuesta el Circular Ring 2 y necesita suscripción?",
+          "a": "Empieza en $349 (Obsidian Black; hasta $549 en Gold/Rose Gold) y no requiere suscripción."
+        }
+      ]
+    },
+    "ringconn-gen-3": {
+      "verdict": "Un anillo sólido sin suscripción: batería de ~10-14 días, un motor háptico (RingConn dice que es el primero en un anillo inteligente) para avisos silenciosos y nuevos datos vasculares y de apnea del sueño, todo sin membresía.",
+      "summary": "El RingConn Gen 3 es el anillo sin suscripción más completo que ha fabricado RingConn. Por un pago único de $349 (sin suscripción) registra frecuencia cardíaca, HRV, SpO2, frecuencia respiratoria, temperatura de la piel, estrés y sueño, y añade hardware de verdad nuevo: RingConn dice que es el primer anillo inteligente con motor háptico integrado (alarmas silenciosas y avisos de frecuencia cardíaca elevada, inactividad y objetivos de pasos), además de seguimiento de tendencias de salud vascular y presión arterial nocturna, datos sobre patrones de apnea del sueño, un estuche de carga inalámbrica universal y una batería de hasta ~10-14 días. Es multiplataforma (iPhone y Android). Sigue sin ser la referencia de precisión validada que es Oura, pero como paquete sin suscripción es de lo mejor del mercado.",
+      "description": "Reseña de ONDA del RingConn Gen 3: un anillo inteligente de $349 sin suscripción con batería de ~10-14 días, motor háptico y datos vasculares y de apnea del sueño.",
+      "bestFor": "Ideal para quien quiere un anillo sin suscripción, completo, con batería larga y avisos hápticos silenciosos: una opción sólida sin membresía.",
+      "testNote": "Evaluación basada en evidencia: puntuado a partir de las especificaciones de RingConn y reseñas independientes de 2026 del Gen 3. ONDA no lo ha probado en persona.",
+      "productType": "Anillo inteligente",
+      "pros": [
+        "Sin suscripción: pago único de $349",
+        "Batería de ~10-14 días y estuche de carga inalámbrica universal",
+        "Motor háptico (RingConn dice que es el primero en un anillo inteligente): alarma y avisos silenciosos",
+        "Nuevas tendencias vasculares / de presión arterial nocturna y datos de apnea del sueño"
+      ],
+      "cons": [
+        "Aún no hay validación independiente de su seguimiento de HRV ni de sueño",
+        "App menos pulida que la de Oura",
+        "Sin API abierta",
+        "Las nuevas funciones de salud son de tendencia, no diagnósticas"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "HRV continua para recuperación y estrés, mejorada respecto al Gen 2. Útil para tendencias; no validada de forma independiente: solo existe un preprint (sobre una generación anterior) y no se encontró ninguna validación independiente revisada por pares (a octubre de 2026).",
+        "sensor": "Amplio conjunto de sensores (FC, HRV, SpO2, frecuencia respiratoria, temperatura de la piel) más un motor háptico (RingConn dice que es el primero en un anillo inteligente) y nuevo seguimiento de tendencias vasculares / de presión arterial nocturna.",
+        "sleep-accuracy": "Buen seguimiento del sueño con nuevos datos sobre patrones de apnea; no se encontró validación independiente del sueño. Regla de ONDA: sin validación independiente propia, un dispositivo puntúa como máximo 7,5 si se validaron generaciones anteriores, y 7,0 si no.",
+        "data-access": "Los datos viven en la app de RingConn con exportación; no hay una API realmente abierta.",
+        "wearability": "Destacado: batería de ~10-14 días, multiplataforma, alarma háptica silenciosa y estuche de carga inalámbrica universal. Cómodo para llevar 24/7.",
+        "app-ux": "App capaz y mejorada, con las nuevas tarjetas de datos vasculares y de apnea del sueño. Menos pulida y explicativa que la de Oura, pero clara.",
+        "value": "$349 en pago único sin suscripción, y un conjunto de funciones que rebaja el coste de anillo más membresía de Oura. Muy buena relación calidad-precio."
+      },
+      "content": "## Dónde destaca\n\nEl RingConn Gen 3 es el anillo sin suscripción más completo que ha lanzado RingConn. Lo principal es valor más funciones: un pago único de $349 sin membresía, una batería de ~10-14 días y un motor háptico (RingConn dice que es el primero en un anillo inteligente) que permite alarmas y avisos silenciosos (frecuencia cardíaca elevada, inactividad, objetivos de pasos). Añade nuevo seguimiento de tendencias de salud vascular y presión arterial nocturna, datos sobre patrones de apnea del sueño y un estuche de carga inalámbrica universal, y funciona con iPhone y Android. Como paquete sin suscripción, es difícil de superar.\n\n## ¿Cuáles son los inconvenientes del RingConn Gen 3?\n\nPrecisión y pulido. El seguimiento de [HRV](/glossary/heart-rate-variability) y del sueño de RingConn no se ha validado de forma independiente (solo hay un preprint sobre una generación anterior), y la app de RingConn explica menos. Las nuevas funciones vasculares y de presión arterial son datos de tendencia, no herramientas diagnósticas: útiles para detectar patrones, no para decisiones médicas.\n\n## ¿Quién debería comprar el RingConn Gen 3?\n\nElige el RingConn Gen 3 si quieres un anillo sólido sin suscripción —batería larga, avisos hápticos silenciosos, amplio conjunto de sensores— y no quieres pagar la membresía continua de Oura. Si quieres la línea de anillos con más investigación publicada —sobre todo de generaciones anteriores, en parte financiada por Oura (el Ring 5 en sí no se ha validado por separado)— y la mejor app, el [Oura Ring 5](/reviews/oura-ring-5) sigue liderando, con suscripción; para el RingConn anterior y más barato, mira el [Gen 2](/reviews/ringconn-gen-2).\n\n---\n\n## Lecturas de fondo\n\nLa ciencia de por qué la HRV es la señal que merece la pena seguir.\n\n- [Coherencia del sistema a la frecuencia de resonancia](/articles/resonant-frequency-system-coherence): qué es la respiración a la frecuencia de resonancia y qué muestran los estudios\n- [La HRV y el sistema nervioso autónomo](/articles/anti-entropy-neural-architecture): contexto sobre la HRV como señal autonómica\n",
+      "faq": [
+        {
+          "q": "¿Es el RingConn Gen 3 mejor que el Gen 2?",
+          "a": "Sí: el Gen 3 añade una batería de ~10–14 días, un motor háptico (RingConn dice que es el primero en un anillo inteligente) para avisos silenciosos y nuevos datos vasculares y de apnea del sueño. ONDA le da {{score:ringconn-gen-3}}/10, un anillo sólido sin suscripción."
+        },
+        {
+          "q": "¿El RingConn Gen 3 necesita suscripción?",
+          "a": "No: $349 en pago único ($369 en acabados metálicos) sin suscripción, así que a la larga cuesta menos que Oura (sin membresía)."
+        },
+        {
+          "q": "RingConn Gen 3 vs Oura: ¿cuál es mejor?",
+          "a": "Para un anillo completo, sin suscripción, con batería larga y avisos hápticos silenciosos, el Gen 3 es una opción sólida sin membresía. Oura sigue liderando en la app más refinada y tiene más investigación publicada sobre el sueño (sobre todo de generaciones anteriores, en parte financiada por Oura)."
+        }
+      ]
     }
   },
   "comparisons": {

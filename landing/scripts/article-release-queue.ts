@@ -611,6 +611,8 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'sun-home-equinox' },
   { collection: 'h2h', slug: 'mito-red-mitopro-1500-vs-hooga-hg500' },
   { collection: 'h2h', slug: 'ultrahuman-ring-pro-vs-ringconn-gen-2' },
+  { collection: 'reviews', slug: 'circular-ring-2' },
+  { collection: 'reviews', slug: 'ringconn-gen-3' },
   // WAVE_D_NEXT
   ],
 ]

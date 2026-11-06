@@ -4646,6 +4646,94 @@
           "a": "La Morozko Forge coûte 10 000 $ ou plus, ce qui la met hors de portée de la plupart des utilisateurs, et elle est disproportionnée pour une exposition au froid générale. Certaines configurations exigent des travaux électriques en 220V, et les acheteurs font face à des délais longs et à une distribution limitée."
         }
       ]
+    },
+    "circular-ring-2": {
+      "verdict": "La bague connectée la plus ambitieuse sur le papier — ECG au doigt, détection de la FA et coach IA, le tout sans abonnement —, mais le logiciel est inachevé et les fonctions santé phares n’ont pas fonctionné de façon fiable lors de tests indépendants.",
+      "summary": "La Circular Ring 2 est le pari matériel le plus audacieux de la catégorie : la première bague connectée avec capteur ECG au doigt et détection de la fibrillation auriculaire (FA), associée à « Kira », un coach IA sans abonnement qui lit plus de 140 marqueurs biométriques après un étalonnage de 14 jours. Sur le papier, elle réunit ECG + FA + IA proactive + zéro abonnement comme aucune autre bague. En pratique, les tests indépendants de 2026 ont constaté que le logiciel gênait : l’ECG et la surveillance de la FA n’ont jamais complètement fonctionné pendant les tests, et les fonctions promises de tension artérielle et de glycémie n’étaient pas arrivées. L’autonomie est d’environ six jours. Une bague réellement innovante, dont l’ambition dépasse pour l’instant l’exécution.",
+      "description": "Test ONDA de la Circular Ring 2 — la première bague connectée avec ECG au doigt et détection de la FA, plus un coach IA sans abonnement — freinée par un logiciel inachevé et bogué.",
+      "bestFor": "Idéale pour les pionniers enthousiasmés par l’ECG/la FA sur bague et le coaching IA qui acceptent un logiciel inachevé. Les autres devraient attendre qu’il mûrisse.",
+      "testNote": "Évaluation fondée sur les preuves : notée à partir des caractéristiques de Circular et de tests indépendants de 2026, qui ont relevé d’importants problèmes logiciels. Non testée en main propre par ONDA.",
+      "productType": "Bague connectée",
+      "pros": [
+        "Première bague connectée avec ECG au doigt et détection de la FA",
+        "Sans abonnement, coach IA Kira compris",
+        "Ambition matérielle réellement innovante",
+        "Plusieurs finitions ; ~6 jours d’autonomie"
+      ],
+      "cons": [
+        "La surveillance ECG/FA n’a pas fonctionné de façon fiable lors de tests indépendants",
+        "Logiciel bogué et inachevé",
+        "Les fonctions promises de tension artérielle et de glycémie ne sont pas encore disponibles",
+        "Fiabilité des données inégale ; pas d’API ouverte"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Le suivi de la HRV est présent, mais la fiabilité globale des données a été inégale lors de tests indépendants.",
+        "sensor": "L’ensemble de capteurs le plus ambitieux dans une bague : ECG au doigt et détection de la FA. Le matériel est réel ; le problème vient du logiciel qui le pilote.",
+        "sleep-accuracy": "Suivi du sommeil standard, desservi par le manque de finition général de l’application.",
+        "data-access": "Les données restent dans l’application Circular avec la couche IA Kira ; pas d’API réellement ouverte.",
+        "wearability": "Environ six jours d’autonomie (huit annoncés) ; agréable à porter, en plusieurs finitions.",
+        "app-ux": "Le point faible. Les testeurs indépendants ont trouvé le logiciel bogué et inachevé : les fonctions ECG/FA n’ont pas fonctionné de façon fiable, et le suivi promis de la tension et de la glycémie n’était pas sorti.",
+        "value": "À partir de $349 (les finitions supérieures coûtent plus), sans abonnement. Raisonnable seulement si vous achetez le potentiel : les fonctions phares ne tiennent pas encore toutes leurs promesses."
+      },
+      "content": "## Là où elle est en avance\n\nAucune autre bague connectée n’est aussi ambitieuse. La Circular Ring 2 place un capteur ECG sur votre doigt avec détection de la fibrillation auriculaire — une première dans la catégorie — et l’associe à « Kira », un coach IA sans abonnement qui lit plus de 140 marqueurs biométriques et se personnalise après un étalonnage de 14 jours. L’association ECG, FA, IA proactive et absence d’abonnement n’existe nulle part ailleurs.\n\n## Quels sont les inconvénients de la Circular Ring 2 ?\n\nL’exécution. Les tests indépendants de 2026 ont été clairs : le logiciel gênait. L’ECG et la surveillance de la FA phares n’ont jamais complètement fonctionné pendant les tests, et les fonctions promises de tension artérielle et de glycémie n’étaient pas arrivées. Pour une bague dont tout l’argument est la mesure avancée du rythme cardiaque, des fonctions peu fiables sont un problème sérieux, pas un détail.\n\n## Qui devrait acheter la Circular Ring 2 ?\n\nChoisissez la Circular Ring 2 seulement si vous êtes un pionnier qui veut l’ECG/la FA sur bague et un coaching IA, et que vous acceptez d’acheter un potentiel plutôt qu’un produit fini. Si vous voulez des fonctions qui marchent dès aujourd’hui, la [RingConn Gen 3](/reviews/ringconn-gen-3) (sans abonnement, avec des données vasculaires et d’apnée du sommeil réellement disponibles) ou l’[Oura Ring 5](/reviews/oura-ring-5) sont plus sûres.\n\n---\n\n## Pour aller plus loin\n\n- [Fréquence de résonance et cohérence du système](/articles/resonant-frequency-system-coherence) — ce qu’est la respiration à la fréquence de résonance et ce que montrent les études\n",
+      "faq": [
+        {
+          "q": "La Circular Ring 2 a-t-elle vraiment un ECG dans une bague ?",
+          "a": "Oui : c’est la première bague avec ECG au doigt et détection de la FA, plus un coach IA, le tout sans abonnement. Mais lors des tests, le logiciel était inachevé et ces fonctions phares n’ont pas fonctionné de façon fiable ; elle convient donc plutôt aux pionniers qu’à tout le monde."
+        },
+        {
+          "q": "La Circular Ring 2 vaut-elle l’achat ?",
+          "a": "Seulement si vous êtes un pionnier enthousiasmé par l’ECG/la FA sur bague. ONDA lui donne {{score:circular-ring-2}}/10 : réellement innovante mais peu aboutie. La plupart des gens devraient attendre que le logiciel mûrisse ou choisir une bague éprouvée comme Oura ou RingConn."
+        },
+        {
+          "q": "Combien coûte la Circular Ring 2 et faut-il un abonnement ?",
+          "a": "Elle commence à $349 (Obsidian Black ; jusqu’à $549 en Gold/Rose Gold) et ne nécessite pas d’abonnement."
+        }
+      ]
+    },
+    "ringconn-gen-3": {
+      "verdict": "Une excellente bague sans abonnement : ~10 à 14 jours d’autonomie, un moteur haptique (une première pour une bague connectée, selon RingConn) pour des alertes silencieuses et de nouvelles données vasculaires et sur l’apnée du sommeil, le tout sans abonnement.",
+      "summary": "La RingConn Gen 3 est la bague sans abonnement la plus complète jamais conçue par RingConn. Pour $349 en une fois (sans abonnement), elle suit la fréquence cardiaque, la HRV, la SpO2, la fréquence respiratoire, la température cutanée, le stress et le sommeil, et ajoute du matériel vraiment nouveau : selon RingConn, c’est la première bague connectée dotée d’un moteur haptique intégré (alarmes silencieuses et alertes de fréquence cardiaque élevée, d’inactivité et d’objectifs de pas), plus le suivi des tendances de santé vasculaire et de tension artérielle nocturne, des indications sur les schémas d’apnée du sommeil, un boîtier de recharge sans fil universel et une autonomie allant jusqu’à ~10 à 14 jours. Elle est multiplateforme (iPhone et Android). Ce n’est toujours pas la référence de précision validée qu’est Oura, mais en formule sans abonnement, c’est l’une des meilleures du marché.",
+      "description": "Test ONDA de la RingConn Gen 3 : une bague connectée à $349 sans abonnement, avec ~10 à 14 jours d’autonomie, un moteur haptique et des données vasculaires et sur l’apnée du sommeil.",
+      "bestFor": "Idéale pour ceux qui veulent une bague sans abonnement riche en fonctions, avec une grande autonomie et des alertes haptiques silencieuses : une excellente option sans abonnement.",
+      "testNote": "Évaluation fondée sur les preuves : notée à partir des caractéristiques de RingConn et de tests indépendants de la Gen 3 en 2026. Non testée en main propre par ONDA.",
+      "productType": "Bague connectée",
+      "pros": [
+        "Sans abonnement : $349 en une fois",
+        "~10 à 14 jours d’autonomie et boîtier de recharge sans fil universel",
+        "Moteur haptique (une première pour une bague connectée, selon RingConn) : alarme et alertes silencieuses",
+        "Nouvelles tendances vasculaires / de tension nocturne et données sur l’apnée du sommeil"
+      ],
+      "cons": [
+        "Pas encore de validation indépendante de son suivi de la HRV ou du sommeil",
+        "Application moins aboutie que celle d’Oura",
+        "Pas d’API ouverte",
+        "Les nouvelles fonctions santé donnent des tendances, pas des diagnostics"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "HRV en continu pour la récupération et le stress, améliorée par rapport à la Gen 2. Utilisable pour les tendances ; non validée de façon indépendante : il n’existe qu’une prépublication (sur une génération antérieure) et aucune validation indépendante évaluée par les pairs n’a été trouvée (en octobre 2026).",
+        "sensor": "Large gamme de capteurs (FC, HRV, SpO2, fréquence respiratoire, température cutanée), plus un moteur haptique (une première pour une bague connectée, selon RingConn) et un nouveau suivi des tendances vasculaires / de tension nocturne.",
+        "sleep-accuracy": "Bon suivi du sommeil avec de nouvelles indications sur les schémas d’apnée ; aucune validation indépendante du sommeil trouvée. Règle ONDA : sans validation indépendante propre, un appareil obtient au maximum 7,5 si des générations antérieures ont été validées, 7,0 sinon.",
+        "data-access": "Les données restent dans l’application RingConn, avec export ; pas d’API réellement ouverte.",
+        "wearability": "Un point fort : ~10 à 14 jours d’autonomie, multiplateforme, alarme haptique silencieuse et boîtier de recharge sans fil universel. Confortable à porter 24 h/24.",
+        "app-ux": "Application compétente et améliorée, avec les nouvelles cartes vasculaires et d’apnée du sommeil. Moins aboutie et moins pédagogique qu’Oura, mais claire.",
+        "value": "$349 en une fois sans abonnement, avec des fonctions qui coûtent moins que la bague Oura plus son abonnement. Excellent rapport qualité-prix."
+      },
+      "content": "## Là où elle est en avance\n\nLa RingConn Gen 3 est la bague sans abonnement la plus complète que RingConn ait commercialisée. L’essentiel : le prix et les fonctions. $349 en une fois sans abonnement, ~10 à 14 jours d’autonomie et un moteur haptique (une première pour une bague connectée, selon RingConn) qui permet alarmes et alertes silencieuses (fréquence cardiaque élevée, inactivité, objectifs de pas). Elle ajoute le suivi des tendances de santé vasculaire et de tension nocturne, des indications sur les schémas d’apnée du sommeil et un boîtier de recharge sans fil universel, et fonctionne avec iPhone et Android. En formule sans abonnement, difficile de faire mieux.\n\n## Quels sont les inconvénients de la RingConn Gen 3 ?\n\nLa précision et la finition. Le suivi de la [HRV](/glossary/heart-rate-variability) et du sommeil de RingConn n’a pas été validé de façon indépendante (seule une prépublication existe, sur une génération antérieure), et l’application RingConn explique moins. Les nouvelles fonctions vasculaires et de tension donnent des tendances, pas des outils de diagnostic : utiles pour repérer des schémas, pas pour des décisions médicales.\n\n## Qui devrait acheter la RingConn Gen 3 ?\n\nChoisissez la RingConn Gen 3 si vous voulez une excellente bague sans abonnement — grande autonomie, alertes haptiques silencieuses, large gamme de capteurs — sans payer l’abonnement continu d’Oura. Si vous voulez la gamme de bagues la plus étudiée — surtout sur des générations antérieures, en partie financées par Oura (la Ring 5 elle-même n’a pas été validée séparément) — et la meilleure application, l’[Oura Ring 5](/reviews/oura-ring-5) reste en tête, avec abonnement ; pour la RingConn précédente, moins chère, voir la [Gen 2](/reviews/ringconn-gen-2).\n\n---\n\n## Pour aller plus loin\n\nLa science qui explique pourquoi la HRV est le signal à suivre.\n\n- [Fréquence de résonance et cohérence du système](/articles/resonant-frequency-system-coherence) — ce qu’est la respiration à la fréquence de résonance et ce que montrent les études\n- [La HRV et le système nerveux autonome](/articles/anti-entropy-neural-architecture) — contexte sur la HRV comme signal autonome\n",
+      "faq": [
+        {
+          "q": "La RingConn Gen 3 est-elle meilleure que la Gen 2 ?",
+          "a": "Oui : la Gen 3 ajoute ~10 à 14 jours d’autonomie, un moteur haptique (une première pour une bague connectée, selon RingConn) pour des alertes silencieuses et de nouvelles données vasculaires et sur l’apnée du sommeil. ONDA lui donne {{score:ringconn-gen-3}}/10 : une excellente bague sans abonnement."
+        },
+        {
+          "q": "La RingConn Gen 3 nécessite-t-elle un abonnement ?",
+          "a": "Non : $349 en une fois ($369 pour les finitions métallisées) sans abonnement, elle revient donc moins cher qu’Oura sur la durée (pas d’abonnement)."
+        },
+        {
+          "q": "RingConn Gen 3 vs Oura : laquelle est la meilleure ?",
+          "a": "Pour une bague sans abonnement riche en fonctions, avec une grande autonomie et des alertes haptiques silencieuses, la Gen 3 est une excellente option. Oura reste en tête pour l’application la plus aboutie et dispose de plus d’études publiées sur le sommeil (surtout sur des générations antérieures, en partie financées par Oura)."
+        }
+      ]
     }
   },
   "comparisons": {

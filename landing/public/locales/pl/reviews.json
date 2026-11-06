@@ -4646,6 +4646,94 @@
           "a": "Morozko Forge kosztuje 10 000 $ lub więcej, co jest poza zasięgiem większości użytkowników, i jest przesadą przy ogólnej ekspozycji na zimno. Niektóre konfiguracje wymagają prac elektrycznych pod 220 V, a kupujący muszą liczyć się z długim czasem realizacji i ograniczoną dystrybucją."
         }
       ]
+    },
+    "circular-ring-2": {
+      "verdict": "Najbardziej ambitny inteligentny pierścień na papierze — EKG z palca, wykrywanie AF i trener AI, wszystko bez subskrypcji — ale oprogramowanie jest niedokończone, a kluczowe funkcje zdrowotne nie działały niezawodnie w niezależnych testach.",
+      "summary": "Circular Ring 2 to najodważniejszy sprzęt w kategorii: pierwszy inteligentny pierścień z czujnikiem EKG na palcu i wykrywaniem migotania przedsionków (AF), połączony z „Kira” — trenerem AI bez subskrypcji, który po 14-dniowej kalibracji odczytuje ponad 140 markerów biometrycznych. Na papierze łączy EKG + AF + proaktywną AI + brak subskrypcji jak żaden inny pierścień. W praktyce niezależne recenzje z 2026 roku wykazały, że przeszkadza oprogramowanie: EKG i monitorowanie AF nigdy w pełni nie zadziałały podczas testów, a obiecane funkcje ciśnienia i glukozy się nie pojawiły. Bateria wytrzymuje ok. sześciu dni. To naprawdę innowacyjny pierścień, którego ambicje na razie wyprzedzają wykonanie.",
+      "description": "Recenzja ONDA pierścienia Circular Ring 2 — pierwszego inteligentnego pierścienia z EKG z palca i wykrywaniem AF oraz trenerem AI bez subskrypcji — hamowanego przez niedokończone, pełne błędów oprogramowanie.",
+      "bestFor": "Dla wczesnych użytkowników zachwyconych EKG/AF w pierścieniu i coachingiem AI, którzy akceptują niedokończone oprogramowanie. Pozostali powinni poczekać, aż dojrzeje.",
+      "testNote": "Ocena oparta na dowodach — na podstawie specyfikacji Circular i niezależnych recenzji z 2026 roku, które wskazały poważne problemy z oprogramowaniem. ONDA nie testowała pierścienia osobiście.",
+      "productType": "Inteligentny pierścień",
+      "pros": [
+        "Pierwszy inteligentny pierścień z EKG z palca i wykrywaniem AF",
+        "Bez subskrypcji, łącznie z trenerem AI Kira",
+        "Naprawdę innowacyjne ambicje sprzętowe",
+        "Kilka wykończeń; bateria ~6 dni"
+      ],
+      "cons": [
+        "Monitorowanie EKG/AF nie działało niezawodnie w niezależnych testach",
+        "Oprogramowanie pełne błędów i niedokończone",
+        "Obiecane funkcje ciśnienia i glukozy jeszcze nie wyszły",
+        "Nierówna wiarygodność danych; brak otwartego API"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Śledzenie HRV jest dostępne, ale ogólna wiarygodność danych była w niezależnych testach nierówna.",
+        "sensor": "Najbardziej ambitny zestaw czujników w pierścieniu — EKG z palca i wykrywanie AF. Sprzęt jest prawdziwy; problemem jest oprogramowanie, które nim steruje.",
+        "sleep-accuracy": "Standardowe śledzenie snu, osłabione ogólną surowością aplikacji.",
+        "data-access": "Dane są w aplikacji Circular z warstwą AI Kira; brak naprawdę otwartego API.",
+        "wearability": "Ok. sześciu dni pracy baterii (deklarowane osiem); wygodny w noszeniu, w kilku wykończeniach.",
+        "app-ux": "Słaby punkt. Niezależni recenzenci uznali oprogramowanie za pełne błędów i niedokończone — funkcje EKG/AF nie działały niezawodnie, a obiecane śledzenie ciśnienia i glukozy się nie pojawiło.",
+        "value": "Od $349 (droższe wykończenia kosztują więcej), bez subskrypcji. Uczciwa cena tylko wtedy, gdy kupujesz potencjał — kluczowe funkcje jeszcze w pełni nie działają."
+      },
+      "content": "## W czym jest na czele\n\nŻaden inny inteligentny pierścień nie jest tak ambitny. Circular Ring 2 umieszcza czujnik EKG na palcu z wykrywaniem migotania przedsionków — po raz pierwszy w kategorii — i łączy go z „Kira”, trenerem AI bez subskrypcji, który odczytuje ponad 140 markerów biometrycznych i dopasowuje się po 14-dniowej kalibracji. Połączenia EKG, AF, proaktywnej AI i braku subskrypcji nie ma nigdzie indziej.\n\n## Jakie są wady Circular Ring 2?\n\nWykonanie. Niezależne recenzje z 2026 roku były jednoznaczne: przeszkadza oprogramowanie. Kluczowe EKG i monitorowanie AF nigdy w pełni nie zadziałały podczas testów, a obiecane funkcje ciśnienia i glukozy się nie pojawiły. W pierścieniu, którego cała idea to zaawansowany pomiar rytmu serca, funkcje działające zawodnie to poważny problem, a nie drobiazg.\n\n## Kto powinien kupić Circular Ring 2?\n\nWybierz Circular Ring 2 tylko wtedy, gdy jesteś wczesnym użytkownikiem, który chce EKG/AF w pierścieniu i coachingu AI, i akceptujesz zakup potencjału zamiast gotowego produktu. Jeśli chcesz funkcji działających już dziś, bezpieczniejsze są [RingConn Gen 3](/reviews/ringconn-gen-3) (bez subskrypcji, z działającymi danymi o naczyniach i bezdechu sennym) lub [Oura Ring 5](/reviews/oura-ring-5).\n\n---\n\n## Do poczytania\n\n- [Częstotliwość rezonansowa i koherencja układu](/articles/resonant-frequency-system-coherence) — czym jest oddychanie z częstotliwością rezonansową i co pokazują badania\n",
+      "faq": [
+        {
+          "q": "Czy Circular Ring 2 naprawdę ma EKG w pierścieniu?",
+          "a": "Tak — to pierwszy pierścień z EKG z palca i wykrywaniem AF, do tego trener AI, wszystko bez subskrypcji. Ale w testach oprogramowanie było niedokończone, a te kluczowe funkcje nie działały niezawodnie, więc pasuje raczej wczesnym użytkownikom niż wszystkim."
+        },
+        {
+          "q": "Czy warto kupić Circular Ring 2?",
+          "a": "Tylko jeśli jesteś wczesnym użytkownikiem zachwyconym EKG/AF w pierścieniu. ONDA ocenia go na {{score:circular-ring-2}}/10 — naprawdę innowacyjny, ale niedopracowany. Większość osób powinna poczekać, aż oprogramowanie dojrzeje, albo wybrać sprawdzony pierścień, taki jak Oura czy RingConn."
+        },
+        {
+          "q": "Ile kosztuje Circular Ring 2 i czy wymaga subskrypcji?",
+          "a": "Zaczyna się od $349 (Obsidian Black; do $549 za Gold/Rose Gold) i nie wymaga subskrypcji."
+        }
+      ]
+    },
+    "ringconn-gen-3": {
+      "verdict": "Mocny pierścień bez subskrypcji — bateria ~10-14 dni, silniczek wibracyjny (według RingConn pierwszy w inteligentnych pierścieniach) do cichych powiadomień i nowe dane o naczyniach i bezdechu sennym, wszystko bez członkostwa.",
+      "summary": "RingConn Gen 3 to najbardziej funkcjonalny pierścień bez subskrypcji, jaki zrobił RingConn. Za jednorazowe $349 (bez subskrypcji) śledzi tętno, HRV, SpO2, częstość oddechów, temperaturę skóry, stres i sen, a do tego dodaje naprawdę nowy sprzęt: według RingConn to pierwszy inteligentny pierścień z wbudowanym silniczkiem wibracyjnym (ciche budziki i powiadomienia o podwyższonym tętnie, bezczynności i celach kroków), plus śledzenie trendów zdrowia naczyń i nocnego ciśnienia, dane o wzorcach bezdechu sennego, uniwersalne etui do ładowania bezprzewodowego i bateria do ~10-14 dni. Działa z iPhone’em i Androidem. Nadal nie jest zweryfikowanym wzorcem dokładności jak Oura, ale jako pakiet bez subskrypcji należy do najlepszych na rynku.",
+      "description": "Recenzja ONDA pierścienia RingConn Gen 3: inteligentny pierścień za $349 bez subskrypcji z baterią ~10-14 dni, silniczkiem wibracyjnym i danymi o naczyniach i bezdechu sennym.",
+      "bestFor": "Dla osób, które chcą funkcjonalnego pierścienia bez subskrypcji z długą baterią i cichymi powiadomieniami wibracyjnymi — mocna opcja bez członkostwa.",
+      "testNote": "Ocena oparta na dowodach — na podstawie specyfikacji RingConn i niezależnych recenzji Gen 3 z 2026 roku. ONDA nie testowała pierścienia osobiście.",
+      "productType": "Inteligentny pierścień",
+      "pros": [
+        "Bez subskrypcji — jednorazowo $349",
+        "Bateria ~10-14 dni i uniwersalne etui do ładowania bezprzewodowego",
+        "Silniczek wibracyjny (według RingConn pierwszy w inteligentnych pierścieniach) — cichy budzik i powiadomienia",
+        "Nowe trendy naczyń / nocnego ciśnienia i dane o bezdechu sennym"
+      ],
+      "cons": [
+        "Brak jeszcze niezależnej walidacji śledzenia HRV i snu",
+        "Aplikacja mniej dopracowana niż u Oura",
+        "Brak otwartego API",
+        "Nowe funkcje zdrowotne pokazują trendy, a nie diagnozy"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Ciągłe HRV do oceny regeneracji i stresu, ulepszone względem Gen 2. Przydatne do trendów; niezweryfikowane niezależnie — istnieje tylko preprint (dotyczący wcześniejszej generacji), nie znaleziono recenzowanej niezależnej walidacji (stan na październik 2026).",
+        "sensor": "Szeroki zestaw czujników — tętno, HRV, SpO2, częstość oddechów, temperatura skóry — plus silniczek wibracyjny (według RingConn pierwszy w inteligentnych pierścieniach) i nowe śledzenie trendów naczyń / nocnego ciśnienia.",
+        "sleep-accuracy": "Solidne śledzenie snu z nowymi danymi o wzorcach bezdechu; nie znaleziono niezależnej walidacji snu. Zasada ONDA: bez własnej niezależnej walidacji urządzenie dostaje najwyżej 7,5, jeśli wcześniejsze generacje zweryfikowano, a 7,0, jeśli nie.",
+        "data-access": "Dane są w aplikacji RingConn z eksportem; brak naprawdę otwartego API.",
+        "wearability": "Mocna strona: bateria ~10-14 dni, działa z iPhone’em i Androidem, cichy budzik wibracyjny i uniwersalne etui do ładowania bezprzewodowego. Wygodny do noszenia całą dobę.",
+        "app-ux": "Sprawna, ulepszona aplikacja z nowymi kartami o naczyniach i bezdechu sennym. Mniej dopracowana i gorzej objaśniająca niż Oura, ale czytelna.",
+        "value": "$349 jednorazowo bez subskrypcji — a zestaw funkcji tańszy niż pierścień Oura z członkostwem. Bardzo dobry stosunek jakości do ceny."
+      },
+      "content": "## W czym jest na czele\n\nRingConn Gen 3 to najbardziej kompletny pierścień bez subskrypcji, jaki wypuścił RingConn. Najważniejsze są cena i funkcje: jednorazowe $349 bez członkostwa, bateria ~10-14 dni i silniczek wibracyjny (według RingConn pierwszy w inteligentnych pierścieniach), który umożliwia ciche budziki i powiadomienia (podwyższone tętno, bezczynność, cele kroków). Dochodzi śledzenie trendów zdrowia naczyń i nocnego ciśnienia, dane o wzorcach bezdechu sennego i uniwersalne etui do ładowania bezprzewodowego; działa z iPhone’em i Androidem. Jako pakiet bez subskrypcji trudno go przebić.\n\n## Jakie są wady RingConn Gen 3?\n\nDokładność i dopracowanie. Śledzenie [HRV](/glossary/heart-rate-variability) i snu w RingConn nie zostało niezależnie zweryfikowane (istnieje tylko preprint dotyczący wcześniejszej generacji), a aplikacja RingConn mniej objaśnia. Nowe funkcje naczyń i ciśnienia pokazują trendy, a nie są narzędziami diagnostycznymi — przydają się do wychwytywania wzorców, ale nie do decyzji medycznych.\n\n## Kto powinien kupić RingConn Gen 3?\n\nWybierz RingConn Gen 3, jeśli chcesz mocnego pierścienia bez subskrypcji — długa bateria, ciche powiadomienia wibracyjne, szeroki zestaw czujników — i nie chcesz płacić stałego członkostwa Oura. Jeśli chcesz linii pierścieni z największą liczbą opublikowanych badań — głównie dotyczących wcześniejszych generacji, częściowo finansowanych przez Oura (sam Ring 5 nie był osobno weryfikowany) — i najlepszej aplikacji, nadal prowadzi [Oura Ring 5](/reviews/oura-ring-5), z subskrypcją; o poprzednim, tańszym RingConn przeczytasz w recenzji [Gen 2](/reviews/ringconn-gen-2).\n\n---\n\n## Do poczytania\n\nNauka o tym, dlaczego HRV to sygnał wart śledzenia.\n\n- [Częstotliwość rezonansowa i koherencja układu](/articles/resonant-frequency-system-coherence) — czym jest oddychanie z częstotliwością rezonansową i co pokazują badania\n- [HRV a autonomiczny układ nerwowy](/articles/anti-entropy-neural-architecture) — o HRV jako sygnale autonomicznym\n",
+      "faq": [
+        {
+          "q": "Czy RingConn Gen 3 jest lepszy od Gen 2?",
+          "a": "Tak — Gen 3 dodaje baterię ~10–14 dni, silniczek wibracyjny (według RingConn pierwszy w inteligentnych pierścieniach) do cichych powiadomień i nowe dane o naczyniach i bezdechu sennym. ONDA ocenia go na {{score:ringconn-gen-3}}/10 — mocny pierścień bez subskrypcji."
+        },
+        {
+          "q": "Czy RingConn Gen 3 wymaga subskrypcji?",
+          "a": "Nie — $349 jednorazowo ($369 za metaliczne wykończenia) bez subskrypcji, więc z czasem kosztuje mniej niż Oura (bez członkostwa)."
+        },
+        {
+          "q": "RingConn Gen 3 czy Oura — co lepsze?",
+          "a": "Jeśli chcesz funkcjonalnego pierścienia bez subskrypcji z długą baterią i cichymi powiadomieniami wibracyjnymi, Gen 3 to mocna opcja bez członkostwa. Oura nadal prowadzi pod względem najbardziej dopracowanej aplikacji i ma więcej opublikowanych badań snu (głównie dotyczących wcześniejszych generacji, częściowo finansowanych przez Oura)."
+        }
+      ]
     }
   },
   "comparisons": {
