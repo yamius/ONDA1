@@ -8899,6 +8899,55 @@
         }
       ],
       "content": "## La version courte\n\nLe [Hooga HG500](/reviews/hooga-hg500) est la référence économique : des caractéristiques honnêtes et une fabrication solide pour environ un cinquième du prix du Joovv. Le [Joovv Solo 3.0](/reviews/joovv-solo-3) est le leader premium de la catégorie : modulaire et superbement fabriqué.\n\n## Quand le Hooga HG500 est-il le bon choix ?\n\nVous voulez de vrais résultats en lumière rouge (660/850 nm) et un panneau solide au prix raisonnable le plus bas, sans besoin d’une marque premium ni d’un assemblage modulaire.\n\n## Quand le Joovv Solo 3.0 est-il le bon choix ?\n\nLa qualité de fabrication, la marque et un écosystème modulaire extensible justifient pour vous de payer près de cinq fois plus.\n\n## À comparer aussi\n\nPour le milieu de gamme au spectre plus riche, voir [Hooga HG500 vs PlatinumLED BIOMAX 600](/reviews/vs/hooga-hg500-vs-platinumled-biomax-600). Toute la catégorie : [meilleurs panneaux de luminothérapie rouge](/reviews/red-light-therapy)."
+    },
+    "sun-home-equinox-vs-sunlighten-mpulse": {
+      "title": "Sun Home Equinox vs Sunlighten mPulse (2026)",
+      "description": "Sun Home Equinox vs Sunlighten mPulse : la nouvelle venue axée sur la valeur avec extras inclus face au choix premium à contrôle de 3 longueurs d’onde. Infrarouge comparé.",
+      "intro": "La Sunlighten mPulse est la référence premium de l’infrarouge à spectre complet : une véritable émission de trois longueurs d’onde contrôlées indépendamment dans une cabine premium en cèdre. La Sun Home Equinox est la challengeuse axée sur la valeur : une cabine plus chaude (~165 °F, donnée du fabricant) avec chromothérapie et son inclus. Précision des longueurs d’onde et fabrication face à la chaleur et aux fonctions incluses.",
+      "verdict": "Référence premium face à challengeuse axée sur la valeur. La Sunlighten mPulse l’emporte sur le vrai contrôle de 3 longueurs d’onde, la fabrication premium en cèdre et l’expérience dans la catégorie ; la Sun Home Equinox l’emporte sur la puissance de chauffe et les extras inclus (chromothérapie, son). Les deux revendiquent de faibles CEM. Prenez Sunlighten pour la précision des longueurs d’onde et la fabrication ; Sun Home pour la chaleur et l’ensemble de fonctions.",
+      "bestForA": "Choisissez la Sun Home Equinox si vous voulez une cabine plus chaude (~165 °F, donnée du fabricant), chromothérapie et son inclus, et des fonctions premium à un prix maîtrisé.",
+      "bestForB": "Choisissez la Sunlighten mPulse si vous voulez la leader de la catégorie : un vrai contrôle indépendant de l’infrarouge sur 3 longueurs d’onde et une fabrication premium en cèdre.",
+      "axes": [
+        {
+          "name": "Contrôle des longueurs d’onde",
+          "note": "La Sunlighten mPulse délivre un véritable infrarouge proche, moyen et lointain contrôlé indépendamment : la signature de Sunlighten. Sun Home est à spectre complet, mais sans ce même contrôle indépendant."
+        },
+        {
+          "name": "Puissance de chauffe",
+          "note": "La Sun Home Equinox chauffe davantage (~165 °F, donnée du fabricant) ; Sunlighten reste un peu en dessous (~150 °F)."
+        },
+        {
+          "name": "Extras inclus",
+          "note": "Sun Home inclut de série la chromothérapie et le son Bluetooth (sa fiche technique indique que la luminothérapie rouge n’est pas incluse) ; Sunlighten se concentre sur l’émission infrarouge."
+        },
+        {
+          "name": "Qualité de fabrication",
+          "note": "La fabrication et les finitions premium en cèdre sont la signature de Sunlighten. Sun Home est bien construite, mais un cran en dessous pour les matériaux."
+        },
+        {
+          "name": "CEM",
+          "note": "Sunlighten est devant : elle publie des CEM mesurés de façon indépendante en position assise (généralement sous 1 mG). Sun Home documente de faibles CEM vérifiés par des tiers, mais ONDA n’a trouvé aucun chiffre publié aussi détaillé."
+        },
+        {
+          "name": "Prix",
+          "note": "Sun Home Equinox 2 places : $6,799 prix catalogue, $6,099 en promotion (boutique officielle, 2026-10-18). Sunlighten ne publie pas de prix en ligne (devis via « Get pricing »), donc ONDA ne peut pas confirmer l’écart : demandez un devis ; la différence dépend surtout de vos priorités."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Sun Home Equinox ou Sunlighten mPulse ?",
+          "a": "La Sunlighten mPulse est le choix premium : vrai contrôle indépendant de 3 longueurs d’onde et fabrication premium en cèdre. La Sun Home Equinox chauffe davantage (~165 °F, donnée du fabricant) et inclut chromothérapie et son. Prenez Sunlighten pour la précision des longueurs d’onde et la fabrication, Sun Home pour la chaleur et l’ensemble de fonctions."
+        },
+        {
+          "q": "Le contrôle de 3 longueurs d’onde de Sunlighten compte-t-il ?",
+          "a": "Si vous voulez cibler l’infrarouge proche, moyen et lointain séparément pour des protocoles précis, oui : ce contrôle indépendant est la signature de Sunlighten. Si vous voulez simplement bien transpirer en spectre complet avec des extras, la Sun Home Equinox le permet."
+        },
+        {
+          "q": "Laquelle intègre la luminothérapie rouge ?",
+          "a": "Aucune, de série. La fiche technique de la Sun Home Equinox indique que la luminothérapie rouge n’est pas incluse, et la Sunlighten mPulse se concentre sur l’émission infrarouge."
+        }
+      ],
+      "content": "## La version courte\n\nLa [Sunlighten mPulse](/reviews/sunlighten-mpulse) est le choix premium : vrai contrôle de 3 longueurs d’onde et fabrication premium en cèdre ; la [Sun Home Equinox](/reviews/sun-home-equinox) est la challengeuse axée sur la valeur, plus chaude (~165 °F, donnée du fabricant) et avec des extras inclus.\n\n## Quand la Sun Home Equinox est-elle le bon choix ?\n\nVous voulez une cabine plus chaude, la chromothérapie et le son, à un prix maîtrisé.\n\n## Quand la Sunlighten mPulse est-elle le bon choix ?\n\nVous voulez la signature de Sunlighten : contrôle indépendant de l’infrarouge sur 3 longueurs d’onde et fabrication premium.\n\n## À comparer aussi\n\nVoir [Sun Home Equinox vs Clearlight Sanctuary 2](/reviews/vs/sun-home-equinox-vs-clearlight-sanctuary-2) et [Sunlighten mPulse vs Clearlight Sanctuary 2](/reviews/vs/sunlighten-mpulse-vs-clearlight-sanctuary-2). Toute la catégorie : [meilleurs saunas infrarouges](/reviews/infrared-sauna)."
     }
   },
   "categoryHubs": {

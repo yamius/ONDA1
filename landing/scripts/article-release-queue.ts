@@ -616,6 +616,7 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'tempur-breeze-pro' },
   { collection: 'reviews', slug: 'slumber-cloud-dryline' },
   { collection: 'h2h', slug: 'hooga-hg500-vs-joovv-solo-3' },
+  { collection: 'h2h', slug: 'sun-home-equinox-vs-sunlighten-mpulse' },
   // WAVE_D_NEXT
   ],
 ]

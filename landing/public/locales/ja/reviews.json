@@ -8899,6 +8899,55 @@
         }
       ],
       "content": "## 要点\n\n[Hooga HG500](/reviews/hooga-hg500)は低価格の基準機で、Joovvの約5分の1の価格で誠実なスペックとしっかりした作りを備えます。[Joovv Solo 3.0](/reviews/joovv-solo-3)はカテゴリーのプレミアムリーダーで、モジュール式で作りが美しい製品です。\n\n## Hooga HG500を選ぶべきときは？\n\n赤色光（660/850 nm）の実際の効果としっかりしたパネルを、最も手頃な価格で手に入れたく、プレミアムなブランドやモジュールの連結が不要な場合です。\n\n## Joovv Solo 3.0を選ぶべきときは？\n\n作りの良さ、ブランド、拡張できるモジュール式システムが、約5倍の出費に見合うと思える場合です。\n\n## こちらも比較する価値あり\n\nスペクトルが充実した中価格帯なら[Hooga HG500 vs PlatinumLED BIOMAX 600](/reviews/vs/hooga-hg500-vs-platinumled-biomax-600)をご覧ください。全体は[おすすめ赤色光療法パネル](/reviews/red-light-therapy)へ。"
+    },
+    "sun-home-equinox-vs-sunlighten-mpulse": {
+      "title": "Sun Home Equinox vs Sunlighten mPulse（2026年）",
+      "description": "Sun Home Equinox vs Sunlighten mPulse：付属機能が充実したコスパ重視の新顔と、3波長制御のプレミアムな選択肢。赤外線サウナを比較。",
+      "intro": "Sunlighten mPulseはフルスペクトル赤外線のプレミアムな基準機で、プレミアムなシダー材のキャビンで3つの波長を独立して制御して照射します。Sun Home Equinoxはコスパ重視の挑戦者で、より高温のキャビン（約165°F、メーカー公表値）にカラーセラピーとサウンドが付属します。波長の精度と作りか、熱と付属機能かの選択です。",
+      "verdict": "プレミアムな基準機対コスパ重視の挑戦者。Sunlighten mPulseは本物の3波長制御、プレミアムなシダー材の作り、カテゴリーでの実績で勝ち、Sun Home Equinoxは熱出力と付属機能（カラーセラピー、サウンド）で勝ちます。どちらも低電磁界をうたっています。波長の精度と作りならSunlighten、熱と機能のセットならSun Homeを選びましょう。",
+      "bestForA": "より高温のキャビン（約165°F、メーカー公表値）、付属のカラーセラピーとサウンド、抑えた価格でのプレミアム機能が欲しいならSun Home Equinoxを選びましょう。",
+      "bestForB": "カテゴリーのリーダー、つまり本物の独立した3波長赤外線制御とプレミアムなシダー材の作りが欲しいならSunlighten mPulseを選びましょう。",
+      "axes": [
+        {
+          "name": "波長制御",
+          "note": "Sunlighten mPulseは、独立して制御できる本物の近・中・遠赤外線を照射します。これがSunlightenの代名詞です。Sun Homeはフルスペクトルですが、同じような独立制御はありません。"
+        },
+        {
+          "name": "熱出力",
+          "note": "Sun Home Equinoxのほうが高温になり（約165°F、メーカー公表値）、Sunlightenはやや低めです（約150°F）。"
+        },
+        {
+          "name": "付属機能",
+          "note": "Sun Homeはカラーセラピーとブルートゥースのサウンドを標準装備しています（仕様書では赤色光療法は非搭載）。Sunlightenは赤外線の照射に特化しています。"
+        },
+        {
+          "name": "作りの良さ",
+          "note": "プレミアムなシダー材の作りと仕上げはSunlightenの代名詞です。Sun Homeもよくできていますが、素材では一歩譲ります。"
+        },
+        {
+          "name": "電磁界",
+          "note": "Sunlightenがリード：座った位置で独立して測定した電磁界を公開しています（通常1 mG未満）。Sun Homeは第三者が確認した低電磁界を示していますが、ONDAは同じ詳しさの公開数値を見つけられませんでした。"
+        },
+        {
+          "name": "価格",
+          "note": "Sun Home Equinox 2人用：定価$6,799、セール価格$6,099（公式ストア、2026-10-18）。Sunlightenはオンラインで価格を公開しておらず（「Get pricing」から見積もり）、ONDAは価格差を確認できません。見積もりを取りましょう。差は主に何を優先するかで決まります。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Sun Home EquinoxとSunlighten mPulse、どちらがいい？",
+          "a": "Sunlighten mPulseはプレミアムな選択で、本物の独立した3波長制御とプレミアムなシダー材の作りを備えます。Sun Home Equinoxはより高温になり（約165°F、メーカー公表値）、カラーセラピーとサウンドが付属します。波長の精度と作りならSunlighten、熱と機能のセットならSun Homeです。"
+        },
+        {
+          "q": "Sunlightenの3波長制御は重要ですか？",
+          "a": "特定のプロトコルのために近・中・遠赤外線を個別に使いたいなら重要です。その独立制御こそがSunlightenの代名詞です。付属機能付きのフルスペクトルでしっかり汗をかきたいだけなら、Sun Home Equinoxで十分です。"
+        },
+        {
+          "q": "赤色光療法を内蔵しているのはどちらですか？",
+          "a": "標準ではどちらもありません。Sun Home Equinoxの仕様書では赤色光療法は非搭載とされ、Sunlighten mPulseは赤外線の照射に特化しています。"
+        }
+      ],
+      "content": "## 要点\n\n[Sunlighten mPulse](/reviews/sunlighten-mpulse)はプレミアムな選択で、本物の3波長制御とプレミアムなシダー材の作りを備えます。[Sun Home Equinox](/reviews/sun-home-equinox)はコスパ重視の挑戦者で、より高温（約165°F、メーカー公表値）で付属機能も充実しています。\n\n## Sun Home Equinoxを選ぶべきときは？\n\nより高温のキャビン、カラーセラピー、サウンドを抑えた価格で手に入れたい場合です。\n\n## Sunlighten mPulseを選ぶべきときは？\n\nSunlightenの代名詞である、独立した3波長赤外線制御とプレミアムな作りが欲しい場合です。\n\n## こちらも比較する価値あり\n\n[Sun Home Equinox vs Clearlight Sanctuary 2](/reviews/vs/sun-home-equinox-vs-clearlight-sanctuary-2)と[Sunlighten mPulse vs Clearlight Sanctuary 2](/reviews/vs/sunlighten-mpulse-vs-clearlight-sanctuary-2)をご覧ください。全体は[おすすめ赤外線サウナ](/reviews/infrared-sauna)へ。"
     }
   },
   "categoryHubs": {
