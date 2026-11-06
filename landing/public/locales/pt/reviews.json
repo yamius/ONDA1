@@ -1395,8 +1395,51 @@
       ]
     },
     "theragun-elite": {
-      "verdict": "Melhor custo-benefício da Therabody — 16 mm de amplitude com 40 lbs de força de travamento por $200 a menos que a PRO Plus. A compra racional da Therabody para a maioria.",
-      "productType": "Pistola de massagem premium intermediária"
+      "verdict": "O melhor custo-benefício da Therabody — 16 mm de amplitude com 40 lbs de força de travamento por $200 a menos que a PRO Plus. A compra sensata da Therabody para a maioria.",
+      "summary": "A Theragun Elite é a compra sensata da Therabody — a mesma amplitude de 16 mm da PRO Plus topo de linha, 40 lbs de força de travamento (contra 60 lbs da PRO Plus), o mesmo app da Therabody, a mesma empunhadura múltipla e $200 a menos. Para 90% dos usuários, a diferença de especificações em relação à PRO Plus não faz diferença. O padrão e o app da Therabody por um preço bem mais acessível.",
+      "description": "Análise do ONDA da Theragun Elite — a intermediária da Therabody com 40 lbs de força de travamento, 16 mm de amplitude e o mesmo app da Therabody por um preço menor. Pontuada em força de travamento, construção, bateria e custo-benefício.",
+      "bestFor": "Ideal para a maioria dos compradores da faixa premium — a escolha sensata da Therabody, com todo o ecossistema do app e 16 mm de amplitude por $200 a menos que a PRO Plus.",
+      "testNote": "Avaliação baseada em evidências — pontuada com base na documentação da Therabody e em análises esportivas e de fitness de 2026. Não testada pessoalmente pelo ONDA.",
+      "productType": "Pistola de massagem premium intermediária",
+      "pros": [
+        "A mesma amplitude de 16 mm da Theragun PRO Plus",
+        "O mesmo app e ecossistema da Therabody por $200 a menos",
+        "Mais leve que a PRO Plus (~2,2 lbs)",
+        "A mesma garantia de 2 anos da PRO Plus"
+      ],
+      "cons": [
+        "40 lbs de força de travamento contra 60 lbs da PRO Plus",
+        "Sem tela OLED (exclusiva da PRO Plus)",
+        "Os mesmos $399 da Hypervolt 2 Pro, mas com menos força de travamento",
+        "5 ponteiras contra 6 da PRO Plus"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "40 lbs de força de travamento + 16 mm de amplitude — a mesma profundidade da PRO Plus, com menos força de travamento. Suficiente para quem não é atleta de elite.",
+        "build-attachments": "Construção premium com motor brushless, 5 ponteiras, 2 anos de garantia. O mesmo padrão Therabody da PRO Plus.",
+        "battery-noise": "Motor brushless a 50–55 dB. ~2 horas por carga.",
+        "app-smart-features": "O mesmo app da Therabody da PRO Plus — rotinas guiadas, sensor de pressão, Bluetooth. A paridade do app é o principal argumento de valor.",
+        "ergonomics-portability": "Empunhadura múltipla. Mais leve que a PRO Plus (~2,2 lbs). Ergonomia melhor que a topo de linha para sessões com uma mão.",
+        "value": "$399 — o mesmo preço da Hypervolt 2 Pro, com o app da Therabody e 2 anos de garantia. A melhor proposta de valor da Therabody."
+      },
+      "content": "## Onde ela se destaca\n\nA Theragun Elite é a opção sensata da Therabody — a mesma amplitude de 16 mm da PRO Plus topo de linha, o mesmo app da Therabody e 2 anos de garantia, por $200 a menos. Para 90% dos usuários, a diferença de especificações em relação à PRO Plus não faz diferença.\n\n## Quais são as desvantagens da Theragun Elite?\n\nA força de travamento em comparação com a Hypervolt 2 Pro. Pelo mesmo preço de $399, a Hypervolt 2 Pro entrega 60 lbs de força de travamento contra 40 lbs da Theragun Elite. Você troca o ecossistema da Therabody pela força de travamento maior da Hyperice.\n\n## Quem deve comprar a Theragun Elite?\n\nEscolha a Theragun Elite pelo custo-benefício sensato da Therabody — mesmo app, mesma amplitude, preço menor que a PRO Plus. Para mais força de travamento pelo mesmo preço, a Hypervolt 2 Pro. Para o máximo de especificações, a Theragun PRO Plus.\n\n---\n\n## Leitura complementar\n\n- [Biogênese mitocondrial](/articles/mitochondrial-biogenesis-cellular-power-grid)\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n",
+      "faq": [
+        {
+          "q": "A Theragun Elite vale a pena?",
+          "a": "Sim, para a maioria dos compradores da faixa premium. A Theragun Elite tem a mesma amplitude de 16 mm, o app da Therabody e 2 anos de garantia da PRO Plus por $200 a menos, e é mais leve. Em troca, cai para 40 lbs de força de travamento e não tem tela OLED."
+        },
+        {
+          "q": "Quanto custa a Theragun Elite?",
+          "a": "A Theragun Elite custa $399 com 5 ponteiras. São $200 a menos que a Theragun PRO Plus e o mesmo preço da Hypervolt 2 Pro, que oferece mais força de travamento."
+        },
+        {
+          "q": "Theragun Elite vs Theragun PRO Plus: qual é melhor?",
+          "a": "Para a maioria, a Elite. Ela compartilha com a PRO Plus a amplitude de 16 mm, o app e a garantia por $200 a menos, e é mais leve. A PRO Plus acrescenta 60 lbs de força de travamento contra 40, uma tela OLED e uma sexta ponteira — diferenças que a análise considera irrelevantes para 90% dos usuários."
+        },
+        {
+          "q": "Quais são as desvantagens da Theragun Elite?",
+          "a": "A força de travamento da Elite é de 40 lbs contra 60 da PRO Plus, ela não tem tela OLED e vem com 5 ponteiras em vez de 6. Por $399, ela também custa o mesmo que a Hypervolt 2 Pro, com menos força de travamento."
+        }
+      ]
     },
     "achedaway-pro": {
       "verdict": "A melhor relação especificação-preço em percussão premium: 80 lbs de força de bloqueio (a mais alta da categoria) por $349. Sem ecossistema de app de marca premium.",

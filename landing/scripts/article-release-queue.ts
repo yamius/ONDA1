@@ -623,6 +623,7 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'focuscalm' },
   { collection: 'reviews', slug: 'myndlift' },
   { collection: 'reviews', slug: 'sunlighten-mpulse' },
+  { collection: 'reviews', slug: 'theragun-elite' },
   // WAVE_D_NEXT
   ],
 ]

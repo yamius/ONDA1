@@ -1395,8 +1395,51 @@
       ]
     },
     "theragun-elite": {
-      "verdict": "Najlepsza wartość Therabody — amplituda 16 mm z siłą zatrzymania 40 lbs za $200 mniej niż PRO Plus. Racjonalny zakup Therabody dla większości użytkowników.",
-      "productType": "Pistolet do masażu ze średniej półki premium"
+      "verdict": "Najlepszy stosunek jakości do ceny w ofercie Therabody — 16 mm amplitudy i 40 lbs siły zatrzymania za $200 mniej niż PRO Plus. Rozsądny zakup Therabody dla większości.",
+      "summary": "Theragun Elite to rozsądny zakup od Therabody — ta sama amplituda 16 mm co we flagowym PRO Plus, 40 lbs siły zatrzymania (wobec 60 lbs w PRO Plus), ta sama aplikacja Therabody, ten sam uchwyt z wieloma chwytami i $200 taniej. Dla 90% użytkowników różnica w parametrach względem PRO Plus nie ma znaczenia. Renoma i aplikacja Therabody w wyraźnie bardziej przystępnej cenie.",
+      "description": "Recenzja ONDA pistoletu Theragun Elite — modelu Therabody ze średniej półki z siłą zatrzymania 40 lbs, amplitudą 16 mm i tą samą aplikacją Therabody w niższej cenie. Oceniony pod kątem siły zatrzymania, wykonania, baterii i wartości.",
+      "bestFor": "Dla większości kupujących z segmentu premium — rozsądny wybór Therabody z pełnym ekosystemem aplikacji i amplitudą 16 mm za $200 mniej niż PRO Plus.",
+      "testNote": "Ocena oparta na dowodach — na podstawie dokumentacji Therabody oraz recenzji sportowych i fitness z 2026 roku. ONDA nie testowała urządzenia osobiście.",
+      "productType": "Pistolet do masażu premium ze średniej półki",
+      "pros": [
+        "Ta sama amplituda 16 mm co w Theragun PRO Plus",
+        "Ta sama aplikacja i ekosystem Therabody za $200 mniej",
+        "Lżejszy niż PRO Plus (~2,2 lbs)",
+        "Ta sama 2-letnia gwarancja co w PRO Plus"
+      ],
+      "cons": [
+        "Siła zatrzymania 40 lbs wobec 60 lbs w PRO Plus",
+        "Brak wyświetlacza OLED (tylko w PRO Plus)",
+        "Te same $399 co Hypervolt 2 Pro, ale z mniejszą siłą zatrzymania",
+        "5 końcówek wobec 6 w PRO Plus"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "Siła zatrzymania 40 lbs + amplituda 16 mm — ta sama głębokość co w PRO Plus, mniejsza siła zatrzymania. Wystarcza osobom, które nie są sportowcami wyczynowymi.",
+        "build-attachments": "Wykonanie premium z silnikiem bezszczotkowym, 5 końcówek, 2 lata gwarancji. Ta sama renoma Therabody co PRO Plus.",
+        "battery-noise": "Silnik bezszczotkowy, 50–55 dB. ~2 godziny na jednym ładowaniu.",
+        "app-smart-features": "Ta sama aplikacja Therabody co w PRO Plus — programy z przewodnikiem, czujnik nacisku, Bluetooth. Ta sama aplikacja to główny argument wartości.",
+        "ergonomics-portability": "Uchwyt z wieloma chwytami. Lżejszy niż PRO Plus (~2,2 lbs). Wygodniejszy niż flagowiec przy sesjach jedną ręką.",
+        "value": "$399 — ta sama cena co Hypervolt 2 Pro, z aplikacją Therabody i 2-letnią gwarancją. Najlepsza oferta wartości w Therabody."
+      },
+      "content": "## W czym jest na czele\n\nTheragun Elite to rozsądny wybór w Therabody — ta sama amplituda 16 mm co we flagowym PRO Plus, ta sama aplikacja Therabody i 2 lata gwarancji, ale za $200 mniej. Dla 90% użytkowników różnica w parametrach względem PRO Plus nie ma znaczenia.\n\n## Jakie są wady Theragun Elite?\n\nSiła zatrzymania w porównaniu z Hypervolt 2 Pro. Za te same $399 Hypervolt 2 Pro daje 60 lbs siły zatrzymania wobec 40 lbs w Theragun Elite. Wymieniasz ekosystem Therabody na większą siłę zatrzymania Hyperice.\n\n## Kto powinien kupić Theragun Elite?\n\nWybierz Theragun Elite dla rozsądnej wartości Therabody — ta sama aplikacja, ta sama amplituda i niższa cena niż PRO Plus. Dla większej siły zatrzymania w tej samej cenie — Hypervolt 2 Pro. Dla maksimum parametrów — Theragun PRO Plus.\n\n---\n\n## Do poczytania\n\n- [Biogeneza mitochondriów](/articles/mitochondrial-biogenesis-cellular-power-grid)\n- [Medycyna elektryczna i neuromodulacja](/articles/electric-medicine-neuromodulation)\n",
+      "faq": [
+        {
+          "q": "Czy Theragun Elite jest wart swojej ceny?",
+          "a": "Tak, dla większości kupujących z segmentu premium. Theragun Elite ma tę samą amplitudę 16 mm, aplikację Therabody i 2-letnią gwarancję co PRO Plus, ale za $200 mniej, i jest lżejszy. W zamian siła zatrzymania spada do 40 lbs i nie ma wyświetlacza OLED."
+        },
+        {
+          "q": "Ile kosztuje Theragun Elite?",
+          "a": "Theragun Elite kosztuje $399 z 5 końcówkami. To $200 mniej niż Theragun PRO Plus i tyle samo co Hypervolt 2 Pro, który oferuje większą siłę zatrzymania."
+        },
+        {
+          "q": "Theragun Elite czy Theragun PRO Plus: co lepsze?",
+          "a": "Dla większości — Elite. Ma tę samą amplitudę 16 mm, aplikację i gwarancję co PRO Plus za $200 mniej i jest lżejszy. PRO Plus dodaje 60 lbs siły zatrzymania wobec 40, wyświetlacz OLED i szóstą końcówkę — w recenzji te różnice uznano za nieistotne dla 90% użytkowników."
+        },
+        {
+          "q": "Jakie są wady Theragun Elite?",
+          "a": "Siła zatrzymania Elite to 40 lbs wobec 60 w PRO Plus, brakuje wyświetlacza OLED, a końcówek jest 5 zamiast 6. Za $399 kosztuje też tyle samo co Hypervolt 2 Pro, przy mniejszej sile zatrzymania."
+        }
+      ]
     },
     "achedaway-pro": {
       "verdict": "Najlepszy stosunek parametrów do ceny w segmencie premium — 80 lbs siły docisku (najwięcej w kategorii) za 349 $. Brak ekosystemu aplikacji marki premium.",
