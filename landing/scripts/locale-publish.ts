@@ -104,4 +104,6 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('articles', 'why-is-my-apple-watch-hrv-low', '2026-10-04', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   // Release queue: waiting translations, 10 pages site-wide every 2 days (scripts/article-release-queue.ts).
   ...RELEASE_QUEUE_ENTRIES,
+  ...everywhere('articles', 'alpha-brain-waves', '2026-11-06', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('comparisons', 'neurosity-crown-alternatives', '2026-11-06', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]
