@@ -10868,6 +10868,116 @@
         }
       ],
       "content": "## La versión corta\n\nFlow Neuroscience y Apollo Neuro parecen cercanos, pero en realidad no son sustitutos. Flow es un dispositivo clínico aprobado por la FDA y con marcado CE para la depresión mayor diagnosticada; Apollo es un wearable de bienestar de consumo que se comercializa para la calma. La decisión depende de si tienes una afección clínica o un objetivo de bienestar.\n\n## ¿Cuándo es Flow Neuroscience la elección adecuada?\n\nSi tienes depresión mayor y un profesional clínico abierto a hablar de la tDCS como opción para usar en casa, Flow encaja. Su valor está en la aprobación de la FDA y el marcado CE, en el ensayo aleatorizado publicado en Nature Medicine (Woodham 2024) y en el programa estructurado de 8 semanas de terapia conductual. Para el bienestar general es la herramienta equivocada: la indicación es acotada a propósito.\n\n## ¿Cuándo es Apollo Neuro la elección adecuada?\n\nSi quieres un wearable vibrotáctil pasivo que se comercializa para la calma a lo largo del día —para recuperación, estrés, sueño o concentración— sin indicación clínica ni compromiso con un programa estructurado, Apollo encaja. Es vibrotáctil, se comercializa para la calma y está respaldado por investigación de la Universidad de Pittsburgh dirigida por sus fundadores; su caso de uso es poder llevarlo a diario."
+    },
+    "mito-red-mitopro-1500-vs-hooga-hg500": {
+      "title": "Mito Red MitoPRO 1500 vs Hooga HG500 (2026)",
+      "description": "Mito Red MitoPRO 1500 vs Hooga HG500: comparativa de ONDA entre un panel de luz roja premium de seis longitudes de onda y uno económico de dos.",
+      "intro": "Mito Red MitoPRO 1500 y Hooga HG500 son los dos paneles de luz roja que se comparan cuando la pregunta es «espectro premium frente a acceso económico». El MitoPRO (que ahora se vende como 1500X) ofrece seis longitudes de onda en un panel grande; Hooga ofrece dos longitudes de onda para medio cuerpo por aproximadamente una cuarta parte del precio. Son gamas distintas; la cuestión es si la diferencia de especificaciones justifica la de precio.",
+      "verdict": "Depende de lo que importe. MitoPRO gana en espectro, construcción y cobertura. Hooga gana en relación calidad-precio por un amplio margen: muchos compradores pueden no necesitar el extra de MitoPRO para un uso habitual.",
+      "bestForA": "Elige Mito Red MitoPRO 1500 si una cobertura de longitudes de onda más amplia, un panel más grande y una construcción premium valen para ti los $940 de diferencia con Hooga.",
+      "bestForB": "Elige Hooga HG500 si quieres especificaciones verificadas de dos longitudes de onda al precio legítimo más bajo: cubre la mayoría de los usos biohacker.",
+      "axes": [
+        {
+          "name": "Cobertura de longitudes de onda",
+          "note": "MitoPRO 1500X: seis longitudes de onda (590 + 630 + 660 + 810 + 830 + 850 nm). Hooga: dos (660 + 850 nm). MitoPRO gana claramente en espectro."
+        },
+        {
+          "name": "Irradiancia",
+          "note": "Mito Red va delante: unos 70 mW/cm² a 6 pulgadas, confirmados con un margen del 10 % por una medición independiente. Los 94 mW/cm² a 6 pulgadas de Hooga los declara el fabricante (página oficial del producto, consultada el 2026-10-01) y aún no hay una medición independiente de esa cifra."
+        },
+        {
+          "name": "Tamaño del panel / cobertura",
+          "note": "MitoPRO 1500X: panel grande de medio cuerpo de 43 × 10 pulgadas. Hooga HG500: medio cuerpo más pequeño. MitoPRO es el panel más grande."
+        },
+        {
+          "name": "CEM / parpadeo",
+          "note": "Ambos: CEM <0,5 mG a 6\", tasas de parpadeo publicadas. Prácticamente empate."
+        },
+        {
+          "name": "Calidad de construcción",
+          "note": "MitoPRO: trasera de aluminio con frontal de cristal. Hooga: trasera de aluminio con embellecedor frontal de plástico. MitoPRO es más premium."
+        },
+        {
+          "name": "Comunidad de la marca",
+          "note": "Mito Red tiene una comunidad biohacker más fuerte que Hooga. Hooga es más nueva y se centra en el precio."
+        },
+        {
+          "name": "Precio",
+          "note": "Hooga HG500: $359. Mito Red MitoPRO 1500X: $1,299 (tienda oficial de EE. UU., 2026-10-01). Hooga cuesta más o menos una cuarta parte."
+        },
+        {
+          "name": "Valor por dólar",
+          "note": "Hooga ofrece especificaciones verificadas de dos longitudes de onda por $359. MitoPRO ofrece gama premium por $1,299. Para quien no es usuario intensivo, Hooga gana claramente en dólares por uso."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Vale Mito Red MitoPRO 1500 los $940 más que Hooga HG500?",
+          "a": "Solo si necesitas expresamente el espectro más amplio (seis bandas frente a dos), mayor cobertura del panel y construcción premium. Para los usos biohacker habituales —sesiones diarias de 10–20 minutos sobre piel o músculo—, Hooga ofrece especificaciones verificadas suficientes. El sobreprecio compra espectro, tamaño y construcción, no necesariamente mejores resultados de fotobiomodulación."
+        },
+        {
+          "q": "¿Cuál aporta más dosis?",
+          "a": "MitoPRO 1500, por su mayor área de tratamiento y su espectro más amplio. En irradiancia a 6\" los dos están cerca sobre el papel (MitoPRO ~70 mW/cm² verificados; Hooga declara 94 mW/cm²), así que la dosis por área es comparable: MitoPRO simplemente cubre más cuerpo por sesión."
+        },
+        {
+          "q": "¿Deberían empezar con Hooga quienes compran por primera vez?",
+          "a": "Sí, en general. Los $940 de ahorro financian un año de pruebas para saber si la terapia de luz roja te aporta un beneficio medible. Si es así, pasa a MitoPRO o Joovv. Si no, no habrás invertido de más."
+        },
+        {
+          "q": "¿Durará Hooga tanto como MitoPRO?",
+          "a": "Ambos tienen garantías de varios años. La construcción de Hooga es menos premium (con embellecedores de plástico), pero los diodos LED son la pieza que se desgasta y son comparables en toda la categoría. Hay menos datos reales de fiabilidad a más de 5 años de Hooga simplemente porque la marca es más nueva."
+        }
+      ],
+      "content": "## La versión corta\n\nMitoPRO gana en hardware: espectro, tamaño y construcción. Hooga gana en relación calidad-precio por un amplio margen. La decisión es si necesitas gama premium o si la gama económica cubre tu uso.\n\n## ¿Cuándo es Mito Red MitoPRO 1500 la elección correcta?\n\nSi la cobertura más amplia de seis longitudes de onda, el panel de medio cuerpo más grande y la construcción premium valen para ti los $940 de diferencia con Hooga —y lo valen para usuarios diarios serios—, MitoPRO es la opción adecuada.\n\n## ¿Cuándo es Hooga HG500 la elección correcta?\n\nSi quieres hardware de terapia de luz roja verificado al precio legítimo más bajo, Hooga es la opción adecuada. La mayoría de quienes compran por primera vez deberían empezar aquí y subir de gama más adelante si el uso lo justifica."
+    },
+    "ultrahuman-ring-pro-vs-ringconn-gen-2": {
+      "title": "Ultrahuman Ring Pro vs RingConn Gen 2 (2026)",
+      "description": "Ultrahuman Ring Pro vs RingConn Gen 2: dos anillos inteligentes sin suscripción. Funciones premium y ~15 días de batería frente a la opción de valor, unos $180 más barata.",
+      "intro": "Los dos son anillos sin suscripción y con batería de larga duración, así que es una decisión entre valor y funciones, no una discusión sobre suscripciones. El Ultrahuman Ring Pro es la opción premium: procesamiento en el anillo, métricas más completas, ~15 días de batería, $479. El RingConn Gen 2 es la opción de valor: seguimiento sólido, 10–12 días de batería y sin suscripción por unos $180 menos ($299).",
+      "verdict": "Ambos prescinden de la suscripción y duran mucho más de una semana. El Ultrahuman Ring Pro gana en funciones, procesamiento y una batería algo más larga; el RingConn Gen 2 gana claramente en precio: unos $180 (≈38 %) más barato por un seguimiento sólido y con más historial de ventas. Elige según quieras métricas premium o la opción de valor.",
+      "bestForA": "Elige el Ultrahuman Ring Pro si quieres el conjunto de funciones más completo, procesamiento en el anillo y la batería más larga, y el precio más alto te compensa.",
+      "bestForB": "Elige el RingConn Gen 2 si quieres un anillo sin suscripción con batería larga y seguimiento sólido por unos $180 menos: la opción de valor.",
+      "axes": [
+        {
+          "name": "Suscripción",
+          "note": "Empate: los dos son compras únicas sin membresía."
+        },
+        {
+          "name": "Precio",
+          "note": "RingConn Gen 2: $299. Ring Pro: $479. RingConn es unos $180 más barato por un anillo sin suscripción."
+        },
+        {
+          "name": "Batería",
+          "note": "Ring Pro: ~15 días. RingConn Gen 2: 10–12 días. Ambas excelentes; Ultrahuman va algo por delante."
+        },
+        {
+          "name": "Funciones y procesamiento",
+          "note": "El Ring Pro añade un procesador de doble núcleo en el anillo, métricas más orientadas al metabolismo y la capa de biointeligencia «Jade». RingConn es más sencillo."
+        },
+        {
+          "name": "Calidad del seguimiento",
+          "note": "Prácticamente iguales: ambos registran sueño y HRV a la altura de su precio; ninguno tiene una validación independiente (a octubre de 2026) y la diferencia en el día a día es pequeña."
+        },
+        {
+          "name": "Historial",
+          "note": "El RingConn Gen 2 lleva más tiempo a la venta y, tras su acuerdo con Oura, sigue vendiéndose en EE. UU. El Ring Pro es nuevo; el anterior Ring Air de Ultrahuman tuvo quejas de fiabilidad de batería que el rediseño intenta resolver."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Ultrahuman Ring Pro o RingConn Gen 2?",
+          "a": "Los dos son sin suscripción y con batería larga. El Ring Pro es la opción premium (más funciones, procesamiento en el anillo, ~15 días de batería, $479); el RingConn Gen 2 es la opción de valor (seguimiento sólido, 10–12 días de batería, $299). Si lo que más importa es el presupuesto, RingConn; si quieres el anillo más completo, Ring Pro."
+        },
+        {
+          "q": "¿Vale el Ring Pro un 60 % más que el RingConn?",
+          "a": "Solo si valoras las funciones extra, el procesamiento y la batería algo más larga. Para el seguimiento básico de sueño y HRV sin suscripción, el RingConn Gen 2 ofrece la mayor parte del beneficio diario por unos $180 menos."
+        },
+        {
+          "q": "¿Se venden los dos en EE. UU.?",
+          "a": "Sí. RingConn llegó a un acuerdo en su disputa de patentes con Oura y sigue a la venta, y el rediseñado Ultrahuman Ring Pro está disponible en EE. UU. (a diferencia del antiguo Ultrahuman Ring Air, sujeto a una prohibición de importación en EE. UU.)."
+        }
+      ],
+      "content": "## La versión corta\n\nDos anillos sin suscripción, de gamas distintas. El [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) es la opción premium (~$479, ~15 días de batería, procesamiento en el anillo); el [RingConn Gen 2](/reviews/ringconn-gen-2) es la opción de valor ($299, 10–12 días de batería, seguimiento sólido).\n\n## ¿Cuándo es el Ultrahuman Ring Pro la elección correcta?\n\nQuieres el conjunto de funciones más completo, procesamiento integrado y la batería más larga, y el precio más alto te parece aceptable.\n\n## ¿Cuándo es el RingConn Gen 2 la elección correcta?\n\nQuieres un anillo sin suscripción con batería larga y un seguimiento fiable por unos $180 menos: la opción de valor.\n\n## También vale la pena comparar\n\nPara el buque insignia en precisión, [Ring Pro vs Oura Ring 5](/reviews/vs/ultrahuman-ring-pro-vs-oura-ring-5); para el otro anillo sin suscripción, el [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring). Toda la categoría: [mejores medidores de HRV](/reviews/hrv-trackers)."
     }
   },
   "categoryHubs": {

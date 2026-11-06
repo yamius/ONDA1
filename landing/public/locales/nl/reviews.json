@@ -8566,6 +8566,116 @@
         }
       ],
       "content": "## De korte versie\n\nFlow Neuroscience en Apollo Neuro lijken verwant, maar zijn niet echt inwisselbaar. Flow is een door de FDA goedgekeurd, CE-gemarkeerd klinisch apparaat voor vastgestelde depressie (major depression); Apollo is een wellness-wearable voor consumenten die wordt aangeprezen voor rust. De keuze hangt af van of je een klinische aandoening hebt of een wellnessdoel.\n\n## Wanneer is Flow Neuroscience de juiste keuze?\n\nAls je een depressie (major depression) hebt en een behandelaar die tDCS als thuisbehandeling wil bespreken, past Flow. De waarde zit in de FDA-goedkeuring en de CE-markering, de gerandomiseerde studie in Nature Medicine (Woodham 2024) en het gestructureerde gedragstherapieprogramma van 8 weken. Voor algemeen welzijn is het het verkeerde instrument — de indicatie is bewust smal.\n\n## Wanneer is Apollo Neuro de juiste keuze?\n\nAls je een passieve vibrotactiele wearable wilt die wordt aangeprezen voor rust gedurende de dag — voor herstel, stress, slaap, focus — zonder klinische indicatie of verplichting aan een gestructureerd programma, past Apollo. Het is vibrotactiel, aangeprezen voor rust en gesteund door onderzoek van de University of Pittsburgh onder leiding van de oprichters; draagbaarheid in het dagelijks leven is de toepassing."
+    },
+    "mito-red-mitopro-1500-vs-hooga-hg500": {
+      "title": "Mito Red MitoPRO 1500 vs Hooga HG500 (2026)",
+      "description": "Mito Red MitoPRO 1500 vs Hooga HG500: ONDA-vergelijking van een premium roodlichtpaneel met zes golflengtes en een budgetpaneel met twee.",
+      "intro": "Mito Red MitoPRO 1500 en Hooga HG500 zijn de twee roodlichtpanelen die mensen vergelijken als de vraag is ‘premium spectrum of betaalbare instap’. De MitoPRO (nu verkocht als 1500X) biedt zes golflengtes op een groot paneel; Hooga biedt twee golflengtes voor een half lichaam voor ongeveer een kwart van de prijs. Verschillende klassen; de vraag is of het verschil in specificaties het prijsverschil rechtvaardigt.",
+      "verdict": "Het hangt af van wat telt. MitoPRO wint op spectrum, bouwkwaliteit en dekking. Hooga wint ruim op prijs-kwaliteit — veel kopers hebben de meerprijs van de MitoPRO voor normaal gebruik waarschijnlijk niet nodig.",
+      "bestForA": "Kies de Mito Red MitoPRO 1500 als een bredere golflengtedekking, een groter paneel en premium bouwkwaliteit je de $940 meer dan Hooga waard zijn.",
+      "bestForB": "Kies de Hooga HG500 als je geverifieerde specificaties met twee golflengtes wilt voor de laagste serieuze prijs — de meeste biohackertoepassingen zijn daarmee gedekt.",
+      "axes": [
+        {
+          "name": "Golflengtes",
+          "note": "MitoPRO 1500X: zes golflengtes (590 + 630 + 660 + 810 + 830 + 850 nm). Hooga: twee (660 + 850 nm). MitoPRO wint duidelijk op spectrum."
+        },
+        {
+          "name": "Bestralingssterkte",
+          "note": "Mito Red ligt voor: ongeveer 70 mW/cm² op 6 inch, door een onafhankelijke meting tot op 10% bevestigd. Hooga’s 94 mW/cm² op 6 inch is een fabrieksopgave (officiële productpagina, gecontroleerd op 2026-10-01); een onafhankelijke meting van dat getal is er nog niet."
+        },
+        {
+          "name": "Paneelgrootte / dekking",
+          "note": "MitoPRO 1500X: groot halflichaamspaneel van 43 × 10 inch. Hooga HG500: kleiner halflichaamspaneel. MitoPRO is het grotere paneel."
+        },
+        {
+          "name": "EMV / flikkering",
+          "note": "Beide: EMV <0,5 mG op 6\", flikkerwaarden openbaar. Feitelijk gelijk."
+        },
+        {
+          "name": "Bouwkwaliteit",
+          "note": "MitoPRO: aluminium achterkant met glazen voorkant. Hooga: aluminium achterkant met kunststof rand aan de voorkant. MitoPRO is hoogwaardiger."
+        },
+        {
+          "name": "Achterban van het merk",
+          "note": "Mito Red heeft een sterkere biohackercommunity dan Hooga. Hooga is nieuwer en op prijs gericht."
+        },
+        {
+          "name": "Prijs",
+          "note": "Hooga HG500: $359. Mito Red MitoPRO 1500X: $1,299 (officiële Amerikaanse winkel, 2026-10-01). Hooga kost ongeveer een kwart."
+        },
+        {
+          "name": "Waarde per dollar",
+          "note": "Hooga levert geverifieerde specificaties met twee golflengtes voor $359. MitoPRO levert premium voor $1,299. Voor wie geen intensieve gebruiker is, wint Hooga duidelijk op dollars per toepassing."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is de Mito Red MitoPRO 1500 $940 meer waard dan de Hooga HG500?",
+          "a": "Alleen als je specifiek het bredere spectrum (zes banden tegenover twee), de grotere paneeldekking en premium bouwkwaliteit nodig hebt. Voor typische biohackertoepassingen — dagelijkse sessies van 10–20 minuten op huid of spieren — levert Hooga genoeg geverifieerde specificaties. De meerprijs koopt spectrum, formaat en bouwkwaliteit, niet per se betere resultaten van fotobiomodulatie."
+        },
+        {
+          "q": "Welke geeft meer dosis?",
+          "a": "De MitoPRO 1500, door het grotere behandelgebied en het bredere spectrum. Qua bestralingssterkte op 6\" liggen ze op papier dicht bij elkaar (MitoPRO ~70 mW/cm² geverifieerd; Hooga noemt 94 mW/cm²), dus de dosis per oppervlak is vergelijkbaar — de MitoPRO bestrijkt gewoon meer lichaam per sessie."
+        },
+        {
+          "q": "Moeten eerste kopers met Hooga beginnen?",
+          "a": "Ja, meestal wel. De besparing van $940 betaalt een jaar experimenteren om uit te vinden of roodlichttherapie je meetbaar iets oplevert. Zo ja, stap over op MitoPRO of Joovv. Zo nee, dan heb je je niet te veel vastgelegd."
+        },
+        {
+          "q": "Gaat Hooga even lang mee als MitoPRO?",
+          "a": "Beide hebben meerjarige garanties. Hooga is minder hoogwaardig gebouwd (met kunststof rand), maar de leds zijn het onderdeel dat slijt, en die zijn in de hele categorie vergelijkbaar. Echte betrouwbaarheidsgegevens over 5+ jaar zijn er voor Hooga minder, simpelweg omdat het merk nieuwer is."
+        }
+      ],
+      "content": "## De korte versie\n\nMitoPRO wint op hardware — spectrum, formaat, bouwkwaliteit. Hooga wint ruim op prijs-kwaliteit. De keuze is of je premium nodig hebt of dat het budgetmodel je toepassing dekt.\n\n## Wanneer is de Mito Red MitoPRO 1500 de juiste keuze?\n\nAls de bredere dekking met zes golflengtes, het grotere halflichaamspaneel en de premium bouwkwaliteit je de $940 meer dan Hooga waard zijn — en voor serieuze dagelijkse gebruikers zijn ze dat —, is de MitoPRO de juiste keuze.\n\n## Wanneer is de Hooga HG500 de juiste keuze?\n\nAls je geverifieerde roodlichttherapie-hardware wilt voor de laagste serieuze prijs, is Hooga de juiste keuze. De meeste eerste kopers zouden hier moeten beginnen en later upgraden als de toepassing dat rechtvaardigt."
+    },
+    "ultrahuman-ring-pro-vs-ringconn-gen-2": {
+      "title": "Ultrahuman Ring Pro vs RingConn Gen 2 (2026)",
+      "description": "Ultrahuman Ring Pro vs RingConn Gen 2: twee slimme ringen zonder abonnement. Premiumfuncties en ~15 dagen accu tegenover de voordelige keuze, zo’n $180 goedkoper.",
+      "intro": "Beide zijn ringen zonder abonnement met een lange accuduur, dus dit is een keuze tussen prijs en functies, geen discussie over abonnementen. De Ultrahuman Ring Pro is de premiumoptie — verwerking in de ring, rijkere metingen, ~15 dagen accu, $479. De RingConn Gen 2 is de voordelige keuze — degelijke tracking, 10–12 dagen accu en geen abonnement voor zo’n $180 minder ($299).",
+      "verdict": "Beide hebben geen abonnement nodig en gaan ruim langer dan een week mee. De Ultrahuman Ring Pro wint op functies, verwerking en een iets langere accu; de RingConn Gen 2 wint duidelijk op prijs — zo’n $180 (≈38%) goedkoper voor degelijke tracking en een langere verkoopgeschiedenis. Kies op basis van of je premiummetingen of de voordelige keuze wilt.",
+      "bestForA": "Kies de Ultrahuman Ring Pro als je de rijkere functies, verwerking in de ring en de langste accu wilt, en de hogere prijs het je waard is.",
+      "bestForB": "Kies de RingConn Gen 2 als je een ring zonder abonnement wilt met een lange accu en degelijke tracking voor zo’n $180 minder — de voordelige keuze.",
+      "axes": [
+        {
+          "name": "Abonnement",
+          "note": "Gelijk — beide zijn eenmalige aankopen zonder lidmaatschap."
+        },
+        {
+          "name": "Prijs",
+          "note": "RingConn Gen 2: $299. Ring Pro: $479. RingConn is zo’n $180 goedkoper voor een ring zonder abonnement."
+        },
+        {
+          "name": "Accu",
+          "note": "Ring Pro: ~15 dagen. RingConn Gen 2: 10–12 dagen. Beide uitstekend; Ultrahuman is net iets beter."
+        },
+        {
+          "name": "Functies & verwerking",
+          "note": "De Ring Pro voegt een dualcoreprocessor in de ring toe, rijkere, meer op metabolisme gerichte metingen en de ‘Jade’-biointelligentielaag. RingConn houdt het eenvoudiger."
+        },
+        {
+          "name": "Trackingkwaliteit",
+          "note": "Praktisch gelijk: beide volgen slaap en HRV naar verhouding van hun prijs; geen van beide heeft een onafhankelijke validatie (per oktober 2026), en het dagelijkse verschil is klein."
+        },
+        {
+          "name": "Staat van dienst",
+          "note": "De RingConn Gen 2 is langer te koop en blijft na de schikking met Oura in de VS verkrijgbaar. De Ring Pro is nieuw; Ultrahumans eerdere Ring Air kreeg klachten over de betrouwbaarheid van de accu, waar het nieuwe ontwerp op mikt."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ultrahuman Ring Pro of RingConn Gen 2?",
+          "a": "Beide zijn zonder abonnement en hebben een lange accu. De Ring Pro is de premiumkeuze (meer functies, verwerking in de ring, ~15 dagen accu, $479); de RingConn Gen 2 is de voordelige keuze (degelijke tracking, 10–12 dagen accu, $299). Telt vooral het budget, kies RingConn; wil je de rijkere ring, kies Ring Pro."
+        },
+        {
+          "q": "Is de Ring Pro zo’n 60% meer waard dan de RingConn?",
+          "a": "Alleen als je de extra functies, de verwerking en de iets langere accu belangrijk vindt. Voor basistracking van slaap en HRV zonder abonnement levert de RingConn Gen 2 het grootste deel van het dagelijkse voordeel voor zo’n $180 minder."
+        },
+        {
+          "q": "Zijn beide in de VS verkrijgbaar?",
+          "a": "Ja. RingConn heeft zijn patentgeschil met Oura geschikt en blijft te koop, en de vernieuwde Ultrahuman Ring Pro is in de VS verkrijgbaar (anders dan de oudere Ultrahuman Ring Air, waarvoor een Amerikaans importverbod geldt)."
+        }
+      ],
+      "content": "## De korte versie\n\nTwee ringen zonder abonnement, verschillende klassen. De [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) is de premiumoptie (~$479, ~15 dagen accu, verwerking in de ring); de [RingConn Gen 2](/reviews/ringconn-gen-2) is de voordelige keuze ($299, 10–12 dagen accu, degelijke tracking).\n\n## Wanneer is de Ultrahuman Ring Pro de juiste keuze?\n\nJe wilt de rijkere functies, verwerking aan boord en de langste accu, en de hogere prijs vind je acceptabel.\n\n## Wanneer is de RingConn Gen 2 de juiste keuze?\n\nJe wilt een ring zonder abonnement met een lange accu en betrouwbare tracking voor zo’n $180 minder — de voordelige keuze.\n\n## Ook het vergelijken waard\n\nVoor het vlaggenschip in nauwkeurigheid [Ring Pro vs Oura Ring 5](/reviews/vs/ultrahuman-ring-pro-vs-oura-ring-5); voor de andere ring zonder abonnement de [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring). Het hele veld: [beste HRV-trackers](/reviews/hrv-trackers)."
     }
   },
   "categoryHubs": {

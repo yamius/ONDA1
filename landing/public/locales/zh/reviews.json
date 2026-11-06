@@ -8541,6 +8541,116 @@
         }
       ],
       "content": "## 简而言之\n\nFlow Neuroscience 和 Apollo Neuro 看似相近，但并不能真正互相替代。Flow 是获 FDA 批准、带 CE 标志、针对已确诊重度抑郁症的临床设备；Apollo 是以平静为卖点的消费级健康穿戴设备。关键在于你是有临床病症，还是出于健康养生目的。\n\n## 什么时候该选 Flow Neuroscience？\n\n如果你患有重度抑郁症，且医生愿意讨论把 tDCS 作为居家选项，Flow 正合适。它的价值在于 FDA 批准和 CE 标志、发表于 Nature Medicine 的随机试验（Woodham 2024），以及结构化的 8 周行为治疗方案。用于一般健康养生则不是合适的工具——它的适应症有意设定得很窄。\n\n## 什么时候该选 Apollo Neuro？\n\n如果你想要一款以全天平静为卖点的被动式振动触觉穿戴设备——用于恢复、压力、睡眠、专注——无需临床适应症或结构化方案承诺，Apollo 正合适。它是振动触觉设备，以平静为卖点，背后有创始人主导的匹兹堡大学研究；日常佩戴就是它的使用场景。"
+    },
+    "mito-red-mitopro-1500-vs-hooga-hg500": {
+      "title": "Mito Red MitoPRO 1500 vs Hooga HG500（2026）",
+      "description": "Mito Red MitoPRO 1500 vs Hooga HG500：ONDA 对比一款六波长高端红光面板和一款双波长平价面板。",
+      "intro": "当问题是“高端光谱还是平价入门”时，人们会比较 Mito Red MitoPRO 1500 和 Hooga HG500 这两款红光面板。MitoPRO（现以 1500X 名义销售）在大面板上提供六种波长；Hooga 以约四分之一的价格提供覆盖半身的两种波长。两者定位不同，问题在于参数差距是否值得这样的价格差距。",
+      "verdict": "取决于你看重什么。MitoPRO 在光谱、做工和覆盖面积上胜出。Hooga 在性价比上大幅领先——许多买家在日常使用中可能并不需要 MitoPRO 的溢价。",
+      "bestForA": "如果更宽的波长范围、更大的面板和高端做工对你来说值得比 Hooga 多花 $940，就选 Mito Red MitoPRO 1500。",
+      "bestForB": "如果你想以最低的正规价格获得经过验证的双波长参数，就选 Hooga HG500——足以覆盖大多数生物黑客用途。",
+      "axes": [
+        {
+          "name": "波长",
+          "note": "MitoPRO 1500X：六种波长（590 + 630 + 660 + 810 + 830 + 850 nm）。Hooga：两种（660 + 850 nm）。MitoPRO 在光谱上明显胜出。"
+        },
+        {
+          "name": "辐照度",
+          "note": "Mito Red 领先：6 英寸处约 70 mW/cm²，经独立测量确认误差在 10% 以内。Hooga 在 6 英寸处的 94 mW/cm² 是厂商标称值（官方产品页，2026-10-01 核实），目前尚无该数值的独立测量。"
+        },
+        {
+          "name": "面板尺寸 / 覆盖面积",
+          "note": "MitoPRO 1500X：43 × 10 英寸的大型半身面板。Hooga HG500：较小的半身面板。MitoPRO 面板更大。"
+        },
+        {
+          "name": "电磁场 / 频闪",
+          "note": "两者：6 英寸处电磁场 <0.5 mG，均公开频闪数据。基本打平。"
+        },
+        {
+          "name": "做工",
+          "note": "MitoPRO：铝制背板配玻璃前面板。Hooga：铝制背板配塑料前边框。MitoPRO 更高端。"
+        },
+        {
+          "name": "品牌口碑",
+          "note": "Mito Red 在生物黑客社区中的影响力强于 Hooga。Hooga 是更新、主打性价比的品牌。"
+        },
+        {
+          "name": "价格",
+          "note": "Hooga HG500：$359。Mito Red MitoPRO 1500X：$1,299（美国官方商店，2026-10-01）。Hooga 大约是其四分之一的价格。"
+        },
+        {
+          "name": "每美元价值",
+          "note": "Hooga 以 $359 提供经过验证的双波长参数。MitoPRO 以 $1,299 提供高端配置。对非重度用户来说，Hooga 在每次使用成本上明显胜出。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Mito Red MitoPRO 1500 值得比 Hooga HG500 多花 $940 吗？",
+          "a": "只有在你确实需要更宽的光谱（六个波段对两个）、更大的面板覆盖和高端做工时才值得。对于典型的生物黑客用途——每天在皮肤或肌肉上照射 10–20 分钟——Hooga 经过验证的参数已经足够。溢价买到的是光谱、尺寸和做工，并不一定意味着更好的光生物调节效果。"
+        },
+        {
+          "q": "哪一款提供的剂量更多？",
+          "a": "MitoPRO 1500，因为治疗面积更大、光谱更宽。在 6 英寸处的辐照度上，两者纸面数据接近（MitoPRO 约 70 mW/cm² 经过验证；Hooga 标称 94 mW/cm²），所以单位面积剂量相当——只是 MitoPRO 每次能覆盖更多身体部位。"
+        },
+        {
+          "q": "第一次购买的人应该从 Hooga 开始吗？",
+          "a": "一般来说是的。省下的 $940 足够你用一年时间验证红光疗法是否能给你带来可测量的益处。如果有效，再升级到 MitoPRO 或 Joovv；如果无效，也不会投入过多。"
+        },
+        {
+          "q": "Hooga 能用得和 MitoPRO 一样久吗？",
+          "a": "两者都有多年保修。Hooga 的做工没那么高端（塑料边框），但真正会损耗的是 LED 灯珠，而这在整个品类中相差不大。Hooga 缺少 5 年以上的真实可靠性数据，只是因为这个品牌更新。"
+        }
+      ],
+      "content": "## 简短版本\n\nMitoPRO 在硬件上胜出——光谱、尺寸、做工。Hooga 在性价比上大幅领先。关键在于你是否需要高端配置，还是平价款已经能满足你的用途。\n\n## 什么时候该选 Mito Red MitoPRO 1500？\n\n如果六波长的更宽覆盖、更大的半身面板和高端做工对你来说值得比 Hooga 多花 $940——对认真每天使用的人来说确实值得——那么 MitoPRO 是合适的选择。\n\n## 什么时候该选 Hooga HG500？\n\n如果你想以最低的正规价格获得经过验证的红光疗法设备，Hooga 是合适的选择。大多数第一次购买的人应该从这里开始，之后如果用途需要再升级。"
+    },
+    "ultrahuman-ring-pro-vs-ringconn-gen-2": {
+      "title": "Ultrahuman Ring Pro vs RingConn Gen 2（2026）",
+      "description": "Ultrahuman Ring Pro vs RingConn Gen 2：两款无需订阅的智能戒指。高端功能和约 15 天续航，对比便宜约 $180 的性价比之选。",
+      "intro": "两款都是无需订阅、续航很长的戒指，所以这是性价比与功能之间的选择，而不是订阅之争。Ultrahuman Ring Pro 是高端选项——戒指内处理数据、指标更丰富、约 15 天续航，售价 $479。RingConn Gen 2 是性价比之选——追踪可靠、10–12 天续航、无需订阅，便宜约 $180（$299）。",
+      "verdict": "两款都不需要订阅，续航都远超一周。Ultrahuman Ring Pro 在功能、处理能力和稍长的续航上胜出；RingConn Gen 2 在价格上明显胜出——追踪可靠、销售历史更长，却便宜约 $180（≈38%）。根据你想要高端指标还是性价比来选择。",
+      "bestForA": "如果你想要更丰富的功能、戒指内处理和最长续航，并且觉得更高的价格值得，就选 Ultrahuman Ring Pro。",
+      "bestForB": "如果你想要一款无需订阅、续航长、追踪可靠且便宜约 $180 的戒指，就选 RingConn Gen 2——性价比之选。",
+      "axes": [
+        {
+          "name": "订阅",
+          "note": "打平——两者都是一次性购买，无需会员。"
+        },
+        {
+          "name": "价格",
+          "note": "RingConn Gen 2：$299。Ring Pro：$479。同为无需订阅的戒指，RingConn 便宜约 $180。"
+        },
+        {
+          "name": "续航",
+          "note": "Ring Pro：约 15 天。RingConn Gen 2：10–12 天。两者都很出色；Ultrahuman 略胜一筹。"
+        },
+        {
+          "name": "功能与处理",
+          "note": "Ring Pro 增加了戒指内的双核处理器、更偏重代谢的丰富指标以及“Jade”生物智能层。RingConn 更简单。"
+        },
+        {
+          "name": "追踪质量",
+          "note": "基本相当：两者都能以与价格相称的水平追踪睡眠和 HRV；截至 2026 年 10 月都没有独立验证，日常使用差别不大。"
+        },
+        {
+          "name": "市场记录",
+          "note": "RingConn Gen 2 销售时间更长，与 Oura 和解后仍在美国销售。Ring Pro 是新品；Ultrahuman 之前的 Ring Air 曾有电池可靠性方面的投诉，新设计正是针对这一问题。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ultrahuman Ring Pro 还是 RingConn Gen 2？",
+          "a": "两款都无需订阅、续航长。Ring Pro 是高端之选（功能更多、戒指内处理、约 15 天续航、$479）；RingConn Gen 2 是性价比之选（追踪可靠、10–12 天续航、$299）。最看重预算就选 RingConn；想要功能更丰富的戒指就选 Ring Pro。"
+        },
+        {
+          "q": "Ring Pro 值得比 RingConn 贵约 60% 吗？",
+          "a": "只有在你看重额外功能、处理能力和稍长续航时才值得。对于无需订阅的基础睡眠和 HRV 追踪，RingConn Gen 2 能以便宜约 $180 的价格提供大部分日常价值。"
+        },
+        {
+          "q": "两款在美国都能买到吗？",
+          "a": "能。RingConn 已与 Oura 就专利纠纷达成和解并继续销售，重新设计的 Ultrahuman Ring Pro 也在美国有售（不同于受美国进口禁令限制的旧款 Ultrahuman Ring Air）。"
+        }
+      ],
+      "content": "## 简短版本\n\n两款无需订阅的戒指，定位不同。[Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) 是高端选项（约 $479、约 15 天续航、戒指内处理）；[RingConn Gen 2](/reviews/ringconn-gen-2) 是性价比之选（$299、10–12 天续航、追踪可靠）。\n\n## 什么时候该选 Ultrahuman Ring Pro？\n\n你想要更丰富的功能、内置处理和最长续航，并且能接受更高的价格。\n\n## 什么时候该选 RingConn Gen 2？\n\n你想要一款无需订阅、续航长、追踪可靠且便宜约 $180 的戒指——性价比之选。\n\n## 也值得对比\n\n精度旗舰请看 [Ring Pro vs Oura Ring 5](/reviews/vs/ultrahuman-ring-pro-vs-oura-ring-5)；另一款无需订阅的戒指是 [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring)。完整榜单：[最佳 HRV 追踪器](/reviews/hrv-trackers)。"
     }
   },
   "categoryHubs": {
