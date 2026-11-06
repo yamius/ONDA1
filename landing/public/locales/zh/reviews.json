@@ -666,8 +666,48 @@
       ]
     },
     "focuscalm": {
-      "verdict": "内容驱动的EEG头带——价格亲民，App不错，单通道信号限制了深度。",
-      "productType": "消费级EEG头带（专注与平静训练）"
+      "verdict": "主打内容的脑电头带——价格亲民、App 不错，但单通道信号限制了深度。",
+      "summary": "FocusCalm 是 BrainCo（强脑科技）的消费级脑电头带——额头单通道电极加加速度计，搭配内容丰富、包含大量专注与平静引导课程的 App。比 Muse 2 和 Neurosity Crown 便宜，训练内容库也比 Mendi 或 Emotiv 更精致。代价是信号深度：只有一个电极，解读也更简单。最适合不需要原始数据、想入门脑电反馈内容的新手。",
+      "description": "ONDA 评测 FocusCalm——BrainCo 推出的消费级脑电头带，主打内容驱动的专注与平静训练。按信号、内容和性价比打分。",
+      "bestFor": "最适合想要内容驱动的专注训练、又不需要开发者工具的脑电新手。",
+      "testNote": "基于证据的评估——依据 BrainCo / FocusCalm 产品资料和 2026 年独立评测打分。ONDA 未亲自上手测试。",
+      "productType": "消费级脑电头带（专注与平静训练）",
+      "pros": [
+        "内容库强大——按课程进行的专注与平静训练",
+        "继 NeuroSky 之后最便宜的正规消费级脑电专注设备",
+        "柔软头带，适合每天 10–20 分钟的训练",
+        "App 精致，进度安排有条理"
+      ],
+      "cons": [
+        "单通道脑电——信息量少于多电极系统",
+        "无法获取原始数据，也没有 SDK——封闭平台",
+        "没有睡眠追踪",
+        "高级内容需订阅 FocusCalm Plus"
+      ],
+      "scoreNotes": {
+        "signal-quality": "一个额头脑电电极加加速度计。对于 App 自己的专注/平静评分（BrainCo 的算法，并非经过验证的注意力指标）来说，消费级信号足够用；信息密度低于多电极系统。",
+        "training-content": "内容库丰富，包括专注与平静引导课程、游戏和练习。按设计就是内容驱动——主导体验的是 App，而不是数据。",
+        "insights": "每次训练一个专注/平静分数，外加总体趋势。分析深度不如多电极替代品。",
+        "comfort": "柔软头带——适合 10–20 分钟的训练；不适合睡觉时佩戴。",
+        "app-ux": "精致的 iOS/Android App，课程进度安排有条理。",
+        "open-data": "封闭平台——不能导出原始脑电，也没有开发者 SDK。为内容消费者设计，而非研究人员。",
+        "value": "硬件 $199 + 可选 FocusCalm Plus 订阅。继 NeuroSky 之后最便宜的正规冥想/专注脑电设备。"
+      },
+      "content": "## 领先之处\n\nFocusCalm 押注于内容。唯一的额头脑电电极为 App 自己的专注/平静评分提供数据——这是 BrainCo 的算法，并非经过验证的注意力指标——而 App 把它包装成由引导课程、小游戏和进度追踪组成的结构化方案，比 Emotiv 这类以测量为主的设备更能可靠地带新手度过最初几周。$199 的硬件价格在本榜单的正规脑电头环中排第二便宜，仅次于教育级的 NeuroSky。\n\n## FocusCalm 有哪些缺点？\n\n单个电极的信息量很少。Muse、Crown 和 Emotiv 这类多通道系统能更多地展示训练时大脑在做什么；FocusCalm 则把这些简化为一个分数。没有原始数据访问、没有 SDK，也没有开发者生态——平台按设计就是封闭的。高级内容还需要 FocusCalm Plus 订阅，所以 $199 低估了总拥有成本。\n\n## 谁应该买 FocusCalm？\n\n如果你想以最低价格获得内容扎实的正规脑电反馈体验，又不在乎原始数据，就选 FocusCalm。如果冥想深度是决定因素，Muse 2 或 Muse S Athena 更合适，但价格更高。如果你要的是原始脑电，请看 Neurosity Crown 或 Emotiv Insight 2。\n\n---\n\n## 延伸阅读\n\n这些头环所反馈的神经科学，以及脑电信号能和不能告诉你哪些关于精神状态的信息。\n\n- [适应与范围分级](/articles/adaptation-hack-range-fractionation)——通过有意变化训练认知状态\n- [α波：平静、创造力与心流](/articles/neural-bridge-alpha-flow-gateway)——α节律的作用，以及α头环、App 和音乐能改变和不能改变什么\n- [乙酰胆碱：注意力的透镜](/articles/acetylcholine-lens-neuro-mechanics)——专注背后的神经化学\n",
+      "faq": [
+        {
+          "q": "FocusCalm 多少钱？",
+          "a": "FocusCalm 头带售价 $199，另有可选的 FocusCalm Plus 订阅。这比 Muse 2 和 Neurosity Crown 便宜。问题在于高级训练内容只在 Plus 中提供，所以完整内容库的花费会超过硬件本身。"
+        },
+        {
+          "q": "FocusCalm 和 Muse 2 该买哪个？",
+          "a": "FocusCalm 更便宜，拥有按课程组织、制作精良的专注与平静引导内容库。它的代价是信号深度：只用一个额头电极，信息量少于多电极系统。它也没有睡眠追踪、原始数据或 SDK。"
+        },
+        {
+          "q": "FocusCalm 最适合谁？",
+          "a": "FocusCalm 最适合想要内容驱动的专注训练、又不需要开发者工具的脑电新手。柔软的头带适合每天 10–20 分钟的训练，App 也提供有条理的进度安排。想要原始数据或更深入信号的人，应该考虑多电极替代品。"
+        }
+      ]
     },
     "flow-neuroscience": {
       "verdict": "不是EEG——用于抑郁症的临床tDCS，在本榜单中拥有最强的监管和临床试验支持。",

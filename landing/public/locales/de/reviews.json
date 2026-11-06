@@ -691,8 +691,48 @@
       ]
     },
     "focuscalm": {
-      "verdict": "Inhaltsgeführtes EEG-Stirnband — erschwinglicher Preis, ordentliche App, das Einkanalsignal begrenzt die Tiefe.",
-      "productType": "EEG-Stirnband für Verbraucher (Fokus- und Ruhetraining)"
+      "verdict": "Inhaltsorientiertes EEG-Stirnband – erschwinglicher Preis, ordentliche App, aber das Ein-Kanal-Signal begrenzt die Tiefe.",
+      "summary": "FocusCalm ist das Consumer-EEG-Stirnband von BrainCo – eine einzelne Stirnelektrode plus Beschleunigungssensor, kombiniert mit einer inhaltsreichen App voller geführter Fokus- und Ruhe-Sitzungen. Günstiger als Muse 2 und Neurosity Crown, mit einer ausgefeilteren Trainingsbibliothek als Mendi oder Emotiv. Der Preis dafür ist die Signaltiefe: Eine Elektrode bedeutet eine einfachere Auswertung. Ideal als Einstieg in EEG-Feedback-Inhalte für Neulinge, die keine Rohdaten brauchen.",
+      "description": "ONDA-Test von FocusCalm – dem Consumer-EEG-Stirnband von BrainCo für inhaltsgeführtes Fokus- und Ruhetraining. Bewertet nach Signal, Inhalten und Preis-Leistung.",
+      "bestFor": "Ideal für EEG-Neulinge, die inhaltsgeführtes Fokustraining ohne Entwicklerwerkzeuge wollen.",
+      "testNote": "Evidenzbasierte Bewertung – auf Grundlage der Produktdokumentation von BrainCo / FocusCalm und unabhängiger Tests aus 2026. Von ONDA nicht selbst getestet.",
+      "productType": "Consumer-EEG-Stirnband (Fokus- und Ruhetraining)",
+      "pros": [
+        "Starke Inhaltsbibliothek – programmgeführtes Fokus- und Ruhetraining",
+        "Günstigstes seriöses Consumer-EEG-Fokusgerät nach NeuroSky",
+        "Weiches Stirnband, bequem für tägliche Sitzungen von 10–20 Minuten",
+        "Ausgefeilte App mit strukturiertem Fortschritt"
+      ],
+      "cons": [
+        "Ein-Kanal-EEG – weniger Information als Mehrelektrodensysteme",
+        "Kein Rohdatenzugang und kein SDK – geschlossene Plattform",
+        "Kein Schlaftracking",
+        "Premium-Inhalte nur mit dem FocusCalm-Plus-Abo"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Eine EEG-Elektrode an der Stirn plus Beschleunigungssensor. Ausreichendes Consumer-Signal für den eigenen Fokus-/Ruhe-Score der App (BrainCos Formel, kein validiertes Maß für Aufmerksamkeit); geringere Informationsdichte als Mehrelektrodensysteme.",
+        "training-content": "Starke Bibliothek mit geführten Fokus- und Ruhe-Sitzungen, Spielen und Übungen. Bewusst inhaltsgeführt – die App steuert das Erlebnis, nicht die Daten.",
+        "insights": "Ein Fokus-/Ruhe-Score pro Sitzung plus Gesamttrends. Weniger analytische Tiefe als Mehrelektroden-Alternativen.",
+        "comfort": "Weiches Stirnband – bequem für Sitzungen von 10–20 Minuten; nicht für den Schlaf gedacht.",
+        "app-ux": "Ausgefeilte iOS-/Android-App mit strukturiertem Programmfortschritt.",
+        "open-data": "Geschlossene Plattform – kein Roh-EEG-Export und kein Entwickler-SDK. Für Inhaltsnutzer gemacht, nicht für Forschende.",
+        "value": "$199 Hardware + optionales FocusCalm-Plus-Abo. Das günstigste seriöse EEG-Gerät für Meditation/Fokus nach NeuroSky."
+      },
+      "content": "## Wo es vorn liegt\n\nFocusCalm setzt auf Inhalte. Die einzelne EEG-Stirnelektrode speist den eigenen Fokus-/Ruhe-Score der App – BrainCos Formel, kein validiertes Maß für Aufmerksamkeit –, und die App bettet ihn in ein strukturiertes Programm aus geführten Sitzungen, Minispielen und Fortschrittsanzeige ein, das Neulinge zuverlässiger durch die ersten Wochen bringt als ein messorientiertes Gerät wie Emotiv. Für $199 ist die Hardware das zweitgünstigste seriöse EEG-Headset in dieser Liste, nur das Lern-Gerät NeuroSky ist billiger.\n\n## Was sind die Nachteile von FocusCalm?\n\nEine einzelne Elektrode liefert wenig Information. Mehrkanalsysteme wie Muse, Crown und Emotiv zeigen mehr darüber, was das Gehirn während einer Sitzung tut; FocusCalm reduziert das auf einen Score. Kein Rohdatenzugang, kein SDK, kein Entwickler-Ökosystem – die Plattform ist bewusst geschlossen. Und Premium-Inhalte liegen hinter dem FocusCalm-Plus-Abo, die $199 spiegeln die vollen Kosten also nicht wider.\n\n## Wer sollte FocusCalm kaufen?\n\nWähle FocusCalm, wenn du das günstigste seriöse EEG-Feedback-Erlebnis mit echter Inhaltstiefe willst und Rohdaten dir egal sind. Wenn die Tiefe der Meditation entscheidet, passen Muse 2 oder Muse S Athena besser, zu höherem Preis. Geht es dir um Roh-EEG, sieh dir Neurosity Crown oder Emotiv Insight 2 an.\n\n---\n\n## Hintergrund\n\nDie Neurowissenschaft, die diese Headsets zurückmelden – und was das EEG-Signal über mentale Zustände verraten kann und was nicht.\n\n- [Anpassung und Range Fractionation](/articles/adaptation-hack-range-fractionation) – kognitive Zustände durch gezielte Variation trainieren\n- [Alphawellen: Ruhe, Kreativität und Flow](/articles/neural-bridge-alpha-flow-gateway) – was der Alpha-Rhythmus tut und was Alpha-Headsets, Apps und Musik verändern können und was nicht\n- [Acetylcholin als Linse der Aufmerksamkeit](/articles/acetylcholine-lens-neuro-mechanics) – die Neurochemie hinter Fokus\n",
+      "faq": [
+        {
+          "q": "Was kostet FocusCalm?",
+          "a": "Das FocusCalm-Stirnband kostet $199, dazu kommt optional das FocusCalm-Plus-Abo. Damit ist es günstiger als Muse 2 und Neurosity Crown. Der Haken: Premium-Trainingsinhalte gibt es nur mit Plus, die komplette Bibliothek kostet also mehr als die Hardware allein."
+        },
+        {
+          "q": "FocusCalm vs Muse 2: Was soll ich kaufen?",
+          "a": "FocusCalm ist die günstigere Option und hat eine ausgefeilte, programmgeführte Bibliothek mit geführten Fokus- und Ruhe-Sitzungen. Der Kompromiss ist die Signaltiefe: Es nutzt eine einzelne Stirnelektrode, die weniger Information liefert als Mehrelektrodensysteme. Außerdem gibt es kein Schlaftracking und keine Rohdaten oder SDK."
+        },
+        {
+          "q": "Für wen eignet sich FocusCalm am besten?",
+          "a": "FocusCalm eignet sich am besten für EEG-Neulinge, die inhaltsgeführtes Fokustraining ohne Entwicklerwerkzeuge wollen. Das weiche Stirnband ist bequem für tägliche Sitzungen von 10–20 Minuten, und die App bietet strukturierten Fortschritt. Wer Rohdaten oder ein tieferes Signal will, sollte sich Mehrelektroden-Alternativen ansehen."
+        }
+      ]
     },
     "flow-neuroscience": {
       "verdict": "Kein EEG — klinische tDCS gegen Depression, mit der stärksten regulatorischen und Studienbasis in dieser Liste.",

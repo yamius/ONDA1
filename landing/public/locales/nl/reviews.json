@@ -691,8 +691,48 @@
       ]
     },
     "focuscalm": {
-      "verdict": "EEG-hoofdband met begeleide inhoud — betaalbare prijs, degelijke app, het signaal van één kanaal beperkt de diepgang.",
-      "productType": "EEG-hoofdband voor consumenten (focus- en rusttraining)"
+      "verdict": "Op content gerichte EEG-hoofdband — betaalbare prijs, degelijke app, maar het eenkanaalssignaal beperkt de diepgang.",
+      "summary": "FocusCalm is de consumenten-EEG-hoofdband van BrainCo — één elektrode op het voorhoofd plus een versnellingsmeter, gekoppeld aan een contentrijke app met begeleide sessies voor focus en rust. Goedkoper dan Muse 2 en Neurosity Crown, met een meer verzorgde trainingsbibliotheek dan Mendi of Emotiv. De prijs is signaaldiepte: één elektrode betekent een eenvoudigere interpretatie. Het beste als instap in EEG-feedbackcontent voor beginners die geen ruwe data nodig hebben.",
+      "description": "ONDA-review van FocusCalm — de consumenten-EEG-hoofdband van BrainCo voor contentgerichte focus- en rusttraining. Beoordeeld op signaal, content en prijs-kwaliteit.",
+      "bestFor": "Ideaal voor EEG-beginners die contentgerichte focustraining willen zonder ontwikkelaarstools.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van BrainCo / FocusCalm en onafhankelijke reviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Consumenten-EEG-hoofdband (focus- en rusttraining)",
+      "pros": [
+        "Sterke contentbibliotheek — programmagestuurde focus- en rusttraining",
+        "Goedkoopste serieuze consumenten-EEG voor focus na NeuroSky",
+        "Zachte hoofdband, comfortabel voor dagelijkse sessies van 10–20 minuten",
+        "Verzorgde app met gestructureerde voortgang"
+      ],
+      "cons": [
+        "Eenkanaals-EEG — minder informatie dan systemen met meerdere elektroden",
+        "Geen toegang tot ruwe data en geen SDK — gesloten platform",
+        "Geen slaaptracking",
+        "Premiumcontent alleen met het FocusCalm Plus-abonnement"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Eén EEG-elektrode op het voorhoofd plus versnellingsmeter. Voldoende consumentensignaal voor de eigen focus-/rustscore van de app (de formule van BrainCo, geen gevalideerde maat voor aandacht); lagere informatiedichtheid dan systemen met meerdere elektroden.",
+        "training-content": "Sterke bibliotheek met begeleide focus- en rustsessies, spellen en oefeningen. Bewust contentgericht — de app stuurt de ervaring, niet de data.",
+        "insights": "Eén focus-/rustscore per sessie plus totaaltrends. Minder analytische diepgang dan alternatieven met meerdere elektroden.",
+        "comfort": "Zachte hoofdband — comfortabel voor sessies van 10–20 minuten; niet bedoeld om mee te slapen.",
+        "app-ux": "Verzorgde iOS-/Android-app met gestructureerde voortgang door programma’s.",
+        "open-data": "Gesloten platform — geen export van ruwe EEG en geen ontwikkelaars-SDK. Gemaakt voor wie content gebruikt, niet voor onderzoekers.",
+        "value": "$199 hardware + optioneel FocusCalm Plus-abonnement. Het goedkoopste serieuze EEG-apparaat voor meditatie/focus na NeuroSky."
+      },
+      "content": "## Waar hij voorloopt\n\nFocusCalm zet in op content. De ene EEG-elektrode op het voorhoofd voedt de eigen focus-/rustscore van de app — de formule van BrainCo, geen gevalideerde maat voor aandacht — en de app verpakt die in een gestructureerd programma van begeleide sessies, minigames en voortgangstracking dat beginners betrouwbaarder door de eerste weken loodst dan een meetgericht apparaat zoals Emotiv. Voor $199 is de hardware de op één na goedkoopste serieuze EEG-headset in deze lijst; alleen de educatieve NeuroSky is goedkoper.\n\n## Wat zijn de nadelen van FocusCalm?\n\nEén elektrode levert weinig informatie. Meerkanaalssystemen zoals Muse, Crown en Emotiv laten meer zien van wat de hersenen tijdens een sessie doen; FocusCalm brengt dat terug tot één score. Geen toegang tot ruwe data, geen SDK, geen ontwikkelaarsecosysteem — het platform is bewust gesloten. En premiumcontent zit achter het FocusCalm Plus-abonnement, dus de $199 onderschat de totale kosten.\n\n## Wie zou FocusCalm moeten kopen?\n\nKies FocusCalm als je de goedkoopste serieuze EEG-feedbackervaring met echte contentdiepgang wilt en ruwe data je niet uitmaakt. Als diepgang in meditatie doorslaggevend is, passen Muse 2 of Muse S Athena beter, tegen een hogere prijs. Gaat het je om ruwe EEG, kijk dan naar Neurosity Crown of Emotiv Insight 2.\n\n---\n\n## Achtergrond\n\nDe neurowetenschap die deze headsets terugkoppelen — en wat het EEG-signaal wel en niet kan zeggen over mentale toestanden.\n\n- [Adaptatie en range fractionation](/articles/adaptation-hack-range-fractionation) — cognitieve toestanden trainen door bewuste variatie\n- [Alfagolven: rust, creativiteit en flow](/articles/neural-bridge-alpha-flow-gateway) — wat het alfaritme doet en wat alfaheadsets, apps en muziek wel en niet kunnen veranderen\n- [Acetylcholine als lens van de aandacht](/articles/acetylcholine-lens-neuro-mechanics) — de neurochemie achter focus\n",
+      "faq": [
+        {
+          "q": "Wat kost FocusCalm?",
+          "a": "De FocusCalm-hoofdband kost $199, met een optioneel FocusCalm Plus-abonnement. Daarmee is hij goedkoper dan Muse 2 en Neurosity Crown. Het addertje: premium trainingscontent zit achter Plus, dus de volledige bibliotheek kost meer dan alleen de hardware."
+        },
+        {
+          "q": "FocusCalm vs Muse 2: wat moet ik kopen?",
+          "a": "FocusCalm is de goedkopere optie en heeft een verzorgde, programmagestuurde bibliotheek met begeleide focus- en rustsessies. De keerzijde is signaaldiepte: hij gebruikt één elektrode op het voorhoofd, die minder informatie levert dan systemen met meerdere elektroden. Ook heeft hij geen slaaptracking en geen ruwe data of SDK."
+        },
+        {
+          "q": "Voor wie is FocusCalm het meest geschikt?",
+          "a": "FocusCalm is het meest geschikt voor EEG-beginners die contentgerichte focustraining willen zonder ontwikkelaarstools. De zachte hoofdband is comfortabel voor dagelijkse sessies van 10–20 minuten en de app biedt gestructureerde voortgang. Wie ruwe data of een dieper signaal wil, kan beter naar alternatieven met meerdere elektroden kijken."
+        }
+      ]
     },
     "flow-neuroscience": {
       "verdict": "Geen EEG — klinische tDCS voor depressie, met de sterkste regelgevende en onderzoeksbasis in deze lijst.",

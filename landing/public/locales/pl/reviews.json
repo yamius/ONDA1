@@ -691,8 +691,48 @@
       ]
     },
     "focuscalm": {
-      "verdict": "Opaska EEG oparta na treściach — przystępna cena, przyzwoita aplikacja, sygnał jednokanałowy ogranicza głębię.",
-      "productType": "Konsumencka opaska EEG (trening skupienia i spokoju)"
+      "verdict": "Opaska EEG nastawiona na treści — przystępna cena, przyzwoita aplikacja, ale jednokanałowy sygnał ogranicza głębię.",
+      "summary": "FocusCalm to konsumencka opaska EEG od BrainCo — jedna elektroda czołowa plus akcelerometr w połączeniu z aplikacją pełną sesji skupienia i spokoju z przewodnikiem. Tańsza niż Muse 2 i Neurosity Crown, z bardziej dopracowaną biblioteką treningów niż Mendi czy Emotiv. Ceną jest głębia sygnału: jedna elektroda oznacza prostszą interpretację. Najlepsza jako wejście w treści z informacją zwrotną EEG dla początkujących, którzy nie potrzebują surowych danych.",
+      "description": "Recenzja ONDA opaski FocusCalm — konsumenckiej opaski EEG od BrainCo nastawionej na trening skupienia i spokoju oparty na treściach. Oceniona pod kątem sygnału, treści i wartości.",
+      "bestFor": "Dla osób zaczynających z EEG, które chcą treningu skupienia opartego na treściach, bez narzędzi dla programistów.",
+      "testNote": "Ocena oparta na dowodach — na podstawie dokumentacji BrainCo / FocusCalm i niezależnych recenzji z 2026 roku. ONDA nie testowała urządzenia osobiście.",
+      "productType": "Konsumencka opaska EEG (trening skupienia i spokoju)",
+      "pros": [
+        "Mocna biblioteka treści — programy treningu skupienia i spokoju",
+        "Najtańsze poważne konsumenckie urządzenie EEG do skupienia po NeuroSky",
+        "Miękka opaska, wygodna na codzienne sesje po 10–20 minut",
+        "Dopracowana aplikacja z uporządkowanym postępem"
+      ],
+      "cons": [
+        "Jednokanałowe EEG — mniej informacji niż w systemach wieloelektrodowych",
+        "Brak dostępu do surowych danych i SDK — zamknięta platforma",
+        "Brak śledzenia snu",
+        "Treści premium tylko w subskrypcji FocusCalm Plus"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Jedna elektroda EEG na czole plus akcelerometr. Sygnał konsumencki wystarczający dla własnego wyniku skupienia/spokoju w aplikacji (formuła BrainCo, a nie zweryfikowana miara uwagi); mniejsza gęstość informacji niż w systemach wieloelektrodowych.",
+        "training-content": "Mocna biblioteka sesji skupienia i spokoju z przewodnikiem, gier i ćwiczeń. Celowo nastawiona na treści — doświadczenie prowadzi aplikacja, a nie dane.",
+        "insights": "Jeden wynik skupienia/spokoju na sesję plus ogólne trendy. Mniej głębi analitycznej niż w alternatywach wieloelektrodowych.",
+        "comfort": "Miękka opaska — wygodna na sesje po 10–20 minut; nie do spania.",
+        "app-ux": "Dopracowana aplikacja na iOS/Android z uporządkowanym przechodzeniem programów.",
+        "open-data": "Zamknięta platforma — brak eksportu surowego EEG i SDK dla programistów. Stworzona do korzystania z treści, a nie do badań.",
+        "value": "$199 za sprzęt + opcjonalna subskrypcja FocusCalm Plus. Najtańsze poważne urządzenie EEG do medytacji/skupienia po NeuroSky."
+      },
+      "content": "## W czym jest na czele\n\nFocusCalm stawia na treści. Jedyna elektroda EEG na czole zasila własny wynik skupienia/spokoju w aplikacji — formułę BrainCo, a nie zweryfikowaną miarę uwagi — a aplikacja opakowuje go w uporządkowany program sesji z przewodnikiem, minigier i śledzenia postępów, który prowadzi początkujących przez pierwsze tygodnie skuteczniej niż urządzenie nastawione na pomiar, jak Emotiv. Za $199 to drugie najtańsze poważne urządzenie EEG na tej liście, tańszy jest tylko edukacyjny NeuroSky.\n\n## Jakie są wady FocusCalm?\n\nJedna elektroda daje mało informacji. Systemy wielokanałowe, takie jak Muse, Crown i Emotiv, pokazują więcej o tym, co mózg robi podczas sesji; FocusCalm sprowadza to do jednego wyniku. Brak dostępu do surowych danych, SDK i ekosystemu dla programistów — platforma jest celowo zamknięta. A treści premium są za subskrypcją FocusCalm Plus, więc $199 zaniża pełny koszt posiadania.\n\n## Kto powinien kupić FocusCalm?\n\nWybierz FocusCalm, jeśli chcesz najtańszego poważnego doświadczenia z informacją zwrotną EEG z prawdziwą głębią treści, a surowe dane cię nie interesują. Jeśli decyduje głębia medytacji, lepiej pasują Muse 2 lub Muse S Athena — drożej. Jeśli chodzi ci o surowe EEG, zobacz Neurosity Crown lub Emotiv Insight 2.\n\n---\n\n## Do poczytania\n\nNeuronauka, którą odzwierciedlają te opaski, i co sygnał EEG może, a czego nie może powiedzieć o stanach psychicznych.\n\n- [Adaptacja i frakcjonowanie zakresu](/articles/adaptation-hack-range-fractionation) — trenowanie stanów poznawczych przez celowe urozmaicanie\n- [Fale alfa: spokój, kreatywność i flow](/articles/neural-bridge-alpha-flow-gateway) — co robi rytm alfa i co opaski, aplikacje i muzyka alfa mogą, a czego nie mogą zmienić\n- [Acetylocholina jako soczewka uwagi](/articles/acetylcholine-lens-neuro-mechanics) — neurochemia skupienia\n",
+      "faq": [
+        {
+          "q": "Ile kosztuje FocusCalm?",
+          "a": "Opaska FocusCalm kosztuje $199, plus opcjonalna subskrypcja FocusCalm Plus. To taniej niż Muse 2 i Neurosity Crown. Haczyk w tym, że treści treningowe premium są tylko w Plus, więc pełna biblioteka kosztuje więcej niż sam sprzęt."
+        },
+        {
+          "q": "FocusCalm czy Muse 2: co kupić?",
+          "a": "FocusCalm jest tańsza i ma dopracowaną bibliotekę sesji skupienia i spokoju z przewodnikiem, ułożoną w programy. Kompromisem jest głębia sygnału: używa jednej elektrody czołowej, która daje mniej informacji niż systemy wieloelektrodowe. Nie ma też śledzenia snu, surowych danych ani SDK."
+        },
+        {
+          "q": "Dla kogo najlepsza jest FocusCalm?",
+          "a": "FocusCalm najlepiej sprawdzi się u osób zaczynających z EEG, które chcą treningu skupienia opartego na treściach bez narzędzi dla programistów. Miękka opaska jest wygodna na codzienne sesje po 10–20 minut, a aplikacja zapewnia uporządkowany postęp. Kto chce surowych danych lub głębszego sygnału, powinien sięgnąć po alternatywy wieloelektrodowe."
+        }
+      ]
     },
     "flow-neuroscience": {
       "verdict": "To nie EEG — kliniczna tDCS na depresję, z najmocniejszym wsparciem regulacyjnym i badawczym na tej liście.",

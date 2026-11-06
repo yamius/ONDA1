@@ -691,8 +691,48 @@
       ]
     },
     "focuscalm": {
-      "verdict": "Fascia EEG incentrata sui contenuti — prezzo accessibile, app discreta, il segnale a un canale ne limita la profondità.",
-      "productType": "Fascia EEG consumer (allenamento di concentrazione e calma)"
+      "verdict": "Fascia EEG orientata ai contenuti: prezzo accessibile e app discreta, ma il segnale a un canale ne limita la profondità.",
+      "summary": "FocusCalm è la fascia EEG consumer di BrainCo: un singolo elettrodo frontale più un accelerometro, abbinati a un’app ricca di sessioni guidate di concentrazione e calma. Costa meno di Muse 2 e Neurosity Crown, con una libreria di allenamento più rifinita di Mendi o Emotiv. Il compromesso è la profondità del segnale: un elettrodo significa un’interpretazione più semplice. Ideale come ingresso ai contenuti con feedback EEG per chi inizia e non ha bisogno di dati grezzi.",
+      "description": "Recensione ONDA di FocusCalm, la fascia EEG consumer di BrainCo orientata all’allenamento guidato di concentrazione e calma. Valutata su segnale, contenuti e valore.",
+      "bestFor": "Ideale per chi usa l’EEG per la prima volta e vuole un allenamento della concentrazione guidato dai contenuti, senza strumenti per sviluppatori.",
+      "testNote": "Valutazione basata sulle evidenze: punteggio ricavato dalla documentazione di BrainCo / FocusCalm e da recensioni indipendenti del 2026. Non testata direttamente da ONDA.",
+      "productType": "Fascia EEG consumer (allenamento di concentrazione e calma)",
+      "pros": [
+        "Ricca libreria di contenuti: allenamento di concentrazione e calma a programmi",
+        "Il dispositivo EEG per la concentrazione serio più economico dopo NeuroSky",
+        "Fascia morbida, comoda per sessioni quotidiane di 10–20 minuti",
+        "App rifinita con progressione strutturata"
+      ],
+      "cons": [
+        "EEG a un canale: meno informazioni dei sistemi multielettrodo",
+        "Nessun accesso ai dati grezzi né SDK: piattaforma chiusa",
+        "Nessun monitoraggio del sonno",
+        "I contenuti premium richiedono l’abbonamento FocusCalm Plus"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Un elettrodo EEG frontale più accelerometro. Segnale consumer sufficiente per il punteggio proprietario di concentrazione/calma dell’app (formula di BrainCo, non una misura validata dell’attenzione); densità di informazione inferiore ai sistemi multielettrodo.",
+        "training-content": "Ricca libreria di sessioni guidate di concentrazione e calma, giochi ed esercizi. Orientata ai contenuti per scelta: è l’app a guidare l’esperienza, non i dati.",
+        "insights": "Un punteggio di concentrazione/calma per sessione più tendenze aggregate. Meno profondità analitica delle alternative multielettrodo.",
+        "comfort": "Fascia morbida: comoda per sessioni di 10–20 minuti; non pensata per dormire.",
+        "app-ux": "App iOS/Android rifinita con progressione strutturata per programmi.",
+        "open-data": "Piattaforma chiusa: nessuna esportazione dell’EEG grezzo né SDK per sviluppatori. Pensata per chi consuma contenuti, non per la ricerca.",
+        "value": "$199 l’hardware + abbonamento opzionale FocusCalm Plus. Il dispositivo EEG serio per meditazione/concentrazione più economico dopo NeuroSky."
+      },
+      "content": "## Dove è in vantaggio\n\nFocusCalm punta sui contenuti. L’unico elettrodo EEG frontale alimenta il punteggio proprietario di concentrazione/calma dell’app — la formula di BrainCo, non una misura validata dell’attenzione — e l’app lo inserisce in un programma strutturato di sessioni guidate, minigiochi e monitoraggio dei progressi che accompagna chi inizia nelle prime settimane in modo più affidabile di un dispositivo orientato alla misurazione come Emotiv. A $199 l’hardware è il secondo caschetto EEG serio più economico di questa lista, battuto solo dal NeuroSky di livello didattico.\n\n## Quali sono gli svantaggi di FocusCalm?\n\nUn solo elettrodo dà poche informazioni. I sistemi multicanale come Muse, Crown ed Emotiv rivelano di più su ciò che fa il cervello durante una sessione; FocusCalm lo riduce a un punteggio. Nessun accesso ai dati grezzi, nessun SDK, nessun ecosistema per sviluppatori: la piattaforma è chiusa per scelta. E i contenuti premium sono dietro l’abbonamento FocusCalm Plus, quindi i $199 sottostimano il costo complessivo.\n\n## Chi dovrebbe comprare FocusCalm?\n\nScegli FocusCalm se vuoi l’esperienza di feedback EEG seria più economica con vera profondità di contenuti e i dati grezzi non ti interessano. Se il criterio decisivo è la profondità della meditazione, Muse 2 o Muse S Athena sono più adatti, a un prezzo maggiore. Se ti interessa l’EEG grezzo, guarda Neurosity Crown o Emotiv Insight 2.\n\n---\n\n## Letture di approfondimento\n\nLe neuroscienze che questi caschetti restituiscono, e cosa il segnale EEG può e non può dire sugli stati mentali.\n\n- [Adattamento e frazionamento dell’intervallo](/articles/adaptation-hack-range-fractionation): allenare gli stati cognitivi con una variazione deliberata\n- [Onde alfa: calma, creatività e flow](/articles/neural-bridge-alpha-flow-gateway): cosa fa il ritmo alfa e cosa possono e non possono cambiare caschetti, app e musica alfa\n- [L’acetilcolina come lente dell’attenzione](/articles/acetylcholine-lens-neuro-mechanics): la neurochimica della concentrazione\n",
+      "faq": [
+        {
+          "q": "Quanto costa FocusCalm?",
+          "a": "La fascia FocusCalm costa $199, con un abbonamento opzionale FocusCalm Plus. Costa quindi meno di Muse 2 e Neurosity Crown. Il rovescio è che i contenuti di allenamento premium sono dietro Plus, quindi la libreria completa costa più del solo hardware."
+        },
+        {
+          "q": "FocusCalm vs Muse 2: quale comprare?",
+          "a": "FocusCalm è l’opzione più economica e ha una libreria rifinita e organizzata a programmi di sessioni guidate di concentrazione e calma. Il compromesso è la profondità del segnale: usa un solo elettrodo frontale, che dà meno informazioni dei sistemi multielettrodo. Inoltre non ha monitoraggio del sonno né dati grezzi o SDK."
+        },
+        {
+          "q": "Per chi è più adatta FocusCalm?",
+          "a": "FocusCalm è più adatta a chi usa l’EEG per la prima volta e vuole un allenamento della concentrazione guidato dai contenuti senza strumenti per sviluppatori. La fascia morbida è comoda per sessioni quotidiane di 10–20 minuti e l’app offre una progressione strutturata. Chi vuole dati grezzi o un segnale più profondo dovrebbe guardare alternative multielettrodo."
+        }
+      ]
     },
     "flow-neuroscience": {
       "verdict": "Non è EEG — tDCS clinica per la depressione, con il supporto regolatorio e sperimentale più solido di questa lista.",

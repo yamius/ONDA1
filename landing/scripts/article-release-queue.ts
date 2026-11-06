@@ -619,6 +619,8 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'h2h', slug: 'sun-home-equinox-vs-sunlighten-mpulse' },
   { collection: 'reviews', slug: 'pzizz', langs: ['zh', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja'] },
   { collection: 'h2h', slug: 'gembared-vesta-vs-joovv-solo-3' },
+  // wave D (086, option 1, owner 2026-11-06): untranslated picks of already-translated round-ups
+  { collection: 'reviews', slug: 'focuscalm' },
   // WAVE_D_NEXT
   ],
 ]
