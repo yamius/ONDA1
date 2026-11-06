@@ -639,8 +639,48 @@
       ]
     },
     "myndlift": {
-      "verdict": "Neurofeedback w domu pod nadzorem klinicysty — dostęp przez licencjonowanego specjalistę, z ustalonymi protokołami i monitorowaniem objawów.",
-      "productType": "Kliniczny neurofeedback w domu (na zlecenie specjalisty)"
+      "verdict": "Neurofeedback w domu pod nadzorem klinicysty — dostęp przez uprawnionego specjalistę, ustalone protokoły i śledzenie objawów.",
+      "summary": "Myndlift to nie konsumencka opaska, lecz kliniczna platforma neurofeedbacku, którą uprawniony specjalista zdrowia psychicznego zleca i zdalnie nadzoruje. Opaska (zwykle sprzęt Muse 2 lub, z przedłużaczem kanałów, wielopunktowe EEG) realizuje protokoły opracowane przez specjalistę dla ADHD, lęku, snu i traumy; dane wracają do specjalisty, który dostosowuje program. To wzorcowa oferta neurofeedbacku pod nadzorem klinicznym w segmencie bliskim konsumenckiemu — uwzględniona, by pokazać, jak wygląda nadzorowany neurofeedback, a nie jako dowód, że działa.",
+      "description": "Recenzja ONDA platformy Myndlift — zdalnego neurofeedbacku na zlecenie kliniczne, dzięki któremu uprawnieni specjaliści nadzorują neurofeedback EEG w domu. Oceniona pod kątem sygnału, programów i wartości.",
+      "bestFor": "Neurofeedback pod nadzorem klinicysty — dla pacjentów z diagnozą i uprawnionym specjalistą, który go zleca.",
+      "testNote": "Ocena oparta na dowodach — na podstawie dokumentacji Myndlift, opublikowanej literatury klinicznej o neurofeedbacku i niezależnych recenzji z 2026 roku. ONDA nie testowała platformy osobiście. Uwzględniona jako medyczny punkt odniesienia kategorii, a nie bezpośrednia rekomendacja dla konsumentów.",
+      "productType": "Kliniczny neurofeedback w domu (na zlecenie)",
+      "pros": [
+        "Jedyna opcja w tej kategorii pod nadzorem uprawnionego klinicysty",
+        "Programy opracowuje i dostosowuje uprawniony specjalista zdrowia psychicznego",
+        "Śledzenie wyników według zweryfikowanych skal objawów",
+        "Dostępny przedłużacz kanałów do pełniejszych wielopunktowych protokołów EEG"
+      ],
+      "cons": [
+        "Wymaga uprawnionego specjalisty klinicznego — nie można kupić bezpośrednio jako konsument",
+        "Drogo ($300–$600 miesięcznie), niepewny zwrot kosztów przez ubezpieczycieli",
+        "Zamknięta platforma danych — pacjent nie ma dostępu do surowych danych",
+        "Aplikacja dla pacjenta bardziej funkcjonalna niż dopracowana"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Domyślnie używa sprzętu Muse 2; przedłużacz kanałów dodaje istotne badawczo położenia elektrod. Sygnał konsumencki wystarczający przy interpretacji przez specjalistę.",
+        "training-content": "Kliniczne protokoły neurofeedbacku dla ADHD, lęku, snu, depresji i stresu pourazowego — opracowuje je nadzorujący uprawniony specjalista, a nie aplikacja. Dowody dla tych zastosowań w badaniach zaślepionych są mieszane lub negatywne.",
+        "insights": "Sesje przegląda i dostosowuje uprawniony specjalista; śledzenie wyników obejmuje metryki EEG i zweryfikowane skale objawów (np. ASRS, GAD-7).",
+        "comfort": "Przejmuje formę opaski Muse 2 — wygodna na 20-minutowe sesje na siedząco, nie do snu ani ruchu.",
+        "app-ux": "Aplikacja dla pacjenta jest bardziej funkcjonalna niż dopracowana — zbudowana wokół programów ustalonych przez specjalistę, a nie do samodzielnego odkrywania.",
+        "open-data": "Zamknięta platforma kliniczna — dane trafiają do specjalisty, a nie do pacjenta. To nie środowisko dla programistów.",
+        "value": "$300–$600 miesięcznie zależnie od specjalisty plus koszt urządzenia. Zwrot kosztów bywa różny; drogo przy płaceniu z własnej kieszeni."
+      },
+      "content": "## W czym jest na czele\n\nMyndlift pokazuje, jak może wyglądać neurofeedback, gdy protokół opracowuje prawdziwy klinicysta i dostosowuje go tydzień po tygodniu. Pacjent zakłada opaskę Muse 2 (lub przedłużacz kanałów do pełniejszego wielopunktowego EEG), wykonuje sesje w domu, a dane wracają do uprawnionego nadzorującego specjalisty — który dostraja protokół i śledzi skale objawów (ASRS przy ADHD, GAD-7 przy lęku). Myndlift twierdzi, że jego programy poprawiają te objawy; niezależnych badań właśnie tej platformy jeszcze nie opublikowano, a metaanaliza badań neurofeedbacku w ADHD wykazała korzyści w ocenach objawów przez niezaślepionych oceniających, zwykle rodziców, ale nie w ocenach prawdopodobnie zaślepionych (Cortese 2016). Metaanaliza z 2025 roku ponownie nie wykazała istotnej poprawy w ocenach prawdopodobnie zaślepionych (Westwood 2025), a badanie z podwójnie ślepą próbą u dzieci nie wykazało przewagi nad pozorowaną informacją zwrotną (Neurofeedback Collaborative Group 2021); w bezsenności prawdziwa i pozorowana informacja zwrotna pomogły w równym stopniu (Schabus 2017). Zobacz [Neurofeedback EEG: co pokazują dowody](/science/evidence/eeg-neurofeedback). To jedyna platforma w tej kategorii, której renoma opiera się na nadzorowanym zastosowaniu klinicznym, a nie na samodzielnym korzystaniu przez konsumentów.\n\n## Jakie są wady Myndlift?\n\nNie można jej kupić bezpośrednio. Dostęp prowadzi przez uprawnionego specjalistę zdrowia psychicznego, który ma Myndlift w swojej praktyce; miesięczny koszt ($300–$600) odzwierciedla nadzór kliniczny, a nie tylko sprzęt i oprogramowanie. Model danych jest celowo zamknięty — surowe EEG nie wraca do pacjenta. Jako narzędzie biohakerskie dla konsumentów się nie sprawdza; jako narzędzie kliniczne przy zdiagnozowanej potrzebie to jedyna opcja na tej liście z nadzorem specjalisty.\n\n## Kto powinien wybrać Myndlift?\n\nWybierz Myndlift, jeśli masz diagnozę (ADHD, lęk, stres pourazowy, zaburzenia snu) i uprawnionego specjalistę zdrowia psychicznego gotowego zlecić i nadzorować terapię, i traktuj ją jako uzupełnienie ustalonego leczenia, a nie jego zamiennik. Do samodzielnego treningu mózgu właściwe są konsumenckie Muse S Athena lub Neurosity Crown; Myndlift to opcja pod nadzorem klinicysty w tej samej kategorii.\n\n---\n\n## Do poczytania\n\nNeuronauka, którą odzwierciedlają te opaski, i co sygnał EEG może, a czego nie może powiedzieć o stanach psychicznych.\n\n- [Architektura poznawcza: zestawy nootropików](/articles/cognitive-architecture-nootropic-stacks) — co mogą, a czego nie mogą zestawy nootropików i dlaczego wyniki opasek nie pokażą ich efektu\n- [Cyfrowa demencja i kontrola uwagi](/articles/digital-dementia-attentional-control) — odbudowa uwagi dzięki praktyce z informacją zwrotną\n- [Neuroplastyczność i stan flow](/articles/neuroplasticity-flow-overclocking) — czym są stany flow i jak powstają\n",
+      "faq": [
+        {
+          "q": "Czy Myndlift jest wart swojej ceny?",
+          "a": "Myndlift ma sens dla pacjentów z diagnozą, którzy współpracują z uprawnionym specjalistą zlecającym terapię. To jedyna opcja w tej kategorii pod nadzorem klinicysty, z programami opracowanymi przez niego i śledzeniem objawów na zweryfikowanych skalach, ale badania zaślepione w ADHD pokazują niewielką lub żadną swoistą korzyść z neurofeedbacku. Nie można jej kupić bezpośrednio jako produktu konsumenckiego."
+        },
+        {
+          "q": "Ile kosztuje Myndlift?",
+          "a": "Myndlift kosztuje zwykle od $300 do $600 miesięcznie przez uprawnionego specjalistę, a zwrot kosztów przez ubezpieczycieli bywa różny i często niepewny. Nie jest sprzedawana bezpośrednio konsumentom, więc program konfiguruje i dostosowuje specjalista."
+        },
+        {
+          "q": "Jakie są wady Myndlift?",
+          "a": "Myndlift wymaga uprawnionego specjalisty klinicznego, kosztuje od $300 do $600 miesięcznie przy niepewnym zwrocie kosztów, przechowuje dane na zamkniętej platformie bez dostępu pacjenta do surowych danych, a aplikacja dla pacjenta jest bardziej funkcjonalna niż dopracowana."
+        }
+      ]
     },
     "mendi": {
       "verdict": "To nie EEG — trening kory przedczołowej metodą fNIRS w prostej formie gry. Łatwy w użyciu, wąsko ukierunkowany.",

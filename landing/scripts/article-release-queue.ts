@@ -621,6 +621,7 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'h2h', slug: 'gembared-vesta-vs-joovv-solo-3' },
   // wave D (086, option 1, owner 2026-11-06): untranslated picks of already-translated round-ups
   { collection: 'reviews', slug: 'focuscalm' },
+  { collection: 'reviews', slug: 'myndlift' },
   // WAVE_D_NEXT
   ],
 ]

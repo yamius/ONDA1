@@ -639,8 +639,48 @@
       ]
     },
     "myndlift": {
-      "verdict": "Le neurofeedback sous supervision clinique à domicile — via un professionnel agréé, avec des protocoles définis et un suivi des symptômes.",
-      "productType": "Neurofeedback clinique à domicile (sur prescription)"
+      "verdict": "Neurofeedback à domicile supervisé par un clinicien : accès via un professionnel agréé, protocoles définis et suivi des symptômes.",
+      "summary": "Myndlift n’est pas un casque grand public : c’est une plateforme clinique de neurofeedback qu’un professionnel de santé mentale agréé prescrit et supervise à distance. Le casque (généralement le matériel du Muse 2 ou, avec l’extension de canaux, un EEG multisite) exécute des protocoles conçus par le clinicien pour le TDAH, l’anxiété, le sommeil et les traumatismes ; les données reviennent au professionnel, qui ajuste le programme. C’est l’offre de référence du neurofeedback supervisé cliniquement dans l’univers proche du grand public — incluse pour montrer à quoi ressemble un neurofeedback supervisé, pas comme preuve de son efficacité.",
+      "description": "Test ONDA de Myndlift, la plateforme de neurofeedback à distance sur prescription clinique qui permet à des professionnels agréés de superviser le neurofeedback EEG à domicile. Notée sur le signal, les programmes et la valeur.",
+      "bestFor": "Neurofeedback supervisé par un clinicien : pour les patients ayant un diagnostic et un professionnel agréé qui le prescrit.",
+      "testNote": "Évaluation fondée sur les preuves : notée à partir de la documentation de Myndlift, de la littérature clinique publiée sur le neurofeedback et de tests indépendants de 2026. Non testée en main propre par ONDA. Incluse comme point de référence médical de la catégorie, pas comme recommandation d’achat directe.",
+      "productType": "Neurofeedback clinique à domicile (sur prescription)",
+      "pros": [
+        "La seule option de cette catégorie supervisée par un clinicien agréé",
+        "Programmes conçus et ajustés par un professionnel de santé mentale agréé",
+        "Suivi des résultats sur des échelles de symptômes validées",
+        "Extension de canaux disponible pour des protocoles EEG multisites plus riches"
+      ],
+      "cons": [
+        "Nécessite un professionnel clinique agréé : impossible à acheter directement en tant que particulier",
+        "Cher ($300–$600/mois) et remboursement par les assurances inégal",
+        "Plateforme de données fermée : aucun accès aux données brutes pour le patient",
+        "Application patient fonctionnelle plutôt qu’aboutie"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Utilise par défaut le matériel du Muse 2 ; l’extension de canaux ajoute des positions d’électrodes pertinentes pour la recherche. Signal de niveau grand public suffisant sous l’interprétation du clinicien.",
+        "training-content": "Protocoles de neurofeedback de type clinique pour le TDAH, l’anxiété, le sommeil, la dépression et le stress post-traumatique, conçus par le professionnel agréé qui supervise, pas par une application. Les preuves pour ces usages sont mitigées à négatives dans les essais en aveugle.",
+        "insights": "Le professionnel agréé examine et ajuste les séances ; le suivi des résultats inclut des mesures EEG et des échelles de symptômes validées (p. ex. ASRS, GAD-7).",
+        "comfort": "Reprend le format bandeau du Muse 2 : confortable pour des séances assises de 20 minutes, pas conçu pour le sommeil ni le mouvement.",
+        "app-ux": "L’application patient est fonctionnelle plutôt qu’aboutie : elle est construite autour de programmes définis par le clinicien, pas pour l’exploration en autonomie.",
+        "open-data": "Plateforme clinique fermée : les données vont au professionnel, pas au patient. Ce n’est pas un environnement pour développeurs.",
+        "value": "$300–$600/mois selon le professionnel, plus le coût de l’appareil. Le remboursement varie ; cher si vous payez vous-même."
+      },
+      "content": "## Là où elle est en avance\n\nMyndlift montre ce que peut être le neurofeedback quand un vrai clinicien conçoit le protocole et l’ajuste semaine après semaine. Le patient porte un bandeau Muse 2 (ou l’extension de canaux pour un EEG multisite plus riche), fait ses séances à domicile, et les données reviennent au professionnel agréé qui supervise — il affine le protocole et suit des échelles de symptômes (ASRS pour le TDAH, GAD-7 pour l’anxiété). Myndlift affirme que ses programmes améliorent ces symptômes ; aucun essai indépendant de cette plateforme précise n’a encore été publié, et une méta-analyse des essais de neurofeedback dans le TDAH a trouvé des bénéfices sur les évaluations de symptômes par des évaluateurs non aveugles, généralement les parents, mais pas sur les évaluations probablement en aveugle (Cortese 2016). Une méta-analyse de 2025 n’a de nouveau trouvé aucune amélioration significative sur les évaluations probablement en aveugle (Westwood 2025), et un essai en double aveugle chez l’enfant n’a montré aucun avantage par rapport à un feedback simulé (Neurofeedback Collaborative Group 2021) ; dans l’insomnie, feedback réel et simulé ont aidé autant l’un que l’autre (Schabus 2017). Voir [Neurofeedback EEG : ce que montrent les preuves](/science/evidence/eeg-neurofeedback). C’est la seule plateforme de cette catégorie dont la réputation repose sur un usage clinique supervisé plutôt que sur l’autonomie du consommateur.\n\n## Quels sont les inconvénients de Myndlift ?\n\nOn ne peut pas l’acheter directement. L’accès passe par un professionnel de santé mentale agréé qui propose Myndlift dans sa pratique ; le coût mensuel ($300–$600) reflète la supervision clinique, pas seulement le matériel et le logiciel. Le modèle de données est fermé par conception : l’EEG brut ne revient pas au patient. Comme outil de biohacking grand public, ce n’est pas le bon choix ; comme outil clinique face à un besoin diagnostiqué, c’est la seule option de cette liste avec supervision par un clinicien.\n\n## Qui devrait choisir Myndlift ?\n\nChoisissez Myndlift si vous avez un diagnostic (TDAH, anxiété, stress post-traumatique, trouble du sommeil) et un professionnel de santé mentale agréé prêt à le prescrire et à le superviser, et considérez-le comme un complément au traitement établi, pas comme un substitut. Pour entraîner son cerveau en autonomie, le Muse S Athena ou le Neurosity Crown sont les bons choix grand public ; Myndlift est l’option supervisée par un clinicien dans la même catégorie.\n\n---\n\n## Pour aller plus loin\n\nLes neurosciences que ces casques restituent, et ce que le signal EEG peut ou non dire des états mentaux.\n\n- [Architecture cognitive : les combinaisons de nootropiques](/articles/cognitive-architecture-nootropic-stacks) — ce que les combinaisons de nootropiques peuvent ou non faire, et pourquoi les scores des casques ne peuvent pas montrer leur effet\n- [Démence numérique et contrôle attentionnel](/articles/digital-dementia-attentional-control) — reconstruire l’attention par une pratique guidée par le feedback\n- [Neuroplasticité et flow](/articles/neuroplasticity-flow-overclocking) — ce que sont les états de flow et comment ils se forment\n",
+      "faq": [
+        {
+          "q": "Myndlift vaut-il le coup ?",
+          "a": "Myndlift vaut le coup pour les patients ayant un diagnostic et travaillant avec un professionnel agréé qui le prescrit. C’est la seule option de cette catégorie supervisée par un clinicien, avec des programmes conçus par lui et un suivi des symptômes sur des échelles validées, mais les essais en aveugle dans le TDAH montrent peu ou pas de bénéfice spécifique du neurofeedback. Il ne s’achète pas directement comme produit grand public."
+        },
+        {
+          "q": "Combien coûte Myndlift ?",
+          "a": "Myndlift coûte généralement entre $300 et $600 par mois via un professionnel agréé, et le remboursement par les assurances varie et reste souvent inégal. Il n’est pas vendu directement aux particuliers : c’est le professionnel qui configure et ajuste le programme."
+        },
+        {
+          "q": "Quels sont les inconvénients de Myndlift ?",
+          "a": "Myndlift nécessite un professionnel clinique agréé, coûte entre $300 et $600 par mois avec un remboursement inégal, conserve les données sur une plateforme fermée sans accès brut pour le patient, et propose une application patient fonctionnelle plutôt qu’aboutie."
+        }
+      ]
     },
     "mendi": {
       "verdict": "Pas de l’EEG — un entraînement préfrontal par fNIRS sous forme de jeu simple. Facile à utiliser, au champ d’action étroit.",

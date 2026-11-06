@@ -639,8 +639,48 @@
       ]
     },
     "myndlift": {
-      "verdict": "Neurofeedback em casa sob supervisão clínica — por meio de um profissional habilitado, com protocolos definidos e acompanhamento de sintomas.",
-      "productType": "Neurofeedback clínico em casa (com prescrição)"
+      "verdict": "Neurofeedback em casa supervisionado por um clínico — acesso via profissional habilitado, protocolos definidos e acompanhamento de sintomas.",
+      "summary": "O Myndlift não é um headset de consumo — é uma plataforma clínica de neurofeedback que um profissional de saúde mental habilitado prescreve e supervisiona a distância. O headset (geralmente o hardware do Muse 2 ou, com o extensor de canais, EEG em vários pontos) executa protocolos criados pelo clínico para TDAH, ansiedade, sono e trauma; os dados voltam ao profissional, que ajusta o programa. É a oferta de referência de neurofeedback supervisionado clinicamente no espaço próximo ao consumo — incluída para mostrar como é o neurofeedback supervisionado, não como prova de que funciona.",
+      "description": "Análise do ONDA do Myndlift — a plataforma de neurofeedback remoto com prescrição clínica que permite a profissionais habilitados supervisionar o neurofeedback de EEG em casa. Pontuado em sinal, programas e custo-benefício.",
+      "bestFor": "Neurofeedback supervisionado por um clínico — para pacientes com diagnóstico e um profissional habilitado que o prescreva.",
+      "testNote": "Avaliação baseada em evidências — pontuado com base na documentação do Myndlift, na literatura clínica publicada sobre neurofeedback e em análises independentes de 2026. Não testado pessoalmente pelo ONDA. Incluído como ponto de referência médico da categoria, não como recomendação direta de consumo.",
+      "productType": "Neurofeedback clínico em casa (com prescrição)",
+      "pros": [
+        "A única opção desta categoria supervisionada por um clínico habilitado",
+        "Programas criados e ajustados por um profissional de saúde mental habilitado",
+        "Acompanhamento de resultados com escalas de sintomas validadas",
+        "Extensor de canais disponível para protocolos de EEG mais completos em vários pontos"
+      ],
+      "cons": [
+        "Exige um profissional clínico habilitado — não dá para comprar diretamente como consumidor",
+        "Caro ($300–$600/mês) e com cobertura de convênios irregular",
+        "Plataforma de dados fechada — sem acesso a dados brutos para o paciente",
+        "App do paciente funcional mais do que caprichado"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Usa por padrão o hardware do Muse 2; o extensor de canais adiciona posições de eletrodos relevantes para pesquisa. Sinal de nível consumo suficiente sob a interpretação do clínico.",
+        "training-content": "Protocolos de neurofeedback de estilo clínico para TDAH, ansiedade, sono, depressão e estresse pós-traumático — criados pelo profissional habilitado que supervisiona, não por um app. As evidências para esses usos são mistas a negativas em estudos com avaliação cega.",
+        "insights": "O profissional habilitado revisa e ajusta as sessões; o acompanhamento de resultados inclui métricas de EEG e escalas de sintomas validadas (por exemplo, ASRS, GAD-7).",
+        "comfort": "Herda o formato de faixa do Muse 2 — confortável para sessões de 20 minutos sentado, não foi feito para dormir nem para movimento.",
+        "app-ux": "O app do paciente é funcional mais do que caprichado — construído em torno de programas definidos pelo clínico, não para exploração autônoma.",
+        "open-data": "Plataforma clínica fechada — os dados vão para o profissional, não para o paciente. Não é um ambiente para desenvolvedores.",
+        "value": "$300–$600/mês conforme o profissional, mais o custo do aparelho. A cobertura do convênio varia; caro para quem paga do próprio bolso."
+      },
+      "content": "## Onde ele se destaca\n\nO Myndlift mostra como o neurofeedback pode ser quando um clínico de verdade cria o protocolo e o ajusta semana a semana. O paciente usa uma faixa Muse 2 (ou o extensor de canais para um EEG mais completo em vários pontos), faz as sessões em casa, e os dados voltam ao profissional habilitado que supervisiona — que ajusta o protocolo e acompanha escalas de sintomas (ASRS para TDAH, GAD-7 para ansiedade). O Myndlift afirma que seus programas melhoram esses sintomas; ainda não foram publicados estudos independentes desta plataforma específica, e uma metanálise de estudos de neurofeedback em TDAH encontrou benefícios nas avaliações de sintomas feitas por avaliadores não cegos, geralmente os pais, mas não nas avaliações provavelmente cegas (Cortese 2016). Uma metanálise de 2025 novamente não encontrou melhora significativa nas avaliações provavelmente cegas (Westwood 2025), e um estudo duplo-cego em crianças não encontrou vantagem sobre o feedback simulado (Neurofeedback Collaborative Group 2021); na insônia, o feedback real e o simulado ajudaram igualmente (Schabus 2017). Veja [Neurofeedback de EEG: o que as evidências mostram](/science/evidence/eeg-neurofeedback). É a única plataforma desta categoria cuja reputação se apoia no uso clínico supervisionado, e não no uso autônomo pelo consumidor.\n\n## Quais são as desvantagens do Myndlift?\n\nNão dá para comprar diretamente. O acesso passa por um profissional de saúde mental habilitado que tenha o Myndlift em sua prática; o custo mensal ($300–$600) reflete a supervisão clínica, não só o hardware e o software. O modelo de dados é fechado por design — o EEG bruto não volta para o paciente. Como ferramenta de biohacking para consumidores, não serve; como ferramenta clínica diante de uma necessidade diagnosticada, é a única opção desta lista com supervisão clínica.\n\n## Quem deve escolher o Myndlift?\n\nEscolha o Myndlift se você tem um diagnóstico (TDAH, ansiedade, estresse pós-traumático, distúrbio do sono) e um profissional de saúde mental habilitado disposto a prescrever e supervisionar, e encare-o como complemento ao tratamento estabelecido, não como substituto. Para treinar o cérebro por conta própria, o Muse S Athena ou o Neurosity Crown são as opções de consumo adequadas; o Myndlift é a opção supervisionada por um clínico na mesma categoria.\n\n---\n\n## Leitura complementar\n\nA neurociência que esses headsets devolvem como feedback — e o que o sinal de EEG pode e não pode dizer sobre estados mentais.\n\n- [Arquitetura cognitiva: combinações de nootrópicos](/articles/cognitive-architecture-nootropic-stacks) — o que as combinações de nootrópicos podem e não podem fazer, e por que as pontuações dos headsets não conseguem mostrar seu efeito\n- [Demência digital e controle da atenção](/articles/digital-dementia-attentional-control) — reconstruir a atenção com prática guiada por feedback\n- [Neuroplasticidade e flow](/articles/neuroplasticity-flow-overclocking) — o que são estados de flow e como eles se formam\n",
+      "faq": [
+        {
+          "q": "O Myndlift vale a pena?",
+          "a": "O Myndlift vale a pena para pacientes com diagnóstico que trabalham com um profissional habilitado que o prescreve. É a única opção desta categoria supervisionada por um clínico, com programas criados por ele e acompanhamento de sintomas em escalas validadas, mas estudos cegos em TDAH mostram pouco ou nenhum benefício específico do neurofeedback. Não dá para comprá-lo diretamente como produto de consumo."
+        },
+        {
+          "q": "Quanto custa o Myndlift?",
+          "a": "O Myndlift costuma custar de $300 a $600 por mês por meio de um profissional habilitado, e a cobertura dos convênios varia e muitas vezes é irregular. Ele não é vendido diretamente ao consumidor, então é o profissional quem configura e ajusta o programa."
+        },
+        {
+          "q": "Quais são as desvantagens do Myndlift?",
+          "a": "O Myndlift exige um profissional clínico habilitado, custa de $300 a $600 por mês com cobertura de convênio irregular, mantém os dados em uma plataforma fechada sem acesso bruto para o paciente e tem um app do paciente funcional mais do que caprichado."
+        }
+      ]
     },
     "mendi": {
       "verdict": "Não é EEG: treino pré-frontal com fNIRS em um formato simples de jogo. Fácil de usar e de foco restrito.",

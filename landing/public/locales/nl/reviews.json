@@ -639,8 +639,48 @@
       ]
     },
     "myndlift": {
-      "verdict": "Neurofeedback thuis onder klinisch toezicht — toegang via een erkende zorgverlener, met vaste protocollen en het bijhouden van symptomen.",
-      "productType": "Klinische neurofeedback thuis (voorgeschreven)"
+      "verdict": "Neurofeedback thuis onder toezicht van een clinicus — toegang via een bevoegde zorgverlener, met vaste protocollen en symptoomvolging.",
+      "summary": "Myndlift is geen consumentenheadset, maar een klinisch neurofeedbackplatform dat een bevoegde zorgverlener in de geestelijke gezondheidszorg voorschrijft en op afstand begeleidt. De headset (meestal de Muse 2-hardware of, met de kanaaluitbreiding, EEG op meerdere plekken) draait door de zorgverlener ontworpen protocollen voor ADHD, angst, slaap en trauma; de data gaat terug naar de zorgverlener, die het programma bijstelt. Het referentieaanbod voor klinisch begeleide neurofeedback in het consumentennabije segment — opgenomen om te laten zien hoe begeleide neurofeedback eruitziet, niet als bewijs dat het werkt.",
+      "description": "ONDA-review van Myndlift — het klinisch voorgeschreven platform voor neurofeedback op afstand waarmee bevoegde zorgverleners EEG-neurofeedback thuis begeleiden. Beoordeeld op signaal, programma’s en prijs-kwaliteit.",
+      "bestFor": "Neurofeedback onder toezicht van een clinicus — voor patiënten met een diagnose en een bevoegde voorschrijvende zorgverlener.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van Myndlift, de gepubliceerde klinische literatuur over neurofeedback en onafhankelijke reviews uit 2026. Niet zelf getest door ONDA. Opgenomen als medisch referentiepunt van de categorie, niet als directe consumentenaanbeveling.",
+      "productType": "Klinische neurofeedback thuis (op voorschrift)",
+      "pros": [
+        "De enige optie in deze categorie onder toezicht van een bevoegde clinicus",
+        "Programma’s ontworpen en bijgesteld door een bevoegde zorgverlener in de geestelijke gezondheidszorg",
+        "Uitkomsten gevolgd met gevalideerde symptoomschalen",
+        "Kanaaluitbreiding beschikbaar voor uitgebreidere EEG-protocollen op meerdere plekken"
+      ],
+      "cons": [
+        "Vereist een bevoegde klinische zorgverlener — niet rechtstreeks als consument te koop",
+        "Duur ($300–$600 per maand) met wisselende vergoeding door verzekeraars",
+        "Gesloten dataplatform — geen toegang tot ruwe data voor de patiënt",
+        "Patiënten-app eerder functioneel dan verzorgd"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Gebruikt standaard de Muse 2-hardware; de kanaaluitbreiding voegt onderzoeksrelevante elektrodeposities toe. Voldoende consumentensignaal onder interpretatie van de clinicus.",
+        "training-content": "Klinische neurofeedbackprotocollen voor ADHD, angst, slaap, depressie en posttraumatische stress — ontworpen door de begeleidende bevoegde zorgverlener, niet door een app. Het bewijs voor deze toepassingen is in geblindeerde studies wisselend tot negatief.",
+        "insights": "De bevoegde zorgverlener bekijkt en stelt de sessies bij; de uitkomstvolging omvat EEG-metingen en gevalideerde symptoomschalen (bijv. ASRS, GAD-7).",
+        "comfort": "Neemt de hoofdbandvorm van de Muse 2 over — comfortabel voor zittende sessies van 20 minuten, niet bedoeld voor slaap of beweging.",
+        "app-ux": "De patiënten-app is eerder functioneel dan verzorgd — gebouwd rond door de clinicus ingestelde programma’s in plaats van zelfstandig verkennen.",
+        "open-data": "Gesloten klinisch platform — de data gaat naar de zorgverlener, niet naar de patiënt. Geen ontwikkelomgeving.",
+        "value": "$300–$600 per maand afhankelijk van de zorgverlener plus de kosten van het apparaat. Vergoeding verschilt; duur als je zelf betaalt."
+      },
+      "content": "## Waar het voorloopt\n\nMyndlift laat zien hoe neurofeedback eruit kan zien als een echte clinicus het protocol ontwerpt en het week na week bijstelt. De patiënt draagt een Muse 2-hoofdband (of de kanaaluitbreiding voor uitgebreidere EEG op meerdere plekken), doet de sessies thuis, en de data gaat terug naar de bevoegde begeleidende zorgverlener — die het protocol bijstelt en symptoomschalen volgt (ASRS bij ADHD, GAD-7 bij angst). Myndlift stelt dat zijn programma’s die symptomen verbeteren; onafhankelijke studies naar precies dit platform zijn nog niet gepubliceerd, en een meta-analyse van neurofeedbackstudies bij ADHD vond voordelen op symptoombeoordelingen door niet-geblindeerde beoordelaars, meestal ouders, maar niet op waarschijnlijk geblindeerde beoordelingen (Cortese 2016). Een meta-analyse uit 2025 vond opnieuw geen significante verbetering op waarschijnlijk geblindeerde beoordelingen (Westwood 2025), en een dubbelblinde studie bij kinderen vond geen voordeel ten opzichte van nepfeedback (Neurofeedback Collaborative Group 2021); bij slapeloosheid hielpen echte en nepfeedback even goed (Schabus 2017). Zie [EEG-neurofeedback: wat het bewijs laat zien](/science/evidence/eeg-neurofeedback). Het is het enige platform in deze categorie waarvan de reputatie rust op begeleid klinisch gebruik in plaats van op zelfstandig gebruik door consumenten.\n\n## Wat zijn de nadelen van Myndlift?\n\nJe kunt het niet rechtstreeks kopen. Toegang loopt via een bevoegde zorgverlener in de geestelijke gezondheidszorg die Myndlift in de praktijk aanbiedt; de maandelijkse kosten ($300–$600) weerspiegelen de klinische begeleiding, niet alleen hardware en software. Het datamodel is bewust gesloten — ruwe EEG gaat niet terug naar de patiënt. Als biohackingtool voor consumenten past het niet; als klinisch hulpmiddel bij een gediagnosticeerde behoefte is het de enige optie in deze lijst met toezicht van een clinicus.\n\n## Wie zou voor Myndlift moeten kiezen?\n\nKies Myndlift als je een diagnose hebt (ADHD, angst, posttraumatische stress, slaapstoornis) en een bevoegde zorgverlener in de geestelijke gezondheidszorg die het wil voorschrijven en begeleiden, en zie het als aanvulling op een gevestigde behandeling, niet als vervanging. Voor zelfstandige hersentraining zijn Muse S Athena of Neurosity Crown de passende consumentenopties; Myndlift is de door een clinicus begeleide optie in dezelfde categorie.\n\n---\n\n## Achtergrond\n\nDe neurowetenschap die deze headsets terugkoppelen — en wat het EEG-signaal wel en niet kan zeggen over mentale toestanden.\n\n- [Cognitieve architectuur: nootropica-stacks](/articles/cognitive-architecture-nootropic-stacks) — wat nootropica-stacks wel en niet kunnen, en waarom headsetscores hun effect niet kunnen laten zien\n- [Digitale dementie en aandachtscontrole](/articles/digital-dementia-attentional-control) — aandacht herstellen met feedbackgestuurde oefening\n- [Neuroplasticiteit en flow](/articles/neuroplasticity-flow-overclocking) — wat flowtoestanden zijn en hoe ze ontstaan\n",
+      "faq": [
+        {
+          "q": "Is Myndlift het waard?",
+          "a": "Myndlift is het waard voor patiënten met een diagnose die werken met een bevoegde voorschrijvende zorgverlener. Het is de enige optie in deze categorie onder toezicht van een clinicus, met door de zorgverlener ontworpen programma’s en symptoomvolging op gevalideerde schalen, maar geblindeerde studies bij ADHD tonen weinig of geen specifiek voordeel van neurofeedback. Het is niet rechtstreeks als consumentenproduct te koop."
+        },
+        {
+          "q": "Wat kost Myndlift?",
+          "a": "Myndlift kost via een bevoegde zorgverlener meestal $300 tot $600 per maand, en de vergoeding door verzekeraars verschilt en is vaak wisselend. Het wordt niet rechtstreeks aan consumenten verkocht; de zorgverlener stelt het programma in en past het aan."
+        },
+        {
+          "q": "Wat zijn de nadelen van Myndlift?",
+          "a": "Myndlift vereist een bevoegde klinische zorgverlener, kost $300 tot $600 per maand met wisselende vergoeding, bewaart data op een gesloten platform zonder ruwe toegang voor de patiënt en heeft een patiënten-app die eerder functioneel dan verzorgd is."
+        }
+      ]
     },
     "mendi": {
       "verdict": "Geen EEG — fNIRS-training van de prefrontale cortex in een eenvoudige spelvorm. Makkelijk in gebruik, smal gericht.",
