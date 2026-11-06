@@ -154,6 +154,8 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
     hrvQuotes: [
       { quote: 'RMSSD is a standard statistical measure of HRV. It represents the root mean square of successive differences between normal heartbeats for a given set of heartbeat data.', source: GARMIN_HRV },
       { quote: 'Simply wear your device to bed and the analysis automatically occurs.', source: GARMIN_HRV },
+      { quote: 'When your HRV status is balanced, it means that your 7-day average HRV is within your personal baseline range.', source: GARMIN_HRV },
+      { quote: 'If your personal baseline drops below age-based standards associated with good health, then your HRV status is classified as poor.', source: GARMIN_HRV },
     ],
     compositeName: 'Body Battery',
     composite:

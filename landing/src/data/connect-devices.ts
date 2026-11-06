@@ -166,19 +166,23 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
   {
     slug: 'garmin',
     name: 'Garmin',
-    metaTitle: 'How to Read Garmin HRV Status (Balanced, Low) | ONDA Life',
+    metaTitle: 'Garmin HRV Status: Balanced, Low, Poor Explained | ONDA Life',
     metaDescription:
-      'How to read Garmin HRV Status: what Balanced, Unbalanced and Low mean, why it needs weeks to set a baseline, whether Garmin can connect to ONDA, and how to read a low night.',
+      'What Garmin HRV Status means: Balanced, Unbalanced, Low and Poor, why it needs about three weeks of nights, why a high HRV can be Unbalanced, and how to read a low night.',
     h1: 'How to read your Garmin HRV Status',
     lead:
-      'Garmin labels your night-time HRV as Balanced, Unbalanced or Low compared with your own range. Here is what those labels mean and why they can shift.',
+      'Garmin compares your 7-day average night-time HRV with your own baseline range and labels it Balanced, Unbalanced, Low or Poor. Here is what each label means and why it can shift.',
     shows: [
-      'HRV Status places your recent night-time HRV against a personal range and labels it Balanced, Unbalanced or Low. Independent explainers describe the baseline as taking about three weeks of wear to form.',
+      'Your watch measures HRV through the night in 5-minute windows and shows last night’s average. HRV Status itself is based on your 7-day average, compared with a personal baseline range. Garmin says you need to wear the watch overnight for around three weeks before HRV Status becomes fully active.',
+      'The four labels, per Garmin: Balanced — your 7-day average is inside your baseline range. Unbalanced — outside it, above or slightly below. Low — significantly below your baseline. Poor — your baseline itself has dropped below Garmin’s age-based standards (the range is then no longer shown).',
+      'Higher is not always better: Garmin notes that HRV well above your own baseline can be linked to functional overreaching, especially after a lot of low-intensity training, so a high reading can also show as Unbalanced.',
+      'Your baseline is not fixed: it shifts slowly with your readings, can sit lower after a long training block and tends to decline with age. On compatible watches overnight HRV also feeds Training Status and Training Readiness.',
       '“Unbalanced” only means you are outside your own range — above or below it. Garmin users often ask why it appears after a good stretch: the range itself moves as your readings change.',
       'Garmin’s own HRV Status page names the formula: RMSSD, measured while you sleep (quoted below).',
     ],
     hrvType: 'RMSSD, night-time, vs your personal range',
     sources: [
+      { label: 'Garmin: HRV Status', url: 'https://www.garmin.com/en-US/garmin-technology/health-science/hrv-status/' },
       { label: 'Wareable: Garmin HRV Status explained', url: 'https://www.wareable.com/garmin/garmin-hrv-status-explained-what-is-it-how-to-use' },
       { label: 'Garmin Connect Developer Program', url: 'https://developer.garmin.com/gc-developer-program/overview/' },
     ],
@@ -190,6 +194,18 @@ export const CONNECT_DEVICES: ConnectDevice[] = [
       {
         q: 'Why does Garmin say Unbalanced when I feel fine?',
         a: 'Unbalanced means outside your recent personal range, in either direction. It is a description of the number, not of your health.',
+      },
+      {
+        q: 'What is the difference between Low and Poor HRV Status?',
+        a: 'Low means your 7-day average has dropped significantly below your own baseline. Poor means your baseline itself is below Garmin’s age-based standards; Garmin then stops showing the baseline range.',
+      },
+      {
+        q: 'How long does Garmin HRV Status take to start?',
+        a: 'Garmin says around three weeks of regular overnight wear. You see last night’s average HRV from the first night, but the status needs that history to build your baseline range.',
+      },
+      {
+        q: 'Is a high HRV on Garmin always good?',
+        a: 'No. Garmin notes that HRV well above your own baseline can be linked to functional overreaching, especially after a lot of low-intensity training, which is why a high value can show as Unbalanced.',
       },
       {
         q: 'Can ONDA read my Garmin data?',
