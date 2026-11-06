@@ -3237,8 +3237,46 @@
       "productType": "Appareil PEMF sous le matelas orienté sommeil"
     },
     "sunlighten-mpulse": {
-      "verdict": "Le sauna infrarouge premium leader de la catégorie — véritable émission sur 3 longueurs d’onde, fabrication premium en cèdre, faibles CEM mesurées de façon indépendante.",
-      "productType": "Cabine de sauna infrarouge premium 3-en-1 (proche, moyen, lointain)"
+      "verdict": "Le sauna infrarouge premium leader de sa catégorie : véritable émission de 3 longueurs d’onde, fabrication premium en cèdre et faibles CEM mesurés de façon indépendante.",
+      "summary": "Le Sunlighten mPulse 3-in-1 est la cabine infrarouge qui a défini le haut de gamme. Contrairement à la plupart des étiquettes « spectre complet », le mPulse émet réellement de l’infrarouge proche, moyen et lointain grâce à trois systèmes d’émetteurs indépendants — et vous pouvez programmer les longueurs d’onde actives à chaque séance. Fabrication en cèdre, CEM ultra-faibles (vérifiés par des mesures de tiers), garantie de 7 ans.",
+      "description": "Test ONDA du Sunlighten mPulse, le sauna infrarouge premium 3 en 1 qui émet séparément l’infrarouge proche, moyen et lointain. Noté sur la source de chaleur, la fabrication, les CEM et la valeur.",
+      "bestFor": "Idéal pour un usage quotidien sérieux du sauna infrarouge, avec une véritable émission de 3 longueurs d’onde et de faibles CEM vérifiés.",
+      "testNote": "Évaluation fondée sur les preuves : notée à partir de la documentation de Sunlighten, de la littérature publiée sur les saunas infrarouges et de tests indépendants de 2026. Non testé en main propre par ONDA.",
+      "productType": "Cabine de sauna infrarouge premium 3 en 1 (proche, moyen, lointain)",
+      "pros": [
+        "Véritable infrarouge à 3 longueurs d’onde (proche + moyen + lointain) avec contrôle programmable",
+        "CEM ultra-faibles mesurés de façon indépendante (<1 mG en position assise)",
+        "Fabrication premium en cèdre avec garantie de 7 ans"
+      ],
+      "cons": [
+        "Prix de $5,000–$10,000+ : haut de gamme",
+        "Espace d’installation dédié nécessaire (minimum 4×4 ft)",
+        "Les grandes configurations nécessitent du 220 V",
+        "Les délais de livraison peuvent s’allonger en période de forte demande"
+      ],
+      "scoreNotes": {
+        "heat-source": "Véritable émission infrarouge à 3 longueurs d’onde : proche (LED), moyen et lointain (panneaux chauffants) fonctionnent indépendamment. La mise en œuvre des longueurs d’onde la plus rigoureuse du marché grand public.",
+        "build": "Cabine premium en cèdre, configurations de 1 à 4 personnes, garantie de 7 ans. Plusieurs décennies de fiabilité.",
+        "emf": "CEM ultra-faibles mesurés de façon indépendante en position assise (généralement <1 mG). Sunlighten publie les chiffres.",
+        "form-factor": "La cabine nécessite un espace dédié (1 personne à partir de 4×4 ft ; 4 personnes à partir de 6×7 ft). 110 V ou 220 V selon la taille.",
+        "evidence": "Aucun essai évalué par les pairs sur le mPulse lui-même. Le seul essai publié sur un sauna fabriqué par Sunlighten est un pilote avant-après de 2010, sur 20 personnes pendant 3 mois, avec un ancien modèle (Sunlight Armana 3) : ce n’est donc pas une preuve pour le mPulse ; les études japonaises sur la thérapie Waon ont utilisé des appareils d’autres fabricants. Sunlighten présente ses saunas comme des produits de bien-être général, pas comme des dispositifs médicaux. Sans essais propres, il ne peut pas dépasser le plafond d’ONDA pour ce type de produits.",
+        "value": "$5,000–$10,000+ selon la configuration. Un prix premium justifié par la fabrication et des caractéristiques vérifiées."
+      },
+      "content": "## Là où il est en avance\n\nLe Sunlighten mPulse 3-in-1 est le sauna infrarouge qui fixe la norme de ce que « spectre complet » devrait signifier. La plupart des concurrents placent un émetteur d’infrarouge lointain derrière le panneau et parlent de spectre complet ; le mPulse émet de l’infrarouge proche, moyen et lointain via trois systèmes d’émetteurs indépendants, programmables à chaque séance. Avec sa fabrication en cèdre et ses CEM vérifiés par des tiers, c’est la référence du haut de gamme.\n\n## Quels sont les inconvénients du Sunlighten mPulse 3-in-1 ?\n\nLe prix et l’encombrement. Plus de $5,000 pour la plus petite configuration, un espace d’installation dédié, des délais de livraison allongés en période de forte demande.\n\n## Qui devrait acheter le Sunlighten mPulse 3-in-1 ?\n\nChoisissez le Sunlighten mPulse si un véritable infrarouge à 3 longueurs d’onde et de faibles CEM vérifiés sont vos critères décisifs, et que vous voulez la fabrication haut de gamme qui fait référence dans la catégorie depuis plus de dix ans. Pour une cabine infrarouge économique : JNH ou Therasage. Pour du portable : la HigherDose Blanket. Pour l’infrarouge proche seul : SaunaSpace.\n\n---\n\n## Pour aller plus loin\n\nDes lectures sur les idées derrière l’exposition à la chaleur — surtout des hypothèses, pas des effets démontrés chez l’humain. Pour ce que montrent vraiment les études, voir [les données sur le sauna et la chaleur](/science/evidence/sauna-heat-exposure).\n\n- [Biogenèse mitochondriale : le réseau électrique de la cellule](/articles/mitochondrial-biogenesis-cellular-power-grid) — l’idée que le stress thermique agit sur les mitochondries (non démontré chez l’humain)\n- [Longévité et nettoyage cellulaire](/articles/longevity-hardware-cellular-cleanup) — la place du sauna dans l’ensemble autophagie/mitophagie\n- [Protocole de longévité : remettre l’horloge biologique à zéro](/articles/longevity-protocol-biological-clock-reset) — où le sauna s’insère dans une routine de remise à zéro",
+      "faq": [
+        {
+          "q": "Le Sunlighten mPulse 3-in-1 vaut-il le coup ?",
+          "a": "Le mPulse vaut le coup pour un usage quotidien sérieux du sauna infrarouge. Il offre un véritable infrarouge proche, moyen et lointain avec contrôle programmable, des CEM ultra-faibles mesurés de façon indépendante sous 1 mG en position assise et une fabrication en cèdre garantie 7 ans. Son prix est élevé et il demande un espace dédié."
+        },
+        {
+          "q": "Combien coûte le Sunlighten mPulse ?",
+          "a": "Le Sunlighten mPulse coûte d’environ $5,000 pour un modèle 1 personne à $10,000 pour un modèle 4 personnes. Il se situe donc dans le haut de gamme. Les grandes configurations nécessitent aussi du 220 V, à prévoir lors de l’installation."
+        },
+        {
+          "q": "Quels sont les inconvénients du Sunlighten mPulse ?",
+          "a": "Le mPulse coûte de $5,000 à plus de $10,000, demande un espace d’installation dédié d’au moins 4×4 ft, et les grandes configurations exigent du 220 V. Les délais de livraison peuvent aussi s’allonger en période de forte demande : anticipez votre achat."
+        }
+      ]
     },
     "finnleo-hallmark": {
       "verdict": "Un sauna d’intérieur traditionnel fabriqué en Finlande — fabrication premium et pleine chaleur par convection, dans le format de sauna étudié par les cohortes finlandaises.",

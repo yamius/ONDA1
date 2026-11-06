@@ -622,6 +622,7 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   // wave D (086, option 1, owner 2026-11-06): untranslated picks of already-translated round-ups
   { collection: 'reviews', slug: 'focuscalm' },
   { collection: 'reviews', slug: 'myndlift' },
+  { collection: 'reviews', slug: 'sunlighten-mpulse' },
   // WAVE_D_NEXT
   ],
 ]
