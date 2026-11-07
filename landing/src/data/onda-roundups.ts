@@ -618,7 +618,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Guided breathing library, no documented HRV loop',
         capsKey: 'breathwrk',
         blurb:
-          'Breathwrk (now part of Peloton) offers a guided library of breathing exercises (50+, 100+ on Pro), daily classes and programs, on iOS, Android and the web. Its official materials do not currently describe heart-rate or HRV feedback, so treat it as a breathing-content app: excellent for technique, not a live HRV loop.',
+          'Breathwrk (now part of Peloton) offers a guided library of breathing exercises (limited on the free plan, 100+ on Pro), daily classes and programs, on iOS, Android and the web. Its official materials do not currently describe heart-rate or HRV feedback, so treat it as a breathing-content app: excellent for technique, not a live HRV loop.',
         pros: [
           'Large guided breathing-exercise library and classes',
           'iOS, Android and web; free tier, included with some Peloton memberships',

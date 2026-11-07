@@ -17,7 +17,7 @@ const bestBreathworkApps2026: Comparison = {
     {
       reviewSlug: 'breathwrk',
       award: 'Best value guided library',
-      takeaway: 'Guided exercises (50+, 100+ on Pro), daily classes and programs with a free tier, about $49/year and Peloton inclusion — no heart-rate or HRV feedback.',
+      takeaway: 'Guided exercises (limited on the free plan, 100+ on Pro), daily classes and programs with a free tier, about $49/year and Peloton inclusion — no heart-rate or HRV feedback.',
     },
     {
       reviewSlug: 'soma-breath',

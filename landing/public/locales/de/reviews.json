@@ -5411,7 +5411,7 @@
         },
         "breathwrk": {
           "award": "Beste geführte Bibliothek fürs Geld",
-          "takeaway": "Geführte Übungen (50+, mit Pro 100+), tägliche Kurse und Programme mit Gratisversion, etwa $49/Jahr und Peloton-Inklusion – ohne Herzfrequenz- oder HRV-Feedback."
+          "takeaway": "Geführte Übungen (in der Gratisversion eingeschränkt, mit Pro 100+), tägliche Kurse und Programme mit Gratisversion, etwa $49/Jahr und Peloton-Inklusion – ohne Herzfrequenz- oder HRV-Feedback."
         },
         "soma-breath": {
           "award": "Bestes rhythmisches Breathwork mit Musik",
@@ -6634,7 +6634,7 @@
       "axes": [
         {
           "name": "Umfang der Bibliothek",
-          "note": "Othership: 500+ Sessions auf Abruf, kuratiert um einen musikgetriebenen Stil. Breathwrk: 50+ Übungen (mit Pro 100+) plus tägliche Kurse und Programme (offizielle Website und App Store, abgerufen am 2026-10-11). WHM: strukturierte Runden in verschiedenen Stufen – bewusst schmal."
+          "note": "Othership: 500+ Sessions auf Abruf, kuratiert um einen musikgetriebenen Stil. Breathwrk: eingeschränkter Gratiszugang (mit Pro 100+ Übungen) plus tägliche Kurse und Programme (offizielle Website und App Store, abgerufen am 2026-10-11). WHM: strukturierte Runden in verschiedenen Stufen – bewusst schmal."
         },
         {
           "name": "Abgedeckte Techniken",
