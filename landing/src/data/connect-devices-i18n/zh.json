@@ -196,7 +196,7 @@
         "Google 的帮助页面把 HRV 列为夜间指标之一，并列出了 Readiness 的输入，但没有说明 HRV 公式，所以我们这里不做标注。",
         "无论标签如何，都请把某一晚与你自己几周以来的平常范围比较。单独一晚的升高或降低本身说明不了多少。"
       ],
-      "connect": "Google 表示 Google Health API 目前不接受新项目接入，而较旧的 Fitbit Web API 将于 2026-10-30 关闭。所以我们目前无法直接连接。",
+      "connect": "Google 表示 Google Health API 目前不接受新项目接入，而较旧的 Fitbit Web API 将于 2026年10月30日 关闭。所以我们目前无法直接连接。",
       "appleHealth": "根据 Google 自己的帮助页面，Google Health 应用会从 Apple Health 读取 HRV，但不会把 HRV 写入其中，所以你的 Fitbit 或 Pixel Watch HRV 不会通过这一途径到达 ONDA。如果你的设备不是 Apple Watch，ONDA 仍可以用 iPhone 摄像头测量你的脉搏，并估算呼吸频率。摄像头提供的是脉搏，不是 HRV。",
       "faq": [
         {

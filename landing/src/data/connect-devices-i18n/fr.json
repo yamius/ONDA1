@@ -196,7 +196,7 @@
         "Les pages d’aide de Google listent la HRV parmi les mesures nocturnes et nomment les composantes de Readiness, mais ne nomment pas la formule de HRV : nous ne l’étiquetons donc pas ici.",
         "Quelle que soit l’étiquette, comparez une nuit avec votre propre plage habituelle sur plusieurs semaines. Une seule nuit en hausse ou en baisse dit peu de chose à elle seule."
       ],
-      "connect": "Google indique que la Google Health API n’accueille pas de nouveaux projets pour le moment, et l’ancienne Fitbit Web API sera fermée le 2026-10-30. Une connexion directe n’est donc pas possible pour nous actuellement.",
+      "connect": "Google indique que la Google Health API n’accueille pas de nouveaux projets pour le moment, et l’ancienne Fitbit Web API sera fermée le 30 octobre 2026. Une connexion directe n’est donc pas possible pour nous actuellement.",
       "appleHealth": "D’après la page d’aide de Google, l’app Google Health lit la HRV depuis Apple Health mais ne l’y écrit pas : votre HRV Fitbit ou Pixel Watch n’arrivera donc pas dans ONDA par ce biais. Si votre appareil n’est pas une Apple Watch, ONDA peut tout de même mesurer votre pouls avec la caméra de l’iPhone, avec une estimation de la fréquence respiratoire. La caméra donne le pouls, pas la HRV.",
       "faq": [
         {

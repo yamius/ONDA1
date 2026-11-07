@@ -57,9 +57,9 @@ Not a consumer recommendation. LivaNova VNS Therapy is the gold-standard medical
 
 The biology behind what these devices target — and the protocols that compound with the hardware.
 
-- [CO₂ tolerance and the oxygen limit](/articles/co2-tolerance-expanding-oxygen-limit) — why slow breathing rebuilds vagal tone via CO₂ chemistry
+- [CO₂ tolerance and the oxygen limit](/articles/co2-tolerance-expanding-oxygen-limit) — what breath-holding and CO₂ tolerance can and cannot tell you
 - [Breathwork as a command-line interface](/articles/breathwork-command-line-interface) — the protocols stimulation pairs with
-- [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — why vagal tone work targets cortisol downstream
+- [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — what is and isn't known about breathing practice and cortisol
 `,
   references: [
     { label: 'LivaNova VNS Therapy — official clinical site', url: 'https://www.livanova.com/epilepsy-vnstherapy/en-us' },

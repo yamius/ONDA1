@@ -13,11 +13,11 @@ const breathwrkVsOthership: HeadToHeadInput = {
   verdict:
     'Othership scores higher overall (7.7 vs 7.5): a larger library, cinematic production and live community. Breathwrk is the budget pick — a guided library with a free plan at about $49/year.',
   bestForA:
-    'Choose Breathwrk if you want an affordable guided routine — 50+ exercises free, 100+ on Pro, daily classes and programs — for about $49/year, or free with some Peloton memberships.',
+    'Choose Breathwrk if you want an affordable guided routine — limited free access, 100+ exercises on Pro, daily classes and programs — for about $49/year, or free with some Peloton memberships.',
   bestForB:
     'Choose Othership if you want cinematic music-driven sessions with live community classes and you accept $129.99/year.',
   axes: [
-    { name: 'Library size', winner: 'b', note: 'Othership: 500+ on-demand sessions. Breathwrk: 50+ exercises (100+ on Pro) plus daily classes and programs (official site and App Store, accessed 2026-10-11). Othership is larger.' },
+    { name: 'Library size', winner: 'b', note: 'Othership: 500+ on-demand sessions. Breathwrk: limited free access (100+ exercises on Pro) plus daily classes and programs (official site and App Store, accessed 2026-10-11). Othership is larger.' },
     { name: 'Technique coverage', criterionId: 'technique-coverage', note: 'Breathwrk: officially named techniques include box breathing, 4-7-8, humming and long-exhale patterns. Othership: leans into rhythmic, music-led sessions. Both score {{score:breathwrk.technique-coverage}} on this axis.' },
     { name: 'Evidence grounding', criterionId: 'evidence-grounding', note: 'Breathwrk’s App Store copy says the exercises improve HRV, heart rate and blood pressure without citing studies. Othership leans on experience and ceremony framing; it scores slightly higher (7.0 vs 6.5).' },
     { name: 'Production / UX', winner: 'b', note: 'Othership: cinematic visuals, immersive audio, live community classes. Breathwrk: clean functional UI with video classes.' },

@@ -181,7 +181,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         blurb:
           'Guided breathing exercises, daily classes and multi-day programs for calm, focus and sleep, on iOS, Android and the web (now part of Peloton). Its official materials describe no real-time heart-rate or coherence feedback (checked 2026-10-11) — strong on technique, but there is no live loop.',
         pros: [
-          '50+ exercises (100+ on Pro), daily classes and programs',
+          'Limited free access (100+ exercises on Pro), daily classes and programs',
           'Free tier; included with some Peloton memberships',
         ],
         cons: [

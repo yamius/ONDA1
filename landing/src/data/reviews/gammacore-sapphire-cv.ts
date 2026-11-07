@@ -59,7 +59,7 @@ The biology behind what these devices target — and the protocols that compound
 
 - [CO₂ tolerance and the oxygen limit](/articles/co2-tolerance-expanding-oxygen-limit) — CO₂ tolerance and slow breathing
 - [Breathwork as a command-line interface](/articles/breathwork-command-line-interface) — the protocols stimulation pairs with
-- [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — why vagal tone work targets cortisol downstream
+- [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — what is and isn't known about breathing practice and cortisol
 `,
   references: [
     { label: 'gammaCore — official product page', url: 'https://www.gammacore.com/' },

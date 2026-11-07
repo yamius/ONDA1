@@ -1,6 +1,6 @@
 /**
  * Task 073 step 2 — localized /<lang>/connect hub + header/menu label.
- * Device pages stay EN-only; the localized hub links to them with an
+ * Device pages are localized (connect-devices-i18n/<lang>.json, released via the queue); the localized hub links to them with an
  * "(in English)" note. EN hub text lives in connect-devices.ts; only the nav
  * labels and the top-of-hub line are used for EN from here.
  */

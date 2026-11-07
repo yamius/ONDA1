@@ -13,11 +13,11 @@ const breathwrkVsSoma: HeadToHeadInput = {
   verdict:
     'Close overall (7.5 vs 7.3). Breathwrk for an affordable guided library with a free plan at about $49/year. SOMA Breath for beat-paced rhythmic breathwork with a facilitator certification community.',
   bestForA:
-    'Choose Breathwrk if you want an affordable, voice-guided routine — 50+ exercises free, 100+ on Pro, daily classes and programs — at about half SOMA’s price.',
+    'Choose Breathwrk if you want an affordable, voice-guided routine — limited free access, 100+ exercises on Pro, daily classes and programs — at about half SOMA’s price.',
   bestForB:
     'Choose SOMA Breath if you want rhythmic music-paced breathwork with ceremony framing and access to a global certified-facilitator community.',
   axes: [
-    { name: 'Library size', winner: 'tie', note: 'Breathwrk: 50+ exercises (100+ on Pro) plus daily classes and programs (official site and App Store, accessed 2026-10-11). SOMA: curated library of music-paced journeys. Both score {{score:breathwrk.session-library}}.' },
+    { name: 'Library size', winner: 'tie', note: 'Breathwrk: limited free access (100+ exercises on Pro) plus daily classes and programs (official site and App Store, accessed 2026-10-11). SOMA: curated library of music-paced journeys. Both score {{score:breathwrk.session-library}}.' },
     { name: 'Technique coverage', criterionId: 'technique-coverage', note: 'Breathwrk: officially named techniques include box breathing, 4-7-8, humming and long-exhale patterns. SOMA: Wim Hof crossover plus pranayama. Both score {{score:breathwrk.technique-coverage}}.' },
     { name: 'Evidence grounding', criterionId: 'evidence-grounding', note: 'Breathwrk’s App Store copy claims HRV, heart-rate and blood-pressure benefits without citations. SOMA leans on ceremony framing and general breath physiology. Both score {{score:breathwrk.evidence-grounding}}.' },
     { name: 'Music-paced approach', winner: 'b', note: 'SOMA: beat-driven rhythmic breath pacing — unique in the category. Breathwrk: voice-guided sessions.' },

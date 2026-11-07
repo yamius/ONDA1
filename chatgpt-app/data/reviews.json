@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19",
+  "generatedAt": "2026-11-07",
   "source": "https://onda-life.com/reviews",
   "reviews": [
     {
@@ -8264,7 +8264,7 @@
         {
           "id": "session-library",
           "score": 8,
-          "note": "50+ exercises on the free plan and 100+ on Pro, plus daily video classes and multi-day programs (official site and App Store, accessed 2026-10-11). Substantial, but smaller than Othership’s catalogue, so not the largest in the category."
+          "note": "limited access to exercises on the free plan and 100+ on Pro, plus daily video classes and multi-day programs (official site and App Store, accessed 2026-10-11). Substantial, but smaller than Othership’s catalogue, so not the largest in the category."
         },
         {
           "id": "technique-coverage",
@@ -20867,7 +20867,7 @@
       },
       "verdict": "Othership scores higher overall (7.7 vs 7.5): a larger library, cinematic production and live community. Breathwrk is the budget pick — a guided library with a free plan at about $49/year.",
       "bestFor": {
-        "a": "Choose Breathwrk if you want an affordable guided routine — 50+ exercises free, 100+ on Pro, daily classes and programs — for about $49/year, or free with some Peloton memberships.",
+        "a": "Choose Breathwrk if you want an affordable guided routine — limited free access, 100+ exercises on Pro, daily classes and programs — for about $49/year, or free with some Peloton memberships.",
         "b": "Choose Othership if you want cinematic music-driven sessions with live community classes and you accept $129.99/year.",
         "c": null
       },
@@ -20875,7 +20875,7 @@
         {
           "name": "Library size",
           "winner": "b",
-          "note": "Othership: 500+ on-demand sessions. Breathwrk: 50+ exercises (100+ on Pro) plus daily classes and programs (official site and App Store, accessed 2026-10-11). Othership is larger."
+          "note": "Othership: 500+ on-demand sessions. Breathwrk: limited free access (100+ exercises on Pro) plus daily classes and programs (official site and App Store, accessed 2026-10-11). Othership is larger."
         },
         {
           "name": "Technique coverage",
@@ -20926,7 +20926,7 @@
       },
       "verdict": "Close overall (7.5 vs 7.3). Breathwrk for an affordable guided library with a free plan at about $49/year. SOMA Breath for beat-paced rhythmic breathwork with a facilitator certification community.",
       "bestFor": {
-        "a": "Choose Breathwrk if you want an affordable, voice-guided routine — 50+ exercises free, 100+ on Pro, daily classes and programs — at about half SOMA’s price.",
+        "a": "Choose Breathwrk if you want an affordable, voice-guided routine — limited free access, 100+ exercises on Pro, daily classes and programs — at about half SOMA’s price.",
         "b": "Choose SOMA Breath if you want rhythmic music-paced breathwork with ceremony framing and access to a global certified-facilitator community.",
         "c": null
       },
@@ -20934,7 +20934,7 @@
         {
           "name": "Library size",
           "winner": "tie",
-          "note": "Breathwrk: 50+ exercises (100+ on Pro) plus daily classes and programs (official site and App Store, accessed 2026-10-11). SOMA: curated library of music-paced journeys. Both score 8.0."
+          "note": "Breathwrk: limited free access (100+ exercises on Pro) plus daily classes and programs (official site and App Store, accessed 2026-10-11). SOMA: curated library of music-paced journeys. Both score 8.0."
         },
         {
           "name": "Technique coverage",
@@ -21152,7 +21152,7 @@
         {
           "name": "Library size",
           "winner": "b",
-          "note": "Othership: 500+ on-demand sessions, curated around one music-driven style. Breathwrk: 50+ exercises (100+ on Pro) plus daily classes and programmes (official site and App Store, accessed 2026-10-11). WHM: structured rounds at varying levels — narrow by design."
+          "note": "Othership: 500+ on-demand sessions, curated around one music-driven style. Breathwrk: limited free access (100+ exercises on Pro) plus daily classes and programmes (official site and App Store, accessed 2026-10-11). WHM: structured rounds at varying levels — narrow by design."
         },
         {
           "name": "Technique coverage",
@@ -23640,6 +23640,54 @@
           "review": "honeywell-hpa300",
           "award": "Best budget large-room",
           "takeaway": "465 sq ft coverage at $249 — largest budget-tier coverage with Honeywell brand pedigree."
+        }
+      ]
+    },
+    {
+      "slug": "neurosity-crown-alternatives",
+      "title": "Neurosity Crown Alternatives (2026)",
+      "url": "https://onda-life.com/reviews/compare/neurosity-crown-alternatives",
+      "picks": [
+        {
+          "review": "muse-s-athena",
+          "award": "Best overall",
+          "takeaway": "EEG plus fNIRS in a soft sleep-friendly band — the deepest meditation content library, no subscription, about a third of the Crown’s price."
+        },
+        {
+          "review": "muse-2",
+          "award": "Best value entry",
+          "takeaway": "Real four-channel EEG meditation feedback for $249.99 — the cheapest serious step down from the Crown."
+        },
+        {
+          "review": "emotiv-insight-2",
+          "award": "Best research-consumer hybrid",
+          "takeaway": "The closest raw-data alternative: five-channel EEG and an academic toolchain, but raw data needs a ~$99/yr Pro subscription."
+        },
+        {
+          "review": "sens-ai",
+          "award": "Best multi-modal premium",
+          "takeaway": "Premium training that combines EEG, near-infrared light and HRV in one programme — similar price tier, plus a membership."
+        },
+        {
+          "review": "mendi",
+          "award": "Best for prefrontal training (fNIRS)",
+          "takeaway": "Not EEG: simple prefrontal-cortex training games via fNIRS, the easiest to learn."
+        },
+        {
+          "review": "focuscalm",
+          "award": "Best for content-driven focus",
+          "takeaway": "Single-channel EEG with a polished guided focus programme for $199."
+        },
+        {
+          "review": "neurosky-mindwave-mobile-2",
+          "award": "Best budget / developer entry",
+          "takeaway": "About $110 with an open SDK — the cheapest way for a developer to stream EEG, with one channel and older hardware."
+        },
+        {
+          "review": "neurosity-crown",
+          "award": "",
+          "takeaway": "Eight dry electrodes and raw EEG over JavaScript and Python (plus BrainFlow, LSL and OSC) with no subscription.",
+          "comparisonOnly": "For comparison: the headset these alternatives replace"
         }
       ]
     }

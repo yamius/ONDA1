@@ -11,7 +11,7 @@ const apolloNeuro: ToolReviewInput = {
   verdict:
     'The most wearable device in the category — vibrotactile, not electrical, with mounting clinical evidence on HRV and recovery.',
   summary:
-    'Apollo Neuro is a wrist or ankle worn band that uses low-frequency haptic vibration — not electrical stimulation — to modulate autonomic state and vagal tone. The mechanism is mechanoreceptor-mediated rather than direct vagal stimulation, which keeps it out of the strict tVNS category but firmly in the vagus-modulator conversation. Founder-led University of Pittsburgh research; comfortable enough to wear all day.',
+    'Apollo Neuro is a wrist or ankle worn band that uses low-frequency haptic vibration — not electrical stimulation — marketed to shift the nervous system toward calm. The mechanism is mechanoreceptor-mediated rather than direct vagal stimulation, which keeps it out of the strict tVNS category but firmly in the vagus-modulator conversation. Founder-led University of Pittsburgh research; comfortable enough to wear all day.',
   scores: [
     { criterionId: 'evidence', score: 6.0, note: 'Its published HRV / recovery trials come from the founding team, and studies run by the maker do not count as evidence in ONDA scores. Independent replication is still limited.' },
     { criterionId: 'mechanism', score: 6.5, note: 'Vibrotactile rather than electrical — aims to influence calm through touch receptors; the mechanism is proposed, not proven. Not tVNS in the strict sense; classified here as a vagal modulator.' },
@@ -59,7 +59,7 @@ The biology behind what these devices target — and the protocols that compound
 
 - [Vagus nerve exercises](/articles/vagus-nerve-exercises) — why the vagus nerve sits upstream of HRV, sleep, mood and inflammation
 - [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — the regulatory and mechanistic landscape behind non-invasive VNS
-- [ACC and coherence monitoring](/articles/anterior-cingulate-core-coherence-monitoring) — how vagal tone shapes attention and emotional regulation upstream
+- [ACC and coherence monitoring](/articles/anterior-cingulate-core-coherence-monitoring) — how attention and emotion regulation relate to vagally mediated HRV
 `,
   references: [
     { label: 'Apollo Neuro — official product page', url: 'https://apolloneuro.com/' },

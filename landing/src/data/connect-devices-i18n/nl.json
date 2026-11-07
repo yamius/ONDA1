@@ -196,7 +196,7 @@
         "De hulppagina’s van Google noemen HRV bij de nachtelijke metingen en noemen de onderdelen van Readiness, maar niet de HRV-formule, dus we geven die hier geen label.",
         "Welk label het ook heeft: vergelijk een nacht met je eigen gebruikelijke bereik over meerdere weken. Eén nacht hoger of lager zegt op zichzelf weinig."
       ],
-      "connect": "Google zegt dat de Google Health API op dit moment geen nieuwe projecten toelaat, en de oudere Fitbit Web API wordt op 2026-10-30 uitgeschakeld. Een directe koppeling is voor ons nu dus niet mogelijk.",
+      "connect": "Google zegt dat de Google Health API op dit moment geen nieuwe projecten toelaat, en de oudere Fitbit Web API wordt op 30 oktober 2026 uitgeschakeld. Een directe koppeling is voor ons nu dus niet mogelijk.",
       "appleHealth": "Volgens de eigen hulppagina van Google leest de Google Health-app HRV uit Apple Health, maar schrijft er geen HRV naartoe, dus je HRV van Fitbit of Pixel Watch komt op die manier niet in ONDA terecht. Als je apparaat geen Apple Watch is, kan ONDA je hartslag toch meten met de camera van je iPhone, samen met een schatting van je ademfrequentie. De camera geeft hartslag, geen HRV.",
       "faq": [
         {
