@@ -98,7 +98,8 @@
         "independent": [
           "Comparée à un ECG, la fréquence cardiaque WHOOP a montré une concordance acceptable. Pour le RMSSD log-transformé, le biais et les limites de concordance approchaient ou dépassaient le plus petit changement significatif de la mesure elle-même : les auteurs conseillent donc de la lire au regard de son propre niveau de précision. L’étude utilisait une ancienne génération de WHOOP, pas WHOOP 4.0 ni MG.",
           "Dans une comparaison de cinq objets connectés avec une référence ECG pendant le sommeil ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}), WHOOP 4.0 a eu une forte concordance avec l’ECG pour la HRV nocturne, en dessous d’Oura Gen 3 et Gen 4.",
-          "Concordance de WHOOP 4.0 avec l’ECG pour la HRV nocturne dans cette comparaison (coefficient de corrélation de concordance) : {{fact:study.dial2025.hrvCcc.whoop}}."
+          "Concordance de WHOOP 4.0 avec l’ECG pour la HRV nocturne dans cette comparaison (coefficient de corrélation de concordance) : {{fact:study.dial2025.hrvCcc.whoop}}.",
+          "Fréquence cardiaque, pas HRV : dans un protocole de laboratoire comparant cinq appareils au poignet à un ECG 12 dérivations, la WHOOP 4.0 était acceptable en état stable. La précision de tous les appareils au poignet baissait nettement lors des changements d’état, par exemple en se levant ou en se mettant en mouvement."
         ],
         "affiliated": [
           "Une étude de la variabilité d’un jour à l’autre de la HRV issue de WHOOP chez des athlètes (fiabilité, pas précision par rapport à un ECG), par un groupe de recherche soutenu par WHOOP."
@@ -133,7 +134,9 @@
         "composite": "Polar nomme les deux parties de Nightly Recharge : sleep charge (votre sommeil comparé à l’habituel) et ANS charge (HRV et fréquence respiratoire comparées à l’habituel). Polar ne publie ni la formule exacte ni les poids.",
         "independent": [
           "Dans une comparaison de cinq objets connectés avec une référence ECG pendant le sommeil ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}), la montre Polar Grit X Pro a eu la plus faible concordance avec l’ECG pour la HRV nocturne parmi les cinq appareils.",
-          "Concordance de la Polar Grit X Pro avec l’ECG pour la HRV nocturne dans cette comparaison (coefficient de corrélation de concordance) : {{fact:study.dial2025.hrvCcc.polar}}."
+          "Concordance de la Polar Grit X Pro avec l’ECG pour la HRV nocturne dans cette comparaison (coefficient de corrélation de concordance) : {{fact:study.dial2025.hrvCcc.polar}}.",
+          "Fréquence cardiaque, pas HRV : une étude indépendante a comparé le brassard Polar Verity Sense (porté au bras, à l’avant-bras ou au poignet) et la montre Vantage V2 à une ceinture thoracique Polar H10, de la position assise à l’effort intense.",
+          "Fréquence cardiaque, pas HRV : sur tapis de course à trois intensités, face à une ceinture thoracique Polar H10, le Polar Verity Sense était significativement plus précis que la montre Polar Pacer Pro."
         ],
         "independentNone": "Nous n’avons trouvé aucune étude indépendante qui vérifie à elle seule la HRV d’une montre Polar par rapport à un ECG. Les ceintures thoraciques Polar sont un autre appareil et ne sont pas traitées ici.",
         "affiliated": []
@@ -181,7 +184,8 @@
         "composite": "Garmin ne décrit Body Battery que par catégories : activité physique, stress, repos et sommeil. On ignore si la HRV y entre directement et quel est le poids de chaque partie : ce n’est pas communiqué.",
         "independent": [
           "Dans une comparaison de cinq objets connectés avec une référence ECG pendant le sommeil ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}), une Garmin Fenix 6 a eu une concordance avec l’ECG pour la HRV nocturne plus faible qu’Oura et WHOOP.",
-          "Concordance de la Garmin Fenix 6 avec l’ECG pour la HRV nocturne dans cette comparaison (coefficient de corrélation de concordance) : {{fact:study.dial2025.hrvCcc.garmin}}."
+          "Concordance de la Garmin Fenix 6 avec l’ECG pour la HRV nocturne dans cette comparaison (coefficient de corrélation de concordance) : {{fact:study.dial2025.hrvCcc.garmin}}.",
+          "Fréquence cardiaque, pas HRV : dans un protocole de laboratoire comparant cinq appareils au poignet à un ECG 12 dérivations, une Garmin Vivosmart 4 faisait partie des cinq appareils ; les deux modèles Fitbit étaient les plus précis en état stable. La précision de tous les appareils au poignet baissait nettement lors des changements d’état, par exemple en se levant ou en se mettant en mouvement."
         ],
         "independentNone": "Nous n’avons trouvé aucune étude indépendante qui vérifie le HRV Status de Garmin lui-même par rapport à un ECG.",
         "affiliated": []
@@ -209,7 +213,8 @@
         "composite": "Google nomme trois composantes de Readiness : la HRV, le sommeil récent et la fréquence cardiaque au repos. Il ne publie pas le poids de chacune.",
         "independent": [
           "Dans une petite étude pilote, la HRV nocturne de la Fitbit Versa 4 a montré une forte corrélation et une concordance acceptable avec une référence basée sur l’ECG.",
-          "Il s’agissait d’une étude pilote avec {{fact:study.nasr2025.participants}}."
+          "Il s’agissait d’une étude pilote avec {{fact:study.nasr2025.participants}}.",
+          "Fréquence cardiaque, pas HRV : dans un protocole de laboratoire comparant cinq appareils au poignet à un ECG 12 dérivations, les Fitbit Charge 5 et Sense 2 étaient les plus précis en état stable. La précision de tous les appareils au poignet baissait nettement lors des changements d’état, par exemple en se levant ou en se mettant en mouvement."
         ],
         "affiliated": [
           "Une étude financée par Google sur la Pixel Watch 3 a vérifié la fréquence cardiaque, pas la HRV.",
@@ -238,7 +243,8 @@
         "hrvSummary": "Les pages d’aide de Samsung ne nomment ni la mesure de HRV ni la fenêtre de temps. La page sommeil de la Galaxy Ring liste la fréquence cardiaque, l’oxygène sanguin et la température cutanée, sans la HRV.",
         "composite": "Samsung ne décrit Energy Score que dans un article de sa salle de presse, pas sur une page d’aide, et seulement par catégories (sommeil, activité, etc.). On ignore si la HRV en est une composante, et les poids ne sont pas communiqués.",
         "independent": [
-          "Sur une journée et une nuit complètes en conditions de vie réelle, comparée à un ECG, une ancienne montre connectée Samsung (Gear Sport) a donné une fréquence cardiaque et une HRV temporelle acceptables pendant le sommeil ; à l’état éveillé, la plupart des mesures de HRV présentaient des erreurs élevées. Les modèles actuels Galaxy Watch et Galaxy Ring n’ont pas été testés."
+          "Sur une journée et une nuit complètes en conditions de vie réelle, comparée à un ECG, une ancienne montre connectée Samsung (Gear Sport) a donné une fréquence cardiaque et une HRV temporelle acceptables pendant le sommeil ; à l’état éveillé, la plupart des mesures de HRV présentaient des erreurs élevées. Les modèles actuels Galaxy Watch et Galaxy Ring n’ont pas été testés.",
+          "Fréquence cardiaque, pas HRV : sur tapis de course à trois intensités, face à une ceinture thoracique Polar H10, la Galaxy Watch 6 était significativement moins précise que l’Apple Watch SE et le Polar Verity Sense."
         ],
         "affiliated": []
       }
@@ -263,7 +269,9 @@
       "det": {
         "hrvSummary": "Withings indique que la HRV est mesurée pendant le sommeil et donnée en millisecondes, mais sa page d’aide ne nomme pas la formule : nous notons donc la mesure comme non communiquée.",
         "composite": "Nous n’avons trouvé aucun score composite de type readiness sur les pages d’aide de Withings : l’app Withings affiche les mesures individuelles.",
-        "independent": [],
+        "independent": [
+          "Fréquence cardiaque, pas HRV : dans un protocole de laboratoire comparant cinq appareils au poignet à un ECG 12 dérivations, la Withings ScanWatch était acceptable en état stable. La précision de tous les appareils au poignet baissait nettement lors des changements d’état, par exemple en se levant ou en se mettant en mouvement."
+        ],
         "independentNone": "Nous n’avons trouvé aucune étude indépendante qui vérifie la HRV Withings par rapport à un ECG.",
         "affiliated": []
       }
@@ -356,7 +364,8 @@
         "composite": "L’Apple Watch n’a pas de score unique de type readiness construit à partir de la HRV : il n’y a donc pas de poids à communiquer.",
         "independent": [
           "Comparée à un ECG de laboratoire au repos, une Apple Watch Series 6 a montré une concordance modérée pour les intervalles entre battements utilisés pour calculer la HRV. Recovery HRV sur les modèles plus récents n’a pas été vérifiée de façon indépendante.",
-          "Pour l’Apple Watch Series 6 au repos, en laboratoire ({{fact:study.bonneval2025.participants}}), l’erreur absolue moyenne en pourcentage pour ces intervalles était de {{fact:study.bonneval2025.mapeRest}}."
+          "Pour l’Apple Watch Series 6 au repos, en laboratoire ({{fact:study.bonneval2025.participants}}), l’erreur absolue moyenne en pourcentage pour ces intervalles était de {{fact:study.bonneval2025.mapeRest}}.",
+          "Fréquence cardiaque, pas HRV : sur tapis de course à trois intensités, face à une ceinture thoracique Polar H10, l’Apple Watch SE était significativement plus précise que la Galaxy Watch 6 et la Polar Pacer Pro."
         ],
         "affiliated": []
       }

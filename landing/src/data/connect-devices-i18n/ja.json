@@ -98,7 +98,8 @@
         "independent": [
           "ECG（心電図）と比べたところ、WHOOP の心拍数は許容できる一致を示しました。対数変換した RMSSD では、バイアスと一致限界がその指標自体の最小有意変化に近いか、それを上回ったため、著者らはその精度の水準を踏まえて読むよう勧めています。研究で使われたのは旧世代の WHOOP で、WHOOP 4.0 や MG ではありません。",
           "睡眠中に5種類のウェアラブルを ECG の基準と比べた研究（{{fact:study.dial2025.participants}}、{{fact:study.dial2025.nights}}）では、WHOOP 4.0 は夜間の HRV で ECG との一致度が高く、Oura Gen 3 と Gen 4 に次ぐ結果でした。",
-          "この比較における夜間 HRV の WHOOP 4.0 と ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.whoop}}。"
+          "この比較における夜間 HRV の WHOOP 4.0 と ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.whoop}}。",
+          "HRVではなく心拍数：手首装着型ウェアラブル5機種を12誘導心電図と比べた実験室プロトコルで、安定状態でのWHOOP 4.0は許容できる精度でした。状態が変わるとき（立ち上がる、動き始めるなど）には、すべての手首装着型デバイスで精度がはっきり低下しました。"
         ],
         "affiliated": [
           "アスリートにおける WHOOP 由来の HRV の日ごとの変動を調べた研究（ECG に対する正確さではなく、再現性の研究）。WHOOP の支援を受けた研究グループによるものです。"
@@ -133,7 +134,9 @@
         "composite": "Polar は Nightly Recharge の2つの部分として、sleep charge（いつもと比べた睡眠）と ANS charge（いつもと比べた HRV と呼吸数）を挙げています。正確な計算式や重みは公開していません。",
         "independent": [
           "睡眠中に5種類のウェアラブルを ECG（心電図）の基準と比べた研究（{{fact:study.dial2025.participants}}、{{fact:study.dial2025.nights}}）では、Polar Grit X Pro ウォッチが、5つのデバイスのうち夜間の HRV で ECG との一致度が最も低くなりました。",
-          "この比較における夜間 HRV の Polar Grit X Pro と ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.polar}}。"
+          "この比較における夜間 HRV の Polar Grit X Pro と ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.polar}}。",
+          "HRVではなく心拍数：独立した研究が、Polar Verity Senseアームバンド（上腕・前腕・手首に装着）とVantage V2ウォッチを、座った安静状態から激しい運動まで、Polar H10胸ストラップと比較しました。",
+          "HRVではなく心拍数：トレッドミルで3段階の運動強度において、Polar H10胸ストラップと比べると、Polar Verity SenseはPolar Pacer Proウォッチより有意に正確でした。"
         ],
         "independentNone": "Polar のウォッチの HRV を単独で ECG と比べた独立した研究は見つかりませんでした。Polar の胸ストラップは別のデバイスであり、ここでは扱っていません。",
         "affiliated": []
@@ -181,7 +184,8 @@
         "composite": "Garmin は Body Battery を、身体活動、ストレス、休息、睡眠というカテゴリーでしか説明していません。HRV が直接入力されているかどうか、各部分の重みは公開されていません。",
         "independent": [
           "睡眠中に5種類のウェアラブルを ECG（心電図）の基準と比べた研究（{{fact:study.dial2025.participants}}、{{fact:study.dial2025.nights}}）では、Garmin Fenix 6 の夜間 HRV の ECG との一致度は、Oura や WHOOP より低くなりました。",
-          "この比較における夜間 HRV の Garmin Fenix 6 と ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.garmin}}。"
+          "この比較における夜間 HRV の Garmin Fenix 6 と ECG との一致度（一致相関係数）：{{fact:study.dial2025.hrvCcc.garmin}}。",
+          "HRVではなく心拍数：手首装着型ウェアラブル5機種を12誘導心電図と比べた実験室プロトコルで、Garmin Vivosmart 4は5機種のうちの1つで、安定状態で最も正確だったのはFitbitの2機種でした。状態が変わるとき（立ち上がる、動き始めるなど）には、すべての手首装着型デバイスで精度がはっきり低下しました。"
         ],
         "independentNone": "Garmin の HRV Status そのものを ECG と比べた独立した研究は見つかりませんでした。",
         "affiliated": []
@@ -209,7 +213,8 @@
         "composite": "Google は Readiness の要素として、HRV、最近の睡眠、安静時心拍数の3つを挙げています。各要素の重みは公開していません。",
         "independent": [
           "小規模なパイロット研究では、Fitbit Versa 4 の夜間 HRV は、ECG（心電図）に基づく基準と強い相関と許容できる一致を示しました。",
-          "これは {{fact:study.nasr2025.participants}} を対象としたパイロット研究でした。"
+          "これは {{fact:study.nasr2025.participants}} を対象としたパイロット研究でした。",
+          "HRVではなく心拍数：手首装着型ウェアラブル5機種を12誘導心電図と比べた実験室プロトコルで、安定状態ではFitbit Charge 5とSense 2が最も正確でした。状態が変わるとき（立ち上がる、動き始めるなど）には、すべての手首装着型デバイスで精度がはっきり低下しました。"
         ],
         "affiliated": [
           "Google が資金提供した Pixel Watch 3 の研究は、HRV ではなく心拍数を検証したものです。",
@@ -238,7 +243,8 @@
         "hrvSummary": "Samsung のヘルプページは HRV の指標も時間帯も明記していません。Galaxy Ring の睡眠のページには心拍数、血中酸素、皮膚温が載っていますが、HRV はありません。",
         "composite": "Samsung は Energy Score を、ヘルプページではなくニュースルームの記事でしか説明しておらず、それもカテゴリー（睡眠、活動など）だけです。HRV が要素かどうか、重みは公開されていません。",
         "independent": [
-          "日常生活の丸一日（昼と夜）にわたって ECG（心電図）と比べたところ、旧型の Samsung スマートウォッチ（Gear Sport）は、睡眠中の心拍数と時間領域の HRV で許容できる結果を示しました。起きている間は、ほとんどの HRV 指標で誤差が大きくなりました。現行の Galaxy Watch と Galaxy Ring のモデルは検証されていません。"
+          "日常生活の丸一日（昼と夜）にわたって ECG（心電図）と比べたところ、旧型の Samsung スマートウォッチ（Gear Sport）は、睡眠中の心拍数と時間領域の HRV で許容できる結果を示しました。起きている間は、ほとんどの HRV 指標で誤差が大きくなりました。現行の Galaxy Watch と Galaxy Ring のモデルは検証されていません。",
+          "HRVではなく心拍数：トレッドミルで3段階の運動強度において、Polar H10胸ストラップと比べると、Galaxy Watch 6はApple Watch SEやPolar Verity Senseより有意に精度が低いものでした。"
         ],
         "affiliated": []
       }
@@ -263,7 +269,9 @@
       "det": {
         "hrvSummary": "Withings は、HRV は睡眠中に測定され、ミリ秒単位で示されるとしていますが、ヘルプページは計算式を明記していないため、指標は「非公開」として記録しています。",
         "composite": "Withings のヘルプページに、総合的なレディネススコアは見つかりませんでした。Withings アプリは個々の測定値を表示します。",
-        "independent": [],
+        "independent": [
+          "HRVではなく心拍数：手首装着型ウェアラブル5機種を12誘導心電図と比べた実験室プロトコルで、安定状態でのWithings ScanWatchは許容できる精度でした。状態が変わるとき（立ち上がる、動き始めるなど）には、すべての手首装着型デバイスで精度がはっきり低下しました。"
+        ],
         "independentNone": "Withings の HRV を ECG（心電図）と比べた独立した研究は見つかりませんでした。",
         "affiliated": []
       }
@@ -356,7 +364,8 @@
         "composite": "Apple Watch には HRV から作られるレディネス型の単一スコアがないため、公開すべき重みはありません。",
         "independent": [
           "安静時に検査室の ECG（心電図）と比べたところ、Apple Watch Series 6 は、HRV の計算に使われる心拍間の間隔で中程度の一致を示しました。新しいモデルの Recovery HRV は独立して検証されていません。",
-          "安静時の Apple Watch Series 6 について、ラボでの測定（{{fact:study.bonneval2025.participants}}）では、これらの間隔の平均絶対パーセント誤差は {{fact:study.bonneval2025.mapeRest}} でした。"
+          "安静時の Apple Watch Series 6 について、ラボでの測定（{{fact:study.bonneval2025.participants}}）では、これらの間隔の平均絶対パーセント誤差は {{fact:study.bonneval2025.mapeRest}} でした。",
+          "HRVではなく心拍数：トレッドミルで3段階の運動強度において、Polar H10胸ストラップと比べると、Apple Watch SEはGalaxy Watch 6やPolar Pacer Proより有意に正確でした。"
         ],
         "affiliated": []
       }

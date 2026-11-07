@@ -1626,7 +1626,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-11-05T21:22:30+01:00"
+    "modified": "2026-11-07T14:03:55+01:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1734,11 +1734,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/connect": {
     "published": "2026-10-11T01:10:33+02:00",
-    "modified": "2026-11-06T17:39:34+01:00"
+    "modified": "2026-11-07T14:03:55+01:00"
   },
   "page:/connect/:device": {
     "published": "2026-10-11T01:10:33+02:00",
-    "modified": "2026-11-06T17:39:34+01:00"
+    "modified": "2026-11-07T14:03:55+01:00"
   },
   "page:/hrv-vs-coherence": {
     "published": "2026-09-07T20:12:03+02:00",
@@ -1750,7 +1750,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/compare": {
     "published": "2026-09-06T18:55:14+02:00",
-    "modified": "2026-10-13T00:05:20+02:00"
+    "modified": "2026-11-07T14:23:01+01:00"
   },
   "page:/tools": {
     "published": "2026-06-03T18:28:47+02:00",
@@ -1766,11 +1766,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/compare/:slug": {
     "published": "2026-09-06T18:55:14+02:00",
-    "modified": "2026-10-13T00:05:20+02:00"
+    "modified": "2026-11-07T14:23:01+01:00"
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-11-05T21:22:30+01:00"
+    "modified": "2026-11-07T14:23:01+01:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

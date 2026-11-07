@@ -4944,6 +4944,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-07"
   },
+  "doi:10.1038/s41598-024-64254-7": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of brief remote high ventilation breathwork with retention on mental health and wellbeing: a randomised placebo-controlled trial",
+   "firstAuthor": "Fincham",
+   "authors": [
+    "Fincham",
+    "Epel",
+    "Colasanti",
+    "Strauss",
+    "Cavanagh"
+   ],
+   "year": 2024,
+   "journal": "Scientific Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-11-07"
+  },
   "doi:10.1038/s41598-025-24704-2": {
    "kind": "doi",
    "valid": true,
@@ -10080,6 +10097,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-11"
   },
+  "doi:10.20463/pan.2026.0032": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Comparison of heart rate measurement accuracy among commercially available photoplethysmography-based wearable devices across exercise intensities",
+   "firstAuthor": "Jeong",
+   "authors": [
+    "Jeong",
+    "Yoon",
+    "Lee",
+    "Jeong",
+    "Ha"
+   ],
+   "year": 2026,
+   "journal": "Physical Activity and Nutrition",
+   "source": "crossref",
+   "verifiedAt": "2026-11-07"
+  },
   "doi:10.2147/jpr.s231778": {
    "kind": "doi",
    "valid": true,
@@ -10189,6 +10223,20 @@
    "journal": "Journal of Medical Internet Research",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.2196/67110": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Wrist-Worn and Arm-Worn Wearables for Monitoring Heart Rate During Sedentary and Light-to-Vigorous Physical Activities: Device Validation Study",
+   "firstAuthor": "Schweizer",
+   "authors": [
+    "Schweizer",
+    "Gilgen-Ammann"
+   ],
+   "year": 2025,
+   "journal": "JMIR Cardio",
+   "source": "crossref",
+   "verifiedAt": "2026-11-07"
   },
   "doi:10.2196/80450": {
    "kind": "doi",
@@ -11750,6 +11798,29 @@
    "journal": "Sensors",
    "source": "crossref",
    "verifiedAt": "2026-10-11"
+  },
+  "doi:10.3390/s25206319": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Accuracy of Heart Rate Measurement Under Transient States: A Validation Study of Wearables for Real-Life Monitoring",
+   "firstAuthor": "Van Oost",
+   "authors": [
+    "Van Oost",
+    "Masci",
+    "Malisse",
+    "Schyvens",
+    "Peters",
+    "Dirix",
+    "Ross",
+    "Wets",
+    "Neven",
+    "Verbraecken",
+    "Aerts"
+   ],
+   "year": 2025,
+   "journal": "Sensors",
+   "source": "crossref",
+   "verifiedAt": "2026-11-07"
   },
   "doi:10.3390/s26010003": {
    "kind": "doi",

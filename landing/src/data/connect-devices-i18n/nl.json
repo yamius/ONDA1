@@ -98,7 +98,8 @@
         "independent": [
           "Vergeleken met een ECG toonde de hartslag van WHOOP een aanvaardbare overeenstemming. Voor log-getransformeerde RMSSD naderden of overschreden de bias en de grenzen van overeenstemming de kleinste zinvolle verandering van de maat zelf, dus de auteurs raden aan het te lezen tegen de eigen precisie. De studie gebruikte een oudere generatie WHOOP, niet WHOOP 4.0 of MG.",
           "In een vergelijking van vijf wearables met een ECG-referentie tijdens de slaap ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}) had WHOOP 4.0 een hoge overeenstemming met ECG voor nachtelijke HRV, lager dan Oura Gen 3 en Gen 4.",
-          "Overeenstemming van WHOOP 4.0 met ECG voor nachtelijke HRV in die vergelijking (concordantiecorrelatiecoëfficiënt): {{fact:study.dial2025.hrvCcc.whoop}}."
+          "Overeenstemming van WHOOP 4.0 met ECG voor nachtelijke HRV in die vergelijking (concordantiecorrelatiecoëfficiënt): {{fact:study.dial2025.hrvCcc.whoop}}.",
+          "Hartslag, niet HRV: in een labprotocol dat vijf polsapparaten vergeleek met een 12-kanaals ecg, was WHOOP 4.0 in rust acceptabel. Bij veranderingen van toestand, zoals opstaan of gaan bewegen, daalde de nauwkeurigheid van alle polsapparaten duidelijk."
         ],
         "affiliated": [
           "Een studie naar de variatie van dag tot dag in door WHOOP afgeleide HRV bij sporters (betrouwbaarheid, geen nauwkeurigheid tegenover ECG), van een onderzoeksgroep die door WHOOP wordt ondersteund."
@@ -133,7 +134,9 @@
         "composite": "Polar noemt de twee onderdelen van Nightly Recharge: sleep charge (je slaap vergeleken met wat gebruikelijk is voor jou) en ANS charge (HRV en ademfrequentie vergeleken met wat gebruikelijk is voor jou). Polar publiceert de exacte formule of gewichten niet.",
         "independent": [
           "In een vergelijking van vijf wearables met een ECG-referentie tijdens de slaap ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}) had het Polar Grit X Pro-horloge van de vijf apparaten de laagste overeenstemming met ECG voor nachtelijke HRV.",
-          "Overeenstemming van de Polar Grit X Pro met ECG voor nachtelijke HRV in die vergelijking (concordantiecorrelatiecoëfficiënt): {{fact:study.dial2025.hrvCcc.polar}}."
+          "Overeenstemming van de Polar Grit X Pro met ECG voor nachtelijke HRV in die vergelijking (concordantiecorrelatiecoëfficiënt): {{fact:study.dial2025.hrvCcc.polar}}.",
+          "Hartslag, niet HRV: een onafhankelijke studie vergeleek de Polar Verity Sense-band (aan bovenarm, onderarm of pols) en het Vantage V2-horloge met een Polar H10-borstband, van stilzitten tot intensieve inspanning.",
+          "Hartslag, niet HRV: op een loopband bij drie inspanningsniveaus, vergeleken met een Polar H10-borstband, was de Polar Verity Sense significant nauwkeuriger dan het Polar Pacer Pro-horloge."
         ],
         "independentNone": "We vonden geen onafhankelijke studie die HRV van een Polar-horloge op zichzelf tegen een ECG toetst. De borstbanden van Polar zijn een ander apparaat en vallen hier niet onder.",
         "affiliated": []
@@ -181,7 +184,8 @@
         "composite": "Garmin beschrijft Body Battery alleen in categorieën: lichamelijke activiteit, stress, rust en slaap. Of HRV er direct in meetelt, en hoe zwaar elk deel weegt, is niet bekendgemaakt.",
         "independent": [
           "In een vergelijking van vijf wearables met een ECG-referentie tijdens de slaap ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}) had een Garmin Fenix 6 een lagere overeenstemming met ECG voor nachtelijke HRV dan Oura en WHOOP.",
-          "Overeenstemming van de Garmin Fenix 6 met ECG voor nachtelijke HRV in die vergelijking (concordantiecorrelatiecoëfficiënt): {{fact:study.dial2025.hrvCcc.garmin}}."
+          "Overeenstemming van de Garmin Fenix 6 met ECG voor nachtelijke HRV in die vergelijking (concordantiecorrelatiecoëfficiënt): {{fact:study.dial2025.hrvCcc.garmin}}.",
+          "Hartslag, niet HRV: in een labprotocol dat vijf polsapparaten vergeleek met een 12-kanaals ecg, was een Garmin Vivosmart 4 een van de vijf apparaten; de twee Fitbit-modellen waren in rust het nauwkeurigst. Bij veranderingen van toestand, zoals opstaan of gaan bewegen, daalde de nauwkeurigheid van alle polsapparaten duidelijk."
         ],
         "independentNone": "We vonden geen onafhankelijke studie die Garmin HRV Status zelf tegen een ECG toetst.",
         "affiliated": []
@@ -209,7 +213,8 @@
         "composite": "Google noemt drie onderdelen van Readiness: HRV, recente slaap en hartslag in rust. Het publiceert niet hoe zwaar elk onderdeel meetelt.",
         "independent": [
           "In een kleine pilotstudie toonde de nachtelijke HRV van de Fitbit Versa 4 een sterke correlatie en aanvaardbare overeenstemming met een referentie op basis van ECG.",
-          "Het was een pilotstudie met {{fact:study.nasr2025.participants}}."
+          "Het was een pilotstudie met {{fact:study.nasr2025.participants}}.",
+          "Hartslag, niet HRV: in een labprotocol dat vijf polsapparaten vergeleek met een 12-kanaals ecg, waren de Fitbit Charge 5 en Sense 2 in rust het nauwkeurigst. Bij veranderingen van toestand, zoals opstaan of gaan bewegen, daalde de nauwkeurigheid van alle polsapparaten duidelijk."
         ],
         "affiliated": [
           "Een door Google gefinancierde studie van de Pixel Watch 3 controleerde hartslag, niet HRV.",
@@ -238,7 +243,8 @@
         "hrvSummary": "De hulppagina’s van Samsung noemen de HRV-maat of het tijdvenster niet. De slaappagina van Galaxy Ring noemt hartslag, zuurstof in het bloed en huidtemperatuur, zonder HRV.",
         "composite": "Samsung beschrijft Energy Score alleen in een nieuwsartikel, niet op een hulppagina, en alleen in categorieën (slaap, activiteit en dergelijke). Of HRV een onderdeel is, en de gewichten, zijn niet bekendgemaakt.",
         "independent": [
-          "Over een volledige dag en nacht in het dagelijks leven, vergeleken met een ECG, gaf een oudere smartwatch van Samsung (Gear Sport) een aanvaardbare hartslag en HRV in het tijdsdomein tijdens de slaap; in wakkere toestand hadden de meeste HRV-maten grote fouten. Huidige modellen van Galaxy Watch en Galaxy Ring zijn niet getest."
+          "Over een volledige dag en nacht in het dagelijks leven, vergeleken met een ECG, gaf een oudere smartwatch van Samsung (Gear Sport) een aanvaardbare hartslag en HRV in het tijdsdomein tijdens de slaap; in wakkere toestand hadden de meeste HRV-maten grote fouten. Huidige modellen van Galaxy Watch en Galaxy Ring zijn niet getest.",
+          "Hartslag, niet HRV: op een loopband bij drie inspanningsniveaus, vergeleken met een Polar H10-borstband, was de Galaxy Watch 6 significant minder nauwkeurig dan de Apple Watch SE en de Polar Verity Sense."
         ],
         "affiliated": []
       }
@@ -263,7 +269,9 @@
       "det": {
         "hrvSummary": "Withings zegt dat HRV tijdens de slaap wordt gemeten en in milliseconden wordt gegeven, maar de hulppagina noemt de formule niet, dus we noteren de maat als niet bekendgemaakt.",
         "composite": "We vonden op de hulppagina’s van Withings geen gecombineerde readiness-score: de Withings-app toont de afzonderlijke metingen.",
-        "independent": [],
+        "independent": [
+          "Hartslag, niet HRV: in een labprotocol dat vijf polsapparaten vergeleek met een 12-kanaals ecg, was de Withings ScanWatch in rust acceptabel. Bij veranderingen van toestand, zoals opstaan of gaan bewegen, daalde de nauwkeurigheid van alle polsapparaten duidelijk."
+        ],
         "independentNone": "We vonden geen onafhankelijke studie die HRV van Withings tegen een ECG toetst.",
         "affiliated": []
       }
@@ -356,7 +364,8 @@
         "composite": "Apple Watch heeft geen afzonderlijke readiness-achtige score op basis van HRV, dus er zijn geen gewichten om bekend te maken.",
         "independent": [
           "Vergeleken met een laboratorium-ECG in rust toonde een Apple Watch Series 6 matige overeenstemming voor de intervallen tussen hartslagen waarmee HRV wordt berekend. Recovery HRV op nieuwere modellen is niet onafhankelijk gecontroleerd.",
-          "Voor de Apple Watch Series 6 in rust, in het lab ({{fact:study.bonneval2025.participants}}), was de gemiddelde absolute procentuele fout voor die intervallen {{fact:study.bonneval2025.mapeRest}}."
+          "Voor de Apple Watch Series 6 in rust, in het lab ({{fact:study.bonneval2025.participants}}), was de gemiddelde absolute procentuele fout voor die intervallen {{fact:study.bonneval2025.mapeRest}}.",
+          "Hartslag, niet HRV: op een loopband bij drie inspanningsniveaus, vergeleken met een Polar H10-borstband, was de Apple Watch SE significant nauwkeuriger dan de Galaxy Watch 6 en de Polar Pacer Pro."
         ],
         "affiliated": []
       }

@@ -98,7 +98,8 @@
         "independent": [
           "W porównaniu z EKG tętno z WHOOP wykazało akceptowalną zgodność. Dla zlogarytmowanego RMSSD błąd systematyczny i granice zgodności zbliżały się do najmniejszej istotnej zmiany tej metryki lub ją przekraczały, więc autorzy zalecają odczytywać ją z uwzględnieniem jej własnej precyzji. W badaniu użyto starszej generacji WHOOP, nie WHOOP 4.0 ani MG.",
           "W porównaniu pięciu urządzeń noszonych z referencyjnym EKG podczas snu ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}) WHOOP 4.0 miał wysoką zgodność z EKG dla nocnego HRV, niższą niż Oura Gen 3 i Gen 4.",
-          "Zgodność WHOOP 4.0 z EKG dla nocnego HRV w tym porównaniu (współczynnik korelacji zgodności): {{fact:study.dial2025.hrvCcc.whoop}}."
+          "Zgodność WHOOP 4.0 z EKG dla nocnego HRV w tym porównaniu (współczynnik korelacji zgodności): {{fact:study.dial2025.hrvCcc.whoop}}.",
+          "Tętno, nie HRV: w protokole laboratoryjnym porównującym pięć urządzeń na nadgarstek z 12-odprowadzeniowym EKG WHOOP 4.0 był akceptowalny w stanie stabilnym. Przy zmianach stanu, np. przy wstawaniu lub rozpoczęciu ruchu, dokładność wszystkich urządzeń na nadgarstek wyraźnie spadała."
         ],
         "affiliated": [
           "Badanie zmienności z dnia na dzień HRV z WHOOP u sportowców (powtarzalność, nie dokładność względem EKG), prowadzone przez grupę badawczą wspieraną przez WHOOP."
@@ -133,7 +134,9 @@
         "composite": "Polar wymienia dwie części Nightly Recharge: sleep charge (Twój sen w porównaniu ze zwykłym) i ANS charge (HRV i częstość oddechu w porównaniu ze zwykłymi). Polar nie publikuje dokładnego wzoru ani wag.",
         "independent": [
           "W porównaniu pięciu urządzeń noszonych z referencyjnym EKG podczas snu ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}) zegarek Polar Grit X Pro miał spośród pięciu urządzeń najniższą zgodność z EKG dla nocnego HRV.",
-          "Zgodność Polar Grit X Pro z EKG dla nocnego HRV w tym porównaniu (współczynnik korelacji zgodności): {{fact:study.dial2025.hrvCcc.polar}}."
+          "Zgodność Polar Grit X Pro z EKG dla nocnego HRV w tym porównaniu (współczynnik korelacji zgodności): {{fact:study.dial2025.hrvCcc.polar}}.",
+          "Tętno, nie HRV: niezależne badanie porównało opaskę Polar Verity Sense (na ramieniu, przedramieniu lub nadgarstku) i zegarek Vantage V2 z pasem piersiowym Polar H10, od siedzenia w spoczynku po intensywny wysiłek.",
+          "Tętno, nie HRV: na bieżni przy trzech intensywnościach wysiłku, w porównaniu z pasem piersiowym Polar H10, Polar Verity Sense był istotnie dokładniejszy niż zegarek Polar Pacer Pro."
         ],
         "independentNone": "Nie znaleźliśmy niezależnego badania, które sprawdzałoby osobno HRV z zegarka Polar względem EKG. Pasy piersiowe Polar to inne urządzenie i nie są tu omawiane.",
         "affiliated": []
@@ -181,7 +184,8 @@
         "composite": "Garmin opisuje Body Battery tylko w kategoriach: aktywność fizyczna, stres, odpoczynek i sen. Czy HRV wchodzi w niego bezpośrednio i jaką wagę ma każda część, nie jest ujawnione.",
         "independent": [
           "W porównaniu pięciu urządzeń noszonych z referencyjnym EKG podczas snu ({{fact:study.dial2025.participants}}, {{fact:study.dial2025.nights}}) Garmin Fenix 6 miał niższą zgodność z EKG dla nocnego HRV niż Oura i WHOOP.",
-          "Zgodność Garmin Fenix 6 z EKG dla nocnego HRV w tym porównaniu (współczynnik korelacji zgodności): {{fact:study.dial2025.hrvCcc.garmin}}."
+          "Zgodność Garmin Fenix 6 z EKG dla nocnego HRV w tym porównaniu (współczynnik korelacji zgodności): {{fact:study.dial2025.hrvCcc.garmin}}.",
+          "Tętno, nie HRV: w protokole laboratoryjnym porównującym pięć urządzeń na nadgarstek z 12-odprowadzeniowym EKG Garmin Vivosmart 4 był jednym z pięciu urządzeń; najdokładniejsze w stanie stabilnym były dwa modele Fitbit. Przy zmianach stanu, np. przy wstawaniu lub rozpoczęciu ruchu, dokładność wszystkich urządzeń na nadgarstek wyraźnie spadała."
         ],
         "independentNone": "Nie znaleźliśmy niezależnego badania, które sprawdzałoby sam Garmin HRV Status względem EKG.",
         "affiliated": []
@@ -209,7 +213,8 @@
         "composite": "Google wymienia trzy składowe Readiness: HRV, ostatni sen i tętno spoczynkowe. Nie publikuje, jaką wagę ma każda z nich.",
         "independent": [
           "W małym badaniu pilotażowym nocne HRV z Fitbit Versa 4 wykazało silną korelację i akceptowalną zgodność z referencją opartą na EKG.",
-          "Było to badanie pilotażowe z udziałem {{fact:study.nasr2025.participants}}."
+          "Było to badanie pilotażowe z udziałem {{fact:study.nasr2025.participants}}.",
+          "Tętno, nie HRV: w protokole laboratoryjnym porównującym pięć urządzeń na nadgarstek z 12-odprowadzeniowym EKG Fitbit Charge 5 i Sense 2 były najdokładniejsze w stanie stabilnym. Przy zmianach stanu, np. przy wstawaniu lub rozpoczęciu ruchu, dokładność wszystkich urządzeń na nadgarstek wyraźnie spadała."
         ],
         "affiliated": [
           "Badanie Pixel Watch 3 finansowane przez Google sprawdzało tętno, nie HRV.",
@@ -238,7 +243,8 @@
         "hrvSummary": "Strony pomocy Samsung nie podają metryki HRV ani przedziału czasu. Strona o śnie Galaxy Ring wymienia tętno, natlenienie krwi i temperaturę skóry, bez HRV.",
         "composite": "Samsung opisuje Energy Score tylko w artykule prasowym, nie na stronie pomocy, i tylko w kategoriach (sen, aktywność i podobne). Czy HRV jest składową oraz jakie są wagi, nie jest ujawnione.",
         "independent": [
-          "W ciągu pełnego dnia i nocy w warunkach codziennych, w porównaniu z EKG, starszy smartwatch Samsung (Gear Sport) dawał akceptowalne tętno i HRV w dziedzinie czasu podczas snu; w czasie czuwania większość miar HRV miała duże błędy. Obecnych modeli Galaxy Watch i Galaxy Ring nie testowano."
+          "W ciągu pełnego dnia i nocy w warunkach codziennych, w porównaniu z EKG, starszy smartwatch Samsung (Gear Sport) dawał akceptowalne tętno i HRV w dziedzinie czasu podczas snu; w czasie czuwania większość miar HRV miała duże błędy. Obecnych modeli Galaxy Watch i Galaxy Ring nie testowano.",
+          "Tętno, nie HRV: na bieżni przy trzech intensywnościach wysiłku, w porównaniu z pasem piersiowym Polar H10, Galaxy Watch 6 był istotnie mniej dokładny niż Apple Watch SE i Polar Verity Sense."
         ],
         "affiliated": []
       }
@@ -263,7 +269,9 @@
       "det": {
         "hrvSummary": "Withings podaje, że HRV jest mierzone podczas snu i podawane w milisekundach, ale strona pomocy nie podaje wzoru, więc zapisujemy metrykę jako nieujawnioną.",
         "composite": "Na stronach pomocy Withings nie znaleźliśmy łącznego wyniku gotowości: aplikacja Withings pokazuje poszczególne pomiary.",
-        "independent": [],
+        "independent": [
+          "Tętno, nie HRV: w protokole laboratoryjnym porównującym pięć urządzeń na nadgarstek z 12-odprowadzeniowym EKG Withings ScanWatch był akceptowalny w stanie stabilnym. Przy zmianach stanu, np. przy wstawaniu lub rozpoczęciu ruchu, dokładność wszystkich urządzeń na nadgarstek wyraźnie spadała."
+        ],
         "independentNone": "Nie znaleźliśmy niezależnego badania, które sprawdzałoby HRV z Withings względem EKG.",
         "affiliated": []
       }
@@ -356,7 +364,8 @@
         "composite": "Apple Watch nie ma jednego wyniku gotowości opartego na HRV, więc nie ma wag do ujawnienia.",
         "independent": [
           "W porównaniu z laboratoryjnym EKG w spoczynku Apple Watch Series 6 wykazał umiarkowaną zgodność dla odstępów między uderzeniami serca, z których liczy się HRV. Recovery HRV w nowszych modelach nie zostało sprawdzone niezależnie.",
-          "Dla Apple Watch Series 6 w spoczynku, w laboratorium ({{fact:study.bonneval2025.participants}}), średni bezwzględny błąd procentowy dla tych odstępów wyniósł {{fact:study.bonneval2025.mapeRest}}."
+          "Dla Apple Watch Series 6 w spoczynku, w laboratorium ({{fact:study.bonneval2025.participants}}), średni bezwzględny błąd procentowy dla tych odstępów wyniósł {{fact:study.bonneval2025.mapeRest}}.",
+          "Tętno, nie HRV: na bieżni przy trzech intensywnościach wysiłku, w porównaniu z pasem piersiowym Polar H10, Apple Watch SE był istotnie dokładniejszy niż Galaxy Watch 6 i Polar Pacer Pro."
         ],
         "affiliated": []
       }

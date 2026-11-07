@@ -50,6 +50,9 @@ const NASR: SourceLink = { label: 'Nasr 2025, Digital Health', url: 'https://doi
 const LAMBE: SourceLink = { label: 'Lambe 2026, PLOS One', url: 'https://doi.org/10.1371/journal.pone.0356808' }
 const NATARAJAN: SourceLink = { label: 'Natarajan 2020, Lancet Digital Health', url: 'https://doi.org/10.1016/S2589-7500(20)30246-6' }
 const SARHADDI: SourceLink = { label: 'Sarhaddi 2022, PLOS One', url: 'https://doi.org/10.1371/journal.pone.0268361' }
+const VANOOST: SourceLink = { label: 'Van Oost 2025, Sensors', url: 'https://doi.org/10.3390/s25206319' }
+const SCHWEIZER: SourceLink = { label: 'Schweizer 2025, JMIR Cardio', url: 'https://doi.org/10.2196/67110' }
+const JEONG: SourceLink = { label: 'Jeong 2026, Physical Activity and Nutrition', url: 'https://doi.org/10.20463/pan.2026.0032' }
 const BONNEVAL: SourceLink = { label: 'Bonneval 2025, Sensors', url: 'https://doi.org/10.3390/s25082380' }
 
 const OURA_HRV: SourceLink = { label: 'Oura Help: Heart Rate Variability', url: 'https://support.ouraring.com/hc/en-us/articles/360025441974-Heart-Rate-Variability' }
@@ -120,6 +123,7 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
       },
       { text: `${DIAL_RANK('WHOOP 4.0 had high agreement with ECG for night-time HRV, below Oura Gen 3 and Gen 4.')}`, single: true, cite: DIAL },
       { text: 'Agreement of WHOOP 4.0 with ECG for night-time HRV in that comparison (concordance correlation coefficient): {{fact:study.dial2025.hrvCcc.whoop}}.', single: true, cite: DIAL },
+      { text: "Heart rate, not HRV: in a lab protocol comparing five wrist-worn wearables with a 12-lead ECG, WHOOP 4.0 was acceptable at steady state. Accuracy dropped notably for all wrist-worn devices during changes of state, such as standing up or starting to move.", single: true, cite: VANOOST },
     ],
     affiliated: [
       {
@@ -143,6 +147,8 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
     independent: [
       { text: `${DIAL_RANK('the Polar Grit X Pro watch had the lowest agreement with ECG for night-time HRV of the five devices.')}`, single: true, cite: DIAL },
       { text: 'Agreement of the Polar Grit X Pro with ECG for night-time HRV in that comparison (concordance correlation coefficient): {{fact:study.dial2025.hrvCcc.polar}}.', single: true, cite: DIAL },
+      { text: "Heart rate, not HRV: an independent study compared the Polar Verity Sense armband (worn on the upper arm, forearm or wrist) and the Vantage V2 watch with a Polar H10 chest strap, from sitting still to vigorous activity.", single: true, cite: SCHWEIZER },
+      { text: "Heart rate, not HRV: on a treadmill at three exercise intensities, against a Polar H10 chest strap, the Polar Verity Sense was significantly more accurate than the Polar Pacer Pro watch.", single: true, cite: JEONG },
     ],
     independentNone:
       'We found no independent study that checks HRV from a Polar watch against an ECG on its own. Polar’s chest straps are a different device and are not covered here.',
@@ -166,6 +172,7 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
     independent: [
       { text: `${DIAL_RANK('a Garmin Fenix 6 had lower agreement with ECG for night-time HRV than Oura and WHOOP.')}`, single: true, cite: DIAL },
       { text: 'Agreement of the Garmin Fenix 6 with ECG for night-time HRV in that comparison (concordance correlation coefficient): {{fact:study.dial2025.hrvCcc.garmin}}.', single: true, cite: DIAL },
+      { text: "Heart rate, not HRV: in a lab protocol comparing five wrist-worn wearables with a 12-lead ECG, a Garmin Vivosmart 4 was one of the five devices; the two Fitbit models were the most accurate at steady state. Accuracy dropped notably for all wrist-worn devices during changes of state, such as standing up or starting to move.", single: true, cite: VANOOST },
     ],
     independentNone: 'We found no independent study that checks Garmin HRV Status itself against an ECG.',
     affiliated: [],
@@ -189,6 +196,7 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
         cite: NASR,
       },
       { text: 'It was a pilot study with {{fact:study.nasr2025.participants}}.', single: true, cite: NASR },
+      { text: "Heart rate, not HRV: in a lab protocol comparing five wrist-worn wearables with a 12-lead ECG, the Fitbit Charge 5 and Sense 2 were the most accurate at steady state. Accuracy dropped notably for all wrist-worn devices during changes of state, such as standing up or starting to move.", single: true, cite: VANOOST },
     ],
     affiliated: [
       { text: 'A Google-funded study of the Pixel Watch 3 checked heart rate, not HRV.', cite: LAMBE },
@@ -212,6 +220,7 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
         single: true,
         cite: SARHADDI,
       },
+      { text: "Heart rate, not HRV: on a treadmill at three exercise intensities, against a Polar H10 chest strap, the Galaxy Watch 6 was significantly less accurate than the Apple Watch SE and the Polar Verity Sense.", single: true, cite: JEONG },
     ],
     affiliated: [],
   },
@@ -224,7 +233,9 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
     composite:
       'We found no Withings composite readiness score on its help pages: the Withings app shows the individual measurements.',
     compositeQuotes: [],
-    independent: [],
+    independent: [
+      { text: "Heart rate, not HRV: in a lab protocol comparing five wrist-worn wearables with a 12-lead ECG, the Withings ScanWatch was acceptable at steady state. Accuracy dropped notably for all wrist-worn devices during changes of state, such as standing up or starting to move.", single: true, cite: VANOOST },
+    ],
     independentNone: 'We found no independent study that checks Withings HRV against an ECG.',
     affiliated: [],
   },
@@ -260,6 +271,7 @@ export const CONNECT_DEVICE_DETAILS: Record<string, ConnectDeviceDetail> = {
         cite: BONNEVAL,
       },
       { text: 'For the Apple Watch Series 6 at rest, in the lab ({{fact:study.bonneval2025.participants}}), the mean absolute percentage error for those intervals was {{fact:study.bonneval2025.mapeRest}}.', single: true, cite: BONNEVAL },
+      { text: "Heart rate, not HRV: on a treadmill at three exercise intensities, against a Polar H10 chest strap, the Apple Watch SE was significantly more accurate than the Galaxy Watch 6 and the Polar Pacer Pro.", single: true, cite: JEONG },
     ],
     affiliated: [],
   },
