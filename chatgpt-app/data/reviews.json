@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07",
+  "generatedAt": "2026-11-08",
   "source": "https://onda-life.com/reviews",
   "reviews": [
     {
@@ -7992,7 +7992,7 @@
       "hrvMetric": null,
       "worksWithOnda": "not-a-device",
       "worksWithOndaNote": null,
-      "dateModified": "2026-10-10"
+      "dateModified": "2026-11-08"
     },
     {
       "slug": "olylife-tera-p90-plus",
@@ -23688,6 +23688,97 @@
           "award": "",
           "takeaway": "Eight dry electrodes and raw EEG over JavaScript and Python (plus BrainFlow, LSL and OSC) with no subscription.",
           "comparisonOnly": "For comparison: the headset these alternatives replace"
+        }
+      ]
+    },
+    {
+      "slug": "othership-alternatives",
+      "title": "Othership Alternatives (2026)",
+      "url": "https://onda-life.com/reviews/compare/othership-alternatives",
+      "picks": [
+        {
+          "review": "breathwrk",
+          "award": "Best value guided library",
+          "takeaway": "Guided exercises (limited on the free plan, 100+ on Pro), daily classes and programs for about $49 a year — the closest all-round replacement at well under half the price."
+        },
+        {
+          "review": "soma-breath",
+          "award": "Best rhythmic music breathwork",
+          "takeaway": "Keeps the music: beat-paced sessions and a global network of certified facilitators, for about $99 a year."
+        },
+        {
+          "review": "open-app",
+          "award": "Best hybrid breath + meditation + movement",
+          "takeaway": "One premium app for breathwork, meditation and movement with named instructors, about $120 a year."
+        },
+        {
+          "review": "wim-hof-method-app",
+          "award": "Best for Wim Hof Method",
+          "takeaway": "The official app: structured rounds and cold-exposure progression, $42.99 a year on the Supporter plan."
+        },
+        {
+          "review": "inhale-by-aero-health",
+          "award": "Best HRV biofeedback",
+          "takeaway": "Sessions measured and adapted with Apple Watch HRV, about $60 a year. It requires an Apple Watch."
+        },
+        {
+          "review": "pause-breathwork",
+          "award": "Best somatic / emotional release",
+          "takeaway": "Longer journey-style sessions with trauma-informed framing, about $90 a year — the closest match to Othership’s ceremony side."
+        },
+        {
+          "review": "ibreathe",
+          "award": "Best free minimalist",
+          "takeaway": "A clean visual breath timer for people who already know their techniques. Free, with an optional $5 to remove ads."
+        },
+        {
+          "review": "othership",
+          "award": "",
+          "takeaway": "Cinematic music-driven journeys and daily live classes, with 5 rotating free sessions.",
+          "comparisonOnly": "For comparison: the app these alternatives replace"
+        }
+      ]
+    },
+    {
+      "slug": "joovv-alternatives",
+      "title": "Joovv Alternatives (2026)",
+      "url": "https://onda-life.com/reviews/compare/joovv-alternatives",
+      "picks": [
+        {
+          "review": "mito-red-mitopro-1500",
+          "award": "Best overall (practically equal)",
+          "takeaway": "MitoPRO 1500X: six wavelengths, a large panel and a 3-year warranty, $400 cheaper than Joovv at $1,299."
+        },
+        {
+          "review": "platinumled-biomax-600",
+          "award": "Best overall (practically equal) · Best wavelength spectrum",
+          "takeaway": "Seven wavelengths and published third-party EMF testing at $1,049."
+        },
+        {
+          "review": "rubylx-lyra-pro",
+          "award": "Best overall (practically equal) · Best testing transparency",
+          "takeaway": "Five wavelengths at $1,099, with published specifications checked by third-party labs."
+        },
+        {
+          "review": "gembared-vesta",
+          "award": "Best EMF discipline",
+          "takeaway": "Six wavelengths and a fully shielded power supply at $1,199, for buyers who put EMF and flicker first."
+        },
+        {
+          "review": "biolight-pro-900",
+          "award": "Best mid-tier value",
+          "takeaway": "Four wavelengths at $899 with stand and door mount included."
+        },
+        {
+          "review": "hooga-hg500",
+          "award": "Best budget pick",
+          "takeaway": "The same two wavelengths as Joovv (660 nm and 850 nm) at $359, about a fifth of the price."
+        },
+        {
+          "review": "joovv-solo-3",
+          "award": "",
+          "takeaway": "Modular, verified irradiance and clean EMF, at $1,699 for one panel.",
+          "comparisonOnly": "For comparison: the panel these alternatives replace"
         }
       ]
     }

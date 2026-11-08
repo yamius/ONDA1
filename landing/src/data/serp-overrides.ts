@@ -102,9 +102,9 @@ export const SERP_OVERRIDES: Record<string, { title?: string; description?: stri
       'A $499 wrap-around laser and LED device for knees, elbows and other joints. What the evidence shows, how to use it and how it compares with panels.',
   },
   '/reviews/resona-health-vibe': {
-    title: 'Resona Health VIBE Review: Worth $299? | ONDA Life',
+    title: 'Resona Health VIBE Reviews: Worth $299? | ONDA Life',
     description:
-      'A wearable PEMF device with 130+ built-in programmes, no app and no mat to set up, for $299. What PEMF can and cannot do, pros, cons and alternatives.',
+      'A wearable PEMF device with 130+ built-in programmes, no app and no mat to set up, for $299. What reviews can and cannot tell you, pros, cons and alternatives.',
   },
   '/reviews/hypervolt-3-pro': {
     title: 'Hypervolt 3 Pro Review: vs Theragun (2026) | ONDA Life',

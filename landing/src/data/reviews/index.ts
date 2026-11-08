@@ -44,6 +44,8 @@ import bestVagusNerveStimulators2026 from './best-vagus-nerve-stimulators-2026'
 import bestCgmForBiohackers2026 from './best-cgm-for-biohackers-2026'
 import bestEegHeadsets2026 from './best-eeg-headsets-2026'
 import neurosityCrownAlternatives from './neurosity-crown-alternatives'
+import othershipAlternatives from './othership-alternatives'
+import joovvAlternatives from './joovv-alternatives'
 import bestRedLightPanels2026 from './best-red-light-therapy-panels-2026'
 import bestColdPlunge2026 from './best-cold-plunge-2026'
 import bestInfraredSauna2026 from './best-infrared-sauna-2026'
@@ -151,6 +153,8 @@ export const ALL_COMPARISONS_RAW: Comparison[] = [
   bestMassageGuns2026,
   bestAirPurifiers2026,
   neurosityCrownAlternatives,
+  othershipAlternatives,
+  joovvAlternatives,
 ].map(rankComparison)
 export const ALL_COMPARISONS: Comparison[] = ALL_COMPARISONS_RAW.map((c) => resolveScoresDeep(c, `round-up ${c.slug}`))
 

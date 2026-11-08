@@ -48,7 +48,7 @@ Price and evidence depth. At $129.99/year Othership is the most expensive breath
 
 ## Who should buy Othership?
 
-Choose Othership if you want breathwork as cinematic experience with music and live community. For largest structured library at lower price, Breathwrk. For rhythmic music breathwork with certifications, SOMA Breath. For free entry, iBreathe or Breathe2Relax.
+Choose Othership if you want breathwork as cinematic experience with music and live community. For largest structured library at lower price, Breathwrk. For rhythmic music breathwork with certifications, SOMA Breath. For free entry, iBreathe or Breathe2Relax. See all [Othership alternatives](/reviews/compare/othership-alternatives).
 
 ---
 
