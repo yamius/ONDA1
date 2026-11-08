@@ -627,6 +627,8 @@ export const TAIL_RELEASE_QUEUE: readonly (readonly { collection: 'articles' | '
   { collection: 'reviews', slug: 'opove-m3-pro-2' },
   { collection: 'reviews', slug: 'bob-and-brad-q2-mini' },
   { collection: 'reviews', slug: 'renpho-r3' },
+  { collection: 'comparisons', slug: 'othership-alternatives' },
+  { collection: 'comparisons', slug: 'joovv-alternatives' },
   // WAVE_D_NEXT
   ],
 ]

@@ -5666,7 +5666,7 @@
         },
         "hooga-hg500": {
           "award": "Migliore scelta economica",
-          "takeaway": "Specifiche verificate a due lunghezze d’onda a $349 — l’ingresso economico per biohacker."
+          "takeaway": "Specifiche verificate a due lunghezze d’onda a $359 — l’ingresso economico per biohacker."
         },
         "bon-charge-red-light-panel": {
           "award": "Migliore per acquirenti UE / AU",
@@ -5911,6 +5911,120 @@
           "a": "Per meditare sì: Muse ha sessioni guidate con feedback audio dal vivo e costa molto meno. Per sviluppatori e dati cerebrali grezzi no: il Crown ha il doppio degli elettrodi e un SDK più aperto. Vedi il nostro confronto completo Muse S Athena vs Neurosity Crown."
         }
       ]
+    },
+    "othership-alternatives": {
+      "title": "Alternative a Othership (2026)",
+      "description": "Alternative più economiche o più adatte a Othership da $129.99 l’anno: Breathwrk, SOMA Breath, Open, Pause, Wim Hof Method, Inhale e iBreathe.",
+      "intro": "Othership è l’abbonamento di breathwork più caro tra quelli che trattiamo, $129.99 l’anno, e vende un’esperienza: sessioni cinematografiche guidate dalla musica e lezioni di gruppo dal vivo. Chi cerca un’alternativa di solito vuole un prezzo più basso, una routine più strutturata o un altro stile di sessione. Ecco le alternative da conoscere, valutate con lo stesso metodo ONDA di Othership, con ciò che ognuna fa meglio.",
+      "verdict": "Nessuna app copia ciò che fa Othership, perché il suo valore sta nella produzione e nella comunità dal vivo. Se il problema è il prezzo, Breathwrk (circa $49 l’anno) è il miglior sostituto generale. Per tenere la musica al centro scegli SOMA Breath; per sessioni emotive più profonde, Pause; per una sola app con respiro, meditazione e movimento, Open. Scegli Wim Hof Method se vuoi proprio quel protocollo, Inhale se porti un Apple Watch e vuoi un riscontro sull’HRV, e iBreathe se ti serve solo un timer gratuito.",
+      "content": "## Risposta rapida\n\nLa migliore **alternativa a Othership** per la maggior parte è **Breathwrk**, a circa $49 l’anno invece di $129.99. Per tenere la musica al centro scegli **SOMA Breath**. Per sessioni emotive più lunghe, **Pause**. Se ti serve solo un timer gratuito, basta **iBreathe**.\n\n## Tabella comparativa\n\n| App | Prezzo (USD) | Stile | Meglio di Othership per |\n|---|---|---|---|\n| [Othership](/reviews/othership) | $129.99 l’anno o $17.99 al mese | Sessioni cinematografiche, lezioni dal vivo | — (il riferimento) |\n| [Breathwrk](/reviews/breathwrk) | Circa $49 l’anno; piano gratuito | Brevi esercizi guidati, lezioni quotidiane | Prezzo, routine quotidiana |\n| [SOMA Breath](/reviews/soma-breath) | Circa $99 l’anno | Sessioni ritmiche a tempo | Rete di facilitatori |\n| [Open](/reviews/open-app) | Circa $120 l’anno | Respiro, meditazione, movimento | Una app per tre pratiche |\n| [Pause](/reviews/pause-breathwork) | Circa $90 l’anno | Lunghe sessioni somatiche | Attenzione al trauma |\n| [Wim Hof Method](/reviews/wim-hof-method-app) | $42.99 l’anno | Round ufficiali, freddo | Progressione Wim Hof strutturata |\n| [Inhale](/reviews/inhale-by-aero-health) | Circa $60 l’anno; serve Apple Watch | Sessioni adattate all’HRV | Riscontro misurato |\n| [iBreathe](/reviews/ibreathe) | Gratis; $5 opzionali | Timer visivo del respiro | Prezzo, semplicità |\n\n## Scegli in base a ciò che volevi da Othership\n\n**La musica e il viaggio.** SOMA Breath tiene la musica al centro. Pause offre sessioni più lunghe ed emotive.\n\n**Un’abitudine quotidiana a meno.** Breathwrk si basa su sessioni brevi da ripetere. iBreathe basta se conosci già le tecniche.\n\n**Qualcosa da misurare.** Inhale adatta le sessioni con l’HRV di Apple Watch. È l’unica app della lista costruita attorno alla risposta misurata del corpo.\n\n## Nota di sicurezza sulla respirazione intensa\n\nLa respirazione rapida con lunghe ritenzioni può causare capogiri, formicolio o svenimento. Pratica seduto o sdraiato, mai in acqua o vicino all’acqua e mai alla guida. Chiedi prima a un medico se sei in gravidanza o hai epilessia, una malattia cardiaca o una storia di disturbi psichiatrici.\n\n## Confronti correlati\n\n- [Migliori app di breathwork 2026](/reviews/compare/best-breathwork-apps-2026) — la classifica completa\n- [Recensione di Othership](/reviews/othership) — compreso ciò che lo studio in cieco ha testato e non\n\n## Come le abbiamo valutate\n\nOgni app è valutata con la [metodologia di recensione](/reviews/methodology) pubblicata da ONDA, la stessa di Othership. Tutte sono state valutate da documentazione ufficiale, schede delle app e ricerca pubblicata, senza prove dirette.",
+      "faq": [
+        {
+          "q": "Qual è la migliore alternativa a Othership?",
+          "a": "Per la maggior parte, Breathwrk: esercizi guidati, lezioni quotidiane e programmi per circa $49 l’anno, contro $129.99 di Othership. La produzione è meno cinematografica e non mostra frequenza cardiaca né HRV."
+        },
+        {
+          "q": "Esiste un’app più economica simile a Othership?",
+          "a": "Breathwrk (circa $49 l’anno), Wim Hof Method (piano Supporter, $42.99 l’anno) e Inhale (circa $60 l’anno, serve un Apple Watch) costano meno della metà. iBreathe è gratis, ma è un semplice timer e non un’esperienza guidata."
+        },
+        {
+          "q": "Quale alternativa somiglia di più alle sessioni musicali di Othership?",
+          "a": "SOMA Breath, che scandisce il respiro con musica ritmica e ha una comunità mondiale di facilitatori. Pause è più vicina alle lunghe sessioni emotive e cerimoniali di Othership."
+        },
+        {
+          "q": "Othership è stato testato in uno studio clinico?",
+          "a": "Non abbiamo trovato studi sull’app in sé. Un ampio studio randomizzato in cieco ha testato un protocollo audio a distanza di respirazione rapida con lunghe ritenzioni, registrato da un facilitatore di Othership. È stato testato quel protocollo in giovani adulti sani, non l’app."
+        }
+      ],
+      "picks": {
+        "breathwrk": {
+          "award": "Migliore libreria guidata per il prezzo",
+          "takeaway": "Esercizi guidati (limitati nel piano gratuito, 100+ con Pro), lezioni quotidiane e programmi per circa $49 l’anno: il sostituto generale più vicino a molto meno della metà."
+        },
+        "soma-breath": {
+          "award": "Miglior breathwork ritmico con musica",
+          "takeaway": "La musica resta: sessioni a ritmo e una rete mondiale di facilitatori certificati, circa $99 l’anno."
+        },
+        "open-app": {
+          "award": "Miglior ibrido di respiro, meditazione e movimento",
+          "takeaway": "Un’unica app premium per respiro, meditazione e movimento con istruttori noti, circa $120 l’anno."
+        },
+        "pause-breathwork": {
+          "award": "Migliore per il rilascio somatico ed emotivo",
+          "takeaway": "Sessioni-viaggio più lunghe con attenzione al trauma, circa $90 l’anno: la più vicina al lato cerimoniale di Othership."
+        },
+        "wim-hof-method-app": {
+          "award": "Migliore per il metodo Wim Hof",
+          "takeaway": "L’app ufficiale: round strutturati e progressione con il freddo, $42.99 l’anno con il piano Supporter."
+        },
+        "inhale-by-aero-health": {
+          "award": "Miglior biofeedback HRV",
+          "takeaway": "Sessioni misurate e adattate con l’HRV di Apple Watch, circa $60 l’anno. Serve un Apple Watch."
+        },
+        "ibreathe": {
+          "award": "Migliore minimalista gratuita",
+          "takeaway": "Un timer visivo del respiro per chi conosce già le tecniche. Gratis, con $5 opzionali per togliere la pubblicità."
+        },
+        "othership": {
+          "award": "",
+          "takeaway": "Sessioni cinematografiche con musica e lezioni quotidiane dal vivo, con 5 sessioni gratuite a rotazione."
+        }
+      }
+    },
+    "joovv-alternatives": {
+      "title": "Alternative a Joovv (2026)",
+      "description": "Alternative più economiche o meglio dotate al Joovv Solo 3.0 da $1,699: Mito Red, BIOMAX 600, GembaRed Vesta, RubyLx Lyra Pro, BioLight e Hooga.",
+      "intro": "Joovv Solo 3.0 costa $1,699 ed è il riferimento tra i pannelli modulari a luce rossa, con due lunghezze d’onda: 660 e 850 nm. Chi cerca un’alternativa di solito vuole un prezzo più basso, più lunghezze d’onda o test meglio documentati. Ecco i pannelli da conoscere, valutati con lo stesso metodo ONDA di Joovv, con ciò che ognuno fa meglio.",
+      "verdict": "Joovv resta la scelta giusta se vuoi costruire un sistema espandibile di una sola marca. Se vuoi un pannello grande simile a meno, la migliore alternativa è Mito Red MitoPRO 1500X a $1,299. PlatinumLED BIOMAX 600 ($1,049) ha più lunghezze d’onda, GembaRed Vesta ($1,199) punta su campi elettromagnetici (EMF) e sfarfallio, e RubyLx Lyra Pro ($1,099) ha i test più documentati. Se vuoi solo le due lunghezze d’onda standard usate da Joovv, Hooga HG500 ($359) è il risparmio più evidente, con una costruzione meno premium.",
+      "content": "## Risposta rapida\n\nLa migliore **alternativa a Joovv** per la maggior parte è **Mito Red MitoPRO 1500X** ($1,299). **PlatinumLED BIOMAX 600** ($1,049) ha lo spettro più ampio e **Hooga HG500** ($359) è la scelta economica con le stesse due lunghezze d’onda di Joovv.\n\n## Tabella comparativa\n\n| Pannello | Prezzo (USD) | Lunghezze d’onda | Meglio di Joovv per |\n|---|---|---|---|\n| [Joovv Solo 3.0](/reviews/joovv-solo-3) | $1,699 | 2 (660, 850 nm) | — (il riferimento) |\n| [Mito Red MitoPRO 1500X](/reviews/mito-red-mitopro-1500) | $1,299 | 6 | Spettro, prezzo |\n| [PlatinumLED BIOMAX 600](/reviews/platinumled-biomax-600) | $1,049 | 7 | Spettro più ampio |\n| [GembaRed Vesta](/reviews/gembared-vesta) | $1,199 | 6 | Attenzione a EMF e sfarfallio |\n| [RubyLx Lyra Pro](/reviews/rubylx-lyra-pro) | $1,099 | 5 | Test di laboratorio pubblicati |\n| [BioLight Pro 900](/reviews/biolight-pro-900) | $899 | 4 | Supporto e attacco inclusi |\n| [Hooga HG500](/reviews/hooga-hg500) | $359 | 2 (660, 850 nm) | Prezzo |\n\n## Scegli in base a ciò che volevi da Joovv\n\n**Un pannello grande senza il prezzo di Joovv.** Mito Red MitoPRO 1500X è il sostituto più vicino tra i pannelli grandi.\n\n**Hardware meglio documentato.** RubyLx Lyra Pro pubblica risultati di laboratori terzi; GembaRed Vesta è costruito attorno a EMF e sfarfallio bassi.\n\n**Solo provare la luce rossa.** Hooga HG500 usa le due lunghezze d’onda standard a una frazione del costo.\n\n## Cosa può e non può fare un pannello\n\nLa luce rossa e nel vicino infrarosso è stata studiata per problemi della pelle e alcuni problemi articolari e muscolari, ma i risultati variano con la dose e molti studi sono piccoli. Un pannello non cura le malattie. Proteggi gli occhi e chiedi prima a un medico se assumi farmaci fotosensibilizzanti.\n\n## Confronti correlati\n\n- [Migliori pannelli a luce rossa 2026](/reviews/compare/best-red-light-therapy-panels-2026) — la classifica completa\n- [Joovv Solo 3.0 vs Mito Red MitoPRO 1500](/reviews/vs/joovv-solo-3-vs-mito-red-mitopro-1500)\n- [Joovv Solo 3.0 vs PlatinumLED BIOMAX 600](/reviews/vs/joovv-solo-3-vs-platinumled-biomax-600)\n- [Hooga HG500 vs Joovv Solo 3.0](/reviews/vs/hooga-hg500-vs-joovv-solo-3)\n- [GembaRed Vesta vs Joovv Solo 3.0](/reviews/vs/gembared-vesta-vs-joovv-solo-3)\n\n## Come li abbiamo valutati\n\nOgni pannello è valutato con la [metodologia di recensione](/reviews/methodology) pubblicata da ONDA, la stessa di Joovv. Tutti sono stati valutati da documentazione del produttore, dati di test pubblicati e recensioni indipendenti, senza prove dirette.",
+      "faq": [
+        {
+          "q": "Qual è la migliore alternativa a Joovv?",
+          "a": "Per la maggior parte di chi vuole un pannello grande, Mito Red MitoPRO 1500X: sei lunghezze d’onda e 3 anni di garanzia a $1,299, contro $1,699 di Joovv Solo 3.0. Joovv resta più forte come sistema modulare di una sola marca."
+        },
+        {
+          "q": "Qual è un’alternativa più economica a Joovv?",
+          "a": "Hooga HG500 a $359 usa le stesse lunghezze d’onda di 660 e 850 nm di Joovv. BioLight Pro 900 a $899 aggiunge altre lunghezze d’onda e include supporto e attacco per porta. Entrambi rinunciano a parte della costruzione premium e della modularità di Joovv."
+        },
+        {
+          "q": "Più lunghezze d’onda rendono migliore un pannello?",
+          "a": "Non necessariamente. Uno spettro più ampio è una specifica, non una prova di risultati migliori. Contano anche dose, distanza e costanza, quindi confronta anche irradianza verificata e garanzia."
+        },
+        {
+          "q": "Joovv vale il suo prezzo?",
+          "a": "Solo se apprezzi il sistema modulare e la marca. Le stesse due lunghezze d’onda si trovano a molto meno, e diversi concorrenti offrono spettri più ampi o più dati di test pubblicati a un prezzo inferiore."
+        }
+      ],
+      "picks": {
+        "mito-red-mitopro-1500": {
+          "award": "",
+          "takeaway": "MitoPRO 1500X: sei lunghezze d’onda, pannello grande e 3 anni di garanzia, $400 in meno di Joovv, a $1,299."
+        },
+        "platinumled-biomax-600": {
+          "award": "Miglior spettro di lunghezze d’onda",
+          "takeaway": "Sette lunghezze d’onda e test EMF indipendenti pubblicati, a $1,049."
+        },
+        "gembared-vesta": {
+          "award": "Miglior controllo EMF",
+          "takeaway": "Sei lunghezze d’onda e alimentatore completamente schermato a $1,199, per chi mette al primo posto EMF e sfarfallio."
+        },
+        "rubylx-lyra-pro": {
+          "award": "Migliore trasparenza dei test",
+          "takeaway": "Cinque lunghezze d’onda a $1,099, con specifiche pubblicate e verificate da laboratori terzi."
+        },
+        "biolight-pro-900": {
+          "award": "Miglior valore di fascia media",
+          "takeaway": "Quattro lunghezze d’onda a $899, con supporto e attacco per porta inclusi."
+        },
+        "hooga-hg500": {
+          "award": "Migliore scelta economica",
+          "takeaway": "Le stesse due lunghezze d’onda di Joovv (660 e 850 nm) a $359, circa un quinto del prezzo."
+        },
+        "joovv-solo-3": {
+          "award": "",
+          "takeaway": "Modulare, irradianza verificata ed EMF puliti, a $1,699 per pannello."
+        }
+      }
     }
   },
   "criteria": {

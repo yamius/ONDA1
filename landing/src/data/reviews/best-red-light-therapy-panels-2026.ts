@@ -47,7 +47,7 @@ const bestRedLightPanels2026: Comparison = {
     {
       reviewSlug: 'hooga-hg500',
       award: 'Best budget pick',
-      takeaway: 'Verified two-wavelength specs at $349 — the budget biohacker entry.',
+      takeaway: 'Verified two-wavelength specs at $359 — the budget biohacker entry.',
     },
     {
       reviewSlug: 'bon-charge-red-light-panel',

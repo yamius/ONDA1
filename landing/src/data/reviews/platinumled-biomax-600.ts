@@ -48,7 +48,7 @@ The main downside of the BIOMAX 600 is size: it is mid-size — smaller than Joo
 
 ## Is the PlatinumLED BIOMAX 600 worth it?
 
-Yes, for most buyers who want one serious mid-size panel. At $1,049 (official US store, checked 2026-10-01) it costs less than the Joovv Solo 3.0 ($1,699) and the MitoPRO 1500X ($1,299), with a broader spectrum, a 3-year warranty and publicly posted test results. It is not the cheapest route into red light therapy — the Hooga HG500 costs $349 — and if you need full-body coverage you will pay for two panels or a larger model.
+Yes, for most buyers who want one serious mid-size panel. At $1,049 (official US store, checked 2026-10-01) it costs less than the Joovv Solo 3.0 ($1,699) and the MitoPRO 1500X ($1,299), with a broader spectrum, a 3-year warranty and publicly posted test results. It is not the cheapest route into red light therapy — the Hooga HG500 costs $359 — and if you need full-body coverage you will pay for two panels or a larger model.
 
 ## What red and near-infrared panels do — and the honest evidence
 
@@ -68,7 +68,7 @@ PlatinumLED’s product page recommends **10–20 minutes per treatment area**, 
 | [Joovv Solo 3.0](/reviews/joovv-solo-3) | $1,699 | Red + NIR | Modular, premium |
 | [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) | $1,299 (1500X) | Six wavelengths, red + NIR | Larger panel |
 | [BioLight Pro 900](/reviews/biolight-pro-900) | $899 | Red + NIR | Mid-size, stand included |
-| [Hooga HG500](/reviews/hooga-hg500) | $349 | Red + NIR | Budget entry |
+| [Hooga HG500](/reviews/hooga-hg500) | $359 | Red + NIR | Budget entry |
 
 See also [Joovv Solo 3.0 vs BIOMAX 600](/reviews/vs/joovv-solo-3-vs-platinumled-biomax-600), [BIOMAX 600 vs BioLight Pro 900](/reviews/vs/platinumled-biomax-600-vs-biolight-pro-900) and the [best red light therapy panels](/reviews/compare/best-red-light-therapy-panels-2026).
 
@@ -93,7 +93,7 @@ The photobiomodulation mechanism behind why red light therapy works.
   ],
   relatedSlugs: ['joovv-solo-3', 'mito-red-mitopro-1500', 'biolight-pro-900'],
   faq: [
-    { q: "Is PlatinumLED BioMax 600 worth it?", a: "For most buyers wanting one mid-size panel, yes. At $1,049 it is cheaper than the Joovv Solo 3.0 ($1,699) and MitoPRO 1500X ($1,299), with seven wavelengths, published EMF testing and a 3-year warranty. It is not the cheapest option (Hooga HG500 is $349) and full-body coverage needs two panels. Evidence is strongest for skin benefits; other uses are less proven." },
+    { q: "Is PlatinumLED BioMax 600 worth it?", a: "For most buyers wanting one mid-size panel, yes. At $1,049 it is cheaper than the Joovv Solo 3.0 ($1,699) and MitoPRO 1500X ($1,299), with seven wavelengths, published EMF testing and a 3-year warranty. It is not the cheapest option (Hooga HG500 is $359) and full-body coverage needs two panels. Evidence is strongest for skin benefits; other uses are less proven." },
     { q: "BioMax 600 vs Joovv Solo 3.0: which is better?", a: "The BIOMAX 600 ($1,049) offers a broader seven-wavelength spectrum and publicly posted EMF tests for $650 less. The Joovv Solo 3.0 ($1,699) has a modular system that scales to full-body stacks. Choose BIOMAX for value and spectrum, Joovv if you plan to build a larger modular setup." },
     { q: "How far should you stand from a red light panel?", a: "Follow the manufacturer. For the BIOMAX 600, PlatinumLED recommends about 8–14 inches for deep tissue and 16–24 inches for facial skin, for 10–20 minutes per area. Closer means higher intensity and shorter sessions; more dose is not automatically better. Wear eye protection." },
     { q: "How much does the PlatinumLED BIOMAX 600 cost?", a: "The PlatinumLED BIOMAX 600 costs $1,049 one-time on the official US store (October 2026), with stand and mount hardware extra. That is meaningfully cheaper than the Joovv Solo 3.0 and MitoPRO 1500 for comparable build and a broader spectrum. ONDA scores it {{score:platinumled-biomax-600}}/10 overall." },
