@@ -150,14 +150,6 @@ sources:
     doi: "10.1177/1757913917740391"
     pmid: 29130840
     type: systematic-review
-  - id: S15
-    cite: "Woo & Kim (2025)"
-    title: "Effects of slow-paced breathing and humming breathing on heart rate variability and affect: a pilot investigation"
-    journal: "Physiology & Behavior"
-    year: 2025
-    doi: "10.1016/j.physbeh.2025.114972"
-    pmid: 40482984
-    type: other
 evidenceMap:
   - claim: "Nasal nitric oxide rose sharply during single-breath humming compared with quiet exhalation at a fixed flow, in healthy volunteers."
     sources: [S1]
@@ -243,11 +235,6 @@ evidenceMap:
     claimType: efficacy
     quote: "There is reliable evidence for positive effects of music and singing on wellbeing in adults."
     limitation: "Mixed music and singing; inconsistent wellbeing measures; choir members tend to be female, white and well educated."
-  - claim: "In a small pilot, both humming breathing and paced slow breathing raised HRV above rest, with no difference between them."
-    sources: [S15]
-    class: emerging
-    quote: "No significant differences were observed between SPB and humming breathing in HRV or VAS measures."
-    limitation: "A single small pilot in healthy adults with short recordings; the null comparison does not prove the two are equivalent; LF-based indices are hard to interpret."
 ---
 
 ## What are humming, chanting and Om?
@@ -305,7 +292,7 @@ In a 2001 laboratory study, {{fact:study.bernardi2001.participants}} recited the
 
 In choir singers, song structure guided breathing, and unison singing made heart rates rise and fall together (class: **emerging**, single small study) [S8].
 
-Is there an effect beyond slowing the breath? In a randomized trial of {{fact:study.ghati2021.design}}, bee-humming breathing was compared with slow breathing. Blood pressure did not fall more after humming; some spectral HRV indices differed during recovery, but their autonomic meaning is debated (class: **emerging**, single trial) [S9]. In a 2025 pilot study of healthy adults, both humming breathing and paced slow breathing raised HRV above rest, with no difference between the two (class: **emerging**, single small study) [S15]. A systematic review of bhramari found {{fact:study.kuppusamy2018.studies}}, and rated their quality as very low [S10]. So an added effect of the hum itself has not been shown (class: **unknown**).
+Is there an effect beyond slowing the breath? In a randomized trial of {{fact:study.ghati2021.design}}, bee-humming breathing was compared with slow breathing. Blood pressure did not fall more after humming; some spectral HRV indices differed during recovery, but their autonomic meaning is debated (class: **emerging**, single trial) [S9]. A systematic review of bhramari found {{fact:study.kuppusamy2018.studies}}, and rated their quality as very low [S10]. So an added effect of the hum itself has not been shown (class: **unknown**).
 
 ### The brain — one small pilot
 

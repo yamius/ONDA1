@@ -169,14 +169,6 @@ sources:
     pmid: 41862627
     type: randomized-trial
     note: "the programme was delivered through a wearable maker's app; the authors declare no competing interests"
-  - id: S18
-    cite: "Barbry et al. (2026)"
-    title: "Effect of Brief Mindfulness Meditation Interventions on Heart Rate Variability in Adults: A Systematic Review"
-    journal: "Applied Psychophysiology and Biofeedback"
-    year: 2026
-    doi: "10.1007/s10484-025-09724-y"
-    pmid: 40715924
-    type: systematic-review
 evidenceMap:
   - claim: "Meditation classification types are still varied and largely subjective."
     sources: [S1]
@@ -358,11 +350,6 @@ evidenceMap:
     claimType: safety
     quote: "The mindfulness group exhibited increased personal burnout (p = 0.021) immediately post-intervention, though this returned toward baseline at follow-up."
     limitation: "Single trial; secondary outcome."
-  - claim: "Brief mindfulness sessions may raise RMSSD in the short term, on low-quality evidence from a few small studies."
-    sources: [S18]
-    class: emerging
-    quote: "Three studies, including 120 participants, found that BMM is associated with an increase of Root Mean Square of Successive Differences (RMSSD)."
-    limitation: "Systematic review with few, heterogeneous studies and low-quality evidence; lasting effects were not studied; breathing changes during practice were not separated."
 ---
 
 ## What is meditation, for the autonomic nervous system?
@@ -413,7 +400,7 @@ Two time frames matter. A *session effect* is a change while someone is meditati
 
 ### Heart rate variability: during a session and after a course
 
-**During a session: context-dependent.** HRV often changes while people meditate, but not always in the same direction. A body scan raised the breath-linked heart rhythm more than other relaxing activities in two small studies, without changing heart rate [S6]. Mantra and prayer recited slowly enough to bring breathing near {{fact:breath.resonance.typical}} produced large swings in heart rhythm [S8]. Some Chi and Kundalini Yoga techniques produced very large oscillations tied to slow breathing [S9]. A systematic review of brief mindfulness sessions found a short-term rise in RMSSD in a few small studies, with low-quality evidence and no data on lasting effects [S18].
+**During a session: context-dependent.** HRV often changes while people meditate, but not always in the same direction. A body scan raised the breath-linked heart rhythm more than other relaxing activities in two small studies, without changing heart rate [S6]. Mantra and prayer recited slowly enough to bring breathing near {{fact:breath.resonance.typical}} produced large swings in heart rhythm [S8]. Some Chi and Kundalini Yoga techniques produced very large oscillations tied to slow breathing [S9].
 
 <!-- myth-debunk -->
 **"Meditation always raises HRV."** The evidence does not support it. In one small study, overall HRV fell during deep heartfulness meditation compared with a breathing-matched control [S7], and arousing styles from the Vajrayana tradition were accompanied by arousal rather than relaxation [S2]. Meditation is not only an autonomically quiet state [S9].

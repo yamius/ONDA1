@@ -106,22 +106,6 @@ sources:
     title: "heartRateVariabilityRMSSD (iOS/watchOS 27)"
     url: "https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilityrmssd"
     type: official
-  - id: S12
-    cite: "Williams et al. (2022)"
-    title: "Gender Differences in Cardiac Chronotropic Control: Implications for Heart Rate Variability Research"
-    journal: "Applied Psychophysiology and Biofeedback"
-    year: 2022
-    doi: "10.1007/s10484-021-09528-w"
-    pmid: 34817765
-    type: observational
-  - id: S13
-    cite: "Singhal et al. (2026)"
-    title: "Normative Heart Rate Variability Parameters Across Age and Gender in Healthy Adults from an Apex Tertiary Care Centre in Southern India"
-    journal: "Annals of Neurosciences"
-    year: 2026
-    doi: "10.1177/09727531261454450"
-    pmid: 42389362
-    type: observational
 evidenceMap:
   - claim: "RMSSD is the root mean square of successive differences between adjacent heartbeats; it is the preferred metric for short recordings."
     sources: [S1, S2]
@@ -190,16 +174,6 @@ evidenceMap:
     class: context-dependent
     claimType: device
     limitation: "Official documentation; availability scoped to specific OS versions; what apps record via this type depends on each app."
-  - claim: "Sex changes how HRV relates to heart rate; the authors of a large laboratory study argue that routine 'adjustments' of HRV for heart period are unjustified."
-    sources: [S12]
-    class: context-dependent
-    quote: "these data suggest that routine \"adjustments\" to HRV for the heart period are unjustified and problematic at best"
-    limitation: "One laboratory sample with short resting recordings; the argument against adjustments is the authors' interpretation, not a consensus."
-  - claim: "Reference values for short-term HRV differ between populations, so ranges from one population do not transfer directly to another."
-    sources: [S13, S5]
-    class: context-dependent
-    quote: "existing reference values are largely derived from Western populations, underscoring the need for region-specific normative HRV data"
-    limitation: "The newest study is a single regional sample from southern India with short daytime ECG recordings; not night-time wearable values."
 ---
 
 ## What is RMSSD?
@@ -229,7 +203,7 @@ The context is part of the measurement. RMSSD depends on posture, breathing, tim
 ## What affects RMSSD?
 
 - Age. {{fact:hrv.age.trend}} [S4, S5]. Individuals vary widely at every age; population medians are not personal targets. The full tables live in the [normal HRV by age](/articles/normal-hrv-by-age) article.
-- Sex. Studies report differences between women and men, with the direction and size depending on age and population [S4]. In one large laboratory sample, women had higher HRV despite faster heart rates, and sex changed how HRV related to heart rate — one reason the authors argue that routine "adjustments" of HRV for heart rate are unjustified [S12]. A 2026 study from southern India found the same age decline and higher values in women, and its authors note that most existing reference values come from Western populations [S13].
+- Sex. Studies report differences between women and men, with the direction and size depending on age and population [S4].
 - Breathing. The dominant short-term driver, through respiratory sinus arrhythmia: breathing rate and depth during the recording change the value [S2, S3].
 - Conditions. Posture, time of day, and sleep versus waking all change what the same heart does during the measurement [S5, S8].
 - Day-to-day conditions. A single reading can shift from one day or night to the next, which is why repeated measurements under comparable conditions are recommended [S2, S8].

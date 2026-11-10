@@ -2692,6 +2692,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1376,
     "height": 768
   },
+  "/images/science/mechanisms-depression-anxiety-and-hrv.avif": {
+    "width": 1184,
+    "height": 896
+  },
+  "/images/science/mechanisms-depression-anxiety-and-hrv.jpg": {
+    "width": 1184,
+    "height": 896
+  },
+  "/images/science/mechanisms-depression-anxiety-and-hrv.webp": {
+    "width": 1184,
+    "height": 896
+  },
   "/images/science/mechanisms-exercise-and-hrv.avif": {
     "width": 1376,
     "height": 768
