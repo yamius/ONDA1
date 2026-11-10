@@ -172,6 +172,22 @@ sources:
     pmid: 37845341
     type: randomized-trial
     note: "Authors declare no competing interests"
+  - id: S17
+    cite: "Fox, Biddell & King (2025)"
+    title: "A semi-randomised control trial assessing psychophysiological effects of breathwork and cold immersion"
+    journal: "Scientific Reports"
+    year: 2025
+    doi: "10.1038/s41598-025-29187-9"
+    pmid: 41388053
+    type: other
+  - id: S18
+    cite: "Fincham et al. (2024)"
+    title: "Effects of brief remote high ventilation breathwork with retention on mental health and wellbeing: a randomised placebo-controlled trial"
+    journal: "Scientific Reports"
+    year: 2024
+    doi: "10.1038/s41598-024-64254-7"
+    pmid: 39043650
+    type: randomized-trial
 evidenceMap:
   - claim: "High ventilation breathwork covers practices that deliberately manipulate breathing and is associated with marked changes in subjective experience and in nervous-system function."
     sources: [S5]
@@ -287,6 +303,16 @@ evidenceMap:
     claimType: physiology
     quote: "Reliable increases in axillary temperature from normal to slight or moderate fever zone (up to 38.3°C) were observed among meditators only during the Forceful Breath type of g-tummo meditation"
     limitation: "Small group of expert monks; field conditions."
+  - claim: "In a large blinded trial, remote daily fast breathing with long breath holds did not reduce stress more than a placebo breathing protocol; both groups improved."
+    sources: [S18]
+    class: emerging
+    quote: "There was a significant improvement in stress pre-post-intervention in both groups, however there was no significant difference in such improvement between groups."
+    limitation: "A single trial in healthy young adults with remote audio sessions and self-reported outcomes."
+  - claim: "A month-long Wim Hof Method programme gave larger momentary self-reported gains in energy and clarity than meditation, with small lasting changes."
+    sources: [S17]
+    class: emerging
+    quote: "WHM conditions showed greater momentary improvements in self-reported energy, mental clarity, and ability to handle stress following daily protocol compared with meditation."
+    limitation: "Semi-randomised, self-selected participants, mainly self-reported outcomes, active meditation control; HRV was not the main outcome."
 ---
 
 ## What is fast breathing?
@@ -317,7 +343,7 @@ evidenceMap:
 
 **Inflammatory response in the laboratory. Emerging.** In the best-known trial, {{fact:study.kox2014.groups}} were given an injected bacterial toxin (endotoxin). The trained group, taught meditation, breathing techniques and cold exposure together, had a faster and higher anti-inflammatory response, lower pro-inflammatory proteins and fewer flu-like symptoms [S1]. Because the training combined all three, the effect cannot be attributed to breathing alone. A later pilot study from the same group separated the parts in {{fact:study.zwaag2022.participants}}: cold training alone did not meaningfully change the inflammatory response, the breathing exercise did, and adding cold strengthened the breathing effect [S2]. A systematic review of {{fact:study.almahayni2024.trials}} concluded that the method may reduce inflammation, with few and mostly small studies [S4]. All of this comes from short-lived laboratory inflammation in healthy volunteers, not from people with inflammatory or autoimmune disease. The cold side of these studies is covered on the [cold exposure](/science/evidence/cold-exposure) page.
 
-**Mood, anxiety and stress. Emerging and mixed.** In a remote randomised trial, daily breathwork improved mood more than mindfulness meditation; the exhale-focused cyclic sighing arm did best, and cyclic hyperventilation with retention was one of the arms compared [S3]. In women with high depressive symptoms, a Wim Hof-based programme with cold showers and a slow-breathing programme with warm showers led to equivalent improvements in depression, anxiety and stress; all participants who dropped out were in the Wim Hof group [S15]. In another small trial, daily Wim Hof practice for about two weeks did not improve heart rate variability, blood pressure or psychological measures compared with controls [S16]. Each of these is a single study.
+**Mood, anxiety and stress. Emerging and mixed.** In a remote randomised trial, daily breathwork improved mood more than mindfulness meditation; the exhale-focused cyclic sighing arm did best, and cyclic hyperventilation with retention was one of the arms compared [S3]. In women with high depressive symptoms, a Wim Hof-based programme with cold showers and a slow-breathing programme with warm showers led to equivalent improvements in depression, anxiety and stress; all participants who dropped out were in the Wim Hof group [S15]. In another small trial, daily Wim Hof practice for about two weeks did not improve heart rate variability, blood pressure or psychological measures compared with controls [S16]. In the largest blinded trial of this style so far, healthy young adults did daily remote sessions of fast breathing with long breath holds or a placebo version with slower breathing and short holds: stress fell in both groups with no difference between them, and anxiety, depression, wellbeing and sleep did not differ either [S18]. In a semi-randomised trial, about a month of the Wim Hof Method gave larger momentary self-reported gains in energy, clarity and handling stress than meditation, while lasting changes were small [S17]. Each of these is a single study.
 
 **Sport performance. Emerging; no benefit shown.** A single session of Wim Hof breathing before repeated sprints did not improve peak power, average power or fatigue in amateur runners, despite large changes in oxygen and carbon dioxide [S6]. The systematic review found mixed effects on exercise performance [S4].
 

@@ -134,6 +134,14 @@ sources:
     doi: "10.3390/s26041325"
     pmid: 41755264
     type: observational
+  - id: S15
+    cite: "North et al. (2026)"
+    title: "Test-retest reliability of time- and frequency-domain measures of short-term resting heart rate variability in a healthy young population"
+    journal: "International Journal of Psychophysiology"
+    year: 2026
+    doi: "10.1016/j.ijpsycho.2026.113341"
+    pmid: 41765049
+    type: observational
 evidenceMap:
   - claim: "The reference method for HRV interval measurement is the ECG, which times the heart's electrical R peaks."
     sources: [S1, S4]
@@ -291,6 +299,11 @@ evidenceMap:
     claimType: measurement
     quote: "Subjective feelings of readiness may not correspond to activity tracker biometrics and should be taken into consideration when calculating readiness scores and providing personalized recommendations based on HRV."
     limitation: "Small observational study with a single commercial tracker; all authors are employed by PepsiCo R&D (Gatorade Sports Science Institute), which funded the study; needs independent replication."
+  - claim: "Repeatability differs by metric: short resting RMSSD was highly repeatable across laboratory sessions in healthy young adults, while a peak-frequency measure was not."
+    sources: [S15]
+    class: context-dependent
+    quote: "The measures best thought to reflect vagal tone (RMSSD and ln-HF) did show strong reliability supporting the use of these parameters as a consistent trait-like quality of an individual"
+    limitation: "One laboratory study with ECG-quality recordings in healthy young adults; wearable night-time values were not tested."
 ---
 
 ## What is wearable HRV?
@@ -366,7 +379,7 @@ For Apple Watch, a living systematic review and meta-analysis (Lambe et al., 202
 
 Apple's ecosystem facts belong here as device facts: Apple Health stores HRV as SDNN [S6], recent watch models expose two HRV variants [S7], and the platform now also accepts an RMSSD-type value [S8] — scoped statements about what is recorded, not about health.
 
-**Methodological guidance.** Current guidelines state that the input signal, recording length, setting, breathing and analytical approach all affect rigor and reliability [S5], and that findings from wearable HRV — including in research — should be interpreted and contextualized within these limitations [S5]. The everyday extension is comparing like with like.
+**Methodological guidance.** Current guidelines state that the input signal, recording length, setting, breathing and analytical approach all affect rigor and reliability [S5], and that findings from wearable HRV — including in research — should be interpreted and contextualized within these limitations [S5]. The everyday extension is comparing like with like. Repeatability is also metric-specific: in a laboratory study of healthy young adults, short resting RMSSD was highly repeatable across sessions while a peak-frequency measure was not [S15] — one more reason to follow one metric under matched conditions.
 
 **Unknown.** How well these methods generalize across the variety of consumer devices and proprietary algorithms; how they perform during unrestricted daily movement and across overnight windows that devices define differently; how they behave in people with arrhythmias or specific conditions; and when a change a wearable detects becomes clinically meaningful. None of this is settled — which is a reason for measurement literacy, not for discarding the data.
 

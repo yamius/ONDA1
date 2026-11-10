@@ -173,6 +173,14 @@ sources:
     title: "What ONDA measures and how it reads your signals"
     url: "https://onda-life.com/measurements"
     type: product-documentation
+  - id: S19
+    cite: "Wang et al. (2025)"
+    title: "Heart rate variability in mental disorders: an umbrella review of meta-analyses"
+    journal: "Translational Psychiatry"
+    year: 2025
+    doi: "10.1038/s41398-025-03339-x"
+    pmid: 40155386
+    type: systematic-review
 evidenceMap:
   - claim: "HRV reflects the parasympathetic (cardiac vagal) contribution to heart regulation only indirectly; vagal tone itself is not measured (fact claim.vagalTone)."
     sources: [S3]
@@ -318,6 +326,11 @@ evidenceMap:
     claimType: device
     quote: "ONDA’s signals are descriptive comparisons with your own baseline — interpretations to guide practice, not measurements of stress and not a medical assessment."
     limitation: "Product documentation scope statement."
+  - claim: "Groups with some mental disorders show lower HRV than healthy controls, at most at a 'suggestive' level of evidence; for depression and generalized anxiety the evidence is weaker."
+    sources: [S19]
+    class: context-dependent
+    quote: "evidence was suggestive for 7 (13.2%) pooled analyses, indicating decreased HRV in dementia, PTSD, somatic symptom disorders, functional somatic syndromes, and schizophrenia"
+    limitation: "Umbrella review of meta-analyses in clinical samples; inherits their biases; cross-sectional group differences, not a diagnostic, screening or predictive test."
 ---
 
 ## What can a single HRV value tell you?
@@ -370,9 +383,11 @@ These are population associations from clinical-grade ECG recordings, mostly in 
 
 **Context-dependent — single readings.** HRV findings are easy to misread without their measurement context [S3]. What holds up best is the direction of your own readings over time, taken under similar conditions.
 
+**Context-dependent — mental health.** An umbrella review of meta-analyses (Wang et al., 2025) compared HRV between people with mental disorders and healthy controls [S19]. On the authors' grading, lower HRV reached at most a "suggestive" level of evidence — for conditions such as PTSD, dementia and schizophrenia — and the evidence for depression and generalized anxiety was weaker [S19]. These are group differences in clinical samples. They do not show which comes first, and they do not make a low reading a sign of a mental disorder.
+
 ## What it does not tell you
 
-- **Not your stress level or a diagnosis.** One value says nothing specific about your mental state or about disease [S1].
+- **Not your stress level or a diagnosis.** One value says nothing specific about your mental state or about disease [S1]. Even the group differences seen in mental disorders are modest and do not work as a test [S19].
 - **Not your rank.** A higher or lower number than someone else's says little about either of you [S5, S6].
 - **Not your fitness or "readiness".** Neither the raw value nor a proprietary score is a validated measure of these on its own [S12, S13].
 - **Not a personal risk forecast.** Population risk findings do not apply to one healthy person's reading [S15, S16].

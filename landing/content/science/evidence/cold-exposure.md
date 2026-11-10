@@ -169,6 +169,22 @@ sources:
     pmid: 35213875
     type: randomized-trial
     note: "Pilot study in healthy young men from the group behind Kox 2014"
+  - id: S17
+    cite: "Jeon & Yeo (2026)"
+    title: "Temperature-dependent effects of post-exercise cold-water immersion on recovery: a systematic review and meta-analysis"
+    journal: "BMC Sports Science, Medicine and Rehabilitation"
+    year: 2026
+    doi: "10.1186/s13102-026-01912-5"
+    pmid: 42870311
+    type: meta-analysis
+  - id: S18
+    cite: "Fox, Biddell & King (2025)"
+    title: "A semi-randomised control trial assessing psychophysiological effects of breathwork and cold immersion"
+    journal: "Scientific Reports"
+    year: 2025
+    doi: "10.1038/s41598-025-29187-9"
+    pmid: 41388053
+    type: other
 evidenceMap:
   - claim: "Randomised trials of cold-water immersion in healthy adults used baths or showers at a range of temperatures and durations."
     sources: [S1]
@@ -290,6 +306,16 @@ evidenceMap:
     claimType: safety
     quote: "The cold shock response, triggered within seconds of immersion, can cause death through aspiration, hypocapnia-induced cerebral hypoperfusion, and cardiac arrhythmia before core temperature begins to fall"
     limitation: "Narrative review of drowning physiology."
+  - claim: "After exercise, single cold-water immersions reduced muscle soreness and muscle-damage markers, but no water temperature clearly outperformed the others."
+    sources: [S17]
+    class: context-dependent
+    quote: "The review protocol was not prospectively registered, and temperature subgroup analyses should be considered exploratory."
+    limitation: "Recovery outcomes, not HRV or health; high heterogeneity; the review was not pre-registered and the authors call its temperature subgroups exploratory."
+  - claim: "A month-long Wim Hof Method programme, combining breathing with cold, gave larger momentary self-reported gains in energy and clarity than meditation, with small lasting changes; it cannot isolate the effect of cold."
+    sources: [S18]
+    class: emerging
+    quote: "WHM conditions showed greater momentary improvements in self-reported energy, mental clarity, and ability to handle stress following daily protocol compared with meditation."
+    limitation: "Semi-randomised, self-selected participants, mainly self-reported outcomes, active meditation control rather than placebo; breathing and cold were combined."
 ---
 
 ## What counts as cold exposure?
@@ -313,11 +339,11 @@ Many studies are small, often include only men, and use different temperatures a
 
 ## What does the evidence show?
 
-**Stress, mood and sleep. Emerging.** A meta-analysis of randomised trials in healthy adults found lower stress twelve hours after cold-water immersion, but not immediately or at later time points; sleep quality and quality of life improved, while mood did not [S1]. The authors note few trials and small samples [S1].
+**Stress, mood and sleep. Emerging.** A meta-analysis of randomised trials in healthy adults found lower stress twelve hours after cold-water immersion, but not immediately or at later time points; sleep quality and quality of life improved, while mood did not [S1]. The authors note few trials and small samples [S1]. In a semi-randomised trial of the Wim Hof Method, which combines breathing with cold exposure, about a month of daily practice gave larger momentary self-reported gains in energy, clarity and handling stress than meditation, while lasting changes were small [S18]. Because breathing and cold came together, the trial cannot show what cold adds.
 
 **Sickness absence. Emerging.** In a large randomised trial, people who ended their shower with cold water for a month reported fewer days off work sick, but did not report fewer days of illness [S8]. Outcomes were self-reported, and participants knew which group they were in.
 
-**Recovery after exercise. Context-dependent.** Cold-water immersion reduced muscle soreness after exercise compared with rest, in small, low-quality trials; it was not shown to beat warm-water or contrast baths [S9]. But in a trial of men doing strength training, those who used cold-water immersion after each session for twelve weeks gained less strength and muscle than those who used active recovery [S10]. If muscle growth is the goal, routine plunges straight after strength training may work against it. For whole-body cryotherapy, the evidence on muscle soreness is of very low quality [S11].
+**Recovery after exercise. Context-dependent.** Cold-water immersion reduced muscle soreness after exercise compared with rest, in small, low-quality trials; it was not shown to beat warm-water or contrast baths [S9]. But in a trial of men doing strength training, those who used cold-water immersion after each session for twelve weeks gained less strength and muscle than those who used active recovery [S10]. If muscle growth is the goal, routine plunges straight after strength training may work against it. A 2026 meta-analysis of single post-exercise immersions found less soreness and lower muscle-damage markers, but no water temperature clearly beat the others; the authors call those temperature comparisons exploratory [S17]. For whole-body cryotherapy, the evidence on muscle soreness is of very low quality [S11].
 
 **Metabolism, brown fat and insulin. Emerging.** Ten days of mild cold acclimation increased brown fat activity and heat production in a small study [S12], and a similar protocol improved insulin sensitivity in a small, uncontrolled study of people with diabetes [S13]. Both used mild cold air over many hours, not short plunges. A review of cold-water studies concludes that effects on body fat and insulin look promising but remain debated [S2].
 

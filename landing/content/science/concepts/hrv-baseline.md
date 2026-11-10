@@ -114,6 +114,14 @@ sources:
     doi: "10.3109/00365510902946984"
     pmid: 19424916
     type: observational
+  - id: S12
+    cite: "North et al. (2026)"
+    title: "Test-retest reliability of time- and frequency-domain measures of short-term resting heart rate variability in a healthy young population"
+    journal: "International Journal of Psychophysiology"
+    year: 2026
+    doi: "10.1016/j.ijpsycho.2026.113341"
+    pmid: 41765049
+    type: observational
 evidenceMap:
   - claim: "A personal baseline needs many readings; isolated recordings do not establish one."
     sources: [S10]
@@ -229,6 +237,11 @@ evidenceMap:
     claimType: device
     quote: "ONDA’s signals are descriptive comparisons with your own baseline — interpretations to guide practice, not measurements of stress and not a medical assessment."
     limitation: "Product documentation scope statement; descriptive comparisons only."
+  - claim: "Under controlled laboratory conditions, short resting RMSSD measured on separate occasions in healthy young adults was highly repeatable, while some frequency-domain measures were less so."
+    sources: [S12]
+    class: context-dependent
+    quote: "The measures best thought to reflect vagal tone (RMSSD and ln-HF) did show strong reliability supporting the use of these parameters as a consistent trait-like quality of an individual"
+    limitation: "One study in healthy young adults with short seated laboratory recordings; not tested on night-time wearable values or in other age groups."
 ---
 
 ## What is an HRV baseline?
@@ -261,7 +274,7 @@ The metric must stay fixed. RMSSD and SDNN summarize different aspects of the he
 
 **Established.** Healthy adults differ enormously in HRV, and no agreed normative values exist for short-term measures [S3]. Values from different devices, metrics and recording conditions are not interchangeable [S6, S7], and recordings of different lengths cannot be compared directly [S5].
 
-**Context-dependent.** A personal baseline needs many readings; isolated recordings do not establish one [S10]. The specific monitoring practice of rolling weekly means with the coefficient of variation comes from sports science, where a lower value than a peer's does not necessarily indicate a poorer physiological state [S10]. Wrist PPG tracks ECG-derived values under controlled resting conditions [S8]. Seasonal variation, where reported, is weak [S11]. And because HRV findings are easy to over-interpret, methodology reviews warn against reading too much into them [S4]. On average the value falls with age, while individuals vary widely at every age [S2].
+**Context-dependent.** A personal baseline needs many readings; isolated recordings do not establish one [S10]. Under matched laboratory conditions, short resting RMSSD in healthy young adults was highly repeatable from one session to the next, while some frequency-domain measures were not [S12] — support for treating your own level as fairly stable when conditions are comparable. The specific monitoring practice of rolling weekly means with the coefficient of variation comes from sports science, where a lower value than a peer's does not necessarily indicate a poorer physiological state [S10]. Wrist PPG tracks ECG-derived values under controlled resting conditions [S8]. Seasonal variation, where reported, is weak [S11]. And because HRV findings are easy to over-interpret, methodology reviews warn against reading too much into them [S4]. On average the value falls with age, while individuals vary widely at every age [S2].
 
 **Not settled.** The exact window a baseline should use is a practical choice, not a scientific constant: research protocols differ from app logic. ONDA's windows are app logic — documented below, defined once, and not a consensus of the field [S9].
 

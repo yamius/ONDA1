@@ -145,6 +145,14 @@ sources:
     pmid: 25450408
     type: other
     note: "Small uncontrolled pilot study of a newly designed oral patch"
+  - id: S14
+    cite: "Citherlet et al. (2026)"
+    title: "Acute ventilatory and hemodynamic responses to nasal versus oral breathing during normoxia, hypoxia, and hypercapnia"
+    journal: "Am J Physiol Heart Circ Physiol"
+    year: 2026
+    doi: "10.1152/ajpheart.90182.2026"
+    pmid: 42932917
+    type: other
 evidenceMap:
   - claim: "Nasal breathing conditions inspired air and defends against particles, at the cost of higher resistance than mouth breathing."
     sources: [S1]
@@ -230,6 +238,11 @@ evidenceMap:
     claimType: efficacy
     quote: "The POP is a useful device to treat patients with mild OSA and habitual OMB."
     limitation: "Thirty patients; no control group; a newly designed device."
+  - claim: "At rest, breathing through the nose or the mouth made little cardiovascular difference; under low oxygen or added carbon dioxide, nasal breathing gave a lower heart rate and oxygen use."
+    sources: [S14]
+    class: emerging
+    quote: "Breathing route had minimal consequences at rest in normoxia but became physiologically relevant under chemoreflex stress, where nasal breathing lowered oxygen consumption and heart rate whereas oral breathing produced less favorable cardiovascular responses."
+    limitation: "One small laboratory study in young adults with short breathing challenges; not everyday breathing and not a test of mouth taping."
 ---
 
 ## What does the nose do that the mouth does not?
@@ -244,7 +257,7 @@ The sinuses also continuously make nitric oxide, a gas that helps defend against
 
 **Memory and attention. Emerging.** In people with electrodes implanted for epilepsy, nasal breathing synchronised activity in smell- and memory-related brain areas, and this rhythm faded when breathing moved to the mouth; behavioural tests linked the phase of breathing to memory retrieval [S3]. This is a striking finding from very few patients. It does not show that habitual nose breathing improves memory or focus in daily life.
 
-**HRV and the nervous system. Emerging.** In a small study of young adults, five minutes of nasal breathing gave slightly lower diastolic blood pressure and a higher relative high-frequency share of HRV than mouth breathing, without changing heart rate [S4]. This is one short laboratory comparison. Breathing pace has a larger and better documented effect on HRV; see [how breathing changes HRV](/science/mechanisms/breathing-and-hrv) and [slow breathing](/science/evidence/slow-breathing).
+**HRV and the nervous system. Emerging.** In a small study of young adults, five minutes of nasal breathing gave slightly lower diastolic blood pressure and a higher relative high-frequency share of HRV than mouth breathing, without changing heart rate [S4]. This is one short laboratory comparison. A 2026 laboratory study found that breathing route made little difference at rest; under low oxygen or added carbon dioxide, nasal breathing gave a lower heart rate and oxygen use than mouth breathing [S14]. It tested short laboratory challenges, not everyday habits or mouth taping. Breathing pace has a larger and better documented effect on HRV; see [how breathing changes HRV](/science/mechanisms/breathing-and-hrv) and [slow breathing](/science/evidence/slow-breathing).
 
 **Exercise. Emerging.** In small trials, breathing only through the nose did not change power output in a short sprint test [S5] or endurance in repeated bench presses [S6]. Nose breathing during exercise seems neither to help nor to hurt performance much; at high intensities most people switch to the mouth anyway.
 
