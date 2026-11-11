@@ -1,5 +1,5 @@
 ---
-sourceHash: 24dbd78b7f09
+sourceHash: 25ad1e60cd2e
 title: "RMSSD — wat deze HRV-maat weerspiegelt en wat niet"
 metaTitle: "RMSSD: definitie, betekenis en meting"
 metaDescription: "RMSSD is een HRV-maat die vagaal gemedieerde veranderingen in de hartslag weerspiegelt. Wat ze meet, hoe wearables haar schatten en wat ze niet zegt."

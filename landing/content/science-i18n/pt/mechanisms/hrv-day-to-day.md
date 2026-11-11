@@ -1,5 +1,5 @@
 ---
-sourceHash: f70effe83d62
+sourceHash: 3fd0384f4bba
 title: "Por que a HRV muda de um dia para o outro"
 metaTitle: "Por que a HRV muda de um dia para o outro"
 metaDescription: "Por que a HRV varia de um dia para o outro: ruído normal, sono, álcool, treino, doença, estresse e ciclo menstrual — mecanismos e evidências."

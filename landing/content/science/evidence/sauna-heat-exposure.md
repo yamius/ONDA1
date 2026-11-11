@@ -226,7 +226,7 @@ evidenceMap:
     limitation: "Observational; the association weakened for two to three sessions a week after fuller adjustment."
   - claim: "The authors of the Finnish cohort studies describe the proposed mechanisms as postulated."
     sources: [S4]
-    class: debated
+    class: emerging
     claimType: physiology
     quote: "It has been postulated that regular sauna bathing may improve cardiovascular function via improved endothelium-dependent dilatation, reduced arterial stiffness"
     limitation: "Narrative review by the cohort's own authors."
@@ -304,7 +304,7 @@ evidenceMap:
     limitation: "Narrative review based largely on Finnish habits; conflicts in emphasis with the hyperthermia data."
   - claim: "Toxic elements are found in sweat, and their dermal excretion was reported to match urine in some highly exposed people; trials are lacking."
     sources: [S19]
-    class: debated
+    class: emerging
     claimType: physiology
     quote: "Research including appropriately sized trials is needed to establish safe, effective therapeutic protocols."
     limitation: "Small heterogeneous studies; a case report for mercury; no trial of sauna as treatment."

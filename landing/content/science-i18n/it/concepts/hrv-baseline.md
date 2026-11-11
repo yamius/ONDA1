@@ -1,5 +1,5 @@
 ---
-sourceHash: 10f190138735
+sourceHash: 8c1f6bec521e
 title: "Baseline dell'HRV: perché la tua normalità conta più di qualsiasi norma"
 metaTitle: "Baseline dell'HRV: la tua normalità, non una norma"
 metaDescription: "La baseline dell'HRV è il tuo intervallo abituale, non una media. Perché vale più delle norme per età, come la crea ONDA, cosa dice uno scostamento."

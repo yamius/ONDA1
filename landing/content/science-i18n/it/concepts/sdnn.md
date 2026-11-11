@@ -1,5 +1,5 @@
 ---
-sourceHash: 713da204f808
+sourceHash: 49d151756087
 title: "SDNN: cosa misura questa metrica dell'HRV e cosa no"
 metaTitle: "SDNN: definizione, significato e il caso Apple"
 metaDescription: "Lo SDNN è la metrica dell'HRV che Apple Health memorizza. Cosa misura, in cosa differisce dall'RMSSD e perché i due numeri non si possono confrontare."

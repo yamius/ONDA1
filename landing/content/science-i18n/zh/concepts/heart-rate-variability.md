@@ -1,5 +1,5 @@
 ---
-sourceHash: "030dc9f0c5b6"
+sourceHash: "ec462a9554b9"
 title: "心率变异性：它是什么、反映什么、又不是什么"
 metaTitle: "心率变异性（HRV）：定义与证据"
 metaDescription: "心率变异性是心律在相邻心跳之间的自然波动。本文介绍哪些因素塑造它、它反映了什么，以及它无法告诉你什么。"

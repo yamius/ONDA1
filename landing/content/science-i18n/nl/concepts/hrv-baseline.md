@@ -1,5 +1,5 @@
 ---
-sourceHash: 10f190138735
+sourceHash: 8c1f6bec521e
 title: "HRV-baseline: waarom je eigen normaal meer zegt dan welke norm ook"
 metaTitle: "HRV-baseline: je eigen normaal, geen norm"
 metaDescription: "Je HRV-baseline is je eigen bereik, geen bevolkingsgemiddelde. Waarom die meer zegt dan normen, hoe ONDA haar opbouwt en wat een afwijking betekent."

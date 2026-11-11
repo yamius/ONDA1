@@ -1,5 +1,5 @@
 ---
-sourceHash: 24dbd78b7f09
+sourceHash: 25ad1e60cd2e
 title: "RMSSD: o que esta métrica de HRV reflete e o que não reflete"
 metaTitle: "RMSSD: definição, significado e medição"
 metaDescription: "O RMSSD é uma métrica de HRV que reflete alterações da frequência cardíaca mediadas pelo nervo vago. O que mede, como os wearables o estimam e o que não diz."

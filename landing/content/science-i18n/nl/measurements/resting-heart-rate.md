@@ -1,5 +1,5 @@
 ---
-sourceHash: c6abda99ed2f
+sourceHash: a98dc321b8c4
 title: "Rusthartslag: wat hij weerspiegelt en hoe je hem meet"
 metaTitle: "Rusthartslag: betekenis en meting"
 metaDescription: "Je rusthartslag is je laagste hartslag in rust. Hoe je hem meet, wat normaal betekent, wat hem beïnvloedt en waarom je eigen trend meer zegt dan één getal."

@@ -1,5 +1,5 @@
 ---
-sourceHash: "9a926ed2ac7a"
+sourceHash: "986eda6f4234"
 title: "Sauna i ekspozycja na ciepło: co pokazują badania"
 metaTitle: "Sauna i ekspozycja na ciepło: badania i ryzyko"
 metaDescription: "Sauna fińska, kabiny na podczerwień, gorące kąpiele i kliniczna terapia ciepłem: co badania mówią o sercu, ciśnieniu krwi i nastroju oraz jakie są realne ryzyka."

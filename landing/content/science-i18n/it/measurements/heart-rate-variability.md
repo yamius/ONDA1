@@ -1,5 +1,5 @@
 ---
-sourceHash: 888be023249e
+sourceHash: f08d4393c77e
 title: "Ci si può fidare dell'HRV di uno smartwatch o di un anello?"
 metaTitle: "HRV da wearable: ci si può fidare di orologi e anelli?"
 metaDescription: "L'HRV di smartwatch e anelli è una stima dal segnale del polso, non una lettura ECG. Dove concorda con l'ECG, dove diverge e come leggere i tuoi numeri."

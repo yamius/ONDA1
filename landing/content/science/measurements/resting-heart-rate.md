@@ -194,7 +194,7 @@ evidenceMap:
     limitation: "Evidence from patients with heart disease; it is not advice about taking or stopping any medicine."
   - claim: "Caffeine acutely raises blood pressure, but its effect on heart rate is less consistent across studies, and regular users develop tolerance."
     sources: [S12]
-    class: debated
+    class: context-dependent
     claimType: physiology
     quote: "Heart rate data are less consistent, possibly due to the different ways HR is measured. Tolerance to the cardiovascular effects of caffeine has reliably been reported"
     limitation: "An older narrative review of mostly laboratory daytime studies; it does not address sleeping heart rate after late caffeine."

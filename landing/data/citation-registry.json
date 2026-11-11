@@ -23829,6 +23829,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
   },
+  "pmid:8971803": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Afferent and efferent branching axons from the rat lumbo-sacral spinal cord project both to the urinary bladder and the urethra as demonstrated by double retrograde neuronal labeling.",
+   "firstAuthor": "Russo",
+   "authors": [
+    "Russo",
+    "Conte"
+   ],
+   "year": 1996,
+   "journal": "Neurosci Lett",
+   "doi": "10.1016/s0304-3940(96)13204-3",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
+  },
   "pmid:9054347": {
    "kind": "pmid",
    "valid": true,

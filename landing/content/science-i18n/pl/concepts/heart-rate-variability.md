@@ -1,5 +1,5 @@
 ---
-sourceHash: "030dc9f0c5b6"
+sourceHash: "ec462a9554b9"
 title: "Zmienność rytmu serca: czym jest, co odzwierciedla, a czym nie jest"
 metaTitle: "Zmienność rytmu serca: definicja i dane naukowe"
 metaDescription: "Zmienność rytmu serca to naturalne wahania odstępów między uderzeniami serca. Co ją kształtuje, co odzwierciedla i czego ci nie powie."

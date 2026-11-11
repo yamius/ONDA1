@@ -1,5 +1,5 @@
 ---
-sourceHash: 10f190138735
+sourceHash: 8c1f6bec521e
 title: "Linia bazowa HRV: dlaczego twoja własna norma znaczy więcej niż jakakolwiek tabela"
 metaTitle: "Linia bazowa HRV: twoja norma, nie tabela"
 metaDescription: "Linia bazowa HRV to twój własny typowy zakres, a nie średnia populacyjna. Dlaczego wygrywa z normami wiekowymi, jak buduje ją ONDA i co zmiana może, a czego nie może znaczyć."

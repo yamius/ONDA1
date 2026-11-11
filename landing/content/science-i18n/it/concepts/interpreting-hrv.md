@@ -1,5 +1,5 @@
 ---
-sourceHash: 3cc1e726f852
+sourceHash: 4718cfe6151f
 title: "Cosa può e non può dirti un singolo valore di HRV"
 metaTitle: "Interpretare l'HRV: cosa dice un solo valore"
 metaDescription: "Cosa mostra davvero una lettura di HRV, perché un valore basso non è una diagnosi, perché alto non è sempre meglio e perché confrontarsi con altri inganna."

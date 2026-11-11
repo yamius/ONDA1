@@ -1,5 +1,5 @@
 ---
-sourceHash: "9a926ed2ac7a"
+sourceHash: "986eda6f4234"
 title: "Sauna ed esposizione al calore: che cosa mostrano le evidenze"
 metaTitle: "Sauna ed esposizione al calore: evidenze e rischi"
 metaDescription: "Sauna finlandese, cabine a infrarossi, bagni caldi e terapia del calore clinica: che cosa mostrano gli studi su cuore, pressione e umore, e i rischi reali."

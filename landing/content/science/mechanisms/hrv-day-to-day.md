@@ -216,6 +216,7 @@ sources:
     journal: "Circulation"
     year: 1996
     doi: "10.1161/01.CIR.93.5.1043"
+    pmid: 8971803
     type: guideline
   - id: S25
     cite: "ONDA — product documentation: What ONDA measures"
