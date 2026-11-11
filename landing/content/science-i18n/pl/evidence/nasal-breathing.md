@@ -1,5 +1,5 @@
 ---
-sourceHash: "74e0a1403ee6"
+sourceHash: 6a68f313f430
 title: "Oddychanie przez nos i zaklejanie ust: co pokazują badania"
 metaTitle: "Oddychanie nosem i zaklejanie ust: badania"
 metaDescription: "Co daje oddychanie przez nos, co badania mówią o śnie, skupieniu, HRV, wysiłku i astmie oraz dlaczego zaklejanie ust wymaga ostrożności."
@@ -49,6 +49,8 @@ evidenceMap:
     limitation: "Dwadzieścia osób, które tolerowały taśmę; brak grupy kontrolnej; jeden tydzień."
   - claim: "W małym pilotażowym badaniu bez grupy kontrolnej porowaty plaster na usta zmniejszył chrapanie i wskaźnik bezdechów w łagodnym bezdechu sennym z oddychaniem przez usta."
     limitation: "Trzydziestu pacjentów; brak grupy kontrolnej; nowo zaprojektowane urządzenie."
+  - claim: "W spoczynku oddychanie nosem lub ustami niewiele zmieniało wskaźniki sercowo-naczyniowe; przy niedoborze tlenu lub dodanym dwutlenku węgla oddychanie nosem dawało niższe tętno i mniejsze zużycie tlenu."
+    limitation: "Jedno małe badanie laboratoryjne młodych dorosłych z krótkimi próbami oddechowymi; nie codzienne oddychanie i nie test zaklejania ust."
 ---
 
 ## Co robi nos, czego nie robią usta?
@@ -63,7 +65,7 @@ Zatoki przynosowe stale wytwarzają też tlenek azotu — gaz, który pomaga w o
 
 **Pamięć i uwaga: wstępne dane.** U osób z elektrodami wszczepionymi z powodu padaczki oddychanie przez nos synchronizowało aktywność w obszarach mózgu związanych z węchem i pamięcią, a ten rytm zanikał, gdy oddech przechodził na usta; testy behawioralne powiązały fazę oddechu z przypominaniem [S3]. To uderzający wynik, ale pochodzi od bardzo niewielu pacjentów. Nie pokazuje, że nawykowe oddychanie przez nos poprawia pamięć lub skupienie w codziennym życiu.
 
-**HRV i układ nerwowy: wstępne dane.** W małym badaniu u młodych dorosłych pięć minut oddychania przez nos dało nieco niższe rozkurczowe ciśnienie krwi i większy względny udział wysokiej częstotliwości w zmienności rytmu serca (HRV) niż oddychanie przez usta, bez zmiany tętna [S4]. To jedno krótkie porównanie laboratoryjne. Tempo oddechu ma większy i lepiej udokumentowany wpływ na HRV; zobacz, [jak oddech zmienia HRV](/science/mechanisms/breathing-and-hrv) i [wolne oddychanie](/science/evidence/slow-breathing).
+**HRV i układ nerwowy: wstępne dane.** W małym badaniu u młodych dorosłych pięć minut oddychania przez nos dało nieco niższe rozkurczowe ciśnienie krwi i większy względny udział wysokiej częstotliwości w zmienności rytmu serca (HRV) niż oddychanie przez usta, bez zmiany tętna [S4]. To jedno krótkie porównanie laboratoryjne. Tempo oddechu ma większy i lepiej udokumentowany wpływ na HRV; zobacz, [jak oddech zmienia HRV](/science/mechanisms/breathing-and-hrv) i [wolne oddychanie](/science/evidence/slow-breathing). Badanie laboratoryjne z 2026 roku wykazało, że w spoczynku droga oddychania niewiele zmieniała; przy niedoborze tlenu lub dodanym dwutlenku węgla oddychanie nosem dawało niższe tętno i mniejsze zużycie tlenu niż oddychanie ustami [S14]. Sprawdzano krótkie próby laboratoryjne, a nie codzienne nawyki ani zaklejanie ust.
 
 **Wysiłek fizyczny: wstępne dane.** W małych badaniach oddychanie wyłącznie przez nos nie zmieniło mocy w krótkim teście sprinterskim [S5] ani wytrzymałości w powtarzanym wyciskaniu na ławce [S6]. Oddychanie przez nos podczas wysiłku wydaje się ani wyraźnie nie pomagać, ani nie szkodzić wynikom; przy dużej intensywności większość ludzi i tak przechodzi na oddychanie przez usta.
 

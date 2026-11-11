@@ -1,5 +1,5 @@
 ---
-sourceHash: "74e0a1403ee6"
+sourceHash: 6a68f313f430
 title: "Nasenatmung und Mund-Tape: Was die Evidenz zeigt"
 metaTitle: "Nasenatmung und Mund-Tape: die Evidenz"
 metaDescription: "Was die Atmung durch die Nase bewirkt, was Studien zu Schlaf, Fokus, HRV, Sport und Asthma zeigen und warum beim Mund-Tape Vorsicht geboten ist."
@@ -49,6 +49,8 @@ evidenceMap:
     limitation: "Zwanzig Personen, die das Tape vertrugen; keine Kontrollgruppe; eine Woche."
   - claim: "In einer kleinen unkontrollierten Pilotstudie senkte ein poröses Mundpflaster das Schnarchen und den Apnoe-Index bei leichter Schlafapnoe mit Mundatmung."
     limitation: "Dreißig Patienten; keine Kontrollgruppe; ein neu entwickeltes Produkt."
+  - claim: "In Ruhe machte Atmen durch Nase oder Mund für Herz und Kreislauf kaum einen Unterschied; bei Sauerstoffmangel oder zusätzlichem Kohlendioxid führte Nasenatmung zu niedrigerer Herzfrequenz und geringerem Sauerstoffverbrauch."
+    limitation: "Eine kleine Laborstudie mit jungen Erwachsenen und kurzen Atemproben; nicht das Atmen im Alltag und kein Test des Mundzuklebens."
 ---
 
 ## Was leistet die Nase, was der Mund nicht leistet?
@@ -63,7 +65,7 @@ Die Nasennebenhöhlen bilden außerdem ständig Stickstoffmonoxid, ein Gas, das 
 
 **Gedächtnis und Aufmerksamkeit: vorläufig.** Bei Menschen mit wegen Epilepsie implantierten Elektroden synchronisierte Nasenatmung die Aktivität in Hirnarealen für Riechen und Gedächtnis, und dieser Rhythmus ließ nach, wenn die Atmung auf den Mund wechselte; Verhaltenstests verbanden die Atemphase mit dem Abruf von Erinnerungen [S3]. Das ist ein bemerkenswerter Befund von sehr wenigen Patienten. Er zeigt nicht, dass gewohnheitsmäßige Nasenatmung im Alltag Gedächtnis oder Konzentration verbessert.
 
-**HRV und Nervensystem: vorläufig.** In einer kleinen Studie mit jungen Erwachsenen führten fünf Minuten Nasenatmung im Vergleich zur Mundatmung zu einem etwas niedrigeren diastolischen Blutdruck und einem höheren relativen Hochfrequenzanteil der Herzfrequenzvariabilität (HRV), ohne die Herzfrequenz zu verändern [S4]. Das ist ein einziger kurzer Laborvergleich. Das Atemtempo hat einen größeren und besser belegten Effekt auf die HRV; siehe [wie die Atmung die HRV verändert](/science/mechanisms/breathing-and-hrv) und [langsames Atmen](/science/evidence/slow-breathing).
+**HRV und Nervensystem: vorläufig.** In einer kleinen Studie mit jungen Erwachsenen führten fünf Minuten Nasenatmung im Vergleich zur Mundatmung zu einem etwas niedrigeren diastolischen Blutdruck und einem höheren relativen Hochfrequenzanteil der Herzfrequenzvariabilität (HRV), ohne die Herzfrequenz zu verändern [S4]. Das ist ein einziger kurzer Laborvergleich. Das Atemtempo hat einen größeren und besser belegten Effekt auf die HRV; siehe [wie die Atmung die HRV verändert](/science/mechanisms/breathing-and-hrv) und [langsames Atmen](/science/evidence/slow-breathing). Eine Laborstudie von 2026 fand, dass der Atemweg in Ruhe kaum einen Unterschied machte; bei Sauerstoffmangel oder zusätzlichem Kohlendioxid führte Nasenatmung zu niedrigerer Herzfrequenz und geringerem Sauerstoffverbrauch als Mundatmung [S14]. Geprüft wurden kurze Laborbelastungen, nicht Alltagsgewohnheiten und nicht das Zukleben des Mundes.
 
 **Sport: vorläufig.** In kleinen Studien veränderte reine Nasenatmung weder die Leistung in einem kurzen Sprinttest [S5] noch die Ausdauer bei wiederholtem Bankdrücken [S6]. Nasenatmung beim Sport scheint der Leistung weder viel zu nützen noch viel zu schaden; bei hoher Intensität wechseln die meisten Menschen ohnehin auf den Mund.
 

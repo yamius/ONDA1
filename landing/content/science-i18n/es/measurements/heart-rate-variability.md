@@ -1,5 +1,5 @@
 ---
-sourceHash: "914a9faa457f"
+sourceHash: 888be023249e
 title: "¿Puedes fiarte de la HRV de un reloj o un anillo inteligente?"
 metaTitle: "HRV en wearables: ¿puedes fiarte de un reloj o anillo?"
 metaDescription: "La HRV de un reloj o anillo inteligente se estima a partir del pulso, no es un ECG. Dónde coincide, dónde difiere y cómo leer tus números."
@@ -73,6 +73,8 @@ evidenceMap:
     limitation: "Un único estudio, adultos sanos, dos modelos de reloj y, como referencia, una banda de pecho con software de análisis; no describe la Recovery HRV ni modelos de reloj más recientes."
   - claim: "En un estudio observacional, cómo se sentían las personas no coincidió de forma constante con la HRV nocturna de un monitor de actividad."
     limitation: "Pequeño estudio observacional con un único monitor comercial; todos los autores trabajan en PepsiCo R&D (Gatorade Sports Science Institute), que financió el estudio; hace falta una replicación independiente."
+  - claim: "La repetibilidad depende del índice: el RMSSD corto en reposo se repitió bien entre sesiones de laboratorio en adultos jóvenes sanos, pero un índice de frecuencia pico no."
+    limitation: "Un estudio de laboratorio con registros de calidad ECG en adultos jóvenes sanos; no se comprobaron valores nocturnos de dispositivos."
 ---
 
 ## ¿Qué es la HRV de un wearable?
@@ -148,7 +150,7 @@ En el caso del Apple Watch, una revisión sistemática viva con metaanálisis (L
 
 Los datos del ecosistema de Apple tienen su sitio aquí como datos del dispositivo: Apple Health guarda la HRV como SDNN [S6], los modelos recientes del reloj ofrecen dos variantes de HRV [S7], y la plataforma ahora también admite un valor de tipo RMSSD [S8]; son afirmaciones acotadas sobre lo que se registra, no sobre la salud.
 
-**Guía / consenso de expertos.** Las guías actuales afirman que la señal de entrada, la duración del registro, el entorno, la respiración y el enfoque analítico influyen en el rigor y la fiabilidad [S5], y que los resultados de la HRV de wearables, también en investigación, deben interpretarse y contextualizarse dentro de esas limitaciones [S5]. Su extensión cotidiana es comparar lo comparable.
+**Guía / consenso de expertos.** Las guías actuales afirman que la señal de entrada, la duración del registro, el entorno, la respiración y el enfoque analítico influyen en el rigor y la fiabilidad [S5], y que los resultados de la HRV de wearables, también en investigación, deben interpretarse y contextualizarse dentro de esas limitaciones [S5]. Su extensión cotidiana es comparar lo comparable. La repetibilidad también depende del índice: en un estudio de laboratorio con adultos jóvenes sanos, el RMSSD corto en reposo se repitió bien entre sesiones, pero un índice de frecuencia pico no [S15]; otra razón para seguir un solo índice en condiciones comparables.
 
 **Desconocido.** Hasta qué punto estos métodos se generalizan a la variedad de dispositivos de consumo y algoritmos propietarios; cómo funcionan con el movimiento libre del día a día y en ventanas nocturnas que cada dispositivo define de forma distinta; cómo se comportan en personas con arritmias o con determinadas afecciones; y cuándo un cambio detectado por un wearable pasa a ser clínicamente relevante. Nada de esto está resuelto, y es un motivo para entender la medición, no para descartar los datos.
 

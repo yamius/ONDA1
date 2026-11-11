@@ -1,5 +1,5 @@
 ---
-sourceHash: "cde100beb74f"
+sourceHash: 948e8a39ec33
 title: "Medytacja a autonomiczny układ nerwowy: co pokazują badania"
 metaTitle: "Medytacja a układ nerwowy: co pokazują badania"
 metaDescription: "Jak medytacja wpływa według badań na HRV, tętno spoczynkowe, ciśnienie krwi i kortyzol — i dlaczego wolny oddech zaciemnia ten obraz."
@@ -80,6 +80,8 @@ evidenceMap:
     limitation: "Pojedyncze badanie z listą oczekujących jako kontrolą; zmienność rytmu serca mierzona w czasie sesji, a nie przez całą noc; fazy snu określane przez konsumencki pierścień."
   - claim: "W tym badaniu wypalenie osobiste wzrosło tuż po programie, a potem wróciło w stronę poziomu wyjściowego."
     limitation: "Pojedyncze badanie; drugorzędowy punkt końcowy."
+  - claim: "Krótkie sesje uważności mogą krótkotrwale podnosić RMSSD — według dowodów niskiej jakości z kilku małych badań."
+    limitation: "Przegląd systematyczny nielicznych, niejednorodnych badań z dowodami niskiej jakości; trwałych efektów nie badano; zmian oddychania w czasie praktyki nie oddzielono."
 ---
 
 ## Czym jest medytacja z perspektywy autonomicznego układu nerwowego?
@@ -130,7 +132,7 @@ Liczą się dwie skale czasu. *Efekt sesji* to zmiana zachodząca w trakcie medy
 
 ### HRV: w czasie sesji i po kursie
 
-**W czasie sesji: zależy od kontekstu.** HRV często zmienia się w trakcie medytacji, ale nie zawsze w tym samym kierunku. W dwóch małych badaniach skanowanie ciała podnosiło rytm serca powiązany z oddechem bardziej niż inne relaksujące zajęcia, nie zmieniając częstości serca [S6]. Mantra i modlitwa odmawiane na tyle wolno, by oddech zbliżył się do tempa {{fact:breath.resonance.typical}}, wywoływały duże wahania rytmu serca [S8]. Niektóre techniki Chi i jogi kundalini wywoływały bardzo duże oscylacje związane z wolnym oddechem [S9].
+**W czasie sesji: zależy od kontekstu.** HRV często zmienia się w trakcie medytacji, ale nie zawsze w tym samym kierunku. W dwóch małych badaniach skanowanie ciała podnosiło rytm serca powiązany z oddechem bardziej niż inne relaksujące zajęcia, nie zmieniając częstości serca [S6]. Mantra i modlitwa odmawiane na tyle wolno, by oddech zbliżył się do tempa {{fact:breath.resonance.typical}}, wywoływały duże wahania rytmu serca [S8]. Niektóre techniki Chi i jogi kundalini wywoływały bardzo duże oscylacje związane z wolnym oddechem [S9]. Przegląd systematyczny krótkich sesji uważności wykazał krótkotrwały wzrost RMSSD w kilku małych badaniach, przy dowodach niskiej jakości i bez danych o trwałych efektach [S18].
 
 <!-- myth-debunk -->
 **„Medytacja zawsze podnosi HRV”.** Badania tego nie potwierdzają. W jednym małym badaniu ogólne HRV spadało w czasie głębokiej medytacji heartfulness w porównaniu z kontrolą dopasowaną pod względem oddechu [S7], a pobudzającym stylom z tradycji wadżrajany towarzyszyło pobudzenie, a nie relaksacja [S2]. Medytacja to nie tylko stan autonomicznego wyciszenia [S9].

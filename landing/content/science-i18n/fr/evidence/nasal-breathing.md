@@ -1,5 +1,5 @@
 ---
-sourceHash: "74e0a1403ee6"
+sourceHash: 6a68f313f430
 title: "Respiration nasale et bouche scotchée : ce que montrent les données"
 metaTitle: "Respiration nasale et bouche scotchée : les données"
 metaDescription: "Ce que fait la respiration par le nez, ce que disent les études sur le sommeil, l’attention, la HRV, le sport et l’asthme, et les risques de la bouche scotchée."
@@ -50,6 +50,8 @@ evidenceMap:
     limitation: "Vingt personnes qui toléraient le scotch ; pas de groupe témoin ; une semaine."
   - claim: "Dans une petite étude pilote non contrôlée, un patch buccal poreux a réduit le ronflement et l’indice d’apnée dans l’apnée du sommeil légère avec respiration buccale."
     limitation: "Trente patients ; pas de groupe témoin ; un dispositif nouvellement conçu."
+  - claim: "Au repos, respirer par le nez ou par la bouche changeait peu les indices cardiovasculaires ; en manque d’oxygène ou avec du dioxyde de carbone ajouté, respirer par le nez donnait une fréquence cardiaque et une consommation d’oxygène plus basses."
+    limitation: "Une petite étude de laboratoire chez de jeunes adultes avec de courts tests respiratoires ; pas la respiration quotidienne ni un test du scotch sur la bouche."
 ---
 
 ## Que fait le nez que la bouche ne fait pas ?
@@ -64,7 +66,7 @@ Les sinus produisent aussi en continu du monoxyde d’azote, un gaz qui contribu
 
 **Mémoire et attention : émergent.** Chez des personnes porteuses d’électrodes implantées pour une épilepsie, la respiration nasale synchronisait l’activité des aires cérébrales liées à l’odorat et à la mémoire, et ce rythme s’estompait quand la respiration passait par la bouche ; des tests comportementaux ont relié la phase respiratoire au rappel des souvenirs [S3]. C’est un résultat frappant, obtenu chez très peu de patients. Il ne montre pas que respirer habituellement par le nez améliore la mémoire ou la concentration au quotidien.
 
-**HRV et système nerveux : émergent.** Dans une petite étude chez de jeunes adultes, cinq minutes de respiration nasale ont donné une pression artérielle diastolique légèrement plus basse et une part relative des hautes fréquences de la variabilité de la fréquence cardiaque (HRV, ou VFC) plus élevée que la respiration buccale, sans modifier la fréquence cardiaque [S4]. Il s’agit d’une seule courte comparaison en laboratoire. Le rythme respiratoire a sur la HRV un effet plus important et mieux documenté ; voir [comment la respiration modifie la HRV](/science/mechanisms/breathing-and-hrv) et [la respiration lente](/science/evidence/slow-breathing).
+**HRV et système nerveux : émergent.** Dans une petite étude chez de jeunes adultes, cinq minutes de respiration nasale ont donné une pression artérielle diastolique légèrement plus basse et une part relative des hautes fréquences de la variabilité de la fréquence cardiaque (HRV, ou VFC) plus élevée que la respiration buccale, sans modifier la fréquence cardiaque [S4]. Il s’agit d’une seule courte comparaison en laboratoire. Le rythme respiratoire a sur la HRV un effet plus important et mieux documenté ; voir [comment la respiration modifie la HRV](/science/mechanisms/breathing-and-hrv) et [la respiration lente](/science/evidence/slow-breathing). Une étude de laboratoire de 2026 a montré qu’au repos la voie respiratoire changeait peu de chose ; en manque d’oxygène ou avec du dioxyde de carbone ajouté, respirer par le nez donnait une fréquence cardiaque et une consommation d’oxygène plus basses que par la bouche [S14]. Elle a testé de courts défis en laboratoire, pas les habitudes quotidiennes ni le scotch sur la bouche.
 
 **Sport : émergent.** Dans de petits essais, respirer uniquement par le nez n’a modifié ni la puissance lors d’un court test de sprint [S5] ni l’endurance lors de répétitions au développé couché [S6]. Respirer par le nez pendant l’effort ne semble ni beaucoup aider ni beaucoup nuire à la performance ; à haute intensité, la plupart des gens passent de toute façon à la bouche.
 

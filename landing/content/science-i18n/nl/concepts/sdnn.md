@@ -1,5 +1,5 @@
 ---
-sourceHash: "642b27d8d4fd"
+sourceHash: 713da204f808
 title: "SDNN — wat deze HRV-maat meet en wat niet"
 metaTitle: "SDNN: definitie, betekenis en de rol van Apple"
 metaDescription: "SDNN is de HRV-maat die Apple Health opslaat. Wat ze meet, hoe ze verschilt van RMSSD en waarom je de twee getallen niet met elkaar kunt vergelijken."
@@ -59,6 +59,10 @@ evidenceMap:
     limitation: "Consensus van experts over de interpretatiepraktijk, geen direct experimenteel bewijs; vergelijken met je eigen trend onder vergelijkbare omstandigheden is de praktische vertaling."
   - claim: "Afwijkende slagen en ruis kunnen zich voordoen als variabiliteit en de waarde opdrijven."
     limitation: "Een waarschuwing over datakwaliteit; de omgang met artefacten verschilt per apparaat en algoritme."
+  - claim: "Geslacht verandert hoe HRV met de hartslag samenhangt; de auteurs van een grote laboratoriumstudie vinden routinematige ‘correcties’ van HRV voor de hartperiode ongerechtvaardigd."
+    limitation: "Eén laboratoriumsteekproef met korte rustopnames; het argument tegen correcties is de interpretatie van de auteurs, geen consensus."
+  - claim: "Referentiewaarden voor kortdurende HRV verschillen tussen bevolkingsgroepen, dus bereiken van de ene groep zijn niet direct over te zetten naar een andere."
+    limitation: "Eén regionale steekproef uit Zuid-India met korte ECG’s overdag; niet de SDNN van de Apple Watch en geen nachtelijke waarden."
 ---
 
 ## Wat is SDNN?
@@ -94,6 +98,7 @@ Voor de praktische kant: de [HRV-calculator](/tools/hrv) heeft een SDNN-modus vo
 - Meetduur. De bepalende factor voor deze maat: langere vensters nemen tragere ritmes op en geven hogere waarden, dus een korte meting en een registratie over de hele dag beschrijven verschillende werelden [S2].
 - Meetomstandigheden. De meetduur, de setting — lab of dagelijks leven — de ademhaling en de analysemethode bepalen allemaal de waarde en de zorgvuldigheid van elke vergelijking [S7].
 - Leeftijd. Gemiddeld neemt de hartslagvariabiliteit bij gezonde volwassenen af met de leeftijd [S4]; mensen verschillen onderling sterk, en bevolkingsgemiddelden zijn geen persoonlijke doelen. Tabellen per leeftijdsgroep staan in de [HRV-calculator](/tools/hrv) voor SDNN-waarden van de Apple Watch en in het artikel [normale HRV per leeftijd](/articles/normal-hrv-by-age) voor nachtelijke RMSSD.
+- Geslacht. In een grote laboratoriumsteekproef hadden vrouwen een hogere HRV ondanks een snellere hartslag, en geslacht veranderde hoe HRV met de hartslag samenhing – een van de redenen waarom de auteurs routinematige ‘correcties’ van HRV voor de hartslag ongerechtvaardigd vinden [S11]. Een studie uit Zuid-India uit 2026 vond dezelfde daling met de leeftijd en hogere waarden bij vrouwen; de auteurs merken op dat de meeste bestaande referentiewaarden uit westerse bevolkingsgroepen komen [S12].
 - Ademhaling. Ademfrequentie en ademdiepte tijdens de meting veranderen de waarde, via de ademgebonden schommeling die ze in het ritme schrijven [S2].
 - Signaalkwaliteit. Gemiste of valse slagen vertekenen de waarde, en afwijkende slagen kunnen zich voordoen als variabiliteit [S2].
 - Alledaagse omstandigheden. Net als bij andere HRV-maten kan één meting om gewone redenen afwijken; zie zulke verschuivingen als observaties, niet als oordelen.

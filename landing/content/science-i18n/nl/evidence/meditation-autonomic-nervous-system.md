@@ -1,5 +1,5 @@
 ---
-sourceHash: "cde100beb74f"
+sourceHash: 948e8a39ec33
 title: "Meditatie en het autonome zenuwstelsel: wat het bewijs laat zien"
 metaTitle: "Meditatie en het zenuwstelsel: het bewijs"
 metaDescription: "Wat onderzoek laat zien over meditatie en HRV, rusthartslag, bloeddruk en cortisol — en waarom langzaam ademen het beeld vertroebelt."
@@ -80,6 +80,8 @@ evidenceMap:
     limitation: "Eén studie met een wachtlijstcontrole; hartslagvariabiliteit gemeten tijdens de sessies, niet over de nacht; slaapfasen bepaald door een consumentenring."
   - claim: "In die studie nam persoonlijke burn-out direct na het programma toe, waarna die weer richting het uitgangsniveau ging."
     limitation: "Eén studie; secundaire uitkomst."
+  - claim: "Korte mindfulnesssessies kunnen de RMSSD kortdurend verhogen, volgens bewijs van lage kwaliteit uit enkele kleine studies."
+    limitation: "Systematisch overzicht van weinig, uiteenlopende studies met bewijs van lage kwaliteit; blijvende effecten niet onderzocht; ademveranderingen tijdens de oefening niet gescheiden."
 ---
 
 ## Wat is meditatie, voor het autonome zenuwstelsel?
@@ -130,7 +132,7 @@ Twee tijdschalen doen ertoe. Een *sessie-effect* is een verandering terwijl iema
 
 ### Hartslagvariabiliteit: tijdens een sessie en na een cursus
 
-**Tijdens een sessie: afhankelijk van de context.** HRV verandert vaak terwijl mensen mediteren, maar niet altijd in dezelfde richting. Een bodyscan verhoogde het ademgebonden hartritme in twee kleine studies meer dan andere ontspannende activiteiten, zonder de hartslag te veranderen [S6]. Een mantra en een gebed, zo langzaam opgezegd dat de ademhaling vertraagde tot {{fact:breath.resonance.typical}}, gaven grote schommelingen in het hartritme [S8]. Sommige chi- en kundalini-yogatechnieken gaven zeer grote schommelingen die samenhingen met langzaam ademen [S9].
+**Tijdens een sessie: afhankelijk van de context.** HRV verandert vaak terwijl mensen mediteren, maar niet altijd in dezelfde richting. Een bodyscan verhoogde het ademgebonden hartritme in twee kleine studies meer dan andere ontspannende activiteiten, zonder de hartslag te veranderen [S6]. Een mantra en een gebed, zo langzaam opgezegd dat de ademhaling vertraagde tot {{fact:breath.resonance.typical}}, gaven grote schommelingen in het hartritme [S8]. Sommige chi- en kundalini-yogatechnieken gaven zeer grote schommelingen die samenhingen met langzaam ademen [S9]. Een systematisch overzicht van korte mindfulnesssessies vond in enkele kleine studies een kortdurende stijging van de RMSSD, met bewijs van lage kwaliteit en zonder gegevens over blijvende effecten [S18].
 
 <!-- myth-debunk -->
 **‘Meditatie verhoogt HRV altijd.’** Het bewijs ondersteunt dat niet. In één kleine studie daalde de totale HRV tijdens diepe heartfulness-meditatie vergeleken met een controle met gelijk ademritme [S7], en activerende stijlen uit de vajrayana-traditie gingen samen met opwinding in plaats van ontspanning [S2]. Meditatie is niet uitsluitend een autonoom rustige toestand [S9].

@@ -99,6 +99,22 @@ sources:
     title: "heartRateVariabilityRMSSD (iOS/watchOS 27)"
     url: "https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilityrmssd"
     type: official
+  - id: S11
+    cite: "Williams et al. (2022)"
+    title: "Gender Differences in Cardiac Chronotropic Control: Implications for Heart Rate Variability Research"
+    journal: "Applied Psychophysiology and Biofeedback"
+    year: 2022
+    doi: "10.1007/s10484-021-09528-w"
+    pmid: 34817765
+    type: observational
+  - id: S12
+    cite: "Singhal et al. (2026)"
+    title: "Normative Heart Rate Variability Parameters Across Age and Gender in Healthy Adults from an Apex Tertiary Care Centre in Southern India"
+    journal: "Annals of Neurosciences"
+    year: 2026
+    doi: "10.1177/09727531261454450"
+    pmid: 42389362
+    type: observational
 evidenceMap:
   - claim: "SDNN is the standard deviation of the intervals between normal heartbeats over a recording (fact hrv.sdnn.definition)."
     sources: [S1, S2]
@@ -220,6 +236,16 @@ evidenceMap:
     claimType: measurement
     quote: "Abnormal beats may reflect cardiac dysfunction or noise that masquerades as HRV."
     limitation: "A data-quality caution; artefact handling differs between devices and algorithms."
+  - claim: "Sex changes how HRV relates to heart rate; the authors of a large laboratory study argue that routine 'adjustments' of HRV for heart period are unjustified."
+    sources: [S11]
+    class: context-dependent
+    quote: "these data suggest that routine \"adjustments\" to HRV for the heart period are unjustified and problematic at best"
+    limitation: "One laboratory sample with short resting recordings; the argument against adjustments is the authors' interpretation, not a consensus."
+  - claim: "Reference values for short-term HRV differ between populations, so ranges from one population do not transfer directly to another."
+    sources: [S12]
+    class: context-dependent
+    quote: "existing reference values are largely derived from Western populations, underscoring the need for region-specific normative HRV data"
+    limitation: "A single regional sample from southern India with short daytime ECG recordings; not Apple Watch SDNN or night-time values."
 ---
 
 ## What is SDNN?
@@ -255,6 +281,7 @@ For practical placement: the [HRV calculator](/tools/hrv) has an SDNN mode built
 - Recording length. The defining factor for this metric: longer windows accumulate slower rhythms and larger values, so a short reading and an all-day recording describe different worlds [S2].
 - Recording conditions. The length of the recording, the setting — laboratory or real life — breathing and the analysis method all shape the value and the rigor of any comparison [S7].
 - Age. On average, heart-rate variability diminishes with age in healthy adults [S4]; individuals vary widely, and population averages are not personal targets. Age-band tables live in the [HRV calculator](/tools/hrv) for Apple Watch SDNN values and in the [normal HRV by age](/articles/normal-hrv-by-age) article for night-time RMSSD.
+- Sex. In one large laboratory sample, women had higher HRV despite faster heart rates, and sex changed how HRV related to heart rate — one reason the authors argue that routine "adjustments" of HRV for heart rate are unjustified [S11]. A 2026 study from southern India found the same age decline and higher values in women, and its authors note that most existing reference values come from Western populations [S12].
 - Breathing. Breathing rate and depth during the recording change the value, through the breathing-linked oscillation they write into the rhythm [S2].
 - Signal quality. Missed or false beats distort the value, and abnormal beats can masquerade as variability [S2].
 - Everyday conditions. As with other HRV metrics, a single reading can deviate for ordinary reasons; treat such shifts as observations, not verdicts.

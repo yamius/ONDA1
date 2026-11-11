@@ -1,5 +1,5 @@
 ---
-sourceHash: "642b27d8d4fd"
+sourceHash: 713da204f808
 title: "SDNN: qué mide esta métrica de HRV y qué no"
 metaTitle: "SDNN: definición, significado y Apple"
 metaDescription: "El SDNN es la métrica de HRV que guarda Apple Health. Qué mide, en qué se diferencia del RMSSD y por qué los dos números no se pueden comparar."
@@ -60,6 +60,10 @@ evidenceMap:
     limitation: "Consenso de expertos sobre la práctica de interpretación, no datos experimentales directos; comparar con tu propia tendencia en condiciones comparables es su extensión práctica."
   - claim: "Los latidos anómalos y el ruido pueden hacerse pasar por variabilidad e inflar el valor."
     limitation: "Una advertencia sobre la calidad de los datos; el tratamiento de artefactos difiere entre dispositivos y algoritmos."
+  - claim: "El sexo cambia la relación entre la HRV y la frecuencia cardiaca; los autores de un gran estudio de laboratorio consideran injustificados los «ajustes» rutinarios de la HRV según el periodo cardiaco."
+    limitation: "Una sola muestra de laboratorio con registros cortos en reposo; el argumento contra los ajustes es la interpretación de los autores, no un consenso."
+  - claim: "Los valores de referencia de la HRV a corto plazo difieren entre poblaciones, así que los rangos de una población no se trasladan directamente a otra."
+    limitation: "Una sola muestra regional del sur de la India con ECG cortos de día; no es el SDNN del Apple Watch ni valores nocturnos."
 ---
 
 ## ¿Qué es el SDNN?
@@ -95,6 +99,7 @@ Para ubicarlo en la práctica: la [calculadora de HRV](/tools/hrv) tiene un modo
 - La duración del registro. Es el factor determinante de esta métrica: las ventanas más largas acumulan ritmos más lentos y valores mayores, así que una lectura breve y un registro de todo el día describen mundos distintos [S2].
 - Las condiciones del registro. La duración del registro, el entorno —laboratorio o vida real—, la respiración y el método de análisis moldean el valor y el rigor de cualquier comparación [S7].
 - La edad. En promedio, la variabilidad de la frecuencia cardíaca disminuye con la edad en adultos sanos [S4]; entre personas varía mucho, y los promedios poblacionales no son objetivos personales. Las tablas por grupos de edad están en la [calculadora de HRV](/tools/hrv) para los valores de SDNN del Apple Watch y en el artículo [HRV normal por edad](/articles/normal-hrv-by-age) para el RMSSD nocturno.
+- El sexo. En una gran muestra de laboratorio, las mujeres tenían una HRV más alta pese a una frecuencia cardiaca más rápida, y el sexo cambiaba la relación entre HRV y frecuencia cardiaca; es una de las razones por las que los autores consideran injustificados los «ajustes» rutinarios de la HRV según la frecuencia cardiaca [S11]. Un estudio de 2026 del sur de la India encontró el mismo descenso con la edad y valores más altos en las mujeres, y sus autores señalan que la mayoría de los valores de referencia existentes proceden de poblaciones occidentales [S12].
 - La respiración. La frecuencia y la profundidad de la respiración durante el registro cambian el valor, a través de la oscilación ligada a la respiración que dejan escrita en el ritmo [S2].
 - La calidad de la señal. Los latidos omitidos o falsos distorsionan el valor, y los latidos anómalos pueden hacerse pasar por variabilidad [S2].
 - Las condiciones cotidianas. Como ocurre con otras métricas de HRV, una sola lectura puede desviarse por motivos corrientes; trata esos cambios como observaciones, no como veredictos.

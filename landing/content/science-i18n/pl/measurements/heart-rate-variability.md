@@ -1,5 +1,5 @@
 ---
-sourceHash: "914a9faa457f"
+sourceHash: 888be023249e
 title: "Czy można ufać HRV ze smartwatcha lub pierścienia?"
 metaTitle: "HRV z zegarka lub pierścienia: czy można mu ufać?"
 metaDescription: "HRV ze smartwatcha lub pierścienia to szacunek z sygnału tętna, a nie odczyt EKG. Gdzie obie metody się zgadzają, gdzie rozchodzą i jak czytać swoje wyniki."
@@ -73,6 +73,8 @@ evidenceMap:
     limitation: "Pojedyncze badanie, zdrowi dorośli, dwa modele zegarka, jako referencja pas piersiowy z oprogramowaniem analitycznym; nie opisuje Recovery HRV ani nowszych modeli zegarka."
   - claim: "W jednym badaniu obserwacyjnym samopoczucie uczestników nie pokrywało się konsekwentnie z nocnym HRV z opaski aktywności."
     limitation: "Małe badanie obserwacyjne z jednym komercyjnym trackerem; wszyscy autorzy są pracownikami PepsiCo R&D (Gatorade Sports Science Institute), które sfinansowało badanie; potrzebna jest niezależna replikacja."
+  - claim: "Powtarzalność zależy od wskaźnika: krótkie RMSSD w spoczynku dobrze powtarzało się między sesjami laboratoryjnymi u zdrowych młodych dorosłych, a wskaźnik częstotliwości szczytowej nie."
+    limitation: "Jedno badanie laboratoryjne z zapisami jakości EKG u zdrowych młodych dorosłych; nocnych wartości z urządzeń nie sprawdzano."
 ---
 
 ## Czym jest HRV z urządzeń ubieralnych?
@@ -148,7 +150,7 @@ W przypadku Apple Watch „żywy” przegląd systematyczny z metaanalizą (Lamb
 
 Fakty dotyczące ekosystemu Apple należą tutaj jako fakty o urządzeniach: Apple Health zapisuje HRV jako SDNN [S6], najnowsze modele zegarka udostępniają dwa warianty HRV [S7], a platforma przyjmuje teraz także wartość typu RMSSD [S8] — to stwierdzenia o ograniczonym zakresie, dotyczące tego, co jest rejestrowane, a nie zdrowia.
 
-**Wytyczne / konsensus ekspertów.** Aktualne wytyczne stwierdzają, że sygnał wejściowy, długość zapisu, miejsce pomiaru, oddech i sposób analizy wpływają na rzetelność i wiarygodność [S5] oraz że wyniki dotyczące HRV z urządzeń ubieralnych — także w badaniach — należy interpretować i osadzać w kontekście tych ograniczeń [S5]. W codziennym użyciu oznacza to porównywanie porównywalnego.
+**Wytyczne / konsensus ekspertów.** Aktualne wytyczne stwierdzają, że sygnał wejściowy, długość zapisu, miejsce pomiaru, oddech i sposób analizy wpływają na rzetelność i wiarygodność [S5] oraz że wyniki dotyczące HRV z urządzeń ubieralnych — także w badaniach — należy interpretować i osadzać w kontekście tych ograniczeń [S5]. W codziennym użyciu oznacza to porównywanie porównywalnego. Powtarzalność też zależy od wskaźnika: w badaniu laboratoryjnym zdrowych młodych dorosłych krótkie RMSSD w spoczynku dobrze powtarzało się między sesjami, a wskaźnik częstotliwości szczytowej nie [S15] — to kolejny powód, by śledzić jeden wskaźnik w porównywalnych warunkach.
 
 **Nieznane.** Na ile te metody dają się uogólnić na różnorodne urządzenia konsumenckie i autorskie algorytmy; jak działają przy swobodnym ruchu w ciągu dnia i w oknach nocnych, które urządzenia definiują różnie; jak zachowują się u osób z zaburzeniami rytmu lub określonymi chorobami; i kiedy zmiana wykryta przez urządzenie ubieralne staje się istotna klinicznie. Nic z tego nie jest rozstrzygnięte — i to powód, by rozumieć pomiary, a nie by odrzucać dane.
 

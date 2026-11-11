@@ -1,5 +1,5 @@
 ---
-sourceHash: "6f5f5a221096"
+sourceHash: af5d6a3da844
 title: "Exposición al frío: qué muestra la evidencia y dónde empieza el riesgo"
 metaTitle: "Exposición al frío: evidencia y riesgos"
 metaDescription: "Baños y duchas fríos, frío en la cara: qué muestran los estudios sobre estrés, bajas, recuperación y metabolismo, qué omite la cifra de dopamina y los riesgos."
@@ -63,6 +63,10 @@ evidenceMap:
     limitation: "Grupo pequeño de hombres jóvenes; inmersión de una hora; niveles en plasma, no dopamina en el cerebro."
   - claim: "La respuesta de choque por frío puede causar la muerte por aspiración, menor flujo sanguíneo cerebral y arritmia antes de que baje la temperatura central; el alcohol modifica los riesgos."
     limitation: "Revisión narrativa de la fisiología del ahogamiento."
+  - claim: "Tras el ejercicio, las inmersiones únicas en agua fría redujeron el dolor muscular y los marcadores de daño muscular, pero ninguna temperatura del agua fue claramente superior."
+    limitation: "Resultados de recuperación, no HRV ni salud; alta heterogeneidad; la revisión no se registró de antemano y los autores consideran exploratorios los subgrupos de temperatura."
+  - claim: "Un programa de un mes del método Wim Hof, que combina respiración y frío, dio según los participantes mayores mejoras inmediatas de energía y claridad que la meditación, con cambios duraderos pequeños; no permite aislar el efecto del frío."
+    limitation: "Semialeatorizado, participantes autoseleccionados, resultados sobre todo autoinformados, control activo con meditación y no placebo; respiración y frío combinados."
 ---
 
 ## ¿Qué cuenta como exposición al frío?
@@ -86,11 +90,11 @@ Muchos estudios son pequeños, a menudo incluyen solo hombres y usan temperatura
 
 ## ¿Qué muestra la evidencia?
 
-**Estrés, estado de ánimo y sueño. Emergente.** Un metaanálisis de ensayos aleatorizados en adultos sanos encontró menos estrés doce horas después de la inmersión en agua fría, pero no inmediatamente ni en momentos posteriores; la calidad del sueño y la calidad de vida mejoraron, mientras que el estado de ánimo no [S1]. Los autores señalan que hay pocos ensayos y muestras pequeñas [S1].
+**Estrés, estado de ánimo y sueño. Emergente.** Un metaanálisis de ensayos aleatorizados en adultos sanos encontró menos estrés doce horas después de la inmersión en agua fría, pero no inmediatamente ni en momentos posteriores; la calidad del sueño y la calidad de vida mejoraron, mientras que el estado de ánimo no [S1]. Los autores señalan que hay pocos ensayos y muestras pequeñas [S1]. En un ensayo semialeatorizado del método Wim Hof, que combina respiración y frío, alrededor de un mes de práctica diaria dio, según los participantes, mayores mejoras inmediatas de energía, claridad y capacidad de manejar el estrés que la meditación, con cambios duraderos pequeños [S18]. Como la respiración y el frío iban juntos, el ensayo no puede mostrar lo que aporta el frío.
 
 **Bajas por enfermedad. Emergente.** En un amplio ensayo aleatorizado, las personas que terminaron su ducha con agua fría durante un mes declararon menos días de baja por enfermedad, pero no menos días de enfermedad [S8]. Los resultados fueron autoinformados, y los participantes sabían en qué grupo estaban.
 
-**Recuperación tras el ejercicio. Depende del contexto.** La inmersión en agua fría redujo las agujetas tras el ejercicio en comparación con el reposo, en ensayos pequeños y de baja calidad; no se demostró que superara a los baños de agua templada o de contraste [S9]. Pero en un ensayo con hombres que hacían entrenamiento de fuerza, quienes usaron la inmersión en agua fría después de cada sesión durante doce semanas ganaron menos fuerza y músculo que quienes hicieron recuperación activa [S10]. Si tu objetivo es ganar músculo, los baños fríos habituales justo después del entrenamiento de fuerza pueden jugar en contra. En cuanto a la crioterapia de cuerpo entero, la evidencia sobre las agujetas es de muy baja calidad [S11].
+**Recuperación tras el ejercicio. Depende del contexto.** La inmersión en agua fría redujo las agujetas tras el ejercicio en comparación con el reposo, en ensayos pequeños y de baja calidad; no se demostró que superara a los baños de agua templada o de contraste [S9]. Pero en un ensayo con hombres que hacían entrenamiento de fuerza, quienes usaron la inmersión en agua fría después de cada sesión durante doce semanas ganaron menos fuerza y músculo que quienes hicieron recuperación activa [S10]. Si tu objetivo es ganar músculo, los baños fríos habituales justo después del entrenamiento de fuerza pueden jugar en contra. En cuanto a la crioterapia de cuerpo entero, la evidencia sobre las agujetas es de muy baja calidad [S11]. Un metaanálisis de 2026 de inmersiones únicas tras el ejercicio encontró menos dolor muscular y marcadores de daño muscular más bajos, pero ninguna temperatura del agua superó claramente a las demás; los autores consideran exploratorias esas comparaciones de temperatura [S17].
 
 **Metabolismo, grasa parda e insulina. Emergente.** Diez días de aclimatación a un frío suave aumentaron la actividad de la grasa parda y la producción de calor en un estudio pequeño [S12], y un protocolo similar mejoró la sensibilidad a la insulina en un estudio pequeño y sin grupo de control con personas con diabetes [S13]. Ambos usaron aire frío suave durante muchas horas, no baños breves. Una revisión de estudios con agua fría concluye que los efectos sobre la grasa corporal y la insulina parecen prometedores, pero siguen en debate [S2].
 

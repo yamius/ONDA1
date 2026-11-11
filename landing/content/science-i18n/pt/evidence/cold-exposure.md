@@ -1,5 +1,5 @@
 ---
-sourceHash: "6f5f5a221096"
+sourceHash: af5d6a3da844
 title: "Exposição ao frio: o que mostram as evidências e onde está o risco"
 metaTitle: "Exposição ao frio: evidências e riscos"
 metaDescription: "Imersão fria, banho frio e frio no rosto: o que os estudos mostram sobre estresse, doença, recuperação e metabolismo, o que a dopamina omite e os riscos."
@@ -62,6 +62,10 @@ evidenceMap:
     limitation: "Pequeno grupo de homens jovens; imersão de uma hora; níveis no plasma, não dopamina no cérebro."
   - claim: "A resposta de choque ao frio pode causar a morte por aspiração, redução do fluxo sanguíneo cerebral e arritmia antes que a temperatura central caia; o álcool altera os riscos."
     limitation: "Revisão narrativa da fisiologia do afogamento."
+  - claim: "Após o exercício, imersões únicas em água fria reduziram a dor muscular e os marcadores de dano muscular, mas nenhuma temperatura da água foi claramente superior."
+    limitation: "Desfechos de recuperação, não HRV nem saúde; alta heterogeneidade; a revisão não foi registrada previamente e os autores consideram exploratórios os subgrupos de temperatura."
+  - claim: "Um programa de um mês do método Wim Hof, que combina respiração e frio, trouxe segundo os participantes maiores ganhos imediatos de energia e clareza do que a meditação, com mudanças duradouras pequenas; não permite isolar o efeito do frio."
+    limitation: "Semirrandomizado, participantes autosselecionados, desfechos sobretudo autorrelatados, controle ativo com meditação e não placebo; respiração e frio combinados."
 ---
 
 ## O que conta como exposição ao frio?
@@ -85,11 +89,11 @@ Muitos estudos são pequenos, muitas vezes incluem apenas homens e usam temperat
 
 ## O que mostram as evidências?
 
-**Estresse, humor e sono: emergente.** Uma metanálise de ensaios randomizados em adultos saudáveis encontrou um estresse mais baixo doze horas depois da imersão em água fria, mas não logo depois nem em momentos posteriores; a qualidade do sono e a qualidade de vida melhoraram, enquanto o humor não [S1]. Os autores ressaltam que os ensaios são poucos e as amostras, pequenas [S1].
+**Estresse, humor e sono: emergente.** Uma metanálise de ensaios randomizados em adultos saudáveis encontrou um estresse mais baixo doze horas depois da imersão em água fria, mas não logo depois nem em momentos posteriores; a qualidade do sono e a qualidade de vida melhoraram, enquanto o humor não [S1]. Os autores ressaltam que os ensaios são poucos e as amostras, pequenas [S1]. Em um ensaio semirrandomizado do método Wim Hof, que combina respiração e frio, cerca de um mês de prática diária trouxe, segundo os participantes, maiores ganhos imediatos de energia, clareza e capacidade de lidar com o estresse do que a meditação, com mudanças duradouras pequenas [S18]. Como respiração e frio vieram juntos, o ensaio não consegue mostrar o que o frio acrescenta.
 
 **Faltas ao trabalho por doença: emergente.** Em um grande ensaio randomizado, as pessoas que terminaram o banho com água fria durante um mês relataram menos dias de falta ao trabalho por doença, mas não relataram menos dias doentes [S8]. Os desfechos foram autorrelatados, e os participantes sabiam em que grupo estavam.
 
-**Recuperação depois do exercício: depende do contexto.** A imersão em água fria reduziu a dor muscular depois do exercício em comparação com o repouso, em ensaios pequenos e de baixa qualidade; não se demonstrou que ela supere a água morna ou os banhos de contraste [S9]. Mas, em um ensaio com homens que faziam treino de força, os que usaram a imersão em água fria depois de cada sessão durante doze semanas ganharam menos força e massa muscular do que os que fizeram recuperação ativa [S10]. Se o objetivo é o crescimento muscular, mergulhos de rotina logo depois do treino de força podem atrapalhar. Para a crioterapia de corpo inteiro, as evidências sobre a dor muscular são de qualidade muito baixa [S11].
+**Recuperação depois do exercício: depende do contexto.** A imersão em água fria reduziu a dor muscular depois do exercício em comparação com o repouso, em ensaios pequenos e de baixa qualidade; não se demonstrou que ela supere a água morna ou os banhos de contraste [S9]. Mas, em um ensaio com homens que faziam treino de força, os que usaram a imersão em água fria depois de cada sessão durante doze semanas ganharam menos força e massa muscular do que os que fizeram recuperação ativa [S10]. Se o objetivo é o crescimento muscular, mergulhos de rotina logo depois do treino de força podem atrapalhar. Para a crioterapia de corpo inteiro, as evidências sobre a dor muscular são de qualidade muito baixa [S11]. Uma meta-análise de 2026 de imersões únicas após o exercício encontrou menos dor muscular e marcadores de dano muscular mais baixos, mas nenhuma temperatura da água superou claramente as outras; os autores consideram exploratórias essas comparações de temperatura [S17].
 
 **Metabolismo, gordura marrom e insulina: emergente.** Dez dias de aclimatação a um frio leve aumentaram a atividade da gordura marrom e a produção de calor em um estudo pequeno [S12], e um protocolo semelhante melhorou a sensibilidade à insulina em um estudo pequeno e sem controle com pessoas com diabetes [S13]. Os dois usaram ar levemente frio durante muitas horas, e não mergulhos curtos. Uma revisão de estudos com água fria conclui que os efeitos sobre a gordura corporal e a insulina parecem promissores, mas continuam em debate [S2].
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "e66ebb227736"
+sourceHash: 3cc1e726f852
 title: "Ce qu’une seule valeur de HRV peut vous dire, et ce qu’elle ne peut pas dire"
 metaTitle: "Interpréter la HRV : ce que dit une seule valeur"
 metaDescription: "Ce que montre vraiment une mesure de HRV, pourquoi basse n’est pas un diagnostic, haute pas toujours bon, et pourquoi se comparer aux autres induit en erreur."
@@ -69,6 +69,8 @@ evidenceMap:
     limitation: "Documentation produit."
   - claim: "Les signaux d’ONDA sont des comparaisons descriptives avec la référence personnelle, pas des mesures du stress ni une évaluation médicale."
     limitation: "Énoncé de portée de la documentation produit."
+  - claim: "Les groupes atteints de certains troubles mentaux ont une HRV plus basse que les personnes en bonne santé, au mieux au niveau « suggestive » ; pour la dépression et le trouble anxieux généralisé, les preuves sont plus faibles."
+    limitation: "Revue de méta-analyses dans des échantillons cliniques ; en hérite les biais ; différences de groupe transversales, pas un test diagnostique, de dépistage ou de prédiction."
 ---
 
 ## Que peut vous dire une seule valeur de HRV ?
@@ -121,9 +123,11 @@ Ce sont des associations dans des populations, issues d’enregistrements ECG de
 
 **Dépend du contexte — mesures isolées.** Les résultats de HRV sont faciles à mal lire sans leur contexte de mesure [S3]. Ce qui tient le mieux, c’est l’évolution de vos propres mesures dans le temps, prises dans des conditions similaires.
 
+**Dépend du contexte — santé mentale.** Une revue de méta-analyses (Wang et al., 2025) a comparé la HRV des personnes atteintes de troubles mentaux à celle de personnes en bonne santé [S19]. Selon la gradation des auteurs, une HRV plus basse atteignait au mieux le niveau « suggestive » (indicatif) – pour des troubles comme le TSPT, la démence et la schizophrénie –, et les preuves étaient plus faibles pour la dépression et le trouble anxieux généralisé [S19]. Ce sont des différences de groupe dans des échantillons cliniques. Elles ne disent pas ce qui vient en premier et ne font pas d’une valeur basse le signe d’un trouble mental.
+
 ## Ce qu’elle ne vous dit pas
 
-- **Ni votre niveau de stress ni un diagnostic.** Une valeur ne dit rien de précis sur votre état psychique ni sur une maladie [S1].
+- **Ni votre niveau de stress ni un diagnostic.** Une valeur ne dit rien de précis sur votre état psychique ni sur une maladie [S1]. Même les différences de groupe observées dans les troubles mentaux sont modestes et ne fonctionnent pas comme un test [S19].
 - **Ni votre rang.** Un chiffre plus haut ou plus bas que celui de quelqu’un d’autre en dit peu sur l’un comme sur l’autre [S5, S6].
 - **Ni votre forme physique ni votre « readiness ».** Ni la valeur brute ni un score propriétaire n’en est, à lui seul, une mesure validée [S12, S13].
 - **Ni une prévision de votre risque personnel.** Les résultats sur le risque dans les populations ne s’appliquent pas à la mesure d’une personne en bonne santé [S15, S16].

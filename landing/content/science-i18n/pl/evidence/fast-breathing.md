@@ -1,5 +1,5 @@
 ---
-sourceHash: "bf4ec5a45d58"
+sourceHash: 0847ebf97cd1
 title: "Szybkie oddychanie: co pokazują badania i jakie są realne zagrożenia"
 metaTitle: "Szybkie oddychanie: badania i realne zagrożenia"
 metaDescription: "Oddychanie metodą Wima Hofa, oddychanie holotropowe, tummo i cykliczna hiperwentylacja: co badania mówią o stanie zapalnym, nastroju i sporcie oraz dlaczego woda jest wykluczona."
@@ -60,6 +60,10 @@ evidenceMap:
     limitation: "Praca przedstawiająca hipotezę, a nie badanie."
   - claim: "Doświadczeni medytujący tummo podnosili temperaturę ciała tylko podczas odmiany praktyki z forsownym oddechem."
     limitation: "Mała grupa doświadczonych mnichów; warunki terenowe."
+  - claim: "W dużym zaślepionym badaniu codzienne zdalne szybkie oddychanie z długimi zatrzymaniami nie obniżyło stresu bardziej niż protokół oddechowy placebo; obie grupy się poprawiły."
+    limitation: "Jedno badanie zdrowych młodych dorosłych ze zdalnymi sesjami audio i wynikami z samooceny."
+  - claim: "Miesięczny program metody Wima Hofa dał według uczestników większy chwilowy wzrost energii i jasności myślenia niż medytacja, przy niewielkich trwałych zmianach."
+    limitation: "Częściowo randomizowane, uczestnicy sami się zgłaszali, wyniki głównie z samooceny, aktywna kontrola z medytacją; HRV nie było głównym wynikiem."
 ---
 
 ## Czym jest szybkie oddychanie?
@@ -90,7 +94,7 @@ evidenceMap:
 
 **Reakcja zapalna w laboratorium: wstępne dane.** W najbardziej znanym badaniu {{fact:study.kox2014.groups}} otrzymało wstrzyknięcie toksyny bakteryjnej (endotoksyny). Grupa przeszkolona, która uczyła się jednocześnie medytacji, technik oddechowych i ekspozycji na zimno, miała szybszą i silniejszą reakcję przeciwzapalną, mniej białek prozapalnych i mniej objawów grypopodobnych [S1]. Ponieważ trening łączył wszystkie trzy elementy, efektu nie można przypisać samemu oddychaniu. Późniejsze badanie pilotażowe tej samej grupy rozdzieliło składniki u {{fact:study.zwaag2022.participants}}: sam trening zimnem nie zmienił istotnie reakcji zapalnej, ćwiczenie oddechowe tak, a dodanie zimna wzmocniło efekt oddychania [S2]. Przegląd systematyczny obejmujący {{fact:study.almahayni2024.trials}} stwierdził, że metoda może zmniejszać stan zapalny, przy nielicznych i w większości małych badaniach [S4]. Wszystko to pochodzi z krótkotrwałego stanu zapalnego wywołanego w laboratorium u zdrowych ochotników, a nie od osób z chorobami zapalnymi lub autoimmunologicznymi. Zimnu w tych badaniach poświęcona jest strona o [ekspozycji na zimno](/science/evidence/cold-exposure).
 
-**Nastrój, lęk i stres: wstępne i niejednoznaczne dane.** W zdalnym badaniu z randomizacją codzienne ćwiczenia oddechowe poprawiały nastrój bardziej niż medytacja uważności; najlepiej wypadło ramię z cyklicznymi westchnieniami skupionymi na wydechu, a cykliczna hiperwentylacja ze wstrzymaniem była jednym z porównywanych ramion [S3]. U kobiet z nasilonymi objawami depresji program oparty na metodzie Wima Hofa z zimnymi prysznicami i program wolnego oddychania z ciepłymi prysznicami przyniosły równoważną poprawę w zakresie depresji, lęku i stresu; wszystkie uczestniczki, które zrezygnowały, były w grupie Wima Hofa [S15]. W innym małym badaniu codzienne praktykowanie metody Wima Hofa przez około dwa tygodnie nie poprawiło zmienności rytmu serca (HRV), ciśnienia krwi ani parametrów psychologicznych w porównaniu z grupą kontrolną [S16]. Każdy z tych wyników pochodzi z jednego badania.
+**Nastrój, lęk i stres: wstępne i niejednoznaczne dane.** W zdalnym badaniu z randomizacją codzienne ćwiczenia oddechowe poprawiały nastrój bardziej niż medytacja uważności; najlepiej wypadło ramię z cyklicznymi westchnieniami skupionymi na wydechu, a cykliczna hiperwentylacja ze wstrzymaniem była jednym z porównywanych ramion [S3]. U kobiet z nasilonymi objawami depresji program oparty na metodzie Wima Hofa z zimnymi prysznicami i program wolnego oddychania z ciepłymi prysznicami przyniosły równoważną poprawę w zakresie depresji, lęku i stresu; wszystkie uczestniczki, które zrezygnowały, były w grupie Wima Hofa [S15]. W innym małym badaniu codzienne praktykowanie metody Wima Hofa przez około dwa tygodnie nie poprawiło zmienności rytmu serca (HRV), ciśnienia krwi ani parametrów psychologicznych w porównaniu z grupą kontrolną [S16]. W największym jak dotąd zaślepionym badaniu tego stylu zdrowi młodzi dorośli codziennie wykonywali zdalne sesje szybkiego oddychania z długimi zatrzymaniami albo ich wersję placebo z wolniejszym oddychaniem i krótkimi zatrzymaniami: stres spadł w obu grupach bez różnicy między nimi, a lęk, depresja, samopoczucie i sen również się nie różniły [S18]. W częściowo randomizowanym badaniu około miesiąca praktyki metody Wima Hofa dało według uczestników większy chwilowy wzrost energii, jasności myślenia i radzenia sobie ze stresem niż medytacja, przy niewielkich trwałych zmianach [S17]. Każdy z tych wyników pochodzi z jednego badania.
 
 **Wyniki sportowe: wstępne dane; korzyści nie wykazano.** Pojedyncza sesja oddychania metodą Wima Hofa przed powtarzanymi sprintami nie poprawiła u biegaczy amatorów mocy szczytowej, mocy średniej ani zmęczenia, mimo dużych zmian poziomu tlenu i dwutlenku węgla [S6]. Przegląd systematyczny wykazał niejednoznaczny wpływ na wydolność fizyczną [S4].
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "74e0a1403ee6"
+sourceHash: 6a68f313f430
 title: "Respiración nasal y cinta en la boca: qué muestra la evidencia"
 metaTitle: "Respiración nasal y cinta en la boca: evidencia"
 metaDescription: "Qué hace la nariz, qué muestran los estudios sobre sueño, atención, HRV, ejercicio y asma, y por qué la cinta en la boca exige precaución."
@@ -50,6 +50,8 @@ evidenceMap:
     limitation: "Veinte personas que toleraron la cinta; sin grupo de control; una semana."
   - claim: "En un estudio piloto pequeño y sin grupo de control, un parche oral poroso redujo los ronquidos y el índice de apnea en la apnea del sueño leve con respiración bucal."
     limitation: "Treinta pacientes; sin grupo de control; un dispositivo de nuevo diseño."
+  - claim: "En reposo, respirar por la nariz o por la boca apenas cambió los índices cardiovasculares; con poco oxígeno o con dióxido de carbono añadido, respirar por la nariz dio una frecuencia cardiaca y un consumo de oxígeno más bajos."
+    limitation: "Un pequeño estudio de laboratorio en adultos jóvenes con pruebas respiratorias breves; no es la respiración cotidiana ni una prueba de la cinta en la boca."
 ---
 
 ## ¿Qué hace la nariz que no hace la boca?
@@ -64,7 +66,7 @@ Los senos paranasales también producen de forma continua óxido nítrico, un ga
 
 **Memoria y atención. Emergente.** En personas con electrodos implantados por epilepsia, la respiración nasal sincronizó la actividad de áreas cerebrales relacionadas con el olfato y la memoria, y este ritmo se desvanecía cuando la respiración pasaba a la boca; las pruebas conductuales relacionaron la fase de la respiración con la recuperación de recuerdos [S3]. Es un hallazgo llamativo, procedente de muy pocos pacientes. No demuestra que respirar habitualmente por la nariz mejore la memoria o la concentración en la vida diaria.
 
-**HRV y sistema nervioso. Emergente.** En un estudio pequeño con adultos jóvenes, cinco minutos de respiración nasal produjeron una presión arterial diastólica algo menor y un mayor peso relativo del componente de alta frecuencia de la variabilidad de la frecuencia cardíaca (HRV o VFC) que la respiración bucal, sin cambiar la frecuencia cardíaca [S4]. Se trata de una sola comparación breve en laboratorio. El ritmo de la respiración tiene un efecto mayor y mejor documentado sobre la HRV; consulta [cómo cambia la respiración la HRV](/science/mechanisms/breathing-and-hrv) y [respiración lenta](/science/evidence/slow-breathing).
+**HRV y sistema nervioso. Emergente.** En un estudio pequeño con adultos jóvenes, cinco minutos de respiración nasal produjeron una presión arterial diastólica algo menor y un mayor peso relativo del componente de alta frecuencia de la variabilidad de la frecuencia cardíaca (HRV o VFC) que la respiración bucal, sin cambiar la frecuencia cardíaca [S4]. Se trata de una sola comparación breve en laboratorio. El ritmo de la respiración tiene un efecto mayor y mejor documentado sobre la HRV; consulta [cómo cambia la respiración la HRV](/science/mechanisms/breathing-and-hrv) y [respiración lenta](/science/evidence/slow-breathing). Un estudio de laboratorio de 2026 encontró que la vía de respiración apenas cambiaba nada en reposo; con poco oxígeno o con dióxido de carbono añadido, respirar por la nariz dio una frecuencia cardiaca y un consumo de oxígeno más bajos que respirar por la boca [S14]. Probó retos breves de laboratorio, no hábitos cotidianos ni el cierre de la boca con cinta.
 
 **Ejercicio. Emergente.** En ensayos pequeños, respirar solo por la nariz no cambió la potencia en una prueba breve de sprint [S5] ni la resistencia en series repetidas de press de banca [S6]. Respirar por la nariz durante el ejercicio no parece ayudar ni perjudicar mucho al rendimiento; a intensidades altas, la mayoría de las personas pasa a respirar por la boca de todos modos.
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "914a9faa457f"
+sourceHash: 888be023249e
 title: "Kann man der HRV von Smartwatch oder Ring trauen?"
 metaTitle: "HRV von Wearables: Kann man Uhr oder Ring trauen?"
 metaDescription: "Die HRV von Smartwatch und Ring ist eine Schätzung aus dem Pulssignal, keine EKG-Messung. Wo beide übereinstimmen, wo sie abweichen und wie du deine Werte liest."
@@ -74,6 +74,8 @@ evidenceMap:
     limitation: "Eine einzelne Studie, gesunde Erwachsene, zwei Uhrmodelle, ein Brustgurt mit Auswertungssoftware als Referenz; über Recovery HRV oder neuere Uhrmodelle sagt sie nichts."
   - claim: "In einer Beobachtungsstudie stimmte das Befinden der Menschen nicht durchgängig mit der nächtlichen HRV eines Aktivitätstrackers überein."
     limitation: "Kleine Beobachtungsstudie mit einem einzigen kommerziellen Tracker; alle Autorinnen und Autoren sind bei PepsiCo R&D (Gatorade Sports Science Institute) angestellt, das die Studie finanziert hat; eine unabhängige Wiederholung steht aus."
+  - claim: "Die Wiederholbarkeit hängt von der Messgröße ab: Der kurze RMSSD in Ruhe war bei gesunden jungen Erwachsenen zwischen Laborsitzungen gut wiederholbar, ein Maß der Spitzenfrequenz nicht."
+    limitation: "Eine Laborstudie mit Aufzeichnungen in EKG-Qualität bei gesunden jungen Erwachsenen; nächtliche Wearable-Werte wurden nicht geprüft."
 ---
 
 ## Was ist die HRV von Wearables?
@@ -149,7 +151,7 @@ Für die Apple Watch fand eine fortlaufend aktualisierte systematische Übersich
 
 Apples Ökosystem gehört hierher als Gerätetatsache: Apple Health speichert die HRV als SDNN [S6], neuere Uhrmodelle bieten zwei HRV-Varianten [S7], und die Plattform akzeptiert nun auch einen RMSSD-Wert [S8] – eng gefasste Aussagen darüber, was aufgezeichnet wird, nicht über die Gesundheit.
 
-**Leitlinie / Expertenkonsens.** Aktuelle Leitlinien halten fest, dass Eingangssignal, Messdauer, Umgebung, Atmung und Auswertungsverfahren alle Sorgfalt und Zuverlässigkeit beeinflussen [S5] und dass Befunde aus HRV-Messungen mit Wearables – auch in der Forschung – innerhalb dieser Grenzen interpretiert und eingeordnet werden sollten [S5]. Die Folge für den Alltag: Gleiches mit Gleichem vergleichen.
+**Leitlinie / Expertenkonsens.** Aktuelle Leitlinien halten fest, dass Eingangssignal, Messdauer, Umgebung, Atmung und Auswertungsverfahren alle Sorgfalt und Zuverlässigkeit beeinflussen [S5] und dass Befunde aus HRV-Messungen mit Wearables – auch in der Forschung – innerhalb dieser Grenzen interpretiert und eingeordnet werden sollten [S5]. Die Folge für den Alltag: Gleiches mit Gleichem vergleichen. Auch die Wiederholbarkeit hängt von der Messgröße ab: In einer Laborstudie mit gesunden jungen Erwachsenen war der kurze RMSSD in Ruhe zwischen Sitzungen gut wiederholbar, ein Maß der Spitzenfrequenz dagegen nicht [S15] – ein weiterer Grund, eine Messgröße unter vergleichbaren Bedingungen zu verfolgen.
 
 **Unbekannt.** Wie gut sich diese Methoden auf die Vielfalt der Verbrauchergeräte und proprietären Algorithmen übertragen lassen; wie sie bei uneingeschränkter Bewegung im Alltag und über nächtliche Fenster abschneiden, die Geräte unterschiedlich definieren; wie sie sich bei Menschen mit Herzrhythmusstörungen oder bestimmten Erkrankungen verhalten; und ab wann eine Veränderung, die ein Wearable erkennt, klinisch bedeutsam wird. Nichts davon ist geklärt – ein Grund für Messkompetenz, nicht dafür, die Daten zu verwerfen.
 

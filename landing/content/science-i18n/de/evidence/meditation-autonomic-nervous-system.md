@@ -1,5 +1,5 @@
 ---
-sourceHash: "cde100beb74f"
+sourceHash: 948e8a39ec33
 title: "Meditation und das autonome Nervensystem: Was die Evidenz zeigt"
 metaTitle: "Meditation und Nervensystem: Was die Evidenz zeigt"
 metaDescription: "Was Meditation laut Forschung mit HRV, Ruhepuls, Blutdruck und Cortisol macht – und warum langsames Atmen das Bild verzerrt."
@@ -80,6 +80,8 @@ evidenceMap:
     limitation: "Eine einzelne Studie mit Wartelisten-Kontrolle; Herzfrequenzvariabilität während der Sitzungen gemessen, nicht über die Nacht; Schlafphasen von einem Verbraucherring bestimmt."
   - claim: "In dieser Studie stieg das persönliche Burnout direkt nach dem Programm an, bevor es sich wieder dem Ausgangswert annäherte."
     limitation: "Eine einzelne Studie; sekundäre Zielgröße."
+  - claim: "Kurze Achtsamkeitssitzungen können den RMSSD kurzfristig erhöhen – nach Evidenz geringer Qualität aus einigen kleinen Studien."
+    limitation: "Systematische Übersicht mit wenigen, heterogenen Studien und Evidenz geringer Qualität; dauerhafte Effekte nicht untersucht; Atemveränderungen während der Praxis nicht getrennt."
 ---
 
 ## Was ist Meditation – aus Sicht des autonomen Nervensystems?
@@ -130,7 +132,7 @@ Zwei Zeitrahmen sind wichtig. Ein *Sitzungseffekt* ist eine Veränderung, währe
 
 ### HRV: während einer Sitzung und nach einem Kurs
 
-**Während einer Sitzung: kontextabhängig.** Die HRV verändert sich beim Meditieren oft, aber nicht immer in dieselbe Richtung. Ein Body-Scan steigerte in zwei kleinen Studien den atemgekoppelten Herzrhythmus stärker als andere entspannende Tätigkeiten, ohne die Herzfrequenz zu verändern [S6]. Mantra und Gebet, so langsam rezitiert, dass sich die Atmung auf {{fact:breath.resonance.typical}} verlangsamte, erzeugten große Schwankungen des Herzrhythmus [S8]. Manche Chi- und Kundalini-Yoga-Techniken erzeugten sehr große Schwankungen, die an langsames Atmen gebunden waren [S9].
+**Während einer Sitzung: kontextabhängig.** Die HRV verändert sich beim Meditieren oft, aber nicht immer in dieselbe Richtung. Ein Body-Scan steigerte in zwei kleinen Studien den atemgekoppelten Herzrhythmus stärker als andere entspannende Tätigkeiten, ohne die Herzfrequenz zu verändern [S6]. Mantra und Gebet, so langsam rezitiert, dass sich die Atmung auf {{fact:breath.resonance.typical}} verlangsamte, erzeugten große Schwankungen des Herzrhythmus [S8]. Manche Chi- und Kundalini-Yoga-Techniken erzeugten sehr große Schwankungen, die an langsames Atmen gebunden waren [S9]. Eine systematische Übersicht zu kurzen Achtsamkeitssitzungen fand in einigen kleinen Studien einen kurzfristigen Anstieg des RMSSD, bei Evidenz geringer Qualität und ohne Daten zu dauerhaften Effekten [S18].
 
 <!-- myth-debunk -->
 **„Meditation erhöht die HRV immer.“** Die Evidenz stützt das nicht. In einer kleinen Studie sank die gesamte HRV während tiefer Heartfulness-Meditation im Vergleich zu einer an die Atmung angeglichenen Kontrolle [S7], und aktivierende Stile aus der Vajrayana-Tradition gingen mit Aktivierung statt Entspannung einher [S2]. Meditation ist nicht nur ein autonom ruhiger Zustand [S9].

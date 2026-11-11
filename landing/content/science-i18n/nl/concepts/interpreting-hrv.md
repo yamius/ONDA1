@@ -1,5 +1,5 @@
 ---
-sourceHash: "e66ebb227736"
+sourceHash: 3cc1e726f852
 title: "Wat één HRV-waarde je wel en niet kan vertellen"
 metaTitle: "HRV interpreteren: wat één waarde je vertelt"
 metaDescription: "Wat één HRV-meting echt laat zien, waarom laag geen diagnose is, waarom hoog niet altijd goed is en waarom vergelijken met anderen misleidt."
@@ -68,6 +68,8 @@ evidenceMap:
     limitation: "Productdocumentatie."
   - claim: "De signalen van ONDA zijn beschrijvende vergelijkingen met de persoonlijke baseline — geen stressmetingen en geen medische beoordeling."
     limitation: "Afbakening in de productdocumentatie."
+  - claim: "Groepen met sommige psychische stoornissen hebben een lagere HRV dan gezonde mensen, hooguit op het niveau ‘suggestive’; voor depressie en gegeneraliseerde angststoornis is het bewijs zwakker."
+    limitation: "Overzicht van meta-analyses in klinische steekproeven; neemt hun vertekeningen over; groepsverschillen op één moment, geen diagnostische, screenings- of voorspellende test."
 ---
 
 ## Wat kan één HRV-waarde je vertellen?
@@ -120,9 +122,11 @@ Dit zijn verbanden in de bevolking uit ecg-registraties van klinische kwaliteit,
 
 **Afhankelijk van de context — losse metingen.** HRV-bevindingen worden zonder hun meetcontext gemakkelijk verkeerd gelezen [S3]. Wat het best standhoudt, is de richting van je eigen metingen in de tijd, gedaan onder vergelijkbare omstandigheden.
 
+**Afhankelijk van de context — mentale gezondheid.** Een overzicht van meta-analyses (Wang et al., 2025) vergeleek de HRV van mensen met psychische stoornissen met die van gezonde mensen [S19]. Volgens de indeling van de auteurs bereikte een lagere HRV hooguit het niveau ‘suggestive’ (aanwijzend) – bij stoornissen zoals PTSS, dementie en schizofrenie –, terwijl het bewijs voor depressie en gegeneraliseerde angststoornis zwakker was [S19]. Het gaat om groepsverschillen in klinische steekproeven. Ze laten niet zien wat eerst komt en maken een lage waarde geen teken van een psychische stoornis.
+
 ## Wat het je niet vertelt
 
-- **Niet je stressniveau en geen diagnose.** Eén waarde zegt niets specifieks over je mentale toestand of over ziekte [S1].
+- **Niet je stressniveau en geen diagnose.** Eén waarde zegt niets specifieks over je mentale toestand of over ziekte [S1]. Zelfs de groepsverschillen bij psychische stoornissen zijn bescheiden en werken niet als test [S19].
 - **Niet je rangorde.** Een hoger of lager getal dan dat van een ander zegt weinig over jullie allebei [S5, S6].
 - **Niet je fitheid of ‘readiness’.** Noch de ruwe waarde, noch een eigen score van een fabrikant is op zichzelf een gevalideerde maat daarvoor [S12, S13].
 - **Geen persoonlijke risicovoorspelling.** Bevindingen over risico in de bevolking gelden niet voor de meting van één gezond persoon [S15, S16].

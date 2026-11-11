@@ -1,5 +1,5 @@
 ---
-sourceHash: "14937f196d56"
+sourceHash: a88cc71c33c7
 title: "Fredonnement, chant et Om : ce que montrent les données"
 metaTitle: "Fredonnement, chant et Om : les données"
 metaDescription: "Ce que montrent les études sur le fredonnement, le chant du Om, les mantras et le chant choral : monoxyde d’azote nasal, respiration plus lente, HRV, cerveau et limites des données."
@@ -50,6 +50,8 @@ evidenceMap:
     limitation: "Surtout de la méditation transcendantale ; répétition silencieuse d’un mantra, pas un chant audible."
   - claim: "Une revue systématique a trouvé des preuves fiables d’effets positifs de la musique et du chant sur le bien-être des adultes."
     limitation: "Musique et chant mélangés ; mesures du bien-être hétérogènes ; les membres de chorales sont plus souvent des femmes, blanches et diplômées."
+  - claim: "Dans une petite étude pilote, la respiration bourdonnante comme la respiration lente rythmée ont augmenté la HRV par rapport au repos, sans différence entre les deux."
+    limitation: "Une seule petite étude pilote chez des adultes en bonne santé, avec de courts enregistrements ; l’absence de différence ne prouve pas l’équivalence ; les indices fondés sur LF sont difficiles à interpréter."
 ---
 
 ## Que sont le fredonnement, le chant psalmodié et le Om ?
@@ -107,7 +109,9 @@ Dans une étude de laboratoire de 2001, {{fact:study.bernardi2001.participants}}
 
 Chez des choristes, la structure du chant guidait la respiration, et le chant à l’unisson faisait accélérer et ralentir les fréquences cardiaques ensemble (classe : **Émergent**, une seule petite étude) [S8].
 
-Existe-t-il un effet au-delà du ralentissement de la respiration ? Dans un essai randomisé ({{fact:study.ghati2021.design}}), la respiration du bourdon a été comparée à la respiration lente. La pression artérielle n’a pas baissé davantage après le fredonnement ; certains indices spectraux de HRV différaient pendant la récupération, mais leur signification autonome est débattue (classe : **Émergent**, un seul essai) [S9]. Une revue systématique sur bhramari a trouvé {{fact:study.kuppusamy2018.studies}}, et a jugé leur qualité très faible [S10]. Un effet propre au fredonnement n’a donc pas été démontré (classe : **Inconnu**).
+Existe-t-il un effet au-delà du ralentissement de la respiration ? Dans un essai randomisé ({{fact:study.ghati2021.design}}), la respiration du bourdon a été comparée à la respiration lente. La pression artérielle n’a pas baissé davantage après le fredonnement ; certains indices spectraux de HRV différaient pendant la récupération, mais leur signification autonome est débattue (classe : **Émergent**, un seul essai) [S9]. Dans une étude pilote de 2025 chez des adultes en bonne santé, la respiration bourdonnante comme la respiration lente rythmée ont augmenté la HRV par rapport au repos, sans différence entre les deux (classe : **Émergent**, une seule étude) [S7]. Les auteurs ont attribué l’effet au rythme respiratoire, pas aux mots.
+
+Chez des choristes, la structure du chant guidait la respiration, et le chant à l’unisson faisait accélérer et ralentir les fréquences cardiaques ensemble (classe : **Émergent**, une seule petite étude) [S15]. Une revue systématique sur bhramari a trouvé {{fact:study.kuppusamy2018.studies}}, et a jugé leur qualité très faible [S10]. Un effet propre au fredonnement n’a donc pas été démontré (classe : **Inconnu**).
 
 ### Le cerveau — un petit essai pilote
 

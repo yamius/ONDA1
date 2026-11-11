@@ -1,5 +1,5 @@
 ---
-sourceHash: "914a9faa457f"
+sourceHash: 888be023249e
 title: "Ci si può fidare dell'HRV di uno smartwatch o di un anello?"
 metaTitle: "HRV da wearable: ci si può fidare di orologi e anelli?"
 metaDescription: "L'HRV di smartwatch e anelli è una stima dal segnale del polso, non una lettura ECG. Dove concorda con l'ECG, dove diverge e come leggere i tuoi numeri."
@@ -74,6 +74,8 @@ evidenceMap:
     limitation: "Un unico studio, adulti sani, due modelli di orologio, come riferimento una fascia toracica con software di analisi; non descrive la Recovery HRV né i modelli di orologio più recenti."
   - claim: "In uno studio osservazionale, il modo in cui le persone si sentivano non corrispondeva in modo coerente all'HRV notturna di un activity tracker."
     limitation: "Piccolo studio osservazionale con un unico tracker commerciale; tutti gli autori sono dipendenti di PepsiCo R&D (Gatorade Sports Science Institute), che ha finanziato lo studio; serve una replica indipendente."
+  - claim: "La ripetibilità dipende dall’indice: il RMSSD breve a riposo si ripeteva bene tra sessioni di laboratorio in giovani adulti sani, un indice della frequenza di picco no."
+    limitation: "Uno studio di laboratorio con registrazioni di qualità ECG in giovani adulti sani; i valori notturni dei dispositivi indossabili non sono stati verificati."
 ---
 
 ## Che cos'è l'HRV dei dispositivi indossabili?
@@ -149,7 +151,7 @@ Per l'Apple Watch, una revisione sistematica «vivente» con meta-analisi (Lambe
 
 I dati sull'ecosistema Apple rientrano qui come dati sui dispositivi: Apple Health memorizza l'HRV come SDNN [S6], i modelli recenti di orologio espongono due varianti di HRV [S7], e la piattaforma ora accetta anche un valore di tipo RMSSD [S8]. Sono affermazioni circoscritte su cosa viene registrato, non sulla salute.
 
-**Linee guida / consenso di esperti.** Le linee guida attuali affermano che il segnale di partenza, la durata della registrazione, il contesto, il respiro e l'approccio analitico influiscono tutti sul rigore e sull'affidabilità [S5], e che i risultati dell'HRV da dispositivi indossabili, anche nella ricerca, vanno interpretati e contestualizzati entro questi limiti [S5]. L'estensione quotidiana è confrontare misure omogenee.
+**Linee guida / consenso di esperti.** Le linee guida attuali affermano che il segnale di partenza, la durata della registrazione, il contesto, il respiro e l'approccio analitico influiscono tutti sul rigore e sull'affidabilità [S5], e che i risultati dell'HRV da dispositivi indossabili, anche nella ricerca, vanno interpretati e contestualizzati entro questi limiti [S5]. L'estensione quotidiana è confrontare misure omogenee. Anche la ripetibilità dipende dall’indice: in uno studio di laboratorio su giovani adulti sani, il RMSSD breve a riposo si ripeteva bene tra le sessioni, ma un indice della frequenza di picco no [S15]; un motivo in più per seguire un solo indice in condizioni comparabili.
 
 **Sconosciuto.** Quanto bene questi metodi si generalizzino alla varietà di dispositivi di consumo e di algoritmi proprietari; come funzionino durante il movimento libero della giornata e su finestre notturne che i dispositivi definiscono in modi diversi; come si comportino nelle persone con aritmie o con condizioni specifiche; e quando un cambiamento rilevato da un dispositivo indossabile diventi clinicamente significativo. Nulla di tutto ciò è risolto: un motivo per imparare a leggere le misure, non per scartare i dati.
 

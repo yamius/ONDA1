@@ -1,5 +1,5 @@
 ---
-sourceHash: "6f5f5a221096"
+sourceHash: af5d6a3da844
 title: "Exposition au froid : ce que montrent les données et où sont les risques"
 metaTitle: "Exposition au froid : données et risques"
 metaDescription: "Bain froid, douche froide, visage refroidi : ce que montrent les études sur le stress, les arrêts maladie, la récupération et le métabolisme, et les risques."
@@ -63,6 +63,10 @@ evidenceMap:
     limitation: "Petit groupe de jeunes hommes ; immersion d’une heure ; taux plasmatiques, pas la dopamine cérébrale."
   - claim: "La réponse de choc au froid peut entraîner la mort par inhalation d’eau, baisse du débit sanguin cérébral et arythmie avant que la température centrale ne baisse ; l’alcool modifie les risques."
     limitation: "Revue narrative de la physiologie de la noyade."
+  - claim: "Après l’effort, des immersions uniques en eau froide ont réduit les courbatures et les marqueurs de lésion musculaire, mais aucune température d’eau n’était clairement supérieure."
+    limitation: "Critères de récupération, pas la HRV ni la santé ; forte hétérogénéité ; revue non enregistrée à l’avance, et les auteurs qualifient les sous-groupes de température d’exploratoires."
+  - claim: "Un programme d’un mois de méthode Wim Hof, associant respiration et froid, a apporté selon les participants de plus grands gains immédiats d’énergie et de clarté que la méditation, avec de faibles changements durables ; il ne permet pas d’isoler l’effet du froid."
+    limitation: "Semi-randomisé, participants volontaires, critères surtout déclaratifs, témoin actif par méditation plutôt que placebo ; respiration et froid combinés."
 ---
 
 ## Qu’entend-on par exposition au froid ?
@@ -86,11 +90,11 @@ Beaucoup d’études sont petites, n’incluent souvent que des hommes et utilis
 
 ## Que montrent les données ?
 
-**Stress, humeur et sommeil : émergent.** Une méta-analyse d’essais randomisés chez des adultes en bonne santé a trouvé un stress plus bas douze heures après l’immersion en eau froide, mais ni immédiatement, ni à des moments plus tardifs ; la qualité du sommeil et la qualité de vie se sont améliorées, l’humeur non [S1]. Les auteurs signalent le faible nombre d’essais et la petite taille des échantillons [S1].
+**Stress, humeur et sommeil : émergent.** Une méta-analyse d’essais randomisés chez des adultes en bonne santé a trouvé un stress plus bas douze heures après l’immersion en eau froide, mais ni immédiatement, ni à des moments plus tardifs ; la qualité du sommeil et la qualité de vie se sont améliorées, l’humeur non [S1]. Les auteurs signalent le faible nombre d’essais et la petite taille des échantillons [S1]. Dans un essai semi-randomisé de la méthode Wim Hof, qui associe respiration et froid, environ un mois de pratique quotidienne a apporté, selon les participants, de plus grands gains immédiats d’énergie, de clarté et de capacité à gérer le stress que la méditation, avec de faibles changements durables [S18]. Respiration et froid étant associés, l’essai ne peut pas montrer ce qu’apporte le froid.
 
 **Absences pour maladie : émergent.** Dans un grand essai randomisé, les personnes qui terminaient leur douche à l’eau froide pendant un mois ont déclaré moins de jours d’absence au travail pour maladie, mais pas moins de jours de maladie [S8]. Les résultats étaient autodéclarés, et les participants savaient dans quel groupe ils se trouvaient.
 
-**Récupération après l’effort : dépend du contexte.** L’immersion en eau froide a réduit les courbatures après l’effort par rapport au repos, dans de petits essais de faible qualité ; elle ne s’est pas montrée supérieure aux bains d’eau chaude ou aux bains contrastés [S9]. Mais dans un essai mené chez des hommes pratiquant la musculation, ceux qui utilisaient l’immersion en eau froide après chaque séance pendant douze semaines ont gagné moins de force et de muscle que ceux qui pratiquaient une récupération active [S10]. Si le but est de développer ses muscles, des bains froids systématiques juste après la musculation peuvent aller à l’encontre de cet objectif. Pour la cryothérapie corps entier, les preuves concernant les courbatures sont de très faible qualité [S11].
+**Récupération après l’effort : dépend du contexte.** L’immersion en eau froide a réduit les courbatures après l’effort par rapport au repos, dans de petits essais de faible qualité ; elle ne s’est pas montrée supérieure aux bains d’eau chaude ou aux bains contrastés [S9]. Mais dans un essai mené chez des hommes pratiquant la musculation, ceux qui utilisaient l’immersion en eau froide après chaque séance pendant douze semaines ont gagné moins de force et de muscle que ceux qui pratiquaient une récupération active [S10]. Si le but est de développer ses muscles, des bains froids systématiques juste après la musculation peuvent aller à l’encontre de cet objectif. Pour la cryothérapie corps entier, les preuves concernant les courbatures sont de très faible qualité [S11]. Une méta-analyse de 2026 sur les immersions uniques après l’effort a montré moins de courbatures et des marqueurs de lésion musculaire plus bas, mais aucune température d’eau ne surpassait clairement les autres ; les auteurs qualifient ces comparaisons de températures d’exploratoires [S17].
 
 **Métabolisme, graisse brune et insuline : émergent.** Dix jours d’acclimatation à un froid modéré ont augmenté l’activité de la graisse brune et la production de chaleur dans une petite étude [S12], et un protocole similaire a amélioré la sensibilité à l’insuline dans une petite étude non contrôlée chez des personnes diabétiques [S13]. Les deux utilisaient de l’air modérément froid pendant de nombreuses heures, pas de courts bains froids. Une revue des études sur l’eau froide conclut que les effets sur la graisse corporelle et l’insuline semblent prometteurs, mais restent débattus [S2].
 

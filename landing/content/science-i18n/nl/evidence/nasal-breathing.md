@@ -1,5 +1,5 @@
 ---
-sourceHash: "74e0a1403ee6"
+sourceHash: 6a68f313f430
 title: "Neusademhaling en mondtape: wat het bewijs laat zien"
 metaTitle: "Neusademhaling en mondtape: het bewijs"
 metaDescription: "Wat ademen door de neus doet, wat studies laten zien over slaap, focus, HRV, sport en astma, en waarom mondtape voorzichtigheid vraagt."
@@ -49,6 +49,8 @@ evidenceMap:
     limitation: "Twintig mensen die de tape verdroegen; geen controlegroep; één week."
   - claim: "In een kleine ongecontroleerde pilotstudie verminderde een poreuze mondpleister het snurken en de apneu-index bij lichte slaapapneu met mondademhaling."
     limitation: "Dertig patiënten; geen controlegroep; een nieuw ontworpen hulpmiddel."
+  - claim: "In rust maakte ademen door neus of mond weinig verschil voor hart en vaten; bij zuurstoftekort of toegevoegd koolstofdioxide gaf ademen door de neus een lagere hartslag en een lager zuurstofverbruik."
+    limitation: "Eén kleine laboratoriumstudie bij jonge volwassenen met korte ademtests; niet het dagelijkse ademen en geen test van mondtape."
 ---
 
 ## Wat doet de neus dat de mond niet doet?
@@ -63,7 +65,7 @@ De bijholten maken ook voortdurend stikstofmonoxide, een gas dat helpt bij de af
 
 **Geheugen en aandacht: opkomend.** Bij mensen bij wie vanwege epilepsie elektroden waren geïmplanteerd, bracht neusademhaling de activiteit in hersengebieden voor reuk en geheugen in de pas, en dat ritme verdween zodra de ademhaling naar de mond verschoof; gedragstests koppelden de ademfase aan het ophalen van herinneringen [S3]. Dat is een opvallende bevinding bij heel weinig patiënten. Het laat niet zien dat gewoontematig door de neus ademen in het dagelijks leven het geheugen of de focus verbetert.
 
-**HRV en het zenuwstelsel: opkomend.** In een kleine studie bij jonge volwassenen gaf vijf minuten neusademhaling een iets lagere diastolische bloeddruk en een groter relatief hoogfrequent aandeel van de hartslagvariabiliteit (HRV) dan mondademhaling, zonder dat de hartslag veranderde [S4]. Het gaat om één korte vergelijking in het lab. Het ademtempo heeft een groter en beter onderbouwd effect op HRV; zie [hoe ademhaling HRV verandert](/science/mechanisms/breathing-and-hrv) en [langzaam ademen](/science/evidence/slow-breathing).
+**HRV en het zenuwstelsel: opkomend.** In een kleine studie bij jonge volwassenen gaf vijf minuten neusademhaling een iets lagere diastolische bloeddruk en een groter relatief hoogfrequent aandeel van de hartslagvariabiliteit (HRV) dan mondademhaling, zonder dat de hartslag veranderde [S4]. Het gaat om één korte vergelijking in het lab. Het ademtempo heeft een groter en beter onderbouwd effect op HRV; zie [hoe ademhaling HRV verandert](/science/mechanisms/breathing-and-hrv) en [langzaam ademen](/science/evidence/slow-breathing). Een laboratoriumstudie uit 2026 vond dat de ademweg in rust weinig uitmaakte; bij zuurstoftekort of toegevoegd koolstofdioxide gaf ademen door de neus een lagere hartslag en een lager zuurstofverbruik dan ademen door de mond [S14]. Ze testte korte uitdagingen in het lab, geen dagelijkse gewoonten en geen afgeplakte mond.
 
 **Sporten: opkomend.** In kleine studies veranderde alleen door de neus ademen niets aan het vermogen in een korte sprinttest [S5] of aan het uithoudingsvermogen bij herhaald bankdrukken [S6]. Door de neus ademen tijdens het sporten lijkt de prestaties nauwelijks te helpen of te schaden; bij hoge intensiteit schakelen de meeste mensen sowieso over op de mond.
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "914a9faa457f"
+sourceHash: 888be023249e
 title: "Dá para confiar na HRV de um relógio ou anel inteligente?"
 metaTitle: "HRV de wearables: dá para confiar no relógio ou anel?"
 metaDescription: "A HRV de relógios e anéis inteligentes é uma estimativa a partir do sinal do pulso, não um ECG. Onde os dois concordam, onde divergem e como ler seus números."
@@ -73,6 +73,8 @@ evidenceMap:
     limitation: "Um único estudo, adultos saudáveis, dois modelos de relógio e, como referência, uma cinta peitoral com software de análise; não descreve a Recovery HRV nem modelos de relógio mais recentes."
   - claim: "Em um estudo observacional, a forma como as pessoas se sentiam não correspondeu de maneira consistente à HRV noturna de um rastreador de atividade."
     limitation: "Pequeno estudo observacional com um único rastreador comercial; todos os autores são funcionários da PepsiCo R&D (Gatorade Sports Science Institute), que financiou o estudo; é necessária replicação independente."
+  - claim: "A repetibilidade depende do índice: o RMSSD curto em repouso se repetiu bem entre sessões de laboratório em adultos jovens saudáveis, mas um índice de frequência de pico não."
+    limitation: "Um estudo de laboratório com registros de qualidade de ECG em adultos jovens saudáveis; valores noturnos de vestíveis não foram testados."
 ---
 
 ## O que é a HRV de dispositivos vestíveis?
@@ -148,7 +150,7 @@ No caso do Apple Watch, uma revisão sistemática viva com metanálise (Lambe et
 
 Os fatos do ecossistema da Apple entram aqui como fatos sobre dispositivos: o Apple Health armazena a HRV como SDNN [S6], modelos recentes do relógio expõem duas variantes de HRV [S7], e a plataforma agora também aceita um valor do tipo RMSSD [S8] — afirmações de alcance delimitado sobre o que é registrado, não sobre saúde.
 
-**Diretriz / consenso de especialistas.** As diretrizes atuais afirmam que o sinal de entrada, a duração do registro, o ambiente, a respiração e a abordagem analítica afetam o rigor e a confiabilidade [S5], e que os achados de HRV de dispositivos vestíveis — inclusive em pesquisa — devem ser interpretados e contextualizados dentro dessas limitações [S5]. A consequência no dia a dia é comparar o que é comparável.
+**Diretriz / consenso de especialistas.** As diretrizes atuais afirmam que o sinal de entrada, a duração do registro, o ambiente, a respiração e a abordagem analítica afetam o rigor e a confiabilidade [S5], e que os achados de HRV de dispositivos vestíveis — inclusive em pesquisa — devem ser interpretados e contextualizados dentro dessas limitações [S5]. A consequência no dia a dia é comparar o que é comparável. A repetibilidade também depende do índice: em um estudo de laboratório com adultos jovens saudáveis, o RMSSD curto em repouso se repetiu bem entre sessões, mas um índice de frequência de pico não [S15]; mais um motivo para acompanhar um só índice em condições comparáveis.
 
 **Desconhecido.** Até que ponto esses métodos se generalizam para a variedade de dispositivos de consumo e algoritmos proprietários; como eles se saem durante o movimento livre do dia a dia e em janelas noturnas que os dispositivos definem de formas diferentes; como se comportam em pessoas com arritmias ou condições específicas; e quando uma mudança detectada por um dispositivo vestível passa a ter significado clínico. Nada disso está resolvido — o que é um motivo para entender a medição, não para descartar os dados.
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "e66ebb227736"
+sourceHash: 3cc1e726f852
 title: "Cosa può e non può dirti un singolo valore di HRV"
 metaTitle: "Interpretare l'HRV: cosa dice un solo valore"
 metaDescription: "Cosa mostra davvero una lettura di HRV, perché un valore basso non è una diagnosi, perché alto non è sempre meglio e perché confrontarsi con altri inganna."
@@ -68,6 +68,8 @@ evidenceMap:
     limitation: "Documentazione del prodotto."
   - claim: "I segnali di ONDA sono confronti descrittivi con la baseline personale, non misure dello stress e non una valutazione medica."
     limitation: "Dichiarazione di ambito nella documentazione del prodotto."
+  - claim: "I gruppi con alcuni disturbi mentali hanno una HRV più bassa delle persone sane, al massimo al livello «suggestive»; per la depressione e il disturbo d’ansia generalizzato le evidenze sono più deboli."
+    limitation: "Revisione di meta-analisi in campioni clinici; ne eredita le distorsioni; differenze trasversali tra gruppi, non un test diagnostico, di screening o predittivo."
 ---
 
 ## Cosa può dirti un singolo valore di HRV?
@@ -120,9 +122,11 @@ Si tratta di associazioni di popolazione ricavate da registrazioni ECG di grado 
 
 **Dipende dal contesto: le singole letture.** I risultati sull'HRV sono facili da fraintendere senza il loro contesto di misura [S3]. Ciò che regge meglio è la direzione delle tue letture nel tempo, prese in condizioni simili.
 
+**Dipende dal contesto: salute mentale.** Una revisione di meta-analisi (Wang et al., 2025) ha confrontato la HRV delle persone con disturbi mentali con quella delle persone sane [S19]. Secondo la scala degli autori, una HRV più bassa ha raggiunto al massimo il livello «suggestive» (indicativo) – per disturbi come il PTSD, la demenza e la schizofrenia –, mentre le evidenze per la depressione e il disturbo d’ansia generalizzato erano più deboli [S19]. Sono differenze tra gruppi in campioni clinici. Non mostrano che cosa venga prima e non rendono un valore basso il segno di un disturbo mentale.
+
 ## Cosa non ti dice
 
-- **Non il tuo livello di stress né una diagnosi.** Un valore non dice nulla di specifico sul tuo stato mentale o su una malattia [S1].
+- **Non il tuo livello di stress né una diagnosi.** Un valore non dice nulla di specifico sul tuo stato mentale o su una malattia [S1]. Anche le differenze tra gruppi nei disturbi mentali sono modeste e non funzionano come test [S19].
 - **Non la tua posizione in classifica.** Un numero più alto o più basso di quello di un altro dice poco su entrambi [S5, S6].
 - **Non la tua forma fisica né la tua «prontezza».** Né il valore grezzo né un punteggio proprietario sono, da soli, una misura validata di queste cose [S12, S13].
 - **Non una previsione del tuo rischio personale.** I risultati sul rischio nella popolazione non si applicano alla lettura di una singola persona sana [S15, S16].

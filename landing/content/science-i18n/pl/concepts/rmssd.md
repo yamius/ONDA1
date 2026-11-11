@@ -1,5 +1,5 @@
 ---
-sourceHash: "5034501eb4bc"
+sourceHash: 24dbd78b7f09
 title: "RMSSD: co odzwierciedla ta miara HRV, a czego nie"
 metaTitle: "RMSSD: definicja, znaczenie i pomiar"
 metaDescription: "RMSSD to miara HRV odzwierciedlająca zależne od nerwu błędnego zmiany częstości serca. Co mierzy, jak szacują ją urządzenia ubieralne i czego nie powie."
@@ -51,6 +51,10 @@ evidenceMap:
     limitation: "Komunikat producenta; dotyczy konkretnego sprzętu i wersji systemu; Apple nie podało, jak obliczane jest Recovery HRV."
   - claim: "iOS i watchOS dodają do Apple Health typ danych RMSSD."
     limitation: "Oficjalna dokumentacja; dostępność zależy od wersji systemu; to, co aplikacje zapisują w tym typie, zależy od każdej z nich."
+  - claim: "Płeć zmienia związek HRV z częstością rytmu serca; autorzy dużego badania laboratoryjnego uznają rutynowe „korekty” HRV o długość cyklu serca za nieuzasadnione."
+    limitation: "Jedna próba laboratoryjna z krótkimi zapisami w spoczynku; argument przeciw korektom to interpretacja autorów, a nie konsensus."
+  - claim: "Wartości referencyjne krótkoterminowego HRV różnią się między populacjami, więc zakresów jednej populacji nie można wprost przenosić na inną."
+    limitation: "Najnowsze badanie to jedna regionalna próba z południowych Indii z krótkimi dziennymi zapisami EKG; nie nocne wartości z urządzeń."
 ---
 
 ## Czym jest RMSSD?
@@ -80,7 +84,7 @@ Kontekst jest częścią pomiaru. RMSSD zależy od pozycji ciała, oddechu, pory
 ## Co wpływa na RMSSD?
 
 - Wiek. {{fact:hrv.age.trend}} [S4, S5]. Różnice między ludźmi są duże w każdym wieku; mediany populacyjne nie są osobistymi celami. Pełne tabele znajdziesz w artykule o [prawidłowym HRV według wieku](/articles/normal-hrv-by-age).
-- Płeć. Badania opisują różnice między kobietami a mężczyznami, a ich kierunek i wielkość zależą od wieku i populacji [S4].
+- Płeć. Badania opisują różnice między kobietami a mężczyznami, a ich kierunek i wielkość zależą od wieku i populacji [S4]. W dużej próbie laboratoryjnej kobiety miały wyższe HRV mimo szybszego tętna, a płeć zmieniała związek HRV z częstością rytmu serca — to jeden z powodów, dla których autorzy uznają rutynowe „korekty” HRV o częstość rytmu za nieuzasadnione [S12]. Badanie z 2026 roku z południowych Indii wykazało ten sam spadek z wiekiem i wyższe wartości u kobiet, a jego autorzy zauważają, że większość istniejących wartości referencyjnych pochodzi z populacji zachodnich [S13].
 - Oddech. Główny czynnik krótkoterminowy, działający przez oddechową niemiarowość zatokową: częstość i głębokość oddechu podczas zapisu zmieniają wartość [S2, S3].
 - Warunki. Pozycja ciała, pora dnia oraz sen czy czuwanie zmieniają to, co to samo serce robi w trakcie pomiaru [S5, S8].
 - Codzienne okoliczności. Pojedynczy odczyt może się przesuwać z dnia na dzień lub z nocy na noc, dlatego zaleca się powtarzane pomiary w porównywalnych warunkach [S2, S8].

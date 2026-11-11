@@ -1,5 +1,5 @@
 ---
-sourceHash: "10f3860eb8cd"
+sourceHash: 10f190138735
 title: "Référence personnelle de HRV : pourquoi votre propre normalité compte plus que toute norme"
 metaTitle: "Référence de HRV : votre normalité, pas une norme"
 metaDescription: "Votre référence de HRV est votre propre plage habituelle, pas une moyenne de population. Pourquoi elle prime sur les normes d’âge et comment ONDA la construit."
@@ -61,6 +61,8 @@ evidenceMap:
     limitation: "Documentation produit ; limitée à Apple Health comme source de données."
   - claim: "Les signaux d’ONDA sont des comparaisons descriptives avec la référence personnelle — pas des mesures du stress ni une évaluation médicale."
     limitation: "Énoncé de portée de la documentation produit ; comparaisons descriptives uniquement."
+  - claim: "Dans des conditions de laboratoire contrôlées, le RMSSD court au repos de jeunes adultes en bonne santé se répétait bien d’une mesure à l’autre, certains indices fréquentiels moins."
+    limitation: "Une seule étude chez de jeunes adultes en bonne santé, avec de courts enregistrements assis en laboratoire ; non testée sur les valeurs nocturnes des objets connectés ni à d’autres âges."
 ---
 
 ## Qu’est-ce qu’une référence personnelle de HRV ?
@@ -93,7 +95,7 @@ La mesure doit rester la même. La RMSSD et le SDNN résument des aspects diffé
 
 **Établi.** La HRV des adultes en bonne santé varie énormément, et il n’existe aucune valeur normative consensuelle pour les mesures à court terme [S3]. Les valeurs issues d’appareils, de mesures et de conditions d’enregistrement différents ne sont pas interchangeables [S6, S7], et des enregistrements de durées différentes ne se comparent pas directement [S5].
 
-**Dépend du contexte.** Une référence personnelle exige de nombreuses mesures ; des enregistrements isolés ne suffisent pas à l’établir [S10]. La pratique de suivi précise — moyennes hebdomadaires glissantes avec coefficient de variation — vient des sciences du sport, où une valeur plus basse que celle d’un pair ne traduit pas forcément un état physiologique moins bon [S10]. La PPG au poignet suit les valeurs dérivées de l’ECG dans des conditions de repos contrôlées [S8]. La variation saisonnière, lorsqu’elle est rapportée, est faible [S11]. Et parce que les résultats de HRV sont faciles à surinterpréter, les revues méthodologiques mettent en garde contre une lecture excessive [S4]. En moyenne, la valeur diminue avec l’âge, mais les écarts entre individus sont grands à tout âge [S2].
+**Dépend du contexte.** Une référence personnelle exige de nombreuses mesures ; des enregistrements isolés ne suffisent pas à l’établir [S10]. La pratique de suivi précise — moyennes hebdomadaires glissantes avec coefficient de variation — vient des sciences du sport, où une valeur plus basse que celle d’un pair ne traduit pas forcément un état physiologique moins bon [S10]. La PPG au poignet suit les valeurs dérivées de l’ECG dans des conditions de repos contrôlées [S8]. La variation saisonnière, lorsqu’elle est rapportée, est faible [S11]. Et parce que les résultats de HRV sont faciles à surinterpréter, les revues méthodologiques mettent en garde contre une lecture excessive [S4]. En moyenne, la valeur diminue avec l’âge, mais les écarts entre individus sont grands à tout âge [S2]. Dans des conditions de laboratoire comparables, le RMSSD court au repos de jeunes adultes en bonne santé se répétait bien d’une séance à l’autre, mais pas certains indices fréquentiels [S12] – ce qui appuie l’idée que votre propre niveau est assez stable quand les conditions sont comparables.
 
 **Non tranché.** La fenêtre exacte qu’une référence personnelle devrait utiliser est un choix pratique, pas une constante scientifique : les protocoles de recherche diffèrent de la logique des applications. Les fenêtres d’ONDA relèvent de la logique de l’application — documentées ci-dessous, définies une seule fois, et non issues d’un consensus du domaine [S9].
 

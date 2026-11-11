@@ -1,5 +1,5 @@
 ---
-sourceHash: "bf4ec5a45d58"
+sourceHash: 0847ebf97cd1
 title: "Snel ademen: wat het bewijs laat zien en de echte risico’s"
 metaTitle: "Snel ademen: bewijs en echte risico’s"
 metaDescription: "Wim Hof-ademhaling, holotropisch ademwerk, tummo en cyclische hyperventilatie: wat studies laten zien voor ontsteking, stemming en sport, en waarom water verboden terrein is."
@@ -60,6 +60,10 @@ evidenceMap:
     limitation: "Hypothesepaper, geen studie."
   - claim: "Ervaren tummo-mediteerders verhoogden hun lichaamstemperatuur alleen tijdens de vorm van de praktijk met krachtige ademhaling."
     limitation: "Kleine groep ervaren monniken; veldomstandigheden."
+  - claim: "In een grote geblindeerde studie verlaagde dagelijks snel ademen op afstand met lange ademstops de stress niet meer dan een placebo-ademprotocol; beide groepen verbeterden."
+    limitation: "Eén studie bij gezonde jonge volwassenen met audiosessies op afstand en zelfgerapporteerde uitkomsten."
+  - claim: "Een programma van een maand met de Wim Hof-methode gaf volgens de deelnemers grotere directe winst in energie en helderheid dan meditatie, met kleine blijvende veranderingen."
+    limitation: "Semi-gerandomiseerd, zelfgeselecteerde deelnemers, vooral zelfgerapporteerde uitkomsten, actieve controle met meditatie; HRV was niet de hoofduitkomst."
 ---
 
 ## Wat is snel ademen?
@@ -90,7 +94,7 @@ Met ‘snel ademen’ bedoelen we hier: bewust sneller en dieper ademen dan het 
 
 **Ontstekingsreactie in het laboratorium: opkomend.** In de bekendste studie kregen {{fact:study.kox2014.groups}} een ingespoten bacterieel toxine (endotoxine). De getrainde groep, die meditatie, ademtechnieken en blootstelling aan kou samen had geleerd, had een snellere en sterkere ontstekingsremmende reactie, minder ontstekingsbevorderende eiwitten en minder griepachtige klachten [S1]. Omdat de training alle drie combineerde, is het effect niet alleen aan de ademhaling toe te schrijven. Een latere pilotstudie van dezelfde groep scheidde de onderdelen bij {{fact:study.zwaag2022.participants}}: koudetraining alleen veranderde de ontstekingsreactie niet wezenlijk, de ademhalingsoefening wel, en kou erbij versterkte het effect van de ademhaling [S2]. Een systematische review van {{fact:study.almahayni2024.trials}} concludeerde dat de methode ontsteking mogelijk vermindert, op basis van weinig en meestal kleine studies [S4]. Dit alles komt uit kortdurende ontsteking in het laboratorium bij gezonde vrijwilligers, niet van mensen met een ontstekings- of auto-immuunziekte. De kou-kant van deze studies wordt besproken op de pagina over [blootstelling aan kou](/science/evidence/cold-exposure).
 
-**Stemming, angst en stress: opkomend en gemengd.** In een gerandomiseerde studie op afstand verbeterde dagelijks ademwerk de stemming meer dan mindfulnessmeditatie; de arm met cyclisch zuchten, gericht op de uitademing, deed het het best, en cyclische hyperventilatie met inhouden was een van de vergeleken armen [S3]. Bij vrouwen met veel depressieve klachten leidden een programma gebaseerd op Wim Hof met koude douches en een programma met langzaam ademen en warme douches tot een gelijkwaardige verbetering van depressie, angst en stress; alle deelnemers die uitvielen, zaten in de Wim Hof-groep [S15]. In een andere kleine studie verbeterde ongeveer twee weken dagelijks de Wim Hof-methode beoefenen de hartslagvariabiliteit (HRV), de bloeddruk en psychologische maten niet vergeleken met controles [S16]. Elk van deze resultaten komt uit één studie.
+**Stemming, angst en stress: opkomend en gemengd.** In een gerandomiseerde studie op afstand verbeterde dagelijks ademwerk de stemming meer dan mindfulnessmeditatie; de arm met cyclisch zuchten, gericht op de uitademing, deed het het best, en cyclische hyperventilatie met inhouden was een van de vergeleken armen [S3]. Bij vrouwen met veel depressieve klachten leidden een programma gebaseerd op Wim Hof met koude douches en een programma met langzaam ademen en warme douches tot een gelijkwaardige verbetering van depressie, angst en stress; alle deelnemers die uitvielen, zaten in de Wim Hof-groep [S15]. In een andere kleine studie verbeterde ongeveer twee weken dagelijks de Wim Hof-methode beoefenen de hartslagvariabiliteit (HRV), de bloeddruk en psychologische maten niet vergeleken met controles [S16]. In de grootste geblindeerde studie naar deze stijl tot nu toe deden gezonde jonge volwassenen dagelijks op afstand sessies snel ademen met lange ademstops of een placeboversie met trager ademen en korte stops: stress daalde in beide groepen zonder verschil, en ook angst, depressie, welzijn en slaap verschilden niet [S18]. In een semi-gerandomiseerde studie gaf ongeveer een maand Wim Hof-methode volgens de deelnemers grotere directe winst in energie, helderheid en omgaan met stress dan meditatie, met kleine blijvende veranderingen [S17]. Elk van deze resultaten komt uit één studie.
 
 **Sportprestaties: opkomend; geen voordeel aangetoond.** Eén sessie Wim Hof-ademhaling voor herhaalde sprints verbeterde bij amateurlopers het piekvermogen, het gemiddelde vermogen en de vermoeidheid niet, ondanks grote veranderingen in zuurstof en koolstofdioxide [S6]. De systematische review vond gemengde effecten op sportprestaties [S4].
 

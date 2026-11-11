@@ -1,5 +1,5 @@
 ---
-sourceHash: "14937f196d56"
+sourceHash: a88cc71c33c7
 title: "Summen, Chanten und Om: Was die Evidenz zeigt"
 metaTitle: "Summen, Chanten und Om: die Evidenz"
 metaDescription: "Was Studien zu Summen, Om-Chanten, Mantras und Chorsingen zeigen: Stickstoffmonoxid in der Nase, langsameres Atmen, HRV, das Gehirn und wo die Evidenz dünn ist."
@@ -49,6 +49,8 @@ evidenceMap:
     limitation: "Überwiegend Transzendentale Meditation; stilles Wiederholen eines Mantras, kein hörbares Chanten."
   - claim: "Eine systematische Übersichtsarbeit fand verlässliche Evidenz für positive Effekte von Musik und Singen auf das Wohlbefinden Erwachsener."
     limitation: "Musik und Singen gemischt; uneinheitliche Maße für Wohlbefinden; Chormitglieder sind eher weiblich, weiß und gut gebildet."
+  - claim: "In einer kleinen Pilotstudie erhöhten sowohl Summ-Atmung als auch langsames Atmen im vorgegebenen Takt die HRV gegenüber Ruhe, ohne Unterschied zwischen beiden."
+    limitation: "Eine einzelne kleine Pilotstudie mit gesunden Erwachsenen und kurzen Aufzeichnungen; der fehlende Unterschied beweist keine Gleichwertigkeit; LF-basierte Werte sind schwer zu deuten."
 ---
 
 ## Was sind Summen, Chanten und Om?
@@ -106,7 +108,9 @@ In einer Laborstudie von 2001 rezitierten {{fact:study.bernardi2001.participants
 
 Bei Chorsängern lenkte die Liedstruktur die Atmung, und beim Unisono-Singen stiegen und fielen die Herzfrequenzen gemeinsam (Klasse: **Erste Hinweise**, eine einzelne kleine Studie) [S8].
 
-Gibt es einen Effekt über das Verlangsamen des Atems hinaus? In einer randomisierten Studie ({{fact:study.ghati2021.design}}) wurde Bienensummen-Atmung mit langsamem Atmen verglichen. Der Blutdruck sank nach dem Summen nicht stärker; einige spektrale HRV-Indizes unterschieden sich in der Erholungsphase, doch ihre autonome Bedeutung ist umstritten (Klasse: **Erste Hinweise**, eine einzelne Studie) [S9]. Eine systematische Übersichtsarbeit zu Bhramari fand {{fact:study.kuppusamy2018.studies}}, und bewertete ihre Qualität als sehr niedrig [S10]. Ein zusätzlicher Effekt des Summens selbst ist also nicht gezeigt (Klasse: **Unbekannt**).
+Gibt es einen Effekt über das Verlangsamen des Atems hinaus? In einer randomisierten Studie ({{fact:study.ghati2021.design}}) wurde Bienensummen-Atmung mit langsamem Atmen verglichen. Der Blutdruck sank nach dem Summen nicht stärker; einige spektrale HRV-Indizes unterschieden sich in der Erholungsphase, doch ihre autonome Bedeutung ist umstritten (Klasse: **Erste Hinweise**, eine einzelne Studie) [S9]. In einer Pilotstudie von 2025 mit gesunden Erwachsenen erhöhten sowohl Summ-Atmung als auch langsames Atmen im vorgegebenen Takt die HRV gegenüber Ruhe, ohne Unterschied zwischen beiden (Klasse: **Erste Hinweise**, eine einzelne Studie) [S7]. Die Autoren schrieben den Effekt dem Atemrhythmus zu, nicht den Worten.
+
+Bei Chorsängern lenkte die Liedstruktur die Atmung, und beim Unisono-Singen stiegen und fielen die Herzfrequenzen gemeinsam (Klasse: **Erste Hinweise**, eine einzelne kleine Studie) [S15]. Eine systematische Übersichtsarbeit zu Bhramari fand {{fact:study.kuppusamy2018.studies}}, und bewertete ihre Qualität als sehr niedrig [S10]. Ein zusätzlicher Effekt des Summens selbst ist also nicht gezeigt (Klasse: **Unbekannt**).
 
 ### Das Gehirn – eine kleine Pilotstudie
 

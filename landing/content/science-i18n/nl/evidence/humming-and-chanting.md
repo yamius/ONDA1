@@ -1,5 +1,5 @@
 ---
-sourceHash: "14937f196d56"
+sourceHash: a88cc71c33c7
 title: "Neuriën, chanten en Om: wat het bewijs laat zien"
 metaTitle: "Neuriën, chanten en Om: het bewijs"
 metaDescription: "Wat studies laten zien over neuriën, Om-chanten, mantra's en koorzang: stikstofmonoxide in de neus, trager ademen, HRV, de hersenen en waar het bewijs dun is."
@@ -49,6 +49,8 @@ evidenceMap:
     limitation: "Vooral transcendente meditatie; stille herhaling van een mantra, geen hoorbaar chanten."
   - claim: "Een systematische review vond betrouwbaar bewijs voor positieve effecten van muziek en zingen op het welzijn van volwassenen."
     limitation: "Muziek en zingen door elkaar; uiteenlopende maten voor welzijn; koorleden zijn vaker vrouw, wit en hoogopgeleid."
+  - claim: "In een kleine pilotstudie verhoogden zowel neuriënd ademen als langzaam ademen in een vast tempo de HRV ten opzichte van rust, zonder verschil tussen beide."
+    limitation: "Eén kleine pilotstudie bij gezonde volwassenen met korte opnames; het ontbreken van verschil bewijst geen gelijkwaardigheid; op LF gebaseerde maten zijn moeilijk te duiden."
 ---
 
 ## Wat zijn neuriën, chanten en Om?
@@ -106,7 +108,9 @@ In een laboratoriumstudie uit 2001 zeiden {{fact:study.bernardi2001.participants
 
 Bij koorzangers stuurde de structuur van het lied de ademhaling, en unisono zingen liet de hartslag gelijk stijgen en dalen (klasse: **opkomend**, één kleine studie) [S8].
 
-Is er een effect bovenop het vertragen van de ademhaling? In een gerandomiseerde studie ({{fact:study.ghati2021.design}}) werd bijenzoem-ademhaling vergeleken met langzaam ademen. De bloeddruk daalde na het neuriën niet meer; sommige spectrale HRV-indices verschilden tijdens het herstel, maar hun autonome betekenis is omstreden (klasse: **opkomend**, één studie) [S9]. Een systematische review van bhramari vond {{fact:study.kuppusamy2018.studies}}, en beoordeelde de kwaliteit ervan als zeer laag [S10]. Een extra effect van het neuriën zelf is dus niet aangetoond (klasse: **onbekend**).
+Is er een effect bovenop het vertragen van de ademhaling? In een gerandomiseerde studie ({{fact:study.ghati2021.design}}) werd bijenzoem-ademhaling vergeleken met langzaam ademen. De bloeddruk daalde na het neuriën niet meer; sommige spectrale HRV-indices verschilden tijdens het herstel, maar hun autonome betekenis is omstreden (klasse: **opkomend**, één studie) [S9]. In een pilotstudie uit 2025 bij gezonde volwassenen verhoogden zowel neuriënd ademen als langzaam ademen in een vast tempo de HRV ten opzichte van rust, zonder verschil tussen beide (klasse: **opkomend**, één studie) [S7]. De auteurs schreven het effect toe aan het ademritme, niet aan de woorden.
+
+Bij koorzangers stuurde de structuur van het lied de ademhaling, en unisono zingen liet de hartslag gelijk stijgen en dalen (klasse: **opkomend**, één kleine studie) [S15]. Een systematische review van bhramari vond {{fact:study.kuppusamy2018.studies}}, en beoordeelde de kwaliteit ervan als zeer laag [S10]. Een extra effect van het neuriën zelf is dus niet aangetoond (klasse: **onbekend**).
 
 ### De hersenen — één kleine pilotstudie
 

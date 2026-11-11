@@ -1,5 +1,5 @@
 ---
-sourceHash: "14937f196d56"
+sourceHash: a88cc71c33c7
 title: "Nucenie, intonowanie i Om: co pokazują badania"
 metaTitle: "Nucenie, intonowanie i Om: badania"
 metaDescription: "Co badania mówią o nuceniu, intonowaniu Om, mantrach i śpiewie chóralnym: tlenek azotu w nosie, wolniejszy oddech, HRV, mózg i gdzie dowodów brakuje."
@@ -49,6 +49,8 @@ evidenceMap:
     limitation: "Głównie medytacja transcendentalna; ciche powtarzanie mantry, a nie słyszalne intonowanie."
   - claim: "Przegląd systematyczny znalazł wiarygodne dowody na pozytywny wpływ muzyki i śpiewu na samopoczucie dorosłych."
     limitation: "Muzyka i śpiew łącznie; niespójne miary samopoczucia; członkami chórów są częściej kobiety, osoby białe i dobrze wykształcone."
+  - claim: "W małym badaniu pilotażowym zarówno oddychanie z buczeniem, jak i wolne oddychanie w zadanym tempie podnosiły HRV w porównaniu ze spoczynkiem, bez różnicy między nimi."
+    limitation: "Jedno małe badanie pilotażowe zdrowych dorosłych z krótkimi zapisami; brak różnicy nie dowodzi równoważności; wskaźniki oparte na LF trudno interpretować."
 ---
 
 ## Czym są nucenie, intonowanie i Om?
@@ -106,7 +108,9 @@ W badaniu laboratoryjnym z 2001 roku {{fact:study.bernardi2001.participants}} od
 
 U śpiewaków chóralnych struktura pieśni prowadziła oddech, a śpiew unisono sprawiał, że tętno rosło i spadało jednocześnie (klasa: **wstępne dane**, jedno małe badanie) [S8].
 
-Czy istnieje efekt wykraczający poza spowolnienie oddechu? W badaniu randomizowanym ({{fact:study.ghati2021.design}}) porównano oddech pszczoły z wolnym oddychaniem. Ciśnienie krwi nie spadło po nuceniu bardziej; niektóre spektralne wskaźniki HRV różniły się w fazie powrotu, ale ich znaczenie autonomiczne jest sporne (klasa: **wstępne dane**, jedno badanie) [S9]. Przegląd systematyczny dotyczący bhramari objął analizą {{fact:study.kuppusamy2018.studies}}, a ich jakość oceniono jako bardzo niską [S10]. Dodatkowego efektu samego nucenia zatem nie wykazano (klasa: **nieznane**).
+Czy istnieje efekt wykraczający poza spowolnienie oddechu? W badaniu randomizowanym ({{fact:study.ghati2021.design}}) porównano oddech pszczoły z wolnym oddychaniem. Ciśnienie krwi nie spadło po nuceniu bardziej; niektóre spektralne wskaźniki HRV różniły się w fazie powrotu, ale ich znaczenie autonomiczne jest sporne (klasa: **wstępne dane**, jedno badanie) [S9]. W badaniu pilotażowym z 2025 roku u zdrowych dorosłych zarówno oddychanie z buczeniem, jak i wolne oddychanie w zadanym tempie podnosiły HRV w porównaniu ze spoczynkiem, bez różnicy między nimi (klasa: **wstępne dane**, jedno badanie) [S7]. Autorzy przypisali efekt rytmowi oddechu, a nie słowom.
+
+U śpiewaków chóralnych struktura pieśni prowadziła oddech, a śpiew unisono sprawiał, że tętno rosło i spadało jednocześnie (klasa: **wstępne dane**, jedno małe badanie) [S15]. Przegląd systematyczny dotyczący bhramari objął analizą {{fact:study.kuppusamy2018.studies}}, a ich jakość oceniono jako bardzo niską [S10]. Dodatkowego efektu samego nucenia zatem nie wykazano (klasa: **nieznane**).
 
 ### Mózg — jedno małe badanie pilotażowe
 

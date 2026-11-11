@@ -1,5 +1,5 @@
 ---
-sourceHash: "10f3860eb8cd"
+sourceHash: 10f190138735
 title: "Linia bazowa HRV: dlaczego twoja własna norma znaczy więcej niż jakakolwiek tabela"
 metaTitle: "Linia bazowa HRV: twoja norma, nie tabela"
 metaDescription: "Linia bazowa HRV to twój własny typowy zakres, a nie średnia populacyjna. Dlaczego wygrywa z normami wiekowymi, jak buduje ją ONDA i co zmiana może, a czego nie może znaczyć."
@@ -59,6 +59,8 @@ evidenceMap:
     limitation: "Dokumentacja produktu; dotyczy Apple Health jako źródła danych."
   - claim: "Sygnały ONDA to opisowe porównania z osobistą linią bazową — nie pomiary stresu i nie ocena medyczna."
     limitation: "Określenie zakresu w dokumentacji produktu; wyłącznie porównania opisowe."
+  - claim: "W kontrolowanych warunkach laboratoryjnych krótkie RMSSD w spoczynku u zdrowych młodych dorosłych dobrze powtarzało się między pomiarami, a niektóre wskaźniki częstotliwościowe gorzej."
+    limitation: "Jedno badanie zdrowych młodych dorosłych z krótkimi zapisami na siedząco w laboratorium; nie sprawdzano nocnych wartości z urządzeń ani innych grup wieku."
 ---
 
 ## Czym jest linia bazowa HRV?
@@ -91,7 +93,7 @@ Miara musi pozostać ta sama. RMSSD i SDNN opisują różne aspekty rytmu serca 
 
 **Ustalone.** Zdrowi dorośli ogromnie różnią się pod względem HRV, a dla miar krótkoterminowych nie ma uzgodnionych wartości normatywnych [S3]. Wartości z różnych urządzeń, miar i warunków zapisu nie są wymienne [S6, S7], a zapisów o różnej długości nie można porównywać wprost [S5].
 
-**Zależy od kontekstu.** Osobista linia bazowa wymaga wielu odczytów; pojedyncze zapisy jej nie wyznaczają [S10]. Konkretna praktyka monitorowania — kroczące średnie tygodniowe ze współczynnikiem zmienności — pochodzi z nauk o sporcie, gdzie wartość niższa niż u kolegi niekoniecznie oznacza gorszy stan fizjologiczny [S10]. PPG na nadgarstku odpowiada wartościom z EKG w kontrolowanych warunkach spoczynkowych [S8]. Zmienność sezonowa, tam gdzie ją opisano, jest słaba [S11]. A ponieważ wyniki dotyczące HRV łatwo nadinterpretować, przeglądy metodologiczne przestrzegają przed wyczytywaniem z nich zbyt wiele [S4]. Średnio wartość spada z wiekiem, a różnice między ludźmi są duże w każdym wieku [S2].
+**Zależy od kontekstu.** Osobista linia bazowa wymaga wielu odczytów; pojedyncze zapisy jej nie wyznaczają [S10]. Konkretna praktyka monitorowania — kroczące średnie tygodniowe ze współczynnikiem zmienności — pochodzi z nauk o sporcie, gdzie wartość niższa niż u kolegi niekoniecznie oznacza gorszy stan fizjologiczny [S10]. PPG na nadgarstku odpowiada wartościom z EKG w kontrolowanych warunkach spoczynkowych [S8]. Zmienność sezonowa, tam gdzie ją opisano, jest słaba [S11]. A ponieważ wyniki dotyczące HRV łatwo nadinterpretować, przeglądy metodologiczne przestrzegają przed wyczytywaniem z nich zbyt wiele [S4]. Średnio wartość spada z wiekiem, a różnice między ludźmi są duże w każdym wieku [S2]. W porównywalnych warunkach laboratoryjnych krótkie RMSSD w spoczynku u zdrowych młodych dorosłych dobrze powtarzało się między sesjami, a niektóre wskaźniki częstotliwościowe nie [S12] — to przemawia za traktowaniem twojego poziomu jako dość stabilnego w porównywalnych warunkach.
 
 **Nierozstrzygnięte.** Dokładne okno, z którego powinna korzystać linia bazowa, to wybór praktyczny, a nie stała naukowa: protokoły badawcze różnią się od logiki aplikacji. Okna w ONDA to logika aplikacji — opisana poniżej, zdefiniowana w jednym miejscu i niebędąca konsensusem dziedziny [S9].
 

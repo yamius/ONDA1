@@ -1,5 +1,5 @@
 ---
-sourceHash: "e66ebb227736"
+sourceHash: 3cc1e726f852
 title: "Co pojedyncza wartość HRV może, a czego nie może ci powiedzieć"
 metaTitle: "Jak czytać HRV: co mówi jedna wartość"
 metaDescription: "Co naprawdę pokazuje jeden odczyt HRV, dlaczego niski nie jest diagnozą, wysoki nie zawsze jest dobry, a porównywanie się z innymi wprowadza w błąd."
@@ -68,6 +68,8 @@ evidenceMap:
     limitation: "Dokumentacja produktu."
   - claim: "Sygnały ONDA to opisowe porównania z osobistą linią bazową, a nie pomiary stresu ani ocena medyczna."
     limitation: "Określenie zakresu w dokumentacji produktu."
+  - claim: "Grupy z niektórymi zaburzeniami psychicznymi mają niższe HRV niż osoby zdrowe, co najwyżej na poziomie „suggestive”; dla depresji i zaburzenia lękowego uogólnionego dowody są słabsze."
+    limitation: "Przegląd metaanaliz w próbach klinicznych; dziedziczy ich błędy; przekrojowe różnice między grupami, a nie test diagnostyczny, przesiewowy czy prognostyczny."
 ---
 
 ## Co może ci powiedzieć pojedyncza wartość HRV?
@@ -120,9 +122,11 @@ To związki populacyjne z zapisów EKG klasy klinicznej, głównie u pacjentów 
 
 **Zależy od kontekstu — pojedyncze odczyty.** Wyniki dotyczące HRV łatwo źle odczytać bez kontekstu pomiaru [S3]. Najbardziej wiarygodny jest kierunek twoich własnych odczytów w czasie, wykonywanych w podobnych warunkach.
 
+**Zależy od kontekstu — zdrowie psychiczne.** Przegląd metaanaliz (Wang i wsp., 2025) porównał HRV u osób z zaburzeniami psychicznymi i u osób zdrowych [S19]. W skali autorów niższe HRV osiągało co najwyżej poziom „suggestive” (wskazujący) — w zaburzeniach takich jak PTSD, otępienie i schizofrenia — a dowody dla depresji i zaburzenia lękowego uogólnionego były słabsze [S19]. To różnice między grupami w próbach klinicznych. Nie pokazują, co jest pierwsze, i nie czynią niskiej wartości oznaką zaburzenia psychicznego.
+
 ## Czego ci nie powie
 
-- **Nie poziomu stresu ani diagnozy.** Jedna wartość nie mówi nic konkretnego o twoim stanie psychicznym ani o chorobie [S1].
+- **Nie poziomu stresu ani diagnozy.** Jedna wartość nie mówi nic konkretnego o twoim stanie psychicznym ani o chorobie [S1]. Nawet różnice między grupami w zaburzeniach psychicznych są niewielkie i nie działają jak test [S19].
 - **Nie twojej pozycji na tle innych.** Liczba wyższa lub niższa niż u kogoś innego niewiele mówi o którejkolwiek z tych osób [S5, S6].
 - **Nie twojej kondycji ani „gotowości”.** Ani surowa wartość, ani zastrzeżony wskaźnik nie są same w sobie zwalidowaną miarą tych cech [S12, S13].
 - **Nie prognozy ryzyka dla ciebie.** Wyniki dotyczące ryzyka populacyjnego nie mają zastosowania do odczytu jednej zdrowej osoby [S15, S16].

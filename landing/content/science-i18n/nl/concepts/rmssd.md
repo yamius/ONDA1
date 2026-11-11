@@ -1,5 +1,5 @@
 ---
-sourceHash: "5034501eb4bc"
+sourceHash: 24dbd78b7f09
 title: "RMSSD — wat deze HRV-maat weerspiegelt en wat niet"
 metaTitle: "RMSSD: definitie, betekenis en meting"
 metaDescription: "RMSSD is een HRV-maat die vagaal gemedieerde veranderingen in de hartslag weerspiegelt. Wat ze meet, hoe wearables haar schatten en wat ze niet zegt."
@@ -52,6 +52,10 @@ evidenceMap:
     limitation: "Aankondiging van de fabrikant; beperkt tot bepaalde hardware- en OS-versies; Apple heeft niet bekendgemaakt hoe Recovery HRV wordt berekend."
   - claim: "iOS en watchOS voegen een RMSSD-gegevenstype toe aan Apple Health."
     limitation: "Officiële documentatie; beschikbaarheid beperkt tot bepaalde OS-versies; wat apps via dit type vastleggen, verschilt per app."
+  - claim: "Geslacht verandert hoe HRV met de hartslag samenhangt; de auteurs van een grote laboratoriumstudie vinden routinematige ‘correcties’ van HRV voor de hartperiode ongerechtvaardigd."
+    limitation: "Eén laboratoriumsteekproef met korte rustopnames; het argument tegen correcties is de interpretatie van de auteurs, geen consensus."
+  - claim: "Referentiewaarden voor kortdurende HRV verschillen tussen bevolkingsgroepen, dus bereiken van de ene groep zijn niet direct over te zetten naar een andere."
+    limitation: "De nieuwste studie is één regionale steekproef uit Zuid-India met korte ECG’s overdag; geen nachtelijke wearablewaarden."
 ---
 
 ## Wat is RMSSD?
@@ -81,7 +85,7 @@ De context hoort bij de meting. RMSSD hangt af van lichaamshouding, ademhaling, 
 ## Wat beïnvloedt RMSSD?
 
 - Leeftijd. {{fact:hrv.age.trend}} [S4, S5]. Mensen verschillen op elke leeftijd sterk; medianen van de bevolking zijn geen persoonlijke doelen. De volledige tabellen staan in het artikel [normale HRV per leeftijd](/articles/normal-hrv-by-age).
-- Geslacht. Studies melden verschillen tussen vrouwen en mannen, waarbij richting en grootte afhangen van leeftijd en populatie [S4].
+- Geslacht. Studies melden verschillen tussen vrouwen en mannen, waarbij richting en grootte afhangen van leeftijd en populatie [S4]. In een grote laboratoriumsteekproef hadden vrouwen een hogere HRV ondanks een snellere hartslag, en geslacht veranderde hoe HRV met de hartslag samenhing – een van de redenen waarom de auteurs routinematige ‘correcties’ van HRV voor de hartslag ongerechtvaardigd vinden [S12]. Een studie uit Zuid-India uit 2026 vond dezelfde daling met de leeftijd en hogere waarden bij vrouwen; de auteurs merken op dat de meeste bestaande referentiewaarden uit westerse bevolkingsgroepen komen [S13].
 - Ademhaling. De belangrijkste factor op korte termijn, via respiratoire sinusaritmie: ademfrequentie en ademdiepte tijdens de meting veranderen de waarde [S2, S3].
 - Omstandigheden. Lichaamshouding, tijdstip van de dag en slapen of wakker zijn veranderen allemaal wat hetzelfde hart tijdens de meting doet [S5, S8].
 - Alledaagse omstandigheden. Eén meting kan van de ene dag of nacht op de andere verschuiven; daarom worden herhaalde metingen onder vergelijkbare omstandigheden aangeraden [S2, S8].

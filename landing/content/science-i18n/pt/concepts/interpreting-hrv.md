@@ -1,5 +1,5 @@
 ---
-sourceHash: "e66ebb227736"
+sourceHash: 3cc1e726f852
 title: "O que um único valor de HRV pode e não pode dizer"
 metaTitle: "Como interpretar a HRV: o que um valor isolado diz"
 metaDescription: "O que uma leitura de HRV mostra, por que um valor baixo não é diagnóstico, por que alto nem sempre é bom e por que comparar sua HRV com a de outros engana."
@@ -68,6 +68,8 @@ evidenceMap:
     limitation: "Documentação do produto."
   - claim: "Os sinais do ONDA são comparações descritivas com a linha de base pessoal, não medidas de estresse nem uma avaliação médica."
     limitation: "Declaração de escopo da documentação do produto."
+  - claim: "Grupos com alguns transtornos mentais têm HRV mais baixa que pessoas saudáveis, no máximo no nível «suggestive»; para depressão e transtorno de ansiedade generalizada a evidência é mais fraca."
+    limitation: "Revisão de meta-análises em amostras clínicas; herda seus vieses; diferenças transversais entre grupos, não um teste diagnóstico, de triagem ou de previsão."
 ---
 
 ## O que um único valor de HRV pode dizer?
@@ -120,9 +122,11 @@ Essas são associações populacionais obtidas com registros de ECG de qualidade
 
 **Depende do contexto — leituras isoladas.** Os achados de HRV são fáceis de interpretar mal sem o seu contexto de medição [S3]. O que se sustenta melhor é a direção das suas próprias leituras ao longo do tempo, feitas em condições semelhantes.
 
+**Depende do contexto — saúde mental.** Uma revisão de meta-análises (Wang et al., 2025) comparou a HRV de pessoas com transtornos mentais com a de pessoas saudáveis [S19]. Na escala dos autores, uma HRV mais baixa chegou no máximo ao nível «suggestive» (indicativo) — em transtornos como TEPT, demência e esquizofrenia —, e a evidência para depressão e transtorno de ansiedade generalizada foi mais fraca [S19]. São diferenças entre grupos em amostras clínicas. Elas não mostram o que vem primeiro e não fazem de um valor baixo um sinal de transtorno mental.
+
 ## O que ela não diz
 
-- **Não é o seu nível de estresse nem um diagnóstico.** Um valor não diz nada específico sobre o seu estado mental nem sobre doenças [S1].
+- **Não é o seu nível de estresse nem um diagnóstico.** Um valor não diz nada específico sobre o seu estado mental nem sobre doenças [S1]. Mesmo as diferenças entre grupos nos transtornos mentais são modestas e não funcionam como teste [S19].
 - **Não é a sua posição no ranking.** Um número mais alto ou mais baixo que o de outra pessoa diz pouco sobre qualquer um de vocês [S5, S6].
 - **Não é o seu condicionamento físico nem a sua "prontidão".** Nem o valor bruto nem uma pontuação proprietária são, por si sós, uma medida validada dessas coisas [S12, S13].
 - **Não é uma previsão do seu risco pessoal.** Os achados de risco populacional não se aplicam à leitura de uma pessoa saudável [S15, S16].

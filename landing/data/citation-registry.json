@@ -1156,6 +1156,25 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1007/s10484-021-09528-w": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Gender Differences in Cardiac Chronotropic Control: Implications for Heart Rate Variability Research",
+   "firstAuthor": "Williams",
+   "authors": [
+    "Williams",
+    "Joseph",
+    "Gerardo",
+    "Hill",
+    "Koenig",
+    "Thayer"
+   ],
+   "year": 2021,
+   "yearAlt": 2022,
+   "journal": "Applied Psychophysiology and Biofeedback",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
+  },
   "doi:10.1007/s10484-023-09584-4": {
    "kind": "doi",
    "valid": true,
@@ -1185,6 +1204,23 @@
    "journal": "Applied Psychophysiology and Biofeedback",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1007/s10484-025-09724-y": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effect of Brief Mindfulness Meditation Interventions on Heart Rate Variability in Adults: A Systematic Review",
+   "firstAuthor": "Barbry",
+   "authors": [
+    "Barbry",
+    "Gál",
+    "Carton",
+    "Coquart"
+   ],
+   "year": 2025,
+   "yearAlt": 2026,
+   "journal": "Applied Psychophysiology and Biofeedback",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
   },
   "doi:10.1007/s10484-025-09750-w": {
    "kind": "doi",
@@ -2408,6 +2444,22 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1016/j.ijpsycho.2026.113341": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Test-retest reliability of time- and frequency-domain measures of short-term resting heart rate variability in a healthy young population",
+   "firstAuthor": "North",
+   "authors": [
+    "North",
+    "Adamek",
+    "Markowitz",
+    "Petruzzello"
+   ],
+   "year": 2026,
+   "journal": "International Journal of Psychophysiology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
+  },
   "doi:10.1016/j.jaac.2016.03.007": {
    "kind": "doi",
    "valid": true,
@@ -3335,6 +3387,20 @@
    "journal": "Physiology &amp; Behavior",
    "source": "crossref",
    "verifiedAt": "2026-10-05"
+  },
+  "doi:10.1016/j.physbeh.2025.114972": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Effects of slow-paced breathing and humming breathing on heart rate variability and affect: a pilot investigation",
+   "firstAuthor": "Woo",
+   "authors": [
+    "Woo",
+    "Kim"
+   ],
+   "year": 2025,
+   "journal": "Physiology &amp; Behavior",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
   },
   "doi:10.1016/j.pneurobio.2013.10.006": {
    "kind": "doi",
@@ -5107,6 +5173,21 @@
    "journal": "Scientific Reports",
    "source": "crossref",
    "verifiedAt": "2026-10-09"
+  },
+  "doi:10.1038/s41598-025-29187-9": {
+   "kind": "doi",
+   "valid": true,
+   "title": "A semi-randomised control trial assessing psychophysiological effects of breathwork and cold immersion",
+   "firstAuthor": "Fox",
+   "authors": [
+    "Fox",
+    "Biddell",
+    "King"
+   ],
+   "year": 2025,
+   "journal": "Scientific Reports",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
   },
   "doi:10.1038/s41598-026-44902-w": {
    "kind": "doi",
@@ -7943,6 +8024,23 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1152/ajpheart.90182.2026": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Acute ventilatory and hemodynamic responses to nasal versus oral breathing during normoxia, hypoxia, and hypercapnia",
+   "firstAuthor": "Citherlet",
+   "authors": [
+    "Citherlet",
+    "Manferdelli",
+    "Raberin",
+    "Bourdillon",
+    "Millet"
+   ],
+   "year": 2026,
+   "journal": "American Journal of Physiology-Heart and Circulatory Physiology",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
+  },
   "doi:10.1152/ajpregu.00012.2025": {
    "kind": "doi",
    "valid": true,
@@ -8688,6 +8786,29 @@
    "source": "crossref",
    "verifiedAt": "2026-10-05"
   },
+  "doi:10.1177/09727531261454450": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Normative Heart Rate Variability Parameters Across Age and Gender in Healthy Adults from an Apex Tertiary Care Centre in Southern India",
+   "firstAuthor": "Singhal",
+   "authors": [
+    "Singhal",
+    "Das",
+    "Y",
+    "Mitra",
+    "Srivastav",
+    "Anala",
+    "Sarkar",
+    "M",
+    "V",
+    "Madhuri",
+    "John"
+   ],
+   "year": 2026,
+   "journal": "Annals of Neurosciences",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
+  },
   "doi:10.1177/1088868316628405": {
    "kind": "doi",
    "valid": true,
@@ -9105,6 +9226,20 @@
    "journal": "BMC Sports Science, Medicine and Rehabilitation",
    "source": "crossref",
    "verifiedAt": "2026-10-06"
+  },
+  "doi:10.1186/s13102-026-01912-5": {
+   "kind": "doi",
+   "valid": true,
+   "title": "Temperature-dependent effects of post-exercise cold-water immersion on recovery: a systematic review and meta-analysis",
+   "firstAuthor": "Jeon",
+   "authors": [
+    "Jeon",
+    "Yeo"
+   ],
+   "year": 2026,
+   "journal": "BMC Sports Science, Medicine and Rehabilitation",
+   "source": "crossref",
+   "verifiedAt": "2026-11-11"
   },
   "doi:10.1186/s40359-016-0168-6": {
    "kind": "doi",
@@ -19606,6 +19741,25 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:34817765": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Gender Differences in Cardiac Chronotropic Control: Implications for Heart Rate Variability Research.",
+   "firstAuthor": "Williams",
+   "authors": [
+    "Williams",
+    "Joseph",
+    "Gerardo",
+    "Hill",
+    "Koenig",
+    "Thayer"
+   ],
+   "year": 2022,
+   "journal": "Appl Psychophysiol Biofeedback",
+   "doi": "10.1007/s10484-021-09528-w",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
+  },
   "pmid:34825538": {
    "kind": "pmid",
    "valid": true,
@@ -20999,6 +21153,24 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
   },
+  "pmid:39043650": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of brief remote high ventilation breathwork with retention on mental health and wellbeing: a randomised placebo-controlled trial.",
+   "firstAuthor": "Fincham",
+   "authors": [
+    "Fincham",
+    "Epel",
+    "Colasanti",
+    "Strauss",
+    "Cavanagh"
+   ],
+   "year": 2024,
+   "journal": "Sci Rep",
+   "doi": "10.1038/s41598-024-64254-7",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
+  },
   "pmid:39175400": {
    "kind": "pmid",
    "valid": true,
@@ -21518,6 +21690,21 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-06"
   },
+  "pmid:40482984": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effects of slow-paced breathing and humming breathing on heart rate variability and affect: a pilot investigation.",
+   "firstAuthor": "Woo",
+   "authors": [
+    "Woo",
+    "Kim"
+   ],
+   "year": 2025,
+   "journal": "Physiol Behav",
+   "doi": "10.1016/j.physbeh.2025.114972",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
+  },
   "pmid:40527833": {
    "kind": "pmid",
    "valid": true,
@@ -21552,6 +21739,24 @@
    "doi": "10.1016/j.neubiorev.2025.106268",
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
+  },
+  "pmid:40715924": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Effect of Brief Mindfulness Meditation Interventions on Heart Rate Variability in Adults: A Systematic Review.",
+   "firstAuthor": "Barbry",
+   "authors": [
+    "Barbry",
+    "Gál É",
+    "Carton",
+    "Coquart"
+   ],
+   "year": 2026,
+   "yearAlt": 2025,
+   "journal": "Appl Psychophysiol Biofeedback",
+   "doi": "10.1007/s10484-025-09724-y",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
   },
   "pmid:40735382": {
    "kind": "pmid",
@@ -21892,6 +22097,22 @@
    "doi": "10.1111/nyas.70149",
    "source": "pubmed",
    "verifiedAt": "2026-10-07"
+  },
+  "pmid:41388053": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "A semi-randomised control trial assessing psychophysiological effects of breathwork and cold immersion.",
+   "firstAuthor": "Fox",
+   "authors": [
+    "Fox",
+    "Biddell",
+    "King"
+   ],
+   "year": 2025,
+   "journal": "Sci Rep",
+   "doi": "10.1038/s41598-025-29187-9",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
   },
   "pmid:41399178": {
    "kind": "pmid",
@@ -22312,6 +22533,23 @@
    "doi": "10.1002/eat.70064",
    "source": "pubmed",
    "verifiedAt": "2026-10-05"
+  },
+  "pmid:41765049": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Test-retest reliability of time- and frequency-domain measures of short-term resting heart rate variability in a healthy young population.",
+   "firstAuthor": "North",
+   "authors": [
+    "North",
+    "Adamek",
+    "Markowitz",
+    "Petruzzello"
+   ],
+   "year": 2026,
+   "journal": "Int J Psychophysiol",
+   "doi": "10.1016/j.ijpsycho.2026.113341",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
   },
   "pmid:41768017": {
    "kind": "pmid",
@@ -22910,6 +23148,30 @@
    "source": "pubmed",
    "verifiedAt": "2026-10-09"
   },
+  "pmid:42389362": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Normative Heart Rate Variability Parameters Across Age and Gender in Healthy Adults from an Apex Tertiary Care Centre in Southern India.",
+   "firstAuthor": "Singhal",
+   "authors": [
+    "Singhal",
+    "Das",
+    "Y",
+    "Mitra",
+    "Srivastav",
+    "Anala",
+    "Sarkar",
+    "M",
+    "V",
+    "Madhuri",
+    "John"
+   ],
+   "year": 2026,
+   "journal": "Ann Neurosci",
+   "doi": "10.1177/09727531261454450",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
+  },
   "pmid:42399690": {
    "kind": "pmid",
    "valid": true,
@@ -23258,6 +23520,39 @@
    "doi": "10.1007/s10286-026-01243-y",
    "source": "pubmed",
    "verifiedAt": "2026-10-08"
+  },
+  "pmid:42870311": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Temperature-dependent effects of post-exercise cold-water immersion on recovery: a systematic review and meta-analysis.",
+   "firstAuthor": "Jeon",
+   "authors": [
+    "Jeon",
+    "Yeo"
+   ],
+   "year": 2026,
+   "journal": "BMC Sports Sci Med Rehabil",
+   "doi": "10.1186/s13102-026-01912-5",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
+  },
+  "pmid:42932917": {
+   "kind": "pmid",
+   "valid": true,
+   "title": "Acute ventilatory and hemodynamic responses to nasal versus oral breathing during normoxia, hypoxia, and hypercapnia.",
+   "firstAuthor": "Citherlet",
+   "authors": [
+    "Citherlet",
+    "Manferdelli",
+    "Raberin",
+    "Bourdillon",
+    "Millet"
+   ],
+   "year": 2026,
+   "journal": "Am J Physiol Heart Circ Physiol",
+   "doi": "10.1152/ajpheart.90182.2026",
+   "source": "pubmed",
+   "verifiedAt": "2026-11-11"
   },
   "pmid:6013341": {
    "kind": "pmid",

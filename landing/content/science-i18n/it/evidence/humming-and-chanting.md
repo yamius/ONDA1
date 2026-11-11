@@ -1,5 +1,5 @@
 ---
-sourceHash: "14937f196d56"
+sourceHash: a88cc71c33c7
 title: "Humming, canto e Om: che cosa mostrano le evidenze"
 metaTitle: "Humming, canto e Om: le evidenze"
 metaDescription: "Che cosa mostrano gli studi su humming, canto dell'Om, mantra e canto corale: ossido nitrico nasale, respiro più lento, HRV, cervello e dove le evidenze sono scarse."
@@ -50,6 +50,8 @@ evidenceMap:
     limitation: "Soprattutto meditazione trascendentale; ripetizione silenziosa di un mantra, non canto udibile."
   - claim: "Una revisione sistematica ha trovato evidenze affidabili di effetti positivi della musica e del canto sul benessere degli adulti."
     limitation: "Musica e canto insieme; misure del benessere non uniformi; i membri dei cori tendono a essere donne, bianche e con un alto livello di istruzione."
+  - claim: "In un piccolo studio pilota, sia la respirazione con ronzio sia la respirazione lenta a ritmo guidato hanno aumentato la HRV rispetto al riposo, senza differenze tra le due."
+    limitation: "Un solo piccolo studio pilota su adulti sani con brevi registrazioni; l’assenza di differenze non prova l’equivalenza; gli indici basati su LF sono difficili da interpretare."
 ---
 
 ## Che cosa sono humming, canto e Om?
@@ -107,7 +109,9 @@ In uno studio di laboratorio del 2001, {{fact:study.bernardi2001.participants}} 
 
 Nei coristi la struttura del brano guidava il respiro, e il canto all'unisono faceva salire e scendere insieme le frequenze cardiache (classe: **Emergente**, un singolo piccolo studio) [S8].
 
-C'è un effetto oltre al rallentamento del respiro? In uno studio randomizzato ({{fact:study.ghati2021.design}}) la respirazione dell'ape è stata confrontata con la respirazione lenta. La pressione arteriosa non è scesa di più dopo l'humming; alcuni indici spettrali di HRV differivano durante il recupero, ma il loro significato autonomico è dibattuto (classe: **Emergente**, un singolo studio) [S9]. Una revisione sistematica su bhramari ha trovato {{fact:study.kuppusamy2018.studies}}, e ne ha giudicato la qualità molto bassa [S10]. Un effetto aggiuntivo dell'humming in sé, quindi, non è stato dimostrato (classe: **Sconosciuto**).
+C'è un effetto oltre al rallentamento del respiro? In uno studio randomizzato ({{fact:study.ghati2021.design}}) la respirazione dell'ape è stata confrontata con la respirazione lenta. La pressione arteriosa non è scesa di più dopo l'humming; alcuni indici spettrali di HRV differivano durante il recupero, ma il loro significato autonomico è dibattuto (classe: **Emergente**, un singolo studio) [S9]. In uno studio pilota del 2025 su adulti sani, sia la respirazione con ronzio sia la respirazione lenta a ritmo guidato hanno aumentato la HRV rispetto al riposo, senza differenze tra le due (classe: **Emergente**, un singolo studio) [S7]. Gli autori hanno attribuito l'effetto al ritmo del respiro, non alle parole.
+
+Nei coristi la struttura del brano guidava il respiro, e il canto all'unisono faceva salire e scendere insieme le frequenze cardiache (classe: **Emergente**, un singolo piccolo studio) [S15]. Una revisione sistematica su bhramari ha trovato {{fact:study.kuppusamy2018.studies}}, e ne ha giudicato la qualità molto bassa [S10]. Un effetto aggiuntivo dell'humming in sé, quindi, non è stato dimostrato (classe: **Sconosciuto**).
 
 ### Il cervello: un piccolo studio pilota
 

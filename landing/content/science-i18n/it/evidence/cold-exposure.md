@@ -1,5 +1,5 @@
 ---
-sourceHash: "6f5f5a221096"
+sourceHash: af5d6a3da844
 title: "Esposizione al freddo: che cosa mostrano le evidenze e dove diventa rischiosa"
 metaTitle: "Esposizione al freddo: evidenze e rischi"
 metaDescription: "Bagni e docce fredde, viso raffreddato: che cosa dicono gli studi su stress, malattia, recupero e metabolismo, cosa tacciono i miti sulla dopamina e i rischi."
@@ -63,6 +63,10 @@ evidenceMap:
     limitation: "Piccolo gruppo di giovani uomini; immersione di un'ora; livelli plasmatici, non dopamina cerebrale."
   - claim: "La risposta da shock da freddo può causare la morte per aspirazione di acqua, riduzione del flusso sanguigno cerebrale e aritmia prima che la temperatura corporea interna scenda; l'alcol modifica i rischi."
     limitation: "Revisione narrativa sulla fisiologia dell'annegamento."
+  - claim: "Dopo l’esercizio, singole immersioni in acqua fredda hanno ridotto l’indolenzimento muscolare e i marcatori di danno muscolare, ma nessuna temperatura dell’acqua è risultata chiaramente superiore."
+    limitation: "Esiti di recupero, non HRV né salute; alta eterogeneità; la revisione non era registrata in anticipo e gli autori definiscono esplorativi i sottogruppi di temperatura."
+  - claim: "Un programma di un mese del metodo Wim Hof, che unisce respirazione e freddo, ha dato secondo i partecipanti maggiori miglioramenti immediati di energia e lucidità rispetto alla meditazione, con piccoli cambiamenti duraturi; non permette di isolare l’effetto del freddo."
+    limitation: "Semi-randomizzato, partecipanti autoselezionati, esiti soprattutto autoriferiti, controllo attivo con meditazione e non placebo; respirazione e freddo combinati."
 ---
 
 ## Che cosa si intende per esposizione al freddo?
@@ -86,11 +90,11 @@ Molti studi sono piccoli, spesso includono solo uomini e usano temperature e tip
 
 ## Che cosa mostrano le evidenze?
 
-**Stress, umore e sonno: emergente.** Una meta-analisi di studi randomizzati su adulti sani ha trovato uno stress più basso dodici ore dopo l'immersione in acqua fredda, ma non subito dopo né in momenti successivi; qualità del sonno e qualità di vita sono migliorate, l'umore no [S1]. Gli autori segnalano pochi studi e campioni piccoli [S1].
+**Stress, umore e sonno: emergente.** Una meta-analisi di studi randomizzati su adulti sani ha trovato uno stress più basso dodici ore dopo l'immersione in acqua fredda, ma non subito dopo né in momenti successivi; qualità del sonno e qualità di vita sono migliorate, l'umore no [S1]. Gli autori segnalano pochi studi e campioni piccoli [S1]. In uno studio semi-randomizzato sul metodo Wim Hof, che unisce respirazione e freddo, circa un mese di pratica quotidiana ha dato, secondo i partecipanti, maggiori miglioramenti immediati di energia, lucidità e capacità di gestire lo stress rispetto alla meditazione, con piccoli cambiamenti duraturi [S18]. Poiché respirazione e freddo andavano insieme, lo studio non può mostrare che cosa aggiunga il freddo.
 
 **Assenze per malattia: emergente.** In un grande studio randomizzato, le persone che per un mese hanno concluso la doccia con acqua fredda hanno riferito meno giorni di assenza dal lavoro per malattia, ma non meno giorni di malattia [S8]. Gli esiti erano autoriferiti e i partecipanti sapevano in quale gruppo si trovavano.
 
-**Recupero dopo l'esercizio: dipende dal contesto.** L'immersione in acqua fredda ha ridotto l'indolenzimento muscolare dopo l'esercizio rispetto al riposo, in studi piccoli e di bassa qualità; non si è dimostrata migliore dei bagni in acqua calda o dei bagni di contrasto [S9]. Ma in uno studio su uomini che facevano allenamento di forza, chi usava l'immersione in acqua fredda dopo ogni seduta per dodici settimane ha guadagnato meno forza e muscolo di chi faceva recupero attivo [S10]. Se l'obiettivo è la crescita muscolare, bagni freddi abituali subito dopo l'allenamento di forza possono andare in senso contrario. Per la crioterapia total body, le evidenze sull'indolenzimento muscolare sono di qualità molto bassa [S11].
+**Recupero dopo l'esercizio: dipende dal contesto.** L'immersione in acqua fredda ha ridotto l'indolenzimento muscolare dopo l'esercizio rispetto al riposo, in studi piccoli e di bassa qualità; non si è dimostrata migliore dei bagni in acqua calda o dei bagni di contrasto [S9]. Ma in uno studio su uomini che facevano allenamento di forza, chi usava l'immersione in acqua fredda dopo ogni seduta per dodici settimane ha guadagnato meno forza e muscolo di chi faceva recupero attivo [S10]. Se l'obiettivo è la crescita muscolare, bagni freddi abituali subito dopo l'allenamento di forza possono andare in senso contrario. Per la crioterapia total body, le evidenze sull'indolenzimento muscolare sono di qualità molto bassa [S11]. Una meta-analisi del 2026 su singole immersioni dopo l’esercizio ha trovato meno indolenzimento muscolare e marcatori di danno muscolare più bassi, ma nessuna temperatura dell’acqua è risultata chiaramente migliore delle altre; gli autori definiscono esplorativi quei confronti di temperatura [S17].
 
 **Metabolismo, grasso bruno e insulina: emergente.** Dieci giorni di acclimatazione a un freddo moderato hanno aumentato l'attività del grasso bruno e la produzione di calore in uno studio piccolo [S12], e un protocollo simile ha migliorato la sensibilità all'insulina in uno studio piccolo e non controllato su persone con diabete [S13]. Entrambi hanno usato aria moderatamente fredda per molte ore, non brevi bagni freddi. Una revisione degli studi sull'acqua fredda conclude che gli effetti sul grasso corporeo e sull'insulina sembrano promettenti, ma restano dibattuti [S2].
 

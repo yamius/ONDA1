@@ -1,5 +1,5 @@
 ---
-sourceHash: "e66ebb227736"
+sourceHash: 3cc1e726f852
 title: "Was ein einzelner HRV-Wert verrät – und was nicht"
 metaTitle: "HRV deuten: Was ein einzelner Wert verrät"
 metaDescription: "Was ein HRV-Wert wirklich zeigt, warum niedrig keine Diagnose und hoch nicht immer gut ist und warum der Vergleich mit anderen in die Irre führt."
@@ -69,6 +69,8 @@ evidenceMap:
     limitation: "Produktdokumentation."
   - claim: "Die Signale von ONDA sind beschreibende Vergleiche mit der persönlichen Baseline – keine Stressmessungen und keine medizinische Beurteilung."
     limitation: "Aussage der Produktdokumentation zum Geltungsbereich."
+  - claim: "Gruppen mit einigen psychischen Erkrankungen haben eine niedrigere HRV als Gesunde, höchstens auf der Stufe „suggestive“; für Depression und generalisierte Angststörung ist die Evidenz schwächer."
+    limitation: "Übersicht über Metaanalysen in klinischen Stichproben; übernimmt deren Verzerrungen; Gruppenunterschiede im Querschnitt, kein diagnostischer, Screening- oder Vorhersagetest."
 ---
 
 ## Was kann ein einzelner HRV-Wert verraten?
@@ -121,9 +123,11 @@ Das sind Zusammenhänge in der Bevölkerung, gewonnen aus EKG-Aufzeichnungen in 
 
 **Kontextabhängig – einzelne Messwerte.** HRV-Befunde werden ohne ihren Messkontext leicht falsch gelesen [S3]. Am belastbarsten ist die Richtung deiner eigenen Messwerte über die Zeit, erhoben unter ähnlichen Bedingungen.
 
+**Kontextabhängig – psychische Gesundheit.** Eine Übersicht über Metaanalysen (Wang et al., 2025) verglich die HRV von Menschen mit psychischen Erkrankungen mit der von Gesunden [S19]. Nach der Bewertung der Autoren erreichte eine niedrigere HRV höchstens die Stufe „suggestive“ (Hinweise) – bei Erkrankungen wie PTBS, Demenz und Schizophrenie –, während die Evidenz für Depression und generalisierte Angststörung schwächer war [S19]. Das sind Gruppenunterschiede in klinischen Stichproben. Sie zeigen nicht, was zuerst kommt, und machen einen niedrigen Wert nicht zu einem Zeichen einer psychischen Erkrankung.
+
 ## Was ein einzelner Wert dir nicht sagt
 
-- **Weder dein Stressniveau noch eine Diagnose.** Ein einzelner Wert sagt nichts Spezifisches über deinen seelischen Zustand oder über Krankheiten [S1].
+- **Weder dein Stressniveau noch eine Diagnose.** Ein einzelner Wert sagt nichts Spezifisches über deinen seelischen Zustand oder über Krankheiten [S1]. Selbst die Gruppenunterschiede bei psychischen Erkrankungen sind gering und taugen nicht als Test [S19].
 - **Nicht deinen Rang.** Eine höhere oder niedrigere Zahl als die eines anderen Menschen sagt über keinen von euch beiden viel aus [S5, S6].
 - **Weder deine Fitness noch deine „Readiness“.** Weder der Rohwert noch ein proprietärer Score ist für sich allein ein validiertes Maß dafür [S12, S13].
 - **Keine persönliche Risikoprognose.** Befunde zum Risiko in der Bevölkerung gelten nicht für den Messwert eines einzelnen gesunden Menschen [S15, S16].

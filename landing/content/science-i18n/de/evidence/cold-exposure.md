@@ -1,5 +1,5 @@
 ---
-sourceHash: "6f5f5a221096"
+sourceHash: af5d6a3da844
 title: "Kälteexposition: Was die Evidenz zeigt und wo es riskant wird"
 metaTitle: "Kälteexposition: Evidenz und Risiken"
 metaDescription: "Eisbad, kalte Dusche, Gesichtskühlung: was Studien zu Stress, Krankheit, Erholung und Stoffwechsel zeigen, was Dopamin-Mythen auslassen und wo Risiken liegen."
@@ -62,6 +62,10 @@ evidenceMap:
     limitation: "Kleine Gruppe junger Männer; einstündiges Eintauchen; Plasmaspiegel, nicht Dopamin im Gehirn."
   - claim: "Die Kälteschockreaktion kann durch Aspiration, verminderte Hirndurchblutung und Herzrhythmusstörungen zum Tod führen, bevor die Körperkerntemperatur sinkt; Alkohol verändert die Risiken."
     limitation: "Narrative Übersicht zur Physiologie des Ertrinkens."
+  - claim: "Nach Belastung verringerten einzelne Kaltwasserbäder Muskelkater und Marker für Muskelschäden, aber keine Wassertemperatur war klar überlegen."
+    limitation: "Erholungsgrößen, nicht HRV oder Gesundheit; hohe Heterogenität; die Übersicht war nicht vorab registriert, und die Autoren nennen die Temperatur-Untergruppen explorativ."
+  - claim: "Ein einmonatiges Programm der Wim-Hof-Methode, das Atmung mit Kälte verbindet, brachte nach Selbstauskunft größere kurzfristige Zuwächse an Energie und Klarheit als Meditation, bei kleinen dauerhaften Veränderungen; den Effekt der Kälte kann es nicht isolieren."
+    limitation: "Teilrandomisiert, selbst ausgewählte Teilnehmende, überwiegend Selbstauskünfte, aktive Kontrolle mit Meditation statt Placebo; Atmung und Kälte waren kombiniert."
 ---
 
 ## Was zählt als Kälteexposition?
@@ -85,11 +89,11 @@ Viele Studien sind klein, schließen oft nur Männer ein und verwenden unterschi
 
 ## Was zeigt die Evidenz?
 
-**Stress, Stimmung und Schlaf: vorläufig.** Eine Metaanalyse randomisierter Studien mit gesunden Erwachsenen fand zwölf Stunden nach der Kaltwasserimmersion geringeren Stress, aber weder unmittelbar danach noch zu späteren Zeitpunkten; Schlafqualität und Lebensqualität verbesserten sich, die Stimmung nicht [S1]. Die Autoren weisen auf wenige Studien und kleine Stichproben hin [S1].
+**Stress, Stimmung und Schlaf: vorläufig.** Eine Metaanalyse randomisierter Studien mit gesunden Erwachsenen fand zwölf Stunden nach der Kaltwasserimmersion geringeren Stress, aber weder unmittelbar danach noch zu späteren Zeitpunkten; Schlafqualität und Lebensqualität verbesserten sich, die Stimmung nicht [S1]. Die Autoren weisen auf wenige Studien und kleine Stichproben hin [S1]. In einer teilrandomisierten Studie zur Wim-Hof-Methode, die Atmung mit Kälte verbindet, brachte etwa ein Monat täglicher Praxis nach Selbstauskunft größere kurzfristige Zuwächse an Energie, Klarheit und Stressbewältigung als Meditation, während dauerhafte Veränderungen klein blieben [S18]. Da Atmung und Kälte zusammen kamen, kann die Studie nicht zeigen, was die Kälte beiträgt.
 
 **Krankheitsbedingte Fehltage: vorläufig.** In einer großen randomisierten Studie meldeten Menschen, die ihre Dusche einen Monat lang mit kaltem Wasser beendeten, weniger krankheitsbedingte Fehltage bei der Arbeit, aber nicht weniger Krankheitstage [S8]. Die Ergebnisse waren selbstberichtet, und die Teilnehmenden wussten, zu welcher Gruppe sie gehörten.
 
-**Erholung nach dem Training: kontextabhängig.** Kaltwasserimmersion verringerte Muskelkater nach dem Training im Vergleich zu Ruhe, in kleinen Studien niedriger Qualität; ein Vorteil gegenüber warmem Wasser oder Wechselbädern wurde nicht gezeigt [S9]. In einer Studie mit Männern, die Krafttraining machten, gewannen jedoch jene, die zwölf Wochen lang nach jeder Einheit Kaltwasserimmersion nutzten, weniger Kraft und Muskulatur als jene mit aktiver Erholung [S10]. Wenn Muskelaufbau das Ziel ist, können routinemäßige Eisbäder direkt nach dem Krafttraining dem entgegenwirken. Für Ganzkörper-Kryotherapie ist die Evidenz zu Muskelkater von sehr niedriger Qualität [S11].
+**Erholung nach dem Training: kontextabhängig.** Kaltwasserimmersion verringerte Muskelkater nach dem Training im Vergleich zu Ruhe, in kleinen Studien niedriger Qualität; ein Vorteil gegenüber warmem Wasser oder Wechselbädern wurde nicht gezeigt [S9]. In einer Studie mit Männern, die Krafttraining machten, gewannen jedoch jene, die zwölf Wochen lang nach jeder Einheit Kaltwasserimmersion nutzten, weniger Kraft und Muskulatur als jene mit aktiver Erholung [S10]. Wenn Muskelaufbau das Ziel ist, können routinemäßige Eisbäder direkt nach dem Krafttraining dem entgegenwirken. Für Ganzkörper-Kryotherapie ist die Evidenz zu Muskelkater von sehr niedriger Qualität [S11]. Eine Metaanalyse von 2026 zu einzelnen Kaltwasserbädern nach Belastung fand weniger Muskelkater und niedrigere Marker für Muskelschäden, aber keine Wassertemperatur schnitt klar besser ab als die anderen; die Autoren nennen diese Temperaturvergleiche explorativ [S17].
 
 **Stoffwechsel, braunes Fett und Insulin: vorläufig.** Zehn Tage milder Kälteakklimatisierung steigerten in einer kleinen Studie die Aktivität des braunen Fettgewebes und die Wärmebildung [S12], und ein ähnliches Protokoll verbesserte in einer kleinen, unkontrollierten Studie mit Menschen mit Diabetes die Insulinsensitivität [S13]. Beide nutzten milde kalte Luft über viele Stunden, keine kurzen Eisbäder. Eine Übersicht zu Kaltwasserstudien kommt zu dem Schluss, dass die Effekte auf Körperfett und Insulin vielversprechend aussehen, aber umstritten bleiben [S2].
 

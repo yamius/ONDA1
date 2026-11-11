@@ -1,5 +1,5 @@
 ---
-sourceHash: "914a9faa457f"
+sourceHash: 888be023249e
 title: "Kun je HRV van een smartwatch of ring vertrouwen?"
 metaTitle: "HRV van wearables: horloge of ring te vertrouwen?"
 metaDescription: "HRV van een smartwatch of ring is een schatting uit het polssignaal, geen ecg-meting. Waar ze overeenkomen, waar ze uiteenlopen en hoe je je getallen leest."
@@ -73,6 +73,8 @@ evidenceMap:
     limitation: "Eén studie, gezonde volwassenen, twee horlogemodellen, een borstband met analysesoftware als referentie; ze beschrijft Recovery HRV of nieuwere horlogemodellen niet."
   - claim: "In één observationele studie kwam hoe mensen zich voelden niet consequent overeen met de nachtelijke HRV van een activiteitstracker."
     limitation: "Kleine observationele studie met één commerciële tracker; alle auteurs zijn in dienst van PepsiCo R&D (Gatorade Sports Science Institute), dat de studie financierde; onafhankelijke herhaling is nodig."
+  - claim: "Herhaalbaarheid hangt af van de maat: de korte RMSSD in rust was goed herhaalbaar tussen laboratoriumsessies bij gezonde jonge volwassenen, een maat voor de piekfrequentie niet."
+    limitation: "Eén laboratoriumstudie met opnames van ECG-kwaliteit bij gezonde jonge volwassenen; nachtelijke wearablewaarden zijn niet getest."
 ---
 
 ## Wat is HRV van een wearable?
@@ -148,7 +150,7 @@ Voor de Apple Watch vond een doorlopend bijgewerkte systematische review met met
 
 De feiten over het ecosysteem van Apple horen hier als apparaatfeiten: Apple Health slaat HRV op als SDNN [S6], recente horlogemodellen tonen twee HRV-varianten [S7], en het platform accepteert nu ook een waarde van het type RMSSD [S8] — afgebakende uitspraken over wat wordt vastgelegd, niet over gezondheid.
 
-**Methodologische richtlijnen.** Actuele richtlijnen stellen dat het ingangssignaal, de meetduur, de setting, de ademhaling en de analysemethode allemaal de zorgvuldigheid en betrouwbaarheid beïnvloeden [S5], en dat bevindingen over HRV van wearables — ook in onderzoek — binnen deze beperkingen moeten worden geïnterpreteerd en in context geplaatst [S5]. In het dagelijks leven betekent dat: vergelijk gelijk met gelijk.
+**Methodologische richtlijnen.** Actuele richtlijnen stellen dat het ingangssignaal, de meetduur, de setting, de ademhaling en de analysemethode allemaal de zorgvuldigheid en betrouwbaarheid beïnvloeden [S5], en dat bevindingen over HRV van wearables — ook in onderzoek — binnen deze beperkingen moeten worden geïnterpreteerd en in context geplaatst [S5]. In het dagelijks leven betekent dat: vergelijk gelijk met gelijk. Ook herhaalbaarheid hangt af van de maat: in een laboratoriumstudie bij gezonde jonge volwassenen was de korte RMSSD in rust goed herhaalbaar tussen sessies, een maat voor de piekfrequentie niet [S15] – nog een reden om één maat onder vergelijkbare omstandigheden te volgen.
 
 **Onbekend.** Hoe goed deze methoden te veralgemenen zijn over de verscheidenheid aan consumentenapparaten en eigen algoritmen; hoe ze presteren bij onbeperkte dagelijkse beweging en over nachtelijke vensters die apparaten verschillend definiëren; hoe ze zich gedragen bij mensen met ritmestoornissen of specifieke aandoeningen; en wanneer een verandering die een wearable oppikt klinisch betekenisvol wordt. Niets hiervan is beslecht — een reden om bewust met metingen om te gaan, niet om de gegevens weg te gooien.
 

@@ -1,5 +1,5 @@
 ---
-sourceHash: "5034501eb4bc"
+sourceHash: 24dbd78b7f09
 title: "RMSSD : ce que reflète cette mesure de la HRV, et ce qu’elle ne reflète pas"
 metaTitle: "RMSSD : définition, signification et mesure"
 metaDescription: "La RMSSD, mesure de la HRV, reflète les variations de la fréquence cardiaque d’origine vagale. Ce qu’elle mesure, comment les montres l’estiment, ses limites."
@@ -53,6 +53,10 @@ evidenceMap:
     limitation: "Annonce du fabricant ; limitée à certains matériels et versions du système ; Apple n’a pas précisé comment Recovery HRV est calculée."
   - claim: "iOS et watchOS ajoutent un type de données RMSSD à Apple Health."
     limitation: "Documentation officielle ; disponibilité limitée à certaines versions du système ; ce que les applications enregistrent via ce type dépend de chacune."
+  - claim: "Le sexe modifie le lien entre HRV et fréquence cardiaque ; les auteurs d’une grande étude de laboratoire jugent injustifiées les « corrections » systématiques de la HRV selon la période cardiaque."
+    limitation: "Un seul échantillon de laboratoire avec de courts enregistrements au repos ; l’argument contre les corrections est l’interprétation des auteurs, pas un consensus."
+  - claim: "Les valeurs de référence de la HRV à court terme diffèrent d’une population à l’autre ; les plages d’une population ne se transposent pas directement à une autre."
+    limitation: "L’étude la plus récente est un seul échantillon régional du sud de l’Inde avec de courts ECG de jour ; pas des valeurs nocturnes d’objets connectés."
 ---
 
 ## Qu’est-ce que la RMSSD ?
@@ -82,7 +86,7 @@ Le contexte fait partie de la mesure. La RMSSD dépend de la posture, de la resp
 ## Qu’est-ce qui influence la RMSSD ?
 
 - L’âge. En moyenne, {{fact:hrv.age.trend}} [S4, S5]. Les écarts entre individus sont grands à tout âge ; les médianes de population ne sont pas des objectifs personnels. Les tableaux complets se trouvent dans l’article sur la [HRV normale selon l’âge](/articles/normal-hrv-by-age).
-- Le sexe. Les études rapportent des différences entre femmes et hommes, dont le sens et l’ampleur dépendent de l’âge et de la population [S4].
+- Le sexe. Les études rapportent des différences entre femmes et hommes, dont le sens et l’ampleur dépendent de l’âge et de la population [S4]. Dans un grand échantillon de laboratoire, les femmes avaient une HRV plus élevée malgré une fréquence cardiaque plus rapide, et le sexe modifiait le lien entre HRV et fréquence cardiaque – une des raisons pour lesquelles les auteurs jugent injustifiées les « corrections » systématiques de la HRV selon la fréquence cardiaque [S12]. Une étude récente menée dans le sud de l’Inde a retrouvé la même baisse avec l’âge et des valeurs plus élevées chez les femmes ; ses auteurs notent que la plupart des valeurs de référence existantes proviennent de populations occidentales [S13].
 - La respiration. C’est le principal facteur à court terme, par l’arythmie sinusale respiratoire : la fréquence et l’amplitude respiratoires pendant l’enregistrement modifient la valeur [S2, S3].
 - Les conditions. La posture, le moment de la journée, le sommeil ou l’éveil changent tous ce que fait le même cœur pendant la mesure [S5, S8].
 - Les conditions du quotidien. Une mesure isolée peut varier d’un jour ou d’une nuit à l’autre : c’est pourquoi on recommande des mesures répétées dans des conditions comparables [S2, S8].

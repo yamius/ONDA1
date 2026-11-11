@@ -1,5 +1,5 @@
 ---
-sourceHash: "5034501eb4bc"
+sourceHash: 24dbd78b7f09
 title: "RMSSD: was dieses HRV-Maß widerspiegelt und was nicht"
 metaTitle: "RMSSD: Definition, Bedeutung und Messung"
 metaDescription: "Die RMSSD ist ein HRV-Maß, das vagal vermittelte Veränderungen der Herzfrequenz widerspiegelt. Was sie misst, wie Wearables sie schätzen und was sie nicht verrät."
@@ -52,6 +52,10 @@ evidenceMap:
     limitation: "Herstellerankündigung; auf bestimmte Hardware- und Betriebssystemversionen beschränkt; Apple hat nicht angegeben, wie Recovery HRV berechnet wird."
   - claim: "iOS und watchOS fügen Apple Health einen RMSSD-Datentyp hinzu."
     limitation: "Offizielle Dokumentation; Verfügbarkeit auf bestimmte Betriebssystemversionen beschränkt; was Apps über diesen Typ aufzeichnen, hängt von der jeweiligen App ab."
+  - claim: "Das Geschlecht verändert, wie die HRV mit der Herzfrequenz zusammenhängt; die Autoren einer großen Laborstudie halten routinemäßige „Korrekturen“ der HRV für die Herzperiode für ungerechtfertigt."
+    limitation: "Eine Laborstichprobe mit kurzen Ruheaufzeichnungen; das Argument gegen Korrekturen ist die Deutung der Autoren, kein Konsens."
+  - claim: "Referenzwerte für die Kurzzeit-HRV unterscheiden sich zwischen Bevölkerungen; Bereiche einer Bevölkerung lassen sich nicht direkt auf eine andere übertragen."
+    limitation: "Die neueste Studie ist eine einzelne regionale Stichprobe aus Südindien mit kurzen EKG-Aufzeichnungen am Tag; keine nächtlichen Wearable-Werte."
 ---
 
 ## Was ist die RMSSD?
@@ -81,7 +85,7 @@ Der Kontext gehört zur Messung. Die RMSSD hängt von Körperhaltung, Atmung, Ta
 ## Was beeinflusst die RMSSD?
 
 - Alter. Im Durchschnitt gilt: {{fact:hrv.age.trend}} [S4, S5]. Einzelne unterscheiden sich in jedem Alter stark; Bevölkerungsmediane sind keine persönlichen Zielwerte. Die vollständigen Tabellen stehen im Artikel [normale HRV nach Alter](/articles/normal-hrv-by-age).
-- Geschlecht. Studien berichten Unterschiede zwischen Frauen und Männern; Richtung und Größe hängen von Alter und Population ab [S4].
+- Geschlecht. Studien berichten Unterschiede zwischen Frauen und Männern; Richtung und Größe hängen von Alter und Population ab [S4]. In einer großen Laborstichprobe hatten Frauen trotz schnellerer Herzfrequenz eine höhere HRV, und das Geschlecht veränderte, wie die HRV mit der Herzfrequenz zusammenhing – ein Grund, weshalb die Autoren routinemäßige „Korrekturen“ der HRV für die Herzfrequenz für ungerechtfertigt halten [S12]. Eine Studie aus Südindien von 2026 fand denselben Rückgang mit dem Alter und höhere Werte bei Frauen; ihre Autoren weisen darauf hin, dass die meisten bestehenden Referenzwerte aus westlichen Bevölkerungen stammen [S13].
 - Atmung. Der wichtigste kurzfristige Faktor, über die respiratorische Sinusarrhythmie: Atemfrequenz und Atemtiefe während der Aufzeichnung verändern den Wert [S2, S3].
 - Bedingungen. Körperhaltung, Tageszeit sowie Schlaf oder Wachsein verändern, was dasselbe Herz während der Messung tut [S5, S8].
 - Alltagsbedingungen. Ein einzelner Wert kann sich von einem Tag oder einer Nacht zur nächsten verschieben, deshalb werden wiederholte Messungen unter vergleichbaren Bedingungen empfohlen [S2, S8].

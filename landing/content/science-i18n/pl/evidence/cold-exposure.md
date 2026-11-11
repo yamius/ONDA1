@@ -1,5 +1,5 @@
 ---
-sourceHash: "6f5f5a221096"
+sourceHash: af5d6a3da844
 title: "Ekspozycja na zimno: co pokazują badania i gdzie zaczyna się ryzyko"
 metaTitle: "Ekspozycja na zimno: badania i ryzyko"
 metaDescription: "Zimne kąpiele, prysznic i chłodzenie twarzy: co badania mówią o stresie, chorobie, regeneracji i metabolizmie, co pomijają mity o dopaminie i jakie są ryzyka."
@@ -62,6 +62,10 @@ evidenceMap:
     limitation: "Mała grupa młodych mężczyzn; godzinne zanurzenie; stężenia w osoczu, a nie dopamina w mózgu."
   - claim: "Reakcja szoku zimnowego może spowodować śmierć przez zachłyśnięcie, zmniejszony przepływ krwi przez mózg i zaburzenia rytmu, zanim spadnie temperatura głęboka ciała; alkohol zmienia ryzyko."
     limitation: "Przegląd narracyjny fizjologii utonięcia."
+  - claim: "Po wysiłku pojedyncze zanurzenia w zimnej wodzie zmniejszały bolesność mięśni i markery ich uszkodzenia, ale żadna temperatura wody nie była wyraźnie lepsza."
+    limitation: "Wyniki regeneracji, a nie HRV ani zdrowie; duża niejednorodność; przegląd nie był wcześniej zarejestrowany, a autorzy nazywają podgrupy temperatury eksploracyjnymi."
+  - claim: "Miesięczny program metody Wima Hofa, łączący oddychanie z zimnem, dał według uczestników większy chwilowy wzrost energii i jasności myślenia niż medytacja, przy niewielkich trwałych zmianach; nie pozwala wyodrębnić efektu zimna."
+    limitation: "Częściowo randomizowane, uczestnicy sami się zgłaszali, wyniki głównie z samooceny, aktywna kontrola z medytacją zamiast placebo; oddychanie i zimno połączone."
 ---
 
 ## Co zalicza się do ekspozycji na zimno?
@@ -85,11 +89,11 @@ Wiele badań jest małych, często obejmuje tylko mężczyzn i stosuje różne t
 
 ## Co pokazują badania?
 
-**Stres, nastrój i sen: wstępne dane.** Metaanaliza badań z randomizacją u zdrowych dorosłych wykazała niższy stres dwanaście godzin po zanurzeniu w zimnej wodzie, ale nie od razu ani w późniejszych punktach czasowych; jakość snu i jakość życia się poprawiły, a nastrój nie [S1]. Autorzy zwracają uwagę na niewielką liczbę badań i małe próby [S1].
+**Stres, nastrój i sen: wstępne dane.** Metaanaliza badań z randomizacją u zdrowych dorosłych wykazała niższy stres dwanaście godzin po zanurzeniu w zimnej wodzie, ale nie od razu ani w późniejszych punktach czasowych; jakość snu i jakość życia się poprawiły, a nastrój nie [S1]. Autorzy zwracają uwagę na niewielką liczbę badań i małe próby [S1]. W częściowo randomizowanym badaniu metody Wima Hofa, łączącej oddychanie z zimnem, około miesiąca codziennej praktyki dało według uczestników większy chwilowy wzrost energii, jasności myślenia i radzenia sobie ze stresem niż medytacja, przy niewielkich trwałych zmianach [S18]. Ponieważ oddychanie i zimno szły w parze, badanie nie pokazuje, co dodaje samo zimno.
 
 **Nieobecność w pracy z powodu choroby: wstępne dane.** W dużym badaniu z randomizacją osoby, które przez miesiąc kończyły prysznic zimną wodą, zgłaszały mniej dni nieobecności w pracy z powodu choroby, ale nie zgłaszały mniej dni choroby [S8]. Wyniki opierały się na deklaracjach uczestników, a uczestnicy wiedzieli, w której grupie są.
 
-**Regeneracja po wysiłku: zależy od kontekstu.** Zanurzenie w zimnej wodzie zmniejszało ból mięśni po wysiłku w porównaniu z odpoczynkiem, w małych badaniach niskiej jakości; nie wykazano, by przewyższało ciepłą wodę lub kąpiele kontrastowe [S9]. Jednak w badaniu mężczyzn trenujących siłowo ci, którzy przez dwanaście tygodni stosowali zanurzenie w zimnej wodzie po każdej sesji, zyskali mniej siły i masy mięśniowej niż ci, którzy stosowali aktywną regenerację [S10]. Jeśli celem jest wzrost mięśni, rutynowe zimne kąpiele tuż po treningu siłowym mogą mu przeszkadzać. W przypadku krioterapii ogólnoustrojowej dane o bólu mięśni są bardzo niskiej jakości [S11].
+**Regeneracja po wysiłku: zależy od kontekstu.** Zanurzenie w zimnej wodzie zmniejszało ból mięśni po wysiłku w porównaniu z odpoczynkiem, w małych badaniach niskiej jakości; nie wykazano, by przewyższało ciepłą wodę lub kąpiele kontrastowe [S9]. Jednak w badaniu mężczyzn trenujących siłowo ci, którzy przez dwanaście tygodni stosowali zanurzenie w zimnej wodzie po każdej sesji, zyskali mniej siły i masy mięśniowej niż ci, którzy stosowali aktywną regenerację [S10]. Jeśli celem jest wzrost mięśni, rutynowe zimne kąpiele tuż po treningu siłowym mogą mu przeszkadzać. W przypadku krioterapii ogólnoustrojowej dane o bólu mięśni są bardzo niskiej jakości [S11]. Metaanaliza z 2026 roku pojedynczych zanurzeń po wysiłku wykazała mniejszą bolesność mięśni i niższe markery uszkodzenia mięśni, ale żadna temperatura wody nie była wyraźnie lepsza od innych; autorzy nazywają te porównania temperatur eksploracyjnymi [S17].
 
 **Metabolizm, brunatna tkanka tłuszczowa i insulina: wstępne dane.** Dziesięć dni aklimatyzacji do łagodnego zimna zwiększyło w małym badaniu aktywność brunatnej tkanki tłuszczowej i wytwarzanie ciepła [S12], a podobny protokół poprawił wrażliwość na insulinę w małym badaniu bez grupy kontrolnej u osób z cukrzycą [S13]. W obu stosowano łagodnie chłodne powietrze przez wiele godzin, a nie krótkie zimne kąpiele. Przegląd badań z zimną wodą stwierdza, że wpływ na tkankę tłuszczową i insulinę wygląda obiecująco, ale pozostaje sporny [S2].
 

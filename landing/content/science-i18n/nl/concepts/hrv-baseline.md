@@ -1,5 +1,5 @@
 ---
-sourceHash: "10f3860eb8cd"
+sourceHash: 10f190138735
 title: "HRV-baseline: waarom je eigen normaal meer zegt dan welke norm ook"
 metaTitle: "HRV-baseline: je eigen normaal, geen norm"
 metaDescription: "Je HRV-baseline is je eigen bereik, geen bevolkingsgemiddelde. Waarom die meer zegt dan normen, hoe ONDA haar opbouwt en wat een afwijking betekent."
@@ -60,6 +60,8 @@ evidenceMap:
     limitation: "Productdocumentatie; beperkt tot Apple Health als gegevensbron."
   - claim: "De signalen van ONDA zijn beschrijvende vergelijkingen met de persoonlijke baseline — geen stressmetingen en geen medische beoordeling."
     limitation: "Afbakening in de productdocumentatie; alleen beschrijvende vergelijkingen."
+  - claim: "Onder gecontroleerde laboratoriumomstandigheden was de korte RMSSD in rust bij gezonde jonge volwassenen goed herhaalbaar over metingen, sommige frequentiematen minder."
+    limitation: "Eén studie bij gezonde jonge volwassenen met korte zittende opnames in het lab; niet getest op nachtelijke wearablewaarden of bij andere leeftijden."
 ---
 
 ## Wat is een HRV-baseline?
@@ -92,7 +94,7 @@ De maat moet vast blijven. RMSSD en SDNN vatten verschillende aspecten van het h
 
 **Vastgesteld.** Gezonde volwassenen verschillen enorm in HRV, en voor korte maten bestaan geen afgesproken normwaarden [S3]. Waarden van verschillende apparaten, maten en meetomstandigheden zijn niet uitwisselbaar [S6, S7], en metingen van verschillende duur zijn niet direct vergelijkbaar [S5].
 
-**Afhankelijk van de context.** Een persoonlijke baseline vraagt om veel metingen; losse registraties leveren er geen op [S10]. De specifieke monitoringpraktijk met voortschrijdende weekgemiddelden en de variatiecoëfficiënt komt uit de sportwetenschap, waar een lagere waarde dan die van een ander niet noodzakelijk op een slechtere fysiologische toestand wijst [S10]. PPG aan de pols volgt de waarden uit het ecg onder gecontroleerde rustomstandigheden [S8]. Seizoensvariatie is, waar ze is gemeld, zwak [S11]. En omdat HRV-bevindingen gemakkelijk worden overgeïnterpreteerd, waarschuwen methodologische reviews ervoor er te veel in te lezen [S4]. Gemiddeld daalt de waarde met de leeftijd, terwijl mensen op elke leeftijd sterk verschillen [S2].
+**Afhankelijk van de context.** Een persoonlijke baseline vraagt om veel metingen; losse registraties leveren er geen op [S10]. De specifieke monitoringpraktijk met voortschrijdende weekgemiddelden en de variatiecoëfficiënt komt uit de sportwetenschap, waar een lagere waarde dan die van een ander niet noodzakelijk op een slechtere fysiologische toestand wijst [S10]. PPG aan de pols volgt de waarden uit het ecg onder gecontroleerde rustomstandigheden [S8]. Seizoensvariatie is, waar ze is gemeld, zwak [S11]. En omdat HRV-bevindingen gemakkelijk worden overgeïnterpreteerd, waarschuwen methodologische reviews ervoor er te veel in te lezen [S4]. Gemiddeld daalt de waarde met de leeftijd, terwijl mensen op elke leeftijd sterk verschillen [S2]. Onder vergelijkbare laboratoriumomstandigheden was de korte RMSSD in rust bij gezonde jonge volwassenen van sessie tot sessie goed herhaalbaar, sommige frequentiematen niet [S12] – steun om je eigen niveau als vrij stabiel te zien wanneer de omstandigheden vergelijkbaar zijn.
 
 **Niet beslecht.** Het precieze venster dat een baseline moet gebruiken, is een praktische keuze, geen wetenschappelijke constante: onderzoeksprotocollen verschillen van de logica van apps. De vensters van ONDA zijn app-logica — hieronder beschreven, op één plek vastgelegd, en geen consensus van het vakgebied [S9].
 

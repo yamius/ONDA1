@@ -1,5 +1,5 @@
 ---
-sourceHash: "14937f196d56"
+sourceHash: a88cc71c33c7
 title: "Cantarolar, entoar e Om: o que mostram as evidências"
 metaTitle: "Cantarolar, entoar e Om: as evidências"
 metaDescription: "O que os estudos mostram sobre cantarolar de boca fechada, entoar o Om, mantras e canto coral: óxido nítrico nasal, respiração mais lenta, HRV, cérebro e onde faltam evidências."
@@ -50,6 +50,8 @@ evidenceMap:
     limitation: "Principalmente meditação transcendental; repetição silenciosa de um mantra, não entoação em voz alta."
   - claim: "Uma revisão sistemática encontrou evidências confiáveis de efeitos positivos da música e do canto sobre o bem-estar de adultos."
     limitation: "Música e canto misturados; medidas de bem-estar inconsistentes; os membros de corais tendem a ser mulheres, brancas e com alta escolaridade."
+  - claim: "Em um pequeno estudo piloto, tanto a respiração com zumbido quanto a respiração lenta em ritmo guiado aumentaram a HRV em relação ao repouso, sem diferença entre elas."
+    limitation: "Um único estudo piloto pequeno com adultos saudáveis e registros curtos; a ausência de diferença não prova equivalência; índices baseados em LF são difíceis de interpretar."
 ---
 
 ## O que são cantarolar, entoar e o Om?
@@ -107,7 +109,9 @@ Em um estudo de laboratório de 2001, {{fact:study.bernardi2001.participants}} r
 
 Em cantores de coral, a estrutura da música guiava a respiração, e cantar em uníssono fazia as frequências cardíacas subirem e descerem juntas (classe: **Emergente**, um único estudo pequeno) [S8].
 
-Existe um efeito além de desacelerar a respiração? Em um estudo randomizado ({{fact:study.ghati2021.design}}), a respiração da abelha foi comparada com a respiração lenta. A pressão arterial não caiu mais depois do cantarolar; alguns índices espectrais de HRV diferiram durante a recuperação, mas seu significado autonômico é debatido (classe: **Emergente**, um único estudo) [S9]. Uma revisão sistemática sobre bhramari encontrou {{fact:study.kuppusamy2018.studies}}, e avaliou sua qualidade como muito baixa [S10]. Portanto, um efeito adicional do próprio cantarolar não foi demonstrado (classe: **Desconhecido**).
+Existe um efeito além de desacelerar a respiração? Em um estudo randomizado ({{fact:study.ghati2021.design}}), a respiração da abelha foi comparada com a respiração lenta. A pressão arterial não caiu mais depois do cantarolar; alguns índices espectrais de HRV diferiram durante a recuperação, mas seu significado autonômico é debatido (classe: **Emergente**, um único estudo) [S9]. Em um estudo piloto de 2025 com adultos saudáveis, tanto a respiração com zumbido quanto a respiração lenta em ritmo guiado aumentaram a HRV em relação ao repouso, sem diferença entre elas (classe: **Emergente**, um único estudo) [S7]. Os autores atribuíram o efeito ao ritmo da respiração, não às palavras.
+
+Em cantores de coral, a estrutura da música guiava a respiração, e cantar em uníssono fazia as frequências cardíacas subirem e descerem juntas (classe: **Emergente**, um único estudo pequeno) [S15]. Uma revisão sistemática sobre bhramari encontrou {{fact:study.kuppusamy2018.studies}}, e avaliou sua qualidade como muito baixa [S10]. Portanto, um efeito adicional do próprio cantarolar não foi demonstrado (classe: **Desconhecido**).
 
 ### O cérebro — um pequeno estudo piloto
 

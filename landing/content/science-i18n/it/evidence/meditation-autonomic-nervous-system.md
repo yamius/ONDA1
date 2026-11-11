@@ -1,5 +1,5 @@
 ---
-sourceHash: "cde100beb74f"
+sourceHash: 948e8a39ec33
 title: "Meditazione e sistema nervoso autonomo: che cosa mostrano le evidenze"
 metaTitle: "Meditazione e sistema nervoso: le evidenze"
 metaDescription: "Che cosa fa la meditazione a HRV, frequenza cardiaca a riposo, pressione arteriosa e cortisolo secondo la ricerca, e perché il respiro lento confonde il quadro."
@@ -81,6 +81,8 @@ evidenceMap:
     limitation: "Un singolo studio con controllo in lista d'attesa; variabilità della frequenza cardiaca misurata durante le sessioni, non nell'arco della notte; fasi del sonno stimate da un anello di consumo."
   - claim: "In quello studio, il burnout personale è aumentato subito dopo il programma, per poi tornare verso i valori iniziali."
     limitation: "Un singolo studio; esito secondario."
+  - claim: "Brevi sessioni di mindfulness possono aumentare il RMSSD a breve termine, secondo evidenze di bassa qualità da pochi piccoli studi."
+    limitation: "Revisione sistematica di pochi studi eterogenei con evidenze di bassa qualità; effetti duraturi non studiati; i cambiamenti del respiro durante la pratica non sono stati separati."
 ---
 
 ## Che cos'è la meditazione, per il sistema nervoso autonomo?
@@ -131,7 +133,7 @@ Contano due scale temporali. Un *effetto di sessione* è un cambiamento che avvi
 
 ### HRV: durante una sessione e dopo un corso
 
-**Durante una sessione: dipende dal contesto.** L'HRV cambia spesso mentre si medita, ma non sempre nella stessa direzione. In due piccoli studi, una scansione corporea ha aumentato il ritmo cardiaco legato al respiro più di altre attività rilassanti, senza cambiare la frequenza cardiaca [S6]. Mantra e preghiere recitati abbastanza lentamente da portare il respiro a {{fact:breath.resonance.typical}} hanno prodotto ampie oscillazioni del ritmo cardiaco [S8]. Alcune tecniche Chi e Kundalini Yoga hanno prodotto oscillazioni molto ampie, legate alla respirazione lenta [S9].
+**Durante una sessione: dipende dal contesto.** L'HRV cambia spesso mentre si medita, ma non sempre nella stessa direzione. In due piccoli studi, una scansione corporea ha aumentato il ritmo cardiaco legato al respiro più di altre attività rilassanti, senza cambiare la frequenza cardiaca [S6]. Mantra e preghiere recitati abbastanza lentamente da portare il respiro a {{fact:breath.resonance.typical}} hanno prodotto ampie oscillazioni del ritmo cardiaco [S8]. Alcune tecniche Chi e Kundalini Yoga hanno prodotto oscillazioni molto ampie, legate alla respirazione lenta [S9]. Una revisione sistematica di brevi sessioni di mindfulness ha trovato un aumento a breve termine del RMSSD in pochi piccoli studi, con evidenze di bassa qualità e senza dati su effetti duraturi [S18].
 
 <!-- myth-debunk -->
 **«La meditazione aumenta sempre l'HRV.»** Le evidenze non lo confermano. In un piccolo studio, l'HRV complessiva è diminuita durante la meditazione Heartfulness profonda rispetto a un controllo con respiro equiparato [S7], e gli stili attivanti della tradizione Vajrayana erano accompagnati da attivazione anziché da rilassamento [S2]. La meditazione non è soltanto uno stato di quiete autonomica [S9].

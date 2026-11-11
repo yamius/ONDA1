@@ -1,5 +1,5 @@
 ---
-sourceHash: "14937f196d56"
+sourceHash: a88cc71c33c7
 title: "Tarareo, canto y Om: lo que muestra la evidencia"
 metaTitle: "Tarareo, canto y Om: la evidencia"
 metaDescription: "Qué muestran los estudios sobre el tarareo, el canto del Om, los mantras y el canto en coro: óxido nítrico nasal, respiración más lenta, HRV, el cerebro y dónde la evidencia es escasa."
@@ -49,6 +49,8 @@ evidenceMap:
     limitation: "Sobre todo meditación trascendental; repetición silenciosa del mantra, no canto en voz alta."
   - claim: "Una revisión sistemática encontró evidencia fiable de efectos positivos de la música y el canto sobre el bienestar en adultos."
     limitation: "Música y canto mezclados; medidas de bienestar poco uniformes; los miembros de coros suelen ser mujeres, blancas y con un buen nivel educativo."
+  - claim: "En un pequeño estudio piloto, tanto la respiración con zumbido como la respiración lenta a ritmo marcado aumentaron la HRV respecto al reposo, sin diferencia entre ambas."
+    limitation: "Un solo estudio piloto pequeño en adultos sanos con registros cortos; la falta de diferencia no prueba que sean equivalentes; los índices basados en LF son difíciles de interpretar."
 ---
 
 ## ¿Qué son el tarareo, el canto y el Om?
@@ -106,7 +108,9 @@ En un estudio de laboratorio de 2001, {{fact:study.bernardi2001.participants}} r
 
 En cantantes de coro, la estructura de la canción guiaba la respiración, y cantar al unísono hacía que las frecuencias cardíacas subieran y bajaran a la vez (clase: **emergente**, un solo estudio pequeño) [S8].
 
-¿Hay un efecto más allá de ralentizar la respiración? En un ensayo aleatorizado con {{fact:study.ghati2021.design}}, se comparó la respiración de la abeja con tarareo con la respiración lenta. La presión arterial no bajó más tras tararear; algunos índices espectrales de HRV difirieron durante la recuperación, pero su significado autonómico se discute (clase: **emergente**, un solo ensayo) [S9]. Una revisión sistemática sobre bhramari encontró {{fact:study.kuppusamy2018.studies}}, y calificó su calidad como muy baja [S10]. Por tanto, no se ha demostrado un efecto añadido del propio tarareo (clase: **desconocido**).
+¿Hay un efecto más allá de ralentizar la respiración? En un ensayo aleatorizado con {{fact:study.ghati2021.design}}, se comparó la respiración de la abeja con tarareo con la respiración lenta. La presión arterial no bajó más tras tararear; algunos índices espectrales de HRV difirieron durante la recuperación, pero su significado autonómico se discute (clase: **emergente**, un solo ensayo) [S9]. En un estudio piloto de 2025 con adultos sanos, tanto la respiración con zumbido como la respiración lenta a ritmo marcado aumentaron la HRV respecto al reposo, sin diferencia entre ambas (clase: **emergente**, un solo estudio) [S7]. Los autores atribuyeron el efecto al ritmo respiratorio, no a las palabras.
+
+En cantantes de coro, la estructura de la canción guiaba la respiración, y cantar al unísono hacía que las frecuencias cardíacas subieran y bajaran a la vez (clase: **emergente**, un solo estudio pequeño) [S15]. Una revisión sistemática sobre bhramari encontró {{fact:study.kuppusamy2018.studies}}, y calificó su calidad como muy baja [S10]. Por tanto, no se ha demostrado un efecto añadido del propio tarareo (clase: **desconocido**).
 
 ### El cerebro: un pequeño estudio piloto
 

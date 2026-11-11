@@ -1,5 +1,5 @@
 ---
-sourceHash: "914a9faa457f"
+sourceHash: 888be023249e
 title: "Peut-on se fier à la HRV d’une montre ou d’une bague connectée ?"
 metaTitle: "HRV d’une montre ou d’une bague : fiable ou non ?"
 metaDescription: "La HRV d’une montre ou d’une bague est une estimation tirée du pouls, pas un ECG. Où les deux concordent, où elles divergent, comment lire vos chiffres."
@@ -74,6 +74,8 @@ evidenceMap:
     limitation: "Une seule étude, des adultes en bonne santé, deux modèles de montre, une ceinture thoracique avec logiciel d’analyse comme référence ; elle ne décrit ni la Recovery HRV ni les modèles de montre plus récents."
   - claim: "Dans une étude observationnelle, le ressenti des participants ne correspondait pas de façon constante à la HRV nocturne mesurée par un tracker d’activité."
     limitation: "Petite étude observationnelle avec un seul tracker commercial ; tous les auteurs sont salariés de PepsiCo R&D (Gatorade Sports Science Institute), qui a financé l’étude ; une réplication indépendante est nécessaire."
+  - claim: "La reproductibilité dépend de l’indice : le RMSSD court au repos se répétait bien entre des séances de laboratoire chez de jeunes adultes en bonne santé, mais pas un indice de fréquence de pic."
+    limitation: "Une étude de laboratoire avec des enregistrements de qualité ECG chez de jeunes adultes en bonne santé ; les valeurs nocturnes des objets connectés n’ont pas été testées."
 ---
 
 ## Qu’est-ce que la HRV des objets connectés ?
@@ -149,7 +151,7 @@ Pour l’Apple Watch, une revue systématique « vivante » avec méta-analyse (
 
 Les faits propres à l’écosystème Apple ont leur place ici en tant que faits techniques : Apple Health stocke la HRV sous forme de SDNN [S6], les modèles récents de montre proposent deux variantes de HRV [S7], et la plateforme accepte désormais aussi une valeur de type RMSSD [S8] — des énoncés délimités sur ce qui est enregistré, pas sur la santé.
 
-**Recommandations / consensus d’experts.** Les recommandations actuelles indiquent que le signal d’entrée, la durée d’enregistrement, le cadre, la respiration et la méthode d’analyse influencent tous la rigueur et la fiabilité [S5], et que les résultats de HRV issus d’objets connectés — y compris en recherche — doivent être interprétés et replacés dans le cadre de ces limites [S5]. L’application au quotidien consiste à comparer ce qui est comparable.
+**Recommandations / consensus d’experts.** Les recommandations actuelles indiquent que le signal d’entrée, la durée d’enregistrement, le cadre, la respiration et la méthode d’analyse influencent tous la rigueur et la fiabilité [S5], et que les résultats de HRV issus d’objets connectés — y compris en recherche — doivent être interprétés et replacés dans le cadre de ces limites [S5]. L’application au quotidien consiste à comparer ce qui est comparable. La reproductibilité dépend aussi de l’indice : dans une étude de laboratoire chez de jeunes adultes en bonne santé, le RMSSD court au repos se répétait bien d’une séance à l’autre, mais pas un indice de fréquence de pic [S15] – une raison de plus de suivre un seul indice dans des conditions comparables.
 
 **Inconnu.** Dans quelle mesure ces méthodes se généralisent à la diversité des appareils grand public et des algorithmes propriétaires ; comment elles se comportent pendant les mouvements libres de la journée et sur des fenêtres nocturnes que les appareils définissent chacun à leur façon ; comment elles se comportent chez les personnes atteintes d’arythmies ou de certaines affections ; et à partir de quand un changement détecté par un objet connecté devient cliniquement significatif. Rien de tout cela n’est tranché — c’est une raison de mieux comprendre la mesure, pas d’écarter les données.
 

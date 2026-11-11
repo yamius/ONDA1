@@ -1,5 +1,5 @@
 ---
-sourceHash: "6f5f5a221096"
+sourceHash: af5d6a3da844
 title: "Blootstelling aan kou: wat het bewijs laat zien en waar het riskant wordt"
 metaTitle: "Blootstelling aan kou: bewijs en risico's"
 metaDescription: "IJsbaden, koude douches en gezichtskoeling: wat studies laten zien over stress, ziekte, herstel en stofwisseling, wat dopamineclaims weglaten en de risico's."
@@ -62,6 +62,10 @@ evidenceMap:
     limitation: "Kleine groep jonge mannen; onderdompeling van een uur; plasmawaarden, geen dopamine in de hersenen."
   - claim: "De koudeschokreactie kan de dood veroorzaken door aspiratie, verminderde doorbloeding van de hersenen en ritmestoornissen, nog voordat de kerntemperatuur daalt; alcohol verandert de risico's."
     limitation: "Narratieve review van de fysiologie van verdrinking."
+  - claim: "Na inspanning verminderden losse onderdompelingen in koud water spierpijn en markers van spierschade, maar geen enkele watertemperatuur was duidelijk beter."
+    limitation: "Hersteluitkomsten, geen HRV of gezondheid; grote heterogeniteit; het overzicht was niet vooraf geregistreerd en de auteurs noemen de temperatuursubgroepen verkennend."
+  - claim: "Een programma van een maand met de Wim Hof-methode, die ademhaling met kou combineert, gaf volgens de deelnemers grotere directe winst in energie en helderheid dan meditatie, met kleine blijvende veranderingen; het effect van kou is niet te isoleren."
+    limitation: "Semi-gerandomiseerd, zelfgeselecteerde deelnemers, vooral zelfgerapporteerde uitkomsten, actieve controle met meditatie in plaats van placebo; ademhaling en kou gecombineerd."
 ---
 
 ## Wat valt onder blootstelling aan kou?
@@ -85,11 +89,11 @@ Veel studies zijn klein, hebben vaak alleen mannen als deelnemers en gebruiken v
 
 ## Wat laat het bewijs zien?
 
-**Stress, stemming en slaap: opkomend.** Een meta-analyse van gerandomiseerde studies bij gezonde volwassenen vond twaalf uur na onderdompeling in koud water minder stress, maar niet direct erna of op latere tijdstippen; slaapkwaliteit en kwaliteit van leven verbeterden, stemming niet [S1]. De auteurs wijzen op het kleine aantal studies en de kleine steekproeven [S1].
+**Stress, stemming en slaap: opkomend.** Een meta-analyse van gerandomiseerde studies bij gezonde volwassenen vond twaalf uur na onderdompeling in koud water minder stress, maar niet direct erna of op latere tijdstippen; slaapkwaliteit en kwaliteit van leven verbeterden, stemming niet [S1]. De auteurs wijzen op het kleine aantal studies en de kleine steekproeven [S1]. In een semi-gerandomiseerde studie van de Wim Hof-methode, die ademhaling met kou combineert, gaf ongeveer een maand dagelijkse oefening volgens de deelnemers grotere directe winst in energie, helderheid en omgaan met stress dan meditatie, met kleine blijvende veranderingen [S18]. Omdat ademhaling en kou samen gingen, kan de studie niet laten zien wat de kou toevoegt.
 
 **Ziekteverzuim: opkomend.** In een grote gerandomiseerde studie meldden mensen die een maand lang hun douche met koud water afsloten minder dagen ziekteverzuim, maar niet minder dagen ziekte [S8]. De uitkomsten waren zelfgerapporteerd, en de deelnemers wisten in welke groep ze zaten.
 
-**Herstel na inspanning: afhankelijk van de context.** Onderdompeling in koud water verminderde spierpijn na inspanning vergeleken met rust, in kleine studies van lage kwaliteit; er bleek geen voordeel boven warm water of contrastbaden [S9]. Maar in een studie bij mannen die aan krachttraining deden, wonnen degenen die twaalf weken lang na elke sessie onderdompeling in koud water gebruikten minder kracht en spiermassa dan degenen die actief herstel deden [S10]. Is spiergroei het doel, dan kunnen vaste dompels direct na krachttraining dat tegenwerken. Voor cryotherapie van het hele lichaam is het bewijs over spierpijn van zeer lage kwaliteit [S11].
+**Herstel na inspanning: afhankelijk van de context.** Onderdompeling in koud water verminderde spierpijn na inspanning vergeleken met rust, in kleine studies van lage kwaliteit; er bleek geen voordeel boven warm water of contrastbaden [S9]. Maar in een studie bij mannen die aan krachttraining deden, wonnen degenen die twaalf weken lang na elke sessie onderdompeling in koud water gebruikten minder kracht en spiermassa dan degenen die actief herstel deden [S10]. Is spiergroei het doel, dan kunnen vaste dompels direct na krachttraining dat tegenwerken. Voor cryotherapie van het hele lichaam is het bewijs over spierpijn van zeer lage kwaliteit [S11]. Een meta-analyse uit 2026 van losse onderdompelingen na inspanning vond minder spierpijn en lagere markers van spierschade, maar geen enkele watertemperatuur was duidelijk beter dan de andere; de auteurs noemen die temperatuurvergelijkingen verkennend [S17].
 
 **Stofwisseling, bruin vet en insuline: opkomend.** Tien dagen acclimatisatie aan milde kou verhoogde in een kleine studie de activiteit van bruin vet en de warmteproductie [S12], en een vergelijkbaar protocol verbeterde de insulinegevoeligheid in een kleine studie zonder controlegroep bij mensen met diabetes [S13]. Beide gebruikten urenlang milde koude lucht, geen korte dompels. Een review van studies met koud water concludeert dat de effecten op lichaamsvet en insuline veelbelovend lijken, maar omstreden blijven [S2].
 

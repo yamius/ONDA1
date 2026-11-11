@@ -1,5 +1,5 @@
 ---
-sourceHash: "74e0a1403ee6"
+sourceHash: 6a68f313f430
 title: "Respirazione nasale e bocca chiusa col nastro: che cosa mostrano le evidenze"
 metaTitle: "Respirazione nasale e mouth taping: le evidenze"
 metaDescription: "Che cosa fa la respirazione dal naso, che cosa dicono gli studi su sonno, concentrazione, HRV, sport e asma, e perché il mouth taping richiede cautela."
@@ -50,6 +50,8 @@ evidenceMap:
     limitation: "Venti persone che tolleravano il nastro; nessun gruppo di controllo; una settimana."
   - claim: "In un piccolo studio pilota non controllato, un cerotto orale poroso ha ridotto il russamento e l'indice di apnea nell'apnea notturna lieve con respirazione orale."
     limitation: "Trenta pazienti; nessun gruppo di controllo; un dispositivo di nuova concezione."
+  - claim: "A riposo, respirare con il naso o con la bocca cambiava poco gli indici cardiovascolari; con poco ossigeno o con anidride carbonica aggiunta, respirare con il naso dava una frequenza cardiaca e un consumo di ossigeno più bassi."
+    limitation: "Un piccolo studio di laboratorio su giovani adulti con brevi prove respiratorie; non la respirazione quotidiana né una prova del nastro sulla bocca."
 ---
 
 ## Che cosa fa il naso che la bocca non fa?
@@ -64,7 +66,7 @@ I seni paranasali producono inoltre di continuo ossido nitrico, un gas che aiuta
 
 **Memoria e attenzione: emergente.** In persone con elettrodi impiantati per l'epilessia, la respirazione nasale sincronizzava l'attività delle aree cerebrali legate all'olfatto e alla memoria, e questo ritmo svaniva quando la respirazione passava alla bocca; test comportamentali hanno collegato la fase del respiro al recupero dei ricordi [S3]. È un risultato notevole, ottenuto su pochissimi pazienti. Non dimostra che respirare abitualmente dal naso migliori la memoria o la concentrazione nella vita di tutti i giorni.
 
-**HRV e sistema nervoso: emergente.** In un piccolo studio su giovani adulti, cinque minuti di respirazione nasale hanno dato una pressione arteriosa diastolica leggermente più bassa e una quota relativa di alte frequenze della variabilità della frequenza cardiaca (HRV) più alta rispetto alla respirazione orale, senza cambiare la frequenza cardiaca [S4]. È un solo, breve confronto di laboratorio. Il ritmo del respiro ha sull'HRV un effetto più grande e meglio documentato; vedi [come la respirazione cambia l'HRV](/science/mechanisms/breathing-and-hrv) e [respirazione lenta](/science/evidence/slow-breathing).
+**HRV e sistema nervoso: emergente.** In un piccolo studio su giovani adulti, cinque minuti di respirazione nasale hanno dato una pressione arteriosa diastolica leggermente più bassa e una quota relativa di alte frequenze della variabilità della frequenza cardiaca (HRV) più alta rispetto alla respirazione orale, senza cambiare la frequenza cardiaca [S4]. È un solo, breve confronto di laboratorio. Il ritmo del respiro ha sull'HRV un effetto più grande e meglio documentato; vedi [come la respirazione cambia l'HRV](/science/mechanisms/breathing-and-hrv) e [respirazione lenta](/science/evidence/slow-breathing). Uno studio di laboratorio del 2026 ha trovato che a riposo la via del respiro cambiava poco; con poco ossigeno o con anidride carbonica aggiunta, respirare con il naso dava una frequenza cardiaca e un consumo di ossigeno più bassi che respirare con la bocca [S14]. Ha testato brevi prove di laboratorio, non le abitudini quotidiane né il nastro sulla bocca.
 
 **Sport: emergente.** In piccoli studi, respirare solo dal naso non ha cambiato né la potenza in un breve test di sprint [S5] né la resistenza in ripetizioni alla panca piana [S6]. Respirare dal naso durante l'esercizio sembra non aiutare né danneggiare molto la prestazione; ad alta intensità, comunque, quasi tutti passano alla bocca.
 

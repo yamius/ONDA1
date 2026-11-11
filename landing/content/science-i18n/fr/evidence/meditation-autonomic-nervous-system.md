@@ -1,5 +1,5 @@
 ---
-sourceHash: "cde100beb74f"
+sourceHash: 948e8a39ec33
 title: "Méditation et système nerveux autonome : ce que montrent les données"
 metaTitle: "Méditation et système nerveux : les données"
 metaDescription: "Les effets de la méditation sur la HRV, la fréquence cardiaque au repos, la tension et le cortisol, et pourquoi la respiration lente brouille les résultats."
@@ -82,6 +82,8 @@ evidenceMap:
     limitation: "Un seul essai avec témoin sur liste d’attente ; variabilité de la fréquence cardiaque mesurée pendant les séances, pas sur la nuit ; stades du sommeil déterminés par une bague grand public."
   - claim: "Dans cet essai, l’épuisement personnel a augmenté juste après le programme avant de revenir vers le niveau initial."
     limitation: "Un seul essai ; critère secondaire."
+  - claim: "De courtes séances de pleine conscience peuvent augmenter le RMSSD à court terme, selon des preuves de faible qualité issues de quelques petites études."
+    limitation: "Revue systématique de peu d’études hétérogènes, preuves de faible qualité ; effets durables non étudiés ; les changements de respiration pendant la pratique ne sont pas séparés."
 ---
 
 ## Qu’est-ce que la méditation, pour le système nerveux autonome ?
@@ -132,7 +134,7 @@ Deux échelles de temps comptent. Un *effet de séance* est un changement pendan
 
 ### Variabilité de la fréquence cardiaque : pendant une séance et après un programme
 
-**Pendant une séance : dépend du contexte.** La HRV change souvent pendant la méditation, mais pas toujours dans le même sens. Dans deux petites études, un balayage corporel a davantage augmenté le rythme cardiaque lié à la respiration que d’autres activités relaxantes, sans modifier la fréquence cardiaque [S6]. Des mantras et des prières récités assez lentement pour amener la respiration à {{fact:breath.resonance.typical}} ont produit d’amples variations du rythme cardiaque [S8]. Certaines techniques de chi et de kundalini yoga ont produit de très amples oscillations liées à une respiration lente [S9].
+**Pendant une séance : dépend du contexte.** La HRV change souvent pendant la méditation, mais pas toujours dans le même sens. Dans deux petites études, un balayage corporel a davantage augmenté le rythme cardiaque lié à la respiration que d’autres activités relaxantes, sans modifier la fréquence cardiaque [S6]. Des mantras et des prières récités assez lentement pour amener la respiration à {{fact:breath.resonance.typical}} ont produit d’amples variations du rythme cardiaque [S8]. Certaines techniques de chi et de kundalini yoga ont produit de très amples oscillations liées à une respiration lente [S9]. Une revue systématique de courtes séances de pleine conscience a trouvé une hausse à court terme du RMSSD dans quelques petites études, avec des preuves de faible qualité et sans données sur des effets durables [S18].
 
 <!-- myth-debunk -->
 **« La méditation augmente toujours la HRV. »** Les données ne le confirment pas. Dans une petite étude, la HRV globale a baissé pendant une méditation Heartfulness profonde par rapport à un témoin à respiration appariée [S7], et les styles activants de la tradition vajrayana s’accompagnaient d’une activation plutôt que d’une relaxation [S2]. La méditation n’est pas seulement un état d’apaisement autonome [S9].

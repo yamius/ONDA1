@@ -1,5 +1,5 @@
 ---
-sourceHash: "10f3860eb8cd"
+sourceHash: 10f190138735
 title: "Linha de base da HRV: por que o seu próprio normal importa mais do que qualquer norma"
 metaTitle: "Linha de base da HRV: o seu normal, não uma norma"
 metaDescription: "Sua linha de base da HRV é a sua faixa típica, não uma média populacional: por que supera as normas por idade, como o ONDA a constrói e o que uma mudança indica."
@@ -60,6 +60,8 @@ evidenceMap:
     limitation: "Documentação do produto; restrito ao Apple Health como fonte de dados."
   - claim: "Os sinais do ONDA são comparações descritivas com a linha de base pessoal — não medidas de estresse nem uma avaliação médica."
     limitation: "Declaração de escopo da documentação do produto; apenas comparações descritivas."
+  - claim: "Em condições de laboratório controladas, o RMSSD curto em repouso de adultos jovens saudáveis se repetiu bem entre medições, e alguns índices de frequência pior."
+    limitation: "Um único estudo com adultos jovens saudáveis e registros curtos sentados em laboratório; não testado com valores noturnos de vestíveis nem em outras idades."
 ---
 
 ## O que é a linha de base da HRV?
@@ -92,7 +94,7 @@ A métrica precisa ficar fixa. O RMSSD e o SDNN resumem aspectos diferentes do r
 
 **Estabelecido.** Adultos saudáveis diferem enormemente na HRV, e não existem valores normativos consensuais para as medidas de curta duração [S3]. Valores de dispositivos, métricas e condições de registro diferentes não são intercambiáveis [S6, S7], e registros de durações diferentes não podem ser comparados diretamente [S5].
 
-**Depende do contexto.** Uma linha de base pessoal precisa de muitas leituras; registros isolados não a estabelecem [S10]. A prática específica de monitoramento com médias semanais móveis e coeficiente de variação vem da ciência do esporte, em que um valor mais baixo que o de um colega não indica necessariamente um estado fisiológico pior [S10]. A PPG de pulso acompanha os valores derivados do ECG em condições controladas de repouso [S8]. A variação sazonal, quando relatada, é fraca [S11]. E, como os achados de HRV são fáceis de superinterpretar, as revisões metodológicas alertam contra tirar conclusões demais deles [S4]. Em média, o valor cai com a idade, enquanto os indivíduos variam muito em qualquer idade [S2].
+**Depende do contexto.** Uma linha de base pessoal precisa de muitas leituras; registros isolados não a estabelecem [S10]. A prática específica de monitoramento com médias semanais móveis e coeficiente de variação vem da ciência do esporte, em que um valor mais baixo que o de um colega não indica necessariamente um estado fisiológico pior [S10]. A PPG de pulso acompanha os valores derivados do ECG em condições controladas de repouso [S8]. A variação sazonal, quando relatada, é fraca [S11]. E, como os achados de HRV são fáceis de superinterpretar, as revisões metodológicas alertam contra tirar conclusões demais deles [S4]. Em média, o valor cai com a idade, enquanto os indivíduos variam muito em qualquer idade [S2]. Em condições de laboratório comparáveis, o RMSSD curto em repouso de adultos jovens saudáveis se repetiu bem de uma sessão para outra, mas alguns índices de frequência não [S12]: um apoio para ver o seu próprio nível como bastante estável quando as condições são comparáveis.
 
 **Em debate.** A janela exata que uma linha de base deve usar é uma escolha prática, não uma constante científica: os protocolos de pesquisa diferem da lógica de um app. As janelas do ONDA são lógica do app — documentadas abaixo, definidas uma única vez e não um consenso da área [S9].
 
